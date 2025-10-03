@@ -90,7 +90,12 @@ def refish_board(json_body):
     if (json_body['transducer'] == 'internal'):
         del json_body['transducer']
 
-    board = refish(json_body)
+    try:
+        board = refish(json_body)
+    except RuntimeError as err:
+        resp = jsonify({"message": str(err)})
+        resp.status_code = 500
+        return resp
     return board
 
 
