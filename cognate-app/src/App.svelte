@@ -8,6 +8,9 @@ import { saveAs } from 'file-saver';
 	import Select from 'svelte-select';
 	import { Circle } from "svelte-loading-spinners";
 
+const titleCollator = new Intl.Collator('en', { sensitivity: 'base', ignorePunctuation: true });
+const trimLeadingMarkers = (title: string) => title.replace(/^[*?\s]+/, '');
+
 // Imports starting JSON data for running as POC (proof of concept).
 // This data is a little too long, which is why HMR fails. Just reload the page manually.
 // @ts-ignore
@@ -278,7 +281,12 @@ $: if (files) {
 			{#if showCognateInterface}
 					{#if hasLoaded}
 							<!-- The list of all possible boards -->
-							<BoardList boards={Object.values(loaded.boards).sort((a, b) => a.title > b.title ? 1 : -1)} />
+							<BoardList boards={Object.values(loaded.boards).sort((a, b) => {
+								const left = trimLeadingMarkers(a.title);
+								const right = trimLeadingMarkers(b.title);
+								const primary = titleCollator.compare(left, right);
+								return primary !== 0 ? primary : titleCollator.compare(a.title, b.title);
+							})} />
 							<!-- The current board's title and some relevant options -->
 							<div class="board-title">
 									<h1>{loaded.boards[$currentBoard].title}</h1>
