@@ -10,6 +10,17 @@ import { saveAs } from 'file-saver';
 
 const titleCollator = new Intl.Collator('en', { sensitivity: 'base', ignorePunctuation: true });
 const trimLeadingMarkers = (title: string) => title.replace(/^[*?\s]+/, '');
+const VOWEL_CHARS = new Set('aeiouyAEIOUYāēīōūáéíóúàèìòùâêîôûæœøəɘɜɛɞɐɑɒɔʌʉɯɪʊɨʏȳȳũẽĩõũỹ');
+const removeGlottalBeforeConsonant = (title: string) => {
+    const trimmed = trimLeadingMarkers(title);
+    if (trimmed.startsWith('ʔ') && trimmed.length > 1) {
+        const nextChar = trimmed[1];
+        if (!VOWEL_CHARS.has(nextChar)) {
+            return trimmed.slice(1);
+        }
+    }
+    return trimmed;
+};
 
 // Imports starting JSON data for running as POC (proof of concept).
 // This data is a little too long, which is why HMR fails. Just reload the page manually.
@@ -282,10 +293,14 @@ $: if (files) {
 					{#if hasLoaded}
 							<!-- The list of all possible boards -->
 							<BoardList boards={Object.values(loaded.boards).sort((a, b) => {
-								const left = trimLeadingMarkers(a.title);
-								const right = trimLeadingMarkers(b.title);
-								const primary = titleCollator.compare(left, right);
-								return primary !== 0 ? primary : titleCollator.compare(a.title, b.title);
+								const aPrimary = removeGlottalBeforeConsonant(a.title);
+								const bPrimary = removeGlottalBeforeConsonant(b.title);
+								const primary = titleCollator.compare(aPrimary, bPrimary);
+								if (primary !== 0) return primary;
+								const aSecondary = trimLeadingMarkers(a.title);
+								const bSecondary = trimLeadingMarkers(b.title);
+								const secondary = titleCollator.compare(aSecondary, bSecondary);
+								return secondary !== 0 ? secondary : titleCollator.compare(a.title, b.title);
 							})} />
 							<!-- The current board's title and some relevant options -->
 							<div class="board-title">
