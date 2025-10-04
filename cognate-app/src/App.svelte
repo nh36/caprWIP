@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 import BoardList from './BoardList.svelte';
-import Board from './Board.svelte';
-import { currentBoard } from './stores';
-import type { CognateApp, FstComparison } from './types';
+	import Board from './Board.svelte';
+	import { currentBoard } from './stores';
+	import type { CognateApp, FstComparison } from './types';
+	import { apiFetch } from './api';
 import { saveAs } from 'file-saver';
 	import Select from 'svelte-select';
 	import { Circle } from "svelte-loading-spinners";
@@ -48,8 +49,6 @@ let statusMessage = "Board loaded."
 let statusError = false;
 	let statusLoading = false;
 
-// Where our api is
-const rootUrl = "/api"
 // Just some info about the POC inputs
 const currentSourceFile = "burmish-primitive-2000-with-ob.tsv"
 
@@ -64,21 +63,21 @@ const handleRefish = async () => {
 	statusError = false;
 	statusMessage = "Refishing current boards..."
 	
-	await fetch(`${rootUrl}/refish-board`, {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json"
-		},
-		body: JSON.stringify({
-			columns: loaded.columns,
-			boards: loaded.boards,
-							syllables: loaded.syllables,
-							fstDoculects: loaded.fstDoculects,
-			transducer: useNewFst ? newFst : "internal"
+		await apiFetch(`/refish-board`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				columns: loaded.columns,
+				boards: loaded.boards,
+								syllables: loaded.syllables,
+								fstDoculects: loaded.fstDoculects,
+				transducer: useNewFst ? newFst : "internal"
+			})
 		})
-	})
-		.then((res => res.json()))
-		.then((data: any) => {
+			.then((res => res.json()))
+			.then((data: any) => {
 			// If we have our data, we should have refished correctly.
 			console.log("Successfully refished.")
 			loaded.columns = data.columns,
@@ -101,18 +100,18 @@ const handleRefish = async () => {
 			statusLoading = true;
 			statusMessage = `Loading ${selectedDataPath.value}`;
 
-			await fetch(`${rootUrl}/new-board`, {
-		method: "POST",
-					headers: {
-			"Content-Type": "application/json"
-		},
-		body: JSON.stringify({
-			dataPath: selectedDataPath.value,
-							transducer: useNewFst && newFst?.trim().length ? newFst : "internal"
+				await apiFetch(`/new-board`, {
+			method: "POST",
+						headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				dataPath: selectedDataPath.value,
+								transducer: useNewFst && newFst?.trim().length ? newFst : "internal"
+			})
 		})
-	})
-		.then((res => res.json()))
-		.then((data: any) => {
+			.then((res => res.json()))
+			.then((data: any) => {
 			// If we have our data, we should have loaded correctly.
 			console.log("Successfully loaded new board.")
 							loaded = data;
@@ -131,16 +130,16 @@ const handleRefish = async () => {
 		})
 			
 			if (getExistingTransducers) {
-					await fetch(`${rootUrl}/get-transducers`, {
-							method: "POST",
-							headers: {
-									"Content-Type": "application/json"
-							},
-							body: JSON.stringify({
-									name: `${selectedDataPath.value.split("-")[0]}.txt`
-							})
-					})
-							.then((res => res.json()))
+						await apiFetch(`/get-transducers`, {
+								method: "POST",
+								headers: {
+										"Content-Type": "application/json"
+								},
+								body: JSON.stringify({
+										name: `${selectedDataPath.value.split("-")[0]}.txt`
+								})
+						})
+								.then((res => res.json()))
 							.then((data: any) => {
 									// If we have our data, we should have loaded correctly.
 									console.log("Successfully loaded existing transducer.")
@@ -230,7 +229,7 @@ $: if (files) {
 	let dataPaths = [];
 	let selectedDataPath;
 	const loadDataPaths = async () => {
-			return fetch(`${rootUrl}/list-inputs`, {
+			return apiFetch(`/list-inputs`, {
 		method: "GET",
 	})
 		.then((res => res.json()))
