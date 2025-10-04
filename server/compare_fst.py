@@ -20,8 +20,30 @@
 production = True
 
 # Constants
-language_title = {'Old_Burmese': 'OBurm', 'Achang_Longchuan': 'Acha-LC', 'Xiandao': 'Acha-XD', 'Maru': 'Maru', 'Bola': 'Bola', 'Atsi': 'Atsi', 'Lashi': 'Lashi'}
-fst_index = {'Old_Burmese': 'burmese', 'Achang_Longchuan': 'ngochang', 'Xiandao': 'xiandao', 'Maru': 'maru', 'Bola': 'bola', 'Atsi': 'atsi', 'Lashi': 'lashi'}
+language_title = {
+    'Old_Burmese': 'OBurm',
+    'Achang_Longchuan': 'Acha-LC',
+    'Xiandao': 'Acha-XD',
+    'Maru': 'Maru',
+    'Bola': 'Bola',
+    'Atsi': 'Atsi',
+    'Lashi': 'Lashi',
+    'Dutch': 'Dutch',
+    'English': 'English',
+    'German': 'German',
+}
+fst_index = {
+    'Old_Burmese': 'burmese',
+    'Achang_Longchuan': 'ngochang',
+    'Xiandao': 'xiandao',
+    'Maru': 'maru',
+    'Bola': 'bola',
+    'Atsi': 'atsi',
+    'Lashi': 'lashi',
+    'Dutch': 'dutch',
+    'English': 'english',
+    'German': 'german',
+}
 
 # Basic imports
 from hashlib import new
@@ -381,6 +403,8 @@ def compare_fst(input_json):
                 for position, sound in syllable_fields:
                     if position not in cnt:
                         cnt[position] = {}
+                        if position not in column_index:
+                            column_index[position] = {}
                         sylls[position] = {}
                         senses[position] = {}
                     if doculect not in cnt[position]:
