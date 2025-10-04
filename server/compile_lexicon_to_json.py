@@ -14,6 +14,7 @@ from functools import reduce
 import tempfile
 from disjointset import DisjointSet
 from foma import FST
+from merge_phonemes import merge_phonemes
 import argparse
 import fileinput
 from collections import defaultdict
@@ -240,6 +241,17 @@ def compile_to_json_full_cognates(
             # "syllables": syllabize(row["IPA"]),
             "gloss": row["CONCEPT"],
             "glossid": row["GLOSSID"],
+            "syllables_parsed": [
+                merge_phonemes(
+                    str(sch),
+                    str(tk),
+                    "i m r t",
+                    {"i": "im", "m": "m", "r": "mnNc", "t": "t"},
+                )
+                for sch, tk in zip(
+                    row["STRUCTURE"].split(" + "), row["TOKENS"].split(" + ")
+                )
+            ],
         }
 
 

@@ -55,7 +55,9 @@
                     newTransducer: newFst,
                     board: {
                         columns: data.columns,
-                        boards: data.boards
+                        boards: data.boards,
+                        words: data.words,
+                        syllables: data.syllables
                     }
                 })
             })
