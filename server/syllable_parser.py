@@ -103,7 +103,9 @@ def build_syllable_parsed_entries(
                 raise
             parsed = []
         if parsed:
-            return parsed
+            meaningful = [p for p in parsed if p[0] and p[1]]
+            if meaningful:
+                return parsed
 
     if allow_fallback:
         return _fallback_germanic(ipa_syllables, ipa_text)
