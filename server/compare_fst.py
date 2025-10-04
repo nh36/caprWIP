@@ -29,12 +29,20 @@ import sys
 import re
 import json
 import csv
+from typing import Optional
 
 from numpy import equal
-from merge_phonemes import merge_phonemes
 from functools import reduce
 from collections import Counter
 from tabulate import tabulate
+from data_profiles import (
+    BURMISH_PROFILE,
+    GERMANIC_PROFILE,
+    DataProfile,
+    detect_profile,
+)
+
+PROFILE_BY_KEY = {profile.key: profile for profile in (BURMISH_PROFILE, GERMANIC_PROFILE)}
 
 ##### ROUTINES #####
 
@@ -203,7 +211,7 @@ def read_transducer(input_json, old_new, errors):
     return ret
 
 
-def process_row(row):
+def process_row(row, profile: DataProfile):
     if row['ID'].startswith('#'):
         # internal to lingpy
         return {}
@@ -217,11 +225,7 @@ def process_row(row):
 
     word_id = 'word-' + row['ID']
     syllables = syllabize(row['IPA'])
-    syllables_parsed = [merge_phonemes(str(sch), str(tk), 'i m r t',
-                                       {'i': 'im', 'm':'m',
-                                        'r':'mnNc', 't':'t'})
-                        for sch, tk in zip(row['STRUCTURE'].split(' + '),
-                                           row['TOKENS'].split(' + '))]
+    syllables_parsed = profile.build_syllables_parsed(row, syllables)
 
     word_json = {
             'id':word_id,
@@ -257,25 +261,35 @@ def compare_fst(input_json):
 
     csv_path = './lexicon.tsv'
     words = {}
+    profile: Optional[DataProfile] = None
     if 'board' in input_json and 'words' in input_json['board'] and input_json['board']['words']:
         words = input_json['board']['words']
+
+    if 'board' in input_json and input_json['board']:
+        profile_key = input_json['board'].get('dataProfile')
+        if profile_key and profile_key in PROFILE_BY_KEY:
+            profile = PROFILE_BY_KEY[profile_key]
 
     lexicon_words = None
 
     def load_words_from_lexicon():
-        lex_words = {}
+        rows = []
         with open(csv_path, 'r') as csv_handle:
             csvreader_local = csv.DictReader(
                 filter(lambda row: row.strip() and row[0] != '#', csv_handle),
                 dialect='excel-tab',
             )
-            for lex_row in csvreader_local:
-                lex_words.update(process_row(lex_row))
-        return lex_words
+            rows = list(csvreader_local)
+
+        detected_profile = detect_profile(rows)
+        lex_words = {}
+        for lex_row in rows:
+            lex_words.update(process_row(lex_row, detected_profile))
+        return lex_words, detected_profile
 
     if not words:
         eprint('Processing TSV rows...')
-        words = load_words_from_lexicon()
+        words, profile = load_words_from_lexicon()
         lexicon_words = words
 
     eprint('Processing boards...')
@@ -301,7 +315,9 @@ def compare_fst(input_json):
     if missing_word_entries or missing_parsed_entries:
         if lexicon_words is None:
             eprint('Processing TSV rows...')
-            lexicon_words = load_words_from_lexicon()
+            lexicon_words, detected_profile = load_words_from_lexicon()
+            if profile is None:
+                profile = detected_profile
         for wid in missing_word_entries:
             if wid in lexicon_words:
                 words[wid] = lexicon_words[wid]
