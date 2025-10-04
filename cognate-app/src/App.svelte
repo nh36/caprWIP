@@ -94,7 +94,7 @@ const handleRefish = async () => {
 		},
 		body: JSON.stringify({
 			dataPath: selectedDataPath.value,
-							transducer: useNewFst ? newFst : "internal"
+							transducer: useNewFst && newFst?.trim().length ? newFst : "internal"
 		})
 	})
 		.then((res => res.json()))
