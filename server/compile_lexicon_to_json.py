@@ -233,12 +233,12 @@ def compile_to_json_full_cognates(
     # fill data with content by iterating over the data_dict
     for i, row in data_dict.items():
         idx = "word-" + str(i)
+        ipa_syllables = syllabize(row["IPA"])
+
         boards["words"][idx] = {
             "id": idx,
             "doculect": row["DOCULECT"],
-            # "syllables": [".".join(row["TOKENS"].split())],
-            "syllables": [".".join(r.split(" ")) for r in row["TOKENS"].split(" + ")],
-            # "syllables": syllabize(row["IPA"]),
+            "syllables": ipa_syllables,
             "gloss": row["CONCEPT"],
             "glossid": row["GLOSSID"],
             "syllables_parsed": [
@@ -256,12 +256,12 @@ def compile_to_json_full_cognates(
 
 
         syl_idx = 0
-        for syllable in boards["words"][idx]["syllables"]:
+        for syllable in ipa_syllables:
             syl_id = "-".join([idx, str(syl_idx)])
             boards["syllables"][syl_id] = {
                 "id": syl_id,
                 "doculect": row["DOCULECT"],
-                "syllables": boards["words"][idx]["syllables"],
+                "syllables": ipa_syllables,
                 "gloss": boards["words"][idx]["gloss"],
                 "glossid": boards["words"][idx]["glossid"],
                 "wordID": idx,
