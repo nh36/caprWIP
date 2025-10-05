@@ -125,9 +125,6 @@ define GermanSurface GermanSurfaceSyllable+;
 ##############################################
 
 define EnglishRules [
-    "p" -> "f" || .# _ ,
-    "t" -> "θ" || .# _ ,
-    "k" -> "h" || .# _ ,
     "x" -> "h",
     "w" -> "ʋ",
     "w" -> 0 || Vowel _ Vowel,
