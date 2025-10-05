@@ -15,6 +15,7 @@ import tempfile
 from disjointset import DisjointSet
 from foma import FST
 from data_profiles import DataProfile, detect_profile
+from syllable_parser import build_syllable_parsed_entries
 import argparse
 import fileinput
 from collections import defaultdict
@@ -252,7 +253,9 @@ def compile_to_json_full_cognates(
 
     for i, row in data_dict.items():
         idx = "word-" + str(i)
-        ipa_syllables = syllabize(row["IPA"])
+        ipa_syllables = profile.segment_ipa(row)
+        if not ipa_syllables:
+            ipa_syllables = syllabize(row["IPA"])
         raw_cogids = row.get(cognate_field, "").strip()
         cogid_tokens = [token for token in raw_cogids.split(" ") if token]
 
@@ -408,13 +411,11 @@ def compile_to_json_full_cognates(
             # If we have a transducer for this doculect
             if row["DOCULECT"] in fsts:
                 # Make the current syllable equal to the whole word, since we are
-                # working with the Germanic data. Also add spaces so that Mattis'
-                # transducer will work.
                 syl = word
 
-                # Bad stuff because of how current germanic FST is written 
                 if pipeline_name == "germanic":
-                    syl = word.replace(".", " ") + " "
+                    surface_form = (row.get("IPA") or "").replace(" ", "")
+                    syl = surface_form.replace(".", " ")
                 else:
                     syl = word.replace(".", "")
 
@@ -426,8 +427,8 @@ def compile_to_json_full_cognates(
                 # Apply the transducer upwards to this word
                 recs = list(fsts[row["DOCULECT"]].apply_up(syl))
 
-                if not recs and profile.allow_syllable_fallback:
-                    fallback = f"*{word.replace(' ', '')}"
+                if not recs and pipeline_name == "germanic":
+                    fallback = f"*{surface_form}"
                     recs = [fallback]
 
                 # eprint(recs)
