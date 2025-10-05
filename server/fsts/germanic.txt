@@ -43,6 +43,84 @@ define Cons ProtoConsonant;
 define Vowel ProtoVowel;
 
 ##############################################
+## Surface phonotactics (baggy filters)     ##
+##############################################
+
+# English allows sizable clusters, but every syllable must anchor to a vowel.
+define EnglishSurfaceVowel [
+    {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
+    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ}
+];
+define EnglishSurfaceConsonant [
+    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
+    {r} | {s} | {t} | {v} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
+    {ʤ} | {ʧ} | {θ}
+];
+define EnglishSurfaceOnset [
+    0 |
+    EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
+];
+define EnglishSurfaceCoda [
+    0 |
+    EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
+];
+define EnglishSurfaceSyllable EnglishSurfaceOnset EnglishSurfaceVowel EnglishSurfaceCoda;
+define EnglishSurface EnglishSurfaceSyllable+;
+
+# Dutch surface strings share the same "at least one vowel" requirement.
+define DutchSurfaceVowel [
+    {aː} | {eː} | {iː} | {oː} | {uː} | {yː} | {øː} | {ɑ} | {ɑu} |
+    {ɔ} | {ə} | {ɛ} | {ɛɪ} | {ɪ} | {ʉ} | {œy}
+];
+define DutchSurfaceConsonant [
+    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
+    {r} | {s} | {t} | {v} | {x} | {z} | {ŋ} | {ɣ} | {ʋ}
+];
+define DutchSurfaceOnset [
+    0 |
+    DutchSurfaceConsonant |
+    DutchSurfaceConsonant DutchSurfaceConsonant |
+    DutchSurfaceConsonant DutchSurfaceConsonant DutchSurfaceConsonant
+];
+define DutchSurfaceCoda [
+    0 |
+    DutchSurfaceConsonant |
+    DutchSurfaceConsonant DutchSurfaceConsonant |
+    DutchSurfaceConsonant DutchSurfaceConsonant DutchSurfaceConsonant
+];
+define DutchSurfaceSyllable DutchSurfaceOnset DutchSurfaceVowel DutchSurfaceCoda;
+define DutchSurface DutchSurfaceSyllable+;
+
+# German admits a few affricates and long vowels; keep the filter permissive.
+define GermanSurfaceVowel [
+    {a} | {ai} | {au} | {aː} | {eː} | {iː} | {oː} | {uː} |
+    {ɔ} | {ɔy} | {ə} | {ɛ} | {ɪ} | {ʊ}
+];
+define GermanSurfaceConsonant [
+    {b} | {d} | {d/t} | {f} | {h} | {j} | {k} | {l} | {m} | {n} |
+    {p} | {pf} | {r} | {s} | {t} | {ts} | {v} | {x} | {z} | {ŋ} |
+    {ɡ} | {ʃ}
+];
+define GermanSurfaceOnset [
+    0 |
+    GermanSurfaceConsonant |
+    GermanSurfaceConsonant GermanSurfaceConsonant |
+    GermanSurfaceConsonant GermanSurfaceConsonant GermanSurfaceConsonant
+];
+define GermanSurfaceCoda [
+    0 |
+    GermanSurfaceConsonant |
+    GermanSurfaceConsonant GermanSurfaceConsonant |
+    GermanSurfaceConsonant GermanSurfaceConsonant GermanSurfaceConsonant
+];
+define GermanSurfaceSyllable GermanSurfaceOnset GermanSurfaceVowel GermanSurfaceCoda;
+define GermanSurface GermanSurfaceSyllable+;
+
+##############################################
 ## English rules                             ##
 ##############################################
 
@@ -66,7 +144,7 @@ define EnglishRules [
     "u" -> "ʌ" || _ Cons
 ];
 
-define English ProtoWord .o. EnglishRules;
+define English ProtoWord .o. EnglishRules .o. EnglishSurface;
 
 clear stack
 regex English;
@@ -95,7 +173,7 @@ define DutchRules [
     "g" -> "x"
 ];
 
-define Dutch ProtoWord .o. DutchRules;
+define Dutch ProtoWord .o. DutchRules .o. DutchSurface;
 
 clear stack
 regex Dutch;
@@ -124,7 +202,7 @@ define GermanRules [
     "θ" -> "d"
 ];
 
-define German ProtoWord .o. GermanRules;
+define German ProtoWord .o. GermanRules .o. GermanSurface;
 
 clear stack
 regex German;

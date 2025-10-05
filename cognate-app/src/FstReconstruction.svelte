@@ -10,9 +10,9 @@
     {:else if (r[0] === '_')}
         <b>{r.substring(1, r.length-1)}</b>{ recs.length - 1 === i ? '' : ', '}
     {:else if (r.substring(0, 3) === '≠ †')}
-        ≠ †<span class="sourceipa">{r.substring(3)}</span>
+        ≠ †<span class="sourceipa">{r.substring(3)}</span>{ recs.length - 1 === i ? '' : ', '}
     {:else}
-        r{ recs.length - 1 === i ? '' : ', '}
+        <span class="sourceipa">{r}</span>{ recs.length - 1 === i ? '' : ', '}
     {/if}
 {/each}
 {/if}
