@@ -1,7 +1,7 @@
 """Utilities for constructing syllable segment data used by CAPR."""
 from __future__ import annotations
 
-from typing import Iterable, List, Sequence, Tuple
+from typing import Iterable, List, Optional, Sequence, Tuple
 
 from merge_phonemes import merge_phonemes
 
@@ -79,8 +79,10 @@ def build_syllable_parsed_entries(
 ) -> List[Tuple[str, str]]:
     structure_field = (structure_field or "").strip()
     tokens_field = (tokens_field or "").strip()
+    schema_tokens = [part for part in structure_field.replace('+', ' ').split() if part]
+    supports_merge = all(token.lower() in {'i', 'm', 'r', 't'} for token in schema_tokens)
 
-    if structure_field and tokens_field:
+    if structure_field and tokens_field and supports_merge:
         parsed: List[Tuple[str, str]] = []
         try:
             structures = structure_field.split(" + ")
@@ -113,4 +115,32 @@ def build_syllable_parsed_entries(
     return []
 
 
-__all__ = ["build_syllable_parsed_entries"]
+def infer_syllable_strings(structure_field: str, tokens_field: str) -> Optional[Sequence[str]]:
+    structures = [part for part in (structure_field or "").split() if part]
+    tokens = [part for part in (tokens_field or "").split() if part]
+    if not structures or len(structures) != len(tokens):
+        return None
+
+    syllables: List[List[str]] = []
+    current: List[str] = []
+    last_case = structures[0].isupper()
+
+    for struct_symbol, token_symbol in zip(structures, tokens):
+        current_case = struct_symbol.isupper()
+        if current and current_case != last_case:
+            syllables.append(current)
+            current = []
+        current.append(token_symbol)
+        last_case = current_case
+
+    if current:
+        syllables.append(current)
+
+    if len(syllables) <= 1:
+        return None
+
+    normalised = ["".join(parts).replace(" ", "") for parts in syllables if any(p.strip() for p in parts)]
+    return [s for s in normalised if s]
+
+
+__all__ = ["build_syllable_parsed_entries", "infer_syllable_strings"]
