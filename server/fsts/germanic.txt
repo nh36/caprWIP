@@ -124,16 +124,25 @@ define GermanSurfaceSyllable GermanSurfaceOnset GermanSurfaceVowel GermanSurface
 define GermanSurface GermanSurfaceSyllable+;
 
 ##############################################
-## English rules                             ##
+## English transducer                        ##
 ##############################################
 
-define EnglishRules [
-    "x" -> "h",
+### 1. Surface filter
+# (defined above as `EnglishSurface`)
+
+### 2. Sound laws
+define EnglishConsonantRules [
     "w" -> "ʋ",
-    "w" -> 0 || Vowel _ Vowel,
     "z" -> "r" || Vowel _ Vowel,
     "z" -> 0 || _ .#.,
-    "dj" -> "nd",
+    "dj" -> "nd"
+];
+
+define EnglishGlideDeletion [
+    "ʋ" -> 0 || Vowel _ Vowel
+];
+
+define EnglishVowelRules [
     "ē" -> "iː",
     "ō" -> "uː",
     "au" -> "oː",
@@ -144,77 +153,129 @@ define EnglishRules [
     "u" -> "ʌ" || _ Cons
 ];
 
-define English ProtoWord .o. EnglishRules .o. EnglishSurface;
+define EnglishOrthography [
+    "x" -> "h"
+];
+
+### 3. Composition
+define EnglishReflexes ProtoWord
+    .o. EnglishConsonantRules
+    .o. EnglishGlideDeletion
+    .o. EnglishVowelRules
+    .o. EnglishOrthography;
+define English EnglishReflexes .o. EnglishSurface;
 
 clear stack
 regex English;
 save stack english.bin
 
 ##############################################
-## Dutch rules                               ##
+## Dutch transducer                          ##
 ##############################################
 
-define DutchRules [
-    "x" -> "h",
+### 1. Surface filter
+# (defined above as `DutchSurface`)
+
+### 2. Sound laws
+define DutchConsonantRules [
     "w" -> "ʋ",
     "v" -> "f" || .# _ ,
-    "z" -> "r" || Vowel _ Vowel,
-    "z" -> 0 || _ .#.,
     "dj" -> "nd",
+    "g" -> "x"
+];
+
+define DutchSibilantRules [
+    "z" -> "r" || Vowel _ Vowel,
+    "z" -> 0 || _ .#.
+];
+
+define DutchVowelRules [
     "ō" -> "oː",
     "ē" -> "eː",
     "au" -> "œy",
     "ai" -> "ɛi",
     "u" -> "ɔ" || _ .#.,
     "a" -> "ɑ",
-    "a" -> "ə" || _ Cons,
-    "n" -> "ə" || _ .#.,
-    "e" -> "ɪ" || _ Cons,
-    "g" -> "x"
+    "e" -> "ɪ" || _ Cons
 ];
 
-define Dutch ProtoWord .o. DutchRules .o. DutchSurface;
+define DutchReductions [
+    "a" -> "ə" || _ Cons,
+    "n" -> "ə" || _ .#.
+];
+
+define DutchOrthography [
+    "x" -> "h"
+];
+
+### 3. Composition
+define DutchReflexes ProtoWord
+    .o. DutchConsonantRules
+    .o. DutchSibilantRules
+    .o. DutchVowelRules
+    .o. DutchReductions
+    .o. DutchOrthography;
+define Dutch DutchReflexes .o. DutchSurface;
 
 clear stack
 regex Dutch;
 save stack dutch.bin
 
 ##############################################
-## German rules                              ##
+## German transducer                        ##
 ##############################################
 
-define GermanCoreRules [
+### 1. Surface filter
+# (defined above as `GermanSurface`)
+
+### 2. Sound laws
+define GermanConsonantShift [
     "p" -> "f" || .# _ ,
     "t" -> "ts" || .# _ ,
     "s" -> "ʃ" || .# _ ,
     "w" -> "v",
-    "x" -> "h",
     "z" -> "r" || Vowel _ Vowel,
     "z" -> 0 || _ .#.,
     "w" -> 0 || Vowel _ Vowel,
-    "u" -> "ɔ" || _ ("k" | "K"),
-    "dj" -> "nd",
-    "u" -> "ɔ" || _ .#.,
-    "n" -> "ə" || _ Cons,
-    "a" -> "ə" || _ Cons,
-    "e" -> "ɪ" || _ Cons,
-    "s" -> "z" || Vowel _ Vowel,
-    "θ" -> "d"
+    "dj" -> "nd"
 ];
 
+### k-spirantisation and shielding
 define GermanStopShift [
     "kk" -> "K",
     "k" -> "x" || BackVowel _ (Cons | .#.),
     "k" -> "ç" || FrontVowel _ (Cons | .#.)
 ];
 
+### Vowel and syllable adjustments
+define GermanVowelAdjustments [
+    "u" -> "ɔ" || _ ("k" | "K"),
+    "u" -> "ɔ" || _ .#.,
+    "n" -> "ə" || _ Cons,
+    "a" -> "ə" || _ Cons,
+    "e" -> "ɪ" || _ Cons,
+    "θ" -> "d"
+];
+
+### Cleanup and orthography
 define GermanCleanup [
     "K" -> "k"
 ];
 
-define GermanRules GermanCoreRules .o. GermanStopShift .o. GermanCleanup;
+define GermanOrthography [
+    "x" -> "h"
+];
 
-define German ProtoWord .o. GermanRules .o. GermanSurface;
+define GermanRules GermanConsonantShift
+    .o. GermanStopShift
+    .o. GermanVowelAdjustments
+    .o. GermanCleanup
+    .o. GermanOrthography;
+
+### 3. Composition
+define GermanReflexes ProtoWord .o. GermanRules;
+define German GermanReflexes .o. GermanSurface;
+
 
 clear stack
 regex German;
