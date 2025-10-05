@@ -41,6 +41,9 @@ define ProtoWord ProtoSyllable+;
 
 define Cons ProtoConsonant;
 define Vowel ProtoVowel;
+define FrontVowel [i|ī|e|ē|æ|ɛ|ø|œ|y|ʉ];
+define BackVowel [a|ā|ɑ|o|ō|u|ū|ɔ|ʊ];
+define Sonorant [j|r|l|m|n|ŋ];
 
 ##############################################
 ## Surface phonotactics (baggy filters)     ##
@@ -180,16 +183,16 @@ save stack dutch.bin
 ## German rules                              ##
 ##############################################
 
-define GermanRules [
+define GermanCoreRules [
     "p" -> "f" || .# _ ,
     "t" -> "ts" || .# _ ,
-    "k" -> "ch" || .# _ ,
     "s" -> "ʃ" || .# _ ,
     "w" -> "v",
     "x" -> "h",
     "z" -> "r" || Vowel _ Vowel,
     "z" -> 0 || _ .#.,
     "w" -> 0 || Vowel _ Vowel,
+    "u" -> "ɔ" || _ ("k" | "K"),
     "dj" -> "nd",
     "u" -> "ɔ" || _ .#.,
     "n" -> "ə" || _ Cons,
@@ -198,6 +201,18 @@ define GermanRules [
     "s" -> "z" || Vowel _ Vowel,
     "θ" -> "d"
 ];
+
+define GermanStopShift [
+    "kk" -> "K",
+    "k" -> "x" || BackVowel _ (Cons | .#.),
+    "k" -> "ç" || FrontVowel _ (Cons | .#.)
+];
+
+define GermanCleanup [
+    "K" -> "k"
+];
+
+define GermanRules GermanCoreRules .o. GermanStopShift .o. GermanCleanup;
 
 define German ProtoWord .o. GermanRules .o. GermanSurface;
 
