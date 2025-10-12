@@ -80,7 +80,15 @@ def build_syllable_parsed_entries(
     structure_field = (structure_field or "").strip()
     tokens_field = (tokens_field or "").strip()
     schema_tokens = [part for part in structure_field.replace('+', ' ').split() if part]
-    supports_merge = all(token.lower() in {'i', 'm', 'r', 't'} for token in schema_tokens)
+    if schema_tokens:
+        allowed_merge_symbols = (
+            set(''.join(_DEFAULT_RULES.values()))
+            | set(_DEFAULT_RULES.keys())
+            | {k.upper() for k in _DEFAULT_RULES.keys()}
+        )
+        supports_merge = all(all(ch in allowed_merge_symbols for ch in token) for token in schema_tokens)
+    else:
+        supports_merge = False
 
     if structure_field and tokens_field and supports_merge:
         parsed: List[Tuple[str, str]] = []

@@ -735,7 +735,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 582	b ɪ n d ə n	*bendanan	b ɪ n d ə n ( - - )	bɪndən	binden	160	German				bind	*bendanan
 388	ɡ ə b uː r t	*burdiz	( ɡ ə ) b uː r t ( - - )	ɡəbuːrt	Geburt	107	German				birth	*burdiz
 854	b l uː t	*blōdan	b l uː t ( - - )	bluːt	Blut	235	German				blood	*blōdan
-1300	b ɔ r d/t	*burdan	b ɔ r d/t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdan
+1300	b ɔ r t	*burdan	b ɔ r t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdan
 1035	b ai n	*bainan	b ai n ( - - )	bain	Bein	284	German		C V C		bone	*bainan
 935	b uː x	*bōkz	b uː x ( - )	buːx	Buch	257	German				book	*bōkz
 380	b oː r ə n	*burōjanan	b oː r ( - ) - ə n ( - - )	boːrən	bohren	105	German				bore	*burōjanan
@@ -772,7 +772,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 578	t aː t	*dēdiz	t aː t ( - - )	taːt	Tat	159	German				deed	*dēdiz
 407	t iː r	*deuzan	t iː r ( - - )	tiːr	Tier	112	German				deer	*deuzan
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German				dew	*dawwō
-894	d/t ɪ l	*deljaz	d/t ɪ l ( - - - )	dɪl	Dill	246	German	BOR		Low German	dill	*deljaz
+894	d ɪ l	*deljaz	d ɪ l ( - - - )	dɪl	Dill	246	German	BOR		Low German	dill	*deljaz
 1582	t uː n	*dōnan	t uː ə n ( - - )	tuːn	tun	434	German				do	*dōnan
 102	t oː r	*duran	t oː r ( - - )	toːr	Tor	29	German				door	*duran
 762	t ai k	*daigaz	t ai k ( - - )	taik	Teig	209	German				dough	*daigaz
@@ -855,7 +855,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 631	h ɛ l m	*xelmaz	h ɛ l m ( - - )	hɛlm	Helm	174	German				helm	*xelmaz
 1444	h ɛ l f ə n	*xelpanan	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German				help	*xelpanan
 477	h ɪ l f ə	*xelpō	h ɪ l f ə	hɪlfə	Hilfe	131	German				help	*xelpō
-344	h eː r d/t ə	*xerdō	h eː r d/t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō
+344	h eː r d ə	*xerdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō
 91	h au ə n	*xawwanan	h - au - ə n ( - - )	hauən	hauen	26	German				hew	*xawwanan
 485	h ɪ n d ə	*xendjō	h ɪ n d - ə	hɪndə	Hinde	133	German				hind	*xendjō
 596	h ɔ r t	*xuzdan	h ɔ r t ( - - )	hɔrt	Hort	164	German				hoard	*xuzdan
@@ -962,7 +962,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1425	ʃ eː r ə n	*skeranan	ʃ - eː r ə n ( - - )	ʃeːrən	scheren	390	German				shear	*skeranan
 1115	ʃ ai d ə	*skaiθiz	ʃ - ai d ə ( - )	ʃaidə	Scheide	306	German				sheath	*skaiθiz
 1369	ʃ aː f	*skēpan	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German				sheep	*skēpan
-308	ʃ ɪ l d/t	*skelduz	ʃ - ɪ l d/t ( - - )	ʃɪlt	Schild	86	German	BOR			shield	*skelduz
+308	ʃ ɪ l t	*skelduz	ʃ - ɪ l t ( - - )	ʃɪlt	Schild	86	German	BOR			shield	*skelduz
 962	ʃ ɪ l ɪ ŋ	*skellin)az	ʃ - ɪ l ɪ ŋ - ( - - )	ʃɪlɪŋ	Schilling	264	German				shilling	*skellin)az
 1399	ʃ ai n ə n	*skīnanan	ʃ - ai n ə n ( - - )	ʃainən	scheinen	383	German				shine	*skīnanan
 589	ʃ ʊ l t ə r	*skuldrō	ʃ - ʊ l t ə r ( - )	ʃʊltər	Schulter	162	German				shoulder	*skuldrō
