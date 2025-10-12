@@ -156,6 +156,10 @@ define EnglishConsonantRules [
     {dj} -> nd
 ];
 
+define EnglishGhMarker [
+    {x} -> {GH} || Vowel _ ({t} | {d} | .#.)
+];
+
 define EnglishSilentInitialCleanup [
     {Kn} -> {n},
     {Gn} -> {n}
@@ -163,6 +167,10 @@ define EnglishSilentInitialCleanup [
 
 define EnglishGlideDeletion [
     {ʋ} -> 0 || Vowel _ Vowel
+];
+
+define EnglishGhDeletion [
+    {GH} -> 0 || Vowel _ ({t} | {d} | .#.)
 ];
 
 define EnglishVowelRules [
@@ -187,9 +195,11 @@ define EnglishOrthography [
 define EnglishReflexes ProtoWord
     .o. EnglishInitialKnMarkers
     .o. EnglishConsonantRules
+    .o. EnglishGhMarker
     .o. EnglishGlideDeletion
     .o. EnglishVowelRules
     .o. EnglishSilentInitialCleanup
+    .o. EnglishGhDeletion
     .o. EnglishOrthography;
 define English EnglishReflexes .o. EnglishSurface;
 
