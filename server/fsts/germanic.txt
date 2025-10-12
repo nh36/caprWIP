@@ -131,11 +131,21 @@ define GermanSurface GermanSurfaceSyllable+;
 # (defined above as `EnglishSurface`)
 
 ### 2. Sound laws
+define EnglishInitialKnMarkers [
+    "kn" -> "Kn" || .#. _,
+    "gn" -> "Gn" || .#. _
+];
+
 define EnglishConsonantRules [
     "w" -> "ʋ",
     "z" -> "r" || Vowel _ Vowel,
     "z" -> 0 || _ .#.,
     "dj" -> "nd"
+];
+
+define EnglishSilentInitialCleanup [
+    "Kn" -> "n",
+    "Gn" -> "n"
 ];
 
 define EnglishGlideDeletion [
@@ -159,9 +169,11 @@ define EnglishOrthography [
 
 ### 3. Composition
 define EnglishReflexes ProtoWord
+    .o. EnglishInitialKnMarkers
     .o. EnglishConsonantRules
     .o. EnglishGlideDeletion
     .o. EnglishVowelRules
+    .o. EnglishSilentInitialCleanup
     .o. EnglishOrthography;
 define English EnglishReflexes .o. EnglishSurface;
 
