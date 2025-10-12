@@ -6,13 +6,13 @@
 ##############################################
 
 define ProtoVowel [
-    a|ā|{aː}|
+    a|ā|
     æ|
-    e|ē|{eː}|
-    i|ī|{iː}|
-    o|ō|{oː}|
-    u|ū|{uː}|
-    ɑ|{ɑː}|ɔ|ə|ɛ|ɜ|ʉ|ʊ|ø|{øː}|œ|y|{yː}
+    e|ē|
+    i|ī|
+    o|ō|
+    u|ū|
+    ɑ|ɔ|ə|ɛ|ɜ|ʉ|ʊ|ø|œ|y
 ];
 define ProtoConsonant [b|d|f|g|h|j|k|l|m|n|p|r|s|t|v|w|x|z|ð|ŋ|ɡ|ɣ|ɪ|ʃ|ʋ|ʌ|ʤ|ʧ];
 define ProtoSymbol [ProtoVowel|ProtoConsonant];
@@ -21,8 +21,7 @@ define ProtoSymbol [ProtoVowel|ProtoConsonant];
 # search space finite and filters out wildly ill-formed candidates when inverting
 # the daughter rules.
 define ProtoNucleus [
-    a|{aː}|e|{eː}|i|{iː}|o|{oː}|u|{uː}|
-    ē|ī|ō|ū|
+    a|ā|e|ē|i|ī|o|ō|u|ū|
     {ai}|{au}|{eu}
 ];
 
@@ -44,8 +43,7 @@ define ProtoCodaCore [
     mb|mm|mn|mr|nd|ng|nj|nk|nn|nr|nθ|pn|pp|rb|rd|rg|rk|rm|rn|rp|rr|rt|rw|rx|rθ|
     sk|sl|sm|st|sz|tj|tn|tr|tt|wj|ww|wz|
     xm|xs|xt|xw|xz|zd|zj|zn|zw|θl|θr|θz|
-    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst|
-    ː
+    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst
 ];
 define ProtoCoda [0|ProtoCodaCore];
 
