@@ -5,14 +5,26 @@
 ## Shared inventory                          ##
 ##############################################
 
-define ProtoVowel [a|ā|æ|e|ē|i|ī|o|ō|u|ū|ɑ|ɔ|ə|ɛ|ɜ|ʉ|ʊ|ø|œ|y];
+define ProtoVowel [
+    a|ā|{aː}|
+    æ|
+    e|ē|{eː}|
+    i|ī|{iː}|
+    o|ō|{oː}|
+    u|ū|{uː}|
+    ɑ|{ɑː}|ɔ|ə|ɛ|ɜ|ʉ|ʊ|ø|{øː}|œ|y|{yː}
+];
 define ProtoConsonant [b|d|f|g|h|j|k|l|m|n|p|r|s|t|v|w|x|z|ð|ŋ|ɡ|ɣ|ɪ|ʃ|ʋ|ʌ|ʤ|ʧ];
 define ProtoSymbol [ProtoVowel|ProtoConsonant];
 
 # Proto-Germanic templates loosely based on the attested lexicon. This keeps the
 # search space finite and filters out wildly ill-formed candidates when inverting
 # the daughter rules.
-define ProtoNucleus [a|e|i|o|u|ē|ī|ō|ū|{ai}|{au}|{eu}];
+define ProtoNucleus [
+    a|{aː}|e|{eː}|i|{iː}|o|{oː}|u|{uː}|
+    ē|ī|ō|ū|
+    {ai}|{au}|{eu}
+];
 
 define ProtoOnsetCore [
     b|d|f|g|j|k|l|m|n|p|r|s|t|w|x|z|θ|
@@ -32,7 +44,8 @@ define ProtoCodaCore [
     mb|mm|mn|mr|nd|ng|nj|nk|nn|nr|nθ|pn|pp|rb|rd|rg|rk|rm|rn|rp|rr|rt|rw|rx|rθ|
     sk|sl|sm|st|sz|tj|tn|tr|tt|wj|ww|wz|
     xm|xs|xt|xw|xz|zd|zj|zn|zw|θl|θr|θz|
-    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst
+    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst|
+    ː
 ];
 define ProtoCoda [0|ProtoCodaCore];
 
@@ -132,39 +145,42 @@ define GermanSurface GermanSurfaceSyllable+;
 
 ### 2. Sound laws
 define EnglishInitialKnMarkers [
-    "kn" -> "Kn" || .#. _,
-    "gn" -> "Gn" || .#. _
+    {kn} -> {Kn} || .#. _,
+    {gn} -> {Gn} || .#. _
 ];
 
 define EnglishConsonantRules [
-    "w" -> "ʋ",
-    "z" -> "r" || Vowel _ Vowel,
-    "z" -> 0 || _ .#.,
-    "dj" -> "nd"
+    w -> {ʋ},
+    z -> {r} || Vowel _ Vowel,
+    z -> 0 || _ .#.,
+    {dj} -> nd
 ];
 
 define EnglishSilentInitialCleanup [
-    "Kn" -> "n",
-    "Gn" -> "n"
+    {Kn} -> {n},
+    {Gn} -> {n}
 ];
 
 define EnglishGlideDeletion [
-    "ʋ" -> 0 || Vowel _ Vowel
+    {ʋ} -> 0 || Vowel _ Vowel
 ];
 
 define EnglishVowelRules [
-    "ē" -> "iː",
-    "ō" -> "uː",
-    "au" -> "oː",
-    "ai" -> "eɪ",
-    "e" -> "ɪ" || _ Cons,
-    "a" -> "ə" || _ .#.,
-    "a" -> "æ" || _ "r",
-    "u" -> "ʌ" || _ Cons
+    ī -> {iː},
+    ū -> {uː},
+    ē -> {iː},
+    ō -> {uː},
+    ā -> {ɑː},
+    {au} -> {oː},
+    {ai} -> {eɪ},
+    e -> {ɪ} || _ Cons,
+    a -> {ə} || _ .#.,
+    a -> {æ} || _ r,
+    u -> {ʌ} || _ Cons
 ];
 
 define EnglishOrthography [
-    "x" -> "h"
+    x -> {h}
 ];
 
 ### 3. Composition
@@ -190,34 +206,34 @@ save stack english.bin
 
 ### 2. Sound laws
 define DutchConsonantRules [
-    "w" -> "ʋ",
-    "v" -> "f" || .# _ ,
-    "dj" -> "nd",
-    "g" -> "x"
+    w -> {ʋ},
+    v -> {f} || .# _ ,
+    {dj} -> nd,
+    g -> {x}
 ];
 
 define DutchSibilantRules [
-    "z" -> "r" || Vowel _ Vowel,
-    "z" -> 0 || _ .#.
+    z -> {r} || Vowel _ Vowel,
+    z -> 0 || _ .#.
 ];
 
 define DutchVowelRules [
-    "ō" -> "oː",
-    "ē" -> "eː",
-    "au" -> "œy",
-    "ai" -> "ɛi",
-    "u" -> "ɔ" || _ .#.,
-    "a" -> "ɑ",
-    "e" -> "ɪ" || _ Cons
+    ō -> {oː},
+    ē -> {eː},
+    {au} -> {œy},
+    {ai} -> {ɛi},
+    u -> {ɔ} || _ .#.,
+    a -> {ɑ},
+    e -> {ɪ} || _ Cons
 ];
 
 define DutchReductions [
-    "a" -> "ə" || _ Cons,
-    "n" -> "ə" || _ .#.
+    a -> {ə} || _ Cons,
+    n -> {ə} || _ .#.
 ];
 
 define DutchOrthography [
-    "x" -> "h"
+    x -> {h}
 ];
 
 ### 3. Composition
@@ -242,44 +258,54 @@ save stack dutch.bin
 
 ### 2. Sound laws
 define GermanConsonantShift [
-    "p" -> "f" || .# _ ,
-    "t" -> "ts" || .# _ ,
-    "s" -> "ʃ" || .# _ ,
-    "w" -> "v",
-    "z" -> "r" || Vowel _ Vowel,
-    "z" -> 0 || _ .#.,
-    "w" -> 0 || Vowel _ Vowel,
-    "dj" -> "nd"
+    p -> {f} || .# _ ,
+    t -> {ts} || .# _ ,
+    s -> {ʃ} || .# _ ,
+    w -> {v},
+    z -> {r} || Vowel _ Vowel,
+    z -> 0 || _ .#.,
+    w -> 0 || Vowel _ Vowel,
+    {dj} -> nd
 ];
 
 ### k-spirantisation and shielding
 define GermanStopShift [
-    "kk" -> "K",
-    "k" -> "x" || BackVowel _ (Cons | .#.),
-    "k" -> "ç" || FrontVowel _ (Cons | .#.)
+    kk -> K,
+    k -> {x} || BackVowel _ (Cons | .#.),
+    k -> {ç} || FrontVowel _ (Cons | .#.)
+];
+
+### Long vowels
+define GermanLongVowelRules [
+    ē -> {eː},
+    ī -> {iː},
+    ō -> {oː},
+    ū -> {uː},
+    ā -> {aː}
 ];
 
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
-    "u" -> "ɔ" || _ ("k" | "K"),
-    "u" -> "ɔ" || _ .#.,
-    "n" -> "ə" || _ Cons,
-    "a" -> "ə" || _ Cons,
-    "e" -> "ɪ" || _ Cons,
-    "θ" -> "d"
+    u -> {ɔ} || _ (k | K),
+    u -> {ɔ} || _ .#.,
+    n -> {ə} || _ Cons,
+    a -> {ə} || _ Cons,
+    e -> {ɪ} || _ Cons,
+    θ -> {d}
 ];
 
 ### Cleanup and orthography
 define GermanCleanup [
-    "K" -> "k"
+    K -> {k}
 ];
 
 define GermanOrthography [
-    "x" -> "h"
+    x -> {h}
 ];
 
 define GermanRules GermanConsonantShift
     .o. GermanStopShift
+    .o. GermanLongVowelRules
     .o. GermanVowelAdjustments
     .o. GermanCleanup
     .o. GermanOrthography;
