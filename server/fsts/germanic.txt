@@ -182,7 +182,7 @@ define EnglishVowelRules [
     e -> {ɪ} || _ Cons,
     a -> {ə} || _ .#.,
     a -> {æ} || _ r,
-    u -> {ʌ} || _ Cons
+    u -> {ʌ} || _ (Cons | .#.)
 ];
 
 define EnglishOrthography [
