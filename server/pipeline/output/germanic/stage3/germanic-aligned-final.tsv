@@ -61,7 +61,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 854	b l uː t	*blōdan	b l uː t ( - - )	bluːt	Blut	235	German				blood	*blōdan	19
 1302	b ɔ r t	*burdan	b ɔ r t ( - - )	bɔrt	bord	357	Dutch				board	*burdan	20
 1301	b ɔː d	*burdan	b ɔː - d ( - - )	bɔːd	board	357	English				board	*burdan	20
-1300	b ɔ r d/t	*burdan	b ɔ r d/t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdan	20
+1300	b ɔ r t	*burdan	b ɔ r t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdan	20
 1037	b eː n	*bainan	b eː n ( - - )	beːn	been	284	Dutch				bone	*bainan	21
 1036	b əʊ n	*bainan	b əʊ n ( - - )	bəʊn	bone	284	English				bone	*bainan	21
 1035	b ai n	*bainan	b ai n ( - - )	bain	Bein	284	German		C V C		bone	*bainan	21
@@ -171,7 +171,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German				dew	*dawwō	53
 896	d ɪ l ə	*deljaz	d ɪ l ( - ə - )	dɪlə	dille	246	Dutch				dill	*deljaz	54
 895	d ɪ l	*deljaz	d ɪ l ( - - - )	dɪl	dill	246	English				dill	*deljaz	54
-894	d/t ɪ l	*deljaz	d/t ɪ l ( - - - )	dɪl	Dill	246	German	BOR		Low German	dill	*deljaz	54
+894	d ɪ l	*deljaz	d ɪ l ( - - - )	dɪl	Dill	246	German	BOR		Low German	dill	*deljaz	54
 1584	d uː n	*dōnan	d uː - n ( - - )	duːn	doen	434	Dutch				do	*dōnan	55
 1583	d uː	*dōnan	d uː - - ( - - )	duː	do	434	English				do	*dōnan	55
 1582	t uː n	*dōnan	t uː ə n ( - - )	tuːn	tun	434	German				do	*dōnan	55
@@ -412,7 +412,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1444	h ɛ l f ə n	*xelpanan	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German				help	*xelpanan	128
 477	h ɪ l f ə	*xelpō	h ɪ l f ə	hɪlfə	Hilfe	131	German				help	*xelpō	128
 345	h ɜː d	*xerdō	h ɜː - d ( - )	hɜːd	herd	95	English				herd	*xerdō	342
-344	h eː r d/t ə	*xerdō	h eː r d/t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō	342
+344	h eː r d ə	*xerdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō	342
 93	h ɑu ʋ ə	*xawwanan	h - ɑu ʋ ə - ( - - )	hɑuʋə	houwen	26	Dutch				hew	*xawwanan	129
 92	h j uː	*xawwanan	h j uː - - - ( - - )	hjuː	hew	26	English				hew	*xawwanan	129
 91	h au ə n	*xawwanan	h - au - ə n ( - - )	hauən	hauen	26	German				hew	*xawwanan	129
@@ -720,7 +720,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1369	ʃ aː f	*skēpan	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German				sheep	*skēpan	221
 310	s x ɪ l t	*skelduz	s x ɪ l t ( - - )	sxɪlt	schild	86	Dutch				shield	*skelduz	222
 309	ʃ iː l d	*skelduz	ʃ - iː l d ( - - )	ʃiːld	shield	86	English				shield	*skelduz	222
-308	ʃ ɪ l d/t	*skelduz	ʃ - ɪ l d/t ( - - )	ʃɪlt	Schild	86	German	BOR			shield	*skelduz	222
+308	ʃ ɪ l t	*skelduz	ʃ - ɪ l t ( - - )	ʃɪlt	Schild	86	German	BOR			shield	*skelduz	222
 963	ʃ ɪ l ɪ ŋ	*skellin)az	ʃ - ɪ l ɪ ŋ - ( - - )	ʃɪlɪŋ	shilling	264	English				shilling	*skellin)az	355
 962	ʃ ɪ l ɪ ŋ	*skellin)az	ʃ - ɪ l ɪ ŋ - ( - - )	ʃɪlɪŋ	Schilling	264	German				shilling	*skellin)az	355
 1401	s x ɛɪ n ə	*skīnanan	s x ɛɪ n ə - ( - - )	sxɛɪnə	schijnen	383	Dutch				shine	*skīnanan	223
