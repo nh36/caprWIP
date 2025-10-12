@@ -117,7 +117,7 @@ define GermanSurfaceVowel [
     {ɔ} | {ɔy} | {ə} | {ɛ} | {ɪ} | {ʊ}
 ];
 define GermanSurfaceConsonant [
-    {b} | {d} | {d/t} | {f} | {h} | {j} | {k} | {l} | {m} | {n} |
+    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} |
     {p} | {pf} | {r} | {s} | {t} | {ts} | {v} | {x} | {z} | {ŋ} |
     {ɡ} | {ʃ}
 ];
