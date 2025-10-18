@@ -234,6 +234,7 @@ define DutchVowelRules [
     ē -> {eː},
     {au} -> {œy},
     {ai} -> {ɛi},
+    e -> {ɛ},
     u -> {ɔ} || _ .#.,
     a -> {ɑ},
     e -> {ɪ} || _ Cons
@@ -290,6 +291,7 @@ define GermanStopShift [
 ### Long vowels
 define GermanLongVowelRules [
     ē -> {eː},
+    ē -> {aː} || _ r,
     ī -> {iː},
     ō -> {oː},
     ū -> {uː},
@@ -299,9 +301,7 @@ define GermanLongVowelRules [
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
     u -> {ɔ} || _ (k | K),
-    u -> {ɔ} || _ .#.,
-    n -> {ə} || _ Cons,
-    a -> {ə} || _ Cons,
+    e -> {ɛ},
     e -> {ɪ} || _ Cons,
     θ -> {d}
 ];
