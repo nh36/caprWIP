@@ -281,14 +281,6 @@ define GermanConsonantShift [
     {dj} -> nd
 ];
 
-define GermanAffrication [
-    t -> {ts}
-];
-
-define GermanPf [
-    p -> {pf}
-];
-
 ### k-spirantisation and shielding
 define GermanStopShift [
     kk -> K,
@@ -296,28 +288,25 @@ define GermanStopShift [
     k -> {ç} || FrontVowel _ (Cons | .#.)
 ];
 
-define GermanClusterShift [
-    s -> {ʃ} || .#. _ ({t} | {p})
+### Long vowels
+define GermanLongVowelRules [
+    ē -> {eː},
+    ē -> {aː} || _ r,
+    ē -> {aː} || _ l,
+    ī -> {iː},
+    ō -> {uː} || _ d,
+    ō -> {oː},
+    au -> {uː} || _ z,
+    ū -> {uː},
+    ā -> {aː}
 ];
 
-define GermanVoicing [
-    s -> {z} || .#. _ Vowel
+define GermanAiShift [
+    {ai} -> {ei} || _ h t
 ];
 
 define GermanHtShift [
     h t -> {xt}
-];
-
-### Long vowels
-define GermanLongVowelRules [
-    ē -> {eː},
-    ē -> {ɛi} || _ h t,
-    ē -> {aː} || _ r,
-    ī -> {iː},
-    ī -> {ai} || _ h t,
-    ō -> {oː},
-    ū -> {uː},
-    ā -> {aː}
 ];
 
 ### Vowel and syllable adjustments
@@ -339,14 +328,8 @@ define GermanOrthography [
 
 define GermanRules GermanConsonantShift
     .o. GermanStopShift
-    .o. GermanClusterShift
-    .o. GermanVoicing
-    .o. GermanAffrication
-    .o. GermanPf
     .o. GermanLongVowelRules
-    .o. GermanHtShift
     .o. GermanVowelAdjustments
-    .o. GermanFinalDevoice
     .o. GermanCleanup
     .o. GermanOrthography;
 

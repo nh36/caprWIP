@@ -32,6 +32,7 @@ Outcome of the Proto-Germanic → English/Dutch/German FST work completed on 202
 
 ## Next work items
 - Add German vowel developments (ē/ō, diphthongs) and admit `ç` in the surface filter.
+- Model main second-shift affrication (s→z, t→ts, k→ch) and nominative apocope after validating vowel work.
 - Model cluster/geminate reflexes such as `*stukkaz` → `ʃtɔk`.
 - Apply the same staged format to English and Dutch FSTs.
 - Summarise the Word attachments in Markdown while keeping the originals available.
