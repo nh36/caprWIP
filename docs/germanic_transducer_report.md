@@ -22,6 +22,7 @@ Outcome of the Proto-Germanic → English/Dutch/German FST work completed on 202
 - Added an English initial cluster rule (`kn-/gn- → n-`) with backward annotations so Modern English reflexes like *knight*/ *gnaw* can still project proto *kn-/gn-* and align with German/Dutch cognates.
 - Adjusted vowel lowering (`u → ɔ`) to recognise the shielded consonant.
 - Refactored the German FST into staged composition (`GermanCoreRules`, `GermanStopShift`, `GermanCleanup`) matching the Burmish style.
+- Added English short vowel and diphthong outputs (`e/o -> ɛ/ɔ`, `{ai/au} -> {aɪ/aʊ}`) so sets like *cow*, *meal*, *mood* now surface without manual overrides (2025-10-18).
 
 ### Sample mappings
 - `*buk` → `bɔx`, `bɔx` → `*buk`.
@@ -29,7 +30,7 @@ Outcome of the Proto-Germanic → English/Dutch/German FST work completed on 202
 - `ʃtɔk` currently lacks a shared protoform (cluster handling still pending).
 
 ## Next work items
-- Add German vowel developments (ē/ō, diphthongs) and admit `ç` in the surface filter.
+- Add German vowel developments (ē/ō, diphthongs) and admit `ç` in the surface filter; make short mid vowels reversible so `fɛl/nɛk/nɛt` reappear.
 - Model cluster/geminate reflexes such as `*stukkaz` → `ʃtɔk`.
 - Apply the same staged format to English and Dutch FSTs.
 - Summarise the Word attachments in Markdown while keeping the originals available.

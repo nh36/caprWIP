@@ -28,6 +28,7 @@ For usage instructions, see [USAGE.md](https://github.com/knightss27/capr/blob/u
 - The recent ProtoWord template update landed safely, but a lingering issue remains for the Germanic "year" set: English `jɪər` and Dutch/German `jaːr` currently reconstruct cleanly only when we add a direct override.
 - We intentionally reverted that stop-gap override for now; the better fix is to adjust the English rules so that the sequence `an` only deletes at absolute word end, preventing runaway deletion while keeping `*jēran` reachable.
 - Pick this thread up in the next session before making further Germanic QA changes.
+- 2025-10-18 update: English short mid vowels and `{ai/au}` now reach `{ɛ/ɔ}` and `{aɪ/aʊ}` without overrides, but German/Dutch still need complementary rules so cognate sets like *fell*, *neck*, *net* resurface.
 
 ## Project Structure
 ```
