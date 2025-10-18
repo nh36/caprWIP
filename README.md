@@ -58,3 +58,9 @@ You can read more about each individual folder in their respective READMEs.
 
 
 > Hulden, M. (2009). Foma: a finite-state compiler and library. In Proceedings of the 12th Conference of the European Chapter of the Association for Computational Linguistics (pp. 29–32).
+
+## Status — Proto-Germanic templates
+
+- Proto-Germanic template now splits into a strong (accented) syllable and an optional weak syllable, so lexical items ending in nasal vowel `ą` (e.g. `*knewą`, `*blōdą`) are well-formed.
+- German vowel pipeline still needs work: `kniː`, `broːt`, `bluːt` fail to project `*knewą`, `*braudą`, `*blōdą`. Next action: step through the ew→iu→ī + final `ą` deletion chronology to see where we lose analyses.
+- After the vowel fixes, retest high-priority cognate sets (knee/bread/blood/door) and refresh the README.
