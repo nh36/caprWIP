@@ -64,3 +64,9 @@ You can read more about each individual folder in their respective READMEs.
 - Proto-Germanic template now splits into a strong (accented) syllable and an optional weak syllable, so lexical items ending in nasal vowel `ą` (e.g. `*knewą`, `*blōdą`) are well-formed.
 - German vowel pipeline still needs work: `kniː`, `broːt`, `bluːt` fail to project `*knewą`, `*braudą`, `*blōdą`. Next action: step through the ew→iu→ī + final `ą` deletion chronology to see where we lose analyses.
 - After the vowel fixes, retest high-priority cognate sets (knee/bread/blood/door) and refresh the README.
+
+## 2025-10-19 — Proto templates & German ew chain
+
+- Proto-Germanic words now consist of a strong syllable plus an optional weak syllable; this legalises neuter `*-ą` forms in the template.
+- German `ew → iu → ī` is now split into contextual steps (`e→i/_w`, `w→u/i_`, `iu→ī/_(a|ą)`) so the transformation no longer deletes surrounding material.
+- Still missing: German `kniː`, `broːt`, `bluːt` fail to reconstruct `*knewą`, `*braudą`, `*blōdą`; next pass is to trace the long-vowel and nasal-deletion stages to see where candidates disappear.
