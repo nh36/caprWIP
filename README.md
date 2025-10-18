@@ -70,3 +70,9 @@ You can read more about each individual folder in their respective READMEs.
 - Proto-Germanic words now consist of a strong syllable plus an optional weak syllable; this legalises neuter `*-ą` forms in the template.
 - German `ew → iu → ī` is now split into contextual steps (`e→i/_w`, `w→u/i_`, `iu→ī/_(a|ą)`) so the transformation no longer deletes surrounding material.
 - Still missing: German `kniː`, `broːt`, `bluːt` fail to reconstruct `*knewą`, `*braudą`, `*blōdą`; next pass is to trace the long-vowel and nasal-deletion stages to see where candidates disappear.
+
+## 2025-10-19 — German long-vowel tracing
+
+- Stepped through `ProtoWord` + contextual `ew` rules; `*knewą`, `*braudą`, `*blōdą` survive to the long-vowel stage.
+- After the long-vowel adjustments / vowel cleanup the candidates still collapse, so the blockage now lies in `GermanLongVowelRules` + `GermanVowelAdjustments` (or the surface filter).
+- Next action: inspect those stages directly and adjust them so the nasal-vowel stems (`kniː`, `broːt`, `bluːt`) persist to the surface.
