@@ -24,6 +24,7 @@ Outcome of the Proto-Germanic → English/Dutch/German FST work completed on 202
 - Refactored the German FST into staged composition (`GermanCoreRules`, `GermanStopShift`, `GermanCleanup`) matching the Burmish style.
 - Added English short vowel and diphthong outputs (`e/o -> ɛ/ɔ`, `{ai/au} -> {aɪ/aʊ}`) so sets like *cow*, *meal*, *mood* now surface without manual overrides (2025-10-18).
 - Added Dutch/German short *e* → {ɛ} mappings (2025-10-18) so forms like *fell*, *neck*, *net* now return proto candidates when paired with English.
+- Added nominative -z apocope (2025-10-18) so cow/mood can move toward kuː/muːt.
 
 ### Sample mappings
 - `*buk` → `bɔx`, `bɔx` → `*buk`.

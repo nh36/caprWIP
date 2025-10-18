@@ -301,6 +301,10 @@ define GermanLongVowelRules [
     ā -> {aː}
 ];
 
+define GermanAzLoss [
+    z -> 0 || _ .#.
+];
+
 define GermanAiShift [
     {ai} -> {ei} || _ h t
 ];
