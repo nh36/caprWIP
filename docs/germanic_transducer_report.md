@@ -37,3 +37,10 @@ Outcome of the Proto-Germanic → English/Dutch/German FST work completed on 202
 - Model cluster/geminate reflexes such as `*stukkaz` → `ʃtɔk`.
 - Apply the same staged format to English and Dutch FSTs.
 - Summarise the Word attachments in Markdown while keeping the originals available.
+
+## 2025-10-18 session notes
+- ProtoWord needs to allow chained coda tokens; when we tried this, German `kuː` finally recovered `*kōwz` without hacking the vowel rules.
+- Reordering the German long-vowel chronology ahead of the consonant shift lets ō feed `{uː}` correctly, but we still need to push PG `ew` through the West Germanic `iu > ī` trajectory before German `Knie` will intersect.
+- Missing pieces: short-a umlaut in the `{?j}` environment, second-shift affrication (`t → {ts}`, `k/kk → {x}` despite shielding), and `{x}/{ç}` in the surface filter. These blocks explain why `neck/net/nest/Knecht/Buch/suchen` still fall back to `*surface`.
+- Next time, implement those sound laws in phonological order and re-run the debugger for knee/neck/net/nest/knight to measure progress.
+
