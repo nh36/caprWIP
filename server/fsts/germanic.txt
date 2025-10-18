@@ -327,6 +327,10 @@ define GermanLongVowelRules [
     ā -> {aː}
 ];
 
+define GermanFinalNasalLoss [
+    ą -> 0 || _ .#
+];
+
 define GermanAzLoss [
     z -> 0 || _ .#.
 ];
@@ -359,6 +363,7 @@ define GermanOrthography [
 
 define GermanRules GermanEwChain
     .o. GermanLongVowelRules
+    .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
     .o. GermanStopShift
     .o. GermanAzLoss
