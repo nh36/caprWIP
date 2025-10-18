@@ -45,7 +45,7 @@ define ProtoCodaCore [
     xm|xs|xt|xw|xz|zd|zj|zn|zw|θl|θr|θz|
     kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst
 ];
-define ProtoCoda [0|ProtoCodaCore];
+define ProtoCoda (0 | ProtoCodaCore | ProtoCodaCore ProtoCodaCore);
 
 define ProtoSyllable ProtoOnset ProtoNucleus ProtoCoda;
 define ProtoWord ProtoSyllable+;
@@ -276,7 +276,6 @@ define GermanConsonantShift [
     s -> {ʃ} || .# _ ,
     w -> {v},
     z -> {r} || Vowel _ Vowel,
-    z -> 0 || _ .#.,
     w -> 0 || Vowel _ Vowel,
     {dj} -> nd
 ];
@@ -294,7 +293,10 @@ define GermanLongVowelRules [
     ē -> {aː} || _ r,
     ē -> {aː} || _ l,
     ī -> {iː},
-    ō -> {uː} || _ d,
+    ō w -> ū,
+    ō -> {oː} || n _ θ,
+    ō -> ū || d _ n,
+    ō -> ū || _ (k | g | d | θ | t | s | z | f | l | r | w | {x} | {ç} | K | {v}),
     ō -> {oː},
     au -> {uː} || _ z,
     ū -> {uː},
@@ -315,6 +317,7 @@ define GermanHtShift [
 
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
+    ū -> {uː},
     u -> {ɔ} || _ (k | K),
     e -> {ɛ},
     e -> {ɪ} || _ Cons,
@@ -330,9 +333,10 @@ define GermanOrthography [
     x -> {h}
 ];
 
-define GermanRules GermanConsonantShift
+define GermanRules GermanLongVowelRules
+    .o. GermanConsonantShift
     .o. GermanStopShift
-    .o. GermanLongVowelRules
+    .o. GermanAzLoss
     .o. GermanVowelAdjustments
     .o. GermanCleanup
     .o. GermanOrthography;
