@@ -6,7 +6,7 @@
 ##############################################
 
 define ProtoVowel [
-    a|ā|
+    a|ā|ą|
     æ|
     e|ē|
     i|ī|
@@ -21,7 +21,7 @@ define ProtoSymbol [ProtoVowel|ProtoConsonant];
 # search space finite and filters out wildly ill-formed candidates when inverting
 # the daughter rules.
 define ProtoNucleus [
-    a|ā|e|ē|i|ī|o|ō|u|ū|
+    a|ā|ą|e|ē|i|ī|o|ō|u|ū|
     {ai}|{au}|{eu}
 ];
 
@@ -287,6 +287,17 @@ define GermanStopShift [
     k -> {ç} || FrontVowel _ (Cons | .#.)
 ];
 
+### West Germanic ew development
+define GermanEwToIu [
+    e w -> i u
+];
+
+define GermanIuToIi [
+    i u -> ī || _ a
+];
+
+define GermanEwChain GermanEwToIu .o. GermanIuToIi;
+
 ### Long vowels
 define GermanLongVowelRules [
     ē -> {eː},
@@ -333,7 +344,8 @@ define GermanOrthography [
     x -> {h}
 ];
 
-define GermanRules GermanLongVowelRules
+define GermanRules GermanEwChain
+    .o. GermanLongVowelRules
     .o. GermanConsonantShift
     .o. GermanStopShift
     .o. GermanAzLoss

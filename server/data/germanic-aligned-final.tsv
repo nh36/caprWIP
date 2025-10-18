@@ -11,15 +11,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 521	b ɑ n	*bannan	b ɑ n ( - - )	bɑn	ban	142	Dutch				ban	*bannan	4
 520	b æ n	*bannan	b æ n ( - - )	bæn	ban	142	English				ban	*bannan	4
 519	b a n	*bannan	b a n ( - - )	ban	Bann	142	German		C V C		ban	*bannan	4
-221	b ɛ r x	*bergan	b ɛ r x ( - - )	bɛrx	berg	61	Dutch				barrow	*bergan	5
-220	b æ r əʊ	*bergan	b æ r əʊ ( - - )	bærəʊ	barrow	61	English				barrow	*bergan	5
-219	b ɛ r k	*bergan	b ɛ r k ( - - )	bɛrk	Berg	61	German				barrow	*bergan	5
-1634	b ɑ s t	*bastan	b ɑ s t ( - - )	bɑst	bast	448	Dutch				bast	*bastan	6
-1633	b æ s t	*bastan	b æ s t ( - - )	bæst	bast	448	English				bast	*bastan	6
-1632	b a s t	*bastan	b a s t ( - - )	bast	Bast	448	German		C V C C		bast	*bastan	6
-1313	b ɑ t	*baθan	b ɑ t ( - - )	bɑt	bad	360	Dutch				bath	*baθan	7
-1312	b ɑː θ	*baθan	b ɑː θ ( - - )	bɑːθ	bath	360	English				bath	*baθan	7
-1311	b aː d	*baθan	b aː d ( - - )	baːt	Bad	360	German				bath	*baθan	7
+221	b ɛ r x	*bergą	b ɛ r x ( - - )	bɛrx	berg	61	Dutch				barrow	*bergą	5
+220	b æ r əʊ	*bergą	b æ r əʊ ( - - )	bærəʊ	barrow	61	English				barrow	*bergą	5
+219	b ɛ r k	*bergą	b ɛ r k ( - - )	bɛrk	Berg	61	German				barrow	*bergą	5
+1634	b ɑ s t	*bastą	b ɑ s t ( - - )	bɑst	bast	448	Dutch				bast	*bastą	6
+1633	b æ s t	*bastą	b æ s t ( - - )	bæst	bast	448	English				bast	*bastą	6
+1632	b a s t	*bastą	b a s t ( - - )	bast	Bast	448	German		C V C C		bast	*bastą	6
+1313	b ɑ t	*baθą	b ɑ t ( - - )	bɑt	bad	360	Dutch				bath	*baθą	7
+1312	b ɑː θ	*baθą	b ɑː θ ( - - )	bɑːθ	bath	360	English				bath	*baθą	7
+1311	b aː d	*baθą	b aː d ( - - )	baːt	Bad	360	German				bath	*baθą	7
 1177	b aː r t	*bardaz	b aː r t ( - - )	baːrt	baard	322	Dutch				beard	*bardaz	8
 1176	b ɪə d	*bardaz	b ɪə - d ( - - )	bɪəd	beard	322	English				beard	*bardaz	8
 1175	b aː r t	*bardaz	b aː r t ( - - )	baːrt	Bart	322	German		C V C C		beard	*bardaz	8
@@ -38,9 +38,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1688	b ɑ l x	*balgiz	b ɑ l x ( - - )	bɑlx	balg	462	Dutch				belly	*balgiz	13
 1687	b ɛ l ɪ	*balgiz	b ɛ l ɪ ( - - )	bɛlɪ	belly	462	English				belly	*balgiz	13
 1686	b a l k	*balgiz	b a l k ( - - )	balk	Balg	462	German		C V C C		belly	*balgiz	13
-262	b ɛ s	*bazjan	b ɛ s - ( - - )	bɛs	bes	72	Dutch				berry	*bazjan	14
-261	b ɛ r ɪ	*bazjan	b ɛ r - ( ɪ - )	bɛrɪ	berry	72	English				berry	*bazjan	14
-260	b eː r ə	*bazjan	b eː r - ( ə - )	beːrə	Beere	72	German				berry	*bazjan	14
+262	b ɛ s	*bazją	b ɛ s - ( - - )	bɛs	bes	72	Dutch				berry	*bazją	14
+261	b ɛ r ɪ	*bazją	b ɛ r - ( ɪ - )	bɛrɪ	berry	72	English				berry	*bazją	14
+260	b eː r ə	*bazją	b eː r - ( ə - )	beːrə	Beere	72	German				berry	*bazją	14
 546	b iː d ə	*beudanan	b iː d ə - ( - - )	biːdə	bieden	149	Dutch				bid	*beudanan	15
 1453	b ɪ d ə	*bidjanan	b ɪ d - ə - ( - - )	bɪdə	bidden	397	Dutch				bid	*bidjanan	15
 545	b ɪ d	*beudanan	b ɪ d - - ( - - )	bɪd	bid	149	English				bid	*beudanan	15
@@ -56,12 +56,12 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 390	x ə b oː r t ə	*burdiz	( x ə ) b oː r t ( ə - )	xəboːrtə	geboorte	107	Dutch				birth	*burdiz	18
 389	b ɜː θ	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	birth	107	English				birth	*burdiz	18
 388	ɡ ə b uː r t	*burdiz	( ɡ ə ) b uː r t ( - - )	ɡəbuːrt	Geburt	107	German				birth	*burdiz	18
-856	b l uː t	*blōdan	b l uː t ( - - )	bluːt	bloed	235	Dutch				blood	*blōdan	19
-855	b l ʌ d	*blōdan	b l ʌ d ( - - )	blʌd	blood	235	English				blood	*blōdan	19
-854	b l uː t	*blōdan	b l uː t ( - - )	bluːt	Blut	235	German				blood	*blōdan	19
-1302	b ɔ r t	*burdan	b ɔ r t ( - - )	bɔrt	bord	357	Dutch				board	*burdan	20
-1301	b ɔː d	*burdan	b ɔː - d ( - - )	bɔːd	board	357	English				board	*burdan	20
-1300	b ɔ r t	*burdan	b ɔ r t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdan	20
+856	b l uː t	*blōdą	b l uː t ( - - )	bluːt	bloed	235	Dutch				blood	*blōdą	19
+855	b l ʌ d	*blōdą	b l ʌ d ( - - )	blʌd	blood	235	English				blood	*blōdą	19
+854	b l uː t	*blōdą	b l uː t ( - - )	bluːt	Blut	235	German				blood	*blōdą	19
+1302	b ɔ r t	*burdą	b ɔ r t ( - - )	bɔrt	bord	357	Dutch				board	*burdą	20
+1301	b ɔː d	*burdą	b ɔː - d ( - - )	bɔːd	board	357	English				board	*burdą	20
+1300	b ɔ r t	*burdą	b ɔ r t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdą	20
 1037	b eː n	*bainan	b eː n ( - - )	beːn	been	284	Dutch				bone	*bainan	21
 1036	b əʊ n	*bainan	b əʊ n ( - - )	bəʊn	bone	284	English				bone	*bainan	21
 1035	b ai n	*bainan	b ai n ( - - )	bain	Bein	284	German		C V C		bone	*bainan	21
@@ -91,24 +91,24 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1296	b ɔy ɡ ə n	*baugjanan	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German		C V c - v c		bow	*baugjanan	27
 928	b iː ɡ ə n	*beuganan	b iː ɡ ə n ( - - )	biːɡən	biegen	255	German				bow	*beuganan	27
 1418	b oː ɡ ə n	*bugōn	b oː ɡ ə n	boːɡən	Bogen	388	German				bow	*bugōn	27
-1033	b uː r	*būran	b uː - r ( - - )	buːr	boer	283	Dutch				bower	*būran	28
-1032	b aʊ ə r	*būran	b aʊ ə r ( - - )	baʊər	bower	283	English				bower	*būran	28
-1031	b au ə r	*būran	b au ə r ( - - )	bauər	Bauer	283	German				bower	*būran	28
+1033	b uː r	*būrą	b uː - r ( - - )	buːr	boer	283	Dutch				bower	*būrą	28
+1032	b aʊ ə r	*būrą	b aʊ ə r ( - - )	baʊər	bower	283	English				bower	*būrą	28
+1031	b au ə r	*būrą	b au ə r ( - - )	bauər	Bauer	283	German				bower	*būrą	28
 798	b r ɑ n t	*brandaz	b r ɑ n t ( - - )	brɑnt	brand	218	Dutch				brand	*brandaz	29
 797	b r æ n d	*brandaz	b r æ n d ( - - )	brænd	brand	218	English				brand	*brandaz	29
 796	b r a n t	*brandaz	b r a n d ( - - )	brant	Brand	218	German				brand	*brandaz	29
-1158	b r oː t	*braudan	b r oː t ( - - )	broːt	brood	317	Dutch				bread	*braudan	30
-1157	b r ɛ d	*braudan	b r ɛ d ( - - )	brɛd	bread	317	English				bread	*braudan	30
-1156	b r oː t	*braudan	b r oː t ( - - )	broːt	Brot	317	German				bread	*braudan	30
+1158	b r oː t	*braudą	b r oː t ( - - )	broːt	brood	317	Dutch				bread	*braudą	30
+1157	b r ɛ d	*braudą	b r ɛ d ( - - )	brɛd	bread	317	English				bread	*braudą	30
+1156	b r oː t	*braudą	b r oː t ( - - )	broːt	Brot	317	German				bread	*braudą	30
 503	b r eː k ə	*brekanan	b r eː k ə - ( - - )	breːkə	breken	137	Dutch				break	*brekanan	31
 502	b r eɪ k	*brekanan	b r eɪ k - - ( - - )	breɪk	break	137	English				break	*brekanan	31
 501	b r ɛ x ə n	*brekanan	b r ɛ x ə n ( - - )	brɛxən	brechen	137	German				break	*brekanan	31
 1773	b ɔ r s t	*brustz	b ɔ r - s t ( - )	bɔrst	borst	485	Dutch				breast	*brustz	32
 1772	b r ɛ s t	*brustz	b - r ɛ s t ( - )	brɛst	breast	485	English				breast	*brustz	32
 1771	b r ʊ s t	*brustz	b - r ʊ s t ( - )	brʊst	Brust	485	German				breast	*brustz	32
-1516	b r uː k	*brekanan	b r uː k ( - - )	bruːk	broek	415	Dutch				breeches	*brekanan	33
-1515	b r ʊ k	*brekanan	b r ʊ k ( - - )	brʊk	breeches	415	English				breeches	*brekanan	33
-1514	b r ʊ x	*brekanan	b r ʊ x ( - - )	brʊx	Bruch	415	German				breeches	*brekanan	33
+1516	b r uː k	*brekaną	b r uː k ( - - )	bruːk	broek	415	Dutch				breeches	*brekaną	33
+1515	b r ʊ k	*brekaną	b r ʊ k ( - - )	brʊk	breeches	415	English				breeches	*brekaną	33
+1514	b r ʊ x	*brekaną	b r ʊ x ( - - )	brʊx	Bruch	415	German				breeches	*brekaną	33
 296	b r œy t	*brūdiz	b r œy t ( - - )	brœyt	bruid	82	Dutch				bride	*brūdiz	34
 295	b r aɪ d	*brūdiz	b r aɪ d ( - - )	braɪd	bride	82	English				bride	*brūdiz	34
 294	b r au t	*brūdiz	b r au t ( - - )	braut	Braut	82	German				bride	*brūdiz	34
@@ -163,9 +163,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 580	d aː t	*dēdiz	d aː t ( - - )	daːt	daad	159	Dutch				deed	*dēdiz	51
 579	d iː d	*dēdiz	d iː d ( - - )	diːd	deed	159	English				deed	*dēdiz	51
 578	t aː t	*dēdiz	t aː t ( - - )	taːt	Tat	159	German				deed	*dēdiz	51
-409	d iː r	*deuzan	d iː r ( - - )	diːr	dier	112	Dutch				deer	*deuzan	52
-408	d ɪə r	*deuzan	d ɪə r ( - - )	dɪər	deer	112	English				deer	*deuzan	52
-407	t iː r	*deuzan	t iː r ( - - )	tiːr	Tier	112	German				deer	*deuzan	52
+409	d iː r	*deuzą	d iː r ( - - )	diːr	dier	112	Dutch				deer	*deuzą	52
+408	d ɪə r	*deuzą	d ɪə r ( - - )	dɪər	deer	112	English				deer	*deuzą	52
+407	t iː r	*deuzą	t iː r ( - - )	tiːr	Tier	112	German				deer	*deuzą	52
 1520	d ɑu ʋ	*dawwō	d - ɑu ʋ ( - )	dɑuʋ	dauw	416	Dutch				dew	*dawwō	53
 1519	d j uː	*dawwō	d j uː - ( - )	djuː	dew	416	English				dew	*dawwō	53
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German				dew	*dawwō	53
@@ -175,8 +175,8 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1584	d uː n	*dōnan	d uː - n ( - - )	duːn	doen	434	Dutch				do	*dōnan	55
 1583	d uː	*dōnan	d uː - - ( - - )	duː	do	434	English				do	*dōnan	55
 1582	t uː n	*dōnan	t uː ə n ( - - )	tuːn	tun	434	German				do	*dōnan	55
-103	d ɔː r	*duran	d ɔː r ( - - )	dɔːr	door	29	English				door	*duran	335
-102	t oː r	*duran	t oː r ( - - )	toːr	Tor	29	German				door	*duran	335
+103	d ɔː r	*durą	d ɔː r ( - - )	dɔːr	door	29	English				door	*durą	335
+102	t oː r	*durą	t oː r ( - - )	toːr	Tor	29	German				door	*durą	335
 764	d eː x	*daigaz	d eː x ( - - )	deːx	deeg	209	Dutch				dough	*daigaz	56
 763	d əʊ	*daigaz	d əʊ - ( - - )	dəʊ	dough	209	English				dough	*daigaz	56
 762	t ai k	*daigaz	t ai k ( - - )	taik	Teig	209	German				dough	*daigaz	56
@@ -186,9 +186,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 398	d r oː m	*draumaz	d r oː m ( - - )	droːm	droom	109	Dutch				dream	*draumaz	58
 397	d r iː m	*draumaz	d r iː m ( - - )	driːm	dream	109	English				dream	*draumaz	58
 396	t r au m	*draumaz	t r au m ( - - )	traum	Traum	109	German				dream	*draumaz	58
-744	d r ɑ ŋ k	*drankan	d r ɑ ŋ k ( - - )	drɑŋk	drank	204	Dutch				drench	*drankan	59
-743	d r ɛ n ʧ	*drankan	d r ɛ n ʧ ( - - )	drɛnʧ	drench	204	English				drench	*drankan	59
-742	t r a ŋ k	*drankan	t r a ŋ k ( - - )	traŋk	Trank	204	German				drench	*drankan	59
+744	d r ɑ ŋ k	*dranką	d r ɑ ŋ k ( - - )	drɑŋk	drank	204	Dutch				drench	*dranką	59
+743	d r ɛ n ʧ	*dranką	d r ɛ n ʧ ( - - )	drɛnʧ	drench	204	English				drench	*dranką	59
+742	t r a ŋ k	*dranką	t r a ŋ k ( - - )	traŋk	Trank	204	German				drench	*dranką	59
 22	d r ɪ ŋ k ə	*drenkanan	d r ɪ ŋ k ə - ( - - )	drɪŋkə	drinken	6	Dutch				drink	*drenkanan	60
 21	d r ɪ ŋ k	*drenkanan	d r ɪ ŋ k - - ( - - )	drɪŋk	drink	6	English				drink	*drenkanan	60
 20	t r ɪ ŋ k ə n	*drenkanan	t r ɪ ŋ k ə n ( - - )	trɪŋkən	trinken	6	German				drink	*drenkanan	60
@@ -219,9 +219,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 118	v eː	*fexu	v eː ( - - )	veː	vee	33	Dutch				fee	*fexu	69
 117	f iː	*fexu	f iː ( - - )	fiː	fee	33	English				fee	*fexu	69
 116	v iː	*fexu	v iː ( - - )	viː	Vieh	33	German				fee	*fexu	69
-1801	v ɛ l	*fellan	v ɛ l ( - - )	vɛl	vel	493	Dutch				fell	*fellan	70
-1800	f ɛ l	*fellan	f ɛ l ( - - )	fɛl	fell	493	English				fell	*fellan	70
-1799	f ɛ l	*fellan	f ɛ l ( - - )	fɛl	Fell	493	German				fell	*fellan	70
+1801	v ɛ l	*fellą	v ɛ l ( - - )	vɛl	vel	493	Dutch				fell	*fellą	70
+1800	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	fell	493	English				fell	*fellą	70
+1799	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	Fell	493	German				fell	*fellą	70
 464	v aː r ə	*farnan	v aː r - ( ə - )	vaːrə	varen	127	Dutch				fern	*farnan	71
 463	f ɜː n	*farnan	f ɜː - n ( - - )	fɜːn	fern	127	English				fern	*farnan	71
 462	f a r n	*farnan	f a r n ( - - )	farn	Farn	127	German				fern	*farnan	71
@@ -248,9 +248,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1828	f au s t	*funxwstiz	f au ( - - ) s t ( - - )	faust	Faust	501	German				fist	*funxwstiz	78
 50	f l ɑː s k	*flaskō	f l ɑː s k -	flɑːsk	flask	14	English				flask	*flaskō	336
 49	f l a ʃ ə	*flaskō	f l a ʃ - ə	flaʃə	Flasche	14	German				flask	*flaskō	336
-1811	v l ɑ s	*flaxsan	v l ɑ - s ( - - )	vlɑs	vlas	496	Dutch				flax	*flaxsan	79
-1810	f l æ k s	*flaxsan	f l æ k s ( - - )	flæks	flax	496	English				flax	*flaxsan	79
-1809	f l a k s	*flaxsan	f l a k s ( - - )	flaks	Flachs	496	German				flax	*flaxsan	79
+1811	v l ɑ s	*flaxsą	v l ɑ - s ( - - )	vlɑs	vlas	496	Dutch				flax	*flaxsą	79
+1810	f l æ k s	*flaxsą	f l æ k s ( - - )	flæks	flax	496	English				flax	*flaxsą	79
+1809	f l a k s	*flaxsą	f l a k s ( - - )	flaks	Flachs	496	German				flax	*flaxsą	79
 973	v l oː	*flauxz	v l oː - ( - )	vloː	vlo	267	Dutch				flea	*flauxz	80
 972	f l iː	*flauxz	f l iː - ( - )	fliː	flea	267	English				flea	*flauxz	80
 971	f l oː	*flauxz	f l oː - ( - )	floː	Floh	267	German				flea	*flauxz	80
@@ -268,15 +268,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1108	f l iː ɡ ə n	*fleuganan	f l iː ɡ ə n ( - - )	fliːɡən	fliegen	304	German				fly	*fleuganan	84
 1449	f əʊ l	*fulōn	f əʊ l ( - - )	fəʊl	foal	396	English				foal	*fulōn	337
 1448	f oː l ə n	*fulōn	f oː l ( ə n )	foːlən	Fohlen	396	German				foal	*fulōn	337
-888	v uː r	*fōdran	v uː - - r ( - - )	vuːr	voer	244	Dutch				fodder	*fōdran	85
-887	f ɔ d ə r	*fōdran	f ɔ d ə r ( - - )	fɔdər	fodder	244	English				fodder	*fōdran	85
-886	f ʊ t ə r	*fōdran	f ʊ t ə r ( - - )	fʊtər	Futter	244	German				fodder	*fōdran	85
+888	v uː r	*fōdrą	v uː - - r ( - - )	vuːr	voer	244	Dutch				fodder	*fōdrą	85
+887	f ɔ d ə r	*fōdrą	f ɔ d ə r ( - - )	fɔdər	fodder	244	English				fodder	*fōdrą	85
+886	f ʊ t ə r	*fōdrą	f ʊ t ə r ( - - )	fʊtər	Futter	244	German				fodder	*fōdrą	85
 445	v ɑu ʋ	*falθanan	v ɑu ʋ - ə - ( - - )	vɑuʋ	vouw	122	Dutch	NC			fold	*falθanan	86
 444	f əʊ l d	*falθanan	f əʊ l d - - ( - - )	fəʊld	fold	122	English				fold	*falθanan	86
 443	f a l t ə n	*falθanan	f a l t ə n ( - - )	faltən	falten	122	German				fold	*falθanan	86
-779	v ɔ l k	*fulkan	v ɔ l k ( - - )	vɔlk	volk	213	Dutch				folk	*fulkan	87
-778	f əʊ k	*fulkan	f əʊ - k ( - - )	fəʊk	folk	213	English				folk	*fulkan	87
-777	f ɔ l k	*fulkan	f ɔ l k ( - - )	fɔlk	Volk	213	German				folk	*fulkan	87
+779	v ɔ l k	*fulką	v ɔ l k ( - - )	vɔlk	volk	213	Dutch				folk	*fulką	87
+778	f əʊ k	*fulką	f əʊ - k ( - - )	fəʊk	folk	213	English				folk	*fulką	87
+777	f ɔ l k	*fulką	f ɔ l k ( - - )	fɔlk	Volk	213	German				folk	*fulką	87
 1887	v ɔ l ɣ ə	*fulgēnan	v ɔ l ɣ ə - ( - - )	vɔlɣə	volgen	517	Dutch				follow	*fulgēnan	88
 1886	f ɔ l əʊ	*fulgēnan	f ɔ l əʊ - - ( - - )	fɔləʊ	follow	517	English				follow	*fulgēnan	88
 1885	f ɔ l ɡ ə n	*fulgēnan	f ɔ l ɡ ə n ( - - )	fɔlɡən	folgen	517	German				follow	*fulgēnan	88
@@ -300,15 +300,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1690	f r ɔy n t	*frijōndz	f r ɔy ( - - ) n d ( - )	frɔynt	Freund	463	German				friend	*frijōndz	94
 1482	f r aɪ t	*furxtīn	f - r aɪ - t ( - - )	fraɪt	fright	406	English				fright	*furxtīn	338
 1481	f ʊ r x t	*furxtīn	f ʊ r - x t ( - - )	fʊrxt	Furcht	406	German				fright	*furxtīn	338
-456	v ɔ r s t	*frustan	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch				frost	*frustan	95
-455	f r ɔ s t	*frustan	f r ɔ - s t ( - - )	frɔst	frost	125	English				frost	*frustan	95
-454	f r ɔ s t	*frustan	f r ɔ - s t ( - - )	frɔst	Frost	125	German				frost	*frustan	95
+456	v ɔ r s t	*frustą	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch				frost	*frustą	95
+455	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	frost	125	English				frost	*frustą	95
+454	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	Frost	125	German				frost	*frustą	95
 956	v oː r	*furxō	v oː r ( - - )	voːr	voor	262	Dutch				furrow	*furxō	96
 955	f ʌ r əʊ	*furxō	f ʌ r ( əʊ - )	fʌrəʊ	furrow	262	English				furrow	*furxō	96
 954	f ʊ r x ə	*furxō	f ʊ r ( x ə )	fʊrxə	Furche	262	German				furrow	*furxō	96
-748	x ɑ l	*gallan	x ɑ l - ( - )	xɑl	gal	205	Dutch				gall	*gallan	97
-747	ɡ ɔː l	*gallan	ɡ ɔː l - ( - )	ɡɔːl	gall	205	English				gall	*gallan	97
-746	ɡ a l ə	*gallan	ɡ a l ə ( - )	ɡalə	Galle	205	German				gall	*gallan	97
+748	x ɑ l	*gallą	x ɑ l - ( - )	xɑl	gal	205	Dutch				gall	*gallą	97
+747	ɡ ɔː l	*gallą	ɡ ɔː l - ( - )	ɡɔːl	gall	205	English				gall	*gallą	97
+746	ɡ a l ə	*gallą	ɡ a l ə ( - )	ɡalə	Galle	205	German				gall	*gallą	97
 201	x ɑ ŋ	*gangaz	x ɑ ŋ - ( - - )	xɑŋ	gang	56	Dutch				gang	*gangaz	98
 200	ɡ æ ŋ	*gangaz	ɡ æ ŋ - ( - - )	ɡæŋ	gang	56	English				gang	*gangaz	98
 199	ɡ a ŋ	*gangaz	ɡ a ŋ - ( - - )	ɡaŋ	Gang	56	German				gang	*gangaz	98
@@ -323,15 +323,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1876	x ɔ t	*gud	x ɔ t	xɔt	god	514	Dutch				god	*gud	101
 1875	ɡ ɔ d	*gud	ɡ ɔ d	ɡɔd	god	514	English				god	*gud	101
 1874	ɡ ɔ t	*gud	ɡ ɔ t	ɡɔt	Gott	514	German				god	*gud	101
-1089	x ɑu t	*gulθan	x ɑu - t ( - - )	xɑut	goud	298	Dutch				gold	*gulθan	102
-1088	ɡ əʊ l d	*gulθan	ɡ əʊ l d ( - - )	ɡəʊld	gold	298	English				gold	*gulθan	102
-1087	ɡ ɔ l t	*gulθan	ɡ ɔ l d ( - - )	ɡɔlt	Gold	298	German				gold	*gulθan	102
+1089	x ɑu t	*gulθą	x ɑu - t ( - - )	xɑut	goud	298	Dutch				gold	*gulθą	102
+1088	ɡ əʊ l d	*gulθą	ɡ əʊ l d ( - - )	ɡəʊld	gold	298	English				gold	*gulθą	102
+1087	ɡ ɔ l t	*gulθą	ɡ ɔ l d ( - - )	ɡɔlt	Gold	298	German				gold	*gulθą	102
 1294	x ɑ n s	*gansz	x ɑ n s ( - )	xɑns	gans	355	Dutch				goose	*gansz	103
 1293	ɡ uː s	*gansz	ɡ uː - s ( - )	ɡuːs	goose	355	English				goose	*gansz	103
 1292	ɡ a n s	*gansz	ɡ a n s ( - )	ɡans	Gans	355	German				goose	*gansz	103
-791	x r ɑ s	*grasan	x r ɑ s ( - - )	xrɑs	gras	216	Dutch				grass	*grasan	104
-790	ɡ r ɑː s	*grasan	ɡ r ɑː s ( - - )	ɡrɑːs	grass	216	English				grass	*grasan	104
-789	ɡ r aː s	*grasan	ɡ r aː s ( - - )	ɡraːs	Gras	216	German				grass	*grasan	104
+791	x r ɑ s	*grasą	x r ɑ s ( - - )	xrɑs	gras	216	Dutch				grass	*grasą	104
+790	ɡ r ɑː s	*grasą	ɡ r ɑː s ( - - )	ɡrɑːs	grass	216	English				grass	*grasą	104
+789	ɡ r aː s	*grasą	ɡ r aː s ( - - )	ɡraːs	Gras	216	German				grass	*grasą	104
 134	x r aː v ə	*grabanan	x r aː v ə - ( - - )	xraːvə	graven	37	Dutch				grave	*grabanan	105
 133	ɡ r ɑː v	*grabanan	ɡ r ɑː v - - ( - - )	ɡrɑːv	grave	37	English				grave	*grabanan	105
 132	ɡ r aː b ə n	*grabanan	ɡ r aː b ə n ( - - )	ɡraːbən	graben	37	German				grave	*grabanan	105
@@ -344,9 +344,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1616	x ɑ s t	*gastiz	x ɑ s t ( - - )	xɑst	gast	443	Dutch				guest	*gastiz	108
 1615	ɡ ɛ s t	*gastiz	ɡ ɛ s t ( - - )	ɡɛst	guest	443	English				guest	*gastiz	108
 1614	ɡ a s t	*gastiz	ɡ a s t ( - - )	ɡast	Gast	443	German				guest	*gastiz	108
-1005	h aː ɣ ə l	*xaglan	h aː ɣ ə l ( - - )	haːɣəl	hagel	275	Dutch				hail	*xaglan	109
-1004	h eɪ l	*xaglan	h eɪ - - l ( - - )	heɪl	hail	275	English				hail	*xaglan	109
-1003	h aː ɡ ə l	*xaglan	h aː ɡ ə l ( - - )	haːɡəl	Hagel	275	German				hail	*xaglan	109
+1005	h aː ɣ ə l	*xaglą	h aː ɣ ə l ( - - )	haːɣəl	hagel	275	Dutch				hail	*xaglą	109
+1004	h eɪ l	*xaglą	h eɪ - - l ( - - )	heɪl	hail	275	English				hail	*xaglą	109
+1003	h aː ɡ ə l	*xaglą	h aː ɡ ə l ( - - )	haːɡəl	Hagel	275	German				hail	*xaglą	109
 1344	h aː r	*xazwaz	h aː r ( - - - )	haːr	haar	368	Dutch				hair	*xazwaz	110
 1343	h ɛə r	*xazwaz	h ɛə r ( - - - )	hɛər	hair	368	English				hair	*xazwaz	110
 1342	h aː r	*xazwaz	h aː r ( - - - )	haːr	Haar	368	German				hair	*xazwaz	110
@@ -376,15 +376,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1797	h aː v ɪ k	*xabukaz	h aː v ɪ k ( - - )	haːvɪk	havik	492	Dutch				hawk	*xabukaz	118
 1796	h ɔː k	*xabukaz	h ɔː - - k ( - - )	hɔːk	hawk	492	English				hawk	*xabukaz	118
 1795	h aː b ɪ x t	*xabukaz	h aː b ɪ x ( - t )	haːbɪxt	Habicht	492	German				hawk	*xabukaz	118
-811	h oː j	*xawwjan	h oː - ( j - - )	hoːj	hooi	222	Dutch				hay	*xawwjan	119
-810	h eɪ	*xawwjan	h eɪ - ( - - - )	heɪ	hay	222	English				hay	*xawwjan	119
-809	h ɔy	*xawwjan	h ɔy - ( - - - )	hɔy	Heu	222	German				hay	*xawwjan	119
+811	h oː j	*xawwją	h oː - ( j - - )	hoːj	hooi	222	Dutch				hay	*xawwją	119
+810	h eɪ	*xawwją	h eɪ - ( - - - )	heɪ	hay	222	English				hay	*xawwją	119
+809	h ɔy	*xawwją	h ɔy - ( - - - )	hɔy	Heu	222	German				hay	*xawwją	119
 491	h aː z ə l aː r	*xaslaz	h aː z ə l ( aː r )	haːzəlaːr	hazelaar	134	Dutch				hazel	*xaslaz	120
 490	h eɪ z ə l	*xaslaz	h eɪ z ə l ( - - )	heɪzḷ	hazel	134	English				hazel	*xaslaz	120
 489	h aː z ə l	*xaslaz	h aː z ə l ( - - )	haːzəl	Hasel	134	German				hazel	*xaslaz	120
-254	h oː f t	*xaubudan	h oː f ( - ) t ( - - )	hoːft	hoofd	70	Dutch				head	*xaubudan	121
-253	h ɛ d	*xaubudan	h ɛ - ( - ) d ( - - )	hɛd	head	70	English				head	*xaubudan	121
-252	h au p t	*xaubudan	h au p ( - ) t ( - - )	haupt	Haupt	70	German				head	*xaubudan	121
+254	h oː f t	*xaubudą	h oː f ( - ) t ( - - )	hoːft	hoofd	70	Dutch				head	*xaubudą	121
+253	h ɛ d	*xaubudą	h ɛ - ( - ) d ( - - )	hɛd	head	70	English				head	*xaubudą	121
+252	h au p t	*xaubudą	h au p ( - ) t ( - - )	haupt	Haupt	70	German				head	*xaubudą	121
 189	h eː l ə	*xailjanan	h eː l - ə - ( - - )	heːlə	helen	53	Dutch				heal	*xailjanan	122
 188	h iː l	*xailjanan	h iː l - - - ( - - )	hiːl	heal	53	English				heal	*xailjanan	122
 187	h ai l ə n	*xailjanan	h ai l - ə n ( - - )	hailən	heilen	53	German				heal	*xailjanan	122
@@ -419,17 +419,17 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 487	h ɪ n d ə	*xendjō	h ɪ n d - ə	hɪndə	hinde	133	Dutch				hind	*xendjō	130
 486	h aɪ n d	*xendjō	h aɪ n d - -	haɪnd	hind	133	English				hind	*xendjō	130
 485	h ɪ n d ə	*xendjō	h ɪ n d - ə	hɪndə	Hinde	133	German				hind	*xendjō	130
-597	h ɔː d	*xuzdan	h ɔː - d ( - - )	hɔːd	hoard	164	English				hoard	*xuzdan	343
-596	h ɔ r t	*xuzdan	h ɔ r t ( - - )	hɔrt	Hort	164	German				hoard	*xuzdan	343
+597	h ɔː d	*xuzdą	h ɔː - d ( - - )	hɔːd	hoard	164	English				hoard	*xuzdą	343
+596	h ɔ r t	*xuzdą	h ɔ r t ( - - )	hɔrt	Hort	164	German				hoard	*xuzdą	343
 1251	h ɑu d ə	*xaldanan	h ɑu - d ə - ( - - )	hɑudə	houden	343	Dutch				hold	*xaldanan	131
 1250	h əʊ l d	*xaldanan	h əʊ l d - - ( - - )	həʊld	hold	343	English				hold	*xaldanan	131
 1249	h a l t ə n	*xaldanan	h a l t ə n ( - - )	haltən	halten	343	German				hold	*xaldanan	131
 12	h eː m	*xaimaz	h eː m ( - - )	heːm	heem	532	Dutch				home	*xaimaz	132
 11	h əʊ m	*xaimaz	h əʊ m ( - - )	həʊm	home	532	English				home	*xaimaz	132
 10	h ai m	*xaimaz	h ai m ( - - )	haim	Heim	532	German				home	*xaimaz	132
-375	h oː n ɪ ŋ	*xunagan	h oː n ɪ - ( - ŋ )	hoːnɪŋ	honing	103	Dutch				honey	*xunagan	133
-374	h ʌ n ɪ	*xunagan	h ʌ n ɪ - ( - - )	hʌnɪ	honey	103	English				honey	*xunagan	133
-373	h oː n ɪ x	*xunagan	h oː n ɪ x ( - - )	hoːnɪx	Honig	103	German				honey	*xunagan	133
+375	h oː n ɪ ŋ	*xunagą	h oː n ɪ - ( - ŋ )	hoːnɪŋ	honing	103	Dutch				honey	*xunagą	133
+374	h ʌ n ɪ	*xunagą	h ʌ n ɪ - ( - - )	hʌnɪ	honey	103	English				honey	*xunagą	133
+373	h oː n ɪ x	*xunagą	h oː n ɪ x ( - - )	hoːnɪx	Honig	103	German				honey	*xunagą	133
 153	h ʊ d	*xattuz	h ʊ d ( - - )	hʊd	hood	43	English				hood	*xattuz	344
 152	h uː t	*xattuz	h uː t ( - - )	huːt	Hut	43	German				hood	*xattuz	344
 1891	h uː f	*xōfaz	h uː f ( - - )	huːf	hoef	518	Dutch				hoof	*xōfaz	134
@@ -444,9 +444,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1838	k n eː d ə	*knedanan	k n eː d ə - ( - - )	kneːdə	kneden	503	Dutch				knead	*knedanan	137
 1837	n iː d	*knedanan	- n iː d - - ( - - )	niːd	knead	503	English				knead	*knedanan	137
 1836	k n eː t ə n	*knedanan	k n eː t ə n ( - - )	kneːtən	kneten	503	German				knead	*knedanan	137
-908	k n iː	*knewan	k n iː ( - - - )	kniː	knie	249	Dutch				knee	*knewan	138
-907	n iː	*knewan	- n iː ( - - - )	niː	knee	249	English				knee	*knewan	138
-906	k n iː	*knewan	k n iː ( - - - )	kniː	Knie	249	German				knee	*knewan	138
+908	k n iː	*knewą	k n iː ( - - - )	kniː	knie	249	Dutch				knee	*knewą	138
+907	n iː	*knewą	- n iː ( - - - )	niː	knee	249	English				knee	*knewą	138
+906	k n iː	*knewą	k n iː ( - - - )	kniː	Knie	249	German				knee	*knewą	138
 771	k n ɛ x t	*knakkaz	k n ɛ x - t	knɛxt	knecht	211	Dutch				knight	*knakkaz	139
 770	n aɪ t	*knakkaz	- n aɪ - - t	naɪt	knight	211	English				knight	*knakkaz	139
 769	k n ɛ x t	*knakkaz	k n ɛ x - t	knɛxt	Knecht	211	German				knight	*knakkaz	139
@@ -456,9 +456,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 405	l aː d ə	*laθōjanan	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjanan	141
 404	l eɪ d	*laθōjanan	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjanan	141
 403	l aː d ə n	*laθōjanan	l aː d ( - ) - ə n ( - - )	laːdən	laden	111	German				lade	*laθōjanan	141
-1355	l ɑ n t	*landan	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landan	142
-1354	l æ n d	*landan	l æ n d ( - - )	lænd	land	371	English				land	*landan	142
-1353	l a n t	*landan	l a n d ( - - )	lant	Land	371	German				land	*landan	142
+1355	l ɑ n t	*landą	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landą	142
+1354	l æ n d	*landą	l æ n d ( - - )	lænd	land	371	English				land	*landą	142
+1353	l a n t	*landą	l a n d ( - - )	lant	Land	371	German				land	*landą	142
 1554	l ɑ p	*labbaz	l ɑ p ( - - )	lɑp	lap	426	Dutch				lap	*labbaz	143
 1553	l æ p	*labbaz	l æ p ( - - )	læp	lap	426	English				lap	*labbaz	143
 1552	l a p ə n	*labbaz	l a p ( ə n )	lapən	Lappen	426	German				lap	*labbaz	143
@@ -470,13 +470,13 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1746	l ɛɪ d ə	*laidjanan	l ɛɪ d - ə - ( - - )	lɛɪdə	leiden	478	Dutch				lead	*laidjanan	145
 1745	l iː d	*laidjanan	l iː d - - - ( - - )	liːd	lead	478	English				lead	*laidjanan	145
 1744	l ai t ə n	*laidjanan	l ai t - ə n ( - - )	laitən	leiten	478	German				lead	*laidjanan	145
-664	l oː f	*lauban	l oː f ( - - )	loːf	loof	182	Dutch				leaf	*lauban	146
-663	l iː f	*lauban	l iː f ( - - )	liːf	leaf	182	English				leaf	*lauban	146
-662	l au p	*lauban	l au b ( - - )	laup	Laub	182	German				leaf	*lauban	146
+664	l oː f	*laubą	l oː f ( - - )	loːf	loof	182	Dutch				leaf	*laubą	146
+663	l iː f	*laubą	l iː f ( - - )	liːf	leaf	182	English				leaf	*laubą	146
+662	l au p	*laubą	l au b ( - - )	laup	Laub	182	German				leaf	*laubą	146
 1595	l ɜː n	*liznōjanan	l ɜː - n ( - ) - - - ( - - )	lɜːn	learn	437	English				learn	*liznōjanan	346
 1594	l ɛ r n ə n	*liznōjanan	l ɛ r n ( - ) - ə n ( - - )	lɛrnən	lernen	437	German				learn	*liznōjanan	346
-47	l ɛ ð ə r	*leθran	l ɛ ð ə r ( - - )	lɛðər	leather	13	English				leather	*leθran	347
-46	l eː d ə r	*leθran	l eː d ə r ( - - )	leːdər	Leder	13	German				leather	*leθran	347
+47	l ɛ ð ə r	*leθrą	l ɛ ð ə r ( - - )	lɛðər	leather	13	English				leather	*leθrą	347
+46	l eː d ə r	*leθrą	l eː d ə r ( - - )	leːdər	Leder	13	German				leather	*leθrą	347
 787	l uː k	*laukaz	l uː k ( - - )	luːk	look	215	Dutch				leek	*laukaz	147
 786	l iː k	*laukaz	l iː k ( - - )	liːk	leek	215	English				leek	*laukaz	147
 785	l au x	*laukaz	l au x ( - - )	laux	Lauch	215	German				leek	*laukaz	147
@@ -489,15 +489,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1641	l ɪ t	*liθuz	l ɪ t ( - - )	lɪt	lid	450	Dutch				lid	*liθuz	150
 1640	l ɪ d	*liθuz	l ɪ d ( - - )	lɪd	lid	450	English				lid	*liθuz	150
 1639	l iː t	*liθuz	l iː d ( - - )	liːt	Lid	450	German				lid	*liθuz	150
-839	l ɛɪ f	*līban	l ɛɪ f ( - - )	lɛɪf	lijf	230	Dutch				life	*līban	151
-838	l aɪ f	*līban	l aɪ f ( - - )	laɪf	life	230	English				life	*līban	151
-837	l ai p	*līban	l ai b ( - - )	laip	Leib	230	German				life	*līban	151
+839	l ɛɪ f	*lībą	l ɛɪ f ( - - )	lɛɪf	lijf	230	Dutch				life	*lībą	151
+838	l aɪ f	*lībą	l aɪ f ( - - )	laɪf	life	230	English				life	*lībą	151
+837	l ai p	*lībą	l ai b ( - - )	laip	Leib	230	German				life	*lībą	151
 528	l ɪ x t ə	*leuxtjanan	l ɪ x t - ə - ( - - )	lɪxtə	lichten	144	Dutch				light	*leuxtjanan	152
 527	l aɪ t	*leuxtjanan	l aɪ - t - - - ( - - )	laɪt	light	144	English				light	*leuxtjanan	152
 526	l ɔy x t ə n	*leuxtjanan	l ɔy x t - ə n ( - - )	lɔyxtən	leuchten	144	German				light	*leuxtjanan	152
-122	l ɛɪ m	*līman	l ɛɪ m ( - - )	lɛɪm	lijm	34	Dutch				lime	*līman	153
-121	l aɪ m	*līman	l aɪ m ( - - )	laɪm	lime	34	English				lime	*līman	153
-120	l ai m	*līman	l ai m ( - - )	laim	Leim	34	German				lime	*līman	153
+122	l ɛɪ m	*līmą	l ɛɪ m ( - - )	lɛɪm	lijm	34	Dutch				lime	*līmą	153
+121	l aɪ m	*līmą	l aɪ m ( - - )	laɪm	lime	34	English				lime	*līmą	153
+120	l ai m	*līmą	l ai m ( - - )	laim	Leim	34	German				lime	*līmą	153
 1727	l ɪ n d ə	*lendō	l ɪ n d ( ə - )	lɪndə	linde	473	Dutch				linden	*lendō	154
 1726	l ɪ n d ə n	*lendō	l ɪ n d ( ə n )	lɪndən	linden	473	English				linden	*lendō	154
 1725	l ɪ n d ə	*lendō	l ɪ n d ( ə - )	lɪndə	Linde	473	German				linden	*lendō	154
@@ -520,16 +520,16 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 257	l əʊ θ	*laiθaz	l əʊ θ ( - - )	ləʊθ	loath	71	English				loath	*laiθaz	160
 256	l ai t	*laiθaz	l ai d ( - - )	lait	Leid	71	German				loath	*laiθaz	160
 1150	l ɔ k	*lukkaz	l ɔ k ( - - )	lɔk	lok	315	Dutch				lock	*lukkaz	161
-859	l ɔ k	*lukan	l ɔ k ( - - )	lɔk	lock	236	English				lock	*lukan	161
+859	l ɔ k	*luką	l ɔ k ( - - )	lɔk	lock	236	English				lock	*luką	161
 1149	l ɔ k	*lukkaz	l ɔ k ( - - )	lɔk	lock	315	English				lock	*lukkaz	161
-858	l ɔ x	*lukan	l ɔ x ( - - )	lɔx	Loch	236	German				lock	*lukan	161
+858	l ɔ x	*luką	l ɔ x ( - - )	lɔx	Loch	236	German				lock	*luką	161
 1148	l ɔ k ə	*lukkaz	l ɔ k ( ə - )	lɔkə	Locke	315	German				lock	*lukkaz	161
 1826	l œy s	*lūsz	l œy s ( - )	lœys	luis	500	Dutch				louse	*lūsz	162
 1825	l aʊ s	*lūsz	l aʊ s ( - )	laʊs	louse	500	English				louse	*lūsz	162
 1824	l au s	*lūsz	l au s ( - )	laus	Laus	500	German				louse	*lūsz	162
-892	l ɔ ŋ	*lungwan	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch				lung	*lungwan	163
-891	l ʌ ŋ	*lungwan	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English				lung	*lungwan	163
-890	l ʊ ŋ ə	*lungwan	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German				lung	*lungwan	163
+892	l ɔ ŋ	*lungwą	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch				lung	*lungwą	163
+891	l ʌ ŋ	*lungwą	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English				lung	*lungwą	163
+890	l ʊ ŋ ə	*lungwą	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German				lung	*lungwą	163
 1329	l ʉ s t	*lustuz	l ʉ s t ( - - )	lʉst	lust	364	Dutch				lust	*lustuz	164
 1328	l ʌ s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	English				lust	*lustuz	164
 1327	l ʊ s t	*lustuz	l ʊ s t ( - - )	lʊst	Lust	364	German				lust	*lustuz	164
@@ -551,9 +551,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1712	m ɑ s t	*mastaz	m ɑ s t ( - - )	mɑst	mast	469	Dutch				mast	*mastaz	170
 1711	m ɑː s t	*mastaz	m ɑː s t ( - - )	mɑːst	mast	469	English				mast	*mastaz	170
 1710	m a s t	*mastaz	m a s t ( - - )	mast	Mast	469	German				mast	*mastaz	170
-239	m aː l	*mēlan	m aː l ( - - )	maːl	maal	66	Dutch				meal	*mēlan	171
-238	m iː l	*mēlan	m iː l ( - - )	miːl	meal	66	English				meal	*mēlan	171
-237	m aː l	*mēlan	m aː l ( - - )	maːl	Mal	66	German				meal	*mēlan	171
+239	m aː l	*mēlą	m aː l ( - - )	maːl	maal	66	Dutch				meal	*mēlą	171
+238	m iː l	*mēlą	m iː l ( - - )	miːl	meal	66	English				meal	*mēlą	171
+237	m aː l	*mēlą	m aː l ( - - )	maːl	Mal	66	German				meal	*mēlą	171
 75	m eː n ə	*mainjanan	m eː n - ə - ( - - )	meːnə	menen	21	Dutch				mean	*mainjanan	172
 74	m iː n	*mainjanan	m iː n - - - ( - - )	miːn	mean	21	English				mean	*mainjanan	172
 73	m ai n ə n	*mainjanan	m ai n - ə n ( - - )	mainən	meinen	21	German				mean	*mainjanan	172
@@ -595,12 +595,12 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 126	n aː l t	*nēθlō	n aː - - l ( t )	naːlt	naald	35	Dutch				needle	*nēθlō	184
 125	n iː d ə l	*nēθlō	n iː d ə l ( - )	niːdḷ	needle	35	English				needle	*nēθlō	184
 124	n aː d ə l	*nēθlō	n aː d ə l ( - )	naːdəl	Nadel	35	German				needle	*nēθlō	184
-318	n ɛ s t	*nistan	n ɛ s t ( - - )	nɛst	nest	88	Dutch				nest	*nistan	185
-317	n ɛ s t	*nistan	n ɛ s t ( - - )	nɛst	nest	88	English				nest	*nistan	185
-316	n ɛ s t	*nistan	n ɛ s t ( - - )	nɛst	Nest	88	German				nest	*nistan	185
-468	n ɛ t	*natjan	n ɛ t - ( - - )	nɛt	net	128	Dutch				net	*natjan	186
-467	n ɛ t	*natjan	n ɛ t - ( - - )	nɛt	net	128	English				net	*natjan	186
-466	n ɛ ts	*natjan	n ɛ ts - ( - - )	nɛt͡s	Netz	128	German				net	*natjan	186
+318	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	Dutch				nest	*nistą	185
+317	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	English				nest	*nistą	185
+316	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	Nest	88	German				nest	*nistą	185
+468	n ɛ t	*natją	n ɛ t - ( - - )	nɛt	net	128	Dutch				net	*natją	186
+467	n ɛ t	*natją	n ɛ t - ( - - )	nɛt	net	128	English				net	*natją	186
+466	n ɛ ts	*natją	n ɛ ts - ( - - )	nɛt͡s	Netz	128	German				net	*natją	186
 573	n ɛ t ə l	*natilōn	n ɛ t ə l ( - - )	nɛtḷ	nettle	157	English				nettle	*natilōn	349
 572	n ɛ s ə l	*natilōn	n ɛ s ə l ( - - )	nɛsəl	Nessel	157	German				nettle	*natilōn	349
 1541	n ɑ x t	*naxtz	n ɑ x t ( - )	nɑxt	nacht	422	Dutch				night	*naxtz	187
@@ -654,12 +654,12 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1736	r eː	*raixōn	r eː ( - - - )	reː	Reh	476	German				roe	*raixōn	201
 1096	r uː d	*rōdō	r uː d -	ruːd	rood	300	English				rood	*rōdō	352
 1095	r uː t ə	*rōdō	r uː t ə	ruːtə	Rute	300	German				rood	*rōdō	352
-499	r œy m	*rūman	r œy m ( - - )	rœym	ruim	136	Dutch				room	*rūman	202
-498	r uː m	*rūman	r uː m ( - - )	ruːm	room	136	English				room	*rūman	202
-497	r au m	*rūman	r au m ( - - )	raum	Raum	136	German				room	*rūman	202
-1306	r ɛɪ p	*raipan	r ɛɪ p ( - - )	rɛɪp	rijp	358	Dutch				rope	*raipan	203
-1305	r əʊ p	*raipan	r əʊ p ( - - )	rəʊp	rope	358	English				rope	*raipan	203
-1304	r ai f	*raipan	r ai f ( - - )	raif	Reif	358	German				rope	*raipan	203
+499	r œy m	*rūmą	r œy m ( - - )	rœym	ruim	136	Dutch				room	*rūmą	202
+498	r uː m	*rūmą	r uː m ( - - )	ruːm	room	136	English				room	*rūmą	202
+497	r au m	*rūmą	r au m ( - - )	raum	Raum	136	German				room	*rūmą	202
+1306	r ɛɪ p	*raipą	r ɛɪ p ( - - )	rɛɪp	rijp	358	Dutch				rope	*raipą	203
+1305	r əʊ p	*raipą	r əʊ p ( - - )	rəʊp	rope	358	English				rope	*raipą	203
+1304	r ai f	*raipą	r ai f ( - - )	raif	Reif	358	German				rope	*raipą	203
 1672	r uː r	*rōθraz	r uː - - r ( - - )	ruːr	roer	458	Dutch				rudder	*rōθraz	204
 1671	r ʌ d ə r	*rōθraz	r ʌ d ə r ( - - )	rʌdər	rudder	458	English				rudder	*rōθraz	204
 1670	r uː d ə r	*rōθraz	r uː d ə r ( - - )	ruːdər	Ruder	458	German				rudder	*rōθraz	204
@@ -671,15 +671,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1464	r ɔ ɣ ə	*rugiz	r ɔ ɣ ə ( - )	rɔɣə	rogge	400	Dutch				rye	*rugiz	206
 1463	r aɪ	*rugiz	r aɪ - - ( - )	raɪ	rye	400	English				rye	*rugiz	206
 1462	r ɔ ɡ ə n	*rugiz	r ɔ ɡ ə ( n )	rɔɡən	Roggen	400	German				rye	*rugiz	206
-941	z ɛɪ l	*seglan	z ɛɪ - - l ( - - )	zɛɪl	zeil	258	Dutch				sail	*seglan	207
-940	s eɪ l	*seglan	s eɪ - - l ( - - )	seɪl	sail	258	English				sail	*seglan	207
-939	z eː ɡ ə l	*seglan	z eː ɡ ə l ( - - )	zeːɡəl	Segel	258	German				sail	*seglan	207
+941	z ɛɪ l	*seglą	z ɛɪ - - l ( - - )	zɛɪl	zeil	258	Dutch				sail	*seglą	207
+940	s eɪ l	*seglą	s eɪ - - l ( - - )	seɪl	sail	258	English				sail	*seglą	207
+939	z eː ɡ ə l	*seglą	z eː ɡ ə l ( - - )	zeːɡəl	Segel	258	German				sail	*seglą	207
 138	z aː k	*sakō	z aː k -	zaːk	zaak	38	Dutch				sake	*sakō	208
 137	s ɑː k ɪ	*sakō	s eɪ k -	sɑːkɪ	sake	38	English				sake	*sakō	208
 136	z a x ə	*sakō	z a x ə	zaxə	Sache	38	German				sake	*sakō	208
-1215	z ɑu t	*saltan	z ɑu - t ( - - )	zɑut	zout	333	Dutch				salt	*saltan	209
-1214	s ɔː l t	*saltan	s ɔː l t ( - - )	sɔːlt	salt	333	English				salt	*saltan	209
-1213	z a l ts	*saltan	z a l ts ( - - )	zalt͡s	Salz	333	German				salt	*saltan	209
+1215	z ɑu t	*saltą	z ɑu - t ( - - )	zɑut	zout	333	Dutch				salt	*saltą	209
+1214	s ɔː l t	*saltą	s ɔː l t ( - - )	sɔːlt	salt	333	English				salt	*saltą	209
+1213	z a l ts	*saltą	z a l ts ( - - )	zalt͡s	Salz	333	German				salt	*saltą	209
 334	z ɑ l f	*salbō	z ɑ l f -	zɑlf	zalf	92	Dutch				salve	*salbō	210
 333	s æ l v	*salbō	s æ l v -	sælv	salve	92	English				salve	*salbō	210
 332	z a l b ə	*salbō	z a l b ə	zalbə	Salbe	92	German				salve	*salbō	210
@@ -704,9 +704,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 177	z eː v ə	*sebun	z eː v ə -	zeːvə	zeven	50	Dutch				seven	*sebun	217
 176	s ɛ v ə n	*sebun	s ɛ v ə n	sɛvṇ	seven	50	English				seven	*sebun	217
 175	z iː b ə n	*sebun	z iː b ə n	ziːbən	sieben	50	German				seven	*sebun	217
-1861	s x ɑ x t	*skaftan	s x ɑ x t ( - - )	sxɑxt	schacht	510	Dutch				shaft	*skaftan	218
-1860	ʃ ɑː f t	*skaftan	ʃ - ɑː f t ( - - )	ʃɑːft	shaft	510	English				shaft	*skaftan	218
-1859	ʃ a f t	*skaftan	ʃ - a f t ( - - )	ʃaft	Schaft	510	German				shaft	*skaftan	218
+1861	s x ɑ x t	*skaftą	s x ɑ x t ( - - )	sxɑxt	schacht	510	Dutch				shaft	*skaftą	218
+1860	ʃ ɑː f t	*skaftą	ʃ - ɑː f t ( - - )	ʃɑːft	shaft	510	English				shaft	*skaftą	218
+1859	ʃ a f t	*skaftą	ʃ - a f t ( - - )	ʃaft	Schaft	510	German				shaft	*skaftą	218
 1081	ʃ eɪ m	*skamō	ʃ - eɪ m ( - )	ʃeɪm	shame	296	English				shame	*skamō	354
 1080	ʃ aː m	*skamō	ʃ - aː m ( - )	ʃaːm	Scham	296	German				shame	*skamō	354
 1427	s x eː r ə	*skeranan	s x eː r ə - ( - - )	sxeːrə	scheren	390	Dutch				shear	*skeranan	219
@@ -715,9 +715,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1117	s x eː d ə	*skaiθiz	s x eː d ə ( - )	sxeːdə	schede	306	Dutch				sheath	*skaiθiz	220
 1116	ʃ iː θ	*skaiθiz	ʃ - iː θ - ( - )	ʃiːθ	sheath	306	English				sheath	*skaiθiz	220
 1115	ʃ ai d ə	*skaiθiz	ʃ - ai d ə ( - )	ʃaidə	Scheide	306	German				sheath	*skaiθiz	220
-1371	s x aː p	*skēpan	s x aː p ( - - )	sxaːp	schaap	375	Dutch				sheep	*skēpan	221
-1370	ʃ iː p	*skēpan	ʃ - iː p ( - - )	ʃiːp	sheep	375	English				sheep	*skēpan	221
-1369	ʃ aː f	*skēpan	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German				sheep	*skēpan	221
+1371	s x aː p	*skēpą	s x aː p ( - - )	sxaːp	schaap	375	Dutch				sheep	*skēpą	221
+1370	ʃ iː p	*skēpą	ʃ - iː p ( - - )	ʃiːp	sheep	375	English				sheep	*skēpą	221
+1369	ʃ aː f	*skēpą	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German				sheep	*skēpą	221
 310	s x ɪ l t	*skelduz	s x ɪ l t ( - - )	sxɪlt	schild	86	Dutch				shield	*skelduz	222
 309	ʃ iː l d	*skelduz	ʃ - iː l d ( - - )	ʃiːld	shield	86	English				shield	*skelduz	222
 308	ʃ ɪ l t	*skelduz	ʃ - ɪ l t ( - - )	ʃɪlt	Schild	86	German	BOR			shield	*skelduz	222
@@ -766,9 +766,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1668	s l aː p ə	*slēpanan	s l aː p ə - ( - - )	slaːpə	slapen	457	Dutch				sleep	*slēpanan	235
 1667	s l iː p	*slēpanan	s l iː p - - ( - - )	sliːp	sleep	457	English				sleep	*slēpanan	235
 1666	ʃ l aː f ə n	*slēpanan	ʃ l aː f ə n ( - - )	ʃlaːfən	schlafen	457	German				sleep	*slēpanan	235
-1912	s l ɛɪ m	*slīman	s l ɛɪ m ( - - )	slɛɪm	slijm	524	Dutch				slime	*slīman	236
-1911	s l aɪ m	*slīman	s l aɪ m ( - - )	slaɪm	slime	524	English				slime	*slīman	236
-1910	ʃ l ai m	*slīman	ʃ l ai m ( - - )	ʃlaim	Schleim	524	German				slime	*slīman	236
+1912	s l ɛɪ m	*slīmą	s l ɛɪ m ( - - )	slɛɪm	slijm	524	Dutch				slime	*slīmą	236
+1911	s l aɪ m	*slīmą	s l aɪ m ( - - )	slaɪm	slime	524	English				slime	*slīmą	236
+1910	ʃ l ai m	*slīmą	ʃ l ai m ( - - )	ʃlaim	Schleim	524	German				slime	*slīmą	236
 1815	s m eː r ə	*smerwjanan	s m eː r - - ə - ( - - )	smeːrə	smeren	497	Dutch				smear	*smerwjanan	237
 1814	s m ɪə r	*smerwjanan	s m ɪə r - - - - ( - - )	smɪər	smear	497	English				smear	*smerwjanan	237
 1813	ʃ m iː r ə n	*smerwjanan	ʃ m iː r - - ə n ( - - )	ʃmiːrən	schmieren	497	German				smear	*smerwjanan	237
@@ -845,9 +845,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 672	s t ɔ r m	*sturmaz	s t ɔ r m ( - - )	stɔrm	storm	184	Dutch				storm	*sturmaz	260
 671	s t ɔː m	*sturmaz	s t ɔː - m ( - - )	stɔːm	storm	184	English				storm	*sturmaz	260
 670	ʃ t ʊ r m	*sturmaz	ʃ t ʊ r m ( - - )	ʃtʊrm	Sturm	184	German				storm	*sturmaz	260
-1255	s t r oː	*strawan	s t r oː ( - - - )	stroː	stro	344	Dutch				straw	*strawan	261
-1254	s t r ɔː	*strawan	s t r ɔː ( - - - )	strɔː	straw	344	English				straw	*strawan	261
-1253	ʃ t r oː	*strawan	ʃ t r oː ( - - - )	ʃtroː	Stroh	344	German				straw	*strawan	261
+1255	s t r oː	*strawą	s t r oː ( - - - )	stroː	stro	344	Dutch				straw	*strawą	261
+1254	s t r ɔː	*strawą	s t r ɔː ( - - - )	strɔː	straw	344	English				straw	*strawą	261
+1253	ʃ t r oː	*strawą	ʃ t r oː ( - - - )	ʃtroː	Stroh	344	German				straw	*strawą	261
 1363	s t r oː m	*straumaz	s t r oː m ( - - )	stroːm	stroom	373	Dutch				stream	*straumaz	262
 1362	s t r iː m	*straumaz	s t r iː m ( - - )	striːm	stream	373	English				stream	*straumaz	262
 1361	ʃ t r oː m	*straumaz	ʃ t r oː m ( - - )	ʃtroːm	Strom	373	German				stream	*straumaz	262
@@ -860,8 +860,8 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 495	s t r ɛ ŋ	*strangiz	s t r ɛ ŋ - ( - - )	strɛŋ	streng	135	Dutch				string	*strangiz	265
 494	s t r ɪ ŋ	*strangiz	s t r ɪ ŋ - ( - - )	strɪŋ	string	135	English				string	*strangiz	265
 493	ʃ t r a ŋ	*strangiz	ʃ t r a ŋ - ( - - )	ʃtraŋ	Strang	135	German				string	*strangiz	265
-607	s t ʌ d	*stōdan	s t ʌ d - ( - )	stʌd	stud	167	English				stud	*stōdan	359
-606	ʃ t uː t ə	*stōdan	ʃ t uː t ə ( - )	ʃtuːtə	Stute	167	German				stud	*stōdan	359
+607	s t ʌ d	*stōdą	s t ʌ d - ( - )	stʌd	stud	167	English				stud	*stōdą	359
+606	ʃ t uː t ə	*stōdą	ʃ t uː t ə ( - )	ʃtuːtə	Stute	167	German				stud	*stōdą	359
 1872	z oː m ə r	*sumeraz	z oː m ə r ( - - )	zoːmər	zomer	513	Dutch				summer	*sumeraz	266
 1871	s ʌ m ə r	*sumeraz	s ʌ m ə r ( - - )	sʌmər	summer	513	English				summer	*sumeraz	266
 1870	z ɔ m ə r	*sumeraz	z ɔ m ə r ( - - )	zɔmər	Sommer	513	German				summer	*sumeraz	266
@@ -887,9 +887,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1078	z ʋ ɛɪ n	*swīnan	z ʋ ɛɪ n ( - - )	zʋɛɪn	zwijn	295	Dutch				swine	*swīnan	272
 1077	s ʋ aɪ n	*swīnan	s ʋ aɪ n ( - - )	sʋaɪn	swine	295	English				swine	*swīnan	272
 1076	ʃ v ai n	*swīnan	ʃ v ai n ( - - )	ʃvain	Schwein	295	German				swine	*swīnan	272
-209	z ʋ aː r t	*swerdan	z ʋ aː r t ( - - )	zʋaːrt	zwaard	58	Dutch				sword	*swerdan	273
-208	s ɔː d	*swerdan	s - ɔː - d ( - - )	sɔːd	sword	58	English				sword	*swerdan	273
-207	ʃ v eː r t	*swerdan	ʃ v eː r t ( - - )	ʃveːrt	Schwert	58	German				sword	*swerdan	273
+209	z ʋ aː r t	*swerdą	z ʋ aː r t ( - - )	zʋaːrt	zwaard	58	Dutch				sword	*swerdą	273
+208	s ɔː d	*swerdą	s - ɔː - d ( - - )	sɔːd	sword	58	English				sword	*swerdą	273
+207	ʃ v eː r t	*swerdą	ʃ v eː r t ( - - )	ʃveːrt	Schwert	58	German				sword	*swerdą	273
 330	t ɑ p	*tappōn	t ɑ p - ( - )	tɑp	tap	91	Dutch				tap	*tappōn	274
 329	t æ p	*tappōn	t æ p - ( - )	tæp	tap	91	English				tap	*tappōn	274
 328	ts a pf ə n	*tappōn	ts a pf ə ( n )	t͡sap͡fən	Zapfen	91	German				tap	*tappōn	274
@@ -904,9 +904,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1198	d ɑ ŋ k	*θankaz	d ɑ ŋ k ( - - )	dɑŋk	dank	328	Dutch	!			thanks	*θankaz	277
 1197	θ æ ŋ k s	*θankaz	θ æ ŋ k ( - s )	θæŋks	thanks	328	English	!			thanks	*θankaz	277
 1196	d a ŋ k	*θankaz	d a ŋ k ( - - )	daŋk	Dank	328	German				thanks	*θankaz	277
-952	d ɑ k	*θakan	d ɑ k ( - - )	dɑk	dak	261	Dutch				thatch	*θakan	278
-951	θ æ ʧ	*θakan	θ æ ʧ ( - - )	θæʧ	thatch	261	English				thatch	*θakan	278
-950	d a x	*θakan	d a x ( - - )	dax	Dach	261	German				thatch	*θakan	278
+952	d ɑ k	*θaką	d ɑ k ( - - )	dɑk	dak	261	Dutch				thatch	*θaką	278
+951	θ æ ʧ	*θaką	θ æ ʧ ( - - )	θæʧ	thatch	261	English				thatch	*θaką	278
+950	d a x	*θaką	d a x ( - - )	dax	Dach	261	German				thatch	*θaką	278
 652	d iː f	*θeubaz	d iː f ( - - )	diːf	dief	179	Dutch				thief	*θeubaz	279
 651	θ iː f	*θeubaz	θ iː f ( - - )	θiːf	thief	179	English				thief	*θeubaz	279
 650	d iː p	*θeubaz	d iː b ( - - )	diːp	Dieb	179	German				thief	*θeubaz	279
@@ -943,8 +943,8 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 960	t ɛɪ t	*tīdiz	t ɛɪ t ( - - )	tɛɪt	tijd	263	Dutch				tide	*tīdiz	290
 959	t aɪ d	*tīdiz	t aɪ d ( - - )	taɪd	tide	263	English				tide	*tīdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German				tide	*tīdiz	290
-814	t ɪ m b ə r	*temran	t ɪ m b ə r ( - - )	tɪmbər	timber	223	English				timber	*temran	363
-813	ts ɪ m ə r	*temran	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*temran	363
+814	t ɪ m b ə r	*temrą	t ɪ m b ə r ( - - )	tɪmbər	timber	223	English				timber	*temrą	363
+813	ts ɪ m ə r	*temrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*temrą	363
 1723	t eː n	*taixwō	t eː ( - - n )	teːn	teen	472	Dutch				toe	*taixwō	291
 1722	t əʊ	*taixwō	t əʊ ( - - - )	təʊ	toe	472	English				toe	*taixwō	291
 1721	ts eː ə	*taixwō	ts eː ( - ə - )	t͡seːə	Zehe	472	German				toe	*taixwō	291
@@ -963,8 +963,8 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1684	t r eː d ə	*tredanan	t r eː d ə - ( - - )	treːdə	treden	461	Dutch				tread	*tredanan	296
 1683	t r ɛ d	*tredanan	t r ɛ d - - ( - - )	trɛd	tread	461	English				tread	*tredanan	296
 1682	t r eː t ə n	*tredanan	t r eː t ə n ( - - )	treːtən	treten	461	German				tread	*tredanan	296
-1218	t r ɔ f	*trugan	t r ɔ f ( - - )	trɔf	trough	334	English				trough	*trugan	364
-1217	t r oː k	*trugan	t r oː k ( - - )	troːk	Trog	334	German				trough	*trugan	364
+1218	t r ɔ f	*trugą	t r ɔ f ( - - )	trɔf	trough	334	English				trough	*trugą	364
+1217	t r oː k	*trugą	t r oː k ( - - )	troːk	Trog	334	German				trough	*trugą	364
 656	ʋ aː d ə	*wadanan	ʋ aː d ə - ( - - )	ʋaːdə	waden	180	Dutch				wade	*wadanan	297
 655	ʋ eɪ d	*wadanan	ʋ eɪ d - - ( - - )	ʋeɪd	wade	180	English				wade	*wadanan	297
 654	v aː t ə n	*wadanan	v aː t ə n ( - - )	vaːtən	waten	180	German				wade	*wadanan	297
@@ -974,11 +974,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1041	ʋ aː k ə	*wakēnan	ʋ aː k ə - ( - - )	ʋaːkə	waken	285	Dutch				wake	*wakēnan	299
 1040	ʋ eɪ k	*wakēnan	ʋ eɪ k - - ( - - )	ʋeɪk	wake	285	English				wake	*wakēnan	299
 1039	v a x ə n	*wakēnan	v a x ə n ( - - )	vaxən	wachen	285	German				wake	*wakēnan	299
-1769	ʋ ɛ r f	*warpan	ʋ ɛ r f ( - - )	ʋɛrf	werf	484	Dutch				warp	*warpan	300
+1769	ʋ ɛ r f	*warpą	ʋ ɛ r f ( - - )	ʋɛrf	werf	484	Dutch				warp	*warpą	300
 1562	ʋ ɛ r p ə	*werpanan	ʋ ɛ r p ə - ( - - )	ʋɛrpə	werpen	428	Dutch				warp	*werpanan	300
-1768	ʋ ɔː p	*warpan	ʋ ɔː - p ( - - )	ʋɔːp	warp	484	English				warp	*warpan	300
+1768	ʋ ɔː p	*warpą	ʋ ɔː - p ( - - )	ʋɔːp	warp	484	English				warp	*warpą	300
 1561	ʋ ɔː p	*werpanan	ʋ ɔː - p - - ( - - )	ʋɔːp	warp	428	English				warp	*werpanan	300
-1767	v ɛ r f t	*warpan	v ɛ r f ( t - )	vɛrft	Werft	484	German				warp	*warpan	300
+1767	v ɛ r f t	*warpą	v ɛ r f ( t - )	vɛrft	Werft	484	German				warp	*warpą	300
 1560	v ɛ r f ə n	*werpanan	v ɛ r f ə n ( - - )	vɛrfən	werfen	428	German				warp	*werpanan	300
 1173	ʋ r ɑ t	*warto	ʋ - r ɑ t -	ʋrɑt	wrat	321	Dutch				wart	*warto	301
 1172	ʋ ɔː t	*warto	ʋ ɔː - - t -	ʋɔːt	wart	321	English				wart	*warto	301
@@ -989,14 +989,14 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1279	ʋ ɛ s p	*wabsaz	ʋ ɛ s p - ( - - )	ʋɛsp	wesp	351	Dutch				wasp	*wabsaz	303
 1278	ʋ ɔ s p	*wabsaz	ʋ ɔ s p - ( - - )	ʋɔsp	wasp	351	English				wasp	*wabsaz	303
 1277	v ɛ s p ə	*wabsaz	v ɛ s p - ( ə - )	vɛspə	Wespe	351	German				wasp	*wabsaz	303
-1132	ʋ aː t ə r	*watnan	ʋ aː t ə r	ʋaːtər	water	310	Dutch				water	*watnan	304
-1131	ʋ ɔː t ə r	*watnan	ʋ ɔː t ə r	ʋɔːtər	water	310	English				water	*watnan	304
-1130	v a s ə r	*watnan	v a s ə r	vasər	Wasser	310	German				water	*watnan	304
-849	ʋ ɑ s	*waxsan	ʋ ɑ - s ( - - )	ʋɑs	was	233	Dutch				wax	*waxsan	305
+1132	ʋ aː t ə r	*watną	ʋ aː t ə r	ʋaːtər	water	310	Dutch				water	*watną	304
+1131	ʋ ɔː t ə r	*watną	ʋ ɔː t ə r	ʋɔːtər	water	310	English				water	*watną	304
+1130	v a s ə r	*watną	v a s ə r	vasər	Wasser	310	German				water	*watną	304
+849	ʋ ɑ s	*waxsą	ʋ ɑ - s ( - - )	ʋɑs	was	233	Dutch				wax	*waxsą	305
 696	ʋ ɑ s ə	*waxsanan	ʋ ɑ - s ə - ( - - )	ʋɑsə	wassen	191	Dutch				wax	*waxsanan	305
-848	ʋ æ k s	*waxsan	ʋ æ k s ( - - )	ʋæks	wax	233	English				wax	*waxsan	305
+848	ʋ æ k s	*waxsą	ʋ æ k s ( - - )	ʋæks	wax	233	English				wax	*waxsą	305
 695	ʋ æ k s	*waxsanan	ʋ æ k s - - ( - - )	ʋæks	wax	191	English				wax	*waxsanan	305
-847	v a k s	*waxsan	v a k s ( - - )	vaks	Wachs	233	German				wax	*waxsan	305
+847	v a k s	*waxsą	v a k s ( - - )	vaks	Wachs	233	German				wax	*waxsą	305
 694	v a k s ə n	*waxsanan	v a k s ə n ( - - )	vaksən	wachsen	191	German				wax	*waxsanan	305
 1883	ʋ ɛ x	*wegaz	ʋ ɛ x ( - - )	ʋɛx	weg	516	Dutch				way	*wegaz	306
 1882	ʋ eɪ	*wegaz	ʋ eɪ - ( - - )	ʋeɪ	way	516	English				way	*wegaz	306
@@ -1007,9 +1007,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1494	ʋ eː z ə l	*weslon	ʋ eː z ə l ( - - )	ʋeːzəl	wezel	409	Dutch				weasel	*weslon	308
 1493	ʋ iː z ə l	*weslon	ʋ iː z ə l ( - - )	ʋiːzḷ	weasel	409	English				weasel	*weslon	308
 1492	v iː z ə l	*weslon	v iː z ə l ( - - )	viːzəl	Wiesel	409	German				weasel	*weslon	308
-660	ʋ eː d ə r	*wedran	ʋ eː d ə r ( - - )	ʋeːdər	weder	181	Dutch				weather	*wedran	309
-659	ʋ ɛ ð ə r	*wedran	ʋ ɛ ð ə r ( - - )	ʋɛðər	weather	181	English				weather	*wedran	309
-658	v ɛ t ə r	*wedran	v ɛ t ə r ( - - )	vɛtər	Wetter	181	German				weather	*wedran	309
+660	ʋ eː d ə r	*wedrą	ʋ eː d ə r ( - - )	ʋeːdər	weder	181	Dutch				weather	*wedrą	309
+659	ʋ ɛ ð ə r	*wedrą	ʋ ɛ ð ə r ( - - )	ʋɛðər	weather	181	English				weather	*wedrą	309
+658	v ɛ t ə r	*wedrą	v ɛ t ə r ( - - )	vɛtər	Wetter	181	German				weather	*wedrą	309
 1932	ʋ eː v ə	*webanan	ʋ eː v ə - ( - - )	ʋeːvə	weven	530	Dutch				weave	*webanan	310
 1931	ʋ iː v	*webanan	ʋ iː v - - ( - - )	ʋiːv	weave	530	English				weave	*webanan	310
 1930	v eː b ə n	*webanan	v eː b ə n ( - - )	veːbən	weben	530	German				weave	*webanan	310
@@ -1035,9 +1035,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 195	v ɪ t v ə	*widuwōn	v ɪ t - v ə ( - )	vɪtvə	Witwe	55	German				widow	*widuwōn	316
 1265	ʋ iː l d	*waldanan	ʋ iː l d - - ( - - )	ʋiːld	wield	347	English				wield	*waldanan	366
 1264	v a l t ə n	*waldanan	v a l t ə n ( - - )	valtən	walten	347	German				wield	*waldanan	366
-4	ʋ ɛɪ f	*wīban	ʋ ɛɪ f ( - - )	ʋɛɪf	wijf	538	Dutch				wife	*wīban	317
-3	ʋ aɪ f	*wīban	ʋ aɪ f ( - - )	ʋaɪf	wife	538	English				wife	*wīban	317
-2	v ai p	*wīban	v ai b ( - - )	vaip	Weib	538	German				wife	*wīban	317
+4	ʋ ɛɪ f	*wībą	ʋ ɛɪ f ( - - )	ʋɛɪf	wijf	538	Dutch				wife	*wībą	317
+3	ʋ aɪ f	*wībą	ʋ aɪ f ( - - )	ʋaɪf	wife	538	English				wife	*wībą	317
+2	v ai p	*wībą	v ai b ( - - )	vaip	Weib	538	German				wife	*wībą	317
 1106	ʋ aɪ t	*wextiz	ʋ aɪ - t ( - - )	ʋaɪt	wight	303	English				wight	*wextiz	367
 1105	v ɪ x t	*wextiz	v ɪ x t ( - - )	vɪxt	Wicht	303	German				wight	*wextiz	367
 1664	ʋ ɪ l ə	*waljanan	ʋ ɪ l - ə - ( - - )	ʋɪlə	willen	456	Dutch				will	*waljanan	318
@@ -1061,15 +1061,15 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1527	ʋ ɔ l f	*wulfaz	ʋ ɔ l f ( - - )	ʋɔlf	wolf	418	Dutch				wolf	*wulfaz	323
 1526	ʋ ʊ l f	*wulfaz	ʋ ʊ l f ( - - )	ʋʊlf	wolf	418	English				wolf	*wulfaz	323
 1525	v ɔ l f	*wulfaz	v ɔ l f ( - - )	vɔlf	Wolf	418	German				wolf	*wulfaz	323
-1051	ʋ ɔ n d ə r	*wundran	ʋ ɔ n d ə r ( - - )	ʋɔndər	wonder	288	Dutch	MT			wonder	*wundran	324
-1050	ʋ ʌ n d ə r	*wundran	ʋ ʌ n d ə r ( - - )	ʋʌndər	wonder	288	English	MT			wonder	*wundran	324
-1049	v ʊ n d ə r	*wundran	v ʊ n d ə r ( - - )	vʊndər	Wunder	288	German	MT			wonder	*wundran	324
+1051	ʋ ɔ n d ə r	*wundrą	ʋ ɔ n d ə r ( - - )	ʋɔndər	wonder	288	Dutch	MT			wonder	*wundrą	324
+1050	ʋ ʌ n d ə r	*wundrą	ʋ ʌ n d ə r ( - - )	ʋʌndər	wonder	288	English	MT			wonder	*wundrą	324
+1049	v ʊ n d ə r	*wundrą	v ʊ n d ə r ( - - )	vʊndər	Wunder	288	German	MT			wonder	*wundrą	324
 1486	ʋ ɔ l	*wullo	ʋ ɔ l -	ʋɔl	wol	407	Dutch				wool	*wullo	325
 1485	ʋ ʊ l	*wullo	ʋ ʊ l -	ʋʊl	wool	407	English				wool	*wullo	325
 1484	v ɔ l ə	*wullo	v ɔ l ə	vɔlə	Wolle	407	German				wool	*wullo	325
-235	ʋ oː r t	*wurdan	ʋ oː r t ( - - )	ʋoːrt	woord	65	Dutch				word	*wurdan	326
-234	ʋ ɜː d	*wurdan	ʋ ɜː - d ( - - )	ʋɜːd	word	65	English				word	*wurdan	326
-233	v ɔ r t	*wurdan	v ɔ r t ( - - )	vɔrt	Wort	65	German				word	*wurdan	326
+235	ʋ oː r t	*wurdą	ʋ oː r t ( - - )	ʋoːrt	woord	65	Dutch				word	*wurdą	326
+234	ʋ ɜː d	*wurdą	ʋ ɜː - d ( - - )	ʋɜːd	word	65	English				word	*wurdą	326
+233	v ɔ r t	*wurdą	v ɔ r t ( - - )	vɔrt	Wort	65	German				word	*wurdą	326
 1558	ʋ eː r ə l t	*wira-aldiz	ʋ eː r ə l t ( - - )	ʋeːrəlt	wereld	427	Dutch				world	*wira-aldiz	327
 1557	ʋ ɜː l d	*wira-aldiz	ʋ ɜː - - l d ( - - )	ʋɜːld	world	427	English				world	*wira-aldiz	327
 1556	v ɛ l t	*wira-aldiz	v ɛ - - l t ( - - )	vɛlt	Welt	427	German				world	*wira-aldiz	327
@@ -1082,12 +1082,12 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 564	x aː r ə	*garnan	x aː r - ( ə - )	xaːrə	garen	154	Dutch				yarn	*garnan	330
 563	j ɑː n	*garnan	j ɑː - n ( - - )	jɑːn	yarn	154	English				yarn	*garnan	330
 562	ɡ a r n	*garnan	ɡ a r n ( - - )	ɡarn	Garn	154	German				yarn	*garnan	330
-1022	j aː r	*jēran	j aː r ( - - )	jaːr	jaar	280	Dutch				year	*jēran	331
-1021	j ɪə r	*jēran	j ɪə r ( - - )	jɪər	year	280	English				year	*jēran	331
-1020	j aː r	*jēran	j aː r ( - - )	jaːr	Jahr	280	German				year	*jēran	331
-831	j ʉ k	*jukan	j ʉ k ( - - )	jʉk	juk	228	Dutch				yoke	*jukan	332
-830	j əʊ k	*jukan	j əʊ k ( - - )	jəʊk	yoke	228	English				yoke	*jukan	332
-829	j ɔ x	*jukan	j ɔ x ( - - )	jɔx	Joch	228	German				yoke	*jukan	332
+1022	j aː r	*jērą	j aː r ( - - )	jaːr	jaar	280	Dutch				year	*jērą	331
+1021	j ɪə r	*jērą	j ɪə r ( - - )	jɪər	year	280	English				year	*jērą	331
+1020	j aː r	*jērą	j aː r ( - - )	jaːr	Jahr	280	German				year	*jērą	331
+831	j ʉ k	*juką	j ʉ k ( - - )	jʉk	juk	228	Dutch				yoke	*juką	332
+830	j əʊ k	*juką	j əʊ k ( - - )	jəʊk	yoke	228	English				yoke	*juką	332
+829	j ɔ x	*juką	j ɔ x ( - - )	jɔx	Joch	228	German				yoke	*juką	332
 870	j øː x t	*jugunθiz	j øː x - - t ( - - )	jøːxt	jeugd	239	Dutch				youth	*jugunθiz	333
 869	j uː θ	*jugunθiz	j uː - - - θ ( - - )	juːθ	youth	239	English				youth	*jugunθiz	333
 868	j uː ɡ ə n t	*jugunθiz	j uː ɡ ə n d ( - - )	juːɡənt	Jugend	239	German				youth	*jugunθiz	333
