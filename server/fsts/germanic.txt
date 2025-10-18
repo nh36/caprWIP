@@ -295,15 +295,21 @@ define GermanStopShift [
 ];
 
 ### West Germanic ew development
-define GermanEwToIu [
-    e w -> i u
+define GermanEToIBeforeW [
+    e -> i || _ w
+];
+
+define GermanWToUAfterI [
+    w -> u || i _
 ];
 
 define GermanIuToIi [
-    i u -> ī || _ a
+    i u -> ī || _ (a | ą)
 ];
 
-define GermanEwChain GermanEwToIu .o. GermanIuToIi;
+define GermanEwChain GermanEToIBeforeW
+    .o. GermanWToUAfterI
+    .o. GermanIuToIi;
 
 ### Long vowels
 define GermanLongVowelRules [
