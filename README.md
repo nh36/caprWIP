@@ -76,3 +76,22 @@ You can read more about each individual folder in their respective READMEs.
 - Stepped through `ProtoWord` + contextual `ew` rules; `*knewą`, `*braudą`, `*blōdą` survive to the long-vowel stage.
 - After the long-vowel adjustments / vowel cleanup the candidates still collapse, so the blockage now lies in `GermanLongVowelRules` + `GermanVowelAdjustments` (or the surface filter).
 - Next action: inspect those stages directly and adjust them so the nasal-vowel stems (`kniː`, `broːt`, `bluːt`) persist to the surface.
+
+## 2025-10-19 — WGmc `au` monophthongisation
+
+- Added a dedicated `GermanAuMonophth` stage (`{au} → ō / _ {d, ð, t, θ, n}`) ahead of the long-vowel rules so `*braudą` now feeds `ō` and the cascade outputs `brɔːd` instead of collapsing.
+- Confirmed nominative `*-auz` forms still pass through the existing `{au} → {uː} / _ z` mapping; next fix is final devoicing so `brɔːd` reaches `broːt`.
+
+## TODO — German nasal-vowel debugging plan
+
+1. Instrument staged transducers
+   - Save intermediate FSTs after each component of the German cascade (ProtoWord, ew chain, long-vowel rules, final nasal loss, az-loss, vowel adjustments, etc.).
+   - For each stage, run `apply down` on `k n e w ą`, `b r a u d ą`, `b l ō d ą` (and maybe `tōr`) to record the exact output string; note when the form collapses to the empty set.
+2. Nail the long-vowel chronology
+   - Ensure the ew-chain outputs `knīą` and the long-vowel block converts `ī → {iː}` without undoing the change later.
+   - Confirm final nasal deletion (`ą → 0`) happens after `{iː}` has been created.
+3. Fill the missing sound laws
+   - Introduce final devoicing (`d→t`, `b→p`, `g→k`, etc.) so `*blōdą` becomes `bluːt` and other voiced finals survive the surface filter.
+   - Revisit `{au}` reflexes outside dental codas (e.g. `lauf`, `Haus`) once devoicing lands to ensure no collateral regressions.
+4. Regression pass
+   - Re-run `apply down` / `apply up` for `kniː`, `broːt`, `bluːt`; then spot-check other `*-ą` stems to make sure no collateral damage.
