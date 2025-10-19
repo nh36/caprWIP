@@ -284,7 +284,10 @@ define GermanConsonantShift [
     w -> {v},
     z -> {r} || Vowel _ Vowel,
     w -> 0 || Vowel _ Vowel,
-    {dj} -> nd,
+    {dj} -> nd
+];
+
+define GermanFinalDevoicing [
     b -> {p} || _ .#.,
     d -> {t} || _ .#.,
     g -> {k} || _ .#.,
@@ -371,6 +374,7 @@ define GermanRules GermanEwChain
     .o. GermanStopShift
     .o. GermanAzLoss
     .o. GermanVowelAdjustments
+    .o. GermanFinalDevoicing
     .o. GermanCleanup
     .o. GermanOrthography;
 
