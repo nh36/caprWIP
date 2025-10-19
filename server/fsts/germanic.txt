@@ -295,21 +295,19 @@ define GermanStopShift [
 ];
 
 ### West Germanic ew development
-define GermanEToIBeforeW [
-    e -> i || _ w
-];
+define GermanEToIBeforeW ?* [ e -> i || _ w ] ?*;
 
-define GermanWToUAfterI [
-    w -> u || i _
-];
+define GermanWToUAfterI ?* [ w -> u || i _ ] ?*;
 
-define GermanIuToIi [
-    i u -> ī || _ (a | ą)
-];
+define GermanIuToIi ?* [ {iu} -> {ī} || _ (a | ą) ] ?*;
 
 define GermanEwChain GermanEToIBeforeW
     .o. GermanWToUAfterI
     .o. GermanIuToIi;
+
+### West Germanic au monophthongisation
+define GermanAuMonophthContext d | ð | t | θ | n;
+define GermanAuMonophth ?* [ {au} -> ō || _ GermanAuMonophthContext ] ?*;
 
 ### Long vowels
 define GermanLongVowelRules [
@@ -362,6 +360,7 @@ define GermanOrthography [
 ];
 
 define GermanRules GermanEwChain
+    .o. GermanAuMonophth
     .o. GermanLongVowelRules
     .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
