@@ -82,6 +82,11 @@ You can read more about each individual folder in their respective READMEs.
 - Added a dedicated `GermanAuMonophth` stage (`{au} → ō / _ {d, ð, t, θ, n}`) ahead of the long-vowel rules so `*braudą` now feeds `ō` and the cascade outputs `brɔːd` instead of collapsing.
 - Confirmed nominative `*-auz` forms still pass through the existing `{au} → {uː} / _ z` mapping; next fix is final devoicing so `brɔːd` reaches `broːt`.
 
+## 2025-10-19 — German final devoicing
+
+- Folded base consonant devoicing (`b/d/g/v → p/t/k/f / _ #`) into `GermanConsonantShift` so ‘bread/blood’ now surface as `brɔːt` / `bluːt` without overrides.
+- Remaining gaps: `{au}` before non-dentals (e.g. `lauf`) still drifts to `{ɔː}` via later vowel cleanup; earmarked for a dedicated pass after consonant QA.
+
 ## TODO — German nasal-vowel debugging plan
 
 1. Instrument staged transducers
@@ -91,7 +96,6 @@ You can read more about each individual folder in their respective READMEs.
    - Ensure the ew-chain outputs `knīą` and the long-vowel block converts `ī → {iː}` without undoing the change later.
    - Confirm final nasal deletion (`ą → 0`) happens after `{iː}` has been created.
 3. Fill the missing sound laws
-   - Introduce final devoicing (`d→t`, `b→p`, `g→k`, etc.) so `*blōdą` becomes `bluːt` and other voiced finals survive the surface filter.
-   - Revisit `{au}` reflexes outside dental codas (e.g. `lauf`, `Haus`) once devoicing lands to ensure no collateral regressions.
+   - Revisit `{au}` reflexes outside dental codas (e.g. `lauf`, `Haus`) now that devoicing is in place to ensure no collateral regressions.
 4. Regression pass
    - Re-run `apply down` / `apply up` for `kniː`, `broːt`, `bluːt`; then spot-check other `*-ą` stems to make sure no collateral damage.

@@ -284,7 +284,11 @@ define GermanConsonantShift [
     w -> {v},
     z -> {r} || Vowel _ Vowel,
     w -> 0 || Vowel _ Vowel,
-    {dj} -> nd
+    {dj} -> nd,
+    b -> {p} || _ .#.,
+    d -> {t} || _ .#.,
+    g -> {k} || _ .#.,
+    v -> {f} || _ .#.
 ];
 
 ### k-spirantisation and shielding
