@@ -87,6 +87,10 @@ You can read more about each individual folder in their respective READMEs.
 - Folded base consonant devoicing (`b/d/g/v → p/t/k/f / _ #`) into `GermanConsonantShift` so ‘bread/blood’ now surface as `brɔːt` / `bluːt` without overrides.
 - Remaining gaps: `{au}` before non-dentals (e.g. `lauf`) still drifts to `{ɔː}` via later vowel cleanup; earmarked for a dedicated pass after consonant QA.
 
+## 2025-10-19 — Proto filter notes
+
+- We still allow every proto candidate to end in a single `*-ą`, but the current `ProtoWord` template also admits doubled nasal vowels (`*-ąą`). Tighten this later (e.g. via an explicit neuter suffix component) so we don’t have to track morphology while keeping the phonotactics realistic.
+
 ## TODO — German nasal-vowel debugging plan
 
 1. Instrument staged transducers
