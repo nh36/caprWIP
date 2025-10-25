@@ -2,6 +2,9 @@
 
 This page will walk you through two ways to set up CAPR, starting from a new (or at least not-CAPR-running) Linux machine. (This may also work on Mac, but probably does not on Windows).
 
+👉 For the day-to-day quick start + runbook, see the root `README.md` and
+`docs/runbook.md`. This file is the deeper install reference.
+
 Remember that for either method, if you need to change the input lexicon or the template-aligned lexicon you will have to run that pipeline again before launching the program. These are the files found in the "server/pipeline" section, though you may need to investigate where they draw their current source lexicon from and where the output ends up to effectively replace them.
 
 ## Initial Setup: Pipelines and Input Files
