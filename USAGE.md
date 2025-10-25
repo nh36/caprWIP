@@ -2,6 +2,9 @@
 
 These are some basic instructions for interacting with the CAPR user interface. They are by no means exhaustive, and you may find that some things are unstable or require some more specific sequences of clicks to make sure they work well.
 
+👉 Need the full run/hand-off checklist? See `docs/runbook.md` and the
+documentation index in `docs/README.md`.
+
 ## Loading your data
 
 If you are loading data for the first time, you will put it into the `data/` directory and should find that it is listed in the "available input sources" dropdown in the upper right corner of the screen. You may need to reload the page if you already have CAPR running. 
