@@ -44,6 +44,45 @@ Intersections (Oct 2025 export):
     filter) and capture the intermediate strings for `*knewą/*braudą/*blōdą`.
   - Add those logs to this report once gathered.
 
+### Instrumentation proposal (before changing rules)
+1. **Label intermediate stages** so each block of `GermanRules` can be tested in
+   isolation, e.g. conceptual definitions such as:
+   ```foma
+   define GermanAfterEw ProtoWord .o. GermanEwChain;
+   define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
+   define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
+   define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
+   define GermanAfterShift GermanAfterNasal .o. GermanConsonantShift .o. GermanStopShift;
+   define GermanAfterVowelAdj GermanAfterShift .o. GermanVowelAdjustments;
+   define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
+   ```
+2. **Compile/save each stage** temporarily (`regex GermanAfterLongV; save stack
+   german_after_longv.bin`) and run `flookup` for `kniː/broːt/bluːt/tōr` in both
+   directions. This reveals the first stage that collapses the nasal-vowel stems.
+3. **Record the strings** at each stage inside this report so we know whether to
+   adjust the ew-chain, the long-vowel block, or the cleanup/surface filter.
+4. **Only after logging** should we touch the actual rule definitions, keeping a
+   copy of the staged binaries for regression.
+
+### Rule-design proposals (phonology-aligned; no code yet)
+1. **ew→iu→ī chronology** – In West Germanic, `ew` first fronts to `iw/iu` and
+   then contracts to long `ī` before nasal vowels (cf. OHG `knī` < PG `*knew-`).
+   Our rules currently create the sequence `i u` but expect a multi-symbol `{iu}`;
+   proposal: either glue the sequence via a dedicated recombination (`i u -> {iu}`)
+   or rewrite the contraction to match the literal `i u`. Ensure nasal deletion
+   fires afterward so `knīą` survives to the surface.
+2. **Non-dental `{au}` contexts** – Historical pattern: `{au}` only monophthongises
+   before coronal obstruents/nasals (`*braudą → brōt`, `*hlaupaną → laufen`).
+   Introduce an explicit preservation stage (e.g. `{au} -> {ɔu}` globally, then
+   `{ɔu} -> ō / _ {d, ð, t, θ, n}`) so forms like `lauf/Haus` keep `{au}` while
+   `broːt`, `bluːt` move toward `{oː}/{uː}`.
+3. **Surface inventory `{x}/{ç}`** – High German shift outputs `x` (ach) and `ç`
+   (ich) from velars and front contexts (e.g. *Buch*, *suchen*, *Knecht*). Add
+   `{ç}` (and any other missing spirants) to `GermanSurfaceConsonant` so valid
+   outputs aren’t filtered before we refine the shift rules themselves.
+4. **Cluster follow-ups** – Once the above is stable, revisit `{t → ts}` and
+   `{k/kk → x}` in shielded contexts plus cluster reflexes like `*stukkaz → ʃtɔk`.
+
 ## Active work items
 1. **ew→iu→ī chronology audit** – ensure the chain outputs `knīą` before nasal
    deletion; confirm long-vowel rules convert `{ī → iː}` without undoing.
