@@ -378,6 +378,16 @@ define GermanRules GermanEwChain
     .o. GermanCleanup
     .o. GermanOrthography;
 
+# Instrumentation (definitions only; compiled on demand via foma scripts).
+define GermanAfterEw ProtoWord .o. GermanEwChain;
+define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
+define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
+define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
+define GermanAfterShift GermanAfterNasal .o. GermanConsonantShift .o. GermanStopShift;
+define GermanAfterVowelAdj GermanAfterShift .o. GermanVowelAdjustments;
+define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
+define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
+
 ### 3. Composition
 define GermanReflexes ProtoWord .o. GermanRules;
 define German GermanReflexes .o. GermanSurface;
