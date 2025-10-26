@@ -64,6 +64,23 @@ Intersections (Oct 2025 export):
 4. **Only after logging** should we touch the actual rule definitions, keeping a
    copy of the staged binaries for regression.
 
+### Stage log snapshot (2025‑10‑26)
+- Commands (Proto → stage, true down direction via `foma`):
+  ```bash
+  docker compose exec backend sh -c \
+    "cd /usr/app && printf 'load stack german_after_longv.bin\\napply down knewą\\nquit\\n' | foma"
+  ```
+- Commands (Surface → stage / analysis):
+  ```bash
+  docker compose exec backend sh -c \
+    "cd /usr/app && printf 'load stack german_after_nasal.bin\\napply up kniː\\nquit\\n' | foma"
+  ```
+- Findings:
+  - `GermanAfterEw` now explicitly glues `{iu}` and adds a fallback `{ew → ī}` rule (`server/fsts/germanic.txt:305-317`), so applying *down* yields `{knewą, kniwą, kniuą, knīą}` as expected.
+  - Through `GermanAfterLongV` we obtain `{knewą, kniwą, kniuą, kniːą}`; after `GermanFinalNasalLoss` this becomes `{knew, kniw, kniu, kniː}`.
+  - The analyzer (`apply up`) already produced the richer proto sets we saw earlier; the missing reconstructions stem entirely from the final surface filter (`GermanSurface`). `GermanPreSurface` emits `{knɪw, knɛw, kniw, kniɔ, kniː}`, but composing with `GermanSurface` currently rejects all of them, so `load stack german.bin; apply down knewą` still returns `???`.
+  - Conclusion: ew→iu→ī chronology is functioning; the real blockage is the surface admissibility layer, which needs to accept the `{knV}` outputs (and eventually `{x}/{ç}` for other sets).
+
 ### Rule-design proposals (phonology-aligned; no code yet)
 1. **ew→iu→ī chronology** – In West Germanic, `ew` first fronts to `iw/iu` and
    then contracts to long `ī` before nasal vowels (cf. OHG `knī` < PG `*knew-`).
@@ -82,6 +99,24 @@ Intersections (Oct 2025 export):
    outputs aren’t filtered before we refine the shift rules themselves.
 4. **Cluster follow-ups** – Once the above is stable, revisit `{t → ts}` and
    `{k/kk → x}` in shielded contexts plus cluster reflexes like `*stukkaz → ʃtɔk`.
+
+### Helper script for surface prep
+- File: `server/tools/german_surface_prep.py`.
+- Purpose: split cluster sequences (`kn-, br-, pf-`, etc.) and wrap each IPA
+  segment in the curly-brace alphabet that `GermanSurface` expects, without
+  bloating the main FST.
+- Usage example:
+  ```bash
+  printf 'kniː\nbroːt\n' | python3 server/tools/german_surface_prep.py
+  ```
+- Workflow: take the `GermanPreSurface` outputs you get from `foma` (e.g.,
+  `knɪw`, `knɛw`, `kniː`), run them through the script, then feed the result into
+  the UI or any downstream tooling that currently requires brace-wrapped tokens.
+- Why a script? Each attempt to bake the prep stage directly into
+  `server/fsts/germanic.txt` hit Foma's `Stack full!` limit; keeping it as a
+  stand-alone helper lets us keep debugging immediately while we consider
+  alternatives (e.g., splitting the Germanic transducer across files or moving
+  this part of the pipeline to HFST, which handles larger automata gracefully).
 
 ## Active work items
 1. **ew→iu→ī chronology audit** – ensure the chain outputs `knīą` before nasal

@@ -2,3 +2,6 @@
 /*/__pycache__
 /*/*/__pycache__
 /refishing
+server/german_after_*.bin
+server/german_pre_surface.bin
+server/german_surface_prep.bin
