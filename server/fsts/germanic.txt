@@ -595,8 +595,8 @@ define GermanEwChain GermanEToIBeforeW
     .o. GermanIuToIi;
 
 ### West Germanic au monophthongisation
-define GermanAuMonophthContext d | ð | t | θ | n;
-define GermanAuMonophth ?* [ {au} -> ō || _ GermanAuMonophthContext ] ?*;
+define GermanAuMonophthContext [d | ð | t | θ | n];
+define GermanAuMonophth [ {au} -> ō || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
