@@ -584,11 +584,11 @@ define GermanStopShift [
 ];
 
 ### West Germanic ew development
-define GermanEToIBeforeW ?* [ e -> i || _ w ] ?*;
+define GermanEToIBeforeW [ e -> i || _ w ];
 
-define GermanWToUAfterI ?* [ w -> u || i _ ] ?*;
+define GermanWToUAfterI [ w -> u || i _ ];
 
-define GermanIuToIi ?* [ {iu} -> {ī} || _ (a | ą) ] ?*;
+define GermanIuToIi [ i u -> "ī" || _ (a | ą) ];
 
 define GermanEwChain GermanEToIBeforeW
     .o. GermanWToUAfterI
