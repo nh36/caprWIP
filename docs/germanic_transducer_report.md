@@ -65,21 +65,11 @@ Intersections (Oct 2025 export):
    copy of the staged binaries for regression.
 
 ### Stage log snapshot (2025‑10‑26)
-- Commands (Proto → stage, true down direction via `foma`):
-  ```bash
-  docker compose exec backend sh -c \
-    "cd /usr/app && printf 'load stack german_after_longv.bin\\napply down knewą\\nquit\\n' | foma"
-  ```
-- Commands (Surface → stage / analysis):
-  ```bash
-  docker compose exec backend sh -c \
-    "cd /usr/app && printf 'load stack german_after_nasal.bin\\napply up kniː\\nquit\\n' | foma"
-  ```
-- Findings:
-  - `GermanAfterEw` now explicitly glues `{iu}` and adds a fallback `{ew → ī}` rule (`server/fsts/germanic.txt:305-317`), so applying *down* yields `{knewą, kniwą, kniuą, knīą}` as expected.
-  - Through `GermanAfterLongV` we obtain `{knewą, kniwą, kniuą, kniːą}`; after `GermanFinalNasalLoss` this becomes `{knew, kniw, kniu, kniː}`.
-  - The analyzer (`apply up`) already produced the richer proto sets we saw earlier; the missing reconstructions stem entirely from the final surface filter (`GermanSurface`). `GermanPreSurface` emits `{knɪw, knɛw, kniw, kniɔ, kniː}`, but composing with `GermanSurface` currently rejects all of them, so `load stack german.bin; apply down knewą` still returns `???`.
-  - Conclusion: ew→iu→ī chronology is functioning; the real blockage is the surface admissibility layer, which needs to accept the `{knV}` outputs (and eventually `{x}/{ç}` for other sets).
+- Command: `bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt` (script feeds the lexemes without spaces so `foma` walks each intermediate automaton inside Docker).
+- Observations:
+  - The ew→iu→ī chronology still produces `{knɪw, knɛw, kniw, kniɔ, kniː}` for `*knewą` by `GermanPreSurface`, so the remaining blockage sits in `GermanSurface`.
+  - `*braudą` happily yields `{braudą, brōdą}` after `GermanAfterAu` but drops out once `GermanLongVowelRules` apply, highlighting that block (or its contexts) as the next debugging target.
+  - `*blōdą` → `{bloːt, bluːt}` and `*tōr` → `{toːr, tuːr}` supply a control sample for the healthy parts of the cascade.
 
 ### Rule-design proposals (phonology-aligned; no code yet)
 1. **ew→iu→ī chronology** – In West Germanic, `ew` first fronts to `iw/iu` and
