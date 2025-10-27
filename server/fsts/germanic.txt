@@ -399,10 +399,9 @@ define DutchSurface DutchSurfaceSyllable+;
 
 # German admits IPA tokens directly; keep the filter permissive.
 define GermanSurfaceShortVowel [a | e | i | o | u | ɔ | ə | ɛ | ɪ | ʊ];
-define GermanSurfaceLongVowel [a "ː" | e "ː" | i "ː" | o "ː" | u "ː"];
 define GermanSurfaceMacronVowel [ā | ē | ī | ō | ū];
 define GermanSurfaceDiphthong ["ai" | "au" | "ɔy"];
-define GermanSurfaceVowel [GermanSurfaceDiphthong | GermanSurfaceMacronVowel | GermanSurfaceLongVowel | GermanSurfaceShortVowel];
+define GermanSurfaceVowel [GermanSurfaceDiphthong | GermanSurfaceMacronVowel | GermanSurfaceShortVowel];
 define GermanSurfaceConsonant [
     b | d | f | h | j | k | l | m | n |
     p | "pf" | r | s | t | "ts" | v | x | z | ŋ |
@@ -600,18 +599,12 @@ define GermanAuMonophth [ {au} -> ō || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
-    ē -> {eː},
-    ē -> {aː} || _ r,
-    ē -> {aː} || _ l,
-    ī -> {iː},
+    ē -> ā || _ r,
+    ē -> ā || _ l,
     ō w -> ū,
-    ō -> {oː} || n _ θ,
     ō -> ū || d _ n,
     ō -> ū || _ (k | g | d | θ | t | s | z | f | l | r | w | {x} | {ç} | K | {v}),
-    ō -> {oː},
-    au -> {uː} || _ z,
-    ū -> {uː},
-    ā -> {aː}
+    {au} -> ū || _ z
 ];
 
 define GermanFinalNasalLoss [
@@ -632,7 +625,6 @@ define GermanHtShift [
 
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
-    ū -> {uː},
     u -> {ɔ} || _ (k | K),
     e -> {ɛ},
     e -> {ɪ} || _ Cons,
@@ -646,6 +638,14 @@ define GermanCleanup [
 
 define GermanOrthography [
     x -> {h}
+];
+
+define GermanLengthOrthography [
+    ā -> a "ː",
+    ē -> e "ː",
+    ī -> i "ː",
+    ō -> o "ː",
+    ū -> u "ː"
 ];
 
 define GermanRules GermanEwChain
@@ -672,7 +672,7 @@ define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
 
 ### 3. Composition
 define GermanReflexes GermanProtoInput .o. GermanRules;
-define German GermanReflexes .o. GermanSurface;
+define German GermanReflexes .o. GermanSurface .o. GermanLengthOrthography;
 
 
 clear stack
