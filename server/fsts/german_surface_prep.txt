@@ -1,78 +1,51 @@
 #!/usr/local/bin/foma -f
-# Helper transducer that splits German IPA clusters and wraps the resulting
-# segments in the curly-braced alphabet expected by `GermanSurface`.
+# Two-level transducer that wraps German IPA symbols in braces.
 
-# Cluster expansion (longest first to keep the mapping deterministic).
-define GermanClusterSplit (
-    "kn" -> k n |
-    "gn" -> g n |
-    "br" -> b r |
-    "bl" -> b l |
-    "pl" -> p l |
-    "pr" -> p r |
-    "kl" -> k l |
-    "kr" -> k r |
-    "gl" -> g l |
-    "gr" -> g r |
-    "fl" -> f l |
-    "fr" -> f r |
-    "sl" -> s l |
-    "sm" -> s m |
-    "sn" -> s n |
-    "sp" -> s p |
-    "st" -> s t |
-    "sk" -> s k |
-    "dr" -> d r |
-    "tr" -> t r |
-    "ts" -> t s |
-    "pf" -> p f |
-    ? -> ?
-);
+define GermanSurfacePrepSymbol [
+    "aː":{aː} |
+    "eː":{eː} |
+    "iː":{iː} |
+    "oː":{oː} |
+    "uː":{uː} |
+    "ai":{ai} |
+    "au":{au} |
+    "ɔy":{ɔy} |
+    a:{a} |
+    b:{b} |
+    d:{d} |
+    e:{ɛ} |
+    f:{f} |
+    g:{ɡ} |
+    h:{h} |
+    i:{ɪ} |
+    j:{j} |
+    k:{k} |
+    l:{l} |
+    m:{m} |
+    n:{n} |
+    o:{ɔ} |
+    p:{p} |
+    r:{r} |
+    s:{s} |
+    t:{t} |
+    u:{ʊ} |
+    v:{v} |
+    w:{w} |
+    x:{x} |
+    y:{y} |
+    z:{z} |
+    "ç":{ç} |
+    "ʃ":{ʃ} |
+    "ŋ":{ŋ} |
+    "ɡ":{ɡ} |
+    "ʊ":{ʊ} |
+    "ɔ":{ɔ} |
+    "ə":{ə} |
+    "ɛ":{ɛ} |
+    "ɪ":{ɪ} |
+    "ː":{ː}
+];
 
-# Symbol-to-brace mapping. Fall back to identity (`? -> ?`) so non-listed
-# symbols pass through untouched.
-define GermanSurfaceLex (
-    pf -> {pf} |
-    ts -> {ts} |
-    aː -> {aː} |
-    eː -> {eː} |
-    iː -> {iː} |
-    oː -> {oː} |
-    uː -> {uː} |
-    ai -> {ai} |
-    au -> {au} |
-    ɔy -> {ɔy} |
-    k -> {k} |
-    n -> {n} |
-    g -> {ɡ} |
-    ŋ -> {ŋ} |
-    b -> {b} |
-    d -> {d} |
-    t -> {t} |
-    p -> {p} |
-    f -> {f} |
-    v -> {v} |
-    s -> {s} |
-    z -> {z} |
-    ʃ -> {ʃ} |
-    h -> {h} |
-    j -> {j} |
-    l -> {l} |
-    m -> {m} |
-    r -> {r} |
-    w -> {w} |
-    x -> {x} |
-    a -> {a} |
-    ɔ -> {ɔ} |
-    ə -> {ə} |
-    ɛ -> {ɛ} |
-    ɪ -> {ɪ} |
-    ʊ -> {ʊ} |
-    ? -> ?
-);
-
-# Combine the two helper stages.
-define GermanSurfacePrep GermanClusterSplit .o. GermanSurfaceLex;
+define GermanSurfacePrep GermanSurfacePrepSymbol*;
 regex GermanSurfacePrep;
-
 save stack german_surface_prep.bin
