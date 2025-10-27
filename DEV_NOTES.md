@@ -96,3 +96,11 @@ For the broader documentation map, see `docs/README.md`.
 - To inspect board titles in the UI, open the dev console and check `window.loaded.boards` after loading data.
 
 See you tomorrow!
+
+## 2025-10-27
+
+### German brace migration
+- Enabled brace-star tokens at the proto layer by removing `RemoveStars` from `GermanProtoInput`; rewrote `GermanEwChain`, `GermanAuMonophth`, and `GermanLongVowelRules` to operate on `{*…}` symbols.
+- Added `GermanRemoveStars` right after the long-vowel stage so downstream rules still see plain tokens; stage logging now includes `GermanAfterStarDrop` for visibility.
+- Generator still fails on `braudą` in `german.bin` because later rules and the surface filter haven’t been converted yet; brace migration continues in next session.
+
