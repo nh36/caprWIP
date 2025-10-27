@@ -342,7 +342,7 @@ define pgrmWeakSyllable pgrmWeakOnset pgrmWeakNucleus pgrmWeakCoda;
 define pgrmWord pgrmStrongSyllable (pgrmWeakSyllable)?;
 
 define RemoveStars {*} -> 0;
-define GermanProtoInput pgrmWord .o. RemoveStars;
+define GermanProtoInput pgrmWord;
 
 ##############################################
 ## Surface phonotactics (baggy filters)     ##
@@ -583,28 +583,99 @@ define GermanStopShift [
 ];
 
 ### West Germanic ew development
-define GermanEToIBeforeW [ e -> i || _ w ];
+define GermanStarVowel [
+    {*a} | {*ā} | {*ą} | {*æ} | {*e} | {*ē} |
+    {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} |
+    {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ} | {*y}
+];
 
-define GermanWToUAfterI [ w -> u || i _ ];
+define GermanStarConsonant [
+    {*b} | {*d} | {*f} | {*g} | {*h} | {*j} | {*k} | {*l} | {*m} | {*n} |
+    {*p} | {*r} | {*s} | {*t} | {*v} | {*w} | {*x} | {*z} | {*ð} | {*ŋ} |
+    {*ɡ} | {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ}
+];
 
-define GermanIuToIi [ i u -> "ī" || _ (a | ą) ];
+define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];
+
+define GermanWToUAfterI [ {*w} -> {*u} || {*i} _ ];
+
+define GermanIuToIi [ {*i} {*u} -> {*ī} || _ ({*a} | {*ą}) ];
 
 define GermanEwChain GermanEToIBeforeW
     .o. GermanWToUAfterI
     .o. GermanIuToIi;
 
 ### West Germanic au monophthongisation
-define GermanAuMonophthContext [d | ð | t | θ | n];
-define GermanAuMonophth [ {au} -> ō || _ GermanAuMonophthContext ];
+define GermanAuMonophthContext [{*d} | {*ð} | {*t} | {*θ} | {*n}];
+define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
-    ē -> ā || _ r,
-    ē -> ā || _ l,
-    ō w -> ū,
-    ō -> ū || d _ n,
-    ō -> ū || _ (k | g | d | θ | t | s | z | f | l | r | w | {x} | {ç} | K | {v}),
-    {au} -> ū || _ z
+    {*ē} -> {*ā} || _ {*r},
+    {*ē} -> {*ā} || _ {*l},
+    {*ō} {*w} -> {*ū},
+    {*ō} -> {*ū} || {*d} _ {*n},
+    {*ō} -> {*ū} || _ ({*k} | {*g} | {*d} | {*θ} | {*t} | {*s} | {*z} | {*f} | {*l} | {*r} | {*w}),
+    {*au} -> {*ū} || _ {*z}
+];
+
+define GermanRemoveStars [
+    {*a} -> a,
+    {*ā} -> ā,
+    {*ą} -> ą,
+    {*æ} -> æ,
+    {*e} -> e,
+    {*ē} -> ē,
+    {*i} -> i,
+    {*ī} -> ī,
+    {*o} -> o,
+    {*ō} -> ō,
+    {*u} -> u,
+    {*ū} -> ū,
+    {*ɑ} -> ɑ,
+    {*ɔ} -> ɔ,
+    {*ə} -> ə,
+    {*ɛ} -> ɛ,
+    {*ɜ} -> ɜ,
+    {*ʉ} -> ʉ,
+    {*ʊ} -> ʊ,
+    {*ø} -> ø,
+    {*œ} -> œ,
+    {*y} -> y,
+    {*ai} -> {ai},
+    {*au} -> {au},
+    {*eu} -> {eu},
+    {*iu} -> {iu},
+    {*b} -> b,
+    {*d} -> d,
+    {*f} -> f,
+    {*g} -> g,
+    {*h} -> h,
+    {*j} -> j,
+    {*k} -> k,
+    {*l} -> l,
+    {*m} -> m,
+    {*n} -> n,
+    {*p} -> p,
+    {*r} -> r,
+    {*s} -> s,
+    {*t} -> t,
+    {*v} -> v,
+    {*w} -> w,
+    {*x} -> x,
+    {*z} -> z,
+    {*ð} -> ð,
+    {*ŋ} -> ŋ,
+    {*ɡ} -> ɡ,
+    {*ɣ} -> ɣ,
+    {*ɪ} -> ɪ,
+    {*ʃ} -> ʃ,
+    {*ʋ} -> ʋ,
+    {*ʌ} -> ʌ,
+    {*ʤ} -> ʤ,
+    {*ʧ} -> ʧ,
+    {*θ} -> θ,
+    {*þ} -> þ
 ];
 
 define GermanFinalNasalLoss [
@@ -651,6 +722,7 @@ define GermanLengthOrthography [
 define GermanRules GermanEwChain
     .o. GermanAuMonophth
     .o. GermanLongVowelRules
+    .o. GermanRemoveStars
     .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
     .o. GermanStopShift
@@ -664,7 +736,8 @@ define GermanRules GermanEwChain
 define GermanAfterEw GermanProtoInput .o. GermanEwChain;
 define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
 define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
-define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
+define GermanAfterStarDrop GermanAfterLongV .o. GermanRemoveStars;
+define GermanAfterNasal GermanAfterStarDrop .o. GermanFinalNasalLoss;
 define GermanAfterShift GermanAfterNasal .o. GermanConsonantShift .o. GermanStopShift;
 define GermanAfterVowelAdj GermanAfterShift .o. GermanVowelAdjustments;
 define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
