@@ -559,13 +559,13 @@ save stack dutch.bin
 
 ### 2. Sound laws
 define GermanConsonantShift [
-    p -> {f} || .# _ ,
-    t -> {ts} || .# _ ,
-    s -> {ʃ} || .# _ ,
-    w -> {v},
-    z -> {r} || Vowel _ Vowel,
-    w -> 0 || Vowel _ Vowel,
-    {dj} -> nd
+    {*p} -> {*f} || .#. _ ,
+    {*t} -> {*ts} || .#. _ ,
+    {*s} -> {*ʃ} || .#. _ ,
+    {*w} -> {*v},
+    {*z} -> {*r} || GermanStarVowel _ GermanStarVowel,
+    {*w} -> 0 || GermanStarVowel _ GermanStarVowel,
+    {*d} {*j} -> {*n} {*d}
 ];
 
 define GermanFinalDevoicing [
@@ -592,7 +592,8 @@ define GermanStarVowel [
 define GermanStarConsonant [
     {*b} | {*d} | {*f} | {*g} | {*h} | {*j} | {*k} | {*l} | {*m} | {*n} |
     {*p} | {*r} | {*s} | {*t} | {*v} | {*w} | {*x} | {*z} | {*ð} | {*ŋ} |
-    {*ɡ} | {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ}
+    {*ɡ} | {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ} |
+    {*ts}
 ];
 
 define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];
@@ -676,7 +677,8 @@ define GermanRemoveStars [
     {*ʤ} -> ʤ,
     {*ʧ} -> ʧ,
     {*θ} -> θ,
-    {*þ} -> þ
+    {*þ} -> þ,
+    {*ts} -> {ts}
 ];
 
 define GermanFinalNasalLoss [
@@ -724,8 +726,8 @@ define GermanRules GermanEwChain
     .o. GermanAuMonophth
     .o. GermanLongVowelRules
     .o. GermanFinalNasalLoss
-    .o. GermanRemoveStars
     .o. GermanConsonantShift
+    .o. GermanRemoveStars
     .o. GermanStopShift
     .o. GermanAzLoss
     .o. GermanVowelAdjustments
@@ -738,8 +740,9 @@ define GermanAfterEw GermanProtoInput .o. GermanEwChain;
 define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
 define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
 define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
-define GermanAfterStarDrop GermanAfterNasal .o. GermanRemoveStars;
-define GermanAfterShift GermanAfterStarDrop .o. GermanConsonantShift .o. GermanStopShift;
+define GermanAfterConsonant GermanAfterNasal .o. GermanConsonantShift;
+define GermanAfterStarDrop GermanAfterConsonant .o. GermanRemoveStars;
+define GermanAfterShift GermanAfterStarDrop .o. GermanStopShift;
 define GermanAfterVowelAdj GermanAfterShift .o. GermanVowelAdjustments;
 define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
 define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
