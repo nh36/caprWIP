@@ -46,11 +46,17 @@ currently focuses on the Burmish and Germanic pipelines.
 - Goal: German `kniː/broːt/bluːt` and cognate sets such as *year/fell/neck* must
   reconstruct without overrides. The ew→iu→ī chain, short-a umlaut, and second
   consonant shift are partially implemented.
-- Current blockers: `{au}` reflexes outside dental codas and `{x}/{ç}` surface
-  admission still drop forms like *lauf*, *Buch*, *suchen* to `*surface`.
-- Next actions: instrument each German stage (ProtoWord → cleanup), capture the
-  outputs for `*knewą/*braudą/*blōdą`, then adjust the long-vowel & nasal stages
-  accordingly. Track progress in `docs/germanic_transducer_report.md`.
+- Current focus: the brace-first rewrite is complete for the German cascade;
+  English and Dutch still emit plain tokens downstream of their sound laws.
+- Next actions:
+  1. Convert the English and Dutch pipelines to the `{*…}` alphabet (sound laws,
+     orthography, and a single star-drop at the end), mirroring the German and
+     Burmish placements.
+  2. Rebuild the English/Dutch/German surface filters so they accept brace tokens
+     and smoke-test the UI to confirm the `{*…}` alphabet flows end-to-end.
+  3. Add a regression probe for German `Tür` (expected proto `*dōr`) and adjust
+     the voiced onset mappings if a `{*d}` inventory gap remains.
+  Track detailed progress in `docs/germanic_transducer_report.md`.
 
 ### Operations
 - Keep Docker + Caddy steps documented in `docs/runbook.md`, and record each
