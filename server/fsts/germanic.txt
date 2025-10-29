@@ -696,7 +696,7 @@ define GermanFinalNasalLoss [
 ];
 
 define GermanAzLoss [
-    z -> 0 || _ .#.
+    {*z} -> 0 || _ .#.
 ];
 
 define GermanAiShift [
@@ -738,8 +738,8 @@ define GermanRules GermanEwChain
     .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
     .o. GermanStopShift
-    .o. GermanRemoveStars
     .o. GermanAzLoss
+    .o. GermanRemoveStars
     .o. GermanVowelAdjustments
     .o. GermanFinalDevoicing
     .o. GermanCleanup
@@ -752,8 +752,9 @@ define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
 define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
 define GermanAfterConsonant GermanAfterNasal .o. GermanConsonantShift;
 define GermanAfterStopShift GermanAfterConsonant .o. GermanStopShift;
-define GermanAfterStarDrop GermanAfterStopShift .o. GermanRemoveStars;
-define GermanAfterShift GermanAfterStopShift;
+define GermanAfterAzLoss GermanAfterStopShift .o. GermanAzLoss;
+define GermanAfterStarDrop GermanAfterAzLoss .o. GermanRemoveStars;
+define GermanAfterShift GermanAfterAzLoss;
 define GermanAfterVowelAdj GermanAfterStarDrop .o. GermanVowelAdjustments;
 define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
 define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
