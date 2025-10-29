@@ -704,7 +704,7 @@ define GermanAiShift [
 ];
 
 define GermanHtShift [
-    {*h} {*t} -> {xt}
+    {*h} {*t} -> {*x} {*t}
 ];
 
 ### Vowel and syllable adjustments
