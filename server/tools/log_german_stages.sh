@@ -4,7 +4,7 @@
 set -euo pipefail
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 ROOT=$(cd "$SCRIPT_DIR/.." && pwd)
-STAGES=(GermanAfterEw GermanAfterAu GermanAfterLongV GermanAfterNasal GermanAfterConsonant GermanAfterStopShift GermanAfterAzLoss GermanAfterVowelAdj GermanAfterStarDrop GermanAfterCleanup GermanPreSurface)
+STAGES=(GermanAfterEw GermanAfterAu GermanAfterLongV GermanAfterNasal GermanAfterConsonant GermanAfterStopShift GermanAfterAzLoss GermanAfterVowelAdj GermanAfterFinalDevoice GermanAfterStarDrop GermanAfterCleanup GermanPreSurface)
 # Proto lexemes written without spaces so foma receives a single token.
 LEXEMES=("knewą" "braudą" "blōdą" "tōr")
 for stage in "${STAGES[@]}"; do
