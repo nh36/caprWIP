@@ -717,11 +717,11 @@ define GermanVowelAdjustments [
 
 ### Cleanup and orthography
 define GermanCleanup [
-    K -> {k}
+    K -> {*k}
 ];
 
 define GermanOrthography [
-    x -> {h}
+    {*x} -> {h}
 ];
 
 define GermanLengthOrthography [
@@ -741,9 +741,9 @@ define GermanRules GermanEwChain
     .o. GermanAzLoss
     .o. GermanVowelAdjustments
     .o. GermanFinalDevoicing
-    .o. GermanRemoveStars
     .o. GermanCleanup
-    .o. GermanOrthography;
+    .o. GermanOrthography
+    .o. GermanRemoveStars;
 
 # Instrumentation (definitions only; compiled on demand via foma scripts).
 define GermanAfterEw GermanProtoInput .o. GermanEwChain;
@@ -755,10 +755,11 @@ define GermanAfterStopShift GermanAfterConsonant .o. GermanStopShift;
 define GermanAfterAzLoss GermanAfterStopShift .o. GermanAzLoss;
 define GermanAfterVowelAdj GermanAfterAzLoss .o. GermanVowelAdjustments;
 define GermanAfterFinalDevoice GermanAfterVowelAdj .o. GermanFinalDevoicing;
-define GermanAfterStarDrop GermanAfterFinalDevoice .o. GermanRemoveStars;
+define GermanAfterCleanup GermanAfterFinalDevoice .o. GermanCleanup;
+define GermanAfterOrthography GermanAfterCleanup .o. GermanOrthography;
+define GermanAfterStarDrop GermanAfterOrthography .o. GermanRemoveStars;
 define GermanAfterShift GermanAfterAzLoss;
-define GermanAfterCleanup GermanAfterStarDrop .o. GermanCleanup;
-define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
+define GermanPreSurface GermanAfterStarDrop;
 
 ### 3. Composition
 define GermanReflexes GermanProtoInput .o. GermanRules;
