@@ -709,10 +709,10 @@ define GermanHtShift [
 
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
-    u -> {ɔ} || _ (k | K),
-    e -> {ɛ},
-    e -> {ɪ} || _ Cons,
-    θ -> {d}
+    {*u} -> {*ɔ} || _ ({*k} | K),
+    {*e} -> {*ɛ},
+    {*e} -> {*ɪ} || _ GermanStarConsonant,
+    {*θ} -> {*d}
 ];
 
 ### Cleanup and orthography
@@ -739,8 +739,8 @@ define GermanRules GermanEwChain
     .o. GermanConsonantShift
     .o. GermanStopShift
     .o. GermanAzLoss
-    .o. GermanRemoveStars
     .o. GermanVowelAdjustments
+    .o. GermanRemoveStars
     .o. GermanFinalDevoicing
     .o. GermanCleanup
     .o. GermanOrthography;
@@ -753,10 +753,10 @@ define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
 define GermanAfterConsonant GermanAfterNasal .o. GermanConsonantShift;
 define GermanAfterStopShift GermanAfterConsonant .o. GermanStopShift;
 define GermanAfterAzLoss GermanAfterStopShift .o. GermanAzLoss;
-define GermanAfterStarDrop GermanAfterAzLoss .o. GermanRemoveStars;
+define GermanAfterVowelAdj GermanAfterAzLoss .o. GermanVowelAdjustments;
+define GermanAfterStarDrop GermanAfterVowelAdj .o. GermanRemoveStars;
 define GermanAfterShift GermanAfterAzLoss;
-define GermanAfterVowelAdj GermanAfterStarDrop .o. GermanVowelAdjustments;
-define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
+define GermanAfterCleanup GermanAfterStarDrop .o. GermanFinalDevoicing .o. GermanCleanup;
 define GermanPreSurface GermanAfterCleanup .o. GermanOrthography;
 
 ### 3. Composition
