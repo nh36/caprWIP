@@ -63,9 +63,9 @@ For the broader documentation map, see `docs/README.md`.
 - Re-ran `flookup` sanity checks (`kniː/bluːt/broːt/dɔr`) and the API harness (`python3 server/tools/api_regression.py`) — both pipelines still PASS.
 
 ### German surface filter (queued)
-1. Capture the vowel/consonant inventory from `GermanPreSurface` outputs to see which symbols the brace-aware pipeline actually produces.
-2. Redefine `GermanSurfaceVowel/Consonant` in the brace alphabet using that inventory (front-rounded vowels, `{ɔy}`, `{pf}`, `{ts}`, `{ç}`, etc.).
-3. Recompile (`foma -f fsts/germanic.txt`), rerun `log_german_stages.sh`, and run the API regression harness to confirm coverage once the new filter lands.
+1. Added `server/tools/collect_german_surface_inventory.py` to pull the segment set from the Stage-3 TSV (with colon→macron and affricate normalisation).
+2. Rewrote `GermanSurfaceVowel/Consonant` to use brace tokens populated from that inventory (`{ā}`, `{ɔy}`, `{pf}`, `{ts}`, `{ç}`, `{ʁ}`, etc.) while keeping the ≤3 consonant structure.
+3. Recompiled via `foma -f fsts/germanic.txt`, reran `bash server/tools/log_german_stages.sh` and spot `flookup` probes (`broːt/laus/lauf/laux`), then re-ran `python3 server/tools/api_regression.py` — all PASS.
 
 ## 2025-10-25
 

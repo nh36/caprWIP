@@ -39,6 +39,10 @@ Intersections (Oct 2025 export):
   - `pgrmOnsetCore` pared down to the usual singletons, s-clusters, and stop+liquid combinations; stray patterns such as `{*n}{*x}{*w}{*s}{*t}` were removed.
   - Nasal vowels are split out of `pgrmShortVowel` and now only pass in genuinely open finals (`apply down nę` ⇒ `*n*ę`, `apply down nęz` ⇒ `???`).
   - Recompiled `fsts/germanic.txt`, reran the analyzer probes, and confirmed the API regression harness stays green.
+- German surface filter refresh (2025‑10‑31)
+  - Added `server/tools/collect_german_surface_inventory.py` to extract the Stage‑3 segment inventory (macron vowels, `{ai/au/ɔy}`, `pf/ts`, etc.).
+  - `GermanSurfaceVowel/Consonant` now operate in the brace alphabet and include every token observed in the sample (`{ā}`, `{ɔ}`, `{pf}`, `{ts}`, `{ç}`, `{ʁ}`, …) while retaining the ≤3 consonant structure.
+  - After recompiling, `log_german_stages.sh`, targeted `flookup` probes, and `python3 server/tools/api_regression.py` all PASS.
 - Stage logging recap
   - Baseline command: `bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt` (run after recompiling with `foma -f fsts/germanic.txt`).
   - `GermanAfterAu` feeds `{braudą, brōdą}` into the new rule; `GermanAfterLongV` now outputs `{brūdą}` for that lexeme instead of failing.

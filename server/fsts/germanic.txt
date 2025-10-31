@@ -325,14 +325,14 @@ define DutchSurfaceSyllable DutchSurfaceOnset DutchSurfaceVowel DutchSurfaceCoda
 define DutchSurface DutchSurfaceSyllable+;
 
 # German admits IPA tokens directly; keep the filter permissive.
-define GermanSurfaceShortVowel [a | e | i | o | u | ɔ | ə | ɛ | ɪ | ʊ];
-define GermanSurfaceMacronVowel [ā | ē | ī | ō | ū];
-define GermanSurfaceDiphthong ["ai" | "au" | "ɔy"];
+define GermanSurfaceShortVowel [{a} | {e} | {i} | {o} | {u} | {y} | {ɔ} | {ə} | {ɛ} | {ɪ} | {ʊ}];
+define GermanSurfaceMacronVowel [{ā} | {ē} | {ī} | {ō} | {ū}];
+define GermanSurfaceDiphthong [{ai} | {au} | {ɔy}];
 define GermanSurfaceVowel [GermanSurfaceDiphthong | GermanSurfaceMacronVowel | GermanSurfaceShortVowel];
 define GermanSurfaceConsonant [
-    b | d | f | h | j | k | l | m | n |
-    p | "pf" | r | s | t | "ts" | v | x | z | ŋ |
-    ɡ | ʃ | ç | w
+    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} |
+    {p} | {pf} | {r} | {s} | {t} | {ts} | {v} | {x} | {z} | {ŋ} |
+    {ɡ} | {ʃ} | {ç} | {w} | {ʁ}
 ];
 define GermanSurfaceOnset [
     0 |
