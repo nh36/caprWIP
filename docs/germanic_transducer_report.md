@@ -50,8 +50,10 @@ Intersections (Oct 2025 export):
   - `GermanReflexes` still inverts `*durą` to `dɔrą`, so consonant-shift handling remains consistent.
 
 ### Immediate priorities
-1. **Audit remaining German surface inventory** – The current fix only touches long vowels; next pass should confirm `{au}` contexts outside the coronal environment still hold.
-2. **Regression loop** – Continue running `server/tools/log_german_stages.sh` and `python server/tools/api_regression.py` whenever further rules change.
+1. **Stabilise the `-anan → -aną` migration** – Confirm verbs now end in `-aną`, keep the noun exceptions separate, and track analyzer side-effects (e.g., the brace-less `ą` outputs now seen for `broːt`).
+2. **Tighten proto weak-syllable handling** – Adjust `ProtoWord`/`pgrmWord` so final nasal vowels behave as single weak syllables without generating duplicate `ą` reflexes.
+3. **Audit remaining German surface inventory** – The current fix only touches long vowels; next pass should confirm `{au}` contexts outside the coronal environment still hold.
+4. **Regression loop** – Continue running `server/tools/log_german_stages.sh` and `python server/tools/api_regression.py` whenever further rules change.
 
 ### Next surface-filter refresh
 1. Extract a complete consonant/vowel inventory from `GermanPreSurface` outputs (or stage 3 TSVs) so we know exactly which tokens the analyzer emits (`pf/ts/ç/x`, `{ɔy}`, `{ɔː}`, etc.).
