@@ -3,6 +3,11 @@
 This index points to the working documents we rely on most often. Use it as the
 jumping-off point before editing code or linguistics files.
 
+**WARNING — `{*ǭ}` is a temporary Germanic vowel marker.** The transducer uses
+`{*ǭ}` as a stop-gap during West Germanic *au* → *ō*; make sure any follow-up
+work either preserves the guard or replaces it with a more principled
+chronology before the placeholder leaks into downstream tooling.
+
 ## Getting the stack running
 - [`README.md`](../README.md) – quick start plus project overview.
 - [`docs/runbook.md`](runbook.md) – step-by-step checklist (Docker, Caddy,
