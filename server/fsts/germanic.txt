@@ -50,10 +50,18 @@ define ProtoCoda (0 | ProtoCodaCore | ProtoCodaCore ProtoCodaCore);
 define ProtoStrongSyllable ProtoOnset ProtoNucleus ProtoCoda;
 
 define ProtoWeakOnset [0 | ProtoConsonant];
-define ProtoWeakNucleus [a|ą|e|i|o|u|ō|ī|ē|ū];
+define ProtoWeakOralNucleus [a|e|i|o|u|ō|ī|ē|ū];
+define ProtoWeakNasalNucleus [ą];
 define ProtoWeakCoda [0 | z | n | s | r | d | t | l | m | k | g];
-define ProtoWeakSyllable ProtoWeakOnset ProtoWeakNucleus ProtoWeakCoda;
-define ProtoWeakTail [0 | ProtoWeakSyllable | ProtoWeakSyllable ProtoWeakSyllable];
+define ProtoWeakOralSyllable ProtoWeakOnset ProtoWeakOralNucleus ProtoWeakCoda;
+define ProtoWeakNasalSyllable ProtoWeakOnset ProtoWeakNasalNucleus 0;
+define ProtoWeakTail [
+    0 |
+    ProtoWeakOralSyllable |
+    ProtoWeakNasalSyllable |
+    ProtoWeakOralSyllable ProtoWeakOralSyllable |
+    ProtoWeakOralSyllable ProtoWeakNasalSyllable
+];
 
 define ProtoSyllable ProtoStrongSyllable;
 define ProtoWord ProtoStrongSyllable ProtoWeakTail;
@@ -258,12 +266,21 @@ define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 
-define pgrmWeakNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | ą:{*ą} | ę:{*ę}];
+define pgrmWeakOralNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
+define pgrmWeakNasalNucleus [ą:{*ą} | ę:{*ę}];
 
 define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l}];
 
-define pgrmWeakSyllable pgrmWeakOnset pgrmWeakNucleus pgrmWeakCoda;
-define pgrmWeakTail [0 | pgrmWeakSyllable | pgrmWeakSyllable pgrmWeakSyllable];
+define pgrmWeakOralSyllable pgrmWeakOnset pgrmWeakOralNucleus pgrmWeakCoda;
+define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
+
+define pgrmWeakTail [
+    0 |
+    pgrmWeakOralSyllable |
+    pgrmWeakNasalSyllable |
+    pgrmWeakOralSyllable pgrmWeakOralSyllable |
+    pgrmWeakOralSyllable pgrmWeakNasalSyllable
+];
 
 define pgrmWord [
     pgrmStrongPlain pgrmWeakTail |
@@ -514,7 +531,7 @@ define GermanStopShift [
 ### West Germanic ew development
 define GermanStarVowel [
     {*a} | {*ā} | {*ą} | {*æ} | {*e} | {*ē} |
-    {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} |
+    {*i} | {*ī} | {*o} | {*ō} | {*ǭ} | {*u} | {*ū} |
     {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ} | {*y}
 ];
 
@@ -523,7 +540,7 @@ define GermanStarFrontVowel [
 ];
 
 define GermanStarBackVowel [
-    {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*u} | {*ū} | {*ɔ} | {*ʊ}
+    {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*ǭ} | {*u} | {*ū} | {*ɔ} | {*ʊ}
 ];
 
 define GermanStarConsonant [
@@ -546,7 +563,7 @@ define GermanEwChain GermanEToIBeforeW
 
 ### West Germanic au monophthongisation
 define GermanAuMonophthContext [{*d} | {*ð} | {*t} | {*θ} | {*n}];
-define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
+define GermanAuMonophth [ {*au} -> {*ǭ} || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
@@ -570,6 +587,7 @@ define GermanRemoveStars [
     {*ī} -> ī,
     {*o} -> o,
     {*ō} -> ō,
+    {*ǭ} -> ō,
     {*u} -> u,
     {*ū} -> ū,
     {*ɑ} -> ɑ,

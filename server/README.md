@@ -5,6 +5,13 @@ The server comprises three central linguistic tasks:
 - "Refishing" new cognates after transducer/board improvements.
 - Comparing transducers for use with the FST editor / debugger.
 
+**WARNING — Germanic `{*ǭ}` placeholder.** The Germanic cascade currently
+introduces a temporary `{*ǭ}` symbol during West Germanic *au* → *ō* to stop the
+long-vowel rules from overshooting. Any updates to
+`server/fsts/germanic.txt`, refishing routines, or the FST comparison scripts
+must treat `{*ǭ}` as provisional and plan for its removal once the chronology is
+reworked.
+
 Each of these tasks are accomplished with code found in their respective files:
 - `compile_lexicon_to_json.py`
 - `refish.py`

@@ -4,6 +4,13 @@ CAPR is a Dockerized stack (Flask API + Svelte UI + Caddy) for managing
 wordlists, cognate boards, and finite-state transducers (FSTs). The project
 currently focuses on the Burmish and Germanic pipelines.
 
+**WARNING — temporary `{*ǭ}` vowel marker.** The Germanic FST now inserts a
+placeholder `{*ǭ}` during West Germanic *au* → *ō* monophthongisation so we can
+block the later long-vowel rules from collapsing forms like *broːt*. This is a
+stop-gap: the rule chronology or inventory needs a proper refactor before the
+marker becomes permanent. Keep this on your radar when editing
+`server/fsts/germanic.txt` or consuming the compiled binaries.
+
 ## Quick start (development)
 1. From the repo root:
    ```bash
