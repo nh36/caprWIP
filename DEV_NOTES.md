@@ -39,6 +39,14 @@ For the broader documentation map, see `docs/README.md`.
 ## 2025-10-31
 
 ### Services & probes
+### German ach-Laut backlog (2025-10-31 follow-up)
+- Diagnostics: forms ending in modern `x` such as `laux/knɛxt/mɪlx` still fail because `GermanStopShift` only spirantises `*k` before another consonant or word boundary; it never sees the `*k` when the suffix `*a{z}` is still present. After `GermanAzLoss`, the leftover `{*a}` remains, so the chain produces something like `lauka`, which does not match the UI.
+- Plan:
+  1. Extend `GermanStopShift` so `*k -> *x` applies before `{*a}{*z}` (and similar suffixal vowels) in `*-kaz/-kiz` paradigms.
+  2. Add an apocope rule immediately after `GermanAzLoss` to delete the residual `{*a}` once `{*z}` has gone, yielding the expected ach-Laut codas.
+  3. Re-run `server/tools/log_german_stages.sh` with probes `{braudą, laukaz, straumaz, mīlkaz}` and confirm via `flookup` that `laux/knɛxt/mɪlx` now return proto candidates without overgeneration.
+  4. Keep weak-tail verbs in the regression set so the new apocope does not undo the recent nasal-tail fixes.
+
 - Containers still running (`docker compose ps`).
 - Analyzer checks (post fix): `docker compose exec backend sh -lc "cd /usr/app && printf 'kniː\nbluːt\nbroːt\ndɔr\n' | flookup german.bin"`.
   - `kniː` ⇒ `wąknī/ąknī/kąnī/knąī`.
