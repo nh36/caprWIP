@@ -53,9 +53,10 @@ define ProtoWeakOnset [0 | ProtoConsonant];
 define ProtoWeakNucleus [a|ą|e|i|o|u|ō|ī|ē|ū];
 define ProtoWeakCoda [0 | z | n | s | r | d | t | l | m | k | g];
 define ProtoWeakSyllable ProtoWeakOnset ProtoWeakNucleus ProtoWeakCoda;
+define ProtoWeakTail [0 | ProtoWeakSyllable | ProtoWeakSyllable ProtoWeakSyllable];
 
 define ProtoSyllable ProtoStrongSyllable;
-define ProtoWord ProtoStrongSyllable (ProtoWeakSyllable)?;
+define ProtoWord ProtoStrongSyllable ProtoWeakTail;
 
 define Cons ProtoConsonant;
 define Vowel ProtoVowel;
@@ -257,15 +258,16 @@ define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 
-define pgrmWeakNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
+define pgrmWeakNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | ą:{*ą} | ę:{*ę}];
 
 define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l}];
 
 define pgrmWeakSyllable pgrmWeakOnset pgrmWeakNucleus pgrmWeakCoda;
+define pgrmWeakTail [0 | pgrmWeakSyllable | pgrmWeakSyllable pgrmWeakSyllable];
 
 define pgrmWord [
-    pgrmStrongPlain (pgrmWeakSyllable)? |
-    pgrmStrongNasal
+    pgrmStrongPlain pgrmWeakTail |
+    pgrmStrongNasal pgrmWeakTail
 ];
 
 define RemoveStars {*} -> 0;
@@ -325,7 +327,7 @@ define DutchSurfaceSyllable DutchSurfaceOnset DutchSurfaceVowel DutchSurfaceCoda
 define DutchSurface DutchSurfaceSyllable+;
 
 # German admits IPA tokens directly; keep the filter permissive.
-define GermanSurfaceShortVowel [{a} | {e} | {i} | {o} | {u} | {y} | {ɔ} | {ə} | {ɛ} | {ɪ} | {ʊ}];
+define GermanSurfaceShortVowel [{a} | {ą} | {e} | {i} | {o} | {u} | {y} | {ɔ} | {ə} | {ɛ} | {ɪ} | {ʊ}];
 define GermanSurfaceMacronVowel [{ā} | {ē} | {ī} | {ō} | {ū}];
 define GermanSurfaceDiphthong [{ai} | {au} | {ɔy}];
 define GermanSurfaceVowel [GermanSurfaceDiphthong | GermanSurfaceMacronVowel | GermanSurfaceShortVowel];
