@@ -49,6 +49,11 @@ Intersections (Oct 2025 export):
 1. **Audit remaining German surface inventory** – The current fix only touches long vowels; next pass should confirm `{au}` contexts outside the coronal environment still hold.
 2. **Regression loop** – Continue running `server/tools/log_german_stages.sh` and `python server/tools/api_regression.py` whenever further rules change.
 
+### Next surface-filter refresh
+1. Extract a complete consonant/vowel inventory from `GermanPreSurface` outputs (or stage 3 TSVs) so we know exactly which tokens the analyzer emits (`pf/ts/ç/x`, `{ɔy}`, `{ɔː}`, etc.).
+2. Rebuild `GermanSurfaceVowel/Consonant` in the brace alphabet, populating them from that inventory and keeping the permissive “≤3 consonants” structure for now.
+3. Recompile and rerun the stage logger plus `python3 server/tools/api_regression.py` to verify the brace-aware filter behaves as expected.
+
 ### Verification commands (2025‑10‑31)
 ```bash
 docker compose exec backend sh -lc "cd /usr/app && printf 'kniː\nbluːt\nbroːt\ndɔr\n' | flookup german.bin"

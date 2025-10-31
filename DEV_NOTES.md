@@ -59,9 +59,13 @@ For the broader documentation map, see `docs/README.md`.
 
 ### Proto filter follow-up
 - Trimmed `pgrmOnsetCore` to the standard singletons, s-clusters, and stop+liquid combos; removed outlier patterns like `{*w}{*w}{*j}` and `{*n}{*x}{*w}{*s}{*t}`.
-- Restricted nasal vowels to open strong syllables by splitting `pgrmNasalVowel` out of `pgrmShortVowel`; recomposed the rime accordingly.
-- Recompiled (`foma -f fsts/germanic.txt`), reran `flookup` sanity checks for `kniː/bluːt/broːt/dɔr`, and re-ran `python3 server/tools/api_regression.py` (PASS for both pipelines).
-- Nasal vowels now only pass in truly final position (`nę`, `ną`, `brōną`); variants with a following consonant (`nęz`, `nąs`) are rejected as intended.
+- Split `pgrmNasalVowel` out of the short-vowel class so we can restrict ą/ę to word-final open syllables; recompiled and confirmed `nę`/`ną` pass while `nęz`/`nąs` are rejected.
+- Re-ran `flookup` sanity checks (`kniː/bluːt/broːt/dɔr`) and the API harness (`python3 server/tools/api_regression.py`) — both pipelines still PASS.
+
+### German surface filter (queued)
+1. Capture the vowel/consonant inventory from `GermanPreSurface` outputs to see which symbols the brace-aware pipeline actually produces.
+2. Redefine `GermanSurfaceVowel/Consonant` in the brace alphabet using that inventory (front-rounded vowels, `{ɔy}`, `{pf}`, `{ts}`, `{ç}`, etc.).
+3. Recompile (`foma -f fsts/germanic.txt`), rerun `log_german_stages.sh`, and run the API regression harness to confirm coverage once the new filter lands.
 
 ## 2025-10-25
 
