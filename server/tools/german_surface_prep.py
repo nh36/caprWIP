@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Split German IPA clusters and wrap segments for the existing surface filter.
+"""Split German/English IPA clusters and wrap segments for brace-based filters.
 
 Usage:
     printf "kniː\nbroːt\n" | python server/tools/german_surface_prep.py
 
-Each input line is split into recognised clusters/vowels, then each segment is
-emitted inside the curly-braced alphabet used by `GermanSurface`. This mirrors
-what we eventually want to bake into the FST, but running it as a stand-alone
-script keeps Foma from blowing its stack while we iterate.
+German now handles braces internally; use this helper for diagnostics or while
+porting English/Dutch to the brace alphabet. Each input line is tokenised and
+segments are wrapped in `{…}`.
 """
 
 from __future__ import annotations
@@ -16,39 +15,21 @@ import sys
 
 # Longest-first order so greedy matching works.
 CLUSTERS = [
-    "ts",
-    "pf",
-    "kn",
-    "gn",
-    "gr",
-    "gl",
-    "kr",
-    "kl",
-    "br",
-    "bl",
-    "pr",
-    "pl",
-    "fr",
-    "fl",
-    "dr",
-    "tr",
-    "sp",
-    "st",
-    "sk",
-    "sl",
-    "sm",
-    "sn",
+    "ts", "pf", "kn", "gn", "gr", "gl", "kr", "kl", "br", "bl",
+    "pr", "pl", "fr", "fl", "dr", "tr", "sp", "st", "sk", "sl",
+    "sm", "sn", "th", "wh"
 ]
 
-MULTI_VOWELS = ["ā", "ē", "ī", "ō", "ū", "ai", "au", "ɔy"]
+MULTI_VOWELS = ["ā", "ē", "ī", "ō", "ū", "ai", "au", "ɔy", "aɪ", "aʊ", "ɔɪ"]
 
 SEGMENT_MAP = {**{c: f"{{{c}}}" for c in [
-    "k","n","g","ŋ","b","d","t","p","f","v","s","z","ʃ",
-    "h","j","l","m","r","w","x","a","ɔ","ə","ɛ","ɪ","ʊ",
+    "k","n","g","ŋ","b","d","t","p","f","v","s","z","ʃ","θ","ð",
+    "h","j","l","m","r","w","x","a","ɔ","ə","ɛ","ɪ","ʊ","ʌ","ɑ","i","u","e","o",
     "ā","ē","ī","ō","ū"
 ]},
     "pf": "{pf}", "ts": "{ts}",
-    "ai": "{ai}", "au": "{au}", "ɔy": "{ɔy}",
+    "ai": "{ai}", "au": "{au}", "ɔy": "{ɔy}", "aɪ": "{aɪ}", "aʊ": "{aʊ}", "ɔɪ": "{ɔɪ}",
+    "th": "{θ}", "wh": "{ʍ}",
 }
 
 def tokenize(word: str) -> list[str]:
