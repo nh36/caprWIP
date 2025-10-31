@@ -531,7 +531,7 @@ define GermanStopShift [
 ### West Germanic ew development
 define GermanStarVowel [
     {*a} | {*ā} | {*ą} | {*æ} | {*e} | {*ē} |
-    {*i} | {*ī} | {*o} | {*ō} | {*ǭ} | {*u} | {*ū} |
+    {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} |
     {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ} | {*y}
 ];
 
@@ -540,7 +540,7 @@ define GermanStarFrontVowel [
 ];
 
 define GermanStarBackVowel [
-    {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*ǭ} | {*u} | {*ū} | {*ɔ} | {*ʊ}
+    {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*u} | {*ū} | {*ɔ} | {*ʊ}
 ];
 
 define GermanStarConsonant [
@@ -563,17 +563,15 @@ define GermanEwChain GermanEToIBeforeW
 
 ### West Germanic au monophthongisation
 define GermanAuMonophthContext [{*d} | {*ð} | {*t} | {*θ} | {*n}];
-define GermanAuMonophth [ {*au} -> {*ǭ} || _ GermanAuMonophthContext ];
+define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
-    {*au} -> {*ō} || _ GermanAuMonophthContext,
     {*ē} -> {*ā} || _ {*r},
     {*ē} -> {*ā} || _ {*l},
     {*ō} {*w} -> {*ū},
     {*ō} -> {*ū} || {*d} _ {*n},
-    {*ō} -> {*ū} || _ ({*k} | {*g} | {*d} | {*θ} | {*t} | {*s} | {*z} | {*f} | {*l} | {*r} | {*w}),
-    {*au} -> {*ū} || _ {*z}
+    {*ō} -> {*ū} || _ ({*k} | {*g} | {*d} | {*θ} | {*t} | {*s} | {*z} | {*f} | {*l} | {*r} | {*w})
 ];
 
 define GermanRemoveStars [
@@ -587,7 +585,6 @@ define GermanRemoveStars [
     {*ī} -> ī,
     {*o} -> o,
     {*ō} -> ō,
-    {*ǭ} -> ō,
     {*u} -> u,
     {*ū} -> ū,
     {*ɑ} -> ɑ,
@@ -681,8 +678,8 @@ define GermanLengthOrthography [
 ];
 
 define GermanRules GermanEwChain
-    .o. GermanAuMonophth
     .o. GermanLongVowelRules
+    .o. GermanAuMonophth
     .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
     .o. GermanStopShift
@@ -695,9 +692,9 @@ define GermanRules GermanEwChain
 
 # Instrumentation (definitions only; compiled on demand via foma scripts).
 define GermanAfterEw GermanProtoInput .o. GermanEwChain;
-define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
-define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
-define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
+define GermanAfterLongV GermanAfterEw .o. GermanLongVowelRules;
+define GermanAfterAu GermanAfterLongV .o. GermanAuMonophth;
+define GermanAfterNasal GermanAfterAu .o. GermanFinalNasalLoss;
 define GermanAfterConsonant GermanAfterNasal .o. GermanConsonantShift;
 define GermanAfterStopShift GermanAfterConsonant .o. GermanStopShift;
 define GermanAfterAzLoss GermanAfterStopShift .o. GermanAzLoss;
