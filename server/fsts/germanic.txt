@@ -86,121 +86,44 @@ define pgrmMedial [
 define pgrmOnsetCore [
     pgrmInitSimple |
     pgrmInitSimple pgrmMedial |
-    b:{*b} b:{*b} |
-    b:{*b} j:{*j} |
     b:{*b} l:{*l} |
-    b:{*b} n:{*n} |
     b:{*b} r:{*r} |
-    b:{*b} s:{*s} |
-    d:{*d} j:{*j} |
-    d:{*d} m:{*m} |
     d:{*d} r:{*r} |
-    d:{*d} w:{*w} |
     f:{*f} l:{*l} |
-    f:{*f} n:{*n} |
     f:{*f} r:{*r} |
-    f:{*f} t:{*t} |
-    g:{*g} j:{*j} |
     g:{*g} l:{*l} |
-    g:{*g} n:{*n} |
     g:{*g} r:{*r} |
-    g:{*g} w:{*w} |
-    k:{*k} j:{*j} |
-    k:{*k} k:{*k} |
     k:{*k} l:{*l} |
     k:{*k} n:{*n} |
     k:{*k} r:{*r} |
-    k:{*k} w:{*w} |
     l:{*l} b:{*b} |
     l:{*l} d:{*d} |
-    l:{*l} f:{*f} |
     l:{*l} g:{*g} |
-    l:{*l} j:{*j} |
-    l:{*l} k:{*k} |
-    l:{*l} l:{*l} |
-    l:{*l} m:{*m} |
     l:{*l} p:{*p} |
     l:{*l} t:{*t} |
-    l:{*l} θ:{*θ} |
-    m:{*m} b:{*b} |
-    m:{*m} m:{*m} |
-    m:{*m} n:{*n} |
     m:{*m} r:{*r} |
     n:{*n} d:{*d} |
     n:{*n} g:{*g} |
-    n:{*n} j:{*j} |
-    n:{*n} k:{*k} |
-    n:{*n} n:{*n} |
     n:{*n} r:{*r} |
-    n:{*n} θ:{*θ} |
-    p:{*p} n:{*n} |
-    p:{*p} p:{*p} |
+    p:{*p} r:{*r} |
     r:{*r} b:{*b} |
     r:{*r} d:{*d} |
     r:{*r} g:{*g} |
     r:{*r} k:{*k} |
-    r:{*r} m:{*m} |
-    r:{*r} n:{*n} |
     r:{*r} p:{*p} |
-    r:{*r} r:{*r} |
-    r:{*r} t:{*t} |
-    r:{*r} w:{*w} |
-    r:{*r} x:{*x} |
-    r:{*r} θ:{*θ} |
     s:{*s} k:{*k} |
-    s:{*s} l:{*l} |
-    s:{*s} m:{*m} |
-    s:{*s} n:{*n} |
     s:{*s} p:{*p} |
-    s:{*s} t:{*t} |
-    s:{*s} w:{*w} |
-    t:{*t} j:{*j} |
-    t:{*t} n:{*n} |
-    t:{*t} r:{*r} |
-    t:{*t} t:{*t} |
-    w:{*w} j:{*j} |
-    w:{*w} r:{*r} |
-    w:{*w} w:{*w} |
-    x:{*x} m:{*m} |
-    x:{*x} n:{*n} |
-    x:{*x} r:{*r} |
-    x:{*x} s:{*s} |
-    x:{*x} t:{*t} |
-    x:{*x} w:{*w} |
-    z:{*z} d:{*d} |
-    z:{*z} j:{*j} |
-    z:{*z} n:{*n} |
-    z:{*z} w:{*w} |
-    θ:{*θ} l:{*l} |
-    θ:{*θ} r:{*r} |
-    k:{*k} k:{*k} j:{*j} |
-    l:{*l} d:{*d} r:{*r} |
-    l:{*l} g:{*g} w:{*w} |
-    l:{*l} l:{*l} j:{*j} |
-    l:{*l} t:{*t} j:{*j} |
-    n:{*n} d:{*d} j:{*j} |
-    n:{*n} d:{*d} l:{*l} |
-    n:{*n} d:{*d} r:{*r} |
-    n:{*n} g:{*g} j:{*j} |
-    n:{*n} g:{*g} r:{*r} |
-    n:{*n} g:{*g} w:{*w} |
-    n:{*n} t:{*t} r:{*r} |
-    r:{*r} s:{*s} t:{*t} |
-    r:{*r} w:{*w} j:{*j} |
-    r:{*r} x:{*x} t:{*t} |
-    s:{*s} p:{*p} r:{*r} |
-    s:{*s} t:{*t} j:{*j} |
-    s:{*s} t:{*t} r:{*r} |
-    w:{*w} w:{*w} j:{*j} |
-    x:{*x} t:{*t} j:{*j} |
-    n:{*n} x:{*x} w:{*w} s:{*s} t:{*t}
+    s:{*s} t:{*t}
 ];
 
 define pgrmOnset [0 | pgrmOnsetCore];
 
 define pgrmShortVowel [
-    a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} |
-    ą:{*ą} | ę:{*ę} | y:{*y}
+    a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | y:{*y}
+];
+
+define pgrmNasalVowel [
+    ą:{*ą} | ę:{*ę}
 ];
 
 define pgrmLongVowel [
@@ -329,7 +252,10 @@ define pgrmCodaComplex [
 
 define pgrmCoda [0 | pgrmCodaSimple | pgrmCodaComplex];
 
-define pgrmStrongSyllable pgrmOnset pgrmNucleus pgrmCoda;
+define pgrmRime [pgrmNucleus pgrmCoda];
+define pgrmRimeNasal [pgrmNasalVowel];
+
+define pgrmStrongSyllable [pgrmOnset pgrmRime | pgrmOnset pgrmRimeNasal];
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 
@@ -621,6 +547,7 @@ define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
 
 ### Long vowels
 define GermanLongVowelRules [
+    {*au} -> {*ō} || _ GermanAuMonophthContext,
     {*ē} -> {*ā} || _ {*r},
     {*ē} -> {*ā} || _ {*l},
     {*ō} {*w} -> {*ū},

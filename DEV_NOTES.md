@@ -35,6 +35,34 @@ For the broader documentation map, see `docs/README.md`.
 - Loosen `GermanSurface` / inventory so `{knV}` outputs (and future `{x}/{ç}` cases) pass through to `GermanReflexes`.
 - Rework `GermanLongVowelRules` and its neighboring filters so `{braudą → brōdą}` survives past the long-vowel stage instead of collapsing to `???`.
 
+## 2025-10-31
+
+### Services & probes
+- Containers still running (`docker compose ps`).
+- Analyzer checks (post fix): `docker compose exec backend sh -lc "cd /usr/app && printf 'kniː\nbluːt\nbroːt\ndɔr\n' | flookup german.bin"`.
+  - `kniː` ⇒ `wąknī/ąknī/kąnī/knąī`.
+  - `bluːt` ⇒ `blaut/blōwt/blōt/blūt`.
+  - `broːt` now returns `braut`.
+  - `dɔr` continues to emit the full `dur` bundle.
+- Stage snapshots (`bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt`).
+  - `GermanAfterLongV` now outputs `brūdą` for `braudą`.
+  - `GermanPreSurface` shows `brūd/brōd` alongside the existing ew-chain traces.
+- Regression harness: `python3 server/tools/api_regression.py` ⇒ PASS for Burmish & Germanic.
+
+### Findings
+- Adding `{*au} -> {*ō}` inside `GermanLongVowelRules` keeps `{braudą}` in play; analyzer and staged outputs agree.
+- `{durą → dɔr}` remains healthy, so the long-vowel fix didn’t disturb consonant-shift handling.
+
+### Next focus
+1. Audit remaining `{au}` contexts to ensure non-coronal environments stay diphthongal after the new rule.
+2. Rerun the stage logger + regression harness after any additional tweaks.
+
+### Proto filter follow-up
+- Trimmed `pgrmOnsetCore` to the standard singletons, s-clusters, and stop+liquid combos; removed outlier patterns like `{*w}{*w}{*j}` and `{*n}{*x}{*w}{*s}{*t}`.
+- Restricted nasal vowels to open strong syllables by splitting `pgrmNasalVowel` out of `pgrmShortVowel`; recomposed the rime accordingly.
+- Recompiled (`foma -f fsts/germanic.txt`), reran `flookup` sanity checks for `kniː/bluːt/broːt/dɔr`, and re-ran `python3 server/tools/api_regression.py` (PASS for both pipelines).
+- Weak syllable still permits final `-s`/`-n`; future tidy-up can clamp nasal vowels there if needed.
+
 ## 2025-10-25
 
 ### Services & tests
