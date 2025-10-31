@@ -30,65 +30,32 @@ Intersections (Oct 2025 export):
   monophthongisation, final devoicing, shielded stop shift) so `kuː` can reach
   `*kōwz` again.
 
-## Current findings (2025‑10‑25)
-- Surface-to-proto tests
-  - Command: `docker compose exec backend sh -c "cd /usr/app && printf 'kniː\n'
-    | flookup german.bin"`
-  - Results: `kniː`, `broːt`, `bluːt` still return `+?` (no proto analyses) while
-    `toːr` delivers the expected bundles (multiple `tōr`/`tōrą` variants).
-  - Interpretation: the nasal-vowel stems still collapse before the surface
-    filter, whereas plain long-vowel sets like *door* survive.
-- Stage inspection todo
-  - Need to instrument each stage of the German cascade (ProtoWord, ew-chain,
-    GermanAuMonophth, GermanLongVowelRules, GermanVowelAdjustments, surface
-    filter) and capture the intermediate strings for `*knewą/*braudą/*blōdą`.
-  - Add those logs to this report once gathered.
+## Current findings (2025‑10‑31)
+- Analyzer probes
+  - Command: `docker compose exec backend sh -c "cd /usr/app && printf 'kniː\nbluːt\nbroːt\ndɔr\n' | flookup german.bin"`
+  - Results: `kniː` returns `wąknī/ąknī/kąnī/knąī`; `bluːt` yields `blaut/blōwt/blōt/blūt`; `broːt` now maps to `braut`; `dɔr` continues to surface from the full proto bundle.
+  - Interpretation: the new `{*au → *ō}` clause keeps `{braudą}` alive through `GermanAfterLongV`, restoring analyzer coverage for `broːt` while leaving other probes unaffected.
+- Proto word filter sanity pass (2025‑10‑31)
+  - `pgrmOnsetCore` pared down to the usual singletons, s-clusters, and stop+liquid combinations; stray patterns such as `{*n}{*x}{*w}{*s}{*t}` were removed.
+  - Nasal vowels are now defined separately (`pgrmNasalVowel`) and only allowed in open strong syllables; `apply down nę` is rejected, while `nęz` still passes via the `-z` coda.
+  - Recompiled `fsts/germanic.txt`, reran the analyzer probes, and confirmed the API regression harness stays green.
+- Stage logging recap
+  - Baseline command: `bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt` (run after recompiling with `foma -f fsts/germanic.txt`).
+  - `GermanAfterAu` feeds `{braudą, brōdą}` into the new rule; `GermanAfterLongV` now outputs `{brūdą}` for that lexeme instead of failing.
+  - `GermanPreSurface` supplies `{brūd, brōd}` pairs alongside the existing ew-chain outputs (`knɪw/knɛw/…`), confirming the fix propagates to the surface layer.
+  - `GermanReflexes` still inverts `*durą` to `dɔrą`, so consonant-shift handling remains consistent.
 
-### Instrumentation proposal (before changing rules)
-1. **Label intermediate stages** so each block of `GermanRules` can be tested in
-   isolation, e.g. conceptual definitions such as:
-   ```foma
-   define GermanAfterEw ProtoWord .o. GermanEwChain;
-   define GermanAfterAu GermanAfterEw .o. GermanAuMonophth;
-   define GermanAfterLongV GermanAfterAu .o. GermanLongVowelRules;
-   define GermanAfterNasal GermanAfterLongV .o. GermanFinalNasalLoss;
-   define GermanAfterShift GermanAfterNasal .o. GermanConsonantShift .o. GermanStopShift;
-   define GermanAfterVowelAdj GermanAfterShift .o. GermanVowelAdjustments;
-   define GermanAfterCleanup GermanAfterVowelAdj .o. GermanFinalDevoicing .o. GermanCleanup;
-   ```
-2. **Compile/save each stage** temporarily (`regex GermanAfterLongV; save stack
-   german_after_longv.bin`) and run `flookup` for `kniː/broːt/bluːt/tōr` in both
-   directions. This reveals the first stage that collapses the nasal-vowel stems.
-3. **Record the strings** at each stage inside this report so we know whether to
-   adjust the ew-chain, the long-vowel block, or the cleanup/surface filter.
-4. **Only after logging** should we touch the actual rule definitions, keeping a
-   copy of the staged binaries for regression.
+### Immediate priorities
+1. **Audit remaining German surface inventory** – The current fix only touches long vowels; next pass should confirm `{au}` contexts outside the coronal environment still hold.
+2. **Regression loop** – Continue running `server/tools/log_german_stages.sh` and `python server/tools/api_regression.py` whenever further rules change.
 
-### Stage log snapshot (2025‑10‑26)
-- Command: `bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt` (script feeds the lexemes without spaces so `foma` walks each intermediate automaton inside Docker).
-- Observations:
-  - The ew→iu→ī chronology still produces `{knɪw, knɛw, kniw, kniɔ, kniː}` for `*knewą` by `GermanPreSurface`, so the remaining blockage sits in `GermanSurface`.
-  - `*braudą` happily yields `{braudą, brōdą}` after `GermanAfterAu` but drops out once `GermanLongVowelRules` apply, highlighting that block (or its contexts) as the next debugging target.
-  - `*blōdą` → `{bloːt, bluːt}` and `*tōr` → `{toːr, tuːr}` supply a control sample for the healthy parts of the cascade.
-
-### Rule-design proposals (phonology-aligned; no code yet)
-1. **ew→iu→ī chronology** – In West Germanic, `ew` first fronts to `iw/iu` and
-   then contracts to long `ī` before nasal vowels (cf. OHG `knī` < PG `*knew-`).
-   Our rules currently create the sequence `i u` but expect a multi-symbol `{iu}`;
-   proposal: either glue the sequence via a dedicated recombination (`i u -> {iu}`)
-   or rewrite the contraction to match the literal `i u`. Ensure nasal deletion
-   fires afterward so `knīą` survives to the surface.
-2. **Non-dental `{au}` contexts** – Historical pattern: `{au}` only monophthongises
-   before coronal obstruents/nasals (`*braudą → brōt`, `*hlaupaną → laufen`).
-   Introduce an explicit preservation stage (e.g. `{au} -> {ɔu}` globally, then
-   `{ɔu} -> ō / _ {d, ð, t, θ, n}`) so forms like `lauf/Haus` keep `{au}` while
-   `broːt`, `bluːt` move toward `{oː}/{uː}`.
-3. **Surface inventory `{x}/{ç}`** – High German shift outputs `x` (ach) and `ç`
-   (ich) from velars and front contexts (e.g. *Buch*, *suchen*, *Knecht*). Add
-   `{ç}` (and any other missing spirants) to `GermanSurfaceConsonant` so valid
-   outputs aren’t filtered before we refine the shift rules themselves.
-4. **Cluster follow-ups** – Once the above is stable, revisit `{t → ts}` and
-   `{k/kk → x}` in shielded contexts plus cluster reflexes like `*stukkaz → ʃtɔk`.
+### Verification commands (2025‑10‑31)
+```bash
+docker compose exec backend sh -lc "cd /usr/app && printf 'kniː\nbluːt\nbroːt\ndɔr\n' | flookup german.bin"
+docker compose exec backend sh -lc "cd /usr/app && printf 'load stack german_after_longv.bin\napply down braudą\nquit\n' | foma"
+docker compose exec backend sh -lc "cd /usr/app && printf 'load stack german_pre_surface.bin\napply down durą\nquit\n' | foma"
+docker compose exec backend sh -lc "cd /usr/app && printf 'load stack german.bin\napply up dɔr\nquit\n' | foma"
+```
 
 ### Helper script for surface prep
 - File: `server/tools/german_surface_prep.py`.
@@ -109,17 +76,8 @@ Intersections (Oct 2025 export):
   this part of the pipeline to HFST, which handles larger automata gracefully).
 
 ## Active work items
-1. **ew→iu→ī chronology audit** – ensure the chain outputs `knīą` before nasal
-   deletion; confirm long-vowel rules convert `{ī → iː}` without undoing.
-2. **Non-dental `{au}` reflexes** – dedicated rule for sequences like `lauf` /
-   `Haus` now that final devoicing is in place.
-3. **High German consonant shift completion** – finish `{t → ts}` and
-   `{k/kk → x}` even with shielding, plus admit `{x}/{ç}` in `GermanSurface` so
-   *Buch* / *suchen* stop falling back to `*surface`.
-4. **Cluster/geminate reflexes** – e.g. `*stukkaz → ʃtɔk`; depends on the second
-   shift and new surface symbols.
-5. **Regression + logging** – once the above steps land, re-run
-   `server/tools/api_regression.py` and refresh the coverage numbers here.
+1. Sweep remaining `{au}` contexts (outside coronal environments) to confirm the new rule doesn’t over-apply; add spot checks for forms like `*hlaupaną`.
+2. Keep the regression harness + stage logger in the loop for any follow-up tweaks.
 
 ## Supporting artifacts
 - `docs/germanic_notes/README.md` – links to the October 2025 Word files.
