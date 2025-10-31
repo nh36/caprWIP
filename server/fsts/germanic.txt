@@ -252,10 +252,8 @@ define pgrmCodaComplex [
 
 define pgrmCoda [0 | pgrmCodaSimple | pgrmCodaComplex];
 
-define pgrmRime [pgrmNucleus pgrmCoda];
-define pgrmRimeNasal [pgrmNasalVowel];
-
-define pgrmStrongSyllable [pgrmOnset pgrmRime | pgrmOnset pgrmRimeNasal];
+define pgrmStrongPlain pgrmOnset pgrmNucleus pgrmCoda;
+define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 
@@ -265,7 +263,10 @@ define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l}];
 
 define pgrmWeakSyllable pgrmWeakOnset pgrmWeakNucleus pgrmWeakCoda;
 
-define pgrmWord pgrmStrongSyllable (pgrmWeakSyllable)?;
+define pgrmWord [
+    pgrmStrongPlain (pgrmWeakSyllable)? |
+    pgrmStrongNasal
+];
 
 define RemoveStars {*} -> 0;
 define GermanProtoInput pgrmWord;

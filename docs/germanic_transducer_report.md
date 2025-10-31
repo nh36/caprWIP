@@ -37,7 +37,7 @@ Intersections (Oct 2025 export):
   - Interpretation: the new `{*au → *ō}` clause keeps `{braudą}` alive through `GermanAfterLongV`, restoring analyzer coverage for `broːt` while leaving other probes unaffected.
 - Proto word filter sanity pass (2025‑10‑31)
   - `pgrmOnsetCore` pared down to the usual singletons, s-clusters, and stop+liquid combinations; stray patterns such as `{*n}{*x}{*w}{*s}{*t}` were removed.
-  - Nasal vowels are now defined separately (`pgrmNasalVowel`) and only allowed in open strong syllables; `apply down nę` is rejected, while `nęz` still passes via the `-z` coda.
+  - Nasal vowels are split out of `pgrmShortVowel` and now only pass in genuinely open finals (`apply down nę` ⇒ `*n*ę`, `apply down nęz` ⇒ `???`).
   - Recompiled `fsts/germanic.txt`, reran the analyzer probes, and confirmed the API regression harness stays green.
 - Stage logging recap
   - Baseline command: `bash server/tools/log_german_stages.sh > /tmp/german_stage_log.txt` (run after recompiling with `foma -f fsts/germanic.txt`).

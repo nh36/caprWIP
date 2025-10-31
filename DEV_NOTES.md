@@ -61,7 +61,7 @@ For the broader documentation map, see `docs/README.md`.
 - Trimmed `pgrmOnsetCore` to the standard singletons, s-clusters, and stop+liquid combos; removed outlier patterns like `{*w}{*w}{*j}` and `{*n}{*x}{*w}{*s}{*t}`.
 - Restricted nasal vowels to open strong syllables by splitting `pgrmNasalVowel` out of `pgrmShortVowel`; recomposed the rime accordingly.
 - Recompiled (`foma -f fsts/germanic.txt`), reran `flookup` sanity checks for `kniː/bluːt/broːt/dɔr`, and re-ran `python3 server/tools/api_regression.py` (PASS for both pipelines).
-- Weak syllable still permits final `-s`/`-n`; future tidy-up can clamp nasal vowels there if needed.
+- Nasal vowels now only pass in truly final position (`nę`, `ną`, `brōną`); variants with a following consonant (`nęz`, `nąs`) are rejected as intended.
 
 ## 2025-10-25
 
