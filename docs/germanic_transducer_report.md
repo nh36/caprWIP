@@ -49,11 +49,19 @@ Intersections (Oct 2025 export):
   - `GermanPreSurface` supplies `{brūd, brōd}` pairs alongside the existing ew-chain outputs (`knɪw/knɛw/…`), confirming the fix propagates to the surface layer.
   - `GermanReflexes` still inverts `*durą` to `dɔrą`, so consonant-shift handling remains consistent.
 
+- ## Current findings (2025‑11‑01)
+- Updated `pgrmWeakCoda` to include `{*z}` and rewrote the ach-Laut stack (`GermanStopShift` for vowel environments, `GermanXPalatalization`, `GermanThemeApocope`). The new automaton compiles, but `GermanProtoInput` still rejects `*laukaz`, so analyzer queries for `laux/knɛxt/mɪlx` continue to return `+?` and the new rules are not exercised yet.
+- Analyzer output for `broːt`, `dɔr`, and `kniː` still shows parallel candidates with and without the weak-syllable tail (`braut/brautą/braud/braudą`, `dur/durą`, `knew/knewz/knewzą`, …). The current `GermanFinalNasalLoss` + `GermanAzLoss` pairing drops `{*ą}` / `{*z}` inconsistently.
+- Lexeme audit confirms the noun reconstructions such as `*braudą` and `*blōdą` are intentional; only the weak-verb paradigm should carry the `-aną` migration.
+- `GermanBraceNormalizer` now strips literal `{}/`*` from the incoming lexeme before `pgrmWord`, so `regex GermanProtoInput; apply down {*l}{*au}{*k}{*a}{*z}` succeeds; plain `laukaz` still passes unchanged.
+- Ach-Laut verbs still stall further down the stack: `GermanAfterStopShift/GermanAfterApocope` continue to return `*l*au*k*a*z` / `*l*au*k`, which leaves `flookup german.bin` at `+?` for `laux/knɛxt/mɪlx` even with the proto gate open.
+- Refactored the `GermanStar*` context sets to reuse the proto alphabet directly (plus the handful of post-proto tokens such as `{*æ}`, `{*ɔ}`, `{*x}`), eliminating the drift between the gate inventory and the sound rules.
+- Remaining blocker: after the refactor the stop-shift environment still misses the `{*k}` sandwiched between vowels, because the proto output now arrives as multi-character strings like `*a` rather than brace-wrapped atoms. Next iteration should reinstate brace wrapping—or declare the starred tokens via `multichar_symbols`—so the vowel context and `{*k}` meet within a single-symbol boundary.
+
 ### Immediate priorities
-1. **Stabilise the `-anan → -aną` migration** – Confirm verbs now end in `-aną`, keep the noun exceptions separate, and track analyzer side-effects (e.g., the brace-less `ą` outputs now seen for `broːt`).
-2. **Tighten proto weak-syllable handling** – Adjust `ProtoWord`/`pgrmWord` so final nasal vowels behave as single weak syllables without generating duplicate `ą` reflexes.
-3. **Audit remaining German surface inventory** – The current fix only touches long vowels; next pass should confirm `{au}` contexts outside the coronal environment still hold.
-4. **Regression loop** – Continue running `server/tools/log_german_stages.sh` and `python server/tools/api_regression.py` whenever further rules change.
+1. Restore `GermanProtoInput` coverage for `*-kaz/-kiz` verbs so the new spirantisation/apocope rules can run; rerun the stage logger to verify `laukaz/laukaz` survives `GermanAfterEw`.
+2. Once the proto filter passes, validate the ach-Laut chain (`GermanStopShift` → `GermanXPalatalization` → `GermanThemeApocope`) and tighten the weak-tail cleanup to eliminate duplicate `{*ą}/{*z}` candidates.
+3. Keep the regression harness and staged logs in the loop after each change.
 
 ### Next surface-filter refresh
 1. Extract a complete consonant/vowel inventory from `GermanPreSurface` outputs (or stage 3 TSVs) so we know exactly which tokens the analyzer emits (`pf/ts/ç/x`, `{ɔy}`, `{ɔː}`, etc.).
@@ -87,8 +95,9 @@ docker compose exec backend sh -lc "cd /usr/app && printf 'load stack german.bin
   this part of the pipeline to HFST, which handles larger automata gracefully).
 
 ## Active work items
-1. Sweep remaining `{au}` contexts (outside coronal environments) to confirm the new rule doesn’t over-apply; add spot checks for forms like `*hlaupaną`.
-2. Keep the regression harness + stage logger in the loop for any follow-up tweaks.
+1. Draft the ach-Laut extensions (`GermanStopShift` context + post-`AzLoss` apocope) and validate against the `laux/knɛxt/mɪlx` probes.
+2. Revisit weak-tail cleanup once the analyzer stops duplicating `-ą/-z` pairs, making sure noun stems such as `*braudą` stay intact.
+3. Continue the regression loop (`server/tools/log_german_stages.sh`, `python server/tools/api_regression.py`) after each milestone.
 
 ## Supporting artifacts
 - `docs/germanic_notes/README.md` – links to the October 2025 Word files.
