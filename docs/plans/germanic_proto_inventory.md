@@ -25,6 +25,7 @@ This audit will guide the `pgrmInitC`/`pgrmRime` draft so that every rule contex
 ## Progress log
 - Added `pgrmOnsetCore` and `pgrmCodaComplex` so every cluster enumerated in `ProtoOnsetCore`/`ProtoCodaCore` now has a starred counterpart (`server/fsts/germanic.txt:88-164`). This lets `pgrmWord` accept the standard smoke lexicon (`knewą`, `braudą`, `blōdą`, `tōr`) without resorting to ad-hoc placeholders.
 - Captured a comparison harness that compiles temporary FSTs and runs `flookup` comparisons; current outputs show legacy `ProtoWord` and `pgrmWord` (with star stripping) both accept the smoke set, and their `GermanConsonantShift` compositions agree (`server/tools/compare_german_proto.sh`).
+- 2025-11-01 follow-up: added `{*z}` to `pgrmWeakCoda`, but `GermanProtoInput` still refuses `*laukaz`; need to track down the remaining filter that blocks `*-kaz/-kiz` verbs before the sound rules run.
 
 ## Next steps
 - Revisit `GermanLongVowelRules` in a fresh session: keep macron notation through phonological rules, then convert to IPA length marks during the final orthography cleanup.

@@ -7,6 +7,8 @@ surface layer to HFST.
 
 ## Steps
 
+0. **Unblock proto input first**
+   - Confirm `GermanProtoInput` now accepts `*laukaz`/`*milkiz`; walk the staged FSTs to ensure `GermanAfterEw` actually emits the starred strings before continuing with surface tweaks.
 1. **Reintroduce staged saves (temporarily)**
    - Edit `server/fsts/germanic.txt` to re-add the instrumentation block:
      - Definitions: `GermanAfterEw`, `GermanAfterAu`, `GermanAfterLongV`,

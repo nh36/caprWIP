@@ -9,6 +9,34 @@ Include:
 For the broader documentation map, see `docs/README.md`.
 
 
+## 2025-11-01
+
+### Services & probes
+- `docker compose exec backend ... flookup german.bin` for `broːt/dɔr/kniː/laux`, plus `bash server/tools/log_german_stages.sh` to capture fresh stage dumps. Docker still prints the obsolete `version` warning before each exec.
+- `laux` continues to return `+?`, while `broːt` and `dɔr` now enumerate both nasal-tailed and nasal-free proto forms (`braut/ brautą / braud / braudą`, `dur/durą/...`).
+
+### Findings
+- Stage logging shows the failure for ach-Laut items happens immediately: `regex GermanAfterEw; apply down laukaz` yields `???` because `pgrmWeakCoda` omits `{*z}`. Downstream rules therefore never see the form.
+- `GermanStopShift` only spirantises `*k` before a consonant or boundary, so `*-kaz` stays as `{*k}`. After `GermanAzLoss` the lingering `{*a}` turns the stem into `lauka`, which the surface filter accepts without the expected `{x}`. The planned apocope after `AzLoss` is still missing.
+- Weak-tail rules continue to overgenerate: analyzer output for `broːt` and `kniː` includes parallel paths with and without `{*z}`/`{*ą}` because `GermanFinalNasalLoss` and `GermanAzLoss` remove those segments inconsistently. The dataset migration to `-aną` verbs therefore shows up as duplicated candidates rather than a single cleaned form.
+- The noun forms `*braudą`, `*blōdą`, etc. remain correct and should stay untouched; the clean-up needs to focus on the weak-verb paradigms only.
+- Added `GermanBraceNormalizer` (drop literal `{`/`}`/`*`) ahead of `pgrmWord`; `GermanProtoInput` now accepts both plain (`laukaz`) and brace-star (`{*l}{*au}{*k}{*a}{*z}`) lexemes.
+- Despite the gate fix, the ach-Laut chain still outputs `{*k}`—`regex GermanAfterStopShift; apply down laukaz` returns `*l*au*k*a*z`—so `flookup german.bin` continues to report `+?` for `laux/knɛxt/mɪlx`.
+- Replaced the hand-written `GermanStar*` inventories with definitions derived from the proto syllable macros; the contexts now include the full starred alphabet plus `{*æ}`, `{*ɔ}`, `{*x}`, etc., keeping them aligned with ongoing proto edits.
+- Observed that the ach-Laut rewrite still fails post-refactor: the starred vowels are matching, but `{*k}` survives because multi-character lexical symbols (`*a`, `*au`) are no longer treated as single units once braces are stripped. Next pass needs to restore a brace wrapper (or declare the `*X` tokens via `multichar_symbols`) so the context sees contiguous vowels around `{*k}`.
+
+### Updates
+- Extended `pgrmWeakCoda` to admit `{*z}` and recompiled `server/fsts/germanic.txt`; `regex GermanAfterEw; apply down laukaz` now returns `*l*au*k*a*z`, so ach-Laut verbs reach the sound rules again.
+- Reworked `GermanStopShift`/`GermanXPalatalization`/`GermanThemeApocope` to model `{*k} → {*x}` between vowels, palatalise `{*x}` after front vowels, and drop the residual theme vowel once `{*z}` is lost. Rebuilt `german.bin` after the changes.
+- Current analyzer run (`printf 'laux\\nknɛxt\\nmɪlx\\n' | flookup german.bin`) still returns `+?`; `GermanProtoInput` appears to refuse `*laukaz`, so the new rules are not exercised yet. Stage logging for the canonical probes (`knewą/braudą/...`) still works as before.
+- Recompiled after introducing `GermanBraceNormalizer`; `regex GermanProtoInput; apply down {*l}{*au}{*k}{*a}{*z}` now yields `*l*au*k*a*z` without rejecting the brace input.
+
+### Next focus
+1. Track down why `GermanProtoInput` still rejects `*laukaz` (even though `{*z}` was added to the weak-tail macros) and restore `GermanAfterEw` outputs for ach-Laut probes.
+2. Once the proto acceptance is fixed, confirm the new spirantisation/palatalisation/apocope rules yield analyzer hits for `laux/knɛxt/mɪlx` and adjust contexts if over/under-generating.
+3. Tighten weak-tail handling so `GermanAzLoss` + `GermanFinalNasalLoss` eliminate the tail exactly once for verbs, while noun stems like `*braudą` stay untouched. Re-run `flookup german.bin` for `broːt/dɔr/kniː` after each iteration.
+
+
 ## 2025-10-26
 
 ### Services & tests

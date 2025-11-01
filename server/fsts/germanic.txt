@@ -269,7 +269,7 @@ define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 define pgrmWeakOralNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
 define pgrmWeakNasalNucleus [ą:{*ą} | ę:{*ę}];
 
-define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l}];
+define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l} | z:{*z}];
 
 define pgrmWeakOralSyllable pgrmWeakOnset pgrmWeakOralNucleus pgrmWeakCoda;
 define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
@@ -288,6 +288,14 @@ define pgrmWord [
 ];
 
 define RemoveStars {*} -> 0;
+define GermanLexOnset pgrmOnsetCore.r;
+define GermanLexCoda pgrmCoda.r;
+define GermanLexConsonant [GermanLexOnset | GermanLexCoda];
+define GermanLexShortVowel pgrmShortVowel.r;
+define GermanLexLongVowel pgrmLongVowel.r;
+define GermanLexNasalVowel pgrmNasalVowel.r;
+define GermanLexVowel [GermanLexShortVowel | GermanLexLongVowel | GermanLexNasalVowel];
+define GermanLexDiphthong pgrmDiphthong.r;
 define GermanProtoInput pgrmWord;
 
 ##############################################
@@ -525,30 +533,41 @@ define GermanFinalDevoicing [
 define GermanStopShift [
     {*k} {*k} -> K,
     {*k} -> {*x} || GermanStarBackVowel _ (GermanStarConsonant | .#.),
-    {*k} -> {*ç} || GermanStarFrontVowel _ (GermanStarConsonant | .#.)
+    {*k} -> {*x} || GermanStarVocalic _ GermanStarVocalic
+];
+
+define GermanXPalatalization [
+    {*x} -> {*ç} || GermanStarFrontTrigger _ ({*j} | GermanStarFrontTrigger | .#.)
 ];
 
 ### West Germanic ew development
-define GermanStarVowel [
-    {*a} | {*ā} | {*ą} | {*æ} | {*e} | {*ē} |
-    {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} |
-    {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ} | {*y}
+define GermanExtraVowel [
+    {*æ} | {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
 ];
+
+define GermanStarVowel [
+    {*a} | {*ā} | {*ą} | {*e} | {*ē} | {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} | {*y} |
+    GermanExtraVowel
+];
+
+define GermanStarDiphthong [ {*ai} | {*au} | {*eu} | {*iu} | {*ei} ];
+
+define GermanStarVocalic [GermanStarVowel | GermanStarDiphthong];
 
 define GermanStarFrontVowel [
     {*i} | {*ī} | {*e} | {*ē} | {*æ} | {*ɛ} | {*ø} | {*œ} | {*y} | {*ʉ}
 ];
+
+define GermanStarFrontTrigger [GermanStarFrontVowel | {*ai} | {*ei} | {*eu} | {*iu}];
 
 define GermanStarBackVowel [
     {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*u} | {*ū} | {*ɔ} | {*ʊ}
 ];
 
 define GermanStarConsonant [
-    {*b} | {*d} | {*f} | {*g} | {*h} | {*j} | {*k} | {*l} | {*m} | {*n} |
+    {*b} | {*d} | {*f} | {*g} | {*ɡ} | {*h} | {*j} | {*k} | {*l} | {*m} | {*n} |
     {*p} | {*r} | {*s} | {*t} | {*v} | {*w} | {*x} | {*z} | {*ð} | {*ŋ} |
-    {*ɡ} | {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ} |
-    {*ç} |
-    {*ts}
+    {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ} | {*ç} | {*ts}
 ];
 
 define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];
@@ -644,6 +663,11 @@ define GermanAzLoss [
     {*z} -> 0 || _ .#.
 ];
 
+define GermanThemeApocope [
+    {*a} -> 0 || ({*x} | {*ç}) _ .#.,
+    {*i} -> 0 || ({*x} | {*ç}) _ .#.
+];
+
 define GermanAiShift [
     {*ai} -> {*ei} || _ {*h} {*t}
 ];
@@ -683,7 +707,9 @@ define GermanRules GermanEwChain
     .o. GermanFinalNasalLoss
     .o. GermanConsonantShift
     .o. GermanStopShift
+    .o. GermanXPalatalization
     .o. GermanAzLoss
+    .o. GermanThemeApocope
     .o. GermanVowelAdjustments
     .o. GermanFinalDevoicing
     .o. GermanCleanup
@@ -697,13 +723,15 @@ define GermanAfterAu GermanAfterLongV .o. GermanAuMonophth;
 define GermanAfterNasal GermanAfterAu .o. GermanFinalNasalLoss;
 define GermanAfterConsonant GermanAfterNasal .o. GermanConsonantShift;
 define GermanAfterStopShift GermanAfterConsonant .o. GermanStopShift;
-define GermanAfterAzLoss GermanAfterStopShift .o. GermanAzLoss;
-define GermanAfterVowelAdj GermanAfterAzLoss .o. GermanVowelAdjustments;
+define GermanAfterPalatal GermanAfterStopShift .o. GermanXPalatalization;
+define GermanAfterAzLoss GermanAfterPalatal .o. GermanAzLoss;
+define GermanAfterApocope GermanAfterAzLoss .o. GermanThemeApocope;
+define GermanAfterVowelAdj GermanAfterApocope .o. GermanVowelAdjustments;
 define GermanAfterFinalDevoice GermanAfterVowelAdj .o. GermanFinalDevoicing;
 define GermanAfterCleanup GermanAfterFinalDevoice .o. GermanCleanup;
 define GermanAfterOrthography GermanAfterCleanup .o. GermanOrthography;
 define GermanAfterStarDrop GermanAfterOrthography .o. GermanRemoveStars;
-define GermanAfterShift GermanAfterAzLoss;
+define GermanAfterShift GermanAfterPalatal;
 define GermanPreSurface GermanAfterStarDrop;
 
 ### 3. Composition
