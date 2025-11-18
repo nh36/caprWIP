@@ -1,3 +1,87 @@
+## 2025-11-18
+
+### Checkpoint 0 — baseline capture
+
+- Re-ran the stage tracer inside the backend container with `--normalize-plain` for `laukaz/milkiz/braudą/durą` (the proto control) and saved the outputs to `docs/debug_snapshots/german_stopshift_baseline_2025-11-18.txt`. This is the reference log before touching the `GermanStar*` macros.
+- Noted explicitly that `durą` must be used for tracing/apply-down operations (while `dɔr` stays the analyzer control) so the `pgrmWord` inventory always recognizes every segment.
+
+### Checkpoint 1 — proto-backed front/back sets
+
+- Replaced the literal `GermanStarFrontVowel/GermanStarBackVowel` lists with intersections against the proto-derived `GermanStarVowel` output (`server/fsts/germanic.txt`). The helper inventories now define just the front/back subsets, preventing drift if the proto alphabet changes.
+- Recompiled the cascade via `docker compose exec backend bash -lc "cd /usr/app && foma -f fsts/germanic.txt"`; compilation succeeded and rebuilt english/dutch/german binaries.
+- Spot-checked `GermanStarFrontVowel/GermanStarBackVowel` via `foma` (regex/apply) and re-ran the tracer for `GermanAfterConsonant` only. Outputs for `laukaz/milkiz/braudą/durą` remain identical to the baseline (`*l*au*k*a*z` etc.), so the checkpoint can be considered complete.
+
+### Checkpoint 2 — diphthong alignment
+
+- Introduced `GermanExtraDiphthong` (currently `{*ei}` from `GermanAiShift`) and rewired `GermanStarDiphthong` to reuse `pgrmDiphthong.r` plus that extra inventory. This mirrors the proto definition while keeping room for derived diphthongs.
+- Recompiled (`docker compose exec backend ... foma -f fsts/germanic.txt`) and sanity-checked by running small `foma` probes plus tracer dumps for `GermanAfterConsonant`/`GermanAfterStopShift`. The ach-Laut forms still show the baseline `*l*au*k*a*z`, so no behavioural change yet.
+
+### Checkpoint 3 — temporary `{K}` instrumentation (failed)
+
+- Patched `GermanStopShift` so both single-`{*k}` rules output `{K}` instead of `{*x}`; recompiled and ran the tracer restricted to `GermanAfterStopShift`. The ach-Laut probes (`laukaz/milkiz`) still surfaced as `*l*au*k*a*z`, so the contexts are *still* not triggering even with the proto-aligned inventories.
+- Reverted the instrumentation immediately (restored `{*k}->{*x}`) so we don't leave the rule in a limbo state. Need a deeper audit of `GermanStarConsonant` / the contexts next session.
+
+### Why the stop-shift contexts are empty
+
+- Direct `foma` checks show `GermanStopShift` does nothing even on a toy input (`regex GermanStopShift; apply down {*l}{*au}{*k}{*a}{*z}`), confirming the left/right contexts never match.
+- `regex GermanStarVowel; apply down {*a}` fails and `random-words` prints relations like `[1] 0:yy:*`, which means the `.r`-based definitions are still two-tape relations, not single-tape languages. Intersecting them with literal inventories (`GermanFrontVowelInventory`, etc.) collapses the set, so nothing ever matches `{*au}`.
+- Burmish never made this change: all of its `{*…}` classes are literal unions, so rules like `*k -> *x` see the expected tokens. We need to follow that model—either generate the literal unions from `pgrm*` via a helper script, or declare multichar symbols up front—because the `.r` projections cannot act as regex contexts.
+
+### GermanStar* regeneration
+
+- Added `server/tools/generate_german_star_sets.py`; it parses the `pgrm*` macros and emits literal unions for `GermanStarVowel/Diphthong/Consonant` plus the front/back subsets (mirroring Burmish). Ran `python3 server/tools/generate_german_star_sets.py --output /tmp/german_star_defs.txt` and pasted the output into `server/fsts/germanic.txt` so every star set is now a single-tape brace list again (`{*a}`, `{*ai}`, `{*b}`, …).
+- Recompiled via `docker compose exec backend bash -lc "cd /usr/app && foma -f fsts/germanic.txt"` and sanity-checked with `regex GermanStarVowel; random-words 5` / `regex GermanStarConsonant; random-words 5`. Outputs now show plain `{*…}` tokens instead of the previous `0:yy` relations, confirming the contexts are real languages again.
+- Reran the stage tracer for `GermanAfterConsonant` and `GermanAfterStopShift` (with `--normalize-plain`), but the ach-Laut probes still emerge as `*l*au*k*a*z`. So the literal sets were necessary but not sufficient—the `{*k}` contexts still don’t fire even though the inventories now match. Next step is to instrument `GermanStopShift` again or log the immediate environments to see what’s still mismatched.
+
+## 2025-11-01
+
+### Germanic tracing primer
+
+- Added `server/tools/trace_german_stages.py`; run it inside the backend container to snapshot any lexeme across the Proto→surface cascade (e.g. `python3 tools/trace_german_stages.py --brace-diphthongs --lexeme laukaz --lexeme milkiz`).
+- Current probes (`laukaz/milkiz`) still fail at `GermanProtoInput`; stage outputs show `+?`, so nothing reaches `GermanStopShift` yet. The gate is expecting fully starred multi-character tokens (`{*l}{*au}{*k}{*a}{*z}`), not plain letters.
+- Known-good items do pass: `printf 'dɔr\n' | flookup german.bin` returns the expected proto candidates (`durą`, `dąur`, …). Keep using `dɔr` as the analyzer control, but when tracing stages or applying `apply down`, switch to the proto form (`durą`) so every segment lives in the `pgrmWord` alphabet.
+- Next: derive the exact brace/star inventory that `pgrmWord` emits (consider extending the tracer to wrap plain IPA automatically), then re-run the stage logger on `laukaz` to catch where `{*k}` should become `{*x}`.
+
+### GermanStopShift audit (2025-11-17 PM)
+
+- Stage logging inside the backend container shows `GermanAfterConsonant` and `GermanAfterStopShift` both output `*l*au*k*a*z` / `*m*i*l*k*i*z` for the ach-Laut probes, while controls like `knewą/braudą/blōdą` already lack a `{*k}`. Command used:
+
+  ```bash
+  docker compose exec backend bash -lc '\
+    cd /usr/app && foma <<"FST"\n\
+    source fsts/germanic.txt\n\
+    regex GermanAfterConsonant;\n\
+    apply down laukaz\n\
+    apply down milkiz\n\
+    apply down knewą\n\
+    apply down braudą\n\
+    apply down blōdą\n\
+    apply down durą\n\
+    regex GermanAfterStopShift;\n\
+    apply down laukaz\n\
+    apply down milkiz\n\
+    apply down knewą\n\
+    apply down braudą\n\
+    apply down blōdą\n\
+    apply down durą\n\
+    quit\n\
+  FST'
+  ```
+
+- Conclusion: `GermanStopShift` is the first stage where the ach-Laut verbs stall; the “brace vs. no brace” debate was a red herring.
+- The real mismatch is inventory drift: `GermanStarVowel`, `GermanStarDiphthong`, `GermanStarConsonant`, etc. still list hard-coded `{*…}` tokens and no longer reflect what `pgrmWord` emits (`*l*au*k*a*z`). When we tried to derive those macros directly from `pgrmShortVowel.r` / `pgrmDiphthong.r`, the downstream automata collapsed, so the refactor needs to be incremental.
+- Next session must rebuild the `GermanStar*` sets from the proto macros (mirroring Burmish) and re-run the stage trace + analyzer probes to confirm `{*k}→{*x}` at `GermanStopShift`. Instrumenting the rule to emit `{K}` temporarily should make it easy to see when the contexts match.
+
+### Tiny refactors (2025-11-17 — late)
+
+- Rewired `GermanStarVowel` to reuse the proto projections (`pgrmShortVowel.r | pgrmLongVowel.r | pgrmNasalVowel.r | GermanExtraVowel`). Recompiled via `docker compose exec backend ... foma -f fsts/germanic.txt` and sanity-checked with `regex GermanStarVowel; apply down a/e/ā/ą` — outputs now show the expected `a*`, `e*`, etc. No downstream automata collapsed, so the next incremental step is to replace `GermanStarDiphthong` with `pgrmDiphthong.r` before touching the front/back subsets.
+- Attempted to replace `GermanStarDiphthong` with `pgrmDiphthong.r`, but `regex GermanStarDiphthong; apply down ai` returned `???` (Foma expects the literal `{*ai}` output tokens from the original definition). Reverted to the explicit `[ {*ai} | {*au} | {*eu} | {*iu} | {*ei} ]` for now; we’ll revisit once we figure out a clean way to project the brace symbols without collapsing the contexts.
+
+### Diphthong tokenization note
+
+- `pgrmDiphthong` currently maps `{ai} → {*ai}`, `{au} → {*au}`, etc., so the input alphabet includes literal braces. When we tried to consume that via `pgrmDiphthong.r`, `apply down ai` failed because Foma still expects the literal `{ai}` token. Likewise, wrapping `ai` in braces at the CLI (`apply down {ai}`) also fails—the config isn’t using the Burmish-style multichar symbol declarations.
+- A clean refactor will probably look like Burmish: declare the multichar symbols up front (so `{ai}` becomes an atomic symbol), normalize the proto lexicon to emit those tokens, then replace the `GermanStar*` macros with `.r` projections. Until that groundwork is in place, the hard-coded `[ {*ai} | … ]` list needs to stay, or the contexts lose sight of the diphthongs.
+
 # Daily Hand-off Notes
 
 Add a new dated section (reverse chronological) each time you pause work.

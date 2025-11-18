@@ -532,8 +532,8 @@ define GermanFinalDevoicing [
 ### k-spirantisation and shielding
 define GermanStopShift [
     {*k} {*k} -> K,
-    {*k} -> {*x} || GermanStarBackVowel _ (GermanStarConsonant | .#.),
-    {*k} -> {*x} || GermanStarVocalic _ GermanStarVocalic
+    {*k} -> {*x} || (?* GermanStarBackVowel) _ ((GermanStarConsonant ?*) | .#.),
+    {*k} -> {*x} || (?* GermanStarVocalic) _ (GermanStarVocalic ?*)
 ];
 
 define GermanXPalatalization [
@@ -546,28 +546,100 @@ define GermanExtraVowel [
 ];
 
 define GermanStarVowel [
-    {*a} | {*ā} | {*ą} | {*e} | {*ē} | {*i} | {*ī} | {*o} | {*ō} | {*u} | {*ū} | {*y} |
-    GermanExtraVowel
+    {*a} |
+    {*e} |
+    {*i} |
+    {*o} |
+    {*u} |
+    {*y} |
+    {*æ} |
+    {*ø} |
+    {*ā} |
+    {*ą} |
+    {*ē} |
+    {*ę} |
+    {*ī} |
+    {*ō} |
+    {*œ} |
+    {*ū} |
+    {*ɑ} |
+    {*ɔ} |
+    {*ə} |
+    {*ɛ} |
+    {*ɜ} |
+    {*ʉ} |
+    {*ʊ}
 ];
 
-define GermanStarDiphthong [ {*ai} | {*au} | {*eu} | {*iu} | {*ei} ];
-
-define GermanStarVocalic [GermanStarVowel | GermanStarDiphthong];
-
-define GermanStarFrontVowel [
-    {*i} | {*ī} | {*e} | {*ē} | {*æ} | {*ɛ} | {*ø} | {*œ} | {*y} | {*ʉ}
+define GermanStarDiphthong [
+    {*ai} |
+    {*au} |
+    {*ei} |
+    {*eu} |
+    {*iu}
 ];
 
-define GermanStarFrontTrigger [GermanStarFrontVowel | {*ai} | {*ei} | {*eu} | {*iu}];
-
-define GermanStarBackVowel [
-    {*a} | {*ā} | {*ɑ} | {*o} | {*ō} | {*u} | {*ū} | {*ɔ} | {*ʊ}
+define GermanStarVocalic [
+    GermanStarVowel |
+    GermanStarDiphthong
 ];
 
 define GermanStarConsonant [
-    {*b} | {*d} | {*f} | {*g} | {*ɡ} | {*h} | {*j} | {*k} | {*l} | {*m} | {*n} |
-    {*p} | {*r} | {*s} | {*t} | {*v} | {*w} | {*x} | {*z} | {*ð} | {*ŋ} |
-    {*ɣ} | {*ɪ} | {*ʃ} | {*ʋ} | {*ʌ} | {*ʤ} | {*ʧ} | {*θ} | {*þ} | {*ç} | {*ts}
+    {*b} |
+    {*d} |
+    {*f} |
+    {*g} |
+    {*h} |
+    {*j} |
+    {*k} |
+    {*l} |
+    {*m} |
+    {*n} |
+    {*p} |
+    {*r} |
+    {*s} |
+    {*t} |
+    {*w} |
+    {*x} |
+    {*z} |
+    {*ð} |
+    {*þ} |
+    {*ŋ} |
+    {*ɣ} |
+    {*θ}
+];
+
+define GermanStarFrontVowel [
+    {*e} |
+    {*i} |
+    {*y} |
+    {*æ} |
+    {*ø} |
+    {*ē} |
+    {*ī} |
+    {*œ} |
+    {*ɛ} |
+    {*ʉ}
+];
+
+define GermanStarBackVowel [
+    {*a} |
+    {*o} |
+    {*u} |
+    {*ā} |
+    {*ō} |
+    {*ū} |
+    {*ɑ} |
+    {*ɔ} |
+    {*ʊ}
+];
+
+define GermanStarFrontTrigger [
+    GermanStarFrontVowel |
+    {*ai} |
+    {*ei} |
+    {*eu} |
+    {*iu}
 ];
 
 define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];

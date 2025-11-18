@@ -1,3 +1,13 @@
+### Tracing status (2025-11-01)
+
+- Tracer script (`server/tools/trace_german_stages.py`) now composes every German stage into /tmp binaries and prints stage outputs for any lexeme. Use `--brace-diphthongs` to wrap {ai/au/eu/iu} automatically when working with plain IPA inputs.
+- `laukaz`/`milkiz` still die at `GermanProtoInput` ⇒ proto gate wants fully starred tokens (`{*l}{*au}{*k}{*a}{*z}`), so the spirantisation rules never fire.
+- `dɔr` continues to analyze successfully (`durą` etc.); when tracing stages/downstream automata swap in the proto control (`durą`) before comparing token shapes with the failing verbs.
+- Next pass: extract/confirm the brace-star inventory from `pgrmWord`, adapt input normalisation so we can feed `laukaz` in that format, and re-run the stage logger to observe where `{*k}` should shift to `{*x}`.
+
+**New insight (2025-11-17):** Stage logs show `GermanStopShift` is the first failing stage for ach-Laut verbs. The rule still uses hand-written `{*…}` inventories, so the contexts never match the `*l*au*k*a*z` strings that `pgrmWord` emits. Fixing this means re-deriving `GermanStarVowel/Diphthong/Consonant` (and the front/back subsets) directly from the proto macros, then rerunning the stage traces and analyzer probes.
+
+
 # Germanic Transducer Status — October 2025
 
 This document tracks the Proto-Germanic ⇄ English/Dutch/German FST work. For
