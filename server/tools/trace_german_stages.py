@@ -70,7 +70,7 @@ def run_foma(script: str, *, cwd: Path) -> subprocess.CompletedProcess:
     """Execute a small Foma program."""
 
     return subprocess.run(
-        ["foma"],
+        ["foma", "-q"],
         input=script.encode("utf-8"),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -105,6 +105,31 @@ def flookup(stage_bin: Path, lexemes: Iterable[str], *, cwd: Path) -> List[str]:
         sys.stderr.buffer.write(proc.stderr)
     # ``flookup`` echoes "<input>\t<output>" per line, blank line between items.
     return proc.stdout.decode("utf-8").strip().splitlines()
+
+
+def foma_apply_down(stage: str, lexemes: Iterable[str], *, cwd: Path) -> List[str]:
+    lines: List[str] = [
+        "set verbose-type none;",
+        "source fsts/germanic.txt",
+        f"regex {stage};",
+    ]
+    for lexeme in lexemes:
+        lines.append(f"apply down {lexeme}")
+    lines.append("quit")
+    result = run_foma("\n".join(lines), cwd=cwd)
+    outputs = []
+    for raw in result.stdout.decode("utf-8").splitlines():
+        raw = raw.strip()
+        if not raw:
+            continue
+        if raw.startswith("Foma,") or raw.startswith("Copyright"):
+            continue
+        if raw.startswith("This is free") or raw.startswith("Type \"help"):
+            continue
+        if raw.startswith("foma[") or raw.startswith("regex"):
+            continue
+        outputs.append(raw)
+    return outputs
 
 
 def maybe_brace(lexeme: str) -> str:
@@ -207,6 +232,11 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
         help="Stage to include (may be repeated). Defaults to the full cascade.",
     )
     parser.add_argument(
+        "--apply-down",
+        action="store_true",
+        help="Use foma apply down instead of flookup so we see stage outputs even when the transducer rejects.",
+    )
+    parser.add_argument(
         "--brace-diphthongs",
         action="store_true",
         help="Wrap ai/au/eu/iu in braces before tracing (useful for plain inputs).",
@@ -261,7 +291,10 @@ def main(argv: Iterable[str]) -> int:
                 print(f"[warn] stage {stage} missing binary", file=sys.stderr)
                 continue
             print(f"== {stage} ==")
-            outputs = flookup(bin_path, lexemes, cwd=workdir)
+            if args.apply_down:
+                outputs = foma_apply_down(stage, lexemes, cwd=workdir)
+            else:
+                outputs = flookup(bin_path, lexemes, cwd=workdir)
             if not outputs:
                 print("  (no output)\n")
                 continue
