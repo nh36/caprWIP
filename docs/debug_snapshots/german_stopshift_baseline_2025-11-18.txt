@@ -1,0 +1,108 @@
+== GermanProtoInput ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterEw ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterLongV ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterAu ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterNasal ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterConsonant ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterStopShift ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterPalatal ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterAzLoss ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterApocope ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterVowelAdj ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterFinalDevoice ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterCleanup ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterOrthography ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanAfterStarDrop ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanPreSurface ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== GermanReflexes ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+
+== German ==
+  {*l}{*au}{*k}{*a}{*z}	+?
+  {*m}{*i}{*l}{*k}{*i}{*z}	+?
+  {*b}{*r}{*au}{*d}{*ą}	+?
+  {*d}{*u}{*r}{*ą}	+?
+

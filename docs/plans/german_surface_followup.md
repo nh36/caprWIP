@@ -1,3 +1,12 @@
+### 2025-11-01 — German tracing note
+
+- Set up `tools/trace_german_stages.py` so we can trace lexemes through each German stage inside the container; add `--brace-diphthongs` for plain IPA probes.
+- Observed that `laukaz/milkiz` still fail right at `GermanProtoInput`, implying the gate expects Burmish-style brace/star tokens (e.g. `{*l}{*au}{*k}{*a}{*z}`). Need to map inputs into that alphabet before checking spirantisation.
+- Working examples (e.g. `dɔr`) still analyze successfully. Keep using `dɔr` on the analyzer side, but feed the proto form (`durą`) into any staged traces once the proto gate inputs are fixed.
+
+**Update (2025-11-17):** Stage logging pinpoints `GermanStopShift` as the ach-Laut blocker. The gate already emits `*l*au*k*a*z`; the problem is that `GermanStarVowel/Diphthong/Consonant` list stale `{*…}` tokens, so the stop-shift context never matches. Next pass should rebuild those inventories from the proto macros (mirroring Burmish), instrument `GermanStopShift` to prove the contexts fire, and rerun the six-word trace plus the analyzer probes (`laux/knɛxt/mɪlx` + controls).
+
+
 # German Surface Follow-up Plan (next window)
 
 ## Goal
@@ -9,6 +18,9 @@ surface layer to HFST.
 
 0. **Unblock proto input first**
    - Confirm `GermanProtoInput` now accepts `*laukaz`/`*milkiz`; walk the staged FSTs to ensure `GermanAfterEw` actually emits the starred strings before continuing with surface tweaks.
+   - Re-derive `GermanStarVowel/Diphthong/Consonant` from `pgrmShortVowel.r`, `pgrmLongVowel.r`, `pgrmDiphthong.r`, etc., verifying each via `foma` before wiring them into `GermanStopShift`.
+     - (For diphthongs, we first need to decide whether to declare real multichar symbols—as Burmish does—or to normalize the proto inputs so `{ai}` tokens actually reach `pgrmDiphthong`. Until then, keep the explicit `[ {*ai} | ... ]` list.)
+   - Temporarily rewrite `{*k}`→`{K}` at `GermanStopShift`, rerun the six-lexeme stage trace to confirm the contexts match, then switch back to `{*x}` and rerun the analyzer (`printf 'laux…' | flookup german.bin`).
 1. **Reintroduce staged saves (temporarily)**
    - Edit `server/fsts/germanic.txt` to re-add the instrumentation block:
      - Definitions: `GermanAfterEw`, `GermanAfterAu`, `GermanAfterLongV`,
