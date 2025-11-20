@@ -31,6 +31,7 @@ import re
 import subprocess
 import sys
 import tempfile
+from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
@@ -59,11 +60,19 @@ DEFAULT_STAGES: List[str] = [
 
 
 DEFAULT_LEXEMES: List[str] = ["laukaz", "milkiz"]
+PLAIN_STAGE_NAMES = {"German", "GermanProtoInput", "GermanReflexes"}
+PLAIN_STAGE_PREFIXES = ("GermanAfter",)
 
 
 DIPHTHONGS = ("ai", "au", "eu", "iu")
 PROTO_SOURCE_CANDIDATES = ("fsts/germanic.txt", "server/fsts/germanic.txt")
 TOKEN_PATTERN = re.compile(r"(?P<src>\{[^}]+\}|[^{}\s|]+):\{\*(?P<dst>[^}]+)\}")
+
+
+@dataclass(frozen=True)
+class LexemeForms:
+    plain: str
+    braced: str
 
 
 def run_foma(script: str, *, cwd: Path) -> subprocess.CompletedProcess:
@@ -80,7 +89,7 @@ def run_foma(script: str, *, cwd: Path) -> subprocess.CompletedProcess:
 
 
 def compile_stage_binaries(stages: Iterable[str], tmpdir: Path, *, cwd: Path) -> None:
-    lines = ["set verbose-type none;", "source fsts/germanic.txt"]
+    lines = ["source fsts/germanic.txt"]
     for stage in stages:
         target = tmpdir / f"{stage.lower()}.bin"
         lines.append(f"regex {stage};")
@@ -109,7 +118,6 @@ def flookup(stage_bin: Path, lexemes: Iterable[str], *, cwd: Path) -> List[str]:
 
 def foma_apply_down(stage: str, lexemes: Iterable[str], *, cwd: Path) -> List[str]:
     lines: List[str] = [
-        "set verbose-type none;",
         "source fsts/germanic.txt",
         f"regex {stage};",
     ]
@@ -255,7 +263,7 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
     return parser.parse_args(list(argv))
 
 
-def collect_lexemes(args: argparse.Namespace, *, workdir: Path) -> List[str]:
+def collect_lexemes(args: argparse.Namespace, *, workdir: Path) -> List[LexemeForms]:
     lexemes: List[str] = []
     if args.lexemes:
         lexemes.extend(args.lexemes)
@@ -265,12 +273,26 @@ def collect_lexemes(args: argparse.Namespace, *, workdir: Path) -> List[str]:
         )
     if not lexemes:
         lexemes.extend(DEFAULT_LEXEMES)
-    if args.brace_diphthongs:
-        lexemes = [maybe_brace(lex) for lex in lexemes]
+    mapping = key_order = None
     if args.normalize_plain:
         mapping, key_order = load_proto_inventory(workdir)
-        lexemes = [normalize_plain_lexeme(lex, mapping, key_order) for lex in lexemes]
-    return lexemes
+
+    forms: List[LexemeForms] = []
+    for lex in lexemes:
+        plain = lex
+        braced = lex
+        if args.brace_diphthongs:
+            braced = maybe_brace(braced)
+        if args.normalize_plain:
+            braced = normalize_plain_lexeme(braced, mapping, key_order)
+        forms.append(LexemeForms(plain=plain, braced=braced))
+    return forms
+
+
+def stage_expects_plain(stage: str) -> bool:
+    if stage in PLAIN_STAGE_NAMES:
+        return True
+    return any(stage.startswith(prefix) for prefix in PLAIN_STAGE_PREFIXES)
 
 
 def main(argv: Iterable[str]) -> int:
@@ -291,10 +313,13 @@ def main(argv: Iterable[str]) -> int:
                 print(f"[warn] stage {stage} missing binary", file=sys.stderr)
                 continue
             print(f"== {stage} ==")
+            stage_inputs = [
+                entry.plain if stage_expects_plain(stage) else entry.braced for entry in lexemes
+            ]
             if args.apply_down:
-                outputs = foma_apply_down(stage, lexemes, cwd=workdir)
+                outputs = foma_apply_down(stage, stage_inputs, cwd=workdir)
             else:
-                outputs = flookup(bin_path, lexemes, cwd=workdir)
+                outputs = flookup(bin_path, stage_inputs, cwd=workdir)
             if not outputs:
                 print("  (no output)\n")
                 continue
