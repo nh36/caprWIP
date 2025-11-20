@@ -276,10 +276,44 @@ define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
 
 define pgrmWeakTail [
     0 |
-    pgrmWeakOralSyllable |
-    pgrmWeakNasalSyllable |
-    pgrmWeakOralSyllable pgrmWeakOralSyllable |
-    pgrmWeakOralSyllable pgrmWeakNasalSyllable
+    a:{*a} |
+    a:{*a} g:{*g} ą:{*ą} |
+    a:{*a} l:{*l} ō:{*ō} |
+    a:{*a} n:{*n} |
+    a:{*a} n:{*n} ą:{*ą} |
+    a:{*a} n:{*n} ē:{*ē} |
+    a:{*a} r:{*r} a:{*a} z:{*z} |
+    a:{*a} z:{*z} |
+    e:{*e} n:{*n} a:{*a} z:{*z} |
+    e:{*e} r:{*r} |
+    e:{*e} r:{*r} a:{*a} z:{*z} |
+    e:{*e} z:{*z} |
+    i:{*i} l:{*l} a:{*a} z:{*z} |
+    i:{*i} l:{*l} ō:{*ō} |
+    i:{*i} l:{*l} ō:{*ō} n:{*n} |
+    i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
+    i:{*i} z:{*z} |
+    o:{*o} |
+    o:{*o} n:{*n} |
+    u:{*u} |
+    u:{*u} d:{*d} ą:{*ą} |
+    u:{*u} k:{*k} a:{*a} z:{*z} |
+    u:{*u} k:{*k} z:{*z} |
+    u:{*u} n:{*n} |
+    u:{*u} n:{*n} d:{*d} ī:{*ī} |
+    u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
+    u:{*u} w:{*w} ō:{*ō} n:{*n} |
+    u:{*u} z:{*z} |
+    ą:{*ą} |
+    ē:{*ē} n:{*n} ą:{*ą} |
+    ē:{*ē} r:{*r} |
+    ī:{*ī} n:{*n} |
+    ō:{*ō} |
+    ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
+    ō:{*ō} n:{*n} |
+    ō:{*ō} n:{*n} d:{*d} z:{*z} |
+    ō:{*ō} r:{*r} e:{*e} z:{*z} |
+    ō:{*ō} θ:{*θ} z:{*z}
 ];
 
 define pgrmWord [
