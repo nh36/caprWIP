@@ -24,7 +24,7 @@
 ### Why the stop-shift contexts are empty
 
 - Direct `foma` checks show `GermanStopShift` does nothing even on a toy input (`regex GermanStopShift; apply down {*l}{*au}{*k}{*a}{*z}`), confirming the left/right contexts never match.
-- `regex GermanStarVowel; apply down {*a}` fails and `random-words` prints relations like `[1] 0:yy:*`, which means the `.r`-based definitions are still two-tape relations, not single-tape languages. Intersecting them with literal inventories (`GermanFrontVowelInventory`, etc.) collapses the set, so nothing ever matches `{*au}`.
+- Initial probes (`regex GermanStarVowel; apply down {*a}` plus `random-words`) showed the `.r`-based definitions were still two-tape relations, not single-tape languages, so intersecting them with literal inventories (`GermanFrontVowelInventory`, etc.) collapsed the set and nothing ever matched `{*au}`. This is now fixed by regenerating the literal brace unions (see the next section), so `random-words` emits real `{*…}` tokens again.
 - Burmish never made this change: all of its `{*…}` classes are literal unions, so rules like `*k -> *x` see the expected tokens. We need to follow that model—either generate the literal unions from `pgrm*` via a helper script, or declare multichar symbols up front—because the `.r` projections cannot act as regex contexts.
 
 ### GermanStar* regeneration
@@ -36,6 +36,27 @@
 ### Tracer tweaks (still WIP)
 
 - Extended `server/tools/trace_german_stages.py` with `--apply-down`, which shells out to Foma and runs `regex <stage>; apply down …` for each checkpoint. Current limitation: using the raw `*l*au*…` probes still yields `???`, so we need to figure out the exact tokens each stage expects before this mode can replace the old `flookup` path. Keeping the flag so future sessions can iterate without reworking the script.
+- 2025-11-20 follow-up: confirmed the failure was on our side rather than the FST. `GermanAfterStopShift` happily outputs `*l*au*x*a*z` when fed plain `laukaz`; the tracer was feeding brace tokens straight into stages that already include `GermanProtoInput`. The helper now tracks both the plain and brace-normalised forms per lexeme, chooses the right flavour per stage (`GermanProtoInput`/`GermanAfter*`/`GermanReflexes` expect plain, raw rules expect braces), and drops the bogus `set verbose-type none` command so `--apply-down` stops printing errors.
+
+### Ach-Laut analyzer gate (2025-11-20)
+
+- Manual stage probes show `GermanAfterStopShift` already produces `*l*au*x*a*z` / `*m*i*l*x*i*z`, so the missing analyzer hits stemmed from `GermanOrthography` rewriting `{*x}` → `h`. Only `lauh/knɛht/mɪlh` had proto traces, whereas the IPA probes (`laux/knɛxt/mɪlx`) still landed on `+?`.
+- Changed `GermanOrthography` to emit the literal IPA `x` instead of forcing `{h}`. Recompiled via `docker compose exec backend bash -lc "cd /usr/app && foma -f fsts/germanic.txt"`, then reran `printf 'laux\nknɛxt\nmɪlx\n' | flookup german.bin`—each now dumps the normal proto bundle instead of `+?`.
+- Re-ran `python3 tools/trace_german_stages.py --apply-down --lexeme laukaz --lexeme milkiz` inside the backend container to capture a clean trace where the ach-Laut probes visibly pick up `{*x}` after the stop shift, matching the manual Foma spot checks.
+
+### `kniː` / `knɛxt` regression (2025-11-20)
+
+- Analyzer probes for `kniː/knɛxt` still returned `+?` even after the surface inventory fix. Stage traces (`python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme knewą`) showed the culprit: `GermanStopShift` was spirantising the initial `{*k}` in `*knewą`, so `GermanReflexes` produced `xniː` and the analyzer never saw the expected `k`-initial forms.
+- Root cause was the permissive `(?* GermanStarBackVowel)` / `(?* GermanStarVocalic)` contexts inside `GermanStopShift`, which happily over-applied at the left edge. Added a guard transducer so the final composite becomes `GermanStopShift = GermanStopShiftCore .o. GermanInitialKFix`, where `GermanInitialKFix` rewrites `{*x}` back to `{*k}` at word onset.
+- Recompiled (`docker compose exec backend bash -lc "cd /usr/app && foma -f fsts/germanic.txt"`), then re-ran `python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme knewą` to confirm the stage now stays `*k*n*ī` across the stop-shift boundary.
+- Analyzer sanity check: `docker compose exec backend sh -lc "cd /usr/app && printf 'kniː\nknɛxt\n' | flookup german.bin"` now enumerates the expected proto bundle (`knewą/kniwą/...`, `knext`, etc.). Also re-ran `python3 server/tools/api_regression.py` ⇒ PASS for Burmish & Germanic.
+
+### Stop-shift contexts (2025-11-20)
+
+- Removed the temporary `GermanInitialKFix` shim in favour of explicit contexts: defined front/back vowel trigger sets, allowed an optional `{*l}/{*r}` immediately before `{*k}`, and constrained the right-hand side to either true codas (`GermanStarConsonant ?*` / boundary) or the theme vowels that disappear later (`{*a}/{*ą}/{*i}` plus `{*z}/{*n}` mirrors, `{*ō}`, `{*ē}`). This matches the historical ach-/ich-Laut environments without touching initial clusters or `sk-` sequences.
+- `server/fsts/germanic.txt:533` now contains the helper sets plus the four targeted `{*k}->{*x}` rules; the old `(?* ...)` expressions are gone.
+- Spot checks: `python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme laukaz --lexeme milkiz` confirm the expected `{*x}` appears only after the rule. `knewą` no longer receives a stray `[x]` at the beginning.
+- Analyzer (`printf 'kniː\nknɛxt\nlaux\nmɪlx\n' | flookup german.bin`) and `python3 server/tools/api_regression.py` both PASS after the change.
 
 ## 2025-11-01
 

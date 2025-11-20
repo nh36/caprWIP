@@ -530,10 +530,30 @@ define GermanFinalDevoicing [
 ];
 
 ### k-spirantisation and shielding
+define GermanStopShiftBackVowel [{*a} | {*ā} | {*ą} | {*o} | {*ō} | {*u} | {*ū} | {*au}];
+define GermanStopShiftFrontVowel [{*e} | {*ē} | {*ę} | {*i} | {*ī} | {*y} | {*ai} | {*ei} | {*iu} | {*eu}];
+define GermanStopShiftLiquid [{*l} | {*r}];
+define GermanStopShiftBackLeft [
+    GermanStopShiftBackVowel |
+    GermanStopShiftBackVowel GermanStopShiftLiquid
+];
+define GermanStopShiftFrontLeft [
+    GermanStopShiftFrontVowel |
+    GermanStopShiftFrontVowel GermanStopShiftLiquid
+];
+define GermanStopShiftSuffix [
+    ({*a} | {*ą} | {*i}) ({*z} | {*n} | 0) |
+    {*ō} ({*j} | 0) |
+    {*ē} ({*n} | 0)
+];
+define GermanStopShiftCodaRight [(GermanStarConsonant ?*) | .#.];
+
 define GermanStopShift [
     {*k} {*k} -> K,
-    {*k} -> {*x} || (?* GermanStarBackVowel) _ ((GermanStarConsonant ?*) | .#.),
-    {*k} -> {*x} || (?* GermanStarVocalic) _ (GermanStarVocalic ?*)
+    {*k} -> {*x} || GermanStopShiftBackLeft _ GermanStopShiftCodaRight,
+    {*k} -> {*x} || GermanStopShiftFrontLeft _ GermanStopShiftCodaRight,
+    {*k} -> {*x} || GermanStopShiftBackLeft _ GermanStopShiftSuffix,
+    {*k} -> {*x} || GermanStopShiftFrontLeft _ GermanStopShiftSuffix
 ];
 
 define GermanXPalatalization [
@@ -762,7 +782,7 @@ define GermanCleanup [
 ];
 
 define GermanOrthography [
-    {*x} -> {h}
+    {*x} -> x
 ];
 
 define GermanLengthOrthography [
