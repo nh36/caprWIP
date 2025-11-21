@@ -1,3 +1,9 @@
+### Tracing status (2025-11-21 update)
+
+- Re-ran the tracer from inside the backend container (`python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme laukaz --lexeme milkiz`). `GermanAfterStopShift` now emits `{*x}` for both probes while `GermanAfterConsonant` still shows `{*k}`, confirming the spirantisation block is live again.
+- Analyzer spot-check (`printf 'laux\\nknɛxt\\nmɪlx\\n' | flookup german.bin`) now returns full proto bundles for all three surface forms; the previous `+?` results are gone.
+- Keep the tracer script handy when touching stop-shift contexts—the paired stage dump makes it obvious if `{*k}` stops converting to `{*x}`.
+
 ### Tracing status (2025-11-01)
 
 - Tracer script (`server/tools/trace_german_stages.py`) now composes every German stage into /tmp binaries and prints stage outputs for any lexeme. Use `--brace-diphthongs` to wrap {ai/au/eu/iu} automatically when working with plain IPA inputs.

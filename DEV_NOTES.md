@@ -1,3 +1,15 @@
+## 2025-11-21
+
+### Ach-Laut verification
+
+- Ran the tracer inside the backend container (`python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme laukaz --lexeme milkiz`). `GermanAfterStopShift` now clearly outputs `{*x}` for both probes while `GermanAfterConsonant` still shows the pre-shift `{*k}`, proving the rule fires in isolation again.
+- Followed up with analyzer checks (`printf 'laux\nknɛxt\nmɪlx\n' | flookup german.bin`) to ensure the surface words resolve to proto bundles. All three forms now return full reconstruction sets instead of `+?`, so the ach-Laut regression is officially closed.
+
+### Notes / next focus
+
+- Keep the tracer command handy for future regressions; it now provides a clean before/after snapshot for German stop-shift stages.
+- With spirantisation unblocked, move back to the `{braudą}` long-vowel contexts plus any residual `{au}` environments that still collapse at `GermanLongVowelRules`.
+
 ## 2025-11-18
 
 ### Checkpoint 0 — baseline capture
