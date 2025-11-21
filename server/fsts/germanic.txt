@@ -122,7 +122,10 @@ define pgrmOnsetCore [
     r:{*r} p:{*p} |
     s:{*s} k:{*k} |
     s:{*s} p:{*p} |
-    s:{*s} t:{*t}
+    s:{*s} t:{*t} |
+    s:{*s} k:{*k} r:{*r} |
+    s:{*s} p:{*p} r:{*r} |
+    s:{*s} t:{*t} r:{*r}
 ];
 
 define pgrmOnset [0 | pgrmOnsetCore];
@@ -707,7 +710,7 @@ define GermanEwChain GermanEToIBeforeW
     .o. GermanIuToIi;
 
 ### West Germanic au monophthongisation
-define GermanAuMonophthContext [{*d} | {*ð} | {*t} | {*θ} | {*n}];
+define GermanAuMonophthContext [{*d} | {*ð} | {*t} | {*θ} | {*n} | {*m} | {*x}];
 define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
 
 ### Long vowels
