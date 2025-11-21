@@ -9,6 +9,17 @@
 
 - Keep the tracer command handy for future regressions; it now provides a clean before/after snapshot for German stop-shift stages.
 - With spirantisation unblocked, move back to the `{braudą}` long-vowel contexts plus any residual `{au}` environments that still collapse at `GermanLongVowelRules`.
+- Plan for next session: tighten the proto gate so diphthongs cannot leak through as adjacent short vowels. See the action plan below.
+
+### Upcoming work — enforce single-token diphthongs
+
+The tracer still shows `{braudą}` taking two proto paths: one with a genuine `{*au}` token (which monophthongises) and another where `pgrmWord` parses `a` + `u` separately, yielding the unrealistic `braɔt` branch. To keep `GermanAuMonophth` truly exceptionless, we need to prune that second parse. Proposed steps for the next window:
+
+1. Audit `pgrmWord` via `foma` (`regex pgrmWord; apply down braudą`) and check other diphthongs (`ai/eu/iu`) to confirm the ambiguity applies across the board.
+2. Add a dedicated filter right after `GermanProtoInput` that rejects any adjacent short-vowel pairs matching the diphthong inventory (`{*a}{*u}`, `{*a}{*i}`, `{*e}{*u}`, `{*i}{*u}`, …). This keeps the base proto definitions readable while ensuring the German cascade only sees the multi-character tokens.
+3. Recompile and re-run the tracer/analyzer probes for all diphthong-bearing lexemes (`braudą`, `straumaz`, `flauxz`, `naudiz`, plus `{ai}/{eu}/{iu}` controls) to verify only the `{*ō}` outputs remain.
+4. Rerun `python3 server/tools/api_regression.py` so English/Dutch automata (which share `pgrmWord`) don’t regress.
+5. Document the new filter in this file and `docs/germanic_transducer_report.md` once it’s in place.
 
 ## 2025-11-18
 

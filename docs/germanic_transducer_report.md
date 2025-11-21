@@ -4,6 +4,10 @@
 - Analyzer spot-check (`printf 'laux\\nknɛxt\\nmɪlx\\n' | flookup german.bin`) now returns full proto bundles for all three surface forms; the previous `+?` results are gone.
 - Keep the tracer script handy when touching stop-shift contexts—the paired stage dump makes it obvious if `{*k}` stops converting to `{*x}`.
 
+**Next steps (queued)**
+- The tracer still shows `braudą` and other diphthong stems taking two proto paths: a true `{*au}` token and a separate `{*a}{*u}` parse, which keeps `braɔt` alive even though `GermanAuMonophth` fires. Next session we plan to add a filter immediately after `GermanProtoInput` that rejects adjacent short vowels matching any diphthong sequence (`{*a}{*u}`, `{*a}{*i}`, `{*e}{*u}`, `{*i}{*u}`), ensuring the sound change remains exceptionless.
+- After inserting the filter we’ll re-run the diphthong probes (`braudą`, `straumaz`, `flauxz`, `naudiz`, plus `{ai}/{eu}/{iu}` controls) and the API regression harness before documenting the outcome here.
+
 ### Tracing status (2025-11-01)
 
 - Tracer script (`server/tools/trace_german_stages.py`) now composes every German stage into /tmp binaries and prints stage outputs for any lexeme. Use `--brace-diphthongs` to wrap {ai/au/eu/iu} automatically when working with plain IPA inputs.
