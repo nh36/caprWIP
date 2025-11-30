@@ -50,15 +50,12 @@ currently focuses on the Burmish and Germanic pipelines.
 - Current focus: the brace-first rewrite is complete for the German cascade;
   English and Dutch still emit plain tokens downstream of their sound laws.
 - Next actions:
-  1. Validate the `-anan → -aną` dataset migration (watch for analyzer
-     regressions and brace duplication) and capture any nouns that should stay
-     in the plain `-an` paradigm.
-  2. Refine the proto templates (`ProtoWord`, `pgrmWord`) so final nasal vowels
+  1. Refine the proto templates (`ProtoWord`, `pgrmWord`) so final nasal vowels
      behave cleanly as weak syllables without spawning duplicate outputs.
-  3. Convert the English and Dutch pipelines to the `{*…}` alphabet (sound laws,
+  2. Convert the English and Dutch pipelines to the `{*…}` alphabet (sound laws,
      orthography, and a single star-drop at the end), mirroring the German and
      Burmish placements.
-  4. Rebuild the English/Dutch/German surface filters so they accept brace
+  3. Rebuild the English/Dutch/German surface filters so they accept brace
      tokens and smoke-test the UI to confirm the `{*…}` alphabet flows end-to-end.
   Track detailed progress in `docs/germanic_transducer_report.md`.
 
