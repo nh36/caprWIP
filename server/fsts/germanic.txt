@@ -262,9 +262,16 @@ define pgrmCodaComplex [
     n:{*n} x:{*x} w:{*w} s:{*s} t:{*t}
 ];
 
+define pgrmCodaNonEmpty [pgrmCodaSimple | pgrmCodaComplex];
+
 define pgrmCoda [0 | pgrmCodaSimple | pgrmCodaComplex];
 
-define pgrmStrongPlain pgrmOnset pgrmNucleus pgrmCoda;
+define pgrmStrongPlainLight pgrmOnset pgrmShortVowel 0;
+define pgrmStrongPlainHeavy [
+    pgrmOnset (pgrmLongVowel | pgrmDiphthong) pgrmCoda |
+    pgrmOnset pgrmShortVowel pgrmCodaNonEmpty
+];
+define pgrmStrongPlain [pgrmStrongPlainLight | pgrmStrongPlainHeavy];
 define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
@@ -277,8 +284,8 @@ define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l} | z:{*z}];
 define pgrmWeakOralSyllable pgrmWeakOnset pgrmWeakOralNucleus pgrmWeakCoda;
 define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
 
-define pgrmWeakTail [
-    0 |
+define pgrmWeakTailZero [0];
+define pgrmWeakTailVowel [
     a:{*a} |
     a:{*a} g:{*g} ą:{*ą} |
     a:{*a} l:{*l} ō:{*ō} |
@@ -318,10 +325,13 @@ define pgrmWeakTail [
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
     ō:{*ō} θ:{*θ} z:{*z}
 ];
+define pgrmWeakTail [pgrmWeakTailZero | pgrmWeakTailVowel];
 
 define pgrmWord [
-    pgrmStrongPlain pgrmWeakTail |
-    pgrmStrongNasal pgrmWeakTail
+    pgrmStrongPlainHeavy pgrmWeakTailVowel |
+    pgrmStrongPlain pgrmWeakTailZero |
+    pgrmStrongNasal pgrmWeakTailVowel |
+    pgrmStrongNasal pgrmWeakTailZero
 ];
 
 define RemoveStars {*} -> 0;
