@@ -1,0 +1,102 @@
+source fsts/germanic.txt
+
+# English sandbox: copy of current pipeline for brace migration experiments.
+
+define EnglishSandboxSurfaceVowel [
+    {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
+    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ}
+];
+define EnglishSandboxSurfaceConsonant [
+    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
+    {r} | {s} | {t} | {v} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
+    {ʤ} | {ʧ} | {θ}
+];
+define EnglishSandboxSurfaceOnset [
+    0 |
+    EnglishSandboxSurfaceConsonant |
+    EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant |
+    EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant
+];
+define EnglishSandboxSurfaceCoda [
+    0 |
+    EnglishSandboxSurfaceConsonant |
+    EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant |
+    EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant EnglishSandboxSurfaceConsonant
+];
+define EnglishSandboxSurfaceSyllable EnglishSandboxSurfaceOnset EnglishSandboxSurfaceVowel EnglishSandboxSurfaceCoda;
+define EnglishSandboxSurface EnglishSandboxSurfaceSyllable+;
+
+# Brace-aware helper inventories for the sandbox.
+define EnglishSandboxStarVowel GermanStarVowel;
+
+define EnglishSandboxStarDiphthong GermanStarDiphthong;
+
+define EnglishSandboxStarConsonant GermanStarConsonant;
+
+define EnglishSandboxStarVocalic GermanStarVocalic;
+
+define EnglishSandboxInitialKnMarkers [
+    {*k} {*n} -> {Kn} || .#. _,
+    {*g} {*n} -> {Gn} || .#. _
+];
+
+define EnglishSandboxConsonantRules [
+    {*w} -> {ʋ},
+    {*z} -> {r} || EnglishSandboxStarVocalic _ EnglishSandboxStarVocalic,
+    {*z} -> 0 || _ .#.,
+    {*d} {*j} -> nd
+];
+
+define EnglishSandboxGhMarker [
+    {*x} -> {GH} || EnglishSandboxStarVocalic _ ({*t} | {*d} | .#.)
+];
+
+define EnglishSandboxSilentInitialCleanup [
+    "Kn" -> "n",
+    "Gn" -> "n"
+];
+
+define EnglishSandboxGlideDeletion [
+    {ʋ} -> 0 || EnglishSandboxStarVocalic _ EnglishSandboxStarVocalic
+];
+
+define EnglishSandboxGhDeletion [
+    {GH} -> 0 || EnglishSandboxStarVocalic _ ({*t} | {*d} | .#.)
+];
+
+define EnglishSandboxVowelRules [
+    {*ī} -> {iː},
+    {*ū} -> {uː},
+    {*ē} -> {iː},
+    {*ō} -> {uː},
+    {*ā} -> {ɑː},
+    {*au} -> {oː},
+    {*ai} -> {eɪ},
+    {*ai} -> {aɪ},
+    {*au} -> {aʊ},
+    {*e} -> {ɛ},
+    {*e} -> {ɪ} || _ EnglishSandboxStarConsonant,
+    {*o} -> {ɔ},
+    {*a} -> {ə} || _ .#.,
+    {*a} -> {æ} || _ {*r},
+    {*u} -> {ʌ} || _ (EnglishSandboxStarConsonant | .#.)
+];
+
+define EnglishSandboxOrthography [
+    {*x} -> {h}
+];
+
+define EnglishSandboxReflexes ProtoWord
+    .o. EnglishSandboxInitialKnMarkers
+    .o. EnglishSandboxConsonantRules
+    .o. EnglishSandboxGhMarker
+    .o. EnglishSandboxGlideDeletion
+    .o. EnglishSandboxVowelRules
+    .o. EnglishSandboxSilentInitialCleanup
+    .o. EnglishSandboxGhDeletion
+    .o. EnglishSandboxOrthography;
+define EnglishSandbox EnglishSandboxReflexes .o. EnglishSandboxSurface;
+
+clear stack
+regex EnglishSandbox;
+save stack english_brace_sandbox.bin

@@ -431,20 +431,23 @@ define GermanSurface GermanSurfaceSyllable+;
 # (defined above as `EnglishSurface`)
 
 ### 2. Sound laws
+define EnglishStarVocalic GermanStarVocalic;
+define EnglishStarConsonant GermanStarConsonant;
+
 define EnglishInitialKnMarkers [
-    "kn" -> "Kn" || .#. _,
-    "gn" -> "Gn" || .#. _
+    {*k} {*n} -> {Kn} || .#. _,
+    {*g} {*n} -> {Gn} || .#. _
 ];
 
 define EnglishConsonantRules [
-    w -> {ʋ},
-    z -> {r} || Vowel _ Vowel,
-    z -> 0 || _ .#.,
-    {dj} -> nd
+    {*w} -> {ʋ},
+    {*z} -> {r} || EnglishStarVocalic _ EnglishStarVocalic,
+    {*z} -> 0 || _ .#.,
+    {*d} {*j} -> nd
 ];
 
 define EnglishGhMarker [
-    {x} -> {GH} || Vowel _ ({t} | {d} | .#.)
+    {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
 define EnglishSilentInitialCleanup [
@@ -453,29 +456,29 @@ define EnglishSilentInitialCleanup [
 ];
 
 define EnglishGlideDeletion [
-    {ʋ} -> 0 || Vowel _ Vowel
+    {ʋ} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
 define EnglishGhDeletion [
-    {GH} -> 0 || Vowel _ ({t} | {d} | .#.)
+    {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
 define EnglishVowelRules [
-    ī -> {iː},
-    ū -> {uː},
-    ē -> {iː},
-    ō -> {uː},
-    ā -> {ɑː},
-    {au} -> {oː},
-    {ai} -> {eɪ},
-    {ai} -> {aɪ},
-    {au} -> {aʊ},
-    e -> {ɛ},
-    e -> {ɪ} || _ Cons,
-    o -> {ɔ},
-    a -> {ə} || _ .#.,
-    a -> {æ} || _ r,
-    u -> {ʌ} || _ (Cons | .#.)
+    {*ī} -> {iː},
+    {*ū} -> {uː},
+    {*ē} -> {iː},
+    {*ō} -> {uː},
+    {*ā} -> {ɑː},
+    {*au} -> {oː},
+    {*ai} -> {eɪ},
+    {*ai} -> {aɪ},
+    {*au} -> {aʊ},
+    {*e} -> {ɛ},
+    {*e} -> {ɪ} || _ EnglishStarConsonant,
+    {*o} -> {ɔ},
+    {*a} -> {ə} || _ .#.,
+    {*a} -> {æ} || _ {*r},
+    {*u} -> {ʌ} || _ (EnglishStarConsonant | .#.)
 ];
 
 define EnglishOrthography [
@@ -483,15 +486,20 @@ define EnglishOrthography [
 ];
 
 ### 3. Composition
-define EnglishReflexes ProtoWord
-    .o. EnglishInitialKnMarkers
-    .o. EnglishConsonantRules
-    .o. EnglishGhMarker
-    .o. EnglishGlideDeletion
-    .o. EnglishVowelRules
-    .o. EnglishSilentInitialCleanup
-    .o. EnglishGhDeletion
-    .o. EnglishOrthography;
+define EnglishProtoInput ProtoWord;
+define EnglishAfterKn EnglishProtoInput .o. EnglishInitialKnMarkers;
+define EnglishAfterCons EnglishAfterKn .o. EnglishConsonantRules;
+define EnglishAfterGh EnglishAfterCons .o. EnglishGhMarker;
+define EnglishAfterGlide EnglishAfterGh .o. EnglishGlideDeletion;
+define EnglishAfterGhDeletion EnglishAfterGlide .o. EnglishGhDeletion;
+define EnglishAfterVowels EnglishAfterGhDeletion .o. EnglishVowelRules;
+
+define EnglishAfterSilents EnglishAfterVowels .o. EnglishSilentInitialCleanup;
+define EnglishAfterGhDelete2 EnglishAfterSilents .o. EnglishGhDeletion;
+define EnglishAfterOrthography EnglishAfterGhDelete2 .o. EnglishOrthography;
+
+define EnglishReflexes EnglishAfterOrthography
+    .o. RemoveStars;
 define English EnglishReflexes .o. EnglishSurface;
 
 clear stack
