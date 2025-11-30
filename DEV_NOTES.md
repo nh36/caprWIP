@@ -311,3 +311,14 @@ See you tomorrow!
 
 - Shifted `GermanRemoveStars` to follow `GermanFinalNasalLoss` after converting that rule to brace-star tokens; stage logging now records `GermanAfterNasal` (starred) before `GermanAfterStarDrop` (plain).
 - Converted `GermanHtShift`/`GermanAiShift` contexts to expect star tokens and extended the remover to cover `{*ei}`; downstream stages still operate on plain inventory after the drop.
+## 2025-11-30
+
+### Proto gate tightened for diphthongs
+
+- Captured a fresh baseline before touching the proto definitions:
+  - `python3 server/tools/api_regression.py` ⇒ PASS for Burmish & Germanic.
+  - `python3 tools/trace_german_stages.py --apply-down --stage GermanProtoInput --stage GermanAfterAu --lexeme braudą --lexeme straumaz --lexeme flauxz --lexeme naudiz --lexeme stainaz --lexeme beudan --lexeme liugan --lexeme glaiwaz --lexeme beutan` logged the duplicate `{*a}{*u}` vs `{*au}` outputs for `braudą` only.
+- Split the proto weak tails into explicit zero vs. vowel-initial inventories and added `pgrmStrongPlainLight/Heavy` helpers so only heavy syllables (diphthong, long vowel, or short vowel + coda) can precede vowel-headed tails. `pgrmWord` now routes `braudą` through the diphthong path while blocking the `[a] + [u d ą]` parse.
+- Recompiled (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/germanic.txt'`) and reran the tracer command above: `GermanProtoInput` now emits a single `{*au}` token for every probe, and `GermanAfterAu` shows only the monophthongised branch for `braudą`.
+- Analyzer sanity check: `printf 'laux\nknɛxt\nmɪlx\nbroːt\n' | flookup german.bin` still returns the expected proto bundles; `broːt` no longer keeps the `braɔt` branch alive.
+- Front-end payloads unchanged: `python3 server/tools/api_regression.py` still passes for both datasets, confirming that the tightened proto gate does not filter out legitimate entries.
