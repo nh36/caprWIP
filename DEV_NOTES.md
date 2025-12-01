@@ -322,3 +322,22 @@ See you tomorrow!
 - Recompiled (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/germanic.txt'`) and reran the tracer command above: `GermanProtoInput` now emits a single `{*au}` token for every probe, and `GermanAfterAu` shows only the monophthongised branch for `braudą`.
 - Analyzer sanity check: `printf 'laux\nknɛxt\nmɪlx\nbroːt\n' | flookup german.bin` still returns the expected proto bundles; `broːt` no longer keeps the `braɔt` branch alive.
 - Front-end payloads unchanged: `python3 server/tools/api_regression.py` still passes for both datasets, confirming that the tightened proto gate does not filter out legitimate entries.
+
+### Emergency English rollback
+
+- Restored the production English cascade to the pre-brace definitions so the UI has a working analyzer again. Replaced the brace-aware block in `server/fsts/germanic.txt` with the legacy IPA rules while keeping the sandbox (`server/fsts/english_brace_sandbox.txt`) intact for ongoing experiments.
+- Recompiled via `docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/germanic.txt'`; the resulting `english.bin` once again has full state/arc counts.
+- Regression harness replacement: piped all 362 attested English IPA forms through both stacks. `english.bin` now reconstructs 119 forms (rest still `+?` due to longstanding gaps), while `english_brace_sandbox.bin` remains empty—exactly what we want for comparing future brace work against a functioning baseline.
+- Next brace steps stay in the sandbox: feed `pgrmWord`, rebuild brace-aware surface filters, only then swap the finished automaton back into `server/fsts/germanic.txt`.
+
+## 2025-12-01
+
+### Brace sandbox brought online
+
+- Swapped the sandbox cascade onto the brace proto inventory by introducing `EnglishSandboxProtoInput pgrmWord`, rewiring every rule block to consume the `EnglishSandboxStar*` helpers, and pushing `RemoveStars` down to just before the surface filter. `english_brace_sandbox.bin` now compiles as a full 18 kB automaton (195 states / ~8 M paths) instead of the empty 160 byte stub we had yesterday.
+- Surface acceptance still mirrors the legacy IPA stack (`EnglishSandboxSurface` expects plain `{b}/{iː}`), but every upstream stage lives entirely in braces so debugging and stage tracing match the German/Burmish pattern. Running the attested-form harness shows 175/362 English IPA forms now reconstruct via the sandbox (production `english.bin` remains at 119/362), giving us a functional brace baseline to compare against.
+
+### Failure inventory & next steps
+
+- Logged the 187 remaining `+?` cases. They cluster around schwa-heavy words (`ə/əʊ` targets such as `bærəʊ`, `fəʊl`, `bɔtəm`), rounded long vowels (`ɔː` in `bɔːl`, `kɔːn`, etc.), and short rounded syllables with `ʊ` (`bʊk`, `brʊk`, `bʊzəm`). These environments currently lack brace-aware mappings in `EnglishSandboxVowelRules`, so the cascade never produces the requested outputs even though the surface filter would admit them.
+- Conclusion for tomorrow: add the missing vowel rules (e.g. `{*o}/{*ō}`→`{ɔ}/{ɔː}`, `{*u}`→`{ʊ}` in the relevant contexts, and `{*a}`→`{ə}/{əʊ}` in weak syllables) rather than relaxing the surface filter. After each rule block, recompile and re-run the harness to track how many of the 187 failures drop off. Only once the sandbox meets or exceeds the IPA baseline should we plan the production swap.
