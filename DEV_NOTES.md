@@ -341,3 +341,13 @@ See you tomorrow!
 
 - Logged the 187 remaining `+?` cases. They cluster around schwa-heavy words (`ə/əʊ` targets such as `bærəʊ`, `fəʊl`, `bɔtəm`), rounded long vowels (`ɔː` in `bɔːl`, `kɔːn`, etc.), and short rounded syllables with `ʊ` (`bʊk`, `brʊk`, `bʊzəm`). These environments currently lack brace-aware mappings in `EnglishSandboxVowelRules`, so the cascade never produces the requested outputs even though the surface filter would admit them.
 - Conclusion for tomorrow: add the missing vowel rules (e.g. `{*o}/{*ō}`→`{ɔ}/{ɔː}`, `{*u}`→`{ʊ}` in the relevant contexts, and `{*a}`→`{ə}/{əʊ}` in weak syllables) rather than relaxing the surface filter. After each rule block, recompile and re-run the harness to track how many of the 187 failures drop off. Only once the sandbox meets or exceeds the IPA baseline should we plan the production swap.
+
+### Sandbox vowel expansion
+
+- Introduced `EnglishSandboxStarNasal/Liquid/VelarStop` helpers so the vowel block can target `{*ai}` vs. `{*au}` sequences and the liquid-heavy `{*a}` contexts without repeating literal sets.
+- Extended `EnglishSandboxVowelRules` with the first batch of brace-aware mappings:
+  - `{*ai}` now yields `{əʊ}` before nasals, velars, labials, and the `gw/kn/xw` clusters that cover the attested `bəʊn/fəʊl/snow/stone/soul/token` cases.
+  - `{*au}` exposes an `{əʊ}` branch in addition to `{aʊ}/{oː}`, `{*ō}` can realise `{ɔː}` or `{ʊ}` in the usual `r/l/#` and velar-k environments, and `{*a}` picks up `{ɔː}` before `l/r/w`.
+  - Added a dedicated schwa cleanup for the weak-tail templates (`-az/-an/-nē/-gą/-lō/-raz`) so `hammer`, `bottom`, `weapon`, etc. stop stalling solely because the tail vowel stayed as `{a}`.
+- `docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'` recompiles the sandbox to a 21.7 kB automaton (201 states / 23 M paths). Quick probes such as `printf 'bɔːl\nkɔːn\nfəʊl\nbəʊn\nbʊk\n' | flookup english_brace_sandbox.bin` now return full proto bundles instead of `+?`.
+- `python3 server/tools/api_regression.py` still PASS for both Burmish and Germanic datasets, so the extra branches did not perturb the production analyzer.

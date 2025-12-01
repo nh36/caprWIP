@@ -35,6 +35,12 @@ define EnglishSandboxStarConsonant GermanStarConsonant;
 
 define EnglishSandboxStarVocalic GermanStarVocalic;
 
+define EnglishSandboxStarNasal [{*m} | {*n}];
+
+define EnglishSandboxStarLiquid [{*l} | {*r}];
+
+define EnglishSandboxStarVelarStop [{*k} | {*g}];
+
 define EnglishSandboxInitialKnMarkers [
     {*k} {*n} -> {Kn} || .#. _,
     {*g} {*n} -> {Gn} || .#. _
@@ -69,15 +75,43 @@ define EnglishSandboxVowelRules [
     {*ū} -> {uː},
     {*ē} -> {iː},
     {*ō} -> {uː},
+    {*ō} -> {ɔː} || _ EnglishSandboxStarLiquid,
+    {*ō} -> {ɔː} || _ .#.,
+    {*ō} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {*ā} -> {ɑː},
+    {*a} -> {ɔː} || _ {*l} EnglishSandboxStarConsonant,
+    {*a} -> {ɔː} || _ {*l} .#.,
+    {*a} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
+    {*a} -> {ɔː} || _ {*r} .#.,
+    {*a} -> {ɔː} || _ {*w},
+    {*u} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
+    {*u} -> {ɔː} || _ {*r} .#.,
     {*au} -> {oː},
+    {*au} -> {aʊ},
+    {*au} -> {əʊ} || _ EnglishSandboxStarConsonant,
+    {*au} -> {əʊ} || _ .#.,
     {*ai} -> {eɪ},
     {*ai} -> {aɪ},
-    {*au} -> {aʊ},
+    {*ai} -> {əʊ} || _ EnglishSandboxStarNasal,
+    {*ai} -> {əʊ} || _ {*g},
+    {*ai} -> {əʊ} || _ {*g} {*w},
+    {*ai} -> {əʊ} || _ {*k},
+    {*ai} -> {əʊ} || _ {*k} {*n},
+    {*ai} -> {əʊ} || _ {*p},
+    {*ai} -> {əʊ} || _ {*θ},
+    {*ai} -> {əʊ} || _ {*x},
+    {*ai} -> {əʊ} || _ {*w},
     {*e} -> {ɛ},
     {*e} -> {ɪ} || _ EnglishSandboxStarConsonant,
     {*o} -> {ɔ},
     {*a} -> {ə} || _ .#.,
+    {*a} -> {ə} || _ {*g} {*ą},
+    {*a} -> {ə} || _ {*l} {*ō},
+    {*a} -> {ə} || _ {*n},
+    {*a} -> {ə} || _ {*n} {*ą},
+    {*a} -> {ə} || _ {*n} {*ē},
+    {*a} -> {ə} || _ {*r} {*a} {*z},
+    {*a} -> {ə} || _ {*z},
     {*a} -> {æ} || _ {*r},
     {*u} -> {ʌ} || _ (EnglishSandboxStarConsonant | .#.)
 ];
