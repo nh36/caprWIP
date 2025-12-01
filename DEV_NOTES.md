@@ -368,3 +368,10 @@ See you tomorrow!
 
 - Broke the downstream vowel block into `EnglishSandboxGreatVowelShift` plus the existing late-reduction stage so the open-syllable long vowels now pass through an explicit `{ɑː}/{oː}` layer before modern diphthongs appear. `EnglishSandboxCoreVowelRules` now stops at `{iː}/{uː}/{ɑː}/{oː}/{ɔː}` outputs, while the new stage handles `{oː → aʊ/əʊ}` and `{ɑː → eɪ/aɪ/əʊ}` with the same environments we already tuned.
 - Recompiled again (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`), yielding a 24.0 kB sandbox automaton (213 states / 29.6 M paths). Regression spot checks for `bəʊn/stəʊn/fəʊl/bɔːl` still produce the expected proto bundles plus the new intermediate stages, confirming behaviour stayed constant while the chronology became inspectable.
+
+### TODO (next session)
+
+- Add an `EnglishSandboxOpenSyllableLengthening` stage so short `{*a/e/i/o/u}` lengthen in light syllables before the GVS block (e.g., `*nama` → `{*nāma}`) instead of jumping straight to modern outputs.
+- Split the `{*a}`→`{ɔː}` before `{*r}/{*l}/{*w}` rules into a dedicated breaking/lengthening stage so we can later add post-vocalic /r/-loss separately.
+- Introduce a short-vowel split stage (FOOT–STRUT/KIT) that keeps `{*u}` as `{u}` until late ME, then maps to `{ʊ}` vs `{ʌ}` based on coda types; likewise refine `{*e}`→`{ɪ}` environments.
+- Move the weak-tail schwa rules into their own late ME reduction stage keyed off the weak-tail templates so reductions happen after the new lengthening/short-vowel stages run.
