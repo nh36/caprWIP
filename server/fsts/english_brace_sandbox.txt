@@ -70,7 +70,14 @@ define EnglishSandboxGhDeletion [
     {GH} -> 0 || EnglishSandboxStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
-define EnglishSandboxVowelRules [
+# West Germanic monophthongisation (ai → ā, au → ō).
+define EnglishSandboxWestGermanic [
+    {*ai} -> {*ā},
+    {*au} -> {*ō}
+];
+
+# Old English & Middle English vowel developments feeding the later English cascade.
+define EnglishSandboxCoreVowelRules [
     {*ī} -> {iː},
     {*ū} -> {uː},
     {*ē} -> {iː},
@@ -78,6 +85,7 @@ define EnglishSandboxVowelRules [
     {*ō} -> {ɔː} || _ EnglishSandboxStarLiquid,
     {*ō} -> {ɔː} || _ .#.,
     {*ō} -> {ʊ} || _ EnglishSandboxStarVelarStop,
+    {*ō} -> {oː},
     {*ā} -> {ɑː},
     {*a} -> {ɔː} || _ {*l} EnglishSandboxStarConsonant,
     {*a} -> {ɔː} || _ {*l} .#.,
@@ -86,24 +94,33 @@ define EnglishSandboxVowelRules [
     {*a} -> {ɔː} || _ {*w},
     {*u} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
     {*u} -> {ɔː} || _ {*r} .#.,
-    {*au} -> {oː},
-    {*au} -> {aʊ},
-    {*au} -> {əʊ} || _ EnglishSandboxStarConsonant,
-    {*au} -> {əʊ} || _ .#.,
-    {*ai} -> {eɪ},
-    {*ai} -> {aɪ},
-    {*ai} -> {əʊ} || _ EnglishSandboxStarNasal,
-    {*ai} -> {əʊ} || _ {*g},
-    {*ai} -> {əʊ} || _ {*g} {*w},
-    {*ai} -> {əʊ} || _ {*k},
-    {*ai} -> {əʊ} || _ {*k} {*n},
-    {*ai} -> {əʊ} || _ {*p},
-    {*ai} -> {əʊ} || _ {*θ},
-    {*ai} -> {əʊ} || _ {*x},
-    {*ai} -> {əʊ} || _ {*w},
     {*e} -> {ɛ},
     {*e} -> {ɪ} || _ EnglishSandboxStarConsonant,
     {*o} -> {ɔ},
+    {*a} -> {æ} || _ {*r},
+    {*u} -> {ʌ} || _ (EnglishSandboxStarConsonant | .#.)
+];
+
+# Late Middle English / Great Vowel Shift diphthongisation and raising.
+define EnglishSandboxGreatVowelShift [
+    {oː} -> {əʊ} || _ EnglishSandboxStarConsonant,
+    {oː} -> {əʊ} || _ .#.,
+    {oː} -> {aʊ},
+    {ɑː} -> {eɪ},
+    {ɑː} -> {aɪ},
+    {ɑː} -> {əʊ} || _ EnglishSandboxStarNasal,
+    {ɑː} -> {əʊ} || _ {*g},
+    {ɑː} -> {əʊ} || _ {*g} {*w},
+    {ɑː} -> {əʊ} || _ {*k},
+    {ɑː} -> {əʊ} || _ {*k} {*n},
+    {ɑː} -> {əʊ} || _ {*p},
+    {ɑː} -> {əʊ} || _ {*θ},
+    {ɑː} -> {əʊ} || _ {*x},
+    {ɑː} -> {əʊ} || _ {*w}
+];
+
+# Late Middle English / Early Modern English unstressed reductions.
+define EnglishSandboxLateReductionRules [
     {*a} -> {ə} || _ .#.,
     {*a} -> {ə} || _ {*g} {*ą},
     {*a} -> {ə} || _ {*l} {*ō},
@@ -111,10 +128,12 @@ define EnglishSandboxVowelRules [
     {*a} -> {ə} || _ {*n} {*ą},
     {*a} -> {ə} || _ {*n} {*ē},
     {*a} -> {ə} || _ {*r} {*a} {*z},
-    {*a} -> {ə} || _ {*z},
-    {*a} -> {æ} || _ {*r},
-    {*u} -> {ʌ} || _ (EnglishSandboxStarConsonant | .#.)
+    {*a} -> {ə} || _ {*z}
 ];
+
+define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
+    .o. EnglishSandboxGreatVowelShift
+    .o. EnglishSandboxLateReductionRules;
 
 define EnglishSandboxOrthography [
     {*x} -> {h}
@@ -127,6 +146,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxConsonantRules
     .o. EnglishSandboxGhMarker
     .o. EnglishSandboxGlideDeletion
+    .o. EnglishSandboxWestGermanic
     .o. EnglishSandboxVowelRules
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion

@@ -351,3 +351,20 @@ See you tomorrow!
   - Added a dedicated schwa cleanup for the weak-tail templates (`-az/-an/-nē/-gą/-lō/-raz`) so `hammer`, `bottom`, `weapon`, etc. stop stalling solely because the tail vowel stayed as `{a}`.
 - `docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'` recompiles the sandbox to a 21.7 kB automaton (201 states / 23 M paths). Quick probes such as `printf 'bɔːl\nkɔːn\nfəʊl\nbəʊn\nbʊk\n' | flookup english_brace_sandbox.bin` now return full proto bundles instead of `+?`.
 - `python3 server/tools/api_regression.py` still PASS for both Burmish and Germanic datasets, so the extra branches did not perturb the production analyzer.
+
+### Historical staging scaffolding
+
+- Split the vowel stack into `EnglishSandboxCoreVowelRules` (stressed vowels + rounding/raising) and a follow-on `EnglishSandboxLateReductionRules` block that handles the weak-tail schwa conversions. The sandbox now composes these two definitions in series, matching the historical order where vowel quality shifts precede widespread unstressed reduction. No outputs changed, but the pipeline is ready for future WG/ME-era stages without becoming a single monolithic rewrite block.
+- Annotated the block with explicit "West Germanic / Old English" and "Late Middle English" comments so the chronological stages are documented directly in the FST, per the Burmish/German style.
+- Recompiled (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`), yielding the same surface behaviour as before (20.7 kB / 201 states). Future iterations can introduce West Germanic monophthongisation and ME diphthongisation as separate stages without disturbing the late reduction rules.
+
+### WG monophthongisation stage
+
+- Added `EnglishSandboxWestGermanic` to the cascade (between glide deletion and the vowel rules) so proto `{*ai}`/`{*au}` first collapse onto the historical long vowels `{*ā}`/`{*ō}` before Middle/Modern English rules run. The new stage keeps everything in the proto alphabet—no WGMARK tokens—and mirrors how the German/Burmish stacks segregate their era-specific rule blocks.
+- Moved the old `{*ai}`/`{*au}` IPA rewrites onto `{*ā}`/`{*ō}` inside `EnglishSandboxCoreVowelRules`, preserving every contextual mapping we already depend on (`bəʊn`/`stəʊn`/`fəʊl`, etc.) while letting us inspect `{*bān}`, `{*stān}` intermediate outputs.
+- `docker compose exec backend sh -lc "cd /usr/app && foma -f fsts/english_brace_sandbox.txt"` now produces a 23.5 kB sandbox automaton (209 states / 32 M paths). Spot checks via `printf 'bəʊn\nstəʊn\nfəʊl\nbɔːl\n' | flookup english_brace_sandbox.bin` show the analyzer surfacing both the WG monophthongised forms (`bān/stān/fāl/bōl`) and the legacy `{*bain}` branches, so we can trace the historical stage outputs directly.
+
+### Great Vowel Shift split
+
+- Broke the downstream vowel block into `EnglishSandboxGreatVowelShift` plus the existing late-reduction stage so the open-syllable long vowels now pass through an explicit `{ɑː}/{oː}` layer before modern diphthongs appear. `EnglishSandboxCoreVowelRules` now stops at `{iː}/{uː}/{ɑː}/{oː}/{ɔː}` outputs, while the new stage handles `{oː → aʊ/əʊ}` and `{ɑː → eɪ/aɪ/əʊ}` with the same environments we already tuned.
+- Recompiled again (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`), yielding a 24.0 kB sandbox automaton (213 states / 29.6 M paths). Regression spot checks for `bəʊn/stəʊn/fəʊl/bɔːl` still produce the expected proto bundles plus the new intermediate stages, confirming behaviour stayed constant while the chronology became inspectable.
