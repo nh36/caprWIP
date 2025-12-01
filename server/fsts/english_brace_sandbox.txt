@@ -86,7 +86,9 @@ define EnglishSandboxOrthography [
     {*x} -> {h}
 ];
 
-define EnglishSandboxReflexes ProtoWord
+define EnglishSandboxProtoInput pgrmWord;
+
+define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxInitialKnMarkers
     .o. EnglishSandboxConsonantRules
     .o. EnglishSandboxGhMarker
@@ -95,7 +97,10 @@ define EnglishSandboxReflexes ProtoWord
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion
     .o. EnglishSandboxOrthography;
-define EnglishSandbox EnglishSandboxReflexes .o. EnglishSandboxSurface;
+
+define EnglishSandbox EnglishSandboxReflexes
+    .o. RemoveStars
+    .o. EnglishSandboxSurface;
 
 clear stack
 regex EnglishSandbox;

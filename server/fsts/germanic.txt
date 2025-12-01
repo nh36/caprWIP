@@ -424,30 +424,27 @@ define GermanSurfaceSyllable GermanSurfaceOnset GermanSurfaceVowel GermanSurface
 define GermanSurface GermanSurfaceSyllable+;
 
 ##############################################
-## English transducer                        ##
+## English transducer
 ##############################################
 
 ### 1. Surface filter
 # (defined above as `EnglishSurface`)
 
 ### 2. Sound laws
-define EnglishStarVocalic GermanStarVocalic;
-define EnglishStarConsonant GermanStarConsonant;
-
 define EnglishInitialKnMarkers [
-    {*k} {*n} -> {Kn} || .#. _,
-    {*g} {*n} -> {Gn} || .#. _
+    "kn" -> "Kn" || .#. _,
+    "gn" -> "Gn" || .#. _
 ];
 
 define EnglishConsonantRules [
-    {*w} -> {ʋ},
-    {*z} -> {r} || EnglishStarVocalic _ EnglishStarVocalic,
-    {*z} -> 0 || _ .#.,
-    {*d} {*j} -> nd
+    w -> {ʋ},
+    z -> {r} || Vowel _ Vowel,
+    z -> 0 || _ .#.,
+    {dj} -> nd
 ];
 
 define EnglishGhMarker [
-    {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+    {x} -> {GH} || Vowel _ ({t} | {d} | .#.)
 ];
 
 define EnglishSilentInitialCleanup [
@@ -456,29 +453,29 @@ define EnglishSilentInitialCleanup [
 ];
 
 define EnglishGlideDeletion [
-    {ʋ} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+    {ʋ} -> 0 || Vowel _ Vowel
 ];
 
 define EnglishGhDeletion [
-    {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+    {GH} -> 0 || Vowel _ ({t} | {d} | .#.)
 ];
 
 define EnglishVowelRules [
-    {*ī} -> {iː},
-    {*ū} -> {uː},
-    {*ē} -> {iː},
-    {*ō} -> {uː},
-    {*ā} -> {ɑː},
-    {*au} -> {oː},
-    {*ai} -> {eɪ},
-    {*ai} -> {aɪ},
-    {*au} -> {aʊ},
-    {*e} -> {ɛ},
-    {*e} -> {ɪ} || _ EnglishStarConsonant,
-    {*o} -> {ɔ},
-    {*a} -> {ə} || _ .#.,
-    {*a} -> {æ} || _ {*r},
-    {*u} -> {ʌ} || _ (EnglishStarConsonant | .#.)
+    ī -> {iː},
+    ū -> {uː},
+    ē -> {iː},
+    ō -> {uː},
+    ā -> {ɑː},
+    {au} -> {oː},
+    {ai} -> {eɪ},
+    {ai} -> {aɪ},
+    {au} -> {aʊ},
+    e -> {ɛ},
+    e -> {ɪ} || _ Cons,
+    o -> {ɔ},
+    a -> {ə} || _ .#.,
+    a -> {æ} || _ r,
+    u -> {ʌ} || _ (Cons | .#.)
 ];
 
 define EnglishOrthography [
@@ -486,26 +483,21 @@ define EnglishOrthography [
 ];
 
 ### 3. Composition
-define EnglishProtoInput ProtoWord;
-define EnglishAfterKn EnglishProtoInput .o. EnglishInitialKnMarkers;
-define EnglishAfterCons EnglishAfterKn .o. EnglishConsonantRules;
-define EnglishAfterGh EnglishAfterCons .o. EnglishGhMarker;
-define EnglishAfterGlide EnglishAfterGh .o. EnglishGlideDeletion;
-define EnglishAfterGhDeletion EnglishAfterGlide .o. EnglishGhDeletion;
-define EnglishAfterVowels EnglishAfterGhDeletion .o. EnglishVowelRules;
-
-define EnglishAfterSilents EnglishAfterVowels .o. EnglishSilentInitialCleanup;
-define EnglishAfterGhDelete2 EnglishAfterSilents .o. EnglishGhDeletion;
-define EnglishAfterOrthography EnglishAfterGhDelete2 .o. EnglishOrthography;
-
-define EnglishReflexes EnglishAfterOrthography
-    .o. RemoveStars;
+define EnglishReflexes ProtoWord
+    .o. EnglishInitialKnMarkers
+    .o. EnglishConsonantRules
+    .o. EnglishGhMarker
+    .o. EnglishGlideDeletion
+    .o. EnglishVowelRules
+    .o. EnglishSilentInitialCleanup
+    .o. EnglishGhDeletion
+    .o. EnglishOrthography;
 define English EnglishReflexes .o. EnglishSurface;
 
 clear stack
 regex English;
 save stack english.bin
-
+ 
 ##############################################
 ## Dutch transducer                          ##
 ##############################################
