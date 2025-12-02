@@ -369,9 +369,28 @@ See you tomorrow!
 - Broke the downstream vowel block into `EnglishSandboxGreatVowelShift` plus the existing late-reduction stage so the open-syllable long vowels now pass through an explicit `{ɑː}/{oː}` layer before modern diphthongs appear. `EnglishSandboxCoreVowelRules` now stops at `{iː}/{uː}/{ɑː}/{oː}/{ɔː}` outputs, while the new stage handles `{oː → aʊ/əʊ}` and `{ɑː → eɪ/aɪ/əʊ}` with the same environments we already tuned.
 - Recompiled again (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`), yielding a 24.0 kB sandbox automaton (213 states / 29.6 M paths). Regression spot checks for `bəʊn/stəʊn/fəʊl/bɔːl` still produce the expected proto bundles plus the new intermediate stages, confirming behaviour stayed constant while the chronology became inspectable.
 
+## 2025-12-02
+
+### Open-syllable lengthening stage
+
+- Added `EnglishSandboxOpenSyllableLengthening` between the West Germanic collapse and the core vowel rules so short `{*a/e/i/o/u}` lengthen whenever they precede a single consonant plus another vowel (e.g., `*nama` now exposes `{*nāma}` before the Great Vowel Shift layer).
+- Recompiled via `docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`; `english_brace_sandbox.bin` grows to 30.4 kB (254 states / 32.9 M paths) and the tracer now shows `{*nāma}` / `{*bēra}` intermediate forms alongside the later Modern English reflexes.
+- `python3 server/tools/api_regression.py` still PASS for Burmish & Germanic datasets, confirming the new stage doesn’t perturb production analyzers.
+
+### Breaking/rounding stage
+
+- Pulled the `{*a}`→`{ɔː}` liquid/glide rules out of `EnglishSandboxCoreVowelRules` and replaced them with an Anglo-Frisian style `EnglishSandboxBreakingLengthening` stage that rewrites `{*a}` to `{*ō}` before `{*l}/{*r}/{*w}`.
+- Recompiled (`docker compose exec backend sh -lc 'cd /usr/app && foma -f fsts/english_brace_sandbox.txt'`): `english_brace_sandbox.bin` is now 31.0 kB (260 states / 29.3 M paths) and stage logging exposes `{*bōl}/{*bōrd}` outputs prior to the Modern English vowel layers.
+- `python3 server/tools/api_regression.py` continues to PASS for both datasets, so the refactor kept the working analyzer stable while making room for future post-vocalic /r/-loss.
+
+### Short-vowel split & weak-tail staging
+
+- Updated `EnglishSandboxCoreVowelRules` to leave short `{*e}`/`{*u}` as `{e}`/`{u}` tokens and inserted a new `EnglishSandboxShortVowelSplit` stage that now pushes `{u}`→`{ʊ}` before velars, weak-tail `z`/`m` clusters, and dark `{l}` codas while handing `{e}`→`{ɪ}` only in nasal/liquid-heavy codas; everything else defaults to `{ɛ}`/`{ʌ}` so the split sits chronologically between the OE core and the Great Vowel Shift.
+- Lifted the schwa clean-up rules into `EnglishSandboxWeakTailReductions`, keyed directly to `pgrmWeakTailVowel.r`, and run that stage after the short-vowel split so reductions don’t erase the new conditioning. Recompiling via Docker now yields a 25.1 kB sandbox automaton (223 states / 5.2 M paths) and the regression harness still passes for Burmish & Germanic.
+- Spot checks (`printf 'bʊk\nbrʊk\nbʊzəm\n' | flookup english_brace_sandbox.bin`) show `bʊk/brʊk` emitting `bōk/brōk` proto bundles through the new stage, while `bʊzəm` still reports `+?` because the `{u}`→`{ʊ}` rule doesn’t yet cover the `z + weak tail` parse.
+
 ### TODO (next session)
 
-- Add an `EnglishSandboxOpenSyllableLengthening` stage so short `{*a/e/i/o/u}` lengthen in light syllables before the GVS block (e.g., `*nama` → `{*nāma}`) instead of jumping straight to modern outputs.
-- Split the `{*a}`→`{ɔː}` before `{*r}/{*l}/{*w}` rules into a dedicated breaking/lengthening stage so we can later add post-vocalic /r/-loss separately.
-- Introduce a short-vowel split stage (FOOT–STRUT/KIT) that keeps `{*u}` as `{u}` until late ME, then maps to `{ʊ}` vs `{ʌ}` based on coda types; likewise refine `{*e}`→`{ɪ}` environments.
-- Move the weak-tail schwa rules into their own late ME reduction stage keyed off the weak-tail templates so reductions happen after the new lengthening/short-vowel stages run.
+- Broaden the `{u}`→`{ʊ}` contexts (e.g., `z + weak tail`, alveolar stops) and log which of the remaining `{ʌ}` cases still need special handling so `bʊzəm/pʊt` stop failing.
+- Tighten the `{e}`→`{ɪ}` side so KIT only fires in the nasal/liquid clusters we actually attest; add stage logging for representative lez pairs to confirm.
+- With the breaking stage in place, start sketching a post-vocalic /r/-loss layer before moving back toward the production cascade swap.

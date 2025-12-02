@@ -41,6 +41,8 @@ define EnglishSandboxStarLiquid [{*l} | {*r}];
 
 define EnglishSandboxStarVelarStop [{*k} | {*g}];
 
+define EnglishSandboxWeakTailVowel pgrmWeakTailVowel.r;
+
 define EnglishSandboxInitialKnMarkers [
     {*k} {*n} -> {Kn} || .#. _,
     {*g} {*n} -> {Gn} || .#. _
@@ -76,6 +78,36 @@ define EnglishSandboxWestGermanic [
     {*au} -> {*ō}
 ];
 
+# Early Old English open-syllable lengthening promotes short vowels before CV onsets.
+define EnglishSandboxOpenSyllableLengthening [
+    {*a} -> {*ā} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic,
+    {*e} -> {*ē} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic,
+    {*i} -> {*ī} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic,
+    {*o} -> {*ō} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic,
+    {*u} -> {*ū} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic
+];
+
+# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
+define EnglishSandboxBreakingLengthening [
+    {*a} -> {*ō} || _ {*l} EnglishSandboxStarConsonant,
+    {*a} -> {*ō} || _ {*l} .#.,
+    {*a} -> {*ō} || _ {*r} EnglishSandboxStarConsonant,
+    {*a} -> {*ō} || _ {*r} .#.,
+    {*a} -> {*ō} || _ {*w}
+];
+
+# Late Middle English short-vowel splits (KIT vs. DRESS, FOOT vs. STRUT).
+define EnglishSandboxShortVowelSplit [
+    {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
+    {u} -> {ʊ} || _ {*z} EnglishSandboxStarVocalic,
+    {u} -> {ʊ} || _ {*m} EnglishSandboxStarVocalic,
+    {u} -> {ʊ} || _ {*l} (EnglishSandboxStarConsonant | .#.),
+    {u} -> {ʌ},
+    {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
+    {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
+    {e} -> {ɛ}
+];
+
 # Old English & Middle English vowel developments feeding the later English cascade.
 define EnglishSandboxCoreVowelRules [
     {*ī} -> {iː},
@@ -87,18 +119,12 @@ define EnglishSandboxCoreVowelRules [
     {*ō} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {*ō} -> {oː},
     {*ā} -> {ɑː},
-    {*a} -> {ɔː} || _ {*l} EnglishSandboxStarConsonant,
-    {*a} -> {ɔː} || _ {*l} .#.,
-    {*a} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
-    {*a} -> {ɔː} || _ {*r} .#.,
-    {*a} -> {ɔː} || _ {*w},
     {*u} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
     {*u} -> {ɔː} || _ {*r} .#.,
-    {*e} -> {ɛ},
-    {*e} -> {ɪ} || _ EnglishSandboxStarConsonant,
+    {*e} -> {e},
     {*o} -> {ɔ},
     {*a} -> {æ} || _ {*r},
-    {*u} -> {ʌ} || _ (EnglishSandboxStarConsonant | .#.)
+    {*u} -> {u}
 ];
 
 # Late Middle English / Great Vowel Shift diphthongisation and raising.
@@ -119,21 +145,15 @@ define EnglishSandboxGreatVowelShift [
     {ɑː} -> {əʊ} || _ {*w}
 ];
 
-# Late Middle English / Early Modern English unstressed reductions.
-define EnglishSandboxLateReductionRules [
+# Late Middle English / Early Modern English unstressed reductions (weak tails).
+define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ .#.,
-    {*a} -> {ə} || _ {*g} {*ą},
-    {*a} -> {ə} || _ {*l} {*ō},
-    {*a} -> {ə} || _ {*n},
-    {*a} -> {ə} || _ {*n} {*ą},
-    {*a} -> {ə} || _ {*n} {*ē},
-    {*a} -> {ə} || _ {*r} {*a} {*z},
-    {*a} -> {ə} || _ {*z}
+    {*a} -> {ə} || _ EnglishSandboxWeakTailVowel
 ];
 
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
-    .o. EnglishSandboxGreatVowelShift
-    .o. EnglishSandboxLateReductionRules;
+    .o. EnglishSandboxShortVowelSplit
+    .o. EnglishSandboxGreatVowelShift;
 
 define EnglishSandboxOrthography [
     {*x} -> {h}
@@ -147,7 +167,10 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxGhMarker
     .o. EnglishSandboxGlideDeletion
     .o. EnglishSandboxWestGermanic
+    .o. EnglishSandboxOpenSyllableLengthening
+    .o. EnglishSandboxBreakingLengthening
     .o. EnglishSandboxVowelRules
+    .o. EnglishSandboxWeakTailReductions
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion
     .o. EnglishSandboxOrthography;
