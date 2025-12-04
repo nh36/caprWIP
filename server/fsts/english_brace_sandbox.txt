@@ -26,6 +26,14 @@ define EnglishSandboxSurfaceCoda [
 define EnglishSandboxSurfaceSyllable EnglishSandboxSurfaceOnset EnglishSandboxSurfaceVowel EnglishSandboxSurfaceCoda;
 define EnglishSandboxSurface EnglishSandboxSurfaceSyllable+;
 
+# Helper sets for the plain (post-brace) stages.
+define EnglishSandboxPlainVocalic [
+    EnglishSandboxSurfaceVowel |
+    {e} | {o} | {u} | {oː}
+];
+define EnglishSandboxPlainLiquid [{l} | {r}];
+define EnglishSandboxPlainNasal [{m} | {n}];
+
 # Brace-aware helper inventories for the sandbox.
 define EnglishSandboxStarVowel GermanStarVowel;
 
@@ -101,7 +109,11 @@ define EnglishSandboxShortVowelSplit [
     {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {u} -> {ʊ} || _ {*z} EnglishSandboxStarVocalic,
     {u} -> {ʊ} || _ {*m} EnglishSandboxStarVocalic,
+    {u} -> {ʊ} || _ {*n} EnglishSandboxStarConsonant,
     {u} -> {ʊ} || _ {*l} (EnglishSandboxStarConsonant | .#.),
+    {u} -> {ʊ} || _ {*r} (EnglishSandboxStarConsonant | .#.),
+    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) EnglishSandboxStarConsonant,
+    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) .#.,
     {u} -> {ʌ},
     {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
     {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
@@ -151,6 +163,11 @@ define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ EnglishSandboxWeakTailVowel
 ];
 
+# Early Modern English post-vocalic /r/-loss.
+define EnglishSandboxPostVocalicRLoss [
+    {*r} -> 0 || EnglishSandboxPlainVocalic _ (EnglishSandboxStarConsonant | .#.)
+];
+
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
     .o. EnglishSandboxShortVowelSplit
     .o. EnglishSandboxGreatVowelShift;
@@ -170,6 +187,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxOpenSyllableLengthening
     .o. EnglishSandboxBreakingLengthening
     .o. EnglishSandboxVowelRules
+    .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion

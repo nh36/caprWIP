@@ -389,8 +389,38 @@ See you tomorrow!
 - Lifted the schwa clean-up rules into `EnglishSandboxWeakTailReductions`, keyed directly to `pgrmWeakTailVowel.r`, and run that stage after the short-vowel split so reductions don’t erase the new conditioning. Recompiling via Docker now yields a 25.1 kB sandbox automaton (223 states / 5.2 M paths) and the regression harness still passes for Burmish & Germanic.
 - Spot checks (`printf 'bʊk\nbrʊk\nbʊzəm\n' | flookup english_brace_sandbox.bin`) show `bʊk/brʊk` emitting `bōk/brōk` proto bundles through the new stage, while `bʊzəm` still reports `+?` because the `{u}`→`{ʊ}` rule doesn’t yet cover the `z + weak tail` parse.
 
+### Failure buckets & historical targets
+
+- Bottom-up sweep: `python3 - <<'PY' …` loops the 376 English entries from `server/data/germanic-aligned-final.tsv` through `docker compose exec backend sh -lc 'cd /usr/app && flookup english_brace_sandbox.bin'` and writes `tmp/english_sandbox_results.json`. Current sandbox stats: 119/376 successes (matching the production analyzer) and 257 failures.
+- Failure clustering by IPA lines up with the outstanding historical stages: 108 KIT cases (`{ɪ}` in closed syllables), 31 FOOT/STRUT cases (`{ʊ}`), 61 weak-tail schwa outputs (`{ə/əʊ}`), 69 `{r}`-bearing entries still awaiting post-vocalic /r/-loss, and 29 `{ɔ/ɔː}` forms that want better breaking.
+- Top-down staging notes before touching code:
+  - **Late OE short-vowel conditioning**: finish the FOOT–STRUT stage so `{*u}` first branches to `{ʊ}` in dark-l/velar/alveolar codas, then feeds `{ʌ}` in open or dental contexts; likewise confine the KIT split to nasal/liquid + consonant codas (stop globally rewriting `{e}`).
+  - **ME /r/-loss**: add a post-breaking stage that deletes `{r}` after vowels/codas (mirroring historical smoothing) so `{*bōr}` surfaces as `{bɔː}` before Late Reduction derives `board`/`bier` outcomes.
+  - **Weak-tail clean-up**: continue driving reductions via `EnglishSandboxWeakTailVowel` so schwa mappings target the templated tails instead of ad-hoc contexts.
+- For each block, validate against the relevant bucket from `tmp/english_sandbox_results.json` and log stage traces so the top-down picture stays anchored to the bottom-up error counts.
+
 ### TODO (next session)
 
 - Broaden the `{u}`→`{ʊ}` contexts (e.g., `z + weak tail`, alveolar stops) and log which of the remaining `{ʌ}` cases still need special handling so `bʊzəm/pʊt` stop failing.
 - Tighten the `{e}`→`{ɪ}` side so KIT only fires in the nasal/liquid clusters we actually attest; add stage logging for representative lez pairs to confirm.
 - With the breaking stage in place, start sketching a post-vocalic /r/-loss layer before moving back toward the production cascade swap.
+
+### KIT sweep (status: reverted to baseline)
+
+- Replayed the dockered `flookup` harness (`python3 - <<'PY' …`) to isolate the true KIT cases (filtering out `aɪ/eɪ/ɔɪ`). We still have 35 `{ɪ}` forms headed by `fish/give/six/will` plus the `{ɪə}`+`r` items (`beard/bier/deer/spear/year`).
+- Restored the brace-aware helper sets (`EnglishSandboxPlainVocalic/Liquid/Nasal`), the `{*u}` contexts, and `EnglishSandboxPostVocalicRLoss` after rolling back an experimental smoothing stage that tanked the harness. `english_brace_sandbox.bin` is back to the 179/376 success baseline.
+- `python3 server/tools/api_regression.py` remains green, so the sandbox is stable again for the next round of KIT work (detailed smoothing + consonant-cluster contexts).
+
+### Short-vowel fixes + /r/-loss scaffold
+
+- Added plain helper sets (`EnglishSandboxPlainVocalic/Liquid/Nasal`) so late-stage rules can reason about the brace-free vowels while still matching against the starred consonants passed along from the proto inventory.
+- Reworked `EnglishSandboxShortVowelSplit` to cover the documented FOOT/STRUT environments: `{*u}` now targets `{ʊ}` before velars, `{*z/m/n}` plus weak-tail templates, dark `{*l}`, `{*r}`, and the `{*f}/{*s}/{*θ}` codas (`wolf/wool`), while KIT contexts keep `{*e}`→`{ɪ}` before nasals/liquids. Everything else still falls through to `{ʌ}`/`{ɛ}`.
+- Inserted `EnglishSandboxPostVocalicRLoss` (after the vowel stack but before weak-tail reductions) so `{*r}` drops after any plain vowel plus a consonant/word boundary, giving us a chronological hook for the upcoming smoothing work.
+- Reran the attested-form sweep (same `python3 - <<'PY' …` harness as above): 179/376 English entries now reconstruct (up from 119), with the failure buckets collapsing to KIT = 61, FOOT = 3, weak-tail schwa = 51, /r/-bearing = 54, and `{ɔ/əʊ}` = 18. Spot checks show `bəʊn/bəʊθ` retrieving `{*bōr}` bundles prior to loss, while known outliers like `bʊzəm` and the irregular `ʋʊl/ʋʊlf` remain on the TODO list.
+- `python3 server/tools/api_regression.py` still PASS for Burmish & Germanic after the rewrites, so the sandbox tweaks stay isolated.
+
+### KIT sweep (WIP)
+
+- Fed the KIT bucket through the same dockered `flookup` harness (`python3 - <<'PY' …`) after filtering out diphthongs (`aɪ/eɪ/ɔɪ`). The remaining 35 entries are the genuine `{ɪ}` cases headed by `fish/give/six/will` alongside the `{ɪə}` + post-vocalic /r/ cohort (`beard/bier/deer/spear/ year`, etc.).
+- Updated `EnglishSandboxCoreVowelRules` so short `{*i}` finally drops its star and enters the plain alphabet, and extended `EnglishSandboxShortVowelSplit` with `{i}`→`{ɪ}` rewrites in closed syllables / word-final contexts. This keeps the KIT conditioning in the same stage as the `{*e}`/{`*u`} splits instead of leaving `{*i}` untouched.
+- The attested-form harness still lands at 179/376 successes (KIT bucket = 35) because the stubborn cases need post-vocalic /r/ smoothing (`{ɪ}`→`{ɪə}` before the new `EnglishSandboxPostVocalicRLoss`) or suffixal analogies (`sieve/singe/timber`). Logged them here so the next pass can target `{ɪə}` outputs without sacrificing the `{bəʊn}/{fʊt}` improvements we just landed.
