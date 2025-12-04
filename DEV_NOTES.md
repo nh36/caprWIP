@@ -636,3 +636,9 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Recompiled via docker compose exec backend sh -lc "cd /usr/app && foma -f fsts/english_brace_sandbox.txt" and wrote the attested-form sweep to tmp/english_sandbox_results.json with the Python harness (loops 376 English IPA forms through flookup english_brace_sandbox.bin).
 - Current sandbox stats: 134/376 successes (down from the previous 179 baseline). Failure buckets from the JSON lens land at KIT=49, FOOT=21, weak-tail=44, post-vocalic /r/=58, rounded {ɔ/əʊ}=28, plus 118 uncategorised other items that need triage.
 - Spot checks show the new /r/ smoothing exposes {bird/birr} for bɪəd/bɪər, but bʊzəm and pʊdər remain +? even after the broader {u} contexts. Need to audit why so many previously good entries dropped during this pass before attempting further vowel work.
+
+### KIT tracing & stage export plan
+
+- Added  as a first pass at stage tracing, but the sandbox stages currently emit ??? because the cascade never saves intermediate automata. Full traces will require refactoring the FST to save each stage (similar to the GermanAfter* bins) so we can flookup them directly inside Docker.
+- Next session: split out the sandbox stages into explicit save targets (e.g., english_sandbox_after_glide.bin, english_sandbox_after_vowel_rules.bin), update the docker build to emit those bins, and then rerun the tracer to capture true stage-by-stage outputs for KIT words (*fiskaz, *gebaną, *swestēr).
+- Once tracing works, resume the KIT fixes bucket-by-bucket (post-vocalic /r/, {sk} palatalisation, nasal+stop, sw glides) with harness checks after each change so we stay ≥179/376.

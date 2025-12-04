@@ -9,7 +9,14 @@
     "ipa": "beɪk",
     "concept": "bake",
     "proto": "*bakaną",
-    "outputs": []
+    "outputs": [
+      "bāk",
+      "bākz",
+      "bārk",
+      "baik",
+      "baikz",
+      "bairk"
+    ]
   },
   {
     "ipa": "bɔːl",
@@ -50,12 +57,7 @@
     "ipa": "bɪəd",
     "concept": "beard",
     "proto": "*bardaz",
-    "outputs": [
-      "bed",
-      "bid",
-      "berd",
-      "bird"
-    ]
+    "outputs": []
   },
   {
     "ipa": "biːvər",
@@ -91,30 +93,42 @@
     "ipa": "bɛrɪ",
     "concept": "berry",
     "proto": "*bazją",
-    "outputs": []
+    "outputs": [
+      "bezer",
+      "bezez",
+      "beziz",
+      "berrer",
+      "berrez",
+      "berriz"
+    ]
   },
   {
     "ipa": "bɪd",
     "concept": "bid",
     "proto": "*beudaną",
-    "outputs": []
+    "outputs": [
+      "bed",
+      "bid",
+      "berd",
+      "bird"
+    ]
   },
   {
     "ipa": "bɪd",
     "concept": "bid",
     "proto": "*bidjaną",
-    "outputs": []
+    "outputs": [
+      "bed",
+      "bid",
+      "berd",
+      "bird"
+    ]
   },
   {
     "ipa": "bɪər",
     "concept": "bier",
     "proto": "*barwōn",
-    "outputs": [
-      "bez",
-      "biz",
-      "berr",
-      "birr"
-    ]
+    "outputs": []
   },
   {
     "ipa": "baɪnd",
@@ -320,7 +334,14 @@
     "ipa": "breɪk",
     "concept": "break",
     "proto": "*brekaną",
-    "outputs": []
+    "outputs": [
+      "brāk",
+      "brākz",
+      "brārk",
+      "braik",
+      "braikz",
+      "brairk"
+    ]
   },
   {
     "ipa": "brɛst",
@@ -353,13 +374,19 @@
     "ipa": "braɪd",
     "concept": "bride",
     "proto": "*brūdiz",
-    "outputs": []
+    "outputs": [
+      "brārd",
+      "braird"
+    ]
   },
   {
     "ipa": "brɪŋ",
     "concept": "bring",
     "proto": "*brenganą",
-    "outputs": []
+    "outputs": [
+      "breŋ",
+      "briŋ"
+    ]
   },
   {
     "ipa": "brʊk",
@@ -410,7 +437,10 @@
     "ipa": "klaɪm",
     "concept": "climb",
     "proto": "*klembaną",
-    "outputs": []
+    "outputs": [
+      "klārm",
+      "klairm"
+    ]
   },
   {
     "ipa": "kəʊm",
@@ -485,13 +515,32 @@
     "ipa": "deɪl",
     "concept": "dale",
     "proto": "*dalaz",
-    "outputs": []
+    "outputs": [
+      "dāl",
+      "dail"
+    ]
   },
   {
     "ipa": "deɪ",
     "concept": "day",
     "proto": "*dagaz",
-    "outputs": []
+    "outputs": [
+      "dewer",
+      "dewez",
+      "dewiz",
+      "dezer",
+      "dezez",
+      "deziz",
+      "dexer",
+      "dexez",
+      "dexiz",
+      "dā",
+      "dār",
+      "dāz",
+      "dai",
+      "dair",
+      "daiz"
+    ]
   },
   {
     "ipa": "diːl",
@@ -515,12 +564,7 @@
     "ipa": "dɪər",
     "concept": "deer",
     "proto": "*deuzą",
-    "outputs": [
-      "dez",
-      "diz",
-      "derr",
-      "dirr"
-    ]
+    "outputs": []
   },
   {
     "ipa": "djuː",
@@ -543,7 +587,10 @@
     "ipa": "dɪl",
     "concept": "dill",
     "proto": "*deljaz",
-    "outputs": []
+    "outputs": [
+      "del",
+      "dil"
+    ]
   },
   {
     "ipa": "duː",
@@ -719,7 +766,10 @@
     "ipa": "faɪt",
     "concept": "fight",
     "proto": "*fextaną",
-    "outputs": []
+    "outputs": [
+      "fārt",
+      "fairt"
+    ]
   },
   {
     "ipa": "faɪnd",
@@ -737,16 +787,7 @@
     "ipa": "faɪər",
     "concept": "fire",
     "proto": "*fuwer",
-    "outputs": [
-      "fawez",
-      "fawiz",
-      "fazez",
-      "faziz",
-      "faxez",
-      "faxiz",
-      "fārr",
-      "fairr"
-    ]
+    "outputs": []
   },
   {
     "ipa": "fɪʃ",
@@ -758,7 +799,14 @@
     "ipa": "fɪst",
     "concept": "fist",
     "proto": "*funxwstiz",
-    "outputs": []
+    "outputs": [
+      "fest",
+      "festz",
+      "fist",
+      "fistz",
+      "ferst",
+      "first"
+    ]
   },
   {
     "ipa": "flɑːsk",
@@ -817,7 +865,23 @@
     "ipa": "flaɪ",
     "concept": "fly",
     "proto": "*fleuganą",
-    "outputs": []
+    "outputs": [
+      "flawer",
+      "flawez",
+      "flawiz",
+      "flazer",
+      "flazez",
+      "flaziz",
+      "flaxer",
+      "flaxez",
+      "flaxiz",
+      "flā",
+      "flār",
+      "flāz",
+      "flai",
+      "flair",
+      "flaiz"
+    ]
   },
   {
     "ipa": "fəʊl",
@@ -924,7 +988,10 @@
     "ipa": "fraɪt",
     "concept": "fright",
     "proto": "*furxtīn",
-    "outputs": []
+    "outputs": [
+      "frārt",
+      "frairt"
+    ]
   },
   {
     "ipa": "frɔst",
@@ -1025,7 +1092,12 @@
     "ipa": "heɪl",
     "concept": "hail",
     "proto": "*xaglą",
-    "outputs": []
+    "outputs": [
+      "hāl",
+      "hail",
+      "xāl",
+      "xail"
+    ]
   },
   {
     "ipa": "hɛər",
@@ -1142,7 +1214,38 @@
     "ipa": "heɪ",
     "concept": "hay",
     "proto": "*xawwją",
-    "outputs": []
+    "outputs": [
+      "hewer",
+      "hewez",
+      "hewiz",
+      "hezer",
+      "hezez",
+      "heziz",
+      "hexer",
+      "hexez",
+      "hexiz",
+      "hā",
+      "hār",
+      "hāz",
+      "hai",
+      "hair",
+      "haiz",
+      "xewer",
+      "xewez",
+      "xewiz",
+      "xezer",
+      "xezez",
+      "xeziz",
+      "xexer",
+      "xexez",
+      "xexiz",
+      "xā",
+      "xār",
+      "xāz",
+      "xai",
+      "xair",
+      "xaiz"
+    ]
   },
   {
     "ipa": "heɪzḷ",
@@ -1326,7 +1429,14 @@
     "ipa": "hʌnɪ",
     "concept": "honey",
     "proto": "*xunagą",
-    "outputs": []
+    "outputs": [
+      "hurner",
+      "hurnez",
+      "hurniz",
+      "xurner",
+      "xurnez",
+      "xurniz"
+    ]
   },
   {
     "ipa": "hʊd",
@@ -1398,7 +1508,10 @@
     "ipa": "naɪt",
     "concept": "knight",
     "proto": "*knext",
-    "outputs": []
+    "outputs": [
+      "nārt",
+      "nairt"
+    ]
   },
   {
     "ipa": "nɔb",
@@ -1412,7 +1525,10 @@
     "ipa": "leɪd",
     "concept": "lade",
     "proto": "*laθōjaną",
-    "outputs": []
+    "outputs": [
+      "lārd",
+      "laird"
+    ]
   },
   {
     "ipa": "lænd",
@@ -1491,13 +1607,25 @@
     "ipa": "lɪk",
     "concept": "lick",
     "proto": "*likkōjaną",
-    "outputs": []
+    "outputs": [
+      "lek",
+      "lekz",
+      "lerk",
+      "lik",
+      "likz",
+      "lirk"
+    ]
   },
   {
     "ipa": "lɪd",
     "concept": "lid",
     "proto": "*liθuz",
-    "outputs": []
+    "outputs": [
+      "led",
+      "lid",
+      "lerd",
+      "lird"
+    ]
   },
   {
     "ipa": "laɪf",
@@ -1509,13 +1637,19 @@
     "ipa": "laɪt",
     "concept": "light",
     "proto": "*leuxtjaną",
-    "outputs": []
+    "outputs": [
+      "lārt",
+      "lairt"
+    ]
   },
   {
     "ipa": "laɪm",
     "concept": "lime",
     "proto": "*līmą",
-    "outputs": []
+    "outputs": [
+      "lārm",
+      "lairm"
+    ]
   },
   {
     "ipa": "lɪndən",
@@ -1527,13 +1661,23 @@
     "ipa": "laɪn",
     "concept": "line",
     "proto": "*līnan",
-    "outputs": []
+    "outputs": [
+      "lārn",
+      "lairn"
+    ]
   },
   {
     "ipa": "lɪst",
     "concept": "list",
     "proto": "*līstōn",
-    "outputs": []
+    "outputs": [
+      "lest",
+      "lestz",
+      "list",
+      "listz",
+      "lerst",
+      "lirst"
+    ]
   },
   {
     "ipa": "laɪv",
@@ -1619,13 +1763,36 @@
     "ipa": "laɪ",
     "concept": "lye",
     "proto": "*laugō",
-    "outputs": []
+    "outputs": [
+      "lawer",
+      "lawez",
+      "lawiz",
+      "lazer",
+      "lazez",
+      "laziz",
+      "laxer",
+      "laxez",
+      "laxiz",
+      "lā",
+      "lār",
+      "lāz",
+      "lai",
+      "lair",
+      "laiz"
+    ]
   },
   {
     "ipa": "meɪk",
     "concept": "make",
     "proto": "*makōjaną",
-    "outputs": []
+    "outputs": [
+      "māk",
+      "mākz",
+      "mārk",
+      "maik",
+      "maikz",
+      "mairk"
+    ]
   },
   {
     "ipa": "mɔːlt",
@@ -1687,13 +1854,19 @@
     "ipa": "maɪt",
     "concept": "might",
     "proto": "*maxtiz",
-    "outputs": []
+    "outputs": [
+      "mārt",
+      "mairt"
+    ]
   },
   {
     "ipa": "mɪlk",
     "concept": "milk",
     "proto": "*melukz",
-    "outputs": []
+    "outputs": [
+      "melk",
+      "milk"
+    ]
   },
   {
     "ipa": "mʌnθ",
@@ -1724,13 +1897,19 @@
     "ipa": "neɪl",
     "concept": "nail",
     "proto": "*naglaz",
-    "outputs": []
+    "outputs": [
+      "nāl",
+      "nail"
+    ]
   },
   {
     "ipa": "neɪm",
     "concept": "name",
     "proto": "*namōn",
-    "outputs": []
+    "outputs": [
+      "nārm",
+      "nairm"
+    ]
   },
   {
     "ipa": "neɪv",
@@ -1798,7 +1977,10 @@
     "ipa": "naɪt",
     "concept": "night",
     "proto": "*naxtz",
-    "outputs": []
+    "outputs": [
+      "nārt",
+      "nairt"
+    ]
   },
   {
     "ipa": "naɪtmɛər",
@@ -1810,7 +1992,10 @@
     "ipa": "naɪn",
     "concept": "nine",
     "proto": "*newun",
-    "outputs": []
+    "outputs": [
+      "nārn",
+      "nairn"
+    ]
   },
   {
     "ipa": "nəʊz",
@@ -1840,7 +2025,10 @@
     "ipa": "reɪn",
     "concept": "rain",
     "proto": "*regną",
-    "outputs": []
+    "outputs": [
+      "rārn",
+      "rairn"
+    ]
   },
   {
     "ipa": "reɪnbəʊ",
@@ -1890,7 +2078,10 @@
     "ipa": "raɪd",
     "concept": "ride",
     "proto": "*rīdaną",
-    "outputs": []
+    "outputs": [
+      "rārd",
+      "raird"
+    ]
   },
   {
     "ipa": "raɪnd",
@@ -1991,13 +2182,32 @@
     "ipa": "raɪ",
     "concept": "rye",
     "proto": "*rugiz",
-    "outputs": []
+    "outputs": [
+      "rawer",
+      "rawez",
+      "rawiz",
+      "razer",
+      "razez",
+      "raziz",
+      "raxer",
+      "raxez",
+      "raxiz",
+      "rā",
+      "rār",
+      "rāz",
+      "rai",
+      "rair",
+      "raiz"
+    ]
   },
   {
     "ipa": "seɪl",
     "concept": "sail",
     "proto": "*seglą",
-    "outputs": []
+    "outputs": [
+      "sāl",
+      "sail"
+    ]
   },
   {
     "ipa": "sɑːkɪ",
@@ -2166,7 +2376,10 @@
     "ipa": "saɪd",
     "concept": "side",
     "proto": "*sīdōn",
-    "outputs": []
+    "outputs": [
+      "sārd",
+      "saird"
+    ]
   },
   {
     "ipa": "sɪv",
@@ -2178,7 +2391,10 @@
     "ipa": "sɪŋ",
     "concept": "sing",
     "proto": "*sengwaną",
-    "outputs": []
+    "outputs": [
+      "seŋ",
+      "siŋ"
+    ]
   },
   {
     "ipa": "sɪnʤ",
@@ -2196,7 +2412,12 @@
     "ipa": "sɪt",
     "concept": "sit",
     "proto": "*setjaną",
-    "outputs": []
+    "outputs": [
+      "set",
+      "sit",
+      "sert",
+      "sirt"
+    ]
   },
   {
     "ipa": "sɪks",
@@ -2208,7 +2429,23 @@
     "ipa": "sleɪ",
     "concept": "slay",
     "proto": "*slaxaną",
-    "outputs": []
+    "outputs": [
+      "slewer",
+      "slewez",
+      "slewiz",
+      "slezer",
+      "slezez",
+      "sleziz",
+      "slexer",
+      "slexez",
+      "slexiz",
+      "slā",
+      "slār",
+      "slāz",
+      "slai",
+      "slair",
+      "slaiz"
+    ]
   },
   {
     "ipa": "sliːp",
@@ -2223,16 +2460,16 @@
     "ipa": "slaɪm",
     "concept": "slime",
     "proto": "*slīmą",
-    "outputs": []
+    "outputs": [
+      "slārm",
+      "slairm"
+    ]
   },
   {
     "ipa": "smɪər",
     "concept": "smear",
     "proto": "*smerwjaną",
-    "outputs": [
-      "smez",
-      "smiz"
-    ]
+    "outputs": []
   },
   {
     "ipa": "snəʊ",
@@ -2290,18 +2527,18 @@
     "ipa": "spɪər",
     "concept": "spear",
     "proto": "*speru",
-    "outputs": [
-      "spez",
-      "spiz",
-      "sperr",
-      "spirr"
-    ]
+    "outputs": []
   },
   {
     "ipa": "spɪn",
     "concept": "spin",
     "proto": "*spennaną",
-    "outputs": []
+    "outputs": [
+      "spen",
+      "spin",
+      "spern",
+      "spirn"
+    ]
   },
   {
     "ipa": "spɪndḷ",
@@ -2375,13 +2612,19 @@
     "ipa": "stɪl",
     "concept": "still",
     "proto": "*stelljaną",
-    "outputs": []
+    "outputs": [
+      "stel",
+      "stil"
+    ]
   },
   {
     "ipa": "stɪlt",
     "concept": "stilt",
     "proto": "*steltjōn",
-    "outputs": []
+    "outputs": [
+      "stelt",
+      "stilt"
+    ]
   },
   {
     "ipa": "stɔk",
@@ -2497,7 +2740,10 @@
     "ipa": "strɪŋ",
     "concept": "string",
     "proto": "*strangiz",
-    "outputs": []
+    "outputs": [
+      "streŋ",
+      "striŋ"
+    ]
   },
   {
     "ipa": "stʌd",
@@ -2607,7 +2853,10 @@
     "ipa": "θeɪn",
     "concept": "thane",
     "proto": "*θegnaz",
-    "outputs": []
+    "outputs": [
+      "θārn",
+      "θairn"
+    ]
   },
   {
     "ipa": "θæŋks",
@@ -2631,7 +2880,10 @@
     "ipa": "θɪŋ",
     "concept": "thing",
     "proto": "*θengaz",
-    "outputs": []
+    "outputs": [
+      "θeŋ",
+      "θiŋ"
+    ]
   },
   {
     "ipa": "θɪŋk",
@@ -2697,13 +2949,23 @@
     "ipa": "tɪk",
     "concept": "tick",
     "proto": "*tikkōn",
-    "outputs": []
+    "outputs": [
+      "tek",
+      "tekz",
+      "terk",
+      "tik",
+      "tikz",
+      "tirk"
+    ]
   },
   {
     "ipa": "taɪd",
     "concept": "tide",
     "proto": "*tīdiz",
-    "outputs": []
+    "outputs": [
+      "tārd",
+      "taird"
+    ]
   },
   {
     "ipa": "tɪmbər",
@@ -3020,7 +3282,10 @@
     "ipa": "rɪŋ",
     "concept": "wring",
     "proto": "*wrenganą",
-    "outputs": []
+    "outputs": [
+      "reŋ",
+      "riŋ"
+    ]
   },
   {
     "ipa": "jɑːn",
@@ -3032,12 +3297,7 @@
     "ipa": "jɪər",
     "concept": "year",
     "proto": "*jērą",
-    "outputs": [
-      "jez",
-      "jiz",
-      "jerr",
-      "jirr"
-    ]
+    "outputs": []
   },
   {
     "ipa": "jəʊk",
