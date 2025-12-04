@@ -174,11 +174,6 @@ define EnglishSandboxGreatVowelShift [
     {ɑː} -> {əʊ} || _ {*w}
 ];
 
-# Late Middle English post-vocalic /r/ smoothing for KIT outputs.
-define EnglishSandboxPostVocalicRSmoothing [
-    {ɪ} -> {ɪə} || _ ({*r} | {r}) (EnglishSandboxStarConsonant | EnglishSandboxStarVocalic | .#.)
-];
-
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
 define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ .#.,
@@ -209,7 +204,6 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxOpenSyllableLengthening
     .o. EnglishSandboxBreakingLengthening
     .o. EnglishSandboxVowelRules
-    .o. EnglishSandboxPostVocalicRSmoothing
     .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
     .o. EnglishSandboxSilentInitialCleanup
