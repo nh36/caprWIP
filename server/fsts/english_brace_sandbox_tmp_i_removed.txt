@@ -132,8 +132,6 @@ define EnglishSandboxShortVowelSplit [
     {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
     {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
     {e} -> {ɛ},
-    {i} -> {ɪ} || _ EnglishSandboxStarConsonant,
-    {i} -> {ɪ} || _ .#.
 ];
 
 # Old English & Middle English vowel developments feeding the later English cascade.
@@ -222,4 +220,4 @@ define EnglishSandbox EnglishSandboxReflexes
 
 clear stack
 regex EnglishSandbox;
-save stack english_brace_sandbox.bin
+save stack english_brace_sandbox_tmp_i_removed.bin

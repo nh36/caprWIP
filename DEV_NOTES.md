@@ -424,3 +424,215 @@ See you tomorrow!
 - Fed the KIT bucket through the same dockered `flookup` harness (`python3 - <<'PY' …`) after filtering out diphthongs (`aɪ/eɪ/ɔɪ`). The remaining 35 entries are the genuine `{ɪ}` cases headed by `fish/give/six/will` alongside the `{ɪə}` + post-vocalic /r/ cohort (`beard/bier/deer/spear/ year`, etc.).
 - Updated `EnglishSandboxCoreVowelRules` so short `{*i}` finally drops its star and enters the plain alphabet, and extended `EnglishSandboxShortVowelSplit` with `{i}`→`{ɪ}` rewrites in closed syllables / word-final contexts. This keeps the KIT conditioning in the same stage as the `{*e}`/{`*u`} splits instead of leaving `{*i}` untouched.
 - The attested-form harness still lands at 179/376 successes (KIT bucket = 35) because the stubborn cases need post-vocalic /r/ smoothing (`{ɪ}`→`{ɪə}` before the new `EnglishSandboxPostVocalicRLoss`) or suffixal analogies (`sieve/singe/timber`). Logged them here so the next pass can target `{ɪə}` outputs without sacrificing the `{bəʊn}/{fʊt}` improvements we just landed.
+
+## 2025-12-04
+
+### KIT/FOOT contexts + /r/-smoothing harness
+
+- Extended  so FOOT now targets alveolar codas in both starred and plain alphabets ( + weak-tail templates, plain  codas) and added a plain  feed so the KIT split can finally act on closed  syllables. Introduced  between the vowel stack and  so  can surface as  before  deletes .
+- Recompiled via Opening file 'fsts/germanic.txt'.
+defined ProtoVowel: 1.1 kB. 2 states, 22 arcs, 22 paths.
+defined ProtoConsonant: 1.4 kB. 2 states, 28 arcs, 28 paths.
+defined ProtoSymbol: 2.3 kB. 2 states, 50 arcs, 50 paths.
+defined ProtoNucleus: 719 bytes. 4 states, 14 arcs, 14 paths.
+defined ProtoOnsetCore: 5.5 kB. 2 states, 125 arcs, 125 paths.
+defined ProtoOnset: 5.5 kB. 2 states, 125 arcs, 126 paths.
+defined ProtoCodaCore: 5.3 kB. 2 states, 121 arcs, 121 paths.
+defined ProtoCoda: 7.2 kB. 3 states, 242 arcs, 14763 paths.
+defined ProtoStrongSyllable: 13.9 kB. 7 states, 634 arcs, 26041932 paths.
+defined ProtoWeakOnset: 1.4 kB. 2 states, 28 arcs, 29 paths.
+defined ProtoWeakOralNucleus: 585 bytes. 2 states, 9 arcs, 9 paths.
+defined ProtoWeakNasalNucleus: 203 bytes. 2 states, 1 arc, 1 path.
+defined ProtoWeakCoda: 623 bytes. 2 states, 10 arcs, 11 paths.
+defined ProtoWeakOralSyllable: 2.0 kB. 4 states, 56 arcs, 2871 paths.
+defined ProtoWeakNasalSyllable: 1.4 kB. 3 states, 30 arcs, 29 paths.
+defined ProtoWeakTail: 3.4 kB. 7 states, 144 arcs, 8067801 paths.
+defined ProtoSyllable: 13.9 kB. 7 states, 634 arcs, 26041932 paths.
+defined ProtoWord: 17.8 kB. 13 states, 863 arcs, 209143179497574 paths.
+defined Cons: 1.4 kB. 2 states, 28 arcs, 28 paths.
+defined Vowel: 1.1 kB. 2 states, 22 arcs, 22 paths.
+defined FrontVowel: 630 bytes. 2 states, 10 arcs, 10 paths.
+defined BackVowel: 587 bytes. 2 states, 9 arcs, 9 paths.
+defined Sonorant: 456 bytes. 2 states, 6 arcs, 6 paths.
+defined pgrmInitSimple: 1.5 kB. 24 states, 44 arcs, 22 paths.
+defined pgrmMedial: 461 bytes. 6 states, 8 arcs, 4 paths.
+defined pgrmOnsetCore: 2.3 kB. 45 states, 99 arcs, 129 paths.
+defined pgrmOnset: 2.3 kB. 45 states, 99 arcs, 130 paths.
+defined pgrmShortVowel: 577 bytes. 8 states, 12 arcs, 6 paths.
+defined pgrmNasalVowel: 347 bytes. 4 states, 4 arcs, 2 paths.
+defined pgrmLongVowel: 524 bytes. 7 states, 10 arcs, 5 paths.
+defined pgrmDiphthong: 477 bytes. 7 states, 9 arcs, 4 paths.
+defined pgrmNucleus: 952 bytes. 14 states, 27 arcs, 15 paths.
+defined pgrmCodaSimple: 1.3 kB. 21 states, 38 arcs, 19 paths.
+defined pgrmCodaComplex: 3.2 kB. 77 states, 166 arcs, 104 paths.
+defined pgrmCodaNonEmpty: 3.4 kB. 79 states, 171 arcs, 123 paths.
+defined pgrmCoda: 3.4 kB. 79 states, 171 arcs, 124 paths.
+defined pgrmStrongPlainLight: 3.4 kB. 52 states, 159 arcs, 780 paths.
+defined pgrmStrongPlainHeavy: 10.5 kB. 150 states, 603 arcs, 256046 paths.
+defined pgrmStrongPlain: 10.2 kB. 148 states, 583 arcs, 256826 paths.
+defined pgrmStrongNasal: 2.7 kB. 48 states, 119 arcs, 260 paths.
+defined pgrmWeakOnset: 461 bytes. 6 states, 8 arcs, 5 paths.
+defined pgrmWeakOralNucleus: 519 bytes. 7 states, 10 arcs, 5 paths.
+defined pgrmWeakNasalNucleus: 347 bytes. 4 states, 4 arcs, 2 paths.
+defined pgrmWeakCoda: 577 bytes. 8 states, 12 arcs, 7 paths.
+defined pgrmWeakOralSyllable: 1.0 kB. 19 states, 35 arcs, 175 paths.
+defined pgrmWeakNasalSyllable: 611 bytes. 9 states, 14 arcs, 10 paths.
+defined pgrmWeakTailZero: 160 bytes. 1 state, 0 arcs, 1 path.
+defined pgrmWeakTailVowel: 2.3 kB. 71 states, 98 arcs, 38 paths.
+defined pgrmWeakTail: 2.3 kB. 71 states, 98 arcs, 39 paths.
+defined pgrmWord: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
+defined RemoveStars: 332 bytes. 1 state, 2 arcs, Cyclic.
+defined GermanLexOnset: 2.6 kB. 47 states, 116 arcs, 129 paths.
+defined GermanLexCoda: 3.3 kB. 78 states, 167 arcs, 124 paths.
+defined GermanLexConsonant: 4.5 kB. 85 states, 237 arcs, 191 paths.
+defined GermanLexShortVowel: 577 bytes. 8 states, 12 arcs, 6 paths.
+defined GermanLexLongVowel: 524 bytes. 7 states, 10 arcs, 5 paths.
+defined GermanLexNasalVowel: 347 bytes. 4 states, 4 arcs, 2 paths.
+defined GermanLexVowel: 990 bytes. 15 states, 26 arcs, 13 paths.
+defined GermanLexDiphthong: 477 bytes. 7 states, 9 arcs, 4 paths.
+defined GermanProtoInput: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
+defined EnglishSurfaceVowel: 897 bytes. 8 states, 20 arcs, 18 paths.
+defined EnglishSurfaceConsonant: 1.1 kB. 2 states, 23 arcs, 23 paths.
+defined EnglishSurfaceOnset: 1.9 kB. 4 states, 69 arcs, 12720 paths.
+defined EnglishSurfaceCoda: 1.9 kB. 4 states, 69 arcs, 12720 paths.
+defined EnglishSurfaceSyllable: 5.3 kB. 14 states, 266 arcs, 2912371200 paths.
+defined EnglishSurface: 5.9 kB. 12 states, 306 arcs, Cyclic.
+defined DutchSurfaceVowel: 890 bytes. 6 states, 18 arcs, 16 paths.
+defined DutchSurfaceConsonant: 1004 bytes. 2 states, 19 arcs, 19 paths.
+defined DutchSurfaceOnset: 1.6 kB. 4 states, 57 arcs, 7240 paths.
+defined DutchSurfaceCoda: 1.6 kB. 4 states, 57 arcs, 7240 paths.
+defined DutchSurfaceSyllable: 4.4 kB. 12 states, 212 arcs, 838681600 paths.
+defined DutchSurface: 6.0 kB. 12 states, 314 arcs, Cyclic.
+defined GermanSurfaceShortVowel: 713 bytes. 2 states, 12 arcs, 12 paths.
+defined GermanSurfaceMacronVowel: 418 bytes. 2 states, 5 arcs, 5 paths.
+defined GermanSurfaceDiphthong: 414 bytes. 4 states, 5 arcs, 3 paths.
+defined GermanSurfaceVowel: 976 bytes. 4 states, 20 arcs, 20 paths.
+defined GermanSurfaceConsonant: 1.1 kB. 4 states, 24 arcs, 24 paths.
+defined GermanSurfaceOnset: 3.2 kB. 10 states, 156 arcs, 14327 paths.
+defined GermanSurfaceCoda: 3.2 kB. 10 states, 156 arcs, 14327 paths.
+defined GermanSurfaceSyllable: 9.5 kB. 22 states, 529 arcs, 4105258580 paths.
+defined GermanSurface: 12.4 kB. 20 states, 716 arcs, Cyclic.
+defined EnglishInitialKnMarkers: 542 bytes. 2 states, 10 arcs, Cyclic.
+defined EnglishConsonantRules: 4.3 kB. 10 states, 206 arcs, Cyclic.
+defined EnglishGhMarker: 1.7 kB. 3 states, 53 arcs, Cyclic.
+defined EnglishSilentInitialCleanup: 418 bytes. 1 state, 4 arcs, Cyclic.
+defined EnglishGlideDeletion: 2.0 kB. 4 states, 73 arcs, Cyclic.
+defined EnglishGhDeletion: 2.1 kB. 4 states, 76 arcs, Cyclic.
+defined EnglishVowelRules: 1.2 kB. 5 states, 30 arcs, Cyclic.
+defined EnglishOrthography: 374 bytes. 1 state, 3 arcs, Cyclic.
+defined EnglishReflexes: 38.2 kB. 53 states, 2137 arcs, 560537344690722 paths.
+defined English: 16.8 kB. 42 states, 762 arcs, 515886581394 paths.
+16.8 kB. 42 states, 762 arcs, 515886581394 paths.
+Writing to file english.bin.
+defined DutchConsonantRules: 862 bytes. 3 states, 22 arcs, Cyclic.
+defined DutchSibilantRules: 2.6 kB. 6 states, 108 arcs, Cyclic.
+defined DutchVowelRules: 3.3 kB. 7 states, 125 arcs, Cyclic.
+defined DutchReductions: 2.1 kB. 3 states, 66 arcs, Cyclic.
+defined DutchOrthography: 374 bytes. 1 state, 3 arcs, Cyclic.
+defined DutchReflexes: 35.8 kB. 58 states, 1987 arcs, 287148714187734 paths.
+defined Dutch: 13.4 kB. 41 states, 555 arcs, 74013248891 paths.
+13.4 kB. 41 states, 555 arcs, 74013248891 paths.
+Writing to file dutch.bin.
+defined GermanConsonantShift: 3.4 kB. 19 states, 179 arcs, Cyclic.
+defined GermanFinalDevoicing: 1.0 kB. 4 states, 34 arcs, Cyclic.
+defined GermanStopShiftBackVowel: 559 bytes. 4 states, 9 arcs, 8 paths.
+defined GermanStopShiftFrontVowel: 632 bytes. 6 states, 12 arcs, 10 paths.
+defined GermanStopShiftLiquid: 329 bytes. 3 states, 3 arcs, 2 paths.
+defined GermanStopShiftBackLeft: 675 bytes. 6 states, 13 arcs, 24 paths.
+defined GermanStopShiftFrontLeft: 764 bytes. 8 states, 17 arcs, 30 paths.
+defined GermanStopShiftSuffix: 680 bytes. 9 states, 15 arcs, 16 paths.
+defined GermanStopShiftCodaRight: 383 bytes. 3 states, 4 arcs, Cyclic.
+defined GermanStopShift: 3.5 kB. 11 states, 175 arcs, Cyclic.
+defined GermanXPalatalization: 640 bytes. 3 states, 15 arcs, Cyclic.
+defined GermanExtraVowel: 675 bytes. 3 states, 11 arcs, 10 paths.
+defined GermanStarVowel: 1.2 kB. 3 states, 24 arcs, 23 paths.
+defined GermanStarDiphthong: 445 bytes. 5 states, 7 arcs, 5 paths.
+defined GermanStarVocalic: 1.2 kB. 5 states, 27 arcs, 28 paths.
+defined GermanStarConsonant: 1.1 kB. 3 states, 23 arcs, 22 paths.
+defined GermanStarFrontVowel: 672 bytes. 3 states, 11 arcs, 10 paths.
+defined GermanStarBackVowel: 629 bytes. 3 states, 10 arcs, 9 paths.
+defined GermanStarFrontTrigger: 804 bytes. 6 states, 16 arcs, 14 paths.
+defined GermanEToIBeforeW: 746 bytes. 6 states, 23 arcs, Cyclic.
+defined GermanWToUAfterI: 698 bytes. 4 states, 20 arcs, Cyclic.
+defined GermanIuToIi: 747 bytes. 6 states, 23 arcs, Cyclic.
+defined GermanEwChain: 1.2 kB. 10 states, 50 arcs, Cyclic.
+defined GermanAuMonophthContext: 541 bytes. 3 states, 8 arcs, 7 paths.
+defined GermanAuMonophth: 1.5 kB. 8 states, 64 arcs, Cyclic.
+defined GermanLongVowelRules: 802 bytes. 4 states, 23 arcs, Cyclic.
+defined GermanRemoveStars: 5.2 kB. 56 states, 223 arcs, Cyclic.
+defined GermanFinalNasalLoss: 455 bytes. 3 states, 8 arcs, Cyclic.
+defined GermanAzLoss: 550 bytes. 5 states, 13 arcs, Cyclic.
+defined GermanThemeApocope: 640 bytes. 5 states, 17 arcs, Cyclic.
+defined GermanAiShift: 1.3 kB. 12 states, 56 arcs, Cyclic.
+defined GermanHtShift: 746 bytes. 6 states, 23 arcs, Cyclic.
+defined GermanVowelAdjustments: 790 bytes. 2 states, 19 arcs, Cyclic.
+defined GermanCleanup: 432 bytes. 2 states, 5 arcs, Cyclic.
+defined GermanOrthography: 454 bytes. 3 states, 8 arcs, Cyclic.
+defined GermanLengthOrthography: 774 bytes. 2 states, 13 arcs, Cyclic.
+defined GermanRules: 48.4 kB. 267 states, 2982 arcs, Cyclic.
+defined GermanAfterEw: 18.4 kB. 235 states, 1103 arcs, 9992034 paths.
+defined GermanAfterLongV: 18.9 kB. 235 states, 1131 arcs, 10017384 paths.
+defined GermanAfterAu: 19.3 kB. 238 states, 1161 arcs, 10017384 paths.
+defined GermanAfterNasal: 19.3 kB. 236 states, 1159 arcs, 10017384 paths.
+defined GermanAfterConsonant: 20.6 kB. 242 states, 1236 arcs, 10402827 paths.
+defined GermanAfterStopShift: 21.5 kB. 249 states, 1290 arcs, 10560777 paths.
+defined GermanAfterPalatal: 21.6 kB. 249 states, 1290 arcs, 10560777 paths.
+defined GermanAfterAzLoss: 22.2 kB. 250 states, 1328 arcs, 10560777 paths.
+defined GermanAfterApocope: 24.1 kB. 251 states, 1448 arcs, 10560777 paths.
+defined GermanAfterVowelAdj: 24.2 kB. 249 states, 1450 arcs, 13375942 paths.
+defined GermanAfterFinalDevoice: 25.2 kB. 255 states, 1515 arcs, 13375942 paths.
+defined GermanAfterCleanup: 25.3 kB. 259 states, 1524 arcs, 13375942 paths.
+defined GermanAfterOrthography: 25.3 kB. 252 states, 1524 arcs, 13375942 paths.
+defined GermanAfterStarDrop: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
+defined GermanAfterShift: 21.6 kB. 249 states, 1290 arcs, 10560777 paths.
+defined GermanPreSurface: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
+defined GermanReflexes: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
+defined German: 27.4 kB. 139 states, 1634 arcs, 11054870 paths.
+27.4 kB. 139 states, 1634 arcs, 11054870 paths.
+Writing to file german.bin.
+defined EnglishSandboxSurfaceVowel: 897 bytes. 8 states, 20 arcs, 18 paths.
+defined EnglishSandboxSurfaceConsonant: 1.1 kB. 2 states, 23 arcs, 23 paths.
+defined EnglishSandboxSurfaceOnset: 1.9 kB. 4 states, 69 arcs, 12720 paths.
+defined EnglishSandboxSurfaceCoda: 1.9 kB. 4 states, 69 arcs, 12720 paths.
+defined EnglishSandboxSurfaceSyllable: 5.3 kB. 14 states, 266 arcs, 2912371200 paths.
+defined EnglishSandboxSurface: 5.9 kB. 12 states, 306 arcs, Cyclic.
+defined EnglishSandboxPlainVocalic: 939 bytes. 8 states, 21 arcs, 22 paths.
+defined EnglishSandboxPlainLiquid: 287 bytes. 2 states, 2 arcs, 2 paths.
+defined EnglishSandboxPlainNasal: 287 bytes. 2 states, 2 arcs, 2 paths.
+defined EnglishSandboxStarVowel: 1.2 kB. 3 states, 24 arcs, 23 paths.
+defined EnglishSandboxStarDiphthong: 445 bytes. 5 states, 7 arcs, 5 paths.
+defined EnglishSandboxStarConsonant: 1.1 kB. 3 states, 23 arcs, 22 paths.
+defined EnglishSandboxStarVocalic: 1.2 kB. 5 states, 27 arcs, 28 paths.
+defined EnglishSandboxStarNasal: 329 bytes. 3 states, 3 arcs, 2 paths.
+defined EnglishSandboxStarLiquid: 329 bytes. 3 states, 3 arcs, 2 paths.
+defined EnglishSandboxStarVelarStop: 329 bytes. 3 states, 3 arcs, 2 paths.
+defined EnglishSandboxWeakTailVowel: 2.2 kB. 67 states, 95 arcs, 38 paths.
+defined EnglishSandboxInitialKnMarkers: 1.0 kB. 9 states, 40 arcs, Cyclic.
+defined EnglishSandboxConsonantRules: 8.6 kB. 26 states, 479 arcs, Cyclic.
+defined EnglishSandboxGhMarker: 3.6 kB. 7 states, 171 arcs, Cyclic.
+defined EnglishSandboxSilentInitialCleanup: 418 bytes. 1 state, 4 arcs, Cyclic.
+defined EnglishSandboxGlideDeletion: 3.8 kB. 9 states, 186 arcs, Cyclic.
+defined EnglishSandboxGhDeletion: 3.5 kB. 7 states, 165 arcs, Cyclic.
+defined EnglishSandboxWestGermanic: 800 bytes. 5 states, 23 arcs, Cyclic.
+defined EnglishSandboxOpenSyllableLengthening: 6.5 kB. 10 states, 321 arcs, Cyclic.
+defined EnglishSandboxBreakingLengthening: 3.5 kB. 10 states, 163 arcs, Cyclic.
+defined EnglishSandboxShortVowelSplit: 2.7 kB. 5 states, 109 arcs, Cyclic.
+defined EnglishSandboxCoreVowelRules: 2.8 kB. 14 states, 131 arcs, Cyclic.
+defined EnglishSandboxGreatVowelShift: 3.4 kB. 8 states, 151 arcs, Cyclic.
+defined EnglishSandboxPostVocalicRSmoothing: 392 bytes. 2 states, 4 arcs, Cyclic.
+defined EnglishSandboxWeakTailReductions: 8.8 kB. 48 states, 515 arcs, Cyclic.
+defined EnglishSandboxPostVocalicRLoss: 2.0 kB. 6 states, 87 arcs, Cyclic.
+defined EnglishSandboxVowelRules: 11.1 kB. 29 states, 623 arcs, Cyclic.
+defined EnglishSandboxOrthography: 512 bytes. 3 states, 10 arcs, Cyclic.
+defined EnglishSandboxProtoInput: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
+defined EnglishSandboxReflexes: 47.8 kB. 344 states, 2950 arcs, 48059871 paths.
+defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
+27.4 kB. 245 states, 1632 arcs, 10110408 paths.
+## 2025-12-04
+
+### KIT/FOOT contexts + /r/-smoothing harness
+
+- Extended EnglishSandboxShortVowelSplit so FOOT now targets alveolar codas in both starred and plain alphabets ({t/d/z} + weak-tail templates, plain {l/r} codas) and added a plain {*i}->{i} feed so the KIT split can finally act on closed {i} syllables. Introduced EnglishSandboxPostVocalicRSmoothing between the vowel stack and /r/-loss so {ɪ} can surface as {ɪə} before EnglishSandboxPostVocalicRLoss deletes {r}.
+- Recompiled via docker compose exec backend sh -lc "cd /usr/app && foma -f fsts/english_brace_sandbox.txt" and wrote the attested-form sweep to tmp/english_sandbox_results.json with the Python harness (loops 376 English IPA forms through flookup english_brace_sandbox.bin).
+- Current sandbox stats: 134/376 successes (down from the previous 179 baseline). Failure buckets from the JSON lens land at KIT=49, FOOT=21, weak-tail=44, post-vocalic /r/=58, rounded {ɔ/əʊ}=28, plus 118 uncategorised other items that need triage.
+- Spot checks show the new /r/ smoothing exposes {bird/birr} for bɪəd/bɪər, but bʊzəm and pʊdər remain +? even after the broader {u} contexts. Need to audit why so many previously good entries dropped during this pass before attempting further vowel work.

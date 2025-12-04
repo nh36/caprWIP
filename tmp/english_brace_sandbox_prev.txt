@@ -26,14 +26,6 @@ define EnglishSandboxSurfaceCoda [
 define EnglishSandboxSurfaceSyllable EnglishSandboxSurfaceOnset EnglishSandboxSurfaceVowel EnglishSandboxSurfaceCoda;
 define EnglishSandboxSurface EnglishSandboxSurfaceSyllable+;
 
-# Helper sets for the plain (post-brace) stages.
-define EnglishSandboxPlainVocalic [
-    EnglishSandboxSurfaceVowel |
-    {e} | {o} | {u} | {oː}
-];
-define EnglishSandboxPlainLiquid [{l} | {r}];
-define EnglishSandboxPlainNasal [{m} | {n}];
-
 # Brace-aware helper inventories for the sandbox.
 define EnglishSandboxStarVowel GermanStarVowel;
 
@@ -108,32 +100,12 @@ define EnglishSandboxBreakingLengthening [
 define EnglishSandboxShortVowelSplit [
     {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {u} -> {ʊ} || _ {*z} EnglishSandboxStarVocalic,
-    {u} -> {ʊ} || _ {*z} EnglishSandboxWeakTailVowel,
     {u} -> {ʊ} || _ {*m} EnglishSandboxStarVocalic,
-    {u} -> {ʊ} || _ {*n} EnglishSandboxStarConsonant,
     {u} -> {ʊ} || _ {*l} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {l} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*r} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {r} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) EnglishSandboxStarConsonant,
-    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) .#.,
-    {u} -> {ʊ} || _ {*t} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {t} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*d} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {d} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*t} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {t} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*d} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {d} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {r} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*m} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*n} EnglishSandboxWeakTailVowel,
     {u} -> {ʌ},
     {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
     {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
-    {e} -> {ɛ},
-    {i} -> {ɪ} || _ EnglishSandboxStarConsonant,
-    {i} -> {ɪ} || _ .#.
+    {e} -> {ɛ}
 ];
 
 # Old English & Middle English vowel developments feeding the later English cascade.
@@ -152,7 +124,6 @@ define EnglishSandboxCoreVowelRules [
     {*e} -> {e},
     {*o} -> {ɔ},
     {*a} -> {æ} || _ {*r},
-    {*i} -> {i},
     {*u} -> {u}
 ];
 
@@ -174,20 +145,10 @@ define EnglishSandboxGreatVowelShift [
     {ɑː} -> {əʊ} || _ {*w}
 ];
 
-# Late Middle English post-vocalic /r/ smoothing for KIT outputs.
-define EnglishSandboxPostVocalicRSmoothing [
-    {ɪ} -> {ɪə} || _ ({*r} | {r}) (EnglishSandboxStarConsonant | EnglishSandboxStarVocalic | .#.)
-];
-
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
 define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ .#.,
     {*a} -> {ə} || _ EnglishSandboxWeakTailVowel
-];
-
-# Early Modern English post-vocalic /r/-loss.
-define EnglishSandboxPostVocalicRLoss [
-    {*r} -> 0 || EnglishSandboxPlainVocalic _ (EnglishSandboxStarConsonant | .#.)
 ];
 
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
@@ -209,8 +170,6 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxOpenSyllableLengthening
     .o. EnglishSandboxBreakingLengthening
     .o. EnglishSandboxVowelRules
-    .o. EnglishSandboxPostVocalicRSmoothing
-    .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion
@@ -222,4 +181,4 @@ define EnglishSandbox EnglishSandboxReflexes
 
 clear stack
 regex EnglishSandbox;
-save stack english_brace_sandbox.bin
+save stack english_brace_sandbox_prev.bin
