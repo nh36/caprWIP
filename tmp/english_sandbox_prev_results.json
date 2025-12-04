@@ -1,0 +1,2416 @@
+[
+  {
+    "ipa": "ædər",
+    "concept": "adder",
+    "outputs": []
+  },
+  {
+    "ipa": "beɪk",
+    "concept": "bake",
+    "outputs": [
+      "bāk",
+      "bākz",
+      "baik",
+      "baikz"
+    ]
+  },
+  {
+    "ipa": "bɔːl",
+    "concept": "ball",
+    "outputs": [
+      "bōl",
+      "bal",
+      "baul",
+      "bul"
+    ]
+  },
+  {
+    "ipa": "bæn",
+    "concept": "ban",
+    "outputs": []
+  },
+  {
+    "ipa": "bærəʊ",
+    "concept": "barrow",
+    "outputs": []
+  },
+  {
+    "ipa": "bæst",
+    "concept": "bast",
+    "outputs": []
+  },
+  {
+    "ipa": "bɑːθ",
+    "concept": "bath",
+    "outputs": []
+  },
+  {
+    "ipa": "bɪəd",
+    "concept": "beard",
+    "outputs": []
+  },
+  {
+    "ipa": "biːvər",
+    "concept": "beaver",
+    "outputs": []
+  },
+  {
+    "ipa": "biːʧ",
+    "concept": "beech",
+    "outputs": []
+  },
+  {
+    "ipa": "bɪɡɪn",
+    "concept": "begin",
+    "outputs": []
+  },
+  {
+    "ipa": "bɪliːv",
+    "concept": "believe",
+    "outputs": []
+  },
+  {
+    "ipa": "bɛlɪ",
+    "concept": "belly",
+    "outputs": []
+  },
+  {
+    "ipa": "bɛrɪ",
+    "concept": "berry",
+    "outputs": []
+  },
+  {
+    "ipa": "bɪd",
+    "concept": "bid",
+    "outputs": [
+      "bed"
+    ]
+  },
+  {
+    "ipa": "bɪd",
+    "concept": "bid",
+    "outputs": [
+      "bed"
+    ]
+  },
+  {
+    "ipa": "bɪər",
+    "concept": "bier",
+    "outputs": []
+  },
+  {
+    "ipa": "baɪnd",
+    "concept": "bind",
+    "outputs": []
+  },
+  {
+    "ipa": "bɜːθ",
+    "concept": "birth",
+    "outputs": []
+  },
+  {
+    "ipa": "blʌd",
+    "concept": "blood",
+    "outputs": [
+      "blud"
+    ]
+  },
+  {
+    "ipa": "bɔːd",
+    "concept": "board",
+    "outputs": []
+  },
+  {
+    "ipa": "bəʊn",
+    "concept": "bone",
+    "outputs": []
+  },
+  {
+    "ipa": "bʊk",
+    "concept": "book",
+    "outputs": [
+      "bōk",
+      "bōkz",
+      "bauk",
+      "baukz",
+      "buk",
+      "bukz"
+    ]
+  },
+  {
+    "ipa": "bɔːr",
+    "concept": "bore",
+    "outputs": [
+      "bōr",
+      "bar",
+      "baur",
+      "bur"
+    ]
+  },
+  {
+    "ipa": "bʊzəm",
+    "concept": "bosom",
+    "outputs": []
+  },
+  {
+    "ipa": "bəʊθ",
+    "concept": "both",
+    "outputs": []
+  },
+  {
+    "ipa": "bɔtəm",
+    "concept": "bottom",
+    "outputs": []
+  },
+  {
+    "ipa": "baʊ",
+    "concept": "bough",
+    "outputs": [
+      "bawō",
+      "bazō",
+      "baxō",
+      "bō",
+      "bōz",
+      "bau",
+      "bauz"
+    ]
+  },
+  {
+    "ipa": "bəʊ",
+    "concept": "bow",
+    "outputs": [
+      "bā",
+      "bāz",
+      "bō",
+      "bōz",
+      "bau",
+      "bauz",
+      "bai",
+      "baiz"
+    ]
+  },
+  {
+    "ipa": "bəʊ",
+    "concept": "bow",
+    "outputs": [
+      "bā",
+      "bāz",
+      "bō",
+      "bōz",
+      "bau",
+      "bauz",
+      "bai",
+      "baiz"
+    ]
+  },
+  {
+    "ipa": "bəʊ",
+    "concept": "bow",
+    "outputs": [
+      "bā",
+      "bāz",
+      "bō",
+      "bōz",
+      "bau",
+      "bauz",
+      "bai",
+      "baiz"
+    ]
+  },
+  {
+    "ipa": "baʊər",
+    "concept": "bower",
+    "outputs": []
+  },
+  {
+    "ipa": "brænd",
+    "concept": "brand",
+    "outputs": []
+  },
+  {
+    "ipa": "brɛd",
+    "concept": "bread",
+    "outputs": [
+      "bred"
+    ]
+  },
+  {
+    "ipa": "breɪk",
+    "concept": "break",
+    "outputs": [
+      "brāk",
+      "brākz",
+      "braik",
+      "braikz"
+    ]
+  },
+  {
+    "ipa": "brɛst",
+    "concept": "breast",
+    "outputs": [
+      "brest",
+      "brestz"
+    ]
+  },
+  {
+    "ipa": "brʊk",
+    "concept": "breeches",
+    "outputs": [
+      "brōk",
+      "brōkz",
+      "brauk",
+      "braukz",
+      "bruk",
+      "brukz"
+    ]
+  },
+  {
+    "ipa": "braɪd",
+    "concept": "bride",
+    "outputs": []
+  },
+  {
+    "ipa": "brɪŋ",
+    "concept": "bring",
+    "outputs": [
+      "breŋ"
+    ]
+  },
+  {
+    "ipa": "brʊk",
+    "concept": "brook",
+    "outputs": [
+      "brōk",
+      "brōkz",
+      "brauk",
+      "braukz",
+      "bruk",
+      "brukz"
+    ]
+  },
+  {
+    "ipa": "bʌk",
+    "concept": "buck",
+    "outputs": [
+      "buk",
+      "bukz"
+    ]
+  },
+  {
+    "ipa": "bɜːst",
+    "concept": "burst",
+    "outputs": []
+  },
+  {
+    "ipa": "kɑːf",
+    "concept": "calf",
+    "outputs": []
+  },
+  {
+    "ipa": "ʧuː",
+    "concept": "chew",
+    "outputs": []
+  },
+  {
+    "ipa": "klaɪm",
+    "concept": "climb",
+    "outputs": []
+  },
+  {
+    "ipa": "kəʊm",
+    "concept": "comb",
+    "outputs": []
+  },
+  {
+    "ipa": "kɔːn",
+    "concept": "corn",
+    "outputs": []
+  },
+  {
+    "ipa": "kaʊ",
+    "concept": "cow",
+    "outputs": [
+      "kawō",
+      "kazō",
+      "kaxō",
+      "kō",
+      "kōz",
+      "kau",
+      "kauz"
+    ]
+  },
+  {
+    "ipa": "krɑːft",
+    "concept": "craft",
+    "outputs": []
+  },
+  {
+    "ipa": "krɔp",
+    "concept": "crop",
+    "outputs": []
+  },
+  {
+    "ipa": "kʌd",
+    "concept": "cud",
+    "outputs": [
+      "kud"
+    ]
+  },
+  {
+    "ipa": "deɪl",
+    "concept": "dale",
+    "outputs": [
+      "dāl",
+      "dail"
+    ]
+  },
+  {
+    "ipa": "deɪ",
+    "concept": "day",
+    "outputs": [
+      "dā",
+      "dāz",
+      "dai",
+      "daiz"
+    ]
+  },
+  {
+    "ipa": "diːl",
+    "concept": "deal",
+    "outputs": [
+      "dēl",
+      "dīl"
+    ]
+  },
+  {
+    "ipa": "diːd",
+    "concept": "deed",
+    "outputs": []
+  },
+  {
+    "ipa": "dɪər",
+    "concept": "deer",
+    "outputs": []
+  },
+  {
+    "ipa": "djuː",
+    "concept": "dew",
+    "outputs": [
+      "djō",
+      "djōz",
+      "djū",
+      "djūz",
+      "djau",
+      "djauz"
+    ]
+  },
+  {
+    "ipa": "dɪl",
+    "concept": "dill",
+    "outputs": [
+      "del"
+    ]
+  },
+  {
+    "ipa": "duː",
+    "concept": "do",
+    "outputs": [
+      "dō",
+      "dōz",
+      "dū",
+      "dūz",
+      "dau",
+      "dauz"
+    ]
+  },
+  {
+    "ipa": "dɔːr",
+    "concept": "door",
+    "outputs": [
+      "dōr",
+      "dar",
+      "daur",
+      "dur"
+    ]
+  },
+  {
+    "ipa": "dəʊ",
+    "concept": "dough",
+    "outputs": [
+      "dā",
+      "dāz",
+      "dō",
+      "dōz",
+      "dau",
+      "dauz",
+      "dai",
+      "daiz"
+    ]
+  },
+  {
+    "ipa": "dʌv",
+    "concept": "dove",
+    "outputs": []
+  },
+  {
+    "ipa": "driːm",
+    "concept": "dream",
+    "outputs": []
+  },
+  {
+    "ipa": "drɛnʧ",
+    "concept": "drench",
+    "outputs": []
+  },
+  {
+    "ipa": "drɪŋk",
+    "concept": "drink",
+    "outputs": []
+  },
+  {
+    "ipa": "draɪv",
+    "concept": "drive",
+    "outputs": []
+  },
+  {
+    "ipa": "ɜːθ",
+    "concept": "earth",
+    "outputs": []
+  },
+  {
+    "ipa": "iːt",
+    "concept": "eat",
+    "outputs": []
+  },
+  {
+    "ipa": "iːl",
+    "concept": "eel",
+    "outputs": [
+      "ēl",
+      "īl"
+    ]
+  },
+  {
+    "ipa": "fɔːl",
+    "concept": "fall",
+    "outputs": [
+      "fōl",
+      "fal",
+      "faul",
+      "ful"
+    ]
+  },
+  {
+    "ipa": "fɛər",
+    "concept": "fare",
+    "outputs": []
+  },
+  {
+    "ipa": "fɑːst",
+    "concept": "fast",
+    "outputs": []
+  },
+  {
+    "ipa": "fɑːðər",
+    "concept": "father",
+    "outputs": []
+  },
+  {
+    "ipa": "fiː",
+    "concept": "fee",
+    "outputs": [
+      "fē",
+      "fēz",
+      "fī",
+      "fīz"
+    ]
+  },
+  {
+    "ipa": "fɛl",
+    "concept": "fell",
+    "outputs": [
+      "fel"
+    ]
+  },
+  {
+    "ipa": "fɜːn",
+    "concept": "fern",
+    "outputs": []
+  },
+  {
+    "ipa": "fiːld",
+    "concept": "field",
+    "outputs": [
+      "fēld",
+      "fīld"
+    ]
+  },
+  {
+    "ipa": "faɪt",
+    "concept": "fight",
+    "outputs": []
+  },
+  {
+    "ipa": "faɪnd",
+    "concept": "find",
+    "outputs": []
+  },
+  {
+    "ipa": "fɪŋɡər",
+    "concept": "finger",
+    "outputs": []
+  },
+  {
+    "ipa": "faɪər",
+    "concept": "fire",
+    "outputs": []
+  },
+  {
+    "ipa": "fɪʃ",
+    "concept": "fish",
+    "outputs": []
+  },
+  {
+    "ipa": "fɪst",
+    "concept": "fist",
+    "outputs": [
+      "fest",
+      "festz"
+    ]
+  },
+  {
+    "ipa": "flɑːsk",
+    "concept": "flask",
+    "outputs": []
+  },
+  {
+    "ipa": "flæks",
+    "concept": "flax",
+    "outputs": []
+  },
+  {
+    "ipa": "fliː",
+    "concept": "flea",
+    "outputs": [
+      "flē",
+      "flēz",
+      "flī",
+      "flīz"
+    ]
+  },
+  {
+    "ipa": "fliː",
+    "concept": "flee",
+    "outputs": [
+      "flē",
+      "flēz",
+      "flī",
+      "flīz"
+    ]
+  },
+  {
+    "ipa": "flɛʃ",
+    "concept": "flesh",
+    "outputs": []
+  },
+  {
+    "ipa": "flʌd",
+    "concept": "flood",
+    "outputs": [
+      "flud"
+    ]
+  },
+  {
+    "ipa": "flaɪ",
+    "concept": "fly",
+    "outputs": [
+      "flā",
+      "flāz",
+      "flai",
+      "flaiz"
+    ]
+  },
+  {
+    "ipa": "fəʊl",
+    "concept": "foal",
+    "outputs": [
+      "fāl",
+      "fōl",
+      "faul",
+      "fal",
+      "fail"
+    ]
+  },
+  {
+    "ipa": "fɔdər",
+    "concept": "fodder",
+    "outputs": []
+  },
+  {
+    "ipa": "fəʊld",
+    "concept": "fold",
+    "outputs": [
+      "fāld",
+      "fōld",
+      "fauld",
+      "fald",
+      "faild"
+    ]
+  },
+  {
+    "ipa": "fəʊk",
+    "concept": "folk",
+    "outputs": [
+      "fāk",
+      "fākz",
+      "fōk",
+      "fōkz",
+      "fauk",
+      "faukz",
+      "faik",
+      "faikz"
+    ]
+  },
+  {
+    "ipa": "fɔləʊ",
+    "concept": "follow",
+    "outputs": []
+  },
+  {
+    "ipa": "fəlɔːn",
+    "concept": "forlorn",
+    "outputs": []
+  },
+  {
+    "ipa": "fɔːr",
+    "concept": "four",
+    "outputs": [
+      "fōr",
+      "far",
+      "faur",
+      "fur"
+    ]
+  },
+  {
+    "ipa": "faʊl",
+    "concept": "fowl",
+    "outputs": [
+      "fōl",
+      "faul",
+      "fal"
+    ]
+  },
+  {
+    "ipa": "fɔks",
+    "concept": "fox",
+    "outputs": []
+  },
+  {
+    "ipa": "friːz",
+    "concept": "freeze",
+    "outputs": []
+  },
+  {
+    "ipa": "frɛnd",
+    "concept": "friend",
+    "outputs": []
+  },
+  {
+    "ipa": "fraɪt",
+    "concept": "fright",
+    "outputs": []
+  },
+  {
+    "ipa": "frɔst",
+    "concept": "frost",
+    "outputs": []
+  },
+  {
+    "ipa": "fʌrəʊ",
+    "concept": "furrow",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡɔːl",
+    "concept": "gall",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡæŋ",
+    "concept": "gang",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡəʊst",
+    "concept": "ghost",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡɪft",
+    "concept": "gift",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡɪv",
+    "concept": "give",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡɔd",
+    "concept": "god",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡəʊld",
+    "concept": "gold",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡuːs",
+    "concept": "goose",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡrɑːs",
+    "concept": "grass",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡrɑːv",
+    "concept": "grave",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡraɪp",
+    "concept": "gripe",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡraʊnd",
+    "concept": "ground",
+    "outputs": []
+  },
+  {
+    "ipa": "ɡɛst",
+    "concept": "guest",
+    "outputs": []
+  },
+  {
+    "ipa": "heɪl",
+    "concept": "hail",
+    "outputs": [
+      "hāl",
+      "hail",
+      "xāl",
+      "xail"
+    ]
+  },
+  {
+    "ipa": "hɛər",
+    "concept": "hair",
+    "outputs": []
+  },
+  {
+    "ipa": "hɔːl",
+    "concept": "hall",
+    "outputs": [
+      "hōl",
+      "hal",
+      "haul",
+      "hul",
+      "xōl",
+      "xal",
+      "xaul",
+      "xul"
+    ]
+  },
+  {
+    "ipa": "hæmər",
+    "concept": "hammer",
+    "outputs": []
+  },
+  {
+    "ipa": "hænd",
+    "concept": "hand",
+    "outputs": []
+  },
+  {
+    "ipa": "hændḷ",
+    "concept": "handle",
+    "outputs": []
+  },
+  {
+    "ipa": "hɑːm",
+    "concept": "harm",
+    "outputs": []
+  },
+  {
+    "ipa": "hɑːvɪst",
+    "concept": "harvest",
+    "outputs": []
+  },
+  {
+    "ipa": "hæv",
+    "concept": "have",
+    "outputs": []
+  },
+  {
+    "ipa": "hɔː",
+    "concept": "haw",
+    "outputs": [
+      "hō",
+      "hōz",
+      "hau",
+      "hauz",
+      "hu",
+      "huz",
+      "xō",
+      "xōz",
+      "xau",
+      "xauz",
+      "xu",
+      "xuz"
+    ]
+  },
+  {
+    "ipa": "hɔːk",
+    "concept": "hawk",
+    "outputs": [
+      "hōk",
+      "hōkz",
+      "hauk",
+      "haukz",
+      "huk",
+      "hukz",
+      "xōk",
+      "xōkz",
+      "xauk",
+      "xaukz",
+      "xuk",
+      "xukz"
+    ]
+  },
+  {
+    "ipa": "heɪ",
+    "concept": "hay",
+    "outputs": [
+      "hā",
+      "hāz",
+      "hai",
+      "haiz",
+      "xā",
+      "xāz",
+      "xai",
+      "xaiz"
+    ]
+  },
+  {
+    "ipa": "heɪzḷ",
+    "concept": "hazel",
+    "outputs": []
+  },
+  {
+    "ipa": "hɛd",
+    "concept": "head",
+    "outputs": [
+      "hed",
+      "xed"
+    ]
+  },
+  {
+    "ipa": "hiːl",
+    "concept": "heal",
+    "outputs": [
+      "hēl",
+      "hīl",
+      "xēl",
+      "xīl"
+    ]
+  },
+  {
+    "ipa": "hɑːt",
+    "concept": "heart",
+    "outputs": []
+  },
+  {
+    "ipa": "hɑːθ",
+    "concept": "hearth",
+    "outputs": []
+  },
+  {
+    "ipa": "hiːθ",
+    "concept": "heath",
+    "outputs": []
+  },
+  {
+    "ipa": "hɛvṇ",
+    "concept": "heaven",
+    "outputs": []
+  },
+  {
+    "ipa": "hɛʤ",
+    "concept": "hedge",
+    "outputs": []
+  },
+  {
+    "ipa": "hɛlm",
+    "concept": "helm",
+    "outputs": [
+      "helm",
+      "xelm"
+    ]
+  },
+  {
+    "ipa": "hɛlp",
+    "concept": "help",
+    "outputs": [
+      "help",
+      "xelp"
+    ]
+  },
+  {
+    "ipa": "hɛlp",
+    "concept": "help",
+    "outputs": [
+      "help",
+      "xelp"
+    ]
+  },
+  {
+    "ipa": "hɜːd",
+    "concept": "herd",
+    "outputs": []
+  },
+  {
+    "ipa": "hjuː",
+    "concept": "hew",
+    "outputs": [
+      "hjō",
+      "hjōz",
+      "hjū",
+      "hjūz",
+      "hjau",
+      "hjauz",
+      "xjō",
+      "xjōz",
+      "xjū",
+      "xjūz",
+      "xjau",
+      "xjauz"
+    ]
+  },
+  {
+    "ipa": "haɪnd",
+    "concept": "hind",
+    "outputs": []
+  },
+  {
+    "ipa": "hɔːd",
+    "concept": "hoard",
+    "outputs": []
+  },
+  {
+    "ipa": "həʊld",
+    "concept": "hold",
+    "outputs": [
+      "hāld",
+      "hōld",
+      "hauld",
+      "hald",
+      "haild",
+      "xāld",
+      "xōld",
+      "xauld",
+      "xald",
+      "xaild"
+    ]
+  },
+  {
+    "ipa": "həʊm",
+    "concept": "home",
+    "outputs": []
+  },
+  {
+    "ipa": "hʌnɪ",
+    "concept": "honey",
+    "outputs": []
+  },
+  {
+    "ipa": "hʊd",
+    "concept": "hood",
+    "outputs": [
+      "hud",
+      "xud"
+    ]
+  },
+  {
+    "ipa": "huːf",
+    "concept": "hoof",
+    "outputs": []
+  },
+  {
+    "ipa": "hɔːn",
+    "concept": "horn",
+    "outputs": []
+  },
+  {
+    "ipa": "haʊnd",
+    "concept": "hound",
+    "outputs": []
+  },
+  {
+    "ipa": "niːd",
+    "concept": "knead",
+    "outputs": []
+  },
+  {
+    "ipa": "niː",
+    "concept": "knee",
+    "outputs": [
+      "nē",
+      "nēz",
+      "nī",
+      "nīz"
+    ]
+  },
+  {
+    "ipa": "naɪt",
+    "concept": "knight",
+    "outputs": []
+  },
+  {
+    "ipa": "nɔb",
+    "concept": "knob",
+    "outputs": []
+  },
+  {
+    "ipa": "leɪd",
+    "concept": "lade",
+    "outputs": []
+  },
+  {
+    "ipa": "lænd",
+    "concept": "land",
+    "outputs": []
+  },
+  {
+    "ipa": "læp",
+    "concept": "lap",
+    "outputs": []
+  },
+  {
+    "ipa": "lɑːst",
+    "concept": "last",
+    "outputs": []
+  },
+  {
+    "ipa": "lɑːf",
+    "concept": "laugh",
+    "outputs": []
+  },
+  {
+    "ipa": "liːd",
+    "concept": "lead",
+    "outputs": []
+  },
+  {
+    "ipa": "liːf",
+    "concept": "leaf",
+    "outputs": []
+  },
+  {
+    "ipa": "lɜːn",
+    "concept": "learn",
+    "outputs": []
+  },
+  {
+    "ipa": "lɛðər",
+    "concept": "leather",
+    "outputs": []
+  },
+  {
+    "ipa": "liːk",
+    "concept": "leek",
+    "outputs": [
+      "lēk",
+      "lēkz",
+      "līk",
+      "līkz"
+    ]
+  },
+  {
+    "ipa": "lɛt",
+    "concept": "let",
+    "outputs": [
+      "let"
+    ]
+  },
+  {
+    "ipa": "lɪk",
+    "concept": "lick",
+    "outputs": [
+      "lek",
+      "lekz"
+    ]
+  },
+  {
+    "ipa": "lɪd",
+    "concept": "lid",
+    "outputs": [
+      "led"
+    ]
+  },
+  {
+    "ipa": "laɪf",
+    "concept": "life",
+    "outputs": []
+  },
+  {
+    "ipa": "laɪt",
+    "concept": "light",
+    "outputs": []
+  },
+  {
+    "ipa": "laɪm",
+    "concept": "lime",
+    "outputs": []
+  },
+  {
+    "ipa": "lɪndən",
+    "concept": "linden",
+    "outputs": []
+  },
+  {
+    "ipa": "laɪn",
+    "concept": "line",
+    "outputs": []
+  },
+  {
+    "ipa": "lɪst",
+    "concept": "list",
+    "outputs": [
+      "lest",
+      "lestz"
+    ]
+  },
+  {
+    "ipa": "laɪv",
+    "concept": "live",
+    "outputs": []
+  },
+  {
+    "ipa": "lɪvər",
+    "concept": "liver",
+    "outputs": []
+  },
+  {
+    "ipa": "ləʊm",
+    "concept": "loam",
+    "outputs": []
+  },
+  {
+    "ipa": "ləʊθ",
+    "concept": "loath",
+    "outputs": []
+  },
+  {
+    "ipa": "lɔk",
+    "concept": "lock",
+    "outputs": [
+      "lok",
+      "lokz"
+    ]
+  },
+  {
+    "ipa": "lɔk",
+    "concept": "lock",
+    "outputs": [
+      "lok",
+      "lokz"
+    ]
+  },
+  {
+    "ipa": "laʊs",
+    "concept": "louse",
+    "outputs": []
+  },
+  {
+    "ipa": "lʌŋ",
+    "concept": "lung",
+    "outputs": [
+      "luŋ"
+    ]
+  },
+  {
+    "ipa": "lʌst",
+    "concept": "lust",
+    "outputs": [
+      "lust",
+      "lustz"
+    ]
+  },
+  {
+    "ipa": "laɪ",
+    "concept": "lye",
+    "outputs": [
+      "lā",
+      "lāz",
+      "lai",
+      "laiz"
+    ]
+  },
+  {
+    "ipa": "meɪk",
+    "concept": "make",
+    "outputs": [
+      "māk",
+      "mākz",
+      "maik",
+      "maikz"
+    ]
+  },
+  {
+    "ipa": "mɔːlt",
+    "concept": "malt",
+    "outputs": [
+      "mōlt",
+      "malt",
+      "mault",
+      "mult"
+    ]
+  },
+  {
+    "ipa": "mæn",
+    "concept": "man",
+    "outputs": []
+  },
+  {
+    "ipa": "mɑːʧ",
+    "concept": "march",
+    "outputs": []
+  },
+  {
+    "ipa": "mɑːst",
+    "concept": "mast",
+    "outputs": []
+  },
+  {
+    "ipa": "miːl",
+    "concept": "meal",
+    "outputs": [
+      "mēl",
+      "mīl"
+    ]
+  },
+  {
+    "ipa": "miːn",
+    "concept": "mean",
+    "outputs": []
+  },
+  {
+    "ipa": "miːd",
+    "concept": "meed",
+    "outputs": []
+  },
+  {
+    "ipa": "maɪt",
+    "concept": "might",
+    "outputs": []
+  },
+  {
+    "ipa": "mɪlk",
+    "concept": "milk",
+    "outputs": [
+      "melk"
+    ]
+  },
+  {
+    "ipa": "mʌnθ",
+    "concept": "month",
+    "outputs": [
+      "munθ"
+    ]
+  },
+  {
+    "ipa": "muːd",
+    "concept": "mood",
+    "outputs": []
+  },
+  {
+    "ipa": "mʌðər",
+    "concept": "mother",
+    "outputs": []
+  },
+  {
+    "ipa": "neɪl",
+    "concept": "nail",
+    "outputs": [
+      "nāl",
+      "nail"
+    ]
+  },
+  {
+    "ipa": "neɪm",
+    "concept": "name",
+    "outputs": []
+  },
+  {
+    "ipa": "neɪv",
+    "concept": "nave",
+    "outputs": []
+  },
+  {
+    "ipa": "neɪvḷ",
+    "concept": "navel",
+    "outputs": []
+  },
+  {
+    "ipa": "nɛk",
+    "concept": "neck",
+    "outputs": [
+      "nek",
+      "nekz"
+    ]
+  },
+  {
+    "ipa": "niːd",
+    "concept": "need",
+    "outputs": []
+  },
+  {
+    "ipa": "niːdḷ",
+    "concept": "needle",
+    "outputs": []
+  },
+  {
+    "ipa": "nɛst",
+    "concept": "nest",
+    "outputs": [
+      "nest",
+      "nestz"
+    ]
+  },
+  {
+    "ipa": "nɛt",
+    "concept": "net",
+    "outputs": [
+      "net"
+    ]
+  },
+  {
+    "ipa": "nɛtḷ",
+    "concept": "nettle",
+    "outputs": []
+  },
+  {
+    "ipa": "naɪt",
+    "concept": "night",
+    "outputs": []
+  },
+  {
+    "ipa": "naɪtmɛər",
+    "concept": "nightmare",
+    "outputs": []
+  },
+  {
+    "ipa": "naɪn",
+    "concept": "nine",
+    "outputs": []
+  },
+  {
+    "ipa": "nəʊz",
+    "concept": "nose",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋʌn",
+    "concept": "one",
+    "outputs": []
+  },
+  {
+    "ipa": "ʌvṇ",
+    "concept": "oven",
+    "outputs": []
+  },
+  {
+    "ipa": "ɔks",
+    "concept": "ox",
+    "outputs": []
+  },
+  {
+    "ipa": "reɪn",
+    "concept": "rain",
+    "outputs": []
+  },
+  {
+    "ipa": "reɪnbəʊ",
+    "concept": "rainbow",
+    "outputs": []
+  },
+  {
+    "ipa": "rævṇ",
+    "concept": "raven",
+    "outputs": []
+  },
+  {
+    "ipa": "riːd",
+    "concept": "read",
+    "outputs": []
+  },
+  {
+    "ipa": "riːk",
+    "concept": "reek",
+    "outputs": [
+      "rēk",
+      "rēkz",
+      "rīk",
+      "rīkz"
+    ]
+  },
+  {
+    "ipa": "rɛst",
+    "concept": "rest",
+    "outputs": [
+      "rest",
+      "restz"
+    ]
+  },
+  {
+    "ipa": "raɪd",
+    "concept": "ride",
+    "outputs": []
+  },
+  {
+    "ipa": "raɪnd",
+    "concept": "rind",
+    "outputs": []
+  },
+  {
+    "ipa": "rɔk",
+    "concept": "rock",
+    "outputs": [
+      "rok",
+      "rokz"
+    ]
+  },
+  {
+    "ipa": "rəʊ",
+    "concept": "roe",
+    "outputs": [
+      "rā",
+      "rāz",
+      "rō",
+      "rōz",
+      "rau",
+      "rauz",
+      "rai",
+      "raiz"
+    ]
+  },
+  {
+    "ipa": "ruːd",
+    "concept": "rood",
+    "outputs": []
+  },
+  {
+    "ipa": "ruːm",
+    "concept": "room",
+    "outputs": []
+  },
+  {
+    "ipa": "rəʊp",
+    "concept": "rope",
+    "outputs": []
+  },
+  {
+    "ipa": "rʌdər",
+    "concept": "rudder",
+    "outputs": []
+  },
+  {
+    "ipa": "rʌn",
+    "concept": "run",
+    "outputs": [
+      "run"
+    ]
+  },
+  {
+    "ipa": "rʌst",
+    "concept": "rust",
+    "outputs": [
+      "rust",
+      "rustz"
+    ]
+  },
+  {
+    "ipa": "raɪ",
+    "concept": "rye",
+    "outputs": [
+      "rā",
+      "rāz",
+      "rai",
+      "raiz"
+    ]
+  },
+  {
+    "ipa": "seɪl",
+    "concept": "sail",
+    "outputs": [
+      "sāl",
+      "sail"
+    ]
+  },
+  {
+    "ipa": "sɑːkɪ",
+    "concept": "sake",
+    "outputs": []
+  },
+  {
+    "ipa": "sɔːlt",
+    "concept": "salt",
+    "outputs": [
+      "sōlt",
+      "salt",
+      "sault",
+      "sult"
+    ]
+  },
+  {
+    "ipa": "sælv",
+    "concept": "salve",
+    "outputs": []
+  },
+  {
+    "ipa": "sæp",
+    "concept": "sap",
+    "outputs": []
+  },
+  {
+    "ipa": "siː",
+    "concept": "sea",
+    "outputs": [
+      "sē",
+      "sēz",
+      "sī",
+      "sīz"
+    ]
+  },
+  {
+    "ipa": "siːm",
+    "concept": "seam",
+    "outputs": []
+  },
+  {
+    "ipa": "siːk",
+    "concept": "seek",
+    "outputs": [
+      "sēk",
+      "sēkz",
+      "sīk",
+      "sīkz"
+    ]
+  },
+  {
+    "ipa": "sɛnd",
+    "concept": "send",
+    "outputs": []
+  },
+  {
+    "ipa": "sɛt",
+    "concept": "set",
+    "outputs": [
+      "set"
+    ]
+  },
+  {
+    "ipa": "sɛvṇ",
+    "concept": "seven",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃɑːft",
+    "concept": "shaft",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃeɪm",
+    "concept": "shame",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃɪər",
+    "concept": "shear",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃiːθ",
+    "concept": "sheath",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃiːp",
+    "concept": "sheep",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃiːld",
+    "concept": "shield",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃɪlɪŋ",
+    "concept": "shilling",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃaɪn",
+    "concept": "shine",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃəʊldər",
+    "concept": "shoulder",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃʌv",
+    "concept": "shove",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃʌvḷ",
+    "concept": "shovel",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃəʊ",
+    "concept": "show",
+    "outputs": []
+  },
+  {
+    "ipa": "ʃaʊər",
+    "concept": "shower",
+    "outputs": []
+  },
+  {
+    "ipa": "saɪd",
+    "concept": "side",
+    "outputs": []
+  },
+  {
+    "ipa": "sɪv",
+    "concept": "sieve",
+    "outputs": []
+  },
+  {
+    "ipa": "sɪŋ",
+    "concept": "sing",
+    "outputs": [
+      "seŋ"
+    ]
+  },
+  {
+    "ipa": "sɪnʤ",
+    "concept": "singe",
+    "outputs": []
+  },
+  {
+    "ipa": "sɪstər",
+    "concept": "sister",
+    "outputs": []
+  },
+  {
+    "ipa": "sɪt",
+    "concept": "sit",
+    "outputs": [
+      "set"
+    ]
+  },
+  {
+    "ipa": "sɪks",
+    "concept": "six",
+    "outputs": []
+  },
+  {
+    "ipa": "sleɪ",
+    "concept": "slay",
+    "outputs": [
+      "slā",
+      "slāz",
+      "slai",
+      "slaiz"
+    ]
+  },
+  {
+    "ipa": "sliːp",
+    "concept": "sleep",
+    "outputs": []
+  },
+  {
+    "ipa": "slaɪm",
+    "concept": "slime",
+    "outputs": []
+  },
+  {
+    "ipa": "smɪər",
+    "concept": "smear",
+    "outputs": []
+  },
+  {
+    "ipa": "snəʊ",
+    "concept": "snow",
+    "outputs": [
+      "snō"
+    ]
+  },
+  {
+    "ipa": "sɔrəʊ",
+    "concept": "sorrow",
+    "outputs": []
+  },
+  {
+    "ipa": "səʊl",
+    "concept": "soul",
+    "outputs": [
+      "sāl",
+      "sōl",
+      "saul",
+      "sal",
+      "sail"
+    ]
+  },
+  {
+    "ipa": "spæn",
+    "concept": "span",
+    "outputs": []
+  },
+  {
+    "ipa": "spæn",
+    "concept": "span",
+    "outputs": []
+  },
+  {
+    "ipa": "spɑːr",
+    "concept": "spar",
+    "outputs": []
+  },
+  {
+    "ipa": "spɛər",
+    "concept": "spare",
+    "outputs": []
+  },
+  {
+    "ipa": "spɪər",
+    "concept": "spear",
+    "outputs": []
+  },
+  {
+    "ipa": "spɪn",
+    "concept": "spin",
+    "outputs": [
+      "spen"
+    ]
+  },
+  {
+    "ipa": "spɪndḷ",
+    "concept": "spindle",
+    "outputs": []
+  },
+  {
+    "ipa": "spuːn",
+    "concept": "spoon",
+    "outputs": []
+  },
+  {
+    "ipa": "sprɛd",
+    "concept": "spread",
+    "outputs": [
+      "spred"
+    ]
+  },
+  {
+    "ipa": "spɜːr",
+    "concept": "spur",
+    "outputs": []
+  },
+  {
+    "ipa": "stɑːf",
+    "concept": "staff",
+    "outputs": []
+  },
+  {
+    "ipa": "stɑːt",
+    "concept": "start",
+    "outputs": []
+  },
+  {
+    "ipa": "stɑːv",
+    "concept": "starve",
+    "outputs": []
+  },
+  {
+    "ipa": "stiːl",
+    "concept": "steal",
+    "outputs": [
+      "stēl",
+      "stīl"
+    ]
+  },
+  {
+    "ipa": "stɛm",
+    "concept": "stem",
+    "outputs": [
+      "stem"
+    ]
+  },
+  {
+    "ipa": "stɪl",
+    "concept": "still",
+    "outputs": [
+      "stel"
+    ]
+  },
+  {
+    "ipa": "stɪlt",
+    "concept": "stilt",
+    "outputs": [
+      "stelt"
+    ]
+  },
+  {
+    "ipa": "stɔk",
+    "concept": "stock",
+    "outputs": [
+      "stok",
+      "stokz"
+    ]
+  },
+  {
+    "ipa": "stəʊn",
+    "concept": "stone",
+    "outputs": []
+  },
+  {
+    "ipa": "stuːl",
+    "concept": "stool",
+    "outputs": [
+      "stōl",
+      "stūl",
+      "stal",
+      "staul"
+    ]
+  },
+  {
+    "ipa": "stɔːk",
+    "concept": "stork",
+    "outputs": [
+      "stōk",
+      "stōkz",
+      "stauk",
+      "staukz",
+      "stuk",
+      "stukz"
+    ]
+  },
+  {
+    "ipa": "stɔːm",
+    "concept": "storm",
+    "outputs": []
+  },
+  {
+    "ipa": "strɔː",
+    "concept": "straw",
+    "outputs": [
+      "strō",
+      "strōz",
+      "strau",
+      "strauz",
+      "stru",
+      "struz"
+    ]
+  },
+  {
+    "ipa": "striːm",
+    "concept": "stream",
+    "outputs": []
+  },
+  {
+    "ipa": "strɛʧ",
+    "concept": "stretch",
+    "outputs": []
+  },
+  {
+    "ipa": "struː",
+    "concept": "strew",
+    "outputs": [
+      "strō",
+      "strōz",
+      "strū",
+      "strūz",
+      "strau",
+      "strauz"
+    ]
+  },
+  {
+    "ipa": "strɪŋ",
+    "concept": "string",
+    "outputs": [
+      "streŋ"
+    ]
+  },
+  {
+    "ipa": "stʌd",
+    "concept": "stud",
+    "outputs": [
+      "stud"
+    ]
+  },
+  {
+    "ipa": "sʌmər",
+    "concept": "summer",
+    "outputs": []
+  },
+  {
+    "ipa": "sʌn",
+    "concept": "sun",
+    "outputs": [
+      "sun"
+    ]
+  },
+  {
+    "ipa": "sʌndər",
+    "concept": "sunder",
+    "outputs": []
+  },
+  {
+    "ipa": "sʌp",
+    "concept": "sup",
+    "outputs": [
+      "sup"
+    ]
+  },
+  {
+    "ipa": "sʋɔləʊ",
+    "concept": "swallow",
+    "outputs": []
+  },
+  {
+    "ipa": "sʋɔn",
+    "concept": "swan",
+    "outputs": []
+  },
+  {
+    "ipa": "sʋɛl",
+    "concept": "swell",
+    "outputs": []
+  },
+  {
+    "ipa": "sʋɪm",
+    "concept": "swim",
+    "outputs": []
+  },
+  {
+    "ipa": "sʋaɪn",
+    "concept": "swine",
+    "outputs": []
+  },
+  {
+    "ipa": "sɔːd",
+    "concept": "sword",
+    "outputs": []
+  },
+  {
+    "ipa": "tæp",
+    "concept": "tap",
+    "outputs": []
+  },
+  {
+    "ipa": "tiːm",
+    "concept": "team",
+    "outputs": []
+  },
+  {
+    "ipa": "tɛn",
+    "concept": "ten",
+    "outputs": [
+      "ten"
+    ]
+  },
+  {
+    "ipa": "θeɪn",
+    "concept": "thane",
+    "outputs": []
+  },
+  {
+    "ipa": "θæŋks",
+    "concept": "thanks",
+    "outputs": []
+  },
+  {
+    "ipa": "θæʧ",
+    "concept": "thatch",
+    "outputs": []
+  },
+  {
+    "ipa": "θiːf",
+    "concept": "thief",
+    "outputs": []
+  },
+  {
+    "ipa": "θɪŋ",
+    "concept": "thing",
+    "outputs": [
+      "θeŋ"
+    ]
+  },
+  {
+    "ipa": "θɪŋk",
+    "concept": "think",
+    "outputs": []
+  },
+  {
+    "ipa": "θɜːst",
+    "concept": "thirst",
+    "outputs": []
+  },
+  {
+    "ipa": "θɪsḷ",
+    "concept": "thistle",
+    "outputs": []
+  },
+  {
+    "ipa": "θɔːn",
+    "concept": "thorn",
+    "outputs": []
+  },
+  {
+    "ipa": "θaʊzṇd",
+    "concept": "thousand",
+    "outputs": []
+  },
+  {
+    "ipa": "θræʃ",
+    "concept": "thrash",
+    "outputs": []
+  },
+  {
+    "ipa": "θriː",
+    "concept": "three",
+    "outputs": [
+      "θrē",
+      "θrēz",
+      "θrī",
+      "θrīz"
+    ]
+  },
+  {
+    "ipa": "θʌndər",
+    "concept": "thunder",
+    "outputs": []
+  },
+  {
+    "ipa": "tɪk",
+    "concept": "tick",
+    "outputs": [
+      "tek",
+      "tekz"
+    ]
+  },
+  {
+    "ipa": "taɪd",
+    "concept": "tide",
+    "outputs": []
+  },
+  {
+    "ipa": "tɪmbər",
+    "concept": "timber",
+    "outputs": []
+  },
+  {
+    "ipa": "təʊ",
+    "concept": "toe",
+    "outputs": [
+      "tā",
+      "tāz",
+      "tō",
+      "tōz",
+      "tau",
+      "tauz",
+      "tai",
+      "taiz"
+    ]
+  },
+  {
+    "ipa": "təʊkən",
+    "concept": "token",
+    "outputs": []
+  },
+  {
+    "ipa": "tɔŋz",
+    "concept": "tongs",
+    "outputs": []
+  },
+  {
+    "ipa": "tʌŋ",
+    "concept": "tongue",
+    "outputs": [
+      "tuŋ"
+    ]
+  },
+  {
+    "ipa": "taʊn",
+    "concept": "town",
+    "outputs": [
+      "tawun",
+      "tazun",
+      "taxun"
+    ]
+  },
+  {
+    "ipa": "trɛd",
+    "concept": "tread",
+    "outputs": [
+      "tred"
+    ]
+  },
+  {
+    "ipa": "trɔf",
+    "concept": "trough",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋeɪd",
+    "concept": "wade",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋeɪn",
+    "concept": "wain",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋeɪk",
+    "concept": "wake",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔːp",
+    "concept": "warp",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔːp",
+    "concept": "warp",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔːt",
+    "concept": "wart",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔʃ",
+    "concept": "wash",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔsp",
+    "concept": "wasp",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɔːtər",
+    "concept": "water",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋæks",
+    "concept": "wax",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋæks",
+    "concept": "wax",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋeɪ",
+    "concept": "way",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɛpən",
+    "concept": "weapon",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋiːzḷ",
+    "concept": "weasel",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɛðər",
+    "concept": "weather",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋiːv",
+    "concept": "weave",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɛst",
+    "concept": "west",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɛðər",
+    "concept": "wether",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋeɪl",
+    "concept": "whale",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋaɪl",
+    "concept": "while",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋaɪn",
+    "concept": "whine",
+    "outputs": []
+  },
+  {
+    "ipa": "hɔːr",
+    "concept": "whore",
+    "outputs": [
+      "hōr",
+      "har",
+      "haur",
+      "hur",
+      "xōr",
+      "xar",
+      "xaur",
+      "xur"
+    ]
+  },
+  {
+    "ipa": "ʋɪdəʊ",
+    "concept": "widow",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋiːld",
+    "concept": "wield",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋaɪf",
+    "concept": "wife",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋaɪt",
+    "concept": "wight",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɪl",
+    "concept": "will",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɪl",
+    "concept": "will",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɪnd",
+    "concept": "wind",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɪntər",
+    "concept": "winter",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɪðɪ",
+    "concept": "withy",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋəʊld",
+    "concept": "wold",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋʊlf",
+    "concept": "wolf",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋʌndər",
+    "concept": "wonder",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋʊl",
+    "concept": "wool",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɜːd",
+    "concept": "word",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɜːld",
+    "concept": "world",
+    "outputs": []
+  },
+  {
+    "ipa": "ʋɜːm",
+    "concept": "worm",
+    "outputs": []
+  },
+  {
+    "ipa": "rɪŋ",
+    "concept": "wring",
+    "outputs": [
+      "reŋ"
+    ]
+  },
+  {
+    "ipa": "jɑːn",
+    "concept": "yarn",
+    "outputs": []
+  },
+  {
+    "ipa": "jɪər",
+    "concept": "year",
+    "outputs": []
+  },
+  {
+    "ipa": "jəʊk",
+    "concept": "yoke",
+    "outputs": [
+      "jāk",
+      "jākz",
+      "jōk",
+      "jōkz",
+      "jauk",
+      "jaukz",
+      "jaik",
+      "jaikz"
+    ]
+  },
+  {
+    "ipa": "juːθ",
+    "concept": "youth",
+    "outputs": []
+  }
+]
