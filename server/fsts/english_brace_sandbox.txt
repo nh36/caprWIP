@@ -4,11 +4,12 @@ source fsts/germanic.txt
 
 define EnglishSandboxSurfaceVowel [
     {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
-    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ}
+    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ} |
+    {ā} | {ē} | {ī} | {ō} | {ū} | {ą} | {ę}
 ];
 define EnglishSandboxSurfaceConsonant [
-    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
-    {r} | {s} | {t} | {v} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
+    {b} | {d} | {f} | {g} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
+    {r} | {s} | {t} | {v} | {w} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
     {ʤ} | {ʧ} | {θ}
 ];
 define EnglishSandboxSurfaceOnset [

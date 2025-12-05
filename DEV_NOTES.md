@@ -6,6 +6,26 @@
 - Rewrote `server/tools/trace_english_sandbox.py` to consume those binaries with `flookup` instead of trying to run raw `regex` commands. The script auto-detects whether it’s running on the host (`server/…` paths) or inside the container (`/usr/app`) and accepts `--bin-dir` when the stacks live elsewhere.
 - Smoke test inside the backend container: `docker compose exec backend bash -lc "cd /usr/app && python3 tools/trace_english_sandbox.py --lexeme '{*fiskaz}'"`. The tracer now steps through each saved stack (currently returning `+?` for `*fiskaz`, which matches the unresolved KIT bucket, but the stage pipeline itself is inspectable again).
 
+#### CLI polish + harness hooks
+
+- Added `--lexeme-file`, `--brace-diphthongs`, and `--save-log` switches so we can feed large TSV extracts straight into the tracer and drop the output into `docs/debug_snapshots/` without manual copy/paste. Example: `python3 tools/trace_english_sandbox.py --lexeme-file /usr/app/tmp/english_tracer_lexemes.txt --brace-diphthongs --save-log /usr/app/tmp/english_tracer_log.txt` (run inside Docker so `/usr/app/tmp` is writable).
+- Sample log (stored at `/usr/app/tmp/english_tracer_log.txt`) now drives the bucket review: `*fiskaz` reaches `Surface: fɪskæ`, `*braudą` reaches `Surface: brōdą`, while `*gebaną` and `*swestēr` still die at the surface filter—exact stage names are now captured in the log for regression diffs.
+- Added `tools/annotate_english_sandbox_results.py` to decorate the sandbox regression JSON with stage-by-stage outputs plus a `first_failing_stage` field. Usage (inside Docker so `flookup` is available):
+  ```bash
+  docker compose exec backend bash -lc \
+    "cd /usr/app && python3 tools/annotate_english_sandbox_results.py \
+      --input tmp/english_sandbox_results_current.json \
+      --output tmp/english_sandbox_results_with_stages.json"
+  ```
+  The new file (`server/tmp/english_sandbox_results_with_stages.json`) feeds into the bucket triage spreadsheet so every failure row shows its blocking stage.
+- Dropped a snapshot of the four canonical probes into `docs/debug_snapshots/english_tracer_log_2025-12-05.txt` (generated via the tracer’s `--save-log`). Future sessions should append similar logs whenever stage definitions shift.
+
+#### Surface filter triage
+
+- Expanded `EnglishSandboxSurfaceVowel` to accept the macron and nasal vowels (`{ā}/{ē}/{ī}/{ō}/{ū}/{ą}/{ę}`) emitted by the sandbox stages. After recompiling, `*braudą` now flows through `Surface` as `brōdą`; previously it was blocked even though the upstream stages looked fine.
+- Updated `EnglishSandboxSurfaceConsonant` so the plain `{g}`/`{w}` outputs (minus braces/stars) survive the final filter. Weak-tail stems such as `*gebaną` and `{sw}` clusters such as `*swestēr` now surface cleanly.
+- Remaining `Surface +?` cases flag different follow-ups: continue using the annotated JSON to identify stems that die earlier in the cascade versus genuine surface-template gaps.
+
 ### Next steps
 
 1. Feed lexemes straight from `tmp/english_sandbox_results.json` into the tracer (wrap diphthongs with `--brace-diphthongs` once that option exists) so every failure bucket has a representative stage log.
