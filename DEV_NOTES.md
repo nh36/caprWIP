@@ -1,3 +1,17 @@
+## 2025-12-05
+
+### English sandbox tracer bootstrapped
+
+- Instrumented `server/fsts/english_brace_sandbox.txt` so every stage now has an `EnglishSandboxAfter*` definition plus a saved stack (e.g., `english_sandbox_after_proto_input.bin`, `english_sandbox_after_vowel_rules.bin`). Recompiled inside Docker via `docker compose exec backend sh -lc "cd /usr/app && foma -f fsts/english_brace_sandbox.txt"`; the build now emits 15 `.bin` files under `server/` alongside the existing `english_brace_sandbox.bin`.
+- Rewrote `server/tools/trace_english_sandbox.py` to consume those binaries with `flookup` instead of trying to run raw `regex` commands. The script auto-detects whether it’s running on the host (`server/…` paths) or inside the container (`/usr/app`) and accepts `--bin-dir` when the stacks live elsewhere.
+- Smoke test inside the backend container: `docker compose exec backend bash -lc "cd /usr/app && python3 tools/trace_english_sandbox.py --lexeme '{*fiskaz}'"`. The tracer now steps through each saved stack (currently returning `+?` for `*fiskaz`, which matches the unresolved KIT bucket, but the stage pipeline itself is inspectable again).
+
+### Next steps
+
+1. Feed lexemes straight from `tmp/english_sandbox_results.json` into the tracer (wrap diphthongs with `--brace-diphthongs` once that option exists) so every failure bucket has a representative stage log.
+2. Investigate why `{*fiskaz}` still rejects at `EnglishSandboxAfterProtoInput`; likely need either the plain-IPA normaliser or the proto brace rewriter from the German tracer so inputs always match `pgrmWord`.
+3. Once the tracer shows real stage outputs, resume the KIT/FOOT fixes with per-stage snapshots checked into `docs/debug_snapshots/` like the German workflow.
+
 ## 2025-11-21
 
 ### Ach-Laut verification

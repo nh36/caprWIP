@@ -210,10 +210,85 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxGhDeletion
     .o. EnglishSandboxOrthography;
 
-define EnglishSandbox EnglishSandboxReflexes
-    .o. RemoveStars
-    .o. EnglishSandboxSurface;
+# Stage instrumentation so every checkpoint can be traced/saved like the German stack.
+define EnglishSandboxAfterProtoInput EnglishSandboxProtoInput;
+define EnglishSandboxAfterInitialKn EnglishSandboxAfterProtoInput .o. EnglishSandboxInitialKnMarkers;
+define EnglishSandboxAfterConsonantRules EnglishSandboxAfterInitialKn .o. EnglishSandboxConsonantRules;
+define EnglishSandboxAfterGhMarker EnglishSandboxAfterConsonantRules .o. EnglishSandboxGhMarker;
+define EnglishSandboxAfterGlideDeletion EnglishSandboxAfterGhMarker .o. EnglishSandboxGlideDeletion;
+define EnglishSandboxAfterWestGermanic EnglishSandboxAfterGlideDeletion .o. EnglishSandboxWestGermanic;
+define EnglishSandboxAfterOpenLengthening EnglishSandboxAfterWestGermanic .o. EnglishSandboxOpenSyllableLengthening;
+define EnglishSandboxAfterBreakingLengthening EnglishSandboxAfterOpenLengthening .o. EnglishSandboxBreakingLengthening;
+define EnglishSandboxAfterVowelRules EnglishSandboxAfterBreakingLengthening .o. EnglishSandboxVowelRules;
+define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
+define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
+define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxSilentInitialCleanup;
+define EnglishSandboxAfterGhDeletion EnglishSandboxAfterSilentCleanup .o. EnglishSandboxGhDeletion;
+define EnglishSandboxAfterOrthography EnglishSandboxAfterGhDeletion .o. EnglishSandboxOrthography;
+define EnglishSandboxAfterSurface EnglishSandboxAfterOrthography .o. RemoveStars .o. EnglishSandboxSurface;
+
+define EnglishSandbox EnglishSandboxAfterSurface;
 
 clear stack
 regex EnglishSandbox;
 save stack english_brace_sandbox.bin
+
+clear stack
+regex EnglishSandboxAfterProtoInput;
+save stack english_sandbox_after_proto_input.bin
+
+clear stack
+regex EnglishSandboxAfterInitialKn;
+save stack english_sandbox_after_initial_kn.bin
+
+clear stack
+regex EnglishSandboxAfterConsonantRules;
+save stack english_sandbox_after_consonant_rules.bin
+
+clear stack
+regex EnglishSandboxAfterGhMarker;
+save stack english_sandbox_after_gh_marker.bin
+
+clear stack
+regex EnglishSandboxAfterGlideDeletion;
+save stack english_sandbox_after_glide_deletion.bin
+
+clear stack
+regex EnglishSandboxAfterWestGermanic;
+save stack english_sandbox_after_west_germanic.bin
+
+clear stack
+regex EnglishSandboxAfterOpenLengthening;
+save stack english_sandbox_after_open_lengthening.bin
+
+clear stack
+regex EnglishSandboxAfterBreakingLengthening;
+save stack english_sandbox_after_breaking_lengthening.bin
+
+clear stack
+regex EnglishSandboxAfterVowelRules;
+save stack english_sandbox_after_vowel_rules.bin
+
+clear stack
+regex EnglishSandboxAfterPostVocalicRLoss;
+save stack english_sandbox_after_postvocalic_r_loss.bin
+
+clear stack
+regex EnglishSandboxAfterWeakTailReductions;
+save stack english_sandbox_after_weak_tail.bin
+
+clear stack
+regex EnglishSandboxAfterSilentCleanup;
+save stack english_sandbox_after_silent_cleanup.bin
+
+clear stack
+regex EnglishSandboxAfterGhDeletion;
+save stack english_sandbox_after_gh_deletion.bin
+
+clear stack
+regex EnglishSandboxAfterOrthography;
+save stack english_sandbox_after_orthography.bin
+
+clear stack
+regex EnglishSandboxAfterSurface;
+save stack english_sandbox_after_surface.bin
