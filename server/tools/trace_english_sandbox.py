@@ -35,6 +35,8 @@ STAGES: Sequence[Tuple[str, str]] = [
     ("Surface", "english_sandbox_after_surface.bin"),
 ]
 
+DIPHTHONGS = ("ai", "au", "eu", "iu")
+
 
 def dedupe_preserve(seq: Iterable[str]) -> List[str]:
     seen = set()
@@ -75,27 +77,67 @@ def run_stage(bin_dir: Path, bin_name: str, form: str) -> List[str]:
     return dedupe_preserve(outputs)
 
 
+def maybe_brace_diphthongs(raw: str) -> str:
+    wrapped = raw
+    for diph in DIPHTHONGS:
+        wrapped = wrapped.replace(diph, f"{{{diph}}}")
+    return wrapped
+
+
 def normalize_proto_input(raw: str) -> str:
     return re.sub(r"[{}*\s]", "", raw)
 
 
-def trace_lexeme(lexeme: str, bin_dir: Path) -> None:
-    print(f"=== {lexeme} ===")
+def iter_lexemes(args: argparse.Namespace) -> List[str]:
+    entries: List[str] = []
+    if args.lexeme:
+        entries.extend(args.lexeme)
+    if args.lexeme_file:
+        path = Path(args.lexeme_file).expanduser()
+        if not path.exists():
+            raise FileNotFoundError(f"Lexeme file not found: {path}")
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            entries.append(line)
+    if not entries:
+        raise SystemExit("Provide at least one --lexeme or --lexeme-file entry")
+    return entries
+
+
+def collect_stage_outputs(lexeme: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     plain = normalize_proto_input(lexeme)
-    for label, bin_name in STAGES:
-        outputs = run_stage(bin_dir, bin_name, plain)
+    return [(label, run_stage(bin_dir, bin_name, plain)) for label, bin_name in STAGES]
+
+
+def trace_lexeme(lexeme: str, bin_dir: Path, brace_diphthongs: bool) -> List[str]:
+    header = maybe_brace_diphthongs(lexeme) if brace_diphthongs else lexeme
+    lines = [f"=== {header} ==="]
+    for label, outputs in collect_stage_outputs(lexeme, bin_dir):
         pretty = ", ".join(outputs)
-        print(f"{label}: {pretty}")
-    print()
+        lines.append(f"{label}: {pretty}")
+    lines.append("")
+    return lines
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Trace English sandbox stages for given lexemes.")
-    parser.add_argument("--lexeme", action="append", required=True, help="Proto lexeme (brace form)")
+    parser.add_argument("--lexeme", action="append", help="Proto lexeme (brace or plain form)")
+    parser.add_argument("--lexeme-file", help="Path to a file containing one proto lexeme per line")
+    parser.add_argument(
+        "--brace-diphthongs",
+        action="store_true",
+        help="Wrap ai/au/eu/iu sequences with braces in the log header for readability",
+    )
     parser.add_argument(
         "--bin-dir",
         default=None,
         help="Directory containing english_sandbox_after_*.bin (defaults to <repo>/server)",
+    )
+    parser.add_argument(
+        "--save-log",
+        help="Write the tracer output to this file in addition to stdout",
     )
     args = parser.parse_args()
     repo_root = Path(__file__).resolve().parents[1]
@@ -104,8 +146,14 @@ def main() -> None:
     else:
         server_dir = repo_root / "server"
         bin_dir = server_dir.resolve() if server_dir.exists() else repo_root
-    for lex in args.lexeme:
-        trace_lexeme(lex, bin_dir)
+    lexemes = iter_lexemes(args)
+    all_lines: List[str] = []
+    for lex in lexemes:
+        section = trace_lexeme(lex, bin_dir, args.brace_diphthongs)
+        all_lines.extend(section)
+        print("\n".join(section))
+    if args.save_log:
+        Path(args.save_log).expanduser().write_text("\n".join(all_lines), encoding="utf-8")
 
 
 if __name__ == "__main__":
