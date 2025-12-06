@@ -276,7 +276,7 @@ define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
 
-define pgrmWeakOralNucleus [a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
+define pgrmWeakOralNucleus [a:{*a} | ă:{*ă} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
 define pgrmWeakNasalNucleus [ą:{*ą} | ę:{*ę}];
 
 define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l} | z:{*z}];
@@ -286,14 +286,14 @@ define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
 
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
-    a:{*a} |
-    a:{*a} g:{*g} ą:{*ą} |
-    a:{*a} l:{*l} ō:{*ō} |
-    a:{*a} n:{*n} |
-    a:{*a} n:{*n} ą:{*ą} |
-    a:{*a} n:{*n} ē:{*ē} |
-    a:{*a} r:{*r} a:{*a} z:{*z} |
-    a:{*a} z:{*z} |
+    ă:{*ă} |
+    ă:{*ă} g:{*g} ą:{*ą} |
+    ă:{*ă} l:{*l} ō:{*ō} |
+    ă:{*ă} n:{*n} |
+    ă:{*ă} n:{*n} ą:{*ą} |
+    ă:{*ă} n:{*n} ē:{*ē} |
+    a:{*a} r:{*r} ă:{*ă} z:{*z} |
+    ă:{*ă} z:{*z} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
     e:{*e} r:{*r} |
     e:{*e} r:{*r} a:{*a} z:{*z} |
@@ -620,6 +620,7 @@ define GermanStarVowel [
     {*u} |
     {*y} |
     {*æ} |
+    {*ă} |
     {*ø} |
     {*ā} |
     {*ą} |

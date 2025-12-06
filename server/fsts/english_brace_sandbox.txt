@@ -257,19 +257,27 @@ define EnglishSandboxTailConsonant [
     {n} | {m} | {l} | {r}
 ];
 
-define EnglishSandboxWeakTailReductions [
-    {*a} -> {*ə} || _ .#.,
-    {*a} -> {*ə} || _ EnglishSandboxWeakTailVowel,
-    {*ă} -> {*ə},
+define EnglishSandboxWeakTailReductions (
+    {*a} -> {*ə} || _ .#.
+) .o. (
+    {*a} -> {*ə} || _ EnglishSandboxWeakTailVowel
+) .o. (
+    {*ă} -> {*ə}
+) .o. (
     {*ą} -> {*ə}
-];
+);
 
-define EnglishSandboxWeakTailSchwa [{*ə}];
+define EnglishSandboxWeakTailSchwa [{*ə} | {*ă}];
 
-define EnglishSandboxWeakTailCleanup [
-    EnglishSandboxTailConsonant -> 0 || EnglishSandboxWeakTailSchwa _ .#.,
-    EnglishSandboxWeakTailSchwa -> 0 || (EnglishSandboxStarConsonant | EnglishSandboxTailConsonant | EnglishSandboxSurfaceConsonant) _ .#.
-];
+define EnglishSandboxWeakTailCleanup (
+    EnglishSandboxTailConsonant -> 0 || EnglishSandboxWeakTailSchwa _ .#.
+) .o. (
+    EnglishSandboxTailConsonant -> 0 || _ EnglishSandboxWeakTailSchwa .#.
+) .o. (
+    EnglishSandboxWeakTailSchwa -> 0 || _ .#.
+);
+
+define EnglishSandboxWeakTailFinalDrop [{*ə} -> 0 || (EnglishSandboxStarConsonant | EnglishSandboxSurfaceConsonant) _ .#.];
 
 # Early Modern English post-vocalic /r/-loss.
 define EnglishSandboxPostVocalicRLoss [
@@ -339,6 +347,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
     .o. EnglishSandboxWeakTailCleanup
+    .o. EnglishSandboxWeakTailFinalDrop
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion
     .o. EnglishSandboxOrthography;
@@ -366,7 +375,9 @@ define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterShortVowelSplit .o. 
 define EnglishSandboxAfterVowelRules EnglishSandboxAfterRhoticColoring .o. EnglishSandboxVowelRulesPostRhotic;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
-define EnglishSandboxAfterWeakTailCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxWeakTailCleanup;
+define EnglishSandboxAfterWeakTailCleanup EnglishSandboxAfterWeakTailReductions
+    .o. EnglishSandboxWeakTailCleanup
+    .o. EnglishSandboxWeakTailFinalDrop;
 define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailCleanup .o. EnglishSandboxSilentInitialCleanup;
 define EnglishSandboxAfterGhDeletion EnglishSandboxAfterSilentCleanup .o. EnglishSandboxGhDeletion;
 define EnglishSandboxAfterOrthography EnglishSandboxAfterGhDeletion .o. EnglishSandboxOrthography;
