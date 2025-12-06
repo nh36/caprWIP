@@ -1,3 +1,24 @@
+## 2025-12-06
+
+### English ConsonantRules made deterministic
+
+- Split the sandbox consonant block into four sequential rules (`EnglishSandboxWGlideRule`, `EnglishSandboxZRhotacism`, `EnglishSandboxZApocope`, `EnglishSandboxDJPalatal`) so non-matching lexemes pass through untouched and matching contexts rewrite exactly once. This removes the earlier branching behaviour that produced multiple outputs (e.g., `{*z}` → `{r}` and `{0}` simultaneously) and stops no-op stems (`*bendaną`, `*grunduz`) from dying at the stage boundary.
+- Recompiled `fsts/english_brace_sandbox.txt` and re-ran `server/tools/run_english_sandbox_workflow.sh english_tracer_log_2025-12-06c.txt`. Analyzer successes jumped from 179→205/376; the ConsonantRules bucket disappeared entirely, leaving only ProtoInput (5 items) and the “Surface+? but outputs” bucket (166 items) for follow-up work.
+- Captured a tracer snapshot at `docs/debug_snapshots/english_tracer_log_2025-12-06c.txt`. `*bendaną` now flows through ConsonantRules unchanged and reaches Surface, while `*fiskaz` rewrites `{*z}`→`{r}` deterministically.
+- Next actions: tackle the remaining vowel-stage issues (KIT/FOOT splits, schwa reductions, rhotic chronology) so the “Surface but mismatched IPA” bucket starts converting into real successes before revisiting ProtoInput compounds.
+- Follow-up audit (logs at `docs/debug_snapshots/english_tracer_log_2025-12-06f.txt`) showed that naive rhotic/weak-tail rewrites tanked coverage, so for now only two safe tweaks remain live: short proto `{*a}` now fronts to `{æ}` by default, and `{*ą}` weak tails convert to `{əʊ}` in `EnglishSandboxWeakTailReductions`. Analyzer coverage is still 205/376, but at least the tail vowels surface as `{…əʊ}` for forms like `*gebaną/*br{au}dą`, which will make future schwa/diphthong work easier to verify.
+
+### Rhotic colouring prototype (2025-12-06 — evening)
+
+- Introduced `EnglishSandboxRhoticColoring` between `EnglishSandboxShortVowelSplit` and `EnglishSandboxGreatVowelShift`. The rule only rewrites `{a/e/i/o/u}` when an intervening consonant precedes `{*r}`, so cases like `{*utraz}` now capture the `{t}` between vowel and `{*r}`. Recompiled the cascade and traced the rhotic-heavy probes (`*utraz`, `*bergą`, `*bardaz`, `*bebruz`). Outputs still show brace vowels (e.g., `ʊtræ`, `bɪgəʊ`), but the stage now acts as a dedicated hook for future ME/EME rhotic handling instead of lumping everything into the core block.
+- Reran `server/tools/run_english_sandbox_workflow.sh english_tracer_log_2025-12-06g.txt`; analyzer coverage nudged up to **206/376** (one additional success) and the bucket counts shifted to 165 “Surface+? but outputs” plus 5 ProtoInput failures. All new tracer logs live under `docs/debug_snapshots/english_tracer_log_2025-12-06g.txt` for comparison against the earlier rhotic experiment.
+- No additional weak-tail rules were enabled yet—`EnglishSandboxWeakTailReductions` still only handles `{*a}` and `{*ą}`. Next session should start widening that stage one vowel class at a time while rerunning the workflow after each addition, so any regressions are easy to pinpoint.
+
+- Follow-up determinism pass: instrumented `trace_english_sandbox.py` for the rhotic probes, then tried to sequentialise both `EnglishSandboxCoreVowelRules` and `EnglishSandboxShortVowelSplit` so each vowel rewrite would fire exactly once (logs in `/usr/app/tmp/vowel_branching_trace.txt`). That change did collapse the outputs (e.g., `*bardaz` finally reduced to a single path), but coverage cratered to 168/376. Reverted to the previous definitions and reran the workflow (`docs/debug_snapshots/english_tracer_log_2025-12-06l.txt`) so we’re back at **206/376** successes with the older branching behaviour intact.
+- Takeaway: branching now clearly comes from overlapping clauses inside the core vowel block and the short-vowel split, but wholesale sequentialisation is too disruptive. Next attempt should peel off one context at a time (e.g., only the `{*ō}` liquid rule) and validate immediately rather than rewriting the entire stage.
+
+- Follow-up audit (logs at `docs/debug_snapshots/english_tracer_log_2025-12-06f.txt`) showed that naive rhotic/weak-tail rewrites tanked coverage, so for now only two safe tweaks remain live: short proto `{*a}` now fronts to `{æ}` by default, and `{*ą}` weak tails convert to `{əʊ}` in `EnglishSandboxWeakTailReductions`. Analyzer coverage is still 205/376, but at least the tail vowels surface as `{…əʊ}` for forms like `*gebaną/*br{au}dą`, which will make future schwa/diphthong work easier to verify.
+
 ## 2025-12-05
 
 ### English sandbox tracer bootstrapped
