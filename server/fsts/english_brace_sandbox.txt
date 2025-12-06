@@ -114,8 +114,35 @@ define EnglishSandboxBreakingLengthening [
     {*a} -> {*ō} || _ {*w}
 ];
 
+# Late Old English lowering of {*ō} before liquids and in absolute final position.
+define EnglishSandboxLiquidLowering [
+    {*ō} -> {ɔː} || _ EnglishSandboxStarLiquid,
+    {*ō} -> {ɔː} || _ .#.
+];
+
+# Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
+define EnglishSandboxVelarShortening [
+    {*ō} -> {ʊ} || _ EnglishSandboxStarVelarStop
+];
+
+# West Germanic rounding of {*u} before {*r} + consonant or word-final.
+define EnglishSandboxUrRounding [
+    {*u} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
+    {*u} -> {ɔː} || _ {*r} .#.
+];
+
+# Proto-stage fronting/backing before Middle English developments.
+define EnglishSandboxProtoRhoticFronting [
+    {*a} -> {æ} || _ {*r}
+];
+
+# Short back-vowel lowering (pre-ME contextual rewrite).
+define EnglishSandboxShortBackLowering [
+    {*o} -> {ɔ}
+];
+
 # Late Middle English short-vowel splits (KIT vs. DRESS, FOOT vs. STRUT).
-define EnglishSandboxShortVowelSplit [
+define EnglishSandboxShortVowelContextual [
     {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {u} -> {ʊ} || _ {*z} EnglishSandboxStarVocalic,
     {u} -> {ʊ} || _ {*z} EnglishSandboxWeakTailVowel,
@@ -138,58 +165,49 @@ define EnglishSandboxShortVowelSplit [
     {u} -> {ʊ} || _ {r} EnglishSandboxWeakTailVowel,
     {u} -> {ʊ} || _ {*m} EnglishSandboxWeakTailVowel,
     {u} -> {ʊ} || _ {*n} EnglishSandboxWeakTailVowel,
-    {u} -> {ʌ},
     {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
     {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
-    {e} -> {ɛ},
     {i} -> {ɪ} || _ EnglishSandboxStarConsonant,
     {i} -> {ɪ} || _ .#.
 ];
 
+define EnglishSandboxShortVowelFallback [
+    {u} -> {ʌ},
+    {e} -> {ɛ}
+];
+
+define EnglishSandboxShortVowelSplit EnglishSandboxShortVowelContextual .o. EnglishSandboxShortVowelFallback;
+
 # Old English & Middle English vowel developments feeding the later English cascade.
 define EnglishSandboxCoreVowelRules [
-    {*ī} -> {iː},
-    {*ū} -> {uː},
-    {*ē} -> {iː},
-    {*ō} -> {uː},
-    {*ō} -> {ɔː} || _ EnglishSandboxStarLiquid,
-    {*ō} -> {ɔː} || _ .#.,
-    {*ō} -> {ʊ} || _ EnglishSandboxStarVelarStop,
-    {*ō} -> {oː},
-    {*ā} -> {ɑː},
-    {*u} -> {ɔː} || _ {*r} EnglishSandboxStarConsonant,
-    {*u} -> {ɔː} || _ {*r} .#.,
-    {*e} -> {e},
-    {*o} -> {ɔ},
-    {*a} -> {æ} || _ {*r},
     {*i} -> {i},
     {*u} -> {u}
 ];
 
 define EnglishSandboxRhoticColoring [
-    {a} EnglishSandboxStarConsonant {*r} -> {æ} EnglishSandboxStarConsonant {*r},
-    {e} EnglishSandboxStarConsonant {*r} -> {ɛ} EnglishSandboxStarConsonant {*r},
-    {i} EnglishSandboxStarConsonant {*r} -> {ə} EnglishSandboxStarConsonant {*r},
-    {u} EnglishSandboxStarConsonant {*r} -> {ɔː} EnglishSandboxStarConsonant {*r},
-    {o} EnglishSandboxStarConsonant {*r} -> {ɔː} EnglishSandboxStarConsonant {*r}
+    {*a} EnglishSandboxStarConsonant {*r} -> {*æ} EnglishSandboxStarConsonant {*r},
+    {*e} EnglishSandboxStarConsonant {*r} -> {*ɛ} EnglishSandboxStarConsonant {*r},
+    {*i} EnglishSandboxStarConsonant {*r} -> {*ə} EnglishSandboxStarConsonant {*r},
+    {*u} EnglishSandboxStarConsonant {*r} -> {*ɔː} EnglishSandboxStarConsonant {*r},
+    {*o} EnglishSandboxStarConsonant {*r} -> {*ɔː} EnglishSandboxStarConsonant {*r}
 ];
 
 # Late Middle English / Great Vowel Shift diphthongisation and raising.
 define EnglishSandboxGreatVowelShift [
-    {oː} -> {əʊ} || _ EnglishSandboxStarConsonant,
-    {oː} -> {əʊ} || _ .#.,
-    {oː} -> {aʊ},
-    {ɑː} -> {eɪ},
-    {ɑː} -> {aɪ},
-    {ɑː} -> {əʊ} || _ EnglishSandboxStarNasal,
-    {ɑː} -> {əʊ} || _ {*g},
-    {ɑː} -> {əʊ} || _ {*g} {*w},
-    {ɑː} -> {əʊ} || _ {*k},
-    {ɑː} -> {əʊ} || _ {*k} {*n},
-    {ɑː} -> {əʊ} || _ {*p},
-    {ɑː} -> {əʊ} || _ {*θ},
-    {ɑː} -> {əʊ} || _ {*x},
-    {ɑː} -> {əʊ} || _ {*w}
+    {*ō} -> {*əʊ} || _ EnglishSandboxStarConsonant,
+    {*ō} -> {*əʊ} || _ .#.,
+    {*ō} -> {*aʊ},
+    {*ā} -> {*eɪ},
+    {*ā} -> {*aɪ},
+    {*ā} -> {*əʊ} || _ EnglishSandboxStarNasal,
+    {*ā} -> {*əʊ} || _ {*g},
+    {*ā} -> {*əʊ} || _ {*g} {*w},
+    {*ā} -> {*əʊ} || _ {*k},
+    {*ā} -> {*əʊ} || _ {*k} {*n},
+    {*ā} -> {*əʊ} || _ {*p},
+    {*ā} -> {*əʊ} || _ {*θ},
+    {*ā} -> {*əʊ} || _ {*x},
+    {*ā} -> {*əʊ} || _ {*w}
 ];
 
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
@@ -213,6 +231,23 @@ define EnglishSandboxOrthography [
     {*x} -> {h}
 ];
 
+# Final conversion of starred vowels/diphthongs to IPA (pre-surface cleanup).
+define EnglishSandboxLongVowelRealisation [
+    {*ā} -> {ɑː},
+    {*ē} -> {iː},
+    {*ī} -> {iː},
+    {*ō} -> {oː},
+    {*ū} -> {uː},
+    {*əʊ} -> {əʊ},
+    {*aʊ} -> {aʊ},
+    {*eɪ} -> {eɪ},
+    {*aɪ} -> {aɪ},
+    {*æ} -> {æ},
+    {*ɛ} -> {ɛ},
+    {*ə} -> {ə},
+    {*ɔː} -> {ɔː}
+];
+
 define EnglishSandboxProtoInput pgrmWord;
 
 define EnglishSandboxReflexes EnglishSandboxProtoInput
@@ -223,6 +258,11 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxWestGermanic
     .o. EnglishSandboxOpenSyllableLengthening
     .o. EnglishSandboxBreakingLengthening
+    .o. EnglishSandboxLiquidLowering
+    .o. EnglishSandboxVelarShortening
+    .o. EnglishSandboxUrRounding
+    .o. EnglishSandboxProtoRhoticFronting
+    .o. EnglishSandboxShortBackLowering
     .o. EnglishSandboxVowelRules
     .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
@@ -239,13 +279,19 @@ define EnglishSandboxAfterGlideDeletion EnglishSandboxAfterGhMarker .o. EnglishS
 define EnglishSandboxAfterWestGermanic EnglishSandboxAfterGlideDeletion .o. EnglishSandboxWestGermanic;
 define EnglishSandboxAfterOpenLengthening EnglishSandboxAfterWestGermanic .o. EnglishSandboxOpenSyllableLengthening;
 define EnglishSandboxAfterBreakingLengthening EnglishSandboxAfterOpenLengthening .o. EnglishSandboxBreakingLengthening;
-define EnglishSandboxAfterVowelRules EnglishSandboxAfterBreakingLengthening .o. EnglishSandboxVowelRules;
+define EnglishSandboxAfterLiquidLowering EnglishSandboxAfterBreakingLengthening .o. EnglishSandboxLiquidLowering;
+define EnglishSandboxAfterVelarShortening EnglishSandboxAfterLiquidLowering .o. EnglishSandboxVelarShortening;
+define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening .o. EnglishSandboxUrRounding;
+define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterUrRounding .o. EnglishSandboxProtoRhoticFronting;
+define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxShortBackLowering;
+define EnglishSandboxAfterVowelRules EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRules;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
 define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxSilentInitialCleanup;
 define EnglishSandboxAfterGhDeletion EnglishSandboxAfterSilentCleanup .o. EnglishSandboxGhDeletion;
 define EnglishSandboxAfterOrthography EnglishSandboxAfterGhDeletion .o. EnglishSandboxOrthography;
-define EnglishSandboxAfterSurface EnglishSandboxAfterOrthography .o. RemoveStars .o. EnglishSandboxSurface;
+define EnglishSandboxAfterLongVowelRealisation EnglishSandboxAfterOrthography .o. EnglishSandboxLongVowelRealisation;
+define EnglishSandboxAfterSurface EnglishSandboxAfterLongVowelRealisation .o. RemoveStars .o. EnglishSandboxSurface;
 
 define EnglishSandbox EnglishSandboxAfterSurface;
 
@@ -286,6 +332,26 @@ regex EnglishSandboxAfterBreakingLengthening;
 save stack english_sandbox_after_breaking_lengthening.bin
 
 clear stack
+regex EnglishSandboxAfterLiquidLowering;
+save stack english_sandbox_after_liquid_lowering.bin
+
+clear stack
+regex EnglishSandboxAfterVelarShortening;
+save stack english_sandbox_after_velar_shortening.bin
+
+clear stack
+regex EnglishSandboxAfterUrRounding;
+save stack english_sandbox_after_ur_rounding.bin
+
+clear stack
+regex EnglishSandboxAfterProtoRhoticFronting;
+save stack english_sandbox_after_proto_rhotic_fronting.bin
+
+clear stack
+regex EnglishSandboxAfterShortBackLowering;
+save stack english_sandbox_after_short_back_lowering.bin
+
+clear stack
 regex EnglishSandboxAfterVowelRules;
 save stack english_sandbox_after_vowel_rules.bin
 
@@ -308,6 +374,10 @@ save stack english_sandbox_after_gh_deletion.bin
 clear stack
 regex EnglishSandboxAfterOrthography;
 save stack english_sandbox_after_orthography.bin
+
+clear stack
+regex EnglishSandboxAfterLongVowelRealisation;
+save stack english_sandbox_after_long_vowel_realisation.bin
 
 clear stack
 regex EnglishSandboxAfterSurface;

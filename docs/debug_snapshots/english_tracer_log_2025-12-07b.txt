@@ -1,0 +1,67 @@
+=== *fiskaz ===
+ProtoInput: *f*i*s*k*a*z
+InitialKn: *f*i*s*k*a*z
+ConsonantRules: *f*i*s*k*a
+GhMarker: *f*i*s*k*a
+GlideDeletion: *f*i*s*k*a
+WestGermanic: *f*i*s*k*a
+OpenLengthening: *f*i*s*k*a
+BreakingLengthening: *f*i*s*k*a
+VowelRules: *f*ɪ*s*k*a
+PostVocalicRLoss: *f*ɪ*s*k*a
+WeakTailReductions: *f*ɪ*s*kə
+SilentInitialCleanup: *f*ɪ*s*kə
+GhDeletion: *f*ɪ*s*kə
+Orthography: *f*ɪ*s*kə
+Surface: fɪskə
+
+=== *gebaną ===
+ProtoInput: *g*e*b*a*n*ą
+InitialKn: *g*e*b*a*n*ą
+ConsonantRules: *g*e*b*a*n*ą
+GhMarker: *g*e*b*a*n*ą
+GlideDeletion: *g*e*b*a*n*ą
+WestGermanic: *g*e*b*a*n*ą
+OpenLengthening: *g*ē*b*ā*n*ą
+BreakingLengthening: *g*ē*b*ā*n*ą
+VowelRules: *g*ē*b*ā*n*ą
+PostVocalicRLoss: *g*ē*b*ā*n*ą
+WeakTailReductions: *g*ē*b*ā*nəʊ
+SilentInitialCleanup: *g*ē*b*ā*nəʊ
+GhDeletion: *g*ē*b*ā*nəʊ
+Orthography: *g*ē*b*ā*nəʊ
+Surface: gēbānəʊ
+
+=== *swestēr ===
+ProtoInput: *s*w*e*s*t*ē*r
+InitialKn: *s*w*e*s*t*ē*r
+ConsonantRules: *sʋ*e*s*t*ē*r
+GhMarker: *sʋ*e*s*t*ē*r
+GlideDeletion: *sʋ*e*s*t*ē*r
+WestGermanic: *sʋ*e*s*t*ē*r
+OpenLengthening: *sʋ*e*s*t*ē*r
+BreakingLengthening: *sʋ*e*s*t*ē*r
+VowelRules: *sʋ*ɪ*s*tiː*r
+PostVocalicRLoss: *sʋ*ɪ*s*tiː
+WeakTailReductions: *sʋ*ɪ*s*tiː
+SilentInitialCleanup: *sʋ*ɪ*s*tiː
+GhDeletion: *sʋ*ɪ*s*tiː
+Orthography: *sʋ*ɪ*s*tiː
+Surface: sʋɪstiː
+
+=== *br{au}dą ===
+ProtoInput: *b*r*au*d*ą
+InitialKn: *b*r*au*d*ą
+ConsonantRules: *b*r*au*d*ą
+GhMarker: *b*r*au*d*ą
+GlideDeletion: *b*r*au*d*ą
+WestGermanic: *b*r*ō*d*ą
+OpenLengthening: *b*r*ō*d*ą
+BreakingLengthening: *b*r*ō*d*ą
+VowelRules: *b*r*ō*d*ą
+PostVocalicRLoss: *b*r*ō*d*ą
+WeakTailReductions: *b*r*ō*dəʊ
+SilentInitialCleanup: *b*r*ō*dəʊ
+GhDeletion: *b*r*ō*dəʊ
+Orthography: *b*r*ō*dəʊ
+Surface: brōdəʊ
