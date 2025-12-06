@@ -1,0 +1,101 @@
+=== *bōkō ===
+ProtoInput: *b*ō*k*ō
+InitialKn: *b*ō*k*ō
+ConsonantRules: *b*ō*k*ō
+GhMarker: *b*ō*k*ō
+GlideDeletion: *b*ō*k*ō
+WestGermanic: *b*ō*k*ō
+OpenLengthening: *b*ō*k*ō
+BreakingLengthening: *b*ō*k*ō
+VowelRules: *bʊ*kɔː
+PostVocalicRLoss: *bʊ*kɔː
+WeakTailReductions: *bʊ*kɔː
+SilentInitialCleanup: *bʊ*kɔː
+GhDeletion: *bʊ*kɔː
+Orthography: *bʊ*kɔː
+Surface: bʊkɔː
+
+=== *bōsmaz ===
+ProtoInput: *b*ō*s*m*a*z
+InitialKn: *b*ō*s*m*a*z
+ConsonantRules: *b*ō*s*m*a
+GhMarker: *b*ō*s*m*a
+GlideDeletion: *b*ō*s*m*a
+WestGermanic: *b*ō*s*m*a
+OpenLengthening: *b*ō*s*m*a
+BreakingLengthening: *b*ō*s*m*a
+VowelRules: *b*əʊ*s*m*a
+PostVocalicRLoss: *b*əʊ*s*m*a
+WeakTailReductions: *b*əʊ*s*mə
+SilentInitialCleanup: *b*əʊ*s*mə
+GhDeletion: *b*əʊ*s*mə
+Orthography: *b*əʊ*s*mə
+Surface: bəʊsmə
+
+=== *fulgēną ===
+ProtoInput: *f*u*l*g*ē*n*ą
+InitialKn: *f*u*l*g*ē*n*ą
+ConsonantRules: *f*u*l*g*ē*n*ą
+GhMarker: *f*u*l*g*ē*n*ą
+GlideDeletion: *f*u*l*g*ē*n*ą
+WestGermanic: *f*u*l*g*ē*n*ą
+OpenLengthening: *f*u*l*g*ē*n*ą
+BreakingLengthening: *f*u*l*g*ē*n*ą
+VowelRules: *fʊ*l*g*ē*n*ą
+PostVocalicRLoss: *fʊ*l*g*ē*n*ą
+WeakTailReductions: *fʊ*l*g*ē*n*ə
+SilentInitialCleanup: *fʊ*l*g*ē*n*ə
+GhDeletion: *fʊ*l*g*ē*n*ə
+Orthography: *fʊ*l*g*ē*n*ə
+Surface: fʊlgiːnə
+
+=== *bōmą ===
+ProtoInput: *b*ō*m*ą
+InitialKn: *b*ō*m*ą
+ConsonantRules: *b*ō*m*ą
+GhMarker: *b*ō*m*ą
+GlideDeletion: *b*ō*m*ą
+WestGermanic: *b*ō*m*ą
+OpenLengthening: *b*ō*m*ą
+BreakingLengthening: *b*ō*m*ą
+VowelRules: *b*əʊ*m*ą
+PostVocalicRLoss: *b*əʊ*m*ą
+WeakTailReductions: *b*əʊ*m*ə
+SilentInitialCleanup: *b*əʊ*m*ə
+GhDeletion: *b*əʊ*m*ə
+Orthography: *b*əʊ*m*ə
+Surface: bəʊmə
+
+=== *dūbōn ===
+ProtoInput: *d*ū*b*ō*n
+InitialKn: *d*ū*b*ō*n
+ConsonantRules: *d*ū*b*ō*n
+GhMarker: *d*ū*b*ō*n
+GlideDeletion: *d*ū*b*ō*n
+WestGermanic: *d*ū*b*ō*n
+OpenLengthening: *d*ū*b*ō*n
+BreakingLengthening: *d*ū*b*ō*n
+VowelRules: *d*aʊ*b*əʊ*n
+PostVocalicRLoss: *d*aʊ*b*əʊ*n
+WeakTailReductions: *d*aʊ*b*əʊ*n
+SilentInitialCleanup: *d*aʊ*b*əʊ*n
+GhDeletion: *d*aʊ*b*əʊ*n
+Orthography: *d*aʊ*b*əʊ*n
+Surface: daʊbəʊn
+
+=== *brōdą ===
+ProtoInput: *b*r*ō*d*ą
+InitialKn: *b*r*ō*d*ą
+ConsonantRules: *b*r*ō*d*ą
+GhMarker: *b*r*ō*d*ą
+GlideDeletion: *b*r*ō*d*ą
+WestGermanic: *b*r*ō*d*ą
+OpenLengthening: *b*r*ō*d*ą
+BreakingLengthening: *b*r*ō*d*ą
+VowelRules: *b*r*əʊ*d*ą
+PostVocalicRLoss: *b*r*əʊ*d*ą
+WeakTailReductions: *b*r*əʊ*d*ə
+SilentInitialCleanup: *b*r*əʊ*d*ə
+GhDeletion: *b*r*əʊ*d*ə
+Orthography: *b*r*əʊ*d*ə
+Surface: brəʊdə

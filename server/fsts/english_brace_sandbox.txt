@@ -141,6 +141,19 @@ define EnglishSandboxShortBackLowering [
     {*o} -> {ɔ}
 ];
 
+# Deterministic long-ō stage: targets for boot/foot/goose classes.
+define EnglishSandboxOFrontContext [
+    {*ō} -> {*uː} || _ ({*m} | {*n} | {*l}) EnglishSandboxStarVocalic,
+    {*ō} -> {*ʊ} || EnglishSandboxStarConsonant _ EnglishSandboxStarConsonant,
+    {*ō} -> {*əʊ}
+];
+
+# Deterministic long-ū stage: house vs. oo contexts.
+define EnglishSandboxUFrontContext [
+    {*ū} -> {*aʊ} || _ ({*s} | {*n} | {*l} | .#.),
+    {*ū} -> {*uː}
+];
+
 # Anglo-Frisian style short-a fronting in closed syllables.
 define EnglishSandboxShortAFronting [
     {*a} -> {*æ} || _ EnglishSandboxStarConsonant
@@ -222,6 +235,9 @@ define EnglishSandboxPostVocalicRLoss [
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
     .o. EnglishSandboxShortVowelSplit
     .o. EnglishSandboxRhoticColoring
+    .o. EnglishSandboxShortBackLowering
+    .o. EnglishSandboxOFrontContext
+    .o. EnglishSandboxUFrontContext
     .o. EnglishSandboxGreatVowelShift
     .o. EnglishSandboxGVSUShift;
 
