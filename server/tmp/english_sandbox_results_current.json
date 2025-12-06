@@ -149,12 +149,7 @@
     "proto": "*bendaną",
     "ipa": "baɪnd",
     "doculect": "English",
-    "outputs": [
-      "bānd",
-      "bāndz",
-      "baind",
-      "baindz"
-    ]
+    "outputs": []
   },
   {
     "concept": "birth",
@@ -188,15 +183,9 @@
     "ipa": "bəʊn",
     "doculect": "English",
     "outputs": [
-      "bān",
-      "bārn",
       "bōn",
       "baun",
-      "bain",
-      "bairn",
-      "baun",
-      "bain",
-      "bairn"
+      "baun"
     ]
   },
   {
@@ -238,21 +227,12 @@
     "ipa": "bəʊθ",
     "doculect": "English",
     "outputs": [
-      "bārθ",
-      "bāθ",
-      "bāθz",
       "bōθ",
       "bōθz",
       "bauθ",
       "bauθz",
-      "bairθ",
-      "baiθ",
-      "baiθz",
       "bauθ",
-      "bauθz",
-      "bairθ",
-      "baiθ",
-      "baiθz"
+      "bauθz"
     ]
   },
   {
@@ -268,6 +248,9 @@
     "ipa": "baʊ",
     "doculect": "English",
     "outputs": [
+      "bū",
+      "būr",
+      "būz",
       "baxu",
       "baxuz",
       "bawu",
@@ -279,54 +262,21 @@
     "proto": "*baugjaną",
     "ipa": "bəʊ",
     "doculect": "English",
-    "outputs": [
-      "bāz",
-      "bā",
-      "bār",
-      "bāz",
-      "baiz",
-      "bai",
-      "bair",
-      "bai",
-      "bair",
-      "baiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "bow",
     "proto": "*beuganą",
     "ipa": "bəʊ",
     "doculect": "English",
-    "outputs": [
-      "bāz",
-      "bā",
-      "bār",
-      "bāz",
-      "baiz",
-      "bai",
-      "bair",
-      "bai",
-      "bair",
-      "baiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "bow",
     "proto": "*bugōn",
     "ipa": "bəʊ",
     "doculect": "English",
-    "outputs": [
-      "bāz",
-      "bā",
-      "bār",
-      "bāz",
-      "baiz",
-      "bai",
-      "bair",
-      "bai",
-      "bair",
-      "baiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "bower",
@@ -392,12 +342,7 @@
     "proto": "*brūdiz",
     "ipa": "braɪd",
     "doculect": "English",
-    "outputs": [
-      "brād",
-      "brārd",
-      "braid",
-      "braird"
-    ]
+    "outputs": []
   },
   {
     "concept": "bring",
@@ -456,12 +401,7 @@
     "proto": "*klembaną",
     "ipa": "klaɪm",
     "doculect": "English",
-    "outputs": [
-      "klām",
-      "klārm",
-      "klaim",
-      "klairm"
-    ]
+    "outputs": []
   },
   {
     "concept": "comb",
@@ -469,15 +409,9 @@
     "ipa": "kəʊm",
     "doculect": "English",
     "outputs": [
-      "kām",
-      "kārm",
       "kōm",
       "kaum",
-      "kaim",
-      "kairm",
-      "kaum",
-      "kaim",
-      "kairm"
+      "kaum"
     ]
   },
   {
@@ -498,6 +432,9 @@
     "ipa": "kaʊ",
     "doculect": "English",
     "outputs": [
+      "kū",
+      "kūr",
+      "kūz",
       "kaxu",
       "kaxuz",
       "kawu",
@@ -603,13 +540,7 @@
     "proto": "*dōną",
     "ipa": "duː",
     "doculect": "English",
-    "outputs": [
-      "dū",
-      "dūr",
-      "dūz",
-      "dūx",
-      "dūxz"
-    ]
+    "outputs": []
   },
   {
     "concept": "door",
@@ -628,18 +559,7 @@
     "proto": "*daigaz",
     "ipa": "dəʊ",
     "doculect": "English",
-    "outputs": [
-      "dāz",
-      "dā",
-      "dār",
-      "dāz",
-      "daiz",
-      "dai",
-      "dair",
-      "dai",
-      "dair",
-      "daiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "dove",
@@ -795,24 +715,14 @@
     "proto": "*fextaną",
     "ipa": "faɪt",
     "doculect": "English",
-    "outputs": [
-      "fāt",
-      "fārt",
-      "fait",
-      "fairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "find",
     "proto": "*fenθaną",
     "ipa": "faɪnd",
     "doculect": "English",
-    "outputs": [
-      "fānd",
-      "fāndz",
-      "faind",
-      "faindz"
-    ]
+    "outputs": []
   },
   {
     "concept": "finger",
@@ -923,12 +833,6 @@
       "flaxez",
       "flawer",
       "flawez",
-      "flā",
-      "flār",
-      "flāz",
-      "flai",
-      "flair",
-      "flaiz",
       "flaxiz",
       "flawiz"
     ]
@@ -938,11 +842,7 @@
     "proto": "*fulōn",
     "ipa": "fəʊl",
     "doculect": "English",
-    "outputs": [
-      "fāl",
-      "fail",
-      "fail"
-    ]
+    "outputs": []
   },
   {
     "concept": "fodder",
@@ -956,28 +856,14 @@
     "proto": "*falθaną",
     "ipa": "fəʊld",
     "doculect": "English",
-    "outputs": [
-      "fāld",
-      "faild",
-      "faild"
-    ]
+    "outputs": []
   },
   {
     "concept": "folk",
     "proto": "*fulką",
     "ipa": "fəʊk",
     "doculect": "English",
-    "outputs": [
-      "fāk",
-      "fākz",
-      "fārk",
-      "faik",
-      "faikz",
-      "fairk",
-      "faik",
-      "faikz",
-      "fairk"
-    ]
+    "outputs": []
   },
   {
     "concept": "follow",
@@ -1010,7 +896,9 @@
     "proto": "*fuglaz",
     "ipa": "faʊl",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "fūl"
+    ]
   },
   {
     "concept": "fox",
@@ -1040,12 +928,7 @@
     "proto": "*furxtīn",
     "ipa": "fraɪt",
     "doculect": "English",
-    "outputs": [
-      "frāt",
-      "frārt",
-      "frait",
-      "frairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "frost",
@@ -1220,12 +1103,7 @@
     "proto": "*xarmaz",
     "ipa": "hɑːm",
     "doculect": "English",
-    "outputs": [
-      "hāxm",
-      "haixm",
-      "xāxm",
-      "xaixm"
-    ]
+    "outputs": []
   },
   {
     "concept": "harvest",
@@ -1332,16 +1210,7 @@
     "proto": "*xertōn",
     "ipa": "hɑːt",
     "doculect": "English",
-    "outputs": [
-      "hāxt",
-      "hāxtz",
-      "haixt",
-      "haixtz",
-      "xāxt",
-      "xāxtz",
-      "xaixt",
-      "xaixtz"
-    ]
+    "outputs": []
   },
   {
     "concept": "hearth",
@@ -1417,34 +1286,14 @@
     "proto": "*xawwaną",
     "ipa": "hjuː",
     "doculect": "English",
-    "outputs": [
-      "hjū",
-      "hjūr",
-      "hjūz",
-      "hjūx",
-      "hjūxz",
-      "xjū",
-      "xjūr",
-      "xjūz",
-      "xjūx",
-      "xjūxz"
-    ]
+    "outputs": []
   },
   {
     "concept": "hind",
     "proto": "*xendjō",
     "ipa": "haɪnd",
     "doculect": "English",
-    "outputs": [
-      "hānd",
-      "hāndz",
-      "haind",
-      "haindz",
-      "xānd",
-      "xāndz",
-      "xaind",
-      "xaindz"
-    ]
+    "outputs": []
   },
   {
     "concept": "hoard",
@@ -1467,14 +1316,7 @@
     "proto": "*xaldaną",
     "ipa": "həʊld",
     "doculect": "English",
-    "outputs": [
-      "hāld",
-      "haild",
-      "haild",
-      "xāld",
-      "xaild",
-      "xaild"
-    ]
+    "outputs": []
   },
   {
     "concept": "home",
@@ -1482,24 +1324,12 @@
     "ipa": "həʊm",
     "doculect": "English",
     "outputs": [
-      "hām",
-      "hārm",
       "hōm",
       "haum",
-      "haim",
-      "hairm",
       "haum",
-      "haim",
-      "hairm",
-      "xām",
-      "xārm",
       "xōm",
       "xaum",
-      "xaim",
-      "xairm",
-      "xaum",
-      "xaim",
-      "xairm"
+      "xaum"
     ]
   },
   {
@@ -1524,10 +1354,7 @@
     "proto": "*xōfaz",
     "ipa": "huːf",
     "doculect": "English",
-    "outputs": [
-      "hūf",
-      "xūf"
-    ]
+    "outputs": []
   },
   {
     "concept": "horn",
@@ -1551,14 +1378,12 @@
     "ipa": "haʊnd",
     "doculect": "English",
     "outputs": [
-      "hōnd",
-      "hōndz",
-      "haund",
-      "haundz",
-      "xōnd",
-      "xōndz",
-      "xaund",
-      "xaundz"
+      "hūnd",
+      "hūndz",
+      "hūdj",
+      "xūnd",
+      "xūndz",
+      "xūdj"
     ]
   },
   {
@@ -1596,12 +1421,7 @@
     "proto": "*knext",
     "ipa": "naɪt",
     "doculect": "English",
-    "outputs": [
-      "nāt",
-      "nārt",
-      "nait",
-      "nairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "knob",
@@ -1749,34 +1569,21 @@
     "proto": "*lībą",
     "ipa": "laɪf",
     "doculect": "English",
-    "outputs": [
-      "lāf",
-      "laif"
-    ]
+    "outputs": []
   },
   {
     "concept": "light",
     "proto": "*leuxtjaną",
     "ipa": "laɪt",
     "doculect": "English",
-    "outputs": [
-      "lāt",
-      "lārt",
-      "lait",
-      "lairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "lime",
     "proto": "*līmą",
     "ipa": "laɪm",
     "doculect": "English",
-    "outputs": [
-      "lām",
-      "lārm",
-      "laim",
-      "lairm"
-    ]
+    "outputs": []
   },
   {
     "concept": "linden",
@@ -1790,12 +1597,7 @@
     "proto": "*līnan",
     "ipa": "laɪn",
     "doculect": "English",
-    "outputs": [
-      "lān",
-      "lārn",
-      "lain",
-      "lairn"
-    ]
+    "outputs": []
   },
   {
     "concept": "list",
@@ -1831,15 +1633,9 @@
     "ipa": "ləʊm",
     "doculect": "English",
     "outputs": [
-      "lām",
-      "lārm",
       "lōm",
       "laum",
-      "laim",
-      "lairm",
-      "laum",
-      "laim",
-      "lairm"
+      "laum"
     ]
   },
   {
@@ -1848,21 +1644,12 @@
     "ipa": "ləʊθ",
     "doculect": "English",
     "outputs": [
-      "lārθ",
-      "lāθ",
-      "lāθz",
       "lōθ",
       "lōθz",
       "lauθ",
       "lauθz",
-      "lairθ",
-      "laiθ",
-      "laiθz",
       "lauθ",
-      "lauθz",
-      "lairθ",
-      "laiθ",
-      "laiθz"
+      "lauθz"
     ]
   },
   {
@@ -1893,10 +1680,8 @@
     "ipa": "laʊs",
     "doculect": "English",
     "outputs": [
-      "lōs",
-      "lōsz",
-      "laus",
-      "lausz"
+      "lūs",
+      "lūsz"
     ]
   },
   {
@@ -1923,12 +1708,6 @@
       "laxez",
       "lawer",
       "lawez",
-      "lā",
-      "lār",
-      "lāz",
-      "lai",
-      "lair",
-      "laiz",
       "laxiz",
       "lawiz"
     ]
@@ -2020,12 +1799,7 @@
     "proto": "*maxtiz",
     "ipa": "maɪt",
     "doculect": "English",
-    "outputs": [
-      "māt",
-      "mārt",
-      "mait",
-      "mairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "milk",
@@ -2049,10 +1823,7 @@
     "proto": "*mōdaz",
     "ipa": "muːd",
     "doculect": "English",
-    "outputs": [
-      "mūd",
-      "mūrd"
-    ]
+    "outputs": []
   },
   {
     "concept": "mother",
@@ -2152,12 +1923,7 @@
     "proto": "*naxtz",
     "ipa": "naɪt",
     "doculect": "English",
-    "outputs": [
-      "nāt",
-      "nārt",
-      "nait",
-      "nairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "nightmare",
@@ -2171,12 +1937,7 @@
     "proto": "*newun",
     "ipa": "naɪn",
     "doculect": "English",
-    "outputs": [
-      "nān",
-      "nārn",
-      "nain",
-      "nairn"
-    ]
+    "outputs": []
   },
   {
     "concept": "nose",
@@ -2270,24 +2031,14 @@
     "proto": "*rīdaną",
     "ipa": "raɪd",
     "doculect": "English",
-    "outputs": [
-      "rād",
-      "rārd",
-      "raid",
-      "raird"
-    ]
+    "outputs": []
   },
   {
     "concept": "rind",
     "proto": "*rendō",
     "ipa": "raɪnd",
     "doculect": "English",
-    "outputs": [
-      "rānd",
-      "rāndz",
-      "raind",
-      "raindz"
-    ]
+    "outputs": []
   },
   {
     "concept": "rock",
@@ -2305,39 +2056,21 @@
     "proto": "*raixōn",
     "ipa": "rəʊ",
     "doculect": "English",
-    "outputs": [
-      "rāz",
-      "rā",
-      "rār",
-      "rāz",
-      "raiz",
-      "rai",
-      "rair",
-      "rai",
-      "rair",
-      "raiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "rood",
     "proto": "*rōdō",
     "ipa": "ruːd",
     "doculect": "English",
-    "outputs": [
-      "rūd",
-      "rūrd"
-    ]
+    "outputs": []
   },
   {
     "concept": "room",
     "proto": "*rūmą",
     "ipa": "ruːm",
     "doculect": "English",
-    "outputs": [
-      "rūm",
-      "rūrm",
-      "rūxm"
-    ]
+    "outputs": []
   },
   {
     "concept": "rope",
@@ -2345,15 +2078,9 @@
     "ipa": "rəʊp",
     "doculect": "English",
     "outputs": [
-      "rāp",
-      "rārp",
       "rōp",
       "raup",
-      "raip",
-      "rairp",
-      "raup",
-      "raip",
-      "rairp"
+      "raup"
     ]
   },
   {
@@ -2387,12 +2114,6 @@
       "raxez",
       "rawer",
       "rawez",
-      "rā",
-      "rār",
-      "rāz",
-      "rai",
-      "rair",
-      "raiz",
       "raxiz",
       "rawiz"
     ]
@@ -2609,12 +2330,7 @@
     "proto": "*sīdōn",
     "ipa": "saɪd",
     "doculect": "English",
-    "outputs": [
-      "sād",
-      "sārd",
-      "said",
-      "saird"
-    ]
+    "outputs": []
   },
   {
     "concept": "sieve",
@@ -2697,12 +2413,7 @@
     "proto": "*slīmą",
     "ipa": "slaɪm",
     "doculect": "English",
-    "outputs": [
-      "slām",
-      "slārm",
-      "slaim",
-      "slairm"
-    ]
+    "outputs": []
   },
   {
     "concept": "smear",
@@ -2730,11 +2441,7 @@
     "proto": "*saiwalō",
     "ipa": "səʊl",
     "doculect": "English",
-    "outputs": [
-      "sāl",
-      "sail",
-      "sail"
-    ]
+    "outputs": []
   },
   {
     "concept": "span",
@@ -2799,10 +2506,7 @@
     "proto": "*spēnuz",
     "ipa": "spuːn",
     "doculect": "English",
-    "outputs": [
-      "spūn",
-      "spūrn"
-    ]
+    "outputs": []
   },
   {
     "concept": "spread",
@@ -2830,12 +2534,7 @@
     "proto": "*stertaz",
     "ipa": "stɑːt",
     "doculect": "English",
-    "outputs": [
-      "stāxt",
-      "stāxtz",
-      "staixt",
-      "staixtz"
-    ]
+    "outputs": []
   },
   {
     "concept": "starve",
@@ -2900,15 +2599,9 @@
     "ipa": "stəʊn",
     "doculect": "English",
     "outputs": [
-      "stān",
-      "stārn",
       "stōn",
       "staun",
-      "stain",
-      "stairn",
-      "staun",
-      "stain",
-      "stairn"
+      "staun"
     ]
   },
   {
@@ -2916,9 +2609,7 @@
     "proto": "*stōlaz",
     "ipa": "stuːl",
     "doculect": "English",
-    "outputs": [
-      "stūl"
-    ]
+    "outputs": []
   },
   {
     "concept": "stork",
@@ -2986,13 +2677,7 @@
     "proto": "*strawjaną",
     "ipa": "struː",
     "doculect": "English",
-    "outputs": [
-      "strū",
-      "strūr",
-      "strūz",
-      "strūx",
-      "strūxz"
-    ]
+    "outputs": []
   },
   {
     "concept": "string",
@@ -3080,12 +2765,7 @@
     "proto": "*swīnan",
     "ipa": "sʋaɪn",
     "doculect": "English",
-    "outputs": [
-      "swān",
-      "swārn",
-      "swain",
-      "swairn"
-    ]
+    "outputs": []
   },
   {
     "concept": "sword",
@@ -3266,12 +2946,7 @@
     "proto": "*tīdiz",
     "ipa": "taɪd",
     "doculect": "English",
-    "outputs": [
-      "tād",
-      "tārd",
-      "taid",
-      "taird"
-    ]
+    "outputs": []
   },
   {
     "concept": "timber",
@@ -3285,18 +2960,7 @@
     "proto": "*taixwō",
     "ipa": "təʊ",
     "doculect": "English",
-    "outputs": [
-      "tāz",
-      "tā",
-      "tār",
-      "tāz",
-      "taiz",
-      "tai",
-      "tair",
-      "tai",
-      "tair",
-      "taiz"
-    ]
+    "outputs": []
   },
   {
     "concept": "token",
@@ -3325,8 +2989,8 @@
     "ipa": "taʊn",
     "doculect": "English",
     "outputs": [
-      "tōn",
-      "taun",
+      "tūn",
+      "tūrn",
       "taxun",
       "tawun"
     ]
@@ -3527,22 +3191,14 @@
     "proto": "*xwīlō",
     "ipa": "ʋaɪl",
     "doculect": "English",
-    "outputs": [
-      "wāl",
-      "wail"
-    ]
+    "outputs": []
   },
   {
     "concept": "whine",
     "proto": "*wainōjaną",
     "ipa": "ʋaɪn",
     "doculect": "English",
-    "outputs": [
-      "wān",
-      "wārn",
-      "wain",
-      "wairn"
-    ]
+    "outputs": []
   },
   {
     "concept": "whore",
@@ -3582,22 +3238,14 @@
     "proto": "*wībą",
     "ipa": "ʋaɪf",
     "doculect": "English",
-    "outputs": [
-      "wāf",
-      "waif"
-    ]
+    "outputs": []
   },
   {
     "concept": "wight",
     "proto": "*wextiz",
     "ipa": "ʋaɪt",
     "doculect": "English",
-    "outputs": [
-      "wāt",
-      "wārt",
-      "wait",
-      "wairt"
-    ]
+    "outputs": []
   },
   {
     "concept": "will",
@@ -3650,11 +3298,7 @@
     "proto": "*walθuz",
     "ipa": "ʋəʊld",
     "doculect": "English",
-    "outputs": [
-      "wāld",
-      "waild",
-      "waild"
-    ]
+    "outputs": []
   },
   {
     "concept": "wolf",
@@ -3731,27 +3375,13 @@
     "proto": "*juką",
     "ipa": "jəʊk",
     "doculect": "English",
-    "outputs": [
-      "jāk",
-      "jākz",
-      "jārk",
-      "jaik",
-      "jaikz",
-      "jairk",
-      "jaik",
-      "jaikz",
-      "jairk"
-    ]
+    "outputs": []
   },
   {
     "concept": "youth",
     "proto": "*jugunθiz",
     "ipa": "juːθ",
     "doculect": "English",
-    "outputs": [
-      "jūrθ",
-      "jūθ",
-      "jūθz"
-    ]
+    "outputs": []
   }
 ]

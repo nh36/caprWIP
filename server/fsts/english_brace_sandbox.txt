@@ -197,22 +197,14 @@ define EnglishSandboxRhoticColoring [
     {*o} EnglishSandboxStarConsonant {*r} -> {*ɔː} EnglishSandboxStarConsonant {*r}
 ];
 
-# Late Middle English / Great Vowel Shift diphthongisation and raising.
+# Deterministic Great Vowel Shift stages.
 define EnglishSandboxGreatVowelShift [
-    {*ō} -> {*əʊ} || _ EnglishSandboxStarConsonant,
-    {*ō} -> {*əʊ} || _ .#.,
-    {*ō} -> {*aʊ},
-    {*ā} -> {*eɪ},
-    {*ā} -> {*aɪ},
-    {*ā} -> {*əʊ} || _ EnglishSandboxStarNasal,
-    {*ā} -> {*əʊ} || _ {*g},
-    {*ā} -> {*əʊ} || _ {*g} {*w},
-    {*ā} -> {*əʊ} || _ {*k},
-    {*ā} -> {*əʊ} || _ {*k} {*n},
-    {*ā} -> {*əʊ} || _ {*p},
-    {*ā} -> {*əʊ} || _ {*θ},
-    {*ā} -> {*əʊ} || _ {*x},
-    {*ā} -> {*əʊ} || _ {*w}
+    {*ō} -> {*əʊ},
+    {*ā} -> {*eɪ}
+];
+
+define EnglishSandboxGVSUShift [
+    {*ū} -> {*aʊ}
 ];
 
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
@@ -230,7 +222,8 @@ define EnglishSandboxPostVocalicRLoss [
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
     .o. EnglishSandboxShortVowelSplit
     .o. EnglishSandboxRhoticColoring
-    .o. EnglishSandboxGreatVowelShift;
+    .o. EnglishSandboxGreatVowelShift
+    .o. EnglishSandboxGVSUShift;
 
 define EnglishSandboxOrthography [
     {*x} -> {h}
