@@ -45,3 +45,32 @@ code so future FST changes can be verified quickly.
 
 Future extensions could add more doculect combinations or hook into CI, but
 the initial goal is a fast manual smoke test for FST tweaks.
+
+
+## English sandbox harness & tracer snapshot
+
+When touching the English sandbox stages, run the analyzer + tracer loop to keep the bucket data and stage snapshots up to date.
+
+1. **Export analyzer outputs** (inside the backend container so `flookup` is available):
+
+   ```bash
+   docker compose exec backend bash -lc      "cd /usr/app && python3 tools/export_english_sandbox_results.py        --output tmp/english_sandbox_results_current.json"
+   ```
+
+2. **Annotate with stage data** so each entry records the first failing stage:
+
+   ```bash
+   docker compose exec backend bash -lc      "cd /usr/app && python3 tools/annotate_english_sandbox_results.py        --input tmp/english_sandbox_results_current.json        --output tmp/english_sandbox_results_with_stages.json"
+   ```
+
+   The annotated JSON lives under `server/tmp/…` on the host and feeds the bucket triage sheet.
+
+3. **Capture a tracer snapshot** for the canonical probes (or any bucket you touched) so the before/after stages are logged under `docs/debug_snapshots/`:
+
+   ```bash
+   docker compose exec backend bash -lc      "cd /usr/app && python3 tools/trace_english_sandbox.py        --lexeme-file tmp/english_tracer_probes.txt        --brace-diphthongs        --save-log tmp/english_tracer_log_$(date +%Y-%m-%d).txt"
+   ```
+
+   Copy the resulting log from `server/tmp/` into `docs/debug_snapshots/` so we have a dated record of the stage outputs.
+
+Running these three commands keeps the sandbox regression results aligned with the tracer, making it obvious which stage blocks each failure and giving us a dated log of stage shapes whenever the stack changes.
