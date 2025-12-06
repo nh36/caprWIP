@@ -18,6 +18,8 @@
       --output tmp/english_sandbox_results_with_stages.json"
   ```
   The new file (`server/tmp/english_sandbox_results_with_stages.json`) feeds into the bucket triage spreadsheet so every failure row shows its blocking stage.
+- Added `tools/export_english_sandbox_results.py` to regenerate `tmp/english_sandbox_results_current.json` directly from `data/germanic-aligned-final.tsv` (filtering the English rows and piping the IPA tokens through `flookup english_brace_sandbox.bin`). Run it inside Docker right before the annotation step so both JSON files stay in sync with the current FST binaries.
+
 - Dropped a snapshot of the four canonical probes into `docs/debug_snapshots/english_tracer_log_2025-12-05.txt` (generated via the tracer’s `--save-log`). Future sessions should append similar logs whenever stage definitions shift.
 
 #### Surface filter triage
