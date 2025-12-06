@@ -142,17 +142,23 @@ define EnglishSandboxShortBackLowering [
 ];
 
 # Deterministic long-ō stage: targets for boot/foot/goose classes.
-define EnglishSandboxOFrontContext [
-    {*ō} -> {*uː} || _ ({*m} | {*n} | {*l}) EnglishSandboxStarVocalic,
-    {*ō} -> {*ʊ} || EnglishSandboxStarConsonant _ EnglishSandboxStarConsonant,
-    {*ō} -> {*əʊ}
-];
+define EnglishSandboxORaisedFront [{*ō} -> {*uː} || _ ({*m} | {*n} | {*l}) EnglishSandboxStarVocalic];
+
+define EnglishSandboxORaisedClosed [{*ō} -> {*ʊ} || EnglishSandboxStarConsonant _ EnglishSandboxStarConsonant];
+
+define EnglishSandboxOFrontFallback [{*ō} -> {*əʊ}];
+
+define EnglishSandboxOFrontContext EnglishSandboxORaisedFront
+    .o. EnglishSandboxORaisedClosed
+    .o. EnglishSandboxOFrontFallback;
 
 # Deterministic long-ū stage: house vs. oo contexts.
-define EnglishSandboxUFrontContext [
-    {*ū} -> {*aʊ} || _ ({*s} | {*n} | {*l} | .#.),
-    {*ū} -> {*uː}
-];
+define EnglishSandboxURaisedTargets [{*ū} -> {*aʊ} || _ ({*s} | {*n} | {*l} | .#.)];
+
+define EnglishSandboxUFrontFallback [{*ū} -> {*uː}];
+
+define EnglishSandboxUFrontContext EnglishSandboxURaisedTargets
+    .o. EnglishSandboxUFrontFallback;
 
 # Anglo-Frisian style short-a fronting in closed syllables.
 define EnglishSandboxShortAFronting [
@@ -164,25 +170,10 @@ define EnglishSandboxShortVowelContextual [
     {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
     {u} -> {ʊ} || _ {*z} EnglishSandboxStarVocalic,
     {u} -> {ʊ} || _ {*z} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*m} EnglishSandboxStarVocalic,
-    {u} -> {ʊ} || _ {*n} EnglishSandboxStarConsonant,
-    {u} -> {ʊ} || _ {*l} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {l} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*r} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {r} (EnglishSandboxStarConsonant | .#.),
     {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) EnglishSandboxStarConsonant,
     {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) .#.,
-    {u} -> {ʊ} || _ {*t} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {t} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*d} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {d} (EnglishSandboxStarConsonant | .#.),
-    {u} -> {ʊ} || _ {*t} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {t} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*d} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {d} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {r} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*m} EnglishSandboxWeakTailVowel,
-    {u} -> {ʊ} || _ {*n} EnglishSandboxWeakTailVowel,
+    {u} -> {ʊ} || {*w} _ {*l} (EnglishSandboxStarConsonant | .#.),
+    {u} -> {ʊ} || {*w} _ {*l} EnglishSandboxWeakTailVowel,
     {e} -> {ɪ} || _ (EnglishSandboxStarNasal | EnglishSandboxStarLiquid) EnglishSandboxStarConsonant,
     {e} -> {ɪ} || _ EnglishSandboxStarNasal .#.,
     {i} -> {ɪ} || _ EnglishSandboxStarConsonant,
@@ -195,6 +186,11 @@ define EnglishSandboxShortVowelFallback [
 ];
 
 define EnglishSandboxShortVowelSplit EnglishSandboxShortVowelContextual .o. EnglishSandboxShortVowelFallback;
+
+define EnglishSandboxStrutRescue [
+    {ʊ} -> {ʌ} || _ EnglishSandboxStarNasal (EnglishSandboxStarConsonant | .#.),
+    {ʊ} -> {ʌ} || _ EnglishSandboxStarNasal EnglishSandboxWeakTailVowel
+];
 
 # Old English & Middle English vowel developments feeding the later English cascade.
 define EnglishSandboxCoreVowelRules [
@@ -232,14 +228,24 @@ define EnglishSandboxPostVocalicRLoss [
     {*r} -> 0 || EnglishSandboxPlainVocalic _ (EnglishSandboxStarConsonant | .#.)
 ];
 
-define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
+define EnglishSandboxVowelRulesPreRhotic EnglishSandboxCoreVowelRules
     .o. EnglishSandboxShortVowelSplit
-    .o. EnglishSandboxRhoticColoring
-    .o. EnglishSandboxShortBackLowering
+    .o. EnglishSandboxStrutRescue;
+
+define EnglishSandboxOoLowering [
+    {*ʊ} -> {ʌ} || ({*b} | {*f}) {*l} _ ({*d} | {*t})
+];
+
+define EnglishSandboxVowelRulesPostRhotic EnglishSandboxShortBackLowering
     .o. EnglishSandboxOFrontContext
+    .o. EnglishSandboxOoLowering
     .o. EnglishSandboxUFrontContext
     .o. EnglishSandboxGreatVowelShift
     .o. EnglishSandboxGVSUShift;
+
+define EnglishSandboxVowelRules EnglishSandboxVowelRulesPreRhotic
+    .o. EnglishSandboxRhoticColoring
+    .o. EnglishSandboxVowelRulesPostRhotic;
 
 define EnglishSandboxOrthography [
     {*x} -> {h}
@@ -300,7 +306,9 @@ define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening .o. Engl
 define EnglishSandboxAfterShortAFronting EnglishSandboxAfterUrRounding .o. EnglishSandboxShortAFronting;
 define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
 define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxShortBackLowering;
-define EnglishSandboxAfterVowelRules EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRules;
+define EnglishSandboxAfterShortVowelSplit EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRulesPreRhotic;
+define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterShortVowelSplit .o. EnglishSandboxRhoticColoring;
+define EnglishSandboxAfterVowelRules EnglishSandboxAfterRhoticColoring .o. EnglishSandboxVowelRulesPostRhotic;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
 define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxSilentInitialCleanup;
@@ -370,6 +378,14 @@ save stack english_sandbox_after_proto_rhotic_fronting.bin
 clear stack
 regex EnglishSandboxAfterShortBackLowering;
 save stack english_sandbox_after_short_back_lowering.bin
+
+clear stack
+regex EnglishSandboxAfterShortVowelSplit;
+save stack english_sandbox_after_short_vowel_split.bin
+
+clear stack
+regex EnglishSandboxAfterRhoticColoring;
+save stack english_sandbox_after_rhotic_coloring.bin
 
 clear stack
 regex EnglishSandboxAfterVowelRules;
