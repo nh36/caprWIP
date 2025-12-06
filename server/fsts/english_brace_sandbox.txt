@@ -3,6 +3,7 @@ source fsts/germanic.txt
 # English sandbox: copy of current pipeline for brace migration experiments.
 
 define EnglishSandboxSurfaceVowel [
+    {a} | {e} | {i} | {o} | {u} | {y} |
     {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
     {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ} |
     {ā} | {ē} | {ī} | {ō} | {ū} | {ą} | {ę}
@@ -57,12 +58,20 @@ define EnglishSandboxInitialKnMarkers [
     {*g} {*n} -> {Gn} || .#. _
 ];
 
-define EnglishSandboxConsonantRules [
-    {*w} -> {ʋ},
-    {*z} -> {r} || EnglishSandboxStarVocalic _ EnglishSandboxStarVocalic,
-    {*z} -> 0 || _ .#.,
-    {*d} {*j} -> nd
+define EnglishSandboxWGlideRule [{*w} -> {ʋ}];
+
+define EnglishSandboxZRhotacism [
+    {*z} -> {r} || EnglishSandboxStarVocalic _ EnglishSandboxStarVocalic
 ];
+
+define EnglishSandboxZApocope [{*z} -> 0 || _ .#.];
+
+define EnglishSandboxDJPalatal [{*d} {*j} -> {nd}];
+
+define EnglishSandboxConsonantRules EnglishSandboxWGlideRule
+    .o. EnglishSandboxZRhotacism
+    .o. EnglishSandboxZApocope
+    .o. EnglishSandboxDJPalatal;
 
 define EnglishSandboxGhMarker [
     {*x} -> {GH} || EnglishSandboxStarVocalic _ ({*t} | {*d} | .#.)
@@ -157,6 +166,14 @@ define EnglishSandboxCoreVowelRules [
     {*u} -> {u}
 ];
 
+define EnglishSandboxRhoticColoring [
+    {a} EnglishSandboxStarConsonant {*r} -> {æ} EnglishSandboxStarConsonant {*r},
+    {e} EnglishSandboxStarConsonant {*r} -> {ɛ} EnglishSandboxStarConsonant {*r},
+    {i} EnglishSandboxStarConsonant {*r} -> {ə} EnglishSandboxStarConsonant {*r},
+    {u} EnglishSandboxStarConsonant {*r} -> {ɔː} EnglishSandboxStarConsonant {*r},
+    {o} EnglishSandboxStarConsonant {*r} -> {ɔː} EnglishSandboxStarConsonant {*r}
+];
+
 # Late Middle English / Great Vowel Shift diphthongisation and raising.
 define EnglishSandboxGreatVowelShift [
     {oː} -> {əʊ} || _ EnglishSandboxStarConsonant,
@@ -178,7 +195,8 @@ define EnglishSandboxGreatVowelShift [
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
 define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ .#.,
-    {*a} -> {ə} || _ EnglishSandboxWeakTailVowel
+    {*a} -> {ə} || _ EnglishSandboxWeakTailVowel,
+    {*ą} -> {əʊ}
 ];
 
 # Early Modern English post-vocalic /r/-loss.
@@ -188,6 +206,7 @@ define EnglishSandboxPostVocalicRLoss [
 
 define EnglishSandboxVowelRules EnglishSandboxCoreVowelRules
     .o. EnglishSandboxShortVowelSplit
+    .o. EnglishSandboxRhoticColoring
     .o. EnglishSandboxGreatVowelShift;
 
 define EnglishSandboxOrthography [

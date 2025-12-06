@@ -57,6 +57,16 @@ currently focuses on the Burmish and Germanic pipelines.
      Burmish placements.
   3. Rebuild the English/Dutch/German surface filters so they accept brace
      tokens and smoke-test the UI to confirm the `{*…}` alphabet flows end-to-end.
+  4. English-specific TODOs before the next session:
+     - Tackle the vowel determinism in small steps: peel off one `EnglishSandboxCoreVowelRules`
+       clause (e.g., `{*ō}` before liquids) into its own stage, verify via tracer,
+       and only then continue to the next context so analyzer coverage stays stable.
+     - Do the same for `EnglishSandboxShortVowelSplit`: keep the contextual `{u→ʊ}` rules,
+       but make sure the fallback `{u→ʌ}` fires exactly once by placing it after the
+       contextual block and re-running the tracer on `*bardaz/*bebruz/*bergą/*utraz`.
+     - Once the vowel stages are deterministic again, resume the weak-tail reductions
+       (add `{*e}` tails first) and run the export→annotate→trace workflow so the bucket
+       counts document each incremental gain.
   Track detailed progress in `docs/germanic_transducer_report.md`.
 
 ### Operations

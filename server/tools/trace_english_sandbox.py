@@ -84,8 +84,12 @@ def maybe_brace_diphthongs(raw: str) -> str:
     return wrapped
 
 
+PROTO_STRIP_RE = re.compile(r"[{}*\s\-/()]")
+
+
 def normalize_proto_input(raw: str) -> str:
-    return re.sub(r"[{}*\s]", "", raw)
+    """Collapse braces/stars plus proto punctuation before feeding flookup."""
+    return PROTO_STRIP_RE.sub("", raw)
 
 
 def iter_lexemes(args: argparse.Namespace) -> List[str]:
