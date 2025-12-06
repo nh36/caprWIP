@@ -141,6 +141,11 @@ define EnglishSandboxShortBackLowering [
     {*o} -> {ɔ}
 ];
 
+# Anglo-Frisian style short-a fronting in closed syllables.
+define EnglishSandboxShortAFronting [
+    {*a} -> {*æ} || _ EnglishSandboxStarConsonant
+];
+
 # Late Middle English short-vowel splits (KIT vs. DRESS, FOOT vs. STRUT).
 define EnglishSandboxShortVowelContextual [
     {u} -> {ʊ} || _ EnglishSandboxStarVelarStop,
@@ -214,7 +219,7 @@ define EnglishSandboxGreatVowelShift [
 define EnglishSandboxWeakTailReductions [
     {*a} -> {ə} || _ .#.,
     {*a} -> {ə} || _ EnglishSandboxWeakTailVowel,
-    {*ą} -> {əʊ}
+    {*ą} -> {*ə}
 ];
 
 # Early Modern English post-vocalic /r/-loss.
@@ -261,6 +266,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxLiquidLowering
     .o. EnglishSandboxVelarShortening
     .o. EnglishSandboxUrRounding
+    .o. EnglishSandboxShortAFronting
     .o. EnglishSandboxProtoRhoticFronting
     .o. EnglishSandboxShortBackLowering
     .o. EnglishSandboxVowelRules
@@ -282,7 +288,8 @@ define EnglishSandboxAfterBreakingLengthening EnglishSandboxAfterOpenLengthening
 define EnglishSandboxAfterLiquidLowering EnglishSandboxAfterBreakingLengthening .o. EnglishSandboxLiquidLowering;
 define EnglishSandboxAfterVelarShortening EnglishSandboxAfterLiquidLowering .o. EnglishSandboxVelarShortening;
 define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening .o. EnglishSandboxUrRounding;
-define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterUrRounding .o. EnglishSandboxProtoRhoticFronting;
+define EnglishSandboxAfterShortAFronting EnglishSandboxAfterUrRounding .o. EnglishSandboxShortAFronting;
+define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
 define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxShortBackLowering;
 define EnglishSandboxAfterVowelRules EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRules;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
@@ -342,6 +349,10 @@ save stack english_sandbox_after_velar_shortening.bin
 clear stack
 regex EnglishSandboxAfterUrRounding;
 save stack english_sandbox_after_ur_rounding.bin
+
+clear stack
+regex EnglishSandboxAfterShortAFronting;
+save stack english_sandbox_after_short_a_fronting.bin
 
 clear stack
 regex EnglishSandboxAfterProtoRhoticFronting;

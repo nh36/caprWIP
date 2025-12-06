@@ -35,6 +35,12 @@
 - Introduced `EnglishSandboxShortBackLowering` for the blanket `{*o -> ɔ}` mapping. This keeps short back vowels out of `EnglishSandboxCoreVowelRules` and gives us another checkpoint before the short-vowel split. Staged binaries saved (`english_sandbox_after_proto_rhotic_fronting.bin`, `english_sandbox_after_short_back_lowering.bin`).
 - Recompiled via `docker compose exec backend … foma -f fsts/english_brace_sandbox.txt` and captured an updated probe log (`docs/debug_snapshots/english_tracer_log_core_audit_post_rhotic.txt`). Highlights: `*stānaz` now reaches `{təʊ/taɪ/teɪ}` options ahead of weak tails, `*bergą` fronts to `{bæ…}` before `{*r}` disappears, and the short `{o}` forms (`*fulkaz`, `*fothą`) stay deterministic through the new stage. Analyzer coverage still sits at 146/376 (not rerun); next change will be the `EnglishSandboxLengthRealisation` stage so `{*ā/*ō/…}` leave the macro alphabet before Great Vowel Shift.
 
+### Star-preserving vowel cascade + STRUT probes (late 2025-12-07)
+
+- Converted the vowel pipeline to stay in the `{*…}` alphabet until the very end: `EnglishSandboxRhoticColoring`/`EnglishSandboxGreatVowelShift` now rewrite starred vowels and a new terminal `EnglishSandboxLongVowelRealisation` emits the IPA symbols right before `RemoveStars`. Tracer logs (`docs/debug_snapshots/english_tracer_log_core_starred.txt`, `docs/debug_snapshots/english_tracer_log_2025-12-07c.txt`) confirm the macrons persist through every historical stage.
+- Reran the export→annotate→trace workflow (`english_tracer_log_2025-12-07d.txt`); analyzer coverage climbed to **188/376**, so the star-preserving rewrite didn’t cost us any outputs.
+- Began cleaning up the STRUT/DRESS zero-output cluster. `EnglishSandboxWeakTailReductions` now maps `{*ą}`→`{*ə}` and a new `EnglishSandboxShortAFronting` stage fronts short `{*a}` in closed syllables before the short-vowel split. After rebuilding and running `server/tools/run_english_sandbox_workflow.sh english_tracer_log_2025-12-07e.txt`, coverage improved to **195/376**—forms like *ban/*brandaz now emit `bæn`/`brændə`. Updated `server/tmp/english_zero_output_summary.txt` (181 remaining failures) plus dropped the STRUT trace log at `docs/debug_snapshots/english_tracer_log_2025-12-07e.txt` for future comparisons.
+
 ## 2025-12-06
 
 ### English ConsonantRules made deterministic
