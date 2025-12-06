@@ -39,6 +39,10 @@ define EnglishSandboxPlainNasal [{m} | {n}];
 # Brace-aware helper inventories for the sandbox.
 define EnglishSandboxStarVowel GermanStarVowel;
 
+define EnglishSandboxStarFrontVowel GermanStarFrontVowel;
+
+define EnglishSandboxStarBackVowel GermanStarBackVowel;
+
 define EnglishSandboxStarDiphthong GermanStarDiphthong;
 
 define EnglishSandboxStarConsonant GermanStarConsonant;
@@ -57,6 +61,15 @@ define EnglishSandboxInitialKnMarkers [
     {*k} {*n} -> {Kn} || .#. _,
     {*g} {*n} -> {Gn} || .#. _
 ];
+
+define EnglishSandboxPalatalisation (
+    [{*s} {*k} -> {ʃ} || _ EnglishSandboxStarFrontVowel]
+    .o. [{*k} -> {tʃ} || _ EnglishSandboxStarFrontVowel]
+    .o. [{*g} -> {dʒ} || _ EnglishSandboxStarFrontVowel]
+    .o. [{*b} {*j} -> {v}]
+    .o. [{*g} {*j} -> {dʒ}]
+    .o. [{*k} {*j} -> {tʃ}]
+);
 
 define EnglishSandboxWGlideRule [{*w} -> {ʋ}];
 
@@ -131,9 +144,21 @@ define EnglishSandboxUrRounding [
     {*u} -> {ɔː} || _ {*r} .#.
 ];
 
+define EnglishSandboxWeakTailMarker [
+    {*a} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*ą} -> {*ă},
+    {*a} {*m} {*ą} -> {*ă},
+    {*ā} {*m} {*ą} -> {*ă},
+    {*a} {*n} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*n} {*ą} -> {*ă}
+];
+
 # Proto-stage fronting/backing before Middle English developments.
 define EnglishSandboxProtoRhoticFronting [
-    {*a} -> {æ} || _ {*r}
+    {*a} -> {æ} || _ {*r},
+    {*e} -> {æ} || _ {*r},
+    {*i} -> {ɪ} || _ {*r},
+    {*o} -> {ɔ} || _ {*r}
 ];
 
 # Short back-vowel lowering (pre-ME contextual rewrite).
@@ -217,10 +242,24 @@ define EnglishSandboxGVSUShift [
 ];
 
 # Late Middle English / Early Modern English unstressed reductions (weak tails).
+define EnglishSandboxTailConsonant [
+    EnglishSandboxStarNasal |
+    EnglishSandboxStarLiquid |
+    {n} | {m} | {l} | {r}
+];
+
 define EnglishSandboxWeakTailReductions [
-    {*a} -> {ə} || _ .#.,
-    {*a} -> {ə} || _ EnglishSandboxWeakTailVowel,
+    {*a} -> {*ə} || _ .#.,
+    {*a} -> {*ə} || _ EnglishSandboxWeakTailVowel,
+    {*ă} -> {*ə},
     {*ą} -> {*ə}
+];
+
+define EnglishSandboxWeakTailSchwa [{*ə}];
+
+define EnglishSandboxWeakTailCleanup [
+    EnglishSandboxTailConsonant -> 0 || EnglishSandboxWeakTailSchwa _ .#.,
+    EnglishSandboxWeakTailSchwa -> 0 || (EnglishSandboxStarConsonant | EnglishSandboxTailConsonant | EnglishSandboxSurfaceConsonant) _ .#.
 ];
 
 # Early Modern English post-vocalic /r/-loss.
@@ -272,6 +311,7 @@ define EnglishSandboxProtoInput pgrmWord;
 
 define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxInitialKnMarkers
+    .o. EnglishSandboxPalatalisation
     .o. EnglishSandboxConsonantRules
     .o. EnglishSandboxGhMarker
     .o. EnglishSandboxGlideDeletion
@@ -281,12 +321,14 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxLiquidLowering
     .o. EnglishSandboxVelarShortening
     .o. EnglishSandboxUrRounding
+    .o. EnglishSandboxWeakTailMarker
     .o. EnglishSandboxShortAFronting
     .o. EnglishSandboxProtoRhoticFronting
     .o. EnglishSandboxShortBackLowering
     .o. EnglishSandboxVowelRules
     .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
+    .o. EnglishSandboxWeakTailCleanup
     .o. EnglishSandboxSilentInitialCleanup
     .o. EnglishSandboxGhDeletion
     .o. EnglishSandboxOrthography;
@@ -294,7 +336,8 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
 # Stage instrumentation so every checkpoint can be traced/saved like the German stack.
 define EnglishSandboxAfterProtoInput EnglishSandboxProtoInput;
 define EnglishSandboxAfterInitialKn EnglishSandboxAfterProtoInput .o. EnglishSandboxInitialKnMarkers;
-define EnglishSandboxAfterConsonantRules EnglishSandboxAfterInitialKn .o. EnglishSandboxConsonantRules;
+define EnglishSandboxAfterPalatalisation EnglishSandboxAfterInitialKn .o. EnglishSandboxPalatalisation;
+define EnglishSandboxAfterConsonantRules EnglishSandboxAfterPalatalisation .o. EnglishSandboxConsonantRules;
 define EnglishSandboxAfterGhMarker EnglishSandboxAfterConsonantRules .o. EnglishSandboxGhMarker;
 define EnglishSandboxAfterGlideDeletion EnglishSandboxAfterGhMarker .o. EnglishSandboxGlideDeletion;
 define EnglishSandboxAfterWestGermanic EnglishSandboxAfterGlideDeletion .o. EnglishSandboxWestGermanic;
@@ -303,7 +346,8 @@ define EnglishSandboxAfterBreakingLengthening EnglishSandboxAfterOpenLengthening
 define EnglishSandboxAfterLiquidLowering EnglishSandboxAfterBreakingLengthening .o. EnglishSandboxLiquidLowering;
 define EnglishSandboxAfterVelarShortening EnglishSandboxAfterLiquidLowering .o. EnglishSandboxVelarShortening;
 define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening .o. EnglishSandboxUrRounding;
-define EnglishSandboxAfterShortAFronting EnglishSandboxAfterUrRounding .o. EnglishSandboxShortAFronting;
+define EnglishSandboxAfterWeakTailMarker EnglishSandboxAfterUrRounding .o. EnglishSandboxWeakTailMarker;
+define EnglishSandboxAfterShortAFronting EnglishSandboxAfterWeakTailMarker .o. EnglishSandboxShortAFronting;
 define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
 define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxShortBackLowering;
 define EnglishSandboxAfterShortVowelSplit EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRulesPreRhotic;
@@ -311,7 +355,8 @@ define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterShortVowelSplit .o. 
 define EnglishSandboxAfterVowelRules EnglishSandboxAfterRhoticColoring .o. EnglishSandboxVowelRulesPostRhotic;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
-define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxSilentInitialCleanup;
+define EnglishSandboxAfterWeakTailCleanup EnglishSandboxAfterWeakTailReductions .o. EnglishSandboxWeakTailCleanup;
+define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailCleanup .o. EnglishSandboxSilentInitialCleanup;
 define EnglishSandboxAfterGhDeletion EnglishSandboxAfterSilentCleanup .o. EnglishSandboxGhDeletion;
 define EnglishSandboxAfterOrthography EnglishSandboxAfterGhDeletion .o. EnglishSandboxOrthography;
 define EnglishSandboxAfterLongVowelRealisation EnglishSandboxAfterOrthography .o. EnglishSandboxLongVowelRealisation;
@@ -330,6 +375,10 @@ save stack english_sandbox_after_proto_input.bin
 clear stack
 regex EnglishSandboxAfterInitialKn;
 save stack english_sandbox_after_initial_kn.bin
+
+clear stack
+regex EnglishSandboxAfterPalatalisation;
+save stack english_sandbox_after_palatalisation.bin
 
 clear stack
 regex EnglishSandboxAfterConsonantRules;
@@ -368,6 +417,10 @@ regex EnglishSandboxAfterUrRounding;
 save stack english_sandbox_after_ur_rounding.bin
 
 clear stack
+regex EnglishSandboxAfterWeakTailMarker;
+save stack english_sandbox_after_weak_tail_marker.bin
+
+clear stack
 regex EnglishSandboxAfterShortAFronting;
 save stack english_sandbox_after_short_a_fronting.bin
 
@@ -398,6 +451,10 @@ save stack english_sandbox_after_postvocalic_r_loss.bin
 clear stack
 regex EnglishSandboxAfterWeakTailReductions;
 save stack english_sandbox_after_weak_tail.bin
+
+clear stack
+regex EnglishSandboxAfterWeakTailCleanup;
+save stack english_sandbox_after_weak_tail_cleanup.bin
 
 clear stack
 regex EnglishSandboxAfterSilentCleanup;

@@ -20,6 +20,7 @@ from typing import Iterable, List, Sequence, Tuple
 STAGES: Sequence[Tuple[str, str]] = [
     ("ProtoInput", "english_sandbox_after_proto_input.bin"),
     ("InitialKn", "english_sandbox_after_initial_kn.bin"),
+    ("Palatalisation", "english_sandbox_after_palatalisation.bin"),
     ("ConsonantRules", "english_sandbox_after_consonant_rules.bin"),
     ("GhMarker", "english_sandbox_after_gh_marker.bin"),
     ("GlideDeletion", "english_sandbox_after_glide_deletion.bin"),
@@ -29,6 +30,7 @@ STAGES: Sequence[Tuple[str, str]] = [
     ("LiquidLowering", "english_sandbox_after_liquid_lowering.bin"),
     ("VelarShortening", "english_sandbox_after_velar_shortening.bin"),
     ("UrRounding", "english_sandbox_after_ur_rounding.bin"),
+    ("WeakTailMarker", "english_sandbox_after_weak_tail_marker.bin"),
     ("ShortAFronting", "english_sandbox_after_short_a_fronting.bin"),
     ("ProtoRhoticFronting", "english_sandbox_after_proto_rhotic_fronting.bin"),
     ("ShortBackLowering", "english_sandbox_after_short_back_lowering.bin"),
@@ -37,6 +39,7 @@ STAGES: Sequence[Tuple[str, str]] = [
     ("VowelRules", "english_sandbox_after_vowel_rules.bin"),
     ("PostVocalicRLoss", "english_sandbox_after_postvocalic_r_loss.bin"),
     ("WeakTailReductions", "english_sandbox_after_weak_tail.bin"),
+    ("WeakTailCleanup", "english_sandbox_after_weak_tail_cleanup.bin"),
     ("SilentInitialCleanup", "english_sandbox_after_silent_cleanup.bin"),
     ("GhDeletion", "english_sandbox_after_gh_deletion.bin"),
     ("Orthography", "english_sandbox_after_orthography.bin"),
