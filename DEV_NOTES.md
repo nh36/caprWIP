@@ -1,5 +1,16 @@
 ## 2025-12-07
 
+### English sandbox todo — surface accuracy focus
+
+- **Finish weak-tail deletions.** Extend `EnglishSandboxWeakTailReductions` (or add a follow-up cleanup stage) so reduced `{*a/ą}` tails drop the following `n/m/r` and final schwa in stressed monosyllables. This will convert forms like `beɪkeɪnə/bænnə/brændə/blʌdə` into the expected `bake/ban/brand/blood` without manual patches.
+- **Back/round proto rhotics earlier.** Expand `EnglishSandboxProtoRhoticFronting` to push `{*e, *i, *o}` toward `{æ, ɪ, ɔ}` before `{*r}` so `bergą/bardaz/barwōn/burdiz` feed the ME vowel system with the right backness, unlocking `barrow/beard/bier/birth` reflexes.
+- **Add the missing palatalisation pass.** Insert a dedicated `EnglishSandboxPalatalisation` stage (after West Germanic or glide deletion) that maps `{*bj→v}`, `{*gj→dʒ}`, `{*kj→tʃ}`, `{*sk→ʃ}` before front vowels. This captures the well-known West Saxon/Midlands changes needed for `believe/beech/chew/shield/ship` and collapses a large swath of remaining errors.
+- Once these three TODOs land, rerun `tools/english_apply_down_stats.py` to confirm the “exactly one correct output” count climbs beyond the current 2/357.
+
+### Rhotic breaking scaffolding (2025-12-06 PM)
+
+- Added `EnglishSandboxRhoticBreaking` with stage checkpoints/tracer support right after `ProtoRhoticFronting`. Current rewrites still leave `*bergą/*bardaz/*barwōn/*erθo` as `bæg/bɔːd/bæʋəʊ/æθɔ`, so the next session should tweak the `{*e/i/o}`→`{*a/ɜ/ɔ}` mappings and add special cases such as `{*rgă → {*rəʊ}}`, `{*rdă → {*ər}}` before re-running `python3 tools/trace_english_sandbox.py --lexeme-file tmp/rhotic_test_set.txt` and `python3 tools/english_apply_down_stats.py`.
+
 ### English vowel chronology split into discrete stages
 
 - Extracted the historically early portions of `EnglishSandboxCoreVowelRules` into three stand-alone stages inserted right after `EnglishSandboxBreakingLengthening`: `EnglishSandboxLiquidLowering` (late OE ō→ɔː before liquids/final), `EnglishSandboxVelarShortening` (Anglo-Frisian ō→ʊ before velars), and `EnglishSandboxUrRounding` (WG u→ɔː before r). Each clause now happens once in chronological order before the broader ME vowel machinery runs, reducing the overlap that previously caused branching inside the core block.

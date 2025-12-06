@@ -153,6 +153,15 @@ define EnglishSandboxWeakTailMarker [
     {*ā} {*n} {*n} {*ą} -> {*ă}
 ];
 
+define EnglishSandboxRhoticBreaking [
+    {*e} -> {*æ} || _ {*r},
+    {*i} -> {*ɛ} || _ {*r},
+    {*o} -> {*ɔ} || _ {*r},
+    {*r} {*g} {*ă} -> {*r} {*əʊ},
+    {*r} {*d} {*ă} -> {*r} {*ə},
+    {*r} {*g} -> {*r}
+];
+
 # Proto-stage fronting/backing before Middle English developments.
 define EnglishSandboxProtoRhoticFronting [
     {*a} -> {æ} || _ {*r},
@@ -324,6 +333,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxWeakTailMarker
     .o. EnglishSandboxShortAFronting
     .o. EnglishSandboxProtoRhoticFronting
+    .o. EnglishSandboxRhoticBreaking
     .o. EnglishSandboxShortBackLowering
     .o. EnglishSandboxVowelRules
     .o. EnglishSandboxPostVocalicRLoss
@@ -349,7 +359,8 @@ define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening .o. Engl
 define EnglishSandboxAfterWeakTailMarker EnglishSandboxAfterUrRounding .o. EnglishSandboxWeakTailMarker;
 define EnglishSandboxAfterShortAFronting EnglishSandboxAfterWeakTailMarker .o. EnglishSandboxShortAFronting;
 define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
-define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxShortBackLowering;
+define EnglishSandboxAfterRhoticBreaking EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxRhoticBreaking;
+define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterRhoticBreaking .o. EnglishSandboxShortBackLowering;
 define EnglishSandboxAfterShortVowelSplit EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRulesPreRhotic;
 define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterShortVowelSplit .o. EnglishSandboxRhoticColoring;
 define EnglishSandboxAfterVowelRules EnglishSandboxAfterRhoticColoring .o. EnglishSandboxVowelRulesPostRhotic;
@@ -427,6 +438,10 @@ save stack english_sandbox_after_short_a_fronting.bin
 clear stack
 regex EnglishSandboxAfterProtoRhoticFronting;
 save stack english_sandbox_after_proto_rhotic_fronting.bin
+
+clear stack
+regex EnglishSandboxAfterRhoticBreaking;
+save stack english_sandbox_after_rhotic_breaking.bin
 
 clear stack
 regex EnglishSandboxAfterShortBackLowering;
