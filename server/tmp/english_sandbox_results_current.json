@@ -36,28 +36,26 @@
     "proto": "*banną",
     "ipa": "bæn",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "ban"
+    ]
   },
   {
     "concept": "barrow",
     "proto": "*bergą",
     "ipa": "bærəʊ",
     "doculect": "English",
-    "outputs": [
-      "batrą",
-      "babrą",
-      "badrą",
-      "bamrą",
-      "banrą",
-      "baθrą"
-    ]
+    "outputs": []
   },
   {
     "concept": "bast",
     "proto": "*bastą",
     "ipa": "bæst",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "bast",
+      "bastz"
+    ]
   },
   {
     "concept": "bath",
@@ -291,8 +289,7 @@
       "bair",
       "bai",
       "bair",
-      "baiz",
-      "bą"
+      "baiz"
     ]
   },
   {
@@ -310,8 +307,7 @@
       "bair",
       "bai",
       "bair",
-      "baiz",
-      "bą"
+      "baiz"
     ]
   },
   {
@@ -329,8 +325,7 @@
       "bair",
       "bai",
       "bair",
-      "baiz",
-      "bą"
+      "baiz"
     ]
   },
   {
@@ -345,7 +340,10 @@
     "proto": "*brandaz",
     "ipa": "brænd",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "brand",
+      "brandz"
+    ]
   },
   {
     "concept": "bread",
@@ -640,8 +638,7 @@
       "dair",
       "dai",
       "dair",
-      "daiz",
-      "dą"
+      "daiz"
     ]
   },
   {
@@ -1204,7 +1201,12 @@
     "proto": "*xanduz",
     "ipa": "hænd",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "hand",
+      "handz",
+      "xand",
+      "xandz"
+    ]
   },
   {
     "concept": "handle",
@@ -1628,14 +1630,19 @@
     "proto": "*landą",
     "ipa": "lænd",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "land",
+      "landz"
+    ]
   },
   {
     "concept": "lap",
     "proto": "*labbaz",
     "ipa": "læp",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "lap"
+    ]
   },
   {
     "concept": "last",
@@ -1956,7 +1963,9 @@
     "proto": "*marīn",
     "ipa": "mæn",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "man"
+    ]
   },
   {
     "concept": "march",
@@ -2306,8 +2315,7 @@
       "rair",
       "rai",
       "rair",
-      "raiz",
-      "rą"
+      "raiz"
     ]
   },
   {
@@ -2429,7 +2437,9 @@
     "proto": "*sapōn",
     "ipa": "sæp",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "sap"
+    ]
   },
   {
     "concept": "sea",
@@ -2706,19 +2716,14 @@
     "proto": "*snaigwaz",
     "ipa": "snəʊ",
     "doculect": "English",
-    "outputs": [
-      "sną"
-    ]
+    "outputs": []
   },
   {
     "concept": "sorrow",
     "proto": "*surgō",
     "ipa": "sɔrəʊ",
     "doculect": "English",
-    "outputs": [
-      "sorrą",
-      "sozą"
-    ]
+    "outputs": []
   },
   {
     "concept": "soul",
@@ -2736,14 +2741,18 @@
     "proto": "*spannaną",
     "ipa": "spæn",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "span"
+    ]
   },
   {
     "concept": "span",
     "proto": "*spannō",
     "ipa": "spæn",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "span"
+    ]
   },
   {
     "concept": "spar",
@@ -3095,7 +3104,9 @@
     "proto": "*tappōn",
     "ipa": "tæp",
     "doculect": "English",
-    "outputs": []
+    "outputs": [
+      "tap"
+    ]
   },
   {
     "concept": "team",
@@ -3284,8 +3295,7 @@
       "tair",
       "tai",
       "tair",
-      "taiz",
-      "tą"
+      "taiz"
     ]
   },
   {
@@ -3555,10 +3565,7 @@
     "proto": "*widuwōn",
     "ipa": "ʋɪdəʊ",
     "doculect": "English",
-    "outputs": [
-      "werdą",
-      "wirdą"
-    ]
+    "outputs": []
   },
   {
     "concept": "wield",
