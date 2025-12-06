@@ -33,6 +33,7 @@ STAGES: Sequence[Tuple[str, str]] = [
     ("WeakTailMarker", "english_sandbox_after_weak_tail_marker.bin"),
     ("ShortAFronting", "english_sandbox_after_short_a_fronting.bin"),
     ("ProtoRhoticFronting", "english_sandbox_after_proto_rhotic_fronting.bin"),
+    ("RhoticBreaking", "english_sandbox_after_rhotic_breaking.bin"),
     ("ShortBackLowering", "english_sandbox_after_short_back_lowering.bin"),
     ("ShortVowelSplit", "english_sandbox_after_short_vowel_split.bin"),
     ("RhoticColoring", "english_sandbox_after_rhotic_coloring.bin"),
