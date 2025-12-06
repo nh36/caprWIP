@@ -1,3 +1,40 @@
+## 2025-12-07
+
+### English vowel chronology split into discrete stages
+
+- Extracted the historically early portions of `EnglishSandboxCoreVowelRules` into three stand-alone stages inserted right after `EnglishSandboxBreakingLengthening`: `EnglishSandboxLiquidLowering` (late OE ō→ɔː before liquids/final), `EnglishSandboxVelarShortening` (Anglo-Frisian ō→ʊ before velars), and `EnglishSandboxUrRounding` (WG u→ɔː before r). Each clause now happens once in chronological order before the broader ME vowel machinery runs, reducing the overlap that previously caused branching inside the core block.
+- Added tracer checkpoints + `.bin` exports for those stages (`english_sandbox_after_liquid_lowering.bin`, `english_sandbox_after_velar_shortening.bin`, `english_sandbox_after_ur_rounding.bin`) so `trace_english_sandbox.py` can isolate regressions per innovation. Recompiled via `docker compose exec backend ... foma -f fsts/english_brace_sandbox.txt`.
+- Ran `server/tools/run_english_sandbox_workflow.sh english_tracer_log_2025-12-07a.txt`; analyzer coverage slipped to **185/376** (down from 206). The ProtoInput bucket is still 5 items, but the “Surface+? but outputs” bucket ballooned. First probes show `*swestēr` still branches in `EnglishSandboxVowelRules`, so the next pass needs to peel the remaining clauses out of `EnglishSandboxCoreVowelRules` and clean up the short-vowel split fallback before widening weak-tail reductions again.
+
+### Short-vowel split sequentialised (WIP)
+
+- Broke `EnglishSandboxShortVowelSplit` into two parts so the contextual rewrites fire before the fallback defaults: `EnglishSandboxShortVowelContextual` now contains every `{u→ʊ}`/{`e→ɪ`}/{`i→ɪ` } clause, while `EnglishSandboxShortVowelFallback` holds the unconditional `{u→ʌ}` and `{e→ɛ}` conversions. The wrapper `EnglishSandboxShortVowelSplit` composes the two stages (`.o.`) so the historical order matches the FOOT/KIT contexts feeding the later defaults.
+- Probes (`*swestēr`, `*bardaz`, `*bebruz`, `*bergą`, `*utraz`) no longer branch at `EnglishSandboxVowelRules`; each lexeme now yields a single vowel reflex, which finally exposes the genuine coverage gaps instead of masking them behind duplicated outputs. Tracer log copied to `docs/debug_snapshots/english_tracer_log_2025-12-07b.txt`.
+- Regression: analyzer successes dropped to **146/376** because many STRUT/DRESS lexemes now lack the “extra” fallback paths that previously papered over incomplete conditioning. Next step is to audit the English TSV rows with no outputs (see `server/tmp/english_sandbox_results_current.json`, e.g. bæn/brɛd/blʌd) and backfill the missing contexts before moving on to weak-tail reductions. Hold off on adding `{*e}` tails until coverage recovers to the 185 baseline.
+
+### Core vowel audit probes (2025-12-07)
+
+- Added `server/tmp/english_core_probes.txt` spanning long vowels, short rhotics, nasal tails, and glide-rich lexemes, then traced the full stack with `python3 tools/trace_english_sandbox.py --lexeme-file tmp/english_core_probes.txt --brace-diphthongs --save-log tmp/english_tracer_log_core_audit.txt`. Snapshot lives at `docs/debug_snapshots/english_tracer_log_core_audit.txt` for future diffs.
+- Quick read-through highlights what *hasn’t* happened yet for each item:
+  - `*stānaz` (stone): still surfaces as `stānə`; the `{*ā}` tokens never leave `{ā}`, so the expected Anglo-Frisian rounding (`ā → ɔː`) and later GVS diphthongisation to `{əʊ}` are missing.
+  - `*bōkiz` (book): yields `bʊkɪ` because `{*ō}` shortens before velars but never lengthens back to `{uː}`; we still need a later FOOT-stage (or ME-stress shift) to raise `{ʊ}` when morphology demands modern `{uː}`.
+  - `*dōmą` (doom): remains `{dō-}` all the way to `dōməʊ`; the ME `{oː → uː}` change is absent, so Great Vowel Shift has nothing to work with.
+  - `*bergą` (barrow): currently `bɪgəʊ`; OE `{*e}` before `{*r}` should back/round toward `{æ/ɑ}` before rhotic loss, but that proto rhotic-fronting rule is still trapped inside `EnglishSandboxCoreVowelRules`.
+  - `*utraz` (adder): reaches `ʊtrə` because `{u}` already fronts/slackens but there’s no rhotic colouring to convert `{tVr}` into `{dər}`; consonant changes still pending.
+  - `*swester` (sister): stage outputs `sʋɪstɪ`; the expected rhotic loss + weak-tail schwa haven’t fired (our weak-tail stage doesn’t cover `{*e}` yet), so it never approaches `sɪstə`.
+  - Proto entries with `þ/ð/ai/eu` (e.g. `*fadar`, `*gansą`, `*werþaną`, `*leidą`, `*brōþēr`, `*gebāniz`) fail at `ProtoInput`, reminding us that the lexicon still needs `{þ/ð}` and brace diphthong coverage before the vowel work can be validated on those words.
+- Use these annotated gaps to decide which remaining core-vowel rules to peel next: proto rhotic fronting (`{*a → æ || _ {*r}}`) and `{*o → ɔ}` are blocking obvious words (`barrow`, `folk`), while the long-vowel macros (`{*ā, *ō, *ē, *ī, *ū}`) can stay bundled until we add the “LengthRealisation” stage right before `EnglishSandboxShortVowelContextual`.
+- Priority shortlist based on the audit:
+  1. Add an `EnglishSandboxProtoRhoticFronting` stage so `{*ar}` contexts migrate toward `{æ/ɑ}` before rhotic loss (`*bergą`, `*bardaz`).
+  2. Extract `{*o → ɔ}` (and any remaining `{*e}` adjustments) into `EnglishSandboxShortBackLowering` to unblock `*fulkaz`, `*fothą`, etc.
+  3. Once those contextual rules have their own checkpoints, introduce `EnglishSandboxLengthRealisation` immediately before `EnglishSandboxShortVowelContextual` so `{*ā/*ō/*ē/*ī/*ū}` finally leave the macro alphabet and feed the Great Vowel Shift cleanly (`*stānaz`, `*dōmą`).
+
+### Proto rhotic fronting + short back lowering staged (2025-12-07 PM)
+
+- Added `EnglishSandboxProtoRhoticFronting` (right after `EnglishSandboxUrRounding`) so the old `{*a -> æ || _ {*r}}` rewrite now happens in its own historical slot. Reran the core probe trace; `*bergą` finally shows `{bæ…}` at the new stage before rhotic loss, confirming the stage fires once and feeds downstream rules cleanly.
+- Introduced `EnglishSandboxShortBackLowering` for the blanket `{*o -> ɔ}` mapping. This keeps short back vowels out of `EnglishSandboxCoreVowelRules` and gives us another checkpoint before the short-vowel split. Staged binaries saved (`english_sandbox_after_proto_rhotic_fronting.bin`, `english_sandbox_after_short_back_lowering.bin`).
+- Recompiled via `docker compose exec backend … foma -f fsts/english_brace_sandbox.txt` and captured an updated probe log (`docs/debug_snapshots/english_tracer_log_core_audit_post_rhotic.txt`). Highlights: `*stānaz` now reaches `{təʊ/taɪ/teɪ}` options ahead of weak tails, `*bergą` fronts to `{bæ…}` before `{*r}` disappears, and the short `{o}` forms (`*fulkaz`, `*fothą`) stay deterministic through the new stage. Analyzer coverage still sits at 146/376 (not rerun); next change will be the `EnglishSandboxLengthRealisation` stage so `{*ā/*ō/…}` leave the macro alphabet before Great Vowel Shift.
+
 ## 2025-12-06
 
 ### English ConsonantRules made deterministic
