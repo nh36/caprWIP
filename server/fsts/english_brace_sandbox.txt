@@ -257,6 +257,11 @@ define EnglishSandboxTailConsonant [
     {n} | {m} | {l} | {r}
 ];
 
+define EnglishSandboxStarTailConsonant [
+    EnglishSandboxStarNasal |
+    EnglishSandboxStarLiquid
+];
+
 define EnglishSandboxWeakTailReductions (
     {*a} -> {*ə} || _ .#.
 ) .o. (
@@ -267,17 +272,19 @@ define EnglishSandboxWeakTailReductions (
     {*ą} -> {*ə}
 );
 
-define EnglishSandboxWeakTailSchwa [{*ə} | {*ă}];
+define EnglishSandboxWeakTailSchwa [{*ə}];
 
 define EnglishSandboxWeakTailCleanup (
-    EnglishSandboxTailConsonant -> 0 || EnglishSandboxWeakTailSchwa _ .#.
+    EnglishSandboxStarTailConsonant -> 0 || EnglishSandboxWeakTailSchwa _ .#.
 ) .o. (
-    EnglishSandboxTailConsonant -> 0 || _ EnglishSandboxWeakTailSchwa .#.
+    EnglishSandboxStarTailConsonant -> 0 || _ EnglishSandboxWeakTailSchwa .#.
 ) .o. (
     EnglishSandboxWeakTailSchwa -> 0 || _ .#.
 );
 
-define EnglishSandboxWeakTailFinalDrop [{*ə} -> 0 || (EnglishSandboxStarConsonant | EnglishSandboxSurfaceConsonant) _ .#.];
+define EnglishSandboxWeakTailFinalDrop ["*" {ə} -> 0 || _ .#.];
+
+define EnglishSandboxNoFinalWeakTail ~[ ?* (EnglishSandboxTailConsonant | EnglishSandboxWeakTailSchwa) .#. ];
 
 # Early Modern English post-vocalic /r/-loss.
 define EnglishSandboxPostVocalicRLoss [
@@ -377,7 +384,8 @@ define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. Eng
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
 define EnglishSandboxAfterWeakTailCleanup EnglishSandboxAfterWeakTailReductions
     .o. EnglishSandboxWeakTailCleanup
-    .o. EnglishSandboxWeakTailFinalDrop;
+    .o. EnglishSandboxWeakTailFinalDrop
+    .o. EnglishSandboxNoFinalWeakTail;
 define EnglishSandboxAfterSilentCleanup EnglishSandboxAfterWeakTailCleanup .o. EnglishSandboxSilentInitialCleanup;
 define EnglishSandboxAfterGhDeletion EnglishSandboxAfterSilentCleanup .o. EnglishSandboxGhDeletion;
 define EnglishSandboxAfterOrthography EnglishSandboxAfterGhDeletion .o. EnglishSandboxOrthography;
