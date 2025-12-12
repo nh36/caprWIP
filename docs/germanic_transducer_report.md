@@ -36,13 +36,16 @@ root `README.md`, `docs/runbook.md`, and `docs/germanic_refresh_template.md`.
 | --- | ---: | ---: | ---: | ---: |
 | Dutch | 340 | 24 | 7.1% | 2.00 |
 | English | 376 | 39 | 10.4% | 1.87 |
+| Old English | 376 | _tbd_ | _tbd_ | _tbd_ |
 | German | 376 | 11 | 2.9% | 7.91 |
 
 Intersections (Oct 2025 export):
 - English ∩ Dutch: 5
 - English ∩ German: 2
 - Dutch ∩ German: 0
-- All three languages: 0
+- All three modern languages: 0
+- Old English presently mirrors the English concept inventory; overlapping
+  counts will be added once the PGmc→OE stage exports real forms.
 
 ## Key effects delivered so far
 - Removed the literal `k → "ch"` rule so phonology stays in IPA.

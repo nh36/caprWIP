@@ -23,7 +23,9 @@ in `SETUP.md` / `USAGE.md` as needed.
 1. Visit `http://localhost:5002`.
 2. Use the “Available input sources” dropdown to select
    `burmish-aligned-final.tsv` or `germanic-aligned-final.tsv` (files live under
-   `server/data/`).
+   `server/data/`). The Germanic board now exposes four doculects (English,
+   Old English, Dutch, German); seeing the extra rows under `Old English` is
+   expected.
 3. If you expect boards immediately, confirm a matching FST text file exists in
    `server/fsts/` (e.g., `germanic.txt`).
 4. When starting from a blank FST, flip to the FST editor tab *before* pressing
@@ -59,3 +61,20 @@ cd /path/to/capr-v3-working
 docker compose down
 ```
 Check `docker compose ps` to confirm no lingering containers remain.
+
+## 6. Old English data upkeep
+- After regenerating `germanic-aligned-final.tsv` (stage3), run
+  `server/tools/add_old_english_rows.py` if any English rows were added, then
+  `server/tools/update_old_english_forms.py server/data/germanic-aligned-final.tsv server/pipeline/output/germanic/stage3/germanic-aligned-final.tsv`
+  to reapply the attested Swadesh/Wiktionary forms.
+- Periodically refresh the Wiktionary scrape via
+  `python3 server/tools/fetch_old_english_from_wiktionary.py 
+  server/data/old_english_wiktionary.tsv server/data/germanic-aligned-final.tsv`;
+  results are cached, so reruns only hit pages that changed.
+- Keep the Swadesh source snapshot in `server/data/old_english_swadesh.tsv`
+  up to date (`tmp/old_english_swadesh.html` can be refreshed via
+  `curl https://en.wiktionary.org/...` when the list changes).
+- Before handing off, run
+  `server/tools/validate_old_english_pairs.py server/data/germanic-aligned-final.tsv`
+  to ensure every English concept still has an Old English counterpart (this
+  script also reports how many placeholder notes remain).

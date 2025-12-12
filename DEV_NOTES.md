@@ -822,3 +822,10 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Testing workflow.**
   1. After adding the OE column and stage, rebuild the FST and run the tracer through the new checkpoints to prove PGmc inputs flow through the OE layer.
   2. Only then resume the ME/RP tweaks, checking  after each step to ensure apply-down stays single-output.
+
+## 2025-12-12
+
+### Old English data population
+- Added a Wiktionary scraper (`server/tools/fetch_old_english_from_wiktionary.py`) and parsed the Swadesh + API data into `server/data/old_english_wiktionary.tsv`; the updater now merges both sources and writes IPA/tokens/notes back into the aligned Germanic TSVs.
+- Ran the helper across all 376 English concepts so the Old English rows now have attested lemmas (373 entries auto-filled; annotated `fodder fōdor` and `tongs tange` manually, marked `knob` as lacking an OE cognate per the etymology).
+- Documented the workflow in `README.md` + `docs/runbook.md`, and added `server/tools/validate_old_english_pairs.py` to guard the 1:1 English↔OE coverage going forward.
