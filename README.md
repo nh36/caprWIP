@@ -2,7 +2,8 @@
 
 CAPR is a Dockerized stack (Flask API + Svelte UI + Caddy) for managing
 wordlists, cognate boards, and finite-state transducers (FSTs). The project
-currently focuses on the Burmish and Germanic pipelines.
+currently focuses on the Burmish and Germanic pipelines; the Germanic dataset
+now tracks four doculects (English, Old English, Dutch, German).
 
 
 ## Quick start (development)
@@ -30,6 +31,22 @@ currently focuses on the Burmish and Germanic pipelines.
 - `DEV_NOTES.md` – dated hand-offs; add a new section per session.
 - `docs/germanic_transducer_report.md` – Germanic FST coverage/status summary
   (with supporting files under `docs/germanic_*`).
+
+### Old English data scaffolding
+- `server/tools/add_old_english_rows.py` duplicates every English row into an
+  Old English placeholder so the TSV always contains 1:1 coverage.
+- `server/tools/fetch_old_english_from_wiktionary.py` hits the Wiktionary API to
+  pull Old English lemmas from each English entry and writes
+  `server/data/old_english_wiktionary.tsv`. Run it whenever you want a fresh
+  scrape of the etymology data (results are cached under `server/tmp/`).
+- `server/data/old_english_swadesh.tsv` stores the Wiktionary Swadesh export
+  used to seed real Old English forms.
+- `server/tools/update_old_english_forms.py` applies the Swadesh mappings to
+  the gold-standard TSVs (updating `IPA`, `TOKENS`, `COUNTERPART`, `NOTE`). Run
+  it whenever the stage3 export is regenerated.
+- `server/tools/validate_old_english_pairs.py` confirms both TSVs still have a
+  matching Old English row for every English entry (and reports how many
+  placeholders remain).
 
 ## Project structure
 ```

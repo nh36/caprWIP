@@ -2,6 +2,8 @@
 from os import system
 import argparse
 from pathlib import Path
+import subprocess
+import sys
 from lingpy import Wordlist
 from lingpy.compare.partial import Partial
 from lingpy import basictypes
@@ -9,6 +11,21 @@ from burmtools import burmish_parse
 from lingrex.colex import find_colexified_alignments, find_bad_internal_alignments
 from lingrex.align import template_alignment
 from lingrex.copar import Alignments
+
+SCRIPT_ROOT = Path(__file__).resolve().parents[1]
+ADD_OE_SCRIPT = SCRIPT_ROOT / "tools" / "add_old_english_rows.py"
+
+
+def maybe_add_old_english_rows(tsv_path: Path, pipeline_name: str) -> None:
+    """Ensure Germanic exports include placeholder Old English forms."""
+    if pipeline_name != "germanic":
+        return
+    if not ADD_OE_SCRIPT.exists():
+        print(f"Warning: {ADD_OE_SCRIPT} not found; skipping Old English duplication")
+        return
+    cmd = [sys.executable, str(ADD_OE_SCRIPT), str(tsv_path)]
+    print(f"Adding Old English placeholders via {' '.join(cmd)}")
+    subprocess.run(cmd, check=True)
 
 
 def init_argparse() -> argparse.ArgumentParser:
@@ -123,6 +140,8 @@ def from_aligned(file_name, pipline_name="pipeline", use_template_alignment=Fals
     alms = Alignments(
         file_name, ref=f"{'cogids' if use_template_alignment else 'cogid'}"
     )
+    stage3_base = f"./output/{pipline_name}/stage3/{pipline_name}-aligned-final"
+    stage3_path = Path(stage3_base + ".tsv")
 
     # maybe a working way to generate gloss ids?
     # would be good to link ever concept in the data to an id in the concepticon
@@ -169,7 +188,7 @@ def from_aligned(file_name, pipline_name="pipeline", use_template_alignment=Fals
         print("Outputting aligned tsv")
         alms.output(
             "tsv",
-            filename=f"./output/{pipline_name}/stage3/{pipline_name}-aligned-final",
+            filename=stage3_base,
             subset=True,
             cols=[
                 "doculect",
@@ -188,11 +207,13 @@ def from_aligned(file_name, pipline_name="pipeline", use_template_alignment=Fals
         # we output all data, the new code to convert to json looks at the
         # header and can process datasets with columns that we don't need
         alms.output("tsv",
-                    filename=f"./output/{pipline_name}/stage3/{pipline_name}-aligned-final",
+                    filename=stage3_base,
                     prettify=False,
                     ignore="all"
                     )
 
+
+    maybe_add_old_english_rows(stage3_path, pipline_name)
 
 parser = init_argparse()
 args = parser.parse_args()
@@ -208,4 +229,3 @@ if args.from_aligned:
     from_aligned(fname, pname)
 else:
     from_primitive(fname, pname)
-
