@@ -829,3 +829,13 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Added a Wiktionary scraper (`server/tools/fetch_old_english_from_wiktionary.py`) and parsed the Swadesh + API data into `server/data/old_english_wiktionary.tsv`; the updater now merges both sources and writes IPA/tokens/notes back into the aligned Germanic TSVs.
 - Ran the helper across all 376 English concepts so the Old English rows now have attested lemmas (373 entries auto-filled; annotated `fodder fōdor` and `tongs tange` manually, marked `knob` as lacking an OE cognate per the etymology).
 - Documented the workflow in `README.md` + `docs/runbook.md`, and added `server/tools/validate_old_english_pairs.py` to guard the 1:1 English↔OE coverage going forward.
+
+- **PGmc→OE stage split.** Added `EnglishSandboxProtoToOE` inside `server/fsts/english_brace_sandbox.txt` so the early vowel/weak-tail rules share a single hook and tracer snapshot (`english_sandbox_after_proto_to_oe.bin`).
+
+### Proto→OE instrumentation & findings (2025-12-12)
+- Consolidated the early PGmc→OE vowel/weak-tail rules under `EnglishSandboxProtoToOE` and added the `english_sandbox_after_proto_to_oe.bin` stage log so we can trace that layer independently of the later ME/RP stack.
+- Wrote `server/tools/evaluate_proto_to_oe.py` and ran it against the current `english_sandbox_after_proto_to_oe.bin`: only 1/376 Old English rows match the attested counterpart, 20 rows die at the proto gate, and the survivors still carry weak-tail endings or untouched consonant clusters. Examples: `*utrăz→utra` (vs. `nǣdre`), `*bakăną→bākana` (vs. `bacan`), `*bardăz→bɔːrda` (vs. `beard`).
+- Next coding steps:
+  a. Extend the proto gate so `x/hw` clusters (e.g. `burōjăną`, `xandlōjăną`) survive long enough to reach the OE stage instead of returning `+?` immediately.
+  b. Teach `EnglishSandboxProtoToOE` to strip or reshape the weak-tail endings (`ă/ą`) into the expected OE vowels/consonants so verbs stop emitting `-ana` and nouns drop the stray hegemonic “-a”.
+  c. Add the PGmc→OE consonant innovations (palatalisation, rhotic prep, lexical replacements) ahead of the ME/RP stack so stage outputs inch closer to the `COUNTERPART` column.

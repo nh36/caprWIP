@@ -1,6 +1,7 @@
 ### Tracing status (2025-11-30 update)
 
 - Tightened the proto gate so vowel-initial weak tails now require a heavy syllable (diphthong, long vowel, or short vowel + coda) before attaching. `pgrmStrongPlain` is split into light/heavy variants and only the heavy branch can precede the vowel-headed tails.
+- Added a consolidated `EnglishSandboxProtoToOE` stage (and \`english_sandbox_after_proto_to_oe.bin\` snapshot) so PGmc→OE changes can be debugged independently of the later ME/RP stack.
 - Tracer run (`python3 tools/trace_german_stages.py --apply-down --stage GermanProtoInput --stage GermanAfterAu --lexeme braudą --lexeme straumaz --lexeme flauxz --lexeme naudiz --lexeme stainaz --lexeme beudan --lexeme liugan --lexeme glaiwaz --lexeme beutan`) now shows `braudą` emitting only `{*b*r*au*d*ą}` at the proto gate and `{*b*r*ō*d*ą}` after `GermanAfterAu`; all other diphthong probes stay unchanged.
 - Analyzer sample (`printf 'laux\nknɛxt\nmɪlx\nbroːt\n' | flookup german.bin`) still returns full proto bundles, but the rogue `braɔt` reflexes disappear.
 - API regression harness (`python3 server/tools/api_regression.py`) remains green for Burmish and Germanic, so the tightened phonotactics do not disturb the frontend payloads.
