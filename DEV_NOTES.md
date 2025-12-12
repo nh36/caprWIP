@@ -757,3 +757,68 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Added  as a first pass at stage tracing, but the sandbox stages currently emit ??? because the cascade never saves intermediate automata. Full traces will require refactoring the FST to save each stage (similar to the GermanAfter* bins) so we can flookup them directly inside Docker.
 - Next session: split out the sandbox stages into explicit save targets (e.g., english_sandbox_after_glide.bin, english_sandbox_after_vowel_rules.bin), update the docker build to emit those bins, and then rerun the tracer to capture true stage-by-stage outputs for KIT words (*fiskaz, *gebaną, *swestēr).
 - Once tracing works, resume the KIT fixes bucket-by-bucket (post-vocalic /r/, {sk} palatalisation, nasal+stop, sw glides) with harness checks after each change so we stay ≥179/376.
+## 2025-12-12
+
+### English gold IPA normalized to RP / non-rhotic baseline
+
+- Cleaned every English row in `server/data/germanic-aligned-final.tsv` whose counterpart contains an orthographic `r` but whose surface tokens still ended in a vowel + `r`. Each of the 40 affected entries now drops the trailing `r` (e.g. `adder ædər→ædə`, `fire faɪər→faɪə`, `door dɔːr→dɔː`). Mirrored the same edits into the staged snapshot (`server/pipeline/output/germanic/stage3/germanic-aligned-final.tsv`) so downstream docs stay in sync.
+- Added `server/tools/validate_english_rhoticity.py` to guard the policy going forward. The helper scans any TSV for English rows where the tokens end in `…V r` and fails fast; CI/local runs should call `python3 server/tools/validate_english_rhoticity.py` (optionally pointing it at the stage3 export) whenever the gold data changes.
+- Reran the validator on both the canonical and stage3 TSVs — both now report “No rhotic entries detected.” Next time the gold file is touched, run the validator before committing so we don’t regress toward GA-style outputs again. Once the analyzer tweaks land, rerun `python3 server/tools/english_apply_down_stats.py` to confirm the RP-aware surfaces align with the updated targets.
+
+### Rhotic development roadmap (historical targets before coding)
+
+- **Proto rhotic fronting / colouring.** Replace the `{*rgă→rəʊ}` placeholder mindset with staged vowel shifts that mirror the historical chronology.
+  - Pre-OE: specify how `{*er}` becomes `{æər}/{ɜːr}`, `{*ir}` becomes `{ɪr}`, `{*or}/{*ur}` becomes `{ɔːr}` before any breaking occurs. List the actual proto clusters (`rdă`, `rgă`, `rwō`, `rθo`, …) so the rules operate on contexts rather than word lists.
+  - OE breaking: document the environments that should introduce `{ea/eo/ia}` diphthongs so ME smoothing can later yield RP `ɪə/ɛə/ɜː` without hard-coded outputs.
+  - ME smoothing + post-vocalic /r/ loss: describe the sequence (breaking → smoothing → /r/ loss) so `EnglishSandboxRhoticBreaking`/`RhoticColoring` can implement the correct order once we update the rules.
+- **Consonant resolution.** Note explicitly why RP keeps /θ/ in `earth/hearth` but /d/ in `herd/word/sword` (OE retention vs. later analogical leveling). The current single-output rewrite matches the intended behaviour, but the reasoning should be recorded so future edits don’t reintroduce branching.
+- **Weak-tail & schwa preservation.** RP retains final /ə/ in orthographic `-er/-re` endings (`faɪə`, `ædə`). Outline which morphological endings should keep vs. drop the schwa so `EnglishSandboxWeakTailCleanup` can be rewritten with historical cues instead of deleting every `{*ə}` at word end.
+- **Next execution steps:** once the above roadmap is nailed down, implement the stages in order (ProtoRhoticFronting → OE breaking/smoothing → Post-vocalic /r/ loss → Weak-tail cleanup). After each change, rerun `python3 tools/trace_english_sandbox.py --lexeme-file tmp/rhotic_test_set.txt --brace-diphthongs` and `python3 server/tools/english_apply_down_stats.py` to measure progress beyond the current 21/376 baseline.
+
+#### Detailed blueprint (grounded in the standard OE/ME chronology)
+
+- **Anglian colouring before breaking (pre-7th c.).**
+  - `{*e}` in `{*er}` clusters should front/back toward `{æɑr}` so the later OE breaking produces `ea`. Limit this to `{*r}` followed by a consonant or boundary; leave glide environments alone so `seer`-type words stay bright.
+  - `{*i}` in `{*ir}` (except before `{*j}`) lowers to `{*er}` then `{*æɑr}`, matching the documented change that feeds `bird`, `first`, etc.
+  - `{*o}`/`{*u}` before `{*r}` should raise to `{*ur}/{*ɔːr}` only when followed by a consonant, mirroring WG rounding that later yields RP /ɔː/.
+  - Capture these contexts in `EnglishSandboxProtoRhoticFronting` so OE breaking has the right inputs.
+
+- **OE breaking + ME smoothing.**
+  - Add an `EnglishSandboxOEBreaking` stage: `{æ}` → `{ea}` before `{*rC}` or `{*lC}`, `{e}` → `{eo}` before `{*rC}`, `{i}` → `{ie}` before `{*rC}`. These match the conditions in Campbell §§216–219 and explain why `bear/bier` diverge from `bar`.
+  - Follow with an `EnglishSandboxMESmoothing` stage (before post-vocalic /r/ loss) that maps `{ea/eo/ie}` + `{*r}` to the RP nuclei: `{ea}` → `{ɛə}`, `{ie}` → `{ɪə}`, `{eo}` → `{ɜː}` (voicing-dependent). This should replace the lexeme-specific rewrites currently living in `EnglishSandboxRhoticBreaking`.
+
+- **Consonant outcomes.**
+  - Document the historical split: native `{*rθ/ð}` clusters retain /θ/ in RP (`earth/hearth`), while `{*rd}` words level to /d/ in late ME (`herd/word/sword/bird`). Keep the Foma rule single-output but annotate these buckets so we know why the mapping exists and where it should apply.
+
+- **Weak-tail schwa.**
+  - RP keeps schwa in orthographic `-er/-re` (from OE `-ere`). Plan to guard those endings via a morphological check (e.g., look for `{*r}` + weak-tail vowel) so `EnglishSandboxWeakTailCleanup` only drops `{*ə}` when the historical dialect really loses it.
+
+- **Execution order reminder.**
+  1. Implement the contextual colouring rules in `EnglishSandboxProtoRhoticFronting` (using the `list_rhotic_contexts.py` inventory as a sanity check) and verify via tracer that `{*bergą/*bardaz/*barwōn}` take the correct vowels before breaking.
+  2. Introduce the explicit OE breaking + ME smoothing stages, removing the hacky `{*rgă→rəʊ}` rewrites from `EnglishSandboxRhoticBreaking`.
+  3. Revisit `EnglishSandboxRhoticBreaking` only after the vowel stages are in place so it simply handles consonant selection (θ vs. d) and any remaining diphthong adjustments.
+  4. Redesign the weak-tail cleanup to respect RP schwa retention.
+  5. After each milestone, rerun the rhotic tracer and `english_apply_down_stats.py` to ensure we stay branch-free and track improvements beyond the current 21/376 exact matches.
+
+### Old English staging / TSV overhaul (PGmc → OE layer)
+
+- **Add an OE column to the aligned TSVs.**
+  - Extend  (and the stage3 export) with an  field so every lexeme records the historically attested OE form alongside the RP IPA.
+  - Update any CSV consumers (, export scripts, notebooks) to tolerate the new column. Regenerate the stage3 TSV via the existing pipeline so the OE column travels with future snapshots.
+  - Populate the OE column from existing notes or script from the lexicon where we already know the OE reflex. Track any blanks for manual follow-up.
+
+- **Encode an explicit PGmc→OE stage in the FST.**
+  - Add a dedicated stage (e.g., ) inside  to host the PGmc→OE innovations.
+  - Extend the star-vowel inventories with OE diphthongs (, , ) and make sure downstream stages accept them.
+  - Export intermediate OE bins () so we can trace PGmc→OE→ME→RP ends properly.
+
+- **Rework rhotic/breaking rules using the OE layer.**
+  - Move the colouring + OE breaking logic into the new stage, then add a ME smoothing stage that maps  +  into the RP nuclei before post-vocalic /r/ loss.
+
+- **Tooling/validation.**
+  - Add a validator to ensure the OE column stays filled and matches the PGmc→OE stage outputs.
+  - Document the new column/stage in  / .
+
+- **Testing workflow.**
+  1. After adding the OE column and stage, rebuild the FST and run the tracer through the new checkpoints to prove PGmc inputs flow through the OE layer.
+  2. Only then resume the ME/RP tweaks, checking  after each step to ensure apply-down stays single-output.
