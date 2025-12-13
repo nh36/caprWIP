@@ -327,8 +327,11 @@ define pgrmWeakTailVowel [
 ];
 define pgrmWeakTail [pgrmWeakTailZero | pgrmWeakTailVowel];
 
+define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
+
 define pgrmWord [
     pgrmStrongPlainHeavy pgrmWeakTailVowel |
+    pgrmStrongPlainHeavy pgrmCausativeSuffix pgrmWeakTailVowel |
     pgrmStrongPlain pgrmWeakTailZero |
     pgrmStrongNasal pgrmWeakTailVowel |
     pgrmStrongNasal pgrmWeakTailZero
