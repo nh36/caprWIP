@@ -1,6 +1,6 @@
 source fsts/germanic.txt
 
-# Old English sandbox: start from the English cascade and save every stage for debugging.
+# Old English sandbox: trace the OE core while keeping English checkpoints available for debugging.
 define OldEnglishSandboxAfterProtoInput EnglishAfterProtoInput;
 define OldEnglishSandboxAfterInitialKn EnglishAfterInitialKn;
 define OldEnglishSandboxAfterPalatalisation EnglishAfterPalatalisation;
@@ -22,7 +22,7 @@ define OldEnglishSandboxAfterSilentCleanup EnglishAfterSilentCleanup;
 define OldEnglishSandboxAfterGhDeletion EnglishAfterGhDeletion;
 define OldEnglishSandboxAfterOrthography EnglishAfterOrthography;
 define OldEnglishSandboxAfterLongVowelRealisation EnglishAfterLongVowelRealisation;
-define OldEnglishSandboxAfterSurface EnglishAfterSurface;
+define OldEnglishSandboxAfterSurface OldEnglishReflexes;
 
 define OldEnglishSandbox OldEnglishSandboxAfterSurface;
 

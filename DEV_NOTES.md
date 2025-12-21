@@ -839,3 +839,27 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   a. Extend the proto gate so `x/hw` clusters (e.g. `burōjăną`, `xandlōjăną`) survive long enough to reach the OE stage instead of returning `+?` immediately.
   b. Teach `EnglishSandboxProtoToOE` to strip or reshape the weak-tail endings (`ă/ą`) into the expected OE vowels/consonants so verbs stop emitting `-ana` and nouns drop the stray hegemonic “-a”.
   c. Add the PGmc→OE consonant innovations (palatalisation, rhotic prep, lexical replacements) ahead of the ME/RP stack so stage outputs inch closer to the `COUNTERPART` column.
+
+## 2025-12-21
+
+### Old English core refactor + diagnostics
+- Split the English pipeline into `OldEnglishCore` + `EnglishOEToModern` so the OE transducer is not just an alias of Modern English (`server/fsts/germanic.txt`).
+- Added OE-specific surface filter and orthography: `OldEnglishSurface`, `OldEnglishRemoveStars`, `OldEnglishOrthography` now apply at the end of the OE stack (including `x -> h`, `θ -> þ`, `ʃ -> ċ`).
+- Phonological tweaks in the PGmc→OE block:
+  - Removed blanket final *a apocope; retained only `*ą/*ă -> *a` (per high-vowel apocope focus).
+  - Added `OldEnglishSkPalatalization` (`*sk -> ʃ` before front vowels).
+  - Added a conservative high-vowel apocope rule for final `*i/*u` after heavy or two-light syllable patterns (approximate segmental conditioning; still needs refinement).
+
+### OE evaluator snapshot (old_english.bin)
+- Total OE rows: 376
+- Matches: 2
+- No output: 21
+- Mismatches: 353
+- Sample mismatches: `*bakăną -> bacana` vs `bacan`, `*bōkō -> bucō` vs `bēċe`, `*balgiz -> balgi` vs `bielġ`.
+- Common issue bucket still dominated by `-ana` outputs and lingering final high vowels.
+
+### Ending diagnostics (old_english.bin)
+- Final vowel distribution: `a` 212, `n` 43, `ō` 33, `i` 22, `u` 20.
+- Final high vowels: `i` 22, `u` 20; most common contexts `ti/di` for `-i`, `þu/du/tu` for `-u`.
+- Sample `-i/-u` outputs: `ballu` (ball), `bebru` (beaver), `balgi` (belly), `crafti` (craft), `bugu` (bough).
+- Sample `-ana` outputs where target is `-an`: `bacana` (bake), `gennana` (begin), `brecana` (break), `brengana` (bring), `brūcana` (brook).
