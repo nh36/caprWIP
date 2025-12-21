@@ -903,3 +903,34 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 ### OE diagnostics refresh (2025-12-21)
 - Recompiled FSTs and reran `tools/evaluate_proto_to_oe.py` against `old_english.bin`; totals unchanged (Matches 2 / No output 21 / Mismatches 353). Snapshot: `docs/debug_snapshots/oe_eval_2025-12-21.txt`.
 - Recomputed final‑vowel distribution + `-i/-u` contexts; counts unchanged and examples still dominated by final high vowels and `-ana` endings. Snapshot: `docs/debug_snapshots/oe_final_vowel_diag_2025-12-21.txt`.
+
+## 2025-12-21 (plan update: regular sound change only)
+
+### Guiding assumption (Hill 2014)
+- Sound change is regular and phonetically conditioned; apparent grammatical conditioning is modeled as regular sound change plus analogy/borrowing. We encode only the regular phonological development in the FSTs.
+
+### New diagnostics captured
+- `docs/debug_snapshots/oe_tail_bucket_2025-12-21b.txt`: lists all `-i`, `-u`, `-ana` outputs with proto + attested OE.
+- `docs/debug_snapshots/oe_tail_bucket_classified_2025-12-21b.txt`: classifies `-ana` outputs by attested OE ending (e.g., `-an`, `-ian`, `-can`, `other`).
+- `docs/debug_snapshots/oe_high_vowel_targets_2025-12-21b.txt`: classifies `-i/-u` outputs by attested OE final (vowel vs consonant).
+- `docs/debug_snapshots/oe_high_vowel_weight_diag_2025-12-21b.txt`: estimates heavy vs light syllable before final `-i/-u`.
+- `docs/debug_snapshots/oe_ana_noninfinitive_2025-12-21b.txt`: isolates `-ana` outputs with non‑infinitive attested endings (must not be deleted by OE sound change).
+
+### Next steps (phonological only, no morphological conditioning)
+1. **High‑vowel loss (regular):** use the weight diagnostics to implement a heavy‑syllable‑conditioned final *i/*u apocope. Prefer explicit heavy/light marking (H/L) inserted by segmental context, then delete markers after the rule; avoid morphological categories.
+2. **Weak‑tail *a (schwa) handling:** do **not** blanket delete `-ana` in PGmc→OE. Only apply any *a loss if a purely phonological environment deletes it without touching the non‑infinitive list; otherwise defer to later (OE→ME) as analogical leveling.
+3. **Umlaut/back‑mutation sanity check:** confirm the new umlaut/back‑mutation rules apply only in phonological environments (following *i/*j or back vowels/w) with a small probe list; tighten triggers if over‑application appears.
+4. After each change: rebuild via Docker, rerun OE evaluator + the two diagnostics, and snapshot in `docs/debug_snapshots/`.
+
+### High‑vowel loss debug (2025-12-21)
+- Found nondeterminism in the new H‑marker rule: `OldEnglishWeightMarkers` was inserting `{H}` in multiple optional positions, yielding both apocopated and non‑apocopated outputs (e.g., `ballu` + `ball`).
+- Fixed by rewriting final `*i/*u` directly to `{H}{*i}/{H}{*u}` in heavy contexts, then deleting `{H}{*i}/{H}{*u}` in `OldEnglishHighVowelApocope`.
+- Added stage bins to isolate the fix:
+  - `english_after_proto_to_oe_weak_tail.bin`
+  - `english_after_proto_to_oe_weight_markers.bin`
+  - `english_after_proto_to_oe_apocope.bin`
+  - `english_after_proto_to_oe_weight_cleanup.bin`
+- Verification (sample probes): `balluz/balgiz/bebruz` now yield a **single** output at each stage, with apocope firing deterministically in heavy contexts.
+- Updated diagnostics:
+  - `docs/debug_snapshots/oe_eval_2025-12-21e.txt` (Matches 8 / No output 18 / Mismatches 350).
+  - `docs/debug_snapshots/oe_final_vowel_diag_2025-12-21e.txt` shows **0** final `-i/-u` outputs after the heavy‑syllable apocope.

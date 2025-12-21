@@ -1,0 +1,70 @@
+OE final -i/-u outputs classified by attested OE ending
+Source: oe_tail_bucket_2025-12-21b.txt
+
+final_i count: 22
+  cons:t: 5
+  cons:ġ: 3
+  cons:d: 3
+  cons:þ: 3
+  cons:c: 2
+  cons:ự: 1
+  cons:l: 1
+  cons:r: 1
+  vowel:e: 1
+  cons:f: 1
+  cons:n: 1
+
+  belly	balgiz	balgi	bielġ	cons:ġ
+  birth	burdiz	burdi	sự	cons:ự
+  bride	brūdiz	brūdi	brȳd	cons:d
+  craft	kraftiz	crafti	cræft	cons:t
+  deal	dailiz	dāli	dǣl	cons:l
+  deed	dēdiz	dēdi	dēd	cons:d
+  fist	funxwstiz	fūhwsti	fȳst	cons:t
+  gift	geftiz	gefti	ġift	cons:t
+  guest	gastiz	gasti	appear	cons:r
+  heath	xaiθiz	hāþi	hǣþ	cons:þ
+  might	maxtiz	mahti	miht	cons:t
+  need	naudiz	nōdi	nīed	cons:d
+  reek	raukiz	ruci	rēc	cons:c
+  rock	rukkiz	rucci	*rocc	cons:c
+  rye	rugiz	rugi	ryġe	vowel:e
+  sheath	skaiθiz	scāþi	sċēaþ	cons:þ
+  staff	stabiz	stabi	stæf	cons:f
+  string	strangiz	strangi	strenġ	cons:ġ
+  tide	tīdiz	tīdi	tīdan	cons:n
+  wight	wextiz	wehti	wiht	cons:t
+  withy	waiθiz	wāþi	wīþiġ	cons:ġ
+  youth	jugunθiz	ġugūþi	ġeoguþ	cons:þ
+
+final_u count: 20
+  cons:d: 8
+  cons:t: 3
+  cons:r: 2
+  cons:n: 2
+  cons:l: 1
+  cons:g: 1
+  vowel:u: 1
+  cons:h: 1
+  vowel:e: 1
+
+  ball	balluz	ballu	*beall	cons:l
+  beaver	bebruz	bebru	befer	cons:r
+  bough	bōguz	bugu	bōg	cons:g
+  cud	kwiθuz	cwiþu	cudu	vowel:u
+  fee	fexu	fehu	feoh	cons:h
+  field	felθuz	felþu	feld	cons:d
+  flood	flōduz	flōdu	flōd	cons:d
+  ground	grunduz	grundu	grund	cons:d
+  hand	xanduz	handu	hand	cons:d
+  harvest	xarbistuz	harbistu	hærfest	cons:t
+  hood	xattuz	hattu	hōd	cons:d
+  lid	liθuz	liþu	hlid	cons:d
+  lust	lustuz	lustu	lust	cons:t
+  shield	skelduz	sceldu	scield	cons:d
+  spear	speru	speru	spere	vowel:e
+  spoon	spēnuz	spēnu	spōn	cons:n
+  thirst	θurstuz	þurstu	þurst	cons:t
+  thorn	θurnuz	þurnu	þorn	cons:n
+  winter	wentruz	wentru	winter	cons:r
+  wold	walθuz	walþu	wald	cons:d

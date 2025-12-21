@@ -1,0 +1,119 @@
+OE -ana outputs classified by attested OE ending
+Source: oe_tail_bucket_2025-12-21b.txt
+
+an: 50
+other: 14
+can: 6
+ian: 5
+e: 3
+missing: 2
+a: 2
+ċan: 2
+on: 1
+en: 1
+
+[an]
+  begin	gennăną	gennana	beginnan
+  believe	laubjăną	lōbġana	belīefan
+  bind	bendăną	bendana	bindan
+  bring	brengăną	brengana	bringan
+  burst	brestăną	brestana	berstan
+  chew	kewwăną	cowwana	ċēowan
+  climb	klembăną	clembana	climban
+  drive	drībăną	drībana	drīfan
+  eat	etăną	etana	etan
+  fall	fallăną	fallana	feallan
+  fight	fextăną	fehtana	feohtan
+  find	fenθăną	fēþana	findan
+  fold	falθăną	falþana	fealdan
+  freeze	freusăną	freusana	frēosan
+  give	gebăną	gebana	giefan
+  gripe	grīpăną	grīpana	grīpan
+  heal	xailjăną	hālġana	hǣlan
+  hew	xawwăną	hōwwana	hēawan
+  knead	knedăną	cnedana	cnedan
+  lade	laθōjăną	laþēġana	hladan
+  last	laistjăną	lāstġana	lǣstan
+  laugh	lakăną	lacana	hlæhhan
+  let	lētăną	lētana	lǣtan
+  mean	mainjăną	mānġana	mǣnan
+  read	rēdăną	rēdana	rǣdan
+  ride	rīdăną	rīdana	rīdan
+  run	rennăną	rennana	rinnan
+  send	sandjăną	sandġana	sendan
+  set	satjăną	satġana	settan
+  shear	skerăną	scerana	sċieran
+  shine	skīnăną	scīnana	sċīnan
+  shove	skeubăną	sceubana	sċūfan
+  sing	sengwăną	sengwana	singan
+  singe	sangjăną	sangġana	senġan
+  sit	setjăną	setġana	sittan
+  slay	slaxăną	slahana	slēan
+  spin	spennăną	spennana	spinnan
+  spread	spraidjăną	sprādġana	sprǣdan
+  starve	sterbăną	sterbana	steorfan
+  sup	sūpăną	sūpana	sūpan
+  swan	swanăz	swana	swan
+  swell	swellăną	swellana	swellan
+  swim	swemmăną	swemmana	swimman
+  tread	tredăną	tredana	tredan
+  wade	wadăną	wadana	wadan
+  weave	webăną	webana	wefan
+  whine	wainōjăną	wānēġana	hwīnan
+  wield	waldăną	waldana	wealdan
+  will	waljăną	walġana	willan
+  wring	wrengăną	wrengana	wringan
+
+[other]
+  breeches	brekăną	brecana	brēċ
+  fare	farăną	farana	fær
+  grave	grabăną	grabana	græf
+  help	xelpăną	helpana	help
+  hold	xaldăną	haldana	hold
+  lead	laidjăną	lādġana	lēad
+  light	leuxtjăną	leuhtġana	lēoht
+  sleep	slēpăną	slēpana	slǣp
+  span	spannăną	spannana	spann
+  steal	stelăną	stelana	viedä
+  sunder	sundrōjăną	sundrēġana	sundor-
+  warp	werpăną	werpana	wearp
+  wax	waxsăną	wahsana	weax
+  wind	wendăną	wendana	wind
+
+[can]
+  bake	bakăną	bacana	bacan
+  break	brekăną	brecana	brecan
+  brook	brūkăną	brūcana	brūcan
+  drink	drenkăną	drencana	drincan
+  thrash	θreskăną	þrescana	þrescan
+  wash	waskăną	wascana	wascan
+
+[ian]
+  bore	burōjăną	burēġana	borian
+  lick	likkōjăną	liccēġana	liccian
+  make	makōjăną	macēġana	macian
+  show	skawōjăną	scōwēġana	scēawian
+  strew	strawjăną	strōwġana	strewian
+
+[e]
+  fly	fleugăną	fleugana	flȳġe
+  handle	xandlōjăną	handlēġana	handle
+  still	stelljăną	stellġana	stille
+
+[missing]
+  bid	beudăną	beudana	-
+  bid	bidjăną	bidġana	-
+
+[a]
+  bow	baugjăną	bugġana	boga
+  bow	beugăną	beugana	boga
+
+[ċan]
+  seek	sōkjăną	sucġana	sēċan
+  stretch	strakkjăną	straccġana	streċċan
+
+[on]
+  flee	fleuxăną	fleuhana	flēon
+
+[en]
+  forlorn	leusăną	leusana	forloren

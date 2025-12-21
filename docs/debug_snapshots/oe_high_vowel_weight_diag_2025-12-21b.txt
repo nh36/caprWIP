@@ -1,0 +1,54 @@
+OE final -i/-u: preceding syllable weight (heuristic)
+Source: oe_tail_bucket_2025-12-21b.txt
+
+final_i count: 22
+  heavy(closed): 12
+  heavy(long/diph): 10
+
+  belly	balgiz	balgi	bielġ	heavy(closed)	cons:ġ
+  birth	burdiz	burdi	sự	heavy(closed)	cons:ự
+  bride	brūdiz	brūdi	brȳd	heavy(long/diph)	cons:d
+  craft	kraftiz	crafti	cræft	heavy(closed)	cons:t
+  deal	dailiz	dāli	dǣl	heavy(long/diph)	cons:l
+  deed	dēdiz	dēdi	dēd	heavy(long/diph)	cons:d
+  fist	funxwstiz	fūhwsti	fȳst	heavy(long/diph)	cons:t
+  gift	geftiz	gefti	ġift	heavy(closed)	cons:t
+  guest	gastiz	gasti	appear	heavy(closed)	cons:r
+  heath	xaiθiz	hāþi	hǣþ	heavy(long/diph)	cons:þ
+  might	maxtiz	mahti	miht	heavy(closed)	cons:t
+  need	naudiz	nōdi	nīed	heavy(long/diph)	cons:d
+  reek	raukiz	ruci	rēc	heavy(closed)	cons:c
+  rock	rukkiz	rucci	*rocc	heavy(closed)	cons:c
+  rye	rugiz	rugi	ryġe	heavy(closed)	vowel:e
+  sheath	skaiθiz	scāþi	sċēaþ	heavy(long/diph)	cons:þ
+  staff	stabiz	stabi	stæf	heavy(closed)	cons:f
+  string	strangiz	strangi	strenġ	heavy(closed)	cons:ġ
+  tide	tīdiz	tīdi	tīdan	heavy(long/diph)	cons:n
+  wight	wextiz	wehti	wiht	heavy(closed)	cons:t
+  withy	waiθiz	wāþi	wīþiġ	heavy(long/diph)	cons:ġ
+  youth	jugunθiz	ġugūþi	ġeoguþ	heavy(long/diph)	cons:þ
+
+final_u count: 20
+  heavy(closed): 18
+  heavy(long/diph): 2
+
+  ball	balluz	ballu	*beall	heavy(closed)	cons:l
+  beaver	bebruz	bebru	befer	heavy(closed)	cons:r
+  bough	bōguz	bugu	bōg	heavy(closed)	cons:g
+  cud	kwiθuz	cwiþu	cudu	heavy(closed)	vowel:u
+  fee	fexu	fehu	feoh	heavy(closed)	cons:h
+  field	felθuz	felþu	feld	heavy(closed)	cons:d
+  flood	flōduz	flōdu	flōd	heavy(long/diph)	cons:d
+  ground	grunduz	grundu	grund	heavy(closed)	cons:d
+  hand	xanduz	handu	hand	heavy(closed)	cons:d
+  harvest	xarbistuz	harbistu	hærfest	heavy(closed)	cons:t
+  hood	xattuz	hattu	hōd	heavy(closed)	cons:d
+  lid	liθuz	liþu	hlid	heavy(closed)	cons:d
+  lust	lustuz	lustu	lust	heavy(closed)	cons:t
+  shield	skelduz	sceldu	scield	heavy(closed)	cons:d
+  spear	speru	speru	spere	heavy(closed)	vowel:e
+  spoon	spēnuz	spēnu	spōn	heavy(long/diph)	cons:n
+  thirst	θurstuz	þurstu	þurst	heavy(closed)	cons:t
+  thorn	θurnuz	þurnu	þorn	heavy(closed)	cons:n
+  winter	wentruz	wentru	winter	heavy(closed)	cons:r
+  wold	walθuz	walþu	wald	heavy(closed)	cons:d
