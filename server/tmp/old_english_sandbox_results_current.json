@@ -1,0 +1,3599 @@
+[
+  {
+    "concept": "adder",
+    "proto": "*utrăz",
+    "counterpart": "nǣdre",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bake",
+    "proto": "*bakăną",
+    "counterpart": "bacan",
+    "doculect": "Old_English",
+    "outputs": [
+      "bakăn"
+    ]
+  },
+  {
+    "concept": "ball",
+    "proto": "*balluz",
+    "counterpart": "*beall",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "ban",
+    "proto": "*banną",
+    "counterpart": "bannan",
+    "doculect": "Old_English",
+    "outputs": [
+      "bannăn"
+    ]
+  },
+  {
+    "concept": "barrow",
+    "proto": "*bergą",
+    "counterpart": "beorg",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bast",
+    "proto": "*bastą",
+    "counterpart": "bæst",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bath",
+    "proto": "*baθą",
+    "counterpart": "bæþ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "beard",
+    "proto": "*bardăz",
+    "counterpart": "beard",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "beaver",
+    "proto": "*bebruz",
+    "counterpart": "befer",
+    "doculect": "Old_English",
+    "outputs": [
+      "befer"
+    ]
+  },
+  {
+    "concept": "beech",
+    "proto": "*bōkō",
+    "counterpart": "bēċe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "begin",
+    "proto": "*gennăną",
+    "counterpart": "beginnan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "believe",
+    "proto": "*laubjăną",
+    "counterpart": "belīefan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "belly",
+    "proto": "*balgiz",
+    "counterpart": "bielġ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "berry",
+    "proto": "*bazją",
+    "counterpart": "berġe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bid",
+    "proto": "*beudăną",
+    "counterpart": "-",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bid",
+    "proto": "*bidjăną",
+    "counterpart": "-",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bier",
+    "proto": "*barwōn",
+    "counterpart": "bēr",
+    "doculect": "Old_English",
+    "outputs": [
+      "bēr",
+      "bēriz",
+      "bēru",
+      "bēruz"
+    ]
+  },
+  {
+    "concept": "bind",
+    "proto": "*bendăną",
+    "counterpart": "bindan",
+    "doculect": "Old_English",
+    "outputs": [
+      "bindăn"
+    ]
+  },
+  {
+    "concept": "birth",
+    "proto": "*burdiz",
+    "counterpart": "sự",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "blood",
+    "proto": "*blōdą",
+    "counterpart": "blōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "blōd",
+      "blōdu",
+      "blōduz",
+      "blōdiz",
+      "blaud",
+      "blaudu",
+      "blauduz",
+      "blaudiz"
+    ]
+  },
+  {
+    "concept": "board",
+    "proto": "*burdą",
+    "counterpart": "bord",
+    "doculect": "Old_English",
+    "outputs": [
+      "bord",
+      "bordu",
+      "borduz",
+      "bordiz"
+    ]
+  },
+  {
+    "concept": "bone",
+    "proto": "*bainăn",
+    "counterpart": "bān",
+    "doculect": "Old_English",
+    "outputs": [
+      "bain",
+      "bainu",
+      "bainuz",
+      "bainiz",
+      "baiŋ",
+      "baiŋu",
+      "baiŋuz",
+      "baiŋiz",
+      "bān",
+      "bānu",
+      "bānuz",
+      "bāniz",
+      "bāŋ",
+      "bāŋu",
+      "bāŋuz",
+      "bāŋiz",
+      "bąăn"
+    ]
+  },
+  {
+    "concept": "book",
+    "proto": "*bōkz",
+    "counterpart": "bōc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bore",
+    "proto": "*burōjăną",
+    "counterpart": "borian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bosom",
+    "proto": "*bōsmăz",
+    "counterpart": "bōsm",
+    "doculect": "Old_English",
+    "outputs": [
+      "bōsm",
+      "bōsmu",
+      "bōsmuz",
+      "bōsmiz",
+      "bausm",
+      "bausmu",
+      "bausmuz",
+      "bausmiz"
+    ]
+  },
+  {
+    "concept": "both",
+    "proto": "*bō",
+    "counterpart": "bā]] [[þā",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bottom",
+    "proto": "*budmăz",
+    "counterpart": "botm",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bough",
+    "proto": "*bōguz",
+    "counterpart": "bōg",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bow",
+    "proto": "*baugjăną",
+    "counterpart": "boga",
+    "doculect": "Old_English",
+    "outputs": [
+      "bogą",
+      "bogă",
+      "bogăz"
+    ]
+  },
+  {
+    "concept": "bow",
+    "proto": "*beugăną",
+    "counterpart": "boga",
+    "doculect": "Old_English",
+    "outputs": [
+      "bogą",
+      "bogă",
+      "bogăz"
+    ]
+  },
+  {
+    "concept": "bow",
+    "proto": "*bugōn",
+    "counterpart": "boga",
+    "doculect": "Old_English",
+    "outputs": [
+      "bogą",
+      "bogă",
+      "bogăz"
+    ]
+  },
+  {
+    "concept": "bower",
+    "proto": "*būrą",
+    "counterpart": "būr",
+    "doculect": "Old_English",
+    "outputs": [
+      "būr",
+      "būriz",
+      "būru",
+      "būruz"
+    ]
+  },
+  {
+    "concept": "brand",
+    "proto": "*brandăz",
+    "counterpart": "brand",
+    "doculect": "Old_English",
+    "outputs": [
+      "brand",
+      "brandz",
+      "brandu",
+      "branduz",
+      "brandiz"
+    ]
+  },
+  {
+    "concept": "bread",
+    "proto": "*braudą",
+    "counterpart": "brēad",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "break",
+    "proto": "*brekăną",
+    "counterpart": "brecan",
+    "doculect": "Old_English",
+    "outputs": [
+      "brekăn"
+    ]
+  },
+  {
+    "concept": "breast",
+    "proto": "*brustz",
+    "counterpart": "brēost",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "breeches",
+    "proto": "*brekăną",
+    "counterpart": "brēċ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bride",
+    "proto": "*brūdiz",
+    "counterpart": "brȳd",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "bring",
+    "proto": "*brengăną",
+    "counterpart": "bringan",
+    "doculect": "Old_English",
+    "outputs": [
+      "bringăn"
+    ]
+  },
+  {
+    "concept": "brook",
+    "proto": "*brūkăną",
+    "counterpart": "brūcan",
+    "doculect": "Old_English",
+    "outputs": [
+      "brūkăn"
+    ]
+  },
+  {
+    "concept": "buck",
+    "proto": "*bukkăz",
+    "counterpart": "buc",
+    "doculect": "Old_English",
+    "outputs": [
+      "buk",
+      "bukz",
+      "buku",
+      "bukuz",
+      "bukiz",
+      "bauk",
+      "baukz",
+      "bauku",
+      "baukuz",
+      "baukiz",
+      "bōk",
+      "bōkz",
+      "bōku",
+      "bōkuz",
+      "bōkiz"
+    ]
+  },
+  {
+    "concept": "burst",
+    "proto": "*brestăną",
+    "counterpart": "berstan",
+    "doculect": "Old_English",
+    "outputs": [
+      "berstăn"
+    ]
+  },
+  {
+    "concept": "calf",
+    "proto": "*kalbăz",
+    "counterpart": "ọmọ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "chew",
+    "proto": "*kewwăną",
+    "counterpart": "ċēowan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "climb",
+    "proto": "*klembăną",
+    "counterpart": "climban",
+    "doculect": "Old_English",
+    "outputs": [
+      "klimbăn"
+    ]
+  },
+  {
+    "concept": "comb",
+    "proto": "*kambăz",
+    "counterpart": "camb",
+    "doculect": "Old_English",
+    "outputs": [
+      "kamb",
+      "kambu",
+      "kambuz",
+      "kambiz"
+    ]
+  },
+  {
+    "concept": "corn",
+    "proto": "*kurnăn",
+    "counterpart": "corn",
+    "doculect": "Old_English",
+    "outputs": [
+      "korn",
+      "kornu",
+      "kornuz",
+      "korniz"
+    ]
+  },
+  {
+    "concept": "cow",
+    "proto": "*kōwz",
+    "counterpart": "cū",
+    "doculect": "Old_English",
+    "outputs": [
+      "kū",
+      "kūiz",
+      "kūz",
+      "kūu",
+      "kūuz"
+    ]
+  },
+  {
+    "concept": "craft",
+    "proto": "*kraftiz",
+    "counterpart": "cræft",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "crop",
+    "proto": "*kruppăz",
+    "counterpart": "crop",
+    "doculect": "Old_English",
+    "outputs": [
+      "krop",
+      "kropu",
+      "kropuz",
+      "kropiz"
+    ]
+  },
+  {
+    "concept": "cud",
+    "proto": "*kwiθuz",
+    "counterpart": "cudu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "dale",
+    "proto": "*dalăz",
+    "counterpart": "dæl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "day",
+    "proto": "*dagăz",
+    "counterpart": "dæġ",
+    "doculect": "Old_English",
+    "outputs": [
+      "dāj",
+      "dāju",
+      "dājuz",
+      "dājiz",
+      "daij",
+      "daiju",
+      "daijuz",
+      "daijiz",
+      "daj",
+      "daju",
+      "dajuz",
+      "dajiz"
+    ]
+  },
+  {
+    "concept": "deal",
+    "proto": "*dailiz",
+    "counterpart": "dǣl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "deed",
+    "proto": "*dēdiz",
+    "counterpart": "dēd",
+    "doculect": "Old_English",
+    "outputs": [
+      "dēd",
+      "dēdu",
+      "dēduz",
+      "dēdiz"
+    ]
+  },
+  {
+    "concept": "deer",
+    "proto": "*deuzą",
+    "counterpart": "dēor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "dew",
+    "proto": "*dawwō",
+    "counterpart": "dēaw",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "dill",
+    "proto": "*deljăz",
+    "counterpart": "dile",
+    "doculect": "Old_English",
+    "outputs": [
+      "dilez"
+    ]
+  },
+  {
+    "concept": "do",
+    "proto": "*dōną",
+    "counterpart": "don",
+    "doculect": "Old_English",
+    "outputs": [
+      "don",
+      "doniz",
+      "donu",
+      "donuz",
+      "doŋ",
+      "doŋu",
+      "doŋuz",
+      "doŋiz"
+    ]
+  },
+  {
+    "concept": "door",
+    "proto": "*durą",
+    "counterpart": "duru",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "dough",
+    "proto": "*daigăz",
+    "counterpart": "dāg",
+    "doculect": "Old_English",
+    "outputs": [
+      "daig",
+      "daigu",
+      "daiguz",
+      "daigiz",
+      "dāg",
+      "dāgu",
+      "dāguz",
+      "dāgiz"
+    ]
+  },
+  {
+    "concept": "dove",
+    "proto": "*dūbōn",
+    "counterpart": "*dūfe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "dream",
+    "proto": "*draumăz",
+    "counterpart": "drēam",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "drench",
+    "proto": "*dranką",
+    "counterpart": "drenċ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "drink",
+    "proto": "*drenkăną",
+    "counterpart": "drincan",
+    "doculect": "Old_English",
+    "outputs": [
+      "drinkăn"
+    ]
+  },
+  {
+    "concept": "drive",
+    "proto": "*drībăną",
+    "counterpart": "drīfan",
+    "doculect": "Old_English",
+    "outputs": [
+      "drīfăn"
+    ]
+  },
+  {
+    "concept": "earth",
+    "proto": "*erθo",
+    "counterpart": "eorþe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "eat",
+    "proto": "*etăną",
+    "counterpart": "etan",
+    "doculect": "Old_English",
+    "outputs": [
+      "etăn"
+    ]
+  },
+  {
+    "concept": "eel",
+    "proto": "*ēlăz",
+    "counterpart": "ǣl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fall",
+    "proto": "*fallăną",
+    "counterpart": "feallan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fare",
+    "proto": "*farăną",
+    "counterpart": "fær",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fast",
+    "proto": "*fastēną",
+    "counterpart": "fæst",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "father",
+    "proto": "*fadēr",
+    "counterpart": "fæder",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fee",
+    "proto": "*fexu",
+    "counterpart": "feoh",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fell",
+    "proto": "*fellą",
+    "counterpart": "fellan",
+    "doculect": "Old_English",
+    "outputs": [
+      "fellăn"
+    ]
+  },
+  {
+    "concept": "fern",
+    "proto": "*farnăn",
+    "counterpart": "fearn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "field",
+    "proto": "*felθuz",
+    "counterpart": "feld",
+    "doculect": "Old_English",
+    "outputs": [
+      "feld",
+      "feldu",
+      "felduz",
+      "feldiz"
+    ]
+  },
+  {
+    "concept": "fight",
+    "proto": "*fextăną",
+    "counterpart": "feohtan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "find",
+    "proto": "*fenθăną",
+    "counterpart": "findan",
+    "doculect": "Old_English",
+    "outputs": [
+      "findăn"
+    ]
+  },
+  {
+    "concept": "finger",
+    "proto": "*fengrăz",
+    "counterpart": "finger",
+    "doculect": "Old_English",
+    "outputs": [
+      "finger"
+    ]
+  },
+  {
+    "concept": "fire",
+    "proto": "*fuwer",
+    "counterpart": "fȳr",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fish",
+    "proto": "*fiskăz",
+    "counterpart": "fisċ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fist",
+    "proto": "*funxwstiz",
+    "counterpart": "fȳst",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "flask",
+    "proto": "*flaskō",
+    "counterpart": "flasce",
+    "doculect": "Old_English",
+    "outputs": [
+      "flaskez"
+    ]
+  },
+  {
+    "concept": "flax",
+    "proto": "*flaxsą",
+    "counterpart": "fleax",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "flea",
+    "proto": "*flauxz",
+    "counterpart": "flēah",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "flee",
+    "proto": "*fleuxăną",
+    "counterpart": "flēon",
+    "doculect": "Old_English",
+    "outputs": [
+      "flēon"
+    ]
+  },
+  {
+    "concept": "flesh",
+    "proto": "*flaiskăz",
+    "counterpart": "flǣsċ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "flood",
+    "proto": "*flōduz",
+    "counterpart": "flōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "flōd",
+      "flōdu",
+      "flōduz",
+      "flōdiz",
+      "flaud",
+      "flaudu",
+      "flauduz",
+      "flaudiz"
+    ]
+  },
+  {
+    "concept": "fly",
+    "proto": "*fleugăną",
+    "counterpart": "flȳġe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "foal",
+    "proto": "*fulōn",
+    "counterpart": "fola",
+    "doculect": "Old_English",
+    "outputs": [
+      "folą",
+      "folă",
+      "folăz"
+    ]
+  },
+  {
+    "concept": "fodder",
+    "proto": "*fōdrą",
+    "counterpart": "fōdor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fold",
+    "proto": "*falθăną",
+    "counterpart": "fealdan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "folk",
+    "proto": "*fulką",
+    "counterpart": "folc",
+    "doculect": "Old_English",
+    "outputs": [
+      "folk",
+      "folku",
+      "folkuz",
+      "folkiz"
+    ]
+  },
+  {
+    "concept": "follow",
+    "proto": "*fulgēną",
+    "counterpart": "folgian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "forlorn",
+    "proto": "*leusăną",
+    "counterpart": "forloren",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "four",
+    "proto": "*fedwōrez",
+    "counterpart": "fēower",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fowl",
+    "proto": "*fuglăz",
+    "counterpart": "fugol",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fox",
+    "proto": "*fuxsăz",
+    "counterpart": "fox",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "freeze",
+    "proto": "*freusăną",
+    "counterpart": "frēosan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "friend",
+    "proto": "*frijōndz",
+    "counterpart": "frēond",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "fright",
+    "proto": "*furxtīn",
+    "counterpart": "fryhtu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "frost",
+    "proto": "*frustą",
+    "counterpart": "forst",
+    "doculect": "Old_English",
+    "outputs": [
+      "forst",
+      "forstu",
+      "forstuz",
+      "forstiz"
+    ]
+  },
+  {
+    "concept": "furrow",
+    "proto": "*furxō",
+    "counterpart": "furh",
+    "doculect": "Old_English",
+    "outputs": [
+      "furx",
+      "furxu",
+      "furxuz",
+      "furxiz"
+    ]
+  },
+  {
+    "concept": "gall",
+    "proto": "*gallą",
+    "counterpart": "ġealla",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "gang",
+    "proto": "*gangăz",
+    "counterpart": "gangan",
+    "doculect": "Old_English",
+    "outputs": [
+      "gangăn"
+    ]
+  },
+  {
+    "concept": "ghost",
+    "proto": "*gaistăz",
+    "counterpart": "gāst",
+    "doculect": "Old_English",
+    "outputs": [
+      "gaist",
+      "gaistiz",
+      "gaistz",
+      "gaistu",
+      "gaistuz",
+      "gāst",
+      "gāstiz",
+      "gāstz",
+      "gāstu",
+      "gāstuz"
+    ]
+  },
+  {
+    "concept": "gift",
+    "proto": "*geftiz",
+    "counterpart": "ġift",
+    "doculect": "Old_English",
+    "outputs": [
+      "jift",
+      "jiftu",
+      "jiftuz",
+      "jiftiz"
+    ]
+  },
+  {
+    "concept": "give",
+    "proto": "*gebăną",
+    "counterpart": "giefan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "god",
+    "proto": "*gud",
+    "counterpart": "god",
+    "doculect": "Old_English",
+    "outputs": [
+      "god",
+      "godu",
+      "goduz",
+      "godiz"
+    ]
+  },
+  {
+    "concept": "gold",
+    "proto": "*gulθą",
+    "counterpart": "gold",
+    "doculect": "Old_English",
+    "outputs": [
+      "gold",
+      "goldu",
+      "golduz",
+      "goldiz"
+    ]
+  },
+  {
+    "concept": "goose",
+    "proto": "*gansz",
+    "counterpart": "gōs",
+    "doculect": "Old_English",
+    "outputs": [
+      "gōnsz",
+      "gōs",
+      "gōsz",
+      "gōsu",
+      "gōsuz",
+      "gōsiz",
+      "gonsz",
+      "gaunsz",
+      "gaus",
+      "gausz",
+      "gausu",
+      "gausuz",
+      "gausiz"
+    ]
+  },
+  {
+    "concept": "grass",
+    "proto": "*grasą",
+    "counterpart": "græs",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "grave",
+    "proto": "*grabăną",
+    "counterpart": "græf",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "gripe",
+    "proto": "*grīpăną",
+    "counterpart": "grīpan",
+    "doculect": "Old_English",
+    "outputs": [
+      "grīpăn"
+    ]
+  },
+  {
+    "concept": "ground",
+    "proto": "*grunduz",
+    "counterpart": "grund",
+    "doculect": "Old_English",
+    "outputs": [
+      "grund",
+      "grundz",
+      "grundu",
+      "grunduz",
+      "grundiz"
+    ]
+  },
+  {
+    "concept": "guest",
+    "proto": "*gastiz",
+    "counterpart": "appear",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hail",
+    "proto": "*xaglą",
+    "counterpart": "hæġl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hair",
+    "proto": "*xazwăz",
+    "counterpart": "hǣr",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hall",
+    "proto": "*xallō",
+    "counterpart": "heall",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hammer",
+    "proto": "*xamarăz",
+    "counterpart": "hamor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hand",
+    "proto": "*xanduz",
+    "counterpart": "hand",
+    "doculect": "Old_English",
+    "outputs": [
+      "xand",
+      "xandz",
+      "xandu",
+      "xanduz",
+      "xandiz",
+      "hand",
+      "handz",
+      "handu",
+      "handuz",
+      "handiz"
+    ]
+  },
+  {
+    "concept": "handle",
+    "proto": "*xandlōjăną",
+    "counterpart": "handle",
+    "doculect": "Old_English",
+    "outputs": [
+      "xandlez",
+      "handlez"
+    ]
+  },
+  {
+    "concept": "harm",
+    "proto": "*xarmăz",
+    "counterpart": "hearm",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "harvest",
+    "proto": "*xarbistuz",
+    "counterpart": "hærfest",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "have",
+    "proto": "*xabēną",
+    "counterpart": "habban",
+    "doculect": "Old_English",
+    "outputs": [
+      "xabbăn",
+      "habbăn"
+    ]
+  },
+  {
+    "concept": "haw",
+    "proto": "*xagōn",
+    "counterpart": "haga",
+    "doculect": "Old_English",
+    "outputs": [
+      "nxăgą",
+      "mxăgą",
+      "xăgą",
+      "xagą",
+      "xagă",
+      "xagăz",
+      "hăgą",
+      "hagą",
+      "hagă",
+      "hagăz"
+    ]
+  },
+  {
+    "concept": "hawk",
+    "proto": "*xabukăz",
+    "counterpart": "hafoc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hay",
+    "proto": "*xawwją",
+    "counterpart": "hīeġ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hazel",
+    "proto": "*xaslăz",
+    "counterpart": "hæsl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "head",
+    "proto": "*xaubudą",
+    "counterpart": "hēafod",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "heal",
+    "proto": "*xailjăną",
+    "counterpart": "hǣlan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "heart",
+    "proto": "*xertōn",
+    "counterpart": "heorte",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hearth",
+    "proto": "*xerθăz",
+    "counterpart": "heorþ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "heath",
+    "proto": "*xaiθiz",
+    "counterpart": "hǣþ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "heaven",
+    "proto": "*xemenăz",
+    "counterpart": "heofon",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hedge",
+    "proto": "*xagjăz",
+    "counterpart": "heċġ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "helm",
+    "proto": "*xelmăz",
+    "counterpart": "helma",
+    "doculect": "Old_English",
+    "outputs": [
+      "xelmă",
+      "xelmăz",
+      "xelmą",
+      "helmă",
+      "helmăz",
+      "helmą"
+    ]
+  },
+  {
+    "concept": "help",
+    "proto": "*xelpăną",
+    "counterpart": "help",
+    "doculect": "Old_English",
+    "outputs": [
+      "xelp",
+      "xelpu",
+      "xelpuz",
+      "xelpiz",
+      "help",
+      "helpu",
+      "helpuz",
+      "helpiz"
+    ]
+  },
+  {
+    "concept": "help",
+    "proto": "*xelpō",
+    "counterpart": "help",
+    "doculect": "Old_English",
+    "outputs": [
+      "xelp",
+      "xelpu",
+      "xelpuz",
+      "xelpiz",
+      "help",
+      "helpu",
+      "helpuz",
+      "helpiz"
+    ]
+  },
+  {
+    "concept": "herd",
+    "proto": "*xerdō",
+    "counterpart": "hierd",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hew",
+    "proto": "*xawwăną",
+    "counterpart": "hēawan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hind",
+    "proto": "*xendjō",
+    "counterpart": "hindan",
+    "doculect": "Old_English",
+    "outputs": [
+      "xindăn",
+      "hindăn"
+    ]
+  },
+  {
+    "concept": "hoard",
+    "proto": "*xuzdą",
+    "counterpart": "hord",
+    "doculect": "Old_English",
+    "outputs": [
+      "xord",
+      "xordu",
+      "xorduz",
+      "xordiz",
+      "hord",
+      "hordu",
+      "horduz",
+      "hordiz"
+    ]
+  },
+  {
+    "concept": "hold",
+    "proto": "*xaldăną",
+    "counterpart": "hold",
+    "doculect": "Old_English",
+    "outputs": [
+      "xold",
+      "xoldu",
+      "xolduz",
+      "xoldiz",
+      "hold",
+      "holdu",
+      "holduz",
+      "holdiz"
+    ]
+  },
+  {
+    "concept": "home",
+    "proto": "*xaimăz",
+    "counterpart": "hām",
+    "doculect": "Old_English",
+    "outputs": [
+      "xaim",
+      "xaimiz",
+      "xaimu",
+      "xaimuz",
+      "xām",
+      "xāmiz",
+      "xāmu",
+      "xāmuz",
+      "haim",
+      "haimiz",
+      "haimu",
+      "haimuz",
+      "hām",
+      "hāmiz",
+      "hāmu",
+      "hāmuz"
+    ]
+  },
+  {
+    "concept": "honey",
+    "proto": "*xunăgą",
+    "counterpart": "huniġ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "hood",
+    "proto": "*xattuz",
+    "counterpart": "hōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "xōd",
+      "xōdu",
+      "xōduz",
+      "xōdiz",
+      "xaud",
+      "xaudu",
+      "xauduz",
+      "xaudiz",
+      "hōd",
+      "hōdu",
+      "hōduz",
+      "hōdiz",
+      "haud",
+      "haudu",
+      "hauduz",
+      "haudiz"
+    ]
+  },
+  {
+    "concept": "hoof",
+    "proto": "*xōfăz",
+    "counterpart": "hōf",
+    "doculect": "Old_English",
+    "outputs": [
+      "xōf",
+      "xōfu",
+      "xōfuz",
+      "xōfiz",
+      "xauf",
+      "xaufu",
+      "xaufuz",
+      "xaufiz",
+      "hōf",
+      "hōfu",
+      "hōfuz",
+      "hōfiz",
+      "hauf",
+      "haufu",
+      "haufuz",
+      "haufiz"
+    ]
+  },
+  {
+    "concept": "horn",
+    "proto": "*xurnăn",
+    "counterpart": "horn",
+    "doculect": "Old_English",
+    "outputs": [
+      "xorn",
+      "xornu",
+      "xornuz",
+      "xorniz",
+      "horn",
+      "hornu",
+      "hornuz",
+      "horniz"
+    ]
+  },
+  {
+    "concept": "hound",
+    "proto": "*xundăz",
+    "counterpart": "hund",
+    "doculect": "Old_English",
+    "outputs": [
+      "xund",
+      "xundz",
+      "xundu",
+      "xunduz",
+      "xundiz",
+      "hund",
+      "hundz",
+      "hundu",
+      "hunduz",
+      "hundiz"
+    ]
+  },
+  {
+    "concept": "knead",
+    "proto": "*knedăną",
+    "counterpart": "cnedan",
+    "doculect": "Old_English",
+    "outputs": [
+      "knedăn"
+    ]
+  },
+  {
+    "concept": "knee",
+    "proto": "*knewą",
+    "counterpart": "cnēow",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "knight",
+    "proto": "*knext",
+    "counterpart": "cniht",
+    "doculect": "Old_English",
+    "outputs": [
+      "knixt",
+      "knixtiz",
+      "knixtz",
+      "knixtu",
+      "knixtuz"
+    ]
+  },
+  {
+    "concept": "knob",
+    "proto": "*knuppăz",
+    "counterpart": "knob",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lade",
+    "proto": "*laθōjăną",
+    "counterpart": "hladan",
+    "doculect": "Old_English",
+    "outputs": [
+      "xladăn",
+      "hladăn"
+    ]
+  },
+  {
+    "concept": "land",
+    "proto": "*landą",
+    "counterpart": "land",
+    "doculect": "Old_English",
+    "outputs": [
+      "land",
+      "landz",
+      "landu",
+      "landuz",
+      "landiz"
+    ]
+  },
+  {
+    "concept": "lap",
+    "proto": "*labbăz",
+    "counterpart": "læppa",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "last",
+    "proto": "*laistjăną",
+    "counterpart": "lǣstan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "laugh",
+    "proto": "*lakăną",
+    "counterpart": "hlæhhan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lead",
+    "proto": "*laidjăną",
+    "counterpart": "lēad",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "leaf",
+    "proto": "*laubą",
+    "counterpart": "lēaf",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "learn",
+    "proto": "*liznōjăną",
+    "counterpart": "leornian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "leather",
+    "proto": "*leθrą",
+    "counterpart": "leþer",
+    "doculect": "Old_English",
+    "outputs": [
+      "leθer"
+    ]
+  },
+  {
+    "concept": "leek",
+    "proto": "*laukăz",
+    "counterpart": "lēac",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "let",
+    "proto": "*lētăną",
+    "counterpart": "lǣtan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lick",
+    "proto": "*likkōjăną",
+    "counterpart": "liccian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lid",
+    "proto": "*liθuz",
+    "counterpart": "hlid",
+    "doculect": "Old_English",
+    "outputs": [
+      "xlid",
+      "xlidu",
+      "xliduz",
+      "xlidiz",
+      "hlid",
+      "hlidu",
+      "hliduz",
+      "hlidiz"
+    ]
+  },
+  {
+    "concept": "life",
+    "proto": "*lībą",
+    "counterpart": "līf",
+    "doculect": "Old_English",
+    "outputs": [
+      "līf",
+      "līfu",
+      "līfuz",
+      "līfiz"
+    ]
+  },
+  {
+    "concept": "light",
+    "proto": "*leuxtjăną",
+    "counterpart": "lēoht",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lime",
+    "proto": "*līmą",
+    "counterpart": "līm",
+    "doculect": "Old_English",
+    "outputs": [
+      "līm",
+      "līmu",
+      "līmuz",
+      "līmiz"
+    ]
+  },
+  {
+    "concept": "linden",
+    "proto": "*lendō",
+    "counterpart": "linden",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "line",
+    "proto": "*līnăn",
+    "counterpart": "līne",
+    "doculect": "Old_English",
+    "outputs": [
+      "līŋez",
+      "līnez"
+    ]
+  },
+  {
+    "concept": "list",
+    "proto": "*līstōn",
+    "counterpart": "līste",
+    "doculect": "Old_English",
+    "outputs": [
+      "līstez"
+    ]
+  },
+  {
+    "concept": "live",
+    "proto": "*libēną",
+    "counterpart": "lifian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "liver",
+    "proto": "*librō",
+    "counterpart": "lifer",
+    "doculect": "Old_English",
+    "outputs": [
+      "lifer"
+    ]
+  },
+  {
+    "concept": "loam",
+    "proto": "*laimōn",
+    "counterpart": "lām",
+    "doculect": "Old_English",
+    "outputs": [
+      "laim",
+      "laimiz",
+      "laimu",
+      "laimuz",
+      "lām",
+      "lāmiz",
+      "lāmu",
+      "lāmuz"
+    ]
+  },
+  {
+    "concept": "loath",
+    "proto": "*laiθăz",
+    "counterpart": "lāð",
+    "doculect": "Old_English",
+    "outputs": [
+      "laið",
+      "laiðu",
+      "laiðuz",
+      "laiðiz",
+      "lāð",
+      "lāðu",
+      "lāðuz",
+      "lāðiz"
+    ]
+  },
+  {
+    "concept": "lock",
+    "proto": "*luką",
+    "counterpart": "loc",
+    "doculect": "Old_English",
+    "outputs": [
+      "lok",
+      "lokz",
+      "loku",
+      "lokuz",
+      "lokiz"
+    ]
+  },
+  {
+    "concept": "lock",
+    "proto": "*lukkăz",
+    "counterpart": "loc",
+    "doculect": "Old_English",
+    "outputs": [
+      "lok",
+      "lokz",
+      "loku",
+      "lokuz",
+      "lokiz"
+    ]
+  },
+  {
+    "concept": "louse",
+    "proto": "*lūsz",
+    "counterpart": "lūs",
+    "doculect": "Old_English",
+    "outputs": [
+      "lunsz",
+      "lūnsz",
+      "lūs",
+      "lūsz",
+      "lūsu",
+      "lūsuz",
+      "lūsiz"
+    ]
+  },
+  {
+    "concept": "lung",
+    "proto": "*lungwą",
+    "counterpart": "lungen",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "lust",
+    "proto": "*lustuz",
+    "counterpart": "lust",
+    "doculect": "Old_English",
+    "outputs": [
+      "lust",
+      "lustiz",
+      "lustz",
+      "lustu",
+      "lustuz"
+    ]
+  },
+  {
+    "concept": "lye",
+    "proto": "*laugō",
+    "counterpart": "lēah",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "make",
+    "proto": "*makōjăną",
+    "counterpart": "macian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "malt",
+    "proto": "*maltăz",
+    "counterpart": "mealt",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "man",
+    "proto": "*marīn",
+    "counterpart": "mann",
+    "doculect": "Old_English",
+    "outputs": [
+      "mann",
+      "mannu",
+      "mannuz",
+      "manniz"
+    ]
+  },
+  {
+    "concept": "march",
+    "proto": "*markō",
+    "counterpart": "mearcian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "mast",
+    "proto": "*mastăz",
+    "counterpart": "mæst",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "meal",
+    "proto": "*mēlą",
+    "counterpart": "mǣl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "mean",
+    "proto": "*mainjăną",
+    "counterpart": "mǣnan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "meed",
+    "proto": "*mizdō",
+    "counterpart": "mēd",
+    "doculect": "Old_English",
+    "outputs": [
+      "mēd",
+      "mēdu",
+      "mēduz",
+      "mēdiz"
+    ]
+  },
+  {
+    "concept": "might",
+    "proto": "*maxtiz",
+    "counterpart": "miht",
+    "doculect": "Old_English",
+    "outputs": [
+      "mixt",
+      "mixtiz",
+      "mixtz",
+      "mixtu",
+      "mixtuz"
+    ]
+  },
+  {
+    "concept": "milk",
+    "proto": "*melukz",
+    "counterpart": "meolc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "month",
+    "proto": "*mēnōθz",
+    "counterpart": "mōnaþ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "mood",
+    "proto": "*mōdăz",
+    "counterpart": "mōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "mōd",
+      "mōdu",
+      "mōduz",
+      "mōdiz",
+      "maud",
+      "maudu",
+      "mauduz",
+      "maudiz"
+    ]
+  },
+  {
+    "concept": "mother",
+    "proto": "*mōdēr",
+    "counterpart": "mōdor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "nail",
+    "proto": "*naglăz",
+    "counterpart": "næġl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "name",
+    "proto": "*namōn",
+    "counterpart": "nama",
+    "doculect": "Old_English",
+    "outputs": [
+      "ŋamă",
+      "ŋamăz",
+      "namă",
+      "namăz"
+    ]
+  },
+  {
+    "concept": "nave",
+    "proto": "*nabō",
+    "counterpart": "nafu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "navel",
+    "proto": "*nablōn",
+    "counterpart": "nafola",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "neck",
+    "proto": "*xnakkăz",
+    "counterpart": "hnecca",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "need",
+    "proto": "*naudiz",
+    "counterpart": "nīed",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "needle",
+    "proto": "*nēθlō",
+    "counterpart": "nǣdl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "nest",
+    "proto": "*nistą",
+    "counterpart": "nest",
+    "doculect": "Old_English",
+    "outputs": [
+      "ŋest",
+      "ŋestiz",
+      "ŋestz",
+      "ŋestu",
+      "ŋestuz",
+      "nest",
+      "nestiz",
+      "nestz",
+      "nestu",
+      "nestuz"
+    ]
+  },
+  {
+    "concept": "net",
+    "proto": "*natją",
+    "counterpart": "net",
+    "doculect": "Old_English",
+    "outputs": [
+      "ŋet",
+      "ŋetu",
+      "ŋetuz",
+      "ŋetiz",
+      "net",
+      "netu",
+      "netuz",
+      "netiz"
+    ]
+  },
+  {
+    "concept": "nettle",
+    "proto": "*natilōn",
+    "counterpart": "netle",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "night",
+    "proto": "*naxtz",
+    "counterpart": "niht",
+    "doculect": "Old_English",
+    "outputs": [
+      "ŋixt",
+      "ŋixtiz",
+      "ŋixtz",
+      "ŋixtu",
+      "ŋixtuz",
+      "nixt",
+      "nixtiz",
+      "nixtz",
+      "nixtu",
+      "nixtuz"
+    ]
+  },
+  {
+    "concept": "nightmare",
+    "proto": "*marōn",
+    "counterpart": "*nihtmare",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "nine",
+    "proto": "*newun",
+    "counterpart": "nigon",
+    "doculect": "Old_English",
+    "outputs": [
+      "ŋigon",
+      "nigon"
+    ]
+  },
+  {
+    "concept": "nose",
+    "proto": "*nasō",
+    "counterpart": "nosu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "one",
+    "proto": "*end",
+    "counterpart": "ān",
+    "doculect": "Old_English",
+    "outputs": [
+      "ąăn",
+      "ain",
+      "ainu",
+      "ainuz",
+      "ainiz",
+      "aiŋ",
+      "aiŋu",
+      "aiŋuz",
+      "aiŋiz",
+      "ān",
+      "ānu",
+      "ānuz",
+      "āniz",
+      "āŋ",
+      "āŋu",
+      "āŋuz",
+      "āŋiz"
+    ]
+  },
+  {
+    "concept": "oven",
+    "proto": "*ufnăz",
+    "counterpart": "ofn",
+    "doculect": "Old_English",
+    "outputs": [
+      "ofn",
+      "ofnu",
+      "ofnuz",
+      "ofniz"
+    ]
+  },
+  {
+    "concept": "ox",
+    "proto": "*uxsōn",
+    "counterpart": "oxa",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "rain",
+    "proto": "*regną",
+    "counterpart": "reġn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "rainbow",
+    "proto": "*regna-bugōn",
+    "counterpart": "reġnboga",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "raven",
+    "proto": "*xrabnăz",
+    "counterpart": "hræfn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "read",
+    "proto": "*rēdăną",
+    "counterpart": "rǣdan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "reek",
+    "proto": "*raukiz",
+    "counterpart": "rēc",
+    "doculect": "Old_English",
+    "outputs": [
+      "rēk",
+      "rēkz",
+      "rēku",
+      "rēkuz",
+      "rēkiz"
+    ]
+  },
+  {
+    "concept": "rest",
+    "proto": "*rastō",
+    "counterpart": "ræst",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "ride",
+    "proto": "*rīdăną",
+    "counterpart": "rīdan",
+    "doculect": "Old_English",
+    "outputs": [
+      "rīdăn"
+    ]
+  },
+  {
+    "concept": "rind",
+    "proto": "*rendō",
+    "counterpart": "rind",
+    "doculect": "Old_English",
+    "outputs": [
+      "rind",
+      "rindz",
+      "rindu",
+      "rinduz",
+      "rindiz"
+    ]
+  },
+  {
+    "concept": "rock",
+    "proto": "*rukkiz",
+    "counterpart": "*rocc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "roe",
+    "proto": "*raixōn",
+    "counterpart": "*hrogn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "rood",
+    "proto": "*rōdō",
+    "counterpart": "rōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "rōd",
+      "rōdu",
+      "rōduz",
+      "rōdiz",
+      "raud",
+      "raudu",
+      "rauduz",
+      "raudiz"
+    ]
+  },
+  {
+    "concept": "room",
+    "proto": "*rūmą",
+    "counterpart": "rūm",
+    "doculect": "Old_English",
+    "outputs": [
+      "rūm",
+      "rūmu",
+      "rūmuz",
+      "rūmiz"
+    ]
+  },
+  {
+    "concept": "rope",
+    "proto": "*raipą",
+    "counterpart": "rāp",
+    "doculect": "Old_English",
+    "outputs": [
+      "raip",
+      "raipu",
+      "raipuz",
+      "raipiz",
+      "rāp",
+      "rāpu",
+      "rāpuz",
+      "rāpiz"
+    ]
+  },
+  {
+    "concept": "rudder",
+    "proto": "*rōθrăz",
+    "counterpart": "rōþor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "run",
+    "proto": "*rennăną",
+    "counterpart": "rinnan",
+    "doculect": "Old_English",
+    "outputs": [
+      "rinnăn"
+    ]
+  },
+  {
+    "concept": "rust",
+    "proto": "*rustō",
+    "counterpart": "rust",
+    "doculect": "Old_English",
+    "outputs": [
+      "rust",
+      "rustiz",
+      "rustz",
+      "rustu",
+      "rustuz"
+    ]
+  },
+  {
+    "concept": "rye",
+    "proto": "*rugiz",
+    "counterpart": "ryġe",
+    "doculect": "Old_English",
+    "outputs": [
+      "rujez",
+      "ryjez"
+    ]
+  },
+  {
+    "concept": "sail",
+    "proto": "*seglą",
+    "counterpart": "seġl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sake",
+    "proto": "*sakō",
+    "counterpart": "sacu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "salt",
+    "proto": "*saltą",
+    "counterpart": "sealt",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "salve",
+    "proto": "*salbō",
+    "counterpart": "sealf",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sap",
+    "proto": "*sapōn",
+    "counterpart": "sæp",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sea",
+    "proto": "*sai",
+    "counterpart": "sǣ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "seam",
+    "proto": "*saumăz",
+    "counterpart": "sēam",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "seek",
+    "proto": "*sōkjăną",
+    "counterpart": "sēċan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "send",
+    "proto": "*sandjăną",
+    "counterpart": "sendan",
+    "doculect": "Old_English",
+    "outputs": [
+      "sendăn"
+    ]
+  },
+  {
+    "concept": "set",
+    "proto": "*satjăną",
+    "counterpart": "settan",
+    "doculect": "Old_English",
+    "outputs": [
+      "settăn"
+    ]
+  },
+  {
+    "concept": "seven",
+    "proto": "*sebun",
+    "counterpart": "seofon",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shaft",
+    "proto": "*skaftą",
+    "counterpart": "sċeaft",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shame",
+    "proto": "*skamō",
+    "counterpart": "sċamu",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shear",
+    "proto": "*skerăną",
+    "counterpart": "sċieran",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sheath",
+    "proto": "*skaiθiz",
+    "counterpart": "sċēaþ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sheep",
+    "proto": "*skēpą",
+    "counterpart": "persona",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shield",
+    "proto": "*skelduz",
+    "counterpart": "scield",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shilling",
+    "proto": "*skellinăz",
+    "counterpart": "sċilling",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shine",
+    "proto": "*skīnăną",
+    "counterpart": "sċīnan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shoulder",
+    "proto": "*skuldrō",
+    "counterpart": "sculdra",
+    "doculect": "Old_English",
+    "outputs": [
+      "skuldră",
+      "skuldrăz",
+      "skuldrą"
+    ]
+  },
+  {
+    "concept": "shove",
+    "proto": "*skeubăną",
+    "counterpart": "sċūfan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shovel",
+    "proto": "*skūflō",
+    "counterpart": "scofl",
+    "doculect": "Old_English",
+    "outputs": [
+      "skofl",
+      "skoflu",
+      "skofluz",
+      "skofliz"
+    ]
+  },
+  {
+    "concept": "show",
+    "proto": "*skawōjăną",
+    "counterpart": "scēawian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "shower",
+    "proto": "*skūrō",
+    "counterpart": "sċūr",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "side",
+    "proto": "*sīdōn",
+    "counterpart": "sīde",
+    "doculect": "Old_English",
+    "outputs": [
+      "sīdez"
+    ]
+  },
+  {
+    "concept": "sieve",
+    "proto": "*sibăz",
+    "counterpart": "sife",
+    "doculect": "Old_English",
+    "outputs": [
+      "sifez"
+    ]
+  },
+  {
+    "concept": "sing",
+    "proto": "*sengwăną",
+    "counterpart": "singan",
+    "doculect": "Old_English",
+    "outputs": [
+      "singăn"
+    ]
+  },
+  {
+    "concept": "singe",
+    "proto": "*sangjăną",
+    "counterpart": "senġan",
+    "doculect": "Old_English",
+    "outputs": [
+      "senjăn"
+    ]
+  },
+  {
+    "concept": "sister",
+    "proto": "*swestēr",
+    "counterpart": "swustor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sit",
+    "proto": "*setjăną",
+    "counterpart": "sittan",
+    "doculect": "Old_English",
+    "outputs": [
+      "sittăn"
+    ]
+  },
+  {
+    "concept": "six",
+    "proto": "*sexs",
+    "counterpart": "six",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "slay",
+    "proto": "*slaxăną",
+    "counterpart": "slēan",
+    "doculect": "Old_English",
+    "outputs": [
+      "slēăn"
+    ]
+  },
+  {
+    "concept": "sleep",
+    "proto": "*slēpăną",
+    "counterpart": "slǣp",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "slime",
+    "proto": "*slīmą",
+    "counterpart": "slīm",
+    "doculect": "Old_English",
+    "outputs": [
+      "slīm",
+      "slīmu",
+      "slīmuz",
+      "slīmiz"
+    ]
+  },
+  {
+    "concept": "smear",
+    "proto": "*smerwjăną",
+    "counterpart": "smerian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "snow",
+    "proto": "*snaigwăz",
+    "counterpart": "snāw",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sorrow",
+    "proto": "*surgō",
+    "counterpart": "sorg",
+    "doculect": "Old_English",
+    "outputs": [
+      "sorg",
+      "sorgu",
+      "sorguz",
+      "sorgiz"
+    ]
+  },
+  {
+    "concept": "soul",
+    "proto": "*saiwălō",
+    "counterpart": "sāwol",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "span",
+    "proto": "*spannăną",
+    "counterpart": "spann",
+    "doculect": "Old_English",
+    "outputs": [
+      "spann",
+      "spannu",
+      "spannuz",
+      "spanniz"
+    ]
+  },
+  {
+    "concept": "span",
+    "proto": "*spannō",
+    "counterpart": "spann",
+    "doculect": "Old_English",
+    "outputs": [
+      "spann",
+      "spannu",
+      "spannuz",
+      "spanniz"
+    ]
+  },
+  {
+    "concept": "spar",
+    "proto": "*sparrōn",
+    "counterpart": "sperran",
+    "doculect": "Old_English",
+    "outputs": [
+      "sperrăn"
+    ]
+  },
+  {
+    "concept": "spare",
+    "proto": "*sparēną",
+    "counterpart": "spær",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "spear",
+    "proto": "*speru",
+    "counterpart": "spere",
+    "doculect": "Old_English",
+    "outputs": [
+      "sperez"
+    ]
+  },
+  {
+    "concept": "spin",
+    "proto": "*spennăną",
+    "counterpart": "spinnan",
+    "doculect": "Old_English",
+    "outputs": [
+      "spinnăn"
+    ]
+  },
+  {
+    "concept": "spindle",
+    "proto": "*spennilō",
+    "counterpart": "spindle",
+    "doculect": "Old_English",
+    "outputs": [
+      "spindlez"
+    ]
+  },
+  {
+    "concept": "spoon",
+    "proto": "*spēnuz",
+    "counterpart": "spōn",
+    "doculect": "Old_English",
+    "outputs": [
+      "spōŋ",
+      "spōŋu",
+      "spōŋuz",
+      "spōŋiz",
+      "spōn",
+      "spōniz",
+      "spōnu",
+      "spōnuz",
+      "spauŋ",
+      "spauŋu",
+      "spauŋuz",
+      "spauŋiz",
+      "spaun",
+      "spauniz",
+      "spaunu",
+      "spaunuz"
+    ]
+  },
+  {
+    "concept": "spread",
+    "proto": "*spraidjăną",
+    "counterpart": "sprǣdan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "spur",
+    "proto": "*spurăn",
+    "counterpart": "spora",
+    "doculect": "Old_English",
+    "outputs": [
+      "sporą",
+      "sporă",
+      "sporăz"
+    ]
+  },
+  {
+    "concept": "staff",
+    "proto": "*stabiz",
+    "counterpart": "stæf",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "start",
+    "proto": "*stertăz",
+    "counterpart": "styrtan",
+    "doculect": "Old_English",
+    "outputs": [
+      "styrtăn"
+    ]
+  },
+  {
+    "concept": "starve",
+    "proto": "*sterbăną",
+    "counterpart": "steorfan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "steal",
+    "proto": "*stelăną",
+    "counterpart": "viedä",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "stem",
+    "proto": "*stamnăz",
+    "counterpart": "stemn",
+    "doculect": "Old_English",
+    "outputs": [
+      "stemn",
+      "stemnu",
+      "stemnuz",
+      "stemniz"
+    ]
+  },
+  {
+    "concept": "still",
+    "proto": "*stelljăną",
+    "counterpart": "stille",
+    "doculect": "Old_English",
+    "outputs": [
+      "stillez"
+    ]
+  },
+  {
+    "concept": "stilt",
+    "proto": "*steltjōn",
+    "counterpart": "*stilte",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "stock",
+    "proto": "*stukkăz",
+    "counterpart": "stocc",
+    "doculect": "Old_English",
+    "outputs": [
+      "stokk",
+      "stokku",
+      "stokkuz",
+      "stokkiz"
+    ]
+  },
+  {
+    "concept": "stone",
+    "proto": "*stainăz",
+    "counterpart": "stān",
+    "doculect": "Old_English",
+    "outputs": [
+      "stain",
+      "stainu",
+      "stainuz",
+      "stainiz",
+      "staiŋ",
+      "staiŋu",
+      "staiŋuz",
+      "staiŋiz",
+      "stān",
+      "stānu",
+      "stānuz",
+      "stāniz",
+      "stāŋ",
+      "stāŋu",
+      "stāŋuz",
+      "stāŋiz",
+      "stąăn"
+    ]
+  },
+  {
+    "concept": "stool",
+    "proto": "*stōlăz",
+    "counterpart": "stōl",
+    "doculect": "Old_English",
+    "outputs": [
+      "stōl",
+      "stōliz",
+      "stōlu",
+      "stōluz",
+      "staul",
+      "stauliz",
+      "staulu",
+      "stauluz",
+      "stal"
+    ]
+  },
+  {
+    "concept": "stork",
+    "proto": "*sturkăz",
+    "counterpart": "storc",
+    "doculect": "Old_English",
+    "outputs": [
+      "stork",
+      "storku",
+      "storkuz",
+      "storkiz"
+    ]
+  },
+  {
+    "concept": "storm",
+    "proto": "*sturmăz",
+    "counterpart": "storm",
+    "doculect": "Old_English",
+    "outputs": [
+      "storm",
+      "stormu",
+      "stormuz",
+      "stormiz"
+    ]
+  },
+  {
+    "concept": "straw",
+    "proto": "*strawą",
+    "counterpart": "strēaw",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "stream",
+    "proto": "*straumăz",
+    "counterpart": "strēam",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "stretch",
+    "proto": "*strakkjăną",
+    "counterpart": "streċċan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "strew",
+    "proto": "*strawjăną",
+    "counterpart": "strewian",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "string",
+    "proto": "*strangiz",
+    "counterpart": "strenġ",
+    "doculect": "Old_English",
+    "outputs": [
+      "strenj",
+      "strenju",
+      "strenjuz",
+      "strenjiz"
+    ]
+  },
+  {
+    "concept": "stud",
+    "proto": "*stōdą",
+    "counterpart": "stōd",
+    "doculect": "Old_English",
+    "outputs": [
+      "stōd",
+      "stōdu",
+      "stōduz",
+      "stōdiz",
+      "staud",
+      "staudu",
+      "stauduz",
+      "staudiz"
+    ]
+  },
+  {
+    "concept": "summer",
+    "proto": "*sumerăz",
+    "counterpart": "sumor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sun",
+    "proto": "*sunnōn",
+    "counterpart": "sunne",
+    "doculect": "Old_English",
+    "outputs": [
+      "sunnez"
+    ]
+  },
+  {
+    "concept": "sunder",
+    "proto": "*sundrōjăną",
+    "counterpart": "sundor-",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "sup",
+    "proto": "*sūpăną",
+    "counterpart": "sūpan",
+    "doculect": "Old_English",
+    "outputs": [
+      "sūpăn"
+    ]
+  },
+  {
+    "concept": "swallow",
+    "proto": "*swalgwōn",
+    "counterpart": "swelgan",
+    "doculect": "Old_English",
+    "outputs": [
+      "swelgăn"
+    ]
+  },
+  {
+    "concept": "swan",
+    "proto": "*swanăz",
+    "counterpart": "swan",
+    "doculect": "Old_English",
+    "outputs": [
+      "swăn",
+      "swan",
+      "swanu",
+      "swanuz",
+      "swaniz",
+      "swaŋ",
+      "swaŋu",
+      "swaŋuz",
+      "swaŋiz"
+    ]
+  },
+  {
+    "concept": "swell",
+    "proto": "*swellăną",
+    "counterpart": "swellan",
+    "doculect": "Old_English",
+    "outputs": [
+      "swellăn"
+    ]
+  },
+  {
+    "concept": "swim",
+    "proto": "*swemmăną",
+    "counterpart": "swimman",
+    "doculect": "Old_English",
+    "outputs": [
+      "swimmăn"
+    ]
+  },
+  {
+    "concept": "swine",
+    "proto": "*swīnăn",
+    "counterpart": "swīn",
+    "doculect": "Old_English",
+    "outputs": [
+      "swīŋ",
+      "swīŋu",
+      "swīŋuz",
+      "swīŋiz",
+      "swīn",
+      "swīniz",
+      "swīnu",
+      "swīnuz"
+    ]
+  },
+  {
+    "concept": "sword",
+    "proto": "*swerdą",
+    "counterpart": "sweord",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "tap",
+    "proto": "*tappōn",
+    "counterpart": "tæppa",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "team",
+    "proto": "*tauxmăz",
+    "counterpart": "tēam",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "ten",
+    "proto": "*texun",
+    "counterpart": "tīen",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thane",
+    "proto": "*θegnăz",
+    "counterpart": "þæġn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thanks",
+    "proto": "*θankăz",
+    "counterpart": "þancas",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thatch",
+    "proto": "*θaką",
+    "counterpart": "þæc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thief",
+    "proto": "*θeubăz",
+    "counterpart": "þēof",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thing",
+    "proto": "*θengăz",
+    "counterpart": "þing",
+    "doculect": "Old_English",
+    "outputs": [
+      "θing",
+      "θingu",
+      "θinguz",
+      "θingiz"
+    ]
+  },
+  {
+    "concept": "think",
+    "proto": "*θankăz",
+    "counterpart": "þenċan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thirst",
+    "proto": "*θurstuz",
+    "counterpart": "þurst",
+    "doculect": "Old_English",
+    "outputs": [
+      "θurst",
+      "θurstu",
+      "θurstuz",
+      "θurstiz"
+    ]
+  },
+  {
+    "concept": "thistle",
+    "proto": "*θestilăz",
+    "counterpart": "þistel",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "thorn",
+    "proto": "*θurnuz",
+    "counterpart": "þorn",
+    "doculect": "Old_English",
+    "outputs": [
+      "θorn",
+      "θornu",
+      "θornuz",
+      "θorniz"
+    ]
+  },
+  {
+    "concept": "thousand",
+    "proto": "*θūs-undī",
+    "counterpart": "sendan",
+    "doculect": "Old_English",
+    "outputs": [
+      "sendăn"
+    ]
+  },
+  {
+    "concept": "thrash",
+    "proto": "*θreskăną",
+    "counterpart": "þrescan",
+    "doculect": "Old_English",
+    "outputs": [
+      "θreskăn"
+    ]
+  },
+  {
+    "concept": "three",
+    "proto": "*θrejez",
+    "counterpart": "þrī",
+    "doculect": "Old_English",
+    "outputs": [
+      "θrī",
+      "θrīiz",
+      "θrīz",
+      "θrīu",
+      "θrīuz"
+    ]
+  },
+  {
+    "concept": "thunder",
+    "proto": "*θunrăz",
+    "counterpart": "þunor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "tick",
+    "proto": "*tikkōn",
+    "counterpart": "ticia",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "tide",
+    "proto": "*tīdiz",
+    "counterpart": "tīdan",
+    "doculect": "Old_English",
+    "outputs": [
+      "tīdăn"
+    ]
+  },
+  {
+    "concept": "timber",
+    "proto": "*temrą",
+    "counterpart": "timber",
+    "doculect": "Old_English",
+    "outputs": [
+      "timber"
+    ]
+  },
+  {
+    "concept": "toe",
+    "proto": "*taixwō",
+    "counterpart": "tā",
+    "doculect": "Old_English",
+    "outputs": [
+      "tai",
+      "taiu",
+      "taiuz",
+      "taiz",
+      "tā",
+      "tāu",
+      "tāuz",
+      "tāz",
+      "tąă",
+      "tąăz",
+      "tąą"
+    ]
+  },
+  {
+    "concept": "token",
+    "proto": "*taiknăn",
+    "counterpart": "tācn",
+    "doculect": "Old_English",
+    "outputs": [
+      "taikn",
+      "taiknu",
+      "taiknuz",
+      "taikniz",
+      "tākn",
+      "tāknu",
+      "tāknuz",
+      "tākniz"
+    ]
+  },
+  {
+    "concept": "tongs",
+    "proto": "*tangō",
+    "counterpart": "tange",
+    "doculect": "Old_English",
+    "outputs": [
+      "tangez"
+    ]
+  },
+  {
+    "concept": "tongue",
+    "proto": "*tungōn",
+    "counterpart": "tunge",
+    "doculect": "Old_English",
+    "outputs": [
+      "tungez"
+    ]
+  },
+  {
+    "concept": "town",
+    "proto": "*tūnăn",
+    "counterpart": "tūn",
+    "doculect": "Old_English",
+    "outputs": [
+      "tūŋ",
+      "tūŋu",
+      "tūŋuz",
+      "tūŋiz",
+      "tūn",
+      "tūniz",
+      "tūnu",
+      "tūnuz"
+    ]
+  },
+  {
+    "concept": "tread",
+    "proto": "*tredăną",
+    "counterpart": "tredan",
+    "doculect": "Old_English",
+    "outputs": [
+      "tredăn"
+    ]
+  },
+  {
+    "concept": "trough",
+    "proto": "*trugą",
+    "counterpart": "troh",
+    "doculect": "Old_English",
+    "outputs": [
+      "trox",
+      "troxz",
+      "troxu",
+      "troxuz",
+      "troxiz"
+    ]
+  },
+  {
+    "concept": "wade",
+    "proto": "*wadăną",
+    "counterpart": "wadan",
+    "doculect": "Old_English",
+    "outputs": [
+      "wadăn"
+    ]
+  },
+  {
+    "concept": "wain",
+    "proto": "*wagnăz",
+    "counterpart": "wæġn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wake",
+    "proto": "*wakēną",
+    "counterpart": "wacan",
+    "doculect": "Old_English",
+    "outputs": [
+      "wakăn"
+    ]
+  },
+  {
+    "concept": "warp",
+    "proto": "*warpą",
+    "counterpart": "wearp",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "warp",
+    "proto": "*werpăną",
+    "counterpart": "wearp",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wart",
+    "proto": "*warto",
+    "counterpart": "wearte",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wash",
+    "proto": "*waskăną",
+    "counterpart": "wascan",
+    "doculect": "Old_English",
+    "outputs": [
+      "waskăn"
+    ]
+  },
+  {
+    "concept": "wasp",
+    "proto": "*wabsăz",
+    "counterpart": "wæsp",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "water",
+    "proto": "*watną",
+    "counterpart": "wæter",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wax",
+    "proto": "*waxsą",
+    "counterpart": "weax",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wax",
+    "proto": "*waxsăną",
+    "counterpart": "weax",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "way",
+    "proto": "*wegăz",
+    "counterpart": "wē",
+    "doculect": "Old_English",
+    "outputs": [
+      "wōiz",
+      "wauiz",
+      "wē",
+      "wēiz",
+      "wēz",
+      "wēu",
+      "wēuz"
+    ]
+  },
+  {
+    "concept": "weapon",
+    "proto": "*wēpnăn",
+    "counterpart": "wǣpn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "weasel",
+    "proto": "*weslon",
+    "counterpart": "weosule",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "weather",
+    "proto": "*wedrą",
+    "counterpart": "weder",
+    "doculect": "Old_English",
+    "outputs": [
+      "weder"
+    ]
+  },
+  {
+    "concept": "weave",
+    "proto": "*webăną",
+    "counterpart": "wefan",
+    "doculect": "Old_English",
+    "outputs": [
+      "wefăn"
+    ]
+  },
+  {
+    "concept": "west",
+    "proto": "*westănē",
+    "counterpart": "west",
+    "doculect": "Old_English",
+    "outputs": [
+      "west",
+      "westiz",
+      "westz",
+      "westu",
+      "westuz"
+    ]
+  },
+  {
+    "concept": "wether",
+    "proto": "*wiθră",
+    "counterpart": "weþer",
+    "doculect": "Old_English",
+    "outputs": [
+      "weθer"
+    ]
+  },
+  {
+    "concept": "whale",
+    "proto": "*walăz",
+    "counterpart": "hwæl",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "while",
+    "proto": "*xwīlō",
+    "counterpart": "hwīl",
+    "doculect": "Old_English",
+    "outputs": [
+      "xwīl",
+      "xwīliz",
+      "xwīlu",
+      "xwīluz",
+      "hwīl",
+      "hwīliz",
+      "hwīlu",
+      "hwīluz"
+    ]
+  },
+  {
+    "concept": "whine",
+    "proto": "*wainōjăną",
+    "counterpart": "hwīnan",
+    "doculect": "Old_English",
+    "outputs": [
+      "xwīŋăn",
+      "xwīnăn",
+      "hwīŋăn",
+      "hwīnăn"
+    ]
+  },
+  {
+    "concept": "whore",
+    "proto": "*xōrōn",
+    "counterpart": "hōre",
+    "doculect": "Old_English",
+    "outputs": [
+      "nxōrez",
+      "mxōrez",
+      "xōrez",
+      "xaurez",
+      "hōrez",
+      "haurez"
+    ]
+  },
+  {
+    "concept": "widow",
+    "proto": "*widuwōn",
+    "counterpart": "widuwe",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wield",
+    "proto": "*waldăną",
+    "counterpart": "wealdan",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wife",
+    "proto": "*wībą",
+    "counterpart": "wīf",
+    "doculect": "Old_English",
+    "outputs": [
+      "wīf",
+      "wīfu",
+      "wīfuz",
+      "wīfiz"
+    ]
+  },
+  {
+    "concept": "wight",
+    "proto": "*wextiz",
+    "counterpart": "wiht",
+    "doculect": "Old_English",
+    "outputs": [
+      "wixt",
+      "wixtiz",
+      "wixtz",
+      "wixtu",
+      "wixtuz"
+    ]
+  },
+  {
+    "concept": "will",
+    "proto": "*waljăną",
+    "counterpart": "willan",
+    "doculect": "Old_English",
+    "outputs": [
+      "willăn"
+    ]
+  },
+  {
+    "concept": "will",
+    "proto": "*weljōn",
+    "counterpart": "willan",
+    "doculect": "Old_English",
+    "outputs": [
+      "willăn"
+    ]
+  },
+  {
+    "concept": "wind",
+    "proto": "*wendăną",
+    "counterpart": "wind",
+    "doculect": "Old_English",
+    "outputs": [
+      "wind",
+      "windz",
+      "windu",
+      "winduz",
+      "windiz"
+    ]
+  },
+  {
+    "concept": "winter",
+    "proto": "*wentruz",
+    "counterpart": "winter",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "withy",
+    "proto": "*waiθiz",
+    "counterpart": "wīþiġ",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wold",
+    "proto": "*walθuz",
+    "counterpart": "wald",
+    "doculect": "Old_English",
+    "outputs": [
+      "wald",
+      "waldu",
+      "walduz",
+      "waldiz"
+    ]
+  },
+  {
+    "concept": "wolf",
+    "proto": "*wulfăz",
+    "counterpart": "wulf",
+    "doculect": "Old_English",
+    "outputs": [
+      "wulf",
+      "wulfu",
+      "wulfuz",
+      "wulfiz"
+    ]
+  },
+  {
+    "concept": "wonder",
+    "proto": "*wundrą",
+    "counterpart": "wundor",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "wool",
+    "proto": "*wullo",
+    "counterpart": "wull",
+    "doculect": "Old_English",
+    "outputs": [
+      "wull",
+      "wullu",
+      "wulluz",
+      "wulliz"
+    ]
+  },
+  {
+    "concept": "word",
+    "proto": "*wurdą",
+    "counterpart": "word",
+    "doculect": "Old_English",
+    "outputs": [
+      "word",
+      "wordu",
+      "worduz",
+      "wordiz"
+    ]
+  },
+  {
+    "concept": "world",
+    "proto": "*wira-aldiz",
+    "counterpart": "weorold",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "worm",
+    "proto": "*wurmaz/wurmiz",
+    "counterpart": "wyrm",
+    "doculect": "Old_English",
+    "outputs": [
+      "wyrm",
+      "wyrmu",
+      "wyrmuz",
+      "wyrmiz"
+    ]
+  },
+  {
+    "concept": "wring",
+    "proto": "*wrengăną",
+    "counterpart": "wringan",
+    "doculect": "Old_English",
+    "outputs": [
+      "wringăn"
+    ]
+  },
+  {
+    "concept": "yarn",
+    "proto": "*garnăn",
+    "counterpart": "ġearn",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "year",
+    "proto": "*jērą",
+    "counterpart": "ġēar",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "yoke",
+    "proto": "*juką",
+    "counterpart": "ġeoc",
+    "doculect": "Old_English",
+    "outputs": []
+  },
+  {
+    "concept": "youth",
+    "proto": "*jugunθiz",
+    "counterpart": "ġeoguþ",
+    "doculect": "Old_English",
+    "outputs": []
+  }
+]
