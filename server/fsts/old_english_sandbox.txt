@@ -1,0 +1,119 @@
+source fsts/germanic.txt
+
+# Old English sandbox: start from the English cascade and save every stage for debugging.
+define OldEnglishSandboxAfterProtoInput EnglishAfterProtoInput;
+define OldEnglishSandboxAfterInitialKn EnglishAfterInitialKn;
+define OldEnglishSandboxAfterPalatalisation EnglishAfterPalatalisation;
+define OldEnglishSandboxAfterConsonantRules EnglishAfterConsonantRules;
+define OldEnglishSandboxAfterGhMarker EnglishAfterGhMarker;
+define OldEnglishSandboxAfterGlideDeletion EnglishAfterGlideDeletion;
+define OldEnglishSandboxAfterProtoToOE EnglishAfterProtoToOE;
+define OldEnglishSandboxAfterShortAFronting EnglishAfterShortAFronting;
+define OldEnglishSandboxAfterProtoRhoticFronting EnglishAfterProtoRhoticFronting;
+define OldEnglishSandboxAfterRhoticBreaking EnglishAfterRhoticBreaking;
+define OldEnglishSandboxAfterShortBackLowering EnglishAfterShortBackLowering;
+define OldEnglishSandboxAfterShortVowelSplit EnglishAfterShortVowelSplit;
+define OldEnglishSandboxAfterRhoticColoring EnglishAfterRhoticColoring;
+define OldEnglishSandboxAfterVowelRules EnglishAfterVowelRules;
+define OldEnglishSandboxAfterPostVocalicRLoss EnglishAfterPostVocalicRLoss;
+define OldEnglishSandboxAfterWeakTailReductions EnglishAfterWeakTailReductions;
+define OldEnglishSandboxAfterWeakTailCleanup EnglishAfterWeakTailCleanup;
+define OldEnglishSandboxAfterSilentCleanup EnglishAfterSilentCleanup;
+define OldEnglishSandboxAfterGhDeletion EnglishAfterGhDeletion;
+define OldEnglishSandboxAfterOrthography EnglishAfterOrthography;
+define OldEnglishSandboxAfterLongVowelRealisation EnglishAfterLongVowelRealisation;
+define OldEnglishSandboxAfterSurface EnglishAfterSurface;
+
+define OldEnglishSandbox OldEnglishSandboxAfterSurface;
+
+clear stack
+regex OldEnglishSandbox;
+save stack old_english_sandbox.bin
+
+clear stack
+regex OldEnglishSandboxAfterProtoInput;
+save stack old_english_sandbox_after_proto_input.bin
+
+clear stack
+regex OldEnglishSandboxAfterInitialKn;
+save stack old_english_sandbox_after_initial_kn.bin
+
+clear stack
+regex OldEnglishSandboxAfterPalatalisation;
+save stack old_english_sandbox_after_palatalisation.bin
+
+clear stack
+regex OldEnglishSandboxAfterConsonantRules;
+save stack old_english_sandbox_after_consonant_rules.bin
+
+clear stack
+regex OldEnglishSandboxAfterGhMarker;
+save stack old_english_sandbox_after_gh_marker.bin
+
+clear stack
+regex OldEnglishSandboxAfterGlideDeletion;
+save stack old_english_sandbox_after_glide_deletion.bin
+
+clear stack
+regex OldEnglishSandboxAfterProtoToOE;
+save stack old_english_sandbox_after_proto_to_oe.bin
+
+clear stack
+regex OldEnglishSandboxAfterShortAFronting;
+save stack old_english_sandbox_after_short_a_fronting.bin
+
+clear stack
+regex OldEnglishSandboxAfterProtoRhoticFronting;
+save stack old_english_sandbox_after_proto_rhotic_fronting.bin
+
+clear stack
+regex OldEnglishSandboxAfterRhoticBreaking;
+save stack old_english_sandbox_after_rhotic_breaking.bin
+
+clear stack
+regex OldEnglishSandboxAfterShortBackLowering;
+save stack old_english_sandbox_after_short_back_lowering.bin
+
+clear stack
+regex OldEnglishSandboxAfterShortVowelSplit;
+save stack old_english_sandbox_after_short_vowel_split.bin
+
+clear stack
+regex OldEnglishSandboxAfterRhoticColoring;
+save stack old_english_sandbox_after_rhotic_coloring.bin
+
+clear stack
+regex OldEnglishSandboxAfterVowelRules;
+save stack old_english_sandbox_after_vowel_rules.bin
+
+clear stack
+regex OldEnglishSandboxAfterPostVocalicRLoss;
+save stack old_english_sandbox_after_postvocalic_r_loss.bin
+
+clear stack
+regex OldEnglishSandboxAfterWeakTailReductions;
+save stack old_english_sandbox_after_weak_tail.bin
+
+clear stack
+regex OldEnglishSandboxAfterWeakTailCleanup;
+save stack old_english_sandbox_after_weak_tail_cleanup.bin
+
+clear stack
+regex OldEnglishSandboxAfterSilentCleanup;
+save stack old_english_sandbox_after_silent_cleanup.bin
+
+clear stack
+regex OldEnglishSandboxAfterGhDeletion;
+save stack old_english_sandbox_after_gh_deletion.bin
+
+clear stack
+regex OldEnglishSandboxAfterOrthography;
+save stack old_english_sandbox_after_orthography.bin
+
+clear stack
+regex OldEnglishSandboxAfterLongVowelRealisation;
+save stack old_english_sandbox_after_long_vowel_realisation.bin
+
+clear stack
+regex OldEnglishSandboxAfterSurface;
+save stack old_english_sandbox_after_surface.bin
