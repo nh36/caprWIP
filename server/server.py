@@ -55,7 +55,13 @@ def with_json(*outer_args):
 @app.route("/list-inputs")
 def list_inputs():
     files = [f.split("/")[-1] for f in glob.glob("/usr/app/data/*.tsv")]
-    return {"inputs": files}
+    # Only expose the two production datasets in the UI dropdown.
+    allowed_inputs = {
+        "germanic-aligned-final.tsv",
+        "burmish-aligned-final.tsv",
+    }
+    filtered = sorted([f for f in files if f in allowed_inputs])
+    return {"inputs": filtered}
 
 # /get-transducers will return the text of a transducer file if it exists with
 # the given name in /fsts
