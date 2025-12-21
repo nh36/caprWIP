@@ -838,11 +838,52 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 
 ### PGmc→OE TODOs (consolidated)
 - **Separation model:** Old English is its own doculect with a PGmc→OE stack (`OldEnglishCore` + OE surface/orthography). Modern English is a separate doculect with an OE→Modern stack (`EnglishOEToModern`), and OE work should not use ME/RP rules.
-- **Proto gate coverage:** allow `x/hw` clusters (e.g., `burōjăną`, `xandlōjăną`) to pass `EnglishProtoInput` so they reach the OE layer instead of returning `+?`.
+- **Proto gate coverage:** `xw/hw` clusters already pass `EnglishProtoInput`; remaining ProtoInput failures are elsewhere (e.g., `*xabukăz`, `*xemenăz`, `*xnakkăz`, `*regna-bugōn`, `*sumerăz`). Focus on missing onset/weak‑tail clusters, not `xw/hw`.
 - **High‑vowel apocope expansion:** broaden final `*i/*u` deletion beyond the current “long/diphthong + C” and “two light syllables” conditions; target observed `-i/-u` outputs (e.g., `ballu/bebru/balgi/bugu/crafti/fehu/felþu`) while staying phonetic.
 - **Weak‑tail cleanup (`-ana` → `-an`):** reshape or drop weak‑tail `ă/ą` endings in verbs so outputs like `bacana/gennana/brecana/brengana/brūcana` converge on attested `-an`.
 - **OE consonant innovations:** add the missing PGmc→OE consonant changes (palatalisation in OE contexts, rhotic prep, targeted lexical replacements) so stage outputs align with `COUNTERPART` without using ME/RP rules.
 - **Validation loop:** after each change, rerun the OE evaluator (`python3 tools/evaluate_proto_to_oe.py --bin old_english.bin`) and keep `docs/debug_snapshots/` traces for regressions.
+
+### PGmc→OE chronology audit (2025-12-21)
+- **Sources consulted (web, Dec 21 2025):**
+  - Wikipedia: *Phonological history of Old English* (breaking/back mutation, high‑vowel loss, h‑loss, syncopation ordering).
+  - Wikipedia: *Ingvaeonic nasal spirant law* (nasal loss before fricatives + compensatory lengthening).
+  - Wikipedia: *Old English phonology* (palatalization/velar vs palatal distributions).
+  - Cambridge Core: *Reconstructing the historical phonology of Old English* (debate over standard chronology of fronting/breaking).
+
+- **Reference timeline (condensed, with known debates):**
+  - i‑umlaut (front mutation) precedes many OE alternations; later syncopation and vowel loss are ordered after it in standard accounts. 
+  - Breaking/retraction of front vowels before h, rC, lC (and some w contexts) is dialect‑conditioned and not uniform across OE. 
+  - Ingvaeonic nasal spirant law deletes nasals before fricatives with compensatory lengthening (‑ns‑, ‑nþ‑, ‑mf‑). 
+  - Back mutation (u‑umlaut) diphthongizes short e/i (sometimes a) before back vowels in the following syllable, with strong dialect differences. 
+  - High‑vowel loss deletes unstressed i/u after heavy syllables (long vowel/diphthong or closed syllable), but not after light syllables. 
+  - H‑loss and contraction occur after breaking in standard accounts; vowel contraction follows h‑loss.
+  - Palatalization of velars (k/g, and sc) before front vowels yields ċ/ġ alternations and later phonemic splits.
+
+- **What our current PGmc→OE stack already models:**
+  - WG monophthongisation (*ai/*au → *ā/*ō).
+  - Open‑syllable lengthening.
+  - Anglo‑Frisian breaking/rounding before liquids, r, and w.
+  - Velar shortening of *ō; u‑rounding before r.
+  - Weak‑tail marker/reduction; conservative high‑vowel apocope.
+  - *sk‑palatalisation before front vowels.
+
+- **Major gaps vs. the reference chronology (priority‑ordered):**
+  1. i‑umlaut is absent (core OE morphology driver).
+  2. Back mutation (u‑umlaut) is absent and dialect‑sensitive.
+  3. Ingvaeonic nasal spirant law is absent and should affect vowel length and nasal loss.
+  4. High‑vowel loss conditioning is under‑applied relative to heavy vs. light syllable split.
+  5. H‑loss + contraction are missing, and the timing vs. breaking is not modeled.
+  6. Breaking/back‑mutation order and dialect conditioning are not modeled; current rules are too broad.
+  7. Palatalization of velars beyond *sk (k/g before front vowels; ċ/ġ outcomes) is missing.
+
+- **Immediate next steps (OE‑only, chronological order):**
+  1. Add i‑umlaut with clean conditioning; trace impact on OE counterparts.
+  2. Add back‑mutation (u‑umlaut) with conservative, dialect‑agnostic defaults.
+  3. Add Ingvaeonic nasal spirant law + compensatory lengthening.
+  4. Re‑specify close‑vowel loss to match heavy vs. light syllable conditioning.
+  5. Add h‑loss and contraction; re‑check breaking order afterward.
+  6. Add palatalization for velars before front vowels (ċ/ġ), not just *sk.
 
 ### OE evaluator snapshot (old_english.bin)
 - Total OE rows: 376
@@ -857,3 +898,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Final high vowels: `i` 22, `u` 20; most common contexts `ti/di` for `-i`, `þu/du/tu` for `-u`.
 - Sample `-i/-u` outputs: `ballu` (ball), `bebru` (beaver), `balgi` (belly), `crafti` (craft), `bugu` (bough).
 - Sample `-ana` outputs where target is `-an`: `bacana` (bake), `gennana` (begin), `brecana` (break), `brengana` (bring), `brūcana` (brook).
+
+### OE diagnostics refresh (2025-12-21)
+- Recompiled FSTs and reran `tools/evaluate_proto_to_oe.py` against `old_english.bin`; totals unchanged (Matches 2 / No output 21 / Mismatches 353). Snapshot: `docs/debug_snapshots/oe_eval_2025-12-21.txt`.
+- Recomputed final‑vowel distribution + `-i/-u` contexts; counts unchanged and examples still dominated by final high vowels and `-ana` endings. Snapshot: `docs/debug_snapshots/oe_final_vowel_diag_2025-12-21.txt`.
