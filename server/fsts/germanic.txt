@@ -402,11 +402,11 @@ define GermanSurfaceSyllable GermanSurfaceOnset GermanSurfaceVowel GermanSurface
 define GermanSurface GermanSurfaceSyllable+;
 
 ##############################################
-## English transducer
+## English + Old English transducers         ##
 ##############################################
 
 
-# English sandbox: copy of current pipeline for brace migration experiments.
+# English/Old English sandbox: shared pipeline for brace migration experiments.
 
 define EnglishSurfaceVowel [
     {a} | {e} | {i} | {o} | {u} | {y} |
@@ -433,6 +433,10 @@ define EnglishSurfaceCoda [
 ];
 define EnglishSurfaceSyllable EnglishSurfaceOnset EnglishSurfaceVowel EnglishSurfaceCoda;
 define EnglishSurface EnglishSurfaceSyllable+;
+
+##############################################
+## Old English transducer                    ##
+##############################################
 
 define OldEnglishSurfaceVowel [
     {a} | {e} | {i} | {o} | {u} | {y} | {æ} | {ā} | {ē} | {ī} | {ō} | {ū} |
@@ -516,6 +520,10 @@ define OldEnglishRemoveStars [
     {*ŋ} -> n,
     {*ɡ} -> g
 ];
+
+##############################################
+## English transducer                        ##
+##############################################
 
 # Helper sets for the plain (post-brace) stages.
 define EnglishPlainVocalic [
@@ -605,94 +613,6 @@ define EnglishGlideDeletion [
 define EnglishGhDeletion [
     {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
-
-# West Germanic monophthongisation (ai → ā, au → ō).
-define EnglishWestGermanic [
-    {*ai} -> {*ā},
-    {*au} -> {*ō}
-];
-
-# Early Old English open-syllable lengthening promotes short vowels before CV onsets.
-define EnglishOpenSyllableLengthening [
-    {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
-];
-
-# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
-define EnglishBreakingLengthening [
-    {*a} -> {*ō} || _ {*l} EnglishStarConsonant,
-    {*a} -> {*ō} || _ {*l} .#.,
-    {*a} -> {*ō} || _ {*r} EnglishStarConsonant,
-    {*a} -> {*ō} || _ {*r} .#.,
-    {*a} -> {*ō} || _ {*w}
-];
-
-# Late Old English lowering of {*ō} before liquids and in absolute final position.
-define EnglishLiquidLowering [
-    {*ō} -> {*ō} || _ EnglishStarLiquid,
-    {*ō} -> {*ō} || _ .#.
-];
-
-# Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
-define EnglishVelarShortening [
-    {*ō} -> {*u} || _ EnglishStarVelarStop
-];
-
-# West Germanic rounding of {*u} before {*r} + consonant or word-final.
-define EnglishUrRounding [
-    {*u} -> {*ō} || _ {*r} EnglishStarConsonant,
-    {*u} -> {*ō} || _ {*r} .#.
-];
-
-define EnglishWeakTailMarker [
-    {*a} {*n} {*ą} -> {*ă},
-    {*ā} {*n} {*ą} -> {*ă},
-    {*a} {*m} {*ą} -> {*ă},
-    {*ā} {*m} {*ą} -> {*ă},
-    {*a} {*n} {*n} {*ą} -> {*ă},
-    {*ā} {*n} {*n} {*ą} -> {*ă}
-];
-
-define EnglishWeakTailReduction [
-    {*ą} -> {*a},
-    {*ă} -> {*a}
-];
-
-define OldEnglishSkPalatalization [
-    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel
-];
-
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū}];
-
-define EnglishStarShortVowel [
-    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
-];
-
-define EnglishHighVowelApocope [
-    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
-    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
-];
-
-
-# Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
-define EnglishProtoToOE (
-    EnglishWestGermanic
-    .o. EnglishOpenSyllableLengthening
-    .o. EnglishBreakingLengthening
-    .o. EnglishLiquidLowering
-    .o. EnglishVelarShortening
-    .o. EnglishUrRounding
-    .o. EnglishWeakTailMarker
-    .o. EnglishWeakTailReduction
-    .o. OldEnglishSkPalatalization
-    .o. EnglishHighVowelApocope
-);
-
 
 define EnglishRhoticWeakTail [{*ă} | {*ą}];
 
@@ -893,6 +813,93 @@ define EnglishLongVowelRealisation [
     {*ə} -> {ə},
     {*ɔː} -> {ɔː}
 ];
+
+# Proto-Germanic → Old English rules (keep adjacent to OE stack).
+# West Germanic monophthongisation (ai → ā, au → ō).
+define EnglishWestGermanic [
+    {*ai} -> {*ā},
+    {*au} -> {*ō}
+];
+
+# Early Old English open-syllable lengthening promotes short vowels before CV onsets.
+define EnglishOpenSyllableLengthening [
+    {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
+];
+
+# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
+define EnglishBreakingLengthening [
+    {*a} -> {*ō} || _ {*l} EnglishStarConsonant,
+    {*a} -> {*ō} || _ {*l} .#.,
+    {*a} -> {*ō} || _ {*r} EnglishStarConsonant,
+    {*a} -> {*ō} || _ {*r} .#.,
+    {*a} -> {*ō} || _ {*w}
+];
+
+# Late Old English lowering of {*ō} before liquids and in absolute final position.
+define EnglishLiquidLowering [
+    {*ō} -> {*ō} || _ EnglishStarLiquid,
+    {*ō} -> {*ō} || _ .#.
+];
+
+# Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
+define EnglishVelarShortening [
+    {*ō} -> {*u} || _ EnglishStarVelarStop
+];
+
+# West Germanic rounding of {*u} before {*r} + consonant or word-final.
+define EnglishUrRounding [
+    {*u} -> {*ō} || _ {*r} EnglishStarConsonant,
+    {*u} -> {*ō} || _ {*r} .#.
+];
+
+define EnglishWeakTailMarker [
+    {*a} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*ą} -> {*ă},
+    {*a} {*m} {*ą} -> {*ă},
+    {*ā} {*m} {*ą} -> {*ă},
+    {*a} {*n} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*n} {*ą} -> {*ă}
+];
+
+define EnglishWeakTailReduction [
+    {*ą} -> {*a},
+    {*ă} -> {*a}
+];
+
+define OldEnglishSkPalatalization [
+    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel
+];
+
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū}];
+
+define EnglishStarShortVowel [
+    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
+];
+
+define EnglishHighVowelApocope [
+    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
+    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
+    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
+];
+
+# Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
+define EnglishProtoToOE (
+    EnglishWestGermanic
+    .o. EnglishOpenSyllableLengthening
+    .o. EnglishBreakingLengthening
+    .o. EnglishLiquidLowering
+    .o. EnglishVelarShortening
+    .o. EnglishUrRounding
+    .o. EnglishWeakTailMarker
+    .o. EnglishWeakTailReduction
+    .o. OldEnglishSkPalatalization
+    .o. EnglishHighVowelApocope
+);
 
 define EnglishProtoInput pgrmWord;
 
