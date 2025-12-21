@@ -1,3 +1,9 @@
+## CURRENT FOCUS (as of 2025-12-21)
+
+- Priority: Old English sandbox / PGmc→OE stack. Start here first.
+- Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
+- Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
+
 ## 2025-12-07
 
 ### English sandbox todo — surface accuracy focus
@@ -771,6 +777,9 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - Pre-OE: specify how `{*er}` becomes `{æər}/{ɜːr}`, `{*ir}` becomes `{ɪr}`, `{*or}/{*ur}` becomes `{ɔːr}` before any breaking occurs. List the actual proto clusters (`rdă`, `rgă`, `rwō`, `rθo`, …) so the rules operate on contexts rather than word lists.
   - OE breaking: document the environments that should introduce `{ea/eo/ia}` diphthongs so ME smoothing can later yield RP `ɪə/ɛə/ɜː` without hard-coded outputs.
   - ME smoothing + post-vocalic /r/ loss: describe the sequence (breaking → smoothing → /r/ loss) so `EnglishSandboxRhoticBreaking`/`RhoticColoring` can implement the correct order once we update the rules.
+### Modern English (OE→Modern) roadmap — paused
+- These steps are intentionally separated from PGmc→OE work; only resume if explicitly requested.
+
 - **Consonant resolution.** Note explicitly why RP keeps /θ/ in `earth/hearth` but /d/ in `herd/word/sword` (OE retention vs. later analogical leveling). The current single-output rewrite matches the intended behaviour, but the reasoning should be recorded so future edits don’t reintroduce branching.
 - **Weak-tail & schwa preservation.** RP retains final /ə/ in orthographic `-er/-re` endings (`faɪə`, `ædə`). Outline which morphological endings should keep vs. drop the schwa so `EnglishSandboxWeakTailCleanup` can be rewritten with historical cues instead of deleting every `{*ə}` at word end.
 - **Next execution steps:** once the above roadmap is nailed down, implement the stages in order (ProtoRhoticFronting → OE breaking/smoothing → Post-vocalic /r/ loss → Weak-tail cleanup). After each change, rerun `python3 tools/trace_english_sandbox.py --lexeme-file tmp/rhotic_test_set.txt --brace-diphthongs` and `python3 server/tools/english_apply_down_stats.py` to measure progress beyond the current 21/376 baseline.
@@ -801,27 +810,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   5. After each milestone, rerun the rhotic tracer and `english_apply_down_stats.py` to ensure we stay branch-free and track improvements beyond the current 21/376 exact matches.
 
 ### Old English staging / TSV overhaul (PGmc → OE layer)
-
-- **Add an OE column to the aligned TSVs.**
-  - Extend  (and the stage3 export) with an  field so every lexeme records the historically attested OE form alongside the RP IPA.
-  - Update any CSV consumers (, export scripts, notebooks) to tolerate the new column. Regenerate the stage3 TSV via the existing pipeline so the OE column travels with future snapshots.
-  - Populate the OE column from existing notes or script from the lexicon where we already know the OE reflex. Track any blanks for manual follow-up.
-
-- **Encode an explicit PGmc→OE stage in the FST.**
-  - Add a dedicated stage (e.g., ) inside  to host the PGmc→OE innovations.
-  - Extend the star-vowel inventories with OE diphthongs (, , ) and make sure downstream stages accept them.
-  - Export intermediate OE bins () so we can trace PGmc→OE→ME→RP ends properly.
-
-- **Rework rhotic/breaking rules using the OE layer.**
-  - Move the colouring + OE breaking logic into the new stage, then add a ME smoothing stage that maps  +  into the RP nuclei before post-vocalic /r/ loss.
-
-- **Tooling/validation.**
-  - Add a validator to ensure the OE column stays filled and matches the PGmc→OE stage outputs.
-  - Document the new column/stage in  / .
-
-- **Testing workflow.**
-  1. After adding the OE column and stage, rebuild the FST and run the tracer through the new checkpoints to prove PGmc inputs flow through the OE layer.
-  2. Only then resume the ME/RP tweaks, checking  after each step to ensure apply-down stays single-output.
+- Completed and superseded; see the 2025-12-21 consolidated PGmc→OE TODOs for current work.
 
 ## 2025-12-12
 
@@ -835,10 +824,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 ### Proto→OE instrumentation & findings (2025-12-12)
 - Consolidated the early PGmc→OE vowel/weak-tail rules under `EnglishSandboxProtoToOE` and added the `english_sandbox_after_proto_to_oe.bin` stage log so we can trace that layer independently of the later ME/RP stack.
 - Wrote `server/tools/evaluate_proto_to_oe.py` and ran it against the current `english_sandbox_after_proto_to_oe.bin`: only 1/376 Old English rows match the attested counterpart, 20 rows die at the proto gate, and the survivors still carry weak-tail endings or untouched consonant clusters. Examples: `*utrăz→utra` (vs. `nǣdre`), `*bakăną→bākana` (vs. `bacan`), `*bardăz→bɔːrda` (vs. `beard`).
-- Next coding steps:
-  a. Extend the proto gate so `x/hw` clusters (e.g. `burōjăną`, `xandlōjăną`) survive long enough to reach the OE stage instead of returning `+?` immediately.
-  b. Teach `EnglishSandboxProtoToOE` to strip or reshape the weak-tail endings (`ă/ą`) into the expected OE vowels/consonants so verbs stop emitting `-ana` and nouns drop the stray hegemonic “-a”.
-  c. Add the PGmc→OE consonant innovations (palatalisation, rhotic prep, lexical replacements) ahead of the ME/RP stack so stage outputs inch closer to the `COUNTERPART` column.
+- Next coding steps now live in the consolidated PGmc→OE TODOs under 2025-12-21.
 
 ## 2025-12-21
 
@@ -849,6 +835,14 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - Removed blanket final *a apocope; retained only `*ą/*ă -> *a` (per high-vowel apocope focus).
   - Added `OldEnglishSkPalatalization` (`*sk -> ʃ` before front vowels).
   - Added a conservative high-vowel apocope rule for final `*i/*u` after heavy or two-light syllable patterns (approximate segmental conditioning; still needs refinement).
+
+### PGmc→OE TODOs (consolidated)
+- **Separation model:** Old English is its own doculect with a PGmc→OE stack (`OldEnglishCore` + OE surface/orthography). Modern English is a separate doculect with an OE→Modern stack (`EnglishOEToModern`), and OE work should not use ME/RP rules.
+- **Proto gate coverage:** allow `x/hw` clusters (e.g., `burōjăną`, `xandlōjăną`) to pass `EnglishProtoInput` so they reach the OE layer instead of returning `+?`.
+- **High‑vowel apocope expansion:** broaden final `*i/*u` deletion beyond the current “long/diphthong + C” and “two light syllables” conditions; target observed `-i/-u` outputs (e.g., `ballu/bebru/balgi/bugu/crafti/fehu/felþu`) while staying phonetic.
+- **Weak‑tail cleanup (`-ana` → `-an`):** reshape or drop weak‑tail `ă/ą` endings in verbs so outputs like `bacana/gennana/brecana/brengana/brūcana` converge on attested `-an`.
+- **OE consonant innovations:** add the missing PGmc→OE consonant changes (palatalisation in OE contexts, rhotic prep, targeted lexical replacements) so stage outputs align with `COUNTERPART` without using ME/RP rules.
+- **Validation loop:** after each change, rerun the OE evaluator (`python3 tools/evaluate_proto_to_oe.py --bin old_english.bin`) and keep `docs/debug_snapshots/` traces for regressions.
 
 ### OE evaluator snapshot (old_english.bin)
 - Total OE rows: 376
