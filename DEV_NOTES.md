@@ -838,6 +838,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 
 ### PGmc→OE TODOs (consolidated)
 - **Separation model:** Old English is its own doculect with a PGmc→OE stack (`OldEnglishCore` + OE surface/orthography). Modern English is a separate doculect with an OE→Modern stack (`EnglishOEToModern`), and OE work should not use ME/RP rules.
+- **Definition locality (housekeeping):** move PGmc→OE rule definitions so they live adjacent to the OE stack (mirroring how Dutch-specific rules sit near the Dutch stack), instead of being scattered among Modern English rule blocks.
 - **Proto gate coverage:** `xw/hw` clusters already pass `EnglishProtoInput`; remaining ProtoInput failures are elsewhere (e.g., `*xabukăz`, `*xemenăz`, `*xnakkăz`, `*regna-bugōn`, `*sumerăz`). Focus on missing onset/weak‑tail clusters, not `xw/hw`.
 - **High‑vowel apocope expansion:** broaden final `*i/*u` deletion beyond the current “long/diphthong + C” and “two light syllables” conditions; target observed `-i/-u` outputs (e.g., `ballu/bebru/balgi/bugu/crafti/fehu/felþu`) while staying phonetic.
 - **Weak‑tail cleanup (`-ana` → `-an`):** reshape or drop weak‑tail `ă/ą` endings in verbs so outputs like `bacana/gennana/brecana/brengana/brūcana` converge on attested `-an`.

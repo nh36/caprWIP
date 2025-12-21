@@ -1,0 +1,12 @@
+Total ProtoInput failures (OE rows): 11
+- hawk: *xabukăz | cluster b | weak_onset_block
+- heaven: *xemenăz | cluster m | weak_onset_block
+- neck: *xnakkăz | cluster kk | weak_onset_block
+- rainbow: *regna-bugōn | cluster gn | weak_onset_block
+- shilling: *skellin)ăz | cluster ll | weak_onset_ok
+- smear: *smerwjăną | cluster rwj | weak_onset_ok
+- snow: *snaigwăz | cluster (none) | weak_onset_ok
+- summer: *sumerăz | cluster m | weak_onset_block
+- thistle: *θestilăz | cluster st | weak_onset_ok
+- world: *wira-aldiz | cluster r | weak_onset_ok
+- worm: *wurmaz/wurmiz | cluster rm | weak_onset_ok

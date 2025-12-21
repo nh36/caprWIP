@@ -1,0 +1,66 @@
+Final vowel distribution (old_english.bin)
+- a: 212
+- n: 43
+- ō: 33
+- i: 22
+- u: 20
+- r: 4
+- o: 3
+- d: 3
+- s: 3
+- c: 2
+- t: 2
+- e: 2
+- w: 1
+- h: 1
+- þ: 1
+- ā: 1
+- ī: 1
+- ē: 1
+
+Final high vowels (i/u)
+- i: 22
+- u: 20
+
+Context before final i/u (prev char+final)
+- ti: 6
+- di: 5
+- þu: 4
+- du: 4
+- tu: 4
+- þi: 4
+- ru: 3
+- gi: 3
+- ci: 2
+- nu: 2
+- lu: 1
+- gu: 1
+- li: 1
+- hu: 1
+- bi: 1
+
+Sample outputs ending in i/u
+- ball: ballu | expected *beall
+- beaver: bebru | expected befer
+- belly: balgi | expected bielġ
+- birth: burdi | expected sự
+- bough: bugu | expected bōg
+- bride: brūdi | expected brȳd
+- craft: crafti | expected cræft
+- cud: cwiþu | expected cudu
+- deal: dāli | expected dǣl
+- deed: dēdi | expected dēd
+- fee: fehu | expected feoh
+- field: felþu | expected feld
+
+Sample -ana outputs where target differs
+- bake: bacana | expected bacan
+- begin: gennana | expected beginnan
+- believe: lōvana | expected belīefan
+- bid: beudana | expected -
+- bid: bindana | expected -
+- bind: bendana | expected bindan
+- bore: burōġana | expected borian
+- bow: bōdġana | expected boga
+- bow: beugana | expected boga
+- break: brecana | expected brecan
