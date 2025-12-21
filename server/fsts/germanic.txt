@@ -552,6 +552,14 @@ define EnglishStarLiquid [{*l} | {*r}];
 
 define EnglishStarVelarStop [{*k} | {*g}];
 
+define EnglishStarFricative [{*f} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+
+define EnglishStarConsonantSeq [EnglishStarConsonant]*;
+
+define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
+
+define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
+
 define EnglishWeakTailVowel pgrmWeakTailVowel.r;
 
 define EnglishInitialKnMarkers [
@@ -870,8 +878,40 @@ define EnglishWeakTailReduction [
     {*ă} -> {*a}
 ];
 
+define OldEnglishIUmlaut [
+    {*a} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*ā} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*o} -> {*e} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*ō} -> {*ē} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*u} -> {*y} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger
+];
+
+define OldEnglishBackMutation [
+    {*e} -> {*o} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,
+    {*i} -> {*u} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,
+    {*æ} -> {*a} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger
+];
+
+define OldEnglishNasalSpirantLengthening [
+    {*a} -> {*ā} || _ EnglishStarNasal EnglishStarFricative,
+    {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
+    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
+    {*o} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
+    {*u} -> {*ū} || _ EnglishStarNasal EnglishStarFricative,
+    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarFricative
+];
+
+define OldEnglishNasalSpirantLoss [
+    EnglishStarNasal -> 0 || _ EnglishStarFricative
+];
+
 define OldEnglishSkPalatalization [
     {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel
+];
+
+define OldEnglishVelarPalatalization [
+    {*k} -> {ʃ} || _ EnglishStarFrontVowel,
+    {*g} -> {ʒ} || _ EnglishStarFrontVowel
 ];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū}];
@@ -881,10 +921,43 @@ define EnglishStarShortVowel [
 ];
 
 define EnglishHighVowelApocope [
-    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
-    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
+    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
     {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
+];
+
+define OldEnglishHeavyMarker [
+    {*i} -> {H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+    {*u} -> {H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+    {*i} -> {H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
+    {*u} -> {H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
+];
+
+define OldEnglishWeightMarkers OldEnglishHeavyMarker;
+
+define OldEnglishHighVowelApocope [
+    {H} {*i} -> 0 || _ .#.,
+    {H} {*u} -> 0 || _ .#.
+];
+
+define OldEnglishWeightCleanup [
+    {H} -> 0
+];
+
+define OldEnglishHLoss [
+    {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
+    {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+];
+
+define OldEnglishContraction [
+    {*a} {*a} -> {*ā},
+    {*e} {*e} -> {*ē},
+    {*i} {*i} -> {*ī},
+    {*o} {*o} -> {*ō},
+    {*u} {*u} -> {*ū}
 ];
 
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
@@ -895,16 +968,24 @@ define EnglishProtoToOE (
     .o. EnglishLiquidLowering
     .o. EnglishVelarShortening
     .o. EnglishUrRounding
+    .o. OldEnglishIUmlaut
+    .o. OldEnglishBackMutation
+    .o. OldEnglishNasalSpirantLengthening
+    .o. OldEnglishNasalSpirantLoss
     .o. EnglishWeakTailMarker
     .o. EnglishWeakTailReduction
+    .o. OldEnglishWeightMarkers
+    .o. OldEnglishHighVowelApocope
+    .o. OldEnglishWeightCleanup
+    .o. OldEnglishHLoss
+    .o. OldEnglishContraction
     .o. OldEnglishSkPalatalization
-    .o. EnglishHighVowelApocope
+    .o. OldEnglishVelarPalatalization
 );
 
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
-    .o. OldEnglishPalatalisation
     .o. OldEnglishConsonantRules
     .o. EnglishProtoToOE;
 
@@ -932,6 +1013,22 @@ define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisatio
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
 define EnglishAfterGhMarker EnglishAfterConsonantRules .o. EnglishGhMarker;
 define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
+define EnglishAfterProtoToOEWeakTail EnglishAfterGlideDeletion
+    .o. EnglishWestGermanic
+    .o. EnglishOpenSyllableLengthening
+    .o. EnglishBreakingLengthening
+    .o. EnglishLiquidLowering
+    .o. EnglishVelarShortening
+    .o. EnglishUrRounding
+    .o. OldEnglishIUmlaut
+    .o. OldEnglishBackMutation
+    .o. OldEnglishNasalSpirantLengthening
+    .o. OldEnglishNasalSpirantLoss
+    .o. EnglishWeakTailMarker
+    .o. EnglishWeakTailReduction;
+define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
+define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope;
+define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope .o. OldEnglishWeightCleanup;
 define EnglishAfterProtoToOE EnglishAfterGlideDeletion .o. EnglishProtoToOE;
 define EnglishAfterShortAFronting EnglishAfterProtoToOE .o. EnglishShortAFronting;
 define EnglishAfterProtoRhoticFronting EnglishAfterShortAFronting .o. EnglishProtoRhoticFronting;
@@ -992,6 +1089,22 @@ save stack english_after_gh_marker.bin
 clear stack
 regex EnglishAfterGlideDeletion;
 save stack english_after_glide_deletion.bin
+
+clear stack
+regex EnglishAfterProtoToOEWeakTail;
+save stack english_after_proto_to_oe_weak_tail.bin
+
+clear stack
+regex EnglishAfterProtoToOEWeightMarkers;
+save stack english_after_proto_to_oe_weight_markers.bin
+
+clear stack
+regex EnglishAfterProtoToOEApocope;
+save stack english_after_proto_to_oe_apocope.bin
+
+clear stack
+regex EnglishAfterProtoToOEWeightCleanup;
+save stack english_after_proto_to_oe_weight_cleanup.bin
 
 clear stack
 regex EnglishAfterProtoToOE;

@@ -1,0 +1,41 @@
+Final vowel/consonant distribution (stage outputs):
+  a: 215
+  n: 45
+  ō: 33
+  i: 22
+  u: 20
+  d: 12
+  t: 12
+  þ: 9
+  r: 7
+  g: 4
+  c: 4
+  o: 3
+  s: 3
+  l: 2
+  h: 2
+  e: 2
+  w: 1
+  ā: 1
+  b: 1
+  ī: 1
+  ē: 1
+
+Final -i contexts (top):
+  ti: 6
+  di: 5
+  þi: 4
+  gi: 3
+  ci: 2
+  li: 1
+  bi: 1
+
+Final -u contexts (top):
+  þu: 4
+  du: 4
+  tu: 4
+  ru: 3
+  nu: 2
+  lu: 1
+  gu: 1
+  hu: 1

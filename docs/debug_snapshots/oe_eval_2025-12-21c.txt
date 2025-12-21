@@ -1,0 +1,26 @@
+Total Old English rows: 376
+Matches (stage output equals counterpart): 8
+No stage output: 17
+Mismatches: 351
+
+Sample mismatches:
+- adder: proto utrăz => stage utra | expected nǣdre
+- bake: proto bakăną => stage bacana | expected bacan
+- ball: proto balluz => stage ballu, ball | expected *beall
+- ban: proto banną => stage ba | expected bannan
+- barrow: proto bergą => stage berga | expected beorg
+- bast: proto bastą => stage basta | expected bæst
+- bath: proto baθą => stage baþa | expected bæþ
+- beard: proto bardăz => stage barda | expected beard
+- beaver: proto bebruz => stage bebru, bebr | expected befer
+- beech: proto bōkō => stage bucō | expected bēċe
+- begin: proto gennăną => stage gennana | expected beginnan
+- believe: proto laubjăną => stage lōbġana | expected belīefan
+- belly: proto balgiz => stage balgi, balg | expected bielġ
+- berry: proto bazją => stage +? | expected berġe
+- bid: proto beudăną => stage beudana | expected -
+
+Common issues (counts across stage outputs, heuristic):
+  final_z: 0
+  breve: 0
+  lost_suffix: 209
