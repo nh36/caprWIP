@@ -78,6 +78,6 @@ Check `docker compose ps` to confirm no lingering containers remain.
   `server/tools/validate_old_english_pairs.py server/data/germanic-aligned-final.tsv`
   to ensure every English concept still has an Old English counterpart (this
   script also reports how many placeholder notes remain).
-- Tracing tip: the English sandbox now emits `english_sandbox_after_proto_to_oe.bin` right
+- Tracing tip: the English sandbox now emits `english_after_proto_to_oe.bin` right
   after the PGmc→OE stage, so grab that snapshot when debugging early vowel/weak-tail changes.
-- Use `python3 server/tools/evaluate_proto_to_oe.py --tsv data/germanic-aligned-final.tsv --bin english_sandbox_after_proto_to_oe.bin` after each rule batch to quantify how close the stage mirrors the OE column.
+- Use `python3 server/tools/evaluate_proto_to_oe.py --tsv data/germanic-aligned-final.tsv --bin english_after_proto_to_oe.bin` after each rule batch to quantify how close the stage mirrors the OE column.

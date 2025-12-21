@@ -864,16 +864,12 @@ define EnglishUrRounding [
     {*u} -> {*ō} || _ {*r} .#.
 ];
 
-define EnglishWeakTailMarker [
-    {*a} {*n} {*ą} -> {*ă},
-    {*ā} {*n} {*ą} -> {*ă},
-    {*a} {*m} {*ą} -> {*ă},
-    {*ā} {*m} {*ą} -> {*ă},
-    {*a} {*n} {*n} {*ą} -> {*ă},
-    {*ā} {*n} {*n} {*ą} -> {*ă}
+define OldEnglishWeakTailNasalLoss [
+    {*n} {*ą} -> {*n} || _ .#.,
+    {*m} {*ą} -> {*m} || _ .#.
 ];
 
-define EnglishWeakTailReduction [
+define OldEnglishWeakTailReduction [
     {*ą} -> {*a},
     {*ă} -> {*a}
 ];
@@ -972,8 +968,8 @@ define EnglishProtoToOE (
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
-    .o. EnglishWeakTailMarker
-    .o. EnglishWeakTailReduction
+    .o. OldEnglishWeakTailNasalLoss
+    .o. OldEnglishWeakTailReduction
     .o. OldEnglishWeightMarkers
     .o. OldEnglishHighVowelApocope
     .o. OldEnglishWeightCleanup
@@ -1024,8 +1020,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterGlideDeletion
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
-    .o. EnglishWeakTailMarker
-    .o. EnglishWeakTailReduction;
+    .o. OldEnglishWeakTailNasalLoss
+    .o. OldEnglishWeakTailReduction;
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope .o. OldEnglishWeightCleanup;

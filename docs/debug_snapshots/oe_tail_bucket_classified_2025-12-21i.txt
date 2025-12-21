@@ -1,0 +1,13 @@
+OE -ana outputs classified by attested OE ending
+Source: oe_tail_bucket_2025-12-21i.txt
+
+an: 0
+other: 0
+can: 0
+ian: 0
+e: 0
+a: 0
+ċan: 0
+on: 0
+en: 0
+missing: 0
