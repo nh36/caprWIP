@@ -3,6 +3,7 @@
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
+- Latest OE diagnostics: `docs/debug_snapshots/oe_eval_2025-12-21j.txt` + `docs/debug_snapshots/oe_tail_bucket_2025-12-21j.txt`.
 
 ## 2025-12-07
 
@@ -819,11 +820,11 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Ran the helper across all 376 English concepts so the Old English rows now have attested lemmas (373 entries auto-filled; annotated `fodder fōdor` and `tongs tange` manually, marked `knob` as lacking an OE cognate per the etymology).
 - Documented the workflow in `README.md` + `docs/runbook.md`, and added `server/tools/validate_old_english_pairs.py` to guard the 1:1 English↔OE coverage going forward.
 
-- **PGmc→OE stage split.** Added `EnglishSandboxProtoToOE` inside `server/fsts/english_brace_sandbox.txt` so the early vowel/weak-tail rules share a single hook and tracer snapshot (`english_sandbox_after_proto_to_oe.bin`).
+- **PGmc→OE stage split.** Added `EnglishProtoToOE` inside `server/fsts/germanic.txt` so the early vowel/weak-tail rules share a single hook and tracer snapshot (`english_after_proto_to_oe.bin`).
 
 ### Proto→OE instrumentation & findings (2025-12-12)
-- Consolidated the early PGmc→OE vowel/weak-tail rules under `EnglishSandboxProtoToOE` and added the `english_sandbox_after_proto_to_oe.bin` stage log so we can trace that layer independently of the later ME/RP stack.
-- Wrote `server/tools/evaluate_proto_to_oe.py` and ran it against the current `english_sandbox_after_proto_to_oe.bin`: only 1/376 Old English rows match the attested counterpart, 20 rows die at the proto gate, and the survivors still carry weak-tail endings or untouched consonant clusters. Examples: `*utrăz→utra` (vs. `nǣdre`), `*bakăną→bākana` (vs. `bacan`), `*bardăz→bɔːrda` (vs. `beard`).
+- Consolidated the early PGmc→OE vowel/weak-tail rules under `EnglishProtoToOE` and added the `english_after_proto_to_oe.bin` stage log so we can trace that layer independently of the later ME/RP stack.
+- Wrote `server/tools/evaluate_proto_to_oe.py` and ran it against `english_after_proto_to_oe.bin`: only 1/376 Old English rows matched at that time; this baseline is superseded by the 2025-12-21 diagnostics (see current focus above).
 - Next coding steps now live in the consolidated PGmc→OE TODOs under 2025-12-21.
 
 ## 2025-12-21
