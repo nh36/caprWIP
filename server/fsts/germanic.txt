@@ -352,31 +352,6 @@ define GermanProtoInput pgrmWord;
 ## Surface phonotactics (baggy filters)     ##
 ##############################################
 
-# English allows sizable clusters, but every syllable must anchor to a vowel.
-define EnglishSurfaceVowel [
-    {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
-    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ}
-];
-define EnglishSurfaceConsonant [
-    {b} | {d} | {f} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
-    {r} | {s} | {t} | {v} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
-    {ʤ} | {ʧ} | {θ}
-];
-define EnglishSurfaceOnset [
-    0 |
-    EnglishSurfaceConsonant |
-    EnglishSurfaceConsonant EnglishSurfaceConsonant |
-    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
-];
-define EnglishSurfaceCoda [
-    0 |
-    EnglishSurfaceConsonant |
-    EnglishSurfaceConsonant EnglishSurfaceConsonant |
-    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
-];
-define EnglishSurfaceSyllable EnglishSurfaceOnset EnglishSurfaceVowel EnglishSurfaceCoda;
-define EnglishSurface EnglishSurfaceSyllable+;
-
 # Dutch surface strings share the same "at least one vowel" requirement.
 define DutchSurfaceVowel [
     {aː} | {eː} | {iː} | {oː} | {uː} | {yː} | {øː} | {ɑ} | {ɑu} |
@@ -430,24 +405,178 @@ define GermanSurface GermanSurfaceSyllable+;
 ## English transducer
 ##############################################
 
-### 1. Surface filter
-# (defined above as `EnglishSurface`)
 
-### 2. Sound laws
+# English sandbox: copy of current pipeline for brace migration experiments.
+
+define EnglishSurfaceVowel [
+    {a} | {e} | {i} | {o} | {u} | {y} |
+    {aɪ} | {aʊ} | {eɪ} | {iː} | {uː} | {æ} | {ɑː} | {ɔ} | {ɔː} |
+    {ə} | {əʊ} | {ɛ} | {ɛə} | {ɜː} | {ɪ} | {ɪə} | {ʊ} | {ʌ} |
+    {ā} | {ē} | {ī} | {ō} | {ū} | {ą} | {ę}
+];
+define EnglishSurfaceConsonant [
+    {b} | {d} | {f} | {g} | {h} | {j} | {k} | {l} | {m} | {n} | {p} |
+    {r} | {s} | {t} | {v} | {w} | {z} | {ð} | {ŋ} | {ɡ} | {ʃ} | {ʋ} |
+    {ʤ} | {ʧ} | {θ}
+];
+define EnglishSurfaceOnset [
+    0 |
+    EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
+];
+define EnglishSurfaceCoda [
+    0 |
+    EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant |
+    EnglishSurfaceConsonant EnglishSurfaceConsonant EnglishSurfaceConsonant
+];
+define EnglishSurfaceSyllable EnglishSurfaceOnset EnglishSurfaceVowel EnglishSurfaceCoda;
+define EnglishSurface EnglishSurfaceSyllable+;
+
+define OldEnglishSurfaceVowel [
+    {a} | {e} | {i} | {o} | {u} | {y} | {æ} | {ā} | {ē} | {ī} | {ō} | {ū} |
+    {ǣ} | {ȳ} | {ä} | {ọ} | {ự} | {ɔ} | {ɪ}
+];
+define OldEnglishSurfaceConsonant [
+    {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
+    {t} | {v} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ}
+];
+define OldEnglishSurfaceStress [{ˈ}];
+define OldEnglishSurfaceOnset [
+    0 |
+    OldEnglishSurfaceConsonant |
+    OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant |
+    OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant
+];
+define OldEnglishSurfaceCoda [
+    0 |
+    OldEnglishSurfaceConsonant |
+    OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant |
+    OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant OldEnglishSurfaceConsonant
+];
+define OldEnglishSurfaceSyllable (OldEnglishSurfaceStress | 0)
+    OldEnglishSurfaceOnset OldEnglishSurfaceVowel OldEnglishSurfaceCoda;
+define OldEnglishSurface OldEnglishSurfaceSyllable+;
+
+define OldEnglishOrthography [
+    {*θ} -> þ,
+    {*ð} -> ð,
+    {*ʃ} -> ċ,
+    {*ʒ} -> ġ,
+    {*ʋ} -> w,
+    {*x} -> h,
+    {θ} -> þ,
+    {ð} -> ð,
+    {ʃ} -> ċ,
+    {ʒ} -> ġ,
+    {ʋ} -> w,
+    {x} -> h,
+    {ɡ} -> g,
+    {ʊ} -> u,
+    {ɔ} -> o
+];
+
+define OldEnglishRemoveStars [
+    {*a} -> a,
+    {*ā} -> ā,
+    {*ă} -> a,
+    {*ą} -> a,
+    {*æ} -> æ,
+    {*e} -> e,
+    {*ē} -> ē,
+    {*i} -> i,
+    {*ī} -> ī,
+    {*o} -> o,
+    {*ō} -> ō,
+    {*u} -> u,
+    {*ū} -> ū,
+    {*y} -> y,
+    {*b} -> b,
+    {*c} -> c,
+    {*d} -> d,
+    {*f} -> f,
+    {*g} -> g,
+    {*h} -> h,
+    {*j} -> ġ,
+    {*k} -> c,
+    {*l} -> l,
+    {*m} -> m,
+    {*n} -> n,
+    {*p} -> p,
+    {*r} -> r,
+    {*s} -> s,
+    {*t} -> t,
+    {*v} -> v,
+    {*w} -> w,
+    {*x} -> x,
+    {*z} -> z,
+    {*ð} -> ð,
+    {*θ} -> þ,
+    {*ŋ} -> n,
+    {*ɡ} -> g
+];
+
+# Helper sets for the plain (post-brace) stages.
+define EnglishPlainVocalic [
+    EnglishSurfaceVowel |
+    {e} | {o} | {u} | {oː}
+];
+define EnglishPlainLiquid [{l} | {r}];
+define EnglishPlainNasal [{m} | {n}];
+
+# Brace-aware helper inventories for the sandbox.
+define EnglishStarVowel GermanStarVowel;
+
+define EnglishStarFrontVowel GermanStarFrontVowel;
+
+define EnglishStarBackVowel GermanStarBackVowel;
+
+define EnglishStarDiphthong GermanStarDiphthong;
+
+define EnglishStarConsonant GermanStarConsonant;
+
+define EnglishStarVocalic GermanStarVocalic;
+
+define EnglishStarNasal [{*m} | {*n}];
+
+define EnglishStarLiquid [{*l} | {*r}];
+
+define EnglishStarVelarStop [{*k} | {*g}];
+
+define EnglishWeakTailVowel pgrmWeakTailVowel.r;
+
 define EnglishInitialKnMarkers [
-    "kn" -> "Kn" || .#. _,
-    "gn" -> "Gn" || .#. _
+    {*k} {*n} -> {Kn} || .#. _,
+    {*g} {*n} -> {Gn} || .#. _
 ];
 
-define EnglishConsonantRules [
-    w -> {ʋ},
-    z -> {r} || Vowel _ Vowel,
-    z -> 0 || _ .#.,
-    {dj} -> nd
+define EnglishPalatalisation (
+    [{*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*k} -> {tʃ} || _ EnglishStarFrontVowel]
+    .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
+    .o. [{*b} {*j} -> {v}]
+    .o. [{*g} {*j} -> {dʒ}]
+    .o. [{*k} {*j} -> {tʃ}]
+);
+
+define EnglishWGlideRule [{*w} -> {ʋ}];
+
+define EnglishZRhotacism [
+    {*z} -> {r} || EnglishStarVocalic _ EnglishStarVocalic
 ];
+
+define EnglishZApocope [{*z} -> 0 || _ .#.];
+
+define EnglishDJPalatal [{*d} {*j} -> {nd}];
+
+define EnglishConsonantRules EnglishWGlideRule
+    .o. EnglishZRhotacism
+    .o. EnglishZApocope
+    .o. EnglishDJPalatal;
 
 define EnglishGhMarker [
-    {x} -> {GH} || Vowel _ ({t} | {d} | .#.)
+    {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
 define EnglishSilentInitialCleanup [
@@ -456,51 +585,460 @@ define EnglishSilentInitialCleanup [
 ];
 
 define EnglishGlideDeletion [
-    {ʋ} -> 0 || Vowel _ Vowel
+    {ʋ} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
 define EnglishGhDeletion [
-    {GH} -> 0 || Vowel _ ({t} | {d} | .#.)
+    {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
-define EnglishVowelRules [
-    ī -> {iː},
-    ū -> {uː},
-    ē -> {iː},
-    ō -> {uː},
-    ā -> {ɑː},
-    {au} -> {oː},
-    {ai} -> {eɪ},
-    {ai} -> {aɪ},
-    {au} -> {aʊ},
-    e -> {ɛ},
-    e -> {ɪ} || _ Cons,
-    o -> {ɔ},
-    a -> {ə} || _ .#.,
-    a -> {æ} || _ r,
-    u -> {ʌ} || _ (Cons | .#.)
+# West Germanic monophthongisation (ai → ā, au → ō).
+define EnglishWestGermanic [
+    {*ai} -> {*ā},
+    {*au} -> {*ō}
 ];
+
+# Early Old English open-syllable lengthening promotes short vowels before CV onsets.
+define EnglishOpenSyllableLengthening [
+    {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic,
+    {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
+];
+
+# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
+define EnglishBreakingLengthening [
+    {*a} -> {*ō} || _ {*l} EnglishStarConsonant,
+    {*a} -> {*ō} || _ {*l} .#.,
+    {*a} -> {*ō} || _ {*r} EnglishStarConsonant,
+    {*a} -> {*ō} || _ {*r} .#.,
+    {*a} -> {*ō} || _ {*w}
+];
+
+# Late Old English lowering of {*ō} before liquids and in absolute final position.
+define EnglishLiquidLowering [
+    {*ō} -> {*ō} || _ EnglishStarLiquid,
+    {*ō} -> {*ō} || _ .#.
+];
+
+# Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
+define EnglishVelarShortening [
+    {*ō} -> {*u} || _ EnglishStarVelarStop
+];
+
+# West Germanic rounding of {*u} before {*r} + consonant or word-final.
+define EnglishUrRounding [
+    {*u} -> {*ō} || _ {*r} EnglishStarConsonant,
+    {*u} -> {*ō} || _ {*r} .#.
+];
+
+define EnglishWeakTailMarker [
+    {*a} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*ą} -> {*ă},
+    {*a} {*m} {*ą} -> {*ă},
+    {*ā} {*m} {*ą} -> {*ă},
+    {*a} {*n} {*n} {*ą} -> {*ă},
+    {*ā} {*n} {*n} {*ą} -> {*ă}
+];
+
+define EnglishWeakTailReduction [
+    {*ą} -> {*a},
+    {*ă} -> {*a}
+];
+
+define OldEnglishSkPalatalization [
+    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel
+];
+
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū}];
+
+define EnglishStarShortVowel [
+    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
+];
+
+define EnglishHighVowelApocope [
+    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
+    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant _ .#.,
+    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
+];
+
+
+# Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
+define EnglishProtoToOE (
+    EnglishWestGermanic
+    .o. EnglishOpenSyllableLengthening
+    .o. EnglishBreakingLengthening
+    .o. EnglishLiquidLowering
+    .o. EnglishVelarShortening
+    .o. EnglishUrRounding
+    .o. EnglishWeakTailMarker
+    .o. EnglishWeakTailReduction
+    .o. OldEnglishSkPalatalization
+    .o. EnglishHighVowelApocope
+);
+
+
+define EnglishRhoticWeakTail [{*ă} | {*ą}];
+
+define EnglishRhoticDental [{*d} | {*ð} | {*θ}];
+
+define EnglishRhoticBreaking (
+    # {*barwōn} (bier): smooth the {*rʋ} cluster into an ME /ɪə/ nucleus so later stages can drop /r/ normally.
+    [{*æ} {*r} {ʋ} -> {*ɪə} {*r}]
+    .o.
+    # {*fuwer} (fire): West Saxon */uwər/ → /aɪər/ before r-loss kicks in.
+    [{*u} {æ} {*r} -> {*aɪ} {*ə} {*r}]
+    .o.
+    # {*bergą}: treat the velar + weak-tail as a single /rəʊ/ nucleus.
+    [
+        {*r} {*g} {*ą} -> {*r} {*əʊ},
+        {*r} {*g} {*ă} -> {*r} {*əʊ}
+    ]
+    .o.
+    # {*bardăz}: OE ea reflects the weak-tail dental context.
+    [{*ɔː} {*r} {*d} EnglishRhoticWeakTail -> {*ɪə} {*r} {*d} EnglishRhoticWeakTail]
+    .o.
+    # {*burdiz}: rounded */ur/ before /d/ + high vowel becomes /ɜː/.
+    [{*ɔː} {*r} {*d} ({*i} | {*ī}) -> {*ɜː} {*r} {*d} ({*i} | {*ī})]
+    .o.
+    # {*erθo}: map `{*rθ/ð}` to a single /ɜːθ/ branch and `{*rd}` to /ɜːd/ so no parallel outputs survive.
+    [{æ} {*r} {*θ} -> {*ɜː} {*θ}]
+    .o.
+    [{æ} {*r} {*ð} -> {*ɜː} {*θ}]
+    .o.
+    [{æ} {*r} {*d} -> {*ɜː} {*d}]
+);
+
+# Proto-stage fronting/backing before Middle English developments.
+define EnglishProtoRhoticFronting [
+    {*a} -> {æ} || _ {*r},
+    {*e} -> {æ} || _ {*r},
+    {*i} -> {ɪ} || _ {*r},
+    {*o} -> {ɔ} || _ {*r}
+];
+
+# Short back-vowel lowering (pre-ME contextual rewrite).
+define EnglishShortBackLowering [
+    {*o} -> {ɔ}
+];
+
+# Deterministic long-ō stage: targets for boot/foot/goose classes.
+define EnglishORaisedFront [{*ō} -> {*uː} || _ ({*m} | {*n} | {*l}) EnglishStarVocalic];
+
+define EnglishORaisedClosed [{*ō} -> {*ʊ} || EnglishStarConsonant _ EnglishStarConsonant];
+
+define EnglishOFrontFallback [{*ō} -> {*əʊ}];
+
+define EnglishOFrontContext EnglishORaisedFront
+    .o. EnglishORaisedClosed
+    .o. EnglishOFrontFallback;
+
+# Deterministic long-ū stage: house vs. oo contexts.
+define EnglishURaisedTargets [{*ū} -> {*aʊ} || _ ({*s} | {*n} | {*l} | .#.)];
+
+define EnglishUFrontFallback [{*ū} -> {*uː}];
+
+define EnglishUFrontContext EnglishURaisedTargets
+    .o. EnglishUFrontFallback;
+
+# Anglo-Frisian style short-a fronting in closed syllables.
+define EnglishShortAFronting [
+    {*a} -> {*æ} || _ EnglishStarConsonant
+];
+
+# Late Middle English short-vowel splits (KIT vs. DRESS, FOOT vs. STRUT).
+define EnglishShortVowelContextual [
+    {u} -> {ʊ} || _ EnglishStarVelarStop,
+    {u} -> {ʊ} || _ {*z} EnglishStarVocalic,
+    {u} -> {ʊ} || _ {*z} EnglishWeakTailVowel,
+    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) EnglishStarConsonant,
+    {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) .#.,
+    {u} -> {ʊ} || {*w} _ {*l} (EnglishStarConsonant | .#.),
+    {u} -> {ʊ} || {*w} _ {*l} EnglishWeakTailVowel,
+    {e} -> {ɪ} || _ (EnglishStarNasal | EnglishStarLiquid) EnglishStarConsonant,
+    {e} -> {ɪ} || _ EnglishStarNasal .#.,
+    {i} -> {ɪ} || _ EnglishStarConsonant,
+    {i} -> {ɪ} || _ .#.
+];
+
+define EnglishShortVowelFallback [
+    {u} -> {ʌ},
+    {e} -> {ɛ}
+];
+
+define EnglishShortVowelSplit EnglishShortVowelContextual .o. EnglishShortVowelFallback;
+
+define EnglishStrutRescue [
+    {ʊ} -> {ʌ} || _ EnglishStarNasal (EnglishStarConsonant | .#.),
+    {ʊ} -> {ʌ} || _ EnglishStarNasal EnglishWeakTailVowel
+];
+
+# Old English & Middle English vowel developments feeding the later English cascade.
+define EnglishCoreVowelRules [
+    {*i} -> {i},
+    {*u} -> {u}
+];
+
+define EnglishRhoticColoring [
+    {*a} EnglishStarConsonant {*r} -> {*æ} EnglishStarConsonant {*r},
+    {*e} EnglishStarConsonant {*r} -> {*ɛ} EnglishStarConsonant {*r},
+    {*i} EnglishStarConsonant {*r} -> {*ə} EnglishStarConsonant {*r},
+    {*u} EnglishStarConsonant {*r} -> {*ɔː} EnglishStarConsonant {*r},
+    {*o} EnglishStarConsonant {*r} -> {*ɔː} EnglishStarConsonant {*r}
+];
+
+# Deterministic Great Vowel Shift stages.
+define EnglishGreatVowelShift [
+    {*ō} -> {*əʊ},
+    {*ā} -> {*eɪ}
+];
+
+define EnglishGVSUShift [
+    {*ū} -> {*aʊ}
+];
+
+# Late Middle English / Early Modern English unstressed reductions (weak tails).
+define EnglishTailConsonant [
+    EnglishStarNasal |
+    EnglishStarLiquid |
+    {n} | {m} | {l} | {r}
+];
+
+define EnglishStarTailConsonant [
+    EnglishStarNasal |
+    EnglishStarLiquid
+];
+
+define EnglishWeakTailReductions (
+    {*a} -> {*ə} || _ .#.
+) .o. (
+    {*a} -> {*ə} || _ EnglishWeakTailVowel
+) .o. (
+    {*ă} -> {*ə}
+) .o. (
+    {*ą} -> {*ə}
+);
+
+define EnglishWeakTailSchwa [{*ə}];
+
+define EnglishWeakTailCleanup (
+    EnglishStarTailConsonant -> 0 || EnglishWeakTailSchwa _ .#.
+) .o. (
+    EnglishStarTailConsonant -> 0 || _ EnglishWeakTailSchwa .#.
+) .o. (
+    EnglishWeakTailSchwa -> 0 || _ .#.
+);
+
+define EnglishWeakTailFinalDrop ["*" {ə} -> 0 || _ .#.];
+
+define EnglishNoFinalWeakTail ~[ ?* (EnglishTailConsonant | EnglishWeakTailSchwa) .#. ];
+
+# Early Modern English post-vocalic /r/-loss.
+define EnglishPostVocalicRLoss [
+    {*r} -> 0 || EnglishPlainVocalic _ (EnglishStarConsonant | .#.)
+];
+
+define EnglishVowelRulesPreRhotic EnglishCoreVowelRules
+    .o. EnglishShortVowelSplit
+    .o. EnglishStrutRescue;
+
+define EnglishOoLowering [
+    {*ʊ} -> {ʌ} || ({*b} | {*f}) {*l} _ ({*d} | {*t})
+];
+
+define EnglishVowelRulesPostRhotic EnglishShortBackLowering
+    .o. EnglishOFrontContext
+    .o. EnglishOoLowering
+    .o. EnglishUFrontContext
+    .o. EnglishGreatVowelShift
+    .o. EnglishGVSUShift;
+
+define EnglishVowelRules EnglishVowelRulesPreRhotic
+    .o. EnglishRhoticColoring
+    .o. EnglishVowelRulesPostRhotic;
 
 define EnglishOrthography [
-    x -> {h}
+    {*x} -> {h}
 ];
 
-### 3. Composition
-define EnglishReflexes ProtoWord
+# Final conversion of starred vowels/diphthongs to IPA (pre-surface cleanup).
+define EnglishLongVowelRealisation [
+    {*ā} -> {ɑː},
+    {*ē} -> {iː},
+    {*ī} -> {iː},
+    {*ō} -> {oː},
+    {*ū} -> {uː},
+    {*əʊ} -> {əʊ},
+    {*aʊ} -> {aʊ},
+    {*eɪ} -> {eɪ},
+    {*aɪ} -> {aɪ},
+    {*æ} -> {æ},
+    {*ɛ} -> {ɛ},
+    {*ə} -> {ə},
+    {*ɔː} -> {ɔː}
+];
+
+define EnglishProtoInput pgrmWord;
+
+define OldEnglishCore EnglishProtoInput
     .o. EnglishInitialKnMarkers
+    .o. EnglishPalatalisation
     .o. EnglishConsonantRules
     .o. EnglishGhMarker
     .o. EnglishGlideDeletion
+    .o. EnglishProtoToOE;
+
+define EnglishOEToModern EnglishShortAFronting
+    .o. EnglishProtoRhoticFronting
+    .o. EnglishRhoticBreaking
+    .o. EnglishShortBackLowering
     .o. EnglishVowelRules
+    .o. EnglishPostVocalicRLoss
+    .o. EnglishWeakTailReductions
+    .o. EnglishWeakTailCleanup
+    .o. EnglishWeakTailFinalDrop
     .o. EnglishSilentInitialCleanup
     .o. EnglishGhDeletion
-    .o. EnglishOrthography;
-define English EnglishReflexes .o. EnglishSurface;
+    .o. EnglishOrthography
+    .o. EnglishLongVowelRealisation;
+
+define EnglishReflexes OldEnglishCore
+    .o. EnglishOEToModern;
+
+# Stage instrumentation so every checkpoint can be traced/saved like the German stack.
+define EnglishAfterProtoInput EnglishProtoInput;
+define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
+define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
+define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
+define EnglishAfterGhMarker EnglishAfterConsonantRules .o. EnglishGhMarker;
+define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
+define EnglishAfterProtoToOE EnglishAfterGlideDeletion .o. EnglishProtoToOE;
+define EnglishAfterShortAFronting EnglishAfterProtoToOE .o. EnglishShortAFronting;
+define EnglishAfterProtoRhoticFronting EnglishAfterShortAFronting .o. EnglishProtoRhoticFronting;
+define EnglishAfterRhoticBreaking EnglishAfterProtoRhoticFronting .o. EnglishRhoticBreaking;
+define EnglishAfterShortBackLowering EnglishAfterRhoticBreaking .o. EnglishShortBackLowering;
+define EnglishAfterShortVowelSplit EnglishAfterShortBackLowering .o. EnglishVowelRulesPreRhotic;
+define EnglishAfterRhoticColoring EnglishAfterShortVowelSplit .o. EnglishRhoticColoring;
+define EnglishAfterVowelRules EnglishAfterRhoticColoring .o. EnglishVowelRulesPostRhotic;
+define EnglishAfterPostVocalicRLoss EnglishAfterVowelRules .o. EnglishPostVocalicRLoss;
+define EnglishAfterWeakTailReductions EnglishAfterPostVocalicRLoss .o. EnglishWeakTailReductions;
+define EnglishAfterWeakTailCleanup EnglishAfterWeakTailReductions
+    .o. EnglishWeakTailCleanup
+    .o. EnglishWeakTailFinalDrop
+    .o. EnglishNoFinalWeakTail;
+define EnglishAfterSilentCleanup EnglishAfterWeakTailCleanup .o. EnglishSilentInitialCleanup;
+define EnglishAfterGhDeletion EnglishAfterSilentCleanup .o. EnglishGhDeletion;
+define EnglishAfterOrthography EnglishAfterGhDeletion .o. EnglishOrthography;
+define EnglishAfterLongVowelRealisation EnglishAfterOrthography .o. EnglishLongVowelRealisation;
+define EnglishAfterSurface EnglishAfterLongVowelRealisation .o. RemoveStars .o. EnglishSurface;
+define English EnglishReflexes .o. RemoveStars .o. EnglishSurface;
+
+# Old English: stop after the Proto→OE layer and surface-filter the OE inventory.
+define OldEnglishRules OldEnglishCore
+    .o. OldEnglishOrthography
+    .o. OldEnglishRemoveStars;
+
+define OldEnglishReflexes OldEnglishRules .o. OldEnglishSurface;
+define OldEnglish OldEnglishReflexes;
 
 clear stack
 regex English;
 save stack english.bin
- 
+
+clear stack
+regex OldEnglish;
+save stack old_english.bin
+
+clear stack
+regex EnglishAfterProtoInput;
+save stack english_after_proto_input.bin
+
+clear stack
+regex EnglishAfterInitialKn;
+save stack english_after_initial_kn.bin
+
+clear stack
+regex EnglishAfterPalatalisation;
+save stack english_after_palatalisation.bin
+
+clear stack
+regex EnglishAfterConsonantRules;
+save stack english_after_consonant_rules.bin
+
+clear stack
+regex EnglishAfterGhMarker;
+save stack english_after_gh_marker.bin
+
+clear stack
+regex EnglishAfterGlideDeletion;
+save stack english_after_glide_deletion.bin
+
+clear stack
+regex EnglishAfterProtoToOE;
+save stack english_after_proto_to_oe.bin
+
+clear stack
+regex EnglishAfterShortAFronting;
+save stack english_after_short_a_fronting.bin
+
+clear stack
+regex EnglishAfterProtoRhoticFronting;
+save stack english_after_proto_rhotic_fronting.bin
+
+clear stack
+regex EnglishAfterRhoticBreaking;
+save stack english_after_rhotic_breaking.bin
+
+clear stack
+regex EnglishAfterShortBackLowering;
+save stack english_after_short_back_lowering.bin
+
+clear stack
+regex EnglishAfterShortVowelSplit;
+save stack english_after_short_vowel_split.bin
+
+clear stack
+regex EnglishAfterRhoticColoring;
+save stack english_after_rhotic_coloring.bin
+
+clear stack
+regex EnglishAfterVowelRules;
+save stack english_after_vowel_rules.bin
+
+clear stack
+regex EnglishAfterPostVocalicRLoss;
+save stack english_after_postvocalic_r_loss.bin
+
+clear stack
+regex EnglishAfterWeakTailReductions;
+save stack english_after_weak_tail.bin
+
+clear stack
+regex EnglishAfterWeakTailCleanup;
+save stack english_after_weak_tail_cleanup.bin
+
+clear stack
+regex EnglishAfterSilentCleanup;
+save stack english_after_silent_cleanup.bin
+
+clear stack
+regex EnglishAfterGhDeletion;
+save stack english_after_gh_deletion.bin
+
+clear stack
+regex EnglishAfterOrthography;
+save stack english_after_orthography.bin
+
+clear stack
+regex EnglishAfterLongVowelRealisation;
+save stack english_after_long_vowel_realisation.bin
+
+clear stack
+regex EnglishAfterSurface;
+save stack english_after_surface.bin
+
 ##############################################
 ## Dutch transducer                          ##
 ##############################################
