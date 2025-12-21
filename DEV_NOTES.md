@@ -934,3 +934,22 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Updated diagnostics:
   - `docs/debug_snapshots/oe_eval_2025-12-21e.txt` (Matches 8 / No output 18 / Mismatches 350).
   - `docs/debug_snapshots/oe_final_vowel_diag_2025-12-21e.txt` shows **0** final `-i/-u` outputs after the heavy‑syllable apocope.
+
+### OE weak‑tail marker fix (2025-12-21)
+- Renamed `EnglishWeakTailMarker/EnglishWeakTailReduction` to `OldEnglishWeakTailMarker/OldEnglishWeakTailReduction` and confined them to marking only the weak‑tail vowel.
+- Old behaviour collapsed `*a n(n) ą` into a single `{*ă}`, deleting the `n(n)` cluster (e.g., `*banną → *ba` in `ProtoToOE`), which violated the “no blanket -ana deletion” policy.
+- New marker rules only rewrite `*n/*m + *ą` to `*n/*m + *ă`, so `*banną → *banna` at `ProtoToOE` and the tail stays intact for later, phonologically justified cleanup.
+- Recompiled `fsts/germanic.txt` + `fsts/old_english_sandbox.txt` and captured:
+  - `docs/debug_snapshots/oe_eval_2025-12-21g.txt` (Matches 5 / No output 11 / Mismatches 360).
+  - `docs/debug_snapshots/oe_apply_down_stats_2025-12-21g.txt` (apply‑down coverage snapshot).
+  - `docs/debug_snapshots/oe_tracer_log_2025-12-21g.txt` (OE sandbox tracer).
+
+### OE weak‑tail nasal vowel loss (PGmc *‑aną → OE ‑an) (2025-12-21)
+- Replaced the heavy‑syllable apocope experiment with a chronologically correct PGmc→OE rule: drop final `*ą` after `*n`/`*m` at word‑end, then reduce remaining `*ą/*ă` to `*a`.
+- This targets the early loss of final nasal vowels (infinitive `*‑aną → ‑an`) without touching the later loss of final `‑n`.
+- Diagnostics (post‑change):
+  - `docs/debug_snapshots/oe_eval_2025-12-21j.txt` (Matches 13 / No output 11 / Mismatches 352).
+  - `docs/debug_snapshots/oe_apply_down_stats_2025-12-21j.txt` (apply‑down coverage snapshot).
+  - `docs/debug_snapshots/oe_tracer_log_2025-12-21j.txt` (OE sandbox tracer).
+- `docs/debug_snapshots/oe_tail_bucket_2025-12-21j.txt` + `oe_tail_bucket_classified_2025-12-21j.txt` (tail bucket after nasal‑vowel loss).
+- Note: the tail bucket still contains `swan` (`*swanăz → sʋana`), which is not from `*‑aną`; flag for later review of `*‑ăz` handling.

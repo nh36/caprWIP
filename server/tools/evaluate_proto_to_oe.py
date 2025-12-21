@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, List
 
 DEFAULT_TSV = Path(__file__).resolve().parents[1] / "data" / "germanic-aligned-final.tsv"
-DEFAULT_BIN = Path(__file__).resolve().parents[1] / "english_sandbox_after_proto_to_oe.bin"
+DEFAULT_BIN = Path(__file__).resolve().parents[1] / "english_after_proto_to_oe.bin"
 
 STRIP_CHARS = "{}* \t"
 BREVE_MAP = str.maketrans({"ă": "a", "Ą": "a", "ą": "a", "Ă": "a"})
@@ -73,7 +73,7 @@ def load_oe_rows(tsv_path: Path) -> List[Dict[str, str]]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tsv", default=str(DEFAULT_TSV), help="Aligned TSV with Old English rows")
-    parser.add_argument("--bin", default=str(DEFAULT_BIN), help="Path to english_sandbox_after_proto_to_oe.bin")
+    parser.add_argument("--bin", default=str(DEFAULT_BIN), help="Path to english_after_proto_to_oe.bin")
     parser.add_argument("--sample", type=int, default=15, help="How many mismatches to print")
     args = parser.parse_args()
 
