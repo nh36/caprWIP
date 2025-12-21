@@ -31,6 +31,7 @@ language_title = {
     'Dutch': 'Dutch',
     'English': 'English',
     'German': 'German',
+    'Old_English': 'Old English',
 }
 fst_index = {
     'Old_Burmese': 'burmese',
@@ -43,6 +44,7 @@ fst_index = {
     'Dutch': 'dutch',
     'English': 'english',
     'German': 'german',
+    'Old_English': 'old_english',
 }
 
 # Basic imports
