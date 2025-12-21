@@ -551,14 +551,26 @@ define EnglishInitialKnMarkers [
     {*g} {*n} -> {Gn} || .#. _
 ];
 
-define EnglishPalatalisation (
-    [{*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*k} -> {tʃ} || _ EnglishStarFrontVowel]
-    .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
-    .o. [{*b} {*j} -> {v}]
+define OldEnglishPalatalisation (
+    [{*s} {*k} -> {s} {ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*k} -> {ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*g} -> {ʒ} || _ EnglishStarFrontVowel]
+);
+
+define EnglishLatePalatalisation (
+    [{*b} {*j} -> {v}]
     .o. [{*g} {*j} -> {dʒ}]
     .o. [{*k} {*j} -> {tʃ}]
 );
+
+define EnglishEarlyPalatalisation (
+    [{*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*k} -> {tʃ} || _ EnglishStarFrontVowel]
+    .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
+);
+
+define EnglishPalatalisation EnglishEarlyPalatalisation
+    .o. EnglishLatePalatalisation;
 
 define EnglishWGlideRule [{*w} -> {ʋ}];
 
@@ -570,9 +582,11 @@ define EnglishZApocope [{*z} -> 0 || _ .#.];
 
 define EnglishDJPalatal [{*d} {*j} -> {nd}];
 
+define OldEnglishConsonantRules EnglishZRhotacism
+    .o. EnglishZApocope;
+
 define EnglishConsonantRules EnglishWGlideRule
-    .o. EnglishZRhotacism
-    .o. EnglishZApocope
+    .o. OldEnglishConsonantRules
     .o. EnglishDJPalatal;
 
 define EnglishGhMarker [
@@ -883,11 +897,8 @@ define EnglishLongVowelRealisation [
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
-    .o. EnglishInitialKnMarkers
-    .o. EnglishPalatalisation
-    .o. EnglishConsonantRules
-    .o. EnglishGhMarker
-    .o. EnglishGlideDeletion
+    .o. OldEnglishPalatalisation
+    .o. OldEnglishConsonantRules
     .o. EnglishProtoToOE;
 
 define EnglishOEToModern EnglishShortAFronting
