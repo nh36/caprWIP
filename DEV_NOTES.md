@@ -979,3 +979,13 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   3. **Breaking:** strengthen OE breaking contexts (before r/l/h clusters, etc.).
   4. **Final ‑e retention:** prevent weak‑tail cleanup from removing OE final ‑e where attested.
   5. **Final ‑n retention:** ensure infinitive/weak verb ‑an survives; confirm no over‑drop after nasal‑vowel loss.
+
+### OE i‑umlaut status (2025-12-22)
+- **What we added:** expanded `OldEnglishIUmlaut` to cover `*æ → *e`, `*e → *i`, and `*ū → *ȳ`; added `*ȳ` to starred vowel inventories + `OldEnglishRemoveStars`.
+- **What works now (ordering probe):** i‑umlaut fires inside the PGmc→OE block before weak‑tail cleanup/apocope (e.g., `mūsiz → *m*ȳ*s`, `brūdiz → *b*r*ȳ*d`, `fōtiz → *f*ē*t`). Snapshot: `docs/debug_snapshots/oe_iumlaut_ordering_probe_2025-12-22.txt`.
+- **What is still missing:** fronting/raising does not trigger in many common i/j contexts (`laubjăną`, `sandjăną`, `bazją` still un‑fronted), so the **trigger environment is still too narrow** and diphthong umlaut (ea/eo → ie/īe) is not modeled yet.
+- **Resources & probes already available:**
+  - Ordering probe: `docs/debug_snapshots/oe_iumlaut_ordering_probe_2025-12-22.txt`
+  - Full‑set i/j‑trigger probe: `docs/debug_snapshots/oe_iumlaut_fullset_probe_2025-12-22.txt`
+  - Candidate list (heuristic i/j triggers): `docs/debug_snapshots/oe_iumlaut_candidates_2025-12-22.txt`
+- **Next steps:** relax the right‑context for i‑umlaut (beyond `EnglishStarConsonantSeq` where needed), add diphthong umlaut rules (ea/ēa, eo/ēo → ie/īe), and re‑run the full‑set probe + OE apply‑down stats to check for over‑application.
