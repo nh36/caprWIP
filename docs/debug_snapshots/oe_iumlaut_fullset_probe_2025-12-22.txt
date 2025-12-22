@@ -1,0 +1,32 @@
+Total candidates: 79
+No pre-oe output: 6
+Changed by IUmlaut: 34
+Unchanged by IUmlaut: 39
+
+Sample changed (<=12):
+- birth (*burdiz): *b*ō*r*d*i -> *b*ē*r*d*i | expected ġebyrd
+- bore (*burōjăną): *b*ū*r*ō*j*ă*n*ą -> *b*ū*r*ē*j*ă*n*ą | expected borian
+- bride (*brūdiz): *b*r*ū*d*i -> *b*r*ȳ*d*i | expected brȳd
+- craft (*kraftiz): *k*r*a*f*t*i -> *k*r*æ*f*t*i | expected cræft
+- deal (*dailiz): *d*ā*l*i -> *d*æ*l*i | expected dǣl
+- dill (*deljăz): *d*e*l*j*ă -> *d*i*l*j*ă | expected dile
+- gift (*geftiz): dʒ*e*f*t*i -> dʒ*i*f*t*i | expected ġift
+- guest (*gastiz): *g*a*s*t*i -> *g*æ*s*t*i | expected appear
+- handle (*xandlōjăną): *x*a*n*d*l*ō*j*ă*n*ą -> *x*a*n*d*l*ē*j*ă*n*ą | expected handle
+- harvest (*xarbistuz): *x*ō*r*b*i*s*t*u -> *x*ē*r*b*i*s*t*u | expected hærfest
+- heal (*xailjăną): *x*ā*l*j*ă*n*ą -> *x*æ*l*j*ă*n*ą | expected hǣlan
+- heath (*xaiθiz): *x*ā*θ*i -> *x*æ*θ*i | expected hǣþ
+
+Sample unchanged (<=12):
+- believe (*laubjăną): *l*ōv*ă*n*ą -> *l*ōv*ă*n*ą | expected belīefan
+- belly (*balgiz): *b*a*ldʒ*i -> *b*a*ldʒ*i | expected bielġ
+- berry (*bazją): *b*ar*j*ą -> *b*ar*j*ą | expected berġe
+- bone (*bainăn): *b*ā*n*ă*n -> *b*ā*n*ă*n | expected bān
+- bow (*baugjăną): *b*ōdʒ*ă*n*ą -> *b*ōdʒ*ă*n*ą | expected boga
+- deed (*dēdiz): *d*ē*d*i -> *d*ē*d*i | expected dēd
+- dough (*daigăz): *d*ā*g*ă -> *d*ā*g*ă | expected dāg
+- fist (*funxwstiz): *f*u*n*xʋ*s*t*i -> *f*u*n*xʋ*s*t*i | expected fȳst
+- flesh (*flaiskăz): *f*l*ā*s*k*ă -> *f*l*ā*s*k*ă | expected flǣsċ
+- friend (*frijōndz): *f*r*ī*j*ō*n*d -> *f*r*ī*j*ō*n*d | expected frēond
+- ghost (*gaistăz): *g*ā*s*t*ă -> *g*ā*s*t*ă | expected gāst
+- hay (*xawwją): *x*aʋʋ*j*ą -> *x*aʋʋ*j*ą | expected hīeġ

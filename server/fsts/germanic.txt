@@ -679,6 +679,14 @@ define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
 
 define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 
+define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
+
+define EnglishIUmlautIntervening [
+    0 |
+    EnglishStarConsonantNoJ |
+    EnglishStarConsonantNoJ EnglishStarConsonantNoJ
+];
+
 define EnglishWeakTailVowel pgrmWeakTailVowel.r;
 
 define EnglishInitialKnMarkers [
@@ -993,16 +1001,18 @@ define OldEnglishWeakTailReduction [
     {*ă} -> {*a}
 ];
 
-define OldEnglishIUmlaut [
-    {*æ} -> {*e} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*a} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*ā} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*e} -> {*i} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*o} -> {*e} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*ō} -> {*ē} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*u} -> {*y} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*ū} -> {*ȳ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger
+define OldEnglishIUmlautCore [
+    {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ā} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
+
+define OldEnglishIUmlaut OldEnglishIUmlautCore;
 
 define OldEnglishBackMutation [
     {*e} -> {*o} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,
