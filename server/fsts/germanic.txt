@@ -707,7 +707,7 @@ define EnglishPalatalisation EnglishEarlyPalatalisation
 define EnglishWGlideRule [{*w} -> {ʋ}];
 
 define EnglishZRhotacism [
-    {*z} -> {r} || EnglishStarVocalic _ EnglishStarVocalic
+    {*z} -> {r} || EnglishStarVocalic _
 ];
 
 define EnglishZApocope [{*z} -> 0 || _ .#.];
