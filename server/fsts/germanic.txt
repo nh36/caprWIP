@@ -377,8 +377,14 @@ define PGmcStarVowel [
 define PGmcStarDiphthong [
     {*ai} |
     {*au} |
+    {*ea} |
+    {*ēa} |
     {*ei} |
+    {*eo} |
+    {*ēo} |
     {*eu} |
+    {*ie} |
+    {*īe} |
     {*iu}
 ];
 
@@ -558,7 +564,7 @@ define EnglishSurface EnglishSurfaceSyllable+;
 
 define OldEnglishSurfaceVowel [
     {a} | {e} | {i} | {o} | {u} | {y} | {æ} | {ā} | {ē} | {ī} | {ō} | {ū} |
-    {ǣ} | {ȳ} | {ä} | {ọ} | {ự} | {ɔ} | {ɪ}
+    {ǣ} | {ȳ} | {ea} | {ēa} | {eo} | {ēo} | {ie} | {īe} | {ä} | {ọ} | {ự} | {ɔ} | {ɪ}
 ];
 define OldEnglishSurfaceConsonant [
     {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
@@ -600,6 +606,12 @@ define OldEnglishOrthography [
 ];
 
 define OldEnglishRemoveStars [
+    {*ea} -> ea,
+    {*ēa} -> ēa,
+    {*eo} -> eo,
+    {*ēo} -> ēo,
+    {*ie} -> ie,
+    {*īe} -> īe,
     {*a} -> a,
     {*ā} -> ā,
     {*ă} -> a,
@@ -1012,7 +1024,15 @@ define OldEnglishIUmlautCore [
     {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-define OldEnglishIUmlaut OldEnglishIUmlautCore;
+define OldEnglishIUmlautDiphthong [
+    {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+];
+
+define OldEnglishIUmlaut OldEnglishIUmlautCore
+    .o. OldEnglishIUmlautDiphthong;
 
 define OldEnglishBackMutation [
     {*e} -> {*o} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,

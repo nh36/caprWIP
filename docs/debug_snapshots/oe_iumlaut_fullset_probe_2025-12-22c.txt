@@ -1,0 +1,17 @@
+Total candidates: 79
+No pre-oe output: 6
+Changed between pre_oe and OE output: 73
+
+Sample changed (<=12):
+- believe (*laubjăną): pre *l*auv*ă*n*ą -> OE lēbġan | expected belīefan
+- belly (*balgiz): pre *b*a*ldʒ*i -> OE bēlg | expected bielġ
+- berry (*bazją): pre *b*ar*j*ą -> OE barġa | expected berġe
+- birth (*burdiz): pre *b*u*r*d*i -> OE bērd | expected ġebyrd
+- bone (*bainăn): pre *b*ai*n*ă*n -> OE bānan | expected bān
+- bore (*burōjăną): pre *b*u*r*ō*j*ă*n*ą -> OE būrēġan | expected borian
+- bow (*baugjăną): pre *b*audʒ*ă*n*ą -> OE bygġan | expected boga
+- bride (*brūdiz): pre *b*r*ū*d*i -> OE brȳd | expected brȳd
+- craft (*kraftiz): pre *k*r*a*f*t*i -> OE cræft | expected cræft
+- deal (*dailiz): pre *d*ai*l*i -> OE dæl | expected dǣl
+- deed (*dēdiz): pre *d*ē*d*i -> OE dēd | expected dēd
+- dill (*deljăz): pre *d*e*l*j*ă -> OE dilġa | expected dile
