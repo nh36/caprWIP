@@ -740,8 +740,7 @@ define EnglishDJPalatal [{*d} {*j} -> {nd}];
 define OldEnglishConsonantRules EnglishZApocope
     .o. EnglishZRhotacism;
 
-define EnglishConsonantRules EnglishWGlideRule
-    .o. OldEnglishConsonantRules
+define EnglishConsonantRules OldEnglishConsonantRules
     .o. EnglishDJPalatal;
 
 define EnglishGhMarker [
@@ -1183,9 +1182,7 @@ define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
-define EnglishAfterGhMarker EnglishAfterConsonantRules .o. EnglishGhMarker;
-define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
-define EnglishAfterProtoToOEWeakTail EnglishAfterGlideDeletion
+define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. EnglishWestGermanic
     .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
@@ -1201,7 +1198,10 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterGlideDeletion
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope .o. OldEnglishWeightCleanup;
-define EnglishAfterProtoToOE EnglishAfterGlideDeletion .o. EnglishProtoToOE;
+define EnglishAfterProtoToOE EnglishAfterConsonantRules .o. EnglishProtoToOE;
+define EnglishAfterWGlide EnglishAfterProtoToOE .o. EnglishWGlideRule;
+define EnglishAfterGhMarker EnglishAfterWGlide .o. EnglishGhMarker;
+define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
 define EnglishAfterShortAFronting EnglishAfterProtoToOE .o. EnglishShortAFronting;
 define EnglishAfterProtoRhoticFronting EnglishAfterShortAFronting .o. EnglishProtoRhoticFronting;
 define EnglishAfterRhoticBreaking EnglishAfterProtoRhoticFronting .o. EnglishRhoticBreaking;

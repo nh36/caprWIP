@@ -81,8 +81,7 @@ define EnglishSandboxZApocope [{*z} -> 0 || _ .#.];
 
 define EnglishSandboxDJPalatal [{*d} {*j} -> {nd}];
 
-define EnglishSandboxConsonantRules EnglishSandboxWGlideRule
-    .o. EnglishSandboxZRhotacism
+define EnglishSandboxConsonantRules EnglishSandboxZRhotacism
     .o. EnglishSandboxZApocope
     .o. EnglishSandboxDJPalatal;
 
@@ -118,14 +117,38 @@ define EnglishSandboxOpenSyllableLengthening [
     {*u} -> {*ū} || _ EnglishSandboxStarConsonant EnglishSandboxStarVocalic
 ];
 
-# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
-define EnglishSandboxBreakingLengthening [
-    {*a} -> {*ō} || _ {*l} EnglishSandboxStarConsonant,
-    {*a} -> {*ō} || _ {*l} .#.,
-    {*a} -> {*ō} || _ {*r} EnglishSandboxStarConsonant,
-    {*a} -> {*ō} || _ {*r} .#.,
-    {*a} -> {*ō} || _ {*w}
+# Old English breaking before h, rC, lC, and select w contexts (split by vowel).
+define EnglishSandboxBreakingHContext [{*h} | {*x}];
+define EnglishSandboxBreakingRContext [{*r} EnglishSandboxStarConsonant];
+define EnglishSandboxBreakingLContext [{*l} EnglishSandboxStarConsonant];
+define EnglishSandboxBreakingLContextE [{*l} ({*h} | {*x} | {*k} | {*g})];
+define EnglishSandboxBreakingWContext [{*w}];
+
+define EnglishSandboxBreakingA [
+    {*a} -> {*ea} || _ EnglishSandboxBreakingRContext,
+    {*a} -> {*ea} || _ EnglishSandboxBreakingLContext,
+    {*a} -> {*ea} || _ EnglishSandboxBreakingHContext,
+    {*æ} -> {*ea} || _ EnglishSandboxBreakingRContext,
+    {*æ} -> {*ea} || _ EnglishSandboxBreakingLContext,
+    {*æ} -> {*ea} || _ EnglishSandboxBreakingHContext
 ];
+
+define EnglishSandboxBreakingE [
+    {*e} -> {*eo} || _ EnglishSandboxBreakingRContext,
+    {*e} -> {*eo} || _ EnglishSandboxBreakingHContext,
+    {*e} -> {*eo} || _ EnglishSandboxBreakingWContext,
+    {*e} -> {*eo} || _ EnglishSandboxBreakingLContextE
+];
+
+define EnglishSandboxBreakingI [
+    {*i} -> {*ie} || _ EnglishSandboxBreakingRContext,
+    {*i} -> {*ie} || _ EnglishSandboxBreakingHContext,
+    {*i} -> {*ie} || _ EnglishSandboxBreakingWContext
+];
+
+define EnglishSandboxBreakingLengthening EnglishSandboxBreakingA
+    .o. EnglishSandboxBreakingE
+    .o. EnglishSandboxBreakingI;
 
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
 define EnglishSandboxLiquidLowering [
@@ -372,9 +395,10 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxInitialKnMarkers
     .o. EnglishSandboxPalatalisation
     .o. EnglishSandboxConsonantRules
+    .o. EnglishSandboxProtoToOE
+    .o. EnglishSandboxWGlideRule
     .o. EnglishSandboxGhMarker
     .o. EnglishSandboxGlideDeletion
-    .o. EnglishSandboxProtoToOE
     .o. EnglishSandboxShortAFronting
     .o. EnglishSandboxProtoRhoticFronting
     .o. EnglishSandboxRhoticBreaking
@@ -393,10 +417,24 @@ define EnglishSandboxAfterProtoInput EnglishSandboxProtoInput;
 define EnglishSandboxAfterInitialKn EnglishSandboxAfterProtoInput .o. EnglishSandboxInitialKnMarkers;
 define EnglishSandboxAfterPalatalisation EnglishSandboxAfterInitialKn .o. EnglishSandboxPalatalisation;
 define EnglishSandboxAfterConsonantRules EnglishSandboxAfterPalatalisation .o. EnglishSandboxConsonantRules;
-define EnglishSandboxAfterGhMarker EnglishSandboxAfterConsonantRules .o. EnglishSandboxGhMarker;
+define EnglishSandboxAfterWestGermanic EnglishSandboxAfterConsonantRules .o. EnglishSandboxWestGermanic;
+define EnglishSandboxAfterOpenLengthening EnglishSandboxAfterWestGermanic
+    .o. EnglishSandboxOpenSyllableLengthening;
+define EnglishSandboxAfterBreakingLengthening EnglishSandboxAfterOpenLengthening
+    .o. EnglishSandboxBreakingLengthening;
+define EnglishSandboxAfterLiquidLowering EnglishSandboxAfterBreakingLengthening
+    .o. EnglishSandboxLiquidLowering;
+define EnglishSandboxAfterVelarShortening EnglishSandboxAfterLiquidLowering
+    .o. EnglishSandboxVelarShortening;
+define EnglishSandboxAfterUrRounding EnglishSandboxAfterVelarShortening
+    .o. EnglishSandboxUrRounding;
+define EnglishSandboxAfterWeakTailMarker EnglishSandboxAfterUrRounding
+    .o. EnglishSandboxWeakTailMarker;
+define EnglishSandboxAfterProtoToOE EnglishSandboxAfterWeakTailMarker;
+define EnglishSandboxAfterWGlide EnglishSandboxAfterProtoToOE .o. EnglishSandboxWGlideRule;
+define EnglishSandboxAfterGhMarker EnglishSandboxAfterWGlide .o. EnglishSandboxGhMarker;
 define EnglishSandboxAfterGlideDeletion EnglishSandboxAfterGhMarker .o. EnglishSandboxGlideDeletion;
-define EnglishSandboxAfterProtoToOE EnglishSandboxAfterGlideDeletion .o. EnglishSandboxProtoToOE;
-define EnglishSandboxAfterShortAFronting EnglishSandboxAfterProtoToOE .o. EnglishSandboxShortAFronting;
+define EnglishSandboxAfterShortAFronting EnglishSandboxAfterGlideDeletion .o. EnglishSandboxShortAFronting;
 define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
 define EnglishSandboxAfterRhoticBreaking EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxRhoticBreaking;
 define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterRhoticBreaking .o. EnglishSandboxShortBackLowering;
@@ -438,16 +476,48 @@ regex EnglishSandboxAfterConsonantRules;
 save stack english_sandbox_after_consonant_rules.bin
 
 clear stack
+regex EnglishSandboxAfterWestGermanic;
+save stack english_sandbox_after_west_germanic.bin
+
+clear stack
+regex EnglishSandboxAfterOpenLengthening;
+save stack english_sandbox_after_open_lengthening.bin
+
+clear stack
+regex EnglishSandboxAfterBreakingLengthening;
+save stack english_sandbox_after_breaking_lengthening.bin
+
+clear stack
+regex EnglishSandboxAfterLiquidLowering;
+save stack english_sandbox_after_liquid_lowering.bin
+
+clear stack
+regex EnglishSandboxAfterVelarShortening;
+save stack english_sandbox_after_velar_shortening.bin
+
+clear stack
+regex EnglishSandboxAfterUrRounding;
+save stack english_sandbox_after_ur_rounding.bin
+
+clear stack
+regex EnglishSandboxAfterWeakTailMarker;
+save stack english_sandbox_after_weak_tail_marker.bin
+
+clear stack
+regex EnglishSandboxAfterProtoToOE;
+save stack english_sandbox_after_proto_to_oe.bin
+
+clear stack
+regex EnglishSandboxAfterWGlide;
+save stack english_sandbox_after_w_glide.bin
+
+clear stack
 regex EnglishSandboxAfterGhMarker;
 save stack english_sandbox_after_gh_marker.bin
 
 clear stack
 regex EnglishSandboxAfterGlideDeletion;
 save stack english_sandbox_after_glide_deletion.bin
-
-clear stack
-regex EnglishSandboxAfterProtoToOE;
-save stack english_sandbox_after_proto_to_oe.bin
 
 clear stack
 regex EnglishSandboxAfterShortAFronting;
