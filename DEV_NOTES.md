@@ -989,3 +989,9 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - Full‑set i/j‑trigger probe: `docs/debug_snapshots/oe_iumlaut_fullset_probe_2025-12-22.txt`
   - Candidate list (heuristic i/j triggers): `docs/debug_snapshots/oe_iumlaut_candidates_2025-12-22.txt`
 - **Next steps:** relax the right‑context for i‑umlaut (beyond `EnglishStarConsonantSeq` where needed), add diphthong umlaut rules (ea/ēa, eo/ēo → ie/īe), and re‑run the full‑set probe + OE apply‑down stats to check for over‑application.
+
+### OE breaking reorder + diagnostics (2025-12-22)
+- **Breaking now precedes GH‑marking and W‑glide** so the conditioning consonants are still visible when OE breaking applies; this matches the chronology (breaking before h‑loss and before later glide re‑analysis). Implemented in both `server/fsts/germanic.txt` and `server/fsts/english_brace_sandbox.txt`.
+- **Sandbox breaking rules aligned to OE** (`*a/*æ → *ea`, `*e → *eo`, `*i → *ie` in rC/lC/h/w contexts). This replaced the old `{*a → *ō}` placeholder.
+- **Tracer instrumentation updated** to include `WGlide` and rebuilt the per‑stage bins; new probe log: `docs/debug_snapshots/oe_breaking_probe_2025-12-22f.txt` (shows `*bergą → *eo`, `*bardăz → *ea`, `*erθo → *eo`, `*fextăną → *eo` at `BreakingLengthening`).
+- **Regression scan (OE apply‑down):** `docs/debug_snapshots/oe_apply_down_stats_2025-12-22p.txt` shows 22 exact matches / 370; mismatch buckets still dominated by i‑umlaut/fronting and missing breaking/diphthongs. Bucket report: `docs/debug_snapshots/oe_mismatch_patterns_2025-12-22d.txt`.
