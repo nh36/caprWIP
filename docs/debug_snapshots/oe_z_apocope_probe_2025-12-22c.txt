@@ -1,0 +1,35 @@
+=== Z apocope probe (before/after) ===
+INPUT bardăz
+  before: *b*a*r*d*ă*z
+  after ZApocope: ['*b*a*r*d*ă']
+  after ZRhotacism: ['*b*a*r*d*ă']
+  after OldEnglishConsonantRules: ['*b*a*r*d*ă']
+
+INPUT bebruz
+  before: *b*e*b*r*u*z
+  after ZApocope: ['*b*e*b*r*u']
+  after ZRhotacism: ['*b*e*b*r*u']
+  after OldEnglishConsonantRules: ['*b*e*b*r*u']
+
+INPUT burdiz
+  before: *b*u*r*d*i*z
+  after ZApocope: ['*b*u*r*d*i']
+  after ZRhotacism: ['*b*u*r*d*i']
+  after OldEnglishConsonantRules: ['*b*u*r*d*i']
+
+INPUT brandăz
+  before: *b*r*a*n*d*ă*z
+  after ZApocope: ['*b*r*a*n*d*ă']
+  after ZRhotacism: ['*b*r*a*n*d*ă']
+  after OldEnglishConsonantRules: ['*b*r*a*n*d*ă']
+
+INPUT bazją
+  before: *b*a*z*j*ą
+  after ZApocope: ['*b*a*z*j*ą']
+  after ZRhotacism: ['*b*ar*j*ą']
+  after OldEnglishConsonantRules: ['*b*ar*j*ą']
+
+INPUT dagaz: no output from EnglishAfterPalatalisation
+INPUT fiskaz: no output from EnglishAfterPalatalisation
+INPUT stainaz: no output from EnglishAfterPalatalisation
+INPUT swanaz: no output from EnglishAfterPalatalisation
