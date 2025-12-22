@@ -9,7 +9,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1429	b a k ə n	*bakăną	b a k ə n ( - - )	bakən	backen	391	German	BOR	C V c v c		bake	*bakăną	2
 314	b ɑ l	*balluz	b ɑ l ( - - )	bɑl	bal	87	Dutch				ball	*balluz	3
 313	b ɔː l	*balluz	b ɔː l ( - - )	bɔːl	ball	87	English				ball	*balluz	3
-1935	* b e a l l	*balluz	b ɔː l ( - - )	bɔːl	*beall	87	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ball	*balluz	3
+1935	* b e a l l	*balluz	b ɔː l ( - - )	bɔːl	-	87	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *beall.			ball	*balluz	3
 312	b a l	*balluz	b a l ( - - )	bal	Ball	87	German		C V C		ball	*balluz	3
 521	b ɑ n	*banną	b ɑ n ( - - )	bɑn	ban	142	Dutch				ban	*banną	4
 520	b æ n	*banną	b æ n ( - - )	bæn	ban	142	English				ban	*banną	4
@@ -73,7 +73,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 582	b ɪ n d ə n	*bendăną	b ɪ n d ə n ( - - )	bɪndən	binden	160	German				bind	*bendăną	17
 390	x ə b oː r t ə	*burdiz	( x ə ) b oː r t ( ə - )	xəboːrtə	geboorte	107	Dutch				birth	*burdiz	18
 389	b ɜː θ	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	birth	107	English				birth	*burdiz	18
-1951	s ự	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	sự	107	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			birth	*burdiz	18
+1951	s ự	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	ġebyrd	107	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			birth	*burdiz	18
 388	ɡ ə b uː r t	*burdiz	( ɡ ə ) b uː r t ( - - )	ɡəbuːrt	Geburt	107	German				birth	*burdiz	18
 856	b l uː t	*blōdą	b l uː t ( - - )	bluːt	bloed	235	Dutch				blood	*blōdą	19
 855	b l ʌ d	*blōdą	b l ʌ d ( - - )	blʌd	blood	235	English				blood	*blōdą	19
@@ -243,7 +243,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 762	t ai k	*daigăz	t ai k ( - - )	taik	Teig	209	German				dough	*daigăz	56
 57	d oː v ə	*dūbōn	d oː v ə ( - )	doːvə	dove	16	Dutch				dove	*dūbōn	57
 56	d ʌ v	*dūbōn	d ʌ v - ( - )	dʌv	dove	16	English				dove	*dūbōn	57
-1994	* d ū f e	*dūbōn	d ʌ v - ( - )	dʌv	*dūfe	16	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			dove	*dūbōn	57
+1994	* d ū f e	*dūbōn	d ʌ v - ( - )	dʌv	-	16	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *dūfe. | Attested OE culfre is not cognate with ModE dove; reconstructed *dūfe unattested.			dove	*dūbōn	57
 55	t au b ə	*dūbōn	t au b ə ( - )	taubə	Taube	16	German				dove	*dūbōn	57
 398	d r oː m	*draumăz	d r oː m ( - - )	droːm	droom	109	Dutch				dream	*draumăz	58
 397	d r iː m	*draumăz	d r iː m ( - - )	driːm	dream	109	English				dream	*draumăz	58
@@ -816,7 +816,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1539	n a x t	*naxtz	n a x t ( - )	naxt	Nacht	422	German				night	*naxtz	187
 130	n ɑ x t m ɛ r iː	*marōn	( n ɑ x t ) m ɛ r ( iː - )	nɑxtmɛriː	nachtmerrie	36	Dutch				nightmare	*marōn	188
 129	n aɪ t m ɛə	*marōn	( n aɪ - t ) m ɛə r ( - - )	naɪtmɛə	nightmare	36	English				nightmare	*marōn	188
-2141	* n i h t m a r e	*marōn	( n aɪ - t ) m ɛə r ( - - )	naɪtmɛə	*nihtmare	36	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			nightmare	*marōn	188
+2141	* n i h t m a r e	*marōn	( n aɪ - t ) m ɛə r ( - - )	naɪtmɛə	mære	36	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *nihtmare. | OE mære is attested and cognate with -mare; compound not attested in OE.			nightmare	*marōn	188
 128	m aː r	*marōn	( - - - - ) m aː r ( - - )	maːr	Mahr	36	German				nightmare	*marōn	188
 326	n eː ɣ ə	*newun	n eː ɣ ə -	neːɣə	negen	90	Dutch				nine	*newun	189
 325	n aɪ n	*newun	n aɪ - - n	naɪn	nine	90	English				nine	*newun	189
@@ -870,11 +870,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1549	r ɪ n d ə	*rendō	r ɪ n d ə	rɪndə	Rinde	425	German				rind	*rendō	351
 1385	r ʉ k	*rukkiz	r ʉ k ( - - )	rʉk	ruk	379	Dutch				rock	*rukkiz	200
 1384	r ɔ k	*rukkiz	r ɔ k ( - - )	rɔk	rock	379	English				rock	*rukkiz	200
-2155	* r o c c	*rukkiz	r ɔ k ( - - )	rɔk	*rocc	379	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rock	*rukkiz	200
+2155	* r o c c	*rukkiz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | OE rocc attested in compound stānrocc; rocc is cognate with ModE rock.			rock	*rukkiz	200
 1383	r ʊ k	*rukkiz	r ʊ k ( - - )	rʊk	Ruck	379	German				rock	*rukkiz	200
 1738	r eː	*raixōn	r eː ( - - - )	reː	ree	476	Dutch				roe	*raixōn	201
 1737	r əʊ	*raixōn	r əʊ ( - - - )	rəʊ	roe	476	English				roe	*raixōn	201
-2156	* h r o g n	*raixōn	r əʊ ( - - - )	rəʊ	*hrogn	476	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			roe	*raixōn	201
+2156	* h r o g n	*raixōn	r əʊ ( - - - )	rəʊ	-	476	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *hrogn.			roe	*raixōn	201
 1736	r eː	*raixōn	r eː ( - - - )	reː	Reh	476	German				roe	*raixōn	201
 1096	r uː d	*rōdō	r uː d -	ruːd	rood	300	English				rood	*rōdō	352
 2157	r ō d	*rōdō	r uː d -	ruːd	rōd	300	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rood	*rōdō	352
@@ -1115,7 +1115,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1395	ʃ t ɪ l ə n	*stelljăną	ʃ t ɪ l - ə n ( - - )	ʃtɪlən	stillen	382	German				still	*stelljăną	255
 449	s t ɛ l t	*steltjōn	s t ɛ l t - - ( - )	stɛlt	stelt	123	Dutch				stilt	*steltjōn	256
 448	s t ɪ l t	*steltjōn	s t ɪ l t - - ( - )	stɪlt	stilt	123	English				stilt	*steltjōn	256
-2218	* s t i l t e	*steltjōn	s t ɪ l t - - ( - )	stɪlt	*stilte	123	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			stilt	*steltjōn	256
+2218	* s t i l t e	*steltjōn	s t ɪ l t - - ( - )	stɪlt	-	123	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *stilte.			stilt	*steltjōn	256
 447	ʃ t ɛ l ts ə	*steltjōn	ʃ t ɛ l ts - ə ( - )	ʃtɛlt͡sə	Stelze	123	German				stilt	*steltjōn	256
 1902	s t ɔ k	*stukkăz	s t ɔ k ( - - )	stɔk	stok	521	Dutch				stock	*stukkăz	257
 1901	s t ɔ k	*stukkăz	s t ɔ k ( - - )	stɔk	stock	521	English				stock	*stukkăz	257

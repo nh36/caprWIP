@@ -1,7 +1,7 @@
 ENGLISH	OE_FORM	SOURCE	DETAIL	PAGE
 adder	nǣdre	inh	template:inh	adder
 bake	bacan	inh	template:inh	bake
-ball	*beall	inh	template:inh	ball
+ball	-	inh	template:inh (unattested; reconstructed *beall)	ball
 ban	bannan	inh	template:inh	ban
 barrow	beorg	inh	template:inh	barrow
 bast	bæst	inh	template:inh	bast
@@ -16,7 +16,7 @@ berry	berġe	inh	template:inh	berry
 bid	-	der	template:der	bid
 bier	bēr	inh	template:inh	bier
 bind	bindan	inh	template:inh	bind
-birth	sự	text	Old English link	birth
+birth	ġebyrd	text	Old English link	birth
 blood	blōd	inh	template:inh	blood
 board	bord	inh	template:inh	board
 bone	bān	inh	template:inh	bone
@@ -57,7 +57,7 @@ dill	dile	inh	template:inh	dill
 do	don	inh	template:inh	do
 door	duru	inh	template:inh	door
 dough	dāg	inh	template:inh	dough
-dove	*dūfe	inh	template:inh	dove
+dove	-	inh	template:inh (unattested; reconstructed *dūfe) (attested OE culfre not cognate; reconstructed *dūfe unattested)	dove
 dream	drēam	inh	template:inh	dream
 drench	drenċ	inh	template:inh	drench
 drink	drincan	inh	template:inh	drink
@@ -199,7 +199,7 @@ nest	nest	inh	template:inh	nest
 net	net	inh	template:inh	net
 nettle	netle	inh	template:inh	nettle
 night	niht	inh	template:inh	night
-nightmare	*nihtmare	inh	template:inh	nightmare
+nightmare	mære	inh	template:inh (unattested; reconstructed *nihtmare) (OE mære attested (cognate with -mare); compound not attested)	nightmare
 nine	nigon	inh	template:inh	nine
 nose	nosu	inh	template:inh	nose
 one	ān	inh	template:inh	one
@@ -213,8 +213,8 @@ reek	rēc	inh	template:inh	reek
 rest	ræst	inh	template:inh	rest
 ride	rīdan	inh	template:inh	ride
 rind	rind	inh	template:inh	rind
-rock	*rocc	inh	template:inh	rock
-roe	*hrogn	inh	template:inh	roe
+rock	rocc	inh	attested in compound stānrocc; cognate with ModE rock	rock
+roe	-	inh	template:inh (unattested; reconstructed *hrogn)	roe
 rood	rōd	inh	template:inh	rood
 room	rūm	inh	template:inh	room
 rope	rāp	inh	template:inh	rope
@@ -275,7 +275,7 @@ starve	steorfan	inh	template:inh	starve
 steal	viedä	text	Old English link	steal
 stem	stemn	inh	template:inh	stem
 still	stille	inh	template:inh	still
-stilt	*stilte	inh	template:inh	stilt
+stilt	-	inh	template:inh (unattested; reconstructed *stilte)	stilt
 stock	stocc	inh	template:inh	stock
 stone	stān	inh	template:inh	stone
 stool	stōl	inh	template:inh	stool
