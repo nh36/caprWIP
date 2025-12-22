@@ -1077,12 +1077,16 @@ define OldEnglishNasalSpirantLoss [
 ];
 
 define OldEnglishSkPalatalization [
-    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel
+    {*s} {*k} -> {ʃ} || .#. _,
+    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel,
+    {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _
 ];
 
 define OldEnglishVelarPalatalization [
     {*k} -> {ʃ} || _ EnglishStarFrontVowel,
-    {*g} -> {ʒ} || _ EnglishStarFrontVowel
+    {*g} -> {ʒ} || _ EnglishStarFrontVowel,
+    {*k} -> {ʃ} || _ {*j},
+    {*g} -> {ʒ} || _ {*j}
 ];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
