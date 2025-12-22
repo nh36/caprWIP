@@ -1140,6 +1140,8 @@ define EnglishProtoToOE (
     .o. EnglishVelarShortening
     .o. EnglishUrRounding
     .o. OldEnglishIUmlaut
+    .o. OldEnglishSkPalatalization
+    .o. OldEnglishVelarPalatalization
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
@@ -1150,8 +1152,6 @@ define EnglishProtoToOE (
     .o. OldEnglishWeightCleanup
     .o. OldEnglishHLoss
     .o. OldEnglishContraction
-    .o. OldEnglishSkPalatalization
-    .o. OldEnglishVelarPalatalization
 );
 
 define EnglishProtoInput pgrmWord;
