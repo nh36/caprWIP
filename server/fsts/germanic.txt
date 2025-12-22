@@ -1009,6 +1009,11 @@ define EnglishBreakingLengthening EnglishBreakingA
     .o. EnglishBreakingE
     .o. EnglishBreakingI;
 
+# Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
+define EnglishAngloFrisianBrightening [
+    {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
+];
+
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
 define EnglishLiquidLowering [
     {*ō} -> {*ō} || _ EnglishStarLiquid,
@@ -1078,13 +1083,15 @@ define OldEnglishNasalSpirantLoss [
 
 define OldEnglishSkPalatalization [
     {*s} {*k} -> {ʃ} || .#. _,
-    {*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel,
-    {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _
+    {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
+    {*s} {*k} -> {ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
 ];
 
 define OldEnglishVelarPalatalization [
     {*k} -> {ʃ} || _ EnglishStarFrontVowel,
     {*g} -> {ʒ} || _ EnglishStarFrontVowel,
+    {*k} -> {ʃ} || EnglishStarFrontVowel _,
+    {*g} -> {ʒ} || EnglishStarFrontVowel _,
     {*k} -> {ʃ} || _ {*j},
     {*g} -> {ʒ} || _ {*j}
 ];
@@ -1139,13 +1146,14 @@ define OldEnglishContraction [
 define EnglishProtoToOE (
     EnglishWestGermanic
     .o. EnglishOpenSyllableLengthening
+    .o. EnglishAngloFrisianBrightening
     .o. EnglishBreakingLengthening
     .o. EnglishLiquidLowering
     .o. EnglishVelarShortening
     .o. EnglishUrRounding
-    .o. OldEnglishIUmlaut
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
+    .o. OldEnglishIUmlaut
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
