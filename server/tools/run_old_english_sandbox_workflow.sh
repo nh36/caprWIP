@@ -12,8 +12,8 @@ CONTAINER_LOG="$CONTAINER_TMP/$LOG_BASENAME"
 HOST_LOG_DIR="$REPO_ROOT/docs/debug_snapshots"
 HOST_LOG="$HOST_LOG_DIR/$LOG_BASENAME"
 
-PROBE_FILE_HOST="$REPO_ROOT/server/tmp/old_english_tracer_probes.txt"
-PROBE_FILE_CONTAINER="tmp/old_english_tracer_probes.txt"
+PROBE_FILE_HOST="$REPO_ROOT/tmp/old_english_tracer_probes.txt"
+PROBE_FILE_CONTAINER="/usr/app/tmp/old_english_tracer_probes.txt"
 
 run_in_container() {
   "${COMPOSE_CMD[@]}" exec backend bash -lc "$1"
@@ -30,7 +30,7 @@ if [[ ! -s "$PROBE_FILE_HOST" ]]; then
 PROBES
 fi
 
-run_in_container "cd /usr/app && python3 server/tools/trace_old_english_sandbox.py --lexeme-file $PROBE_FILE_CONTAINER --brace-diphthongs --save-log $CONTAINER_LOG"
+run_in_container "cd /usr/app && python3 tools/trace_old_english_sandbox.py --bin-dir /usr/app --lexeme-file $PROBE_FILE_CONTAINER --brace-diphthongs --save-log $CONTAINER_LOG"
 
 "${COMPOSE_CMD[@]}" exec backend bash -lc "cd /usr/app && cat $CONTAINER_LOG" > "$HOST_LOG"
 echo "Tracer log copied to $HOST_LOG"

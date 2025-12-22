@@ -337,6 +337,122 @@ define pgrmWord [
     pgrmStrongNasal pgrmWeakTailZero
 ];
 
+##############################################
+## Proto-Germanic starred inventories        ##
+##############################################
+
+# West Germanic ew development (shared inventory; currently unused).
+define PGmcExtraVowel [
+    {*æ} | {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
+];
+
+define PGmcStarVowel [
+    {*a} |
+    {*e} |
+    {*i} |
+    {*o} |
+    {*u} |
+    {*y} |
+    {*æ} |
+    {*ă} |
+    {*ø} |
+    {*ā} |
+    {*ą} |
+    {*ē} |
+    {*ę} |
+    {*ī} |
+    {*ō} |
+    {*œ} |
+    {*ū} |
+    {*ɑ} |
+    {*ɔ} |
+    {*ə} |
+    {*ɛ} |
+    {*ɜ} |
+    {*ʉ} |
+    {*ʊ}
+];
+
+define PGmcStarDiphthong [
+    {*ai} |
+    {*au} |
+    {*ei} |
+    {*eu} |
+    {*iu}
+];
+
+define PGmcStarVocalic [
+    PGmcStarVowel |
+    PGmcStarDiphthong
+];
+
+define PGmcStarConsonant [
+    {*b} |
+    {*d} |
+    {*f} |
+    {*g} |
+    {*h} |
+    {*j} |
+    {*k} |
+    {*l} |
+    {*m} |
+    {*n} |
+    {*p} |
+    {*r} |
+    {*s} |
+    {*t} |
+    {*w} |
+    {*x} |
+    {*z} |
+    {*ð} |
+    {*þ} |
+    {*ŋ} |
+    {*ɣ} |
+    {*θ}
+];
+
+define PGmcStarFrontVowel [
+    {*e} |
+    {*i} |
+    {*y} |
+    {*æ} |
+    {*ø} |
+    {*ē} |
+    {*ī} |
+    {*œ} |
+    {*ɛ} |
+    {*ʉ}
+];
+
+define PGmcStarBackVowel [
+    {*a} |
+    {*o} |
+    {*u} |
+    {*ā} |
+    {*ō} |
+    {*ū} |
+    {*ɑ} |
+    {*ɔ} |
+    {*ʊ}
+];
+
+define PGmcStarFrontTrigger [
+    PGmcStarFrontVowel |
+    {*ai} |
+    {*ei} |
+    {*eu} |
+    {*iu}
+];
+
+# Backward-compatible aliases for existing German-star naming.
+define GermanStarVowel PGmcStarVowel;
+define GermanStarDiphthong PGmcStarDiphthong;
+define GermanStarVocalic PGmcStarVocalic;
+define GermanStarConsonant PGmcStarConsonant;
+define GermanStarFrontVowel PGmcStarFrontVowel;
+define GermanStarBackVowel PGmcStarBackVowel;
+define GermanStarFrontTrigger PGmcStarFrontTrigger;
+
 define RemoveStars {*} -> 0;
 define GermanLexOnset pgrmOnsetCore.r;
 define GermanLexCoda pgrmCoda.r;
@@ -534,17 +650,17 @@ define EnglishPlainLiquid [{l} | {r}];
 define EnglishPlainNasal [{m} | {n}];
 
 # Brace-aware helper inventories for the sandbox.
-define EnglishStarVowel GermanStarVowel;
+define EnglishStarVowel PGmcStarVowel;
 
-define EnglishStarFrontVowel GermanStarFrontVowel;
+define EnglishStarFrontVowel PGmcStarFrontVowel;
 
-define EnglishStarBackVowel GermanStarBackVowel;
+define EnglishStarBackVowel PGmcStarBackVowel;
 
-define EnglishStarDiphthong GermanStarDiphthong;
+define EnglishStarDiphthong PGmcStarDiphthong;
 
-define EnglishStarConsonant GermanStarConsonant;
+define EnglishStarConsonant PGmcStarConsonant;
 
-define EnglishStarVocalic GermanStarVocalic;
+define EnglishStarVocalic PGmcStarVocalic;
 
 define EnglishStarNasal [{*m} | {*n}];
 
@@ -1232,8 +1348,8 @@ define GermanConsonantShift [
     {*t} -> {*ts} || .#. _ ,
     {*s} -> {*ʃ} || .#. _ ,
     {*w} -> {*v},
-    {*z} -> {*r} || GermanStarVowel _ GermanStarVowel,
-    {*w} -> 0 || GermanStarVowel _ GermanStarVowel,
+    {*z} -> {*r} || PGmcStarVowel _ PGmcStarVowel,
+    {*w} -> 0 || PGmcStarVowel _ PGmcStarVowel,
     {*d} {*j} -> {*n} {*d}
 ];
 
@@ -1261,7 +1377,7 @@ define GermanStopShiftSuffix [
     {*ō} ({*j} | 0) |
     {*ē} ({*n} | 0)
 ];
-define GermanStopShiftCodaRight [(GermanStarConsonant ?*) | .#.];
+define GermanStopShiftCodaRight [(PGmcStarConsonant ?*) | .#.];
 
 define GermanStopShift [
     {*k} {*k} -> K,
@@ -1272,110 +1388,7 @@ define GermanStopShift [
 ];
 
 define GermanXPalatalization [
-    {*x} -> {*ç} || GermanStarFrontTrigger _ ({*j} | GermanStarFrontTrigger | .#.)
-];
-
-### West Germanic ew development
-define GermanExtraVowel [
-    {*æ} | {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
-];
-
-define GermanStarVowel [
-    {*a} |
-    {*e} |
-    {*i} |
-    {*o} |
-    {*u} |
-    {*y} |
-    {*æ} |
-    {*ă} |
-    {*ø} |
-    {*ā} |
-    {*ą} |
-    {*ē} |
-    {*ę} |
-    {*ī} |
-    {*ō} |
-    {*œ} |
-    {*ū} |
-    {*ɑ} |
-    {*ɔ} |
-    {*ə} |
-    {*ɛ} |
-    {*ɜ} |
-    {*ʉ} |
-    {*ʊ}
-];
-
-define GermanStarDiphthong [
-    {*ai} |
-    {*au} |
-    {*ei} |
-    {*eu} |
-    {*iu}
-];
-
-define GermanStarVocalic [
-    GermanStarVowel |
-    GermanStarDiphthong
-];
-
-define GermanStarConsonant [
-    {*b} |
-    {*d} |
-    {*f} |
-    {*g} |
-    {*h} |
-    {*j} |
-    {*k} |
-    {*l} |
-    {*m} |
-    {*n} |
-    {*p} |
-    {*r} |
-    {*s} |
-    {*t} |
-    {*w} |
-    {*x} |
-    {*z} |
-    {*ð} |
-    {*þ} |
-    {*ŋ} |
-    {*ɣ} |
-    {*θ}
-];
-
-define GermanStarFrontVowel [
-    {*e} |
-    {*i} |
-    {*y} |
-    {*æ} |
-    {*ø} |
-    {*ē} |
-    {*ī} |
-    {*œ} |
-    {*ɛ} |
-    {*ʉ}
-];
-
-define GermanStarBackVowel [
-    {*a} |
-    {*o} |
-    {*u} |
-    {*ā} |
-    {*ō} |
-    {*ū} |
-    {*ɑ} |
-    {*ɔ} |
-    {*ʊ}
-];
-
-define GermanStarFrontTrigger [
-    GermanStarFrontVowel |
-    {*ai} |
-    {*ei} |
-    {*eu} |
-    {*iu}
+    {*x} -> {*ç} || PGmcStarFrontTrigger _ ({*j} | PGmcStarFrontTrigger | .#.)
 ];
 
 define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];
@@ -1488,7 +1501,7 @@ define GermanHtShift [
 define GermanVowelAdjustments [
     {*u} -> {*ɔ} || _ ({*k} | K),
     {*e} -> {*ɛ},
-    {*e} -> {*ɪ} || _ GermanStarConsonant,
+    {*e} -> {*ɪ} || _ PGmcStarConsonant,
     {*θ} -> {*d}
 ];
 
