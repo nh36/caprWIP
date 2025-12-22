@@ -52,7 +52,7 @@ def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
                 continue
             proto = row.get("PROTO", "").strip()
             counterpart = row.get("COUNTERPART", "").strip()
-            if not proto or not counterpart:
+            if not proto or not counterpart or counterpart == "-":
                 continue
             norm = normalize_proto(proto)
             if not norm:

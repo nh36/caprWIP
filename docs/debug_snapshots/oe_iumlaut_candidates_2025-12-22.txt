@@ -1,0 +1,59 @@
+Total OE entries (non-blank expected): 370
+Heuristic i/j-trigger candidates: 79
+
+Most common proto->expected first-vowel mappings among candidates:
+- a->e: 11
+- e->i: 10
+- a->ǣ: 8
+- a->a: 4
+- a->ī: 4
+- a->ē: 4
+- a->i: 3
+- a->æ: 3
+- u->e: 2
+- u->o: 2
+- a->o: 2
+- i->e: 2
+
+Examples (up to 6 each):
+
+a->e:
+  - believe (*laubjăną): expected belīefan
+  - berry (*bazją): expected berġe
+  - hedge (*xagjăz): expected heċġ
+  - net (*natją): expected net
+  - nettle (*natilōn): expected netle
+  - send (*sandjăną): expected sendan
+
+a->i:
+  - belly (*balgiz): expected bielġ
+  - might (*maxtiz): expected miht
+  - will (*waljăną): expected willan
+
+u->e:
+  - birth (*burdiz): expected ġebyrd
+  - youth (*jugunθiz): expected ġeoguþ
+
+u->o:
+  - bore (*burōjăną): expected borian
+  - rock (*rukkiz): expected rocc
+
+a->o:
+  - bow (*baugjăną): expected boga
+  - soul (*saiwălō): expected sāwol
+
+ū->ȳ:
+  - bride (*brūdiz): expected brȳd
+
+a->æ:
+  - craft (*kraftiz): expected cræft
+  - harvest (*xarbistuz): expected hærfest
+  - staff (*stabiz): expected stæf
+
+a->ǣ:
+  - deal (*dailiz): expected dǣl
+  - flesh (*flaiskăz): expected flǣsċ
+  - heal (*xailjăną): expected hǣlan
+  - heath (*xaiθiz): expected hǣþ
+  - last (*laistjăną): expected lǣstan
+  - mean (*mainjăną): expected mǣnan
