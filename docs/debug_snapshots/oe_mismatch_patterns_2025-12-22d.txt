@@ -1,0 +1,78 @@
+Total mismatches (non-empty outputs): 348
+
+Top categories (heuristic):
+- uncategorized: 158
+- i_umlaut_or_fronting_missing: 84
+- breaking_or_diphthong_missing: 43
+- final_-e_missing: 26
+- palatalization_missing: 23
+- long_vowel_missing: 21
+- final_-n_missing_general: 19
+- infinitive_-an_missing_n: 17
+
+Examples by category:
+
+final_-e_missing:
+  - *utrăz: expected nǣdre | output utra
+  - *bōkō: expected bēċe | output bucō
+  - *bazją: expected berġe | output barġa
+  - *deljăz: expected dile | output dielġa
+  - *erθo: expected eorþe | output eorþo
+  - *flaskō: expected flasce | output flascō
+
+i_umlaut_or_fronting_missing:
+  - *utrăz: expected nǣdre | output utra
+  - *bastą: expected bæst | output basta
+  - *baθą: expected bæþ | output bāþa
+  - *gennăną: expected beginnan | output ġennan
+  - *bendăną: expected bindan | output bendan
+  - *burdiz: expected ġebyrd | output bērd
+
+uncategorized:
+  - *bakăną: expected bacan | output bācan
+  - *bergą: expected beorg | output beorga
+  - *bardăz: expected beard | output bearda
+  - *bebruz: expected befer | output bobr
+  - *barwōn: expected bēr | output bearwōn
+  - *blōdą: expected blōd | output blōda
+
+infinitive_-an_missing_n:
+  - *banną: expected bannan | output bann
+  - *fellą: expected fellan | output feolla
+  - *fulgēną: expected folgian | output fulġēn
+  - *gangăz: expected gangan | output ganga
+  - *xabēną: expected habban | output hābēn
+  - *xendjō: expected hindan | output hundġō
+
+palatalization_missing:
+  - *bōkō: expected bēċe | output bucō
+  - *balgiz: expected bielġ | output bielg
+  - *burdiz: expected ġebyrd | output bērd
+  - *brekăną: expected brēċ | output brēcan
+  - *dagăz: expected dæġ | output dāga
+  - *dranką: expected drenċ | output dranca
+
+breaking_or_diphthong_missing:
+  - *laubjăną: expected belīefan | output lēbġan
+  - *braudą: expected brēad | output brōda
+  - *brustz: expected brēost | output brust
+  - *deuzą: expected dēor | output deura
+  - *dawwō: expected dēaw | output dawwō
+  - *draumăz: expected drēam | output drōma
+
+long_vowel_missing:
+  - *bōkz: expected bōc | output buc
+  - *bōguz: expected bōg | output bug
+  - *brustz: expected brēost | output brust
+  - *kewwăną: expected ċēowan | output ċeowwan
+  - *deuzą: expected dēor | output deura
+  - *fleuxăną: expected flēon | output fleuan
+
+final_-n_missing_general:
+  - *fellą: expected fellan | output feolla
+  - *gangăz: expected gangan | output ganga
+  - *xendjō: expected hindan | output hundġō
+  - *lendō: expected linden | output londō
+  - *lungwą: expected lungen | output lungwa
+  - *markō: expected mearcian | output mearcō
+
