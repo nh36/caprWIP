@@ -954,3 +954,12 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - `docs/debug_snapshots/oe_tracer_log_2025-12-21j.txt` (OE sandbox tracer).
 - `docs/debug_snapshots/oe_tail_bucket_2025-12-21j.txt` + `oe_tail_bucket_classified_2025-12-21j.txt` (tail bucket after nasal‑vowel loss).
 - Note: the tail bucket still contains `swan` (`*swanăz → sʋana`), which is not from `*‑aną`; flag for later review of `*‑ăz` handling.
+
+### OE diagnostics follow‑up: orthography + rhotacism (2025-12-22)
+
+- Updated `server/tools/evaluate_proto_to_oe.py` to default to `old_english.bin` (post‑orthography + surface filter). New totals: Matches 24 / No output 18 / Mismatches 334.
+- Comparing `english_after_proto_to_oe.bin` vs `old_english.bin` shows 7 items lose outputs only after the OE surface filter; all 7 still contain `{*z}` (or heavy clusters) and are rejected by `OldEnglishSurfaceConsonant` (no `z`).
+- Tracing those 7 (`bazją`, `deuzą`, `xazwăz`, `xuzdą`, `liznōjăną`, `mizdō`, `funxwstiz`) shows `EnglishZRhotacism` never fires; `ConsonantRules` leaves `{*z}` intact in every case.
+- Likely structural issue: `EnglishStarVocalic` (and other `EnglishStar*`) are defined before `GermanStar*` and appear to compile as literal symbols (foma logs show 1‑arc sets), so the rhotacism context never matches.
+- Even if the set is fixed, the current rule `V _ V` is historically too narrow: PGmc *z should rhotacize in post‑vocalic contexts like V‑z‑j/w/n/d‑V (berry, hair, learn, meed, hoard) before later glide/umlaut changes. Chronology: rhotacism must be early (before w‑glide changes and OE vowel rules).
+- `funxwstiz` (fist) is not a rhotacism case; it survives with a heavy `xʋst` cluster and fails the OE surface coda limit (needs separate cluster simplification / h‑loss logic).
