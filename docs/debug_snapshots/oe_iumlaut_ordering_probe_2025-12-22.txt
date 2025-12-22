@@ -1,0 +1,61 @@
+=== Step 4: IUmlaut ordering probe ===
+
+laubjăną:
+  pre_oe: *l*auv*ă*n*ą
+  after_proto_to_oe: *l*ōv*a*n
+  after_proto_to_oe_weak_tail: *l*ōv*a*n
+  after_proto_to_oe_weight_cleanup: *l*ōv*a*n
+
+bazją:
+  pre_oe: *b*ar*j*ą
+  after_proto_to_oe: *b*ar*j*a
+  after_proto_to_oe_weak_tail: *b*ar*j*a
+  after_proto_to_oe_weight_cleanup: *b*ar*j*a
+
+sandjăną:
+  pre_oe: *s*a*nnd*ă*n*ą
+  after_proto_to_oe: *s*a*nnd*a*n
+  after_proto_to_oe_weak_tail: *s*a*nnd*a*n
+  after_proto_to_oe_weight_cleanup: *s*a*nnd*a*n
+
+dailiz:
+  pre_oe: *d*ai*l*i
+  after_proto_to_oe: *d*æ*l
+  after_proto_to_oe_weak_tail: *d*æ*l*i
+  after_proto_to_oe_weight_cleanup: *d*æ*l
+
+xailjăną:
+  pre_oe: *x*ai*l*j*ă*n*ą
+  after_proto_to_oe: *x*æ*l*j*a*n
+  after_proto_to_oe_weak_tail: *x*æ*l*j*a*n
+  after_proto_to_oe_weight_cleanup: *x*æ*l*j*a*n
+
+brūdiz:
+  pre_oe: *b*r*ū*d*i
+  after_proto_to_oe: *b*r*ȳ*d
+  after_proto_to_oe_weak_tail: *b*r*ȳ*d*i
+  after_proto_to_oe_weight_cleanup: *b*r*ȳ*d
+
+burdiz:
+  pre_oe: *b*u*r*d*i
+  after_proto_to_oe: *b*ē*r*d
+  after_proto_to_oe_weak_tail: *b*ē*r*d*i
+  after_proto_to_oe_weight_cleanup: *b*ē*r*d
+
+jugunθiz:
+  pre_oe: *j*u*g*u*n*θ*i
+  after_proto_to_oe: *j*ūʒ*y*θ
+  after_proto_to_oe_weak_tail: *j*ū*g*y*θ*i
+  after_proto_to_oe_weight_cleanup: *j*ū*g*y*θ
+
+fōtiz:
+  pre_oe: *f*ō*t*i
+  after_proto_to_oe: *f*ē*t
+  after_proto_to_oe_weak_tail: *f*ē*t*i
+  after_proto_to_oe_weight_cleanup: *f*ē*t
+
+mūsiz:
+  pre_oe: *m*ū*s*i
+  after_proto_to_oe: *m*ȳ*s
+  after_proto_to_oe_weak_tail: *m*ȳ*s*i
+  after_proto_to_oe_weight_cleanup: *m*ȳ*s
