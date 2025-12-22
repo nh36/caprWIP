@@ -963,3 +963,19 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Likely structural issue: `EnglishStarVocalic` (and other `EnglishStar*`) are defined before `GermanStar*` and appear to compile as literal symbols (foma logs show 1‑arc sets), so the rhotacism context never matches.
 - Even if the set is fixed, the current rule `V _ V` is historically too narrow: PGmc *z should rhotacize in post‑vocalic contexts like V‑z‑j/w/n/d‑V (berry, hair, learn, meed, hoard) before later glide/umlaut changes. Chronology: rhotacism must be early (before w‑glide changes and OE vowel rules).
 - `funxwstiz` (fist) is not a rhotacism case; it survives with a heavy `xʋst` cluster and fails the OE surface coda limit (needs separate cluster simplification / h‑loss logic).
+
+### OE sandbox mismatch patterns (2025-12-22)
+- **Scope note:** work is focused on the **OE sandbox** for now; do not apply ME/RP fixes to these issues.
+- **Mismatch pattern sweep:** `docs/debug_snapshots/oe_mismatch_patterns_2025-12-22.txt`
+  - Top heuristic buckets:
+    - Missing i‑umlaut/fronting (most frequent).
+    - Missing palatalization (ċ/ġ outcomes absent).
+    - Missing breaking/diphthongs (eo/ie).
+    - Missing final ‑e.
+    - Missing final ‑n (including infinitive ‑an).
+- **OE sandbox TODOs (from mismatch patterns):**
+  1. **I‑umlaut/fronting:** broaden or re‑order triggers so OE front vowels appear where expected.
+  2. **Palatalization:** add/repair k/g → ċ/ġ before front vowels (and ordering vs. umlaut).
+  3. **Breaking:** strengthen OE breaking contexts (before r/l/h clusters, etc.).
+  4. **Final ‑e retention:** prevent weak‑tail cleanup from removing OE final ‑e where attested.
+  5. **Final ‑n retention:** ensure infinitive/weak verb ‑an survives; confirm no over‑drop after nasal‑vowel loss.
