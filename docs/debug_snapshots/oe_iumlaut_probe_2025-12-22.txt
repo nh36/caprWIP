@@ -1,0 +1,17 @@
+=== OE i-umlaut probe (pre -> post) ===
+mūsiz: pre=*m*ū*s*i -> post=*m*ū*s*i
+fōtiz: pre=*f*ō*t*i -> post=*f*ē*t*i
+batizōn: pre=+? -> post=+?
+dailjan: pre=+? -> post=+?
+fullijan: pre=+? -> post=+?
+gōsīz: pre=+? -> post=+?
+*mūsiz: pre=+? -> post=+?
+*fōtiz: pre=+? -> post=+?
+*batizōn: pre=+? -> post=+?
+*dailjan: pre=+? -> post=+?
+*fullijan: pre=+? -> post=+?
+*gōsīz: pre=+? -> post=+?
+*bastą: pre=+? -> post=+?
+*baθą: pre=+? -> post=+?
+*bebruz: pre=+? -> post=+?
+*bazją: pre=+? -> post=+?

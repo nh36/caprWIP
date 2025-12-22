@@ -353,6 +353,7 @@ define PGmcStarVowel [
     {*o} |
     {*u} |
     {*y} |
+    {*ȳ} |
     {*æ} |
     {*ă} |
     {*ø} |
@@ -415,6 +416,7 @@ define PGmcStarFrontVowel [
     {*e} |
     {*i} |
     {*y} |
+    {*ȳ} |
     {*æ} |
     {*ø} |
     {*ē} |
@@ -611,6 +613,7 @@ define OldEnglishRemoveStars [
     {*ō} -> ō,
     {*u} -> u,
     {*ū} -> ū,
+    {*ȳ} -> ȳ,
     {*y} -> y,
     {*b} -> b,
     {*c} -> c,
@@ -991,11 +994,14 @@ define OldEnglishWeakTailReduction [
 ];
 
 define OldEnglishIUmlaut [
+    {*æ} -> {*e} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
     {*a} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
     {*ā} -> {*æ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*e} -> {*i} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
     {*o} -> {*e} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
     {*ō} -> {*ē} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
-    {*u} -> {*y} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger
+    {*u} -> {*y} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger,
+    {*ū} -> {*ȳ} || _ EnglishStarConsonantSeq EnglishIUmlautTrigger
 ];
 
 define OldEnglishBackMutation [
@@ -1026,7 +1032,7 @@ define OldEnglishVelarPalatalization [
     {*g} -> {ʒ} || _ EnglishStarFrontVowel
 ];
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
