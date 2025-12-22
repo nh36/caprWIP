@@ -977,14 +977,38 @@ define EnglishOpenSyllableLengthening [
     {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
 ];
 
-# Anglo-Frisian breaking / rounding before liquids, /r/, and /w/ glides.
-define EnglishBreakingLengthening [
-    {*a} -> {*ō} || _ {*l} EnglishStarConsonant,
-    {*a} -> {*ō} || _ {*l} .#.,
-    {*a} -> {*ō} || _ {*r} EnglishStarConsonant,
-    {*a} -> {*ō} || _ {*r} .#.,
-    {*a} -> {*ō} || _ {*w}
+# Old English breaking before h, rC, lC, and select w contexts (split by vowel).
+define EnglishBreakingHContext [{*h} | {*x}];
+define EnglishBreakingRContext [{*r} EnglishStarConsonant];
+define EnglishBreakingLContext [{*l} EnglishStarConsonant];
+define EnglishBreakingLContextE [{*l} ({*h} | {*x} | {*k} | {*g})];
+define EnglishBreakingWContext [{*w}];
+
+define EnglishBreakingA [
+    {*a} -> {*ea} || _ EnglishBreakingRContext,
+    {*a} -> {*ea} || _ EnglishBreakingLContext,
+    {*a} -> {*ea} || _ EnglishBreakingHContext,
+    {*æ} -> {*ea} || _ EnglishBreakingRContext,
+    {*æ} -> {*ea} || _ EnglishBreakingLContext,
+    {*æ} -> {*ea} || _ EnglishBreakingHContext
 ];
+
+define EnglishBreakingE [
+    {*e} -> {*eo} || _ EnglishBreakingRContext,
+    {*e} -> {*eo} || _ EnglishBreakingHContext,
+    {*e} -> {*eo} || _ EnglishBreakingWContext,
+    {*e} -> {*eo} || _ EnglishBreakingLContextE
+];
+
+define EnglishBreakingI [
+    {*i} -> {*ie} || _ EnglishBreakingRContext,
+    {*i} -> {*ie} || _ EnglishBreakingHContext,
+    {*i} -> {*ie} || _ EnglishBreakingWContext
+];
+
+define EnglishBreakingLengthening EnglishBreakingA
+    .o. EnglishBreakingE
+    .o. EnglishBreakingI;
 
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
 define EnglishLiquidLowering [
