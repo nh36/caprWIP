@@ -1044,7 +1044,6 @@ define OldEnglishWeakTailNasalLoss [
 ];
 
 define OldEnglishWeakTailReduction [
-    {*ą} -> {*a},
     {*ă} -> {*a}
 ];
 
