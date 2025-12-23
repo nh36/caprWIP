@@ -1,0 +1,13 @@
+OE i-umlaut deep dive (heuristic)
+- Trigger = presence of i/j after first vowel in PGmc form
+- Miss = expected first vowel shows umlauted outcome for base vowel, output does not
+
+Total suspected umlaut misses: 3
+
+u_umlaut_missed: 2
+  - rye (*rugiz): expected ryġe | output rūġ
+  - youth (*jugunθiz): expected ġeoguþ | output ġūgyþ
+
+ō_umlaut_missed: 1
+  - seek (*sōkjăną): expected sēċan | output suscġan
+

@@ -593,12 +593,16 @@ define OldEnglishOrthography [
     {*θ} -> þ,
     {*ð} -> ð,
     {*ʃ} -> {sc},
+    {*ʧ} -> ċ,
+    {*ʤ} -> ġ,
     {*ʒ} -> ġ,
     {*ʋ} -> w,
     {*x} -> h,
     {θ} -> þ,
     {ð} -> ð,
     {ʃ} -> {sc},
+    {ʧ} -> ċ,
+    {ʤ} -> ġ,
     {ʒ} -> ġ,
     {ʋ} -> w,
     {x} -> h,
@@ -1098,12 +1102,12 @@ define OldEnglishSkPalatalization [
 ];
 
 define OldEnglishVelarPalatalization [
-    {*k} -> {ʃ} || _ EnglishStarFrontVowel,
-    {*g} -> {ʒ} || _ EnglishStarFrontVowel,
-    {*k} -> {ʃ} || EnglishStarFrontVowel _,
-    {*g} -> {ʒ} || EnglishStarFrontVowel _,
-    {*k} -> {ʃ} || _ {*j},
-    {*g} -> {ʒ} || _ {*j}
+    {*k} -> {ʧ} || _ EnglishStarFrontVowel,
+    {*g} -> {ʤ} || _ EnglishStarFrontVowel,
+    {*k} -> {ʧ} || EnglishStarFrontVowel _,
+    {*g} -> {ʤ} || EnglishStarFrontVowel _,
+    {*k} -> {ʧ} || _ {*j},
+    {*g} -> {ʤ} || _ {*j}
 ];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
