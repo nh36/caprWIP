@@ -996,3 +996,10 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Sandbox breaking rules aligned to OE** (`*a/*æ → *ea`, `*e → *eo`, `*i → *ie` in rC/lC/h/w contexts). This replaced the old `{*a → *ō}` placeholder.
 - **Tracer instrumentation updated** to include `WGlide` and rebuilt the per‑stage bins; new probe log: `docs/debug_snapshots/oe_breaking_probe_2025-12-22f.txt` (shows `*bergą → *eo`, `*bardăz → *ea`, `*erθo → *eo`, `*fextăną → *eo` at `BreakingLengthening`).
 - **Regression scan (OE apply‑down):** `docs/debug_snapshots/oe_apply_down_stats_2025-12-22p.txt` shows 22 exact matches / 370; mismatch buckets still dominated by i‑umlaut/fronting and missing breaking/diphthongs. Bucket report: `docs/debug_snapshots/oe_mismatch_patterns_2025-12-22d.txt`.
+
+### OE i‑umlaut deep dive (2025-12-23)
+- **Targeted umlaut misses (tight heuristic):** only 3 suspected true i‑umlaut failures when PGmc has an i/j trigger and OE expected shows an umlauted vowel but output does not. See `docs/debug_snapshots/oe_i_umlaut_deep_dive_2025-12-23.txt`.
+  - `*rugiz` → expected **ryġe**, output **rūġ** (u‑umlaut miss)
+  - `*jugunθiz` → expected **ġeoguþ**, output **ġūgyþ** (u‑umlaut miss)
+  - `*sōkjăną` → expected **sēċan**, output **suscġan** (ō‑umlaut miss)
+- **Palatalization warning:** cases where expected **ċ** surface as **sc** are now visible; that’s a palatalisation failure in the OE stack (orthography is masking it), not a spelling preference. Keep an eye on outputs like `suscġan` vs expected `sēċan`.
