@@ -565,7 +565,8 @@ define EnglishSurface EnglishSurfaceSyllable+;
 
 define OldEnglishSurfaceVowel [
     {a} | {e} | {i} | {o} | {u} | {y} | {æ} | {ā} | {ē} | {ī} | {ō} | {ū} |
-    {ǣ} | {ȳ} | {ea} | {ēa} | {eo} | {ēo} | {ie} | {īe} | {ä} | {ọ} | {ự} | {ɔ} | {ɪ}
+    {ǣ} | {ȳ} | {ea} | {ēa} | {eo} | {ēo} | {ie} | {īe} | {ä} | {ọ} | {ự} |
+    {ɔ} | {ɔ̆} | {ɪ}
 ];
 define OldEnglishSurfaceConsonant [
     {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
@@ -603,7 +604,8 @@ define OldEnglishOrthography [
     {x} -> h,
     {ɡ} -> g,
     {ʊ} -> u,
-    {ɔ} -> o
+    {ɔ} -> o,
+    {ɔ̆} -> a
 ];
 
 define OldEnglishRemoveStars [
@@ -618,7 +620,7 @@ define OldEnglishRemoveStars [
     {*ă} -> a,
     {*ą} -> a,
     {*ɔ} -> o,
-    {*ɔ̆} -> o,
+    {*ɔ̆} -> a,
     {*æ} -> æ,
     {*e} -> e,
     {*ē} -> ē,
