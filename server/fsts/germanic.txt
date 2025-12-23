@@ -595,6 +595,7 @@ define OldEnglishOrthography [
     {*ʃ} -> {sc},
     {*ʧ} -> ċ,
     {*ʤ} -> ġ,
+    {*ç} -> h,
     {*ʒ} -> ġ,
     {*ʋ} -> w,
     {*x} -> h,
@@ -603,6 +604,8 @@ define OldEnglishOrthography [
     {ʃ} -> {sc},
     {ʧ} -> ċ,
     {ʤ} -> ġ,
+    {ç} -> h,
+    {j} -> ġ,
     {ʒ} -> ġ,
     {ʋ} -> w,
     {x} -> h,
@@ -1099,6 +1102,9 @@ define OldEnglishSkPalatalization [
     {*s} {*k} -> {ʃ} || .#. _,
     {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
     {*s} {*k} -> {ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
+    ,
+    {*s} {*k} -> {ʃ} || _ {*j},
+    {*s} {*k} -> {ʃ} || {*j} _
 ];
 
 define OldEnglishVelarPalatalization [
@@ -1108,6 +1114,15 @@ define OldEnglishVelarPalatalization [
     {*g} -> {ʤ} || EnglishStarFrontVowel _,
     {*k} -> {ʧ} || _ {*j},
     {*g} -> {ʤ} || _ {*j}
+];
+
+define OldEnglishVelarFricativePalatalization [
+    {*x} -> {ç} || _ EnglishStarFrontVowel,
+    {*ɣ} -> {j} || _ EnglishStarFrontVowel,
+    {*x} -> {ç} || EnglishStarFrontVowel _,
+    {*ɣ} -> {j} || EnglishStarFrontVowel _,
+    {*x} -> {ç} || _ {*j},
+    {*ɣ} -> {j} || _ {*j}
 ];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
@@ -1167,6 +1182,7 @@ define EnglishProtoToOE (
     .o. EnglishUrRounding
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
+    .o. OldEnglishVelarFricativePalatalization
     .o. OldEnglishIUmlaut
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
