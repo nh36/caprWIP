@@ -343,7 +343,7 @@ define pgrmWord [
 
 # West Germanic ew development (shared inventory; currently unused).
 define PGmcExtraVowel [
-    {*æ} | {*ɑ} | {*ɔ} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
+    {*æ} | {*ɑ} | {*ɔ} | {*ɔ̆} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
 ];
 
 define PGmcStarVowel [
@@ -367,6 +367,7 @@ define PGmcStarVowel [
     {*ū} |
     {*ɑ} |
     {*ɔ} |
+    {*ɔ̆} |
     {*ə} |
     {*ɛ} |
     {*ɜ} |
@@ -616,6 +617,8 @@ define OldEnglishRemoveStars [
     {*ā} -> ā,
     {*ă} -> a,
     {*ą} -> a,
+    {*ɔ} -> o,
+    {*ɔ̆} -> o,
     {*æ} -> æ,
     {*e} -> e,
     {*ē} -> ē,
@@ -701,7 +704,7 @@ define EnglishIUmlautIntervening [
     EnglishStarConsonantNoJ EnglishStarConsonantNoJ
 ];
 
-define EnglishWeakTailVowel pgrmWeakTailVowel.r;
+define EnglishWeakTailVowel [pgrmWeakTailVowel.r | {*ɔ̆}];
 
 define EnglishInitialKnMarkers [
     {*k} {*n} -> {Kn} || .#. _,
@@ -767,7 +770,7 @@ define EnglishGhDeletion [
     {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
-define EnglishRhoticWeakTail [{*ă} | {*ą}];
+define EnglishRhoticWeakTail [{*ă} | {*ą} | {*ɔ̆}];
 
 define EnglishRhoticDental [{*d} | {*ð} | {*θ}];
 
@@ -779,10 +782,7 @@ define EnglishRhoticBreaking (
     [{*u} {æ} {*r} -> {*aɪ} {*ə} {*r}]
     .o.
     # {*bergą}: treat the velar + weak-tail as a single /rəʊ/ nucleus.
-    [
-        {*r} {*g} {*ą} -> {*r} {*əʊ},
-        {*r} {*g} {*ă} -> {*r} {*əʊ}
-    ]
+    [{*r} {*g} EnglishRhoticWeakTail -> {*r} {*əʊ}]
     .o.
     # {*bardăz}: OE ea reflects the weak-tail dental context.
     [{*ɔː} {*r} {*d} EnglishRhoticWeakTail -> {*ɪə} {*r} {*d} EnglishRhoticWeakTail]
@@ -906,6 +906,8 @@ define EnglishWeakTailReductions (
     {*ă} -> {*ə}
 ) .o. (
     {*ą} -> {*ə}
+) .o. (
+    {*ɔ̆} -> {*ə}
 );
 
 define EnglishWeakTailSchwa [{*ə}];
@@ -1044,7 +1046,8 @@ define OldEnglishWeakTailNasalLoss [
 ];
 
 define OldEnglishWeakTailReduction [
-    {*ă} -> {*a}
+    {*ă} -> {*a},
+    {*ą} -> {*ɔ̆}
 ];
 
 define OldEnglishIUmlautCore [
