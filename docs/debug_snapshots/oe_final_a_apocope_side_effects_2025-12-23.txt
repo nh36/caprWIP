@@ -1,0 +1,14 @@
+Potential side-effects after early final-ă apocope (output shortened / final vowel dropped):
+
+- adder (*utrăz): expected nǣdre | old: utra | new: utr
+- bottom (*budmăz): expected botm | old: budma | new: budm
+- brand (*brandăz): expected brand | old: brænda | new: brænd
+- buck (*bukkăz): expected buc | old: bucca | new: bucc
+- calf (*kalbăz): expected ọmọ | old: scealba | new: scealb
+- comb (*kambăz): expected camb | old: scæmba | new: scæmb
+- crop (*kruppăz): expected crop | old: cruppa | new: crupp
+- dill (*deljăz): expected dile | old: dielġa | new: dielġ
+- dream (*draumăz): expected drēam | old: drōma | new: drōm
+- eel (*ēlăz): expected ǣl | old: ēla | new: ēl
+- finger (*fengrăz): expected finger | old: fengra | new: fengr
+- fish (*fiskăz): expected fisċ | old: fisca | new: fisc
