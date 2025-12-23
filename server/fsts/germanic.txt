@@ -737,9 +737,14 @@ define EnglishZRhotacism [
 
 define EnglishZApocope [{*z} -> 0 || _ .#.];
 
+define OldEnglishFinalWeakSchwaApocope [
+    {*ă} -> 0 || _ .#.
+];
+
 define EnglishDJPalatal [{*d} {*j} -> {nd}];
 
 define OldEnglishConsonantRules EnglishZApocope
+    .o. OldEnglishFinalWeakSchwaApocope
     .o. EnglishZRhotacism;
 
 define EnglishConsonantRules OldEnglishConsonantRules

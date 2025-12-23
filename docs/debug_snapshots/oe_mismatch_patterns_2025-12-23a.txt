@@ -1,0 +1,78 @@
+Total mismatches (non-empty outputs): 338
+
+Top categories (heuristic):
+- uncategorized: 217
+- breaking_or_diphthong_missing: 42
+- long_vowel_missing: 31
+- final_-e_missing: 26
+- i_umlaut_or_fronting_missing: 26
+- final_-n_missing_general: 19
+- palatalization_missing: 18
+- infinitive_-an_missing_n: 17
+
+Examples by category:
+
+uncategorized:
+  - *bakăną: expected bacan | output bæscan
+  - *bergą: expected beorg | output beorga
+  - *bastą: expected bæst | output bæsta
+  - *baθą: expected bæþ | output bæþa
+  - *bardăz: expected beard | output bearda
+  - *bebruz: expected befer | output bebr
+
+breaking_or_diphthong_missing:
+  - *laubjăną: expected belīefan | output lēbġan
+  - *braudą: expected brēad | output brōda
+  - *brustz: expected brēost | output brust
+  - *deuzą: expected dēor | output deura
+  - *dawwō: expected dēaw | output dæwwō
+  - *draumăz: expected drēam | output drōma
+
+long_vowel_missing:
+  - *utrăz: expected nǣdre | output utra
+  - *bōkz: expected bōc | output buc
+  - *bōguz: expected bōg | output bug
+  - *brustz: expected brēost | output brust
+  - *kewwăną: expected ċēowan | output sceowwan
+  - *dailiz: expected dǣl | output dæl
+
+final_-e_missing:
+  - *utrăz: expected nǣdre | output utra
+  - *bōkō: expected bēċe | output bucō
+  - *bazją: expected berġe | output bærġa
+  - *deljăz: expected dile | output dielġa
+  - *erθo: expected eorþe | output eorþo
+  - *flaskō: expected flasce | output flæscō
+
+i_umlaut_or_fronting_missing:
+  - *utrăz: expected nǣdre | output utra
+  - *bōkō: expected bēċe | output bucō
+  - *braudą: expected brēad | output brōda
+  - *brustz: expected brēost | output brust
+  - *draumăz: expected drēam | output drōma
+  - *flauxz: expected flēah | output flōh
+
+final_-n_missing_general:
+  - *fellą: expected fellan | output feolla
+  - *gangăz: expected gangan | output ġænga
+  - *xendjō: expected hindan | output hindġō
+  - *lendō: expected linden | output lendō
+  - *lungwą: expected lungen | output lungwa
+  - *markō: expected mearcian | output mearcō
+
+palatalization_missing:
+  - *bōkō: expected bēċe | output bucō
+  - *burdiz: expected ġebyrd | output bērd
+  - *brekăną: expected brēċ | output brēscan
+  - *kewwăną: expected ċēowan | output sceowwan
+  - *dranką: expected drenċ | output drænca
+  - *fiskăz: expected fisċ | output fisca
+
+infinitive_-an_missing_n:
+  - *banną: expected bannan | output bænn
+  - *fellą: expected fellan | output feolla
+  - *fulgēną: expected folgian | output fulġēn
+  - *gangăz: expected gangan | output ġænga
+  - *xabēną: expected habban | output hæbēn
+  - *xendjō: expected hindan | output hindġō
+
