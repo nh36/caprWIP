@@ -568,7 +568,7 @@ define OldEnglishSurfaceVowel [
 ];
 define OldEnglishSurfaceConsonant [
     {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
-    {t} | {v} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ}
+    {t} | {v} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ} | {sc}
 ];
 define OldEnglishSurfaceStress [{ˈ}];
 define OldEnglishSurfaceOnset [
@@ -590,13 +590,13 @@ define OldEnglishSurface OldEnglishSurfaceSyllable+;
 define OldEnglishOrthography [
     {*θ} -> þ,
     {*ð} -> ð,
-    {*ʃ} -> sc,
+    {*ʃ} -> {sc},
     {*ʒ} -> ġ,
     {*ʋ} -> w,
     {*x} -> h,
     {θ} -> þ,
     {ð} -> ð,
-    {ʃ} -> sc,
+    {ʃ} -> {sc},
     {ʒ} -> ġ,
     {ʋ} -> w,
     {x} -> h,
@@ -682,6 +682,8 @@ define EnglishStarNasal [{*m} | {*n}];
 define EnglishStarLiquid [{*l} | {*r}];
 
 define EnglishStarVelarStop [{*k} | {*g}];
+
+define EnglishStarLabial [{*b} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
 define EnglishStarFricative [{*f} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
 
@@ -1063,9 +1065,8 @@ define OldEnglishIUmlaut OldEnglishIUmlautCore
     .o. OldEnglishIUmlautDiphthong;
 
 define OldEnglishBackMutation [
-    {*e} -> {*o} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,
-    {*i} -> {*u} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger,
-    {*æ} -> {*a} || _ EnglishStarConsonantSeq EnglishBackMutationTrigger
+    {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
+    {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
 ];
 
 define OldEnglishNasalSpirantLengthening [
@@ -1145,8 +1146,8 @@ define OldEnglishContraction [
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
 define EnglishProtoToOE (
     EnglishWestGermanic
-    .o. EnglishOpenSyllableLengthening
     .o. EnglishAngloFrisianBrightening
+    .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
     .o. EnglishLiquidLowering
     .o. EnglishVelarShortening
