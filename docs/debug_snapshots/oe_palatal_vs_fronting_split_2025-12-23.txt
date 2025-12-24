@@ -1,0 +1,29 @@
+OE palatalization vs fronting/umlaut split (2025-12-23)
+
+Palatalization-miss targets (expected ċ/ġ/sc, output lacks them)
+Trace summary (pre-orthography, OE sandbox bins):
+
+- *bōkō (beech): Palatalisation *bōkō → ProtoToOE *bukō → Surface bucō
+  → palatalization never triggers; missing fronting/umlaut/breaking context.
+- *burdiz (birth): Palatalisation *burdiz → ProtoToOE *bērd → Surface bērd
+  → palatalization never triggers; no front-vowel adjacency.
+- *dranką (drench): Palatalisation *dranką → ProtoToOE *dranka → Surface dranca
+  → palatalization never triggers; missing fronting/umlaut.
+- *fleugăną (fly): Palatalisation *fleugăną → ProtoToOE *fleugan → Surface fleugan
+  → palatalization never triggers; missing fronting/umlaut/breaking.
+- *xunăgą (honey): Palatalisation *xunăgą → ProtoToOE *xūnaga → Surface hūnaga
+  → palatalization never triggers; vowel stays back, so g remains velar.
+- *θankăz (think): Palatalisation *θankăz → ProtoToOE *θanka → Surface þanca/þænc
+  → palatalization never triggers; no front-vowel creation.
+- *waiθiz (withy): Palatalisation *waiθiz → ProtoToOE *wæθ → Surface wæþ
+  → not a palatalization case; suffix loss/fronting issue.
+
+I-umlaut vs fronting split (full dataset):
+- True i-umlaut misses (PGmc i/j trigger, expected umlaut outcome, output lacks it): 1
+  - rye (*rugiz): expected ryġe | output rūġ
+- Fronting missing with NO i/j trigger: 143
+  (e.g. *utrăz, *bergą, *bōkō, *braudą, etc.)
+
+Conclusion:
+- Most “palatalization misses” are really missing front-vowel creation (fronting/breaking/umlaut), not a palatalization-rule failure.
+- The big remaining bucket is fronting/breaking, not i-umlaut.

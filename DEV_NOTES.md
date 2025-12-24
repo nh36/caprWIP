@@ -1003,3 +1003,10 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - `*jugunθiz` → expected **ġeoguþ**, output **ġūgyþ** (u‑umlaut miss)
   - `*sōkjăną` → expected **sēċan**, output **suscġan** (ō‑umlaut miss)
 - **Palatalization warning:** cases where expected **ċ** surface as **sc** are now visible; that’s a palatalisation failure in the OE stack (orthography is masking it), not a spelling preference. Keep an eye on outputs like `suscġan` vs expected `sēċan`.
+
+### OE palatalization vs fronting/umlaut split (2025-12-23)
+- **Snapshot:** `docs/debug_snapshots/oe_palatal_vs_fronting_split_2025-12-23.txt`.
+- **Key diagnosis:** the 7 “palatalization missing” cases are **not** palatalization-rule failures; palatalization never triggers because the **front‑vowel context is missing**. These are **fronting/breaking/umlaut issues** upstream.
+- **True i‑umlaut misses (strict trigger):** only 1 case (`*rugiz → ryġe` expected, output `rūġ`).  
+  The bulk of the “i‑umlaut/fronting missing” bucket is actually **fronting missing with no i/j trigger** (143 cases).
+- **Next actions:** prioritize fronting/breaking changes that create front‑vowel contexts (esp. for *bōkō, *θankăz, *dranką, *fleugăną, *xunăgą), then re‑check palatalization buckets.
