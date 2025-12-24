@@ -981,8 +981,7 @@ define EnglishLongVowelRealisation [
 # Proto-Germanic → Old English rules (keep adjacent to OE stack).
 # West Germanic monophthongisation (ai → ā, au → ō).
 define EnglishWestGermanic [
-    {*ai} -> {*ā},
-    {*au} -> {*ō}
+    {*ai} -> {*ā}
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
