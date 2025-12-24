@@ -1027,6 +1027,14 @@ define EnglishBreakingLengthening EnglishBreakingA
     .o. EnglishBreakingE
     .o. EnglishBreakingI;
 
+define OldEnglishAuFronting [
+    {*au} -> {*aeu}
+];
+
+define OldEnglishDiphthongLeveling [
+    {*aeu} -> {*ea}
+];
+
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
 define EnglishAngloFrisianBrightening [
     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
@@ -1174,6 +1182,8 @@ define OldEnglishContraction [
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
 define EnglishProtoToOE (
     EnglishWestGermanic
+    .o. OldEnglishAuFronting
+    .o. OldEnglishDiphthongLeveling
     .o. EnglishAngloFrisianBrightening
     .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
