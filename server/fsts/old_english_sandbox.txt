@@ -1,6 +1,6 @@
 source fsts/germanic.txt
 
-# Old English sandbox: trace the OE core while keeping English checkpoints available for debugging.
+# Old English sandbox: trace the OE core only (avoid later English vowel rules).
 define OESandboxAfterProtoInput EnglishAfterProtoInput;
 define OESandboxAfterInitialKn EnglishAfterInitialKn;
 define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
@@ -8,20 +8,7 @@ define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
 define OESandboxAfterGhMarker EnglishAfterGhMarker;
 define OESandboxAfterGlideDeletion EnglishAfterGlideDeletion;
 define OESandboxAfterProtoToOE EnglishAfterProtoToOE;
-define OESandboxAfterShortAFronting EnglishAfterShortAFronting;
-define OESandboxAfterProtoRhoticFronting EnglishAfterProtoRhoticFronting;
-define OESandboxAfterRhoticBreaking EnglishAfterRhoticBreaking;
-define OESandboxAfterShortBackLowering EnglishAfterShortBackLowering;
-define OESandboxAfterShortVowelSplit EnglishAfterShortVowelSplit;
-define OESandboxAfterRhoticColoring EnglishAfterRhoticColoring;
-define OESandboxAfterVowelRules EnglishAfterVowelRules;
-define OESandboxAfterPostVocalicRLoss EnglishAfterPostVocalicRLoss;
-define OESandboxAfterWeakTailReductions EnglishAfterWeakTailReductions;
-define OESandboxAfterWeakTailCleanup EnglishAfterWeakTailCleanup;
-define OESandboxAfterSilentCleanup EnglishAfterSilentCleanup;
-define OESandboxAfterGhDeletion EnglishAfterGhDeletion;
-define OESandboxAfterOrthography EnglishAfterOrthography;
-define OESandboxAfterLongVowelRealisation EnglishAfterLongVowelRealisation;
+define OESandboxAfterOrthography OldEnglishRules;
 define OESandboxAfterSurface OldEnglishReflexes;
 
 define OESandbox OESandboxAfterSurface;
@@ -59,60 +46,8 @@ regex OESandboxAfterProtoToOE;
 save stack old_english_sandbox_after_proto_to_oe.bin
 
 clear stack
-regex OESandboxAfterShortAFronting;
-save stack old_english_sandbox_after_short_a_fronting.bin
-
-clear stack
-regex OESandboxAfterProtoRhoticFronting;
-save stack old_english_sandbox_after_proto_rhotic_fronting.bin
-
-clear stack
-regex OESandboxAfterRhoticBreaking;
-save stack old_english_sandbox_after_rhotic_breaking.bin
-
-clear stack
-regex OESandboxAfterShortBackLowering;
-save stack old_english_sandbox_after_short_back_lowering.bin
-
-clear stack
-regex OESandboxAfterShortVowelSplit;
-save stack old_english_sandbox_after_short_vowel_split.bin
-
-clear stack
-regex OESandboxAfterRhoticColoring;
-save stack old_english_sandbox_after_rhotic_coloring.bin
-
-clear stack
-regex OESandboxAfterVowelRules;
-save stack old_english_sandbox_after_vowel_rules.bin
-
-clear stack
-regex OESandboxAfterPostVocalicRLoss;
-save stack old_english_sandbox_after_postvocalic_r_loss.bin
-
-clear stack
-regex OESandboxAfterWeakTailReductions;
-save stack old_english_sandbox_after_weak_tail.bin
-
-clear stack
-regex OESandboxAfterWeakTailCleanup;
-save stack old_english_sandbox_after_weak_tail_cleanup.bin
-
-clear stack
-regex OESandboxAfterSilentCleanup;
-save stack old_english_sandbox_after_silent_cleanup.bin
-
-clear stack
-regex OESandboxAfterGhDeletion;
-save stack old_english_sandbox_after_gh_deletion.bin
-
-clear stack
 regex OESandboxAfterOrthography;
 save stack old_english_sandbox_after_orthography.bin
-
-clear stack
-regex OESandboxAfterLongVowelRealisation;
-save stack old_english_sandbox_after_long_vowel_realisation.bin
 
 clear stack
 regex OESandboxAfterSurface;
