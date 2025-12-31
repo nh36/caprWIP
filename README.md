@@ -86,6 +86,16 @@ now tracks four doculects (English, Old English, Dutch, German).
        counts document each incremental gain.
   Track detailed progress in `docs/germanic_transducer_report.md`.
 
+### Old English diagnostics (current blockers)
+- Recent OE coverage dip is driven by **surface-filter failures**, not proto acceptance.
+  Snapshot: `docs/debug_snapshots/oe_surface_filter_leaks_2025-12-24.txt`.
+  Orthography outputs still contain non-OE symbols (`ɛ, ɪ, ʊ, ə, ʌ, ʧ, ʃ, ʒ, ç, j`),
+  so `OldEnglishSurface` rejects them.
+- Action items:
+  1. Identify which stages introduce those post-OE symbols in the OE stack.
+  2. Either prevent those later vowel rules from running in OE, or map the
+     symbols to OE orthography before the surface filter.
+
 ### Operations
 - Keep Docker + Caddy steps documented in `docs/runbook.md`, and record each
   session in `DEV_NOTES.md` (include regression harness results and warnings).
