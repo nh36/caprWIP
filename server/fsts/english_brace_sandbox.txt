@@ -229,7 +229,7 @@ define EnglishSandboxProtoRhoticFronting [
 ];
 
 # Short back-vowel lowering (pre-ME contextual rewrite).
-define EnglishSandboxShortBackLowering [
+define EnglishSandboxPreMEShortBackLowering [
     {*o} -> {ɔ}
 ];
 
@@ -277,7 +277,7 @@ define EnglishSandboxShortVowelFallback [
     {e} -> {ɛ}
 ];
 
-define EnglishSandboxShortVowelSplit EnglishSandboxShortVowelContextual .o. EnglishSandboxShortVowelFallback;
+define EnglishSandboxLMEShortVowelSplit EnglishSandboxShortVowelContextual .o. EnglishSandboxShortVowelFallback;
 
 define EnglishSandboxStrutRescue [
     {ʊ} -> {ʌ} || _ EnglishSandboxStarNasal (EnglishSandboxStarConsonant | .#.),
@@ -350,14 +350,14 @@ define EnglishSandboxPostVocalicRLoss [
 ];
 
 define EnglishSandboxVowelRulesPreRhotic EnglishSandboxCoreVowelRules
-    .o. EnglishSandboxShortVowelSplit
+    .o. EnglishSandboxLMEShortVowelSplit
     .o. EnglishSandboxStrutRescue;
 
 define EnglishSandboxOoLowering [
     {*ʊ} -> {ʌ} || ({*b} | {*f}) {*l} _ ({*d} | {*t})
 ];
 
-define EnglishSandboxVowelRulesPostRhotic EnglishSandboxShortBackLowering
+define EnglishSandboxVowelRulesPostRhotic EnglishSandboxPreMEShortBackLowering
     .o. EnglishSandboxOFrontContext
     .o. EnglishSandboxOoLowering
     .o. EnglishSandboxUFrontContext
@@ -402,7 +402,7 @@ define EnglishSandboxReflexes EnglishSandboxProtoInput
     .o. EnglishSandboxShortAFronting
     .o. EnglishSandboxProtoRhoticFronting
     .o. EnglishSandboxRhoticBreaking
-    .o. EnglishSandboxShortBackLowering
+    .o. EnglishSandboxPreMEShortBackLowering
     .o. EnglishSandboxVowelRules
     .o. EnglishSandboxPostVocalicRLoss
     .o. EnglishSandboxWeakTailReductions
@@ -437,9 +437,9 @@ define EnglishSandboxAfterGlideDeletion EnglishSandboxAfterGhMarker .o. EnglishS
 define EnglishSandboxAfterShortAFronting EnglishSandboxAfterGlideDeletion .o. EnglishSandboxShortAFronting;
 define EnglishSandboxAfterProtoRhoticFronting EnglishSandboxAfterShortAFronting .o. EnglishSandboxProtoRhoticFronting;
 define EnglishSandboxAfterRhoticBreaking EnglishSandboxAfterProtoRhoticFronting .o. EnglishSandboxRhoticBreaking;
-define EnglishSandboxAfterShortBackLowering EnglishSandboxAfterRhoticBreaking .o. EnglishSandboxShortBackLowering;
-define EnglishSandboxAfterShortVowelSplit EnglishSandboxAfterShortBackLowering .o. EnglishSandboxVowelRulesPreRhotic;
-define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterShortVowelSplit .o. EnglishSandboxRhoticColoring;
+define EnglishSandboxAfterPreMEBackLowering EnglishSandboxAfterRhoticBreaking .o. EnglishSandboxPreMEShortBackLowering;
+define EnglishSandboxAfterLMEShortVowelSplit EnglishSandboxAfterPreMEBackLowering .o. EnglishSandboxVowelRulesPreRhotic;
+define EnglishSandboxAfterRhoticColoring EnglishSandboxAfterLMEShortVowelSplit .o. EnglishSandboxRhoticColoring;
 define EnglishSandboxAfterVowelRules EnglishSandboxAfterRhoticColoring .o. EnglishSandboxVowelRulesPostRhotic;
 define EnglishSandboxAfterPostVocalicRLoss EnglishSandboxAfterVowelRules .o. EnglishSandboxPostVocalicRLoss;
 define EnglishSandboxAfterWeakTailReductions EnglishSandboxAfterPostVocalicRLoss .o. EnglishSandboxWeakTailReductions;
@@ -532,12 +532,12 @@ regex EnglishSandboxAfterRhoticBreaking;
 save stack english_sandbox_after_rhotic_breaking.bin
 
 clear stack
-regex EnglishSandboxAfterShortBackLowering;
-save stack english_sandbox_after_short_back_lowering.bin
+regex EnglishSandboxAfterPreMEBackLowering;
+save stack english_sandbox_after_pre_me_short_back_lowering.bin
 
 clear stack
-regex EnglishSandboxAfterShortVowelSplit;
-save stack english_sandbox_after_short_vowel_split.bin
+regex EnglishSandboxAfterLMEShortVowelSplit;
+save stack english_sandbox_after_lme_short_vowel_split.bin
 
 clear stack
 regex EnglishSandboxAfterRhoticColoring;

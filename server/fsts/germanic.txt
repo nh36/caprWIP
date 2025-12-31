@@ -725,6 +725,7 @@ define OldEnglishPalatalisation (
     .o. [{*k} -> {ʃ} || _ EnglishStarFrontVowel]
     .o. [{*g} -> {ʒ} || _ EnglishStarFrontVowel]
 );
+# Legacy: retained for reference but not used in the current English/OE pipeline.
 
 define EnglishLatePalatalisation (
     [{*b} {*j} -> {v}]
@@ -816,7 +817,7 @@ define EnglishProtoRhoticFronting [
 ];
 
 # Short back-vowel lowering (pre-ME contextual rewrite).
-define EnglishShortBackLowering [
+define EnglishPreMEShortBackLowering [
     {*o} -> {ɔ}
 ];
 
@@ -864,7 +865,7 @@ define EnglishShortVowelFallback [
     {e} -> {ɛ}
 ];
 
-define EnglishShortVowelSplit EnglishShortVowelContextual .o. EnglishShortVowelFallback;
+define EnglishLMEShortVowelSplit EnglishShortVowelContextual .o. EnglishShortVowelFallback;
 
 define EnglishStrutRescue [
     {ʊ} -> {ʌ} || _ EnglishStarNasal (EnglishStarConsonant | .#.),
@@ -939,14 +940,14 @@ define EnglishPostVocalicRLoss [
 ];
 
 define EnglishVowelRulesPreRhotic EnglishCoreVowelRules
-    .o. EnglishShortVowelSplit
+    .o. EnglishLMEShortVowelSplit
     .o. EnglishStrutRescue;
 
 define EnglishOoLowering [
     {*ʊ} -> {ʌ} || ({*b} | {*f}) {*l} _ ({*d} | {*t})
 ];
 
-define EnglishVowelRulesPostRhotic EnglishShortBackLowering
+define EnglishVowelRulesPostRhotic EnglishPreMEShortBackLowering
     .o. EnglishOFrontContext
     .o. EnglishOoLowering
     .o. EnglishUFrontContext
@@ -1214,7 +1215,7 @@ define OldEnglishCore EnglishProtoInput
 define EnglishOEToModern EnglishShortAFronting
     .o. EnglishProtoRhoticFronting
     .o. EnglishRhoticBreaking
-    .o. EnglishShortBackLowering
+    .o. EnglishPreMEShortBackLowering
     .o. EnglishVowelRules
     .o. EnglishPostVocalicRLoss
     .o. EnglishWeakTailReductions
@@ -1256,9 +1257,9 @@ define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
 define EnglishAfterShortAFronting EnglishAfterProtoToOE .o. EnglishShortAFronting;
 define EnglishAfterProtoRhoticFronting EnglishAfterShortAFronting .o. EnglishProtoRhoticFronting;
 define EnglishAfterRhoticBreaking EnglishAfterProtoRhoticFronting .o. EnglishRhoticBreaking;
-define EnglishAfterShortBackLowering EnglishAfterRhoticBreaking .o. EnglishShortBackLowering;
-define EnglishAfterShortVowelSplit EnglishAfterShortBackLowering .o. EnglishVowelRulesPreRhotic;
-define EnglishAfterRhoticColoring EnglishAfterShortVowelSplit .o. EnglishRhoticColoring;
+define EnglishAfterPreMEShortBackLowering EnglishAfterRhoticBreaking .o. EnglishPreMEShortBackLowering;
+define EnglishAfterLMEShortVowelSplit EnglishAfterPreMEShortBackLowering .o. EnglishVowelRulesPreRhotic;
+define EnglishAfterRhoticColoring EnglishAfterLMEShortVowelSplit .o. EnglishRhoticColoring;
 define EnglishAfterVowelRules EnglishAfterRhoticColoring .o. EnglishVowelRulesPostRhotic;
 define EnglishAfterPostVocalicRLoss EnglishAfterVowelRules .o. EnglishPostVocalicRLoss;
 define EnglishAfterWeakTailReductions EnglishAfterPostVocalicRLoss .o. EnglishWeakTailReductions;
@@ -1346,12 +1347,12 @@ regex EnglishAfterRhoticBreaking;
 save stack english_after_rhotic_breaking.bin
 
 clear stack
-regex EnglishAfterShortBackLowering;
-save stack english_after_short_back_lowering.bin
+regex EnglishAfterPreMEShortBackLowering;
+save stack english_after_pre_me_short_back_lowering.bin
 
 clear stack
-regex EnglishAfterShortVowelSplit;
-save stack english_after_short_vowel_split.bin
+regex EnglishAfterLMEShortVowelSplit;
+save stack english_after_lme_short_vowel_split.bin
 
 clear stack
 regex EnglishAfterRhoticColoring;
