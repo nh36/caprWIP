@@ -1010,3 +1010,17 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **True i‑umlaut misses (strict trigger):** only 1 case (`*rugiz → ryġe` expected, output `rūġ`).  
   The bulk of the “i‑umlaut/fronting missing” bucket is actually **fronting missing with no i/j trigger** (143 cases).
 - **Next actions:** prioritize fronting/breaking changes that create front‑vowel contexts (esp. for *bōkō, *θankăz, *dranką, *fleugăną, *xunăgą), then re‑check palatalization buckets.
+
+### OE i‑umlaut/fronting bucket diagnostics (2026-01-01)
+- **RemoveStars fix:** added `{*ċ} -> ċ` and `{*ġ} -> ġ` in `OldEnglishRemoveStars` so orthography outputs no longer leak starred palatals. This dropped `no_output` mismatches from 50 → 12.
+- **Updated apply‑down stats:** `docs/debug_snapshots/oe_apply_down_stats_2026-01-01a.txt` (still 40 exact matches / 370 total).
+- **Updated mismatch patterns:** `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01a.txt`.
+  - Top buckets: i_umlaut_or_fronting_missing (147), other (124), breaking_missing (30), no_output (12), long_vowel_missing (10).
+- **Bucket subgrouping (heuristic, broader set = 178 items):** `docs/debug_snapshots/oe_iumlaut_fronting_subgroups_2026-01-01.txt`.
+  - back_vowel_follow_only: 98 (likely **a‑restoration** contexts per Hogg)
+  - iumlaut_trigger_only: 3 (cleanest true i‑mutation misses)
+  - nasal_block_only: 2 (fronting blocked before nasals)
+- **Staged traces for each subgroup:** `docs/debug_snapshots/oe_iumlaut_fronting_subgroup_traces_2026-01-01.txt`.
+  - i‑mutation trigger examples: *furxtīn → fōrhtīn (expected fryhtu), *raukiz → reaċ (expected rēc), *rugiz → rūġ (expected ryġe)
+  - back‑vowel follow examples: *bergą → beorga (expected beorg), *bōkō → bucō (expected bēċe), *gennăną → ġennan (expected beginnan)
+  - nasal‑block examples: *dranką → drænca (expected drenċ), *tangō → tængō (expected tange)
