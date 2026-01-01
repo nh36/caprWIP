@@ -1,0 +1,46 @@
+Total mismatches: 317
+
+i_umlaut_or_fronting_missing: 136
+other: 120
+breaking_missing: 22
+no_output: 12
+long_vowel_missing: 10
+palatalization_missing: 17
+
+Examples:
+i_umlaut_or_fronting_missing:
+  *bergą -> beorga (expected beorg)
+  *bastą -> basta (expected bæst)
+  *baθą -> baþa (expected bæþ)
+  *gennăną -> ġennan (expected beginnan)
+  *laubjăną -> līevan (expected belīefan)
+other:
+  *banną -> bann (expected bannan)
+  *bebruz -> bebr (expected befer)
+  *barwōn -> bearwōn (expected bēr)
+  *blōdą -> blōda (expected blōd)
+  *burdą -> bōrda (expected bord)
+breaking_missing:
+  *brustz -> brust (expected brēost)
+  *dawwō -> dawwō (expected dēaw)
+  *fexu -> fēh (expected feoh)
+  *fedwōrez -> fedwōre (expected fēower)
+  *frijōndz -> frīġōnd (expected frēond)
+no_output:
+  *funxwstiz -> +? (expected fȳst)
+  *xabukăz -> +? (expected hafoc)
+  *xemenăz -> +? (expected heofon)
+  *xnakkăz -> +? (expected hnecca)
+  *regna-bugōn -> +? (expected reġnboga)
+long_vowel_missing:
+  *utrăz -> utr (expected nǣdre)
+  *bōkz -> buc (expected bōc)
+  *bōguz -> bug (expected bōg)
+  *kewwăną -> ċeowwan (expected ċēowan)
+  *xazwăz -> hærw (expected hǣr)
+palatalization_missing:
+  *bōkō -> bucō (expected bēċe)
+  *burdiz -> bērd (expected ġebyrd)
+  *dranką -> dranca (expected drenċ)
+  *fiskăz -> fisc (expected fisċ)
+  *flaiskăz -> flāsc (expected flǣsċ)

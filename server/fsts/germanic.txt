@@ -730,7 +730,7 @@ define OldEnglishPalatalisation (
 );
 # Legacy: retained for reference but not used in the current English/OE pipeline.
 
-define EnglishLatePalatalisation (
+define EnglishJClusterCoalescence (
     [{*b} {*j} -> {v}]
     .o. [{*g} {*j} -> {dʒ}]
     .o. [{*k} {*j} -> {tʃ}]
@@ -742,8 +742,7 @@ define EnglishEarlyPalatalisation (
     .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
 );
 
-define EnglishPalatalisation EnglishEarlyPalatalisation
-    .o. EnglishLatePalatalisation;
+define EnglishPalatalisation EnglishEarlyPalatalisation;
 
 define EnglishWGlideRule [{*w} -> {ʋ}];
 
@@ -757,14 +756,11 @@ define OldEnglishFinalWeakSchwaApocope [
     {*ă} -> 0 || _ .#.
 ];
 
-define EnglishDJPalatal [{*d} {*j} -> {nd}];
-
 define OldEnglishConsonantRules EnglishZApocope
     .o. OldEnglishFinalWeakSchwaApocope
     .o. EnglishZRhotacism;
 
-define EnglishConsonantRules OldEnglishConsonantRules
-    .o. EnglishDJPalatal;
+define EnglishConsonantRules OldEnglishConsonantRules;
 
 define EnglishGhMarker [
     {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
@@ -1217,6 +1213,7 @@ define EnglishProtoToOE (
     .o. OldEnglishVelarPalatalization
     .o. OldEnglishVelarFricativePalatalization
     .o. OldEnglishIUmlaut
+    .o. EnglishJClusterCoalescence
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
