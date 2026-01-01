@@ -1035,7 +1035,9 @@ define OldEnglishAuFronting [
 ];
 
 define OldEnglishDiphthongLeveling [
-    {*aeu} -> {*ea}
+    {*aeu} -> {*ēa},
+    {*eu} -> {*ēo},
+    {*iu} -> {*ēo}
 ];
 
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
