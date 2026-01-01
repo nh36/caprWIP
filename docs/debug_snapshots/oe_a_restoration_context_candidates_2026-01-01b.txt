@@ -1,0 +1,3 @@
+Total OE rows: 370
+ConsonantRules outputs with *æ ... back vowel context: 0
+

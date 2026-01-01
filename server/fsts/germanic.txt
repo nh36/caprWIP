@@ -646,6 +646,8 @@ define OldEnglishRemoveStars [
     {*g} -> g,
     {*h} -> h,
     {*j} -> ġ,
+    {*ċ} -> ċ,
+    {*ġ} -> ġ,
     {*k} -> c,
     {*l} -> l,
     {*m} -> m,
@@ -1040,6 +1042,23 @@ define EnglishAngloFrisianBrightening [
     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
 ];
 
+# A-restoration: */æ/ > */a/ before a back vowel in the following syllable.
+define OldEnglishARestorationBackVowel [
+    {*a} | {*ā} | {*o} | {*ō} | {*u} | {*ū} | {*au} | {*eu} | {*ą} | {*ă} | {*ɔ̆}
+];
+
+define OldEnglishARestorationIntervening [
+    EnglishStarConsonant |
+    {*nnd} | {*ndʒ} | {*ndj} | {*ndz} | {*ntr} | {*rst} | {*stj} | {*stz} |
+    {*xtj} | {*xtz} | {*wwj} | {*kkj} | {*ldr} | {*lgw} | {*llj} | {*ltj} |
+    {*ndl} | {*ndr} | {*ngj} | {*ngr} | {*ngw} | {*nsz} | {*rwj} | {*rxt} |
+    {*nxwst} | {*ʧtʃ}
+];
+
+define OldEnglishARestoration [
+    {*æ} -> {*a} || _ [OldEnglishARestorationIntervening]* OldEnglishARestorationBackVowel
+];
+
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
 define EnglishLiquidLowering [
     {*ō} -> {*ō} || _ EnglishStarLiquid,
@@ -1187,6 +1206,7 @@ define EnglishProtoToOE (
     .o. EnglishAngloFrisianBrightening
     .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
+    .o. OldEnglishARestoration
     .o. EnglishLiquidLowering
     .o. EnglishVelarShortening
     .o. EnglishUrRounding
