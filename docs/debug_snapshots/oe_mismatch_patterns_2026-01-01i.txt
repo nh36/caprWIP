@@ -1,0 +1,52 @@
+Total mismatches: 324
+
+i_umlaut_or_fronting_missing: 22
+other: 225
+breaking_missing: 18
+no_output: 12
+long_vowel_missing: 30
+palatalization_missing: 17
+
+Examples:
+i_umlaut_or_fronting_missing:
+  *bastą -> basta (expected bæst)
+  *baθą -> baþa (expected bæþ)
+  *farăną -> faran (expected fær)
+  *flaskō -> flascō (expected flasce)
+  *grasą -> grasa (expected græs)
+
+other:
+  *banną -> bann (expected bannan)
+  *bergą -> beorga (expected beorg)
+  *bebruz -> bebr (expected befer)
+  *gennăną -> ġennan (expected beginnan)
+  *balgiz -> bealġ (expected bielġ)
+
+breaking_missing:
+  *dawwō -> dawwō (expected dēaw)
+  *fexu -> fēh (expected feoh)
+  *fedwōrez -> fedwōre (expected fēower)
+  *frijōndz -> frīġōnd (expected frēond)
+  *gebăną -> ġēban (expected giefan)
+
+no_output:
+  *funxwstiz -> +? (expected fȳst)
+  *xabukăz -> +? (expected hafoc)
+  *xemenăz -> +? (expected heofon)
+  *xnakkăz -> +? (expected hnecca)
+  *regna-bugōn -> +? (expected reġnboga)
+
+long_vowel_missing:
+  *utrăz -> utr (expected nǣdre)
+  *laubjăną -> liebġan (expected belīefan)
+  *bōkz -> buc (expected bōc)
+  *bōguz -> bug (expected bōg)
+  *braudą -> breada (expected brēad)
+
+palatalization_missing:
+  *bōkō -> bucō (expected bēċe)
+  *burdiz -> bērd (expected ġebyrd)
+  *dranką -> dranca (expected drenċ)
+  *fiskăz -> fisc (expected fisċ)
+  *flaiskăz -> flāsc (expected flǣsċ)
+

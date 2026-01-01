@@ -1,0 +1,21 @@
+i-umlaut/fronting missing: diagnostic subgroups
+Date: 2026-01-01
+
+Total bucket: 22
+iumlaut_trigger_only: 2
+back_vowel_follow_only: 14
+nasal_block_only: 0
+
+iumlaut_trigger_only:
+  *rugiz -> rūġ (expected ryġe)
+  *sai -> sā (expected sǣ)
+
+back_vowel_follow_only:
+  *bastą -> basta (expected bæst)
+  *baθą -> baþa (expected bæþ)
+  *farăną -> faran (expected fær)
+  *flaskō -> flascō (expected flasce)
+  *grasą -> grasa (expected græs)
+
+nasal_block_only:
+
