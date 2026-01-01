@@ -688,6 +688,12 @@ define EnglishStarBackVowel PGmcStarBackVowel;
 
 define EnglishStarDiphthong PGmcStarDiphthong;
 
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
+
+define EnglishStarShortVowel [
+    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
+];
+
 define EnglishStarConsonant PGmcStarConsonant;
 
 define EnglishStarVocalic PGmcStarVocalic;
@@ -709,6 +715,10 @@ define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
 define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 
 define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
+
+define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
+
+define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ]*;
 
@@ -1102,6 +1112,28 @@ define OldEnglishIUmlautDiphthong [
 define OldEnglishIUmlaut OldEnglishIUmlautCore
     .o. OldEnglishIUmlautDiphthong;
 
+# West Germanic j‑gemination after light syllables (short vowel + single consonant).
+define OldEnglishJGemination [
+    {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
+    {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
+    {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
+    {*d} -> {*d} {*d} || EnglishStarShortVowel _ {*j},
+    {*k} -> {*k} {*k} || EnglishStarShortVowel _ {*j},
+    {*g} -> {*g} {*g} || EnglishStarShortVowel _ {*j},
+    {*f} -> {*f} {*f} || EnglishStarShortVowel _ {*j},
+    {*s} -> {*s} {*s} || EnglishStarShortVowel _ {*j},
+    {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
+    {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
+    {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
+    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
+];
+
+# Loss of internal j after heavy syllables; block after r.
+define OldEnglishJLossAfterHeavy [
+    {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonantNoR _,
+    {*j} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonantNoR _
+];
+
 define OldEnglishBackMutation [
     {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
     {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
@@ -1145,12 +1177,6 @@ define OldEnglishVelarFricativePalatalization [
     {*ɣ} -> {j} || EnglishStarFrontVowel _,
     {*x} -> {ç} || _ {*j},
     {*ɣ} -> {j} || _ {*j}
-];
-
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
-
-define EnglishStarShortVowel [
-    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
 ];
 
 define EnglishHighVowelApocope [
@@ -1208,6 +1234,7 @@ define EnglishProtoToOE (
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
     .o. OldEnglishVelarFricativePalatalization
+    .o. OldEnglishJGemination
     .o. OldEnglishIUmlaut
     .o. EnglishJClusterCoalescence
     .o. OldEnglishBackMutation
@@ -1217,6 +1244,7 @@ define EnglishProtoToOE (
     .o. OldEnglishWeakTailReduction
     .o. OldEnglishWeightMarkers
     .o. OldEnglishHighVowelApocope
+    .o. OldEnglishJLossAfterHeavy
     .o. OldEnglishWeightCleanup
     .o. OldEnglishHLoss
     .o. OldEnglishContraction
