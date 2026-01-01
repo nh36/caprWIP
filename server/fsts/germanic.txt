@@ -710,11 +710,7 @@ define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 
 define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
 
-define EnglishIUmlautIntervening [
-    0 |
-    EnglishStarConsonantNoJ |
-    EnglishStarConsonantNoJ EnglishStarConsonantNoJ
-];
+define EnglishIUmlautIntervening [EnglishStarConsonantNoJ]*;
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel.r | {*ɔ̆}];
 
