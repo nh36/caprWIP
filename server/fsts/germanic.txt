@@ -629,6 +629,7 @@ define OldEnglishRemoveStars [
     {*ɔ} -> o,
     {*ɔ̆} -> a,
     {*æ} -> æ,
+    {*ǣ} -> ǣ,
     {*e} -> e,
     {*ē} -> ē,
     {*i} -> i,
@@ -1089,7 +1090,7 @@ define OldEnglishWeakTailReduction [
 define OldEnglishIUmlautCore [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ā} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,

@@ -1,0 +1,31 @@
+OE staged traces: i-umlaut/fronting missing
+Date: 2026-01-01
+
+## back_vowel_follow_only
+Proto: *bastą
+  expected: bæst
+  output: basta
+  ProtoInput: *b*a*s*t*ą
+  InitialKn: *b*a*s*t*ą
+  Palatalisation: *b*a*s*t*ą
+  ConsonantRules: *b*a*s*t*ą
+  GhMarker: *b*a*s*t*ɔ̆
+  GlideDeletion: *b*a*s*t*ɔ̆
+  ProtoToOE: *b*a*s*t*ɔ̆
+  Orthography: basta, bastŏ
+  Surface: basta
+
+## iumlaut_trigger_only
+Proto: *rugiz
+  expected: ryġe
+  output: rūġ
+  ProtoInput: *r*u*g*i*z
+  InitialKn: *r*u*g*i*z
+  Palatalisation: *r*udʒ*i*z
+  ConsonantRules: *r*udʒ*i
+  GhMarker: *r*udʒ
+  GlideDeletion: *r*udʒ
+  ProtoToOE: *r*udʒ
+  Orthography: rūġ
+  Surface: rūġ
+
