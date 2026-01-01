@@ -1,0 +1,17 @@
+Total Old English entries: 370
+No generator outputs: 12
+Multiple outputs: 0
+Exactly one output: 358
+Exactly one correct output: 53
+
+Sample mismatches (first 10):
+- adder (*utrăz): expected nǣdre | outputs: utr
+- ban (*banną): expected bannan | outputs: bann
+- barrow (*bergą): expected beorg | outputs: beorga
+- bast (*bastą): expected bæst | outputs: basta
+- bath (*baθą): expected bæþ | outputs: baþa
+- beaver (*bebruz): expected befer | outputs: bebr
+- beech (*bōkō): expected bēċe | outputs: bucō
+- begin (*gennăną): expected beginnan | outputs: ġennan
+- believe (*laubjăną): expected belīefan | outputs: līevan
+- belly (*balgiz): expected bielġ | outputs: bealġ

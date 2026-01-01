@@ -1,12 +1,16 @@
-## CURRENT FOCUS (as of 2025-12-21)
+## CURRENT FOCUS (as of 2026-01-01)
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
-- Latest OE diagnostics: `docs/debug_snapshots/oe_eval_2025-12-21j.txt` + `docs/debug_snapshots/oe_tail_bucket_2025-12-21j.txt`.
+- Latest OE diagnostics (post-ǣ surface fix):
+  - `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01i.txt`
+  - `docs/debug_snapshots/oe_stage_traces_2026-01-01i.txt`
+  - `docs/debug_snapshots/oe_iumlaut_fronting_subgroups_2026-01-01i.txt`
+  - `docs/debug_snapshots/oe_iumlaut_fronting_subgroup_traces_2026-01-01i.txt`
+  - `docs/debug_snapshots/oe_long_vowel_missing_2026-01-01.txt`
 - Long‑vowel‑missing deep dive (2026-01-01): see `docs/debug_snapshots/oe_long_vowel_missing_2026-01-01.txt`.
   - Biggest actionable sources:
-    - **PGmc *ai monophthongization missing** → add early `*ai -> *ǣ` (Hogg §3.3.3.1: /ai/ > long low vowel; WS ≈ ǣ).
     - **PGmc *au not lengthened** → change `*aeu -> *ēa` (or add a dedicated “long diphthong” step right after leveling).
     - **PGmc *eu/*iu not mapped to OE long diphthongs** → add `*eu/*iu -> *ēo` (WS merge).
     - **OE ō before velars should stay long** → move `EnglishVelarShortening` out of the OE block (OE keeps bōc/bōg).
@@ -1031,3 +1035,9 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - i‑mutation trigger examples: *furxtīn → fōrhtīn (expected fryhtu), *raukiz → reaċ (expected rēc), *rugiz → rūġ (expected ryġe)
   - back‑vowel follow examples: *bergą → beorga (expected beorg), *bōkō → bucō (expected bēċe), *gennăną → ġennan (expected beginnan)
   - nasal‑block examples: *dranką → drænca (expected drenċ), *tangō → tængō (expected tange)
+
+### OE ai cleanup + ǣ surface fix (2026-01-01)
+- Removed `OldEnglishAiMonophthongization` (never fires because WG monophthongization already rewrites *ai → *ā).
+- Added `{*ǣ} -> ǣ` to `OldEnglishRemoveStars` so OE surface accepts long fronted a (e.g., *dailiz → dǣl, *xaiθiz → hǣþ).
+- Updated mismatch totals (post-fix): Total mismatches 324; i_umlaut_or_fronting_missing 22; breaking_missing 18; long_vowel_missing 30; palatalization_missing 17; other 225; no_output 12.
+- New snapshots: `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01i.txt`, `docs/debug_snapshots/oe_stage_traces_2026-01-01i.txt`.
