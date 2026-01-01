@@ -167,6 +167,24 @@ define EnglishSandboxUrRounding [
     {*u} -> {ɔː} || _ {*r} .#.
 ];
 
+# A-restoration: */æ/ > */a/ before a back vowel in the following syllable.
+define EnglishSandboxARestorationBackVowel [
+    {*a} | {*ā} | {*o} | {*ō} | {*u} | {*ū} | {*ą} | {*au} | {*eu} | {*ɔ̆}
+];
+
+define EnglishSandboxARestorationIntervening [
+    EnglishSandboxStarConsonant |
+    ProtoConsonant |
+    {*nnd} | {*ndʒ} | {*ndj} | {*ndz} | {*ntr} | {*rst} | {*stj} | {*stz} |
+    {*xtj} | {*xtz} | {*wwj} | {*kkj} | {*ldr} | {*lgw} | {*llj} | {*ltj} |
+    {*ndl} | {*ndr} | {*ngj} | {*ngr} | {*ngw} | {*nsz} | {*rwj} | {*rxt} |
+    {*nxwst} | {*ʧtʃ}
+];
+
+define EnglishSandboxARestoration [
+    {*æ} -> {*a} || _ [EnglishSandboxARestorationIntervening]* EnglishSandboxARestorationBackVowel
+];
+
 define EnglishSandboxWeakTailMarker [
     {*a} {*n} {*ą} -> {*ă},
     {*ā} {*n} {*ą} -> {*ă},
@@ -182,6 +200,7 @@ define EnglishSandboxProtoToOE (
     EnglishSandboxWestGermanic
     .o. EnglishSandboxOpenSyllableLengthening
     .o. EnglishSandboxBreakingLengthening
+    .o. EnglishSandboxARestoration
     .o. EnglishSandboxLiquidLowering
     .o. EnglishSandboxVelarShortening
     .o. EnglishSandboxUrRounding
