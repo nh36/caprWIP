@@ -1229,7 +1229,6 @@ define EnglishProtoToOE (
     .o. EnglishBreakingLengthening
     .o. OldEnglishARestoration
     .o. EnglishLiquidLowering
-    .o. EnglishVelarShortening
     .o. EnglishUrRounding
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
@@ -1260,6 +1259,7 @@ define EnglishOEToModern EnglishShortAFronting
     .o. EnglishProtoRhoticFronting
     .o. EnglishRhoticBreaking
     .o. EnglishPreMEShortBackLowering
+    .o. EnglishVelarShortening
     .o. EnglishVowelRules
     .o. EnglishPostVocalicRLoss
     .o. EnglishWeakTailReductions
