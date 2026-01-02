@@ -1225,11 +1225,9 @@ define EnglishProtoToOE (
     .o. OldEnglishAuFronting
     .o. OldEnglishDiphthongLeveling
     .o. EnglishAngloFrisianBrightening
-    .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
     .o. OldEnglishARestoration
     .o. EnglishLiquidLowering
-    .o. EnglishUrRounding
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
     .o. OldEnglishVelarFricativePalatalization
@@ -1259,6 +1257,8 @@ define EnglishOEToModern EnglishShortAFronting
     .o. EnglishProtoRhoticFronting
     .o. EnglishRhoticBreaking
     .o. EnglishPreMEShortBackLowering
+    .o. EnglishOpenSyllableLengthening
+    .o. EnglishUrRounding
     .o. EnglishVelarShortening
     .o. EnglishVowelRules
     .o. EnglishPostVocalicRLoss
