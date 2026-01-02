@@ -1049,7 +1049,7 @@ define EnglishAngloFrisianBrightening [
 
 # A-restoration: */æ/ > */a/ before a back vowel in the following syllable.
 define OldEnglishARestorationBackVowel [
-    {*a} | {*ā} | {*o} | {*ō} | {*u} | {*ū} | {*au} | {*eu} | {*ą} | {*ă} | {*ɔ̆}
+    {*a} | {*ā} | {*o} | {*ō} | {*u} | {*ū} | {*au} | {*eu}
 ];
 
 define OldEnglishARestorationIntervening [
