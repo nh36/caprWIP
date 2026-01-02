@@ -22,6 +22,7 @@ FRONT_VOWELS = set("æǣeiīyȳ")
 BACK_VOWELS = set("aāoōuū")
 LONG_VOWELS = set("āēīōūǣȳ")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
+BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
 
 def normalize_proto(raw: str) -> str:
@@ -94,7 +95,16 @@ def has_long(s: str) -> bool:
 
 
 def has_breaking_diph(s: str) -> bool:
-    return any(d in s for d in ("ea", "ēa", "eo", "ēo", "ie", "īe"))
+    return any(d in s for d in BREAKING_DIPHTHONGS)
+
+
+def consonant_skeleton(s: str) -> str:
+    """Strip vowels/diphthongs to compare consonant material."""
+    for diph in BREAKING_DIPHTHONGS:
+        s = s.replace(diph, "")
+    for ch in LONG_VOWELS | FRONT_VOWELS | BACK_VOWELS:
+        s = s.replace(ch, "")
+    return s
 
 
 def has_palatal_marker(s: str) -> bool:
@@ -151,7 +161,12 @@ def bucket_mismatches(
             buckets["breaking_missing"].append((row["proto"], out, expected))
             continue
         if has_long(expected) and not has_long(out):
-            buckets["long_vowel_missing"].append((row["proto"], out, expected))
+            expected_cons = consonant_skeleton(expected)
+            out_cons = consonant_skeleton(out)
+            if expected_cons and expected_cons != out_cons and expected_cons in out_cons:
+                buckets["other"].append((row["proto"], out, expected))
+            else:
+                buckets["long_vowel_missing"].append((row["proto"], out, expected))
             continue
         if has_front(expected) and has_back(out):
             if trigger_in_next_syllable(row["proto_norm"]):
