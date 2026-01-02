@@ -16,10 +16,12 @@ PROTO_STRIP_RE = re.compile(r"[{}*\s\-/()]")
 # Treat these as vowels in the proto stream when looking for an i/j trigger.
 PROTO_VOWELS = set("aeiouyāēīōūǣȳ")
 PROTO_TRIGGERS = set("ijī")
+PROTO_DIPHTHONGS = ("ai", "au", "eu", "iu")
 
 FRONT_VOWELS = set("æǣeiīyȳ")
 BACK_VOWELS = set("aāoōuū")
 LONG_VOWELS = set("āēīōūǣȳ")
+PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 
 
 def normalize_proto(raw: str) -> str:
@@ -95,6 +97,10 @@ def has_breaking_diph(s: str) -> bool:
     return any(d in s for d in ("ea", "ēa", "eo", "ēo", "ie", "īe"))
 
 
+def has_palatal_marker(s: str) -> bool:
+    return any(marker in s for marker in PALATAL_MARKERS)
+
+
 def trigger_in_next_syllable(proto_norm: str) -> bool:
     """Heuristic: an i/ī/j appears before any other vowel after the first vowel."""
     first_vowel_idx = None
@@ -112,6 +118,22 @@ def trigger_in_next_syllable(proto_norm: str) -> bool:
     return False
 
 
+def proto_first_vowel_unit(proto_norm: str) -> str:
+    for i in range(len(proto_norm)):
+        for diph in PROTO_DIPHTHONGS:
+            if proto_norm.startswith(diph, i):
+                return diph
+        ch = proto_norm[i]
+        if ch in PROTO_VOWELS:
+            return ch
+    return ""
+
+
+def is_a_fronting_context(proto_norm: str) -> bool:
+    first = proto_first_vowel_unit(proto_norm)
+    return first in {"a", "ā"}
+
+
 def bucket_mismatches(
     rows: Iterable[Dict[str, str]], bin_path: Path
 ) -> Dict[str, List[Tuple[str, str, str]]]:
@@ -125,9 +147,6 @@ def bucket_mismatches(
         if expected in outputs:
             continue
         out = outputs[0]
-        if ("ċ" in expected or "ġ" in expected) and ("ċ" not in out and "ġ" not in out):
-            buckets["palatalization_missing"].append((row["proto"], out, expected))
-            continue
         if has_breaking_diph(expected) and not has_breaking_diph(out):
             buckets["breaking_missing"].append((row["proto"], out, expected))
             continue
@@ -137,8 +156,13 @@ def bucket_mismatches(
         if has_front(expected) and has_back(out):
             if trigger_in_next_syllable(row["proto_norm"]):
                 buckets["i_umlaut_missing_true"].append((row["proto"], out, expected))
-            else:
+            elif is_a_fronting_context(row["proto_norm"]):
                 buckets["fronting_missing_no_trigger"].append((row["proto"], out, expected))
+            else:
+                buckets["other"].append((row["proto"], out, expected))
+            continue
+        if has_palatal_marker(expected) and not has_palatal_marker(out):
+            buckets["palatalization_missing"].append((row["proto"], out, expected))
             continue
         buckets["other"].append((row["proto"], out, expected))
     return buckets
