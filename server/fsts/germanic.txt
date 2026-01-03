@@ -570,7 +570,7 @@ define OldEnglishSurfaceVowel [
 ];
 define OldEnglishSurfaceConsonant [
     {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
-    {t} | {v} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ} | {sc}
+    {t} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ} | {sc}
 ];
 define OldEnglishSurfaceStress [{ˈ}];
 define OldEnglishSurfaceOnset [
@@ -599,6 +599,7 @@ define OldEnglishOrthography [
     {*ʒ} -> ġ,
     {*ʋ} -> w,
     {*x} -> h,
+    {*v} -> f,
     {θ} -> þ,
     {ð} -> ð,
     {ʃ} -> {sc},
@@ -609,6 +610,7 @@ define OldEnglishOrthography [
     {ʒ} -> ġ,
     {ʋ} -> w,
     {x} -> h,
+    {v} -> f,
     {ɡ} -> g,
     {ʊ} -> u,
     {ɔ} -> o,
