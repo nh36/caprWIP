@@ -1,15 +1,22 @@
-## CURRENT FOCUS (as of 2026-01-01)
+## CURRENT FOCUS (as of 2026-01-03)
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
-- Latest OE diagnostics (post-ǣ surface fix):
-  - `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01i.txt`
-  - `docs/debug_snapshots/oe_stage_traces_2026-01-01i.txt`
-  - `docs/debug_snapshots/oe_iumlaut_fronting_subgroups_2026-01-01i.txt`
-  - `docs/debug_snapshots/oe_iumlaut_fronting_subgroup_traces_2026-01-01i.txt`
-  - `docs/debug_snapshots/oe_long_vowel_missing_2026-01-01.txt`
-- Long‑vowel‑missing deep dive (2026-01-01): see `docs/debug_snapshots/oe_long_vowel_missing_2026-01-01.txt`.
+- Latest OE diagnostics (use the unified report script going forward):
+  - `docs/debug_snapshots/oe_mismatch_report_2026-01-03a.txt` (from `server/tools/oe_mismatch_report.py`)
+  - `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
+  - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt`
+  - `docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`
+  - `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`
+- Start‑here repro (fresh run):
+  - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
+  - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
+- Next actionable targets (from latest buckets):
+  1. **Fronting missing w/ no trigger:** review a‑restoration contexts and nasal blocks (see 2026‑01‑01 subgroup traces).
+  2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re‑trace `oe_breaking_probe`.
+  3. **Long‑vowel missing (6 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
+- Long‑vowel‑missing deep dive (2026-01-02): see `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`.
   - Biggest actionable sources:
     - **PGmc *au not lengthened** → change `*aeu -> *ēa` (or add a dedicated “long diphthong” step right after leveling).
     - **PGmc *eu/*iu not mapped to OE long diphthongs** → add `*eu/*iu -> *ēo` (WS merge).
@@ -978,13 +985,12 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 
 ### OE sandbox mismatch patterns (2025-12-22)
 - **Scope note:** work is focused on the **OE sandbox** for now; do not apply ME/RP fixes to these issues.
-- **Mismatch pattern sweep:** `docs/debug_snapshots/oe_mismatch_patterns_2025-12-22.txt`
-  - Top heuristic buckets:
-    - Missing i‑umlaut/fronting (most frequent).
-    - Missing palatalization (ċ/ġ outcomes absent).
-    - Missing breaking/diphthongs (eo/ie).
-    - Missing final ‑e.
-    - Missing final ‑n (including infinitive ‑an).
+- **Mismatch pattern sweep (summary):**
+  - Missing i‑umlaut/fronting (most frequent).
+  - Missing palatalization (ċ/ġ outcomes absent).
+  - Missing breaking/diphthongs (eo/ie).
+  - Missing final ‑e.
+  - Missing final ‑n (including infinitive ‑an).
 - **OE sandbox TODOs (from mismatch patterns):**
   1. **I‑umlaut/fronting:** broaden or re‑order triggers so OE front vowels appear where expected.
   2. **Palatalization:** add/repair k/g → ċ/ġ before front vowels (and ordering vs. umlaut).
@@ -1006,7 +1012,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Breaking now precedes GH‑marking and W‑glide** so the conditioning consonants are still visible when OE breaking applies; this matches the chronology (breaking before h‑loss and before later glide re‑analysis). Implemented in both `server/fsts/germanic.txt` and `server/fsts/english_brace_sandbox.txt`.
 - **Sandbox breaking rules aligned to OE** (`*a/*æ → *ea`, `*e → *eo`, `*i → *ie` in rC/lC/h/w contexts). This replaced the old `{*a → *ō}` placeholder.
 - **Tracer instrumentation updated** to include `WGlide` and rebuilt the per‑stage bins; new probe log: `docs/debug_snapshots/oe_breaking_probe_2025-12-22f.txt` (shows `*bergą → *eo`, `*bardăz → *ea`, `*erθo → *eo`, `*fextăną → *eo` at `BreakingLengthening`).
-- **Regression scan (OE apply‑down):** `docs/debug_snapshots/oe_apply_down_stats_2025-12-22p.txt` shows 22 exact matches / 370; mismatch buckets still dominated by i‑umlaut/fronting and missing breaking/diphthongs. Bucket report: `docs/debug_snapshots/oe_mismatch_patterns_2025-12-22d.txt`.
+- **Regression scan (OE apply‑down):** `docs/debug_snapshots/oe_apply_down_stats_2025-12-22p.txt` shows 22 exact matches / 370; mismatch buckets still dominated by i‑umlaut/fronting and missing breaking/diphthongs.
 
 ### OE i‑umlaut deep dive (2025-12-23)
 - **Targeted umlaut misses (tight heuristic):** only 3 suspected true i‑umlaut failures when PGmc has an i/j trigger and OE expected shows an umlauted vowel but output does not. See `docs/debug_snapshots/oe_i_umlaut_deep_dive_2025-12-23.txt`.
@@ -1025,8 +1031,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 ### OE i‑umlaut/fronting bucket diagnostics (2026-01-01)
 - **RemoveStars fix:** added `{*ċ} -> ċ` and `{*ġ} -> ġ` in `OldEnglishRemoveStars` so orthography outputs no longer leak starred palatals. This dropped `no_output` mismatches from 50 → 12.
 - **Updated apply‑down stats:** `docs/debug_snapshots/oe_apply_down_stats_2026-01-01a.txt` (still 40 exact matches / 370 total).
-- **Updated mismatch patterns:** `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01a.txt`.
-  - Top buckets: i_umlaut_or_fronting_missing (147), other (124), breaking_missing (30), no_output (12), long_vowel_missing (10).
+- **Top buckets:** i_umlaut_or_fronting_missing (147), other (124), breaking_missing (30), no_output (12), long_vowel_missing (10).
 - **Bucket subgrouping (heuristic, broader set = 178 items):** `docs/debug_snapshots/oe_iumlaut_fronting_subgroups_2026-01-01.txt`.
   - back_vowel_follow_only: 98 (likely **a‑restoration** contexts per Hogg)
   - iumlaut_trigger_only: 3 (cleanest true i‑mutation misses)
@@ -1040,4 +1045,20 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Removed `OldEnglishAiMonophthongization` (never fires because WG monophthongization already rewrites *ai → *ā).
 - Added `{*ǣ} -> ǣ` to `OldEnglishRemoveStars` so OE surface accepts long fronted a (e.g., *dailiz → dǣl, *xaiθiz → hǣþ).
 - Updated mismatch totals (post-fix): Total mismatches 324; i_umlaut_or_fronting_missing 22; breaking_missing 18; long_vowel_missing 30; palatalization_missing 17; other 225; no_output 12.
-- New snapshots: `docs/debug_snapshots/oe_mismatch_patterns_2026-01-01i.txt`, `docs/debug_snapshots/oe_stage_traces_2026-01-01i.txt`.
+- New snapshot: `docs/debug_snapshots/oe_stage_traces_2026-01-01i.txt`.
+
+### OE diagnostics: mismatch closeness + diacritics (2026-01-02)
+- Apply-down stats (latest run): `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
+  - Exactly one correct output: **64 / 370** (no_output 12; multiple outputs 0).
+  - Mismatch buckets: i_umlaut_missing_true 16; fronting_missing_no_trigger 33; breaking_missing 20; long_vowel_missing 6; palatalization_missing 3; other 216.
+- **Closeness scan** highlights that many mismatches are near-misses:
+  - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt` shows most mismatches at distance 1–2 (81 at dist=1, 112 at dist=2).
+  - `docs/debug_snapshots/oe_mismatch_closeness_norm0_2026-01-02.txt` lists 11 cases where normalized (diacritic-stripped) distance is 0, e.g. `*dōną → dōn` vs expected `don`, `*etăną → ētan` vs `etan`, `*fiskăz → fisc` vs `fisċ`, `*skīnăną → scīnan` vs `sċīnan`.
+- **Diacritic mismatch traces** (`docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`) confirm these are orthography/diacritic alignment issues rather than phonology failures (e.g., `*tredăną → trēdan`, `*sturmăz → stōrm`, `*θurnuz → þōrn`, `*fadēr → fædēr`).
+- **Long-vowel missing probe narrowed** to 6 items (previously 7):
+  - Current list: `*kewwăną → ċeowwan (expected ċēowan)`, `*xazwăz → hærw (expected hǣr)`, `*xattuz → hatt (expected hōd)`, `*end → end (expected ān)`, `*slaxăną → sleaan (expected slēan)`, `*wegăz → weġ (expected wē)`.
+  - Traces in `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`.
+
+### Unified OE mismatch report (2026-01-03)
+- New script: `server/tools/oe_mismatch_report.py` supersedes `oe_mismatch_patterns.py` + the separate “other subtypes” report.
+- Latest unified report: `docs/debug_snapshots/oe_mismatch_report_2026-01-03a.txt` (includes the main buckets plus the “other” subcategories side by side).
