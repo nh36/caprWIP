@@ -38,7 +38,9 @@ STAGES: List[Tuple[str, str]] = [
 
 
 def normalize_proto(raw: str) -> str:
-    return PROTO_STRIP_RE.sub("", raw or "")
+    normalized = PROTO_STRIP_RE.sub("", raw or "")
+    # Proto inventory uses θ; normalize þ to avoid false no_output buckets.
+    return normalized.replace("þ", "θ")
 
 
 def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
@@ -138,6 +140,46 @@ def has_high_front(s: str) -> bool:
     return any(ch in s for ch in HIGH_FRONT_VOWELS) or any(d in s for d in ("ie", "īe"))
 
 
+def vowel_sequence(s: str) -> List[str]:
+    """Return vowel/diphthong units in order for quick mismatch heuristics."""
+    seq: List[str] = []
+    i = 0
+    while i < len(s):
+        pair = s[i : i + 2]
+        if pair in BREAKING_DIPHTHONGS:
+            seq.append(pair)
+            i += 2
+            continue
+        if s[i] in (FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS):
+            seq.append(s[i])
+        i += 1
+    return seq
+
+
+def consonant_sequence(s: str) -> str:
+    """Strip vowels/diphthongs to compare consonant order (keeps gemination)."""
+    for diph in BREAKING_DIPHTHONGS:
+        s = s.replace(diph, "")
+    return "".join(ch for ch in s if ch not in (FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS))
+
+
+def has_palatal_variant_mismatch(out: str, expected: str) -> bool:
+    """Detect sc/cg vs ċ/ġ representation mismatches."""
+    exp_fine = ("ċ" in expected) or ("ġ" in expected)
+    exp_sc = ("sc" in expected) or ("cg" in expected)
+    out_fine = ("ċ" in out) or ("ġ" in out)
+    out_sc = ("sc" in out) or ("cg" in out)
+    return (exp_fine and out_sc and not out_fine) or (exp_sc and out_fine and not out_sc)
+
+
+def has_consonant_gemination(s: str) -> bool:
+    vowels = FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS
+    for i in range(len(s) - 1):
+        if s[i] == s[i + 1] and s[i] not in vowels:
+            return True
+    return False
+
+
 def has_breaking_diph(s: str) -> bool:
     return any(d in s for d in BREAKING_DIPHTHONGS)
 
@@ -235,12 +277,27 @@ def other_subtype(out: str, expected: str) -> str:
         return "breaking_extra_other"
     if has_palatal_marker(out) and not has_palatal_marker(expected):
         return "palatal_extra_other"
+    if has_palatal_variant_mismatch(out, expected):
+        return "palatal_marker_variant"
     if has_long(out) and not has_long(expected):
         return "length_extra_other"
     if has_front(expected) and has_back(out):
         return "front_expected_back_out"
     if has_back(expected) and has_front(out):
         return "back_expected_front_out"
+    out_cons = consonant_sequence(out)
+    expected_cons = consonant_sequence(expected)
+    if out_cons == expected_cons:
+        out_vowels = vowel_sequence(out)
+        expected_vowels = vowel_sequence(expected)
+        if len(expected_vowels) > len(out_vowels):
+            return "epenthetic_vowel_missing"
+        if len(expected_vowels) == len(out_vowels) and expected_vowels != out_vowels:
+            return "vowel_quality_other"
+    if has_consonant_gemination(out) and not has_consonant_gemination(expected):
+        return "gemination_extra"
+    if out_cons != expected_cons:
+        return "consonant_mismatch_other"
     return "uncategorized"
 
 
@@ -295,6 +352,11 @@ def write_report(
         "final_n_missing",
         "palatal_extra_other",
         "back_expected_front_out",
+        "palatal_marker_variant",
+        "epenthetic_vowel_missing",
+        "vowel_quality_other",
+        "gemination_extra",
+        "consonant_mismatch_other",
         "uncategorized",
     ]
 

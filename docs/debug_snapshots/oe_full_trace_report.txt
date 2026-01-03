@@ -1081,26 +1081,11 @@ Orthography: wringan
 Surface: wringan
 
 
-=== BUCKET: no_output (18) ===
+=== BUCKET: no_output (16) ===
 
 --- begin ---
 PROTO: *biginnăną
 EXPECTED: beginnan
-OUTPUTS: +?
-
-ProtoInput: +?
-InitialKn: +?
-Palatalisation: +?
-ConsonantRules: +?
-GhMarker: +?
-GlideDeletion: +?
-ProtoToOE: +?
-Orthography: +?
-Surface: +?
-
---- find ---
-PROTO: *finþăną
-EXPECTED: findan
 OUTPUTS: +?
 
 ProtoInput: +?
@@ -1291,21 +1276,6 @@ GhMarker: +?
 GlideDeletion: +?
 ProtoToOE: +?
 Orthography: +?
-Surface: +?
-
---- thing ---
-PROTO: *þingą
-EXPECTED: þing
-OUTPUTS: +?
-
-ProtoInput: *þ*i*n*g*ą
-InitialKn: *þ*i*n*g*ą
-Palatalisation: *þ*i*n*g*ą
-ConsonantRules: *þ*i*n*g*ą
-GhMarker: *þ*i*n*g*ɔ̆
-GlideDeletion: *þ*i*n*g*ɔ̆
-ProtoToOE: *þ*i*n*g*ɔ̆
-Orthography: *þingŏ, *þinga
 Surface: +?
 
 --- thistle ---
@@ -2602,7 +2572,7 @@ Orthography: wǣþ, wǣ*þ
 Surface: wǣþ
 
 
-=== BUCKET: final_vowel_extra (46) ===
+=== BUCKET: final_vowel_extra (47) ===
 
 --- barrow ---
 PROTO: *bergą
@@ -3159,6 +3129,21 @@ ProtoToOE: *s*w*eo*r*d*ɔ̆
 Orthography: sweordŏ, sweorda
 Surface: sweorda
 
+--- thing ---
+PROTO: *þingą
+EXPECTED: þing
+OUTPUTS: þinga
+
+ProtoInput: *θ*i*n*g*ą
+InitialKn: *θ*i*n*g*ą
+Palatalisation: *θ*i*n*g*ą
+ConsonantRules: *θ*i*n*g*ą
+GhMarker: *θ*i*n*g*ɔ̆
+GlideDeletion: *θ*i*n*g*ɔ̆
+ProtoToOE: *θ*i*n*g*ɔ̆
+Orthography: þingŏ, þinga, *þingŏ, *þinga
+Surface: þinga
+
 --- timber ---
 PROTO: *timrą
 EXPECTED: timber
@@ -3342,6 +3327,21 @@ ProtoToOE: *f*æ*d*ē*r
 Orthography: fædēr
 Surface: fædēr
 
+--- find ---
+PROTO: *finþăną
+EXPECTED: findan
+OUTPUTS: fīþan
+
+ProtoInput: *f*i*n*θ*ă*n*ą
+InitialKn: *f*i*n*θ*ă*n*ą
+Palatalisation: *f*i*n*θ*ă*n*ą
+ConsonantRules: *f*i*n*θ*ă*n*ą
+GhMarker: *f*ī*θ*a*n
+GlideDeletion: *f*ī*θ*a*n
+ProtoToOE: *f*ī*θ*a*n
+Orthography: fīþan, fī*þan
+Surface: fīþan
+
 --- have ---
 PROTO: *xabēną
 EXPECTED: habban
@@ -3432,21 +3432,6 @@ ProtoToOE: *s*a*k*ō
 Orthography: sacō
 Surface: sacō
 
---- shame ---
-PROTO: *skamō
-EXPECTED: sċamu
-OUTPUTS: scamō
-
-ProtoInput: *s*k*a*m*ō
-InitialKn: *s*k*a*m*ō
-Palatalisation: *s*k*a*m*ō
-ConsonantRules: *s*k*a*m*ō
-GhMarker: ʃ*a*m*ō
-GlideDeletion: ʃ*a*m*ō
-ProtoToOE: ʃ*a*m*ō
-Orthography: scamō
-Surface: scamō
-
 --- shoulder ---
 PROTO: *skuldrō
 EXPECTED: sculdra
@@ -3493,7 +3478,7 @@ Orthography: spærēn
 Surface: spærēn
 
 
-=== BUCKET: front_expected_back_out (21) ===
+=== BUCKET: front_expected_back_out (20) ===
 
 --- beech ---
 PROTO: *bōkō
@@ -3644,21 +3629,6 @@ GlideDeletion: *r*ē*d*a*n
 ProtoToOE: *r*ē*d*a*n
 Orthography: rēdan
 Surface: rēdan
-
---- shine ---
-PROTO: *skīnăną
-EXPECTED: sċīnan
-OUTPUTS: scīnan
-
-ProtoInput: *s*k*ī*n*ă*n*ą
-InitialKn: *s*k*ī*n*ă*n*ą
-Palatalisation: ʃ*ī*n*ă*n*ą
-ConsonantRules: ʃ*ī*n*ă*n*ą
-GhMarker: ʃ*ī*n*a*n
-GlideDeletion: ʃ*ī*n*a*n
-ProtoToOE: ʃ*ī*n*a*n
-Orthography: scīnan
-Surface: scīnan
 
 --- sing ---
 PROTO: *singwăną
@@ -4876,112 +4846,148 @@ Orthography: wæscan
 Surface: wæscan
 
 
-=== BUCKET: uncategorized (48) ===
+=== BUCKET: palatal_marker_variant (3) ===
 
---- beaver ---
-PROTO: *bebruz
-EXPECTED: befer
-OUTPUTS: bebr
+--- fish ---
+PROTO: *fiskăz
+EXPECTED: fisċ
+OUTPUTS: fisc
 
-ProtoInput: *b*e*b*r*u*z
-InitialKn: *b*e*b*r*u*z
-Palatalisation: *b*e*b*r*u*z
-ConsonantRules: *b*e*b*r*u
-GhMarker: *b*e*b*r
-GlideDeletion: *b*e*b*r
-ProtoToOE: *b*e*b*r
-Orthography: bebr
-Surface: bebr
+ProtoInput: *f*i*s*k*ă*z
+InitialKn: *f*i*s*k*ă*z
+Palatalisation: *f*i*s*k*ă*z
+ConsonantRules: *f*i*s*k
+GhMarker: *f*iʃ
+GlideDeletion: *f*iʃ
+ProtoToOE: *f*iʃ
+Orthography: fisc
+Surface: fisc
 
---- bone ---
-PROTO: *bainăn
-EXPECTED: bān
-OUTPUTS: bānan
+--- shame ---
+PROTO: *skamō
+EXPECTED: sċamu
+OUTPUTS: scamō
 
-ProtoInput: *b*ai*n*ă*n
-InitialKn: *b*ai*n*ă*n
-Palatalisation: *b*ai*n*ă*n
-ConsonantRules: *b*ai*n*ă*n
-GhMarker: *b*ā*n*a*n
-GlideDeletion: *b*ā*n*a*n
-ProtoToOE: *b*ā*n*a*n
-Orthography: bānan
-Surface: bānan
+ProtoInput: *s*k*a*m*ō
+InitialKn: *s*k*a*m*ō
+Palatalisation: *s*k*a*m*ō
+ConsonantRules: *s*k*a*m*ō
+GhMarker: ʃ*a*m*ō
+GlideDeletion: ʃ*a*m*ō
+ProtoToOE: ʃ*a*m*ō
+Orthography: scamō
+Surface: scamō
 
---- both ---
-PROTO: *bō
-EXPECTED: bā]] [[þā
-OUTPUTS: bō
+--- shine ---
+PROTO: *skīnăną
+EXPECTED: sċīnan
+OUTPUTS: scīnan
 
-ProtoInput: *b*ō
-InitialKn: *b*ō
-Palatalisation: *b*ō
-ConsonantRules: *b*ō
-GhMarker: *b*ō
-GlideDeletion: *b*ō
-ProtoToOE: *b*ō
-Orthography: bō
-Surface: bō
+ProtoInput: *s*k*ī*n*ă*n*ą
+InitialKn: *s*k*ī*n*ă*n*ą
+Palatalisation: ʃ*ī*n*ă*n*ą
+ConsonantRules: ʃ*ī*n*ă*n*ą
+GhMarker: ʃ*ī*n*a*n
+GlideDeletion: ʃ*ī*n*a*n
+ProtoToOE: ʃ*ī*n*a*n
+Orthography: scīnan
+Surface: scīnan
 
---- bottom ---
-PROTO: *budmăz
-EXPECTED: botm
-OUTPUTS: budm
 
-ProtoInput: *b*u*d*m*ă*z
-InitialKn: *b*u*d*m*ă*z
-Palatalisation: *b*u*d*m*ă*z
-ConsonantRules: *b*u*d*m
-GhMarker: *b*u*d*m
-GlideDeletion: *b*u*d*m
-ProtoToOE: *b*u*d*m
-Orthography: budm
-Surface: budm
+=== BUCKET: epenthetic_vowel_missing (6) ===
 
---- breeches ---
-PROTO: *brekăną
-EXPECTED: brēċ
-OUTPUTS: breċan
+--- finger ---
+PROTO: *fingrăz
+EXPECTED: finger
+OUTPUTS: fingr
 
-ProtoInput: *b*r*e*k*ă*n*ą
-InitialKn: *b*r*e*k*ă*n*ą
-Palatalisation: *b*r*e*k*ă*n*ą
-ConsonantRules: *b*r*e*k*ă*n*ą
-GhMarker: *b*r*eʧ*a*n
-GlideDeletion: *b*r*eʧ*a*n
-ProtoToOE: *b*r*eʧ*a*n
-Orthography: breċan
-Surface: breċan
+ProtoInput: *f*i*n*g*r*ă*z
+InitialKn: *f*i*n*g*r*ă*z
+Palatalisation: *f*i*n*g*r*ă*z
+ConsonantRules: *f*i*n*g*r
+GhMarker: *f*i*n*g*r
+GlideDeletion: *f*i*n*g*r
+ProtoToOE: *f*i*n*g*r
+Orthography: fingr
+Surface: fingr
 
---- buck ---
-PROTO: *bukkăz
-EXPECTED: buc
-OUTPUTS: bucc
+--- fowl ---
+PROTO: *fuglăz
+EXPECTED: fugol
+OUTPUTS: fugl
 
-ProtoInput: *b*u*k*k*ă*z
-InitialKn: *b*u*k*k*ă*z
-Palatalisation: *b*u*k*k*ă*z
-ConsonantRules: *b*u*k*k
-GhMarker: *b*u*k*k
-GlideDeletion: *b*u*k*k
-ProtoToOE: *b*u*k*k
-Orthography: bucc
-Surface: bucc
+ProtoInput: *f*u*g*l*ă*z
+InitialKn: *f*u*g*l*ă*z
+Palatalisation: *f*u*g*l*ă*z
+ConsonantRules: *f*u*g*l
+GhMarker: *f*u*g*l
+GlideDeletion: *f*u*g*l
+ProtoToOE: *f*u*g*l
+Orthography: fugl
+Surface: fugl
 
---- corn ---
-PROTO: *kurnăn
-EXPECTED: corn
-OUTPUTS: curnan
+--- rudder ---
+PROTO: *rōθrăz
+EXPECTED: rōþor
+OUTPUTS: rōþr
 
-ProtoInput: *k*u*r*n*ă*n
-InitialKn: *k*u*r*n*ă*n
-Palatalisation: *k*u*r*n*ă*n
-ConsonantRules: *k*u*r*n*ă*n
-GhMarker: *k*u*r*n*a*n
-GlideDeletion: *k*u*r*n*a*n
-ProtoToOE: *k*u*r*n*a*n
-Orthography: curnan
-Surface: curnan
+ProtoInput: *r*ō*θ*r*ă*z
+InitialKn: *r*ō*θ*r*ă*z
+Palatalisation: *r*ō*θ*r*ă*z
+ConsonantRules: *r*ō*θ*r
+GhMarker: *r*ō*θ*r
+GlideDeletion: *r*ō*θ*r
+ProtoToOE: *r*ō*θ*r
+Orthography: rōþr, rō*þr
+Surface: rōþr
+
+--- thunder ---
+PROTO: *θunrăz
+EXPECTED: þunor
+OUTPUTS: þunr
+
+ProtoInput: *θ*u*n*r*ă*z
+InitialKn: *θ*u*n*r*ă*z
+Palatalisation: *θ*u*n*r*ă*z
+ConsonantRules: *θ*u*n*r
+GhMarker: *θ*u*n*r
+GlideDeletion: *θ*u*n*r
+ProtoToOE: *θ*u*n*r
+Orthography: þunr, *þunr
+Surface: þunr
+
+--- wether ---
+PROTO: *wiθră
+EXPECTED: weþer
+OUTPUTS: wiþr
+
+ProtoInput: *w*i*θ*r*ă
+InitialKn: *w*i*θ*r*ă
+Palatalisation: *w*i*θ*r*ă
+ConsonantRules: *w*i*θ*r
+GhMarker: ʋ*i*θ*r
+GlideDeletion: ʋ*i*θ*r
+ProtoToOE: *w*i*θ*r
+Orthography: wi*þr, wiþr
+Surface: wiþr
+
+--- winter ---
+PROTO: *wintruz
+EXPECTED: winter
+OUTPUTS: wintr
+
+ProtoInput: *w*i*n*t*r*u*z
+InitialKn: *w*i*n*t*r*u*z
+Palatalisation: *w*i*n*t*r*u*z
+ConsonantRules: *w*i*n*t*r*u
+GhMarker: ʋ*i*n*t*r
+GlideDeletion: ʋ*i*n*t*r
+ProtoToOE: *w*i*n*t*r
+Orthography: wintr
+Surface: wintr
+
+
+=== BUCKET: vowel_quality_other (15) ===
 
 --- craft ---
 PROTO: *kraftiz
@@ -4997,21 +5003,6 @@ GlideDeletion: *k*r*e*f*t
 ProtoToOE: *k*r*e*f*t
 Orthography: creft
 Surface: creft
-
---- crop ---
-PROTO: *kruppăz
-EXPECTED: crop
-OUTPUTS: crupp
-
-ProtoInput: *k*r*u*p*p*ă*z
-InitialKn: *k*r*u*p*p*ă*z
-Palatalisation: *k*r*u*p*p*ă*z
-ConsonantRules: *k*r*u*p*p
-GhMarker: *k*r*u*p*p
-GlideDeletion: *k*r*u*p*p
-ProtoToOE: *k*r*u*p*p
-Orthography: crupp
-Surface: crupp
 
 --- door ---
 PROTO: *durą
@@ -5043,66 +5034,6 @@ ProtoToOE: *ē*l
 Orthography: ēl
 Surface: ēl
 
---- finger ---
-PROTO: *fingrăz
-EXPECTED: finger
-OUTPUTS: fingr
-
-ProtoInput: *f*i*n*g*r*ă*z
-InitialKn: *f*i*n*g*r*ă*z
-Palatalisation: *f*i*n*g*r*ă*z
-ConsonantRules: *f*i*n*g*r
-GhMarker: *f*i*n*g*r
-GlideDeletion: *f*i*n*g*r
-ProtoToOE: *f*i*n*g*r
-Orthography: fingr
-Surface: fingr
-
---- fish ---
-PROTO: *fiskăz
-EXPECTED: fisċ
-OUTPUTS: fisc
-
-ProtoInput: *f*i*s*k*ă*z
-InitialKn: *f*i*s*k*ă*z
-Palatalisation: *f*i*s*k*ă*z
-ConsonantRules: *f*i*s*k
-GhMarker: *f*iʃ
-GlideDeletion: *f*iʃ
-ProtoToOE: *f*iʃ
-Orthography: fisc
-Surface: fisc
-
---- fowl ---
-PROTO: *fuglăz
-EXPECTED: fugol
-OUTPUTS: fugl
-
-ProtoInput: *f*u*g*l*ă*z
-InitialKn: *f*u*g*l*ă*z
-Palatalisation: *f*u*g*l*ă*z
-ConsonantRules: *f*u*g*l
-GhMarker: *f*u*g*l
-GlideDeletion: *f*u*g*l
-ProtoToOE: *f*u*g*l
-Orthography: fugl
-Surface: fugl
-
---- fox ---
-PROTO: *fuxsăz
-EXPECTED: fox
-OUTPUTS: fuhs
-
-ProtoInput: *f*u*x*s*ă*z
-InitialKn: *f*u*x*s*ă*z
-Palatalisation: *f*u*x*s*ă*z
-ConsonantRules: *f*u*x*s
-GhMarker: *f*uGH*s
-GlideDeletion: *f*uGH*s
-ProtoToOE: *f*u*x*s
-Orthography: fuhs
-Surface: fuhs
-
 --- god ---
 PROTO: *gud
 EXPECTED: god
@@ -5117,126 +5048,6 @@ GlideDeletion: *g*u*d
 ProtoToOE: *g*u*d
 Orthography: gud
 Surface: gud
-
---- hair ---
-PROTO: *xazwăz
-EXPECTED: hǣr
-OUTPUTS: hærw
-
-ProtoInput: *x*a*z*w*ă*z
-InitialKn: *x*a*z*w*ă*z
-Palatalisation: *x*a*z*w*ă*z
-ConsonantRules: *x*ar*w
-GhMarker: ç*ærʋ
-GlideDeletion: ç*ærʋ
-ProtoToOE: ç*ær*w
-Orthography: hærw
-Surface: hærw
-
---- hedge ---
-PROTO: *xagjăz
-EXPECTED: heċġ
-OUTPUTS: hæġġ
-
-ProtoInput: *x*a*g*j*ă*z
-InitialKn: *x*a*g*j*ă*z
-Palatalisation: *x*a*g*j*ă*z
-ConsonantRules: *x*a*g*j
-GhMarker: ç*æʤ*j
-GlideDeletion: ç*æʤ*j
-ProtoToOE: ç*æʤ*j
-Orthography: hæġġ
-Surface: hæġġ
-
---- horn ---
-PROTO: *xurnăn
-EXPECTED: horn
-OUTPUTS: hurnan
-
-ProtoInput: *x*u*r*n*ă*n
-InitialKn: *x*u*r*n*ă*n
-Palatalisation: *x*u*r*n*ă*n
-ConsonantRules: *x*u*r*n*ă*n
-GhMarker: *x*u*r*n*a*n
-GlideDeletion: *x*u*r*n*a*n
-ProtoToOE: *x*u*r*n*a*n
-Orthography: hurnan
-Surface: hurnan
-
---- knob ---
-PROTO: *knuppăz
-EXPECTED: knob
-OUTPUTS: cnupp
-
-ProtoInput: *k*n*u*p*p*ă*z
-InitialKn: Kn*u*p*p*ă*z
-Palatalisation: Kn*u*p*p*ă*z
-ConsonantRules: Kn*u*p*p
-GhMarker: Kn*u*p*p
-GlideDeletion: Kn*u*p*p
-ProtoToOE: Kn*u*p*p
-Orthography: cnupp
-Surface: cnupp
-
---- lid ---
-PROTO: *liθuz
-EXPECTED: hlid
-OUTPUTS: liþ
-
-ProtoInput: *l*i*θ*u*z
-InitialKn: *l*i*θ*u*z
-Palatalisation: *l*i*θ*u*z
-ConsonantRules: *l*i*θ*u
-GhMarker: *l*i*θ
-GlideDeletion: *l*i*θ
-ProtoToOE: *l*i*θ
-Orthography: li*þ, liþ
-Surface: liþ
-
---- loam ---
-PROTO: *laimōn
-EXPECTED: lām
-OUTPUTS: lāmōn
-
-ProtoInput: *l*ai*m*ō*n
-InitialKn: *l*ai*m*ō*n
-Palatalisation: *l*ai*m*ō*n
-ConsonantRules: *l*ai*m*ō*n
-GhMarker: *l*ā*m*ō*n
-GlideDeletion: *l*ā*m*ō*n
-ProtoToOE: *l*ā*m*ō*n
-Orthography: lāmōn
-Surface: lāmōn
-
---- loath ---
-PROTO: *laiθăz
-EXPECTED: lāð
-OUTPUTS: lāþ
-
-ProtoInput: *l*ai*θ*ă*z
-InitialKn: *l*ai*θ*ă*z
-Palatalisation: *l*ai*θ*ă*z
-ConsonantRules: *l*ai*θ
-GhMarker: *l*ā*θ
-GlideDeletion: *l*ā*θ
-ProtoToOE: *l*ā*θ
-Orthography: lāþ, lā*þ
-Surface: lāþ
-
---- lock ---
-PROTO: *lukkăz
-EXPECTED: loc
-OUTPUTS: lucc
-
-ProtoInput: *l*u*k*k*ă*z
-InitialKn: *l*u*k*k*ă*z
-Palatalisation: *l*u*k*k*ă*z
-ConsonantRules: *l*u*k*k
-GhMarker: *l*u*k*k
-GlideDeletion: *l*u*k*k
-ProtoToOE: *l*u*k*k
-Orthography: lucc
-Surface: lucc
 
 --- month ---
 PROTO: *mēnōθz
@@ -5283,51 +5094,6 @@ ProtoToOE: *u*f*n
 Orthography: ufn
 Surface: ufn
 
---- raven ---
-PROTO: *xrabnăz
-EXPECTED: hræfn
-OUTPUTS: hræbn
-
-ProtoInput: *x*r*a*b*n*ă*z
-InitialKn: *x*r*a*b*n*ă*z
-Palatalisation: *x*r*a*b*n*ă*z
-ConsonantRules: *x*r*a*b*n
-GhMarker: *x*r*æ*b*n
-GlideDeletion: *x*r*æ*b*n
-ProtoToOE: *x*r*æ*b*n
-Orthography: hræbn
-Surface: hræbn
-
---- rudder ---
-PROTO: *rōθrăz
-EXPECTED: rōþor
-OUTPUTS: rōþr
-
-ProtoInput: *r*ō*θ*r*ă*z
-InitialKn: *r*ō*θ*r*ă*z
-Palatalisation: *r*ō*θ*r*ă*z
-ConsonantRules: *r*ō*θ*r
-GhMarker: *r*ō*θ*r
-GlideDeletion: *r*ō*θ*r
-ProtoToOE: *r*ō*θ*r
-Orthography: rōþr, rō*þr
-Surface: rōþr
-
---- seek ---
-PROTO: *sōkjăną
-EXPECTED: sēċan
-OUTPUTS: sōċġan
-
-ProtoInput: *s*ō*k*j*ă*n*ą
-InitialKn: *s*ō*k*j*ă*n*ą
-Palatalisation: *s*ō*k*j*ă*n*ą
-ConsonantRules: *s*ō*k*j*ă*n*ą
-GhMarker: *s*ōʧ*j*a*n
-GlideDeletion: *s*ōʧ*j*a*n
-ProtoToOE: *s*ōʧ*j*a*n
-Orthography: sōċġan
-Surface: sōċġan
-
 --- spoon ---
 PROTO: *spēnuz
 EXPECTED: spōn
@@ -5342,21 +5108,6 @@ GlideDeletion: *s*p*ē*n
 ProtoToOE: *s*p*ē*n
 Orthography: spēn
 Surface: spēn
-
---- staff ---
-PROTO: *stabiz
-EXPECTED: stæf
-OUTPUTS: steb
-
-ProtoInput: *s*t*a*b*i*z
-InitialKn: *s*t*a*b*i*z
-Palatalisation: *s*t*a*b*i*z
-ConsonantRules: *s*t*a*b*i
-GhMarker: *s*t*e*b
-GlideDeletion: *s*t*e*b
-ProtoToOE: *s*t*e*b
-Orthography: steb
-Surface: steb
 
 --- stem ---
 PROTO: *stamnăz
@@ -5463,20 +5214,311 @@ ProtoToOE: *θ*u*r*n
 Orthography: þurn, *þurn
 Surface: þurn
 
---- thunder ---
-PROTO: *θunrăz
-EXPECTED: þunor
-OUTPUTS: þunr
 
-ProtoInput: *θ*u*n*r*ă*z
-InitialKn: *θ*u*n*r*ă*z
-Palatalisation: *θ*u*n*r*ă*z
-ConsonantRules: *θ*u*n*r
-GhMarker: *θ*u*n*r
-GlideDeletion: *θ*u*n*r
-ProtoToOE: *θ*u*n*r
-Orthography: þunr, *þunr
-Surface: þunr
+=== BUCKET: gemination_extra (5) ===
+
+--- buck ---
+PROTO: *bukkăz
+EXPECTED: buc
+OUTPUTS: bucc
+
+ProtoInput: *b*u*k*k*ă*z
+InitialKn: *b*u*k*k*ă*z
+Palatalisation: *b*u*k*k*ă*z
+ConsonantRules: *b*u*k*k
+GhMarker: *b*u*k*k
+GlideDeletion: *b*u*k*k
+ProtoToOE: *b*u*k*k
+Orthography: bucc
+Surface: bucc
+
+--- crop ---
+PROTO: *kruppăz
+EXPECTED: crop
+OUTPUTS: crupp
+
+ProtoInput: *k*r*u*p*p*ă*z
+InitialKn: *k*r*u*p*p*ă*z
+Palatalisation: *k*r*u*p*p*ă*z
+ConsonantRules: *k*r*u*p*p
+GhMarker: *k*r*u*p*p
+GlideDeletion: *k*r*u*p*p
+ProtoToOE: *k*r*u*p*p
+Orthography: crupp
+Surface: crupp
+
+--- hedge ---
+PROTO: *xagjăz
+EXPECTED: heċġ
+OUTPUTS: hæġġ
+
+ProtoInput: *x*a*g*j*ă*z
+InitialKn: *x*a*g*j*ă*z
+Palatalisation: *x*a*g*j*ă*z
+ConsonantRules: *x*a*g*j
+GhMarker: ç*æʤ*j
+GlideDeletion: ç*æʤ*j
+ProtoToOE: ç*æʤ*j
+Orthography: hæġġ
+Surface: hæġġ
+
+--- knob ---
+PROTO: *knuppăz
+EXPECTED: knob
+OUTPUTS: cnupp
+
+ProtoInput: *k*n*u*p*p*ă*z
+InitialKn: Kn*u*p*p*ă*z
+Palatalisation: Kn*u*p*p*ă*z
+ConsonantRules: Kn*u*p*p
+GhMarker: Kn*u*p*p
+GlideDeletion: Kn*u*p*p
+ProtoToOE: Kn*u*p*p
+Orthography: cnupp
+Surface: cnupp
+
+--- lock ---
+PROTO: *lukkăz
+EXPECTED: loc
+OUTPUTS: lucc
+
+ProtoInput: *l*u*k*k*ă*z
+InitialKn: *l*u*k*k*ă*z
+Palatalisation: *l*u*k*k*ă*z
+ConsonantRules: *l*u*k*k
+GhMarker: *l*u*k*k
+GlideDeletion: *l*u*k*k
+ProtoToOE: *l*u*k*k
+Orthography: lucc
+Surface: lucc
+
+
+=== BUCKET: consonant_mismatch_other (21) ===
+
+--- beaver ---
+PROTO: *bebruz
+EXPECTED: befer
+OUTPUTS: bebr
+
+ProtoInput: *b*e*b*r*u*z
+InitialKn: *b*e*b*r*u*z
+Palatalisation: *b*e*b*r*u*z
+ConsonantRules: *b*e*b*r*u
+GhMarker: *b*e*b*r
+GlideDeletion: *b*e*b*r
+ProtoToOE: *b*e*b*r
+Orthography: bebr
+Surface: bebr
+
+--- bone ---
+PROTO: *bainăn
+EXPECTED: bān
+OUTPUTS: bānan
+
+ProtoInput: *b*ai*n*ă*n
+InitialKn: *b*ai*n*ă*n
+Palatalisation: *b*ai*n*ă*n
+ConsonantRules: *b*ai*n*ă*n
+GhMarker: *b*ā*n*a*n
+GlideDeletion: *b*ā*n*a*n
+ProtoToOE: *b*ā*n*a*n
+Orthography: bānan
+Surface: bānan
+
+--- both ---
+PROTO: *bō
+EXPECTED: bā]] [[þā
+OUTPUTS: bō
+
+ProtoInput: *b*ō
+InitialKn: *b*ō
+Palatalisation: *b*ō
+ConsonantRules: *b*ō
+GhMarker: *b*ō
+GlideDeletion: *b*ō
+ProtoToOE: *b*ō
+Orthography: bō
+Surface: bō
+
+--- bottom ---
+PROTO: *budmăz
+EXPECTED: botm
+OUTPUTS: budm
+
+ProtoInput: *b*u*d*m*ă*z
+InitialKn: *b*u*d*m*ă*z
+Palatalisation: *b*u*d*m*ă*z
+ConsonantRules: *b*u*d*m
+GhMarker: *b*u*d*m
+GlideDeletion: *b*u*d*m
+ProtoToOE: *b*u*d*m
+Orthography: budm
+Surface: budm
+
+--- breeches ---
+PROTO: *brekăną
+EXPECTED: brēċ
+OUTPUTS: breċan
+
+ProtoInput: *b*r*e*k*ă*n*ą
+InitialKn: *b*r*e*k*ă*n*ą
+Palatalisation: *b*r*e*k*ă*n*ą
+ConsonantRules: *b*r*e*k*ă*n*ą
+GhMarker: *b*r*eʧ*a*n
+GlideDeletion: *b*r*eʧ*a*n
+ProtoToOE: *b*r*eʧ*a*n
+Orthography: breċan
+Surface: breċan
+
+--- corn ---
+PROTO: *kurnăn
+EXPECTED: corn
+OUTPUTS: curnan
+
+ProtoInput: *k*u*r*n*ă*n
+InitialKn: *k*u*r*n*ă*n
+Palatalisation: *k*u*r*n*ă*n
+ConsonantRules: *k*u*r*n*ă*n
+GhMarker: *k*u*r*n*a*n
+GlideDeletion: *k*u*r*n*a*n
+ProtoToOE: *k*u*r*n*a*n
+Orthography: curnan
+Surface: curnan
+
+--- fox ---
+PROTO: *fuxsăz
+EXPECTED: fox
+OUTPUTS: fuhs
+
+ProtoInput: *f*u*x*s*ă*z
+InitialKn: *f*u*x*s*ă*z
+Palatalisation: *f*u*x*s*ă*z
+ConsonantRules: *f*u*x*s
+GhMarker: *f*uGH*s
+GlideDeletion: *f*uGH*s
+ProtoToOE: *f*u*x*s
+Orthography: fuhs
+Surface: fuhs
+
+--- hair ---
+PROTO: *xazwăz
+EXPECTED: hǣr
+OUTPUTS: hærw
+
+ProtoInput: *x*a*z*w*ă*z
+InitialKn: *x*a*z*w*ă*z
+Palatalisation: *x*a*z*w*ă*z
+ConsonantRules: *x*ar*w
+GhMarker: ç*ærʋ
+GlideDeletion: ç*ærʋ
+ProtoToOE: ç*ær*w
+Orthography: hærw
+Surface: hærw
+
+--- horn ---
+PROTO: *xurnăn
+EXPECTED: horn
+OUTPUTS: hurnan
+
+ProtoInput: *x*u*r*n*ă*n
+InitialKn: *x*u*r*n*ă*n
+Palatalisation: *x*u*r*n*ă*n
+ConsonantRules: *x*u*r*n*ă*n
+GhMarker: *x*u*r*n*a*n
+GlideDeletion: *x*u*r*n*a*n
+ProtoToOE: *x*u*r*n*a*n
+Orthography: hurnan
+Surface: hurnan
+
+--- lid ---
+PROTO: *liθuz
+EXPECTED: hlid
+OUTPUTS: liþ
+
+ProtoInput: *l*i*θ*u*z
+InitialKn: *l*i*θ*u*z
+Palatalisation: *l*i*θ*u*z
+ConsonantRules: *l*i*θ*u
+GhMarker: *l*i*θ
+GlideDeletion: *l*i*θ
+ProtoToOE: *l*i*θ
+Orthography: li*þ, liþ
+Surface: liþ
+
+--- loam ---
+PROTO: *laimōn
+EXPECTED: lām
+OUTPUTS: lāmōn
+
+ProtoInput: *l*ai*m*ō*n
+InitialKn: *l*ai*m*ō*n
+Palatalisation: *l*ai*m*ō*n
+ConsonantRules: *l*ai*m*ō*n
+GhMarker: *l*ā*m*ō*n
+GlideDeletion: *l*ā*m*ō*n
+ProtoToOE: *l*ā*m*ō*n
+Orthography: lāmōn
+Surface: lāmōn
+
+--- loath ---
+PROTO: *laiθăz
+EXPECTED: lāð
+OUTPUTS: lāþ
+
+ProtoInput: *l*ai*θ*ă*z
+InitialKn: *l*ai*θ*ă*z
+Palatalisation: *l*ai*θ*ă*z
+ConsonantRules: *l*ai*θ
+GhMarker: *l*ā*θ
+GlideDeletion: *l*ā*θ
+ProtoToOE: *l*ā*θ
+Orthography: lāþ, lā*þ
+Surface: lāþ
+
+--- raven ---
+PROTO: *xrabnăz
+EXPECTED: hræfn
+OUTPUTS: hræbn
+
+ProtoInput: *x*r*a*b*n*ă*z
+InitialKn: *x*r*a*b*n*ă*z
+Palatalisation: *x*r*a*b*n*ă*z
+ConsonantRules: *x*r*a*b*n
+GhMarker: *x*r*æ*b*n
+GlideDeletion: *x*r*æ*b*n
+ProtoToOE: *x*r*æ*b*n
+Orthography: hræbn
+Surface: hræbn
+
+--- seek ---
+PROTO: *sōkjăną
+EXPECTED: sēċan
+OUTPUTS: sōċġan
+
+ProtoInput: *s*ō*k*j*ă*n*ą
+InitialKn: *s*ō*k*j*ă*n*ą
+Palatalisation: *s*ō*k*j*ă*n*ą
+ConsonantRules: *s*ō*k*j*ă*n*ą
+GhMarker: *s*ōʧ*j*a*n
+GlideDeletion: *s*ōʧ*j*a*n
+ProtoToOE: *s*ōʧ*j*a*n
+Orthography: sōċġan
+Surface: sōċġan
+
+--- staff ---
+PROTO: *stabiz
+EXPECTED: stæf
+OUTPUTS: steb
+
+ProtoInput: *s*t*a*b*i*z
+InitialKn: *s*t*a*b*i*z
+Palatalisation: *s*t*a*b*i*z
+ConsonantRules: *s*t*a*b*i
+GhMarker: *s*t*e*b
+GlideDeletion: *s*t*e*b
+ProtoToOE: *s*t*e*b
+Orthography: steb
+Surface: steb
 
 --- toe ---
 PROTO: *taixwō
@@ -5553,21 +5595,6 @@ ProtoToOE: *w*æ*t*n
 Orthography: wætn
 Surface: wætn
 
---- wether ---
-PROTO: *wiθră
-EXPECTED: weþer
-OUTPUTS: wiþr
-
-ProtoInput: *w*i*θ*r*ă
-InitialKn: *w*i*θ*r*ă
-Palatalisation: *w*i*θ*r*ă
-ConsonantRules: *w*i*θ*r
-GhMarker: ʋ*i*θ*r
-GlideDeletion: ʋ*i*θ*r
-ProtoToOE: *w*i*θ*r
-Orthography: wi*þr, wiþr
-Surface: wiþr
-
 --- whale ---
 PROTO: *walăz
 EXPECTED: hwæl
@@ -5582,18 +5609,3 @@ GlideDeletion: ʋ*æ*l
 ProtoToOE: *w*æ*l
 Orthography: wæl
 Surface: wæl
-
---- winter ---
-PROTO: *wintruz
-EXPECTED: winter
-OUTPUTS: wintr
-
-ProtoInput: *w*i*n*t*r*u*z
-InitialKn: *w*i*n*t*r*u*z
-Palatalisation: *w*i*n*t*r*u*z
-ConsonantRules: *w*i*n*t*r*u
-GhMarker: ʋ*i*n*t*r
-GlideDeletion: ʋ*i*n*t*r
-ProtoToOE: *w*i*n*t*r
-Orthography: wintr
-Surface: wintr
