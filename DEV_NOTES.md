@@ -4,7 +4,8 @@
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
 - Latest OE diagnostics (use the unified report script going forward):
-  - `docs/debug_snapshots/oe_mismatch_report_2026-01-03a.txt` (from `server/tools/oe_mismatch_report.py`)
+  - `docs/debug_snapshots/oe_mismatch_report.txt` (from `server/tools/oe_mismatch_report.py`, now normalizes proto `þ`→`θ`)
+  - `docs/debug_snapshots/oe_full_trace_report.txt` (full per‑lexeme stage trace with refined buckets)
   - `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
   - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt`
   - `docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`
@@ -15,13 +16,14 @@
 - Next actionable targets (from latest buckets):
   1. **Fronting missing w/ no trigger:** review a‑restoration contexts and nasal blocks (see 2026‑01‑01 subgroup traces).
   2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re‑trace `oe_breaking_probe`.
-  3. **Long‑vowel missing (6 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
+  3. **Long‑vowel missing (5 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
 - Long‑vowel‑missing deep dive (2026-01-02): see `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`.
   - Biggest actionable sources:
     - **PGmc *au not lengthened** → change `*aeu -> *ēa` (or add a dedicated “long diphthong” step right after leveling).
     - **PGmc *eu/*iu not mapped to OE long diphthongs** → add `*eu/*iu -> *ēo` (WS merge).
     - **OE ō before velars should stay long** → move `EnglishVelarShortening` out of the OE block (OE keeps bōc/bōg).
   - “Other” misses (e.g., *end→ān, *utrăz→nǣdre, *xattuz→hōd) are not long‑vowel rules; treat separately.
+  - Bucket taxonomy update (2026-01-03): the report now splits the former `uncategorized` bucket into `palatal_marker_variant`, `epenthetic_vowel_missing`, `vowel_quality_other`, `gemination_extra`, and `consonant_mismatch_other`.
 
 ## 2025-12-07
 
