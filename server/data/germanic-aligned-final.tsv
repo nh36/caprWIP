@@ -39,10 +39,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1864	b iː ʧ	*bōkō	b iː ʧ ( - - - - )	biːʧ	beech	511	English				beech	*bōkō	10
 1942	b ē ċ e	*bōkō	b iː ʧ ( - - - - )	biːʧ	bēċe	511	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			beech	*bōkō	10
 1863	b uː x ə	*bōkō	b uː x ( ə - - - )	buːxə	Buche	511	German				beech	*bōkō	10
-1154	b ə ɣ ɪ n ə	*gennăną	( b ə ) ɣ ɪ n ə - ( - - )	bəɣɪnə	beginnen	316	Dutch				begin	*gennăną	11
-1153	b ɪ ɡ ɪ n	*gennăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	begin	316	English				begin	*gennăną	11
-1943	b e g i n n a n	*gennăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	beginnan	316	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			begin	*gennăną	11
-1152	b ə ɡ ɪ n ə n	*gennăną	( b ə ) ɡ ɪ n ə n ( - - )	bəɡɪnən	beginnen	316	German				begin	*gennăną	11
+1154	b ə ɣ ɪ n ə	*biginnăną	( b ə ) ɣ ɪ n ə - ( - - )	bəɣɪnə	beginnen	316	Dutch				begin	*biginnăną	11
+1153	b ɪ ɡ ɪ n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	begin	316	English				begin	*biginnăną	11
+1943	b e g i n n a n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	beginnan	316	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			begin	*biginnăną	11
+1152	b ə ɡ ɪ n ə n	*biginnăną	( b ə ) ɡ ɪ n ə n ( - - )	bəɡɪnən	beginnen	316	German				begin	*biginnăną	11
 266	x ə l oː v ə	*laubjăną	( x ə ) l oː v - ə - ( - - )	xəloːvə	geloven	73	Dutch				believe	*laubjăną	12
 265	b ɪ l iː v	*laubjăną	( b ɪ ) l iː v - - - ( - - )	bɪliːv	believe	73	English				believe	*laubjăną	12
 1944	b e l ī e f a n	*laubjăną	( b ɪ ) l iː v - - - ( - - )	bɪliːv	belīefan	73	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			believe	*laubjăną	12
@@ -67,10 +67,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 471	b ɪə	*barwōn	b ɪə r ( - - - )	bɪə	bier	129	English				bier	*barwōn	16
 1949	b ē r	*barwōn	b ɪə r ( - - - )	bɪə	bēr	129	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bier	*barwōn	16
 470	b aː r ə	*barwōn	b aː r ( - ə - )	baːrə	Bahre	129	German		C V C		bier	*barwōn	16
-584	b ɪ n d ə	*bendăną	b ɪ n d ə - ( - - )	bɪndə	binden	160	Dutch				bind	*bendăną	17
-583	b aɪ n d	*bendăną	b aɪ n d - - ( - - )	baɪnd	bind	160	English				bind	*bendăną	17
-1950	b i n d a n	*bendăną	b aɪ n d - - ( - - )	baɪnd	bindan	160	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bind	*bendăną	17
-582	b ɪ n d ə n	*bendăną	b ɪ n d ə n ( - - )	bɪndən	binden	160	German				bind	*bendăną	17
+584	b ɪ n d ə	*bindăną	b ɪ n d ə - ( - - )	bɪndə	binden	160	Dutch				bind	*bindăną	17
+583	b aɪ n d	*bindăną	b aɪ n d - - ( - - )	baɪnd	bind	160	English				bind	*bindăną	17
+1950	b i n d a n	*bindăną	b aɪ n d - - ( - - )	baɪnd	bindan	160	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bind	*bindăną	17
+582	b ɪ n d ə n	*bindăną	b ɪ n d ə n ( - - )	bɪndən	binden	160	German				bind	*bindăną	17
 390	x ə b oː r t ə	*burdiz	( x ə ) b oː r t ( ə - )	xəboːrtə	geboorte	107	Dutch				birth	*burdiz	18
 389	b ɜː θ	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	birth	107	English				birth	*burdiz	18
 1951	s ự	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	ġebyrd	107	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			birth	*burdiz	18
@@ -150,10 +150,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 295	b r aɪ d	*brūdiz	b r aɪ d ( - - )	braɪd	bride	82	English				bride	*brūdiz	34
 1970	b r ȳ d	*brūdiz	b r aɪ d ( - - )	braɪd	brȳd	82	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bride	*brūdiz	34
 294	b r au t	*brūdiz	b r au t ( - - )	braut	Braut	82	German				bride	*brūdiz	34
-1652	b r ɛ ŋ ə	*brengăną	b r ɛ ŋ - ə - ( - - )	brɛŋə	brengen	453	Dutch				bring	*brengăną	35
-1651	b r ɪ ŋ	*brengăną	b r ɪ ŋ - - - ( - - )	brɪŋ	bring	453	English				bring	*brengăną	35
-1971	b r i n g a n	*brengăną	b r ɪ ŋ - - - ( - - )	brɪŋ	bringan	453	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bring	*brengăną	35
-1650	b r ɪ ŋ ə n	*brengăną	b r ɪ ŋ - ə n ( - - )	brɪŋən	bringen	453	German				bring	*brengăną	35
+1652	b r ɛ ŋ ə	*bringăną	b r ɛ ŋ - ə - ( - - )	brɛŋə	brengen	453	Dutch				bring	*bringăną	35
+1651	b r ɪ ŋ	*bringăną	b r ɪ ŋ - - - ( - - )	brɪŋ	bring	453	English				bring	*bringăną	35
+1971	b r i n g a n	*bringăną	b r ɪ ŋ - - - ( - - )	brɪŋ	bringan	453	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bring	*bringăną	35
+1650	b r ɪ ŋ ə n	*bringăną	b r ɪ ŋ - ə n ( - - )	brɪŋən	bringen	453	German				bring	*bringăną	35
 1136	x ə b r œy k ə	*brūkăną	( x ə ) b r œy k ə - ( - - )	xəbrœykə	gebruiken	311	Dutch				brook	*brūkăną	36
 1135	b r ʊ k	*brūkăną	( - - ) b r ʊ k - - ( - - )	brʊk	brook	311	English				brook	*brūkăną	36
 1972	b r ū c a n	*brūkăną	( - - ) b r ʊ k - - ( - - )	brʊk	brūcan	311	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			brook	*brūkăną	36
@@ -174,10 +174,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 992	ʧ uː	*kewwăną	ʧ uː - - - ( - - )	ʧuː	chew	272	English				chew	*kewwăną	40
 1976	ċ ē o w a n	*kewwăną	ʧ uː - - - ( - - )	ʧuː	ċēowan	272	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			chew	*kewwăną	40
 991	k au ə n	*kewwăną	k au - ə n ( - - )	kauən	kauen	272	German				chew	*kewwăną	40
-557	k l ɪ m ə	*klembăną	k l ɪ m - ə - ( - - )	klɪmə	klimmen	152	Dutch				climb	*klembăną	41
-556	k l aɪ m	*klembăną	k l aɪ m - - - ( - - )	klaɪm	climb	152	English				climb	*klembăną	41
-1977	c l i m b a n	*klembăną	k l aɪ m - - - ( - - )	klaɪm	climban	152	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			climb	*klembăną	41
-555	k l ɪ m ə n	*klembăną	k l ɪ m - ə n ( - - )	klɪmən	klimmen	152	German				climb	*klembăną	41
+557	k l ɪ m ə	*klimbăną	k l ɪ m - ə - ( - - )	klɪmə	klimmen	152	Dutch				climb	*klimbăną	41
+556	k l aɪ m	*klimbăną	k l aɪ m - - - ( - - )	klaɪm	climb	152	English				climb	*klimbăną	41
+1977	c l i m b a n	*klimbăną	k l aɪ m - - - ( - - )	klaɪm	climban	152	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			climb	*klimbăną	41
+555	k l ɪ m ə n	*klimbăną	k l ɪ m - ə n ( - - )	klɪmən	klimmen	152	German				climb	*klimbăną	41
 1680	k ɑ m	*kambăz	k ɑ m - ( - - )	kɑm	kam	460	Dutch				comb	*kambăz	42
 1679	k əʊ m	*kambăz	k əʊ m - ( - - )	kəʊm	comb	460	English				comb	*kambăz	42
 1978	c a m b	*kambăz	k əʊ m - ( - - )	kəʊm	camb	460	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			comb	*kambăz	42
@@ -253,10 +253,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 743	d r ɛ n ʧ	*dranką	d r ɛ n ʧ ( - - )	drɛnʧ	drench	204	English				drench	*dranką	59
 1996	d r e n ċ	*dranką	d r ɛ n ʧ ( - - )	drɛnʧ	drenċ	204	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			drench	*dranką	59
 742	t r a ŋ k	*dranką	t r a ŋ k ( - - )	traŋk	Trank	204	German				drench	*dranką	59
-22	d r ɪ ŋ k ə	*drenkăną	d r ɪ ŋ k ə - ( - - )	drɪŋkə	drinken	6	Dutch				drink	*drenkăną	60
-21	d r ɪ ŋ k	*drenkăną	d r ɪ ŋ k - - ( - - )	drɪŋk	drink	6	English				drink	*drenkăną	60
-1997	d r i n c a n	*drenkăną	d r ɪ ŋ k - - ( - - )	drɪŋk	drincan	6	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			drink	*drenkăną	60
-20	t r ɪ ŋ k ə n	*drenkăną	t r ɪ ŋ k ə n ( - - )	trɪŋkən	trinken	6	German				drink	*drenkăną	60
+22	d r ɪ ŋ k ə	*drinkăną	d r ɪ ŋ k ə - ( - - )	drɪŋkə	drinken	6	Dutch				drink	*drinkăną	60
+21	d r ɪ ŋ k	*drinkăną	d r ɪ ŋ k - - ( - - )	drɪŋk	drink	6	English				drink	*drinkăną	60
+1997	d r i n c a n	*drinkăną	d r ɪ ŋ k - - ( - - )	drɪŋk	drincan	6	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			drink	*drinkăną	60
+20	t r ɪ ŋ k ə n	*drinkăną	t r ɪ ŋ k ə n ( - - )	trɪŋkən	trinken	6	German				drink	*drinkăną	60
 1243	d r ɛɪ v ə	*drībăną	d r ɛɪ v ə - ( - - )	drɛɪvə	drijven	341	Dutch				drive	*drībăną	61
 1242	d r aɪ v	*drībăną	d r aɪ v - - ( - - )	draɪv	drive	341	English				drive	*drībăną	61
 1998	d r ī f a n	*drībăną	d r aɪ v - - ( - - )	draɪv	drīfan	341	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			drive	*drībăną	61
@@ -309,14 +309,14 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 159	f aɪ t	*fextăną	f aɪ - t - - ( - - )	faɪt	fight	45	English				fight	*fextăną	73
 2010	f e o h t a n	*fextăną	f aɪ - t - - ( - - )	faɪt	feohtan	45	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fight	*fextăną	73
 158	f ɛ x t ə n	*fextăną	f ɛ x t ə n ( - - )	fɛxtən	fechten	45	German				fight	*fextăną	73
-1762	v ɪ n d ə	*fenθăną	v ɪ n d ə - ( - - )	vɪndə	vinden	482	Dutch				find	*fenθăną	74
-1761	f aɪ n d	*fenθăną	f aɪ n d - - ( - - )	faɪnd	find	482	English				find	*fenθăną	74
-2011	f i n d a n	*fenθăną	f aɪ n d - - ( - - )	faɪnd	findan	482	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			find	*fenθăną	74
-1760	f ɪ n d ə n	*fenθăną	f ɪ n d ə n ( - - )	fɪndən	finden	482	German				find	*fenθăną	74
-1702	v ɪ ŋ ə r	*fengrăz	v ɪ ŋ - ə r ( - - )	vɪŋər	vinger	466	Dutch				finger	*fengrăz	75
-1701	f ɪ ŋ ɡ ə	*fengrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	English				finger	*fengrăz	75
-2012	f i n g e r	*fengrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			finger	*fengrăz	75
-1700	f ɪ ŋ ə r	*fengrăz	f ɪ ŋ - ə r ( - - )	fɪŋər	Finger	466	German				finger	*fengrăz	75
+1762	v ɪ n d ə	*finþăną	v ɪ n d ə - ( - - )	vɪndə	vinden	482	Dutch				find	*finþăną	74
+1761	f aɪ n d	*finþăną	f aɪ n d - - ( - - )	faɪnd	find	482	English				find	*finþăną	74
+2011	f i n d a n	*finþăną	f aɪ n d - - ( - - )	faɪnd	findan	482	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			find	*finþăną	74
+1760	f ɪ n d ə n	*finþăną	f ɪ n d ə n ( - - )	fɪndən	finden	482	German				find	*finþăną	74
+1702	v ɪ ŋ ə r	*fingrăz	v ɪ ŋ - ə r ( - - )	vɪŋər	vinger	466	Dutch				finger	*fingrăz	75
+1701	f ɪ ŋ ɡ ə	*fingrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	English				finger	*fingrăz	75
+2012	f i n g e r	*fingrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			finger	*fingrăz	75
+1700	f ɪ ŋ ə r	*fingrăz	f ɪ ŋ - ə r ( - - )	fɪŋər	Finger	466	German				finger	*fingrăz	75
 1588	v yː r	*fuwer	v yː - - r	vyːr	vuur	435	Dutch				fire	*fuwer	76
 1587	f aɪ ə	*fuwer	f aɪ - ə r	faɪə	fire	435	English				fire	*fuwer	76
 2013	f ȳ r	*fuwer	f aɪ - ə r	fyːr	fȳr	435	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fire	*fuwer	76
@@ -551,9 +551,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2072	h e l p	*xelpō	h ɛ l p -	hɛlp	help	131	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			help	*xelpō	128
 1444	h ɛ l f ə n	*xelpăną	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German				help	*xelpăną	128
 477	h ɪ l f ə	*xelpō	h ɪ l f ə	hɪlfə	Hilfe	131	German				help	*xelpō	128
-345	h ɜː d	*xerdō	h ɜː - d ( - )	hɜːd	herd	95	English				herd	*xerdō	342
-2073	h i e r d	*xerdō	h ɜː - d ( - )	hɜːd	hierd	95	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			herd	*xerdō	342
-344	h eː r d ə	*xerdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō	342
+345	h ɜː d	*herdō	h ɜː - d ( - )	hɜːd	herd	95	English				herd	*herdō	342
+2073	h i e r d	*herdō	h ɜː - d ( - )	hɜːd	hierd	95	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			herd	*herdō	342
+344	h eː r d ə	*herdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*herdō	342
 93	h ɑu ʋ ə	*xawwăną	h - ɑu ʋ ə - ( - - )	hɑuʋə	houwen	26	Dutch				hew	*xawwăną	129
 92	h j uː	*xawwăną	h j uː - - - ( - - )	hjuː	hew	26	English				hew	*xawwăną	129
 2074	h ē a w a n	*xawwăną	h j uː - - - ( - - )	hjuː	hēawan	26	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hew	*xawwăną	129
@@ -600,10 +600,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 907	n iː	*knewą	- n iː ( - - - )	niː	knee	249	English				knee	*knewą	138
 2085	c n ē o w	*knewą	- n iː ( - - - )	kneːo̯w	cnēow	249	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			knee	*knewą	138
 906	k n iː	*knewą	k n iː ( - - - )	kniː	Knie	249	German				knee	*knewą	138
-771	k n ɛ x t	*knext	k n ɛ x - t	knɛxt	knecht	211	Dutch				knight	*knext	139
-770	n aɪ t	*knext	- n aɪ - - t	naɪt	knight	211	English				knight	*knext	139
-2086	c n i h t	*knext	- n aɪ - - t	naɪt	cniht	211	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			knight	*knext	139
-769	k n ɛ x t	*knext	k n ɛ x - t	knɛxt	Knecht	211	German				knight	*knext	139
+771	k n ɛ x t	*knixtăz	k n ɛ x - t	knɛxt	knecht	211	Dutch				knight	*knixtăz	139
+770	n aɪ t	*knixtăz	- n aɪ - - t	naɪt	knight	211	English				knight	*knixtăz	139
+2086	c n i h t	*knixtăz	- n aɪ - - t	naɪt	cniht	211	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			knight	*knixtăz	139
+769	k n ɛ x t	*knixtăz	k n ɛ x - t	knɛxt	Knecht	211	German				knight	*knixtăz	139
 539	k n oː p	*knuppăz	k n oː p ( - - )	knoːp	knoop	147	Dutch				knob	*knuppăz	140
 538	n ɔ b	*knuppăz	- n ɔ b ( - - )	nɔb	knob	147	English				knob	*knuppăz	140
 2087	n ɔ b	*knuppăz	- n ɔ b ( - - )	nɔb	knob	147	Old_English	No attested Old English cognate; English 'knob' enters Middle English from Low German / Middle Dutch sources (Wiktionary etymology).			knob	*knuppăz	140
@@ -669,10 +669,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 121	l aɪ m	*līmą	l aɪ m ( - - )	laɪm	lime	34	English				lime	*līmą	153
 2103	l ī m	*līmą	l aɪ m ( - - )	laɪm	līm	34	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lime	*līmą	153
 120	l ai m	*līmą	l ai m ( - - )	laim	Leim	34	German				lime	*līmą	153
-1727	l ɪ n d ə	*lendō	l ɪ n d ( ə - )	lɪndə	linde	473	Dutch				linden	*lendō	154
-1726	l ɪ n d ə n	*lendō	l ɪ n d ( ə n )	lɪndən	linden	473	English				linden	*lendō	154
-2104	l i n d e n	*lendō	l ɪ n d ( ə n )	lɪndən	linden	473	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			linden	*lendō	154
-1725	l ɪ n d ə	*lendō	l ɪ n d ( ə - )	lɪndə	Linde	473	German				linden	*lendō	154
+1727	l ɪ n d ə	*lindō	l ɪ n d ( ə - )	lɪndə	linde	473	Dutch				linden	*lindō	154
+1726	l ɪ n d ə n	*lindō	l ɪ n d ( ə n )	lɪndən	linden	473	English				linden	*lindō	154
+2104	l i n d e n	*lindō	l ɪ n d ( ə n )	lɪndən	linden	473	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			linden	*lindō	154
+1725	l ɪ n d ə	*lindō	l ɪ n d ( ə - )	lɪndə	Linde	473	German				linden	*lindō	154
 945	l ɛɪ n	*līnăn	l ɛɪ n ( - - )	lɛɪn	lijn	259	Dutch				line	*līnăn	155
 944	l aɪ n	*līnăn	l aɪ n ( - - )	laɪn	line	259	English				line	*līnăn	155
 2105	l ī n e	*līnăn	l aɪ n ( - - )	laɪn	līne	259	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			line	*līnăn	155
@@ -865,9 +865,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 166	r aɪ d	*rīdăną	r aɪ d - - ( - - )	raɪd	ride	47	English				ride	*rīdăną	199
 2153	r ī d a n	*rīdăną	r aɪ d - - ( - - )	raɪd	rīdan	47	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ride	*rīdăną	199
 165	r ai t ə n	*rīdăną	r ai t ə n ( - - )	raitən	reiten	47	German				ride	*rīdăną	199
-1550	r aɪ n d	*rendō	r aɪ n d -	raɪnd	rind	425	English				rind	*rendō	351
-2154	r i n d	*rendō	r aɪ n d -	raɪnd	rind	425	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rind	*rendō	351
-1549	r ɪ n d ə	*rendō	r ɪ n d ə	rɪndə	Rinde	425	German				rind	*rendō	351
+1550	r aɪ n d	*rindō	r aɪ n d -	raɪnd	rind	425	English				rind	*rindō	351
+2154	r i n d	*rindō	r aɪ n d -	raɪnd	rind	425	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rind	*rindō	351
+1549	r ɪ n d ə	*rindō	r ɪ n d ə	rɪndə	Rinde	425	German				rind	*rindō	351
 1385	r ʉ k	*rukkiz	r ʉ k ( - - )	rʉk	ruk	379	Dutch				rock	*rukkiz	200
 1384	r ɔ k	*rukkiz	r ɔ k ( - - )	rɔk	rock	379	English				rock	*rukkiz	200
 2155	* r o c c	*rukkiz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | OE rocc attested in compound stānrocc; rocc is cognate with ModE rock.			rock	*rukkiz	200
@@ -891,9 +891,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1671	r ʌ d ə	*rōθrăz	r ʌ d ə r ( - - )	rʌdə	rudder	458	English				rudder	*rōθrăz	204
 2160	r ō þ o r	*rōθrăz	r ʌ d ə r ( - - )	rʌdə	rōþor	458	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rudder	*rōθrăz	204
 1670	r uː d ə r	*rōθrăz	r uː d ə r ( - - )	ruːdər	Ruder	458	German				rudder	*rōθrăz	204
-966	r ʌ n	*rennăną	r ʌ n - - ( - - )	rʌn	run	265	English				run	*rennăną	353
-2161	r i n n a n	*rennăną	r ʌ n - - ( - - )	rʌn	rinnan	265	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			run	*rennăną	353
-965	r ɪ n ə n	*rennăną	r ɪ n ə n ( - - )	rɪnən	rinnen	265	German				run	*rennăną	353
+966	r ʌ n	*rinnăną	r ʌ n - - ( - - )	rʌn	run	265	English				run	*rinnăną	353
+2161	r i n n a n	*rinnăną	r ʌ n - - ( - - )	rʌn	rinnan	265	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			run	*rinnăną	353
+965	r ɪ n ə n	*rinnăną	r ɪ n ə n ( - - )	rɪnən	rinnen	265	German				run	*rinnăną	353
 737	r uː s t	*rustō	r uː s t ( - )	ruːst	roest	202	Dutch				rust	*rustō	205
 736	r ʌ s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	English				rust	*rustō	205
 2162	r u s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rust	*rustō	205
@@ -1002,10 +1002,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1749	s ɪ v	*sibăz	s ɪ v ( - - )	sɪv	sieve	479	English				sieve	*sibăz	228
 2189	s i f e	*sibăz	s ɪ v ( - - )	sɪv	sife	479	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sieve	*sibăz	228
 1748	z iː p	*sibăz	z iː b ( - - )	ziːp	Sieb	479	German				sieve	*sibăz	228
-1569	z ɪ ŋ ə	*sengwăną	z ɪ ŋ - ə - ( - - )	zɪŋə	zingen	430	Dutch				sing	*sengwăną	229
-1568	s ɪ ŋ	*sengwăną	s ɪ ŋ - - - ( - - )	sɪŋ	sing	430	English				sing	*sengwăną	229
-2190	s i n g a n	*sengwăną	s ɪ ŋ - - - ( - - )	sɪŋ	singan	430	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sing	*sengwăną	229
-1567	z ɪ ŋ ə n	*sengwăną	z ɪ ŋ - ə n ( - - )	zɪŋən	singen	430	German				sing	*sengwăną	229
+1569	z ɪ ŋ ə	*singwăną	z ɪ ŋ - ə - ( - - )	zɪŋə	zingen	430	Dutch				sing	*singwăną	229
+1568	s ɪ ŋ	*singwăną	s ɪ ŋ - - - ( - - )	sɪŋ	sing	430	English				sing	*singwăną	229
+2190	s i n g a n	*singwăną	s ɪ ŋ - - - ( - - )	sɪŋ	singan	430	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sing	*singwăną	229
+1567	z ɪ ŋ ə n	*singwăną	z ɪ ŋ - ə n ( - - )	zɪŋən	singen	430	German				sing	*singwăną	229
 1609	z ɛ ŋ ə	*sangjăną	z ɛ ŋ - - ə - ( - - )	zɛŋə	zengen	441	Dutch				singe	*sangjăną	230
 1608	s ɪ n ʤ	*sangjăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	singe	441	English				singe	*sangjăną	230
 2191	s e n ġ a n	*sangjăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	senġan	441	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			singe	*sangjăną	230
@@ -1018,10 +1018,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1190	s ɪ t	*setjăną	s ɪ t - - - ( - - )	sɪt	sit	326	English				sit	*setjăną	232
 2193	s i t t a n	*setjăną	s ɪ t - - - ( - - )	sɪt	sittan	326	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sit	*setjăną	232
 1189	z ɪ ts ə n	*setjăną	z ɪ ts - ə n ( - - )	zɪt͡sən	sitzen	326	German				sit	*setjăną	232
-1162	z ɛ s	*sexs	z ɛ - s	zɛs	zes	318	Dutch				six	*sexs	233
-1161	s ɪ k s	*sexs	s ɪ k s	sɪks	six	318	English				six	*sexs	233
-2194	s i x	*sexs	s ɪ k s	sɪks	six	318	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			six	*sexs	233
-1160	z ɛ k s	*sexs	z ɛ k s	zɛks	sechs	318	German				six	*sexs	233
+1162	z ɛ s	*sehs	z ɛ - s	zɛs	zes	318	Dutch				six	*sehs	233
+1161	s ɪ k s	*sehs	s ɪ k s	sɪks	six	318	English				six	*sehs	233
+2194	s i x	*sehs	s ɪ k s	sɪks	six	318	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			six	*sehs	233
+1160	z ɛ k s	*sehs	z ɛ k s	zɛks	sechs	318	German				six	*sehs	233
 1146	s l aː n	*slaxăną	s l aː - - n ( - - )	slaːn	slaan	314	Dutch				slay	*slaxăną	234
 1145	s l eɪ	*slaxăną	s l eɪ - - - ( - - )	sleɪ	slay	314	English				slay	*slaxăną	234
 2195	s l ē a n	*slaxăną	s l eɪ - - - ( - - )	sleɪ	slēan	314	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slay	*slaxăną	234
@@ -1069,10 +1069,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 366	s p ɪə	*speru	s p ɪə r ( - )	spɪə	spear	101	English				spear	*speru	244
 2206	s p e r e	*speru	s p ɪə r ( - )	spɪə	spere	101	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spear	*speru	244
 365	ʃ p eː r	*speru	ʃ p eː r ( - )	ʃpeːr	Speer	101	German				spear	*speru	244
-303	s p ɪ n ə	*spennăną	s p ɪ n ə - ( - - )	spɪnə	spinnen	84	Dutch				spin	*spennăną	245
-302	s p ɪ n	*spennăną	s p ɪ n - - ( - - )	spɪn	spin	84	English				spin	*spennăną	245
-2207	s p i n n a n	*spennăną	s p ɪ n - - ( - - )	spɪn	spinnan	84	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spin	*spennăną	245
-301	ʃ p ɪ n ə n	*spennăną	ʃ p ɪ n ə n ( - - )	ʃpɪnən	spinnen	84	German				spin	*spennăną	245
+303	s p ɪ n ə	*spinnăną	s p ɪ n ə - ( - - )	spɪnə	spinnen	84	Dutch				spin	*spinnăną	245
+302	s p ɪ n	*spinnăną	s p ɪ n - - ( - - )	spɪn	spin	84	English				spin	*spinnăną	245
+2207	s p i n n a n	*spinnăną	s p ɪ n - - ( - - )	spɪn	spinnan	84	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spin	*spinnăną	245
+301	ʃ p ɪ n ə n	*spinnăną	ʃ p ɪ n ə n ( - - )	ʃpɪnən	spinnen	84	German				spin	*spinnăną	245
 181	s p ɪ l	*spennilō	s p ɪ - - - l ( - )	spɪl	spil	51	Dutch				spindle	*spennilō	246
 180	s p ɪ n d ə l	*spennilō	s p ɪ n d ə l ( - )	spɪndḷ	spindle	51	English				spindle	*spennilō	246
 2208	s p i n d l e	*spennilō	s p ɪ n d ə l ( - )	spɪndḷ	spindle	51	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spindle	*spennilō	246
@@ -1093,10 +1093,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1404	s t ɑː f	*stabiz	s t ɑː f ( - - )	stɑːf	staff	384	English				staff	*stabiz	250
 2212	s t æ f	*stabiz	s t ɑː f ( - - )	stɑːf	stæf	384	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			staff	*stabiz	250
 1403	ʃ t aː p	*stabiz	ʃ t aː b ( - - )	ʃtaːp	Stab	384	German				staff	*stabiz	250
-30	s t aː r t	*stertăz	s t aː r t ( - - )	staːrt	staart	8	Dutch				start	*stertăz	251
-29	s t ɑː t	*stertăz	s t ɑː - t ( - - )	stɑːt	start	8	English				start	*stertăz	251
-2213	s t y r t a n	*stertăz	s t ɑː - t ( - - )	stɑːt	styrtan	8	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			start	*stertăz	251
-28	ʃ t ɛ r ts	*stertăz	ʃ t ɛ r ts ( - - )	ʃtɛrt͡s	Sterz	8	German				start	*stertăz	251
+30	s t aː r t	*sturtijăną	s t aː r t ( - - )	staːrt	staart	8	Dutch				start	*sturtijăną	251
+29	s t ɑː t	*sturtijăną	s t ɑː - t ( - - )	stɑːt	start	8	English				start	*sturtijăną	251
+2213	s t y r t a n	*sturtijăną	s t ɑː - t ( - - )	stɑːt	styrtan	8	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			start	*sturtijăną	251
+28	ʃ t ɛ r ts	*sturtijăną	ʃ t ɛ r ts ( - - )	ʃtɛrt͡s	Sterz	8	German				start	*sturtijăną	251
 322	s t ɛ r v ə	*sterbăną	s t ɛ r v ə - - -	stɛrvə	sterven	89	Dutch				starve	*sterbăną	252
 321	s t ɑː v	*sterbăną	s t ɑː - v - - - -	stɑːv	starve	89	English				starve	*sterbăną	252
 2214	s t e o r f a n	*sterbăną	s t ɑː - v - - - -	stɑːv	steorfan	89	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			starve	*sterbăną	252
@@ -1185,10 +1185,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 679	s ʋ ɛ l	*swellăną	s ʋ ɛ l - - ( - - )	sʋɛl	swell	186	English				swell	*swellăną	361
 2236	s w e l l a n	*swellăną	s ʋ ɛ l - - ( - - )	sʋɛl	swellan	186	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swell	*swellăną	361
 678	ʃ v ɛ l ə n	*swellăną	ʃ v ɛ l ə n ( - - )	ʃvɛlən	schwellen	186	German				swell	*swellăną	361
-985	z ʋ ɛ m ə	*swemmăną	z ʋ ɛ m ə - ( - - )	zʋɛmə	zwemmen	270	Dutch				swim	*swemmăną	271
-984	s ʋ ɪ m	*swemmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swim	270	English				swim	*swemmăną	271
-2237	s w i m m a n	*swemmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swimman	270	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swim	*swemmăną	271
-983	ʃ v ɪ m ə n	*swemmăną	ʃ v ɪ m ə n ( - - )	ʃvɪmən	schwimmen	270	German				swim	*swemmăną	271
+985	z ʋ ɛ m ə	*swimmăną	z ʋ ɛ m ə - ( - - )	zʋɛmə	zwemmen	270	Dutch				swim	*swimmăną	271
+984	s ʋ ɪ m	*swimmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swim	270	English				swim	*swimmăną	271
+2237	s w i m m a n	*swimmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swimman	270	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swim	*swimmăną	271
+983	ʃ v ɪ m ə n	*swimmăną	ʃ v ɪ m ə n ( - - )	ʃvɪmən	schwimmen	270	German				swim	*swimmăną	271
 1078	z ʋ ɛɪ n	*swīnăn	z ʋ ɛɪ n ( - - )	zʋɛɪn	zwijn	295	Dutch				swine	*swīnăn	272
 1077	s ʋ aɪ n	*swīnăn	s ʋ aɪ n ( - - )	sʋaɪn	swine	295	English				swine	*swīnăn	272
 2238	s w ī n	*swīnăn	s ʋ aɪ n ( - - )	sʋaɪn	swīn	295	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swine	*swīnăn	272
@@ -1205,10 +1205,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1388	t iː m	*tauxmăz	t iː - m ( - - )	tiːm	team	380	English				team	*tauxmăz	275
 2241	t ē a m	*tauxmăz	t iː - m ( - - )	tiːm	tēam	380	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			team	*tauxmăz	275
 1387	ts au m	*tauxmăz	ts au - m ( - - )	t͡saum	Zaum	380	German				team	*tauxmăz	275
-863	t iː n	*texun	t iː - - n	tiːn	tien	237	Dutch				ten	*texun	276
-862	t ɛ n	*texun	t ɛ - - n	tɛn	ten	237	English				ten	*texun	276
-2242	t ī e n	*texun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*texun	276
-861	ts eː n	*texun	ts eː - - n	t͡seːn	zehn	237	German				ten	*texun	276
+863	t iː n	*tehun	t iː - - n	tiːn	tien	237	Dutch				ten	*tehun	276
+862	t ɛ n	*tehun	t ɛ - - n	tɛn	ten	237	English				ten	*tehun	276
+2242	t ī e n	*tehun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*tehun	276
+861	ts eː n	*tehun	ts eː - - n	t͡seːn	zehn	237	German				ten	*tehun	276
 1804	θ eɪ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	thane	494	English				thane	*θegnăz	362
 2243	þ æ ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þæġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thane	*θegnăz	362
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German				thane	*θegnăz	362
@@ -1224,10 +1224,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 651	θ iː f	*θeubăz	θ iː f ( - - )	θiːf	thief	179	English				thief	*θeubăz	279
 2246	þ ē o f	*θeubăz	θ iː f ( - - )	θiːf	þēof	179	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thief	*θeubăz	279
 650	d iː p	*θeubăz	d iː b ( - - )	diːp	Dieb	179	German				thief	*θeubăz	279
-715	d ɪ ŋ	*θengăz	d ɪ ŋ - ( - - )	dɪŋ	ding	196	Dutch				thing	*θengăz	280
-714	θ ɪ ŋ	*θengăz	θ ɪ ŋ - ( - - )	θɪŋ	thing	196	English				thing	*θengăz	280
-2247	þ i n g	*θengăz	θ ɪ ŋ - ( - - )	θɪŋ	þing	196	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thing	*θengăz	280
-713	d ɪ ŋ	*θengăz	d ɪ ŋ - ( - - )	dɪŋ	Ding	196	German				thing	*θengăz	280
+715	d ɪ ŋ	*þingą	d ɪ ŋ - ( - - )	dɪŋ	ding	196	Dutch				thing	*þingą	280
+714	θ ɪ ŋ	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	thing	196	English				thing	*þingą	280
+2247	þ i n g	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	þing	196	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thing	*þingą	280
+713	d ɪ ŋ	*þingą	d ɪ ŋ - ( - - )	dɪŋ	Ding	196	German				thing	*þingą	280
 355	d ɛ ŋ k ə	*θankăz	d ɛ ŋ k ( ə - )	dɛŋkə	denken	98	Dutch	!			think	*θankăz	281
 354	θ ɪ ŋ k	*θankăz	θ ɪ ŋ k ( - - )	θɪŋk	think	98	English	!			think	*θankăz	281
 2248	þ e n ċ a n	*θankăz	θ ɪ ŋ k ( - - )	θɪŋk	þenċan	98	Old_English	! | TODO: replace with attested Old English form | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			think	*θankăz	281
@@ -1268,9 +1268,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 959	t aɪ d	*tīdiz	t aɪ d ( - - )	taɪd	tide	263	English				tide	*tīdiz	290
 2257	t ī d a n	*tīdiz	t aɪ d ( - - )	taɪd	tīdan	263	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			tide	*tīdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German				tide	*tīdiz	290
-814	t ɪ m b ə	*temrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English				timber	*temrą	363
-2258	t i m b e r	*temrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*temrą	363
-813	ts ɪ m ə r	*temrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*temrą	363
+814	t ɪ m b ə	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English				timber	*timrą	363
+2258	t i m b e r	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*timrą	363
+813	ts ɪ m ə r	*timrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*timrą	363
 1723	t eː n	*taixwō	t eː ( - - n )	teːn	teen	472	Dutch				toe	*taixwō	291
 1722	t əʊ	*taixwō	t əʊ ( - - - )	təʊ	toe	472	English				toe	*taixwō	291
 2259	t ā	*taixwō	t əʊ ( - - - )	təʊ	tā	472	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			toe	*taixwō	291
@@ -1407,14 +1407,14 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2293	w i l l a n	*weljōn	ʋ ɪ l - - ( - )	ʋɪl	willan	60	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			will	*weljōn	318
 1662	v ɔ l ə n	*waljăną	v ɔ l - ə n ( - - )	vɔlən	wollen	456	German				will	*waljăną	318
 215	v ɪ l ə	*weljōn	v ɪ l - ə ( - )	vɪlə	Wille	60	German				will	*weljōn	318
-900	ʋ ɪ n d ə	*wendăną	ʋ ɪ n d ə - ( - - )	ʋɪndə	winden	247	Dutch				wind	*wendăną	319
-899	ʋ ɪ n d	*wendăną	ʋ ɪ n d - - ( - - )	ʋɪnd	wind	247	English				wind	*wendăną	319
-2294	w i n d	*wendăną	ʋ ɪ n d - - ( - - )	wind	wind	247	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wind	*wendăną	319
-898	v ɪ n d ə n	*wendăną	v ɪ n d ə n ( - - )	vɪndən	winden	247	German				wind	*wendăną	319
-277	ʋ ɪ n t ə r	*wentruz	ʋ ɪ n t ə r ( - - )	ʋɪntər	winter	76	Dutch				winter	*wentruz	320
-276	ʋ ɪ n t ə	*wentruz	ʋ ɪ n t ə r ( - - )	ʋɪntə	winter	76	English				winter	*wentruz	320
-2295	w i n t e r	*wentruz	ʋ ɪ n t ə r ( - - )	ʋɪntə	winter	76	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			winter	*wentruz	320
-275	v ɪ n t ə r	*wentruz	v ɪ n t ə r ( - - )	vɪntər	Winter	76	German				winter	*wentruz	320
+900	ʋ ɪ n d ə	*windăną	ʋ ɪ n d ə - ( - - )	ʋɪndə	winden	247	Dutch				wind	*windăną	319
+899	ʋ ɪ n d	*windăną	ʋ ɪ n d - - ( - - )	ʋɪnd	wind	247	English				wind	*windăną	319
+2294	w i n d	*windăną	ʋ ɪ n d - - ( - - )	wind	wind	247	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wind	*windăną	319
+898	v ɪ n d ə n	*windăną	v ɪ n d ə n ( - - )	vɪndən	winden	247	German				wind	*windăną	319
+277	ʋ ɪ n t ə r	*wintruz	ʋ ɪ n t ə r ( - - )	ʋɪntər	winter	76	Dutch				winter	*wintruz	320
+276	ʋ ɪ n t ə	*wintruz	ʋ ɪ n t ə r ( - - )	ʋɪntə	winter	76	English				winter	*wintruz	320
+2295	w i n t e r	*wintruz	ʋ ɪ n t ə r ( - - )	ʋɪntə	winter	76	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			winter	*wintruz	320
+275	v ɪ n t ə r	*wintruz	v ɪ n t ə r ( - - )	vɪntər	Winter	76	German				winter	*wintruz	320
 1272	ʋ ɛɪ d ə	*waiθiz	ʋ ɛɪ d ( ə - )	ʋɛɪdə	weide	349	Dutch				withy	*waiθiz	321
 1271	ʋ ɪ ð ɪ	*waiθiz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	withy	349	English				withy	*waiθiz	321
 2296	w ī þ i ġ	*waiθiz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	wīþiġ	349	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			withy	*waiθiz	321
@@ -1447,10 +1447,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1127	ʋ ɜː m	*wurmaz/wurmiz	ʋ ɜː - m ( - - )	ʋɜːm	worm	309	English				worm	*wurmaz/wurmiz	328
 2303	w y r m	*wurmaz/wurmiz	ʋ ɜː - m ( - - )	wyrˠm	wyrm	309	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			worm	*wurmaz/wurmiz	328
 1126	v ʊ r m	*wurmaz/wurmiz	v ʊ r m ( - - )	vʊrm	Wurm	309	German				worm	*wurmaz/wurmiz	328
-997	ʋ r ɪ ŋ ə	*wrengăną	ʋ r ɪ ŋ - ə - ( - - )	ʋrɪŋə	wringen	273	Dutch				wring	*wrengăną	329
-996	r ɪ ŋ	*wrengăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wring	273	English				wring	*wrengăną	329
-2304	w r i n g a n	*wrengăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wringan	273	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			wring	*wrengăną	329
-995	r ɪ ŋ ə n	*wrengăną	- r ɪ ŋ - ə n ( - - )	rɪŋən	ringen	273	German				wring	*wrengăną	329
+997	ʋ r ɪ ŋ ə	*wringăną	ʋ r ɪ ŋ - ə - ( - - )	ʋrɪŋə	wringen	273	Dutch				wring	*wringăną	329
+996	r ɪ ŋ	*wringăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wring	273	English				wring	*wringăną	329
+2304	w r i n g a n	*wringăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wringan	273	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			wring	*wringăną	329
+995	r ɪ ŋ ə n	*wringăną	- r ɪ ŋ - ə n ( - - )	rɪŋən	ringen	273	German				wring	*wringăną	329
 564	x aː r ə	*garnăn	x aː r - ( ə - )	xaːrə	garen	154	Dutch				yarn	*garnăn	330
 563	j ɑː n	*garnăn	j ɑː - n ( - - )	jɑːn	yarn	154	English				yarn	*garnăn	330
 2305	ġ e a r n	*garnăn	j ɑː - n ( - - )	jɑːn	ġearn	154	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			yarn	*garnăn	330

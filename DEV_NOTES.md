@@ -830,6 +830,7 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 
 ### Old English staging / TSV overhaul (PGmc → OE layer)
 - Completed and superseded; see the 2025-12-21 consolidated PGmc→OE TODOs for current work.
+- Open question: should the TSV adopt PGmc **ǭ** (e.g., *rindǭ*) instead of the current **ō**-only convention? For now we normalized to **ō** to keep the dataset consistent; revisit if we decide to shift the entire PGmc orthography.
 
 ## 2025-12-12
 

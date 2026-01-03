@@ -27,7 +27,9 @@ BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
 
 def normalize_proto(raw: str) -> str:
-    return PROTO_STRIP_RE.sub("", raw or "")
+    normalized = PROTO_STRIP_RE.sub("", raw or "")
+    # Proto inventory uses θ; normalize þ to avoid false no_output buckets.
+    return normalized.replace("þ", "θ")
 
 
 def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
