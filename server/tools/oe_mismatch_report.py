@@ -217,10 +217,9 @@ def write_report(
     output_path: Path,
     max_examples: int,
 ) -> None:
-    order = [
+    core_order = [
         "i_umlaut_missing_true",
         "fronting_missing_no_trigger",
-        "other",
         "breaking_missing",
         "no_output",
         "long_vowel_missing",
@@ -228,7 +227,6 @@ def write_report(
     ]
     other_order = [
         "final_vowel_extra",
-        "uncategorized",
         "length_extra_other",
         "front_expected_back_out",
         "final_vowel_missing",
@@ -236,26 +234,23 @@ def write_report(
         "final_n_missing",
         "palatal_extra_other",
         "back_expected_front_out",
+        "uncategorized",
     ]
+    order = core_order + other_order
     mismatch_total = sum(len(v) for v in buckets.values())
     lines: List[str] = []
     lines.append(f"Total mismatches: {mismatch_total}")
     lines.append("")
-    for key in order:
+    for key in core_order:
         lines.append(f"{key}: {len(buckets.get(key, []))}")
-    lines.append("")
-    lines.append("Examples:")
-    for key in order:
-        lines.append(f"{key}:")
-        for proto, out, expected in buckets.get(key, [])[:max_examples]:
-            lines.append(f"  {proto} -> {out} (expected {expected})")
-    lines.append("")
-    lines.append(f"Other subtypes total: {sum(len(v) for v in other_subs.values())}")
-    lines.append("")
     for key in other_order:
         lines.append(f"{key}: {len(other_subs.get(key, []))}")
     lines.append("")
-    lines.append("Subtype examples:")
+    lines.append("Examples:")
+    for key in core_order:
+        lines.append(f"{key}:")
+        for proto, out, expected in buckets.get(key, [])[:max_examples]:
+            lines.append(f"  {proto} -> {out} (expected {expected})")
     for key in other_order:
         lines.append(f"{key}:")
         for proto, out, expected in other_subs.get(key, [])[:max_examples]:
