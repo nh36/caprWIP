@@ -8,14 +8,19 @@ no_output: 16
 long_vowel_missing: 5
 palatalization_missing: 3
 final_vowel_extra: 47
-length_extra_other: 14
-front_expected_back_out: 21
+length_extra_other: 13
+front_expected_back_out: 20
 final_vowel_missing: 27
 breaking_extra_other: 14
 final_n_missing: 8
 palatal_extra_other: 13
 back_expected_front_out: 8
-uncategorized: 48
+palatal_marker_variant: 3
+epenthetic_vowel_missing: 6
+vowel_quality_other: 15
+gemination_extra: 5
+consonant_mismatch_other: 21
+uncategorized: 0
 
 Examples:
 i_umlaut_missing_true:
@@ -106,9 +111,32 @@ back_expected_front_out:
   *xamarăz -> hæmær (expected hamor)
   *spannăną -> spænnan (expected spann)
   *swanăz -> swæn (expected swan)
-uncategorized:
+palatal_marker_variant:
+  *fiskăz -> fisc (expected fisċ)
+  *skamō -> scamō (expected sċamu)
+  *skīnăną -> scīnan (expected sċīnan)
+epenthetic_vowel_missing:
+  *fingrăz -> fingr (expected finger)
+  *fuglăz -> fugl (expected fugol)
+  *rōθrăz -> rōþr (expected rōþor)
+  *θunrăz -> þunr (expected þunor)
+  *wiθră -> wiþr (expected weþer)
+vowel_quality_other:
+  *kraftiz -> creft (expected cræft)
+  *durą -> dura (expected duru)
+  *ēlăz -> ēl (expected ǣl)
+  *gud -> gud (expected god)
+  *mēnōθz -> mēnōþ (expected mōnaþ)
+gemination_extra:
+  *bukkăz -> bucc (expected buc)
+  *kruppăz -> crupp (expected crop)
+  *xagjăz -> hæġġ (expected heċġ)
+  *knuppăz -> cnupp (expected knob)
+  *lukkăz -> lucc (expected loc)
+consonant_mismatch_other:
   *bebruz -> bebr (expected befer)
   *bainăn -> bānan (expected bān)
   *bō -> bō (expected bā]] [[þā)
   *budmăz -> budm (expected botm)
   *brekăną -> breċan (expected brēċ)
+uncategorized:
