@@ -13,6 +13,11 @@
 - Start‑here repro (fresh run):
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
+- OE epenthesis update (2026-01-04):
+  - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
+  - Deterministic `r`-epenthesis uses an `{E}` placeholder with back‑shift (→`*o`) vs front fallback (→`*e`).
+  - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over‑generation (`*xaslăz` → `hæsel` regression).
+  - Current OE mismatch report (latest run in `server/docs/debug_snapshots/oe_mismatch_report.txt`): **293 mismatches / 77 matches** (370 total OE rows).
 - Next actionable targets (from latest buckets):
   1. **Fronting missing w/ no trigger:** review a‑restoration contexts and nasal blocks (see 2026‑01‑01 subgroup traces).
   2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re‑trace `oe_breaking_probe`.
