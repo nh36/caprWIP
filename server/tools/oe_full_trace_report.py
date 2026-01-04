@@ -32,6 +32,7 @@ STAGES: List[Tuple[str, str]] = [
     ("GhMarker", "old_english_sandbox_after_gh_marker.bin"),
     ("GlideDeletion", "old_english_sandbox_after_glide_deletion.bin"),
     ("ProtoToOE", "old_english_sandbox_after_proto_to_oe.bin"),
+    ("Epenthesis", "old_english_sandbox_after_epenthesis.bin"),
     ("Orthography", "old_english_sandbox_after_orthography.bin"),
     ("Surface", "old_english_sandbox_after_surface.bin"),
 ]

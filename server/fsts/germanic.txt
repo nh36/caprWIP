@@ -1093,6 +1093,29 @@ define OldEnglishWeakTailReduction [
     {*ą} -> {*ɔ̆}
 ];
 
+define OldEnglishEpentheticInsertion [
+    {*r} -> {E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
+        EnglishStarConsonant+ _ .#.
+];
+
+define OldEnglishEpentheticBackShift [
+    {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
+    {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
+];
+
+define OldEnglishEpentheticFront [
+    {E} -> {*e}
+];
+
+define OldEnglishGLInsertion [
+    {*g} {*l} -> {*g} {*o} {*l} || _ .#.
+];
+
+define OldEnglishEpentheticVowel OldEnglishEpentheticInsertion
+    .o. OldEnglishEpentheticBackShift
+    .o. OldEnglishEpentheticFront
+    .o. OldEnglishGLInsertion;
+
 define OldEnglishIUmlautCore [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -1321,7 +1344,10 @@ define EnglishAfterSurface EnglishAfterLongVowelRealisation .o. RemoveStars .o. 
 define English EnglishReflexes .o. RemoveStars .o. EnglishSurface;
 
 # Old English: stop after the Proto→OE layer and surface-filter the OE inventory.
-define OldEnglishRules OldEnglishCore
+define OldEnglishAfterEpenthesis OldEnglishCore
+    .o. OldEnglishEpentheticVowel;
+
+define OldEnglishRules OldEnglishAfterEpenthesis
     .o. OldEnglishOrthography
     .o. OldEnglishRemoveStars;
 

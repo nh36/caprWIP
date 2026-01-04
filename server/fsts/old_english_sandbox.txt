@@ -8,6 +8,7 @@ define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
 define OESandboxAfterGhMarker EnglishAfterGhMarker;
 define OESandboxAfterGlideDeletion EnglishAfterGlideDeletion;
 define OESandboxAfterProtoToOE EnglishAfterProtoToOE;
+define OESandboxAfterEpenthesis OldEnglishAfterEpenthesis;
 define OESandboxAfterOrthography OldEnglishRules;
 define OESandboxAfterSurface OldEnglishReflexes;
 
@@ -44,6 +45,10 @@ save stack old_english_sandbox_after_glide_deletion.bin
 clear stack
 regex OESandboxAfterProtoToOE;
 save stack old_english_sandbox_after_proto_to_oe.bin
+
+clear stack
+regex OESandboxAfterEpenthesis;
+save stack old_english_sandbox_after_epenthesis.bin
 
 clear stack
 regex OESandboxAfterOrthography;
