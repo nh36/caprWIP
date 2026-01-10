@@ -35,6 +35,7 @@
     - `*fuwer → fȳr`: no rule converts `{uw}` before `{r}` into `{ȳr}`; add a `{uw}` contraction (or targeted `ur` rounding) so `fūr`-class stems reach OE fȳr.
     - `*xattuz → hōd`: expected reflex doesn’t match the provided proto stem (phonologically it yields OE “hat”); fix data alignment rather than phonology.
   - 2026-01-10b data note: the “fire” row now uses dat.sg. *fūri (> fȳre) to avoid modelling nominative levelling; see TSV comment.
+  - 2026-01-10 rollback: backed out the short-diphthong lengthening experiment; diagnostics back to the post-*fūri* baseline (293 mismatches) with `slaxăną` still in the long-vowel bucket for future work.
 
 ## 2025-12-07
 
