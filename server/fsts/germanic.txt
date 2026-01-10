@@ -292,6 +292,7 @@ define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
     ă:{*ă} |
+    i:{*i} |
     ă:{*ă} g:{*g} ą:{*ą} |
     ă:{*ă} l:{*l} ō:{*ō} |
     ă:{*ă} n:{*n} |
@@ -1049,6 +1050,10 @@ define OldEnglishDiphthongLeveling [
     {*iu} -> {*ēo}
 ];
 
+define OldEnglishWWSimplification [
+    {*w} {*w} -> {*w}
+];
+
 # Promote inherited *ew/*iw clusters to the long diphthong tier when the
 # glide stays vocalic (cf. Hogg 1992 §3.3.1 on OE ēo).
 define OldEnglishEwLongContext [
@@ -1108,7 +1113,8 @@ define OldEnglishWeakTailNasalLoss [
 
 define OldEnglishWeakTailReduction [
     {*ă} -> {*a},
-    {*ą} -> {*ɔ̆}
+    {*ą} -> {*ɔ̆},
+    {*i} -> {*e} || _ .#.
 ];
 
 define OldEnglishEpentheticInsertion [
@@ -1268,6 +1274,7 @@ define OldEnglishContraction [
 define EnglishProtoToOE (
     EnglishWestGermanic
     .o. OldEnglishAuFronting
+    .o. OldEnglishWWSimplification
     .o. OldEnglishDiphthongLeveling
     .o. OldEnglishEwLongDiphthong
     .o. EnglishAngloFrisianBrightening
@@ -1327,6 +1334,7 @@ define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonan
 define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. EnglishWestGermanic
     .o. OldEnglishAuFronting
+    .o. OldEnglishWWSimplification
     .o. OldEnglishDiphthongLeveling
     .o. OldEnglishEwLongDiphthong
     .o. EnglishOpenSyllableLengthening

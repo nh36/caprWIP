@@ -34,6 +34,7 @@
     - `*kewwăną → ċēowan`: `OldEnglishEwLongDiphthong` only sees single `{*w}`; extend the rule to promote `{eww}` to `{ēow}` so duplicated glides still trigger the long diphthong tier.
     - `*fuwer → fȳr`: no rule converts `{uw}` before `{r}` into `{ȳr}`; add a `{uw}` contraction (or targeted `ur` rounding) so `fūr`-class stems reach OE fȳr.
     - `*xattuz → hōd`: expected reflex doesn’t match the provided proto stem (phonologically it yields OE “hat”); fix data alignment rather than phonology.
+  - 2026-01-10b data note: the “fire” row now uses dat.sg. *fūri (> fȳre) to avoid modelling nominative levelling; see TSV comment.
 
 ## 2025-12-07
 

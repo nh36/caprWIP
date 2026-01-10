@@ -1,31 +1,31 @@
-Total mismatches: 292
+Total mismatches: 297
 
 i_umlaut_missing_true: 17
 proto_mismatch_suspect: 7
 fronting_missing_no_trigger: 33
 breaking_missing: 18
-no_output: 15
+no_output: 14
 long_vowel_missing: 3
 palatalization_missing: 3
-final_vowel_extra: 48
+final_vowel_extra: 61
 length_extra_other: 13
 front_expected_back_out: 20
 final_vowel_missing: 27
-breaking_extra_other: 14
+breaking_extra_other: 11
 final_n_missing: 8
-palatal_extra_other: 13
+palatal_extra_other: 12
 back_expected_front_out: 8
 palatal_marker_variant: 3
 epenthetic_vowel_missing: 0
-vowel_quality_other: 16
+vowel_quality_other: 14
 gemination_extra: 5
-consonant_mismatch_other: 21
+consonant_mismatch_other: 20
 uncategorized: 0
 
 Examples:
 i_umlaut_missing_true:
   *biginnăną -> biġinnan (expected beginnan)
-  *balgiz -> bealġ (expected bielġ)
+  *balgiz -> bealġe (expected bielġ)
   *bazją -> bærġa (expected berġe)
   *flaiskăz -> flāsc (expected flǣsċ)
   *xendjō -> hindō (expected hindan)
@@ -43,24 +43,24 @@ fronting_missing_no_trigger:
   *farăną -> færan (expected fær)
 breaking_missing:
   *brustz -> brust (expected brēost)
-  *dawwō -> dawwō (expected dēaw)
+  *dawwō -> dawō (expected dēaw)
   *fedwōrez -> fedwōre (expected fēower)
   *frijōndz -> friġōnd (expected frēond)
-  *gastiz -> ġest (expected appear)
+  *gastiz -> ġeste (expected appear)
 no_output:
-  *funxwstiz -> +? (expected fȳst)
   *xabukăz -> +? (expected hafoc)
   *xemenăz -> +? (expected heofon)
   *xnakkăz -> +? (expected hnecca)
   *regna-bugōn -> +? (expected reġnboga)
+  *skellinăz -> +? (expected sċilling)
 long_vowel_missing:
-  *kewwăną -> ċeowwan (expected ċēowan)
-  *fuwer -> fuwer (expected fȳr)
+  *funxwstiz -> fyhwste (expected fȳst)
   *xattuz -> hatt (expected hōd)
+  *slaxăną -> sleaan (expected slēan)
 palatalization_missing:
-  *burdiz -> byrd (expected ġebyrd)
+  *burdiz -> byrde (expected ġebyrd)
   *θankăz -> þænc (expected þenċan)
-  *waiθiz -> wǣþ (expected wīþiġ)
+  *waiθiz -> wǣþe (expected wīþiġ)
 final_vowel_extra:
   *bergą -> beorga (expected beorg)
   *blōdą -> blōda (expected blōd)
@@ -115,11 +115,11 @@ palatal_marker_variant:
   *skīnăną -> scīnan (expected sċīnan)
 epenthetic_vowel_missing:
 vowel_quality_other:
-  *kraftiz -> creft (expected cræft)
   *durą -> dura (expected duru)
   *ēlăz -> ēl (expected ǣl)
   *gud -> gud (expected god)
   *mēnōθz -> mēnōþ (expected mōnaþ)
+  *mōdēr -> mōdēr (expected mōdor)
 gemination_extra:
   *bukkăz -> bucc (expected buc)
   *kruppăz -> crupp (expected crop)
