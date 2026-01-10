@@ -1,10 +1,10 @@
 Total mismatches: 292
 
-i_umlaut_missing_true: 17
+i_umlaut_missing_true: 16
 proto_mismatch_suspect: 7
 fronting_missing_no_trigger: 33
 breaking_missing: 18
-no_output: 15
+no_output: 16
 long_vowel_missing: 3
 palatalization_missing: 3
 final_vowel_extra: 48
@@ -24,11 +24,11 @@ uncategorized: 0
 
 Examples:
 i_umlaut_missing_true:
-  *biginnăną -> biġinnan (expected beginnan)
   *balgiz -> bealġ (expected bielġ)
   *bazją -> bærġa (expected berġe)
   *flaiskăz -> flāsc (expected flǣsċ)
   *xendjō -> hindō (expected hindan)
+  *natją -> netta (expected net)
 proto_mismatch_suspect:
   *fleugăną -> flēogan (expected flȳġe)
   *gebăną -> ġeban (expected giefan)
@@ -48,11 +48,11 @@ breaking_missing:
   *frijōndz -> friġōnd (expected frēond)
   *gastiz -> ġest (expected appear)
 no_output:
+  *biginnăną -> +? (expected beginnan)
   *funxwstiz -> +? (expected fȳst)
   *xabukăz -> +? (expected hafoc)
   *xemenăz -> +? (expected heofon)
   *xnakkăz -> +? (expected hnecca)
-  *regna-bugōn -> +? (expected reġnboga)
 long_vowel_missing:
   *kewwăną -> ċeowwan (expected ċēowan)
   *fuwer -> fuwer (expected fȳr)

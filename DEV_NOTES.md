@@ -15,13 +15,14 @@
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
 - OE epenthesis update (2026-01-04):
   - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
-  - Deterministic `r`-epenthesis uses an `{E}` placeholder with back‑shift (→`*o`) vs front fallback (→`*e`).
-  - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over‑generation (`*xaslăz` → `hæsel` regression).
+  - Deterministic `r`-epenthesis uses an `{E}` placeholder with back-shift (→`*o`) vs front fallback (→`*e`).
+  - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over-generation (`*xaslăz` → `hæsel` regression).
   - Current OE mismatch report (latest run in `server/docs/debug_snapshots/oe_mismatch_report.txt`): **293 mismatches / 77 matches** (370 total OE rows).
 - Next actionable targets (from latest buckets):
-  1. **Fronting missing w/ no trigger:** review a‑restoration contexts and nasal blocks (see 2026‑01‑01 subgroup traces).
-  2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re‑trace `oe_breaking_probe`.
-  3. **Long‑vowel missing (5 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
+  1. **Fronting missing w/ no trigger:** review a-restoration contexts and nasal blocks (see 2026-01-01 subgroup traces).
+  2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re-trace `oe_breaking_probe`.
+  3. **Long-vowel missing (5 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
+  - 2026-01-10 follow-up: `docs/debug_snapshots/oe_mismatch_report_2026-01-10a.txt` shows long-vowel-missing bucket down to **3** items after extending `OldEnglishDiphthongLeveling`/`OldEnglishEwLongDiphthong`. New log: `docs/debug_snapshots/oe_long_diphthong_traces_2026-01-10.txt`; stats snapshot: `docs/debug_snapshots/oe_apply_down_stats_2026-01-10a.txt`.
 - Long‑vowel‑missing deep dive (2026-01-02): see `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`.
   - Biggest actionable sources:
     - **PGmc *au not lengthened** → change `*aeu -> *ēa` (or add a dedicated “long diphthong” step right after leveling).
@@ -29,6 +30,10 @@
     - **OE ō before velars should stay long** → move `EnglishVelarShortening` out of the OE block (OE keeps bōc/bōg).
   - “Other” misses (e.g., *end→ān, *utrăz→nǣdre, *xattuz→hōd) are not long‑vowel rules; treat separately.
   - Bucket taxonomy update (2026-01-03): the report now splits the former `uncategorized` bucket into `palatal_marker_variant`, `epenthetic_vowel_missing`, `vowel_quality_other`, `gemination_extra`, and `consonant_mismatch_other`.
+  - 2026-01-10 tracing follow-up:
+    - `*kewwăną → ċēowan`: `OldEnglishEwLongDiphthong` only sees single `{*w}`; extend the rule to promote `{eww}` to `{ēow}` so duplicated glides still trigger the long diphthong tier.
+    - `*fuwer → fȳr`: no rule converts `{uw}` before `{r}` into `{ȳr}`; add a `{uw}` contraction (or targeted `ur` rounding) so `fūr`-class stems reach OE fȳr.
+    - `*xattuz → hōd`: expected reflex doesn’t match the provided proto stem (phonologically it yields OE “hat”); fix data alignment rather than phonology.
 
 ## 2025-12-07
 
