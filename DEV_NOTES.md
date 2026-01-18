@@ -1077,3 +1077,14 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 ### Unified OE mismatch report (2026-01-03)
 - New script: `server/tools/oe_mismatch_report.py` supersedes `oe_mismatch_patterns.py` + the separate “other subtypes” report.
 - Latest unified report: `docs/debug_snapshots/oe_mismatch_report_2026-01-03a.txt` (includes the main buckets plus the “other” subcategories side by side).
+
+### OE orthography cleanup + reports (2026-01-18)
+- **Dotted palatal orthography:** `OldEnglishOrthography` now maps `/ʃ/` to `{sċ}` and allows `{sċ}` in the surface filter.
+- **/dʒ/ + /j/ spelling:** `OldEnglishOrthography` maps `{ʤj}` to `{ċġ}`; `{ʤ}` and `{j}` still map to `ġ`.
+- **Reports run (latest):**
+  - `server/docs/debug_snapshots/oe_mismatch_report_2026-01-18w.txt`
+  - `server/docs/debug_snapshots/oe_full_trace_report_2026-01-18w.txt`
+- **Totals (2026-01-18w):** total mismatches 294; `palatal_marker_variant` = 0; `gemination_extra` = 2.
+- **Hedge trace:** `oe_full_trace_report_2026-01-18w.txt` shows `hedge` outputs **both** `hæġġ` and `hæċġ` (Orthography + Surface), indicating nondeterminism is still present.
+- **Open issue:** need deterministic pre-orthography cleanup so `*dʒ` + `*j` (and `dʒ` + `j`) coalesce to `{ʤj}` before orthography; avoid producing both `ħeġġ`/`hæġġ` and `hæċġ`.
+- **Operational note:** Docker socket permissions intermittently blocked `docker compose exec` in this session; reports were rerun only after restoring Docker access.
