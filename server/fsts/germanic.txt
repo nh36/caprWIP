@@ -576,7 +576,7 @@ define OldEnglishSurfaceVowel [
 ];
 define OldEnglishSurfaceConsonant [
     {b} | {c} | {d} | {f} | {g} | {h} | {l} | {m} | {n} | {p} | {r} | {s} |
-    {t} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ} | {sc}
+    {t} | {w} | {x} | {þ} | {ð} | {ċ} | {ġ} | {sc} | {sċ} | {ċġ}
 ];
 define OldEnglishSurfaceStress [{ˈ}];
 define OldEnglishSurfaceOnset [
@@ -598,9 +598,10 @@ define OldEnglishSurface OldEnglishSurfaceSyllable+;
 define OldEnglishOrthography [
     {*θ} -> þ,
     {*ð} -> ð,
-    {*ʃ} -> {sc},
+    {*ʃ} -> {sċ},
     {*ʧ} -> ċ,
     {*ʤ} -> ġ,
+    {*ʤj} -> {ċġ},
     {*ç} -> h,
     {*ʒ} -> ġ,
     {*ʋ} -> w,
@@ -608,9 +609,10 @@ define OldEnglishOrthography [
     {*v} -> f,
     {θ} -> þ,
     {ð} -> ð,
-    {ʃ} -> {sc},
+    {ʃ} -> {sċ},
     {ʧ} -> ċ,
     {ʤ} -> ġ,
+    {ʤj} -> {ċġ},
     {ç} -> h,
     {j} -> ġ,
     {ʒ} -> ġ,
@@ -621,6 +623,11 @@ define OldEnglishOrthography [
     {ʊ} -> u,
     {ɔ} -> o,
     {ɔ̆} -> a
+];
+
+define OldEnglishCjCleanup [
+    {ʤ} {*j} -> {ʤj},
+    {ʤ} {j} -> {ʤj}
 ];
 
 define OldEnglishRemoveStars [
@@ -730,7 +737,49 @@ define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ]*;
 
-define EnglishWeakTailVowel [pgrmWeakTailVowel.r | {*ɔ̆}];
+define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
+define EnglishWeakTailVowelStart [{*ă} | {*a} | {*e} | {*i}];
+define EnglishWeakTailVowelStar [
+    {*ă} |
+    {*i} |
+    {*ă} {*g} {*ą} |
+    {*ă} {*l} {*ō} |
+    {*ă} {*n} |
+    {*ă} {*n} {*ą} |
+    {*ă} {*n} {*ē} |
+    {*a} {*r} {*ă} {*z} |
+    {*ă} {*z} |
+    {*e} {*n} {*a} {*z} |
+    {*e} {*r} |
+    {*e} {*r} {*a} {*z} |
+    {*e} {*z} |
+    {*i} {*l} {*a} {*z} |
+    {*i} {*l} {*ō} |
+    {*i} {*l} {*ō} {*n} |
+    {*i} {*s} {*t} {*u} {*z} |
+    {*i} {*z} |
+    {*o} |
+    {*o} {*n} |
+    {*u} |
+    {*u} {*d} {*ą} |
+    {*u} {*k} {*a} {*z} |
+    {*u} {*k} {*z} |
+    {*u} {*n} |
+    {*u} {*n} {*d} {*ī} |
+    {*u} {*n} {*θ} {*i} {*z} |
+    {*u} {*w} {*ō} {*n} |
+    {*u} {*z} |
+    {*ą} |
+    {*ē} {*n} {*ą} |
+    {*ē} {*r} |
+    {*ī} {*n} |
+    {*ō} |
+    {*ō} {*j} {*a} {*n} {*ą} |
+    {*ō} {*n} |
+    {*ō} {*n} {*d} {*z} |
+    {*ō} {*r} {*e} {*z} |
+    {*ō} {*θ} {*z}
+];
 
 define EnglishInitialKnMarkers [
     {*k} {*n} -> {Kn} || .#. _,
@@ -1007,17 +1056,23 @@ define EnglishOpenSyllableLengthening [
     {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
 ];
 
-# Old English breaking before h, rC, lC, and select w contexts (split by vowel).
-define EnglishBreakingHContext [{*h} | {*x}];
+# Old English breaking before x, rC, lC, and select w contexts (split by vowel).
+define EnglishBreakingHContext [{*x}];
+define EnglishBreakingXContextNonWeakA [
+    {*x} (EnglishStarVocalic - EnglishWeakTailVowelStar) |
+    {*x} EnglishStarConsonant
+];
+define EnglishBreakingXContextWeakTail [{*x} EnglishWeakTailVowelStar];
 define EnglishBreakingRContext [{*r} EnglishStarConsonant];
 define EnglishBreakingLContext [{*l} EnglishStarConsonant];
-define EnglishBreakingLContextE [{*l} ({*h} | {*x} | {*k} | {*g})];
+define EnglishBreakingLContextE [{*l} ({*x} | {*k} | {*g})];
 define EnglishBreakingWContext [{*w}];
 
 define EnglishBreakingA [
     {*a} -> {*ea} || _ EnglishBreakingRContext,
     {*a} -> {*ea} || _ EnglishBreakingLContext,
-    {*a} -> {*ea} || _ EnglishBreakingHContext,
+    {*a} -> {*ēa} || _ EnglishBreakingXContextWeakTail,
+    {*a} -> {*ea} || _ EnglishBreakingXContextNonWeakA,
     {*æ} -> {*ea} || _ EnglishBreakingRContext,
     {*æ} -> {*ea} || _ EnglishBreakingLContext,
     {*æ} -> {*ea} || _ EnglishBreakingHContext
@@ -1380,6 +1435,7 @@ define OldEnglishAfterEpenthesis OldEnglishCore
     .o. OldEnglishEpentheticVowel;
 
 define OldEnglishRules OldEnglishAfterEpenthesis
+    .o. OldEnglishCjCleanup
     .o. OldEnglishOrthography
     .o. OldEnglishRemoveStars;
 
