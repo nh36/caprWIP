@@ -1088,3 +1088,9 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Hedge trace:** `oe_full_trace_report_2026-01-18w.txt` shows `hedge` outputs **both** `hæġġ` and `hæċġ` (Orthography + Surface), indicating nondeterminism is still present.
 - **Open issue:** need deterministic pre-orthography cleanup so `*dʒ` + `*j` (and `dʒ` + `j`) coalesce to `{ʤj}` before orthography; avoid producing both `ħeġġ`/`hæġġ` and `hæċġ`.
 - **Operational note:** Docker socket permissions intermittently blocked `docker compose exec` in this session; reports were rerun only after restoring Docker access.
+
+### Foma CLI gotchas (2026-01-18)
+- **Semicolons matter:** `regex` commands must end with `;` or the network won’t compile (no output from `print words/size`).
+- **Reliable one-off tests:** use `foma` with stdin to avoid interactive issues, e.g.
+  - `printf 'regex {ʤ} {*j} -> {ʤj};\napply down "ç*æʤ*j"\nquit\n' | foma`
+  - Output: `"ç*æʤj"` (confirms the merge rule works on the hedge pre‑orthography form).
