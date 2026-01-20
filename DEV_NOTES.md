@@ -15,7 +15,7 @@
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
 - Hedge (2026-01-20):
   - Reverted the orthographic `{ʤj} -> {ċġ}` mapping and removed `{ċġ}` from `OldEnglishSurfaceConsonant` (OE output should stay `ġġ`).
-  - Data updates: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ), `server/data/old_english_wiktionary.tsv` (heċġ → heġġ with note).
+  - Data update: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ) with NOTE that **heċġ is the more standard spelling**; Wiktionary TSV left unchanged.
   - Current output is **hæġġ** while expected is **heġġ**; see `docs/debug_snapshots/oe_mismatch_report_2026-01-20d.txt` and `docs/debug_snapshots/oe_full_trace_report_2026-01-20d.txt`.
 - OE epenthesis update (2026-01-04):
   - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
