@@ -17,6 +17,16 @@
   - Reverted the orthographic `{ʤj} -> {ċġ}` mapping and removed `{ċġ}` from `OldEnglishSurfaceConsonant` (OE output should stay `ġġ`).
   - Data update: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ) with NOTE that **heċġ is the more standard spelling**; Wiktionary TSV left unchanged.
   - Current output is **hæġġ** while expected is **heġġ**; see `docs/debug_snapshots/oe_mismatch_report_2026-01-20d.txt` and `docs/debug_snapshots/oe_full_trace_report_2026-01-20d.txt`.
+- Cnoppa/cnop (2026-01-21):
+  - Goal: verify whether OE **cnoppa** or **cnop** are *attested* (and where), vs. “predicted/etymological” only; identify compounds (e.g., **wull‑cnoppa**) and senses (knob? tuft?).
+  - TSV state: row for `*knuppăz` updated to **cnoppa** with a note citing etymology sources; this needs correction once attestation status is confirmed.
+  - Pending evidence to confirm tomorrow:
+    - Hall, *Concise Anglo‑Saxon Dictionary* (2nd ed., 1916): entry for **cnop** + cross‑ref to **wull‑cnoppa**.
+    - Bosworth & Toller, *An Anglo‑Saxon Dictionary* (1898) + Toller Supplement (1921): entries for **cnop / cnoppa / wull‑cnoppa**.
+    - Wright & Wülcker, *Anglo‑Saxon and Old English Vocabularies* (1884): glosses for **cnop** (Latin “ballationes”) and any compound attestations.
+    - Hessels, *An Eighth‑Century Latin‑Anglo‑Saxon Glossary* (1890, CCCC 144): gloss line for **cnop** if present.
+    - DOE (if you have access) or any specialized article discussing **cnop/cnoppa** or WW/Hessels gloss entries.
+  - Requested from Nathan: PDFs or scans of the sources above so we can pin down attestation + exact citations.
 - OE epenthesis update (2026-01-04):
   - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
   - Deterministic `r`-epenthesis uses an `{E}` placeholder with back-shift (→`*o`) vs front fallback (→`*e`).
