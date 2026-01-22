@@ -7,6 +7,7 @@ This note tracks the evidence for an Old English ancestor of **knob** and clarif
 ### What we have, so far
 
 - **Direct OE forms remain slim** in the OCRed lexica. We do *not* yet have a clean standalone entry for **cnop** or **cnoppa** from the OCR text.
+- **Kroonen (EDPG) explicitly cites an OE form:** under *knappr* he gives **OE *cnæp* m. ‘top, knob’** (verified from the scan; OCR had misread it as *cnzp*).
 - **Gloss evidence (Latin → OE) does exist**, but it is sparse and needs verification against scans:
   - *Ballationes, cnop* (Eighth‑century Latin glossary; OCRed from `aneightcenturyl00librgoog.txt`).
   - A similar line appears in Wright’s glossary: *Ballationes, cnop* (OCRed from `anglosaxonoldeng00wrig.txt`).
