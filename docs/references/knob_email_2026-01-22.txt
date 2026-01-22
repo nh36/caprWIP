@@ -1,0 +1,11 @@
+Knob etymology resolution — email from Guus Kroonen (2026-01-22)
+
+Summary:
+- Old English *knob* is unattested; first attestation is Middle English (Chaucer).
+- The likely OE form would be *cnobba*, but it is not attested.
+- Frisian has knobbe and Faroese has knubbi with similar meanings.
+- These forms point to a Germanic weak noun *knubban-.
+- OE cnæp belongs to *knapp-, not the knob (*knubb-) family.
+
+Quoted line from Guus (re: Chaucer):
+“The knobbes sittynge on his chekes.”
