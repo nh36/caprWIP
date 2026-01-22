@@ -21,6 +21,7 @@ FRONT_VOWELS = set("æǣeiīyȳ")
 BACK_VOWELS = set("aāoōuū")
 LONG_VOWELS = set("āēīōūǣȳ")
 HIGH_FRONT_VOWELS = set("iīyȳ")
+OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
@@ -141,6 +142,32 @@ def has_high_front(s: str) -> bool:
     return any(ch in s for ch in HIGH_FRONT_VOWELS) or any(d in s for d in ("ie", "īe"))
 
 
+def oe_first_vowel_unit(s: str) -> str:
+    for i in range(len(s)):
+        for diph in OE_DIPHTHONGS:
+            if s.startswith(diph, i):
+                return diph
+        ch = s[i]
+        if ch in (FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS):
+            return ch
+    return ""
+
+
+def oe_first_is_front(s: str) -> bool:
+    unit = oe_first_vowel_unit(s)
+    return unit in FRONT_VOWELS or unit in {"ie", "īe", "eo", "ēo", "ea", "ēa"}
+
+
+def oe_first_is_back(s: str) -> bool:
+    unit = oe_first_vowel_unit(s)
+    return unit in BACK_VOWELS
+
+
+def oe_first_is_high_front(s: str) -> bool:
+    unit = oe_first_vowel_unit(s)
+    return unit in HIGH_FRONT_VOWELS or unit in {"ie", "īe"}
+
+
 def vowel_sequence(s: str) -> List[str]:
     """Return vowel/diphthong units in order for quick mismatch heuristics."""
     seq: List[str] = []
@@ -235,9 +262,11 @@ def ends_with_vowel(s: str) -> bool:
 def proto_mismatch_suspect(proto_norm: str, out: str, expected: str) -> bool:
     if trigger_in_next_syllable(proto_norm):
         return False
-    if not has_high_front(expected):
+    if not oe_first_is_high_front(expected):
         return False
-    if has_high_front(out):
+    if oe_first_is_high_front(out):
+        return False
+    if not oe_first_is_back(out):
         return False
     first = proto_first_vowel_unit(proto_norm)
     if first in {"e", "ē", "i", "ī", "æ", "ǣ", "y", "ȳ", "eu", "iu"}:
@@ -256,7 +285,7 @@ def base_bucket(proto_norm: str, out: str, expected: str) -> str:
         if expected_cons and expected_cons != out_cons and expected_cons in out_cons:
             return "other"
         return "long_vowel_missing"
-    if has_front(expected) and has_back(out):
+    if oe_first_is_front(expected) and oe_first_is_back(out):
         if trigger_in_next_syllable(proto_norm):
             return "i_umlaut_missing_true"
         if is_a_fronting_context(proto_norm):
@@ -282,9 +311,9 @@ def other_subtype(out: str, expected: str) -> str:
         return "palatal_marker_variant"
     if has_long(out) and not has_long(expected):
         return "length_extra_other"
-    if has_front(expected) and has_back(out):
+    if oe_first_is_front(expected) and oe_first_is_back(out):
         return "front_expected_back_out"
-    if has_back(expected) and has_front(out):
+    if oe_first_is_back(expected) and oe_first_is_front(out):
         return "back_expected_front_out"
     out_cons = consonant_sequence(out)
     expected_cons = consonant_sequence(expected)
