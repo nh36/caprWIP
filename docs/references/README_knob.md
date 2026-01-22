@@ -1,40 +1,19 @@
-# Knob question (Old English cnop / -cnoppa)
+# Knob question (Old English attestation)
 
-## Current state (working summary)
+## Current state (summary)
 
-This note tracks the evidence for an Old English ancestor of **knob** and clarifies how it relates to **cnop / -cnoppa** and **wullknoppa**.
+This note tracks the evidence for an Old English ancestor of **knob** and keeps the lexical families distinct.
 
-### What we have, so far
+### Bottom line
 
-- **Direct OE forms remain slim** in the OCRed lexica. We do *not* yet have a clean standalone entry for **cnop** or **cnoppa** from the OCR text.
-- **Kroonen (EDPG) explicitly cites an OE form:** under *knappr* he gives **OE *cnæp* m. ‘top, knob’** (verified from the scan; OCR had misread it as *cnzp*).
-- **Gloss evidence (Latin → OE) does exist**, but it is sparse and needs verification against scans:
-  - *Ballationes, cnop* (Eighth‑century Latin glossary; OCRed from `aneightcenturyl00librgoog.txt`).
-  - A similar line appears in Wright’s glossary: *Ballationes, cnop* (OCRed from `anglosaxonoldeng00wrig.txt`).
-- **A compound is clearly attested** in the OCRed material:
-  - *Lanugo, wullknoppa* (Wright glossary; `anglosaxonoldeng00wrig.txt`).
+- **Unattested in Old English.** First attested in Middle English (Chaucer): “The knobbes sittynge on his chekes.”
+- **Reconstructed PGmc form:** *knubban‑ (weak noun).
+- **OE cnæp** is attested (Kroonen, p. 335) but belongs to *knapp‑, not the *knubb‑ family that yields **knob**.
 
-### Interpretive cautions
+### Brief family separation
 
-- The **semantic fit** of *ballationes* (“dances”) with **cnop** is **odd**, which raises the risk of OCR or glossing noise. These entries must be checked against page images before being treated as evidence.
-- **wullknoppa** likely reflects the **“nap/tuft”** sense (lanugo = down, fuzz). This may be **etymologically separate** from the **“knob/bump”** sense, or only loosely connected via a broader *knop/knob/knoppa* family in Germanic.
-- Some lexicons and etymological sources list **OE -cnoppa** (or similar) as a contributor to **knob/knop**, but our **primary lexical evidence inside the OCRed dictionaries is currently thin**.
-
-## Working hypothesis
-
-- **There was likely an OE *cnop / cnoppa* family**, but our **primary dictionary evidence is not strong yet**.
-- **wullknoppa** is **securely attested** (as a gloss for *lanugo*), but it **may represent a distinct “nap/tuft” sense** and should not be taken as proof of a “knob/bump” noun without further corroboration.
-
-## What to verify next
-
-1. **Check scans** for the *Ballationes, cnop* lines in both:
-   - `aneightcenturyl00librgoog.txt`
-   - `anglosaxonoldeng00wrig.txt`
-2. **Search for primary evidence** in:
-   - Toller (dictionary + supplement)
-   - Bosworth‑Toller (if separate images/editions are available)
-   - DOE (Dictionary of Old English) entries for **cnop / cnoppa / knop / knoppa**
-3. **Secondary literature**: look for studies on **knob/knop family** and **OE nap/tuft terms** to see whether **wullknoppa** is treated as related or distinct.
+- **cnæp** (< *knapp‑) ≠ **knob** (< *knubb‑).
+- **wullknoppa** is likely in the **“nap/tuft”** orbit, not the knob etymon.
 
 ## Files referenced
 
@@ -46,4 +25,4 @@ This note tracks the evidence for an Old English ancestor of **knob** and clarif
 
 ## Notes
 
-This is a **working** summary and should be updated once we confirm the gloss entries against scans and identify any better primary attestations.
+This is a **short summary**; expand only if new, specific evidence appears.
