@@ -20,6 +20,7 @@
 - Cnoppa/cnop (2026-01-21):
   - Goal: verify whether OE **cnoppa** or **cnop** are *attested* (and where), vs. “predicted/etymological” only; identify compounds (e.g., **wull‑cnoppa**) and senses (knob? tuft?).
   - TSV state: row for `*knuppăz` updated to **cnoppa** with a note citing etymology sources; this needs correction once attestation status is confirmed.
+  - New evidence (2026-01-22): Kroonen (EDPG) p. 335 cites **OE cnæp m. ‘top, knob’** under *knappr*; OCR misread it as `cnzp`, but the scan shows **cnæp**.
   - Pending evidence to confirm tomorrow:
     - Hall, *Concise Anglo‑Saxon Dictionary* (2nd ed., 1916): entry for **cnop** + cross‑ref to **wull‑cnoppa**.
     - Bosworth & Toller, *An Anglo‑Saxon Dictionary* (1898) + Toller Supplement (1921): entries for **cnop / cnoppa / wull‑cnoppa**.
