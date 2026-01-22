@@ -624,8 +624,8 @@ define OldEnglishOrthography [
 ];
 
 define OldEnglishCjCleanup [
-    {ʤ} {*j} -> {ʤj},
-    {ʤ} {j} -> {ʤj}
+    {ʤ} {*j} -> {ʤ},
+    {ʤ} {j} -> {ʤ}
 ];
 
 define OldEnglishRemoveStars [
@@ -733,7 +733,9 @@ define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
 
 define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
-define EnglishIUmlautIntervening [EnglishStarConsonantNoJ]*;
+define EnglishPalatalConsonant [{ʧ} | {ʤ} | {ʃ} | {ç} | {ʒ} | {j}];
+
+define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
 define EnglishWeakTailVowelStart [{*ă} | {*a} | {*e} | {*i}];
@@ -1193,8 +1195,7 @@ define OldEnglishEpentheticVowel OldEnglishEpentheticInsertion
     .o. OldEnglishEpentheticFront
     .o. OldEnglishGLInsertion;
 
-define OldEnglishIUmlautCore [
-    {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+define OldEnglishIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -1204,6 +1205,10 @@ define OldEnglishIUmlautCore [
     {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
+define OldEnglishIUmlautRaising [
+    {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+];
+
 define OldEnglishIUmlautDiphthong [
     {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -1211,7 +1216,8 @@ define OldEnglishIUmlautDiphthong [
     {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-define OldEnglishIUmlaut OldEnglishIUmlautCore
+define OldEnglishIUmlaut OldEnglishIUmlautFronting
+    .o. OldEnglishIUmlautRaising
     .o. OldEnglishIUmlautDiphthong;
 
 # West Germanic j‑gemination after light syllables (short vowel + single consonant).
@@ -1269,7 +1275,8 @@ define OldEnglishVelarPalatalization [
     {*k} -> {ʧ} || EnglishStarFrontVowel _,
     {*g} -> {ʤ} || EnglishStarFrontVowel _,
     {*k} -> {ʧ} || _ {*j},
-    {*g} -> {ʤ} || _ {*j}
+    {*g} -> {ʤ} || _ {*j},
+    {*g} {*g} -> {ʤ} {ʤ} || _ {*j}
 ];
 
 define OldEnglishVelarFricativePalatalization [
@@ -1334,10 +1341,10 @@ define EnglishProtoToOE (
     .o. EnglishBreakingLengthening
     .o. OldEnglishARestoration
     .o. EnglishLiquidLowering
+    .o. OldEnglishJGemination
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
     .o. OldEnglishVelarFricativePalatalization
-    .o. OldEnglishJGemination
     .o. OldEnglishIUmlaut
     .o. EnglishJClusterCoalescence
     .o. OldEnglishBackMutation
