@@ -1,11 +1,11 @@
-## CURRENT FOCUS (as of 2026-01-03)
+## CURRENT FOCUS (as of 2026-01-22)
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
 - Latest OE diagnostics (use the unified report script going forward):
-  - `docs/debug_snapshots/oe_mismatch_report.txt` (from `server/tools/oe_mismatch_report.py`, now normalizes proto `þ`→`θ`)
-  - `docs/debug_snapshots/oe_full_trace_report.txt` (full per‑lexeme stage trace with refined buckets)
+  - `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt` (bucketed mismatches; i‑umlaut after palatalization)
+  - `docs/debug_snapshots/oe_full_trace_report_2026-01-22g.txt` (full per‑lexeme stage trace)
   - `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
   - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt`
   - `docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`
@@ -16,17 +16,25 @@
 - Hedge (2026-01-20):
   - Reverted the orthographic `{ʤj} -> {ċġ}` mapping and removed `{ċġ}` from `OldEnglishSurfaceConsonant` (OE output should stay `ġġ`).
   - Data update: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ) with NOTE that **heċġ is the more standard spelling**; Wiktionary TSV left unchanged.
-  - Current output is **hæġġ** while expected is **heġġ**; see `docs/debug_snapshots/oe_mismatch_report_2026-01-20d.txt` and `docs/debug_snapshots/oe_full_trace_report_2026-01-20d.txt`.
+  - As of 2026-01-22g, output is **heġġ** (matches expected); see `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt` and `docs/debug_snapshots/oe_full_trace_report_2026-01-22g.txt`.
 - Knob (2026-01-22):
   - **Unattested in Old English**; first attested in Middle English (Chaucer): “The knobbes sittynge on his chekes.”
   - Reconstructed PGmc weak noun: **\*knubban‑** (knob family).
   - **OE cnæp** (Kroonen p. 335) is **\*knapp‑**, not the knob etymon; keep families distinct.
-  - TSV: OE slot should be **cnobba** marked **unattested** (based on ME knob + Frisian knobbe).
+  - TSV: OE slot **cnobba** marked **unattested** (based on ME knob + Frisian knobbe); note added in TSV.
+- OE mismatch report status (2026-01-22g):
+  - **291 mismatches / 79 matches** (370 total OE rows).
+  - `proto_mismatch_suspect` now **0** after first‑vowel bucketing fix.
+  - `gemination_extra` now **0** (singe/heġġ fixed under *-gj-* change).
+- OE *-gj- chronology check (2026-01-22):
+  - Standard descriptions show WGmc **gemination before *j** in short stems and **i‑mutation following *i/*j**, with classic paths like *satjan > *sattjan > *sættjan > *settian > OE settan; palatalization of velars by *j precedes i‑mutation in the usual OE chronology. Sources: Hasenfratz appendices (WVU “Reading Old English”) and the OE phonological history summary citing Campbell.
+  - Implementation aligned to this: allow **palatalized consonants** (ʤ/ʧ/ʃ/ç/ʒ/j) to count as intervening segments for i‑umlaut so raising can apply **after palatalization** rather than being blocked by non‑star symbols.
+  - Result: *xagjăz → **heġġ** and *sangjăną → **senġan** in `oe_full_trace_report_2026-01-22g.txt`; *baugjăną still mispredicts `bīeġan` (see final_vowel_missing bucket).
 - OE epenthesis update (2026-01-04):
   - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
   - Deterministic `r`-epenthesis uses an `{E}` placeholder with back-shift (→`*o`) vs front fallback (→`*e`).
   - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over-generation (`*xaslăz` → `hæsel` regression).
-  - Current OE mismatch report (latest run in `server/docs/debug_snapshots/oe_mismatch_report.txt`): **293 mismatches / 77 matches** (370 total OE rows).
+  - Current OE mismatch report (latest run in `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt`): **291 mismatches / 79 matches** (370 total OE rows).
 - Next actionable targets (from latest buckets):
   1. **Fronting missing w/ no trigger:** review a-restoration contexts and nasal blocks (see 2026-01-01 subgroup traces).
   2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re-trace `oe_breaking_probe`.
