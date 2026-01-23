@@ -1,0 +1,109 @@
+=== *xagjăz ===
+ProtoInput: *x*a*g*j*ă*z
+InitialKn: *x*a*g*j*ă*z
+Palatalisation: *x*a*g*j*ă*z
+ConsonantRules: *x*a*g*j
+GhMarker: *ç*e*ʤ*ʤ*j
+GlideDeletion: *ç*e*ʤ*ʤ*j
+ProtoToOE: *ç*e*ʤ*ʤ*j
+Orthography: heġġ
+Surface: heġġ
+
+=== *sangjăną ===
+ProtoInput: *s*a*n*g*j*ă*n*ą
+InitialKn: *s*a*n*g*j*ă*n*ą
+Palatalisation: *s*a*n*g*j*ă*n*ą
+ConsonantRules: *s*a*n*g*j*ă*n*ą
+GhMarker: *s*e*n*ʤ*j*ă*n
+GlideDeletion: *s*e*n*ʤ*j*ă*n
+ProtoToOE: *s*e*n*ʤ*j*ă*n
+Orthography: senġan
+Surface: senġan
+
+=== *baugjăną ===
+ProtoInput: *b*au*g*j*ă*n*ą
+InitialKn: *b*au*g*j*ă*n*ą
+Palatalisation: *b*au*g*j*ă*n*ą
+ConsonantRules: *b*au*g*j*ă*n*ą
+GhMarker: *b*īe*ʤ*j*ă*n
+GlideDeletion: *b*īe*ʤ*j*ă*n
+ProtoToOE: *b*īe*ʤ*j*ă*n
+Orthography: bīeġan
+Surface: bīeġan
+
+=== *skīnăną ===
+ProtoInput: *s*k*ī*n*ă*n*ą
+InitialKn: *s*k*ī*n*ă*n*ą
+Palatalisation: *ʃ*ī*n*ă*n*ą
+ConsonantRules: *ʃ*ī*n*ă*n*ą
+GhMarker: *ʃ*ī*n*ă*n
+GlideDeletion: *ʃ*ī*n*ă*n
+ProtoToOE: *ʃ*ī*n*ă*n
+Orthography: sċīnan
+Surface: sċīnan
+
+=== *xerθăz ===
+ProtoInput: *x*e*r*θ*ă*z
+InitialKn: *x*e*r*θ*ă*z
+Palatalisation: *x*e*r*θ*ă*z
+ConsonantRules: *x*e*r*θ
+GhMarker: *ç*eo*r*θ
+GlideDeletion: *ç*eo*r*θ
+ProtoToOE: *ç*eo*r*θ
+Orthography: heorþ, heor*þ
+Surface: heorþ
+
+=== *knabban ===
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+GhMarker: +?
+GlideDeletion: +?
+ProtoToOE: +?
+Orthography: +?
+Surface: +?
+
+=== *gnōg ===
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+GhMarker: +?
+GlideDeletion: +?
+ProtoToOE: +?
+Orthography: +?
+Surface: +?
+
+=== *hringz ===
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+GhMarker: +?
+GlideDeletion: +?
+ProtoToOE: +?
+Orthography: +?
+Surface: +?
+
+=== *brustz ===
+ProtoInput: *b*r*u*s*t*z
+InitialKn: *b*r*u*s*t*z
+Palatalisation: *b*r*u*s*t*z
+ConsonantRules: *b*r*u*s*t
+GhMarker: *b*r*u*s*t
+GlideDeletion: *b*r*u*s*t
+ProtoToOE: *b*r*u*s*t
+Orthography: brust
+Surface: brust
+
+=== *strawjăną ===
+ProtoInput: *s*t*r*a*w*j*ă*n*ą
+InitialKn: *s*t*r*a*w*j*ă*n*ą
+Palatalisation: *s*t*r*a*w*j*ă*n*ą
+ConsonantRules: *s*t*r*a*w*j*ă*n*ą
+GhMarker: *s*t*r*o*ʋ*ă*n
+GlideDeletion: *s*t*r*o*ă*n
+ProtoToOE: *s*t*r*o*w*ă*n
+Orthography: strowan
+Surface: strowan
