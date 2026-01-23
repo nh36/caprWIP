@@ -624,8 +624,7 @@ define OldEnglishOrthography [
 ];
 
 define OldEnglishCjCleanup [
-    {ʤ} {*j} -> {ʤ},
-    {ʤ} {j} -> {ʤ}
+    {*ʤ} {*j} -> {*ʤ}
 ];
 
 define OldEnglishRemoveStars [
@@ -733,7 +732,7 @@ define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
 
 define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
-define EnglishPalatalConsonant [{ʧ} | {ʤ} | {ʃ} | {ç} | {ʒ} | {j}];
+define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
 
@@ -782,35 +781,35 @@ define EnglishWeakTailVowelStar [
 ];
 
 define EnglishInitialKnMarkers [
-    {*k} {*n} -> {Kn} || .#. _,
-    {*g} {*n} -> {Gn} || .#. _
+    {*k} {*n} -> {*Kn} || .#. _,
+    {*g} {*n} -> {*Gn} || .#. _
 ];
 
 define OldEnglishPalatalisation (
-    [{*s} {*k} -> {s} {ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*k} -> {ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*g} -> {ʒ} || _ EnglishStarFrontVowel]
+    [{*s} {*k} -> {*s} {*ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*k} -> {*ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*g} -> {*ʒ} || _ EnglishStarFrontVowel]
 );
 # Legacy: retained for reference but not used in the current English/OE pipeline.
 
 define EnglishJClusterCoalescence (
-    [{*b} {*j} -> {v}]
-    .o. [{*g} {*j} -> {dʒ}]
-    .o. [{*k} {*j} -> {tʃ}]
+    [{*b} {*j} -> {*v}]
+    .o. [{*g} {*j} -> {*ʤ}]
+    .o. [{*k} {*j} -> {*ʧ}]
 );
 
 define EnglishEarlyPalatalisation (
-    [{*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*k} -> {tʃ} || _ EnglishStarFrontVowel]
-    .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
+    [{*s} {*k} -> {*ʃ} || _ EnglishStarFrontVowel]
+    .o. [{*k} -> {*ʧ} || _ EnglishStarFrontVowel]
+    .o. [{*g} -> {*ʤ} || _ EnglishStarFrontVowel]
 );
 
 define EnglishPalatalisation EnglishEarlyPalatalisation;
 
-define EnglishWGlideRule [{*w} -> {ʋ}];
+define EnglishWGlideRule [{*w} -> {*ʋ}];
 
 define EnglishZRhotacism [
-    {*z} -> {r} || EnglishStarVocalic _
+    {*z} -> {*r} || EnglishStarVocalic _
 ];
 
 define EnglishZApocope [{*z} -> 0 || _ .#.];
@@ -826,20 +825,20 @@ define OldEnglishConsonantRules EnglishZApocope
 define EnglishConsonantRules OldEnglishConsonantRules;
 
 define EnglishGhMarker [
-    {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+    {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
 define EnglishSilentInitialCleanup [
-    "Kn" -> "n",
-    "Gn" -> "n"
+    {*Kn} -> {*n},
+    {*Gn} -> {*n}
 ];
 
 define EnglishGlideDeletion [
-    {ʋ} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+    {*ʋ} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
 define EnglishGhDeletion [
-    {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+    {*GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
 define EnglishRhoticWeakTail [{*ă} | {*ą} | {*ɔ̆}];
@@ -848,10 +847,10 @@ define EnglishRhoticDental [{*d} | {*ð} | {*θ}];
 
 define EnglishRhoticBreaking (
     # {*barwōn} (bier): smooth the {*rʋ} cluster into an ME /ɪə/ nucleus so later stages can drop /r/ normally.
-    [{*æ} {*r} {ʋ} -> {*ɪə} {*r}]
+    [{*æ} {*r} {*ʋ} -> {*ɪə} {*r}]
     .o.
     # {*fuwer} (fire): West Saxon */uwər/ → /aɪər/ before r-loss kicks in.
-    [{*u} {æ} {*r} -> {*aɪ} {*ə} {*r}]
+    [{*u} {*æ} {*r} -> {*aɪ} {*ə} {*r}]
     .o.
     # {*bergą}: treat the velar + weak-tail as a single /rəʊ/ nucleus.
     [{*r} {*g} EnglishRhoticWeakTail -> {*r} {*əʊ}]
@@ -863,19 +862,19 @@ define EnglishRhoticBreaking (
     [{*ɔː} {*r} {*d} ({*i} | {*ī}) -> {*ɜː} {*r} {*d} ({*i} | {*ī})]
     .o.
     # {*erθo}: map `{*rθ/ð}` to a single /ɜːθ/ branch and `{*rd}` to /ɜːd/ so no parallel outputs survive.
-    [{æ} {*r} {*θ} -> {*ɜː} {*θ}]
+    [{*æ} {*r} {*θ} -> {*ɜː} {*θ}]
     .o.
-    [{æ} {*r} {*ð} -> {*ɜː} {*θ}]
+    [{*æ} {*r} {*ð} -> {*ɜː} {*θ}]
     .o.
-    [{æ} {*r} {*d} -> {*ɜː} {*d}]
+    [{*æ} {*r} {*d} -> {*ɜː} {*d}]
 );
 
 # Proto-stage fronting/backing before Middle English developments.
 define EnglishProtoRhoticFronting [
-    {*a} -> {æ} || _ {*r},
-    {*e} -> {æ} || _ {*r},
-    {*i} -> {ɪ} || _ {*r},
-    {*o} -> {ɔ} || _ {*r}
+    {*a} -> {*æ} || _ {*r},
+    {*e} -> {*æ} || _ {*r},
+    {*i} -> {*ɪ} || _ {*r},
+    {*o} -> {*ɔ} || _ {*r}
 ];
 
 # Short back-vowel lowering (pre-ME contextual rewrite).
@@ -1173,17 +1172,17 @@ define OldEnglishWeakTailReduction [
 ];
 
 define OldEnglishEpentheticInsertion [
-    {*r} -> {E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
+    {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
         EnglishStarConsonant+ _ .#.
 ];
 
 define OldEnglishEpentheticBackShift [
-    {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
-    {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
+    {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
+    {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
 ];
 
 define OldEnglishEpentheticFront [
-    {E} -> {*e}
+    {*E} -> {*e}
 ];
 
 define OldEnglishGLInsertion [
@@ -1261,31 +1260,31 @@ define OldEnglishNasalSpirantLoss [
 ];
 
 define OldEnglishSkPalatalization [
-    {*s} {*k} -> {ʃ} || .#. _,
-    {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
-    {*s} {*k} -> {ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
+    {*s} {*k} -> {*ʃ} || .#. _,
+    {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
+    {*s} {*k} -> {*ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
     ,
-    {*s} {*k} -> {ʃ} || _ {*j},
-    {*s} {*k} -> {ʃ} || {*j} _
+    {*s} {*k} -> {*ʃ} || _ {*j},
+    {*s} {*k} -> {*ʃ} || {*j} _
 ];
 
 define OldEnglishVelarPalatalization [
-    {*k} -> {ʧ} || _ EnglishStarFrontVowel,
-    {*g} -> {ʤ} || _ EnglishStarFrontVowel,
-    {*k} -> {ʧ} || EnglishStarFrontVowel _,
-    {*g} -> {ʤ} || EnglishStarFrontVowel _,
-    {*k} -> {ʧ} || _ {*j},
-    {*g} -> {ʤ} || _ {*j},
-    {*g} {*g} -> {ʤ} {ʤ} || _ {*j}
+    {*k} -> {*ʧ} || _ EnglishStarFrontVowel,
+    {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+    {*k} -> {*ʧ} || EnglishStarFrontVowel _,
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _,
+    {*k} -> {*ʧ} || _ {*j},
+    {*g} -> {*ʤ} || _ {*j},
+    {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ];
 
 define OldEnglishVelarFricativePalatalization [
-    {*x} -> {ç} || _ EnglishStarFrontVowel,
-    {*ɣ} -> {j} || _ EnglishStarFrontVowel,
-    {*x} -> {ç} || EnglishStarFrontVowel _,
-    {*ɣ} -> {j} || EnglishStarFrontVowel _,
-    {*x} -> {ç} || _ {*j},
-    {*ɣ} -> {j} || _ {*j}
+    {*x} -> {*ç} || _ EnglishStarFrontVowel,
+    {*ɣ} -> {*j} || _ EnglishStarFrontVowel,
+    {*x} -> {*ç} || EnglishStarFrontVowel _,
+    {*ɣ} -> {*j} || EnglishStarFrontVowel _,
+    {*x} -> {*ç} || _ {*j},
+    {*ɣ} -> {*j} || _ {*j}
 ];
 
 define EnglishHighVowelApocope [
@@ -1298,21 +1297,21 @@ define EnglishHighVowelApocope [
 ];
 
 define OldEnglishHeavyMarker [
-    {*i} -> {H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*u} -> {H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*i} -> {H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
-    {*u} -> {H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
+    {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+    {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+    {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
+    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
 ];
 
 define OldEnglishWeightMarkers OldEnglishHeavyMarker;
 
 define OldEnglishHighVowelApocope [
-    {H} {*i} -> 0 || _ .#.,
-    {H} {*u} -> 0 || _ .#.
+    {*H} {*i} -> 0 || _ .#.,
+    {*H} {*u} -> 0 || _ .#.
 ];
 
 define OldEnglishWeightCleanup [
-    {H} -> 0
+    {*H} -> 0
 ];
 
 define OldEnglishHLoss [

@@ -1,0 +1,19 @@
+Unstarred tokens before Orthography/Surface (pre-change (corrected v2))
+- ProtoInput: 0
+- InitialKn: 0
+- Palatalisation: 1
+  *skīnăną: ʃ*ī*n*ă*n*ą
+- ConsonantRules: 1
+  *skīnăną: ʃ*ī*n*ă*n*ą
+- GhMarker: 3
+  *xagjăz: ç*eʤʤ*j
+  *skīnăną: ʃ*ī*n*ă*n
+  *xerθăz: ç*eo*r*θ
+- GlideDeletion: 3
+  *xagjăz: ç*eʤʤ*j
+  *skīnăną: ʃ*ī*n*ă*n
+  *xerθăz: ç*eo*r*θ
+- ProtoToOE: 3
+  *xagjăz: ç*eʤʤ*j
+  *skīnăną: ʃ*ī*n*ă*n
+  *xerθăz: ç*eo*r*θ
