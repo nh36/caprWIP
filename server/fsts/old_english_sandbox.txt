@@ -5,9 +5,14 @@ define OESandboxAfterProtoInput EnglishAfterProtoInput;
 define OESandboxAfterInitialKn EnglishAfterInitialKn;
 define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
 define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
+define OESandboxAfterProtoToOEWeakTail EnglishAfterProtoToOEWeakTail;
+define OESandboxAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeightMarkers;
+define OESandboxAfterProtoToOEApocope EnglishAfterProtoToOEApocope;
+define OESandboxAfterProtoToOEWeightCleanup EnglishAfterProtoToOEWeightCleanup;
+define OESandboxAfterProtoToOE EnglishAfterProtoToOE;
+define OESandboxAfterWGlide EnglishAfterWGlide;
 define OESandboxAfterGhMarker EnglishAfterGhMarker;
 define OESandboxAfterGlideDeletion EnglishAfterGlideDeletion;
-define OESandboxAfterProtoToOE EnglishAfterProtoToOE;
 define OESandboxAfterEpenthesis OldEnglishAfterEpenthesis;
 define OESandboxAfterOrthography OldEnglishRules;
 define OESandboxAfterSurface OldEnglishReflexes;
@@ -35,16 +40,36 @@ regex OESandboxAfterConsonantRules;
 save stack old_english_sandbox_after_consonant_rules.bin
 
 clear stack
+regex OESandboxAfterProtoToOEWeakTail;
+save stack old_english_sandbox_after_proto_to_oe_weak_tail.bin
+
+clear stack
+regex OESandboxAfterProtoToOEWeightMarkers;
+save stack old_english_sandbox_after_proto_to_oe_weight_markers.bin
+
+clear stack
+regex OESandboxAfterProtoToOEApocope;
+save stack old_english_sandbox_after_proto_to_oe_apocope.bin
+
+clear stack
+regex OESandboxAfterProtoToOEWeightCleanup;
+save stack old_english_sandbox_after_proto_to_oe_weight_cleanup.bin
+
+clear stack
+regex OESandboxAfterProtoToOE;
+save stack old_english_sandbox_after_proto_to_oe.bin
+
+clear stack
+regex OESandboxAfterWGlide;
+save stack old_english_sandbox_after_w_glide.bin
+
+clear stack
 regex OESandboxAfterGhMarker;
 save stack old_english_sandbox_after_gh_marker.bin
 
 clear stack
 regex OESandboxAfterGlideDeletion;
 save stack old_english_sandbox_after_glide_deletion.bin
-
-clear stack
-regex OESandboxAfterProtoToOE;
-save stack old_english_sandbox_after_proto_to_oe.bin
 
 clear stack
 regex OESandboxAfterEpenthesis;
