@@ -551,9 +551,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2072	h e l p	*xelpō	h ɛ l p -	hɛlp	help	131	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			help	*xelpō	128
 1444	h ɛ l f ə n	*xelpăną	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German				help	*xelpăną	128
 477	h ɪ l f ə	*xelpō	h ɪ l f ə	hɪlfə	Hilfe	131	German				help	*xelpō	128
-345	h ɜː d	*herdō	h ɜː - d ( - )	hɜːd	herd	95	English				herd	*herdō	342
-2073	h i e r d	*herdō	h ɜː - d ( - )	hɜːd	hierd	95	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			herd	*herdō	342
-344	h eː r d ə	*herdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*herdō	342
+345	h ɜː d	*xerdō	h ɜː - d ( - )	hɜːd	herd	95	English				herd	*xerdō	342
+2073	h i e r d	*xerdō	h ɜː - d ( - )	hɜːd	hierd	95	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			herd	*xerdō	342
+344	h eː r d ə	*xerdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR			herd	*xerdō	342
 93	h ɑu ʋ ə	*xawwăną	h - ɑu ʋ ə - ( - - )	hɑuʋə	houwen	26	Dutch				hew	*xawwăną	129
 92	h j uː	*xawwăną	h j uː - - - ( - - )	hjuː	hew	26	English				hew	*xawwăną	129
 2074	h ē a w a n	*xawwăną	h j uː - - - ( - - )	hjuː	hēawan	26	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hew	*xawwăną	129
@@ -1018,10 +1018,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1190	s ɪ t	*setjăną	s ɪ t - - - ( - - )	sɪt	sit	326	English				sit	*setjăną	232
 2193	s i t t a n	*setjăną	s ɪ t - - - ( - - )	sɪt	sittan	326	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sit	*setjăną	232
 1189	z ɪ ts ə n	*setjăną	z ɪ ts - ə n ( - - )	zɪt͡sən	sitzen	326	German				sit	*setjăną	232
-1162	z ɛ s	*sehs	z ɛ - s	zɛs	zes	318	Dutch				six	*sehs	233
-1161	s ɪ k s	*sehs	s ɪ k s	sɪks	six	318	English				six	*sehs	233
-2194	s i x	*sehs	s ɪ k s	sɪks	six	318	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			six	*sehs	233
-1160	z ɛ k s	*sehs	z ɛ k s	zɛks	sechs	318	German				six	*sehs	233
+1162	z ɛ s	*sexs	z ɛ - s	zɛs	zes	318	Dutch				six	*sexs	233
+1161	s ɪ k s	*sexs	s ɪ k s	sɪks	six	318	English				six	*sexs	233
+2194	s i x	*sexs	s ɪ k s	sɪks	six	318	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			six	*sexs	233
+1160	z ɛ k s	*sexs	z ɛ k s	zɛks	sechs	318	German				six	*sexs	233
 1146	s l aː n	*slaxăną	s l aː - - n ( - - )	slaːn	slaan	314	Dutch				slay	*slaxăną	234
 1145	s l eɪ	*slaxăną	s l eɪ - - - ( - - )	sleɪ	slay	314	English				slay	*slaxăną	234
 2195	s l ē a n	*slaxăną	s l eɪ - - - ( - - )	sleɪ	slēan	314	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slay	*slaxăną	234
@@ -1205,10 +1205,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1388	t iː m	*tauxmăz	t iː - m ( - - )	tiːm	team	380	English				team	*tauxmăz	275
 2241	t ē a m	*tauxmăz	t iː - m ( - - )	tiːm	tēam	380	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			team	*tauxmăz	275
 1387	ts au m	*tauxmăz	ts au - m ( - - )	t͡saum	Zaum	380	German				team	*tauxmăz	275
-863	t iː n	*tehun	t iː - - n	tiːn	tien	237	Dutch				ten	*tehun	276
-862	t ɛ n	*tehun	t ɛ - - n	tɛn	ten	237	English				ten	*tehun	276
-2242	t ī e n	*tehun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*tehun	276
-861	ts eː n	*tehun	ts eː - - n	t͡seːn	zehn	237	German				ten	*tehun	276
+863	t iː n	*texun	t iː - - n	tiːn	tien	237	Dutch				ten	*texun	276
+862	t ɛ n	*texun	t ɛ - - n	tɛn	ten	237	English				ten	*texun	276
+2242	t ī e n	*texun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*texun	276
+861	ts eː n	*texun	ts eː - - n	t͡seːn	zehn	237	German				ten	*texun	276
 1804	θ eɪ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	thane	494	English				thane	*θegnăz	362
 2243	þ æ ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þæġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thane	*θegnăz	362
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German				thane	*θegnăz	362
