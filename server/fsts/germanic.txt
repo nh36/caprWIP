@@ -1321,12 +1321,21 @@ define OldEnglishHLoss [
 
 define OldEnglishContraction [
     {*a} {*a} -> {*ā},
+    {*a} {*ă} -> {*ā},
     {*e} {*e} -> {*ē},
+    {*e} {*ă} -> {*ē},
     {*i} {*i} -> {*ī},
+    {*i} {*ă} -> {*ī},
     {*o} {*o} -> {*ō},
+    {*o} {*ă} -> {*ō},
     {*u} {*u} -> {*ū},
+    {*u} {*ă} -> {*ū},
     {*ea} {*a} -> {*ēa},
-    {*eo} {*a} -> {*ēo}
+    {*ea} {*ă} -> {*ēa},
+    {*ēa} {*ă} -> {*ēa},
+    {*eo} {*a} -> {*ēo},
+    {*eo} {*ă} -> {*ēo},
+    {*ēo} {*ă} -> {*ēo}
 ];
 
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
