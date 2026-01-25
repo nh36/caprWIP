@@ -1111,3 +1111,20 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Reliable one-off tests:** use `foma` with stdin to avoid interactive issues, e.g.
   - `printf 'regex {ʤ} {*j} -> {ʤj};\napply down "ç*æʤ*j"\nquit\n' | foma`
   - Output: `"ç*æʤj"` (confirms the merge rule works on the hedge pre‑orthography form).
+
+### HIGH PRIORITY: PGmc final *-un behavior (2026-01-25)
+- **Problem:** PGmc final `*-un` is misbehaving across the “ten/seven/nine” set.
+  - `*texun` → model output **teoun**, expected **tīen** (full trace: `server/docs/debug_snapshots/oe_full_trace_report_2026-01-25e.txt`).
+  - `*sebun` → model output **sobun**, expected **seofon** (same report).
+  - `*newun` → model output **nēowun**, expected **nigon** (same report).
+- **Note:** `*sebun` and `*newun` did not appear in the short mismatch report because the default output lists only a limited number of examples per bucket. With a larger `--examples` count, they show up under:
+  - `breaking_missing` (`*sebun`)
+  - `front_expected_back_out` (`*newun`)
+  - Reference: `server/docs/debug_snapshots/oe_mismatch_report_2026-01-25f.txt`
+- **Likely cause:** `OldEnglishWeakTailReduction` (in `server/fsts/germanic.txt`) currently reduces `*ă`, `*ą`, and final `*i` but **does not touch `*u`**, so `*-un` does not get the weak‑tail treatment at all.
+- **Action needed:** treat this as a high‑priority phonology fix. Investigate how weak‑syllable pressure / vowel balance should affect `*-un` in OE; adjust `OldEnglishWeakTailReduction` (or upstream conditioning) accordingly; then re‑run full trace + mismatch to confirm `teoun/sobun/nēowun` move toward **tīen/seofon/nigon**.
+- **Next actions checklist:**
+  - Pin down the consensus on OE weak‑syllable reduction for `*-un` (Hogg + any standard handbooks).
+  - Trace current `*-un` paths in the FST stack to see exactly where it diverges.
+  - Draft a minimal rule update, test on `*texun`, `*sebun`, `*newun`, and scan for side effects.
+  - Re‑run `oe_full_trace_report` and `oe_mismatch_report` to confirm bucket movement and any regressions.
