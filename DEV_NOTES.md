@@ -22,6 +22,15 @@
   - Reconstructed PGmc weak noun: **\*knubban‑** (knob family).
   - **OE cnæp** (Kroonen p. 335) is **\*knapp‑**, not the knob etymon; keep families distinct.
   - TSV: OE slot **cnobba** marked **unattested** (based on ME knob + Frisian knobbe); note added in TSV.
+- OE weak-tail reduction sanity check (2026-01-26):
+  - **Observation:** `OldEnglishWeakTailReduction` appears inert in current builds; `*u` in weak tails (e.g., *tehun, *sebun, *newun) stays `{*u}` at `EnglishAfterProtoToOEWeakTail`, so the new `{*u}->{*o}` line does **not** affect `*-un`.
+  - **Implication:** a targeted `*-un -> -on` rewrite may need to be its own rule/stage, or the existing weak‑tail reduction block needs fixing so any reductions actually apply.
+  - **Next checks:** run `flookup` against `old_english_sandbox_after_proto_to_oe_weak_tail.bin` for `texun/tehun/sebun/newun` and probe `OldEnglishWeakTailReduction` in isolation to confirm whether **any** `{*ă}/{*ą}/{*i}/{*u}` reductions fire.
+  - **Decision point:** if `OldEnglishWeakTailReduction` is truly dead, fix that block first; otherwise add a dedicated `OldEnglishWeakTailUnReduction` rule for `{*u}{*n} -> {*o}{*n}`.
+- Foma notes / recurring gotchas (2026-01-26):
+  - When testing rules in isolation, use **brace tokens** (e.g., `{*u}{*n}`) and confirm the active symbol table; raw `*u*n` strings do not always match the intended multichar symbols.
+  - `source fsts/germanic.txt` writes many `.bin` files to the **current directory**; make sure the report scripts and ad‑hoc `flookup` tests are using the same bin locations.
+  - If a rule seems inert, confirm it against the **exact** bin used by reports (`old_english_sandbox_after_proto_to_oe_weak_tail.bin`) rather than a locally built test transducer.
 - OE mismatch report status (2026-01-22g):
   - **291 mismatches / 79 matches** (370 total OE rows).
   - `proto_mismatch_suspect` now **0** after first‑vowel bucketing fix.
@@ -1128,3 +1137,27 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - Trace current `*-un` paths in the FST stack to see exactly where it diverges.
   - Draft a minimal rule update, test on `*texun`, `*sebun`, `*newun`, and scan for side effects.
   - Re‑run `oe_full_trace_report` and `oe_mismatch_report` to confirm bucket movement and any regressions.
+
+### OE full trace report: stages that never fire (2026-01-26)
+- The new stage‑firing summary in `docs/debug_snapshots/oe_full_trace_report_2026-01-26i.txt` shows **20 stages with zero changes** (never fire). We need to audit each: confirm intended scope, check rule context, and decide whether to fix, reorder, or remove.
+- Never‑fire list (as of 2026-01-26i):
+  - ProtoInput
+  - LiquidLowering
+  - VelarFricativePalatalization
+  - IUmlaut
+  - JClusterCoalescence
+  - BackMutation
+  - NasalSpirantLengthening
+  - NasalSpirantLoss
+  - WeakTailNasalLoss
+  - WeakTailUnReduction
+  - WeakTailReduction
+  - WeightMarkers
+  - HighVowelApocope
+  - JLossAfterHeavy
+  - WeightCleanup
+  - HLoss
+  - Contraction
+  - ProtoToOEWeightMarkers
+  - ProtoToOEApocope
+  - ProtoToOEWeightCleanup
