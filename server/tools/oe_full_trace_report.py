@@ -373,6 +373,7 @@ def bucket_entry(proto_norm: str, out: str, expected: str) -> str:
 def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     trace: List[Tuple[str, List[str]]] = []
     last_outputs = [proto_norm]
+    carrying = False
     for label, bin_name in STAGES:
         outputs = run_stage(bin_dir, bin_name, proto_norm)
         usable = [out for out in outputs if out != "+?"]
@@ -385,6 +386,10 @@ def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
         last_outputs = outputs
         if carried:
             label = f"{label} [carry]"
+            carrying = True
+        elif carrying:
+            label = f"{label} [resume]"
+            carrying = False
         trace.append((label, outputs))
     return trace
 
