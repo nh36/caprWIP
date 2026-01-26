@@ -1,11 +1,11 @@
-## CURRENT FOCUS (as of 2026-01-22)
+## CURRENT FOCUS (as of 2026-01-26)
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
 - Latest OE diagnostics (use the unified report script going forward):
-  - `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt` (bucketed mismatches; i‑umlaut after palatalization)
-  - `docs/debug_snapshots/oe_full_trace_report_2026-01-22g.txt` (full per‑lexeme stage trace)
+  - `docs/debug_snapshots/oe_mismatch_report_2026-01-26f.txt` (bucketed mismatches; post-apocope move)
+  - `docs/debug_snapshots/oe_full_trace_report_2026-01-26f.txt` (full per-lexeme stage trace)
   - `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
   - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt`
   - `docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`
@@ -13,6 +13,8 @@
 - Start‑here repro (fresh run):
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
+- Rule triage template (generic):
+  When a rule looks inert, treat it as a mini-investigation: read the rule’s own definition and comments, then cross-check its intended historical scope in the local literature (e.g., Hogg, Ringe). Next, identify the subset of dataset entries that should plausibly be affected, run focused probes through the relevant stage stacks, and decide (1) whether the rule truly never fires, (2) whether its intended effect is already being achieved by another rule or stage, (3) whether the intended change is still required for the current model, and, if it is required, (4) why the present implementation fails to achieve it (wrong ordering, mismatched symbols, overly strict context, or upstream changes).
 - Hedge (2026-01-20):
   - Reverted the orthographic `{ʤj} -> {ċġ}` mapping and removed `{ċġ}` from `OldEnglishSurfaceConsonant` (OE output should stay `ġġ`).
   - Data update: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ) with NOTE that **heċġ is the more standard spelling**; Wiktionary TSV left unchanged.
