@@ -1165,9 +1165,14 @@ define OldEnglishWeakTailNasalLoss [
     {*m} {*ą} -> {*m} || _ .#.
 ];
 
+define OldEnglishWeakTailUnReduction [
+    {*u} {*n} -> {*o} {*n} || _ .#.
+];
+
 define OldEnglishWeakTailReduction [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆},
+    {*u} -> {*o},
     {*i} -> {*e} || _ .#.
 ];
 
@@ -1359,9 +1364,9 @@ define EnglishProtoToOE (
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
     .o. OldEnglishWeakTailNasalLoss
-    .o. OldEnglishWeakTailReduction
     .o. OldEnglishWeightMarkers
     .o. OldEnglishHighVowelApocope
+    .o. OldEnglishWeakTailReduction
     .o. OldEnglishJLossAfterHeavy
     .o. OldEnglishWeightCleanup
     .o. OldEnglishHLoss
@@ -1415,10 +1420,12 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. OldEnglishNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss
     .o. OldEnglishWeakTailNasalLoss
-    .o. OldEnglishWeakTailReduction;
+    .o. OldEnglishWeakTailUnReduction;
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope;
-define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope .o. OldEnglishWeightCleanup;
+define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
+    .o. OldEnglishWeakTailReduction
+    .o. OldEnglishWeightCleanup;
 define EnglishAfterProtoToOE EnglishAfterConsonantRules .o. EnglishProtoToOE;
 define EnglishAfterWGlide EnglishAfterProtoToOE .o. EnglishWGlideRule;
 define EnglishAfterGhMarker EnglishAfterWGlide .o. EnglishGhMarker;

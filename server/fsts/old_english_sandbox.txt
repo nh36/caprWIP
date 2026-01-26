@@ -5,6 +5,60 @@ define OESandboxAfterProtoInput EnglishAfterProtoInput;
 define OESandboxAfterInitialKn EnglishAfterInitialKn;
 define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
 define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
+define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
+    .o. EnglishWestGermanic;
+define OESandboxAfterAuFronting OESandboxAfterWestGermanic
+    .o. OldEnglishAuFronting;
+define OESandboxAfterWWSimplification OESandboxAfterAuFronting
+    .o. OldEnglishWWSimplification;
+define OESandboxAfterDiphthongLeveling OESandboxAfterWWSimplification
+    .o. OldEnglishDiphthongLeveling;
+define OESandboxAfterEwLongDiphthong OESandboxAfterDiphthongLeveling
+    .o. OldEnglishEwLongDiphthong;
+define OESandboxAfterAngloFrisianBrightening OESandboxAfterEwLongDiphthong
+    .o. EnglishAngloFrisianBrightening;
+define OESandboxAfterBreakingLengthening OESandboxAfterAngloFrisianBrightening
+    .o. EnglishBreakingLengthening;
+define OESandboxAfterARestoration OESandboxAfterBreakingLengthening
+    .o. OldEnglishARestoration;
+define OESandboxAfterLiquidLowering OESandboxAfterARestoration
+    .o. EnglishLiquidLowering;
+define OESandboxAfterJGemination OESandboxAfterLiquidLowering
+    .o. OldEnglishJGemination;
+define OESandboxAfterSkPalatalization OESandboxAfterJGemination
+    .o. OldEnglishSkPalatalization;
+define OESandboxAfterVelarPalatalization OESandboxAfterSkPalatalization
+    .o. OldEnglishVelarPalatalization;
+define OESandboxAfterVelarFricativePalatalization OESandboxAfterVelarPalatalization
+    .o. OldEnglishVelarFricativePalatalization;
+define OESandboxAfterIUmlaut OESandboxAfterVelarFricativePalatalization
+    .o. OldEnglishIUmlaut;
+define OESandboxAfterJClusterCoalescence OESandboxAfterIUmlaut
+    .o. EnglishJClusterCoalescence;
+define OESandboxAfterBackMutation OESandboxAfterJClusterCoalescence
+    .o. OldEnglishBackMutation;
+define OESandboxAfterNasalSpirantLengthening OESandboxAfterBackMutation
+    .o. OldEnglishNasalSpirantLengthening;
+define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
+    .o. OldEnglishNasalSpirantLoss;
+define OESandboxAfterWeakTailNasalLoss OESandboxAfterNasalSpirantLoss
+    .o. OldEnglishWeakTailNasalLoss;
+define OESandboxAfterWeakTailUnReduction OESandboxAfterWeakTailNasalLoss
+    .o. OldEnglishWeakTailUnReduction;
+define OESandboxAfterWeightMarkers OESandboxAfterWeakTailUnReduction
+    .o. OldEnglishWeightMarkers;
+define OESandboxAfterHighVowelApocope OESandboxAfterWeightMarkers
+    .o. OldEnglishHighVowelApocope;
+define OESandboxAfterWeakTailReduction OESandboxAfterHighVowelApocope
+    .o. OldEnglishWeakTailReduction;
+define OESandboxAfterJLossAfterHeavy OESandboxAfterHighVowelApocope
+    .o. OldEnglishJLossAfterHeavy;
+define OESandboxAfterWeightCleanup OESandboxAfterJLossAfterHeavy
+    .o. OldEnglishWeightCleanup;
+define OESandboxAfterHLoss OESandboxAfterWeightCleanup
+    .o. OldEnglishHLoss;
+define OESandboxAfterContraction OESandboxAfterHLoss
+    .o. OldEnglishContraction;
 define OESandboxAfterProtoToOEWeakTail EnglishAfterProtoToOEWeakTail;
 define OESandboxAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeightMarkers;
 define OESandboxAfterProtoToOEApocope EnglishAfterProtoToOEApocope;
@@ -38,6 +92,114 @@ save stack old_english_sandbox_after_palatalisation.bin
 clear stack
 regex OESandboxAfterConsonantRules;
 save stack old_english_sandbox_after_consonant_rules.bin
+
+clear stack
+regex OESandboxAfterWestGermanic;
+save stack old_english_sandbox_after_west_germanic.bin
+
+clear stack
+regex OESandboxAfterAuFronting;
+save stack old_english_sandbox_after_au_fronting.bin
+
+clear stack
+regex OESandboxAfterWWSimplification;
+save stack old_english_sandbox_after_ww_simplification.bin
+
+clear stack
+regex OESandboxAfterDiphthongLeveling;
+save stack old_english_sandbox_after_diphthong_leveling.bin
+
+clear stack
+regex OESandboxAfterEwLongDiphthong;
+save stack old_english_sandbox_after_ew_long_diphthong.bin
+
+clear stack
+regex OESandboxAfterAngloFrisianBrightening;
+save stack old_english_sandbox_after_anglo_frisian_brightening.bin
+
+clear stack
+regex OESandboxAfterBreakingLengthening;
+save stack old_english_sandbox_after_breaking_lengthening.bin
+
+clear stack
+regex OESandboxAfterARestoration;
+save stack old_english_sandbox_after_a_restoration.bin
+
+clear stack
+regex OESandboxAfterLiquidLowering;
+save stack old_english_sandbox_after_liquid_lowering.bin
+
+clear stack
+regex OESandboxAfterJGemination;
+save stack old_english_sandbox_after_j_gemination.bin
+
+clear stack
+regex OESandboxAfterSkPalatalization;
+save stack old_english_sandbox_after_sk_palatalization.bin
+
+clear stack
+regex OESandboxAfterVelarPalatalization;
+save stack old_english_sandbox_after_velar_palatalization.bin
+
+clear stack
+regex OESandboxAfterVelarFricativePalatalization;
+save stack old_english_sandbox_after_velar_fricative_palatalization.bin
+
+clear stack
+regex OESandboxAfterIUmlaut;
+save stack old_english_sandbox_after_i_umlaut.bin
+
+clear stack
+regex OESandboxAfterJClusterCoalescence;
+save stack old_english_sandbox_after_j_cluster_coalescence.bin
+
+clear stack
+regex OESandboxAfterBackMutation;
+save stack old_english_sandbox_after_back_mutation.bin
+
+clear stack
+regex OESandboxAfterNasalSpirantLengthening;
+save stack old_english_sandbox_after_nasal_spirant_lengthening.bin
+
+clear stack
+regex OESandboxAfterNasalSpirantLoss;
+save stack old_english_sandbox_after_nasal_spirant_loss.bin
+
+clear stack
+regex OESandboxAfterWeakTailNasalLoss;
+save stack old_english_sandbox_after_weak_tail_nasal_loss.bin
+
+clear stack
+regex OESandboxAfterWeakTailUnReduction;
+save stack old_english_sandbox_after_weak_tail_un_reduction.bin
+
+clear stack
+regex OESandboxAfterWeightMarkers;
+save stack old_english_sandbox_after_weight_markers.bin
+
+clear stack
+regex OESandboxAfterHighVowelApocope;
+save stack old_english_sandbox_after_high_vowel_apocope.bin
+
+clear stack
+regex OESandboxAfterWeakTailReduction;
+save stack old_english_sandbox_after_weak_tail_reduction.bin
+
+clear stack
+regex OESandboxAfterJLossAfterHeavy;
+save stack old_english_sandbox_after_j_loss_after_heavy.bin
+
+clear stack
+regex OESandboxAfterWeightCleanup;
+save stack old_english_sandbox_after_weight_cleanup_full.bin
+
+clear stack
+regex OESandboxAfterHLoss;
+save stack old_english_sandbox_after_h_loss.bin
+
+clear stack
+regex OESandboxAfterContraction;
+save stack old_english_sandbox_after_contraction.bin
 
 clear stack
 regex OESandboxAfterProtoToOEWeakTail;
