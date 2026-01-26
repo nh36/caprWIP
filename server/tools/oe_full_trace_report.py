@@ -30,6 +30,33 @@ STAGES: List[Tuple[str, str]] = [
     ("InitialKn", "old_english_sandbox_after_initial_kn.bin"),
     ("Palatalisation", "old_english_sandbox_after_palatalisation.bin"),
     ("ConsonantRules", "old_english_sandbox_after_consonant_rules.bin"),
+    ("WestGermanic", "old_english_sandbox_after_west_germanic.bin"),
+    ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
+    ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
+    ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),
+    ("EwLongDiphthong", "old_english_sandbox_after_ew_long_diphthong.bin"),
+    ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
+    ("BreakingLengthening", "old_english_sandbox_after_breaking_lengthening.bin"),
+    ("ARestoration", "old_english_sandbox_after_a_restoration.bin"),
+    ("LiquidLowering", "old_english_sandbox_after_liquid_lowering.bin"),
+    ("JGemination", "old_english_sandbox_after_j_gemination.bin"),
+    ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
+    ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
+    ("VelarFricativePalatalization", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
+    ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
+    ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
+    ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
+    ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
+    ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
+    ("WeakTailNasalLoss", "old_english_sandbox_after_weak_tail_nasal_loss.bin"),
+    ("WeakTailUnReduction", "old_english_sandbox_after_weak_tail_un_reduction.bin"),
+    ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
+    ("WeightMarkers", "old_english_sandbox_after_weight_markers.bin"),
+    ("HighVowelApocope", "old_english_sandbox_after_high_vowel_apocope.bin"),
+    ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
+    ("WeightCleanup", "old_english_sandbox_after_weight_cleanup_full.bin"),
+    ("HLoss", "old_english_sandbox_after_h_loss.bin"),
+    ("Contraction", "old_english_sandbox_after_contraction.bin"),
     ("ProtoToOEWeakTail", "old_english_sandbox_after_proto_to_oe_weak_tail.bin"),
     ("ProtoToOEWeightMarkers", "old_english_sandbox_after_proto_to_oe_weight_markers.bin"),
     ("ProtoToOEApocope", "old_english_sandbox_after_proto_to_oe_apocope.bin"),
@@ -344,7 +371,18 @@ def bucket_entry(proto_norm: str, out: str, expected: str) -> str:
 
 
 def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
-    return [(label, run_stage(bin_dir, bin_name, proto_norm)) for label, bin_name in STAGES]
+    trace: List[Tuple[str, List[str]]] = []
+    last_outputs = [proto_norm]
+    for label, bin_name in STAGES:
+        outputs = run_stage(bin_dir, bin_name, proto_norm)
+        usable = [out for out in outputs if out != "+?"]
+        if not usable:
+            outputs = last_outputs
+        else:
+            outputs = usable
+        last_outputs = outputs
+        trace.append((label, outputs))
+    return trace
 
 
 def write_report(
