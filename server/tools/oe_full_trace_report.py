@@ -401,6 +401,7 @@ def write_report(
     output_path: Path,
 ) -> None:
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
+    stage_fires: Dict[str, List[str]] = defaultdict(list)
     for row in rows:
         outputs = apply_down(bin_path, row["proto_norm"])
         expected = row["counterpart"]
@@ -455,10 +456,25 @@ def write_report(
             lines.append(f"EXPECTED: {row['counterpart']}")
             lines.append(f"OUTPUTS: {row['outputs']}")
             lines.append("")
+            prev_outputs: List[str] | None = None
+            lexeme_label = f"{row['concept']} :: {row['proto']}"
             for label, outputs in trace_lexeme(row["proto_norm"], bin_dir):
+                base_label = label.split(" [", 1)[0]
+                if prev_outputs is not None and outputs != prev_outputs:
+                    stage_fires[base_label].append(lexeme_label)
+                prev_outputs = outputs
                 pretty = ", ".join(outputs)
                 lines.append(f"{label}: {pretty}")
             lines.append("")
+        lines.append("")
+
+    lines.append("=== STAGE FIRING SUMMARY ===")
+    lines.append("")
+    for label, _bin in STAGES:
+        fired = stage_fires.get(label, [])
+        lines.append(f"{label}: {len(fired)}")
+        if fired:
+            lines.append(", ".join(fired))
         lines.append("")
 
     output_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
