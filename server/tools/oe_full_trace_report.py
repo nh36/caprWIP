@@ -376,11 +376,15 @@ def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     for label, bin_name in STAGES:
         outputs = run_stage(bin_dir, bin_name, proto_norm)
         usable = [out for out in outputs if out != "+?"]
+        carried = False
         if not usable:
             outputs = last_outputs
+            carried = True
         else:
             outputs = usable
         last_outputs = outputs
+        if carried:
+            label = f"{label} [carry]"
         trace.append((label, outputs))
     return trace
 
