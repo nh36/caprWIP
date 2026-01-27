@@ -6,6 +6,36 @@
 - Analyzer sample (`printf 'laux\nknɛxt\nmɪlx\nbroːt\n' | flookup german.bin`) still returns full proto bundles, but the rogue `braɔt` reflexes disappear.
 - API regression harness (`python3 server/tools/api_regression.py`) remains green for Burmish and Germanic, so the tightened phonotactics do not disturb the frontend payloads.
 
+### Tracing status (2026-01-27 update)
+
+- **LiquidLowering investigation** (requested deep dive before touching chronology):
+  - Rule under inspection: `EnglishLiquidLowering` in `server/fsts/germanic.txt`, described as “Late Old English lowering of {*ō} before liquids and in absolute final position.”
+  - Literature check:
+    - Hogg vol. 1 (§3.3.3.2) sketches the general OE trend: long unstressed vowels shorten; reduced vowels merge and later are lost via apocope/syncope. Hogg also notes apocope/syncope are later than i‑mutation (so any late OE changes should not interfere with i‑umlaut).
+    - Ringe/Taylor vol. 2 §6.8.3 explicitly says **after apocope of final short high vowels, word‑final unstressed long vowels were shortened**; this shortening counterfed later syncope/apocope. Ordering there: general syncope → internal long‑vowel shortening → apocope of final short high vowels → **final long‑vowel shortening**. See `docs/references/ringe_taylor_linguistic_history_vol2.txt` around 17110–17130.
+  - Dataset sweep (Old English entries where proto has *ō before liquid or word‑final):
+    - Source: `server/data/germanic-aligned-final.tsv`, filtering `DOCULECT == Old_English` and `PROTO` matching `ō(?=l|r|$)`.
+    - 38 lexemes found (proto → OE):  
+      `*bō → bā]] [[þā`, `*bōkō → bēċe`, `*dawwō → dēaw`, `*fedwōrez → fēower`,  
+      `*flaskō → flasce`, `*furxō → furh`, `*laugō → lēah`, `*librō → lifer`,  
+      `*lindō → linden`, `*markō → mearcian`, `*mizdō → mēd`, `*nabō → nafu`,  
+      `*nadrō → nǣdre`, `*nasō → nosu`, `*nēθlō → nǣdl`, `*rastō → ræst`,  
+      `*rindō → rind`, `*rustō → rust`, `*rōdō → rōd`, `*saiwălō → sāwol`,  
+      `*sakō → sacu`, `*salbō → sealf`, `*skamō → sċamu`, `*skuldrō → sċuldra`,  
+      `*skūflō → scofl`, `*skūrō → sċūr`, `*spannō → spann`, `*spennilō → spindle`,  
+      `*stōlăz → stōl`, `*surgō → sorg`, `*taixwō → tā`, `*tangō → tange`,  
+      `*xallō → heall`, `*xelpō → help`, `*xendjō → hindan`, `*xerdō → hierd`,  
+      `*xwīlō → hwīl`, `*xōrōn → hōre`.
+  - Trace evidence:
+    - Full trace used: `docs/debug_snapshots/oe_full_trace_report_2026-01-27_liquid_lowering_post.txt`.
+    - For all 38 items, **the first stage with `*ɔː` is `LiquidLowering`**, and `*ɔː` persists to Surface unchanged (e.g., *spannō → `spannoː` at Surface; see the `span` entry around line ~6050).
+    - Conclusion: the rule **does fire**, but there is **no later shortening/reduction** step to remove or shorten final `*ɔː`.
+  - Implications:
+    - The work **is not being done elsewhere**: there is no rule that shortens word‑final long vowels after `OldEnglishHighVowelApocope`, and `OldEnglishWeakTailReduction` only touches `{*ă,*ą,*u,*i}` (not `*ō`/`*ɔː`).
+    - Given Hogg/Ringe, **the intended outcome still needs to happen**, but it should occur *after* high‑vowel apocope and before weak‑tail reduction (so shortened vowels can participate in further reduction).
+    - As implemented, `EnglishLiquidLowering` creates final `*ɔː` that never shortens, yielding surface forms that are too long and contradict OE forms like `nosu`, `sacu`, `sċamu`, `nǣdre`, etc.
+  - Action taken (2026-01-27): **Disabled** `EnglishLiquidLowering` (commented out in `server/fsts/germanic.txt`) pending a proper final‑long‑vowel shortening stage and chronology review.
+
 ### Tracing status (2025-11-21 update)
 
 - Re-ran the tracer from inside the backend container (`python3 tools/trace_german_stages.py --apply-down --stage GermanAfterConsonant --stage GermanAfterStopShift --lexeme laukaz --lexeme milkiz`). `GermanAfterStopShift` now emits `{*x}` for both probes while `GermanAfterConsonant` still shows `{*k}`, confirming the spirantisation block is live again.
