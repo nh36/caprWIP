@@ -1144,10 +1144,14 @@ define OldEnglishARestoration [
 ];
 
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
-define EnglishLiquidLowering [
-    {*ō} -> {*ō} || _ EnglishStarLiquid,
-    {*ō} -> {*ō} || _ .#.
-];
+# NOTE (2026-01-27): Disabled for now; see `docs/germanic_transducer_report.md`
+# for detailed findings on why this currently overgenerates and why a later
+# final-long-vowel shortening stage is missing. We will revisit and re-enable
+# after the chronology and reductions are corrected.
+# define EnglishLiquidLowering [
+#     {*ō} -> {*ɔː} || _ EnglishStarLiquid,
+#     {*ō} -> {*ɔː} || _ .#.
+# ];
 
 # Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
 define EnglishVelarShortening [
