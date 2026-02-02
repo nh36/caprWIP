@@ -35,6 +35,26 @@
     - Given Hogg/Ringe, **the intended outcome still needs to happen**, but it should occur *after* high‑vowel apocope and before weak‑tail reduction (so shortened vowels can participate in further reduction).
     - As implemented, `EnglishLiquidLowering` creates final `*ɔː` that never shortens, yielding surface forms that are too long and contradict OE forms like `nosu`, `sacu`, `sċamu`, `nǣdre`, etc.
   - Action taken (2026-01-27): **Disabled** `EnglishLiquidLowering` (commented out in `server/fsts/germanic.txt`) pending a proper final‑long‑vowel shortening stage and chronology review.
+  - Current status (2026-02-02): the rule definition remains commented out and is replaced by a safe no‑op (`define EnglishLiquidLowering ?*;`), so the OE stack can still compose `.o. EnglishLiquidLowering` without collapsing the pipeline.
+- **VelarFricativePalatalization investigation** (non-firing rule audit):
+  - Rule under inspection: `OldEnglishVelarFricativePalatalization` in `server/fsts/germanic.txt` (maps `{*x} → {*ç}` and `{*ɣ} → {*j}` next to front vowels or `*j`).
+  - Literature check:
+    - Hogg vol. 1 (§3.3.4.1 / early consonant section) treats /x/ as having allophones [h] initially, [x] elsewhere, and [ç] adjacent to front vowels; the palatal vs velar split is **allophonic**, not phonemic. The same section frames palatalization as a general OE velar development (dotting in editorial practice), but /x/ never becomes a separate phoneme. See `docs/references/hogg_vol1.txt` around the early consonant discussion (pp. 89–92 in the print pagination).
+    - Ringe/Taylor vol. 2 likewise states that **h is [h] word‑initially, [ç] after a stressed front vowel, otherwise [x]**, reinforcing that this is allophonic context, not a lexical split. See `docs/references/ringe_taylor_linguistic_history_vol2.txt` around 1125–1140.
+  - Dataset sweep (OE entries with `*x` near front vowels or `*j` in the proto string):
+    - Source: `server/data/germanic-aligned-final.tsv`, filtering `DOCULECT == Old_English` and `PROTO` containing `*x` adjacent to front vowels (`e/ē/i/ī/æ/ǣ/...`) or `j`.
+    - 16 lexemes found (proto → OE): `*fexu → feoh`, `*fextăną → feohtan`, `*sexs → six`, `*texun → tīen`, `*wextiz → wiht`, `*knixtăz → cniht`, `*xertōn → heorte`, `*xerθăz → heorþ`, `*xelmăz → helma`, `*xelpăną → help`, `*xelpō → help`, `*xerdō → hierd`, `*xendjō → hindan`, `*xemenăz → heofon`, plus the `*taixwō` “toe” path where *x is adjacent to fronted *ai. (Note: `*xemenăz` fails at `ProtoInput` due to the weak‑tail gate.)
+    - No OE rows contain `*ɣ` at all (so the `{*ɣ} → {*j}` clauses have no targets).
+  - Trace evidence:
+    - Full trace used: `docs/debug_snapshots/oe_full_trace_report_2026-01-27.txt`.
+    - Stage summary in that report shows **`VelarFricativePalatalization: 0`** (no lexeme changes at that stage).
+    - For every listed lexeme that does reach the stage, **the vowel is already a breaking diphthong** (`*e → *eo`, `*i → *ie`) by `BreakingLengthening`, so the front‑vowel contexts never match. Example: `*f*e*x*u → BreakingLengthening: *f*eo*x*u → VelarFricativePalatalization [carry]`. Similar carry‑through happens for `*knixtăz` (`*i → *ie`) and the `*xertōn/*xerθăz/*xelpō` cluster.
+  - Conclusions:
+    1) The rule **is not firing** (0 hits in the stage summary).
+    2) The same work is **not being done elsewhere**; no other OE rule maps `*x → *ç` or `*ɣ → *j`, and orthography collapses both to `h` anyway.
+    3) If the goal is purely allophonic encoding, the output does **not need** `*ç` for orthography, but it could matter if we want to block `OldEnglishHLoss` (which only deletes `*h`/`*x` between vowels, not `*ç`).
+    4) **Why it fails**: the rule runs **after** `BreakingLengthening`, but its context is `EnglishStarFrontVowel`, which **excludes breaking diphthongs**; the dataset also contains **no `*ɣ`** targets.
+  - If we later decide to revive it: either move this rule **before** `BreakingLengthening` or change the context to `EnglishStarFrontTrigger` (or explicitly add breaking diphthongs), and consider whether `OldEnglishHLoss` should treat `*ç` as deletable if palatal allophones are being modeled.
 
 ### Tracing status (2025-11-21 update)
 
@@ -174,3 +194,14 @@ docker compose exec backend sh -lc "cd /usr/app && printf 'load stack german.bin
 - 2025‑10‑25: Confirmed via `flookup german.bin` that knee/bread/blood still
   lack proto analyses; door remains healthy. Next instrumentation pass will log
   each composition step.
+### Tracing status (2026-02-01 update)
+
+- New reports pulled on 2026-02-01:
+  - `docs/debug_snapshots/oe_mismatch_report_2026-02-01a.txt`
+  - `docs/debug_snapshots/oe_full_trace_report_2026-02-01a.txt`
+- Coverage: **282 mismatches / 88 matches** (370 total OE rows).
+- Top mismatch buckets: `final_vowel_extra` (60), `consonant_mismatch_other` (40), `final_vowel_missing` (33), `breaking_missing` (19), `breaking_extra_other` (24), `palatalization_missing` (7), `fronting_missing_no_trigger` (5), `no_output` (13).
+- Concrete “rule not firing” evidence:
+  - **Fronting undone by A‑restoration**: `OldEnglishARestoration` flips *æ back to *a in back‑vowel suffix contexts (e.g., *nadrō → nadrō vs expected nǣdre).
+  - **Breaking gaps**: no u‑breaking for *brustz (breast), and `EnglishBreakingA` has no `w` context for *dawwō (dew).
+  - **Palatalization missing**: *bōkō (beech) never triggers `VelarPalatalization`; trace shows no fronting stage that would supply the trigger.
