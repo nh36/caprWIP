@@ -29,3 +29,8 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 - `hogg_vol1.txt`  
   Hogg, *A Grammar of Old English*, Vol. 1.
 
+- `ringe_taylor_linguistic_history_vol2.txt`
+  Ringe & Taylor, *A Linguistic History of English*, Vol. 2.
+
+- `oe_sound_change_index.md`
+  Quick index of frequently cited sound-change passages + exact `rg`/`sed` commands.
