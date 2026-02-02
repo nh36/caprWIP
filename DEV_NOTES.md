@@ -1,20 +1,35 @@
-## CURRENT FOCUS (as of 2026-01-26)
+## CURRENT FOCUS (as of 2026-02-02)
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
-- Latest OE diagnostics (use the unified report script going forward):
-  - `docs/debug_snapshots/oe_mismatch_report_2026-01-26f.txt` (bucketed mismatches; post-apocope move)
-  - `docs/debug_snapshots/oe_full_trace_report_2026-01-26f.txt` (full per-lexeme stage trace)
-  - `docs/debug_snapshots/oe_apply_down_stats_2026-01-02h.txt`
-  - `docs/debug_snapshots/oe_mismatch_closeness_2026-01-02a.txt`
-  - `docs/debug_snapshots/oe_diacritic_mismatches_traces_2026-01-02.txt`
-  - `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`
+- Latest OE diagnostics (2026-02-01):
+  - `docs/debug_snapshots/oe_mismatch_report_2026-02-01a.txt` (bucketed mismatches)
+  - `docs/debug_snapshots/oe_full_trace_report_2026-02-01a.txt` (full per-lexeme stage trace)
+  - Coverage: **282 mismatches / 88 matches** (370 total OE rows).
 - Start‑here repro (fresh run):
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
+  - `python3 server/tools/oe_full_trace_report.py --output docs/debug_snapshots/oe_full_trace_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
 - Rule triage template (generic):
   When a rule looks inert, treat it as a mini-investigation: read the rule’s own definition and comments, then cross-check its intended historical scope in the local literature (e.g., Hogg, Ringe). Next, identify the subset of dataset entries that should plausibly be affected, run focused probes through the relevant stage stacks, and decide (1) whether the rule truly never fires, (2) whether its intended effect is already being achieved by another rule or stage, (3) whether the intended change is still required for the current model, and, if it is required, (4) why the present implementation fails to achieve it (wrong ordering, mismatched symbols, overly strict context, or upstream changes).
+- Top mismatch counts (2026-02-01 report; 282 total):
+  - `final_vowel_extra`: 60
+  - `consonant_mismatch_other`: 40
+  - `final_vowel_missing`: 33
+  - `breaking_missing`: 19
+  - `breaking_extra_other`: 24
+  - `palatalization_missing`: 7
+  - `fronting_missing_no_trigger`: 5
+  - `no_output`: 13
+- Concrete “rule not firing” evidence (2026-02-01 trace):
+  - **Fronting undone by A‑restoration**: *nadrō (adder) fronting yields `*æ`, but `OldEnglishARestoration` flips it back due to a back vowel in the next syllable; output `nadrō` vs expected `nǣdre`. Consistent across `fronting_missing_no_trigger`.
+  - **Breaking gaps**: *brustz (breast) shows no u‑breaking; output `brust` vs expected `brēost`. *dawwō (dew) passes A‑F brightening (`*æw`) but `EnglishBreakingA` lacks a `w` context; output `dawō` vs expected `dēaw`.
+  - **Palatalization missing**: *bōkō (beech) never triggers `VelarPalatalization`; output `bōcō` vs expected `bēċe`. In the trace there is no fronting stage that would supply the trigger, so this is likely a rule/chronology or etymon/expected mismatch.
+- Candidate next actions:
+  1. Tighten `OldEnglishARestoration` so it ignores weak‑tail vowels (or move it after weak‑tail reduction), then regenerate reports.
+  2. Add `a/æ + w` breaking plus explicit **u‑breaking** rules to `EnglishBreakingLengthening`, then regenerate.
+  3. Deep dive `palatalization_missing` (e.g., *bōkō) to confirm whether the rule/chronology or the expected form is wrong.
 - Hedge (2026-01-20):
   - Reverted the orthographic `{ʤj} -> {ċġ}` mapping and removed `{ċġ}` from `OldEnglishSurfaceConsonant` (OE output should stay `ġġ`).
   - Data update: `server/data/germanic-aligned-final.tsv` (OE heċġ → heġġ) with NOTE that **heċġ is the more standard spelling**; Wiktionary TSV left unchanged.
@@ -33,10 +48,6 @@
   - When testing rules in isolation, use **brace tokens** (e.g., `{*u}{*n}`) and confirm the active symbol table; raw `*u*n` strings do not always match the intended multichar symbols.
   - `source fsts/germanic.txt` writes many `.bin` files to the **current directory**; make sure the report scripts and ad‑hoc `flookup` tests are using the same bin locations.
   - If a rule seems inert, confirm it against the **exact** bin used by reports (`old_english_sandbox_after_proto_to_oe_weak_tail.bin`) rather than a locally built test transducer.
-- OE mismatch report status (2026-01-22g):
-  - **291 mismatches / 79 matches** (370 total OE rows).
-  - `proto_mismatch_suspect` now **0** after first‑vowel bucketing fix.
-  - `gemination_extra` now **0** (singe/heġġ fixed under *-gj-* change).
 - OE *-gj- chronology check (2026-01-22):
   - Standard descriptions show WGmc **gemination before *j** in short stems and **i‑mutation following *i/*j**, with classic paths like *satjan > *sattjan > *sættjan > *settian > OE settan; palatalization of velars by *j precedes i‑mutation in the usual OE chronology. Sources: Hasenfratz appendices (WVU “Reading Old English”) and the OE phonological history summary citing Campbell.
   - Implementation aligned to this: allow **palatalized consonants** (ʤ/ʧ/ʃ/ç/ʒ/j) to count as intervening segments for i‑umlaut so raising can apply **after palatalization** rather than being blocked by non‑star symbols.
@@ -46,10 +57,8 @@
   - Deterministic `r`-epenthesis uses an `{E}` placeholder with back-shift (→`*o`) vs front fallback (→`*e`).
   - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over-generation (`*xaslăz` → `hæsel` regression).
   - Current OE mismatch report (latest run in `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt`): **291 mismatches / 79 matches** (370 total OE rows).
-- Next actionable targets (from latest buckets):
-  1. **Fronting missing w/ no trigger:** review a-restoration contexts and nasal blocks (see 2026-01-01 subgroup traces).
-  2. **Breaking missing:** audit OE breaking contexts before r/l/h clusters and w, then re-trace `oe_breaking_probe`.
-  3. **Long-vowel missing (5 items):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE.
+- Next actionable targets (carryover):
+  - **Long-vowel missing (now 5 items as of 2026-01-10):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE if still needed.
   - 2026-01-10 follow-up: `docs/debug_snapshots/oe_mismatch_report_2026-01-10a.txt` shows long-vowel-missing bucket down to **3** items after extending `OldEnglishDiphthongLeveling`/`OldEnglishEwLongDiphthong`. New log: `docs/debug_snapshots/oe_long_diphthong_traces_2026-01-10.txt`; stats snapshot: `docs/debug_snapshots/oe_apply_down_stats_2026-01-10a.txt`.
 - Long‑vowel‑missing deep dive (2026-01-02): see `docs/debug_snapshots/oe_long_vowel_missing_traces_2026-01-02d.txt`.
   - Biggest actionable sources:
