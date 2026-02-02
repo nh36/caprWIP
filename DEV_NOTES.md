@@ -3,6 +3,7 @@
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
+- Local reference index: `docs/REFERENCES.md` (start there before searching elsewhere).
 - Latest OE diagnostics (2026-02-01):
   - `docs/debug_snapshots/oe_mismatch_report_2026-02-01a.txt` (bucketed mismatches)
   - `docs/debug_snapshots/oe_full_trace_report_2026-02-01a.txt` (full per-lexeme stage trace)
