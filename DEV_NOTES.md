@@ -12,6 +12,9 @@
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/oe_full_trace_report.py --output docs/debug_snapshots/oe_full_trace_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/old_english_apply_down_stats.py --output docs/debug_snapshots/oe_apply_down_stats_YYYY-MM-DDa.txt`
+- Bin sync guard:
+  - `python3 server/tools/oe_bin_sync_check.py` (fails if OE bins are missing/stale).
+  - `bash server/tools/rebuild_oe_bins.sh` to rebuild `server/old_english.bin` and sandbox stage bins inside Docker.
 - Rule triage template (generic):
   When a rule looks inert, treat it as a mini-investigation: read the rule’s own definition and comments, then cross-check its intended historical scope in the local literature (e.g., Hogg, Ringe). Next, identify the subset of dataset entries that should plausibly be affected, run focused probes through the relevant stage stacks, and decide (1) whether the rule truly never fires, (2) whether its intended effect is already being achieved by another rule or stage, (3) whether the intended change is still required for the current model, and, if it is required, (4) why the present implementation fails to achieve it (wrong ordering, mismatched symbols, overly strict context, or upstream changes).
 - Top mismatch counts (2026-02-01 report; 282 total):
@@ -1173,3 +1176,8 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - ProtoToOEWeightMarkers
   - ProtoToOEApocope
   - ProtoToOEWeightCleanup
+
+### OE sound-change reference index (2026-02-02)
+- **New index file:** `docs/references/oe_sound_change_index.md`
+  - Collects frequently reused citations and exact `rg`/`sed` commands for Hogg and Ringe/Taylor.
+- **Why:** we keep re-checking the same passages during OE chronology work; this keeps lookups fast and consistent.
