@@ -734,6 +734,14 @@ define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
 define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
 
+# Broaden sigma for early OE rules to avoid rejecting symbols not referenced in a rule.
+define EnglishStarAlphabet [
+    EnglishStarVocalic |
+    EnglishStarConsonant |
+    EnglishPalatalConsonant |
+    {*Kn} | {*Gn}
+];
+
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
@@ -1139,9 +1147,10 @@ define OldEnglishARestorationIntervening [
     {*nxwst} | {*ʧtʃ}
 ];
 
-define OldEnglishARestoration [
+define OldEnglishARestoration (
     {*æ} -> {*a} || _ [OldEnglishARestorationIntervening]* OldEnglishARestorationBackVowel
-];
+)
+    .o. EnglishStarAlphabet*;
 
 # Late Old English lowering of {*ō} before liquids and in absolute final position.
 # NOTE (2026-01-27): Disabled for now; see `docs/germanic_transducer_report.md`
@@ -1152,6 +1161,7 @@ define OldEnglishARestoration [
 #     {*ō} -> {*ɔː} || _ EnglishStarLiquid,
 #     {*ō} -> {*ɔː} || _ .#.
 # ];
+define EnglishLiquidLowering ?*;
 
 # Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
 define EnglishVelarShortening [
@@ -1294,7 +1304,8 @@ define OldEnglishVelarFricativePalatalization [
     {*ɣ} -> {*j} || EnglishStarFrontVowel _,
     {*x} -> {*ç} || _ {*j},
     {*ɣ} -> {*j} || _ {*j}
-];
+]
+    .o. EnglishStarAlphabet*;
 
 define EnglishHighVowelApocope [
     {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
@@ -1356,12 +1367,13 @@ define EnglishProtoToOE (
     .o. OldEnglishEwLongDiphthong
     .o. EnglishAngloFrisianBrightening
     .o. EnglishBreakingLengthening
+    # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
+    .o. OldEnglishVelarFricativePalatalization
     .o. OldEnglishARestoration
     .o. EnglishLiquidLowering
     .o. OldEnglishJGemination
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
-    .o. OldEnglishVelarFricativePalatalization
     .o. OldEnglishIUmlaut
     .o. EnglishJClusterCoalescence
     .o. OldEnglishBackMutation
