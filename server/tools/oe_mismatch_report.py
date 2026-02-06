@@ -368,6 +368,11 @@ def write_report(
         lines.append(f"{key}:")
         for proto, out, expected in other_subs.get(key, [])[:max_examples]:
             lines.append(f"  {proto} -> {out} (expected {expected})")
+    lines.append("")
+    lines.append("=== A-FRONTING AUDIT ===")
+    lines.append("--- fronting_missing_no_trigger ---")
+    for proto, out, expected in buckets.get("fronting_missing_no_trigger", []):
+        lines.append(f"{proto} -> {out} (expected {expected})")
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

@@ -1,0 +1,208 @@
+Lines with starred tokens and unstarred symbols (potential convention mixing):
+146:     {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu}
+601:     {*ʃ} -> {sċ},
+602:     {*ʧ} -> ċ,
+603:     {*ʤ} -> ġ,
+605:     {*ʒ} -> ġ,
+627:     {ʤ} {*j} -> {ʤ},
+662:     {*j} -> ġ,
+704: define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
+714: define EnglishStarNasal [{*m} | {*n}];
+716: define EnglishStarLiquid [{*l} | {*r}];
+718: define EnglishStarVelarStop [{*k} | {*g}];
+720: define EnglishStarLabial [{*b} | {*p} | {*f} | {*v} | {*m} | {*w}];
+722: define EnglishStarFricative [{*f} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+724: define EnglishStarConsonantSeq [EnglishStarConsonant]*;
+726: define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
+728: define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
+730: define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
+732: define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
+734: define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
+738: define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
+740: define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
+741: define EnglishWeakTailVowelStart [{*ă} | {*a} | {*e} | {*i}];
+785:     {*k} {*n} -> {Kn} || .#. _,
+786:     {*g} {*n} -> {Gn} || .#. _
+790:     [{*s} {*k} -> {s} {ʃ} || _ EnglishStarFrontVowel]
+791:     .o. [{*k} -> {ʃ} || _ EnglishStarFrontVowel]
+792:     .o. [{*g} -> {ʒ} || _ EnglishStarFrontVowel]
+797:     [{*b} {*j} -> {v}]
+798:     .o. [{*g} {*j} -> {dʒ}]
+799:     .o. [{*k} {*j} -> {tʃ}]
+803:     [{*s} {*k} -> {ʃ} || _ EnglishStarFrontVowel]
+804:     .o. [{*k} -> {tʃ} || _ EnglishStarFrontVowel]
+805:     .o. [{*g} -> {dʒ} || _ EnglishStarFrontVowel]
+810: define EnglishWGlideRule [{*w} -> {ʋ}];
+813:     {*z} -> {r} || EnglishStarVocalic _
+816: define EnglishZApocope [{*z} -> 0 || _ .#.];
+829:     {*x} -> {GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+842:     {GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
+845: define EnglishRhoticWeakTail [{*ă} | {*ą} | {*ɔ̆}];
+847: define EnglishRhoticDental [{*d} | {*ð} | {*θ}];
+851:     [{*æ} {*r} {ʋ} -> {*ɪə} {*r}]
+854:     [{*u} {æ} {*r} -> {*aɪ} {*ə} {*r}]
+857:     [{*r} {*g} EnglishRhoticWeakTail -> {*r} {*əʊ}]
+860:     [{*ɔː} {*r} {*d} EnglishRhoticWeakTail -> {*ɪə} {*r} {*d} EnglishRhoticWeakTail]
+866:     [{æ} {*r} {*θ} -> {*ɜː} {*θ}]
+868:     [{æ} {*r} {*ð} -> {*ɜː} {*θ}]
+870:     [{æ} {*r} {*d} -> {*ɜː} {*d}]
+875:     {*a} -> {æ} || _ {*r},
+876:     {*e} -> {æ} || _ {*r},
+877:     {*i} -> {ɪ} || _ {*r},
+878:     {*o} -> {ɔ} || _ {*r}
+883:     {*o} -> {ɔ}
+887: define EnglishORaisedFront [{*ō} -> {*uː} || _ ({*m} | {*n} | {*l}) EnglishStarVocalic];
+889: define EnglishORaisedClosed [{*ō} -> {*ʊ} || EnglishStarConsonant _ EnglishStarConsonant];
+891: define EnglishOFrontFallback [{*ō} -> {*əʊ}];
+898: define EnglishURaisedTargets [{*ū} -> {*aʊ} || _ ({*s} | {*n} | {*l} | .#.)];
+900: define EnglishUFrontFallback [{*ū} -> {*uː}];
+907:     {*a} -> {*æ} || _ EnglishStarConsonant
+913:     {u} -> {ʊ} || _ {*z} EnglishStarVocalic,
+914:     {u} -> {ʊ} || _ {*z} EnglishWeakTailVowel,
+915:     {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) EnglishStarConsonant,
+916:     {u} -> {ʊ} || _ ({*f} | {*s} | {*θ}) .#.,
+917:     {u} -> {ʊ} || {*w} _ {*l} (EnglishStarConsonant | .#.),
+918:     {u} -> {ʊ} || {*w} _ {*l} EnglishWeakTailVowel,
+939:     {*i} -> {i},
+940:     {*u} -> {u}
+944:     {*a} EnglishStarConsonant {*r} -> {*æ} EnglishStarConsonant {*r},
+945:     {*e} EnglishStarConsonant {*r} -> {*ɛ} EnglishStarConsonant {*r},
+946:     {*i} EnglishStarConsonant {*r} -> {*ə} EnglishStarConsonant {*r},
+947:     {*u} EnglishStarConsonant {*r} -> {*ɔː} EnglishStarConsonant {*r},
+948:     {*o} EnglishStarConsonant {*r} -> {*ɔː} EnglishStarConsonant {*r}
+976:     {*a} -> {*ə} || _ EnglishWeakTailVowel
+985: define EnglishWeakTailSchwa [{*ə}];
+995: define EnglishWeakTailFinalDrop ["*" {ə} -> 0 || _ .#.];
+997: define EnglishNoFinalWeakTail ~[ ?* (EnglishTailConsonant | EnglishWeakTailSchwa) .#. ];
+1001:     {*r} -> 0 || EnglishPlainVocalic _ (EnglishStarConsonant | .#.)
+1009:     {*ʊ} -> {ʌ} || ({*b} | {*f}) {*l} _ ({*d} | {*t})
+1024:     {*x} -> {h}
+1029:     {*ā} -> {ɑː},
+1030:     {*ē} -> {iː},
+1031:     {*ī} -> {iː},
+1032:     {*ō} -> {oː},
+1033:     {*ū} -> {uː},
+1034:     {*əʊ} -> {əʊ},
+1035:     {*aʊ} -> {aʊ},
+1036:     {*eɪ} -> {eɪ},
+1037:     {*aɪ} -> {aɪ},
+1038:     {*æ} -> {æ},
+1039:     {*ɛ} -> {ɛ},
+1040:     {*ə} -> {ə},
+1041:     {*ɔː} -> {ɔː}
+1052:     {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
+1053:     {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic,
+1054:     {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic,
+1055:     {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic,
+1056:     {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
+1060: define EnglishBreakingHContext [{*x}];
+1062:     {*x} (EnglishStarVocalic - EnglishWeakTailVowelStar) |
+1063:     {*x} EnglishStarConsonant
+1065: define EnglishBreakingXContextWeakTail [{*x} EnglishWeakTailVowelStar];
+1066: define EnglishBreakingRContext [{*r} EnglishStarConsonant];
+1067: define EnglishBreakingLContext [{*l} EnglishStarConsonant];
+1068: define EnglishBreakingLContextE [{*l} ({*x} | {*k} | {*g})];
+1069: define EnglishBreakingWContext [{*w}];
+1072:     {*a} -> {*ea} || _ EnglishBreakingRContext,
+1073:     {*a} -> {*ea} || _ EnglishBreakingLContext,
+1074:     {*a} -> {*ēa} || _ EnglishBreakingXContextWeakTail,
+1075:     {*a} -> {*ea} || _ EnglishBreakingXContextNonWeakA,
+1076:     {*æ} -> {*ea} || _ EnglishBreakingRContext,
+1077:     {*æ} -> {*ea} || _ EnglishBreakingLContext,
+1078:     {*æ} -> {*ea} || _ EnglishBreakingHContext
+1082:     {*e} -> {*eo} || _ EnglishBreakingRContext,
+1083:     {*e} -> {*eo} || _ EnglishBreakingHContext,
+1084:     {*e} -> {*eo} || _ EnglishBreakingWContext,
+1085:     {*e} -> {*eo} || _ EnglishBreakingLContextE
+1089:     {*i} -> {*ie} || _ EnglishBreakingRContext,
+1090:     {*i} -> {*ie} || _ EnglishBreakingHContext,
+1091:     {*i} -> {*ie} || _ EnglishBreakingWContext
+1115:     {*w} EnglishWeakTailVowel |
+1121:     {*e} {*w} -> {*ēo} {*w} || _ OldEnglishEwLongContext,
+1122:     {*i} {*w} -> {*ēo} {*w} || _ OldEnglishEwLongContext
+1127:     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
+1137:     {*nnd} | {*ndʒ} | {*ndj} | {*ndz} | {*ntr} | {*rst} | {*stj} | {*stz} |
+1138:     {*xtj} | {*xtz} | {*wwj} | {*kkj} | {*ldr} | {*lgw} | {*llj} | {*ltj} |
+1139:     {*ndl} | {*ndr} | {*ngj} | {*ngr} | {*ngw} | {*nsz} | {*rwj} | {*rxt} |
+1140:     {*nxwst} | {*ʧtʃ}
+1144:     {*æ} -> {*a} || _ [OldEnglishARestorationIntervening]* OldEnglishARestorationBackVowel
+1149:     {*ō} -> {*ō} || _ EnglishStarLiquid,
+1155:     {*ō} -> {*u} || _ EnglishStarVelarStop
+1160:     {*u} -> {*ō} || _ {*r} EnglishStarConsonant,
+1176:     {*r} -> {E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
+1181:     {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
+1182:     {E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
+1186:     {E} -> {*e}
+1199:     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1200:     {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1201:     {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1202:     {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1203:     {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1204:     {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1205:     {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+1209:     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+1213:     {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1214:     {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1215:     {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+1216:     {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+1225:     {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
+1226:     {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
+1227:     {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
+1228:     {*d} -> {*d} {*d} || EnglishStarShortVowel _ {*j},
+1229:     {*k} -> {*k} {*k} || EnglishStarShortVowel _ {*j},
+1230:     {*g} -> {*g} {*g} || EnglishStarShortVowel _ {*j},
+1231:     {*f} -> {*f} {*f} || EnglishStarShortVowel _ {*j},
+1232:     {*s} -> {*s} {*s} || EnglishStarShortVowel _ {*j},
+1233:     {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
+1234:     {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
+1235:     {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
+1236:     {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
+1241:     {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonantNoR _,
+1242:     {*j} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonantNoR _
+1246:     {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
+1247:     {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
+1251:     {*a} -> {*ā} || _ EnglishStarNasal EnglishStarFricative,
+1252:     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
+1253:     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
+1254:     {*o} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
+1255:     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarFricative,
+1256:     {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarFricative
+1264:     {*s} {*k} -> {ʃ} || .#. _,
+1265:     {*s} {*k} -> {ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
+1266:     {*s} {*k} -> {ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
+1268:     {*s} {*k} -> {ʃ} || _ {*j},
+1269:     {*s} {*k} -> {ʃ} || {*j} _
+1273:     {*k} -> {ʧ} || _ EnglishStarFrontVowel,
+1274:     {*g} -> {ʤ} || _ EnglishStarFrontVowel,
+1275:     {*k} -> {ʧ} || EnglishStarFrontVowel _,
+1276:     {*g} -> {ʤ} || EnglishStarFrontVowel _,
+1277:     {*k} -> {ʧ} || _ {*j},
+1278:     {*g} -> {ʤ} || _ {*j},
+1279:     {*g} {*g} -> {ʤ} {ʤ} || _ {*j}
+1283:     {*x} -> {ç} || _ EnglishStarFrontVowel,
+1284:     {*ɣ} -> {j} || _ EnglishStarFrontVowel,
+1285:     {*x} -> {ç} || EnglishStarFrontVowel _,
+1286:     {*ɣ} -> {j} || EnglishStarFrontVowel _,
+1287:     {*x} -> {ç} || _ {*j},
+1288:     {*ɣ} -> {j} || _ {*j}
+1292:     {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+1293:     {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+1294:     {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
+1295:     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
+1296:     {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
+1297:     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
+1301:     {*i} -> {H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+1302:     {*u} -> {H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+1303:     {*i} -> {H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
+1304:     {*u} -> {H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
+1310:     {H} {*i} -> 0 || _ .#.,
+1311:     {H} {*u} -> 0 || _ .#.
+1319:     {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
+1320:     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+1671: define GermanEToIBeforeW [ {*e} -> {*i} || _ {*w} ];
+1717:     {*ai} -> {ai},
+1718:     {*au} -> {au},
+1719:     {*ei} -> {ei},
+1720:     {*eu} -> {eu},
+1721:     {*iu} -> {iu},
+1753:     {*ts} -> {ts}

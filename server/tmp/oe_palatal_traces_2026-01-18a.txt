@@ -1,0 +1,65 @@
+=== *burdiz ===
+ProtoInput: *b*u*r*d*i*z
+InitialKn: *b*u*r*d*i*z
+Palatalisation: *b*u*r*d*i*z
+ConsonantRules: *b*u*r*d*i
+GhMarker: *b*y*r*d*e
+GlideDeletion: *b*y*r*d*e
+ProtoToOE: *b*y*r*d*e
+Orthography: byrde
+Surface: byrde
+
+=== *θankăz ===
+ProtoInput: *θ*a*n*k*ă*z
+InitialKn: *θ*a*n*k*ă*z
+Palatalisation: *θ*a*n*k*ă*z
+ConsonantRules: *θ*a*n*k
+GhMarker: *θ*æ*n*k
+GlideDeletion: *θ*æ*n*k
+ProtoToOE: *θ*æ*n*k
+Orthography: þænc, *þænc
+Surface: þænc
+
+=== *w{ai}θiz ===
+ProtoInput: *w*ai*θ*i*z
+InitialKn: *w*ai*θ*i*z
+Palatalisation: *w*ai*θ*i*z
+ConsonantRules: *w*ai*θ*i
+GhMarker: ʋ*ǣ*θ*e
+GlideDeletion: ʋ*ǣ*θ*e
+ProtoToOE: *w*ǣ*θ*e
+Orthography: wǣþe, wǣ*þe
+Surface: wǣþe
+
+=== *fiskăz ===
+ProtoInput: *f*i*s*k*ă*z
+InitialKn: *f*i*s*k*ă*z
+Palatalisation: *f*i*s*k*ă*z
+ConsonantRules: *f*i*s*k
+GhMarker: *f*iʃ
+GlideDeletion: *f*iʃ
+ProtoToOE: *f*iʃ
+Orthography: fisc
+Surface: fisc
+
+=== *skamō ===
+ProtoInput: *s*k*a*m*ō
+InitialKn: *s*k*a*m*ō
+Palatalisation: *s*k*a*m*ō
+ConsonantRules: *s*k*a*m*ō
+GhMarker: ʃ*a*m*ō
+GlideDeletion: ʃ*a*m*ō
+ProtoToOE: ʃ*a*m*ō
+Orthography: scamō
+Surface: scamō
+
+=== *skīnăną ===
+ProtoInput: *s*k*ī*n*ă*n*ą
+InitialKn: *s*k*ī*n*ă*n*ą
+Palatalisation: ʃ*ī*n*ă*n*ą
+ConsonantRules: ʃ*ī*n*ă*n*ą
+GhMarker: ʃ*ī*n*ă*n
+GlideDeletion: ʃ*ī*n*ă*n
+ProtoToOE: ʃ*ī*n*ă*n
+Orthography: scīnan
+Surface: scīnan
