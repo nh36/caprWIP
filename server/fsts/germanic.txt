@@ -299,6 +299,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} n:{*n} ą:{*ą} |
     ă:{*ă} n:{*n} ē:{*ē} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
+    a:{*a} r:{*r} a:{*a} s:{*s} |
     a:{*a} s:{*s} |
     ă:{*ă} z:{*z} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
@@ -1137,21 +1138,27 @@ define EnglishAngloFrisianBrightening [
     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
 ];
 
-# A-restoration: */æ/ > */a/ before a STRESSED back vowel in the following syllable.
+# A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
 # Per Ringe/Taylor Vol 2 §6.3.1: "Those stressed *æ which were immediately followed
 # by a single or geminate consonant or sC-cluster which was in turn followed by a
 # back vowel became a." Ringe explicitly notes: "That unstressed *æ was not retracted."
 #
-# CRITICAL (2026-02-06): Only FULL (stressed) back vowels trigger A-restoration.
-# Weak-tail vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration.
-# The chronology fix moved apocope to after A-restoration so that full back vowels
-# in endings (like *-ōn, *-az) can trigger restoration, but we must exclude the
-# unstressed weak-tail vowels.
+# CHRONOLOGY: A-restoration applies AFTER AFB (Anglo-Frisian Brightening). Ringe says:
+# "retraction must have occurred subsequently to fronting—and subsequently to breaking".
+# This means at the time A-restoration applies, underlying PWGmc *a has already been
+# fronted to surface *æ by AFB.
 #
-# NOTE (2026-02-06): After AFB, underlying {*a} in tails becomes {*æ}. For gen.sg.
-# endings like *-as → *-æs, we need to recognize {*æ} in tail position as triggering
-# restoration, since it derives from underlying {*a}.
-define OldEnglishARestorationBackVowel [EnglishStarBackVowel | {*æ}];
+# RESTORATION TRIGGERS: The rule originally referred to "back vowels" in the following
+# syllable. After AFB, the back vowels that remain are {*o}, {*u}, {*ō}, {*ū}, etc.
+# BUT: stressed {*a} in endings (like gen.sg. *-as) has been fronted to {*æ} by AFB.
+# These surface {*æ} (< underlying {*a}) STILL trigger restoration, because they are
+# underlyingly back vowels. This is why gen.sg. forms like *brandas (AFB→ *brændæs)
+# trigger restoration: the tail {*æ} is underlyingly {*a} (back).
+#
+# WEAK-TAIL EXCLUSION: Only FULL (stressed) vowels trigger restoration. Weak-tail
+# vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration, even though
+# they are underlyingly back.
+define OldEnglishARestorationTriggerVowel [EnglishStarBackVowel | {*æ}];
 
 define OldEnglishARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
@@ -1192,7 +1199,7 @@ define OldEnglishARestorationWeakTailVowel [
 # The context here MUST be required, not optional.
 define OldEnglishARestoration (
     {*æ} -> {*a} || _
-        [OldEnglishARestorationIntervening]* OldEnglishARestorationBackVowel
+        [OldEnglishARestorationIntervening]* OldEnglishARestorationTriggerVowel
         - [OldEnglishARestorationIntervening]* OldEnglishARestorationWeakTailVowel
 );
 
