@@ -27,15 +27,15 @@
       `*xallō → heall`, `*xelpō → help`, `*xendjō → hindan`, `*xerdō → hierd`,  
       `*xwīlō → hwīl`, `*xōrōn → hōre`.
   - Trace evidence:
-    - Full trace used: `docs/debug_snapshots/oe_full_trace_report_2026-01-27_liquid_lowering_post.txt`.
-    - For all 38 items, **the first stage with `*ɔː` is `LiquidLowering`**, and `*ɔː` persists to Surface unchanged (e.g., *spannō → `spannoː` at Surface; see the `span` entry around line ~6050).
-    - Conclusion: the rule **does fire**, but there is **no later shortening/reduction** step to remove or shorten final `*ɔː`.
+    - Historical trace: `docs/debug_snapshots/oe_full_trace_report_2026-01-27_liquid_lowering_post.txt` (deleted in cleanup).
+    - For all 38 items, **the first stage with `*ɔː` was `LiquidLowering`**, and `*ɔː` persisted to Surface unchanged (e.g., *spannō → `spannoː` at Surface).
+    - Conclusion: the rule **did fire**, but there was **no later shortening/reduction** step to remove or shorten final `*ɔː`.
   - Implications:
     - The work **is not being done elsewhere**: there is no rule that shortens word‑final long vowels after `OldEnglishHighVowelApocope`, and `OldEnglishWeakTailReduction` only touches `{*ă,*ą,*u,*i}` (not `*ō`/`*ɔː`).
     - Given Hogg/Ringe, **the intended outcome still needs to happen**, but it should occur *after* high‑vowel apocope and before weak‑tail reduction (so shortened vowels can participate in further reduction).
     - As implemented, `EnglishLiquidLowering` creates final `*ɔː` that never shortens, yielding surface forms that are too long and contradict OE forms like `nosu`, `sacu`, `sċamu`, `nǣdre`, etc.
   - Action taken (2026-01-27): **Disabled** `EnglishLiquidLowering` (commented out in `server/fsts/germanic.txt`) pending a proper final‑long‑vowel shortening stage and chronology review.
-  - Current status (2026-02-02): the rule definition remains commented out and is replaced by a safe no‑op (`define EnglishLiquidLowering ?*;`), so the OE stack can still compose `.o. EnglishLiquidLowering` without collapsing the pipeline.
+  - Current status (2026-02-06): the rule definition remains commented out and is replaced by a safe no‑op (`define EnglishLiquidLowering ?*;`), so the OE stack can still compose `.o. EnglishLiquidLowering` without collapsing the pipeline. Note: `server/docs/debug_snapshots/oe_full_trace_report_2026-02-06.txt` shows "LiquidLowering: 19" but this counts pass-throughs (h-initial words), not actual transformations.
 - **VelarFricativePalatalization investigation** (non-firing rule audit):
   - Rule under inspection: `OldEnglishVelarFricativePalatalization` in `server/fsts/germanic.txt` (maps `{*x} → {*ç}` and `{*ɣ} → {*j}` next to front vowels or `*j`).
   - Literature check:
@@ -46,15 +46,14 @@
     - 16 lexemes found (proto → OE): `*fexu → feoh`, `*fextăną → feohtan`, `*sexs → six`, `*texun → tīen`, `*wextiz → wiht`, `*knixtăz → cniht`, `*xertōn → heorte`, `*xerθăz → heorþ`, `*xelmăz → helma`, `*xelpăną → help`, `*xelpō → help`, `*xerdō → hierd`, `*xendjō → hindan`, `*xemenăz → heofon`, plus the `*taixwō` “toe” path where *x is adjacent to fronted *ai. (Note: `*xemenăz` fails at `ProtoInput` due to the weak‑tail gate.)
     - No OE rows contain `*ɣ` at all (so the `{*ɣ} → {*j}` clauses have no targets).
   - Trace evidence:
-    - Full trace used: `docs/debug_snapshots/oe_full_trace_report_2026-01-27.txt`.
-    - Stage summary in that report shows **`VelarFricativePalatalization: 0`** (no lexeme changes at that stage).
+    - Historical trace: `docs/debug_snapshots/oe_full_trace_report_2026-01-27.txt` (deleted in cleanup).
+    - That report showed **`VelarFricativePalatalization: 0`** (no lexeme changes).
     - For every listed lexeme that does reach the stage, **the vowel is already a breaking diphthong** (`*e → *eo`, `*i → *ie`) by `BreakingLengthening`, so the front‑vowel contexts never match. Example: `*f*e*x*u → BreakingLengthening: *f*eo*x*u → VelarFricativePalatalization [carry]`. Similar carry‑through happens for `*knixtăz` (`*i → *ie`) and the `*xertōn/*xerθăz/*xelpō` cluster.
+    - Current status (2026-02-06): `server/docs/debug_snapshots/oe_full_trace_report_2026-02-06.txt` shows `VelarFricativePalatalization: 36` - rule NOW FIRES after other OE fixes. The earlier non-firing was resolved.
   - Conclusions:
-    1) The rule **is not firing** (0 hits in the stage summary).
-    2) The same work is **not being done elsewhere**; no other OE rule maps `*x → *ç` or `*ɣ → *j`, and orthography collapses both to `h` anyway.
+    1) The rule **is now firing** (36 changes as of 2026-02-06).
+    2) Earlier issues resolved by broader OE pipeline fixes.
     3) If the goal is purely allophonic encoding, the output does **not need** `*ç` for orthography, but it could matter if we want to block `OldEnglishHLoss` (which only deletes `*h`/`*x` between vowels, not `*ç`).
-    4) **Why it fails**: the rule runs **after** `BreakingLengthening`, but its context is `EnglishStarFrontVowel`, which **excludes breaking diphthongs**; the dataset also contains **no `*ɣ`** targets.
-  - If we later decide to revive it: either move this rule **before** `BreakingLengthening` or change the context to `EnglishStarFrontTrigger` (or explicitly add breaking diphthongs), and consider whether `OldEnglishHLoss` should treat `*ç` as deletable if palatal allophones are being modeled.
 
 ### Tracing status (2025-11-21 update)
 
