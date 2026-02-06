@@ -38,7 +38,6 @@ STAGES: List[Tuple[str, str]] = [
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
     ("BreakingLengthening", "old_english_sandbox_after_breaking_lengthening.bin"),
     ("ARestoration", "old_english_sandbox_after_a_restoration.bin"),
-    ("LiquidLowering", "old_english_sandbox_after_liquid_lowering.bin"),
     ("JGemination", "old_english_sandbox_after_j_gemination.bin"),
     ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
     ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
