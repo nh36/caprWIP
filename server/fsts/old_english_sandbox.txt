@@ -49,9 +49,11 @@ define OESandboxAfterWeightMarkers OESandboxAfterWeakTailUnReduction
     .o. OldEnglishWeightMarkers;
 define OESandboxAfterHighVowelApocope OESandboxAfterWeightMarkers
     .o. OldEnglishHighVowelApocope;
-define OESandboxAfterWeakTailReduction OESandboxAfterHighVowelApocope
+define OESandboxAfterHeavySyllableNasalApocope OESandboxAfterHighVowelApocope
+    .o. OldEnglishHeavySyllableNasalApocope;
+define OESandboxAfterWeakTailReduction OESandboxAfterHeavySyllableNasalApocope
     .o. OldEnglishWeakTailReduction;
-define OESandboxAfterJLossAfterHeavy OESandboxAfterHighVowelApocope
+define OESandboxAfterJLossAfterHeavy OESandboxAfterWeakTailReduction
     .o. OldEnglishJLossAfterHeavy;
 define OESandboxAfterWeightCleanup OESandboxAfterJLossAfterHeavy
     .o. OldEnglishWeightCleanup;
@@ -180,6 +182,10 @@ save stack old_english_sandbox_after_weight_markers.bin
 clear stack
 regex OESandboxAfterHighVowelApocope;
 save stack old_english_sandbox_after_high_vowel_apocope.bin
+
+clear stack
+regex OESandboxAfterHeavySyllableNasalApocope;
+save stack old_english_sandbox_after_heavy_syllable_nasal_apocope.bin
 
 clear stack
 regex OESandboxAfterWeakTailReduction;
