@@ -299,6 +299,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} n:{*n} ą:{*ą} |
     ă:{*ă} n:{*n} ē:{*ē} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
+    a:{*a} s:{*s} |
     ă:{*ă} z:{*z} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
     e:{*e} r:{*r} |
@@ -1146,7 +1147,11 @@ define EnglishAngloFrisianBrightening [
 # The chronology fix moved apocope to after A-restoration so that full back vowels
 # in endings (like *-ōn, *-az) can trigger restoration, but we must exclude the
 # unstressed weak-tail vowels.
-define OldEnglishARestorationBackVowel [EnglishStarBackVowel];
+#
+# NOTE (2026-02-06): After AFB, underlying {*a} in tails becomes {*æ}. For gen.sg.
+# endings like *-as → *-æs, we need to recognize {*æ} in tail position as triggering
+# restoration, since it derives from underlying {*a}.
+define OldEnglishARestorationBackVowel [EnglishStarBackVowel | {*æ}];
 
 define OldEnglishARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
