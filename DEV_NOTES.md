@@ -1,13 +1,33 @@
-## CURRENT FOCUS (as of 2026-02-02)
+## CURRENT FOCUS (as of 2026-02-06)
+
+## A-Restoration Fix (2026-02-06)
+
+**Summary:** Fixed critical foma syntax bug causing A-restoration to apply unconditionally.
+
+**Root cause:** The rule `{*æ} -> {*a} || _ (context)` had parentheses around the context,
+making it OPTIONAL in foma's replacement rule syntax. The rule applied everywhere instead
+of only when followed by the required intervening+back-vowel pattern.
+
+**Changes to germanic.txt:**
+1. Removed outer parentheses from OldEnglishARestoration context
+2. Added `{*ă}` and `{*ą}` to OldEnglishARestorationBackVowel (reduced back vowels)
+3. Expanded OldEnglishARestorationStrongOTail with additional weak-tail patterns
+
+**Result:** Mismatches reduced from 283 to 280 (net -3). `fronting_missing_no_trigger` dropped
+from 30 to 11 (19 words fixed). Some edge cases remain for future investigation.
+
+**Prevention:** See "Foma notes / recurring gotchas" below for syntax guidelines.
+
+---
 
 - Priority: Old English sandbox / PGmc→OE stack. Start here first.
 - Modern English sandbox TODOs (below 2025-12-07) are paused unless explicitly requested.
 - Key reference: the “Old English core refactor + diagnostics” section under 2025-12-21.
 - Local reference index: `docs/REFERENCES.md` (start there before searching elsewhere).
-- Latest OE diagnostics (2026-02-01):
-  - `docs/debug_snapshots/oe_mismatch_report_2026-02-01a.txt` (bucketed mismatches)
-  - `docs/debug_snapshots/oe_full_trace_report_2026-02-01a.txt` (full per-lexeme stage trace)
-  - Coverage: **282 mismatches / 88 matches** (370 total OE rows).
+- Latest OE diagnostics (2026-02-06):
+  - `docs/debug_snapshots/oe_mismatch_report_2026-02-06a.txt` (bucketed mismatches)
+  - `docs/debug_snapshots/oe_full_trace_report_2026-02-06a.txt` (full per-lexeme stage trace)
+  - Coverage: **280 mismatches / 90 matches** (370 total OE rows).
 - Start‑here repro (fresh run):
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/oe_full_trace_report.py --output docs/debug_snapshots/oe_full_trace_report_YYYY-MM-DDa.txt`
@@ -17,19 +37,31 @@
   - `bash server/tools/rebuild_oe_bins.sh` to rebuild `server/old_english.bin` and sandbox stage bins inside Docker.
 - Rule triage template (generic):
   When a rule looks inert, treat it as a mini-investigation: read the rule’s own definition and comments, then cross-check its intended historical scope in the local literature (e.g., Hogg, Ringe). Next, identify the subset of dataset entries that should plausibly be affected, run focused probes through the relevant stage stacks, and decide (1) whether the rule truly never fires, (2) whether its intended effect is already being achieved by another rule or stage, (3) whether the intended change is still required for the current model, and, if it is required, (4) why the present implementation fails to achieve it (wrong ordering, mismatched symbols, overly strict context, or upstream changes).
-- Top mismatch counts (2026-02-01 report; 282 total):
-  - `final_vowel_extra`: 60
+- A‑restoration debug summary (2026-02-03, **FIXED 2026-02-06**):
+  - `docs/germanic_notes/oe_a_restoration_debug.md` (evidence, probes, and current hypothesis).
+  - **ROOT CAUSE FOUND (2026-02-06):** The rule had `{*æ} -> {*a} || _ (context)` with parentheses
+    around the context, making it OPTIONAL. The rule applied unconditionally instead of only when
+    followed by the intervening+back-vowel pattern. Fix: removed outer parentheses in germanic.txt.
+  - Also expanded `OldEnglishARestorationBackVowel` to include `{*ă}` and `{*ą}` (reduced back vowels),
+    and expanded `OldEnglishARestorationStrongOTail` to include common weak-tail patterns where
+    A-restoration should still apply (infinitives, agent nouns, etc.).
+  - Result: `fronting_missing_no_trigger` dropped from 30 to 11 (19 words fixed).
+- Top mismatch counts (2026-02-06 report; 280 total):
+  - `final_vowel_extra`: 56
   - `consonant_mismatch_other`: 40
-  - `final_vowel_missing`: 33
+  - `final_vowel_missing`: 34
   - `breaking_missing`: 19
-  - `breaking_extra_other`: 24
-  - `palatalization_missing`: 7
-  - `fronting_missing_no_trigger`: 5
+  - `breaking_extra_other`: 23
+  - `palatalization_missing`: 6
+  - `fronting_missing_no_trigger`: 11
   - `no_output`: 13
 - Concrete “rule not firing” evidence (2026-02-01 trace):
   - **Fronting undone by A‑restoration**: *nadrō (adder) fronting yields `*æ`, but `OldEnglishARestoration` flips it back due to a back vowel in the next syllable; output `nadrō` vs expected `nǣdre`. Consistent across `fronting_missing_no_trigger`.
   - **Breaking gaps**: *brustz (breast) shows no u‑breaking; output `brust` vs expected `brēost`. *dawwō (dew) passes A‑F brightening (`*æw`) but `EnglishBreakingA` lacks a `w` context; output `dawō` vs expected `dēaw`.
   - **Palatalization missing**: *bōkō (beech) never triggers `VelarPalatalization`; output `bōcō` vs expected `bēċe`. In the trace there is no fronting stage that would supply the trigger, so this is likely a rule/chronology or etymon/expected mismatch.
+- Measured ARestoration intervening segments (2026-02-05, OE sandbox):
+  - True positives (31 items): top intervening segments `n, k, w, d, j` (e.g., *bakăną -> bacan, inter=`k`; *xanduz -> hand, inter=`nd`).
+  - False positives (16 items): top intervening segments `r, s, t, n, p` (e.g., *nadrō -> nǣdre, inter=`dr`; *bastą -> bæst, inter=`st`; *farăną -> fær, inter=`r`).
 - Candidate next actions:
   1. Tighten `OldEnglishARestoration` so it ignores weak‑tail vowels (or move it after weak‑tail reduction), then regenerate reports.
   2. Add `a/æ + w` breaking plus explicit **u‑breaking** rules to `EnglishBreakingLengthening`, then regenerate.
@@ -48,7 +80,13 @@
   - **Implication:** a targeted `*-un -> -on` rewrite may need to be its own rule/stage, or the existing weak‑tail reduction block needs fixing so any reductions actually apply.
   - **Next checks:** run `flookup` against `old_english_sandbox_after_proto_to_oe_weak_tail.bin` for `texun/tehun/sebun/newun` and probe `OldEnglishWeakTailReduction` in isolation to confirm whether **any** `{*ă}/{*ą}/{*i}/{*u}` reductions fire.
   - **Decision point:** if `OldEnglishWeakTailReduction` is truly dead, fix that block first; otherwise add a dedicated `OldEnglishWeakTailUnReduction` rule for `{*u}{*n} -> {*o}{*n}`.
-- Foma notes / recurring gotchas (2026-01-26):
+- Foma notes / recurring gotchas (2026-01-26, updated 2026-02-06):
+  - **CRITICAL: Parentheses in replacement rule contexts make them OPTIONAL.**
+    - `{X} -> {Y} || _ A` = replace when followed by A (required context)
+    - `{X} -> {Y} || _ (A)` = replace optionally when followed by A (i.e., **always applies**)
+    - This caused the A-restoration bug (2026-02-06): the rule was written as `{*æ} -> {*a} || _ (context)`
+      which made the context optional, so the rule applied unconditionally. Fix: remove outer parens.
+    - **Always test replacement rules with `apply down` on strings that should NOT match the context.**
   - When testing rules in isolation, use **brace tokens** (e.g., `{*u}{*n}`) and confirm the active symbol table; raw `*u*n` strings do not always match the intended multichar symbols.
   - `source fsts/germanic.txt` writes many `.bin` files to the **current directory**; make sure the report scripts and ad‑hoc `flookup` tests are using the same bin locations.
   - If a rule seems inert, confirm it against the **exact** bin used by reports (`old_english_sandbox_after_proto_to_oe_weak_tail.bin`) rather than a locally built test transducer.

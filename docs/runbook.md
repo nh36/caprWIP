@@ -81,3 +81,49 @@ Check `docker compose ps` to confirm no lingering containers remain.
 - Tracing tip: the English sandbox now emits `english_after_proto_to_oe.bin` right
   after the PGmc→OE stage, so grab that snapshot when debugging early vowel/weak-tail changes.
 - Use `python3 server/tools/evaluate_proto_to_oe.py --tsv data/germanic-aligned-final.tsv --bin english_after_proto_to_oe.bin` after each rule batch to quantify how close the stage mirrors the OE column.
+
+## 7. Old English bin sync checks
+- Before running OE reports or tracers, run:
+  ```bash
+  python3 server/tools/oe_bin_sync_check.py
+  ```
+  It fails if `old_english.bin` or the sandbox stage bins are missing or older than
+  their source FSTs.
+- If it fails, rebuild bins inside Docker:
+  ```bash
+  bash server/tools/rebuild_oe_bins.sh
+  ```
+  This runs `foma -f fsts/germanic.txt` and `foma -f fsts/old_english_sandbox.txt`
+  in the backend container, refreshing `server/old_english.bin` and the sandbox
+  `old_english_sandbox_after_*.bin` stacks.
+
+## 8. Foma syntax gotchas
+
+When writing or debugging foma replacement rules, watch for these common pitfalls:
+
+### Optional vs required context (CRITICAL)
+```foma
+# WRONG - parentheses make context OPTIONAL, rule applies everywhere!
+{X} -> {Y} || _ (context)
+
+# CORRECT - context is required
+{X} -> {Y} || _ context
+```
+This caused the A-restoration bug (2026-02-06): the rule applied unconditionally
+because the context was accidentally optional.
+
+### Testing contexts
+Always test replacement rules with `apply down` on strings that should NOT match:
+```foma
+regex MyRule;
+apply down {test_string_without_context}  # Should stay unchanged
+apply down {test_string_with_context}     # Should transform
+```
+
+### Multichar symbols
+Use brace tokens `{*u}{*n}` when testing; raw `*u*n` may not match intended symbols.
+
+### Bin locations
+`source fsts/germanic.txt` writes `.bin` files to the current directory. Make sure
+reports and ad-hoc `flookup` tests use the same bin paths (usually `/usr/app/` inside
+Docker).
