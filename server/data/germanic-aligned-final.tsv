@@ -128,7 +128,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1031	b au ə r	*būrą	b au ə r ( - - )	bauər	Bauer	283	German				bower	*būrą	28
 798	b r ɑ n t	*brandăz	b r ɑ n t ( - - )	brɑnt	brand	218	Dutch				brand	*brandăz	29
 797	b r æ n d	*brandăz	b r æ n d ( - - )	brænd	brand	218	English				brand	*brandăz	29
-1965	b r a n d	*brandăz	b r æ n d ( - - )	brænd	brand	218	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			brand	*brandăz	29
+1965	b r a n d	*brandas	b r æ n d ( - - )	brænd	brandes	218	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *brandas (> brandes)		brand	*brandas	29
 796	b r a n t	*brandăz	b r a n d ( - - )	brant	Brand	218	German				brand	*brandăz	29
 1158	b r oː t	*braudą	b r oː t ( - - )	broːt	brood	317	Dutch				bread	*braudą	30
 1157	b r ɛ d	*braudą	b r ɛ d ( - - )	brɛd	bread	317	English				bread	*braudą	30
@@ -475,7 +475,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1781	h a l ə	*xallō	h a l ə	halə	Halle	488	German				hall	*xallō	111
 438	h aː m ə r	*xamarăz	h aː m ə r ( - - )	haːmər	hamer	120	Dutch				hammer	*xamarăz	112
 437	h æ m ə	*xamarăz	h æ m ə r ( - - )	hæmə	hammer	120	English				hammer	*xamarăz	112
-2053	h a m o r	*xamarăz	h æ m ə r ( - - )	hæmə	hamor	120	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hammer	*xamarăz	112
+2053	h a m o r	*xamaras	h æ m ə r ( - - )	hæmə	hamores	120	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *xamaras (> hamores)		hammer	*xamaras	112
 436	h a m ə r	*xamarăz	h a m ə r ( - - )	hamər	Hammer	120	German				hammer	*xamarăz	112
 394	h ɑ n t	*xanduz	h ɑ n t ( - - )	hɑnt	hand	108	Dutch				hand	*xanduz	113
 393	h æ n d	*xanduz	h æ n d ( - - )	hænd	hand	108	English				hand	*xanduz	113
@@ -1180,7 +1180,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2234	s w e l g a n	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swelgan	352	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swallow	*swalgwōn	270
 1281	ʃ v a l b ə	*swalgwōn	ʃ v a l ( - b ə - )	ʃvalbə	Schwalbe	352	German				swallow	*swalgwōn	270
 1630	s ʋ ɔ n	*swanăz	s ʋ ɔ n ( - - )	sʋɔn	swan	447	English				swan	*swanăz	360
-2235	s w a n	*swanăz	s ʋ ɔ n ( - - )	sʋɔn	swan	447	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swan	*swanăz	360
+2235	s w a n	*swanas	s ʋ ɔ n ( - - )	sʋɔn	swanes	447	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *swanas (> swanes)		swan	*swanas	360
 1629	ʃ v aː n	*swanăz	ʃ v aː n ( - - )	ʃvaːn	Schwan	447	German				swan	*swanăz	360
 679	s ʋ ɛ l	*swellăną	s ʋ ɛ l - - ( - - )	sʋɛl	swell	186	English				swell	*swellăną	361
 2236	s w e l l a n	*swellăną	s ʋ ɛ l - - ( - - )	sʋɛl	swellan	186	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swell	*swellăną	361
