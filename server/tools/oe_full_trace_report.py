@@ -52,6 +52,7 @@ STAGES: List[Tuple[str, str]] = [
     ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
     ("WeightMarkers", "old_english_sandbox_after_weight_markers.bin"),
     ("HighVowelApocope", "old_english_sandbox_after_high_vowel_apocope.bin"),
+    ("HeavySyllableNasalApocope", "old_english_sandbox_after_heavy_syllable_nasal_apocope.bin"),
     ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
     ("WeightCleanup", "old_english_sandbox_after_weight_cleanup_full.bin"),
     ("HLoss", "old_english_sandbox_after_h_loss.bin"),

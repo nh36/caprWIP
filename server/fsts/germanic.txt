@@ -1365,7 +1365,9 @@ define OldEnglishHeavyMarker [
     {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
     {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
     {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
-    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
+    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
+    {*ą} -> {*H} {*ą} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
+    {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
 ];
 
 define OldEnglishWeightMarkers OldEnglishHeavyMarker;
@@ -1373,6 +1375,14 @@ define OldEnglishWeightMarkers OldEnglishHeavyMarker;
 define OldEnglishHighVowelApocope [
     {*H} {*i} -> 0 || _ .#.,
     {*H} {*u} -> 0 || _ .#.
+];
+
+# EXPERIMENTAL (2026-02-06): Apocope of neuter *-ą after heavy syllables.
+# Ringe/Taylor §6.8.1: "short *i and *u were lost word-finally after a heavy
+# syllable". Evidence suggests *-ą (neuter nom./acc.sg.) followed same pattern.
+# Measured after OE vowel changes (breaking/lengthening), hence after weight markers.
+define OldEnglishHeavySyllableNasalApocope [
+    {*H} {*ą} -> 0 || _ .#.
 ];
 
 define OldEnglishWeightCleanup [
@@ -1431,6 +1441,7 @@ define EnglishProtoToOE (
     .o. OldEnglishWeakTailNasalLoss
     .o. OldEnglishWeightMarkers
     .o. OldEnglishHighVowelApocope
+    .o. OldEnglishHeavySyllableNasalApocope
     .o. OldEnglishWeakTailReduction
     .o. OldEnglishJLossAfterHeavy
     .o. OldEnglishWeightCleanup
@@ -1486,7 +1497,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. OldEnglishWeakTailNasalLoss
     .o. OldEnglishWeakTailUnReduction;
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
-define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope;
+define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope .o. OldEnglishHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OldEnglishWeakTailReduction
     .o. OldEnglishWeightCleanup;
