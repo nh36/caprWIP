@@ -6,6 +6,16 @@
 - Analyzer sample (`printf 'laux\nknɛxt\nmɪlx\nbroːt\n' | flookup german.bin`) still returns full proto bundles, but the rogue `braɔt` reflexes disappear.
 - API regression harness (`python3 server/tools/api_regression.py`) remains green for Burmish and Germanic, so the tightened phonotactics do not disturb the frontend payloads.
 
+### Tracing status (2026-02-06 update)
+
+- **LiquidLowering DELETED** (investigation complete):
+  - Rule investigation concluded the rule was fundamentally misconceived.
+  - Literature review (Hogg, Ringe/Taylor) found NO evidence for "lowering *ō before liquids".
+  - The real change: final unstressed long vowels **shorten** (not lower), then participate in weak-tail reduction or apocope.
+  - Dataset analysis (35 proto *-ō words): all show shortening → reduction/loss, never lowering to *ɔː.
+  - **Action**: Deleted `EnglishLiquidLowering` entirely from germanic.txt (lines 1206-1215) and removed from both OE pipeline compositions (lines 1429, 1487). The outcomes are already correctly handled by existing weak-tail reduction and apocope rules.
+  - See `/Users/nathanhill/.copilot/session-state/79de229e-e817-4269-9364-009f42864358/liquid_lowering_investigation.md` for full analysis.
+
 ### Tracing status (2026-01-27 update)
 
 - **LiquidLowering investigation** (requested deep dive before touching chronology):

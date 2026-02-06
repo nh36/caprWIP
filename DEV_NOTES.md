@@ -1208,9 +1208,10 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **Remaining non-firing (2 only)**:
   - **ProtoInput** - 0 changes (proto gate stage, no transformations expected)
   - **WeightCleanup** - 0 changes (needs investigation)
+- **DELETED (1 stage)**:
+  - **LiquidLowering** - Deleted 2026-02-06; no evidence for "lowering before liquids"; already handled by weak-tail reduction
 - **FIXED / Now firing (18 stages)**:
   - ARestoration ✓ (41 changes) - **Fixed 2026-02-06** via context rule repair
-  - LiquidLowering ✓ (note: `EnglishLiquidLowering` is `?*` no-op; report shows pass-throughs, not true changes)
   - VelarFricativePalatalization ✓ (36 changes)
   - IUmlaut ✓ (85 changes)
   - JClusterCoalescence ✓ (1 change)

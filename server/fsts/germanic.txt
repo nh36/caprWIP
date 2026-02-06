@@ -1203,16 +1203,10 @@ define OldEnglishARestoration (
         - [OldEnglishARestorationIntervening]* OldEnglishARestorationWeakTailVowel
 );
 
-# Late Old English lowering of {*ō} before liquids and in absolute final position.
-# NOTE (2026-01-27): Disabled for now; see `docs/germanic_transducer_report.md`
-# for detailed findings on why this currently overgenerates and why a later
-# final-long-vowel shortening stage is missing. We will revisit and re-enable
-# after the chronology and reductions are corrected.
-# define EnglishLiquidLowering [
-#     {*ō} -> {*ɔː} || _ EnglishStarLiquid,
-#     {*ō} -> {*ɔː} || _ .#.
-# ];
-define EnglishLiquidLowering ?*;
+# NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no
+# evidence in literature for "lowering *ō before liquids". The real change is
+# final unstressed long-vowel shortening (Ringe/Taylor §6.8.3), which is already
+# handled by weak-tail reduction and apocope. See session notes for details.
 
 # Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
 define EnglishVelarShortening [
@@ -1426,7 +1420,6 @@ define EnglishProtoToOE (
     # endings (like *-ăz, *-ą) to determine whether to apply. Historical chronology
     # per Ringe/Taylor: §6.3 Retraction (early) → §6.8 Apocope (later).
     .o. OldEnglishFinalWeakSchwaApocope
-    .o. EnglishLiquidLowering
     .o. OldEnglishJGemination
     .o. OldEnglishSkPalatalization
     .o. OldEnglishVelarPalatalization
@@ -1484,7 +1477,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. OldEnglishEwLongDiphthong
     .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
-    .o. EnglishLiquidLowering
     .o. EnglishVelarShortening
     .o. EnglishUrRounding
     .o. OldEnglishIUmlaut
