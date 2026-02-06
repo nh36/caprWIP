@@ -1,0 +1,7819 @@
+=== BUCKET: exact_match (82) ===
+
+--- beard ---
+PROTO: *bardăz
+EXPECTED: beard
+OUTPUTS: beard
+
+ProtoInput: *b*a*r*d*ă*z
+InitialKn: *b*a*r*d*ă*z
+Palatalisation: *b*a*r*d*ă*z
+ConsonantRules: *b*a*r*d
+ProtoToOEWeakTail: *b*ēa*r*d, *b*ea*r*d
+ProtoToOEWeightMarkers: *b*ēa*r*d, *b*ea*r*d
+ProtoToOEApocope: *b*ea*r*d, *b*ēa*r*d
+ProtoToOEWeightCleanup: *b*ea*r*d, *b*ēa*r*d
+ProtoToOE: *b*ea*r*d
+WGlide: *b*ea*r*d
+GhMarker: *b*ea*r*d
+GlideDeletion: *b*ea*r*d
+Epenthesis: *b*ea*r*d
+Orthography: beard
+Surface: beard
+
+--- bind ---
+PROTO: *bindăną
+EXPECTED: bindan
+OUTPUTS: bindan
+
+ProtoInput: *b*i*n*d*ă*n*ą
+InitialKn: *b*i*n*d*ă*n*ą
+Palatalisation: *b*i*n*d*ă*n*ą
+ConsonantRules: *b*i*n*d*ă*n*ą
+ProtoToOEWeakTail: *b*i*n*d*ă*n
+ProtoToOEWeightMarkers: *b*i*n*d*ă*n
+ProtoToOEApocope: *b*i*n*d*ă*n
+ProtoToOEWeightCleanup: *b*i*n*d*ă*n
+ProtoToOE: *b*i*n*d*ă*n
+WGlide: *b*i*n*d*ă*n
+GhMarker: *b*i*n*d*ă*n
+GlideDeletion: *b*i*n*d*ă*n
+Epenthesis: *b*i*n*d*ă*n
+Orthography: bindan
+Surface: bindan
+
+--- book ---
+PROTO: *bōkz
+EXPECTED: bōc
+OUTPUTS: bōc
+
+ProtoInput: *b*ō*k*z
+InitialKn: *b*ō*k*z
+Palatalisation: *b*ō*k*z
+ConsonantRules: *b*ō*k
+ProtoToOEWeakTail: *b*u*k
+ProtoToOEWeightMarkers: *b*u*k
+ProtoToOEApocope: *b*u*k
+ProtoToOEWeightCleanup: *b*u*k
+ProtoToOE: *b*ō*k
+WGlide: *b*ō*k
+GhMarker: *b*ō*k
+GlideDeletion: *b*ō*k
+Epenthesis: *b*ō*k
+Orthography: bōc
+Surface: bōc
+
+--- bosom ---
+PROTO: *bōsmăz
+EXPECTED: bōsm
+OUTPUTS: bōsm
+
+ProtoInput: *b*ō*s*m*ă*z
+InitialKn: *b*ō*s*m*ă*z
+Palatalisation: *b*ō*s*m*ă*z
+ConsonantRules: *b*ō*s*m
+ProtoToOEWeakTail: *b*ō*s*m
+ProtoToOEWeightMarkers: *b*ō*s*m
+ProtoToOEApocope: *b*ō*s*m
+ProtoToOEWeightCleanup: *b*ō*s*m
+ProtoToOE: *b*ō*s*m
+WGlide: *b*ō*s*m
+GhMarker: *b*ō*s*m
+GlideDeletion: *b*ō*s*m
+Epenthesis: *b*ō*s*m
+Orthography: bōsm
+Surface: bōsm
+
+--- bough ---
+PROTO: *bōguz
+EXPECTED: bōg
+OUTPUTS: bōg
+
+ProtoInput: *b*ō*g*u*z
+InitialKn: *b*ō*g*u*z
+Palatalisation: *b*ō*g*u*z
+ConsonantRules: *b*ō*g*u
+ProtoToOEWeakTail: *b*u*g*u
+ProtoToOEWeightMarkers: *b*u*g*H*u
+ProtoToOEApocope: *b*u*g
+ProtoToOEWeightCleanup: *b*u*g
+ProtoToOE: *b*ō*g
+WGlide: *b*ō*g
+GhMarker: *b*ō*g
+GlideDeletion: *b*ō*g
+Epenthesis: *b*ō*g
+Orthography: bōg
+Surface: bōg
+
+--- bring ---
+PROTO: *bringăną
+EXPECTED: bringan
+OUTPUTS: bringan
+
+ProtoInput: *b*r*i*n*g*ă*n*ą
+InitialKn: *b*r*i*n*g*ă*n*ą
+Palatalisation: *b*r*i*n*g*ă*n*ą
+ConsonantRules: *b*r*i*n*g*ă*n*ą
+ProtoToOEWeakTail: *b*r*i*n*g*ă*n
+ProtoToOEWeightMarkers: *b*r*i*n*g*ă*n
+ProtoToOEApocope: *b*r*i*n*g*ă*n
+ProtoToOEWeightCleanup: *b*r*i*n*g*ă*n
+ProtoToOE: *b*r*i*n*g*ă*n
+WGlide: *b*r*i*n*g*ă*n
+GhMarker: *b*r*i*n*g*ă*n
+GlideDeletion: *b*r*i*n*g*ă*n
+Epenthesis: *b*r*i*n*g*ă*n
+Orthography: bringan
+Surface: bringan
+
+--- brook ---
+PROTO: *brūkăną
+EXPECTED: brūcan
+OUTPUTS: brūcan
+
+ProtoInput: *b*r*ū*k*ă*n*ą
+InitialKn: *b*r*ū*k*ă*n*ą
+Palatalisation: *b*r*ū*k*ă*n*ą
+ConsonantRules: *b*r*ū*k*ă*n*ą
+ProtoToOEWeakTail: *b*r*ū*k*ă*n
+ProtoToOEWeightMarkers: *b*r*ū*k*ă*n
+ProtoToOEApocope: *b*r*ū*k*ă*n
+ProtoToOEWeightCleanup: *b*r*ū*k*ă*n
+ProtoToOE: *b*r*ū*k*ă*n
+WGlide: *b*r*ū*k*ă*n
+GhMarker: *b*r*ū*k*ă*n
+GlideDeletion: *b*r*ū*k*ă*n
+Epenthesis: *b*r*ū*k*ă*n
+Orthography: brūcan
+Surface: brūcan
+
+--- buck ---
+PROTO: *bukkăz
+EXPECTED: bucc
+OUTPUTS: bucc
+
+ProtoInput: *b*u*k*k*ă*z
+InitialKn: *b*u*k*k*ă*z
+Palatalisation: *b*u*k*k*ă*z
+ConsonantRules: *b*u*k*k
+ProtoToOEWeakTail: *b*u*k*k
+ProtoToOEWeightMarkers: *b*u*k*k
+ProtoToOEApocope: *b*u*k*k
+ProtoToOEWeightCleanup: *b*u*k*k
+ProtoToOE: *b*u*k*k
+WGlide: *b*u*k*k
+GhMarker: *b*u*k*k
+GlideDeletion: *b*u*k*k
+Epenthesis: *b*u*k*k
+Orthography: bucc
+Surface: bucc
+
+--- chew ---
+PROTO: *kewwăną
+EXPECTED: ċēowan
+OUTPUTS: ċēowan
+
+ProtoInput: *k*e*w*w*ă*n*ą
+InitialKn: *k*e*w*w*ă*n*ą
+Palatalisation: *ʧ*e*w*w*ă*n*ą
+ConsonantRules: *ʧ*e*w*w*ă*n*ą
+ProtoToOEWeakTail: *ʧ*ēo*w*ă*n
+ProtoToOEWeightMarkers: *ʧ*ēo*w*ă*n
+ProtoToOEApocope: *ʧ*ēo*w*ă*n
+ProtoToOEWeightCleanup: *ʧ*ēo*w*ă*n
+ProtoToOE: *ʧ*ēo*w*ă*n
+WGlide: *ʧ*ēo*ʋ*ă*n
+GhMarker: *ʧ*ēo*ʋ*ă*n
+GlideDeletion: *ʧ*ēo*ă*n
+Epenthesis: *ʧ*ēo*w*ă*n
+Orthography: ċēowan
+Surface: ċēowan
+
+--- climb ---
+PROTO: *klimbăną
+EXPECTED: climban
+OUTPUTS: climban
+
+ProtoInput: *k*l*i*m*b*ă*n*ą
+InitialKn: *k*l*i*m*b*ă*n*ą
+Palatalisation: *k*l*i*m*b*ă*n*ą
+ConsonantRules: *k*l*i*m*b*ă*n*ą
+ProtoToOEWeakTail: *k*l*i*m*b*ă*n
+ProtoToOEWeightMarkers: *k*l*i*m*b*ă*n
+ProtoToOEApocope: *k*l*i*m*b*ă*n
+ProtoToOEWeightCleanup: *k*l*i*m*b*ă*n
+ProtoToOE: *k*l*i*m*b*ă*n
+WGlide: *k*l*i*m*b*ă*n
+GhMarker: *k*l*i*m*b*ă*n
+GlideDeletion: *k*l*i*m*b*ă*n
+Epenthesis: *k*l*i*m*b*ă*n
+Orthography: climban
+Surface: climban
+
+--- dale ---
+PROTO: *dalăz
+EXPECTED: dæl
+OUTPUTS: dæl
+
+ProtoInput: *d*a*l*ă*z
+InitialKn: *d*a*l*ă*z
+Palatalisation: *d*a*l*ă*z
+ConsonantRules: *d*a*l
+ProtoToOEWeakTail: *d*a*l
+ProtoToOEWeightMarkers: *d*a*l
+ProtoToOEApocope: *d*a*l
+ProtoToOEWeightCleanup: *d*a*l
+ProtoToOE: *d*æ*l
+WGlide: *d*æ*l
+GhMarker: *d*æ*l
+GlideDeletion: *d*æ*l
+Epenthesis: *d*æ*l
+Orthography: dæl
+Surface: dæl
+
+--- day ---
+PROTO: *dagăz
+EXPECTED: dæġ
+OUTPUTS: dæġ
+
+ProtoInput: *d*a*g*ă*z
+InitialKn: *d*a*g*ă*z
+Palatalisation: *d*a*g*ă*z
+ConsonantRules: *d*a*g
+ProtoToOEWeakTail: *d*a*g
+ProtoToOEWeightMarkers: *d*a*g
+ProtoToOEApocope: *d*a*g
+ProtoToOEWeightCleanup: *d*a*g
+ProtoToOE: *d*æ*ʤ
+WGlide: *d*æ*ʤ
+GhMarker: *d*æ*ʤ
+GlideDeletion: *d*æ*ʤ
+Epenthesis: *d*æ*ʤ
+Orthography: dæġ
+Surface: dæġ
+
+--- dough ---
+PROTO: *daigăz
+EXPECTED: dāg
+OUTPUTS: dāg
+
+ProtoInput: *d*ai*g*ă*z
+InitialKn: *d*ai*g*ă*z
+Palatalisation: *d*ai*g*ă*z
+ConsonantRules: *d*ai*g
+ProtoToOEWeakTail: *d*ā*g
+ProtoToOEWeightMarkers: *d*ā*g
+ProtoToOEApocope: *d*ā*g
+ProtoToOEWeightCleanup: *d*ā*g
+ProtoToOE: *d*ā*g
+WGlide: *d*ā*g
+GhMarker: *d*ā*g
+GlideDeletion: *d*ā*g
+Epenthesis: *d*ā*g
+Orthography: dāg
+Surface: dāg
+
+--- dream ---
+PROTO: *draumăz
+EXPECTED: drēam
+OUTPUTS: drēam
+
+ProtoInput: *d*r*au*m*ă*z
+InitialKn: *d*r*au*m*ă*z
+Palatalisation: *d*r*au*m*ă*z
+ConsonantRules: *d*r*au*m
+ProtoToOEWeakTail: *d*r*ēa*m
+ProtoToOEWeightMarkers: *d*r*ēa*m
+ProtoToOEApocope: *d*r*ēa*m
+ProtoToOEWeightCleanup: *d*r*ēa*m
+ProtoToOE: *d*r*ēa*m
+WGlide: *d*r*ēa*m
+GhMarker: *d*r*ēa*m
+GlideDeletion: *d*r*ēa*m
+Epenthesis: *d*r*ēa*m
+Orthography: drēam
+Surface: drēam
+
+--- drink ---
+PROTO: *drinkăną
+EXPECTED: drincan
+OUTPUTS: drincan
+
+ProtoInput: *d*r*i*n*k*ă*n*ą
+InitialKn: *d*r*i*n*k*ă*n*ą
+Palatalisation: *d*r*i*n*k*ă*n*ą
+ConsonantRules: *d*r*i*n*k*ă*n*ą
+ProtoToOEWeakTail: *d*r*i*n*k*ă*n
+ProtoToOEWeightMarkers: *d*r*i*n*k*ă*n
+ProtoToOEApocope: *d*r*i*n*k*ă*n
+ProtoToOEWeightCleanup: *d*r*i*n*k*ă*n
+ProtoToOE: *d*r*i*n*k*ă*n
+WGlide: *d*r*i*n*k*ă*n
+GhMarker: *d*r*i*n*k*ă*n
+GlideDeletion: *d*r*i*n*k*ă*n
+Epenthesis: *d*r*i*n*k*ă*n
+Orthography: drincan
+Surface: drincan
+
+--- eat ---
+PROTO: *etăną
+EXPECTED: etan
+OUTPUTS: etan
+
+ProtoInput: *e*t*ă*n*ą
+InitialKn: *e*t*ă*n*ą
+Palatalisation: *e*t*ă*n*ą
+ConsonantRules: *e*t*ă*n*ą
+ProtoToOEWeakTail: *ē*t*ă*n
+ProtoToOEWeightMarkers: *ē*t*ă*n
+ProtoToOEApocope: *ē*t*ă*n
+ProtoToOEWeightCleanup: *ē*t*ă*n
+ProtoToOE: *e*t*ă*n
+WGlide: *e*t*ă*n
+GhMarker: *e*t*ă*n
+GlideDeletion: *e*t*ă*n
+Epenthesis: *e*t*ă*n
+Orthography: etan
+Surface: etan
+
+--- fall ---
+PROTO: *fallăną
+EXPECTED: feallan
+OUTPUTS: feallan
+
+ProtoInput: *f*a*l*l*ă*n*ą
+InitialKn: *f*a*l*l*ă*n*ą
+Palatalisation: *f*a*l*l*ă*n*ą
+ConsonantRules: *f*a*l*l*ă*n*ą
+ProtoToOEWeakTail: *f*ēa*l*l*ă*n, *f*ea*l*l*ă*n
+ProtoToOEWeightMarkers: *f*ēa*l*l*ă*n, *f*ea*l*l*ă*n
+ProtoToOEApocope: *f*ea*l*l*ă*n, *f*ēa*l*l*ă*n
+ProtoToOEWeightCleanup: *f*ea*l*l*ă*n, *f*ēa*l*l*ă*n
+ProtoToOE: *f*ea*l*l*ă*n
+WGlide: *f*ea*l*l*ă*n
+GhMarker: *f*ea*l*l*ă*n
+GlideDeletion: *f*ea*l*l*ă*n
+Epenthesis: *f*ea*l*l*ă*n
+Orthography: feallan
+Surface: feallan
+
+--- fee ---
+PROTO: *fexu
+EXPECTED: feoh
+OUTPUTS: feoh
+
+ProtoInput: *f*e*x*u
+InitialKn: *f*e*x*u
+Palatalisation: *f*e*x*u
+ConsonantRules: *f*e*x*u
+ProtoToOEWeakTail: *f*ē*x*u
+ProtoToOEWeightMarkers: *f*ē*x*H*u
+ProtoToOEApocope: *f*ē*x
+ProtoToOEWeightCleanup: *f*ē*x
+ProtoToOE: *f*eo*x
+WGlide: *f*eo*x
+GhMarker: *f*eo*GH
+GlideDeletion: *f*eo*GH
+Epenthesis: *f*eo*x
+Orthography: feoh
+Surface: feoh
+
+--- fight ---
+PROTO: *fextăną
+EXPECTED: feohtan
+OUTPUTS: feohtan
+
+ProtoInput: *f*e*x*t*ă*n*ą
+InitialKn: *f*e*x*t*ă*n*ą
+Palatalisation: *f*e*x*t*ă*n*ą
+ConsonantRules: *f*e*x*t*ă*n*ą
+ProtoToOEWeakTail: *f*eo*x*t*ă*n
+ProtoToOEWeightMarkers: *f*eo*x*t*ă*n
+ProtoToOEApocope: *f*eo*x*t*ă*n
+ProtoToOEWeightCleanup: *f*eo*x*t*ă*n
+ProtoToOE: *f*eo*x*t*ă*n
+WGlide: *f*eo*x*t*ă*n
+GhMarker: *f*eo*GH*t*ă*n
+GlideDeletion: *f*eo*GH*t*ă*n
+Epenthesis: *f*eo*x*t*ă*n
+Orthography: feohtan
+Surface: feohtan
+
+--- finger ---
+PROTO: *fingrăz
+EXPECTED: finger
+OUTPUTS: finger
+
+ProtoInput: *f*i*n*g*r*ă*z
+InitialKn: *f*i*n*g*r*ă*z
+Palatalisation: *f*i*n*g*r*ă*z
+ConsonantRules: *f*i*n*g*r
+ProtoToOEWeakTail: *f*i*n*g*r
+ProtoToOEWeightMarkers: *f*i*n*g*r
+ProtoToOEApocope: *f*i*n*g*r
+ProtoToOEWeightCleanup: *f*i*n*g*r
+ProtoToOE: *f*i*n*g*r
+WGlide: *f*i*n*g*r
+GhMarker: *f*i*n*g*r
+GlideDeletion: *f*i*n*g*r
+Epenthesis: *f*i*n*g*e*r
+Orthography: finger
+Surface: finger
+
+--- fire ---
+PROTO: *fūri
+EXPECTED: fȳre
+OUTPUTS: fȳre
+
+ProtoInput: *f*ū*r*i
+InitialKn: *f*ū*r*i
+Palatalisation: *f*ū*r*i
+ConsonantRules: *f*ū*r*i
+ProtoToOEWeakTail: *f*ȳ*r*e
+ProtoToOEWeightMarkers: *f*ȳ*r*e
+ProtoToOEApocope: *f*ȳ*r*e
+ProtoToOEWeightCleanup: *f*ȳ*r*e
+ProtoToOE: *f*ȳ*r*e
+WGlide: *f*ȳ*r*e
+GhMarker: *f*ȳ*r*e
+GlideDeletion: *f*ȳ*r*e
+Epenthesis: *f*ȳ*r*e
+Orthography: fȳre
+Surface: fȳre
+
+--- fish ---
+PROTO: *fiskăz
+EXPECTED: fisċ
+OUTPUTS: fisċ
+
+ProtoInput: *f*i*s*k*ă*z
+InitialKn: *f*i*s*k*ă*z
+Palatalisation: *f*i*s*k*ă*z
+ConsonantRules: *f*i*s*k
+ProtoToOEWeakTail: *f*i*s*k
+ProtoToOEWeightMarkers: *f*i*s*k
+ProtoToOEApocope: *f*i*s*k
+ProtoToOEWeightCleanup: *f*i*s*k
+ProtoToOE: *f*i*ʃ
+WGlide: *f*i*ʃ
+GhMarker: *f*i*ʃ
+GlideDeletion: *f*i*ʃ
+Epenthesis: *f*i*ʃ
+Orthography: fisċ
+Surface: fisċ
+
+--- flea ---
+PROTO: *flauxz
+EXPECTED: flēah
+OUTPUTS: flēah
+
+ProtoInput: *f*l*au*x*z
+InitialKn: *f*l*au*x*z
+Palatalisation: *f*l*au*x*z
+ConsonantRules: *f*l*au*x
+ProtoToOEWeakTail: *f*l*ēa*x
+ProtoToOEWeightMarkers: *f*l*ēa*x
+ProtoToOEApocope: *f*l*ēa*x
+ProtoToOEWeightCleanup: *f*l*ēa*x
+ProtoToOE: *f*l*ēa*x
+WGlide: *f*l*ēa*x
+GhMarker: *f*l*ēa*GH
+GlideDeletion: *f*l*ēa*GH
+Epenthesis: *f*l*ēa*x
+Orthography: flēah
+Surface: flēah
+
+--- flee ---
+PROTO: *fleuxăną
+EXPECTED: flēon
+OUTPUTS: flēon
+
+ProtoInput: *f*l*eu*x*ă*n*ą
+InitialKn: *f*l*eu*x*ă*n*ą
+Palatalisation: *f*l*eu*x*ă*n*ą
+ConsonantRules: *f*l*eu*x*ă*n*ą
+ProtoToOEWeakTail: *f*l*ēo*x*ă*n
+ProtoToOEWeightMarkers: *f*l*ēo*x*ă*n
+ProtoToOEApocope: *f*l*ēo*x*ă*n
+ProtoToOEWeightCleanup: *f*l*ēo*x*ă*n
+ProtoToOE: *f*l*ēo*n
+WGlide: *f*l*ēo*n
+GhMarker: *f*l*ēo*n
+GlideDeletion: *f*l*ēo*n
+Epenthesis: *f*l*ēo*n
+Orthography: flēon
+Surface: flēon
+
+--- flood ---
+PROTO: *flōduz
+EXPECTED: flōd
+OUTPUTS: flōd
+
+ProtoInput: *f*l*ō*d*u*z
+InitialKn: *f*l*ō*d*u*z
+Palatalisation: *f*l*ō*d*u*z
+ConsonantRules: *f*l*ō*d*u
+ProtoToOEWeakTail: *f*l*ō*d*u
+ProtoToOEWeightMarkers: *f*l*ō*d*H*u
+ProtoToOEApocope: *f*l*ō*d
+ProtoToOEWeightCleanup: *f*l*ō*d
+ProtoToOE: *f*l*ō*d
+WGlide: *f*l*ō*d
+GhMarker: *f*l*ō*d
+GlideDeletion: *f*l*ō*d
+Epenthesis: *f*l*ō*d
+Orthography: flōd
+Surface: flōd
+
+--- fowl ---
+PROTO: *fuglăz
+EXPECTED: fugol
+OUTPUTS: fugol
+
+ProtoInput: *f*u*g*l*ă*z
+InitialKn: *f*u*g*l*ă*z
+Palatalisation: *f*u*g*l*ă*z
+ConsonantRules: *f*u*g*l
+ProtoToOEWeakTail: *f*u*g*l
+ProtoToOEWeightMarkers: *f*u*g*l
+ProtoToOEApocope: *f*u*g*l
+ProtoToOEWeightCleanup: *f*u*g*l
+ProtoToOE: *f*u*g*l
+WGlide: *f*u*g*l
+GhMarker: *f*u*g*l
+GlideDeletion: *f*u*g*l
+Epenthesis: *f*u*g*o*l
+Orthography: fugol
+Surface: fugol
+
+--- freeze ---
+PROTO: *freusăną
+EXPECTED: frēosan
+OUTPUTS: frēosan
+
+ProtoInput: *f*r*eu*s*ă*n*ą
+InitialKn: *f*r*eu*s*ă*n*ą
+Palatalisation: *f*r*eu*s*ă*n*ą
+ConsonantRules: *f*r*eu*s*ă*n*ą
+ProtoToOEWeakTail: *f*r*ēo*s*ă*n
+ProtoToOEWeightMarkers: *f*r*ēo*s*ă*n
+ProtoToOEApocope: *f*r*ēo*s*ă*n
+ProtoToOEWeightCleanup: *f*r*ēo*s*ă*n
+ProtoToOE: *f*r*ēo*s*ă*n
+WGlide: *f*r*ēo*s*ă*n
+GhMarker: *f*r*ēo*s*ă*n
+GlideDeletion: *f*r*ēo*s*ă*n
+Epenthesis: *f*r*ēo*s*ă*n
+Orthography: frēosan
+Surface: frēosan
+
+--- gall ---
+PROTO: *gallą
+EXPECTED: ġealla
+OUTPUTS: ġealla
+
+ProtoInput: *g*a*l*l*ą
+InitialKn: *g*a*l*l*ą
+Palatalisation: *g*a*l*l*ą
+ConsonantRules: *g*a*l*l*ą
+ProtoToOEWeakTail: *g*ēa*l*l*ɔ̆, *g*ea*l*l*ɔ̆
+ProtoToOEWeightMarkers: *g*ēa*l*l*ɔ̆, *g*ea*l*l*ɔ̆
+ProtoToOEApocope: *g*ea*l*l*ɔ̆, *g*ēa*l*l*ɔ̆
+ProtoToOEWeightCleanup: *g*ea*l*l*ɔ̆, *g*ēa*l*l*ɔ̆
+ProtoToOE: *ʤ*ea*l*l*ɔ̆
+WGlide: *ʤ*ea*l*l*ɔ̆
+GhMarker: *ʤ*ea*l*l*ɔ̆
+GlideDeletion: *ʤ*ea*l*l*ɔ̆
+Epenthesis: *ʤ*ea*l*l*ɔ̆
+Orthography: ġeallŏ, ġealla
+Surface: ġealla
+
+--- ghost ---
+PROTO: *gaistăz
+EXPECTED: gāst
+OUTPUTS: gāst
+
+ProtoInput: *g*ai*s*t*ă*z
+InitialKn: *g*ai*s*t*ă*z
+Palatalisation: *g*ai*s*t*ă*z
+ConsonantRules: *g*ai*s*t
+ProtoToOEWeakTail: *g*ā*s*t
+ProtoToOEWeightMarkers: *g*ā*s*t
+ProtoToOEApocope: *g*ā*s*t
+ProtoToOEWeightCleanup: *g*ā*s*t
+ProtoToOE: *g*ā*s*t
+WGlide: *g*ā*s*t
+GhMarker: *g*ā*s*t
+GlideDeletion: *g*ā*s*t
+Epenthesis: *g*ā*s*t
+Orthography: gāst
+Surface: gāst
+
+--- gripe ---
+PROTO: *grīpăną
+EXPECTED: grīpan
+OUTPUTS: grīpan
+
+ProtoInput: *g*r*ī*p*ă*n*ą
+InitialKn: *g*r*ī*p*ă*n*ą
+Palatalisation: *g*r*ī*p*ă*n*ą
+ConsonantRules: *g*r*ī*p*ă*n*ą
+ProtoToOEWeakTail: *g*r*ī*p*ă*n
+ProtoToOEWeightMarkers: *g*r*ī*p*ă*n
+ProtoToOEApocope: *g*r*ī*p*ă*n
+ProtoToOEWeightCleanup: *g*r*ī*p*ă*n
+ProtoToOE: *g*r*ī*p*ă*n
+WGlide: *g*r*ī*p*ă*n
+GhMarker: *g*r*ī*p*ă*n
+GlideDeletion: *g*r*ī*p*ă*n
+Epenthesis: *g*r*ī*p*ă*n
+Orthography: grīpan
+Surface: grīpan
+
+--- ground ---
+PROTO: *grunduz
+EXPECTED: grund
+OUTPUTS: grund
+
+ProtoInput: *g*r*u*n*d*u*z
+InitialKn: *g*r*u*n*d*u*z
+Palatalisation: *g*r*u*n*d*u*z
+ConsonantRules: *g*r*u*n*d*u
+ProtoToOEWeakTail: *g*r*u*n*d*u
+ProtoToOEWeightMarkers: *g*r*u*n*d*H*u
+ProtoToOEApocope: *g*r*u*n*d
+ProtoToOEWeightCleanup: *g*r*u*n*d
+ProtoToOE: *g*r*u*n*d
+WGlide: *g*r*u*n*d
+GhMarker: *g*r*u*n*d
+GlideDeletion: *g*r*u*n*d
+Epenthesis: *g*r*u*n*d
+Orthography: grund
+Surface: grund
+
+--- hand ---
+PROTO: *xanduz
+EXPECTED: hand
+OUTPUTS: hand
+
+ProtoInput: *x*a*n*d*u*z
+InitialKn: *x*a*n*d*u*z
+Palatalisation: *x*a*n*d*u*z
+ConsonantRules: *x*a*n*d*u
+ProtoToOEWeakTail: *x*a*n*d*u
+ProtoToOEWeightMarkers: *x*a*n*d*H*u
+ProtoToOEApocope: *x*a*n*d
+ProtoToOEWeightCleanup: *x*a*n*d
+ProtoToOE: *x*a*n*d
+WGlide: *x*a*n*d
+GhMarker: *x*a*n*d
+GlideDeletion: *x*a*n*d
+Epenthesis: *x*a*n*d
+Orthography: hand
+Surface: hand
+
+--- harm ---
+PROTO: *xarmăz
+EXPECTED: hearm
+OUTPUTS: hearm
+
+ProtoInput: *x*a*r*m*ă*z
+InitialKn: *x*a*r*m*ă*z
+Palatalisation: *x*a*r*m*ă*z
+ConsonantRules: *x*a*r*m
+ProtoToOEWeakTail: *x*ēa*r*m, *x*ea*r*m
+ProtoToOEWeightMarkers: *x*ēa*r*m, *x*ea*r*m
+ProtoToOEApocope: *x*ea*r*m, *x*ēa*r*m
+ProtoToOEWeightCleanup: *x*ea*r*m, *x*ēa*r*m
+ProtoToOE: *ç*ea*r*m
+WGlide: *ç*ea*r*m
+GhMarker: *ç*ea*r*m
+GlideDeletion: *ç*ea*r*m
+Epenthesis: *ç*ea*r*m
+Orthography: hearm
+Surface: hearm
+
+--- hazel ---
+PROTO: *xaslăz
+EXPECTED: hæsl
+OUTPUTS: hæsl
+
+ProtoInput: *x*a*s*l*ă*z
+InitialKn: *x*a*s*l*ă*z
+Palatalisation: *x*a*s*l*ă*z
+ConsonantRules: *x*a*s*l
+ProtoToOEWeakTail: *x*a*s*l
+ProtoToOEWeightMarkers: *x*a*s*l
+ProtoToOEApocope: *x*a*s*l
+ProtoToOEWeightCleanup: *x*a*s*l
+ProtoToOE: *ç*æ*s*l
+WGlide: *ç*æ*s*l
+GhMarker: *ç*æ*s*l
+GlideDeletion: *ç*æ*s*l
+Epenthesis: *ç*æ*s*l
+Orthography: hæsl
+Surface: hæsl
+
+--- heal ---
+PROTO: *xailjăną
+EXPECTED: hǣlan
+OUTPUTS: hǣlan
+
+ProtoInput: *x*ai*l*j*ă*n*ą
+InitialKn: *x*ai*l*j*ă*n*ą
+Palatalisation: *x*ai*l*j*ă*n*ą
+ConsonantRules: *x*ai*l*j*ă*n*ą
+ProtoToOEWeakTail: *x*ǣ*l*j*ă*n
+ProtoToOEWeightMarkers: *x*ǣ*l*j*ă*n
+ProtoToOEApocope: *x*ǣ*l*j*ă*n
+ProtoToOEWeightCleanup: *x*ǣ*l*j*ă*n
+ProtoToOE: *x*ǣ*l*ă*n
+WGlide: *x*ǣ*l*ă*n
+GhMarker: *x*ǣ*l*ă*n
+GlideDeletion: *x*ǣ*l*ă*n
+Epenthesis: *x*ǣ*l*ă*n
+Orthography: hǣlan
+Surface: hǣlan
+
+--- hearth ---
+PROTO: *xerθăz
+EXPECTED: heorþ
+OUTPUTS: heorþ
+
+ProtoInput: *x*e*r*θ*ă*z
+InitialKn: *x*e*r*θ*ă*z
+Palatalisation: *x*e*r*θ*ă*z
+ConsonantRules: *x*e*r*θ
+ProtoToOEWeakTail: *x*eo*r*θ
+ProtoToOEWeightMarkers: *x*eo*r*θ
+ProtoToOEApocope: *x*eo*r*θ
+ProtoToOEWeightCleanup: *x*eo*r*θ
+ProtoToOE: *ç*eo*r*θ
+WGlide: *ç*eo*r*θ
+GhMarker: *ç*eo*r*θ
+GlideDeletion: *ç*eo*r*θ
+Epenthesis: *ç*eo*r*θ
+Orthography: heorþ, heor*þ
+Surface: heorþ
+
+--- hedge ---
+PROTO: *xagjăz
+EXPECTED: heġġ
+OUTPUTS: heġġ
+
+ProtoInput: *x*a*g*j*ă*z
+InitialKn: *x*a*g*j*ă*z
+Palatalisation: *x*a*g*j*ă*z
+ConsonantRules: *x*a*g*j
+ProtoToOEWeakTail: *x*e*g*j
+ProtoToOEWeightMarkers: *x*e*g*j
+ProtoToOEApocope: *x*e*g*j
+ProtoToOEWeightCleanup: *x*e*g*j
+ProtoToOE: *ç*e*ʤ*ʤ*j
+WGlide: *ç*e*ʤ*ʤ*j
+GhMarker: *ç*e*ʤ*ʤ*j
+GlideDeletion: *ç*e*ʤ*ʤ*j
+Epenthesis: *ç*e*ʤ*ʤ*j
+Orthography: heġġ
+Surface: heġġ
+
+--- home ---
+PROTO: *xaimăz
+EXPECTED: hām
+OUTPUTS: hām
+
+ProtoInput: *x*ai*m*ă*z
+InitialKn: *x*ai*m*ă*z
+Palatalisation: *x*ai*m*ă*z
+ConsonantRules: *x*ai*m
+ProtoToOEWeakTail: *x*ā*m
+ProtoToOEWeightMarkers: *x*ā*m
+ProtoToOEApocope: *x*ā*m
+ProtoToOEWeightCleanup: *x*ā*m
+ProtoToOE: *x*ā*m
+WGlide: *x*ā*m
+GhMarker: *x*ā*m
+GlideDeletion: *x*ā*m
+Epenthesis: *x*ā*m
+Orthography: hām
+Surface: hām
+
+--- hood ---
+PROTO: *xōdăz
+EXPECTED: hōd
+OUTPUTS: hōd
+
+ProtoInput: *x*ō*d*ă*z
+InitialKn: *x*ō*d*ă*z
+Palatalisation: *x*ō*d*ă*z
+ConsonantRules: *x*ō*d
+ProtoToOEWeakTail: *x*ō*d
+ProtoToOEWeightMarkers: *x*ō*d
+ProtoToOEApocope: *x*ō*d
+ProtoToOEWeightCleanup: *x*ō*d
+ProtoToOE: *x*ō*d
+WGlide: *x*ō*d
+GhMarker: *x*ō*d
+GlideDeletion: *x*ō*d
+Epenthesis: *x*ō*d
+Orthography: hōd
+Surface: hōd
+
+--- hoof ---
+PROTO: *xōfăz
+EXPECTED: hōf
+OUTPUTS: hōf
+
+ProtoInput: *x*ō*f*ă*z
+InitialKn: *x*ō*f*ă*z
+Palatalisation: *x*ō*f*ă*z
+ConsonantRules: *x*ō*f
+ProtoToOEWeakTail: *x*ō*f
+ProtoToOEWeightMarkers: *x*ō*f
+ProtoToOEApocope: *x*ō*f
+ProtoToOEWeightCleanup: *x*ō*f
+ProtoToOE: *x*ō*f
+WGlide: *x*ō*f
+GhMarker: *x*ō*f
+GlideDeletion: *x*ō*f
+Epenthesis: *x*ō*f
+Orthography: hōf
+Surface: hōf
+
+--- hound ---
+PROTO: *xundăz
+EXPECTED: hund
+OUTPUTS: hund
+
+ProtoInput: *x*u*n*d*ă*z
+InitialKn: *x*u*n*d*ă*z
+Palatalisation: *x*u*n*d*ă*z
+ConsonantRules: *x*u*n*d
+ProtoToOEWeakTail: *x*u*n*d
+ProtoToOEWeightMarkers: *x*u*n*d
+ProtoToOEApocope: *x*u*n*d
+ProtoToOEWeightCleanup: *x*u*n*d
+ProtoToOE: *x*u*n*d
+WGlide: *x*u*n*d
+GhMarker: *x*u*n*d
+GlideDeletion: *x*u*n*d
+Epenthesis: *x*u*n*d
+Orthography: hund
+Surface: hund
+
+--- knead ---
+PROTO: *knedăną
+EXPECTED: cnedan
+OUTPUTS: cnedan
+
+ProtoInput: *k*n*e*d*ă*n*ą
+InitialKn: *Kn*e*d*ă*n*ą
+Palatalisation: *Kn*e*d*ă*n*ą
+ConsonantRules: *Kn*e*d*ă*n*ą
+ProtoToOEWeakTail: *Kn*ē*d*ă*n
+ProtoToOEWeightMarkers: *Kn*ē*d*ă*n
+ProtoToOEApocope: *Kn*ē*d*ă*n
+ProtoToOEWeightCleanup: *Kn*ē*d*ă*n
+ProtoToOE: *Kn*e*d*ă*n
+WGlide: *Kn*e*d*ă*n
+GhMarker: *Kn*e*d*ă*n
+GlideDeletion: *Kn*e*d*ă*n
+Epenthesis: *k*n*e*d*ă*n
+Orthography: cnedan
+Surface: cnedan
+
+--- last ---
+PROTO: *laistjăną
+EXPECTED: lǣstan
+OUTPUTS: lǣstan
+
+ProtoInput: *l*ai*s*t*j*ă*n*ą
+InitialKn: *l*ai*s*t*j*ă*n*ą
+Palatalisation: *l*ai*s*t*j*ă*n*ą
+ConsonantRules: *l*ai*s*t*j*ă*n*ą
+ProtoToOEWeakTail: *l*ǣ*s*t*j*ă*n
+ProtoToOEWeightMarkers: *l*ǣ*s*t*j*ă*n
+ProtoToOEApocope: *l*ǣ*s*t*j*ă*n
+ProtoToOEWeightCleanup: *l*ǣ*s*t*j*ă*n
+ProtoToOE: *l*ǣ*s*t*ă*n
+WGlide: *l*ǣ*s*t*ă*n
+GhMarker: *l*ǣ*s*t*ă*n
+GlideDeletion: *l*ǣ*s*t*ă*n
+Epenthesis: *l*ǣ*s*t*ă*n
+Orthography: lǣstan
+Surface: lǣstan
+
+--- leek ---
+PROTO: *laukăz
+EXPECTED: lēac
+OUTPUTS: lēac
+
+ProtoInput: *l*au*k*ă*z
+InitialKn: *l*au*k*ă*z
+Palatalisation: *l*au*k*ă*z
+ConsonantRules: *l*au*k
+ProtoToOEWeakTail: *l*ēa*k
+ProtoToOEWeightMarkers: *l*ēa*k
+ProtoToOEApocope: *l*ēa*k
+ProtoToOEWeightCleanup: *l*ēa*k
+ProtoToOE: *l*ēa*k
+WGlide: *l*ēa*k
+GhMarker: *l*ēa*k
+GlideDeletion: *l*ēa*k
+Epenthesis: *l*ēa*k
+Orthography: lēac
+Surface: lēac
+
+--- lime ---
+PROTO: *līmą
+EXPECTED: līm
+OUTPUTS: līm
+
+ProtoInput: *l*ī*m*ą
+InitialKn: *l*ī*m*ą
+Palatalisation: *l*ī*m*ą
+ConsonantRules: *l*ī*m*ą
+ProtoToOEWeakTail: *l*ī*m
+ProtoToOEWeightMarkers: *l*ī*m
+ProtoToOEApocope: *l*ī*m
+ProtoToOEWeightCleanup: *l*ī*m
+ProtoToOE: *l*ī*m
+WGlide: *l*ī*m
+GhMarker: *l*ī*m
+GlideDeletion: *l*ī*m
+Epenthesis: *l*ī*m
+Orthography: līm
+Surface: līm
+
+--- louse ---
+PROTO: *lūsz
+EXPECTED: lūs
+OUTPUTS: lūs
+
+ProtoInput: *l*ū*s*z
+InitialKn: *l*ū*s*z
+Palatalisation: *l*ū*s*z
+ConsonantRules: *l*ū*s
+ProtoToOEWeakTail: *l*ū*s
+ProtoToOEWeightMarkers: *l*ū*s
+ProtoToOEApocope: *l*ū*s
+ProtoToOEWeightCleanup: *l*ū*s
+ProtoToOE: *l*ū*s
+WGlide: *l*ū*s
+GhMarker: *l*ū*s
+GlideDeletion: *l*ū*s
+Epenthesis: *l*ū*s
+Orthography: lūs
+Surface: lūs
+
+--- lust ---
+PROTO: *lustuz
+EXPECTED: lust
+OUTPUTS: lust
+
+ProtoInput: *l*u*s*t*u*z
+InitialKn: *l*u*s*t*u*z
+Palatalisation: *l*u*s*t*u*z
+ConsonantRules: *l*u*s*t*u
+ProtoToOEWeakTail: *l*u*s*t*u
+ProtoToOEWeightMarkers: *l*u*s*t*H*u
+ProtoToOEApocope: *l*u*s*t
+ProtoToOEWeightCleanup: *l*u*s*t
+ProtoToOE: *l*u*s*t
+WGlide: *l*u*s*t
+GhMarker: *l*u*s*t
+GlideDeletion: *l*u*s*t
+Epenthesis: *l*u*s*t
+Orthography: lust
+Surface: lust
+
+--- malt ---
+PROTO: *maltăz
+EXPECTED: mealt
+OUTPUTS: mealt
+
+ProtoInput: *m*a*l*t*ă*z
+InitialKn: *m*a*l*t*ă*z
+Palatalisation: *m*a*l*t*ă*z
+ConsonantRules: *m*a*l*t
+ProtoToOEWeakTail: *m*ēa*l*t, *m*ea*l*t
+ProtoToOEWeightMarkers: *m*ēa*l*t, *m*ea*l*t
+ProtoToOEApocope: *m*ea*l*t, *m*ēa*l*t
+ProtoToOEWeightCleanup: *m*ea*l*t, *m*ēa*l*t
+ProtoToOE: *m*ea*l*t
+WGlide: *m*ea*l*t
+GhMarker: *m*ea*l*t
+GlideDeletion: *m*ea*l*t
+Epenthesis: *m*ea*l*t
+Orthography: mealt
+Surface: mealt
+
+--- mast ---
+PROTO: *mastăz
+EXPECTED: mæst
+OUTPUTS: mæst
+
+ProtoInput: *m*a*s*t*ă*z
+InitialKn: *m*a*s*t*ă*z
+Palatalisation: *m*a*s*t*ă*z
+ConsonantRules: *m*a*s*t
+ProtoToOEWeakTail: *m*a*s*t
+ProtoToOEWeightMarkers: *m*a*s*t
+ProtoToOEApocope: *m*a*s*t
+ProtoToOEWeightCleanup: *m*a*s*t
+ProtoToOE: *m*æ*s*t
+WGlide: *m*æ*s*t
+GhMarker: *m*æ*s*t
+GlideDeletion: *m*æ*s*t
+Epenthesis: *m*æ*s*t
+Orthography: mæst
+Surface: mæst
+
+--- mean ---
+PROTO: *mainjăną
+EXPECTED: mǣnan
+OUTPUTS: mǣnan
+
+ProtoInput: *m*ai*n*j*ă*n*ą
+InitialKn: *m*ai*n*j*ă*n*ą
+Palatalisation: *m*ai*n*j*ă*n*ą
+ConsonantRules: *m*ai*n*j*ă*n*ą
+ProtoToOEWeakTail: *m*ǣ*n*j*ă*n
+ProtoToOEWeightMarkers: *m*ǣ*n*j*ă*n
+ProtoToOEApocope: *m*ǣ*n*j*ă*n
+ProtoToOEWeightCleanup: *m*ǣ*n*j*ă*n
+ProtoToOE: *m*ǣ*n*ă*n
+WGlide: *m*ǣ*n*ă*n
+GhMarker: *m*ǣ*n*ă*n
+GlideDeletion: *m*ǣ*n*ă*n
+Epenthesis: *m*ǣ*n*ă*n
+Orthography: mǣnan
+Surface: mǣnan
+
+--- mood ---
+PROTO: *mōdăz
+EXPECTED: mōd
+OUTPUTS: mōd
+
+ProtoInput: *m*ō*d*ă*z
+InitialKn: *m*ō*d*ă*z
+Palatalisation: *m*ō*d*ă*z
+ConsonantRules: *m*ō*d
+ProtoToOEWeakTail: *m*ō*d
+ProtoToOEWeightMarkers: *m*ō*d
+ProtoToOEApocope: *m*ō*d
+ProtoToOEWeightCleanup: *m*ō*d
+ProtoToOE: *m*ō*d
+WGlide: *m*ō*d
+GhMarker: *m*ō*d
+GlideDeletion: *m*ō*d
+Epenthesis: *m*ō*d
+Orthography: mōd
+Surface: mōd
+
+--- nail ---
+PROTO: *naglăz
+EXPECTED: næġl
+OUTPUTS: næġl
+
+ProtoInput: *n*a*g*l*ă*z
+InitialKn: *n*a*g*l*ă*z
+Palatalisation: *n*a*g*l*ă*z
+ConsonantRules: *n*a*g*l
+ProtoToOEWeakTail: *n*a*g*l
+ProtoToOEWeightMarkers: *n*a*g*l
+ProtoToOEApocope: *n*a*g*l
+ProtoToOEWeightCleanup: *n*a*g*l
+ProtoToOE: *n*æ*ʤ*l
+WGlide: *n*æ*ʤ*l
+GhMarker: *n*æ*ʤ*l
+GlideDeletion: *n*æ*ʤ*l
+Epenthesis: *n*æ*ʤ*l
+Orthography: næġl
+Surface: næġl
+
+--- rain ---
+PROTO: *regną
+EXPECTED: reġn
+OUTPUTS: reġn
+
+ProtoInput: *r*e*g*n*ą
+InitialKn: *r*e*g*n*ą
+Palatalisation: *r*e*g*n*ą
+ConsonantRules: *r*e*g*n*ą
+ProtoToOEWeakTail: *r*e*g*n
+ProtoToOEWeightMarkers: *r*e*g*n
+ProtoToOEApocope: *r*e*g*n
+ProtoToOEWeightCleanup: *r*e*g*n
+ProtoToOE: *r*e*ʤ*n
+WGlide: *r*e*ʤ*n
+GhMarker: *r*e*ʤ*n
+GlideDeletion: *r*e*ʤ*n
+Epenthesis: *r*e*ʤ*n
+Orthography: reġn
+Surface: reġn
+
+--- ride ---
+PROTO: *rīdăną
+EXPECTED: rīdan
+OUTPUTS: rīdan
+
+ProtoInput: *r*ī*d*ă*n*ą
+InitialKn: *r*ī*d*ă*n*ą
+Palatalisation: *r*ī*d*ă*n*ą
+ConsonantRules: *r*ī*d*ă*n*ą
+ProtoToOEWeakTail: *r*ī*d*ă*n
+ProtoToOEWeightMarkers: *r*ī*d*ă*n
+ProtoToOEApocope: *r*ī*d*ă*n
+ProtoToOEWeightCleanup: *r*ī*d*ă*n
+ProtoToOE: *r*ī*d*ă*n
+WGlide: *r*ī*d*ă*n
+GhMarker: *r*ī*d*ă*n
+GlideDeletion: *r*ī*d*ă*n
+Epenthesis: *r*ī*d*ă*n
+Orthography: rīdan
+Surface: rīdan
+
+--- room ---
+PROTO: *rūmą
+EXPECTED: rūm
+OUTPUTS: rūm
+
+ProtoInput: *r*ū*m*ą
+InitialKn: *r*ū*m*ą
+Palatalisation: *r*ū*m*ą
+ConsonantRules: *r*ū*m*ą
+ProtoToOEWeakTail: *r*ū*m
+ProtoToOEWeightMarkers: *r*ū*m
+ProtoToOEApocope: *r*ū*m
+ProtoToOEWeightCleanup: *r*ū*m
+ProtoToOE: *r*ū*m
+WGlide: *r*ū*m
+GhMarker: *r*ū*m
+GlideDeletion: *r*ū*m
+Epenthesis: *r*ū*m
+Orthography: rūm
+Surface: rūm
+
+--- rudder ---
+PROTO: *rōθrăz
+EXPECTED: rōþor
+OUTPUTS: rōþor
+
+ProtoInput: *r*ō*θ*r*ă*z
+InitialKn: *r*ō*θ*r*ă*z
+Palatalisation: *r*ō*θ*r*ă*z
+ConsonantRules: *r*ō*θ*r
+ProtoToOEWeakTail: *r*ō*θ*r
+ProtoToOEWeightMarkers: *r*ō*θ*r
+ProtoToOEApocope: *r*ō*θ*r
+ProtoToOEWeightCleanup: *r*ō*θ*r
+ProtoToOE: *r*ō*θ*r
+WGlide: *r*ō*θ*r
+GhMarker: *r*ō*θ*r
+GlideDeletion: *r*ō*θ*r
+Epenthesis: *r*ō*θ*o*r
+Orthography: rōþor, rō*þor
+Surface: rōþor
+
+--- run ---
+PROTO: *rinnăną
+EXPECTED: rinnan
+OUTPUTS: rinnan
+
+ProtoInput: *r*i*n*n*ă*n*ą
+InitialKn: *r*i*n*n*ă*n*ą
+Palatalisation: *r*i*n*n*ă*n*ą
+ConsonantRules: *r*i*n*n*ă*n*ą
+ProtoToOEWeakTail: *r*i*n*n*ă*n
+ProtoToOEWeightMarkers: *r*i*n*n*ă*n
+ProtoToOEApocope: *r*i*n*n*ă*n
+ProtoToOEWeightCleanup: *r*i*n*n*ă*n
+ProtoToOE: *r*i*n*n*ă*n
+WGlide: *r*i*n*n*ă*n
+GhMarker: *r*i*n*n*ă*n
+GlideDeletion: *r*i*n*n*ă*n
+Epenthesis: *r*i*n*n*ă*n
+Orthography: rinnan
+Surface: rinnan
+
+--- rye ---
+PROTO: *rugiz
+EXPECTED: ryġe
+OUTPUTS: ryġe
+
+ProtoInput: *r*u*g*i*z
+InitialKn: *r*u*g*i*z
+Palatalisation: *r*u*ʤ*i*z
+ConsonantRules: *r*u*ʤ*i
+ProtoToOEWeakTail: *r*y*ʤ*e
+ProtoToOEWeightMarkers: *r*y*ʤ*e
+ProtoToOEApocope: *r*y*ʤ*e
+ProtoToOEWeightCleanup: *r*y*ʤ*e
+ProtoToOE: *r*y*ʤ*e
+WGlide: *r*y*ʤ*e
+GhMarker: *r*y*ʤ*e
+GlideDeletion: *r*y*ʤ*e
+Epenthesis: *r*y*ʤ*e
+Orthography: ryġe
+Surface: ryġe
+
+--- seam ---
+PROTO: *saumăz
+EXPECTED: sēam
+OUTPUTS: sēam
+
+ProtoInput: *s*au*m*ă*z
+InitialKn: *s*au*m*ă*z
+Palatalisation: *s*au*m*ă*z
+ConsonantRules: *s*au*m
+ProtoToOEWeakTail: *s*ēa*m
+ProtoToOEWeightMarkers: *s*ēa*m
+ProtoToOEApocope: *s*ēa*m
+ProtoToOEWeightCleanup: *s*ēa*m
+ProtoToOE: *s*ēa*m
+WGlide: *s*ēa*m
+GhMarker: *s*ēa*m
+GlideDeletion: *s*ēa*m
+Epenthesis: *s*ēa*m
+Orthography: sēam
+Surface: sēam
+
+--- send ---
+PROTO: *sandjăną
+EXPECTED: sendan
+OUTPUTS: sendan
+
+ProtoInput: *s*a*n*d*j*ă*n*ą
+InitialKn: *s*a*n*d*j*ă*n*ą
+Palatalisation: *s*a*n*d*j*ă*n*ą
+ConsonantRules: *s*a*n*d*j*ă*n*ą
+ProtoToOEWeakTail: *s*e*n*d*j*ă*n
+ProtoToOEWeightMarkers: *s*e*n*d*j*ă*n
+ProtoToOEApocope: *s*e*n*d*j*ă*n
+ProtoToOEWeightCleanup: *s*e*n*d*j*ă*n
+ProtoToOE: *s*e*n*d*ă*n
+WGlide: *s*e*n*d*ă*n
+GhMarker: *s*e*n*d*ă*n
+GlideDeletion: *s*e*n*d*ă*n
+Epenthesis: *s*e*n*d*ă*n
+Orthography: sendan
+Surface: sendan
+
+--- set ---
+PROTO: *satjăną
+EXPECTED: settan
+OUTPUTS: settan
+
+ProtoInput: *s*a*t*j*ă*n*ą
+InitialKn: *s*a*t*j*ă*n*ą
+Palatalisation: *s*a*t*j*ă*n*ą
+ConsonantRules: *s*a*t*j*ă*n*ą
+ProtoToOEWeakTail: *s*e*t*j*ă*n
+ProtoToOEWeightMarkers: *s*e*t*j*ă*n
+ProtoToOEApocope: *s*e*t*j*ă*n
+ProtoToOEWeightCleanup: *s*e*t*j*ă*n
+ProtoToOE: *s*e*t*t*ă*n
+WGlide: *s*e*t*t*ă*n
+GhMarker: *s*e*t*t*ă*n
+GlideDeletion: *s*e*t*t*ă*n
+Epenthesis: *s*e*t*t*ă*n
+Orthography: settan
+Surface: settan
+
+--- shine ---
+PROTO: *skīnăną
+EXPECTED: sċīnan
+OUTPUTS: sċīnan
+
+ProtoInput: *s*k*ī*n*ă*n*ą
+InitialKn: *s*k*ī*n*ă*n*ą
+Palatalisation: *ʃ*ī*n*ă*n*ą
+ConsonantRules: *ʃ*ī*n*ă*n*ą
+ProtoToOEWeakTail: *ʃ*ī*n*ă*n
+ProtoToOEWeightMarkers: *ʃ*ī*n*ă*n
+ProtoToOEApocope: *ʃ*ī*n*ă*n
+ProtoToOEWeightCleanup: *ʃ*ī*n*ă*n
+ProtoToOE: *ʃ*ī*n*ă*n
+WGlide: *ʃ*ī*n*ă*n
+GhMarker: *ʃ*ī*n*ă*n
+GlideDeletion: *ʃ*ī*n*ă*n
+Epenthesis: *ʃ*ī*n*ă*n
+Orthography: sċīnan
+Surface: sċīnan
+
+--- singe ---
+PROTO: *sangjăną
+EXPECTED: senġan
+OUTPUTS: senġan
+
+ProtoInput: *s*a*n*g*j*ă*n*ą
+InitialKn: *s*a*n*g*j*ă*n*ą
+Palatalisation: *s*a*n*g*j*ă*n*ą
+ConsonantRules: *s*a*n*g*j*ă*n*ą
+ProtoToOEWeakTail: *s*e*n*g*j*ă*n
+ProtoToOEWeightMarkers: *s*e*n*g*j*ă*n
+ProtoToOEApocope: *s*e*n*g*j*ă*n
+ProtoToOEWeightCleanup: *s*e*n*g*j*ă*n
+ProtoToOE: *s*e*n*ʤ*j*ă*n
+WGlide: *s*e*n*ʤ*j*ă*n
+GhMarker: *s*e*n*ʤ*j*ă*n
+GlideDeletion: *s*e*n*ʤ*j*ă*n
+Epenthesis: *s*e*n*ʤ*j*ă*n
+Orthography: senġan
+Surface: senġan
+
+--- sit ---
+PROTO: *setjăną
+EXPECTED: sittan
+OUTPUTS: sittan
+
+ProtoInput: *s*e*t*j*ă*n*ą
+InitialKn: *s*e*t*j*ă*n*ą
+Palatalisation: *s*e*t*j*ă*n*ą
+ConsonantRules: *s*e*t*j*ă*n*ą
+ProtoToOEWeakTail: *s*i*t*j*ă*n
+ProtoToOEWeightMarkers: *s*i*t*j*ă*n
+ProtoToOEApocope: *s*i*t*j*ă*n
+ProtoToOEWeightCleanup: *s*i*t*j*ă*n
+ProtoToOE: *s*i*t*t*ă*n
+WGlide: *s*i*t*t*ă*n
+GhMarker: *s*i*t*t*ă*n
+GlideDeletion: *s*i*t*t*ă*n
+Epenthesis: *s*i*t*t*ă*n
+Orthography: sittan
+Surface: sittan
+
+--- slay ---
+PROTO: *slaxăną
+EXPECTED: slēan
+OUTPUTS: slēan
+
+ProtoInput: *s*l*a*x*ă*n*ą
+InitialKn: *s*l*a*x*ă*n*ą
+Palatalisation: *s*l*a*x*ă*n*ą
+ConsonantRules: *s*l*a*x*ă*n*ą
+ProtoToOEWeakTail: *s*l*ā*x*ă*n
+ProtoToOEWeightMarkers: *s*l*ā*x*ă*n
+ProtoToOEApocope: *s*l*ā*x*ă*n
+ProtoToOEWeightCleanup: *s*l*ā*x*ă*n
+ProtoToOE: *s*l*ēa*n
+WGlide: *s*l*ēa*n
+GhMarker: *s*l*ēa*n
+GlideDeletion: *s*l*ēa*n
+Epenthesis: *s*l*ēa*n
+Orthography: slēan
+Surface: slēan
+
+--- slime ---
+PROTO: *slīmą
+EXPECTED: slīm
+OUTPUTS: slīm
+
+ProtoInput: *s*l*ī*m*ą
+InitialKn: *s*l*ī*m*ą
+Palatalisation: *s*l*ī*m*ą
+ConsonantRules: *s*l*ī*m*ą
+ProtoToOEWeakTail: *s*l*ī*m
+ProtoToOEWeightMarkers: *s*l*ī*m
+ProtoToOEApocope: *s*l*ī*m
+ProtoToOEWeightCleanup: *s*l*ī*m
+ProtoToOE: *s*l*ī*m
+WGlide: *s*l*ī*m
+GhMarker: *s*l*ī*m
+GlideDeletion: *s*l*ī*m
+Epenthesis: *s*l*ī*m
+Orthography: slīm
+Surface: slīm
+
+--- spin ---
+PROTO: *spinnăną
+EXPECTED: spinnan
+OUTPUTS: spinnan
+
+ProtoInput: *s*p*i*n*n*ă*n*ą
+InitialKn: *s*p*i*n*n*ă*n*ą
+Palatalisation: *s*p*i*n*n*ă*n*ą
+ConsonantRules: *s*p*i*n*n*ă*n*ą
+ProtoToOEWeakTail: *s*p*i*n*n*ă*n
+ProtoToOEWeightMarkers: *s*p*i*n*n*ă*n
+ProtoToOEApocope: *s*p*i*n*n*ă*n
+ProtoToOEWeightCleanup: *s*p*i*n*n*ă*n
+ProtoToOE: *s*p*i*n*n*ă*n
+WGlide: *s*p*i*n*n*ă*n
+GhMarker: *s*p*i*n*n*ă*n
+GlideDeletion: *s*p*i*n*n*ă*n
+Epenthesis: *s*p*i*n*n*ă*n
+Orthography: spinnan
+Surface: spinnan
+
+--- spread ---
+PROTO: *spraidjăną
+EXPECTED: sprǣdan
+OUTPUTS: sprǣdan
+
+ProtoInput: *s*p*r*ai*d*j*ă*n*ą
+InitialKn: *s*p*r*ai*d*j*ă*n*ą
+Palatalisation: *s*p*r*ai*d*j*ă*n*ą
+ConsonantRules: *s*p*r*ai*d*j*ă*n*ą
+ProtoToOEWeakTail: *s*p*r*ǣ*d*j*ă*n
+ProtoToOEWeightMarkers: *s*p*r*ǣ*d*j*ă*n
+ProtoToOEApocope: *s*p*r*ǣ*d*j*ă*n
+ProtoToOEWeightCleanup: *s*p*r*ǣ*d*j*ă*n
+ProtoToOE: *s*p*r*ǣ*d*ă*n
+WGlide: *s*p*r*ǣ*d*ă*n
+GhMarker: *s*p*r*ǣ*d*ă*n
+GlideDeletion: *s*p*r*ǣ*d*ă*n
+Epenthesis: *s*p*r*ǣ*d*ă*n
+Orthography: sprǣdan
+Surface: sprǣdan
+
+--- stone ---
+PROTO: *stainăz
+EXPECTED: stān
+OUTPUTS: stān
+
+ProtoInput: *s*t*ai*n*ă*z
+InitialKn: *s*t*ai*n*ă*z
+Palatalisation: *s*t*ai*n*ă*z
+ConsonantRules: *s*t*ai*n
+ProtoToOEWeakTail: *s*t*ā*n
+ProtoToOEWeightMarkers: *s*t*ā*n
+ProtoToOEApocope: *s*t*ā*n
+ProtoToOEWeightCleanup: *s*t*ā*n
+ProtoToOE: *s*t*ā*n
+WGlide: *s*t*ā*n
+GhMarker: *s*t*ā*n
+GlideDeletion: *s*t*ā*n
+Epenthesis: *s*t*ā*n
+Orthography: stān
+Surface: stān
+
+--- stool ---
+PROTO: *stōlăz
+EXPECTED: stōl
+OUTPUTS: stōl
+
+ProtoInput: *s*t*ō*l*ă*z
+InitialKn: *s*t*ō*l*ă*z
+Palatalisation: *s*t*ō*l*ă*z
+ConsonantRules: *s*t*ō*l
+ProtoToOEWeakTail: *s*t*ō*l
+ProtoToOEWeightMarkers: *s*t*ō*l
+ProtoToOEApocope: *s*t*ō*l
+ProtoToOEWeightCleanup: *s*t*ō*l
+ProtoToOE: *s*t*ō*l
+WGlide: *s*t*ō*l
+GhMarker: *s*t*ō*l
+GlideDeletion: *s*t*ō*l
+Epenthesis: *s*t*ō*l
+Orthography: stōl
+Surface: stōl
+
+--- stream ---
+PROTO: *straumăz
+EXPECTED: strēam
+OUTPUTS: strēam
+
+ProtoInput: *s*t*r*au*m*ă*z
+InitialKn: *s*t*r*au*m*ă*z
+Palatalisation: *s*t*r*au*m*ă*z
+ConsonantRules: *s*t*r*au*m
+ProtoToOEWeakTail: *s*t*r*ēa*m
+ProtoToOEWeightMarkers: *s*t*r*ēa*m
+ProtoToOEApocope: *s*t*r*ēa*m
+ProtoToOEWeightCleanup: *s*t*r*ēa*m
+ProtoToOE: *s*t*r*ēa*m
+WGlide: *s*t*r*ēa*m
+GhMarker: *s*t*r*ēa*m
+GlideDeletion: *s*t*r*ēa*m
+Epenthesis: *s*t*r*ēa*m
+Orthography: strēam
+Surface: strēam
+
+--- sup ---
+PROTO: *sūpăną
+EXPECTED: sūpan
+OUTPUTS: sūpan
+
+ProtoInput: *s*ū*p*ă*n*ą
+InitialKn: *s*ū*p*ă*n*ą
+Palatalisation: *s*ū*p*ă*n*ą
+ConsonantRules: *s*ū*p*ă*n*ą
+ProtoToOEWeakTail: *s*ū*p*ă*n
+ProtoToOEWeightMarkers: *s*ū*p*ă*n
+ProtoToOEApocope: *s*ū*p*ă*n
+ProtoToOEWeightCleanup: *s*ū*p*ă*n
+ProtoToOE: *s*ū*p*ă*n
+WGlide: *s*ū*p*ă*n
+GhMarker: *s*ū*p*ă*n
+GlideDeletion: *s*ū*p*ă*n
+Epenthesis: *s*ū*p*ă*n
+Orthography: sūpan
+Surface: sūpan
+
+--- swim ---
+PROTO: *swimmăną
+EXPECTED: swimman
+OUTPUTS: swimman
+
+ProtoInput: *s*w*i*m*m*ă*n*ą
+InitialKn: *s*w*i*m*m*ă*n*ą
+Palatalisation: *s*w*i*m*m*ă*n*ą
+ConsonantRules: *s*w*i*m*m*ă*n*ą
+ProtoToOEWeakTail: *s*w*i*m*m*ă*n
+ProtoToOEWeightMarkers: *s*w*i*m*m*ă*n
+ProtoToOEApocope: *s*w*i*m*m*ă*n
+ProtoToOEWeightCleanup: *s*w*i*m*m*ă*n
+ProtoToOE: *s*w*i*m*m*ă*n
+WGlide: *s*ʋ*i*m*m*ă*n
+GhMarker: *s*ʋ*i*m*m*ă*n
+GlideDeletion: *s*ʋ*i*m*m*ă*n
+Epenthesis: *s*w*i*m*m*ă*n
+Orthography: swimman
+Surface: swimman
+
+--- thirst ---
+PROTO: *θurstuz
+EXPECTED: þurst
+OUTPUTS: þurst
+
+ProtoInput: *θ*u*r*s*t*u*z
+InitialKn: *θ*u*r*s*t*u*z
+Palatalisation: *θ*u*r*s*t*u*z
+ConsonantRules: *θ*u*r*s*t*u
+ProtoToOEWeakTail: *θ*ō*r*s*t*u
+ProtoToOEWeightMarkers: *θ*ō*r*s*t*H*u
+ProtoToOEApocope: *θ*ō*r*s*t
+ProtoToOEWeightCleanup: *θ*ō*r*s*t
+ProtoToOE: *θ*u*r*s*t
+WGlide: *θ*u*r*s*t
+GhMarker: *θ*u*r*s*t
+GlideDeletion: *θ*u*r*s*t
+Epenthesis: *θ*u*r*s*t
+Orthography: þurst, *þurst
+Surface: þurst
+
+--- thrash ---
+PROTO: *θreskăną
+EXPECTED: þresċan
+OUTPUTS: þresċan
+
+ProtoInput: *θ*r*e*s*k*ă*n*ą
+InitialKn: *θ*r*e*s*k*ă*n*ą
+Palatalisation: *θ*r*e*s*k*ă*n*ą
+ConsonantRules: *θ*r*e*s*k*ă*n*ą
+ProtoToOEWeakTail: *θ*r*e*s*k*ă*n
+ProtoToOEWeightMarkers: *θ*r*e*s*k*ă*n
+ProtoToOEApocope: *θ*r*e*s*k*ă*n
+ProtoToOEWeightCleanup: *θ*r*e*s*k*ă*n
+ProtoToOE: *θ*r*e*ʃ*ă*n
+WGlide: *θ*r*e*ʃ*ă*n
+GhMarker: *θ*r*e*ʃ*ă*n
+GlideDeletion: *θ*r*e*ʃ*ă*n
+Epenthesis: *θ*r*e*ʃ*ă*n
+Orthography: þresċan, *þresċan
+Surface: þresċan
+
+--- thunder ---
+PROTO: *θunrăz
+EXPECTED: þunor
+OUTPUTS: þunor
+
+ProtoInput: *θ*u*n*r*ă*z
+InitialKn: *θ*u*n*r*ă*z
+Palatalisation: *θ*u*n*r*ă*z
+ConsonantRules: *θ*u*n*r
+ProtoToOEWeakTail: *θ*u*n*r
+ProtoToOEWeightMarkers: *θ*u*n*r
+ProtoToOEApocope: *θ*u*n*r
+ProtoToOEWeightCleanup: *θ*u*n*r
+ProtoToOE: *θ*u*n*r
+WGlide: *θ*u*n*r
+GhMarker: *θ*u*n*r
+GlideDeletion: *θ*u*n*r
+Epenthesis: *θ*u*n*o*r
+Orthography: þunor, *þunor
+Surface: þunor
+
+--- tread ---
+PROTO: *tredăną
+EXPECTED: tredan
+OUTPUTS: tredan
+
+ProtoInput: *t*r*e*d*ă*n*ą
+InitialKn: *t*r*e*d*ă*n*ą
+Palatalisation: *t*r*e*d*ă*n*ą
+ConsonantRules: *t*r*e*d*ă*n*ą
+ProtoToOEWeakTail: *t*r*ē*d*ă*n
+ProtoToOEWeightMarkers: *t*r*ē*d*ă*n
+ProtoToOEApocope: *t*r*ē*d*ă*n
+ProtoToOEWeightCleanup: *t*r*ē*d*ă*n
+ProtoToOE: *t*r*e*d*ă*n
+WGlide: *t*r*e*d*ă*n
+GhMarker: *t*r*e*d*ă*n
+GlideDeletion: *t*r*e*d*ă*n
+Epenthesis: *t*r*e*d*ă*n
+Orthography: tredan
+Surface: tredan
+
+--- wain ---
+PROTO: *wagnăz
+EXPECTED: wæġn
+OUTPUTS: wæġn
+
+ProtoInput: *w*a*g*n*ă*z
+InitialKn: *w*a*g*n*ă*z
+Palatalisation: *w*a*g*n*ă*z
+ConsonantRules: *w*a*g*n
+ProtoToOEWeakTail: *w*a*g*n
+ProtoToOEWeightMarkers: *w*a*g*n
+ProtoToOEApocope: *w*a*g*n
+ProtoToOEWeightCleanup: *w*a*g*n
+ProtoToOE: *w*æ*ʤ*n
+WGlide: *ʋ*æ*ʤ*n
+GhMarker: *ʋ*æ*ʤ*n
+GlideDeletion: *ʋ*æ*ʤ*n
+Epenthesis: *w*æ*ʤ*n
+Orthography: wæġn
+Surface: wæġn
+
+--- wield ---
+PROTO: *waldăną
+EXPECTED: wealdan
+OUTPUTS: wealdan
+
+ProtoInput: *w*a*l*d*ă*n*ą
+InitialKn: *w*a*l*d*ă*n*ą
+Palatalisation: *w*a*l*d*ă*n*ą
+ConsonantRules: *w*a*l*d*ă*n*ą
+ProtoToOEWeakTail: *w*ēa*l*d*ă*n, *w*ea*l*d*ă*n
+ProtoToOEWeightMarkers: *w*ēa*l*d*ă*n, *w*ea*l*d*ă*n
+ProtoToOEApocope: *w*ea*l*d*ă*n, *w*ēa*l*d*ă*n
+ProtoToOEWeightCleanup: *w*ea*l*d*ă*n, *w*ēa*l*d*ă*n
+ProtoToOE: *w*ea*l*d*ă*n
+WGlide: *ʋ*ea*l*d*ă*n
+GhMarker: *ʋ*ea*l*d*ă*n
+GlideDeletion: *ʋ*ea*l*d*ă*n
+Epenthesis: *w*ea*l*d*ă*n
+Orthography: wealdan
+Surface: wealdan
+
+--- winter ---
+PROTO: *wintruz
+EXPECTED: winter
+OUTPUTS: winter
+
+ProtoInput: *w*i*n*t*r*u*z
+InitialKn: *w*i*n*t*r*u*z
+Palatalisation: *w*i*n*t*r*u*z
+ConsonantRules: *w*i*n*t*r*u
+ProtoToOEWeakTail: *w*i*n*t*r*u
+ProtoToOEWeightMarkers: *w*i*n*t*r*H*u
+ProtoToOEApocope: *w*i*n*t*r
+ProtoToOEWeightCleanup: *w*i*n*t*r
+ProtoToOE: *w*i*n*t*r
+WGlide: *ʋ*i*n*t*r
+GhMarker: *ʋ*i*n*t*r
+GlideDeletion: *ʋ*i*n*t*r
+Epenthesis: *w*i*n*t*e*r
+Orthography: winter
+Surface: winter
+
+--- wolf ---
+PROTO: *wulfăz
+EXPECTED: wulf
+OUTPUTS: wulf
+
+ProtoInput: *w*u*l*f*ă*z
+InitialKn: *w*u*l*f*ă*z
+Palatalisation: *w*u*l*f*ă*z
+ConsonantRules: *w*u*l*f
+ProtoToOEWeakTail: *w*u*l*f
+ProtoToOEWeightMarkers: *w*u*l*f
+ProtoToOEApocope: *w*u*l*f
+ProtoToOEWeightCleanup: *w*u*l*f
+ProtoToOE: *w*u*l*f
+WGlide: *ʋ*u*l*f
+GhMarker: *ʋ*u*l*f
+GlideDeletion: *ʋ*u*l*f
+Epenthesis: *w*u*l*f
+Orthography: wulf
+Surface: wulf
+
+--- wring ---
+PROTO: *wringăną
+EXPECTED: wringan
+OUTPUTS: wringan
+
+ProtoInput: *w*r*i*n*g*ă*n*ą
+InitialKn: *w*r*i*n*g*ă*n*ą
+Palatalisation: *w*r*i*n*g*ă*n*ą
+ConsonantRules: *w*r*i*n*g*ă*n*ą
+ProtoToOEWeakTail: *w*r*i*n*g*ă*n
+ProtoToOEWeightMarkers: *w*r*i*n*g*ă*n
+ProtoToOEApocope: *w*r*i*n*g*ă*n
+ProtoToOEWeightCleanup: *w*r*i*n*g*ă*n
+ProtoToOE: *w*r*i*n*g*ă*n
+WGlide: *ʋ*r*i*n*g*ă*n
+GhMarker: *ʋ*r*i*n*g*ă*n
+GlideDeletion: *ʋ*r*i*n*g*ă*n
+Epenthesis: *w*r*i*n*g*ă*n
+Orthography: wringan
+Surface: wringan
+
+
+=== BUCKET: no_output (12) ===
+
+--- hawk ---
+PROTO: *xabukăz
+EXPECTED: hafoc
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- heaven ---
+PROTO: *xemenăz
+EXPECTED: heofon
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- neck ---
+PROTO: *xnakkăz
+EXPECTED: hnecca
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- rainbow ---
+PROTO: *regna-bugōn
+EXPECTED: reġnboga
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- shilling ---
+PROTO: *skellinăz
+EXPECTED: sċilling
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- smear ---
+PROTO: *smerwjăną
+EXPECTED: smerian
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- snow ---
+PROTO: *snaigwăz
+EXPECTED: snāw
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- start ---
+PROTO: *sturtijăną
+EXPECTED: styrtan
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- summer ---
+PROTO: *sumerăz
+EXPECTED: sumor
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- thistle ---
+PROTO: *θestilăz
+EXPECTED: þistel
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- world ---
+PROTO: *wira-aldiz
+EXPECTED: weorold
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+--- worm ---
+PROTO: *wurmaz/wurmiz
+EXPECTED: wyrm
+OUTPUTS: +?
+
+ProtoInput: +?
+InitialKn: +?
+Palatalisation: +?
+ConsonantRules: +?
+ProtoToOEWeakTail: +?
+ProtoToOEWeightMarkers: +?
+ProtoToOEApocope: +?
+ProtoToOEWeightCleanup: +?
+ProtoToOE: +?
+WGlide: +?
+GhMarker: +?
+GlideDeletion: +?
+Epenthesis: +?
+Orthography: +?
+Surface: +?
+
+
+=== BUCKET: i_umlaut_missing_true (4) ===
+
+--- flesh ---
+PROTO: *flaiskăz
+EXPECTED: flǣsċ
+OUTPUTS: flāsc
+
+ProtoInput: *f*l*ai*s*k*ă*z
+InitialKn: *f*l*ai*s*k*ă*z
+Palatalisation: *f*l*ai*s*k*ă*z
+ConsonantRules: *f*l*ai*s*k
+ProtoToOEWeakTail: *f*l*ā*s*k
+ProtoToOEWeightMarkers: *f*l*ā*s*k
+ProtoToOEApocope: *f*l*ā*s*k
+ProtoToOEWeightCleanup: *f*l*ā*s*k
+ProtoToOE: *f*l*ā*s*k
+WGlide: *f*l*ā*s*k
+GhMarker: *f*l*ā*s*k
+GlideDeletion: *f*l*ā*s*k
+Epenthesis: *f*l*ā*s*k
+Orthography: flāsc
+Surface: flāsc
+
+--- sea ---
+PROTO: *sai
+EXPECTED: sǣ
+OUTPUTS: sā
+
+ProtoInput: *s*ai
+InitialKn: *s*ai
+Palatalisation: *s*ai
+ConsonantRules: *s*ai
+ProtoToOEWeakTail: *s*ā
+ProtoToOEWeightMarkers: *s*ā
+ProtoToOEApocope: *s*ā
+ProtoToOEWeightCleanup: *s*ā
+ProtoToOE: *s*ā
+WGlide: *s*ā
+GhMarker: *s*ā
+GlideDeletion: *s*ā
+Epenthesis: *s*ā
+Orthography: sā
+Surface: sā
+
+--- strew ---
+PROTO: *strawjăną
+EXPECTED: strewian
+OUTPUTS: strowan
+
+ProtoInput: *s*t*r*a*w*j*ă*n*ą
+InitialKn: *s*t*r*a*w*j*ă*n*ą
+Palatalisation: *s*t*r*a*w*j*ă*n*ą
+ConsonantRules: *s*t*r*a*w*j*ă*n*ą
+ProtoToOEWeakTail: *s*t*r*o*w*j*ă*n
+ProtoToOEWeightMarkers: *s*t*r*o*w*j*ă*n
+ProtoToOEApocope: *s*t*r*o*w*j*ă*n
+ProtoToOEWeightCleanup: *s*t*r*o*w*j*ă*n
+ProtoToOE: *s*t*r*o*w*ă*n
+WGlide: *s*t*r*o*ʋ*ă*n
+GhMarker: *s*t*r*o*ʋ*ă*n
+GlideDeletion: *s*t*r*o*ă*n
+Epenthesis: *s*t*r*o*w*ă*n
+Orthography: strowan
+Surface: strowan
+
+--- whine ---
+PROTO: *wainōjăną
+EXPECTED: hwīnan
+OUTPUTS: wānēġan
+
+ProtoInput: *w*ai*n*ō*j*ă*n*ą
+InitialKn: *w*ai*n*ō*j*ă*n*ą
+Palatalisation: *w*ai*n*ō*j*ă*n*ą
+ConsonantRules: *w*ai*n*ō*j*ă*n*ą
+ProtoToOEWeakTail: *w*ā*n*ē*j*ă*n
+ProtoToOEWeightMarkers: *w*ā*n*ē*j*ă*n
+ProtoToOEApocope: *w*ā*n*ē*j*ă*n
+ProtoToOEWeightCleanup: *w*ā*n*ē*j*ă*n
+ProtoToOE: *w*ā*n*ē*j*ă*n
+WGlide: *ʋ*ā*n*ē*j*ă*n
+GhMarker: *ʋ*ā*n*ē*j*ă*n
+GlideDeletion: *ʋ*ā*n*ē*j*ă*n
+Epenthesis: *w*ā*n*ē*j*ă*n
+Orthography: wānēġan
+Surface: wānēġan
+
+
+=== BUCKET: fronting_missing_no_trigger (5) ===
+
+--- adder ---
+PROTO: *nadrō
+EXPECTED: nǣdre
+OUTPUTS: nadrō
+
+ProtoInput: *n*a*d*r*ō
+InitialKn: *n*a*d*r*ō
+Palatalisation: *n*a*d*r*ō
+ConsonantRules: *n*a*d*r*ō
+ProtoToOEWeakTail: *n*a*d*r*ō
+ProtoToOEWeightMarkers: *n*a*d*r*ō
+ProtoToOEApocope: *n*a*d*r*ō
+ProtoToOEWeightCleanup: *n*a*d*r*ō
+ProtoToOE: *n*a*d*r*ō
+WGlide: *n*a*d*r*ō
+GhMarker: *n*a*d*r*ō
+GlideDeletion: *n*a*d*r*ō
+Epenthesis: *n*a*d*r*ō
+Orthography: nadrō
+Surface: nadrō
+
+--- nightmare ---
+PROTO: *marōn
+EXPECTED: mære
+OUTPUTS: marōn
+
+ProtoInput: *m*a*r*ō*n
+InitialKn: *m*a*r*ō*n
+Palatalisation: *m*a*r*ō*n
+ConsonantRules: *m*a*r*ō*n
+ProtoToOEWeakTail: *m*ā*r*ō*n
+ProtoToOEWeightMarkers: *m*ā*r*ō*n
+ProtoToOEApocope: *m*ā*r*ō*n
+ProtoToOEWeightCleanup: *m*ā*r*ō*n
+ProtoToOE: *m*a*r*ō*n
+WGlide: *m*a*r*ō*n
+GhMarker: *m*a*r*ō*n
+GlideDeletion: *m*a*r*ō*n
+Epenthesis: *m*a*r*ō*n
+Orthography: marōn
+Surface: marōn
+
+--- rest ---
+PROTO: *rastō
+EXPECTED: ræst
+OUTPUTS: rastō
+
+ProtoInput: *r*a*s*t*ō
+InitialKn: *r*a*s*t*ō
+Palatalisation: *r*a*s*t*ō
+ConsonantRules: *r*a*s*t*ō
+ProtoToOEWeakTail: *r*a*s*t*ō
+ProtoToOEWeightMarkers: *r*a*s*t*ō
+ProtoToOEApocope: *r*a*s*t*ō
+ProtoToOEWeightCleanup: *r*a*s*t*ō
+ProtoToOE: *r*a*s*t*ō
+WGlide: *r*a*s*t*ō
+GhMarker: *r*a*s*t*ō
+GlideDeletion: *r*a*s*t*ō
+Epenthesis: *r*a*s*t*ō
+Orthography: rastō
+Surface: rastō
+
+--- sap ---
+PROTO: *sapōn
+EXPECTED: sæp
+OUTPUTS: sapōn
+
+ProtoInput: *s*a*p*ō*n
+InitialKn: *s*a*p*ō*n
+Palatalisation: *s*a*p*ō*n
+ConsonantRules: *s*a*p*ō*n
+ProtoToOEWeakTail: *s*ā*p*ō*n
+ProtoToOEWeightMarkers: *s*ā*p*ō*n
+ProtoToOEApocope: *s*ā*p*ō*n
+ProtoToOEWeightCleanup: *s*ā*p*ō*n
+ProtoToOE: *s*a*p*ō*n
+WGlide: *s*a*p*ō*n
+GhMarker: *s*a*p*ō*n
+GlideDeletion: *s*a*p*ō*n
+Epenthesis: *s*a*p*ō*n
+Orthography: sapōn
+Surface: sapōn
+
+--- tap ---
+PROTO: *tappōn
+EXPECTED: tæppa
+OUTPUTS: tappōn
+
+ProtoInput: *t*a*p*p*ō*n
+InitialKn: *t*a*p*p*ō*n
+Palatalisation: *t*a*p*p*ō*n
+ConsonantRules: *t*a*p*p*ō*n
+ProtoToOEWeakTail: *t*a*p*p*ō*n
+ProtoToOEWeightMarkers: *t*a*p*p*ō*n
+ProtoToOEApocope: *t*a*p*p*ō*n
+ProtoToOEWeightCleanup: *t*a*p*p*ō*n
+ProtoToOE: *t*a*p*p*ō*n
+WGlide: *t*a*p*p*ō*n
+GhMarker: *t*a*p*p*ō*n
+GlideDeletion: *t*a*p*p*ō*n
+Epenthesis: *t*a*p*p*ō*n
+Orthography: tappōn
+Surface: tappōn
+
+
+=== BUCKET: breaking_missing (19) ===
+
+--- breast ---
+PROTO: *brustz
+EXPECTED: brēost
+OUTPUTS: brust
+
+ProtoInput: *b*r*u*s*t*z
+InitialKn: *b*r*u*s*t*z
+Palatalisation: *b*r*u*s*t*z
+ConsonantRules: *b*r*u*s*t
+ProtoToOEWeakTail: *b*r*u*s*t
+ProtoToOEWeightMarkers: *b*r*u*s*t
+ProtoToOEApocope: *b*r*u*s*t
+ProtoToOEWeightCleanup: *b*r*u*s*t
+ProtoToOE: *b*r*u*s*t
+WGlide: *b*r*u*s*t
+GhMarker: *b*r*u*s*t
+GlideDeletion: *b*r*u*s*t
+Epenthesis: *b*r*u*s*t
+Orthography: brust
+Surface: brust
+
+--- dew ---
+PROTO: *dawwō
+EXPECTED: dēaw
+OUTPUTS: dawō
+
+ProtoInput: *d*a*w*w*ō
+InitialKn: *d*a*w*w*ō
+Palatalisation: *d*a*w*w*ō
+ConsonantRules: *d*a*w*w*ō
+ProtoToOEWeakTail: *d*ā*w*ō
+ProtoToOEWeightMarkers: *d*ā*w*ō
+ProtoToOEApocope: *d*ā*w*ō
+ProtoToOEWeightCleanup: *d*ā*w*ō
+ProtoToOE: *d*a*w*ō
+WGlide: *d*a*ʋ*ō
+GhMarker: *d*a*ʋ*ō
+GlideDeletion: *d*a*ō
+Epenthesis: *d*a*w*ō
+Orthography: dawō
+Surface: dawō
+
+--- four ---
+PROTO: *fedwōrez
+EXPECTED: fēower
+OUTPUTS: fedwōre
+
+ProtoInput: *f*e*d*w*ō*r*e*z
+InitialKn: *f*e*d*w*ō*r*e*z
+Palatalisation: *f*e*d*w*ō*r*e*z
+ConsonantRules: *f*e*d*w*ō*r*e
+ProtoToOEWeakTail: *f*e*d*w*ō*r*e
+ProtoToOEWeightMarkers: *f*e*d*w*ō*r*e
+ProtoToOEApocope: *f*e*d*w*ō*r*e
+ProtoToOEWeightCleanup: *f*e*d*w*ō*r*e
+ProtoToOE: *f*e*d*w*ō*r*e
+WGlide: *f*e*d*ʋ*ō*r*e
+GhMarker: *f*e*d*ʋ*ō*r*e
+GlideDeletion: *f*e*d*ʋ*ō*r*e
+Epenthesis: *f*e*d*w*ō*r*e
+Orthography: fedwōre
+Surface: fedwōre
+
+--- friend ---
+PROTO: *frijōndz
+EXPECTED: frēond
+OUTPUTS: friġōnd
+
+ProtoInput: *f*r*i*j*ō*n*d*z
+InitialKn: *f*r*i*j*ō*n*d*z
+Palatalisation: *f*r*i*j*ō*n*d*z
+ConsonantRules: *f*r*i*j*ō*n*d
+ProtoToOEWeakTail: *f*r*ī*j*ō*n*d
+ProtoToOEWeightMarkers: *f*r*ī*j*ō*n*d
+ProtoToOEApocope: *f*r*ī*j*ō*n*d
+ProtoToOEWeightCleanup: *f*r*ī*j*ō*n*d
+ProtoToOE: *f*r*i*j*ō*n*d
+WGlide: *f*r*i*j*ō*n*d
+GhMarker: *f*r*i*j*ō*n*d
+GlideDeletion: *f*r*i*j*ō*n*d
+Epenthesis: *f*r*i*j*ō*n*d
+Orthography: friġōnd
+Surface: friġōnd
+
+--- give ---
+PROTO: *gebăną
+EXPECTED: giefan
+OUTPUTS: ġeban
+
+ProtoInput: *g*e*b*ă*n*ą
+InitialKn: *g*e*b*ă*n*ą
+Palatalisation: *ʤ*e*b*ă*n*ą
+ConsonantRules: *ʤ*e*b*ă*n*ą
+ProtoToOEWeakTail: *ʤ*ē*b*ă*n
+ProtoToOEWeightMarkers: *ʤ*ē*b*ă*n
+ProtoToOEApocope: *ʤ*ē*b*ă*n
+ProtoToOEWeightCleanup: *ʤ*ē*b*ă*n
+ProtoToOE: *ʤ*e*b*ă*n
+WGlide: *ʤ*e*b*ă*n
+GhMarker: *ʤ*e*b*ă*n
+GlideDeletion: *ʤ*e*b*ă*n
+Epenthesis: *ʤ*e*b*ă*n
+Orthography: ġeban
+Surface: ġeban
+
+--- guest ---
+PROTO: *gastiz
+EXPECTED: appear
+OUTPUTS: ġeste
+
+ProtoInput: *g*a*s*t*i*z
+InitialKn: *g*a*s*t*i*z
+Palatalisation: *g*a*s*t*i*z
+ConsonantRules: *g*a*s*t*i
+ProtoToOEWeakTail: *g*e*s*t*e
+ProtoToOEWeightMarkers: *g*e*s*t*e
+ProtoToOEApocope: *g*e*s*t*e
+ProtoToOEWeightCleanup: *g*e*s*t*e
+ProtoToOE: *ʤ*e*s*t*e
+WGlide: *ʤ*e*s*t*e
+GhMarker: *ʤ*e*s*t*e
+GlideDeletion: *ʤ*e*s*t*e
+Epenthesis: *ʤ*e*s*t*e
+Orthography: ġeste
+Surface: ġeste
+
+--- hay ---
+PROTO: *xawwją
+EXPECTED: hīeġ
+OUTPUTS: howa
+
+ProtoInput: *x*a*w*w*j*ą
+InitialKn: *x*a*w*w*j*ą
+Palatalisation: *x*a*w*w*j*ą
+ConsonantRules: *x*a*w*w*j*ą
+ProtoToOEWeakTail: *x*o*w*j*ɔ̆
+ProtoToOEWeightMarkers: *x*o*w*j*ɔ̆
+ProtoToOEApocope: *x*o*w*j*ɔ̆
+ProtoToOEWeightCleanup: *x*o*w*j*ɔ̆
+ProtoToOE: *ç*o*w*ɔ̆
+WGlide: *ç*o*ʋ*ɔ̆
+GhMarker: *ç*o*ʋ*ɔ̆
+GlideDeletion: *ç*o*ɔ̆
+Epenthesis: *ç*o*w*ɔ̆
+Orthography: howŏ, howa
+Surface: howa
+
+--- hew ---
+PROTO: *xawwăną
+EXPECTED: hēawan
+OUTPUTS: hæwan
+
+ProtoInput: *x*a*w*w*ă*n*ą
+InitialKn: *x*a*w*w*ă*n*ą
+Palatalisation: *x*a*w*w*ă*n*ą
+ConsonantRules: *x*a*w*w*ă*n*ą
+ProtoToOEWeakTail: *x*ā*w*ă*n
+ProtoToOEWeightMarkers: *x*ā*w*ă*n
+ProtoToOEApocope: *x*ā*w*ă*n
+ProtoToOEWeightCleanup: *x*ā*w*ă*n
+ProtoToOE: *ç*æ*w*ă*n
+WGlide: *ç*æ*ʋ*ă*n
+GhMarker: *ç*æ*ʋ*ă*n
+GlideDeletion: *ç*æ*ă*n
+Epenthesis: *ç*æ*w*ă*n
+Orthography: hæwan
+Surface: hæwan
+
+--- lead ---
+PROTO: *laidjăną
+EXPECTED: lēad
+OUTPUTS: lǣdan
+
+ProtoInput: *l*ai*d*j*ă*n*ą
+InitialKn: *l*ai*d*j*ă*n*ą
+Palatalisation: *l*ai*d*j*ă*n*ą
+ConsonantRules: *l*ai*d*j*ă*n*ą
+ProtoToOEWeakTail: *l*ǣ*d*j*ă*n
+ProtoToOEWeightMarkers: *l*ǣ*d*j*ă*n
+ProtoToOEApocope: *l*ǣ*d*j*ă*n
+ProtoToOEWeightCleanup: *l*ǣ*d*j*ă*n
+ProtoToOE: *l*ǣ*d*ă*n
+WGlide: *l*ǣ*d*ă*n
+GhMarker: *l*ǣ*d*ă*n
+GlideDeletion: *l*ǣ*d*ă*n
+Epenthesis: *l*ǣ*d*ă*n
+Orthography: lǣdan
+Surface: lǣdan
+
+--- seven ---
+PROTO: *sebun
+EXPECTED: seofon
+OUTPUTS: sobun
+
+ProtoInput: *s*e*b*u*n
+InitialKn: *s*e*b*u*n
+Palatalisation: *s*e*b*u*n
+ConsonantRules: *s*e*b*u*n
+ProtoToOEWeakTail: *s*ē*b*u*n
+ProtoToOEWeightMarkers: *s*ē*b*u*n
+ProtoToOEApocope: *s*ē*b*u*n
+ProtoToOEWeightCleanup: *s*ē*b*u*n
+ProtoToOE: *s*o*b*u*n
+WGlide: *s*o*b*u*n
+GhMarker: *s*o*b*u*n
+GlideDeletion: *s*o*b*u*n
+Epenthesis: *s*o*b*u*n
+Orthography: sobun
+Surface: sobun
+
+--- shaft ---
+PROTO: *skaftą
+EXPECTED: sċeaft
+OUTPUTS: sċæfta
+
+ProtoInput: *s*k*a*f*t*ą
+InitialKn: *s*k*a*f*t*ą
+Palatalisation: *s*k*a*f*t*ą
+ConsonantRules: *s*k*a*f*t*ą
+ProtoToOEWeakTail: *s*k*a*f*t*ɔ̆
+ProtoToOEWeightMarkers: *s*k*a*f*t*ɔ̆
+ProtoToOEApocope: *s*k*a*f*t*ɔ̆
+ProtoToOEWeightCleanup: *s*k*a*f*t*ɔ̆
+ProtoToOE: *ʃ*æ*f*t*ɔ̆
+WGlide: *ʃ*æ*f*t*ɔ̆
+GhMarker: *ʃ*æ*f*t*ɔ̆
+GlideDeletion: *ʃ*æ*f*t*ɔ̆
+Epenthesis: *ʃ*æ*f*t*ɔ̆
+Orthography: sċæftŏ, sċæfta
+Surface: sċæfta
+
+--- shear ---
+PROTO: *skerăną
+EXPECTED: sċieran
+OUTPUTS: sċeran
+
+ProtoInput: *s*k*e*r*ă*n*ą
+InitialKn: *s*k*e*r*ă*n*ą
+Palatalisation: *ʃ*e*r*ă*n*ą
+ConsonantRules: *ʃ*e*r*ă*n*ą
+ProtoToOEWeakTail: *ʃ*ē*r*ă*n
+ProtoToOEWeightMarkers: *ʃ*ē*r*ă*n
+ProtoToOEApocope: *ʃ*ē*r*ă*n
+ProtoToOEWeightCleanup: *ʃ*ē*r*ă*n
+ProtoToOE: *ʃ*e*r*ă*n
+WGlide: *ʃ*e*r*ă*n
+GhMarker: *ʃ*e*r*ă*n
+GlideDeletion: *ʃ*e*r*ă*n
+Epenthesis: *ʃ*e*r*ă*n
+Orthography: sċeran
+Surface: sċeran
+
+--- sheath ---
+PROTO: *skaiθiz
+EXPECTED: sċēaþ
+OUTPUTS: sċǣþe
+
+ProtoInput: *s*k*ai*θ*i*z
+InitialKn: *s*k*ai*θ*i*z
+Palatalisation: *s*k*ai*θ*i*z
+ConsonantRules: *s*k*ai*θ*i
+ProtoToOEWeakTail: *s*k*ǣ*θ*e
+ProtoToOEWeightMarkers: *s*k*ǣ*θ*e
+ProtoToOEApocope: *s*k*ǣ*θ*e
+ProtoToOEWeightCleanup: *s*k*ǣ*θ*e
+ProtoToOE: *ʃ*ǣ*θ*e
+WGlide: *ʃ*ǣ*θ*e
+GhMarker: *ʃ*ǣ*θ*e
+GlideDeletion: *ʃ*ǣ*θ*e
+Epenthesis: *ʃ*ǣ*θ*e
+Orthography: sċǣþe, sċǣ*þe
+Surface: sċǣþe
+
+--- show ---
+PROTO: *skawōjăną
+EXPECTED: scēawian
+OUTPUTS: sċawēġan
+
+ProtoInput: *s*k*a*w*ō*j*ă*n*ą
+InitialKn: *s*k*a*w*ō*j*ă*n*ą
+Palatalisation: *s*k*a*w*ō*j*ă*n*ą
+ConsonantRules: *s*k*a*w*ō*j*ă*n*ą
+ProtoToOEWeakTail: *s*k*ā*w*ē*j*ă*n
+ProtoToOEWeightMarkers: *s*k*ā*w*ē*j*ă*n
+ProtoToOEApocope: *s*k*ā*w*ē*j*ă*n
+ProtoToOEWeightCleanup: *s*k*ā*w*ē*j*ă*n
+ProtoToOE: *ʃ*a*w*ē*j*ă*n
+WGlide: *ʃ*a*ʋ*ē*j*ă*n
+GhMarker: *ʃ*a*ʋ*ē*j*ă*n
+GlideDeletion: *ʃ*a*ē*j*ă*n
+Epenthesis: *ʃ*a*w*ē*j*ă*n
+Orthography: sċawēġan
+Surface: sċawēġan
+
+--- straw ---
+PROTO: *strawą
+EXPECTED: strēaw
+OUTPUTS: stræwa
+
+ProtoInput: *s*t*r*a*w*ą
+InitialKn: *s*t*r*a*w*ą
+Palatalisation: *s*t*r*a*w*ą
+ConsonantRules: *s*t*r*a*w*ą
+ProtoToOEWeakTail: *s*t*r*ā*w*ɔ̆
+ProtoToOEWeightMarkers: *s*t*r*ā*w*ɔ̆
+ProtoToOEApocope: *s*t*r*ā*w*ɔ̆
+ProtoToOEWeightCleanup: *s*t*r*ā*w*ɔ̆
+ProtoToOE: *s*t*r*æ*w*ɔ̆
+WGlide: *s*t*r*æ*ʋ*ɔ̆
+GhMarker: *s*t*r*æ*ʋ*ɔ̆
+GlideDeletion: *s*t*r*æ*ɔ̆
+Epenthesis: *s*t*r*æ*w*ɔ̆
+Orthography: stræwŏ, stræwa
+Surface: stræwa
+
+--- weasel ---
+PROTO: *weslon
+EXPECTED: weosule
+OUTPUTS: weslon
+
+ProtoInput: *w*e*s*l*o*n
+InitialKn: *w*e*s*l*o*n
+Palatalisation: *w*e*s*l*o*n
+ConsonantRules: *w*e*s*l*o*n
+ProtoToOEWeakTail: *w*e*s*l*o*n
+ProtoToOEWeightMarkers: *w*e*s*l*o*n
+ProtoToOEApocope: *w*e*s*l*o*n
+ProtoToOEWeightCleanup: *w*e*s*l*o*n
+ProtoToOE: *w*e*s*l*o*n
+WGlide: *ʋ*e*s*l*o*n
+GhMarker: *ʋ*e*s*l*o*n
+GlideDeletion: *ʋ*e*s*l*o*n
+Epenthesis: *w*e*s*l*o*n
+Orthography: weslon
+Surface: weslon
+
+--- year ---
+PROTO: *jērą
+EXPECTED: ġēar
+OUTPUTS: ġēra
+
+ProtoInput: *j*ē*r*ą
+InitialKn: *j*ē*r*ą
+Palatalisation: *j*ē*r*ą
+ConsonantRules: *j*ē*r*ą
+ProtoToOEWeakTail: *j*ē*r*ɔ̆
+ProtoToOEWeightMarkers: *j*ē*r*ɔ̆
+ProtoToOEApocope: *j*ē*r*ɔ̆
+ProtoToOEWeightCleanup: *j*ē*r*ɔ̆
+ProtoToOE: *j*ē*r*ɔ̆
+WGlide: *j*ē*r*ɔ̆
+GhMarker: *j*ē*r*ɔ̆
+GlideDeletion: *j*ē*r*ɔ̆
+Epenthesis: *j*ē*r*ɔ̆
+Orthography: ġērŏ, ġēra
+Surface: ġēra
+
+--- yoke ---
+PROTO: *juką
+EXPECTED: ġeoc
+OUTPUTS: ġuca
+
+ProtoInput: *j*u*k*ą
+InitialKn: *j*u*k*ą
+Palatalisation: *j*u*k*ą
+ConsonantRules: *j*u*k*ą
+ProtoToOEWeakTail: *j*ū*k*ɔ̆
+ProtoToOEWeightMarkers: *j*ū*k*ɔ̆
+ProtoToOEApocope: *j*ū*k*ɔ̆
+ProtoToOEWeightCleanup: *j*ū*k*ɔ̆
+ProtoToOE: *j*u*k*ɔ̆
+WGlide: *j*u*k*ɔ̆
+GhMarker: *j*u*k*ɔ̆
+GlideDeletion: *j*u*k*ɔ̆
+Epenthesis: *j*u*k*ɔ̆
+Orthography: ġucŏ, ġuca
+Surface: ġuca
+
+--- youth ---
+PROTO: *jugunθiz
+EXPECTED: ġeoguþ
+OUTPUTS: ġugyþe
+
+ProtoInput: *j*u*g*u*n*θ*i*z
+InitialKn: *j*u*g*u*n*θ*i*z
+Palatalisation: *j*u*g*u*n*θ*i*z
+ConsonantRules: *j*u*g*u*n*θ*i
+ProtoToOEWeakTail: *j*ū*g*y*θ*e
+ProtoToOEWeightMarkers: *j*ū*g*y*θ*e
+ProtoToOEApocope: *j*ū*g*y*θ*e
+ProtoToOEWeightCleanup: *j*ū*g*y*θ*e
+ProtoToOE: *j*u*g*y*θ*e
+WGlide: *j*u*g*y*θ*e
+GhMarker: *j*u*g*y*θ*e
+GlideDeletion: *j*u*g*y*θ*e
+Epenthesis: *j*u*g*y*θ*e
+Orthography: ġugyþe, ġugy*þe
+Surface: ġugyþe
+
+
+=== BUCKET: long_vowel_missing (2) ===
+
+--- fist ---
+PROTO: *funxwstiz
+EXPECTED: fȳst
+OUTPUTS: fyhwste
+
+ProtoInput: *f*u*n*x*w*s*t*i*z
+InitialKn: *f*u*n*x*w*s*t*i*z
+Palatalisation: *f*u*n*x*w*s*t*i*z
+ConsonantRules: *f*u*n*x*w*s*t*i
+ProtoToOEWeakTail: *f*y*x*w*s*t*e
+ProtoToOEWeightMarkers: *f*y*x*w*s*t*e
+ProtoToOEApocope: *f*y*x*w*s*t*e
+ProtoToOEWeightCleanup: *f*y*x*w*s*t*e
+ProtoToOE: *f*y*x*w*s*t*e
+WGlide: *f*y*x*ʋ*s*t*e
+GhMarker: *f*y*GH*ʋ*s*t*e
+GlideDeletion: *f*y*GH*ʋ*s*t*e
+Epenthesis: *f*y*x*w*s*t*e
+Orthography: fyhwste
+Surface: fyhwste
+
+--- ten ---
+PROTO: *texun
+EXPECTED: tīen
+OUTPUTS: teoun
+
+ProtoInput: *t*e*x*u*n
+InitialKn: *t*e*x*u*n
+Palatalisation: *t*e*x*u*n
+ConsonantRules: *t*e*x*u*n
+ProtoToOEWeakTail: *t*ē*x*u*n
+ProtoToOEWeightMarkers: *t*ē*x*u*n
+ProtoToOEApocope: *t*ē*x*u*n
+ProtoToOEWeightCleanup: *t*ē*x*u*n
+ProtoToOE: *t*eo*u*n
+WGlide: *t*eo*u*n
+GhMarker: *t*eo*u*n
+GlideDeletion: *t*eo*u*n
+Epenthesis: *t*eo*u*n
+Orthography: teoun
+Surface: teoun
+
+
+=== BUCKET: palatalization_missing (7) ===
+
+--- beech ---
+PROTO: *bōkō
+EXPECTED: bēċe
+OUTPUTS: bōcō
+
+ProtoInput: *b*ō*k*ō
+InitialKn: *b*ō*k*ō
+Palatalisation: *b*ō*k*ō
+ConsonantRules: *b*ō*k*ō
+ProtoToOEWeakTail: *b*u*k*ō
+ProtoToOEWeightMarkers: *b*u*k*ō
+ProtoToOEApocope: *b*u*k*ō
+ProtoToOEWeightCleanup: *b*u*k*ō
+ProtoToOE: *b*ō*k*ō
+WGlide: *b*ō*k*ō
+GhMarker: *b*ō*k*ō
+GlideDeletion: *b*ō*k*ō
+Epenthesis: *b*ō*k*ō
+Orthography: bōcō
+Surface: bōcō
+
+--- birth ---
+PROTO: *burdiz
+EXPECTED: ġebyrd
+OUTPUTS: byrde
+
+ProtoInput: *b*u*r*d*i*z
+InitialKn: *b*u*r*d*i*z
+Palatalisation: *b*u*r*d*i*z
+ConsonantRules: *b*u*r*d*i
+ProtoToOEWeakTail: *b*ē*r*d*e
+ProtoToOEWeightMarkers: *b*ē*r*d*e
+ProtoToOEApocope: *b*ē*r*d*e
+ProtoToOEWeightCleanup: *b*ē*r*d*e
+ProtoToOE: *b*y*r*d*e
+WGlide: *b*y*r*d*e
+GhMarker: *b*y*r*d*e
+GlideDeletion: *b*y*r*d*e
+Epenthesis: *b*y*r*d*e
+Orthography: byrde
+Surface: byrde
+
+--- drench ---
+PROTO: *dranką
+EXPECTED: drenċ
+OUTPUTS: drænca
+
+ProtoInput: *d*r*a*n*k*ą
+InitialKn: *d*r*a*n*k*ą
+Palatalisation: *d*r*a*n*k*ą
+ConsonantRules: *d*r*a*n*k*ą
+ProtoToOEWeakTail: *d*r*a*n*k*ɔ̆
+ProtoToOEWeightMarkers: *d*r*a*n*k*ɔ̆
+ProtoToOEApocope: *d*r*a*n*k*ɔ̆
+ProtoToOEWeightCleanup: *d*r*a*n*k*ɔ̆
+ProtoToOE: *d*r*æ*n*k*ɔ̆
+WGlide: *d*r*æ*n*k*ɔ̆
+GhMarker: *d*r*æ*n*k*ɔ̆
+GlideDeletion: *d*r*æ*n*k*ɔ̆
+Epenthesis: *d*r*æ*n*k*ɔ̆
+Orthography: dræncŏ, drænca
+Surface: drænca
+
+--- fly ---
+PROTO: *fleugăną
+EXPECTED: flȳġe
+OUTPUTS: flēogan
+
+ProtoInput: *f*l*eu*g*ă*n*ą
+InitialKn: *f*l*eu*g*ă*n*ą
+Palatalisation: *f*l*eu*g*ă*n*ą
+ConsonantRules: *f*l*eu*g*ă*n*ą
+ProtoToOEWeakTail: *f*l*ēo*g*ă*n
+ProtoToOEWeightMarkers: *f*l*ēo*g*ă*n
+ProtoToOEApocope: *f*l*ēo*g*ă*n
+ProtoToOEWeightCleanup: *f*l*ēo*g*ă*n
+ProtoToOE: *f*l*ēo*g*ă*n
+WGlide: *f*l*ēo*g*ă*n
+GhMarker: *f*l*ēo*g*ă*n
+GlideDeletion: *f*l*ēo*g*ă*n
+Epenthesis: *f*l*ēo*g*ă*n
+Orthography: flēogan
+Surface: flēogan
+
+--- honey ---
+PROTO: *xunăgą
+EXPECTED: huniġ
+OUTPUTS: hunaga
+
+ProtoInput: *x*u*n*ă*g*ą
+InitialKn: *x*u*n*ă*g*ą
+Palatalisation: *x*u*n*ă*g*ą
+ConsonantRules: *x*u*n*ă*g*ą
+ProtoToOEWeakTail: *x*ū*n*ă*g*ɔ̆
+ProtoToOEWeightMarkers: *x*ū*n*ă*g*ɔ̆
+ProtoToOEApocope: *x*ū*n*ă*g*ɔ̆
+ProtoToOEWeightCleanup: *x*ū*n*ă*g*ɔ̆
+ProtoToOE: *x*u*n*ă*g*ɔ̆
+WGlide: *x*u*n*ă*g*ɔ̆
+GhMarker: *x*u*n*ă*g*ɔ̆
+GlideDeletion: *x*u*n*ă*g*ɔ̆
+Epenthesis: *x*u*n*ă*g*ɔ̆
+Orthography: hunagŏ, hunaga
+Surface: hunaga
+
+--- think ---
+PROTO: *θankăz
+EXPECTED: þenċan
+OUTPUTS: þænc
+
+ProtoInput: *θ*a*n*k*ă*z
+InitialKn: *θ*a*n*k*ă*z
+Palatalisation: *θ*a*n*k*ă*z
+ConsonantRules: *θ*a*n*k
+ProtoToOEWeakTail: *θ*a*n*k
+ProtoToOEWeightMarkers: *θ*a*n*k
+ProtoToOEApocope: *θ*a*n*k
+ProtoToOEWeightCleanup: *θ*a*n*k
+ProtoToOE: *θ*æ*n*k
+WGlide: *θ*æ*n*k
+GhMarker: *θ*æ*n*k
+GlideDeletion: *θ*æ*n*k
+Epenthesis: *θ*æ*n*k
+Orthography: þænc, *þænc
+Surface: þænc
+
+--- withy ---
+PROTO: *waiθiz
+EXPECTED: wīþiġ
+OUTPUTS: wǣþe
+
+ProtoInput: *w*ai*θ*i*z
+InitialKn: *w*ai*θ*i*z
+Palatalisation: *w*ai*θ*i*z
+ConsonantRules: *w*ai*θ*i
+ProtoToOEWeakTail: *w*ǣ*θ*e
+ProtoToOEWeightMarkers: *w*ǣ*θ*e
+ProtoToOEApocope: *w*ǣ*θ*e
+ProtoToOEWeightCleanup: *w*ǣ*θ*e
+ProtoToOE: *w*ǣ*θ*e
+WGlide: *ʋ*ǣ*θ*e
+GhMarker: *ʋ*ǣ*θ*e
+GlideDeletion: *ʋ*ǣ*θ*e
+Epenthesis: *w*ǣ*θ*e
+Orthography: wǣþe, wǣ*þe
+Surface: wǣþe
+
+
+=== BUCKET: final_vowel_extra (74) ===
+
+--- barrow ---
+PROTO: *bergą
+EXPECTED: beorg
+OUTPUTS: beorga
+
+ProtoInput: *b*e*r*g*ą
+InitialKn: *b*e*r*g*ą
+Palatalisation: *b*e*r*g*ą
+ConsonantRules: *b*e*r*g*ą
+ProtoToOEWeakTail: *b*eo*r*g*ɔ̆
+ProtoToOEWeightMarkers: *b*eo*r*g*ɔ̆
+ProtoToOEApocope: *b*eo*r*g*ɔ̆
+ProtoToOEWeightCleanup: *b*eo*r*g*ɔ̆
+ProtoToOE: *b*eo*r*g*ɔ̆
+WGlide: *b*eo*r*g*ɔ̆
+GhMarker: *b*eo*r*g*ɔ̆
+GlideDeletion: *b*eo*r*g*ɔ̆
+Epenthesis: *b*eo*r*g*ɔ̆
+Orthography: beorgŏ, beorga
+Surface: beorga
+
+--- bast ---
+PROTO: *bastą
+EXPECTED: bæst
+OUTPUTS: bæsta
+
+ProtoInput: *b*a*s*t*ą
+InitialKn: *b*a*s*t*ą
+Palatalisation: *b*a*s*t*ą
+ConsonantRules: *b*a*s*t*ą
+ProtoToOEWeakTail: *b*a*s*t*ɔ̆
+ProtoToOEWeightMarkers: *b*a*s*t*ɔ̆
+ProtoToOEApocope: *b*a*s*t*ɔ̆
+ProtoToOEWeightCleanup: *b*a*s*t*ɔ̆
+ProtoToOE: *b*æ*s*t*ɔ̆
+WGlide: *b*æ*s*t*ɔ̆
+GhMarker: *b*æ*s*t*ɔ̆
+GlideDeletion: *b*æ*s*t*ɔ̆
+Epenthesis: *b*æ*s*t*ɔ̆
+Orthography: bæstŏ, bæsta
+Surface: bæsta
+
+--- bath ---
+PROTO: *baθą
+EXPECTED: bæþ
+OUTPUTS: bæþa
+
+ProtoInput: *b*a*θ*ą
+InitialKn: *b*a*θ*ą
+Palatalisation: *b*a*θ*ą
+ConsonantRules: *b*a*θ*ą
+ProtoToOEWeakTail: *b*ā*θ*ɔ̆
+ProtoToOEWeightMarkers: *b*ā*θ*ɔ̆
+ProtoToOEApocope: *b*ā*θ*ɔ̆
+ProtoToOEWeightCleanup: *b*ā*θ*ɔ̆
+ProtoToOE: *b*æ*θ*ɔ̆
+WGlide: *b*æ*θ*ɔ̆
+GhMarker: *b*æ*θ*ɔ̆
+GlideDeletion: *b*æ*θ*ɔ̆
+Epenthesis: *b*æ*θ*ɔ̆
+Orthography: bæþŏ, bæþa, bæ*þŏ, bæ*þa
+Surface: bæþa
+
+--- belly ---
+PROTO: *balgiz
+EXPECTED: bielġ
+OUTPUTS: bielġe
+
+ProtoInput: *b*a*l*g*i*z
+InitialKn: *b*a*l*g*i*z
+Palatalisation: *b*a*l*ʤ*i*z
+ConsonantRules: *b*a*l*ʤ*i
+ProtoToOEWeakTail: *b*e*l*ʤ*e
+ProtoToOEWeightMarkers: *b*e*l*ʤ*e
+ProtoToOEApocope: *b*e*l*ʤ*e
+ProtoToOEWeightCleanup: *b*e*l*ʤ*e
+ProtoToOE: *b*e*l*ʤ*e
+WGlide: *b*e*l*ʤ*e
+GhMarker: *b*e*l*ʤ*e
+GlideDeletion: *b*e*l*ʤ*e
+Epenthesis: *b*ie*l*ʤ*e
+Orthography: bielġe
+Surface: bielġe
+
+--- blood ---
+PROTO: *blōdą
+EXPECTED: blōd
+OUTPUTS: blōda
+
+ProtoInput: *b*l*ō*d*ą
+InitialKn: *b*l*ō*d*ą
+Palatalisation: *b*l*ō*d*ą
+ConsonantRules: *b*l*ō*d*ą
+ProtoToOEWeakTail: *b*l*ō*d*ɔ̆
+ProtoToOEWeightMarkers: *b*l*ō*d*ɔ̆
+ProtoToOEApocope: *b*l*ō*d*ɔ̆
+ProtoToOEWeightCleanup: *b*l*ō*d*ɔ̆
+ProtoToOE: *b*l*ō*d*ɔ̆
+WGlide: *b*l*ō*d*ɔ̆
+GhMarker: *b*l*ō*d*ɔ̆
+GlideDeletion: *b*l*ō*d*ɔ̆
+Epenthesis: *b*l*ō*d*ɔ̆
+Orthography: blōdŏ, blōda
+Surface: blōda
+
+--- board ---
+PROTO: *burdą
+EXPECTED: bord
+OUTPUTS: burda
+
+ProtoInput: *b*u*r*d*ą
+InitialKn: *b*u*r*d*ą
+Palatalisation: *b*u*r*d*ą
+ConsonantRules: *b*u*r*d*ą
+ProtoToOEWeakTail: *b*ō*r*d*ɔ̆
+ProtoToOEWeightMarkers: *b*ō*r*d*ɔ̆
+ProtoToOEApocope: *b*ō*r*d*ɔ̆
+ProtoToOEWeightCleanup: *b*ō*r*d*ɔ̆
+ProtoToOE: *b*u*r*d*ɔ̆
+WGlide: *b*u*r*d*ɔ̆
+GhMarker: *b*u*r*d*ɔ̆
+GlideDeletion: *b*u*r*d*ɔ̆
+Epenthesis: *b*u*r*d*ɔ̆
+Orthography: burdŏ, burda
+Surface: burda
+
+--- bower ---
+PROTO: *būrą
+EXPECTED: būr
+OUTPUTS: būra
+
+ProtoInput: *b*ū*r*ą
+InitialKn: *b*ū*r*ą
+Palatalisation: *b*ū*r*ą
+ConsonantRules: *b*ū*r*ą
+ProtoToOEWeakTail: *b*ū*r*ɔ̆
+ProtoToOEWeightMarkers: *b*ū*r*ɔ̆
+ProtoToOEApocope: *b*ū*r*ɔ̆
+ProtoToOEWeightCleanup: *b*ū*r*ɔ̆
+ProtoToOE: *b*ū*r*ɔ̆
+WGlide: *b*ū*r*ɔ̆
+GhMarker: *b*ū*r*ɔ̆
+GlideDeletion: *b*ū*r*ɔ̆
+Epenthesis: *b*ū*r*ɔ̆
+Orthography: būrŏ, būra
+Surface: būra
+
+--- bread ---
+PROTO: *braudą
+EXPECTED: brēad
+OUTPUTS: brēada
+
+ProtoInput: *b*r*au*d*ą
+InitialKn: *b*r*au*d*ą
+Palatalisation: *b*r*au*d*ą
+ConsonantRules: *b*r*au*d*ą
+ProtoToOEWeakTail: *b*r*ēa*d*ɔ̆
+ProtoToOEWeightMarkers: *b*r*ēa*d*ɔ̆
+ProtoToOEApocope: *b*r*ēa*d*ɔ̆
+ProtoToOEWeightCleanup: *b*r*ēa*d*ɔ̆
+ProtoToOE: *b*r*ēa*d*ɔ̆
+WGlide: *b*r*ēa*d*ɔ̆
+GhMarker: *b*r*ēa*d*ɔ̆
+GlideDeletion: *b*r*ēa*d*ɔ̆
+Epenthesis: *b*r*ēa*d*ɔ̆
+Orthography: brēadŏ, brēada
+Surface: brēada
+
+--- bride ---
+PROTO: *brūdiz
+EXPECTED: brȳd
+OUTPUTS: brȳde
+
+ProtoInput: *b*r*ū*d*i*z
+InitialKn: *b*r*ū*d*i*z
+Palatalisation: *b*r*ū*d*i*z
+ConsonantRules: *b*r*ū*d*i
+ProtoToOEWeakTail: *b*r*ȳ*d*e
+ProtoToOEWeightMarkers: *b*r*ȳ*d*e
+ProtoToOEApocope: *b*r*ȳ*d*e
+ProtoToOEWeightCleanup: *b*r*ȳ*d*e
+ProtoToOE: *b*r*ȳ*d*e
+WGlide: *b*r*ȳ*d*e
+GhMarker: *b*r*ȳ*d*e
+GlideDeletion: *b*r*ȳ*d*e
+Epenthesis: *b*r*ȳ*d*e
+Orthography: brȳde
+Surface: brȳde
+
+--- craft ---
+PROTO: *kraftiz
+EXPECTED: cræft
+OUTPUTS: crefte
+
+ProtoInput: *k*r*a*f*t*i*z
+InitialKn: *k*r*a*f*t*i*z
+Palatalisation: *k*r*a*f*t*i*z
+ConsonantRules: *k*r*a*f*t*i
+ProtoToOEWeakTail: *k*r*e*f*t*e
+ProtoToOEWeightMarkers: *k*r*e*f*t*e
+ProtoToOEApocope: *k*r*e*f*t*e
+ProtoToOEWeightCleanup: *k*r*e*f*t*e
+ProtoToOE: *k*r*e*f*t*e
+WGlide: *k*r*e*f*t*e
+GhMarker: *k*r*e*f*t*e
+GlideDeletion: *k*r*e*f*t*e
+Epenthesis: *k*r*e*f*t*e
+Orthography: crefte
+Surface: crefte
+
+--- deal ---
+PROTO: *dailiz
+EXPECTED: dǣl
+OUTPUTS: dǣle
+
+ProtoInput: *d*ai*l*i*z
+InitialKn: *d*ai*l*i*z
+Palatalisation: *d*ai*l*i*z
+ConsonantRules: *d*ai*l*i
+ProtoToOEWeakTail: *d*ǣ*l*e
+ProtoToOEWeightMarkers: *d*ǣ*l*e
+ProtoToOEApocope: *d*ǣ*l*e
+ProtoToOEWeightCleanup: *d*ǣ*l*e
+ProtoToOE: *d*ǣ*l*e
+WGlide: *d*ǣ*l*e
+GhMarker: *d*ǣ*l*e
+GlideDeletion: *d*ǣ*l*e
+Epenthesis: *d*ǣ*l*e
+Orthography: dǣle
+Surface: dǣle
+
+--- deed ---
+PROTO: *dēdiz
+EXPECTED: dēd
+OUTPUTS: dēde
+
+ProtoInput: *d*ē*d*i*z
+InitialKn: *d*ē*d*i*z
+Palatalisation: *d*ē*d*i*z
+ConsonantRules: *d*ē*d*i
+ProtoToOEWeakTail: *d*ē*d*e
+ProtoToOEWeightMarkers: *d*ē*d*e
+ProtoToOEApocope: *d*ē*d*e
+ProtoToOEWeightCleanup: *d*ē*d*e
+ProtoToOE: *d*ē*d*e
+WGlide: *d*ē*d*e
+GhMarker: *d*ē*d*e
+GlideDeletion: *d*ē*d*e
+Epenthesis: *d*ē*d*e
+Orthography: dēde
+Surface: dēde
+
+--- deer ---
+PROTO: *deuzą
+EXPECTED: dēor
+OUTPUTS: dēora
+
+ProtoInput: *d*eu*z*ą
+InitialKn: *d*eu*z*ą
+Palatalisation: *d*eu*z*ą
+ConsonantRules: *d*eu*r*ą
+ProtoToOEWeakTail: *d*ēo*r*ɔ̆
+ProtoToOEWeightMarkers: *d*ēo*r*ɔ̆
+ProtoToOEApocope: *d*ēo*r*ɔ̆
+ProtoToOEWeightCleanup: *d*ēo*r*ɔ̆
+ProtoToOE: *d*ēo*r*ɔ̆
+WGlide: *d*ēo*r*ɔ̆
+GhMarker: *d*ēo*r*ɔ̆
+GlideDeletion: *d*ēo*r*ɔ̆
+Epenthesis: *d*ēo*r*ɔ̆
+Orthography: dēorŏ, dēora
+Surface: dēora
+
+--- flax ---
+PROTO: *flaxsą
+EXPECTED: fleax
+OUTPUTS: fleahsa
+
+ProtoInput: *f*l*a*x*s*ą
+InitialKn: *f*l*a*x*s*ą
+Palatalisation: *f*l*a*x*s*ą
+ConsonantRules: *f*l*a*x*s*ą
+ProtoToOEWeakTail: *f*l*ēa*x*s*ɔ̆, *f*l*ea*x*s*ɔ̆
+ProtoToOEWeightMarkers: *f*l*ēa*x*s*ɔ̆, *f*l*ea*x*s*ɔ̆
+ProtoToOEApocope: *f*l*ea*x*s*ɔ̆, *f*l*ēa*x*s*ɔ̆
+ProtoToOEWeightCleanup: *f*l*ea*x*s*ɔ̆, *f*l*ēa*x*s*ɔ̆
+ProtoToOE: *f*l*ea*x*s*ɔ̆
+WGlide: *f*l*ea*x*s*ɔ̆
+GhMarker: *f*l*ea*GH*s*ɔ̆
+GlideDeletion: *f*l*ea*GH*s*ɔ̆
+Epenthesis: *f*l*ea*x*s*ɔ̆
+Orthography: fleahsŏ, fleahsa
+Surface: fleahsa
+
+--- fodder ---
+PROTO: *fōdrą
+EXPECTED: fōdor
+OUTPUTS: fōdra
+
+ProtoInput: *f*ō*d*r*ą
+InitialKn: *f*ō*d*r*ą
+Palatalisation: *f*ō*d*r*ą
+ConsonantRules: *f*ō*d*r*ą
+ProtoToOEWeakTail: *f*ō*d*r*ɔ̆
+ProtoToOEWeightMarkers: *f*ō*d*r*ɔ̆
+ProtoToOEApocope: *f*ō*d*r*ɔ̆
+ProtoToOEWeightCleanup: *f*ō*d*r*ɔ̆
+ProtoToOE: *f*ō*d*r*ɔ̆
+WGlide: *f*ō*d*r*ɔ̆
+GhMarker: *f*ō*d*r*ɔ̆
+GlideDeletion: *f*ō*d*r*ɔ̆
+Epenthesis: *f*ō*d*r*ɔ̆
+Orthography: fōdrŏ, fōdra
+Surface: fōdra
+
+--- folk ---
+PROTO: *fulką
+EXPECTED: folc
+OUTPUTS: fulca
+
+ProtoInput: *f*u*l*k*ą
+InitialKn: *f*u*l*k*ą
+Palatalisation: *f*u*l*k*ą
+ConsonantRules: *f*u*l*k*ą
+ProtoToOEWeakTail: *f*u*l*k*ɔ̆
+ProtoToOEWeightMarkers: *f*u*l*k*ɔ̆
+ProtoToOEApocope: *f*u*l*k*ɔ̆
+ProtoToOEWeightCleanup: *f*u*l*k*ɔ̆
+ProtoToOE: *f*u*l*k*ɔ̆
+WGlide: *f*u*l*k*ɔ̆
+GhMarker: *f*u*l*k*ɔ̆
+GlideDeletion: *f*u*l*k*ɔ̆
+Epenthesis: *f*u*l*k*ɔ̆
+Orthography: fulcŏ, fulca
+Surface: fulca
+
+--- frost ---
+PROTO: *frustą
+EXPECTED: forst
+OUTPUTS: frusta
+
+ProtoInput: *f*r*u*s*t*ą
+InitialKn: *f*r*u*s*t*ą
+Palatalisation: *f*r*u*s*t*ą
+ConsonantRules: *f*r*u*s*t*ą
+ProtoToOEWeakTail: *f*r*u*s*t*ɔ̆
+ProtoToOEWeightMarkers: *f*r*u*s*t*ɔ̆
+ProtoToOEApocope: *f*r*u*s*t*ɔ̆
+ProtoToOEWeightCleanup: *f*r*u*s*t*ɔ̆
+ProtoToOE: *f*r*u*s*t*ɔ̆
+WGlide: *f*r*u*s*t*ɔ̆
+GhMarker: *f*r*u*s*t*ɔ̆
+GlideDeletion: *f*r*u*s*t*ɔ̆
+Epenthesis: *f*r*u*s*t*ɔ̆
+Orthography: frustŏ, frusta
+Surface: frusta
+
+--- furrow ---
+PROTO: *furxō
+EXPECTED: furh
+OUTPUTS: furhō
+
+ProtoInput: *f*u*r*x*ō
+InitialKn: *f*u*r*x*ō
+Palatalisation: *f*u*r*x*ō
+ConsonantRules: *f*u*r*x*ō
+ProtoToOEWeakTail: *f*ō*r*x*ō
+ProtoToOEWeightMarkers: *f*ō*r*x*ō
+ProtoToOEApocope: *f*ō*r*x*ō
+ProtoToOEWeightCleanup: *f*ō*r*x*ō
+ProtoToOE: *f*u*r*x*ō
+WGlide: *f*u*r*x*ō
+GhMarker: *f*u*r*x*ō
+GlideDeletion: *f*u*r*x*ō
+Epenthesis: *f*u*r*x*ō
+Orthography: furhō
+Surface: furhō
+
+--- gift ---
+PROTO: *geftiz
+EXPECTED: ġift
+OUTPUTS: ġifte
+
+ProtoInput: *g*e*f*t*i*z
+InitialKn: *g*e*f*t*i*z
+Palatalisation: *ʤ*e*f*t*i*z
+ConsonantRules: *ʤ*e*f*t*i
+ProtoToOEWeakTail: *ʤ*i*f*t*e
+ProtoToOEWeightMarkers: *ʤ*i*f*t*e
+ProtoToOEApocope: *ʤ*i*f*t*e
+ProtoToOEWeightCleanup: *ʤ*i*f*t*e
+ProtoToOE: *ʤ*i*f*t*e
+WGlide: *ʤ*i*f*t*e
+GhMarker: *ʤ*i*f*t*e
+GlideDeletion: *ʤ*i*f*t*e
+Epenthesis: *ʤ*i*f*t*e
+Orthography: ġifte
+Surface: ġifte
+
+--- gold ---
+PROTO: *gulθą
+EXPECTED: gold
+OUTPUTS: gulþa
+
+ProtoInput: *g*u*l*θ*ą
+InitialKn: *g*u*l*θ*ą
+Palatalisation: *g*u*l*θ*ą
+ConsonantRules: *g*u*l*θ*ą
+ProtoToOEWeakTail: *g*u*l*θ*ɔ̆
+ProtoToOEWeightMarkers: *g*u*l*θ*ɔ̆
+ProtoToOEApocope: *g*u*l*θ*ɔ̆
+ProtoToOEWeightCleanup: *g*u*l*θ*ɔ̆
+ProtoToOE: *g*u*l*θ*ɔ̆
+WGlide: *g*u*l*θ*ɔ̆
+GhMarker: *g*u*l*θ*ɔ̆
+GlideDeletion: *g*u*l*θ*ɔ̆
+Epenthesis: *g*u*l*θ*ɔ̆
+Orthography: gulþŏ, gulþa, gul*þŏ, gul*þa
+Surface: gulþa
+
+--- grass ---
+PROTO: *grasą
+EXPECTED: græs
+OUTPUTS: græsa
+
+ProtoInput: *g*r*a*s*ą
+InitialKn: *g*r*a*s*ą
+Palatalisation: *g*r*a*s*ą
+ConsonantRules: *g*r*a*s*ą
+ProtoToOEWeakTail: *g*r*ā*s*ɔ̆
+ProtoToOEWeightMarkers: *g*r*ā*s*ɔ̆
+ProtoToOEApocope: *g*r*ā*s*ɔ̆
+ProtoToOEWeightCleanup: *g*r*ā*s*ɔ̆
+ProtoToOE: *g*r*æ*s*ɔ̆
+WGlide: *g*r*æ*s*ɔ̆
+GhMarker: *g*r*æ*s*ɔ̆
+GlideDeletion: *g*r*æ*s*ɔ̆
+Epenthesis: *g*r*æ*s*ɔ̆
+Orthography: græsŏ, græsa
+Surface: græsa
+
+--- hail ---
+PROTO: *xaglą
+EXPECTED: hæġl
+OUTPUTS: hæġla
+
+ProtoInput: *x*a*g*l*ą
+InitialKn: *x*a*g*l*ą
+Palatalisation: *x*a*g*l*ą
+ConsonantRules: *x*a*g*l*ą
+ProtoToOEWeakTail: *x*a*g*l*ɔ̆
+ProtoToOEWeightMarkers: *x*a*g*l*ɔ̆
+ProtoToOEApocope: *x*a*g*l*ɔ̆
+ProtoToOEWeightCleanup: *x*a*g*l*ɔ̆
+ProtoToOE: *ç*æ*ʤ*l*ɔ̆
+WGlide: *ç*æ*ʤ*l*ɔ̆
+GhMarker: *ç*æ*ʤ*l*ɔ̆
+GlideDeletion: *ç*æ*ʤ*l*ɔ̆
+Epenthesis: *ç*æ*ʤ*l*ɔ̆
+Orthography: hæġlŏ, hæġla
+Surface: hæġla
+
+--- hall ---
+PROTO: *xallō
+EXPECTED: heall
+OUTPUTS: heallō
+
+ProtoInput: *x*a*l*l*ō
+InitialKn: *x*a*l*l*ō
+Palatalisation: *x*a*l*l*ō
+ConsonantRules: *x*a*l*l*ō
+ProtoToOEWeakTail: *x*ēa*l*l*ō, *x*ea*l*l*ō
+ProtoToOEWeightMarkers: *x*ēa*l*l*ō, *x*ea*l*l*ō
+ProtoToOEApocope: *x*ea*l*l*ō, *x*ēa*l*l*ō
+ProtoToOEWeightCleanup: *x*ea*l*l*ō, *x*ēa*l*l*ō
+ProtoToOE: *ç*ea*l*l*ō
+WGlide: *ç*ea*l*l*ō
+GhMarker: *ç*ea*l*l*ō
+GlideDeletion: *ç*ea*l*l*ō
+Epenthesis: *ç*ea*l*l*ō
+Orthography: heallō
+Surface: heallō
+
+--- head ---
+PROTO: *xaubudą
+EXPECTED: hēafod
+OUTPUTS: hēabuda
+
+ProtoInput: *x*au*b*u*d*ą
+InitialKn: *x*au*b*u*d*ą
+Palatalisation: *x*au*b*u*d*ą
+ConsonantRules: *x*au*b*u*d*ą
+ProtoToOEWeakTail: *x*ēa*b*ū*d*ɔ̆
+ProtoToOEWeightMarkers: *x*ēa*b*ū*d*ɔ̆
+ProtoToOEApocope: *x*ēa*b*ū*d*ɔ̆
+ProtoToOEWeightCleanup: *x*ēa*b*ū*d*ɔ̆
+ProtoToOE: *ç*ēa*b*u*d*ɔ̆
+WGlide: *ç*ēa*b*u*d*ɔ̆
+GhMarker: *ç*ēa*b*u*d*ɔ̆
+GlideDeletion: *ç*ēa*b*u*d*ɔ̆
+Epenthesis: *ç*ēa*b*u*d*ɔ̆
+Orthography: hēabudŏ, hēabuda
+Surface: hēabuda
+
+--- heath ---
+PROTO: *xaiθiz
+EXPECTED: hǣþ
+OUTPUTS: hǣþe
+
+ProtoInput: *x*ai*θ*i*z
+InitialKn: *x*ai*θ*i*z
+Palatalisation: *x*ai*θ*i*z
+ConsonantRules: *x*ai*θ*i
+ProtoToOEWeakTail: *x*ǣ*θ*e
+ProtoToOEWeightMarkers: *x*ǣ*θ*e
+ProtoToOEApocope: *x*ǣ*θ*e
+ProtoToOEWeightCleanup: *x*ǣ*θ*e
+ProtoToOE: *x*ǣ*θ*e
+WGlide: *x*ǣ*θ*e
+GhMarker: *x*ǣ*θ*e
+GlideDeletion: *x*ǣ*θ*e
+Epenthesis: *x*ǣ*θ*e
+Orthography: hǣþe, hǣ*þe
+Surface: hǣþe
+
+--- help ---
+PROTO: *xelpō
+EXPECTED: help
+OUTPUTS: heolpō
+
+ProtoInput: *x*e*l*p*ō
+InitialKn: *x*e*l*p*ō
+Palatalisation: *x*e*l*p*ō
+ConsonantRules: *x*e*l*p*ō
+ProtoToOEWeakTail: *x*eo*l*p*ō
+ProtoToOEWeightMarkers: *x*eo*l*p*ō
+ProtoToOEApocope: *x*eo*l*p*ō
+ProtoToOEWeightCleanup: *x*eo*l*p*ō
+ProtoToOE: *ç*eo*l*p*ō
+WGlide: *ç*eo*l*p*ō
+GhMarker: *ç*eo*l*p*ō
+GlideDeletion: *ç*eo*l*p*ō
+Epenthesis: *ç*eo*l*p*ō
+Orthography: heolpō
+Surface: heolpō
+
+--- herd ---
+PROTO: *xerdō
+EXPECTED: hierd
+OUTPUTS: heordō
+
+ProtoInput: *x*e*r*d*ō
+InitialKn: *x*e*r*d*ō
+Palatalisation: *x*e*r*d*ō
+ConsonantRules: *x*e*r*d*ō
+ProtoToOEWeakTail: *x*eo*r*d*ō
+ProtoToOEWeightMarkers: *x*eo*r*d*ō
+ProtoToOEApocope: *x*eo*r*d*ō
+ProtoToOEWeightCleanup: *x*eo*r*d*ō
+ProtoToOE: *ç*eo*r*d*ō
+WGlide: *ç*eo*r*d*ō
+GhMarker: *ç*eo*r*d*ō
+GlideDeletion: *ç*eo*r*d*ō
+Epenthesis: *ç*eo*r*d*ō
+Orthography: heordō
+Surface: heordō
+
+--- hoard ---
+PROTO: *xuzdą
+EXPECTED: hord
+OUTPUTS: hurda
+
+ProtoInput: *x*u*z*d*ą
+InitialKn: *x*u*z*d*ą
+Palatalisation: *x*u*z*d*ą
+ConsonantRules: *x*u*r*d*ą
+ProtoToOEWeakTail: *x*ō*r*d*ɔ̆
+ProtoToOEWeightMarkers: *x*ō*r*d*ɔ̆
+ProtoToOEApocope: *x*ō*r*d*ɔ̆
+ProtoToOEWeightCleanup: *x*ō*r*d*ɔ̆
+ProtoToOE: *x*u*r*d*ɔ̆
+WGlide: *x*u*r*d*ɔ̆
+GhMarker: *x*u*r*d*ɔ̆
+GlideDeletion: *x*u*r*d*ɔ̆
+Epenthesis: *x*u*r*d*ɔ̆
+Orthography: hurdŏ, hurda
+Surface: hurda
+
+--- knee ---
+PROTO: *knewą
+EXPECTED: cnēow
+OUTPUTS: cnēowa
+
+ProtoInput: *k*n*e*w*ą
+InitialKn: *Kn*e*w*ą
+Palatalisation: *Kn*e*w*ą
+ConsonantRules: *Kn*e*w*ą
+ProtoToOEWeakTail: *Kn*ēo*w*ɔ̆
+ProtoToOEWeightMarkers: *Kn*ēo*w*ɔ̆
+ProtoToOEApocope: *Kn*ēo*w*ɔ̆
+ProtoToOEWeightCleanup: *Kn*ēo*w*ɔ̆
+ProtoToOE: *Kn*ēo*w*ɔ̆
+WGlide: *Kn*ēo*ʋ*ɔ̆
+GhMarker: *Kn*ēo*ʋ*ɔ̆
+GlideDeletion: *Kn*ēo*ɔ̆
+Epenthesis: *k*n*ēo*w*ɔ̆
+Orthography: cnēowŏ, cnēowa
+Surface: cnēowa
+
+--- land ---
+PROTO: *landą
+EXPECTED: land
+OUTPUTS: lænda
+
+ProtoInput: *l*a*n*d*ą
+InitialKn: *l*a*n*d*ą
+Palatalisation: *l*a*n*d*ą
+ConsonantRules: *l*a*n*d*ą
+ProtoToOEWeakTail: *l*a*n*d*ɔ̆
+ProtoToOEWeightMarkers: *l*a*n*d*ɔ̆
+ProtoToOEApocope: *l*a*n*d*ɔ̆
+ProtoToOEWeightCleanup: *l*a*n*d*ɔ̆
+ProtoToOE: *l*æ*n*d*ɔ̆
+WGlide: *l*æ*n*d*ɔ̆
+GhMarker: *l*æ*n*d*ɔ̆
+GlideDeletion: *l*æ*n*d*ɔ̆
+Epenthesis: *l*æ*n*d*ɔ̆
+Orthography: lændŏ, lænda
+Surface: lænda
+
+--- leaf ---
+PROTO: *laubą
+EXPECTED: lēaf
+OUTPUTS: lēaba
+
+ProtoInput: *l*au*b*ą
+InitialKn: *l*au*b*ą
+Palatalisation: *l*au*b*ą
+ConsonantRules: *l*au*b*ą
+ProtoToOEWeakTail: *l*ēa*b*ɔ̆
+ProtoToOEWeightMarkers: *l*ēa*b*ɔ̆
+ProtoToOEApocope: *l*ēa*b*ɔ̆
+ProtoToOEWeightCleanup: *l*ēa*b*ɔ̆
+ProtoToOE: *l*ēa*b*ɔ̆
+WGlide: *l*ēa*b*ɔ̆
+GhMarker: *l*ēa*b*ɔ̆
+GlideDeletion: *l*ēa*b*ɔ̆
+Epenthesis: *l*ēa*b*ɔ̆
+Orthography: lēabŏ, lēaba
+Surface: lēaba
+
+--- leather ---
+PROTO: *leθrą
+EXPECTED: leþer
+OUTPUTS: leþra
+
+ProtoInput: *l*e*θ*r*ą
+InitialKn: *l*e*θ*r*ą
+Palatalisation: *l*e*θ*r*ą
+ConsonantRules: *l*e*θ*r*ą
+ProtoToOEWeakTail: *l*e*θ*r*ɔ̆
+ProtoToOEWeightMarkers: *l*e*θ*r*ɔ̆
+ProtoToOEApocope: *l*e*θ*r*ɔ̆
+ProtoToOEWeightCleanup: *l*e*θ*r*ɔ̆
+ProtoToOE: *l*e*θ*r*ɔ̆
+WGlide: *l*e*θ*r*ɔ̆
+GhMarker: *l*e*θ*r*ɔ̆
+GlideDeletion: *l*e*θ*r*ɔ̆
+Epenthesis: *l*e*θ*r*ɔ̆
+Orthography: leþrŏ, leþra, le*þrŏ, le*þra
+Surface: leþra
+
+--- life ---
+PROTO: *lībą
+EXPECTED: līf
+OUTPUTS: lība
+
+ProtoInput: *l*ī*b*ą
+InitialKn: *l*ī*b*ą
+Palatalisation: *l*ī*b*ą
+ConsonantRules: *l*ī*b*ą
+ProtoToOEWeakTail: *l*ī*b*ɔ̆
+ProtoToOEWeightMarkers: *l*ī*b*ɔ̆
+ProtoToOEApocope: *l*ī*b*ɔ̆
+ProtoToOEWeightCleanup: *l*ī*b*ɔ̆
+ProtoToOE: *l*ī*b*ɔ̆
+WGlide: *l*ī*b*ɔ̆
+GhMarker: *l*ī*b*ɔ̆
+GlideDeletion: *l*ī*b*ɔ̆
+Epenthesis: *l*ī*b*ɔ̆
+Orthography: lībŏ, lība
+Surface: lība
+
+--- liver ---
+PROTO: *librō
+EXPECTED: lifer
+OUTPUTS: librō
+
+ProtoInput: *l*i*b*r*ō
+InitialKn: *l*i*b*r*ō
+Palatalisation: *l*i*b*r*ō
+ConsonantRules: *l*i*b*r*ō
+ProtoToOEWeakTail: *l*i*b*r*ō
+ProtoToOEWeightMarkers: *l*i*b*r*ō
+ProtoToOEApocope: *l*i*b*r*ō
+ProtoToOEWeightCleanup: *l*i*b*r*ō
+ProtoToOE: *l*i*b*r*ō
+WGlide: *l*i*b*r*ō
+GhMarker: *l*i*b*r*ō
+GlideDeletion: *l*i*b*r*ō
+Epenthesis: *l*i*b*r*ō
+Orthography: librō
+Surface: librō
+
+--- lock ---
+PROTO: *luką
+EXPECTED: loc
+OUTPUTS: luca
+
+ProtoInput: *l*u*k*ą
+InitialKn: *l*u*k*ą
+Palatalisation: *l*u*k*ą
+ConsonantRules: *l*u*k*ą
+ProtoToOEWeakTail: *l*ū*k*ɔ̆
+ProtoToOEWeightMarkers: *l*ū*k*ɔ̆
+ProtoToOEApocope: *l*ū*k*ɔ̆
+ProtoToOEWeightCleanup: *l*ū*k*ɔ̆
+ProtoToOE: *l*u*k*ɔ̆
+WGlide: *l*u*k*ɔ̆
+GhMarker: *l*u*k*ɔ̆
+GlideDeletion: *l*u*k*ɔ̆
+Epenthesis: *l*u*k*ɔ̆
+Orthography: lucŏ, luca
+Surface: luca
+
+--- lye ---
+PROTO: *laugō
+EXPECTED: lēah
+OUTPUTS: lēagō
+
+ProtoInput: *l*au*g*ō
+InitialKn: *l*au*g*ō
+Palatalisation: *l*au*g*ō
+ConsonantRules: *l*au*g*ō
+ProtoToOEWeakTail: *l*ēa*g*ō
+ProtoToOEWeightMarkers: *l*ēa*g*ō
+ProtoToOEApocope: *l*ēa*g*ō
+ProtoToOEWeightCleanup: *l*ēa*g*ō
+ProtoToOE: *l*ēa*g*ō
+WGlide: *l*ēa*g*ō
+GhMarker: *l*ēa*g*ō
+GlideDeletion: *l*ēa*g*ō
+Epenthesis: *l*ēa*g*ō
+Orthography: lēagō
+Surface: lēagō
+
+--- meal ---
+PROTO: *mēlą
+EXPECTED: mǣl
+OUTPUTS: mēla
+
+ProtoInput: *m*ē*l*ą
+InitialKn: *m*ē*l*ą
+Palatalisation: *m*ē*l*ą
+ConsonantRules: *m*ē*l*ą
+ProtoToOEWeakTail: *m*ē*l*ɔ̆
+ProtoToOEWeightMarkers: *m*ē*l*ɔ̆
+ProtoToOEApocope: *m*ē*l*ɔ̆
+ProtoToOEWeightCleanup: *m*ē*l*ɔ̆
+ProtoToOE: *m*ē*l*ɔ̆
+WGlide: *m*ē*l*ɔ̆
+GhMarker: *m*ē*l*ɔ̆
+GlideDeletion: *m*ē*l*ɔ̆
+Epenthesis: *m*ē*l*ɔ̆
+Orthography: mēlŏ, mēla
+Surface: mēla
+
+--- meed ---
+PROTO: *mizdō
+EXPECTED: mēd
+OUTPUTS: mierdō
+
+ProtoInput: *m*i*z*d*ō
+InitialKn: *m*i*z*d*ō
+Palatalisation: *m*i*z*d*ō
+ConsonantRules: *m*i*r*d*ō
+ProtoToOEWeakTail: *m*ie*r*d*ō
+ProtoToOEWeightMarkers: *m*ie*r*d*ō
+ProtoToOEApocope: *m*ie*r*d*ō
+ProtoToOEWeightCleanup: *m*ie*r*d*ō
+ProtoToOE: *m*ie*r*d*ō
+WGlide: *m*ie*r*d*ō
+GhMarker: *m*ie*r*d*ō
+GlideDeletion: *m*ie*r*d*ō
+Epenthesis: *m*ie*r*d*ō
+Orthography: mierdō
+Surface: mierdō
+
+--- might ---
+PROTO: *maxtiz
+EXPECTED: miht
+OUTPUTS: miehte
+
+ProtoInput: *m*a*x*t*i*z
+InitialKn: *m*a*x*t*i*z
+Palatalisation: *m*a*x*t*i*z
+ConsonantRules: *m*a*x*t*i
+ProtoToOEWeakTail: *m*ie*x*t*e, *m*īe*x*t*e
+ProtoToOEWeightMarkers: *m*ie*x*t*e, *m*īe*x*t*e
+ProtoToOEApocope: *m*ie*x*t*e, *m*īe*x*t*e
+ProtoToOEWeightCleanup: *m*ie*x*t*e, *m*īe*x*t*e
+ProtoToOE: *m*ie*x*t*e
+WGlide: *m*ie*x*t*e
+GhMarker: *m*ie*GH*t*e
+GlideDeletion: *m*ie*GH*t*e
+Epenthesis: *m*ie*x*t*e
+Orthography: miehte
+Surface: miehte
+
+--- need ---
+PROTO: *naudiz
+EXPECTED: nīed
+OUTPUTS: nīede
+
+ProtoInput: *n*au*d*i*z
+InitialKn: *n*au*d*i*z
+Palatalisation: *n*au*d*i*z
+ConsonantRules: *n*au*d*i
+ProtoToOEWeakTail: *n*īe*d*e
+ProtoToOEWeightMarkers: *n*īe*d*e
+ProtoToOEApocope: *n*īe*d*e
+ProtoToOEWeightCleanup: *n*īe*d*e
+ProtoToOE: *n*īe*d*e
+WGlide: *n*īe*d*e
+GhMarker: *n*īe*d*e
+GlideDeletion: *n*īe*d*e
+Epenthesis: *n*īe*d*e
+Orthography: nīede
+Surface: nīede
+
+--- needle ---
+PROTO: *nēθlō
+EXPECTED: nǣdl
+OUTPUTS: nēþlō
+
+ProtoInput: *n*ē*θ*l*ō
+InitialKn: *n*ē*θ*l*ō
+Palatalisation: *n*ē*θ*l*ō
+ConsonantRules: *n*ē*θ*l*ō
+ProtoToOEWeakTail: *n*ē*θ*l*ō
+ProtoToOEWeightMarkers: *n*ē*θ*l*ō
+ProtoToOEApocope: *n*ē*θ*l*ō
+ProtoToOEWeightCleanup: *n*ē*θ*l*ō
+ProtoToOE: *n*ē*θ*l*ō
+WGlide: *n*ē*θ*l*ō
+GhMarker: *n*ē*θ*l*ō
+GlideDeletion: *n*ē*θ*l*ō
+Epenthesis: *n*ē*θ*l*ō
+Orthography: nēþlō, nē*þlō
+Surface: nēþlō
+
+--- nest ---
+PROTO: *nistą
+EXPECTED: nest
+OUTPUTS: nista
+
+ProtoInput: *n*i*s*t*ą
+InitialKn: *n*i*s*t*ą
+Palatalisation: *n*i*s*t*ą
+ConsonantRules: *n*i*s*t*ą
+ProtoToOEWeakTail: *n*i*s*t*ɔ̆
+ProtoToOEWeightMarkers: *n*i*s*t*ɔ̆
+ProtoToOEApocope: *n*i*s*t*ɔ̆
+ProtoToOEWeightCleanup: *n*i*s*t*ɔ̆
+ProtoToOE: *n*i*s*t*ɔ̆
+WGlide: *n*i*s*t*ɔ̆
+GhMarker: *n*i*s*t*ɔ̆
+GlideDeletion: *n*i*s*t*ɔ̆
+Epenthesis: *n*i*s*t*ɔ̆
+Orthography: nistŏ, nista
+Surface: nista
+
+--- net ---
+PROTO: *natją
+EXPECTED: net
+OUTPUTS: netta
+
+ProtoInput: *n*a*t*j*ą
+InitialKn: *n*a*t*j*ą
+Palatalisation: *n*a*t*j*ą
+ConsonantRules: *n*a*t*j*ą
+ProtoToOEWeakTail: *n*e*t*j*ɔ̆
+ProtoToOEWeightMarkers: *n*e*t*j*ɔ̆
+ProtoToOEApocope: *n*e*t*j*ɔ̆
+ProtoToOEWeightCleanup: *n*e*t*j*ɔ̆
+ProtoToOE: *n*e*t*t*ɔ̆
+WGlide: *n*e*t*t*ɔ̆
+GhMarker: *n*e*t*t*ɔ̆
+GlideDeletion: *n*e*t*t*ɔ̆
+Epenthesis: *n*e*t*t*ɔ̆
+Orthography: nettŏ, netta
+Surface: netta
+
+--- reek ---
+PROTO: *raukiz
+EXPECTED: rēc
+OUTPUTS: rīeċe
+
+ProtoInput: *r*au*k*i*z
+InitialKn: *r*au*k*i*z
+Palatalisation: *r*au*ʧ*i*z
+ConsonantRules: *r*au*ʧ*i
+ProtoToOEWeakTail: *r*īe*ʧ*e
+ProtoToOEWeightMarkers: *r*īe*ʧ*e
+ProtoToOEApocope: *r*īe*ʧ*e
+ProtoToOEWeightCleanup: *r*īe*ʧ*e
+ProtoToOE: *r*īe*ʧ*e
+WGlide: *r*īe*ʧ*e
+GhMarker: *r*īe*ʧ*e
+GlideDeletion: *r*īe*ʧ*e
+Epenthesis: *r*īe*ʧ*e
+Orthography: rīeċe
+Surface: rīeċe
+
+--- rind ---
+PROTO: *rindō
+EXPECTED: rind
+OUTPUTS: rindō
+
+ProtoInput: *r*i*n*d*ō
+InitialKn: *r*i*n*d*ō
+Palatalisation: *r*i*n*d*ō
+ConsonantRules: *r*i*n*d*ō
+ProtoToOEWeakTail: *r*i*n*d*ō
+ProtoToOEWeightMarkers: *r*i*n*d*ō
+ProtoToOEApocope: *r*i*n*d*ō
+ProtoToOEWeightCleanup: *r*i*n*d*ō
+ProtoToOE: *r*i*n*d*ō
+WGlide: *r*i*n*d*ō
+GhMarker: *r*i*n*d*ō
+GlideDeletion: *r*i*n*d*ō
+Epenthesis: *r*i*n*d*ō
+Orthography: rindō
+Surface: rindō
+
+--- rock ---
+PROTO: *rukkiz
+EXPECTED: rocc
+OUTPUTS: rycċe
+
+ProtoInput: *r*u*k*k*i*z
+InitialKn: *r*u*k*k*i*z
+Palatalisation: *r*u*k*ʧ*i*z
+ConsonantRules: *r*u*k*ʧ*i
+ProtoToOEWeakTail: *r*y*k*ʧ*e
+ProtoToOEWeightMarkers: *r*y*k*ʧ*e
+ProtoToOEApocope: *r*y*k*ʧ*e
+ProtoToOEWeightCleanup: *r*y*k*ʧ*e
+ProtoToOE: *r*y*k*ʧ*e
+WGlide: *r*y*k*ʧ*e
+GhMarker: *r*y*k*ʧ*e
+GlideDeletion: *r*y*k*ʧ*e
+Epenthesis: *r*y*k*ʧ*e
+Orthography: rycċe
+Surface: rycċe
+
+--- rood ---
+PROTO: *rōdō
+EXPECTED: rōd
+OUTPUTS: rōdō
+
+ProtoInput: *r*ō*d*ō
+InitialKn: *r*ō*d*ō
+Palatalisation: *r*ō*d*ō
+ConsonantRules: *r*ō*d*ō
+ProtoToOEWeakTail: *r*ō*d*ō
+ProtoToOEWeightMarkers: *r*ō*d*ō
+ProtoToOEApocope: *r*ō*d*ō
+ProtoToOEWeightCleanup: *r*ō*d*ō
+ProtoToOE: *r*ō*d*ō
+WGlide: *r*ō*d*ō
+GhMarker: *r*ō*d*ō
+GlideDeletion: *r*ō*d*ō
+Epenthesis: *r*ō*d*ō
+Orthography: rōdō
+Surface: rōdō
+
+--- rope ---
+PROTO: *raipą
+EXPECTED: rāp
+OUTPUTS: rāpa
+
+ProtoInput: *r*ai*p*ą
+InitialKn: *r*ai*p*ą
+Palatalisation: *r*ai*p*ą
+ConsonantRules: *r*ai*p*ą
+ProtoToOEWeakTail: *r*ā*p*ɔ̆
+ProtoToOEWeightMarkers: *r*ā*p*ɔ̆
+ProtoToOEApocope: *r*ā*p*ɔ̆
+ProtoToOEWeightCleanup: *r*ā*p*ɔ̆
+ProtoToOE: *r*ā*p*ɔ̆
+WGlide: *r*ā*p*ɔ̆
+GhMarker: *r*ā*p*ɔ̆
+GlideDeletion: *r*ā*p*ɔ̆
+Epenthesis: *r*ā*p*ɔ̆
+Orthography: rāpŏ, rāpa
+Surface: rāpa
+
+--- rust ---
+PROTO: *rustō
+EXPECTED: rust
+OUTPUTS: rustō
+
+ProtoInput: *r*u*s*t*ō
+InitialKn: *r*u*s*t*ō
+Palatalisation: *r*u*s*t*ō
+ConsonantRules: *r*u*s*t*ō
+ProtoToOEWeakTail: *r*u*s*t*ō
+ProtoToOEWeightMarkers: *r*u*s*t*ō
+ProtoToOEApocope: *r*u*s*t*ō
+ProtoToOEWeightCleanup: *r*u*s*t*ō
+ProtoToOE: *r*u*s*t*ō
+WGlide: *r*u*s*t*ō
+GhMarker: *r*u*s*t*ō
+GlideDeletion: *r*u*s*t*ō
+Epenthesis: *r*u*s*t*ō
+Orthography: rustō
+Surface: rustō
+
+--- sail ---
+PROTO: *seglą
+EXPECTED: seġl
+OUTPUTS: seġla
+
+ProtoInput: *s*e*g*l*ą
+InitialKn: *s*e*g*l*ą
+Palatalisation: *s*e*g*l*ą
+ConsonantRules: *s*e*g*l*ą
+ProtoToOEWeakTail: *s*e*g*l*ɔ̆
+ProtoToOEWeightMarkers: *s*e*g*l*ɔ̆
+ProtoToOEApocope: *s*e*g*l*ɔ̆
+ProtoToOEWeightCleanup: *s*e*g*l*ɔ̆
+ProtoToOE: *s*e*ʤ*l*ɔ̆
+WGlide: *s*e*ʤ*l*ɔ̆
+GhMarker: *s*e*ʤ*l*ɔ̆
+GlideDeletion: *s*e*ʤ*l*ɔ̆
+Epenthesis: *s*e*ʤ*l*ɔ̆
+Orthography: seġlŏ, seġla
+Surface: seġla
+
+--- salt ---
+PROTO: *saltą
+EXPECTED: sealt
+OUTPUTS: sealta
+
+ProtoInput: *s*a*l*t*ą
+InitialKn: *s*a*l*t*ą
+Palatalisation: *s*a*l*t*ą
+ConsonantRules: *s*a*l*t*ą
+ProtoToOEWeakTail: *s*ēa*l*t*ɔ̆, *s*ea*l*t*ɔ̆
+ProtoToOEWeightMarkers: *s*ēa*l*t*ɔ̆, *s*ea*l*t*ɔ̆
+ProtoToOEApocope: *s*ea*l*t*ɔ̆, *s*ēa*l*t*ɔ̆
+ProtoToOEWeightCleanup: *s*ea*l*t*ɔ̆, *s*ēa*l*t*ɔ̆
+ProtoToOE: *s*ea*l*t*ɔ̆
+WGlide: *s*ea*l*t*ɔ̆
+GhMarker: *s*ea*l*t*ɔ̆
+GlideDeletion: *s*ea*l*t*ɔ̆
+Epenthesis: *s*ea*l*t*ɔ̆
+Orthography: sealtŏ, sealta
+Surface: sealta
+
+--- salve ---
+PROTO: *salbō
+EXPECTED: sealf
+OUTPUTS: sealbō
+
+ProtoInput: *s*a*l*b*ō
+InitialKn: *s*a*l*b*ō
+Palatalisation: *s*a*l*b*ō
+ConsonantRules: *s*a*l*b*ō
+ProtoToOEWeakTail: *s*ēa*l*b*ō, *s*ea*l*b*ō
+ProtoToOEWeightMarkers: *s*ēa*l*b*ō, *s*ea*l*b*ō
+ProtoToOEApocope: *s*ea*l*b*ō, *s*ēa*l*b*ō
+ProtoToOEWeightCleanup: *s*ea*l*b*ō, *s*ēa*l*b*ō
+ProtoToOE: *s*ea*l*b*ō
+WGlide: *s*ea*l*b*ō
+GhMarker: *s*ea*l*b*ō
+GlideDeletion: *s*ea*l*b*ō
+Epenthesis: *s*ea*l*b*ō
+Orthography: sealbō
+Surface: sealbō
+
+--- shovel ---
+PROTO: *skūflō
+EXPECTED: scofl
+OUTPUTS: sċūflō
+
+ProtoInput: *s*k*ū*f*l*ō
+InitialKn: *s*k*ū*f*l*ō
+Palatalisation: *s*k*ū*f*l*ō
+ConsonantRules: *s*k*ū*f*l*ō
+ProtoToOEWeakTail: *s*k*ū*f*l*ō
+ProtoToOEWeightMarkers: *s*k*ū*f*l*ō
+ProtoToOEApocope: *s*k*ū*f*l*ō
+ProtoToOEWeightCleanup: *s*k*ū*f*l*ō
+ProtoToOE: *ʃ*ū*f*l*ō
+WGlide: *ʃ*ū*f*l*ō
+GhMarker: *ʃ*ū*f*l*ō
+GlideDeletion: *ʃ*ū*f*l*ō
+Epenthesis: *ʃ*ū*f*l*ō
+Orthography: sċūflō
+Surface: sċūflō
+
+--- shower ---
+PROTO: *skūrō
+EXPECTED: sċūr
+OUTPUTS: sċūrō
+
+ProtoInput: *s*k*ū*r*ō
+InitialKn: *s*k*ū*r*ō
+Palatalisation: *s*k*ū*r*ō
+ConsonantRules: *s*k*ū*r*ō
+ProtoToOEWeakTail: *s*k*ū*r*ō
+ProtoToOEWeightMarkers: *s*k*ū*r*ō
+ProtoToOEApocope: *s*k*ū*r*ō
+ProtoToOEWeightCleanup: *s*k*ū*r*ō
+ProtoToOE: *ʃ*ū*r*ō
+WGlide: *ʃ*ū*r*ō
+GhMarker: *ʃ*ū*r*ō
+GlideDeletion: *ʃ*ū*r*ō
+Epenthesis: *ʃ*ū*r*ō
+Orthography: sċūrō
+Surface: sċūrō
+
+--- sorrow ---
+PROTO: *surgō
+EXPECTED: sorg
+OUTPUTS: surgō
+
+ProtoInput: *s*u*r*g*ō
+InitialKn: *s*u*r*g*ō
+Palatalisation: *s*u*r*g*ō
+ConsonantRules: *s*u*r*g*ō
+ProtoToOEWeakTail: *s*ō*r*g*ō
+ProtoToOEWeightMarkers: *s*ō*r*g*ō
+ProtoToOEApocope: *s*ō*r*g*ō
+ProtoToOEWeightCleanup: *s*ō*r*g*ō
+ProtoToOE: *s*u*r*g*ō
+WGlide: *s*u*r*g*ō
+GhMarker: *s*u*r*g*ō
+GlideDeletion: *s*u*r*g*ō
+Epenthesis: *s*u*r*g*ō
+Orthography: surgō
+Surface: surgō
+
+--- soul ---
+PROTO: *saiwălō
+EXPECTED: sāwol
+OUTPUTS: sāwalō
+
+ProtoInput: *s*ai*w*ă*l*ō
+InitialKn: *s*ai*w*ă*l*ō
+Palatalisation: *s*ai*w*ă*l*ō
+ConsonantRules: *s*ai*w*ă*l*ō
+ProtoToOEWeakTail: *s*ā*w*ă*l*ō
+ProtoToOEWeightMarkers: *s*ā*w*ă*l*ō
+ProtoToOEApocope: *s*ā*w*ă*l*ō
+ProtoToOEWeightCleanup: *s*ā*w*ă*l*ō
+ProtoToOE: *s*ā*w*ă*l*ō
+WGlide: *s*ā*ʋ*ă*l*ō
+GhMarker: *s*ā*ʋ*ă*l*ō
+GlideDeletion: *s*ā*ă*l*ō
+Epenthesis: *s*ā*w*ă*l*ō
+Orthography: sāwalō
+Surface: sāwalō
+
+--- staff ---
+PROTO: *stabiz
+EXPECTED: stæf
+OUTPUTS: stebe
+
+ProtoInput: *s*t*a*b*i*z
+InitialKn: *s*t*a*b*i*z
+Palatalisation: *s*t*a*b*i*z
+ConsonantRules: *s*t*a*b*i
+ProtoToOEWeakTail: *s*t*ǣ*b*e
+ProtoToOEWeightMarkers: *s*t*ǣ*b*e
+ProtoToOEApocope: *s*t*ǣ*b*e
+ProtoToOEWeightCleanup: *s*t*ǣ*b*e
+ProtoToOE: *s*t*e*b*e
+WGlide: *s*t*e*b*e
+GhMarker: *s*t*e*b*e
+GlideDeletion: *s*t*e*b*e
+Epenthesis: *s*t*e*b*e
+Orthography: stebe
+Surface: stebe
+
+--- string ---
+PROTO: *strangiz
+EXPECTED: strenġ
+OUTPUTS: strenġe
+
+ProtoInput: *s*t*r*a*n*g*i*z
+InitialKn: *s*t*r*a*n*g*i*z
+Palatalisation: *s*t*r*a*n*ʤ*i*z
+ConsonantRules: *s*t*r*a*n*ʤ*i
+ProtoToOEWeakTail: *s*t*r*e*n*ʤ*e
+ProtoToOEWeightMarkers: *s*t*r*e*n*ʤ*e
+ProtoToOEApocope: *s*t*r*e*n*ʤ*e
+ProtoToOEWeightCleanup: *s*t*r*e*n*ʤ*e
+ProtoToOE: *s*t*r*e*n*ʤ*e
+WGlide: *s*t*r*e*n*ʤ*e
+GhMarker: *s*t*r*e*n*ʤ*e
+GlideDeletion: *s*t*r*e*n*ʤ*e
+Epenthesis: *s*t*r*e*n*ʤ*e
+Orthography: strenġe
+Surface: strenġe
+
+--- stud ---
+PROTO: *stōdą
+EXPECTED: stōd
+OUTPUTS: stōda
+
+ProtoInput: *s*t*ō*d*ą
+InitialKn: *s*t*ō*d*ą
+Palatalisation: *s*t*ō*d*ą
+ConsonantRules: *s*t*ō*d*ą
+ProtoToOEWeakTail: *s*t*ō*d*ɔ̆
+ProtoToOEWeightMarkers: *s*t*ō*d*ɔ̆
+ProtoToOEApocope: *s*t*ō*d*ɔ̆
+ProtoToOEWeightCleanup: *s*t*ō*d*ɔ̆
+ProtoToOE: *s*t*ō*d*ɔ̆
+WGlide: *s*t*ō*d*ɔ̆
+GhMarker: *s*t*ō*d*ɔ̆
+GlideDeletion: *s*t*ō*d*ɔ̆
+Epenthesis: *s*t*ō*d*ɔ̆
+Orthography: stōdŏ, stōda
+Surface: stōda
+
+--- sword ---
+PROTO: *swerdą
+EXPECTED: sweord
+OUTPUTS: sweorda
+
+ProtoInput: *s*w*e*r*d*ą
+InitialKn: *s*w*e*r*d*ą
+Palatalisation: *s*w*e*r*d*ą
+ConsonantRules: *s*w*e*r*d*ą
+ProtoToOEWeakTail: *s*w*eo*r*d*ɔ̆
+ProtoToOEWeightMarkers: *s*w*eo*r*d*ɔ̆
+ProtoToOEApocope: *s*w*eo*r*d*ɔ̆
+ProtoToOEWeightCleanup: *s*w*eo*r*d*ɔ̆
+ProtoToOE: *s*w*eo*r*d*ɔ̆
+WGlide: *s*ʋ*eo*r*d*ɔ̆
+GhMarker: *s*ʋ*eo*r*d*ɔ̆
+GlideDeletion: *s*ʋ*eo*r*d*ɔ̆
+Epenthesis: *s*w*eo*r*d*ɔ̆
+Orthography: sweordŏ, sweorda
+Surface: sweorda
+
+--- thatch ---
+PROTO: *θaką
+EXPECTED: þæc
+OUTPUTS: þæċa
+
+ProtoInput: *θ*a*k*ą
+InitialKn: *θ*a*k*ą
+Palatalisation: *θ*a*k*ą
+ConsonantRules: *θ*a*k*ą
+ProtoToOEWeakTail: *θ*ā*k*ɔ̆
+ProtoToOEWeightMarkers: *θ*ā*k*ɔ̆
+ProtoToOEApocope: *θ*ā*k*ɔ̆
+ProtoToOEWeightCleanup: *θ*ā*k*ɔ̆
+ProtoToOE: *θ*æ*ʧ*ɔ̆
+WGlide: *θ*æ*ʧ*ɔ̆
+GhMarker: *θ*æ*ʧ*ɔ̆
+GlideDeletion: *θ*æ*ʧ*ɔ̆
+Epenthesis: *θ*æ*ʧ*ɔ̆
+Orthography: þæċŏ, þæċa, *þæċŏ, *þæċa
+Surface: þæċa
+
+--- thing ---
+PROTO: *þingą
+EXPECTED: þing
+OUTPUTS: þinga
+
+ProtoInput: *θ*i*n*g*ą
+InitialKn: *θ*i*n*g*ą
+Palatalisation: *θ*i*n*g*ą
+ConsonantRules: *θ*i*n*g*ą
+ProtoToOEWeakTail: *θ*i*n*g*ɔ̆
+ProtoToOEWeightMarkers: *θ*i*n*g*ɔ̆
+ProtoToOEApocope: *θ*i*n*g*ɔ̆
+ProtoToOEWeightCleanup: *θ*i*n*g*ɔ̆
+ProtoToOE: *θ*i*n*g*ɔ̆
+WGlide: *θ*i*n*g*ɔ̆
+GhMarker: *θ*i*n*g*ɔ̆
+GlideDeletion: *θ*i*n*g*ɔ̆
+Epenthesis: *θ*i*n*g*ɔ̆
+Orthography: þingŏ, þinga, *þingŏ, *þinga
+Surface: þinga
+
+--- timber ---
+PROTO: *timrą
+EXPECTED: timber
+OUTPUTS: timra
+
+ProtoInput: *t*i*m*r*ą
+InitialKn: *t*i*m*r*ą
+Palatalisation: *t*i*m*r*ą
+ConsonantRules: *t*i*m*r*ą
+ProtoToOEWeakTail: *t*i*m*r*ɔ̆
+ProtoToOEWeightMarkers: *t*i*m*r*ɔ̆
+ProtoToOEApocope: *t*i*m*r*ɔ̆
+ProtoToOEWeightCleanup: *t*i*m*r*ɔ̆
+ProtoToOE: *t*i*m*r*ɔ̆
+WGlide: *t*i*m*r*ɔ̆
+GhMarker: *t*i*m*r*ɔ̆
+GlideDeletion: *t*i*m*r*ɔ̆
+Epenthesis: *t*i*m*r*ɔ̆
+Orthography: timrŏ, timra
+Surface: timra
+
+--- trough ---
+PROTO: *trugą
+EXPECTED: troh
+OUTPUTS: truga
+
+ProtoInput: *t*r*u*g*ą
+InitialKn: *t*r*u*g*ą
+Palatalisation: *t*r*u*g*ą
+ConsonantRules: *t*r*u*g*ą
+ProtoToOEWeakTail: *t*r*ū*g*ɔ̆
+ProtoToOEWeightMarkers: *t*r*ū*g*ɔ̆
+ProtoToOEApocope: *t*r*ū*g*ɔ̆
+ProtoToOEWeightCleanup: *t*r*ū*g*ɔ̆
+ProtoToOE: *t*r*u*g*ɔ̆
+WGlide: *t*r*u*g*ɔ̆
+GhMarker: *t*r*u*g*ɔ̆
+GlideDeletion: *t*r*u*g*ɔ̆
+Epenthesis: *t*r*u*g*ɔ̆
+Orthography: trugŏ, truga
+Surface: truga
+
+--- warp ---
+PROTO: *warpą
+EXPECTED: wearp
+OUTPUTS: wearpa
+
+ProtoInput: *w*a*r*p*ą
+InitialKn: *w*a*r*p*ą
+Palatalisation: *w*a*r*p*ą
+ConsonantRules: *w*a*r*p*ą
+ProtoToOEWeakTail: *w*ēa*r*p*ɔ̆, *w*ea*r*p*ɔ̆
+ProtoToOEWeightMarkers: *w*ēa*r*p*ɔ̆, *w*ea*r*p*ɔ̆
+ProtoToOEApocope: *w*ea*r*p*ɔ̆, *w*ēa*r*p*ɔ̆
+ProtoToOEWeightCleanup: *w*ea*r*p*ɔ̆, *w*ēa*r*p*ɔ̆
+ProtoToOE: *w*ea*r*p*ɔ̆
+WGlide: *ʋ*ea*r*p*ɔ̆
+GhMarker: *ʋ*ea*r*p*ɔ̆
+GlideDeletion: *ʋ*ea*r*p*ɔ̆
+Epenthesis: *w*ea*r*p*ɔ̆
+Orthography: wearpŏ, wearpa
+Surface: wearpa
+
+--- wax ---
+PROTO: *waxsą
+EXPECTED: weax
+OUTPUTS: weahsa
+
+ProtoInput: *w*a*x*s*ą
+InitialKn: *w*a*x*s*ą
+Palatalisation: *w*a*x*s*ą
+ConsonantRules: *w*a*x*s*ą
+ProtoToOEWeakTail: *w*ēa*x*s*ɔ̆, *w*ea*x*s*ɔ̆
+ProtoToOEWeightMarkers: *w*ēa*x*s*ɔ̆, *w*ea*x*s*ɔ̆
+ProtoToOEApocope: *w*ea*x*s*ɔ̆, *w*ēa*x*s*ɔ̆
+ProtoToOEWeightCleanup: *w*ea*x*s*ɔ̆, *w*ēa*x*s*ɔ̆
+ProtoToOE: *w*ea*x*s*ɔ̆
+WGlide: *ʋ*ea*x*s*ɔ̆
+GhMarker: *ʋ*ea*GH*s*ɔ̆
+GlideDeletion: *ʋ*ea*GH*s*ɔ̆
+Epenthesis: *w*ea*x*s*ɔ̆
+Orthography: weahsŏ, weahsa
+Surface: weahsa
+
+--- weather ---
+PROTO: *wedrą
+EXPECTED: weder
+OUTPUTS: wedra
+
+ProtoInput: *w*e*d*r*ą
+InitialKn: *w*e*d*r*ą
+Palatalisation: *w*e*d*r*ą
+ConsonantRules: *w*e*d*r*ą
+ProtoToOEWeakTail: *w*e*d*r*ɔ̆
+ProtoToOEWeightMarkers: *w*e*d*r*ɔ̆
+ProtoToOEApocope: *w*e*d*r*ɔ̆
+ProtoToOEWeightCleanup: *w*e*d*r*ɔ̆
+ProtoToOE: *w*e*d*r*ɔ̆
+WGlide: *ʋ*e*d*r*ɔ̆
+GhMarker: *ʋ*e*d*r*ɔ̆
+GlideDeletion: *ʋ*e*d*r*ɔ̆
+Epenthesis: *w*e*d*r*ɔ̆
+Orthography: wedrŏ, wedra
+Surface: wedra
+
+--- west ---
+PROTO: *westănē
+EXPECTED: west
+OUTPUTS: westanē
+
+ProtoInput: *w*e*s*t*ă*n*ē
+InitialKn: *w*e*s*t*ă*n*ē
+Palatalisation: *w*e*s*t*ă*n*ē
+ConsonantRules: *w*e*s*t*ă*n*ē
+ProtoToOEWeakTail: *w*e*s*t*ă*n*ē
+ProtoToOEWeightMarkers: *w*e*s*t*ă*n*ē
+ProtoToOEApocope: *w*e*s*t*ă*n*ē
+ProtoToOEWeightCleanup: *w*e*s*t*ă*n*ē
+ProtoToOE: *w*e*s*t*ă*n*ē
+WGlide: *ʋ*e*s*t*ă*n*ē
+GhMarker: *ʋ*e*s*t*ă*n*ē
+GlideDeletion: *ʋ*e*s*t*ă*n*ē
+Epenthesis: *w*e*s*t*ă*n*ē
+Orthography: westanē
+Surface: westanē
+
+--- while ---
+PROTO: *xwīlō
+EXPECTED: hwīl
+OUTPUTS: hwīlō
+
+ProtoInput: *x*w*ī*l*ō
+InitialKn: *x*w*ī*l*ō
+Palatalisation: *x*w*ī*l*ō
+ConsonantRules: *x*w*ī*l*ō
+ProtoToOEWeakTail: *x*w*ī*l*ō
+ProtoToOEWeightMarkers: *x*w*ī*l*ō
+ProtoToOEApocope: *x*w*ī*l*ō
+ProtoToOEWeightCleanup: *x*w*ī*l*ō
+ProtoToOE: *x*w*ī*l*ō
+WGlide: *x*ʋ*ī*l*ō
+GhMarker: *x*ʋ*ī*l*ō
+GlideDeletion: *x*ʋ*ī*l*ō
+Epenthesis: *x*w*ī*l*ō
+Orthography: hwīlō
+Surface: hwīlō
+
+--- wife ---
+PROTO: *wībą
+EXPECTED: wīf
+OUTPUTS: wība
+
+ProtoInput: *w*ī*b*ą
+InitialKn: *w*ī*b*ą
+Palatalisation: *w*ī*b*ą
+ConsonantRules: *w*ī*b*ą
+ProtoToOEWeakTail: *w*ī*b*ɔ̆
+ProtoToOEWeightMarkers: *w*ī*b*ɔ̆
+ProtoToOEApocope: *w*ī*b*ɔ̆
+ProtoToOEWeightCleanup: *w*ī*b*ɔ̆
+ProtoToOE: *w*ī*b*ɔ̆
+WGlide: *ʋ*ī*b*ɔ̆
+GhMarker: *ʋ*ī*b*ɔ̆
+GlideDeletion: *ʋ*ī*b*ɔ̆
+Epenthesis: *w*ī*b*ɔ̆
+Orthography: wībŏ, wība
+Surface: wība
+
+--- wight ---
+PROTO: *wextiz
+EXPECTED: wiht
+OUTPUTS: wiehte
+
+ProtoInput: *w*e*x*t*i*z
+InitialKn: *w*e*x*t*i*z
+Palatalisation: *w*e*x*t*i*z
+ConsonantRules: *w*e*x*t*i
+ProtoToOEWeakTail: *w*ie*x*t*e
+ProtoToOEWeightMarkers: *w*ie*x*t*e
+ProtoToOEApocope: *w*ie*x*t*e
+ProtoToOEWeightCleanup: *w*ie*x*t*e
+ProtoToOE: *w*ie*x*t*e
+WGlide: *ʋ*ie*x*t*e
+GhMarker: *ʋ*ie*GH*t*e
+GlideDeletion: *ʋ*ie*GH*t*e
+Epenthesis: *w*ie*x*t*e
+Orthography: wiehte
+Surface: wiehte
+
+--- wonder ---
+PROTO: *wundrą
+EXPECTED: wundor
+OUTPUTS: wundra
+
+ProtoInput: *w*u*n*d*r*ą
+InitialKn: *w*u*n*d*r*ą
+Palatalisation: *w*u*n*d*r*ą
+ConsonantRules: *w*u*n*d*r*ą
+ProtoToOEWeakTail: *w*u*n*d*r*ɔ̆
+ProtoToOEWeightMarkers: *w*u*n*d*r*ɔ̆
+ProtoToOEApocope: *w*u*n*d*r*ɔ̆
+ProtoToOEWeightCleanup: *w*u*n*d*r*ɔ̆
+ProtoToOE: *w*u*n*d*r*ɔ̆
+WGlide: *ʋ*u*n*d*r*ɔ̆
+GhMarker: *ʋ*u*n*d*r*ɔ̆
+GlideDeletion: *ʋ*u*n*d*r*ɔ̆
+Epenthesis: *w*u*n*d*r*ɔ̆
+Orthography: wundrŏ, wundra
+Surface: wundra
+
+--- wool ---
+PROTO: *wullo
+EXPECTED: wull
+OUTPUTS: wullo
+
+ProtoInput: *w*u*l*l*o
+InitialKn: *w*u*l*l*o
+Palatalisation: *w*u*l*l*o
+ConsonantRules: *w*u*l*l*o
+ProtoToOEWeakTail: *w*u*l*l*o
+ProtoToOEWeightMarkers: *w*u*l*l*o
+ProtoToOEApocope: *w*u*l*l*o
+ProtoToOEWeightCleanup: *w*u*l*l*o
+ProtoToOE: *w*u*l*l*o
+WGlide: *ʋ*u*l*l*o
+GhMarker: *ʋ*u*l*l*o
+GlideDeletion: *ʋ*u*l*l*o
+Epenthesis: *w*u*l*l*o
+Orthography: wullo
+Surface: wullo
+
+--- word ---
+PROTO: *wurdą
+EXPECTED: word
+OUTPUTS: wurda
+
+ProtoInput: *w*u*r*d*ą
+InitialKn: *w*u*r*d*ą
+Palatalisation: *w*u*r*d*ą
+ConsonantRules: *w*u*r*d*ą
+ProtoToOEWeakTail: *w*ō*r*d*ɔ̆
+ProtoToOEWeightMarkers: *w*ō*r*d*ɔ̆
+ProtoToOEApocope: *w*ō*r*d*ɔ̆
+ProtoToOEWeightCleanup: *w*ō*r*d*ɔ̆
+ProtoToOE: *w*u*r*d*ɔ̆
+WGlide: *ʋ*u*r*d*ɔ̆
+GhMarker: *ʋ*u*r*d*ɔ̆
+GlideDeletion: *ʋ*u*r*d*ɔ̆
+Epenthesis: *w*u*r*d*ɔ̆
+Orthography: wurdŏ, wurda
+Surface: wurda
+
+
+=== BUCKET: length_extra_other (17) ===
+
+--- do ---
+PROTO: *dōną
+EXPECTED: don
+OUTPUTS: dōn
+
+ProtoInput: *d*ō*n*ą
+InitialKn: *d*ō*n*ą
+Palatalisation: *d*ō*n*ą
+ConsonantRules: *d*ō*n*ą
+ProtoToOEWeakTail: *d*ō*n
+ProtoToOEWeightMarkers: *d*ō*n
+ProtoToOEApocope: *d*ō*n
+ProtoToOEWeightCleanup: *d*ō*n
+ProtoToOE: *d*ō*n
+WGlide: *d*ō*n
+GhMarker: *d*ō*n
+GlideDeletion: *d*ō*n
+Epenthesis: *d*ō*n
+Orthography: dōn
+Surface: dōn
+
+--- fast ---
+PROTO: *fastēną
+EXPECTED: fæst
+OUTPUTS: fæstēn
+
+ProtoInput: *f*a*s*t*ē*n*ą
+InitialKn: *f*a*s*t*ē*n*ą
+Palatalisation: *f*a*s*t*ē*n*ą
+ConsonantRules: *f*a*s*t*ē*n*ą
+ProtoToOEWeakTail: *f*a*s*t*ē*n
+ProtoToOEWeightMarkers: *f*a*s*t*ē*n
+ProtoToOEApocope: *f*a*s*t*ē*n
+ProtoToOEWeightCleanup: *f*a*s*t*ē*n
+ProtoToOE: *f*æ*s*t*ē*n
+WGlide: *f*æ*s*t*ē*n
+GhMarker: *f*æ*s*t*ē*n
+GlideDeletion: *f*æ*s*t*ē*n
+Epenthesis: *f*æ*s*t*ē*n
+Orthography: fæstēn
+Surface: fæstēn
+
+--- father ---
+PROTO: *fadēr
+EXPECTED: fæder
+OUTPUTS: fædēr
+
+ProtoInput: *f*a*d*ē*r
+InitialKn: *f*a*d*ē*r
+Palatalisation: *f*a*d*ē*r
+ConsonantRules: *f*a*d*ē*r
+ProtoToOEWeakTail: *f*ā*d*ē*r
+ProtoToOEWeightMarkers: *f*ā*d*ē*r
+ProtoToOEApocope: *f*ā*d*ē*r
+ProtoToOEWeightCleanup: *f*ā*d*ē*r
+ProtoToOE: *f*æ*d*ē*r
+WGlide: *f*æ*d*ē*r
+GhMarker: *f*æ*d*ē*r
+GlideDeletion: *f*æ*d*ē*r
+Epenthesis: *f*æ*d*ē*r
+Orthography: fædēr
+Surface: fædēr
+
+--- find ---
+PROTO: *finþăną
+EXPECTED: findan
+OUTPUTS: fīþan
+
+ProtoInput: *f*i*n*θ*ă*n*ą
+InitialKn: *f*i*n*θ*ă*n*ą
+Palatalisation: *f*i*n*θ*ă*n*ą
+ConsonantRules: *f*i*n*θ*ă*n*ą
+ProtoToOEWeakTail: *f*ī*θ*ă*n
+ProtoToOEWeightMarkers: *f*ī*θ*ă*n
+ProtoToOEApocope: *f*ī*θ*ă*n
+ProtoToOEWeightCleanup: *f*ī*θ*ă*n
+ProtoToOE: *f*ī*θ*ă*n
+WGlide: *f*ī*θ*ă*n
+GhMarker: *f*ī*θ*ă*n
+GlideDeletion: *f*ī*θ*ă*n
+Epenthesis: *f*ī*θ*ă*n
+Orthography: fīþan, fī*þan
+Surface: fīþan
+
+--- flask ---
+PROTO: *flaskō
+EXPECTED: flasce
+OUTPUTS: flascō
+
+ProtoInput: *f*l*a*s*k*ō
+InitialKn: *f*l*a*s*k*ō
+Palatalisation: *f*l*a*s*k*ō
+ConsonantRules: *f*l*a*s*k*ō
+ProtoToOEWeakTail: *f*l*a*s*k*ō
+ProtoToOEWeightMarkers: *f*l*a*s*k*ō
+ProtoToOEApocope: *f*l*a*s*k*ō
+ProtoToOEWeightCleanup: *f*l*a*s*k*ō
+ProtoToOE: *f*l*a*s*k*ō
+WGlide: *f*l*a*s*k*ō
+GhMarker: *f*l*a*s*k*ō
+GlideDeletion: *f*l*a*s*k*ō
+Epenthesis: *f*l*a*s*k*ō
+Orthography: flascō
+Surface: flascō
+
+--- have ---
+PROTO: *xabēną
+EXPECTED: habban
+OUTPUTS: hæbēn
+
+ProtoInput: *x*a*b*ē*n*ą
+InitialKn: *x*a*b*ē*n*ą
+Palatalisation: *x*a*b*ē*n*ą
+ConsonantRules: *x*a*b*ē*n*ą
+ProtoToOEWeakTail: *x*ā*b*ē*n
+ProtoToOEWeightMarkers: *x*ā*b*ē*n
+ProtoToOEApocope: *x*ā*b*ē*n
+ProtoToOEWeightCleanup: *x*ā*b*ē*n
+ProtoToOE: *ç*æ*b*ē*n
+WGlide: *ç*æ*b*ē*n
+GhMarker: *ç*æ*b*ē*n
+GlideDeletion: *ç*æ*b*ē*n
+Epenthesis: *ç*æ*b*ē*n
+Orthography: hæbēn
+Surface: hæbēn
+
+--- live ---
+PROTO: *libēną
+EXPECTED: lifian
+OUTPUTS: libēn
+
+ProtoInput: *l*i*b*ē*n*ą
+InitialKn: *l*i*b*ē*n*ą
+Palatalisation: *l*i*b*ē*n*ą
+ConsonantRules: *l*i*b*ē*n*ą
+ProtoToOEWeakTail: *l*ī*b*ē*n
+ProtoToOEWeightMarkers: *l*ī*b*ē*n
+ProtoToOEApocope: *l*ī*b*ē*n
+ProtoToOEWeightCleanup: *l*ī*b*ē*n
+ProtoToOE: *l*i*b*ē*n
+WGlide: *l*i*b*ē*n
+GhMarker: *l*i*b*ē*n
+GlideDeletion: *l*i*b*ē*n
+Epenthesis: *l*i*b*ē*n
+Orthography: libēn
+Surface: libēn
+
+--- man ---
+PROTO: *marīn
+EXPECTED: mann
+OUTPUTS: merīn
+
+ProtoInput: *m*a*r*ī*n
+InitialKn: *m*a*r*ī*n
+Palatalisation: *m*a*r*ī*n
+ConsonantRules: *m*a*r*ī*n
+ProtoToOEWeakTail: *m*ǣ*r*ī*n
+ProtoToOEWeightMarkers: *m*ǣ*r*ī*n
+ProtoToOEApocope: *m*ǣ*r*ī*n
+ProtoToOEWeightCleanup: *m*ǣ*r*ī*n
+ProtoToOE: *m*e*r*ī*n
+WGlide: *m*e*r*ī*n
+GhMarker: *m*e*r*ī*n
+GlideDeletion: *m*e*r*ī*n
+Epenthesis: *m*e*r*ī*n
+Orthography: merīn
+Surface: merīn
+
+--- nave ---
+PROTO: *nabō
+EXPECTED: nafu
+OUTPUTS: nabō
+
+ProtoInput: *n*a*b*ō
+InitialKn: *n*a*b*ō
+Palatalisation: *n*a*b*ō
+ConsonantRules: *n*a*b*ō
+ProtoToOEWeakTail: *n*ā*b*ō
+ProtoToOEWeightMarkers: *n*ā*b*ō
+ProtoToOEApocope: *n*ā*b*ō
+ProtoToOEWeightCleanup: *n*ā*b*ō
+ProtoToOE: *n*a*b*ō
+WGlide: *n*a*b*ō
+GhMarker: *n*a*b*ō
+GlideDeletion: *n*a*b*ō
+Epenthesis: *n*a*b*ō
+Orthography: nabō
+Surface: nabō
+
+--- nose ---
+PROTO: *nasō
+EXPECTED: nosu
+OUTPUTS: nasō
+
+ProtoInput: *n*a*s*ō
+InitialKn: *n*a*s*ō
+Palatalisation: *n*a*s*ō
+ConsonantRules: *n*a*s*ō
+ProtoToOEWeakTail: *n*ā*s*ō
+ProtoToOEWeightMarkers: *n*ā*s*ō
+ProtoToOEApocope: *n*ā*s*ō
+ProtoToOEWeightCleanup: *n*ā*s*ō
+ProtoToOE: *n*a*s*ō
+WGlide: *n*a*s*ō
+GhMarker: *n*a*s*ō
+GlideDeletion: *n*a*s*ō
+Epenthesis: *n*a*s*ō
+Orthography: nasō
+Surface: nasō
+
+--- sake ---
+PROTO: *sakō
+EXPECTED: sacu
+OUTPUTS: sacō
+
+ProtoInput: *s*a*k*ō
+InitialKn: *s*a*k*ō
+Palatalisation: *s*a*k*ō
+ConsonantRules: *s*a*k*ō
+ProtoToOEWeakTail: *s*ā*k*ō
+ProtoToOEWeightMarkers: *s*ā*k*ō
+ProtoToOEApocope: *s*ā*k*ō
+ProtoToOEWeightCleanup: *s*ā*k*ō
+ProtoToOE: *s*a*k*ō
+WGlide: *s*a*k*ō
+GhMarker: *s*a*k*ō
+GlideDeletion: *s*a*k*ō
+Epenthesis: *s*a*k*ō
+Orthography: sacō
+Surface: sacō
+
+--- shame ---
+PROTO: *skamō
+EXPECTED: sċamu
+OUTPUTS: sċamō
+
+ProtoInput: *s*k*a*m*ō
+InitialKn: *s*k*a*m*ō
+Palatalisation: *s*k*a*m*ō
+ConsonantRules: *s*k*a*m*ō
+ProtoToOEWeakTail: *s*k*ā*m*ō
+ProtoToOEWeightMarkers: *s*k*ā*m*ō
+ProtoToOEApocope: *s*k*ā*m*ō
+ProtoToOEWeightCleanup: *s*k*ā*m*ō
+ProtoToOE: *ʃ*a*m*ō
+WGlide: *ʃ*a*m*ō
+GhMarker: *ʃ*a*m*ō
+GlideDeletion: *ʃ*a*m*ō
+Epenthesis: *ʃ*a*m*ō
+Orthography: sċamō
+Surface: sċamō
+
+--- shoulder ---
+PROTO: *skuldrō
+EXPECTED: sċuldra
+OUTPUTS: sċuldrō
+
+ProtoInput: *s*k*u*l*d*r*ō
+InitialKn: *s*k*u*l*d*r*ō
+Palatalisation: *s*k*u*l*d*r*ō
+ConsonantRules: *s*k*u*l*d*r*ō
+ProtoToOEWeakTail: *s*k*u*l*d*r*ō
+ProtoToOEWeightMarkers: *s*k*u*l*d*r*ō
+ProtoToOEApocope: *s*k*u*l*d*r*ō
+ProtoToOEWeightCleanup: *s*k*u*l*d*r*ō
+ProtoToOE: *ʃ*u*l*d*r*ō
+WGlide: *ʃ*u*l*d*r*ō
+GhMarker: *ʃ*u*l*d*r*ō
+GlideDeletion: *ʃ*u*l*d*r*ō
+Epenthesis: *ʃ*u*l*d*r*ō
+Orthography: sċuldrō
+Surface: sċuldrō
+
+--- sister ---
+PROTO: *swestēr
+EXPECTED: swustor
+OUTPUTS: swestēr
+
+ProtoInput: *s*w*e*s*t*ē*r
+InitialKn: *s*w*e*s*t*ē*r
+Palatalisation: *s*w*e*s*t*ē*r
+ConsonantRules: *s*w*e*s*t*ē*r
+ProtoToOEWeakTail: *s*w*e*s*t*ē*r
+ProtoToOEWeightMarkers: *s*w*e*s*t*ē*r
+ProtoToOEApocope: *s*w*e*s*t*ē*r
+ProtoToOEWeightCleanup: *s*w*e*s*t*ē*r
+ProtoToOE: *s*w*e*s*t*ē*r
+WGlide: *s*ʋ*e*s*t*ē*r
+GhMarker: *s*ʋ*e*s*t*ē*r
+GlideDeletion: *s*ʋ*e*s*t*ē*r
+Epenthesis: *s*w*e*s*t*ē*r
+Orthography: swestēr
+Surface: swestēr
+
+--- spare ---
+PROTO: *sparēną
+EXPECTED: spær
+OUTPUTS: spærēn
+
+ProtoInput: *s*p*a*r*ē*n*ą
+InitialKn: *s*p*a*r*ē*n*ą
+Palatalisation: *s*p*a*r*ē*n*ą
+ConsonantRules: *s*p*a*r*ē*n*ą
+ProtoToOEWeakTail: *s*p*ā*r*ē*n
+ProtoToOEWeightMarkers: *s*p*ā*r*ē*n
+ProtoToOEApocope: *s*p*ā*r*ē*n
+ProtoToOEWeightCleanup: *s*p*ā*r*ē*n
+ProtoToOE: *s*p*æ*r*ē*n
+WGlide: *s*p*æ*r*ē*n
+GhMarker: *s*p*æ*r*ē*n
+GlideDeletion: *s*p*æ*r*ē*n
+Epenthesis: *s*p*æ*r*ē*n
+Orthography: spærēn
+Surface: spærēn
+
+--- spindle ---
+PROTO: *spennilō
+EXPECTED: spindle
+OUTPUTS: spinnulō
+
+ProtoInput: *s*p*e*n*n*i*l*ō
+InitialKn: *s*p*e*n*n*i*l*ō
+Palatalisation: *s*p*e*n*n*i*l*ō
+ConsonantRules: *s*p*e*n*n*i*l*ō
+ProtoToOEWeakTail: *s*p*i*n*n*ī*l*ō
+ProtoToOEWeightMarkers: *s*p*i*n*n*ī*l*ō
+ProtoToOEApocope: *s*p*i*n*n*ī*l*ō
+ProtoToOEWeightCleanup: *s*p*i*n*n*ī*l*ō
+ProtoToOE: *s*p*i*n*n*u*l*ō
+WGlide: *s*p*i*n*n*u*l*ō
+GhMarker: *s*p*i*n*n*u*l*ō
+GlideDeletion: *s*p*i*n*n*u*l*ō
+Epenthesis: *s*p*i*n*n*u*l*ō
+Orthography: spinnulō
+Surface: spinnulō
+
+--- tongs ---
+PROTO: *tangō
+EXPECTED: tange
+OUTPUTS: tangō
+
+ProtoInput: *t*a*n*g*ō
+InitialKn: *t*a*n*g*ō
+Palatalisation: *t*a*n*g*ō
+ConsonantRules: *t*a*n*g*ō
+ProtoToOEWeakTail: *t*a*n*g*ō
+ProtoToOEWeightMarkers: *t*a*n*g*ō
+ProtoToOEApocope: *t*a*n*g*ō
+ProtoToOEWeightCleanup: *t*a*n*g*ō
+ProtoToOE: *t*a*n*g*ō
+WGlide: *t*a*n*g*ō
+GhMarker: *t*a*n*g*ō
+GlideDeletion: *t*a*n*g*ō
+Epenthesis: *t*a*n*g*ō
+Orthography: tangō
+Surface: tangō
+
+
+=== BUCKET: final_vowel_missing (31) ===
+
+--- bow ---
+PROTO: *baugjăną
+EXPECTED: boga
+OUTPUTS: bīeġan
+
+ProtoInput: *b*au*g*j*ă*n*ą
+InitialKn: *b*au*g*j*ă*n*ą
+Palatalisation: *b*au*g*j*ă*n*ą
+ConsonantRules: *b*au*g*j*ă*n*ą
+ProtoToOEWeakTail: *b*īe*g*j*ă*n
+ProtoToOEWeightMarkers: *b*īe*g*j*ă*n
+ProtoToOEApocope: *b*īe*g*j*ă*n
+ProtoToOEWeightCleanup: *b*īe*g*j*ă*n
+ProtoToOE: *b*īe*ʤ*j*ă*n
+WGlide: *b*īe*ʤ*j*ă*n
+GhMarker: *b*īe*ʤ*j*ă*n
+GlideDeletion: *b*īe*ʤ*j*ă*n
+Epenthesis: *b*īe*ʤ*j*ă*n
+Orthography: bīeġan
+Surface: bīeġan
+
+--- bow ---
+PROTO: *beugăną
+EXPECTED: boga
+OUTPUTS: bēogan
+
+ProtoInput: *b*eu*g*ă*n*ą
+InitialKn: *b*eu*g*ă*n*ą
+Palatalisation: *b*eu*g*ă*n*ą
+ConsonantRules: *b*eu*g*ă*n*ą
+ProtoToOEWeakTail: *b*ēo*g*ă*n
+ProtoToOEWeightMarkers: *b*ēo*g*ă*n
+ProtoToOEApocope: *b*ēo*g*ă*n
+ProtoToOEWeightCleanup: *b*ēo*g*ă*n
+ProtoToOE: *b*ēo*g*ă*n
+WGlide: *b*ēo*g*ă*n
+GhMarker: *b*ēo*g*ă*n
+GlideDeletion: *b*ēo*g*ă*n
+Epenthesis: *b*ēo*g*ă*n
+Orthography: bēogan
+Surface: bēogan
+
+--- bow ---
+PROTO: *bugōn
+EXPECTED: boga
+OUTPUTS: bugōn
+
+ProtoInput: *b*u*g*ō*n
+InitialKn: *b*u*g*ō*n
+Palatalisation: *b*u*g*ō*n
+ConsonantRules: *b*u*g*ō*n
+ProtoToOEWeakTail: *b*ū*g*ō*n
+ProtoToOEWeightMarkers: *b*ū*g*ō*n
+ProtoToOEApocope: *b*ū*g*ō*n
+ProtoToOEWeightCleanup: *b*ū*g*ō*n
+ProtoToOE: *b*u*g*ō*n
+WGlide: *b*u*g*ō*n
+GhMarker: *b*u*g*ō*n
+GlideDeletion: *b*u*g*ō*n
+Epenthesis: *b*u*g*ō*n
+Orthography: bugōn
+Surface: bugōn
+
+--- cow ---
+PROTO: *kōwz
+EXPECTED: cū
+OUTPUTS: cōw
+
+ProtoInput: *k*ō*w*z
+InitialKn: *k*ō*w*z
+Palatalisation: *k*ō*w*z
+ConsonantRules: *k*ō*w
+ProtoToOEWeakTail: *k*ō*w
+ProtoToOEWeightMarkers: *k*ō*w
+ProtoToOEApocope: *k*ō*w
+ProtoToOEWeightCleanup: *k*ō*w
+ProtoToOE: *k*ō*w
+WGlide: *k*ō*ʋ
+GhMarker: *k*ō*ʋ
+GlideDeletion: *k*ō*ʋ
+Epenthesis: *k*ō*w
+Orthography: cōw
+Surface: cōw
+
+--- cud ---
+PROTO: *kwiθuz
+EXPECTED: cudu
+OUTPUTS: cwiþ
+
+ProtoInput: *k*w*i*θ*u*z
+InitialKn: *k*w*i*θ*u*z
+Palatalisation: *k*w*i*θ*u*z
+ConsonantRules: *k*w*i*θ*u
+ProtoToOEWeakTail: *k*w*ī*θ*u
+ProtoToOEWeightMarkers: *k*w*ī*θ*H*u
+ProtoToOEApocope: *k*w*ī*θ
+ProtoToOEWeightCleanup: *k*w*ī*θ
+ProtoToOE: *k*w*i*θ
+WGlide: *k*ʋ*i*θ
+GhMarker: *k*ʋ*i*θ
+GlideDeletion: *k*ʋ*i*θ
+Epenthesis: *k*w*i*θ
+Orthography: cwiþ, cwi*þ
+Surface: cwiþ
+
+--- dill ---
+PROTO: *deljăz
+EXPECTED: dile
+OUTPUTS: diel
+
+ProtoInput: *d*e*l*j*ă*z
+InitialKn: *d*e*l*j*ă*z
+Palatalisation: *d*e*l*j*ă*z
+ConsonantRules: *d*e*l*j
+ProtoToOEWeakTail: *d*ie*l*j
+ProtoToOEWeightMarkers: *d*ie*l*j
+ProtoToOEApocope: *d*ie*l*j
+ProtoToOEWeightCleanup: *d*ie*l*j
+ProtoToOE: *d*ie*l
+WGlide: *d*ie*l
+GhMarker: *d*ie*l
+GlideDeletion: *d*ie*l
+Epenthesis: *d*ie*l
+Orthography: diel
+Surface: diel
+
+--- foal ---
+PROTO: *fulōn
+EXPECTED: fola
+OUTPUTS: fulōn
+
+ProtoInput: *f*u*l*ō*n
+InitialKn: *f*u*l*ō*n
+Palatalisation: *f*u*l*ō*n
+ConsonantRules: *f*u*l*ō*n
+ProtoToOEWeakTail: *f*ū*l*ō*n
+ProtoToOEWeightMarkers: *f*ū*l*ō*n
+ProtoToOEApocope: *f*ū*l*ō*n
+ProtoToOEWeightCleanup: *f*ū*l*ō*n
+ProtoToOE: *f*u*l*ō*n
+WGlide: *f*u*l*ō*n
+GhMarker: *f*u*l*ō*n
+GlideDeletion: *f*u*l*ō*n
+Epenthesis: *f*u*l*ō*n
+Orthography: fulōn
+Surface: fulōn
+
+--- fright ---
+PROTO: *furxtīn
+EXPECTED: fryhtu
+OUTPUTS: fyrhtīn
+
+ProtoInput: *f*u*r*x*t*ī*n
+InitialKn: *f*u*r*x*t*ī*n
+Palatalisation: *f*u*r*x*t*ī*n
+ConsonantRules: *f*u*r*x*t*ī*n
+ProtoToOEWeakTail: *f*ē*r*x*t*ī*n
+ProtoToOEWeightMarkers: *f*ē*r*x*t*ī*n
+ProtoToOEApocope: *f*ē*r*x*t*ī*n
+ProtoToOEWeightCleanup: *f*ē*r*x*t*ī*n
+ProtoToOE: *f*y*r*x*t*ī*n
+WGlide: *f*y*r*x*t*ī*n
+GhMarker: *f*y*r*x*t*ī*n
+GlideDeletion: *f*y*r*x*t*ī*n
+Epenthesis: *f*y*r*x*t*ī*n
+Orthography: fyrhtīn
+Surface: fyrhtīn
+
+--- handle ---
+PROTO: *xandlōjăną
+EXPECTED: handle
+OUTPUTS: handlēġan
+
+ProtoInput: *x*a*n*d*l*ō*j*ă*n*ą
+InitialKn: *x*a*n*d*l*ō*j*ă*n*ą
+Palatalisation: *x*a*n*d*l*ō*j*ă*n*ą
+ConsonantRules: *x*a*n*d*l*ō*j*ă*n*ą
+ProtoToOEWeakTail: *x*a*n*d*l*ē*j*ă*n
+ProtoToOEWeightMarkers: *x*a*n*d*l*ē*j*ă*n
+ProtoToOEApocope: *x*a*n*d*l*ē*j*ă*n
+ProtoToOEWeightCleanup: *x*a*n*d*l*ē*j*ă*n
+ProtoToOE: *x*a*n*d*l*ē*j*ă*n
+WGlide: *x*a*n*d*l*ē*j*ă*n
+GhMarker: *x*a*n*d*l*ē*j*ă*n
+GlideDeletion: *x*a*n*d*l*ē*j*ă*n
+Epenthesis: *x*a*n*d*l*ē*j*ă*n
+Orthography: handlēġan
+Surface: handlēġan
+
+--- haw ---
+PROTO: *xagōn
+EXPECTED: haga
+OUTPUTS: hagōn
+
+ProtoInput: *x*a*g*ō*n
+InitialKn: *x*a*g*ō*n
+Palatalisation: *x*a*g*ō*n
+ConsonantRules: *x*a*g*ō*n
+ProtoToOEWeakTail: *x*ā*g*ō*n
+ProtoToOEWeightMarkers: *x*ā*g*ō*n
+ProtoToOEApocope: *x*ā*g*ō*n
+ProtoToOEWeightCleanup: *x*ā*g*ō*n
+ProtoToOE: *x*a*g*ō*n
+WGlide: *x*a*g*ō*n
+GhMarker: *x*a*g*ō*n
+GlideDeletion: *x*a*g*ō*n
+Epenthesis: *x*a*g*ō*n
+Orthography: hagōn
+Surface: hagōn
+
+--- heart ---
+PROTO: *xertōn
+EXPECTED: heorte
+OUTPUTS: heortōn
+
+ProtoInput: *x*e*r*t*ō*n
+InitialKn: *x*e*r*t*ō*n
+Palatalisation: *x*e*r*t*ō*n
+ConsonantRules: *x*e*r*t*ō*n
+ProtoToOEWeakTail: *x*eo*r*t*ō*n
+ProtoToOEWeightMarkers: *x*eo*r*t*ō*n
+ProtoToOEApocope: *x*eo*r*t*ō*n
+ProtoToOEWeightCleanup: *x*eo*r*t*ō*n
+ProtoToOE: *ç*eo*r*t*ō*n
+WGlide: *ç*eo*r*t*ō*n
+GhMarker: *ç*eo*r*t*ō*n
+GlideDeletion: *ç*eo*r*t*ō*n
+Epenthesis: *ç*eo*r*t*ō*n
+Orthography: heortōn
+Surface: heortōn
+
+--- helm ---
+PROTO: *xelmăz
+EXPECTED: helma
+OUTPUTS: heolm
+
+ProtoInput: *x*e*l*m*ă*z
+InitialKn: *x*e*l*m*ă*z
+Palatalisation: *x*e*l*m*ă*z
+ConsonantRules: *x*e*l*m
+ProtoToOEWeakTail: *x*eo*l*m
+ProtoToOEWeightMarkers: *x*eo*l*m
+ProtoToOEApocope: *x*eo*l*m
+ProtoToOEWeightCleanup: *x*eo*l*m
+ProtoToOE: *ç*eo*l*m
+WGlide: *ç*eo*l*m
+GhMarker: *ç*eo*l*m
+GlideDeletion: *ç*eo*l*m
+Epenthesis: *ç*eo*l*m
+Orthography: heolm
+Surface: heolm
+
+--- knob ---
+PROTO: *knuppăz
+EXPECTED: cnobba
+OUTPUTS: cnupp
+
+ProtoInput: *k*n*u*p*p*ă*z
+InitialKn: *Kn*u*p*p*ă*z
+Palatalisation: *Kn*u*p*p*ă*z
+ConsonantRules: *Kn*u*p*p
+ProtoToOEWeakTail: *Kn*u*p*p
+ProtoToOEWeightMarkers: *Kn*u*p*p
+ProtoToOEApocope: *Kn*u*p*p
+ProtoToOEWeightCleanup: *Kn*u*p*p
+ProtoToOE: *Kn*u*p*p
+WGlide: *Kn*u*p*p
+GhMarker: *Kn*u*p*p
+GlideDeletion: *Kn*u*p*p
+Epenthesis: *k*n*u*p*p
+Orthography: cnupp
+Surface: cnupp
+
+--- lap ---
+PROTO: *labbăz
+EXPECTED: læppa
+OUTPUTS: læbb
+
+ProtoInput: *l*a*b*b*ă*z
+InitialKn: *l*a*b*b*ă*z
+Palatalisation: *l*a*b*b*ă*z
+ConsonantRules: *l*a*b*b
+ProtoToOEWeakTail: *l*a*b*b
+ProtoToOEWeightMarkers: *l*a*b*b
+ProtoToOEApocope: *l*a*b*b
+ProtoToOEWeightCleanup: *l*a*b*b
+ProtoToOE: *l*æ*b*b
+WGlide: *l*æ*b*b
+GhMarker: *l*æ*b*b
+GlideDeletion: *l*æ*b*b
+Epenthesis: *l*æ*b*b
+Orthography: læbb
+Surface: læbb
+
+--- line ---
+PROTO: *līnăn
+EXPECTED: līne
+OUTPUTS: līnan
+
+ProtoInput: *l*ī*n*ă*n
+InitialKn: *l*ī*n*ă*n
+Palatalisation: *l*ī*n*ă*n
+ConsonantRules: *l*ī*n*ă*n
+ProtoToOEWeakTail: *l*ī*n*ă*n
+ProtoToOEWeightMarkers: *l*ī*n*ă*n
+ProtoToOEApocope: *l*ī*n*ă*n
+ProtoToOEWeightCleanup: *l*ī*n*ă*n
+ProtoToOE: *l*ī*n*ă*n
+WGlide: *l*ī*n*ă*n
+GhMarker: *l*ī*n*ă*n
+GlideDeletion: *l*ī*n*ă*n
+Epenthesis: *l*ī*n*ă*n
+Orthography: līnan
+Surface: līnan
+
+--- list ---
+PROTO: *līstōn
+EXPECTED: līste
+OUTPUTS: līstōn
+
+ProtoInput: *l*ī*s*t*ō*n
+InitialKn: *l*ī*s*t*ō*n
+Palatalisation: *l*ī*s*t*ō*n
+ConsonantRules: *l*ī*s*t*ō*n
+ProtoToOEWeakTail: *l*ī*s*t*ō*n
+ProtoToOEWeightMarkers: *l*ī*s*t*ō*n
+ProtoToOEApocope: *l*ī*s*t*ō*n
+ProtoToOEWeightCleanup: *l*ī*s*t*ō*n
+ProtoToOE: *l*ī*s*t*ō*n
+WGlide: *l*ī*s*t*ō*n
+GhMarker: *l*ī*s*t*ō*n
+GlideDeletion: *l*ī*s*t*ō*n
+Epenthesis: *l*ī*s*t*ō*n
+Orthography: līstōn
+Surface: līstōn
+
+--- name ---
+PROTO: *namōn
+EXPECTED: nama
+OUTPUTS: namōn
+
+ProtoInput: *n*a*m*ō*n
+InitialKn: *n*a*m*ō*n
+Palatalisation: *n*a*m*ō*n
+ConsonantRules: *n*a*m*ō*n
+ProtoToOEWeakTail: *n*ā*m*ō*n
+ProtoToOEWeightMarkers: *n*ā*m*ō*n
+ProtoToOEApocope: *n*ā*m*ō*n
+ProtoToOEWeightCleanup: *n*ā*m*ō*n
+ProtoToOE: *n*a*m*ō*n
+WGlide: *n*a*m*ō*n
+GhMarker: *n*a*m*ō*n
+GlideDeletion: *n*a*m*ō*n
+Epenthesis: *n*a*m*ō*n
+Orthography: namōn
+Surface: namōn
+
+--- navel ---
+PROTO: *nablōn
+EXPECTED: nafola
+OUTPUTS: nablōn
+
+ProtoInput: *n*a*b*l*ō*n
+InitialKn: *n*a*b*l*ō*n
+Palatalisation: *n*a*b*l*ō*n
+ConsonantRules: *n*a*b*l*ō*n
+ProtoToOEWeakTail: *n*a*b*l*ō*n
+ProtoToOEWeightMarkers: *n*a*b*l*ō*n
+ProtoToOEApocope: *n*a*b*l*ō*n
+ProtoToOEWeightCleanup: *n*a*b*l*ō*n
+ProtoToOE: *n*a*b*l*ō*n
+WGlide: *n*a*b*l*ō*n
+GhMarker: *n*a*b*l*ō*n
+GlideDeletion: *n*a*b*l*ō*n
+Epenthesis: *n*a*b*l*ō*n
+Orthography: nablōn
+Surface: nablōn
+
+--- nettle ---
+PROTO: *natilōn
+EXPECTED: netle
+OUTPUTS: netulōn
+
+ProtoInput: *n*a*t*i*l*ō*n
+InitialKn: *n*a*t*i*l*ō*n
+Palatalisation: *n*a*t*i*l*ō*n
+ConsonantRules: *n*a*t*i*l*ō*n
+ProtoToOEWeakTail: *n*ǣ*t*ī*l*ō*n
+ProtoToOEWeightMarkers: *n*ǣ*t*ī*l*ō*n
+ProtoToOEApocope: *n*ǣ*t*ī*l*ō*n
+ProtoToOEWeightCleanup: *n*ǣ*t*ī*l*ō*n
+ProtoToOE: *n*e*t*u*l*ō*n
+WGlide: *n*e*t*u*l*ō*n
+GhMarker: *n*e*t*u*l*ō*n
+GlideDeletion: *n*e*t*u*l*ō*n
+Epenthesis: *n*e*t*u*l*ō*n
+Orthography: netulōn
+Surface: netulōn
+
+--- ox ---
+PROTO: *uxsōn
+EXPECTED: oxa
+OUTPUTS: uhsōn
+
+ProtoInput: *u*x*s*ō*n
+InitialKn: *u*x*s*ō*n
+Palatalisation: *u*x*s*ō*n
+ConsonantRules: *u*x*s*ō*n
+ProtoToOEWeakTail: *u*x*s*ō*n
+ProtoToOEWeightMarkers: *u*x*s*ō*n
+ProtoToOEApocope: *u*x*s*ō*n
+ProtoToOEWeightCleanup: *u*x*s*ō*n
+ProtoToOE: *u*x*s*ō*n
+WGlide: *u*x*s*ō*n
+GhMarker: *u*GH*s*ō*n
+GlideDeletion: *u*GH*s*ō*n
+Epenthesis: *u*x*s*ō*n
+Orthography: uhsōn
+Surface: uhsōn
+
+--- side ---
+PROTO: *sīdōn
+EXPECTED: sīde
+OUTPUTS: sīdōn
+
+ProtoInput: *s*ī*d*ō*n
+InitialKn: *s*ī*d*ō*n
+Palatalisation: *s*ī*d*ō*n
+ConsonantRules: *s*ī*d*ō*n
+ProtoToOEWeakTail: *s*ī*d*ō*n
+ProtoToOEWeightMarkers: *s*ī*d*ō*n
+ProtoToOEApocope: *s*ī*d*ō*n
+ProtoToOEWeightCleanup: *s*ī*d*ō*n
+ProtoToOE: *s*ī*d*ō*n
+WGlide: *s*ī*d*ō*n
+GhMarker: *s*ī*d*ō*n
+GlideDeletion: *s*ī*d*ō*n
+Epenthesis: *s*ī*d*ō*n
+Orthography: sīdōn
+Surface: sīdōn
+
+--- sieve ---
+PROTO: *sibăz
+EXPECTED: sife
+OUTPUTS: sib
+
+ProtoInput: *s*i*b*ă*z
+InitialKn: *s*i*b*ă*z
+Palatalisation: *s*i*b*ă*z
+ConsonantRules: *s*i*b
+ProtoToOEWeakTail: *s*i*b
+ProtoToOEWeightMarkers: *s*i*b
+ProtoToOEApocope: *s*i*b
+ProtoToOEWeightCleanup: *s*i*b
+ProtoToOE: *s*i*b
+WGlide: *s*i*b
+GhMarker: *s*i*b
+GlideDeletion: *s*i*b
+Epenthesis: *s*i*b
+Orthography: sib
+Surface: sib
+
+--- spear ---
+PROTO: *speru
+EXPECTED: spere
+OUTPUTS: spor
+
+ProtoInput: *s*p*e*r*u
+InitialKn: *s*p*e*r*u
+Palatalisation: *s*p*e*r*u
+ConsonantRules: *s*p*e*r*u
+ProtoToOEWeakTail: *s*p*ē*r*u
+ProtoToOEWeightMarkers: *s*p*ē*r*H*u
+ProtoToOEApocope: *s*p*ē*r
+ProtoToOEWeightCleanup: *s*p*ē*r
+ProtoToOE: *s*p*o*r
+WGlide: *s*p*o*r
+GhMarker: *s*p*o*r
+GlideDeletion: *s*p*o*r
+Epenthesis: *s*p*o*r
+Orthography: spor
+Surface: spor
+
+--- spur ---
+PROTO: *spurăn
+EXPECTED: spora
+OUTPUTS: spuran
+
+ProtoInput: *s*p*u*r*ă*n
+InitialKn: *s*p*u*r*ă*n
+Palatalisation: *s*p*u*r*ă*n
+ConsonantRules: *s*p*u*r*ă*n
+ProtoToOEWeakTail: *s*p*ū*r*ă*n
+ProtoToOEWeightMarkers: *s*p*ū*r*ă*n
+ProtoToOEApocope: *s*p*ū*r*ă*n
+ProtoToOEWeightCleanup: *s*p*ū*r*ă*n
+ProtoToOE: *s*p*u*r*ă*n
+WGlide: *s*p*u*r*ă*n
+GhMarker: *s*p*u*r*ă*n
+GlideDeletion: *s*p*u*r*ă*n
+Epenthesis: *s*p*u*r*ă*n
+Orthography: spuran
+Surface: spuran
+
+--- still ---
+PROTO: *stelljăną
+EXPECTED: stille
+OUTPUTS: stiellan
+
+ProtoInput: *s*t*e*l*l*j*ă*n*ą
+InitialKn: *s*t*e*l*l*j*ă*n*ą
+Palatalisation: *s*t*e*l*l*j*ă*n*ą
+ConsonantRules: *s*t*e*l*l*j*ă*n*ą
+ProtoToOEWeakTail: *s*t*ie*l*l*j*ă*n
+ProtoToOEWeightMarkers: *s*t*ie*l*l*j*ă*n
+ProtoToOEApocope: *s*t*ie*l*l*j*ă*n
+ProtoToOEWeightCleanup: *s*t*ie*l*l*j*ă*n
+ProtoToOE: *s*t*ie*l*l*ă*n
+WGlide: *s*t*ie*l*l*ă*n
+GhMarker: *s*t*ie*l*l*ă*n
+GlideDeletion: *s*t*ie*l*l*ă*n
+Epenthesis: *s*t*ie*l*l*ă*n
+Orthography: stiellan
+Surface: stiellan
+
+--- sun ---
+PROTO: *sunnōn
+EXPECTED: sunne
+OUTPUTS: sunnōn
+
+ProtoInput: *s*u*n*n*ō*n
+InitialKn: *s*u*n*n*ō*n
+Palatalisation: *s*u*n*n*ō*n
+ConsonantRules: *s*u*n*n*ō*n
+ProtoToOEWeakTail: *s*u*n*n*ō*n
+ProtoToOEWeightMarkers: *s*u*n*n*ō*n
+ProtoToOEApocope: *s*u*n*n*ō*n
+ProtoToOEWeightCleanup: *s*u*n*n*ō*n
+ProtoToOE: *s*u*n*n*ō*n
+WGlide: *s*u*n*n*ō*n
+GhMarker: *s*u*n*n*ō*n
+GlideDeletion: *s*u*n*n*ō*n
+Epenthesis: *s*u*n*n*ō*n
+Orthography: sunnōn
+Surface: sunnōn
+
+--- tick ---
+PROTO: *tikkōn
+EXPECTED: ticia
+OUTPUTS: tiċcōn
+
+ProtoInput: *t*i*k*k*ō*n
+InitialKn: *t*i*k*k*ō*n
+Palatalisation: *t*i*k*k*ō*n
+ConsonantRules: *t*i*k*k*ō*n
+ProtoToOEWeakTail: *t*i*k*k*ō*n
+ProtoToOEWeightMarkers: *t*i*k*k*ō*n
+ProtoToOEApocope: *t*i*k*k*ō*n
+ProtoToOEWeightCleanup: *t*i*k*k*ō*n
+ProtoToOE: *t*i*ʧ*k*ō*n
+WGlide: *t*i*ʧ*k*ō*n
+GhMarker: *t*i*ʧ*k*ō*n
+GlideDeletion: *t*i*ʧ*k*ō*n
+Epenthesis: *t*i*ʧ*k*ō*n
+Orthography: tiċcōn
+Surface: tiċcōn
+
+--- tongue ---
+PROTO: *tungōn
+EXPECTED: tunge
+OUTPUTS: tungōn
+
+ProtoInput: *t*u*n*g*ō*n
+InitialKn: *t*u*n*g*ō*n
+Palatalisation: *t*u*n*g*ō*n
+ConsonantRules: *t*u*n*g*ō*n
+ProtoToOEWeakTail: *t*u*n*g*ō*n
+ProtoToOEWeightMarkers: *t*u*n*g*ō*n
+ProtoToOEApocope: *t*u*n*g*ō*n
+ProtoToOEWeightCleanup: *t*u*n*g*ō*n
+ProtoToOE: *t*u*n*g*ō*n
+WGlide: *t*u*n*g*ō*n
+GhMarker: *t*u*n*g*ō*n
+GlideDeletion: *t*u*n*g*ō*n
+Epenthesis: *t*u*n*g*ō*n
+Orthography: tungōn
+Surface: tungōn
+
+--- way ---
+PROTO: *wegăz
+EXPECTED: wē
+OUTPUTS: weġ
+
+ProtoInput: *w*e*g*ă*z
+InitialKn: *w*e*g*ă*z
+Palatalisation: *w*e*g*ă*z
+ConsonantRules: *w*e*g
+ProtoToOEWeakTail: *w*e*g
+ProtoToOEWeightMarkers: *w*e*g
+ProtoToOEApocope: *w*e*g
+ProtoToOEWeightCleanup: *w*e*g
+ProtoToOE: *w*e*ʤ
+WGlide: *ʋ*e*ʤ
+GhMarker: *ʋ*e*ʤ
+GlideDeletion: *ʋ*e*ʤ
+Epenthesis: *w*e*ʤ
+Orthography: weġ
+Surface: weġ
+
+--- whore ---
+PROTO: *xōrōn
+EXPECTED: hōre
+OUTPUTS: hōrōn
+
+ProtoInput: *x*ō*r*ō*n
+InitialKn: *x*ō*r*ō*n
+Palatalisation: *x*ō*r*ō*n
+ConsonantRules: *x*ō*r*ō*n
+ProtoToOEWeakTail: *x*ō*r*ō*n
+ProtoToOEWeightMarkers: *x*ō*r*ō*n
+ProtoToOEApocope: *x*ō*r*ō*n
+ProtoToOEWeightCleanup: *x*ō*r*ō*n
+ProtoToOE: *x*ō*r*ō*n
+WGlide: *x*ō*r*ō*n
+GhMarker: *x*ō*r*ō*n
+GlideDeletion: *x*ō*r*ō*n
+Epenthesis: *x*ō*r*ō*n
+Orthography: hōrōn
+Surface: hōrōn
+
+--- widow ---
+PROTO: *widuwōn
+EXPECTED: widuwe
+OUTPUTS: widuwōn
+
+ProtoInput: *w*i*d*u*w*ō*n
+InitialKn: *w*i*d*u*w*ō*n
+Palatalisation: *w*i*d*u*w*ō*n
+ConsonantRules: *w*i*d*u*w*ō*n
+ProtoToOEWeakTail: *w*ī*d*ū*w*ō*n
+ProtoToOEWeightMarkers: *w*ī*d*ū*w*ō*n
+ProtoToOEApocope: *w*ī*d*ū*w*ō*n
+ProtoToOEWeightCleanup: *w*ī*d*ū*w*ō*n
+ProtoToOE: *w*i*d*u*w*ō*n
+WGlide: *ʋ*i*d*u*ʋ*ō*n
+GhMarker: *ʋ*i*d*u*ʋ*ō*n
+GlideDeletion: *ʋ*i*d*u*ō*n
+Epenthesis: *w*i*d*u*w*ō*n
+Orthography: widuwōn
+Surface: widuwōn
+
+
+=== BUCKET: breaking_extra_other (21) ===
+
+--- berry ---
+PROTO: *bazją
+EXPECTED: berġe
+OUTPUTS: bierġa
+
+ProtoInput: *b*a*z*j*ą
+InitialKn: *b*a*z*j*ą
+Palatalisation: *b*a*z*j*ą
+ConsonantRules: *b*a*r*j*ą
+ProtoToOEWeakTail: *b*ie*r*j*ɔ̆, *b*īe*r*j*ɔ̆
+ProtoToOEWeightMarkers: *b*ie*r*j*ɔ̆, *b*īe*r*j*ɔ̆
+ProtoToOEApocope: *b*ie*r*j*ɔ̆, *b*īe*r*j*ɔ̆
+ProtoToOEWeightCleanup: *b*ie*r*j*ɔ̆, *b*īe*r*j*ɔ̆
+ProtoToOE: *b*ie*r*j*ɔ̆
+WGlide: *b*ie*r*j*ɔ̆
+GhMarker: *b*ie*r*j*ɔ̆
+GlideDeletion: *b*ie*r*j*ɔ̆
+Epenthesis: *b*ie*r*j*ɔ̆
+Orthography: bierġŏ, bierġa
+Surface: bierġa
+
+--- bier ---
+PROTO: *barwōn
+EXPECTED: bēr
+OUTPUTS: bearwōn
+
+ProtoInput: *b*a*r*w*ō*n
+InitialKn: *b*a*r*w*ō*n
+Palatalisation: *b*a*r*w*ō*n
+ConsonantRules: *b*a*r*w*ō*n
+ProtoToOEWeakTail: *b*ēa*r*w*ō*n, *b*ea*r*w*ō*n
+ProtoToOEWeightMarkers: *b*ēa*r*w*ō*n, *b*ea*r*w*ō*n
+ProtoToOEApocope: *b*ea*r*w*ō*n, *b*ēa*r*w*ō*n
+ProtoToOEWeightCleanup: *b*ea*r*w*ō*n, *b*ēa*r*w*ō*n
+ProtoToOE: *b*ea*r*w*ō*n
+WGlide: *b*ea*r*ʋ*ō*n
+GhMarker: *b*ea*r*ʋ*ō*n
+GlideDeletion: *b*ea*r*ʋ*ō*n
+Epenthesis: *b*ea*r*w*ō*n
+Orthography: bearwōn
+Surface: bearwōn
+
+--- calf ---
+PROTO: *kalbăz
+EXPECTED: ọmọ
+OUTPUTS: ċealb
+
+ProtoInput: *k*a*l*b*ă*z
+InitialKn: *k*a*l*b*ă*z
+Palatalisation: *k*a*l*b*ă*z
+ConsonantRules: *k*a*l*b
+ProtoToOEWeakTail: *k*ēa*l*b, *k*ea*l*b
+ProtoToOEWeightMarkers: *k*ēa*l*b, *k*ea*l*b
+ProtoToOEApocope: *k*ea*l*b, *k*ēa*l*b
+ProtoToOEWeightCleanup: *k*ea*l*b, *k*ēa*l*b
+ProtoToOE: *ʧ*ea*l*b
+WGlide: *ʧ*ea*l*b
+GhMarker: *ʧ*ea*l*b
+GlideDeletion: *ʧ*ea*l*b
+Epenthesis: *ʧ*ea*l*b
+Orthography: ċealb
+Surface: ċealb
+
+--- field ---
+PROTO: *felθuz
+EXPECTED: feld
+OUTPUTS: feolþ
+
+ProtoInput: *f*e*l*θ*u*z
+InitialKn: *f*e*l*θ*u*z
+Palatalisation: *f*e*l*θ*u*z
+ConsonantRules: *f*e*l*θ*u
+ProtoToOEWeakTail: *f*eo*l*θ*u
+ProtoToOEWeightMarkers: *f*eo*l*θ*H*u
+ProtoToOEApocope: *f*eo*l*θ
+ProtoToOEWeightCleanup: *f*eo*l*θ
+ProtoToOE: *f*eo*l*θ
+WGlide: *f*eo*l*θ
+GhMarker: *f*eo*l*θ
+GlideDeletion: *f*eo*l*θ
+Epenthesis: *f*eo*l*θ
+Orthography: feolþ, feol*þ
+Surface: feolþ
+
+--- forlorn ---
+PROTO: *leusăną
+EXPECTED: forloren
+OUTPUTS: lēosan
+
+ProtoInput: *l*eu*s*ă*n*ą
+InitialKn: *l*eu*s*ă*n*ą
+Palatalisation: *l*eu*s*ă*n*ą
+ConsonantRules: *l*eu*s*ă*n*ą
+ProtoToOEWeakTail: *l*ēo*s*ă*n
+ProtoToOEWeightMarkers: *l*ēo*s*ă*n
+ProtoToOEApocope: *l*ēo*s*ă*n
+ProtoToOEWeightCleanup: *l*ēo*s*ă*n
+ProtoToOE: *l*ēo*s*ă*n
+WGlide: *l*ēo*s*ă*n
+GhMarker: *l*ēo*s*ă*n
+GlideDeletion: *l*ēo*s*ă*n
+Epenthesis: *l*ēo*s*ă*n
+Orthography: lēosan
+Surface: lēosan
+
+--- hair ---
+PROTO: *xazwăz
+EXPECTED: hǣr
+OUTPUTS: hearw
+
+ProtoInput: *x*a*z*w*ă*z
+InitialKn: *x*a*z*w*ă*z
+Palatalisation: *x*a*z*w*ă*z
+ConsonantRules: *x*a*r*w
+ProtoToOEWeakTail: *x*ēa*r*w, *x*ea*r*w
+ProtoToOEWeightMarkers: *x*ēa*r*w, *x*ea*r*w
+ProtoToOEApocope: *x*ea*r*w, *x*ēa*r*w
+ProtoToOEWeightCleanup: *x*ea*r*w, *x*ēa*r*w
+ProtoToOE: *ç*ea*r*w
+WGlide: *ç*ea*r*ʋ
+GhMarker: *ç*ea*r*ʋ
+GlideDeletion: *ç*ea*r*ʋ
+Epenthesis: *ç*ea*r*w
+Orthography: hearw
+Surface: hearw
+
+--- harvest ---
+PROTO: *xarbistuz
+EXPECTED: hærfest
+OUTPUTS: hierbist
+
+ProtoInput: *x*a*r*b*i*s*t*u*z
+InitialKn: *x*a*r*b*i*s*t*u*z
+Palatalisation: *x*a*r*b*i*s*t*u*z
+ConsonantRules: *x*a*r*b*i*s*t*u
+ProtoToOEWeakTail: *x*ie*r*b*i*s*t*u, *x*īe*r*b*i*s*t*u
+ProtoToOEWeightMarkers: *x*ie*r*b*i*s*t*H*u, *x*īe*r*b*i*s*t*H*u
+ProtoToOEApocope: *x*ie*r*b*i*s*t, *x*īe*r*b*i*s*t
+ProtoToOEWeightCleanup: *x*ie*r*b*i*s*t, *x*īe*r*b*i*s*t
+ProtoToOE: *ç*ie*r*b*i*s*t
+WGlide: *ç*ie*r*b*i*s*t
+GhMarker: *ç*ie*r*b*i*s*t
+GlideDeletion: *ç*ie*r*b*i*s*t
+Epenthesis: *ç*ie*r*b*i*s*t
+Orthography: hierbist
+Surface: hierbist
+
+--- help ---
+PROTO: *xelpăną
+EXPECTED: help
+OUTPUTS: heolpan
+
+ProtoInput: *x*e*l*p*ă*n*ą
+InitialKn: *x*e*l*p*ă*n*ą
+Palatalisation: *x*e*l*p*ă*n*ą
+ConsonantRules: *x*e*l*p*ă*n*ą
+ProtoToOEWeakTail: *x*eo*l*p*ă*n
+ProtoToOEWeightMarkers: *x*eo*l*p*ă*n
+ProtoToOEApocope: *x*eo*l*p*ă*n
+ProtoToOEWeightCleanup: *x*eo*l*p*ă*n
+ProtoToOE: *ç*eo*l*p*ă*n
+WGlide: *ç*eo*l*p*ă*n
+GhMarker: *ç*eo*l*p*ă*n
+GlideDeletion: *ç*eo*l*p*ă*n
+Epenthesis: *ç*eo*l*p*ă*n
+Orthography: heolpan
+Surface: heolpan
+
+--- hold ---
+PROTO: *xaldăną
+EXPECTED: hold
+OUTPUTS: healdan
+
+ProtoInput: *x*a*l*d*ă*n*ą
+InitialKn: *x*a*l*d*ă*n*ą
+Palatalisation: *x*a*l*d*ă*n*ą
+ConsonantRules: *x*a*l*d*ă*n*ą
+ProtoToOEWeakTail: *x*ēa*l*d*ă*n, *x*ea*l*d*ă*n
+ProtoToOEWeightMarkers: *x*ēa*l*d*ă*n, *x*ea*l*d*ă*n
+ProtoToOEApocope: *x*ea*l*d*ă*n, *x*ēa*l*d*ă*n
+ProtoToOEWeightCleanup: *x*ea*l*d*ă*n, *x*ēa*l*d*ă*n
+ProtoToOE: *ç*ea*l*d*ă*n
+WGlide: *ç*ea*l*d*ă*n
+GhMarker: *ç*ea*l*d*ă*n
+GlideDeletion: *ç*ea*l*d*ă*n
+Epenthesis: *ç*ea*l*d*ă*n
+Orthography: healdan
+Surface: healdan
+
+--- knight ---
+PROTO: *knixtăz
+EXPECTED: cniht
+OUTPUTS: cnieht
+
+ProtoInput: *k*n*i*x*t*ă*z
+InitialKn: *Kn*i*x*t*ă*z
+Palatalisation: *Kn*i*x*t*ă*z
+ConsonantRules: *Kn*i*x*t
+ProtoToOEWeakTail: *Kn*ie*x*t
+ProtoToOEWeightMarkers: *Kn*ie*x*t
+ProtoToOEApocope: *Kn*ie*x*t
+ProtoToOEWeightCleanup: *Kn*ie*x*t
+ProtoToOE: *Kn*ie*x*t
+WGlide: *Kn*ie*x*t
+GhMarker: *Kn*ie*GH*t
+GlideDeletion: *Kn*ie*GH*t
+Epenthesis: *k*n*ie*x*t
+Orthography: cnieht
+Surface: cnieht
+
+--- night ---
+PROTO: *naxtz
+EXPECTED: niht
+OUTPUTS: neaht
+
+ProtoInput: *n*a*x*t*z
+InitialKn: *n*a*x*t*z
+Palatalisation: *n*a*x*t*z
+ConsonantRules: *n*a*x*t
+ProtoToOEWeakTail: *n*ēa*x*t, *n*ea*x*t
+ProtoToOEWeightMarkers: *n*ēa*x*t, *n*ea*x*t
+ProtoToOEApocope: *n*ea*x*t, *n*ēa*x*t
+ProtoToOEWeightCleanup: *n*ea*x*t, *n*ēa*x*t
+ProtoToOE: *n*ea*x*t
+WGlide: *n*ea*x*t
+GhMarker: *n*ea*GH*t
+GlideDeletion: *n*ea*GH*t
+Epenthesis: *n*ea*x*t
+Orthography: neaht
+Surface: neaht
+
+--- nine ---
+PROTO: *newun
+EXPECTED: nigon
+OUTPUTS: nēowun
+
+ProtoInput: *n*e*w*u*n
+InitialKn: *n*e*w*u*n
+Palatalisation: *n*e*w*u*n
+ConsonantRules: *n*e*w*u*n
+ProtoToOEWeakTail: *n*ēo*w*u*n
+ProtoToOEWeightMarkers: *n*ēo*w*u*n
+ProtoToOEApocope: *n*ēo*w*u*n
+ProtoToOEWeightCleanup: *n*ēo*w*u*n
+ProtoToOE: *n*ēo*w*u*n
+WGlide: *n*ēo*ʋ*u*n
+GhMarker: *n*ēo*ʋ*u*n
+GlideDeletion: *n*ēo*u*n
+Epenthesis: *n*ēo*w*u*n
+Orthography: nēowun
+Surface: nēowun
+
+--- shove ---
+PROTO: *skeubăną
+EXPECTED: sċūfan
+OUTPUTS: sċēoban
+
+ProtoInput: *s*k*eu*b*ă*n*ą
+InitialKn: *s*k*eu*b*ă*n*ą
+Palatalisation: *ʃ*eu*b*ă*n*ą
+ConsonantRules: *ʃ*eu*b*ă*n*ą
+ProtoToOEWeakTail: *ʃ*ēo*b*ă*n
+ProtoToOEWeightMarkers: *ʃ*ēo*b*ă*n
+ProtoToOEApocope: *ʃ*ēo*b*ă*n
+ProtoToOEWeightCleanup: *ʃ*ēo*b*ă*n
+ProtoToOE: *ʃ*ēo*b*ă*n
+WGlide: *ʃ*ēo*b*ă*n
+GhMarker: *ʃ*ēo*b*ă*n
+GlideDeletion: *ʃ*ēo*b*ă*n
+Epenthesis: *ʃ*ēo*b*ă*n
+Orthography: sċēoban
+Surface: sċēoban
+
+--- six ---
+PROTO: *sexs
+EXPECTED: six
+OUTPUTS: seohs
+
+ProtoInput: *s*e*x*s
+InitialKn: *s*e*x*s
+Palatalisation: *s*e*x*s
+ConsonantRules: *s*e*x*s
+ProtoToOEWeakTail: *s*eo*x*s
+ProtoToOEWeightMarkers: *s*eo*x*s
+ProtoToOEApocope: *s*eo*x*s
+ProtoToOEWeightCleanup: *s*eo*x*s
+ProtoToOE: *s*eo*x*s
+WGlide: *s*eo*x*s
+GhMarker: *s*eo*GH*s
+GlideDeletion: *s*eo*GH*s
+Epenthesis: *s*eo*x*s
+Orthography: seohs
+Surface: seohs
+
+--- spar ---
+PROTO: *sparrōn
+EXPECTED: sperran
+OUTPUTS: spearrōn
+
+ProtoInput: *s*p*a*r*r*ō*n
+InitialKn: *s*p*a*r*r*ō*n
+Palatalisation: *s*p*a*r*r*ō*n
+ConsonantRules: *s*p*a*r*r*ō*n
+ProtoToOEWeakTail: *s*p*ēa*r*r*ō*n, *s*p*ea*r*r*ō*n
+ProtoToOEWeightMarkers: *s*p*ēa*r*r*ō*n, *s*p*ea*r*r*ō*n
+ProtoToOEApocope: *s*p*ea*r*r*ō*n, *s*p*ēa*r*r*ō*n
+ProtoToOEWeightCleanup: *s*p*ea*r*r*ō*n, *s*p*ēa*r*r*ō*n
+ProtoToOE: *s*p*ea*r*r*ō*n
+WGlide: *s*p*ea*r*r*ō*n
+GhMarker: *s*p*ea*r*r*ō*n
+GlideDeletion: *s*p*ea*r*r*ō*n
+Epenthesis: *s*p*ea*r*r*ō*n
+Orthography: spearrōn
+Surface: spearrōn
+
+--- steal ---
+PROTO: *stelăną
+EXPECTED: stelan
+OUTPUTS: steolan
+
+ProtoInput: *s*t*e*l*ă*n*ą
+InitialKn: *s*t*e*l*ă*n*ą
+Palatalisation: *s*t*e*l*ă*n*ą
+ConsonantRules: *s*t*e*l*ă*n*ą
+ProtoToOEWeakTail: *s*t*ē*l*ă*n
+ProtoToOEWeightMarkers: *s*t*ē*l*ă*n
+ProtoToOEApocope: *s*t*ē*l*ă*n
+ProtoToOEWeightCleanup: *s*t*ē*l*ă*n
+ProtoToOE: *s*t*eo*l*ă*n
+WGlide: *s*t*eo*l*ă*n
+GhMarker: *s*t*eo*l*ă*n
+GlideDeletion: *s*t*eo*l*ă*n
+Epenthesis: *s*t*eo*l*ă*n
+Orthography: steolan
+Surface: steolan
+
+--- swallow ---
+PROTO: *swalgwōn
+EXPECTED: swelgan
+OUTPUTS: swealgwōn
+
+ProtoInput: *s*w*a*l*g*w*ō*n
+InitialKn: *s*w*a*l*g*w*ō*n
+Palatalisation: *s*w*a*l*g*w*ō*n
+ConsonantRules: *s*w*a*l*g*w*ō*n
+ProtoToOEWeakTail: *s*w*ēa*l*g*w*ō*n, *s*w*ea*l*g*w*ō*n
+ProtoToOEWeightMarkers: *s*w*ēa*l*g*w*ō*n, *s*w*ea*l*g*w*ō*n
+ProtoToOEApocope: *s*w*ea*l*g*w*ō*n, *s*w*ēa*l*g*w*ō*n
+ProtoToOEWeightCleanup: *s*w*ea*l*g*w*ō*n, *s*w*ēa*l*g*w*ō*n
+ProtoToOE: *s*w*ea*l*g*w*ō*n
+WGlide: *s*ʋ*ea*l*g*ʋ*ō*n
+GhMarker: *s*ʋ*ea*l*g*ʋ*ō*n
+GlideDeletion: *s*ʋ*ea*l*g*ʋ*ō*n
+Epenthesis: *s*w*ea*l*g*w*ō*n
+Orthography: swealgwōn
+Surface: swealgwōn
+
+--- swell ---
+PROTO: *swellăną
+EXPECTED: swellan
+OUTPUTS: sweollan
+
+ProtoInput: *s*w*e*l*l*ă*n*ą
+InitialKn: *s*w*e*l*l*ă*n*ą
+Palatalisation: *s*w*e*l*l*ă*n*ą
+ConsonantRules: *s*w*e*l*l*ă*n*ą
+ProtoToOEWeakTail: *s*w*eo*l*l*ă*n
+ProtoToOEWeightMarkers: *s*w*eo*l*l*ă*n
+ProtoToOEApocope: *s*w*eo*l*l*ă*n
+ProtoToOEWeightCleanup: *s*w*eo*l*l*ă*n
+ProtoToOE: *s*w*eo*l*l*ă*n
+WGlide: *s*ʋ*eo*l*l*ă*n
+GhMarker: *s*ʋ*eo*l*l*ă*n
+GlideDeletion: *s*ʋ*eo*l*l*ă*n
+Epenthesis: *s*w*eo*l*l*ă*n
+Orthography: sweollan
+Surface: sweollan
+
+--- will ---
+PROTO: *waljăną
+EXPECTED: willan
+OUTPUTS: wielan
+
+ProtoInput: *w*a*l*j*ă*n*ą
+InitialKn: *w*a*l*j*ă*n*ą
+Palatalisation: *w*a*l*j*ă*n*ą
+ConsonantRules: *w*a*l*j*ă*n*ą
+ProtoToOEWeakTail: *w*ie*l*j*ă*n, *w*īe*l*j*ă*n
+ProtoToOEWeightMarkers: *w*ie*l*j*ă*n, *w*īe*l*j*ă*n
+ProtoToOEApocope: *w*ie*l*j*ă*n, *w*īe*l*j*ă*n
+ProtoToOEWeightCleanup: *w*ie*l*j*ă*n, *w*īe*l*j*ă*n
+ProtoToOE: *w*ie*l*ă*n
+WGlide: *ʋ*ie*l*ă*n
+GhMarker: *ʋ*ie*l*ă*n
+GlideDeletion: *ʋ*ie*l*ă*n
+Epenthesis: *w*ie*l*ă*n
+Orthography: wielan
+Surface: wielan
+
+--- will ---
+PROTO: *weljōn
+EXPECTED: willan
+OUTPUTS: wielōn
+
+ProtoInput: *w*e*l*j*ō*n
+InitialKn: *w*e*l*j*ō*n
+Palatalisation: *w*e*l*j*ō*n
+ConsonantRules: *w*e*l*j*ō*n
+ProtoToOEWeakTail: *w*ie*l*j*ō*n
+ProtoToOEWeightMarkers: *w*ie*l*j*ō*n
+ProtoToOEApocope: *w*ie*l*j*ō*n
+ProtoToOEWeightCleanup: *w*ie*l*j*ō*n
+ProtoToOE: *w*ie*l*ō*n
+WGlide: *ʋ*ie*l*ō*n
+GhMarker: *ʋ*ie*l*ō*n
+GlideDeletion: *ʋ*ie*l*ō*n
+Epenthesis: *w*ie*l*ō*n
+Orthography: wielōn
+Surface: wielōn
+
+--- wold ---
+PROTO: *walθuz
+EXPECTED: wald
+OUTPUTS: wealþ
+
+ProtoInput: *w*a*l*θ*u*z
+InitialKn: *w*a*l*θ*u*z
+Palatalisation: *w*a*l*θ*u*z
+ConsonantRules: *w*a*l*θ*u
+ProtoToOEWeakTail: *w*ēa*l*θ*u, *w*ea*l*θ*u
+ProtoToOEWeightMarkers: *w*ēa*l*θ*H*u, *w*ea*l*θ*H*u
+ProtoToOEApocope: *w*ea*l*θ, *w*ēa*l*θ
+ProtoToOEWeightCleanup: *w*ea*l*θ, *w*ēa*l*θ
+ProtoToOE: *w*ea*l*θ
+WGlide: *ʋ*ea*l*θ
+GhMarker: *ʋ*ea*l*θ
+GlideDeletion: *ʋ*ea*l*θ
+Epenthesis: *w*ea*l*θ
+Orthography: wealþ, weal*þ
+Surface: wealþ
+
+
+=== BUCKET: final_n_missing (10) ===
+
+--- fell ---
+PROTO: *fellą
+EXPECTED: fellan
+OUTPUTS: feolla
+
+ProtoInput: *f*e*l*l*ą
+InitialKn: *f*e*l*l*ą
+Palatalisation: *f*e*l*l*ą
+ConsonantRules: *f*e*l*l*ą
+ProtoToOEWeakTail: *f*eo*l*l*ɔ̆
+ProtoToOEWeightMarkers: *f*eo*l*l*ɔ̆
+ProtoToOEApocope: *f*eo*l*l*ɔ̆
+ProtoToOEWeightCleanup: *f*eo*l*l*ɔ̆
+ProtoToOE: *f*eo*l*l*ɔ̆
+WGlide: *f*eo*l*l*ɔ̆
+GhMarker: *f*eo*l*l*ɔ̆
+GlideDeletion: *f*eo*l*l*ɔ̆
+Epenthesis: *f*eo*l*l*ɔ̆
+Orthography: feollŏ, feolla
+Surface: feolla
+
+--- gang ---
+PROTO: *gangăz
+EXPECTED: gangan
+OUTPUTS: ġæng
+
+ProtoInput: *g*a*n*g*ă*z
+InitialKn: *g*a*n*g*ă*z
+Palatalisation: *g*a*n*g*ă*z
+ConsonantRules: *g*a*n*g
+ProtoToOEWeakTail: *g*a*n*g
+ProtoToOEWeightMarkers: *g*a*n*g
+ProtoToOEApocope: *g*a*n*g
+ProtoToOEWeightCleanup: *g*a*n*g
+ProtoToOE: *ʤ*æ*n*g
+WGlide: *ʤ*æ*n*g
+GhMarker: *ʤ*æ*n*g
+GlideDeletion: *ʤ*æ*n*g
+Epenthesis: *ʤ*æ*n*g
+Orthography: ġæng
+Surface: ġæng
+
+--- hind ---
+PROTO: *xendjō
+EXPECTED: hindan
+OUTPUTS: hindō
+
+ProtoInput: *x*e*n*d*j*ō
+InitialKn: *x*e*n*d*j*ō
+Palatalisation: *x*e*n*d*j*ō
+ConsonantRules: *x*e*n*d*j*ō
+ProtoToOEWeakTail: *x*i*n*d*j*ō
+ProtoToOEWeightMarkers: *x*i*n*d*j*ō
+ProtoToOEApocope: *x*i*n*d*j*ō
+ProtoToOEWeightCleanup: *x*i*n*d*j*ō
+ProtoToOE: *ç*i*n*d*ō
+WGlide: *ç*i*n*d*ō
+GhMarker: *ç*i*n*d*ō
+GlideDeletion: *ç*i*n*d*ō
+Epenthesis: *ç*i*n*d*ō
+Orthography: hindō
+Surface: hindō
+
+--- linden ---
+PROTO: *lindō
+EXPECTED: linden
+OUTPUTS: lindō
+
+ProtoInput: *l*i*n*d*ō
+InitialKn: *l*i*n*d*ō
+Palatalisation: *l*i*n*d*ō
+ConsonantRules: *l*i*n*d*ō
+ProtoToOEWeakTail: *l*i*n*d*ō
+ProtoToOEWeightMarkers: *l*i*n*d*ō
+ProtoToOEApocope: *l*i*n*d*ō
+ProtoToOEWeightCleanup: *l*i*n*d*ō
+ProtoToOE: *l*i*n*d*ō
+WGlide: *l*i*n*d*ō
+GhMarker: *l*i*n*d*ō
+GlideDeletion: *l*i*n*d*ō
+Epenthesis: *l*i*n*d*ō
+Orthography: lindō
+Surface: lindō
+
+--- lung ---
+PROTO: *lungwą
+EXPECTED: lungen
+OUTPUTS: lungwa
+
+ProtoInput: *l*u*n*g*w*ą
+InitialKn: *l*u*n*g*w*ą
+Palatalisation: *l*u*n*g*w*ą
+ConsonantRules: *l*u*n*g*w*ą
+ProtoToOEWeakTail: *l*u*n*g*w*ɔ̆
+ProtoToOEWeightMarkers: *l*u*n*g*w*ɔ̆
+ProtoToOEApocope: *l*u*n*g*w*ɔ̆
+ProtoToOEWeightCleanup: *l*u*n*g*w*ɔ̆
+ProtoToOE: *l*u*n*g*w*ɔ̆
+WGlide: *l*u*n*g*ʋ*ɔ̆
+GhMarker: *l*u*n*g*ʋ*ɔ̆
+GlideDeletion: *l*u*n*g*ʋ*ɔ̆
+Epenthesis: *l*u*n*g*w*ɔ̆
+Orthography: lungwŏ, lungwa
+Surface: lungwa
+
+--- march ---
+PROTO: *markō
+EXPECTED: mearcian
+OUTPUTS: mearcō
+
+ProtoInput: *m*a*r*k*ō
+InitialKn: *m*a*r*k*ō
+Palatalisation: *m*a*r*k*ō
+ConsonantRules: *m*a*r*k*ō
+ProtoToOEWeakTail: *m*ēa*r*k*ō, *m*ea*r*k*ō
+ProtoToOEWeightMarkers: *m*ēa*r*k*ō, *m*ea*r*k*ō
+ProtoToOEApocope: *m*ea*r*k*ō, *m*ēa*r*k*ō
+ProtoToOEWeightCleanup: *m*ea*r*k*ō, *m*ēa*r*k*ō
+ProtoToOE: *m*ea*r*k*ō
+WGlide: *m*ea*r*k*ō
+GhMarker: *m*ea*r*k*ō
+GlideDeletion: *m*ea*r*k*ō
+Epenthesis: *m*ea*r*k*ō
+Orthography: mearcō
+Surface: mearcō
+
+--- one ---
+PROTO: *end
+EXPECTED: ān
+OUTPUTS: end
+
+ProtoInput: *e*n*d
+InitialKn: *e*n*d
+Palatalisation: *e*n*d
+ConsonantRules: *e*n*d
+ProtoToOEWeakTail: *e*n*d
+ProtoToOEWeightMarkers: *e*n*d
+ProtoToOEApocope: *e*n*d
+ProtoToOEWeightCleanup: *e*n*d
+ProtoToOE: *e*n*d
+WGlide: *e*n*d
+GhMarker: *e*n*d
+GlideDeletion: *e*n*d
+Epenthesis: *e*n*d
+Orthography: end
+Surface: end
+
+--- span ---
+PROTO: *spannō
+EXPECTED: spann
+OUTPUTS: spannō
+
+ProtoInput: *s*p*a*n*n*ō
+InitialKn: *s*p*a*n*n*ō
+Palatalisation: *s*p*a*n*n*ō
+ConsonantRules: *s*p*a*n*n*ō
+ProtoToOEWeakTail: *s*p*a*n*n*ō
+ProtoToOEWeightMarkers: *s*p*a*n*n*ō
+ProtoToOEApocope: *s*p*a*n*n*ō
+ProtoToOEWeightCleanup: *s*p*a*n*n*ō
+ProtoToOE: *s*p*a*n*n*ō
+WGlide: *s*p*a*n*n*ō
+GhMarker: *s*p*a*n*n*ō
+GlideDeletion: *s*p*a*n*n*ō
+Epenthesis: *s*p*a*n*n*ō
+Orthography: spannō
+Surface: spannō
+
+--- thousand ---
+PROTO: *θūs-undī
+EXPECTED: sendan
+OUTPUTS: þūsyndī
+
+ProtoInput: *θ*ū*s*u*n*d*ī
+InitialKn: *θ*ū*s*u*n*d*ī
+Palatalisation: *θ*ū*s*u*n*d*ī
+ConsonantRules: *θ*ū*s*u*n*d*ī
+ProtoToOEWeakTail: *θ*ū*s*y*n*d*ī
+ProtoToOEWeightMarkers: *θ*ū*s*y*n*d*ī
+ProtoToOEApocope: *θ*ū*s*y*n*d*ī
+ProtoToOEWeightCleanup: *θ*ū*s*y*n*d*ī
+ProtoToOE: *θ*ū*s*y*n*d*ī
+WGlide: *θ*ū*s*y*n*d*ī
+GhMarker: *θ*ū*s*y*n*d*ī
+GlideDeletion: *θ*ū*s*y*n*d*ī
+Epenthesis: *θ*ū*s*y*n*d*ī
+Orthography: þūsyndī, *þūsyndī
+Surface: þūsyndī
+
+--- tide ---
+PROTO: *tīdiz
+EXPECTED: tīdan
+OUTPUTS: tīde
+
+ProtoInput: *t*ī*d*i*z
+InitialKn: *t*ī*d*i*z
+Palatalisation: *t*ī*d*i*z
+ConsonantRules: *t*ī*d*i
+ProtoToOEWeakTail: *t*ī*d*e
+ProtoToOEWeightMarkers: *t*ī*d*e
+ProtoToOEApocope: *t*ī*d*e
+ProtoToOEWeightCleanup: *t*ī*d*e
+ProtoToOE: *t*ī*d*e
+WGlide: *t*ī*d*e
+GhMarker: *t*ī*d*e
+GlideDeletion: *t*ī*d*e
+Epenthesis: *t*ī*d*e
+Orthography: tīde
+Surface: tīde
+
+
+=== BUCKET: palatal_extra_other (16) ===
+
+--- bake ---
+PROTO: *bakăną
+EXPECTED: bacan
+OUTPUTS: bæċan
+
+ProtoInput: *b*a*k*ă*n*ą
+InitialKn: *b*a*k*ă*n*ą
+Palatalisation: *b*a*k*ă*n*ą
+ConsonantRules: *b*a*k*ă*n*ą
+ProtoToOEWeakTail: *b*ā*k*ă*n
+ProtoToOEWeightMarkers: *b*ā*k*ă*n
+ProtoToOEApocope: *b*ā*k*ă*n
+ProtoToOEWeightCleanup: *b*ā*k*ă*n
+ProtoToOE: *b*æ*ʧ*ă*n
+WGlide: *b*æ*ʧ*ă*n
+GhMarker: *b*æ*ʧ*ă*n
+GlideDeletion: *b*æ*ʧ*ă*n
+Epenthesis: *b*æ*ʧ*ă*n
+Orthography: bæċan
+Surface: bæċan
+
+--- begin ---
+PROTO: *biginnăną
+EXPECTED: beginnan
+OUTPUTS: biġinnan
+
+ProtoInput: *b*i*g*i*n*n*ă*n*ą
+InitialKn: *b*i*g*i*n*n*ă*n*ą
+Palatalisation: *b*i*ʤ*i*n*n*ă*n*ą
+ConsonantRules: *b*i*ʤ*i*n*n*ă*n*ą
+ProtoToOEWeakTail: *b*i*ʤ*i*n*n*ă*n
+ProtoToOEWeightMarkers: *b*i*ʤ*i*n*n*ă*n
+ProtoToOEApocope: *b*i*ʤ*i*n*n*ă*n
+ProtoToOEWeightCleanup: *b*i*ʤ*i*n*n*ă*n
+ProtoToOE: *b*i*ʤ*i*n*n*ă*n
+WGlide: *b*i*ʤ*i*n*n*ă*n
+GhMarker: *b*i*ʤ*i*n*n*ă*n
+GlideDeletion: *b*i*ʤ*i*n*n*ă*n
+Epenthesis: *b*i*ʤ*i*n*n*ă*n
+Orthography: biġinnan
+Surface: biġinnan
+
+--- bore ---
+PROTO: *burōjăną
+EXPECTED: borian
+OUTPUTS: burēġan
+
+ProtoInput: *b*u*r*ō*j*ă*n*ą
+InitialKn: *b*u*r*ō*j*ă*n*ą
+Palatalisation: *b*u*r*ō*j*ă*n*ą
+ConsonantRules: *b*u*r*ō*j*ă*n*ą
+ProtoToOEWeakTail: *b*ū*r*ē*j*ă*n
+ProtoToOEWeightMarkers: *b*ū*r*ē*j*ă*n
+ProtoToOEApocope: *b*ū*r*ē*j*ă*n
+ProtoToOEWeightCleanup: *b*ū*r*ē*j*ă*n
+ProtoToOE: *b*u*r*ē*j*ă*n
+WGlide: *b*u*r*ē*j*ă*n
+GhMarker: *b*u*r*ē*j*ă*n
+GlideDeletion: *b*u*r*ē*j*ă*n
+Epenthesis: *b*u*r*ē*j*ă*n
+Orthography: burēġan
+Surface: burēġan
+
+--- break ---
+PROTO: *brekăną
+EXPECTED: brecan
+OUTPUTS: breċan
+
+ProtoInput: *b*r*e*k*ă*n*ą
+InitialKn: *b*r*e*k*ă*n*ą
+Palatalisation: *b*r*e*k*ă*n*ą
+ConsonantRules: *b*r*e*k*ă*n*ą
+ProtoToOEWeakTail: *b*r*ē*k*ă*n
+ProtoToOEWeightMarkers: *b*r*ē*k*ă*n
+ProtoToOEApocope: *b*r*ē*k*ă*n
+ProtoToOEWeightCleanup: *b*r*ē*k*ă*n
+ProtoToOE: *b*r*e*ʧ*ă*n
+WGlide: *b*r*e*ʧ*ă*n
+GhMarker: *b*r*e*ʧ*ă*n
+GlideDeletion: *b*r*e*ʧ*ă*n
+Epenthesis: *b*r*e*ʧ*ă*n
+Orthography: breċan
+Surface: breċan
+
+--- comb ---
+PROTO: *kambăz
+EXPECTED: camb
+OUTPUTS: ċæmb
+
+ProtoInput: *k*a*m*b*ă*z
+InitialKn: *k*a*m*b*ă*z
+Palatalisation: *k*a*m*b*ă*z
+ConsonantRules: *k*a*m*b
+ProtoToOEWeakTail: *k*a*m*b
+ProtoToOEWeightMarkers: *k*a*m*b
+ProtoToOEApocope: *k*a*m*b
+ProtoToOEWeightCleanup: *k*a*m*b
+ProtoToOE: *ʧ*æ*m*b
+WGlide: *ʧ*æ*m*b
+GhMarker: *ʧ*æ*m*b
+GlideDeletion: *ʧ*æ*m*b
+Epenthesis: *ʧ*æ*m*b
+Orthography: ċæmb
+Surface: ċæmb
+
+--- follow ---
+PROTO: *fulgēną
+EXPECTED: folgian
+OUTPUTS: fulġēn
+
+ProtoInput: *f*u*l*g*ē*n*ą
+InitialKn: *f*u*l*g*ē*n*ą
+Palatalisation: *f*u*l*ʤ*ē*n*ą
+ConsonantRules: *f*u*l*ʤ*ē*n*ą
+ProtoToOEWeakTail: *f*u*l*ʤ*ē*n
+ProtoToOEWeightMarkers: *f*u*l*ʤ*ē*n
+ProtoToOEApocope: *f*u*l*ʤ*ē*n
+ProtoToOEWeightCleanup: *f*u*l*ʤ*ē*n
+ProtoToOE: *f*u*l*ʤ*ē*n
+WGlide: *f*u*l*ʤ*ē*n
+GhMarker: *f*u*l*ʤ*ē*n
+GlideDeletion: *f*u*l*ʤ*ē*n
+Epenthesis: *f*u*l*ʤ*ē*n
+Orthography: fulġēn
+Surface: fulġēn
+
+--- goose ---
+PROTO: *gansz
+EXPECTED: gōs
+OUTPUTS: ġēs
+
+ProtoInput: *g*a*n*s*z
+InitialKn: *g*a*n*s*z
+Palatalisation: *g*a*n*s*z
+ConsonantRules: *g*a*n*s
+ProtoToOEWeakTail: *g*ā*s
+ProtoToOEWeightMarkers: *g*ā*s
+ProtoToOEApocope: *g*ā*s
+ProtoToOEWeightCleanup: *g*ā*s
+ProtoToOE: *ʤ*ē*s
+WGlide: *ʤ*ē*s
+GhMarker: *ʤ*ē*s
+GlideDeletion: *ʤ*ē*s
+Epenthesis: *ʤ*ē*s
+Orthography: ġēs
+Surface: ġēs
+
+--- lade ---
+PROTO: *laθōjăną
+EXPECTED: hladan
+OUTPUTS: laþēġan
+
+ProtoInput: *l*a*θ*ō*j*ă*n*ą
+InitialKn: *l*a*θ*ō*j*ă*n*ą
+Palatalisation: *l*a*θ*ō*j*ă*n*ą
+ConsonantRules: *l*a*θ*ō*j*ă*n*ą
+ProtoToOEWeakTail: *l*ā*θ*ē*j*ă*n
+ProtoToOEWeightMarkers: *l*ā*θ*ē*j*ă*n
+ProtoToOEApocope: *l*ā*θ*ē*j*ă*n
+ProtoToOEWeightCleanup: *l*ā*θ*ē*j*ă*n
+ProtoToOE: *l*a*θ*ē*j*ă*n
+WGlide: *l*a*θ*ē*j*ă*n
+GhMarker: *l*a*θ*ē*j*ă*n
+GlideDeletion: *l*a*θ*ē*j*ă*n
+Epenthesis: *l*a*θ*ē*j*ă*n
+Orthography: laþēġan, la*þēġan
+Surface: laþēġan
+
+--- laugh ---
+PROTO: *lakăną
+EXPECTED: hlæhhan
+OUTPUTS: læċan
+
+ProtoInput: *l*a*k*ă*n*ą
+InitialKn: *l*a*k*ă*n*ą
+Palatalisation: *l*a*k*ă*n*ą
+ConsonantRules: *l*a*k*ă*n*ą
+ProtoToOEWeakTail: *l*ā*k*ă*n
+ProtoToOEWeightMarkers: *l*ā*k*ă*n
+ProtoToOEApocope: *l*ā*k*ă*n
+ProtoToOEWeightCleanup: *l*ā*k*ă*n
+ProtoToOE: *l*æ*ʧ*ă*n
+WGlide: *l*æ*ʧ*ă*n
+GhMarker: *l*æ*ʧ*ă*n
+GlideDeletion: *l*æ*ʧ*ă*n
+Epenthesis: *l*æ*ʧ*ă*n
+Orthography: læċan
+Surface: læċan
+
+--- learn ---
+PROTO: *liznōjăną
+EXPECTED: leornian
+OUTPUTS: liernēġan
+
+ProtoInput: *l*i*z*n*ō*j*ă*n*ą
+InitialKn: *l*i*z*n*ō*j*ă*n*ą
+Palatalisation: *l*i*z*n*ō*j*ă*n*ą
+ConsonantRules: *l*i*r*n*ō*j*ă*n*ą
+ProtoToOEWeakTail: *l*ie*r*n*ē*j*ă*n
+ProtoToOEWeightMarkers: *l*ie*r*n*ē*j*ă*n
+ProtoToOEApocope: *l*ie*r*n*ē*j*ă*n
+ProtoToOEWeightCleanup: *l*ie*r*n*ē*j*ă*n
+ProtoToOE: *l*ie*r*n*ē*j*ă*n
+WGlide: *l*ie*r*n*ē*j*ă*n
+GhMarker: *l*ie*r*n*ē*j*ă*n
+GlideDeletion: *l*ie*r*n*ē*j*ă*n
+Epenthesis: *l*ie*r*n*ē*j*ă*n
+Orthography: liernēġan
+Surface: liernēġan
+
+--- lick ---
+PROTO: *likkōjăną
+EXPECTED: liccian
+OUTPUTS: liċcēġan
+
+ProtoInput: *l*i*k*k*ō*j*ă*n*ą
+InitialKn: *l*i*k*k*ō*j*ă*n*ą
+Palatalisation: *l*i*k*k*ō*j*ă*n*ą
+ConsonantRules: *l*i*k*k*ō*j*ă*n*ą
+ProtoToOEWeakTail: *l*i*k*k*ē*j*ă*n
+ProtoToOEWeightMarkers: *l*i*k*k*ē*j*ă*n
+ProtoToOEApocope: *l*i*k*k*ē*j*ă*n
+ProtoToOEWeightCleanup: *l*i*k*k*ē*j*ă*n
+ProtoToOE: *l*i*ʧ*k*ē*j*ă*n
+WGlide: *l*i*ʧ*k*ē*j*ă*n
+GhMarker: *l*i*ʧ*k*ē*j*ă*n
+GlideDeletion: *l*i*ʧ*k*ē*j*ă*n
+Epenthesis: *l*i*ʧ*k*ē*j*ă*n
+Orthography: liċcēġan
+Surface: liċcēġan
+
+--- make ---
+PROTO: *makōjăną
+EXPECTED: macian
+OUTPUTS: macēġan
+
+ProtoInput: *m*a*k*ō*j*ă*n*ą
+InitialKn: *m*a*k*ō*j*ă*n*ą
+Palatalisation: *m*a*k*ō*j*ă*n*ą
+ConsonantRules: *m*a*k*ō*j*ă*n*ą
+ProtoToOEWeakTail: *m*ā*k*ē*j*ă*n
+ProtoToOEWeightMarkers: *m*ā*k*ē*j*ă*n
+ProtoToOEApocope: *m*ā*k*ē*j*ă*n
+ProtoToOEWeightCleanup: *m*ā*k*ē*j*ă*n
+ProtoToOE: *m*a*k*ē*j*ă*n
+WGlide: *m*a*k*ē*j*ă*n
+GhMarker: *m*a*k*ē*j*ă*n
+GlideDeletion: *m*a*k*ē*j*ă*n
+Epenthesis: *m*a*k*ē*j*ă*n
+Orthography: macēġan
+Surface: macēġan
+
+--- sheep ---
+PROTO: *skēpą
+EXPECTED: persona
+OUTPUTS: sċēpa
+
+ProtoInput: *s*k*ē*p*ą
+InitialKn: *s*k*ē*p*ą
+Palatalisation: *ʃ*ē*p*ą
+ConsonantRules: *ʃ*ē*p*ą
+ProtoToOEWeakTail: *ʃ*ē*p*ɔ̆
+ProtoToOEWeightMarkers: *ʃ*ē*p*ɔ̆
+ProtoToOEApocope: *ʃ*ē*p*ɔ̆
+ProtoToOEWeightCleanup: *ʃ*ē*p*ɔ̆
+ProtoToOE: *ʃ*ē*p*ɔ̆
+WGlide: *ʃ*ē*p*ɔ̆
+GhMarker: *ʃ*ē*p*ɔ̆
+GlideDeletion: *ʃ*ē*p*ɔ̆
+Epenthesis: *ʃ*ē*p*ɔ̆
+Orthography: sċēpŏ, sċēpa
+Surface: sċēpa
+
+--- sunder ---
+PROTO: *sundrōjăną
+EXPECTED: sundor-
+OUTPUTS: sundrēġan
+
+ProtoInput: *s*u*n*d*r*ō*j*ă*n*ą
+InitialKn: *s*u*n*d*r*ō*j*ă*n*ą
+Palatalisation: *s*u*n*d*r*ō*j*ă*n*ą
+ConsonantRules: *s*u*n*d*r*ō*j*ă*n*ą
+ProtoToOEWeakTail: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightMarkers: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEApocope: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightCleanup: *s*u*n*d*r*ē*j*ă*n
+ProtoToOE: *s*u*n*d*r*ē*j*ă*n
+WGlide: *s*u*n*d*r*ē*j*ă*n
+GhMarker: *s*u*n*d*r*ē*j*ă*n
+GlideDeletion: *s*u*n*d*r*ē*j*ă*n
+Epenthesis: *s*u*n*d*r*ē*j*ă*n
+Orthography: sundrēġan
+Surface: sundrēġan
+
+--- three ---
+PROTO: *θrejez
+EXPECTED: þrī
+OUTPUTS: þriġe
+
+ProtoInput: *θ*r*e*j*e*z
+InitialKn: *θ*r*e*j*e*z
+Palatalisation: *θ*r*e*j*e*z
+ConsonantRules: *θ*r*e*j*e
+ProtoToOEWeakTail: *θ*r*ē*j*e
+ProtoToOEWeightMarkers: *θ*r*ē*j*e
+ProtoToOEApocope: *θ*r*ē*j*e
+ProtoToOEWeightCleanup: *θ*r*ē*j*e
+ProtoToOE: *θ*r*i*j*e
+WGlide: *θ*r*i*j*e
+GhMarker: *θ*r*i*j*e
+GlideDeletion: *θ*r*i*j*e
+Epenthesis: *θ*r*i*j*e
+Orthography: þriġe, *þriġe
+Surface: þriġe
+
+--- wake ---
+PROTO: *wakēną
+EXPECTED: wacan
+OUTPUTS: wæċēn
+
+ProtoInput: *w*a*k*ē*n*ą
+InitialKn: *w*a*k*ē*n*ą
+Palatalisation: *w*a*ʧ*ē*n*ą
+ConsonantRules: *w*a*ʧ*ē*n*ą
+ProtoToOEWeakTail: *w*a*ʧ*ē*n
+ProtoToOEWeightMarkers: *w*a*ʧ*ē*n
+ProtoToOEApocope: *w*a*ʧ*ē*n
+ProtoToOEWeightCleanup: *w*a*ʧ*ē*n
+ProtoToOE: *w*æ*ʧ*ē*n
+WGlide: *ʋ*æ*ʧ*ē*n
+GhMarker: *ʋ*æ*ʧ*ē*n
+GlideDeletion: *ʋ*æ*ʧ*ē*n
+Epenthesis: *w*æ*ʧ*ē*n
+Orthography: wæċēn
+Surface: wæċēn
+
+
+=== BUCKET: back_expected_front_out (8) ===
+
+--- ban ---
+PROTO: *banną
+EXPECTED: bannan
+OUTPUTS: bænn
+
+ProtoInput: *b*a*n*n*ą
+InitialKn: *b*a*n*n*ą
+Palatalisation: *b*a*n*n*ą
+ConsonantRules: *b*a*n*n*ą
+ProtoToOEWeakTail: *b*a*n*n
+ProtoToOEWeightMarkers: *b*a*n*n
+ProtoToOEApocope: *b*a*n*n
+ProtoToOEWeightCleanup: *b*a*n*n
+ProtoToOE: *b*æ*n*n
+WGlide: *b*æ*n*n
+GhMarker: *b*æ*n*n
+GlideDeletion: *b*æ*n*n
+Epenthesis: *b*æ*n*n
+Orthography: bænn
+Surface: bænn
+
+--- brand ---
+PROTO: *brandăz
+EXPECTED: brand
+OUTPUTS: brænd
+
+ProtoInput: *b*r*a*n*d*ă*z
+InitialKn: *b*r*a*n*d*ă*z
+Palatalisation: *b*r*a*n*d*ă*z
+ConsonantRules: *b*r*a*n*d
+ProtoToOEWeakTail: *b*r*a*n*d
+ProtoToOEWeightMarkers: *b*r*a*n*d
+ProtoToOEApocope: *b*r*a*n*d
+ProtoToOEWeightCleanup: *b*r*a*n*d
+ProtoToOE: *b*r*æ*n*d
+WGlide: *b*r*æ*n*d
+GhMarker: *b*r*æ*n*d
+GlideDeletion: *b*r*æ*n*d
+Epenthesis: *b*r*æ*n*d
+Orthography: brænd
+Surface: brænd
+
+--- hammer ---
+PROTO: *xamarăz
+EXPECTED: hamor
+OUTPUTS: hæmær
+
+ProtoInput: *x*a*m*a*r*ă*z
+InitialKn: *x*a*m*a*r*ă*z
+Palatalisation: *x*a*m*a*r*ă*z
+ConsonantRules: *x*a*m*a*r
+ProtoToOEWeakTail: *x*ā*m*a*r
+ProtoToOEWeightMarkers: *x*ā*m*a*r
+ProtoToOEApocope: *x*ā*m*a*r
+ProtoToOEWeightCleanup: *x*ā*m*a*r
+ProtoToOE: *ç*æ*m*æ*r
+WGlide: *ç*æ*m*æ*r
+GhMarker: *ç*æ*m*æ*r
+GlideDeletion: *ç*æ*m*æ*r
+Epenthesis: *ç*æ*m*æ*r
+Orthography: hæmær
+Surface: hæmær
+
+--- span ---
+PROTO: *spannăną
+EXPECTED: spann
+OUTPUTS: spænnan
+
+ProtoInput: *s*p*a*n*n*ă*n*ą
+InitialKn: *s*p*a*n*n*ă*n*ą
+Palatalisation: *s*p*a*n*n*ă*n*ą
+ConsonantRules: *s*p*a*n*n*ă*n*ą
+ProtoToOEWeakTail: *s*p*a*n*n*ă*n
+ProtoToOEWeightMarkers: *s*p*a*n*n*ă*n
+ProtoToOEApocope: *s*p*a*n*n*ă*n
+ProtoToOEWeightCleanup: *s*p*a*n*n*ă*n
+ProtoToOE: *s*p*æ*n*n*ă*n
+WGlide: *s*p*æ*n*n*ă*n
+GhMarker: *s*p*æ*n*n*ă*n
+GlideDeletion: *s*p*æ*n*n*ă*n
+Epenthesis: *s*p*æ*n*n*ă*n
+Orthography: spænnan
+Surface: spænnan
+
+--- swan ---
+PROTO: *swanăz
+EXPECTED: swan
+OUTPUTS: swæn
+
+ProtoInput: *s*w*a*n*ă*z
+InitialKn: *s*w*a*n*ă*z
+Palatalisation: *s*w*a*n*ă*z
+ConsonantRules: *s*w*a*n
+ProtoToOEWeakTail: *s*w*a*n
+ProtoToOEWeightMarkers: *s*w*a*n
+ProtoToOEApocope: *s*w*a*n
+ProtoToOEWeightCleanup: *s*w*a*n
+ProtoToOE: *s*w*æ*n
+WGlide: *s*ʋ*æ*n
+GhMarker: *s*ʋ*æ*n
+GlideDeletion: *s*ʋ*æ*n
+Epenthesis: *s*w*æ*n
+Orthography: swæn
+Surface: swæn
+
+--- thanks ---
+PROTO: *θankăz
+EXPECTED: þancas
+OUTPUTS: þænc
+
+ProtoInput: *θ*a*n*k*ă*z
+InitialKn: *θ*a*n*k*ă*z
+Palatalisation: *θ*a*n*k*ă*z
+ConsonantRules: *θ*a*n*k
+ProtoToOEWeakTail: *θ*a*n*k
+ProtoToOEWeightMarkers: *θ*a*n*k
+ProtoToOEApocope: *θ*a*n*k
+ProtoToOEWeightCleanup: *θ*a*n*k
+ProtoToOE: *θ*æ*n*k
+WGlide: *θ*æ*n*k
+GhMarker: *θ*æ*n*k
+GlideDeletion: *θ*æ*n*k
+Epenthesis: *θ*æ*n*k
+Orthography: þænc, *þænc
+Surface: þænc
+
+--- wade ---
+PROTO: *wadăną
+EXPECTED: wadan
+OUTPUTS: wædan
+
+ProtoInput: *w*a*d*ă*n*ą
+InitialKn: *w*a*d*ă*n*ą
+Palatalisation: *w*a*d*ă*n*ą
+ConsonantRules: *w*a*d*ă*n*ą
+ProtoToOEWeakTail: *w*ā*d*ă*n
+ProtoToOEWeightMarkers: *w*ā*d*ă*n
+ProtoToOEApocope: *w*ā*d*ă*n
+ProtoToOEWeightCleanup: *w*ā*d*ă*n
+ProtoToOE: *w*æ*d*ă*n
+WGlide: *ʋ*æ*d*ă*n
+GhMarker: *ʋ*æ*d*ă*n
+GlideDeletion: *ʋ*æ*d*ă*n
+Epenthesis: *w*æ*d*ă*n
+Orthography: wædan
+Surface: wædan
+
+--- wash ---
+PROTO: *waskăną
+EXPECTED: wasċan
+OUTPUTS: wæsċan
+
+ProtoInput: *w*a*s*k*ă*n*ą
+InitialKn: *w*a*s*k*ă*n*ą
+Palatalisation: *w*a*s*k*ă*n*ą
+ConsonantRules: *w*a*s*k*ă*n*ą
+ProtoToOEWeakTail: *w*a*s*k*ă*n
+ProtoToOEWeightMarkers: *w*a*s*k*ă*n
+ProtoToOEApocope: *w*a*s*k*ă*n
+ProtoToOEWeightCleanup: *w*a*s*k*ă*n
+ProtoToOE: *w*æ*ʃ*ă*n
+WGlide: *ʋ*æ*ʃ*ă*n
+GhMarker: *ʋ*æ*ʃ*ă*n
+GlideDeletion: *ʋ*æ*ʃ*ă*n
+Epenthesis: *w*æ*ʃ*ă*n
+Orthography: wæsċan
+Surface: wæsċan
+
+
+=== BUCKET: vowel_quality_other (21) ===
+
+--- crop ---
+PROTO: *kruppăz
+EXPECTED: cropp
+OUTPUTS: crupp
+
+ProtoInput: *k*r*u*p*p*ă*z
+InitialKn: *k*r*u*p*p*ă*z
+Palatalisation: *k*r*u*p*p*ă*z
+ConsonantRules: *k*r*u*p*p
+ProtoToOEWeakTail: *k*r*u*p*p
+ProtoToOEWeightMarkers: *k*r*u*p*p
+ProtoToOEApocope: *k*r*u*p*p
+ProtoToOEWeightCleanup: *k*r*u*p*p
+ProtoToOE: *k*r*u*p*p
+WGlide: *k*r*u*p*p
+GhMarker: *k*r*u*p*p
+GlideDeletion: *k*r*u*p*p
+Epenthesis: *k*r*u*p*p
+Orthography: crupp
+Surface: crupp
+
+--- door ---
+PROTO: *durą
+EXPECTED: duru
+OUTPUTS: dura
+
+ProtoInput: *d*u*r*ą
+InitialKn: *d*u*r*ą
+Palatalisation: *d*u*r*ą
+ConsonantRules: *d*u*r*ą
+ProtoToOEWeakTail: *d*ū*r*ɔ̆
+ProtoToOEWeightMarkers: *d*ū*r*ɔ̆
+ProtoToOEApocope: *d*ū*r*ɔ̆
+ProtoToOEWeightCleanup: *d*ū*r*ɔ̆
+ProtoToOE: *d*u*r*ɔ̆
+WGlide: *d*u*r*ɔ̆
+GhMarker: *d*u*r*ɔ̆
+GlideDeletion: *d*u*r*ɔ̆
+Epenthesis: *d*u*r*ɔ̆
+Orthography: durŏ, dura
+Surface: dura
+
+--- earth ---
+PROTO: *erθo
+EXPECTED: eorþe
+OUTPUTS: eorþo
+
+ProtoInput: *e*r*θ*o
+InitialKn: *e*r*θ*o
+Palatalisation: *e*r*θ*o
+ConsonantRules: *e*r*θ*o
+ProtoToOEWeakTail: *eo*r*θ*o
+ProtoToOEWeightMarkers: *eo*r*θ*o
+ProtoToOEApocope: *eo*r*θ*o
+ProtoToOEWeightCleanup: *eo*r*θ*o
+ProtoToOE: *eo*r*θ*o
+WGlide: *eo*r*θ*o
+GhMarker: *eo*r*θ*o
+GlideDeletion: *eo*r*θ*o
+Epenthesis: *eo*r*θ*o
+Orthography: eorþo, eor*þo
+Surface: eorþo
+
+--- eel ---
+PROTO: *ēlăz
+EXPECTED: ǣl
+OUTPUTS: ēl
+
+ProtoInput: *ē*l*ă*z
+InitialKn: *ē*l*ă*z
+Palatalisation: *ē*l*ă*z
+ConsonantRules: *ē*l
+ProtoToOEWeakTail: *ē*l
+ProtoToOEWeightMarkers: *ē*l
+ProtoToOEApocope: *ē*l
+ProtoToOEWeightCleanup: *ē*l
+ProtoToOE: *ē*l
+WGlide: *ē*l
+GhMarker: *ē*l
+GlideDeletion: *ē*l
+Epenthesis: *ē*l
+Orthography: ēl
+Surface: ēl
+
+--- god ---
+PROTO: *gud
+EXPECTED: god
+OUTPUTS: gud
+
+ProtoInput: *g*u*d
+InitialKn: *g*u*d
+Palatalisation: *g*u*d
+ConsonantRules: *g*u*d
+ProtoToOEWeakTail: *g*u*d
+ProtoToOEWeightMarkers: *g*u*d
+ProtoToOEApocope: *g*u*d
+ProtoToOEWeightCleanup: *g*u*d
+ProtoToOE: *g*u*d
+WGlide: *g*u*d
+GhMarker: *g*u*d
+GlideDeletion: *g*u*d
+Epenthesis: *g*u*d
+Orthography: gud
+Surface: gud
+
+--- let ---
+PROTO: *lētăną
+EXPECTED: lǣtan
+OUTPUTS: lētan
+
+ProtoInput: *l*ē*t*ă*n*ą
+InitialKn: *l*ē*t*ă*n*ą
+Palatalisation: *l*ē*t*ă*n*ą
+ConsonantRules: *l*ē*t*ă*n*ą
+ProtoToOEWeakTail: *l*ē*t*ă*n
+ProtoToOEWeightMarkers: *l*ē*t*ă*n
+ProtoToOEApocope: *l*ē*t*ă*n
+ProtoToOEWeightCleanup: *l*ē*t*ă*n
+ProtoToOE: *l*ē*t*ă*n
+WGlide: *l*ē*t*ă*n
+GhMarker: *l*ē*t*ă*n
+GlideDeletion: *l*ē*t*ă*n
+Epenthesis: *l*ē*t*ă*n
+Orthography: lētan
+Surface: lētan
+
+--- lock ---
+PROTO: *lukkăz
+EXPECTED: locc
+OUTPUTS: lucc
+
+ProtoInput: *l*u*k*k*ă*z
+InitialKn: *l*u*k*k*ă*z
+Palatalisation: *l*u*k*k*ă*z
+ConsonantRules: *l*u*k*k
+ProtoToOEWeakTail: *l*u*k*k
+ProtoToOEWeightMarkers: *l*u*k*k
+ProtoToOEApocope: *l*u*k*k
+ProtoToOEWeightCleanup: *l*u*k*k
+ProtoToOE: *l*u*k*k
+WGlide: *l*u*k*k
+GhMarker: *l*u*k*k
+GlideDeletion: *l*u*k*k
+Epenthesis: *l*u*k*k
+Orthography: lucc
+Surface: lucc
+
+--- month ---
+PROTO: *mēnōθz
+EXPECTED: mōnaþ
+OUTPUTS: mēnōþ
+
+ProtoInput: *m*ē*n*ō*θ*z
+InitialKn: *m*ē*n*ō*θ*z
+Palatalisation: *m*ē*n*ō*θ*z
+ConsonantRules: *m*ē*n*ō*θ
+ProtoToOEWeakTail: *m*ē*n*ō*θ
+ProtoToOEWeightMarkers: *m*ē*n*ō*θ
+ProtoToOEApocope: *m*ē*n*ō*θ
+ProtoToOEWeightCleanup: *m*ē*n*ō*θ
+ProtoToOE: *m*ē*n*ō*θ
+WGlide: *m*ē*n*ō*θ
+GhMarker: *m*ē*n*ō*θ
+GlideDeletion: *m*ē*n*ō*θ
+Epenthesis: *m*ē*n*ō*θ
+Orthography: mēnōþ, mēnō*þ
+Surface: mēnōþ
+
+--- mother ---
+PROTO: *mōdēr
+EXPECTED: mōdor
+OUTPUTS: mōdēr
+
+ProtoInput: *m*ō*d*ē*r
+InitialKn: *m*ō*d*ē*r
+Palatalisation: *m*ō*d*ē*r
+ConsonantRules: *m*ō*d*ē*r
+ProtoToOEWeakTail: *m*ō*d*ē*r
+ProtoToOEWeightMarkers: *m*ō*d*ē*r
+ProtoToOEApocope: *m*ō*d*ē*r
+ProtoToOEWeightCleanup: *m*ō*d*ē*r
+ProtoToOE: *m*ō*d*ē*r
+WGlide: *m*ō*d*ē*r
+GhMarker: *m*ō*d*ē*r
+GlideDeletion: *m*ō*d*ē*r
+Epenthesis: *m*ō*d*ē*r
+Orthography: mōdēr
+Surface: mōdēr
+
+--- oven ---
+PROTO: *ufnăz
+EXPECTED: ofn
+OUTPUTS: ufn
+
+ProtoInput: *u*f*n*ă*z
+InitialKn: *u*f*n*ă*z
+Palatalisation: *u*f*n*ă*z
+ConsonantRules: *u*f*n
+ProtoToOEWeakTail: *u*f*n
+ProtoToOEWeightMarkers: *u*f*n
+ProtoToOEApocope: *u*f*n
+ProtoToOEWeightCleanup: *u*f*n
+ProtoToOE: *u*f*n
+WGlide: *u*f*n
+GhMarker: *u*f*n
+GlideDeletion: *u*f*n
+Epenthesis: *u*f*n
+Orthography: ufn
+Surface: ufn
+
+--- read ---
+PROTO: *rēdăną
+EXPECTED: rǣdan
+OUTPUTS: rēdan
+
+ProtoInput: *r*ē*d*ă*n*ą
+InitialKn: *r*ē*d*ă*n*ą
+Palatalisation: *r*ē*d*ă*n*ą
+ConsonantRules: *r*ē*d*ă*n*ą
+ProtoToOEWeakTail: *r*ē*d*ă*n
+ProtoToOEWeightMarkers: *r*ē*d*ă*n
+ProtoToOEApocope: *r*ē*d*ă*n
+ProtoToOEWeightCleanup: *r*ē*d*ă*n
+ProtoToOE: *r*ē*d*ă*n
+WGlide: *r*ē*d*ă*n
+GhMarker: *r*ē*d*ă*n
+GlideDeletion: *r*ē*d*ă*n
+Epenthesis: *r*ē*d*ă*n
+Orthography: rēdan
+Surface: rēdan
+
+--- shield ---
+PROTO: *skelduz
+EXPECTED: sċield
+OUTPUTS: sċeold
+
+ProtoInput: *s*k*e*l*d*u*z
+InitialKn: *s*k*e*l*d*u*z
+Palatalisation: *ʃ*e*l*d*u*z
+ConsonantRules: *ʃ*e*l*d*u
+ProtoToOEWeakTail: *ʃ*eo*l*d*u
+ProtoToOEWeightMarkers: *ʃ*eo*l*d*H*u
+ProtoToOEApocope: *ʃ*eo*l*d
+ProtoToOEWeightCleanup: *ʃ*eo*l*d
+ProtoToOE: *ʃ*eo*l*d
+WGlide: *ʃ*eo*l*d
+GhMarker: *ʃ*eo*l*d
+GlideDeletion: *ʃ*eo*l*d
+Epenthesis: *ʃ*eo*l*d
+Orthography: sċeold
+Surface: sċeold
+
+--- spoon ---
+PROTO: *spēnuz
+EXPECTED: spōn
+OUTPUTS: spēn
+
+ProtoInput: *s*p*ē*n*u*z
+InitialKn: *s*p*ē*n*u*z
+Palatalisation: *s*p*ē*n*u*z
+ConsonantRules: *s*p*ē*n*u
+ProtoToOEWeakTail: *s*p*ē*n*u
+ProtoToOEWeightMarkers: *s*p*ē*n*H*u
+ProtoToOEApocope: *s*p*ē*n
+ProtoToOEWeightCleanup: *s*p*ē*n
+ProtoToOE: *s*p*ē*n
+WGlide: *s*p*ē*n
+GhMarker: *s*p*ē*n
+GlideDeletion: *s*p*ē*n
+Epenthesis: *s*p*ē*n
+Orthography: spēn
+Surface: spēn
+
+--- stem ---
+PROTO: *stamnăz
+EXPECTED: stemn
+OUTPUTS: stæmn
+
+ProtoInput: *s*t*a*m*n*ă*z
+InitialKn: *s*t*a*m*n*ă*z
+Palatalisation: *s*t*a*m*n*ă*z
+ConsonantRules: *s*t*a*m*n
+ProtoToOEWeakTail: *s*t*a*m*n
+ProtoToOEWeightMarkers: *s*t*a*m*n
+ProtoToOEApocope: *s*t*a*m*n
+ProtoToOEWeightCleanup: *s*t*a*m*n
+ProtoToOE: *s*t*æ*m*n
+WGlide: *s*t*æ*m*n
+GhMarker: *s*t*æ*m*n
+GlideDeletion: *s*t*æ*m*n
+Epenthesis: *s*t*æ*m*n
+Orthography: stæmn
+Surface: stæmn
+
+--- stock ---
+PROTO: *stukkăz
+EXPECTED: stocc
+OUTPUTS: stucc
+
+ProtoInput: *s*t*u*k*k*ă*z
+InitialKn: *s*t*u*k*k*ă*z
+Palatalisation: *s*t*u*k*k*ă*z
+ConsonantRules: *s*t*u*k*k
+ProtoToOEWeakTail: *s*t*u*k*k
+ProtoToOEWeightMarkers: *s*t*u*k*k
+ProtoToOEApocope: *s*t*u*k*k
+ProtoToOEWeightCleanup: *s*t*u*k*k
+ProtoToOE: *s*t*u*k*k
+WGlide: *s*t*u*k*k
+GhMarker: *s*t*u*k*k
+GlideDeletion: *s*t*u*k*k
+Epenthesis: *s*t*u*k*k
+Orthography: stucc
+Surface: stucc
+
+--- stork ---
+PROTO: *sturkăz
+EXPECTED: storc
+OUTPUTS: sturc
+
+ProtoInput: *s*t*u*r*k*ă*z
+InitialKn: *s*t*u*r*k*ă*z
+Palatalisation: *s*t*u*r*k*ă*z
+ConsonantRules: *s*t*u*r*k
+ProtoToOEWeakTail: *s*t*ō*r*k
+ProtoToOEWeightMarkers: *s*t*ō*r*k
+ProtoToOEApocope: *s*t*ō*r*k
+ProtoToOEWeightCleanup: *s*t*ō*r*k
+ProtoToOE: *s*t*u*r*k
+WGlide: *s*t*u*r*k
+GhMarker: *s*t*u*r*k
+GlideDeletion: *s*t*u*r*k
+Epenthesis: *s*t*u*r*k
+Orthography: sturc
+Surface: sturc
+
+--- storm ---
+PROTO: *sturmăz
+EXPECTED: storm
+OUTPUTS: sturm
+
+ProtoInput: *s*t*u*r*m*ă*z
+InitialKn: *s*t*u*r*m*ă*z
+Palatalisation: *s*t*u*r*m*ă*z
+ConsonantRules: *s*t*u*r*m
+ProtoToOEWeakTail: *s*t*ō*r*m
+ProtoToOEWeightMarkers: *s*t*ō*r*m
+ProtoToOEApocope: *s*t*ō*r*m
+ProtoToOEWeightCleanup: *s*t*ō*r*m
+ProtoToOE: *s*t*u*r*m
+WGlide: *s*t*u*r*m
+GhMarker: *s*t*u*r*m
+GlideDeletion: *s*t*u*r*m
+Epenthesis: *s*t*u*r*m
+Orthography: sturm
+Surface: sturm
+
+--- thane ---
+PROTO: *θegnăz
+EXPECTED: þæġn
+OUTPUTS: þeġn
+
+ProtoInput: *θ*e*g*n*ă*z
+InitialKn: *θ*e*g*n*ă*z
+Palatalisation: *θ*e*g*n*ă*z
+ConsonantRules: *θ*e*g*n
+ProtoToOEWeakTail: *θ*e*g*n
+ProtoToOEWeightMarkers: *θ*e*g*n
+ProtoToOEApocope: *θ*e*g*n
+ProtoToOEWeightCleanup: *θ*e*g*n
+ProtoToOE: *θ*e*ʤ*n
+WGlide: *θ*e*ʤ*n
+GhMarker: *θ*e*ʤ*n
+GlideDeletion: *θ*e*ʤ*n
+Epenthesis: *θ*e*ʤ*n
+Orthography: þeġn, *þeġn
+Surface: þeġn
+
+--- thorn ---
+PROTO: *θurnuz
+EXPECTED: þorn
+OUTPUTS: þurn
+
+ProtoInput: *θ*u*r*n*u*z
+InitialKn: *θ*u*r*n*u*z
+Palatalisation: *θ*u*r*n*u*z
+ConsonantRules: *θ*u*r*n*u
+ProtoToOEWeakTail: *θ*ō*r*n*u
+ProtoToOEWeightMarkers: *θ*ō*r*n*H*u
+ProtoToOEApocope: *θ*ō*r*n
+ProtoToOEWeightCleanup: *θ*ō*r*n
+ProtoToOE: *θ*u*r*n
+WGlide: *θ*u*r*n
+GhMarker: *θ*u*r*n
+GlideDeletion: *θ*u*r*n
+Epenthesis: *θ*u*r*n
+Orthography: þurn, *þurn
+Surface: þurn
+
+--- wart ---
+PROTO: *warto
+EXPECTED: wearte
+OUTPUTS: wearto
+
+ProtoInput: *w*a*r*t*o
+InitialKn: *w*a*r*t*o
+Palatalisation: *w*a*r*t*o
+ConsonantRules: *w*a*r*t*o
+ProtoToOEWeakTail: *w*ēa*r*t*o, *w*ea*r*t*o
+ProtoToOEWeightMarkers: *w*ēa*r*t*o, *w*ea*r*t*o
+ProtoToOEApocope: *w*ea*r*t*o, *w*ēa*r*t*o
+ProtoToOEWeightCleanup: *w*ea*r*t*o, *w*ēa*r*t*o
+ProtoToOE: *w*ea*r*t*o
+WGlide: *ʋ*ea*r*t*o
+GhMarker: *ʋ*ea*r*t*o
+GlideDeletion: *ʋ*ea*r*t*o
+Epenthesis: *w*ea*r*t*o
+Orthography: wearto
+Surface: wearto
+
+--- wether ---
+PROTO: *wiθră
+EXPECTED: weþer
+OUTPUTS: wiþer
+
+ProtoInput: *w*i*θ*r*ă
+InitialKn: *w*i*θ*r*ă
+Palatalisation: *w*i*θ*r*ă
+ConsonantRules: *w*i*θ*r
+ProtoToOEWeakTail: *w*i*θ*r
+ProtoToOEWeightMarkers: *w*i*θ*r
+ProtoToOEApocope: *w*i*θ*r
+ProtoToOEWeightCleanup: *w*i*θ*r
+ProtoToOE: *w*i*θ*r
+WGlide: *ʋ*i*θ*r
+GhMarker: *ʋ*i*θ*r
+GlideDeletion: *ʋ*i*θ*r
+Epenthesis: *w*i*θ*e*r
+Orthography: wiþer, wi*þer
+Surface: wiþer
+
+
+=== BUCKET: consonant_mismatch_other (39) ===
+
+--- beaver ---
+PROTO: *bebruz
+EXPECTED: befer
+OUTPUTS: beber
+
+ProtoInput: *b*e*b*r*u*z
+InitialKn: *b*e*b*r*u*z
+Palatalisation: *b*e*b*r*u*z
+ConsonantRules: *b*e*b*r*u
+ProtoToOEWeakTail: *b*e*b*r*u
+ProtoToOEWeightMarkers: *b*e*b*r*H*u
+ProtoToOEApocope: *b*e*b*r
+ProtoToOEWeightCleanup: *b*e*b*r
+ProtoToOE: *b*e*b*r
+WGlide: *b*e*b*r
+GhMarker: *b*e*b*r
+GlideDeletion: *b*e*b*r
+Epenthesis: *b*e*b*e*r
+Orthography: beber
+Surface: beber
+
+--- believe ---
+PROTO: *laubjăną
+EXPECTED: belīefan
+OUTPUTS: līefan
+
+ProtoInput: *l*au*b*j*ă*n*ą
+InitialKn: *l*au*b*j*ă*n*ą
+Palatalisation: *l*au*b*j*ă*n*ą
+ConsonantRules: *l*au*b*j*ă*n*ą
+ProtoToOEWeakTail: *l*īe*b*j*ă*n
+ProtoToOEWeightMarkers: *l*īe*b*j*ă*n
+ProtoToOEApocope: *l*īe*b*j*ă*n
+ProtoToOEWeightCleanup: *l*īe*b*j*ă*n
+ProtoToOE: *l*īe*v*ă*n
+WGlide: *l*īe*v*ă*n
+GhMarker: *l*īe*v*ă*n
+GlideDeletion: *l*īe*v*ă*n
+Epenthesis: *l*īe*v*ă*n
+Orthography: līefan
+Surface: līefan
+
+--- bone ---
+PROTO: *bainăn
+EXPECTED: bān
+OUTPUTS: bānan
+
+ProtoInput: *b*ai*n*ă*n
+InitialKn: *b*ai*n*ă*n
+Palatalisation: *b*ai*n*ă*n
+ConsonantRules: *b*ai*n*ă*n
+ProtoToOEWeakTail: *b*ā*n*ă*n
+ProtoToOEWeightMarkers: *b*ā*n*ă*n
+ProtoToOEApocope: *b*ā*n*ă*n
+ProtoToOEWeightCleanup: *b*ā*n*ă*n
+ProtoToOE: *b*ā*n*ă*n
+WGlide: *b*ā*n*ă*n
+GhMarker: *b*ā*n*ă*n
+GlideDeletion: *b*ā*n*ă*n
+Epenthesis: *b*ā*n*ă*n
+Orthography: bānan
+Surface: bānan
+
+--- both ---
+PROTO: *bō
+EXPECTED: bā]] [[þā
+OUTPUTS: bō
+
+ProtoInput: *b*ō
+InitialKn: *b*ō
+Palatalisation: *b*ō
+ConsonantRules: *b*ō
+ProtoToOEWeakTail: *b*ō
+ProtoToOEWeightMarkers: *b*ō
+ProtoToOEApocope: *b*ō
+ProtoToOEWeightCleanup: *b*ō
+ProtoToOE: *b*ō
+WGlide: *b*ō
+GhMarker: *b*ō
+GlideDeletion: *b*ō
+Epenthesis: *b*ō
+Orthography: bō
+Surface: bō
+
+--- bottom ---
+PROTO: *budmăz
+EXPECTED: botm
+OUTPUTS: budm
+
+ProtoInput: *b*u*d*m*ă*z
+InitialKn: *b*u*d*m*ă*z
+Palatalisation: *b*u*d*m*ă*z
+ConsonantRules: *b*u*d*m
+ProtoToOEWeakTail: *b*u*d*m
+ProtoToOEWeightMarkers: *b*u*d*m
+ProtoToOEApocope: *b*u*d*m
+ProtoToOEWeightCleanup: *b*u*d*m
+ProtoToOE: *b*u*d*m
+WGlide: *b*u*d*m
+GhMarker: *b*u*d*m
+GlideDeletion: *b*u*d*m
+Epenthesis: *b*u*d*m
+Orthography: budm
+Surface: budm
+
+--- breeches ---
+PROTO: *brekăną
+EXPECTED: brēċ
+OUTPUTS: breċan
+
+ProtoInput: *b*r*e*k*ă*n*ą
+InitialKn: *b*r*e*k*ă*n*ą
+Palatalisation: *b*r*e*k*ă*n*ą
+ConsonantRules: *b*r*e*k*ă*n*ą
+ProtoToOEWeakTail: *b*r*ē*k*ă*n
+ProtoToOEWeightMarkers: *b*r*ē*k*ă*n
+ProtoToOEApocope: *b*r*ē*k*ă*n
+ProtoToOEWeightCleanup: *b*r*ē*k*ă*n
+ProtoToOE: *b*r*e*ʧ*ă*n
+WGlide: *b*r*e*ʧ*ă*n
+GhMarker: *b*r*e*ʧ*ă*n
+GlideDeletion: *b*r*e*ʧ*ă*n
+Epenthesis: *b*r*e*ʧ*ă*n
+Orthography: breċan
+Surface: breċan
+
+--- corn ---
+PROTO: *kurnăn
+EXPECTED: corn
+OUTPUTS: curnan
+
+ProtoInput: *k*u*r*n*ă*n
+InitialKn: *k*u*r*n*ă*n
+Palatalisation: *k*u*r*n*ă*n
+ConsonantRules: *k*u*r*n*ă*n
+ProtoToOEWeakTail: *k*ō*r*n*ă*n
+ProtoToOEWeightMarkers: *k*ō*r*n*ă*n
+ProtoToOEApocope: *k*ō*r*n*ă*n
+ProtoToOEWeightCleanup: *k*ō*r*n*ă*n
+ProtoToOE: *k*u*r*n*ă*n
+WGlide: *k*u*r*n*ă*n
+GhMarker: *k*u*r*n*ă*n
+GlideDeletion: *k*u*r*n*ă*n
+Epenthesis: *k*u*r*n*ă*n
+Orthography: curnan
+Surface: curnan
+
+--- drive ---
+PROTO: *drībăną
+EXPECTED: drīfan
+OUTPUTS: drīban
+
+ProtoInput: *d*r*ī*b*ă*n*ą
+InitialKn: *d*r*ī*b*ă*n*ą
+Palatalisation: *d*r*ī*b*ă*n*ą
+ConsonantRules: *d*r*ī*b*ă*n*ą
+ProtoToOEWeakTail: *d*r*ī*b*ă*n
+ProtoToOEWeightMarkers: *d*r*ī*b*ă*n
+ProtoToOEApocope: *d*r*ī*b*ă*n
+ProtoToOEWeightCleanup: *d*r*ī*b*ă*n
+ProtoToOE: *d*r*ī*b*ă*n
+WGlide: *d*r*ī*b*ă*n
+GhMarker: *d*r*ī*b*ă*n
+GlideDeletion: *d*r*ī*b*ă*n
+Epenthesis: *d*r*ī*b*ă*n
+Orthography: drīban
+Surface: drīban
+
+--- fare ---
+PROTO: *farăną
+EXPECTED: fær
+OUTPUTS: færan
+
+ProtoInput: *f*a*r*ă*n*ą
+InitialKn: *f*a*r*ă*n*ą
+Palatalisation: *f*a*r*ă*n*ą
+ConsonantRules: *f*a*r*ă*n*ą
+ProtoToOEWeakTail: *f*ā*r*ă*n
+ProtoToOEWeightMarkers: *f*ā*r*ă*n
+ProtoToOEApocope: *f*ā*r*ă*n
+ProtoToOEWeightCleanup: *f*ā*r*ă*n
+ProtoToOE: *f*æ*r*ă*n
+WGlide: *f*æ*r*ă*n
+GhMarker: *f*æ*r*ă*n
+GlideDeletion: *f*æ*r*ă*n
+Epenthesis: *f*æ*r*ă*n
+Orthography: færan
+Surface: færan
+
+--- fern ---
+PROTO: *farnăn
+EXPECTED: fearn
+OUTPUTS: fearnan
+
+ProtoInput: *f*a*r*n*ă*n
+InitialKn: *f*a*r*n*ă*n
+Palatalisation: *f*a*r*n*ă*n
+ConsonantRules: *f*a*r*n*ă*n
+ProtoToOEWeakTail: *f*ēa*r*n*ă*n, *f*ea*r*n*ă*n
+ProtoToOEWeightMarkers: *f*ēa*r*n*ă*n, *f*ea*r*n*ă*n
+ProtoToOEApocope: *f*ea*r*n*ă*n, *f*ēa*r*n*ă*n
+ProtoToOEWeightCleanup: *f*ea*r*n*ă*n, *f*ēa*r*n*ă*n
+ProtoToOE: *f*ea*r*n*ă*n
+WGlide: *f*ea*r*n*ă*n
+GhMarker: *f*ea*r*n*ă*n
+GlideDeletion: *f*ea*r*n*ă*n
+Epenthesis: *f*ea*r*n*ă*n
+Orthography: fearnan
+Surface: fearnan
+
+--- fold ---
+PROTO: *falθăną
+EXPECTED: fealdan
+OUTPUTS: fealþan
+
+ProtoInput: *f*a*l*θ*ă*n*ą
+InitialKn: *f*a*l*θ*ă*n*ą
+Palatalisation: *f*a*l*θ*ă*n*ą
+ConsonantRules: *f*a*l*θ*ă*n*ą
+ProtoToOEWeakTail: *f*ēa*l*θ*ă*n, *f*ea*l*θ*ă*n
+ProtoToOEWeightMarkers: *f*ēa*l*θ*ă*n, *f*ea*l*θ*ă*n
+ProtoToOEApocope: *f*ea*l*θ*ă*n, *f*ēa*l*θ*ă*n
+ProtoToOEWeightCleanup: *f*ea*l*θ*ă*n, *f*ēa*l*θ*ă*n
+ProtoToOE: *f*ea*l*θ*ă*n
+WGlide: *f*ea*l*θ*ă*n
+GhMarker: *f*ea*l*θ*ă*n
+GlideDeletion: *f*ea*l*θ*ă*n
+Epenthesis: *f*ea*l*θ*ă*n
+Orthography: fealþan, feal*þan
+Surface: fealþan
+
+--- fox ---
+PROTO: *fuxsăz
+EXPECTED: fox
+OUTPUTS: fuhs
+
+ProtoInput: *f*u*x*s*ă*z
+InitialKn: *f*u*x*s*ă*z
+Palatalisation: *f*u*x*s*ă*z
+ConsonantRules: *f*u*x*s
+ProtoToOEWeakTail: *f*u*x*s
+ProtoToOEWeightMarkers: *f*u*x*s
+ProtoToOEApocope: *f*u*x*s
+ProtoToOEWeightCleanup: *f*u*x*s
+ProtoToOE: *f*u*x*s
+WGlide: *f*u*x*s
+GhMarker: *f*u*GH*s
+GlideDeletion: *f*u*GH*s
+Epenthesis: *f*u*x*s
+Orthography: fuhs
+Surface: fuhs
+
+--- grave ---
+PROTO: *grabăną
+EXPECTED: græf
+OUTPUTS: græban
+
+ProtoInput: *g*r*a*b*ă*n*ą
+InitialKn: *g*r*a*b*ă*n*ą
+Palatalisation: *g*r*a*b*ă*n*ą
+ConsonantRules: *g*r*a*b*ă*n*ą
+ProtoToOEWeakTail: *g*r*ā*b*ă*n
+ProtoToOEWeightMarkers: *g*r*ā*b*ă*n
+ProtoToOEApocope: *g*r*ā*b*ă*n
+ProtoToOEWeightCleanup: *g*r*ā*b*ă*n
+ProtoToOE: *g*r*æ*b*ă*n
+WGlide: *g*r*æ*b*ă*n
+GhMarker: *g*r*æ*b*ă*n
+GlideDeletion: *g*r*æ*b*ă*n
+Epenthesis: *g*r*æ*b*ă*n
+Orthography: græban
+Surface: græban
+
+--- horn ---
+PROTO: *xurnăn
+EXPECTED: horn
+OUTPUTS: hurnan
+
+ProtoInput: *x*u*r*n*ă*n
+InitialKn: *x*u*r*n*ă*n
+Palatalisation: *x*u*r*n*ă*n
+ConsonantRules: *x*u*r*n*ă*n
+ProtoToOEWeakTail: *x*ō*r*n*ă*n
+ProtoToOEWeightMarkers: *x*ō*r*n*ă*n
+ProtoToOEApocope: *x*ō*r*n*ă*n
+ProtoToOEWeightCleanup: *x*ō*r*n*ă*n
+ProtoToOE: *x*u*r*n*ă*n
+WGlide: *x*u*r*n*ă*n
+GhMarker: *x*u*r*n*ă*n
+GlideDeletion: *x*u*r*n*ă*n
+Epenthesis: *x*u*r*n*ă*n
+Orthography: hurnan
+Surface: hurnan
+
+--- lid ---
+PROTO: *liθuz
+EXPECTED: hlid
+OUTPUTS: liþ
+
+ProtoInput: *l*i*θ*u*z
+InitialKn: *l*i*θ*u*z
+Palatalisation: *l*i*θ*u*z
+ConsonantRules: *l*i*θ*u
+ProtoToOEWeakTail: *l*ī*θ*u
+ProtoToOEWeightMarkers: *l*ī*θ*H*u
+ProtoToOEApocope: *l*ī*θ
+ProtoToOEWeightCleanup: *l*ī*θ
+ProtoToOE: *l*i*θ
+WGlide: *l*i*θ
+GhMarker: *l*i*θ
+GlideDeletion: *l*i*θ
+Epenthesis: *l*i*θ
+Orthography: liþ, li*þ
+Surface: liþ
+
+--- light ---
+PROTO: *leuxtjăną
+EXPECTED: lēoht
+OUTPUTS: līehtan
+
+ProtoInput: *l*eu*x*t*j*ă*n*ą
+InitialKn: *l*eu*x*t*j*ă*n*ą
+Palatalisation: *l*eu*x*t*j*ă*n*ą
+ConsonantRules: *l*eu*x*t*j*ă*n*ą
+ProtoToOEWeakTail: *l*īe*x*t*j*ă*n
+ProtoToOEWeightMarkers: *l*īe*x*t*j*ă*n
+ProtoToOEApocope: *l*īe*x*t*j*ă*n
+ProtoToOEWeightCleanup: *l*īe*x*t*j*ă*n
+ProtoToOE: *l*īe*x*t*ă*n
+WGlide: *l*īe*x*t*ă*n
+GhMarker: *l*īe*GH*t*ă*n
+GlideDeletion: *l*īe*GH*t*ă*n
+Epenthesis: *l*īe*x*t*ă*n
+Orthography: līehtan
+Surface: līehtan
+
+--- loam ---
+PROTO: *laimōn
+EXPECTED: lām
+OUTPUTS: lāmōn
+
+ProtoInput: *l*ai*m*ō*n
+InitialKn: *l*ai*m*ō*n
+Palatalisation: *l*ai*m*ō*n
+ConsonantRules: *l*ai*m*ō*n
+ProtoToOEWeakTail: *l*ā*m*ō*n
+ProtoToOEWeightMarkers: *l*ā*m*ō*n
+ProtoToOEApocope: *l*ā*m*ō*n
+ProtoToOEWeightCleanup: *l*ā*m*ō*n
+ProtoToOE: *l*ā*m*ō*n
+WGlide: *l*ā*m*ō*n
+GhMarker: *l*ā*m*ō*n
+GlideDeletion: *l*ā*m*ō*n
+Epenthesis: *l*ā*m*ō*n
+Orthography: lāmōn
+Surface: lāmōn
+
+--- loath ---
+PROTO: *laiθăz
+EXPECTED: lāð
+OUTPUTS: lāþ
+
+ProtoInput: *l*ai*θ*ă*z
+InitialKn: *l*ai*θ*ă*z
+Palatalisation: *l*ai*θ*ă*z
+ConsonantRules: *l*ai*θ
+ProtoToOEWeakTail: *l*ā*θ
+ProtoToOEWeightMarkers: *l*ā*θ
+ProtoToOEApocope: *l*ā*θ
+ProtoToOEWeightCleanup: *l*ā*θ
+ProtoToOE: *l*ā*θ
+WGlide: *l*ā*θ
+GhMarker: *l*ā*θ
+GlideDeletion: *l*ā*θ
+Epenthesis: *l*ā*θ
+Orthography: lāþ, lā*þ
+Surface: lāþ
+
+--- raven ---
+PROTO: *xrabnăz
+EXPECTED: hræfn
+OUTPUTS: hræbn
+
+ProtoInput: *x*r*a*b*n*ă*z
+InitialKn: *x*r*a*b*n*ă*z
+Palatalisation: *x*r*a*b*n*ă*z
+ConsonantRules: *x*r*a*b*n
+ProtoToOEWeakTail: *x*r*a*b*n
+ProtoToOEWeightMarkers: *x*r*a*b*n
+ProtoToOEApocope: *x*r*a*b*n
+ProtoToOEWeightCleanup: *x*r*a*b*n
+ProtoToOE: *x*r*æ*b*n
+WGlide: *x*r*æ*b*n
+GhMarker: *x*r*æ*b*n
+GlideDeletion: *x*r*æ*b*n
+Epenthesis: *x*r*æ*b*n
+Orthography: hræbn
+Surface: hræbn
+
+--- seek ---
+PROTO: *sōkjăną
+EXPECTED: sēċan
+OUTPUTS: sēċġan
+
+ProtoInput: *s*ō*k*j*ă*n*ą
+InitialKn: *s*ō*k*j*ă*n*ą
+Palatalisation: *s*ō*k*j*ă*n*ą
+ConsonantRules: *s*ō*k*j*ă*n*ą
+ProtoToOEWeakTail: *s*y*k*j*ă*n
+ProtoToOEWeightMarkers: *s*y*k*j*ă*n
+ProtoToOEApocope: *s*y*k*j*ă*n
+ProtoToOEWeightCleanup: *s*y*k*j*ă*n
+ProtoToOE: *s*ē*ʧ*j*ă*n
+WGlide: *s*ē*ʧ*j*ă*n
+GhMarker: *s*ē*ʧ*j*ă*n
+GlideDeletion: *s*ē*ʧ*j*ă*n
+Epenthesis: *s*ē*ʧ*j*ă*n
+Orthography: sēċġan
+Surface: sēċġan
+
+--- sing ---
+PROTO: *singwăną
+EXPECTED: singan
+OUTPUTS: singwan
+
+ProtoInput: *s*i*n*g*w*ă*n*ą
+InitialKn: *s*i*n*g*w*ă*n*ą
+Palatalisation: *s*i*n*g*w*ă*n*ą
+ConsonantRules: *s*i*n*g*w*ă*n*ą
+ProtoToOEWeakTail: *s*i*n*g*w*ă*n
+ProtoToOEWeightMarkers: *s*i*n*g*w*ă*n
+ProtoToOEApocope: *s*i*n*g*w*ă*n
+ProtoToOEWeightCleanup: *s*i*n*g*w*ă*n
+ProtoToOE: *s*i*n*g*w*ă*n
+WGlide: *s*i*n*g*ʋ*ă*n
+GhMarker: *s*i*n*g*ʋ*ă*n
+GlideDeletion: *s*i*n*g*ʋ*ă*n
+Epenthesis: *s*i*n*g*w*ă*n
+Orthography: singwan
+Surface: singwan
+
+--- sleep ---
+PROTO: *slēpăną
+EXPECTED: slǣp
+OUTPUTS: slēpan
+
+ProtoInput: *s*l*ē*p*ă*n*ą
+InitialKn: *s*l*ē*p*ă*n*ą
+Palatalisation: *s*l*ē*p*ă*n*ą
+ConsonantRules: *s*l*ē*p*ă*n*ą
+ProtoToOEWeakTail: *s*l*ē*p*ă*n
+ProtoToOEWeightMarkers: *s*l*ē*p*ă*n
+ProtoToOEApocope: *s*l*ē*p*ă*n
+ProtoToOEWeightCleanup: *s*l*ē*p*ă*n
+ProtoToOE: *s*l*ē*p*ă*n
+WGlide: *s*l*ē*p*ă*n
+GhMarker: *s*l*ē*p*ă*n
+GlideDeletion: *s*l*ē*p*ă*n
+Epenthesis: *s*l*ē*p*ă*n
+Orthography: slēpan
+Surface: slēpan
+
+--- starve ---
+PROTO: *sterbăną
+EXPECTED: steorfan
+OUTPUTS: steorban
+
+ProtoInput: *s*t*e*r*b*ă*n*ą
+InitialKn: *s*t*e*r*b*ă*n*ą
+Palatalisation: *s*t*e*r*b*ă*n*ą
+ConsonantRules: *s*t*e*r*b*ă*n*ą
+ProtoToOEWeakTail: *s*t*eo*r*b*ă*n
+ProtoToOEWeightMarkers: *s*t*eo*r*b*ă*n
+ProtoToOEApocope: *s*t*eo*r*b*ă*n
+ProtoToOEWeightCleanup: *s*t*eo*r*b*ă*n
+ProtoToOE: *s*t*eo*r*b*ă*n
+WGlide: *s*t*eo*r*b*ă*n
+GhMarker: *s*t*eo*r*b*ă*n
+GlideDeletion: *s*t*eo*r*b*ă*n
+Epenthesis: *s*t*eo*r*b*ă*n
+Orthography: steorban
+Surface: steorban
+
+--- stretch ---
+PROTO: *strakkjăną
+EXPECTED: streċċan
+OUTPUTS: streċċġan
+
+ProtoInput: *s*t*r*a*k*k*j*ă*n*ą
+InitialKn: *s*t*r*a*k*k*j*ă*n*ą
+Palatalisation: *s*t*r*a*k*k*j*ă*n*ą
+ConsonantRules: *s*t*r*a*k*k*j*ă*n*ą
+ProtoToOEWeakTail: *s*t*r*e*k*k*j*ă*n
+ProtoToOEWeightMarkers: *s*t*r*e*k*k*j*ă*n
+ProtoToOEApocope: *s*t*r*e*k*k*j*ă*n
+ProtoToOEWeightCleanup: *s*t*r*e*k*k*j*ă*n
+ProtoToOE: *s*t*r*e*ʧ*ʧ*j*ă*n
+WGlide: *s*t*r*e*ʧ*ʧ*j*ă*n
+GhMarker: *s*t*r*e*ʧ*ʧ*j*ă*n
+GlideDeletion: *s*t*r*e*ʧ*ʧ*j*ă*n
+Epenthesis: *s*t*r*e*ʧ*ʧ*j*ă*n
+Orthography: streċċġan
+Surface: streċċġan
+
+--- swine ---
+PROTO: *swīnăn
+EXPECTED: swīn
+OUTPUTS: swīnan
+
+ProtoInput: *s*w*ī*n*ă*n
+InitialKn: *s*w*ī*n*ă*n
+Palatalisation: *s*w*ī*n*ă*n
+ConsonantRules: *s*w*ī*n*ă*n
+ProtoToOEWeakTail: *s*w*ī*n*ă*n
+ProtoToOEWeightMarkers: *s*w*ī*n*ă*n
+ProtoToOEApocope: *s*w*ī*n*ă*n
+ProtoToOEWeightCleanup: *s*w*ī*n*ă*n
+ProtoToOE: *s*w*ī*n*ă*n
+WGlide: *s*ʋ*ī*n*ă*n
+GhMarker: *s*ʋ*ī*n*ă*n
+GlideDeletion: *s*ʋ*ī*n*ă*n
+Epenthesis: *s*w*ī*n*ă*n
+Orthography: swīnan
+Surface: swīnan
+
+--- team ---
+PROTO: *tauxmăz
+EXPECTED: tēam
+OUTPUTS: tēahm
+
+ProtoInput: *t*au*x*m*ă*z
+InitialKn: *t*au*x*m*ă*z
+Palatalisation: *t*au*x*m*ă*z
+ConsonantRules: *t*au*x*m
+ProtoToOEWeakTail: *t*ēa*x*m
+ProtoToOEWeightMarkers: *t*ēa*x*m
+ProtoToOEApocope: *t*ēa*x*m
+ProtoToOEWeightCleanup: *t*ēa*x*m
+ProtoToOE: *t*ēa*x*m
+WGlide: *t*ēa*x*m
+GhMarker: *t*ēa*GH*m
+GlideDeletion: *t*ēa*GH*m
+Epenthesis: *t*ēa*x*m
+Orthography: tēahm
+Surface: tēahm
+
+--- thief ---
+PROTO: *θeubăz
+EXPECTED: þēof
+OUTPUTS: þēob
+
+ProtoInput: *θ*eu*b*ă*z
+InitialKn: *θ*eu*b*ă*z
+Palatalisation: *θ*eu*b*ă*z
+ConsonantRules: *θ*eu*b
+ProtoToOEWeakTail: *θ*ēo*b
+ProtoToOEWeightMarkers: *θ*ēo*b
+ProtoToOEApocope: *θ*ēo*b
+ProtoToOEWeightCleanup: *θ*ēo*b
+ProtoToOE: *θ*ēo*b
+WGlide: *θ*ēo*b
+GhMarker: *θ*ēo*b
+GlideDeletion: *θ*ēo*b
+Epenthesis: *θ*ēo*b
+Orthography: þēob, *þēob
+Surface: þēob
+
+--- toe ---
+PROTO: *taixwō
+EXPECTED: tā
+OUTPUTS: tāhwō
+
+ProtoInput: *t*ai*x*w*ō
+InitialKn: *t*ai*x*w*ō
+Palatalisation: *t*ai*x*w*ō
+ConsonantRules: *t*ai*x*w*ō
+ProtoToOEWeakTail: *t*ā*x*w*ō
+ProtoToOEWeightMarkers: *t*ā*x*w*ō
+ProtoToOEApocope: *t*ā*x*w*ō
+ProtoToOEWeightCleanup: *t*ā*x*w*ō
+ProtoToOE: *t*ā*x*w*ō
+WGlide: *t*ā*x*ʋ*ō
+GhMarker: *t*ā*GH*ʋ*ō
+GlideDeletion: *t*ā*GH*ʋ*ō
+Epenthesis: *t*ā*x*w*ō
+Orthography: tāhwō
+Surface: tāhwō
+
+--- token ---
+PROTO: *taiknăn
+EXPECTED: tācn
+OUTPUTS: tācnan
+
+ProtoInput: *t*ai*k*n*ă*n
+InitialKn: *t*ai*k*n*ă*n
+Palatalisation: *t*ai*k*n*ă*n
+ConsonantRules: *t*ai*k*n*ă*n
+ProtoToOEWeakTail: *t*ā*k*n*ă*n
+ProtoToOEWeightMarkers: *t*ā*k*n*ă*n
+ProtoToOEApocope: *t*ā*k*n*ă*n
+ProtoToOEWeightCleanup: *t*ā*k*n*ă*n
+ProtoToOE: *t*ā*k*n*ă*n
+WGlide: *t*ā*k*n*ă*n
+GhMarker: *t*ā*k*n*ă*n
+GlideDeletion: *t*ā*k*n*ă*n
+Epenthesis: *t*ā*k*n*ă*n
+Orthography: tācnan
+Surface: tācnan
+
+--- town ---
+PROTO: *tūnăn
+EXPECTED: tūn
+OUTPUTS: tūnan
+
+ProtoInput: *t*ū*n*ă*n
+InitialKn: *t*ū*n*ă*n
+Palatalisation: *t*ū*n*ă*n
+ConsonantRules: *t*ū*n*ă*n
+ProtoToOEWeakTail: *t*ū*n*ă*n
+ProtoToOEWeightMarkers: *t*ū*n*ă*n
+ProtoToOEApocope: *t*ū*n*ă*n
+ProtoToOEWeightCleanup: *t*ū*n*ă*n
+ProtoToOE: *t*ū*n*ă*n
+WGlide: *t*ū*n*ă*n
+GhMarker: *t*ū*n*ă*n
+GlideDeletion: *t*ū*n*ă*n
+Epenthesis: *t*ū*n*ă*n
+Orthography: tūnan
+Surface: tūnan
+
+--- warp ---
+PROTO: *werpăną
+EXPECTED: wearp
+OUTPUTS: weorpan
+
+ProtoInput: *w*e*r*p*ă*n*ą
+InitialKn: *w*e*r*p*ă*n*ą
+Palatalisation: *w*e*r*p*ă*n*ą
+ConsonantRules: *w*e*r*p*ă*n*ą
+ProtoToOEWeakTail: *w*eo*r*p*ă*n
+ProtoToOEWeightMarkers: *w*eo*r*p*ă*n
+ProtoToOEApocope: *w*eo*r*p*ă*n
+ProtoToOEWeightCleanup: *w*eo*r*p*ă*n
+ProtoToOE: *w*eo*r*p*ă*n
+WGlide: *ʋ*eo*r*p*ă*n
+GhMarker: *ʋ*eo*r*p*ă*n
+GlideDeletion: *ʋ*eo*r*p*ă*n
+Epenthesis: *w*eo*r*p*ă*n
+Orthography: weorpan
+Surface: weorpan
+
+--- wasp ---
+PROTO: *wabsăz
+EXPECTED: wæsp
+OUTPUTS: wæbs
+
+ProtoInput: *w*a*b*s*ă*z
+InitialKn: *w*a*b*s*ă*z
+Palatalisation: *w*a*b*s*ă*z
+ConsonantRules: *w*a*b*s
+ProtoToOEWeakTail: *w*a*b*s
+ProtoToOEWeightMarkers: *w*a*b*s
+ProtoToOEApocope: *w*a*b*s
+ProtoToOEWeightCleanup: *w*a*b*s
+ProtoToOE: *w*æ*b*s
+WGlide: *ʋ*æ*b*s
+GhMarker: *ʋ*æ*b*s
+GlideDeletion: *ʋ*æ*b*s
+Epenthesis: *w*æ*b*s
+Orthography: wæbs
+Surface: wæbs
+
+--- water ---
+PROTO: *watną
+EXPECTED: wæter
+OUTPUTS: wætn
+
+ProtoInput: *w*a*t*n*ą
+InitialKn: *w*a*t*n*ą
+Palatalisation: *w*a*t*n*ą
+ConsonantRules: *w*a*t*n*ą
+ProtoToOEWeakTail: *w*a*t*n
+ProtoToOEWeightMarkers: *w*a*t*n
+ProtoToOEApocope: *w*a*t*n
+ProtoToOEWeightCleanup: *w*a*t*n
+ProtoToOE: *w*æ*t*n
+WGlide: *ʋ*æ*t*n
+GhMarker: *ʋ*æ*t*n
+GlideDeletion: *ʋ*æ*t*n
+Epenthesis: *w*æ*t*n
+Orthography: wætn
+Surface: wætn
+
+--- wax ---
+PROTO: *waxsăną
+EXPECTED: weax
+OUTPUTS: weahsan
+
+ProtoInput: *w*a*x*s*ă*n*ą
+InitialKn: *w*a*x*s*ă*n*ą
+Palatalisation: *w*a*x*s*ă*n*ą
+ConsonantRules: *w*a*x*s*ă*n*ą
+ProtoToOEWeakTail: *w*ēa*x*s*ă*n, *w*ea*x*s*ă*n
+ProtoToOEWeightMarkers: *w*ēa*x*s*ă*n, *w*ea*x*s*ă*n
+ProtoToOEApocope: *w*ea*x*s*ă*n, *w*ēa*x*s*ă*n
+ProtoToOEWeightCleanup: *w*ea*x*s*ă*n, *w*ēa*x*s*ă*n
+ProtoToOE: *w*ea*x*s*ă*n
+WGlide: *ʋ*ea*x*s*ă*n
+GhMarker: *ʋ*ea*GH*s*ă*n
+GlideDeletion: *ʋ*ea*GH*s*ă*n
+Epenthesis: *w*ea*x*s*ă*n
+Orthography: weahsan
+Surface: weahsan
+
+--- weapon ---
+PROTO: *wēpnăn
+EXPECTED: wǣpn
+OUTPUTS: wēpnan
+
+ProtoInput: *w*ē*p*n*ă*n
+InitialKn: *w*ē*p*n*ă*n
+Palatalisation: *w*ē*p*n*ă*n
+ConsonantRules: *w*ē*p*n*ă*n
+ProtoToOEWeakTail: *w*ē*p*n*ă*n
+ProtoToOEWeightMarkers: *w*ē*p*n*ă*n
+ProtoToOEApocope: *w*ē*p*n*ă*n
+ProtoToOEWeightCleanup: *w*ē*p*n*ă*n
+ProtoToOE: *w*ē*p*n*ă*n
+WGlide: *ʋ*ē*p*n*ă*n
+GhMarker: *ʋ*ē*p*n*ă*n
+GlideDeletion: *ʋ*ē*p*n*ă*n
+Epenthesis: *w*ē*p*n*ă*n
+Orthography: wēpnan
+Surface: wēpnan
+
+--- weave ---
+PROTO: *webăną
+EXPECTED: wefan
+OUTPUTS: weban
+
+ProtoInput: *w*e*b*ă*n*ą
+InitialKn: *w*e*b*ă*n*ą
+Palatalisation: *w*e*b*ă*n*ą
+ConsonantRules: *w*e*b*ă*n*ą
+ProtoToOEWeakTail: *w*ē*b*ă*n
+ProtoToOEWeightMarkers: *w*ē*b*ă*n
+ProtoToOEApocope: *w*ē*b*ă*n
+ProtoToOEWeightCleanup: *w*ē*b*ă*n
+ProtoToOE: *w*e*b*ă*n
+WGlide: *ʋ*e*b*ă*n
+GhMarker: *ʋ*e*b*ă*n
+GlideDeletion: *ʋ*e*b*ă*n
+Epenthesis: *w*e*b*ă*n
+Orthography: weban
+Surface: weban
+
+--- whale ---
+PROTO: *walăz
+EXPECTED: hwæl
+OUTPUTS: wæl
+
+ProtoInput: *w*a*l*ă*z
+InitialKn: *w*a*l*ă*z
+Palatalisation: *w*a*l*ă*z
+ConsonantRules: *w*a*l
+ProtoToOEWeakTail: *w*a*l
+ProtoToOEWeightMarkers: *w*a*l
+ProtoToOEApocope: *w*a*l
+ProtoToOEWeightCleanup: *w*a*l
+ProtoToOE: *w*æ*l
+WGlide: *ʋ*æ*l
+GhMarker: *ʋ*æ*l
+GlideDeletion: *ʋ*æ*l
+Epenthesis: *w*æ*l
+Orthography: wæl
+Surface: wæl
+
+--- wind ---
+PROTO: *windăną
+EXPECTED: wind
+OUTPUTS: windan
+
+ProtoInput: *w*i*n*d*ă*n*ą
+InitialKn: *w*i*n*d*ă*n*ą
+Palatalisation: *w*i*n*d*ă*n*ą
+ConsonantRules: *w*i*n*d*ă*n*ą
+ProtoToOEWeakTail: *w*i*n*d*ă*n
+ProtoToOEWeightMarkers: *w*i*n*d*ă*n
+ProtoToOEApocope: *w*i*n*d*ă*n
+ProtoToOEWeightCleanup: *w*i*n*d*ă*n
+ProtoToOE: *w*i*n*d*ă*n
+WGlide: *ʋ*i*n*d*ă*n
+GhMarker: *ʋ*i*n*d*ă*n
+GlideDeletion: *ʋ*i*n*d*ă*n
+Epenthesis: *w*i*n*d*ă*n
+Orthography: windan
+Surface: windan
+
+--- yarn ---
+PROTO: *garnăn
+EXPECTED: ġearn
+OUTPUTS: ġearnan
+
+ProtoInput: *g*a*r*n*ă*n
+InitialKn: *g*a*r*n*ă*n
+Palatalisation: *g*a*r*n*ă*n
+ConsonantRules: *g*a*r*n*ă*n
+ProtoToOEWeakTail: *g*ēa*r*n*ă*n, *g*ea*r*n*ă*n
+ProtoToOEWeightMarkers: *g*ēa*r*n*ă*n, *g*ea*r*n*ă*n
+ProtoToOEApocope: *g*ea*r*n*ă*n, *g*ēa*r*n*ă*n
+ProtoToOEWeightCleanup: *g*ea*r*n*ă*n, *g*ēa*r*n*ă*n
+ProtoToOE: *ʤ*ea*r*n*ă*n
+WGlide: *ʤ*ea*r*n*ă*n
+GhMarker: *ʤ*ea*r*n*ă*n
+GlideDeletion: *ʤ*ea*r*n*ă*n
+Epenthesis: *ʤ*ea*r*n*ă*n
+Orthography: ġearnan
+Surface: ġearnan
+
+
+=== BUCKET: uncategorized (2) ===
+
+--- burst ---
+PROTO: *brestăną
+EXPECTED: berstan
+OUTPUTS: brestan
+
+ProtoInput: *b*r*e*s*t*ă*n*ą
+InitialKn: *b*r*e*s*t*ă*n*ą
+Palatalisation: *b*r*e*s*t*ă*n*ą
+ConsonantRules: *b*r*e*s*t*ă*n*ą
+ProtoToOEWeakTail: *b*r*e*s*t*ă*n
+ProtoToOEWeightMarkers: *b*r*e*s*t*ă*n
+ProtoToOEApocope: *b*r*e*s*t*ă*n
+ProtoToOEWeightCleanup: *b*r*e*s*t*ă*n
+ProtoToOE: *b*r*e*s*t*ă*n
+WGlide: *b*r*e*s*t*ă*n
+GhMarker: *b*r*e*s*t*ă*n
+GlideDeletion: *b*r*e*s*t*ă*n
+Epenthesis: *b*r*e*s*t*ă*n
+Orthography: brestan
+Surface: brestan
+
+--- milk ---
+PROTO: *melukz
+EXPECTED: meolc
+OUTPUTS: meoluc
+
+ProtoInput: *m*e*l*u*k*z
+InitialKn: *m*e*l*u*k*z
+Palatalisation: *m*e*l*u*k*z
+ConsonantRules: *m*e*l*u*k
+ProtoToOEWeakTail: *m*ē*l*u*k
+ProtoToOEWeightMarkers: *m*ē*l*u*k
+ProtoToOEApocope: *m*ē*l*u*k
+ProtoToOEWeightCleanup: *m*ē*l*u*k
+ProtoToOE: *m*eo*l*u*k
+WGlide: *m*eo*l*u*k
+GhMarker: *m*eo*l*u*k
+GlideDeletion: *m*eo*l*u*k
+Epenthesis: *m*eo*l*u*k
+Orthography: meoluc
+Surface: meoluc

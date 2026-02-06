@@ -1,0 +1,133 @@
+Total mismatches: 299
+
+i_umlaut_missing_true: 17
+proto_mismatch_suspect: 7
+fronting_missing_no_trigger: 35
+breaking_missing: 16
+no_output: 14
+long_vowel_missing: 4
+palatalization_missing: 3
+final_vowel_extra: 61
+length_extra_other: 15
+front_expected_back_out: 20
+final_vowel_missing: 27
+breaking_extra_other: 15
+final_n_missing: 8
+palatal_extra_other: 7
+back_expected_front_out: 8
+palatal_marker_variant: 0
+epenthetic_vowel_missing: 0
+vowel_quality_other: 16
+gemination_extra: 7
+consonant_mismatch_other: 19
+uncategorized: 0
+
+Examples:
+i_umlaut_missing_true:
+  *biginnăną -> biġġinnan (expected beginnan)
+  *balgiz -> bealġġe (expected bielġ)
+  *bazją -> bæra (expected berġe)
+  *flaiskăz -> flāsc (expected flǣsċ)
+  *xendjō -> hindō (expected hindan)
+proto_mismatch_suspect:
+  *fleugăną -> flēogan (expected flȳġe)
+  *gebăną -> ġġeban (expected giefan)
+  *herdō -> heordō (expected hierd)
+  *newun -> nēowun (expected nigon)
+  *skerăną -> sċeran (expected sċieran)
+fronting_missing_no_trigger:
+  *nadrō -> nadrō (expected nǣdre)
+  *bastą -> bæsta (expected bæst)
+  *baθą -> bæþa (expected bæþ)
+  *dranką -> drænca (expected drenċ)
+  *farăną -> færan (expected fær)
+breaking_missing:
+  *brustz -> brust (expected brēost)
+  *dawwō -> dawō (expected dēaw)
+  *fedwōrez -> fedwōre (expected fēower)
+  *frijōndz -> friōnd (expected frēond)
+  *gastiz -> ġġeste (expected appear)
+no_output:
+  *xabukăz -> +? (expected hafoc)
+  *xemenăz -> +? (expected heofon)
+  *xnakkăz -> +? (expected hnecca)
+  *regna-bugōn -> +? (expected reġnboga)
+  *skellinăz -> +? (expected sċilling)
+long_vowel_missing:
+  *funxwstiz -> fyhwste (expected fȳst)
+  *xattuz -> hatt (expected hōd)
+  *slaxăną -> sleaan (expected slēan)
+  *θrejez -> þrie (expected þrī)
+palatalization_missing:
+  *burdiz -> byrde (expected ġebyrd)
+  *θankăz -> þænc (expected þenċan)
+  *waiθiz -> wǣþe (expected wīþiġ)
+final_vowel_extra:
+  *bergą -> beorga (expected beorg)
+  *blōdą -> blōda (expected blōd)
+  *burdą -> burda (expected bord)
+  *būrą -> būra (expected būr)
+  *braudą -> brēada (expected brēad)
+length_extra_other:
+  *dōną -> dōn (expected don)
+  *fastēną -> fæstēn (expected fæst)
+  *fadēr -> fædēr (expected fæder)
+  *finþăną -> fīþan (expected findan)
+  *xabēną -> hæbēn (expected habban)
+front_expected_back_out:
+  *bōkō -> bōcō (expected bēċe)
+  *laubjăną -> līefan (expected belīefan)
+  *brestăną -> brestan (expected berstan)
+  *drībăną -> drīban (expected drīfan)
+  *erθo -> eorþo (expected eorþe)
+final_vowel_missing:
+  *baugjăną -> bēaġġan (expected boga)
+  *beugăną -> bēogan (expected boga)
+  *bugōn -> bugōn (expected boga)
+  *kōwz -> cōw (expected cū)
+  *kwiθuz -> cwiþ (expected cudu)
+breaking_extra_other:
+  *barwōn -> bearwōn (expected bēr)
+  *burōjăną -> burēan (expected borian)
+  *kalbăz -> ċealb (expected ọmọ)
+  *felθuz -> feolþ (expected feld)
+  *leusăną -> lēosan (expected forloren)
+final_n_missing:
+  *fellą -> feolla (expected fellan)
+  *gangăz -> ġġæng (expected gangan)
+  *lindō -> lindō (expected linden)
+  *lungwą -> lungwa (expected lungen)
+  *end -> end (expected ān)
+palatal_extra_other:
+  *bakăną -> bæċan (expected bacan)
+  *brekăną -> breċan (expected brecan)
+  *kambăz -> ċæmb (expected camb)
+  *fulgēną -> fulġġēn (expected folgian)
+  *gansz -> ġġēs (expected gōs)
+back_expected_front_out:
+  *banną -> bænn (expected bannan)
+  *brandăz -> brænd (expected brand)
+  *xamarăz -> hæmær (expected hamor)
+  *spannăną -> spænnan (expected spann)
+  *swanăz -> swæn (expected swan)
+palatal_marker_variant:
+epenthetic_vowel_missing:
+vowel_quality_other:
+  *kruppăz -> crupp (expected cropp)
+  *durą -> dura (expected duru)
+  *ēlăz -> ēl (expected ǣl)
+  *gud -> gud (expected god)
+  *lukkăz -> lucc (expected locc)
+gemination_extra:
+  *dagăz -> dæġġ (expected dæġ)
+  *xagjăz -> hæġġ (expected heċġ)
+  *knuppăz -> cnupp (expected knob)
+  *naglăz -> næġġl (expected næġl)
+  *regną -> reġġn (expected reġn)
+consonant_mismatch_other:
+  *bebruz -> beber (expected befer)
+  *bainăn -> bānan (expected bān)
+  *bō -> bō (expected bā]] [[þā)
+  *budmăz -> budm (expected botm)
+  *brekăną -> breċan (expected brēċ)
+uncategorized:

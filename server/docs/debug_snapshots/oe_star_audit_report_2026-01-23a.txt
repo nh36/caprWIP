@@ -1,0 +1,48 @@
+Stage violations (non-star letters before Orthography):
+- ConsonantRules: 12
+- GhMarker: 80
+- GlideDeletion: 80
+- InitialKn: 4
+- Palatalisation: 12
+- ProtoToOE: 45
+
+Examples for ConsonantRules:
+  chew: tʃ*e*w*w*ă*n*ą
+  knead: Kn*e*d*ă*n*ą
+  shine: ʃ*ī*n*ă*n*ą
+  give: dʒ*e*b*ă*n*ą
+  shear: ʃ*e*r*ă*n*ą
+
+Examples for GhMarker:
+  chew: tʃ*ēoʋ*ă*n
+  gall: ʤ*ea*l*l*ɔ̆
+  harm: ç*ea*r*m
+  hazel: ç*æ*s*l
+  hearth: ç*eo*r*θ
+
+Examples for GlideDeletion:
+  chew: tʃ*ēo*ă*n
+  gall: ʤ*ea*l*l*ɔ̆
+  harm: ç*ea*r*m
+  hazel: ç*æ*s*l
+  hearth: ç*eo*r*θ
+
+Examples for InitialKn:
+  knead: Kn*e*d*ă*n*ą
+  knee: Kn*e*w*ą
+  knob: Kn*u*p*p*ă*z
+  knight: Kn*i*x*t*ă*z
+
+Examples for Palatalisation:
+  chew: tʃ*e*w*w*ă*n*ą
+  knead: Kn*e*d*ă*n*ą
+  shine: ʃ*ī*n*ă*n*ą
+  give: dʒ*e*b*ă*n*ą
+  shear: ʃ*e*r*ă*n*ą
+
+Examples for ProtoToOE:
+  chew: tʃ*ēo*w*ă*n
+  gall: ʤ*ea*l*l*ɔ̆
+  harm: ç*ea*r*m
+  hazel: ç*æ*s*l
+  hearth: ç*eo*r*θ

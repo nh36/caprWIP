@@ -402,9 +402,24 @@ def write_report(
 ) -> None:
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     stage_fires: Dict[str, List[str]] = defaultdict(list)
+    fronted_rows: List[str] = []; unfronted_rows: List[str] = []; fronting_correct: List[str] = []; fronting_unfronting_correct: List[str] = []; fronting_unfronting_incorrect: List[str] = []
     for row in rows:
+        afb = run_stage(bin_dir, "old_english_sandbox_after_anglo_frisian_brightening.bin", row["proto_norm"]); ar = run_stage(bin_dir, "old_english_sandbox_after_a_restoration.bin", row["proto_norm"])
+        afb_out = next((o for o in afb if o != "+?"), ""); ar_out = next((o for o in ar if o != "+?"), "")
+        fronted = is_a_fronting_context(row["proto_norm"]) and oe_first_is_front(afb_out); unfronted = fronted and oe_first_is_back(ar_out)
         outputs = apply_down(bin_path, row["proto_norm"])
         expected = row["counterpart"]
+        if fronted:
+            summary = f"{row['concept']} | {row['proto']} | exp {expected} | afb {afb_out or '+?'} | ar {ar_out or '+?'}"
+            fronted_rows.append(summary)
+            if unfronted:
+                unfronted_rows.append(summary)
+                if oe_first_is_back(expected):
+                    fronting_unfronting_correct.append(summary)
+                elif oe_first_is_front(expected):
+                    fronting_unfronting_incorrect.append(summary)
+            elif oe_first_is_front(expected):
+                fronting_correct.append(summary)
         if not outputs:
             bucket = "no_output"
         elif expected in outputs:
@@ -467,6 +482,11 @@ def write_report(
                 lines.append(f"{label}: {pretty}")
             lines.append("")
         lines.append("")
+
+    lines.append("=== A-FRONTING AUDIT ==="); lines.append("")
+    for title, items in [("fronted", fronted_rows), ("unfronted_by_ar", unfronted_rows), ("fronting_correct", fronting_correct), ("fronting_plus_unfronting_correct", fronting_unfronting_correct), ("fronting_plus_unfronting_incorrect", fronting_unfronting_incorrect)]:
+        if items:
+            lines.append(f"--- {title} ({len(items)}) ---"); lines.extend(items); lines.append("")
 
     lines.append("=== STAGE FIRING SUMMARY ===")
     lines.append("")

@@ -21,7 +21,9 @@ define OESandboxAfterBreakingLengthening OESandboxAfterAngloFrisianBrightening
     .o. EnglishBreakingLengthening;
 define OESandboxAfterARestoration OESandboxAfterBreakingLengthening
     .o. OldEnglishARestoration;
-define OESandboxAfterLiquidLowering OESandboxAfterARestoration
+define OESandboxAfterVelarFricPal OESandboxAfterARestoration
+    .o. OldEnglishVelarFricativePalatalization;
+define OESandboxAfterLiquidLowering OESandboxAfterVelarFricPal
     .o. EnglishLiquidLowering;
 define OESandboxAfterJGemination OESandboxAfterLiquidLowering
     .o. OldEnglishJGemination;
@@ -29,9 +31,7 @@ define OESandboxAfterSkPalatalization OESandboxAfterJGemination
     .o. OldEnglishSkPalatalization;
 define OESandboxAfterVelarPalatalization OESandboxAfterSkPalatalization
     .o. OldEnglishVelarPalatalization;
-define OESandboxAfterVelarFricativePalatalization OESandboxAfterVelarPalatalization
-    .o. OldEnglishVelarFricativePalatalization;
-define OESandboxAfterIUmlaut OESandboxAfterVelarFricativePalatalization
+define OESandboxAfterIUmlaut OESandboxAfterVelarPalatalization
     .o. OldEnglishIUmlaut;
 define OESandboxAfterJClusterCoalescence OESandboxAfterIUmlaut
     .o. EnglishJClusterCoalescence;
@@ -126,6 +126,10 @@ regex OESandboxAfterARestoration;
 save stack old_english_sandbox_after_a_restoration.bin
 
 clear stack
+regex OESandboxAfterVelarFricPal;
+save stack old_english_sandbox_after_velar_fricative_palatalization.bin
+
+clear stack
 regex OESandboxAfterLiquidLowering;
 save stack old_english_sandbox_after_liquid_lowering.bin
 
@@ -140,10 +144,6 @@ save stack old_english_sandbox_after_sk_palatalization.bin
 clear stack
 regex OESandboxAfterVelarPalatalization;
 save stack old_english_sandbox_after_velar_palatalization.bin
-
-clear stack
-regex OESandboxAfterVelarFricativePalatalization;
-save stack old_english_sandbox_after_velar_fricative_palatalization.bin
 
 clear stack
 regex OESandboxAfterIUmlaut;
