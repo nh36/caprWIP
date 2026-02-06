@@ -2,19 +2,30 @@
 
 ## A-Restoration Fix (2026-02-06)
 
-**Summary:** Fixed critical foma syntax bug causing A-restoration to apply unconditionally.
+**Summary:** Fixed critical foma syntax bug causing A-restoration to apply unconditionally, 
+then implemented chronology fix to move apocope after restoration.
 
 **Root cause:** The rule `{*æ} -> {*a} || _ (context)` had parentheses around the context,
 making it OPTIONAL in foma's replacement rule syntax. The rule applied everywhere instead
 of only when followed by the required intervening+back-vowel pattern.
 
 **Changes to germanic.txt:**
-1. Removed outer parentheses from OldEnglishARestoration context
-2. Added `{*ă}` and `{*ą}` to OldEnglishARestorationBackVowel (reduced back vowels)
-3. Expanded OldEnglishARestorationStrongOTail with additional weak-tail patterns
+1. Removed outer parentheses from OldEnglishARestoration context (lines 1138-1183)
+2. Moved OldEnglishFinalWeakSchwaApocope from OldEnglishConsonantRules to EnglishProtoToOE,
+   placing it AFTER OldEnglishARestoration (lines 1402-1407, 829-831)
+3. Removed weak-tail vowels {*ă} and {*ą} from OldEnglishARestorationBackVowel trigger set
 
-**Result:** Mismatches reduced from 283 to 280 (net -3). `fronting_missing_no_trigger` dropped
-from 30 to 11 (19 words fixed). Some edge cases remain for future investigation.
+**Result:** Total 282 mismatches (baseline: 280). Distribution significantly improved:
+- `fronting_missing_no_trigger`: 11 → 3 (-8, major improvement)
+- `back_expected_front_out`: 4 → 8 (+4, regression due to paradigmatic mixing in dataset)
+
+**Analysis:** Regression reflects **paradigmatic alternation problem** - dataset uses single
+proto-forms (e.g., `*brandăz`, `*dagăz`) to represent lexemes that historically had 
+alternations (nom.sg. `dæġ` vs dat.pl. `dagum`). FST derives one form per proto-form.
+
+**Documentation:** See `docs/germanic_notes/weak_tail_vowels_and_a_restoration.md` for 
+comprehensive analysis of weak-tail vowel triggers, paradigmatic alternations, and case 
+form issues.
 
 **Prevention:** See "Foma notes / recurring gotchas" below for syntax guidelines.
 
