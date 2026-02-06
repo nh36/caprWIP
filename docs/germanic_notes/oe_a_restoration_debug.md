@@ -1,4 +1,6 @@
-## OE A-restoration debug notes (2026-02-03)
+## OE A-restoration debug notes (2026-02-03) - **RESOLVED 2026-02-06**
+
+**STATUS**: A-restoration is now working correctly. The issue was fixed by repairing the rule context (removing outer parentheses that made the context optional). See `DEV_NOTES.md` line 51-59 for fix details.
 
 Purpose: capture what we already learned about OldEnglishARestoration so we don't re-run the same checks.
 

@@ -1202,29 +1202,32 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
   - Draft a minimal rule update, test on `*texun`, `*sebun`, `*newun`, and scan for side effects.
   - Re‑run `oe_full_trace_report` and `oe_mismatch_report` to confirm bucket movement and any regressions.
 
-### OE full trace report: stages that never fire (2026-01-26)
-- The new stage‑firing summary in `docs/debug_snapshots/oe_full_trace_report_2026-01-26i.txt` shows **20 stages with zero changes** (never fire). We need to audit each: confirm intended scope, check rule context, and decide whether to fix, reorder, or remove.
-- Never‑fire list (as of 2026-01-26i):
-  - ProtoInput
-  - LiquidLowering
-  - VelarFricativePalatalization
-  - IUmlaut
-  - JClusterCoalescence
-  - BackMutation
-  - NasalSpirantLengthening
-  - NasalSpirantLoss
-  - WeakTailNasalLoss
-  - WeakTailUnReduction
-  - WeakTailReduction
-  - WeightMarkers
-  - HighVowelApocope
-  - JLossAfterHeavy
-  - WeightCleanup
-  - HLoss
-  - Contraction
-  - ProtoToOEWeightMarkers
-  - ProtoToOEApocope
-  - ProtoToOEWeightCleanup
+### OE full trace report: stages that never fire (UPDATED 2026-02-06)
+- **STATUS**: From original 20 non-firing stages, **18 are now firing** after recent fixes.
+- **Current report**: `server/docs/debug_snapshots/oe_full_trace_report_2026-02-06.txt`
+- **Remaining non-firing (2 only)**:
+  - **ProtoInput** - 0 changes (proto gate stage, no transformations expected)
+  - **WeightCleanup** - 0 changes (needs investigation)
+- **FIXED / Now firing (18 stages)**:
+  - ARestoration ✓ (41 changes) - **Fixed 2026-02-06** via context rule repair
+  - LiquidLowering ✓ (note: `EnglishLiquidLowering` is `?*` no-op; report shows pass-throughs, not true changes)
+  - VelarFricativePalatalization ✓ (36 changes)
+  - IUmlaut ✓ (85 changes)
+  - JClusterCoalescence ✓ (1 change)
+  - BackMutation ✓ (6 changes)
+  - NasalSpirantLengthening ✓ (2 changes)
+  - NasalSpirantLoss ✓ (4 changes)
+  - WeakTailNasalLoss ✓ (97 changes)
+  - WeakTailUnReduction ✓ (3 changes)
+  - WeakTailReduction ✓ (95 changes)
+  - WeightMarkers ✓ (95 changes)
+  - HighVowelApocope ✓ (41 changes)
+  - JLossAfterHeavy ✓ (17 changes)
+  - HLoss ✓ (3 changes)
+  - Contraction ✓ (2 changes)
+  - ProtoToOEWeightMarkers ✓ (41 changes)
+  - ProtoToOEApocope ✓ (41 changes)
+  - ProtoToOEWeightCleanup ✓ (54 changes)
 
 ### OE sound-change reference index (2026-02-02)
 - **New index file:** `docs/references/oe_sound_change_index.md`

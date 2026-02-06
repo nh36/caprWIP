@@ -1,25 +1,25 @@
-Total mismatches: 283
+Total mismatches: 282
 
 i_umlaut_missing_true: 4
 proto_mismatch_suspect: 0
-fronting_missing_no_trigger: 30
+fronting_missing_no_trigger: 3
 breaking_missing: 19
 no_output: 13
 long_vowel_missing: 1
-palatalization_missing: 5
-final_vowel_extra: 55
-length_extra_other: 14
+palatalization_missing: 7
+final_vowel_extra: 60
+length_extra_other: 17
 front_expected_back_out: 0
-final_vowel_missing: 32
+final_vowel_missing: 34
 breaking_extra_other: 23
 final_n_missing: 10
-palatal_extra_other: 14
-back_expected_front_out: 0
-palatal_marker_variant: 1
+palatal_extra_other: 18
+back_expected_front_out: 5
+palatal_marker_variant: 0
 epenthetic_vowel_missing: 0
-vowel_quality_other: 23
+vowel_quality_other: 26
 gemination_extra: 0
-consonant_mismatch_other: 37
+consonant_mismatch_other: 40
 uncategorized: 2
 
 Examples:
@@ -30,11 +30,9 @@ i_umlaut_missing_true:
   *wainōjăną -> wānēġan (expected hwīnan)
 proto_mismatch_suspect:
 fronting_missing_no_trigger:
-  *nadrō -> nadrō (expected nǣdre)
-  *bastą -> basta (expected bæst)
-  *baθą -> baþa (expected bæþ)
-  *dalăz -> dal (expected dæl)
-  *dagăz -> dag (expected dæġ)
+  *rastō -> rastō (expected ræst)
+  *sapōn -> sapōn (expected sæp)
+  *tappōn -> tappōn (expected tæppa)
 breaking_missing:
   *brustz -> brust (expected brēost)
   *dawwō -> dawō (expected dēaw)
@@ -52,21 +50,21 @@ long_vowel_missing:
 palatalization_missing:
   *bōkō -> bōcō (expected bēċe)
   *burdiz -> byrd (expected ġebyrd)
+  *dranką -> drænca (expected drenċ)
   *fleugăną -> flēogan (expected flȳġe)
   *xunăgą -> hunaga (expected huniġ)
-  *waiθiz -> wǣþ (expected wīþiġ)
 final_vowel_extra:
   *bergą -> beorga (expected beorg)
+  *bastą -> bæsta (expected bæst)
+  *baθą -> bæþa (expected bæþ)
   *blōdą -> blōda (expected blōd)
   *burdą -> burda (expected bord)
-  *būrą -> būra (expected būr)
-  *braudą -> brēada (expected brēad)
 length_extra_other:
   *dōną -> dōn (expected don)
+  *fastēną -> fæstēn (expected fæst)
+  *fadēr -> fædēr (expected fæder)
   *finþăną -> fīþan (expected findan)
   *flaskō -> flascō (expected flasce)
-  *xabēną -> habēn (expected habban)
-  *libēną -> libēn (expected lifian)
 front_expected_back_out:
 final_vowel_missing:
   *baugjăną -> bīeġan (expected boga)
@@ -82,33 +80,43 @@ breaking_extra_other:
   *xazwăz -> hearw (expected hǣr)
 final_n_missing:
   *fellą -> feolla (expected fellan)
-  *gangăz -> gang (expected gangan)
+  *gangăz -> ġæng (expected gangan)
   *xendjō -> hindō (expected hindan)
   *lindō -> lindō (expected linden)
   *lungwą -> lungwa (expected lungen)
 palatal_extra_other:
+  *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġinnan (expected beginnan)
   *burōjăną -> burēġan (expected borian)
   *brekăną -> breċan (expected brecan)
   *kalbăz -> ċealb (expected cealf)
-  *fulgēną -> fulġēn (expected folgian)
 back_expected_front_out:
+  *banną -> bænn (expected bannan)
+  *spannăną -> spænnan (expected spann)
+  *θankăz -> þænc (expected þancas)
+  *wadăną -> wædan (expected wadan)
+  *waskăną -> wæsċan (expected wasċan)
 palatal_marker_variant:
-  *waskăną -> wascan (expected wasċan)
 epenthetic_vowel_missing:
 vowel_quality_other:
+  *nadrō -> nædrō (expected nǣdre)
+  *brandas -> brandæs (expected brandes)
   *kraftiz -> creft (expected cræft)
   *kruppăz -> crupp (expected cropp)
   *durą -> dura (expected duru)
-  *erθo -> eorþo (expected eorþe)
-  *ēlăz -> ēl (expected ǣl)
 gemination_extra:
 consonant_mismatch_other:
-  *banną -> bann (expected bannan)
   *bebruz -> beber (expected befer)
   *laubjăną -> līefan (expected belīefan)
   *bainăn -> bānan (expected bān)
   *bō -> bō (expected bā]] [[þā)
+  *budmăz -> budm (expected botm)
 uncategorized:
   *brestăną -> brestan (expected berstan)
   *melukz -> meoluc (expected meolc)
+
+=== A-FRONTING AUDIT ===
+--- fronting_missing_no_trigger ---
+*rastō -> rastō (expected ræst)
+*sapōn -> sapōn (expected sæp)
+*tappōn -> tappōn (expected tæppa)
