@@ -826,8 +826,10 @@ define OldEnglishFinalWeakSchwaApocope [
     {*ă} -> 0 || _ .#.
 ];
 
+# NOTE (2026-02-06): OldEnglishFinalWeakSchwaApocope moved to EnglishProtoToOE
+# after OldEnglishARestoration to fix chronology. A-restoration must see the
+# weak-tail endings before they are apocopated.
 define OldEnglishConsonantRules EnglishZApocope
-    .o. OldEnglishFinalWeakSchwaApocope
     .o. EnglishZRhotacism;
 
 define EnglishConsonantRules OldEnglishConsonantRules;
@@ -1134,10 +1136,17 @@ define EnglishAngloFrisianBrightening [
     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
 ];
 
-# A-restoration: */æ/ > */a/ before a back vowel in the following syllable.
-# Back vowels that trigger A-restoration. Includes both full back vowels and
-# the reduced/weak back vowels *ă and *ą which are phonetically back.
-define OldEnglishARestorationBackVowel [EnglishStarBackVowel | {*ă} | {*ą}];
+# A-restoration: */æ/ > */a/ before a STRESSED back vowel in the following syllable.
+# Per Ringe/Taylor Vol 2 §6.3.1: "Those stressed *æ which were immediately followed
+# by a single or geminate consonant or sC-cluster which was in turn followed by a
+# back vowel became a." Ringe explicitly notes: "That unstressed *æ was not retracted."
+#
+# CRITICAL (2026-02-06): Only FULL (stressed) back vowels trigger A-restoration.
+# Weak-tail vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration.
+# The chronology fix moved apocope to after A-restoration so that full back vowels
+# in endings (like *-ōn, *-az) can trigger restoration, but we must exclude the
+# unstressed weak-tail vowels.
+define OldEnglishARestorationBackVowel [EnglishStarBackVowel];
 
 define OldEnglishARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
@@ -1400,6 +1409,11 @@ define EnglishProtoToOE (
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
     .o. OldEnglishVelarFricativePalatalization
     .o. OldEnglishARestoration
+    # CRITICAL CHRONOLOGY FIX (2026-02-06): Final weak schwa apocope must occur
+    # AFTER A-restoration, not before. A-restoration needs to see the weak-tail
+    # endings (like *-ăz, *-ą) to determine whether to apply. Historical chronology
+    # per Ringe/Taylor: §6.3 Retraction (early) → §6.8 Apocope (later).
+    .o. OldEnglishFinalWeakSchwaApocope
     .o. EnglishLiquidLowering
     .o. OldEnglishJGemination
     .o. OldEnglishSkPalatalization
