@@ -1,5 +1,0 @@
-OE -ana outputs from PGmc→OE stage (english_after_proto_to_oe.bin)
-Count: 1
-
-concept	proto	stage_output	attested
-swan	*swanăz	sʋana	swan

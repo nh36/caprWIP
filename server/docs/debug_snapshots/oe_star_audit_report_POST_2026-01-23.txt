@@ -1,8 +1,0 @@
-Unstarred tokens before Orthography/Surface (post-change (corrected v2))
-- ProtoInput: 0
-- InitialKn: 0
-- Palatalisation: 0
-- ConsonantRules: 0
-- GhMarker: 0
-- GlideDeletion: 0
-- ProtoToOE: 0
