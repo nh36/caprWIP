@@ -97,7 +97,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 926	v r iː z ə	*freusanăn	v r iː z ə - ( - - )	vriːzə	vriezen	254	Dutch				freeze	*freusanăn
 1692	v r iː n t	*frijōndz	v r iː ( - - ) n t ( - )	vriːnt	vriend	463	Dutch				friend	*frijōndz
 456	v ɔ r s t	*frustą	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch				frost	*frustăn
-956	v oː r	*furxō	v oː r ( - - )	voːr	voor	262	Dutch				furrow	*furxō
+956	v oː r	*furx	v oː r ( - - )	voːr	voor	262	Dutch				furrow	*furx
 748	x ɑ l	*gallą	x ɑ l - ( - )	xɑl	gal	205	Dutch				gall	*gallăn
 201	x ɑ ŋ	*gangăz	x ɑ ŋ - ( - - )	xɑŋ	gang	56	Dutch				gang	*gangăz
 621	x ɪ f t	*geftiz	x ɪ f t ( - - )	xɪft	gift	171	Dutch				gift	*geftiz
@@ -442,7 +442,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1691	f r ɛ n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	friend	463	English				friend	*frijōndz
 1482	f r aɪ t	*furxtīn	f - r aɪ - t ( - - )	fraɪt	fright	406	English				fright	*furxtīn
 455	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	frost	125	English				frost	*frustăn
-955	f ʌ r əʊ	*furxō	f ʌ r ( əʊ - )	fʌrəʊ	furrow	262	English				furrow	*furxō
+955	f ʌ r əʊ	*furx	f ʌ r ( əʊ - )	fʌrəʊ	furrow	262	English				furrow	*furx
 747	ɡ ɔː l	*gallą	ɡ ɔː l - ( - )	ɡɔːl	gall	205	English				gall	*gallăn
 200	ɡ æ ŋ	*gangăz	ɡ æ ŋ - ( - - )	ɡæŋ	gang	56	English				gang	*gangăz
 18	ɡ əʊ s t	*gaistăz	ɡ əʊ s t ( - - )	ɡəʊst	ghost	5	English				ghost	*gaistăz
@@ -818,7 +818,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGID	DOCULECT	NOTE	STRUCTURE	BORR
 1690	f r ɔy n t	*frijōndz	f r ɔy ( - - ) n d ( - )	frɔynt	Freund	463	German				friend	*frijōndz
 1481	f ʊ r x t	*furxtīn	f ʊ r - x t ( - - )	fʊrxt	Furcht	406	German				fright	*furxtīn
 454	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	Frost	125	German				frost	*frustăn
-954	f ʊ r x ə	*furxō	f ʊ r ( x ə )	fʊrxə	Furche	262	German				furrow	*furxō
+954	f ʊ r x ə	*furx	f ʊ r ( x ə )	fʊrxə	Furche	262	German				furrow	*furx
 746	ɡ a l ə	*gallą	ɡ a l ə ( - )	ɡalə	Galle	205	German				gall	*gallăn
 199	ɡ a ŋ	*gangăz	ɡ a ŋ - ( - - )	ɡaŋ	Gang	56	German				gang	*gangăz
 17	ɡ ai s t	*gaistăz	ɡ ai s t ( - - )	ɡaist	Geist	5	German				ghost	*gaistăz
