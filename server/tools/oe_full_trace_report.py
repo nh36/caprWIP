@@ -31,6 +31,7 @@ STAGES: List[Tuple[str, str]] = [
     ("Palatalisation", "old_english_sandbox_after_palatalisation.bin"),
     ("ConsonantRules", "old_english_sandbox_after_consonant_rules.bin"),
     ("WestGermanic", "old_english_sandbox_after_west_germanic.bin"),
+    ("PWGmc", "old_english_sandbox_after_pwgmc.bin"),
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
     ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
     ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),

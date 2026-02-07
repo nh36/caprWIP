@@ -1,0 +1,113 @@
+Total mismatches: 325
+
+i_umlaut_missing_true: 12
+proto_mismatch_suspect: 0
+fronting_missing_no_trigger: 9
+breaking_missing: 19
+no_output: 12
+long_vowel_missing: 1
+palatalization_missing: 3
+final_vowel_extra: 83
+length_extra_other: 11
+front_expected_back_out: 0
+final_vowel_missing: 28
+breaking_extra_other: 16
+final_n_missing: 78
+palatal_extra_other: 6
+back_expected_front_out: 1
+palatal_marker_variant: 0
+epenthetic_vowel_missing: 0
+vowel_quality_other: 23
+gemination_extra: 0
+inflectional_suffix_extra: 9
+final_devoicing_missing: 1
+intervocalic_voicing_missing: 1
+prefix_morphology_issue: 0
+consonant_mismatch_other: 11
+uncategorized: 1
+
+Examples:
+i_umlaut_missing_true:
+  *burdiz -> borde (expected ġebyrd)
+  *brūdiz -> brūde (expected brȳd)
+  *dailiz -> dāle (expected dǣl)
+proto_mismatch_suspect:
+fronting_missing_no_trigger:
+  *bastą -> bastæ (expected bæst)
+  *baθą -> baþæ (expected bæþ)
+  *dranką -> dranċæ (expected drenċ)
+breaking_missing:
+  *brustz -> brust (expected brēost)
+  *dawwō -> dawō (expected dēaw)
+  *fedwōrez -> fedwōre (expected fēower)
+no_output:
+  *xabukăz -> +? (expected hafoc)
+  *xemenăz -> +? (expected heofon)
+  *xnakkăz -> +? (expected hnecca)
+long_vowel_missing:
+  *texun -> teoun (expected tīen)
+palatalization_missing:
+  *bōkō -> bōcō (expected bēċe)
+  *fleugăną -> flēoganæ (expected flȳġe)
+  *θankăz -> þænc (expected þenċan)
+final_vowel_extra:
+  *bergą -> beorġæ (expected beorg)
+  *balgiz -> bealġe (expected bielġ)
+  *blōdą -> blōdæ (expected blōd)
+length_extra_other:
+  *fadēr -> fædēr (expected fæder)
+  *flaskō -> flascō (expected flasce)
+  *marīn -> merīn (expected mann)
+front_expected_back_out:
+final_vowel_missing:
+  *bugōn -> bogōn (expected boga)
+  *kōwz -> cōw (expected cū)
+  *kwiθuz -> cwiþ (expected cudu)
+breaking_extra_other:
+  *bazją -> bierġe (expected berġe)
+  *barwōn -> bearwōn (expected bēr)
+  *baugjăną -> bīeġanæ (expected boga)
+final_n_missing:
+  *bakăną -> bæċanæ (expected bacan)
+  *banną -> bannæ (expected bannan)
+  *biginnăną -> biġinnanæ (expected beginnan)
+palatal_extra_other:
+  *kalbăz -> ċealb (expected cealf)
+  *kambăz -> ċæmb (expected camb)
+  *gansz -> ġēs (expected gōs)
+back_expected_front_out:
+  *θankăz -> þænc (expected þancas)
+palatal_marker_variant:
+epenthetic_vowel_missing:
+vowel_quality_other:
+  *nadrō -> nædrō (expected nǣdre)
+  *brandas -> brandæs (expected brandes)
+  *bukkăz -> bocc (expected bucc)
+gemination_extra:
+inflectional_suffix_extra:
+  *bainăn -> bānan (expected bān)
+  *kurnăn -> cornan (expected corn)
+  *farnăn -> fearnan (expected fearn)
+final_devoicing_missing:
+  *budmăz -> bodm (expected botm)
+intervocalic_voicing_missing:
+  *bebruz -> beber (expected befer)
+prefix_morphology_issue:
+consonant_mismatch_other:
+  *bō -> bō (expected bā]] [[þā)
+  *fuxsăz -> fohs (expected fox)
+  *liθuz -> liþ (expected hlid)
+uncategorized:
+  *melukz -> meoluc (expected meolc)
+
+=== A-FRONTING AUDIT ===
+--- fronting_missing_no_trigger ---
+*bastą -> bastæ (expected bæst)
+*baθą -> baþæ (expected bæþ)
+*dranką -> dranċæ (expected drenċ)
+*grasą -> grasæ (expected græs)
+*rastō -> rastō (expected ræst)
+*sapōn -> sapōn (expected sæp)
+*tappōn -> tappōn (expected tæppa)
+*θaką -> þaċæ (expected þæc)
+*watną -> watnæ (expected wæter)
