@@ -1,2 +1,0 @@
-Regressions after early final-ă apocope (old correct -> new wrong):
-

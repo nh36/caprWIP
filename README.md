@@ -59,46 +59,32 @@ now tracks four doculects (English, Old English, Dutch, German).
 └── SETUP.md / USAGE.md # Detailed setup & usage notes
 ```
 
-## Active workstreams
-### Germanic FST refresh
-- Goal: German `kniː/broːt/bluːt` and cognate sets such as *year/fell/neck* must
-  reconstruct without overrides. The ew→iu→ī chain, short-a umlaut, and second
-  consonant shift are partially implemented.
-- Current focus: the brace-first rewrite is complete for the German cascade;
-  English and Dutch still emit plain tokens downstream of their sound laws.
-- Next actions:
-  1. Refine the proto templates (`ProtoWord`, `pgrmWord`) so final nasal vowels
-     behave cleanly as weak syllables without spawning duplicate outputs.
-  2. Convert the English and Dutch pipelines to the `{*…}` alphabet (sound laws,
-     orthography, and a single star-drop at the end), mirroring the German and
-     Burmish placements.
-  3. Rebuild the English/Dutch/German surface filters so they accept brace
-     tokens and smoke-test the UI to confirm the `{*…}` alphabet flows end-to-end.
-  4. English-specific TODOs before the next session:
-     - Tackle the vowel determinism in small steps: peel off one `EnglishSandboxCoreVowelRules`
-       clause (e.g., `{*ō}` before liquids) into its own stage, verify via tracer,
-       and only then continue to the next context so analyzer coverage stays stable.
-     - Do the same for `EnglishSandboxShortVowelSplit`: keep the contextual `{u→ʊ}` rules,
-       but make sure the fallback `{u→ʌ}` fires exactly once by placing it after the
-       contextual block and re-running the tracer on `*bardaz/*bebruz/*bergą/*utraz`.
-     - Once the vowel stages are deterministic again, resume the weak-tail reductions
-       (add `{*e}` tails first) and run the export→annotate→trace workflow so the bucket
-       counts document each incremental gain.
-  Track detailed progress in `docs/germanic_transducer_report.md`.
+## Current focus: Old English FST development
+The project is actively developing the Proto-Germanic → Old English transducer pipeline.
 
-### Old English diagnostics (current blockers)
-- Recent OE coverage dip is driven by **surface-filter failures**, not proto acceptance.
-  Snapshot: `docs/debug_snapshots/oe_surface_filter_leaks_2025-12-24.txt`.
-  Orthography outputs still contain non-OE symbols (`ɛ, ɪ, ʊ, ə, ʌ, ʧ, ʃ, ʒ, ç, j`),
-  so `OldEnglishSurface` rejects them.
-- Action items:
-  1. Identify which stages introduce those post-OE symbols in the OE stack.
-  2. Either prevent those later vowel rules from running in OE, or map the
-     symbols to OE orthography before the surface filter.
+### Recent achievements
+- **31.9% match rate** (120/376 OE lexemes) with systematically bucketed mismatches
+- **Empirical discovery**: Heavy-syllable nasal apocope rule (PGmc *-ą deletion after heavy stems)
+- **A-restoration fix**: Corrected foma syntax bug causing unconditional fronting
+- **Refined diagnostics**: Split 256 mismatches into 20+ specific phenomenon buckets
+
+### Status (as of 2026-02-07)
+- Latest reports in `server/docs/debug_snapshots/`:
+  - `oe_mismatch_report_2026-02-07_refined_v3.txt` (bucketed mismatches)
+  - `oe_full_trace_report_2026-02-07_refined_buckets.txt` (stage-by-stage traces)
+- Top mismatch buckets: `final_vowel_missing` (38), `vowel_quality_other` (27), `breaking_extra_other` (22)
+- Diagnostic tools: `server/tools/oe_mismatch_report.py`, `server/tools/oe_full_trace_report.py`
+
+### Development workflow
+1. Run mismatch/trace reports to identify issues
+2. Investigate phonological phenomena in reference sources (Hogg, Ringe/Taylor)
+3. Implement/fix FST rules in `server/fsts/germanic.txt`
+4. Regenerate reports to verify improvements
+5. Document findings in `DEV_NOTES.md`
 
 ### Operations
-- Keep Docker + Caddy steps documented in `docs/runbook.md`, and record each
-  session in `DEV_NOTES.md` (include regression harness results and warnings).
+- Keep Docker + Caddy steps documented in `docs/runbook.md`
+- Record each session in `DEV_NOTES.md` with regression results
 
 ## Citations
 - Xun Gong & Nathan Hill (2020). *Materials for an Etymological Dictionary of

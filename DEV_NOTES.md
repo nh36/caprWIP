@@ -1,3 +1,38 @@
+## CURRENT FOCUS (as of 2026-02-07)
+
+## Consonant Mismatch Bucket Refinement (2026-02-07)
+
+**Summary:** Refined the catch-all `consonant_mismatch_other` bucket (49 cases) into specific phenomenon buckets, achieving 45% reduction in uncategorized consonant mismatches.
+
+**Problem:** The `consonant_mismatch_other` bucket was mixing 5+ distinct phonological phenomena, making it difficult to prioritize which issues to address next.
+
+**Solution:** Implemented targeted bucketing logic in `server/tools/oe_mismatch_report.py`:
+- Added `has_final_devoicing_issue()` helper: detects d→t, g→k, b→p in word-final/pre-consonantal position
+- Added `has_intervocalic_voicing_issue()` helper: detects intervocalic stops (VbV) that should be fricatives (VfV)
+- Enhanced suffix/prefix detection using consonant skeleton comparison
+
+**New buckets created:**
+1. **inflectional_suffix_extra: 15** - Output has extra inflectional suffix (-an, -en) that shouldn't be there
+   - Examples: `*bainăn → bānan` (expected `bān`), `*kurnăn → cornan` (expected `corn`)
+   - Likely TSV data issues (wrong inflectional form selected)
+2. **final_devoicing_missing: 1** - Word-final/pre-consonantal devoicing not applied
+   - Example: `*budmăz → bodm` (expected `botm`) - d→t not happening
+3. **intervocalic_voicing_missing: 5** - Intervocalic stops should be fricatives
+   - Examples: `*bebruz → beber` (expected `befer`), `*drībăną → drīban` (expected `drīfan`)
+4. **prefix_morphology_issue: 1** - Missing derivational prefix
+   - Example: `*bō → bō` (expected `bā]] [[þā`)
+5. **consonant_mismatch_other: 27** - Remaining genuine consonant substitutions needing investigation
+
+**Result:** 49 → 27 uncategorized cases (-45% reduction). The remaining 27 are legitimate mixed phenomena (hs↔x metathesis, þ↔d substitution) requiring separate investigation.
+
+**Latest reports:**
+- `server/docs/debug_snapshots/oe_mismatch_report_2026-02-07_refined_v3.txt`
+- `server/docs/debug_snapshots/oe_full_trace_report_2026-02-07_refined_buckets.txt`
+
+**Overall statistics:** 256 total mismatches, 120 perfect matches (31.9% match rate)
+
+---
+
 ## CURRENT FOCUS (as of 2026-02-06)
 
 ## Heavy Syllable Nasal Apocope (2026-02-06) — EMPIRICAL DISCOVERY
