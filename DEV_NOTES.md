@@ -1,5 +1,44 @@
 ## CURRENT FOCUS (as of 2026-02-07)
 
+## Proto-West Germanic Stage Investigation (2026-02-07)
+
+**Summary:** Investigation of the `final_vowel_missing` bucket (38 cases) revealed that our FST is missing the critical **Proto-West Germanic (PWGmc) intermediate stage** between PGmc and OE. This causes systematic mishandling of inflectional endings.
+
+**Problem:** 38 OE words show missing final vowels (e.g., output `bierġ` vs expected `berġe`, output `sonnōn` vs expected `sunne`). Initially appeared to be a phonological issue, but investigation revealed it's a **chronological staging problem**.
+
+**Root cause:** Our TSV contains **PGmc inflected forms** (e.g., `*bazją` neut.nom.sg., `*sunnōn` fem.n-stem nom.sg., `*durą` neut.acc.sg.), but our FST applies OE sound changes directly to PGmc without modeling the PWGmc intermediate stage where critical morphological endings were reshaped.
+
+**Key PWGmc developments (Ringe/Taylor §3.1):**
+1. **Denasalization of final nasal vowels** (§3.1.4, line 3960): PGmc `*-ą` → PWGmc `*-a`, `*-ų` → `*-u`
+2. **Ja-stem reduction for light roots** (§6.8.2, line 21868): PGmc `*-ją` → PWGmc `*-i` (e.g., `*bazją` → `*bazi`)
+3. **Various weak-tail developments**: Preserved certain endings that later reduce in OE
+
+**Three main patterns in final_vowel_missing:**
+
+1. **Ja-stem endings (`*-ją` → OE `-e`)**: ~2 cases
+   - Example: `*bazją` → FST outputs `bierġ`, should be `berġe`
+   - Correct path: PGmc `*bazją` → PWGmc `*bazi` → OE `berġe`
+   - Current FST: deletes `*-ją` entirely via apocope
+
+2. **Weak noun ōn-stem endings (`*-ōn` → OE `-a`/`-e`)**: ~15 cases
+   - Example: `*sunnōn` → FST outputs `sonnōn`, should be `sunne`
+   - Correct path: PGmc `*sunnōn` → PWGmc `*sunnōn` → intermediate nasal loss → OE `sunne`
+   - Current FST: leaves `*-ōn` completely unchanged
+
+3. **Simple nasal vowels (`*-ą` → OE `-u`/`-a`/`-e`)**: ~8 cases
+   - Example: `*durą` → FST outputs `dor`, should be `duru`
+   - Correct path: PGmc `*durą` → PWGmc `*dura` (denasalization) → OE `duru`
+   - Current FST: deletes `*-ą` via apocope as if it were a short high vowel
+
+**Solution approach:** Implement explicit PWGmc stage in FST pipeline with purely phonological rules (no morphological conditioning):
+- Add PWGmc denasalization rules for final nasal vowels
+- Model ja-stem and other weak-tail reductions based on phonological environment (syllable weight)
+- Ensure OE-specific changes (breaking, i-umlaut, etc.) apply to PWGmc outputs, not PGmc inputs
+
+**Analysis document:** `docs/analysis/final_vowel_missing_analysis.md` contains full investigation with etymological research, R/T citations, and pattern analysis.
+
+---
+
 ## Consonant Mismatch Bucket Refinement (2026-02-07)
 
 **Summary:** Refined the catch-all `consonant_mismatch_other` bucket (49 cases) into specific phenomenon buckets, achieving 45% reduction in uncategorized consonant mismatches.

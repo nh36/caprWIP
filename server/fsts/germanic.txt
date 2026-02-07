@@ -1058,6 +1058,45 @@ define EnglishWestGermanic [
     {*ai} -> {*ā}
 ];
 
+# Proto-West Germanic stage (PWGmc): critical intermediate between PGmc and OE.
+# These rules model PWGmc-specific developments that must occur before OE changes.
+# All rules are purely phonological (no morphological conditioning).
+
+# PWGmc Rule 1: Denasalization of word-final nasal vowels (R/T §3.1.4, line 3960).
+# In PWGmc, word-final nasal vowels lost their nasalization: *ą → *a, *ę → *e, etc.
+# This denasalization is critical for proper OE ending development.
+define PWGmcDenasalization [
+    {*ą} -> {*a} || _ .#.,
+    {*ę} -> {*e} || _ .#.,
+    {*į} -> {*i} || _ .#.,
+    {*õ} -> {*o} || _ .#.,
+    {*ų} -> {*u} || _ .#.
+];
+
+# PWGmc Rule 2: Ja-stem vowel reduction for light root syllables (R/T §6.8.2, line 21868).
+# After light root syllables, the vowel in *-ja# reduced to *-i# in PWGmc.
+# The *j remains and will trigger palatalization/gemination in later OE rules.
+# Light syllable = short vowel + single consonant, e.g., *ba- in *bazja.
+define PWGmcJaStemReduction [
+    {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant {*j} _ .#.
+];
+
+# PWGmc Rule 3: Final high vowel lowering.
+# In unstressed position, PWGmc final *-i lowers to *-e (pre-OE development).
+# This prevents the PWGmc-derived *-i (from ja-stems) from being deleted by OE apocope.
+# Historical: PWGmc *-i (unstressed) → early OE *-e, distinct from PGmc *-iz → *-i → ∅.
+define PWGmcFinalVowelLowering [
+    {*i} -> {*e} || _ .#.
+];
+
+# Combine PWGmc rules in chronological order.
+# Apply denasalization first, then ja-stem reduction, then final vowel lowering.
+define PWGmcStage [
+    PWGmcDenasalization
+    .o. PWGmcJaStemReduction
+    .o. PWGmcFinalVowelLowering
+];
+
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
 define EnglishOpenSyllableLengthening [
     {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
@@ -1425,6 +1464,7 @@ define OldEnglishContraction [
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
 define EnglishProtoToOE (
     EnglishWestGermanic
+    .o. PWGmcStage
     .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
@@ -1489,8 +1529,9 @@ define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
-define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
-    .o. EnglishWestGermanic
+define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EnglishWestGermanic;
+define EnglishAfterPWGmc EnglishAfterWestGermanic .o. PWGmcStage;
+define EnglishAfterProtoToOEWeakTail EnglishAfterPWGmc
     .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
@@ -1569,6 +1610,14 @@ save stack english_after_palatalisation.bin
 clear stack
 regex EnglishAfterConsonantRules;
 save stack english_after_consonant_rules.bin
+
+clear stack
+regex EnglishAfterWestGermanic;
+save stack english_after_west_germanic.bin
+
+clear stack
+regex EnglishAfterPWGmc;
+save stack english_after_pwgmc.bin
 
 clear stack
 regex EnglishAfterGhMarker;
