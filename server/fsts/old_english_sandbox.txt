@@ -7,7 +7,9 @@ define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
 define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
 define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
     .o. EnglishWestGermanic;
-define OESandboxAfterAuFronting OESandboxAfterWestGermanic
+define OESandboxAfterNWGmcULowering OESandboxAfterWestGermanic
+    .o. NWGmcULowering;
+define OESandboxAfterAuFronting OESandboxAfterNWGmcULowering
     .o. OldEnglishAuFronting;
 define OESandboxAfterWWSimplification OESandboxAfterAuFronting
     .o. OldEnglishWWSimplification;
@@ -19,13 +21,13 @@ define OESandboxAfterAngloFrisianBrightening OESandboxAfterEwLongDiphthong
     .o. EnglishAngloFrisianBrightening;
 define OESandboxAfterBreakingLengthening OESandboxAfterAngloFrisianBrightening
     .o. EnglishBreakingLengthening;
-define OESandboxAfterARestoration OESandboxAfterBreakingLengthening
-    .o. OldEnglishARestoration;
-define OESandboxAfterVelarFricPal OESandboxAfterARestoration
+define OESandboxAfterVelarFricPal OESandboxAfterBreakingLengthening
     .o. OldEnglishVelarFricativePalatalization;
-define OESandboxAfterLiquidLowering OESandboxAfterVelarFricPal
-    .o. EnglishLiquidLowering;
-define OESandboxAfterJGemination OESandboxAfterLiquidLowering
+define OESandboxAfterARestoration OESandboxAfterVelarFricPal
+    .o. OldEnglishARestoration;
+define OESandboxAfterFinalWeakSchwaApocope OESandboxAfterARestoration
+    .o. OldEnglishFinalWeakSchwaApocope;
+define OESandboxAfterJGemination OESandboxAfterFinalWeakSchwaApocope
     .o. OldEnglishJGemination;
 define OESandboxAfterSkPalatalization OESandboxAfterJGemination
     .o. OldEnglishSkPalatalization;
@@ -43,9 +45,7 @@ define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
     .o. OldEnglishNasalSpirantLoss;
 define OESandboxAfterWeakTailNasalLoss OESandboxAfterNasalSpirantLoss
     .o. OldEnglishWeakTailNasalLoss;
-define OESandboxAfterWeakTailUnReduction OESandboxAfterWeakTailNasalLoss
-    .o. OldEnglishWeakTailUnReduction;
-define OESandboxAfterWeightMarkers OESandboxAfterWeakTailUnReduction
+define OESandboxAfterWeightMarkers OESandboxAfterWeakTailNasalLoss
     .o. OldEnglishWeightMarkers;
 define OESandboxAfterHighVowelApocope OESandboxAfterWeightMarkers
     .o. OldEnglishHighVowelApocope;
@@ -100,6 +100,10 @@ regex OESandboxAfterWestGermanic;
 save stack old_english_sandbox_after_west_germanic.bin
 
 clear stack
+regex OESandboxAfterNWGmcULowering;
+save stack old_english_sandbox_after_nwgmc_u_lowering.bin
+
+clear stack
 regex OESandboxAfterAuFronting;
 save stack old_english_sandbox_after_au_fronting.bin
 
@@ -124,16 +128,16 @@ regex OESandboxAfterBreakingLengthening;
 save stack old_english_sandbox_after_breaking_lengthening.bin
 
 clear stack
-regex OESandboxAfterARestoration;
-save stack old_english_sandbox_after_a_restoration.bin
-
-clear stack
 regex OESandboxAfterVelarFricPal;
 save stack old_english_sandbox_after_velar_fricative_palatalization.bin
 
 clear stack
-regex OESandboxAfterLiquidLowering;
-save stack old_english_sandbox_after_liquid_lowering.bin
+regex OESandboxAfterARestoration;
+save stack old_english_sandbox_after_a_restoration.bin
+
+clear stack
+regex OESandboxAfterFinalWeakSchwaApocope;
+save stack old_english_sandbox_after_final_weak_schwa_apocope.bin
 
 clear stack
 regex OESandboxAfterJGemination;
@@ -170,10 +174,6 @@ save stack old_english_sandbox_after_nasal_spirant_loss.bin
 clear stack
 regex OESandboxAfterWeakTailNasalLoss;
 save stack old_english_sandbox_after_weak_tail_nasal_loss.bin
-
-clear stack
-regex OESandboxAfterWeakTailUnReduction;
-save stack old_english_sandbox_after_weak_tail_un_reduction.bin
 
 clear stack
 regex OESandboxAfterWeightMarkers;
