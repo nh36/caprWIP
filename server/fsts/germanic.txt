@@ -1052,20 +1052,18 @@ define EnglishLongVowelRealisation [
     {*ɔː} -> {ɔː}
 ];
 
-# Proto-Germanic → Old English rules (keep adjacent to OE stack).
-# West Germanic monophthongisation (ai → ā, au → ō).
-define EnglishWestGermanic [
+# Proto-Germanic → Proto-West Germanic (PWGmc = West Germanic) rules.
+# PWGmc is the common ancestor of OE, OS, OHG, OF - the "West Germanic" stage.
+# These rules model critical PWGmc developments per R/T §3.1.
+
+# Traditional West Germanic monophthongization
+define WGmcMonophthongization [
     {*ai} -> {*ā}
 ];
 
-# Proto-West Germanic stage (PWGmc): critical intermediate between PGmc and OE.
-# These rules model PWGmc-specific developments that must occur before OE changes.
-# All rules are purely phonological (no morphological conditioning).
-
-# PWGmc Rule 1: Denasalization of word-final nasal vowels (R/T §3.1.4, line 3960).
+# PWGmc: Denasalization of word-final nasal vowels (R/T §3.1.4, line 3960).
 # In PWGmc, word-final nasal vowels lost their nasalization: *ą → *a, *ę → *e, etc.
-# This denasalization is critical for proper OE ending development.
-define PWGmcDenasalization [
+define WGmcDenasalization [
     {*ą} -> {*a} || _ .#.,
     {*ę} -> {*e} || _ .#.,
     {*į} -> {*i} || _ .#.,
@@ -1073,28 +1071,22 @@ define PWGmcDenasalization [
     {*ų} -> {*u} || _ .#.
 ];
 
-# PWGmc Rule 2: Ja-stem vowel reduction for light root syllables (R/T §6.8.2, line 21868).
-# After light root syllables, the vowel in *-ja# reduced to *-i# in PWGmc.
-# The *j remains and will trigger palatalization/gemination in later OE rules.
-# Light syllable = short vowel + single consonant, e.g., *ba- in *bazja.
-define PWGmcJaStemReduction [
-    {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant {*j} _ .#.
+# PWGmc: Syllabic *j after loss of final *-a (R/T §3.1.2, p. 46).
+# R/T: "Upon the loss of unstressed *a and *ą, preceding postconsonantal *j and *w
+# became syllabic *i and *u respectively"
+# Examples: *harjaz > *hari, *rikija > *riki, *bazją > *bazja > *bazi
+# Light syllable = short vowel + single consonant.
+define WGmcSyllabicJ [
+    {*j} {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
-# PWGmc Rule 3: Final high vowel lowering.
-# In unstressed position, PWGmc final *-i lowers to *-e (pre-OE development).
-# This prevents the PWGmc-derived *-i (from ja-stems) from being deleted by OE apocope.
-# Historical: PWGmc *-i (unstressed) → early OE *-e, distinct from PGmc *-iz → *-i → ∅.
-define PWGmcFinalVowelLowering [
-    {*i} -> {*e} || _ .#.
-];
-
-# Combine PWGmc rules in chronological order.
-# Apply denasalization first, then ja-stem reduction, then final vowel lowering.
-define PWGmcStage [
-    PWGmcDenasalization
-    .o. PWGmcJaStemReduction
-    .o. PWGmcFinalVowelLowering
+# Combine West Germanic rules in chronological order per R/T §3.1.
+# Order: monophthongization, denasalization, syllabic j.
+# Note: Final *-i lowering to *-e is an early OE change, not PWGmc.
+define EnglishWestGermanic [
+    WGmcMonophthongization
+    .o. WGmcDenasalization
+    .o. WGmcSyllabicJ
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
@@ -1464,7 +1456,6 @@ define OldEnglishContraction [
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
 define EnglishProtoToOE (
     EnglishWestGermanic
-    .o. PWGmcStage
     .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
@@ -1530,8 +1521,7 @@ define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EnglishWestGermanic;
-define EnglishAfterPWGmc EnglishAfterWestGermanic .o. PWGmcStage;
-define EnglishAfterProtoToOEWeakTail EnglishAfterPWGmc
+define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
@@ -1614,10 +1604,6 @@ save stack english_after_consonant_rules.bin
 clear stack
 regex EnglishAfterWestGermanic;
 save stack english_after_west_germanic.bin
-
-clear stack
-regex EnglishAfterPWGmc;
-save stack english_after_pwgmc.bin
 
 clear stack
 regex EnglishAfterGhMarker;

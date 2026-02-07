@@ -7,9 +7,7 @@ define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
 define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
 define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
     .o. EnglishWestGermanic;
-define OESandboxAfterPWGmc OESandboxAfterWestGermanic
-    .o. PWGmcStage;
-define OESandboxAfterAuFronting OESandboxAfterPWGmc
+define OESandboxAfterAuFronting OESandboxAfterWestGermanic
     .o. OldEnglishAuFronting;
 define OESandboxAfterWWSimplification OESandboxAfterAuFronting
     .o. OldEnglishWWSimplification;
@@ -100,10 +98,6 @@ save stack old_english_sandbox_after_consonant_rules.bin
 clear stack
 regex OESandboxAfterWestGermanic;
 save stack old_english_sandbox_after_west_germanic.bin
-
-clear stack
-regex OESandboxAfterPWGmc;
-save stack old_english_sandbox_after_pwgmc.bin
 
 clear stack
 regex OESandboxAfterAuFronting;

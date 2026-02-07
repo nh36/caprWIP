@@ -8,14 +8,13 @@ import sys
 from pathlib import Path
 from typing import Iterable, List, Sequence, Tuple
 
-STAGES: Sequence[Tuple[str, str]] = [
+STAGES: List[Tuple[str, str]] = [
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
     ("InitialKn", "old_english_sandbox_after_initial_kn.bin"),
     ("Palatalisation", "old_english_sandbox_after_palatalisation.bin"),
     ("ConsonantRules", "old_english_sandbox_after_consonant_rules.bin"),
     ("WestGermanic", "old_english_sandbox_after_west_germanic.bin"),
-    ("PWGmc", "old_english_sandbox_after_pwgmc.bin"),
-    ("ProtoToOEWeakTail", "old_english_sandbox_after_proto_to_oe_weak_tail.bin"),
+    ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
     ("ProtoToOEWeightMarkers", "old_english_sandbox_after_proto_to_oe_weight_markers.bin"),
     ("ProtoToOEApocope", "old_english_sandbox_after_proto_to_oe_apocope.bin"),
     ("ProtoToOEWeightCleanup", "old_english_sandbox_after_proto_to_oe_weight_cleanup.bin"),

@@ -6,12 +6,12 @@ fronting_missing_no_trigger: 9
 breaking_missing: 19
 no_output: 12
 long_vowel_missing: 1
-palatalization_missing: 3
+palatalization_missing: 4
 final_vowel_extra: 83
 length_extra_other: 11
 front_expected_back_out: 0
 final_vowel_missing: 28
-breaking_extra_other: 16
+breaking_extra_other: 15
 final_n_missing: 78
 palatal_extra_other: 6
 back_expected_front_out: 1
@@ -48,8 +48,8 @@ long_vowel_missing:
   *texun -> teoun (expected tīen)
 palatalization_missing:
   *bōkō -> bōcō (expected bēċe)
+  *bazją -> bære (expected berġe)
   *fleugăną -> flēoganæ (expected flȳġe)
-  *θankăz -> þænc (expected þenċan)
 final_vowel_extra:
   *bergą -> beorġæ (expected beorg)
   *balgiz -> bealġe (expected bielġ)
@@ -64,9 +64,9 @@ final_vowel_missing:
   *kōwz -> cōw (expected cū)
   *kwiθuz -> cwiþ (expected cudu)
 breaking_extra_other:
-  *bazją -> bierġe (expected berġe)
   *barwōn -> bearwōn (expected bēr)
   *baugjăną -> bīeġanæ (expected boga)
+  *beugăną -> bēoganæ (expected boga)
 final_n_missing:
   *bakăną -> bæċanæ (expected bacan)
   *banną -> bannæ (expected bannan)

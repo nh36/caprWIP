@@ -1,41 +1,64 @@
 ## CURRENT FOCUS (as of 2026-02-07)
 
-## Proto-West Germanic Stage Investigation (2026-02-07)
+## Proto-West Germanic Stage Implementation (2026-02-07) - IN PROGRESS
 
-**Summary:** Investigation of the `final_vowel_missing` bucket (38 cases) revealed that our FST is missing the critical **Proto-West Germanic (PWGmc) intermediate stage** between PGmc and OE. This causes systematic mishandling of inflectional endings.
+**LATEST UPDATE (2026-02-07 evening):** PWGmc stage now consolidated and historically accurate ✓
 
-**Problem:** 38 OE words show missing final vowels (e.g., output `bierġ` vs expected `berġe`, output `sonnōn` vs expected `sunne`). Initially appeared to be a phonological issue, but investigation revealed it's a **chronological staging problem**.
+**Changes completed:**
+1. **Consolidated PWGmc into WestGermanic** (user correction: they're the same stage)
+   - Merged WGmcDenasalization, WGmcSyllabicJ into EnglishWestGermanic definition
+   - Removed separate PWGmcStage and all references
+   - Updated trace scripts and FST exports
+2. **Removed WGmcFinalVowelLowering** - determined this is early OE, not PWGmc
+3. **PWGmc output now correct**: *bazją → *bari ✓ (matches R/T §3.1.2)
 
-**Root cause:** Our TSV contains **PGmc inflected forms** (e.g., `*bazją` neut.nom.sg., `*sunnōn` fem.n-stem nom.sg., `*durą` neut.acc.sg.), but our FST applies OE sound changes directly to PGmc without modeling the PWGmc intermediate stage where critical morphological endings were reshaped.
+**Current test case trace:**
+```
+WestGermanic: *b*a*r*i  ← CORRECT per R/T!
+[OE stages lengthen *a→*ǣ]
+ProtoToOEWeightMarkers: *b*ǣ*r*H*i  ← heavy marker added
+ProtoToOEApocope: *b*ǣ*r  ← *H*i deleted
+Surface: ber  ← WRONG (should be berġe)
+```
 
-**Key PWGmc developments (Ringe/Taylor §3.1):**
-1. **Denasalization of final nasal vowels** (§3.1.4, line 3960): PGmc `*-ą` → PWGmc `*-a`, `*-ų` → `*-u`
-2. **Ja-stem reduction for light roots** (§6.8.2, line 21868): PGmc `*-ją` → PWGmc `*-i` (e.g., `*bazją` → `*bazi`)
-3. **Various weak-tail developments**: Preserved certain endings that later reduce in OE
+**New problem identified:** OE chronology issue, not PWGmc issue. PWGmc *-i (from ja-stems) needs to lower to *-e BEFORE OE apocope deletes it. Currently apocope (line 1484) runs before weak tail reduction (line 1486), so *i gets deleted before it can lower to *e.
 
-**Three main patterns in final_vowel_missing:**
+**Next steps:** Investigate OE stage chronology and test moving OldEnglishWeakTailReduction before OldEnglishHighVowelApocope.
 
-1. **Ja-stem endings (`*-ją` → OE `-e`)**: ~2 cases
-   - Example: `*bazją` → FST outputs `bierġ`, should be `berġe`
-   - Correct path: PGmc `*bazją` → PWGmc `*bazi` → OE `berġe`
-   - Current FST: deletes `*-ją` entirely via apocope
+**Research:** `session/files/pwgmc_berry_investigation.md` has detailed diagnosis.
 
-2. **Weak noun ōn-stem endings (`*-ōn` → OE `-a`/`-e`)**: ~15 cases
-   - Example: `*sunnōn` → FST outputs `sonnōn`, should be `sunne`
-   - Correct path: PGmc `*sunnōn` → PWGmc `*sunnōn` → intermediate nasal loss → OE `sunne`
-   - Current FST: leaves `*-ōn` completely unchanged
+---
 
-3. **Simple nasal vowels (`*-ą` → OE `-u`/`-a`/`-e`)**: ~8 cases
-   - Example: `*durą` → FST outputs `dor`, should be `duru`
-   - Correct path: PGmc `*durą` → PWGmc `*dura` (denasalization) → OE `duru`
-   - Current FST: deletes `*-ą` via apocope as if it were a short high vowel
+## Proto-West Germanic Stage Implementation (2026-02-07) - EARLIER
 
-**Solution approach:** Implement explicit PWGmc stage in FST pipeline with purely phonological rules (no morphological conditioning):
-- Add PWGmc denasalization rules for final nasal vowels
-- Model ja-stem and other weak-tail reductions based on phonological environment (syllable weight)
-- Ensure OE-specific changes (breaking, i-umlaut, etc.) apply to PWGmc outputs, not PGmc inputs
+**Summary:** Implementing PWGmc (= West Germanic) sound changes based on detailed reading of Ringe/Taylor §3.1.2. Key finding: **PWGmc and West Germanic are the same stage**, not separate.
 
-**Analysis document:** `docs/analysis/final_vowel_missing_analysis.md` contains full investigation with etymological research, R/T citations, and pattern analysis.
+**Critical PWGmc developments (R/T §3.1.2):**
+1. **Loss of final *-z after unstressed vowels** (first change)
+2. **Loss of word-final *-a and *-ą** (immediately after)
+3. **Postconsonantal *j and *w become syllabic *i and *u**: R/T quote: "Upon the loss of unstressed *a and *ą, preceding postconsonantal *j and *w became syllabic *i and *u respectively"
+4. **Denasalization of final nasal vowels** (§3.1.4): *ą → *a, *ę → *e, etc.
+
+**Test case: 'berry' (PGmc *bazją → PWGmc *bazi → OE berġe)**
+
+Step-by-step per sources:
+1. PGmc: *bazją (neut. ja-stem nom.sg with nasal vowel)
+2. Denasalization: *bazją → *bazja
+3. Loss of final *-a: *bazja → *bazj
+4. Syllabic *j: *bazj → *bazi (R/T §3.1.2 p.46: "*harjaz > *hari, *rikija > *riki")
+5. Result: PWGmc *bazi ✓
+
+**Current status:** Iterating on FST rules to match R/T §3.1.2 exactly. Need to consolidate PWGmc rules into WestGermanic definition (they're the same stage). Focus on correctness first, then address collateral damage.
+
+**Research documents:** 
+- `session/files/pwgmc_development_research.md` - detailed R/T analysis
+- `docs/analysis/final_vowel_missing_analysis.md` - initial investigation
+
+---
+
+## Proto-West Germanic Stage Investigation (2026-02-07) - SUPERSEDED
+
+[Previous entry moved to historical section - superseded by implementation work above]
 
 ---
 
