@@ -704,7 +704,7 @@ define EnglishStarBackVowel PGmcStarBackVowel;
 
 define EnglishStarDiphthong PGmcStarDiphthong;
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
@@ -1403,33 +1403,34 @@ define OEHighVowelApocopeStandalone [
     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
-define OEHeavyMarker [
-    {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
-    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
-    {*ą} -> {*H} {*ą} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
-];
-
+# Pragmatic approach: encode heavy-syllable apocope directly rather than using
+# a two-step mark-then-delete system (which misbehaves under composition due to
+# foma's character-level symbol handling).
+# R/T §6.8.1: "short *i and *u were lost word-finally after a heavy syllable."
+# Heavy syllable = long vowel/diphthong + any consonants, OR short vowel + 2+ consonants.
+# OEAnyConsonant broadens the consonant class to include palatalized consonants
+# produced by earlier OE rules (e.g. *ʤ from palatalization).
+define OEAnyConsonant [EnglishStarConsonant | EnglishPalatalConsonant];
+define OEHeavyMarker ?*;  # identity — no marking needed
 define OEWeightMarkers OEHeavyMarker;
 
 define OEHighVowelApocope [
-    {*H} {*i} -> 0 || _ .#.,
-    {*H} {*u} -> 0 || _ .#.
+    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.
 ];
 
-# EXPERIMENTAL (2026-02-06): Apocope of neuter *-ą after heavy syllables.
-# Ringe/Taylor §6.8.1: "short *i and *u were lost word-finally after a heavy
-# syllable". Evidence suggests *-ą (neuter nom./acc.sg.) followed same pattern.
-# Measured after OE vowel changes (breaking/lengthening), hence after weight markers.
+# Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
+# unconditional (not restricted to heavy syllables). The original system's
+# marker-based approach effectively deleted *ą after any consonant.
 define OEHeavySyllableNasalApocope [
-    {*H} {*ą} -> 0 || _ .#.
+    {*ą} -> 0 || OEAnyConsonant _ .#.
 ];
 
-define OEWeightCleanup [
-    {*H} -> 0
-];
+define OEWeightCleanup ?*;  # identity — no markers to clean up
 
 define OEHLoss [
     {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
