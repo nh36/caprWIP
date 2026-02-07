@@ -1213,10 +1213,17 @@ define EnglishVelarShortening [
     {*ō} -> {*u} || _ EnglishStarVelarStop
 ];
 
-# West Germanic rounding of {*u} before {*r} + consonant or word-final.
-define EnglishUrRounding [
-    {*u} -> {*ō} || _ {*r} EnglishStarConsonant,
-    {*u} -> {*ō} || _ {*r} .#.
+# Northwest Germanic u-lowering before non-high vowels (Ringe/Taylor §2.3.1).
+# Stressed *u → *ō when next syllable contains non-high vowel (*a, *e, *o, *ā, *ē, *ō)
+# and no nasal intervenes in syllable coda. Very early change (pre-OE).
+define EnglishStarNonHighVowel [
+    {*a} | {*ā} | {*ă} | {*ą} |
+    {*e} | {*ē} |
+    {*o} | {*ō} | {*ɔ̆}
+];
+
+define NWGmcULowering [
+    {*u} -> {*ō} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
 ];
 
 define OldEnglishWeakTailNasalLoss [
@@ -1416,6 +1423,7 @@ define OldEnglishContraction [
 # Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
 define EnglishProtoToOE (
     EnglishWestGermanic
+    .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
     .o. OldEnglishDiphthongLeveling
@@ -1460,7 +1468,6 @@ define EnglishOEToModern EnglishShortAFronting
     .o. EnglishRhoticBreaking
     .o. EnglishPreMEShortBackLowering
     .o. EnglishOpenSyllableLengthening
-    .o. EnglishUrRounding
     .o. EnglishVelarShortening
     .o. EnglishVowelRules
     .o. EnglishPostVocalicRLoss
@@ -1482,6 +1489,7 @@ define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisatio
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
 define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. EnglishWestGermanic
+    .o. NWGmcULowering
     .o. OldEnglishAuFronting
     .o. OldEnglishWWSimplification
     .o. OldEnglishDiphthongLeveling
@@ -1489,7 +1497,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterConsonantRules
     .o. EnglishOpenSyllableLengthening
     .o. EnglishBreakingLengthening
     .o. EnglishVelarShortening
-    .o. EnglishUrRounding
     .o. OldEnglishIUmlaut
     .o. OldEnglishBackMutation
     .o. OldEnglishNasalSpirantLengthening
