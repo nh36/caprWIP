@@ -626,7 +626,7 @@ define OldEnglishOrthography [
     {ɔ̆} -> a
 ];
 
-define OldEnglishCjCleanup [
+define OECjCleanup [
     {*ʤ} {*j} -> {*ʤ}
 ];
 
@@ -797,14 +797,14 @@ define EnglishInitialKnMarkers [
     {*g} {*n} -> {*Gn} || .#. _
 ];
 
-define OldEnglishPalatalisation (
+define OEPalatalisation (
     [{*s} {*k} -> {*s} {*ʃ} || _ EnglishStarFrontVowel]
     .o. [{*k} -> {*ʃ} || _ EnglishStarFrontVowel]
     .o. [{*g} -> {*ʒ} || _ EnglishStarFrontVowel]
 );
 # Legacy: retained for reference but not used in the current English/OE pipeline.
 
-define EnglishJClusterCoalescence (
+define OEJClusterCoalescence (
     [{*b} {*j} -> {*v}]
     .o. [{*g} {*j} -> {*ʤ}]
     .o. [{*k} {*j} -> {*ʧ}]
@@ -820,23 +820,21 @@ define EnglishPalatalisation EnglishEarlyPalatalisation;
 
 define EnglishWGlideRule [{*w} -> {*ʋ}];
 
-define EnglishZRhotacism [
+define PGmcRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _
 ];
 
-define EnglishZApocope [{*z} -> 0 || _ .#.];
+define PGmcFinalZLoss [{*z} -> 0 || _ .#.];
 
-define OldEnglishFinalWeakSchwaApocope [
+define OEFinalSchwaApocope [
     {*ă} -> 0 || _ .#.
 ];
 
-# NOTE (2026-02-06): OldEnglishFinalWeakSchwaApocope moved to EnglishProtoToOE
-# after OldEnglishARestoration to fix chronology. A-restoration must see the
+# NOTE (2026-02-06): OEFinalSchwaApocope moved to EnglishProtoToOE
+# after OEARestoration to fix chronology. A-restoration must see the
 # weak-tail endings before they are apocopated.
-define OldEnglishConsonantRules EnglishZApocope
-    .o. EnglishZRhotacism;
-
-define EnglishConsonantRules OldEnglishConsonantRules;
+define PGmcConsonantRules PGmcFinalZLoss
+    .o. PGmcRhotacism;
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
@@ -1059,13 +1057,13 @@ define EnglishLongVowelRealisation [
 # These rules model critical PWGmc developments per R/T §3.1.
 
 # Traditional West Germanic monophthongization
-define WGmcMonophthongization [
+define PWGmcAiMonophthongization [
     {*ai} -> {*ā}
 ];
 
 # PWGmc: Denasalization of word-final nasal vowels (R/T §3.1.4, line 3960).
 # In PWGmc, word-final nasal vowels lost their nasalization: *ą → *a, *ę → *e, etc.
-define WGmcDenasalization [
+define PWGmcDenasalization [
     {*ą} -> {*a} || _ .#.,
     {*ę} -> {*e} || _ .#.,
     {*į} -> {*i} || _ .#.,
@@ -1078,19 +1076,19 @@ define WGmcDenasalization [
 # became syllabic *i and *u respectively"
 # Examples: *harjaz > *hari, *rikija > *riki, *bazją > *bazja > *bazi
 # Light syllable = short vowel + single consonant.
-define WGmcSyllabicJ [
+define PWGmcSyllabicJ [
     {*j} {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.,
     {*j} {*ą} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1.
 # Order: monophthongization, then syllabic j.
-# NOTE: WGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
+# NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
-define EnglishWestGermanic [
-    WGmcMonophthongization
-    .o. WGmcSyllabicJ
+define PWGmcChanges [
+    PWGmcAiMonophthongization
+    .o. PWGmcSyllabicJ
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
@@ -1114,7 +1112,7 @@ define EnglishBreakingLContext [{*l} EnglishStarConsonant];
 define EnglishBreakingLContextE [{*l} ({*x} | {*k} | {*g})];
 define EnglishBreakingWContext [{*w}];
 
-define EnglishBreakingA [
+define OEBreakingA [
     {*a} -> {*ea} || _ EnglishBreakingRContext,
     {*a} -> {*ea} || _ EnglishBreakingLContext,
     {*a} -> {*ēa} || _ EnglishBreakingXContextWeakTail,
@@ -1124,52 +1122,52 @@ define EnglishBreakingA [
     {*æ} -> {*ea} || _ EnglishBreakingHContext
 ];
 
-define EnglishBreakingE [
+define OEBreakingE [
     {*e} -> {*eo} || _ EnglishBreakingRContext,
     {*e} -> {*eo} || _ EnglishBreakingHContext,
     {*e} -> {*eo} || _ EnglishBreakingWContext,
     {*e} -> {*eo} || _ EnglishBreakingLContextE
 ];
 
-define EnglishBreakingI [
+define OEBreakingI [
     {*i} -> {*ie} || _ EnglishBreakingRContext,
     {*i} -> {*ie} || _ EnglishBreakingHContext,
     {*i} -> {*ie} || _ EnglishBreakingWContext
 ];
 
-define EnglishBreakingLengthening EnglishBreakingA
-    .o. EnglishBreakingE
-    .o. EnglishBreakingI;
+define OEBreaking OEBreakingA
+    .o. OEBreakingE
+    .o. OEBreakingI;
 
-define OldEnglishAuFronting [
+define OEAuFronting [
     {*au} -> {*aeu}
 ];
 
-define OldEnglishDiphthongLeveling [
+define OEDiphthongLeveling [
     {*aeu} -> {*ēa},
     {*eu} -> {*ēo},
     {*iu} -> {*ēo}
 ];
 
-define OldEnglishWWSimplification [
+define OEWWSimplification [
     {*w} {*w} -> {*w}
 ];
 
 # Promote inherited *ew/*iw clusters to the long diphthong tier when the
 # glide stays vocalic (cf. Hogg 1992 §3.3.1 on OE ēo).
-define OldEnglishEwLongContext [
+define OEEwLongContext [
     {*w} EnglishWeakTailVowel |
     EnglishWeakTailVowel |
     EnglishStarVocalic
 ];
 
-define OldEnglishEwLongDiphthong [
-    {*e} {*w} -> {*ēo} {*w} || _ OldEnglishEwLongContext,
-    {*i} {*w} -> {*ēo} {*w} || _ OldEnglishEwLongContext
+define OEEwLongDiphthong [
+    {*e} {*w} -> {*ēo} {*w} || _ OEEwLongContext,
+    {*i} {*w} -> {*ēo} {*w} || _ OEEwLongContext
 ];
 
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
-define EnglishAngloFrisianBrightening [
+define AngloFrisianBrightening [
     {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
 ];
 
@@ -1193,16 +1191,16 @@ define EnglishAngloFrisianBrightening [
 # WEAK-TAIL EXCLUSION: Only FULL (stressed) vowels trigger restoration. Weak-tail
 # vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration, even though
 # they are underlyingly back.
-define OldEnglishARestorationTriggerVowel [EnglishStarBackVowel | {*æ}];
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*æ}];
 
-define OldEnglishARestorationIntervening [
+define OEARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
 ];
 
 # Weak tail patterns that still allow A-restoration (i.e., restoration applies
 # even though technically followed by a weak tail vowel). These are subtracted
 # from the weak tail exclusion.
-define OldEnglishARestorationStrongOTail [
+define OEARestorationStrongOTail [
     {*ă} {*l} {*ō} |
     {*i} {*l} {*ō} |
     {*i} {*l} {*ō} {*n} |
@@ -1225,17 +1223,17 @@ define OldEnglishARestorationStrongOTail [
     {*a} {*r} {*ă} {*z}
 ];
 
-define OldEnglishARestorationWeakTailVowel [
-    EnglishWeakTailVowel - OldEnglishARestorationStrongOTail
+define OEARestorationWeakTailVowel [
+    EnglishWeakTailVowel - OEARestorationStrongOTail
 ];
 
 # NOTE: In foma replacement rules, parentheses around the context make it OPTIONAL.
 # Use `_ A` for required context, `_ (A)` for optional context.
 # The context here MUST be required, not optional.
-define OldEnglishARestoration (
+define OEARestoration (
     {*æ} -> {*a} || _
-        [OldEnglishARestorationIntervening]* OldEnglishARestorationTriggerVowel
-        - [OldEnglishARestorationIntervening]* OldEnglishARestorationWeakTailVowel
+        [OEARestorationIntervening]* OEARestorationTriggerVowel
+        - [OEARestorationIntervening]* OEARestorationWeakTailVowel
 );
 
 # NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no
@@ -1244,7 +1242,7 @@ define OldEnglishARestoration (
 # handled by weak-tail reduction and apocope. See session notes for details.
 
 # Anglo-Frisian shortening of {*ō} before velar stops (book/foot class).
-define EnglishVelarShortening [
+define AngloFrisianVelarShortening [
     {*ō} -> {*u} || _ EnglishStarVelarStop
 ];
 
@@ -1263,46 +1261,46 @@ define NWGmcULowering [
     {*u} -> {*o} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
 ];
 
-define OldEnglishWeakTailNasalLoss [
+define OEWeakTailNasalLoss [
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
 ];
 
-define OldEnglishWeakTailUnReduction [
+define OEWeakTailUnReduction [
     {*u} {*n} -> {*o} {*n} || _ .#.
 ];
 
-define OldEnglishWeakTailReduction [
+define OEWeakTailReduction [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆},
     {*u} -> {*o},
     {*i} -> {*e} || _ .#.
 ];
 
-define OldEnglishEpentheticInsertion [
+define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
         EnglishStarConsonant+ _ .#.
 ];
 
-define OldEnglishEpentheticBackShift [
+define OEEpentheticBackShift [
     {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
     {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
 ];
 
-define OldEnglishEpentheticFront [
+define OEEpentheticFront [
     {*E} -> {*e}
 ];
 
-define OldEnglishGLInsertion [
+define OEGLInsertion [
     {*g} {*l} -> {*g} {*o} {*l} || _ .#.
 ];
 
-define OldEnglishEpentheticVowel OldEnglishEpentheticInsertion
-    .o. OldEnglishEpentheticBackShift
-    .o. OldEnglishEpentheticFront
-    .o. OldEnglishGLInsertion;
+define OEEpentheticVowel OEEpentheticInsertion
+    .o. OEEpentheticBackShift
+    .o. OEEpentheticFront
+    .o. OEGLInsertion;
 
-define OldEnglishIUmlautFronting [
+define OEIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -1312,23 +1310,23 @@ define OldEnglishIUmlautFronting [
     {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-define OldEnglishIUmlautRaising [
+define OEIUmlautRaising [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-define OldEnglishIUmlautDiphthong [
+define OEIUmlautDiphthong [
     {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-define OldEnglishIUmlaut OldEnglishIUmlautFronting
-    .o. OldEnglishIUmlautRaising
-    .o. OldEnglishIUmlautDiphthong;
+define OEIUmlaut OEIUmlautFronting
+    .o. OEIUmlautRaising
+    .o. OEIUmlautDiphthong;
 
 # West Germanic j‑gemination after light syllables (short vowel + single consonant).
-define OldEnglishJGemination [
+define PWGmcJGemination [
     {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
     {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
     {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
@@ -1344,17 +1342,17 @@ define OldEnglishJGemination [
 ];
 
 # Loss of internal j after heavy syllables; block after r.
-define OldEnglishJLossAfterHeavy [
+define OEJLossAfterHeavy [
     {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonantNoR _,
     {*j} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonantNoR _
 ];
 
-define OldEnglishBackMutation [
+define OEBackMutation [
     {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
     {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
 ];
 
-define OldEnglishNasalSpirantLengthening [
+define OENasalSpirantLengthening [
     {*a} -> {*ā} || _ EnglishStarNasal EnglishStarFricative,
     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
@@ -1363,11 +1361,11 @@ define OldEnglishNasalSpirantLengthening [
     {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarFricative
 ];
 
-define OldEnglishNasalSpirantLoss [
+define OENasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarFricative
 ];
 
-define OldEnglishSkPalatalization [
+define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || .#. _,
     {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
     {*s} {*k} -> {*ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
@@ -1376,7 +1374,7 @@ define OldEnglishSkPalatalization [
     {*s} {*k} -> {*ʃ} || {*j} _
 ];
 
-define OldEnglishVelarPalatalization [
+define OEVelarPalatalization [
     {*k} -> {*ʧ} || _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
     {*k} -> {*ʧ} || EnglishStarFrontVowel _,
@@ -1386,7 +1384,7 @@ define OldEnglishVelarPalatalization [
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ];
 
-define OldEnglishVelarFricativePalatalization [
+define OEVelarFricativePalatalization [
     {*x} -> {*ç} || _ EnglishStarFrontVowel,
     {*ɣ} -> {*j} || _ EnglishStarFrontVowel,
     {*x} -> {*ç} || EnglishStarFrontVowel _,
@@ -1396,7 +1394,7 @@ define OldEnglishVelarFricativePalatalization [
 ]
     .o. EnglishStarAlphabet*;
 
-define EnglishHighVowelApocope [
+define OEHighVowelApocopeStandalone [
     {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
     {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
@@ -1405,7 +1403,7 @@ define EnglishHighVowelApocope [
     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
-define OldEnglishHeavyMarker [
+define OEHeavyMarker [
     {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
     {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
     {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
@@ -1414,9 +1412,9 @@ define OldEnglishHeavyMarker [
     {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
 ];
 
-define OldEnglishWeightMarkers OldEnglishHeavyMarker;
+define OEWeightMarkers OEHeavyMarker;
 
-define OldEnglishHighVowelApocope [
+define OEHighVowelApocope [
     {*H} {*i} -> 0 || _ .#.,
     {*H} {*u} -> 0 || _ .#.
 ];
@@ -1425,20 +1423,20 @@ define OldEnglishHighVowelApocope [
 # Ringe/Taylor §6.8.1: "short *i and *u were lost word-finally after a heavy
 # syllable". Evidence suggests *-ą (neuter nom./acc.sg.) followed same pattern.
 # Measured after OE vowel changes (breaking/lengthening), hence after weight markers.
-define OldEnglishHeavySyllableNasalApocope [
+define OEHeavySyllableNasalApocope [
     {*H} {*ą} -> 0 || _ .#.
 ];
 
-define OldEnglishWeightCleanup [
+define OEWeightCleanup [
     {*H} -> 0
 ];
 
-define OldEnglishHLoss [
+define OEHLoss [
     {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
-define OldEnglishContraction [
+define OEContraction [
     {*a} {*a} -> {*ā},
     {*a} {*ă} -> {*ā},
     {*e} {*e} -> {*ē},
@@ -1457,47 +1455,53 @@ define OldEnglishContraction [
     {*ēo} {*ă} -> {*ēo}
 ];
 
-# Proto-Germanic -> Old English staging block consolidating early vowel and weak-tail rules.
+# Proto-Germanic → Old English pipeline.
+# Stages: PGmc → PWGmc → NWGmc → Anglo-Frisian → OE
+# Note: pipeline order reflects FST composition dependencies, not strict chronology.
+# Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
-    EnglishWestGermanic
+    PWGmcChanges
     .o. NWGmcULowering
-    .o. OldEnglishAuFronting
-    .o. OldEnglishWWSimplification
-    .o. OldEnglishDiphthongLeveling
-    .o. OldEnglishEwLongDiphthong
-    .o. EnglishAngloFrisianBrightening
-    .o. EnglishBreakingLengthening
+    .o. OEAuFronting
+    .o. OEWWSimplification
+    .o. OEDiphthongLeveling
+    .o. OEEwLongDiphthong
+    .o. AngloFrisianBrightening
+    .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
-    .o. OldEnglishVelarFricativePalatalization
-    .o. OldEnglishARestoration
+    .o. OEVelarFricativePalatalization
+    .o. OEARestoration
     # CRITICAL CHRONOLOGY FIX (2026-02-06): Final weak schwa apocope must occur
     # AFTER A-restoration, not before. A-restoration needs to see the weak-tail
     # endings (like *-ăz, *-ą) to determine whether to apply. Historical chronology
     # per Ringe/Taylor: §6.3 Retraction (early) → §6.8 Apocope (later).
-    .o. OldEnglishFinalWeakSchwaApocope
-    .o. OldEnglishJGemination
-    .o. OldEnglishSkPalatalization
-    .o. OldEnglishVelarPalatalization
-    .o. OldEnglishIUmlaut
-    .o. EnglishJClusterCoalescence
-    .o. OldEnglishBackMutation
-    .o. OldEnglishNasalSpirantLengthening
-    .o. OldEnglishNasalSpirantLoss
-    .o. OldEnglishWeakTailNasalLoss
-    .o. OldEnglishWeightMarkers
-    .o. OldEnglishHighVowelApocope
-    .o. OldEnglishHeavySyllableNasalApocope
-    .o. OldEnglishWeakTailReduction
-    .o. OldEnglishJLossAfterHeavy
-    .o. OldEnglishWeightCleanup
-    .o. OldEnglishHLoss
-    .o. OldEnglishContraction
+    .o. OEFinalSchwaApocope
+    # PWGmc j-gemination is historically a PWGmc change (R/T §3.1.2), but is
+    # placed here in the pipeline because it must see *j tokens after schwa
+    # apocope has exposed them, and before i-umlaut consumes the trigger.
+    .o. PWGmcJGemination
+    .o. OESkPalatalization
+    .o. OEVelarPalatalization
+    .o. OEIUmlaut
+    .o. OEJClusterCoalescence
+    .o. OEBackMutation
+    .o. OENasalSpirantLengthening
+    .o. OENasalSpirantLoss
+    .o. OEWeakTailNasalLoss
+    .o. OEWeightMarkers
+    .o. OEHighVowelApocope
+    .o. OEHeavySyllableNasalApocope
+    .o. OEWeakTailReduction
+    .o. OEJLossAfterHeavy
+    .o. OEWeightCleanup
+    .o. OEHLoss
+    .o. OEContraction
 );
 
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
-    .o. OldEnglishConsonantRules
+    .o. PGmcConsonantRules
     .o. EnglishProtoToOE;
 
 define EnglishOEToModern EnglishShortAFronting
@@ -1505,7 +1509,7 @@ define EnglishOEToModern EnglishShortAFronting
     .o. EnglishRhoticBreaking
     .o. EnglishPreMEShortBackLowering
     .o. EnglishOpenSyllableLengthening
-    .o. EnglishVelarShortening
+    .o. AngloFrisianVelarShortening
     .o. EnglishVowelRules
     .o. EnglishPostVocalicRLoss
     .o. EnglishWeakTailReductions
@@ -1523,37 +1527,37 @@ define EnglishReflexes OldEnglishCore
 define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
-define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EnglishConsonantRules;
-define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EnglishWestGermanic;
+define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRules;
+define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
-    .o. OldEnglishAuFronting
-    .o. OldEnglishWWSimplification
-    .o. OldEnglishDiphthongLeveling
-    .o. OldEnglishEwLongDiphthong
-    .o. EnglishAngloFrisianBrightening
-    .o. EnglishBreakingLengthening
-    .o. OldEnglishVelarFricativePalatalization
-    .o. OldEnglishARestoration
-    .o. OldEnglishFinalWeakSchwaApocope
-    .o. OldEnglishJGemination
-    .o. OldEnglishSkPalatalization
-    .o. OldEnglishVelarPalatalization
-    .o. OldEnglishIUmlaut
-    .o. EnglishJClusterCoalescence
-    .o. OldEnglishBackMutation
-    .o. OldEnglishNasalSpirantLengthening
-    .o. OldEnglishNasalSpirantLoss
-    .o. OldEnglishWeakTailNasalLoss;
-define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OldEnglishWeightMarkers;
-define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OldEnglishHighVowelApocope .o. OldEnglishHeavySyllableNasalApocope;
+    .o. OEAuFronting
+    .o. OEWWSimplification
+    .o. OEDiphthongLeveling
+    .o. OEEwLongDiphthong
+    .o. AngloFrisianBrightening
+    .o. OEBreaking
+    .o. OEVelarFricativePalatalization
+    .o. OEARestoration
+    .o. OEFinalSchwaApocope
+    .o. PWGmcJGemination
+    .o. OESkPalatalization
+    .o. OEVelarPalatalization
+    .o. OEIUmlaut
+    .o. OEJClusterCoalescence
+    .o. OEBackMutation
+    .o. OENasalSpirantLengthening
+    .o. OENasalSpirantLoss
+    .o. OEWeakTailNasalLoss;
+define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
+define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
-    .o. OldEnglishWeakTailReduction
-    .o. OldEnglishJLossAfterHeavy
-    .o. OldEnglishWeightCleanup
-    .o. OldEnglishHLoss
-    .o. OldEnglishContraction;
+    .o. OEWeakTailReduction
+    .o. OEJLossAfterHeavy
+    .o. OEWeightCleanup
+    .o. OEHLoss
+    .o. OEContraction;
 define EnglishAfterProtoToOE EnglishAfterConsonantRules .o. EnglishProtoToOE;
 define EnglishAfterWGlide EnglishAfterProtoToOE .o. EnglishWGlideRule;
 define EnglishAfterGhMarker EnglishAfterWGlide .o. EnglishGhMarker;
@@ -1580,10 +1584,10 @@ define English EnglishReflexes .o. RemoveStars .o. EnglishSurface;
 
 # Old English: stop after the Proto→OE layer and surface-filter the OE inventory.
 define OldEnglishAfterEpenthesis OldEnglishCore
-    .o. OldEnglishEpentheticVowel;
+    .o. OEEpentheticVowel;
 
 define OldEnglishRules OldEnglishAfterEpenthesis
-    .o. OldEnglishCjCleanup
+    .o. OECjCleanup
     .o. OldEnglishOrthography
     .o. OldEnglishRemoveStars;
 
