@@ -1404,24 +1404,24 @@ define EnglishHighVowelApocope [
     {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
+# Heavy syllable weight marker - DISABLED (apocope now direct).
+# Weight markers caused FST ambiguity; apocope now encodes heavy-syllable
+# conditions directly without intermediate marking.
 define OldEnglishHeavyMarker [
-    # After long vowel/diphthong, even a single following consonant makes the syllable heavy (CV̄C).
-    {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    # After short vowel, require consonant CLUSTER (2+) before final high vowel.
-    # Single intervocalic C is syllabified as onset (ba.ri), not coda (bar.i).
-    {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.,
-    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.,
-    # Nasal vowel rules (same pattern).
-    {*ą} -> {*H} {*ą} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.
+    # Identity - no marking needed
+    0 -> 0
 ];
 
 define OldEnglishWeightMarkers OldEnglishHeavyMarker;
 
 define OldEnglishHighVowelApocope [
-    {*H} {*i} -> 0 || _ .#.,
-    {*H} {*u} -> 0 || _ .#.
+    # Delete final *i/*u after heavy syllables (CV̄C or CVCC).
+    # Long vowel/diphthong + any consonants (CV̄C counts as heavy).
+    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+    # Short vowel + consonant CLUSTER (2+) makes syllable heavy (CVCC).
+    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.
 ];
 
 # EXPERIMENTAL (2026-02-06): Apocope of neuter *-ą after heavy syllables.
@@ -1429,11 +1429,13 @@ define OldEnglishHighVowelApocope [
 # syllable". Evidence suggests *-ą (neuter nom./acc.sg.) followed same pattern.
 # Measured after OE vowel changes (breaking/lengthening), hence after weight markers.
 define OldEnglishHeavySyllableNasalApocope [
-    {*H} {*ą} -> 0 || _ .#.
+    {*ą} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
+    {*ą} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.
 ];
 
 define OldEnglishWeightCleanup [
-    {*H} -> 0
+    # No cleanup needed - no markers being added
+    0 -> 0
 ];
 
 define OldEnglishHLoss [
@@ -1981,3 +1983,8 @@ define German GermanReflexes .o. GermanSurface .o. GermanLengthOrthography;
 clear stack
 regex German;
 save stack german.bin
+
+# DEBUG: Export HeavyMarker standalone for testing
+clear stack
+regex OldEnglishHeavyMarker;
+save stack old_english_heavy_marker_debug.bin
