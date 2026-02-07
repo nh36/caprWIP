@@ -1090,12 +1090,15 @@ define EnglishWestGermanic [
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
+# Early Old English open-syllable lengthening promotes short vowels before CV onsets.
+# Exclude lengthening when the following vowel is word-final (unstressed endings).
+# Environment: V C V where the second V is NOT at word boundary.
 define EnglishOpenSyllableLengthening [
-    {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic,
-    {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
+    {*a} -> {*ā} || _ EnglishStarConsonant EnglishStarVocalic [EnglishStarConsonant | EnglishStarVocalic],
+    {*e} -> {*ē} || _ EnglishStarConsonant EnglishStarVocalic [EnglishStarConsonant | EnglishStarVocalic],
+    {*i} -> {*ī} || _ EnglishStarConsonant EnglishStarVocalic [EnglishStarConsonant | EnglishStarVocalic],
+    {*o} -> {*ō} || _ EnglishStarConsonant EnglishStarVocalic [EnglishStarConsonant | EnglishStarVocalic],
+    {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic [EnglishStarConsonant | EnglishStarVocalic]
 ];
 
 # Old English breaking before x, rC, lC, and select w contexts (split by vowel).
@@ -1402,12 +1405,16 @@ define EnglishHighVowelApocope [
 ];
 
 define OldEnglishHeavyMarker [
+    # After long vowel/diphthong, even a single following consonant makes the syllable heavy (CV̄C).
     {*i} -> {*H} {*i} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
     {*u} -> {*H} {*u} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
-    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.,
+    # After short vowel, require consonant CLUSTER (2+) before final high vowel.
+    # Single intervocalic C is syllabified as onset (ba.ri), not coda (bar.i).
+    {*i} -> {*H} {*i} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.,
+    {*u} -> {*H} {*u} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.,
+    # Nasal vowel rules (same pattern).
     {*ą} -> {*H} {*ą} || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant* _ .#.,
-    {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant+ _ .#.
+    {*ą} -> {*H} {*ą} || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant+ _ .#.
 ];
 
 define OldEnglishWeightMarkers OldEnglishHeavyMarker;
