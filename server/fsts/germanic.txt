@@ -1214,8 +1214,10 @@ define EnglishVelarShortening [
 ];
 
 # Northwest Germanic u-lowering before non-high vowels (Ringe/Taylor §2.3.1).
-# Stressed *u → *ō when next syllable contains non-high vowel (*a, *e, *o, *ā, *ē, *ō)
+# Stressed *u → *o (SHORT o) when next syllable contains non-high vowel (*a, *e, *o, *ā, *ē, *ō)
 # and no nasal intervenes in syllable coda. Very early change (pre-OE).
+# R/T: "stressed *u was apparently lowered to *o" (p.27, line 2297)
+# Examples: *wurda → word, *hurnga → horn, *budanaz → boden (all with SHORT o)
 define EnglishStarNonHighVowel [
     {*a} | {*ā} | {*ă} | {*ą} |
     {*e} | {*ē} |
@@ -1223,7 +1225,7 @@ define EnglishStarNonHighVowel [
 ];
 
 define NWGmcULowering [
-    {*u} -> {*ō} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
+    {*u} -> {*o} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
 ];
 
 define OldEnglishWeakTailNasalLoss [
