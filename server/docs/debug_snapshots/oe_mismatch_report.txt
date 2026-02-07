@@ -1,4 +1,4 @@
-Total mismatches: 316
+Total mismatches: 317
 
 i_umlaut_missing_true: 4
 proto_mismatch_suspect: 0
@@ -7,13 +7,13 @@ breaking_missing: 19
 no_output: 13
 long_vowel_missing: 1
 palatalization_missing: 6
-final_vowel_extra: 71
+final_vowel_extra: 75
 length_extra_other: 11
 front_expected_back_out: 0
-final_vowel_missing: 30
-breaking_extra_other: 18
+final_vowel_missing: 29
+breaking_extra_other: 17
 final_n_missing: 78
-palatal_extra_other: 7
+palatal_extra_other: 6
 back_expected_front_out: 1
 palatal_marker_variant: 0
 epenthetic_vowel_missing: 0
@@ -61,10 +61,10 @@ palatalization_missing:
   *θankăz -> þænc (expected þenċan)
 final_vowel_extra:
   *bergą -> beorġæ (expected beorg)
+  *balgiz -> bielġe (expected bielġ)
   *blōdą -> blōdæ (expected blōd)
   *burdą -> bordæ (expected bord)
   *būrą -> būræ (expected būr)
-  *braudą -> brēadæ (expected brēad)
 length_extra_other:
   *fadēr -> fædēr (expected fæder)
   *flaskō -> flascō (expected flasce)
@@ -95,7 +95,7 @@ palatal_extra_other:
   *kambăz -> ċæmb (expected camb)
   *gansz -> ġēs (expected gōs)
   *xandlōjăną -> hændlēġanæ (expected handle)
-  *rukkiz -> rycċ (expected rocc)
+  *skēpą -> sċēpæ (expected persona)
 back_expected_front_out:
   *θankăz -> þænc (expected þancas)
 palatal_marker_variant:
