@@ -185,6 +185,50 @@ def has_consonant_gemination(s: str) -> bool:
     return False
 
 
+def has_final_devoicing_issue(out: str, expected: str) -> bool:
+    """Detect voiced stop in output that should be devoiced in expected.
+    
+    Handles both word-final (d#→t#) and pre-consonantal (dm→tm) contexts.
+    """
+    if not out or not expected:
+        return False
+    out_cons = consonant_sequence(out)
+    exp_cons = consonant_sequence(expected)
+    if not out_cons or not exp_cons or len(out_cons) != len(exp_cons):
+        return False
+    # Check for d→t, g→c/k, b→p in final or pre-consonantal position
+    # Compare last few consonants
+    pairs = [("d", "t"), ("g", "c"), ("g", "k"), ("b", "p")]
+    for i in range(min(3, len(out_cons))):  # Check last 3 consonants
+        idx = -(i+1)
+        for voiced, voiceless in pairs:
+            if out_cons[idx] == voiced and exp_cons[idx] == voiceless:
+                # Rest of consonants should match
+                if out_cons[:idx] == exp_cons[:idx] and (idx == -1 or out_cons[idx+1:] == exp_cons[idx+1:]):
+                    return True
+    return False
+
+
+def has_intervocalic_voicing_issue(out: str, expected: str) -> bool:
+    """Detect intervocalic b/d/g that should be f/þ/ġ (fricatives)."""
+    if not out or not expected:
+        return False
+    # Check for patterns like VbV→VfV, VdV→VþV (medial stops should be fricatives)
+    vowels = FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS
+    # Simple heuristic: look for b in out where expected has f/v, same for d/þ, g/ġ
+    for i in range(1, len(out) - 1):
+        if out[i] in "bdg":
+            if (i > 0 and out[i-1] in vowels) and (i < len(out)-1 and out[i+1] in vowels):
+                # Intervocalic position
+                if out[i] == "b" and ("f" in expected or "v" in expected):
+                    return True
+                if out[i] == "d" and "þ" in expected:
+                    return True
+                if out[i] == "g" and "ġ" in expected:
+                    return True
+    return False
+
+
 def trigger_in_next_syllable(proto_norm: str) -> bool:
     """Heuristic: an i/ī/j appears before any other vowel after the first vowel."""
     first_vowel_idx = None
@@ -292,7 +336,38 @@ def other_subtype(out: str, expected: str) -> str:
             return "vowel_quality_other"
     if has_consonant_gemination(out) and not has_consonant_gemination(expected):
         return "gemination_extra"
+    # Check specific consonant phenomena before falling back to catch-all
     if out_cons != expected_cons:
+        exp_cons_only = consonant_sequence(expected)
+        # 0. Check for inflectional suffix present in output but not expected
+        # Pattern: output has extra suffix, consonant skeletons similar
+        if len(out) > len(expected) + 1:
+            # Check if output ends with common inflectional suffix
+            for suffix in ("an", "en", "on", "um", "as", "es", "os", "ian"):
+                if out.endswith(suffix):
+                    # Strip suffix and compare consonant skeletons
+                    out_stem = out[:-len(suffix)]
+                    if consonant_sequence(out_stem) == exp_cons_only:
+                        return "inflectional_suffix_extra"
+                    # Also check if just the consonants match (allowing vowel differences)
+                    if exp_cons_only and len(out_cons) > len(exp_cons_only):
+                        # Last consonants of output match expected (extra suffix material)
+                        if out_cons.endswith(exp_cons_only[-1:]) and exp_cons_only in out_cons:
+                            return "inflectional_suffix_extra"
+        # 1. Final devoicing: word-final d→t, g→k, b→p
+        if has_final_devoicing_issue(out, expected):
+            return "final_devoicing_missing"
+        # 2. Intervocalic voicing: VbV→VfV, VdV→VþV (stops should be fricatives)
+        if has_intervocalic_voicing_issue(out, expected):
+            return "intervocalic_voicing_missing"
+        # 3. Check for prefix morphology mismatches (likely TSV errors)
+        # Simple heuristic: expected is longer and has extra material at start
+        if len(expected) >= len(out) + 2:
+            # Check if expected starts with extra prefix material
+            # Compare consonant skeletons: if out consonants appear later in expected
+            if exp_cons_only and out_cons in exp_cons_only[1:]:
+                return "prefix_morphology_issue"
+        # Catch-all for other consonant mismatches
         return "consonant_mismatch_other"
     return "uncategorized"
 
@@ -346,6 +421,11 @@ def write_report(
         "epenthetic_vowel_missing",
         "vowel_quality_other",
         "gemination_extra",
+        # Refined consonant mismatch buckets
+        "inflectional_suffix_extra",
+        "final_devoicing_missing",
+        "intervocalic_voicing_missing",
+        "prefix_morphology_issue",
         "consonant_mismatch_other",
         "uncategorized",
     ]
