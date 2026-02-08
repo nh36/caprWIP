@@ -1263,6 +1263,14 @@ define NWGmcULowering [
     {*u} -> {*o} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
 ];
 
+# R/T vol.2 p.267: "word-final bimoric non-nasalized long *-ō became
+# short *-u in unstressed syllables in PNWGmc."
+# Examples: PGmc *gebō > PNWGmc *gebu, PGmc *feþrō > PNWGmc *feþru.
+# The resulting *-u then undergoes high vowel apocope after heavy syllables.
+define NWGmcFinalLongORaising [
+    {*ō} -> {*u} || _ .#.
+];
+
 define OEWeakTailNasalLoss [
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
@@ -1479,6 +1487,7 @@ define OEContraction [
 define EnglishProtoToOE (
     PWGmcChanges
     .o. NWGmcULowering
+    .o. NWGmcFinalLongORaising
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -1550,6 +1559,7 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
+    .o. NWGmcFinalLongORaising
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
