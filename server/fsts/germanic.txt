@@ -1434,6 +1434,20 @@ define OEBackMutation [
     {*æ} -> {*ea} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
 ];
 
+# R/T vol.2 §6.9.7: WS palatal umlaut.
+# Short diphthongs eo, io, ie → i before ht, hp, hs when word-final
+# or followed by a front vowel.
+# Examples: *reoht > riht, *seohs > six, *niehti > niht, *wiehti > wiht.
+# Counter-examples: *feohtan stays feohtan (ht + back vowel, no change).
+# NOTE: only SHORT diphthongs; long diphthongs (ēo, etc.) remain in WS.
+define OEHCluster [{*x} [{*t} | {*p} | {*s}]];
+define OEWsPalatalUmlaut [
+    {*eo} -> {*i} || _ OEHCluster .#.,
+    {*ie} -> {*i} || _ OEHCluster .#.,
+    {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
+];
+
 define OENasalSpirantLengthening [
     {*a} -> {*ā} || _ EnglishStarNasal EnglishStarFricative,
     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
@@ -1589,6 +1603,7 @@ define EnglishProtoToOE (
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
     .o. OEBackMutation
+    .o. OEWsPalatalUmlaut
     .o. OENasalSpirantLengthening
     .o. OENasalSpirantLoss
     .o. OEWeakTailNasalLoss
@@ -1657,6 +1672,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
     .o. OEBackMutation
+    .o. OEWsPalatalUmlaut
     .o. OENasalSpirantLengthening
     .o. OENasalSpirantLoss
     .o. OEWeakTailNasalLoss;

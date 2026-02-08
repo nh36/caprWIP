@@ -51,6 +51,7 @@ STAGES: List[Tuple[str, str]] = [
     ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
     ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
     ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
+    ("WsPalatalUmlaut", "old_english_sandbox_after_ws_palatal_umlaut.bin"),
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
     ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
     ("WeakTailNasalLoss", "old_english_sandbox_after_weak_tail_nasal_loss.bin"),
