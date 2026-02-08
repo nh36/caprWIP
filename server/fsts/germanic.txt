@@ -1411,9 +1411,13 @@ define OEIntervocalicJVocalization [
     {*j} -> {*i} || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
+# R/T §6.9.4: Back umlaut (WS). *e → eo only before l/r/labial + *u.
+# *i → io/eo before l/r/labial + back vowel. *æ → ea before l/r/labial + back vowel.
+# Back umlaut of *e is more restricted than *i and *æ in WS.
 define OEBackMutation [
-    {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
-    {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
+    {*e} -> {*eo} || _ (EnglishStarLabial | EnglishStarLiquid) {*u},
+    {*i} -> {*eo} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
+    {*æ} -> {*ea} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
 ];
 
 define OENasalSpirantLengthening [

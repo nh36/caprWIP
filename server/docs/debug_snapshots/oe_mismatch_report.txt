@@ -1,26 +1,22 @@
-Total mismatches: 219
+Total mismatches: 218
 
 === CORE BUCKETS ===
-  i_umlaut_missing_true: 4
-  proto_mismatch_suspect: 1
+  i_umlaut_missing_true: 3
   fronting_missing_no_trigger: 7
-  breaking_missing__expected_ea_got_a: 6
-  breaking_missing__expected_eo: 5
+  breaking_missing__expected_ea_got_a: 4
+  breaking_missing__expected_eo: 4
   breaking_missing__expected_eo_got_e: 2
-  breaking_missing__expected_ie: 1
-  long_vowel_missing: 4
+  long_vowel_missing: 7
   no_output: 13
   palatalization_missing: 5
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
   length_extra_other: 2
-  front_expected_back_out: 1
-  breaking_extra_other: 25
+  breaking_extra_other: 28
   palatal_marker_variant: 1
   epenthetic_vowel_missing: 1
   vowel_quality_other: 24
-  gemination_extra: 1
   final_devoicing_missing: 1
   prefix_morphology_issue: 1
 --- palatal_extra sub-buckets ---
@@ -34,15 +30,15 @@ Total mismatches: 219
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__apocope_candidate: 1
   final_vowel_missing__morph_form_mismatch: 27
-  final_vowel_missing__other: 2
-  final_vowel_missing__weak_noun_like: 8
+  final_vowel_missing__other: 3
+  final_vowel_missing__weak_noun_like: 9
 --- final_n_missing sub-buckets ---
   final_n_missing__bare_n: 1
   final_n_missing__expected_an: 6
   final_n_missing__expected_en: 2
 --- inflectional_suffix_extra sub-buckets ---
   infl_suffix_extra__an: 18
-  infl_suffix_extra__on: 2
+  infl_suffix_extra__on: 1
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
@@ -63,14 +59,10 @@ Total mismatches: 219
 
 === DETAILED EXAMPLES ===
 
-i_umlaut_missing_true (4):
+i_umlaut_missing_true (3):
   *flaiskăz -> flāsc (expected flǣsċ)
   *sai -> sā (expected sǣ)
-  *strawjăną -> strowan (expected strewian)
   *wainōjăną -> wāneian (expected hwīnan)
-
-proto_mismatch_suspect (1):
-  *libēną -> lufon (expected lifian)
 
 fronting_missing_no_trigger (7):
   *dranką -> dranc (expected drenċ)
@@ -81,18 +73,15 @@ fronting_missing_no_trigger (7):
   *tappōn -> tappon (expected tæppa)
   *θankăz -> þanc (expected þenċan)
 
-breaking_missing__expected_ea_got_a (6):
+breaking_missing__expected_ea_got_a (4):
   *dawwō -> dawo (expected dēaw)
-  *xawwăną -> hæwan (expected hēawan)
   *laidjăną -> lǣdan (expected lēad)
   *skaiθiz -> sċǣþ (expected sċēaþ)
   *skawōjăną -> sċaweian (expected scēawian)
-  *strawą -> stræw (expected strēaw)
 
-breaking_missing__expected_eo (5):
+breaking_missing__expected_eo (4):
   *brustz -> brust (expected brēost)
   *frijōndz -> frīond (expected frēond)
-  *sebun -> sofon (expected seofon)
   *juką -> ġoc (expected ġeoc)
   *jugunθiz -> ġugyþe (expected ġeoguþ)
 
@@ -100,13 +89,13 @@ breaking_missing__expected_eo_got_e (2):
   *fedwōrez -> fedwore (expected fēower)
   *weslon -> weslon (expected weosule)
 
-breaking_missing__expected_ie (1):
-  *xawwją -> how (expected hīeġ)
-
-long_vowel_missing (4):
+long_vowel_missing (7):
   *nadrō -> næder (expected nǣdre)
   *bō -> bo (expected bā]] [[þā)
+  *xawwją -> heow (expected hīeġ)
+  *xawwăną -> heawan (expected hēawan)
   *mizdō -> mierd (expected mēd)
+  *strawą -> streaw (expected strēaw)
   *texun -> teoon (expected tīen)
 
 no_output (13):
@@ -143,10 +132,7 @@ length_extra_other (2):
   *dōną -> dōn (expected don)
   *finþăną -> fīþan (expected findan)
 
-front_expected_back_out (1):
-  *speru -> sporo (expected spere)
-
-breaking_extra_other (25):
+breaking_extra_other (28):
   *barwōn -> bearwon (expected bēr)
   *felθuz -> feolþ (expected feld)
   *leusăną -> lēosan (expected forloren)
@@ -157,6 +143,7 @@ breaking_extra_other (25):
   *xelpō -> heolp (expected help)
   *xaldăną -> healdan (expected hold)
   *knixtăz -> cnieht (expected cniht)
+  *libēną -> leofon (expected lifian)
   *maxtiz -> mieht (expected miht)
   *naxtz -> neaht (expected niht)
   *newun -> nēowon (expected nigon)
@@ -164,7 +151,9 @@ breaking_extra_other (25):
   *skeubăną -> sċēofan (expected sċūfan)
   *sexs -> seox (expected six)
   *sparrōn -> spearron (expected sperran)
+  *sparēną -> spearon (expected spær)
   *stelăną -> steolan (expected stelan)
+  *strawjăną -> streowan (expected strewian)
   *swalgwōn -> swealgwon (expected swelgan)
   *swellăną -> sweollan (expected swellan)
   *θrejez -> þrīe (expected þrī)
@@ -204,9 +193,6 @@ vowel_quality_other (24):
   *warto -> wearto (expected wearte)
   *wiθră -> wiþer (expected weþer)
   *wulfăz -> wolf (expected wulf)
-
-gemination_extra (1):
-  *spennilō -> spinnolo (expected spindle)
 
 final_devoicing_missing (1):
   *budmăz -> bodm (expected botm)
@@ -258,8 +244,8 @@ final_vowel_missing__morph_form_mismatch (27):
   *līstōn -> līston (expected līste)
   *namōn -> namon (expected nama)
   *nablōn -> næflon (expected nafola)
-  *natilōn -> netolon (expected netle)
-  *marōn -> mæron (expected mære)
+  *natilōn -> neteolon (expected netle)
+  *marōn -> mearon (expected mære)
   *uxsōn -> oxon (expected oxa)
   *skēpą -> sċēap (expected persona)
   *sīdōn -> sīdon (expected sīde)
@@ -273,11 +259,12 @@ final_vowel_missing__morph_form_mismatch (27):
   *xōrōn -> hōron (expected hōre)
   *widuwōn -> widowon (expected widuwe)
 
-final_vowel_missing__other (2):
+final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)
   *labbăz -> læfb (expected læppa)
+  *spennilō -> spinneol (expected spindle)
 
-final_vowel_missing__weak_noun_like (8):
+final_vowel_missing__weak_noun_like (9):
   *deljăz -> diel (expected dile)
   *fūri -> fȳr (expected fȳre)
   *flaskō -> flasc (expected flasce)
@@ -285,6 +272,7 @@ final_vowel_missing__weak_noun_like (8):
   *xelmăz -> heolm (expected helma)
   *skuldrō -> sċoldor (expected sċuldra)
   *sibăz -> sif (expected sife)
+  *speru -> speor (expected spere)
   *tangō -> tang (expected tange)
 
 final_n_missing__bare_n (1):
@@ -322,9 +310,8 @@ infl_suffix_extra__an (18):
   *windăną -> windan (expected wind)
   *garnăn -> ġearnan (expected ġearn)
 
-infl_suffix_extra__on (2):
+infl_suffix_extra__on (1):
   *laimōn -> lāmon (expected lām)
-  *sparēną -> spæron (expected spær)
 
 cons_mismatch__f_vs_b__intervocalic (1):
   *xabēną -> hafon (expected habban)
