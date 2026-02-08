@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Unified OE mismatch report with detailed subcategories (no separate 'other' report)."""
+"""Unified OE mismatch report with mechanistic sub-buckets.
+
+Each bucket targets ONE hypothesis / ONE mechanism so that future debugging
+is safe and focused.  See inline comments for the rationale behind each split.
+"""
 
 from __future__ import annotations
 
@@ -25,6 +29,8 @@ HIGH_FRONT_VOWELS = set("iīyȳ")
 OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
+# Characters that are definitely consonants in OE orthography.
+OE_CONSONANTS = set("bcdfgġhklmnprstwxþðċ")
 
 
 def normalize_proto(raw: str) -> str:
@@ -288,7 +294,7 @@ def base_bucket(proto_norm: str, out: str, expected: str) -> str:
     if proto_mismatch_suspect(proto_norm, out, expected):
         return "proto_mismatch_suspect"
     if has_breaking_diph(expected) and not has_breaking_diph(out):
-        return "breaking_missing"
+        return _breaking_subtype(out, expected)
     if has_long(expected) and not has_long(out):
         expected_cons = consonant_skeleton(expected)
         out_cons = consonant_skeleton(out)
@@ -306,17 +312,200 @@ def base_bucket(proto_norm: str, out: str, expected: str) -> str:
     return "other"
 
 
-def other_subtype(out: str, expected: str) -> str:
+def _find_first_cons_mismatch(out: str, expected: str) -> str:
+    """Find the first consonant pair that differs between out and expected.
+
+    Returns a string like 'þ_vs_d' or '' if consonants are identical / not alignable.
+    """
+    out_c = consonant_sequence(out)
+    exp_c = consonant_sequence(expected)
+    if out_c == exp_c:
+        return ""
+    for i in range(min(len(out_c), len(exp_c))):
+        if out_c[i] != exp_c[i]:
+            return f"{out_c[i]}_vs_{exp_c[i]}"
+    if len(out_c) != len(exp_c):
+        return "length_diff"
+    return ""
+
+
+def _cons_mismatch_position(out: str, expected: str) -> str:
+    """Classify the position of the first consonant mismatch."""
+    vowels = FRONT_VOWELS | BACK_VOWELS | LONG_VOWELS
+    out_c = consonant_sequence(out)
+    exp_c = consonant_sequence(expected)
+    mismatch_idx = -1
+    for i in range(min(len(out_c), len(exp_c))):
+        if out_c[i] != exp_c[i]:
+            mismatch_idx = i
+            break
+    if mismatch_idx < 0:
+        return ""
+    # Find the mismatched consonant in the original string and check context
+    mismatched_char = out_c[mismatch_idx]
+    cons_count = 0
+    for i, ch in enumerate(out):
+        if ch in OE_CONSONANTS:
+            if cons_count == mismatch_idx:
+                # Check context
+                before = out[i - 1] if i > 0 else ""
+                after = out[i + 1] if i < len(out) - 1 else ""
+                if i == len(out) - 1 or (after not in vowels and before not in vowels):
+                    return "word_final"
+                if before in vowels and after in vowels:
+                    return "intervocalic"
+                return "cluster"
+            cons_count += 1
+    return ""
+
+
+def _breaking_subtype(out: str, expected: str) -> str:
+    """Classify breaking mismatch by expected diphthong and produced monophthong."""
+    for diph in BREAKING_DIPHTHONGS:
+        if diph in expected and diph not in out:
+            mono = oe_first_vowel_unit(out) if not has_breaking_diph(out) else ""
+            if diph in ("ea", "ēa"):
+                if mono in ("a", "ā", "æ", "ǣ"):
+                    return "breaking_missing__expected_ea_got_a"
+                return "breaking_missing__expected_ea"
+            if diph in ("eo", "ēo"):
+                if mono in ("e", "ē"):
+                    return "breaking_missing__expected_eo_got_e"
+                return "breaking_missing__expected_eo"
+            if diph in ("ie", "īe"):
+                if mono in ("i", "ī"):
+                    return "breaking_missing__expected_ie_got_i"
+                return "breaking_missing__expected_ie"
+    return "breaking_missing"
+
+
+def _palatal_extra_subtype(out: str, expected: str, proto_norm: str) -> str:
+    """Classify palatal-extra mismatch by the mechanism that caused it."""
+    # Check if this is purely an orthographic normalization difference:
+    # expected has plain c/g where output has ċ/ġ, but underlying phonology identical.
+    out_depal = out.replace("ċ", "c").replace("ġ", "g")
+    exp_depal = expected.replace("ċ", "c").replace("ġ", "g")
+    if out_depal == exp_depal:
+        return "palatal_extra__orth_normalization"
+
+    # Check if palatalization was triggered by a *j in the proto-form
+    has_j = "j" in proto_norm
+    if has_j:
+        # Check if the palatal marker is adjacent to the j-related vowel
+        return "palatal_extra__j_triggered"
+
+    # Check if velar was palatalized before a front vowel
+    # Pattern: we produced ċ/ġ, expected has c/g — velar before front vowel in our output
+    for i, ch in enumerate(out):
+        if ch in ("ċ", "ġ") and i < len(out) - 1:
+            next_ch = out[i + 1]
+            if next_ch in FRONT_VOWELS:
+                # Check if expected has the non-palatal version in roughly the same position
+                plain = "c" if ch == "ċ" else "g"
+                if plain in expected:
+                    return "palatal_extra__velar_before_front"
+    # Broader check: is there any front vowel adjacent to a palatal in the output?
+    for i, ch in enumerate(out):
+        if ch in ("ċ", "ġ"):
+            before = out[i - 1] if i > 0 else ""
+            after = out[i + 1] if i < len(out) - 1 else ""
+            if before in FRONT_VOWELS or after in FRONT_VOWELS:
+                return "palatal_extra__velar_before_front"
+
+    return "palatal_extra__other"
+
+
+def _back_front_subtype(out: str, expected: str, proto_norm: str) -> str:
+    """Classify back_expected_front_out by AFB / a-restoration / morphology."""
+    # Check if the mismatch is primarily in suffix/tail material
+    # Heuristic: if the first 2+ characters match, it's probably a tail/suffix issue
+    common_prefix = 0
+    for i in range(min(len(out), len(expected))):
+        if out[i] == expected[i]:
+            common_prefix += 1
+        else:
+            break
+    if common_prefix >= 2 and common_prefix >= len(expected) - 2:
+        return "back_expected_front_out__morph_or_data_tail"
+
+    # Is this an AFB-like context? (proto *a before nasal/liquid + consonant)
+    if is_a_fronting_context(proto_norm):
+        return "back_expected_front_out__AFB_like"
+
+    # Check for a-restoration-like patterns: expected has back vowel (a/o) where
+    # we produce a front vowel — suggests a-restoration should undo fronting
+    first_exp = oe_first_vowel_unit(expected)
+    first_out = oe_first_vowel_unit(out)
+    if first_exp in ("a", "ā") and first_out in ("æ", "ǣ", "e", "ē"):
+        return "back_expected_front_out__a_restoration_like"
+
+    return "back_expected_front_out__other"
+
+
+def _final_vowel_missing_subtype(out: str, expected: str, proto_norm: str) -> str:
+    """Classify final_vowel_missing by mechanism."""
+    # Tail-only alignment: the consonant skeletons are very similar but expected has
+    # extra final vowel — likely a data alignment / morphological form issue.
+    out_cons = consonant_sequence(out)
+    exp_cons = consonant_sequence(expected)
+
+    # Check for weak-noun-like patterns: output ends in -o/-a/-on/-an
+    # but expected ends in -e/-a (weak noun nominative).
+    if expected[-1:] in ("e", "a") and out_cons == exp_cons:
+        return "final_vowel_missing__weak_noun_like"
+
+    # Apocope candidate: expected has final vowel, output doesn't, and the
+    # preceding syllable might be heavy (2+ consonants before the gap).
+    # Detect: expected = out + vowel (approximately)
+    if exp_cons == out_cons:
+        return "final_vowel_missing__apocope_candidate"
+
+    # Proto form suspect: output has substantially different structure from expected
+    if len(out_cons) != len(exp_cons):
+        # Different consonant structure → likely different morphological form
+        return "final_vowel_missing__morph_form_mismatch"
+
+    return "final_vowel_missing__other"
+
+
+def _inflectional_suffix_extra_subtype(out: str, expected: str) -> str:
+    """Subdivide inflectional_suffix_extra by the kind of suffix."""
+    for suffix in ("on", "an", "en", "ian"):
+        if out.endswith(suffix):
+            exp_cons = consonant_sequence(expected)
+            out_stem = out[: -len(suffix)]
+            if consonant_sequence(out_stem) == exp_cons or exp_cons in consonant_sequence(out_stem):
+                return f"infl_suffix_extra__{suffix}"
+    for suffix in ("as", "es", "os"):
+        if out.endswith(suffix):
+            return f"infl_suffix_extra__{suffix}"
+    return "infl_suffix_extra__other"
+
+
+def _final_n_missing_subtype(out: str, expected: str) -> str:
+    """Subdivide final_n_missing by context."""
+    # Check if expected ends with -an (infinitive/weak noun)
+    if expected.endswith("an"):
+        return "final_n_missing__expected_an"
+    if expected.endswith("on"):
+        return "final_n_missing__expected_on"
+    if expected.endswith("en"):
+        return "final_n_missing__expected_en"
+    # Bare -n
+    return "final_n_missing__bare_n"
+
+
+def other_subtype(out: str, expected: str, proto_norm: str = "") -> str:
     if expected.endswith("n") and not out.endswith("n"):
-        return "final_n_missing"
+        return _final_n_missing_subtype(out, expected)
     if ends_with_vowel(expected) and not ends_with_vowel(out):
-        return "final_vowel_missing"
+        return _final_vowel_missing_subtype(out, expected, proto_norm)
     if ends_with_vowel(out) and not ends_with_vowel(expected):
         return "final_vowel_extra"
     if has_breaking_diph(out) and not has_breaking_diph(expected):
         return "breaking_extra_other"
     if has_palatal_marker(out) and not has_palatal_marker(expected):
-        return "palatal_extra_other"
+        return _palatal_extra_subtype(out, expected, proto_norm)
     if has_palatal_variant_mismatch(out, expected):
         return "palatal_marker_variant"
     if has_long(out) and not has_long(expected):
@@ -324,7 +513,7 @@ def other_subtype(out: str, expected: str) -> str:
     if oe_first_is_front(expected) and oe_first_is_back(out):
         return "front_expected_back_out"
     if oe_first_is_back(expected) and oe_first_is_front(out):
-        return "back_expected_front_out"
+        return _back_front_subtype(out, expected, proto_norm)
     out_cons = consonant_sequence(out)
     expected_cons = consonant_sequence(expected)
     if out_cons == expected_cons:
@@ -339,35 +528,33 @@ def other_subtype(out: str, expected: str) -> str:
     # Check specific consonant phenomena before falling back to catch-all
     if out_cons != expected_cons:
         exp_cons_only = consonant_sequence(expected)
-        # 0. Check for inflectional suffix present in output but not expected
-        # Pattern: output has extra suffix, consonant skeletons similar
+        # 0. Inflectional suffix present in output but not expected
         if len(out) > len(expected) + 1:
-            # Check if output ends with common inflectional suffix
             for suffix in ("an", "en", "on", "um", "as", "es", "os", "ian"):
                 if out.endswith(suffix):
-                    # Strip suffix and compare consonant skeletons
-                    out_stem = out[:-len(suffix)]
+                    out_stem = out[: -len(suffix)]
                     if consonant_sequence(out_stem) == exp_cons_only:
-                        return "inflectional_suffix_extra"
-                    # Also check if just the consonants match (allowing vowel differences)
+                        return _inflectional_suffix_extra_subtype(out, expected)
                     if exp_cons_only and len(out_cons) > len(exp_cons_only):
-                        # Last consonants of output match expected (extra suffix material)
                         if out_cons.endswith(exp_cons_only[-1:]) and exp_cons_only in out_cons:
-                            return "inflectional_suffix_extra"
-        # 1. Final devoicing: word-final d→t, g→k, b→p
+                            return _inflectional_suffix_extra_subtype(out, expected)
+        # 1. Final devoicing
         if has_final_devoicing_issue(out, expected):
             return "final_devoicing_missing"
-        # 2. Intervocalic voicing: VbV→VfV, VdV→VþV (stops should be fricatives)
+        # 2. Intervocalic voicing
         if has_intervocalic_voicing_issue(out, expected):
             return "intervocalic_voicing_missing"
-        # 3. Check for prefix morphology mismatches (likely TSV errors)
-        # Simple heuristic: expected is longer and has extra material at start
+        # 3. Prefix morphology
         if len(expected) >= len(out) + 2:
-            # Check if expected starts with extra prefix material
-            # Compare consonant skeletons: if out consonants appear later in expected
             if exp_cons_only and out_cons in exp_cons_only[1:]:
                 return "prefix_morphology_issue"
-        # Catch-all for other consonant mismatches
+        # 4. Consonant-pair sub-buckets
+        pair = _find_first_cons_mismatch(out, expected)
+        pos = _cons_mismatch_position(out, expected)
+        if pair and pos:
+            return f"cons_mismatch__{pair}__{pos}"
+        if pair:
+            return f"cons_mismatch__{pair}"
         return "consonant_mismatch_other"
     return "uncategorized"
 
@@ -389,7 +576,7 @@ def build_report(
         bucket = base_bucket(row["proto_norm"], out, expected)
         buckets[bucket].append((row["proto"], out, expected))
         if bucket == "other":
-            other_subs[other_subtype(out, expected)].append((row["proto"], out, expected))
+            other_subs[other_subtype(out, expected, row["proto_norm"])].append((row["proto"], out, expected))
     return buckets, other_subs
 
 
@@ -399,56 +586,109 @@ def write_report(
     output_path: Path,
     max_examples: int,
 ) -> None:
-    core_order = [
+    # Core buckets (from base_bucket) — include breaking sub-buckets
+    core_keys = [
         "i_umlaut_missing_true",
         "proto_mismatch_suspect",
         "fronting_missing_no_trigger",
-        "breaking_missing",
-        "no_output",
         "long_vowel_missing",
+        "no_output",
         "palatalization_missing",
     ]
-    other_order = [
+    # Add any breaking_missing sub-bucket keys that actually exist
+    breaking_keys = sorted(k for k in buckets if k.startswith("breaking_missing"))
+    core_keys = core_keys[:3] + breaking_keys + core_keys[3:]
+
+    # Other-bucket sub-categories — fixed order for stable ones, then dynamic
+    fixed_other_keys = [
         "final_vowel_extra",
         "length_extra_other",
         "front_expected_back_out",
-        "final_vowel_missing",
         "breaking_extra_other",
-        "final_n_missing",
-        "palatal_extra_other",
-        "back_expected_front_out",
         "palatal_marker_variant",
         "epenthetic_vowel_missing",
         "vowel_quality_other",
         "gemination_extra",
-        # Refined consonant mismatch buckets
-        "inflectional_suffix_extra",
         "final_devoicing_missing",
         "intervocalic_voicing_missing",
         "prefix_morphology_issue",
-        "consonant_mismatch_other",
-        "uncategorized",
     ]
-    order = core_order + other_order
+    # Collect all dynamic sub-bucket keys not in the fixed list
+    dynamic_keys = sorted(k for k in other_subs if k not in fixed_other_keys)
+    # Group dynamic keys by prefix for readability
+    palatal_keys = [k for k in dynamic_keys if k.startswith("palatal_extra__")]
+    back_front_keys = [k for k in dynamic_keys if k.startswith("back_expected_front_out__")]
+    final_vowel_keys = [k for k in dynamic_keys if k.startswith("final_vowel_missing__")]
+    final_n_keys = [k for k in dynamic_keys if k.startswith("final_n_missing__")]
+    infl_suffix_keys = [k for k in dynamic_keys if k.startswith("infl_suffix_extra__")]
+    cons_mismatch_keys = [k for k in dynamic_keys if k.startswith("cons_mismatch__")]
+    other_dynamic = [
+        k for k in dynamic_keys
+        if not any(k.startswith(p) for p in (
+            "palatal_extra__", "back_expected_front_out__",
+            "final_vowel_missing__", "final_n_missing__",
+            "infl_suffix_extra__", "cons_mismatch__",
+        ))
+        and k not in ("consonant_mismatch_other", "uncategorized")
+    ]
+
+    other_order = (
+        fixed_other_keys
+        + ["--- palatal_extra sub-buckets ---"] + palatal_keys
+        + ["--- back_expected_front_out sub-buckets ---"] + back_front_keys
+        + ["--- final_vowel_missing sub-buckets ---"] + final_vowel_keys
+        + ["--- final_n_missing sub-buckets ---"] + final_n_keys
+        + ["--- inflectional_suffix_extra sub-buckets ---"] + infl_suffix_keys
+        + ["--- consonant_mismatch sub-buckets ---"] + cons_mismatch_keys
+        + other_dynamic
+        + ["consonant_mismatch_other", "uncategorized"]
+    )
+
     mismatch_total = sum(len(v) for v in buckets.values())
     lines: List[str] = []
     lines.append(f"Total mismatches: {mismatch_total}")
     lines.append("")
-    for key in core_order:
-        lines.append(f"{key}: {len(buckets.get(key, []))}")
-    for key in other_order:
-        lines.append(f"{key}: {len(other_subs.get(key, []))}")
+
+    # Summary counts
+    lines.append("=== CORE BUCKETS ===")
+    for key in core_keys:
+        count = len(buckets.get(key, []))
+        if count > 0:
+            lines.append(f"  {key}: {count}")
     lines.append("")
-    lines.append("Examples:")
-    for key in core_order:
-        lines.append(f"{key}:")
-        for proto, out, expected in buckets.get(key, [])[:max_examples]:
-            lines.append(f"  {proto} -> {out} (expected {expected})")
+    lines.append("=== OTHER SUB-BUCKETS ===")
     for key in other_order:
-        lines.append(f"{key}:")
-        for proto, out, expected in other_subs.get(key, [])[:max_examples]:
-            lines.append(f"  {proto} -> {out} (expected {expected})")
+        if key.startswith("---"):
+            lines.append(key)
+            continue
+        count = len(other_subs.get(key, []))
+        if count > 0:
+            lines.append(f"  {key}: {count}")
     lines.append("")
+
+    # Detailed examples
+    lines.append("=== DETAILED EXAMPLES ===")
+    lines.append("")
+    for key in core_keys:
+        items = buckets.get(key, [])
+        if not items:
+            continue
+        lines.append(f"{key} ({len(items)}):")
+        for proto, out, expected in items[:max_examples]:
+            lines.append(f"  {proto} -> {out} (expected {expected})")
+        lines.append("")
+
+    for key in other_order:
+        if key.startswith("---"):
+            continue
+        items = other_subs.get(key, [])
+        if not items:
+            continue
+        lines.append(f"{key} ({len(items)}):")
+        for proto, out, expected in items[:max_examples]:
+            lines.append(f"  {proto} -> {out} (expected {expected})")
+        lines.append("")
+
     lines.append("=== A-FRONTING AUDIT ===")
     lines.append("--- fronting_missing_no_trigger ---")
     for proto, out, expected in buckets.get("fronting_missing_no_trigger", []):
