@@ -1,14 +1,13 @@
-Total mismatches: 224
+Total mismatches: 222
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 4
   proto_mismatch_suspect: 1
   fronting_missing_no_trigger: 7
-  breaking_missing__expected_ea: 1
-  breaking_missing__expected_ea_got_a: 8
+  breaking_missing__expected_ea_got_a: 6
   breaking_missing__expected_eo: 5
   breaking_missing__expected_eo_got_e: 2
-  breaking_missing__expected_ie: 3
+  breaking_missing__expected_ie: 1
   long_vowel_missing: 4
   no_output: 13
   palatalization_missing: 5
@@ -17,7 +16,7 @@ Total mismatches: 224
   final_vowel_extra: 6
   length_extra_other: 2
   front_expected_back_out: 1
-  breaking_extra_other: 23
+  breaking_extra_other: 24
   palatal_marker_variant: 1
   epenthetic_vowel_missing: 1
   vowel_quality_other: 24
@@ -26,9 +25,9 @@ Total mismatches: 224
   prefix_morphology_issue: 1
 --- palatal_extra sub-buckets ---
   palatal_extra__j_triggered: 7
-  palatal_extra__orth_normalization: 3
+  palatal_extra__orth_normalization: 4
   palatal_extra__other: 1
-  palatal_extra__velar_before_front: 3
+  palatal_extra__velar_before_front: 4
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__AFB_like: 3
   back_expected_front_out__other: 2
@@ -81,18 +80,13 @@ fronting_missing_no_trigger (7):
   *tappōn -> tappon (expected tæppa)
   *θankăz -> þanc (expected þenċan)
 
-breaking_missing__expected_ea (1):
-  *gastiz -> ġest (expected appear)
-
-breaking_missing__expected_ea_got_a (8):
+breaking_missing__expected_ea_got_a (6):
   *dawwō -> dawo (expected dēaw)
   *xawwăną -> hæwan (expected hēawan)
   *laidjăną -> lǣdan (expected lēad)
-  *skaftą -> sċæft (expected sċeaft)
   *skaiθiz -> sċǣþ (expected sċēaþ)
   *skawōjăną -> sċaweġan (expected scēawian)
   *strawą -> stræw (expected strēaw)
-  *jērą -> ġǣr (expected ġēar)
 
 breaking_missing__expected_eo (5):
   *brustz -> brust (expected brēost)
@@ -105,10 +99,8 @@ breaking_missing__expected_eo_got_e (2):
   *fedwōrez -> fedwore (expected fēower)
   *weslon -> weslon (expected weosule)
 
-breaking_missing__expected_ie (3):
-  *gebăną -> ġefan (expected giefan)
+breaking_missing__expected_ie (1):
   *xawwją -> how (expected hīeġ)
-  *skerăną -> sċeran (expected sċieran)
 
 long_vowel_missing (4):
   *nadrō -> næder (expected nǣdre)
@@ -153,10 +145,11 @@ length_extra_other (2):
 front_expected_back_out (1):
   *speru -> sporo (expected spere)
 
-breaking_extra_other (23):
+breaking_extra_other (24):
   *barwōn -> bearwon (expected bēr)
   *felθuz -> feolþ (expected feld)
   *leusăną -> lēosan (expected forloren)
+  *geftiz -> ġieft (expected ġift)
   *xazwăz -> hearw (expected hǣr)
   *xarbistuz -> hierfest (expected hærfest)
   *xelpăną -> heolpan (expected help)
@@ -228,17 +221,19 @@ palatal_extra__j_triggered (7):
   *sundrōjăną -> sundreġan (expected sundor-)
   *θrejez -> þriġe (expected þrī)
 
-palatal_extra__orth_normalization (3):
+palatal_extra__orth_normalization (4):
   *brekăną -> breċan (expected brecan)
   *kalbăz -> ċealf (expected cealf)
+  *gebăną -> ġiefan (expected giefan)
   *θaką -> þæċ (expected þæc)
 
 palatal_extra__other (1):
   *rukkiz -> rycċ (expected rocc)
 
-palatal_extra__velar_before_front (3):
+palatal_extra__velar_before_front (4):
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġinnan (expected beginnan)
+  *gastiz -> ġiest (expected appear)
   *lakăną -> læċan (expected hlæhhan)
 
 back_expected_front_out__AFB_like (3):
@@ -270,7 +265,7 @@ final_vowel_missing__morph_form_mismatch (27):
   *natilōn -> netolon (expected netle)
   *marōn -> mæron (expected mære)
   *uxsōn -> ohson (expected oxa)
-  *skēpą -> sċǣp (expected persona)
+  *skēpą -> sċēap (expected persona)
   *sīdōn -> sīdon (expected sīde)
   *spurăn -> sporan (expected spora)
   *stelljăną -> stiellan (expected stille)
