@@ -125,7 +125,10 @@ define pgrmOnsetCore [
     s:{*s} t:{*t} |
     s:{*s} k:{*k} r:{*r} |
     s:{*s} p:{*p} r:{*r} |
-    s:{*s} t:{*t} r:{*r}
+    s:{*s} t:{*t} r:{*r} |
+    s:{*s} m:{*m} |
+    s:{*s} n:{*n} |
+    x:{*x} n:{*n}
 ];
 
 define pgrmOnset [0 | pgrmOnsetCore];
@@ -303,12 +306,16 @@ define pgrmWeakTailVowel [
     a:{*a} s:{*s} |
     ă:{*ă} z:{*z} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
+    e:{*e} n:{*n} ă:{*ă} z:{*z} |
     e:{*e} r:{*r} |
     e:{*e} r:{*r} a:{*a} z:{*z} |
+    e:{*e} r:{*r} ă:{*ă} z:{*z} |
     e:{*e} z:{*z} |
     i:{*i} l:{*l} a:{*a} z:{*z} |
+    i:{*i} l:{*l} ă:{*ă} z:{*z} |
     i:{*i} l:{*l} ō:{*ō} |
     i:{*i} l:{*l} ō:{*ō} n:{*n} |
+    i:{*i} n:{*n} ă:{*ă} z:{*z} |
     i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
     i:{*i} z:{*z} |
     o:{*o} |
@@ -316,6 +323,7 @@ define pgrmWeakTailVowel [
     u:{*u} |
     u:{*u} d:{*d} ą:{*ą} |
     u:{*u} k:{*k} a:{*a} z:{*z} |
+    u:{*u} k:{*k} ă:{*ă} z:{*z} |
     u:{*u} k:{*k} z:{*z} |
     u:{*u} n:{*n} |
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
@@ -600,8 +608,11 @@ define OldEnglishSurfaceSyllable (OldEnglishSurfaceStress | 0)
     OldEnglishSurfaceOnset OldEnglishSurfaceVowel OldEnglishSurfaceCoda;
 define OldEnglishSurface OldEnglishSurfaceSyllable+;
 
+define OEXsMerge [
+    {*x} {*s} -> {XS}
+];
+
 define OldEnglishOrthography [
-    {*x} {*s} -> x,
     {*θ} -> þ,
     {*þ} -> þ,
     {*ð} -> ð,
@@ -680,6 +691,7 @@ define OldEnglishRemoveStars [
     {*v} -> v,
     {*w} -> w,
     {*x} -> x,
+    {XS} -> x,
     {*z} -> z,
     {*ð} -> ð,
     {*θ} -> þ,
@@ -1683,6 +1695,7 @@ define OldEnglishAfterEpenthesis OldEnglishCore
 
 define OldEnglishRules OldEnglishAfterEpenthesis
     .o. OECjCleanup
+    .o. OEXsMerge
     .o. OldEnglishOrthography
     .o. OldEnglishRemoveStars;
 
