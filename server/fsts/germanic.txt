@@ -301,6 +301,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} n:{*n} |
     ă:{*ă} n:{*n} ą:{*ą} |
     ă:{*ă} n:{*n} ē:{*ē} |
+    j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
     a:{*a} r:{*r} a:{*a} s:{*s} |
     a:{*a} s:{*s} |
@@ -318,6 +319,7 @@ define pgrmWeakTailVowel [
     i:{*i} n:{*n} ă:{*ă} z:{*z} |
     i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
     i:{*i} z:{*z} |
+    i:{*i} j:{*j} ă:{*ă} z:{*z} |
     o:{*o} |
     o:{*o} n:{*n} |
     u:{*u} |
@@ -616,7 +618,6 @@ define OldEnglishOrthography [
     {*θ} -> þ,
     {*þ} -> þ,
     {*ð} -> ð,
-    {*ʃ} -> {sċ},
     {*ʧ} -> ċ,
     {*ʤ} -> ġ,
     {*ç} -> h,
@@ -652,6 +653,7 @@ define OldEnglishRemoveStars [
     {*ēo} -> ēo,
     {*ie} -> ie,
     {*īe} -> īe,
+    {*ʃ} -> s ċ,
     {*a} -> a,
     {*ā} -> ā,
     {*ă} -> a,
@@ -827,11 +829,11 @@ define OEJClusterCoalescence (
     .o. [{*k} {*j} -> {*ʧ}]
 );
 
-define EnglishEarlyPalatalisation (
+define EnglishEarlyPalatalisation [
     [{*s} {*k} -> {*ʃ} || _ EnglishStarFrontVowel]
     .o. [{*k} -> {*ʧ} || _ EnglishStarFrontVowel]
     .o. [{*g} -> {*ʤ} || _ EnglishStarFrontVowel]
-);
+];
 
 define EnglishPalatalisation EnglishEarlyPalatalisation;
 
@@ -1446,11 +1448,14 @@ define OENasalSpirantLoss [
 ];
 
 define OESkPalatalization [
-    {*s} {*k} -> {*ʃ} || .#. _,
-    {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.),
+    {*s} {*k} -> {*ʃ} || .#. _
+] .o. [
+    {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.)
+] .o. [
     {*s} {*k} -> {*ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel
-    ,
-    {*s} {*k} -> {*ʃ} || _ {*j},
+] .o. [
+    {*s} {*k} -> {*ʃ} || _ {*j}
+] .o. [
     {*s} {*k} -> {*ʃ} || {*j} _
 ];
 

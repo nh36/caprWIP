@@ -37,7 +37,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1852	b iː b ə r	*bebruz	b iː b ə r ( - - )	biːbər	Biber	508	German				beaver	*bebruz	9
 1865	b øː k ə b oː m	*bōkō	b øː k ( ə b oː m )	bøːkəboːm	beukeboom	511	Dutch				beech	*bōkō	10
 1864	b iː ʧ	*bōkō	b iː ʧ ( - - - - )	biːʧ	beech	511	English				beech	*bōkō	10
-1942	b ē ċ e	*bōkō	b iː ʧ ( - - - - )	biːʧ	bēċe	511	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			beech	*bōkō	10
+1942	b ō c	*bōkō	b iː ʧ ( - - - - )	biːʧ	bōc	511	Old_English	Kroonen *bōk(j)ō- f. > OE bōc (nom.sg.); bēċe is oblique form			beech	*bōkō	10
 1863	b uː x ə	*bōkō	b uː x ( ə - - - )	buːxə	Buche	511	German				beech	*bōkō	10
 1154	b ə ɣ ɪ n ə	*biginnăną	( b ə ) ɣ ɪ n ə - ( - - )	bəɣɪnə	beginnen	316	Dutch				begin	*biginnăną	11
 1153	b ɪ ɡ ɪ n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	begin	316	English				begin	*biginnăną	11
@@ -65,7 +65,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1451	b ɪ t ə n	*bidjăną	b ɪ t - ə n ( - - )	bɪtən	bitten	397	German				bid	*bidjăną	15
 472	b aː r	*barwōn	b aː r ( - - - )	baːr	baar	129	Dutch				bier	*barwōn	16
 471	b ɪə	*barwōn	b ɪə r ( - - - )	bɪə	bier	129	English				bier	*barwōn	16
-1949	b ē r	*barwōn	b ɪə r ( - - - )	bɪə	bēr	129	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bier	*barwōn	16
+1949	b ǣ r	*bērō	b ɪə r ( - - - )	bɪə	bǣr	129	Old_English	Wiktionary: PGmc *bērō > OE bēr/bǣr (bier); *barwōn is wrong lexeme			bier	*bērō	16
 470	b aː r ə	*barwōn	b aː r ( - ə - )	baːrə	Bahre	129	German		C V C		bier	*barwōn	16
 584	b ɪ n d ə	*bindăną	b ɪ n d ə - ( - - )	bɪndə	binden	160	Dutch				bind	*bindăną	17
 583	b aɪ n d	*bindăną	b aɪ n d - - ( - - )	baɪnd	bind	160	English				bind	*bindăną	17
@@ -73,7 +73,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 582	b ɪ n d ə n	*bindăną	b ɪ n d ə n ( - - )	bɪndən	binden	160	German				bind	*bindăną	17
 390	x ə b oː r t ə	*burdiz	( x ə ) b oː r t ( ə - )	xəboːrtə	geboorte	107	Dutch				birth	*burdiz	18
 389	b ɜː θ	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	birth	107	English				birth	*burdiz	18
-1951	s ự	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	ġebyrd	107	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			birth	*burdiz	18
+1951	b y r d	*burdiz	( - - ) b ɜː - θ ( - - )	bɜːθ	byrd	107	Old_English	Kroonen *burdi- f. > OE (ġe)byrd; using simplex without ge-			birth	*burdiz	18
 388	ɡ ə b uː r t	*burdiz	( ɡ ə ) b uː r t ( - - )	ɡəbuːrt	Geburt	107	German				birth	*burdiz	18
 856	b l uː t	*blōdą	b l uː t ( - - )	bluːt	bloed	235	Dutch				blood	*blōdą	19
 855	b l ʌ d	*blōdą	b l ʌ d ( - - )	blʌd	blood	235	English				blood	*blōdą	19
@@ -216,7 +216,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1083	t ai l	*dailiz	t ai l ( - - )	tail	Teil	297	German				deal	*dailiz	50
 580	d aː t	*dēdiz	d aː t ( - - )	daːt	daad	159	Dutch				deed	*dēdiz	51
 579	d iː d	*dēdiz	d iː d ( - - )	diːd	deed	159	English				deed	*dēdiz	51
-1987	d ē d	*dēdiz	d iː d ( - - )	diːd	dēd	159	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			deed	*dēdiz	51
+1987	d ǣ d	*dēdiz	d iː d ( - - )	diːd	dǣd	159	Old_English	R/T vol.2 13823: PGmc *dēdiz > WS OE dǣd (not Anglian dēd)			deed	*dēdiz	51
 578	t aː t	*dēdiz	t aː t ( - - )	taːt	Tat	159	German				deed	*dēdiz	51
 409	d iː r	*deuzą	d iː r ( - - )	diːr	dier	112	Dutch				deer	*deuzą	52
 408	d ɪə	*deuzą	d ɪə r ( - - )	dɪə	deer	112	English				deer	*deuzą	52
@@ -295,7 +295,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 116	v iː	*fexu	v iː ( - - )	viː	Vieh	33	German				fee	*fexu	69
 1801	v ɛ l	*fellą	v ɛ l ( - - )	vɛl	vel	493	Dutch				fell	*fellą	70
 1800	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	fell	493	English				fell	*fellą	70
-2007	f e l l a n	*fellą	f ɛ l ( - - )	fɛl	fellan	493	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fell	*fellą	70
+2007	f e l l	*fellą	f ɛ l ( - - )	fɛl	fell	493	Old_English	Kroonen *fella- n. 'skin/hide' > OE fell; cf. Dutch vel, German Fell			fell	*fellą	70
 1799	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	Fell	493	German				fell	*fellą	70
 464	v aː r ə	*farnăn	v aː r - ( ə - )	vaːrə	varen	127	Dutch				fern	*farnăn	71
 463	f ɜː n	*farnăn	f ɜː - n ( - - )	fɜːn	fern	127	English				fern	*farnăn	71
@@ -354,7 +354,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1410	f l uː t	*flōduz	f l uː t ( - - )	fluːt	Flut	386	German				flood	*flōduz	83
 1110	v l iː ɣ ə	*fleugăną	v l iː ɣ ə - ( - - )	vliːɣə	vliegen	304	Dutch				fly	*fleugăną	84
 1109	f l aɪ	*fleugăną	f l aɪ - - - ( - - )	flaɪ	fly	304	English				fly	*fleugăną	84
-2022	f l ȳ ġ e	*fleugăną	f l aɪ - - - ( - - )	flaɪ	flȳġe	304	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fly	*fleugăną	84
+2022	f l ē o g a n	*fleugăną	f l aɪ - - - ( - - )	flaɪ	flēogan	304	Old_English	R/T 10088: PGmc *fleugaṇ > OE flēogan; flȳġe is derived form			fly	*fleugăną	84
 1108	f l iː ɡ ə n	*fleugăną	f l iː ɡ ə n ( - - )	fliːɡən	fliegen	304	German				fly	*fleugăną	84
 1449	f əʊ l	*fulōn	f əʊ l ( - - )	fəʊl	foal	396	English				foal	*fulōn	337
 2023	f o l a	*fulōn	f əʊ l ( - - )	fəʊl	fola	396	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			foal	*fulōn	337
@@ -416,7 +416,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 746	ɡ a l ə	*gallą	ɡ a l ə ( - )	ɡalə	Galle	205	German				gall	*gallą	97
 201	x ɑ ŋ	*gangăz	x ɑ ŋ - ( - - )	xɑŋ	gang	56	Dutch				gang	*gangăz	98
 200	ɡ æ ŋ	*gangăz	ɡ æ ŋ - ( - - )	ɡæŋ	gang	56	English				gang	*gangăz	98
-2038	g a n g a n	*gangăz	ɡ æ ŋ - ( - - )	ɡæŋ	gangan	56	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			gang	*gangăz	98
+2038	g a n g	*gangăz	ɡ æ ŋ - ( - - )	ɡæŋ	gang	56	Old_English	PGmc *gangaz is a-stem noun > OE gang; cf. Dutch gang, German Gang			gang	*gangăz	98
 199	ɡ a ŋ	*gangăz	ɡ a ŋ - ( - - )	ɡaŋ	Gang	56	German				gang	*gangăz	98
 18	ɡ əʊ s t	*gaistăz	ɡ əʊ s t ( - - )	ɡəʊst	ghost	5	English				ghost	*gaistăz	339
 2039	g ā s t	*gaistăz	ɡ əʊ s t ( - - )	ɡəʊst	gāst	5	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ghost	*gaistăz	339
@@ -459,7 +459,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 98	ɡ r ʊ n t	*grunduz	ɡ r ʊ n d ( - - )	ɡrʊnt	Grund	28	German				ground	*grunduz	107
 1616	x ɑ s t	*gastiz	x ɑ s t ( - - )	xɑst	gast	443	Dutch				guest	*gastiz	108
 1615	ɡ ɛ s t	*gastiz	ɡ ɛ s t ( - - )	ɡɛst	guest	443	English				guest	*gastiz	108
-2049	a p p e a r	*gastiz	ɡ ɛ s t ( - - )	ɡɛst	appear	443	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			guest	*gastiz	108
+2049	ġ i e s t	*gastiz	ɡ ɛ s t ( - - )	ɡɛst	ġiest	443	Old_English	R/T vol.2 3857: PGmc *gastiz > WS OE giest			guest	*gastiz	108
 1614	ɡ a s t	*gastiz	ɡ a s t ( - - )	ɡast	Gast	443	German				guest	*gastiz	108
 1005	h aː ɣ ə l	*xaglą	h aː ɣ ə l ( - - )	haːɣəl	hagel	275	Dutch				hail	*xaglą	109
 1004	h eɪ l	*xaglą	h eɪ - - l ( - - )	heɪl	hail	275	English				hail	*xaglą	109
@@ -467,7 +467,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1003	h aː ɡ ə l	*xaglą	h aː ɡ ə l ( - - )	haːɡəl	Hagel	275	German				hail	*xaglą	109
 1344	h aː r	*xazwăz	h aː r ( - - - )	haːr	haar	368	Dutch				hair	*xazwăz	110
 1343	h ɛə	*xazwăz	h ɛə r ( - - - )	hɛə	hair	368	English				hair	*xazwăz	110
-2051	h ǣ r	*xazwăz	h ɛə r ( - - - )	hæːr	hǣr	368	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hair	*xazwăz	110
+2051	h ǣ r	*xērą	h ɛə r ( - - - )	hæːr	hǣr	368	Old_English	Wiktionary: PGmc *hērą > OE hǣr; *xazwăz 'grey' is wrong lexeme			hair	*xērą	110
 1342	h aː r	*xazwăz	h aː r ( - - - )	haːr	Haar	368	German				hair	*xazwăz	110
 1783	h ɑ l	*xallō	h ɑ l -	hɑl	hal	488	Dutch				hall	*xallō	111
 1782	h ɔː l	*xallō	h ɔː l -	hɔːl	hall	488	English				hall	*xallō	111
@@ -567,7 +567,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 596	h ɔ r t	*xuzdą	h ɔ r t ( - - )	hɔrt	Hort	164	German				hoard	*xuzdą	343
 1251	h ɑu d ə	*xaldăną	h ɑu - d ə - ( - - )	hɑudə	houden	343	Dutch				hold	*xaldăną	131
 1250	h əʊ l d	*xaldăną	h əʊ l d - - ( - - )	həʊld	hold	343	English				hold	*xaldăną	131
-2077	h o l d	*xaldăną	h əʊ l d - - ( - - )	həʊld	hold	343	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			hold	*xaldăną	131
+2077	h e a l d a n	*xaldăną	h əʊ l d - - ( - - )	həʊld	healdan	343	Old_English	R/T vol.2 10729: PGmc *haldaną > WS OE healdan (with breaking)			hold	*xaldăną	131
 1249	h a l t ə n	*xaldăną	h a l t ə n ( - - )	haltən	halten	343	German				hold	*xaldăną	131
 12	h eː m	*xaimăz	h eː m ( - - )	heːm	heem	532	Dutch				home	*xaimăz	132
 11	h əʊ m	*xaimăz	h əʊ m ( - - )	həʊm	home	532	English				home	*xaimăz	132
@@ -610,7 +610,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 537	k n ɔ pf	*knuppăz	k n ɔ pf ( - - )	knɔp͡f	Knopf	147	German				knob	*knuppăz	140
 405	l aː d ə	*laθōjăną	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjăną	141
 404	l eɪ d	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjăną	141
-2088	h l a d a n	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lade	*laθōjăną	141
+2088	h l a d a n	*xlaθăną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaþaną > OE hladan			lade	*xlaθăną	141
 403	l aː d ə n	*laθōjăną	l aː d ( - ) - ə n ( - - )	laːdən	laden	111	German				lade	*laθōjăną	141
 1355	l ɑ n t	*landą	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landą	142
 1354	l æ n d	*landą	l æ n d ( - - )	lænd	land	371	English				land	*landą	142
@@ -625,11 +625,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 534	l ai s t ə n	*laistjăną	l ai s t - ə n ( - - )	laistən	leisten	146	German				last	*laistjăną	345
 1063	l ɑ x ə	*lakăną	l ɑ x ə - ( - - )	lɑxə	lachen	291	Dutch				laugh	*lakăną	144
 1062	l ɑː f	*lakăną	l ɑː f - - ( - - )	lɑːf	laugh	291	English				laugh	*lakăną	144
-2092	h l æ h h a n	*lakăną	l ɑː f - - ( - - )	lɑːf	hlæhhan	291	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			laugh	*lakăną	144
+2092	h l æ h h a n	*xlaxjăną	l ɑː f - - ( - - )	lɑːf	hlæhhan	291	Old_English	R/T: PGmc *hlahjanan > OE hlæhhan/hliehhan			laugh	*xlaxjăną	144
 1061	l a x ə n	*lakăną	l a x ə n ( - - )	laxən	lachen	291	German				laugh	*lakăną	144
 1746	l ɛɪ d ə	*laidjăną	l ɛɪ d - ə - ( - - )	lɛɪdə	leiden	478	Dutch				lead	*laidjăną	145
 1745	l iː d	*laidjăną	l iː d - - - ( - - )	liːd	lead	478	English				lead	*laidjăną	145
-2093	l ē a d	*laidjăną	l iː d - - - ( - - )	liːd	lēad	478	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lead	*laidjăną	145
+2093	l ǣ d a n	*laidjăną	l iː d - - - ( - - )	liːd	lǣdan	478	Old_English	R/T vol.2 13527-29: PGmc *laidijaną > OE lǣdan (to lead)			lead	*laidjăną	145
 1744	l ai t ə n	*laidjăną	l ai t - ə n ( - - )	laitən	leiten	478	German				lead	*laidjăną	145
 664	l oː f	*laubą	l oː f ( - - )	loːf	loof	182	Dutch				leaf	*laubą	146
 663	l iː f	*laubą	l iː f ( - - )	liːf	leaf	182	English				leaf	*laubą	146
@@ -812,7 +812,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 572	n ɛ s ə l	*natilōn	n ɛ s ə l ( - - )	nɛsəl	Nessel	157	German				nettle	*natilōn	349
 1541	n ɑ x t	*naxtz	n ɑ x t ( - )	nɑxt	nacht	422	Dutch				night	*naxtz	187
 1540	n aɪ t	*naxtz	n aɪ - t ( - )	naɪt	night	422	English				night	*naxtz	187
-2140	n i h t	*naxtz	n aɪ - t ( - )	niçt	niht	422	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			night	*naxtz	187
+2140	n i h t	*naxti	n aɪ - t ( - )	niçt	niht	422	Old_English	R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht			night	*naxti	187
 1539	n a x t	*naxtz	n a x t ( - )	naxt	Nacht	422	German				night	*naxtz	187
 130	n ɑ x t m ɛ r iː	*marōn	( n ɑ x t ) m ɛ r ( iː - )	nɑxtmɛriː	nachtmerrie	36	Dutch				nightmare	*marōn	188
 129	n aɪ t m ɛə	*marōn	( n aɪ - t ) m ɛə r ( - - )	naɪtmɛə	nightmare	36	English				nightmare	*marōn	188
@@ -963,7 +963,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1115	ʃ ai d ə	*skaiθiz	ʃ - ai d ə ( - )	ʃaidə	Scheide	306	German				sheath	*skaiθiz	220
 1371	s x aː p	*skēpą	s x aː p ( - - )	sxaːp	schaap	375	Dutch				sheep	*skēpą	221
 1370	ʃ iː p	*skēpą	ʃ - iː p ( - - )	ʃiːp	sheep	375	English				sheep	*skēpą	221
-2179	p e r s o n a	*skēpą	ʃ - iː p ( - - )	ʃiːp	persona	375	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			sheep	*skēpą	221
+2179	s ċ ē a p	*skēpą	ʃ - iː p ( - - )	ʃiːp	sċēap	375	Old_English	R/T vol.2 12522: PWGmc *skap > OE scéap (WS)			sheep	*skēpą	221
 1369	ʃ aː f	*skēpą	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German				sheep	*skēpą	221
 310	s x ɪ l t	*skelduz	s x ɪ l t ( - - )	sxɪlt	schild	86	Dutch				shield	*skelduz	222
 309	ʃ iː l d	*skelduz	ʃ - iː l d ( - - )	ʃiːld	shield	86	English				shield	*skelduz	222
@@ -1063,7 +1063,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1230	ʃ p a r ə n	*sparrōn	ʃ p a r ə n	ʃparən	Sparren	338	German				spar	*sparrōn	242
 835	s p aː r ə	*sparēną	s p aː r ə - ( - - )	spaːrə	sparen	229	Dutch				spare	*sparēną	243
 834	s p ɛə	*sparēną	s p ɛə r - - ( - - )	spɛə	spare	229	English				spare	*sparēną	243
-2205	s p æ r	*sparēną	s p ɛə r - - ( - - )	spɛə	spær	229	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spare	*sparēną	243
+2205	s p a r i a n	*sparēną	s p ɛə r - - ( - - )	spɛə	sparian	229	Old_English	R/T: PGmc *sparēną > OE sparian (to spare); not adj spær			spare	*sparēną	243
 833	ʃ p aː r ə n	*sparēną	ʃ p aː r ə n ( - - )	ʃpaːrən	sparen	229	German				spare	*sparēną	243
 367	s p eː r	*speru	s p eː r ( - )	speːr	speer	101	Dutch				spear	*speru	244
 366	s p ɪə	*speru	s p ɪə r ( - )	spɪə	spear	101	English				spear	*speru	244
@@ -1417,7 +1417,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 275	v ɪ n t ə r	*wintruz	v ɪ n t ə r ( - - )	vɪntər	Winter	76	German				winter	*wintruz	320
 1272	ʋ ɛɪ d ə	*waiθiz	ʋ ɛɪ d ( ə - )	ʋɛɪdə	weide	349	Dutch				withy	*waiθiz	321
 1271	ʋ ɪ ð ɪ	*waiθiz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	withy	349	English				withy	*waiθiz	321
-2296	w ī þ i ġ	*waiθiz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	wīþiġ	349	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			withy	*waiθiz	321
+2296	w ī þ i ġ	*wīθijăz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	wīþiġ	349	Old_English	Wiktionary: PGmc *wīþijaz > OE wīþiġ; *waiþiz is wrong lexeme (catch/hunt)			withy	*wīθijăz	321
 1270	v ai d ə	*waiθiz	v ai d ( ə - )	vaidə	Weide	349	German				withy	*waiθiz	321
 704	ʋ ɑu t	*walθuz	ʋ ɑu - t ( - - )	ʋɑut	woud	193	Dutch				wold	*walθuz	322
 703	ʋ əʊ l d	*walθuz	ʋ əʊ l d ( - - )	ʋəʊld	wold	193	English				wold	*walθuz	322
