@@ -1,4 +1,4 @@
-Total mismatches: 195
+Total mismatches: 194
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -13,7 +13,7 @@ Total mismatches: 195
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
   length_extra_other: 2
-  breaking_extra_other: 17
+  breaking_extra_other: 16
   palatal_marker_variant: 1
   epenthetic_vowel_missing: 1
   vowel_quality_other: 25
@@ -120,10 +120,9 @@ length_extra_other (2):
   *dōną -> dōn (expected don)
   *finþăną -> fīþan (expected findan)
 
-breaking_extra_other (17):
+breaking_extra_other (16):
   *leusăną -> lēosan (expected forloren)
   *geftiz -> ġieft (expected ġift)
-  *xarbistuz -> hierfest (expected hærfest)
   *xlaxjăną -> hliehġan (expected hlæhhan)
   *libēną -> leofon (expected lifian)
   *newun -> nēowon (expected nigon)
