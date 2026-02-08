@@ -63,7 +63,9 @@ define OESandboxAfterWeakTailReduction OESandboxAfterHeavySyllableNasalApocope
     .o. OEWeakTailReduction;
 define OESandboxAfterJLossAfterHeavy OESandboxAfterWeakTailReduction
     .o. OEJLossAfterHeavy;
-define OESandboxAfterWeightCleanup OESandboxAfterJLossAfterHeavy
+define OESandboxAfterIntervocalicJVocalization OESandboxAfterJLossAfterHeavy
+    .o. OEIntervocalicJVocalization;
+define OESandboxAfterWeightCleanup OESandboxAfterIntervocalicJVocalization
     .o. OEWeightCleanup;
 define OESandboxAfterHLoss OESandboxAfterWeightCleanup
     .o. OEHLoss;
@@ -218,6 +220,10 @@ save stack old_english_sandbox_after_weak_tail_reduction.bin
 clear stack
 regex OESandboxAfterJLossAfterHeavy;
 save stack old_english_sandbox_after_j_loss_after_heavy.bin
+
+clear stack
+regex OESandboxAfterIntervocalicJVocalization;
+save stack old_english_sandbox_after_intervocalic_j_vocalization.bin
 
 clear stack
 regex OESandboxAfterWeightCleanup;
