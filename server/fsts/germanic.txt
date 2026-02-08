@@ -380,7 +380,8 @@ define PGmcStarVowel [
     {*ɛ} |
     {*ɜ} |
     {*ʉ} |
-    {*ʊ}
+    {*ʊ} |
+    {*ǣ}
 ];
 
 define PGmcStarDiphthong [
@@ -439,7 +440,8 @@ define PGmcStarFrontVowel [
     {*ī} |
     {*œ} |
     {*ɛ} |
-    {*ʉ}
+    {*ʉ} |
+    {*ǣ}
 ];
 
 define PGmcStarBackVowel [
@@ -1288,6 +1290,15 @@ define NWGmcFinalLongORaising [
     {*ō} -> {*u} || _ .#.
 ];
 
+# R/T vol.2 §5.1.2: PGmc *ē₁ → OE ǣ. Historically *ē₁ lowered to *ā in NWGmc,
+# then *ā was fronted to *ǣ by AFB. We model this as a direct *ē → *ǣ to avoid
+# conflating with *ā < *ai monophthongization (which was NOT fronted; R/T §6.1.2:
+# "fronting of *ā must have preceded monophthongization of *ai").
+# Before nasals, *ē₁ → *ā → nasalized/rounded *ō; we block before nasals here.
+define NWGmcLongELowering [
+    {*ē} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal]
+];
+
 define OEWeakTailNasalLoss [
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
@@ -1505,6 +1516,7 @@ define EnglishProtoToOE (
     PWGmcChanges
     .o. NWGmcULowering
     .o. NWGmcFinalLongORaising
+    .o. NWGmcLongELowering
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -1577,6 +1589,7 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
     .o. NWGmcFinalLongORaising
+    .o. NWGmcLongELowering
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
