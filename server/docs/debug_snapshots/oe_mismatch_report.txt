@@ -1,47 +1,47 @@
-Total mismatches: 255
+Total mismatches: 245
 
 i_umlaut_missing_true: 4
 proto_mismatch_suspect: 0
 fronting_missing_no_trigger: 3
 breaking_missing: 19
 no_output: 13
-long_vowel_missing: 1
-palatalization_missing: 8
-final_vowel_extra: 18
-length_extra_other: 17
-front_expected_back_out: 0
-final_vowel_missing: 37
-breaking_extra_other: 22
-final_n_missing: 10
+long_vowel_missing: 4
+palatalization_missing: 7
+final_vowel_extra: 6
+length_extra_other: 2
+front_expected_back_out: 1
+final_vowel_missing: 38
+breaking_extra_other: 23
+final_n_missing: 9
 palatal_extra_other: 18
-back_expected_front_out: 6
-palatal_marker_variant: 0
+back_expected_front_out: 10
+palatal_marker_variant: 1
 epenthetic_vowel_missing: 0
-vowel_quality_other: 27
-gemination_extra: 0
-inflectional_suffix_extra: 15
+vowel_quality_other: 29
+gemination_extra: 1
+inflectional_suffix_extra: 18
 final_devoicing_missing: 1
-intervocalic_voicing_missing: 5
+intervocalic_voicing_missing: 8
 prefix_morphology_issue: 1
-consonant_mismatch_other: 27
-uncategorized: 3
+consonant_mismatch_other: 25
+uncategorized: 4
 
 Examples:
 i_umlaut_missing_true:
   *flaiskăz -> flāsc (expected flǣsċ)
   *sai -> sā (expected sǣ)
   *strawjăną -> strowan (expected strewian)
-  *wainōjăną -> wānēġan (expected hwīnan)
+  *wainōjăną -> wāneġan (expected hwīnan)
 proto_mismatch_suspect:
 fronting_missing_no_trigger:
-  *rastō -> rastō (expected ræst)
-  *sapōn -> sapōn (expected sæp)
-  *tappōn -> tappōn (expected tæppa)
+  *rastō -> rast (expected ræst)
+  *sapōn -> sapon (expected sæp)
+  *tappōn -> tappon (expected tæppa)
 breaking_missing:
   *brustz -> brust (expected brēost)
-  *dawwō -> dawō (expected dēaw)
-  *fedwōrez -> fedwōre (expected fēower)
-  *frijōndz -> friġōnd (expected frēond)
+  *dawwō -> dawo (expected dēaw)
+  *fedwōrez -> fedwore (expected fēower)
+  *frijōndz -> friġond (expected frēond)
   *gebăną -> ġeban (expected giefan)
 no_output:
   *funxwstiz -> +? (expected fȳst)
@@ -50,71 +50,74 @@ no_output:
   *xnakkăz -> +? (expected hnecca)
   *regna-bugōn -> +? (expected reġnboga)
 long_vowel_missing:
-  *texun -> teoun (expected tīen)
+  *nadrō -> næder (expected nǣdre)
+  *bō -> bo (expected bā]] [[þā)
+  *mizdō -> mierd (expected mēd)
+  *texun -> teoon (expected tīen)
 palatalization_missing:
-  *bōkō -> bōcō (expected bēċe)
-  *bazją -> ber (expected berġe)
+  *bōkō -> bōc (expected bēċe)
   *burdiz -> byrd (expected ġebyrd)
   *dranką -> drænc (expected drenċ)
   *fleugăną -> flēogan (expected flȳġe)
+  *xunăgą -> honag (expected huniġ)
 final_vowel_extra:
-  *xallō -> heallō (expected heall)
-  *xelpō -> heolpō (expected help)
-  *xerdō -> heordō (expected hierd)
-  *librō -> librō (expected lifer)
-  *laugō -> lēagō (expected lēah)
+  *liθuz -> liþo (expected hlid)
+  *natją -> nete (expected net)
+  *saiwălō -> sāwalo (expected sāwol)
+  *stabiz -> stebe (expected stæf)
+  *westănē -> westane (expected west)
 length_extra_other:
   *dōną -> dōn (expected don)
-  *fastēną -> fæstēn (expected fæst)
-  *fadēr -> fædēr (expected fæder)
   *finþăną -> fīþan (expected findan)
-  *flaskō -> flascō (expected flasce)
 front_expected_back_out:
+  *speru -> sporo (expected spere)
 final_vowel_missing:
   *baugjăną -> bīeġan (expected boga)
   *beugăną -> bēogan (expected boga)
-  *bugōn -> bogōn (expected boga)
+  *bugōn -> bogon (expected boga)
   *kōwz -> cōw (expected cū)
-  *kwiθuz -> cwiþ (expected cudu)
+  *deljăz -> diel (expected dile)
 breaking_extra_other:
-  *barwōn -> bearwōn (expected bēr)
+  *barwōn -> bearwon (expected bēr)
   *felθuz -> feolþ (expected feld)
   *leusăną -> lēosan (expected forloren)
   *xazwăz -> hearw (expected hǣr)
-  *xarbistuz -> hierbist (expected hærfest)
+  *xarbistuz -> hierbest (expected hærfest)
 final_n_missing:
   *fellą -> feoll (expected fellan)
   *gangăz -> ġæng (expected gangan)
-  *xendjō -> hindō (expected hindan)
-  *lindō -> lindō (expected linden)
+  *xendjō -> hind (expected hindan)
+  *lindō -> lind (expected linden)
   *lungwą -> longw (expected lungen)
 palatal_extra_other:
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġinnan (expected beginnan)
-  *burōjăną -> borēġan (expected borian)
+  *burōjăną -> boreġan (expected borian)
   *brekăną -> breċan (expected brecan)
   *kalbăz -> ċealb (expected cealf)
 back_expected_front_out:
   *banną -> bænn (expected bannan)
+  *kwiθuz -> cwiþo (expected cudu)
+  *xabēną -> hæben (expected habban)
   *landą -> lænd (expected land)
-  *spannăną -> spænnan (expected spann)
-  *θankăz -> þænc (expected þancas)
-  *wadăną -> wædan (expected wadan)
+  *marīn -> meren (expected mann)
 palatal_marker_variant:
+  *skūflō -> sċūfl (expected scofl)
 epenthetic_vowel_missing:
 vowel_quality_other:
-  *nadrō -> nædrō (expected nǣdre)
-  *brandas -> brandæs (expected brandes)
   *bukkăz -> bocc (expected bucc)
   *kraftiz -> creft (expected cræft)
   *erθo -> eorþo (expected eorþe)
+  *ēlăz -> ēl (expected ǣl)
+  *fuglăz -> fogol (expected fugol)
 gemination_extra:
+  *spennilō -> spinnolo (expected spindle)
 inflectional_suffix_extra:
   *bainăn -> bānan (expected bān)
   *brekăną -> breċan (expected brēċ)
   *kurnăn -> cornan (expected corn)
   *farăną -> færan (expected fær)
-  *farnăn -> fearnan (expected fearn)
+  *fastēną -> fæsten (expected fæst)
 final_devoicing_missing:
   *budmăz -> bodm (expected botm)
 intervocalic_voicing_missing:
@@ -122,22 +125,23 @@ intervocalic_voicing_missing:
   *drībăną -> drīban (expected drīfan)
   *grabăną -> græban (expected græf)
   *xaubudą -> hēabod (expected hēafod)
-  *webăną -> weban (expected wefan)
+  *libēną -> liben (expected lifian)
 prefix_morphology_issue:
   *laubjăną -> līefan (expected belīefan)
 consonant_mismatch_other:
-  *bō -> bō (expected bā]] [[þā)
   *flaxsą -> fleahs (expected fleax)
   *falθăną -> fealþan (expected fealdan)
   *fuxsăz -> fohs (expected fox)
   *gulθą -> golþ (expected gold)
+  *laubą -> lēab (expected lēaf)
 uncategorized:
   *brestăną -> brestan (expected berstan)
+  *fleuxăną -> flēoan (expected flēon)
   *frustą -> frost (expected forst)
-  *melukz -> meoluc (expected meolc)
+  *melukz -> meoloc (expected meolc)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing_no_trigger ---
-*rastō -> rastō (expected ræst)
-*sapōn -> sapōn (expected sæp)
-*tappōn -> tappōn (expected tæppa)
+*rastō -> rast (expected ræst)
+*sapōn -> sapon (expected sæp)
+*tappōn -> tappon (expected tæppa)
