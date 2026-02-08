@@ -1,4 +1,4 @@
-Total mismatches: 242
+Total mismatches: 230
 
 i_umlaut_missing_true: 4
 proto_mismatch_suspect: 0
@@ -16,14 +16,14 @@ final_n_missing: 9
 palatal_extra_other: 18
 back_expected_front_out: 10
 palatal_marker_variant: 1
-epenthetic_vowel_missing: 0
-vowel_quality_other: 26
+epenthetic_vowel_missing: 1
+vowel_quality_other: 27
 gemination_extra: 1
-inflectional_suffix_extra: 18
+inflectional_suffix_extra: 19
 final_devoicing_missing: 1
-intervocalic_voicing_missing: 8
+intervocalic_voicing_missing: 0
 prefix_morphology_issue: 1
-consonant_mismatch_other: 25
+consonant_mismatch_other: 18
 uncategorized: 4
 
 Examples:
@@ -42,7 +42,7 @@ breaking_missing:
   *dawwō -> dawo (expected dēaw)
   *fedwōrez -> fedwore (expected fēower)
   *frijōndz -> friġond (expected frēond)
-  *gebăną -> ġeban (expected giefan)
+  *gebăną -> ġefan (expected giefan)
 no_output:
   *funxwstiz -> +? (expected fȳst)
   *xabukăz -> +? (expected hafoc)
@@ -64,7 +64,7 @@ final_vowel_extra:
   *liθuz -> liþo (expected hlid)
   *natją -> nete (expected net)
   *saiwălō -> sāwalo (expected sāwol)
-  *stabiz -> stebe (expected stæf)
+  *stabiz -> stefe (expected stæf)
   *westănē -> westane (expected west)
 length_extra_other:
   *dōną -> dōn (expected don)
@@ -82,7 +82,7 @@ breaking_extra_other:
   *felθuz -> feolþ (expected feld)
   *leusăną -> lēosan (expected forloren)
   *xazwăz -> hearw (expected hǣr)
-  *xarbistuz -> hierbest (expected hærfest)
+  *xarbistuz -> hierfest (expected hærfest)
 final_n_missing:
   *fellą -> feoll (expected fellan)
   *gangăz -> ġæng (expected gangan)
@@ -94,16 +94,17 @@ palatal_extra_other:
   *biginnăną -> biġinnan (expected beginnan)
   *burōjăną -> boreġan (expected borian)
   *brekăną -> breċan (expected brecan)
-  *kalbăz -> ċealb (expected cealf)
+  *kalbăz -> ċealf (expected cealf)
 back_expected_front_out:
   *banną -> bænn (expected bannan)
   *kwiθuz -> cwiþo (expected cudu)
-  *xabēną -> hæben (expected habban)
+  *xabēną -> hæfen (expected habban)
   *landą -> lænd (expected land)
   *marīn -> meren (expected mann)
 palatal_marker_variant:
   *skūflō -> sċūfl (expected scofl)
 epenthetic_vowel_missing:
+  *libēną -> lifen (expected lifian)
 vowel_quality_other:
   *bukkăz -> bocc (expected bucc)
   *kraftiz -> creft (expected cræft)
@@ -121,11 +122,6 @@ inflectional_suffix_extra:
 final_devoicing_missing:
   *budmăz -> bodm (expected botm)
 intervocalic_voicing_missing:
-  *bebruz -> beber (expected befer)
-  *drībăną -> drīban (expected drīfan)
-  *grabăną -> græban (expected græf)
-  *xaubudą -> hēabod (expected hēafod)
-  *libēną -> liben (expected lifian)
 prefix_morphology_issue:
   *laubjăną -> līefan (expected belīefan)
 consonant_mismatch_other:
@@ -133,7 +129,7 @@ consonant_mismatch_other:
   *falθăną -> fealþan (expected fealdan)
   *fuxsăz -> fohs (expected fox)
   *gulθą -> golþ (expected gold)
-  *laubą -> lēab (expected lēaf)
+  *laiθăz -> lāþ (expected lāð)
 uncategorized:
   *brestăną -> brestan (expected berstan)
   *fleuxăną -> flēoan (expected flēon)
