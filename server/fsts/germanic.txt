@@ -601,6 +601,7 @@ define OldEnglishSurfaceSyllable (OldEnglishSurfaceStress | 0)
 define OldEnglishSurface OldEnglishSurfaceSyllable+;
 
 define OldEnglishOrthography [
+    {*x} {*s} -> x,
     {*θ} -> þ,
     {*þ} -> þ,
     {*ð} -> ð,

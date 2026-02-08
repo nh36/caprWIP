@@ -1,4 +1,4 @@
-Total mismatches: 222
+Total mismatches: 219
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 4
@@ -41,14 +41,13 @@ Total mismatches: 222
   final_n_missing__expected_an: 6
   final_n_missing__expected_en: 2
 --- inflectional_suffix_extra sub-buckets ---
-  infl_suffix_extra__an: 17
+  infl_suffix_extra__an: 18
   infl_suffix_extra__on: 2
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
-  cons_mismatch__h_vs_x__cluster: 4
   cons_mismatch__length_diff: 2
   cons_mismatch__n_vs_r__word_final: 1
   cons_mismatch__r_vs_b__word_final: 1
@@ -161,7 +160,7 @@ breaking_extra_other (24):
   *newun -> nēowon (expected nigon)
   *raukiz -> rīeċ (expected rēc)
   *skeubăną -> sċēofan (expected sċūfan)
-  *sexs -> seohs (expected six)
+  *sexs -> seox (expected six)
   *sparrōn -> spearron (expected sperran)
   *stelăną -> steolan (expected stelan)
   *swalgwōn -> swealgwon (expected swelgan)
@@ -264,7 +263,7 @@ final_vowel_missing__morph_form_mismatch (27):
   *nablōn -> næflon (expected nafola)
   *natilōn -> netolon (expected netle)
   *marōn -> mæron (expected mære)
-  *uxsōn -> ohson (expected oxa)
+  *uxsōn -> oxon (expected oxa)
   *skēpą -> sċēap (expected persona)
   *sīdōn -> sīdon (expected sīde)
   *spurăn -> sporan (expected spora)
@@ -306,7 +305,7 @@ final_n_missing__expected_en (2):
   *lindō -> lind (expected linden)
   *lungwą -> lungw (expected lungen)
 
-infl_suffix_extra__an (17):
+infl_suffix_extra__an (18):
   *bainăn -> bānan (expected bān)
   *brekăną -> breċan (expected brēċ)
   *kurnăn -> cornan (expected corn)
@@ -321,6 +320,7 @@ infl_suffix_extra__an (17):
   *taiknăn -> tācnan (expected tācn)
   *tūnăn -> tūnan (expected tūn)
   *werpăną -> weorpan (expected wearp)
+  *waxsăną -> weaxan (expected weax)
   *wēpnăn -> wǣpnan (expected wǣpn)
   *windăną -> windan (expected wind)
   *garnăn -> ġearnan (expected ġearn)
@@ -341,12 +341,6 @@ cons_mismatch__g_vs_h__word_final (2):
 
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
-
-cons_mismatch__h_vs_x__cluster (4):
-  *flaxsą -> fleahs (expected fleax)
-  *fuxsăz -> fohs (expected fox)
-  *waxsą -> weahs (expected weax)
-  *waxsăną -> weahsan (expected weax)
 
 cons_mismatch__length_diff (2):
   *banną -> bann (expected bannan)
