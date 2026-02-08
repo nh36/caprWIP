@@ -1184,7 +1184,7 @@ define OEEwLongDiphthong [
 
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
 define AngloFrisianBrightening [
-    {*a} -> {*æ} || _ (EnglishStarConsonant - EnglishStarNasal | .#.)
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
