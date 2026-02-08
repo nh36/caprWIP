@@ -47,7 +47,9 @@ define OESandboxAfterJClusterCoalescence OESandboxAfterIUmlaut
     .o. OEJClusterCoalescence;
 define OESandboxAfterBackMutation OESandboxAfterJClusterCoalescence
     .o. OEBackMutation;
-define OESandboxAfterNasalSpirantLengthening OESandboxAfterBackMutation
+define OESandboxAfterWsPalatalUmlaut OESandboxAfterBackMutation
+    .o. OEWsPalatalUmlaut;
+define OESandboxAfterNasalSpirantLengthening OESandboxAfterWsPalatalUmlaut
     .o. OENasalSpirantLengthening;
 define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
     .o. OENasalSpirantLoss;
@@ -188,6 +190,10 @@ save stack old_english_sandbox_after_j_cluster_coalescence.bin
 clear stack
 regex OESandboxAfterBackMutation;
 save stack old_english_sandbox_after_back_mutation.bin
+
+clear stack
+regex OESandboxAfterWsPalatalUmlaut;
+save stack old_english_sandbox_after_ws_palatal_umlaut.bin
 
 clear stack
 regex OESandboxAfterNasalSpirantLengthening;

@@ -1,4 +1,4 @@
-=== BUCKET: exact_match (170) ===
+=== BUCKET: exact_match (175) ===
 
 --- barrow ---
 PROTO: *bergą
@@ -30,6 +30,7 @@ WsPalatalDiphthongization: *b*eo*r*g*ą
 IUmlaut: *b*eo*r*g*ą
 JClusterCoalescence: *b*eo*r*g*ą
 BackMutation: *b*eo*r*g*ą
+WsPalatalUmlaut: *b*eo*r*g*ą
 NasalSpirantLengthening: *b*eo*r*g*ą
 NasalSpirantLoss: *b*eo*r*g*ą
 WeakTailNasalLoss: *b*eo*r*g*ą
@@ -84,6 +85,7 @@ WsPalatalDiphthongization: *b*æ*s*t*ą
 IUmlaut: *b*æ*s*t*ą
 JClusterCoalescence: *b*æ*s*t*ą
 BackMutation: *b*æ*s*t*ą
+WsPalatalUmlaut: *b*æ*s*t*ą
 NasalSpirantLengthening: *b*æ*s*t*ą
 NasalSpirantLoss: *b*æ*s*t*ą
 WeakTailNasalLoss: *b*æ*s*t*ą
@@ -138,6 +140,7 @@ WsPalatalDiphthongization: *b*æ*θ*ą
 IUmlaut: *b*æ*θ*ą
 JClusterCoalescence: *b*æ*θ*ą
 BackMutation: *b*æ*θ*ą
+WsPalatalUmlaut: *b*æ*θ*ą
 NasalSpirantLengthening: *b*æ*θ*ą
 NasalSpirantLoss: *b*æ*θ*ą
 WeakTailNasalLoss: *b*æ*θ*ą
@@ -192,6 +195,7 @@ WsPalatalDiphthongization: *b*ea*r*d
 IUmlaut: *b*ea*r*d
 JClusterCoalescence: *b*ea*r*d
 BackMutation: *b*ea*r*d
+WsPalatalUmlaut: *b*ea*r*d
 NasalSpirantLengthening: *b*ea*r*d
 NasalSpirantLoss: *b*ea*r*d
 WeakTailNasalLoss: *b*ea*r*d
@@ -246,6 +250,7 @@ WsPalatalDiphthongization: *b*e*β*r*u
 IUmlaut: *b*e*β*r*u
 JClusterCoalescence: *b*e*β*r*u
 BackMutation: *b*e*β*r*u
+WsPalatalUmlaut: *b*e*β*r*u
 NasalSpirantLengthening: *b*e*β*r*u
 NasalSpirantLoss: *b*e*β*r*u
 WeakTailNasalLoss: *b*e*β*r*u
@@ -300,6 +305,7 @@ WsPalatalDiphthongization: *b*ō*k*u
 IUmlaut: *b*ō*k*u
 JClusterCoalescence: *b*ō*k*u
 BackMutation: *b*ō*k*u
+WsPalatalUmlaut: *b*ō*k*u
 NasalSpirantLengthening: *b*ō*k*u
 NasalSpirantLoss: *b*ō*k*u
 WeakTailNasalLoss: *b*ō*k*u
@@ -354,6 +360,7 @@ WsPalatalDiphthongization: *b*æ*l*ʤ*i
 IUmlaut: *b*e*l*ʤ*i
 JClusterCoalescence: *b*e*l*ʤ*i
 BackMutation: *b*e*l*ʤ*i
+WsPalatalUmlaut: *b*e*l*ʤ*i
 NasalSpirantLengthening: *b*e*l*ʤ*i
 NasalSpirantLoss: *b*e*l*ʤ*i
 WeakTailNasalLoss: *b*e*l*ʤ*i
@@ -408,6 +415,7 @@ WsPalatalDiphthongization: *b*æ*r*j*æ*s
 IUmlaut: *b*e*r*j*æ*s
 JClusterCoalescence: *b*e*r*j*æ*s
 BackMutation: *b*e*r*j*æ*s
+WsPalatalUmlaut: *b*e*r*j*æ*s
 NasalSpirantLengthening: *b*e*r*j*æ*s
 NasalSpirantLoss: *b*e*r*j*æ*s
 WeakTailNasalLoss: *b*e*r*j*æ*s
@@ -462,6 +470,7 @@ WsPalatalDiphthongization: *b*ǣ*r*u
 IUmlaut: *b*ǣ*r*u
 JClusterCoalescence: *b*ǣ*r*u
 BackMutation: *b*ǣ*r*u
+WsPalatalUmlaut: *b*ǣ*r*u
 NasalSpirantLengthening: *b*ǣ*r*u
 NasalSpirantLoss: *b*ǣ*r*u
 WeakTailNasalLoss: *b*ǣ*r*u
@@ -516,6 +525,7 @@ WsPalatalDiphthongization: *b*i*n*d*ă*n*ą
 IUmlaut: *b*i*n*d*ă*n*ą
 JClusterCoalescence: *b*i*n*d*ă*n*ą
 BackMutation: *b*i*n*d*ă*n*ą
+WsPalatalUmlaut: *b*i*n*d*ă*n*ą
 NasalSpirantLengthening: *b*i*n*d*ă*n*ą
 NasalSpirantLoss: *b*i*n*d*ă*n*ą
 WeakTailNasalLoss: *b*i*n*d*ă*n
@@ -570,6 +580,7 @@ WsPalatalDiphthongization: *b*u*r*d*i
 IUmlaut: *b*y*r*d*i
 JClusterCoalescence: *b*y*r*d*i
 BackMutation: *b*y*r*d*i
+WsPalatalUmlaut: *b*y*r*d*i
 NasalSpirantLengthening: *b*y*r*d*i
 NasalSpirantLoss: *b*y*r*d*i
 WeakTailNasalLoss: *b*y*r*d*i
@@ -624,6 +635,7 @@ WsPalatalDiphthongization: *b*l*ō*d*ą
 IUmlaut: *b*l*ō*d*ą
 JClusterCoalescence: *b*l*ō*d*ą
 BackMutation: *b*l*ō*d*ą
+WsPalatalUmlaut: *b*l*ō*d*ą
 NasalSpirantLengthening: *b*l*ō*d*ą
 NasalSpirantLoss: *b*l*ō*d*ą
 WeakTailNasalLoss: *b*l*ō*d*ą
@@ -678,6 +690,7 @@ WsPalatalDiphthongization: *b*o*r*d*ą
 IUmlaut: *b*o*r*d*ą
 JClusterCoalescence: *b*o*r*d*ą
 BackMutation: *b*o*r*d*ą
+WsPalatalUmlaut: *b*o*r*d*ą
 NasalSpirantLengthening: *b*o*r*d*ą
 NasalSpirantLoss: *b*o*r*d*ą
 WeakTailNasalLoss: *b*o*r*d*ą
@@ -732,6 +745,7 @@ WsPalatalDiphthongization: *b*ō*k
 IUmlaut: *b*ō*k
 JClusterCoalescence: *b*ō*k
 BackMutation: *b*ō*k
+WsPalatalUmlaut: *b*ō*k
 NasalSpirantLengthening: *b*ō*k
 NasalSpirantLoss: *b*ō*k
 WeakTailNasalLoss: *b*ō*k
@@ -786,6 +800,7 @@ WsPalatalDiphthongization: *b*ō*s*m
 IUmlaut: *b*ō*s*m
 JClusterCoalescence: *b*ō*s*m
 BackMutation: *b*ō*s*m
+WsPalatalUmlaut: *b*ō*s*m
 NasalSpirantLengthening: *b*ō*s*m
 NasalSpirantLoss: *b*ō*s*m
 WeakTailNasalLoss: *b*ō*s*m
@@ -840,6 +855,7 @@ WsPalatalDiphthongization: *b*ō*g*u
 IUmlaut: *b*ō*g*u
 JClusterCoalescence: *b*ō*g*u
 BackMutation: *b*ō*g*u
+WsPalatalUmlaut: *b*ō*g*u
 NasalSpirantLengthening: *b*ō*g*u
 NasalSpirantLoss: *b*ō*g*u
 WeakTailNasalLoss: *b*ō*g*u
@@ -894,6 +910,7 @@ WsPalatalDiphthongization: *b*ū*r*ą
 IUmlaut: *b*ū*r*ą
 JClusterCoalescence: *b*ū*r*ą
 BackMutation: *b*ū*r*ą
+WsPalatalUmlaut: *b*ū*r*ą
 NasalSpirantLengthening: *b*ū*r*ą
 NasalSpirantLoss: *b*ū*r*ą
 WeakTailNasalLoss: *b*ū*r*ą
@@ -948,6 +965,7 @@ WsPalatalDiphthongization: *b*r*a*n*d*æ*s
 IUmlaut: *b*r*a*n*d*æ*s
 JClusterCoalescence: *b*r*a*n*d*æ*s
 BackMutation: *b*r*a*n*d*æ*s
+WsPalatalUmlaut: *b*r*a*n*d*æ*s
 NasalSpirantLengthening: *b*r*a*n*d*æ*s
 NasalSpirantLoss: *b*r*a*n*d*æ*s
 WeakTailNasalLoss: *b*r*a*n*d*æ*s
@@ -1002,6 +1020,7 @@ WsPalatalDiphthongization: *b*r*ēa*d*ą
 IUmlaut: *b*r*ēa*d*ą
 JClusterCoalescence: *b*r*ēa*d*ą
 BackMutation: *b*r*ēa*d*ą
+WsPalatalUmlaut: *b*r*ēa*d*ą
 NasalSpirantLengthening: *b*r*ēa*d*ą
 NasalSpirantLoss: *b*r*ēa*d*ą
 WeakTailNasalLoss: *b*r*ēa*d*ą
@@ -1056,6 +1075,7 @@ WsPalatalDiphthongization: *b*r*ū*d*i
 IUmlaut: *b*r*ȳ*d*i
 JClusterCoalescence: *b*r*ȳ*d*i
 BackMutation: *b*r*ȳ*d*i
+WsPalatalUmlaut: *b*r*ȳ*d*i
 NasalSpirantLengthening: *b*r*ȳ*d*i
 NasalSpirantLoss: *b*r*ȳ*d*i
 WeakTailNasalLoss: *b*r*ȳ*d*i
@@ -1110,6 +1130,7 @@ WsPalatalDiphthongization: *b*r*i*n*g*ă*n*ą
 IUmlaut: *b*r*i*n*g*ă*n*ą
 JClusterCoalescence: *b*r*i*n*g*ă*n*ą
 BackMutation: *b*r*i*n*g*ă*n*ą
+WsPalatalUmlaut: *b*r*i*n*g*ă*n*ą
 NasalSpirantLengthening: *b*r*i*n*g*ă*n*ą
 NasalSpirantLoss: *b*r*i*n*g*ă*n*ą
 WeakTailNasalLoss: *b*r*i*n*g*ă*n
@@ -1164,6 +1185,7 @@ WsPalatalDiphthongization: *b*r*ū*k*ă*n*ą
 IUmlaut: *b*r*ū*k*ă*n*ą
 JClusterCoalescence: *b*r*ū*k*ă*n*ą
 BackMutation: *b*r*ū*k*ă*n*ą
+WsPalatalUmlaut: *b*r*ū*k*ă*n*ą
 NasalSpirantLengthening: *b*r*ū*k*ă*n*ą
 NasalSpirantLoss: *b*r*ū*k*ă*n*ą
 WeakTailNasalLoss: *b*r*ū*k*ă*n
@@ -1218,6 +1240,7 @@ WsPalatalDiphthongization: *ʧ*ēo*w*ă*n*ą
 IUmlaut: *ʧ*ēo*w*ă*n*ą
 JClusterCoalescence: *ʧ*ēo*w*ă*n*ą
 BackMutation: *ʧ*ēo*w*ă*n*ą
+WsPalatalUmlaut: *ʧ*ēo*w*ă*n*ą
 NasalSpirantLengthening: *ʧ*ēo*w*ă*n*ą
 NasalSpirantLoss: *ʧ*ēo*w*ă*n*ą
 WeakTailNasalLoss: *ʧ*ēo*w*ă*n
@@ -1272,6 +1295,7 @@ WsPalatalDiphthongization: *k*l*i*m*b*ă*n*ą
 IUmlaut: *k*l*i*m*b*ă*n*ą
 JClusterCoalescence: *k*l*i*m*b*ă*n*ą
 BackMutation: *k*l*i*m*b*ă*n*ą
+WsPalatalUmlaut: *k*l*i*m*b*ă*n*ą
 NasalSpirantLengthening: *k*l*i*m*b*ă*n*ą
 NasalSpirantLoss: *k*l*i*m*b*ă*n*ą
 WeakTailNasalLoss: *k*l*i*m*b*ă*n
@@ -1326,6 +1350,7 @@ WsPalatalDiphthongization: *k*a*m*b
 IUmlaut: *k*a*m*b
 JClusterCoalescence: *k*a*m*b
 BackMutation: *k*a*m*b
+WsPalatalUmlaut: *k*a*m*b
 NasalSpirantLengthening: *k*a*m*b
 NasalSpirantLoss: *k*a*m*b
 WeakTailNasalLoss: *k*a*m*b
@@ -1380,6 +1405,7 @@ WsPalatalDiphthongization: *k*r*o*p*p
 IUmlaut: *k*r*o*p*p
 JClusterCoalescence: *k*r*o*p*p
 BackMutation: *k*r*o*p*p
+WsPalatalUmlaut: *k*r*o*p*p
 NasalSpirantLengthening: *k*r*o*p*p
 NasalSpirantLoss: *k*r*o*p*p
 WeakTailNasalLoss: *k*r*o*p*p
@@ -1434,6 +1460,7 @@ WsPalatalDiphthongization: *d*æ*l
 IUmlaut: *d*æ*l
 JClusterCoalescence: *d*æ*l
 BackMutation: *d*æ*l
+WsPalatalUmlaut: *d*æ*l
 NasalSpirantLengthening: *d*æ*l
 NasalSpirantLoss: *d*æ*l
 WeakTailNasalLoss: *d*æ*l
@@ -1488,6 +1515,7 @@ WsPalatalDiphthongization: *d*æ*ʤ
 IUmlaut: *d*æ*ʤ
 JClusterCoalescence: *d*æ*ʤ
 BackMutation: *d*æ*ʤ
+WsPalatalUmlaut: *d*æ*ʤ
 NasalSpirantLengthening: *d*æ*ʤ
 NasalSpirantLoss: *d*æ*ʤ
 WeakTailNasalLoss: *d*æ*ʤ
@@ -1542,6 +1570,7 @@ WsPalatalDiphthongization: *d*ā*l*i
 IUmlaut: *d*ǣ*l*i
 JClusterCoalescence: *d*ǣ*l*i
 BackMutation: *d*ǣ*l*i
+WsPalatalUmlaut: *d*ǣ*l*i
 NasalSpirantLengthening: *d*ǣ*l*i
 NasalSpirantLoss: *d*ǣ*l*i
 WeakTailNasalLoss: *d*ǣ*l*i
@@ -1596,6 +1625,7 @@ WsPalatalDiphthongization: *d*ǣ*d*i
 IUmlaut: *d*ǣ*d*i
 JClusterCoalescence: *d*ǣ*d*i
 BackMutation: *d*ǣ*d*i
+WsPalatalUmlaut: *d*ǣ*d*i
 NasalSpirantLengthening: *d*ǣ*d*i
 NasalSpirantLoss: *d*ǣ*d*i
 WeakTailNasalLoss: *d*ǣ*d*i
@@ -1650,6 +1680,7 @@ WsPalatalDiphthongization: *d*ēo*r*ą
 IUmlaut: *d*ēo*r*ą
 JClusterCoalescence: *d*ēo*r*ą
 BackMutation: *d*ēo*r*ą
+WsPalatalUmlaut: *d*ēo*r*ą
 NasalSpirantLengthening: *d*ēo*r*ą
 NasalSpirantLoss: *d*ēo*r*ą
 WeakTailNasalLoss: *d*ēo*r*ą
@@ -1704,6 +1735,7 @@ WsPalatalDiphthongization: *d*ā*g
 IUmlaut: *d*ā*g
 JClusterCoalescence: *d*ā*g
 BackMutation: *d*ā*g
+WsPalatalUmlaut: *d*ā*g
 NasalSpirantLengthening: *d*ā*g
 NasalSpirantLoss: *d*ā*g
 WeakTailNasalLoss: *d*ā*g
@@ -1758,6 +1790,7 @@ WsPalatalDiphthongization: *d*r*ēa*m
 IUmlaut: *d*r*ēa*m
 JClusterCoalescence: *d*r*ēa*m
 BackMutation: *d*r*ēa*m
+WsPalatalUmlaut: *d*r*ēa*m
 NasalSpirantLengthening: *d*r*ēa*m
 NasalSpirantLoss: *d*r*ēa*m
 WeakTailNasalLoss: *d*r*ēa*m
@@ -1812,6 +1845,7 @@ WsPalatalDiphthongization: *d*r*i*n*k*ă*n*ą
 IUmlaut: *d*r*i*n*k*ă*n*ą
 JClusterCoalescence: *d*r*i*n*k*ă*n*ą
 BackMutation: *d*r*i*n*k*ă*n*ą
+WsPalatalUmlaut: *d*r*i*n*k*ă*n*ą
 NasalSpirantLengthening: *d*r*i*n*k*ă*n*ą
 NasalSpirantLoss: *d*r*i*n*k*ă*n*ą
 WeakTailNasalLoss: *d*r*i*n*k*ă*n
@@ -1866,6 +1900,7 @@ WsPalatalDiphthongization: *d*r*ī*β*ă*n*ą
 IUmlaut: *d*r*ī*β*ă*n*ą
 JClusterCoalescence: *d*r*ī*β*ă*n*ą
 BackMutation: *d*r*ī*β*ă*n*ą
+WsPalatalUmlaut: *d*r*ī*β*ă*n*ą
 NasalSpirantLengthening: *d*r*ī*β*ă*n*ą
 NasalSpirantLoss: *d*r*ī*β*ă*n*ą
 WeakTailNasalLoss: *d*r*ī*β*ă*n
@@ -1920,6 +1955,7 @@ WsPalatalDiphthongization: *e*t*ă*n*ą
 IUmlaut: *e*t*ă*n*ą
 JClusterCoalescence: *e*t*ă*n*ą
 BackMutation: *e*t*ă*n*ą
+WsPalatalUmlaut: *e*t*ă*n*ą
 NasalSpirantLengthening: *e*t*ă*n*ą
 NasalSpirantLoss: *e*t*ă*n*ą
 WeakTailNasalLoss: *e*t*ă*n
@@ -1974,6 +2010,7 @@ WsPalatalDiphthongization: *ǣ*l
 IUmlaut: *ǣ*l
 JClusterCoalescence: *ǣ*l
 BackMutation: *ǣ*l
+WsPalatalUmlaut: *ǣ*l
 NasalSpirantLengthening: *ǣ*l
 NasalSpirantLoss: *ǣ*l
 WeakTailNasalLoss: *ǣ*l
@@ -2028,6 +2065,7 @@ WsPalatalDiphthongization: *f*ea*l*l*ă*n*ą
 IUmlaut: *f*ea*l*l*ă*n*ą
 JClusterCoalescence: *f*ea*l*l*ă*n*ą
 BackMutation: *f*ea*l*l*ă*n*ą
+WsPalatalUmlaut: *f*ea*l*l*ă*n*ą
 NasalSpirantLengthening: *f*ea*l*l*ă*n*ą
 NasalSpirantLoss: *f*ea*l*l*ă*n*ą
 WeakTailNasalLoss: *f*ea*l*l*ă*n
@@ -2082,6 +2120,7 @@ WsPalatalDiphthongization: *f*æ*d*ǣ*r
 IUmlaut: *f*æ*d*ǣ*r
 JClusterCoalescence: *f*æ*d*ǣ*r
 BackMutation: *f*æ*d*ǣ*r
+WsPalatalUmlaut: *f*æ*d*ǣ*r
 NasalSpirantLengthening: *f*æ*d*ǣ*r
 NasalSpirantLoss: *f*æ*d*ǣ*r
 WeakTailNasalLoss: *f*æ*d*ǣ*r
@@ -2136,6 +2175,7 @@ WsPalatalDiphthongization: *f*eo*x*u
 IUmlaut: *f*eo*x*u
 JClusterCoalescence: *f*eo*x*u
 BackMutation: *f*eo*x*u
+WsPalatalUmlaut: *f*eo*x*u
 NasalSpirantLengthening: *f*eo*x*u
 NasalSpirantLoss: *f*eo*x*u
 WeakTailNasalLoss: *f*eo*x*u
@@ -2190,6 +2230,7 @@ WsPalatalDiphthongization: *f*e*l*l*ą
 IUmlaut: *f*e*l*l*ą
 JClusterCoalescence: *f*e*l*l*ą
 BackMutation: *f*e*l*l*ą
+WsPalatalUmlaut: *f*e*l*l*ą
 NasalSpirantLengthening: *f*e*l*l*ą
 NasalSpirantLoss: *f*e*l*l*ą
 WeakTailNasalLoss: *f*e*l*l*ą
@@ -2244,6 +2285,7 @@ WsPalatalDiphthongization: *f*eo*x*t*ă*n*ą
 IUmlaut: *f*eo*x*t*ă*n*ą
 JClusterCoalescence: *f*eo*x*t*ă*n*ą
 BackMutation: *f*eo*x*t*ă*n*ą
+WsPalatalUmlaut: *f*eo*x*t*ă*n*ą
 NasalSpirantLengthening: *f*eo*x*t*ă*n*ą
 NasalSpirantLoss: *f*eo*x*t*ă*n*ą
 WeakTailNasalLoss: *f*eo*x*t*ă*n
@@ -2298,6 +2340,7 @@ WsPalatalDiphthongization: *f*i*n*g*r
 IUmlaut: *f*i*n*g*r
 JClusterCoalescence: *f*i*n*g*r
 BackMutation: *f*i*n*g*r
+WsPalatalUmlaut: *f*i*n*g*r
 NasalSpirantLengthening: *f*i*n*g*r
 NasalSpirantLoss: *f*i*n*g*r
 WeakTailNasalLoss: *f*i*n*g*r
@@ -2352,6 +2395,7 @@ WsPalatalDiphthongization: *f*i*ʃ
 IUmlaut: *f*i*ʃ
 JClusterCoalescence: *f*i*ʃ
 BackMutation: *f*i*ʃ
+WsPalatalUmlaut: *f*i*ʃ
 NasalSpirantLengthening: *f*i*ʃ
 NasalSpirantLoss: *f*i*ʃ
 WeakTailNasalLoss: *f*i*ʃ
@@ -2406,6 +2450,7 @@ WsPalatalDiphthongization: *f*l*ea*x*s*ą
 IUmlaut: *f*l*ea*x*s*ą
 JClusterCoalescence: *f*l*ea*x*s*ą
 BackMutation: *f*l*ea*x*s*ą
+WsPalatalUmlaut: *f*l*ea*x*s*ą
 NasalSpirantLengthening: *f*l*ea*x*s*ą
 NasalSpirantLoss: *f*l*ea*x*s*ą
 WeakTailNasalLoss: *f*l*ea*x*s*ą
@@ -2460,6 +2505,7 @@ WsPalatalDiphthongization: *f*l*ēa*x
 IUmlaut: *f*l*ēa*x
 JClusterCoalescence: *f*l*ēa*x
 BackMutation: *f*l*ēa*x
+WsPalatalUmlaut: *f*l*ēa*x
 NasalSpirantLengthening: *f*l*ēa*x
 NasalSpirantLoss: *f*l*ēa*x
 WeakTailNasalLoss: *f*l*ēa*x
@@ -2514,6 +2560,7 @@ WsPalatalDiphthongization: *f*l*ō*d*u
 IUmlaut: *f*l*ō*d*u
 JClusterCoalescence: *f*l*ō*d*u
 BackMutation: *f*l*ō*d*u
+WsPalatalUmlaut: *f*l*ō*d*u
 NasalSpirantLengthening: *f*l*ō*d*u
 NasalSpirantLoss: *f*l*ō*d*u
 WeakTailNasalLoss: *f*l*ō*d*u
@@ -2568,6 +2615,7 @@ WsPalatalDiphthongization: *f*l*ēo*g*ă*n*ą
 IUmlaut: *f*l*ēo*g*ă*n*ą
 JClusterCoalescence: *f*l*ēo*g*ă*n*ą
 BackMutation: *f*l*ēo*g*ă*n*ą
+WsPalatalUmlaut: *f*l*ēo*g*ă*n*ą
 NasalSpirantLengthening: *f*l*ēo*g*ă*n*ą
 NasalSpirantLoss: *f*l*ēo*g*ă*n*ą
 WeakTailNasalLoss: *f*l*ēo*g*ă*n
@@ -2622,6 +2670,7 @@ WsPalatalDiphthongization: *f*ō*d*r*ą
 IUmlaut: *f*ō*d*r*ą
 JClusterCoalescence: *f*ō*d*r*ą
 BackMutation: *f*ō*d*r*ą
+WsPalatalUmlaut: *f*ō*d*r*ą
 NasalSpirantLengthening: *f*ō*d*r*ą
 NasalSpirantLoss: *f*ō*d*r*ą
 WeakTailNasalLoss: *f*ō*d*r*ą
@@ -2676,6 +2725,7 @@ WsPalatalDiphthongization: *f*o*l*k*ą
 IUmlaut: *f*o*l*k*ą
 JClusterCoalescence: *f*o*l*k*ą
 BackMutation: *f*o*l*k*ą
+WsPalatalUmlaut: *f*o*l*k*ą
 NasalSpirantLengthening: *f*o*l*k*ą
 NasalSpirantLoss: *f*o*l*k*ą
 WeakTailNasalLoss: *f*o*l*k*ą
@@ -2730,6 +2780,7 @@ WsPalatalDiphthongization: *f*o*x*s
 IUmlaut: *f*o*x*s
 JClusterCoalescence: *f*o*x*s
 BackMutation: *f*o*x*s
+WsPalatalUmlaut: *f*o*x*s
 NasalSpirantLengthening: *f*o*x*s
 NasalSpirantLoss: *f*o*x*s
 WeakTailNasalLoss: *f*o*x*s
@@ -2784,6 +2835,7 @@ WsPalatalDiphthongization: *f*r*ēo*s*ă*n*ą
 IUmlaut: *f*r*ēo*s*ă*n*ą
 JClusterCoalescence: *f*r*ēo*s*ă*n*ą
 BackMutation: *f*r*ēo*s*ă*n*ą
+WsPalatalUmlaut: *f*r*ēo*s*ă*n*ą
 NasalSpirantLengthening: *f*r*ēo*s*ă*n*ą
 NasalSpirantLoss: *f*r*ēo*s*ă*n*ą
 WeakTailNasalLoss: *f*r*ēo*s*ă*n
@@ -2838,6 +2890,7 @@ WsPalatalDiphthongization: *f*u*r*x
 IUmlaut: *f*u*r*x
 JClusterCoalescence: *f*u*r*x
 BackMutation: *f*u*r*x
+WsPalatalUmlaut: *f*u*r*x
 NasalSpirantLengthening: *f*u*r*x
 NasalSpirantLoss: *f*u*r*x
 WeakTailNasalLoss: *f*u*r*x
@@ -2892,6 +2945,7 @@ WsPalatalDiphthongization: *g*a*n*g
 IUmlaut: *g*a*n*g
 JClusterCoalescence: *g*a*n*g
 BackMutation: *g*a*n*g
+WsPalatalUmlaut: *g*a*n*g
 NasalSpirantLengthening: *g*a*n*g
 NasalSpirantLoss: *g*a*n*g
 WeakTailNasalLoss: *g*a*n*g
@@ -2946,6 +3000,7 @@ WsPalatalDiphthongization: *g*ā*s*t
 IUmlaut: *g*ā*s*t
 JClusterCoalescence: *g*ā*s*t
 BackMutation: *g*ā*s*t
+WsPalatalUmlaut: *g*ā*s*t
 NasalSpirantLengthening: *g*ā*s*t
 NasalSpirantLoss: *g*ā*s*t
 WeakTailNasalLoss: *g*ā*s*t
@@ -3000,6 +3055,7 @@ WsPalatalDiphthongization: *g*r*æ*s*ą
 IUmlaut: *g*r*æ*s*ą
 JClusterCoalescence: *g*r*æ*s*ą
 BackMutation: *g*r*æ*s*ą
+WsPalatalUmlaut: *g*r*æ*s*ą
 NasalSpirantLengthening: *g*r*æ*s*ą
 NasalSpirantLoss: *g*r*æ*s*ą
 WeakTailNasalLoss: *g*r*æ*s*ą
@@ -3054,6 +3110,7 @@ WsPalatalDiphthongization: *g*r*ī*p*ă*n*ą
 IUmlaut: *g*r*ī*p*ă*n*ą
 JClusterCoalescence: *g*r*ī*p*ă*n*ą
 BackMutation: *g*r*ī*p*ă*n*ą
+WsPalatalUmlaut: *g*r*ī*p*ă*n*ą
 NasalSpirantLengthening: *g*r*ī*p*ă*n*ą
 NasalSpirantLoss: *g*r*ī*p*ă*n*ą
 WeakTailNasalLoss: *g*r*ī*p*ă*n
@@ -3108,6 +3165,7 @@ WsPalatalDiphthongization: *g*r*u*n*d*u
 IUmlaut: *g*r*u*n*d*u
 JClusterCoalescence: *g*r*u*n*d*u
 BackMutation: *g*r*u*n*d*u
+WsPalatalUmlaut: *g*r*u*n*d*u
 NasalSpirantLengthening: *g*r*u*n*d*u
 NasalSpirantLoss: *g*r*u*n*d*u
 WeakTailNasalLoss: *g*r*u*n*d*u
@@ -3162,6 +3220,7 @@ WsPalatalDiphthongization: *ʤ*ea*s*t*i
 IUmlaut: *ʤ*ie*s*t*i
 JClusterCoalescence: *ʤ*ie*s*t*i
 BackMutation: *ʤ*ie*s*t*i
+WsPalatalUmlaut: *ʤ*ie*s*t*i
 NasalSpirantLengthening: *ʤ*ie*s*t*i
 NasalSpirantLoss: *ʤ*ie*s*t*i
 WeakTailNasalLoss: *ʤ*ie*s*t*i
@@ -3216,6 +3275,7 @@ WsPalatalDiphthongization: *ç*æ*ʤ*l*ą
 IUmlaut: *ç*æ*ʤ*l*ą
 JClusterCoalescence: *ç*æ*ʤ*l*ą
 BackMutation: *ç*æ*ʤ*l*ą
+WsPalatalUmlaut: *ç*æ*ʤ*l*ą
 NasalSpirantLengthening: *ç*æ*ʤ*l*ą
 NasalSpirantLoss: *ç*æ*ʤ*l*ą
 WeakTailNasalLoss: *ç*æ*ʤ*l*ą
@@ -3270,6 +3330,7 @@ WsPalatalDiphthongization: *ç*ǣ*r*ą
 IUmlaut: *ç*ǣ*r*ą
 JClusterCoalescence: *ç*ǣ*r*ą
 BackMutation: *ç*ǣ*r*ą
+WsPalatalUmlaut: *ç*ǣ*r*ą
 NasalSpirantLengthening: *ç*ǣ*r*ą
 NasalSpirantLoss: *ç*ǣ*r*ą
 WeakTailNasalLoss: *ç*ǣ*r*ą
@@ -3324,6 +3385,7 @@ WsPalatalDiphthongization: *ç*ea*l*l*u
 IUmlaut: *ç*ea*l*l*u
 JClusterCoalescence: *ç*ea*l*l*u
 BackMutation: *ç*ea*l*l*u
+WsPalatalUmlaut: *ç*ea*l*l*u
 NasalSpirantLengthening: *ç*ea*l*l*u
 NasalSpirantLoss: *ç*ea*l*l*u
 WeakTailNasalLoss: *ç*ea*l*l*u
@@ -3378,6 +3440,7 @@ WsPalatalDiphthongization: *x*a*n*d*u
 IUmlaut: *x*a*n*d*u
 JClusterCoalescence: *x*a*n*d*u
 BackMutation: *x*a*n*d*u
+WsPalatalUmlaut: *x*a*n*d*u
 NasalSpirantLengthening: *x*a*n*d*u
 NasalSpirantLoss: *x*a*n*d*u
 WeakTailNasalLoss: *x*a*n*d*u
@@ -3432,6 +3495,7 @@ WsPalatalDiphthongization: *ç*ea*r*m
 IUmlaut: *ç*ea*r*m
 JClusterCoalescence: *ç*ea*r*m
 BackMutation: *ç*ea*r*m
+WsPalatalUmlaut: *ç*ea*r*m
 NasalSpirantLengthening: *ç*ea*r*m
 NasalSpirantLoss: *ç*ea*r*m
 WeakTailNasalLoss: *ç*ea*r*m
@@ -3486,6 +3550,7 @@ WsPalatalDiphthongization: *ç*a*β*o*k
 IUmlaut: *ç*a*β*o*k
 JClusterCoalescence: *ç*a*β*o*k
 BackMutation: *ç*a*β*o*k
+WsPalatalUmlaut: *ç*a*β*o*k
 NasalSpirantLengthening: *ç*a*β*o*k
 NasalSpirantLoss: *ç*a*β*o*k
 WeakTailNasalLoss: *ç*a*β*o*k
@@ -3540,6 +3605,7 @@ WsPalatalDiphthongization: *ç*æ*s*l
 IUmlaut: *ç*æ*s*l
 JClusterCoalescence: *ç*æ*s*l
 BackMutation: *ç*æ*s*l
+WsPalatalUmlaut: *ç*æ*s*l
 NasalSpirantLengthening: *ç*æ*s*l
 NasalSpirantLoss: *ç*æ*s*l
 WeakTailNasalLoss: *ç*æ*s*l
@@ -3594,6 +3660,7 @@ WsPalatalDiphthongization: *ç*ēa*β*o*d*ą
 IUmlaut: *ç*ēa*β*o*d*ą
 JClusterCoalescence: *ç*ēa*β*o*d*ą
 BackMutation: *ç*ēa*β*o*d*ą
+WsPalatalUmlaut: *ç*ēa*β*o*d*ą
 NasalSpirantLengthening: *ç*ēa*β*o*d*ą
 NasalSpirantLoss: *ç*ēa*β*o*d*ą
 WeakTailNasalLoss: *ç*ēa*β*o*d*ą
@@ -3648,6 +3715,7 @@ WsPalatalDiphthongization: *x*ā*l*j*ă*n*ą
 IUmlaut: *x*ǣ*l*j*ă*n*ą
 JClusterCoalescence: *x*ǣ*l*j*ă*n*ą
 BackMutation: *x*ǣ*l*j*ă*n*ą
+WsPalatalUmlaut: *x*ǣ*l*j*ă*n*ą
 NasalSpirantLengthening: *x*ǣ*l*j*ă*n*ą
 NasalSpirantLoss: *x*ǣ*l*j*ă*n*ą
 WeakTailNasalLoss: *x*ǣ*l*j*ă*n
@@ -3702,6 +3770,7 @@ WsPalatalDiphthongization: *ç*eo*r*θ
 IUmlaut: *ç*eo*r*θ
 JClusterCoalescence: *ç*eo*r*θ
 BackMutation: *ç*eo*r*θ
+WsPalatalUmlaut: *ç*eo*r*θ
 NasalSpirantLengthening: *ç*eo*r*θ
 NasalSpirantLoss: *ç*eo*r*θ
 WeakTailNasalLoss: *ç*eo*r*θ
@@ -3756,6 +3825,7 @@ WsPalatalDiphthongization: *x*ā*θ*i
 IUmlaut: *x*ǣ*θ*i
 JClusterCoalescence: *x*ǣ*θ*i
 BackMutation: *x*ǣ*θ*i
+WsPalatalUmlaut: *x*ǣ*θ*i
 NasalSpirantLengthening: *x*ǣ*θ*i
 NasalSpirantLoss: *x*ǣ*θ*i
 WeakTailNasalLoss: *x*ǣ*θ*i
@@ -3810,6 +3880,7 @@ WsPalatalDiphthongization: *ç*æ*ʤ*ʤ*j
 IUmlaut: *ç*e*ʤ*ʤ*j
 JClusterCoalescence: *ç*e*ʤ*ʤ*j
 BackMutation: *ç*e*ʤ*ʤ*j
+WsPalatalUmlaut: *ç*e*ʤ*ʤ*j
 NasalSpirantLengthening: *ç*e*ʤ*ʤ*j
 NasalSpirantLoss: *ç*e*ʤ*ʤ*j
 WeakTailNasalLoss: *ç*e*ʤ*ʤ*j
@@ -3864,6 +3935,7 @@ WsPalatalDiphthongization: *ç*e*l*p*u
 IUmlaut: *ç*e*l*p*u
 JClusterCoalescence: *ç*e*l*p*u
 BackMutation: *ç*e*l*p*u
+WsPalatalUmlaut: *ç*e*l*p*u
 NasalSpirantLengthening: *ç*e*l*p*u
 NasalSpirantLoss: *ç*e*l*p*u
 WeakTailNasalLoss: *ç*e*l*p*u
@@ -3918,6 +3990,7 @@ WsPalatalDiphthongization: *x*o*r*d*ą
 IUmlaut: *x*o*r*d*ą
 JClusterCoalescence: *x*o*r*d*ą
 BackMutation: *x*o*r*d*ą
+WsPalatalUmlaut: *x*o*r*d*ą
 NasalSpirantLengthening: *x*o*r*d*ą
 NasalSpirantLoss: *x*o*r*d*ą
 WeakTailNasalLoss: *x*o*r*d*ą
@@ -3972,6 +4045,7 @@ WsPalatalDiphthongization: *ç*ea*l*d*ă*n*ą
 IUmlaut: *ç*ea*l*d*ă*n*ą
 JClusterCoalescence: *ç*ea*l*d*ă*n*ą
 BackMutation: *ç*ea*l*d*ă*n*ą
+WsPalatalUmlaut: *ç*ea*l*d*ă*n*ą
 NasalSpirantLengthening: *ç*ea*l*d*ă*n*ą
 NasalSpirantLoss: *ç*ea*l*d*ă*n*ą
 WeakTailNasalLoss: *ç*ea*l*d*ă*n
@@ -4026,6 +4100,7 @@ WsPalatalDiphthongization: *x*ā*m
 IUmlaut: *x*ā*m
 JClusterCoalescence: *x*ā*m
 BackMutation: *x*ā*m
+WsPalatalUmlaut: *x*ā*m
 NasalSpirantLengthening: *x*ā*m
 NasalSpirantLoss: *x*ā*m
 WeakTailNasalLoss: *x*ā*m
@@ -4080,6 +4155,7 @@ WsPalatalDiphthongization: *x*ō*d
 IUmlaut: *x*ō*d
 JClusterCoalescence: *x*ō*d
 BackMutation: *x*ō*d
+WsPalatalUmlaut: *x*ō*d
 NasalSpirantLengthening: *x*ō*d
 NasalSpirantLoss: *x*ō*d
 WeakTailNasalLoss: *x*ō*d
@@ -4134,6 +4210,7 @@ WsPalatalDiphthongization: *x*ō*f
 IUmlaut: *x*ō*f
 JClusterCoalescence: *x*ō*f
 BackMutation: *x*ō*f
+WsPalatalUmlaut: *x*ō*f
 NasalSpirantLengthening: *x*ō*f
 NasalSpirantLoss: *x*ō*f
 WeakTailNasalLoss: *x*ō*f
@@ -4188,6 +4265,7 @@ WsPalatalDiphthongization: *x*u*n*d
 IUmlaut: *x*u*n*d
 JClusterCoalescence: *x*u*n*d
 BackMutation: *x*u*n*d
+WsPalatalUmlaut: *x*u*n*d
 NasalSpirantLengthening: *x*u*n*d
 NasalSpirantLoss: *x*u*n*d
 WeakTailNasalLoss: *x*u*n*d
@@ -4242,6 +4320,7 @@ WsPalatalDiphthongization: *Kn*e*d*ă*n*ą
 IUmlaut: *Kn*e*d*ă*n*ą
 JClusterCoalescence: *Kn*e*d*ă*n*ą
 BackMutation: *Kn*e*d*ă*n*ą
+WsPalatalUmlaut: *Kn*e*d*ă*n*ą
 NasalSpirantLengthening: *Kn*e*d*ă*n*ą
 NasalSpirantLoss: *Kn*e*d*ă*n*ą
 WeakTailNasalLoss: *Kn*e*d*ă*n
@@ -4296,6 +4375,7 @@ WsPalatalDiphthongization: *Kn*ēo*w*ą
 IUmlaut: *Kn*ēo*w*ą
 JClusterCoalescence: *Kn*ēo*w*ą
 BackMutation: *Kn*ēo*w*ą
+WsPalatalUmlaut: *Kn*ēo*w*ą
 NasalSpirantLengthening: *Kn*ēo*w*ą
 NasalSpirantLoss: *Kn*ēo*w*ą
 WeakTailNasalLoss: *Kn*ēo*w*ą
@@ -4319,6 +4399,61 @@ GlideDeletion: *Kn*ēo*ʋ
 Epenthesis: *k*n*ēo*w
 Orthography: cnēow
 Surface: cnēow
+
+--- knight ---
+PROTO: *knixtăz
+EXPECTED: cniht
+OUTPUTS: cniht
+
+ProtoInput: *k*n*i*x*t*ă*z
+InitialKn: *Kn*i*x*t*ă*z
+Palatalisation: *Kn*i*x*t*ă*z
+ConsonantRules: *Kn*i*x*t*ă
+WestGermanic: *Kn*i*x*t*ă
+NWGmcULowering: *Kn*i*x*t*ă
+NWGmcFinalLongORaising: *Kn*i*x*t*ă
+NWGmcLongELowering: *Kn*i*x*t*ă
+NWGmcLongENasalRounding: *Kn*i*x*t*ă
+AuFronting: *Kn*i*x*t*ă
+WWSimplification: *Kn*i*x*t*ă
+DiphthongLeveling: *Kn*i*x*t*ă
+EwLongDiphthong: *Kn*i*x*t*ă
+AngloFrisianBrightening: *Kn*i*x*t*ă
+BreakingLengthening: *Kn*ie*x*t*ă
+VelarFricPal: *Kn*ie*x*t*ă
+ARestoration: *Kn*ie*x*t*ă
+FinalWeakSchwaApocope: *Kn*ie*x*t
+JGemination: *Kn*ie*x*t
+SkPalatalization: *Kn*ie*x*t
+VelarPalatalization: *Kn*ie*x*t
+WsPalatalDiphthongization: *Kn*ie*x*t
+IUmlaut: *Kn*ie*x*t
+JClusterCoalescence: *Kn*ie*x*t
+BackMutation: *Kn*ie*x*t
+WsPalatalUmlaut: *Kn*i*x*t
+NasalSpirantLengthening: *Kn*i*x*t
+NasalSpirantLoss: *Kn*i*x*t
+WeakTailNasalLoss: *Kn*i*x*t
+WeightMarkers: *Kn*i*x*t
+HighVowelApocope: *Kn*i*x*t
+HeavySyllableNasalApocope: *Kn*i*x*t
+WeakTailReduction: *Kn*i*x*t
+JLossAfterHeavy: *Kn*i*x*t
+IntervocalicJVocalization: *Kn*i*x*t
+WeightCleanup: *Kn*i*x*t
+HLoss: *Kn*i*x*t
+Contraction: *Kn*i*x*t
+ProtoToOEWeakTail: *Kn*i*x*t
+ProtoToOEWeightMarkers: *Kn*i*x*t
+ProtoToOEApocope: *Kn*i*x*t
+ProtoToOEWeightCleanup: *Kn*i*x*t
+ProtoToOE: *Kn*i*x*t
+WGlide: *Kn*i*x*t
+GhMarker: *Kn*i*GH*t
+GlideDeletion: *Kn*i*GH*t
+Epenthesis: *k*n*i*x*t
+Orthography: cniht
+Surface: cniht
 
 --- land ---
 PROTO: *landą
@@ -4350,6 +4485,7 @@ WsPalatalDiphthongization: *l*a*n*d*ą
 IUmlaut: *l*a*n*d*ą
 JClusterCoalescence: *l*a*n*d*ą
 BackMutation: *l*a*n*d*ą
+WsPalatalUmlaut: *l*a*n*d*ą
 NasalSpirantLengthening: *l*a*n*d*ą
 NasalSpirantLoss: *l*a*n*d*ą
 WeakTailNasalLoss: *l*a*n*d*ą
@@ -4404,6 +4540,7 @@ WsPalatalDiphthongization: *l*ā*s*t*j*ă*n*ą
 IUmlaut: *l*ǣ*s*t*j*ă*n*ą
 JClusterCoalescence: *l*ǣ*s*t*j*ă*n*ą
 BackMutation: *l*ǣ*s*t*j*ă*n*ą
+WsPalatalUmlaut: *l*ǣ*s*t*j*ă*n*ą
 NasalSpirantLengthening: *l*ǣ*s*t*j*ă*n*ą
 NasalSpirantLoss: *l*ǣ*s*t*j*ă*n*ą
 WeakTailNasalLoss: *l*ǣ*s*t*j*ă*n
@@ -4458,6 +4595,7 @@ WsPalatalDiphthongization: *l*ā*d*j*ă*n*ą
 IUmlaut: *l*ǣ*d*j*ă*n*ą
 JClusterCoalescence: *l*ǣ*d*j*ă*n*ą
 BackMutation: *l*ǣ*d*j*ă*n*ą
+WsPalatalUmlaut: *l*ǣ*d*j*ă*n*ą
 NasalSpirantLengthening: *l*ǣ*d*j*ă*n*ą
 NasalSpirantLoss: *l*ǣ*d*j*ă*n*ą
 WeakTailNasalLoss: *l*ǣ*d*j*ă*n
@@ -4512,6 +4650,7 @@ WsPalatalDiphthongization: *l*ēa*β*ą
 IUmlaut: *l*ēa*β*ą
 JClusterCoalescence: *l*ēa*β*ą
 BackMutation: *l*ēa*β*ą
+WsPalatalUmlaut: *l*ēa*β*ą
 NasalSpirantLengthening: *l*ēa*β*ą
 NasalSpirantLoss: *l*ēa*β*ą
 WeakTailNasalLoss: *l*ēa*β*ą
@@ -4566,6 +4705,7 @@ WsPalatalDiphthongization: *l*e*θ*r*ą
 IUmlaut: *l*e*θ*r*ą
 JClusterCoalescence: *l*e*θ*r*ą
 BackMutation: *l*e*θ*r*ą
+WsPalatalUmlaut: *l*e*θ*r*ą
 NasalSpirantLengthening: *l*e*θ*r*ą
 NasalSpirantLoss: *l*e*θ*r*ą
 WeakTailNasalLoss: *l*e*θ*r*ą
@@ -4620,6 +4760,7 @@ WsPalatalDiphthongization: *l*ēa*k
 IUmlaut: *l*ēa*k
 JClusterCoalescence: *l*ēa*k
 BackMutation: *l*ēa*k
+WsPalatalUmlaut: *l*ēa*k
 NasalSpirantLengthening: *l*ēa*k
 NasalSpirantLoss: *l*ēa*k
 WeakTailNasalLoss: *l*ēa*k
@@ -4674,6 +4815,7 @@ WsPalatalDiphthongization: *l*ǣ*t*ă*n*ą
 IUmlaut: *l*ǣ*t*ă*n*ą
 JClusterCoalescence: *l*ǣ*t*ă*n*ą
 BackMutation: *l*ǣ*t*ă*n*ą
+WsPalatalUmlaut: *l*ǣ*t*ă*n*ą
 NasalSpirantLengthening: *l*ǣ*t*ă*n*ą
 NasalSpirantLoss: *l*ǣ*t*ă*n*ą
 WeakTailNasalLoss: *l*ǣ*t*ă*n
@@ -4728,6 +4870,7 @@ WsPalatalDiphthongization: *l*ī*β*ą
 IUmlaut: *l*ī*β*ą
 JClusterCoalescence: *l*ī*β*ą
 BackMutation: *l*ī*β*ą
+WsPalatalUmlaut: *l*ī*β*ą
 NasalSpirantLengthening: *l*ī*β*ą
 NasalSpirantLoss: *l*ī*β*ą
 WeakTailNasalLoss: *l*ī*β*ą
@@ -4782,6 +4925,7 @@ WsPalatalDiphthongization: *l*ī*m*ą
 IUmlaut: *l*ī*m*ą
 JClusterCoalescence: *l*ī*m*ą
 BackMutation: *l*ī*m*ą
+WsPalatalUmlaut: *l*ī*m*ą
 NasalSpirantLengthening: *l*ī*m*ą
 NasalSpirantLoss: *l*ī*m*ą
 WeakTailNasalLoss: *l*ī*m
@@ -4836,6 +4980,7 @@ WsPalatalDiphthongization: *l*i*β*r*u
 IUmlaut: *l*i*β*r*u
 JClusterCoalescence: *l*i*β*r*u
 BackMutation: *l*i*β*r*u
+WsPalatalUmlaut: *l*i*β*r*u
 NasalSpirantLengthening: *l*i*β*r*u
 NasalSpirantLoss: *l*i*β*r*u
 WeakTailNasalLoss: *l*i*β*r*u
@@ -4890,6 +5035,7 @@ WsPalatalDiphthongization: *l*o*k*ą
 IUmlaut: *l*o*k*ą
 JClusterCoalescence: *l*o*k*ą
 BackMutation: *l*o*k*ą
+WsPalatalUmlaut: *l*o*k*ą
 NasalSpirantLengthening: *l*o*k*ą
 NasalSpirantLoss: *l*o*k*ą
 WeakTailNasalLoss: *l*o*k*ą
@@ -4944,6 +5090,7 @@ WsPalatalDiphthongization: *l*o*k*k
 IUmlaut: *l*o*k*k
 JClusterCoalescence: *l*o*k*k
 BackMutation: *l*o*k*k
+WsPalatalUmlaut: *l*o*k*k
 NasalSpirantLengthening: *l*o*k*k
 NasalSpirantLoss: *l*o*k*k
 WeakTailNasalLoss: *l*o*k*k
@@ -4998,6 +5145,7 @@ WsPalatalDiphthongization: *l*ū*s
 IUmlaut: *l*ū*s
 JClusterCoalescence: *l*ū*s
 BackMutation: *l*ū*s
+WsPalatalUmlaut: *l*ū*s
 NasalSpirantLengthening: *l*ū*s
 NasalSpirantLoss: *l*ū*s
 WeakTailNasalLoss: *l*ū*s
@@ -5052,6 +5200,7 @@ WsPalatalDiphthongization: *l*u*s*t*u
 IUmlaut: *l*u*s*t*u
 JClusterCoalescence: *l*u*s*t*u
 BackMutation: *l*u*s*t*u
+WsPalatalUmlaut: *l*u*s*t*u
 NasalSpirantLengthening: *l*u*s*t*u
 NasalSpirantLoss: *l*u*s*t*u
 WeakTailNasalLoss: *l*u*s*t*u
@@ -5106,6 +5255,7 @@ WsPalatalDiphthongization: *m*ea*l*t
 IUmlaut: *m*ea*l*t
 JClusterCoalescence: *m*ea*l*t
 BackMutation: *m*ea*l*t
+WsPalatalUmlaut: *m*ea*l*t
 NasalSpirantLengthening: *m*ea*l*t
 NasalSpirantLoss: *m*ea*l*t
 WeakTailNasalLoss: *m*ea*l*t
@@ -5160,6 +5310,7 @@ WsPalatalDiphthongization: *m*æ*s*t
 IUmlaut: *m*æ*s*t
 JClusterCoalescence: *m*æ*s*t
 BackMutation: *m*æ*s*t
+WsPalatalUmlaut: *m*æ*s*t
 NasalSpirantLengthening: *m*æ*s*t
 NasalSpirantLoss: *m*æ*s*t
 WeakTailNasalLoss: *m*æ*s*t
@@ -5214,6 +5365,7 @@ WsPalatalDiphthongization: *m*ǣ*l*ą
 IUmlaut: *m*ǣ*l*ą
 JClusterCoalescence: *m*ǣ*l*ą
 BackMutation: *m*ǣ*l*ą
+WsPalatalUmlaut: *m*ǣ*l*ą
 NasalSpirantLengthening: *m*ǣ*l*ą
 NasalSpirantLoss: *m*ǣ*l*ą
 WeakTailNasalLoss: *m*ǣ*l*ą
@@ -5268,6 +5420,7 @@ WsPalatalDiphthongization: *m*ā*n*j*ă*n*ą
 IUmlaut: *m*ǣ*n*j*ă*n*ą
 JClusterCoalescence: *m*ǣ*n*j*ă*n*ą
 BackMutation: *m*ǣ*n*j*ă*n*ą
+WsPalatalUmlaut: *m*ǣ*n*j*ă*n*ą
 NasalSpirantLengthening: *m*ǣ*n*j*ă*n*ą
 NasalSpirantLoss: *m*ǣ*n*j*ă*n*ą
 WeakTailNasalLoss: *m*ǣ*n*j*ă*n
@@ -5291,6 +5444,61 @@ GlideDeletion: *m*ǣ*n*a*n
 Epenthesis: *m*ǣ*n*a*n
 Orthography: mǣnan
 Surface: mǣnan
+
+--- might ---
+PROTO: *maxtiz
+EXPECTED: miht
+OUTPUTS: miht
+
+ProtoInput: *m*a*x*t*i*z
+InitialKn: *m*a*x*t*i*z
+Palatalisation: *m*a*x*t*i*z
+ConsonantRules: *m*a*x*t*i
+WestGermanic: *m*a*x*t*i
+NWGmcULowering: *m*a*x*t*i
+NWGmcFinalLongORaising: *m*a*x*t*i
+NWGmcLongELowering: *m*a*x*t*i
+NWGmcLongENasalRounding: *m*a*x*t*i
+AuFronting: *m*a*x*t*i
+WWSimplification: *m*a*x*t*i
+DiphthongLeveling: *m*a*x*t*i
+EwLongDiphthong: *m*a*x*t*i
+AngloFrisianBrightening: *m*æ*x*t*i
+BreakingLengthening: *m*ea*x*t*i
+VelarFricPal: *m*ea*x*t*i
+ARestoration: *m*ea*x*t*i
+FinalWeakSchwaApocope: *m*ea*x*t*i
+JGemination: *m*ea*x*t*i
+SkPalatalization: *m*ea*x*t*i
+VelarPalatalization: *m*ea*x*t*i
+WsPalatalDiphthongization: *m*ea*x*t*i
+IUmlaut: *m*ie*x*t*i
+JClusterCoalescence: *m*ie*x*t*i
+BackMutation: *m*ie*x*t*i
+WsPalatalUmlaut: *m*i*x*t*i
+NasalSpirantLengthening: *m*i*x*t*i
+NasalSpirantLoss: *m*i*x*t*i
+WeakTailNasalLoss: *m*i*x*t*i
+WeightMarkers: *m*i*x*t*i
+HighVowelApocope: *m*i*x*t
+HeavySyllableNasalApocope: *m*i*x*t
+WeakTailReduction: *m*i*x*t
+JLossAfterHeavy: *m*i*x*t
+IntervocalicJVocalization: *m*i*x*t
+WeightCleanup: *m*i*x*t
+HLoss: *m*i*x*t
+Contraction: *m*i*x*t
+ProtoToOEWeakTail: *m*i*x*t*i
+ProtoToOEWeightMarkers: *m*i*x*t*i
+ProtoToOEApocope: *m*i*x*t
+ProtoToOEWeightCleanup: *m*i*x*t
+ProtoToOE: *m*i*x*t
+WGlide: *m*i*x*t
+GhMarker: *m*i*GH*t
+GlideDeletion: *m*i*GH*t
+Epenthesis: *m*i*x*t
+Orthography: miht
+Surface: miht
 
 --- mood ---
 PROTO: *mōdăz
@@ -5322,6 +5530,7 @@ WsPalatalDiphthongization: *m*ō*d
 IUmlaut: *m*ō*d
 JClusterCoalescence: *m*ō*d
 BackMutation: *m*ō*d
+WsPalatalUmlaut: *m*ō*d
 NasalSpirantLengthening: *m*ō*d
 NasalSpirantLoss: *m*ō*d
 WeakTailNasalLoss: *m*ō*d
@@ -5376,6 +5585,7 @@ WsPalatalDiphthongization: *n*æ*ʤ*l
 IUmlaut: *n*æ*ʤ*l
 JClusterCoalescence: *n*æ*ʤ*l
 BackMutation: *n*æ*ʤ*l
+WsPalatalUmlaut: *n*æ*ʤ*l
 NasalSpirantLengthening: *n*æ*ʤ*l
 NasalSpirantLoss: *n*æ*ʤ*l
 WeakTailNasalLoss: *n*æ*ʤ*l
@@ -5430,6 +5640,7 @@ WsPalatalDiphthongization: *n*ēa*d*i
 IUmlaut: *n*īe*d*i
 JClusterCoalescence: *n*īe*d*i
 BackMutation: *n*īe*d*i
+WsPalatalUmlaut: *n*īe*d*i
 NasalSpirantLengthening: *n*īe*d*i
 NasalSpirantLoss: *n*īe*d*i
 WeakTailNasalLoss: *n*īe*d*i
@@ -5453,6 +5664,61 @@ GlideDeletion: *n*īe*d
 Epenthesis: *n*īe*d
 Orthography: nīed
 Surface: nīed
+
+--- night ---
+PROTO: *naxti
+EXPECTED: niht
+OUTPUTS: niht
+
+ProtoInput: *n*a*x*t*i
+InitialKn: *n*a*x*t*i
+Palatalisation: *n*a*x*t*i
+ConsonantRules: *n*a*x*t*i
+WestGermanic: *n*a*x*t*i
+NWGmcULowering: *n*a*x*t*i
+NWGmcFinalLongORaising: *n*a*x*t*i
+NWGmcLongELowering: *n*a*x*t*i
+NWGmcLongENasalRounding: *n*a*x*t*i
+AuFronting: *n*a*x*t*i
+WWSimplification: *n*a*x*t*i
+DiphthongLeveling: *n*a*x*t*i
+EwLongDiphthong: *n*a*x*t*i
+AngloFrisianBrightening: *n*æ*x*t*i
+BreakingLengthening: *n*ea*x*t*i
+VelarFricPal: *n*ea*x*t*i
+ARestoration: *n*ea*x*t*i
+FinalWeakSchwaApocope: *n*ea*x*t*i
+JGemination: *n*ea*x*t*i
+SkPalatalization: *n*ea*x*t*i
+VelarPalatalization: *n*ea*x*t*i
+WsPalatalDiphthongization: *n*ea*x*t*i
+IUmlaut: *n*ie*x*t*i
+JClusterCoalescence: *n*ie*x*t*i
+BackMutation: *n*ie*x*t*i
+WsPalatalUmlaut: *n*i*x*t*i
+NasalSpirantLengthening: *n*i*x*t*i
+NasalSpirantLoss: *n*i*x*t*i
+WeakTailNasalLoss: *n*i*x*t*i
+WeightMarkers: *n*i*x*t*i
+HighVowelApocope: *n*i*x*t
+HeavySyllableNasalApocope: *n*i*x*t
+WeakTailReduction: *n*i*x*t
+JLossAfterHeavy: *n*i*x*t
+IntervocalicJVocalization: *n*i*x*t
+WeightCleanup: *n*i*x*t
+HLoss: *n*i*x*t
+Contraction: *n*i*x*t
+ProtoToOEWeakTail: *n*i*x*t*i
+ProtoToOEWeightMarkers: *n*i*x*t*i
+ProtoToOEApocope: *n*i*x*t
+ProtoToOEWeightCleanup: *n*i*x*t
+ProtoToOE: *n*i*x*t
+WGlide: *n*i*x*t
+GhMarker: *n*i*GH*t
+GlideDeletion: *n*i*GH*t
+Epenthesis: *n*i*x*t
+Orthography: niht
+Surface: niht
 
 --- oven ---
 PROTO: *ufnăz
@@ -5484,6 +5750,7 @@ WsPalatalDiphthongization: *o*f*n
 IUmlaut: *o*f*n
 JClusterCoalescence: *o*f*n
 BackMutation: *o*f*n
+WsPalatalUmlaut: *o*f*n
 NasalSpirantLengthening: *o*f*n
 NasalSpirantLoss: *o*f*n
 WeakTailNasalLoss: *o*f*n
@@ -5538,6 +5805,7 @@ WsPalatalDiphthongization: *r*e*ʤ*n*ą
 IUmlaut: *r*e*ʤ*n*ą
 JClusterCoalescence: *r*e*ʤ*n*ą
 BackMutation: *r*e*ʤ*n*ą
+WsPalatalUmlaut: *r*e*ʤ*n*ą
 NasalSpirantLengthening: *r*e*ʤ*n*ą
 NasalSpirantLoss: *r*e*ʤ*n*ą
 WeakTailNasalLoss: *r*e*ʤ*n
@@ -5592,6 +5860,7 @@ WsPalatalDiphthongization: *x*r*æ*β*n
 IUmlaut: *x*r*æ*β*n
 JClusterCoalescence: *x*r*æ*β*n
 BackMutation: *x*r*æ*β*n
+WsPalatalUmlaut: *x*r*æ*β*n
 NasalSpirantLengthening: *x*r*æ*β*n
 NasalSpirantLoss: *x*r*æ*β*n
 WeakTailNasalLoss: *x*r*æ*β*n
@@ -5646,6 +5915,7 @@ WsPalatalDiphthongization: *r*ǣ*d*ă*n*ą
 IUmlaut: *r*ǣ*d*ă*n*ą
 JClusterCoalescence: *r*ǣ*d*ă*n*ą
 BackMutation: *r*ǣ*d*ă*n*ą
+WsPalatalUmlaut: *r*ǣ*d*ă*n*ą
 NasalSpirantLengthening: *r*ǣ*d*ă*n*ą
 NasalSpirantLoss: *r*ǣ*d*ă*n*ą
 WeakTailNasalLoss: *r*ǣ*d*ă*n
@@ -5700,6 +5970,7 @@ WsPalatalDiphthongization: *r*ī*d*ă*n*ą
 IUmlaut: *r*ī*d*ă*n*ą
 JClusterCoalescence: *r*ī*d*ă*n*ą
 BackMutation: *r*ī*d*ă*n*ą
+WsPalatalUmlaut: *r*ī*d*ă*n*ą
 NasalSpirantLengthening: *r*ī*d*ă*n*ą
 NasalSpirantLoss: *r*ī*d*ă*n*ą
 WeakTailNasalLoss: *r*ī*d*ă*n
@@ -5754,6 +6025,7 @@ WsPalatalDiphthongization: *r*i*n*d*u
 IUmlaut: *r*i*n*d*u
 JClusterCoalescence: *r*i*n*d*u
 BackMutation: *r*i*n*d*u
+WsPalatalUmlaut: *r*i*n*d*u
 NasalSpirantLengthening: *r*i*n*d*u
 NasalSpirantLoss: *r*i*n*d*u
 WeakTailNasalLoss: *r*i*n*d*u
@@ -5808,6 +6080,7 @@ WsPalatalDiphthongization: *r*ō*d*u
 IUmlaut: *r*ō*d*u
 JClusterCoalescence: *r*ō*d*u
 BackMutation: *r*ō*d*u
+WsPalatalUmlaut: *r*ō*d*u
 NasalSpirantLengthening: *r*ō*d*u
 NasalSpirantLoss: *r*ō*d*u
 WeakTailNasalLoss: *r*ō*d*u
@@ -5862,6 +6135,7 @@ WsPalatalDiphthongization: *r*ū*m*ą
 IUmlaut: *r*ū*m*ą
 JClusterCoalescence: *r*ū*m*ą
 BackMutation: *r*ū*m*ą
+WsPalatalUmlaut: *r*ū*m*ą
 NasalSpirantLengthening: *r*ū*m*ą
 NasalSpirantLoss: *r*ū*m*ą
 WeakTailNasalLoss: *r*ū*m
@@ -5916,6 +6190,7 @@ WsPalatalDiphthongization: *r*ā*p*ą
 IUmlaut: *r*ā*p*ą
 JClusterCoalescence: *r*ā*p*ą
 BackMutation: *r*ā*p*ą
+WsPalatalUmlaut: *r*ā*p*ą
 NasalSpirantLengthening: *r*ā*p*ą
 NasalSpirantLoss: *r*ā*p*ą
 WeakTailNasalLoss: *r*ā*p*ą
@@ -5970,6 +6245,7 @@ WsPalatalDiphthongization: *r*ō*θ*r
 IUmlaut: *r*ō*θ*r
 JClusterCoalescence: *r*ō*θ*r
 BackMutation: *r*ō*θ*r
+WsPalatalUmlaut: *r*ō*θ*r
 NasalSpirantLengthening: *r*ō*θ*r
 NasalSpirantLoss: *r*ō*θ*r
 WeakTailNasalLoss: *r*ō*θ*r
@@ -6024,6 +6300,7 @@ WsPalatalDiphthongization: *r*i*n*n*ă*n*ą
 IUmlaut: *r*i*n*n*ă*n*ą
 JClusterCoalescence: *r*i*n*n*ă*n*ą
 BackMutation: *r*i*n*n*ă*n*ą
+WsPalatalUmlaut: *r*i*n*n*ă*n*ą
 NasalSpirantLengthening: *r*i*n*n*ă*n*ą
 NasalSpirantLoss: *r*i*n*n*ă*n*ą
 WeakTailNasalLoss: *r*i*n*n*ă*n
@@ -6078,6 +6355,7 @@ WsPalatalDiphthongization: *r*u*ʤ*i
 IUmlaut: *r*y*ʤ*i
 JClusterCoalescence: *r*y*ʤ*i
 BackMutation: *r*y*ʤ*i
+WsPalatalUmlaut: *r*y*ʤ*i
 NasalSpirantLengthening: *r*y*ʤ*i
 NasalSpirantLoss: *r*y*ʤ*i
 WeakTailNasalLoss: *r*y*ʤ*i
@@ -6132,6 +6410,7 @@ WsPalatalDiphthongization: *s*e*ʤ*l*ą
 IUmlaut: *s*e*ʤ*l*ą
 JClusterCoalescence: *s*e*ʤ*l*ą
 BackMutation: *s*e*ʤ*l*ą
+WsPalatalUmlaut: *s*e*ʤ*l*ą
 NasalSpirantLengthening: *s*e*ʤ*l*ą
 NasalSpirantLoss: *s*e*ʤ*l*ą
 WeakTailNasalLoss: *s*e*ʤ*l*ą
@@ -6186,6 +6465,7 @@ WsPalatalDiphthongization: *s*ea*l*t*ą
 IUmlaut: *s*ea*l*t*ą
 JClusterCoalescence: *s*ea*l*t*ą
 BackMutation: *s*ea*l*t*ą
+WsPalatalUmlaut: *s*ea*l*t*ą
 NasalSpirantLengthening: *s*ea*l*t*ą
 NasalSpirantLoss: *s*ea*l*t*ą
 WeakTailNasalLoss: *s*ea*l*t*ą
@@ -6240,6 +6520,7 @@ WsPalatalDiphthongization: *s*ea*l*β*u
 IUmlaut: *s*ea*l*β*u
 JClusterCoalescence: *s*ea*l*β*u
 BackMutation: *s*ea*l*β*u
+WsPalatalUmlaut: *s*ea*l*β*u
 NasalSpirantLengthening: *s*ea*l*β*u
 NasalSpirantLoss: *s*ea*l*β*u
 WeakTailNasalLoss: *s*ea*l*β*u
@@ -6294,6 +6575,7 @@ WsPalatalDiphthongization: *s*ēa*m
 IUmlaut: *s*ēa*m
 JClusterCoalescence: *s*ēa*m
 BackMutation: *s*ēa*m
+WsPalatalUmlaut: *s*ēa*m
 NasalSpirantLengthening: *s*ēa*m
 NasalSpirantLoss: *s*ēa*m
 WeakTailNasalLoss: *s*ēa*m
@@ -6348,6 +6630,7 @@ WsPalatalDiphthongization: *s*a*n*d*j*ă*n*ą
 IUmlaut: *s*e*n*d*j*ă*n*ą
 JClusterCoalescence: *s*e*n*d*j*ă*n*ą
 BackMutation: *s*e*n*d*j*ă*n*ą
+WsPalatalUmlaut: *s*e*n*d*j*ă*n*ą
 NasalSpirantLengthening: *s*e*n*d*j*ă*n*ą
 NasalSpirantLoss: *s*e*n*d*j*ă*n*ą
 WeakTailNasalLoss: *s*e*n*d*j*ă*n
@@ -6402,6 +6685,7 @@ WsPalatalDiphthongization: *s*æ*t*t*j*ă*n*ą
 IUmlaut: *s*e*t*t*j*ă*n*ą
 JClusterCoalescence: *s*e*t*t*j*ă*n*ą
 BackMutation: *s*e*t*t*j*ă*n*ą
+WsPalatalUmlaut: *s*e*t*t*j*ă*n*ą
 NasalSpirantLengthening: *s*e*t*t*j*ă*n*ą
 NasalSpirantLoss: *s*e*t*t*j*ă*n*ą
 WeakTailNasalLoss: *s*e*t*t*j*ă*n
@@ -6456,6 +6740,7 @@ WsPalatalDiphthongization: *s*e*β*u*n
 IUmlaut: *s*e*β*u*n
 JClusterCoalescence: *s*e*β*u*n
 BackMutation: *s*eo*β*u*n
+WsPalatalUmlaut: *s*eo*β*u*n
 NasalSpirantLengthening: *s*eo*β*u*n
 NasalSpirantLoss: *s*eo*β*u*n
 WeakTailNasalLoss: *s*eo*β*u*n
@@ -6510,6 +6795,7 @@ WsPalatalDiphthongization: *ʃ*ea*f*t*ą
 IUmlaut: *ʃ*ea*f*t*ą
 JClusterCoalescence: *ʃ*ea*f*t*ą
 BackMutation: *ʃ*ea*f*t*ą
+WsPalatalUmlaut: *ʃ*ea*f*t*ą
 NasalSpirantLengthening: *ʃ*ea*f*t*ą
 NasalSpirantLoss: *ʃ*ea*f*t*ą
 WeakTailNasalLoss: *ʃ*ea*f*t*ą
@@ -6564,6 +6850,7 @@ WsPalatalDiphthongization: *ʃ*ie*r*ă*n*ą
 IUmlaut: *ʃ*ie*r*ă*n*ą
 JClusterCoalescence: *ʃ*ie*r*ă*n*ą
 BackMutation: *ʃ*ie*r*ă*n*ą
+WsPalatalUmlaut: *ʃ*ie*r*ă*n*ą
 NasalSpirantLengthening: *ʃ*ie*r*ă*n*ą
 NasalSpirantLoss: *ʃ*ie*r*ă*n*ą
 WeakTailNasalLoss: *ʃ*ie*r*ă*n
@@ -6618,6 +6905,7 @@ WsPalatalDiphthongization: *ʃ*ēa*p*ą
 IUmlaut: *ʃ*ēa*p*ą
 JClusterCoalescence: *ʃ*ēa*p*ą
 BackMutation: *ʃ*ēa*p*ą
+WsPalatalUmlaut: *ʃ*ēa*p*ą
 NasalSpirantLengthening: *ʃ*ēa*p*ą
 NasalSpirantLoss: *ʃ*ēa*p*ą
 WeakTailNasalLoss: *ʃ*ēa*p*ą
@@ -6672,6 +6960,7 @@ WsPalatalDiphthongization: *ʃ*ie*l*d*u
 IUmlaut: *ʃ*ie*l*d*u
 JClusterCoalescence: *ʃ*ie*l*d*u
 BackMutation: *ʃ*ie*l*d*u
+WsPalatalUmlaut: *ʃ*ie*l*d*u
 NasalSpirantLengthening: *ʃ*ie*l*d*u
 NasalSpirantLoss: *ʃ*ie*l*d*u
 WeakTailNasalLoss: *ʃ*ie*l*d*u
@@ -6726,6 +7015,7 @@ WsPalatalDiphthongization: *ʃ*ī*n*ă*n*ą
 IUmlaut: *ʃ*ī*n*ă*n*ą
 JClusterCoalescence: *ʃ*ī*n*ă*n*ą
 BackMutation: *ʃ*ī*n*ă*n*ą
+WsPalatalUmlaut: *ʃ*ī*n*ă*n*ą
 NasalSpirantLengthening: *ʃ*ī*n*ă*n*ą
 NasalSpirantLoss: *ʃ*ī*n*ă*n*ą
 WeakTailNasalLoss: *ʃ*ī*n*ă*n
@@ -6780,6 +7070,7 @@ WsPalatalDiphthongization: *ʃ*ū*r*u
 IUmlaut: *ʃ*ū*r*u
 JClusterCoalescence: *ʃ*ū*r*u
 BackMutation: *ʃ*ū*r*u
+WsPalatalUmlaut: *ʃ*ū*r*u
 NasalSpirantLengthening: *ʃ*ū*r*u
 NasalSpirantLoss: *ʃ*ū*r*u
 WeakTailNasalLoss: *ʃ*ū*r*u
@@ -6834,6 +7125,7 @@ WsPalatalDiphthongization: *s*a*n*ʤ*j*ă*n*ą
 IUmlaut: *s*e*n*ʤ*j*ă*n*ą
 JClusterCoalescence: *s*e*n*ʤ*j*ă*n*ą
 BackMutation: *s*e*n*ʤ*j*ă*n*ą
+WsPalatalUmlaut: *s*e*n*ʤ*j*ă*n*ą
 NasalSpirantLengthening: *s*e*n*ʤ*j*ă*n*ą
 NasalSpirantLoss: *s*e*n*ʤ*j*ă*n*ą
 WeakTailNasalLoss: *s*e*n*ʤ*j*ă*n
@@ -6888,6 +7180,7 @@ WsPalatalDiphthongization: *s*e*t*t*j*ă*n*ą
 IUmlaut: *s*i*t*t*j*ă*n*ą
 JClusterCoalescence: *s*i*t*t*j*ă*n*ą
 BackMutation: *s*i*t*t*j*ă*n*ą
+WsPalatalUmlaut: *s*i*t*t*j*ă*n*ą
 NasalSpirantLengthening: *s*i*t*t*j*ă*n*ą
 NasalSpirantLoss: *s*i*t*t*j*ă*n*ą
 WeakTailNasalLoss: *s*i*t*t*j*ă*n
@@ -6911,6 +7204,61 @@ GlideDeletion: *s*i*t*t*a*n
 Epenthesis: *s*i*t*t*a*n
 Orthography: sittan
 Surface: sittan
+
+--- six ---
+PROTO: *sexs
+EXPECTED: six
+OUTPUTS: six
+
+ProtoInput: *s*e*x*s
+InitialKn: *s*e*x*s
+Palatalisation: *s*e*x*s
+ConsonantRules: *s*e*x*s
+WestGermanic: *s*e*x*s
+NWGmcULowering: *s*e*x*s
+NWGmcFinalLongORaising: *s*e*x*s
+NWGmcLongELowering: *s*e*x*s
+NWGmcLongENasalRounding: *s*e*x*s
+AuFronting: *s*e*x*s
+WWSimplification: *s*e*x*s
+DiphthongLeveling: *s*e*x*s
+EwLongDiphthong: *s*e*x*s
+AngloFrisianBrightening: *s*e*x*s
+BreakingLengthening: *s*eo*x*s
+VelarFricPal: *s*eo*x*s
+ARestoration: *s*eo*x*s
+FinalWeakSchwaApocope: *s*eo*x*s
+JGemination: *s*eo*x*s
+SkPalatalization: *s*eo*x*s
+VelarPalatalization: *s*eo*x*s
+WsPalatalDiphthongization: *s*eo*x*s
+IUmlaut: *s*eo*x*s
+JClusterCoalescence: *s*eo*x*s
+BackMutation: *s*eo*x*s
+WsPalatalUmlaut: *s*i*x*s
+NasalSpirantLengthening: *s*i*x*s
+NasalSpirantLoss: *s*i*x*s
+WeakTailNasalLoss: *s*i*x*s
+WeightMarkers: *s*i*x*s
+HighVowelApocope: *s*i*x*s
+HeavySyllableNasalApocope: *s*i*x*s
+WeakTailReduction: *s*i*x*s
+JLossAfterHeavy: *s*i*x*s
+IntervocalicJVocalization: *s*i*x*s
+WeightCleanup: *s*i*x*s
+HLoss: *s*i*x*s
+Contraction: *s*i*x*s
+ProtoToOEWeakTail: *s*i*x*s
+ProtoToOEWeightMarkers: *s*i*x*s
+ProtoToOEApocope: *s*i*x*s
+ProtoToOEWeightCleanup: *s*i*x*s
+ProtoToOE: *s*i*x*s
+WGlide: *s*i*x*s
+GhMarker: *s*i*GH*s
+GlideDeletion: *s*i*GH*s
+Epenthesis: *s*i*x*s
+Orthography: six
+Surface: six
 
 --- slay ---
 PROTO: *slaxăną
@@ -6942,6 +7290,7 @@ WsPalatalDiphthongization: *s*l*ea*x*ă*n*ą
 IUmlaut: *s*l*ea*x*ă*n*ą
 JClusterCoalescence: *s*l*ea*x*ă*n*ą
 BackMutation: *s*l*ea*x*ă*n*ą
+WsPalatalUmlaut: *s*l*ea*x*ă*n*ą
 NasalSpirantLengthening: *s*l*ea*x*ă*n*ą
 NasalSpirantLoss: *s*l*ea*x*ă*n*ą
 WeakTailNasalLoss: *s*l*ea*x*ă*n
@@ -6996,6 +7345,7 @@ WsPalatalDiphthongization: *s*l*ī*m*ą
 IUmlaut: *s*l*ī*m*ą
 JClusterCoalescence: *s*l*ī*m*ą
 BackMutation: *s*l*ī*m*ą
+WsPalatalUmlaut: *s*l*ī*m*ą
 NasalSpirantLengthening: *s*l*ī*m*ą
 NasalSpirantLoss: *s*l*ī*m*ą
 WeakTailNasalLoss: *s*l*ī*m
@@ -7050,6 +7400,7 @@ WsPalatalDiphthongization: *s*o*r*g*u
 IUmlaut: *s*o*r*g*u
 JClusterCoalescence: *s*o*r*g*u
 BackMutation: *s*o*r*g*u
+WsPalatalUmlaut: *s*o*r*g*u
 NasalSpirantLengthening: *s*o*r*g*u
 NasalSpirantLoss: *s*o*r*g*u
 WeakTailNasalLoss: *s*o*r*g*u
@@ -7104,6 +7455,7 @@ WsPalatalDiphthongization: *s*p*a*n*n*u
 IUmlaut: *s*p*a*n*n*u
 JClusterCoalescence: *s*p*a*n*n*u
 BackMutation: *s*p*a*n*n*u
+WsPalatalUmlaut: *s*p*a*n*n*u
 NasalSpirantLengthening: *s*p*a*n*n*u
 NasalSpirantLoss: *s*p*a*n*n*u
 WeakTailNasalLoss: *s*p*a*n*n*u
@@ -7158,6 +7510,7 @@ WsPalatalDiphthongization: *s*p*i*n*n*ă*n*ą
 IUmlaut: *s*p*i*n*n*ă*n*ą
 JClusterCoalescence: *s*p*i*n*n*ă*n*ą
 BackMutation: *s*p*i*n*n*ă*n*ą
+WsPalatalUmlaut: *s*p*i*n*n*ă*n*ą
 NasalSpirantLengthening: *s*p*i*n*n*ă*n*ą
 NasalSpirantLoss: *s*p*i*n*n*ă*n*ą
 WeakTailNasalLoss: *s*p*i*n*n*ă*n
@@ -7212,6 +7565,7 @@ WsPalatalDiphthongization: *s*p*ō*n*u
 IUmlaut: *s*p*ō*n*u
 JClusterCoalescence: *s*p*ō*n*u
 BackMutation: *s*p*ō*n*u
+WsPalatalUmlaut: *s*p*ō*n*u
 NasalSpirantLengthening: *s*p*ō*n*u
 NasalSpirantLoss: *s*p*ō*n*u
 WeakTailNasalLoss: *s*p*ō*n*u
@@ -7266,6 +7620,7 @@ WsPalatalDiphthongization: *s*p*r*ā*d*j*ă*n*ą
 IUmlaut: *s*p*r*ǣ*d*j*ă*n*ą
 JClusterCoalescence: *s*p*r*ǣ*d*j*ă*n*ą
 BackMutation: *s*p*r*ǣ*d*j*ă*n*ą
+WsPalatalUmlaut: *s*p*r*ǣ*d*j*ă*n*ą
 NasalSpirantLengthening: *s*p*r*ǣ*d*j*ă*n*ą
 NasalSpirantLoss: *s*p*r*ǣ*d*j*ă*n*ą
 WeakTailNasalLoss: *s*p*r*ǣ*d*j*ă*n
@@ -7320,6 +7675,7 @@ WsPalatalDiphthongization: *s*t*eo*r*β*ă*n*ą
 IUmlaut: *s*t*eo*r*β*ă*n*ą
 JClusterCoalescence: *s*t*eo*r*β*ă*n*ą
 BackMutation: *s*t*eo*r*β*ă*n*ą
+WsPalatalUmlaut: *s*t*eo*r*β*ă*n*ą
 NasalSpirantLengthening: *s*t*eo*r*β*ă*n*ą
 NasalSpirantLoss: *s*t*eo*r*β*ă*n*ą
 WeakTailNasalLoss: *s*t*eo*r*β*ă*n
@@ -7374,6 +7730,7 @@ WsPalatalDiphthongization: *s*t*e*l*ă*n*ą
 IUmlaut: *s*t*e*l*ă*n*ą
 JClusterCoalescence: *s*t*e*l*ă*n*ą
 BackMutation: *s*t*e*l*ă*n*ą
+WsPalatalUmlaut: *s*t*e*l*ă*n*ą
 NasalSpirantLengthening: *s*t*e*l*ă*n*ą
 NasalSpirantLoss: *s*t*e*l*ă*n*ą
 WeakTailNasalLoss: *s*t*e*l*ă*n
@@ -7428,6 +7785,7 @@ WsPalatalDiphthongization: *s*t*o*k*k
 IUmlaut: *s*t*o*k*k
 JClusterCoalescence: *s*t*o*k*k
 BackMutation: *s*t*o*k*k
+WsPalatalUmlaut: *s*t*o*k*k
 NasalSpirantLengthening: *s*t*o*k*k
 NasalSpirantLoss: *s*t*o*k*k
 WeakTailNasalLoss: *s*t*o*k*k
@@ -7482,6 +7840,7 @@ WsPalatalDiphthongization: *s*t*ā*n
 IUmlaut: *s*t*ā*n
 JClusterCoalescence: *s*t*ā*n
 BackMutation: *s*t*ā*n
+WsPalatalUmlaut: *s*t*ā*n
 NasalSpirantLengthening: *s*t*ā*n
 NasalSpirantLoss: *s*t*ā*n
 WeakTailNasalLoss: *s*t*ā*n
@@ -7536,6 +7895,7 @@ WsPalatalDiphthongization: *s*t*ō*l
 IUmlaut: *s*t*ō*l
 JClusterCoalescence: *s*t*ō*l
 BackMutation: *s*t*ō*l
+WsPalatalUmlaut: *s*t*ō*l
 NasalSpirantLengthening: *s*t*ō*l
 NasalSpirantLoss: *s*t*ō*l
 WeakTailNasalLoss: *s*t*ō*l
@@ -7590,6 +7950,7 @@ WsPalatalDiphthongization: *s*t*o*r*k
 IUmlaut: *s*t*o*r*k
 JClusterCoalescence: *s*t*o*r*k
 BackMutation: *s*t*o*r*k
+WsPalatalUmlaut: *s*t*o*r*k
 NasalSpirantLengthening: *s*t*o*r*k
 NasalSpirantLoss: *s*t*o*r*k
 WeakTailNasalLoss: *s*t*o*r*k
@@ -7644,6 +8005,7 @@ WsPalatalDiphthongization: *s*t*o*r*m
 IUmlaut: *s*t*o*r*m
 JClusterCoalescence: *s*t*o*r*m
 BackMutation: *s*t*o*r*m
+WsPalatalUmlaut: *s*t*o*r*m
 NasalSpirantLengthening: *s*t*o*r*m
 NasalSpirantLoss: *s*t*o*r*m
 WeakTailNasalLoss: *s*t*o*r*m
@@ -7698,6 +8060,7 @@ WsPalatalDiphthongization: *s*t*r*ēa*m
 IUmlaut: *s*t*r*ēa*m
 JClusterCoalescence: *s*t*r*ēa*m
 BackMutation: *s*t*r*ēa*m
+WsPalatalUmlaut: *s*t*r*ēa*m
 NasalSpirantLengthening: *s*t*r*ēa*m
 NasalSpirantLoss: *s*t*r*ēa*m
 WeakTailNasalLoss: *s*t*r*ēa*m
@@ -7752,6 +8115,7 @@ WsPalatalDiphthongization: *s*t*r*a*n*ʤ*i
 IUmlaut: *s*t*r*e*n*ʤ*i
 JClusterCoalescence: *s*t*r*e*n*ʤ*i
 BackMutation: *s*t*r*e*n*ʤ*i
+WsPalatalUmlaut: *s*t*r*e*n*ʤ*i
 NasalSpirantLengthening: *s*t*r*e*n*ʤ*i
 NasalSpirantLoss: *s*t*r*e*n*ʤ*i
 WeakTailNasalLoss: *s*t*r*e*n*ʤ*i
@@ -7806,6 +8170,7 @@ WsPalatalDiphthongization: *s*t*ō*d*ą
 IUmlaut: *s*t*ō*d*ą
 JClusterCoalescence: *s*t*ō*d*ą
 BackMutation: *s*t*ō*d*ą
+WsPalatalUmlaut: *s*t*ō*d*ą
 NasalSpirantLengthening: *s*t*ō*d*ą
 NasalSpirantLoss: *s*t*ō*d*ą
 WeakTailNasalLoss: *s*t*ō*d*ą
@@ -7860,6 +8225,7 @@ WsPalatalDiphthongization: *s*ū*p*ă*n*ą
 IUmlaut: *s*ū*p*ă*n*ą
 JClusterCoalescence: *s*ū*p*ă*n*ą
 BackMutation: *s*ū*p*ă*n*ą
+WsPalatalUmlaut: *s*ū*p*ă*n*ą
 NasalSpirantLengthening: *s*ū*p*ă*n*ą
 NasalSpirantLoss: *s*ū*p*ă*n*ą
 WeakTailNasalLoss: *s*ū*p*ă*n
@@ -7914,6 +8280,7 @@ WsPalatalDiphthongization: *s*w*a*n*æ*s
 IUmlaut: *s*w*a*n*æ*s
 JClusterCoalescence: *s*w*a*n*æ*s
 BackMutation: *s*w*a*n*æ*s
+WsPalatalUmlaut: *s*w*a*n*æ*s
 NasalSpirantLengthening: *s*w*a*n*æ*s
 NasalSpirantLoss: *s*w*a*n*æ*s
 WeakTailNasalLoss: *s*w*a*n*æ*s
@@ -7968,6 +8335,7 @@ WsPalatalDiphthongization: *s*w*e*l*l*ă*n*ą
 IUmlaut: *s*w*e*l*l*ă*n*ą
 JClusterCoalescence: *s*w*e*l*l*ă*n*ą
 BackMutation: *s*w*e*l*l*ă*n*ą
+WsPalatalUmlaut: *s*w*e*l*l*ă*n*ą
 NasalSpirantLengthening: *s*w*e*l*l*ă*n*ą
 NasalSpirantLoss: *s*w*e*l*l*ă*n*ą
 WeakTailNasalLoss: *s*w*e*l*l*ă*n
@@ -8022,6 +8390,7 @@ WsPalatalDiphthongization: *s*w*i*m*m*ă*n*ą
 IUmlaut: *s*w*i*m*m*ă*n*ą
 JClusterCoalescence: *s*w*i*m*m*ă*n*ą
 BackMutation: *s*w*i*m*m*ă*n*ą
+WsPalatalUmlaut: *s*w*i*m*m*ă*n*ą
 NasalSpirantLengthening: *s*w*i*m*m*ă*n*ą
 NasalSpirantLoss: *s*w*i*m*m*ă*n*ą
 WeakTailNasalLoss: *s*w*i*m*m*ă*n
@@ -8076,6 +8445,7 @@ WsPalatalDiphthongization: *s*w*eo*r*d*ą
 IUmlaut: *s*w*eo*r*d*ą
 JClusterCoalescence: *s*w*eo*r*d*ą
 BackMutation: *s*w*eo*r*d*ą
+WsPalatalUmlaut: *s*w*eo*r*d*ą
 NasalSpirantLengthening: *s*w*eo*r*d*ą
 NasalSpirantLoss: *s*w*eo*r*d*ą
 WeakTailNasalLoss: *s*w*eo*r*d*ą
@@ -8130,6 +8500,7 @@ WsPalatalDiphthongization: *θ*ēo*β
 IUmlaut: *θ*ēo*β
 JClusterCoalescence: *θ*ēo*β
 BackMutation: *θ*ēo*β
+WsPalatalUmlaut: *θ*ēo*β
 NasalSpirantLengthening: *θ*ēo*β
 NasalSpirantLoss: *θ*ēo*β
 WeakTailNasalLoss: *θ*ēo*β
@@ -8184,6 +8555,7 @@ WsPalatalDiphthongization: *θ*i*n*g*ą
 IUmlaut: *θ*i*n*g*ą
 JClusterCoalescence: *θ*i*n*g*ą
 BackMutation: *θ*i*n*g*ą
+WsPalatalUmlaut: *θ*i*n*g*ą
 NasalSpirantLengthening: *θ*i*n*g*ą
 NasalSpirantLoss: *θ*i*n*g*ą
 WeakTailNasalLoss: *θ*i*n*g*ą
@@ -8238,6 +8610,7 @@ WsPalatalDiphthongization: *θ*u*r*s*t*u
 IUmlaut: *θ*u*r*s*t*u
 JClusterCoalescence: *θ*u*r*s*t*u
 BackMutation: *θ*u*r*s*t*u
+WsPalatalUmlaut: *θ*u*r*s*t*u
 NasalSpirantLengthening: *θ*u*r*s*t*u
 NasalSpirantLoss: *θ*u*r*s*t*u
 WeakTailNasalLoss: *θ*u*r*s*t*u
@@ -8292,6 +8665,7 @@ WsPalatalDiphthongization: *θ*e*s*t*i*l
 IUmlaut: *θ*i*s*t*i*l
 JClusterCoalescence: *θ*i*s*t*i*l
 BackMutation: *θ*i*s*t*i*l
+WsPalatalUmlaut: *θ*i*s*t*i*l
 NasalSpirantLengthening: *θ*i*s*t*i*l
 NasalSpirantLoss: *θ*i*s*t*i*l
 WeakTailNasalLoss: *θ*i*s*t*i*l
@@ -8346,6 +8720,7 @@ WsPalatalDiphthongization: *θ*r*e*ʃ*ă*n*ą
 IUmlaut: *θ*r*e*ʃ*ă*n*ą
 JClusterCoalescence: *θ*r*e*ʃ*ă*n*ą
 BackMutation: *θ*r*e*ʃ*ă*n*ą
+WsPalatalUmlaut: *θ*r*e*ʃ*ă*n*ą
 NasalSpirantLengthening: *θ*r*e*ʃ*ă*n*ą
 NasalSpirantLoss: *θ*r*e*ʃ*ă*n*ą
 WeakTailNasalLoss: *θ*r*e*ʃ*ă*n
@@ -8400,6 +8775,7 @@ WsPalatalDiphthongization: *θ*u*n*r
 IUmlaut: *θ*u*n*r
 JClusterCoalescence: *θ*u*n*r
 BackMutation: *θ*u*n*r
+WsPalatalUmlaut: *θ*u*n*r
 NasalSpirantLengthening: *θ*u*n*r
 NasalSpirantLoss: *θ*u*n*r
 WeakTailNasalLoss: *θ*u*n*r
@@ -8454,6 +8830,7 @@ WsPalatalDiphthongization: *t*r*e*d*ă*n*ą
 IUmlaut: *t*r*e*d*ă*n*ą
 JClusterCoalescence: *t*r*e*d*ă*n*ą
 BackMutation: *t*r*e*d*ă*n*ą
+WsPalatalUmlaut: *t*r*e*d*ă*n*ą
 NasalSpirantLengthening: *t*r*e*d*ă*n*ą
 NasalSpirantLoss: *t*r*e*d*ă*n*ą
 WeakTailNasalLoss: *t*r*e*d*ă*n
@@ -8508,6 +8885,7 @@ WsPalatalDiphthongization: *w*æ*ʤ*n
 IUmlaut: *w*æ*ʤ*n
 JClusterCoalescence: *w*æ*ʤ*n
 BackMutation: *w*æ*ʤ*n
+WsPalatalUmlaut: *w*æ*ʤ*n
 NasalSpirantLengthening: *w*æ*ʤ*n
 NasalSpirantLoss: *w*æ*ʤ*n
 WeakTailNasalLoss: *w*æ*ʤ*n
@@ -8562,6 +8940,7 @@ WsPalatalDiphthongization: *w*ea*r*p*ą
 IUmlaut: *w*ea*r*p*ą
 JClusterCoalescence: *w*ea*r*p*ą
 BackMutation: *w*ea*r*p*ą
+WsPalatalUmlaut: *w*ea*r*p*ą
 NasalSpirantLengthening: *w*ea*r*p*ą
 NasalSpirantLoss: *w*ea*r*p*ą
 WeakTailNasalLoss: *w*ea*r*p*ą
@@ -8616,6 +8995,7 @@ WsPalatalDiphthongization: *w*ea*x*s*ą
 IUmlaut: *w*ea*x*s*ą
 JClusterCoalescence: *w*ea*x*s*ą
 BackMutation: *w*ea*x*s*ą
+WsPalatalUmlaut: *w*ea*x*s*ą
 NasalSpirantLengthening: *w*ea*x*s*ą
 NasalSpirantLoss: *w*ea*x*s*ą
 WeakTailNasalLoss: *w*ea*x*s*ą
@@ -8670,6 +9050,7 @@ WsPalatalDiphthongization: *w*e*d*r*ą
 IUmlaut: *w*e*d*r*ą
 JClusterCoalescence: *w*e*d*r*ą
 BackMutation: *w*e*d*r*ą
+WsPalatalUmlaut: *w*e*d*r*ą
 NasalSpirantLengthening: *w*e*d*r*ą
 NasalSpirantLoss: *w*e*d*r*ą
 WeakTailNasalLoss: *w*e*d*r*ą
@@ -8724,6 +9105,7 @@ WsPalatalDiphthongization: *w*e*β*ă*n*ą
 IUmlaut: *w*e*β*ă*n*ą
 JClusterCoalescence: *w*e*β*ă*n*ą
 BackMutation: *w*e*β*ă*n*ą
+WsPalatalUmlaut: *w*e*β*ă*n*ą
 NasalSpirantLengthening: *w*e*β*ă*n*ą
 NasalSpirantLoss: *w*e*β*ă*n*ą
 WeakTailNasalLoss: *w*e*β*ă*n
@@ -8778,6 +9160,7 @@ WsPalatalDiphthongization: *x*w*ī*l*u
 IUmlaut: *x*w*ī*l*u
 JClusterCoalescence: *x*w*ī*l*u
 BackMutation: *x*w*ī*l*u
+WsPalatalUmlaut: *x*w*ī*l*u
 NasalSpirantLengthening: *x*w*ī*l*u
 NasalSpirantLoss: *x*w*ī*l*u
 WeakTailNasalLoss: *x*w*ī*l*u
@@ -8832,6 +9215,7 @@ WsPalatalDiphthongization: *w*ea*l*d*ă*n*ą
 IUmlaut: *w*ea*l*d*ă*n*ą
 JClusterCoalescence: *w*ea*l*d*ă*n*ą
 BackMutation: *w*ea*l*d*ă*n*ą
+WsPalatalUmlaut: *w*ea*l*d*ă*n*ą
 NasalSpirantLengthening: *w*ea*l*d*ă*n*ą
 NasalSpirantLoss: *w*ea*l*d*ă*n*ą
 WeakTailNasalLoss: *w*ea*l*d*ă*n
@@ -8886,6 +9270,7 @@ WsPalatalDiphthongization: *w*ī*β*ą
 IUmlaut: *w*ī*β*ą
 JClusterCoalescence: *w*ī*β*ą
 BackMutation: *w*ī*β*ą
+WsPalatalUmlaut: *w*ī*β*ą
 NasalSpirantLengthening: *w*ī*β*ą
 NasalSpirantLoss: *w*ī*β*ą
 WeakTailNasalLoss: *w*ī*β*ą
@@ -8909,6 +9294,61 @@ GlideDeletion: *ʋ*ī*β
 Epenthesis: *w*ī*β
 Orthography: wīf
 Surface: wīf
+
+--- wight ---
+PROTO: *wextiz
+EXPECTED: wiht
+OUTPUTS: wiht
+
+ProtoInput: *w*e*x*t*i*z
+InitialKn: *w*e*x*t*i*z
+Palatalisation: *w*e*x*t*i*z
+ConsonantRules: *w*e*x*t*i
+WestGermanic: *w*e*x*t*i
+NWGmcULowering: *w*e*x*t*i
+NWGmcFinalLongORaising: *w*e*x*t*i
+NWGmcLongELowering: *w*e*x*t*i
+NWGmcLongENasalRounding: *w*e*x*t*i
+AuFronting: *w*e*x*t*i
+WWSimplification: *w*e*x*t*i
+DiphthongLeveling: *w*e*x*t*i
+EwLongDiphthong: *w*e*x*t*i
+AngloFrisianBrightening: *w*e*x*t*i
+BreakingLengthening: *w*eo*x*t*i
+VelarFricPal: *w*eo*x*t*i
+ARestoration: *w*eo*x*t*i
+FinalWeakSchwaApocope: *w*eo*x*t*i
+JGemination: *w*eo*x*t*i
+SkPalatalization: *w*eo*x*t*i
+VelarPalatalization: *w*eo*x*t*i
+WsPalatalDiphthongization: *w*eo*x*t*i
+IUmlaut: *w*ie*x*t*i
+JClusterCoalescence: *w*ie*x*t*i
+BackMutation: *w*ie*x*t*i
+WsPalatalUmlaut: *w*i*x*t*i
+NasalSpirantLengthening: *w*i*x*t*i
+NasalSpirantLoss: *w*i*x*t*i
+WeakTailNasalLoss: *w*i*x*t*i
+WeightMarkers: *w*i*x*t*i
+HighVowelApocope: *w*i*x*t
+HeavySyllableNasalApocope: *w*i*x*t
+WeakTailReduction: *w*i*x*t
+JLossAfterHeavy: *w*i*x*t
+IntervocalicJVocalization: *w*i*x*t
+WeightCleanup: *w*i*x*t
+HLoss: *w*i*x*t
+Contraction: *w*i*x*t
+ProtoToOEWeakTail: *w*i*x*t*i
+ProtoToOEWeightMarkers: *w*i*x*t*i
+ProtoToOEApocope: *w*i*x*t
+ProtoToOEWeightCleanup: *w*i*x*t
+ProtoToOE: *w*i*x*t
+WGlide: *ʋ*i*x*t
+GhMarker: *ʋ*i*GH*t
+GlideDeletion: *ʋ*i*GH*t
+Epenthesis: *w*i*x*t
+Orthography: wiht
+Surface: wiht
 
 --- winter ---
 PROTO: *wintruz
@@ -8940,6 +9380,7 @@ WsPalatalDiphthongization: *w*i*n*t*r*u
 IUmlaut: *w*i*n*t*r*u
 JClusterCoalescence: *w*i*n*t*r*u
 BackMutation: *w*i*n*t*r*u
+WsPalatalUmlaut: *w*i*n*t*r*u
 NasalSpirantLengthening: *w*i*n*t*r*u
 NasalSpirantLoss: *w*i*n*t*r*u
 WeakTailNasalLoss: *w*i*n*t*r*u
@@ -8994,6 +9435,7 @@ WsPalatalDiphthongization: *w*u*n*d*r*ą
 IUmlaut: *w*u*n*d*r*ą
 JClusterCoalescence: *w*u*n*d*r*ą
 BackMutation: *w*u*n*d*r*ą
+WsPalatalUmlaut: *w*u*n*d*r*ą
 NasalSpirantLengthening: *w*u*n*d*r*ą
 NasalSpirantLoss: *w*u*n*d*r*ą
 WeakTailNasalLoss: *w*u*n*d*r*ą
@@ -9048,6 +9490,7 @@ WsPalatalDiphthongization: *w*o*r*d*ą
 IUmlaut: *w*o*r*d*ą
 JClusterCoalescence: *w*o*r*d*ą
 BackMutation: *w*o*r*d*ą
+WsPalatalUmlaut: *w*o*r*d*ą
 NasalSpirantLengthening: *w*o*r*d*ą
 NasalSpirantLoss: *w*o*r*d*ą
 WeakTailNasalLoss: *w*o*r*d*ą
@@ -9102,6 +9545,7 @@ WsPalatalDiphthongization: *w*r*i*n*g*ă*n*ą
 IUmlaut: *w*r*i*n*g*ă*n*ą
 JClusterCoalescence: *w*r*i*n*g*ă*n*ą
 BackMutation: *w*r*i*n*g*ă*n*ą
+WsPalatalUmlaut: *w*r*i*n*g*ă*n*ą
 NasalSpirantLengthening: *w*r*i*n*g*ă*n*ą
 NasalSpirantLoss: *w*r*i*n*g*ă*n*ą
 WeakTailNasalLoss: *w*r*i*n*g*ă*n
@@ -9156,6 +9600,7 @@ WsPalatalDiphthongization: *j*ēa*r*ą
 IUmlaut: *j*ēa*r*ą
 JClusterCoalescence: *j*ēa*r*ą
 BackMutation: *j*ēa*r*ą
+WsPalatalUmlaut: *j*ēa*r*ą
 NasalSpirantLengthening: *j*ēa*r*ą
 NasalSpirantLoss: *j*ēa*r*ą
 WeakTailNasalLoss: *j*ēa*r*ą
@@ -9213,6 +9658,7 @@ WsPalatalDiphthongization: *f*u*n*x*w*s*t*i
 IUmlaut: *f*y*n*x*w*s*t*i
 JClusterCoalescence: *f*y*n*x*w*s*t*i
 BackMutation: *f*y*n*x*w*s*t*i
+WsPalatalUmlaut: *f*y*n*x*w*s*t*i
 NasalSpirantLengthening: *f*y*n*x*w*s*t*i
 NasalSpirantLoss: *f*y*x*w*s*t*i
 WeakTailNasalLoss: *f*y*x*w*s*t*i
@@ -9267,6 +9713,7 @@ WsPalatalDiphthongization [carry]: regnabugōn
 IUmlaut [carry]: regnabugōn
 JClusterCoalescence [carry]: regnabugōn
 BackMutation [carry]: regnabugōn
+WsPalatalUmlaut [carry]: regnabugōn
 NasalSpirantLengthening [carry]: regnabugōn
 NasalSpirantLoss [carry]: regnabugōn
 WeakTailNasalLoss [carry]: regnabugōn
@@ -9321,6 +9768,7 @@ WsPalatalDiphthongization [carry]: sturtijăną
 IUmlaut [carry]: sturtijăną
 JClusterCoalescence [carry]: sturtijăną
 BackMutation [carry]: sturtijăną
+WsPalatalUmlaut [carry]: sturtijăną
 NasalSpirantLengthening [carry]: sturtijăną
 NasalSpirantLoss [carry]: sturtijăną
 WeakTailNasalLoss [carry]: sturtijăną
@@ -9375,6 +9823,7 @@ WsPalatalDiphthongization [carry]: wiraaldiz
 IUmlaut [carry]: wiraaldiz
 JClusterCoalescence [carry]: wiraaldiz
 BackMutation [carry]: wiraaldiz
+WsPalatalUmlaut [carry]: wiraaldiz
 NasalSpirantLengthening [carry]: wiraaldiz
 NasalSpirantLoss [carry]: wiraaldiz
 WeakTailNasalLoss [carry]: wiraaldiz
@@ -9429,6 +9878,7 @@ WsPalatalDiphthongization [carry]: wurmazwurmiz
 IUmlaut [carry]: wurmazwurmiz
 JClusterCoalescence [carry]: wurmazwurmiz
 BackMutation [carry]: wurmazwurmiz
+WsPalatalUmlaut [carry]: wurmazwurmiz
 NasalSpirantLengthening [carry]: wurmazwurmiz
 NasalSpirantLoss [carry]: wurmazwurmiz
 WeakTailNasalLoss [carry]: wurmazwurmiz
@@ -9486,6 +9936,7 @@ WsPalatalDiphthongization: *f*l*ā*s*k
 IUmlaut: *f*l*ā*s*k
 JClusterCoalescence: *f*l*ā*s*k
 BackMutation: *f*l*ā*s*k
+WsPalatalUmlaut: *f*l*ā*s*k
 NasalSpirantLengthening: *f*l*ā*s*k
 NasalSpirantLoss: *f*l*ā*s*k
 WeakTailNasalLoss: *f*l*ā*s*k
@@ -9540,6 +9991,7 @@ WsPalatalDiphthongization: *s*ā
 IUmlaut: *s*ā
 JClusterCoalescence: *s*ā
 BackMutation: *s*ā
+WsPalatalUmlaut: *s*ā
 NasalSpirantLengthening: *s*ā
 NasalSpirantLoss: *s*ā
 WeakTailNasalLoss: *s*ā
@@ -9594,6 +10046,7 @@ WsPalatalDiphthongization: *w*ā*n*ō*j*ă*n*ą
 IUmlaut: *w*ā*n*ē*j*ă*n*ą
 JClusterCoalescence: *w*ā*n*ē*j*ă*n*ą
 BackMutation: *w*ā*n*ē*j*ă*n*ą
+WsPalatalUmlaut: *w*ā*n*ē*j*ă*n*ą
 NasalSpirantLengthening: *w*ā*n*ē*j*ă*n*ą
 NasalSpirantLoss: *w*ā*n*ē*j*ă*n*ą
 WeakTailNasalLoss: *w*ā*n*ē*j*ă*n
@@ -9651,6 +10104,7 @@ WsPalatalDiphthongization: *d*r*a*n*k*ą
 IUmlaut: *d*r*a*n*k*ą
 JClusterCoalescence: *d*r*a*n*k*ą
 BackMutation: *d*r*a*n*k*ą
+WsPalatalUmlaut: *d*r*a*n*k*ą
 NasalSpirantLengthening: *d*r*a*n*k*ą
 NasalSpirantLoss: *d*r*a*n*k*ą
 WeakTailNasalLoss: *d*r*a*n*k*ą
@@ -9705,6 +10159,7 @@ WsPalatalDiphthongization: *f*a*s*t*ō*n*ą
 IUmlaut: *f*a*s*t*ō*n*ą
 JClusterCoalescence: *f*a*s*t*ō*n*ą
 BackMutation: *f*a*s*t*ō*n*ą
+WsPalatalUmlaut: *f*a*s*t*ō*n*ą
 NasalSpirantLengthening: *f*a*s*t*ō*n*ą
 NasalSpirantLoss: *f*a*s*t*ō*n*ą
 WeakTailNasalLoss: *f*a*s*t*ō*n
@@ -9759,6 +10214,7 @@ WsPalatalDiphthongization: *r*a*s*t*u
 IUmlaut: *r*a*s*t*u
 JClusterCoalescence: *r*a*s*t*u
 BackMutation: *r*a*s*t*u
+WsPalatalUmlaut: *r*a*s*t*u
 NasalSpirantLengthening: *r*a*s*t*u
 NasalSpirantLoss: *r*a*s*t*u
 WeakTailNasalLoss: *r*a*s*t*u
@@ -9813,6 +10269,7 @@ WsPalatalDiphthongization: *s*a*p*ō*n
 IUmlaut: *s*a*p*ō*n
 JClusterCoalescence: *s*a*p*ō*n
 BackMutation: *s*a*p*ō*n
+WsPalatalUmlaut: *s*a*p*ō*n
 NasalSpirantLengthening: *s*a*p*ō*n
 NasalSpirantLoss: *s*a*p*ō*n
 WeakTailNasalLoss: *s*a*p*ō*n
@@ -9867,6 +10324,7 @@ WsPalatalDiphthongization: *s*t*a*m*n
 IUmlaut: *s*t*a*m*n
 JClusterCoalescence: *s*t*a*m*n
 BackMutation: *s*t*a*m*n
+WsPalatalUmlaut: *s*t*a*m*n
 NasalSpirantLengthening: *s*t*a*m*n
 NasalSpirantLoss: *s*t*a*m*n
 WeakTailNasalLoss: *s*t*a*m*n
@@ -9921,6 +10379,7 @@ WsPalatalDiphthongization: *t*a*p*p*ō*n
 IUmlaut: *t*a*p*p*ō*n
 JClusterCoalescence: *t*a*p*p*ō*n
 BackMutation: *t*a*p*p*ō*n
+WsPalatalUmlaut: *t*a*p*p*ō*n
 NasalSpirantLengthening: *t*a*p*p*ō*n
 NasalSpirantLoss: *t*a*p*p*ō*n
 WeakTailNasalLoss: *t*a*p*p*ō*n
@@ -9975,6 +10434,7 @@ WsPalatalDiphthongization: *θ*a*n*k
 IUmlaut: *θ*a*n*k
 JClusterCoalescence: *θ*a*n*k
 BackMutation: *θ*a*n*k
+WsPalatalUmlaut: *θ*a*n*k
 NasalSpirantLengthening: *θ*a*n*k
 NasalSpirantLoss: *θ*a*n*k
 WeakTailNasalLoss: *θ*a*n*k
@@ -10032,6 +10492,7 @@ WsPalatalDiphthongization: *b*r*u*s*t
 IUmlaut: *b*r*u*s*t
 JClusterCoalescence: *b*r*u*s*t
 BackMutation: *b*r*u*s*t
+WsPalatalUmlaut: *b*r*u*s*t
 NasalSpirantLengthening: *b*r*u*s*t
 NasalSpirantLoss: *b*r*u*s*t
 WeakTailNasalLoss: *b*r*u*s*t
@@ -10086,6 +10547,7 @@ WsPalatalDiphthongization: *d*a*w*u
 IUmlaut: *d*a*w*u
 JClusterCoalescence: *d*a*w*u
 BackMutation: *d*a*w*u
+WsPalatalUmlaut: *d*a*w*u
 NasalSpirantLengthening: *d*a*w*u
 NasalSpirantLoss: *d*a*w*u
 WeakTailNasalLoss: *d*a*w*u
@@ -10140,6 +10602,7 @@ WsPalatalDiphthongization: *f*e*d*w*ō*r*e
 IUmlaut: *f*e*d*w*ō*r*e
 JClusterCoalescence: *f*e*d*w*ō*r*e
 BackMutation: *f*e*d*w*ō*r*e
+WsPalatalUmlaut: *f*e*d*w*ō*r*e
 NasalSpirantLengthening: *f*e*d*w*ō*r*e
 NasalSpirantLoss: *f*e*d*w*ō*r*e
 WeakTailNasalLoss: *f*e*d*w*ō*r*e
@@ -10194,6 +10657,7 @@ WsPalatalDiphthongization: *f*r*i*j*ō*n*d
 IUmlaut: *f*r*i*j*ō*n*d
 JClusterCoalescence: *f*r*i*j*ō*n*d
 BackMutation: *f*r*i*j*ō*n*d
+WsPalatalUmlaut: *f*r*i*j*ō*n*d
 NasalSpirantLengthening: *f*r*i*j*ō*n*d
 NasalSpirantLoss: *f*r*i*j*ō*n*d
 WeakTailNasalLoss: *f*r*i*j*ō*n*d
@@ -10248,6 +10712,7 @@ WsPalatalDiphthongization: *ç*e*m*e*n
 IUmlaut: *ç*e*m*e*n
 JClusterCoalescence: *ç*e*m*e*n
 BackMutation: *ç*e*m*e*n
+WsPalatalUmlaut: *ç*e*m*e*n
 NasalSpirantLengthening: *ç*e*m*e*n
 NasalSpirantLoss: *ç*e*m*e*n
 WeakTailNasalLoss: *ç*e*m*e*n
@@ -10302,6 +10767,7 @@ WsPalatalDiphthongization: *ʃ*ā*θ*i
 IUmlaut: *ʃ*ǣ*θ*i
 JClusterCoalescence: *ʃ*ǣ*θ*i
 BackMutation: *ʃ*ǣ*θ*i
+WsPalatalUmlaut: *ʃ*ǣ*θ*i
 NasalSpirantLengthening: *ʃ*ǣ*θ*i
 NasalSpirantLoss: *ʃ*ǣ*θ*i
 WeakTailNasalLoss: *ʃ*ǣ*θ*i
@@ -10356,6 +10822,7 @@ WsPalatalDiphthongization: *ʃ*a*w*ō*j*ă*n*ą
 IUmlaut: *ʃ*a*w*ē*j*ă*n*ą
 JClusterCoalescence: *ʃ*a*w*ē*j*ă*n*ą
 BackMutation: *ʃ*a*w*ē*j*ă*n*ą
+WsPalatalUmlaut: *ʃ*a*w*ē*j*ă*n*ą
 NasalSpirantLengthening: *ʃ*a*w*ē*j*ă*n*ą
 NasalSpirantLoss: *ʃ*a*w*ē*j*ă*n*ą
 WeakTailNasalLoss: *ʃ*a*w*ē*j*ă*n
@@ -10410,6 +10877,7 @@ WsPalatalDiphthongization: *w*e*s*l*o*n
 IUmlaut: *w*e*s*l*o*n
 JClusterCoalescence: *w*e*s*l*o*n
 BackMutation: *w*e*s*l*o*n
+WsPalatalUmlaut: *w*e*s*l*o*n
 NasalSpirantLengthening: *w*e*s*l*o*n
 NasalSpirantLoss: *w*e*s*l*o*n
 WeakTailNasalLoss: *w*e*s*l*o*n
@@ -10464,6 +10932,7 @@ WsPalatalDiphthongization: *j*o*k*ą
 IUmlaut: *j*o*k*ą
 JClusterCoalescence: *j*o*k*ą
 BackMutation: *j*o*k*ą
+WsPalatalUmlaut: *j*o*k*ą
 NasalSpirantLengthening: *j*o*k*ą
 NasalSpirantLoss: *j*o*k*ą
 WeakTailNasalLoss: *j*o*k*ą
@@ -10518,6 +10987,7 @@ WsPalatalDiphthongization: *j*u*g*u*n*θ*i
 IUmlaut: *j*u*g*y*n*θ*i
 JClusterCoalescence: *j*u*g*y*n*θ*i
 BackMutation: *j*u*g*y*n*θ*i
+WsPalatalUmlaut: *j*u*g*y*n*θ*i
 NasalSpirantLengthening: *j*u*g*y*n*θ*i
 NasalSpirantLoss: *j*u*g*y*θ*i
 WeakTailNasalLoss: *j*u*g*y*θ*i
@@ -10575,6 +11045,7 @@ WsPalatalDiphthongization: *n*æ*d*r*u
 IUmlaut: *n*æ*d*r*u
 JClusterCoalescence: *n*æ*d*r*u
 BackMutation: *n*æ*d*r*u
+WsPalatalUmlaut: *n*æ*d*r*u
 NasalSpirantLengthening: *n*æ*d*r*u
 NasalSpirantLoss: *n*æ*d*r*u
 WeakTailNasalLoss: *n*æ*d*r*u
@@ -10629,6 +11100,7 @@ WsPalatalDiphthongization: *b*u
 IUmlaut: *b*u
 JClusterCoalescence: *b*u
 BackMutation: *b*u
+WsPalatalUmlaut: *b*u
 NasalSpirantLengthening: *b*u
 NasalSpirantLoss: *b*u
 WeakTailNasalLoss: *b*u
@@ -10683,6 +11155,7 @@ WsPalatalDiphthongization: *ç*æ*w*j*ą
 IUmlaut: *ç*e*w*j*ą
 JClusterCoalescence: *ç*e*w*j*ą
 BackMutation: *ç*eo*w*j*ą
+WsPalatalUmlaut: *ç*eo*w*j*ą
 NasalSpirantLengthening: *ç*eo*w*j*ą
 NasalSpirantLoss: *ç*eo*w*j*ą
 WeakTailNasalLoss: *ç*eo*w*j*ą
@@ -10737,6 +11210,7 @@ WsPalatalDiphthongization: *ç*æ*w*ă*n*ą
 IUmlaut: *ç*æ*w*ă*n*ą
 JClusterCoalescence: *ç*æ*w*ă*n*ą
 BackMutation: *ç*ea*w*ă*n*ą
+WsPalatalUmlaut: *ç*ea*w*ă*n*ą
 NasalSpirantLengthening: *ç*ea*w*ă*n*ą
 NasalSpirantLoss: *ç*ea*w*ă*n*ą
 WeakTailNasalLoss: *ç*ea*w*ă*n
@@ -10791,6 +11265,7 @@ WsPalatalDiphthongization: *m*ie*r*d*u
 IUmlaut: *m*ie*r*d*u
 JClusterCoalescence: *m*ie*r*d*u
 BackMutation: *m*ie*r*d*u
+WsPalatalUmlaut: *m*ie*r*d*u
 NasalSpirantLengthening: *m*ie*r*d*u
 NasalSpirantLoss: *m*ie*r*d*u
 WeakTailNasalLoss: *m*ie*r*d*u
@@ -10845,6 +11320,7 @@ WsPalatalDiphthongization: *s*t*r*æ*w*ą
 IUmlaut: *s*t*r*æ*w*ą
 JClusterCoalescence: *s*t*r*æ*w*ą
 BackMutation: *s*t*r*ea*w*ą
+WsPalatalUmlaut: *s*t*r*ea*w*ą
 NasalSpirantLengthening: *s*t*r*ea*w*ą
 NasalSpirantLoss: *s*t*r*ea*w*ą
 WeakTailNasalLoss: *s*t*r*ea*w*ą
@@ -10899,6 +11375,7 @@ WsPalatalDiphthongization: *t*eo*x*u*n
 IUmlaut: *t*eo*x*u*n
 JClusterCoalescence: *t*eo*x*u*n
 BackMutation: *t*eo*x*u*n
+WsPalatalUmlaut: *t*eo*x*u*n
 NasalSpirantLengthening: *t*eo*x*u*n
 NasalSpirantLoss: *t*eo*x*u*n
 WeakTailNasalLoss: *t*eo*x*u*n
@@ -10956,6 +11433,7 @@ WsPalatalDiphthongization: *x*u*n*ă*g*ą
 IUmlaut: *x*u*n*ă*g*ą
 JClusterCoalescence: *x*u*n*ă*g*ą
 BackMutation: *x*u*n*ă*g*ą
+WsPalatalUmlaut: *x*u*n*ă*g*ą
 NasalSpirantLengthening: *x*u*n*ă*g*ą
 NasalSpirantLoss: *x*u*n*ă*g*ą
 WeakTailNasalLoss: *x*u*n*ă*g*ą
@@ -11013,6 +11491,7 @@ WsPalatalDiphthongization: *l*i*θ*u
 IUmlaut: *l*i*θ*u
 JClusterCoalescence: *l*i*θ*u
 BackMutation: *l*i*θ*u
+WsPalatalUmlaut: *l*i*θ*u
 NasalSpirantLengthening: *l*i*θ*u
 NasalSpirantLoss: *l*i*θ*u
 WeakTailNasalLoss: *l*i*θ*u
@@ -11067,6 +11546,7 @@ WsPalatalDiphthongization: *n*æ*t*i
 IUmlaut: *n*e*t*i
 JClusterCoalescence: *n*e*t*i
 BackMutation: *n*e*t*i
+WsPalatalUmlaut: *n*e*t*i
 NasalSpirantLengthening: *n*e*t*i
 NasalSpirantLoss: *n*e*t*i
 WeakTailNasalLoss: *n*e*t*i
@@ -11121,6 +11601,7 @@ WsPalatalDiphthongization: *s*ā*w*ă*l*u
 IUmlaut: *s*ā*w*ă*l*u
 JClusterCoalescence: *s*ā*w*ă*l*u
 BackMutation: *s*ā*w*ă*l*u
+WsPalatalUmlaut: *s*ā*w*ă*l*u
 NasalSpirantLengthening: *s*ā*w*ă*l*u
 NasalSpirantLoss: *s*ā*w*ă*l*u
 WeakTailNasalLoss: *s*ā*w*ă*l*u
@@ -11175,6 +11656,7 @@ WsPalatalDiphthongization: *s*t*æ*β*i
 IUmlaut: *s*t*e*β*i
 JClusterCoalescence: *s*t*e*β*i
 BackMutation: *s*t*e*β*i
+WsPalatalUmlaut: *s*t*e*β*i
 NasalSpirantLengthening: *s*t*e*β*i
 NasalSpirantLoss: *s*t*e*β*i
 WeakTailNasalLoss: *s*t*e*β*i
@@ -11229,6 +11711,7 @@ WsPalatalDiphthongization: *w*e*s*t*ă*n*ē
 IUmlaut: *w*e*s*t*ă*n*ē
 JClusterCoalescence: *w*e*s*t*ă*n*ē
 BackMutation: *w*e*s*t*ă*n*ē
+WsPalatalUmlaut: *w*e*s*t*ă*n*ē
 NasalSpirantLengthening: *w*e*s*t*ă*n*ē
 NasalSpirantLoss: *w*e*s*t*ă*n*ē
 WeakTailNasalLoss: *w*e*s*t*ă*n*ē
@@ -11283,6 +11766,7 @@ WsPalatalDiphthongization: *w*o*l*l*o
 IUmlaut: *w*o*l*l*o
 JClusterCoalescence: *w*o*l*l*o
 BackMutation: *w*o*l*l*o
+WsPalatalUmlaut: *w*o*l*l*o
 NasalSpirantLengthening: *w*o*l*l*o
 NasalSpirantLoss: *w*o*l*l*o
 WeakTailNasalLoss: *w*o*l*l*o
@@ -11340,6 +11824,7 @@ WsPalatalDiphthongization: *d*ō*n*ą
 IUmlaut: *d*ō*n*ą
 JClusterCoalescence: *d*ō*n*ą
 BackMutation: *d*ō*n*ą
+WsPalatalUmlaut: *d*ō*n*ą
 NasalSpirantLengthening: *d*ō*n*ą
 NasalSpirantLoss: *d*ō*n*ą
 WeakTailNasalLoss: *d*ō*n
@@ -11394,6 +11879,7 @@ WsPalatalDiphthongization: *f*i*n*θ*ă*n*ą
 IUmlaut: *f*i*n*θ*ă*n*ą
 JClusterCoalescence: *f*i*n*θ*ă*n*ą
 BackMutation: *f*i*n*θ*ă*n*ą
+WsPalatalUmlaut: *f*i*n*θ*ă*n*ą
 NasalSpirantLengthening: *f*ī*n*θ*ă*n*ą
 NasalSpirantLoss: *f*ī*θ*ă*n*ą
 WeakTailNasalLoss: *f*ī*θ*ă*n
@@ -11451,6 +11937,7 @@ WsPalatalDiphthongization: *b*ēa*ʤ*j*ă*n*ą
 IUmlaut: *b*īe*ʤ*j*ă*n*ą
 JClusterCoalescence: *b*īe*ʤ*j*ă*n*ą
 BackMutation: *b*īe*ʤ*j*ă*n*ą
+WsPalatalUmlaut: *b*īe*ʤ*j*ă*n*ą
 NasalSpirantLengthening: *b*īe*ʤ*j*ă*n*ą
 NasalSpirantLoss: *b*īe*ʤ*j*ă*n*ą
 WeakTailNasalLoss: *b*īe*ʤ*j*ă*n
@@ -11505,6 +11992,7 @@ WsPalatalDiphthongization: *b*ēo*g*ă*n*ą
 IUmlaut: *b*ēo*g*ă*n*ą
 JClusterCoalescence: *b*ēo*g*ă*n*ą
 BackMutation: *b*ēo*g*ă*n*ą
+WsPalatalUmlaut: *b*ēo*g*ă*n*ą
 NasalSpirantLengthening: *b*ēo*g*ă*n*ą
 NasalSpirantLoss: *b*ēo*g*ă*n*ą
 WeakTailNasalLoss: *b*ēo*g*ă*n
@@ -11559,6 +12047,7 @@ WsPalatalDiphthongization: *b*o*g*ō*n
 IUmlaut: *b*o*g*ō*n
 JClusterCoalescence: *b*o*g*ō*n
 BackMutation: *b*o*g*ō*n
+WsPalatalUmlaut: *b*o*g*ō*n
 NasalSpirantLengthening: *b*o*g*ō*n
 NasalSpirantLoss: *b*o*g*ō*n
 WeakTailNasalLoss: *b*o*g*ō*n
@@ -11613,6 +12102,7 @@ WsPalatalDiphthongization: *k*ō*w
 IUmlaut: *k*ō*w
 JClusterCoalescence: *k*ō*w
 BackMutation: *k*ō*w
+WsPalatalUmlaut: *k*ō*w
 NasalSpirantLengthening: *k*ō*w
 NasalSpirantLoss: *k*ō*w
 WeakTailNasalLoss: *k*ō*w
@@ -11667,6 +12157,7 @@ WsPalatalDiphthongization: *d*e*l*l*j
 IUmlaut: *d*i*l*l*j
 JClusterCoalescence: *d*i*l*l*j
 BackMutation: *d*i*l*l*j
+WsPalatalUmlaut: *d*i*l*l*j
 NasalSpirantLengthening: *d*i*l*l*j
 NasalSpirantLoss: *d*i*l*l*j
 WeakTailNasalLoss: *d*i*l*l*j
@@ -11721,6 +12212,7 @@ WsPalatalDiphthongization: *d*o*r*ą
 IUmlaut: *d*o*r*ą
 JClusterCoalescence: *d*o*r*ą
 BackMutation: *d*o*r*ą
+WsPalatalUmlaut: *d*o*r*ą
 NasalSpirantLengthening: *d*o*r*ą
 NasalSpirantLoss: *d*o*r*ą
 WeakTailNasalLoss: *d*o*r*ą
@@ -11775,6 +12267,7 @@ WsPalatalDiphthongization: *f*ū*r*i
 IUmlaut: *f*ȳ*r*i
 JClusterCoalescence: *f*ȳ*r*i
 BackMutation: *f*ȳ*r*i
+WsPalatalUmlaut: *f*ȳ*r*i
 NasalSpirantLengthening: *f*ȳ*r*i
 NasalSpirantLoss: *f*ȳ*r*i
 WeakTailNasalLoss: *f*ȳ*r*i
@@ -11829,6 +12322,7 @@ WsPalatalDiphthongization: *f*l*a*s*k*u
 IUmlaut: *f*l*a*s*k*u
 JClusterCoalescence: *f*l*a*s*k*u
 BackMutation: *f*l*a*s*k*u
+WsPalatalUmlaut: *f*l*a*s*k*u
 NasalSpirantLengthening: *f*l*a*s*k*u
 NasalSpirantLoss: *f*l*a*s*k*u
 WeakTailNasalLoss: *f*l*a*s*k*u
@@ -11883,6 +12377,7 @@ WsPalatalDiphthongization: *f*o*l*ō*n
 IUmlaut: *f*o*l*ō*n
 JClusterCoalescence: *f*o*l*ō*n
 BackMutation: *f*o*l*ō*n
+WsPalatalUmlaut: *f*o*l*ō*n
 NasalSpirantLengthening: *f*o*l*ō*n
 NasalSpirantLoss: *f*o*l*ō*n
 WeakTailNasalLoss: *f*o*l*ō*n
@@ -11937,6 +12432,7 @@ WsPalatalDiphthongization: *f*u*r*x*t*ī*n
 IUmlaut: *f*y*r*x*t*ī*n
 JClusterCoalescence: *f*y*r*x*t*ī*n
 BackMutation: *f*y*r*x*t*ī*n
+WsPalatalUmlaut: *f*y*r*x*t*ī*n
 NasalSpirantLengthening: *f*y*r*x*t*ī*n
 NasalSpirantLoss: *f*y*r*x*t*ī*n
 WeakTailNasalLoss: *f*y*r*x*t*ī*n
@@ -11991,6 +12487,7 @@ WsPalatalDiphthongization: *ʤ*ea*l*l*ą
 IUmlaut: *ʤ*ea*l*l*ą
 JClusterCoalescence: *ʤ*ea*l*l*ą
 BackMutation: *ʤ*ea*l*l*ą
+WsPalatalUmlaut: *ʤ*ea*l*l*ą
 NasalSpirantLengthening: *ʤ*ea*l*l*ą
 NasalSpirantLoss: *ʤ*ea*l*l*ą
 WeakTailNasalLoss: *ʤ*ea*l*l*ą
@@ -12045,6 +12542,7 @@ WsPalatalDiphthongization: *x*a*n*d*l*ō*j*ă*n*ą
 IUmlaut: *x*a*n*d*l*ē*j*ă*n*ą
 JClusterCoalescence: *x*a*n*d*l*ē*j*ă*n*ą
 BackMutation: *x*a*n*d*l*ē*j*ă*n*ą
+WsPalatalUmlaut: *x*a*n*d*l*ē*j*ă*n*ą
 NasalSpirantLengthening: *x*a*n*d*l*ē*j*ă*n*ą
 NasalSpirantLoss: *x*a*n*d*l*ē*j*ă*n*ą
 WeakTailNasalLoss: *x*a*n*d*l*ē*j*ă*n
@@ -12099,6 +12597,7 @@ WsPalatalDiphthongization: *ç*a*g*ō*n
 IUmlaut: *ç*a*g*ō*n
 JClusterCoalescence: *ç*a*g*ō*n
 BackMutation: *ç*a*g*ō*n
+WsPalatalUmlaut: *ç*a*g*ō*n
 NasalSpirantLengthening: *ç*a*g*ō*n
 NasalSpirantLoss: *ç*a*g*ō*n
 WeakTailNasalLoss: *ç*a*g*ō*n
@@ -12153,6 +12652,7 @@ WsPalatalDiphthongization: *ç*eo*r*t*ō*n
 IUmlaut: *ç*eo*r*t*ō*n
 JClusterCoalescence: *ç*eo*r*t*ō*n
 BackMutation: *ç*eo*r*t*ō*n
+WsPalatalUmlaut: *ç*eo*r*t*ō*n
 NasalSpirantLengthening: *ç*eo*r*t*ō*n
 NasalSpirantLoss: *ç*eo*r*t*ō*n
 WeakTailNasalLoss: *ç*eo*r*t*ō*n
@@ -12207,6 +12707,7 @@ WsPalatalDiphthongization: *ç*e*l*m
 IUmlaut: *ç*e*l*m
 JClusterCoalescence: *ç*e*l*m
 BackMutation: *ç*e*l*m
+WsPalatalUmlaut: *ç*e*l*m
 NasalSpirantLengthening: *ç*e*l*m
 NasalSpirantLoss: *ç*e*l*m
 WeakTailNasalLoss: *ç*e*l*m
@@ -12261,6 +12762,7 @@ WsPalatalDiphthongization: *Kn*o*p*p
 IUmlaut: *Kn*o*p*p
 JClusterCoalescence: *Kn*o*p*p
 BackMutation: *Kn*o*p*p
+WsPalatalUmlaut: *Kn*o*p*p
 NasalSpirantLengthening: *Kn*o*p*p
 NasalSpirantLoss: *Kn*o*p*p
 WeakTailNasalLoss: *Kn*o*p*p
@@ -12315,6 +12817,7 @@ WsPalatalDiphthongization: *l*æ*β*b
 IUmlaut: *l*æ*β*b
 JClusterCoalescence: *l*æ*β*b
 BackMutation: *l*æ*β*b
+WsPalatalUmlaut: *l*æ*β*b
 NasalSpirantLengthening: *l*æ*β*b
 NasalSpirantLoss: *l*æ*β*b
 WeakTailNasalLoss: *l*æ*β*b
@@ -12369,6 +12872,7 @@ WsPalatalDiphthongization: *l*ī*n*ă*n
 IUmlaut: *l*ī*n*ă*n
 JClusterCoalescence: *l*ī*n*ă*n
 BackMutation: *l*ī*n*ă*n
+WsPalatalUmlaut: *l*ī*n*ă*n
 NasalSpirantLengthening: *l*ī*n*ă*n
 NasalSpirantLoss: *l*ī*n*ă*n
 WeakTailNasalLoss: *l*ī*n*ă*n
@@ -12423,6 +12927,7 @@ WsPalatalDiphthongization: *l*ī*s*t*ō*n
 IUmlaut: *l*ī*s*t*ō*n
 JClusterCoalescence: *l*ī*s*t*ō*n
 BackMutation: *l*ī*s*t*ō*n
+WsPalatalUmlaut: *l*ī*s*t*ō*n
 NasalSpirantLengthening: *l*ī*s*t*ō*n
 NasalSpirantLoss: *l*ī*s*t*ō*n
 WeakTailNasalLoss: *l*ī*s*t*ō*n
@@ -12477,6 +12982,7 @@ WsPalatalDiphthongization: *n*a*m*ō*n
 IUmlaut: *n*a*m*ō*n
 JClusterCoalescence: *n*a*m*ō*n
 BackMutation: *n*a*m*ō*n
+WsPalatalUmlaut: *n*a*m*ō*n
 NasalSpirantLengthening: *n*a*m*ō*n
 NasalSpirantLoss: *n*a*m*ō*n
 WeakTailNasalLoss: *n*a*m*ō*n
@@ -12531,6 +13037,7 @@ WsPalatalDiphthongization: *n*æ*β*l*ō*n
 IUmlaut: *n*æ*β*l*ō*n
 JClusterCoalescence: *n*æ*β*l*ō*n
 BackMutation: *n*æ*β*l*ō*n
+WsPalatalUmlaut: *n*æ*β*l*ō*n
 NasalSpirantLengthening: *n*æ*β*l*ō*n
 NasalSpirantLoss: *n*æ*β*l*ō*n
 WeakTailNasalLoss: *n*æ*β*l*ō*n
@@ -12585,6 +13092,7 @@ WsPalatalDiphthongization: *x*n*æ*ʧ*k
 IUmlaut: *x*n*æ*ʧ*k
 JClusterCoalescence: *x*n*æ*ʧ*k
 BackMutation: *x*n*æ*ʧ*k
+WsPalatalUmlaut: *x*n*æ*ʧ*k
 NasalSpirantLengthening: *x*n*æ*ʧ*k
 NasalSpirantLoss: *x*n*æ*ʧ*k
 WeakTailNasalLoss: *x*n*æ*ʧ*k
@@ -12639,6 +13147,7 @@ WsPalatalDiphthongization: *n*æ*t*i*l*ō*n
 IUmlaut: *n*e*t*i*l*ō*n
 JClusterCoalescence: *n*e*t*i*l*ō*n
 BackMutation: *n*e*t*eo*l*ō*n
+WsPalatalUmlaut: *n*e*t*eo*l*ō*n
 NasalSpirantLengthening: *n*e*t*eo*l*ō*n
 NasalSpirantLoss: *n*e*t*eo*l*ō*n
 WeakTailNasalLoss: *n*e*t*eo*l*ō*n
@@ -12693,6 +13202,7 @@ WsPalatalDiphthongization: *m*æ*r*ō*n
 IUmlaut: *m*æ*r*ō*n
 JClusterCoalescence: *m*æ*r*ō*n
 BackMutation: *m*ea*r*ō*n
+WsPalatalUmlaut: *m*ea*r*ō*n
 NasalSpirantLengthening: *m*ea*r*ō*n
 NasalSpirantLoss: *m*ea*r*ō*n
 WeakTailNasalLoss: *m*ea*r*ō*n
@@ -12747,6 +13257,7 @@ WsPalatalDiphthongization: *o*x*s*ō*n
 IUmlaut: *o*x*s*ō*n
 JClusterCoalescence: *o*x*s*ō*n
 BackMutation: *o*x*s*ō*n
+WsPalatalUmlaut: *o*x*s*ō*n
 NasalSpirantLengthening: *o*x*s*ō*n
 NasalSpirantLoss: *o*x*s*ō*n
 WeakTailNasalLoss: *o*x*s*ō*n
@@ -12801,6 +13312,7 @@ WsPalatalDiphthongization: *ʃ*o*l*d*r*u
 IUmlaut: *ʃ*o*l*d*r*u
 JClusterCoalescence: *ʃ*o*l*d*r*u
 BackMutation: *ʃ*o*l*d*r*u
+WsPalatalUmlaut: *ʃ*o*l*d*r*u
 NasalSpirantLengthening: *ʃ*o*l*d*r*u
 NasalSpirantLoss: *ʃ*o*l*d*r*u
 WeakTailNasalLoss: *ʃ*o*l*d*r*u
@@ -12855,6 +13367,7 @@ WsPalatalDiphthongization: *s*ī*d*ō*n
 IUmlaut: *s*ī*d*ō*n
 JClusterCoalescence: *s*ī*d*ō*n
 BackMutation: *s*ī*d*ō*n
+WsPalatalUmlaut: *s*ī*d*ō*n
 NasalSpirantLengthening: *s*ī*d*ō*n
 NasalSpirantLoss: *s*ī*d*ō*n
 WeakTailNasalLoss: *s*ī*d*ō*n
@@ -12909,6 +13422,7 @@ WsPalatalDiphthongization: *s*i*β
 IUmlaut: *s*i*β
 JClusterCoalescence: *s*i*β
 BackMutation: *s*i*β
+WsPalatalUmlaut: *s*i*β
 NasalSpirantLengthening: *s*i*β
 NasalSpirantLoss: *s*i*β
 WeakTailNasalLoss: *s*i*β
@@ -12963,6 +13477,7 @@ WsPalatalDiphthongization: *s*p*e*r*u
 IUmlaut: *s*p*e*r*u
 JClusterCoalescence: *s*p*e*r*u
 BackMutation: *s*p*eo*r*u
+WsPalatalUmlaut: *s*p*eo*r*u
 NasalSpirantLengthening: *s*p*eo*r*u
 NasalSpirantLoss: *s*p*eo*r*u
 WeakTailNasalLoss: *s*p*eo*r*u
@@ -13017,6 +13532,7 @@ WsPalatalDiphthongization: *s*p*e*n*n*i*l*u
 IUmlaut: *s*p*i*n*n*i*l*u
 JClusterCoalescence: *s*p*i*n*n*i*l*u
 BackMutation: *s*p*i*n*n*eo*l*u
+WsPalatalUmlaut: *s*p*i*n*n*eo*l*u
 NasalSpirantLengthening: *s*p*i*n*n*eo*l*u
 NasalSpirantLoss: *s*p*i*n*n*eo*l*u
 WeakTailNasalLoss: *s*p*i*n*n*eo*l*u
@@ -13071,6 +13587,7 @@ WsPalatalDiphthongization: *s*p*o*r*ă*n
 IUmlaut: *s*p*o*r*ă*n
 JClusterCoalescence: *s*p*o*r*ă*n
 BackMutation: *s*p*o*r*ă*n
+WsPalatalUmlaut: *s*p*o*r*ă*n
 NasalSpirantLengthening: *s*p*o*r*ă*n
 NasalSpirantLoss: *s*p*o*r*ă*n
 WeakTailNasalLoss: *s*p*o*r*ă*n
@@ -13125,6 +13642,7 @@ WsPalatalDiphthongization: *s*t*e*l*l*j*ă*n*ą
 IUmlaut: *s*t*i*l*l*j*ă*n*ą
 JClusterCoalescence: *s*t*i*l*l*j*ă*n*ą
 BackMutation: *s*t*i*l*l*j*ă*n*ą
+WsPalatalUmlaut: *s*t*i*l*l*j*ă*n*ą
 NasalSpirantLengthening: *s*t*i*l*l*j*ă*n*ą
 NasalSpirantLoss: *s*t*i*l*l*j*ă*n*ą
 WeakTailNasalLoss: *s*t*i*l*l*j*ă*n
@@ -13179,6 +13697,7 @@ WsPalatalDiphthongization: *s*u*n*n*ō*n
 IUmlaut: *s*u*n*n*ō*n
 JClusterCoalescence: *s*u*n*n*ō*n
 BackMutation: *s*u*n*n*ō*n
+WsPalatalUmlaut: *s*u*n*n*ō*n
 NasalSpirantLengthening: *s*u*n*n*ō*n
 NasalSpirantLoss: *s*u*n*n*ō*n
 WeakTailNasalLoss: *s*u*n*n*ō*n
@@ -13233,6 +13752,7 @@ WsPalatalDiphthongization: *t*i*ʧ*k*ō*n
 IUmlaut: *t*i*ʧ*k*ō*n
 JClusterCoalescence: *t*i*ʧ*k*ō*n
 BackMutation: *t*i*ʧ*k*ō*n
+WsPalatalUmlaut: *t*i*ʧ*k*ō*n
 NasalSpirantLengthening: *t*i*ʧ*k*ō*n
 NasalSpirantLoss: *t*i*ʧ*k*ō*n
 WeakTailNasalLoss: *t*i*ʧ*k*ō*n
@@ -13287,6 +13807,7 @@ WsPalatalDiphthongization: *t*ā*x*w*u
 IUmlaut: *t*ā*x*w*u
 JClusterCoalescence: *t*ā*x*w*u
 BackMutation: *t*ā*x*w*u
+WsPalatalUmlaut: *t*ā*x*w*u
 NasalSpirantLengthening: *t*ā*x*w*u
 NasalSpirantLoss: *t*ā*x*w*u
 WeakTailNasalLoss: *t*ā*x*w*u
@@ -13341,6 +13862,7 @@ WsPalatalDiphthongization: *t*a*n*g*u
 IUmlaut: *t*a*n*g*u
 JClusterCoalescence: *t*a*n*g*u
 BackMutation: *t*a*n*g*u
+WsPalatalUmlaut: *t*a*n*g*u
 NasalSpirantLengthening: *t*a*n*g*u
 NasalSpirantLoss: *t*a*n*g*u
 WeakTailNasalLoss: *t*a*n*g*u
@@ -13395,6 +13917,7 @@ WsPalatalDiphthongization: *t*u*n*g*ō*n
 IUmlaut: *t*u*n*g*ō*n
 JClusterCoalescence: *t*u*n*g*ō*n
 BackMutation: *t*u*n*g*ō*n
+WsPalatalUmlaut: *t*u*n*g*ō*n
 NasalSpirantLengthening: *t*u*n*g*ō*n
 NasalSpirantLoss: *t*u*n*g*ō*n
 WeakTailNasalLoss: *t*u*n*g*ō*n
@@ -13449,6 +13972,7 @@ WsPalatalDiphthongization: *w*e*ʤ
 IUmlaut: *w*e*ʤ
 JClusterCoalescence: *w*e*ʤ
 BackMutation: *w*e*ʤ
+WsPalatalUmlaut: *w*e*ʤ
 NasalSpirantLengthening: *w*e*ʤ
 NasalSpirantLoss: *w*e*ʤ
 WeakTailNasalLoss: *w*e*ʤ
@@ -13503,6 +14027,7 @@ WsPalatalDiphthongization: *x*ō*r*ō*n
 IUmlaut: *x*ō*r*ō*n
 JClusterCoalescence: *x*ō*r*ō*n
 BackMutation: *x*ō*r*ō*n
+WsPalatalUmlaut: *x*ō*r*ō*n
 NasalSpirantLengthening: *x*ō*r*ō*n
 NasalSpirantLoss: *x*ō*r*ō*n
 WeakTailNasalLoss: *x*ō*r*ō*n
@@ -13557,6 +14082,7 @@ WsPalatalDiphthongization: *w*i*d*o*w*ō*n
 IUmlaut: *w*i*d*o*w*ō*n
 JClusterCoalescence: *w*i*d*o*w*ō*n
 BackMutation: *w*i*d*o*w*ō*n
+WsPalatalUmlaut: *w*i*d*o*w*ō*n
 NasalSpirantLengthening: *w*i*d*o*w*ō*n
 NasalSpirantLoss: *w*i*d*o*w*ō*n
 WeakTailNasalLoss: *w*i*d*o*w*ō*n
@@ -13582,7 +14108,7 @@ Orthography: widowon
 Surface: widowon
 
 
-=== BUCKET: breaking_extra_other (22) ===
+=== BUCKET: breaking_extra_other (17) ===
 
 --- forlorn ---
 PROTO: *leusăną
@@ -13614,6 +14140,7 @@ WsPalatalDiphthongization: *l*ēo*s*ă*n*ą
 IUmlaut: *l*ēo*s*ă*n*ą
 JClusterCoalescence: *l*ēo*s*ă*n*ą
 BackMutation: *l*ēo*s*ă*n*ą
+WsPalatalUmlaut: *l*ēo*s*ă*n*ą
 NasalSpirantLengthening: *l*ēo*s*ă*n*ą
 NasalSpirantLoss: *l*ēo*s*ă*n*ą
 WeakTailNasalLoss: *l*ēo*s*ă*n
@@ -13668,6 +14195,7 @@ WsPalatalDiphthongization: *ʤ*ie*f*t*i
 IUmlaut: *ʤ*ie*f*t*i
 JClusterCoalescence: *ʤ*ie*f*t*i
 BackMutation: *ʤ*ie*f*t*i
+WsPalatalUmlaut: *ʤ*ie*f*t*i
 NasalSpirantLengthening: *ʤ*ie*f*t*i
 NasalSpirantLoss: *ʤ*ie*f*t*i
 WeakTailNasalLoss: *ʤ*ie*f*t*i
@@ -13722,6 +14250,7 @@ WsPalatalDiphthongization: *ç*ea*r*β*i*s*t*u
 IUmlaut: *ç*ie*r*β*i*s*t*u
 JClusterCoalescence: *ç*ie*r*β*i*s*t*u
 BackMutation: *ç*ie*r*β*i*s*t*u
+WsPalatalUmlaut: *ç*ie*r*β*i*s*t*u
 NasalSpirantLengthening: *ç*ie*r*β*i*s*t*u
 NasalSpirantLoss: *ç*ie*r*β*i*s*t*u
 WeakTailNasalLoss: *ç*ie*r*β*i*s*t*u
@@ -13745,60 +14274,6 @@ GlideDeletion: *ç*ie*r*β*e*s*t
 Epenthesis: *ç*ie*r*β*e*s*t
 Orthography: hierfest
 Surface: hierfest
-
---- knight ---
-PROTO: *knixtăz
-EXPECTED: cniht
-OUTPUTS: cnieht
-
-ProtoInput: *k*n*i*x*t*ă*z
-InitialKn: *Kn*i*x*t*ă*z
-Palatalisation: *Kn*i*x*t*ă*z
-ConsonantRules: *Kn*i*x*t*ă
-WestGermanic: *Kn*i*x*t*ă
-NWGmcULowering: *Kn*i*x*t*ă
-NWGmcFinalLongORaising: *Kn*i*x*t*ă
-NWGmcLongELowering: *Kn*i*x*t*ă
-NWGmcLongENasalRounding: *Kn*i*x*t*ă
-AuFronting: *Kn*i*x*t*ă
-WWSimplification: *Kn*i*x*t*ă
-DiphthongLeveling: *Kn*i*x*t*ă
-EwLongDiphthong: *Kn*i*x*t*ă
-AngloFrisianBrightening: *Kn*i*x*t*ă
-BreakingLengthening: *Kn*ie*x*t*ă
-VelarFricPal: *Kn*ie*x*t*ă
-ARestoration: *Kn*ie*x*t*ă
-FinalWeakSchwaApocope: *Kn*ie*x*t
-JGemination: *Kn*ie*x*t
-SkPalatalization: *Kn*ie*x*t
-VelarPalatalization: *Kn*ie*x*t
-WsPalatalDiphthongization: *Kn*ie*x*t
-IUmlaut: *Kn*ie*x*t
-JClusterCoalescence: *Kn*ie*x*t
-BackMutation: *Kn*ie*x*t
-NasalSpirantLengthening: *Kn*ie*x*t
-NasalSpirantLoss: *Kn*ie*x*t
-WeakTailNasalLoss: *Kn*ie*x*t
-WeightMarkers: *Kn*ie*x*t
-HighVowelApocope: *Kn*ie*x*t
-HeavySyllableNasalApocope: *Kn*ie*x*t
-WeakTailReduction: *Kn*ie*x*t
-JLossAfterHeavy: *Kn*ie*x*t
-IntervocalicJVocalization: *Kn*ie*x*t
-WeightCleanup: *Kn*ie*x*t
-HLoss: *Kn*ie*x*t
-Contraction: *Kn*ie*x*t
-ProtoToOEWeakTail: *Kn*ie*x*t
-ProtoToOEWeightMarkers: *Kn*ie*x*t
-ProtoToOEApocope: *Kn*ie*x*t
-ProtoToOEWeightCleanup: *Kn*ie*x*t
-ProtoToOE: *Kn*ie*x*t
-WGlide: *Kn*ie*x*t
-GhMarker: *Kn*ie*GH*t
-GlideDeletion: *Kn*ie*GH*t
-Epenthesis: *k*n*ie*x*t
-Orthography: cnieht
-Surface: cnieht
 
 --- laugh ---
 PROTO: *xlaxjăną
@@ -13830,6 +14305,7 @@ WsPalatalDiphthongization: *x*l*ea*ç*j*ă*n*ą
 IUmlaut: *x*l*ie*ç*j*ă*n*ą
 JClusterCoalescence: *x*l*ie*ç*j*ă*n*ą
 BackMutation: *x*l*ie*ç*j*ă*n*ą
+WsPalatalUmlaut: *x*l*ie*ç*j*ă*n*ą
 NasalSpirantLengthening: *x*l*ie*ç*j*ă*n*ą
 NasalSpirantLoss: *x*l*ie*ç*j*ă*n*ą
 WeakTailNasalLoss: *x*l*ie*ç*j*ă*n
@@ -13884,6 +14360,7 @@ WsPalatalDiphthongization: *l*i*β*ō*n*ą
 IUmlaut: *l*i*β*ō*n*ą
 JClusterCoalescence: *l*i*β*ō*n*ą
 BackMutation: *l*eo*β*ō*n*ą
+WsPalatalUmlaut: *l*eo*β*ō*n*ą
 NasalSpirantLengthening: *l*eo*β*ō*n*ą
 NasalSpirantLoss: *l*eo*β*ō*n*ą
 WeakTailNasalLoss: *l*eo*β*ō*n
@@ -13907,114 +14384,6 @@ GlideDeletion: *l*eo*β*o*n
 Epenthesis: *l*eo*β*o*n
 Orthography: leofon
 Surface: leofon
-
---- might ---
-PROTO: *maxtiz
-EXPECTED: miht
-OUTPUTS: mieht
-
-ProtoInput: *m*a*x*t*i*z
-InitialKn: *m*a*x*t*i*z
-Palatalisation: *m*a*x*t*i*z
-ConsonantRules: *m*a*x*t*i
-WestGermanic: *m*a*x*t*i
-NWGmcULowering: *m*a*x*t*i
-NWGmcFinalLongORaising: *m*a*x*t*i
-NWGmcLongELowering: *m*a*x*t*i
-NWGmcLongENasalRounding: *m*a*x*t*i
-AuFronting: *m*a*x*t*i
-WWSimplification: *m*a*x*t*i
-DiphthongLeveling: *m*a*x*t*i
-EwLongDiphthong: *m*a*x*t*i
-AngloFrisianBrightening: *m*æ*x*t*i
-BreakingLengthening: *m*ea*x*t*i
-VelarFricPal: *m*ea*x*t*i
-ARestoration: *m*ea*x*t*i
-FinalWeakSchwaApocope: *m*ea*x*t*i
-JGemination: *m*ea*x*t*i
-SkPalatalization: *m*ea*x*t*i
-VelarPalatalization: *m*ea*x*t*i
-WsPalatalDiphthongization: *m*ea*x*t*i
-IUmlaut: *m*ie*x*t*i
-JClusterCoalescence: *m*ie*x*t*i
-BackMutation: *m*ie*x*t*i
-NasalSpirantLengthening: *m*ie*x*t*i
-NasalSpirantLoss: *m*ie*x*t*i
-WeakTailNasalLoss: *m*ie*x*t*i
-WeightMarkers: *m*ie*x*t*i
-HighVowelApocope: *m*ie*x*t
-HeavySyllableNasalApocope: *m*ie*x*t
-WeakTailReduction: *m*ie*x*t
-JLossAfterHeavy: *m*ie*x*t
-IntervocalicJVocalization: *m*ie*x*t
-WeightCleanup: *m*ie*x*t
-HLoss: *m*ie*x*t
-Contraction: *m*ie*x*t
-ProtoToOEWeakTail: *m*ie*x*t*i
-ProtoToOEWeightMarkers: *m*ie*x*t*i
-ProtoToOEApocope: *m*ie*x*t
-ProtoToOEWeightCleanup: *m*ie*x*t
-ProtoToOE: *m*ie*x*t
-WGlide: *m*ie*x*t
-GhMarker: *m*ie*GH*t
-GlideDeletion: *m*ie*GH*t
-Epenthesis: *m*ie*x*t
-Orthography: mieht
-Surface: mieht
-
---- night ---
-PROTO: *naxti
-EXPECTED: niht
-OUTPUTS: nieht
-
-ProtoInput: *n*a*x*t*i
-InitialKn: *n*a*x*t*i
-Palatalisation: *n*a*x*t*i
-ConsonantRules: *n*a*x*t*i
-WestGermanic: *n*a*x*t*i
-NWGmcULowering: *n*a*x*t*i
-NWGmcFinalLongORaising: *n*a*x*t*i
-NWGmcLongELowering: *n*a*x*t*i
-NWGmcLongENasalRounding: *n*a*x*t*i
-AuFronting: *n*a*x*t*i
-WWSimplification: *n*a*x*t*i
-DiphthongLeveling: *n*a*x*t*i
-EwLongDiphthong: *n*a*x*t*i
-AngloFrisianBrightening: *n*æ*x*t*i
-BreakingLengthening: *n*ea*x*t*i
-VelarFricPal: *n*ea*x*t*i
-ARestoration: *n*ea*x*t*i
-FinalWeakSchwaApocope: *n*ea*x*t*i
-JGemination: *n*ea*x*t*i
-SkPalatalization: *n*ea*x*t*i
-VelarPalatalization: *n*ea*x*t*i
-WsPalatalDiphthongization: *n*ea*x*t*i
-IUmlaut: *n*ie*x*t*i
-JClusterCoalescence: *n*ie*x*t*i
-BackMutation: *n*ie*x*t*i
-NasalSpirantLengthening: *n*ie*x*t*i
-NasalSpirantLoss: *n*ie*x*t*i
-WeakTailNasalLoss: *n*ie*x*t*i
-WeightMarkers: *n*ie*x*t*i
-HighVowelApocope: *n*ie*x*t
-HeavySyllableNasalApocope: *n*ie*x*t
-WeakTailReduction: *n*ie*x*t
-JLossAfterHeavy: *n*ie*x*t
-IntervocalicJVocalization: *n*ie*x*t
-WeightCleanup: *n*ie*x*t
-HLoss: *n*ie*x*t
-Contraction: *n*ie*x*t
-ProtoToOEWeakTail: *n*ie*x*t*i
-ProtoToOEWeightMarkers: *n*ie*x*t*i
-ProtoToOEApocope: *n*ie*x*t
-ProtoToOEWeightCleanup: *n*ie*x*t
-ProtoToOE: *n*ie*x*t
-WGlide: *n*ie*x*t
-GhMarker: *n*ie*GH*t
-GlideDeletion: *n*ie*GH*t
-Epenthesis: *n*ie*x*t
-Orthography: nieht
-Surface: nieht
 
 --- nine ---
 PROTO: *newun
@@ -14046,6 +14415,7 @@ WsPalatalDiphthongization: *n*ēo*w*u*n
 IUmlaut: *n*ēo*w*u*n
 JClusterCoalescence: *n*ēo*w*u*n
 BackMutation: *n*ēo*w*u*n
+WsPalatalUmlaut: *n*ēo*w*u*n
 NasalSpirantLengthening: *n*ēo*w*u*n
 NasalSpirantLoss: *n*ēo*w*u*n
 WeakTailNasalLoss: *n*ēo*w*u*n
@@ -14100,6 +14470,7 @@ WsPalatalDiphthongization: *r*ēa*ʧ*i
 IUmlaut: *r*īe*ʧ*i
 JClusterCoalescence: *r*īe*ʧ*i
 BackMutation: *r*īe*ʧ*i
+WsPalatalUmlaut: *r*īe*ʧ*i
 NasalSpirantLengthening: *r*īe*ʧ*i
 NasalSpirantLoss: *r*īe*ʧ*i
 WeakTailNasalLoss: *r*īe*ʧ*i
@@ -14154,6 +14525,7 @@ WsPalatalDiphthongization: *ʃ*ie*l*l*i*n
 IUmlaut: *ʃ*ie*l*l*i*n
 JClusterCoalescence: *ʃ*ie*l*l*i*n
 BackMutation: *ʃ*ie*l*l*i*n
+WsPalatalUmlaut: *ʃ*ie*l*l*i*n
 NasalSpirantLengthening: *ʃ*ie*l*l*i*n
 NasalSpirantLoss: *ʃ*ie*l*l*i*n
 WeakTailNasalLoss: *ʃ*ie*l*l*i*n
@@ -14208,6 +14580,7 @@ WsPalatalDiphthongization: *ʃ*ēo*β*ă*n*ą
 IUmlaut: *ʃ*ēo*β*ă*n*ą
 JClusterCoalescence: *ʃ*ēo*β*ă*n*ą
 BackMutation: *ʃ*ēo*β*ă*n*ą
+WsPalatalUmlaut: *ʃ*ēo*β*ă*n*ą
 NasalSpirantLengthening: *ʃ*ēo*β*ă*n*ą
 NasalSpirantLoss: *ʃ*ēo*β*ă*n*ą
 WeakTailNasalLoss: *ʃ*ēo*β*ă*n
@@ -14231,60 +14604,6 @@ GlideDeletion: *ʃ*ēo*β*a*n
 Epenthesis: *ʃ*ēo*β*a*n
 Orthography: sċēofan
 Surface: sċēofan
-
---- six ---
-PROTO: *sexs
-EXPECTED: six
-OUTPUTS: seox
-
-ProtoInput: *s*e*x*s
-InitialKn: *s*e*x*s
-Palatalisation: *s*e*x*s
-ConsonantRules: *s*e*x*s
-WestGermanic: *s*e*x*s
-NWGmcULowering: *s*e*x*s
-NWGmcFinalLongORaising: *s*e*x*s
-NWGmcLongELowering: *s*e*x*s
-NWGmcLongENasalRounding: *s*e*x*s
-AuFronting: *s*e*x*s
-WWSimplification: *s*e*x*s
-DiphthongLeveling: *s*e*x*s
-EwLongDiphthong: *s*e*x*s
-AngloFrisianBrightening: *s*e*x*s
-BreakingLengthening: *s*eo*x*s
-VelarFricPal: *s*eo*x*s
-ARestoration: *s*eo*x*s
-FinalWeakSchwaApocope: *s*eo*x*s
-JGemination: *s*eo*x*s
-SkPalatalization: *s*eo*x*s
-VelarPalatalization: *s*eo*x*s
-WsPalatalDiphthongization: *s*eo*x*s
-IUmlaut: *s*eo*x*s
-JClusterCoalescence: *s*eo*x*s
-BackMutation: *s*eo*x*s
-NasalSpirantLengthening: *s*eo*x*s
-NasalSpirantLoss: *s*eo*x*s
-WeakTailNasalLoss: *s*eo*x*s
-WeightMarkers: *s*eo*x*s
-HighVowelApocope: *s*eo*x*s
-HeavySyllableNasalApocope: *s*eo*x*s
-WeakTailReduction: *s*eo*x*s
-JLossAfterHeavy: *s*eo*x*s
-IntervocalicJVocalization: *s*eo*x*s
-WeightCleanup: *s*eo*x*s
-HLoss: *s*eo*x*s
-Contraction: *s*eo*x*s
-ProtoToOEWeakTail: *s*eo*x*s
-ProtoToOEWeightMarkers: *s*eo*x*s
-ProtoToOEApocope: *s*eo*x*s
-ProtoToOEWeightCleanup: *s*eo*x*s
-ProtoToOE: *s*eo*x*s
-WGlide: *s*eo*x*s
-GhMarker: *s*eo*GH*s
-GlideDeletion: *s*eo*GH*s
-Epenthesis: *s*eo*x*s
-Orthography: seox
-Surface: seox
 
 --- smear ---
 PROTO: *smerwjăną
@@ -14316,6 +14635,7 @@ WsPalatalDiphthongization: *s*m*eo*r*w*j*ă*n*ą
 IUmlaut: *s*m*ie*r*w*j*ă*n*ą
 JClusterCoalescence: *s*m*ie*r*w*j*ă*n*ą
 BackMutation: *s*m*ie*r*w*j*ă*n*ą
+WsPalatalUmlaut: *s*m*ie*r*w*j*ă*n*ą
 NasalSpirantLengthening: *s*m*ie*r*w*j*ă*n*ą
 NasalSpirantLoss: *s*m*ie*r*w*j*ă*n*ą
 WeakTailNasalLoss: *s*m*ie*r*w*j*ă*n
@@ -14370,6 +14690,7 @@ WsPalatalDiphthongization: *s*p*ea*r*r*ō*n
 IUmlaut: *s*p*ea*r*r*ō*n
 JClusterCoalescence: *s*p*ea*r*r*ō*n
 BackMutation: *s*p*ea*r*r*ō*n
+WsPalatalUmlaut: *s*p*ea*r*r*ō*n
 NasalSpirantLengthening: *s*p*ea*r*r*ō*n
 NasalSpirantLoss: *s*p*ea*r*r*ō*n
 WeakTailNasalLoss: *s*p*ea*r*r*ō*n
@@ -14424,6 +14745,7 @@ WsPalatalDiphthongization: *s*p*æ*r*ō*n*ą
 IUmlaut: *s*p*æ*r*ō*n*ą
 JClusterCoalescence: *s*p*æ*r*ō*n*ą
 BackMutation: *s*p*ea*r*ō*n*ą
+WsPalatalUmlaut: *s*p*ea*r*ō*n*ą
 NasalSpirantLengthening: *s*p*ea*r*ō*n*ą
 NasalSpirantLoss: *s*p*ea*r*ō*n*ą
 WeakTailNasalLoss: *s*p*ea*r*ō*n
@@ -14478,6 +14800,7 @@ WsPalatalDiphthongization: *s*t*r*æ*w*j*ă*n*ą
 IUmlaut: *s*t*r*e*w*j*ă*n*ą
 JClusterCoalescence: *s*t*r*e*w*j*ă*n*ą
 BackMutation: *s*t*r*eo*w*j*ă*n*ą
+WsPalatalUmlaut: *s*t*r*eo*w*j*ă*n*ą
 NasalSpirantLengthening: *s*t*r*eo*w*j*ă*n*ą
 NasalSpirantLoss: *s*t*r*eo*w*j*ă*n*ą
 WeakTailNasalLoss: *s*t*r*eo*w*j*ă*n
@@ -14532,6 +14855,7 @@ WsPalatalDiphthongization: *s*w*ea*l*g*w*ō*n
 IUmlaut: *s*w*ea*l*g*w*ō*n
 JClusterCoalescence: *s*w*ea*l*g*w*ō*n
 BackMutation: *s*w*ea*l*g*w*ō*n
+WsPalatalUmlaut: *s*w*ea*l*g*w*ō*n
 NasalSpirantLengthening: *s*w*ea*l*g*w*ō*n
 NasalSpirantLoss: *s*w*ea*l*g*w*ō*n
 WeakTailNasalLoss: *s*w*ea*l*g*w*ō*n
@@ -14586,6 +14910,7 @@ WsPalatalDiphthongization: *θ*r*e*j*e
 IUmlaut: *θ*r*i*j*e
 JClusterCoalescence: *θ*r*i*j*e
 BackMutation: *θ*r*i*j*e
+WsPalatalUmlaut: *θ*r*i*j*e
 NasalSpirantLengthening: *θ*r*i*j*e
 NasalSpirantLoss: *θ*r*i*j*e
 WeakTailNasalLoss: *θ*r*i*j*e
@@ -14609,60 +14934,6 @@ GlideDeletion: *θ*r*ī*e
 Epenthesis: *θ*r*ī*e
 Orthography: þrīe
 Surface: þrīe
-
---- wight ---
-PROTO: *wextiz
-EXPECTED: wiht
-OUTPUTS: wieht
-
-ProtoInput: *w*e*x*t*i*z
-InitialKn: *w*e*x*t*i*z
-Palatalisation: *w*e*x*t*i*z
-ConsonantRules: *w*e*x*t*i
-WestGermanic: *w*e*x*t*i
-NWGmcULowering: *w*e*x*t*i
-NWGmcFinalLongORaising: *w*e*x*t*i
-NWGmcLongELowering: *w*e*x*t*i
-NWGmcLongENasalRounding: *w*e*x*t*i
-AuFronting: *w*e*x*t*i
-WWSimplification: *w*e*x*t*i
-DiphthongLeveling: *w*e*x*t*i
-EwLongDiphthong: *w*e*x*t*i
-AngloFrisianBrightening: *w*e*x*t*i
-BreakingLengthening: *w*eo*x*t*i
-VelarFricPal: *w*eo*x*t*i
-ARestoration: *w*eo*x*t*i
-FinalWeakSchwaApocope: *w*eo*x*t*i
-JGemination: *w*eo*x*t*i
-SkPalatalization: *w*eo*x*t*i
-VelarPalatalization: *w*eo*x*t*i
-WsPalatalDiphthongization: *w*eo*x*t*i
-IUmlaut: *w*ie*x*t*i
-JClusterCoalescence: *w*ie*x*t*i
-BackMutation: *w*ie*x*t*i
-NasalSpirantLengthening: *w*ie*x*t*i
-NasalSpirantLoss: *w*ie*x*t*i
-WeakTailNasalLoss: *w*ie*x*t*i
-WeightMarkers: *w*ie*x*t*i
-HighVowelApocope: *w*ie*x*t
-HeavySyllableNasalApocope: *w*ie*x*t
-WeakTailReduction: *w*ie*x*t
-JLossAfterHeavy: *w*ie*x*t
-IntervocalicJVocalization: *w*ie*x*t
-WeightCleanup: *w*ie*x*t
-HLoss: *w*ie*x*t
-Contraction: *w*ie*x*t
-ProtoToOEWeakTail: *w*ie*x*t*i
-ProtoToOEWeightMarkers: *w*ie*x*t*i
-ProtoToOEApocope: *w*ie*x*t
-ProtoToOEWeightCleanup: *w*ie*x*t
-ProtoToOE: *w*ie*x*t
-WGlide: *ʋ*ie*x*t
-GhMarker: *ʋ*ie*GH*t
-GlideDeletion: *ʋ*ie*GH*t
-Epenthesis: *w*ie*x*t
-Orthography: wieht
-Surface: wieht
 
 --- will ---
 PROTO: *waljăną
@@ -14694,6 +14965,7 @@ WsPalatalDiphthongization: *w*ea*l*j*ă*n*ą
 IUmlaut: *w*ie*l*j*ă*n*ą
 JClusterCoalescence: *w*ie*l*j*ă*n*ą
 BackMutation: *w*ie*l*j*ă*n*ą
+WsPalatalUmlaut: *w*ie*l*j*ă*n*ą
 NasalSpirantLengthening: *w*ie*l*j*ă*n*ą
 NasalSpirantLoss: *w*ie*l*j*ă*n*ą
 WeakTailNasalLoss: *w*ie*l*j*ă*n
@@ -14748,6 +15020,7 @@ WsPalatalDiphthongization: *w*ea*l*θ*u
 IUmlaut: *w*ea*l*θ*u
 JClusterCoalescence: *w*ea*l*θ*u
 BackMutation: *w*ea*l*θ*u
+WsPalatalUmlaut: *w*ea*l*θ*u
 NasalSpirantLengthening: *w*ea*l*θ*u
 NasalSpirantLoss: *w*ea*l*θ*u
 WeakTailNasalLoss: *w*ea*l*θ*u
@@ -14805,6 +15078,7 @@ WsPalatalDiphthongization: *ç*e*n*d*j*u
 IUmlaut: *ç*i*n*d*j*u
 JClusterCoalescence: *ç*i*n*d*j*u
 BackMutation: *ç*i*n*d*j*u
+WsPalatalUmlaut: *ç*i*n*d*j*u
 NasalSpirantLengthening: *ç*i*n*d*j*u
 NasalSpirantLoss: *ç*i*n*d*j*u
 WeakTailNasalLoss: *ç*i*n*d*j*u
@@ -14859,6 +15133,7 @@ WsPalatalDiphthongization: *l*i*n*d*u
 IUmlaut: *l*i*n*d*u
 JClusterCoalescence: *l*i*n*d*u
 BackMutation: *l*i*n*d*u
+WsPalatalUmlaut: *l*i*n*d*u
 NasalSpirantLengthening: *l*i*n*d*u
 NasalSpirantLoss: *l*i*n*d*u
 WeakTailNasalLoss: *l*i*n*d*u
@@ -14913,6 +15188,7 @@ WsPalatalDiphthongization: *l*u*n*g*w*ą
 IUmlaut: *l*u*n*g*w*ą
 JClusterCoalescence: *l*u*n*g*w*ą
 BackMutation: *l*u*n*g*w*ą
+WsPalatalUmlaut: *l*u*n*g*w*ą
 NasalSpirantLengthening: *l*u*n*g*w*ą
 NasalSpirantLoss: *l*u*n*g*w*ą
 WeakTailNasalLoss: *l*u*n*g*w*ą
@@ -14967,6 +15243,7 @@ WsPalatalDiphthongization: *m*ea*r*k*u
 IUmlaut: *m*ea*r*k*u
 JClusterCoalescence: *m*ea*r*k*u
 BackMutation: *m*ea*r*k*u
+WsPalatalUmlaut: *m*ea*r*k*u
 NasalSpirantLengthening: *m*ea*r*k*u
 NasalSpirantLoss: *m*ea*r*k*u
 WeakTailNasalLoss: *m*ea*r*k*u
@@ -15021,6 +15298,7 @@ WsPalatalDiphthongization: *e*n*d
 IUmlaut: *e*n*d
 JClusterCoalescence: *e*n*d
 BackMutation: *e*n*d
+WsPalatalUmlaut: *e*n*d
 NasalSpirantLengthening: *e*n*d
 NasalSpirantLoss: *e*n*d
 WeakTailNasalLoss: *e*n*d
@@ -15075,6 +15353,7 @@ WsPalatalDiphthongization: *θ*ū*s*u*n*d*ī
 IUmlaut: *θ*ū*s*y*n*d*ī
 JClusterCoalescence: *θ*ū*s*y*n*d*ī
 BackMutation: *θ*ū*s*y*n*d*ī
+WsPalatalUmlaut: *θ*ū*s*y*n*d*ī
 NasalSpirantLengthening: *θ*ū*s*y*n*d*ī
 NasalSpirantLoss: *θ*ū*s*y*n*d*ī
 WeakTailNasalLoss: *θ*ū*s*y*n*d*ī
@@ -15129,6 +15408,7 @@ WsPalatalDiphthongization: *t*ī*d*i
 IUmlaut: *t*ī*d*i
 JClusterCoalescence: *t*ī*d*i
 BackMutation: *t*ī*d*i
+WsPalatalUmlaut: *t*ī*d*i
 NasalSpirantLengthening: *t*ī*d*i
 NasalSpirantLoss: *t*ī*d*i
 WeakTailNasalLoss: *t*ī*d*i
@@ -15186,6 +15466,7 @@ WsPalatalDiphthongization: *b*æ*ʧ*ă*n*ą
 IUmlaut: *b*æ*ʧ*ă*n*ą
 JClusterCoalescence: *b*æ*ʧ*ă*n*ą
 BackMutation: *b*æ*ʧ*ă*n*ą
+WsPalatalUmlaut: *b*æ*ʧ*ă*n*ą
 NasalSpirantLengthening: *b*æ*ʧ*ă*n*ą
 NasalSpirantLoss: *b*æ*ʧ*ă*n*ą
 WeakTailNasalLoss: *b*æ*ʧ*ă*n
@@ -15240,6 +15521,7 @@ WsPalatalDiphthongization: *b*i*ʤ*i*n*n*ă*n*ą
 IUmlaut: *b*i*ʤ*i*n*n*ă*n*ą
 JClusterCoalescence: *b*i*ʤ*i*n*n*ă*n*ą
 BackMutation: *b*i*ʤ*i*n*n*ă*n*ą
+WsPalatalUmlaut: *b*i*ʤ*i*n*n*ă*n*ą
 NasalSpirantLengthening: *b*i*ʤ*i*n*n*ă*n*ą
 NasalSpirantLoss: *b*i*ʤ*i*n*n*ă*n*ą
 WeakTailNasalLoss: *b*i*ʤ*i*n*n*ă*n
@@ -15294,6 +15576,7 @@ WsPalatalDiphthongization: *b*r*e*ʧ*ă*n*ą
 IUmlaut: *b*r*e*ʧ*ă*n*ą
 JClusterCoalescence: *b*r*e*ʧ*ă*n*ą
 BackMutation: *b*r*e*ʧ*ă*n*ą
+WsPalatalUmlaut: *b*r*e*ʧ*ă*n*ą
 NasalSpirantLengthening: *b*r*e*ʧ*ă*n*ą
 NasalSpirantLoss: *b*r*e*ʧ*ă*n*ą
 WeakTailNasalLoss: *b*r*e*ʧ*ă*n
@@ -15348,6 +15631,7 @@ WsPalatalDiphthongization: *ʧ*ea*l*β
 IUmlaut: *ʧ*ea*l*β
 JClusterCoalescence: *ʧ*ea*l*β
 BackMutation: *ʧ*ea*l*β
+WsPalatalUmlaut: *ʧ*ea*l*β
 NasalSpirantLengthening: *ʧ*ea*l*β
 NasalSpirantLoss: *ʧ*ea*l*β
 WeakTailNasalLoss: *ʧ*ea*l*β
@@ -15402,6 +15686,7 @@ WsPalatalDiphthongization: *ʤ*ie*β*ă*n*ą
 IUmlaut: *ʤ*ie*β*ă*n*ą
 JClusterCoalescence: *ʤ*ie*β*ă*n*ą
 BackMutation: *ʤ*ie*β*ă*n*ą
+WsPalatalUmlaut: *ʤ*ie*β*ă*n*ą
 NasalSpirantLengthening: *ʤ*ie*β*ă*n*ą
 NasalSpirantLoss: *ʤ*ie*β*ă*n*ą
 WeakTailNasalLoss: *ʤ*ie*β*ă*n
@@ -15456,6 +15741,7 @@ WsPalatalDiphthongization: *l*i*ʧ*k*ō*j*ă*n*ą
 IUmlaut: *l*i*ʧ*k*ē*j*ă*n*ą
 JClusterCoalescence: *l*i*ʧ*k*ē*j*ă*n*ą
 BackMutation: *l*i*ʧ*k*ē*j*ă*n*ą
+WsPalatalUmlaut: *l*i*ʧ*k*ē*j*ă*n*ą
 NasalSpirantLengthening: *l*i*ʧ*k*ē*j*ă*n*ą
 NasalSpirantLoss: *l*i*ʧ*k*ē*j*ă*n*ą
 WeakTailNasalLoss: *l*i*ʧ*k*ē*j*ă*n
@@ -15510,6 +15796,7 @@ WsPalatalDiphthongization: *r*u*k*ʧ*i
 IUmlaut: *r*y*k*ʧ*i
 JClusterCoalescence: *r*y*k*ʧ*i
 BackMutation: *r*y*k*ʧ*i
+WsPalatalUmlaut: *r*y*k*ʧ*i
 NasalSpirantLengthening: *r*y*k*ʧ*i
 NasalSpirantLoss: *r*y*k*ʧ*i
 WeakTailNasalLoss: *r*y*k*ʧ*i
@@ -15564,6 +15851,7 @@ WsPalatalDiphthongization: *θ*æ*ʧ*ą
 IUmlaut: *θ*æ*ʧ*ą
 JClusterCoalescence: *θ*æ*ʧ*ą
 BackMutation: *θ*æ*ʧ*ą
+WsPalatalUmlaut: *θ*æ*ʧ*ą
 NasalSpirantLengthening: *θ*æ*ʧ*ą
 NasalSpirantLoss: *θ*æ*ʧ*ą
 WeakTailNasalLoss: *θ*æ*ʧ*ą
@@ -15621,6 +15909,7 @@ WsPalatalDiphthongization: *k*w*i*θ*u
 IUmlaut: *k*w*i*θ*u
 JClusterCoalescence: *k*w*i*θ*u
 BackMutation: *k*w*i*θ*u
+WsPalatalUmlaut: *k*w*i*θ*u
 NasalSpirantLengthening: *k*w*i*θ*u
 NasalSpirantLoss: *k*w*i*θ*u
 WeakTailNasalLoss: *k*w*i*θ*u
@@ -15675,6 +15964,7 @@ WsPalatalDiphthongization: *x*l*æ*θ*ă*n*ą
 IUmlaut: *x*l*æ*θ*ă*n*ą
 JClusterCoalescence: *x*l*æ*θ*ă*n*ą
 BackMutation: *x*l*æ*θ*ă*n*ą
+WsPalatalUmlaut: *x*l*æ*θ*ă*n*ą
 NasalSpirantLengthening: *x*l*æ*θ*ă*n*ą
 NasalSpirantLoss: *x*l*æ*θ*ă*n*ą
 WeakTailNasalLoss: *x*l*æ*θ*ă*n
@@ -15729,6 +16019,7 @@ WsPalatalDiphthongization: *m*æ*r*ī*n
 IUmlaut: *m*e*r*ī*n
 JClusterCoalescence: *m*e*r*ī*n
 BackMutation: *m*e*r*ī*n
+WsPalatalUmlaut: *m*e*r*ī*n
 NasalSpirantLengthening: *m*e*r*ī*n
 NasalSpirantLoss: *m*e*r*ī*n
 WeakTailNasalLoss: *m*e*r*ī*n
@@ -15783,6 +16074,7 @@ WsPalatalDiphthongization: *s*w*e*s*t*ǣ*r
 IUmlaut: *s*w*e*s*t*ǣ*r
 JClusterCoalescence: *s*w*e*s*t*ǣ*r
 BackMutation: *s*w*e*s*t*ǣ*r
+WsPalatalUmlaut: *s*w*e*s*t*ǣ*r
 NasalSpirantLengthening: *s*w*e*s*t*ǣ*r
 NasalSpirantLoss: *s*w*e*s*t*ǣ*r
 WeakTailNasalLoss: *s*w*e*s*t*ǣ*r
@@ -15837,6 +16129,7 @@ WsPalatalDiphthongization: *w*æ*d*ă*n*ą
 IUmlaut: *w*æ*d*ă*n*ą
 JClusterCoalescence: *w*æ*d*ă*n*ą
 BackMutation: *w*æ*d*ă*n*ą
+WsPalatalUmlaut: *w*æ*d*ă*n*ą
 NasalSpirantLengthening: *w*æ*d*ă*n*ą
 NasalSpirantLoss: *w*æ*d*ă*n*ą
 WeakTailNasalLoss: *w*æ*d*ă*n
@@ -15891,6 +16184,7 @@ WsPalatalDiphthongization: *w*æ*ʃ*ă*n*ą
 IUmlaut: *w*æ*ʃ*ă*n*ą
 JClusterCoalescence: *w*æ*ʃ*ă*n*ą
 BackMutation: *w*æ*ʃ*ă*n*ą
+WsPalatalUmlaut: *w*æ*ʃ*ă*n*ą
 NasalSpirantLengthening: *w*æ*ʃ*ă*n*ą
 NasalSpirantLoss: *w*æ*ʃ*ă*n*ą
 WeakTailNasalLoss: *w*æ*ʃ*ă*n
@@ -15948,6 +16242,7 @@ WsPalatalDiphthongization: *ʃ*ū*f*l*u
 IUmlaut: *ʃ*ū*f*l*u
 JClusterCoalescence: *ʃ*ū*f*l*u
 BackMutation: *ʃ*ū*f*l*u
+WsPalatalUmlaut: *ʃ*ū*f*l*u
 NasalSpirantLengthening: *ʃ*ū*f*l*u
 NasalSpirantLoss: *ʃ*ū*f*l*u
 WeakTailNasalLoss: *ʃ*ū*f*l*u
@@ -16005,6 +16300,7 @@ WsPalatalDiphthongization: *f*u*l*ʤ*ō*n*ą
 IUmlaut: *f*u*l*ʤ*ō*n*ą
 JClusterCoalescence: *f*u*l*ʤ*ō*n*ą
 BackMutation: *f*u*l*ʤ*ō*n*ą
+WsPalatalUmlaut: *f*u*l*ʤ*ō*n*ą
 NasalSpirantLengthening: *f*u*l*ʤ*ō*n*ą
 NasalSpirantLoss: *f*u*l*ʤ*ō*n*ą
 WeakTailNasalLoss: *f*u*l*ʤ*ō*n
@@ -16062,6 +16358,7 @@ WsPalatalDiphthongization: *b*o*k*k
 IUmlaut: *b*o*k*k
 JClusterCoalescence: *b*o*k*k
 BackMutation: *b*o*k*k
+WsPalatalUmlaut: *b*o*k*k
 NasalSpirantLengthening: *b*o*k*k
 NasalSpirantLoss: *b*o*k*k
 WeakTailNasalLoss: *b*o*k*k
@@ -16116,6 +16413,7 @@ WsPalatalDiphthongization: *k*r*æ*f*t*i
 IUmlaut: *k*r*e*f*t*i
 JClusterCoalescence: *k*r*e*f*t*i
 BackMutation: *k*r*e*f*t*i
+WsPalatalUmlaut: *k*r*e*f*t*i
 NasalSpirantLengthening: *k*r*e*f*t*i
 NasalSpirantLoss: *k*r*e*f*t*i
 WeakTailNasalLoss: *k*r*e*f*t*i
@@ -16170,6 +16468,7 @@ WsPalatalDiphthongization: *eo*r*θ*o
 IUmlaut: *eo*r*θ*o
 JClusterCoalescence: *eo*r*θ*o
 BackMutation: *eo*r*θ*o
+WsPalatalUmlaut: *eo*r*θ*o
 NasalSpirantLengthening: *eo*r*θ*o
 NasalSpirantLoss: *eo*r*θ*o
 WeakTailNasalLoss: *eo*r*θ*o
@@ -16224,6 +16523,7 @@ WsPalatalDiphthongization: *f*o*g*l
 IUmlaut: *f*o*g*l
 JClusterCoalescence: *f*o*g*l
 BackMutation: *f*o*g*l
+WsPalatalUmlaut: *f*o*g*l
 NasalSpirantLengthening: *f*o*g*l
 NasalSpirantLoss: *f*o*g*l
 WeakTailNasalLoss: *f*o*g*l
@@ -16278,6 +16578,7 @@ WsPalatalDiphthongization: *g*u*d
 IUmlaut: *g*u*d
 JClusterCoalescence: *g*u*d
 BackMutation: *g*u*d
+WsPalatalUmlaut: *g*u*d
 NasalSpirantLengthening: *g*u*d
 NasalSpirantLoss: *g*u*d
 WeakTailNasalLoss: *g*u*d
@@ -16332,6 +16633,7 @@ WsPalatalDiphthongization: *g*a*n*s
 IUmlaut: *g*a*n*s
 JClusterCoalescence: *g*a*n*s
 BackMutation: *g*a*n*s
+WsPalatalUmlaut: *g*a*n*s
 NasalSpirantLengthening: *g*ā*n*s
 NasalSpirantLoss: *g*ā*s
 WeakTailNasalLoss: *g*ā*s
@@ -16386,6 +16688,7 @@ WsPalatalDiphthongization: *x*a*m*æ*r*æ*s
 IUmlaut: *x*a*m*æ*r*æ*s
 JClusterCoalescence: *x*a*m*æ*r*æ*s
 BackMutation: *x*a*m*æ*r*æ*s
+WsPalatalUmlaut: *x*a*m*æ*r*æ*s
 NasalSpirantLengthening: *x*a*m*æ*r*æ*s
 NasalSpirantLoss: *x*a*m*æ*r*æ*s
 WeakTailNasalLoss: *x*a*m*æ*r*æ*s
@@ -16440,6 +16743,7 @@ WsPalatalDiphthongization: *ç*eo*r*d*u
 IUmlaut: *ç*eo*r*d*u
 JClusterCoalescence: *ç*eo*r*d*u
 BackMutation: *ç*eo*r*d*u
+WsPalatalUmlaut: *ç*eo*r*d*u
 NasalSpirantLengthening: *ç*eo*r*d*u
 NasalSpirantLoss: *ç*eo*r*d*u
 WeakTailNasalLoss: *ç*eo*r*d*u
@@ -16494,6 +16798,7 @@ WsPalatalDiphthongization: *m*ō*n*ō*θ
 IUmlaut: *m*ō*n*ō*θ
 JClusterCoalescence: *m*ō*n*ō*θ
 BackMutation: *m*ō*n*ō*θ
+WsPalatalUmlaut: *m*ō*n*ō*θ
 NasalSpirantLengthening: *m*ō*n*ō*θ
 NasalSpirantLoss: *m*ō*n*ō*θ
 WeakTailNasalLoss: *m*ō*n*ō*θ
@@ -16548,6 +16853,7 @@ WsPalatalDiphthongization: *m*ō*d*ǣ*r
 IUmlaut: *m*ō*d*ǣ*r
 JClusterCoalescence: *m*ō*d*ǣ*r
 BackMutation: *m*ō*d*ǣ*r
+WsPalatalUmlaut: *m*ō*d*ǣ*r
 NasalSpirantLengthening: *m*ō*d*ǣ*r
 NasalSpirantLoss: *m*ō*d*ǣ*r
 WeakTailNasalLoss: *m*ō*d*ǣ*r
@@ -16602,6 +16908,7 @@ WsPalatalDiphthongization: *n*a*β*u
 IUmlaut: *n*a*β*u
 JClusterCoalescence: *n*a*β*u
 BackMutation: *n*a*β*u
+WsPalatalUmlaut: *n*a*β*u
 NasalSpirantLengthening: *n*a*β*u
 NasalSpirantLoss: *n*a*β*u
 WeakTailNasalLoss: *n*a*β*u
@@ -16656,6 +16963,7 @@ WsPalatalDiphthongization: *n*i*s*t*ą
 IUmlaut: *n*i*s*t*ą
 JClusterCoalescence: *n*i*s*t*ą
 BackMutation: *n*i*s*t*ą
+WsPalatalUmlaut: *n*i*s*t*ą
 NasalSpirantLengthening: *n*i*s*t*ą
 NasalSpirantLoss: *n*i*s*t*ą
 WeakTailNasalLoss: *n*i*s*t*ą
@@ -16710,6 +17018,7 @@ WsPalatalDiphthongization: *n*a*s*u
 IUmlaut: *n*a*s*u
 JClusterCoalescence: *n*a*s*u
 BackMutation: *n*a*s*u
+WsPalatalUmlaut: *n*a*s*u
 NasalSpirantLengthening: *n*a*s*u
 NasalSpirantLoss: *n*a*s*u
 WeakTailNasalLoss: *n*a*s*u
@@ -16764,6 +17073,7 @@ WsPalatalDiphthongization: *r*o*s*t*u
 IUmlaut: *r*o*s*t*u
 JClusterCoalescence: *r*o*s*t*u
 BackMutation: *r*o*s*t*u
+WsPalatalUmlaut: *r*o*s*t*u
 NasalSpirantLengthening: *r*o*s*t*u
 NasalSpirantLoss: *r*o*s*t*u
 WeakTailNasalLoss: *r*o*s*t*u
@@ -16818,6 +17128,7 @@ WsPalatalDiphthongization: *s*a*k*u
 IUmlaut: *s*a*k*u
 JClusterCoalescence: *s*a*k*u
 BackMutation: *s*a*k*u
+WsPalatalUmlaut: *s*a*k*u
 NasalSpirantLengthening: *s*a*k*u
 NasalSpirantLoss: *s*a*k*u
 WeakTailNasalLoss: *s*a*k*u
@@ -16872,6 +17183,7 @@ WsPalatalDiphthongization: *ʃ*a*m*u
 IUmlaut: *ʃ*a*m*u
 JClusterCoalescence: *ʃ*a*m*u
 BackMutation: *ʃ*a*m*u
+WsPalatalUmlaut: *ʃ*a*m*u
 NasalSpirantLengthening: *ʃ*a*m*u
 NasalSpirantLoss: *ʃ*a*m*u
 WeakTailNasalLoss: *ʃ*a*m*u
@@ -16926,6 +17238,7 @@ WsPalatalDiphthongization: *s*u*m*e*r
 IUmlaut: *s*u*m*e*r
 JClusterCoalescence: *s*u*m*e*r
 BackMutation: *s*u*m*e*r
+WsPalatalUmlaut: *s*u*m*e*r
 NasalSpirantLengthening: *s*u*m*e*r
 NasalSpirantLoss: *s*u*m*e*r
 WeakTailNasalLoss: *s*u*m*e*r
@@ -16980,6 +17293,7 @@ WsPalatalDiphthongization: *θ*e*ʤ*n
 IUmlaut: *θ*e*ʤ*n
 JClusterCoalescence: *θ*e*ʤ*n
 BackMutation: *θ*e*ʤ*n
+WsPalatalUmlaut: *θ*e*ʤ*n
 NasalSpirantLengthening: *θ*e*ʤ*n
 NasalSpirantLoss: *θ*e*ʤ*n
 WeakTailNasalLoss: *θ*e*ʤ*n
@@ -17034,6 +17348,7 @@ WsPalatalDiphthongization: *θ*u*r*n*u
 IUmlaut: *θ*u*r*n*u
 JClusterCoalescence: *θ*u*r*n*u
 BackMutation: *θ*u*r*n*u
+WsPalatalUmlaut: *θ*u*r*n*u
 NasalSpirantLengthening: *θ*u*r*n*u
 NasalSpirantLoss: *θ*u*r*n*u
 WeakTailNasalLoss: *θ*u*r*n*u
@@ -17088,6 +17403,7 @@ WsPalatalDiphthongization: *w*a*ʧ*ō*n*ą
 IUmlaut: *w*a*ʧ*ō*n*ą
 JClusterCoalescence: *w*a*ʧ*ō*n*ą
 BackMutation: *w*a*ʧ*ō*n*ą
+WsPalatalUmlaut: *w*a*ʧ*ō*n*ą
 NasalSpirantLengthening: *w*a*ʧ*ō*n*ą
 NasalSpirantLoss: *w*a*ʧ*ō*n*ą
 WeakTailNasalLoss: *w*a*ʧ*ō*n
@@ -17142,6 +17458,7 @@ WsPalatalDiphthongization: *w*ea*r*t*o
 IUmlaut: *w*ea*r*t*o
 JClusterCoalescence: *w*ea*r*t*o
 BackMutation: *w*ea*r*t*o
+WsPalatalUmlaut: *w*ea*r*t*o
 NasalSpirantLengthening: *w*ea*r*t*o
 NasalSpirantLoss: *w*ea*r*t*o
 WeakTailNasalLoss: *w*ea*r*t*o
@@ -17196,6 +17513,7 @@ WsPalatalDiphthongization: *w*i*θ*r
 IUmlaut: *w*i*θ*r
 JClusterCoalescence: *w*i*θ*r
 BackMutation: *w*i*θ*r
+WsPalatalUmlaut: *w*i*θ*r
 NasalSpirantLengthening: *w*i*θ*r
 NasalSpirantLoss: *w*i*θ*r
 WeakTailNasalLoss: *w*i*θ*r
@@ -17250,6 +17568,7 @@ WsPalatalDiphthongization: *w*e*l*l*j*ō*n
 IUmlaut: *w*i*l*l*j*ō*n
 JClusterCoalescence: *w*i*l*l*j*ō*n
 BackMutation: *w*i*l*l*j*ō*n
+WsPalatalUmlaut: *w*i*l*l*j*ō*n
 NasalSpirantLengthening: *w*i*l*l*j*ō*n
 NasalSpirantLoss: *w*i*l*l*j*ō*n
 WeakTailNasalLoss: *w*i*l*l*j*ō*n
@@ -17304,6 +17623,7 @@ WsPalatalDiphthongization: *w*ī*θ*i*j
 IUmlaut: *w*ī*θ*i*j
 JClusterCoalescence: *w*ī*θ*i*j
 BackMutation: *w*ī*θ*i*j
+WsPalatalUmlaut: *w*ī*θ*i*j
 NasalSpirantLengthening: *w*ī*θ*i*j
 NasalSpirantLoss: *w*ī*θ*i*j
 WeakTailNasalLoss: *w*ī*θ*i*j
@@ -17358,6 +17678,7 @@ WsPalatalDiphthongization: *w*o*l*f
 IUmlaut: *w*o*l*f
 JClusterCoalescence: *w*o*l*f
 BackMutation: *w*o*l*f
+WsPalatalUmlaut: *w*o*l*f
 NasalSpirantLengthening: *w*o*l*f
 NasalSpirantLoss: *w*o*l*f
 WeakTailNasalLoss: *w*o*l*f
@@ -17415,6 +17736,7 @@ WsPalatalDiphthongization: *b*a*n*n*ą
 IUmlaut: *b*a*n*n*ą
 JClusterCoalescence: *b*a*n*n*ą
 BackMutation: *b*a*n*n*ą
+WsPalatalUmlaut: *b*a*n*n*ą
 NasalSpirantLengthening: *b*a*n*n*ą
 NasalSpirantLoss: *b*a*n*n*ą
 WeakTailNasalLoss: *b*a*n*n
@@ -17469,6 +17791,7 @@ WsPalatalDiphthongization: *l*ēa*β*j*ă*n*ą
 IUmlaut: *l*īe*β*j*ă*n*ą
 JClusterCoalescence: *l*īe*β*j*ă*n*ą
 BackMutation: *l*īe*β*j*ă*n*ą
+WsPalatalUmlaut: *l*īe*β*j*ă*n*ą
 NasalSpirantLengthening: *l*īe*β*j*ă*n*ą
 NasalSpirantLoss: *l*īe*β*j*ă*n*ą
 WeakTailNasalLoss: *l*īe*β*j*ă*n
@@ -17523,6 +17846,7 @@ WsPalatalDiphthongization: *b*ā*n*ă*n
 IUmlaut: *b*ā*n*ă*n
 JClusterCoalescence: *b*ā*n*ă*n
 BackMutation: *b*ā*n*ă*n
+WsPalatalUmlaut: *b*ā*n*ă*n
 NasalSpirantLengthening: *b*ā*n*ă*n
 NasalSpirantLoss: *b*ā*n*ă*n
 WeakTailNasalLoss: *b*ā*n*ă*n
@@ -17577,6 +17901,7 @@ WsPalatalDiphthongization: *b*o*d*m
 IUmlaut: *b*o*d*m
 JClusterCoalescence: *b*o*d*m
 BackMutation: *b*o*d*m
+WsPalatalUmlaut: *b*o*d*m
 NasalSpirantLengthening: *b*o*d*m
 NasalSpirantLoss: *b*o*d*m
 WeakTailNasalLoss: *b*o*d*m
@@ -17631,6 +17956,7 @@ WsPalatalDiphthongization: *b*r*e*ʧ*ă*n*ą
 IUmlaut: *b*r*e*ʧ*ă*n*ą
 JClusterCoalescence: *b*r*e*ʧ*ă*n*ą
 BackMutation: *b*r*e*ʧ*ă*n*ą
+WsPalatalUmlaut: *b*r*e*ʧ*ă*n*ą
 NasalSpirantLengthening: *b*r*e*ʧ*ă*n*ą
 NasalSpirantLoss: *b*r*e*ʧ*ă*n*ą
 WeakTailNasalLoss: *b*r*e*ʧ*ă*n
@@ -17685,6 +18011,7 @@ WsPalatalDiphthongization: *k*o*r*n*ă*n
 IUmlaut: *k*o*r*n*ă*n
 JClusterCoalescence: *k*o*r*n*ă*n
 BackMutation: *k*o*r*n*ă*n
+WsPalatalUmlaut: *k*o*r*n*ă*n
 NasalSpirantLengthening: *k*o*r*n*ă*n
 NasalSpirantLoss: *k*o*r*n*ă*n
 WeakTailNasalLoss: *k*o*r*n*ă*n
@@ -17739,6 +18066,7 @@ WsPalatalDiphthongization: *f*æ*r*ă*n*ą
 IUmlaut: *f*æ*r*ă*n*ą
 JClusterCoalescence: *f*æ*r*ă*n*ą
 BackMutation: *f*æ*r*ă*n*ą
+WsPalatalUmlaut: *f*æ*r*ă*n*ą
 NasalSpirantLengthening: *f*æ*r*ă*n*ą
 NasalSpirantLoss: *f*æ*r*ă*n*ą
 WeakTailNasalLoss: *f*æ*r*ă*n
@@ -17793,6 +18121,7 @@ WsPalatalDiphthongization: *f*ea*r*n*ă*n
 IUmlaut: *f*ea*r*n*ă*n
 JClusterCoalescence: *f*ea*r*n*ă*n
 BackMutation: *f*ea*r*n*ă*n
+WsPalatalUmlaut: *f*ea*r*n*ă*n
 NasalSpirantLengthening: *f*ea*r*n*ă*n
 NasalSpirantLoss: *f*ea*r*n*ă*n
 WeakTailNasalLoss: *f*ea*r*n*ă*n
@@ -17847,6 +18176,7 @@ WsPalatalDiphthongization: *f*e*l*θ*u
 IUmlaut: *f*e*l*θ*u
 JClusterCoalescence: *f*e*l*θ*u
 BackMutation: *f*e*l*θ*u
+WsPalatalUmlaut: *f*e*l*θ*u
 NasalSpirantLengthening: *f*e*l*θ*u
 NasalSpirantLoss: *f*e*l*θ*u
 WeakTailNasalLoss: *f*e*l*θ*u
@@ -17901,6 +18231,7 @@ WsPalatalDiphthongization: *f*ea*l*θ*ă*n*ą
 IUmlaut: *f*ea*l*θ*ă*n*ą
 JClusterCoalescence: *f*ea*l*θ*ă*n*ą
 BackMutation: *f*ea*l*θ*ă*n*ą
+WsPalatalUmlaut: *f*ea*l*θ*ă*n*ą
 NasalSpirantLengthening: *f*ea*l*θ*ă*n*ą
 NasalSpirantLoss: *f*ea*l*θ*ă*n*ą
 WeakTailNasalLoss: *f*ea*l*θ*ă*n
@@ -17955,6 +18286,7 @@ WsPalatalDiphthongization: *g*o*l*θ*ą
 IUmlaut: *g*o*l*θ*ą
 JClusterCoalescence: *g*o*l*θ*ą
 BackMutation: *g*o*l*θ*ą
+WsPalatalUmlaut: *g*o*l*θ*ą
 NasalSpirantLengthening: *g*o*l*θ*ą
 NasalSpirantLoss: *g*o*l*θ*ą
 WeakTailNasalLoss: *g*o*l*θ*ą
@@ -18009,6 +18341,7 @@ WsPalatalDiphthongization: *g*r*æ*β*ă*n*ą
 IUmlaut: *g*r*æ*β*ă*n*ą
 JClusterCoalescence: *g*r*æ*β*ă*n*ą
 BackMutation: *g*r*æ*β*ă*n*ą
+WsPalatalUmlaut: *g*r*æ*β*ă*n*ą
 NasalSpirantLengthening: *g*r*æ*β*ă*n*ą
 NasalSpirantLoss: *g*r*æ*β*ă*n*ą
 WeakTailNasalLoss: *g*r*æ*β*ă*n
@@ -18063,6 +18396,7 @@ WsPalatalDiphthongization: *ç*a*β*ō*n*ą
 IUmlaut: *ç*a*β*ō*n*ą
 JClusterCoalescence: *ç*a*β*ō*n*ą
 BackMutation: *ç*a*β*ō*n*ą
+WsPalatalUmlaut: *ç*a*β*ō*n*ą
 NasalSpirantLengthening: *ç*a*β*ō*n*ą
 NasalSpirantLoss: *ç*a*β*ō*n*ą
 WeakTailNasalLoss: *ç*a*β*ō*n
@@ -18117,6 +18451,7 @@ WsPalatalDiphthongization: *ç*e*l*p*ă*n*ą
 IUmlaut: *ç*e*l*p*ă*n*ą
 JClusterCoalescence: *ç*e*l*p*ă*n*ą
 BackMutation: *ç*e*l*p*ă*n*ą
+WsPalatalUmlaut: *ç*e*l*p*ă*n*ą
 NasalSpirantLengthening: *ç*e*l*p*ă*n*ą
 NasalSpirantLoss: *ç*e*l*p*ă*n*ą
 WeakTailNasalLoss: *ç*e*l*p*ă*n
@@ -18171,6 +18506,7 @@ WsPalatalDiphthongization: *x*o*r*n*ă*n
 IUmlaut: *x*o*r*n*ă*n
 JClusterCoalescence: *x*o*r*n*ă*n
 BackMutation: *x*o*r*n*ă*n
+WsPalatalUmlaut: *x*o*r*n*ă*n
 NasalSpirantLengthening: *x*o*r*n*ă*n
 NasalSpirantLoss: *x*o*r*n*ă*n
 WeakTailNasalLoss: *x*o*r*n*ă*n
@@ -18225,6 +18561,7 @@ WsPalatalDiphthongization: *l*ēo*x*t*j*ă*n*ą
 IUmlaut: *l*īe*x*t*j*ă*n*ą
 JClusterCoalescence: *l*īe*x*t*j*ă*n*ą
 BackMutation: *l*īe*x*t*j*ă*n*ą
+WsPalatalUmlaut: *l*īe*x*t*j*ă*n*ą
 NasalSpirantLengthening: *l*īe*x*t*j*ă*n*ą
 NasalSpirantLoss: *l*īe*x*t*j*ă*n*ą
 WeakTailNasalLoss: *l*īe*x*t*j*ă*n
@@ -18279,6 +18616,7 @@ WsPalatalDiphthongization: *l*ā*m*ō*n
 IUmlaut: *l*ā*m*ō*n
 JClusterCoalescence: *l*ā*m*ō*n
 BackMutation: *l*ā*m*ō*n
+WsPalatalUmlaut: *l*ā*m*ō*n
 NasalSpirantLengthening: *l*ā*m*ō*n
 NasalSpirantLoss: *l*ā*m*ō*n
 WeakTailNasalLoss: *l*ā*m*ō*n
@@ -18333,6 +18671,7 @@ WsPalatalDiphthongization: *l*ā*θ
 IUmlaut: *l*ā*θ
 JClusterCoalescence: *l*ā*θ
 BackMutation: *l*ā*θ
+WsPalatalUmlaut: *l*ā*θ
 NasalSpirantLengthening: *l*ā*θ
 NasalSpirantLoss: *l*ā*θ
 WeakTailNasalLoss: *l*ā*θ
@@ -18387,6 +18726,7 @@ WsPalatalDiphthongization: *l*ēa*g*u
 IUmlaut: *l*ēa*g*u
 JClusterCoalescence: *l*ēa*g*u
 BackMutation: *l*ēa*g*u
+WsPalatalUmlaut: *l*ēa*g*u
 NasalSpirantLengthening: *l*ēa*g*u
 NasalSpirantLoss: *l*ēa*g*u
 WeakTailNasalLoss: *l*ēa*g*u
@@ -18441,6 +18781,7 @@ WsPalatalDiphthongization: *n*ǣ*θ*l*u
 IUmlaut: *n*ǣ*θ*l*u
 JClusterCoalescence: *n*ǣ*θ*l*u
 BackMutation: *n*ǣ*θ*l*u
+WsPalatalUmlaut: *n*ǣ*θ*l*u
 NasalSpirantLengthening: *n*ǣ*θ*l*u
 NasalSpirantLoss: *n*ǣ*θ*l*u
 WeakTailNasalLoss: *n*ǣ*θ*l*u
@@ -18495,6 +18836,7 @@ WsPalatalDiphthongization: *s*ō*ʧ*j*ă*n*ą
 IUmlaut: *s*ē*ʧ*j*ă*n*ą
 JClusterCoalescence: *s*ē*ʧ*j*ă*n*ą
 BackMutation: *s*ē*ʧ*j*ă*n*ą
+WsPalatalUmlaut: *s*ē*ʧ*j*ă*n*ą
 NasalSpirantLengthening: *s*ē*ʧ*j*ă*n*ą
 NasalSpirantLoss: *s*ē*ʧ*j*ă*n*ą
 WeakTailNasalLoss: *s*ē*ʧ*j*ă*n
@@ -18549,6 +18891,7 @@ WsPalatalDiphthongization: *s*i*n*g*w*ă*n*ą
 IUmlaut: *s*i*n*g*w*ă*n*ą
 JClusterCoalescence: *s*i*n*g*w*ă*n*ą
 BackMutation: *s*i*n*g*w*ă*n*ą
+WsPalatalUmlaut: *s*i*n*g*w*ă*n*ą
 NasalSpirantLengthening: *s*i*n*g*w*ă*n*ą
 NasalSpirantLoss: *s*i*n*g*w*ă*n*ą
 WeakTailNasalLoss: *s*i*n*g*w*ă*n
@@ -18603,6 +18946,7 @@ WsPalatalDiphthongization: *s*l*ǣ*p*ă*n*ą
 IUmlaut: *s*l*ǣ*p*ă*n*ą
 JClusterCoalescence: *s*l*ǣ*p*ă*n*ą
 BackMutation: *s*l*ǣ*p*ă*n*ą
+WsPalatalUmlaut: *s*l*ǣ*p*ă*n*ą
 NasalSpirantLengthening: *s*l*ǣ*p*ă*n*ą
 NasalSpirantLoss: *s*l*ǣ*p*ă*n*ą
 WeakTailNasalLoss: *s*l*ǣ*p*ă*n
@@ -18657,6 +19001,7 @@ WsPalatalDiphthongization: *s*n*ā*g*w
 IUmlaut: *s*n*ā*g*w
 JClusterCoalescence: *s*n*ā*g*w
 BackMutation: *s*n*ā*g*w
+WsPalatalUmlaut: *s*n*ā*g*w
 NasalSpirantLengthening: *s*n*ā*g*w
 NasalSpirantLoss: *s*n*ā*g*w
 WeakTailNasalLoss: *s*n*ā*g*w
@@ -18711,6 +19056,7 @@ WsPalatalDiphthongization: *s*p*a*n*n*ă*n*ą
 IUmlaut: *s*p*a*n*n*ă*n*ą
 JClusterCoalescence: *s*p*a*n*n*ă*n*ą
 BackMutation: *s*p*a*n*n*ă*n*ą
+WsPalatalUmlaut: *s*p*a*n*n*ă*n*ą
 NasalSpirantLengthening: *s*p*a*n*n*ă*n*ą
 NasalSpirantLoss: *s*p*a*n*n*ă*n*ą
 WeakTailNasalLoss: *s*p*a*n*n*ă*n
@@ -18765,6 +19111,7 @@ WsPalatalDiphthongization: *s*t*r*æ*ʧ*ʧ*j*ă*n*ą
 IUmlaut: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
 JClusterCoalescence: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
 BackMutation: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
+WsPalatalUmlaut: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
 NasalSpirantLengthening: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
 NasalSpirantLoss: *s*t*r*e*ʧ*ʧ*j*ă*n*ą
 WeakTailNasalLoss: *s*t*r*e*ʧ*ʧ*j*ă*n
@@ -18819,6 +19166,7 @@ WsPalatalDiphthongization: *s*u*n*d*r*ō*j*ă*n*ą
 IUmlaut: *s*u*n*d*r*ē*j*ă*n*ą
 JClusterCoalescence: *s*u*n*d*r*ē*j*ă*n*ą
 BackMutation: *s*u*n*d*r*ē*j*ă*n*ą
+WsPalatalUmlaut: *s*u*n*d*r*ē*j*ă*n*ą
 NasalSpirantLengthening: *s*u*n*d*r*ē*j*ă*n*ą
 NasalSpirantLoss: *s*u*n*d*r*ē*j*ă*n*ą
 WeakTailNasalLoss: *s*u*n*d*r*ē*j*ă*n
@@ -18873,6 +19221,7 @@ WsPalatalDiphthongization: *s*w*ī*n*ă*n
 IUmlaut: *s*w*ī*n*ă*n
 JClusterCoalescence: *s*w*ī*n*ă*n
 BackMutation: *s*w*ī*n*ă*n
+WsPalatalUmlaut: *s*w*ī*n*ă*n
 NasalSpirantLengthening: *s*w*ī*n*ă*n
 NasalSpirantLoss: *s*w*ī*n*ă*n
 WeakTailNasalLoss: *s*w*ī*n*ă*n
@@ -18927,6 +19276,7 @@ WsPalatalDiphthongization: *t*ēa*x*m
 IUmlaut: *t*ēa*x*m
 JClusterCoalescence: *t*ēa*x*m
 BackMutation: *t*ēa*x*m
+WsPalatalUmlaut: *t*ēa*x*m
 NasalSpirantLengthening: *t*ēa*x*m
 NasalSpirantLoss: *t*ēa*x*m
 WeakTailNasalLoss: *t*ēa*x*m
@@ -18981,6 +19331,7 @@ WsPalatalDiphthongization: *θ*a*n*k
 IUmlaut: *θ*a*n*k
 JClusterCoalescence: *θ*a*n*k
 BackMutation: *θ*a*n*k
+WsPalatalUmlaut: *θ*a*n*k
 NasalSpirantLengthening: *θ*a*n*k
 NasalSpirantLoss: *θ*a*n*k
 WeakTailNasalLoss: *θ*a*n*k
@@ -19035,6 +19386,7 @@ WsPalatalDiphthongization: *t*i*m*r*ą
 IUmlaut: *t*i*m*r*ą
 JClusterCoalescence: *t*i*m*r*ą
 BackMutation: *t*i*m*r*ą
+WsPalatalUmlaut: *t*i*m*r*ą
 NasalSpirantLengthening: *t*i*m*r*ą
 NasalSpirantLoss: *t*i*m*r*ą
 WeakTailNasalLoss: *t*i*m*r*ą
@@ -19089,6 +19441,7 @@ WsPalatalDiphthongization: *t*ā*k*n*ă*n
 IUmlaut: *t*ā*k*n*ă*n
 JClusterCoalescence: *t*ā*k*n*ă*n
 BackMutation: *t*ā*k*n*ă*n
+WsPalatalUmlaut: *t*ā*k*n*ă*n
 NasalSpirantLengthening: *t*ā*k*n*ă*n
 NasalSpirantLoss: *t*ā*k*n*ă*n
 WeakTailNasalLoss: *t*ā*k*n*ă*n
@@ -19143,6 +19496,7 @@ WsPalatalDiphthongization: *t*ū*n*ă*n
 IUmlaut: *t*ū*n*ă*n
 JClusterCoalescence: *t*ū*n*ă*n
 BackMutation: *t*ū*n*ă*n
+WsPalatalUmlaut: *t*ū*n*ă*n
 NasalSpirantLengthening: *t*ū*n*ă*n
 NasalSpirantLoss: *t*ū*n*ă*n
 WeakTailNasalLoss: *t*ū*n*ă*n
@@ -19197,6 +19551,7 @@ WsPalatalDiphthongization: *t*r*o*g*ą
 IUmlaut: *t*r*o*g*ą
 JClusterCoalescence: *t*r*o*g*ą
 BackMutation: *t*r*o*g*ą
+WsPalatalUmlaut: *t*r*o*g*ą
 NasalSpirantLengthening: *t*r*o*g*ą
 NasalSpirantLoss: *t*r*o*g*ą
 WeakTailNasalLoss: *t*r*o*g*ą
@@ -19251,6 +19606,7 @@ WsPalatalDiphthongization: *w*eo*r*p*ă*n*ą
 IUmlaut: *w*eo*r*p*ă*n*ą
 JClusterCoalescence: *w*eo*r*p*ă*n*ą
 BackMutation: *w*eo*r*p*ă*n*ą
+WsPalatalUmlaut: *w*eo*r*p*ă*n*ą
 NasalSpirantLengthening: *w*eo*r*p*ă*n*ą
 NasalSpirantLoss: *w*eo*r*p*ă*n*ą
 WeakTailNasalLoss: *w*eo*r*p*ă*n
@@ -19305,6 +19661,7 @@ WsPalatalDiphthongization: *w*æ*β*s
 IUmlaut: *w*æ*β*s
 JClusterCoalescence: *w*æ*β*s
 BackMutation: *w*æ*β*s
+WsPalatalUmlaut: *w*æ*β*s
 NasalSpirantLengthening: *w*æ*β*s
 NasalSpirantLoss: *w*æ*β*s
 WeakTailNasalLoss: *w*æ*β*s
@@ -19359,6 +19716,7 @@ WsPalatalDiphthongization: *w*æ*t*n*ą
 IUmlaut: *w*æ*t*n*ą
 JClusterCoalescence: *w*æ*t*n*ą
 BackMutation: *w*æ*t*n*ą
+WsPalatalUmlaut: *w*æ*t*n*ą
 NasalSpirantLengthening: *w*æ*t*n*ą
 NasalSpirantLoss: *w*æ*t*n*ą
 WeakTailNasalLoss: *w*æ*t*n
@@ -19413,6 +19771,7 @@ WsPalatalDiphthongization: *w*ea*x*s*ă*n*ą
 IUmlaut: *w*ea*x*s*ă*n*ą
 JClusterCoalescence: *w*ea*x*s*ă*n*ą
 BackMutation: *w*ea*x*s*ă*n*ą
+WsPalatalUmlaut: *w*ea*x*s*ă*n*ą
 NasalSpirantLengthening: *w*ea*x*s*ă*n*ą
 NasalSpirantLoss: *w*ea*x*s*ă*n*ą
 WeakTailNasalLoss: *w*ea*x*s*ă*n
@@ -19467,6 +19826,7 @@ WsPalatalDiphthongization: *w*ǣ*p*n*ă*n
 IUmlaut: *w*ǣ*p*n*ă*n
 JClusterCoalescence: *w*ǣ*p*n*ă*n
 BackMutation: *w*ǣ*p*n*ă*n
+WsPalatalUmlaut: *w*ǣ*p*n*ă*n
 NasalSpirantLengthening: *w*ǣ*p*n*ă*n
 NasalSpirantLoss: *w*ǣ*p*n*ă*n
 WeakTailNasalLoss: *w*ǣ*p*n*ă*n
@@ -19521,6 +19881,7 @@ WsPalatalDiphthongization: *w*æ*l
 IUmlaut: *w*æ*l
 JClusterCoalescence: *w*æ*l
 BackMutation: *w*æ*l
+WsPalatalUmlaut: *w*æ*l
 NasalSpirantLengthening: *w*æ*l
 NasalSpirantLoss: *w*æ*l
 WeakTailNasalLoss: *w*æ*l
@@ -19575,6 +19936,7 @@ WsPalatalDiphthongization: *w*i*n*d*ă*n*ą
 IUmlaut: *w*i*n*d*ă*n*ą
 JClusterCoalescence: *w*i*n*d*ă*n*ą
 BackMutation: *w*i*n*d*ă*n*ą
+WsPalatalUmlaut: *w*i*n*d*ă*n*ą
 NasalSpirantLengthening: *w*i*n*d*ă*n*ą
 NasalSpirantLoss: *w*i*n*d*ă*n*ą
 WeakTailNasalLoss: *w*i*n*d*ă*n
@@ -19629,6 +19991,7 @@ WsPalatalDiphthongization: *ʤ*ea*r*n*ă*n
 IUmlaut: *ʤ*ea*r*n*ă*n
 JClusterCoalescence: *ʤ*ea*r*n*ă*n
 BackMutation: *ʤ*ea*r*n*ă*n
+WsPalatalUmlaut: *ʤ*ea*r*n*ă*n
 NasalSpirantLengthening: *ʤ*ea*r*n*ă*n
 NasalSpirantLoss: *ʤ*ea*r*n*ă*n
 WeakTailNasalLoss: *ʤ*ea*r*n*ă*n
@@ -19686,6 +20049,7 @@ WsPalatalDiphthongization: *b*o*r*ō*j*ă*n*ą
 IUmlaut: *b*o*r*ē*j*ă*n*ą
 JClusterCoalescence: *b*o*r*ē*j*ă*n*ą
 BackMutation: *b*o*r*ē*j*ă*n*ą
+WsPalatalUmlaut: *b*o*r*ē*j*ă*n*ą
 NasalSpirantLengthening: *b*o*r*ē*j*ă*n*ą
 NasalSpirantLoss: *b*o*r*ē*j*ă*n*ą
 WeakTailNasalLoss: *b*o*r*ē*j*ă*n
@@ -19740,6 +20104,7 @@ WsPalatalDiphthongization: *b*r*e*s*t*ă*n*ą
 IUmlaut: *b*r*e*s*t*ă*n*ą
 JClusterCoalescence: *b*r*e*s*t*ă*n*ą
 BackMutation: *b*r*e*s*t*ă*n*ą
+WsPalatalUmlaut: *b*r*e*s*t*ă*n*ą
 NasalSpirantLengthening: *b*r*e*s*t*ă*n*ą
 NasalSpirantLoss: *b*r*e*s*t*ă*n*ą
 WeakTailNasalLoss: *b*r*e*s*t*ă*n
@@ -19794,6 +20159,7 @@ WsPalatalDiphthongization: *f*l*ēo*x*ă*n*ą
 IUmlaut: *f*l*ēo*x*ă*n*ą
 JClusterCoalescence: *f*l*ēo*x*ă*n*ą
 BackMutation: *f*l*ēo*x*ă*n*ą
+WsPalatalUmlaut: *f*l*ēo*x*ă*n*ą
 NasalSpirantLengthening: *f*l*ēo*x*ă*n*ą
 NasalSpirantLoss: *f*l*ēo*x*ă*n*ą
 WeakTailNasalLoss: *f*l*ēo*x*ă*n
@@ -19848,6 +20214,7 @@ WsPalatalDiphthongization: *f*r*o*s*t*ą
 IUmlaut: *f*r*o*s*t*ą
 JClusterCoalescence: *f*r*o*s*t*ą
 BackMutation: *f*r*o*s*t*ą
+WsPalatalUmlaut: *f*r*o*s*t*ą
 NasalSpirantLengthening: *f*r*o*s*t*ą
 NasalSpirantLoss: *f*r*o*s*t*ą
 WeakTailNasalLoss: *f*r*o*s*t*ą
@@ -19902,6 +20269,7 @@ WsPalatalDiphthongization: *l*ie*r*n*ō*j*ă*n*ą
 IUmlaut: *l*ie*r*n*ē*j*ă*n*ą
 JClusterCoalescence: *l*ie*r*n*ē*j*ă*n*ą
 BackMutation: *l*ie*r*n*ē*j*ă*n*ą
+WsPalatalUmlaut: *l*ie*r*n*ē*j*ă*n*ą
 NasalSpirantLengthening: *l*ie*r*n*ē*j*ă*n*ą
 NasalSpirantLoss: *l*ie*r*n*ē*j*ă*n*ą
 WeakTailNasalLoss: *l*ie*r*n*ē*j*ă*n
@@ -19956,6 +20324,7 @@ WsPalatalDiphthongization: *m*a*k*ō*j*ă*n*ą
 IUmlaut: *m*a*k*ē*j*ă*n*ą
 JClusterCoalescence: *m*a*k*ē*j*ă*n*ą
 BackMutation: *m*a*k*ē*j*ă*n*ą
+WsPalatalUmlaut: *m*a*k*ē*j*ă*n*ą
 NasalSpirantLengthening: *m*a*k*ē*j*ă*n*ą
 NasalSpirantLoss: *m*a*k*ē*j*ă*n*ą
 WeakTailNasalLoss: *m*a*k*ē*j*ă*n
@@ -20010,6 +20379,7 @@ WsPalatalDiphthongization: *m*e*l*u*k
 IUmlaut: *m*e*l*u*k
 JClusterCoalescence: *m*e*l*u*k
 BackMutation: *m*eo*l*u*k
+WsPalatalUmlaut: *m*eo*l*u*k
 NasalSpirantLengthening: *m*eo*l*u*k
 NasalSpirantLoss: *m*eo*l*u*k
 WeakTailNasalLoss: *m*eo*l*u*k
@@ -20232,13 +20602,13 @@ tap | *tappōn | exp tæppa | afb *t*æ*p*p*ō*n | ar *t*a*p*p*ō*n
 ProtoInput: 0
 
 InitialKn: 4
-knead :: *knedăną, knee :: *knewą, knob :: *knuppăz, knight :: *knixtăz
+knead :: *knedăną, knee :: *knewą, knight :: *knixtăz, knob :: *knuppăz
 
 Palatalisation: 17
 belly :: *balgiz, chew :: *kewwăną, rye :: *rugiz, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, shine :: *skīnăną, string :: *strangiz, gift :: *geftiz, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, begin :: *biginnăną, give :: *gebăną, rock :: *rukkiz, follow :: *fulgēną, wake :: *wakēną
 
 ConsonantRules: 141
-beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, birth :: *burdiz, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drive :: *drībăną, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fox :: *fuxsăz, gang :: *gangăz, ghost :: *gaistăz, ground :: *grunduz, guest :: *gastiz, hand :: *xanduz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leaf :: *laubą, leek :: *laukăz, life :: *lībą, liver :: *librō, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, rye :: *rugiz, salve :: *salbō, seam :: *saumăz, seven :: *sebun, shield :: *skelduz, spoon :: *spēnuz, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thief :: *θeubăz, thirst :: *θurstuz, thistle :: *θestilăz, thunder :: *θunrăz, wain :: *wagnăz, weave :: *webăną, wife :: *wībą, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, stem :: *stamnăz, think :: *θankăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, heaven :: *xemenăz, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, navel :: *nablōn, neck :: *xnakkăz, sieve :: *sibăz, way :: *wegăz, gift :: *geftiz, harvest :: *xarbistuz, knight :: *knixtăz, live :: *libēną, might :: *maxtiz, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, three :: *θrejez, wight :: *wextiz, wold :: *walθuz, tide :: *tīdiz, calf :: *kalbăz, give :: *gebăną, rock :: *rukkiz, cud :: *kwiθuz, buck :: *bukkăz, craft :: *kraftiz, fowl :: *fuglăz, goose :: *gansz, month :: *mēnōθz, nave :: *nabō, summer :: *sumerăz, thane :: *θegnăz, thorn :: *θurnuz, withy :: *wīθijăz, wolf :: *wulfăz, believe :: *laubjăną, bottom :: *budmăz, field :: *felθuz, grave :: *grabăną, have :: *xabēną, loath :: *laiθăz, snow :: *snaigwăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz, learn :: *liznōjăną, milk :: *melukz
+beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, birth :: *burdiz, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drive :: *drībăną, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fox :: *fuxsăz, gang :: *gangăz, ghost :: *gaistăz, ground :: *grunduz, guest :: *gastiz, hand :: *xanduz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knight :: *knixtăz, leaf :: *laubą, leek :: *laukăz, life :: *lībą, liver :: *librō, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, might :: *maxtiz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, rye :: *rugiz, salve :: *salbō, seam :: *saumăz, seven :: *sebun, shield :: *skelduz, spoon :: *spēnuz, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thief :: *θeubăz, thirst :: *θurstuz, thistle :: *θestilăz, thunder :: *θunrăz, wain :: *wagnăz, weave :: *webăną, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, stem :: *stamnăz, think :: *θankăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, heaven :: *xemenăz, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, navel :: *nablōn, neck :: *xnakkăz, sieve :: *sibăz, way :: *wegăz, gift :: *geftiz, harvest :: *xarbistuz, live :: *libēną, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, three :: *θrejez, wold :: *walθuz, tide :: *tīdiz, calf :: *kalbăz, give :: *gebăną, rock :: *rukkiz, cud :: *kwiθuz, buck :: *bukkăz, craft :: *kraftiz, fowl :: *fuglăz, goose :: *gansz, month :: *mēnōθz, nave :: *nabō, summer :: *sumerăz, thane :: *θegnăz, thorn :: *θurnuz, withy :: *wīθijăz, wolf :: *wulfăz, believe :: *laubjăną, bottom :: *budmăz, field :: *felθuz, grave :: *grabăną, have :: *xabēną, loath :: *laiθăz, snow :: *snaigwăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz, learn :: *liznōjăną, milk :: *melukz
 
 WestGermanic: 24
 deal :: *dailiz, dough :: *daigăz, ghost :: *gaistăz, heal :: *xailjăną, heath :: *xaiθiz, home :: *xaimăz, last :: *laistjăną, lead :: *laidjăną, mean :: *mainjăną, rope :: *raipą, spread :: *spraidjăną, stone :: *stainăz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, sheath :: *skaiθiz, net :: *natją, soul :: *saiwălō, toe :: *taixwō, bone :: *bainăn, loam :: *laimōn, loath :: *laiθăz, snow :: *snaigwăz, token :: *taiknăn
@@ -20268,10 +20638,10 @@ EwLongDiphthong: 3
 chew :: *kewwăną, knee :: *knewą, nine :: *newun
 
 AngloFrisianBrightening: 90
-bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, flax :: *flaxsą, grass :: *grasą, guest :: *gastiz, hail :: *xaglą, hall :: *xallō, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, hedge :: *xagjăz, hold :: *xaldăną, malt :: *maltăz, mast :: *mastăz, nail :: *naglăz, raven :: *xrabnăz, salt :: *saltą, salve :: *salbō, set :: *satjăną, shaft :: *skaftą, slay :: *slaxăną, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, adder :: *nadrō, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, haw :: *xagōn, lap :: *labbăz, navel :: *nablōn, neck :: *xnakkăz, nettle :: *natilōn, nightmare :: *marōn, harvest :: *xarbistuz, laugh :: *xlaxjăną, might :: *maxtiz, night :: *naxti, spar :: *sparrōn, spare :: *sparēną, strew :: *strawjăną, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, thatch :: *θaką, lade :: *xlaθăną, man :: *marīn, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, wart :: *warto, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, whale :: *walăz, yarn :: *garnăn, make :: *makōjăną
+bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, flax :: *flaxsą, grass :: *grasą, guest :: *gastiz, hail :: *xaglą, hall :: *xallō, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, hedge :: *xagjăz, hold :: *xaldăną, malt :: *maltăz, mast :: *mastăz, might :: *maxtiz, nail :: *naglăz, night :: *naxti, raven :: *xrabnăz, salt :: *saltą, salve :: *salbō, set :: *satjăną, shaft :: *skaftą, slay :: *slaxăną, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, adder :: *nadrō, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, haw :: *xagōn, lap :: *labbăz, navel :: *nablōn, neck :: *xnakkăz, nettle :: *natilōn, nightmare :: *marōn, harvest :: *xarbistuz, laugh :: *xlaxjăną, spar :: *sparrōn, spare :: *sparēną, strew :: *strawjăną, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, thatch :: *θaką, lade :: *xlaθăną, man :: *marīn, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, wart :: *warto, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, whale :: *walăz, yarn :: *garnăn, make :: *makōjăną
 
 BreakingLengthening: 46
-barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, hold :: *xaldăną, malt :: *maltăz, salt :: *saltą, salve :: *salbō, slay :: *slaxăną, starve :: *sterbăną, sword :: *swerdą, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, meed :: *mizdō, ten :: *texun, gall :: *gallą, heart :: *xertōn, harvest :: *xarbistuz, knight :: *knixtăz, laugh :: *xlaxjăną, might :: *maxtiz, night :: *naxti, six :: *sexs, smear :: *smerwjăną, spar :: *sparrōn, swallow :: *swalgwōn, wight :: *wextiz, will :: *waljăną, wold :: *walθuz, march :: *markō, calf :: *kalbăz, earth :: *erθo, herd :: *xerdō, wart :: *warto, fern :: *farnăn, fold :: *falθăną, warp :: *werpăną, wax :: *waxsăną, yarn :: *garnăn, learn :: *liznōjăną
+barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, hold :: *xaldăną, knight :: *knixtăz, malt :: *maltăz, might :: *maxtiz, night :: *naxti, salt :: *saltą, salve :: *salbō, six :: *sexs, slay :: *slaxăną, starve :: *sterbăną, sword :: *swerdą, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, wight :: *wextiz, meed :: *mizdō, ten :: *texun, gall :: *gallą, heart :: *xertōn, harvest :: *xarbistuz, laugh :: *xlaxjăną, smear :: *smerwjăną, spar :: *sparrōn, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, march :: *markō, calf :: *kalbăz, earth :: *erθo, herd :: *xerdō, wart :: *warto, fern :: *farnăn, fold :: *falθăną, warp :: *werpăną, wax :: *waxsăną, yarn :: *garnăn, learn :: *liznōjăną
 
 VelarFricPal: 23
 hail :: *xaglą, hair :: *xērą, hall :: *xallō, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, hedge :: *xagjăz, help :: *xelpō, hold :: *xaldăną, heaven :: *xemenăz, hay :: *xawwją, hew :: *xawwăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, harvest :: *xarbistuz, laugh :: *xlaxjăną, hind :: *xendjō, herd :: *xerdō, have :: *xabēną, help :: *xelpăną
@@ -20280,7 +20650,7 @@ ARestoration: 14
 hawk :: *xabukăz, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, nave :: *nabō, nose :: *nasō, sake :: *sakō, have :: *xabēną, make :: *makōjăną
 
 FinalWeakSchwaApocope: 71
-beard :: *bardăz, bosom :: *bōsmăz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, fox :: *fuxsăz, gang :: *gangăz, ghost :: *gaistăz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thief :: *θeubăz, thistle :: *θestilăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, stem :: *stamnăz, think :: *θankăz, heaven :: *xemenăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, neck :: *xnakkăz, sieve :: *sibăz, way :: *wegăz, knight :: *knixtăz, shilling :: *skellinăz, calf :: *kalbăz, buck :: *bukkăz, fowl :: *fuglăz, summer :: *sumerăz, thane :: *θegnăz, wether :: *wiθră, withy :: *wīθijăz, wolf :: *wulfăz, bottom :: *budmăz, loath :: *laiθăz, snow :: *snaigwăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz
+beard :: *bardăz, bosom :: *bōsmăz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, fox :: *fuxsăz, gang :: *gangăz, ghost :: *gaistăz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knight :: *knixtăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thief :: *θeubăz, thistle :: *θestilăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, stem :: *stamnăz, think :: *θankăz, heaven :: *xemenăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, neck :: *xnakkăz, sieve :: *sibăz, way :: *wegăz, shilling :: *skellinăz, calf :: *kalbăz, buck :: *bukkăz, fowl :: *fuglăz, summer :: *sumerăz, thane :: *θegnăz, wether :: *wiθră, withy :: *wīθijăz, wolf :: *wulfăz, bottom :: *budmăz, loath :: *laiθăz, snow :: *snaigwăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz
 
 JGemination: 5
 hedge :: *xagjăz, set :: *satjăną, sit :: *setjăną, dill :: *deljăz, will :: *weljōn
@@ -20295,12 +20665,15 @@ WsPalatalDiphthongization: 9
 guest :: *gastiz, shaft :: *skaftą, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, year :: *jērą, gift :: *geftiz, shilling :: *skellinăz, give :: *gebăną
 
 IUmlaut: 62
-belly :: *balgiz, berry :: *bazjas, birth :: *burdiz, bride :: *brūdiz, deal :: *dailiz, guest :: *gastiz, heal :: *xailjăną, heath :: *xaiθiz, hedge :: *xagjăz, last :: *laistjăną, lead :: *laidjăną, mean :: *mainjăną, need :: *naudiz, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, sit :: *setjăną, spread :: *spraidjăną, string :: *strangiz, thistle :: *θestilăz, fist :: *funxwstiz, whine :: *wainōjăną, sheath :: *skaiθiz, show :: *skawōjăną, youth :: *jugunθiz, hay :: *xawwją, net :: *natją, staff :: *stabiz, bow :: *baugjăną, dill :: *deljăz, fire :: *fūri, fright :: *furxtīn, handle :: *xandlōjăną, nettle :: *natilōn, spindle :: *spennilō, still :: *stelljăną, harvest :: *xarbistuz, laugh :: *xlaxjăną, might :: *maxtiz, night :: *naxti, reek :: *raukiz, smear :: *smerwjăną, strew :: *strawjăną, three :: *θrejez, wight :: *wextiz, will :: *waljăną, hind :: *xendjō, thousand :: *θūs-undī, lick :: *likkōjăną, rock :: *rukkiz, man :: *marīn, craft :: *kraftiz, will :: *weljōn, believe :: *laubjăną, light :: *leuxtjăną, seek :: *sōkjăną, stretch :: *strakkjăną, sunder :: *sundrōjăną, bore :: *burōjăną, learn :: *liznōjăną, make :: *makōjăną
+belly :: *balgiz, berry :: *bazjas, birth :: *burdiz, bride :: *brūdiz, deal :: *dailiz, guest :: *gastiz, heal :: *xailjăną, heath :: *xaiθiz, hedge :: *xagjăz, last :: *laistjăną, lead :: *laidjăną, mean :: *mainjăną, might :: *maxtiz, need :: *naudiz, night :: *naxti, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, sit :: *setjăną, spread :: *spraidjăną, string :: *strangiz, thistle :: *θestilăz, wight :: *wextiz, fist :: *funxwstiz, whine :: *wainōjăną, sheath :: *skaiθiz, show :: *skawōjăną, youth :: *jugunθiz, hay :: *xawwją, net :: *natją, staff :: *stabiz, bow :: *baugjăną, dill :: *deljăz, fire :: *fūri, fright :: *furxtīn, handle :: *xandlōjăną, nettle :: *natilōn, spindle :: *spennilō, still :: *stelljăną, harvest :: *xarbistuz, laugh :: *xlaxjăną, reek :: *raukiz, smear :: *smerwjăną, strew :: *strawjăną, three :: *θrejez, will :: *waljăną, hind :: *xendjō, thousand :: *θūs-undī, lick :: *likkōjăną, rock :: *rukkiz, man :: *marīn, craft :: *kraftiz, will :: *weljōn, believe :: *laubjăną, light :: *leuxtjăną, seek :: *sōkjăną, stretch :: *strakkjăną, sunder :: *sundrōjăną, bore :: *burōjăną, learn :: *liznōjăną, make :: *makōjăną
 
 JClusterCoalescence: 0
 
 BackMutation: 12
 seven :: *sebun, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, nettle :: *natilōn, nightmare :: *marōn, spear :: *speru, spindle :: *spennilō, live :: *libēną, spare :: *sparēną, strew :: *strawjăną, milk :: *melukz
+
+WsPalatalUmlaut: 5
+knight :: *knixtăz, might :: *maxtiz, night :: *naxti, six :: *sexs, wight :: *wextiz
 
 NasalSpirantLengthening: 2
 find :: *finþăną, goose :: *gansz
@@ -20314,7 +20687,7 @@ bind :: *bindăną, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăn
 WeightMarkers: 0
 
 HighVowelApocope: 64
-beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, bier :: *bērō, birth :: *burdiz, bough :: *bōguz, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, fee :: *fexu, flood :: *flōduz, ground :: *grunduz, guest :: *gastiz, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, help :: *xelpō, liver :: *librō, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, salve :: *salbō, shield :: *skelduz, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, spoon :: *spēnuz, string :: *strangiz, thirst :: *θurstuz, while :: *xwīlō, winter :: *wintruz, fist :: *funxwstiz, rest :: *rastō, sheath :: *skaiθiz, adder :: *nadrō, meed :: *mizdō, fire :: *fūri, flask :: *flaskō, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, toe :: *taixwō, tongs :: *tangō, gift :: *geftiz, harvest :: *xarbistuz, might :: *maxtiz, night :: *naxti, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, rust :: *rustō, thorn :: *θurnuz, field :: *felθuz, lye :: *laugō, needle :: *nēθlō
+beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, bier :: *bērō, birth :: *burdiz, bough :: *bōguz, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, fee :: *fexu, flood :: *flōduz, ground :: *grunduz, guest :: *gastiz, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, help :: *xelpō, liver :: *librō, lust :: *lustuz, might :: *maxtiz, need :: *naudiz, night :: *naxti, rind :: *rindō, rood :: *rōdō, salve :: *salbō, shield :: *skelduz, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, spoon :: *spēnuz, string :: *strangiz, thirst :: *θurstuz, while :: *xwīlō, wight :: *wextiz, winter :: *wintruz, fist :: *funxwstiz, rest :: *rastō, sheath :: *skaiθiz, adder :: *nadrō, meed :: *mizdō, fire :: *fūri, flask :: *flaskō, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, toe :: *taixwō, tongs :: *tangō, gift :: *geftiz, harvest :: *xarbistuz, reek :: *raukiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, rust :: *rustō, thorn :: *θurnuz, field :: *felθuz, lye :: *laugō, needle :: *nēθlō
 
 HeavySyllableNasalApocope: 53
 barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, fell :: *fellą, flax :: *flaxsą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, hair :: *xērą, head :: *xaubudą, hoard :: *xuzdą, knee :: *knewą, land :: *landą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, lock :: *luką, meal :: *mēlą, rope :: *raipą, sail :: *seglą, salt :: *saltą, shaft :: *skaftą, sheep :: *skēpą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, wife :: *wībą, wonder :: *wundrą, word :: *wurdą, year :: *jērą, drench :: *dranką, yoke :: *juką, hay :: *xawwją, straw :: *strawą, honey :: *xunăgą, door :: *durą, gall :: *gallą, lung :: *lungwą, thatch :: *θaką, nest :: *nistą, gold :: *gulθą, timber :: *timrą, trough :: *trugą, frost :: *frustą
@@ -20337,12 +20710,12 @@ Contraction: 3
 slay :: *slaxăną, friend :: *frijōndz, three :: *θrejez
 
 ProtoToOEWeakTail: 232
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, berry :: *bazjas, bier :: *bērō, bind :: *bindăną, birth :: *burdiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fell :: *fellą, fight :: *fextăną, flax :: *flaxsą, flood :: *flōduz, fly :: *fleugăną, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heal :: *xailjăną, heath :: *xaiθiz, help :: *xelpō, hoard :: *xuzdą, hold :: *xaldăną, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, lead :: *laidjăną, leaf :: *laubą, leather :: *leθrą, let :: *lētăną, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, mean :: *mainjăną, need :: *naudiz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, steal :: *stelăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, thistle :: *θestilăz, tread :: *tredăną, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, fist :: *funxwstiz, whine :: *wainōjăną, drench :: *dranką, rest :: *rastō, dew :: *dawwō, friend :: *frijōndz, sheath :: *skaiθiz, show :: *skawōjăną, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, hay :: *xawwją, hew :: *xawwăną, meed :: *mizdō, straw :: *strawą, ten :: *texun, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, might :: *maxtiz, night :: *naxti, nine :: *newun, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, smear :: *smerwjăną, strew :: *strawjăną, three :: *θrejez, wight :: *wextiz, will :: *waljăną, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, give :: *gebăną, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, lade :: *xlaθăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, thorn :: *θurnuz, will :: *weljōn, withy :: *wīθijăz, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, field :: *felθuz, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, help :: *xelpăną, horn :: *xurnăn, light :: *leuxtjăną, lye :: *laugō, needle :: *nēθlō, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, sunder :: *sundrōjăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, berry :: *bazjas, bier :: *bērō, bind :: *bindăną, birth :: *burdiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fell :: *fellą, fight :: *fextăną, flax :: *flaxsą, flood :: *flōduz, fly :: *fleugăną, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heal :: *xailjăną, heath :: *xaiθiz, help :: *xelpō, hoard :: *xuzdą, hold :: *xaldăną, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, lead :: *laidjăną, leaf :: *laubą, leather :: *leθrą, let :: *lētăną, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, mean :: *mainjăną, might :: *maxtiz, need :: *naudiz, night :: *naxti, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, steal :: *stelăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, thistle :: *θestilăz, tread :: *tredăną, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, fist :: *funxwstiz, whine :: *wainōjăną, drench :: *dranką, rest :: *rastō, dew :: *dawwō, friend :: *frijōndz, sheath :: *skaiθiz, show :: *skawōjăną, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, hay :: *xawwją, hew :: *xawwăną, meed :: *mizdō, straw :: *strawą, ten :: *texun, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, nine :: *newun, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, smear :: *smerwjăną, strew :: *strawjăną, three :: *θrejez, will :: *waljăną, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, give :: *gebăną, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, lade :: *xlaθăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, thorn :: *θurnuz, will :: *weljōn, withy :: *wīθijăz, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, field :: *felθuz, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, help :: *xelpăną, horn :: *xurnăn, light :: *leuxtjăną, lye :: *laugō, needle :: *nēθlō, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, sunder :: *sundrōjăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 ProtoToOEWeightMarkers: 0
 
 ProtoToOEApocope: 117
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, bier :: *bērō, birth :: *burdiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, fell :: *fellą, flax :: *flaxsą, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heath :: *xaiθiz, help :: *xelpō, hoard :: *xuzdą, knee :: *knewą, land :: *landą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, salve :: *salbō, shaft :: *skaftą, sheep :: *skēpą, shield :: *skelduz, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, spoon :: *spēnuz, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, while :: *xwīlō, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, year :: *jērą, fist :: *funxwstiz, drench :: *dranką, rest :: *rastō, sheath :: *skaiθiz, yoke :: *juką, adder :: *nadrō, hay :: *xawwją, meed :: *mizdō, straw :: *strawą, honey :: *xunăgą, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, toe :: *taixwō, tongs :: *tangō, gift :: *geftiz, harvest :: *xarbistuz, might :: *maxtiz, night :: *naxti, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, nest :: *nistą, rust :: *rustō, thorn :: *θurnuz, field :: *felθuz, gold :: *gulθą, lye :: *laugō, needle :: *nēθlō, timber :: *timrą, trough :: *trugą, frost :: *frustą
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, bier :: *bērō, birth :: *burdiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, fell :: *fellą, flax :: *flaxsą, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heath :: *xaiθiz, help :: *xelpō, hoard :: *xuzdą, knee :: *knewą, land :: *landą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, might :: *maxtiz, need :: *naudiz, night :: *naxti, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, salve :: *salbō, shaft :: *skaftą, sheep :: *skēpą, shield :: *skelduz, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, spoon :: *spēnuz, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, while :: *xwīlō, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, year :: *jērą, fist :: *funxwstiz, drench :: *dranką, rest :: *rastō, sheath :: *skaiθiz, yoke :: *juką, adder :: *nadrō, hay :: *xawwją, meed :: *mizdō, straw :: *strawą, honey :: *xunăgą, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, shoulder :: *skuldrō, spear :: *speru, spindle :: *spennilō, toe :: *taixwō, tongs :: *tangō, gift :: *geftiz, harvest :: *xarbistuz, reek :: *raukiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, nest :: *nistą, rust :: *rustō, thorn :: *θurnuz, field :: *felθuz, gold :: *gulθą, lye :: *laugō, needle :: *nēθlō, timber :: *timrą, trough :: *trugą, frost :: *frustą
 
 ProtoToOEWeightCleanup: 151
 berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, fly :: *fleugăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, hold :: *xaldăną, knead :: *knedăną, last :: *laistjăną, lead :: *laidjăną, let :: *lētăną, mean :: *mainjăną, read :: *rēdăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, seven :: *sebun, shear :: *skerăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, steal :: *stelăną, sup :: *sūpăną, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, thistle :: *θestilăz, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, whine :: *wainōjăną, fast :: *fastēną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, hay :: *xawwją, hew :: *xawwăną, ten :: *texun, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, forlorn :: *leusăną, harvest :: *xarbistuz, live :: *libēną, nine :: *newun, shilling :: *skellinăz, shove :: *skeubăną, smear :: *smerwjăną, spar :: *sparrōn, spare :: *sparēną, strew :: *strawjăną, swallow :: *swalgwōn, three :: *θrejez, will :: *waljăną, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, give :: *gebăną, lick :: *likkōjăną, cud :: *kwiθuz, lade :: *xlaθăną, man :: *marīn, sister :: *swestēr, wade :: *wadăną, hammer :: *xamaras, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, will :: *weljōn, withy :: *wīθijăz, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, help :: *xelpăną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, sunder :: *sundrōjăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
@@ -20350,18 +20723,18 @@ berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, b
 ProtoToOE: 0
 
 WGlide: 62
-chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, show :: *skawōjăną, weasel :: *weslon, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, nine :: *newun, smear :: *smerwjăną, strew :: *strawjăną, swallow :: *swalgwōn, wight :: *wextiz, will :: *waljăną, wold :: *walθuz, lung :: *lungwą, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, sing :: *singwăną, snow :: *snaigwăz, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
+chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, show :: *skawōjăną, weasel :: *weslon, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, nine :: *newun, smear :: *smerwjăną, strew :: *strawjăną, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, lung :: *lungwą, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, sing :: *singwăną, snow :: *snaigwăz, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
 
 GhMarker: 17
-fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, flea :: *flauxz, fox :: *fuxsăz, wax :: *waxsą, fist :: *funxwstiz, ox :: *uxsōn, toe :: *taixwō, knight :: *knixtăz, might :: *maxtiz, night :: *naxti, six :: *sexs, wight :: *wextiz, light :: *leuxtjăną, team :: *tauxmăz, wax :: *waxsăną
+fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, flea :: *flauxz, fox :: *fuxsăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxti, six :: *sexs, wax :: *waxsą, wight :: *wextiz, fist :: *funxwstiz, ox :: *uxsōn, toe :: *taixwō, light :: *leuxtjăną, team :: *tauxmăz, wax :: *waxsăną
 
 GlideDeletion: 8
 chew :: *kewwăną, dew :: *dawwō, show :: *skawōjăną, hew :: *xawwăną, soul :: *saiwălō, widow :: *widuwōn, nine :: *newun, strew :: *strawjăną
 
 Epenthesis: 89
-beaver :: *bebruz, belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flax :: *flaxsą, flea :: *flauxz, fodder :: *fōdrą, fox :: *fuxsăz, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, liver :: *librō, rudder :: *rōθrăz, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, show :: *skawōjăną, weasel :: *weslon, adder :: *nadrō, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, knight :: *knixtăz, might :: *maxtiz, night :: *naxti, nine :: *newun, six :: *sexs, smear :: *smerwjăną, strew :: *strawjăną, swallow :: *swalgwōn, wight :: *wextiz, will :: *waljăną, wold :: *walθuz, lung :: *lungwą, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, follow :: *fulgēną, fowl :: *fuglăz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, light :: *leuxtjăną, sing :: *singwăną, snow :: *snaigwăz, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
+beaver :: *bebruz, belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flax :: *flaxsą, flea :: *flauxz, fodder :: *fōdrą, fox :: *fuxsăz, knead :: *knedăną, knee :: *knewą, knight :: *knixtăz, leather :: *leθrą, liver :: *librō, might :: *maxtiz, night :: *naxti, rudder :: *rōθrăz, six :: *sexs, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, show :: *skawōjăną, weasel :: *weslon, adder :: *nadrō, hay :: *xawwją, hew :: *xawwăną, straw :: *strawą, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, nine :: *newun, smear :: *smerwjăną, strew :: *strawjăną, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, lung :: *lungwą, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, follow :: *fulgēną, fowl :: *fuglăz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, light :: *leuxtjăną, sing :: *singwăną, snow :: *snaigwăz, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
 
 Orthography: 366
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, berry :: *bazjas, bier :: *bērō, bind :: *bindăną, birth :: *burdiz, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, eel :: *ēlăz, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fell :: *fellą, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flax :: *flaxsą, flea :: *flauxz, flood :: *flōduz, fly :: *fleugăną, fodder :: *fōdrą, folk :: *fulką, fox :: *fuxsăz, freeze :: *freusăną, furrow :: *furx, gang :: *gangăz, ghost :: *gaistăz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, head :: *xaubudą, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, help :: *xelpō, hoard :: *xuzdą, hold :: *xaldăną, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, lead :: *laidjăną, leaf :: *laubą, leather :: *leθrą, leek :: *laukăz, let :: *lētăną, life :: *lībą, lime :: *līmą, liver :: *librō, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, meal :: *mēlą, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, raven :: *xrabnăz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, steal :: *stelăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thief :: *θeubăz, thing :: *þingą, thirst :: *θurstuz, thistle :: *θestilăz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, drench :: *dranką, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, stem :: *stamnăz, tap :: *tappōn, think :: *θankăz, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, heaven :: *xemenăz, sheath :: *skaiθiz, show :: *skawōjăną, weasel :: *weslon, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, hay :: *xawwją, hew :: *xawwăną, meed :: *mizdō, straw :: *strawą, ten :: *texun, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, neck :: *xnakkăz, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spear :: *speru, spindle :: *spennilō, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, knight :: *knixtăz, laugh :: *xlaxjăną, live :: *libēną, might :: *maxtiz, night :: *naxti, nine :: *newun, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, six :: *sexs, smear :: *smerwjăną, spar :: *sparrōn, spare :: *sparēną, strew :: *strawjăną, swallow :: *swalgwōn, three :: *θrejez, wight :: *wextiz, will :: *waljăną, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, break :: *brekăną, calf :: *kalbăz, give :: *gebăną, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, lade :: *xlaθăną, man :: *marīn, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, follow :: *fulgēną, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, fowl :: *fuglăz, god :: *gud, goose :: *gansz, hammer :: *xamaras, herd :: *xerdō, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, summer :: *sumerăz, thane :: *θegnăz, thorn :: *θurnuz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, ban :: *banną, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, field :: *felθuz, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, have :: *xabēną, help :: *xelpăną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, needle :: *nēθlō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, snow :: *snaigwăz, span :: *spannăną, stretch :: *strakkjăną, sunder :: *sundrōjăną, swine :: *swīnăn, team :: *tauxmăz, thanks :: *θankăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, beaver :: *bebruz, beech :: *bōkō, belly :: *balgiz, berry :: *bazjas, bier :: *bērō, bind :: *bindăną, birth :: *burdiz, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, eel :: *ēlăz, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fell :: *fellą, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flax :: *flaxsą, flea :: *flauxz, flood :: *flōduz, fly :: *fleugăną, fodder :: *fōdrą, folk :: *fulką, fox :: *fuxsăz, freeze :: *freusăną, furrow :: *furx, gang :: *gangăz, ghost :: *gaistăz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, guest :: *gastiz, hail :: *xaglą, hair :: *xērą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hawk :: *xabukăz, hazel :: *xaslăz, head :: *xaubudą, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, help :: *xelpō, hoard :: *xuzdą, hold :: *xaldăną, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, knight :: *knixtăz, land :: *landą, last :: *laistjăną, lead :: *laidjăną, leaf :: *laubą, leather :: *leθrą, leek :: *laukăz, let :: *lētăną, life :: *lībą, lime :: *līmą, liver :: *librō, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, meal :: *mēlą, mean :: *mainjăną, might :: *maxtiz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, night :: *naxti, oven :: *ufnăz, rain :: *regną, raven :: *xrabnăz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheep :: *skēpą, shield :: *skelduz, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, six :: *sexs, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, steal :: *stelăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swell :: *swellăną, swim :: *swimmăną, sword :: *swerdą, thief :: *θeubăz, thing :: *þingą, thirst :: *θurstuz, thistle :: *θestilăz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, wight :: *wextiz, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, drench :: *dranką, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, stem :: *stamnăz, tap :: *tappōn, think :: *θankăz, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, heaven :: *xemenăz, sheath :: *skaiθiz, show :: *skawōjăną, weasel :: *weslon, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, hay :: *xawwją, hew :: *xawwăną, meed :: *mizdō, straw :: *strawą, ten :: *texun, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, neck :: *xnakkăz, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spear :: *speru, spindle :: *spennilō, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, laugh :: *xlaxjăną, live :: *libēną, nine :: *newun, reek :: *raukiz, shilling :: *skellinăz, shove :: *skeubăną, smear :: *smerwjăną, spar :: *sparrōn, spare :: *sparēną, strew :: *strawjăną, swallow :: *swalgwōn, three :: *θrejez, will :: *waljăną, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, break :: *brekăną, calf :: *kalbăz, give :: *gebăną, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, lade :: *xlaθăną, man :: *marīn, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, follow :: *fulgēną, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, fowl :: *fuglăz, god :: *gud, goose :: *gansz, hammer :: *xamaras, herd :: *xerdō, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, summer :: *sumerăz, thane :: *θegnăz, thorn :: *θurnuz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, will :: *weljōn, withy :: *wīθijăz, wolf :: *wulfăz, ban :: *banną, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, field :: *felθuz, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, have :: *xabēną, help :: *xelpăną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, needle :: *nēθlō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, snow :: *snaigwăz, span :: *spannăną, stretch :: *strakkjăną, sunder :: *sundrōjăną, swine :: *swīnăn, team :: *tauxmăz, thanks :: *θankăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 Surface: 0
