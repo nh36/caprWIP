@@ -13,7 +13,9 @@ define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcULowering
     .o. NWGmcFinalLongORaising;
 define OESandboxAfterNWGmcLongELowering OESandboxAfterNWGmcFinalLongORaising
     .o. NWGmcLongELowering;
-define OESandboxAfterAuFronting OESandboxAfterNWGmcLongELowering
+define OESandboxAfterNWGmcLongENasalRounding OESandboxAfterNWGmcLongELowering
+    .o. NWGmcLongENasalRounding;
+define OESandboxAfterAuFronting OESandboxAfterNWGmcLongENasalRounding
     .o. OEAuFronting;
 define OESandboxAfterWWSimplification OESandboxAfterAuFronting
     .o. OEWWSimplification;
@@ -114,6 +116,10 @@ save stack old_english_sandbox_after_nwgmc_final_long_o_raising.bin
 clear stack
 regex OESandboxAfterNWGmcLongELowering;
 save stack old_english_sandbox_after_nwgmc_long_e_lowering.bin
+
+clear stack
+regex OESandboxAfterNWGmcLongENasalRounding;
+save stack old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin
 
 clear stack
 regex OESandboxAfterAuFronting;
