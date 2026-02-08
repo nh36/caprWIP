@@ -1272,6 +1272,17 @@ define OEWeakTailUnReduction [
     {*u} {*n} -> {*o} {*n} || _ .#.
 ];
 
+# R/T vol.2 §6.8.3: unstressed long vowels were shortened after syncope/apocope.
+# Restrict to non-initial syllables (after at least one vowel + consonant(s)).
+define OEUnstressedLongVowelShortening [
+    {*ā} -> {*a} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ē} -> {*e} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ī} -> {*i} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ō} -> {*o} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ū} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ǣ} -> {*æ} || EnglishStarVocalic EnglishStarConsonant+ _
+];
+
 define OEWeakTailReduction [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆},
@@ -1497,6 +1508,7 @@ define EnglishProtoToOE (
     .o. OEWeightMarkers
     .o. OEHighVowelApocope
     .o. OEHeavySyllableNasalApocope
+    .o. OEUnstressedLongVowelShortening
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEWeightCleanup
@@ -1559,6 +1571,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
+    .o. OEUnstressedLongVowelShortening
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEWeightCleanup
