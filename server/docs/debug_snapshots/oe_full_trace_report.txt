@@ -38,6 +38,7 @@ HighVowelApocope: *b*eo*r*g*ą
 HeavySyllableNasalApocope: *b*eo*r*g
 WeakTailReduction: *b*eo*r*g
 JLossAfterHeavy: *b*eo*r*g
+IntervocalicJVocalization: *b*eo*r*g
 WeightCleanup: *b*eo*r*g
 HLoss: *b*eo*r*g
 Contraction: *b*eo*r*g
@@ -91,6 +92,7 @@ HighVowelApocope: *b*æ*s*t*ą
 HeavySyllableNasalApocope: *b*æ*s*t
 WeakTailReduction: *b*æ*s*t
 JLossAfterHeavy: *b*æ*s*t
+IntervocalicJVocalization: *b*æ*s*t
 WeightCleanup: *b*æ*s*t
 HLoss: *b*æ*s*t
 Contraction: *b*æ*s*t
@@ -144,6 +146,7 @@ HighVowelApocope: *b*æ*θ*ą
 HeavySyllableNasalApocope: *b*æ*θ
 WeakTailReduction: *b*æ*θ
 JLossAfterHeavy: *b*æ*θ
+IntervocalicJVocalization: *b*æ*θ
 WeightCleanup: *b*æ*θ
 HLoss: *b*æ*θ
 Contraction: *b*æ*θ
@@ -197,6 +200,7 @@ HighVowelApocope: *b*ea*r*d
 HeavySyllableNasalApocope: *b*ea*r*d
 WeakTailReduction: *b*ea*r*d
 JLossAfterHeavy: *b*ea*r*d
+IntervocalicJVocalization: *b*ea*r*d
 WeightCleanup: *b*ea*r*d
 HLoss: *b*ea*r*d
 Contraction: *b*ea*r*d
@@ -250,6 +254,7 @@ HighVowelApocope: *b*e*β*r
 HeavySyllableNasalApocope: *b*e*β*r
 WeakTailReduction: *b*e*β*r
 JLossAfterHeavy: *b*e*β*r
+IntervocalicJVocalization: *b*e*β*r
 WeightCleanup: *b*e*β*r
 HLoss: *b*e*β*r
 Contraction: *b*e*β*r
@@ -303,6 +308,7 @@ HighVowelApocope: *b*e*l*ʤ
 HeavySyllableNasalApocope: *b*e*l*ʤ
 WeakTailReduction: *b*e*l*ʤ
 JLossAfterHeavy: *b*e*l*ʤ
+IntervocalicJVocalization: *b*e*l*ʤ
 WeightCleanup: *b*e*l*ʤ
 HLoss: *b*e*l*ʤ
 Contraction: *b*e*l*ʤ
@@ -356,6 +362,7 @@ HighVowelApocope: *b*e*r*j*æ*s
 HeavySyllableNasalApocope: *b*e*r*j*æ*s
 WeakTailReduction: *b*e*r*j*e*s
 JLossAfterHeavy: *b*e*r*j*e*s
+IntervocalicJVocalization: *b*e*r*j*e*s
 WeightCleanup: *b*e*r*j*e*s
 HLoss: *b*e*r*j*e*s
 Contraction: *b*e*r*j*e*s
@@ -409,6 +416,7 @@ HighVowelApocope: *b*i*n*d*ă*n
 HeavySyllableNasalApocope: *b*i*n*d*ă*n
 WeakTailReduction: *b*i*n*d*a*n
 JLossAfterHeavy: *b*i*n*d*a*n
+IntervocalicJVocalization: *b*i*n*d*a*n
 WeightCleanup: *b*i*n*d*a*n
 HLoss: *b*i*n*d*a*n
 Contraction: *b*i*n*d*a*n
@@ -462,6 +470,7 @@ HighVowelApocope: *b*l*ō*d*ą
 HeavySyllableNasalApocope: *b*l*ō*d
 WeakTailReduction: *b*l*ō*d
 JLossAfterHeavy: *b*l*ō*d
+IntervocalicJVocalization: *b*l*ō*d
 WeightCleanup: *b*l*ō*d
 HLoss: *b*l*ō*d
 Contraction: *b*l*ō*d
@@ -515,6 +524,7 @@ HighVowelApocope: *b*o*r*d*ą
 HeavySyllableNasalApocope: *b*o*r*d
 WeakTailReduction: *b*o*r*d
 JLossAfterHeavy: *b*o*r*d
+IntervocalicJVocalization: *b*o*r*d
 WeightCleanup: *b*o*r*d
 HLoss: *b*o*r*d
 Contraction: *b*o*r*d
@@ -568,6 +578,7 @@ HighVowelApocope: *b*ō*k
 HeavySyllableNasalApocope: *b*ō*k
 WeakTailReduction: *b*ō*k
 JLossAfterHeavy: *b*ō*k
+IntervocalicJVocalization: *b*ō*k
 WeightCleanup: *b*ō*k
 HLoss: *b*ō*k
 Contraction: *b*ō*k
@@ -621,6 +632,7 @@ HighVowelApocope: *b*ō*s*m
 HeavySyllableNasalApocope: *b*ō*s*m
 WeakTailReduction: *b*ō*s*m
 JLossAfterHeavy: *b*ō*s*m
+IntervocalicJVocalization: *b*ō*s*m
 WeightCleanup: *b*ō*s*m
 HLoss: *b*ō*s*m
 Contraction: *b*ō*s*m
@@ -674,6 +686,7 @@ HighVowelApocope: *b*ō*g
 HeavySyllableNasalApocope: *b*ō*g
 WeakTailReduction: *b*ō*g
 JLossAfterHeavy: *b*ō*g
+IntervocalicJVocalization: *b*ō*g
 WeightCleanup: *b*ō*g
 HLoss: *b*ō*g
 Contraction: *b*ō*g
@@ -727,6 +740,7 @@ HighVowelApocope: *b*ū*r*ą
 HeavySyllableNasalApocope: *b*ū*r
 WeakTailReduction: *b*ū*r
 JLossAfterHeavy: *b*ū*r
+IntervocalicJVocalization: *b*ū*r
 WeightCleanup: *b*ū*r
 HLoss: *b*ū*r
 Contraction: *b*ū*r
@@ -780,6 +794,7 @@ HighVowelApocope: *b*r*a*n*d*æ*s
 HeavySyllableNasalApocope: *b*r*a*n*d*æ*s
 WeakTailReduction: *b*r*a*n*d*e*s
 JLossAfterHeavy: *b*r*a*n*d*e*s
+IntervocalicJVocalization: *b*r*a*n*d*e*s
 WeightCleanup: *b*r*a*n*d*e*s
 HLoss: *b*r*a*n*d*e*s
 Contraction: *b*r*a*n*d*e*s
@@ -833,6 +848,7 @@ HighVowelApocope: *b*r*ēa*d*ą
 HeavySyllableNasalApocope: *b*r*ēa*d
 WeakTailReduction: *b*r*ēa*d
 JLossAfterHeavy: *b*r*ēa*d
+IntervocalicJVocalization: *b*r*ēa*d
 WeightCleanup: *b*r*ēa*d
 HLoss: *b*r*ēa*d
 Contraction: *b*r*ēa*d
@@ -886,6 +902,7 @@ HighVowelApocope: *b*r*ȳ*d
 HeavySyllableNasalApocope: *b*r*ȳ*d
 WeakTailReduction: *b*r*ȳ*d
 JLossAfterHeavy: *b*r*ȳ*d
+IntervocalicJVocalization: *b*r*ȳ*d
 WeightCleanup: *b*r*ȳ*d
 HLoss: *b*r*ȳ*d
 Contraction: *b*r*ȳ*d
@@ -939,6 +956,7 @@ HighVowelApocope: *b*r*i*n*g*ă*n
 HeavySyllableNasalApocope: *b*r*i*n*g*ă*n
 WeakTailReduction: *b*r*i*n*g*a*n
 JLossAfterHeavy: *b*r*i*n*g*a*n
+IntervocalicJVocalization: *b*r*i*n*g*a*n
 WeightCleanup: *b*r*i*n*g*a*n
 HLoss: *b*r*i*n*g*a*n
 Contraction: *b*r*i*n*g*a*n
@@ -992,6 +1010,7 @@ HighVowelApocope: *b*r*ū*k*ă*n
 HeavySyllableNasalApocope: *b*r*ū*k*ă*n
 WeakTailReduction: *b*r*ū*k*a*n
 JLossAfterHeavy: *b*r*ū*k*a*n
+IntervocalicJVocalization: *b*r*ū*k*a*n
 WeightCleanup: *b*r*ū*k*a*n
 HLoss: *b*r*ū*k*a*n
 Contraction: *b*r*ū*k*a*n
@@ -1045,6 +1064,7 @@ HighVowelApocope: *ʧ*ēo*w*ă*n
 HeavySyllableNasalApocope: *ʧ*ēo*w*ă*n
 WeakTailReduction: *ʧ*ēo*w*a*n
 JLossAfterHeavy: *ʧ*ēo*w*a*n
+IntervocalicJVocalization: *ʧ*ēo*w*a*n
 WeightCleanup: *ʧ*ēo*w*a*n
 HLoss: *ʧ*ēo*w*a*n
 Contraction: *ʧ*ēo*w*a*n
@@ -1098,6 +1118,7 @@ HighVowelApocope: *k*l*i*m*b*ă*n
 HeavySyllableNasalApocope: *k*l*i*m*b*ă*n
 WeakTailReduction: *k*l*i*m*b*a*n
 JLossAfterHeavy: *k*l*i*m*b*a*n
+IntervocalicJVocalization: *k*l*i*m*b*a*n
 WeightCleanup: *k*l*i*m*b*a*n
 HLoss: *k*l*i*m*b*a*n
 Contraction: *k*l*i*m*b*a*n
@@ -1151,6 +1172,7 @@ HighVowelApocope: *k*a*m*b
 HeavySyllableNasalApocope: *k*a*m*b
 WeakTailReduction: *k*a*m*b
 JLossAfterHeavy: *k*a*m*b
+IntervocalicJVocalization: *k*a*m*b
 WeightCleanup: *k*a*m*b
 HLoss: *k*a*m*b
 Contraction: *k*a*m*b
@@ -1204,6 +1226,7 @@ HighVowelApocope: *k*r*o*p*p
 HeavySyllableNasalApocope: *k*r*o*p*p
 WeakTailReduction: *k*r*o*p*p
 JLossAfterHeavy: *k*r*o*p*p
+IntervocalicJVocalization: *k*r*o*p*p
 WeightCleanup: *k*r*o*p*p
 HLoss: *k*r*o*p*p
 Contraction: *k*r*o*p*p
@@ -1257,6 +1280,7 @@ HighVowelApocope: *d*æ*l
 HeavySyllableNasalApocope: *d*æ*l
 WeakTailReduction: *d*æ*l
 JLossAfterHeavy: *d*æ*l
+IntervocalicJVocalization: *d*æ*l
 WeightCleanup: *d*æ*l
 HLoss: *d*æ*l
 Contraction: *d*æ*l
@@ -1310,6 +1334,7 @@ HighVowelApocope: *d*æ*ʤ
 HeavySyllableNasalApocope: *d*æ*ʤ
 WeakTailReduction: *d*æ*ʤ
 JLossAfterHeavy: *d*æ*ʤ
+IntervocalicJVocalization: *d*æ*ʤ
 WeightCleanup: *d*æ*ʤ
 HLoss: *d*æ*ʤ
 Contraction: *d*æ*ʤ
@@ -1363,6 +1388,7 @@ HighVowelApocope: *d*ǣ*l
 HeavySyllableNasalApocope: *d*ǣ*l
 WeakTailReduction: *d*ǣ*l
 JLossAfterHeavy: *d*ǣ*l
+IntervocalicJVocalization: *d*ǣ*l
 WeightCleanup: *d*ǣ*l
 HLoss: *d*ǣ*l
 Contraction: *d*ǣ*l
@@ -1416,6 +1442,7 @@ HighVowelApocope: *d*ēo*r*ą
 HeavySyllableNasalApocope: *d*ēo*r
 WeakTailReduction: *d*ēo*r
 JLossAfterHeavy: *d*ēo*r
+IntervocalicJVocalization: *d*ēo*r
 WeightCleanup: *d*ēo*r
 HLoss: *d*ēo*r
 Contraction: *d*ēo*r
@@ -1469,6 +1496,7 @@ HighVowelApocope: *d*ā*g
 HeavySyllableNasalApocope: *d*ā*g
 WeakTailReduction: *d*ā*g
 JLossAfterHeavy: *d*ā*g
+IntervocalicJVocalization: *d*ā*g
 WeightCleanup: *d*ā*g
 HLoss: *d*ā*g
 Contraction: *d*ā*g
@@ -1522,6 +1550,7 @@ HighVowelApocope: *d*r*ēa*m
 HeavySyllableNasalApocope: *d*r*ēa*m
 WeakTailReduction: *d*r*ēa*m
 JLossAfterHeavy: *d*r*ēa*m
+IntervocalicJVocalization: *d*r*ēa*m
 WeightCleanup: *d*r*ēa*m
 HLoss: *d*r*ēa*m
 Contraction: *d*r*ēa*m
@@ -1575,6 +1604,7 @@ HighVowelApocope: *d*r*i*n*k*ă*n
 HeavySyllableNasalApocope: *d*r*i*n*k*ă*n
 WeakTailReduction: *d*r*i*n*k*a*n
 JLossAfterHeavy: *d*r*i*n*k*a*n
+IntervocalicJVocalization: *d*r*i*n*k*a*n
 WeightCleanup: *d*r*i*n*k*a*n
 HLoss: *d*r*i*n*k*a*n
 Contraction: *d*r*i*n*k*a*n
@@ -1628,6 +1658,7 @@ HighVowelApocope: *d*r*ī*β*ă*n
 HeavySyllableNasalApocope: *d*r*ī*β*ă*n
 WeakTailReduction: *d*r*ī*β*a*n
 JLossAfterHeavy: *d*r*ī*β*a*n
+IntervocalicJVocalization: *d*r*ī*β*a*n
 WeightCleanup: *d*r*ī*β*a*n
 HLoss: *d*r*ī*β*a*n
 Contraction: *d*r*ī*β*a*n
@@ -1681,6 +1712,7 @@ HighVowelApocope: *e*t*ă*n
 HeavySyllableNasalApocope: *e*t*ă*n
 WeakTailReduction: *e*t*a*n
 JLossAfterHeavy: *e*t*a*n
+IntervocalicJVocalization: *e*t*a*n
 WeightCleanup: *e*t*a*n
 HLoss: *e*t*a*n
 Contraction: *e*t*a*n
@@ -1734,6 +1766,7 @@ HighVowelApocope: *ǣ*l
 HeavySyllableNasalApocope: *ǣ*l
 WeakTailReduction: *ǣ*l
 JLossAfterHeavy: *ǣ*l
+IntervocalicJVocalization: *ǣ*l
 WeightCleanup: *ǣ*l
 HLoss: *ǣ*l
 Contraction: *ǣ*l
@@ -1787,6 +1820,7 @@ HighVowelApocope: *f*ea*l*l*ă*n
 HeavySyllableNasalApocope: *f*ea*l*l*ă*n
 WeakTailReduction: *f*ea*l*l*a*n
 JLossAfterHeavy: *f*ea*l*l*a*n
+IntervocalicJVocalization: *f*ea*l*l*a*n
 WeightCleanup: *f*ea*l*l*a*n
 HLoss: *f*ea*l*l*a*n
 Contraction: *f*ea*l*l*a*n
@@ -1840,6 +1874,7 @@ HighVowelApocope: *f*æ*d*ǣ*r
 HeavySyllableNasalApocope: *f*æ*d*ǣ*r
 WeakTailReduction: *f*æ*d*ǣ*r
 JLossAfterHeavy: *f*æ*d*ǣ*r
+IntervocalicJVocalization: *f*æ*d*ǣ*r
 WeightCleanup: *f*æ*d*ǣ*r
 HLoss: *f*æ*d*ǣ*r
 Contraction: *f*æ*d*ǣ*r
@@ -1893,6 +1928,7 @@ HighVowelApocope: *f*eo*x
 HeavySyllableNasalApocope: *f*eo*x
 WeakTailReduction: *f*eo*x
 JLossAfterHeavy: *f*eo*x
+IntervocalicJVocalization: *f*eo*x
 WeightCleanup: *f*eo*x
 HLoss: *f*eo*x
 Contraction: *f*eo*x
@@ -1946,6 +1982,7 @@ HighVowelApocope: *f*eo*x*t*ă*n
 HeavySyllableNasalApocope: *f*eo*x*t*ă*n
 WeakTailReduction: *f*eo*x*t*a*n
 JLossAfterHeavy: *f*eo*x*t*a*n
+IntervocalicJVocalization: *f*eo*x*t*a*n
 WeightCleanup: *f*eo*x*t*a*n
 HLoss: *f*eo*x*t*a*n
 Contraction: *f*eo*x*t*a*n
@@ -1999,6 +2036,7 @@ HighVowelApocope: *f*i*n*g*r
 HeavySyllableNasalApocope: *f*i*n*g*r
 WeakTailReduction: *f*i*n*g*r
 JLossAfterHeavy: *f*i*n*g*r
+IntervocalicJVocalization: *f*i*n*g*r
 WeightCleanup: *f*i*n*g*r
 HLoss: *f*i*n*g*r
 Contraction: *f*i*n*g*r
@@ -2052,6 +2090,7 @@ HighVowelApocope: *f*i*ʃ
 HeavySyllableNasalApocope: *f*i*ʃ
 WeakTailReduction: *f*i*ʃ
 JLossAfterHeavy: *f*i*ʃ
+IntervocalicJVocalization: *f*i*ʃ
 WeightCleanup: *f*i*ʃ
 HLoss: *f*i*ʃ
 Contraction: *f*i*ʃ
@@ -2105,6 +2144,7 @@ HighVowelApocope: *f*l*ea*x*s*ą
 HeavySyllableNasalApocope: *f*l*ea*x*s
 WeakTailReduction: *f*l*ea*x*s
 JLossAfterHeavy: *f*l*ea*x*s
+IntervocalicJVocalization: *f*l*ea*x*s
 WeightCleanup: *f*l*ea*x*s
 HLoss: *f*l*ea*x*s
 Contraction: *f*l*ea*x*s
@@ -2158,6 +2198,7 @@ HighVowelApocope: *f*l*ēa*x
 HeavySyllableNasalApocope: *f*l*ēa*x
 WeakTailReduction: *f*l*ēa*x
 JLossAfterHeavy: *f*l*ēa*x
+IntervocalicJVocalization: *f*l*ēa*x
 WeightCleanup: *f*l*ēa*x
 HLoss: *f*l*ēa*x
 Contraction: *f*l*ēa*x
@@ -2211,6 +2252,7 @@ HighVowelApocope: *f*l*ō*d
 HeavySyllableNasalApocope: *f*l*ō*d
 WeakTailReduction: *f*l*ō*d
 JLossAfterHeavy: *f*l*ō*d
+IntervocalicJVocalization: *f*l*ō*d
 WeightCleanup: *f*l*ō*d
 HLoss: *f*l*ō*d
 Contraction: *f*l*ō*d
@@ -2264,6 +2306,7 @@ HighVowelApocope: *f*ō*d*r*ą
 HeavySyllableNasalApocope: *f*ō*d*r
 WeakTailReduction: *f*ō*d*r
 JLossAfterHeavy: *f*ō*d*r
+IntervocalicJVocalization: *f*ō*d*r
 WeightCleanup: *f*ō*d*r
 HLoss: *f*ō*d*r
 Contraction: *f*ō*d*r
@@ -2317,6 +2360,7 @@ HighVowelApocope: *f*o*l*k*ą
 HeavySyllableNasalApocope: *f*o*l*k
 WeakTailReduction: *f*o*l*k
 JLossAfterHeavy: *f*o*l*k
+IntervocalicJVocalization: *f*o*l*k
 WeightCleanup: *f*o*l*k
 HLoss: *f*o*l*k
 Contraction: *f*o*l*k
@@ -2370,6 +2414,7 @@ HighVowelApocope: *f*o*x*s
 HeavySyllableNasalApocope: *f*o*x*s
 WeakTailReduction: *f*o*x*s
 JLossAfterHeavy: *f*o*x*s
+IntervocalicJVocalization: *f*o*x*s
 WeightCleanup: *f*o*x*s
 HLoss: *f*o*x*s
 Contraction: *f*o*x*s
@@ -2423,6 +2468,7 @@ HighVowelApocope: *f*r*ēo*s*ă*n
 HeavySyllableNasalApocope: *f*r*ēo*s*ă*n
 WeakTailReduction: *f*r*ēo*s*a*n
 JLossAfterHeavy: *f*r*ēo*s*a*n
+IntervocalicJVocalization: *f*r*ēo*s*a*n
 WeightCleanup: *f*r*ēo*s*a*n
 HLoss: *f*r*ēo*s*a*n
 Contraction: *f*r*ēo*s*a*n
@@ -2476,6 +2522,7 @@ HighVowelApocope: *f*u*r*x
 HeavySyllableNasalApocope: *f*u*r*x
 WeakTailReduction: *f*u*r*x
 JLossAfterHeavy: *f*u*r*x
+IntervocalicJVocalization: *f*u*r*x
 WeightCleanup: *f*u*r*x
 HLoss: *f*u*r*x
 Contraction: *f*u*r*x
@@ -2529,6 +2576,7 @@ HighVowelApocope: *g*ā*s*t
 HeavySyllableNasalApocope: *g*ā*s*t
 WeakTailReduction: *g*ā*s*t
 JLossAfterHeavy: *g*ā*s*t
+IntervocalicJVocalization: *g*ā*s*t
 WeightCleanup: *g*ā*s*t
 HLoss: *g*ā*s*t
 Contraction: *g*ā*s*t
@@ -2582,6 +2630,7 @@ HighVowelApocope: *g*r*æ*s*ą
 HeavySyllableNasalApocope: *g*r*æ*s
 WeakTailReduction: *g*r*æ*s
 JLossAfterHeavy: *g*r*æ*s
+IntervocalicJVocalization: *g*r*æ*s
 WeightCleanup: *g*r*æ*s
 HLoss: *g*r*æ*s
 Contraction: *g*r*æ*s
@@ -2635,6 +2684,7 @@ HighVowelApocope: *g*r*ī*p*ă*n
 HeavySyllableNasalApocope: *g*r*ī*p*ă*n
 WeakTailReduction: *g*r*ī*p*a*n
 JLossAfterHeavy: *g*r*ī*p*a*n
+IntervocalicJVocalization: *g*r*ī*p*a*n
 WeightCleanup: *g*r*ī*p*a*n
 HLoss: *g*r*ī*p*a*n
 Contraction: *g*r*ī*p*a*n
@@ -2688,6 +2738,7 @@ HighVowelApocope: *g*r*u*n*d
 HeavySyllableNasalApocope: *g*r*u*n*d
 WeakTailReduction: *g*r*u*n*d
 JLossAfterHeavy: *g*r*u*n*d
+IntervocalicJVocalization: *g*r*u*n*d
 WeightCleanup: *g*r*u*n*d
 HLoss: *g*r*u*n*d
 Contraction: *g*r*u*n*d
@@ -2741,6 +2792,7 @@ HighVowelApocope: *ç*æ*ʤ*l*ą
 HeavySyllableNasalApocope: *ç*æ*ʤ*l
 WeakTailReduction: *ç*æ*ʤ*l
 JLossAfterHeavy: *ç*æ*ʤ*l
+IntervocalicJVocalization: *ç*æ*ʤ*l
 WeightCleanup: *ç*æ*ʤ*l
 HLoss: *ç*æ*ʤ*l
 Contraction: *ç*æ*ʤ*l
@@ -2794,6 +2846,7 @@ HighVowelApocope: *ç*ea*l*l
 HeavySyllableNasalApocope: *ç*ea*l*l
 WeakTailReduction: *ç*ea*l*l
 JLossAfterHeavy: *ç*ea*l*l
+IntervocalicJVocalization: *ç*ea*l*l
 WeightCleanup: *ç*ea*l*l
 HLoss: *ç*ea*l*l
 Contraction: *ç*ea*l*l
@@ -2847,6 +2900,7 @@ HighVowelApocope: *x*a*n*d
 HeavySyllableNasalApocope: *x*a*n*d
 WeakTailReduction: *x*a*n*d
 JLossAfterHeavy: *x*a*n*d
+IntervocalicJVocalization: *x*a*n*d
 WeightCleanup: *x*a*n*d
 HLoss: *x*a*n*d
 Contraction: *x*a*n*d
@@ -2900,6 +2954,7 @@ HighVowelApocope: *ç*ea*r*m
 HeavySyllableNasalApocope: *ç*ea*r*m
 WeakTailReduction: *ç*ea*r*m
 JLossAfterHeavy: *ç*ea*r*m
+IntervocalicJVocalization: *ç*ea*r*m
 WeightCleanup: *ç*ea*r*m
 HLoss: *ç*ea*r*m
 Contraction: *ç*ea*r*m
@@ -2953,6 +3008,7 @@ HighVowelApocope: *ç*æ*s*l
 HeavySyllableNasalApocope: *ç*æ*s*l
 WeakTailReduction: *ç*æ*s*l
 JLossAfterHeavy: *ç*æ*s*l
+IntervocalicJVocalization: *ç*æ*s*l
 WeightCleanup: *ç*æ*s*l
 HLoss: *ç*æ*s*l
 Contraction: *ç*æ*s*l
@@ -3006,6 +3062,7 @@ HighVowelApocope: *ç*ēa*β*o*d*ą
 HeavySyllableNasalApocope: *ç*ēa*β*o*d
 WeakTailReduction: *ç*ēa*β*o*d
 JLossAfterHeavy: *ç*ēa*β*o*d
+IntervocalicJVocalization: *ç*ēa*β*o*d
 WeightCleanup: *ç*ēa*β*o*d
 HLoss: *ç*ēa*β*o*d
 Contraction: *ç*ēa*β*o*d
@@ -3059,6 +3116,7 @@ HighVowelApocope: *x*ǣ*l*j*ă*n
 HeavySyllableNasalApocope: *x*ǣ*l*j*ă*n
 WeakTailReduction: *x*ǣ*l*j*a*n
 JLossAfterHeavy: *x*ǣ*l*a*n
+IntervocalicJVocalization: *x*ǣ*l*a*n
 WeightCleanup: *x*ǣ*l*a*n
 HLoss: *x*ǣ*l*a*n
 Contraction: *x*ǣ*l*a*n
@@ -3112,6 +3170,7 @@ HighVowelApocope: *ç*eo*r*θ
 HeavySyllableNasalApocope: *ç*eo*r*θ
 WeakTailReduction: *ç*eo*r*θ
 JLossAfterHeavy: *ç*eo*r*θ
+IntervocalicJVocalization: *ç*eo*r*θ
 WeightCleanup: *ç*eo*r*θ
 HLoss: *ç*eo*r*θ
 Contraction: *ç*eo*r*θ
@@ -3165,6 +3224,7 @@ HighVowelApocope: *x*ǣ*θ
 HeavySyllableNasalApocope: *x*ǣ*θ
 WeakTailReduction: *x*ǣ*θ
 JLossAfterHeavy: *x*ǣ*θ
+IntervocalicJVocalization: *x*ǣ*θ
 WeightCleanup: *x*ǣ*θ
 HLoss: *x*ǣ*θ
 Contraction: *x*ǣ*θ
@@ -3218,6 +3278,7 @@ HighVowelApocope: *ç*e*ʤ*ʤ*j
 HeavySyllableNasalApocope: *ç*e*ʤ*ʤ*j
 WeakTailReduction: *ç*e*ʤ*ʤ*j
 JLossAfterHeavy: *ç*e*ʤ*ʤ*j
+IntervocalicJVocalization: *ç*e*ʤ*ʤ*j
 WeightCleanup: *ç*e*ʤ*ʤ*j
 HLoss: *ç*e*ʤ*ʤ*j
 Contraction: *ç*e*ʤ*ʤ*j
@@ -3271,6 +3332,7 @@ HighVowelApocope: *x*o*r*d*ą
 HeavySyllableNasalApocope: *x*o*r*d
 WeakTailReduction: *x*o*r*d
 JLossAfterHeavy: *x*o*r*d
+IntervocalicJVocalization: *x*o*r*d
 WeightCleanup: *x*o*r*d
 HLoss: *x*o*r*d
 Contraction: *x*o*r*d
@@ -3324,6 +3386,7 @@ HighVowelApocope: *x*ā*m
 HeavySyllableNasalApocope: *x*ā*m
 WeakTailReduction: *x*ā*m
 JLossAfterHeavy: *x*ā*m
+IntervocalicJVocalization: *x*ā*m
 WeightCleanup: *x*ā*m
 HLoss: *x*ā*m
 Contraction: *x*ā*m
@@ -3377,6 +3440,7 @@ HighVowelApocope: *x*ō*d
 HeavySyllableNasalApocope: *x*ō*d
 WeakTailReduction: *x*ō*d
 JLossAfterHeavy: *x*ō*d
+IntervocalicJVocalization: *x*ō*d
 WeightCleanup: *x*ō*d
 HLoss: *x*ō*d
 Contraction: *x*ō*d
@@ -3430,6 +3494,7 @@ HighVowelApocope: *x*ō*f
 HeavySyllableNasalApocope: *x*ō*f
 WeakTailReduction: *x*ō*f
 JLossAfterHeavy: *x*ō*f
+IntervocalicJVocalization: *x*ō*f
 WeightCleanup: *x*ō*f
 HLoss: *x*ō*f
 Contraction: *x*ō*f
@@ -3483,6 +3548,7 @@ HighVowelApocope: *x*u*n*d
 HeavySyllableNasalApocope: *x*u*n*d
 WeakTailReduction: *x*u*n*d
 JLossAfterHeavy: *x*u*n*d
+IntervocalicJVocalization: *x*u*n*d
 WeightCleanup: *x*u*n*d
 HLoss: *x*u*n*d
 Contraction: *x*u*n*d
@@ -3536,6 +3602,7 @@ HighVowelApocope: *Kn*e*d*ă*n
 HeavySyllableNasalApocope: *Kn*e*d*ă*n
 WeakTailReduction: *Kn*e*d*a*n
 JLossAfterHeavy: *Kn*e*d*a*n
+IntervocalicJVocalization: *Kn*e*d*a*n
 WeightCleanup: *Kn*e*d*a*n
 HLoss: *Kn*e*d*a*n
 Contraction: *Kn*e*d*a*n
@@ -3589,6 +3656,7 @@ HighVowelApocope: *Kn*ēo*w*ą
 HeavySyllableNasalApocope: *Kn*ēo*w
 WeakTailReduction: *Kn*ēo*w
 JLossAfterHeavy: *Kn*ēo*w
+IntervocalicJVocalization: *Kn*ēo*w
 WeightCleanup: *Kn*ēo*w
 HLoss: *Kn*ēo*w
 Contraction: *Kn*ēo*w
@@ -3642,6 +3710,7 @@ HighVowelApocope: *l*a*n*d*ą
 HeavySyllableNasalApocope: *l*a*n*d
 WeakTailReduction: *l*a*n*d
 JLossAfterHeavy: *l*a*n*d
+IntervocalicJVocalization: *l*a*n*d
 WeightCleanup: *l*a*n*d
 HLoss: *l*a*n*d
 Contraction: *l*a*n*d
@@ -3695,6 +3764,7 @@ HighVowelApocope: *l*ǣ*s*t*j*ă*n
 HeavySyllableNasalApocope: *l*ǣ*s*t*j*ă*n
 WeakTailReduction: *l*ǣ*s*t*j*a*n
 JLossAfterHeavy: *l*ǣ*s*t*a*n
+IntervocalicJVocalization: *l*ǣ*s*t*a*n
 WeightCleanup: *l*ǣ*s*t*a*n
 HLoss: *l*ǣ*s*t*a*n
 Contraction: *l*ǣ*s*t*a*n
@@ -3748,6 +3818,7 @@ HighVowelApocope: *l*ēa*β*ą
 HeavySyllableNasalApocope: *l*ēa*β
 WeakTailReduction: *l*ēa*β
 JLossAfterHeavy: *l*ēa*β
+IntervocalicJVocalization: *l*ēa*β
 WeightCleanup: *l*ēa*β
 HLoss: *l*ēa*β
 Contraction: *l*ēa*β
@@ -3801,6 +3872,7 @@ HighVowelApocope: *l*e*θ*r*ą
 HeavySyllableNasalApocope: *l*e*θ*r
 WeakTailReduction: *l*e*θ*r
 JLossAfterHeavy: *l*e*θ*r
+IntervocalicJVocalization: *l*e*θ*r
 WeightCleanup: *l*e*θ*r
 HLoss: *l*e*θ*r
 Contraction: *l*e*θ*r
@@ -3854,6 +3926,7 @@ HighVowelApocope: *l*ēa*k
 HeavySyllableNasalApocope: *l*ēa*k
 WeakTailReduction: *l*ēa*k
 JLossAfterHeavy: *l*ēa*k
+IntervocalicJVocalization: *l*ēa*k
 WeightCleanup: *l*ēa*k
 HLoss: *l*ēa*k
 Contraction: *l*ēa*k
@@ -3907,6 +3980,7 @@ HighVowelApocope: *l*ǣ*t*ă*n
 HeavySyllableNasalApocope: *l*ǣ*t*ă*n
 WeakTailReduction: *l*ǣ*t*a*n
 JLossAfterHeavy: *l*ǣ*t*a*n
+IntervocalicJVocalization: *l*ǣ*t*a*n
 WeightCleanup: *l*ǣ*t*a*n
 HLoss: *l*ǣ*t*a*n
 Contraction: *l*ǣ*t*a*n
@@ -3960,6 +4034,7 @@ HighVowelApocope: *l*ī*β*ą
 HeavySyllableNasalApocope: *l*ī*β
 WeakTailReduction: *l*ī*β
 JLossAfterHeavy: *l*ī*β
+IntervocalicJVocalization: *l*ī*β
 WeightCleanup: *l*ī*β
 HLoss: *l*ī*β
 Contraction: *l*ī*β
@@ -4013,6 +4088,7 @@ HighVowelApocope: *l*ī*m
 HeavySyllableNasalApocope: *l*ī*m
 WeakTailReduction: *l*ī*m
 JLossAfterHeavy: *l*ī*m
+IntervocalicJVocalization: *l*ī*m
 WeightCleanup: *l*ī*m
 HLoss: *l*ī*m
 Contraction: *l*ī*m
@@ -4066,6 +4142,7 @@ HighVowelApocope: *l*i*β*r
 HeavySyllableNasalApocope: *l*i*β*r
 WeakTailReduction: *l*i*β*r
 JLossAfterHeavy: *l*i*β*r
+IntervocalicJVocalization: *l*i*β*r
 WeightCleanup: *l*i*β*r
 HLoss: *l*i*β*r
 Contraction: *l*i*β*r
@@ -4119,6 +4196,7 @@ HighVowelApocope: *l*o*k*ą
 HeavySyllableNasalApocope: *l*o*k
 WeakTailReduction: *l*o*k
 JLossAfterHeavy: *l*o*k
+IntervocalicJVocalization: *l*o*k
 WeightCleanup: *l*o*k
 HLoss: *l*o*k
 Contraction: *l*o*k
@@ -4172,6 +4250,7 @@ HighVowelApocope: *l*o*k*k
 HeavySyllableNasalApocope: *l*o*k*k
 WeakTailReduction: *l*o*k*k
 JLossAfterHeavy: *l*o*k*k
+IntervocalicJVocalization: *l*o*k*k
 WeightCleanup: *l*o*k*k
 HLoss: *l*o*k*k
 Contraction: *l*o*k*k
@@ -4225,6 +4304,7 @@ HighVowelApocope: *l*ū*s
 HeavySyllableNasalApocope: *l*ū*s
 WeakTailReduction: *l*ū*s
 JLossAfterHeavy: *l*ū*s
+IntervocalicJVocalization: *l*ū*s
 WeightCleanup: *l*ū*s
 HLoss: *l*ū*s
 Contraction: *l*ū*s
@@ -4278,6 +4358,7 @@ HighVowelApocope: *l*u*s*t
 HeavySyllableNasalApocope: *l*u*s*t
 WeakTailReduction: *l*u*s*t
 JLossAfterHeavy: *l*u*s*t
+IntervocalicJVocalization: *l*u*s*t
 WeightCleanup: *l*u*s*t
 HLoss: *l*u*s*t
 Contraction: *l*u*s*t
@@ -4331,6 +4412,7 @@ HighVowelApocope: *m*ea*l*t
 HeavySyllableNasalApocope: *m*ea*l*t
 WeakTailReduction: *m*ea*l*t
 JLossAfterHeavy: *m*ea*l*t
+IntervocalicJVocalization: *m*ea*l*t
 WeightCleanup: *m*ea*l*t
 HLoss: *m*ea*l*t
 Contraction: *m*ea*l*t
@@ -4384,6 +4466,7 @@ HighVowelApocope: *m*æ*s*t
 HeavySyllableNasalApocope: *m*æ*s*t
 WeakTailReduction: *m*æ*s*t
 JLossAfterHeavy: *m*æ*s*t
+IntervocalicJVocalization: *m*æ*s*t
 WeightCleanup: *m*æ*s*t
 HLoss: *m*æ*s*t
 Contraction: *m*æ*s*t
@@ -4437,6 +4520,7 @@ HighVowelApocope: *m*ǣ*l*ą
 HeavySyllableNasalApocope: *m*ǣ*l
 WeakTailReduction: *m*ǣ*l
 JLossAfterHeavy: *m*ǣ*l
+IntervocalicJVocalization: *m*ǣ*l
 WeightCleanup: *m*ǣ*l
 HLoss: *m*ǣ*l
 Contraction: *m*ǣ*l
@@ -4490,6 +4574,7 @@ HighVowelApocope: *m*ǣ*n*j*ă*n
 HeavySyllableNasalApocope: *m*ǣ*n*j*ă*n
 WeakTailReduction: *m*ǣ*n*j*a*n
 JLossAfterHeavy: *m*ǣ*n*a*n
+IntervocalicJVocalization: *m*ǣ*n*a*n
 WeightCleanup: *m*ǣ*n*a*n
 HLoss: *m*ǣ*n*a*n
 Contraction: *m*ǣ*n*a*n
@@ -4543,6 +4628,7 @@ HighVowelApocope: *m*ō*d
 HeavySyllableNasalApocope: *m*ō*d
 WeakTailReduction: *m*ō*d
 JLossAfterHeavy: *m*ō*d
+IntervocalicJVocalization: *m*ō*d
 WeightCleanup: *m*ō*d
 HLoss: *m*ō*d
 Contraction: *m*ō*d
@@ -4596,6 +4682,7 @@ HighVowelApocope: *n*æ*ʤ*l
 HeavySyllableNasalApocope: *n*æ*ʤ*l
 WeakTailReduction: *n*æ*ʤ*l
 JLossAfterHeavy: *n*æ*ʤ*l
+IntervocalicJVocalization: *n*æ*ʤ*l
 WeightCleanup: *n*æ*ʤ*l
 HLoss: *n*æ*ʤ*l
 Contraction: *n*æ*ʤ*l
@@ -4649,6 +4736,7 @@ HighVowelApocope: *n*īe*d
 HeavySyllableNasalApocope: *n*īe*d
 WeakTailReduction: *n*īe*d
 JLossAfterHeavy: *n*īe*d
+IntervocalicJVocalization: *n*īe*d
 WeightCleanup: *n*īe*d
 HLoss: *n*īe*d
 Contraction: *n*īe*d
@@ -4702,6 +4790,7 @@ HighVowelApocope: *o*f*n
 HeavySyllableNasalApocope: *o*f*n
 WeakTailReduction: *o*f*n
 JLossAfterHeavy: *o*f*n
+IntervocalicJVocalization: *o*f*n
 WeightCleanup: *o*f*n
 HLoss: *o*f*n
 Contraction: *o*f*n
@@ -4755,6 +4844,7 @@ HighVowelApocope: *r*e*ʤ*n
 HeavySyllableNasalApocope: *r*e*ʤ*n
 WeakTailReduction: *r*e*ʤ*n
 JLossAfterHeavy: *r*e*ʤ*n
+IntervocalicJVocalization: *r*e*ʤ*n
 WeightCleanup: *r*e*ʤ*n
 HLoss: *r*e*ʤ*n
 Contraction: *r*e*ʤ*n
@@ -4808,6 +4898,7 @@ HighVowelApocope: *x*r*æ*β*n
 HeavySyllableNasalApocope: *x*r*æ*β*n
 WeakTailReduction: *x*r*æ*β*n
 JLossAfterHeavy: *x*r*æ*β*n
+IntervocalicJVocalization: *x*r*æ*β*n
 WeightCleanup: *x*r*æ*β*n
 HLoss: *x*r*æ*β*n
 Contraction: *x*r*æ*β*n
@@ -4861,6 +4952,7 @@ HighVowelApocope: *r*ǣ*d*ă*n
 HeavySyllableNasalApocope: *r*ǣ*d*ă*n
 WeakTailReduction: *r*ǣ*d*a*n
 JLossAfterHeavy: *r*ǣ*d*a*n
+IntervocalicJVocalization: *r*ǣ*d*a*n
 WeightCleanup: *r*ǣ*d*a*n
 HLoss: *r*ǣ*d*a*n
 Contraction: *r*ǣ*d*a*n
@@ -4914,6 +5006,7 @@ HighVowelApocope: *r*ī*d*ă*n
 HeavySyllableNasalApocope: *r*ī*d*ă*n
 WeakTailReduction: *r*ī*d*a*n
 JLossAfterHeavy: *r*ī*d*a*n
+IntervocalicJVocalization: *r*ī*d*a*n
 WeightCleanup: *r*ī*d*a*n
 HLoss: *r*ī*d*a*n
 Contraction: *r*ī*d*a*n
@@ -4967,6 +5060,7 @@ HighVowelApocope: *r*i*n*d
 HeavySyllableNasalApocope: *r*i*n*d
 WeakTailReduction: *r*i*n*d
 JLossAfterHeavy: *r*i*n*d
+IntervocalicJVocalization: *r*i*n*d
 WeightCleanup: *r*i*n*d
 HLoss: *r*i*n*d
 Contraction: *r*i*n*d
@@ -5020,6 +5114,7 @@ HighVowelApocope: *r*ō*d
 HeavySyllableNasalApocope: *r*ō*d
 WeakTailReduction: *r*ō*d
 JLossAfterHeavy: *r*ō*d
+IntervocalicJVocalization: *r*ō*d
 WeightCleanup: *r*ō*d
 HLoss: *r*ō*d
 Contraction: *r*ō*d
@@ -5073,6 +5168,7 @@ HighVowelApocope: *r*ū*m
 HeavySyllableNasalApocope: *r*ū*m
 WeakTailReduction: *r*ū*m
 JLossAfterHeavy: *r*ū*m
+IntervocalicJVocalization: *r*ū*m
 WeightCleanup: *r*ū*m
 HLoss: *r*ū*m
 Contraction: *r*ū*m
@@ -5126,6 +5222,7 @@ HighVowelApocope: *r*ā*p*ą
 HeavySyllableNasalApocope: *r*ā*p
 WeakTailReduction: *r*ā*p
 JLossAfterHeavy: *r*ā*p
+IntervocalicJVocalization: *r*ā*p
 WeightCleanup: *r*ā*p
 HLoss: *r*ā*p
 Contraction: *r*ā*p
@@ -5179,6 +5276,7 @@ HighVowelApocope: *r*ō*θ*r
 HeavySyllableNasalApocope: *r*ō*θ*r
 WeakTailReduction: *r*ō*θ*r
 JLossAfterHeavy: *r*ō*θ*r
+IntervocalicJVocalization: *r*ō*θ*r
 WeightCleanup: *r*ō*θ*r
 HLoss: *r*ō*θ*r
 Contraction: *r*ō*θ*r
@@ -5232,6 +5330,7 @@ HighVowelApocope: *r*i*n*n*ă*n
 HeavySyllableNasalApocope: *r*i*n*n*ă*n
 WeakTailReduction: *r*i*n*n*a*n
 JLossAfterHeavy: *r*i*n*n*a*n
+IntervocalicJVocalization: *r*i*n*n*a*n
 WeightCleanup: *r*i*n*n*a*n
 HLoss: *r*i*n*n*a*n
 Contraction: *r*i*n*n*a*n
@@ -5285,6 +5384,7 @@ HighVowelApocope: *r*y*ʤ*i
 HeavySyllableNasalApocope: *r*y*ʤ*i
 WeakTailReduction: *r*y*ʤ*e
 JLossAfterHeavy: *r*y*ʤ*e
+IntervocalicJVocalization: *r*y*ʤ*e
 WeightCleanup: *r*y*ʤ*e
 HLoss: *r*y*ʤ*e
 Contraction: *r*y*ʤ*e
@@ -5338,6 +5438,7 @@ HighVowelApocope: *s*e*ʤ*l*ą
 HeavySyllableNasalApocope: *s*e*ʤ*l
 WeakTailReduction: *s*e*ʤ*l
 JLossAfterHeavy: *s*e*ʤ*l
+IntervocalicJVocalization: *s*e*ʤ*l
 WeightCleanup: *s*e*ʤ*l
 HLoss: *s*e*ʤ*l
 Contraction: *s*e*ʤ*l
@@ -5391,6 +5492,7 @@ HighVowelApocope: *s*ea*l*t*ą
 HeavySyllableNasalApocope: *s*ea*l*t
 WeakTailReduction: *s*ea*l*t
 JLossAfterHeavy: *s*ea*l*t
+IntervocalicJVocalization: *s*ea*l*t
 WeightCleanup: *s*ea*l*t
 HLoss: *s*ea*l*t
 Contraction: *s*ea*l*t
@@ -5444,6 +5546,7 @@ HighVowelApocope: *s*ea*l*β
 HeavySyllableNasalApocope: *s*ea*l*β
 WeakTailReduction: *s*ea*l*β
 JLossAfterHeavy: *s*ea*l*β
+IntervocalicJVocalization: *s*ea*l*β
 WeightCleanup: *s*ea*l*β
 HLoss: *s*ea*l*β
 Contraction: *s*ea*l*β
@@ -5497,6 +5600,7 @@ HighVowelApocope: *s*ēa*m
 HeavySyllableNasalApocope: *s*ēa*m
 WeakTailReduction: *s*ēa*m
 JLossAfterHeavy: *s*ēa*m
+IntervocalicJVocalization: *s*ēa*m
 WeightCleanup: *s*ēa*m
 HLoss: *s*ēa*m
 Contraction: *s*ēa*m
@@ -5550,6 +5654,7 @@ HighVowelApocope: *s*e*n*d*j*ă*n
 HeavySyllableNasalApocope: *s*e*n*d*j*ă*n
 WeakTailReduction: *s*e*n*d*j*a*n
 JLossAfterHeavy: *s*e*n*d*a*n
+IntervocalicJVocalization: *s*e*n*d*a*n
 WeightCleanup: *s*e*n*d*a*n
 HLoss: *s*e*n*d*a*n
 Contraction: *s*e*n*d*a*n
@@ -5603,6 +5708,7 @@ HighVowelApocope: *s*e*t*t*j*ă*n
 HeavySyllableNasalApocope: *s*e*t*t*j*ă*n
 WeakTailReduction: *s*e*t*t*j*a*n
 JLossAfterHeavy: *s*e*t*t*a*n
+IntervocalicJVocalization: *s*e*t*t*a*n
 WeightCleanup: *s*e*t*t*a*n
 HLoss: *s*e*t*t*a*n
 Contraction: *s*e*t*t*a*n
@@ -5656,6 +5762,7 @@ HighVowelApocope: *ʃ*ea*f*t*ą
 HeavySyllableNasalApocope: *ʃ*ea*f*t
 WeakTailReduction: *ʃ*ea*f*t
 JLossAfterHeavy: *ʃ*ea*f*t
+IntervocalicJVocalization: *ʃ*ea*f*t
 WeightCleanup: *ʃ*ea*f*t
 HLoss: *ʃ*ea*f*t
 Contraction: *ʃ*ea*f*t
@@ -5709,6 +5816,7 @@ HighVowelApocope: *ʃ*ie*r*ă*n
 HeavySyllableNasalApocope: *ʃ*ie*r*ă*n
 WeakTailReduction: *ʃ*ie*r*a*n
 JLossAfterHeavy: *ʃ*ie*r*a*n
+IntervocalicJVocalization: *ʃ*ie*r*a*n
 WeightCleanup: *ʃ*ie*r*a*n
 HLoss: *ʃ*ie*r*a*n
 Contraction: *ʃ*ie*r*a*n
@@ -5762,6 +5870,7 @@ HighVowelApocope: *ʃ*ī*n*ă*n
 HeavySyllableNasalApocope: *ʃ*ī*n*ă*n
 WeakTailReduction: *ʃ*ī*n*a*n
 JLossAfterHeavy: *ʃ*ī*n*a*n
+IntervocalicJVocalization: *ʃ*ī*n*a*n
 WeightCleanup: *ʃ*ī*n*a*n
 HLoss: *ʃ*ī*n*a*n
 Contraction: *ʃ*ī*n*a*n
@@ -5815,6 +5924,7 @@ HighVowelApocope: *ʃ*ū*r
 HeavySyllableNasalApocope: *ʃ*ū*r
 WeakTailReduction: *ʃ*ū*r
 JLossAfterHeavy: *ʃ*ū*r
+IntervocalicJVocalization: *ʃ*ū*r
 WeightCleanup: *ʃ*ū*r
 HLoss: *ʃ*ū*r
 Contraction: *ʃ*ū*r
@@ -5868,6 +5978,7 @@ HighVowelApocope: *s*e*n*ʤ*j*ă*n
 HeavySyllableNasalApocope: *s*e*n*ʤ*j*ă*n
 WeakTailReduction: *s*e*n*ʤ*j*ă*n
 JLossAfterHeavy: *s*e*n*ʤ*j*ă*n
+IntervocalicJVocalization: *s*e*n*ʤ*j*ă*n
 WeightCleanup: *s*e*n*ʤ*j*ă*n
 HLoss: *s*e*n*ʤ*j*ă*n
 Contraction: *s*e*n*ʤ*j*ă*n
@@ -5921,6 +6032,7 @@ HighVowelApocope: *s*i*t*t*j*ă*n
 HeavySyllableNasalApocope: *s*i*t*t*j*ă*n
 WeakTailReduction: *s*i*t*t*j*a*n
 JLossAfterHeavy: *s*i*t*t*a*n
+IntervocalicJVocalization: *s*i*t*t*a*n
 WeightCleanup: *s*i*t*t*a*n
 HLoss: *s*i*t*t*a*n
 Contraction: *s*i*t*t*a*n
@@ -5974,6 +6086,7 @@ HighVowelApocope: *s*l*ea*x*ă*n
 HeavySyllableNasalApocope: *s*l*ea*x*ă*n
 WeakTailReduction: *s*l*ea*x*a*n
 JLossAfterHeavy: *s*l*ea*x*a*n
+IntervocalicJVocalization: *s*l*ea*x*a*n
 WeightCleanup: *s*l*ea*x*a*n
 HLoss: *s*l*ea*a*n
 Contraction: *s*l*ēa*n
@@ -6027,6 +6140,7 @@ HighVowelApocope: *s*l*ī*m
 HeavySyllableNasalApocope: *s*l*ī*m
 WeakTailReduction: *s*l*ī*m
 JLossAfterHeavy: *s*l*ī*m
+IntervocalicJVocalization: *s*l*ī*m
 WeightCleanup: *s*l*ī*m
 HLoss: *s*l*ī*m
 Contraction: *s*l*ī*m
@@ -6080,6 +6194,7 @@ HighVowelApocope: *s*o*r*g
 HeavySyllableNasalApocope: *s*o*r*g
 WeakTailReduction: *s*o*r*g
 JLossAfterHeavy: *s*o*r*g
+IntervocalicJVocalization: *s*o*r*g
 WeightCleanup: *s*o*r*g
 HLoss: *s*o*r*g
 Contraction: *s*o*r*g
@@ -6133,6 +6248,7 @@ HighVowelApocope: *s*p*a*n*n
 HeavySyllableNasalApocope: *s*p*a*n*n
 WeakTailReduction: *s*p*a*n*n
 JLossAfterHeavy: *s*p*a*n*n
+IntervocalicJVocalization: *s*p*a*n*n
 WeightCleanup: *s*p*a*n*n
 HLoss: *s*p*a*n*n
 Contraction: *s*p*a*n*n
@@ -6186,6 +6302,7 @@ HighVowelApocope: *s*p*i*n*n*ă*n
 HeavySyllableNasalApocope: *s*p*i*n*n*ă*n
 WeakTailReduction: *s*p*i*n*n*a*n
 JLossAfterHeavy: *s*p*i*n*n*a*n
+IntervocalicJVocalization: *s*p*i*n*n*a*n
 WeightCleanup: *s*p*i*n*n*a*n
 HLoss: *s*p*i*n*n*a*n
 Contraction: *s*p*i*n*n*a*n
@@ -6239,6 +6356,7 @@ HighVowelApocope: *s*p*ō*n
 HeavySyllableNasalApocope: *s*p*ō*n
 WeakTailReduction: *s*p*ō*n
 JLossAfterHeavy: *s*p*ō*n
+IntervocalicJVocalization: *s*p*ō*n
 WeightCleanup: *s*p*ō*n
 HLoss: *s*p*ō*n
 Contraction: *s*p*ō*n
@@ -6292,6 +6410,7 @@ HighVowelApocope: *s*p*r*ǣ*d*j*ă*n
 HeavySyllableNasalApocope: *s*p*r*ǣ*d*j*ă*n
 WeakTailReduction: *s*p*r*ǣ*d*j*a*n
 JLossAfterHeavy: *s*p*r*ǣ*d*a*n
+IntervocalicJVocalization: *s*p*r*ǣ*d*a*n
 WeightCleanup: *s*p*r*ǣ*d*a*n
 HLoss: *s*p*r*ǣ*d*a*n
 Contraction: *s*p*r*ǣ*d*a*n
@@ -6345,6 +6464,7 @@ HighVowelApocope: *s*t*eo*r*β*ă*n
 HeavySyllableNasalApocope: *s*t*eo*r*β*ă*n
 WeakTailReduction: *s*t*eo*r*β*a*n
 JLossAfterHeavy: *s*t*eo*r*β*a*n
+IntervocalicJVocalization: *s*t*eo*r*β*a*n
 WeightCleanup: *s*t*eo*r*β*a*n
 HLoss: *s*t*eo*r*β*a*n
 Contraction: *s*t*eo*r*β*a*n
@@ -6398,6 +6518,7 @@ HighVowelApocope: *s*t*o*k*k
 HeavySyllableNasalApocope: *s*t*o*k*k
 WeakTailReduction: *s*t*o*k*k
 JLossAfterHeavy: *s*t*o*k*k
+IntervocalicJVocalization: *s*t*o*k*k
 WeightCleanup: *s*t*o*k*k
 HLoss: *s*t*o*k*k
 Contraction: *s*t*o*k*k
@@ -6451,6 +6572,7 @@ HighVowelApocope: *s*t*ā*n
 HeavySyllableNasalApocope: *s*t*ā*n
 WeakTailReduction: *s*t*ā*n
 JLossAfterHeavy: *s*t*ā*n
+IntervocalicJVocalization: *s*t*ā*n
 WeightCleanup: *s*t*ā*n
 HLoss: *s*t*ā*n
 Contraction: *s*t*ā*n
@@ -6504,6 +6626,7 @@ HighVowelApocope: *s*t*ō*l
 HeavySyllableNasalApocope: *s*t*ō*l
 WeakTailReduction: *s*t*ō*l
 JLossAfterHeavy: *s*t*ō*l
+IntervocalicJVocalization: *s*t*ō*l
 WeightCleanup: *s*t*ō*l
 HLoss: *s*t*ō*l
 Contraction: *s*t*ō*l
@@ -6557,6 +6680,7 @@ HighVowelApocope: *s*t*o*r*k
 HeavySyllableNasalApocope: *s*t*o*r*k
 WeakTailReduction: *s*t*o*r*k
 JLossAfterHeavy: *s*t*o*r*k
+IntervocalicJVocalization: *s*t*o*r*k
 WeightCleanup: *s*t*o*r*k
 HLoss: *s*t*o*r*k
 Contraction: *s*t*o*r*k
@@ -6610,6 +6734,7 @@ HighVowelApocope: *s*t*o*r*m
 HeavySyllableNasalApocope: *s*t*o*r*m
 WeakTailReduction: *s*t*o*r*m
 JLossAfterHeavy: *s*t*o*r*m
+IntervocalicJVocalization: *s*t*o*r*m
 WeightCleanup: *s*t*o*r*m
 HLoss: *s*t*o*r*m
 Contraction: *s*t*o*r*m
@@ -6663,6 +6788,7 @@ HighVowelApocope: *s*t*r*ēa*m
 HeavySyllableNasalApocope: *s*t*r*ēa*m
 WeakTailReduction: *s*t*r*ēa*m
 JLossAfterHeavy: *s*t*r*ēa*m
+IntervocalicJVocalization: *s*t*r*ēa*m
 WeightCleanup: *s*t*r*ēa*m
 HLoss: *s*t*r*ēa*m
 Contraction: *s*t*r*ēa*m
@@ -6716,6 +6842,7 @@ HighVowelApocope: *s*t*r*e*n*ʤ
 HeavySyllableNasalApocope: *s*t*r*e*n*ʤ
 WeakTailReduction: *s*t*r*e*n*ʤ
 JLossAfterHeavy: *s*t*r*e*n*ʤ
+IntervocalicJVocalization: *s*t*r*e*n*ʤ
 WeightCleanup: *s*t*r*e*n*ʤ
 HLoss: *s*t*r*e*n*ʤ
 Contraction: *s*t*r*e*n*ʤ
@@ -6769,6 +6896,7 @@ HighVowelApocope: *s*t*ō*d*ą
 HeavySyllableNasalApocope: *s*t*ō*d
 WeakTailReduction: *s*t*ō*d
 JLossAfterHeavy: *s*t*ō*d
+IntervocalicJVocalization: *s*t*ō*d
 WeightCleanup: *s*t*ō*d
 HLoss: *s*t*ō*d
 Contraction: *s*t*ō*d
@@ -6822,6 +6950,7 @@ HighVowelApocope: *s*ū*p*ă*n
 HeavySyllableNasalApocope: *s*ū*p*ă*n
 WeakTailReduction: *s*ū*p*a*n
 JLossAfterHeavy: *s*ū*p*a*n
+IntervocalicJVocalization: *s*ū*p*a*n
 WeightCleanup: *s*ū*p*a*n
 HLoss: *s*ū*p*a*n
 Contraction: *s*ū*p*a*n
@@ -6875,6 +7004,7 @@ HighVowelApocope: *s*w*a*n*æ*s
 HeavySyllableNasalApocope: *s*w*a*n*æ*s
 WeakTailReduction: *s*w*a*n*e*s
 JLossAfterHeavy: *s*w*a*n*e*s
+IntervocalicJVocalization: *s*w*a*n*e*s
 WeightCleanup: *s*w*a*n*e*s
 HLoss: *s*w*a*n*e*s
 Contraction: *s*w*a*n*e*s
@@ -6928,6 +7058,7 @@ HighVowelApocope: *s*w*i*m*m*ă*n
 HeavySyllableNasalApocope: *s*w*i*m*m*ă*n
 WeakTailReduction: *s*w*i*m*m*a*n
 JLossAfterHeavy: *s*w*i*m*m*a*n
+IntervocalicJVocalization: *s*w*i*m*m*a*n
 WeightCleanup: *s*w*i*m*m*a*n
 HLoss: *s*w*i*m*m*a*n
 Contraction: *s*w*i*m*m*a*n
@@ -6981,6 +7112,7 @@ HighVowelApocope: *s*w*eo*r*d*ą
 HeavySyllableNasalApocope: *s*w*eo*r*d
 WeakTailReduction: *s*w*eo*r*d
 JLossAfterHeavy: *s*w*eo*r*d
+IntervocalicJVocalization: *s*w*eo*r*d
 WeightCleanup: *s*w*eo*r*d
 HLoss: *s*w*eo*r*d
 Contraction: *s*w*eo*r*d
@@ -7034,6 +7166,7 @@ HighVowelApocope: *θ*ēo*β
 HeavySyllableNasalApocope: *θ*ēo*β
 WeakTailReduction: *θ*ēo*β
 JLossAfterHeavy: *θ*ēo*β
+IntervocalicJVocalization: *θ*ēo*β
 WeightCleanup: *θ*ēo*β
 HLoss: *θ*ēo*β
 Contraction: *θ*ēo*β
@@ -7087,6 +7220,7 @@ HighVowelApocope: *θ*i*n*g*ą
 HeavySyllableNasalApocope: *θ*i*n*g
 WeakTailReduction: *θ*i*n*g
 JLossAfterHeavy: *θ*i*n*g
+IntervocalicJVocalization: *θ*i*n*g
 WeightCleanup: *θ*i*n*g
 HLoss: *θ*i*n*g
 Contraction: *θ*i*n*g
@@ -7140,6 +7274,7 @@ HighVowelApocope: *θ*u*r*s*t
 HeavySyllableNasalApocope: *θ*u*r*s*t
 WeakTailReduction: *θ*u*r*s*t
 JLossAfterHeavy: *θ*u*r*s*t
+IntervocalicJVocalization: *θ*u*r*s*t
 WeightCleanup: *θ*u*r*s*t
 HLoss: *θ*u*r*s*t
 Contraction: *θ*u*r*s*t
@@ -7193,6 +7328,7 @@ HighVowelApocope: *θ*r*e*ʃ*ă*n
 HeavySyllableNasalApocope: *θ*r*e*ʃ*ă*n
 WeakTailReduction: *θ*r*e*ʃ*ă*n
 JLossAfterHeavy: *θ*r*e*ʃ*ă*n
+IntervocalicJVocalization: *θ*r*e*ʃ*ă*n
 WeightCleanup: *θ*r*e*ʃ*ă*n
 HLoss: *θ*r*e*ʃ*ă*n
 Contraction: *θ*r*e*ʃ*ă*n
@@ -7246,6 +7382,7 @@ HighVowelApocope: *θ*u*n*r
 HeavySyllableNasalApocope: *θ*u*n*r
 WeakTailReduction: *θ*u*n*r
 JLossAfterHeavy: *θ*u*n*r
+IntervocalicJVocalization: *θ*u*n*r
 WeightCleanup: *θ*u*n*r
 HLoss: *θ*u*n*r
 Contraction: *θ*u*n*r
@@ -7299,6 +7436,7 @@ HighVowelApocope: *t*r*e*d*ă*n
 HeavySyllableNasalApocope: *t*r*e*d*ă*n
 WeakTailReduction: *t*r*e*d*a*n
 JLossAfterHeavy: *t*r*e*d*a*n
+IntervocalicJVocalization: *t*r*e*d*a*n
 WeightCleanup: *t*r*e*d*a*n
 HLoss: *t*r*e*d*a*n
 Contraction: *t*r*e*d*a*n
@@ -7352,6 +7490,7 @@ HighVowelApocope: *w*æ*ʤ*n
 HeavySyllableNasalApocope: *w*æ*ʤ*n
 WeakTailReduction: *w*æ*ʤ*n
 JLossAfterHeavy: *w*æ*ʤ*n
+IntervocalicJVocalization: *w*æ*ʤ*n
 WeightCleanup: *w*æ*ʤ*n
 HLoss: *w*æ*ʤ*n
 Contraction: *w*æ*ʤ*n
@@ -7405,6 +7544,7 @@ HighVowelApocope: *w*ea*r*p*ą
 HeavySyllableNasalApocope: *w*ea*r*p
 WeakTailReduction: *w*ea*r*p
 JLossAfterHeavy: *w*ea*r*p
+IntervocalicJVocalization: *w*ea*r*p
 WeightCleanup: *w*ea*r*p
 HLoss: *w*ea*r*p
 Contraction: *w*ea*r*p
@@ -7458,6 +7598,7 @@ HighVowelApocope: *w*ea*x*s*ą
 HeavySyllableNasalApocope: *w*ea*x*s
 WeakTailReduction: *w*ea*x*s
 JLossAfterHeavy: *w*ea*x*s
+IntervocalicJVocalization: *w*ea*x*s
 WeightCleanup: *w*ea*x*s
 HLoss: *w*ea*x*s
 Contraction: *w*ea*x*s
@@ -7511,6 +7652,7 @@ HighVowelApocope: *w*e*d*r*ą
 HeavySyllableNasalApocope: *w*e*d*r
 WeakTailReduction: *w*e*d*r
 JLossAfterHeavy: *w*e*d*r
+IntervocalicJVocalization: *w*e*d*r
 WeightCleanup: *w*e*d*r
 HLoss: *w*e*d*r
 Contraction: *w*e*d*r
@@ -7564,6 +7706,7 @@ HighVowelApocope: *w*e*β*ă*n
 HeavySyllableNasalApocope: *w*e*β*ă*n
 WeakTailReduction: *w*e*β*a*n
 JLossAfterHeavy: *w*e*β*a*n
+IntervocalicJVocalization: *w*e*β*a*n
 WeightCleanup: *w*e*β*a*n
 HLoss: *w*e*β*a*n
 Contraction: *w*e*β*a*n
@@ -7617,6 +7760,7 @@ HighVowelApocope: *x*w*ī*l
 HeavySyllableNasalApocope: *x*w*ī*l
 WeakTailReduction: *x*w*ī*l
 JLossAfterHeavy: *x*w*ī*l
+IntervocalicJVocalization: *x*w*ī*l
 WeightCleanup: *x*w*ī*l
 HLoss: *x*w*ī*l
 Contraction: *x*w*ī*l
@@ -7670,6 +7814,7 @@ HighVowelApocope: *w*ea*l*d*ă*n
 HeavySyllableNasalApocope: *w*ea*l*d*ă*n
 WeakTailReduction: *w*ea*l*d*a*n
 JLossAfterHeavy: *w*ea*l*d*a*n
+IntervocalicJVocalization: *w*ea*l*d*a*n
 WeightCleanup: *w*ea*l*d*a*n
 HLoss: *w*ea*l*d*a*n
 Contraction: *w*ea*l*d*a*n
@@ -7723,6 +7868,7 @@ HighVowelApocope: *w*ī*β*ą
 HeavySyllableNasalApocope: *w*ī*β
 WeakTailReduction: *w*ī*β
 JLossAfterHeavy: *w*ī*β
+IntervocalicJVocalization: *w*ī*β
 WeightCleanup: *w*ī*β
 HLoss: *w*ī*β
 Contraction: *w*ī*β
@@ -7776,6 +7922,7 @@ HighVowelApocope: *w*i*n*t*r
 HeavySyllableNasalApocope: *w*i*n*t*r
 WeakTailReduction: *w*i*n*t*r
 JLossAfterHeavy: *w*i*n*t*r
+IntervocalicJVocalization: *w*i*n*t*r
 WeightCleanup: *w*i*n*t*r
 HLoss: *w*i*n*t*r
 Contraction: *w*i*n*t*r
@@ -7829,6 +7976,7 @@ HighVowelApocope: *w*u*n*d*r*ą
 HeavySyllableNasalApocope: *w*u*n*d*r
 WeakTailReduction: *w*u*n*d*r
 JLossAfterHeavy: *w*u*n*d*r
+IntervocalicJVocalization: *w*u*n*d*r
 WeightCleanup: *w*u*n*d*r
 HLoss: *w*u*n*d*r
 Contraction: *w*u*n*d*r
@@ -7882,6 +8030,7 @@ HighVowelApocope: *w*o*r*d*ą
 HeavySyllableNasalApocope: *w*o*r*d
 WeakTailReduction: *w*o*r*d
 JLossAfterHeavy: *w*o*r*d
+IntervocalicJVocalization: *w*o*r*d
 WeightCleanup: *w*o*r*d
 HLoss: *w*o*r*d
 Contraction: *w*o*r*d
@@ -7935,6 +8084,7 @@ HighVowelApocope: *w*r*i*n*g*ă*n
 HeavySyllableNasalApocope: *w*r*i*n*g*ă*n
 WeakTailReduction: *w*r*i*n*g*a*n
 JLossAfterHeavy: *w*r*i*n*g*a*n
+IntervocalicJVocalization: *w*r*i*n*g*a*n
 WeightCleanup: *w*r*i*n*g*a*n
 HLoss: *w*r*i*n*g*a*n
 Contraction: *w*r*i*n*g*a*n
@@ -7988,6 +8138,7 @@ HighVowelApocope: *j*ēa*r*ą
 HeavySyllableNasalApocope: *j*ēa*r
 WeakTailReduction: *j*ēa*r
 JLossAfterHeavy: *j*ēa*r
+IntervocalicJVocalization: *j*ēa*r
 WeightCleanup: *j*ēa*r
 HLoss: *j*ēa*r
 Contraction: *j*ēa*r
@@ -8044,6 +8195,7 @@ HighVowelApocope: *o*x*s*ō*n
 HeavySyllableNasalApocope: *o*x*s*ō*n
 WeakTailReduction: *o*x*s*ō*n
 JLossAfterHeavy: *o*x*s*ō*n
+IntervocalicJVocalization: *o*x*s*ō*n
 WeightCleanup: *o*x*s*ō*n
 HLoss: *o*x*s*ō*n
 Contraction: *o*x*s*ō*n
@@ -8097,6 +8249,7 @@ HighVowelApocope: *s*eo*x*s
 HeavySyllableNasalApocope: *s*eo*x*s
 WeakTailReduction: *s*eo*x*s
 JLossAfterHeavy: *s*eo*x*s
+IntervocalicJVocalization: *s*eo*x*s
 WeightCleanup: *s*eo*x*s
 HLoss: *s*eo*x*s
 Contraction: *s*eo*x*s
@@ -8150,6 +8303,7 @@ HighVowelApocope: *w*ea*x*s*ă*n
 HeavySyllableNasalApocope: *w*ea*x*s*ă*n
 WeakTailReduction: *w*ea*x*s*a*n
 JLossAfterHeavy: *w*ea*x*s*a*n
+IntervocalicJVocalization: *w*ea*x*s*a*n
 WeightCleanup: *w*ea*x*s*a*n
 HLoss: *w*ea*x*s*a*n
 Contraction: *w*ea*x*s*a*n
@@ -8206,6 +8360,7 @@ HighVowelApocope: *f*y*x*w*s*t
 HeavySyllableNasalApocope: *f*y*x*w*s*t
 WeakTailReduction: *f*y*x*w*s*t
 JLossAfterHeavy: *f*y*x*w*s*t
+IntervocalicJVocalization: *f*y*x*w*s*t
 WeightCleanup: *f*y*x*w*s*t
 HLoss: *f*y*x*w*s*t
 Contraction: *f*y*x*w*s*t
@@ -8259,6 +8414,7 @@ HighVowelApocope [carry]: xabukăz
 HeavySyllableNasalApocope [carry]: xabukăz
 WeakTailReduction [carry]: xabukăz
 JLossAfterHeavy [carry]: xabukăz
+IntervocalicJVocalization [carry]: xabukăz
 WeightCleanup [carry]: xabukăz
 HLoss [carry]: xabukăz
 Contraction [carry]: xabukăz
@@ -8312,6 +8468,7 @@ HighVowelApocope [carry]: xemenăz
 HeavySyllableNasalApocope [carry]: xemenăz
 WeakTailReduction [carry]: xemenăz
 JLossAfterHeavy [carry]: xemenăz
+IntervocalicJVocalization [carry]: xemenăz
 WeightCleanup [carry]: xemenăz
 HLoss [carry]: xemenăz
 Contraction [carry]: xemenăz
@@ -8365,6 +8522,7 @@ HighVowelApocope [carry]: xnakkăz
 HeavySyllableNasalApocope [carry]: xnakkăz
 WeakTailReduction [carry]: xnakkăz
 JLossAfterHeavy [carry]: xnakkăz
+IntervocalicJVocalization [carry]: xnakkăz
 WeightCleanup [carry]: xnakkăz
 HLoss [carry]: xnakkăz
 Contraction [carry]: xnakkăz
@@ -8418,6 +8576,7 @@ HighVowelApocope [carry]: regnabugōn
 HeavySyllableNasalApocope [carry]: regnabugōn
 WeakTailReduction [carry]: regnabugōn
 JLossAfterHeavy [carry]: regnabugōn
+IntervocalicJVocalization [carry]: regnabugōn
 WeightCleanup [carry]: regnabugōn
 HLoss [carry]: regnabugōn
 Contraction [carry]: regnabugōn
@@ -8471,6 +8630,7 @@ HighVowelApocope [carry]: skellinăz
 HeavySyllableNasalApocope [carry]: skellinăz
 WeakTailReduction [carry]: skellinăz
 JLossAfterHeavy [carry]: skellinăz
+IntervocalicJVocalization [carry]: skellinăz
 WeightCleanup [carry]: skellinăz
 HLoss [carry]: skellinăz
 Contraction [carry]: skellinăz
@@ -8524,6 +8684,7 @@ HighVowelApocope [carry]: smerwjăną
 HeavySyllableNasalApocope [carry]: smerwjăną
 WeakTailReduction [carry]: smerwjăną
 JLossAfterHeavy [carry]: smerwjăną
+IntervocalicJVocalization [carry]: smerwjăną
 WeightCleanup [carry]: smerwjăną
 HLoss [carry]: smerwjăną
 Contraction [carry]: smerwjăną
@@ -8577,6 +8738,7 @@ HighVowelApocope [carry]: snaigwăz
 HeavySyllableNasalApocope [carry]: snaigwăz
 WeakTailReduction [carry]: snaigwăz
 JLossAfterHeavy [carry]: snaigwăz
+IntervocalicJVocalization [carry]: snaigwăz
 WeightCleanup [carry]: snaigwăz
 HLoss [carry]: snaigwăz
 Contraction [carry]: snaigwăz
@@ -8630,6 +8792,7 @@ HighVowelApocope [carry]: sturtijăną
 HeavySyllableNasalApocope [carry]: sturtijăną
 WeakTailReduction [carry]: sturtijăną
 JLossAfterHeavy [carry]: sturtijăną
+IntervocalicJVocalization [carry]: sturtijăną
 WeightCleanup [carry]: sturtijăną
 HLoss [carry]: sturtijăną
 Contraction [carry]: sturtijăną
@@ -8683,6 +8846,7 @@ HighVowelApocope [carry]: sumerăz
 HeavySyllableNasalApocope [carry]: sumerăz
 WeakTailReduction [carry]: sumerăz
 JLossAfterHeavy [carry]: sumerăz
+IntervocalicJVocalization [carry]: sumerăz
 WeightCleanup [carry]: sumerăz
 HLoss [carry]: sumerăz
 Contraction [carry]: sumerăz
@@ -8736,6 +8900,7 @@ HighVowelApocope [carry]: θestilăz
 HeavySyllableNasalApocope [carry]: θestilăz
 WeakTailReduction [carry]: θestilăz
 JLossAfterHeavy [carry]: θestilăz
+IntervocalicJVocalization [carry]: θestilăz
 WeightCleanup [carry]: θestilăz
 HLoss [carry]: θestilăz
 Contraction [carry]: θestilăz
@@ -8789,6 +8954,7 @@ HighVowelApocope [carry]: wiraaldiz
 HeavySyllableNasalApocope [carry]: wiraaldiz
 WeakTailReduction [carry]: wiraaldiz
 JLossAfterHeavy [carry]: wiraaldiz
+IntervocalicJVocalization [carry]: wiraaldiz
 WeightCleanup [carry]: wiraaldiz
 HLoss [carry]: wiraaldiz
 Contraction [carry]: wiraaldiz
@@ -8842,6 +9008,7 @@ HighVowelApocope [carry]: wurmazwurmiz
 HeavySyllableNasalApocope [carry]: wurmazwurmiz
 WeakTailReduction [carry]: wurmazwurmiz
 JLossAfterHeavy [carry]: wurmazwurmiz
+IntervocalicJVocalization [carry]: wurmazwurmiz
 WeightCleanup [carry]: wurmazwurmiz
 HLoss [carry]: wurmazwurmiz
 Contraction [carry]: wurmazwurmiz
@@ -8898,6 +9065,7 @@ HighVowelApocope: *f*l*ā*s*k
 HeavySyllableNasalApocope: *f*l*ā*s*k
 WeakTailReduction: *f*l*ā*s*k
 JLossAfterHeavy: *f*l*ā*s*k
+IntervocalicJVocalization: *f*l*ā*s*k
 WeightCleanup: *f*l*ā*s*k
 HLoss: *f*l*ā*s*k
 Contraction: *f*l*ā*s*k
@@ -8951,6 +9119,7 @@ HighVowelApocope: *s*ā
 HeavySyllableNasalApocope: *s*ā
 WeakTailReduction: *s*ā
 JLossAfterHeavy: *s*ā
+IntervocalicJVocalization: *s*ā
 WeightCleanup: *s*ā
 HLoss: *s*ā
 Contraction: *s*ā
@@ -9004,6 +9173,7 @@ HighVowelApocope: *s*t*r*o*w*j*ă*n
 HeavySyllableNasalApocope: *s*t*r*o*w*j*ă*n
 WeakTailReduction: *s*t*r*o*w*j*a*n
 JLossAfterHeavy: *s*t*r*o*w*a*n
+IntervocalicJVocalization: *s*t*r*o*w*a*n
 WeightCleanup: *s*t*r*o*w*a*n
 HLoss: *s*t*r*o*w*a*n
 Contraction: *s*t*r*o*w*a*n
@@ -9022,7 +9192,7 @@ Surface: strowan
 --- whine ---
 PROTO: *wainōjăną
 EXPECTED: hwīnan
-OUTPUTS: wāneġan
+OUTPUTS: wāneian
 
 ProtoInput: *w*ai*n*ō*j*ă*n*ą
 InitialKn: *w*ai*n*ō*j*ă*n*ą
@@ -9057,20 +9227,21 @@ HighVowelApocope: *w*ā*n*ē*j*ă*n
 HeavySyllableNasalApocope: *w*ā*n*ē*j*ă*n
 WeakTailReduction: *w*ā*n*ē*j*a*n
 JLossAfterHeavy: *w*ā*n*ē*j*a*n
-WeightCleanup: *w*ā*n*ē*j*a*n
-HLoss: *w*ā*n*ē*j*a*n
-Contraction: *w*ā*n*ē*j*a*n
+IntervocalicJVocalization: *w*ā*n*ē*i*a*n
+WeightCleanup: *w*ā*n*ē*i*a*n
+HLoss: *w*ā*n*ē*i*a*n
+Contraction: *w*ā*n*ē*i*a*n
 ProtoToOEWeakTail: *w*ā*n*ē*j*ă*n
 ProtoToOEWeightMarkers: *w*ā*n*ē*j*ă*n
 ProtoToOEApocope: *w*ā*n*ē*j*ă*n
-ProtoToOEWeightCleanup: *w*ā*n*e*j*a*n
-ProtoToOE: *w*ā*n*e*j*a*n
-WGlide: *ʋ*ā*n*e*j*a*n
-GhMarker: *ʋ*ā*n*e*j*a*n
-GlideDeletion: *ʋ*ā*n*e*j*a*n
-Epenthesis: *w*ā*n*e*j*a*n
-Orthography: wāneġan
-Surface: wāneġan
+ProtoToOEWeightCleanup: *w*ā*n*e*i*a*n
+ProtoToOE: *w*ā*n*e*i*a*n
+WGlide: *ʋ*ā*n*e*i*a*n
+GhMarker: *ʋ*ā*n*e*i*a*n
+GlideDeletion: *ʋ*ā*n*e*i*a*n
+Epenthesis: *w*ā*n*e*i*a*n
+Orthography: wāneian
+Surface: wāneian
 
 
 === BUCKET: proto_mismatch_suspect (1) ===
@@ -9113,6 +9284,7 @@ HighVowelApocope: *l*u*β*ō*n
 HeavySyllableNasalApocope: *l*u*β*ō*n
 WeakTailReduction: *l*u*β*ō*n
 JLossAfterHeavy: *l*u*β*ō*n
+IntervocalicJVocalization: *l*u*β*ō*n
 WeightCleanup: *l*u*β*ō*n
 HLoss: *l*u*β*ō*n
 Contraction: *l*u*β*ō*n
@@ -9169,6 +9341,7 @@ HighVowelApocope: *d*r*a*n*k*ą
 HeavySyllableNasalApocope: *d*r*a*n*k
 WeakTailReduction: *d*r*a*n*k
 JLossAfterHeavy: *d*r*a*n*k
+IntervocalicJVocalization: *d*r*a*n*k
 WeightCleanup: *d*r*a*n*k
 HLoss: *d*r*a*n*k
 Contraction: *d*r*a*n*k
@@ -9222,6 +9395,7 @@ HighVowelApocope: *f*a*s*t*ō*n
 HeavySyllableNasalApocope: *f*a*s*t*ō*n
 WeakTailReduction: *f*a*s*t*ō*n
 JLossAfterHeavy: *f*a*s*t*ō*n
+IntervocalicJVocalization: *f*a*s*t*ō*n
 WeightCleanup: *f*a*s*t*ō*n
 HLoss: *f*a*s*t*ō*n
 Contraction: *f*a*s*t*ō*n
@@ -9275,6 +9449,7 @@ HighVowelApocope: *r*a*s*t
 HeavySyllableNasalApocope: *r*a*s*t
 WeakTailReduction: *r*a*s*t
 JLossAfterHeavy: *r*a*s*t
+IntervocalicJVocalization: *r*a*s*t
 WeightCleanup: *r*a*s*t
 HLoss: *r*a*s*t
 Contraction: *r*a*s*t
@@ -9328,6 +9503,7 @@ HighVowelApocope: *s*a*p*ō*n
 HeavySyllableNasalApocope: *s*a*p*ō*n
 WeakTailReduction: *s*a*p*ō*n
 JLossAfterHeavy: *s*a*p*ō*n
+IntervocalicJVocalization: *s*a*p*ō*n
 WeightCleanup: *s*a*p*ō*n
 HLoss: *s*a*p*ō*n
 Contraction: *s*a*p*ō*n
@@ -9381,6 +9557,7 @@ HighVowelApocope: *s*t*a*m*n
 HeavySyllableNasalApocope: *s*t*a*m*n
 WeakTailReduction: *s*t*a*m*n
 JLossAfterHeavy: *s*t*a*m*n
+IntervocalicJVocalization: *s*t*a*m*n
 WeightCleanup: *s*t*a*m*n
 HLoss: *s*t*a*m*n
 Contraction: *s*t*a*m*n
@@ -9434,6 +9611,7 @@ HighVowelApocope: *t*a*p*p*ō*n
 HeavySyllableNasalApocope: *t*a*p*p*ō*n
 WeakTailReduction: *t*a*p*p*ō*n
 JLossAfterHeavy: *t*a*p*p*ō*n
+IntervocalicJVocalization: *t*a*p*p*ō*n
 WeightCleanup: *t*a*p*p*ō*n
 HLoss: *t*a*p*p*ō*n
 Contraction: *t*a*p*p*ō*n
@@ -9487,6 +9665,7 @@ HighVowelApocope: *θ*a*n*k
 HeavySyllableNasalApocope: *θ*a*n*k
 WeakTailReduction: *θ*a*n*k
 JLossAfterHeavy: *θ*a*n*k
+IntervocalicJVocalization: *θ*a*n*k
 WeightCleanup: *θ*a*n*k
 HLoss: *θ*a*n*k
 Contraction: *θ*a*n*k
@@ -9543,6 +9722,7 @@ HighVowelApocope: *b*r*u*s*t
 HeavySyllableNasalApocope: *b*r*u*s*t
 WeakTailReduction: *b*r*u*s*t
 JLossAfterHeavy: *b*r*u*s*t
+IntervocalicJVocalization: *b*r*u*s*t
 WeightCleanup: *b*r*u*s*t
 HLoss: *b*r*u*s*t
 Contraction: *b*r*u*s*t
@@ -9596,6 +9776,7 @@ HighVowelApocope: *d*a*w*u
 HeavySyllableNasalApocope: *d*a*w*u
 WeakTailReduction: *d*a*w*o
 JLossAfterHeavy: *d*a*w*o
+IntervocalicJVocalization: *d*a*w*o
 WeightCleanup: *d*a*w*o
 HLoss: *d*a*w*o
 Contraction: *d*a*w*o
@@ -9649,6 +9830,7 @@ HighVowelApocope: *f*e*d*w*ō*r*e
 HeavySyllableNasalApocope: *f*e*d*w*ō*r*e
 WeakTailReduction: *f*e*d*w*ō*r*e
 JLossAfterHeavy: *f*e*d*w*ō*r*e
+IntervocalicJVocalization: *f*e*d*w*ō*r*e
 WeightCleanup: *f*e*d*w*ō*r*e
 HLoss: *f*e*d*w*ō*r*e
 Contraction: *f*e*d*w*ō*r*e
@@ -9667,7 +9849,7 @@ Surface: fedwore
 --- friend ---
 PROTO: *frijōndz
 EXPECTED: frēond
-OUTPUTS: friġond
+OUTPUTS: frīond
 
 ProtoInput: *f*r*i*j*ō*n*d*z
 InitialKn: *f*r*i*j*ō*n*d*z
@@ -9702,20 +9884,21 @@ HighVowelApocope: *f*r*i*j*ō*n*d
 HeavySyllableNasalApocope: *f*r*i*j*ō*n*d
 WeakTailReduction: *f*r*i*j*ō*n*d
 JLossAfterHeavy: *f*r*i*j*ō*n*d
-WeightCleanup: *f*r*i*j*ō*n*d
-HLoss: *f*r*i*j*ō*n*d
-Contraction: *f*r*i*j*ō*n*d
+IntervocalicJVocalization: *f*r*i*i*ō*n*d
+WeightCleanup: *f*r*i*i*ō*n*d
+HLoss: *f*r*i*i*ō*n*d
+Contraction: *f*r*ī*ō*n*d
 ProtoToOEWeakTail: *f*r*i*j*ō*n*d
 ProtoToOEWeightMarkers: *f*r*i*j*ō*n*d
 ProtoToOEApocope: *f*r*i*j*ō*n*d
-ProtoToOEWeightCleanup: *f*r*i*j*o*n*d
-ProtoToOE: *f*r*i*j*o*n*d
-WGlide: *f*r*i*j*o*n*d
-GhMarker: *f*r*i*j*o*n*d
-GlideDeletion: *f*r*i*j*o*n*d
-Epenthesis: *f*r*i*j*o*n*d
-Orthography: friġond
-Surface: friġond
+ProtoToOEWeightCleanup: *f*r*ī*o*n*d
+ProtoToOE: *f*r*ī*o*n*d
+WGlide: *f*r*ī*o*n*d
+GhMarker: *f*r*ī*o*n*d
+GlideDeletion: *f*r*ī*o*n*d
+Epenthesis: *f*r*ī*o*n*d
+Orthography: frīond
+Surface: frīond
 
 --- hay ---
 PROTO: *xawwją
@@ -9755,6 +9938,7 @@ HighVowelApocope: *ç*o*w*j*ą
 HeavySyllableNasalApocope: *ç*o*w*j
 WeakTailReduction: *ç*o*w*j
 JLossAfterHeavy: *ç*o*w
+IntervocalicJVocalization: *ç*o*w
 WeightCleanup: *ç*o*w
 HLoss: *ç*o*w
 Contraction: *ç*o*w
@@ -9808,6 +9992,7 @@ HighVowelApocope: *ç*æ*w*ă*n
 HeavySyllableNasalApocope: *ç*æ*w*ă*n
 WeakTailReduction: *ç*æ*w*a*n
 JLossAfterHeavy: *ç*æ*w*a*n
+IntervocalicJVocalization: *ç*æ*w*a*n
 WeightCleanup: *ç*æ*w*a*n
 HLoss: *ç*æ*w*a*n
 Contraction: *ç*æ*w*a*n
@@ -9861,6 +10046,7 @@ HighVowelApocope: *l*ǣ*d*j*ă*n
 HeavySyllableNasalApocope: *l*ǣ*d*j*ă*n
 WeakTailReduction: *l*ǣ*d*j*a*n
 JLossAfterHeavy: *l*ǣ*d*a*n
+IntervocalicJVocalization: *l*ǣ*d*a*n
 WeightCleanup: *l*ǣ*d*a*n
 HLoss: *l*ǣ*d*a*n
 Contraction: *l*ǣ*d*a*n
@@ -9914,6 +10100,7 @@ HighVowelApocope: *s*o*β*u*n
 HeavySyllableNasalApocope: *s*o*β*u*n
 WeakTailReduction: *s*o*β*o*n
 JLossAfterHeavy: *s*o*β*o*n
+IntervocalicJVocalization: *s*o*β*o*n
 WeightCleanup: *s*o*β*o*n
 HLoss: *s*o*β*o*n
 Contraction: *s*o*β*o*n
@@ -9967,6 +10154,7 @@ HighVowelApocope: *ʃ*ǣ*θ
 HeavySyllableNasalApocope: *ʃ*ǣ*θ
 WeakTailReduction: *ʃ*ǣ*θ
 JLossAfterHeavy: *ʃ*ǣ*θ
+IntervocalicJVocalization: *ʃ*ǣ*θ
 WeightCleanup: *ʃ*ǣ*θ
 HLoss: *ʃ*ǣ*θ
 Contraction: *ʃ*ǣ*θ
@@ -9985,7 +10173,7 @@ Surface: sċǣþ
 --- show ---
 PROTO: *skawōjăną
 EXPECTED: scēawian
-OUTPUTS: sċaweġan
+OUTPUTS: sċaweian
 
 ProtoInput: *s*k*a*w*ō*j*ă*n*ą
 InitialKn: *s*k*a*w*ō*j*ă*n*ą
@@ -10020,20 +10208,21 @@ HighVowelApocope: *ʃ*a*w*ē*j*ă*n
 HeavySyllableNasalApocope: *ʃ*a*w*ē*j*ă*n
 WeakTailReduction: *ʃ*a*w*ē*j*a*n
 JLossAfterHeavy: *ʃ*a*w*ē*j*a*n
-WeightCleanup: *ʃ*a*w*ē*j*a*n
-HLoss: *ʃ*a*w*ē*j*a*n
-Contraction: *ʃ*a*w*ē*j*a*n
+IntervocalicJVocalization: *ʃ*a*w*ē*i*a*n
+WeightCleanup: *ʃ*a*w*ē*i*a*n
+HLoss: *ʃ*a*w*ē*i*a*n
+Contraction: *ʃ*a*w*ē*i*a*n
 ProtoToOEWeakTail: *ʃ*a*w*ē*j*ă*n
 ProtoToOEWeightMarkers: *ʃ*a*w*ē*j*ă*n
 ProtoToOEApocope: *ʃ*a*w*ē*j*ă*n
-ProtoToOEWeightCleanup: *ʃ*a*w*e*j*a*n
-ProtoToOE: *ʃ*a*w*e*j*a*n
-WGlide: *ʃ*a*ʋ*e*j*a*n
-GhMarker: *ʃ*a*ʋ*e*j*a*n
-GlideDeletion: *ʃ*a*e*j*a*n
-Epenthesis: *ʃ*a*w*e*j*a*n
-Orthography: sċaweġan
-Surface: sċaweġan
+ProtoToOEWeightCleanup: *ʃ*a*w*e*i*a*n
+ProtoToOE: *ʃ*a*w*e*i*a*n
+WGlide: *ʃ*a*ʋ*e*i*a*n
+GhMarker: *ʃ*a*ʋ*e*i*a*n
+GlideDeletion: *ʃ*a*e*i*a*n
+Epenthesis: *ʃ*a*w*e*i*a*n
+Orthography: sċaweian
+Surface: sċaweian
 
 --- straw ---
 PROTO: *strawą
@@ -10073,6 +10262,7 @@ HighVowelApocope: *s*t*r*æ*w*ą
 HeavySyllableNasalApocope: *s*t*r*æ*w
 WeakTailReduction: *s*t*r*æ*w
 JLossAfterHeavy: *s*t*r*æ*w
+IntervocalicJVocalization: *s*t*r*æ*w
 WeightCleanup: *s*t*r*æ*w
 HLoss: *s*t*r*æ*w
 Contraction: *s*t*r*æ*w
@@ -10126,6 +10316,7 @@ HighVowelApocope: *w*e*s*l*o*n
 HeavySyllableNasalApocope: *w*e*s*l*o*n
 WeakTailReduction: *w*e*s*l*o*n
 JLossAfterHeavy: *w*e*s*l*o*n
+IntervocalicJVocalization: *w*e*s*l*o*n
 WeightCleanup: *w*e*s*l*o*n
 HLoss: *w*e*s*l*o*n
 Contraction: *w*e*s*l*o*n
@@ -10179,6 +10370,7 @@ HighVowelApocope: *j*o*k*ą
 HeavySyllableNasalApocope: *j*o*k
 WeakTailReduction: *j*o*k
 JLossAfterHeavy: *j*o*k
+IntervocalicJVocalization: *j*o*k
 WeightCleanup: *j*o*k
 HLoss: *j*o*k
 Contraction: *j*o*k
@@ -10232,6 +10424,7 @@ HighVowelApocope: *j*u*g*y*θ*i
 HeavySyllableNasalApocope: *j*u*g*y*θ*i
 WeakTailReduction: *j*u*g*y*θ*e
 JLossAfterHeavy: *j*u*g*y*θ*e
+IntervocalicJVocalization: *j*u*g*y*θ*e
 WeightCleanup: *j*u*g*y*θ*e
 HLoss: *j*u*g*y*θ*e
 Contraction: *j*u*g*y*θ*e
@@ -10288,6 +10481,7 @@ HighVowelApocope: *n*æ*d*r
 HeavySyllableNasalApocope: *n*æ*d*r
 WeakTailReduction: *n*æ*d*r
 JLossAfterHeavy: *n*æ*d*r
+IntervocalicJVocalization: *n*æ*d*r
 WeightCleanup: *n*æ*d*r
 HLoss: *n*æ*d*r
 Contraction: *n*æ*d*r
@@ -10341,6 +10535,7 @@ HighVowelApocope: *b*u
 HeavySyllableNasalApocope: *b*u
 WeakTailReduction: *b*o
 JLossAfterHeavy: *b*o
+IntervocalicJVocalization: *b*o
 WeightCleanup: *b*o
 HLoss: *b*o
 Contraction: *b*o
@@ -10394,6 +10589,7 @@ HighVowelApocope: *m*ie*r*d
 HeavySyllableNasalApocope: *m*ie*r*d
 WeakTailReduction: *m*ie*r*d
 JLossAfterHeavy: *m*ie*r*d
+IntervocalicJVocalization: *m*ie*r*d
 WeightCleanup: *m*ie*r*d
 HLoss: *m*ie*r*d
 Contraction: *m*ie*r*d
@@ -10447,6 +10643,7 @@ HighVowelApocope: *t*eo*x*u*n
 HeavySyllableNasalApocope: *t*eo*x*u*n
 WeakTailReduction: *t*eo*x*o*n
 JLossAfterHeavy: *t*eo*x*o*n
+IntervocalicJVocalization: *t*eo*x*o*n
 WeightCleanup: *t*eo*x*o*n
 HLoss: *t*eo*o*n
 Contraction: *t*eo*o*n
@@ -10503,6 +10700,7 @@ HighVowelApocope: *b*ō*k
 HeavySyllableNasalApocope: *b*ō*k
 WeakTailReduction: *b*ō*k
 JLossAfterHeavy: *b*ō*k
+IntervocalicJVocalization: *b*ō*k
 WeightCleanup: *b*ō*k
 HLoss: *b*ō*k
 Contraction: *b*ō*k
@@ -10556,6 +10754,7 @@ HighVowelApocope: *b*y*r*d
 HeavySyllableNasalApocope: *b*y*r*d
 WeakTailReduction: *b*y*r*d
 JLossAfterHeavy: *b*y*r*d
+IntervocalicJVocalization: *b*y*r*d
 WeightCleanup: *b*y*r*d
 HLoss: *b*y*r*d
 Contraction: *b*y*r*d
@@ -10609,6 +10808,7 @@ HighVowelApocope: *f*l*ēo*g*ă*n
 HeavySyllableNasalApocope: *f*l*ēo*g*ă*n
 WeakTailReduction: *f*l*ēo*g*a*n
 JLossAfterHeavy: *f*l*ēo*g*a*n
+IntervocalicJVocalization: *f*l*ēo*g*a*n
 WeightCleanup: *f*l*ēo*g*a*n
 HLoss: *f*l*ēo*g*a*n
 Contraction: *f*l*ēo*g*a*n
@@ -10662,6 +10862,7 @@ HighVowelApocope: *x*u*n*ă*g*ą
 HeavySyllableNasalApocope: *x*u*n*ă*g
 WeakTailReduction: *x*u*n*a*g
 JLossAfterHeavy: *x*u*n*a*g
+IntervocalicJVocalization: *x*u*n*a*g
 WeightCleanup: *x*u*n*a*g
 HLoss: *x*u*n*a*g
 Contraction: *x*u*n*a*g
@@ -10715,6 +10916,7 @@ HighVowelApocope: *w*ǣ*θ
 HeavySyllableNasalApocope: *w*ǣ*θ
 WeakTailReduction: *w*ǣ*θ
 JLossAfterHeavy: *w*ǣ*θ
+IntervocalicJVocalization: *w*ǣ*θ
 WeightCleanup: *w*ǣ*θ
 HLoss: *w*ǣ*θ
 Contraction: *w*ǣ*θ
@@ -10771,6 +10973,7 @@ HighVowelApocope: *l*i*θ*u
 HeavySyllableNasalApocope: *l*i*θ*u
 WeakTailReduction: *l*i*θ*o
 JLossAfterHeavy: *l*i*θ*o
+IntervocalicJVocalization: *l*i*θ*o
 WeightCleanup: *l*i*θ*o
 HLoss: *l*i*θ*o
 Contraction: *l*i*θ*o
@@ -10824,6 +11027,7 @@ HighVowelApocope: *n*e*t*i
 HeavySyllableNasalApocope: *n*e*t*i
 WeakTailReduction: *n*e*t*e
 JLossAfterHeavy: *n*e*t*e
+IntervocalicJVocalization: *n*e*t*e
 WeightCleanup: *n*e*t*e
 HLoss: *n*e*t*e
 Contraction: *n*e*t*e
@@ -10877,6 +11081,7 @@ HighVowelApocope: *s*ā*w*ă*l*u
 HeavySyllableNasalApocope: *s*ā*w*ă*l*u
 WeakTailReduction: *s*ā*w*a*l*o
 JLossAfterHeavy: *s*ā*w*a*l*o
+IntervocalicJVocalization: *s*ā*w*a*l*o
 WeightCleanup: *s*ā*w*a*l*o
 HLoss: *s*ā*w*a*l*o
 Contraction: *s*ā*w*a*l*o
@@ -10930,6 +11135,7 @@ HighVowelApocope: *s*t*e*β*i
 HeavySyllableNasalApocope: *s*t*e*β*i
 WeakTailReduction: *s*t*e*β*e
 JLossAfterHeavy: *s*t*e*β*e
+IntervocalicJVocalization: *s*t*e*β*e
 WeightCleanup: *s*t*e*β*e
 HLoss: *s*t*e*β*e
 Contraction: *s*t*e*β*e
@@ -10983,6 +11189,7 @@ HighVowelApocope: *w*e*s*t*ă*n*ē
 HeavySyllableNasalApocope: *w*e*s*t*ă*n*ē
 WeakTailReduction: *w*e*s*t*a*n*ē
 JLossAfterHeavy: *w*e*s*t*a*n*ē
+IntervocalicJVocalization: *w*e*s*t*a*n*ē
 WeightCleanup: *w*e*s*t*a*n*ē
 HLoss: *w*e*s*t*a*n*ē
 Contraction: *w*e*s*t*a*n*ē
@@ -11036,6 +11243,7 @@ HighVowelApocope: *w*o*l*l*o
 HeavySyllableNasalApocope: *w*o*l*l*o
 WeakTailReduction: *w*o*l*l*o
 JLossAfterHeavy: *w*o*l*l*o
+IntervocalicJVocalization: *w*o*l*l*o
 WeightCleanup: *w*o*l*l*o
 HLoss: *w*o*l*l*o
 Contraction: *w*o*l*l*o
@@ -11092,6 +11300,7 @@ HighVowelApocope: *d*ō*n
 HeavySyllableNasalApocope: *d*ō*n
 WeakTailReduction: *d*ō*n
 JLossAfterHeavy: *d*ō*n
+IntervocalicJVocalization: *d*ō*n
 WeightCleanup: *d*ō*n
 HLoss: *d*ō*n
 Contraction: *d*ō*n
@@ -11145,6 +11354,7 @@ HighVowelApocope: *f*ī*θ*ă*n
 HeavySyllableNasalApocope: *f*ī*θ*ă*n
 WeakTailReduction: *f*ī*θ*a*n
 JLossAfterHeavy: *f*ī*θ*a*n
+IntervocalicJVocalization: *f*ī*θ*a*n
 WeightCleanup: *f*ī*θ*a*n
 HLoss: *f*ī*θ*a*n
 Contraction: *f*ī*θ*a*n
@@ -11201,6 +11411,7 @@ HighVowelApocope: *s*p*o*r*u
 HeavySyllableNasalApocope: *s*p*o*r*u
 WeakTailReduction: *s*p*o*r*o
 JLossAfterHeavy: *s*p*o*r*o
+IntervocalicJVocalization: *s*p*o*r*o
 WeightCleanup: *s*p*o*r*o
 HLoss: *s*p*o*r*o
 Contraction: *s*p*o*r*o
@@ -11257,6 +11468,7 @@ HighVowelApocope: *b*īe*ʤ*j*ă*n
 HeavySyllableNasalApocope: *b*īe*ʤ*j*ă*n
 WeakTailReduction: *b*īe*ʤ*j*ă*n
 JLossAfterHeavy: *b*īe*ʤ*j*ă*n
+IntervocalicJVocalization: *b*īe*ʤ*j*ă*n
 WeightCleanup: *b*īe*ʤ*j*ă*n
 HLoss: *b*īe*ʤ*j*ă*n
 Contraction: *b*īe*ʤ*j*ă*n
@@ -11310,6 +11522,7 @@ HighVowelApocope: *b*ēo*g*ă*n
 HeavySyllableNasalApocope: *b*ēo*g*ă*n
 WeakTailReduction: *b*ēo*g*a*n
 JLossAfterHeavy: *b*ēo*g*a*n
+IntervocalicJVocalization: *b*ēo*g*a*n
 WeightCleanup: *b*ēo*g*a*n
 HLoss: *b*ēo*g*a*n
 Contraction: *b*ēo*g*a*n
@@ -11363,6 +11576,7 @@ HighVowelApocope: *b*o*g*ō*n
 HeavySyllableNasalApocope: *b*o*g*ō*n
 WeakTailReduction: *b*o*g*ō*n
 JLossAfterHeavy: *b*o*g*ō*n
+IntervocalicJVocalization: *b*o*g*ō*n
 WeightCleanup: *b*o*g*ō*n
 HLoss: *b*o*g*ō*n
 Contraction: *b*o*g*ō*n
@@ -11416,6 +11630,7 @@ HighVowelApocope: *k*ō*w
 HeavySyllableNasalApocope: *k*ō*w
 WeakTailReduction: *k*ō*w
 JLossAfterHeavy: *k*ō*w
+IntervocalicJVocalization: *k*ō*w
 WeightCleanup: *k*ō*w
 HLoss: *k*ō*w
 Contraction: *k*ō*w
@@ -11469,6 +11684,7 @@ HighVowelApocope: *d*ie*l*j
 HeavySyllableNasalApocope: *d*ie*l*j
 WeakTailReduction: *d*ie*l*j
 JLossAfterHeavy: *d*ie*l
+IntervocalicJVocalization: *d*ie*l
 WeightCleanup: *d*ie*l
 HLoss: *d*ie*l
 Contraction: *d*ie*l
@@ -11522,6 +11738,7 @@ HighVowelApocope: *d*o*r*ą
 HeavySyllableNasalApocope: *d*o*r
 WeakTailReduction: *d*o*r
 JLossAfterHeavy: *d*o*r
+IntervocalicJVocalization: *d*o*r
 WeightCleanup: *d*o*r
 HLoss: *d*o*r
 Contraction: *d*o*r
@@ -11575,6 +11792,7 @@ HighVowelApocope: *f*ȳ*r
 HeavySyllableNasalApocope: *f*ȳ*r
 WeakTailReduction: *f*ȳ*r
 JLossAfterHeavy: *f*ȳ*r
+IntervocalicJVocalization: *f*ȳ*r
 WeightCleanup: *f*ȳ*r
 HLoss: *f*ȳ*r
 Contraction: *f*ȳ*r
@@ -11628,6 +11846,7 @@ HighVowelApocope: *f*l*a*s*k
 HeavySyllableNasalApocope: *f*l*a*s*k
 WeakTailReduction: *f*l*a*s*k
 JLossAfterHeavy: *f*l*a*s*k
+IntervocalicJVocalization: *f*l*a*s*k
 WeightCleanup: *f*l*a*s*k
 HLoss: *f*l*a*s*k
 Contraction: *f*l*a*s*k
@@ -11681,6 +11900,7 @@ HighVowelApocope: *f*o*l*ō*n
 HeavySyllableNasalApocope: *f*o*l*ō*n
 WeakTailReduction: *f*o*l*ō*n
 JLossAfterHeavy: *f*o*l*ō*n
+IntervocalicJVocalization: *f*o*l*ō*n
 WeightCleanup: *f*o*l*ō*n
 HLoss: *f*o*l*ō*n
 Contraction: *f*o*l*ō*n
@@ -11734,6 +11954,7 @@ HighVowelApocope: *f*y*r*x*t*ī*n
 HeavySyllableNasalApocope: *f*y*r*x*t*ī*n
 WeakTailReduction: *f*y*r*x*t*ī*n
 JLossAfterHeavy: *f*y*r*x*t*ī*n
+IntervocalicJVocalization: *f*y*r*x*t*ī*n
 WeightCleanup: *f*y*r*x*t*ī*n
 HLoss: *f*y*r*x*t*ī*n
 Contraction: *f*y*r*x*t*ī*n
@@ -11787,6 +12008,7 @@ HighVowelApocope: *ʤ*ea*l*l*ą
 HeavySyllableNasalApocope: *ʤ*ea*l*l
 WeakTailReduction: *ʤ*ea*l*l
 JLossAfterHeavy: *ʤ*ea*l*l
+IntervocalicJVocalization: *ʤ*ea*l*l
 WeightCleanup: *ʤ*ea*l*l
 HLoss: *ʤ*ea*l*l
 Contraction: *ʤ*ea*l*l
@@ -11805,7 +12027,7 @@ Surface: ġeall
 --- handle ---
 PROTO: *xandlōjăną
 EXPECTED: handle
-OUTPUTS: handleġan
+OUTPUTS: handleian
 
 ProtoInput: *x*a*n*d*l*ō*j*ă*n*ą
 InitialKn: *x*a*n*d*l*ō*j*ă*n*ą
@@ -11840,20 +12062,21 @@ HighVowelApocope: *x*a*n*d*l*ē*j*ă*n
 HeavySyllableNasalApocope: *x*a*n*d*l*ē*j*ă*n
 WeakTailReduction: *x*a*n*d*l*ē*j*a*n
 JLossAfterHeavy: *x*a*n*d*l*ē*j*a*n
-WeightCleanup: *x*a*n*d*l*ē*j*a*n
-HLoss: *x*a*n*d*l*ē*j*a*n
-Contraction: *x*a*n*d*l*ē*j*a*n
+IntervocalicJVocalization: *x*a*n*d*l*ē*i*a*n
+WeightCleanup: *x*a*n*d*l*ē*i*a*n
+HLoss: *x*a*n*d*l*ē*i*a*n
+Contraction: *x*a*n*d*l*ē*i*a*n
 ProtoToOEWeakTail: *x*a*n*d*l*ē*j*ă*n
 ProtoToOEWeightMarkers: *x*a*n*d*l*ē*j*ă*n
 ProtoToOEApocope: *x*a*n*d*l*ē*j*ă*n
-ProtoToOEWeightCleanup: *x*a*n*d*l*e*j*a*n
-ProtoToOE: *x*a*n*d*l*e*j*a*n
-WGlide: *x*a*n*d*l*e*j*a*n
-GhMarker: *x*a*n*d*l*e*j*a*n
-GlideDeletion: *x*a*n*d*l*e*j*a*n
-Epenthesis: *x*a*n*d*l*e*j*a*n
-Orthography: handleġan
-Surface: handleġan
+ProtoToOEWeightCleanup: *x*a*n*d*l*e*i*a*n
+ProtoToOE: *x*a*n*d*l*e*i*a*n
+WGlide: *x*a*n*d*l*e*i*a*n
+GhMarker: *x*a*n*d*l*e*i*a*n
+GlideDeletion: *x*a*n*d*l*e*i*a*n
+Epenthesis: *x*a*n*d*l*e*i*a*n
+Orthography: handleian
+Surface: handleian
 
 --- haw ---
 PROTO: *xagōn
@@ -11893,6 +12116,7 @@ HighVowelApocope: *ç*a*g*ō*n
 HeavySyllableNasalApocope: *ç*a*g*ō*n
 WeakTailReduction: *ç*a*g*ō*n
 JLossAfterHeavy: *ç*a*g*ō*n
+IntervocalicJVocalization: *ç*a*g*ō*n
 WeightCleanup: *ç*a*g*ō*n
 HLoss: *ç*a*g*ō*n
 Contraction: *ç*a*g*ō*n
@@ -11946,6 +12170,7 @@ HighVowelApocope: *ç*eo*r*t*ō*n
 HeavySyllableNasalApocope: *ç*eo*r*t*ō*n
 WeakTailReduction: *ç*eo*r*t*ō*n
 JLossAfterHeavy: *ç*eo*r*t*ō*n
+IntervocalicJVocalization: *ç*eo*r*t*ō*n
 WeightCleanup: *ç*eo*r*t*ō*n
 HLoss: *ç*eo*r*t*ō*n
 Contraction: *ç*eo*r*t*ō*n
@@ -11999,6 +12224,7 @@ HighVowelApocope: *ç*eo*l*m
 HeavySyllableNasalApocope: *ç*eo*l*m
 WeakTailReduction: *ç*eo*l*m
 JLossAfterHeavy: *ç*eo*l*m
+IntervocalicJVocalization: *ç*eo*l*m
 WeightCleanup: *ç*eo*l*m
 HLoss: *ç*eo*l*m
 Contraction: *ç*eo*l*m
@@ -12052,6 +12278,7 @@ HighVowelApocope: *Kn*o*p*p
 HeavySyllableNasalApocope: *Kn*o*p*p
 WeakTailReduction: *Kn*o*p*p
 JLossAfterHeavy: *Kn*o*p*p
+IntervocalicJVocalization: *Kn*o*p*p
 WeightCleanup: *Kn*o*p*p
 HLoss: *Kn*o*p*p
 Contraction: *Kn*o*p*p
@@ -12105,6 +12332,7 @@ HighVowelApocope: *l*æ*β*b
 HeavySyllableNasalApocope: *l*æ*β*b
 WeakTailReduction: *l*æ*β*b
 JLossAfterHeavy: *l*æ*β*b
+IntervocalicJVocalization: *l*æ*β*b
 WeightCleanup: *l*æ*β*b
 HLoss: *l*æ*β*b
 Contraction: *l*æ*β*b
@@ -12158,6 +12386,7 @@ HighVowelApocope: *l*ī*n*ă*n
 HeavySyllableNasalApocope: *l*ī*n*ă*n
 WeakTailReduction: *l*ī*n*a*n
 JLossAfterHeavy: *l*ī*n*a*n
+IntervocalicJVocalization: *l*ī*n*a*n
 WeightCleanup: *l*ī*n*a*n
 HLoss: *l*ī*n*a*n
 Contraction: *l*ī*n*a*n
@@ -12211,6 +12440,7 @@ HighVowelApocope: *l*ī*s*t*ō*n
 HeavySyllableNasalApocope: *l*ī*s*t*ō*n
 WeakTailReduction: *l*ī*s*t*ō*n
 JLossAfterHeavy: *l*ī*s*t*ō*n
+IntervocalicJVocalization: *l*ī*s*t*ō*n
 WeightCleanup: *l*ī*s*t*ō*n
 HLoss: *l*ī*s*t*ō*n
 Contraction: *l*ī*s*t*ō*n
@@ -12264,6 +12494,7 @@ HighVowelApocope: *n*a*m*ō*n
 HeavySyllableNasalApocope: *n*a*m*ō*n
 WeakTailReduction: *n*a*m*ō*n
 JLossAfterHeavy: *n*a*m*ō*n
+IntervocalicJVocalization: *n*a*m*ō*n
 WeightCleanup: *n*a*m*ō*n
 HLoss: *n*a*m*ō*n
 Contraction: *n*a*m*ō*n
@@ -12317,6 +12548,7 @@ HighVowelApocope: *n*æ*β*l*ō*n
 HeavySyllableNasalApocope: *n*æ*β*l*ō*n
 WeakTailReduction: *n*æ*β*l*ō*n
 JLossAfterHeavy: *n*æ*β*l*ō*n
+IntervocalicJVocalization: *n*æ*β*l*ō*n
 WeightCleanup: *n*æ*β*l*ō*n
 HLoss: *n*æ*β*l*ō*n
 Contraction: *n*æ*β*l*ō*n
@@ -12370,6 +12602,7 @@ HighVowelApocope: *n*e*t*u*l*ō*n
 HeavySyllableNasalApocope: *n*e*t*u*l*ō*n
 WeakTailReduction: *n*e*t*o*l*ō*n
 JLossAfterHeavy: *n*e*t*o*l*ō*n
+IntervocalicJVocalization: *n*e*t*o*l*ō*n
 WeightCleanup: *n*e*t*o*l*ō*n
 HLoss: *n*e*t*o*l*ō*n
 Contraction: *n*e*t*o*l*ō*n
@@ -12423,6 +12656,7 @@ HighVowelApocope: *m*æ*r*ō*n
 HeavySyllableNasalApocope: *m*æ*r*ō*n
 WeakTailReduction: *m*æ*r*ō*n
 JLossAfterHeavy: *m*æ*r*ō*n
+IntervocalicJVocalization: *m*æ*r*ō*n
 WeightCleanup: *m*æ*r*ō*n
 HLoss: *m*æ*r*ō*n
 Contraction: *m*æ*r*ō*n
@@ -12476,6 +12710,7 @@ HighVowelApocope: *ʃ*ēa*p*ą
 HeavySyllableNasalApocope: *ʃ*ēa*p
 WeakTailReduction: *ʃ*ēa*p
 JLossAfterHeavy: *ʃ*ēa*p
+IntervocalicJVocalization: *ʃ*ēa*p
 WeightCleanup: *ʃ*ēa*p
 HLoss: *ʃ*ēa*p
 Contraction: *ʃ*ēa*p
@@ -12529,6 +12764,7 @@ HighVowelApocope: *ʃ*o*l*d*r
 HeavySyllableNasalApocope: *ʃ*o*l*d*r
 WeakTailReduction: *ʃ*o*l*d*r
 JLossAfterHeavy: *ʃ*o*l*d*r
+IntervocalicJVocalization: *ʃ*o*l*d*r
 WeightCleanup: *ʃ*o*l*d*r
 HLoss: *ʃ*o*l*d*r
 Contraction: *ʃ*o*l*d*r
@@ -12582,6 +12818,7 @@ HighVowelApocope: *s*ī*d*ō*n
 HeavySyllableNasalApocope: *s*ī*d*ō*n
 WeakTailReduction: *s*ī*d*ō*n
 JLossAfterHeavy: *s*ī*d*ō*n
+IntervocalicJVocalization: *s*ī*d*ō*n
 WeightCleanup: *s*ī*d*ō*n
 HLoss: *s*ī*d*ō*n
 Contraction: *s*ī*d*ō*n
@@ -12635,6 +12872,7 @@ HighVowelApocope: *s*i*β
 HeavySyllableNasalApocope: *s*i*β
 WeakTailReduction: *s*i*β
 JLossAfterHeavy: *s*i*β
+IntervocalicJVocalization: *s*i*β
 WeightCleanup: *s*i*β
 HLoss: *s*i*β
 Contraction: *s*i*β
@@ -12688,6 +12926,7 @@ HighVowelApocope: *s*p*o*r*ă*n
 HeavySyllableNasalApocope: *s*p*o*r*ă*n
 WeakTailReduction: *s*p*o*r*a*n
 JLossAfterHeavy: *s*p*o*r*a*n
+IntervocalicJVocalization: *s*p*o*r*a*n
 WeightCleanup: *s*p*o*r*a*n
 HLoss: *s*p*o*r*a*n
 Contraction: *s*p*o*r*a*n
@@ -12741,6 +12980,7 @@ HighVowelApocope: *s*t*ie*l*l*j*ă*n
 HeavySyllableNasalApocope: *s*t*ie*l*l*j*ă*n
 WeakTailReduction: *s*t*ie*l*l*j*a*n
 JLossAfterHeavy: *s*t*ie*l*l*a*n
+IntervocalicJVocalization: *s*t*ie*l*l*a*n
 WeightCleanup: *s*t*ie*l*l*a*n
 HLoss: *s*t*ie*l*l*a*n
 Contraction: *s*t*ie*l*l*a*n
@@ -12794,6 +13034,7 @@ HighVowelApocope: *s*u*n*n*ō*n
 HeavySyllableNasalApocope: *s*u*n*n*ō*n
 WeakTailReduction: *s*u*n*n*ō*n
 JLossAfterHeavy: *s*u*n*n*ō*n
+IntervocalicJVocalization: *s*u*n*n*ō*n
 WeightCleanup: *s*u*n*n*ō*n
 HLoss: *s*u*n*n*ō*n
 Contraction: *s*u*n*n*ō*n
@@ -12847,6 +13088,7 @@ HighVowelApocope: *t*i*ʧ*k*ō*n
 HeavySyllableNasalApocope: *t*i*ʧ*k*ō*n
 WeakTailReduction: *t*i*ʧ*k*ō*n
 JLossAfterHeavy: *t*i*ʧ*k*ō*n
+IntervocalicJVocalization: *t*i*ʧ*k*ō*n
 WeightCleanup: *t*i*ʧ*k*ō*n
 HLoss: *t*i*ʧ*k*ō*n
 Contraction: *t*i*ʧ*k*ō*n
@@ -12900,6 +13142,7 @@ HighVowelApocope: *t*ā*x*w
 HeavySyllableNasalApocope: *t*ā*x*w
 WeakTailReduction: *t*ā*x*w
 JLossAfterHeavy: *t*ā*x*w
+IntervocalicJVocalization: *t*ā*x*w
 WeightCleanup: *t*ā*x*w
 HLoss: *t*ā*x*w
 Contraction: *t*ā*x*w
@@ -12953,6 +13196,7 @@ HighVowelApocope: *t*a*n*g
 HeavySyllableNasalApocope: *t*a*n*g
 WeakTailReduction: *t*a*n*g
 JLossAfterHeavy: *t*a*n*g
+IntervocalicJVocalization: *t*a*n*g
 WeightCleanup: *t*a*n*g
 HLoss: *t*a*n*g
 Contraction: *t*a*n*g
@@ -13006,6 +13250,7 @@ HighVowelApocope: *t*u*n*g*ō*n
 HeavySyllableNasalApocope: *t*u*n*g*ō*n
 WeakTailReduction: *t*u*n*g*ō*n
 JLossAfterHeavy: *t*u*n*g*ō*n
+IntervocalicJVocalization: *t*u*n*g*ō*n
 WeightCleanup: *t*u*n*g*ō*n
 HLoss: *t*u*n*g*ō*n
 Contraction: *t*u*n*g*ō*n
@@ -13059,6 +13304,7 @@ HighVowelApocope: *w*e*ʤ
 HeavySyllableNasalApocope: *w*e*ʤ
 WeakTailReduction: *w*e*ʤ
 JLossAfterHeavy: *w*e*ʤ
+IntervocalicJVocalization: *w*e*ʤ
 WeightCleanup: *w*e*ʤ
 HLoss: *w*e*ʤ
 Contraction: *w*e*ʤ
@@ -13112,6 +13358,7 @@ HighVowelApocope: *x*ō*r*ō*n
 HeavySyllableNasalApocope: *x*ō*r*ō*n
 WeakTailReduction: *x*ō*r*ō*n
 JLossAfterHeavy: *x*ō*r*ō*n
+IntervocalicJVocalization: *x*ō*r*ō*n
 WeightCleanup: *x*ō*r*ō*n
 HLoss: *x*ō*r*ō*n
 Contraction: *x*ō*r*ō*n
@@ -13165,6 +13412,7 @@ HighVowelApocope: *w*i*d*o*w*ō*n
 HeavySyllableNasalApocope: *w*i*d*o*w*ō*n
 WeakTailReduction: *w*i*d*o*w*ō*n
 JLossAfterHeavy: *w*i*d*o*w*ō*n
+IntervocalicJVocalization: *w*i*d*o*w*ō*n
 WeightCleanup: *w*i*d*o*w*ō*n
 HLoss: *w*i*d*o*w*ō*n
 Contraction: *w*i*d*o*w*ō*n
@@ -13181,7 +13429,7 @@ Orthography: widowon
 Surface: widowon
 
 
-=== BUCKET: breaking_extra_other (23) ===
+=== BUCKET: breaking_extra_other (24) ===
 
 --- bier ---
 PROTO: *barwōn
@@ -13221,6 +13469,7 @@ HighVowelApocope: *b*ea*r*w*ō*n
 HeavySyllableNasalApocope: *b*ea*r*w*ō*n
 WeakTailReduction: *b*ea*r*w*ō*n
 JLossAfterHeavy: *b*ea*r*w*ō*n
+IntervocalicJVocalization: *b*ea*r*w*ō*n
 WeightCleanup: *b*ea*r*w*ō*n
 HLoss: *b*ea*r*w*ō*n
 Contraction: *b*ea*r*w*ō*n
@@ -13274,6 +13523,7 @@ HighVowelApocope: *f*eo*l*θ
 HeavySyllableNasalApocope: *f*eo*l*θ
 WeakTailReduction: *f*eo*l*θ
 JLossAfterHeavy: *f*eo*l*θ
+IntervocalicJVocalization: *f*eo*l*θ
 WeightCleanup: *f*eo*l*θ
 HLoss: *f*eo*l*θ
 Contraction: *f*eo*l*θ
@@ -13327,6 +13577,7 @@ HighVowelApocope: *l*ēo*s*ă*n
 HeavySyllableNasalApocope: *l*ēo*s*ă*n
 WeakTailReduction: *l*ēo*s*a*n
 JLossAfterHeavy: *l*ēo*s*a*n
+IntervocalicJVocalization: *l*ēo*s*a*n
 WeightCleanup: *l*ēo*s*a*n
 HLoss: *l*ēo*s*a*n
 Contraction: *l*ēo*s*a*n
@@ -13380,6 +13631,7 @@ HighVowelApocope: *ʤ*ie*f*t
 HeavySyllableNasalApocope: *ʤ*ie*f*t
 WeakTailReduction: *ʤ*ie*f*t
 JLossAfterHeavy: *ʤ*ie*f*t
+IntervocalicJVocalization: *ʤ*ie*f*t
 WeightCleanup: *ʤ*ie*f*t
 HLoss: *ʤ*ie*f*t
 Contraction: *ʤ*ie*f*t
@@ -13433,6 +13685,7 @@ HighVowelApocope: *ç*ea*r*w
 HeavySyllableNasalApocope: *ç*ea*r*w
 WeakTailReduction: *ç*ea*r*w
 JLossAfterHeavy: *ç*ea*r*w
+IntervocalicJVocalization: *ç*ea*r*w
 WeightCleanup: *ç*ea*r*w
 HLoss: *ç*ea*r*w
 Contraction: *ç*ea*r*w
@@ -13486,6 +13739,7 @@ HighVowelApocope: *ç*ie*r*β*i*s*t
 HeavySyllableNasalApocope: *ç*ie*r*β*i*s*t
 WeakTailReduction: *ç*ie*r*β*e*s*t
 JLossAfterHeavy: *ç*ie*r*β*e*s*t
+IntervocalicJVocalization: *ç*ie*r*β*e*s*t
 WeightCleanup: *ç*ie*r*β*e*s*t
 HLoss: *ç*ie*r*β*e*s*t
 Contraction: *ç*ie*r*β*e*s*t
@@ -13539,6 +13793,7 @@ HighVowelApocope: *ç*eo*l*p*ă*n
 HeavySyllableNasalApocope: *ç*eo*l*p*ă*n
 WeakTailReduction: *ç*eo*l*p*a*n
 JLossAfterHeavy: *ç*eo*l*p*a*n
+IntervocalicJVocalization: *ç*eo*l*p*a*n
 WeightCleanup: *ç*eo*l*p*a*n
 HLoss: *ç*eo*l*p*a*n
 Contraction: *ç*eo*l*p*a*n
@@ -13592,6 +13847,7 @@ HighVowelApocope: *ç*eo*l*p
 HeavySyllableNasalApocope: *ç*eo*l*p
 WeakTailReduction: *ç*eo*l*p
 JLossAfterHeavy: *ç*eo*l*p
+IntervocalicJVocalization: *ç*eo*l*p
 WeightCleanup: *ç*eo*l*p
 HLoss: *ç*eo*l*p
 Contraction: *ç*eo*l*p
@@ -13645,6 +13901,7 @@ HighVowelApocope: *ç*ea*l*d*ă*n
 HeavySyllableNasalApocope: *ç*ea*l*d*ă*n
 WeakTailReduction: *ç*ea*l*d*a*n
 JLossAfterHeavy: *ç*ea*l*d*a*n
+IntervocalicJVocalization: *ç*ea*l*d*a*n
 WeightCleanup: *ç*ea*l*d*a*n
 HLoss: *ç*ea*l*d*a*n
 Contraction: *ç*ea*l*d*a*n
@@ -13698,6 +13955,7 @@ HighVowelApocope: *Kn*ie*x*t
 HeavySyllableNasalApocope: *Kn*ie*x*t
 WeakTailReduction: *Kn*ie*x*t
 JLossAfterHeavy: *Kn*ie*x*t
+IntervocalicJVocalization: *Kn*ie*x*t
 WeightCleanup: *Kn*ie*x*t
 HLoss: *Kn*ie*x*t
 Contraction: *Kn*ie*x*t
@@ -13751,6 +14009,7 @@ HighVowelApocope: *m*ie*x*t
 HeavySyllableNasalApocope: *m*ie*x*t
 WeakTailReduction: *m*ie*x*t
 JLossAfterHeavy: *m*ie*x*t
+IntervocalicJVocalization: *m*ie*x*t
 WeightCleanup: *m*ie*x*t
 HLoss: *m*ie*x*t
 Contraction: *m*ie*x*t
@@ -13804,6 +14063,7 @@ HighVowelApocope: *n*ea*x*t
 HeavySyllableNasalApocope: *n*ea*x*t
 WeakTailReduction: *n*ea*x*t
 JLossAfterHeavy: *n*ea*x*t
+IntervocalicJVocalization: *n*ea*x*t
 WeightCleanup: *n*ea*x*t
 HLoss: *n*ea*x*t
 Contraction: *n*ea*x*t
@@ -13857,6 +14117,7 @@ HighVowelApocope: *n*ēo*w*u*n
 HeavySyllableNasalApocope: *n*ēo*w*u*n
 WeakTailReduction: *n*ēo*w*o*n
 JLossAfterHeavy: *n*ēo*w*o*n
+IntervocalicJVocalization: *n*ēo*w*o*n
 WeightCleanup: *n*ēo*w*o*n
 HLoss: *n*ēo*w*o*n
 Contraction: *n*ēo*w*o*n
@@ -13910,6 +14171,7 @@ HighVowelApocope: *r*īe*ʧ
 HeavySyllableNasalApocope: *r*īe*ʧ
 WeakTailReduction: *r*īe*ʧ
 JLossAfterHeavy: *r*īe*ʧ
+IntervocalicJVocalization: *r*īe*ʧ
 WeightCleanup: *r*īe*ʧ
 HLoss: *r*īe*ʧ
 Contraction: *r*īe*ʧ
@@ -13963,6 +14225,7 @@ HighVowelApocope: *ʃ*ēo*β*ă*n
 HeavySyllableNasalApocope: *ʃ*ēo*β*ă*n
 WeakTailReduction: *ʃ*ēo*β*a*n
 JLossAfterHeavy: *ʃ*ēo*β*a*n
+IntervocalicJVocalization: *ʃ*ēo*β*a*n
 WeightCleanup: *ʃ*ēo*β*a*n
 HLoss: *ʃ*ēo*β*a*n
 Contraction: *ʃ*ēo*β*a*n
@@ -14016,6 +14279,7 @@ HighVowelApocope: *s*p*ea*r*r*ō*n
 HeavySyllableNasalApocope: *s*p*ea*r*r*ō*n
 WeakTailReduction: *s*p*ea*r*r*ō*n
 JLossAfterHeavy: *s*p*ea*r*r*ō*n
+IntervocalicJVocalization: *s*p*ea*r*r*ō*n
 WeightCleanup: *s*p*ea*r*r*ō*n
 HLoss: *s*p*ea*r*r*ō*n
 Contraction: *s*p*ea*r*r*ō*n
@@ -14069,6 +14333,7 @@ HighVowelApocope: *s*t*eo*l*ă*n
 HeavySyllableNasalApocope: *s*t*eo*l*ă*n
 WeakTailReduction: *s*t*eo*l*a*n
 JLossAfterHeavy: *s*t*eo*l*a*n
+IntervocalicJVocalization: *s*t*eo*l*a*n
 WeightCleanup: *s*t*eo*l*a*n
 HLoss: *s*t*eo*l*a*n
 Contraction: *s*t*eo*l*a*n
@@ -14122,6 +14387,7 @@ HighVowelApocope: *s*w*ea*l*g*w*ō*n
 HeavySyllableNasalApocope: *s*w*ea*l*g*w*ō*n
 WeakTailReduction: *s*w*ea*l*g*w*ō*n
 JLossAfterHeavy: *s*w*ea*l*g*w*ō*n
+IntervocalicJVocalization: *s*w*ea*l*g*w*ō*n
 WeightCleanup: *s*w*ea*l*g*w*ō*n
 HLoss: *s*w*ea*l*g*w*ō*n
 Contraction: *s*w*ea*l*g*w*ō*n
@@ -14175,6 +14441,7 @@ HighVowelApocope: *s*w*eo*l*l*ă*n
 HeavySyllableNasalApocope: *s*w*eo*l*l*ă*n
 WeakTailReduction: *s*w*eo*l*l*a*n
 JLossAfterHeavy: *s*w*eo*l*l*a*n
+IntervocalicJVocalization: *s*w*eo*l*l*a*n
 WeightCleanup: *s*w*eo*l*l*a*n
 HLoss: *s*w*eo*l*l*a*n
 Contraction: *s*w*eo*l*l*a*n
@@ -14189,6 +14456,60 @@ GlideDeletion: *s*ʋ*eo*l*l*a*n
 Epenthesis: *s*w*eo*l*l*a*n
 Orthography: sweollan
 Surface: sweollan
+
+--- three ---
+PROTO: *θrejez
+EXPECTED: þrī
+OUTPUTS: þrīe
+
+ProtoInput: *θ*r*e*j*e*z
+InitialKn: *θ*r*e*j*e*z
+Palatalisation: *θ*r*e*j*e*z
+ConsonantRules: *θ*r*e*j*e
+WestGermanic: *θ*r*e*j*e
+NWGmcULowering: *θ*r*e*j*e
+NWGmcFinalLongORaising: *θ*r*e*j*e
+NWGmcLongELowering: *θ*r*e*j*e
+NWGmcLongENasalRounding: *θ*r*e*j*e
+AuFronting: *θ*r*e*j*e
+WWSimplification: *θ*r*e*j*e
+DiphthongLeveling: *θ*r*e*j*e
+EwLongDiphthong: *θ*r*e*j*e
+AngloFrisianBrightening: *θ*r*e*j*e
+BreakingLengthening: *θ*r*e*j*e
+VelarFricPal: *θ*r*e*j*e
+ARestoration: *θ*r*e*j*e
+FinalWeakSchwaApocope: *θ*r*e*j*e
+JGemination: *θ*r*e*j*e
+SkPalatalization: *θ*r*e*j*e
+VelarPalatalization: *θ*r*e*j*e
+WsPalatalDiphthongization: *θ*r*e*j*e
+IUmlaut: *θ*r*i*j*e
+JClusterCoalescence: *θ*r*i*j*e
+BackMutation: *θ*r*i*j*e
+NasalSpirantLengthening: *θ*r*i*j*e
+NasalSpirantLoss: *θ*r*i*j*e
+WeakTailNasalLoss: *θ*r*i*j*e
+WeightMarkers: *θ*r*i*j*e
+HighVowelApocope: *θ*r*i*j*e
+HeavySyllableNasalApocope: *θ*r*i*j*e
+WeakTailReduction: *θ*r*i*j*e
+JLossAfterHeavy: *θ*r*i*j*e
+IntervocalicJVocalization: *θ*r*i*i*e
+WeightCleanup: *θ*r*i*i*e
+HLoss: *θ*r*i*i*e
+Contraction: *θ*r*ī*e
+ProtoToOEWeakTail: *θ*r*i*j*e
+ProtoToOEWeightMarkers: *θ*r*i*j*e
+ProtoToOEApocope: *θ*r*i*j*e
+ProtoToOEWeightCleanup: *θ*r*ī*e
+ProtoToOE: *θ*r*ī*e
+WGlide: *θ*r*ī*e
+GhMarker: *θ*r*ī*e
+GlideDeletion: *θ*r*ī*e
+Epenthesis: *θ*r*ī*e
+Orthography: þrīe
+Surface: þrīe
 
 --- wight ---
 PROTO: *wextiz
@@ -14228,6 +14549,7 @@ HighVowelApocope: *w*ie*x*t
 HeavySyllableNasalApocope: *w*ie*x*t
 WeakTailReduction: *w*ie*x*t
 JLossAfterHeavy: *w*ie*x*t
+IntervocalicJVocalization: *w*ie*x*t
 WeightCleanup: *w*ie*x*t
 HLoss: *w*ie*x*t
 Contraction: *w*ie*x*t
@@ -14281,6 +14603,7 @@ HighVowelApocope: *w*ie*l*j*ă*n
 HeavySyllableNasalApocope: *w*ie*l*j*ă*n
 WeakTailReduction: *w*ie*l*j*a*n
 JLossAfterHeavy: *w*ie*l*a*n
+IntervocalicJVocalization: *w*ie*l*a*n
 WeightCleanup: *w*ie*l*a*n
 HLoss: *w*ie*l*a*n
 Contraction: *w*ie*l*a*n
@@ -14334,6 +14657,7 @@ HighVowelApocope: *w*ie*l*j*ō*n
 HeavySyllableNasalApocope: *w*ie*l*j*ō*n
 WeakTailReduction: *w*ie*l*j*ō*n
 JLossAfterHeavy: *w*ie*l*ō*n
+IntervocalicJVocalization: *w*ie*l*ō*n
 WeightCleanup: *w*ie*l*ō*n
 HLoss: *w*ie*l*ō*n
 Contraction: *w*ie*l*ō*n
@@ -14387,6 +14711,7 @@ HighVowelApocope: *w*ea*l*θ
 HeavySyllableNasalApocope: *w*ea*l*θ
 WeakTailReduction: *w*ea*l*θ
 JLossAfterHeavy: *w*ea*l*θ
+IntervocalicJVocalization: *w*ea*l*θ
 WeightCleanup: *w*ea*l*θ
 HLoss: *w*ea*l*θ
 Contraction: *w*ea*l*θ
@@ -14443,6 +14768,7 @@ HighVowelApocope: *f*eo*l*l*ą
 HeavySyllableNasalApocope: *f*eo*l*l
 WeakTailReduction: *f*eo*l*l
 JLossAfterHeavy: *f*eo*l*l
+IntervocalicJVocalization: *f*eo*l*l
 WeightCleanup: *f*eo*l*l
 HLoss: *f*eo*l*l
 Contraction: *f*eo*l*l
@@ -14496,6 +14822,7 @@ HighVowelApocope: *g*a*n*g
 HeavySyllableNasalApocope: *g*a*n*g
 WeakTailReduction: *g*a*n*g
 JLossAfterHeavy: *g*a*n*g
+IntervocalicJVocalization: *g*a*n*g
 WeightCleanup: *g*a*n*g
 HLoss: *g*a*n*g
 Contraction: *g*a*n*g
@@ -14549,6 +14876,7 @@ HighVowelApocope: *ç*i*n*d*j
 HeavySyllableNasalApocope: *ç*i*n*d*j
 WeakTailReduction: *ç*i*n*d*j
 JLossAfterHeavy: *ç*i*n*d
+IntervocalicJVocalization: *ç*i*n*d
 WeightCleanup: *ç*i*n*d
 HLoss: *ç*i*n*d
 Contraction: *ç*i*n*d
@@ -14602,6 +14930,7 @@ HighVowelApocope: *l*i*n*d
 HeavySyllableNasalApocope: *l*i*n*d
 WeakTailReduction: *l*i*n*d
 JLossAfterHeavy: *l*i*n*d
+IntervocalicJVocalization: *l*i*n*d
 WeightCleanup: *l*i*n*d
 HLoss: *l*i*n*d
 Contraction: *l*i*n*d
@@ -14655,6 +14984,7 @@ HighVowelApocope: *l*u*n*g*w*ą
 HeavySyllableNasalApocope: *l*u*n*g*w
 WeakTailReduction: *l*u*n*g*w
 JLossAfterHeavy: *l*u*n*g*w
+IntervocalicJVocalization: *l*u*n*g*w
 WeightCleanup: *l*u*n*g*w
 HLoss: *l*u*n*g*w
 Contraction: *l*u*n*g*w
@@ -14708,6 +15038,7 @@ HighVowelApocope: *m*ea*r*k
 HeavySyllableNasalApocope: *m*ea*r*k
 WeakTailReduction: *m*ea*r*k
 JLossAfterHeavy: *m*ea*r*k
+IntervocalicJVocalization: *m*ea*r*k
 WeightCleanup: *m*ea*r*k
 HLoss: *m*ea*r*k
 Contraction: *m*ea*r*k
@@ -14761,6 +15092,7 @@ HighVowelApocope: *e*n*d
 HeavySyllableNasalApocope: *e*n*d
 WeakTailReduction: *e*n*d
 JLossAfterHeavy: *e*n*d
+IntervocalicJVocalization: *e*n*d
 WeightCleanup: *e*n*d
 HLoss: *e*n*d
 Contraction: *e*n*d
@@ -14814,6 +15146,7 @@ HighVowelApocope: *θ*ū*s*y*n*d*ī
 HeavySyllableNasalApocope: *θ*ū*s*y*n*d*ī
 WeakTailReduction: *θ*ū*s*y*n*d*ī
 JLossAfterHeavy: *θ*ū*s*y*n*d*ī
+IntervocalicJVocalization: *θ*ū*s*y*n*d*ī
 WeightCleanup: *θ*ū*s*y*n*d*ī
 HLoss: *θ*ū*s*y*n*d*ī
 Contraction: *θ*ū*s*y*n*d*ī
@@ -14867,6 +15200,7 @@ HighVowelApocope: *t*ī*d
 HeavySyllableNasalApocope: *t*ī*d
 WeakTailReduction: *t*ī*d
 JLossAfterHeavy: *t*ī*d
+IntervocalicJVocalization: *t*ī*d
 WeightCleanup: *t*ī*d
 HLoss: *t*ī*d
 Contraction: *t*ī*d
@@ -14883,7 +15217,7 @@ Orthography: tīd
 Surface: tīd
 
 
-=== BUCKET: palatal_extra_other (16) ===
+=== BUCKET: palatal_extra_other (10) ===
 
 --- bake ---
 PROTO: *bakăną
@@ -14923,6 +15257,7 @@ HighVowelApocope: *b*æ*ʧ*ă*n
 HeavySyllableNasalApocope: *b*æ*ʧ*ă*n
 WeakTailReduction: *b*æ*ʧ*ă*n
 JLossAfterHeavy: *b*æ*ʧ*ă*n
+IntervocalicJVocalization: *b*æ*ʧ*ă*n
 WeightCleanup: *b*æ*ʧ*ă*n
 HLoss: *b*æ*ʧ*ă*n
 Contraction: *b*æ*ʧ*ă*n
@@ -14976,6 +15311,7 @@ HighVowelApocope: *b*i*ʤ*i*n*n*ă*n
 HeavySyllableNasalApocope: *b*i*ʤ*i*n*n*ă*n
 WeakTailReduction: *b*i*ʤ*i*n*n*a*n
 JLossAfterHeavy: *b*i*ʤ*i*n*n*a*n
+IntervocalicJVocalization: *b*i*ʤ*i*n*n*a*n
 WeightCleanup: *b*i*ʤ*i*n*n*a*n
 HLoss: *b*i*ʤ*i*n*n*a*n
 Contraction: *b*i*ʤ*i*n*n*a*n
@@ -14990,59 +15326,6 @@ GlideDeletion: *b*i*ʤ*i*n*n*a*n
 Epenthesis: *b*i*ʤ*i*n*n*a*n
 Orthography: biġinnan
 Surface: biġinnan
-
---- bore ---
-PROTO: *burōjăną
-EXPECTED: borian
-OUTPUTS: boreġan
-
-ProtoInput: *b*u*r*ō*j*ă*n*ą
-InitialKn: *b*u*r*ō*j*ă*n*ą
-Palatalisation: *b*u*r*ō*j*ă*n*ą
-ConsonantRules: *b*u*r*ō*j*ă*n*ą
-WestGermanic: *b*u*r*ō*j*ă*n*ą
-NWGmcULowering: *b*o*r*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *b*o*r*ō*j*ă*n*ą
-NWGmcLongELowering: *b*o*r*ō*j*ă*n*ą
-NWGmcLongENasalRounding: *b*o*r*ō*j*ă*n*ą
-AuFronting: *b*o*r*ō*j*ă*n*ą
-WWSimplification: *b*o*r*ō*j*ă*n*ą
-DiphthongLeveling: *b*o*r*ō*j*ă*n*ą
-EwLongDiphthong: *b*o*r*ō*j*ă*n*ą
-AngloFrisianBrightening: *b*o*r*ō*j*ă*n*ą
-BreakingLengthening: *b*o*r*ō*j*ă*n*ą
-VelarFricPal: *b*o*r*ō*j*ă*n*ą
-ARestoration: *b*o*r*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *b*o*r*ō*j*ă*n*ą
-JGemination: *b*o*r*ō*j*ă*n*ą
-SkPalatalization: *b*o*r*ō*j*ă*n*ą
-VelarPalatalization: *b*o*r*ō*j*ă*n*ą
-WsPalatalDiphthongization: *b*o*r*ō*j*ă*n*ą
-IUmlaut: *b*o*r*ē*j*ă*n*ą
-JClusterCoalescence: *b*o*r*ē*j*ă*n*ą
-BackMutation: *b*o*r*ē*j*ă*n*ą
-NasalSpirantLengthening: *b*o*r*ē*j*ă*n*ą
-NasalSpirantLoss: *b*o*r*ē*j*ă*n*ą
-WeakTailNasalLoss: *b*o*r*ē*j*ă*n
-WeightMarkers: *b*o*r*ē*j*ă*n
-HighVowelApocope: *b*o*r*ē*j*ă*n
-HeavySyllableNasalApocope: *b*o*r*ē*j*ă*n
-WeakTailReduction: *b*o*r*ē*j*a*n
-JLossAfterHeavy: *b*o*r*ē*j*a*n
-WeightCleanup: *b*o*r*ē*j*a*n
-HLoss: *b*o*r*ē*j*a*n
-Contraction: *b*o*r*ē*j*a*n
-ProtoToOEWeakTail: *b*o*r*ē*j*ă*n
-ProtoToOEWeightMarkers: *b*o*r*ē*j*ă*n
-ProtoToOEApocope: *b*o*r*ē*j*ă*n
-ProtoToOEWeightCleanup: *b*o*r*e*j*a*n
-ProtoToOE: *b*o*r*e*j*a*n
-WGlide: *b*o*r*e*j*a*n
-GhMarker: *b*o*r*e*j*a*n
-GlideDeletion: *b*o*r*e*j*a*n
-Epenthesis: *b*o*r*e*j*a*n
-Orthography: boreġan
-Surface: boreġan
 
 --- break ---
 PROTO: *brekăną
@@ -15082,6 +15365,7 @@ HighVowelApocope: *b*r*e*ʧ*ă*n
 HeavySyllableNasalApocope: *b*r*e*ʧ*ă*n
 WeakTailReduction: *b*r*e*ʧ*ă*n
 JLossAfterHeavy: *b*r*e*ʧ*ă*n
+IntervocalicJVocalization: *b*r*e*ʧ*ă*n
 WeightCleanup: *b*r*e*ʧ*ă*n
 HLoss: *b*r*e*ʧ*ă*n
 Contraction: *b*r*e*ʧ*ă*n
@@ -15135,6 +15419,7 @@ HighVowelApocope: *ʧ*ea*l*β
 HeavySyllableNasalApocope: *ʧ*ea*l*β
 WeakTailReduction: *ʧ*ea*l*β
 JLossAfterHeavy: *ʧ*ea*l*β
+IntervocalicJVocalization: *ʧ*ea*l*β
 WeightCleanup: *ʧ*ea*l*β
 HLoss: *ʧ*ea*l*β
 Contraction: *ʧ*ea*l*β
@@ -15188,6 +15473,7 @@ HighVowelApocope: *ʤ*ie*β*ă*n
 HeavySyllableNasalApocope: *ʤ*ie*β*ă*n
 WeakTailReduction: *ʤ*ie*β*a*n
 JLossAfterHeavy: *ʤ*ie*β*a*n
+IntervocalicJVocalization: *ʤ*ie*β*a*n
 WeightCleanup: *ʤ*ie*β*a*n
 HLoss: *ʤ*ie*β*a*n
 Contraction: *ʤ*ie*β*a*n
@@ -15241,6 +15527,7 @@ HighVowelApocope: *ʤ*ie*s*t
 HeavySyllableNasalApocope: *ʤ*ie*s*t
 WeakTailReduction: *ʤ*ie*s*t
 JLossAfterHeavy: *ʤ*ie*s*t
+IntervocalicJVocalization: *ʤ*ie*s*t
 WeightCleanup: *ʤ*ie*s*t
 HLoss: *ʤ*ie*s*t
 Contraction: *ʤ*ie*s*t
@@ -15255,59 +15542,6 @@ GlideDeletion: *ʤ*ie*s*t
 Epenthesis: *ʤ*ie*s*t
 Orthography: ġiest
 Surface: ġiest
-
---- lade ---
-PROTO: *laθōjăną
-EXPECTED: hladan
-OUTPUTS: laþeġan
-
-ProtoInput: *l*a*θ*ō*j*ă*n*ą
-InitialKn: *l*a*θ*ō*j*ă*n*ą
-Palatalisation: *l*a*θ*ō*j*ă*n*ą
-ConsonantRules: *l*a*θ*ō*j*ă*n*ą
-WestGermanic: *l*a*θ*ō*j*ă*n*ą
-NWGmcULowering: *l*a*θ*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *l*a*θ*ō*j*ă*n*ą
-NWGmcLongELowering: *l*a*θ*ō*j*ă*n*ą
-NWGmcLongENasalRounding: *l*a*θ*ō*j*ă*n*ą
-AuFronting: *l*a*θ*ō*j*ă*n*ą
-WWSimplification: *l*a*θ*ō*j*ă*n*ą
-DiphthongLeveling: *l*a*θ*ō*j*ă*n*ą
-EwLongDiphthong: *l*a*θ*ō*j*ă*n*ą
-AngloFrisianBrightening: *l*æ*θ*ō*j*ă*n*ą
-BreakingLengthening: *l*æ*θ*ō*j*ă*n*ą
-VelarFricPal: *l*æ*θ*ō*j*ă*n*ą
-ARestoration: *l*a*θ*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *l*a*θ*ō*j*ă*n*ą
-JGemination: *l*a*θ*ō*j*ă*n*ą
-SkPalatalization: *l*a*θ*ō*j*ă*n*ą
-VelarPalatalization: *l*a*θ*ō*j*ă*n*ą
-WsPalatalDiphthongization: *l*a*θ*ō*j*ă*n*ą
-IUmlaut: *l*a*θ*ē*j*ă*n*ą
-JClusterCoalescence: *l*a*θ*ē*j*ă*n*ą
-BackMutation: *l*a*θ*ē*j*ă*n*ą
-NasalSpirantLengthening: *l*a*θ*ē*j*ă*n*ą
-NasalSpirantLoss: *l*a*θ*ē*j*ă*n*ą
-WeakTailNasalLoss: *l*a*θ*ē*j*ă*n
-WeightMarkers: *l*a*θ*ē*j*ă*n
-HighVowelApocope: *l*a*θ*ē*j*ă*n
-HeavySyllableNasalApocope: *l*a*θ*ē*j*ă*n
-WeakTailReduction: *l*a*θ*ē*j*a*n
-JLossAfterHeavy: *l*a*θ*ē*j*a*n
-WeightCleanup: *l*a*θ*ē*j*a*n
-HLoss: *l*a*θ*ē*j*a*n
-Contraction: *l*a*θ*ē*j*a*n
-ProtoToOEWeakTail: *l*a*θ*ē*j*ă*n
-ProtoToOEWeightMarkers: *l*a*θ*ē*j*ă*n
-ProtoToOEApocope: *l*a*θ*ē*j*ă*n
-ProtoToOEWeightCleanup: *l*a*θ*e*j*a*n
-ProtoToOE: *l*a*θ*e*j*a*n
-WGlide: *l*a*θ*e*j*a*n
-GhMarker: *l*a*θ*e*j*a*n
-GlideDeletion: *l*a*θ*e*j*a*n
-Epenthesis: *l*a*θ*e*j*a*n
-Orthography: laþeġan
-Surface: laþeġan
 
 --- laugh ---
 PROTO: *lakăną
@@ -15347,6 +15581,7 @@ HighVowelApocope: *l*æ*ʧ*ă*n
 HeavySyllableNasalApocope: *l*æ*ʧ*ă*n
 WeakTailReduction: *l*æ*ʧ*ă*n
 JLossAfterHeavy: *l*æ*ʧ*ă*n
+IntervocalicJVocalization: *l*æ*ʧ*ă*n
 WeightCleanup: *l*æ*ʧ*ă*n
 HLoss: *l*æ*ʧ*ă*n
 Contraction: *l*æ*ʧ*ă*n
@@ -15362,63 +15597,10 @@ Epenthesis: *l*æ*ʧ*ă*n
 Orthography: læċan
 Surface: læċan
 
---- learn ---
-PROTO: *liznōjăną
-EXPECTED: leornian
-OUTPUTS: lierneġan
-
-ProtoInput: *l*i*z*n*ō*j*ă*n*ą
-InitialKn: *l*i*z*n*ō*j*ă*n*ą
-Palatalisation: *l*i*z*n*ō*j*ă*n*ą
-ConsonantRules: *l*i*r*n*ō*j*ă*n*ą
-WestGermanic: *l*i*r*n*ō*j*ă*n*ą
-NWGmcULowering: *l*i*r*n*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *l*i*r*n*ō*j*ă*n*ą
-NWGmcLongELowering: *l*i*r*n*ō*j*ă*n*ą
-NWGmcLongENasalRounding: *l*i*r*n*ō*j*ă*n*ą
-AuFronting: *l*i*r*n*ō*j*ă*n*ą
-WWSimplification: *l*i*r*n*ō*j*ă*n*ą
-DiphthongLeveling: *l*i*r*n*ō*j*ă*n*ą
-EwLongDiphthong: *l*i*r*n*ō*j*ă*n*ą
-AngloFrisianBrightening: *l*i*r*n*ō*j*ă*n*ą
-BreakingLengthening: *l*ie*r*n*ō*j*ă*n*ą
-VelarFricPal: *l*ie*r*n*ō*j*ă*n*ą
-ARestoration: *l*ie*r*n*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *l*ie*r*n*ō*j*ă*n*ą
-JGemination: *l*ie*r*n*ō*j*ă*n*ą
-SkPalatalization: *l*ie*r*n*ō*j*ă*n*ą
-VelarPalatalization: *l*ie*r*n*ō*j*ă*n*ą
-WsPalatalDiphthongization: *l*ie*r*n*ō*j*ă*n*ą
-IUmlaut: *l*ie*r*n*ē*j*ă*n*ą
-JClusterCoalescence: *l*ie*r*n*ē*j*ă*n*ą
-BackMutation: *l*ie*r*n*ē*j*ă*n*ą
-NasalSpirantLengthening: *l*ie*r*n*ē*j*ă*n*ą
-NasalSpirantLoss: *l*ie*r*n*ē*j*ă*n*ą
-WeakTailNasalLoss: *l*ie*r*n*ē*j*ă*n
-WeightMarkers: *l*ie*r*n*ē*j*ă*n
-HighVowelApocope: *l*ie*r*n*ē*j*ă*n
-HeavySyllableNasalApocope: *l*ie*r*n*ē*j*ă*n
-WeakTailReduction: *l*ie*r*n*ē*j*a*n
-JLossAfterHeavy: *l*ie*r*n*ē*j*a*n
-WeightCleanup: *l*ie*r*n*ē*j*a*n
-HLoss: *l*ie*r*n*ē*j*a*n
-Contraction: *l*ie*r*n*ē*j*a*n
-ProtoToOEWeakTail: *l*ie*r*n*ē*j*ă*n
-ProtoToOEWeightMarkers: *l*ie*r*n*ē*j*ă*n
-ProtoToOEApocope: *l*ie*r*n*ē*j*ă*n
-ProtoToOEWeightCleanup: *l*ie*r*n*e*j*a*n
-ProtoToOE: *l*ie*r*n*e*j*a*n
-WGlide: *l*ie*r*n*e*j*a*n
-GhMarker: *l*ie*r*n*e*j*a*n
-GlideDeletion: *l*ie*r*n*e*j*a*n
-Epenthesis: *l*ie*r*n*e*j*a*n
-Orthography: lierneġan
-Surface: lierneġan
-
 --- lick ---
 PROTO: *likkōjăną
 EXPECTED: liccian
-OUTPUTS: liċcēġan
+OUTPUTS: liċcēian
 
 ProtoInput: *l*i*k*k*ō*j*ă*n*ą
 InitialKn: *l*i*k*k*ō*j*ă*n*ą
@@ -15453,73 +15635,21 @@ HighVowelApocope: *l*i*ʧ*k*ē*j*ă*n
 HeavySyllableNasalApocope: *l*i*ʧ*k*ē*j*ă*n
 WeakTailReduction: *l*i*ʧ*k*ē*j*a*n
 JLossAfterHeavy: *l*i*ʧ*k*ē*j*a*n
-WeightCleanup: *l*i*ʧ*k*ē*j*a*n
-HLoss: *l*i*ʧ*k*ē*j*a*n
-Contraction: *l*i*ʧ*k*ē*j*a*n
+IntervocalicJVocalization: *l*i*ʧ*k*ē*i*a*n
+WeightCleanup: *l*i*ʧ*k*ē*i*a*n
+HLoss: *l*i*ʧ*k*ē*i*a*n
+Contraction: *l*i*ʧ*k*ē*i*a*n
 ProtoToOEWeakTail: *l*i*ʧ*k*ē*j*ă*n
 ProtoToOEWeightMarkers: *l*i*ʧ*k*ē*j*ă*n
 ProtoToOEApocope: *l*i*ʧ*k*ē*j*ă*n
-ProtoToOEWeightCleanup: *l*i*ʧ*k*ē*j*a*n
-ProtoToOE: *l*i*ʧ*k*ē*j*a*n
-WGlide: *l*i*ʧ*k*ē*j*a*n
-GhMarker: *l*i*ʧ*k*ē*j*a*n
-GlideDeletion: *l*i*ʧ*k*ē*j*a*n
-Epenthesis: *l*i*ʧ*k*ē*j*a*n
-Orthography: liċcēġan
-Surface: liċcēġan
-
---- make ---
-PROTO: *makōjăną
-EXPECTED: macian
-OUTPUTS: maceġan
-
-ProtoInput: *m*a*k*ō*j*ă*n*ą
-InitialKn: *m*a*k*ō*j*ă*n*ą
-Palatalisation: *m*a*k*ō*j*ă*n*ą
-ConsonantRules: *m*a*k*ō*j*ă*n*ą
-WestGermanic: *m*a*k*ō*j*ă*n*ą
-NWGmcULowering: *m*a*k*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *m*a*k*ō*j*ă*n*ą
-NWGmcLongELowering: *m*a*k*ō*j*ă*n*ą
-NWGmcLongENasalRounding: *m*a*k*ō*j*ă*n*ą
-AuFronting: *m*a*k*ō*j*ă*n*ą
-WWSimplification: *m*a*k*ō*j*ă*n*ą
-DiphthongLeveling: *m*a*k*ō*j*ă*n*ą
-EwLongDiphthong: *m*a*k*ō*j*ă*n*ą
-AngloFrisianBrightening: *m*æ*k*ō*j*ă*n*ą
-BreakingLengthening: *m*æ*k*ō*j*ă*n*ą
-VelarFricPal: *m*æ*k*ō*j*ă*n*ą
-ARestoration: *m*a*k*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *m*a*k*ō*j*ă*n*ą
-JGemination: *m*a*k*ō*j*ă*n*ą
-SkPalatalization: *m*a*k*ō*j*ă*n*ą
-VelarPalatalization: *m*a*k*ō*j*ă*n*ą
-WsPalatalDiphthongization: *m*a*k*ō*j*ă*n*ą
-IUmlaut: *m*a*k*ē*j*ă*n*ą
-JClusterCoalescence: *m*a*k*ē*j*ă*n*ą
-BackMutation: *m*a*k*ē*j*ă*n*ą
-NasalSpirantLengthening: *m*a*k*ē*j*ă*n*ą
-NasalSpirantLoss: *m*a*k*ē*j*ă*n*ą
-WeakTailNasalLoss: *m*a*k*ē*j*ă*n
-WeightMarkers: *m*a*k*ē*j*ă*n
-HighVowelApocope: *m*a*k*ē*j*ă*n
-HeavySyllableNasalApocope: *m*a*k*ē*j*ă*n
-WeakTailReduction: *m*a*k*ē*j*a*n
-JLossAfterHeavy: *m*a*k*ē*j*a*n
-WeightCleanup: *m*a*k*ē*j*a*n
-HLoss: *m*a*k*ē*j*a*n
-Contraction: *m*a*k*ē*j*a*n
-ProtoToOEWeakTail: *m*a*k*ē*j*ă*n
-ProtoToOEWeightMarkers: *m*a*k*ē*j*ă*n
-ProtoToOEApocope: *m*a*k*ē*j*ă*n
-ProtoToOEWeightCleanup: *m*a*k*e*j*a*n
-ProtoToOE: *m*a*k*e*j*a*n
-WGlide: *m*a*k*e*j*a*n
-GhMarker: *m*a*k*e*j*a*n
-GlideDeletion: *m*a*k*e*j*a*n
-Epenthesis: *m*a*k*e*j*a*n
-Orthography: maceġan
-Surface: maceġan
+ProtoToOEWeightCleanup: *l*i*ʧ*k*ē*i*a*n
+ProtoToOE: *l*i*ʧ*k*ē*i*a*n
+WGlide: *l*i*ʧ*k*ē*i*a*n
+GhMarker: *l*i*ʧ*k*ē*i*a*n
+GlideDeletion: *l*i*ʧ*k*ē*i*a*n
+Epenthesis: *l*i*ʧ*k*ē*i*a*n
+Orthography: liċcēian
+Surface: liċcēian
 
 --- rock ---
 PROTO: *rukkiz
@@ -15559,6 +15689,7 @@ HighVowelApocope: *r*y*k*ʧ
 HeavySyllableNasalApocope: *r*y*k*ʧ
 WeakTailReduction: *r*y*k*ʧ
 JLossAfterHeavy: *r*y*k*ʧ
+IntervocalicJVocalization: *r*y*k*ʧ
 WeightCleanup: *r*y*k*ʧ
 HLoss: *r*y*k*ʧ
 Contraction: *r*y*k*ʧ
@@ -15573,59 +15704,6 @@ GlideDeletion: *r*y*k*ʧ
 Epenthesis: *r*y*k*ʧ
 Orthography: rycċ
 Surface: rycċ
-
---- sunder ---
-PROTO: *sundrōjăną
-EXPECTED: sundor-
-OUTPUTS: sundreġan
-
-ProtoInput: *s*u*n*d*r*ō*j*ă*n*ą
-InitialKn: *s*u*n*d*r*ō*j*ă*n*ą
-Palatalisation: *s*u*n*d*r*ō*j*ă*n*ą
-ConsonantRules: *s*u*n*d*r*ō*j*ă*n*ą
-WestGermanic: *s*u*n*d*r*ō*j*ă*n*ą
-NWGmcULowering: *s*u*n*d*r*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *s*u*n*d*r*ō*j*ă*n*ą
-NWGmcLongELowering: *s*u*n*d*r*ō*j*ă*n*ą
-NWGmcLongENasalRounding: *s*u*n*d*r*ō*j*ă*n*ą
-AuFronting: *s*u*n*d*r*ō*j*ă*n*ą
-WWSimplification: *s*u*n*d*r*ō*j*ă*n*ą
-DiphthongLeveling: *s*u*n*d*r*ō*j*ă*n*ą
-EwLongDiphthong: *s*u*n*d*r*ō*j*ă*n*ą
-AngloFrisianBrightening: *s*u*n*d*r*ō*j*ă*n*ą
-BreakingLengthening: *s*u*n*d*r*ō*j*ă*n*ą
-VelarFricPal: *s*u*n*d*r*ō*j*ă*n*ą
-ARestoration: *s*u*n*d*r*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *s*u*n*d*r*ō*j*ă*n*ą
-JGemination: *s*u*n*d*r*ō*j*ă*n*ą
-SkPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
-VelarPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
-WsPalatalDiphthongization: *s*u*n*d*r*ō*j*ă*n*ą
-IUmlaut: *s*u*n*d*r*ē*j*ă*n*ą
-JClusterCoalescence: *s*u*n*d*r*ē*j*ă*n*ą
-BackMutation: *s*u*n*d*r*ē*j*ă*n*ą
-NasalSpirantLengthening: *s*u*n*d*r*ē*j*ă*n*ą
-NasalSpirantLoss: *s*u*n*d*r*ē*j*ă*n*ą
-WeakTailNasalLoss: *s*u*n*d*r*ē*j*ă*n
-WeightMarkers: *s*u*n*d*r*ē*j*ă*n
-HighVowelApocope: *s*u*n*d*r*ē*j*ă*n
-HeavySyllableNasalApocope: *s*u*n*d*r*ē*j*ă*n
-WeakTailReduction: *s*u*n*d*r*ē*j*a*n
-JLossAfterHeavy: *s*u*n*d*r*ē*j*a*n
-WeightCleanup: *s*u*n*d*r*ē*j*a*n
-HLoss: *s*u*n*d*r*ē*j*a*n
-Contraction: *s*u*n*d*r*ē*j*a*n
-ProtoToOEWeakTail: *s*u*n*d*r*ē*j*ă*n
-ProtoToOEWeightMarkers: *s*u*n*d*r*ē*j*ă*n
-ProtoToOEApocope: *s*u*n*d*r*ē*j*ă*n
-ProtoToOEWeightCleanup: *s*u*n*d*r*e*j*a*n
-ProtoToOE: *s*u*n*d*r*e*j*a*n
-WGlide: *s*u*n*d*r*e*j*a*n
-GhMarker: *s*u*n*d*r*e*j*a*n
-GlideDeletion: *s*u*n*d*r*e*j*a*n
-Epenthesis: *s*u*n*d*r*e*j*a*n
-Orthography: sundreġan
-Surface: sundreġan
 
 --- thatch ---
 PROTO: *θaką
@@ -15665,6 +15743,7 @@ HighVowelApocope: *θ*æ*ʧ*ą
 HeavySyllableNasalApocope: *θ*æ*ʧ
 WeakTailReduction: *θ*æ*ʧ
 JLossAfterHeavy: *θ*æ*ʧ
+IntervocalicJVocalization: *θ*æ*ʧ
 WeightCleanup: *θ*æ*ʧ
 HLoss: *θ*æ*ʧ
 Contraction: *θ*æ*ʧ
@@ -15679,59 +15758,6 @@ GlideDeletion: *θ*æ*ʧ
 Epenthesis: *θ*æ*ʧ
 Orthography: þæċ
 Surface: þæċ
-
---- three ---
-PROTO: *θrejez
-EXPECTED: þrī
-OUTPUTS: þriġe
-
-ProtoInput: *θ*r*e*j*e*z
-InitialKn: *θ*r*e*j*e*z
-Palatalisation: *θ*r*e*j*e*z
-ConsonantRules: *θ*r*e*j*e
-WestGermanic: *θ*r*e*j*e
-NWGmcULowering: *θ*r*e*j*e
-NWGmcFinalLongORaising: *θ*r*e*j*e
-NWGmcLongELowering: *θ*r*e*j*e
-NWGmcLongENasalRounding: *θ*r*e*j*e
-AuFronting: *θ*r*e*j*e
-WWSimplification: *θ*r*e*j*e
-DiphthongLeveling: *θ*r*e*j*e
-EwLongDiphthong: *θ*r*e*j*e
-AngloFrisianBrightening: *θ*r*e*j*e
-BreakingLengthening: *θ*r*e*j*e
-VelarFricPal: *θ*r*e*j*e
-ARestoration: *θ*r*e*j*e
-FinalWeakSchwaApocope: *θ*r*e*j*e
-JGemination: *θ*r*e*j*e
-SkPalatalization: *θ*r*e*j*e
-VelarPalatalization: *θ*r*e*j*e
-WsPalatalDiphthongization: *θ*r*e*j*e
-IUmlaut: *θ*r*i*j*e
-JClusterCoalescence: *θ*r*i*j*e
-BackMutation: *θ*r*i*j*e
-NasalSpirantLengthening: *θ*r*i*j*e
-NasalSpirantLoss: *θ*r*i*j*e
-WeakTailNasalLoss: *θ*r*i*j*e
-WeightMarkers: *θ*r*i*j*e
-HighVowelApocope: *θ*r*i*j*e
-HeavySyllableNasalApocope: *θ*r*i*j*e
-WeakTailReduction: *θ*r*i*j*e
-JLossAfterHeavy: *θ*r*i*j*e
-WeightCleanup: *θ*r*i*j*e
-HLoss: *θ*r*i*j*e
-Contraction: *θ*r*i*j*e
-ProtoToOEWeakTail: *θ*r*i*j*e
-ProtoToOEWeightMarkers: *θ*r*i*j*e
-ProtoToOEApocope: *θ*r*i*j*e
-ProtoToOEWeightCleanup: *θ*r*i*j*e
-ProtoToOE: *θ*r*i*j*e
-WGlide: *θ*r*i*j*e
-GhMarker: *θ*r*i*j*e
-GlideDeletion: *θ*r*i*j*e
-Epenthesis: *θ*r*i*j*e
-Orthography: þriġe
-Surface: þriġe
 
 
 === BUCKET: back_expected_front_out (5) ===
@@ -15774,6 +15800,7 @@ HighVowelApocope: *k*w*i*θ*u
 HeavySyllableNasalApocope: *k*w*i*θ*u
 WeakTailReduction: *k*w*i*θ*o
 JLossAfterHeavy: *k*w*i*θ*o
+IntervocalicJVocalization: *k*w*i*θ*o
 WeightCleanup: *k*w*i*θ*o
 HLoss: *k*w*i*θ*o
 Contraction: *k*w*i*θ*o
@@ -15827,6 +15854,7 @@ HighVowelApocope: *m*e*r*ī*n
 HeavySyllableNasalApocope: *m*e*r*ī*n
 WeakTailReduction: *m*e*r*ī*n
 JLossAfterHeavy: *m*e*r*ī*n
+IntervocalicJVocalization: *m*e*r*ī*n
 WeightCleanup: *m*e*r*ī*n
 HLoss: *m*e*r*ī*n
 Contraction: *m*e*r*ī*n
@@ -15880,6 +15908,7 @@ HighVowelApocope: *s*w*e*s*t*ǣ*r
 HeavySyllableNasalApocope: *s*w*e*s*t*ǣ*r
 WeakTailReduction: *s*w*e*s*t*ǣ*r
 JLossAfterHeavy: *s*w*e*s*t*ǣ*r
+IntervocalicJVocalization: *s*w*e*s*t*ǣ*r
 WeightCleanup: *s*w*e*s*t*ǣ*r
 HLoss: *s*w*e*s*t*ǣ*r
 Contraction: *s*w*e*s*t*ǣ*r
@@ -15933,6 +15962,7 @@ HighVowelApocope: *w*æ*d*ă*n
 HeavySyllableNasalApocope: *w*æ*d*ă*n
 WeakTailReduction: *w*æ*d*a*n
 JLossAfterHeavy: *w*æ*d*a*n
+IntervocalicJVocalization: *w*æ*d*a*n
 WeightCleanup: *w*æ*d*a*n
 HLoss: *w*æ*d*a*n
 Contraction: *w*æ*d*a*n
@@ -15986,6 +16016,7 @@ HighVowelApocope: *w*æ*ʃ*ă*n
 HeavySyllableNasalApocope: *w*æ*ʃ*ă*n
 WeakTailReduction: *w*æ*ʃ*ă*n
 JLossAfterHeavy: *w*æ*ʃ*ă*n
+IntervocalicJVocalization: *w*æ*ʃ*ă*n
 WeightCleanup: *w*æ*ʃ*ă*n
 HLoss: *w*æ*ʃ*ă*n
 Contraction: *w*æ*ʃ*ă*n
@@ -16042,6 +16073,7 @@ HighVowelApocope: *ʃ*ū*f*l
 HeavySyllableNasalApocope: *ʃ*ū*f*l
 WeakTailReduction: *ʃ*ū*f*l
 JLossAfterHeavy: *ʃ*ū*f*l
+IntervocalicJVocalization: *ʃ*ū*f*l
 WeightCleanup: *ʃ*ū*f*l
 HLoss: *ʃ*ū*f*l
 Contraction: *ʃ*ū*f*l
@@ -16098,6 +16130,7 @@ HighVowelApocope: *f*u*l*ʤ*ō*n
 HeavySyllableNasalApocope: *f*u*l*ʤ*ō*n
 WeakTailReduction: *f*u*l*ʤ*ō*n
 JLossAfterHeavy: *f*u*l*ʤ*ō*n
+IntervocalicJVocalization: *f*u*l*ʤ*ō*n
 WeightCleanup: *f*u*l*ʤ*ō*n
 HLoss: *f*u*l*ʤ*ō*n
 Contraction: *f*u*l*ʤ*ō*n
@@ -16154,6 +16187,7 @@ HighVowelApocope: *b*o*k*k
 HeavySyllableNasalApocope: *b*o*k*k
 WeakTailReduction: *b*o*k*k
 JLossAfterHeavy: *b*o*k*k
+IntervocalicJVocalization: *b*o*k*k
 WeightCleanup: *b*o*k*k
 HLoss: *b*o*k*k
 Contraction: *b*o*k*k
@@ -16207,6 +16241,7 @@ HighVowelApocope: *k*r*e*f*t
 HeavySyllableNasalApocope: *k*r*e*f*t
 WeakTailReduction: *k*r*e*f*t
 JLossAfterHeavy: *k*r*e*f*t
+IntervocalicJVocalization: *k*r*e*f*t
 WeightCleanup: *k*r*e*f*t
 HLoss: *k*r*e*f*t
 Contraction: *k*r*e*f*t
@@ -16260,6 +16295,7 @@ HighVowelApocope: *d*ǣ*d
 HeavySyllableNasalApocope: *d*ǣ*d
 WeakTailReduction: *d*ǣ*d
 JLossAfterHeavy: *d*ǣ*d
+IntervocalicJVocalization: *d*ǣ*d
 WeightCleanup: *d*ǣ*d
 HLoss: *d*ǣ*d
 Contraction: *d*ǣ*d
@@ -16313,6 +16349,7 @@ HighVowelApocope: *eo*r*θ*o
 HeavySyllableNasalApocope: *eo*r*θ*o
 WeakTailReduction: *eo*r*θ*o
 JLossAfterHeavy: *eo*r*θ*o
+IntervocalicJVocalization: *eo*r*θ*o
 WeightCleanup: *eo*r*θ*o
 HLoss: *eo*r*θ*o
 Contraction: *eo*r*θ*o
@@ -16366,6 +16403,7 @@ HighVowelApocope: *f*o*g*l
 HeavySyllableNasalApocope: *f*o*g*l
 WeakTailReduction: *f*o*g*l
 JLossAfterHeavy: *f*o*g*l
+IntervocalicJVocalization: *f*o*g*l
 WeightCleanup: *f*o*g*l
 HLoss: *f*o*g*l
 Contraction: *f*o*g*l
@@ -16419,6 +16457,7 @@ HighVowelApocope: *g*u*d
 HeavySyllableNasalApocope: *g*u*d
 WeakTailReduction: *g*u*d
 JLossAfterHeavy: *g*u*d
+IntervocalicJVocalization: *g*u*d
 WeightCleanup: *g*u*d
 HLoss: *g*u*d
 Contraction: *g*u*d
@@ -16472,6 +16511,7 @@ HighVowelApocope: *g*ā*s
 HeavySyllableNasalApocope: *g*ā*s
 WeakTailReduction: *g*ā*s
 JLossAfterHeavy: *g*ā*s
+IntervocalicJVocalization: *g*ā*s
 WeightCleanup: *g*ā*s
 HLoss: *g*ā*s
 Contraction: *g*ā*s
@@ -16525,6 +16565,7 @@ HighVowelApocope: *x*a*m*æ*r*æ*s
 HeavySyllableNasalApocope: *x*a*m*æ*r*æ*s
 WeakTailReduction: *x*a*m*e*r*e*s
 JLossAfterHeavy: *x*a*m*e*r*e*s
+IntervocalicJVocalization: *x*a*m*e*r*e*s
 WeightCleanup: *x*a*m*e*r*e*s
 HLoss: *x*a*m*e*r*e*s
 Contraction: *x*a*m*e*r*e*s
@@ -16578,6 +16619,7 @@ HighVowelApocope: *ç*eo*r*d
 HeavySyllableNasalApocope: *ç*eo*r*d
 WeakTailReduction: *ç*eo*r*d
 JLossAfterHeavy: *ç*eo*r*d
+IntervocalicJVocalization: *ç*eo*r*d
 WeightCleanup: *ç*eo*r*d
 HLoss: *ç*eo*r*d
 Contraction: *ç*eo*r*d
@@ -16631,6 +16673,7 @@ HighVowelApocope: *m*ō*n*ō*θ
 HeavySyllableNasalApocope: *m*ō*n*ō*θ
 WeakTailReduction: *m*ō*n*ō*θ
 JLossAfterHeavy: *m*ō*n*ō*θ
+IntervocalicJVocalization: *m*ō*n*ō*θ
 WeightCleanup: *m*ō*n*ō*θ
 HLoss: *m*ō*n*ō*θ
 Contraction: *m*ō*n*ō*θ
@@ -16684,6 +16727,7 @@ HighVowelApocope: *m*ō*d*ǣ*r
 HeavySyllableNasalApocope: *m*ō*d*ǣ*r
 WeakTailReduction: *m*ō*d*ǣ*r
 JLossAfterHeavy: *m*ō*d*ǣ*r
+IntervocalicJVocalization: *m*ō*d*ǣ*r
 WeightCleanup: *m*ō*d*ǣ*r
 HLoss: *m*ō*d*ǣ*r
 Contraction: *m*ō*d*ǣ*r
@@ -16737,6 +16781,7 @@ HighVowelApocope: *n*a*β*u
 HeavySyllableNasalApocope: *n*a*β*u
 WeakTailReduction: *n*a*β*o
 JLossAfterHeavy: *n*a*β*o
+IntervocalicJVocalization: *n*a*β*o
 WeightCleanup: *n*a*β*o
 HLoss: *n*a*β*o
 Contraction: *n*a*β*o
@@ -16790,6 +16835,7 @@ HighVowelApocope: *n*i*s*t*ą
 HeavySyllableNasalApocope: *n*i*s*t
 WeakTailReduction: *n*i*s*t
 JLossAfterHeavy: *n*i*s*t
+IntervocalicJVocalization: *n*i*s*t
 WeightCleanup: *n*i*s*t
 HLoss: *n*i*s*t
 Contraction: *n*i*s*t
@@ -16843,6 +16889,7 @@ HighVowelApocope: *n*a*s*u
 HeavySyllableNasalApocope: *n*a*s*u
 WeakTailReduction: *n*a*s*o
 JLossAfterHeavy: *n*a*s*o
+IntervocalicJVocalization: *n*a*s*o
 WeightCleanup: *n*a*s*o
 HLoss: *n*a*s*o
 Contraction: *n*a*s*o
@@ -16896,6 +16943,7 @@ HighVowelApocope: *r*o*s*t
 HeavySyllableNasalApocope: *r*o*s*t
 WeakTailReduction: *r*o*s*t
 JLossAfterHeavy: *r*o*s*t
+IntervocalicJVocalization: *r*o*s*t
 WeightCleanup: *r*o*s*t
 HLoss: *r*o*s*t
 Contraction: *r*o*s*t
@@ -16949,6 +16997,7 @@ HighVowelApocope: *s*a*k*u
 HeavySyllableNasalApocope: *s*a*k*u
 WeakTailReduction: *s*a*k*o
 JLossAfterHeavy: *s*a*k*o
+IntervocalicJVocalization: *s*a*k*o
 WeightCleanup: *s*a*k*o
 HLoss: *s*a*k*o
 Contraction: *s*a*k*o
@@ -17002,6 +17051,7 @@ HighVowelApocope: *ʃ*a*m*u
 HeavySyllableNasalApocope: *ʃ*a*m*u
 WeakTailReduction: *ʃ*a*m*o
 JLossAfterHeavy: *ʃ*a*m*o
+IntervocalicJVocalization: *ʃ*a*m*o
 WeightCleanup: *ʃ*a*m*o
 HLoss: *ʃ*a*m*o
 Contraction: *ʃ*a*m*o
@@ -17055,6 +17105,7 @@ HighVowelApocope: *ʃ*eo*l*d
 HeavySyllableNasalApocope: *ʃ*eo*l*d
 WeakTailReduction: *ʃ*eo*l*d
 JLossAfterHeavy: *ʃ*eo*l*d
+IntervocalicJVocalization: *ʃ*eo*l*d
 WeightCleanup: *ʃ*eo*l*d
 HLoss: *ʃ*eo*l*d
 Contraction: *ʃ*eo*l*d
@@ -17108,6 +17159,7 @@ HighVowelApocope: *θ*e*ʤ*n
 HeavySyllableNasalApocope: *θ*e*ʤ*n
 WeakTailReduction: *θ*e*ʤ*n
 JLossAfterHeavy: *θ*e*ʤ*n
+IntervocalicJVocalization: *θ*e*ʤ*n
 WeightCleanup: *θ*e*ʤ*n
 HLoss: *θ*e*ʤ*n
 Contraction: *θ*e*ʤ*n
@@ -17161,6 +17213,7 @@ HighVowelApocope: *θ*u*r*n
 HeavySyllableNasalApocope: *θ*u*r*n
 WeakTailReduction: *θ*u*r*n
 JLossAfterHeavy: *θ*u*r*n
+IntervocalicJVocalization: *θ*u*r*n
 WeightCleanup: *θ*u*r*n
 HLoss: *θ*u*r*n
 Contraction: *θ*u*r*n
@@ -17214,6 +17267,7 @@ HighVowelApocope: *w*a*ʧ*ō*n
 HeavySyllableNasalApocope: *w*a*ʧ*ō*n
 WeakTailReduction: *w*a*ʧ*ō*n
 JLossAfterHeavy: *w*a*ʧ*ō*n
+IntervocalicJVocalization: *w*a*ʧ*ō*n
 WeightCleanup: *w*a*ʧ*ō*n
 HLoss: *w*a*ʧ*ō*n
 Contraction: *w*a*ʧ*ō*n
@@ -17267,6 +17321,7 @@ HighVowelApocope: *w*ea*r*t*o
 HeavySyllableNasalApocope: *w*ea*r*t*o
 WeakTailReduction: *w*ea*r*t*o
 JLossAfterHeavy: *w*ea*r*t*o
+IntervocalicJVocalization: *w*ea*r*t*o
 WeightCleanup: *w*ea*r*t*o
 HLoss: *w*ea*r*t*o
 Contraction: *w*ea*r*t*o
@@ -17320,6 +17375,7 @@ HighVowelApocope: *w*i*θ*r
 HeavySyllableNasalApocope: *w*i*θ*r
 WeakTailReduction: *w*i*θ*r
 JLossAfterHeavy: *w*i*θ*r
+IntervocalicJVocalization: *w*i*θ*r
 WeightCleanup: *w*i*θ*r
 HLoss: *w*i*θ*r
 Contraction: *w*i*θ*r
@@ -17373,6 +17429,7 @@ HighVowelApocope: *w*o*l*f
 HeavySyllableNasalApocope: *w*o*l*f
 WeakTailReduction: *w*o*l*f
 JLossAfterHeavy: *w*o*l*f
+IntervocalicJVocalization: *w*o*l*f
 WeightCleanup: *w*o*l*f
 HLoss: *w*o*l*f
 Contraction: *w*o*l*f
@@ -17429,6 +17486,7 @@ HighVowelApocope: *s*p*i*n*n*u*l*u
 HeavySyllableNasalApocope: *s*p*i*n*n*u*l*u
 WeakTailReduction: *s*p*i*n*n*o*l*o
 JLossAfterHeavy: *s*p*i*n*n*o*l*o
+IntervocalicJVocalization: *s*p*i*n*n*o*l*o
 WeightCleanup: *s*p*i*n*n*o*l*o
 HLoss: *s*p*i*n*n*o*l*o
 Contraction: *s*p*i*n*n*o*l*o
@@ -17445,7 +17503,7 @@ Orthography: spinnolo
 Surface: spinnolo
 
 
-=== BUCKET: consonant_mismatch_other (38) ===
+=== BUCKET: consonant_mismatch_other (40) ===
 
 --- ban ---
 PROTO: *banną
@@ -17485,6 +17543,7 @@ HighVowelApocope: *b*a*n*n
 HeavySyllableNasalApocope: *b*a*n*n
 WeakTailReduction: *b*a*n*n
 JLossAfterHeavy: *b*a*n*n
+IntervocalicJVocalization: *b*a*n*n
 WeightCleanup: *b*a*n*n
 HLoss: *b*a*n*n
 Contraction: *b*a*n*n
@@ -17538,6 +17597,7 @@ HighVowelApocope: *l*īe*β*j*ă*n
 HeavySyllableNasalApocope: *l*īe*β*j*ă*n
 WeakTailReduction: *l*īe*β*j*a*n
 JLossAfterHeavy: *l*īe*β*a*n
+IntervocalicJVocalization: *l*īe*β*a*n
 WeightCleanup: *l*īe*β*a*n
 HLoss: *l*īe*β*a*n
 Contraction: *l*īe*β*a*n
@@ -17591,6 +17651,7 @@ HighVowelApocope: *b*ā*n*ă*n
 HeavySyllableNasalApocope: *b*ā*n*ă*n
 WeakTailReduction: *b*ā*n*a*n
 JLossAfterHeavy: *b*ā*n*a*n
+IntervocalicJVocalization: *b*ā*n*a*n
 WeightCleanup: *b*ā*n*a*n
 HLoss: *b*ā*n*a*n
 Contraction: *b*ā*n*a*n
@@ -17644,6 +17705,7 @@ HighVowelApocope: *b*o*d*m
 HeavySyllableNasalApocope: *b*o*d*m
 WeakTailReduction: *b*o*d*m
 JLossAfterHeavy: *b*o*d*m
+IntervocalicJVocalization: *b*o*d*m
 WeightCleanup: *b*o*d*m
 HLoss: *b*o*d*m
 Contraction: *b*o*d*m
@@ -17697,6 +17759,7 @@ HighVowelApocope: *b*r*e*ʧ*ă*n
 HeavySyllableNasalApocope: *b*r*e*ʧ*ă*n
 WeakTailReduction: *b*r*e*ʧ*ă*n
 JLossAfterHeavy: *b*r*e*ʧ*ă*n
+IntervocalicJVocalization: *b*r*e*ʧ*ă*n
 WeightCleanup: *b*r*e*ʧ*ă*n
 HLoss: *b*r*e*ʧ*ă*n
 Contraction: *b*r*e*ʧ*ă*n
@@ -17750,6 +17813,7 @@ HighVowelApocope: *k*o*r*n*ă*n
 HeavySyllableNasalApocope: *k*o*r*n*ă*n
 WeakTailReduction: *k*o*r*n*a*n
 JLossAfterHeavy: *k*o*r*n*a*n
+IntervocalicJVocalization: *k*o*r*n*a*n
 WeightCleanup: *k*o*r*n*a*n
 HLoss: *k*o*r*n*a*n
 Contraction: *k*o*r*n*a*n
@@ -17803,6 +17867,7 @@ HighVowelApocope: *f*æ*r*ă*n
 HeavySyllableNasalApocope: *f*æ*r*ă*n
 WeakTailReduction: *f*æ*r*a*n
 JLossAfterHeavy: *f*æ*r*a*n
+IntervocalicJVocalization: *f*æ*r*a*n
 WeightCleanup: *f*æ*r*a*n
 HLoss: *f*æ*r*a*n
 Contraction: *f*æ*r*a*n
@@ -17856,6 +17921,7 @@ HighVowelApocope: *f*ea*r*n*ă*n
 HeavySyllableNasalApocope: *f*ea*r*n*ă*n
 WeakTailReduction: *f*ea*r*n*a*n
 JLossAfterHeavy: *f*ea*r*n*a*n
+IntervocalicJVocalization: *f*ea*r*n*a*n
 WeightCleanup: *f*ea*r*n*a*n
 HLoss: *f*ea*r*n*a*n
 Contraction: *f*ea*r*n*a*n
@@ -17909,6 +17975,7 @@ HighVowelApocope: *f*ea*l*θ*ă*n
 HeavySyllableNasalApocope: *f*ea*l*θ*ă*n
 WeakTailReduction: *f*ea*l*θ*a*n
 JLossAfterHeavy: *f*ea*l*θ*a*n
+IntervocalicJVocalization: *f*ea*l*θ*a*n
 WeightCleanup: *f*ea*l*θ*a*n
 HLoss: *f*ea*l*θ*a*n
 Contraction: *f*ea*l*θ*a*n
@@ -17962,6 +18029,7 @@ HighVowelApocope: *g*o*l*θ*ą
 HeavySyllableNasalApocope: *g*o*l*θ
 WeakTailReduction: *g*o*l*θ
 JLossAfterHeavy: *g*o*l*θ
+IntervocalicJVocalization: *g*o*l*θ
 WeightCleanup: *g*o*l*θ
 HLoss: *g*o*l*θ
 Contraction: *g*o*l*θ
@@ -18015,6 +18083,7 @@ HighVowelApocope: *g*r*æ*β*ă*n
 HeavySyllableNasalApocope: *g*r*æ*β*ă*n
 WeakTailReduction: *g*r*æ*β*a*n
 JLossAfterHeavy: *g*r*æ*β*a*n
+IntervocalicJVocalization: *g*r*æ*β*a*n
 WeightCleanup: *g*r*æ*β*a*n
 HLoss: *g*r*æ*β*a*n
 Contraction: *g*r*æ*β*a*n
@@ -18068,6 +18137,7 @@ HighVowelApocope: *ç*a*β*ō*n
 HeavySyllableNasalApocope: *ç*a*β*ō*n
 WeakTailReduction: *ç*a*β*ō*n
 JLossAfterHeavy: *ç*a*β*ō*n
+IntervocalicJVocalization: *ç*a*β*ō*n
 WeightCleanup: *ç*a*β*ō*n
 HLoss: *ç*a*β*ō*n
 Contraction: *ç*a*β*ō*n
@@ -18121,6 +18191,7 @@ HighVowelApocope: *x*o*r*n*ă*n
 HeavySyllableNasalApocope: *x*o*r*n*ă*n
 WeakTailReduction: *x*o*r*n*a*n
 JLossAfterHeavy: *x*o*r*n*a*n
+IntervocalicJVocalization: *x*o*r*n*a*n
 WeightCleanup: *x*o*r*n*a*n
 HLoss: *x*o*r*n*a*n
 Contraction: *x*o*r*n*a*n
@@ -18135,6 +18206,60 @@ GlideDeletion: *x*o*r*n*a*n
 Epenthesis: *x*o*r*n*a*n
 Orthography: hornan
 Surface: hornan
+
+--- lade ---
+PROTO: *laθōjăną
+EXPECTED: hladan
+OUTPUTS: laþeian
+
+ProtoInput: *l*a*θ*ō*j*ă*n*ą
+InitialKn: *l*a*θ*ō*j*ă*n*ą
+Palatalisation: *l*a*θ*ō*j*ă*n*ą
+ConsonantRules: *l*a*θ*ō*j*ă*n*ą
+WestGermanic: *l*a*θ*ō*j*ă*n*ą
+NWGmcULowering: *l*a*θ*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *l*a*θ*ō*j*ă*n*ą
+NWGmcLongELowering: *l*a*θ*ō*j*ă*n*ą
+NWGmcLongENasalRounding: *l*a*θ*ō*j*ă*n*ą
+AuFronting: *l*a*θ*ō*j*ă*n*ą
+WWSimplification: *l*a*θ*ō*j*ă*n*ą
+DiphthongLeveling: *l*a*θ*ō*j*ă*n*ą
+EwLongDiphthong: *l*a*θ*ō*j*ă*n*ą
+AngloFrisianBrightening: *l*æ*θ*ō*j*ă*n*ą
+BreakingLengthening: *l*æ*θ*ō*j*ă*n*ą
+VelarFricPal: *l*æ*θ*ō*j*ă*n*ą
+ARestoration: *l*a*θ*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *l*a*θ*ō*j*ă*n*ą
+JGemination: *l*a*θ*ō*j*ă*n*ą
+SkPalatalization: *l*a*θ*ō*j*ă*n*ą
+VelarPalatalization: *l*a*θ*ō*j*ă*n*ą
+WsPalatalDiphthongization: *l*a*θ*ō*j*ă*n*ą
+IUmlaut: *l*a*θ*ē*j*ă*n*ą
+JClusterCoalescence: *l*a*θ*ē*j*ă*n*ą
+BackMutation: *l*a*θ*ē*j*ă*n*ą
+NasalSpirantLengthening: *l*a*θ*ē*j*ă*n*ą
+NasalSpirantLoss: *l*a*θ*ē*j*ă*n*ą
+WeakTailNasalLoss: *l*a*θ*ē*j*ă*n
+WeightMarkers: *l*a*θ*ē*j*ă*n
+HighVowelApocope: *l*a*θ*ē*j*ă*n
+HeavySyllableNasalApocope: *l*a*θ*ē*j*ă*n
+WeakTailReduction: *l*a*θ*ē*j*a*n
+JLossAfterHeavy: *l*a*θ*ē*j*a*n
+IntervocalicJVocalization: *l*a*θ*ē*i*a*n
+WeightCleanup: *l*a*θ*ē*i*a*n
+HLoss: *l*a*θ*ē*i*a*n
+Contraction: *l*a*θ*ē*i*a*n
+ProtoToOEWeakTail: *l*a*θ*ē*j*ă*n
+ProtoToOEWeightMarkers: *l*a*θ*ē*j*ă*n
+ProtoToOEApocope: *l*a*θ*ē*j*ă*n
+ProtoToOEWeightCleanup: *l*a*θ*e*i*a*n
+ProtoToOE: *l*a*θ*e*i*a*n
+WGlide: *l*a*θ*e*i*a*n
+GhMarker: *l*a*θ*e*i*a*n
+GlideDeletion: *l*a*θ*e*i*a*n
+Epenthesis: *l*a*θ*e*i*a*n
+Orthography: laþeian
+Surface: laþeian
 
 --- light ---
 PROTO: *leuxtjăną
@@ -18174,6 +18299,7 @@ HighVowelApocope: *l*īe*x*t*j*ă*n
 HeavySyllableNasalApocope: *l*īe*x*t*j*ă*n
 WeakTailReduction: *l*īe*x*t*j*a*n
 JLossAfterHeavy: *l*īe*x*t*a*n
+IntervocalicJVocalization: *l*īe*x*t*a*n
 WeightCleanup: *l*īe*x*t*a*n
 HLoss: *l*īe*x*t*a*n
 Contraction: *l*īe*x*t*a*n
@@ -18227,6 +18353,7 @@ HighVowelApocope: *l*ā*m*ō*n
 HeavySyllableNasalApocope: *l*ā*m*ō*n
 WeakTailReduction: *l*ā*m*ō*n
 JLossAfterHeavy: *l*ā*m*ō*n
+IntervocalicJVocalization: *l*ā*m*ō*n
 WeightCleanup: *l*ā*m*ō*n
 HLoss: *l*ā*m*ō*n
 Contraction: *l*ā*m*ō*n
@@ -18280,6 +18407,7 @@ HighVowelApocope: *l*ā*θ
 HeavySyllableNasalApocope: *l*ā*θ
 WeakTailReduction: *l*ā*θ
 JLossAfterHeavy: *l*ā*θ
+IntervocalicJVocalization: *l*ā*θ
 WeightCleanup: *l*ā*θ
 HLoss: *l*ā*θ
 Contraction: *l*ā*θ
@@ -18333,6 +18461,7 @@ HighVowelApocope: *l*ēa*g
 HeavySyllableNasalApocope: *l*ēa*g
 WeakTailReduction: *l*ēa*g
 JLossAfterHeavy: *l*ēa*g
+IntervocalicJVocalization: *l*ēa*g
 WeightCleanup: *l*ēa*g
 HLoss: *l*ēa*g
 Contraction: *l*ēa*g
@@ -18386,6 +18515,7 @@ HighVowelApocope: *n*ǣ*θ*l
 HeavySyllableNasalApocope: *n*ǣ*θ*l
 WeakTailReduction: *n*ǣ*θ*l
 JLossAfterHeavy: *n*ǣ*θ*l
+IntervocalicJVocalization: *n*ǣ*θ*l
 WeightCleanup: *n*ǣ*θ*l
 HLoss: *n*ǣ*θ*l
 Contraction: *n*ǣ*θ*l
@@ -18439,6 +18569,7 @@ HighVowelApocope: *s*ē*ʧ*j*ă*n
 HeavySyllableNasalApocope: *s*ē*ʧ*j*ă*n
 WeakTailReduction: *s*ē*ʧ*j*ă*n
 JLossAfterHeavy: *s*ē*ʧ*j*ă*n
+IntervocalicJVocalization: *s*ē*ʧ*j*ă*n
 WeightCleanup: *s*ē*ʧ*j*ă*n
 HLoss: *s*ē*ʧ*j*ă*n
 Contraction: *s*ē*ʧ*j*ă*n
@@ -18492,6 +18623,7 @@ HighVowelApocope: *s*i*n*g*w*ă*n
 HeavySyllableNasalApocope: *s*i*n*g*w*ă*n
 WeakTailReduction: *s*i*n*g*w*a*n
 JLossAfterHeavy: *s*i*n*g*w*a*n
+IntervocalicJVocalization: *s*i*n*g*w*a*n
 WeightCleanup: *s*i*n*g*w*a*n
 HLoss: *s*i*n*g*w*a*n
 Contraction: *s*i*n*g*w*a*n
@@ -18545,6 +18677,7 @@ HighVowelApocope: *s*l*ǣ*p*ă*n
 HeavySyllableNasalApocope: *s*l*ǣ*p*ă*n
 WeakTailReduction: *s*l*ǣ*p*a*n
 JLossAfterHeavy: *s*l*ǣ*p*a*n
+IntervocalicJVocalization: *s*l*ǣ*p*a*n
 WeightCleanup: *s*l*ǣ*p*a*n
 HLoss: *s*l*ǣ*p*a*n
 Contraction: *s*l*ǣ*p*a*n
@@ -18598,6 +18731,7 @@ HighVowelApocope: *s*p*a*n*n*ă*n
 HeavySyllableNasalApocope: *s*p*a*n*n*ă*n
 WeakTailReduction: *s*p*a*n*n*a*n
 JLossAfterHeavy: *s*p*a*n*n*a*n
+IntervocalicJVocalization: *s*p*a*n*n*a*n
 WeightCleanup: *s*p*a*n*n*a*n
 HLoss: *s*p*a*n*n*a*n
 Contraction: *s*p*a*n*n*a*n
@@ -18651,6 +18785,7 @@ HighVowelApocope: *s*p*æ*r*ō*n
 HeavySyllableNasalApocope: *s*p*æ*r*ō*n
 WeakTailReduction: *s*p*æ*r*ō*n
 JLossAfterHeavy: *s*p*æ*r*ō*n
+IntervocalicJVocalization: *s*p*æ*r*ō*n
 WeightCleanup: *s*p*æ*r*ō*n
 HLoss: *s*p*æ*r*ō*n
 Contraction: *s*p*æ*r*ō*n
@@ -18704,6 +18839,7 @@ HighVowelApocope: *s*t*r*e*ʧ*ʧ*j*ă*n
 HeavySyllableNasalApocope: *s*t*r*e*ʧ*ʧ*j*ă*n
 WeakTailReduction: *s*t*r*e*ʧ*ʧ*j*ă*n
 JLossAfterHeavy: *s*t*r*e*ʧ*ʧ*j*ă*n
+IntervocalicJVocalization: *s*t*r*e*ʧ*ʧ*j*ă*n
 WeightCleanup: *s*t*r*e*ʧ*ʧ*j*ă*n
 HLoss: *s*t*r*e*ʧ*ʧ*j*ă*n
 Contraction: *s*t*r*e*ʧ*ʧ*j*ă*n
@@ -18718,6 +18854,60 @@ GlideDeletion: *s*t*r*e*ʧ*ʧ*j*ă*n
 Epenthesis: *s*t*r*e*ʧ*ʧ*j*ă*n
 Orthography: streċċġan
 Surface: streċċġan
+
+--- sunder ---
+PROTO: *sundrōjăną
+EXPECTED: sundor-
+OUTPUTS: sundreian
+
+ProtoInput: *s*u*n*d*r*ō*j*ă*n*ą
+InitialKn: *s*u*n*d*r*ō*j*ă*n*ą
+Palatalisation: *s*u*n*d*r*ō*j*ă*n*ą
+ConsonantRules: *s*u*n*d*r*ō*j*ă*n*ą
+WestGermanic: *s*u*n*d*r*ō*j*ă*n*ą
+NWGmcULowering: *s*u*n*d*r*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *s*u*n*d*r*ō*j*ă*n*ą
+NWGmcLongELowering: *s*u*n*d*r*ō*j*ă*n*ą
+NWGmcLongENasalRounding: *s*u*n*d*r*ō*j*ă*n*ą
+AuFronting: *s*u*n*d*r*ō*j*ă*n*ą
+WWSimplification: *s*u*n*d*r*ō*j*ă*n*ą
+DiphthongLeveling: *s*u*n*d*r*ō*j*ă*n*ą
+EwLongDiphthong: *s*u*n*d*r*ō*j*ă*n*ą
+AngloFrisianBrightening: *s*u*n*d*r*ō*j*ă*n*ą
+BreakingLengthening: *s*u*n*d*r*ō*j*ă*n*ą
+VelarFricPal: *s*u*n*d*r*ō*j*ă*n*ą
+ARestoration: *s*u*n*d*r*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *s*u*n*d*r*ō*j*ă*n*ą
+JGemination: *s*u*n*d*r*ō*j*ă*n*ą
+SkPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
+VelarPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
+WsPalatalDiphthongization: *s*u*n*d*r*ō*j*ă*n*ą
+IUmlaut: *s*u*n*d*r*ē*j*ă*n*ą
+JClusterCoalescence: *s*u*n*d*r*ē*j*ă*n*ą
+BackMutation: *s*u*n*d*r*ē*j*ă*n*ą
+NasalSpirantLengthening: *s*u*n*d*r*ē*j*ă*n*ą
+NasalSpirantLoss: *s*u*n*d*r*ē*j*ă*n*ą
+WeakTailNasalLoss: *s*u*n*d*r*ē*j*ă*n
+WeightMarkers: *s*u*n*d*r*ē*j*ă*n
+HighVowelApocope: *s*u*n*d*r*ē*j*ă*n
+HeavySyllableNasalApocope: *s*u*n*d*r*ē*j*ă*n
+WeakTailReduction: *s*u*n*d*r*ē*j*a*n
+JLossAfterHeavy: *s*u*n*d*r*ē*j*a*n
+IntervocalicJVocalization: *s*u*n*d*r*ē*i*a*n
+WeightCleanup: *s*u*n*d*r*ē*i*a*n
+HLoss: *s*u*n*d*r*ē*i*a*n
+Contraction: *s*u*n*d*r*ē*i*a*n
+ProtoToOEWeakTail: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightMarkers: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEApocope: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightCleanup: *s*u*n*d*r*e*i*a*n
+ProtoToOE: *s*u*n*d*r*e*i*a*n
+WGlide: *s*u*n*d*r*e*i*a*n
+GhMarker: *s*u*n*d*r*e*i*a*n
+GlideDeletion: *s*u*n*d*r*e*i*a*n
+Epenthesis: *s*u*n*d*r*e*i*a*n
+Orthography: sundreian
+Surface: sundreian
 
 --- swine ---
 PROTO: *swīnăn
@@ -18757,6 +18947,7 @@ HighVowelApocope: *s*w*ī*n*ă*n
 HeavySyllableNasalApocope: *s*w*ī*n*ă*n
 WeakTailReduction: *s*w*ī*n*a*n
 JLossAfterHeavy: *s*w*ī*n*a*n
+IntervocalicJVocalization: *s*w*ī*n*a*n
 WeightCleanup: *s*w*ī*n*a*n
 HLoss: *s*w*ī*n*a*n
 Contraction: *s*w*ī*n*a*n
@@ -18810,6 +19001,7 @@ HighVowelApocope: *t*ēa*x*m
 HeavySyllableNasalApocope: *t*ēa*x*m
 WeakTailReduction: *t*ēa*x*m
 JLossAfterHeavy: *t*ēa*x*m
+IntervocalicJVocalization: *t*ēa*x*m
 WeightCleanup: *t*ēa*x*m
 HLoss: *t*ēa*x*m
 Contraction: *t*ēa*x*m
@@ -18863,6 +19055,7 @@ HighVowelApocope: *θ*a*n*k
 HeavySyllableNasalApocope: *θ*a*n*k
 WeakTailReduction: *θ*a*n*k
 JLossAfterHeavy: *θ*a*n*k
+IntervocalicJVocalization: *θ*a*n*k
 WeightCleanup: *θ*a*n*k
 HLoss: *θ*a*n*k
 Contraction: *θ*a*n*k
@@ -18916,6 +19109,7 @@ HighVowelApocope: *t*i*m*r*ą
 HeavySyllableNasalApocope: *t*i*m*r
 WeakTailReduction: *t*i*m*r
 JLossAfterHeavy: *t*i*m*r
+IntervocalicJVocalization: *t*i*m*r
 WeightCleanup: *t*i*m*r
 HLoss: *t*i*m*r
 Contraction: *t*i*m*r
@@ -18969,6 +19163,7 @@ HighVowelApocope: *t*ā*k*n*ă*n
 HeavySyllableNasalApocope: *t*ā*k*n*ă*n
 WeakTailReduction: *t*ā*k*n*a*n
 JLossAfterHeavy: *t*ā*k*n*a*n
+IntervocalicJVocalization: *t*ā*k*n*a*n
 WeightCleanup: *t*ā*k*n*a*n
 HLoss: *t*ā*k*n*a*n
 Contraction: *t*ā*k*n*a*n
@@ -19022,6 +19217,7 @@ HighVowelApocope: *t*ū*n*ă*n
 HeavySyllableNasalApocope: *t*ū*n*ă*n
 WeakTailReduction: *t*ū*n*a*n
 JLossAfterHeavy: *t*ū*n*a*n
+IntervocalicJVocalization: *t*ū*n*a*n
 WeightCleanup: *t*ū*n*a*n
 HLoss: *t*ū*n*a*n
 Contraction: *t*ū*n*a*n
@@ -19075,6 +19271,7 @@ HighVowelApocope: *t*r*o*g*ą
 HeavySyllableNasalApocope: *t*r*o*g
 WeakTailReduction: *t*r*o*g
 JLossAfterHeavy: *t*r*o*g
+IntervocalicJVocalization: *t*r*o*g
 WeightCleanup: *t*r*o*g
 HLoss: *t*r*o*g
 Contraction: *t*r*o*g
@@ -19128,6 +19325,7 @@ HighVowelApocope: *w*eo*r*p*ă*n
 HeavySyllableNasalApocope: *w*eo*r*p*ă*n
 WeakTailReduction: *w*eo*r*p*a*n
 JLossAfterHeavy: *w*eo*r*p*a*n
+IntervocalicJVocalization: *w*eo*r*p*a*n
 WeightCleanup: *w*eo*r*p*a*n
 HLoss: *w*eo*r*p*a*n
 Contraction: *w*eo*r*p*a*n
@@ -19181,6 +19379,7 @@ HighVowelApocope: *w*æ*β*s
 HeavySyllableNasalApocope: *w*æ*β*s
 WeakTailReduction: *w*æ*β*s
 JLossAfterHeavy: *w*æ*β*s
+IntervocalicJVocalization: *w*æ*β*s
 WeightCleanup: *w*æ*β*s
 HLoss: *w*æ*β*s
 Contraction: *w*æ*β*s
@@ -19234,6 +19433,7 @@ HighVowelApocope: *w*æ*t*n
 HeavySyllableNasalApocope: *w*æ*t*n
 WeakTailReduction: *w*æ*t*n
 JLossAfterHeavy: *w*æ*t*n
+IntervocalicJVocalization: *w*æ*t*n
 WeightCleanup: *w*æ*t*n
 HLoss: *w*æ*t*n
 Contraction: *w*æ*t*n
@@ -19287,6 +19487,7 @@ HighVowelApocope: *w*ǣ*p*n*ă*n
 HeavySyllableNasalApocope: *w*ǣ*p*n*ă*n
 WeakTailReduction: *w*ǣ*p*n*a*n
 JLossAfterHeavy: *w*ǣ*p*n*a*n
+IntervocalicJVocalization: *w*ǣ*p*n*a*n
 WeightCleanup: *w*ǣ*p*n*a*n
 HLoss: *w*ǣ*p*n*a*n
 Contraction: *w*ǣ*p*n*a*n
@@ -19340,6 +19541,7 @@ HighVowelApocope: *w*æ*l
 HeavySyllableNasalApocope: *w*æ*l
 WeakTailReduction: *w*æ*l
 JLossAfterHeavy: *w*æ*l
+IntervocalicJVocalization: *w*æ*l
 WeightCleanup: *w*æ*l
 HLoss: *w*æ*l
 Contraction: *w*æ*l
@@ -19393,6 +19595,7 @@ HighVowelApocope: *w*i*n*d*ă*n
 HeavySyllableNasalApocope: *w*i*n*d*ă*n
 WeakTailReduction: *w*i*n*d*a*n
 JLossAfterHeavy: *w*i*n*d*a*n
+IntervocalicJVocalization: *w*i*n*d*a*n
 WeightCleanup: *w*i*n*d*a*n
 HLoss: *w*i*n*d*a*n
 Contraction: *w*i*n*d*a*n
@@ -19446,6 +19649,7 @@ HighVowelApocope: *ʤ*ea*r*n*ă*n
 HeavySyllableNasalApocope: *ʤ*ea*r*n*ă*n
 WeakTailReduction: *ʤ*ea*r*n*a*n
 JLossAfterHeavy: *ʤ*ea*r*n*a*n
+IntervocalicJVocalization: *ʤ*ea*r*n*a*n
 WeightCleanup: *ʤ*ea*r*n*a*n
 HLoss: *ʤ*ea*r*n*a*n
 Contraction: *ʤ*ea*r*n*a*n
@@ -19462,7 +19666,61 @@ Orthography: ġearnan
 Surface: ġearnan
 
 
-=== BUCKET: uncategorized (4) ===
+=== BUCKET: uncategorized (7) ===
+
+--- bore ---
+PROTO: *burōjăną
+EXPECTED: borian
+OUTPUTS: boreian
+
+ProtoInput: *b*u*r*ō*j*ă*n*ą
+InitialKn: *b*u*r*ō*j*ă*n*ą
+Palatalisation: *b*u*r*ō*j*ă*n*ą
+ConsonantRules: *b*u*r*ō*j*ă*n*ą
+WestGermanic: *b*u*r*ō*j*ă*n*ą
+NWGmcULowering: *b*o*r*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *b*o*r*ō*j*ă*n*ą
+NWGmcLongELowering: *b*o*r*ō*j*ă*n*ą
+NWGmcLongENasalRounding: *b*o*r*ō*j*ă*n*ą
+AuFronting: *b*o*r*ō*j*ă*n*ą
+WWSimplification: *b*o*r*ō*j*ă*n*ą
+DiphthongLeveling: *b*o*r*ō*j*ă*n*ą
+EwLongDiphthong: *b*o*r*ō*j*ă*n*ą
+AngloFrisianBrightening: *b*o*r*ō*j*ă*n*ą
+BreakingLengthening: *b*o*r*ō*j*ă*n*ą
+VelarFricPal: *b*o*r*ō*j*ă*n*ą
+ARestoration: *b*o*r*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *b*o*r*ō*j*ă*n*ą
+JGemination: *b*o*r*ō*j*ă*n*ą
+SkPalatalization: *b*o*r*ō*j*ă*n*ą
+VelarPalatalization: *b*o*r*ō*j*ă*n*ą
+WsPalatalDiphthongization: *b*o*r*ō*j*ă*n*ą
+IUmlaut: *b*o*r*ē*j*ă*n*ą
+JClusterCoalescence: *b*o*r*ē*j*ă*n*ą
+BackMutation: *b*o*r*ē*j*ă*n*ą
+NasalSpirantLengthening: *b*o*r*ē*j*ă*n*ą
+NasalSpirantLoss: *b*o*r*ē*j*ă*n*ą
+WeakTailNasalLoss: *b*o*r*ē*j*ă*n
+WeightMarkers: *b*o*r*ē*j*ă*n
+HighVowelApocope: *b*o*r*ē*j*ă*n
+HeavySyllableNasalApocope: *b*o*r*ē*j*ă*n
+WeakTailReduction: *b*o*r*ē*j*a*n
+JLossAfterHeavy: *b*o*r*ē*j*a*n
+IntervocalicJVocalization: *b*o*r*ē*i*a*n
+WeightCleanup: *b*o*r*ē*i*a*n
+HLoss: *b*o*r*ē*i*a*n
+Contraction: *b*o*r*ē*i*a*n
+ProtoToOEWeakTail: *b*o*r*ē*j*ă*n
+ProtoToOEWeightMarkers: *b*o*r*ē*j*ă*n
+ProtoToOEApocope: *b*o*r*ē*j*ă*n
+ProtoToOEWeightCleanup: *b*o*r*e*i*a*n
+ProtoToOE: *b*o*r*e*i*a*n
+WGlide: *b*o*r*e*i*a*n
+GhMarker: *b*o*r*e*i*a*n
+GlideDeletion: *b*o*r*e*i*a*n
+Epenthesis: *b*o*r*e*i*a*n
+Orthography: boreian
+Surface: boreian
 
 --- burst ---
 PROTO: *brestăną
@@ -19502,6 +19760,7 @@ HighVowelApocope: *b*r*e*s*t*ă*n
 HeavySyllableNasalApocope: *b*r*e*s*t*ă*n
 WeakTailReduction: *b*r*e*s*t*a*n
 JLossAfterHeavy: *b*r*e*s*t*a*n
+IntervocalicJVocalization: *b*r*e*s*t*a*n
 WeightCleanup: *b*r*e*s*t*a*n
 HLoss: *b*r*e*s*t*a*n
 Contraction: *b*r*e*s*t*a*n
@@ -19555,6 +19814,7 @@ HighVowelApocope: *f*l*ēo*x*ă*n
 HeavySyllableNasalApocope: *f*l*ēo*x*ă*n
 WeakTailReduction: *f*l*ēo*x*a*n
 JLossAfterHeavy: *f*l*ēo*x*a*n
+IntervocalicJVocalization: *f*l*ēo*x*a*n
 WeightCleanup: *f*l*ēo*x*a*n
 HLoss: *f*l*ēo*a*n
 Contraction: *f*l*ēo*a*n
@@ -19608,6 +19868,7 @@ HighVowelApocope: *f*r*o*s*t*ą
 HeavySyllableNasalApocope: *f*r*o*s*t
 WeakTailReduction: *f*r*o*s*t
 JLossAfterHeavy: *f*r*o*s*t
+IntervocalicJVocalization: *f*r*o*s*t
 WeightCleanup: *f*r*o*s*t
 HLoss: *f*r*o*s*t
 Contraction: *f*r*o*s*t
@@ -19622,6 +19883,114 @@ GlideDeletion: *f*r*o*s*t
 Epenthesis: *f*r*o*s*t
 Orthography: frost
 Surface: frost
+
+--- learn ---
+PROTO: *liznōjăną
+EXPECTED: leornian
+OUTPUTS: lierneian
+
+ProtoInput: *l*i*z*n*ō*j*ă*n*ą
+InitialKn: *l*i*z*n*ō*j*ă*n*ą
+Palatalisation: *l*i*z*n*ō*j*ă*n*ą
+ConsonantRules: *l*i*r*n*ō*j*ă*n*ą
+WestGermanic: *l*i*r*n*ō*j*ă*n*ą
+NWGmcULowering: *l*i*r*n*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *l*i*r*n*ō*j*ă*n*ą
+NWGmcLongELowering: *l*i*r*n*ō*j*ă*n*ą
+NWGmcLongENasalRounding: *l*i*r*n*ō*j*ă*n*ą
+AuFronting: *l*i*r*n*ō*j*ă*n*ą
+WWSimplification: *l*i*r*n*ō*j*ă*n*ą
+DiphthongLeveling: *l*i*r*n*ō*j*ă*n*ą
+EwLongDiphthong: *l*i*r*n*ō*j*ă*n*ą
+AngloFrisianBrightening: *l*i*r*n*ō*j*ă*n*ą
+BreakingLengthening: *l*ie*r*n*ō*j*ă*n*ą
+VelarFricPal: *l*ie*r*n*ō*j*ă*n*ą
+ARestoration: *l*ie*r*n*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *l*ie*r*n*ō*j*ă*n*ą
+JGemination: *l*ie*r*n*ō*j*ă*n*ą
+SkPalatalization: *l*ie*r*n*ō*j*ă*n*ą
+VelarPalatalization: *l*ie*r*n*ō*j*ă*n*ą
+WsPalatalDiphthongization: *l*ie*r*n*ō*j*ă*n*ą
+IUmlaut: *l*ie*r*n*ē*j*ă*n*ą
+JClusterCoalescence: *l*ie*r*n*ē*j*ă*n*ą
+BackMutation: *l*ie*r*n*ē*j*ă*n*ą
+NasalSpirantLengthening: *l*ie*r*n*ē*j*ă*n*ą
+NasalSpirantLoss: *l*ie*r*n*ē*j*ă*n*ą
+WeakTailNasalLoss: *l*ie*r*n*ē*j*ă*n
+WeightMarkers: *l*ie*r*n*ē*j*ă*n
+HighVowelApocope: *l*ie*r*n*ē*j*ă*n
+HeavySyllableNasalApocope: *l*ie*r*n*ē*j*ă*n
+WeakTailReduction: *l*ie*r*n*ē*j*a*n
+JLossAfterHeavy: *l*ie*r*n*ē*j*a*n
+IntervocalicJVocalization: *l*ie*r*n*ē*i*a*n
+WeightCleanup: *l*ie*r*n*ē*i*a*n
+HLoss: *l*ie*r*n*ē*i*a*n
+Contraction: *l*ie*r*n*ē*i*a*n
+ProtoToOEWeakTail: *l*ie*r*n*ē*j*ă*n
+ProtoToOEWeightMarkers: *l*ie*r*n*ē*j*ă*n
+ProtoToOEApocope: *l*ie*r*n*ē*j*ă*n
+ProtoToOEWeightCleanup: *l*ie*r*n*e*i*a*n
+ProtoToOE: *l*ie*r*n*e*i*a*n
+WGlide: *l*ie*r*n*e*i*a*n
+GhMarker: *l*ie*r*n*e*i*a*n
+GlideDeletion: *l*ie*r*n*e*i*a*n
+Epenthesis: *l*ie*r*n*e*i*a*n
+Orthography: lierneian
+Surface: lierneian
+
+--- make ---
+PROTO: *makōjăną
+EXPECTED: macian
+OUTPUTS: maceian
+
+ProtoInput: *m*a*k*ō*j*ă*n*ą
+InitialKn: *m*a*k*ō*j*ă*n*ą
+Palatalisation: *m*a*k*ō*j*ă*n*ą
+ConsonantRules: *m*a*k*ō*j*ă*n*ą
+WestGermanic: *m*a*k*ō*j*ă*n*ą
+NWGmcULowering: *m*a*k*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *m*a*k*ō*j*ă*n*ą
+NWGmcLongELowering: *m*a*k*ō*j*ă*n*ą
+NWGmcLongENasalRounding: *m*a*k*ō*j*ă*n*ą
+AuFronting: *m*a*k*ō*j*ă*n*ą
+WWSimplification: *m*a*k*ō*j*ă*n*ą
+DiphthongLeveling: *m*a*k*ō*j*ă*n*ą
+EwLongDiphthong: *m*a*k*ō*j*ă*n*ą
+AngloFrisianBrightening: *m*æ*k*ō*j*ă*n*ą
+BreakingLengthening: *m*æ*k*ō*j*ă*n*ą
+VelarFricPal: *m*æ*k*ō*j*ă*n*ą
+ARestoration: *m*a*k*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *m*a*k*ō*j*ă*n*ą
+JGemination: *m*a*k*ō*j*ă*n*ą
+SkPalatalization: *m*a*k*ō*j*ă*n*ą
+VelarPalatalization: *m*a*k*ō*j*ă*n*ą
+WsPalatalDiphthongization: *m*a*k*ō*j*ă*n*ą
+IUmlaut: *m*a*k*ē*j*ă*n*ą
+JClusterCoalescence: *m*a*k*ē*j*ă*n*ą
+BackMutation: *m*a*k*ē*j*ă*n*ą
+NasalSpirantLengthening: *m*a*k*ē*j*ă*n*ą
+NasalSpirantLoss: *m*a*k*ē*j*ă*n*ą
+WeakTailNasalLoss: *m*a*k*ē*j*ă*n
+WeightMarkers: *m*a*k*ē*j*ă*n
+HighVowelApocope: *m*a*k*ē*j*ă*n
+HeavySyllableNasalApocope: *m*a*k*ē*j*ă*n
+WeakTailReduction: *m*a*k*ē*j*a*n
+JLossAfterHeavy: *m*a*k*ē*j*a*n
+IntervocalicJVocalization: *m*a*k*ē*i*a*n
+WeightCleanup: *m*a*k*ē*i*a*n
+HLoss: *m*a*k*ē*i*a*n
+Contraction: *m*a*k*ē*i*a*n
+ProtoToOEWeakTail: *m*a*k*ē*j*ă*n
+ProtoToOEWeightMarkers: *m*a*k*ē*j*ă*n
+ProtoToOEApocope: *m*a*k*ē*j*ă*n
+ProtoToOEWeightCleanup: *m*a*k*e*i*a*n
+ProtoToOE: *m*a*k*e*i*a*n
+WGlide: *m*a*k*e*i*a*n
+GhMarker: *m*a*k*e*i*a*n
+GlideDeletion: *m*a*k*e*i*a*n
+Epenthesis: *m*a*k*e*i*a*n
+Orthography: maceian
+Surface: maceian
 
 --- milk ---
 PROTO: *melukz
@@ -19661,6 +20030,7 @@ HighVowelApocope: *m*eo*l*u*k
 HeavySyllableNasalApocope: *m*eo*l*u*k
 WeakTailReduction: *m*eo*l*o*k
 JLossAfterHeavy: *m*eo*l*o*k
+IntervocalicJVocalization: *m*eo*l*o*k
 WeightCleanup: *m*eo*l*o*k
 HLoss: *m*eo*l*o*k
 Contraction: *m*eo*l*o*k
@@ -19879,13 +20249,13 @@ Palatalisation: 16
 belly :: *balgiz, chew :: *kewwăną, rye :: *rugiz, shear :: *skerăną, shine :: *skīnăną, string :: *strangiz, sheep :: *skēpą, gift :: *geftiz, reek :: *raukiz, shove :: *skeubăną, begin :: *biginnăną, give :: *gebăną, rock :: *rukkiz, follow :: *fulgēną, shield :: *skelduz, wake :: *wakēną
 
 ConsonantRules: 136
-beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drive :: *drībăną, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fox :: *fuxsăz, ghost :: *gaistăz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leaf :: *laubą, leek :: *laukăz, life :: *lībą, liver :: *librō, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, rye :: *rugiz, salve :: *salbō, seam :: *saumăz, spoon :: *spēnuz, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thief :: *θeubăz, thirst :: *θurstuz, thunder :: *θunrăz, wain :: *wagnăz, weave :: *webăną, wife :: *wībą, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, live :: *libēną, stem :: *stamnăz, think :: *θankăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, seven :: *sebun, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, navel :: *nablōn, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, gift :: *geftiz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, shove :: *skeubăną, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, give :: *gebăną, guest :: *gastiz, learn :: *liznōjăną, rock :: *rukkiz, three :: *θrejez, cud :: *kwiθuz, buck :: *bukkăz, craft :: *kraftiz, deed :: *dēdiz, fowl :: *fuglăz, goose :: *gansz, month :: *mēnōθz, nave :: *nabō, shield :: *skelduz, thane :: *θegnăz, thorn :: *θurnuz, wolf :: *wulfăz, believe :: *laubjăną, bottom :: *budmăz, grave :: *grabăną, have :: *xabēną, loath :: *laiθăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz, milk :: *melukz
+beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drive :: *drībăną, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fox :: *fuxsăz, ghost :: *gaistăz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leaf :: *laubą, leek :: *laukăz, life :: *lībą, liver :: *librō, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, rye :: *rugiz, salve :: *salbō, seam :: *saumăz, spoon :: *spēnuz, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thief :: *θeubăz, thirst :: *θurstuz, thunder :: *θunrăz, wain :: *wagnăz, weave :: *webăną, wife :: *wībą, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, live :: *libēną, stem :: *stamnăz, think :: *θankăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, seven :: *sebun, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, navel :: *nablōn, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, gift :: *geftiz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, shove :: *skeubăną, three :: *θrejez, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, give :: *gebăną, guest :: *gastiz, rock :: *rukkiz, cud :: *kwiθuz, buck :: *bukkăz, craft :: *kraftiz, deed :: *dēdiz, fowl :: *fuglăz, goose :: *gansz, month :: *mēnōθz, nave :: *nabō, shield :: *skelduz, thane :: *θegnăz, thorn :: *θurnuz, wolf :: *wulfăz, believe :: *laubjăną, bottom :: *budmăz, grave :: *grabăną, have :: *xabēną, loath :: *laiθăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz, learn :: *liznōjăną, milk :: *melukz
 
 WestGermanic: 24
 deal :: *dailiz, dough :: *daigăz, ghost :: *gaistăz, heal :: *xailjăną, heath :: *xaiθiz, home :: *xaimăz, last :: *laistjăną, mean :: *mainjăną, rope :: *raipą, spread :: *spraidjăną, stone :: *stainăz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, lead :: *laidjăną, sheath :: *skaiθiz, withy :: *waiθiz, net :: *natją, soul :: *saiwălō, toe :: *taixwō, bone :: *bainăn, loam :: *laimōn, loath :: *laiθăz, token :: *taiknăn
 
 NWGmcULowering: 35
-board :: *burdą, crop :: *kruppăz, folk :: *fulką, fox :: *fuxsăz, head :: *xaubudą, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, ox :: *uxsōn, yoke :: *juką, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, shoulder :: *skuldrō, spur :: *spurăn, widow :: *widuwōn, bore :: *burōjăną, buck :: *bukkăz, fowl :: *fuglăz, rust :: *rustō, wolf :: *wulfăz, bottom :: *budmăz, corn :: *kurnăn, gold :: *gulθą, horn :: *xurnăn, trough :: *trugą, frost :: *frustą
+board :: *burdą, crop :: *kruppăz, folk :: *fulką, fox :: *fuxsăz, head :: *xaubudą, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, ox :: *uxsōn, yoke :: *juką, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, shoulder :: *skuldrō, spur :: *spurăn, widow :: *widuwōn, buck :: *bukkăz, fowl :: *fuglăz, rust :: *rustō, wolf :: *wulfăz, bottom :: *budmăz, corn :: *kurnăn, gold :: *gulθą, horn :: *xurnăn, trough :: *trugą, bore :: *burōjăną, frost :: *frustą
 
 NWGmcFinalLongORaising: 34
 hall :: *xallō, liver :: *librō, rind :: *rindō, rood :: *rōdō, salve :: *salbō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, while :: *xwīlō, rest :: *rastō, dew :: *dawwō, adder :: *nadrō, both :: *bō, meed :: *mizdō, beech :: *bōkō, soul :: *saiwălō, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, help :: *xelpō, hind :: *xendjō, linden :: *lindō, march :: *markō, shovel :: *skūflō, herd :: *xerdō, nave :: *nabō, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, lye :: *laugō, needle :: *nēθlō
@@ -19909,16 +20279,16 @@ EwLongDiphthong: 3
 chew :: *kewwăną, knee :: *knewą, nine :: *newun
 
 AngloFrisianBrightening: 90
-bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, flax :: *flaxsą, grass :: *grasą, hail :: *xaglą, hall :: *xallō, harm :: *xarmăz, hazel :: *xaslăz, hedge :: *xagjăz, malt :: *maltăz, mast :: *mastăz, nail :: *naglăz, raven :: *xrabnăz, salt :: *saltą, salve :: *salbō, set :: *satjăną, shaft :: *skaftą, slay :: *slaxăną, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, wax :: *waxsăną, strew :: *strawjăną, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, adder :: *nadrō, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, haw :: *xagōn, lap :: *labbăz, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, bier :: *barwōn, hair :: *xazwăz, harvest :: *xarbistuz, hold :: *xaldăną, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, guest :: *gastiz, lade :: *laθōjăną, laugh :: *lakăną, make :: *makōjăną, thatch :: *θaką, man :: *marīn, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, wart :: *warto, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, spare :: *sparēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, whale :: *walăz, yarn :: *garnăn
+bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, flax :: *flaxsą, grass :: *grasą, hail :: *xaglą, hall :: *xallō, harm :: *xarmăz, hazel :: *xaslăz, hedge :: *xagjăz, malt :: *maltăz, mast :: *mastăz, nail :: *naglăz, raven :: *xrabnăz, salt :: *saltą, salve :: *salbō, set :: *satjăną, shaft :: *skaftą, slay :: *slaxăną, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, wax :: *waxsăną, strew :: *strawjăną, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, adder :: *nadrō, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, haw :: *xagōn, lap :: *labbăz, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, bier :: *barwōn, hair :: *xazwăz, harvest :: *xarbistuz, hold :: *xaldăną, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, guest :: *gastiz, laugh :: *lakăną, thatch :: *θaką, man :: *marīn, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, wart :: *warto, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, lade :: *laθōjăną, spare :: *sparēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, whale :: *walăz, yarn :: *garnăn, make :: *makōjăną
 
 BreakingLengthening: 58
-barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, malt :: *maltăz, salt :: *saltą, salve :: *salbō, slay :: *slaxăną, starve :: *sterbăną, sword :: *swerdą, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, six :: *sexs, wax :: *waxsăną, meed :: *mizdō, ten :: *texun, dill :: *deljăz, gall :: *gallą, heart :: *xertōn, helm :: *xelmăz, still :: *stelljăną, bier :: *barwōn, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, march :: *markō, calf :: *kalbăz, learn :: *liznōjăną, earth :: *erθo, herd :: *xerdō, shield :: *skelduz, wart :: *warto, fern :: *farnăn, fold :: *falθăną, warp :: *werpăną, yarn :: *garnăn, milk :: *melukz
+barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, malt :: *maltăz, salt :: *saltą, salve :: *salbō, slay :: *slaxăną, starve :: *sterbăną, sword :: *swerdą, warp :: *warpą, wax :: *waxsą, wield :: *waldăną, six :: *sexs, wax :: *waxsăną, meed :: *mizdō, ten :: *texun, dill :: *deljăz, gall :: *gallą, heart :: *xertōn, helm :: *xelmăz, still :: *stelljăną, bier :: *barwōn, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, march :: *markō, calf :: *kalbăz, earth :: *erθo, herd :: *xerdō, shield :: *skelduz, wart :: *warto, fern :: *farnăn, fold :: *falθăną, warp :: *werpăną, yarn :: *garnăn, learn :: *liznōjăną, milk :: *melukz
 
 VelarFricPal: 20
 hail :: *xaglą, hall :: *xallō, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, hedge :: *xagjăz, hay :: *xawwją, hew :: *xawwăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, hind :: *xendjō, herd :: *xerdō, have :: *xabēną
 
 ARestoration: 14
-fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, lade :: *laθōjăną, make :: *makōjăną, nave :: *nabō, nose :: *nasō, sake :: *sakō, have :: *xabēną
+fast :: *fastēną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, nave :: *nabō, nose :: *nasō, sake :: *sakō, have :: *xabēną, lade :: *laθōjăną, make :: *makōjăną
 
 FinalWeakSchwaApocope: 64
 beard :: *bardăz, bosom :: *bōsmăz, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, eel :: *ēlăz, finger :: *fingrăz, fish :: *fiskăz, fox :: *fuxsăz, ghost :: *gaistăz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thief :: *θeubăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, stem :: *stamnăz, think :: *θankăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, hair :: *xazwăz, knight :: *knixtăz, gang :: *gangăz, calf :: *kalbăz, buck :: *bukkăz, fowl :: *fuglăz, thane :: *θegnăz, wether :: *wiθră, wolf :: *wulfăz, bottom :: *budmăz, loath :: *laiθăz, team :: *tauxmăz, thanks :: *θankăz, wasp :: *wabsăz, whale :: *walăz
@@ -19936,7 +20306,7 @@ WsPalatalDiphthongization: 7
 shaft :: *skaftą, shear :: *skerăną, year :: *jērą, sheep :: *skēpą, gift :: *geftiz, give :: *gebăną, guest :: *gastiz
 
 IUmlaut: 60
-belly :: *balgiz, berry :: *bazjas, bride :: *brūdiz, deal :: *dailiz, heal :: *xailjăną, heath :: *xaiθiz, hedge :: *xagjăz, last :: *laistjăną, mean :: *mainjăną, need :: *naudiz, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, sit :: *setjăną, spread :: *spraidjăną, string :: *strangiz, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, hay :: *xawwją, lead :: *laidjăną, sheath :: *skaiθiz, show :: *skawōjăną, youth :: *jugunθiz, birth :: *burdiz, withy :: *waiθiz, net :: *natją, staff :: *stabiz, bow :: *baugjăną, dill :: *deljăz, fire :: *fūri, fright :: *furxtīn, handle :: *xandlōjăną, nettle :: *natilōn, still :: *stelljăną, harvest :: *xarbistuz, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, bore :: *burōjăną, guest :: *gastiz, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, three :: *θrejez, man :: *marīn, craft :: *kraftiz, spindle :: *spennilō, believe :: *laubjăną, light :: *leuxtjăną, seek :: *sōkjăną, stretch :: *strakkjăną
+belly :: *balgiz, berry :: *bazjas, bride :: *brūdiz, deal :: *dailiz, heal :: *xailjăną, heath :: *xaiθiz, hedge :: *xagjăz, last :: *laistjăną, mean :: *mainjăną, need :: *naudiz, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, sit :: *setjăną, spread :: *spraidjăną, string :: *strangiz, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, hay :: *xawwją, lead :: *laidjăną, sheath :: *skaiθiz, show :: *skawōjăną, youth :: *jugunθiz, birth :: *burdiz, withy :: *waiθiz, net :: *natją, staff :: *stabiz, bow :: *baugjăną, dill :: *deljăz, fire :: *fūri, fright :: *furxtīn, handle :: *xandlōjăną, nettle :: *natilōn, still :: *stelljăną, harvest :: *xarbistuz, might :: *maxtiz, reek :: *raukiz, three :: *θrejez, wight :: *wextiz, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, guest :: *gastiz, lick :: *likkōjăną, rock :: *rukkiz, man :: *marīn, craft :: *kraftiz, spindle :: *spennilō, believe :: *laubjăną, lade :: *laθōjăną, light :: *leuxtjăną, seek :: *sōkjăną, stretch :: *strakkjăną, sunder :: *sundrōjăną, bore :: *burōjăną, learn :: *liznōjăną, make :: *makōjăną
 
 JClusterCoalescence: 0
 
@@ -19950,7 +20320,7 @@ NasalSpirantLoss: 4
 fist :: *funxwstiz, youth :: *jugunθiz, find :: *finþăną, goose :: *gansz
 
 WeakTailNasalLoss: 97
-bind :: *bindăną, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, lime :: *līmą, mean :: *mainjăną, rain :: *regną, read :: *rēdăną, ride :: *rīdăną, room :: *rūmą, run :: *rinnăną, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swim :: *swimmăną, thrash :: *θreskăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, fast :: *fastēną, hew :: *xawwăną, lead :: *laidjăną, show :: *skawōjăną, fly :: *fleugăną, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, handle :: *xandlōjăną, still :: *stelljăną, forlorn :: *leusăną, help :: *xelpăną, hold :: *xaldăną, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, give :: *gebăną, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, wade :: *wadăną, wash :: *waskăną, follow :: *fulgēną, wake :: *wakēną, ban :: *banną, believe :: *laubjăną, breeches :: *brekăną, fare :: *farăną, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, light :: *leuxtjăną, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, stretch :: *strakkjăną, warp :: *werpăną, water :: *watną, wind :: *windăną, burst :: *brestăną, flee :: *fleuxăną
+bind :: *bindăną, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, lime :: *līmą, mean :: *mainjăną, rain :: *regną, read :: *rēdăną, ride :: *rīdăną, room :: *rūmą, run :: *rinnăną, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swim :: *swimmăną, thrash :: *θreskăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, fast :: *fastēną, hew :: *xawwăną, lead :: *laidjăną, show :: *skawōjăną, fly :: *fleugăną, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, handle :: *xandlōjăną, still :: *stelljăną, forlorn :: *leusăną, help :: *xelpăną, hold :: *xaldăną, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, bake :: *bakăną, begin :: *biginnăną, break :: *brekăną, give :: *gebăną, laugh :: *lakăną, lick :: *likkōjăną, wade :: *wadăną, wash :: *waskăną, follow :: *fulgēną, wake :: *wakēną, ban :: *banną, believe :: *laubjăną, breeches :: *brekăną, fare :: *farăną, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, lade :: *laθōjăną, light :: *leuxtjăną, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, stretch :: *strakkjăną, sunder :: *sundrōjăną, warp :: *werpăną, water :: *watną, wind :: *windăną, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, learn :: *liznōjăną, make :: *makōjăną
 
 WeightMarkers: 0
 
@@ -19961,29 +20331,32 @@ HeavySyllableNasalApocope: 52
 barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, flax :: *flaxsą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, head :: *xaubudą, hoard :: *xuzdą, knee :: *knewą, land :: *landą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, lock :: *luką, meal :: *mēlą, rope :: *raipą, sail :: *seglą, salt :: *saltą, shaft :: *skaftą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, wife :: *wībą, wonder :: *wundrą, word :: *wurdą, year :: *jērą, drench :: *dranką, hay :: *xawwją, straw :: *strawą, yoke :: *juką, honey :: *xunăgą, door :: *durą, gall :: *gallą, sheep :: *skēpą, fell :: *fellą, lung :: *lungwą, thatch :: *θaką, nest :: *nistą, gold :: *gulθą, timber :: *timrą, trough :: *trugą, frost :: *frustą
 
 WeakTailReduction: 112
-berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, mean :: *mainjăną, read :: *rēdăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, spur :: *spurăn, still :: *stelljăną, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, begin :: *biginnăną, bore :: *burōjăną, give :: *gebăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, wade :: *wadăną, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
+berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, mean :: *mainjăną, read :: *rēdăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, spur :: *spurăn, still :: *stelljăną, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, begin :: *biginnăną, give :: *gebăną, lick :: *likkōjăną, cud :: *kwiθuz, wade :: *wadăną, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, lade :: *laθōjăną, light :: *leuxtjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, sunder :: *sundrōjăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 JLossAfterHeavy: 17
 heal :: *xailjăną, last :: *laistjăną, mean :: *mainjăną, send :: *sandjăną, set :: *satjăną, sit :: *setjăną, spread :: *spraidjăną, strew :: *strawjăną, hay :: *xawwją, lead :: *laidjăną, dill :: *deljăz, still :: *stelljăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, believe :: *laubjăną, light :: *leuxtjăną
+
+IntervocalicJVocalization: 11
+whine :: *wainōjăną, friend :: *frijōndz, show :: *skawōjăną, handle :: *xandlōjăną, three :: *θrejez, lick :: *likkōjăną, lade :: *laθōjăną, sunder :: *sundrōjăną, bore :: *burōjăną, learn :: *liznōjăną, make :: *makōjăną
 
 WeightCleanup: 0
 
 HLoss: 3
 slay :: *slaxăną, ten :: *texun, flee :: *fleuxăną
 
-Contraction: 1
-slay :: *slaxăną
+Contraction: 3
+slay :: *slaxăną, friend :: *frijōndz, three :: *θrejez
 
-ProtoToOEWeakTail: 225
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deer :: *deuzą, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, let :: *lētăną, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, mean :: *mainjăną, need :: *naudiz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, shaft :: *skaftą, shear :: *skerăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, wax :: *waxsăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, drench :: *dranką, rest :: *rastō, dew :: *dawwō, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, bore :: *burōjăną, give :: *gebăną, guest :: *gastiz, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, cud :: *kwiθuz, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, deed :: *dēdiz, hammer :: *xamaras, herd :: *xerdō, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, thorn :: *θurnuz, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, lye :: *laugō, needle :: *nēθlō, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+ProtoToOEWeakTail: 227
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deer :: *deuzą, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flax :: *flaxsą, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, let :: *lētăną, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, mean :: *mainjăną, need :: *naudiz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, shaft :: *skaftą, shear :: *skerăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, wax :: *waxsăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, drench :: *dranką, rest :: *rastō, dew :: *dawwō, friend :: *frijōndz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, gift :: *geftiz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, three :: *θrejez, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, give :: *gebăną, guest :: *gastiz, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, deed :: *dēdiz, hammer :: *xamaras, herd :: *xerdō, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, thorn :: *θurnuz, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, horn :: *xurnăn, lade :: *laθōjăną, light :: *leuxtjăną, lye :: *laugō, needle :: *nēθlō, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, sunder :: *sundrōjăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 ProtoToOEWeightMarkers: 0
 
 ProtoToOEApocope: 113
 barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, belly :: *balgiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deer :: *deuzą, fee :: *fexu, flax :: *flaxsą, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heath :: *xaiθiz, hoard :: *xuzdą, knee :: *knewą, land :: *landą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, meal :: *mēlą, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, salve :: *salbō, shaft :: *skaftą, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, spoon :: *spēnuz, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, while :: *xwīlō, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, year :: *jērą, fist :: *funxwstiz, drench :: *dranką, rest :: *rastō, hay :: *xawwją, sheath :: *skaiθiz, straw :: *strawą, yoke :: *juką, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, honey :: *xunăgą, withy :: *waiθiz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, sheep :: *skēpą, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, gift :: *geftiz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, guest :: *gastiz, rock :: *rukkiz, thatch :: *θaką, shovel :: *skūflō, craft :: *kraftiz, deed :: *dēdiz, herd :: *xerdō, nest :: *nistą, rust :: *rustō, shield :: *skelduz, thorn :: *θurnuz, gold :: *gulθą, lye :: *laugō, needle :: *nēθlō, timber :: *timrą, trough :: *trugą, frost :: *frustą
 
-ProtoToOEWeightCleanup: 149
-berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, mean :: *mainjăną, read :: *rēdăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, ox :: *uxsōn, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, fast :: *fastēną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, bore :: *burōjăną, give :: *gebăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, man :: *marīn, sister :: *swestēr, wade :: *wadăną, hammer :: *xamaras, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
+ProtoToOEWeightCleanup: 150
+berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, let :: *lētăną, mean :: *mainjăną, read :: *rēdăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shear :: *skerăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, ox :: *uxsōn, wax :: *waxsăną, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, fast :: *fastēną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, three :: *θrejez, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, give :: *gebăną, lick :: *likkōjăną, cud :: *kwiθuz, man :: *marīn, sister :: *swestēr, wade :: *wadăną, hammer :: *xamaras, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, have :: *xabēną, horn :: *xurnăn, lade :: *laθōjăną, light :: *leuxtjăną, loam :: *laimōn, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, sunder :: *sundrōjăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 ProtoToOE: 0
 
@@ -20000,6 +20373,6 @@ Epenthesis: 89
 beaver :: *bebruz, belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flax :: *flaxsą, flea :: *flauxz, fodder :: *fōdrą, fox :: *fuxsăz, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, liver :: *librō, rudder :: *rōθrăz, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, ox :: *uxsōn, six :: *sexs, wax :: *waxsăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, adder :: *nadrō, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, follow :: *fulgēną, fowl :: *fuglăz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, light :: *leuxtjăną, sing :: *singwăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
 
 Orthography: 358
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, eel :: *ēlăz, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flax :: *flaxsą, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, fox :: *fuxsăz, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, leek :: *laukăz, let :: *lētăną, life :: *lībą, lime :: *līmą, liver :: *librō, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, meal :: *mēlą, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, raven :: *xrabnăz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shaft :: *skaftą, shear :: *skerăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thief :: *θeubăz, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, ox :: *uxsōn, six :: *sexs, wax :: *waxsăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, drench :: *dranką, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, stem :: *stamnăz, tap :: *tappōn, think :: *θankăz, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, gift :: *geftiz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, calf :: *kalbăz, give :: *gebăną, guest :: *gastiz, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, three :: *θrejez, cud :: *kwiθuz, man :: *marīn, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, follow :: *fulgēną, buck :: *bukkăz, craft :: *kraftiz, deed :: *dēdiz, earth :: *erθo, fowl :: *fuglăz, god :: *gud, goose :: *gansz, hammer :: *xamaras, herd :: *xerdō, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, thane :: *θegnăz, thorn :: *θurnuz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, spindle :: *spennilō, ban :: *banną, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, have :: *xabēną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, needle :: *nēθlō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, stretch :: *strakkjăną, swine :: *swīnăn, team :: *tauxmăz, thanks :: *θankăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, comb :: *kambăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, eel :: *ēlăz, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flax :: *flaxsą, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, fox :: *fuxsăz, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, land :: *landą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, leek :: *laukăz, let :: *lētăną, life :: *lībą, lime :: *līmą, liver :: *librō, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, meal :: *mēlą, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, raven :: *xrabnăz, read :: *rēdăną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shaft :: *skaftą, shear :: *skerăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spoon :: *spēnuz, spread :: *spraidjăną, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thief :: *θeubăz, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, wax :: *waxsą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, year :: *jērą, ox :: *uxsōn, six :: *sexs, wax :: *waxsăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, live :: *libēną, drench :: *dranką, fast :: *fastēną, rest :: *rastō, sap :: *sapōn, stem :: *stamnăz, tap :: *tappōn, think :: *θankăz, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, gift :: *geftiz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, three :: *θrejez, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, break :: *brekăną, calf :: *kalbăz, give :: *gebăną, guest :: *gastiz, laugh :: *lakăną, lick :: *likkōjăną, rock :: *rukkiz, thatch :: *θaką, cud :: *kwiθuz, man :: *marīn, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, follow :: *fulgēną, buck :: *bukkăz, craft :: *kraftiz, deed :: *dēdiz, earth :: *erθo, fowl :: *fuglăz, god :: *gud, goose :: *gansz, hammer :: *xamaras, herd :: *xerdō, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nest :: *nistą, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, thane :: *θegnăz, thorn :: *θurnuz, wake :: *wakēną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, spindle :: *spennilō, ban :: *banną, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, have :: *xabēną, horn :: *xurnăn, lade :: *laθōjăną, light :: *leuxtjăną, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, needle :: *nēθlō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, span :: *spannăną, spare :: *sparēną, stretch :: *strakkjăną, sunder :: *sundrōjăną, swine :: *swīnăn, team :: *tauxmăz, thanks :: *θankăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną, yarn :: *garnăn, bore :: *burōjăną, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, learn :: *liznōjăną, make :: *makōjăną, milk :: *melukz
 
 Surface: 0

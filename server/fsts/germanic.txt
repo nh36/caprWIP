@@ -1405,6 +1405,12 @@ define OEJLossAfterHeavy [
     {*j} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonantNoR _
 ];
 
+# Intervocalic *j vocalization: *j → *i between vowels.
+# In OE class II weak verbs (*-ōjan-), *j surfaces as part of the -ian suffix.
+define OEIntervocalicJVocalization [
+    {*j} -> {*i} || EnglishStarVocalic _ EnglishStarVocalic
+];
+
 define OEBackMutation [
     {*e} -> {*o} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
     {*i} -> {*u} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
@@ -1571,6 +1577,7 @@ define EnglishProtoToOE (
     .o. OEUnstressedLongVowelShortening
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
+    .o. OEIntervocalicJVocalization
     .o. OEWeightCleanup
     .o. OEHLoss
     .o. OEContraction
@@ -1638,6 +1645,7 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
+    .o. OEIntervocalicJVocalization
     .o. OEWeightCleanup
     .o. OEHLoss
     .o. OEContraction;
