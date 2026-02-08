@@ -1294,9 +1294,14 @@ define NWGmcFinalLongORaising [
 # then *ā was fronted to *ǣ by AFB. We model this as a direct *ē → *ǣ to avoid
 # conflating with *ā < *ai monophthongization (which was NOT fronted; R/T §6.1.2:
 # "fronting of *ā must have preceded monophthongization of *ai").
-# Before nasals, *ē₁ → *ā → nasalized/rounded *ō; we block before nasals here.
 define NWGmcLongELowering [
     {*ē} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal]
+];
+
+# R/T vol.2 §5.1.2: Before nasals, *ē₁ → *ā → nasalized/rounded *ō.
+# *mēnōθ- → *mānōθ- → mōnaþ; *spēnuz → *spānuz → spōn.
+define NWGmcLongENasalRounding [
+    {*ē} -> {*ō} || _ EnglishStarNasal
 ];
 
 define OEWeakTailNasalLoss [
@@ -1517,6 +1522,7 @@ define EnglishProtoToOE (
     .o. NWGmcULowering
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
+    .o. NWGmcLongENasalRounding
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -1590,6 +1596,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
+    .o. NWGmcLongENasalRounding
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
