@@ -1259,8 +1259,13 @@ define EnglishStarNonHighVowel [
     {*o} | {*ō} | {*ɔ̆}
 ];
 
+# R/T vol.2 §2.1.1: Stressed *u → *o before non-high vowels in NWGmc,
+# EXCEPT when a nasal (*n, *m) follows *u (R/T: "no nasal in the syllable coda,
+# nor *j, intervened"). Also blocked before *j (but *j triggers i-umlaut later).
+# Northern WGmc (OE/OS) also blocks before intervocalic nasals.
+# Exceptions near labials (*full, *wulf, *fugol) are lexically irregular.
 define NWGmcULowering [
-    {*u} -> {*o} || _ EnglishStarConsonant+ EnglishStarNonHighVowel
+    {*u} -> {*o} || _ [EnglishStarConsonant - EnglishStarNasal] EnglishStarConsonant* EnglishStarNonHighVowel
 ];
 
 # R/T vol.2 p.267: "word-final bimoric non-nasalized long *-ō became

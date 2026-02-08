@@ -1,4 +1,4 @@
-Total mismatches: 245
+Total mismatches: 242
 
 i_umlaut_missing_true: 4
 proto_mismatch_suspect: 0
@@ -17,7 +17,7 @@ palatal_extra_other: 18
 back_expected_front_out: 10
 palatal_marker_variant: 1
 epenthetic_vowel_missing: 0
-vowel_quality_other: 29
+vowel_quality_other: 26
 gemination_extra: 1
 inflectional_suffix_extra: 18
 final_devoicing_missing: 1
@@ -59,7 +59,7 @@ palatalization_missing:
   *burdiz -> byrd (expected ġebyrd)
   *dranką -> drænc (expected drenċ)
   *fleugăną -> flēogan (expected flȳġe)
-  *xunăgą -> honag (expected huniġ)
+  *xunăgą -> hunag (expected huniġ)
 final_vowel_extra:
   *liθuz -> liþo (expected hlid)
   *natją -> nete (expected net)
@@ -88,7 +88,7 @@ final_n_missing:
   *gangăz -> ġæng (expected gangan)
   *xendjō -> hind (expected hindan)
   *lindō -> lind (expected linden)
-  *lungwą -> longw (expected lungen)
+  *lungwą -> lungw (expected lungen)
 palatal_extra_other:
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġinnan (expected beginnan)
