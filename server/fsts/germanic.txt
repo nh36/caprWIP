@@ -1276,7 +1276,10 @@ define OEWeakTailReduction [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆},
     {*u} -> {*o},
-    {*i} -> {*e} || _ .#.
+    {*i} -> {*e} || _ .#.,
+    # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
+    # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
+    {*æ} -> {*e} || EnglishStarVocalic EnglishStarConsonant+ _
 ];
 
 define OEEpentheticInsertion [
