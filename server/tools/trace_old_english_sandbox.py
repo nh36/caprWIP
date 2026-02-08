@@ -30,6 +30,7 @@ STAGES: List[Tuple[str, str]] = [
     ("JGemination", "old_english_sandbox_after_j_gemination.bin"),
     ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
     ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
+    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
     ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
     ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
     ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),

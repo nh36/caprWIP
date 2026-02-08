@@ -1441,6 +1441,20 @@ define OEVelarPalatalization [
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ];
 
+# R/T vol.2 §6.5.1: West Saxon diphthongization by initial palatals.
+# After initial velars and *sk had been palatalized, following stressed
+# non-high front vowels were diphthongized: *æ→ea, *ǣ→ēa, *e→ie, *ē→īe.
+# Triggers: initial ʧ (< *k), ʤ (< *g), ʃ (< *sk), j.
+# ~40 lexemes affected; examples: *jērą → géar, *skaftą → sceaft.
+# NOTE: {*e} must not match inside diphthongs {*ea}/{*eo} — use right context
+# to exclude sequences where {*e} is followed by {*a}/{*o}.
+define OEWsPalatalDiphthongization [
+    {*æ} -> {*ea} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
+    {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
+    {*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
+    {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
+];
+
 define OEVelarFricativePalatalization [
     {*x} -> {*ç} || _ EnglishStarFrontVowel,
     {*ɣ} -> {*j} || _ EnglishStarFrontVowel,
@@ -1543,6 +1557,7 @@ define EnglishProtoToOE (
     .o. PWGmcJGemination
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
     .o. OEBackMutation
@@ -1609,6 +1624,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PWGmcJGemination
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
     .o. OEBackMutation

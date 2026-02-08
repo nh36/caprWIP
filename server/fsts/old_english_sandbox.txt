@@ -39,7 +39,9 @@ define OESandboxAfterSkPalatalization OESandboxAfterJGemination
     .o. OESkPalatalization;
 define OESandboxAfterVelarPalatalization OESandboxAfterSkPalatalization
     .o. OEVelarPalatalization;
-define OESandboxAfterIUmlaut OESandboxAfterVelarPalatalization
+define OESandboxAfterWsPalatalDiphthongization OESandboxAfterVelarPalatalization
+    .o. OEWsPalatalDiphthongization;
+define OESandboxAfterIUmlaut OESandboxAfterWsPalatalDiphthongization
     .o. OEIUmlaut;
 define OESandboxAfterJClusterCoalescence OESandboxAfterIUmlaut
     .o. OEJClusterCoalescence;
@@ -168,6 +170,10 @@ save stack old_english_sandbox_after_sk_palatalization.bin
 clear stack
 regex OESandboxAfterVelarPalatalization;
 save stack old_english_sandbox_after_velar_palatalization.bin
+
+clear stack
+regex OESandboxAfterWsPalatalDiphthongization;
+save stack old_english_sandbox_after_ws_palatal_diphthongization.bin
 
 clear stack
 regex OESandboxAfterIUmlaut;
