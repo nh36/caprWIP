@@ -424,7 +424,8 @@ define PGmcStarConsonant [
     {*þ} |
     {*ŋ} |
     {*ɣ} |
-    {*θ}
+    {*θ} |
+    {*β}
 ];
 
 define PGmcStarFrontVowel [
@@ -656,6 +657,7 @@ define OldEnglishRemoveStars [
     {*ȳ} -> ȳ,
     {*y} -> y,
     {*b} -> b,
+    {*β} -> f,
     {*c} -> c,
     {*d} -> d,
     {*f} -> f,
@@ -720,9 +722,9 @@ define EnglishStarLiquid [{*l} | {*r}];
 
 define EnglishStarVelarStop [{*k} | {*g}];
 
-define EnglishStarLabial [{*b} | {*p} | {*f} | {*v} | {*m} | {*w}];
+define EnglishStarLabial [{*b} | {*β} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
-define EnglishStarFricative [{*f} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
 
 define EnglishStarConsonantSeq [EnglishStarConsonant]*;
 
@@ -830,11 +832,21 @@ define OEFinalSchwaApocope [
     {*ă} -> 0 || _ .#.
 ];
 
+# PGmc voiced obstruent allophony (R/T vol.1 §3.2.4, vol.2 p.100):
+# *b had stop [b] word-initially, after nasals, and geminated;
+# fricative [β] after vowels and liquids (= most other environments).
+# In OE, [β] was written f (since OE f = [v] between vowels).
+define PGmcBAllophony [
+    {*b} -> {*β} || PGmcStarVocalic _,
+    {*b} -> {*β} || [{*l} | {*r}] _
+];
+
 # NOTE (2026-02-06): OEFinalSchwaApocope moved to EnglishProtoToOE
 # after OEARestoration to fix chronology. A-restoration must see the
 # weak-tail endings before they are apocopated.
 define PGmcConsonantRules PGmcFinalZLoss
-    .o. PGmcRhotacism;
+    .o. PGmcRhotacism
+    .o. PGmcBAllophony;
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)

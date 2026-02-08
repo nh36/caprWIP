@@ -1,4 +1,4 @@
-=== BUCKET: exact_match (128) ===
+=== BUCKET: exact_match (140) ===
 
 --- barrow ---
 PROTO: *bergą
@@ -199,6 +199,56 @@ GlideDeletion: *b*ea*r*d
 Epenthesis: *b*ea*r*d
 Orthography: beard
 Surface: beard
+
+--- beaver ---
+PROTO: *bebruz
+EXPECTED: befer
+OUTPUTS: befer
+
+ProtoInput: *b*e*b*r*u*z
+InitialKn: *b*e*b*r*u*z
+Palatalisation: *b*e*b*r*u*z
+ConsonantRules: *b*e*β*r*u
+WestGermanic: *b*e*β*r*u
+NWGmcULowering: *b*e*β*r*u
+NWGmcFinalLongORaising: *b*e*β*r*u
+AuFronting: *b*e*β*r*u
+WWSimplification: *b*e*β*r*u
+DiphthongLeveling: *b*e*β*r*u
+EwLongDiphthong: *b*e*β*r*u
+AngloFrisianBrightening: *b*e*β*r*u
+BreakingLengthening: *b*e*β*r*u
+VelarFricPal: *b*e*β*r*u
+ARestoration: *b*e*β*r*u
+FinalWeakSchwaApocope: *b*e*β*r*u
+JGemination: *b*e*β*r*u
+SkPalatalization: *b*e*β*r*u
+VelarPalatalization: *b*e*β*r*u
+IUmlaut: *b*e*β*r*u
+JClusterCoalescence: *b*e*β*r*u
+BackMutation: *b*e*β*r*u
+NasalSpirantLengthening: *b*e*β*r*u
+NasalSpirantLoss: *b*e*β*r*u
+WeakTailNasalLoss: *b*e*β*r*u
+WeightMarkers: *b*e*β*r*u
+HighVowelApocope: *b*e*β*r
+HeavySyllableNasalApocope: *b*e*β*r
+WeakTailReduction: *b*e*β*r
+JLossAfterHeavy: *b*e*β*r
+WeightCleanup: *b*e*β*r
+HLoss: *b*e*β*r
+Contraction: *b*e*β*r
+ProtoToOEWeakTail: *b*e*β*r*u
+ProtoToOEWeightMarkers: *b*e*β*r*u
+ProtoToOEApocope: *b*e*β*r
+ProtoToOEWeightCleanup: *b*e*β*r
+ProtoToOE: *b*e*β*r
+WGlide: *b*e*β*r
+GhMarker: *b*e*β*r
+GlideDeletion: *b*e*β*r
+Epenthesis: *b*e*β*e*r
+Orthography: befer
+Surface: befer
 
 --- belly ---
 PROTO: *balgiz
@@ -1450,6 +1500,56 @@ Epenthesis: *d*r*i*n*k*a*n
 Orthography: drincan
 Surface: drincan
 
+--- drive ---
+PROTO: *drībăną
+EXPECTED: drīfan
+OUTPUTS: drīfan
+
+ProtoInput: *d*r*ī*b*ă*n*ą
+InitialKn: *d*r*ī*b*ă*n*ą
+Palatalisation: *d*r*ī*b*ă*n*ą
+ConsonantRules: *d*r*ī*β*ă*n*ą
+WestGermanic: *d*r*ī*β*ă*n*ą
+NWGmcULowering: *d*r*ī*β*ă*n*ą
+NWGmcFinalLongORaising: *d*r*ī*β*ă*n*ą
+AuFronting: *d*r*ī*β*ă*n*ą
+WWSimplification: *d*r*ī*β*ă*n*ą
+DiphthongLeveling: *d*r*ī*β*ă*n*ą
+EwLongDiphthong: *d*r*ī*β*ă*n*ą
+AngloFrisianBrightening: *d*r*ī*β*ă*n*ą
+BreakingLengthening: *d*r*ī*β*ă*n*ą
+VelarFricPal: *d*r*ī*β*ă*n*ą
+ARestoration: *d*r*ī*β*ă*n*ą
+FinalWeakSchwaApocope: *d*r*ī*β*ă*n*ą
+JGemination: *d*r*ī*β*ă*n*ą
+SkPalatalization: *d*r*ī*β*ă*n*ą
+VelarPalatalization: *d*r*ī*β*ă*n*ą
+IUmlaut: *d*r*ī*β*ă*n*ą
+JClusterCoalescence: *d*r*ī*β*ă*n*ą
+BackMutation: *d*r*ī*β*ă*n*ą
+NasalSpirantLengthening: *d*r*ī*β*ă*n*ą
+NasalSpirantLoss: *d*r*ī*β*ă*n*ą
+WeakTailNasalLoss: *d*r*ī*β*ă*n
+WeightMarkers: *d*r*ī*β*ă*n
+HighVowelApocope: *d*r*ī*β*ă*n
+HeavySyllableNasalApocope: *d*r*ī*β*ă*n
+WeakTailReduction: *d*r*ī*β*a*n
+JLossAfterHeavy: *d*r*ī*β*a*n
+WeightCleanup: *d*r*ī*β*a*n
+HLoss: *d*r*ī*β*a*n
+Contraction: *d*r*ī*β*a*n
+ProtoToOEWeakTail: *d*r*ī*β*ă*n
+ProtoToOEWeightMarkers: *d*r*ī*β*ă*n
+ProtoToOEApocope: *d*r*ī*β*ă*n
+ProtoToOEWeightCleanup: *d*r*ī*β*a*n
+ProtoToOE: *d*r*ī*β*a*n
+WGlide: *d*r*ī*β*a*n
+GhMarker: *d*r*ī*β*a*n
+GlideDeletion: *d*r*ī*β*a*n
+Epenthesis: *d*r*ī*β*a*n
+Orthography: drīfan
+Surface: drīfan
+
 --- eat ---
 PROTO: *etăną
 EXPECTED: etan
@@ -2600,6 +2700,56 @@ Epenthesis: *ç*æ*s*l
 Orthography: hæsl
 Surface: hæsl
 
+--- head ---
+PROTO: *xaubudą
+EXPECTED: hēafod
+OUTPUTS: hēafod
+
+ProtoInput: *x*au*b*u*d*ą
+InitialKn: *x*au*b*u*d*ą
+Palatalisation: *x*au*b*u*d*ą
+ConsonantRules: *x*au*β*u*d*ą
+WestGermanic: *x*au*β*u*d*ą
+NWGmcULowering: *x*au*β*o*d*ą
+NWGmcFinalLongORaising: *x*au*β*o*d*ą
+AuFronting: *x*aeu*β*o*d*ą
+WWSimplification: *x*aeu*β*o*d*ą
+DiphthongLeveling: *x*ēa*β*o*d*ą
+EwLongDiphthong: *x*ēa*β*o*d*ą
+AngloFrisianBrightening: *x*ēa*β*o*d*ą
+BreakingLengthening: *x*ēa*β*o*d*ą
+VelarFricPal: *ç*ēa*β*o*d*ą
+ARestoration: *ç*ēa*β*o*d*ą
+FinalWeakSchwaApocope: *ç*ēa*β*o*d*ą
+JGemination: *ç*ēa*β*o*d*ą
+SkPalatalization: *ç*ēa*β*o*d*ą
+VelarPalatalization: *ç*ēa*β*o*d*ą
+IUmlaut: *ç*ēa*β*o*d*ą
+JClusterCoalescence: *ç*ēa*β*o*d*ą
+BackMutation: *ç*ēa*β*o*d*ą
+NasalSpirantLengthening: *ç*ēa*β*o*d*ą
+NasalSpirantLoss: *ç*ēa*β*o*d*ą
+WeakTailNasalLoss: *ç*ēa*β*o*d*ą
+WeightMarkers: *ç*ēa*β*o*d*ą
+HighVowelApocope: *ç*ēa*β*o*d*ą
+HeavySyllableNasalApocope: *ç*ēa*β*o*d
+WeakTailReduction: *ç*ēa*β*o*d
+JLossAfterHeavy: *ç*ēa*β*o*d
+WeightCleanup: *ç*ēa*β*o*d
+HLoss: *ç*ēa*β*o*d
+Contraction: *ç*ēa*β*o*d
+ProtoToOEWeakTail: *ç*ēa*β*o*d*ą
+ProtoToOEWeightMarkers: *ç*ēa*β*o*d*ą
+ProtoToOEApocope: *ç*ēa*β*o*d
+ProtoToOEWeightCleanup: *ç*ēa*β*o*d
+ProtoToOE: *ç*ēa*β*o*d
+WGlide: *ç*ēa*β*o*d
+GhMarker: *ç*ēa*β*o*d
+GlideDeletion: *ç*ēa*β*o*d
+Epenthesis: *ç*ēa*β*o*d
+Orthography: hēafod
+Surface: hēafod
+
 --- heal ---
 PROTO: *xailjăną
 EXPECTED: hǣlan
@@ -3200,6 +3350,56 @@ Epenthesis: *l*ǣ*s*t*ă*n
 Orthography: lǣstan
 Surface: lǣstan
 
+--- leaf ---
+PROTO: *laubą
+EXPECTED: lēaf
+OUTPUTS: lēaf
+
+ProtoInput: *l*au*b*ą
+InitialKn: *l*au*b*ą
+Palatalisation: *l*au*b*ą
+ConsonantRules: *l*au*β*ą
+WestGermanic: *l*au*β*ą
+NWGmcULowering: *l*au*β*ą
+NWGmcFinalLongORaising: *l*au*β*ą
+AuFronting: *l*aeu*β*ą
+WWSimplification: *l*aeu*β*ą
+DiphthongLeveling: *l*ēa*β*ą
+EwLongDiphthong: *l*ēa*β*ą
+AngloFrisianBrightening: *l*ēa*β*ą
+BreakingLengthening: *l*ēa*β*ą
+VelarFricPal: *l*ēa*β*ą
+ARestoration: *l*ēa*β*ą
+FinalWeakSchwaApocope: *l*ēa*β*ą
+JGemination: *l*ēa*β*ą
+SkPalatalization: *l*ēa*β*ą
+VelarPalatalization: *l*ēa*β*ą
+IUmlaut: *l*ēa*β*ą
+JClusterCoalescence: *l*ēa*β*ą
+BackMutation: *l*ēa*β*ą
+NasalSpirantLengthening: *l*ēa*β*ą
+NasalSpirantLoss: *l*ēa*β*ą
+WeakTailNasalLoss: *l*ēa*β*ą
+WeightMarkers: *l*ēa*β*ą
+HighVowelApocope: *l*ēa*β*ą
+HeavySyllableNasalApocope: *l*ēa*β
+WeakTailReduction: *l*ēa*β
+JLossAfterHeavy: *l*ēa*β
+WeightCleanup: *l*ēa*β
+HLoss: *l*ēa*β
+Contraction: *l*ēa*β
+ProtoToOEWeakTail: *l*ēa*β*ą
+ProtoToOEWeightMarkers: *l*ēa*β*ą
+ProtoToOEApocope: *l*ēa*β
+ProtoToOEWeightCleanup: *l*ēa*β
+ProtoToOE: *l*ēa*β
+WGlide: *l*ēa*β
+GhMarker: *l*ēa*β
+GlideDeletion: *l*ēa*β
+Epenthesis: *l*ēa*β
+Orthography: lēaf
+Surface: lēaf
+
 --- leather ---
 PROTO: *leθrą
 EXPECTED: leþer
@@ -3300,6 +3500,56 @@ Epenthesis: *l*ēa*k
 Orthography: lēac
 Surface: lēac
 
+--- life ---
+PROTO: *lībą
+EXPECTED: līf
+OUTPUTS: līf
+
+ProtoInput: *l*ī*b*ą
+InitialKn: *l*ī*b*ą
+Palatalisation: *l*ī*b*ą
+ConsonantRules: *l*ī*β*ą
+WestGermanic: *l*ī*β*ą
+NWGmcULowering: *l*ī*β*ą
+NWGmcFinalLongORaising: *l*ī*β*ą
+AuFronting: *l*ī*β*ą
+WWSimplification: *l*ī*β*ą
+DiphthongLeveling: *l*ī*β*ą
+EwLongDiphthong: *l*ī*β*ą
+AngloFrisianBrightening: *l*ī*β*ą
+BreakingLengthening: *l*ī*β*ą
+VelarFricPal: *l*ī*β*ą
+ARestoration: *l*ī*β*ą
+FinalWeakSchwaApocope: *l*ī*β*ą
+JGemination: *l*ī*β*ą
+SkPalatalization: *l*ī*β*ą
+VelarPalatalization: *l*ī*β*ą
+IUmlaut: *l*ī*β*ą
+JClusterCoalescence: *l*ī*β*ą
+BackMutation: *l*ī*β*ą
+NasalSpirantLengthening: *l*ī*β*ą
+NasalSpirantLoss: *l*ī*β*ą
+WeakTailNasalLoss: *l*ī*β*ą
+WeightMarkers: *l*ī*β*ą
+HighVowelApocope: *l*ī*β*ą
+HeavySyllableNasalApocope: *l*ī*β
+WeakTailReduction: *l*ī*β
+JLossAfterHeavy: *l*ī*β
+WeightCleanup: *l*ī*β
+HLoss: *l*ī*β
+Contraction: *l*ī*β
+ProtoToOEWeakTail: *l*ī*β*ą
+ProtoToOEWeightMarkers: *l*ī*β*ą
+ProtoToOEApocope: *l*ī*β
+ProtoToOEWeightCleanup: *l*ī*β
+ProtoToOE: *l*ī*β
+WGlide: *l*ī*β
+GhMarker: *l*ī*β
+GlideDeletion: *l*ī*β
+Epenthesis: *l*ī*β
+Orthography: līf
+Surface: līf
+
 --- lime ---
 PROTO: *līmą
 EXPECTED: līm
@@ -3349,6 +3599,56 @@ GlideDeletion: *l*ī*m
 Epenthesis: *l*ī*m
 Orthography: līm
 Surface: līm
+
+--- liver ---
+PROTO: *librō
+EXPECTED: lifer
+OUTPUTS: lifer
+
+ProtoInput: *l*i*b*r*ō
+InitialKn: *l*i*b*r*ō
+Palatalisation: *l*i*b*r*ō
+ConsonantRules: *l*i*β*r*ō
+WestGermanic: *l*i*β*r*ō
+NWGmcULowering: *l*i*β*r*ō
+NWGmcFinalLongORaising: *l*i*β*r*u
+AuFronting: *l*i*β*r*u
+WWSimplification: *l*i*β*r*u
+DiphthongLeveling: *l*i*β*r*u
+EwLongDiphthong: *l*i*β*r*u
+AngloFrisianBrightening: *l*i*β*r*u
+BreakingLengthening: *l*i*β*r*u
+VelarFricPal: *l*i*β*r*u
+ARestoration: *l*i*β*r*u
+FinalWeakSchwaApocope: *l*i*β*r*u
+JGemination: *l*i*β*r*u
+SkPalatalization: *l*i*β*r*u
+VelarPalatalization: *l*i*β*r*u
+IUmlaut: *l*i*β*r*u
+JClusterCoalescence: *l*i*β*r*u
+BackMutation: *l*i*β*r*u
+NasalSpirantLengthening: *l*i*β*r*u
+NasalSpirantLoss: *l*i*β*r*u
+WeakTailNasalLoss: *l*i*β*r*u
+WeightMarkers: *l*i*β*r*u
+HighVowelApocope: *l*i*β*r
+HeavySyllableNasalApocope: *l*i*β*r
+WeakTailReduction: *l*i*β*r
+JLossAfterHeavy: *l*i*β*r
+WeightCleanup: *l*i*β*r
+HLoss: *l*i*β*r
+Contraction: *l*i*β*r
+ProtoToOEWeakTail: *l*i*β*r*u
+ProtoToOEWeightMarkers: *l*i*β*r*u
+ProtoToOEApocope: *l*i*β*r
+ProtoToOEWeightCleanup: *l*i*β*r
+ProtoToOE: *l*i*β*r
+WGlide: *l*i*β*r
+GhMarker: *l*i*β*r
+GlideDeletion: *l*i*β*r
+Epenthesis: *l*i*β*e*r
+Orthography: lifer
+Surface: lifer
 
 --- lock ---
 PROTO: *luką
@@ -3950,6 +4250,56 @@ Epenthesis: *r*e*ʤ*n
 Orthography: reġn
 Surface: reġn
 
+--- raven ---
+PROTO: *xrabnăz
+EXPECTED: hræfn
+OUTPUTS: hræfn
+
+ProtoInput: *x*r*a*b*n*ă*z
+InitialKn: *x*r*a*b*n*ă*z
+Palatalisation: *x*r*a*b*n*ă*z
+ConsonantRules: *x*r*a*β*n*ă
+WestGermanic: *x*r*a*β*n*ă
+NWGmcULowering: *x*r*a*β*n*ă
+NWGmcFinalLongORaising: *x*r*a*β*n*ă
+AuFronting: *x*r*a*β*n*ă
+WWSimplification: *x*r*a*β*n*ă
+DiphthongLeveling: *x*r*a*β*n*ă
+EwLongDiphthong: *x*r*a*β*n*ă
+AngloFrisianBrightening: *x*r*æ*β*n*ă
+BreakingLengthening: *x*r*æ*β*n*ă
+VelarFricPal: *x*r*æ*β*n*ă
+ARestoration: *x*r*æ*β*n*ă
+FinalWeakSchwaApocope: *x*r*æ*β*n
+JGemination: *x*r*æ*β*n
+SkPalatalization: *x*r*æ*β*n
+VelarPalatalization: *x*r*æ*β*n
+IUmlaut: *x*r*æ*β*n
+JClusterCoalescence: *x*r*æ*β*n
+BackMutation: *x*r*æ*β*n
+NasalSpirantLengthening: *x*r*æ*β*n
+NasalSpirantLoss: *x*r*æ*β*n
+WeakTailNasalLoss: *x*r*æ*β*n
+WeightMarkers: *x*r*æ*β*n
+HighVowelApocope: *x*r*æ*β*n
+HeavySyllableNasalApocope: *x*r*æ*β*n
+WeakTailReduction: *x*r*æ*β*n
+JLossAfterHeavy: *x*r*æ*β*n
+WeightCleanup: *x*r*æ*β*n
+HLoss: *x*r*æ*β*n
+Contraction: *x*r*æ*β*n
+ProtoToOEWeakTail: *x*r*æ*β*n
+ProtoToOEWeightMarkers: *x*r*æ*β*n
+ProtoToOEApocope: *x*r*æ*β*n
+ProtoToOEWeightCleanup: *x*r*æ*β*n
+ProtoToOE: *x*r*æ*β*n
+WGlide: *x*r*æ*β*n
+GhMarker: *x*r*æ*β*n
+GlideDeletion: *x*r*æ*β*n
+Epenthesis: *x*r*æ*β*n
+Orthography: hræfn
+Surface: hræfn
+
 --- ride ---
 PROTO: *rīdăną
 EXPECTED: rīdan
@@ -4449,6 +4799,56 @@ GlideDeletion: *s*ea*l*t
 Epenthesis: *s*ea*l*t
 Orthography: sealt
 Surface: sealt
+
+--- salve ---
+PROTO: *salbō
+EXPECTED: sealf
+OUTPUTS: sealf
+
+ProtoInput: *s*a*l*b*ō
+InitialKn: *s*a*l*b*ō
+Palatalisation: *s*a*l*b*ō
+ConsonantRules: *s*a*l*β*ō
+WestGermanic: *s*a*l*β*ō
+NWGmcULowering: *s*a*l*β*ō
+NWGmcFinalLongORaising: *s*a*l*β*u
+AuFronting: *s*a*l*β*u
+WWSimplification: *s*a*l*β*u
+DiphthongLeveling: *s*a*l*β*u
+EwLongDiphthong: *s*a*l*β*u
+AngloFrisianBrightening: *s*æ*l*β*u
+BreakingLengthening: *s*ea*l*β*u
+VelarFricPal: *s*ea*l*β*u
+ARestoration: *s*ea*l*β*u
+FinalWeakSchwaApocope: *s*ea*l*β*u
+JGemination: *s*ea*l*β*u
+SkPalatalization: *s*ea*l*β*u
+VelarPalatalization: *s*ea*l*β*u
+IUmlaut: *s*ea*l*β*u
+JClusterCoalescence: *s*ea*l*β*u
+BackMutation: *s*ea*l*β*u
+NasalSpirantLengthening: *s*ea*l*β*u
+NasalSpirantLoss: *s*ea*l*β*u
+WeakTailNasalLoss: *s*ea*l*β*u
+WeightMarkers: *s*ea*l*β*u
+HighVowelApocope: *s*ea*l*β
+HeavySyllableNasalApocope: *s*ea*l*β
+WeakTailReduction: *s*ea*l*β
+JLossAfterHeavy: *s*ea*l*β
+WeightCleanup: *s*ea*l*β
+HLoss: *s*ea*l*β
+Contraction: *s*ea*l*β
+ProtoToOEWeakTail: *s*ea*l*β*u
+ProtoToOEWeightMarkers: *s*ea*l*β*u
+ProtoToOEApocope: *s*ea*l*β
+ProtoToOEWeightCleanup: *s*ea*l*β
+ProtoToOE: *s*ea*l*β
+WGlide: *s*ea*l*β
+GhMarker: *s*ea*l*β
+GlideDeletion: *s*ea*l*β
+Epenthesis: *s*ea*l*β
+Orthography: sealf
+Surface: sealf
 
 --- seam ---
 PROTO: *saumăz
@@ -5100,6 +5500,56 @@ Epenthesis: *s*p*r*ǣ*d*ă*n
 Orthography: sprǣdan
 Surface: sprǣdan
 
+--- starve ---
+PROTO: *sterbăną
+EXPECTED: steorfan
+OUTPUTS: steorfan
+
+ProtoInput: *s*t*e*r*b*ă*n*ą
+InitialKn: *s*t*e*r*b*ă*n*ą
+Palatalisation: *s*t*e*r*b*ă*n*ą
+ConsonantRules: *s*t*e*r*β*ă*n*ą
+WestGermanic: *s*t*e*r*β*ă*n*ą
+NWGmcULowering: *s*t*e*r*β*ă*n*ą
+NWGmcFinalLongORaising: *s*t*e*r*β*ă*n*ą
+AuFronting: *s*t*e*r*β*ă*n*ą
+WWSimplification: *s*t*e*r*β*ă*n*ą
+DiphthongLeveling: *s*t*e*r*β*ă*n*ą
+EwLongDiphthong: *s*t*e*r*β*ă*n*ą
+AngloFrisianBrightening: *s*t*e*r*β*ă*n*ą
+BreakingLengthening: *s*t*eo*r*β*ă*n*ą
+VelarFricPal: *s*t*eo*r*β*ă*n*ą
+ARestoration: *s*t*eo*r*β*ă*n*ą
+FinalWeakSchwaApocope: *s*t*eo*r*β*ă*n*ą
+JGemination: *s*t*eo*r*β*ă*n*ą
+SkPalatalization: *s*t*eo*r*β*ă*n*ą
+VelarPalatalization: *s*t*eo*r*β*ă*n*ą
+IUmlaut: *s*t*eo*r*β*ă*n*ą
+JClusterCoalescence: *s*t*eo*r*β*ă*n*ą
+BackMutation: *s*t*eo*r*β*ă*n*ą
+NasalSpirantLengthening: *s*t*eo*r*β*ă*n*ą
+NasalSpirantLoss: *s*t*eo*r*β*ă*n*ą
+WeakTailNasalLoss: *s*t*eo*r*β*ă*n
+WeightMarkers: *s*t*eo*r*β*ă*n
+HighVowelApocope: *s*t*eo*r*β*ă*n
+HeavySyllableNasalApocope: *s*t*eo*r*β*ă*n
+WeakTailReduction: *s*t*eo*r*β*a*n
+JLossAfterHeavy: *s*t*eo*r*β*a*n
+WeightCleanup: *s*t*eo*r*β*a*n
+HLoss: *s*t*eo*r*β*a*n
+Contraction: *s*t*eo*r*β*a*n
+ProtoToOEWeakTail: *s*t*eo*r*β*ă*n
+ProtoToOEWeightMarkers: *s*t*eo*r*β*ă*n
+ProtoToOEApocope: *s*t*eo*r*β*ă*n
+ProtoToOEWeightCleanup: *s*t*eo*r*β*a*n
+ProtoToOE: *s*t*eo*r*β*a*n
+WGlide: *s*t*eo*r*β*a*n
+GhMarker: *s*t*eo*r*β*a*n
+GlideDeletion: *s*t*eo*r*β*a*n
+Epenthesis: *s*t*eo*r*β*a*n
+Orthography: steorfan
+Surface: steorfan
+
 --- stock ---
 PROTO: *stukkăz
 EXPECTED: stocc
@@ -5700,6 +6150,56 @@ Epenthesis: *s*w*eo*r*d
 Orthography: sweord
 Surface: sweord
 
+--- thief ---
+PROTO: *θeubăz
+EXPECTED: þēof
+OUTPUTS: þēof
+
+ProtoInput: *θ*eu*b*ă*z
+InitialKn: *θ*eu*b*ă*z
+Palatalisation: *θ*eu*b*ă*z
+ConsonantRules: *θ*eu*β*ă
+WestGermanic: *θ*eu*β*ă
+NWGmcULowering: *θ*eu*β*ă
+NWGmcFinalLongORaising: *θ*eu*β*ă
+AuFronting: *θ*eu*β*ă
+WWSimplification: *θ*eu*β*ă
+DiphthongLeveling: *θ*ēo*β*ă
+EwLongDiphthong: *θ*ēo*β*ă
+AngloFrisianBrightening: *θ*ēo*β*ă
+BreakingLengthening: *θ*ēo*β*ă
+VelarFricPal: *θ*ēo*β*ă
+ARestoration: *θ*ēo*β*ă
+FinalWeakSchwaApocope: *θ*ēo*β
+JGemination: *θ*ēo*β
+SkPalatalization: *θ*ēo*β
+VelarPalatalization: *θ*ēo*β
+IUmlaut: *θ*ēo*β
+JClusterCoalescence: *θ*ēo*β
+BackMutation: *θ*ēo*β
+NasalSpirantLengthening: *θ*ēo*β
+NasalSpirantLoss: *θ*ēo*β
+WeakTailNasalLoss: *θ*ēo*β
+WeightMarkers: *θ*ēo*β
+HighVowelApocope: *θ*ēo*β
+HeavySyllableNasalApocope: *θ*ēo*β
+WeakTailReduction: *θ*ēo*β
+JLossAfterHeavy: *θ*ēo*β
+WeightCleanup: *θ*ēo*β
+HLoss: *θ*ēo*β
+Contraction: *θ*ēo*β
+ProtoToOEWeakTail: *θ*ēo*β
+ProtoToOEWeightMarkers: *θ*ēo*β
+ProtoToOEApocope: *θ*ēo*β
+ProtoToOEWeightCleanup: *θ*ēo*β
+ProtoToOE: *θ*ēo*β
+WGlide: *θ*ēo*β
+GhMarker: *θ*ēo*β
+GlideDeletion: *θ*ēo*β
+Epenthesis: *θ*ēo*β
+Orthography: þēof
+Surface: þēof
+
 --- thing ---
 PROTO: *þingą
 EXPECTED: þing
@@ -6100,6 +6600,56 @@ Epenthesis: *w*e*d*e*r
 Orthography: weder
 Surface: weder
 
+--- weave ---
+PROTO: *webăną
+EXPECTED: wefan
+OUTPUTS: wefan
+
+ProtoInput: *w*e*b*ă*n*ą
+InitialKn: *w*e*b*ă*n*ą
+Palatalisation: *w*e*b*ă*n*ą
+ConsonantRules: *w*e*β*ă*n*ą
+WestGermanic: *w*e*β*ă*n*ą
+NWGmcULowering: *w*e*β*ă*n*ą
+NWGmcFinalLongORaising: *w*e*β*ă*n*ą
+AuFronting: *w*e*β*ă*n*ą
+WWSimplification: *w*e*β*ă*n*ą
+DiphthongLeveling: *w*e*β*ă*n*ą
+EwLongDiphthong: *w*e*β*ă*n*ą
+AngloFrisianBrightening: *w*e*β*ă*n*ą
+BreakingLengthening: *w*e*β*ă*n*ą
+VelarFricPal: *w*e*β*ă*n*ą
+ARestoration: *w*e*β*ă*n*ą
+FinalWeakSchwaApocope: *w*e*β*ă*n*ą
+JGemination: *w*e*β*ă*n*ą
+SkPalatalization: *w*e*β*ă*n*ą
+VelarPalatalization: *w*e*β*ă*n*ą
+IUmlaut: *w*e*β*ă*n*ą
+JClusterCoalescence: *w*e*β*ă*n*ą
+BackMutation: *w*e*β*ă*n*ą
+NasalSpirantLengthening: *w*e*β*ă*n*ą
+NasalSpirantLoss: *w*e*β*ă*n*ą
+WeakTailNasalLoss: *w*e*β*ă*n
+WeightMarkers: *w*e*β*ă*n
+HighVowelApocope: *w*e*β*ă*n
+HeavySyllableNasalApocope: *w*e*β*ă*n
+WeakTailReduction: *w*e*β*a*n
+JLossAfterHeavy: *w*e*β*a*n
+WeightCleanup: *w*e*β*a*n
+HLoss: *w*e*β*a*n
+Contraction: *w*e*β*a*n
+ProtoToOEWeakTail: *w*e*β*ă*n
+ProtoToOEWeightMarkers: *w*e*β*ă*n
+ProtoToOEApocope: *w*e*β*ă*n
+ProtoToOEWeightCleanup: *w*e*β*a*n
+ProtoToOE: *w*e*β*a*n
+WGlide: *ʋ*e*β*a*n
+GhMarker: *ʋ*e*β*a*n
+GlideDeletion: *ʋ*e*β*a*n
+Epenthesis: *w*e*β*a*n
+Orthography: wefan
+Surface: wefan
+
 --- while ---
 PROTO: *xwīlō
 EXPECTED: hwīl
@@ -6199,6 +6749,56 @@ GlideDeletion: *ʋ*ea*l*d*a*n
 Epenthesis: *w*ea*l*d*a*n
 Orthography: wealdan
 Surface: wealdan
+
+--- wife ---
+PROTO: *wībą
+EXPECTED: wīf
+OUTPUTS: wīf
+
+ProtoInput: *w*ī*b*ą
+InitialKn: *w*ī*b*ą
+Palatalisation: *w*ī*b*ą
+ConsonantRules: *w*ī*β*ą
+WestGermanic: *w*ī*β*ą
+NWGmcULowering: *w*ī*β*ą
+NWGmcFinalLongORaising: *w*ī*β*ą
+AuFronting: *w*ī*β*ą
+WWSimplification: *w*ī*β*ą
+DiphthongLeveling: *w*ī*β*ą
+EwLongDiphthong: *w*ī*β*ą
+AngloFrisianBrightening: *w*ī*β*ą
+BreakingLengthening: *w*ī*β*ą
+VelarFricPal: *w*ī*β*ą
+ARestoration: *w*ī*β*ą
+FinalWeakSchwaApocope: *w*ī*β*ą
+JGemination: *w*ī*β*ą
+SkPalatalization: *w*ī*β*ą
+VelarPalatalization: *w*ī*β*ą
+IUmlaut: *w*ī*β*ą
+JClusterCoalescence: *w*ī*β*ą
+BackMutation: *w*ī*β*ą
+NasalSpirantLengthening: *w*ī*β*ą
+NasalSpirantLoss: *w*ī*β*ą
+WeakTailNasalLoss: *w*ī*β*ą
+WeightMarkers: *w*ī*β*ą
+HighVowelApocope: *w*ī*β*ą
+HeavySyllableNasalApocope: *w*ī*β
+WeakTailReduction: *w*ī*β
+JLossAfterHeavy: *w*ī*β
+WeightCleanup: *w*ī*β
+HLoss: *w*ī*β
+Contraction: *w*ī*β
+ProtoToOEWeakTail: *w*ī*β*ą
+ProtoToOEWeightMarkers: *w*ī*β*ą
+ProtoToOEApocope: *w*ī*β
+ProtoToOEWeightCleanup: *w*ī*β
+ProtoToOE: *w*ī*β
+WGlide: *ʋ*ī*β
+GhMarker: *ʋ*ī*β
+GlideDeletion: *ʋ*ī*β
+Epenthesis: *w*ī*β
+Orthography: wīf
+Surface: wīf
 
 --- winter ---
 PROTO: *wintruz
@@ -7615,52 +8215,52 @@ Surface: friġond
 --- give ---
 PROTO: *gebăną
 EXPECTED: giefan
-OUTPUTS: ġeban
+OUTPUTS: ġefan
 
 ProtoInput: *g*e*b*ă*n*ą
 InitialKn: *g*e*b*ă*n*ą
 Palatalisation: *ʤ*e*b*ă*n*ą
-ConsonantRules: *ʤ*e*b*ă*n*ą
-WestGermanic: *ʤ*e*b*ă*n*ą
-NWGmcULowering: *ʤ*e*b*ă*n*ą
-NWGmcFinalLongORaising: *ʤ*e*b*ă*n*ą
-AuFronting: *ʤ*e*b*ă*n*ą
-WWSimplification: *ʤ*e*b*ă*n*ą
-DiphthongLeveling: *ʤ*e*b*ă*n*ą
-EwLongDiphthong: *ʤ*e*b*ă*n*ą
-AngloFrisianBrightening: *ʤ*e*b*ă*n*ą
-BreakingLengthening: *ʤ*e*b*ă*n*ą
-VelarFricPal: *ʤ*e*b*ă*n*ą
-ARestoration: *ʤ*e*b*ă*n*ą
-FinalWeakSchwaApocope: *ʤ*e*b*ă*n*ą
-JGemination: *ʤ*e*b*ă*n*ą
-SkPalatalization: *ʤ*e*b*ă*n*ą
-VelarPalatalization: *ʤ*e*b*ă*n*ą
-IUmlaut: *ʤ*e*b*ă*n*ą
-JClusterCoalescence: *ʤ*e*b*ă*n*ą
-BackMutation: *ʤ*e*b*ă*n*ą
-NasalSpirantLengthening: *ʤ*e*b*ă*n*ą
-NasalSpirantLoss: *ʤ*e*b*ă*n*ą
-WeakTailNasalLoss: *ʤ*e*b*ă*n
-WeightMarkers: *ʤ*e*b*ă*n
-HighVowelApocope: *ʤ*e*b*ă*n
-HeavySyllableNasalApocope: *ʤ*e*b*ă*n
-WeakTailReduction: *ʤ*e*b*a*n
-JLossAfterHeavy: *ʤ*e*b*a*n
-WeightCleanup: *ʤ*e*b*a*n
-HLoss: *ʤ*e*b*a*n
-Contraction: *ʤ*e*b*a*n
-ProtoToOEWeakTail: *ʤ*e*b*ă*n
-ProtoToOEWeightMarkers: *ʤ*e*b*ă*n
-ProtoToOEApocope: *ʤ*e*b*ă*n
-ProtoToOEWeightCleanup: *ʤ*e*b*a*n
-ProtoToOE: *ʤ*e*b*a*n
-WGlide: *ʤ*e*b*a*n
-GhMarker: *ʤ*e*b*a*n
-GlideDeletion: *ʤ*e*b*a*n
-Epenthesis: *ʤ*e*b*a*n
-Orthography: ġeban
-Surface: ġeban
+ConsonantRules: *ʤ*e*β*ă*n*ą
+WestGermanic: *ʤ*e*β*ă*n*ą
+NWGmcULowering: *ʤ*e*β*ă*n*ą
+NWGmcFinalLongORaising: *ʤ*e*β*ă*n*ą
+AuFronting: *ʤ*e*β*ă*n*ą
+WWSimplification: *ʤ*e*β*ă*n*ą
+DiphthongLeveling: *ʤ*e*β*ă*n*ą
+EwLongDiphthong: *ʤ*e*β*ă*n*ą
+AngloFrisianBrightening: *ʤ*e*β*ă*n*ą
+BreakingLengthening: *ʤ*e*β*ă*n*ą
+VelarFricPal: *ʤ*e*β*ă*n*ą
+ARestoration: *ʤ*e*β*ă*n*ą
+FinalWeakSchwaApocope: *ʤ*e*β*ă*n*ą
+JGemination: *ʤ*e*β*ă*n*ą
+SkPalatalization: *ʤ*e*β*ă*n*ą
+VelarPalatalization: *ʤ*e*β*ă*n*ą
+IUmlaut: *ʤ*e*β*ă*n*ą
+JClusterCoalescence: *ʤ*e*β*ă*n*ą
+BackMutation: *ʤ*e*β*ă*n*ą
+NasalSpirantLengthening: *ʤ*e*β*ă*n*ą
+NasalSpirantLoss: *ʤ*e*β*ă*n*ą
+WeakTailNasalLoss: *ʤ*e*β*ă*n
+WeightMarkers: *ʤ*e*β*ă*n
+HighVowelApocope: *ʤ*e*β*ă*n
+HeavySyllableNasalApocope: *ʤ*e*β*ă*n
+WeakTailReduction: *ʤ*e*β*a*n
+JLossAfterHeavy: *ʤ*e*β*a*n
+WeightCleanup: *ʤ*e*β*a*n
+HLoss: *ʤ*e*β*a*n
+Contraction: *ʤ*e*β*a*n
+ProtoToOEWeakTail: *ʤ*e*β*ă*n
+ProtoToOEWeightMarkers: *ʤ*e*β*ă*n
+ProtoToOEApocope: *ʤ*e*β*ă*n
+ProtoToOEWeightCleanup: *ʤ*e*β*a*n
+ProtoToOE: *ʤ*e*β*a*n
+WGlide: *ʤ*e*β*a*n
+GhMarker: *ʤ*e*β*a*n
+GlideDeletion: *ʤ*e*β*a*n
+Epenthesis: *ʤ*e*β*a*n
+Orthography: ġefan
+Surface: ġefan
 
 --- guest ---
 PROTO: *gastiz
@@ -7865,52 +8465,52 @@ Surface: lǣdan
 --- seven ---
 PROTO: *sebun
 EXPECTED: seofon
-OUTPUTS: sobon
+OUTPUTS: sofon
 
 ProtoInput: *s*e*b*u*n
 InitialKn: *s*e*b*u*n
 Palatalisation: *s*e*b*u*n
-ConsonantRules: *s*e*b*u*n
-WestGermanic: *s*e*b*u*n
-NWGmcULowering: *s*e*b*u*n
-NWGmcFinalLongORaising: *s*e*b*u*n
-AuFronting: *s*e*b*u*n
-WWSimplification: *s*e*b*u*n
-DiphthongLeveling: *s*e*b*u*n
-EwLongDiphthong: *s*e*b*u*n
-AngloFrisianBrightening: *s*e*b*u*n
-BreakingLengthening: *s*e*b*u*n
-VelarFricPal: *s*e*b*u*n
-ARestoration: *s*e*b*u*n
-FinalWeakSchwaApocope: *s*e*b*u*n
-JGemination: *s*e*b*u*n
-SkPalatalization: *s*e*b*u*n
-VelarPalatalization: *s*e*b*u*n
-IUmlaut: *s*e*b*u*n
-JClusterCoalescence: *s*e*b*u*n
-BackMutation: *s*o*b*u*n
-NasalSpirantLengthening: *s*o*b*u*n
-NasalSpirantLoss: *s*o*b*u*n
-WeakTailNasalLoss: *s*o*b*u*n
-WeightMarkers: *s*o*b*u*n
-HighVowelApocope: *s*o*b*u*n
-HeavySyllableNasalApocope: *s*o*b*u*n
-WeakTailReduction: *s*o*b*o*n
-JLossAfterHeavy: *s*o*b*o*n
-WeightCleanup: *s*o*b*o*n
-HLoss: *s*o*b*o*n
-Contraction: *s*o*b*o*n
-ProtoToOEWeakTail: *s*o*b*u*n
-ProtoToOEWeightMarkers: *s*o*b*u*n
-ProtoToOEApocope: *s*o*b*u*n
-ProtoToOEWeightCleanup: *s*o*b*o*n
-ProtoToOE: *s*o*b*o*n
-WGlide: *s*o*b*o*n
-GhMarker: *s*o*b*o*n
-GlideDeletion: *s*o*b*o*n
-Epenthesis: *s*o*b*o*n
-Orthography: sobon
-Surface: sobon
+ConsonantRules: *s*e*β*u*n
+WestGermanic: *s*e*β*u*n
+NWGmcULowering: *s*e*β*u*n
+NWGmcFinalLongORaising: *s*e*β*u*n
+AuFronting: *s*e*β*u*n
+WWSimplification: *s*e*β*u*n
+DiphthongLeveling: *s*e*β*u*n
+EwLongDiphthong: *s*e*β*u*n
+AngloFrisianBrightening: *s*e*β*u*n
+BreakingLengthening: *s*e*β*u*n
+VelarFricPal: *s*e*β*u*n
+ARestoration: *s*e*β*u*n
+FinalWeakSchwaApocope: *s*e*β*u*n
+JGemination: *s*e*β*u*n
+SkPalatalization: *s*e*β*u*n
+VelarPalatalization: *s*e*β*u*n
+IUmlaut: *s*e*β*u*n
+JClusterCoalescence: *s*e*β*u*n
+BackMutation: *s*o*β*u*n
+NasalSpirantLengthening: *s*o*β*u*n
+NasalSpirantLoss: *s*o*β*u*n
+WeakTailNasalLoss: *s*o*β*u*n
+WeightMarkers: *s*o*β*u*n
+HighVowelApocope: *s*o*β*u*n
+HeavySyllableNasalApocope: *s*o*β*u*n
+WeakTailReduction: *s*o*β*o*n
+JLossAfterHeavy: *s*o*β*o*n
+WeightCleanup: *s*o*β*o*n
+HLoss: *s*o*β*o*n
+Contraction: *s*o*β*o*n
+ProtoToOEWeakTail: *s*o*β*u*n
+ProtoToOEWeightMarkers: *s*o*β*u*n
+ProtoToOEApocope: *s*o*β*u*n
+ProtoToOEWeightCleanup: *s*o*β*o*n
+ProtoToOE: *s*o*β*o*n
+WGlide: *s*o*β*o*n
+GhMarker: *s*o*β*o*n
+GlideDeletion: *s*o*β*o*n
+Epenthesis: *s*o*β*o*n
+Orthography: sofon
+Surface: sofon
 
 --- shaft ---
 PROTO: *skaftą
@@ -9074,52 +9674,52 @@ Surface: sāwalo
 --- staff ---
 PROTO: *stabiz
 EXPECTED: stæf
-OUTPUTS: stebe
+OUTPUTS: stefe
 
 ProtoInput: *s*t*a*b*i*z
 InitialKn: *s*t*a*b*i*z
 Palatalisation: *s*t*a*b*i*z
-ConsonantRules: *s*t*a*b*i
-WestGermanic: *s*t*a*b*i
-NWGmcULowering: *s*t*a*b*i
-NWGmcFinalLongORaising: *s*t*a*b*i
-AuFronting: *s*t*a*b*i
-WWSimplification: *s*t*a*b*i
-DiphthongLeveling: *s*t*a*b*i
-EwLongDiphthong: *s*t*a*b*i
-AngloFrisianBrightening: *s*t*æ*b*i
-BreakingLengthening: *s*t*æ*b*i
-VelarFricPal: *s*t*æ*b*i
-ARestoration: *s*t*æ*b*i
-FinalWeakSchwaApocope: *s*t*æ*b*i
-JGemination: *s*t*æ*b*i
-SkPalatalization: *s*t*æ*b*i
-VelarPalatalization: *s*t*æ*b*i
-IUmlaut: *s*t*e*b*i
-JClusterCoalescence: *s*t*e*b*i
-BackMutation: *s*t*e*b*i
-NasalSpirantLengthening: *s*t*e*b*i
-NasalSpirantLoss: *s*t*e*b*i
-WeakTailNasalLoss: *s*t*e*b*i
-WeightMarkers: *s*t*e*b*i
-HighVowelApocope: *s*t*e*b*i
-HeavySyllableNasalApocope: *s*t*e*b*i
-WeakTailReduction: *s*t*e*b*e
-JLossAfterHeavy: *s*t*e*b*e
-WeightCleanup: *s*t*e*b*e
-HLoss: *s*t*e*b*e
-Contraction: *s*t*e*b*e
-ProtoToOEWeakTail: *s*t*e*b*i
-ProtoToOEWeightMarkers: *s*t*e*b*i
-ProtoToOEApocope: *s*t*e*b*i
-ProtoToOEWeightCleanup: *s*t*e*b*e
-ProtoToOE: *s*t*e*b*e
-WGlide: *s*t*e*b*e
-GhMarker: *s*t*e*b*e
-GlideDeletion: *s*t*e*b*e
-Epenthesis: *s*t*e*b*e
-Orthography: stebe
-Surface: stebe
+ConsonantRules: *s*t*a*β*i
+WestGermanic: *s*t*a*β*i
+NWGmcULowering: *s*t*a*β*i
+NWGmcFinalLongORaising: *s*t*a*β*i
+AuFronting: *s*t*a*β*i
+WWSimplification: *s*t*a*β*i
+DiphthongLeveling: *s*t*a*β*i
+EwLongDiphthong: *s*t*a*β*i
+AngloFrisianBrightening: *s*t*æ*β*i
+BreakingLengthening: *s*t*æ*β*i
+VelarFricPal: *s*t*æ*β*i
+ARestoration: *s*t*æ*β*i
+FinalWeakSchwaApocope: *s*t*æ*β*i
+JGemination: *s*t*æ*β*i
+SkPalatalization: *s*t*æ*β*i
+VelarPalatalization: *s*t*æ*β*i
+IUmlaut: *s*t*e*β*i
+JClusterCoalescence: *s*t*e*β*i
+BackMutation: *s*t*e*β*i
+NasalSpirantLengthening: *s*t*e*β*i
+NasalSpirantLoss: *s*t*e*β*i
+WeakTailNasalLoss: *s*t*e*β*i
+WeightMarkers: *s*t*e*β*i
+HighVowelApocope: *s*t*e*β*i
+HeavySyllableNasalApocope: *s*t*e*β*i
+WeakTailReduction: *s*t*e*β*e
+JLossAfterHeavy: *s*t*e*β*e
+WeightCleanup: *s*t*e*β*e
+HLoss: *s*t*e*β*e
+Contraction: *s*t*e*β*e
+ProtoToOEWeakTail: *s*t*e*β*i
+ProtoToOEWeightMarkers: *s*t*e*β*i
+ProtoToOEApocope: *s*t*e*β*i
+ProtoToOEWeightCleanup: *s*t*e*β*e
+ProtoToOE: *s*t*e*β*e
+WGlide: *s*t*e*β*e
+GhMarker: *s*t*e*β*e
+GlideDeletion: *s*t*e*β*e
+Epenthesis: *s*t*e*β*e
+Orthography: stefe
+Surface: stefe
 
 --- west ---
 PROTO: *westănē
@@ -10183,52 +10783,52 @@ Surface: cnopp
 --- lap ---
 PROTO: *labbăz
 EXPECTED: læppa
-OUTPUTS: læbb
+OUTPUTS: læfb
 
 ProtoInput: *l*a*b*b*ă*z
 InitialKn: *l*a*b*b*ă*z
 Palatalisation: *l*a*b*b*ă*z
-ConsonantRules: *l*a*b*b*ă
-WestGermanic: *l*a*b*b*ă
-NWGmcULowering: *l*a*b*b*ă
-NWGmcFinalLongORaising: *l*a*b*b*ă
-AuFronting: *l*a*b*b*ă
-WWSimplification: *l*a*b*b*ă
-DiphthongLeveling: *l*a*b*b*ă
-EwLongDiphthong: *l*a*b*b*ă
-AngloFrisianBrightening: *l*æ*b*b*ă
-BreakingLengthening: *l*æ*b*b*ă
-VelarFricPal: *l*æ*b*b*ă
-ARestoration: *l*æ*b*b*ă
-FinalWeakSchwaApocope: *l*æ*b*b
-JGemination: *l*æ*b*b
-SkPalatalization: *l*æ*b*b
-VelarPalatalization: *l*æ*b*b
-IUmlaut: *l*æ*b*b
-JClusterCoalescence: *l*æ*b*b
-BackMutation: *l*æ*b*b
-NasalSpirantLengthening: *l*æ*b*b
-NasalSpirantLoss: *l*æ*b*b
-WeakTailNasalLoss: *l*æ*b*b
-WeightMarkers: *l*æ*b*b
-HighVowelApocope: *l*æ*b*b
-HeavySyllableNasalApocope: *l*æ*b*b
-WeakTailReduction: *l*æ*b*b
-JLossAfterHeavy: *l*æ*b*b
-WeightCleanup: *l*æ*b*b
-HLoss: *l*æ*b*b
-Contraction: *l*æ*b*b
-ProtoToOEWeakTail: *l*æ*b*b
-ProtoToOEWeightMarkers: *l*æ*b*b
-ProtoToOEApocope: *l*æ*b*b
-ProtoToOEWeightCleanup: *l*æ*b*b
-ProtoToOE: *l*æ*b*b
-WGlide: *l*æ*b*b
-GhMarker: *l*æ*b*b
-GlideDeletion: *l*æ*b*b
-Epenthesis: *l*æ*b*b
-Orthography: læbb
-Surface: læbb
+ConsonantRules: *l*a*β*b*ă
+WestGermanic: *l*a*β*b*ă
+NWGmcULowering: *l*a*β*b*ă
+NWGmcFinalLongORaising: *l*a*β*b*ă
+AuFronting: *l*a*β*b*ă
+WWSimplification: *l*a*β*b*ă
+DiphthongLeveling: *l*a*β*b*ă
+EwLongDiphthong: *l*a*β*b*ă
+AngloFrisianBrightening: *l*æ*β*b*ă
+BreakingLengthening: *l*æ*β*b*ă
+VelarFricPal: *l*æ*β*b*ă
+ARestoration: *l*æ*β*b*ă
+FinalWeakSchwaApocope: *l*æ*β*b
+JGemination: *l*æ*β*b
+SkPalatalization: *l*æ*β*b
+VelarPalatalization: *l*æ*β*b
+IUmlaut: *l*æ*β*b
+JClusterCoalescence: *l*æ*β*b
+BackMutation: *l*æ*β*b
+NasalSpirantLengthening: *l*æ*β*b
+NasalSpirantLoss: *l*æ*β*b
+WeakTailNasalLoss: *l*æ*β*b
+WeightMarkers: *l*æ*β*b
+HighVowelApocope: *l*æ*β*b
+HeavySyllableNasalApocope: *l*æ*β*b
+WeakTailReduction: *l*æ*β*b
+JLossAfterHeavy: *l*æ*β*b
+WeightCleanup: *l*æ*β*b
+HLoss: *l*æ*β*b
+Contraction: *l*æ*β*b
+ProtoToOEWeakTail: *l*æ*β*b
+ProtoToOEWeightMarkers: *l*æ*β*b
+ProtoToOEApocope: *l*æ*β*b
+ProtoToOEWeightCleanup: *l*æ*β*b
+ProtoToOE: *l*æ*β*b
+WGlide: *l*æ*β*b
+GhMarker: *l*æ*β*b
+GlideDeletion: *l*æ*β*b
+Epenthesis: *l*æ*β*b
+Orthography: læfb
+Surface: læfb
 
 --- line ---
 PROTO: *līnăn
@@ -10383,52 +10983,52 @@ Surface: namon
 --- navel ---
 PROTO: *nablōn
 EXPECTED: nafola
-OUTPUTS: næblon
+OUTPUTS: næflon
 
 ProtoInput: *n*a*b*l*ō*n
 InitialKn: *n*a*b*l*ō*n
 Palatalisation: *n*a*b*l*ō*n
-ConsonantRules: *n*a*b*l*ō*n
-WestGermanic: *n*a*b*l*ō*n
-NWGmcULowering: *n*a*b*l*ō*n
-NWGmcFinalLongORaising: *n*a*b*l*ō*n
-AuFronting: *n*a*b*l*ō*n
-WWSimplification: *n*a*b*l*ō*n
-DiphthongLeveling: *n*a*b*l*ō*n
-EwLongDiphthong: *n*a*b*l*ō*n
-AngloFrisianBrightening: *n*æ*b*l*ō*n
-BreakingLengthening: *n*æ*b*l*ō*n
-VelarFricPal: *n*æ*b*l*ō*n
-ARestoration: *n*æ*b*l*ō*n
-FinalWeakSchwaApocope: *n*æ*b*l*ō*n
-JGemination: *n*æ*b*l*ō*n
-SkPalatalization: *n*æ*b*l*ō*n
-VelarPalatalization: *n*æ*b*l*ō*n
-IUmlaut: *n*æ*b*l*ō*n
-JClusterCoalescence: *n*æ*b*l*ō*n
-BackMutation: *n*æ*b*l*ō*n
-NasalSpirantLengthening: *n*æ*b*l*ō*n
-NasalSpirantLoss: *n*æ*b*l*ō*n
-WeakTailNasalLoss: *n*æ*b*l*ō*n
-WeightMarkers: *n*æ*b*l*ō*n
-HighVowelApocope: *n*æ*b*l*ō*n
-HeavySyllableNasalApocope: *n*æ*b*l*ō*n
-WeakTailReduction: *n*æ*b*l*ō*n
-JLossAfterHeavy: *n*æ*b*l*ō*n
-WeightCleanup: *n*æ*b*l*ō*n
-HLoss: *n*æ*b*l*ō*n
-Contraction: *n*æ*b*l*ō*n
-ProtoToOEWeakTail: *n*æ*b*l*ō*n
-ProtoToOEWeightMarkers: *n*æ*b*l*ō*n
-ProtoToOEApocope: *n*æ*b*l*ō*n
-ProtoToOEWeightCleanup: *n*æ*b*l*o*n
-ProtoToOE: *n*æ*b*l*o*n
-WGlide: *n*æ*b*l*o*n
-GhMarker: *n*æ*b*l*o*n
-GlideDeletion: *n*æ*b*l*o*n
-Epenthesis: *n*æ*b*l*o*n
-Orthography: næblon
-Surface: næblon
+ConsonantRules: *n*a*β*l*ō*n
+WestGermanic: *n*a*β*l*ō*n
+NWGmcULowering: *n*a*β*l*ō*n
+NWGmcFinalLongORaising: *n*a*β*l*ō*n
+AuFronting: *n*a*β*l*ō*n
+WWSimplification: *n*a*β*l*ō*n
+DiphthongLeveling: *n*a*β*l*ō*n
+EwLongDiphthong: *n*a*β*l*ō*n
+AngloFrisianBrightening: *n*æ*β*l*ō*n
+BreakingLengthening: *n*æ*β*l*ō*n
+VelarFricPal: *n*æ*β*l*ō*n
+ARestoration: *n*æ*β*l*ō*n
+FinalWeakSchwaApocope: *n*æ*β*l*ō*n
+JGemination: *n*æ*β*l*ō*n
+SkPalatalization: *n*æ*β*l*ō*n
+VelarPalatalization: *n*æ*β*l*ō*n
+IUmlaut: *n*æ*β*l*ō*n
+JClusterCoalescence: *n*æ*β*l*ō*n
+BackMutation: *n*æ*β*l*ō*n
+NasalSpirantLengthening: *n*æ*β*l*ō*n
+NasalSpirantLoss: *n*æ*β*l*ō*n
+WeakTailNasalLoss: *n*æ*β*l*ō*n
+WeightMarkers: *n*æ*β*l*ō*n
+HighVowelApocope: *n*æ*β*l*ō*n
+HeavySyllableNasalApocope: *n*æ*β*l*ō*n
+WeakTailReduction: *n*æ*β*l*ō*n
+JLossAfterHeavy: *n*æ*β*l*ō*n
+WeightCleanup: *n*æ*β*l*ō*n
+HLoss: *n*æ*β*l*ō*n
+Contraction: *n*æ*β*l*ō*n
+ProtoToOEWeakTail: *n*æ*β*l*ō*n
+ProtoToOEWeightMarkers: *n*æ*β*l*ō*n
+ProtoToOEApocope: *n*æ*β*l*ō*n
+ProtoToOEWeightCleanup: *n*æ*β*l*o*n
+ProtoToOE: *n*æ*β*l*o*n
+WGlide: *n*æ*β*l*o*n
+GhMarker: *n*æ*β*l*o*n
+GlideDeletion: *n*æ*β*l*o*n
+Epenthesis: *n*æ*β*l*o*n
+Orthography: næflon
+Surface: næflon
 
 --- nettle ---
 PROTO: *natilōn
@@ -10733,52 +11333,52 @@ Surface: sīdon
 --- sieve ---
 PROTO: *sibăz
 EXPECTED: sife
-OUTPUTS: sib
+OUTPUTS: sif
 
 ProtoInput: *s*i*b*ă*z
 InitialKn: *s*i*b*ă*z
 Palatalisation: *s*i*b*ă*z
-ConsonantRules: *s*i*b*ă
-WestGermanic: *s*i*b*ă
-NWGmcULowering: *s*i*b*ă
-NWGmcFinalLongORaising: *s*i*b*ă
-AuFronting: *s*i*b*ă
-WWSimplification: *s*i*b*ă
-DiphthongLeveling: *s*i*b*ă
-EwLongDiphthong: *s*i*b*ă
-AngloFrisianBrightening: *s*i*b*ă
-BreakingLengthening: *s*i*b*ă
-VelarFricPal: *s*i*b*ă
-ARestoration: *s*i*b*ă
-FinalWeakSchwaApocope: *s*i*b
-JGemination: *s*i*b
-SkPalatalization: *s*i*b
-VelarPalatalization: *s*i*b
-IUmlaut: *s*i*b
-JClusterCoalescence: *s*i*b
-BackMutation: *s*i*b
-NasalSpirantLengthening: *s*i*b
-NasalSpirantLoss: *s*i*b
-WeakTailNasalLoss: *s*i*b
-WeightMarkers: *s*i*b
-HighVowelApocope: *s*i*b
-HeavySyllableNasalApocope: *s*i*b
-WeakTailReduction: *s*i*b
-JLossAfterHeavy: *s*i*b
-WeightCleanup: *s*i*b
-HLoss: *s*i*b
-Contraction: *s*i*b
-ProtoToOEWeakTail: *s*i*b
-ProtoToOEWeightMarkers: *s*i*b
-ProtoToOEApocope: *s*i*b
-ProtoToOEWeightCleanup: *s*i*b
-ProtoToOE: *s*i*b
-WGlide: *s*i*b
-GhMarker: *s*i*b
-GlideDeletion: *s*i*b
-Epenthesis: *s*i*b
-Orthography: sib
-Surface: sib
+ConsonantRules: *s*i*β*ă
+WestGermanic: *s*i*β*ă
+NWGmcULowering: *s*i*β*ă
+NWGmcFinalLongORaising: *s*i*β*ă
+AuFronting: *s*i*β*ă
+WWSimplification: *s*i*β*ă
+DiphthongLeveling: *s*i*β*ă
+EwLongDiphthong: *s*i*β*ă
+AngloFrisianBrightening: *s*i*β*ă
+BreakingLengthening: *s*i*β*ă
+VelarFricPal: *s*i*β*ă
+ARestoration: *s*i*β*ă
+FinalWeakSchwaApocope: *s*i*β
+JGemination: *s*i*β
+SkPalatalization: *s*i*β
+VelarPalatalization: *s*i*β
+IUmlaut: *s*i*β
+JClusterCoalescence: *s*i*β
+BackMutation: *s*i*β
+NasalSpirantLengthening: *s*i*β
+NasalSpirantLoss: *s*i*β
+WeakTailNasalLoss: *s*i*β
+WeightMarkers: *s*i*β
+HighVowelApocope: *s*i*β
+HeavySyllableNasalApocope: *s*i*β
+WeakTailReduction: *s*i*β
+JLossAfterHeavy: *s*i*β
+WeightCleanup: *s*i*β
+HLoss: *s*i*β
+Contraction: *s*i*β
+ProtoToOEWeakTail: *s*i*β
+ProtoToOEWeightMarkers: *s*i*β
+ProtoToOEApocope: *s*i*β
+ProtoToOEWeightCleanup: *s*i*β
+ProtoToOE: *s*i*β
+WGlide: *s*i*β
+GhMarker: *s*i*β
+GlideDeletion: *s*i*β
+Epenthesis: *s*i*β
+Orthography: sif
+Surface: sif
 
 --- spur ---
 PROTO: *spurăn
@@ -11486,52 +12086,52 @@ Surface: hearw
 --- harvest ---
 PROTO: *xarbistuz
 EXPECTED: hærfest
-OUTPUTS: hierbest
+OUTPUTS: hierfest
 
 ProtoInput: *x*a*r*b*i*s*t*u*z
 InitialKn: *x*a*r*b*i*s*t*u*z
 Palatalisation: *x*a*r*b*i*s*t*u*z
-ConsonantRules: *x*a*r*b*i*s*t*u
-WestGermanic: *x*a*r*b*i*s*t*u
-NWGmcULowering: *x*a*r*b*i*s*t*u
-NWGmcFinalLongORaising: *x*a*r*b*i*s*t*u
-AuFronting: *x*a*r*b*i*s*t*u
-WWSimplification: *x*a*r*b*i*s*t*u
-DiphthongLeveling: *x*a*r*b*i*s*t*u
-EwLongDiphthong: *x*a*r*b*i*s*t*u
-AngloFrisianBrightening: *x*æ*r*b*i*s*t*u
-BreakingLengthening: *x*ea*r*b*i*s*t*u
-VelarFricPal: *ç*ea*r*b*i*s*t*u
-ARestoration: *ç*ea*r*b*i*s*t*u
-FinalWeakSchwaApocope: *ç*ea*r*b*i*s*t*u
-JGemination: *ç*ea*r*b*i*s*t*u
-SkPalatalization: *ç*ea*r*b*i*s*t*u
-VelarPalatalization: *ç*ea*r*b*i*s*t*u
-IUmlaut: *ç*ie*r*b*i*s*t*u
-JClusterCoalescence: *ç*ie*r*b*i*s*t*u
-BackMutation: *ç*ie*r*b*i*s*t*u
-NasalSpirantLengthening: *ç*ie*r*b*i*s*t*u
-NasalSpirantLoss: *ç*ie*r*b*i*s*t*u
-WeakTailNasalLoss: *ç*ie*r*b*i*s*t*u
-WeightMarkers: *ç*ie*r*b*i*s*t*u
-HighVowelApocope: *ç*ie*r*b*i*s*t
-HeavySyllableNasalApocope: *ç*ie*r*b*i*s*t
-WeakTailReduction: *ç*ie*r*b*e*s*t
-JLossAfterHeavy: *ç*ie*r*b*e*s*t
-WeightCleanup: *ç*ie*r*b*e*s*t
-HLoss: *ç*ie*r*b*e*s*t
-Contraction: *ç*ie*r*b*e*s*t
-ProtoToOEWeakTail: *ç*ie*r*b*i*s*t*u
-ProtoToOEWeightMarkers: *ç*ie*r*b*i*s*t*u
-ProtoToOEApocope: *ç*ie*r*b*i*s*t
-ProtoToOEWeightCleanup: *ç*ie*r*b*e*s*t
-ProtoToOE: *ç*ie*r*b*e*s*t
-WGlide: *ç*ie*r*b*e*s*t
-GhMarker: *ç*ie*r*b*e*s*t
-GlideDeletion: *ç*ie*r*b*e*s*t
-Epenthesis: *ç*ie*r*b*e*s*t
-Orthography: hierbest
-Surface: hierbest
+ConsonantRules: *x*a*r*β*i*s*t*u
+WestGermanic: *x*a*r*β*i*s*t*u
+NWGmcULowering: *x*a*r*β*i*s*t*u
+NWGmcFinalLongORaising: *x*a*r*β*i*s*t*u
+AuFronting: *x*a*r*β*i*s*t*u
+WWSimplification: *x*a*r*β*i*s*t*u
+DiphthongLeveling: *x*a*r*β*i*s*t*u
+EwLongDiphthong: *x*a*r*β*i*s*t*u
+AngloFrisianBrightening: *x*æ*r*β*i*s*t*u
+BreakingLengthening: *x*ea*r*β*i*s*t*u
+VelarFricPal: *ç*ea*r*β*i*s*t*u
+ARestoration: *ç*ea*r*β*i*s*t*u
+FinalWeakSchwaApocope: *ç*ea*r*β*i*s*t*u
+JGemination: *ç*ea*r*β*i*s*t*u
+SkPalatalization: *ç*ea*r*β*i*s*t*u
+VelarPalatalization: *ç*ea*r*β*i*s*t*u
+IUmlaut: *ç*ie*r*β*i*s*t*u
+JClusterCoalescence: *ç*ie*r*β*i*s*t*u
+BackMutation: *ç*ie*r*β*i*s*t*u
+NasalSpirantLengthening: *ç*ie*r*β*i*s*t*u
+NasalSpirantLoss: *ç*ie*r*β*i*s*t*u
+WeakTailNasalLoss: *ç*ie*r*β*i*s*t*u
+WeightMarkers: *ç*ie*r*β*i*s*t*u
+HighVowelApocope: *ç*ie*r*β*i*s*t
+HeavySyllableNasalApocope: *ç*ie*r*β*i*s*t
+WeakTailReduction: *ç*ie*r*β*e*s*t
+JLossAfterHeavy: *ç*ie*r*β*e*s*t
+WeightCleanup: *ç*ie*r*β*e*s*t
+HLoss: *ç*ie*r*β*e*s*t
+Contraction: *ç*ie*r*β*e*s*t
+ProtoToOEWeakTail: *ç*ie*r*β*i*s*t*u
+ProtoToOEWeightMarkers: *ç*ie*r*β*i*s*t*u
+ProtoToOEApocope: *ç*ie*r*β*i*s*t
+ProtoToOEWeightCleanup: *ç*ie*r*β*e*s*t
+ProtoToOE: *ç*ie*r*β*e*s*t
+WGlide: *ç*ie*r*β*e*s*t
+GhMarker: *ç*ie*r*β*e*s*t
+GlideDeletion: *ç*ie*r*β*e*s*t
+Epenthesis: *ç*ie*r*β*e*s*t
+Orthography: hierfest
+Surface: hierfest
 
 --- help ---
 PROTO: *xelpăną
@@ -11936,52 +12536,52 @@ Surface: rīeċ
 --- shove ---
 PROTO: *skeubăną
 EXPECTED: sċūfan
-OUTPUTS: sċēoban
+OUTPUTS: sċēofan
 
 ProtoInput: *s*k*eu*b*ă*n*ą
 InitialKn: *s*k*eu*b*ă*n*ą
 Palatalisation: *ʃ*eu*b*ă*n*ą
-ConsonantRules: *ʃ*eu*b*ă*n*ą
-WestGermanic: *ʃ*eu*b*ă*n*ą
-NWGmcULowering: *ʃ*eu*b*ă*n*ą
-NWGmcFinalLongORaising: *ʃ*eu*b*ă*n*ą
-AuFronting: *ʃ*eu*b*ă*n*ą
-WWSimplification: *ʃ*eu*b*ă*n*ą
-DiphthongLeveling: *ʃ*ēo*b*ă*n*ą
-EwLongDiphthong: *ʃ*ēo*b*ă*n*ą
-AngloFrisianBrightening: *ʃ*ēo*b*ă*n*ą
-BreakingLengthening: *ʃ*ēo*b*ă*n*ą
-VelarFricPal: *ʃ*ēo*b*ă*n*ą
-ARestoration: *ʃ*ēo*b*ă*n*ą
-FinalWeakSchwaApocope: *ʃ*ēo*b*ă*n*ą
-JGemination: *ʃ*ēo*b*ă*n*ą
-SkPalatalization: *ʃ*ēo*b*ă*n*ą
-VelarPalatalization: *ʃ*ēo*b*ă*n*ą
-IUmlaut: *ʃ*ēo*b*ă*n*ą
-JClusterCoalescence: *ʃ*ēo*b*ă*n*ą
-BackMutation: *ʃ*ēo*b*ă*n*ą
-NasalSpirantLengthening: *ʃ*ēo*b*ă*n*ą
-NasalSpirantLoss: *ʃ*ēo*b*ă*n*ą
-WeakTailNasalLoss: *ʃ*ēo*b*ă*n
-WeightMarkers: *ʃ*ēo*b*ă*n
-HighVowelApocope: *ʃ*ēo*b*ă*n
-HeavySyllableNasalApocope: *ʃ*ēo*b*ă*n
-WeakTailReduction: *ʃ*ēo*b*a*n
-JLossAfterHeavy: *ʃ*ēo*b*a*n
-WeightCleanup: *ʃ*ēo*b*a*n
-HLoss: *ʃ*ēo*b*a*n
-Contraction: *ʃ*ēo*b*a*n
-ProtoToOEWeakTail: *ʃ*ēo*b*ă*n
-ProtoToOEWeightMarkers: *ʃ*ēo*b*ă*n
-ProtoToOEApocope: *ʃ*ēo*b*ă*n
-ProtoToOEWeightCleanup: *ʃ*ēo*b*a*n
-ProtoToOE: *ʃ*ēo*b*a*n
-WGlide: *ʃ*ēo*b*a*n
-GhMarker: *ʃ*ēo*b*a*n
-GlideDeletion: *ʃ*ēo*b*a*n
-Epenthesis: *ʃ*ēo*b*a*n
-Orthography: sċēoban
-Surface: sċēoban
+ConsonantRules: *ʃ*eu*β*ă*n*ą
+WestGermanic: *ʃ*eu*β*ă*n*ą
+NWGmcULowering: *ʃ*eu*β*ă*n*ą
+NWGmcFinalLongORaising: *ʃ*eu*β*ă*n*ą
+AuFronting: *ʃ*eu*β*ă*n*ą
+WWSimplification: *ʃ*eu*β*ă*n*ą
+DiphthongLeveling: *ʃ*ēo*β*ă*n*ą
+EwLongDiphthong: *ʃ*ēo*β*ă*n*ą
+AngloFrisianBrightening: *ʃ*ēo*β*ă*n*ą
+BreakingLengthening: *ʃ*ēo*β*ă*n*ą
+VelarFricPal: *ʃ*ēo*β*ă*n*ą
+ARestoration: *ʃ*ēo*β*ă*n*ą
+FinalWeakSchwaApocope: *ʃ*ēo*β*ă*n*ą
+JGemination: *ʃ*ēo*β*ă*n*ą
+SkPalatalization: *ʃ*ēo*β*ă*n*ą
+VelarPalatalization: *ʃ*ēo*β*ă*n*ą
+IUmlaut: *ʃ*ēo*β*ă*n*ą
+JClusterCoalescence: *ʃ*ēo*β*ă*n*ą
+BackMutation: *ʃ*ēo*β*ă*n*ą
+NasalSpirantLengthening: *ʃ*ēo*β*ă*n*ą
+NasalSpirantLoss: *ʃ*ēo*β*ă*n*ą
+WeakTailNasalLoss: *ʃ*ēo*β*ă*n
+WeightMarkers: *ʃ*ēo*β*ă*n
+HighVowelApocope: *ʃ*ēo*β*ă*n
+HeavySyllableNasalApocope: *ʃ*ēo*β*ă*n
+WeakTailReduction: *ʃ*ēo*β*a*n
+JLossAfterHeavy: *ʃ*ēo*β*a*n
+WeightCleanup: *ʃ*ēo*β*a*n
+HLoss: *ʃ*ēo*β*a*n
+Contraction: *ʃ*ēo*β*a*n
+ProtoToOEWeakTail: *ʃ*ēo*β*ă*n
+ProtoToOEWeightMarkers: *ʃ*ēo*β*ă*n
+ProtoToOEApocope: *ʃ*ēo*β*ă*n
+ProtoToOEWeightCleanup: *ʃ*ēo*β*a*n
+ProtoToOE: *ʃ*ēo*β*a*n
+WGlide: *ʃ*ēo*β*a*n
+GhMarker: *ʃ*ēo*β*a*n
+GlideDeletion: *ʃ*ēo*β*a*n
+Epenthesis: *ʃ*ēo*β*a*n
+Orthography: sċēofan
+Surface: sċēofan
 
 --- six ---
 PROTO: *sexs
@@ -13092,52 +13692,52 @@ Surface: breċan
 --- calf ---
 PROTO: *kalbăz
 EXPECTED: cealf
-OUTPUTS: ċealb
+OUTPUTS: ċealf
 
 ProtoInput: *k*a*l*b*ă*z
 InitialKn: *k*a*l*b*ă*z
 Palatalisation: *k*a*l*b*ă*z
-ConsonantRules: *k*a*l*b*ă
-WestGermanic: *k*a*l*b*ă
-NWGmcULowering: *k*a*l*b*ă
-NWGmcFinalLongORaising: *k*a*l*b*ă
-AuFronting: *k*a*l*b*ă
-WWSimplification: *k*a*l*b*ă
-DiphthongLeveling: *k*a*l*b*ă
-EwLongDiphthong: *k*a*l*b*ă
-AngloFrisianBrightening: *k*æ*l*b*ă
-BreakingLengthening: *k*ea*l*b*ă
-VelarFricPal: *k*ea*l*b*ă
-ARestoration: *k*ea*l*b*ă
-FinalWeakSchwaApocope: *k*ea*l*b
-JGemination: *k*ea*l*b
-SkPalatalization: *k*ea*l*b
-VelarPalatalization: *ʧ*ea*l*b
-IUmlaut: *ʧ*ea*l*b
-JClusterCoalescence: *ʧ*ea*l*b
-BackMutation: *ʧ*ea*l*b
-NasalSpirantLengthening: *ʧ*ea*l*b
-NasalSpirantLoss: *ʧ*ea*l*b
-WeakTailNasalLoss: *ʧ*ea*l*b
-WeightMarkers: *ʧ*ea*l*b
-HighVowelApocope: *ʧ*ea*l*b
-HeavySyllableNasalApocope: *ʧ*ea*l*b
-WeakTailReduction: *ʧ*ea*l*b
-JLossAfterHeavy: *ʧ*ea*l*b
-WeightCleanup: *ʧ*ea*l*b
-HLoss: *ʧ*ea*l*b
-Contraction: *ʧ*ea*l*b
-ProtoToOEWeakTail: *ʧ*ea*l*b
-ProtoToOEWeightMarkers: *ʧ*ea*l*b
-ProtoToOEApocope: *ʧ*ea*l*b
-ProtoToOEWeightCleanup: *ʧ*ea*l*b
-ProtoToOE: *ʧ*ea*l*b
-WGlide: *ʧ*ea*l*b
-GhMarker: *ʧ*ea*l*b
-GlideDeletion: *ʧ*ea*l*b
-Epenthesis: *ʧ*ea*l*b
-Orthography: ċealb
-Surface: ċealb
+ConsonantRules: *k*a*l*β*ă
+WestGermanic: *k*a*l*β*ă
+NWGmcULowering: *k*a*l*β*ă
+NWGmcFinalLongORaising: *k*a*l*β*ă
+AuFronting: *k*a*l*β*ă
+WWSimplification: *k*a*l*β*ă
+DiphthongLeveling: *k*a*l*β*ă
+EwLongDiphthong: *k*a*l*β*ă
+AngloFrisianBrightening: *k*æ*l*β*ă
+BreakingLengthening: *k*ea*l*β*ă
+VelarFricPal: *k*ea*l*β*ă
+ARestoration: *k*ea*l*β*ă
+FinalWeakSchwaApocope: *k*ea*l*β
+JGemination: *k*ea*l*β
+SkPalatalization: *k*ea*l*β
+VelarPalatalization: *ʧ*ea*l*β
+IUmlaut: *ʧ*ea*l*β
+JClusterCoalescence: *ʧ*ea*l*β
+BackMutation: *ʧ*ea*l*β
+NasalSpirantLengthening: *ʧ*ea*l*β
+NasalSpirantLoss: *ʧ*ea*l*β
+WeakTailNasalLoss: *ʧ*ea*l*β
+WeightMarkers: *ʧ*ea*l*β
+HighVowelApocope: *ʧ*ea*l*β
+HeavySyllableNasalApocope: *ʧ*ea*l*β
+WeakTailReduction: *ʧ*ea*l*β
+JLossAfterHeavy: *ʧ*ea*l*β
+WeightCleanup: *ʧ*ea*l*β
+HLoss: *ʧ*ea*l*β
+Contraction: *ʧ*ea*l*β
+ProtoToOEWeakTail: *ʧ*ea*l*β
+ProtoToOEWeightMarkers: *ʧ*ea*l*β
+ProtoToOEApocope: *ʧ*ea*l*β
+ProtoToOEWeightCleanup: *ʧ*ea*l*β
+ProtoToOE: *ʧ*ea*l*β
+WGlide: *ʧ*ea*l*β
+GhMarker: *ʧ*ea*l*β
+GlideDeletion: *ʧ*ea*l*β
+Epenthesis: *ʧ*ea*l*β
+Orthography: ċealf
+Surface: ċealf
 
 --- comb ---
 PROTO: *kambăz
@@ -13895,52 +14495,52 @@ Surface: cwiþo
 --- have ---
 PROTO: *xabēną
 EXPECTED: habban
-OUTPUTS: hæben
+OUTPUTS: hæfen
 
 ProtoInput: *x*a*b*ē*n*ą
 InitialKn: *x*a*b*ē*n*ą
 Palatalisation: *x*a*b*ē*n*ą
-ConsonantRules: *x*a*b*ē*n*ą
-WestGermanic: *x*a*b*ē*n*ą
-NWGmcULowering: *x*a*b*ē*n*ą
-NWGmcFinalLongORaising: *x*a*b*ē*n*ą
-AuFronting: *x*a*b*ē*n*ą
-WWSimplification: *x*a*b*ē*n*ą
-DiphthongLeveling: *x*a*b*ē*n*ą
-EwLongDiphthong: *x*a*b*ē*n*ą
-AngloFrisianBrightening: *x*æ*b*ē*n*ą
-BreakingLengthening: *x*æ*b*ē*n*ą
-VelarFricPal: *ç*æ*b*ē*n*ą
-ARestoration: *ç*æ*b*ē*n*ą
-FinalWeakSchwaApocope: *ç*æ*b*ē*n*ą
-JGemination: *ç*æ*b*ē*n*ą
-SkPalatalization: *ç*æ*b*ē*n*ą
-VelarPalatalization: *ç*æ*b*ē*n*ą
-IUmlaut: *ç*æ*b*ē*n*ą
-JClusterCoalescence: *ç*æ*b*ē*n*ą
-BackMutation: *ç*æ*b*ē*n*ą
-NasalSpirantLengthening: *ç*æ*b*ē*n*ą
-NasalSpirantLoss: *ç*æ*b*ē*n*ą
-WeakTailNasalLoss: *ç*æ*b*ē*n
-WeightMarkers: *ç*æ*b*ē*n
-HighVowelApocope: *ç*æ*b*ē*n
-HeavySyllableNasalApocope: *ç*æ*b*ē*n
-WeakTailReduction: *ç*æ*b*ē*n
-JLossAfterHeavy: *ç*æ*b*ē*n
-WeightCleanup: *ç*æ*b*ē*n
-HLoss: *ç*æ*b*ē*n
-Contraction: *ç*æ*b*ē*n
-ProtoToOEWeakTail: *ç*æ*b*ē*n
-ProtoToOEWeightMarkers: *ç*æ*b*ē*n
-ProtoToOEApocope: *ç*æ*b*ē*n
-ProtoToOEWeightCleanup: *ç*æ*b*e*n
-ProtoToOE: *ç*æ*b*e*n
-WGlide: *ç*æ*b*e*n
-GhMarker: *ç*æ*b*e*n
-GlideDeletion: *ç*æ*b*e*n
-Epenthesis: *ç*æ*b*e*n
-Orthography: hæben
-Surface: hæben
+ConsonantRules: *x*a*β*ē*n*ą
+WestGermanic: *x*a*β*ē*n*ą
+NWGmcULowering: *x*a*β*ē*n*ą
+NWGmcFinalLongORaising: *x*a*β*ē*n*ą
+AuFronting: *x*a*β*ē*n*ą
+WWSimplification: *x*a*β*ē*n*ą
+DiphthongLeveling: *x*a*β*ē*n*ą
+EwLongDiphthong: *x*a*β*ē*n*ą
+AngloFrisianBrightening: *x*æ*β*ē*n*ą
+BreakingLengthening: *x*æ*β*ē*n*ą
+VelarFricPal: *ç*æ*β*ē*n*ą
+ARestoration: *ç*æ*β*ē*n*ą
+FinalWeakSchwaApocope: *ç*æ*β*ē*n*ą
+JGemination: *ç*æ*β*ē*n*ą
+SkPalatalization: *ç*æ*β*ē*n*ą
+VelarPalatalization: *ç*æ*β*ē*n*ą
+IUmlaut: *ç*æ*β*ē*n*ą
+JClusterCoalescence: *ç*æ*β*ē*n*ą
+BackMutation: *ç*æ*β*ē*n*ą
+NasalSpirantLengthening: *ç*æ*β*ē*n*ą
+NasalSpirantLoss: *ç*æ*β*ē*n*ą
+WeakTailNasalLoss: *ç*æ*β*ē*n
+WeightMarkers: *ç*æ*β*ē*n
+HighVowelApocope: *ç*æ*β*ē*n
+HeavySyllableNasalApocope: *ç*æ*β*ē*n
+WeakTailReduction: *ç*æ*β*ē*n
+JLossAfterHeavy: *ç*æ*β*ē*n
+WeightCleanup: *ç*æ*β*ē*n
+HLoss: *ç*æ*β*ē*n
+Contraction: *ç*æ*β*ē*n
+ProtoToOEWeakTail: *ç*æ*β*ē*n
+ProtoToOEWeightMarkers: *ç*æ*β*ē*n
+ProtoToOEApocope: *ç*æ*β*ē*n
+ProtoToOEWeightCleanup: *ç*æ*β*e*n
+ProtoToOE: *ç*æ*β*e*n
+WGlide: *ç*æ*β*e*n
+GhMarker: *ç*æ*β*e*n
+GlideDeletion: *ç*æ*β*e*n
+Epenthesis: *ç*æ*β*e*n
+Orthography: hæfen
+Surface: hæfen
 
 --- land ---
 PROTO: *landą
@@ -14346,7 +14946,60 @@ Orthography: sċūfl
 Surface: sċūfl
 
 
-=== BUCKET: vowel_quality_other (26) ===
+=== BUCKET: epenthetic_vowel_missing (1) ===
+
+--- live ---
+PROTO: *libēną
+EXPECTED: lifian
+OUTPUTS: lifen
+
+ProtoInput: *l*i*b*ē*n*ą
+InitialKn: *l*i*b*ē*n*ą
+Palatalisation: *l*i*b*ē*n*ą
+ConsonantRules: *l*i*β*ē*n*ą
+WestGermanic: *l*i*β*ē*n*ą
+NWGmcULowering: *l*i*β*ē*n*ą
+NWGmcFinalLongORaising: *l*i*β*ē*n*ą
+AuFronting: *l*i*β*ē*n*ą
+WWSimplification: *l*i*β*ē*n*ą
+DiphthongLeveling: *l*i*β*ē*n*ą
+EwLongDiphthong: *l*i*β*ē*n*ą
+AngloFrisianBrightening: *l*i*β*ē*n*ą
+BreakingLengthening: *l*i*β*ē*n*ą
+VelarFricPal: *l*i*β*ē*n*ą
+ARestoration: *l*i*β*ē*n*ą
+FinalWeakSchwaApocope: *l*i*β*ē*n*ą
+JGemination: *l*i*β*ē*n*ą
+SkPalatalization: *l*i*β*ē*n*ą
+VelarPalatalization: *l*i*β*ē*n*ą
+IUmlaut: *l*i*β*ē*n*ą
+JClusterCoalescence: *l*i*β*ē*n*ą
+BackMutation: *l*i*β*ē*n*ą
+NasalSpirantLengthening: *l*i*β*ē*n*ą
+NasalSpirantLoss: *l*i*β*ē*n*ą
+WeakTailNasalLoss: *l*i*β*ē*n
+WeightMarkers: *l*i*β*ē*n
+HighVowelApocope: *l*i*β*ē*n
+HeavySyllableNasalApocope: *l*i*β*ē*n
+WeakTailReduction: *l*i*β*ē*n
+JLossAfterHeavy: *l*i*β*ē*n
+WeightCleanup: *l*i*β*ē*n
+HLoss: *l*i*β*ē*n
+Contraction: *l*i*β*ē*n
+ProtoToOEWeakTail: *l*i*β*ē*n
+ProtoToOEWeightMarkers: *l*i*β*ē*n
+ProtoToOEApocope: *l*i*β*ē*n
+ProtoToOEWeightCleanup: *l*i*β*e*n
+ProtoToOE: *l*i*β*e*n
+WGlide: *l*i*β*e*n
+GhMarker: *l*i*β*e*n
+GlideDeletion: *l*i*β*e*n
+Epenthesis: *l*i*β*e*n
+Orthography: lifen
+Surface: lifen
+
+
+=== BUCKET: vowel_quality_other (27) ===
 
 --- buck ---
 PROTO: *bukkăz
@@ -14947,6 +15600,56 @@ GlideDeletion: *m*ō*d*e*r
 Epenthesis: *m*ō*d*e*r
 Orthography: mōder
 Surface: mōder
+
+--- nave ---
+PROTO: *nabō
+EXPECTED: nafu
+OUTPUTS: nafo
+
+ProtoInput: *n*a*b*ō
+InitialKn: *n*a*b*ō
+Palatalisation: *n*a*b*ō
+ConsonantRules: *n*a*β*ō
+WestGermanic: *n*a*β*ō
+NWGmcULowering: *n*a*β*ō
+NWGmcFinalLongORaising: *n*a*β*u
+AuFronting: *n*a*β*u
+WWSimplification: *n*a*β*u
+DiphthongLeveling: *n*a*β*u
+EwLongDiphthong: *n*a*β*u
+AngloFrisianBrightening: *n*æ*β*u
+BreakingLengthening: *n*æ*β*u
+VelarFricPal: *n*æ*β*u
+ARestoration: *n*a*β*u
+FinalWeakSchwaApocope: *n*a*β*u
+JGemination: *n*a*β*u
+SkPalatalization: *n*a*β*u
+VelarPalatalization: *n*a*β*u
+IUmlaut: *n*a*β*u
+JClusterCoalescence: *n*a*β*u
+BackMutation: *n*a*β*u
+NasalSpirantLengthening: *n*a*β*u
+NasalSpirantLoss: *n*a*β*u
+WeakTailNasalLoss: *n*a*β*u
+WeightMarkers: *n*a*β*u
+HighVowelApocope: *n*a*β*u
+HeavySyllableNasalApocope: *n*a*β*u
+WeakTailReduction: *n*a*β*o
+JLossAfterHeavy: *n*a*β*o
+WeightCleanup: *n*a*β*o
+HLoss: *n*a*β*o
+Contraction: *n*a*β*o
+ProtoToOEWeakTail: *n*a*β*u
+ProtoToOEWeightMarkers: *n*a*β*u
+ProtoToOEApocope: *n*a*β*u
+ProtoToOEWeightCleanup: *n*a*β*o
+ProtoToOE: *n*a*β*o
+WGlide: *n*a*β*o
+GhMarker: *n*a*β*o
+GlideDeletion: *n*a*β*o
+Epenthesis: *n*a*β*o
+Orthography: nafo
+Surface: nafo
 
 --- nest ---
 PROTO: *nistą
@@ -15702,57 +16405,7 @@ Orthography: spinnolo
 Surface: spinnolo
 
 
-=== BUCKET: consonant_mismatch_other (53) ===
-
---- beaver ---
-PROTO: *bebruz
-EXPECTED: befer
-OUTPUTS: beber
-
-ProtoInput: *b*e*b*r*u*z
-InitialKn: *b*e*b*r*u*z
-Palatalisation: *b*e*b*r*u*z
-ConsonantRules: *b*e*b*r*u
-WestGermanic: *b*e*b*r*u
-NWGmcULowering: *b*e*b*r*u
-NWGmcFinalLongORaising: *b*e*b*r*u
-AuFronting: *b*e*b*r*u
-WWSimplification: *b*e*b*r*u
-DiphthongLeveling: *b*e*b*r*u
-EwLongDiphthong: *b*e*b*r*u
-AngloFrisianBrightening: *b*e*b*r*u
-BreakingLengthening: *b*e*b*r*u
-VelarFricPal: *b*e*b*r*u
-ARestoration: *b*e*b*r*u
-FinalWeakSchwaApocope: *b*e*b*r*u
-JGemination: *b*e*b*r*u
-SkPalatalization: *b*e*b*r*u
-VelarPalatalization: *b*e*b*r*u
-IUmlaut: *b*e*b*r*u
-JClusterCoalescence: *b*e*b*r*u
-BackMutation: *b*e*b*r*u
-NasalSpirantLengthening: *b*e*b*r*u
-NasalSpirantLoss: *b*e*b*r*u
-WeakTailNasalLoss: *b*e*b*r*u
-WeightMarkers: *b*e*b*r*u
-HighVowelApocope: *b*e*b*r
-HeavySyllableNasalApocope: *b*e*b*r
-WeakTailReduction: *b*e*b*r
-JLossAfterHeavy: *b*e*b*r
-WeightCleanup: *b*e*b*r
-HLoss: *b*e*b*r
-Contraction: *b*e*b*r
-ProtoToOEWeakTail: *b*e*b*r*u
-ProtoToOEWeightMarkers: *b*e*b*r*u
-ProtoToOEApocope: *b*e*b*r
-ProtoToOEWeightCleanup: *b*e*b*r
-ProtoToOE: *b*e*b*r
-WGlide: *b*e*b*r
-GhMarker: *b*e*b*r
-GlideDeletion: *b*e*b*r
-Epenthesis: *b*e*b*e*r
-Orthography: beber
-Surface: beber
+=== BUCKET: consonant_mismatch_other (39) ===
 
 --- believe ---
 PROTO: *laubjăną
@@ -15762,45 +16415,45 @@ OUTPUTS: līefan
 ProtoInput: *l*au*b*j*ă*n*ą
 InitialKn: *l*au*b*j*ă*n*ą
 Palatalisation: *l*au*b*j*ă*n*ą
-ConsonantRules: *l*au*b*j*ă*n*ą
-WestGermanic: *l*au*b*j*ă*n*ą
-NWGmcULowering: *l*au*b*j*ă*n*ą
-NWGmcFinalLongORaising: *l*au*b*j*ă*n*ą
-AuFronting: *l*aeu*b*j*ă*n*ą
-WWSimplification: *l*aeu*b*j*ă*n*ą
-DiphthongLeveling: *l*ēa*b*j*ă*n*ą
-EwLongDiphthong: *l*ēa*b*j*ă*n*ą
-AngloFrisianBrightening: *l*ēa*b*j*ă*n*ą
-BreakingLengthening: *l*ēa*b*j*ă*n*ą
-VelarFricPal: *l*ēa*b*j*ă*n*ą
-ARestoration: *l*ēa*b*j*ă*n*ą
-FinalWeakSchwaApocope: *l*ēa*b*j*ă*n*ą
-JGemination: *l*ēa*b*j*ă*n*ą
-SkPalatalization: *l*ēa*b*j*ă*n*ą
-VelarPalatalization: *l*ēa*b*j*ă*n*ą
-IUmlaut: *l*īe*b*j*ă*n*ą
-JClusterCoalescence: *l*īe*v*ă*n*ą
-BackMutation: *l*īe*v*ă*n*ą
-NasalSpirantLengthening: *l*īe*v*ă*n*ą
-NasalSpirantLoss: *l*īe*v*ă*n*ą
-WeakTailNasalLoss: *l*īe*v*ă*n
-WeightMarkers: *l*īe*v*ă*n
-HighVowelApocope: *l*īe*v*ă*n
-HeavySyllableNasalApocope: *l*īe*v*ă*n
-WeakTailReduction: *l*īe*v*ă*n
-JLossAfterHeavy: *l*īe*v*ă*n
-WeightCleanup: *l*īe*v*ă*n
-HLoss: *l*īe*v*ă*n
-Contraction: *l*īe*v*ă*n
-ProtoToOEWeakTail: *l*īe*v*ă*n
-ProtoToOEWeightMarkers: *l*īe*v*ă*n
-ProtoToOEApocope: *l*īe*v*ă*n
-ProtoToOEWeightCleanup: *l*īe*v*ă*n
-ProtoToOE: *l*īe*v*ă*n
-WGlide: *l*īe*v*ă*n
-GhMarker: *l*īe*v*ă*n
-GlideDeletion: *l*īe*v*ă*n
-Epenthesis: *l*īe*v*ă*n
+ConsonantRules: *l*au*β*j*ă*n*ą
+WestGermanic: *l*au*β*j*ă*n*ą
+NWGmcULowering: *l*au*β*j*ă*n*ą
+NWGmcFinalLongORaising: *l*au*β*j*ă*n*ą
+AuFronting: *l*aeu*β*j*ă*n*ą
+WWSimplification: *l*aeu*β*j*ă*n*ą
+DiphthongLeveling: *l*ēa*β*j*ă*n*ą
+EwLongDiphthong: *l*ēa*β*j*ă*n*ą
+AngloFrisianBrightening: *l*ēa*β*j*ă*n*ą
+BreakingLengthening: *l*ēa*β*j*ă*n*ą
+VelarFricPal: *l*ēa*β*j*ă*n*ą
+ARestoration: *l*ēa*β*j*ă*n*ą
+FinalWeakSchwaApocope: *l*ēa*β*j*ă*n*ą
+JGemination: *l*ēa*β*j*ă*n*ą
+SkPalatalization: *l*ēa*β*j*ă*n*ą
+VelarPalatalization: *l*ēa*β*j*ă*n*ą
+IUmlaut: *l*īe*β*j*ă*n*ą
+JClusterCoalescence: *l*īe*β*j*ă*n*ą
+BackMutation: *l*īe*β*j*ă*n*ą
+NasalSpirantLengthening: *l*īe*β*j*ă*n*ą
+NasalSpirantLoss: *l*īe*β*j*ă*n*ą
+WeakTailNasalLoss: *l*īe*β*j*ă*n
+WeightMarkers: *l*īe*β*j*ă*n
+HighVowelApocope: *l*īe*β*j*ă*n
+HeavySyllableNasalApocope: *l*īe*β*j*ă*n
+WeakTailReduction: *l*īe*β*j*a*n
+JLossAfterHeavy: *l*īe*β*a*n
+WeightCleanup: *l*īe*β*a*n
+HLoss: *l*īe*β*a*n
+Contraction: *l*īe*β*a*n
+ProtoToOEWeakTail: *l*īe*β*j*ă*n
+ProtoToOEWeightMarkers: *l*īe*β*j*ă*n
+ProtoToOEApocope: *l*īe*β*j*ă*n
+ProtoToOEWeightCleanup: *l*īe*β*a*n
+ProtoToOE: *l*īe*β*a*n
+WGlide: *l*īe*β*a*n
+GhMarker: *l*īe*β*a*n
+GlideDeletion: *l*īe*β*a*n
+Epenthesis: *l*īe*β*a*n
 Orthography: līefan
 Surface: līefan
 
@@ -16003,56 +16656,6 @@ GlideDeletion: *k*o*r*n*a*n
 Epenthesis: *k*o*r*n*a*n
 Orthography: cornan
 Surface: cornan
-
---- drive ---
-PROTO: *drībăną
-EXPECTED: drīfan
-OUTPUTS: drīban
-
-ProtoInput: *d*r*ī*b*ă*n*ą
-InitialKn: *d*r*ī*b*ă*n*ą
-Palatalisation: *d*r*ī*b*ă*n*ą
-ConsonantRules: *d*r*ī*b*ă*n*ą
-WestGermanic: *d*r*ī*b*ă*n*ą
-NWGmcULowering: *d*r*ī*b*ă*n*ą
-NWGmcFinalLongORaising: *d*r*ī*b*ă*n*ą
-AuFronting: *d*r*ī*b*ă*n*ą
-WWSimplification: *d*r*ī*b*ă*n*ą
-DiphthongLeveling: *d*r*ī*b*ă*n*ą
-EwLongDiphthong: *d*r*ī*b*ă*n*ą
-AngloFrisianBrightening: *d*r*ī*b*ă*n*ą
-BreakingLengthening: *d*r*ī*b*ă*n*ą
-VelarFricPal: *d*r*ī*b*ă*n*ą
-ARestoration: *d*r*ī*b*ă*n*ą
-FinalWeakSchwaApocope: *d*r*ī*b*ă*n*ą
-JGemination: *d*r*ī*b*ă*n*ą
-SkPalatalization: *d*r*ī*b*ă*n*ą
-VelarPalatalization: *d*r*ī*b*ă*n*ą
-IUmlaut: *d*r*ī*b*ă*n*ą
-JClusterCoalescence: *d*r*ī*b*ă*n*ą
-BackMutation: *d*r*ī*b*ă*n*ą
-NasalSpirantLengthening: *d*r*ī*b*ă*n*ą
-NasalSpirantLoss: *d*r*ī*b*ă*n*ą
-WeakTailNasalLoss: *d*r*ī*b*ă*n
-WeightMarkers: *d*r*ī*b*ă*n
-HighVowelApocope: *d*r*ī*b*ă*n
-HeavySyllableNasalApocope: *d*r*ī*b*ă*n
-WeakTailReduction: *d*r*ī*b*a*n
-JLossAfterHeavy: *d*r*ī*b*a*n
-WeightCleanup: *d*r*ī*b*a*n
-HLoss: *d*r*ī*b*a*n
-Contraction: *d*r*ī*b*a*n
-ProtoToOEWeakTail: *d*r*ī*b*ă*n
-ProtoToOEWeightMarkers: *d*r*ī*b*ă*n
-ProtoToOEApocope: *d*r*ī*b*ă*n
-ProtoToOEWeightCleanup: *d*r*ī*b*a*n
-ProtoToOE: *d*r*ī*b*a*n
-WGlide: *d*r*ī*b*a*n
-GhMarker: *d*r*ī*b*a*n
-GlideDeletion: *d*r*ī*b*a*n
-Epenthesis: *d*r*ī*b*a*n
-Orthography: drīban
-Surface: drīban
 
 --- fare ---
 PROTO: *farăną
@@ -16407,102 +17010,52 @@ Surface: golþ
 --- grave ---
 PROTO: *grabăną
 EXPECTED: græf
-OUTPUTS: græban
+OUTPUTS: græfan
 
 ProtoInput: *g*r*a*b*ă*n*ą
 InitialKn: *g*r*a*b*ă*n*ą
 Palatalisation: *g*r*a*b*ă*n*ą
-ConsonantRules: *g*r*a*b*ă*n*ą
-WestGermanic: *g*r*a*b*ă*n*ą
-NWGmcULowering: *g*r*a*b*ă*n*ą
-NWGmcFinalLongORaising: *g*r*a*b*ă*n*ą
-AuFronting: *g*r*a*b*ă*n*ą
-WWSimplification: *g*r*a*b*ă*n*ą
-DiphthongLeveling: *g*r*a*b*ă*n*ą
-EwLongDiphthong: *g*r*a*b*ă*n*ą
-AngloFrisianBrightening: *g*r*æ*b*ă*n*ą
-BreakingLengthening: *g*r*æ*b*ă*n*ą
-VelarFricPal: *g*r*æ*b*ă*n*ą
-ARestoration: *g*r*æ*b*ă*n*ą
-FinalWeakSchwaApocope: *g*r*æ*b*ă*n*ą
-JGemination: *g*r*æ*b*ă*n*ą
-SkPalatalization: *g*r*æ*b*ă*n*ą
-VelarPalatalization: *g*r*æ*b*ă*n*ą
-IUmlaut: *g*r*æ*b*ă*n*ą
-JClusterCoalescence: *g*r*æ*b*ă*n*ą
-BackMutation: *g*r*æ*b*ă*n*ą
-NasalSpirantLengthening: *g*r*æ*b*ă*n*ą
-NasalSpirantLoss: *g*r*æ*b*ă*n*ą
-WeakTailNasalLoss: *g*r*æ*b*ă*n
-WeightMarkers: *g*r*æ*b*ă*n
-HighVowelApocope: *g*r*æ*b*ă*n
-HeavySyllableNasalApocope: *g*r*æ*b*ă*n
-WeakTailReduction: *g*r*æ*b*a*n
-JLossAfterHeavy: *g*r*æ*b*a*n
-WeightCleanup: *g*r*æ*b*a*n
-HLoss: *g*r*æ*b*a*n
-Contraction: *g*r*æ*b*a*n
-ProtoToOEWeakTail: *g*r*æ*b*ă*n
-ProtoToOEWeightMarkers: *g*r*æ*b*ă*n
-ProtoToOEApocope: *g*r*æ*b*ă*n
-ProtoToOEWeightCleanup: *g*r*æ*b*a*n
-ProtoToOE: *g*r*æ*b*a*n
-WGlide: *g*r*æ*b*a*n
-GhMarker: *g*r*æ*b*a*n
-GlideDeletion: *g*r*æ*b*a*n
-Epenthesis: *g*r*æ*b*a*n
-Orthography: græban
-Surface: græban
-
---- head ---
-PROTO: *xaubudą
-EXPECTED: hēafod
-OUTPUTS: hēabod
-
-ProtoInput: *x*au*b*u*d*ą
-InitialKn: *x*au*b*u*d*ą
-Palatalisation: *x*au*b*u*d*ą
-ConsonantRules: *x*au*b*u*d*ą
-WestGermanic: *x*au*b*u*d*ą
-NWGmcULowering: *x*au*b*o*d*ą
-NWGmcFinalLongORaising: *x*au*b*o*d*ą
-AuFronting: *x*aeu*b*o*d*ą
-WWSimplification: *x*aeu*b*o*d*ą
-DiphthongLeveling: *x*ēa*b*o*d*ą
-EwLongDiphthong: *x*ēa*b*o*d*ą
-AngloFrisianBrightening: *x*ēa*b*o*d*ą
-BreakingLengthening: *x*ēa*b*o*d*ą
-VelarFricPal: *ç*ēa*b*o*d*ą
-ARestoration: *ç*ēa*b*o*d*ą
-FinalWeakSchwaApocope: *ç*ēa*b*o*d*ą
-JGemination: *ç*ēa*b*o*d*ą
-SkPalatalization: *ç*ēa*b*o*d*ą
-VelarPalatalization: *ç*ēa*b*o*d*ą
-IUmlaut: *ç*ēa*b*o*d*ą
-JClusterCoalescence: *ç*ēa*b*o*d*ą
-BackMutation: *ç*ēa*b*o*d*ą
-NasalSpirantLengthening: *ç*ēa*b*o*d*ą
-NasalSpirantLoss: *ç*ēa*b*o*d*ą
-WeakTailNasalLoss: *ç*ēa*b*o*d*ą
-WeightMarkers: *ç*ēa*b*o*d*ą
-HighVowelApocope: *ç*ēa*b*o*d*ą
-HeavySyllableNasalApocope: *ç*ēa*b*o*d
-WeakTailReduction: *ç*ēa*b*o*d
-JLossAfterHeavy: *ç*ēa*b*o*d
-WeightCleanup: *ç*ēa*b*o*d
-HLoss: *ç*ēa*b*o*d
-Contraction: *ç*ēa*b*o*d
-ProtoToOEWeakTail: *ç*ēa*b*o*d*ą
-ProtoToOEWeightMarkers: *ç*ēa*b*o*d*ą
-ProtoToOEApocope: *ç*ēa*b*o*d
-ProtoToOEWeightCleanup: *ç*ēa*b*o*d
-ProtoToOE: *ç*ēa*b*o*d
-WGlide: *ç*ēa*b*o*d
-GhMarker: *ç*ēa*b*o*d
-GlideDeletion: *ç*ēa*b*o*d
-Epenthesis: *ç*ēa*b*o*d
-Orthography: hēabod
-Surface: hēabod
+ConsonantRules: *g*r*a*β*ă*n*ą
+WestGermanic: *g*r*a*β*ă*n*ą
+NWGmcULowering: *g*r*a*β*ă*n*ą
+NWGmcFinalLongORaising: *g*r*a*β*ă*n*ą
+AuFronting: *g*r*a*β*ă*n*ą
+WWSimplification: *g*r*a*β*ă*n*ą
+DiphthongLeveling: *g*r*a*β*ă*n*ą
+EwLongDiphthong: *g*r*a*β*ă*n*ą
+AngloFrisianBrightening: *g*r*æ*β*ă*n*ą
+BreakingLengthening: *g*r*æ*β*ă*n*ą
+VelarFricPal: *g*r*æ*β*ă*n*ą
+ARestoration: *g*r*æ*β*ă*n*ą
+FinalWeakSchwaApocope: *g*r*æ*β*ă*n*ą
+JGemination: *g*r*æ*β*ă*n*ą
+SkPalatalization: *g*r*æ*β*ă*n*ą
+VelarPalatalization: *g*r*æ*β*ă*n*ą
+IUmlaut: *g*r*æ*β*ă*n*ą
+JClusterCoalescence: *g*r*æ*β*ă*n*ą
+BackMutation: *g*r*æ*β*ă*n*ą
+NasalSpirantLengthening: *g*r*æ*β*ă*n*ą
+NasalSpirantLoss: *g*r*æ*β*ă*n*ą
+WeakTailNasalLoss: *g*r*æ*β*ă*n
+WeightMarkers: *g*r*æ*β*ă*n
+HighVowelApocope: *g*r*æ*β*ă*n
+HeavySyllableNasalApocope: *g*r*æ*β*ă*n
+WeakTailReduction: *g*r*æ*β*a*n
+JLossAfterHeavy: *g*r*æ*β*a*n
+WeightCleanup: *g*r*æ*β*a*n
+HLoss: *g*r*æ*β*a*n
+Contraction: *g*r*æ*β*a*n
+ProtoToOEWeakTail: *g*r*æ*β*ă*n
+ProtoToOEWeightMarkers: *g*r*æ*β*ă*n
+ProtoToOEApocope: *g*r*æ*β*ă*n
+ProtoToOEWeightCleanup: *g*r*æ*β*a*n
+ProtoToOE: *g*r*æ*β*a*n
+WGlide: *g*r*æ*β*a*n
+GhMarker: *g*r*æ*β*a*n
+GlideDeletion: *g*r*æ*β*a*n
+Epenthesis: *g*r*æ*β*a*n
+Orthography: græfan
+Surface: græfan
 
 --- horn ---
 PROTO: *xurnăn
@@ -16554,106 +17107,6 @@ Epenthesis: *x*o*r*n*a*n
 Orthography: hornan
 Surface: hornan
 
---- leaf ---
-PROTO: *laubą
-EXPECTED: lēaf
-OUTPUTS: lēab
-
-ProtoInput: *l*au*b*ą
-InitialKn: *l*au*b*ą
-Palatalisation: *l*au*b*ą
-ConsonantRules: *l*au*b*ą
-WestGermanic: *l*au*b*ą
-NWGmcULowering: *l*au*b*ą
-NWGmcFinalLongORaising: *l*au*b*ą
-AuFronting: *l*aeu*b*ą
-WWSimplification: *l*aeu*b*ą
-DiphthongLeveling: *l*ēa*b*ą
-EwLongDiphthong: *l*ēa*b*ą
-AngloFrisianBrightening: *l*ēa*b*ą
-BreakingLengthening: *l*ēa*b*ą
-VelarFricPal: *l*ēa*b*ą
-ARestoration: *l*ēa*b*ą
-FinalWeakSchwaApocope: *l*ēa*b*ą
-JGemination: *l*ēa*b*ą
-SkPalatalization: *l*ēa*b*ą
-VelarPalatalization: *l*ēa*b*ą
-IUmlaut: *l*ēa*b*ą
-JClusterCoalescence: *l*ēa*b*ą
-BackMutation: *l*ēa*b*ą
-NasalSpirantLengthening: *l*ēa*b*ą
-NasalSpirantLoss: *l*ēa*b*ą
-WeakTailNasalLoss: *l*ēa*b*ą
-WeightMarkers: *l*ēa*b*ą
-HighVowelApocope: *l*ēa*b*ą
-HeavySyllableNasalApocope: *l*ēa*b
-WeakTailReduction: *l*ēa*b
-JLossAfterHeavy: *l*ēa*b
-WeightCleanup: *l*ēa*b
-HLoss: *l*ēa*b
-Contraction: *l*ēa*b
-ProtoToOEWeakTail: *l*ēa*b*ą
-ProtoToOEWeightMarkers: *l*ēa*b*ą
-ProtoToOEApocope: *l*ēa*b
-ProtoToOEWeightCleanup: *l*ēa*b
-ProtoToOE: *l*ēa*b
-WGlide: *l*ēa*b
-GhMarker: *l*ēa*b
-GlideDeletion: *l*ēa*b
-Epenthesis: *l*ēa*b
-Orthography: lēab
-Surface: lēab
-
---- life ---
-PROTO: *lībą
-EXPECTED: līf
-OUTPUTS: līb
-
-ProtoInput: *l*ī*b*ą
-InitialKn: *l*ī*b*ą
-Palatalisation: *l*ī*b*ą
-ConsonantRules: *l*ī*b*ą
-WestGermanic: *l*ī*b*ą
-NWGmcULowering: *l*ī*b*ą
-NWGmcFinalLongORaising: *l*ī*b*ą
-AuFronting: *l*ī*b*ą
-WWSimplification: *l*ī*b*ą
-DiphthongLeveling: *l*ī*b*ą
-EwLongDiphthong: *l*ī*b*ą
-AngloFrisianBrightening: *l*ī*b*ą
-BreakingLengthening: *l*ī*b*ą
-VelarFricPal: *l*ī*b*ą
-ARestoration: *l*ī*b*ą
-FinalWeakSchwaApocope: *l*ī*b*ą
-JGemination: *l*ī*b*ą
-SkPalatalization: *l*ī*b*ą
-VelarPalatalization: *l*ī*b*ą
-IUmlaut: *l*ī*b*ą
-JClusterCoalescence: *l*ī*b*ą
-BackMutation: *l*ī*b*ą
-NasalSpirantLengthening: *l*ī*b*ą
-NasalSpirantLoss: *l*ī*b*ą
-WeakTailNasalLoss: *l*ī*b*ą
-WeightMarkers: *l*ī*b*ą
-HighVowelApocope: *l*ī*b*ą
-HeavySyllableNasalApocope: *l*ī*b
-WeakTailReduction: *l*ī*b
-JLossAfterHeavy: *l*ī*b
-WeightCleanup: *l*ī*b
-HLoss: *l*ī*b
-Contraction: *l*ī*b
-ProtoToOEWeakTail: *l*ī*b*ą
-ProtoToOEWeightMarkers: *l*ī*b*ą
-ProtoToOEApocope: *l*ī*b
-ProtoToOEWeightCleanup: *l*ī*b
-ProtoToOE: *l*ī*b
-WGlide: *l*ī*b
-GhMarker: *l*ī*b
-GlideDeletion: *l*ī*b
-Epenthesis: *l*ī*b
-Orthography: līb
-Surface: līb
-
 --- light ---
 PROTO: *leuxtjăną
 EXPECTED: lēoht
@@ -16703,106 +17156,6 @@ GlideDeletion: *l*īe*GH*t*a*n
 Epenthesis: *l*īe*x*t*a*n
 Orthography: līehtan
 Surface: līehtan
-
---- live ---
-PROTO: *libēną
-EXPECTED: lifian
-OUTPUTS: liben
-
-ProtoInput: *l*i*b*ē*n*ą
-InitialKn: *l*i*b*ē*n*ą
-Palatalisation: *l*i*b*ē*n*ą
-ConsonantRules: *l*i*b*ē*n*ą
-WestGermanic: *l*i*b*ē*n*ą
-NWGmcULowering: *l*i*b*ē*n*ą
-NWGmcFinalLongORaising: *l*i*b*ē*n*ą
-AuFronting: *l*i*b*ē*n*ą
-WWSimplification: *l*i*b*ē*n*ą
-DiphthongLeveling: *l*i*b*ē*n*ą
-EwLongDiphthong: *l*i*b*ē*n*ą
-AngloFrisianBrightening: *l*i*b*ē*n*ą
-BreakingLengthening: *l*i*b*ē*n*ą
-VelarFricPal: *l*i*b*ē*n*ą
-ARestoration: *l*i*b*ē*n*ą
-FinalWeakSchwaApocope: *l*i*b*ē*n*ą
-JGemination: *l*i*b*ē*n*ą
-SkPalatalization: *l*i*b*ē*n*ą
-VelarPalatalization: *l*i*b*ē*n*ą
-IUmlaut: *l*i*b*ē*n*ą
-JClusterCoalescence: *l*i*b*ē*n*ą
-BackMutation: *l*i*b*ē*n*ą
-NasalSpirantLengthening: *l*i*b*ē*n*ą
-NasalSpirantLoss: *l*i*b*ē*n*ą
-WeakTailNasalLoss: *l*i*b*ē*n
-WeightMarkers: *l*i*b*ē*n
-HighVowelApocope: *l*i*b*ē*n
-HeavySyllableNasalApocope: *l*i*b*ē*n
-WeakTailReduction: *l*i*b*ē*n
-JLossAfterHeavy: *l*i*b*ē*n
-WeightCleanup: *l*i*b*ē*n
-HLoss: *l*i*b*ē*n
-Contraction: *l*i*b*ē*n
-ProtoToOEWeakTail: *l*i*b*ē*n
-ProtoToOEWeightMarkers: *l*i*b*ē*n
-ProtoToOEApocope: *l*i*b*ē*n
-ProtoToOEWeightCleanup: *l*i*b*e*n
-ProtoToOE: *l*i*b*e*n
-WGlide: *l*i*b*e*n
-GhMarker: *l*i*b*e*n
-GlideDeletion: *l*i*b*e*n
-Epenthesis: *l*i*b*e*n
-Orthography: liben
-Surface: liben
-
---- liver ---
-PROTO: *librō
-EXPECTED: lifer
-OUTPUTS: liber
-
-ProtoInput: *l*i*b*r*ō
-InitialKn: *l*i*b*r*ō
-Palatalisation: *l*i*b*r*ō
-ConsonantRules: *l*i*b*r*ō
-WestGermanic: *l*i*b*r*ō
-NWGmcULowering: *l*i*b*r*ō
-NWGmcFinalLongORaising: *l*i*b*r*u
-AuFronting: *l*i*b*r*u
-WWSimplification: *l*i*b*r*u
-DiphthongLeveling: *l*i*b*r*u
-EwLongDiphthong: *l*i*b*r*u
-AngloFrisianBrightening: *l*i*b*r*u
-BreakingLengthening: *l*i*b*r*u
-VelarFricPal: *l*i*b*r*u
-ARestoration: *l*i*b*r*u
-FinalWeakSchwaApocope: *l*i*b*r*u
-JGemination: *l*i*b*r*u
-SkPalatalization: *l*i*b*r*u
-VelarPalatalization: *l*i*b*r*u
-IUmlaut: *l*i*b*r*u
-JClusterCoalescence: *l*i*b*r*u
-BackMutation: *l*i*b*r*u
-NasalSpirantLengthening: *l*i*b*r*u
-NasalSpirantLoss: *l*i*b*r*u
-WeakTailNasalLoss: *l*i*b*r*u
-WeightMarkers: *l*i*b*r*u
-HighVowelApocope: *l*i*b*r
-HeavySyllableNasalApocope: *l*i*b*r
-WeakTailReduction: *l*i*b*r
-JLossAfterHeavy: *l*i*b*r
-WeightCleanup: *l*i*b*r
-HLoss: *l*i*b*r
-Contraction: *l*i*b*r
-ProtoToOEWeakTail: *l*i*b*r*u
-ProtoToOEWeightMarkers: *l*i*b*r*u
-ProtoToOEApocope: *l*i*b*r
-ProtoToOEWeightCleanup: *l*i*b*r
-ProtoToOE: *l*i*b*r
-WGlide: *l*i*b*r
-GhMarker: *l*i*b*r
-GlideDeletion: *l*i*b*r
-Epenthesis: *l*i*b*e*r
-Orthography: liber
-Surface: liber
 
 --- loam ---
 PROTO: *laimōn
@@ -16954,56 +17307,6 @@ Epenthesis: *l*ēa*g
 Orthography: lēag
 Surface: lēag
 
---- nave ---
-PROTO: *nabō
-EXPECTED: nafu
-OUTPUTS: nabo
-
-ProtoInput: *n*a*b*ō
-InitialKn: *n*a*b*ō
-Palatalisation: *n*a*b*ō
-ConsonantRules: *n*a*b*ō
-WestGermanic: *n*a*b*ō
-NWGmcULowering: *n*a*b*ō
-NWGmcFinalLongORaising: *n*a*b*u
-AuFronting: *n*a*b*u
-WWSimplification: *n*a*b*u
-DiphthongLeveling: *n*a*b*u
-EwLongDiphthong: *n*a*b*u
-AngloFrisianBrightening: *n*æ*b*u
-BreakingLengthening: *n*æ*b*u
-VelarFricPal: *n*æ*b*u
-ARestoration: *n*a*b*u
-FinalWeakSchwaApocope: *n*a*b*u
-JGemination: *n*a*b*u
-SkPalatalization: *n*a*b*u
-VelarPalatalization: *n*a*b*u
-IUmlaut: *n*a*b*u
-JClusterCoalescence: *n*a*b*u
-BackMutation: *n*a*b*u
-NasalSpirantLengthening: *n*a*b*u
-NasalSpirantLoss: *n*a*b*u
-WeakTailNasalLoss: *n*a*b*u
-WeightMarkers: *n*a*b*u
-HighVowelApocope: *n*a*b*u
-HeavySyllableNasalApocope: *n*a*b*u
-WeakTailReduction: *n*a*b*o
-JLossAfterHeavy: *n*a*b*o
-WeightCleanup: *n*a*b*o
-HLoss: *n*a*b*o
-Contraction: *n*a*b*o
-ProtoToOEWeakTail: *n*a*b*u
-ProtoToOEWeightMarkers: *n*a*b*u
-ProtoToOEApocope: *n*a*b*u
-ProtoToOEWeightCleanup: *n*a*b*o
-ProtoToOE: *n*a*b*o
-WGlide: *n*a*b*o
-GhMarker: *n*a*b*o
-GlideDeletion: *n*a*b*o
-Epenthesis: *n*a*b*o
-Orthography: nabo
-Surface: nabo
-
 --- needle ---
 PROTO: *nēθlō
 EXPECTED: nǣdl
@@ -17053,106 +17356,6 @@ GlideDeletion: *n*ē*θ*l
 Epenthesis: *n*ē*θ*l
 Orthography: nēþl
 Surface: nēþl
-
---- raven ---
-PROTO: *xrabnăz
-EXPECTED: hræfn
-OUTPUTS: hræbn
-
-ProtoInput: *x*r*a*b*n*ă*z
-InitialKn: *x*r*a*b*n*ă*z
-Palatalisation: *x*r*a*b*n*ă*z
-ConsonantRules: *x*r*a*b*n*ă
-WestGermanic: *x*r*a*b*n*ă
-NWGmcULowering: *x*r*a*b*n*ă
-NWGmcFinalLongORaising: *x*r*a*b*n*ă
-AuFronting: *x*r*a*b*n*ă
-WWSimplification: *x*r*a*b*n*ă
-DiphthongLeveling: *x*r*a*b*n*ă
-EwLongDiphthong: *x*r*a*b*n*ă
-AngloFrisianBrightening: *x*r*æ*b*n*ă
-BreakingLengthening: *x*r*æ*b*n*ă
-VelarFricPal: *x*r*æ*b*n*ă
-ARestoration: *x*r*æ*b*n*ă
-FinalWeakSchwaApocope: *x*r*æ*b*n
-JGemination: *x*r*æ*b*n
-SkPalatalization: *x*r*æ*b*n
-VelarPalatalization: *x*r*æ*b*n
-IUmlaut: *x*r*æ*b*n
-JClusterCoalescence: *x*r*æ*b*n
-BackMutation: *x*r*æ*b*n
-NasalSpirantLengthening: *x*r*æ*b*n
-NasalSpirantLoss: *x*r*æ*b*n
-WeakTailNasalLoss: *x*r*æ*b*n
-WeightMarkers: *x*r*æ*b*n
-HighVowelApocope: *x*r*æ*b*n
-HeavySyllableNasalApocope: *x*r*æ*b*n
-WeakTailReduction: *x*r*æ*b*n
-JLossAfterHeavy: *x*r*æ*b*n
-WeightCleanup: *x*r*æ*b*n
-HLoss: *x*r*æ*b*n
-Contraction: *x*r*æ*b*n
-ProtoToOEWeakTail: *x*r*æ*b*n
-ProtoToOEWeightMarkers: *x*r*æ*b*n
-ProtoToOEApocope: *x*r*æ*b*n
-ProtoToOEWeightCleanup: *x*r*æ*b*n
-ProtoToOE: *x*r*æ*b*n
-WGlide: *x*r*æ*b*n
-GhMarker: *x*r*æ*b*n
-GlideDeletion: *x*r*æ*b*n
-Epenthesis: *x*r*æ*b*n
-Orthography: hræbn
-Surface: hræbn
-
---- salve ---
-PROTO: *salbō
-EXPECTED: sealf
-OUTPUTS: sealb
-
-ProtoInput: *s*a*l*b*ō
-InitialKn: *s*a*l*b*ō
-Palatalisation: *s*a*l*b*ō
-ConsonantRules: *s*a*l*b*ō
-WestGermanic: *s*a*l*b*ō
-NWGmcULowering: *s*a*l*b*ō
-NWGmcFinalLongORaising: *s*a*l*b*u
-AuFronting: *s*a*l*b*u
-WWSimplification: *s*a*l*b*u
-DiphthongLeveling: *s*a*l*b*u
-EwLongDiphthong: *s*a*l*b*u
-AngloFrisianBrightening: *s*æ*l*b*u
-BreakingLengthening: *s*ea*l*b*u
-VelarFricPal: *s*ea*l*b*u
-ARestoration: *s*ea*l*b*u
-FinalWeakSchwaApocope: *s*ea*l*b*u
-JGemination: *s*ea*l*b*u
-SkPalatalization: *s*ea*l*b*u
-VelarPalatalization: *s*ea*l*b*u
-IUmlaut: *s*ea*l*b*u
-JClusterCoalescence: *s*ea*l*b*u
-BackMutation: *s*ea*l*b*u
-NasalSpirantLengthening: *s*ea*l*b*u
-NasalSpirantLoss: *s*ea*l*b*u
-WeakTailNasalLoss: *s*ea*l*b*u
-WeightMarkers: *s*ea*l*b*u
-HighVowelApocope: *s*ea*l*b
-HeavySyllableNasalApocope: *s*ea*l*b
-WeakTailReduction: *s*ea*l*b
-JLossAfterHeavy: *s*ea*l*b
-WeightCleanup: *s*ea*l*b
-HLoss: *s*ea*l*b
-Contraction: *s*ea*l*b
-ProtoToOEWeakTail: *s*ea*l*b*u
-ProtoToOEWeightMarkers: *s*ea*l*b*u
-ProtoToOEApocope: *s*ea*l*b
-ProtoToOEWeightCleanup: *s*ea*l*b
-ProtoToOE: *s*ea*l*b
-WGlide: *s*ea*l*b
-GhMarker: *s*ea*l*b
-GlideDeletion: *s*ea*l*b
-Epenthesis: *s*ea*l*b
-Orthography: sealb
-Surface: sealb
 
 --- seek ---
 PROTO: *sōkjăną
@@ -17354,56 +17557,6 @@ Epenthesis: *s*p*æ*r*e*n
 Orthography: spæren
 Surface: spæren
 
---- starve ---
-PROTO: *sterbăną
-EXPECTED: steorfan
-OUTPUTS: steorban
-
-ProtoInput: *s*t*e*r*b*ă*n*ą
-InitialKn: *s*t*e*r*b*ă*n*ą
-Palatalisation: *s*t*e*r*b*ă*n*ą
-ConsonantRules: *s*t*e*r*b*ă*n*ą
-WestGermanic: *s*t*e*r*b*ă*n*ą
-NWGmcULowering: *s*t*e*r*b*ă*n*ą
-NWGmcFinalLongORaising: *s*t*e*r*b*ă*n*ą
-AuFronting: *s*t*e*r*b*ă*n*ą
-WWSimplification: *s*t*e*r*b*ă*n*ą
-DiphthongLeveling: *s*t*e*r*b*ă*n*ą
-EwLongDiphthong: *s*t*e*r*b*ă*n*ą
-AngloFrisianBrightening: *s*t*e*r*b*ă*n*ą
-BreakingLengthening: *s*t*eo*r*b*ă*n*ą
-VelarFricPal: *s*t*eo*r*b*ă*n*ą
-ARestoration: *s*t*eo*r*b*ă*n*ą
-FinalWeakSchwaApocope: *s*t*eo*r*b*ă*n*ą
-JGemination: *s*t*eo*r*b*ă*n*ą
-SkPalatalization: *s*t*eo*r*b*ă*n*ą
-VelarPalatalization: *s*t*eo*r*b*ă*n*ą
-IUmlaut: *s*t*eo*r*b*ă*n*ą
-JClusterCoalescence: *s*t*eo*r*b*ă*n*ą
-BackMutation: *s*t*eo*r*b*ă*n*ą
-NasalSpirantLengthening: *s*t*eo*r*b*ă*n*ą
-NasalSpirantLoss: *s*t*eo*r*b*ă*n*ą
-WeakTailNasalLoss: *s*t*eo*r*b*ă*n
-WeightMarkers: *s*t*eo*r*b*ă*n
-HighVowelApocope: *s*t*eo*r*b*ă*n
-HeavySyllableNasalApocope: *s*t*eo*r*b*ă*n
-WeakTailReduction: *s*t*eo*r*b*a*n
-JLossAfterHeavy: *s*t*eo*r*b*a*n
-WeightCleanup: *s*t*eo*r*b*a*n
-HLoss: *s*t*eo*r*b*a*n
-Contraction: *s*t*eo*r*b*a*n
-ProtoToOEWeakTail: *s*t*eo*r*b*ă*n
-ProtoToOEWeightMarkers: *s*t*eo*r*b*ă*n
-ProtoToOEApocope: *s*t*eo*r*b*ă*n
-ProtoToOEWeightCleanup: *s*t*eo*r*b*a*n
-ProtoToOE: *s*t*eo*r*b*a*n
-WGlide: *s*t*eo*r*b*a*n
-GhMarker: *s*t*eo*r*b*a*n
-GlideDeletion: *s*t*eo*r*b*a*n
-Epenthesis: *s*t*eo*r*b*a*n
-Orthography: steorban
-Surface: steorban
-
 --- stretch ---
 PROTO: *strakkjăną
 EXPECTED: streċċan
@@ -17553,56 +17706,6 @@ GlideDeletion: *t*ēa*GH*m
 Epenthesis: *t*ēa*x*m
 Orthography: tēahm
 Surface: tēahm
-
---- thief ---
-PROTO: *θeubăz
-EXPECTED: þēof
-OUTPUTS: þēob
-
-ProtoInput: *θ*eu*b*ă*z
-InitialKn: *θ*eu*b*ă*z
-Palatalisation: *θ*eu*b*ă*z
-ConsonantRules: *θ*eu*b*ă
-WestGermanic: *θ*eu*b*ă
-NWGmcULowering: *θ*eu*b*ă
-NWGmcFinalLongORaising: *θ*eu*b*ă
-AuFronting: *θ*eu*b*ă
-WWSimplification: *θ*eu*b*ă
-DiphthongLeveling: *θ*ēo*b*ă
-EwLongDiphthong: *θ*ēo*b*ă
-AngloFrisianBrightening: *θ*ēo*b*ă
-BreakingLengthening: *θ*ēo*b*ă
-VelarFricPal: *θ*ēo*b*ă
-ARestoration: *θ*ēo*b*ă
-FinalWeakSchwaApocope: *θ*ēo*b
-JGemination: *θ*ēo*b
-SkPalatalization: *θ*ēo*b
-VelarPalatalization: *θ*ēo*b
-IUmlaut: *θ*ēo*b
-JClusterCoalescence: *θ*ēo*b
-BackMutation: *θ*ēo*b
-NasalSpirantLengthening: *θ*ēo*b
-NasalSpirantLoss: *θ*ēo*b
-WeakTailNasalLoss: *θ*ēo*b
-WeightMarkers: *θ*ēo*b
-HighVowelApocope: *θ*ēo*b
-HeavySyllableNasalApocope: *θ*ēo*b
-WeakTailReduction: *θ*ēo*b
-JLossAfterHeavy: *θ*ēo*b
-WeightCleanup: *θ*ēo*b
-HLoss: *θ*ēo*b
-Contraction: *θ*ēo*b
-ProtoToOEWeakTail: *θ*ēo*b
-ProtoToOEWeightMarkers: *θ*ēo*b
-ProtoToOEApocope: *θ*ēo*b
-ProtoToOEWeightCleanup: *θ*ēo*b
-ProtoToOE: *θ*ēo*b
-WGlide: *θ*ēo*b
-GhMarker: *θ*ēo*b
-GlideDeletion: *θ*ēo*b
-Epenthesis: *θ*ēo*b
-Orthography: þēob
-Surface: þēob
 
 --- timber ---
 PROTO: *timrą
@@ -17857,52 +17960,52 @@ Surface: weorpan
 --- wasp ---
 PROTO: *wabsăz
 EXPECTED: wæsp
-OUTPUTS: wæbs
+OUTPUTS: wæfs
 
 ProtoInput: *w*a*b*s*ă*z
 InitialKn: *w*a*b*s*ă*z
 Palatalisation: *w*a*b*s*ă*z
-ConsonantRules: *w*a*b*s*ă
-WestGermanic: *w*a*b*s*ă
-NWGmcULowering: *w*a*b*s*ă
-NWGmcFinalLongORaising: *w*a*b*s*ă
-AuFronting: *w*a*b*s*ă
-WWSimplification: *w*a*b*s*ă
-DiphthongLeveling: *w*a*b*s*ă
-EwLongDiphthong: *w*a*b*s*ă
-AngloFrisianBrightening: *w*æ*b*s*ă
-BreakingLengthening: *w*æ*b*s*ă
-VelarFricPal: *w*æ*b*s*ă
-ARestoration: *w*æ*b*s*ă
-FinalWeakSchwaApocope: *w*æ*b*s
-JGemination: *w*æ*b*s
-SkPalatalization: *w*æ*b*s
-VelarPalatalization: *w*æ*b*s
-IUmlaut: *w*æ*b*s
-JClusterCoalescence: *w*æ*b*s
-BackMutation: *w*æ*b*s
-NasalSpirantLengthening: *w*æ*b*s
-NasalSpirantLoss: *w*æ*b*s
-WeakTailNasalLoss: *w*æ*b*s
-WeightMarkers: *w*æ*b*s
-HighVowelApocope: *w*æ*b*s
-HeavySyllableNasalApocope: *w*æ*b*s
-WeakTailReduction: *w*æ*b*s
-JLossAfterHeavy: *w*æ*b*s
-WeightCleanup: *w*æ*b*s
-HLoss: *w*æ*b*s
-Contraction: *w*æ*b*s
-ProtoToOEWeakTail: *w*æ*b*s
-ProtoToOEWeightMarkers: *w*æ*b*s
-ProtoToOEApocope: *w*æ*b*s
-ProtoToOEWeightCleanup: *w*æ*b*s
-ProtoToOE: *w*æ*b*s
-WGlide: *ʋ*æ*b*s
-GhMarker: *ʋ*æ*b*s
-GlideDeletion: *ʋ*æ*b*s
-Epenthesis: *w*æ*b*s
-Orthography: wæbs
-Surface: wæbs
+ConsonantRules: *w*a*β*s*ă
+WestGermanic: *w*a*β*s*ă
+NWGmcULowering: *w*a*β*s*ă
+NWGmcFinalLongORaising: *w*a*β*s*ă
+AuFronting: *w*a*β*s*ă
+WWSimplification: *w*a*β*s*ă
+DiphthongLeveling: *w*a*β*s*ă
+EwLongDiphthong: *w*a*β*s*ă
+AngloFrisianBrightening: *w*æ*β*s*ă
+BreakingLengthening: *w*æ*β*s*ă
+VelarFricPal: *w*æ*β*s*ă
+ARestoration: *w*æ*β*s*ă
+FinalWeakSchwaApocope: *w*æ*β*s
+JGemination: *w*æ*β*s
+SkPalatalization: *w*æ*β*s
+VelarPalatalization: *w*æ*β*s
+IUmlaut: *w*æ*β*s
+JClusterCoalescence: *w*æ*β*s
+BackMutation: *w*æ*β*s
+NasalSpirantLengthening: *w*æ*β*s
+NasalSpirantLoss: *w*æ*β*s
+WeakTailNasalLoss: *w*æ*β*s
+WeightMarkers: *w*æ*β*s
+HighVowelApocope: *w*æ*β*s
+HeavySyllableNasalApocope: *w*æ*β*s
+WeakTailReduction: *w*æ*β*s
+JLossAfterHeavy: *w*æ*β*s
+WeightCleanup: *w*æ*β*s
+HLoss: *w*æ*β*s
+Contraction: *w*æ*β*s
+ProtoToOEWeakTail: *w*æ*β*s
+ProtoToOEWeightMarkers: *w*æ*β*s
+ProtoToOEApocope: *w*æ*β*s
+ProtoToOEWeightCleanup: *w*æ*β*s
+ProtoToOE: *w*æ*β*s
+WGlide: *ʋ*æ*β*s
+GhMarker: *ʋ*æ*β*s
+GlideDeletion: *ʋ*æ*β*s
+Epenthesis: *w*æ*β*s
+Orthography: wæfs
+Surface: wæfs
 
 --- water ---
 PROTO: *watną
@@ -18104,56 +18207,6 @@ Epenthesis: *w*ē*p*n*a*n
 Orthography: wēpnan
 Surface: wēpnan
 
---- weave ---
-PROTO: *webăną
-EXPECTED: wefan
-OUTPUTS: weban
-
-ProtoInput: *w*e*b*ă*n*ą
-InitialKn: *w*e*b*ă*n*ą
-Palatalisation: *w*e*b*ă*n*ą
-ConsonantRules: *w*e*b*ă*n*ą
-WestGermanic: *w*e*b*ă*n*ą
-NWGmcULowering: *w*e*b*ă*n*ą
-NWGmcFinalLongORaising: *w*e*b*ă*n*ą
-AuFronting: *w*e*b*ă*n*ą
-WWSimplification: *w*e*b*ă*n*ą
-DiphthongLeveling: *w*e*b*ă*n*ą
-EwLongDiphthong: *w*e*b*ă*n*ą
-AngloFrisianBrightening: *w*e*b*ă*n*ą
-BreakingLengthening: *w*e*b*ă*n*ą
-VelarFricPal: *w*e*b*ă*n*ą
-ARestoration: *w*e*b*ă*n*ą
-FinalWeakSchwaApocope: *w*e*b*ă*n*ą
-JGemination: *w*e*b*ă*n*ą
-SkPalatalization: *w*e*b*ă*n*ą
-VelarPalatalization: *w*e*b*ă*n*ą
-IUmlaut: *w*e*b*ă*n*ą
-JClusterCoalescence: *w*e*b*ă*n*ą
-BackMutation: *w*e*b*ă*n*ą
-NasalSpirantLengthening: *w*e*b*ă*n*ą
-NasalSpirantLoss: *w*e*b*ă*n*ą
-WeakTailNasalLoss: *w*e*b*ă*n
-WeightMarkers: *w*e*b*ă*n
-HighVowelApocope: *w*e*b*ă*n
-HeavySyllableNasalApocope: *w*e*b*ă*n
-WeakTailReduction: *w*e*b*a*n
-JLossAfterHeavy: *w*e*b*a*n
-WeightCleanup: *w*e*b*a*n
-HLoss: *w*e*b*a*n
-Contraction: *w*e*b*a*n
-ProtoToOEWeakTail: *w*e*b*ă*n
-ProtoToOEWeightMarkers: *w*e*b*ă*n
-ProtoToOEApocope: *w*e*b*ă*n
-ProtoToOEWeightCleanup: *w*e*b*a*n
-ProtoToOE: *w*e*b*a*n
-WGlide: *ʋ*e*b*a*n
-GhMarker: *ʋ*e*b*a*n
-GlideDeletion: *ʋ*e*b*a*n
-Epenthesis: *w*e*b*a*n
-Orthography: weban
-Surface: weban
-
 --- whale ---
 PROTO: *walăz
 EXPECTED: hwæl
@@ -18203,56 +18256,6 @@ GlideDeletion: *ʋ*æ*l
 Epenthesis: *w*æ*l
 Orthography: wæl
 Surface: wæl
-
---- wife ---
-PROTO: *wībą
-EXPECTED: wīf
-OUTPUTS: wīb
-
-ProtoInput: *w*ī*b*ą
-InitialKn: *w*ī*b*ą
-Palatalisation: *w*ī*b*ą
-ConsonantRules: *w*ī*b*ą
-WestGermanic: *w*ī*b*ą
-NWGmcULowering: *w*ī*b*ą
-NWGmcFinalLongORaising: *w*ī*b*ą
-AuFronting: *w*ī*b*ą
-WWSimplification: *w*ī*b*ą
-DiphthongLeveling: *w*ī*b*ą
-EwLongDiphthong: *w*ī*b*ą
-AngloFrisianBrightening: *w*ī*b*ą
-BreakingLengthening: *w*ī*b*ą
-VelarFricPal: *w*ī*b*ą
-ARestoration: *w*ī*b*ą
-FinalWeakSchwaApocope: *w*ī*b*ą
-JGemination: *w*ī*b*ą
-SkPalatalization: *w*ī*b*ą
-VelarPalatalization: *w*ī*b*ą
-IUmlaut: *w*ī*b*ą
-JClusterCoalescence: *w*ī*b*ą
-BackMutation: *w*ī*b*ą
-NasalSpirantLengthening: *w*ī*b*ą
-NasalSpirantLoss: *w*ī*b*ą
-WeakTailNasalLoss: *w*ī*b*ą
-WeightMarkers: *w*ī*b*ą
-HighVowelApocope: *w*ī*b*ą
-HeavySyllableNasalApocope: *w*ī*b
-WeakTailReduction: *w*ī*b
-JLossAfterHeavy: *w*ī*b
-WeightCleanup: *w*ī*b
-HLoss: *w*ī*b
-Contraction: *w*ī*b
-ProtoToOEWeakTail: *w*ī*b*ą
-ProtoToOEWeightMarkers: *w*ī*b*ą
-ProtoToOEApocope: *w*ī*b
-ProtoToOEWeightCleanup: *w*ī*b
-ProtoToOE: *w*ī*b
-WGlide: *ʋ*ī*b
-GhMarker: *ʋ*ī*b
-GlideDeletion: *ʋ*ī*b
-Epenthesis: *w*ī*b
-Orthography: wīb
-Surface: wīb
 
 --- wind ---
 PROTO: *windăną
@@ -18571,7 +18574,7 @@ belly | *balgiz | exp bielġ | afb *b*æ*l*ʤ*i | ar *b*æ*l*ʤ*i
 berry | *bazjas | exp berġes | afb *b*æ*r*j*æ*s | ar *b*æ*r*j*æ*s
 bier | *barwōn | exp bēr | afb *b*æ*r*w*ō*n | ar *b*ea*r*w*ō*n
 brand | *brandas | exp brandes | afb *b*r*æ*n*d*æ*s | ar *b*r*a*n*d*æ*s
-calf | *kalbăz | exp cealf | afb *k*æ*l*b*ă | ar *k*ea*l*b*ă
+calf | *kalbăz | exp cealf | afb *k*æ*l*β*ă | ar *k*ea*l*β*ă
 comb | *kambăz | exp camb | afb *k*æ*m*b*ă | ar *k*æ*m*b*ă
 craft | *kraftiz | exp cræft | afb *k*r*æ*f*t*i | ar *k*r*æ*f*t*i
 dale | *dalăz | exp dæl | afb *d*æ*l*ă | ar *d*æ*l*ă
@@ -18590,7 +18593,7 @@ gall | *gallą | exp ġealla | afb *g*æ*l*l*ą | ar *g*ea*l*l*ą
 gang | *gangăz | exp gangan | afb *g*æ*n*g*ă | ar *g*æ*n*g*ă
 goose | *gansz | exp gōs | afb *g*æ*n*s | ar *g*æ*n*s
 grass | *grasą | exp græs | afb *g*r*æ*s*ą | ar *g*r*æ*s*ą
-grave | *grabăną | exp græf | afb *g*r*æ*b*ă*n*ą | ar *g*r*æ*b*ă*n*ą
+grave | *grabăną | exp græf | afb *g*r*æ*β*ă*n*ą | ar *g*r*æ*β*ă*n*ą
 guest | *gastiz | exp appear | afb *g*æ*s*t*i | ar *g*æ*s*t*i
 hail | *xaglą | exp hæġl | afb *x*æ*g*l*ą | ar *ç*æ*g*l*ą
 hair | *xazwăz | exp hǣr | afb *x*æ*r*w*ă | ar *ç*ea*r*w*ă
@@ -18599,8 +18602,8 @@ hammer | *xamaras | exp hamores | afb *x*æ*m*æ*r*æ*s | ar *ç*a*m*æ*r*æ*s
 hand | *xanduz | exp hand | afb *x*æ*n*d*u | ar *ç*a*n*d*u
 handle | *xandlōjăną | exp handle | afb *x*æ*n*d*l*ō*j*ă*n*ą | ar *ç*æ*n*d*l*ō*j*ă*n*ą
 harm | *xarmăz | exp hearm | afb *x*æ*r*m*ă | ar *ç*ea*r*m*ă
-harvest | *xarbistuz | exp hærfest | afb *x*æ*r*b*i*s*t*u | ar *ç*ea*r*b*i*s*t*u
-have | *xabēną | exp habban | afb *x*æ*b*ē*n*ą | ar *ç*æ*b*ē*n*ą
+harvest | *xarbistuz | exp hærfest | afb *x*æ*r*β*i*s*t*u | ar *ç*ea*r*β*i*s*t*u
+have | *xabēną | exp habban | afb *x*æ*β*ē*n*ą | ar *ç*æ*β*ē*n*ą
 haw | *xagōn | exp haga | afb *x*æ*g*ō*n | ar *ç*a*g*ō*n
 hay | *xawwją | exp hīeġ | afb *x*æ*w*j*ą | ar *ç*æ*w*j*ą
 hazel | *xaslăz | exp hæsl | afb *x*æ*s*l*ă | ar *ç*æ*s*l*ă
@@ -18609,7 +18612,7 @@ hew | *xawwăną | exp hēawan | afb *x*æ*w*ă*n*ą | ar *ç*æ*w*ă*n*ą
 hold | *xaldăną | exp hold | afb *x*æ*l*d*ă*n*ą | ar *ç*ea*l*d*ă*n*ą
 lade | *laθōjăną | exp hladan | afb *l*æ*θ*ō*j*ă*n*ą | ar *l*a*θ*ō*j*ă*n*ą
 land | *landą | exp land | afb *l*æ*n*d*ą | ar *l*æ*n*d*ą
-lap | *labbăz | exp læppa | afb *l*æ*b*b*ă | ar *l*æ*b*b*ă
+lap | *labbăz | exp læppa | afb *l*æ*β*b*ă | ar *l*æ*β*b*ă
 laugh | *lakăną | exp hlæhhan | afb *l*æ*k*ă*n*ą | ar *l*æ*k*ă*n*ą
 make | *makōjăną | exp macian | afb *m*æ*k*ō*j*ă*n*ą | ar *m*a*k*ō*j*ă*n*ą
 malt | *maltăz | exp mealt | afb *m*æ*l*t*ă | ar *m*ea*l*t*ă
@@ -18619,18 +18622,18 @@ mast | *mastăz | exp mæst | afb *m*æ*s*t*ă | ar *m*æ*s*t*ă
 might | *maxtiz | exp miht | afb *m*æ*x*t*i | ar *m*ea*x*t*i
 nail | *naglăz | exp næġl | afb *n*æ*g*l*ă | ar *n*æ*g*l*ă
 name | *namōn | exp nama | afb *n*æ*m*ō*n | ar *n*a*m*ō*n
-nave | *nabō | exp nafu | afb *n*æ*b*u | ar *n*a*b*u
-navel | *nablōn | exp nafola | afb *n*æ*b*l*ō*n | ar *n*æ*b*l*ō*n
+nave | *nabō | exp nafu | afb *n*æ*β*u | ar *n*a*β*u
+navel | *nablōn | exp nafola | afb *n*æ*β*l*ō*n | ar *n*æ*β*l*ō*n
 net | *natją | exp net | afb *n*æ*t*i | ar *n*æ*t*i
 nettle | *natilōn | exp netle | afb *n*æ*t*i*l*ō*n | ar *n*æ*t*i*l*ō*n
 night | *naxtz | exp niht | afb *n*æ*x*t | ar *n*ea*x*t
 nightmare | *marōn | exp mære | afb *m*æ*r*ō*n | ar *m*æ*r*ō*n
 nose | *nasō | exp nosu | afb *n*æ*s*u | ar *n*a*s*u
-raven | *xrabnăz | exp hræfn | afb *x*r*æ*b*n*ă | ar *x*r*æ*b*n*ă
+raven | *xrabnăz | exp hræfn | afb *x*r*æ*β*n*ă | ar *x*r*æ*β*n*ă
 rest | *rastō | exp ræst | afb *r*æ*s*t*u | ar *r*a*s*t*u
 sake | *sakō | exp sacu | afb *s*æ*k*u | ar *s*a*k*u
 salt | *saltą | exp sealt | afb *s*æ*l*t*ą | ar *s*ea*l*t*ą
-salve | *salbō | exp sealf | afb *s*æ*l*b*u | ar *s*ea*l*b*u
+salve | *salbō | exp sealf | afb *s*æ*l*β*u | ar *s*ea*l*β*u
 sap | *sapōn | exp sæp | afb *s*æ*p*ō*n | ar *s*a*p*ō*n
 send | *sandjăną | exp sendan | afb *s*æ*n*d*j*ă*n*ą | ar *s*æ*n*d*j*ă*n*ą
 set | *satjăną | exp settan | afb *s*æ*t*j*ă*n*ą | ar *s*æ*t*j*ă*n*ą
@@ -18643,7 +18646,7 @@ span | *spannăną | exp spann | afb *s*p*æ*n*n*ă*n*ą | ar *s*p*æ*n*n*ă*n*�
 span | *spannō | exp spann | afb *s*p*æ*n*n*u | ar *s*p*a*n*n*u
 spar | *sparrōn | exp sperran | afb *s*p*æ*r*r*ō*n | ar *s*p*ea*r*r*ō*n
 spare | *sparēną | exp spær | afb *s*p*æ*r*ē*n*ą | ar *s*p*æ*r*ē*n*ą
-staff | *stabiz | exp stæf | afb *s*t*æ*b*i | ar *s*t*æ*b*i
+staff | *stabiz | exp stæf | afb *s*t*æ*β*i | ar *s*t*æ*β*i
 stem | *stamnăz | exp stemn | afb *s*t*æ*m*n*ă | ar *s*t*æ*m*n*ă
 straw | *strawą | exp strēaw | afb *s*t*r*æ*w*ą | ar *s*t*r*æ*w*ą
 stretch | *strakkjăną | exp streċċan | afb *s*t*r*æ*k*k*j*ă*n*ą | ar *s*t*r*æ*k*k*j*ă*n*ą
@@ -18662,7 +18665,7 @@ wake | *wakēną | exp wacan | afb *w*æ*ʧ*ē*n*ą | ar *w*æ*ʧ*ē*n*ą
 warp | *warpą | exp wearp | afb *w*æ*r*p*ą | ar *w*ea*r*p*ą
 wart | *warto | exp wearte | afb *w*æ*r*t*o | ar *w*ea*r*t*o
 wash | *waskăną | exp wasċan | afb *w*æ*s*k*ă*n*ą | ar *w*æ*s*k*ă*n*ą
-wasp | *wabsăz | exp wæsp | afb *w*æ*b*s*ă | ar *w*æ*b*s*ă
+wasp | *wabsăz | exp wæsp | afb *w*æ*β*s*ă | ar *w*æ*β*s*ă
 water | *watną | exp wæter | afb *w*æ*t*n*ą | ar *w*æ*t*n*ą
 wax | *waxsą | exp weax | afb *w*æ*x*s*ą | ar *w*ea*x*s*ą
 wax | *waxsăną | exp weax | afb *w*æ*x*s*ă*n*ą | ar *w*ea*x*s*ă*n*ą
@@ -18682,7 +18685,7 @@ haw | *xagōn | exp haga | afb *x*æ*g*ō*n | ar *ç*a*g*ō*n
 lade | *laθōjăną | exp hladan | afb *l*æ*θ*ō*j*ă*n*ą | ar *l*a*θ*ō*j*ă*n*ą
 make | *makōjăną | exp macian | afb *m*æ*k*ō*j*ă*n*ą | ar *m*a*k*ō*j*ă*n*ą
 name | *namōn | exp nama | afb *n*æ*m*ō*n | ar *n*a*m*ō*n
-nave | *nabō | exp nafu | afb *n*æ*b*u | ar *n*a*b*u
+nave | *nabō | exp nafu | afb *n*æ*β*u | ar *n*a*β*u
 nose | *nasō | exp nosu | afb *n*æ*s*u | ar *n*a*s*u
 rest | *rastō | exp ræst | afb *r*æ*s*t*u | ar *r*a*s*t*u
 sake | *sakō | exp sacu | afb *s*æ*k*u | ar *s*a*k*u
@@ -18701,7 +18704,7 @@ bath | *baθą | exp bæþ | afb *b*æ*θ*ą | ar *b*æ*θ*ą
 beard | *bardăz | exp beard | afb *b*æ*r*d*ă | ar *b*ea*r*d*ă
 belly | *balgiz | exp bielġ | afb *b*æ*l*ʤ*i | ar *b*æ*l*ʤ*i
 berry | *bazjas | exp berġes | afb *b*æ*r*j*æ*s | ar *b*æ*r*j*æ*s
-calf | *kalbăz | exp cealf | afb *k*æ*l*b*ă | ar *k*ea*l*b*ă
+calf | *kalbăz | exp cealf | afb *k*æ*l*β*ă | ar *k*ea*l*β*ă
 craft | *kraftiz | exp cræft | afb *k*r*æ*f*t*i | ar *k*r*æ*f*t*i
 dale | *dalăz | exp dæl | afb *d*æ*l*ă | ar *d*æ*l*ă
 day | *dagăz | exp dæġ | afb *d*æ*g*ă | ar *d*æ*g*ă
@@ -18715,17 +18718,17 @@ flax | *flaxsą | exp fleax | afb *f*l*æ*x*s*ą | ar *f*l*ea*x*s*ą
 fold | *falθăną | exp fealdan | afb *f*æ*l*θ*ă*n*ą | ar *f*ea*l*θ*ă*n*ą
 gall | *gallą | exp ġealla | afb *g*æ*l*l*ą | ar *g*ea*l*l*ą
 grass | *grasą | exp græs | afb *g*r*æ*s*ą | ar *g*r*æ*s*ą
-grave | *grabăną | exp græf | afb *g*r*æ*b*ă*n*ą | ar *g*r*æ*b*ă*n*ą
+grave | *grabăną | exp græf | afb *g*r*æ*β*ă*n*ą | ar *g*r*æ*β*ă*n*ą
 hail | *xaglą | exp hæġl | afb *x*æ*g*l*ą | ar *ç*æ*g*l*ą
 hair | *xazwăz | exp hǣr | afb *x*æ*r*w*ă | ar *ç*ea*r*w*ă
 hall | *xallō | exp heall | afb *x*æ*l*l*u | ar *ç*ea*l*l*u
 harm | *xarmăz | exp hearm | afb *x*æ*r*m*ă | ar *ç*ea*r*m*ă
-harvest | *xarbistuz | exp hærfest | afb *x*æ*r*b*i*s*t*u | ar *ç*ea*r*b*i*s*t*u
+harvest | *xarbistuz | exp hærfest | afb *x*æ*r*β*i*s*t*u | ar *ç*ea*r*β*i*s*t*u
 hay | *xawwją | exp hīeġ | afb *x*æ*w*j*ą | ar *ç*æ*w*j*ą
 hazel | *xaslăz | exp hæsl | afb *x*æ*s*l*ă | ar *ç*æ*s*l*ă
 hedge | *xagjăz | exp heġġ | afb *x*æ*g*j*ă | ar *ç*æ*g*j*ă
 hew | *xawwăną | exp hēawan | afb *x*æ*w*ă*n*ą | ar *ç*æ*w*ă*n*ą
-lap | *labbăz | exp læppa | afb *l*æ*b*b*ă | ar *l*æ*b*b*ă
+lap | *labbăz | exp læppa | afb *l*æ*β*b*ă | ar *l*æ*β*b*ă
 laugh | *lakăną | exp hlæhhan | afb *l*æ*k*ă*n*ą | ar *l*æ*k*ă*n*ą
 malt | *maltăz | exp mealt | afb *m*æ*l*t*ă | ar *m*ea*l*t*ă
 march | *markō | exp mearcian | afb *m*æ*r*k*u | ar *m*ea*r*k*u
@@ -18736,9 +18739,9 @@ net | *natją | exp net | afb *n*æ*t*i | ar *n*æ*t*i
 nettle | *natilōn | exp netle | afb *n*æ*t*i*l*ō*n | ar *n*æ*t*i*l*ō*n
 night | *naxtz | exp niht | afb *n*æ*x*t | ar *n*ea*x*t
 nightmare | *marōn | exp mære | afb *m*æ*r*ō*n | ar *m*æ*r*ō*n
-raven | *xrabnăz | exp hræfn | afb *x*r*æ*b*n*ă | ar *x*r*æ*b*n*ă
+raven | *xrabnăz | exp hræfn | afb *x*r*æ*β*n*ă | ar *x*r*æ*β*n*ă
 salt | *saltą | exp sealt | afb *s*æ*l*t*ą | ar *s*ea*l*t*ą
-salve | *salbō | exp sealf | afb *s*æ*l*b*u | ar *s*ea*l*b*u
+salve | *salbō | exp sealf | afb *s*æ*l*β*u | ar *s*ea*l*β*u
 send | *sandjăną | exp sendan | afb *s*æ*n*d*j*ă*n*ą | ar *s*æ*n*d*j*ă*n*ą
 set | *satjăną | exp settan | afb *s*æ*t*j*ă*n*ą | ar *s*æ*t*j*ă*n*ą
 shaft | *skaftą | exp sċeaft | afb *s*k*æ*f*t*ą | ar *s*k*æ*f*t*ą
@@ -18746,7 +18749,7 @@ singe | *sangjăną | exp senġan | afb *s*æ*n*g*j*ă*n*ą | ar *s*æ*n*g*j*ă*
 slay | *slaxăną | exp slēan | afb *s*l*æ*x*ă*n*ą | ar *s*l*ea*x*ă*n*ą
 spar | *sparrōn | exp sperran | afb *s*p*æ*r*r*ō*n | ar *s*p*ea*r*r*ō*n
 spare | *sparēną | exp spær | afb *s*p*æ*r*ē*n*ą | ar *s*p*æ*r*ē*n*ą
-staff | *stabiz | exp stæf | afb *s*t*æ*b*i | ar *s*t*æ*b*i
+staff | *stabiz | exp stæf | afb *s*t*æ*β*i | ar *s*t*æ*β*i
 stem | *stamnăz | exp stemn | afb *s*t*æ*m*n*ă | ar *s*t*æ*m*n*ă
 straw | *strawą | exp strēaw | afb *s*t*r*æ*w*ą | ar *s*t*r*æ*w*ą
 stretch | *strakkjăną | exp streċċan | afb *s*t*r*æ*k*k*j*ă*n*ą | ar *s*t*r*æ*k*k*j*ă*n*ą
@@ -18758,7 +18761,7 @@ think | *θankăz | exp þenċan | afb *θ*æ*n*k*ă | ar *θ*æ*n*k*ă
 wain | *wagnăz | exp wæġn | afb *w*æ*g*n*ă | ar *w*æ*g*n*ă
 warp | *warpą | exp wearp | afb *w*æ*r*p*ą | ar *w*ea*r*p*ą
 wart | *warto | exp wearte | afb *w*æ*r*t*o | ar *w*ea*r*t*o
-wasp | *wabsăz | exp wæsp | afb *w*æ*b*s*ă | ar *w*æ*b*s*ă
+wasp | *wabsăz | exp wæsp | afb *w*æ*β*s*ă | ar *w*æ*β*s*ă
 water | *watną | exp wæter | afb *w*æ*t*n*ą | ar *w*æ*t*n*ą
 wax | *waxsą | exp weax | afb *w*æ*x*s*ą | ar *w*ea*x*s*ą
 wax | *waxsăną | exp weax | afb *w*æ*x*s*ă*n*ą | ar *w*ea*x*s*ă*n*ą
@@ -18776,7 +18779,7 @@ haw | *xagōn | exp haga | afb *x*æ*g*ō*n | ar *ç*a*g*ō*n
 lade | *laθōjăną | exp hladan | afb *l*æ*θ*ō*j*ă*n*ą | ar *l*a*θ*ō*j*ă*n*ą
 make | *makōjăną | exp macian | afb *m*æ*k*ō*j*ă*n*ą | ar *m*a*k*ō*j*ă*n*ą
 name | *namōn | exp nama | afb *n*æ*m*ō*n | ar *n*a*m*ō*n
-nave | *nabō | exp nafu | afb *n*æ*b*u | ar *n*a*b*u
+nave | *nabō | exp nafu | afb *n*æ*β*u | ar *n*a*β*u
 nose | *nasō | exp nosu | afb *n*æ*s*u | ar *n*a*s*u
 sake | *sakō | exp sacu | afb *s*æ*k*u | ar *s*a*k*u
 shame | *skamō | exp sċamu | afb *s*k*æ*m*u | ar *s*k*a*m*u
@@ -18801,44 +18804,44 @@ knead :: *knedăną, knee :: *knewą, knob :: *knuppăz, knight :: *knixtăz
 Palatalisation: 16
 belly :: *balgiz, chew :: *kewwăną, gift :: *geftiz, rye :: *rugiz, shine :: *skīnăną, string :: *strangiz, give :: *gebăną, shear :: *skerăną, sheep :: *skēpą, reek :: *raukiz, shove :: *skeubăną, begin :: *biginnăną, follow :: *fulgēną, rock :: *rukkiz, wake :: *wakēną, shield :: *skelduz
 
-ConsonantRules: 118
-beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, ghost :: *gaistăz, gift :: *geftiz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rudder :: *rōθrăz, rye :: *rugiz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thirst :: *θurstuz, thunder :: *θunrăz, wain :: *wagnăz, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, guest :: *gastiz, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, learn :: *liznōjăną, rock :: *rukkiz, three :: *θrejez, cud :: *kwiθuz, thanks :: *θankăz, buck :: *bukkăz, craft :: *kraftiz, eel :: *ēlăz, fowl :: *fuglăz, month :: *mēnōθz, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wolf :: *wulfăz, beaver :: *bebruz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz, milk :: *melukz
+ConsonantRules: 136
+beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drive :: *drībăną, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, ghost :: *gaistăz, gift :: *geftiz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leaf :: *laubą, leek :: *laukăz, life :: *lībą, liver :: *librō, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, rye :: *rugiz, salve :: *salbō, seam :: *saumăz, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thief :: *θeubăz, thirst :: *θurstuz, thunder :: *θunrăz, wain :: *wagnăz, weave :: *webăną, wife :: *wībą, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, guest :: *gastiz, seven :: *sebun, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, navel :: *nablōn, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, shove :: *skeubăną, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, learn :: *liznōjăną, rock :: *rukkiz, three :: *θrejez, cud :: *kwiθuz, have :: *xabēną, thanks :: *θankăz, live :: *libēną, buck :: *bukkăz, craft :: *kraftiz, eel :: *ēlăz, fowl :: *fuglăz, month :: *mēnōθz, nave :: *nabō, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wolf :: *wulfăz, believe :: *laubjăną, bottom :: *budmăz, fox :: *fuxsăz, grave :: *grabăną, loath :: *laiθăz, team :: *tauxmăz, wasp :: *wabsăz, whale :: *walăz, milk :: *melukz
 
 WestGermanic: 24
 deal :: *dailiz, dough :: *daigăz, ghost :: *gaistăz, heal :: *xailjăną, heath :: *xaiθiz, home :: *xaimăz, last :: *laistjăną, mean :: *mainjăną, rope :: *raipą, spread :: *spraidjăną, stone :: *stainăz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, lead :: *laidjăną, sheath :: *skaiθiz, withy :: *waiθiz, net :: *natją, soul :: *saiwălō, toe :: *taixwō, bone :: *bainăn, loam :: *laimōn, loath :: *laiθăz, token :: *taiknăn
 
 NWGmcULowering: 35
-board :: *burdą, crop :: *kruppăz, folk :: *fulką, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, yoke :: *juką, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, spur :: *spurăn, widow :: *widuwōn, bore :: *burōjăną, buck :: *bukkăz, fowl :: *fuglăz, rust :: *rustō, wolf :: *wulfăz, bottom :: *budmăz, corn :: *kurnăn, fox :: *fuxsăz, gold :: *gulθą, head :: *xaubudą, horn :: *xurnăn, trough :: *trugą, frost :: *frustą
+board :: *burdą, crop :: *kruppăz, folk :: *fulką, head :: *xaubudą, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, yoke :: *juką, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, spur :: *spurăn, widow :: *widuwōn, bore :: *burōjăną, buck :: *bukkăz, fowl :: *fuglăz, rust :: *rustō, wolf :: *wulfăz, bottom :: *budmăz, corn :: *kurnăn, fox :: *fuxsăz, gold :: *gulθą, horn :: *xurnăn, trough :: *trugą, frost :: *frustą
 
 NWGmcFinalLongORaising: 34
-hall :: *xallō, rind :: *rindō, rood :: *rōdō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, while :: *xwīlō, rest :: *rastō, dew :: *dawwō, adder :: *nadrō, both :: *bō, meed :: *mizdō, beech :: *bōkō, soul :: *saiwălō, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, help :: *xelpō, hind :: *xendjō, linden :: *lindō, march :: *markō, shovel :: *skūflō, herd :: *xerdō, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, liver :: *librō, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, salve :: *salbō
+hall :: *xallō, liver :: *librō, rind :: *rindō, rood :: *rōdō, salve :: *salbō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, while :: *xwīlō, rest :: *rastō, dew :: *dawwō, adder :: *nadrō, both :: *bō, meed :: *mizdō, beech :: *bōkō, soul :: *saiwălō, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, help :: *xelpō, hind :: *xendjō, linden :: *lindō, march :: *markō, shovel :: *skūflō, herd :: *xerdō, nave :: *nabō, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, lye :: *laugō, needle :: *nēθlō
 
 AuFronting: 14
-bread :: *braudą, dream :: *draumăz, flea :: *flauxz, leek :: *laukăz, need :: *naudiz, seam :: *saumăz, stream :: *straumăz, bow :: *baugjăną, reek :: *raukiz, believe :: *laubjăną, head :: *xaubudą, leaf :: *laubą, lye :: *laugō, team :: *tauxmăz
+bread :: *braudą, dream :: *draumăz, flea :: *flauxz, head :: *xaubudą, leaf :: *laubą, leek :: *laukăz, need :: *naudiz, seam :: *saumăz, stream :: *straumăz, bow :: *baugjăną, reek :: *raukiz, believe :: *laubjăną, lye :: *laugō, team :: *tauxmăz
 
 WWSimplification: 4
 chew :: *kewwăną, dew :: *dawwō, hay :: *xawwją, hew :: *xawwăną
 
 DiphthongLeveling: 23
-bread :: *braudą, deer :: *deuzą, dream :: *draumăz, flea :: *flauxz, freeze :: *freusăną, leek :: *laukăz, need :: *naudiz, seam :: *saumăz, stream :: *straumăz, fly :: *fleugăną, bow :: *baugjăną, bow :: *beugăną, forlorn :: *leusăną, reek :: *raukiz, shove :: *skeubăną, believe :: *laubjăną, head :: *xaubudą, leaf :: *laubą, light :: *leuxtjăną, lye :: *laugō, team :: *tauxmăz, thief :: *θeubăz, flee :: *fleuxăną
+bread :: *braudą, deer :: *deuzą, dream :: *draumăz, flea :: *flauxz, freeze :: *freusăną, head :: *xaubudą, leaf :: *laubą, leek :: *laukăz, need :: *naudiz, seam :: *saumăz, stream :: *straumăz, thief :: *θeubăz, fly :: *fleugăną, bow :: *baugjăną, bow :: *beugăną, forlorn :: *leusăną, reek :: *raukiz, shove :: *skeubăną, believe :: *laubjăną, light :: *leuxtjăną, lye :: *laugō, team :: *tauxmăz, flee :: *fleuxăną
 
 EwLongDiphthong: 3
 chew :: *kewwăną, knee :: *knewą, nine :: *newun
 
 AngloFrisianBrightening: 110
-bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, grass :: *grasą, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hedge :: *xagjăz, malt :: *maltăz, mast :: *mastăz, nail :: *naglăz, salt :: *saltą, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, slay :: *slaxăną, span :: *spannō, string :: *strangiz, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wield :: *waldăną, strew :: *strawjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, shaft :: *skaftą, show :: *skawōjăną, straw :: *strawą, adder :: *nadrō, drench :: *dranką, think :: *θankăz, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, lap :: *labbăz, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, tongs :: *tangō, bier :: *barwōn, hair :: *xazwăz, harvest :: *xarbistuz, hold :: *xaldăną, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, gang :: *gangăz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, make :: *makōjăną, thatch :: *θaką, wake :: *wakēną, ban :: *banną, have :: *xabēną, land :: *landą, man :: *marīn, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nose :: *nasō, sake :: *sakō, shame :: *skamō, stem :: *stamnăz, wart :: *warto, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, grave :: *grabăną, nave :: *nabō, raven :: *xrabnăz, salve :: *salbō, spare :: *sparēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, whale :: *walăz, yarn :: *garnăn
+bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, father :: *fadēr, grass :: *grasą, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hedge :: *xagjăz, malt :: *maltăz, mast :: *mastăz, nail :: *naglăz, raven :: *xrabnăz, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, slay :: *slaxăną, span :: *spannō, string :: *strangiz, swan :: *swanas, wain :: *wagnăz, warp :: *warpą, wield :: *waldăną, strew :: *strawjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, shaft :: *skaftą, show :: *skawōjăną, straw :: *strawą, adder :: *nadrō, drench :: *dranką, think :: *θankăz, net :: *natją, staff :: *stabiz, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, lap :: *labbăz, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, tongs :: *tangō, bier :: *barwōn, hair :: *xazwăz, harvest :: *xarbistuz, hold :: *xaldăną, might :: *maxtiz, night :: *naxtz, spar :: *sparrōn, swallow :: *swalgwōn, will :: *waljăną, wold :: *walθuz, gang :: *gangăz, march :: *markō, bake :: *bakăną, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, make :: *makōjăną, thatch :: *θaką, wake :: *wakēną, ban :: *banną, have :: *xabēną, land :: *landą, man :: *marīn, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, craft :: *kraftiz, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō, stem :: *stamnăz, wart :: *warto, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, grave :: *grabăną, spare :: *sparēną, stretch :: *strakkjăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, whale :: *walăz, yarn :: *garnăn
 
 BreakingLengthening: 58
-barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, malt :: *maltăz, salt :: *saltą, slay :: *slaxăną, sword :: *swerdą, warp :: *warpą, wield :: *waldăną, meed :: *mizdō, ten :: *texun, dill :: *deljăz, gall :: *gallą, heart :: *xertōn, helm :: *xelmăz, still :: *stelljăną, bier :: *barwōn, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, march :: *markō, calf :: *kalbăz, learn :: *liznōjăną, earth :: *erθo, herd :: *xerdō, shield :: *skelduz, wart :: *warto, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, salve :: *salbō, starve :: *sterbăną, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, yarn :: *garnăn, milk :: *melukz
+barrow :: *bergą, beard :: *bardăz, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, hall :: *xallō, harm :: *xarmăz, hearth :: *xerθăz, malt :: *maltăz, salt :: *saltą, salve :: *salbō, slay :: *slaxăną, starve :: *sterbăną, sword :: *swerdą, warp :: *warpą, wield :: *waldăną, meed :: *mizdō, ten :: *texun, dill :: *deljăz, gall :: *gallą, heart :: *xertōn, helm :: *xelmăz, still :: *stelljăną, bier :: *barwōn, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, march :: *markō, calf :: *kalbăz, learn :: *liznōjăną, earth :: *erθo, herd :: *xerdō, shield :: *skelduz, wart :: *warto, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, yarn :: *garnăn, milk :: *melukz
 
 VelarFricPal: 23
-hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, hay :: *xawwją, hew :: *xawwăną, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, hind :: *xendjō, have :: *xabēną, hammer :: *xamaras, herd :: *xerdō, head :: *xaubudą
+hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, hearth :: *xerθăz, hedge :: *xagjăz, hay :: *xawwją, hew :: *xawwăną, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, hind :: *xendjō, have :: *xabēną, hammer :: *xamaras, herd :: *xerdō
 
 ARestoration: 20
-brand :: *brandas, hand :: *xanduz, span :: *spannō, swan :: *swanas, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, name :: *namōn, tongs :: *tangō, lade :: *laθōjăną, make :: *makōjăną, hammer :: *xamaras, nose :: *nasō, sake :: *sakō, shame :: *skamō, nave :: *nabō
+brand :: *brandas, hand :: *xanduz, span :: *spannō, swan :: *swanas, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, name :: *namōn, tongs :: *tangō, lade :: *laθōjăną, make :: *makōjăną, hammer :: *xamaras, nave :: *nabō, nose :: *nasō, sake :: *sakō, shame :: *skamō
 
 FinalWeakSchwaApocope: 64
-beard :: *bardăz, bosom :: *bōsmăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, ghost :: *gaistăz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, think :: *θankăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, hair :: *xazwăz, knight :: *knixtăz, gang :: *gangăz, calf :: *kalbăz, comb :: *kambăz, thanks :: *θankăz, buck :: *bukkăz, eel :: *ēlăz, fowl :: *fuglăz, stem :: *stamnăz, thane :: *θegnăz, wether :: *wiθră, wolf :: *wulfăz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz
+beard :: *bardăz, bosom :: *bōsmăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, ghost :: *gaistăz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, raven :: *xrabnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thief :: *θeubăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, think :: *θankăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, hair :: *xazwăz, knight :: *knixtăz, gang :: *gangăz, calf :: *kalbăz, comb :: *kambăz, thanks :: *θankăz, buck :: *bukkăz, eel :: *ēlăz, fowl :: *fuglăz, stem :: *stamnăz, thane :: *θegnăz, wether :: *wiθră, wolf :: *wulfăz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, team :: *tauxmăz, wasp :: *wabsăz, whale :: *walăz
 
 JGemination: 3
 hedge :: *xagjăz, set :: *satjăną, sit :: *setjăną
@@ -18852,8 +18855,7 @@ day :: *dagăz, hail :: *xaglą, hedge :: *xagjăz, nail :: *naglăz, rain :: *r
 IUmlaut: 61
 belly :: *balgiz, berry :: *bazjas, bride :: *brūdiz, deal :: *dailiz, gift :: *geftiz, heal :: *xailjăną, heath :: *xaiθiz, hedge :: *xagjăz, last :: *laistjăną, mean :: *mainjăną, need :: *naudiz, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, singe :: *sangjăną, sit :: *setjăną, spread :: *spraidjăną, string :: *strangiz, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, guest :: *gastiz, hay :: *xawwją, lead :: *laidjăną, sheath :: *skaiθiz, show :: *skawōjăną, youth :: *jugunθiz, birth :: *burdiz, withy :: *waiθiz, net :: *natją, staff :: *stabiz, bow :: *baugjăną, dill :: *deljăz, fire :: *fūri, fright :: *furxtīn, handle :: *xandlōjăną, nettle :: *natilōn, still :: *stelljăną, harvest :: *xarbistuz, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, three :: *θrejez, man :: *marīn, craft :: *kraftiz, spindle :: *spennilō, believe :: *laubjăną, light :: *leuxtjăną, seek :: *sōkjăną, stretch :: *strakkjăną
 
-JClusterCoalescence: 1
-believe :: *laubjăną
+JClusterCoalescence: 0
 
 BackMutation: 6
 strew :: *strawjăną, hay :: *xawwją, seven :: *sebun, spear :: *speru, nettle :: *natilōn, spindle :: *spennilō
@@ -18865,21 +18867,21 @@ NasalSpirantLoss: 4
 fist :: *funxwstiz, youth :: *jugunθiz, find :: *finþăną, goose :: *gansz
 
 WeakTailNasalLoss: 97
-bind :: *bindăną, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, lime :: *līmą, mean :: *mainjăną, rain :: *regną, ride :: *rīdăną, room :: *rūmą, run :: *rinnăną, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, spin :: *spinnăną, spread :: *spraidjăną, sup :: *sūpăną, swim :: *swimmăną, thrash :: *θreskăną, tread :: *tredăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, give :: *gebăną, hew :: *xawwăną, lead :: *laidjăną, shear :: *skerăną, show :: *skawōjăną, fly :: *fleugăną, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, handle :: *xandlōjăną, still :: *stelljăną, forlorn :: *leusăną, help :: *xelpăną, hold :: *xaldăną, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, follow :: *fulgēną, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, wake :: *wakēną, ban :: *banną, have :: *xabēną, span :: *spannăną, wade :: *wadăną, wash :: *waskăną, let :: *lētăną, read :: *rēdăną, believe :: *laubjăną, breeches :: *brekăną, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fold :: *falθăną, grave :: *grabăną, light :: *leuxtjăną, live :: *libēną, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, stretch :: *strakkjăną, warp :: *werpăną, water :: *watną, wax :: *waxsăną, weave :: *webăną, wind :: *windăną, burst :: *brestăną, flee :: *fleuxăną
+bind :: *bindăną, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, lime :: *līmą, mean :: *mainjăną, rain :: *regną, ride :: *rīdăną, room :: *rūmą, run :: *rinnăną, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swim :: *swimmăną, thrash :: *θreskăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, give :: *gebăną, hew :: *xawwăną, lead :: *laidjăną, shear :: *skerăną, show :: *skawōjăną, fly :: *fleugăną, do :: *dōną, find :: *finþăną, bow :: *baugjăną, bow :: *beugăną, handle :: *xandlōjăną, still :: *stelljăną, forlorn :: *leusăną, help :: *xelpăną, hold :: *xaldăną, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, follow :: *fulgēną, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, wake :: *wakēną, ban :: *banną, have :: *xabēną, span :: *spannăną, wade :: *wadăną, wash :: *waskăną, live :: *libēną, let :: *lētăną, read :: *rēdăną, believe :: *laubjăną, breeches :: *brekăną, fare :: *farăną, fast :: *fastēną, fold :: *falθăną, grave :: *grabăną, light :: *leuxtjăną, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, stretch :: *strakkjăną, warp :: *werpăną, water :: *watną, wax :: *waxsăną, wind :: *windăną, burst :: *brestăną, flee :: *fleuxăną
 
 WeightMarkers: 0
 
 HighVowelApocope: 61
-belly :: *balgiz, bough :: *bōguz, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, fee :: *fexu, flood :: *flōduz, gift :: *geftiz, ground :: *grunduz, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, thirst :: *θurstuz, while :: *xwīlō, winter :: *wintruz, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, sheath :: *skaiθiz, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, withy :: *waiθiz, fire :: *fūri, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, beaver :: *bebruz, liver :: *librō, lye :: *laugō, needle :: *nēθlō, salve :: *salbō
+beaver :: *bebruz, belly :: *balgiz, bough :: *bōguz, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, fee :: *fexu, flood :: *flōduz, gift :: *geftiz, ground :: *grunduz, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, liver :: *librō, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, salve :: *salbō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, thirst :: *θurstuz, while :: *xwīlō, winter :: *wintruz, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, sheath :: *skaiθiz, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, withy :: *waiθiz, fire :: *fūri, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, lye :: *laugō, needle :: *nēθlō
 
 HeavySyllableNasalApocope: 52
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, rope :: *raipą, sail :: *seglą, salt :: *saltą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, weather :: *wedrą, wonder :: *wundrą, word :: *wurdą, hay :: *xawwją, shaft :: *skaftą, straw :: *strawą, year :: *jērą, yoke :: *juką, drench :: *dranką, honey :: *xunăgą, door :: *durą, gall :: *gallą, sheep :: *skēpą, fell :: *fellą, lung :: *lungwą, thatch :: *θaką, land :: *landą, meal :: *mēlą, nest :: *nistą, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, head :: *xaubudą, hoard :: *xuzdą, knee :: *knewą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, lock :: *luką, rope :: *raipą, sail :: *seglą, salt :: *saltą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, weather :: *wedrą, wife :: *wībą, wonder :: *wundrą, word :: *wurdą, hay :: *xawwją, shaft :: *skaftą, straw :: *strawą, year :: *jērą, yoke :: *juką, drench :: *dranką, honey :: *xunăgą, door :: *durą, gall :: *gallą, sheep :: *skēpą, fell :: *fellą, lung :: *lungwą, thatch :: *θaką, land :: *landą, meal :: *mēlą, nest :: *nistą, flax :: *flaxsą, gold :: *gulθą, timber :: *timrą, trough :: *trugą, wax :: *waxsą, frost :: *frustą
 
-WeakTailReduction: 106
-berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, knead :: *knedăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, give :: *gebăną, hew :: *xawwăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, spur :: *spurăn, still :: *stelljăną, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, span :: *spannăną, wade :: *wadăną, hammer :: *xamaras, let :: *lētăną, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, nave :: *nabō, sing :: *singwăną, sleep :: *slēpăną, starve :: *sterbăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
+WeakTailReduction: 107
+berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, knead :: *knedăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, give :: *gebăną, hew :: *xawwăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, spur :: *spurăn, still :: *stelljăną, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, span :: *spannăną, wade :: *wadăną, hammer :: *xamaras, let :: *lētăną, nave :: *nabō, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, sing :: *singwăną, sleep :: *slēpăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
 
-JLossAfterHeavy: 16
-heal :: *xailjăną, last :: *laistjăną, mean :: *mainjăną, send :: *sandjăną, set :: *satjăną, sit :: *setjăną, spread :: *spraidjăną, strew :: *strawjăną, hay :: *xawwją, lead :: *laidjăną, dill :: *deljăz, still :: *stelljăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, light :: *leuxtjăną
+JLossAfterHeavy: 17
+heal :: *xailjăną, last :: *laistjăną, mean :: *mainjăną, send :: *sandjăną, set :: *satjăną, sit :: *setjăną, spread :: *spraidjăną, strew :: *strawjăną, hay :: *xawwją, lead :: *laidjăną, dill :: *deljăz, still :: *stelljăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, believe :: *laubjăną, light :: *leuxtjăną
 
 WeightCleanup: 0
 
@@ -18889,21 +18891,21 @@ slay :: *slaxăną, ten :: *texun, flee :: *fleuxăną
 Contraction: 1
 slay :: *slaxăną
 
-ProtoToOEWeakTail: 224
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, lock :: *luką, lust :: *lustuz, mean :: *mainjăną, need :: *naudiz, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, dew :: *dawwō, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, cud :: *kwiθuz, land :: *landą, span :: *spannăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, spindle :: *spennilō, beaver :: *bebruz, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, liver :: *librō, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, salve :: *salbō, sing :: *singwăną, sleep :: *slēpăną, starve :: *sterbăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+ProtoToOEWeakTail: 225
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, mean :: *mainjăną, need :: *naudiz, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, dew :: *dawwō, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, cud :: *kwiθuz, land :: *landą, span :: *spannăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, nave :: *nabō, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, lye :: *laugō, needle :: *nēθlō, sing :: *singwăną, sleep :: *slēpăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
 
 ProtoToOEWeightMarkers: 0
 
 ProtoToOEApocope: 113
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, gift :: *geftiz, grass :: *grasą, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, hay :: *xawwją, shaft :: *skaftą, sheath :: *skaiθiz, straw :: *strawą, year :: *jērą, yoke :: *juką, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, honey :: *xunăgą, withy :: *waiθiz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, sheep :: *skēpą, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, land :: *landą, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, meal :: *mēlą, nest :: *nistą, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, beaver :: *bebruz, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, liver :: *librō, lye :: *laugō, needle :: *nēθlō, salve :: *salbō, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beaver :: *bebruz, belly :: *balgiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, gift :: *geftiz, grass :: *grasą, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, head :: *xaubudą, heath :: *xaiθiz, hoard :: *xuzdą, knee :: *knewą, leaf :: *laubą, leather :: *leθrą, life :: *lībą, liver :: *librō, lock :: *luką, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, salve :: *salbō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, hay :: *xawwją, shaft :: *skaftą, sheath :: *skaiθiz, straw :: *strawą, year :: *jērą, yoke :: *juką, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, honey :: *xunăgą, withy :: *waiθiz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, sheep :: *skēpą, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, land :: *landą, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, meal :: *mēlą, nest :: *nistą, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, flax :: *flaxsą, gold :: *gulθą, lye :: *laugō, needle :: *nēθlō, timber :: *timrą, trough :: *trugą, wax :: *waxsą, frost :: *frustą
 
-ProtoToOEWeightCleanup: 148
-berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, mean :: *mainjăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, have :: *xabēną, man :: *marīn, sister :: *swestēr, span :: *spannăną, wade :: *wadăną, hammer :: *xamaras, let :: *lētăną, month :: *mēnōθz, mother :: *mōdēr, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, live :: *libēną, loam :: *laimōn, nave :: *nabō, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
+ProtoToOEWeightCleanup: 149
+berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, mean :: *mainjăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, weave :: *webăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, have :: *xabēną, man :: *marīn, sister :: *swestēr, span :: *spannăną, wade :: *wadăną, live :: *libēną, hammer :: *xamaras, let :: *lētăną, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, corn :: *kurnăn, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
 
 ProtoToOE: 0
 
 WGlide: 62
-chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, nine :: *newun, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, sing :: *singwăną, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
+chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, nine :: *newun, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, sing :: *singwăną, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
 
 GhMarker: 17
 fee :: *fexu, fight :: *fextăną, flea :: *flauxz, fist :: *funxwstiz, ox :: *uxsōn, toe :: *taixwō, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, six :: *sexs, wight :: *wextiz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, team :: *tauxmăz, wax :: *waxsą, wax :: *waxsăną
@@ -18912,9 +18914,9 @@ GlideDeletion: 8
 chew :: *kewwăną, strew :: *strawjăną, dew :: *dawwō, hew :: *xawwăną, show :: *skawōjăną, soul :: *saiwălō, widow :: *widuwōn, nine :: *newun
 
 Epenthesis: 89
-belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flea :: *flauxz, fodder :: *fōdrą, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, rudder :: *rōθrăz, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, adder :: *nadrō, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, six :: *sexs, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, follow :: *fulgēną, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, fowl :: *fuglăz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, beaver :: *bebruz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, liver :: *librō, sing :: *singwăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
+beaver :: *bebruz, belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flea :: *flauxz, fodder :: *fōdrą, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, liver :: *librō, rudder :: *rōθrăz, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, adder :: *nadrō, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, six :: *sexs, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, follow :: *fulgēną, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, fowl :: *fuglăz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, sing :: *singwăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną
 
 Orthography: 358
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, leek :: *laukăz, lime :: *līmą, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, calf :: *kalbăz, comb :: *kambăz, follow :: *fulgēną, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, three :: *θrejez, wake :: *wakēną, ban :: *banną, cud :: *kwiθuz, have :: *xabēną, land :: *landą, man :: *marīn, sister :: *swestēr, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, eel :: *ēlăz, fowl :: *fuglăz, god :: *gud, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, month :: *mēnōθz, mother :: *mōdēr, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, spindle :: *spennilō, beaver :: *bebruz, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, fox :: *fuxsăz, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, live :: *libēną, liver :: *librō, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, raven :: *xrabnăz, salve :: *salbō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, stretch :: *strakkjăną, swine :: *swīnăn, team :: *tauxmăz, thief :: *θeubăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, beaver :: *bebruz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, drive :: *drībăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, head :: *xaubudą, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leaf :: *laubą, leather :: *leθrą, leek :: *laukăz, life :: *lībą, lime :: *līmą, liver :: *librō, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, raven :: *xrabnăz, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, salve :: *salbō, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, starve :: *sterbăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thief :: *θeubăz, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, weave :: *webăną, while :: *xwīlō, wield :: *waldăną, wife :: *wībą, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, calf :: *kalbăz, comb :: *kambăz, follow :: *fulgēną, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, three :: *θrejez, wake :: *wakēną, ban :: *banną, cud :: *kwiθuz, have :: *xabēną, land :: *landą, man :: *marīn, sister :: *swestēr, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, live :: *libēną, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, eel :: *ēlăz, fowl :: *fuglăz, god :: *gud, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, month :: *mēnōθz, mother :: *mōdēr, nave :: *nabō, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, spindle :: *spennilō, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, fox :: *fuxsăz, gold :: *gulθą, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, needle :: *nēθlō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, stretch :: *strakkjăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, whale :: *walăz, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
 
 Surface: 0
