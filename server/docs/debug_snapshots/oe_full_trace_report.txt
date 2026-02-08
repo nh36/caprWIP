@@ -1,4 +1,4 @@
-=== BUCKET: exact_match (125) ===
+=== BUCKET: exact_match (128) ===
 
 --- barrow ---
 PROTO: *bergą
@@ -3000,6 +3000,56 @@ Epenthesis: *x*ō*f
 Orthography: hōf
 Surface: hōf
 
+--- hound ---
+PROTO: *xundăz
+EXPECTED: hund
+OUTPUTS: hund
+
+ProtoInput: *x*u*n*d*ă*z
+InitialKn: *x*u*n*d*ă*z
+Palatalisation: *x*u*n*d*ă*z
+ConsonantRules: *x*u*n*d*ă
+WestGermanic: *x*u*n*d*ă
+NWGmcULowering: *x*u*n*d*ă
+NWGmcFinalLongORaising: *x*u*n*d*ă
+AuFronting: *x*u*n*d*ă
+WWSimplification: *x*u*n*d*ă
+DiphthongLeveling: *x*u*n*d*ă
+EwLongDiphthong: *x*u*n*d*ă
+AngloFrisianBrightening: *x*u*n*d*ă
+BreakingLengthening: *x*u*n*d*ă
+VelarFricPal: *x*u*n*d*ă
+ARestoration: *x*u*n*d*ă
+FinalWeakSchwaApocope: *x*u*n*d
+JGemination: *x*u*n*d
+SkPalatalization: *x*u*n*d
+VelarPalatalization: *x*u*n*d
+IUmlaut: *x*u*n*d
+JClusterCoalescence: *x*u*n*d
+BackMutation: *x*u*n*d
+NasalSpirantLengthening: *x*u*n*d
+NasalSpirantLoss: *x*u*n*d
+WeakTailNasalLoss: *x*u*n*d
+WeightMarkers: *x*u*n*d
+HighVowelApocope: *x*u*n*d
+HeavySyllableNasalApocope: *x*u*n*d
+WeakTailReduction: *x*u*n*d
+JLossAfterHeavy: *x*u*n*d
+WeightCleanup: *x*u*n*d
+HLoss: *x*u*n*d
+Contraction: *x*u*n*d
+ProtoToOEWeakTail: *x*u*n*d
+ProtoToOEWeightMarkers: *x*u*n*d
+ProtoToOEApocope: *x*u*n*d
+ProtoToOEWeightCleanup: *x*u*n*d
+ProtoToOE: *x*u*n*d
+WGlide: *x*u*n*d
+GhMarker: *x*u*n*d
+GlideDeletion: *x*u*n*d
+Epenthesis: *x*u*n*d
+Orthography: hund
+Surface: hund
+
 --- knead ---
 PROTO: *knedăną
 EXPECTED: cnedan
@@ -5800,6 +5850,56 @@ Epenthesis: *θ*r*e*ʃ*ă*n
 Orthography: þresċan
 Surface: þresċan
 
+--- thunder ---
+PROTO: *θunrăz
+EXPECTED: þunor
+OUTPUTS: þunor
+
+ProtoInput: *θ*u*n*r*ă*z
+InitialKn: *θ*u*n*r*ă*z
+Palatalisation: *θ*u*n*r*ă*z
+ConsonantRules: *θ*u*n*r*ă
+WestGermanic: *θ*u*n*r*ă
+NWGmcULowering: *θ*u*n*r*ă
+NWGmcFinalLongORaising: *θ*u*n*r*ă
+AuFronting: *θ*u*n*r*ă
+WWSimplification: *θ*u*n*r*ă
+DiphthongLeveling: *θ*u*n*r*ă
+EwLongDiphthong: *θ*u*n*r*ă
+AngloFrisianBrightening: *θ*u*n*r*ă
+BreakingLengthening: *θ*u*n*r*ă
+VelarFricPal: *θ*u*n*r*ă
+ARestoration: *θ*u*n*r*ă
+FinalWeakSchwaApocope: *θ*u*n*r
+JGemination: *θ*u*n*r
+SkPalatalization: *θ*u*n*r
+VelarPalatalization: *θ*u*n*r
+IUmlaut: *θ*u*n*r
+JClusterCoalescence: *θ*u*n*r
+BackMutation: *θ*u*n*r
+NasalSpirantLengthening: *θ*u*n*r
+NasalSpirantLoss: *θ*u*n*r
+WeakTailNasalLoss: *θ*u*n*r
+WeightMarkers: *θ*u*n*r
+HighVowelApocope: *θ*u*n*r
+HeavySyllableNasalApocope: *θ*u*n*r
+WeakTailReduction: *θ*u*n*r
+JLossAfterHeavy: *θ*u*n*r
+WeightCleanup: *θ*u*n*r
+HLoss: *θ*u*n*r
+Contraction: *θ*u*n*r
+ProtoToOEWeakTail: *θ*u*n*r
+ProtoToOEWeightMarkers: *θ*u*n*r
+ProtoToOEApocope: *θ*u*n*r
+ProtoToOEWeightCleanup: *θ*u*n*r
+ProtoToOE: *θ*u*n*r
+WGlide: *θ*u*n*r
+GhMarker: *θ*u*n*r
+GlideDeletion: *θ*u*n*r
+Epenthesis: *θ*u*n*o*r
+Orthography: þunor
+Surface: þunor
+
 --- tread ---
 PROTO: *tredăną
 EXPECTED: tredan
@@ -6149,6 +6249,56 @@ GlideDeletion: *ʋ*i*n*t*r
 Epenthesis: *w*i*n*t*e*r
 Orthography: winter
 Surface: winter
+
+--- wonder ---
+PROTO: *wundrą
+EXPECTED: wundor
+OUTPUTS: wundor
+
+ProtoInput: *w*u*n*d*r*ą
+InitialKn: *w*u*n*d*r*ą
+Palatalisation: *w*u*n*d*r*ą
+ConsonantRules: *w*u*n*d*r*ą
+WestGermanic: *w*u*n*d*r*ą
+NWGmcULowering: *w*u*n*d*r*ą
+NWGmcFinalLongORaising: *w*u*n*d*r*ą
+AuFronting: *w*u*n*d*r*ą
+WWSimplification: *w*u*n*d*r*ą
+DiphthongLeveling: *w*u*n*d*r*ą
+EwLongDiphthong: *w*u*n*d*r*ą
+AngloFrisianBrightening: *w*u*n*d*r*ą
+BreakingLengthening: *w*u*n*d*r*ą
+VelarFricPal: *w*u*n*d*r*ą
+ARestoration: *w*u*n*d*r*ą
+FinalWeakSchwaApocope: *w*u*n*d*r*ą
+JGemination: *w*u*n*d*r*ą
+SkPalatalization: *w*u*n*d*r*ą
+VelarPalatalization: *w*u*n*d*r*ą
+IUmlaut: *w*u*n*d*r*ą
+JClusterCoalescence: *w*u*n*d*r*ą
+BackMutation: *w*u*n*d*r*ą
+NasalSpirantLengthening: *w*u*n*d*r*ą
+NasalSpirantLoss: *w*u*n*d*r*ą
+WeakTailNasalLoss: *w*u*n*d*r*ą
+WeightMarkers: *w*u*n*d*r*ą
+HighVowelApocope: *w*u*n*d*r*ą
+HeavySyllableNasalApocope: *w*u*n*d*r
+WeakTailReduction: *w*u*n*d*r
+JLossAfterHeavy: *w*u*n*d*r
+WeightCleanup: *w*u*n*d*r
+HLoss: *w*u*n*d*r
+Contraction: *w*u*n*d*r
+ProtoToOEWeakTail: *w*u*n*d*r*ą
+ProtoToOEWeightMarkers: *w*u*n*d*r*ą
+ProtoToOEApocope: *w*u*n*d*r
+ProtoToOEWeightCleanup: *w*u*n*d*r
+ProtoToOE: *w*u*n*d*r
+WGlide: *ʋ*u*n*d*r
+GhMarker: *ʋ*u*n*d*r
+GlideDeletion: *ʋ*u*n*d*r
+Epenthesis: *w*u*n*d*o*r
+Orthography: wundor
+Surface: wundor
 
 --- word ---
 PROTO: *wurdą
@@ -8621,52 +8771,52 @@ Surface: flēogan
 --- honey ---
 PROTO: *xunăgą
 EXPECTED: huniġ
-OUTPUTS: honag
+OUTPUTS: hunag
 
 ProtoInput: *x*u*n*ă*g*ą
 InitialKn: *x*u*n*ă*g*ą
 Palatalisation: *x*u*n*ă*g*ą
 ConsonantRules: *x*u*n*ă*g*ą
 WestGermanic: *x*u*n*ă*g*ą
-NWGmcULowering: *x*o*n*ă*g*ą
-NWGmcFinalLongORaising: *x*o*n*ă*g*ą
-AuFronting: *x*o*n*ă*g*ą
-WWSimplification: *x*o*n*ă*g*ą
-DiphthongLeveling: *x*o*n*ă*g*ą
-EwLongDiphthong: *x*o*n*ă*g*ą
-AngloFrisianBrightening: *x*o*n*ă*g*ą
-BreakingLengthening: *x*o*n*ă*g*ą
-VelarFricPal: *x*o*n*ă*g*ą
-ARestoration: *x*o*n*ă*g*ą
-FinalWeakSchwaApocope: *x*o*n*ă*g*ą
-JGemination: *x*o*n*ă*g*ą
-SkPalatalization: *x*o*n*ă*g*ą
-VelarPalatalization: *x*o*n*ă*g*ą
-IUmlaut: *x*o*n*ă*g*ą
-JClusterCoalescence: *x*o*n*ă*g*ą
-BackMutation: *x*o*n*ă*g*ą
-NasalSpirantLengthening: *x*o*n*ă*g*ą
-NasalSpirantLoss: *x*o*n*ă*g*ą
-WeakTailNasalLoss: *x*o*n*ă*g*ą
-WeightMarkers: *x*o*n*ă*g*ą
-HighVowelApocope: *x*o*n*ă*g*ą
-HeavySyllableNasalApocope: *x*o*n*ă*g
-WeakTailReduction: *x*o*n*a*g
-JLossAfterHeavy: *x*o*n*a*g
-WeightCleanup: *x*o*n*a*g
-HLoss: *x*o*n*a*g
-Contraction: *x*o*n*a*g
-ProtoToOEWeakTail: *x*o*n*ă*g*ą
-ProtoToOEWeightMarkers: *x*o*n*ă*g*ą
-ProtoToOEApocope: *x*o*n*ă*g
-ProtoToOEWeightCleanup: *x*o*n*a*g
-ProtoToOE: *x*o*n*a*g
-WGlide: *x*o*n*a*g
-GhMarker: *x*o*n*a*g
-GlideDeletion: *x*o*n*a*g
-Epenthesis: *x*o*n*a*g
-Orthography: honag
-Surface: honag
+NWGmcULowering: *x*u*n*ă*g*ą
+NWGmcFinalLongORaising: *x*u*n*ă*g*ą
+AuFronting: *x*u*n*ă*g*ą
+WWSimplification: *x*u*n*ă*g*ą
+DiphthongLeveling: *x*u*n*ă*g*ą
+EwLongDiphthong: *x*u*n*ă*g*ą
+AngloFrisianBrightening: *x*u*n*ă*g*ą
+BreakingLengthening: *x*u*n*ă*g*ą
+VelarFricPal: *x*u*n*ă*g*ą
+ARestoration: *x*u*n*ă*g*ą
+FinalWeakSchwaApocope: *x*u*n*ă*g*ą
+JGemination: *x*u*n*ă*g*ą
+SkPalatalization: *x*u*n*ă*g*ą
+VelarPalatalization: *x*u*n*ă*g*ą
+IUmlaut: *x*u*n*ă*g*ą
+JClusterCoalescence: *x*u*n*ă*g*ą
+BackMutation: *x*u*n*ă*g*ą
+NasalSpirantLengthening: *x*u*n*ă*g*ą
+NasalSpirantLoss: *x*u*n*ă*g*ą
+WeakTailNasalLoss: *x*u*n*ă*g*ą
+WeightMarkers: *x*u*n*ă*g*ą
+HighVowelApocope: *x*u*n*ă*g*ą
+HeavySyllableNasalApocope: *x*u*n*ă*g
+WeakTailReduction: *x*u*n*a*g
+JLossAfterHeavy: *x*u*n*a*g
+WeightCleanup: *x*u*n*a*g
+HLoss: *x*u*n*a*g
+Contraction: *x*u*n*a*g
+ProtoToOEWeakTail: *x*u*n*ă*g*ą
+ProtoToOEWeightMarkers: *x*u*n*ă*g*ą
+ProtoToOEApocope: *x*u*n*ă*g
+ProtoToOEWeightCleanup: *x*u*n*a*g
+ProtoToOE: *x*u*n*a*g
+WGlide: *x*u*n*a*g
+GhMarker: *x*u*n*a*g
+GlideDeletion: *x*u*n*a*g
+Epenthesis: *x*u*n*a*g
+Orthography: hunag
+Surface: hunag
 
 --- think ---
 PROTO: *θankăz
@@ -10733,52 +10883,52 @@ Surface: stiellan
 --- sun ---
 PROTO: *sunnōn
 EXPECTED: sunne
-OUTPUTS: sonnon
+OUTPUTS: sunnon
 
 ProtoInput: *s*u*n*n*ō*n
 InitialKn: *s*u*n*n*ō*n
 Palatalisation: *s*u*n*n*ō*n
 ConsonantRules: *s*u*n*n*ō*n
 WestGermanic: *s*u*n*n*ō*n
-NWGmcULowering: *s*o*n*n*ō*n
-NWGmcFinalLongORaising: *s*o*n*n*ō*n
-AuFronting: *s*o*n*n*ō*n
-WWSimplification: *s*o*n*n*ō*n
-DiphthongLeveling: *s*o*n*n*ō*n
-EwLongDiphthong: *s*o*n*n*ō*n
-AngloFrisianBrightening: *s*o*n*n*ō*n
-BreakingLengthening: *s*o*n*n*ō*n
-VelarFricPal: *s*o*n*n*ō*n
-ARestoration: *s*o*n*n*ō*n
-FinalWeakSchwaApocope: *s*o*n*n*ō*n
-JGemination: *s*o*n*n*ō*n
-SkPalatalization: *s*o*n*n*ō*n
-VelarPalatalization: *s*o*n*n*ō*n
-IUmlaut: *s*o*n*n*ō*n
-JClusterCoalescence: *s*o*n*n*ō*n
-BackMutation: *s*o*n*n*ō*n
-NasalSpirantLengthening: *s*o*n*n*ō*n
-NasalSpirantLoss: *s*o*n*n*ō*n
-WeakTailNasalLoss: *s*o*n*n*ō*n
-WeightMarkers: *s*o*n*n*ō*n
-HighVowelApocope: *s*o*n*n*ō*n
-HeavySyllableNasalApocope: *s*o*n*n*ō*n
-WeakTailReduction: *s*o*n*n*ō*n
-JLossAfterHeavy: *s*o*n*n*ō*n
-WeightCleanup: *s*o*n*n*ō*n
-HLoss: *s*o*n*n*ō*n
-Contraction: *s*o*n*n*ō*n
-ProtoToOEWeakTail: *s*o*n*n*ō*n
-ProtoToOEWeightMarkers: *s*o*n*n*ō*n
-ProtoToOEApocope: *s*o*n*n*ō*n
-ProtoToOEWeightCleanup: *s*o*n*n*o*n
-ProtoToOE: *s*o*n*n*o*n
-WGlide: *s*o*n*n*o*n
-GhMarker: *s*o*n*n*o*n
-GlideDeletion: *s*o*n*n*o*n
-Epenthesis: *s*o*n*n*o*n
-Orthography: sonnon
-Surface: sonnon
+NWGmcULowering: *s*u*n*n*ō*n
+NWGmcFinalLongORaising: *s*u*n*n*ō*n
+AuFronting: *s*u*n*n*ō*n
+WWSimplification: *s*u*n*n*ō*n
+DiphthongLeveling: *s*u*n*n*ō*n
+EwLongDiphthong: *s*u*n*n*ō*n
+AngloFrisianBrightening: *s*u*n*n*ō*n
+BreakingLengthening: *s*u*n*n*ō*n
+VelarFricPal: *s*u*n*n*ō*n
+ARestoration: *s*u*n*n*ō*n
+FinalWeakSchwaApocope: *s*u*n*n*ō*n
+JGemination: *s*u*n*n*ō*n
+SkPalatalization: *s*u*n*n*ō*n
+VelarPalatalization: *s*u*n*n*ō*n
+IUmlaut: *s*u*n*n*ō*n
+JClusterCoalescence: *s*u*n*n*ō*n
+BackMutation: *s*u*n*n*ō*n
+NasalSpirantLengthening: *s*u*n*n*ō*n
+NasalSpirantLoss: *s*u*n*n*ō*n
+WeakTailNasalLoss: *s*u*n*n*ō*n
+WeightMarkers: *s*u*n*n*ō*n
+HighVowelApocope: *s*u*n*n*ō*n
+HeavySyllableNasalApocope: *s*u*n*n*ō*n
+WeakTailReduction: *s*u*n*n*ō*n
+JLossAfterHeavy: *s*u*n*n*ō*n
+WeightCleanup: *s*u*n*n*ō*n
+HLoss: *s*u*n*n*ō*n
+Contraction: *s*u*n*n*ō*n
+ProtoToOEWeakTail: *s*u*n*n*ō*n
+ProtoToOEWeightMarkers: *s*u*n*n*ō*n
+ProtoToOEApocope: *s*u*n*n*ō*n
+ProtoToOEWeightCleanup: *s*u*n*n*o*n
+ProtoToOE: *s*u*n*n*o*n
+WGlide: *s*u*n*n*o*n
+GhMarker: *s*u*n*n*o*n
+GlideDeletion: *s*u*n*n*o*n
+Epenthesis: *s*u*n*n*o*n
+Orthography: sunnon
+Surface: sunnon
 
 --- tick ---
 PROTO: *tikkōn
@@ -10933,52 +11083,52 @@ Surface: tang
 --- tongue ---
 PROTO: *tungōn
 EXPECTED: tunge
-OUTPUTS: tongon
+OUTPUTS: tungon
 
 ProtoInput: *t*u*n*g*ō*n
 InitialKn: *t*u*n*g*ō*n
 Palatalisation: *t*u*n*g*ō*n
 ConsonantRules: *t*u*n*g*ō*n
 WestGermanic: *t*u*n*g*ō*n
-NWGmcULowering: *t*o*n*g*ō*n
-NWGmcFinalLongORaising: *t*o*n*g*ō*n
-AuFronting: *t*o*n*g*ō*n
-WWSimplification: *t*o*n*g*ō*n
-DiphthongLeveling: *t*o*n*g*ō*n
-EwLongDiphthong: *t*o*n*g*ō*n
-AngloFrisianBrightening: *t*o*n*g*ō*n
-BreakingLengthening: *t*o*n*g*ō*n
-VelarFricPal: *t*o*n*g*ō*n
-ARestoration: *t*o*n*g*ō*n
-FinalWeakSchwaApocope: *t*o*n*g*ō*n
-JGemination: *t*o*n*g*ō*n
-SkPalatalization: *t*o*n*g*ō*n
-VelarPalatalization: *t*o*n*g*ō*n
-IUmlaut: *t*o*n*g*ō*n
-JClusterCoalescence: *t*o*n*g*ō*n
-BackMutation: *t*o*n*g*ō*n
-NasalSpirantLengthening: *t*o*n*g*ō*n
-NasalSpirantLoss: *t*o*n*g*ō*n
-WeakTailNasalLoss: *t*o*n*g*ō*n
-WeightMarkers: *t*o*n*g*ō*n
-HighVowelApocope: *t*o*n*g*ō*n
-HeavySyllableNasalApocope: *t*o*n*g*ō*n
-WeakTailReduction: *t*o*n*g*ō*n
-JLossAfterHeavy: *t*o*n*g*ō*n
-WeightCleanup: *t*o*n*g*ō*n
-HLoss: *t*o*n*g*ō*n
-Contraction: *t*o*n*g*ō*n
-ProtoToOEWeakTail: *t*o*n*g*ō*n
-ProtoToOEWeightMarkers: *t*o*n*g*ō*n
-ProtoToOEApocope: *t*o*n*g*ō*n
-ProtoToOEWeightCleanup: *t*o*n*g*o*n
-ProtoToOE: *t*o*n*g*o*n
-WGlide: *t*o*n*g*o*n
-GhMarker: *t*o*n*g*o*n
-GlideDeletion: *t*o*n*g*o*n
-Epenthesis: *t*o*n*g*o*n
-Orthography: tongon
-Surface: tongon
+NWGmcULowering: *t*u*n*g*ō*n
+NWGmcFinalLongORaising: *t*u*n*g*ō*n
+AuFronting: *t*u*n*g*ō*n
+WWSimplification: *t*u*n*g*ō*n
+DiphthongLeveling: *t*u*n*g*ō*n
+EwLongDiphthong: *t*u*n*g*ō*n
+AngloFrisianBrightening: *t*u*n*g*ō*n
+BreakingLengthening: *t*u*n*g*ō*n
+VelarFricPal: *t*u*n*g*ō*n
+ARestoration: *t*u*n*g*ō*n
+FinalWeakSchwaApocope: *t*u*n*g*ō*n
+JGemination: *t*u*n*g*ō*n
+SkPalatalization: *t*u*n*g*ō*n
+VelarPalatalization: *t*u*n*g*ō*n
+IUmlaut: *t*u*n*g*ō*n
+JClusterCoalescence: *t*u*n*g*ō*n
+BackMutation: *t*u*n*g*ō*n
+NasalSpirantLengthening: *t*u*n*g*ō*n
+NasalSpirantLoss: *t*u*n*g*ō*n
+WeakTailNasalLoss: *t*u*n*g*ō*n
+WeightMarkers: *t*u*n*g*ō*n
+HighVowelApocope: *t*u*n*g*ō*n
+HeavySyllableNasalApocope: *t*u*n*g*ō*n
+WeakTailReduction: *t*u*n*g*ō*n
+JLossAfterHeavy: *t*u*n*g*ō*n
+WeightCleanup: *t*u*n*g*ō*n
+HLoss: *t*u*n*g*ō*n
+Contraction: *t*u*n*g*ō*n
+ProtoToOEWeakTail: *t*u*n*g*ō*n
+ProtoToOEWeightMarkers: *t*u*n*g*ō*n
+ProtoToOEApocope: *t*u*n*g*ō*n
+ProtoToOEWeightCleanup: *t*u*n*g*o*n
+ProtoToOE: *t*u*n*g*o*n
+WGlide: *t*u*n*g*o*n
+GhMarker: *t*u*n*g*o*n
+GlideDeletion: *t*u*n*g*o*n
+Epenthesis: *t*u*n*g*o*n
+Orthography: tungon
+Surface: tungon
 
 --- way ---
 PROTO: *wegăz
@@ -12489,52 +12639,52 @@ Surface: lind
 --- lung ---
 PROTO: *lungwą
 EXPECTED: lungen
-OUTPUTS: longw
+OUTPUTS: lungw
 
 ProtoInput: *l*u*n*g*w*ą
 InitialKn: *l*u*n*g*w*ą
 Palatalisation: *l*u*n*g*w*ą
 ConsonantRules: *l*u*n*g*w*ą
 WestGermanic: *l*u*n*g*w*ą
-NWGmcULowering: *l*o*n*g*w*ą
-NWGmcFinalLongORaising: *l*o*n*g*w*ą
-AuFronting: *l*o*n*g*w*ą
-WWSimplification: *l*o*n*g*w*ą
-DiphthongLeveling: *l*o*n*g*w*ą
-EwLongDiphthong: *l*o*n*g*w*ą
-AngloFrisianBrightening: *l*o*n*g*w*ą
-BreakingLengthening: *l*o*n*g*w*ą
-VelarFricPal: *l*o*n*g*w*ą
-ARestoration: *l*o*n*g*w*ą
-FinalWeakSchwaApocope: *l*o*n*g*w*ą
-JGemination: *l*o*n*g*w*ą
-SkPalatalization: *l*o*n*g*w*ą
-VelarPalatalization: *l*o*n*g*w*ą
-IUmlaut: *l*o*n*g*w*ą
-JClusterCoalescence: *l*o*n*g*w*ą
-BackMutation: *l*o*n*g*w*ą
-NasalSpirantLengthening: *l*o*n*g*w*ą
-NasalSpirantLoss: *l*o*n*g*w*ą
-WeakTailNasalLoss: *l*o*n*g*w*ą
-WeightMarkers: *l*o*n*g*w*ą
-HighVowelApocope: *l*o*n*g*w*ą
-HeavySyllableNasalApocope: *l*o*n*g*w
-WeakTailReduction: *l*o*n*g*w
-JLossAfterHeavy: *l*o*n*g*w
-WeightCleanup: *l*o*n*g*w
-HLoss: *l*o*n*g*w
-Contraction: *l*o*n*g*w
-ProtoToOEWeakTail: *l*o*n*g*w*ą
-ProtoToOEWeightMarkers: *l*o*n*g*w*ą
-ProtoToOEApocope: *l*o*n*g*w
-ProtoToOEWeightCleanup: *l*o*n*g*w
-ProtoToOE: *l*o*n*g*w
-WGlide: *l*o*n*g*ʋ
-GhMarker: *l*o*n*g*ʋ
-GlideDeletion: *l*o*n*g*ʋ
-Epenthesis: *l*o*n*g*w
-Orthography: longw
-Surface: longw
+NWGmcULowering: *l*u*n*g*w*ą
+NWGmcFinalLongORaising: *l*u*n*g*w*ą
+AuFronting: *l*u*n*g*w*ą
+WWSimplification: *l*u*n*g*w*ą
+DiphthongLeveling: *l*u*n*g*w*ą
+EwLongDiphthong: *l*u*n*g*w*ą
+AngloFrisianBrightening: *l*u*n*g*w*ą
+BreakingLengthening: *l*u*n*g*w*ą
+VelarFricPal: *l*u*n*g*w*ą
+ARestoration: *l*u*n*g*w*ą
+FinalWeakSchwaApocope: *l*u*n*g*w*ą
+JGemination: *l*u*n*g*w*ą
+SkPalatalization: *l*u*n*g*w*ą
+VelarPalatalization: *l*u*n*g*w*ą
+IUmlaut: *l*u*n*g*w*ą
+JClusterCoalescence: *l*u*n*g*w*ą
+BackMutation: *l*u*n*g*w*ą
+NasalSpirantLengthening: *l*u*n*g*w*ą
+NasalSpirantLoss: *l*u*n*g*w*ą
+WeakTailNasalLoss: *l*u*n*g*w*ą
+WeightMarkers: *l*u*n*g*w*ą
+HighVowelApocope: *l*u*n*g*w*ą
+HeavySyllableNasalApocope: *l*u*n*g*w
+WeakTailReduction: *l*u*n*g*w
+JLossAfterHeavy: *l*u*n*g*w
+WeightCleanup: *l*u*n*g*w
+HLoss: *l*u*n*g*w
+Contraction: *l*u*n*g*w
+ProtoToOEWeakTail: *l*u*n*g*w*ą
+ProtoToOEWeightMarkers: *l*u*n*g*w*ą
+ProtoToOEApocope: *l*u*n*g*w
+ProtoToOEWeightCleanup: *l*u*n*g*w
+ProtoToOE: *l*u*n*g*w
+WGlide: *l*u*n*g*ʋ
+GhMarker: *l*u*n*g*ʋ
+GlideDeletion: *l*u*n*g*ʋ
+Epenthesis: *l*u*n*g*w
+Orthography: lungw
+Surface: lungw
 
 --- march ---
 PROTO: *markō
@@ -13442,52 +13592,52 @@ Surface: rycċ
 --- sunder ---
 PROTO: *sundrōjăną
 EXPECTED: sundor-
-OUTPUTS: sondreġan
+OUTPUTS: sundreġan
 
 ProtoInput: *s*u*n*d*r*ō*j*ă*n*ą
 InitialKn: *s*u*n*d*r*ō*j*ă*n*ą
 Palatalisation: *s*u*n*d*r*ō*j*ă*n*ą
 ConsonantRules: *s*u*n*d*r*ō*j*ă*n*ą
 WestGermanic: *s*u*n*d*r*ō*j*ă*n*ą
-NWGmcULowering: *s*o*n*d*r*ō*j*ă*n*ą
-NWGmcFinalLongORaising: *s*o*n*d*r*ō*j*ă*n*ą
-AuFronting: *s*o*n*d*r*ō*j*ă*n*ą
-WWSimplification: *s*o*n*d*r*ō*j*ă*n*ą
-DiphthongLeveling: *s*o*n*d*r*ō*j*ă*n*ą
-EwLongDiphthong: *s*o*n*d*r*ō*j*ă*n*ą
-AngloFrisianBrightening: *s*o*n*d*r*ō*j*ă*n*ą
-BreakingLengthening: *s*o*n*d*r*ō*j*ă*n*ą
-VelarFricPal: *s*o*n*d*r*ō*j*ă*n*ą
-ARestoration: *s*o*n*d*r*ō*j*ă*n*ą
-FinalWeakSchwaApocope: *s*o*n*d*r*ō*j*ă*n*ą
-JGemination: *s*o*n*d*r*ō*j*ă*n*ą
-SkPalatalization: *s*o*n*d*r*ō*j*ă*n*ą
-VelarPalatalization: *s*o*n*d*r*ō*j*ă*n*ą
-IUmlaut: *s*o*n*d*r*ē*j*ă*n*ą
-JClusterCoalescence: *s*o*n*d*r*ē*j*ă*n*ą
-BackMutation: *s*o*n*d*r*ē*j*ă*n*ą
-NasalSpirantLengthening: *s*o*n*d*r*ē*j*ă*n*ą
-NasalSpirantLoss: *s*o*n*d*r*ē*j*ă*n*ą
-WeakTailNasalLoss: *s*o*n*d*r*ē*j*ă*n
-WeightMarkers: *s*o*n*d*r*ē*j*ă*n
-HighVowelApocope: *s*o*n*d*r*ē*j*ă*n
-HeavySyllableNasalApocope: *s*o*n*d*r*ē*j*ă*n
-WeakTailReduction: *s*o*n*d*r*ē*j*a*n
-JLossAfterHeavy: *s*o*n*d*r*ē*j*a*n
-WeightCleanup: *s*o*n*d*r*ē*j*a*n
-HLoss: *s*o*n*d*r*ē*j*a*n
-Contraction: *s*o*n*d*r*ē*j*a*n
-ProtoToOEWeakTail: *s*o*n*d*r*ē*j*ă*n
-ProtoToOEWeightMarkers: *s*o*n*d*r*ē*j*ă*n
-ProtoToOEApocope: *s*o*n*d*r*ē*j*ă*n
-ProtoToOEWeightCleanup: *s*o*n*d*r*e*j*a*n
-ProtoToOE: *s*o*n*d*r*e*j*a*n
-WGlide: *s*o*n*d*r*e*j*a*n
-GhMarker: *s*o*n*d*r*e*j*a*n
-GlideDeletion: *s*o*n*d*r*e*j*a*n
-Epenthesis: *s*o*n*d*r*e*j*a*n
-Orthography: sondreġan
-Surface: sondreġan
+NWGmcULowering: *s*u*n*d*r*ō*j*ă*n*ą
+NWGmcFinalLongORaising: *s*u*n*d*r*ō*j*ă*n*ą
+AuFronting: *s*u*n*d*r*ō*j*ă*n*ą
+WWSimplification: *s*u*n*d*r*ō*j*ă*n*ą
+DiphthongLeveling: *s*u*n*d*r*ō*j*ă*n*ą
+EwLongDiphthong: *s*u*n*d*r*ō*j*ă*n*ą
+AngloFrisianBrightening: *s*u*n*d*r*ō*j*ă*n*ą
+BreakingLengthening: *s*u*n*d*r*ō*j*ă*n*ą
+VelarFricPal: *s*u*n*d*r*ō*j*ă*n*ą
+ARestoration: *s*u*n*d*r*ō*j*ă*n*ą
+FinalWeakSchwaApocope: *s*u*n*d*r*ō*j*ă*n*ą
+JGemination: *s*u*n*d*r*ō*j*ă*n*ą
+SkPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
+VelarPalatalization: *s*u*n*d*r*ō*j*ă*n*ą
+IUmlaut: *s*u*n*d*r*ē*j*ă*n*ą
+JClusterCoalescence: *s*u*n*d*r*ē*j*ă*n*ą
+BackMutation: *s*u*n*d*r*ē*j*ă*n*ą
+NasalSpirantLengthening: *s*u*n*d*r*ē*j*ă*n*ą
+NasalSpirantLoss: *s*u*n*d*r*ē*j*ă*n*ą
+WeakTailNasalLoss: *s*u*n*d*r*ē*j*ă*n
+WeightMarkers: *s*u*n*d*r*ē*j*ă*n
+HighVowelApocope: *s*u*n*d*r*ē*j*ă*n
+HeavySyllableNasalApocope: *s*u*n*d*r*ē*j*ă*n
+WeakTailReduction: *s*u*n*d*r*ē*j*a*n
+JLossAfterHeavy: *s*u*n*d*r*ē*j*a*n
+WeightCleanup: *s*u*n*d*r*ē*j*a*n
+HLoss: *s*u*n*d*r*ē*j*a*n
+Contraction: *s*u*n*d*r*ē*j*a*n
+ProtoToOEWeakTail: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightMarkers: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEApocope: *s*u*n*d*r*ē*j*ă*n
+ProtoToOEWeightCleanup: *s*u*n*d*r*e*j*a*n
+ProtoToOE: *s*u*n*d*r*e*j*a*n
+WGlide: *s*u*n*d*r*e*j*a*n
+GhMarker: *s*u*n*d*r*e*j*a*n
+GlideDeletion: *s*u*n*d*r*e*j*a*n
+Epenthesis: *s*u*n*d*r*e*j*a*n
+Orthography: sundreġan
+Surface: sundreġan
 
 --- thatch ---
 PROTO: *θaką
@@ -14196,7 +14346,7 @@ Orthography: sċūfl
 Surface: sċūfl
 
 
-=== BUCKET: vowel_quality_other (29) ===
+=== BUCKET: vowel_quality_other (26) ===
 
 --- buck ---
 PROTO: *bukkăz
@@ -14597,56 +14747,6 @@ GlideDeletion: *ç*eo*r*d
 Epenthesis: *ç*eo*r*d
 Orthography: heord
 Surface: heord
-
---- hound ---
-PROTO: *xundăz
-EXPECTED: hund
-OUTPUTS: hond
-
-ProtoInput: *x*u*n*d*ă*z
-InitialKn: *x*u*n*d*ă*z
-Palatalisation: *x*u*n*d*ă*z
-ConsonantRules: *x*u*n*d*ă
-WestGermanic: *x*u*n*d*ă
-NWGmcULowering: *x*o*n*d*ă
-NWGmcFinalLongORaising: *x*o*n*d*ă
-AuFronting: *x*o*n*d*ă
-WWSimplification: *x*o*n*d*ă
-DiphthongLeveling: *x*o*n*d*ă
-EwLongDiphthong: *x*o*n*d*ă
-AngloFrisianBrightening: *x*o*n*d*ă
-BreakingLengthening: *x*o*n*d*ă
-VelarFricPal: *x*o*n*d*ă
-ARestoration: *x*o*n*d*ă
-FinalWeakSchwaApocope: *x*o*n*d
-JGemination: *x*o*n*d
-SkPalatalization: *x*o*n*d
-VelarPalatalization: *x*o*n*d
-IUmlaut: *x*o*n*d
-JClusterCoalescence: *x*o*n*d
-BackMutation: *x*o*n*d
-NasalSpirantLengthening: *x*o*n*d
-NasalSpirantLoss: *x*o*n*d
-WeakTailNasalLoss: *x*o*n*d
-WeightMarkers: *x*o*n*d
-HighVowelApocope: *x*o*n*d
-HeavySyllableNasalApocope: *x*o*n*d
-WeakTailReduction: *x*o*n*d
-JLossAfterHeavy: *x*o*n*d
-WeightCleanup: *x*o*n*d
-HLoss: *x*o*n*d
-Contraction: *x*o*n*d
-ProtoToOEWeakTail: *x*o*n*d
-ProtoToOEWeightMarkers: *x*o*n*d
-ProtoToOEApocope: *x*o*n*d
-ProtoToOEWeightCleanup: *x*o*n*d
-ProtoToOE: *x*o*n*d
-WGlide: *x*o*n*d
-GhMarker: *x*o*n*d
-GlideDeletion: *x*o*n*d
-Epenthesis: *x*o*n*d
-Orthography: hond
-Surface: hond
 
 --- let ---
 PROTO: *lētăną
@@ -15398,56 +15498,6 @@ Epenthesis: *θ*u*r*n
 Orthography: þurn
 Surface: þurn
 
---- thunder ---
-PROTO: *θunrăz
-EXPECTED: þunor
-OUTPUTS: þonor
-
-ProtoInput: *θ*u*n*r*ă*z
-InitialKn: *θ*u*n*r*ă*z
-Palatalisation: *θ*u*n*r*ă*z
-ConsonantRules: *θ*u*n*r*ă
-WestGermanic: *θ*u*n*r*ă
-NWGmcULowering: *θ*o*n*r*ă
-NWGmcFinalLongORaising: *θ*o*n*r*ă
-AuFronting: *θ*o*n*r*ă
-WWSimplification: *θ*o*n*r*ă
-DiphthongLeveling: *θ*o*n*r*ă
-EwLongDiphthong: *θ*o*n*r*ă
-AngloFrisianBrightening: *θ*o*n*r*ă
-BreakingLengthening: *θ*o*n*r*ă
-VelarFricPal: *θ*o*n*r*ă
-ARestoration: *θ*o*n*r*ă
-FinalWeakSchwaApocope: *θ*o*n*r
-JGemination: *θ*o*n*r
-SkPalatalization: *θ*o*n*r
-VelarPalatalization: *θ*o*n*r
-IUmlaut: *θ*o*n*r
-JClusterCoalescence: *θ*o*n*r
-BackMutation: *θ*o*n*r
-NasalSpirantLengthening: *θ*o*n*r
-NasalSpirantLoss: *θ*o*n*r
-WeakTailNasalLoss: *θ*o*n*r
-WeightMarkers: *θ*o*n*r
-HighVowelApocope: *θ*o*n*r
-HeavySyllableNasalApocope: *θ*o*n*r
-WeakTailReduction: *θ*o*n*r
-JLossAfterHeavy: *θ*o*n*r
-WeightCleanup: *θ*o*n*r
-HLoss: *θ*o*n*r
-Contraction: *θ*o*n*r
-ProtoToOEWeakTail: *θ*o*n*r
-ProtoToOEWeightMarkers: *θ*o*n*r
-ProtoToOEApocope: *θ*o*n*r
-ProtoToOEWeightCleanup: *θ*o*n*r
-ProtoToOE: *θ*o*n*r
-WGlide: *θ*o*n*r
-GhMarker: *θ*o*n*r
-GlideDeletion: *θ*o*n*r
-Epenthesis: *θ*o*n*o*r
-Orthography: þonor
-Surface: þonor
-
 --- wart ---
 PROTO: *warto
 EXPECTED: wearte
@@ -15597,56 +15647,6 @@ GlideDeletion: *ʋ*o*l*f
 Epenthesis: *w*o*l*f
 Orthography: wolf
 Surface: wolf
-
---- wonder ---
-PROTO: *wundrą
-EXPECTED: wundor
-OUTPUTS: wondor
-
-ProtoInput: *w*u*n*d*r*ą
-InitialKn: *w*u*n*d*r*ą
-Palatalisation: *w*u*n*d*r*ą
-ConsonantRules: *w*u*n*d*r*ą
-WestGermanic: *w*u*n*d*r*ą
-NWGmcULowering: *w*o*n*d*r*ą
-NWGmcFinalLongORaising: *w*o*n*d*r*ą
-AuFronting: *w*o*n*d*r*ą
-WWSimplification: *w*o*n*d*r*ą
-DiphthongLeveling: *w*o*n*d*r*ą
-EwLongDiphthong: *w*o*n*d*r*ą
-AngloFrisianBrightening: *w*o*n*d*r*ą
-BreakingLengthening: *w*o*n*d*r*ą
-VelarFricPal: *w*o*n*d*r*ą
-ARestoration: *w*o*n*d*r*ą
-FinalWeakSchwaApocope: *w*o*n*d*r*ą
-JGemination: *w*o*n*d*r*ą
-SkPalatalization: *w*o*n*d*r*ą
-VelarPalatalization: *w*o*n*d*r*ą
-IUmlaut: *w*o*n*d*r*ą
-JClusterCoalescence: *w*o*n*d*r*ą
-BackMutation: *w*o*n*d*r*ą
-NasalSpirantLengthening: *w*o*n*d*r*ą
-NasalSpirantLoss: *w*o*n*d*r*ą
-WeakTailNasalLoss: *w*o*n*d*r*ą
-WeightMarkers: *w*o*n*d*r*ą
-HighVowelApocope: *w*o*n*d*r*ą
-HeavySyllableNasalApocope: *w*o*n*d*r
-WeakTailReduction: *w*o*n*d*r
-JLossAfterHeavy: *w*o*n*d*r
-WeightCleanup: *w*o*n*d*r
-HLoss: *w*o*n*d*r
-Contraction: *w*o*n*d*r
-ProtoToOEWeakTail: *w*o*n*d*r*ą
-ProtoToOEWeightMarkers: *w*o*n*d*r*ą
-ProtoToOEApocope: *w*o*n*d*r
-ProtoToOEWeightCleanup: *w*o*n*d*r
-ProtoToOE: *w*o*n*d*r
-WGlide: *ʋ*o*n*d*r
-GhMarker: *ʋ*o*n*d*r
-GlideDeletion: *ʋ*o*n*d*r
-Epenthesis: *w*o*n*d*o*r
-Orthography: wondor
-Surface: wondor
 
 
 === BUCKET: gemination_extra (1) ===
@@ -18802,13 +18802,13 @@ Palatalisation: 16
 belly :: *balgiz, chew :: *kewwăną, gift :: *geftiz, rye :: *rugiz, shine :: *skīnăną, string :: *strangiz, give :: *gebăną, shear :: *skerăną, sheep :: *skēpą, reek :: *raukiz, shove :: *skeubăną, begin :: *biginnăną, follow :: *fulgēną, rock :: *rukkiz, wake :: *wakēną, shield :: *skelduz
 
 ConsonantRules: 118
-beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, ghost :: *gaistăz, gift :: *geftiz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, leek :: *laukăz, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rudder :: *rōθrăz, rye :: *rugiz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thirst :: *θurstuz, wain :: *wagnăz, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, guest :: *gastiz, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, learn :: *liznōjăną, rock :: *rukkiz, three :: *θrejez, cud :: *kwiθuz, thanks :: *θankăz, buck :: *bukkăz, craft :: *kraftiz, eel :: *ēlăz, fowl :: *fuglăz, hound :: *xundăz, month :: *mēnōθz, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, thunder :: *θunrăz, wolf :: *wulfăz, beaver :: *bebruz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz, milk :: *melukz
+beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bride :: *brūdiz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, ghost :: *gaistăz, gift :: *geftiz, ground :: *grunduz, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rudder :: *rōθrăz, rye :: *rugiz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, thirst :: *θurstuz, thunder :: *θunrăz, wain :: *wagnăz, winter :: *wintruz, fist :: *funxwstiz, flesh :: *flaiskăz, breast :: *brustz, four :: *fedwōrez, friend :: *frijōndz, guest :: *gastiz, sheath :: *skaiθiz, youth :: *jugunθiz, meed :: *mizdō, birth :: *burdiz, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, staff :: *stabiz, cow :: *kōwz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, field :: *felθuz, hair :: *xazwăz, harvest :: *xarbistuz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, gang :: *gangăz, tide :: *tīdiz, calf :: *kalbăz, comb :: *kambăz, goose :: *gansz, learn :: *liznōjăną, rock :: *rukkiz, three :: *θrejez, cud :: *kwiθuz, thanks :: *θankăz, buck :: *bukkăz, craft :: *kraftiz, eel :: *ēlăz, fowl :: *fuglăz, month :: *mēnōθz, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wolf :: *wulfăz, beaver :: *bebruz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz, milk :: *melukz
 
 WestGermanic: 24
 deal :: *dailiz, dough :: *daigăz, ghost :: *gaistăz, heal :: *xailjăną, heath :: *xaiθiz, home :: *xaimăz, last :: *laistjăną, mean :: *mainjăną, rope :: *raipą, spread :: *spraidjăną, stone :: *stainăz, flesh :: *flaiskăz, sea :: *sai, whine :: *wainōjăną, lead :: *laidjăną, sheath :: *skaiθiz, withy :: *waiθiz, net :: *natją, soul :: *saiwălō, toe :: *taixwō, bone :: *bainăn, loam :: *laimōn, loath :: *laiθăz, token :: *taiknăn
 
-NWGmcULowering: 43
-board :: *burdą, crop :: *kruppăz, folk :: *fulką, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, yoke :: *juką, honey :: *xunăgą, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, spur :: *spurăn, sun :: *sunnōn, tongue :: *tungōn, widow :: *widuwōn, lung :: *lungwą, bore :: *burōjăną, sunder :: *sundrōjăną, buck :: *bukkăz, fowl :: *fuglăz, hound :: *xundăz, rust :: *rustō, thunder :: *θunrăz, wolf :: *wulfăz, wonder :: *wundrą, bottom :: *budmăz, corn :: *kurnăn, fox :: *fuxsăz, gold :: *gulθą, head :: *xaubudą, horn :: *xurnăn, trough :: *trugą, frost :: *frustą
+NWGmcULowering: 35
+board :: *burdą, crop :: *kruppăz, folk :: *fulką, hoard :: *xuzdą, lock :: *luką, lock :: *lukkăz, oven :: *ufnăz, sorrow :: *surgō, stock :: *stukkăz, stork :: *sturkăz, storm :: *sturmăz, word :: *wurdą, yoke :: *juką, wool :: *wullo, bow :: *bugōn, door :: *durą, foal :: *fulōn, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, spur :: *spurăn, widow :: *widuwōn, bore :: *burōjăną, buck :: *bukkăz, fowl :: *fuglăz, rust :: *rustō, wolf :: *wulfăz, bottom :: *budmăz, corn :: *kurnăn, fox :: *fuxsăz, gold :: *gulθą, head :: *xaubudą, horn :: *xurnăn, trough :: *trugą, frost :: *frustą
 
 NWGmcFinalLongORaising: 34
 hall :: *xallō, rind :: *rindō, rood :: *rōdō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, while :: *xwīlō, rest :: *rastō, dew :: *dawwō, adder :: *nadrō, both :: *bō, meed :: *mizdō, beech :: *bōkō, soul :: *saiwălō, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, help :: *xelpō, hind :: *xendjō, linden :: *lindō, march :: *markō, shovel :: *skūflō, herd :: *xerdō, nose :: *nasō, rust :: *rustō, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, liver :: *librō, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, salve :: *salbō
@@ -18838,7 +18838,7 @@ ARestoration: 20
 brand :: *brandas, hand :: *xanduz, span :: *spannō, swan :: *swanas, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, show :: *skawōjăną, flask :: *flaskō, haw :: *xagōn, name :: *namōn, tongs :: *tangō, lade :: *laθōjăną, make :: *makōjăną, hammer :: *xamaras, nose :: *nasō, sake :: *sakō, shame :: *skamō, nave :: *nabō
 
 FinalWeakSchwaApocope: 64
-beard :: *bardăz, bosom :: *bōsmăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, ghost :: *gaistăz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, wain :: *wagnăz, flesh :: *flaiskăz, think :: *θankăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, hair :: *xazwăz, knight :: *knixtăz, gang :: *gangăz, calf :: *kalbăz, comb :: *kambăz, thanks :: *θankăz, buck :: *bukkăz, eel :: *ēlăz, fowl :: *fuglăz, hound :: *xundăz, stem :: *stamnăz, thane :: *θegnăz, thunder :: *θunrăz, wether :: *wiθră, wolf :: *wulfăz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz
+beard :: *bardăz, bosom :: *bōsmăz, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, dough :: *daigăz, dream :: *draumăz, finger :: *fingrăz, fish :: *fiskăz, ghost :: *gaistăz, harm :: *xarmăz, hazel :: *xaslăz, hearth :: *xerθăz, hedge :: *xagjăz, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, leek :: *laukăz, lock :: *lukkăz, malt :: *maltăz, mast :: *mastăz, mood :: *mōdăz, nail :: *naglăz, oven :: *ufnăz, rudder :: *rōθrăz, seam :: *saumăz, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, thunder :: *θunrăz, wain :: *wagnăz, flesh :: *flaiskăz, think :: *θankăz, dill :: *deljăz, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, sieve :: *sibăz, way :: *wegăz, hair :: *xazwăz, knight :: *knixtăz, gang :: *gangăz, calf :: *kalbăz, comb :: *kambăz, thanks :: *θankăz, buck :: *bukkăz, eel :: *ēlăz, fowl :: *fuglăz, stem :: *stamnăz, thane :: *θegnăz, wether :: *wiθră, wolf :: *wulfăz, bottom :: *budmăz, fox :: *fuxsăz, loath :: *laiθăz, raven :: *xrabnăz, team :: *tauxmăz, thief :: *θeubăz, wasp :: *wabsăz, whale :: *walăz
 
 JGemination: 3
 hedge :: *xagjăz, set :: *satjăną, sit :: *setjăną
@@ -18873,7 +18873,7 @@ HighVowelApocope: 61
 belly :: *balgiz, bough :: *bōguz, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, fee :: *fexu, flood :: *flōduz, gift :: *geftiz, ground :: *grunduz, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, thirst :: *θurstuz, while :: *xwīlō, winter :: *wintruz, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, sheath :: *skaiθiz, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, withy :: *waiθiz, fire :: *fūri, flask :: *flaskō, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, hind :: *xendjō, linden :: *lindō, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, beaver :: *bebruz, liver :: *librō, lye :: *laugō, needle :: *nēθlō, salve :: *salbō
 
 HeavySyllableNasalApocope: 52
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, rope :: *raipą, sail :: *seglą, salt :: *saltą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, weather :: *wedrą, word :: *wurdą, hay :: *xawwją, shaft :: *skaftą, straw :: *strawą, year :: *jērą, yoke :: *juką, drench :: *dranką, honey :: *xunăgą, door :: *durą, gall :: *gallą, sheep :: *skēpą, fell :: *fellą, lung :: *lungwą, thatch :: *θaką, land :: *landą, meal :: *mēlą, nest :: *nistą, wonder :: *wundrą, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, blood :: *blōdą, board :: *burdą, bower :: *būrą, bread :: *braudą, deer :: *deuzą, fodder :: *fōdrą, folk :: *fulką, grass :: *grasą, hail :: *xaglą, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, rope :: *raipą, sail :: *seglą, salt :: *saltą, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, warp :: *warpą, weather :: *wedrą, wonder :: *wundrą, word :: *wurdą, hay :: *xawwją, shaft :: *skaftą, straw :: *strawą, year :: *jērą, yoke :: *juką, drench :: *dranką, honey :: *xunăgą, door :: *durą, gall :: *gallą, sheep :: *skēpą, fell :: *fellą, lung :: *lungwą, thatch :: *θaką, land :: *landą, meal :: *mēlą, nest :: *nistą, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
 
 WeakTailReduction: 106
 berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, knead :: *knedăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, give :: *gebăną, hew :: *xawwăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, spur :: *spurăn, still :: *stelljăną, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, will :: *waljăną, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, span :: *spannăną, wade :: *wadăną, hammer :: *xamaras, let :: *lētăną, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, nave :: *nabō, sing :: *singwăną, sleep :: *slēpăną, starve :: *sterbăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
@@ -18890,12 +18890,12 @@ Contraction: 1
 slay :: *slaxăną
 
 ProtoToOEWeakTail: 224
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, lock :: *luką, lust :: *lustuz, mean :: *mainjăną, need :: *naudiz, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, dew :: *dawwō, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, cud :: *kwiθuz, land :: *landą, span :: *spannăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, wonder :: *wundrą, spindle :: *spennilō, beaver :: *bebruz, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, liver :: *librō, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, salve :: *salbō, sing :: *singwăną, sleep :: *slēpăną, starve :: *sterbăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, fee :: *fexu, fight :: *fextăną, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heal :: *xailjăną, heath :: *xaiθiz, hoard :: *xuzdą, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, lock :: *luką, lust :: *lustuz, mean :: *mainjăną, need :: *naudiz, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, rope :: *raipą, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, sit :: *setjăną, slay :: *slaxăną, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, tread :: *tredăną, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, dew :: *dawwō, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, handle :: *xandlōjăną, line :: *līnăn, nettle :: *natilōn, sheep :: *skēpą, shoulder :: *skuldrō, spur :: *spurăn, still :: *stelljăną, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, might :: *maxtiz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, steal :: *stelăną, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, cud :: *kwiθuz, land :: *landą, span :: *spannăną, wade :: *wadăną, shovel :: *skūflō, craft :: *kraftiz, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, spindle :: *spennilō, beaver :: *bebruz, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, liver :: *librō, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, salve :: *salbō, sing :: *singwăną, sleep :: *slēpăną, starve :: *sterbăną, swine :: *swīnăn, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
 
 ProtoToOEWeightMarkers: 0
 
 ProtoToOEApocope: 113
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, gift :: *geftiz, grass :: *grasą, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, winter :: *wintruz, word :: *wurdą, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, hay :: *xawwją, shaft :: *skaftą, sheath :: *skaiθiz, straw :: *strawą, year :: *jērą, yoke :: *juką, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, honey :: *xunăgą, withy :: *waiθiz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, sheep :: *skēpą, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, land :: *landą, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, meal :: *mēlą, nest :: *nistą, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, wonder :: *wundrą, beaver :: *bebruz, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, liver :: *librō, lye :: *laugō, needle :: *nēθlō, salve :: *salbō, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, belly :: *balgiz, blood :: *blōdą, board :: *burdą, bough :: *bōguz, bower :: *būrą, bread :: *braudą, bride :: *brūdiz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, fee :: *fexu, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, gift :: *geftiz, grass :: *grasą, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, heath :: *xaiθiz, hoard :: *xuzdą, knee :: *knewą, leather :: *leθrą, lock :: *luką, lust :: *lustuz, need :: *naudiz, rind :: *rindō, rood :: *rōdō, rope :: *raipą, sail :: *seglą, salt :: *saltą, shower :: *skūrō, sorrow :: *surgō, span :: *spannō, string :: *strangiz, stud :: *stōdą, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, fist :: *funxwstiz, rest :: *rastō, guest :: *gastiz, hay :: *xawwją, shaft :: *skaftą, sheath :: *skaiθiz, straw :: *strawą, year :: *jērą, yoke :: *juką, adder :: *nadrō, meed :: *mizdō, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, honey :: *xunăgą, withy :: *waiθiz, door :: *durą, fire :: *fūri, flask :: *flaskō, gall :: *gallą, sheep :: *skēpą, shoulder :: *skuldrō, toe :: *taixwō, tongs :: *tangō, field :: *felθuz, harvest :: *xarbistuz, help :: *xelpō, might :: *maxtiz, reek :: *raukiz, wight :: *wextiz, wold :: *walθuz, fell :: *fellą, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, tide :: *tīdiz, rock :: *rukkiz, thatch :: *θaką, land :: *landą, shovel :: *skūflō, craft :: *kraftiz, herd :: *xerdō, meal :: *mēlą, nest :: *nistą, rust :: *rustō, shield :: *skelduz, spoon :: *spēnuz, thorn :: *θurnuz, beaver :: *bebruz, flax :: *flaxsą, gold :: *gulθą, head :: *xaubudą, leaf :: *laubą, life :: *lībą, liver :: *librō, lye :: *laugō, needle :: *nēθlō, salve :: *salbō, timber :: *timrą, trough :: *trugą, wax :: *waxsą, wife :: *wībą, frost :: *frustą
 
 ProtoToOEWeightCleanup: 148
 berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fight :: *fextăną, freeze :: *freusăną, gripe :: *grīpăną, heal :: *xailjăną, knead :: *knedăną, last :: *laistjăną, mean :: *mainjăną, ride :: *rīdăną, run :: *rinnăną, rye :: *rugiz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, sit :: *setjăną, slay :: *slaxăną, spin :: *spinnăną, spread :: *spraidjăną, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, tread :: *tredăną, wield :: *waldăną, wring :: *wringăną, strew :: *strawjăną, whine :: *wainōjăną, sap :: *sapōn, tap :: *tappōn, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shear :: *skerăną, show :: *skawōjăną, youth :: *jugunθiz, both :: *bō, ten :: *texun, fly :: *fleugăną, honey :: *xunăgą, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, find :: *finþăną, spear :: *speru, bow :: *beugăną, bow :: *bugōn, dill :: *deljăz, foal :: *fulōn, fright :: *furxtīn, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, side :: *sīdōn, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tongue :: *tungōn, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, forlorn :: *leusăną, harvest :: *xarbistuz, help :: *xelpăną, hold :: *xaldăną, nine :: *newun, shove :: *skeubăną, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, will :: *waljăną, will :: *weljōn, hind :: *xendjō, thousand :: *θūs-undī, begin :: *biginnăną, bore :: *burōjăną, lade :: *laθōjăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, sunder :: *sundrōjăną, cud :: *kwiθuz, have :: *xabēną, man :: *marīn, sister :: *swestēr, span :: *spannăną, wade :: *wadăną, hammer :: *xamaras, let :: *lētăną, month :: *mēnōθz, mother :: *mōdēr, nose :: *nasō, read :: *rēdăną, sake :: *sakō, shame :: *skamō, spindle :: *spennilō, bone :: *bainăn, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, fold :: *falθăną, grave :: *grabăną, horn :: *xurnăn, light :: *leuxtjăną, live :: *libēną, loam :: *laimōn, nave :: *nabō, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, swine :: *swīnăn, token :: *taiknăn, town :: *tūnăn, warp :: *werpăną, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, milk :: *melukz
@@ -18903,7 +18903,7 @@ berry :: *bazjas, bind :: *bindăną, brand :: *brandas, bring :: *bringăną, b
 ProtoToOE: 0
 
 WGlide: 62
-chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, nine :: *newun, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, wonder :: *wundrą, sing :: *singwăną, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
+chew :: *kewwăną, knee :: *knewą, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, nine :: *newun, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, sing :: *singwăną, swine :: *swīnăn, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
 
 GhMarker: 17
 fee :: *fexu, fight :: *fextăną, flea :: *flauxz, fist :: *funxwstiz, ox :: *uxsōn, toe :: *taixwō, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, six :: *sexs, wight :: *wextiz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, team :: *tauxmăz, wax :: *waxsą, wax :: *waxsăną
@@ -18912,9 +18912,9 @@ GlideDeletion: 8
 chew :: *kewwăną, strew :: *strawjăną, dew :: *dawwō, hew :: *xawwăną, show :: *skawōjăną, soul :: *saiwălō, widow :: *widuwōn, nine :: *newun
 
 Epenthesis: 89
-belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flea :: *flauxz, fodder :: *fōdrą, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, rudder :: *rōθrăz, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, adder :: *nadrō, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, six :: *sexs, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, follow :: *fulgēną, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, fowl :: *fuglăz, thunder :: *θunrăz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, wonder :: *wundrą, beaver :: *bebruz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, liver :: *librō, sing :: *singwăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
+belly :: *balgiz, chew :: *kewwăną, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, flea :: *flauxz, fodder :: *fōdrą, knead :: *knedăną, knee :: *knewą, leather :: *leθrą, rudder :: *rōθrăz, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thunder :: *θunrăz, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, strew :: *strawjăną, whine :: *wainōjăną, dew :: *dawwō, four :: *fedwōrez, hay :: *xawwją, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, adder :: *nadrō, withy :: *waiθiz, soul :: *saiwălō, west :: *westănē, wool :: *wullo, cow :: *kōwz, knob :: *knuppăz, ox :: *uxsōn, shoulder :: *skuldrō, toe :: *taixwō, way :: *wegăz, widow :: *widuwōn, bier :: *barwōn, hair :: *xazwăz, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, six :: *sexs, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, lung :: *lungwą, follow :: *fulgēną, wake :: *wakēną, cud :: *kwiθuz, sister :: *swestēr, wade :: *wadăną, wash :: *waskăną, fowl :: *fuglăz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, beaver :: *bebruz, flax :: *flaxsą, fox :: *fuxsăz, light :: *leuxtjăną, liver :: *librō, sing :: *singwăną, swine :: *swīnăn, team :: *tauxmăz, timber :: *timrą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną
 
 Orthography: 358
-barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, leek :: *laukăz, lime :: *līmą, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, calf :: *kalbăz, comb :: *kambăz, follow :: *fulgēną, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, three :: *θrejez, wake :: *wakēną, ban :: *banną, cud :: *kwiθuz, have :: *xabēną, land :: *landą, man :: *marīn, sister :: *swestēr, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, eel :: *ēlăz, fowl :: *fuglăz, god :: *gud, hammer :: *xamaras, herd :: *xerdō, hound :: *xundăz, let :: *lētăną, meal :: *mēlą, month :: *mēnōθz, mother :: *mōdēr, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, thunder :: *θunrăz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, wonder :: *wundrą, spindle :: *spennilō, beaver :: *bebruz, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, fox :: *fuxsăz, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, live :: *libēną, liver :: *librō, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, raven :: *xrabnăz, salve :: *salbō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, stretch :: *strakkjăną, swine :: *swīnăn, team :: *tauxmăz, thief :: *θeubăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
+barrow :: *bergą, bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, bind :: *bindăną, blood :: *blōdą, board :: *burdą, book :: *bōkz, bosom :: *bōsmăz, bough :: *bōguz, bower :: *būrą, brand :: *brandas, bread :: *braudą, bride :: *brūdiz, bring :: *bringăną, brook :: *brūkăną, chew :: *kewwăną, climb :: *klimbăną, crop :: *kruppăz, dale :: *dalăz, day :: *dagăz, deal :: *dailiz, deed :: *dēdiz, deer :: *deuzą, dough :: *daigăz, dream :: *draumăz, drink :: *drinkăną, eat :: *etăną, fall :: *fallăną, father :: *fadēr, fee :: *fexu, fight :: *fextăną, finger :: *fingrăz, fish :: *fiskăz, flea :: *flauxz, flood :: *flōduz, fodder :: *fōdrą, folk :: *fulką, freeze :: *freusăną, furrow :: *furx, ghost :: *gaistăz, gift :: *geftiz, grass :: *grasą, gripe :: *grīpăną, ground :: *grunduz, hail :: *xaglą, hall :: *xallō, hand :: *xanduz, harm :: *xarmăz, hazel :: *xaslăz, heal :: *xailjăną, hearth :: *xerθăz, heath :: *xaiθiz, hedge :: *xagjăz, hoard :: *xuzdą, home :: *xaimăz, hood :: *xōdăz, hoof :: *xōfăz, hound :: *xundăz, knead :: *knedăną, knee :: *knewą, last :: *laistjăną, leather :: *leθrą, leek :: *laukăz, lime :: *līmą, lock :: *luką, lock :: *lukkăz, louse :: *lūsz, lust :: *lustuz, malt :: *maltăz, mast :: *mastăz, mean :: *mainjăną, mood :: *mōdăz, nail :: *naglăz, need :: *naudiz, oven :: *ufnăz, rain :: *regną, ride :: *rīdăną, rind :: *rindō, rood :: *rōdō, room :: *rūmą, rope :: *raipą, rudder :: *rōθrăz, run :: *rinnăną, rye :: *rugiz, sail :: *seglą, salt :: *saltą, seam :: *saumăz, send :: *sandjăną, set :: *satjăną, shine :: *skīnăną, shower :: *skūrō, singe :: *sangjăną, sit :: *setjăną, slay :: *slaxăną, slime :: *slīmą, sorrow :: *surgō, span :: *spannō, spin :: *spinnăną, spread :: *spraidjăną, stock :: *stukkăz, stone :: *stainăz, stool :: *stōlăz, stork :: *sturkăz, storm :: *sturmăz, stream :: *straumăz, string :: *strangiz, stud :: *stōdą, sup :: *sūpăną, swan :: *swanas, swim :: *swimmăną, sword :: *swerdą, thing :: *þingą, thirst :: *θurstuz, thrash :: *θreskăną, thunder :: *θunrăz, tread :: *tredăną, wain :: *wagnăz, warp :: *warpą, weather :: *wedrą, while :: *xwīlō, wield :: *waldăną, winter :: *wintruz, wonder :: *wundrą, word :: *wurdą, wring :: *wringăną, fist :: *funxwstiz, flesh :: *flaiskăz, sea :: *sai, strew :: *strawjăną, whine :: *wainōjăną, rest :: *rastō, sap :: *sapōn, tap :: *tappōn, breast :: *brustz, dew :: *dawwō, four :: *fedwōrez, friend :: *frijōndz, give :: *gebăną, guest :: *gastiz, hay :: *xawwją, hew :: *xawwăną, lead :: *laidjăną, seven :: *sebun, shaft :: *skaftą, shear :: *skerăną, sheath :: *skaiθiz, show :: *skawōjăną, straw :: *strawą, weasel :: *weslon, year :: *jērą, yoke :: *juką, youth :: *jugunθiz, adder :: *nadrō, both :: *bō, meed :: *mizdō, ten :: *texun, beech :: *bōkō, birth :: *burdiz, drench :: *dranką, fly :: *fleugăną, honey :: *xunăgą, think :: *θankăz, withy :: *waiθiz, lid :: *liθuz, net :: *natją, soul :: *saiwălō, staff :: *stabiz, west :: *westănē, wool :: *wullo, do :: *dōną, find :: *finþăną, spear :: *speru, bow :: *baugjăną, bow :: *beugăną, bow :: *bugōn, cow :: *kōwz, dill :: *deljăz, door :: *durą, fire :: *fūri, flask :: *flaskō, foal :: *fulōn, fright :: *furxtīn, gall :: *gallą, handle :: *xandlōjăną, haw :: *xagōn, heart :: *xertōn, helm :: *xelmăz, knob :: *knuppăz, lap :: *labbăz, line :: *līnăn, list :: *līstōn, name :: *namōn, navel :: *nablōn, nettle :: *natilōn, nightmare :: *marōn, ox :: *uxsōn, sheep :: *skēpą, shoulder :: *skuldrō, side :: *sīdōn, sieve :: *sibăz, spur :: *spurăn, still :: *stelljăną, sun :: *sunnōn, tick :: *tikkōn, toe :: *taixwō, tongs :: *tangō, tongue :: *tungōn, way :: *wegăz, whore :: *xōrōn, widow :: *widuwōn, bier :: *barwōn, field :: *felθuz, forlorn :: *leusăną, hair :: *xazwăz, harvest :: *xarbistuz, help :: *xelpăną, help :: *xelpō, hold :: *xaldăną, knight :: *knixtăz, might :: *maxtiz, night :: *naxtz, nine :: *newun, reek :: *raukiz, shove :: *skeubăną, six :: *sexs, spar :: *sparrōn, steal :: *stelăną, swallow :: *swalgwōn, swell :: *swellăną, wight :: *wextiz, will :: *waljăną, will :: *weljōn, wold :: *walθuz, fell :: *fellą, gang :: *gangăz, hind :: *xendjō, linden :: *lindō, lung :: *lungwą, march :: *markō, one :: *end, thousand :: *θūs-undī, tide :: *tīdiz, bake :: *bakăną, begin :: *biginnăną, bore :: *burōjăną, break :: *brekăną, calf :: *kalbăz, comb :: *kambăz, follow :: *fulgēną, goose :: *gansz, lade :: *laθōjăną, laugh :: *lakăną, learn :: *liznōjăną, lick :: *likkōjăną, make :: *makōjăną, rock :: *rukkiz, sunder :: *sundrōjăną, thatch :: *θaką, three :: *θrejez, wake :: *wakēną, ban :: *banną, cud :: *kwiθuz, have :: *xabēną, land :: *landą, man :: *marīn, sister :: *swestēr, span :: *spannăną, thanks :: *θankăz, wade :: *wadăną, wash :: *waskăną, shovel :: *skūflō, buck :: *bukkăz, craft :: *kraftiz, earth :: *erθo, eel :: *ēlăz, fowl :: *fuglăz, god :: *gud, hammer :: *xamaras, herd :: *xerdō, let :: *lētăną, meal :: *mēlą, month :: *mēnōθz, mother :: *mōdēr, nest :: *nistą, nose :: *nasō, read :: *rēdăną, rust :: *rustō, sake :: *sakō, shame :: *skamō, shield :: *skelduz, spoon :: *spēnuz, stem :: *stamnăz, thane :: *θegnăz, thorn :: *θurnuz, wart :: *warto, wether :: *wiθră, wolf :: *wulfăz, spindle :: *spennilō, beaver :: *bebruz, believe :: *laubjăną, bone :: *bainăn, bottom :: *budmăz, breeches :: *brekăną, corn :: *kurnăn, drive :: *drībăną, fare :: *farăną, fast :: *fastēną, fern :: *farnăn, flax :: *flaxsą, fold :: *falθăną, fox :: *fuxsăz, gold :: *gulθą, grave :: *grabăną, head :: *xaubudą, horn :: *xurnăn, leaf :: *laubą, life :: *lībą, light :: *leuxtjăną, live :: *libēną, liver :: *librō, loam :: *laimōn, loath :: *laiθăz, lye :: *laugō, nave :: *nabō, needle :: *nēθlō, raven :: *xrabnăz, salve :: *salbō, seek :: *sōkjăną, sing :: *singwăną, sleep :: *slēpăną, spare :: *sparēną, starve :: *sterbăną, stretch :: *strakkjăną, swine :: *swīnăn, team :: *tauxmăz, thief :: *θeubăz, timber :: *timrą, token :: *taiknăn, town :: *tūnăn, trough :: *trugą, warp :: *werpăną, wasp :: *wabsăz, water :: *watną, wax :: *waxsą, wax :: *waxsăną, weapon :: *wēpnăn, weave :: *webăną, whale :: *walăz, wife :: *wībą, wind :: *windăną, yarn :: *garnăn, burst :: *brestăną, flee :: *fleuxăną, frost :: *frustą, milk :: *melukz
 
 Surface: 0
