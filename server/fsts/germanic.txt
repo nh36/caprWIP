@@ -1138,7 +1138,7 @@ define EnglishBreakingXContextWeakTail [{*x} EnglishWeakTailVowelStar];
 # in OE before *rj"; cf. *harjaz > here, *arjana > erian — no diphthongization).
 define EnglishBreakingRContext [{*r} [EnglishStarConsonant - {*j}]];
 define EnglishBreakingLContext [{*l} EnglishStarConsonant];
-define EnglishBreakingLContextE [{*l} ({*x} | {*k} | {*g})];
+define EnglishBreakingLContextE [{*l} [{*x} | {*k} | {*g}]];
 define EnglishBreakingWContext [{*w}];
 
 define OEBreakingA [
