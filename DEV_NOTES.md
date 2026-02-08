@@ -1,3 +1,54 @@
+## PWGmc *j-related Sound Changes — NEEDS EXPERT REVIEW
+
+**Date:** 2026-02-13
+
+### Overview
+Two PWGmc sound changes involve the loss or transformation of *j. Both are
+historically legitimate but raise questions about how they should be formalized
+in the FST. These need discussion with experts.
+
+### 1. PWGmcSyllabicJ: *ja/*ją → *i (after light syllable, word-finally)
+
+**Source:** R/T vol.2 §3.1.2, p. 46
+**Rule:** "Upon the loss of unstressed *a and *ą, preceding postconsonantal *j
+and *w became syllabic *i and *u respectively"
+**Conditioning:** After a light syllable (short vowel + single consonant), word-finally.
+**Examples in our data:**
+- *bazją → *bazi → berġes ('berry', gen.sg.)
+- *harjaz → *hari → here ('army')
+- *natją → *nati → net ('net')
+**Implementation:** `{*j} {*a} -> {*i}` / `EnglishStarShortVowel EnglishStarConsonant _ .#.`
+**Status:** Implemented and working.
+
+### 2. PWGmcIjContraction: *ijō → *iu (before consonant)
+
+**Source:** R/T vol.2 §3.1.5, p. 62 (Luick 1914-40: 118)
+**Rule:** "A roughly similar change of *ijo to *iu appears to have occurred in
+the word 'friend' in PWGmc"
+**R/T caveat:** "the uniqueness of the sequence *ijo (with stressed *i) makes it
+inadvisable to attempt any generalizations based on the history of this word"
+**Examples:**
+- PGmc *frijōnd- → PWGmc *friund → OE frēond ('friend')
+  - The *iu is later leveled to *ēo by OEDiphthongLeveling
+- R/T also mentions a parallel *Vwu → *Vu change (§3.1.5):
+  - *knewu → *kneu → OE cnēo ('knee')
+  - *fawu → *fau → OE fēa ('few')
+**Implementation:** `{*i} {*j} {*ō} -> {*iu}` (unconditional — only one word has this sequence)
+**Status:** Implemented; only affects *frijōndz in current data.
+
+### Relationship between the two
+R/T explicitly says the two "cannot plausibly be reduced to a single phonological
+rule." SyllabicJ involves *j becoming syllabic (vocalic) after apocope exposes it
+word-finally; IjContraction involves *j deletion with compensatory rounding of *i
+to *iu before *ō. Different mechanisms, different environments, different outcomes.
+
+### Questions for experts
+1. Should *ijō → *iu be treated as a regular sound change or a lexical irregularity?
+2. Is the parallel *Vwu → *Vu change (knee, few) the same mechanism?
+3. Are there other PGmc *ijV sequences we should look for in the lexicon?
+
+---
+
 ## CURRENT FOCUS (as of 2026-02-07)
 
 ## Proto-West Germanic Stage Implementation (2026-02-07) - IN PROGRESS

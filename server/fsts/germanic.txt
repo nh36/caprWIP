@@ -1100,6 +1100,18 @@ define PWGmcDenasalization [
     {*ų} -> {*u} || _ .#.
 ];
 
+# PWGmc: *ijō contraction (R/T §3.1.5, p. 62; Luick 1914-40: 118).
+# R/T: "A roughly similar change of *ijo to *iu appears to have occurred in
+# the word 'friend' in PWGmc"
+# R/T CAVEAT: "the uniqueness of the sequence *ijo (with stressed *i) makes it
+# inadvisable to attempt any generalizations based on the history of this word"
+# Example: PGmc *frijōnd- → PWGmc *friund → OE frēond
+# Only *frijōndz has this sequence in our dataset. See DEV_NOTES.md for
+# relationship to PWGmcSyllabicJ and expert review flags.
+define PWGmcIjContraction [
+    {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant
+];
+
 # PWGmc: Syllabic *j after loss of final *-a (R/T §3.1.2, p. 46).
 # R/T: "Upon the loss of unstressed *a and *ą, preceding postconsonantal *j and *w
 # became syllabic *i and *u respectively"
@@ -1111,12 +1123,13 @@ define PWGmcSyllabicJ [
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1.
-# Order: monophthongization, then syllabic j.
+# Order: monophthongization, then ij-contraction, then syllabic j.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
 define PWGmcChanges [
     PWGmcAiMonophthongization
+    .o. PWGmcIjContraction
     .o. PWGmcSyllabicJ
 ];
 
