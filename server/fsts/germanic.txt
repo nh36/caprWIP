@@ -137,7 +137,7 @@ define pgrmNasalVowel [
 ];
 
 define pgrmLongVowel [
-    ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū}
+    ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū} | ô:{*ô}
 ];
 
 define pgrmDiphthong [
@@ -320,6 +320,7 @@ define pgrmWeakTailVowel [
     ē:{*ē} r:{*r} |
     ī:{*ī} n:{*n} |
     ō:{*ō} |
+    ô:{*ô} |
     ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
     ō:{*ō} n:{*n} |
     ō:{*ō} n:{*n} d:{*d} z:{*z} |
@@ -707,7 +708,8 @@ define EnglishStarAlphabet [
     EnglishStarConsonant |
     EnglishPalatalConsonant |
     {*Kn} | {*Gn} |
-    {*ǭ}
+    {*ǭ} |
+    {*ô}
 ];
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
@@ -1257,13 +1259,10 @@ define NWGmcULowering [
     {*u} -> {*o} || _ [EnglishStarConsonant - EnglishStarNasal] EnglishStarConsonant* EnglishStarNonHighVowel
 ];
 
-# N-stem final -n loss with nasalization preservation (R/T vol.2 §3.1.4, §3.3.1).
-# PGmc *-ōn (n-stem nom.sg.) → *-ǭ (nasalized ō) by loss of final -n.
-# The nasalized *ǭ does NOT undergo NWGmcFinalLongORaising (*ō → *u),
-# which targets only non-nasalized *ō. Instead *ǭ follows the trimoric path:
-#   *-ǭ → shortened to *-a → OE -a
-# R/T vol.2 p.59: "trimoric *ō became PWGmc *ō" (stayed long, not raised)
-# R/T vol.2 p.300: "masc. n-stem nom.sg. -a < *-ą < PWGmc *-ō < PGmc *-ō"
+# N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
+# PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
+# The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
+# Masc. n-stem nom.sg. uses trimoric *-ô (no -n), which is NOT affected.
 define NWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];
@@ -1271,8 +1270,7 @@ define NWGmcNStemNLoss [
 # R/T vol.2 p.267: "word-final bimoric non-nasalized long *-ō became
 # short *-u in unstressed syllables in PNWGmc."
 # Examples: PGmc *gebō > PNWGmc *gebu, PGmc *feþrō > PNWGmc *feþru.
-# The resulting *-u then undergoes high vowel apocope after heavy syllables.
-# This does NOT apply to nasalized *ǭ (from n-stem -ōn), which stays long.
+# This does NOT apply to: nasalized *ǭ (fem. n-stem), trimoric *ô (masc. n-stem).
 define NWGmcFinalLongORaising [
     {*ō} -> {*u} || _ .#.
 ];
@@ -1307,9 +1305,13 @@ define OEUnstressedLongVowelShortening [
     {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
     {*ǣ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    # Nasalized *ǭ (from n-stem *-ōn) shortens to *a (→ OE -a).
-    # R/T vol.2 p.300: masc. n-stem nom.sg. -a < *-ą < PWGmc *-ō
-    {*ǭ} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    # Nasalized *ǭ (from fem. n-stem *-ōn): bimoric → *æ → OE -e
+    # R/T vol.2 §3.1.4: bimoric *-ō → PWGmc *-a → fronted to *-e.
+    # The *-ōn → *-ǭ (nasalized) was bimoric (unlike trimoric masc. *-ô).
+    {*ǭ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    # Trimoric *ô (masc. n-stem nom.sg.): trimoric → *a → OE -a
+    # R/T vol.2 §3.1.4: trimoric *-ō → PWGmc *-ō → *-a.
+    {*ô} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 
 # Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
@@ -1854,8 +1856,12 @@ define DutchOrthography [
     x -> {h}
 ];
 
+# Merge trimoric *ô with *ō (distinction only relevant for OE pipeline).
+define DutchTrimoricMerge [{*ô} -> {*ō}];
+
 ### 3. Composition
 define DutchReflexes ProtoWord
+    .o. DutchTrimoricMerge
     .o. DutchConsonantRules
     .o. DutchSibilantRules
     .o. DutchVowelRules
@@ -2046,7 +2052,11 @@ define GermanLengthOrthography [
     ū -> u "ː"
 ];
 
-define GermanRules GermanEwChain
+# Merge trimoric *ô with *ō (distinction only relevant for OE pipeline).
+define GermanTrimoricMerge [{*ô} -> {*ō}];
+
+define GermanRules GermanTrimoricMerge
+    .o. GermanEwChain
     .o. GermanLongVowelRules
     .o. GermanAuMonophth
     .o. GermanFinalNasalLoss
