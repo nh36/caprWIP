@@ -17,7 +17,9 @@ Our NWGmcULowering rule lowers stressed *u → *o before non-high vowels in a fo
 
 ### Summary of the scholarly literature
 
-**Luick (§78, Anm. 3)** argues for paradigmatic leveling: doublet forms arose because paradigms had both u-preserving (high-vowel suffix) and u-lowering (non-high suffix) forms; near labials and gutturals, the u-forms were preferred. He explicitly rejects Bülbring's proposed sound change of *o → *u between labials (EB §116), citing counterexamples: *wolcen, folc, folġian, folde, folm, bolla, bolt, bolster, molde, molcen, smolt*.
+**Bülbring (EB §116, pp.45-46)** provides the original hypothesis that both Luick and R/T engage with. He observes that OE u appears instead of expected o (from WGmc a-Umlaut, his §81d) "namentlich zwischen Labial und langem oder gedecktem l" — i.e. between a labial and ll or l+consonant: *full* 'full', *wulle* 'wool', *wulf* 'wolf'; also *fugol* 'bird', *bucca* 'buck', *múrnan* 'mourn'. He concedes that "meist steht jedoch der Hauptregel gemäß o" — usually the regular rule gives o — citing *wolcen, folgian, bolt, folc* as counterexamples. In his Anmerkung, Bülbring notes the agreement with OFris. and OS (afries. *ful, wulla, wulf*; as. *full, wulla, wulf, fugal*), which shows the phenomenon is "sehr alt" (very old). He remains agnostic on mechanism: "Ob wir darin Erhaltung des wg. u oder Wiederaufhebung der durch a-Umlaut herbeigeführten Veränderung erblicken müssen, läßt sich nicht mit Sicherheit entscheiden" — whether this reflects preservation of the original WGmc *u or reversal of a-Umlaut cannot be determined with certainty. He speculates that *u was lowered only partway ("etwa zu [ou] oder zu engem [o]") and then, under influence of its labial/velar environment, reverted to u, while in other words it continued to open [ɔ]. This "incomplete lowering + reversion" model is phonetically interesting but not formalizable as a categorical rule, since the same environments also show regular lowering.
+
+**Luick (§78, Anm. 3)** engages directly with Bülbring's proposal and rejects it. He argues for paradigmatic leveling instead: doublet forms arose because paradigms had both u-preserving (high-vowel suffix) and u-lowering (non-high suffix) forms; near labials and gutturals, the u-forms were preferred. He explicitly cites the counterexamples that make Bülbring's phonological conditioning untenable: *wolcen, folc, folġian, folde, folm, bolla, bolt, bolster, molde, molcen, smolt* — all have labial or velar environments but regular lowering.
 
 **R/T (§2.3.1, pp.32-33 / our OCR pp.47-48)** agree these are genuine exceptions but reach a different conclusion about paradigmatic leveling. They find it "implausible" for a-stem nouns, arguing that the only case-forms with high-vowel suffixes are functionally marginal: inst.sg. *-u, dat.pl. *-umaz, inst.pl. *-umiz. They conclude: "We do not really know why *u failed to lower in these forms."
 
@@ -71,12 +73,21 @@ Luick (Anm. 1) and R/T both note that OE, OFris., and OS share the u-preserving 
 
 **Decision:** Accept the mismatches. The FST correctly models the regular NWGmc u-lowering as a phonological rule. The u-preserving forms are genuine lexical exceptions for which no phonological conditioning has been established. Annotate each exception in the TSV citing Luick §78 and R/T §2.3.1.
 
-**For future expert discussion:** The most promising angle might be Luick's observation about consonantal environment (near labials/gutturals + l). While neither Luick nor R/T accept this as a categorical rule, the statistical clustering might reflect a phonetic tendency — perhaps the acoustic similarity between labial/velar environments and the labial component of [u] made the lowered [o] variant phonetically less stable in those contexts. This would be a gradient/probabilistic effect rather than a Neogrammarian rule, and is therefore fundamentally not modelable in a deterministic FST.
+**For future expert discussion:** The most promising angle might be Luick's observation about consonantal environment (near labials/gutturals + l). While neither Luick nor R/T accept this as a categorical rule, the statistical clustering might reflect a phonetic tendency — perhaps the acoustic similarity between labial/velar environments and the labial component of [u] made the lowered [o] variant phonetically less stable in those contexts. This would be a gradient/probabilistic effect rather than a Neogrammarian rule, and is therefore fundamentally not modelable in a deterministic FST. Bülbring's "incomplete lowering + reversion" model (§116 Anm.) is the most explicit formulation of this intuition, but the counterexamples (folc, bolla, etc.) preclude formalizing it.
+
+### Related: effects of initial labials on vowels (Bülbring §§260-274)
+
+Note that Bülbring's "Dreizehntes Kapitel" (§§260-274) discusses a *separate* set of phenomena — the effects of initial labials (especially w) on following vowels and diphthongs. These include:
+- **w + iu → wu** (§264): *widu → wudu 'wood' (via u/a-Umlaut *wiudu → wudu under w-influence)
+- **weo → wo → wu** (§§265-268): late WS weorpan → wurpan, sweord → swurd
+- **w + i → y** (§261): ni + witan → nytan (contraction contexts)
+
+These are chronologically later OE-internal changes, distinct from the NWGmc u-lowering exceptions discussed above. They may be relevant for future modeling of late WS orthographic variants.
 
 ### References
 
 - Luick, K. (1914-40). *Historische Grammatik der englischen Sprache.* Leipzig. §78 (pp.147-148), esp. Anm. 1-3.
-- Bülbring, K.D. *Altenglisches Elementarbuch* (cited by Luick as EB §116 — rejected).
+- Bülbring, K.D. (1902). *Altenglisches Elementarbuch.* I. Teil: Lautlehre. Heidelberg. §81d (a-Umlaut of *u → *o, p.32), §116 (u statt o near labials, pp.45-46).
 - R/T vol.2 §2.3.1 pp.27-33 (our OCR pp.42-48).
 - Kroonen (2013): *wulfa-* p.598, *bukka(n)-* p.98, *fugla-* (see under *fugla-*).
 
