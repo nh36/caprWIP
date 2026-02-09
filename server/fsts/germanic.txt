@@ -15,7 +15,6 @@ define ProtoVowel [
     ɑ|ɔ|ə|ɛ|ɜ|ʉ|ʊ|ø|œ|y
 ];
 define ProtoConsonant [b|d|f|g|h|j|k|l|m|n|p|r|s|t|v|w|x|z|ð|ŋ|ɡ|ɣ|ɪ|ʃ|ʋ|ʌ|ʤ|ʧ];
-define ProtoSymbol [ProtoVowel|ProtoConsonant];
 
 # Proto-Germanic templates loosely based on the attested lexicon. This keeps the
 # search space finite and filters out wildly ill-formed candidates when inverting
@@ -63,14 +62,12 @@ define ProtoWeakTail [
     ProtoWeakOralSyllable ProtoWeakNasalSyllable
 ];
 
-define ProtoSyllable ProtoStrongSyllable;
 define ProtoWord ProtoStrongSyllable ProtoWeakTail;
 
 define Cons ProtoConsonant;
 define Vowel ProtoVowel;
 define FrontVowel [i|ī|e|ē|æ|ɛ|ø|œ|y|ʉ];
 define BackVowel [a|ā|ɑ|o|ō|u|ū|ɔ|ʊ];
-define Sonorant [j|r|l|m|n|ŋ];
 
 ##############################################
 ## Pending two-level Proto-Germanic profile  ##
@@ -148,8 +145,6 @@ define pgrmLongVowel [
 define pgrmDiphthong [
     {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu}
 ];
-
-define pgrmNucleus [pgrmShortVowel | pgrmLongVowel | pgrmDiphthong];
 
 define pgrmCodaSimple [
     m:{*m} | n:{*n} | ŋ:{*ŋ} | s:{*s} | z:{*z} | r:{*r} | l:{*l} |
@@ -289,9 +284,6 @@ define pgrmWeakNasalNucleus [ą:{*ą} | ę:{*ę}];
 
 define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l} | z:{*z}];
 
-define pgrmWeakOralSyllable pgrmWeakOnset pgrmWeakOralNucleus pgrmWeakCoda;
-define pgrmWeakNasalSyllable pgrmWeakOnset pgrmWeakNasalNucleus 0;
-
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
     ă:{*ă} |
@@ -358,11 +350,6 @@ define pgrmWord [
 ##############################################
 ## Proto-Germanic starred inventories        ##
 ##############################################
-
-# West Germanic ew development (shared inventory; currently unused).
-define PGmcExtraVowel [
-    {*æ} | {*ɑ} | {*ɔ} | {*ɔ̆} | {*ə} | {*ɛ} | {*ɜ} | {*ʉ} | {*ʊ} | {*ø} | {*œ}
-];
 
 define PGmcStarVowel [
     {*a} |
@@ -474,24 +461,12 @@ define PGmcStarFrontTrigger [
     {*iu}
 ];
 
-# Backward-compatible aliases for existing German-star naming.
-define GermanStarVowel PGmcStarVowel;
-define GermanStarDiphthong PGmcStarDiphthong;
-define GermanStarVocalic PGmcStarVocalic;
-define GermanStarConsonant PGmcStarConsonant;
-define GermanStarFrontVowel PGmcStarFrontVowel;
-define GermanStarBackVowel PGmcStarBackVowel;
-define GermanStarFrontTrigger PGmcStarFrontTrigger;
-
 define RemoveStars {*} -> 0;
 define GermanLexOnset pgrmOnsetCore.r;
 define GermanLexCoda pgrmCoda.r;
-define GermanLexConsonant [GermanLexOnset | GermanLexCoda];
 define GermanLexShortVowel pgrmShortVowel.r;
 define GermanLexLongVowel pgrmLongVowel.r;
 define GermanLexNasalVowel pgrmNasalVowel.r;
-define GermanLexVowel [GermanLexShortVowel | GermanLexLongVowel | GermanLexNasalVowel];
-define GermanLexDiphthong pgrmDiphthong.r;
 define GermanProtoInput pgrmWord;
 
 ##############################################
@@ -625,6 +600,7 @@ define OldEnglishOrthography [
     {*ʋ} -> w,
     {*x} -> h,
     {*v} -> f,
+    {*j} -> ġ,
     {θ} -> þ,
     {ð} -> ð,
     {ʃ} -> {sċ},
@@ -674,14 +650,10 @@ define OldEnglishRemoveStars [
     {*y} -> y,
     {*b} -> b,
     {*β} -> f,
-    {*c} -> c,
     {*d} -> d,
     {*f} -> f,
     {*g} -> g,
     {*h} -> h,
-    {*j} -> ġ,
-    {*ċ} -> ċ,
-    {*ġ} -> ġ,
     {*k} -> c,
     {*l} -> l,
     {*m} -> m,
@@ -690,14 +662,9 @@ define OldEnglishRemoveStars [
     {*r} -> r,
     {*s} -> s,
     {*t} -> t,
-    {*v} -> v,
     {*w} -> w,
-    {*x} -> x,
     {XS} -> x,
     {*z} -> z,
-    {*ð} -> ð,
-    {*θ} -> þ,
-    {*þ} -> þ,
     {*ŋ} -> n,
     {*ɡ} -> g
 ];
@@ -711,12 +678,8 @@ define EnglishPlainVocalic [
     EnglishSurfaceVowel |
     {e} | {o} | {u} | {oː}
 ];
-define EnglishPlainLiquid [{l} | {r}];
-define EnglishPlainNasal [{m} | {n}];
 
 # Brace-aware helper inventories for the sandbox.
-define EnglishStarVowel PGmcStarVowel;
-
 define EnglishStarFrontVowel PGmcStarFrontVowel;
 
 define EnglishStarBackVowel PGmcStarBackVowel;
@@ -743,8 +706,6 @@ define EnglishStarLabial [{*b} | {*β} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
 define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
 
-define EnglishStarConsonantSeq [EnglishStarConsonant]*;
-
 define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
 
 define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
@@ -752,8 +713,6 @@ define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
 
 define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
-
-define EnglishJGeminationConsonant [EnglishStarConsonant - {*r} - {*j}];
 
 define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
 
@@ -769,7 +728,6 @@ define EnglishStarAlphabet [
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
-define EnglishWeakTailVowelStart [{*ă} | {*a} | {*e} | {*i}];
 define EnglishWeakTailVowelStar [
     {*ă} |
     {*i} |
@@ -816,13 +774,6 @@ define EnglishInitialKnMarkers [
     {*k} {*n} -> {*Kn} || .#. _,
     {*g} {*n} -> {*Gn} || .#. _
 ];
-
-define OEPalatalisation (
-    [{*s} {*k} -> {*s} {*ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*k} -> {*ʃ} || _ EnglishStarFrontVowel]
-    .o. [{*g} -> {*ʒ} || _ EnglishStarFrontVowel]
-);
-# Legacy: retained for reference but not used in the current English/OE pipeline.
 
 define OEJClusterCoalescence (
     [{*b} {*j} -> {*v}]
@@ -884,8 +835,6 @@ define EnglishGhDeletion [
 ];
 
 define EnglishRhoticWeakTail [{*ă} | {*ą} | {*ɔ̆}];
-
-define EnglishRhoticDental [{*d} | {*ð} | {*θ}];
 
 define EnglishRhoticBreaking (
     # {*barwōn} (bier): smooth the {*rʋ} cluster into an ME /ɪə/ nucleus so later stages can drop /r/ normally.
@@ -1362,10 +1311,6 @@ define OEWeakTailNasalLoss [
     {*m} {*ą} -> {*m} || _ .#.
 ];
 
-define OEWeakTailUnReduction [
-    {*u} {*n} -> {*o} {*n} || _ .#.
-];
-
 # R/T vol.2 §6.8.3: unstressed long vowels were shortened after syncope/apocope.
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
 # Use [EnglishStarConsonant | EnglishPalatalConsonant] because by this point
@@ -1556,15 +1501,6 @@ define OEVelarFricativePalatalization [
     {*ɣ} -> {*j} || _ {*j}
 ]
     .o. EnglishStarAlphabet*;
-
-define OEHighVowelApocopeStandalone [
-    {*i} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
-    {*u} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonant _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarShortVowel EnglishStarConsonant _ .#.
-];
 
 # Pragmatic approach: encode heavy-syllable apocope directly rather than using
 # a two-step mark-then-delete system (which misbehaves under composition due to
@@ -2100,14 +2036,6 @@ define GermanThemeApocope [
     {*i} -> 0 || ({*x} | {*ç}) _ .#.
 ];
 
-define GermanAiShift [
-    {*ai} -> {*ei} || _ {*h} {*t}
-];
-
-define GermanHtShift [
-    {*h} {*t} -> {*x} {*t}
-];
-
 ### Vowel and syllable adjustments
 define GermanVowelAdjustments [
     {*u} -> {*ɔ} || _ ({*k} | K),
@@ -2163,8 +2091,6 @@ define GermanAfterFinalDevoice GermanAfterVowelAdj .o. GermanFinalDevoicing;
 define GermanAfterCleanup GermanAfterFinalDevoice .o. GermanCleanup;
 define GermanAfterOrthography GermanAfterCleanup .o. GermanOrthography;
 define GermanAfterStarDrop GermanAfterOrthography .o. GermanRemoveStars;
-define GermanAfterShift GermanAfterPalatal;
-define GermanPreSurface GermanAfterStarDrop;
 
 ### 3. Composition
 define GermanReflexes GermanProtoInput .o. GermanRules;
