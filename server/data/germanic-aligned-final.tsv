@@ -1214,7 +1214,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German				thane	*θegnăz	362
 1198	d ɑ ŋ k	*θankăz	d ɑ ŋ k ( - - )	dɑŋk	dank	328	Dutch	!			thanks	*θankăz	277
 1197	θ æ ŋ k s	*θankăz	θ æ ŋ k ( - s )	θæŋks	thanks	328	English	!			thanks	*θankăz	277
-2244	þ a n c a s	*θankăz	θ æ ŋ k ( - s )	θæŋks	þancas	328	Old_English	! | TODO: replace with attested Old English form | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thanks	*θankăz	277
+2244	þ a n c	*θankăz	θ æ ŋ k ( - s )	θæŋks	þanc	328	Old_English	TSV: þancas (nom.pl.) → þanc (nom.sg.); *θankăz is masc. a-stem nom.sg.			thanks	*θankăz	277
 1196	d a ŋ k	*θankăz	d a ŋ k ( - - )	daŋk	Dank	328	German				thanks	*θankăz	277
 952	d ɑ k	*θaką	d ɑ k ( - - )	dɑk	dak	261	Dutch				thatch	*θaką	278
 951	θ æ ʧ	*θaką	θ æ ʧ ( - - )	θæʧ	thatch	261	English				thatch	*θaką	278
@@ -1228,10 +1228,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 714	θ ɪ ŋ	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	thing	196	English				thing	*þingą	280
 2247	þ i n g	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	þing	196	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thing	*þingą	280
 713	d ɪ ŋ	*þingą	d ɪ ŋ - ( - - )	dɪŋ	Ding	196	German				thing	*þingą	280
-355	d ɛ ŋ k ə	*θankăz	d ɛ ŋ k ( ə - )	dɛŋkə	denken	98	Dutch	!			think	*θankăz	281
-354	θ ɪ ŋ k	*θankăz	θ ɪ ŋ k ( - - )	θɪŋk	think	98	English	!			think	*θankăz	281
-2248	þ e n ċ a n	*θankăz	θ ɪ ŋ k ( - - )	θɪŋk	þenċan	98	Old_English	! | TODO: replace with attested Old English form | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			think	*θankăz	281
-353	d ɛ ŋ k ə n	*θankăz	d ɛ ŋ k ( ə n )	dɛŋkən	denken	98	German				think	*θankăz	281
+355	d ɛ ŋ k ə	*θankjăną	d ɛ ŋ k ( ə - )	dɛŋkə	denken	98	Dutch	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
+354	θ ɪ ŋ k	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	think	98	English	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
+2248	þ e n ċ a n	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	þenċan	98	Old_English	Proto: *θankăz → *θankjăną (Kroonen *þankjan- 'to think'); OE þenċan (wk.v.)			think	*θankjăną	281
+353	d ɛ ŋ k ə n	*θankjăną	d ɛ ŋ k ( ə n )	dɛŋkən	denken	98	German	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
 67	d ɔ r s t	*θurstuz	d ɔ r s t ( - - )	dɔrst	dorst	19	Dutch				thirst	*θurstuz	282
 66	θ ɜː s t	*θurstuz	θ ɜː - s t ( - - )	θɜːst	thirst	19	English				thirst	*θurstuz	282
 2249	þ u r s t	*θurstuz	θ ɜː - s t ( - - )	θɜːst	þurst	19	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thirst	*θurstuz	282
