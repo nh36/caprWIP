@@ -9,7 +9,9 @@ define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
     .o. PWGmcChanges;
 define OESandboxAfterNWGmcULowering OESandboxAfterWestGermanic
     .o. NWGmcULowering;
-define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcULowering
+define OESandboxAfterNWGmcNStemNLoss OESandboxAfterNWGmcULowering
+    .o. NWGmcNStemNLoss;
+define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcNStemNLoss
     .o. NWGmcFinalLongORaising;
 define OESandboxAfterNWGmcLongELowering OESandboxAfterNWGmcFinalLongORaising
     .o. NWGmcLongELowering;
@@ -114,6 +116,10 @@ save stack old_english_sandbox_after_west_germanic.bin
 clear stack
 regex OESandboxAfterNWGmcULowering;
 save stack old_english_sandbox_after_nwgmc_u_lowering.bin
+
+clear stack
+regex OESandboxAfterNWGmcNStemNLoss;
+save stack old_english_sandbox_after_nwgmc_n_stem_n_loss.bin
 
 clear stack
 regex OESandboxAfterNWGmcFinalLongORaising;
