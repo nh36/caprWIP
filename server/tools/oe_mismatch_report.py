@@ -622,6 +622,11 @@ def other_subtype(out: str, expected: str, proto_norm: str = "") -> str:
     if ends_with_vowel(expected) and not ends_with_vowel(out):
         return _final_vowel_missing_subtype(out, expected, proto_norm)
     if ends_with_vowel(out) and not ends_with_vowel(expected):
+        # Distinguish wrong-lexeme from genuine extra vowel
+        out_cons = consonant_sequence(out)
+        exp_cons = consonant_sequence(expected)
+        if out_cons and exp_cons and out_cons[0] != exp_cons[0]:
+            return "final_vowel_extra__wrong_lexeme"
         return "final_vowel_extra"
     if has_breaking_diph(out) and not has_breaking_diph(expected):
         return _breaking_extra_subtype(out, expected, proto_norm)
@@ -753,6 +758,7 @@ def write_report(
     # Other-bucket sub-categories — fixed order for stable ones, then dynamic
     fixed_other_keys = [
         "final_vowel_extra",
+        "final_vowel_extra__wrong_lexeme",
         "length_extra_other",
         "front_expected_back_out",
         "palatal_marker_variant",
@@ -817,6 +823,7 @@ def write_report(
         "infl_suffix_extra__on",
         "final_vowel_missing__verb_vs_noun", "final_vowel_missing__weak_noun_form",
         "final_vowel_missing__morph_form_mismatch",
+        "final_vowel_extra__wrong_lexeme",
         "final_n_missing__expected_an", "final_n_missing__expected_en",
         "final_n_missing__bare_n",
         "a_restoration_needed__also_wrong_form",
