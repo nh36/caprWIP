@@ -83,10 +83,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1301	b ɔː d	*burdą	b ɔː - d ( - - )	bɔːd	board	357	English				board	*burdą	20
 1953	b o r d	*burdą	b ɔː - d ( - - )	bɔːd	bord	357	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			board	*burdą	20
 1300	b ɔ r t	*burdą	b ɔ r t ( - - )	bɔrt	Bord	357	German	BOR		Low German	board	*burdą	20
-1037	b eː n	*bainăn	b eː n ( - - )	beːn	been	284	Dutch				bone	*bainăn	21
-1036	b əʊ n	*bainăn	b əʊ n ( - - )	bəʊn	bone	284	English				bone	*bainăn	21
-1954	b ā n	*bainăn	b əʊ n ( - - )	bɑːn	bān	284	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bone	*bainăn	21
-1035	b ai n	*bainăn	b ai n ( - - )	bain	Bein	284	German		C V C		bone	*bainăn	21
+1037	b eː n	*bainą	b eː n ( - - )	beːn	been	284	Dutch				bone	*bainą	21
+1036	b əʊ n	*bainą	b əʊ n ( - - )	bəʊn	bone	284	English				bone	*bainą	21
+1954	b ā n	*bainą	b əʊ n ( - - )	bɑːn	bān	284	Old_English	Proto: oblique *bainăn→*bainą (n. a-stem nom.sg.; Kroonen)			bone	*bainą	21
+1035	b ai n	*bainą	b ai n ( - - )	bain	Bein	284	German		C V C		bone	*bainą	21
 937	b uː k	*bōkz	b uː k ( - )	buːk	boek	257	Dutch				book	*bōkz	22
 936	b ʊ k	*bōkz	b ʊ k ( - )	bʊk	book	257	English				book	*bōkz	22
 1955	b ō c	*bōkz	b ʊ k ( - )	bʊk	bōc	257	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			book	*bōkz	22
@@ -182,10 +182,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1679	k əʊ m	*kambăz	k əʊ m - ( - - )	kəʊm	comb	460	English				comb	*kambăz	42
 1978	c a m b	*kambăz	k əʊ m - ( - - )	kəʊm	camb	460	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			comb	*kambăz	42
 1678	k a m	*kambăz	k a m - ( - - )	kam	Kamm	460	German				comb	*kambăz	42
-8	k oː r ə	*kurnăn	k oː r - ( ə - )	koːrə	koren	533	Dutch				corn	*kurnăn	43
-7	k ɔː n	*kurnăn	k ɔː - n ( - - )	kɔːn	corn	533	English				corn	*kurnăn	43
-1979	c o r n	*kurnăn	k ɔː - n ( - - )	kɔːn	corn	533	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			corn	*kurnăn	43
-6	k ɔ r n	*kurnăn	k ɔ r n ( - - )	kɔrn	Korn	533	German				corn	*kurnăn	43
+8	k oː r ə	*kurną	k oː r - ( ə - )	koːrə	koren	533	Dutch				corn	*kurną	43
+7	k ɔː n	*kurną	k ɔː - n ( - - )	kɔːn	corn	533	English				corn	*kurną	43
+1979	c o r n	*kurną	k ɔː - n ( - - )	kɔːn	corn	533	Old_English	Proto: oblique *kurnăn→*kurną (n. a-stem nom.sg.; Kroonen)			corn	*kurną	43
+6	k ɔ r n	*kurną	k ɔ r n ( - - )	kɔrn	Korn	533	German				corn	*kurną	43
 1093	k uː	*kōwz	k uː ( - - )	kuː	koe	299	Dutch				cow	*kōwz	44
 1092	k aʊ	*kōwz	k aʊ ( - - )	kaʊ	cow	299	English				cow	*kōwz	44
 1980	c ū	*kōwz	k aʊ ( - - )	kaʊ	cū	299	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			cow	*kōwz	44
@@ -297,10 +297,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1800	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	fell	493	English				fell	*fellą	70
 2007	f e l l	*fellą	f ɛ l ( - - )	fɛl	fell	493	Old_English	Kroonen *fella- n. 'skin/hide' > OE fell; cf. Dutch vel, German Fell			fell	*fellą	70
 1799	f ɛ l	*fellą	f ɛ l ( - - )	fɛl	Fell	493	German				fell	*fellą	70
-464	v aː r ə	*farnăn	v aː r - ( ə - )	vaːrə	varen	127	Dutch				fern	*farnăn	71
-463	f ɜː n	*farnăn	f ɜː - n ( - - )	fɜːn	fern	127	English				fern	*farnăn	71
-2008	f e a r n	*farnăn	f ɜː - n ( - - )	fɜːn	fearn	127	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fern	*farnăn	71
-462	f a r n	*farnăn	f a r n ( - - )	farn	Farn	127	German				fern	*farnăn	71
+464	v aː r ə	*farnăz	v aː r - ( ə - )	vaːrə	varen	127	Dutch				fern	*farnăz	71
+463	f ɜː n	*farnăz	f ɜː - n ( - - )	fɜːn	fern	127	English				fern	*farnăz	71
+2008	f e a r n	*farnăz	f ɜː - n ( - - )	fɜːn	fearn	127	Old_English	Proto: oblique *farnăn→*farnăz (m. a-stem nom.sg.; Kroonen)			fern	*farnăz	71
+462	f a r n	*farnăz	f a r n ( - - )	farn	Farn	127	German				fern	*farnăz	71
 700	v ɛ l t	*felθuz	v ɛ l t ( - - )	vɛlt	veld	192	Dutch				field	*felθuz	72
 699	f iː l d	*felθuz	f iː l d ( - - )	fiːld	field	192	English				field	*felθuz	72
 2009	f e l d	*felθuz	f iː l d ( - - )	fiːld	feld	192	Old_English	R/T §5.1.3 p.171: *felþu-/*feldu- may reflect Verner's alternation or regular PWGmc *lþ→*ld; either gives OE feld			field	*felθuz	72
@@ -584,10 +584,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1890	h uː f	*xōfăz	h uː f ( - - )	huːf	hoof	518	English				hoof	*xōfăz	134
 2081	h ō f	*xōfăz	h uː f ( - - )	huːf	hōf	518	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hoof	*xōfăz	134
 1889	h uː f	*xōfăz	h uː f ( - - )	huːf	Huf	518	German				hoof	*xōfăz	134
-625	h oː r n	*xurnăn	h oː r n ( - - )	hoːrn	hoorn	172	Dutch				horn	*xurnăn	135
-624	h ɔː n	*xurnăn	h ɔː - n ( - - )	hɔːn	horn	172	English				horn	*xurnăn	135
-2082	h o r n	*xurnăn	h ɔː - n ( - - )	horˠn	horn	172	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			horn	*xurnăn	135
-623	h ɔ r n	*xurnăn	h ɔ r n ( - - )	hɔrn	Horn	172	German				horn	*xurnăn	135
+625	h oː r n	*xurną	h oː r n ( - - )	hoːrn	hoorn	172	Dutch				horn	*xurną	135
+624	h ɔː n	*xurną	h ɔː - n ( - - )	hɔːn	horn	172	English				horn	*xurną	135
+2082	h o r n	*xurną	h ɔː - n ( - - )	horˠn	horn	172	Old_English	Proto: oblique *xurnăn→*xurną (n. a-stem nom.sg.; Kroonen)			horn	*xurną	135
+623	h ɔ r n	*xurną	h ɔ r n ( - - )	hɔrn	Horn	172	German				horn	*xurną	135
 338	h ɔ n t	*xundăz	h ɔ n t ( - - )	hɔnt	hond	93	Dutch				hound	*xundăz	136
 337	h aʊ n d	*xundăz	h aʊ n d ( - - )	haʊnd	hound	93	English				hound	*xundăz	136
 2083	h u n d	*xundăz	h aʊ n d ( - - )	haʊnd	hund	93	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hound	*xundăz	136
@@ -1189,10 +1189,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 984	s ʋ ɪ m	*swimmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swim	270	English				swim	*swimmăną	271
 2237	s w i m m a n	*swimmăną	s ʋ ɪ m - - ( - - )	sʋɪm	swimman	270	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swim	*swimmăną	271
 983	ʃ v ɪ m ə n	*swimmăną	ʃ v ɪ m ə n ( - - )	ʃvɪmən	schwimmen	270	German				swim	*swimmăną	271
-1078	z ʋ ɛɪ n	*swīnăn	z ʋ ɛɪ n ( - - )	zʋɛɪn	zwijn	295	Dutch				swine	*swīnăn	272
-1077	s ʋ aɪ n	*swīnăn	s ʋ aɪ n ( - - )	sʋaɪn	swine	295	English				swine	*swīnăn	272
-2238	s w ī n	*swīnăn	s ʋ aɪ n ( - - )	sʋaɪn	swīn	295	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swine	*swīnăn	272
-1076	ʃ v ai n	*swīnăn	ʃ v ai n ( - - )	ʃvain	Schwein	295	German				swine	*swīnăn	272
+1078	z ʋ ɛɪ n	*swīną	z ʋ ɛɪ n ( - - )	zʋɛɪn	zwijn	295	Dutch				swine	*swīną	272
+1077	s ʋ aɪ n	*swīną	s ʋ aɪ n ( - - )	sʋaɪn	swine	295	English				swine	*swīną	272
+2238	s w ī n	*swīną	s ʋ aɪ n ( - - )	sʋaɪn	swīn	295	Old_English	Proto: oblique *swīnăn→*swīną (n. a-stem nom.sg.; Kroonen)			swine	*swīną	272
+1076	ʃ v ai n	*swīną	ʃ v ai n ( - - )	ʃvain	Schwein	295	German				swine	*swīną	272
 209	z ʋ aː r t	*swerdą	z ʋ aː r t ( - - )	zʋaːrt	zwaard	58	Dutch				sword	*swerdą	273
 208	s ɔː d	*swerdą	s - ɔː - d ( - - )	sɔːd	sword	58	English				sword	*swerdą	273
 2239	s w e o r d	*swerdą	s - ɔː - d ( - - )	sɔːd	sweord	58	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sword	*swerdą	273
@@ -1275,10 +1275,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1722	t əʊ	*taixwō	t əʊ ( - - - )	təʊ	toe	472	English				toe	*taixwō	291
 2259	t ā	*taixwō	t əʊ ( - - - )	təʊ	tā	472	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			toe	*taixwō	291
 1721	ts eː ə	*taixwō	ts eː ( - ə - )	t͡seːə	Zehe	472	German				toe	*taixwō	291
-1592	t eː k ə	*taiknăn	t eː k ə - ( - - )	teːkə	teken	436	Dutch				token	*taiknăn	292
-1591	t əʊ k ə n	*taiknăn	t əʊ k ə n ( - - )	təʊkən	token	436	English				token	*taiknăn	292
-2260	t ā c n	*taiknăn	t əʊ k ə n ( - - )	təʊkən	tācn	436	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			token	*taiknăn	292
-1590	ts ai x ə n	*taiknăn	ts ai x ə n ( - - )	t͡saixən	Zeichen	436	German				token	*taiknăn	292
+1592	t eː k ə	*taikną	t eː k ə - ( - - )	teːkə	teken	436	Dutch				token	*taikną	292
+1591	t əʊ k ə n	*taikną	t əʊ k ə n ( - - )	təʊkən	token	436	English				token	*taikną	292
+2260	t ā c n	*taikną	t əʊ k ə n ( - - )	təʊkən	tācn	436	Old_English	Proto: oblique *taiknăn→*taikną (n. a-stem nom.sg.; Kroonen)			token	*taikną	292
+1590	ts ai x ə n	*taikną	ts ai x ə n ( - - )	t͡saixən	Zeichen	436	German				token	*taikną	292
 1205	t ɑ ŋ	*tangō	t ɑ ŋ - ( - - )	tɑŋ	tang	330	Dutch				tongs	*tangō	293
 1204	t ɔ ŋ z	*tangō	t ɔ ŋ - ( - z )	tɔŋz	tongs	330	English				tongs	*tangō	293
 2261	t a n g e	*tangō	t ɔ ŋ - ( - z )	tɔŋz	tange	330	Old_English	Source: Wiktionary etymology (Wiktionary etymology (tong entry: {{inh|en|ang|tange}}))			tongs	*tangō	293
@@ -1287,10 +1287,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1675	t ʌ ŋ	*tungōn	t ʌ ŋ - - ( - )	tʌŋ	tongue	459	English				tongue	*tungōn	294
 2262	t u n g e	*tungōn	t ʌ ŋ - - ( - )	ˈtuŋɡe	tunge	459	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			tongue	*tungōn	294
 1674	ts ʊ ŋ ə	*tungōn	ts ʊ ŋ - ə ( - )	t͡sʊŋə	Zunge	459	German				tongue	*tungōn	294
-1742	t œy n	*tūnăn	t œy n ( - - )	tœyn	tuin	477	Dutch				town	*tūnăn	295
-1741	t aʊ n	*tūnăn	t aʊ n ( - - )	taʊn	town	477	English				town	*tūnăn	295
-2263	t ū n	*tūnăn	t aʊ n ( - - )	taʊn	tūn	477	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			town	*tūnăn	295
-1740	ts au n	*tūnăn	ts au n ( - - )	t͡saun	Zaun	477	German				town	*tūnăn	295
+1742	t œy n	*tūną	t œy n ( - - )	tœyn	tuin	477	Dutch				town	*tūną	295
+1741	t aʊ n	*tūną	t aʊ n ( - - )	taʊn	town	477	English				town	*tūną	295
+2263	t ū n	*tūną	t aʊ n ( - - )	taʊn	tūn	477	Old_English	Proto: oblique *tūnăn→*tūną (n. a-stem nom.sg.; Kroonen)			town	*tūną	295
+1740	ts au n	*tūną	ts au n ( - - )	t͡saun	Zaun	477	German				town	*tūną	295
 1684	t r eː d ə	*tredăną	t r eː d ə - ( - - )	treːdə	treden	461	Dutch				tread	*tredăną	296
 1683	t r ɛ d	*tredăną	t r ɛ d - - ( - - )	trɛd	tread	461	English				tread	*tredăną	296
 2264	t r e d a n	*tredăną	t r ɛ d - - ( - - )	trɛd	tredan	461	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			tread	*tredăną	296
@@ -1346,10 +1346,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1882	ʋ eɪ	*wegăz	ʋ eɪ - ( - - )	ʋeɪ	way	516	English				way	*wegăz	306
 2277	w eː	*wegăz	ʋ eɪ - ( - - )	weː	wē	516	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12)			way	*wegăz	306
 1881	v eː k	*wegăz	v eː k ( - - )	veːk	Weg	516	German				way	*wegăz	306
-676	ʋ aː p ə	*wēpnăn	ʋ aː p - ə -	ʋaːpə	wapen	185	Dutch				weapon	*wēpnăn	307
-675	ʋ ɛ p ə n	*wēpnăn	ʋ ɛ p - ə n	ʋɛpən	weapon	185	English				weapon	*wēpnăn	307
-2278	w ǣ p n	*wēpnăn	ʋ ɛ p - ə n	ʋɛpən	wǣpn	185	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			weapon	*wēpnăn	307
-674	v a f ə	*wēpnăn	v a f - ə -	vafə	Waffe	185	German				weapon	*wēpnăn	307
+676	ʋ aː p ə	*wēpną	ʋ aː p - ə -	ʋaːpə	wapen	185	Dutch				weapon	*wēpną	307
+675	ʋ ɛ p ə n	*wēpną	ʋ ɛ p - ə n	ʋɛpən	weapon	185	English				weapon	*wēpną	307
+2278	w ǣ p n	*wēpną	ʋ ɛ p - ə n	ʋɛpən	wǣpn	185	Old_English	Proto: oblique *wēpnăn→*wēpną (n. a-stem nom.sg.; Kroonen)			weapon	*wēpną	307
+674	v a f ə	*wēpną	v a f - ə -	vafə	Waffe	185	German				weapon	*wēpną	307
 1494	ʋ eː z ə l	*weslon	ʋ eː z ə l ( - - )	ʋeːzəl	wezel	409	Dutch				weasel	*weslon	308
 1493	ʋ iː z ə l	*weslon	ʋ iː z ə l ( - - )	ʋiːzḷ	weasel	409	English				weasel	*weslon	308
 2279	w e o s u l e	*weslon	ʋ iː z ə l ( - - )	ʋiːzḷ	weosule	409	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			weasel	*weslon	308
@@ -1451,10 +1451,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 996	r ɪ ŋ	*wringăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wring	273	English				wring	*wringăną	329
 2304	w r i n g a n	*wringăną	- r ɪ ŋ - - - ( - - )	rɪŋ	wringan	273	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			wring	*wringăną	329
 995	r ɪ ŋ ə n	*wringăną	- r ɪ ŋ - ə n ( - - )	rɪŋən	ringen	273	German				wring	*wringăną	329
-564	x aː r ə	*garnăn	x aː r - ( ə - )	xaːrə	garen	154	Dutch				yarn	*garnăn	330
-563	j ɑː n	*garnăn	j ɑː - n ( - - )	jɑːn	yarn	154	English				yarn	*garnăn	330
-2305	ġ e a r n	*garnăn	j ɑː - n ( - - )	jɑːn	ġearn	154	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			yarn	*garnăn	330
-562	ɡ a r n	*garnăn	ɡ a r n ( - - )	ɡarn	Garn	154	German				yarn	*garnăn	330
+564	x aː r ə	*garną	x aː r - ( ə - )	xaːrə	garen	154	Dutch				yarn	*garną	330
+563	j ɑː n	*garną	j ɑː - n ( - - )	jɑːn	yarn	154	English				yarn	*garną	330
+2305	ġ e a r n	*garną	j ɑː - n ( - - )	jɑːn	ġearn	154	Old_English	Proto: oblique *garnăn→*garną (n. a-stem nom.sg.; Kroonen)			yarn	*garną	330
+562	ɡ a r n	*garną	ɡ a r n ( - - )	ɡarn	Garn	154	German				yarn	*garną	330
 1022	j aː r	*jērą	j aː r ( - - )	jaːr	jaar	280	Dutch				year	*jērą	331
 1021	j ɪə	*jērą	j ɪə r ( - - )	jɪə	year	280	English				year	*jērą	331
 2306	ġ ē a r	*jērą	j ɪə r ( - - )	jæːɑ̯r	ġēar	280	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			year	*jērą	331
