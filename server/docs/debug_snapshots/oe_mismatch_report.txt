@@ -1,10 +1,10 @@
-Total mismatches: 144
+Total mismatches: 141
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      16
+  TSV/data fixes needed:      17
   Documented exceptions:       4
-  Phonology (core buckets):    32
-  Phonology (other buckets):   92
+  Phonology (core buckets):    30
+  Phonology (other buckets):   90
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -14,7 +14,7 @@ Total mismatches: 144
   breaking_missing__expected_eo: 3
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 7
-  no_output: 8
+  no_output: 6
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
@@ -31,13 +31,12 @@ Total mismatches: 144
   breaking_extra__eo_for_high: 4
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 2
-  breaking_extra__ie_other: 1
-  breaking_extra__wrong_form: 3
+  breaking_extra__wrong_form: 4
 --- palatal_extra sub-buckets ---
   palatal_extra__j_triggered: 1
   palatal_extra__orth_normalization: 2
   palatal_extra__other: 1
-  palatal_extra__velar_before_front: 2
+  palatal_extra__velar_before_front: 4
 --- a_restoration sub-buckets ---
   a_restoration_needed: 3
   a_restoration_needed__also_wrong_form: 2
@@ -75,7 +74,6 @@ Total mismatches: 144
   cons_mismatch__w_vs_h__cluster: 1
   cons_mismatch__w_vs_n__cluster: 1
   cons_mismatch__þ_vs_d__cluster: 1
-  cons_mismatch__ġ_vs_n__cluster: 3
 --- suffix_form sub-buckets ---
   suffix_form__eian_vs_ian: 3
 
@@ -115,18 +113,13 @@ long_vowel_missing (7):
   *xawwją -> heow (expected hīeġ)
   *xawwăną -> heawan (expected hēawan)
   *mizdō -> mierd (expected mēd)
-  *strawą -> streaw (expected strēaw)
-  *texun -> teoon (expected tīen)
 
-no_output (8):
+no_output (6):
   *galaubjăną -> +? (expected ġelīefan)
   *funxwstiz -> +? (expected fȳst)
-  *xagōn -> +? (expected haga)
   *regna-bugōn -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
-  *tikkōn -> +? (expected ticia)
   *wira-aldiz -> +? (expected weorold)
-  *wurmaz/wurmiz -> +? (expected wyrm)
 
 palatalization_missing (1):
   *xunăgą -> hunag (expected huniġ)
@@ -137,9 +130,6 @@ final_vowel_extra (8):
   *sapōn -> sæpa (expected sæp)
   *saiwălō -> sāwalu (expected sāwol)
   *stabiz -> stefe (expected stæf)
-  *θūs-undī -> þūsynde (expected þūsend)
-  *westănē -> westane (expected west)
-  *wullo -> wollo (expected wull)
 
 length_extra_other (2):
   *dōną -> dōn (expected don)
@@ -182,16 +172,14 @@ breaking_extra__ie_for_i (2):
   *geftiz -> ġieft (expected ġift)
   *θrejez -> þrīe (expected þrī)
 
-breaking_extra__ie_other (1):
-  *xlaxjăną -> hliehġan (expected hlæhhan)
-
-breaking_extra__wrong_form (3):
+breaking_extra__wrong_form (4):
   *leusăną -> lēosan (expected forloren)
+  *xlaxjăną -> hliehan (expected hlæhhan)
   *skellinăz -> sċiellen (expected sċilling)
   *waljăną -> wielan (expected willan)
 
 palatal_extra__j_triggered (1):
-  *likkōjăną -> liċcēian (expected liccian)
+  *likkōjăną -> liċceian (expected liccian)
 
 palatal_extra__orth_normalization (2):
   *brekăną -> breċan (expected brecan)
@@ -200,9 +188,11 @@ palatal_extra__orth_normalization (2):
 palatal_extra__other (1):
   *rukkiz -> rycċ (expected rocc)
 
-palatal_extra__velar_before_front (2):
+palatal_extra__velar_before_front (4):
   *bakăną -> bæċan (expected bacan)
-  *biginnăną -> biġinnan (expected beginnan)
+  *biginnăną -> biġennan (expected beginnan)
+  *xagōn -> hæġa (expected haga)
+  *tikkōn -> tiċca (expected ticia)
 
 a_restoration_needed (3):
   *nablōn -> næfla (expected nafola)
@@ -255,9 +245,6 @@ vowel_quality__unstressed_vowel (8):
   *marōn -> mæra (expected mære)
   *sīdōn -> sīda (expected sīde)
   *sunnōn -> sunna (expected sunne)
-  *tungōn -> tunga (expected tunge)
-  *xōrōn -> hōra (expected hōre)
-  *wīθijăz -> wīþeġ (expected wīþiġ)
 
 final_vowel_missing__apocope_candidate (1):
   *durą -> dor (expected duru)
@@ -287,8 +274,6 @@ final_vowel_missing__weak_noun_like (7):
   *gallą -> ġeall (expected ġealla)
   *skuldrō -> sċoldor (expected sċuldra)
   *sibăz -> sif (expected sife)
-  *speru -> speor (expected spere)
-  *tangō -> tang (expected tange)
 
 final_n_missing__bare_n (1):
   *end -> end (expected ān)
@@ -332,11 +317,6 @@ cons_mismatch__w_vs_n__cluster (1):
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
-
-cons_mismatch__ġ_vs_n__cluster (3):
-  *sōkjăną -> sēċġan (expected sēċan)
-  *strakkjăną -> streċċġan (expected streċċan)
-  *θankjăną -> þenċġan (expected þenċan)
 
 suffix_form__eian_vs_ian (3):
   *burōjăną -> boreian (expected borian)
