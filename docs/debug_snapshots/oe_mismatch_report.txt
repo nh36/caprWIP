@@ -1,10 +1,10 @@
 Total mismatches: 184
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      68
+  TSV/data fixes needed:      69
   Documented exceptions:       4
   Phonology (core buckets):    32
-  Phonology (other buckets):   80
+  Phonology (other buckets):   79
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -18,7 +18,8 @@ Total mismatches: 184
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 6
+  final_vowel_extra: 5
+  final_vowel_extra__wrong_lexeme: 1
   length_extra_other: 2
   palatal_marker_variant: 1
   orth__thorn_eth_allography: 1
@@ -138,13 +139,15 @@ no_output (5):
 palatalization_missing (1):
   *xunăgą -> hunag (expected huniġ)
 
-final_vowel_extra (6):
-  *liθuz -> liþu (expected hlid)
+final_vowel_extra (5):
   *natją -> nete (expected net)
   *saiwălō -> sāwalu (expected sāwol)
   *stabiz -> stefe (expected stæf)
   *westănē -> westane (expected west)
   *wullo -> wollo (expected wull)
+
+final_vowel_extra__wrong_lexeme (1):
+  *liθuz -> liþu (expected hlid)
 
 length_extra_other (2):
   *dōną -> dōn (expected don)
