@@ -560,7 +560,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 91	h au ə n	*xawwăną	h - au - ə n ( - - )	hauən	hauen	26	German				hew	*xawwăną	129
 487	h ɪ n d ə	*xendjō	h ɪ n d - ə	hɪndə	hinde	133	Dutch				hind	*xendjō	130
 486	h aɪ n d	*xendjō	h aɪ n d - -	haɪnd	hind	133	English				hind	*xendjō	130
-2075	h i n d a n	*xendjō	h aɪ n d - -	haɪnd	hindan	133	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hind	*xendjō	130
+2075	h i n d	*xendjō	h aɪ n d - -	haɪnd	hind	133	Old_English	Kroonen *hindō- f. 'hind (deer)' → OE hind f.; hindan 'from behind' is wrong lexeme			hind	*xendjō	130
 485	h ɪ n d ə	*xendjō	h ɪ n d - ə	hɪndə	Hinde	133	German				hind	*xendjō	130
 597	h ɔː d	*xuzdą	h ɔː - d ( - - )	hɔːd	hoard	164	English				hoard	*xuzdą	343
 2076	h o r d	*xuzdą	h ɔː - d ( - - )	hɔːd	hord	164	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			hoard	*xuzdą	343
@@ -671,7 +671,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 120	l ai m	*līmą	l ai m ( - - )	laim	Leim	34	German				lime	*līmą	153
 1727	l ɪ n d ə	*lindō	l ɪ n d ( ə - )	lɪndə	linde	473	Dutch				linden	*lindō	154
 1726	l ɪ n d ə n	*lindō	l ɪ n d ( ə n )	lɪndən	linden	473	English				linden	*lindō	154
-2104	l i n d e n	*lindō	l ɪ n d ( ə n )	lɪndən	linden	473	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			linden	*lindō	154
+2104	l i n d	*lindō	l ɪ n d ( ə n )	lɪndən	lind	473	Old_English	Kroonen *lindō- f. 'linden/lime tree' → OE lind f.; linden is not standard OE form			linden	*lindō	154
 1725	l ɪ n d ə	*lindō	l ɪ n d ( ə - )	lɪndə	Linde	473	German				linden	*lindō	154
 945	l ɛɪ n	*līnăn	l ɛɪ n ( - - )	lɛɪn	lijn	259	Dutch				line	*līnăn	155
 944	l aɪ n	*līnăn	l aɪ n ( - - )	laɪn	line	259	English				line	*līnăn	155
@@ -734,7 +734,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1926	m a n	*marīn	m a ( - - ) n	man	Mann	529	German				man	*marīn	168
 44	m ɑ r k	*markō	m ɑ r k -	mɑrk	mark	12	Dutch				march	*markō	169
 43	m ɑː ʧ	*markō	m ɑː - ʧ -	mɑːʧ	march	12	English				march	*markō	169
-2120	m e a r c i a n	*markō	m ɑː - ʧ -	mɑːʧ	mearcian	12	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			march	*markō	169
+2120	m e a r c	*markō	m ɑː - ʧ -	mɑːʧ	mearc	12	Old_English	Kroonen *markō- f. 'boundary' → OE mearc f.; mearcian is the verb 'to mark'			march	*markō	169
 42	m a r k	*markō	m a r k -	mark	Mark	12	German	EXC			march	*markō	169
 1712	m ɑ s t	*mastăz	m ɑ s t ( - - )	mɑst	mast	469	Dutch				mast	*mastăz	170
 1711	m ɑː s t	*mastăz	m ɑː s t ( - - )	mɑːst	mast	469	English				mast	*mastăz	170
@@ -1059,7 +1059,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 569	ʃ p a n ə	*spannō	ʃ p a n ( ə )	ʃpanə	Spanne	156	German				span	*spannō	241
 1232	s p ɑ r	*sparrōn	s p ɑ r - -	spɑr	spar	338	Dutch				spar	*sparrōn	242
 1231	s p ɑː	*sparrōn	s p ɑː r - -	spɑː	spar	338	English				spar	*sparrōn	242
-2204	s p e r r a n	*sparrōn	s p ɑː r - -	spɑː	sperran	338	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			spar	*sparrōn	242
+2204	s p e a r r a	*sparrōn	s p ɑː r - -	spɑː	spearra	338	Old_English	Kroonen *sparran- m. 'rafter, spar' → OE spearra m.; sperran is the verb 'to bar'			spar	*sparrōn	242
 1230	ʃ p a r ə n	*sparrōn	ʃ p a r ə n	ʃparən	Sparren	338	German				spar	*sparrōn	242
 835	s p aː r ə	*sparēną	s p aː r ə - ( - - )	spaːrə	sparen	229	Dutch				spare	*sparēną	243
 834	s p ɛə	*sparēną	s p ɛə r - - ( - - )	spɛə	spare	229	English				spare	*sparēną	243
@@ -1177,7 +1177,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1365	z au f ə n	*sūpăną	z au f ə n ( - - )	zaufən	saufen	374	German				sup	*sūpăną	269
 1283	z ʋ aː l yː ʋ	*swalgwōn	z ʋ aː l ( yː ʋ - - )	zʋaːlyːʋ	zwaluw	352	Dutch				swallow	*swalgwōn	270
 1282	s ʋ ɔ l əʊ	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swallow	352	English				swallow	*swalgwōn	270
-2234	s w e l g a n	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swelgan	352	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			swallow	*swalgwōn	270
+2234	s w e a l w e	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swealwe	352	Old_English	Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the verb 'to swallow'			swallow	*swalgwōn	270
 1281	ʃ v a l b ə	*swalgwōn	ʃ v a l ( - b ə - )	ʃvalbə	Schwalbe	352	German				swallow	*swalgwōn	270
 1630	s ʋ ɔ n	*swanăz	s ʋ ɔ n ( - - )	sʋɔn	swan	447	English				swan	*swanăz	360
 2235	s w a n	*swanas	s ʋ ɔ n ( - - )	sʋɔn	swanes	447	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *swanas (> swanes)		swan	*swanas	360
@@ -1246,7 +1246,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1658	d ɔ r n	*θurnăz	d ɔ r n ( - - )	dɔrn	Dorn	455	German	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
 427	d œy z ə n t	*θūs-undī	d œy z ( - ) ə n t ( - )	dœyzənt	duizend	117	Dutch				thousand	*θūs-undī	285
 426	θ aʊ z ə n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	thousand	117	English				thousand	*θūs-undī	285
-2252	s e n d a n	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	sendan	117	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thousand	*θūs-undī	285
+2252	þ ū s e n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	þūsend	117	Old_English	Kroonen *þūsundī- f. 'thousand' → OE þūsend; sendan 'to send' is wrong lexeme			thousand	*θūs-undī	285
 425	t au z ə n d	*θūs-undī	t au z ( - ) ə n d ( - )	tauzənt	tausend	117	German				thousand	*θūs-undī	285
 1351	d ɔ r s ə	*θreskăną	d ɔ r - s - ə - ( - - )	dɔrsə	dorsen	370	Dutch				thrash	*θreskăną	286
 1350	θ r æ ʃ	*θreskăną	θ - r æ ʃ - - - ( - - )	θræʃ	thrash	370	English				thrash	*θreskăną	286
@@ -1266,7 +1266,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 979	ts ɛ k ə	*tikkōn	ts ɛ k ( ə - )	t͡sɛkə	Zecke	269	German				tick	*tikkōn	289
 960	t ɛɪ t	*tīdiz	t ɛɪ t ( - - )	tɛɪt	tijd	263	Dutch				tide	*tīdiz	290
 959	t aɪ d	*tīdiz	t aɪ d ( - - )	taɪd	tide	263	English				tide	*tīdiz	290
-2257	t ī d a n	*tīdiz	t aɪ d ( - - )	taɪd	tīdan	263	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			tide	*tīdiz	290
+2257	t ī d	*tīdiz	t aɪ d ( - - )	taɪd	tīd	263	Old_English	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'			tide	*tīdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German				tide	*tīdiz	290
 814	t ɪ m b ə	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English				timber	*timrą	363
 2258	t i m b e r	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*timrą	363
@@ -1404,7 +1404,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1663	ʋ ɪ l	*waljăną	ʋ ɪ l - - - ( - - )	ʋɪl	will	456	English				will	*waljăną	318
 2292	w i l l a n	*waljăną	ʋ ɪ l - - - ( - - )	ʋɪl	willan	456	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			will	*waljăną	318
 216	ʋ ɪ l	*weljōn	ʋ ɪ l - - ( - )	ʋɪl	will	60	English				will	*weljōn	318
-2293	w i l l a n	*weljōn	ʋ ɪ l - - ( - )	ʋɪl	willan	60	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			will	*weljōn	318
+2293	w i l l a	*weljōn	ʋ ɪ l - - ( - )	ʋɪl	willa	60	Old_English	Kroonen *weljan- 2 m. 'will, wish' → OE willa m.; cf. G Wille, Du. wil (noun); willan is the verb 'to want' (belongs with *waljăną)			will	*weljōn	318
 1662	v ɔ l ə n	*waljăną	v ɔ l - ə n ( - - )	vɔlən	wollen	456	German				will	*waljăną	318
 215	v ɪ l ə	*weljōn	v ɪ l - ə ( - )	vɪlə	Wille	60	German				will	*weljōn	318
 900	ʋ ɪ n d ə	*windăną	ʋ ɪ n d ə - ( - - )	ʋɪndə	winden	247	Dutch				wind	*windăną	319
