@@ -1368,23 +1368,26 @@ define OEWeakTailUnReduction [
 
 # R/T vol.2 §6.8.3: unstressed long vowels were shortened after syncope/apocope.
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
+# Use [EnglishStarConsonant | EnglishPalatalConsonant] because by this point
+# palatalization has already applied, converting {*g}→{*ʤ}, {*k}→{*ʧ}, etc.
 define OEUnstressedLongVowelShortening [
-    {*ā} -> {*a} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ē} -> {*e} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ī} -> {*i} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ō} -> {*o} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ū} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ǣ} -> {*æ} || EnglishStarVocalic EnglishStarConsonant+ _,
+    {*ā} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ē} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ī} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ǣ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
     # Nasalized *ǭ (from n-stem *-ōn) shortens to *a (→ OE -a).
     # R/T vol.2 p.300: masc. n-stem nom.sg. -a < *-ą < PWGmc *-ō
-    {*ǭ} -> {*a} || EnglishStarVocalic EnglishStarConsonant+ _
+    {*ǭ} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 
 # Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
 # so it only hits second-syllable unstressed *u, not stressed root *u.
 # Word-final *u (from *-ō) is also excluded by requiring a following consonant.
+# Use [EnglishStarConsonant | EnglishPalatalConsonant] for post-palatalization context.
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant
+    {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
 define OEWeakTailReduction [
@@ -1393,17 +1396,17 @@ define OEWeakTailReduction [
     {*i} -> {*e} || _ .#.,
     # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
     # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
-    {*æ} -> {*e} || EnglishStarVocalic EnglishStarConsonant+ _
+    {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
-        EnglishStarConsonant+ _ .#.
+        [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 
 define OEEpentheticBackShift [
-    {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant+ _ {*r} .#.,
-    {*E} -> {*o} || EnglishStarBackVowel EnglishStarConsonant* {*g} _ {*l} .#.
+    {*E} -> {*o} || EnglishStarBackVowel [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*r} .#.,
+    {*E} -> {*o} || EnglishStarBackVowel [EnglishStarConsonant | EnglishPalatalConsonant]* {*g} _ {*l} .#.
 ];
 
 define OEEpentheticFront [
@@ -1462,8 +1465,8 @@ define PWGmcJGemination [
 
 # Loss of internal j after heavy syllables; block after r.
 define OEJLossAfterHeavy [
-    {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) EnglishStarConsonantNoR _,
-    {*j} -> 0 || EnglishStarShortVowel EnglishStarConsonant EnglishStarConsonantNoR _
+    {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) [EnglishStarConsonantNoR | EnglishPalatalConsonant] _,
+    {*j} -> 0 || EnglishStarShortVowel [EnglishStarConsonant | EnglishPalatalConsonant] [EnglishStarConsonantNoR | EnglishPalatalConsonant] _
 ];
 
 # Intervocalic *j vocalization: *j → *i between vowels.
