@@ -66,8 +66,6 @@ define ProtoWord ProtoStrongSyllable ProtoWeakTail;
 
 define Cons ProtoConsonant;
 define Vowel ProtoVowel;
-define FrontVowel [i|ī|e|ē|æ|ɛ|ø|œ|y|ʉ];
-define BackVowel [a|ā|ɑ|o|ō|u|ū|ɔ|ʊ];
 
 ##############################################
 ## Pending two-level Proto-Germanic profile  ##
@@ -277,13 +275,6 @@ define pgrmStrongPlainPrefixed [pgrmPrefixBi pgrmStrongPlain];
 define pgrmStrongPlainHeavyPrefixed [pgrmPrefixBi pgrmStrongPlainHeavy];
 define pgrmStrongNasalPrefixed [pgrmPrefixBi pgrmStrongNasal];
 
-define pgrmWeakOnset [0 | n:{*n} | s:{*s} | r:{*r} | l:{*l}];
-
-define pgrmWeakOralNucleus [a:{*a} | ă:{*ă} | e:{*e} | i:{*i} | o:{*o} | u:{*u}];
-define pgrmWeakNasalNucleus [ą:{*ą} | ę:{*ę}];
-
-define pgrmWeakCoda [0 | s:{*s} | n:{*n} | r:{*r} | t:{*t} | l:{*l} | z:{*z}];
-
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
     ă:{*ă} |
@@ -335,7 +326,6 @@ define pgrmWeakTailVowel [
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
     ō:{*ō} θ:{*θ} z:{*z}
 ];
-define pgrmWeakTail [pgrmWeakTailZero | pgrmWeakTailVowel];
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
 
@@ -462,11 +452,6 @@ define PGmcStarFrontTrigger [
 ];
 
 define RemoveStars {*} -> 0;
-define GermanLexOnset pgrmOnsetCore.r;
-define GermanLexCoda pgrmCoda.r;
-define GermanLexShortVowel pgrmShortVowel.r;
-define GermanLexLongVowel pgrmLongVowel.r;
-define GermanLexNasalVowel pgrmNasalVowel.r;
 define GermanProtoInput pgrmWord;
 
 ##############################################
