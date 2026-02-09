@@ -1122,8 +1122,19 @@ define PWGmcSyllabicJ [
     {*j} {*ą} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
 ];
 
-# Combine West Germanic rules in chronological order per R/T §3.1.
-# Order: monophthongization, then ij-contraction, then syllabic j.
+# NWGmc/PWGmc: Word-internal *lþ → *ld (R/T §5.1.3, pp. 170-171).
+# R/T: "it does seem that word-internal *lþ became *ld by regular sound
+# change in NORTHERN WGmc"
+# Examples: *falþaną → *faldaną → OE fealdan; *balþaz → *bald → OE beald;
+#   *wulþraz → *wuldr → OE wuldor; *gulþinaz → *guldin → OE gylden
+# Note: *gulþa-/*gulda- and *felþu-/*feldu- may alternatively reflect Verner's
+# Law alternation, but *lþ→ld gives the same result.
+define PWGmcLThVoicing [
+    {*θ} -> {*d} || {*l} _
+];
+
+# Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
+# Order: monophthongization, ij-contraction, syllabic j, lþ-voicing.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
@@ -1131,6 +1142,7 @@ define PWGmcChanges [
     PWGmcAiMonophthongization
     .o. PWGmcIjContraction
     .o. PWGmcSyllabicJ
+    .o. PWGmcLThVoicing
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
