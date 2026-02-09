@@ -1,10 +1,10 @@
-Total mismatches: 148
+Total mismatches: 145
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      20
+  TSV/data fixes needed:      16
   Documented exceptions:       4
   Phonology (core buckets):    32
-  Phonology (other buckets):   92
+  Phonology (other buckets):   93
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -28,7 +28,7 @@ Total mismatches: 148
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
-  breaking_extra__eo_for_high: 3
+  breaking_extra__eo_for_high: 4
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 2
   breaking_extra__ie_other: 1
@@ -53,7 +53,7 @@ Total mismatches: 148
   vowel_quality__unstressed_vowel: 8
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__apocope_candidate: 1
-  final_vowel_missing__morph_form_mismatch: 8
+  final_vowel_missing__morph_form_mismatch: 4
   final_vowel_missing__other: 4
   final_vowel_missing__verb_vs_noun: 1
   final_vowel_missing__weak_noun_form: 2
@@ -169,7 +169,8 @@ breaking_extra__ea_for_a (1):
 breaking_extra__eo_for_e (1):
   *strawjăną -> streowan (expected strewian)
 
-breaking_extra__eo_for_high (3):
+breaking_extra__eo_for_high (4):
+  *beugăną -> bēogan (expected būgan)
   *libēną -> leofon (expected lifian)
   *newun -> nēowon (expected nigon)
   *skeubăną -> sċēofan (expected sċūfan)
@@ -261,15 +262,11 @@ vowel_quality__unstressed_vowel (8):
 final_vowel_missing__apocope_candidate (1):
   *durą -> dor (expected duru)
 
-final_vowel_missing__morph_form_mismatch (8):
-  *baugjăną -> bīeġan (expected boga)
-  *beugăną -> bēogan (expected boga)
+final_vowel_missing__morph_form_mismatch (4):
   *kōwz -> cōw (expected cū)
   *deljăz -> dill (expected dile)
   *furxtīn -> fyrhten (expected fryhtu)
-  *stelljăną -> stillan (expected stille)
   *taixwō -> tāhw (expected tā)
-  *wegăz -> weġ (expected wē)
 
 final_vowel_missing__other (4):
   *knuppăz -> cnopp (expected cnobba)
