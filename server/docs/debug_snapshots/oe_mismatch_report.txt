@@ -1,10 +1,10 @@
-Total mismatches: 141
+Total mismatches: 137
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      17
   Documented exceptions:       4
   Phonology (core buckets):    30
-  Phonology (other buckets):   90
+  Phonology (other buckets):   86
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -46,10 +46,10 @@ Total mismatches: 141
   vowel_quality__ae_e_alternation: 2
   vowel_quality__stressed_vowel: 5
   vowel_quality__u_lowering_exception: 4
-  vowel_quality__u_o_alternation: 2
+  vowel_quality__u_o_alternation: 5
   vowel_quality__unstressed_e_o: 5
   vowel_quality__unstressed_o_a: 2
-  vowel_quality__unstressed_vowel: 8
+  vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__apocope_candidate: 1
   final_vowel_missing__morph_form_mismatch: 4
@@ -117,7 +117,7 @@ long_vowel_missing (7):
 no_output (6):
   *galaubjăną -> +? (expected ġelīefan)
   *funxwstiz -> +? (expected fȳst)
-  *regna-bugōn -> +? (expected reġnboga)
+  *regna-bugô -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
 
@@ -125,9 +125,9 @@ palatalization_missing (1):
   *xunăgą -> hunag (expected huniġ)
 
 final_vowel_extra (8):
-  *laimōn -> lāma (expected lām)
+  *laimōn -> lāme (expected lām)
   *natją -> nete (expected net)
-  *sapōn -> sæpa (expected sæp)
+  *sapōn -> sæpe (expected sæp)
   *saiwălō -> sāwalu (expected sāwol)
   *stabiz -> stefe (expected stæf)
 
@@ -144,7 +144,7 @@ epenthetic_vowel_missing (1):
 syncopation_missing (3):
   *fleuxăną -> flēoan (expected flēon)
   *melukz -> meoloc (expected meolc)
-  *natilōn -> netela (expected netle)
+  *natilōn -> netele (expected netle)
 
 final_devoicing_missing (1):
   *budmăz -> bodm (expected botm)
@@ -191,11 +191,11 @@ palatal_extra__other (1):
 palatal_extra__velar_before_front (4):
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġennan (expected beginnan)
-  *xagōn -> hæġa (expected haga)
-  *tikkōn -> tiċca (expected ticia)
+  *xagô -> hæġa (expected haga)
+  *tikkô -> tiċca (expected ticia)
 
 a_restoration_needed (3):
-  *nablōn -> næfla (expected nafola)
+  *nablô -> næfla (expected nafola)
   *wadăną -> wædan (expected wadan)
   *waskăną -> wæsċan (expected wasċan)
 
@@ -224,9 +224,12 @@ vowel_quality__u_lowering_exception (4):
   *rustō -> rost (expected rust)
   *wulfăz -> wolf (expected wulf)
 
-vowel_quality__u_o_alternation (2):
+vowel_quality__u_o_alternation (5):
+  *bugô -> buga (expected boga)
+  *fulô -> fula (expected fola)
   *gud -> gud (expected god)
-  *widuwōn -> widowa (expected widuwe)
+  *uxsô -> uxa (expected oxa)
+  *widuwōn -> widowe (expected widuwe)
 
 vowel_quality__unstressed_e_o (5):
   *erθo -> eorþo (expected eorþe)
@@ -239,12 +242,8 @@ vowel_quality__unstressed_o_a (2):
   *mēnōθz -> mōnoþ (expected mōnaþ)
   *wakēną -> wacon (expected wacan)
 
-vowel_quality__unstressed_vowel (8):
-  *xertōn -> heorta (expected heorte)
-  *līstōn -> līsta (expected līste)
-  *marōn -> mæra (expected mære)
-  *sīdōn -> sīda (expected sīde)
-  *sunnōn -> sunna (expected sunne)
+vowel_quality__unstressed_vowel (1):
+  *wīθijăz -> wīþeġ (expected wīþiġ)
 
 final_vowel_missing__apocope_candidate (1):
   *durą -> dor (expected duru)
@@ -295,7 +294,7 @@ cons_mismatch__g_vs_w__cluster (1):
   *snaigwăz -> snāgw (expected snāw)
 
 cons_mismatch__g_vs_w__word_final (1):
-  *swalgwōn -> swealgwa (expected swealwe)
+  *swalgwōn -> swealgwe (expected swealwe)
 
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
