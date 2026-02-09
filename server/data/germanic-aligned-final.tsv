@@ -114,9 +114,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 930	b œy ɣ ə	*beugăną	b œy ɣ ə - ( - - )	bœyɣə	buigen	255	Dutch				bow	*beugăną	27
 1420	b oː x	*bugōn	b oː x - -	boːx	boog	388	Dutch				bow	*bugōn	27
 1297	b əʊ	*baugjăną	b əʊ - - - - ( - - )	bəʊ	bow	356	English				bow	*baugjăną	27
-1961	b o g a	*baugjăną	b əʊ - - - - ( - - )	bəʊ	boga	356	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*baugjăną	27
+1961	b ī e ġ a n	*baugjăną	b əʊ - - - - ( - - )	bəʊ	bīeġan	356	Old_English	Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-			bow	*baugjăną	27
 929	b əʊ	*beugăną	b əʊ - - - ( - - )	bəʊ	bow	255	English				bow	*beugăną	27
-1962	b o g a	*beugăną	b əʊ - - - ( - - )	bəʊ	boga	255	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*beugăną	27
+1962	b ū g a n	*beugăną	b əʊ - - - ( - - )	bəʊ	būgan	255	Old_English	Kroonen *beugan- sv.2 'to bend, bow' → OE būgan; boga is the noun *bugan-			bow	*beugăną	27
 1419	b əʊ	*bugōn	b əʊ - - -	bəʊ	bow	388	English				bow	*bugōn	27
 1963	b o g a	*bugōn	b əʊ - - -	bəʊ	boga	388	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*bugōn	27
 1296	b ɔy ɡ ə n	*baugjăną	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German		C V c - v c		bow	*baugjăną	27
@@ -1111,7 +1111,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1625	ʃ t a m	*stamnăz	ʃ t a m ( - - - )	ʃtam	Stamm	446	German				stem	*stamnăz	254
 1397	s t ɪ l ə	*stelljăną	s t ɪ l - ə - ( - - )	stɪlə	stillen	382	Dutch				still	*stelljăną	255
 1396	s t ɪ l	*stelljăną	s t ɪ l - - - ( - - )	stɪl	still	382	English				still	*stelljăną	255
-2217	s t i l l e	*stelljăną	s t ɪ l - - - ( - - )	stɪl	stille	382	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			still	*stelljăną	255
+2217	s t i l l a n	*stelljăną	s t ɪ l - - - ( - - )	stɪl	stillan	382	Old_English	OE stillan wv. 'to still, calm' matches verb form of Du. stillen, G stillen; stille is adj.			still	*stelljăną	255
 1395	ʃ t ɪ l ə n	*stelljăną	ʃ t ɪ l - ə n ( - - )	ʃtɪlən	stillen	382	German				still	*stelljăną	255
 449	s t ɛ l t	*steltjōn	s t ɛ l t - - ( - )	stɛlt	stelt	123	Dutch				stilt	*steltjōn	256
 448	s t ɪ l t	*steltjōn	s t ɪ l t - - ( - )	stɪlt	stilt	123	English				stilt	*steltjōn	256
@@ -1344,7 +1344,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 694	v a k s ə n	*waxsăną	v a k s ə n ( - - )	vaksən	wachsen	191	German				wax	*waxsăną	305
 1883	ʋ ɛ x	*wegăz	ʋ ɛ x ( - - )	ʋɛx	weg	516	Dutch				way	*wegăz	306
 1882	ʋ eɪ	*wegăz	ʋ eɪ - ( - - )	ʋeɪ	way	516	English				way	*wegăz	306
-2277	w eː	*wegăz	ʋ eɪ - ( - - )	weː	wē	516	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12)			way	*wegăz	306
+2277	w e ġ	*wegăz	ʋ eɪ - ( - - )	weː	weġ	516	Old_English	Kroonen *wega- m. 'way, road' → OE weġ m.; wē is not attested as OE 'way'			way	*wegăz	306
 1881	v eː k	*wegăz	v eː k ( - - )	veːk	Weg	516	German				way	*wegăz	306
 676	ʋ aː p ə	*wēpną	ʋ aː p - ə -	ʋaːpə	wapen	185	Dutch				weapon	*wēpną	307
 675	ʋ ɛ p ə n	*wēpną	ʋ ɛ p - ə n	ʋɛpən	weapon	185	English				weapon	*wēpną	307
