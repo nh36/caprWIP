@@ -1,3 +1,46 @@
+## PWGmc *lþ → *ld Voicing and Verner's Law Overlap
+
+**Date:** 2026-02-13
+
+### The rule
+R/T vol.2 §5.1.3 (pp. 170-171): word-internal `*lþ → *ld` was a regular
+sound change in Northern WGmc (= PWGmc). Implemented as `PWGmcLThVoicing`.
+
+### Clear examples (rule definitely applies)
+- `*falþaną → *faldaną → OE fealdan` ('fold')
+- `*wilþijaz → *wildi → OE wilde` ('wild')
+- `*balþaz → *bald → OE beald` ('bold')
+- `*wulþraz → *wuldr → OE wuldor` ('glory')
+
+### Ambiguous examples (rule OR Verner's Law)
+R/T explicitly notes that two words might reflect Verner's Law alternation
+`*þ ~ *d` rather than (or in addition to) the `*lþ → *ld` rule:
+- `*gulþa- ~ *gulda-` → OE gold ('gold') — R/T §5.1.3 p.171
+- `*felþu- ~ *feldu-` → OE feld ('field') — R/T §5.1.3 p.171
+
+For these, EITHER explanation yields the correct OE outcome. Our
+`PWGmcLThVoicing` rule handles both cases correctly regardless.
+
+### Not this rule: *nēθlō → nǣdl ('needle')
+R/T p.435: PGmc `*nēþlō / *nēdlō-` has Verner's alternation. OE `nǣdl`
+reflects the `*d` variant. The consonant order is `θl` not `lθ`, so
+`PWGmcLThVoicing` does not apply. Currently a mismatch (our FST keeps `þ`
+from the `*θ` variant in the TSV).
+
+### Scope of Verner's Law in the project
+Several items involve Verner's Law alternation (voiceless/voiced pairs in
+PGmc paradigms). We have NOT yet implemented a general Verner's Law
+mechanism. The current approach is case-by-case:
+- Where the regular sound change (`*lþ → ld`) gives the right answer, we
+  use it (gold, feld, fealdan, etc.)
+- Where only Verner's alternation explains the outcome (nǣdl), the item
+  remains a known mismatch until we decide on a systematic approach
+
+**TODO:** Survey all Verner's-related mismatches to assess scope before
+implementing a general solution.
+
+---
+
 ## PWGmc *j-related Sound Changes — NEEDS EXPERT REVIEW
 
 **Date:** 2026-02-13
