@@ -1,61 +1,83 @@
-Total mismatches: 194
+Total mismatches: 154
+
+=== INTERVENTION SUMMARY ===
+  TSV/data fixes needed:      28
+  Documented exceptions:       4
+  Phonology (core buckets):    32
+  Phonology (other buckets):   90
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
-  fronting_missing_no_trigger: 7
+  fronting_missing__afb: 2
+  fronting_missing__also_wrong_form: 2
   breaking_missing__expected_ea_got_a: 3
-  breaking_missing__expected_eo: 4
+  breaking_missing__expected_eo: 3
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 7
-  no_output: 5
+  no_output: 8
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 6
+  final_vowel_extra: 7
   length_extra_other: 2
-  breaking_extra_other: 16
   palatal_marker_variant: 1
   epenthetic_vowel_missing: 1
-  vowel_quality_other: 25
+  syncopation_missing: 3
   final_devoicing_missing: 1
-  prefix_morphology_issue: 1
+  r_metathesis: 2
+--- breaking_extra sub-buckets ---
+  breaking_extra__ea_for_a: 1
+  breaking_extra__eo_for_e: 1
+  breaking_extra__eo_for_high: 3
+  breaking_extra__ie_for_e: 1
+  breaking_extra__ie_for_i: 2
+  breaking_extra__ie_other: 1
+  breaking_extra__wrong_form: 3
 --- palatal_extra sub-buckets ---
   palatal_extra__j_triggered: 1
-  palatal_extra__orth_normalization: 4
+  palatal_extra__orth_normalization: 2
   palatal_extra__other: 1
   palatal_extra__velar_before_front: 2
+--- a_restoration sub-buckets ---
+  a_restoration_needed: 3
+  a_restoration_needed__also_wrong_form: 2
 --- back_expected_front_out sub-buckets ---
-  back_expected_front_out__AFB_like: 4
   back_expected_front_out__other: 2
+--- vowel_quality sub-buckets ---
+  vowel_quality__ae_e_alternation: 2
+  vowel_quality__stressed_vowel: 5
+  vowel_quality__u_lowering_exception: 4
+  vowel_quality__u_o_alternation: 2
+  vowel_quality__unstressed_e_o: 5
+  vowel_quality__unstressed_o_a: 2
+  vowel_quality__unstressed_vowel: 8
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__apocope_candidate: 1
-  final_vowel_missing__morph_form_mismatch: 27
+  final_vowel_missing__morph_form_mismatch: 8
   final_vowel_missing__other: 4
+  final_vowel_missing__verb_vs_noun: 1
+  final_vowel_missing__weak_noun_form: 2
   final_vowel_missing__weak_noun_like: 8
 --- final_n_missing sub-buckets ---
   final_n_missing__bare_n: 1
-  final_n_missing__expected_an: 4
+  final_n_missing__expected_an: 7
   final_n_missing__expected_en: 2
 --- inflectional_suffix_extra sub-buckets ---
-  infl_suffix_extra__an: 19
-  infl_suffix_extra__on: 1
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__g_vs_w__cluster: 1
   cons_mismatch__h_vs_m__cluster: 1
-  cons_mismatch__length_diff: 2
   cons_mismatch__n_vs_-__word_final: 1
   cons_mismatch__n_vs_r__word_final: 1
   cons_mismatch__r_vs_b__word_final: 1
   cons_mismatch__w_vs_h__cluster: 1
   cons_mismatch__w_vs_n__cluster: 1
-  cons_mismatch__þ_vs_d__cluster: 2
-  cons_mismatch__þ_vs_d__word_final: 2
-  cons_mismatch__þ_vs_ð__word_final: 1
-  cons_mismatch__ġ_vs_n__cluster: 2
-  uncategorized: 7
+  cons_mismatch__þ_vs_d__cluster: 1
+  cons_mismatch__ġ_vs_n__cluster: 3
+--- suffix_form sub-buckets ---
+  suffix_form__eian_vs_ian: 3
 
 === DETAILED EXAMPLES ===
 
@@ -64,23 +86,21 @@ i_umlaut_missing_true (3):
   *sai -> sā (expected sǣ)
   *wainōjăną -> wāneian (expected hwīnan)
 
-fronting_missing_no_trigger (7):
+fronting_missing__afb (2):
+  *rastō -> rast (expected ræst)
+  *stamnăz -> stamn (expected stemn)
+
+fronting_missing__also_wrong_form (2):
   *dranką -> dranc (expected drenċ)
   *fastēną -> faston (expected fæst)
-  *rastō -> rast (expected ræst)
-  *sapōn -> sapon (expected sæp)
-  *stamnăz -> stamn (expected stemn)
-  *tappōn -> tappon (expected tæppa)
-  *θankăz -> þanc (expected þenċan)
 
 breaking_missing__expected_ea_got_a (3):
-  *dawwō -> dawo (expected dēaw)
+  *dawwō -> dawu (expected dēaw)
   *skaiθiz -> sċǣþ (expected sċēaþ)
   *skawōjăną -> sċaweian (expected scēawian)
 
-breaking_missing__expected_eo (4):
+breaking_missing__expected_eo (3):
   *brustz -> brust (expected brēost)
-  *frijōndz -> frīond (expected frēond)
   *juką -> ġoc (expected ġeoc)
   *jugunθiz -> ġugyþe (expected ġeoguþ)
 
@@ -91,52 +111,31 @@ breaking_missing__expected_eo_got_e (3):
 
 long_vowel_missing (7):
   *nadrō -> næder (expected nǣdre)
-  *bō -> bo (expected bā]] [[þā)
+  *bō -> bu (expected bā]] [[þā)
   *xawwją -> heow (expected hīeġ)
   *xawwăną -> heawan (expected hēawan)
   *mizdō -> mierd (expected mēd)
-  *strawą -> streaw (expected strēaw)
-  *texun -> teoon (expected tīen)
 
-no_output (5):
+no_output (8):
+  *galaubjăną -> +? (expected ġelīefan)
   *funxwstiz -> +? (expected fȳst)
+  *xagōn -> +? (expected haga)
   *regna-bugōn -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
-  *wira-aldiz -> +? (expected weorold)
-  *wurmaz/wurmiz -> +? (expected wyrm)
 
 palatalization_missing (1):
   *xunăgą -> hunag (expected huniġ)
 
-final_vowel_extra (6):
-  *liθuz -> liþo (expected hlid)
+final_vowel_extra (7):
+  *laimōn -> lāma (expected lām)
   *natją -> nete (expected net)
-  *saiwălō -> sāwalo (expected sāwol)
+  *sapōn -> sæpa (expected sæp)
+  *saiwălō -> sāwalu (expected sāwol)
   *stabiz -> stefe (expected stæf)
-  *westănē -> westane (expected west)
-  *wullo -> wollo (expected wull)
 
 length_extra_other (2):
   *dōną -> dōn (expected don)
   *finþăną -> fīþan (expected findan)
-
-breaking_extra_other (16):
-  *leusăną -> lēosan (expected forloren)
-  *geftiz -> ġieft (expected ġift)
-  *xlaxjăną -> hliehġan (expected hlæhhan)
-  *libēną -> leofon (expected lifian)
-  *newun -> nēowon (expected nigon)
-  *raukiz -> rīeċ (expected rēc)
-  *skellinăz -> sċiellen (expected sċilling)
-  *skeubăną -> sċēofan (expected sċūfan)
-  *smerwjăną -> smierwan (expected smerian)
-  *sparrōn -> spearron (expected sperran)
-  *sparēną -> spearon (expected sparian)
-  *strawjăną -> streowan (expected strewian)
-  *swalgwōn -> swealgwon (expected swelgan)
-  *θrejez -> þrīe (expected þrī)
-  *waljăną -> wielan (expected willan)
-  *walθuz -> wealþ (expected wald)
 
 palatal_marker_variant (1):
   *skūflō -> sċūfl (expected scofl)
@@ -144,46 +143,49 @@ palatal_marker_variant (1):
 epenthetic_vowel_missing (1):
   *fulgēną -> folgon (expected folgian)
 
-vowel_quality_other (25):
-  *bukkăz -> bocc (expected bucc)
-  *kraftiz -> creft (expected cræft)
-  *erθo -> eorþo (expected eorþe)
-  *fuglăz -> fogol (expected fugol)
-  *gud -> gud (expected god)
-  *gansz -> gās (expected gōs)
-  *xamaras -> hameres (expected hamores)
-  *xerdō -> heord (expected hierd)
-  *mēnōθz -> mōnoþ (expected mōnaþ)
-  *mōdēr -> mōder (expected mōdor)
-  *nabō -> nafo (expected nafu)
-  *nistą -> nist (expected nest)
-  *nasō -> naso (expected nosu)
-  *rustō -> rost (expected rust)
-  *sakō -> saco (expected sacu)
-  *skamō -> sċamo (expected sċamu)
-  *sumerăz -> sumer (expected sumor)
-  *θegnăz -> þeġn (expected þæġn)
-  *θurnuz -> þurn (expected þorn)
-  *wakēną -> wacon (expected wacan)
-  *warto -> wearto (expected wearte)
-  *wiθră -> wiþer (expected weþer)
-  *weljōn -> willon (expected willan)
-  *wīθijăz -> wīþeġ (expected wīþiġ)
-  *wulfăz -> wolf (expected wulf)
+syncopation_missing (3):
+  *fleuxăną -> flēoan (expected flēon)
+  *melukz -> meoloc (expected meolc)
+  *natilōn -> netela (expected netle)
 
 final_devoicing_missing (1):
   *budmăz -> bodm (expected botm)
 
-prefix_morphology_issue (1):
-  *laubjăną -> līefan (expected belīefan)
+r_metathesis (2):
+  *brestăną -> brestan (expected berstan)
+  *frustą -> frost (expected forst)
+
+breaking_extra__ea_for_a (1):
+  *sparēną -> spearon (expected sparian)
+
+breaking_extra__eo_for_e (1):
+  *strawjăną -> streowan (expected strewian)
+
+breaking_extra__eo_for_high (3):
+  *libēną -> leofon (expected lifian)
+  *newun -> nēowon (expected nigon)
+  *skeubăną -> sċēofan (expected sċūfan)
+
+breaking_extra__ie_for_e (1):
+  *raukiz -> rīeċ (expected rēc)
+
+breaking_extra__ie_for_i (2):
+  *geftiz -> ġieft (expected ġift)
+  *θrejez -> þrīe (expected þrī)
+
+breaking_extra__ie_other (1):
+  *xlaxjăną -> hliehġan (expected hlæhhan)
+
+breaking_extra__wrong_form (3):
+  *leusăną -> lēosan (expected forloren)
+  *skellinăz -> sċiellen (expected sċilling)
+  *waljăną -> wielan (expected willan)
 
 palatal_extra__j_triggered (1):
   *likkōjăną -> liċcēian (expected liccian)
 
-palatal_extra__orth_normalization (4):
+palatal_extra__orth_normalization (2):
   *brekăną -> breċan (expected brecan)
-  *kalbăz -> ċealf (expected cealf)
-  *gebăną -> ġiefan (expected giefan)
   *θaką -> þæċ (expected þæc)
 
 palatal_extra__other (1):
@@ -193,47 +195,67 @@ palatal_extra__velar_before_front (2):
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġinnan (expected beginnan)
 
-back_expected_front_out__AFB_like (4):
-  *xlaθăną -> hlæþan (expected hladan)
-  *marīn -> meren (expected mann)
+a_restoration_needed (3):
+  *nablōn -> næfla (expected nafola)
   *wadăną -> wædan (expected wadan)
   *waskăną -> wæsċan (expected wasċan)
 
+a_restoration_needed__also_wrong_form (2):
+  *xlaθăną -> hlæþan (expected hladan)
+  *marīn -> meren (expected mann)
+
 back_expected_front_out__other (2):
-  *kwiθuz -> cwiþo (expected cudu)
+  *kwiθuz -> cwiþu (expected cudu)
   *swestēr -> swester (expected swustor)
+
+vowel_quality__ae_e_alternation (2):
+  *kraftiz -> creft (expected cræft)
+  *θegnăz -> þeġn (expected þæġn)
+
+vowel_quality__stressed_vowel (5):
+  *gansz -> gās (expected gōs)
+  *xerdō -> heord (expected hierd)
+  *nistą -> nist (expected nest)
+  *nasō -> nasu (expected nosu)
+  *wiθră -> wiþer (expected weþer)
+
+vowel_quality__u_lowering_exception (4):
+  *bukkăz -> bocc (expected bucc)
+  *fuglăz -> fogol (expected fugol)
+  *rustō -> rost (expected rust)
+  *wulfăz -> wolf (expected wulf)
+
+vowel_quality__u_o_alternation (2):
+  *gud -> gud (expected god)
+  *widuwōn -> widowa (expected widuwe)
+
+vowel_quality__unstressed_e_o (5):
+  *erθo -> eorþo (expected eorþe)
+  *xamaras -> hameres (expected hamores)
+  *mōdēr -> mōder (expected mōdor)
+  *sumerăz -> sumer (expected sumor)
+  *warto -> wearto (expected wearte)
+
+vowel_quality__unstressed_o_a (2):
+  *mēnōθz -> mōnoþ (expected mōnaþ)
+  *wakēną -> wacon (expected wacan)
+
+vowel_quality__unstressed_vowel (8):
+  *xertōn -> heorta (expected heorte)
+  *līstōn -> līsta (expected līste)
+  *marōn -> mæra (expected mære)
+  *sīdōn -> sīda (expected sīde)
+  *sunnōn -> sunna (expected sunne)
 
 final_vowel_missing__apocope_candidate (1):
   *durą -> dor (expected duru)
 
-final_vowel_missing__morph_form_mismatch (27):
+final_vowel_missing__morph_form_mismatch (8):
   *baugjăną -> bīeġan (expected boga)
   *beugăną -> bēogan (expected boga)
-  *bugōn -> bogon (expected boga)
   *kōwz -> cōw (expected cū)
   *deljăz -> dill (expected dile)
-  *fulōn -> folon (expected fola)
   *furxtīn -> fyrhten (expected fryhtu)
-  *xandlōjăną -> handleian (expected handle)
-  *xagōn -> hagon (expected haga)
-  *xertōn -> heorton (expected heorte)
-  *līnăn -> līnan (expected līne)
-  *līstōn -> līston (expected līste)
-  *namōn -> namon (expected nama)
-  *nablōn -> næflon (expected nafola)
-  *natilōn -> neteolon (expected netle)
-  *marōn -> mearon (expected mære)
-  *uxsōn -> oxon (expected oxa)
-  *sīdōn -> sīdon (expected sīde)
-  *spurăn -> sporan (expected spora)
-  *stelljăną -> stillan (expected stille)
-  *sunnōn -> sunnon (expected sunne)
-  *tikkōn -> tiċcōn (expected ticia)
-  *taixwō -> tāhw (expected tā)
-  *tungōn -> tungon (expected tunge)
-  *wegăz -> weġ (expected wē)
-  *xōrōn -> hōron (expected hōre)
-  *widuwōn -> widowon (expected widuwe)
 
 final_vowel_missing__other (4):
   *knuppăz -> cnopp (expected cnobba)
@@ -241,52 +263,33 @@ final_vowel_missing__other (4):
   *xnakkăz -> hnæċc (expected hnecca)
   *spennilō -> spinneol (expected spindle)
 
+final_vowel_missing__verb_vs_noun (1):
+  *xandlōjăną -> handleian (expected handle)
+
+final_vowel_missing__weak_noun_form (2):
+  *līnăn -> līnan (expected līne)
+  *spurăn -> sporan (expected spora)
+
 final_vowel_missing__weak_noun_like (8):
   *fūri -> fȳr (expected fȳre)
   *flaskō -> flasc (expected flasce)
   *gallą -> ġeall (expected ġealla)
   *xelmăz -> helm (expected helma)
   *skuldrō -> sċoldor (expected sċuldra)
-  *sibăz -> sif (expected sife)
-  *speru -> speor (expected spere)
-  *tangō -> tang (expected tange)
 
 final_n_missing__bare_n (1):
   *end -> end (expected ān)
 
-final_n_missing__expected_an (4):
+final_n_missing__expected_an (7):
   *xendjō -> hind (expected hindan)
   *markō -> mearc (expected mearcian)
+  *sparrōn -> spearra (expected sperran)
+  *swalgwōn -> swealgwa (expected swelgan)
   *θūs-undī -> þūsynde (expected sendan)
-  *tīdiz -> tīd (expected tīdan)
 
 final_n_missing__expected_en (2):
   *lindō -> lind (expected linden)
   *lungwą -> lungw (expected lungen)
-
-infl_suffix_extra__an (19):
-  *bainăn -> bānan (expected bān)
-  *brekăną -> breċan (expected brēċ)
-  *kurnăn -> cornan (expected corn)
-  *farăną -> færan (expected fær)
-  *farnăn -> fearnan (expected fearn)
-  *grabăną -> græfan (expected græf)
-  *xelpăną -> helpan (expected help)
-  *xurnăn -> hornan (expected horn)
-  *leuxtjăną -> līehtan (expected lēoht)
-  *slēpăną -> slǣpan (expected slǣp)
-  *spannăną -> spannan (expected spann)
-  *swīnăn -> swīnan (expected swīn)
-  *taiknăn -> tācnan (expected tācn)
-  *tūnăn -> tūnan (expected tūn)
-  *werpăną -> weorpan (expected wearp)
-  *waxsăną -> weaxan (expected weax)
-  *wēpnăn -> wǣpnan (expected wǣpn)
-  *windăną -> windan (expected wind)
-  *garnăn -> ġearnan (expected ġearn)
-
-infl_suffix_extra__on (1):
-  *laimōn -> lāmon (expected lām)
 
 cons_mismatch__f_vs_b__intervocalic (1):
   *xabēną -> hafon (expected habban)
@@ -304,10 +307,6 @@ cons_mismatch__g_vs_w__cluster (1):
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
 
-cons_mismatch__length_diff (2):
-  *banną -> bann (expected bannan)
-  *θankăz -> þanc (expected þancas)
-
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundreian (expected sundor-)
 
@@ -323,36 +322,24 @@ cons_mismatch__w_vs_h__cluster (1):
 cons_mismatch__w_vs_n__cluster (1):
   *singwăną -> singwan (expected singan)
 
-cons_mismatch__þ_vs_d__cluster (2):
-  *falθăną -> fealþan (expected fealdan)
+cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
 
-cons_mismatch__þ_vs_d__word_final (2):
-  *felθuz -> felþ (expected feld)
-  *gulθą -> golþ (expected gold)
-
-cons_mismatch__þ_vs_ð__word_final (1):
-  *laiθăz -> lāþ (expected lāð)
-
-cons_mismatch__ġ_vs_n__cluster (2):
+cons_mismatch__ġ_vs_n__cluster (3):
   *sōkjăną -> sēċġan (expected sēċan)
   *strakkjăną -> streċċġan (expected streċċan)
+  *θankjăną -> þenċġan (expected þenċan)
 
-uncategorized (7):
+suffix_form__eian_vs_ian (3):
   *burōjăną -> boreian (expected borian)
-  *brestăną -> brestan (expected berstan)
-  *fleuxăną -> flēoan (expected flēon)
-  *frustą -> frost (expected forst)
   *liznōjăną -> lierneian (expected leornian)
   *makōjăną -> maceian (expected macian)
-  *melukz -> meoloc (expected meolc)
 
 === A-FRONTING AUDIT ===
---- fronting_missing_no_trigger ---
+--- fronting_missing__afb ---
+*rastō -> rast (expected ræst)
+*stamnăz -> stamn (expected stemn)
+
+--- fronting_missing__also_wrong_form ---
 *dranką -> dranc (expected drenċ)
 *fastēną -> faston (expected fæst)
-*rastō -> rast (expected ræst)
-*sapōn -> sapon (expected sæp)
-*stamnăz -> stamn (expected stemn)
-*tappōn -> tappon (expected tæppa)
-*θankăz -> þanc (expected þenċan)
