@@ -1,7 +1,7 @@
 ## NWGmc u-lowering Exceptions Near Labials
 
 **Date:** 2026-02-13
-**Status:** Documented; no phonological fix possible — paradigmatic leveling
+**Status:** Documented; accepted as genuine lexical exceptions
 
 ### The problem
 
@@ -13,38 +13,72 @@ Our NWGmcULowering rule lowers stressed *u → *o before non-high vowels in a fo
 - *bukkăz → bucc (not ×bocc; OHG boc)
 - *wullō → wulle (not ×wolle; OHG wolla)
 - *lubō → lufu (not ×lofu)
+- *rustō → rust (not ×rost)
 
-### What Luick says (§78, pp.105-106/147-148)
+### Summary of the scholarly literature
 
-Luick (Historische Grammatik §78) provides the most detailed treatment:
+**Luick (§78, Anm. 3)** argues for paradigmatic leveling: doublet forms arose because paradigms had both u-preserving (high-vowel suffix) and u-lowering (non-high suffix) forms; near labials and gutturals, the u-forms were preferred. He explicitly rejects Bülbring's proposed sound change of *o → *u between labials (EB §116), citing counterexamples: *wolcen, folc, folġian, folde, folm, bolla, bolt, bolster, molde, molcen, smolt*.
 
-1. **Paradigmatic leveling, not sound change.** The u/o alternation reflects paradigm-internal competition: in most inflection types, high and mid vowels alternate in endings. Where the paradigm had more u-forms than o-forms, the u could be generalized to the root vowel.
+**R/T (§2.3.1, pp.32-33 / our OCR pp.47-48)** agree these are genuine exceptions but reach a different conclusion about paradigmatic leveling. They find it "implausible" for a-stem nouns, arguing that the only case-forms with high-vowel suffixes are functionally marginal: inst.sg. *-u, dat.pl. *-umaz, inst.pl. *-umiz. They conclude: "We do not really know why *u failed to lower in these forms."
 
-2. **Labial/guttural preference.** "Wenn Doppelformen entstanden, bei den Wörtern mit l und Labial oder Guttural die u-Formen nicht selten den Vorzug erhielten" (Anm. 3) — when doublets existed, words near labials and gutturals tended to prefer the u-form.
+### Could we use paradigm forms? (Why we decided not to)
 
-3. **Explicitly rejects a phonological rule.** Luick (citing and correcting Bülbring EB §116) says: "Ein Lautwandel aber, der o 'zwischen Labial und langem oder gedecktem' zu u werden ließ, ist schwerlich anzunehmen" — a sound change turning o back to u between labials cannot be maintained.
+For other problematic items (fire, brand, berry, thorn), we successfully resolved mismatches by adopting a paradigm form in which the phonological development is lautgesetzlich. The question is whether the same approach works for the u-lowering exceptions.
 
-4. **Counterexamples prove it's not a rule.** Luick lists words that DO show regular lowering despite labial/guttural context: *wolcen* 'cloud', *folc* 'people', *folġian* 'follow', *folde* 'earth', *folm* 'palm', *bolla* 'bowl', *bolt* 'bolt', *bolster* 'bolster', *molde* 'earth', *molcen* 'curds', *smolt* 'serene'.
+**Approach A: Use a u-stem or root-noun form.**
+R/T notes that u-stems and root nouns regularly preserve *u because their paradigms have predominantly high-vowel suffixes (nom.sg. *-uz, acc.sg. *-ŷ, gen.sg. *-iz, dat.sg. *-i, nom.pl. *-iz, etc.). For example, *lustuz (u-stem nom.sg.) → OE lust with preserved u (R/T p.45). If *wulf-, *fugl-, or *bukk- were u-stems, we could use the nom.sg. in *-uz.
 
-5. **OE doublets survive.** Luick notes that OE itself shows doublet pairs: *spura/spora* 'spur', *spurnan/spornan* 'kick', *cnucian/cnocian* 'knock' — confirming the competition was still active in the OE period.
+**What weighs against Approach A:**
+- Kroonen reconstructs *wulfa- (a-stem; p.598), *fugla- (a-stem), and *bukka(n)- (originally n-stem; p.98) — none as u-stems.
+- There is no Gothic or comparative evidence for u-stem inflection of these words. Gothic wulfs is an a-stem, Gothic fugls is an a-stem.
+- Using a u-stem nom.sg. would require us to posit a stem-class that is not attested in any daughter language. This would be philologically indefensible.
 
-### What R/T says (§2.3.1 pp.32-33)
+**Approach B: Use the instrumental singular *-u of the a-stem.**
+The a-stem instrumental singular ended in *-u (high vowel), which would block lowering: *wulfu → *wulfu (u preserved) → OE wulf.
 
-R/T concurs with Luick's assessment: "We do not really know why *u failed to lower in these forms" (p.33). They note that the exceptions "tend to cluster around labials" but do not propose a conditioning environment, citing the same counterexamples (folc, folm, etc.).
+**What weighs against Approach B:**
+- R/T explicitly calls leveling from these forms "implausible" because they are "relatively marginal in functional terms" (p.47). The instrumental singular was an infrequent case form, making it unlikely to be the analogical source for the entire paradigm's root vowel.
+- If inst.sg. *-u could drive paradigmatic leveling for *wulf- and *full-, it should have done the same for *folc, *folm, *bolla, etc. — but those show regular lowering. The approach would explain some exceptions but cannot explain why the inst.sg. analogy worked here and not elsewhere.
+- R/T's analysis orders u-lowering BEFORE the loss of final *a in PWGmc. At that early date, the relative paradigmatic weight of the inst.sg. would have been even smaller, since many more case-forms with non-high endings still survived.
 
-### Implications for our FST
+**Approach C: Use the root-noun analysis (for words that could have been root nouns).**
+R/T notes (p.44) that "nearly all a-stems exhibit lowering but no root-nouns do." If *wulf- or *fugl- had originally been root nouns (endingless nom.sg.), the u would have been preserved because root nouns had predominantly high-vowel endings.
 
-Since the u-retention is paradigmatic leveling (lexically conditioned), not a regular phonological change, we **cannot model it as a sound-change rule** in the FST. Our options are:
+**What weighs against Approach C:**
+- Kroonen's reconstructions show these as thematic stems (*wulfa-, *fugla-), not root nouns.
+- Gothic wulfs shows the thematic nom.sg. ending *-az, not a root-noun pattern.
+- Root nouns are a small, archaic class (burg, brust, furh, hnut-); extending the analysis to common nouns like 'wolf' and 'fowl' would be speculative.
 
-1. **Accept the mismatches** — our FST correctly applies the regular sound change, and the u-retaining items are lexical exceptions. This is the current approach.
-2. **Use paradigm forms** — for items like *θurnăz (not *θurnuz), choosing the right inflectional form can resolve some cases (as we did for thorn, fire, brand, berry).
-3. **Lexical exceptions list** — if we wanted perfect output, we could add a post-phonology override for specific lexemes, but this is unprincipled and defeats the purpose of the FST.
+**Approach D: Use a derivational form with i-umlaut trigger.**
+For some of the items, there are derivational forms with *j or *i that block lowering: *wulfi- (hypothetical i-stem variant?), or the derived verb *fullijaną 'to fill' → OE fyllan (where *-ij- blocks lowering of root *u).
 
-**Decision:** Accept the mismatches and annotate them in the TSV. The FST is phonologically correct; the exceptions are morphological.
+**What weighs against Approach D:**
+- These derived forms already show i-umlaut (*fullijaną → fyllan, not full). We can't simultaneously have the u preserved (from the high-vowel context) AND escape i-umlaut. The derivational base is a different word, not a paradigm form of the simplex noun.
 
-### Specialist reference
+### Luick's doublets evidence
 
-Full citation: Karl Luick, *Historische Grammatik der englischen Sprache* (Leipzig, 1914-40), §78 (pp.147-148 = our OCR pp.105-106), especially Anm. 3.
+Luick (§78, main text and Anm. 2) provides important evidence that OE itself had active u/o alternation:
+- Attested doublets: *spura/spora* 'spur', *spurnan/spornan* 'kick', *cnucian/cnocian* 'knock'
+- Doublets inferred from later ME developments: *ufen/ofen* 'oven', *smuca/smoca* 'smoke', *cuss/coss* 'kiss', *murþor/morþor* 'murder', *scufel/scofel* 'shovel'
+
+This suggests the u/o split was not fully stable even in OE, and the WS literary standard simply codified one variant. But this does not provide a mechanism for our FST.
+
+### Areal variation
+
+Luick (Anm. 1) and R/T both note that OE, OFris., and OS share the u-preserving forms, while OHG has regular lowered forms: OE/OS wulf vs. OHG wolf, OE/OS full vs. OHG fol. This is a NWGmc areal feature, not specifically OE. R/T goes further: for *wulfaz, even OF (!) shows wolf with lowering, which is unexpected if the u-preservation were a shared northern WGmc innovation.
+
+### Decision and implementation
+
+**Decision:** Accept the mismatches. The FST correctly models the regular NWGmc u-lowering as a phonological rule. The u-preserving forms are genuine lexical exceptions for which no phonological conditioning has been established. Annotate each exception in the TSV citing Luick §78 and R/T §2.3.1.
+
+**For future expert discussion:** The most promising angle might be Luick's observation about consonantal environment (near labials/gutturals + l). While neither Luick nor R/T accept this as a categorical rule, the statistical clustering might reflect a phonetic tendency — perhaps the acoustic similarity between labial/velar environments and the labial component of [u] made the lowered [o] variant phonetically less stable in those contexts. This would be a gradient/probabilistic effect rather than a Neogrammarian rule, and is therefore fundamentally not modelable in a deterministic FST.
+
+### References
+
+- Luick, K. (1914-40). *Historische Grammatik der englischen Sprache.* Leipzig. §78 (pp.147-148), esp. Anm. 1-3.
+- Bülbring, K.D. *Altenglisches Elementarbuch* (cited by Luick as EB §116 — rejected).
+- R/T vol.2 §2.3.1 pp.27-33 (our OCR pp.42-48).
+- Kroonen (2013): *wulfa-* p.598, *bukka(n)-* p.98, *fugla-* (see under *fugla-*).
 
 ---
 
