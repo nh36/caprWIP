@@ -142,10 +142,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1772	b r ɛ s t	*brustz	b - r ɛ s t ( - )	brɛst	breast	485	English				breast	*brustz	32
 1968	b r ē o s t	*brustz	b - r ɛ s t ( - )	breːo̯st	brēost	485	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			breast	*brustz	32
 1771	b r ʊ s t	*brustz	b - r ʊ s t ( - )	brʊst	Brust	485	German				breast	*brustz	32
-1516	b r uː k	*brekăną	b r uː k ( - - )	bruːk	broek	415	Dutch				breeches	*brekăną	33
-1515	b r ʊ k	*brekăną	b r ʊ k ( - - )	brʊk	breeches	415	English				breeches	*brekăną	33
-1969	b r ē ċ	*brekăną	b r ʊ k ( - - )	brʊk	brēċ	415	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			breeches	*brekăną	33
-1514	b r ʊ x	*brekăną	b r ʊ x ( - - )	brʊx	Bruch	415	German				breeches	*brekăną	33
+1516	b r uː k	*brōkiz	b r uː k ( - - )	bruːk	broek	415	Dutch	Proto: *brekăną→*brōkiz (Kroonen *brōk- f. 'breeches', nom.pl. with i-mutation)			breeches	*brōkiz	33
+1515	b r ʊ k	*brōkiz	b r ʊ k ( - - )	brʊk	breeches	415	English	Proto: *brekăną→*brōkiz (Kroonen *brōk- f. 'breeches')			breeches	*brōkiz	33
+1969	b r ē ċ	*brōkiz	b r ʊ k ( - - )	brʊk	brēċ	415	Old_English	Proto: *brekăną→*brōkiz (Kroonen *brōk- f. 'breeches', nom.pl.; i-umlaut ō→ē)			breeches	*brōkiz	33
+1514	b r ʊ x	*brōkiz	b r ʊ x ( - - )	brʊx	Bruch	415	German	Proto: *brekăną→*brōkiz (Kroonen *brōk- f. 'breeches')			breeches	*brōkiz	33
 296	b r œy t	*brūdiz	b r œy t ( - - )	brœyt	bruid	82	Dutch				bride	*brūdiz	34
 295	b r aɪ d	*brūdiz	b r aɪ d ( - - )	braɪd	bride	82	English				bride	*brūdiz	34
 1970	b r ȳ d	*brūdiz	b r aɪ d ( - - )	braɪd	brȳd	82	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bride	*brūdiz	34
@@ -279,7 +279,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 248	f a l ə n	*fallăną	f a l ə n ( - - )	falən	fallen	69	German				fall	*fallăną	65
 205	v aː r ə	*farăną	v aː r ə - ( - - )	vaːrə	varen	57	Dutch				fare	*farăną	66
 204	f ɛə	*farăną	f ɛə r - - ( - - )	fɛə	fare	57	English				fare	*farăną	66
-2003	f æ r	*farăną	f ɛə r - - ( - - )	fɛə	fær	57	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			fare	*farăną	66
+2003	f æ r a n	*farăną	f ɛə r - - ( - - )	fɛə	færan	57	Old_English	OE target: fær→færan (inf. of str.v. class VI 'to fare, go')			fare	*farăną	66
 203	f aː r ə n	*farăną	f aː r ə n ( - - )	faːrən	fahren	57	German				fare	*farăną	66
 1317	v ɑ s t ə	*fastēną	v ɑ s t ə - ( - - )	vɑstə	vasten	361	Dutch				fast	*fastēną	67
 1316	f ɑː s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fast	361	English				fast	*fastēną	67
@@ -447,7 +447,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 789	ɡ r aː s	*grasą	ɡ r aː s ( - - )	ɡraːs	Gras	216	German				grass	*grasą	104
 134	x r aː v ə	*grabăną	x r aː v ə - ( - - )	xraːvə	graven	37	Dutch				grave	*grabăną	105
 133	ɡ r ɑː v	*grabăną	ɡ r ɑː v - - ( - - )	ɡrɑːv	grave	37	English				grave	*grabăną	105
-2046	g r æ f	*grabăną	ɡ r ɑː v - - ( - - )	ɡrɑːv	græf	37	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			grave	*grabăną	105
+2046	g r æ f a n	*grabăną	ɡ r ɑː v - - ( - - )	ɡrɑːv	græfan	37	Old_English	OE target: græf→græfan (inf. of str.v. class VI 'to dig, grave')			grave	*grabăną	105
 132	ɡ r aː b ə n	*grabăną	ɡ r aː b ə n ( - - )	ɡraːbən	graben	37	German				grave	*grabăną	105
 243	x r ɛɪ p ə	*grīpăną	x r ɛɪ p ə - ( - - )	xrɛɪpə	grijpen	67	Dutch				gripe	*grīpăną	106
 242	ɡ r aɪ p	*grīpăną	ɡ r aɪ p - - ( - - )	ɡraɪp	gripe	67	English				gripe	*grīpăną	106
@@ -546,7 +546,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1446	h ɛ l p ə	*xelpăną	h ɛ l p ə - ( - - )	hɛlpə	helpen	395	Dutch				help	*xelpăną	128
 479	h ʉ l p	*xelpō	h ʉ l p -	hʉlp	hulp	131	Dutch				help	*xelpō	128
 1445	h ɛ l p	*xelpăną	h ɛ l p - - ( - - )	hɛlp	help	395	English				help	*xelpăną	128
-2071	h e l p	*xelpăną	h ɛ l p - - ( - - )	hɛlp	help	395	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			help	*xelpăną	128
+2071	h e l p a n	*xelpăną	h ɛ l p - - ( - - )	hɛlp	helpan	395	Old_English	OE target: help→helpan (inf. of str.v. class III; noun 'help' is in *xelpō row)			help	*xelpăną	128
 478	h ɛ l p	*xelpō	h ɛ l p -	hɛlp	help	131	English				help	*xelpō	128
 2072	h e l p	*xelpō	h ɛ l p -	hɛlp	help	131	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			help	*xelpō	128
 1444	h ɛ l f ə n	*xelpăną	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German				help	*xelpăną	128
@@ -663,7 +663,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 837	l ai p	*lībą	l ai b ( - - )	laip	Leib	230	German				life	*lībą	151
 528	l ɪ x t ə	*leuxtjăną	l ɪ x t - ə - ( - - )	lɪxtə	lichten	144	Dutch				light	*leuxtjăną	152
 527	l aɪ t	*leuxtjăną	l aɪ - t - - - ( - - )	laɪt	light	144	English				light	*leuxtjăną	152
-2102	l ē o h t	*leuxtjăną	l aɪ - t - - - ( - - )	laɪt	lēoht	144	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			light	*leuxtjăną	152
+2102	l ī e h t a n	*leuxtjăną	l aɪ - t - - - ( - - )	laɪt	līehtan	144	Old_English	OE target: lēoht→līehtan (wk.v. I 'to light', matching verb proto *leuxtjăną; noun 'lēoht' from *leuxtą)			light	*leuxtjăną	152
 526	l ɔy x t ə n	*leuxtjăną	l ɔy x t - ə n ( - - )	lɔyxtən	leuchten	144	German				light	*leuxtjăną	152
 122	l ɛɪ m	*līmą	l ɛɪ m ( - - )	lɛɪm	lijm	34	Dutch				lime	*līmą	153
 121	l aɪ m	*līmą	l aɪ m ( - - )	laɪm	lime	34	English				lime	*līmą	153
@@ -1028,7 +1028,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1144	ʃ l aː ɡ ə n	*slaxăną	ʃ l aː ɡ ə n ( - - )	ʃlaːɡən	schlagen	314	German				slay	*slaxăną	234
 1668	s l aː p ə	*slēpăną	s l aː p ə - ( - - )	slaːpə	slapen	457	Dutch				sleep	*slēpăną	235
 1667	s l iː p	*slēpăną	s l iː p - - ( - - )	sliːp	sleep	457	English				sleep	*slēpăną	235
-2196	s l ǣ p	*slēpăną	s l iː p - - ( - - )	sliːp	slǣp	457	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sleep	*slēpăną	235
+2196	s l ǣ p a n	*slēpăną	s l iː p - - ( - - )	sliːp	slǣpan	457	Old_English	OE target: slǣp→slǣpan (inf. of str.v. class VII 'to sleep')			sleep	*slēpăną	235
 1666	ʃ l aː f ə n	*slēpăną	ʃ l aː f ə n ( - - )	ʃlaːfən	schlafen	457	German				sleep	*slēpăną	235
 1912	s l ɛɪ m	*slīmą	s l ɛɪ m ( - - )	slɛɪm	slijm	524	Dutch				slime	*slīmą	236
 1911	s l aɪ m	*slīmą	s l aɪ m ( - - )	slaɪm	slime	524	English				slime	*slīmą	236
@@ -1052,7 +1052,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1323	z eː l ə	*saiwălō	z eː - - l ə	zeːlə	Seele	363	German				soul	*saiwălō	240
 1359	s p ɑ n ə	*spannăną	s p ɑ n ə - ( - - )	spɑnə	spannen	372	Dutch				span	*spannăną	241
 1358	s p æ n	*spannăną	s p æ n - - ( - - )	spæn	span	372	English				span	*spannăną	241
-2202	s p a n n	*spannăną	s p æ n - - ( - - )	spæn	spann	372	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			span	*spannăną	241
+2202	s p a n n a n	*spannăną	s p æ n - - ( - - )	spæn	spannan	372	Old_English	OE target: spann→spannan (inf. of str.v. class VII; noun 'spann' in *spannō row)			span	*spannăną	241
 570	s p æ n	*spannō	s p æ n ( - )	spæn	span	156	English				span	*spannō	241
 2203	s p a n n	*spannō	s p æ n ( - )	spæn	spann	156	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			span	*spannō	241
 1357	ʃ p a n ə n	*spannăną	ʃ p a n ə n ( - - )	ʃpanən	spannen	372	German				span	*spannăną	241
@@ -1315,7 +1315,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1768	ʋ ɔː p	*warpą	ʋ ɔː - p ( - - )	ʋɔːp	warp	484	English				warp	*warpą	300
 2269	w e a r p	*warpą	ʋ ɔː - p ( - - )	ʋɔːp	wearp	484	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			warp	*warpą	300
 1561	ʋ ɔː p	*werpăną	ʋ ɔː - p - - ( - - )	ʋɔːp	warp	428	English				warp	*werpăną	300
-2270	w e a r p	*werpăną	ʋ ɔː - p - - ( - - )	ʋɔːp	wearp	428	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			warp	*werpăną	300
+2270	w e o r p a n	*werpăną	ʋ ɔː - p - - ( - - )	ʋɔːp	weorpan	428	Old_English	OE target: wearp→weorpan (inf. of str.v. class III; noun/past 'wearp' in *warpą row)			warp	*werpăną	300
 1767	v ɛ r f t	*warpą	v ɛ r f ( t - )	vɛrft	Werft	484	German				warp	*warpą	300
 1560	v ɛ r f ə n	*werpăną	v ɛ r f ə n ( - - )	vɛrfən	werfen	428	German				warp	*werpăną	300
 1173	ʋ r ɑ t	*warto	ʋ - r ɑ t -	ʋrɑt	wrat	321	Dutch				wart	*warto	301
@@ -1339,7 +1339,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 848	ʋ æ k s	*waxsą	ʋ æ k s ( - - )	ʋæks	wax	233	English				wax	*waxsą	305
 2275	w e a x	*waxsą	ʋ æ k s ( - - )	ʋæks	weax	233	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wax	*waxsą	305
 695	ʋ æ k s	*waxsăną	ʋ æ k s - - ( - - )	ʋæks	wax	191	English				wax	*waxsăną	305
-2276	w e a x	*waxsăną	ʋ æ k s - - ( - - )	ʋæks	weax	191	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wax	*waxsăną	305
+2276	w e a x a n	*waxsăną	ʋ æ k s - - ( - - )	ʋæks	weaxan	191	Old_English	OE target: weax→weaxan (inf. of str.v. class VI; noun 'weax' in *waxsą row)			wax	*waxsăną	305
 847	v a k s	*waxsą	v a k s ( - - )	vaks	Wachs	233	German				wax	*waxsą	305
 694	v a k s ə n	*waxsăną	v a k s ə n ( - - )	vaksən	wachsen	191	German				wax	*waxsăną	305
 1883	ʋ ɛ x	*wegăz	ʋ ɛ x ( - - )	ʋɛx	weg	516	Dutch				way	*wegăz	306
@@ -1409,7 +1409,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 215	v ɪ l ə	*weljōn	v ɪ l - ə ( - )	vɪlə	Wille	60	German				will	*weljōn	318
 900	ʋ ɪ n d ə	*windăną	ʋ ɪ n d ə - ( - - )	ʋɪndə	winden	247	Dutch				wind	*windăną	319
 899	ʋ ɪ n d	*windăną	ʋ ɪ n d - - ( - - )	ʋɪnd	wind	247	English				wind	*windăną	319
-2294	w i n d	*windăną	ʋ ɪ n d - - ( - - )	wind	wind	247	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wind	*windăną	319
+2294	w i n d a n	*windăną	ʋ ɪ n d - - ( - - )	wind	windan	247	Old_English	OE target: wind→windan (inf. of str.v. class III 'to wind, turn')			wind	*windăną	319
 898	v ɪ n d ə n	*windăną	v ɪ n d ə n ( - - )	vɪndən	winden	247	German				wind	*windăną	319
 277	ʋ ɪ n t ə r	*wintruz	ʋ ɪ n t ə r ( - - )	ʋɪntər	winter	76	Dutch				winter	*wintruz	320
 276	ʋ ɪ n t ə	*wintruz	ʋ ɪ n t ə r ( - - )	ʋɪntə	winter	76	English				winter	*wintruz	320
