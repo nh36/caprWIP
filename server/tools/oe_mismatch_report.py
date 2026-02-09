@@ -519,6 +519,17 @@ def _vowel_quality_subtype(out: str, expected: str, proto_norm: str) -> str:
     # 4. Unstressed vowel: first vowel matches, later vowel(s) differ
     if len(out_vowels) == len(exp_vowels) and len(out_vowels) >= 2:
         if out_vowels[0] == exp_vowels[0] and out_vowels[1:] != exp_vowels[1:]:
+            # Sub-classify by the nature of the unstressed difference
+            for i in range(1, len(out_vowels)):
+                if out_vowels[i] != exp_vowels[i]:
+                    pair = (out_vowels[i], exp_vowels[i])
+                    # e→o or o→e in unstressed syllable (common OE reduction)
+                    if set(pair) == {"e", "o"}:
+                        return "vowel_quality__unstressed_e_o"
+                    # o→a or a→o in unstressed syllable
+                    if set(pair) == {"o", "a"} or set(pair) == {"ō", "a"}:
+                        return "vowel_quality__unstressed_o_a"
+                    break
             return "vowel_quality__unstressed_vowel"
 
     return "vowel_quality__other"
@@ -658,7 +669,12 @@ def other_subtype(out: str, expected: str, proto_norm: str = "") -> str:
         if len(expected) >= len(out) + 2:
             if exp_cons_only and out_cons in exp_cons_only[1:]:
                 return "prefix_morphology_issue"
-        # 4. Consonant-pair sub-buckets
+        # 4. þ/ð allography (same phoneme, different grapheme)
+        out_norm_th = out.replace("ð", "þ")
+        exp_norm_th = expected.replace("ð", "þ")
+        if out_norm_th == exp_norm_th:
+            return "orth__thorn_eth_allography"
+        # 5. Consonant-pair sub-buckets
         pair = _find_first_cons_mismatch(out, expected)
         pos = _cons_mismatch_position(out, expected)
         if pair and pos:
@@ -740,6 +756,7 @@ def write_report(
         "length_extra_other",
         "front_expected_back_out",
         "palatal_marker_variant",
+        "orth__thorn_eth_allography",
         "epenthetic_vowel_missing",
         "syncopation_missing",
         "gemination_extra",
@@ -805,6 +822,8 @@ def write_report(
         "a_restoration_needed__also_wrong_form",
         "prefix_morphology_issue",
         "cons_mismatch__length_diff",
+        "orth__thorn_eth_allography",
+        "palatal_extra__orth_normalization",
     }
     documented_keys = {
         "vowel_quality__u_lowering_exception",
