@@ -455,9 +455,8 @@ def _palatal_extra_subtype(out: str, expected: str, proto_norm: str) -> str:
 
 
 def _back_front_subtype(out: str, expected: str, proto_norm: str) -> str:
-    """Classify back_expected_front_out by AFB / a-restoration / morphology."""
+    """Classify back_expected_front_out: output has front vowel, expected has back."""
     # Check if the mismatch is primarily in suffix/tail material
-    # Heuristic: if the first 2+ characters match, it's probably a tail/suffix issue
     common_prefix = 0
     for i in range(min(len(out), len(expected))):
         if out[i] == expected[i]:
@@ -465,18 +464,23 @@ def _back_front_subtype(out: str, expected: str, proto_norm: str) -> str:
         else:
             break
     if common_prefix >= 2 and common_prefix >= len(expected) - 2:
-        return "back_expected_front_out__morph_or_data_tail"
+        return "a_restoration_needed__morph_tail"
 
-    # Is this an AFB-like context? (proto *a before nasal/liquid + consonant)
+    # Is this an AFB-like context? Proto *a was fronted but expected has back vowel.
+    # This means a-restoration should have undone the fronting, or the TSV target
+    # uses an a-restored form that we're not producing.
     if is_a_fronting_context(proto_norm):
-        return "back_expected_front_out__AFB_like"
+        out_cons = consonant_sequence(out)
+        exp_cons = consonant_sequence(expected)
+        if out_cons != exp_cons:
+            return "a_restoration_needed__also_wrong_form"
+        return "a_restoration_needed"
 
-    # Check for a-restoration-like patterns: expected has back vowel (a/o) where
-    # we produce a front vowel — suggests a-restoration should undo fronting
+    # Non-*a context: expected has back vowel where we produce front
     first_exp = oe_first_vowel_unit(expected)
     first_out = oe_first_vowel_unit(out)
     if first_exp in ("a", "ā") and first_out in ("æ", "ǣ", "e", "ē"):
-        return "back_expected_front_out__a_restoration_like"
+        return "a_restoration_needed"
 
     return "back_expected_front_out__other"
 
@@ -749,6 +753,7 @@ def write_report(
     # Group dynamic keys by prefix for readability
     breaking_extra_keys = [k for k in dynamic_keys if k.startswith("breaking_extra__")]
     palatal_keys = [k for k in dynamic_keys if k.startswith("palatal_extra__")]
+    a_restoration_keys = [k for k in dynamic_keys if k.startswith("a_restoration_needed")]
     back_front_keys = [k for k in dynamic_keys if k.startswith("back_expected_front_out__")]
     vowel_quality_keys = [k for k in dynamic_keys if k.startswith("vowel_quality__")]
     final_vowel_keys = [k for k in dynamic_keys if k.startswith("final_vowel_missing__")]
@@ -759,7 +764,8 @@ def write_report(
     other_dynamic = [
         k for k in dynamic_keys
         if not any(k.startswith(p) for p in (
-            "breaking_extra__", "palatal_extra__", "back_expected_front_out__",
+            "breaking_extra__", "palatal_extra__", "a_restoration_needed",
+            "back_expected_front_out__",
             "vowel_quality__", "final_vowel_missing__", "final_n_missing__",
             "infl_suffix_extra__", "cons_mismatch__", "suffix_form__",
         ))
@@ -770,6 +776,7 @@ def write_report(
         fixed_other_keys
         + ["--- breaking_extra sub-buckets ---"] + breaking_extra_keys
         + ["--- palatal_extra sub-buckets ---"] + palatal_keys
+        + ["--- a_restoration sub-buckets ---"] + a_restoration_keys
         + ["--- back_expected_front_out sub-buckets ---"] + back_front_keys
         + ["--- vowel_quality sub-buckets ---"] + vowel_quality_keys
         + ["--- final_vowel_missing sub-buckets ---"] + final_vowel_keys
@@ -784,6 +791,38 @@ def write_report(
     mismatch_total = sum(len(v) for v in buckets.values())
     lines: List[str] = []
     lines.append(f"Total mismatches: {mismatch_total}")
+    lines.append("")
+
+    # Categorize buckets by intervention type
+    tsv_fixable_keys = {
+        "fronting_missing__also_wrong_form", "breaking_extra__wrong_form",
+        "infl_suffix_extra__verb_vs_noun", "infl_suffix_extra__nstem_vs_bare",
+        "infl_suffix_extra__on",
+        "final_vowel_missing__verb_vs_noun", "final_vowel_missing__weak_noun_form",
+        "final_vowel_missing__morph_form_mismatch",
+        "final_n_missing__expected_an", "final_n_missing__expected_en",
+        "final_n_missing__bare_n",
+        "a_restoration_needed__also_wrong_form",
+        "prefix_morphology_issue",
+        "cons_mismatch__length_diff",
+    }
+    documented_keys = {
+        "vowel_quality__u_lowering_exception",
+    }
+    phonology_keys_core = set(core_keys)
+    all_other_keys_with_counts = {k: len(v) for k, v in other_subs.items() if v}
+
+    tsv_count = sum(all_other_keys_with_counts.get(k, 0) for k in tsv_fixable_keys)
+    documented_count = sum(all_other_keys_with_counts.get(k, 0) for k in documented_keys)
+    phonology_core = sum(len(buckets.get(k, [])) for k in core_keys)
+    phonology_other = sum(v for k, v in all_other_keys_with_counts.items()
+                         if k not in tsv_fixable_keys and k not in documented_keys)
+
+    lines.append("=== INTERVENTION SUMMARY ===")
+    lines.append(f"  TSV/data fixes needed:      {tsv_count}")
+    lines.append(f"  Documented exceptions:       {documented_count}")
+    lines.append(f"  Phonology (core buckets):    {phonology_core}")
+    lines.append(f"  Phonology (other buckets):   {phonology_other}")
     lines.append("")
 
     # Summary counts
