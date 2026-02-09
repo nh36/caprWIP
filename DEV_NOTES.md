@@ -1,3 +1,53 @@
+## NWGmc u-lowering Exceptions Near Labials
+
+**Date:** 2026-02-13
+**Status:** Documented; no phonological fix possible — paradigmatic leveling
+
+### The problem
+
+Our NWGmcULowering rule lowers stressed *u → *o before non-high vowels in a following syllable (R/T vol.2 §2.3.1 pp.27-33). This is correct and well-established. However, several lexemes retain *u where *o is predicted:
+
+- *fullăz → full (not ×foll; OHG fol)
+- *wulfăz → wulf (not ×wolf; OHG wolf)
+- *fuglăz → fugol (not ×fogol; OHG fogal)
+- *bukkăz → bucc (not ×bocc; OHG boc)
+- *wullō → wulle (not ×wolle; OHG wolla)
+- *lubō → lufu (not ×lofu)
+
+### What Luick says (§78, pp.105-106/147-148)
+
+Luick (Historische Grammatik §78) provides the most detailed treatment:
+
+1. **Paradigmatic leveling, not sound change.** The u/o alternation reflects paradigm-internal competition: in most inflection types, high and mid vowels alternate in endings. Where the paradigm had more u-forms than o-forms, the u could be generalized to the root vowel.
+
+2. **Labial/guttural preference.** "Wenn Doppelformen entstanden, bei den Wörtern mit l und Labial oder Guttural die u-Formen nicht selten den Vorzug erhielten" (Anm. 3) — when doublets existed, words near labials and gutturals tended to prefer the u-form.
+
+3. **Explicitly rejects a phonological rule.** Luick (citing and correcting Bülbring EB §116) says: "Ein Lautwandel aber, der o 'zwischen Labial und langem oder gedecktem' zu u werden ließ, ist schwerlich anzunehmen" — a sound change turning o back to u between labials cannot be maintained.
+
+4. **Counterexamples prove it's not a rule.** Luick lists words that DO show regular lowering despite labial/guttural context: *wolcen* 'cloud', *folc* 'people', *folġian* 'follow', *folde* 'earth', *folm* 'palm', *bolla* 'bowl', *bolt* 'bolt', *bolster* 'bolster', *molde* 'earth', *molcen* 'curds', *smolt* 'serene'.
+
+5. **OE doublets survive.** Luick notes that OE itself shows doublet pairs: *spura/spora* 'spur', *spurnan/spornan* 'kick', *cnucian/cnocian* 'knock' — confirming the competition was still active in the OE period.
+
+### What R/T says (§2.3.1 pp.32-33)
+
+R/T concurs with Luick's assessment: "We do not really know why *u failed to lower in these forms" (p.33). They note that the exceptions "tend to cluster around labials" but do not propose a conditioning environment, citing the same counterexamples (folc, folm, etc.).
+
+### Implications for our FST
+
+Since the u-retention is paradigmatic leveling (lexically conditioned), not a regular phonological change, we **cannot model it as a sound-change rule** in the FST. Our options are:
+
+1. **Accept the mismatches** — our FST correctly applies the regular sound change, and the u-retaining items are lexical exceptions. This is the current approach.
+2. **Use paradigm forms** — for items like *θurnăz (not *θurnuz), choosing the right inflectional form can resolve some cases (as we did for thorn, fire, brand, berry).
+3. **Lexical exceptions list** — if we wanted perfect output, we could add a post-phonology override for specific lexemes, but this is unprincipled and defeats the purpose of the FST.
+
+**Decision:** Accept the mismatches and annotate them in the TSV. The FST is phonologically correct; the exceptions are morphological.
+
+### Specialist reference
+
+Full citation: Karl Luick, *Historische Grammatik der englischen Sprache* (Leipzig, 1914-40), §78 (pp.147-148 = our OCR pp.105-106), especially Anm. 3.
+
+---
+
 ## PWGmc *lþ → *ld Voicing and Verner's Law Overlap
 
 **Date:** 2026-02-13
