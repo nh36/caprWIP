@@ -762,7 +762,8 @@ define EnglishStarAlphabet [
     EnglishStarVocalic |
     EnglishStarConsonant |
     EnglishPalatalConsonant |
-    {*Kn} | {*Gn}
+    {*Kn} | {*Gn} |
+    {*ǭ}
 ];
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
@@ -1322,10 +1323,22 @@ define NWGmcULowering [
     {*u} -> {*o} || _ [EnglishStarConsonant - EnglishStarNasal] EnglishStarConsonant* EnglishStarNonHighVowel
 ];
 
+# N-stem final -n loss with nasalization preservation (R/T vol.2 §3.1.4, §3.3.1).
+# PGmc *-ōn (n-stem nom.sg.) → *-ǭ (nasalized ō) by loss of final -n.
+# The nasalized *ǭ does NOT undergo NWGmcFinalLongORaising (*ō → *u),
+# which targets only non-nasalized *ō. Instead *ǭ follows the trimoric path:
+#   *-ǭ → shortened to *-a → OE -a
+# R/T vol.2 p.59: "trimoric *ō became PWGmc *ō" (stayed long, not raised)
+# R/T vol.2 p.300: "masc. n-stem nom.sg. -a < *-ą < PWGmc *-ō < PGmc *-ō"
+define NWGmcNStemNLoss [
+    {*ō} {*n} -> {*ǭ} || _ .#.
+];
+
 # R/T vol.2 p.267: "word-final bimoric non-nasalized long *-ō became
 # short *-u in unstressed syllables in PNWGmc."
 # Examples: PGmc *gebō > PNWGmc *gebu, PGmc *feþrō > PNWGmc *feþru.
 # The resulting *-u then undergoes high vowel apocope after heavy syllables.
+# This does NOT apply to nasalized *ǭ (from n-stem -ōn), which stays long.
 define NWGmcFinalLongORaising [
     {*ō} -> {*u} || _ .#.
 ];
@@ -1361,7 +1374,10 @@ define OEUnstressedLongVowelShortening [
     {*ī} -> {*i} || EnglishStarVocalic EnglishStarConsonant+ _,
     {*ō} -> {*o} || EnglishStarVocalic EnglishStarConsonant+ _,
     {*ū} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _,
-    {*ǣ} -> {*æ} || EnglishStarVocalic EnglishStarConsonant+ _
+    {*ǣ} -> {*æ} || EnglishStarVocalic EnglishStarConsonant+ _,
+    # Nasalized *ǭ (from n-stem *-ōn) shortens to *a (→ OE -a).
+    # R/T vol.2 p.300: masc. n-stem nom.sg. -a < *-ą < PWGmc *-ō
+    {*ǭ} -> {*a} || EnglishStarVocalic EnglishStarConsonant+ _
 ];
 
 # Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
@@ -1607,6 +1623,7 @@ define OEContraction [
 define EnglishProtoToOE (
     PWGmcChanges
     .o. NWGmcULowering
+    .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
@@ -1685,6 +1702,7 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcULowering
+    .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
