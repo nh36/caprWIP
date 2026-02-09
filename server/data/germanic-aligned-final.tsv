@@ -168,7 +168,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1752	b ɛ r s t ə n	*brestăną	b ɛ r - s t ə n ( - - )	bɛrstən	bersten	480	German				burst	*brestăną	38
 193	k ɑ l f	*kalbăz	k ɑ l f ( - - )	kɑlf	kalf	54	Dutch				calf	*kalbăz	39
 192	k ɑː f	*kalbăz	k ɑː - f ( - - )	kɑːf	calf	54	English				calf	*kalbăz	39
-1975	c e a l f	*kalbăz	k ɑː - f ( - - )	kɑːf	cealf	54	Old_English	Source: Wiktionary etymology (Old English link) | Source: Wiktionary etymology (Old English link)			calf	*kalbăz	39
+1975	ċ e a l f	*kalbăz	k ɑː - f ( - - )	kɑːf	ċealf	54	Old_English	TSV: cealf → ċealf; WS palatalized initial (R/T §6.4.1 rule 1: k before front vowel)			calf	*kalbăz	39
 191	k a l p	*kalbăz	k a l b ( - - )	kalp	Kalb	54	German				calf	*kalbăz	39
 993	k ɑu ʋ ə	*kewwăną	k ɑu ʋ ə - ( - - )	kɑuʋə	kauwen	272	Dutch				chew	*kewwăną	40
 992	ʧ uː	*kewwăną	ʧ uː - - - ( - - )	ʧuː	chew	272	English				chew	*kewwăną	40
@@ -427,7 +427,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 619	ɡ ɪ f t	*geftiz	ɡ ɪ f t ( - - )	ɡɪft	Gift	171	German				gift	*geftiz	99
 752	x eː v ə	*gebăną	x eː v ə - ( - - )	xeːvə	geven	206	Dutch				give	*gebăną	100
 751	ɡ ɪ v	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	give	206	English				give	*gebăną	100
-2041	g i e f a n	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	giefan	206	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			give	*gebăną	100
+2041	ġ i e f a n	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	ġiefan	206	Old_English	TSV: giefan → ġiefan; WS palatalized initial (R/T §6.4.1 rule 1: g before front vowel)			give	*gebăną	100
 750	ɡ eː b ə n	*gebăną	ɡ eː b ə n ( - - )	ɡeːbən	geben	206	German				give	*gebăną	100
 1876	x ɔ t	*gud	x ɔ t	xɔt	god	514	Dutch				god	*gud	101
 1875	ɡ ɔ d	*gud	ɡ ɔ d	ɡɔd	god	514	English				god	*gud	101
