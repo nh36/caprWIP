@@ -160,7 +160,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1134	b r au x ə n	*brūkăną	( - - ) b r au x ə n ( - - )	brauxən	brauchen	311	German				brook	*brūkăną	36
 34	b ɔ k	*bukkăz	b ɔ k ( - - )	bɔk	bok	9	Dutch				buck	*bukkăz	37
 33	b ʌ k	*bukkăz	b ʌ k ( - - )	bʌk	buck	9	English				buck	*bukkăz	37
-1973	b u c c	*bukkăz	b ʌ k ( - - )	bʌk	bucc	9	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			buck	*bukkăz	37
+1973	b u c c	*bukkăz	b ʌ k ( - - )	bʌk	bucc	9	Old_English	Kroonen p.98 *bukka(n)- > OE bucc; u retained near labial b despite non-high following vowel (R/T §2.3.1 p.33, cf. Luick 1914-40: 105-6)			buck	*bukkăz	37
 32	b ɔ k	*bukkăz	b ɔ k ( - - )	bɔk	Bock	9	German				buck	*bukkăz	37
 1754	b ɑ r s t ə	*brestăną	b ɑ r - s t ə - ( - - )	bɑrstə	barsten	480	Dutch				burst	*brestăną	38
 1753	b ɜː s t	*brestăną	b ɜː - - s t - - ( - - )	bɜːst	burst	480	English				burst	*brestăną	38
@@ -385,7 +385,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 361	f iː r	*fedwōrez	f iː ( - - - ) r ( - - )	fiːr	vier	100	German				four	*fedwōrez	90
 1834	v oː ɣ ə l	*fuglăz	v oː ɣ ə l ( - - )	voːɣəl	vogel	502	Dutch				fowl	*fuglăz	91
 1833	f aʊ l	*fuglăz	f aʊ - - l ( - - )	faʊl	fowl	502	English				fowl	*fuglăz	91
-2030	f u g o l	*fuglăz	f aʊ - - l ( - - )	faʊl	fugol	502	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fowl	*fuglăz	91
+2030	f u g o l	*fuglăz	f aʊ - - l ( - - )	faʊl	fugol	502	Old_English	R/T §2.3.1 p.33: *fuglaz > OE fugol; u retained near labial f (exception to u-lowering, cf. Luick 1914-40: 105-6)			fowl	*fuglăz	91
 1832	f oː ɡ ə l	*fuglăz	f oː ɡ ə l ( - - )	foːɡəl	Vogel	502	German				fowl	*fuglăz	91
 342	v ɔ s	*fuxsăz	v ɔ - s ( - - )	vɔs	vos	94	Dutch				fox	*fuxsăz	92
 341	f ɔ k s	*fuxsăz	f ɔ k s ( - - )	fɔks	fox	94	English				fox	*fuxsăz	92
@@ -896,7 +896,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 965	r ɪ n ə n	*rinnăną	r ɪ n ə n ( - - )	rɪnən	rinnen	265	German				run	*rinnăną	353
 737	r uː s t	*rustō	r uː s t ( - )	ruːst	roest	202	Dutch				rust	*rustō	205
 736	r ʌ s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	English				rust	*rustō	205
-2162	r u s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rust	*rustō	205
+2162	r u s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	Old_English	OE rust retains u; cf. R/T §2.3.1 for general u-lowering exceptions			rust	*rustō	205
 735	r ɔ s t	*rustō	r ɔ s t ( - )	rɔst	Rost	202	German				rust	*rustō	205
 1464	r ɔ ɣ ə	*rugiz	r ɔ ɣ ə ( - )	rɔɣə	rogge	400	Dutch				rye	*rugiz	206
 1463	r aɪ	*rugiz	r aɪ - - ( - )	raɪ	rye	400	English				rye	*rugiz	206
@@ -1240,10 +1240,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1715	θ ɪ s ə l	*θestilăz	θ ɪ s - ə l ( - - )	θɪsḷ	thistle	470	English				thistle	*θestilăz	283
 2250	þ i s t e l	*θestilăz	θ ɪ s - ə l ( - - )	θɪsḷ	þistel	470	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thistle	*θestilăz	283
 1714	d ɪ s t ə l	*θestilăz	d ɪ s t ə l ( - - )	dɪstəl	Distel	470	German				thistle	*θestilăz	283
-1660	d oː r n	*θurnuz	d oː r n ( - - )	doːrn	doorn	455	Dutch				thorn	*θurnuz	284
-1659	θ ɔː n	*θurnuz	θ ɔː - n ( - - )	θɔːn	thorn	455	English				thorn	*θurnuz	284
-2251	þ o r n	*θurnuz	θ ɔː - n ( - - )	θɔːn	þorn	455	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thorn	*θurnuz	284
-1658	d ɔ r n	*θurnuz	d ɔ r n ( - - )	dɔrn	Dorn	455	German				thorn	*θurnuz	284
+1660	d oː r n	*θurnăz	d oː r n ( - - )	doːrn	doorn	455	Dutch	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+1659	θ ɔː n	*θurnăz	θ ɔː - n ( - - )	θɔːn	thorn	455	English	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+2251	þ o r n	*θurnăz	θ ɔː - n ( - - )	θɔːn	þorn	455	Old_English	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+1658	d ɔ r n	*θurnăz	d ɔ r n ( - - )	dɔrn	Dorn	455	German	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
 427	d œy z ə n t	*θūs-undī	d œy z ( - ) ə n t ( - )	dœyzənt	duizend	117	Dutch				thousand	*θūs-undī	285
 426	θ aʊ z ə n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	thousand	117	English				thousand	*θūs-undī	285
 2252	s e n d a n	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	sendan	117	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thousand	*θūs-undī	285
@@ -1425,7 +1425,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 702	v a l t	*walθuz	v a l d ( - - )	valt	Wald	193	German				wold	*walθuz	322
 1527	ʋ ɔ l f	*wulfăz	ʋ ɔ l f ( - - )	ʋɔlf	wolf	418	Dutch				wolf	*wulfăz	323
 1526	ʋ ʊ l f	*wulfăz	ʋ ʊ l f ( - - )	ʋʊlf	wolf	418	English				wolf	*wulfăz	323
-2298	w u l f	*wulfăz	ʋ ʊ l f ( - - )	ʋʊlf	wulf	418	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wolf	*wulfăz	323
+2298	w u l f	*wulfăz	ʋ ʊ l f ( - - )	ʋʊlf	wulf	418	Old_English	R/T §2.3.1 p.33: *wulfaz > OE wulf; u retained near labial w/f (exception to u-lowering, cf. Luick 1914-40: 105-6)			wolf	*wulfăz	323
 1525	v ɔ l f	*wulfăz	v ɔ l f ( - - )	vɔlf	Wolf	418	German				wolf	*wulfăz	323
 1051	ʋ ɔ n d ə r	*wundrą	ʋ ɔ n d ə r ( - - )	ʋɔndər	wonder	288	Dutch	MT			wonder	*wundrą	324
 1050	ʋ ʌ n d ə	*wundrą	ʋ ʌ n d ə r ( - - )	ʋʌndə	wonder	288	English	MT			wonder	*wundrą	324
