@@ -1364,10 +1364,16 @@ define OEUnstressedLongVowelShortening [
     {*ǣ} -> {*æ} || EnglishStarVocalic EnglishStarConsonant+ _
 ];
 
+# Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
+# so it only hits second-syllable unstressed *u, not stressed root *u.
+# Word-final *u (from *-ō) is also excluded by requiring a following consonant.
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant
+];
+
 define OEWeakTailReduction [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆},
-    {*u} -> {*o},
     {*i} -> {*e} || _ .#.,
     # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
     # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
@@ -1636,6 +1642,7 @@ define EnglishProtoToOE (
     .o. OEHighVowelApocope
     .o. OEHeavySyllableNasalApocope
     .o. OEUnstressedLongVowelShortening
+    .o. OEMedUnstressedULowering
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
@@ -1705,6 +1712,7 @@ define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWe
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
+    .o. OEMedUnstressedULowering
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
