@@ -1576,3 +1576,197 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - **New index file:** `docs/references/oe_sound_change_index.md`
   - Collects frequently reused citations and exact `rg`/`sed` commands for Hogg and Ringe/Taylor.
 - **Why:** we keep re-checking the same passages during OE chronology work; this keeps lookups fast and consistent.
+
+## Bimoric vs. Trimoric *ō: Comprehensive Analysis (Session 028)
+
+### Sources
+- R/T vol.2 §3.1.4 (lines 4035–4130): "Further Auslautgesetze"
+- R/T vol.2 §2.1.4 (lines 1670–1770): NWGmc raising of word-final *-ō
+- R/T vol.2 §5.2 (lines 9282–9450): Northern WGmc morphological innovations
+- R/T vol.2 §6.7.1 (lines 14836–14930): Early changes of front vowels
+- R/T vol.2 lines 17180–17240: Systematic derivation chains for OE endings
+
+### The Three Fates of Word-Final *ō
+
+R/T describes three distinct developments of unstressed word-final *ō,
+depending on quantity (bimoric vs trimoric) and chronology:
+
+**Path A: PNWGmc Raising (bimoric *ō that is word-final in PGmc)**
+- Rule: PGmc word-final bimoric *-ō → PNWGmc *-ū → *-u (raising + shortening)
+- R/T line 1672: "PGmc word-final bimoric non-nasalized long *-ō became
+  short *-u in unstressed syllables in PNWGmc."
+- OE reflex: -u after light syllable, lost after heavy (same as inherited *-u)
+- Examples: ō-stem nom.sg. *gebō → PNWGmc *gebu → OE giefu
+  a-stem neut. nom-acc.pl. *grasō → PNWGmc *grasu → OE grasu
+  1sg pres. indic. *kwemō → PNWGmc *kwemu → OE cumu
+- **Our FST**: Modelled by NWGmcFinalLongORaising: {*ō} → {*u} || _ .#.
+  This is CORRECT for this path.
+
+**Path B: PWGmc Unrounding (bimoric *ō that becomes word-final LATER)**
+- Rule: bimoric *ō that was NOT word-final at the PNWGmc stage (because
+  it had *-z, *-n, or other endings) → after those endings are lost → now
+  word-final → PWGmc *-a → OE -e (via unstressed fronting)
+- R/T line 4035–36: "Word-finally... surviving bimoric long ō-vowels became
+  PWGmc *a"
+- The word "surviving" is key — these survived the PNWGmc raising because
+  they weren't word-final yet when that raising operated.
+- OE reflex: -e (from *-a via unstressed fronting/raising)
+- Examples: ō-stem acc.sg. *gebō(n?) → *gebō (after ending loss) → PWGmc
+    *geba → OE giefe
+  ō-stem gen.sg. *gebōz → *gebō (after z-loss) → PWGmc *geba → OE giefe
+  fem. n-stem nom.sg. *tungōn → *tungō̃ (after n-loss, nasalized) →
+    PWGmc *tunga → OE tunge
+- **Our FST**: For fem. n-stems, modelled by NWGmcNStemNLoss: {*ō}{*n} →
+  {*ǭ} word-finally, then {*ǭ} → {*æ} → OE -e. This covers the n-stem case.
+  For other "surviving bimoric" cases (acc.sg., gen.sg. of ō-stems), we DON'T
+  have a rule — but these paradigm cells aren't in our TSV data.
+
+**Path C: Trimoric *ō (→ PWGmc *ō → OE -a)**
+- Rule: trimoric *ō → PWGmc *ō (stays long) → shortens late → OE -a
+- R/T line 4036: "trimoric long ō-vowels became PWGmc *ō"
+- R/T line 17230: "masc. n-stem nom.sg. -a < *-ā < PWGmc *-ō < PGmc *-ō"
+  (R/T explicitly classifies this *ō as trimoric)
+- OE reflex: -a
+- Examples: masc. n-stem nom.sg. *namō → PWGmc *namō → OE nama
+  gen.pl. *dagō → PWGmc *dagō → OE daga
+  ō-stem nom.pl. *gebōz → PWGmc *gebō → OE giefa
+  Class II weak iptv. 2sg *salbō → PWGmc *salbō → OE sealfa
+    (R/T line 17187: "iptv. 2sg. -a < *-ā < PWGmc *-ō < PGmc *-ō")
+- **Our FST**: Modelled by {*ô} symbol (trimoric). {*ô} is exempt from
+  NWGmcFinalLongORaising, and shortens to {*a} in OEUnstressedLongVowelShortening.
+  Currently used only for masc. n-stems. COULD ALSO BE USED for:
+  - Class II weak verb iptv. 2sg (see below)
+  - gen.pl. forms (not in TSV)
+  - ō-stem nom.pl. (not in TSV)
+
+### Implications for Class II Weak Verbs
+
+The three Class II weak verbs in the mismatch report (suffix_form__eian_vs_ian):
+  *burōjăną → boreian (expected borian)
+  *liznōjăną → lierneian (expected leornian)
+  *makōjăną → maceian (expected macian)
+
+The infinitive suffix *-ōja- is a MORPHOLOGICAL innovation (northern WGmc
+analogical remodelling of Class II on the model of Class I, R/T §5.2). It is not
+a regular sound change. OE -ian does not derive by regular phonology from
+*-ōjanan.
+
+R/T's paradigm (lines 9395–9420, §5.2) for *ardōn 'to dwell':
+  infinitive: *ardōjan > OE eardian  (morphological remodelling, NOT regular)
+  iptv. 2sg:  *ardō > OE earda       (regular; trimoric *ō → -a)
+  2sg:        *ardōs > OE eardas      (regular; *ō before consonant → -a-)
+  3sg:        *ardōþ > OE eardaþ      (regular; *ō before consonant → -a-)
+
+The REGULAR forms (iptv. 2sg, 2sg, 3sg) preserve the original *-ō- stem vowel
+without the *-ōja- extension. These are candidates for TSV encoding.
+
+### Issues to Resolve
+
+1. **A-restoration with {*ô}**: When we test `makô` through the FST, AFB fronts
+   root {*a} → {*æ}, but A-restoration doesn't fire because {*ô} is not in
+   PGmcStarBackVowel or OEARestorationTriggerVowel. This produces
+   *mæċa* (with spurious fronting + palatalization) instead of *maca*.
+   FIX: Add {*ô} to OEARestorationTriggerVowel.
+
+2. **{*ô} in non-final position**: For forms like *makôþi (3sg), {*ô} is medial,
+   not word-final. OEUnstressedLongVowelShortening handles this
+   (it applies to non-initial syllables generally, not just word-final).
+   Need to verify this works.
+
+3. **pgrmWord acceptance**: The shape `makô` (CVC + ô) needs to be accepted
+   by the input FST. Since {*ô} is in pgrmWeakTailVowel, forms like `makô`
+   should parse as: strong syllable `mak` + weak tail vowel `ô`. Need to verify.
+
+4. **Other items using {*ô}**: Currently only 11 masc. n-stem sets use {*ô}.
+   Could also apply to Class II weak verb citation forms if we switch to
+   iptv. 2sg or another regular form. But we need to decide: do we change
+   the citation form for these verbs, or just document the mismatch?
+
+### Non-final *ō (medial syllables)
+
+R/T line 4037–38: "In other unstressed syllables both these vowels became *ō"
+This means in MEDIAL position (not word-final), bimoric and trimoric *ō
+MERGED to *ō. So the bimoric/trimoric distinction is only relevant word-finally
+(and before word-final *r). Our FST handles this correctly: OEUnstressedLong
+VowelShortening operates on non-initial syllables regardless of position.
+
+Examples (R/T lines 4090–4120):
+  *mēnōþiz 'months' → *manōþi → OE mōnaþ (medial *ō → *ō)
+  *salbōd(ēd)un 'they anointed' → *salbōdun → OE sealfodon (*ō → o)
+  *salbōþi '(s)he anoints' → *salbōþi → OE sealfaþ (*ō → a)
+
+Wait — the last example has *ō → a, not *ō → o. Let me check the context.
+Actually, the 3sg *salbōþi has *ō in an open MEDIAL syllable before *þ(i).
+R/T says (line 4100): "PGmc pres. 3sg. *salbōþi '(s)he anoints' ...> OE sealfaþ".
+The *ō becomes -a- in this position. This is consistent with late shortening
+of unstressed *ō → *a in OE, rather than through the PWGmc *a unrounding.
+
+### All 8 Class II Weak Verbs in TSV (all produce -eian)
+
+| PGmc form      | FST output    | Expected OE     | Bucket               |
+|----------------|---------------|-----------------|----------------------|
+| *burōjăną      | boreian       | borian          | suffix_form__eian_vs_ian |
+| *liznōjăną     | lierneian     | leornian        | suffix_form__eian_vs_ian |
+| *makōjăną      | maceian       | macian          | suffix_form__eian_vs_ian |
+| *likkōjăną     | liċceian      | liccian         | palatal_extra__j_triggered |
+| *skawōjăną     | sċaweian      | scēawian        | breaking_missing__ea  |
+| *xandlōjăną    | handleian     | handle          | final_vowel_missing   |
+| *sundrōjăną    | sundreian     | sundor-         | cons_mismatch        |
+| *wainōjăną     | wāneian       | hwīnan          | i_umlaut_missing     |
+
+ALL share the -eian issue. The *-ōja- suffix is morphological (R/T §5.2:
+analogical remodelling of Class II weak on the model of Class I), not phonological.
+Our FST cannot and SHOULD NOT model this analogical change.
+
+### Options for Resolution
+
+**Option A: Change citation form to iptv. 2sg** (e.g., *makō → maca)
+- Pro: Regular sound change, same development as masc. n-stems (trimoric *ō)
+- Con: Requires encoding as *makô (trimoric); needs A-restoration fix for {*ô};
+  changes the citation form across all 4 languages in each cognate set
+
+**Option B: Change citation form to 3sg pres. indic.** (e.g., *makōþi → macaþ)
+- Pro: Regular development with more morphology visible
+- Con: More complex form; still needs *ō → -a- modelling in medial position;
+  other languages may not match (German/Dutch 3sg forms differ)
+
+**Option C: Document as non-regular and exclude from mismatch counting**
+- Pro: No FST or TSV changes needed; acknowledges the morphological nature
+- Con: 8 items remain as "known non-regular" mismatches; doesn't test our
+  *ō development at all for Class II verbs
+
+**Option D (hybrid): Use iptv. 2sg for the OE row only, keep *-ōjăną for others**
+- This doesn't work: all rows in a cognate set share the same protoform
+
+**Recommendation**: Option A (iptv. 2sg with trimoric *ô) for verbs where
+it works cleanly, combined with Option C (documentation) for verbs where
+the iptv. form introduces other complications. First need to fix A-restoration
+for {*ô} to make Option A viable.
+
+### A-Restoration Gap for {*ô}
+
+Current problem: `makô` → `mæċa` (wrong) instead of `maca` (correct).
+
+Derivation trace for `makô`:
+1. AFB: {*a} → {*æ} (before {*k}, which is non-nasal consonant) ✓
+2. A-restoration: {*æ} should restore to {*a} before back vowel {*ô} in next
+   syllable — BUT {*ô} is NOT in OEARestorationTriggerVowel, so restoration
+   FAILS. ✗
+3. Velar palatalization: {*k} before {*æ} (front) → {*ʧ} ✗ (should not fire
+   because root vowel should be *a, not *æ)
+4. OEUnstressedLongVowelShortening: {*ô} → {*a}
+5. Orthography: → mæċa (wrong)
+
+Fix needed: Add {*ô} to OEARestorationTriggerVowel:
+  define OEARestorationTriggerVowel [EnglishStarBackVowel | {*æ} | {*ô}];
+
+This is principled: {*ô} IS a back vowel (it's trimoric *ō), it just can't be
+in PGmcStarBackVowel because that would cause regressions in vowel rules.
+A-restoration specifically should see it as triggering restoration.
+
+Also check whether {*ǭ} should ALSO be in OEARestorationTriggerVowel.
+Fem. n-stems like *tungōn → {*t}{*u}{*n}{*g}{*ǭ}: if AFB fronted the root
+vowel, it should be restored before the back {*ǭ}. But {*u} doesn't undergo
+AFB (only {*a} does), so this case doesn't arise for *tung-. May arise for
+other fem. n-stems with {*a} in root: *xertōn → heorte has {*e} from breaking,
+not {*a}, so no AFB issue. Will monitor.
