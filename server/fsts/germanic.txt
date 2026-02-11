@@ -283,6 +283,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} l:{*l} ō:{*ō} |
     ă:{*ă} n:{*n} |
     ă:{*ă} n:{*n} ą:{*ą} |
+    a:{*a} n:{*n} ą:{*ą} |
     ă:{*ă} n:{*n} ē:{*ē} |
     j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
@@ -1207,7 +1208,6 @@ define OEARestorationStrongOTail [
     {*ō} {*n} {*d} {*z} |
     {*ō} {*r} {*e} {*z} |
     {*ō} {*θ} {*z} |
-    # Additional patterns where A-restoration applies despite weak tail:
     # Infinitive -ăną
     {*ă} {*n} {*ą} |
     # Agent/abstract -ăz
