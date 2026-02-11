@@ -1,10 +1,10 @@
-Total mismatches: 144
+Total mismatches: 142
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      19
+  TSV/data fixes needed:      18
   Documented exceptions:       4
   Phonology (core buckets):    33
-  Phonology (other buckets):   88
+  Phonology (other buckets):   87
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -20,7 +20,7 @@ Total mismatches: 144
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 8
   length_extra_other: 2
-  palatal_marker_variant: 1
+  palatal_marker_variant: 2
   epenthetic_vowel_missing: 1
   syncopation_missing: 3
   final_devoicing_missing: 1
@@ -36,10 +36,10 @@ Total mismatches: 144
   palatal_extra__j_triggered: 1
   palatal_extra__orth_normalization: 4
   palatal_extra__other: 1
-  palatal_extra__velar_before_front: 3
+  palatal_extra__velar_before_front: 2
 --- a_restoration sub-buckets ---
-  a_restoration_needed: 3
-  a_restoration_needed__also_wrong_form: 2
+  a_restoration_needed: 1
+  a_restoration_needed__also_wrong_form: 1
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 2
 --- vowel_quality sub-buckets ---
@@ -74,6 +74,7 @@ Total mismatches: 144
   cons_mismatch__w_vs_h__cluster: 1
   cons_mismatch__w_vs_n__cluster: 1
   cons_mismatch__þ_vs_d__cluster: 1
+  cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
   suffix_form__eian_vs_ian: 3
 
@@ -138,8 +139,9 @@ length_extra_other (2):
   *dōną -> dōn (expected don)
   *finþăną -> fīþan (expected findan)
 
-palatal_marker_variant (1):
+palatal_marker_variant (2):
   *skūflō -> sċūfl (expected scofl)
+  *waskaną -> wascan (expected wasċan)
 
 epenthetic_vowel_missing (1):
   *fulgēną -> folgon (expected folgian)
@@ -193,18 +195,14 @@ palatal_extra__orth_normalization (4):
 palatal_extra__other (1):
   *rukkiz -> rycċ (expected rocc)
 
-palatal_extra__velar_before_front (3):
-  *bakăną -> bæċan (expected bacan)
+palatal_extra__velar_before_front (2):
   *biginnăną -> biġennan (expected beginnan)
   *tikkô -> tiċca (expected ticia)
 
-a_restoration_needed (3):
+a_restoration_needed (1):
   *nablô -> næfla (expected nafola)
-  *wadăną -> wædan (expected wadan)
-  *waskăną -> wæsċan (expected wasċan)
 
-a_restoration_needed__also_wrong_form (2):
-  *xlaθăną -> hlæþan (expected hladan)
+a_restoration_needed__also_wrong_form (1):
   *marīn -> meren (expected mann)
 
 back_expected_front_out__other (2):
@@ -320,6 +318,9 @@ cons_mismatch__w_vs_n__cluster (1):
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
+
+cons_mismatch__þ_vs_d__intervocalic (1):
+  *xlaθaną -> hlaþan (expected hladan)
 
 suffix_form__eian_vs_ian (3):
   *burōjăną -> boreian (expected borian)

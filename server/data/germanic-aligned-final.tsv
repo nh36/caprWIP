@@ -5,7 +5,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 508	ɔ t ə r	*nadrō	ɔ t ə r ( - - )	ɔtər	Otter	139	German				adder	*nadrō	1
 1431	b ɑ k ə	*bakăną	b ɑ k ə - ( - - )	bɑkə	bakken	391	Dutch				bake	*bakăną	2
 1430	b eɪ k	*bakăną	b eɪ k - - ( - - )	beɪk	bake	391	English				bake	*bakăną	2
-1934	b a c a n	*bakăną	b eɪ k - - ( - - )	beɪk	bacan	391	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bake	*bakăną	2
+1934	b a c a n	*bakaną	b eɪ k - - ( - - )	beɪk	bacan	391	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			bake	*bakaną	2
 1429	b a k ə n	*bakăną	b a k ə n ( - - )	bakən	backen	391	German	BOR	C V c v c		bake	*bakăną	2
 314	b ɑ l	*balluz	b ɑ l ( - - )	bɑl	bal	87	Dutch				ball	*balluz	3
 313	b ɔː l	*balluz	b ɔː l ( - - )	bɔːl	ball	87	English				ball	*balluz	3
@@ -447,7 +447,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 789	ɡ r aː s	*grasą	ɡ r aː s ( - - )	ɡraːs	Gras	216	German				grass	*grasą	104
 134	x r aː v ə	*grabăną	x r aː v ə - ( - - )	xraːvə	graven	37	Dutch				grave	*grabăną	105
 133	ɡ r ɑː v	*grabăną	ɡ r ɑː v - - ( - - )	ɡrɑːv	grave	37	English				grave	*grabăną	105
-2046	g r æ f a n	*grabăną	ɡ r ɑː v - - ( - - )	ɡrɑːv	græfan	37	Old_English	OE target: græf→græfan (inf. of str.v. class VI 'to dig, grave')			grave	*grabăną	105
+2046	g r a f a n	*grabaną	ɡ r ɑː v - - ( - - )	ɡrɑːv	grafan	37	Old_English	OE target: græf→græfan (inf. of str.v. class VI 'to dig, grave') | OE target: grafan (not græfan); Hogg §5.3.1, Hall s.v. grafan. Proto encoding: -aną for A-restoration; R/T §6.3.1			grave	*grabaną	105
 132	ɡ r aː b ə n	*grabăną	ɡ r aː b ə n ( - - )	ɡraːbən	graben	37	German				grave	*grabăną	105
 243	x r ɛɪ p ə	*grīpăną	x r ɛɪ p ə - ( - - )	xrɛɪpə	grijpen	67	Dutch				gripe	*grīpăną	106
 242	ɡ r aɪ p	*grīpăną	ɡ r aɪ p - - ( - - )	ɡraɪp	gripe	67	English				gripe	*grīpăną	106
@@ -610,7 +610,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 537	k n ɔ pf	*knuppăz	k n ɔ pf ( - - )	knɔp͡f	Knopf	147	German				knob	*knuppăz	140
 405	l aː d ə	*laθōjăną	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjăną	141
 404	l eɪ d	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjăną	141
-2088	h l a d a n	*xlaθăną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaþaną > OE hladan			lade	*xlaθăną	141
+2088	h l a d a n	*xlaθaną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaþaną > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			lade	*xlaθaną	141
 403	l aː d ə n	*laθōjăną	l aː d ( - ) - ə n ( - - )	laːdən	laden	111	German				lade	*laθōjăną	141
 1355	l ɑ n t	*landą	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landą	142
 1354	l æ n d	*landą	l æ n d ( - - )	lænd	land	371	English				land	*landą	142
@@ -1300,7 +1300,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1217	t r oː k	*trugą	t r oː k ( - - )	troːk	Trog	334	German				trough	*trugą	364
 656	ʋ aː d ə	*wadăną	ʋ aː d ə - ( - - )	ʋaːdə	waden	180	Dutch				wade	*wadăną	297
 655	ʋ eɪ d	*wadăną	ʋ eɪ d - - ( - - )	ʋeɪd	wade	180	English				wade	*wadăną	297
-2266	w a d a n	*wadăną	ʋ eɪ d - - ( - - )	ʋeɪd	wadan	180	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wade	*wadăną	297
+2266	w a d a n	*wadaną	ʋ eɪ d - - ( - - )	ʋeɪd	wadan	180	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			wade	*wadaną	297
 654	v aː t ə n	*wadăną	v aː t ə n ( - - )	vaːtən	waten	180	German				wade	*wadăną	297
 637	ʋ aː ɣ ə	*wagnăz	ʋ aː ɣ ə - ( - - )	ʋaːɣə	wagen	175	Dutch				wain	*wagnăz	298
 636	ʋ eɪ n	*wagnăz	ʋ eɪ - - n ( - - )	ʋeɪn	wain	175	English				wain	*wagnăz	298
@@ -1324,7 +1324,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1171	v a r ts ə	*warto	v a r - ts ə	vart͡sə	Warze	321	German				wart	*warto	301
 1001	ʋ ɑ s ə	*waskăną	ʋ ɑ s - ə - ( - - )	ʋɑsə	wassen	274	Dutch				wash	*waskăną	302
 1000	ʋ ɔ ʃ	*waskăną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wash	274	English				wash	*waskăną	302
-2272	w a s c a n	*waskăną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wasċan	274	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wash	*waskăną	302
+2272	w a s c a n	*waskaną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wasċan	274	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			wash	*waskaną	302
 999	v a ʃ ə n	*waskăną	v a ʃ - ə n ( - - )	vaʃən	waschen	274	German				wash	*waskăną	302
 1279	ʋ ɛ s p	*wabsăz	ʋ ɛ s p - ( - - )	ʋɛsp	wesp	351	Dutch				wasp	*wabsăz	303
 1278	ʋ ɔ s p	*wabsăz	ʋ ɔ s p - ( - - )	ʋɔsp	wasp	351	English				wasp	*wabsăz	303
