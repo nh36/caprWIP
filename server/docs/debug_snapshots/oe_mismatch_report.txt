@@ -1,20 +1,20 @@
-Total mismatches: 137
+Total mismatches: 146
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      17
+  TSV/data fixes needed:      18
   Documented exceptions:       4
-  Phonology (core buckets):    30
-  Phonology (other buckets):   86
+  Phonology (core buckets):    37
+  Phonology (other buckets):   87
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
-  fronting_missing__afb: 2
+  fronting_missing__afb: 3
   fronting_missing__also_wrong_form: 2
-  breaking_missing__expected_ea_got_a: 3
+  breaking_missing__expected_ea_got_a: 4
   breaking_missing__expected_eo: 3
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 7
-  no_output: 6
+  no_output: 11
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
@@ -34,9 +34,9 @@ Total mismatches: 137
   breaking_extra__wrong_form: 4
 --- palatal_extra sub-buckets ---
   palatal_extra__j_triggered: 1
-  palatal_extra__orth_normalization: 2
+  palatal_extra__orth_normalization: 3
   palatal_extra__other: 1
-  palatal_extra__velar_before_front: 4
+  palatal_extra__velar_before_front: 3
 --- a_restoration sub-buckets ---
   a_restoration_needed: 3
   a_restoration_needed__also_wrong_form: 2
@@ -44,9 +44,9 @@ Total mismatches: 137
   back_expected_front_out__other: 2
 --- vowel_quality sub-buckets ---
   vowel_quality__ae_e_alternation: 2
-  vowel_quality__stressed_vowel: 5
+  vowel_quality__stressed_vowel: 6
   vowel_quality__u_lowering_exception: 4
-  vowel_quality__u_o_alternation: 5
+  vowel_quality__u_o_alternation: 6
   vowel_quality__unstressed_e_o: 5
   vowel_quality__unstressed_o_a: 2
   vowel_quality__unstressed_vowel: 1
@@ -84,18 +84,20 @@ i_umlaut_missing_true (3):
   *sai -> sā (expected sǣ)
   *wainōjăną -> wāneian (expected hwīnan)
 
-fronting_missing__afb (2):
+fronting_missing__afb (3):
   *rastō -> rast (expected ræst)
   *stamnăz -> stamn (expected stemn)
+  *tappô -> tappa (expected tæppa)
 
 fronting_missing__also_wrong_form (2):
   *dranką -> dranc (expected drenċ)
   *fastēną -> faston (expected fæst)
 
-breaking_missing__expected_ea_got_a (3):
+breaking_missing__expected_ea_got_a (4):
   *dawwō -> dawu (expected dēaw)
   *skaiθiz -> sċǣþ (expected sċēaþ)
   *skawōjăną -> sċaweian (expected scēawian)
+  *skawô -> sċawa (expected scēawa)
 
 breaking_missing__expected_eo (3):
   *brustz -> brust (expected brēost)
@@ -114,7 +116,7 @@ long_vowel_missing (7):
   *xawwăną -> heawan (expected hēawan)
   *mizdō -> mierd (expected mēd)
 
-no_output (6):
+no_output (11):
   *galaubjăną -> +? (expected ġelīefan)
   *funxwstiz -> +? (expected fȳst)
   *regna-bugô -> +? (expected reġnboga)
@@ -181,17 +183,17 @@ breaking_extra__wrong_form (4):
 palatal_extra__j_triggered (1):
   *likkōjăną -> liċceian (expected liccian)
 
-palatal_extra__orth_normalization (2):
+palatal_extra__orth_normalization (3):
   *brekăną -> breċan (expected brecan)
   *θaką -> þæċ (expected þæc)
+  *likkô -> liċca (expected licca)
 
 palatal_extra__other (1):
   *rukkiz -> rycċ (expected rocc)
 
-palatal_extra__velar_before_front (4):
+palatal_extra__velar_before_front (3):
   *bakăną -> bæċan (expected bacan)
   *biginnăną -> biġennan (expected beginnan)
-  *xagô -> hæġa (expected haga)
   *tikkô -> tiċca (expected ticia)
 
 a_restoration_needed (3):
@@ -211,7 +213,7 @@ vowel_quality__ae_e_alternation (2):
   *kraftiz -> creft (expected cræft)
   *θegnăz -> þeġn (expected þæġn)
 
-vowel_quality__stressed_vowel (5):
+vowel_quality__stressed_vowel (6):
   *gansz -> gās (expected gōs)
   *xerdō -> heord (expected hierd)
   *nistą -> nist (expected nest)
@@ -224,7 +226,7 @@ vowel_quality__u_lowering_exception (4):
   *rustō -> rost (expected rust)
   *wulfăz -> wolf (expected wulf)
 
-vowel_quality__u_o_alternation (5):
+vowel_quality__u_o_alternation (6):
   *bugô -> buga (expected boga)
   *fulô -> fula (expected fola)
   *gud -> gud (expected god)
@@ -326,6 +328,7 @@ suffix_form__eian_vs_ian (3):
 --- fronting_missing__afb ---
 *rastō -> rast (expected ræst)
 *stamnăz -> stamn (expected stemn)
+*tappô -> tappa (expected tæppa)
 
 --- fronting_missing__also_wrong_form ---
 *dranką -> dranc (expected drenċ)
