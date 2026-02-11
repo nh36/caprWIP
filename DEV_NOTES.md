@@ -1770,3 +1770,111 @@ vowel, it should be restored before the back {*ǭ}. But {*u} doesn't undergo
 AFB (only {*a} does), so this case doesn't arise for *tung-. May arise for
 other fem. n-stems with {*a} in root: *xertōn → heorte has {*e} from breaking,
 not {*a}, so no AFB issue. Will monitor.
+
+---
+
+## Class II Weak Verb Exploration (class2-weak-exploration branch)
+
+**Date:** 2026-02-24
+**Branch:** class2-weak-exploration (from update HEAD bd54207)
+**Status:** In progress
+
+### Background
+
+Class II weak verbs in PGmc have the suffix *-ōja- (e.g., *makōjăną 'to make'). The OE reflex is *-ian* (e.g., *macian*), but R/T vol.2 §5.2 explicitly states this *-ian* is **morphological** (analogical remodelling), not a regular phonological development from *-ōja-. The regular phonological outcome of *-ōja- is *-eian* (with i-umlaut of *ō → *ē by the *j*), which is what our FST correctly produces.
+
+> "The Class 2 weak verbs are characterized in NWGmc by the stem-forming suffix *-ō(ja)- ... but the actual OE suffix -i(g)an is the result of a complex of analogical changes" (R/T §5.2, our OCR pp. 282ff)
+
+### Test forms: imperative 2sg and 3sg present indicative
+
+To test the *regular* phonological developments, we use paradigm forms where the suffix is lautgesetzlich:
+
+**Imperative 2sg** (*-ō, trimoric): PGmc *makō → OE maca
+- The trimoric *ō is modelled as {*ô} in our notation
+- {*ô} → OE -a via OEUnstressedLongVowelShortening (line 1317)
+- This path does NOT involve the morphological *-ōja- suffix
+
+**3sg present indicative** (*-ōθi): PGmc *makōθi → OE *maceþ (regular) / macaþ (attested, analogical)
+- The *i in *-ōθi triggers i-umlaut of the *ō, giving *ē → e
+- The regular phonological outcome is -eþ, not -aþ
+- Attested macaþ has -aþ by analogy with the rest of the paradigm
+
+### Findings
+
+#### 1. A-restoration fix for {*ô}
+
+Before the fix, `makô → mæċa` (wrong). The problem: OEARestorationTriggerVowel did not include {*ô}, so AFB fronted root *a → *æ without A-restoration undoing it. The *æ then triggered palatalization of *k → *ʧ (→ ċ).
+
+**Fix:** Added {*ô} to OEARestorationTriggerVowel (line ~1190):
+```
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*æ} | {*ô}];
+```
+
+After fix: `makô → maca` ✓
+
+**Justification:** {*ô} (trimoric *ō) IS a back vowel — it triggers A-restoration just like any other back vowel in the following syllable. It is deliberately excluded from PGmcStarBackVowel (to avoid regressions in general vowel rules), so it needs explicit inclusion in the trigger set.
+
+R/T §6.3.1 p.205: "Weak verbs of class II always exhibit retracted a rather than æ before a non-nasal consonant in a monosyllabic root syllable, since at the time retraction occurred the following syllable always contained *ō or *a."
+
+#### 2. 3sg weak tail pattern
+
+The pgrmWeakTailVowel filter (line ~279) explicitly enumerates allowed weak-tail patterns. The 3sg ending *-ōθi was missing.
+
+**Fix:** Added `ō:{*ō} θ:{*θ} i:{*i}` to pgrmWeakTailVowel (line ~328).
+
+#### 3. θ/þ encoding convention
+
+The FST uses θ (Greek theta, U+03B8) for the voiceless dental fricative in proto-forms. The original test rows incorrectly used þ (thorn, U+00FE) in the PROTO column. The mismatch report's `normalize_proto()` converts þ→θ, masking this issue.
+
+**Convention:** PROTO column in TSV must use θ, matching existing entries like `*baθą`.
+
+#### 4. Results summary
+
+| Form | FST output | Expected OE | Status |
+|------|-----------|-------------|--------|
+| makô | maca | maca | ✓ |
+| makōθi | maceþ | maceþ (regular) | ✓ |
+| burô | bura | bora | ✗ u-lowering |
+| burōθi | boreþ | boreþ | ✓ |
+| liznô | lierna | leorna | ✗ stressed vowel (ie vs eo) |
+| liznōθi | lierneþ | leorneþ | ✗ same root issue |
+| likkô | liċca | licca | ✗ spurious palatalization |
+| likkōθi | liċceþ | licceþ | ✗ same root issue |
+| skawô | sċawa | scēawa | ✗ missing ēa + spurious ċ |
+| skawōθi | sċaweþ | scēaweþ | ✗ same root issue |
+
+### Remaining root-level issues (shared with other lexemes)
+
+These issues affect the Class II test forms but are NOT specific to Class II verbs — the same problems appear in other words with the same roots.
+
+#### A. u-lowering (u → o before back vowel)
+
+**Affected:** *burô → bura (expected bora), also *bugô → buga (expected boga), *fulô → fula (expected fola), *uxsô → uxa (expected oxa)
+
+**Issue:** NWGmcULowering should lower *u → *o before non-high vowels in a following syllable. But these n-stem nominatives with {*ô} suffix retain u. The same problem exists for related words in the `vowel_quality__u_o_alternation` bucket.
+
+**Note:** Some u-retentions are documented exceptions (bucc, fugol, wulf — see DEV_NOTES §1 above). But buga/boga, fula/fola are different: the expected form IS the lowered one (boga, fola), so u-retention here is a FST bug, not a documented exception.
+
+#### B. Stressed vowel ie vs eo (*liznô → lierna vs leorna)
+
+**Affected:** *liznô → lierna (expected leorna), *liznōjăną → lierneian (expected leornian)
+
+**Issue:** The root *lizn- should give OE leorn- (with eo from breaking of e before rn). Our FST produces ie instead of eo. This is a stressed vowel quality issue in the `vowel_quality__stressed_vowel` bucket. Needs investigation: the *i → *e lowering and then breaking to *eo should give eo, not ie.
+
+#### C. Spurious palatalization of geminate *kk (*likkô → liċca vs licca)
+
+**Affected:** *likkô → liċca (expected licca), *likkōθi → liċceþ (expected licceþ)
+
+**Issue:** OE palatalization of *k → ċ before front vowels is correct in general, but geminate *kk should NOT be palatalized in this context. The *i in the root is a front vowel, but geminate velars resist palatalization (R/T §6.4.1). This may be a missing condition in OEVelarPalatalization.
+
+#### D. Missing ēa diphthong + sk/sc issue (*skawô → sċawa vs scēawa)
+
+**Affected:** *skawô → sċawa (expected scēawa), *skawōθi → sċaweþ (expected scēaweþ)
+
+**Issues:**
+1. Missing ēa: The root *skaw- should give scēaw- with ēa diphthong. The *aw sequence should produce ēaw via some vowel development, but our FST keeps it as aw.
+2. sk → sċ vs sc: Our FST produces sċ (palatalized) where sc is expected. The sk → sc change is not palatalization but a general OE shift of /sk/ → /ʃ/ spelled ⟨sc⟩.
+
+### Proto-form notes
+
+**`*nablô` (navel):** Competing reconstructions. Kroonen reconstructs PGmc *nablōn- (stem *nablan-), but R/T vol.2 §6.3.1 p.206 gives pre-retraction *nabulō with medial vowel (cf. OHG nabalo). The medial *u may be PWGmc-level epenthesis. Current TSV form *nablô follows Kroonen. For A-restoration to fire correctly in the pipeline, *nabulô may be needed, since R/T's chronology places epenthesis (§6.9.5, mid-7th c.) much later than retraction (§6.3, pre-6th c.).
