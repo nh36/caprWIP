@@ -1458,12 +1458,26 @@ define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || {*j} _
 ];
 
+# R/T §6.4.1: *k and *g palatalization.
+# IMPORTANT: *k and *g rules must be in SEPARATE replacement blocks (.o.)
+# to prevent foma parallel-replacement cross-contamination (the *g "after
+# front vowel" context otherwise bleeds into *k rules).
 define OEVelarPalatalization [
-    {*k} -> {*ʧ} || _ EnglishStarFrontVowel,
+    # *k — R/T §6.4.1 rules 1-4:
+    # Rule 1: word-initial *k before any front vowel
+    {*k} -> {*ʧ} || .#. _ EnglishStarFrontVowel,
+    # Rule 2: non-initial *k before *i or *ī only
+    {*k} -> {*ʧ} || _ [{*i} | {*ī}],
+    # Rule 3: *k after *i/*ī before any front vowel (intervocalic)
+    {*k} -> {*ʧ} || [{*i} | {*ī}] _ EnglishStarFrontVowel,
+    # Rule 4: *k after *i/*ī at word boundary
+    {*k} -> {*ʧ} || [{*i} | {*ī}] _ .#.,
+    # *k before *j
+    {*k} -> {*ʧ} || _ {*j}
+] .o. [
+    # *g — broader conditions per R/T §6.4.1:
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
-    {*k} -> {*ʧ} || EnglishStarFrontVowel _,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _,
-    {*k} -> {*ʧ} || _ {*j},
     {*g} -> {*ʤ} || _ {*j},
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ];
