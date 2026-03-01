@@ -1,9 +1,9 @@
-Total mismatches: 138
+Total mismatches: 137
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      14
   Documented exceptions:       4
-  Phonology (core buckets):    33
+  Phonology (core buckets):    32
   Phonology (other buckets):   87
 
 === CORE BUCKETS ===
@@ -15,7 +15,6 @@ Total mismatches: 138
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 7
   no_output: 6
-  palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 8
@@ -123,9 +122,6 @@ no_output (6):
   *regna-bugô -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
-
-palatalization_missing (1):
-  *xunăgą -> hunag (expected huniġ)
 
 final_vowel_extra (8):
   *laimōn -> lāme (expected lām)

@@ -1357,6 +1357,25 @@ define OEEpentheticVowel OEEpentheticInsertion
     .o. OEEpentheticFront
     .o. OEGLInsertion;
 
+# R/T §6.9.6 (pp.349-350): Late unstressed *-ag(-) → -ig(-).
+# Chain: medial *a → *e (general unstressed fronting) → *g palatalizes after *e
+# → *e raises to *i next to palatal. R/T: "inherited *a adjacent to palatals
+# eventually became i. Most strikingly, the inherited derivational suffix
+# *-ag(-) > *-æg(-) > *-eg(-) > -ig(-)." Late (after i-umlaut, epenthesis).
+# Examples: PGmc *modagaz > OE modig, *hailagaz > halig, *hunagą > hunig.
+# Before back vowels the intermediate -eg- can be preserved with velar g
+# (e.g. monegum), so palatalization is restricted to word-final position.
+define OELateUnstressedAgSuffix (
+    # Step 1: front medial unstressed *a → *e before *g
+    [{*a} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*g}]
+    .o.
+    # Step 2: palatalize *g after *e at word boundary (not before back V; cf. monegum)
+    [{*g} -> {*ʤ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ {*e} _ .#.]
+    .o.
+    # Step 3: raise *e → *i next to palatal ʤ (medial unstressed only)
+    [{*e} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*ʤ}]
+);
+
 define OEIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -1709,6 +1728,7 @@ define OldEnglishAfterEpenthesis OldEnglishCore
     .o. OEEpentheticVowel;
 
 define OldEnglishRules OldEnglishAfterEpenthesis
+    .o. OELateUnstressedAgSuffix
     .o. OECjCleanup
     .o. OEXsMerge
     .o. OldEnglishOrthography
