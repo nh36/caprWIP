@@ -1,7 +1,7 @@
-Total mismatches: 122
+Total mismatches: 121
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      8
+  TSV/data fixes needed:      7
   Documented exceptions:       4
   Phonology (core buckets):    30
   Phonology (other buckets):   80
@@ -30,7 +30,7 @@ Total mismatches: 122
   breaking_extra__eo_for_high: 4
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 2
-  breaking_extra__wrong_form: 3
+  breaking_extra__wrong_form: 2
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
@@ -166,8 +166,7 @@ breaking_extra__ie_for_i (2):
   *geftiz -> ġieft (expected ġift)
   *θrejez -> þrīe (expected þrī)
 
-breaking_extra__wrong_form (3):
-  *leusăną -> lēosan (expected forloren)
+breaking_extra__wrong_form (2):
   *xlaxjăną -> hliehan (expected hlæhhan)
   *skellinăz -> sċiellen (expected sċilling)
 
