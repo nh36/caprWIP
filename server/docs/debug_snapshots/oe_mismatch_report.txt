@@ -1,15 +1,15 @@
-Total mismatches: 134
+Total mismatches: 132
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      10
+  TSV/data fixes needed:      9
   Documented exceptions:       4
-  Phonology (core buckets):    32
+  Phonology (core buckets):    31
   Phonology (other buckets):   88
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
   fronting_missing__afb: 3
-  fronting_missing__also_wrong_form: 2
+  fronting_missing__also_wrong_form: 1
   breaking_missing__expected_ea_got_a: 5
   breaking_missing__expected_eo: 3
   breaking_missing__expected_eo_got_e: 3
@@ -31,7 +31,7 @@ Total mismatches: 134
   breaking_extra__eo_for_high: 4
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 2
-  breaking_extra__wrong_form: 4
+  breaking_extra__wrong_form: 3
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
@@ -85,8 +85,7 @@ fronting_missing__afb (3):
   *stamnăz -> stamn (expected stemn)
   *tappô -> tappa (expected tæppa)
 
-fronting_missing__also_wrong_form (2):
-  *dranką -> dranc (expected drenċ)
+fronting_missing__also_wrong_form (1):
   *fastēną -> faston (expected fæst)
 
 breaking_missing__expected_ea_got_a (5):
@@ -172,11 +171,10 @@ breaking_extra__ie_for_i (2):
   *geftiz -> ġieft (expected ġift)
   *θrejez -> þrīe (expected þrī)
 
-breaking_extra__wrong_form (4):
+breaking_extra__wrong_form (3):
   *leusăną -> lēosan (expected forloren)
   *xlaxjăną -> hliehan (expected hlæhhan)
   *skellinăz -> sċiellen (expected sċilling)
-  *waljăną -> wielan (expected willan)
 
 a_restoration_needed (1):
   *nablô -> næfla (expected nafola)
@@ -309,5 +307,4 @@ suffix_form__eian_vs_ian (4):
 *tappô -> tappa (expected tæppa)
 
 --- fronting_missing__also_wrong_form ---
-*dranką -> dranc (expected drenċ)
 *fastēną -> faston (expected fæst)
