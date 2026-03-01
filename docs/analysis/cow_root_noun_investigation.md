@@ -128,15 +128,24 @@ Same as Option A but with a detailed NOTE in the TSV explaining:
 - PWGmc *kūz is R/T's reconstruction (vol. 2, line 5468)
 - The form tests the pipeline's handling of the *kū- stem
 
-## Recommendation
+## Resolution: Option B implemented (commit 6763b73)
 
-**Option A/D** is the most practical choice:
-1. The form *kūz is directly attested as R/T's reconstruction
-2. The pipeline handles it correctly (kūz → cū)
-3. The OE target cū is the most common citation form
-4. A note can explain the root noun ablaut context
+**Option B was chosen** — the theoretically satisfying approach with oblique forms on both sides.
 
-**Option B** would be theoretically more satisfying (truly oblique forms on both sides) but is blocked by a pipeline limitation that would require significant work to fix.
+### Pipeline fix
+The limitation was that `OEHighVowelApocope` required `OEAnyConsonant+` between the long vowel and final `{*i}`. Added a new rule line:
+```
+{*i} -> 0 || EnglishStarLongVowel _ .#.
+```
+This handles R/T §6.6.1 vowel-hiatus contraction in root nouns (and is consistent with the existing *fūri → fȳre treatment).
+
+After fix: `kūi → cȳ` ✓
+
+### TSV changes
+- **OE row (ID 1980)**: proto `*kūi`, target `cȳ` (PGmc dat.sg. → OE dat.sg., lautgesetzlich)
+- **Du/En/De rows**: proto `*kōz` (correct PGmc nom.sg. per Kroonen; spurious `-w-` removed)
+
+Mismatches: 121 → 120.
 
 ## References
 
