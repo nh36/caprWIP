@@ -1,15 +1,14 @@
 Total mismatches: 122
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      9
+  TSV/data fixes needed:      8
   Documented exceptions:       4
-  Phonology (core buckets):    31
-  Phonology (other buckets):   78
+  Phonology (core buckets):    30
+  Phonology (other buckets):   80
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
   fronting_missing__afb: 3
-  fronting_missing__also_wrong_form: 1
   breaking_missing__expected_ea_got_a: 5
   breaking_missing__expected_eo: 3
   breaking_missing__expected_eo_got_e: 3
@@ -20,7 +19,7 @@ Total mismatches: 122
   final_vowel_extra: 8
   length_extra_other: 2
   palatal_marker_variant: 2
-  epenthetic_vowel_missing: 1
+  epenthetic_vowel_missing: 2
   syncopation_missing: 3
   gemination_extra: 1
   final_devoicing_missing: 1
@@ -49,7 +48,6 @@ Total mismatches: 122
   final_vowel_missing__apocope_candidate: 1
   final_vowel_missing__morph_form_mismatch: 4
   final_vowel_missing__other: 3
-  final_vowel_missing__verb_vs_noun: 1
   final_vowel_missing__weak_noun_like: 8
 --- final_n_missing sub-buckets ---
   final_n_missing__expected_en: 1
@@ -70,7 +68,7 @@ Total mismatches: 122
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
-  suffix_form__eian_vs_ian: 4
+  suffix_form__eian_vs_ian: 5
 
 === DETAILED EXAMPLES ===
 
@@ -83,9 +81,6 @@ fronting_missing__afb (3):
   *rastō -> rast (expected ræst)
   *stamnăz -> stamn (expected stemn)
   *tappô -> tappa (expected tæppa)
-
-fronting_missing__also_wrong_form (1):
-  *fastēną -> faston (expected fæst)
 
 breaking_missing__expected_ea_got_a (5):
   *dawwō -> dawu (expected dēaw)
@@ -133,7 +128,8 @@ palatal_marker_variant (2):
   *skūflō -> sċūfl (expected scofl)
   *waskaną -> wascan (expected wasċan)
 
-epenthetic_vowel_missing (1):
+epenthetic_vowel_missing (2):
+  *fastēną -> faston (expected fastian)
   *fulgēną -> folgon (expected folgian)
 
 syncopation_missing (3):
@@ -227,9 +223,6 @@ final_vowel_missing__other (3):
   *labbăz -> læfb (expected læppa)
   *spennilō -> spinneol (expected spindle)
 
-final_vowel_missing__verb_vs_noun (1):
-  *xandlōjăną -> handleian (expected handle)
-
 final_vowel_missing__weak_noun_like (8):
   *fūri -> fȳr (expected fȳre)
   *flaskō -> flasc (expected flasce)
@@ -238,7 +231,7 @@ final_vowel_missing__weak_noun_like (8):
   *skuldrō -> sċoldor (expected sċuldra)
 
 final_n_missing__expected_en (1):
-  *lungwą -> lungw (expected lungen)
+  *lungō -> lung (expected lungen)
 
 cons_mismatch__c_vs_ċ__cluster (1):
   *strakkjăną -> strecċan (expected streċċan)
@@ -283,8 +276,9 @@ cons_mismatch__þ_vs_d__cluster (1):
 cons_mismatch__þ_vs_d__intervocalic (1):
   *xlaθaną -> hlaþan (expected hladan)
 
-suffix_form__eian_vs_ian (4):
+suffix_form__eian_vs_ian (5):
   *burōjăną -> boreian (expected borian)
+  *xandlōjăną -> handleian (expected handlian)
   *liznōjăną -> lierneian (expected leornian)
   *likkōjăną -> licceian (expected liccian)
   *makōjăną -> maceian (expected macian)
@@ -296,4 +290,3 @@ suffix_form__eian_vs_ian (4):
 *tappô -> tappa (expected tæppa)
 
 --- fronting_missing__also_wrong_form ---
-*fastēną -> faston (expected fæst)
