@@ -1271,10 +1271,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 814	t ɪ m b ə	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English				timber	*timrą	363
 2258	t i m b e r	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*timrą	363
 813	ts ɪ m ə r	*timrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*timrą	363
-1723	t eː n	*taixwō	t eː ( - - n )	teːn	teen	472	Dutch				toe	*taixwō	291
-1722	t əʊ	*taixwō	t əʊ ( - - - )	təʊ	toe	472	English				toe	*taixwō	291
-2259	t ā	*taixwō	t əʊ ( - - - )	təʊ	tā	472	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			toe	*taixwō	291
-1721	ts eː ə	*taixwō	ts eː ( - ə - )	t͡seːə	Zehe	472	German				toe	*taixwō	291
+1723	t eː n	*taixōn	t eː ( - - n )	teːn	teen	472	Dutch	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-; -w- from PIE labiovelar already lost in NWGmc)			toe	*taixōn	291
+1722	t əʊ	*taixōn	t əʊ ( - - - )	təʊ	toe	472	English	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-)			toe	*taixōn	291
+2259	t ā	*taixōn	t ā	taː	tā	472	Old_English	TSV fix: proto *taixwō → *taixōn (R/T §6.6 line 18000: PNWGmc *taihōn- > PWGmc *taihā > OE tāhe > tā by intervocalic h-loss + contraction). See docs/analysis/four_complex_tsv_items.md			toe	*taixōn	291
+1721	ts eː ə	*taixōn	ts eː ( - ə - )	t͡seːə	Zehe	472	German	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-)			toe	*taixōn	291
 1592	t eː k ə	*taikną	t eː k ə - ( - - )	teːkə	teken	436	Dutch				token	*taikną	292
 1591	t əʊ k ə n	*taikną	t əʊ k ə n ( - - )	təʊkən	token	436	English				token	*taikną	292
 2260	t ā c n	*taikną	t əʊ k ə n ( - - )	təʊkən	tācn	436	Old_English	Proto: oblique *taiknăn→*taikną (n. a-stem nom.sg.; Kroonen)			token	*taikną	292
