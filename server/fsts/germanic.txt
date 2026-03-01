@@ -1543,7 +1543,10 @@ define OEHighVowelApocope [
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.
+    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
+    # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
+    {*i} -> 0 || EnglishStarLongVowel _ .#.
 ];
 
 # Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
