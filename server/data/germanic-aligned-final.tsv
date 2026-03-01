@@ -283,7 +283,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 203	f aː r ə n	*farăną	f aː r ə n ( - - )	faːrən	fahren	57	German				fare	*farăną	66
 1317	v ɑ s t ə	*fastēną	v ɑ s t ə - ( - - )	vɑstə	vasten	361	Dutch				fast	*fastēną	67
 1316	f ɑː s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fast	361	English				fast	*fastēną	67
-2004	f æ s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fæst	361	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fast	*fastēną	67
+2004	f a s t i a n	*fastēną	f a s t i a n ( - - )	fɑstiɑn	fastian	361	Old_English	TSV fix: was fæst (adj *fastu-); changed to fastian (verb 'to fast' < *fastēn-, Kroonen p.131). Du vasten / G fasten are the verb, not the adj.			fast	*fastēną	67
 1315	f a s t ə n	*fastēną	f a s t ə n ( - - )	fastən	fasten	361	German				fast	*fastēną	67
 912	v aː d ə r	*fadēr	v aː d ə r	vaːdər	vader	250	Dutch				father	*fadēr	68
 911	f ɑː ð ə	*fadēr	f ɑː ð ə r	fɑːðə	father	250	English				father	*fadēr	68
@@ -483,7 +483,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 392	h a n t	*xanduz	h a n d ( - - )	hant	Hand	108	German				hand	*xanduz	113
 532	h ɑ n d ə l ə	*xandlōjăną	h ɑ n d ə l ( ə - - - - - )	hɑndələ	handelen	145	Dutch				handle	*xandlōjăną	114
 531	h æ n d ə l	*xandlōjăną	h æ n d ə l ( - - - - - - )	hændḷ	handle	145	English				handle	*xandlōjăną	114
-2055	h a n d l e	*xandlōjăną	h æ n d ə l ( - - - - - - )	hændḷ	handle	145	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			handle	*xandlōjăną	114
+2055	h a n d l i a n	*xandlōjăną	h a n d l i a n ( - - - - - )	hɑndliɑn	handlian	145	Old_English	TSV fix: was handle (noun f.); changed to handlian (verb 'to handle' < *handulōną, Kroonen/Wiktionary). Du handelen / G handeln are the verb.			handle	*xandlōjăną	114
 530	h a n d ə l n	*xandlōjăną	h a n d ə l ( - n - - - - )	handəln	handeln	145	German				handle	*xandlōjăną	114
 452	h ɑː m	*xarmăz	h ɑː - m ( - - )	hɑːm	harm	124	English				harm	*xarmăz	340
 2056	h e a r m	*xarmăz	h ɑː - m ( - - )	hɑːm	hearm	124	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			harm	*xarmăz	340
@@ -708,10 +708,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1825	l aʊ s	*lūsz	l aʊ s ( - )	laʊs	louse	500	English				louse	*lūsz	162
 2113	l ū s	*lūsz	l aʊ s ( - )	luːs	lūs	500	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			louse	*lūsz	162
 1824	l au s	*lūsz	l au s ( - )	laus	Laus	500	German				louse	*lūsz	162
-892	l ɔ ŋ	*lungwą	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch				lung	*lungwą	163
-891	l ʌ ŋ	*lungwą	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English				lung	*lungwą	163
-2114	l u n g e n	*lungwą	l ʌ ŋ - ( - - )	lʌŋ	lungen	245	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lung	*lungwą	163
-890	l ʊ ŋ ə	*lungwą	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German				lung	*lungwą	163
+892	l ɔ ŋ	*lungō	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch				lung	*lungō	163
+891	l ʌ ŋ	*lungō	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English				lung	*lungō	163
+2114	l u n g e n	*lungō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	TSV fix: proto was *lungwą (spurious -wą); changed to *lungō (neut. n-stem, Kroonen *lungōn- p.367). OE lungen specifically < *lungunjo- (Kroonen), a derivative of *lungō.			lung	*lungō	163
+890	l ʊ ŋ ə	*lungō	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German				lung	*lungō	163
 1329	l ʉ s t	*lustuz	l ʉ s t ( - - )	lʉst	lust	364	Dutch				lust	*lustuz	164
 1328	l ʌ s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	English				lust	*lustuz	164
 2115	l u s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lust	*lustuz	164
