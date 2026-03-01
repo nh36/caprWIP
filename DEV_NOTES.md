@@ -1926,3 +1926,32 @@ The a-stem nom.sg. \*-ăz ending means no \*-i- trigger, so:
 - No i-umlaut (PGmc \*u stays as \*u, lowered to OE o by NWGmc u-lowering) ✓
 - No palatalization of \*kk (no following front vowel) ✓
 - Pipeline output: rocc ✓
+
+---
+
+## Unstressed *-ag → -ig (R/T §6.9.6)
+
+**Date:** 2026-03-01
+**Status:** Implemented (OELateUnstressedAgSuffix)
+
+### The sound change
+
+R/T §6.9.6 (pp.349-350): Late unstressed \*-ag(-) → \*-æg(-) → \*-eg(-) → -ig(-).
+After i-umlaut and epenthesis. R/T: "inherited \*a adjacent to palatals eventually
+became i." Examples:
+- PGmc \*modagaz → OE modig 'spirited, brave'
+- PNWGmc \*hailagaz → OE hālig 'holy'
+- PWGmc \*hunag → \*huneg → OE hunig 'honey'
+
+Before back vowels the intermediate -eg- is preserved with velar g (e.g.,
+dat. pl. monegum), so late palatalization restricted to word-final position.
+
+### Implementation
+
+Rule `OELateUnstressedAgSuffix` in germanic.txt, placed after OEEpentheticVowel:
+1. Front medial unstressed \*a → \*e before \*g (requires V+C+ before)
+2. Palatalize \*g → \*ʤ after \*e at word boundary (not before back V)
+3. Raise \*e → \*i before palatal \*ʤ (medial only, requires V+C+ before)
+
+All three steps restricted to medial (non-initial) position to prevent regressions
+on stressed-syllable forms (e.g. \*xagjăz → heġġ, which should keep stressed \*e).
