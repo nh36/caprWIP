@@ -1,10 +1,10 @@
-Total mismatches: 125
+Total mismatches: 122
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      9
   Documented exceptions:       4
   Phonology (core buckets):    31
-  Phonology (other buckets):   81
+  Phonology (other buckets):   78
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -43,7 +43,6 @@ Total mismatches: 125
   vowel_quality__stressed_vowel: 7
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 2
-  vowel_quality__unstressed_e_o: 3
   vowel_quality__unstressed_o_a: 2
   vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
@@ -111,8 +110,6 @@ long_vowel_missing (7):
   *xawwją -> heow (expected hīeġ)
   *xawwăną -> heawan (expected hēawan)
   *mizdō -> mierd (expected mēd)
-  *strawą -> streaw (expected strēaw)
-  *texun -> teoon (expected tīen)
 
 no_output (6):
   *galaubjăną -> +? (expected ġelīefan)
@@ -120,7 +117,6 @@ no_output (6):
   *regna-bugô -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
-  *wurmaz/wurmiz -> +? (expected wyrm)
 
 final_vowel_extra (8):
   *laimōn -> lāme (expected lām)
@@ -128,9 +124,6 @@ final_vowel_extra (8):
   *sapōn -> sæpe (expected sæp)
   *saiwălō -> sāwalu (expected sāwol)
   *stabiz -> stefe (expected stæf)
-  *θūs-undī -> þūsynde (expected þūsend)
-  *westănē -> westane (expected west)
-  *wullo -> wollo (expected wull)
 
 length_extra_other (2):
   *dōną -> dōn (expected don)
@@ -202,8 +195,6 @@ vowel_quality__stressed_vowel (7):
   *nistą -> nist (expected nest)
   *nasō -> nasu (expected nosu)
   *wiθră -> wiþer (expected weþer)
-  *liznô -> lierna (expected leorna)
-  *liznōθi -> lierneþ (expected leorneþ)
 
 vowel_quality__u_lowering_exception (4):
   *bukkăz -> bocc (expected bucc)
@@ -214,11 +205,6 @@ vowel_quality__u_lowering_exception (4):
 vowel_quality__u_o_alternation (2):
   *gud -> gud (expected god)
   *widuwōn -> widowe (expected widuwe)
-
-vowel_quality__unstressed_e_o (3):
-  *xamaras -> hameres (expected hamores)
-  *mōdēr -> mōder (expected mōdor)
-  *sumerăz -> sumer (expected sumor)
 
 vowel_quality__unstressed_o_a (2):
   *mēnōθz -> mōnoþ (expected mōnaþ)
@@ -250,9 +236,6 @@ final_vowel_missing__weak_noun_like (8):
   *gallą -> ġeall (expected ġealla)
   *xnakkăz -> hnæcc (expected hnecca)
   *skuldrō -> sċoldor (expected sċuldra)
-  *sibăz -> sif (expected sife)
-  *speru -> speor (expected spere)
-  *tangō -> tang (expected tange)
 
 final_n_missing__expected_en (1):
   *lungwą -> lungw (expected lungen)

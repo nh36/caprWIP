@@ -475,7 +475,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1781	h a l ə	*xallō	h a l ə	halə	Halle	488	German				hall	*xallō	111
 438	h aː m ə r	*xamarăz	h aː m ə r ( - - )	haːmər	hamer	120	Dutch				hammer	*xamarăz	112
 437	h æ m ə	*xamarăz	h æ m ə r ( - - )	hæmə	hammer	120	English				hammer	*xamarăz	112
-2053	h a m o r	*xamaras	h æ m ə r ( - - )	hæmə	hamores	120	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *xamaras (> hamores)		hammer	*xamaras	112
+2053	h a m e r e s	*xamaras	h æ m ə r ( - - )	hæmər	hameres	120	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).	 | Note: using gen.sg. *xamaras (> hameres)		hammer	*xamaras	112
 436	h a m ə r	*xamarăz	h a m ə r ( - - )	hamər	Hammer	120	German				hammer	*xamarăz	112
 394	h ɑ n t	*xanduz	h ɑ n t ( - - )	hɑnt	hand	108	Dutch				hand	*xanduz	113
 393	h æ n d	*xanduz	h æ n d ( - - )	hænd	hand	108	English				hand	*xanduz	113
@@ -769,7 +769,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 717	m uː t	*mōdăz	m uː t ( - - )	muːt	Mut	197	German				mood	*mōdăz	176
 1620	m uː d ə r	*mōdēr	m uː d ə r	muːdər	moeder	444	Dutch				mother	*mōdēr	177
 1619	m ʌ ð ə	*mōdēr	m ʌ ð ə r	mʌðə	mother	444	English				mother	*mōdēr	177
-2129	m ō d o r	*mōdēr	m ʌ ð ə r	ˈmoːdor	mōdor	444	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			mother	*mōdēr	177
+2129	m ō d e r	*mōdēr	m ʌ ð ə r	ˈmoːdər	mōder	444	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Note: mōder is the regular nom.sg. reflex (cf. dat.sg. mēder < *mōdri). R/T §7.2.1: modor ~ -ur has suffixal vowel leveled from oblique cases (analogical).			mother	*mōdēr	177
 1618	m ʊ t ə r	*mōdēr	m ʊ t ə r	mʊtər	Mutter	444	German				mother	*mōdēr	177
 1580	n aː ɣ ə l	*naglăz	n aː ɣ ə l ( - - )	naːɣəl	nagel	433	Dutch				nail	*naglăz	178
 1579	n eɪ l	*naglăz	n eɪ - - l ( - - )	neɪl	nail	433	English				nail	*naglăz	178
@@ -1159,10 +1159,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 607	s t ʌ d	*stōdą	s t ʌ d - ( - )	stʌd	stud	167	English				stud	*stōdą	359
 2229	s t ō d	*stōdą	s t ʌ d - ( - )	stʌd	stōd	167	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			stud	*stōdą	359
 606	ʃ t uː t ə	*stōdą	ʃ t uː t ə ( - )	ʃtuːtə	Stute	167	German				stud	*stōdą	359
-1872	z oː m ə r	*sumerăz	z oː m ə r ( - - )	zoːmər	zomer	513	Dutch				summer	*sumerăz	266
-1871	s ʌ m ə	*sumerăz	s ʌ m ə r ( - - )	sʌmə	summer	513	English				summer	*sumerăz	266
-2230	s u m o r	*sumerăz	s ʌ m ə r ( - - )	sʌmə	sumor	513	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			summer	*sumerăz	266
-1870	z ɔ m ə r	*sumerăz	z ɔ m ə r ( - - )	zɔmər	Sommer	513	German				summer	*sumerăz	266
+1872	z oː m ə r	*sumarăz	z oː m ə r ( - - )	zoːmər	zomer	513	Dutch				summer	*sumarăz	266
+1871	s ʌ m ə	*sumarăz	s ʌ m ə r ( - - )	sʌmə	summer	513	English				summer	*sumarăz	266
+2230	s u m e r	*sumarăz	s ʌ m ə r ( - - )	sʌmər	sumer	513	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der) | Note: proto corrected *sumerăz→*sumarăz (Kroonen *sumara-, R/T *sumaraz both have *a). Both sumer and sumor attested (Kroonen); sumer is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). sumor has unexplained -o- (R/T §3.1.5).			summer	*sumarăz	266
+1870	z ɔ m ə r	*sumarăz	z ɔ m ə r ( - - )	zɔmər	Sommer	513	German				summer	*sumarăz	266
 1758	z ɔ n	*sunnōn	z ɔ n ( - - )	zɔn	zon	481	Dutch				sun	*sunnōn	267
 1757	s ʌ n	*sunnōn	s ʌ n ( - - )	sʌn	sun	481	English				sun	*sunnōn	267
 2231	s u n n e	*sunnōn	s ʌ n ( - - )	ˈsun.ne	sunne	481	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sun	*sunnōn	267
