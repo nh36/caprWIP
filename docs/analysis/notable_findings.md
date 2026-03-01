@@ -83,10 +83,142 @@ before `[{*θ}|{*ð}|{*d}|{*t}]` only.
 
 ---
 
-## 2. (Placeholder for future findings)
+## 2. NWGmc u-lowering exceptions near labials: a non-Neogrammarian pattern
 
-As additional sound changes are implemented and tested against the dataset,
-further observations of this kind should be documented here.
+**Date discovered:** Session 021 (NWGmc u-lowering investigation)
+
+**Background:** NWGmc u-lowering is a well-established sound change: stressed
+\*u → \*o before non-high vowels in a following syllable (R/T vol.2 §2.3.1,
+pp.27-33). However, a cluster of lexemes retains \*u where \*o is predicted:
+\*fullaz → full (not ×foll), \*wulfaz → wulf (not ×wolf), \*fuglaz → fugol
+(not ×fogol), \*bukkaz → bucc (not ×bocc), \*wullō → wulle (not ×wolle),
+\*lubō → lufu (not ×lofu). OHG consistently shows the lowered forms (fol,
+wolf, fogal, boc, wolla), confirming the exceptions are specifically OE (and
+shared with OFris. and OS).
+
+**What the literature says:**
+
+- **Bülbring (EB §116, pp.45-46):** First observed the pattern. Notes that
+  u appears instead of expected o "namentlich zwischen Labial und langem
+  oder gedecktem l" — between a labial and long or covered l. Proposes
+  that \*u was only lowered partway ("etwa zu [ou] oder zu engem [o]") and
+  then, under influence of labial/velar environment, reverted to u. Concedes
+  that counterexamples exist (wolcen, folgian, bolt, folc). Remains agnostic
+  on mechanism.
+
+- **Luick (Hist. Gr. §78, Anm. 3):** Engages directly with Bülbring and
+  **rejects** the phonological conditioning. Argues for paradigmatic leveling:
+  doublet forms arose because paradigms had both u-preserving (high-vowel
+  suffix) and u-lowering (non-high suffix) cells; near labials/gutturals, the
+  u-forms happened to win. He explicitly cites the counterexamples that
+  make Bülbring's conditioning untenable: wolcen, folc, folġian, folde, folm,
+  bolla, bolt, bolster, molde, molcen, smolt — all have labial/velar
+  environments but show regular lowering.
+
+- **R/T (vol.2 §2.3.1, pp.32-33):** Agree these are genuine exceptions.
+  Find paradigmatic leveling "implausible" for a-stem nouns because the
+  only paradigm cells with high-vowel suffixes (inst.sg. \*-u, dat.pl. \*-umaz)
+  are functionally marginal. Conclude: **"We do not really know why \*u
+  failed to lower in these forms."**
+
+**What our FST implementation revealed:** When we attempted to model the
+exceptions, we systematically evaluated four approaches:
+
+1. **U-stem paradigm forms** — philologically indefensible (Kroonen
+   reconstructs \*wulfa-, \*fugla-, \*bukka(n)- as a-/n-stems)
+2. **Instrumental singular \*-u** — R/T reject this as implausible source
+   of leveling
+3. **Root-noun analysis** — Gothic wulfs shows thematic inflection, ruling
+   this out
+4. **Derivational forms with \*j/\*i** — would show i-umlaut, giving wrong
+   root vowel
+
+None of the four approaches could produce the correct outputs via
+lautgesetzlich derivation. The FST implementation thus confirmed
+R/T's assessment that these are genuine exceptions, while demonstrating
+more rigorously that no paradigm-cell workaround is available.
+
+**The observation:** The statistical clustering of exceptions near labial/velar
+consonants is real (confirmed by our systematic inventory) but cannot be
+formalized as a Neogrammarian rule because identical environments also show
+regular lowering (folc, wolcen, bolla, etc.). This is a case where the FST
+methodology demonstrates its own limits: **the pattern is gradient/probabilistic,
+not categorical**, and is therefore fundamentally outside the scope of a
+deterministic finite-state transducer. Bülbring's 1902 intuition about
+"incomplete lowering + reversion" may be the closest to a correct explanation,
+but it describes a phonetic tendency rather than a sound law.
+
+**Significance for the project:** This is an instructive negative result. The
+FST methodology is designed to test Neogrammarian sound laws; when it cannot
+model a pattern, that failure is itself informative. In this case, it confirms
+that the u-lowering exceptions resist formalization and are likely the result
+of a gradient phonetic effect — precisely the conclusion that four generations
+of scholarship (Bülbring 1902, Luick 1914-40, Hogg 1992, R/T 2014) have
+been unable to improve upon.
+
+**Full analysis:** See DEV_NOTES.md, "NWGmc u-lowering Exceptions Near
+Labials" section.
+
+---
+
+## 3. PWGmc \*j-related sound changes: formalization of under-specified rules
+
+**Date discovered:** Session 021 (PWGmc stage implementation)
+
+**Background:** Two PWGmc sound changes involve the loss or transformation
+of \*j. Both are historically legitimate, but the standard literature leaves
+their formalization significantly under-specified, and our FST implementation
+required making explicit choices that the prose accounts leave open.
+
+**Change 1: PWGmcSyllabicJ (\*ja/\*ją → \*i)**
+
+R/T vol.2 §3.1.2 (p.46): "Upon the loss of unstressed \*a and \*ą, preceding
+postconsonantal \*j and \*w became syllabic \*i and \*u respectively." Our
+implementation restricts this to after light syllables word-finally:
+`{*j}{*a} → {*i} / V̆C _ #`. This conditioning is implicit in R/T's examples
+but not explicitly stated as a rule. Our implementation successfully derives:
+\*bazją → \*bazi → berġes, \*harjaz → \*hari → here, \*natją → \*nati → net.
+
+**Change 2: PWGmcIjContraction (\*ijō → \*iu)**
+
+R/T vol.2 §3.1.5 (p.62): "A roughly similar change of \*ijo to \*iu appears
+to have occurred in the word 'friend' in PWGmc." R/T add an explicit caveat:
+**"the uniqueness of the sequence \*ijo (with stressed \*i) makes it
+inadvisable to attempt any generalizations based on the history of this
+word."** Our FST had to implement it anyway (as `{*i}{*j}{*ō} → {*iu}`,
+unconditional) to derive PGmc \*frijōnd- → PWGmc \*friund → OE frēond.
+
+R/T note a **parallel change** \*Vwu → \*Vu (§3.1.5): \*knewu → \*kneu →
+OE cnēo ('knee'), \*fawu → \*fau → OE fēa ('few'). They explicitly state
+that the two changes "cannot plausibly be reduced to a single phonological
+rule," despite the structural similarity (semivowel deletion between vowels).
+
+**What the FST methodology reveals:** The process of formalization forces
+decisions that prose scholarship can defer. R/T can write "it is inadvisable
+to attempt any generalizations" — but the FST must either implement a rule or
+not. Our implementation raises concrete questions:
+
+1. Should \*ijō → \*iu be treated as a regular sound change (which happens
+   to have only one attested input) or as a lexical irregularity that should
+   be hard-coded?
+2. Is the structural parallel between \*ijō → \*iu and \*Vwu → \*Vu deeper
+   than R/T acknowledge? Both involve loss of a semivowel between vowels
+   with compensatory vowel change. An FST could test a unified rule against
+   both datasets.
+3. What happens if additional PGmc \*ijV sequences are identified in the
+   lexicon? The FST provides immediate testability.
+
+**Significance for the project:** This case illustrates a different advantage
+of the FST methodology from the syncope finding (§1). There, the FST
+revealed a conditioning environment the literature didn't discuss. Here, the
+FST **forces explicit formalization** of rules that the literature deliberately
+leaves vague. The questions this raises — about rule generality, about
+unifying structurally parallel changes — are questions that only arise when you
+try to implement the sound changes as formal rules rather than prose
+descriptions.
+
+**Full analysis:** See DEV_NOTES.md, "PWGmc \*j-related Sound Changes —
+NEEDS EXPERT REVIEW" section.
 
 ---
 
