@@ -327,7 +327,8 @@ define pgrmWeakTailVowel [
     ō:{*ō} n:{*n} d:{*d} z:{*z} |
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
     ō:{*ō} θ:{*θ} i:{*i} |
-    ō:{*ō} θ:{*θ} z:{*z}
+    ō:{*ō} θ:{*θ} z:{*z} |
+    i:{*i} θ:{*θ} ō:{*ō}
 ];
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
@@ -1558,6 +1559,28 @@ define OEHeavySyllableNasalApocope [
 
 define OEWeightCleanup ?*;  # identity — no markers to clean up
 
+# R/T §6.8, Campbell §§389-393: medial high vowel syncope.
+# After heavy syllables, unstressed medial *i is syncopated before dental
+# obstruents (*θ, *ð, *d, *t). Best attested in *-iθō- abstracts (strengþu,
+# hǣlþu, fyrhtu, wiermþu) where ALL examples show consistent syncope.
+# Also applies in Class 1 weak verb preterites (*-idē → *-dē) and possibly
+# comparatives (*-ira → *-ra), but those aren't currently in the pipeline.
+# Restricted to pre-dental context to avoid overapplication before laterals
+# (*þistilaz → þistel, not *þistl), glides (*wīþijaz → wīþiġ, not *wīþ),
+# and sibilants (*xarbistuz → hierfest, not *hierf+st).
+define OEMedialSyncope [
+    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
+    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
+];
+
+# Post-syncope dental cluster simplification: *tθ → *t.
+# When medial syncope brings *t and *θ into contact (e.g. *fyrhtiθu → *fyrhtθu),
+# the dental fricative assimilates to the preceding stop.
+define OEDentalAssimilation [
+    {*θ} -> 0 || {*t} _
+];
+
 define OEHLoss [
     {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
@@ -1636,6 +1659,8 @@ define EnglishProtoToOE (
     .o. OEWeightMarkers
     .o. OEHighVowelApocope
     .o. OEHeavySyllableNasalApocope
+    .o. OEMedialSyncope
+    .o. OEDentalAssimilation
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
     .o. OEWeakTailReduction

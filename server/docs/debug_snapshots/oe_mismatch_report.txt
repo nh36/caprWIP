@@ -1,7 +1,7 @@
-Total mismatches: 119
+Total mismatches: 118
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      5
+  TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    30
   Phonology (other buckets):   80
@@ -46,7 +46,7 @@ Total mismatches: 119
   vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__apocope_candidate: 1
-  final_vowel_missing__morph_form_mismatch: 2
+  final_vowel_missing__morph_form_mismatch: 1
   final_vowel_missing__other: 3
   final_vowel_missing__weak_noun_like: 8
 --- final_n_missing sub-buckets ---
@@ -211,9 +211,8 @@ vowel_quality__unstressed_vowel (1):
 final_vowel_missing__apocope_candidate (1):
   *durą -> dor (expected duru)
 
-final_vowel_missing__morph_form_mismatch (2):
+final_vowel_missing__morph_form_mismatch (1):
   *deljăz -> dill (expected dile)
-  *furxtīn -> fyrhten (expected fryhtu)
 
 final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)

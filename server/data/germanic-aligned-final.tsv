@@ -399,9 +399,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1691	f r ɛ n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	friend	463	English				friend	*frijōndz	94
 2033	f r ē o n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	frēond	463	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			friend	*frijōndz	94
 1690	f r ɔy n t	*frijōndz	f r ɔy ( - - ) n d ( - )	frɔynt	Freund	463	German				friend	*frijōndz	94
-1482	f r aɪ t	*furxtīn	f - r aɪ - t ( - - )	fraɪt	fright	406	English				fright	*furxtīn	338
-2034	f r y h t u	*furxtīn	f - r aɪ - t ( - - )	fraɪt	fryhtu	406	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fright	*furxtīn	338
-1481	f ʊ r x t	*furxtīn	f ʊ r - x t ( - - )	fʊrxt	Furcht	406	German				fright	*furxtīn	338
+1482	f r aɪ t	*furxtiθō	f - r aɪ - t ( - - - )	fraɪt	fright	406	English	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iþō-abstract from adj. *furhta-; R/T line 21553)			fright	*furxtiθō	338
+2034	f y r h t u	*furxtiθō	f y r h t u	fyrxtu	fyrhtu	406	Old_English	TSV fix: proto *furxtīn → *furxtiθō, target fryhtu → fyrhtu. PGmc *furhtiþō (*iþō-abstract, R/T §6.8) → fyrhtu by i-umlaut + medial syncope + dental assimilation + ō-shortening. Non-metathesized form (Campbell §459: r-metathesis is sporadic). See docs/analysis/fryhtu_investigation.md			fright	*furxtiθō	338
+1481	f ʊ r x t	*furxtiθō	f ʊ r - x t ( - - - )	fʊrxt	Furcht	406	German	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iþō-abstract; OHG forhta < ō-stem *furhtō- but proto unified to *furhtiþō for cognate set)			fright	*furxtiθō	338
 456	v ɔ r s t	*frustą	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch				frost	*frustą	95
 455	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	frost	125	English				frost	*frustą	95
 2035	f o r s t	*frustą	f r ɔ - s t ( - - )	frɔst	forst	125	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			frost	*frustą	95
