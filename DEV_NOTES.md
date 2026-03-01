@@ -1878,3 +1878,51 @@ These issues affect the Class II test forms but are NOT specific to Class II ver
 ### Proto-form notes
 
 **`*nablô` (navel):** Competing reconstructions. Kroonen reconstructs PGmc *nablōn- (stem *nablan-), but R/T vol.2 §6.3.1 p.206 gives pre-retraction *nabulō with medial vowel (cf. OHG nabalo). The medial *u may be PWGmc-level epenthesis. Current TSV form *nablô follows Kroonen. For A-restoration to fire correctly in the pipeline, *nabulô may be needed, since R/T's chronology places epenthesis (§6.9.5, mid-7th c.) much later than retraction (§6.3, pre-6th c.).
+
+---
+
+## Cognate set 379 "rock" → corrected to "coat" (*rukkăz)
+
+**Date:** 2026-03-01
+**Status:** Fixed
+
+### The problem
+
+Cognate set 379 (GLOSSID 200) was glossed "rock" (apparently meaning stone)
+with PGmc \*rukkiz (i-stem) and the following forms:
+- OE: rocc
+- German: Ruck
+- Dutch: ruk
+- English: rock
+
+This set was a mess: three different etymologies had been conflated.
+
+1. **OE rocc "garment/tunic"**: from PGmc \*rukkaz (masc. a-stem, Kroonen
+   \*hrukkaz); cognates German Rock "skirt/coat", Dutch rok "skirt". The OE
+   word is well attested (brēostrocc, pistolrocc, bisċoprocc etc.).
+
+2. **OE \*rocc "rock formation"**: attested only in the compound stānrocc.
+   Etymology uncertain — possibly from Medieval Latin rocca (itself perhaps
+   from Celtic), not a native Germanic word at all. ModE "rock" (stone) is
+   partly from OE \*rocc, partly from Anglo-Norman roque.
+
+3. **German Ruck "jerk/jolt"**, Dutch ruk "pull/jerk": from MHG ruc, OHG
+   rucch, related to the verb rücken "to push, move". This is a completely
+   different root, unrelated to the garment word.
+
+### Resolution
+
+Replaced the cognate set with the garment word, which has a well-established
+PGmc reconstruction and reflexes in all four languages:
+- PGmc \*rukkăz (masc. a-stem; Kroonen \*hrukkaz pp.250-1)
+- OE: rocc "upper garment, tunic" (attested)
+- German: Rock "skirt, jacket" /ʁɔk/
+- Dutch: rok "skirt" /rɔk/
+- English: rock (archaic "garment", from ME rocke < OE rocc)
+- Concept changed from "rock" (stone) to "coat" (garment)
+- Proto-form changed from \*rukkiz (i-stem, wrong) to \*rukkăz (a-stem, correct)
+
+The a-stem nom.sg. \*-ăz ending means no \*-i- trigger, so:
+- No i-umlaut (PGmc \*u stays as \*u, lowered to OE o by NWGmc u-lowering) ✓
+- No palatalization of \*kk (no following front vowel) ✓
+- Pipeline output: rocc ✓
