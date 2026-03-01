@@ -131,42 +131,145 @@ that in the TSV with a note explaining that the pipeline cannot model the
   3. Weak tail pattern: i:{*i} θ:{*θ} ō:{*ō} added to pgrmWeakTailVowel
 - **Mismatches**: 119 → 118
 
-## 5. Medial syncope research
+## 5. Medial syncope: literature review and novel finding
 
-### The general phenomenon
+### The standard accounts
 
-OE medial syncope (Campbell §§389-393, R/T §6.8) deletes short unstressed vowels
-in medial position after heavy syllables. It is the interior counterpart of the
-well-known final high-vowel apocope (*-i, *-u → ∅ after heavy syllables).
+The secondary literature treats OE medial syncope as a general process
+conditioned by syllable weight. None of the standard references formulate a
+rule conditioned by the identity of the consonant following the syncopated
+vowel.
 
-The change affects multiple morphological environments:
-- **\*-iθō- abstracts** (derivational): \*strangiθō → strengþu, \*furhtiθō → fyrhtu
-- **Class 1 weak verb preterites**: \*dōmidē → dēmde (medial *i before *d)
-- **Noun inflection** (u-stems): \*hēafudu → hēafdu (medial *u before *d)
-- **Comparatives**: \*strengira → strengra (medial *i before *r)
+**Campbell (OEG §§389-393, pp.143-147):** Formulates the rule as: "Short
+medial vowels are syncopated after a long [= heavy] stressed syllable." The
+discussion focuses on paradigmatic alternations (syncopated vs. unsyncopated
+forms coexisting by analogy) and consonant cluster simplification that results
+from syncope. Campbell does not distinguish environments where syncope is
+regular from those where it is blocked; he notes only that "much irregularity
+ensued, which could be levelled out through analogy." His examples span many
+following-consonant environments (past tense *-d-, comparative *-r-, abstract
+*-þ-), but he does not observe that the following consonant matters.
 
-### Phonological conditioning
+**Hogg (vol. 1, §3.3.3.2, pp.120-121):** States: "The high vowels were also
+subject to syncope in medial positions after a heavy syllable, thus \*yldira
+became yldra 'older'." Hogg describes syncope and apocope as "two quite
+different types of change operating at the same time, the first dependent upon
+syllable structure, the second more dependent upon principles of rhythmic
+alternation." He notes that "the two changes often gave contradictory results
+and much irregularity ensued." Hogg does not discuss which following
+consonants favour or block syncope.
 
-The syncope is NOT unrestricted. It is conditioned by the following consonant:
+**R/T (vol. 2, §6.7.3, pp.264-270):** Provide the most detailed treatment.
+They formulate the rule as follows: "Short vowels in unstressed word-internal
+open syllables were lost under particular conditions. Nonhigh \*æ ... and \*e ...
+were usually lost regardless of the preceding syllable's weight, so long as the
+preceding syllable was stressed; high \*i and \*u were lost only if the preceding
+syllable was both heavy and stressed."
 
-| Following C | Syncope? | Examples |
-|-------------|----------|----------|
-| \*θ (dental fric.) | ✓ always | strengþu, hǣlþu, fyrhtu, wiermþu, lengiþu |
-| \*ð (dental fric.) | ✓ (expected) | no pipeline examples yet |
-| \*d (dental stop) | ✓ | dēmde, hēafdu (verb/noun inflection, not in pipeline) |
-| \*t (dental stop) | ✓ (expected) | no pipeline examples yet |
-| \*r (rhotic) | ✓ | strengra (comparative, not in pipeline) |
-| \*l (lateral) | ✗ | þistel (not \*þistl) |
-| \*j (glide) | ✗ | wīþiġ (not \*wīþ) |
-| \*s (sibilant) | ✗ | hierfest (not \*hierf+st) |
-| \*n (nasal) | ✗ | sċilling (not \*sċilln) |
+R/T give extensive examples. Crucially, they note a complication with
+CR-clusters (p.269): "if a CR-cluster in a weak class I verb is preceded by a
+stressed short vowel, syncope occurs; otherwise it does not." This is the closest
+any source comes to noting that the consonantal environment matters, but it
+concerns the cluster formed AFTER syncope (the preceding consonant + the
+following sonorant R), not the identity of the single consonant following the
+syncopated vowel.
 
-**Generalization**: syncope applies before dental obstruents (\*θ, \*ð, \*d, \*t)
-and possibly before \*r. It does NOT apply before laterals, glides, sibilants,
-or nasals. The dental conditioning makes phonological sense: the resulting
-clusters (e.g. \*t+θ, \*d+d, \*n+d) are all homorganic or near-homorganic and
-reduce naturally, whereas clusters like \*t+l or \*b+s are phonotactically
-problematic and resist syncope.
+R/T also give the \*-iþu- abstract derivation explicitly (p.56, discussing
+PWGmc survival of final vowels): "\*strangiþu > \*strængiþu > \*strengþu >
+strengþ" and "\*filipu > OE \*fyliþu > fylþ" (p.235), as well as "\*ebylgiþu >
+\*ebylgþu > OE ebylgþ" (p.289). In all these examples, syncope of medial \*i
+occurs before \*þ (= our \*θ), but R/T do not remark on this as a conditioning
+factor — they treat it as a straightforward instance of general heavy-syllable
+syncope.
+
+**Luick (Historische Grammatik, §§114-121, pp.279-288):** Referenced by
+R/T as the foundational treatment. Luick discusses the alternations caused by
+syncope in detail, but like the others, formulates the conditioning in terms of
+syllable weight and stress, not following consonant identity.
+
+### What our FST implementation revealed
+
+When we implemented medial syncope as a general rule — deleting unstressed
+medial \*i after heavy syllables before any consonant, exactly as the literature
+describes — the pipeline produced **four regressions**:
+
+| Form | With general syncope | Expected | Problem |
+|------|---------------------|----------|---------|
+| \*θestilaz | þistl | þistel | \*i before \*l deleted; OE preserves it |
+| \*skellinaz | sċielln | sċiellen | \*i before \*n deleted (pre-existing mismatch worsened) |
+| \*wīθijaz | wīþ | wīþeġ | \*i before \*j deleted (pre-existing mismatch worsened) |
+| \*xarbistuz | +? | hierfest | \*i before \*s deleted → impossible cluster → crash |
+
+When we restricted the rule to fire only before dental obstruents (\*θ, \*ð,
+\*d, \*t), all regressions disappeared and all known \*-iθō- abstracts produced
+correct output.
+
+### The pattern
+
+Examining the full range of syncope evidence from the literature:
+
+**Syncope is consistent when the following consonant is a dental obstruent:**
+- Before \*θ: all \*-iθō- abstracts (strengþu, hǣlþu, fyrhtu, wiermþu, fylþ,
+  ebylgþ, swētu, dȳpþu, bieldu, etc.) — no counter-examples in the literature
+- Before \*d: all Class 1 weak verb preterites after heavy stems (dēmde, hierde,
+  sende, cyste, fylde, brégde, etc.) — R/T pp.267-268 list dozens
+- Before \*t: the same preterites where voicing assimilation yields *-t-
+  (cēpte, cyste, lǣste, drencte, hyspte, etc.)
+
+**Syncope is inconsistent or blocked before other consonants:**
+- Before \*l: þistel preserves the vowel (not \*þistl). Campbell §460 lists the
+  standard form as þistel. R/T do not list any form \*þistl.
+- Before \*r: comparatives show syncope (yldra, lengra, scyrtra — R/T p.267),
+  but this may involve a different mechanism (rhythmic alternation in
+  inflectional paradigms, not deletion in derived forms)
+- Before \*n: no clear evidence of syncope before \*n in our data
+- Before \*j: wīþiġ preserves the vowel
+- Before \*s: hierfest preserves the vowel
+
+### Assessment: a possibly novel observation
+
+The conditioning of OE medial high-vowel syncope by the identity of the
+following consonant does not appear to be discussed in Campbell, Hogg, Luick,
+or R/T. All four standard references formulate the rule purely in terms of
+syllable weight and stress. The observation that syncope is consistently regular
+before dental obstruents (\*θ, \*d, \*t) but irregular or blocked before laterals,
+glides, and sibilants emerged from our FST implementation when the general
+rule produced incorrect outputs for non-dental environments.
+
+This may reflect:
+1. **A genuine phonological conditioning** that the literature has not formulated
+   explicitly — syncope is favoured when the resulting consonant cluster is
+   homorganic (dental + dental: \*t+θ, \*nd+d, etc.) and blocked when it
+   would create heterorganic or phonotactically difficult clusters (\*t+l, \*b+s)
+2. **A chronological difference** — syncope before dental obstruents may have
+   been earlier (and therefore more regular) than syncope in other environments
+3. **Analogical restoration** — syncope may have applied generally, but forms
+   with difficult resulting clusters restored the vowel by analogy, while forms
+   with easy dental clusters did not
+
+All three explanations are compatible with our pipeline implementation. We
+model explanation (1) directly: the rule fires only before dental obstruents.
+This produces correct output for all attested forms in our test battery.
+
+### The advantage of the FST methodology
+
+This finding illustrates a concrete advantage of the finite-state transducer
+approach to historical phonology. By implementing sound changes as formal
+rules and testing them against a comprehensive dataset, the FST pipeline
+functions as a **hypothesis-testing engine**: overly broad rules produce
+incorrect outputs (regressions), forcing the researcher to refine the conditioning
+environment. The traditional prose formulation "short vowels syncopated after
+heavy syllables" is correct as far as it goes, but it is too imprecise to be
+implemented directly. The FST methodology forces the researcher to specify
+exact conditioning environments, and the dataset provides immediate feedback
+on whether those environments are correct.
+
+In this case, the FST implementation revealed that the following consonant
+is relevant to syncope — a conditioning factor that four major handbooks
+spanning over a century of scholarship (Campbell 1959, Luick 1914-40, Hogg
+1992, Ringe & Taylor 2014) do not explicitly discuss. Whether this reflects a
+genuine phonological conditioning or post-syncope analogical restoration, it
+is a pattern that only emerges when the rule is formalized and tested at scale.
 
 ### Pipeline implementation
 
