@@ -1,10 +1,10 @@
-Total mismatches: 132
+Total mismatches: 127
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      9
   Documented exceptions:       4
   Phonology (core buckets):    31
-  Phonology (other buckets):   88
+  Phonology (other buckets):   83
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -42,7 +42,7 @@ Total mismatches: 132
   vowel_quality__other: 1
   vowel_quality__stressed_vowel: 7
   vowel_quality__u_lowering_exception: 4
-  vowel_quality__u_o_alternation: 7
+  vowel_quality__u_o_alternation: 2
   vowel_quality__unstressed_e_o: 5
   vowel_quality__unstressed_o_a: 2
   vowel_quality__unstressed_vowel: 1
@@ -203,12 +203,9 @@ vowel_quality__u_lowering_exception (4):
   *rustō -> rost (expected rust)
   *wulfăz -> wolf (expected wulf)
 
-vowel_quality__u_o_alternation (7):
-  *bugô -> buga (expected boga)
-  *fulô -> fula (expected fola)
+vowel_quality__u_o_alternation (2):
   *gud -> gud (expected god)
-  *uxsô -> uxa (expected oxa)
-  *spurô -> spura (expected spora)
+  *widuwōn -> widowe (expected widuwe)
 
 vowel_quality__unstressed_e_o (5):
   *erθo -> eorþo (expected eorþe)

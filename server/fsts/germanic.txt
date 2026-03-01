@@ -1250,7 +1250,8 @@ define AngloFrisianVelarShortening [
 define EnglishStarNonHighVowel [
     {*a} | {*ā} | {*ă} | {*ą} |
     {*e} | {*ē} |
-    {*o} | {*ō} | {*ɔ̆}
+    {*o} | {*ō} | {*ɔ̆} |
+    {*ô}
 ];
 
 # R/T vol.2 §2.1.1: Stressed *u → *o before non-high vowels in NWGmc,
