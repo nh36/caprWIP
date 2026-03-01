@@ -41,7 +41,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1863	b uː x ə	*bōkō	b uː x ( ə - - - )	buːxə	Buche	511	German				beech	*bōkō	10
 1154	b ə ɣ ɪ n ə	*biginnăną	( b ə ) ɣ ɪ n ə - ( - - )	bəɣɪnə	beginnen	316	Dutch				begin	*biginnăną	11
 1153	b ɪ ɡ ɪ n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	begin	316	English				begin	*biginnăną	11
-1943	b e g i n n a n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	beginnan	316	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			begin	*biginnăną	11
+1943	b e ġ i n n a n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	beġinnan	316	Old_English	Palatalization of *g between *i and *i is regular per R/T §6.4.1 Rule 1. OE beġinnan confirmed (Wiktionary, BT).			begin	*biginnăną	11
 1152	b ə ɡ ɪ n ə n	*biginnăną	( b ə ) ɡ ɪ n ə n ( - - )	bəɡɪnən	beginnen	316	German				begin	*biginnăną	11
 266	x ə l oː v ə	*galaubjăną	( x ə ) l oː v - ə - ( - - )	xəloːvə	geloven	73	Dutch	Proto: *laubjăną → *galaubjăną (ga- prefix set: Du. geloven, G glauben, OE ġelīefan)			believe	*galaubjăną	12
 265				bɪliːv		73	English	Out-of-set: ME believe < OE belīefan (be- prefixed *bilaubijan), distinct from ge-/ga- formation			believe	*galaubjăną	12
@@ -868,10 +868,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1550	r aɪ n d	*rindō	r aɪ n d -	raɪnd	rind	425	English				rind	*rindō	351
 2154	r i n d	*rindō	r aɪ n d -	raɪnd	rind	425	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rind	*rindō	351
 1549	r ɪ n d ə	*rindō	r ɪ n d ə	rɪndə	Rinde	425	German				rind	*rindō	351
-1385	r ʉ k	*rukkiz	r ʉ k ( - - )	rʉk	ruk	379	Dutch				rock	*rukkiz	200
-1384	r ɔ k	*rukkiz	r ɔ k ( - - )	rɔk	rock	379	English				rock	*rukkiz	200
-2155	* r o c c	*rukkiz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | OE rocc attested in compound stānrocc; rocc is cognate with ModE rock.			rock	*rukkiz	200
-1383	r ʊ k	*rukkiz	r ʊ k ( - - )	rʊk	Ruck	379	German				rock	*rukkiz	200
+1385	r ɔ k	*rukkăz	r ɔ k ( - - )	rɔk	rok	379	Dutch				coat	*rukkăz	200
+1384	r ɒ k	*rukkăz	r ɒ k ( - - )	rɒk	rock	379	English				coat	*rukkăz	200
+2155	r o c c	*rukkăz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Garment word: OE rocc 'tunic' (brēostrocc, pistolrocc etc.), from PGmc *rukkăz (a-stem). Previous entry conflated stone and garment etymologies.			coat	*rukkăz	200
+1383	ʁ ɔ k	*rukkăz	ʁ ɔ k ( - - )	ʁɔk	Rock	379	German				coat	*rukkăz	200
 1738	r eː	*raixōn	r eː ( - - - )	reː	ree	476	Dutch				roe	*raixōn	201
 1737	r əʊ	*raixōn	r əʊ ( - - - )	rəʊ	roe	476	English				roe	*raixōn	201
 2156	* h r o g n	*raixōn	r əʊ ( - - - )	rəʊ	-	476	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *hrogn.			roe	*raixōn	201
