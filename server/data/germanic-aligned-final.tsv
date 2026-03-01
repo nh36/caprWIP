@@ -186,10 +186,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 7	k ɔː n	*kurną	k ɔː - n ( - - )	kɔːn	corn	533	English				corn	*kurną	43
 1979	c o r n	*kurną	k ɔː - n ( - - )	kɔːn	corn	533	Old_English	Proto: oblique *kurnăn→*kurną (n. a-stem nom.sg.; Kroonen)			corn	*kurną	43
 6	k ɔ r n	*kurną	k ɔ r n ( - - )	kɔrn	Korn	533	German				corn	*kurną	43
-1093	k uː	*kōwz	k uː ( - - )	kuː	koe	299	Dutch				cow	*kōwz	44
-1092	k aʊ	*kōwz	k aʊ ( - - )	kaʊ	cow	299	English				cow	*kōwz	44
-1980	c ū	*kōwz	k aʊ ( - - )	kaʊ	cū	299	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			cow	*kōwz	44
-1091	k uː	*kōwz	k uː ( - - )	kuː	Kuh	299	German				cow	*kōwz	44
+1093	k uː	*kōz	k uː ( - - )	kuː	koe	299	Dutch	TSV fix: proto *kōwz → *kōz (Kroonen *kō- ~ *ku-, nom.sg. *kōz; -w- was spurious, not in Kroonen or R/T)			cow	*kōz	44
+1092	k aʊ	*kōz	k aʊ ( - - )	kaʊ	cow	299	English	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)			cow	*kōz	44
+1980	c ȳ	*kūi	c ȳ	kyː	cȳ	299	Old_English	TSV fix: using PGmc dat.sg. *kūi (> OE cȳ by i-umlaut, R/T §6.6.1). Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich. See docs/analysis/cow_root_noun_investigation.md			cow	*kūi	44
+1091	k uː	*kōz	k uː ( - - )	kuː	Kuh	299	German	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)			cow	*kōz	44
 1508	k r ɑ x t	*kraftiz	k r ɑ x t ( - - )	krɑxt	kracht	413	Dutch				craft	*kraftiz	45
 1507	k r ɑː f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	craft	413	English				craft	*kraftiz	45
 1981	c r æ f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	cræft	413	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			craft	*kraftiz	45
