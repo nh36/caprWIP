@@ -222,6 +222,59 @@ NEEDS EXPERT REVIEW" section.
 
 ---
 
+## 4. A-restoration trigger set: {*æ} is NOT a trigger
+
+**Date discovered:** Session 041 (water fix investigation)
+
+**Background:** A-restoration (R/T §6.3.1) retracts stressed *æ → *a when
+a back vowel follows in the next syllable. After Anglo-Frisian Brightening
+(AFB) has fronted *a → *æ, the question is which remaining vowels count as
+"back" for the purposes of triggering restoration.
+
+**What we initially assumed:** We included `{*æ}` in the trigger set, on the
+reasoning that suffix *a (like gen.sg. *-as) had been fronted to *æ by AFB
+but was "underlyingly back" and should still trigger restoration. This seemed
+necessary to explain A-restoration in a-stem paradigms.
+
+**What the FST implementation revealed:** When we implemented PGmc *watōr
+'water' (r/n-stem nom.sg.), the PWGmc shortening *ō → *a (R/T §3.1.4)
+produced *watar. AFB fronted both *a's to *æ, giving *wætær. A-restoration
+then incorrectly fired (because the unstressed *æ was in the trigger set),
+restoring stressed *æ → *a → "water" instead of correct "wæter".
+
+**What R/T actually say (§6.3.2, p.199):** The paradigm of *dagaz 'day'
+proves conclusively that `{*æ}` is NOT a trigger:
+
+| Form | PGmc | OE | Restoration? |
+|------|------|----|-------------|
+| gen.sg. | *dagas | **dæges** | NO — suffix *a → *æ does NOT trigger |
+| nom.pl. | *dagōs/os | **dagas** | YES — suffix *o is genuinely back |
+| dat.pl. | *dagumaz | **dagum** | YES — suffix *u is genuinely back |
+
+The gen.sg. *dagas → OE dæges (with preserved *æ*) is the key datum. If
+{*æ} were a trigger, we would predict ×dages — which is not the OE form.
+Only genuine back vowels (*o, *u, *ō, *ū) trigger restoration.
+
+**The observation:** The "underlyingly back" analysis of suffix *æ was an
+over-interpretation. R/T's rule refers to the **surface** vowel quality at the
+time restoration applies, not to etymological provenance. By the time
+A-restoration fires, suffix *a has been irreversibly fronted to *æ by AFB
+and counts as a front vowel.
+
+**Significance for the project:** This is a case where the FST methodology
+exposed an error in our own analytical reasoning. The incorrect trigger
+analysis had persisted for many sessions because it didn't cause visible
+problems until a specific test case (*watōr) was encountered. The FST's
+immediate falsification — producing "water" instead of "wæter" — forced us
+to re-examine R/T's paradigm data and discover the correct analysis. This
+demonstrates how FST implementation can catch analytical errors that might
+persist indefinitely in a prose description.
+
+**Full analysis:** See DEV_NOTES.md, "Water fix: PWGmc ō-shortening and
+A-restoration correction" section.
+
+---
+
 ## How to add new entries
 
 When the FST pipeline reveals a conditioning environment, chronological
