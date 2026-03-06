@@ -1999,3 +1999,36 @@ For case 1, we added the OEPostVelarWLoss rule.
 **Pipeline position:** After OEVelarPalatalization (per R/T chronology)
 **TSV changes:** snow, swallow protos corrected; thane target corrected
 **New weak tail:** w:{*w} ō:{*ō} n:{*n} added for *swalwōn
+
+## Water fix: PWGmc ō-shortening and A-restoration correction (3a45a8b)
+
+### Problem
+PGmc *watōr (r/n-stem nom.sg.; Kroonen *watar-/*watan-) needed to produce OE wæter. Two issues:
+
+1. **PWGmc ō-shortening (R/T §3.1.4):** "Word-finally, and before word-final *r, surviving bimoric long ō-vowels became PWGmc *a." So *watōr → PWGmc *watar.
+
+2. **A-restoration over-application:** After AFB fronted both *a's in *watar to *æ (giving *wætær), A-restoration incorrectly fired because `{*æ}` was in `OEARestorationTriggerVowel`. This restored stressed *æ → *a, giving "water" instead of "wæter".
+
+### Root cause: {*æ} should NOT trigger A-restoration
+
+The `{*æ}` symbol was added to the A-restoration trigger set based on an incorrect analysis that suffix *a (like gen.sg. *-as), after being fronted to *æ by AFB, still triggers restoration as an "underlyingly back" vowel.
+
+**R/T's paradigm disproves this (§6.3.2, p. 199):**
+- gen.sg. *dagas → *dæges → OE **dæges** (NOT *dages) — A-restoration does NOT fire
+- nom.pl. *dagos → OE **dagas** — A-restoration DOES fire (suffix *-os has genuine back *o)
+- dat.pl. *dagum → OE **dagum** — A-restoration DOES fire (suffix *-um has genuine back *u)
+
+This proves that only genuine back vowels (*o, *u, *ō, *ū, *ô) trigger A-restoration. Fronted suffix vowels (*æ from AFB'd *a) do NOT trigger it.
+
+### Fix
+1. **Removed `{*æ}` from `OEARestorationTriggerVowel`** — now defined as `[EnglishStarBackVowel | {*ô}]`
+2. **Added `PWGmcPreFinalRShortening`:** `{*ō} → {*a} || _ {*r} .#.` in PWGmcChanges
+3. **Added `ō:{*ō} r:{*r}` weak tail** for r-stem endings
+4. **TSV:** OE water proto *watną → *watōr (correct PGmc r/n-stem nom.sg.)
+
+### Derivation
+*watōr → (PWGmc ō-shortening) *watar → (AFB) *wætær → (A-restoration: NO trigger, *æ is not back) *wætær → (§6.9.6 unstressed merger) wæter ✓
+
+### Impact
+- No regressions. 106 mismatches (unchanged). Health check clean.
+- All A-restoration-dependent forms verified: bacan, wadan, wascan, hlaþan, grafan, ġeall, hamer all correct.
