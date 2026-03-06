@@ -1,10 +1,10 @@
-Total mismatches: 118
+Total mismatches: 114
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    30
-  Phonology (other buckets):   80
+  Phonology (other buckets):   76
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -39,7 +39,7 @@ Total mismatches: 118
 --- vowel_quality sub-buckets ---
   vowel_quality__ae_e_alternation: 2
   vowel_quality__other: 1
-  vowel_quality__stressed_vowel: 7
+  vowel_quality__stressed_vowel: 8
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 2
   vowel_quality__unstressed_o_a: 2
@@ -68,14 +68,13 @@ Total mismatches: 118
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
-  suffix_form__eian_vs_ian: 5
 
 === DETAILED EXAMPLES ===
 
 i_umlaut_missing_true (3):
   *flaiskăz -> flāsc (expected flǣsċ)
   *sai -> sā (expected sǣ)
-  *wainōjăną -> wāneian (expected hwīnan)
+  *wainōjăną -> wānian (expected hwīnan)
 
 fronting_missing__afb (3):
   *rastō -> rast (expected ræst)
@@ -85,7 +84,7 @@ fronting_missing__afb (3):
 breaking_missing__expected_ea_got_a (5):
   *dawwō -> dawu (expected dēaw)
   *skaiθiz -> sċǣþ (expected sċēaþ)
-  *skawōjăną -> sċaweian (expected scēawian)
+  *skawōjăną -> sċawian (expected scēawian)
   *skawô -> sċawa (expected scēawa)
   *skawōθi -> sċaweþ (expected scēaweþ)
 
@@ -184,12 +183,12 @@ vowel_quality__ae_e_alternation (2):
 vowel_quality__other (1):
   *biginnăną -> biġennan (expected beġinnan)
 
-vowel_quality__stressed_vowel (7):
+vowel_quality__stressed_vowel (8):
   *gansz -> gās (expected gōs)
   *xerdō -> heord (expected hierd)
+  *liznōjăną -> liernian (expected leornian)
   *nistą -> nist (expected nest)
   *nasō -> nasu (expected nosu)
-  *wiθră -> wiþer (expected weþer)
 
 vowel_quality__u_lowering_exception (4):
   *bukkăz -> bocc (expected bucc)
@@ -252,7 +251,7 @@ cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
 
 cons_mismatch__n_vs_-__word_final (1):
-  *sundrōjăną -> sundreian (expected sundor-)
+  *sundrōjăną -> sundrian (expected sundor-)
 
 cons_mismatch__n_vs_r__word_final (1):
   *watną -> wætn (expected wæter)
@@ -271,13 +270,6 @@ cons_mismatch__þ_vs_d__cluster (1):
 
 cons_mismatch__þ_vs_d__intervocalic (1):
   *xlaθaną -> hlaþan (expected hladan)
-
-suffix_form__eian_vs_ian (5):
-  *burōjăną -> boreian (expected borian)
-  *xandlōjăną -> handleian (expected handlian)
-  *liznōjăną -> lierneian (expected leornian)
-  *likkōjăną -> licceian (expected liccian)
-  *makōjăną -> maceian (expected macian)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
