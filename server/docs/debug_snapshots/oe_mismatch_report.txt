@@ -1,10 +1,10 @@
-Total mismatches: 113
+Total mismatches: 109
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    30
-  Phonology (other buckets):   75
+  Phonology (other buckets):   71
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -37,7 +37,7 @@ Total mismatches: 113
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 2
 --- vowel_quality sub-buckets ---
-  vowel_quality__ae_e_alternation: 2
+  vowel_quality__ae_e_alternation: 1
   vowel_quality__other: 1
   vowel_quality__stressed_vowel: 8
   vowel_quality__u_lowering_exception: 4
@@ -57,14 +57,11 @@ Total mismatches: 113
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__g_vs_h__word_final: 2
-  cons_mismatch__g_vs_w__cluster: 1
-  cons_mismatch__g_vs_w__word_final: 1
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
   cons_mismatch__n_vs_r__word_final: 1
   cons_mismatch__r_vs_b__word_final: 1
   cons_mismatch__w_vs_h__cluster: 1
-  cons_mismatch__w_vs_n__cluster: 1
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
@@ -175,9 +172,8 @@ back_expected_front_out__other (2):
   *kwiθuz -> cwiþu (expected cudu)
   *swestēr -> swester (expected swustor)
 
-vowel_quality__ae_e_alternation (2):
+vowel_quality__ae_e_alternation (1):
   *kraftiz -> creft (expected cræft)
-  *θegnăz -> þeġn (expected þæġn)
 
 vowel_quality__other (1):
   *biginnăną -> biġennan (expected beġinnan)
@@ -240,12 +236,6 @@ cons_mismatch__g_vs_h__word_final (2):
   *laugō -> lēag (expected lēah)
   *trugą -> trog (expected troh)
 
-cons_mismatch__g_vs_w__cluster (1):
-  *snaigwăz -> snāgw (expected snāw)
-
-cons_mismatch__g_vs_w__word_final (1):
-  *swalgwōn -> swealgwe (expected swealwe)
-
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
 
@@ -260,9 +250,6 @@ cons_mismatch__r_vs_b__word_final (1):
 
 cons_mismatch__w_vs_h__cluster (1):
   *walăz -> wæl (expected hwæl)
-
-cons_mismatch__w_vs_n__cluster (1):
-  *singwăną -> singwan (expected singan)
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)

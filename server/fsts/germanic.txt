@@ -315,6 +315,7 @@ define pgrmWeakTailVowel [
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
     u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
     u:{*u} w:{*w} ō:{*ō} n:{*n} |
+    w:{*w} ō:{*ō} n:{*n} |
     u:{*u} z:{*z} |
     ą:{*ą} |
     ē:{*ē} n:{*n} ą:{*ą} |
@@ -1589,6 +1590,15 @@ define OEDentalAssimilation [
     {*θ} -> 0 || {*t} _
 ];
 
+# R/T §6.4.2: *w lost after non-initial velars (after palatalization).
+# In *ngw clusters, *g is a stop: *w is lost (*singwan → singan).
+# Post-vocalic *gw: *g (= [ɣ] fricative) was lost, *w survives.
+# Our TSV corrects post-vocalic *gw etyma at source (snow, swallow).
+# This rule handles the *ngw → *ng simplification.
+define OEPostVelarWLoss [
+    {*w} -> 0 || {*n} {*g} _
+];
+
 define OEHLoss [
     {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
@@ -1658,6 +1668,7 @@ define EnglishProtoToOE (
     .o. PWGmcJGemination
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    .o. OEPostVelarWLoss
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
@@ -1732,6 +1743,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PWGmcJGemination
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    .o. OEPostVelarWLoss
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
