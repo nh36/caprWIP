@@ -1431,6 +1431,14 @@ define OEIntervocalicJVocalization [
     {*j} -> {*i} || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
+# R/T vol.2 p.228: In class II weak verb presents, *-ōj- → *-œj- (i-umlaut)
+# → *-ej- (unrounding/shortening) → -ij- (raising) → -i(g)- (OE spelling).
+# After j-vocalization, unstressed *e + *i contracts to *i.
+# R/T: "*-ej- became /-ij-/" — the unstressed *e raises before *i.
+define OEUnstressedEIContraction [
+    {*e} -> 0 || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*i}
+];
+
 # R/T §6.9.4: Back umlaut (WS). *e → eo only before l/r/labial + *u.
 # *i → io/eo before l/r/labial + back vowel. *æ → ea before l/r/labial + back vowel.
 # Back umlaut of *e is more restricted than *i and *æ in WS.
@@ -1666,6 +1674,7 @@ define EnglishProtoToOE (
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
+    .o. OEUnstressedEIContraction
     .o. OEWeightCleanup
     .o. OEHLoss
     .o. OEContraction
@@ -1737,6 +1746,7 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
+    .o. OEUnstressedEIContraction
     .o. OEWeightCleanup
     .o. OEHLoss
     .o. OEContraction;
