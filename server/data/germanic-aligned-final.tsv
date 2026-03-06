@@ -1038,10 +1038,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1814	s m ɪə	*smerwjăną	s m ɪə r - - - - ( - - )	smɪə	smear	497	English				smear	*smerwjăną	237
 2198	s m ie r w a n	*smerwjăną	s m ɪə r - - - - ( - - )	smɪə	smierwan	497	Old_English	Source: Kroonen p.458 *smerwjan- > OE smierwan; R/T §6.7.1 p.289 WS smierwan (Merc. smirwan is Anglian)			smear	*smerwjăną	237
 1813	ʃ m iː r ə n	*smerwjăną	ʃ m iː r - - ə n ( - - )	ʃmiːrən	schmieren	497	German				smear	*smerwjăną	237
-1059	s n eː ʋ	*snaigwăz	s n eː ( ʋ - - )	sneːʋ	sneeuw	290	Dutch				snow	*snaigwăz	238
-1058	s n əʊ	*snaigwăz	s n əʊ ( - - - )	snəʊ	snow	290	English				snow	*snaigwăz	238
-2199	s n ā w	*snaigwăz	s n əʊ ( - - - )	snɑːw	snāw	290	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			snow	*snaigwăz	238
-1057	ʃ n eː	*snaigwăz	ʃ n eː ( - - - )	ʃneː	Schnee	290	German				snow	*snaigwăz	238
+1059	s n eː ʋ	*snaiwăz	s n eː ( ʋ - - )	sneːʋ	sneeuw	290	Dutch				snow	*snaiwăz	238
+1058	s n əʊ	*snaiwăz	s n əʊ ( - - - )	snəʊ	snow	290	English				snow	*snaiwăz	238
+2199	s n ā w	*snaiwăz	s n əʊ ( - - - )	snɑːw	snāw	290	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *snaigwăz → *snaiwăz (Kroonen *snaiwa-, R/T *snaiwaz; no labiovelar in this etymology).			snow	*snaiwăz	238
+1057	ʃ n eː	*snaiwăz	ʃ n eː ( - - - )	ʃneː	Schnee	290	German				snow	*snaiwăz	238
 1100	z ɔ r x	*surgō	z ɔ r x -	zɔrx	zorg	301	Dutch				sorrow	*surgō	239
 1099	s ɔ r əʊ	*surgō	s ɔ r əʊ -	sɔrəʊ	sorrow	301	English				sorrow	*surgō	239
 2200	s o r g	*surgō	s ɔ r əʊ -	sɔrəʊ	sorg	301	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sorrow	*surgō	239
@@ -1175,10 +1175,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1366	s ʌ p	*sūpăną	s ʌ p - - ( - - )	sʌp	sup	374	English				sup	*sūpăną	269
 2233	s ū p a n	*sūpăną	s ʌ p - - ( - - )	sʌp	sūpan	374	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sup	*sūpăną	269
 1365	z au f ə n	*sūpăną	z au f ə n ( - - )	zaufən	saufen	374	German				sup	*sūpăną	269
-1283	z ʋ aː l yː ʋ	*swalgwōn	z ʋ aː l ( yː ʋ - - )	zʋaːlyːʋ	zwaluw	352	Dutch				swallow	*swalgwōn	270
-1282	s ʋ ɔ l əʊ	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swallow	352	English				swallow	*swalgwōn	270
-2234	s w e a l w e	*swalgwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swealwe	352	Old_English	Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the verb 'to swallow'			swallow	*swalgwōn	270
-1281	ʃ v a l b ə	*swalgwōn	ʃ v a l ( - b ə - )	ʃvalbə	Schwalbe	352	German				swallow	*swalgwōn	270
+1283	z ʋ aː l yː ʋ	*swalwōn	z ʋ aː l ( yː ʋ - - )	zʋaːlyːʋ	zwaluw	352	Dutch				swallow	*swalwōn	270
+1282	s ʋ ɔ l əʊ	*swalwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swallow	352	English				swallow	*swalwōn	270
+2234	s w e a l w e	*swalwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swealwe	352	Old_English	Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the verb 'to swallow' | TSV fix: proto *swalgwōn → *swalwōn (Kroonen *swalwōn-, R/T *swalwa; no *g in this etymology, confused with *swelganą to swallow).			swallow	*swalwōn	270
+1281	ʃ v a l b ə	*swalwōn	ʃ v a l ( - b ə - )	ʃvalbə	Schwalbe	352	German				swallow	*swalwōn	270
 1630	s ʋ ɔ n	*swanăz	s ʋ ɔ n ( - - )	sʋɔn	swan	447	English				swan	*swanăz	360
 2235	s w a n	*swanas	s ʋ ɔ n ( - - )	sʋɔn	swanes	447	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *swanas (> swanes)		swan	*swanas	360
 1629	ʃ v aː n	*swanăz	ʃ v aː n ( - - )	ʃvaːn	Schwan	447	German				swan	*swanăz	360
@@ -1210,7 +1210,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2242	t ī e n	*texun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*texun	276
 861	ts eː n	*texun	ts eː - - n	t͡seːn	zehn	237	German				ten	*texun	276
 1804	θ eɪ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	thane	494	English				thane	*θegnăz	362
-2243	þ æ ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þæġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thane	*θegnăz	362
+2243	þ e ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: target þæġn → þeġn (R/T reconstruct *þegnaz with *e and give OE þegn, matching pipeline output).			thane	*θegnăz	362
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German				thane	*θegnăz	362
 1198	d ɑ ŋ k	*θankăz	d ɑ ŋ k ( - - )	dɑŋk	dank	328	Dutch	!			thanks	*θankăz	277
 1197	θ æ ŋ k s	*θankăz	θ æ ŋ k ( - s )	θæŋks	thanks	328	English	!			thanks	*θankăz	277
