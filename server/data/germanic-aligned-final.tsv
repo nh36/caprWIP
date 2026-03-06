@@ -1269,7 +1269,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2257	t ī d	*tīdiz	t aɪ d ( - - )	taɪd	tīd	263	Old_English	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'			tide	*tīdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German				tide	*tīdiz	290
 814	t ɪ m b ə	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English				timber	*timrą	363
-2258	t i m b e r	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*timrą	363
+2258	t i m b e r	*timbrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der) | TSV fix: proto *timrą → *timbrą (Kroonen *timbra- with *b; OE timber).			timber	*timbrą	363
 813	ts ɪ m ə r	*timrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German				timber	*timrą	363
 1723	t eː n	*taixōn	t eː ( - - n )	teːn	teen	472	Dutch	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-; -w- from PIE labiovelar already lost in NWGmc)			toe	*taixōn	291
 1722	t əʊ	*taixōn	t əʊ ( - - - )	təʊ	toe	472	English	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-)			toe	*taixōn	291
@@ -1332,7 +1332,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1277	v ɛ s p ə	*wabsăz	v ɛ s p - ( ə - )	vɛspə	Wespe	351	German				wasp	*wabsăz	303
 1132	ʋ aː t ə r	*watną	ʋ aː t ə r	ʋaːtər	water	310	Dutch				water	*watną	304
 1131	ʋ ɔː t ə	*watną	ʋ ɔː t ə r	ʋɔːtə	water	310	English				water	*watną	304
-2274	w æ t e r	*watną	ʋ ɔː t ə r	ˈwæter	wæter	310	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			water	*watną	304
+2274	w æ t e r	*watrą	ʋ ɔː t ə r	ˈwæter	wæter	310	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *watną → *watrą (Kroonen *watar-/*watra- r/n-stem; OE wæter reflects r-stem).			water	*watrą	304
 1130	v a s ə r	*watną	v a s ə r	vasər	Wasser	310	German				water	*watną	304
 849	ʋ ɑ s	*waxsą	ʋ ɑ - s ( - - )	ʋɑs	was	233	Dutch				wax	*waxsą	305
 696	ʋ ɑ s ə	*waxsăną	ʋ ɑ - s ə - ( - - )	ʋɑsə	wassen	191	Dutch				wax	*waxsăną	305
@@ -1372,7 +1372,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1119	v ɪ d ə r	*wiθră	v ɪ d ə r ( - )	vɪdər	Widder	307	German				wether	*wiθră	312
 413	ʋ ɑ l	*walăz	ʋ ɑ l ( - - )	ʋɑl	wal	113	Dutch				whale	*walăz	313
 412	ʋ eɪ l	*walăz	ʋ eɪ l ( - - )	ʋeɪl	whale	113	English				whale	*walăz	313
-2284	h w æ l	*walăz	ʋ eɪ l ( - - )	ʋeɪl	hwæl	113	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			whale	*walăz	313
+2284	h w æ l	*xwalăz	ʋ eɪ l ( - - )	ʋeɪl	hwæl	113	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *walăz → *xwalăz (Kroonen *hwalaz with initial *hw-; OE hwæl).			whale	*xwalăz	313
 411	v aː l	*walăz	v aː l ( - - )	vaːl	Wal	113	German				whale	*walăz	313
 1787	ʋ ɛɪ l	*xwīlō	ʋ ɛɪ l ( - )	ʋɛɪl	wijl	489	Dutch				while	*xwīlō	314
 1786	ʋ aɪ l	*xwīlō	ʋ aɪ l ( - )	ʋaɪl	while	489	English				while	*xwīlō	314

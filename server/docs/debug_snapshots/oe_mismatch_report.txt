@@ -1,10 +1,10 @@
-Total mismatches: 109
+Total mismatches: 106
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    30
-  Phonology (other buckets):   71
+  Phonology (other buckets):   68
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -59,9 +59,6 @@ Total mismatches: 109
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
-  cons_mismatch__n_vs_r__word_final: 1
-  cons_mismatch__r_vs_b__word_final: 1
-  cons_mismatch__w_vs_h__cluster: 1
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
@@ -241,15 +238,6 @@ cons_mismatch__h_vs_m__cluster (1):
 
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
-
-cons_mismatch__n_vs_r__word_final (1):
-  *watną -> wætn (expected wæter)
-
-cons_mismatch__r_vs_b__word_final (1):
-  *timrą -> timer (expected timber)
-
-cons_mismatch__w_vs_h__cluster (1):
-  *walăz -> wæl (expected hwæl)
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
