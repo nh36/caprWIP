@@ -1,10 +1,10 @@
-Total mismatches: 114
+Total mismatches: 113
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    30
-  Phonology (other buckets):   76
+  Phonology (other buckets):   75
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 3
@@ -20,7 +20,7 @@ Total mismatches: 114
   length_extra_other: 2
   palatal_marker_variant: 2
   epenthetic_vowel_missing: 2
-  syncopation_missing: 3
+  syncopation_missing: 2
   gemination_extra: 1
   final_devoicing_missing: 1
   r_metathesis: 2
@@ -131,8 +131,7 @@ epenthetic_vowel_missing (2):
   *fastēną -> faston (expected fastian)
   *fulgēną -> folgon (expected folgian)
 
-syncopation_missing (3):
-  *fleuxăną -> flēoan (expected flēon)
+syncopation_missing (2):
   *melukz -> meoloc (expected meolc)
   *natilōn -> netele (expected netle)
 

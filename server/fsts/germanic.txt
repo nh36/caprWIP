@@ -1608,9 +1608,11 @@ define OEContraction [
     {*ea} {*a} -> {*ēa},
     {*ea} {*ă} -> {*ēa},
     {*ēa} {*ă} -> {*ēa},
+    {*ēa} {*a} -> {*ēa},
     {*eo} {*a} -> {*ēo},
     {*eo} {*ă} -> {*ēo},
     {*ēo} {*ă} -> {*ēo},
+    {*ēo} {*a} -> {*ēo},
     # R/T §6.6.1: long vowel absorbs following unstressed short vowel
     # after intervocalic h-loss (e.g. *tāhe → tā, *rāha → rā, *slāhe → slā)
     {*ā} {*a} -> {*ā},
