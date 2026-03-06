@@ -323,6 +323,7 @@ define pgrmWeakTailVowel [
     ē:{*ē} r:{*r} |
     ī:{*ī} n:{*n} |
     ō:{*ō} |
+    ō:{*ō} r:{*r} |
     ô:{*ô} |
     ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
     ō:{*ō} n:{*n} |
@@ -1075,6 +1076,13 @@ define PWGmcLThVoicing [
     {*θ} -> {*d} || {*l} _
 ];
 
+# R/T §3.1.4: Before word-final *r, bimoric *ō → *a in PWGmc.
+# PGmc *watōr → PWGmc *watar → OE wæter.
+# The *a is then fronted by AFB and reduced by §6.9.6 merger.
+define PWGmcPreFinalRShortening [
+    {*ō} -> {*a} || _ {*r} .#.
+];
+
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
 # Order: monophthongization, ij-contraction, syllabic j, lþ-voicing.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
@@ -1085,6 +1093,7 @@ define PWGmcChanges [
     .o. PWGmcIjContraction
     .o. PWGmcSyllabicJ
     .o. PWGmcLThVoicing
+    .o. PWGmcPreFinalRShortening
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
@@ -1179,19 +1188,18 @@ define AngloFrisianBrightening [
 # This means at the time A-restoration applies, underlying PWGmc *a has already been
 # fronted to surface *æ by AFB.
 #
-# RESTORATION TRIGGERS: The rule originally referred to "back vowels" in the following
-# syllable. After AFB, the back vowels that remain are {*o}, {*u}, {*ō}, {*ū}, etc.
-# BUT: stressed {*a} in endings (like gen.sg. *-as) has been fronted to {*æ} by AFB.
-# These surface {*æ} (< underlying {*a}) STILL trigger restoration, because they are
-# underlyingly back vowels. This is why gen.sg. forms like *brandas (AFB→ *brændæs)
-# trigger restoration: the tail {*æ} is underlyingly {*a} (back).
+# RESTORATION TRIGGERS: The rule triggers on genuine back vowels in the following
+# syllable. After AFB, the remaining back vowels are {*o}, {*u}, {*ō}, {*ū}, etc.
+# Suffix *a (like gen.sg. *-as) has been fronted to {*æ} by AFB and does NOT
+# trigger restoration (R/T paradigm: *dagas → *dæges → OE dæges, not *dages).
+# Only genuine back suffixes like nom.pl. *-os trigger restoration (*dagos → dagas).
 #
 # WEAK-TAIL EXCLUSION: Only FULL (stressed) vowels trigger restoration. Weak-tail
 # vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration, even though
 # they are underlyingly back.
 # {*ô} (trimoric *ō) is a back vowel that triggers A-restoration, but is not
 # in PGmcStarBackVowel to avoid regressions in general vowel rules.
-define OEARestorationTriggerVowel [EnglishStarBackVowel | {*æ} | {*ô}];
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô}];
 
 define OEARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
