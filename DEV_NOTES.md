@@ -1955,3 +1955,47 @@ Rule `OELateUnstressedAgSuffix` in germanic.txt, placed after OEEpentheticVowel:
 
 All three steps restricted to medial (non-initial) position to prevent regressions
 on stressed-syllable forms (e.g. \*xagjăz → heġġ, which should keep stressed \*e).
+
+---
+
+## Labiovelar Proto-Form Corrections and Post-Velar *w Loss (R/T §6.4.2)
+
+**Date:** 2026-03-06
+**Status:** Implemented (OEPostVelarWLoss) + TSV fixes
+**Mismatches:** 113 → 109
+
+### The problem
+
+Three mismatch items involved PGmc *gw clusters from labiovelars:
+- *snaigwăz → snāgw (expected snāw): cons_mismatch__g_vs_w
+- *swalgwōn → swealgwe (expected swealwe): cons_mismatch__g_vs_w
+- *singwăną → singwan (expected singan): cons_mismatch__w_vs_n
+- Also *θegnăz → þeġn (expected þæġn): vowel_quality__ae_e_alternation
+
+### Research
+
+**Snow (*snaigwăz → *snaiwăz):** Both Kroonen (p.460, *snaiwa-) and R/T (p.171, *snaiwaz) reconstruct PGmc with *w, not *gw. There was never a labiovelar in this word. The TSV proto was simply wrong, likely from automated extraction confusion.
+
+**Swallow (*swalgwōn → *swalwōn):** Kroonen (p.495, *swalwōn-) and R/T (p.185, PWGmc *swalwa) both reconstruct without *g. The TSV proto was confused with the verb *swelganą 'to swallow (food)' — the bird name has no etymological *g.
+
+**Sing (*singwăną):** This genuinely had a PGmc labiovelar *g^w (Kroonen p.437, *singwan-; R/T p.215, *sing^wanan). After PWGmc labiovelar resolution (R/T §3.1.3), the cluster became *ngw. Then per R/T §6.4.2, *w was lost after non-initial velars: *singwan → singan.
+
+**Thane (*θegnăz):** R/T reconstruct *þegnaz with *e and give OE þegn. The TSV target þæġn was incorrect; changed to þeġn to match both R/T and our pipeline output.
+
+### Analysis of *gw developments
+
+R/T §6.4.2 "Loss of *w after non-initial velars" covers post-palatalization simplification. The outcomes differ based on allophony of *g:
+
+1. After nasal (*ngw): *g = stop [g], so *w is lost → *ng (singan, stincan)
+2. Post-vocalic (*Vgw): *g = fricative [ɣ], so *g is lost → *Vw (snāw)
+3. After liquid (*lgw): same as post-vocalic → *lw (swealwe)
+
+For cases 2-3, we corrected the TSV proto-forms to remove the spurious *g.
+For case 1, we added the OEPostVelarWLoss rule.
+
+### Implementation
+
+**Rule:** `OEPostVelarWLoss` — `{*w} → 0 || {*n} {*g} _`
+**Pipeline position:** After OEVelarPalatalization (per R/T chronology)
+**TSV changes:** snow, swallow protos corrected; thane target corrected
+**New weak tail:** w:{*w} ō:{*ō} n:{*n} added for *swalwōn
