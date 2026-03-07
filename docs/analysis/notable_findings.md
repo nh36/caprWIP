@@ -275,6 +275,92 @@ A-restoration correction" section.
 
 ---
 
+## 5. The stefn/stemn problem: transponent versus reconstruction
+
+**Date discovered:** Session 046 (stefn/stemn investigation)
+
+**Background:** The word for 'voice' in Old English appears as stebn (earliest,
+Corpus Glossary c.800), stefn (standard early OE, all dialects), and stemn
+(late West Saxon only). The TSV originally had PGmc \*stamnăz — an ad hoc
+a-stem masculine with root \*a that no source reconstructs. The pipeline
+produced "stamn" with no mechanism to front the root vowel.
+
+**What the FST implementation forced us to confront:** When we tried to fix
+the mismatch, we discovered that the literature presents fundamentally
+different Proto-Germanic reconstructions for this word:
+
+- **R/T (2014, p.330):** \*stebnō (ō-stem f., e-grade, \*-bn- cluster)
+- **Kroonen (2013, p.480):** \*stimnō- (heading; i-grade, \*-mn- cluster),
+  but discusses \*stamnjo- (o-grade jō-stem with j-umlaut) as the "usual"
+  derivation of OE stemn in the older literature
+- The daughter languages split three ways on the medial cluster: \*-bn-
+  (Gothic stibna, OE stebn/stefn), \*-mn- (OS stemna, OE stemn), \*-mm-
+  (OHG stimma, OFri. stemme)
+
+No single PGmc reconstruction straightforwardly accounts for all daughter
+forms. The disagreement concerns root vocalism (e vs. i vs. o-grade), medial
+consonantism (\*-bn- vs. \*-mn- vs. \*-mm-), and stem class (ō-stem vs.
+jō-stem vs. thematized n-stem).
+
+**The observation:** Implementing a historical transducer forces a distinction
+that traditional comparative reconstruction can leave blurred:
+
+**(a) What must be assumed locally for one daughter language** — a pre-OE
+transponent that yields the correct output through regular sound changes.
+For OE, this is \*stebn- (with root \*e and cluster \*-bn-), yielding stefn.
+
+**(b) What is genuinely reconstructable for Proto-Germanic** — a single
+ancestral form that feeds all daughter-language transducers and yields
+correct output in each case.
+
+These are not the same thing. The pre-OE transponent is well determined by
+the OE evidence alone (the early attestation stebn, the chronological chain
+stebn → stefn → stemn, the ME continuation stevne with -v- from -f-). But
+the PGmc reconstruction requires weighing Gothic, OHG, OS, and OFri.
+evidence — and the daughter languages disagree.
+
+**Why this matters methodologically:** In traditional comparative
+reconstruction, one can write "\*stebnō (or \*stimnō-)" and leave the
+ambiguity unresolved. An FST pipeline cannot do this: it must have a single
+input form that produces a single output. This forces the implementer to
+choose — and in choosing, to make explicit exactly what is being claimed and
+what is being deferred.
+
+Our solution — using a pre-OE transponent rather than claiming to have
+solved the PGmc reconstruction — is itself a methodological contribution.
+It shows that FST-based historical phonology can proceed productively even
+when the deeper reconstruction is disputed, by clearly separating the
+daughter-language-internal derivation from the cross-branch reconstruction.
+
+**Evidence that stemn is secondary (not primary):**
+1. Earliest OE attestation is stebn (CorpGl c.800), not stemn
+2. All OE dialects have stefn; only late WS has stemn (Bülbring §485)
+3. Bülbring dates fn → mn to "Alfreds Zeit" (§62 Anm. 3)
+4. ME stevne (with -v- < -f-) continues the fn-type, not the mn-type
+   (Luick §347)
+5. Parallel efn → emn 'even' (< \*ebnaz) shows the same chain (R/T p.330)
+
+**Significance for the project:** This is perhaps the most important
+methodological finding of the project so far. The previous findings (§§1–4)
+showed how the FST revealed conditioning environments (§1), confirmed
+non-Neogrammarian patterns (§2), forced formalization of vague rules (§3),
+and caught analytical errors (§4). This finding goes further: it demonstrates
+that the FST methodology requires — and rewards — a principled separation
+between **local transponent** and **cross-branch reconstruction**. This
+distinction, while implicit in good comparative practice, is rarely made
+explicit in the literature because traditional methods do not force it.
+
+**Future plan:** When OHG and Gothic transducers are built, this word will
+serve as a cross-branch test case. If a single PGmc form can feed all
+daughter transducers and yield the correct output in each, that form has
+stronger support than any reconstruction based on comparative argument alone.
+This item is flagged as a potential publishable finding.
+
+**Full analysis:** See DEV_NOTES.md, "The stefn/stemn problem" dossier
+(§§A–G).
+
+---
+
 ## How to add new entries
 
 When the FST pipeline reveals a conditioning environment, chronological

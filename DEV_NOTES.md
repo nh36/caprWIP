@@ -2134,48 +2134,157 @@ This is clean and parallel to other oblique usages in the project. We change the
 
 *tappăn → (AFB: root *a → *æ, suffix *ă → ... treated as front) → *tæppæn → (various) → tæppan ✓
 
-### Case 3: *stamnăz → stamn (expected stemn) — proto-form error
+### Case 3: stefn / stemn 'voice' — the stefn/stemn problem
 
-This case is fundamentally different from the other two: **the TSV proto-form *stamnăz is wrong.**
+**⚠ THIS IS A MAJOR FLAGGED PROBLEM — see also notable_findings.md §5 and the "Return later" section below.**
 
-**The evidence:**
+This item exposes a genuine disagreement in the literature about how to reconstruct the Proto-Germanic preform of the word for 'voice'. The OE evidence is clearer than the Proto-Germanic evidence. The project therefore uses a **local pre-OE transponent** for the OE pipeline and defers the cross-Germanic reconstruction to a later stage.
 
-1. **R/T (p.330):** PGmc *stebnō 'voice' (Goth. stibna) → PWGmc *stebnu (OF stifne ~ stemme, OS stemna, OHG stimna) → OE stebn (CorpGl 2164) → stefn → stemn.
+---
 
-   R/T reconstruct *stebnō (with original e-grade from PIE *stém-n-). This is an ō-stem. The derivation is straightforward: the root vowel *e undergoes no fronting issues (it's already front), the *b undergoes post-nasal assimilation (stebn → stefn), and a further late assimilation gives stefn → stemn.
+#### A. Practical project decision
 
-2. **Kroonen (p.488):** *stimnō- f. 'voice' — Go. stibna, OFri. stemme, OS stemna, OHG stimma/stimna. He says:
-   - Go. stibna and OHG stimna point to *stem-n- (e-grade)
-   - OE stemn, stefn, OFri. stemme, OS stemna are "usually derived from *stamnjo- < *stom-n-" (o-grade → a in PGmc, with j-umlaut a → e)
-   - These represent remnants of PIE ablaut: e-grade *stém-n- vs. o-grade *stom-n-
+**Operational decision (implemented):** The TSV uses pre-OE transponent **\*stebnō** (citation form, ō-stem nom.sg.) as input to the OE pipeline. Pipeline output: **stefn**. The OE target is **stefn**, not stemn.
 
-3. **Neither source reconstructs *stamniz (an i-stem).** The form *stamnăz in our TSV is ad hoc — it was apparently created to make the pipeline produce "stemn" via i-umlaut, but:
-   - It assumes an a-stem declension (*-ăz) when both R/T and Kroonen give ō-stem endings
-   - The *a in the root should give OE "stamn" without umlaut (which is indeed what the pipeline produces)
-   - There is no source for a PGmc i-stem *stamniz
+The form **stemn** is treated as a later secondary WS variant produced by the assimilation fn → mn (Bülbring §485: "Im Ws. geht f vor n + Vokal in m über"; he dates the assimilation to Alfred's time or later). The OE target stefn is the conservative form attested from the earliest glossaries onward.
 
-**Three possible legitimate proto-forms:**
+The previous TSV proto-form \*stamnăz was ad hoc — an a-stem masculine with root *a* that no source reconstructs. It produced pipeline output "stamn" (with no mechanism to front the root vowel), confirming it was wrong.
 
-| Proto-form | Source | Stem class | Pipeline result | Notes |
-|-----------|--------|-----------|----------------|-------|
-| *stebnō | R/T p.330 | ō-stem f. | **stefn** ✓ | e-grade, most straightforward |
-| *stamnjo- | Kroonen p.488 | jō-stem f. | untestable | Would need *-j- handling, o-grade with j-umlaut |
-| *stimnō | Kroonen p.488 heading | ō-stem f. | untested | i-grade (per Gothic stibna) |
+---
 
-**Pipeline test results:**
-- `stebnō → stefn` — R/T's e-grade form. Pipeline produces stefn, which is an **attested OE variant** (R/T cite CorpGl 2164 stebn, then stefn, then stemn). The derivation stebn → stefn is handled by the pipeline (bn → fn, i.e. b-devoicing before n or similar). The final step stefn → stemn (fn → mn, nasal assimilation) is a late change not currently modeled.
-- `stimnō → ?` — needs testing
+#### B. Why this is the right temporary decision
 
-**Key question: stefn vs stemn**
+The TSV needs a form that actually yields the conservative OE output through the pipeline's sound changes. The pre-OE transponent \*stebn- (with root *e* already present, and the *-bn-* cluster that regularly becomes *-fn-*) satisfies this requirement:
 
-Both stefn and stemn are attested OE forms. R/T's derivational chain is stebn → stefn → stemn, with the last step being a late assimilation of labial fricative to nasal before nasal (fn → mn). This assimilation is:
-- R/T: implicit in their derivation
-- Not currently modeled in our pipeline
-- A regular process in OE (cf. also efn → emn 'even')
+- `stebnō → stefn` — pipeline output matches the attested conservative OE form
+- No new rules needed; *bn → fn is already handled
+- The root *e* is inherited (not produced by umlaut or other mechanism)
 
-If we accept stefn as the OE target (it IS attested), then *stebnō → stefn is fully lautgesetzlich and requires no new rules. If we insist on stemn, we would need to add an fn → mn assimilation rule.
+**This is explicitly a transponent for the OE stage, not a claim to have solved Proto-Germanic.** The form \*stebnō happens to be the reconstruction given by R/T (p.330), but we are using it here specifically because it works for OE, not because we are adjudicating the deeper reconstructional question. Multiple PGmc starting points could yield the same pre-OE \*stebn- (see §D–E below), and discriminating between them requires evidence from other daughter languages that the OE pipeline cannot provide.
 
-**Proposed resolution:** Change proto to *stebnō (per R/T) and change OE target to stefn (attested variant). Add a note that stemn is the more common later form, arising from fn → mn assimilation (a regular but late process we do not currently model).
+---
+
+#### C. Primary Old English and English-historical evidence
+
+**Early OE attestations:**
+
+The earliest attested form is **stebn** (Corpus Glossary 2164, c.800; R/T p.330). This is the most archaic form, preserving the original *-bn-* cluster.
+
+The form **stefn** (with *bn → fn*, labial devoicing/spirantisation before nasal) is the standard early WS form. It is abundantly attested: Alfred's works, the Vespasian Psalter gloss, and many other early sources. Bülbring (§445) lists "stebn stefn stemn 'Stimme'" as the chronological sequence after short syllable. Northumbrian texts (Lindisfarne, Rushworth) consistently have **stefn** (Bülbring §485: "das Nordh. stets ... stefn Pl. stefno").
+
+The form **stemn** (with *fn → mn*, nasal assimilation) is specifically late WS. Bülbring (§485) explicitly restricts the fn → mn change to WS: "Im Ws. geht f vor n + Vokal in m über: emne 'eben', hræmn hremn 'Rabe' ... stemn 'Stimme'." He adds: "kGl. efne; das Nordh. stets efne, stefn Pl. stefno, hræfnas" — i.e. Kentish and Northumbrian preserve fn, only WS has mn. Bülbring (§62 Anm. 3) dates the assimilation explicitly: "Da die Einwirkung der Nasale auf e allein der frühesten urengl. Zeit angehört, so bleibt e vor dem erst in Alfreds Zeit auftretenden, aus f hervorgegangenen m erhalten: stemn 'Stimme', emne 'eben' (aus älterem stefn, efne)."
+
+Luick (§75 Anm. 1) agrees: "e vor jüngerem mn aus fn: emn 'eben', stemn 'Stimme'."
+
+**The parallel of efn / emn 'even' (< PGmc \*ebnaz):**
+
+R/T (p.330) present the parallel explicitly:
+> PGmc \*ebnaz 'level, even, equal' (Goth. ibns, ON jafn) → PWGmc \*ebn → OE \*ebn → efen ~ efn → emn
+
+The chain ebn → efn → emn is structurally identical to stebn → stefn → stemn. Both show:
+1. Original *-bn-* cluster
+2. Labial devoicing: bn → fn
+3. Late WS nasal assimilation: fn → mn
+
+The parallelism confirms that stemn is secondary (from stefn, from stebn), not primary.
+
+**Middle English continuation:**
+
+Luick (Hist. Gr. §347, p.418) provides decisive ME evidence. He notes that when OE words with syllabic nasals after short syllables passed into ME, the development depended on whether the nasal was still syllabic or had become part of a consonant cluster. For stefn, he gives:
+
+> ME **stevne** 'Stimme' (from OE oblique stefne), beside ME **stem** 'Stimme' (from OE stefn with cluster simplification)
+
+The ME form **stevne** (with -v- < OE -f-) proves that the immediate pre-ME form had *-fn-*, not *-mn-*. If stemn (with -mn-) had been the primary OE form, ME would show \*stemne, not stevne. The fact that ME continues the fn-type, not the mn-type, confirms that stemn was a late and specifically WS variant, while stefn was the form that actually fed into ME.
+
+The same argument applies to the parallel word: ME **evene** (with -v-) < OE efne (not < emne). Again, the fn-type, not the mn-type, is ancestral to the ME form.
+
+**Summary of OE chronology:**
+1. Pre-OE \*stebn- (preserved in CorpGl stebn, c.800)
+2. Early OE stefn (bn → fn; general across all dialects)
+3. Late WS stemn (fn → mn; specifically West Saxon, Alfredian period or later)
+4. ME stevne (continues the fn-type, confirming stemn is secondary)
+
+---
+
+#### D. Comparative Germanic evidence
+
+| Language | Form(s) | Source | Notes |
+|----------|---------|-------|-------|
+| **Gothic** | stibna f. | Kroonen p.480 | Points to *stebn- or *stibn- (e/i-grade with *-bn-) |
+| **Old Saxon** | stemna f. | Kroonen p.480 | Points to *stemn- (e-grade with *-mn-) |
+| **Old High German** | stimma, stimna f. | Kroonen p.480 | stimna points to *stimn- (i-grade with *-mn-); stimma to *stimmō- (with gemination) |
+| **Old Frisian** | stemme f. | Kroonen p.480 | Points to *stemm- (geminate) or *stemn- |
+| **Old Norse** | — | | Not directly attested in this meaning |
+| **Dutch** | stem c. | | Continues WGmc *stemn- or *stemm- |
+| **Old English** | stebn, stefn, stemn | R/T p.330, Bülbring §445 | Chronological chain (see §C above) |
+
+**Where the daughter languages agree:** All WGmc forms point to an e-grade root vowel *stem-* (or, in OHG *stimna*, an i-grade *stim-* that could reflect raising before nasal). Gothic stibna likewise points to *steb(i)n- with front vowel (e or i). There is no daughter-language evidence for an a-grade or o-grade root in the nominative.
+
+**Where the daughter languages diverge:** The consonantism of the medial cluster varies:
+- **\*-bn-** type: Gothic stibna, OE stebn/stefn
+- **\*-mn-** type: OS stemna, OE stemn (secondary)
+- **\*-mm-** type: OHG stimma, OFri. stemme
+
+This three-way split is the core of the reconstructional problem. Depending on which is taken as primary, the others must be derived by assimilation or dissimilation.
+
+---
+
+#### E. History of scholarship
+
+**R/T (vol.2, p.330; 2014):** Reconstruct **\*stebnō** (ō-stem f., e-grade, *-bn-*). They present the derivation as: \*stebnō → PWGmc \*stebnu → OE stebn → stefn → stemn. They treat *-bn-* as the original cluster, with fn and mn as successive OE-internal assimilations. This analysis takes Gothic stibna as the most conservative witness for the consonantism. R/T place this word in a discussion of epenthesis after short syllables, alongside \*swefnaz → swefn, \*hrabnaz → hrefn → hræfn → hremn, \*ebnaz → efen ~ efn → emn. All share the *-bn-* → *-fn-* → *-mn-* trajectory.
+
+**Kroonen (EDPG p.480, 488; 2013):** Gives the headword as **\*stimnō-** f. but discusses multiple PGmc variants reflecting PIE ablaut. He states that Go. stibna and OHG stimna "point to \*stem-n-" (e-grade), while OE stemn, stefn, OFri. stemme, OS stemna "are usually derived from \*stamnjo- < \*stom-n-" (o-grade with j-umlaut). He interprets the variation as preserving "remnants of the PIE ablaut" across different thematizations. In his introductory discussion (p.xxxvi), Kroonen discusses the \*-mn- → \*-bn- change and notes that the word for 'voice' shows "all three possibilities" (\*-mn-, \*-bn-, \*-mm-). He proposes that the ablauting n-stem nominative \*stemd alternated with a genitive \*stimmaz and a dative \*stemeni, and that thematization into an ō-stem produced the different daughter-language variants.
+
+**Bülbring (Altengl. Elementarbuch §§62, 170, 445, 485; 1902):** Does not attempt a PGmc reconstruction but provides the most detailed OE-internal evidence. He demonstrates that stebn → stefn → stemn is the correct chronological sequence within OE, with the fn → mn step restricted to WS and datable to the Alfredian period (§62 Anm. 3, §485). His treatment of the parallel efn → emn is crucial comparative evidence.
+
+**Luick (Hist. Gramm. §§75, 211, 347; 1914–40):** Confirms e before late mn (from fn) is preserved (§75 Anm. 1). In §211, he discusses a separate word "stemn 'Stamm'" (= 'stem, prow'), which he derives "aus \*stofn (vgl. as. stamn und me. stam)" — this is a DIFFERENT word from stemn 'voice' and should not be confused with it. His ME evidence (§347) is decisive: ME stevne continues OE stefn (with -v- < -f-), proving the fn-type is ancestral to ME, not the mn-type.
+
+**Hogg (vol.1; 1992):** References stefn in the context of Scandinavian loanwords (stefn 'summons' may be influenced by ON; §4.18). Does not engage with the deeper reconstructional question.
+
+**Scholars preferring a \*stebn- type reconstruction:**
+- R/T (2014): explicitly \*stebnō
+
+**Scholars allowing or preferring a \*stemn- / \*stimn- type reconstruction:**
+- Kroonen (2013): heading \*stimnō-, but acknowledges multiple variants
+
+**Scholars deriving OE forms from a different thematization or analogical reshaping:**
+- Kroonen (2013): mentions \*stamnjo- (o-grade jō-stem with j-umlaut) as the "usual" derivation of OE stemn in the older literature
+
+**Scholars who explicitly leave the etymology open:**
+- Kroonen (2013): presents the diversity of forms as reflecting PIE ablaut remnants, without insisting on a single PGmc headword as the source of all daughter forms
+
+---
+
+#### F. Open questions for later return
+
+The following questions are **not resolved** by our current treatment and are explicitly deferred:
+
+1. **Root vocalism:** Is the PGmc root vowel *e* (R/T), *i* (Kroonen heading, cf. Go. stibna, OHG stimna), or were both grades present in the paradigm (Kroonen's ablaut analysis)?
+
+2. **Whether \*-bn- or \*-mn- is primary:** R/T treat \*-bn- as original (with Go. stibna as key witness) and \*-mn- as a later assimilation. Kroonen treats \*-mn- as at least equally old, with \*-bn- arising from dissimilation. The direction of change (mn → bn, or bn → mn?) is not settled.
+
+3. **How to weight Gothic stibna:** Gothic is often treated as the most archaic witness, but the i-vocalism could reflect Gothic-internal raising (\*e → i before nasal), and the *-bn-* cluster could reflect Gothic-internal dissimilation from \*-mn-*. The Gothic form is thus not unambiguous evidence for the PGmc reconstruction.
+
+4. **Whether different daughter branches preserve different thematizations:** Kroonen's analysis implies that the PIE paradigm (\*stém-mn, gen. \*stém-mn-s, loc. \*stm-mén-i) was thematized differently in different branches: some preserved e-grade, others o-grade; some preserved \*-mn-, others \*-bn-. If so, there may be no single PGmc reconstruction that accounts for all daughters.
+
+5. **How the Indo-European comparanda should be used:** Hittite istaman- ~ istamin-, Greek stóma, Avestan staman- all point to a PIE root \*stom-/\*stem-, but the exact ablaut grade and suffixation of the PIE source word remain debated (see Kroonen p.480 for references).
+
+6. **Whether the whole set is partially remodeled analogically:** Several of the daughter-language forms (OHG stimma with geminate, OFri. stemme with geminate) look like they may have been reshaped by analogy with other words or by expressive gemination. The extent of analogical remodeling is unknown.
+
+---
+
+#### G. Future research plan
+
+**We are not solving this now.** The current treatment (pre-OE transponent \*stebn- → OE stefn) is correct for the OE pipeline and is well justified by the OE-internal evidence. The deeper PGmc question is deferred.
+
+**When the OHG and Gothic transducers are built,** this item should be revisited as a **cross-branch test case**. Specifically:
+- The Gothic transducer will need to derive stibna from whatever PGmc form is posited
+- The OHG transducer will need to derive stimna/stimma
+- The OS pipeline (if built) will need to derive stemna
+- If a single PGmc reconstruction can feed all daughter transducers and yield the correct output in each case, that would constitute strong evidence for that reconstruction
+- If no single reconstruction works for all branches, that would confirm Kroonen's view that different branches preserve different thematizations
+
+This word is flagged as a **potential publishable finding**: it is a showcase case of the methodological point that implementing historical transducers forces a sharp distinction between (a) what must be assumed locally for one daughter language, and (b) what is genuinely reconstructable for Proto-Germanic. See notable_findings.md §5.
 
 ### Summary of proposed actions
 
@@ -2183,29 +2292,7 @@ If we accept stefn as the OE target (it IS attested), then *stebnō → stefn is
 
 2. **tæppa** (*tappô): Use n-stem oblique *tappăn → tæppan (changing both proto and target). Clean parallel to existing oblique approaches. Fully lautgesetzlich.
 
-3. **stemn** (*stamnăz): Change proto to *stebnō (per R/T p.330), change target to stefn (attested OE variant). Document fn→mn assimilation as unmodeled late change. Removes ad hoc proto-form.
-
-### Additional pipeline tests for stemn
-
-| Proto-form | Pipeline output | Source | Notes |
-|-----------|----------------|--------|-------|
-| *stebnō | stefn ✓ | R/T p.330 | e-grade, *-bn-. Attested OE variant. |
-| *stimnō | stimn | Kroonen heading | i-grade, *-mn-. Not standard OE. |
-| *stemnō | stemn | (see below) | e-grade, *-mn-. Gives target exactly. |
-
-The form *stemnō (e-grade with *-mn- cluster) gives "stemn" directly. This avoids needing an fn→mn assimilation rule. However:
-
-- R/T specifically reconstruct *stebnō with *-bn- (not *-mn-), reflecting the consonantism of Gothic stibna. Their derivation stebn → stefn → stemn is explicit.
-- Kroonen's heading *stimnō- has *-mn- (reflecting OHG stimna), but with i-grade.
-- An e-grade form *stemnō (combining R/T's e-grade with Kroonen's *-mn- consonantism) would be a hybrid that neither source explicitly gives.
-
-The PIE source is *stém-(m)n. The PGmc cluster could reflect either *-mn- (direct continuation) or *-bn- (dissimilation mn → bn, as R/T assume). Both are defensible positions:
-- *-bn-: explains the variation stebn ~ stefn ~ stemn as a natural chain (bn → fn → mn)
-- *-mn-: explains stemn directly, but then stefn and stebn would need to be understood as dissimilations FROM *-mn-
-
-**R/T's *stebnō → stefn is the safest choice** (from our primary source, produces an attested OE form). If the fn → mn rule is added later, it would additionally produce stemn.
-
-**Alternative: *stemnō → stemn** would match the TSV target exactly but represents a hybrid reconstruction. The *-mn- cluster IS supported by Kroonen's analysis of the PIE source, so it is not ad hoc in the way that the current *stamnăz is.
+3. **stefn** (**DONE**): TSV updated to pre-OE transponent \*stebnō → stefn. See "The stefn/stemn problem" dossier above and notable_findings.md §5.
 
 ### Note on ræst oblique form problem
 
