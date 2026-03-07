@@ -1,0 +1,1283 @@
+Revue belge de philologie et
+d'histoire
+
+Notes on the Reflexes of ie /ms/ in Germanic
+E. C. Polomé
+
+Citer ce document / Cite this document :
+Polomé E. C. Notes on the Reflexes of ie /ms/ in Germanic. In: Revue belge de philologie et d'histoire, tome 45, fasc. 3, 1967.
+Langues et littératures modernes — Moderne taal- en letterkunde. pp. 800-826;
+doi : https://doi.org/10.3406/rbph.1967.2692
+https://www.persee.fr/doc/rbph_0035-0818_1967_num_45_3_2692
+Fichier pdf généré le 13/04/2018
+
+NOTES ON THE REFLEXES OF IE /MS/ IN GERMANIC
+
+About a decade ago (2), Wilhelm Brandenstein dealt rather thoroughly with
+the IE clusters ms and ns. Starting from Franz Specht's claim that a phonetic
+change of ms to ns cannot be evidenced in IE (3), Brandenstein tries to
+establish that the IE cluster nasal + s is preserved only when the consonants
+are separated by a syllable boundary, whereas tautosyllabic *ms becomes
+ns and original *ns is never maintained in the same position. This argument
+is chiefly based on Indo-Iranian and Greek evidence and entails a couple of
+interesting corollaries for the history of Indo-European :
+a. the accusative plural ending -ns reflects an original -ms ( : [ace. sg.] -m) ;
+b. IE *mens 'moon, month' arose from leveling in the paradigm * mêmes- :
+(1) The essential thesis of this paper was first presented to the Spring meeting of the
+Cercle belge de linguistique in 1953. It was the outcome of further inquiry regarding the
+etymology of Gmc. *ansuz 'ruling god', which I connected with Hitt. haHSuS 'king' in
+Études germaniques, 8.36-44 (1953). There, I derived these words from IE *ans- ( : Lat.
+änsa 'handle', Olcel. ses [< *ansjô] 'thread-hole in a shoe', etc.), which I connected with
+IE *aT}gh- ( : Lat. angö 'I squeeze [esp. the throat]', Gk. αγχω 'I hug, strangle', etc.),
+positing a common IE root *an- (< PIE *H2én-) 'tie'. In private correspondence,
+Oswald Szemerényi suggested it might be preferable to consider both *ans- and *ax)ghas expanded forms of IE *am- 'take, hold' (Cf. J. Pokorny, Indogermanisches etymologisches
+Wörterbuch, 35 [Bern, 1947]), with assimilation in place of articulation of the labial nasal
+to the following consonant. As for Gmc. *ansu-, it could represent earlier *am-s-u- ' vital
+strength', from the root *am-, also found in Gmc. Amalinga- (name of a Gothic dynasty)
+and Av. ama- 'strength' (esp. 'manly power, sexual vigor'; cf. C. Bartholomae, Altiranisches Wörterbuch2, 140 [Berlin, 1961]). Since the concept of sovereignty is often
+concomitant with that of ' vital strength ' this suggestion prompted me to investigate the facts
+more thoroughly. One of the difficulties involved in establishing that Gmc. *ansu- was
+likely to reflect IE *am-s-u, was the implied assumption of a phonetic change of IE *-msinto Gmc. *-ns-. The expanded re-examination of the problem, presented here, was
+made possible through a grant of the University of Texas Research Council, to whom I
+herewith express my sincere gratitude for the help given me in this work.
+(2) 'Die idg. Lautgruppen ms und ns', Studien zur indogermanischen Grundsprache, 5-12
+(Vienna, 1952).
+(3) Der Ursprung der indogermanischen Deklination, 373 (Gottingen, 1944).
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+801
+
+*mms-, resulting from the assimilation of *m...u to *m...m in the
+paradigm [nom.] *më-wes- : [gen.] *md-us- of the active perfect participle
+in *-wes- of the verbal root *më- 'measure'.
+Without disputing the validity of these conclusions (1), let us examine the
+fate of -ms- in the IE noun for 'meat'. This is what Brandenstein says about
+it:
+'Dass in *mêns η. « Fleisch» (Einzelstück ?) eigentlich *mêms intendiert,
+diese Lautabsicht aber als *mêns realisiert wurde, d.h. dass eine
+Assimilation eingetreten war, kann durch die Bildung *mëmsom « Fleisch»
+(Masse?) erwiesen werden (2).'
+This IE *mêmsom is mainly posited on account of Goth, mimz [n.] (3), since
+Skt. mämsam and OGS mçso 'meat' give no clue as to the point of articulation
+of the original nasal. The contrast between *mëns and *mëmsóm makes it
+clear that the only position in which assimilation of ms to ns did not
+automatically occur in IE is the internal position where the syllable boundary fell
+between m and s. In some IE languages, both forms still coexist : we have
+Skt. mäms- : mämsam with the Old Indie 'neutralization' of the contrast
+between nasal phonemes in anusvära, whereas an Indo-Iranian denasalization
+is reflected by the Vedic nominative singular mäh [η.] . In Slavonic, the Polabian genitive singular mqsi implies a consonantic stem *mëns, whereas OGS
+m$so reflects *mëmsóm. In other languages, either of the two IE types has
+survived. When only *mêns was preserved (4), [ns] was no longer felt as a
+merely allophonic modification reflecting the IE cluster /ms/ in definite
+environments and in such languages, [n] became a part of the /n/ phoneme.
+This is evidenced by the expanded forms in which a syllable boundary
+reappears between the nasal and s : in such cases, [m] would normally be expected,
+but, in fact, [n] occurs, e.g., in OPr. mensa, Gk. μήνιγξ (<.*μηνσ-ιγγ·), etc.
+From this line of argument Brandenstein infers :
+'Die Analyse dieses Beispiels zeigt einwandfrei, dass tautosyllabisches
+/ms/ als ns realisiert wurde ; heterosyllabisches /ras/ hingegen blieb
+erchalten, von den späteren einzelsprachlichen Veränderungen
+abgesehen' (5).
+How far is this conclusion confirmed by further evidence ?
+(1) The second one implies rather too much questionable reconstruction to carry
+convinction. Cf., about IE *mëns- and its possible derivation from the root *mè- ' measure ',
+A. Scherer, Gestirnnamen beiden indogermanischen Völkern, 61-71 (Heidelberg, 1953).
+(2) Loc. cit., 5.
+(3) Occurring as a translation of Gk. κρέα (1 Cor., 8.13), in the accusative singular.
+(4) Often in derivatives.
+(5) Loc. cit., 5.
+
+802
+
+E. C. POLOMÉ
+
+As for OPr. mensa, it is by no means excluded that Baltic *mensä should
+reflect a dialectal dissimilation of *memsä, as J. Endzelin (x) suggests. But how
+are we to account for Lat. membrum 'limb, member' : Horn, μήρα [pi.]
+'thighbones', Olr. mir 'piece, portion, morsel' ?
+These words are usually considered as reflexes of IE *me'sro-, but since IE
+syllabification (2) implies that the cluster -ms- was tautosyllabic in this
+derivative, we should posit IE *mêns/ro- instead. In this case, the development
+of Olr. mir is strictly parallel to that of Olr. mi 'month' <IE *mêns (3), and
+the -m- of Lat. membrum is due to a secondary assimilation to the following
+-b-, resulting from the dialectal treatment of *-sr-.
+OS1. *mezdra 'membrane ; flesh side (of hide) ' has also been compared with
+the above words, but the cluster -zdr- has appeared most difficult to account
+for. Karl Brugmann (4) first suggested that -zdr- might be the regular phonetic
+development of IE *-sr- in Slavic, but, contrasting OS1. *mçzdra and OCS
+nozdri 'nostrils' with OCS sestra 'sister', Ernst Zupitza (5) ascribed the
+divergent reflection of *-sr- in these words to their initial consonants, the voicing
+of original *-s- in the former being due to the voiced nasals m- n-. This
+explanation was preferred by Erich Berneker (e) to Brugmann's later assumption
+of a 'Sekundärformans' *-dhro- instead of original *-ro- (7). It is highly
+improbable, indeed, that OS1. *mezdra should go back to a pre-Slavic derivative
+*mêms-dhro-, since its -d- is not likely to date as far back as the pre-dialectal
+Slavic period (8). Nevertheless, Zupitza's rule, according to which :
+'idg. s, das im Slav, nach e o a ë (= altem ê) e ç erhalten blieb, wurde
+(1) Altpreussische Grammatik, 51 (Riga, 1944).
+(2) Cf. E. Hermann, Silbenbildung im Griechischen und in den andern indogermanischen
+Sprachen, 359-362 (Gottingen, 1923).
+(3) R. Thurneysen, A Grammar of Old Irish, 39, 132 (Dublin, 1946). Gk. μηρός does
+not throw any light on the question under discussion : the nasal has disappeared at an
+early date before s + consonant (cf. E. Schwyzer, Griechische Grammatik, 1.336 [Munich,
+1939]) ; then, s has dropped out before r after a long vowel (ibid., 282). Arm. mis 'meat'
+need not be taken into consideration either since both ms and ns yielded s in this language
+(cf. V. Pisani, Ricerche linguistiche, 2.64-5 [1951] ; G. Solta, Die Stellung des Armenischen
+im Kreise der indogermanischen Sprachen, 51-2 [Vienna, 1960] ; S. Mann, Armenian and IndoEuropean, 146 [London, 1963]).
+(4) Gdr.\ 1.788 (1897).
+(5) KZ, 37.397 (1904).
+(6) Slavisches etymologisches Wörterbuch, 2.46 (Heidelberg, 1913). Cf. also J.J. Mikkola,
+Urslavische Grammatik, 2.158 (Heidelberg, 1942).
+(7) IF, 18.437-8 (1905-6) ; Gdr\ 2.1.381 (1906).
+1924),'
+(8) W. Vondrâk, Vergleichende slavische Grammatik1, 1.413, 444, 478 (Göttingen,
+quoting a dialectal mazra ( : Cz. mazdra) in Bohemia. Brugmann himself (IF, 18.438-9
+[1905-6]) also contemplates the possibility of a substitution of mezdra for *mestra, when
+-dro- has ousted *-tro- in Slavic.
+
+NOTES ON THE REFLEXES OF IE JMSJ
+
+803
+
+weiterhin zu ζ, wenn der Ton folgte und n, m oder stimmhafter
+Verschlusslaut -\- r, l vorausging' (λ),
+can hardly be accepted. This does not imply, however, that a voicing of the
+medial IE voiceless sibilant could not take place under definite circumstances
+in Slavic. In spite of Antoine Meillet's objection, that :
+'aucune sonante ne rendit sonore en indo-européen une consonne
+précédente à l'intérieur du mot' (2),
+Sigurd Agrell may be right when he states :
+'Das tremulierende r dürfte, wenigstens wenn der Iktus unmittelbar
+nachfolgte, einen sehr kräftigen Stimmton gehabt haben, der das
+vorangehende s in ζ verwandelt hat' (3).
+In that case, there would be no difficulty in considering OS1. *mçzdra as
+a phonetic rejlex of IE *mêms-râ (4). The existence of dialectal words
+implying an OS1. *mezdra, namely Polish miazdra 'membrane' and Ukrainian
+Mzdra 'bark ; inner side of leather' (with n- due to incontiguous assimilation
+of m- to -d-), however complicates matters : J. J. Mikkola (5) considered these
+(1) KZ, 37.398 (1904).
+(2) Études sur le vocabulaire et Γ 'etymologie du vieux-slave, 1.129 (Paris, 1902) ; cf., similarly,
+Le slave commun, 1 18 (Paris, 1924) : 'Un passage de *sr à *zr (d'où zdr) serait contraire et
+aux traitements des autres mots et au principe du maintien du caractère sourd des
+consonnes sourdes devant sonantes'.
+(3) Zwei Beiträge zur slavischen Lautgeschichte, 68 (Lund, 1918).
+(4) Cf., e.g., J. Holub and Fr. Kopecny, Etymologicky" slovnlkjazyka ceského, 219 (Prague,
+1952). The parallel case of OCS nozdri 'nostrils' is rather puzzling : according to Vondräk, op. cit., 444, it is a Slavic derivation from the stem *nos- (OCS nosh) : *nosri (whence
+the Lithuanian loanword nasral) > *nozri (with voicing of the preceding sibilant under the
+influence of r) > nozdri (with recent dialectal epenthesis of -d-, as nozri is actually attested
+in Russian). The same explanation is suggested by A. Bruckner, Slovnik etymologiczny
+jezyka polskiego, 367 (Cracow, 1927)andseems implied by many etymologists, e.g.,S. Mladenov, Etymologileski ipravopisen reinik na bulgarskija knizOven ezik, 359 (Sofia, 1941) ; Holub
+and Kope6ny, op. cit., 27, 247 — as well as grammarians, e.g., H. H. Bielfeldt,
+Altslawische Grammatik, 82 (Halle, 1961). However, A. Vaillant, Grammaire comparée des
+langues slaves, 1.76 (Lyon, 1950) utterly denies the possibility of considering OCS nozdri
+as a reflex of *nos-r-, since he shares Meillet's views . In Revue des études slaves, 12.89 (1932),
+he suggested that nozdri might be an original compound ; this assumption has more
+recently been confirmed by M. Vasmer, Russisches etymologisches Wörterbuch, 2.225
+(Heidelberg, 1954) and L. Sadnik and R. Aitzetmüller, Handwörterbuch zu den altkirchenslavischen
+Texten, 275 (Heidelberg), 1955, since Ukr. nizdra implies Common Slavic *nozdb'ra. No
+mention of Russ. nozri (Sobolevskij) is however made by either of them.
+(5) BB, 22.242 (1897).
+
+804
+
+E. C. POLOMÉ
+
+words as derivatives from an IE stem without nasal *mës-, as evidenced in
+Lith. mésà 'meat', but W. v. d. Osten-Sacken (x) has conclusively shown that
+Lith. mésà is a Slavic loan— as far as its stem vowel is concerned, at least (2).
+Accordingly, Herbert Petersson preferred to suggest the coexistence of two
+words in Common Slavic : *me]sra (<IE *mëms-ra) and *mezra (IE *mqygh-rä
+'membrane', from the same root as Lett, miza 'rind, peel' (3) and Arm.
+mizn 'membrane') ; the latter became quite regularly *mezdra, which led to
+the analogical substitution of *mezdra for *mestra. Shortly after, Petersson (4)
+however gave up the idea of connecting *mçzdra with Lat. membrum and
+posited an IE nominal derivative with secondary nasalization *minghrâ, from the
+same root as OS1. *mezdra. Similar views were held by Aleksander Bruckner (5)
+and Wenzel Vondräk (β), who both reject the connection of OS1. *mçzdra
+with OGS mçso 'meat' and compare OS1. *mëzga 'sap' (OR mêzga, Pol.
+miazga, Cz. miza, etc.). Parallel with *mçzdra : *mezdra, a dialectal byform
+*mçzga of the latter is assumed to be attested by SCr. mézga ; the whole group
+should accordingly be derived from a Slavic stem *mez-, whence with secondary
+nasalization (under the influence of OSG mçso ?), *mçz 'pulpy, plump, fleshy',
+e.g., in Ukrainian maznuty 'grow fat'. In all likelihood, SCr. mézga is however
+a regular reflex of OS1. *mhga (7), and the semantic gap which separates
+*mezga 'sap' from *mezdra 'membrane' cannot be easily bridged since the
+former undoubtedly belongs to the same root as SCr. mlZati 'urinate', Slov.
+mzi Oozes' (8). Accordingly, Max Vasmer (9) has preferred to resort to
+André Vaillant's explanation :
+(1) IF, 33.231-2 (1913-4). a. also Specht, op. cit., 50, fn. 1 (1944) ; E. Fraenkel,
+Litauisches etymologisches Wörterbuch, 428, 442 (Heidelberg, 1956).
+(2) Cf. R. Trautmann, Baltisch-Slavuches Wörterbuch, 178 (Gottingen, 1923).
+(3) Baltische und slavische Wortstudien, 45-7 (Lund, 1918).
+(4) Cf. Κ. Mühlenbach and J. Endzelin, Lettisch-deutsches Wörterbuch, 2.639 (Riga,
+1925-7).
+(5) Studien über die indogermanische Heteroklisie, 55-6 (Lund, 1921).
+(6) KZ, 45.320-2 (1913) ; Slownik etymologiczny jezyka polskiego, 330-1 (Cracow, 1927).
+(7) Op. cit., 444, 556 (1924).
+(8) Cf. A. Leskien, Grammatik der serbo-kroatischen Sprache, 24 (Heidelberg, 1914).
+The other adduced reflex of OSl. *mçzga, Ukr. mazha, presumably owes its aberrant vocalism to the group of OSl. *mez (cf. Ukr. maska [< *mezhka'] 'vor Saft strotzendes
+Pflanzengewebe' ; Berneker, op. cit., 2.46 [1913]), whose semantically plausible connection with
+OCS mçso (Berneker, loc. cit. ; Pokorny, Indogermanisches etymologisches Wörterbuch, 725
+[Bern, 1954]) does not account for its puzzling final -z, unless one would resort to Meillet's
+makeshift suggestion of a preservation (even in derivatives) of the final ζ from *s before
+voiced phonemes in the nominative singular of consonant stems {Études sur le vocabulaire
+et Γ etymologie du vieux-slave, 1.129 [Paris, 1902]).
+(9) Cf. Berneker, op. cit., 2.54-5 (1913) ; Holub and Kopecny, op. cit., 226 (1952) ;
+Vasmer, op. cit., 2.1 13 (1954). V. Machek, Etymologickji slovnlk jazyka îeskeho a slovenského,
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+805
+
+'le mot représente un composé *mçs-dra (*-drja) de mçso et du thème
+verbal *der-' (l),
+and to ascribe the Polish byform miazdra < *mezdra to a dialectal influence
+of *mezga (2). If the latter assumption proves right (3), it seems however
+preferable to accept Agrell's views as long as Gz. dial mazra is rightly
+considered as prior to Cz. mazdra (4).
+In view of the above facts, it stands to reason that there is no cogent Slavic
+evidence to posit a denasalized IE consonant stem *mês (5), and in so far as
+OS1. *mçzdra is closely related to Lat. membrum, we are fully entitled to
+consider it as a reflex of IE *mens/rä (with -ns- from tautosyllabic -ms-).
+Another word, often adduced as evidence by those who tried to posit an
+original stem without internal nasal to account for the IE name of 'flesh' (6) is Gothic
+
+299 (Prague, 1957), however, considers *nwzga as 'postverbal', with 'lenition', to *mêskati, which he relates to E mash andrMHG meisch without climbing further up to IE *meygh('Dalsi pf ibuzenstvo je pochybné').
+(1) Op. cit., 21.87-8 (1954) ; cf. also Machek, op. cit., 290 (1957), who however,
+considers the connection with Cz.dfiti 'flay' as secondary : Slavic -zdr- instead of expected
+*-str- is ascribable to the influence of the OCS verb dbrati, but *mçzdra should be derived
+from an original adjective *mezdr-ja, parallel to Lat. membräna (scilicet cutis) < *mêmsr-âna
+( : *mémsrom > membrum 'part of body, limb' < *' piece of meat') — a rather
+unconvincing explanation since Machek fails to account satisfactorily for the loss of -j('nebot' pfi zpodstatnëni nebylo j potfebné').
+(2) Revue des études slaves, 12.89 (1932) ; cf. also A. Meillet and A. Vaillant, Le
+slave commun*, 137 (Paris, 1934). As for the meaning, cf. Russ. mjazdrît' 'flesh, scrape
+(hides)' (OCS dbrati 'tear, flay').
+(3) Referring to J. Otrebski, Zyde wyrazôw w jezyku polskim, 303 ff. (Poznan, 1948).
+No mention is made of Ukr. Mzdra, but a similar explanation may be suggested (cf. Ukr.
+vid-mizgavity 'get a new bark').
+(4) It might be recalled that F. Muclosich, Etymologisches Wörterbuch der slavischen
+Sprachen, 189 (Vienna, 1886), considered the aberrant Polish byform as borrowed from
+a Russian source. Mikkola, BB, 22.242 (1897), rejected this explanation on the strength
+of Gz. mizdfiti ' flesh (hides) ', claimed to be a reflex of OS1. *mezdr- ; the Czech
+denominative verb ( : Russ. mjazdrît') may however have -i- from OCz. -ie- [< OS1. *-g- ; cf.
+OCz. miesti: OCS m§sti].
+(5) Cf. supra, in. 8, p. 802. [Vasmer and Machek do not mention Cz. dial, mazra'].
+(6) It has also been posited for Olr. mir 'piece' (H. Pedersen, Vergleichende Grammatik
+der keltischen Sprachen, 1.82 [Göttingen, 1909], who even suggests that *-sr- > -r- is preCeltic because of Olr. fair 'sunrise, east' : Lat. uêr 'spring' : Skt. vasar- 'early') and Gk.
+μηρός 'thigh' (< *mêsrós ; Η. Hirt, Indogermanische Grammatik, 2.73 [Heidelberg, 1921] ;
+H. Frisk, Griechisches etymologisches Wörterbuch, 2.230 [Heidelberg, 1963]), but in either
+case an IE prototype *mênsjro- accounts for the attested forms as well (cf. supra, fn. 3, p. 802) .
+
+806
+
+E. C. POLOMÉ
+
+*mammö as a reflex of IE *mas-mön, since G. C. Uhlenbeck's (x) objection to
+any etymological connection of this word as a 'Lallwort' is hardly
+maintainable (2). But if the derivation of Goth, hiuhma 'heap' from the root of Goth.
+hauhs 'high' with the suffix -man- (<IE *-mon-) (3) may be alleged as a parallel
+formation, it should however be pointed out that no other derivative with
+*-τηδη- is attested in Germanic to the best of my knowledge (*). This aberrant
+formation might, of course, be alleged to belong to the same group of old
+derivatives with *-τηδη- (5) as the Latin and Greek names of the 'lungs' {pulmö :
+πλενμων), but its isolation is the more striking as it goes with the assumption
+of a reduced grade — not occurring elsewhere — of the quite questionable
+IE stem without nasal *mës-. Theodor von Grienberger (β), however, got
+around this difficulty by positing Gmc. *mamz-môn, but he failed to account for
+the aberrant derivation of the Germanic word, which created such an
+unexpected consonant cluster as *-mzm-.
+Alb. mish' flesh, meat' is usually considered as a reflex of *menso- (e.g., N. Jokl, Linguhtischkulturhistorische Untersuchungen aus dem Bereiche des Albanischen 326 [Berlin, 1923]), but S.
+Ε. Mann, language, 26.384 (1950) has more correctly assumed the loss of m before sh
+(< *si), pointing out that 'the reason for the vowel of mish is not clear'. Toch. B misa
+'meat' cannot reflect an IE denasalized form, 'da dabei der toch. Vokal i unerklärlich
+wäre', as Pedersen, Tocharisch, 250 (Copenhagen, 1941), rightly states. The stem vowel
+ί indeed reflects the dialectal treatment of Common Tocharian *ä in labial environment
+(W. Krause, Westtocharische Grammatik, 1, 6 [Heidelberg, 1952] ; W. Krause and W.
+Thomas, Tocharisches Elementarbuch, 1.49 [Heidelberg, I960]). Since the IE prototype
+of the collective neuter plural evidenced by OPr. menso [Elbing Voc], as well as Toch.
+Β misa (cf. S. Agrell, Zur Geschichte des indogermanischen Neutrums, 34 [Kungl. Humanistiska
+Vetenskapssamfundet i Lund. Arsberättelse 1925-6]), is in all likelihood the same as
+that of OCS mçso [plur. mçsa], i.e. mëmsôm, the ä from IE *e in Common Tocharian *mämsä
+'meat' must reflect the same shortening of *e as occurs in Goth, mimz (cf. parallel, Toch.
+A want, Goth, winds 'wind' < *wento-, instead of *wënto· in Toch. A want, Jiyente ; KrauseThomas, op. cit., 54).
+(1) E.g., Mikkola, BB, 22.242 (1897) ; F. A. Wood, JEGPh., 2.216-7 (1899).
+(2) Ρ BB, 30.300-1 (1905) ; cf. also Tijdschrift voor Nederlandsche Taal- en Letterkunde,
+25.287 (1906).
+(3) α. R. Meringer, IF, 21.304 (1907).
+(4) S. Feist, Vergleichendes Wörterbuch der gotischen Sprache, 258-9 (Leyden, 1939).
+(5) α. Appendix I (821-4).
+(6) Cf. P. Chantraine, La formation des noms en grec ancien, 170-1 (Paris, 1933) ; Ε.
+Benveniste, Origine de la formation des noms en indo-européen, 122 (Paris, 1935) ; J. Vendryès, Le suffixe latin -mo, -monis (Comptes Rendus de l'Académie des Inscriptions
+[Paris, 1936]) ; T. Bolelli, Origine e sviluppo délie formazioni greche in men/mon, 3-20 (Annali
+della Scuola Normale SupERiORE Di Pisa, 22 [1953]) ; J. Perrot, Les dérivés latins en
+-men et -mentum, 27-8 (Paris, 1961).
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+807
+
+In fact, there is no need to resort to such an ad hoc reconstruction. The
+occurrence of a f eminie derivative *mênsâ 'flesh ' in Baltic (OPr. mensa, Lett, miesa,
+Lith. [Zem.] meisa) (*) rather suggests a different explanation of Goth, mamma.
+As is well known, the formation of a special class of feminine -on- stems is
+a Germanic innovation (2). Quite a number of IE a- stems have been shifted
+to this -on- declension, e.g., Goth, qind 'woman' <IE *gwenä ( : OGS lend).
+A noteworthy example is also Goth, tuggô 'tongue' which goes back to IE
+*a'r)ghwä, with reduced grade vocalism and suffix accentuation, like Lat.
+lingua (probably a Sabellic form, instead of OLat. dingua, under the influence
+of lingere) and maybe Toch. A käntu, Β kantwa (3). A parallel IE prototype
+*msmsa may be posited for Goth, mammo, provided that : (a) the
+vowel-gradation between this word and Goth, mimz {<L*memso->W\\b, pre-Germanic -ë-,
+shortened from IE *ë, as in Goth, fairzna, OHG jersana 'heel' : Skt. pärsni-) {*).
+(b) intervocalic Gmc. *-mz- is assimilated to -mm- in Gothic. It might be
+objected that s alternating with ë before nasal + consonant is a merely sporadic
+combination in IE, but, in my opinion, there is at least one conclusive parallel
+with IE * 3 -f- nasal -f- consonant in Germanic, namely Goth, bandwa 'sign',
+which can hardly be interpreted as a derivative with *-wä from a participle
+*bhä-nt- (5) : it is obviously a feminine abstract derived with IE *-iwä- suffix (ö)
+from the verbal stem with reduced grade vocalism *bten-, as evidenced by
+Gk. φαίνω 'cause to appear, show' (7).
+As it was heterosyllabic, the IE cluster *-ms- must have been preserved,
+according to Brandenstein's rule, in IE *m3m/sd, which consequently yielded
+(1) Untersuchungen zur gotischen Wortkunde, 154 (Vienna, 1950).
+(2) Cf. R. Trautmann, Die altpreussischen Sprachdenkmäler, 377 (Gottingen, 1910) ;
+Baltisch^SlavUches Wörterbuch, 178-9 (Göttingen, 1923) ; K. Mühlenbach and J. Endzelin,
+^tisch-deutsches Wörterbuch, 2.654 (Riga, 1925-7) ; E. Fraenkel, Litauisches etymologisches
+Wörterbuch, 427-8 (Heidelberg, 1957).
+(3) Cf.J. Schmidt, Die Pluralbildung der indogermanischen Neutra, 111 ff. (Weimar, 1889) ;
+E. Wessen, Zur Geschichte der germanischen n-Deklination, 5 (Uppsala, 1914) ; M. H.Jellinek,
+Geschichte der gotischen Sprache, 114-5 (Berlin, 1926) ; E. Kieckers, Handbuch der vergleichenden
+gotischen Grammatik, 122-3 (Munich, 1928) ; H. Hirt, Handbuch des Urgermanischen, 2.67-9
+(Heidelberg, 1932) ; H. Krähe, Germanische Sprachwissenschaft, 2.47 (Berlin, 1942) ; etc.
+(4) V. Pisani, KZ, 64.100-2 (1937) ; W. Havers, Neuere Literatur zum Sprachtabu, 60-1
+(Vienna, 1946) ; W. Krause, Tocharisches Elementarbuch, 1.52, 66, 67 (Heidelberg, 1960).
+(5) OE j'iersn may be an original t-stem (S. Feist, Vergleichendes Wörterbuch der gotischen
+Sprache, 141 [Leyden, 1939]). Note theoriginal alternation in accentuation evidenced by
+the contrast between Goth, -z- and OHG -i- (G. Barber, Die vorgeschichtliche Betonung der
+germanischen Substantiva und Adjektiva, 62 [Heidelberg, 1932]).
+(6) A. JÓHANNEssoN, Isländisches etymologisches Wörterbuch, 594 (Bern, 1954) ; cf.,
+however, J. Pokorny, Indogermanisches etymologisches Wörterbuch, 104 (Bern, 1949).
+(7) With stress on the suffix, as it is attached to the stem without connecting vowel
+(Barber, op. cit., 65 [1932]).
+
+808
+
+E. C. POLOMÉ
+
+*mamz5 in Common Germanic. This word survived only in Gothic, with a
+secondary shift to the -on- declension and a progressive assimilation of medial
+*-mz- to -mm-. The same phonetic change is clearly evidenced by the evolution
+of the Germanic dative plural ending *-miz, corresponding to Lith. -mis,
+e.g., in sunumls [instr. plur.] 'by the sons'. The mutation of OE twsem <
+*twämi <Gmc. *twai-miz ( : ON tveimr) shows a trace of the -i-, whose early
+loss in third syllables is evidenced by the Germanic datives of feminine names
+of divinities in Roman inscriptions on the Lower Rhine : Aflims : Afliabus ;
+Vatvims: Vatviabus. Whereas, in Old Norse, the runic stone of Stentoften
+still bears witness of the preservation ol -mR <.-*mz after unstressed syllable
+in gestumR, borumR in the vnth century and the literary language still uses
+the dative plural tveimr, primr, *-mz has been assimilated to *-mm- after
+unstressed vowel before the literary tradition in Gothic, just as mR is sporadically
+attested as mm in the Stockholm manuscript of ON homilies (10 X çllumm
+instead of qllom 'all') (1),this *-mm- being subsequently reduced to -m in this
+position. Ί hus, Gmc. *dayo-miz 'to the days ' has become Goth, dagam through
+the intermediate stages *dayamz *dayamm, and analogy has extended this
+development to monosyllables where the ending *-miz immediately followed
+the stressed syllable — whence Goth, prim : ON primr as reflexes of Gmc.
+*primiz. The cluster *-mz- involved in this process, which is part of the
+Germanic trend of progressive weakening of final syllables, is however of recent
+secondary origin, whereas Goth, mammo <.*mamzô{ri), with *-mz- from IE
+*-msJ-, sets a problem of historical phonetics about an intervocalic consonant
+cluster in pretonic postion.
+Are there any direct parallels to it ?
+The Germanic words going back to IE prototypes containing the consonant
+cluster -ms- are not numerous : Brandenstein (2) only mentions Goth. ams(a)
+besides mimz. This word whose accusative plural amsans (L 15.15) 'shoulders'
+is the only documented form, corresponds to Skt. amsah 'shoulder', both
+pointing to an IE prototype *ómsos with root accentuation. In this original
+form (3), the cluster -ms- was heterosyllabic, which accounts for its preser(1) There is no cogent evidence to posit IE *bhen-, as Feist {op. cit., 79 [1939]) does :
+the IE cognates of Goth, bandwa reflect a vowel gradation *s : *ä: *δ (e.g. OE banian
+'polish') and clearly point to a root *bhä- (*bhéH2·) with -η-, -s- and -w suffixes (cf.
+Pokorny, op. cit., 104-5 [1949]).
+(2) Cf. Α. Noreen, Altisländische und altnorwegische Grammatik?, 202 (§ 277, 4 b, rem. 5
+[Halle, 1923]). On the process in general, cf. R. C. Boer, Oergermaansch Handboek1, 158
+(§ 158, 3, rem. 3 [Haarlem, 1924]) ; E. Kieckers, Handbuch der vergleichenden gotischen
+Grammatik, 78, 108 (Munich, 1928) ; E. Prokosch, A Comparative Germanie Grammar, 240-1
+(Philadelphia, 1939) ; Sravnitel' naja grammatika germanskix jazykov, 2.70, 315 (Moscow,
+1962). On the names of 'matronae', cf. S. Gutenbrunner, Die germanischen Götternamen
+der antiken Inschriften, 161-2, 201 [Afliae], 234 [Vatviabus'] (Halle, 1936).
+(3) Studien zur indogermanischen Grundsprache, 8 (Vienna, 1952).
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+809
+
+vation ; besides, the voiceless -s- at the beginning of the second syllable has
+been maintained in Germanic on account of the original stress on the initial
+syllable : IE *J-ms- > Goth, -ms- (*). In Old Norse, the nasal consonant of
+this clusterwasdropped with compensatory lengthening of the preceding vowel :
+Gmc. *amsaz thus yielded ON ass 'rocky ridge' (2). The same phonetic process
+has taken place in ON lass 'lock', MLG lös 'padlock' < Gmc. Hamsa-, which
+is actually documented in an OHG glossary (Rb) by the past participle of the
+denominative verb lêmsen 'bar, shut' ( : ON lëêsa 'lock, shut in') kilampsta —
+with epenthesis of -p- (3). Hardly any conclusion can be drawn from Swed.
+dial, lamm 'hinge-pin' : it is most probably a dialectal byform with expressive
+gemination (*) of the cognate ON I cm (plur. lamar 'hinges [of a chest]'),
+still preserved in Norw. lam 'door-hinge' (5).
+Much more complicated is the case of OHG finstar (German j ïnster) , Du.
+dial, deemster and OS thimm 'dark'. How are we, indeed, to account for OHG
+finstar and dinstar? According to Alfred Schirmer (e), the initial consonant
+of the former is due to a dissimilation of the original dental spirant *ƒ> to the
+dental nasal. Inasmuch as the word implies an undocumented older form
+*pimstar, it may be preferable to suggest an assimilation of the initial dental
+to the labial nasal (7), but this question is not directly relevant to our problem.
+(1) a. Appendix II (824-6).
+(2) a. W. Schulze, Kleine Schriften, 570 (Göttingen, 1934).
+(3) Some scholars maintain this word is identical with ON ass 'beam' ( : Goth, ans,
+cf. S. Feist, Vergleichendes Wörterbuch der gotischen Sprache, 40 [Leyden, 1939] ; also, J. De
+Vries, Altnordisches etymologisches Wörterbuch, 16 [Leyden, 1957]), but R. Bethge (in
+F. Dieter, Laut- und Formenlehre der altgermanischen Dialekte, 1.236 [Leipzig, 1898]) is
+probably right in assuming the same semantic evolution as in imperial Latin (h)umerus:
+' shoulder '> ' mountain ridge, crest ' (cf. in this respect, A. J. J. De Witte, De betekeniswereld
+van het lichaam, 282, 285, 412 [Utrecht, 1949]).
+(4) J. Schatz, Althochdeutsche Grammatik, 110 (Göttingen, 1927).
+(5) For examples from the same semantic field, cf. A. Martinet, La gemination consonantique d'origine expressive dans les langues germaniques, 195 (Copenhagen, 1937).
+(6) The usually assumed connection with Lat. lamina 'thin piece of metal' (e.g., E.
+Hellqvist, Svensk etymologisk ordbok, 604 [Lund, 1948], A. Jóhannesson, Isländisches
+etymologisches Wörterbuch, 728 [Bern, 1954]; J. De \'ries, Altnordisches etymologisches
+Wörterbuch, 374 [Leyden, 1959]) remains doubtful (cf. Α. Walde and J. Β. Hofmann,
+Lateinisches etymologisches Wörterbuch, 1.755 [Heidelberg, 1938]).
+(7) In the 15th edition of Friedrich Kluge and Alfred Goetze, Etymologisches
+Wörterbuch der deutschen Sprache, 206 (Berlin, 1951 ; same text, p. 198, in the 17th edition, revised
+by W. Μγγζκα [Berlin, 1957]). In the previous edition (op. cit., u, 159 [Berlin, 1948]),
+Goetze merely takes over Otto Behaghel's explanation : 'ƒ trat in den Anlaut, indem
+p dem nahestehenden s auswich' (cf. Geschichte der deutschen Sprache*, 368 [Berlin, 1928]).
+This view is however inconsistent with the preservation of the initial dental spirant in OS
+•51
+
+810
+
+E. C. POLOMÉ
+
+The main issue involved is to account for the aberrant -m- in phonetic
+conditions where an -n- would be expected in compliance with Brandenstein's rule.
+The alleged Gmc. prototype of OHG finstar, * pimstra-, indeed, implies IE
+*temsro-, in which tautosyllabic *-ms- should have become *-ns-. It would be
+most questionable to consider OHG dinstar as the phonetic reflex of such an
+IE form with *-ns-, since there is every reason to believe that its -n- is due to
+a recent assimilation of -ms- to -ns- and is accordingly of secondary origin,
+like the -n- in OS *finistar, attested in the nominal derivatives finistar (n.)
+and j'inistri (f.) 'darkness' (Gmc. *pinstra- would have yielded OS *ihïstar !).
+As has recently been suggested by O. Szemerényi (2), all these words go back
+to the same Gmc. prototype *pimistr-} as Du. dial, deemster also does ; its
+phonetic evolution may be sketched as follows :
+Gmc. *pimistr- > *pimstr- (with syncopation of the unaccented medial
+vowel : this form actually occurs in the Ley den MS. of Williram in the
+derivative thimsternisse (3) and survives in West-Flemish dimster [Gezelle] (*)),
+> OHG *fimstar (with assimilation of initial *£>ƒ- to the labial
+articulation of the tautosyllabic nasal in contradistinction to OHG
+dëmar 'darkness', in which -m- is heterosyllabic)
+> OHG finstar (with assimilation of -ms- to -ns) (5). But beside
+thiustri 'dark' < *piustria- ( : Du. duister). That is the reason why the modification of the
+initial p- has been ascribed to the tautosyllabic nasal by Schirmer, who compares it
+to the reverse phonetic process evidenced in ON pel 'file' ( : OSwed. feel, OHG fHa),
+whose intial p- instead of f- would be due to the following -/- {op. cit.u, 196). This
+interpretation of ON pel however remains questionable, as the word may as well be derived
+from IE *tenk- (cf. Hellqjvist, op. cit., 209 ; Jóhannesson, op. cit., 535 ; De Vries, op.
+cit., 608).
+(1) As there is no direct evidence of an OHG form *fimstar, E. Hermann, Nachrichten
+von der Gesellschaft der Wissenschaften zu Göttingen, Philologisch-historische Klasse, Fachgruppe
+IV, NF, III, 3.38-9 (1940), claims 'dass finstar unter gleichzeitiger
+Wandlung des th- in -ƒ- und des -mst- un -nst- entstanden ist'. He explains the process as
+follows : 'der Labial von -mst- ist auf den Anlaut übergegangen, indem p- zu ƒ- wurde ;
+zugleich ist der Dental von p in den Inlaut übergetreten, indem -mst- zu -nst- wurde',
+and accounts for OHG dinstar by stating: 'selbstverständlich konnte ja -mst- zu -nstauch ohne die metathese assimiliert werden'.
+(2) Principles of etymological research in the Indo-European languages, 200 (//. Fachtagung
+für indogermanische und allgemeine Sprachwissenschaft [Innsbruck, 1962]).
+(3) Hermann, loc. cit., 38.
+(4) R. van Sint-Jan, Het Weslvlaamsch van Guido Gezelle, 122 (Antwerp, 1930). About
+derivatives of a parallel Westphalian adjective * dimster, cf. E. Kooth, Zeitschrift für
+Mundartforschung, 23.56 (1955).
+(5) Cf. Schirmer, op. ni·15, 206 : 'der Lippenlaut m ... [ist] unmittelbar vor dem
+Zahnlaut s zum Zahnlaut η geworden'. [Both last phases can, of course, be simultaneous
+in compliance with Hermann's views ; see in. 1, above.
+
+NOTES ON THE REFLEXES OF IE / MS /
+
+811
+
+/instar, one also finds finistri (Ahd. Gl. I, 25.424), finistro (Ahd. Gl.
+I, 13.13) intheAlemannic-Bavarian glosses of the 'Keronisches Glossar'
+(Ra), with which the Alemannic gloss finis ternisse (Ahd. Gl. II, 514.7)
+may be compared (x). Similarly, to the OS forms finistre (dat. sing. ;
+Heliand 4313 Cotton. MS finis triu [instr.]), finislri (ace. sing. ; Heliand
+390) (2) correspond to the OLG (3) gloss finistirnissitha (Ahd. Gl. II,
+565.40). Rhenish Franconian in uinisternissi. in tenebris (Ps. David,
+Cant. Annae 9) (4) and the isolated finistarnessi (Tatian 261.1).
+The above forms have been alleged as evidence to postulate an original
+gradation between finistar and j'instar (5), but this appears to be rather
+improbable in view of the parallel alternation between OHG winister and winster
+'left ' . Apart from the various reading zeuinis trine of Notker 1 , 683 . 1 2 , the
+occurrence of winister is limited to the Alemannic-Bavarian gloss uuinelstra (Ra ;
+Ahd. Gl. I, 202.29) and the forms documented in Tatian and Otfrid, whose
+Munich F MS (with Bavarian features) however shows only winstre( : winstra
+in the Alemannic glosses of the 'Keronisches Glossar' and Williram) (6).
+There is, accordingly, every reason to believe that, in spite of the tendency to
+preserve the unstressed medial vowel inOHGaswell as in OS, this vowel has
+been weakened rather early before the consonant cluster -str- and has only been
+retained sporadically, mainly in Franconian. The mere fact that Tatian only
+shows finistarnessi once, as against 17 occurrences of finstarnessi, whereas there
+is no evidence whatever of a byform *uuinstar beside uuinistar, which appears
+6 times in the text (7), prompts us to consider the medial -i- of finistarnessi
+as a secondary insertion. In consideration of the Dutch dialectal forms dimster :
+deemster (whence probably also MDu. [Lucidarius 3314] deester) (8), a
+(temporary) dialectal coexistence of Gmc. *pimistr- with *pimstr- is in fact most
+(1) Cf. J. Schatz, Althochdeutsche Grammatik, 83, § 120 (Göttingen, 1927).
+(2) Edward H. Sehrt, Vollständiges Wörterbuch zum Heliand und zur altsächsischen Genesis,
+132 (Göttingen, 1925).
+(3) According to J. H. Gallée, Vorstudien zu einem altniederdeutschen Wörterbuche, 73 (Leyden, 1903). J. Franck, Altfränkische Grammatik, 61, § 50 (Göttingen, 1909), however,considers it as Franconian.
+(4) Elias von Steinmeyer, Die kleineren althochdeutschen Sprachdenkmäler, 302 (Berlin, 1916).
+(5) Eduard Sievers, Tatian. Lateinisch und deutsch2, liv, § 82 (Paderborn, 1892) ;
+Schatz, loc. cit.
+(6) Schatz, ibid.
+(7) α. Sievers, op. cit., 326, 502.
+(8) The word rhymes with 3313 preester (Du. priester 'priest'), but it is by no means
+established that its ee stands for *-ie- (in duster, dialectal .byform of DMu. dunster 'dark'),
+as W. L. Van ïteixz^Middelnederlandsche Spraakkunst, 110, 500 (Groningen, 1887) claims ;
+cf. J. Franck and Ν. Van Wijk, Etymologisch woordenboek der Nederhndsche Taal, 141
+(The Hague, 1912).
+
+e. c. polomé
+plausible. In OHG, the former must originally have been continued by *di*
+mistar, in which the subsequent disappearance of medial -i- must have been
+followed by the assimilation of the articulation of the labial nasal -m- to that
+of the dental cluster -st-, with which it had thus come directly into contact —
+whence OHG dinstar, which actually occurs in the Alemannic glosses of the
+Vocabularius Sancti Galli (Ahd. Gl. Ill, 4, 11 b). It accordingly stands to
+reason to consider forms like OHG finistri (Ra) as resulting from a dialectal
+blending of OHG finstar : *dimistar and to ascribe their appearance in two
+verses of Heliand to the Franconian influence on the Saxon epic (x). Thus,
+all the discussed forms may ultimately go back to the same Gmc. prototype *pimistr- which may reflect an older *pémesrö, comparable with Lat. tenebrae, whose
+(1) Cf. Theodor Frings, Germania Romana, 216, 221, 224-6 (Halle, 1932). Against this
+view, Willy Krogmann, Die Heimatfrage des Heliand im Lichte des Wortschatzes, 59 ff. (Wismar, 1937), however adduces the attestations of MLG and MDu. vinster, vinsternisse, which
+tend to prove that OS finistar, finistri are not borrowed from OHG. To back up this
+assertion, he tries to dispose of the usual derivation of these words from Gmc. *pimistrby proposing a new etymology {loc. cit., 63-5) : according to him, they go back to Gmc.
+*finistra- < lE*penesro-, a derivative of the s- stem *penos from the IE root *pen- ' wet ; mud,
+marsh'. In spite of his efforts, this explanation nevertheless fails to convince, as there is
+no cogent evidence of a s- stem *penos meaning 'darkness' or the like : Du. vuns 'fusty'
+can hardly be considered as a reflex of IE *pns-, since MDu. vunsc clearly points to *funisk-,
+which most probably belongs to the same root as ON fUna 'rot' (cf. J. Van der Meer,
+Historische Grammatik der niederländischen Sprache, 1.107, § 124 [Heidelberg, 1927]) ;
+moreover, such a derivation would be quite out of keeping with the exclusive usage of the
+Du. word as an adjective. Besides, not a single of the assumed cognates hints at the
+semantic development 'wet, muddy' > 'dark' implied by Krogmann's etymology. Though
+the attestations of MLG vinster, vinsternhse do not date any further back than the xvth
+century, the appearance of the same in the xrvth century East Low Franconian
+'Limburgse Sermoenen' and in G. Van der Schueren's Teuthonuta (Cleves, 1477) suggests that
+Gmc. *pimstr' may be developed into finster outside the OHG area as well. This would
+be confirmed by the Lipsian gloss finistre 'tenebrae' (Can. 3 puer.), if the latter is not to
+be ascribed to any High German influence ; at any rate, the coexistence of MDu. deemster
+(< Gmc. *pimistr-) and vinster (< Gmc. *pimstr-) make such a blend quite plausible in
+Old Low Franconian as well. Whether the same explanation might apply to OS finistar,
+however remains more doubtful (for J. H. Gallée, Altsächsüche Grammatik*, 111, § 134
+[Halle, 1910], the -i- between -n- and -s- is an excrescent [svarabhakti] vowel !). At any
+rate, the medieval dialectal material adduced by Rooth, Zeitschrift für Mundartforschung,
+23.56 (1955) clearly points to OS *thimistar. Accordingly, the evidence appears to
+preclude SzEMERÉNYi's argument (II. Fachtagung für indogermanische und allgemeine
+Sprachwissenschaft, 200 [Innsbruck, 1962]), that the/- form originated in the Old Saxon area.
+Besides, his assumption of a dissimilation f-m > f-n in *fimistra-, with reference to the
+parallel m-f > n-f dissimilation in Latin (cf. fn. 1, p. 813), is plainly an ad hoc explanation.
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+813
+
+-n- is
+'darkness'
+usually<IE
+ascribed
+*têm3sra.
+to a This
+secondary
+form which
+dissimilation
+does (1),
+not andSkt.
+contain an
+tamisrâh
+original
+(plur.)
+IE
+cluster -ms-, is nevertheless particularly interesting from the point of view of
+the laryngeal theory because of the seemingly aberrant development of PIE
+*eH after -m- in Germanic in *pimistr-, paralleled by the OHG adjective
+êmiz 'constant, busy' <PIE *ómeH- (2). Its derivation from PIE *témeH- is
+indeed hardly questionable, in spite of O. Szemerényi's effort (3) to deny the
+original presence of a laryngeal suffix after the root *tém-, as this PIE laryngeal
+is clearly evidenced by such Skt. forms as timira- 'dark' (4), tämra- 'dark-red' (s)
+etc. The expected Germanic reflex of PIE *têmeH- would be Gmc. *pémawhich seems to be actually attested by OHG demar 'dusk', but Winfred P.
+Lehmann (β) denies this, claiming that in laryngeal bases *eH did not develop
+to a after rl mn, but was maintained after it elsewhere became a ; *H was then
+lost, and finally *e became Gmc. u, occasionally i or a. A full re-examination
+of the rather scanty Gmc. evidence would be required to form a valid opinion
+on the question but, as such a study falls outside the scope of this article (7),
+let us merely observe that Gmc. *pimistr- may as well point to an older form
+(1) *temefrae; cf. M. Niedermann, BB, 25.87 (1896) ; Contributions à la critique et à
+Vexplication des glosses latines, 31 (Neuf cha tel, 1905), whose opinion is adopted by L. Β.
+Hofmann in Walde's Lateinisches etymologisches Wörterbuch3, 26.64 (Heidelberg, 1952),
+but calls for strong reservations by A. Ernout and A. Meillet, Dictionnaire étymologique
+de la langue latine3, 1207 (Paris, 1951), which Szemerényi, however, dismisses (loc. cit.,
+In. 119).
+(2) Cf. Winfred P. Lehmann, Proto-Indo-European Phonology, 54, §6.2 (Austin, 1952).
+(3) Principles of etymological research in the Indo-European languages, 199-200 (II.
+Fachtagung für indogermanische und allgemeine Sprachwissenschaft [Innsbruck, 1962]). Szemerényi
+is undoubtedly right in dismissing the alleged testimony of Lithuanian ' intonation ' :
+Lith. timsras 'dark red' (e.g., August Leskien, Der Ablaut der Wurzelsilben im Litauischen,
+350 [Leipzig, 1884] versus témti 'get dark', which would provide a parallel with Lith.
+vimdyti 'cause to vomit' versus vêmti 'vomit' ( : Skt. vdmiti ' vomits ' ; cf. André Vaillant,
+Grammaire comparée des langues slaves, 1, 238 ff. [Lyon, 1959]), has to be read timsras, as K.
+Büga has shown (cf. E. Fraenkel, Litauisches etymologisches Wörterbuch, 1097 [Heidelberg,
+1962]). Since it alternates with timsrùs ' chestnut (horse) ', it belongs to the 4th Lithuanian
+accent class (= 'doux mobile accentué sur le pénultième' ; cf. J. Kurvlowicz,
+L'ac entuation des langues indo-européennes1, 304 [Cracow, 1952],* 257 [ibid., 1957] and cannot serve as
+evidence for the PIE laryngeal.
+(4) < *temeHró-;ci. F. Β. J. Kuiper, Ada Orientalia, 20.29-30 (1946).
+(5) < *tm-ró- < *tmH-ró- ; cf. J. Manessy-Guitton, Recherches sur les dérivés nominaux
+à bases sigmatiques en sanscrit et en latin, 27 (Dakar, 1963).
+(6) Op. cit., 55, § 63.
+(7) Cf., provisionally, E. Polomé, Mélanges de Linguistique et de Philologie. Fernand
+Mossé in memoriam, 396-8 (Paris, 1959).
+
+814
+
+E. C. POLOMÉ
+
+*pémesr-, in which PIE *eH would be reflected by *e (x). The alternate
+solution suggested by Szemerényi (2), who assumes that the second -e- in Gmc.
+*pemes(t)ra- reflects the IE full grade vowel *-e- like in Lat. lenebrae, which
+he derives from *temes-ro- is certainly not preferable : to be sure, Lat. *temus,
+evidenced by the adverb temere 'blindly, at random', reflects PIE *tém-H1-e/oswith full grade of the nominal derivation suffix, just as Skt. tâmah (gen. tamasah)
+'darkness', but in the *-re/o-, *-rä- derivation from this noun, this suffix must
+appear in the zero grade, as evidenced by such parallels as Umbr. tefru-to
+'(place of) burnt offerings' <.*tep-s-ro-, versus Lat. tepor 'lukewarmness ',
+Skt. tapah 'heat', or Lat. cerebrum 'brain' <.*kera-s-ro-m from the PIE theme
+*ker-H2- (cf.Gk. κέρας), as well as crâbrô 'hornet' <.*cräs-rö from PIE *kr-H2-s-,
+from which also, with the -én- nominal derivation suffix, IE *krsên- > Skt.
+éirsón- 'head' (3). This is further evidenced by Avest. tqdra- 'darkness',
+which reflects PIE *têmH1-s-ro-, in which the laryngeal was subsequently lost
+in Iranian, like in (Gathic) Avest. dugadar-versus Skt. duhitar- ( : Gk. θυγάτηρ).
+A similar disappearance of the laryngeal between consonants accounts for
+dialectal IE *tomsus, the prototype of Lith. tamsùs 'dark', which Reinhold
+Trautmann (*) is wrong in considering as a 'litauische Neubildung', since the
+OS masculine accusative singular thimm (Heliand 5672) <Gmc. *pimza- (5)
+provides a quite acceptable parallel to this formation. Both show the heterosyllabic IE cluster *-ms- preserved in the dialectal period in compliance with
+(1) The possibility of IE *3 (< PIE *eH) being sporadically continued by -e- has been
+a subject of contestation among 'laryngealists'. In the matter at issue, one would be
+tempted to consider the second -e- of Lat. tenebrae, parallel with that of Lat. genetrïx (Skt.
+jânitrï 'mother'), as a phonetic reflex of IE *3, but it merely represents a secondary
+development of a former *a (<ΙΕ *a) under the influence of the Latin initial stress. Albert
+Cuny has long since defended the view that Osc. Genetai and Gk. γενέτειρα show such a
+medial -e- from IE *d (cf. Revue de phonétique, 2.122-3 [1912]) and upheld it against Walter
+Couvreur's criticism {De hettitische H , 73-4 [Louvain, 1937]) in Le Muséon, 51.65 (1958).
+Though the Oscan evidence remains most questionable, it would be worth checking to
+what extent the appearance of Gmc. medial -i- corresponds — if ever (cf. OHG birihha :
+Lith. herlas 'birch' < IE *bhéng-'. *bhrëg- [Skt. bhrâjate 'shines, beams', etc.]) — with
+Gk. -ε- as a reflex of IE *9 < PIE *eHv
+(2) Loc. cit.
+(3) Cf. Kuiper, Acta Orientalia, 20, 25-6 (1946) ; J. Manessy, Les substantifs en -as- dans
+la O
+Rk-Samhitä, 19 (Dakar, 1961) ; Recherches sur les dérivés nominaux à bases sigmatiques en
+sanscrit et en latin, 56-7 (Dakar, 1963).
+(4) Die altpreussischen Sprachdenkmäler, 162, § 62 cß (Göttingen, 1910) ; cf. also Lith.
+tamsà 'darkness' (A. Leskien, Die Bildung der Nomina im Litauischen, 596 [Leipzig, 1891] ;
+E. Fraenkel, Litauisches etymologisches Wörterbuch, 1055 [Heidelberg, 1962]).
+(5) Hans Weyhe, PBB, 30.56 (1905) ; F. Holthausen, Altsächsisches Elementarbuch*,
+77, § 226 (Heidelberg, 1921).
+
+NOTES ON THE REFLEXES OF IE / MS /
+
+815
+
+Brandenstein'srule. Besides, OS thimm gives evidence of the same assimilation
+*-mz- > -mm- as in Goth, mammo if).
+Summing up our findings from the material examined above, the
+development of IE *-ms- in Germanic could be tabulated as follows with regard to
+predialectal accentuation :
+(a) *j-ms- > Goth, and Ohd. -ms- (2) ;
+(b) *-ms-i- > Gmc. *-mz- (preserved in final position after the loss of the
+(1) A third example of Gmc. -mm- < IE *-msJ- might be ON pramma 'trudge, trample'
+pTQmmun 'trampling', MLG drammen 'make noise ; press violently' [OS *thrimman 'leap'
+should be left out, as it is only attested in the preterite : thram imu möd (Heliand 5002)],
+if they go back to IE *trems-, as evidenced by OCS tresQ 'joggle'. Goth, pramstei 'locust'
+has also been derived from this IE *trems-, which Per Persson, Studien zur ^re von der
+Wurzelerweiterung und Wurzelvariation, 85, 153 (Uppsala, 1891), presumed to result from
+a blend of *trem- ( : Lat. trema, Gk. τρέμω, Toch. Aträm- etc.) and *tres- ( : Skt. trasati,
+Gk. τρέω, ä-τρεστος, etc.) — an opinion which S. Feist, Vergleichendes Wörterbuch der
+gotischen Sprache, 501 (Leyden, 1939), erroneously ascribes to F. Holthausen, PBB,
+1 1.554 (1886). If the semantic development of the Germanic words can be satisfactorily
+accounted for (cf., however, J. De Vries, Altnordisches etymologisches Wörterbuch, 6 1 9 [Leyden
+1961]), it is nevertheless, more likely to derive them from IE *trem-, since Goth, pramstei
+presumably contains the -st- suffix described by Hans Krahe, PBB, 71.245-6 (1949),
+whereas the ON and MLG verbs show an 'expressive gemination' (A. Martinet, La
+gemination consonantique d'origine expressive dans les langues germaniques, 173 [Copenhagen,
+1937]).
+(2) There is no clear evidence available in other dialects. The OHG evidence consists
+of (1) lémsen 'bar, shot' (cf. supra, p. 809), denominative to *lamsa-, with original
+accentuation on the stem-syllable (cf. G. G. Barber, Die vorgeschichtliche Betonung der germanischen
+Substantiva und Adjektive, 66, 78 [Heidelberg, 1932]) ; (2) ams{a)la 'blackbird' (cf.
+appendix II, p. 825), with its alternate forms amusla and amphsla, surviving in the
+modern dialects (cf. H. Suolahti, Die deutschen Vogelnamen, 54-5 [Strassburg, 1919]),
+reflecting a Gmc. diminutive *amslö, derived from PGmc. *âms-, with accent on the initial
+(cf. Barber, op. cit., 42, 49). The byform amusla need not be derived from an original
+WGmc. *amusl5n, as suggested in Kluge's Etymologisches Wörterbuch der deutschen Sprache11,
+20 (Berlin, 1957) : as the sequence -tnsl- became phonotactically inadmissible in the OHG
+dialects, it was broken up by various phonetic developments : most common is the
+appearance of an epenthetic vowel between -s- and -/-, hence : amsala, also amsila, amsela ;
+the epenthetic vowel could also appear between -m- and -s-, hence : amusla, also amasla.
+A different phonetic treatment of heterosyllabic -ms- led to the development of a homorganic oral obstruent at the syllable boundary after the bilabial nasal, hence : amphsla,
+also amfsla — with epenthetic vowel, : amphsala, ampsila, amphsela, amfsela. Regressive
+assimilation of -m- to -n- before -s- occurred occasionally, hence : ansla, with epenthetic
+vowel ansela. Furthermore, Swiss G Amslel points to the development of an epenthetic
+-t- between -s- and -/- in *amsla.
+
+816
+
+E. C. POLOMÉ
+'thematic' vowel in Goth. mimz (l)) > -mm- in intervocalic
+position.
+
+The problem, now, is to find out whether these results agree with the other
+historical data about the origin of -mm- in Germanic and whether additional
+examples of -mm- from *-mz- can be found.
+As far as the other sources of -mm- are concerned, the following evidence is
+usually adduced :
+(a) Gmc. *-mm- < IE *-sm- occurs in the dative singular of pronominal
+stems and in the 1st person singular indicative present of the verb 'to be' :
+Goth, pamma reflects an IE instrumental *to-sm-ë, parallel to the dative found
+in Skt. tasmai, whereas im 'I am' (with -m from -mm in final position) reflects
+IE *es-mi (> Skt. asmi, Lith. [dial.] esml, etc.).
+The development of *-sm- to *-mm- implies an intermediate stage *-zmwhich may be originally depending on accentuation (cf. Skt. [dat.] asmâi:
+tasmai) ; in the case of Goth, im, *esmi probably became *izmi in unstressed
+position. Outside these inflectional forms, *-sm-, however, appears to be
+maintained in Germanic, e.g., in
+(1) OS brösmo, OHG bros{a)ma 'crumb' : OE brosnian 'crumble, decay',
+brysan 'crush, break in pieces' : Lat. frustum 'piece' ;
+(2) OHG deismo, OE phsma, MLG dêsem, MDu. dêsem 'leaven' : CS
+tësto 'dough', Olr. täis. massam (farinaceam) ;
+(3) OE prosm 'smoke, vapor', prysman, OFri. thresma 'choke, stifle' ;
+(4) Goth, klismo. κύμβαλον (1st Cor., 13.1) — assumed to be of
+onomatopoeic origin (2).
+The dialectal forms often show the recent development of an epenthetic
+vowel between -s- and -m-, e.g.,
+(5) OHG buosam, buosum, OS *bôsom (3), MDu. boesem, bösem, OE bös{u)m,
+OFri. bösm < SGmc. *bôsma (4) ;
+(6)
+
+OHG
+'ablaut'dr to
+âsamo
+(3) OE
+'scent'
+prosm
+: MHG
+'smoke,
+dräsvapor'
+'scent,
+; smell', presumably with
+
+(1) Actually, the preservation of the voiced fricative in final position in Gothic is
+ascribable to 'sandhi' : in the only occurrence of the word (1st Cor. 8, 12 : ni matja mimz
+aiw 'I will never eat meat'), it is, indeed, followed by a word with initial vowel (A. G.
+van Hamel, Gotisch Handboek, 84, § 70, rem. 2 [Haarlem, 1931] ; W. Krause, Handbuch
+des Gotischen, 124, § 107, rem. 1 [Munich, 1953]).
+(2) S. Feist, Vergleichendes Wörterbuch der gotischen Sprache3, 313 (Leyden, 1939).
+(3) Occurring only in the dative singular bosma (var. buosme) in Heliand (cf. Ε. Η.
+Sehrt, Vollständiges Wörterbuch zum Heliand und zur altsächsischen Genesis, 59-60 [Gottingen,
+1925]).
+(4) About its disputed etymology, cf. J. De Vries, Nederlands etymologüch woordenboek,
+73 (Leyden, 1963).
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+817
+
+(7)
+
+MLG, MDu. wäsem 'vapor' : OHG wasalun. pluviis ; with 'ablaut',
+OE was 'moisture, juice', MLG was 'gravy' (1).
+In some cases, -sm- however represents an older triconsonantal cluster
+*-tsm-, nl. in
+(8) OHG bes{a)mo, OS besmo, OE, OFri. besma 'broom' < *bitsman-,
+to IE *bheydh- 'bind, plait', from which Lat. fiscus 'basket' may also
+be derived ;
+(9) OHG rosamo 'rust' < *rutsman-, from the zero grade of IE *rewdh'red', to which the -st- derivation OHG, OS rost, OE rust 'rust' also
+belongs ; cf. the ON names of the walrus : rosmhvalr : rostungr (2).
+(b) -mm- has also been ascribed to a Germanic development of
+(i) IE *-bm-, e.g., in OHG hruom, OS hrôm, MDu. roem 'fame' : Goth.
+hröpjan, OHG (h)ruofan 'call', etc. (3), but the single intervocalic
+-mexultant'
+in themakes
+derived
+it highly
+adjective
+improbable
+OHG that
+hruomag,
+the OE
+final -m
+hmmig
+of the'boasting,
+attested
+forms reflects an original -mm-. Formally, Gmc. *hram- rather reflects
+a PIE enlarged theme II *kr-eHz-m-, parallel to PIE *kr-eH2-t- >
+Gmc. *hrôp- in ON hröQr 'praise', OE hrôp(or) 'solace, comfort',
+Goth, hröpeigs 'glorious, victorious', etc., and PIE *kr-eH2-b- > Gmc.
+*hrôp- in Goth, hröps 'scream', ON hröp 'scurrility', OHG hruof
+'clamor', OE hröp Outcry', and the related verb : Goth, hröpjan, ON
+hrôpa, OHG (h)ruofan, OE hröpan.
+Similarly, the other examples adduced as evidence to assume the phonetic
+development of IE *-bm- to Gmc. *-mm- actually represent parallel IE
+formations with -m- and -b-, e.g., ON, OE slim 'slime' : OHG slifan, OE slipan
+'slip, glide' < IE *(s)ley-m- : \s)ley-b- : *{s)ley-g- (>ON slikr 'sleek, smooth',
+OHG slihhan 'slink' : Olr. sligim 'I grease') ; ON, OE hrim 'rime' : OHG
+hriffo, OS hripo 'hoar-frost' <. IE krey-m- : *krey-b- : *krey-n- (> ON hrina
+'cleave, stick', OHG, OS, OE hrinan 'touch': Lith. krénà 'skin on boiled
+milk') (*).
+(1) Outside Gmc, Lett, vasa 'dampness of the soil' can be compared ; cf. esp. OHG
+waso 'sod' (K. Mühlenbach and J. Endzelin, ^tisch-deutsches Wörterbuch, 4.484 [Riga,
+1929-32]).
+(2) a. H. Krahe, PBB, 71.241 (1949) ; F. Kluge-A. Goetze, Etymologisches
+Wörterbuch der deutschen Sprache", 609 (Berlin, 1957) ; J. De Vries, Altnordisches etymologisches
+Wörterbuch, 451-2 (Leyden, 1960). Less probable is F. Kluge's connection with OS roton
+'rust' (Nominale Stammbildungslehre der altgermanischen Dialekte3, 81, § 155 [Halle, 1926] ;
+cf. also Etymologisches Wörterbuch der deutschen Sprache11, 70 [1957]), which belongs together
+with OHG rozen, OS rotian, ON rotna 'rot, putrify'.
+(3) E. Schröder, ZfdA, 42.66 (1897) ; cf. also H. Hirt, Handbuch des Urgermanischen,
+1.122 (Heidelberg, 1931) ; H. Krahe, Germanische Sprachwissenschaft*, 1.113 (Berlin, 1963).
+(4) J. Pokorny, Indogermanisches etymologisches Wörterbuch, 618 (Bern, 1953) ; cf.,
+however, E. Fraenkel, Litauisches etymologisches Wörterbuch, 293, 297 (Heidelberg, 1956).
+
+818
+
+E. C. POLOMÉ
+
+In cases like G stramm : straff 'stiff', it is not advisable to extrapolate the
+alternation -m- : -ƒ- into Indo-European, since the words occur only relatively
+late and may well be rather recent formations (x).
+(ii) IE *-mn-, e.g., in Goth, faurdammjan. φράσσειν, OHG {far)têmman,
+OE fordemman 'dam up', denominative to Gmc. *damma- (ON damm
+'dam', OFri. damm, domm, etc.), from IE *dhmno- ( : Gk. θάμνος
+'bush, shrub), according to Theodor von Grienberger (2), but this
+etymology is not only disputable (3), but also improbable on account
+of the implied Common Germanic assimilation -mn- > ~mm-. Such a
+progressive assimilation is indeed only attested at a later dialectal stage
+(e.g., OHG stimma : stimna versus OS stemna 'voice' ; OHG némmen :
+nêmnen versus Goth, namnjan 'name' ; etc.). At an older date, -mnbecame *-bn- in Germanic though leveling inside paradigms has often
+obscured the original distribution of the forms, e.g., by expanding the
+use of the spirant throughout the paradigm, like in OS heban, OE heofon
+'heaven', as compared with the ON nominative himenn (corresponding
+to Goth, himins) versus the oblique case-forms : dat. sing, hifne (<
+*hit>nê), nom. plur. hifna, dat.plur. hifnum. Elsewhere, the alternation
+(1) Cf. J. De Vries, Nederlands etymologisch woordenboek, 707 (Leyden, 1965). G stramm
+occurs for the first time in 1810, but is mentioned as dialectal in 1804 by Adelung ; on
+account of Swiss G stramm 'stiff', it is probably not borrowed from LG (cf. MLG stram,
+Du stram [since the end of the xvith c] 'stiff, taut') ; possible cognates are Icel. slremba
+Obtrude', Norw. stremba 'stretch' (F. Kluge-A. Goetze, Etymologisches Wörterbuch der
+deutschen Sprache™, 755 [Berlin, 1957]). G straff occurs already in 1691 and is presumably
+LG (cf. also late MDu. straf' tense, strong') ; if Icel. stjarfur 'stiff' is cognate, further
+connection with ON s tjarfi 'tetanus' and OHG sterban,OS sterban, OE steorfan 'die' (< *'
+become stiff') is probable (cf. J. De Vries, Altnordisches etymologisches Wörterbuch, 549 [Leyden,
+I960]). G stramm probably shows an 'expressive gemination' of -m- like that of -k- in G
+strack (< MHG strac 'stiff, taut' ; cf. MLG strak 'stiff, tight, firm', MDu. strac 'stern,
+surly') : OE strsec 'strict, rigid, violent :' Russ. strogij 'stern, hard'. The assumption of
+a prototype with -mn-, as suggested by P. Persson, Beiträge zur indogermanischen
+Wortforschung, 430 (Uppsala, 1912), can indeed hardly be corroborated by referring to Gk. στερεμνιος 'hard, fast', which is a recent formation (first attested in Empedocles) on the
+theme of στερεός 'firm, solid'. A comparison with Lith. strampas 'cudgel' (De Vries,
+Nederlands etymologisch woordenboek, 707 [Leyden, 1965] ; cf. however, Fraenkel, op.
+cit., 919 [1961]) would not account for -mm- either, since there is no parallel evidence
+implying a progressive assimilation in the Gmc. cluster -mf- from IE *mp-,
+(2) Untersuchungen zur gotischen Wortkunde, 66 (Vienne, 1900) ; cf. also E. Kieckers,
+Handbuch der vergleichenden gotischen Grammatik, 78 (Munich, 1928).
+(3) Cf. S. Feist, Vergleichendes Wörterbuch der gotischen Sprache3, 146 (Leyden, 1939) ;
+Kluge-Goetze, op. cit., 120 ; De Vries, Altnordisches etymologisches Wörterbuch, 73 (Leyden,
+1957) ; Nederlands etymologisch woordenboek, 104 (Leyden, 1963) ; etc.
+
+NOTES ON THE REFLEXES OF IE / MS /
+
+819
+
+between *-m- and *-S- was leveled in favor of -m- (*) or 'doublets'
+developed, e.g.,OE stefn: slemn Voice', as compared with Goth, stibna
+versus OS stemna, or OE stefn: stemn 'prow', as compared with ON
+stafη versus OS stamn (2). In the case of the Gothic suffix -ubnir·"
+-ufni, the distribution of the allomorphs depends on the final
+consonant of the stem to which it is added : -b- [Ö] appears after a voiceless
+stem-final obstruent, e.g.,fastubni 'fast', and -ƒ- after a voiced stemfinal obstruent, e.g., waldufni 'power' (3) ; the suffix reflects Gmc.
+-mnja < IE *-mn-yo-: -mn-yä in Lat. calumnia 'slander'.
+In one case, Gmc. -mm- seems to reflect IE *-nm-, nl. in OHG hamma
+'thigh, bend of knee', OE hamm 'ham', MLG, MDu. hamme 'thigh, ham' :
+Gk. κνήμη 'shank', but forms with intervocalic -m- also occur, e.g., OHG
+hama, MLG harne, MDu. käme (4).
+Actually, most of the occurrences of -mm- in Germanic are ascribable to
+'expressive gemination', like in ON grimmr 'grim, stern', but in the limited
+number of cases where it results from an assimilation process in an original
+Gmc. cluster (5), -mm- from *-mz-L clearly appears as the counterpart of the
+(1) Cf., e.g., the OS evidence listed by F. Holthausen, Altsächsisches Elementarbuch*,
+65, § 184 (Heidelberg, 1921).
+(2) Unless ON stafn and the other forms with -5- belong to thesame Gmc. stem *stab
+as ON stafr 'staff, stick, post' ( : Lett, stabs 'pillar, prop' ; Skt. stabhnóti 'supports, sustains'
+etc.), as has been suggested by A. Torp (cf. De Vries, Altnordisches etymologisches
+Wörterbuch, 540 [I960]).
+(3) An alternation usually described as the Gothic dissimilation of spirants or 'Thurneysen's Law' (cf. W. Streitberg, Gotisches Elementarbuch 5/β, 95, § 117 [Heidelberg,
+1920] : E. KiECKERS, Handbuch der vergleichenden gotischen Grammatik, 79 [Munich, 1928],
+W. Krause, Handbuch des Gotischen, 124 [Munich, 1953]). Note the aberrant
+development to -nn- in OS fastunnia 'fast'.
+(4) Cf. A. Martinet, La gemination consonantique d'origine expressive dans les langues
+germaniques,"!Ό (Copenhagen, 1937). On the basis of an 'expected' original meaning 'curved
+surface', De Vries, Nederlands etymologisch woordenboek, 233 (Leyden, 1963) suggests
+a connexion with Gk. σκαμβός 'crooked, bent', Olr. camb 'crooked', but fails to account
+for the loss or assimilation of Gmc. *-ƒ>- < IE *-b-.
+(5) In this respect, quite a few etyma, not discussed in detail here, have to be carefully
+reexamined : thus, Goth. Stamms 'mute' is hardly a participial formation *sUmn6s to PIE
+*st-eH2- 'stand', as Feist, op. cit., 449, would still have it in compliance with von Grienberger's assumption that he meaning 'faltering (in speech)' goes ultimately back to 'what
+is halted' (op. cit., 198 : 'was stehen gemacht wird'). Though such a connection is semantically plausible (cf. De Vries, Nederlands etymologisch woordenboek, 691 [Leyden, 1965],
+the co-occurrence of forms with -m- and -mm-, e.g. ON stamr : stammr (cf. also OHG stamal,
+OE stamor 'stammering'), as well as the vowel alternation attested by OHG, OS, OFri.
+stum, MDu. stom, point to an original Gmc. *stama-, becoming *stamma- through
+'expressive gemination' (Martinet, op. cit., 175).
+
+820
+
+E. C. POLOMÉ
+
+regressive assimilation *-zm-~>-mm-, whereas J-ms- finds a parallel in the
+preservation of -sm- in a series of nominal derivations in which -s- has
+apparently not undergone the action of Verner's Law (*).
+Is there any additional evidence for -mm- from *mz-L among the cases were
+-mm- can hardly be accounted for through 'expressive gemination' ? At
+most one case could be adduced, though it remains rather doubtful, namely
+Goth, qrammipa (ace. sing. ; L 8.6). ΐκμάς 'moisture', whose only cognate
+in Gmc. appears to be the ON adjective krammr 'half thawed'. Theodor von
+Grienberger (2) has connected the words with Lith. grimstù, grimzdaû, grimsti
+'sink (into water or mud)', which is cognate with OCS po-grçznç, -grçz-nçti
+'sink (into water) ', CS grçza 'mud,dirt', SCr. grezam, grèzati 'sink in the snow'.
+If S. Agrell is right in explaining Slavic *grçz- as a reflex of *grenzd- < *gremsplus a dental suffix (3), it might be suggested to consider -mm- in Goth, grammipa as reflecting Gm. *-mz-£- (4), but pending a conclusive determination
+of the origin of -z- in Slavic *grçz- (5), this explanation of the geminate in the
+Gothic and Old Norse words must remain disputable (e). It may also be sur(1) In all the examples listed on pp. 816-7, as well as in additional cases, like LG wrasem
+'damp vapor', initial accentuation is postulated by C. G. Barber, Die vorgeschichtliche
+Betonung der germanischen Substantiva und Adjektiva, 79, 160-1 (Heidelberg, 1932).
+(2) Untersuchungen zur gotischen Wortkunde, 174 (Vienna, 1900) ; cf. also Feist, op. cit.,
+391 (1939) ; De Vries, Altnordisches etymologisches Wörterbuch, 328 (Leyden, 1959).
+(3) Zwei Beiträge zur slavischen Lautgeschichte, 72 (Lund, 1918).
+(4) The voiceless spirant -p- of the suffix points to pre-Gmc. accentuation on the medial
+vowel (cf. Barber, op. cit., 63-64).
+(5) Though it is likely that the Balto-Slavic words are derived from the PIE 'theme'
+II *gr-em- ( : Lat. gramiae [plur.] 'rheum', like OCS grbmildb ; cf. E. Berneker, Slavisches
+etymologisches Wörterbuch1, 1.350, 360 [Heidelberg, 1924]), it remains difficult to specify
+which enlargment was added to this 'theme' : a palatal *-£(h)· has been assumed on the
+basis of Alb. kredh 'plunge, immerse', but this word should rather be connected with OPr.
+knit 'fall' according to N. Jokl in A. Walde and J. B. Hofmann, Lateinisches etymologisches
+Wörterbuch9, 1.617 (Heidelberg, 1938 ; cf. also M. Vasmer, Russisches etymologisches
+Wörterbuch, 1.316 [Heidelberg, 1957]). More plausible is the assumption of a BS1. basic form
+*gremd- (J. Pokorny, Indogermanisches etymologisches Wörterbuch, 407 [Bern, 1951] ; cf. also
+the discussion in J. Endzelin, Latvielu valodas gramatika, 754, in. 400 [Riga, 1951]), but if
+its meaning is essentially 'sink deeply in', like that of cognate Lith. garméti (cf. E. FraenKEL, Litauisches etymologisches Wörterbuch, 169 [Heidelberg, 1956]), the connection with
+OE crundel, E dial, crundle ' ravine ' proposed by W. Krogmann, Die Heimatfrage des Heliand
+im Lichte des Wortschatzes, 119 (Wismar, 1937), would deserve further consideration.
+(6) Other — semantically less satisfactory — etymological connections are proposed
+for ON krammr by A. Jóhannesson, Isländhches etymologisches Wörterbuch, 345 (Bern, 1952).
+ON gruggóttr 'muddy' hardly provides a parallel to assume 'expressive gemination' (cf.
+Martinet, op. cit., 176), since it owes its -gg- to the 'Verschärfung' (cf. De Vries, Alt-
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+821
+
+mised that the Gmc. treatment of final *-mz < IE *~mes, as reflected by Goth.
+bairam : Gk. Dor. φέρομες 'we bear', is responsible for the innovation reflected
+by the OHG 1st person plural ending -mes : as the functionally important
+distinction between singular and plural would have been blurred in the
+paradigm of the verb classes showing the athematic ending -m from IE *~mi in
+the 1st person singular, the corresponding plural form was differentiated by
+analogical lengthening of the vowel of the primary ending *-mes on the pattern
+of the secondary ending *-më (1) to prevent its loss entailing the subsequent
+assimilation process *-mz > *-mm, with reduction of the geminate to -m in
+final position.
+Edgar G. Polomé.
+Appendix I
+Goth, namô 'name', OHGsâmo 'seed', OS selmo 'couch', etc. have been
+considered as Gmc. derivatives with *-mön- in connection with J. Schmidt's
+assumption of an original collective meaning of the lengthened o- grade of the IE
+*-men- suffix (Die Pluralbildungen der indogermanischen Neutra, 82 ff. [Weimar,
+1889]). Their ending was accounted for by positing IE *-mön > -mö, as a
+result of senten cephonetics, but, as H. Hirt accurately points out : 'Die
+Ansicht J. Schmidts ... wird in keiner Weise durch irgendeine Tatsache gestützt.
+So bleibt m. E. nichts weiter übrig als anzunehmen, dass die Dehnstufe im
+Nom. berechtigt war' (Indogermanische Grammatik, 3.203 [Heidelberg, 1927] ;
+cf. also Handbuch des Urgermanischen, 2, 53 [Heidelberg, 1932]). But even the
+existence of such a nominative may be questioned in Germanic : (a) with
+the exception of Goth, namö, all the alleged attestations are West-Germanic
+and the adduced original neuters have become masculine n-stems ; their IE
+equivalents mostly show the reduced grade *-mn of the suffix : OHG sämo :
+Lat. sêmen, OPr. semen (OCS sêmç has ξ < IE *-ën ; cf. A. Vaillant, Grammaire
+comparée des langues slaves, 1.214 [Lyon, 1950]) ; OS selmo : Gk. σέλμα 'timberwork' (the relation with Lith. klmuô 'pediment', advocated by W.Persson,
+Beiträge zur indogermanischen Wortforschung, 1.383, 385 [Uppsala, 1912],
+remains doubtful in view of the alleged initial alternation *s- : *ks- ; cf. Ε.
+Fraenkel, Litauisches etymologisches Wörterbuch, 971 [Heidelberg, 1962]).
+IE *-mn became *-mun, which was reduced to -m by the weakening of
+unstressed final syllables in Common Germanic (e.g., OE ièpm < IE *êl-mn ;
+cf. E. Polomé, Revue belge de philologie et d'histoire, 30.456, fn. 2 [1952]). This
+phonetic development caused the shift of numerous original neuter consonant
+nordisches etymologisches Wörterbuch, 191 [Leydcn, 1958]). However, Lat. grammö(n)sus
+'rheumy' may point to a noun * gramma with the same gemination as in Goth, qrammipa
+(A. Ernout and A. Meillet, Dictionnaire étymologique de la fongue htine3, 499 [Paris, 1951]).
+(1) Ci. H. Krähe, Die althochdeutsche Personalendung -mes, 56-57 (IF, 63 [1957]).
+
+822
+
+E. C. POLOMÉ
+
+sterns to the masculine o-declension ; in some case, the original neuters merely
+became masculines, but remained in the η-declension (e.g. Goth, hliuma :
+Av. sraoman- 'hearing' ; cf., with IE *mnto-, OHG hliumunt 'reputation' :
+Skt. érómatam 'fame'). This may as well have happened with OHG sämo,
+OS selmo and the like, whose nominative singular would then be merely
+analogical, as in the case of OS *liomo 'radiance' (occurring only in the nom.
+plur. liomon [lioman], Heliand 3126, 3698), corresponding to ON Ijömi, whose
+final -i is usually assumed to reflect IE *-ên. R. G. Boer, Oergermaansch
+Handboek2, 70-2, 196 (Haarlem, 1924), even developed an argument with a view
+to deriving the Common Germanic nominative singular ending of the
+masculine -n- stems from IE *-ên/-ê, which would make OE sealma 'couch' a regular
+phonetic reflex of IE *selmên ( : OS1. *selmç 'ridge-piece', if at all cognate ; cf.
+however, R. Trautmann, Baltisch-Slavisches War ter buch, 302 [Göttingen, 1923] ;
+M. Vasmer, Russisches etymologisches Wörterbuch, 2.659 [Heidelberg, 1955]).
+Not only is this interpretation of OE -a improbable (cf. R. Girvan,
+Angelsaksisch Handboek, 124 [Haarlem, 1931], but even the assumption of an inherited
+nominative form in -en to account for the ON ending -i seems superfluous (cf.,
+O. Szemerényi, Studies in the Indo-European System of Numerals, 157-164
+[Heidelberg, I960]). The recent argumentation in Sravnitel'naja grammatika germanskix
+jazykov, 3. 196-202 (Moscow 1963) in favor of a geographic distribution of 'allomorphs' of the suffix : Gothic and Scandinavian *-ën, Ingwaeonic *-δη and
+'OHG area' -δ, based mainly on the alleged parallelism of *-er of the kinship
+terms and on comparison with non-Germanic material, indeed, fails to
+convince, since Goth, -a can reflect *-δη as well as *-ên and Finn, mako 'stomach'
+shows that ON originally had -δη as well (cf. Ε. Schwarz, Goten, Nordgermanen,
+Angtlsachsen, 79-80 [Bern, 1951]). Nevertheless, there is no conclusive evidence
+to assume that OS * selmo (only occuring in the dat. sing. ^/wzon,Heliand,4007),
+OE sealma and OFri. (bed)selma represent the direct continuation of the
+sandhi-form of IE *sel-mon.
+This is the less probable as in Germanic derivatives with *-men- the treatment
+of final root consonants subject to Verner's Law unvaryingly points to rootaccentuation (mostly concomitant with full-grade vocalism). To be sure,
+with regard to N. Lid's suggestion that the ON nominative singular -f-ending
+of masculine consonant stems is due to the influence of the Germanic -janstems, where IE *-yon > NGmc. *-ia > ON -i (Norsk Tidsskrift for Sprogvidenskap, 16.237-40 [1953] ; cf.however, Sravnitel'naja grammatika germanskix jazykov,
+3.200-1 [Moscow, 1963], ON Ijömi, as well as OE léoma 'radiance' might be
+interpreted as reflecting an original IE neuter Hewk-mon, derived from the
+verbal 'root' *lewk- with the stress on the lengthened o-grade vowel of the
+*-men- suffix (cf. E. Benveniste, Origines de la formation des noms en indo-européen,
+122-3 [Paris, 1935] ; also T. Bolelli, Origine e sviluppo délie formazioni greche
+in men/mon,7-13 [Annali délia Scuola Normale Superiore di Pisa,22 (1953)] : as
+regards its suffix, this *lewk-mon would then bear the same relationship to Lat.
+lümen 'light' and Goth, lauhmuni 'lightning' (with an additional *-yä- suffix)
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+823
+
+as Gk. στήμων 'warp' to Lat. stamen 'warp' and Gk. στήμα 'stamen ; shaft', if
+this parallel is valid at all, since στήμα appears only at a late date and Lat.
+stamen is suspect of borrowing from Dor. σταμών (J. Perrot, Les dérivés latins
+en -men et -men turn, 44 [Paris, 1961]). Anyhow, such an assumption would by
+no means be acceptable for words like Goth, hiuhma [hiuma L 6, 17, 8, 4] 'heap'
+or milhma 'cloud', whose h implies a pre-Germanic root-accentuation, which
+is confirmed by ahma 'spirit' in so far as it corresponds with Gk. όμμα < IE
+*okw-mn (C. C. Barber, Die vorgeschichtliche Betonung der germanischen Substantiva
+und Adjektiva, 155-6 [Heidelberg, 1932]). The same holds true in respect of OE
+pœsma, OHG deismo 'leaven' ; OS brosmo (only occurring in gen. plur. brosmono,
+Heliand, 3021) 'crumb' ; OE hopma 'darkness' and the like. As these facts tend
+to prove that derivation with the*-men- suffix was originally concomitant with
+root-accentuation in Germanic, it stands to reason that this suffix most likely
+appeared in the reduced grade *-mn in the nominative singular and that the
+actually occurring forms have presumably been analogically reshaped.
+The case is somewhat different with OHG sämo (OS sämo in a gloss [ace.
+plur. samun. semina] and the compound mago-samo 'poppyseed') as it
+corresponds to the Latin masculine name of an ancient god of seeds Sêmö (gen. sing.
+Simonis). As Meillet points out, this word is a 'forme de genre« animé» du
+thème qui est au neutre dans sêmen' (A. Ernout and A. Meillet, Dictionnaire
+étymologique de la langue latine3, 1090 [Paris, 1951]). OHG sämo can hardly be
+expected to derive from such a pre-Germanic byf orm, since its meaning plainly
+points to original 'inanimate' gender, like in Lat. sêmen, in spite of ELith.
+semerus (masc. plur.) 'seed' : 'Die germanischen Sprachen stehen auf der
+selben stufe wie das litauische, alle alten neutra auf urspr. -men sind masculina
+geworden'
+(Schmidt, op. cit., 92 [1889]). Accordingly, the Latin word Sêmö
+is no cogent evidence to account for OHG sâmo by positing IE *së-mö ; as for
+the Old Lithuanian form sêmuö 'seed (esp. of flax) ; sowing (time) ' (E. Fraenkel, Litauisches etymologisches Wörterbuch, 774 [Heidelberg, 1959]), it is probably
+an innovation in connection with the dialectal shift of gender of Baltic *'semen
+(OPr. [neutr. sing.] semen ; cf. also the Estonian loanword [from Lithuanian]
+sêmen and, parallel, OGS seme). Therefore, the OHG nominative singular
+form sâmo is presumably due to analogy, because of the preservation of the -n
+of the IE *-men- suffix in the oblique cases.
+(b) Goth, namô apparently reflects IE *namö with the sandhi-form of the
+lengthened o-grade of the neuter *-men- suffix, whose zero-grade has been
+extended from the genitive namnë to the whole plural (ace. namna, dat. namnam :
+cf. E. KiECKERS, Handbuch der vergleichenden gotischen Grammatik, 120 [Munich,
+1928]). But in the same anomalous plural formation occurs with Goth.
+watö in the dative watnam (M 8, 32, L 8, 25), which has obviously been remade
+on the genitive *watnê with the ending of the o-stems (Contrast with gen.
+auhsnê : dat. auhsum < *-n-mL· ; cf. M. H. Jellinek, Geschichte der gotischen
+Sprache, 113, 114 [Berlin, 1926], W. Krause, Handbuch des Gotischen, 156, 161
+[Munich, 1953]). Besides, the nominative singular ending of watö may also
+
+824
+
+E. C. POLOMÉ
+
+reflect IE *-ö, but Schmidt (op. cit., 106 ff. [1889]) has made it clear that this
+-δ of the Gothic neuter «-stems is an innovation. In my opinion, it first appeared
+in watö : as this word became a pure η-stem under the influence of the
+oblique cases (gen. watins, dat. watin ; cf. Hitt. wetenaS, weteni), a nominative
+singular *wsdön may have been substituted to *w)dôr and have become *wddö
+(whence Goth, watö) as a result of sentence phonetics. A similar explanation
+might account for parallel Lith. vanduö (with o-grade of the stem vowel, like
+OGS voda, and dialectal anticipation of the nasal). Anyhow, even if the final
+-δ of Goth, namö goes directly back to IE -Ö, it is not all established that it
+continues the sandhi-form of the lengthened o-grade of the IE *-men- suffix, as
+Hitt. laman, assumed to reflect IE *mmön (with *ri3- from earlier *(H1)neH-s ;
+cf. E. Voloué, Revue belge de philologie et d'histoire, 30.453 fn. [1952]), can hardly
+be considered as a valid parallel. Hitt. -man most probably reflects IE *-rmi,
+and in spite of R. Kent's objection (Language, 13.252 [1937]), E. Benveniste
+(Origines de la formation des noms en indo-européen, 181 [Paris, 1935]) may be
+right in ascribing the -ô- of Lat. nômen, Skt. näman- and possibly Hitt. läman
+(cf. Ε. Η. Sturtevant, A Comparative Grammar of the Hittite Language*, 1, 32,
+43 [New Haven, 1951]) to 'radical lengthening'. In this case, -m- belongs to
+the stem of the implied original 'root-stem' (from the IE root *H1en- with a
+-m- suffix) and -n is a mere enlargment. The gradation between the OFri.
+denominative verb nömia 'name' and Goth, namö would then be ascribable
+to Benveniste's rule :
+'Quand le nom ainsi formé (thème II à allongement radical avec *-r
+ou *-n) reçoit un second élargissement, la voyelle radicale s'abrège'.
+OFri. nomia is a recent derivation from the Common Germanic 'root-noun'
+*nöm, from earlier *nömun < IE *nömn ( : Lat. nomen), while Goth, namö
+may have been remade on the stem of the oblique cases (gen. plur. namnê),
+where the IE 'root '-vowel *δ had to be shortened to *o because of the flectional
+endings (cf. Hitt. [nom. sing.] la-a-ma-an : [gen. sign.] lam-na-ai, whence the
+denominative lam-ni-ya-an-zi 'they name').
+Appendix II
+In his article ' Gonservazione ed innovazione nel trattamento del gruppo
+-ms- nelle lingue indoeuropee' (Annali della Scuola Normale Superiore di Pisa, 26.
+3-20 [1957]), R. Ambrosini has made a thorough analysis of the cognates of
+Goth. ams(a) with a view to finding whether their IE prototype should not be
+set up as *omesos on the basis of Lat. umerus. His conclusion is that the -ein Lat. umerus 'shoulder ' is due to anaptyxis 'awenuta nello sviluppo monoglottico del latino'. In the Hesychius gloss άμέσω 'ώμοπλάται, he however
+considers the medial -e- as inherited by positing a PIE theme alternation (I)
+Hzem-s- : (II) H3m-es- reflected by ams(a), Skt. âmsah, Arm. us (cf. V. Pisani,
+Ricerche Linguistische, 2.64 [1951]), etc., on one side, and άμεσω on the other
+side, considering the latter as an Anatolian, probably Phrygian word. This
+
+NOTES ON THE REFLEXES OF IE /MS/
+
+825
+
+assumption is by far preferable to Fick's suggestion of an Indian origin (cf.
+Skt. [du.] amsau 'both shoulders'), recently restated by H. Frisk, Griechisches
+etymologisches Wörterbuch, 92 (Heidelberg, 1954) ; not more convincing either
+is the assumption that it belongs to the pre-Hellenic stratum of Greek
+vocabulary which Van Windekens termed 'Pelasgian' (cf. V. Georg iev, Inscriptions
+minoennes quasi-bilingues, 48 [Sofia, 1950], A. J. Van Windekens, Le Pélasgique,
+67 [Louvain, 1952]). A nice parallel for the theme alternation (I) Hzem-s- :
+(II) Hzm-es- is indeed provided by the name of the 'blackbird' : OHG amsala
+versus Lat. meruia, reflecting derivations from PIE (I) *H2em-s- : (II) *H2m-es(cf. J. Pokorny, Indogermanisches etymologisches Wörterbuch, 35-6 [Bern, 1948]).
+Toch. Β äntse has also been considered as evidence for IE *omesos by H.
+Pedersen, Tocharisch vom Gesichtspunkt der indoeuropäischen Sprachvergleichung,
+219, 250 (Copenhagen, 1941), as he claims that Common Tocharian *ns
+develops into nts only 'bei sekundärem Zusammentreffen', contrasting Toch.
+Β äntse with Αα< IE *omsos, parallel to Β misa (plur.) 'meat' ( : Got. mimz),
+with loss of the nasal before j. Moreover, K. Schneider, IF, 58.170-1 (1941)
+claimed that in the Proto-Tocharian reflex *amesa of IE *omesos, medial -emust have dropped because of the IE initial stress ; this is supposed to have
+brought about a compensatory lengthening of a- before it had become ein Kuchean, whence *âmsa > *änsa > *ânse > äntse. Though a similar
+lengthening seems to have taken place in Toch. Β ânme 'intention' ( : Gk. άνεμος),
+the occurrence of the same in forms like Toch. Β ante (= A ant) 'forehead'
+( : Hitt. hanza 'in front') makes it evident, that the length of initial ä- is not
+depending on the loss of a medial vowel : as W. Krause, Westtocharische
+Grammatik, 1.10-6 (Heidelberg, 1952; cf. also Krause-Thomas, Tocharisches
+Elementarbuch, 1.42-6 [Heidelberg, I960]), has shown, it reflects the position
+of the accent on the initial syllable in monosyllabic or dissyllabic words.
+Moreover, Pedersen's assumption that the insertion of -/- in -ns- only takes
+place when this cluster is due to a secondary development, is contradicted by
+Toch. A känts- 'admit' ( : Lat. censeo, etc.), as both J. Duchesne-Guillemin,
+BSL, 41.151, 174 (1941) and A. J. Van Windekens, Morphologie comparée du
+tocharien, 55 (Louvain, 1944), pointed out. Besides, a striking parallel to
+the alternation -s : -nts- in A es versus Β äntse appears in A klis- : Β klänts- 'sleep',
+in which it reflects IE *-ms- as well if these forms can be interpreted as a PIE
+s- formation of the type of Skt. raksaii 'protects \Gk.àXé£<o (from the enlarged
+PIE theme II *HJ-ek-s-) to IE *klem- as found in Skt. klama- 'fatigue' and OCS
+klamati 'totter', Slov. klâm 'sleep', etc. Accordingly, Toch. Β ântse cannot be
+used as evidence to posit an IE prototype *omesos.
+It is not advisable either to posit IE *ômsos, though such a vrddhi-form would
+also account for the Tocharian forms (cf. Krause-Thomas, op. cit., 53 [I960]),
+because the frequently assumed derivation of Gk. ώμος from IE *5msos (W.
+Schulze, KZ., 63.28 [1936] ; M. Lejeune, Traité de phonétique grecque, 103,
+fn. 2 ; 124, fn. 2 ; 190, fn. 2 [Paris, 1947] ; J.B.Hofmaxn, Etymologisches Wörterbuch des Griechischen, 430 [Munich, 1950] ; etc.) remains disputable on account
+of iEolian έπομμάδιος 'on the shoulders' (Theocritus 29.29), with regard to
+52
+
+826
+
+e. c.
+
+Gk. ώνή 'buying' : JEol. owâ < *wösnä ( : Skt. vasnah 'price-bud'), it is more
+likely to assume that IE *osn*oms normally became ωνωμ in non-^Eolic dialects,
+as E. Hermann, Silbenbildung im Griechischen und in den anderen indogermanischen
+Sprachen, 48-9 (Göttingen, 1923), already suggested.
+Reverting to Lat. umerus, it may be objected that Bolelli's assumption of an
+anaptyxis between -m- and -s- in this word as well as in the parallel cases
+of numerus 'number' : Olr. nos 'custom' < *nomso~ and cumerum 'basket with
+a lid (for ritual objects)' : Skt. kamsâh 'vessel made of metal', is an ad hoc
+hypothesis, since in historical times, an epenthetic -p- appears in the medial
+and final reflexes of the cluster /ms/, e.g.,sümpsi, hiemps, whereas in compounds
+m + s yields ns, e.g., in (inscr.) quansei (= quasi < *quam sei (cf. M. Leumann,
+Lateinische Laut- und Formenlehre, 163 [Munich, 1963]). Therefore, E. Laroche,
+Histoire de la racine nem- en grec ancien, 261-2 (Paris, 1949), prefers to explain
+numerus as 'une thématisation d'un ancien neutre *nomes disparu et sans doute
+une formation adjective' . A parallel for the o- vocalism of the root has indeed
+already been supplied by E.Benveniste in his analysis of domesticus 'pertaining
+to the house' (Origines de la formation des noms en indo-européen, 67 [Paris, 1935]) as
+a derivative of *domes-ti-s, built on the -w-stem *domes-, whose root-vowel
+has been influenced by domus 'house' (cf. parallel, * modes- in modestus
+'moderate', after modus 'measure'). On this model, Proto-Latin seems to have
+developed a specifically dialectal pattern of neuter -es- stems to roots with final
+-m-, characterized by the o-grade of the root and full -«-grade of the suffix, as
+has been suggested by J. Manessy-Guitton, Recherches sur les dérivés nominaux
+à bases sigmatiques en sanscrit et en latin, 26-7, 152-4 (Dakar, 1963). Such stems
+can indeed be isolated from thematized forms like umerus < *omes-o- : Skt.
+âmsa- and cumera (plur.) < *komes-â : Skt. kamsa. In the second, the original
+root vocalism would be reflected by the Skt. palatal in câmasa- 'vessel (for
+drinking soma) ' < *kem-es-. Thus, for all we know, umerus < *omes-o- could actually
+go back to *Hzem-es-. However, much of the parallel material adduced
+remains disputable :
+(a) Olr. nos does not reflect IE *nomso- (cf. J. Vendryes, L·xique
+kind' deis a
+étymologique
+l'irlandais
+relatively
+ancien,
+recent
+N-22
+derivation
+[Paris, from
+I960]),Skt.
+andnamasSkt. namasâ'bow, obeisance'
+'favorable,;
+(b) the semantic relation between Lat. cumera (kind of basket) and Skt.
+kamsâh 'metal goblet' is rather slim ; the meaning 'brass' might be basic in
+Skt. kamsâ- ( : Av. kayha- 'brazen castle', cf. H. Humbach, Münchener Beiträge
+zur Sprachwissenschaft, 32.77 [1958] ; the connection with OPr. kassoye 'brass'
+[E. Berneker, Altpreussische Sprachdenkmäler, 354 (Göttingen, 19 10) ; J. Wackernagel-A. Debrunner, Altindische Grammatik, 2, 2.924 (Göttingen, 1954)]
+is more disputable, as it implies an aberrant regressive assimilation -ss- <
+Baltic *-ns- [< IE *-ms-']). As for Skt. camasah 'drinking vessel', it rather
+belongs to câmali 'sips' (M. Mayrhofer, Kurzgefassles etymologisches
+Wörterbuch des Altindischen, 1.375, 382-3 [Heidelberg, 1956]).
+Moreover, the implied co-occurrence of a root and a suffix in the full grade
+would exclude an old formation, so that the most plausible solution is
+apparently to consider Proto-Latin *omes-, instead of *oms- (from *H2em-s-)>
+as analogical after the pattern of *nomes-.
+
+

@@ -2235,23 +2235,49 @@ This three-way split is the core of the reconstructional problem. Depending on w
 
 **Kroonen (EDPG p.480, 488; 2013):** Gives the headword as **\*stimnō-** f. but discusses multiple PGmc variants reflecting PIE ablaut. He states that Go. stibna and OHG stimna "point to \*stem-n-" (e-grade), while OE stemn, stefn, OFri. stemme, OS stemna "are usually derived from \*stamnjo- < \*stom-n-" (o-grade with j-umlaut). He interprets the variation as preserving "remnants of the PIE ablaut" across different thematizations. In his introductory discussion (p.xxxvi), Kroonen discusses the \*-mn- → \*-bn- change and notes that the word for 'voice' shows "all three possibilities" (\*-mn-, \*-bn-, \*-mm-). He proposes that the ablauting n-stem nominative \*stemd alternated with a genitive \*stimmaz and a dative \*stemeni, and that thematization into an ō-stem produced the different daughter-language variants.
 
+**Orel (Handbook of Germanic Etymology, p.374; 2003):** Gives the headword as **\*stebnò ~ \*stemnò** sb.f., explicitly listing BOTH consonant variants as coordinate alternatives. He glosses the cognates: "Goth stibna 'voice', OE stefn, stemn id., OFris stifne, stemme id., OS stemna id., OHG stimna, stimma id." He concludes: **"Of unknown origin"** — i.e. he explicitly leaves the deeper etymology open, declining to commit to the Hittite/Greek comparanda that other scholars accept. His bibliography references include Wennerberg (*Sprache* XVIII, 28–29), who follows the connection to \*stom- 'mouth'. Orel's dual headword \*stebnò ~ \*stemnò is the most honest representation of the state of knowledge: neither consonant type can be shown to be primary on purely comparative grounds.
+
+**Fulk (Comparative Grammar of the Early Germanic Languages, §6.11 n.6; 2018):** In a footnote on PGmc consonant assimilations, Fulk states: "the etymologies of OE stefn, stemn 'voice' (Go. stibna), hrafn, hramn 'raven', and efn, emn 'even' (Go. ibns) are rather insecure, though the last is a fairly probable example." This is significant: Fulk regards the etymology of stefn/stemn as **insecure** even as an example of the bn → fn → mn chain. This is more cautious than R/T, who present \*stebnō as established.
+
+**Kluge/Seebold (Etymologisches Wörterbuch, s.v. *Stimme*; 24th ed., 2002):** Reconstruct **g. \*stemnō f. "Stimme"** — i.e. a PGmc form with *-mn-* cluster, explicitly different from R/T's \*stebnō. They state: "Obwohl die lautlichen Entwicklungen im einzelnen nicht klar sind, ist am ehesten von (ig.) \*stemn-ā auszugehen" ("Although the phonological developments are not entirely clear in detail, it is best to start from IE \*stemn-ā"). They connect the word to Greek stóma 'mouth', Avestan staman- 'muzzle', Welsh safn 'mouth'. Bibliography references include Wennerberg, C. (*Sprache* 18, 1972, 24–33) and Jankowsky, K.R. (FS Dick, 1989, 199–221, "anders" = a different view).
+
+**Polomé ("Notes on the Reflexes of IE /ms/ in Germanic", *RBPH* 45.3, 1967, pp.800–826):** Discusses the alternation specifically in the context of PGmc cluster assimilations. He notes (p.819) that "at an older date, -mn- became \*-bn- in Germanic though leveling inside paradigms has often obscured the original distribution of the forms." He treats \*-mn- as primary and \*-bn- as the result of dissimilation — the **opposite** direction from R/T. He gives OE stefn : stemn 'voice' as a case where "the alternation between \*-m- and \*-ṣ̌- was leveled in favor of -m-" or where "doublets developed." This is the clearest statement in the literature that the \*-bn- / \*-mn- direction of change is itself disputed.
+
+**Vine ("Greek στωμύλος 'chatty'", *IEUL* 7, 2019, pp.222–240):** In a study of PIE \*stom-/\*stem- derivatives, Vine discusses "Gmc. \*stemnō- 'voice' (Go. stibna, OHG stimna/stimma)" as a continuation of a PIE root meaning 'mouth'. He reconstructs a PIE hysterokinetic internal derivative \*stomh₁-mén- (with o-grade and \*-men- suffix) alongside a thematic by-form \*stom-o- 'mouth'. His analysis connects the 'voice' word to a broader family including Greek stóma, Hittite istaman- 'ear', and Avestan staman- 'snout'. The contribution is on the PIE side (ablaut grades, suffix types) rather than on the PGmc reconstruction per se, but it supports the view that the PIE source was complex and that different Germanic thematizations may preserve different ablaut grades.
+
 **Bülbring (Altengl. Elementarbuch §§62, 170, 445, 485; 1902):** Does not attempt a PGmc reconstruction but provides the most detailed OE-internal evidence. He demonstrates that stebn → stefn → stemn is the correct chronological sequence within OE, with the fn → mn step restricted to WS and datable to the Alfredian period (§62 Anm. 3, §485). His treatment of the parallel efn → emn is crucial comparative evidence.
 
 **Luick (Hist. Gramm. §§75, 211, 347; 1914–40):** Confirms e before late mn (from fn) is preserved (§75 Anm. 1). In §211, he discusses a separate word "stemn 'Stamm'" (= 'stem, prow'), which he derives "aus \*stofn (vgl. as. stamn und me. stam)" — this is a DIFFERENT word from stemn 'voice' and should not be confused with it. His ME evidence (§347) is decisive: ME stevne continues OE stefn (with -v- < -f-), proving the fn-type is ancestral to ME, not the mn-type.
 
+**Kaluza (Hist. Gramm. der engl. Sprache, 1900–01):** Does not treat the etymology of stefn/stemn in detail, but his treatment of OE consonant clusters and the bn/fn/mn alternation is consistent with the picture in Bülbring and Luick.
+
 **Hogg (vol.1; 1992):** References stefn in the context of Scandinavian loanwords (stefn 'summons' may be influenced by ON; §4.18). Does not engage with the deeper reconstructional question.
 
-**Scholars preferring a \*stebn- type reconstruction:**
+**Summary of scholarly positions:**
+
+**Scholars preferring a \*stebn- type reconstruction (bn primary):**
 - R/T (2014): explicitly \*stebnō
 
-**Scholars allowing or preferring a \*stemn- / \*stimn- type reconstruction:**
+**Scholars preferring or allowing a \*stemn- / \*stimn- type reconstruction (mn primary):**
+- Kluge/Seebold (2002): g. \*stemnō
 - Kroonen (2013): heading \*stimnō-, but acknowledges multiple variants
+- Polomé (1967): treats \*-mn- as older than \*-bn- in this word
+
+**Scholars presenting both variants as coordinate:**
+- Orel (2003): headword \*stebnò ~ \*stemnò (explicitly dual)
+
+**Scholars who regard the etymology as insecure or leave it open:**
+- Fulk (2018): "rather insecure"
+- Orel (2003): "Of unknown origin" (re deeper IE etymology)
+- Kroonen (2013): presents diversity as PIE ablaut remnants
 
 **Scholars deriving OE forms from a different thematization or analogical reshaping:**
 - Kroonen (2013): mentions \*stamnjo- (o-grade jō-stem with j-umlaut) as the "usual" derivation of OE stemn in the older literature
 
-**Scholars who explicitly leave the etymology open:**
-- Kroonen (2013): presents the diversity of forms as reflecting PIE ablaut remnants, without insisting on a single PGmc headword as the source of all daughter forms
+**Not yet consulted:**
+- Wennerberg, C. (*Die Sprache* 18, 1972, 24–33) — cited by both Orel and Kluge/Seebold; follows connection to \*stom- 'mouth'
+- Jankowsky, K.R. (FS Dick, 1989, 199–221) — cited by Kluge/Seebold as "anders" (a dissenting view)
+- Lloyd & Springer, *EWA* s.v. — OHG etymological dictionary (scan not yet OCRed)
 
 ---
 
