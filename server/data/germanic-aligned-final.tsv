@@ -859,7 +859,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2151	r ē c	*raukiz	r iː k ( - - )	riːk	rēc	194	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			reek	*raukiz	198
 706	r au x	*raukiz	r au x ( - - )	raux	Rauch	194	German				reek	*raukiz	198
 560	r ɛ s t	*rastō	r ɛ s t ( - )	rɛst	rest	153	English				rest	*rastō	350
-2152	r æ s t	*rastō	r ɛ s t ( - )	rɛst	ræst	153	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			rest	*rastō	350
+2152	r æ s t e	*rastōz	r æ s t e	ræste	ræste	153	Old_English	Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still present). After PWGmc z-loss with vowel shortening (*-ōz > *-a, R/T §3.1.1 p.58), suffix is front, no A-restoration, AFB gives ræ-. Attested ræste abundantly in BT (tó ræste, on ræste, etc.). Paradigmatic leveling from oblique ræst- to nom.sg. (cf. R/T §6.3.2 on dag paradigm).			rest	*rastōz	350
 559	r a s t	*rastō	r a s t ( - )	rast	Rast	153	German				rest	*rastō	350
 167	r ɛɪ d ə	*rīdăną	r ɛɪ d ə - ( - - )	rɛɪdə	rijden	47	Dutch				ride	*rīdăną	199
 166	r aɪ d	*rīdăną	r aɪ d - - ( - - )	raɪd	ride	47	English				ride	*rīdăną	199
@@ -1199,7 +1199,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 207	ʃ v eː r t	*swerdą	ʃ v eː r t ( - - )	ʃveːrt	Schwert	58	German				sword	*swerdą	273
 330	t ɑ p	*tappô	t ɑ p - ( - )	tɑp	tap	91	Dutch				tap	*tappô	274
 329	t æ p	*tappô	t æ p - ( - )	tæp	tap	91	English				tap	*tappô	274
-2240	t æ p p a	*tappô	t æ p - ( - )	tæp	tæppa	91	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			tap	*tappô	274
+2240	t æ p p a n	*tappăn	t æ p p a n	tæppan	tæppan	91	Old_English	Oblique (n-stem acc.sg.) *tappăn > tæppan: suffix *-an has front *a, no A-restoration, AFB gives æ. Nom.sg. *tappô would trigger A-restoration (*a > *a retained), but attested OE tæppa shows paradigmatic leveling from oblique. Parallel to cow (*kūi > cȳ), fire (*fūri > fȳre).			tap	*tappăn	274
 328	ts a pf ə n	*tappô	ts a pf ə ( n )	t͡sap͡fən	Zapfen	91	German				tap	*tappô	274
 1389	t oː m	*tauxmăz	t oː - m ( - - )	toːm	toom	380	Dutch				team	*tauxmăz	275
 1388	t iː m	*tauxmăz	t iː - m ( - - )	tiːm	team	380	English				team	*tauxmăz	275

@@ -2032,3 +2032,278 @@ This proves that only genuine back vowels (*o, *u, *ō, *ū, *ô) trigger A-rest
 ### Impact
 - No regressions. 106 mismatches (unchanged). Health check clean.
 - All A-restoration-dependent forms verified: bacan, wadan, wascan, hlaþan, grafan, ġeall, hamer all correct.
+
+---
+
+## A-restoration in ō-stems and n-stems: ræst, tæppa, stemn (fronting_missing__afb)
+
+### Overview
+
+The mismatch report shows three `fronting_missing__afb` items where the pipeline produces a form with restored *a where the OE target has *æ (or *e from i-umlaut):
+
+| Proto | Pipeline output | TSV target | Stem class |
+|-------|----------------|------------|------------|
+| *rastō | rast | ræst | ō-stem f. |
+| *tappô | tappa | tæppa | n-stem m. |
+| *stamnăz | stamn | stemn | (see below) |
+
+All three share a common thread: A-restoration fires because the suffix vowel is back, but the standard OE form shows a front root vowel. Two require the "oblique form" approach we have used elsewhere (fire, cow, night); the third requires a proto-form correction.
+
+### Background: A-restoration and paradigmatic leveling
+
+R/T §6.3.1–6.3.2 establish that A-restoration (retraction of *æ → *a) is triggered by a back vowel (*o, *u, *ō) in the following syllable. Our pipeline implements this correctly: `OEARestorationTriggerVowel` = `[EnglishStarBackVowel | {*ô}]`.
+
+The critical insight comes from R/T's paradigm of "dæg" (day, §6.3.2 p.193):
+- Gen.sg. *dagas → dæges: suffix *-as has *a, which after AFB becomes *-æs (front) → no restoration → dæg-
+- Nom.pl. *dagos → dagas: suffix *-os has *o (back) → restoration fires → dag-
+- Dat.pl. *dagum → dagum: suffix *-um has *u (back) → restoration fires → dag-
+
+Principle: **original PGmc *a in suffixes is fronted by AFB and does NOT trigger restoration. Original PGmc *o, *u in suffixes stay back and DO trigger restoration.**
+
+### Case 1: *rastō → rast (expected ræst) — ō-stem feminine
+
+**Pipeline derivation (nom.sg.):**
+*rastō → (NWGmc final *-ō raising) *rastu → (AFB) *ræstu → (A-restoration: *u is back ✓) *rastu → (apocope after heavy syllable) → rast
+
+This is **phonologically correct** for the nom.sg. The *-ō → *-u (back) triggers restoration.
+
+**But the attested OE form is ræst (BT headword "ræst").**
+
+**Explanation — paradigmatic leveling from oblique cases:**
+
+The ō-stem paradigm of *rastō:
+- Nom.sg. *rastō → *rastu → restoration → rast (back *-u triggers)
+- Acc.sg. *rastō̃ → PWGmc *rasta → AFB *ræstæ → ræste (front suffix, no restoration)
+- Gen.sg. *rastōz → PWGmc *rasta → AFB *ræstæ → ræste (front suffix, no restoration)
+- Dat.sg. *rastōi → PWGmc *rastē → AFB (no *a in suffix to front) → ræste (no restoration)
+
+Only the nom.sg. has the back suffix *-u that triggers A-restoration. All oblique cases (acc., gen., dat.) have front suffix vowels → no restoration → ræst- throughout. The majority oblique pattern was generalized to the nom.sg.: ræst.
+
+**Contrast with n-stems like crabba (R/T p.207):** R/T list n-stem forms with restored *a: *krabbō → crabba, *rakkō → racca, *maþō → maþa. In these cases, the nom.sg. (with restoration from back *-u < *-ô) was generalized instead, possibly because the nom.sg. is the most frequently encountered form of n-stems.
+
+**Sources:**
+- BT: headword "ræst" f. 'rest, repose, bed, grave'. Oblique forms: ræste (gen./dat.sg.).
+- Kroonen (p.420): *rasto- f. 'interval' — Go. rasta, ON rost, OE rest, OS rasta, OHG rasta. (Kroonen gives OE "rest", i.e. ræst with late OE æ→e.)
+- R/T §6.3.1–6.3.2: paradigmatic alternation between a and æ due to A-restoration is explicitly discussed for a-stems (dæg/dagas); same logic applies to ō-stems.
+
+**Proposed resolution — oblique form approach:**
+
+Following the precedent of fire (*fūri → fȳre, dat.sg.), cow (*kūi → cȳ, dat.sg.), night (*naxti → niht, dat.sg.), and hammer (*xamaras → hameres, gen.sg.), we can use an oblique form of *rastō where the suffix does NOT trigger A-restoration.
+
+The difficulty is that the standard ō-stem oblique endings (*-ōz gen.sg., *-ōi dat.sg.) contain *-ō, which is a back vowel that would ALSO trigger restoration in our pipeline. The pipeline applies rules at the PGmc input level and does not separately model the pre-AFB shortening of *-ōz → PWGmc *-a.
+
+However, R/T (p.314) show that ō-stem acc.sg./gen.sg. -e derives from PGmc *-ō/*-ōz → PWGmc *-a. The suffix *-a (from *-ō shortening) then undergoes AFB → *-æ (front), which does NOT trigger restoration. Our pipeline's existing a-stem gen.sg. encoding *-as produces the same result: the suffix *a is fronted by AFB and doesn't trigger restoration.
+
+Tested: `rastas → ræstes` ✓ (the gen.sg. form with correct ræ- root).
+
+**Decision needed:** We could (a) use gen.sg. *rastas → OE ræstes, changing both the proto and the OE target (parallel to hammer, swan, brand); or (b) document ræst as a known morphological exception with an ALIGNMENT note that the pipeline gives the regular nom.sg. reflex rast but the standard form ræst reflects paradigmatic leveling.
+
+**Complication with (a):** The encoding *rastas uses the a-stem gen.sg. ending *-as, but *rastō is an ō-stem, whose gen.sg. is *-ōz (→ PWGmc *-a → OE -e). The pipeline cannot process *-ōz because it is not in the pgrmWeakTailVowel list, and even if added, the *-ō component would trigger A-restoration. Using *-as is thus a pragmatic encoding that gives the correct phonological result but misrepresents the morphological class.
+
+### Case 2: *tappô → tappa (expected tæppa) — n-stem masculine
+
+**Pipeline derivation (nom.sg.):**
+*tappô → (NWGmc final *-ô development) *tappō → *tappu → (AFB) *tæppu → (A-restoration: *u is back, *ô is in trigger set ✓) *tappu → (apocope? or *-u → *-a) → tappa
+
+This is **phonologically correct** for the nom.sg. The *-ô ending is back and triggers restoration.
+
+**But the attested OE form is tæppa (BT headword "tæppa, m.").**
+
+**Explanation — paradigmatic leveling from oblique cases:**
+
+The n-stem masculine paradigm of *tappô:
+- Nom.sg. *tappô → *tappu → restoration → tappa (back *-u triggers)
+- Acc.sg. *tappanun → *tappan → AFB *tæppæn → tæppan (suffix *-a fronted → no restoration)
+- Gen.sg. *tappanaz → *tappan → AFB *tæppæn → tæppan (suffix *-a fronted → no restoration)
+- Dat.sg. *tappani → *tappan → AFB *tæppæn → tæppan (suffix *-a fronted → no restoration)
+
+Only the nom.sg. has restoration; all oblique cases have front suffix vowels (PGmc *a in suffix fronted by AFB). The majority oblique pattern (tæpp-) was generalized. This is the opposite direction from the crabba/racca pattern, where the nom.sg. form won out.
+
+**Sources:**
+- BT: headword "tæppa, m." — 'a tap, plug, stopper'. Oblique: tæppan.
+- Kroonen: *tappô is an n-stem. No further etymology.
+- Web search confirms: tæppa is standard WS, tappa not attested as a standard form.
+
+**Proposed resolution — oblique form approach:**
+
+The n-stem acc./gen./dat.sg. ending *-an (from *-anun, *-anaz, *-ani) can be encoded as *-ăn in our pipeline. The suffix *-ă is not a back vowel, so A-restoration does not fire.
+
+Tested: `tappăn → tæppan` ✓
+
+This is clean and parallel to other oblique usages in the project. We change the proto to *tappăn and the OE target to tæppan (the oblique form is well-attested in BT). The derivation is fully lautgesetzlich:
+
+*tappăn → (AFB: root *a → *æ, suffix *ă → ... treated as front) → *tæppæn → (various) → tæppan ✓
+
+### Case 3: *stamnăz → stamn (expected stemn) — proto-form error
+
+This case is fundamentally different from the other two: **the TSV proto-form *stamnăz is wrong.**
+
+**The evidence:**
+
+1. **R/T (p.330):** PGmc *stebnō 'voice' (Goth. stibna) → PWGmc *stebnu (OF stifne ~ stemme, OS stemna, OHG stimna) → OE stebn (CorpGl 2164) → stefn → stemn.
+
+   R/T reconstruct *stebnō (with original e-grade from PIE *stém-n-). This is an ō-stem. The derivation is straightforward: the root vowel *e undergoes no fronting issues (it's already front), the *b undergoes post-nasal assimilation (stebn → stefn), and a further late assimilation gives stefn → stemn.
+
+2. **Kroonen (p.488):** *stimnō- f. 'voice' — Go. stibna, OFri. stemme, OS stemna, OHG stimma/stimna. He says:
+   - Go. stibna and OHG stimna point to *stem-n- (e-grade)
+   - OE stemn, stefn, OFri. stemme, OS stemna are "usually derived from *stamnjo- < *stom-n-" (o-grade → a in PGmc, with j-umlaut a → e)
+   - These represent remnants of PIE ablaut: e-grade *stém-n- vs. o-grade *stom-n-
+
+3. **Neither source reconstructs *stamniz (an i-stem).** The form *stamnăz in our TSV is ad hoc — it was apparently created to make the pipeline produce "stemn" via i-umlaut, but:
+   - It assumes an a-stem declension (*-ăz) when both R/T and Kroonen give ō-stem endings
+   - The *a in the root should give OE "stamn" without umlaut (which is indeed what the pipeline produces)
+   - There is no source for a PGmc i-stem *stamniz
+
+**Three possible legitimate proto-forms:**
+
+| Proto-form | Source | Stem class | Pipeline result | Notes |
+|-----------|--------|-----------|----------------|-------|
+| *stebnō | R/T p.330 | ō-stem f. | **stefn** ✓ | e-grade, most straightforward |
+| *stamnjo- | Kroonen p.488 | jō-stem f. | untestable | Would need *-j- handling, o-grade with j-umlaut |
+| *stimnō | Kroonen p.488 heading | ō-stem f. | untested | i-grade (per Gothic stibna) |
+
+**Pipeline test results:**
+- `stebnō → stefn` — R/T's e-grade form. Pipeline produces stefn, which is an **attested OE variant** (R/T cite CorpGl 2164 stebn, then stefn, then stemn). The derivation stebn → stefn is handled by the pipeline (bn → fn, i.e. b-devoicing before n or similar). The final step stefn → stemn (fn → mn, nasal assimilation) is a late change not currently modeled.
+- `stimnō → ?` — needs testing
+
+**Key question: stefn vs stemn**
+
+Both stefn and stemn are attested OE forms. R/T's derivational chain is stebn → stefn → stemn, with the last step being a late assimilation of labial fricative to nasal before nasal (fn → mn). This assimilation is:
+- R/T: implicit in their derivation
+- Not currently modeled in our pipeline
+- A regular process in OE (cf. also efn → emn 'even')
+
+If we accept stefn as the OE target (it IS attested), then *stebnō → stefn is fully lautgesetzlich and requires no new rules. If we insist on stemn, we would need to add an fn → mn assimilation rule.
+
+**Proposed resolution:** Change proto to *stebnō (per R/T) and change OE target to stefn (attested variant). Add a note that stemn is the more common later form, arising from fn → mn assimilation (a regular but late process we do not currently model).
+
+### Summary of proposed actions
+
+1. **ræst** (*rastō): Either (a) use oblique form *rastas → ræstes (changing both proto and target), or (b) document as paradigmatic leveling exception with ALIGNMENT note. Decision pending — both options have trade-offs.
+
+2. **tæppa** (*tappô): Use n-stem oblique *tappăn → tæppan (changing both proto and target). Clean parallel to existing oblique approaches. Fully lautgesetzlich.
+
+3. **stemn** (*stamnăz): Change proto to *stebnō (per R/T p.330), change target to stefn (attested OE variant). Document fn→mn assimilation as unmodeled late change. Removes ad hoc proto-form.
+
+### Additional pipeline tests for stemn
+
+| Proto-form | Pipeline output | Source | Notes |
+|-----------|----------------|--------|-------|
+| *stebnō | stefn ✓ | R/T p.330 | e-grade, *-bn-. Attested OE variant. |
+| *stimnō | stimn | Kroonen heading | i-grade, *-mn-. Not standard OE. |
+| *stemnō | stemn | (see below) | e-grade, *-mn-. Gives target exactly. |
+
+The form *stemnō (e-grade with *-mn- cluster) gives "stemn" directly. This avoids needing an fn→mn assimilation rule. However:
+
+- R/T specifically reconstruct *stebnō with *-bn- (not *-mn-), reflecting the consonantism of Gothic stibna. Their derivation stebn → stefn → stemn is explicit.
+- Kroonen's heading *stimnō- has *-mn- (reflecting OHG stimna), but with i-grade.
+- An e-grade form *stemnō (combining R/T's e-grade with Kroonen's *-mn- consonantism) would be a hybrid that neither source explicitly gives.
+
+The PIE source is *stém-(m)n. The PGmc cluster could reflect either *-mn- (direct continuation) or *-bn- (dissimilation mn → bn, as R/T assume). Both are defensible positions:
+- *-bn-: explains the variation stebn ~ stefn ~ stemn as a natural chain (bn → fn → mn)
+- *-mn-: explains stemn directly, but then stefn and stebn would need to be understood as dissimilations FROM *-mn-
+
+**R/T's *stebnō → stefn is the safest choice** (from our primary source, produces an attested OE form). If the fn → mn rule is added later, it would additionally produce stemn.
+
+**Alternative: *stemnō → stemn** would match the TSV target exactly but represents a hybrid reconstruction. The *-mn- cluster IS supported by Kroonen's analysis of the PIE source, so it is not ad hoc in the way that the current *stamnăz is.
+
+### Note on ræst oblique form problem
+
+After investigating the pipeline's suffix acceptance system (`pgrmWeakTailVowel`), the following constraints apply:
+
+- The ō-stem gen.sg. *-ōz is NOT in the accepted suffix list. Even if added, the *-ō component would trigger A-restoration (it's a back vowel).
+- The a-stem gen.sg. encoding *-as IS accepted and gives the correct phonological result: `rastas → ræstes`.
+- Using *-as for an ō-stem is morphologically imprecise, but the phonological outcome is identical to what the historical gen.sg. *-ōz → PWGmc *-a → AFB *-æ → OE -e would produce.
+
+**UPDATE: ō-stem gen.sg. *-ōz now properly modeled in pipeline.**
+
+The limitation described above has been resolved. We added:
+1. `ō:{*ō} z:{*z}` to pgrmWeakTailVowel (the suffix list), accepting *-ōz as a valid suffix.
+2. A new rule `PGmcFinalOZShortening` in PGmcFinalZLoss that maps `{*ō}{*z} → {*a}` at word boundary, applied BEFORE general z-deletion via sequential composition (.o.).
+
+**Result:** `rastōz → ræste` ✓ (PGmc gen.sg. *rastōz → OE gen.sg. ræste, well-attested in BT).
+The ō-stem nom.sg. path is unaffected: `rastō → rast` (NWGmcFinalLongORaising still applies when *-ō is truly word-final).
+
+TSV row 2152 (ræst) now uses genuine PGmc gen.sg. *rastōz, target ræste. This follows the same oblique-form approach as cow (*kūi → cȳ) and fire (*fūri → fȳre): the TSV records an oblique paradigm cell that can be derived lautgesetzlich, explaining the attested OE root vowel through regular sound change rather than analogical leveling.
+
+### Historical phonology of final *-z loss and its interaction with rhotacism
+
+#### The key chronological finding: z-loss preceded rhotacism
+
+An earlier draft of these notes incorrectly posited rhotacism (*-z → *-r) as an intermediate stage in the development of final *-z. On closer reading, R/T §3.3.1 (vol.2, p.98) explicitly state the opposite:
+
+> "On the WGmc side, the loss of word-final *z in unstressed syllables (see 3.1.1), which did not occur in Norse, must likewise have preceded the merger of *z with *r." (R/T vol.2, p.98, lines 5249–5251)
+
+Hogg (vol.1, §2.66, p.52) concurs:
+
+> "Gmc /z/ yielded /r/ in intervocalic position in Old English (rhotacism), but in final position it is generally lost."
+
+The WGmc chronology is therefore:
+1. **PWGmc final *-z loss** (§3.1.1): word-final *-z in unstressed syllables is directly lost.
+2. **Post-PWGmc rhotacism** (§3.3.1): remaining (medial) *-z merges with *-r as /r/.
+
+Final *-z was **never rhotacized**. It was already gone by the time rhotacism occurred. R/T explicitly discuss this, noting that rhotacism "occurred independently in Norse and in WGmc" (p.97), that "rhotacism is an easily repeatable change" (p.98), and that it should be assigned to post-PWGmc, not PWGmc.
+
+R/T also discuss whether *-z "had already become some sort of rhotic" before its loss (§3.1.1, p.61, line 3358), but conclude that ordering z-loss before rhotacism "is less complex and therefore preferable" (p.61, line 3360). Their evidence: (a) there is no need to explain why *-a was lost before final *-z but not before *-r if z-loss happened first; (b) independent evidence suggests z-loss was an early change (§3.1.1, §3.2.1).
+
+#### Why this resolves the exceptionlessness concern
+
+The previous version of these notes worried about the different fates of inherited *-r (preserved in *watōr → wæter) versus inflectional *-z (lost in *-ōz → -e). If rhotacism had applied to final *-z, then inherited *-r and rhotacized *-r (< *-z) would have been phonologically identical at some stage, and their different fates would require a non-phonological (grammatically conditioned) explanation.
+
+But since z-loss **preceded** rhotacism, there was **no merger**:
+- Inherited *-r was always *-r — never subject to z-loss.
+- PGmc final *-z was directly lost — it never became *-r.
+- These were **different phonemes throughout**, and different phonemes having different fates is entirely regular in Neogrammarian terms.
+
+Our pipeline models this correctly:
+```
+PGmcFinalZLoss:  {*z} → 0 at word boundary  (targets *-z only, not *-r)
+PGmcRhotacism:   {*z} → {*r} after vocalic   (applies to surviving medial *-z)
+```
+
+In the pipeline, PGmcFinalZLoss runs **before** PGmcRhotacism (within PGmcConsonantRules). By the time rhotacism applies, all final *-z has already been deleted. Rhotacism therefore applies only to medial *-z, which is the correct historical outcome.
+
+#### The gen.sg. *-ōz → *-a development: not a shortcut
+
+Our rule `{*ō}{*z} → {*a}` was previously described as a "shortcut" that "conflates intermediate stages." This was wrong. R/T present the development as a **single PWGmc step**:
+
+> "PGmc *gebōz 'gift's' gen. sg. (Goth. gibos, ON gjafar) > PWGmc *geba" (vol.2, p.58, line 3198)
+
+There is no intermediate *-gebō stage (with z deleted but ō not yet shortened) in their account. The z-loss and vowel shortening were a single historical process: when final *-z was lost, the preceding unstressed bimoric *-ō shortened to *-a.
+
+This is phonetically natural: the loss of a coda consonant in an unstressed syllable resulted in compensatory restructuring of the syllable, with the freed long vowel reducing. The key conditioning factor is the phonological environment: bimoric *-ō immediately before final *-z. The nom.sg. *-ō (which had no following *-z) was not subject to this change — it was already in absolute final position and underwent NWGmcFinalLongORaising (*-ō → *-u) at a later stage.
+
+Modeling this as two separate rules (z-deletion followed by *-ō shortening) would actually be **incorrect**, because a general "final *-ō → *-a" rule would also incorrectly apply to the nom.sg. *-ō. The single-step rule `{*ō}{*z} → {*a}` correctly restricts the change to the environment where *-z was present.
+
+#### Bimoric vs. trimoric *-ōz: gen.sg. vs. nom.pl.
+
+R/T distinguish the gen.sg. (bimoric *-ōz) from the nom.pl. (trimoric *-ôz) on pp.73-74 (§3.1.1):
+- **Bimoric gen.sg. *gebōz** → PWGmc *geba (short *-a): vol.2 p.73, line 4054
+- **Trimoric nom.pl. *gebôz** → PWGmc *gebo (short *-o): vol.2 p.73, line 4071
+
+The different vowel outcomes (*-a vs *-o) are phonologically conditioned by the trimoric/bimoric distinction, not by grammatical case. Bimoric *-ō shortened to *-a; trimoric *-ô shortened to *-o. Our pipeline currently only handles the gen.sg. (bimoric) case, which is sufficient for the forms in our TSV.
+
+#### Pipeline trace comparison: inherited *-ōr vs. gen.sg. *-ōz
+
+| Stage | *watōr (inherited *-ōr) | *rastōz (gen.sg. *-ōz) |
+|---|---|---|
+| After PGmcFinalZLoss | *watōr (unchanged — *-r ≠ *-z) | *rasta (*-ōz → *-a) |
+| After PWGmcChanges | *watar (*-ō → *-a before *-r) | *rasta (unchanged) |
+| After AFB | *wætær | *ræstæ |
+| After A-restoration | *wætær (no back trigger) | *ræstæ (no back trigger) |
+| After weak-tail reduction | *wæter | *ræste |
+| Final OE output | wæter | ræste |
+
+Both root vowels undergo identical treatment (PGmc *a → OE æ via AFB, with no A-restoration because the suffix vowel *-a/*-æ is front). The only output difference is the final consonant: *-r survives as -er, *-z (already lost) is absent giving -e. This reflects different input phonemes, not grammatically conditioned change.
+
+**Hypothetical test — *rastōr (inherited *-ōr on *rast- root):**
+Pipeline gives `ræster` — confirming that root vowel treatment is identical regardless of suffix consonant.
+
+#### Summary of secondary sources on z-loss and rhotacism
+
+| Source | Final *-z treatment | Rhotacism scope | Chronological ordering |
+|---|---|---|---|
+| R/T vol.2 §3.1.1 (pp.58-61) | "Word-final *-z has been lost throughout WGmc when the preceding syllable nucleus was unstressed" | — | Z-loss is PWGmc; preferred ordering: z-loss before a-loss (p.61) |
+| R/T vol.2 §3.3.1 (pp.97-100) | "The loss of word-final *z … must likewise have preceded the merger of *z with *r" | Intervocalic and before coronals in WGmc (p.98-100); post-PWGmc (p.97) | Z-loss before rhotacism (p.98) |
+| Hogg vol.1 §2.66 (p.52) | "In final position it is generally lost" | "Intervocalic position in Old English" | Consistent with R/T |
+| R/T vol.2 p.73-74 | Gen.sg. *-ōz → *-a (bimoric); nom.pl. *-ôz → *-o (trimoric) | — | Both part of PWGmc z-loss |
