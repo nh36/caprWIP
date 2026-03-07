@@ -2306,4 +2306,57 @@ Pipeline gives `ræster` — confirming that root vowel treatment is identical r
 | R/T vol.2 §3.1.1 (pp.58-61) | "Word-final *-z has been lost throughout WGmc when the preceding syllable nucleus was unstressed" | — | Z-loss is PWGmc; preferred ordering: z-loss before a-loss (p.61) |
 | R/T vol.2 §3.3.1 (pp.97-100) | "The loss of word-final *z … must likewise have preceded the merger of *z with *r" | Intervocalic and before coronals in WGmc (p.98-100); post-PWGmc (p.97) | Z-loss before rhotacism (p.98) |
 | Hogg vol.1 §2.66 (p.52) | "In final position it is generally lost" | "Intervocalic position in Old English" | Consistent with R/T |
+| Luick §297 (p.367) | *-a lost before *-z ("schwanden alle a im Auslaut und vor z"); §299 Anm. 2 (p.369): vowels before z preserved during early shortening, "dies ist aber das letzte Anzeichen seines Vorhandenseins" | — | Z still present during §299 bimoraic shortening; lost afterwards |
 | R/T vol.2 p.73-74 | Gen.sg. *-ōz → *-a (bimoric); nom.pl. *-ôz → *-o (trimoric) | — | Both part of PWGmc z-loss |
+
+### Bimoraic vs. trimoraic *-ō: cross-source analysis and pipeline verification
+
+#### The bimoraic/trimoraic distinction in the secondary literature
+
+All major sources agree on the fundamental distinction between bimoraic (zweimorig/gestoßen/bimoric) and trimoraic (dreimorig/geschliffen/trimoric) unstressed final *-ō, though they differ in terminology, assignment of specific forms, and the details of chronology.
+
+**Luick** (Historische Grammatik, §299, pp.368-369): Distinguishes "zweimorige Längen mit gestoßenem (d. h. eingipfligem) Akzent" (bimoraic with pushed/mono-peaked accent) from "dreimorige mit 'geschliffenem' (d. h. zweigipfligem) Akzent" (trimoraic with ground/two-peaked accent). Bimoraic *-ō → u in NWGmc/Norse (§299.2: "Urgerm. ō ergab im Nordischen und Westgermanischen u"; examples: *gebu, *faru, *wordu). What Luick treats as nasalized *-ō̃ (from *-ōn, *-ōm: §299.3) → a on "dem ganzen Gebiet" (common Gmc). Trimoraic forms "zunächst als Längen erhalten blieben" — they survived the early shortening and were only reduced later. Crucially, Luick §299 Anm. 2 notes that all long vowels before *-z were preserved during this period: "*gebōz plur. 'Gaben' ... Daraus folgt, daß damals z noch nicht abgefallen war." Z-loss was therefore later than bimoraic shortening but, per Luick, it is "das letzte Anzeichen seines Vorhandenseins" (the last sign of z's existence).
+
+**Bülbring** (Altenglisches Elementarbuch, §§387-390, pp.177-178): §387: bimoraic final *-ō → u in all WGmc languages, then shortened to u, then preserved/lost depending on preceding syllable weight (same result as Luick/R/T). §389: nasalized *-ō̃ (< *-ōn, *-ōm) → *-a in WGmc, then → *-æ (by AFB) → -e in OE (examples: acc.sg. larae/lare, pret. gisettae/gesette). §390: trimoraic *-ô → OE -a (examples: n-stem nom.sg. boda, gen.pl. daga, **WS/Kent. nom.pl. of ō-stems lāra**, **WS/Kent. gen.sg. of -ung abstracts leasunga**).
+
+**R/T** (vol.2, pp.58, 73-74, 267, 314): Bimoraic *-ō → *-u in PNWGmc (§5.1.3, p.267: "word-final bimoric non-nasalized long *-ō became short *-u in unstressed syllables"). Gen.sg. *gebōz → PWGmc *geba (p.58, listed alongside bimoric forms on p.73). Nom.pl. *gebôz → PWGmc *gebo (pp.73-74, listed alongside trimoric forms). The key example on p.73: bimoric *gebōz gen.sg. → *geba vs. trimoric *gebôz nom.pl. → *gebo.
+
+**Hogg** (vol.1, §2.66, p.52): Notes bimoraic/trimoraic distinction in passing but does not elaborate on the ō-stem paradigm specifically. Follows R/T essentially.
+
+#### Where the sources agree
+
+1. **Bimoraic final *-ō → u**: All sources agree. Luick §299.2, Bülbring §387, R/T §5.1.3. Examples: *gebō nom.sg. → *gebu (→ OE giefu after light stem, -∅ after heavy stem).
+
+2. **Trimoraic final *-ô → a in OE**: All sources agree on the OE outcome. Luick §299.3 (nasalized forms → a), Bülbring §390, R/T pp.73-74. Examples: n-stem nom.sg. *namô → nama.
+
+3. **Z-loss preceded rhotacism**: R/T §3.3.1 explicitly; Luick §299 Anm. 2 implicitly (z still present during shortening, then lost). Hogg §2.66 agrees.
+
+4. **Bimoraic *-ōz (gen.sg.) → -e in OE**: R/T (p.58: *gebōz → *geba → OE giefe) and Luick §301.3 (the *-a from early shortening was fronted by AFB → *-æ → -e) agree that the regular ō-stem gen.sg. gives OE -e.
+
+#### Where the sources may disagree
+
+1. **Gen.sg. *-ōz: bimoraic or trimoraic?** R/T treat the gen.sg. *-ōz as BIMORAIC (p.73, listed among bimoric forms; outcome: PWGmc *-a → OE -e). Bülbring §390 lists "ws. kent. Gen. Sg. der Abstrakta auf ung: leasunga 'Truges' (urg. -ōz)" under TRIMORAIC (outcome: OE -a). However, this appears to be a CLASS-SPECIFIC or DIALECTAL variant: (a) the -ung abstract class may have had different mora assignment; (b) Bülbring specifies "ws. kent." (West Saxon/Kentish), suggesting dialectal conditioning; (c) the standard WS gen.sg. of ō-stems is -e (giefe), not -a (cf. R/T p.314). Our pipeline follows R/T in treating the gen.sg. as bimoraic, giving -e, which is the standard WS outcome.
+
+2. **Mechanism of *-ōz shortening**: R/T present *-ōz → *-a as a single PWGmc development (p.58: *gebōz → *geba with no intermediate stage). Luick implies a two-step process: (a) z was present during early bimoraic shortening (§299 Anm. 2), so the *-ō in *-ōz was not word-final and did not undergo §299 shortening; (b) z was then lost; (c) the freed *-ō was shortened by a later change. Both analyses produce the same result (*-ōz → *-a), but Luick's is more decomposed. Our pipeline follows R/T's single-step approach, which is also technically necessary: a separate "final *-ō → *-a" rule would incorrectly affect nom.sg. *-ō (see discussion above).
+
+3. **Trimoraic *-ô shortening timing**: Luick places it early (§299.3, common Gmc). R/T place it later (post-PWGmc unstressed vowel reduction). Bülbring §390 gives OE -a directly, implying the shortening happened late enough to escape AFB fronting (§389 nasalized bimoraic → -e, but §390 trimoraic → -a). Our pipeline implements it as a late change (OEUnstressedLongVowelShortening, after AFB and A-restoration), which matches Bülbring's OE -a outcome for trimoraic forms and also ensures A-restoration correctly sees {*ô} as a back vowel trigger.
+
+#### Pipeline verification
+
+The pipeline correctly implements the bimoraic/trimoraic distinction:
+
+| Input | Mora type | Pipeline path | OE output | Correct? |
+|---|---|---|---|---|
+| *rastō (nom.sg.) | Bimoraic *-ō | NWGmcFinalLongORaising: {*ō}→{*u}; heavy apocope | rast | ✓ |
+| *rastōz (gen.sg.) | Bimoraic *-ōz | PGmcFinalOZShortening: {*ō}{*z}→{*a}; AFB | ræste | ✓ |
+| *namô (n-stem nom.sg.) | Trimoraic *-ô | Persists through ō-raising (not matched); OEUnstressedLongVowelShortening: {*ô}→{*a} | nama | ✓ |
+| *tungōn (fem. n-stem) | Bimoraic *-ōn | NWGmcNStemNLoss: {*ō}{*n}→{*ǭ}; shortening → {*æ} → -e | tunge | ✓ |
+
+Key observations:
+1. **Gen.sg. uses bimoraic {*ō}** in the suffix `ō:{*ō} z:{*z}` (line 334), matching R/T's bimoraic assignment.
+2. **PGmcFinalOZShortening targets {*ō}{*z} only** — it does NOT match trimoraic {*ô}{*z}, ensuring the two mora classes are kept distinct.
+3. **NWGmcFinalLongORaising targets {*ō} only** — it does NOT match trimoraic {*ô}, which correctly preserves trimoraic forms through ō-raising.
+4. **{*ô} is defined as a back vowel trigger for A-restoration** (line 1213: `OEARestorationTriggerVowel`), so trimoraic suffixes correctly trigger A-restoration of root *a (e.g., *namô → nama, not *næma).
+5. **OEUnstressedLongVowelShortening handles {*ô} → {*a}** as a late change (line 1340), after AFB and A-restoration, so the resulting -a is not fronted — giving OE -a for trimoraic forms, matching all sources.
+
+A hypothetical trimoraic *-ôz (e.g., nom.pl.) is not currently in the suffix list (not needed for our TSV data), but the system would handle it correctly: PGmcFinalOZShortening would not match ({*ō} ≠ {*ô}); PGmcFinalZDeletion would delete {*z}; the freed {*ô} would pass through ō-raising and AFB unchanged; OEUnstressedLongVowelShortening would produce {*a}. Result: -a, matching R/T and Bülbring for nom.pl.
