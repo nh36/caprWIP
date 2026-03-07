@@ -1,0 +1,827 @@
+Indo-European Linguistics 7 (2019) 222–240
+brill.com/ieul
+
+Greek στωμύλος ‘chatty’
+An anomalous ō-grade (and some anomalous o-grades)
+Brent Vine
+University of California, Los Angeles
+vine@humnet.ucla.edu
+
+Abstract
+Gk. στωμύλος ‘chatty’ (Old Com.+) belongs with στόμα ‘mouth’; yet the serious formal
+problem with the -ω-, often acknowledged, remains without explanation. Part of the
+conundrum: despite the connection with στόμα (a synchronic n-stem and historically
+a men-stem), an n-stem or men-stem basis for στωμύλος is not workable. Two different solutions, however, can be proposed, on the basis of hitherto neglected Greek data;
+these point to the existence of forms that can support analyses in terms of vr̥ddhi (Solution #1) or in terms of a different type of morphological lengthened grade (Solution #2).
+These analyses, in turn, may shed light on the anomalous o-grade of Gk. στόμα itself,
+with broader implications for the study of PIE nominal morphology.
+
+Keywords
+acrostatic inflection – lengthened grade – men-stems – o-grade – ō-grade – vr̥ddhi
+
+1
+
+Introductory
+
+The Greek adjective στωμύλος ‘wordy, talkative, chatty, fluent’ is well attested
+beginning in Old Comedy (5th c. bce+), along with a series of derivatives (also
+Old Com.+), such as an abstract στωμυλία/-ίη ‘loquaciousness’, a denominative
+verb στωμύλλω ‘be talkative, chatter’ (cf. στωμύλματα ‘chatter; chatterbox’), and
+comic coinages like στωμυλιοσυλλεκτάδης ‘gossip-collector’. The traditional etymology,1 still almost universally accepted, connects the word with Gk. στόμα
+
+1 See, e.g., GEW and DELG s.v. στωμύλος, IEW s.v. stomen-.
+© brent vine, 2019 | doi:10.1163/22125892-00701003
+This is an open access article distributed under the terms of the CC-BY-NC 4.0 License.
+
+greek στωμύλος ‘chatty’
+
+223
+
+‘mouth’ (Myc.+),2 which itself, according to most analyses, has cognates in Anatolian, Avestan, Germanic, and Celtic; some of these forms will be reviewed
+below. Sometimes added is Gk. στόμαχος ‘throat, gullet, etc.’, to which we return
+briefly later.
+The connection between στωμύλος and στόμα is semantically attractive (at
+least in a general way); but there is a serious formal problem with the -ω- of
+στωμύλος, as often acknowledged—thus Chantraine, on στωμύλος: “cf. στόμα;
+mais l’ ō long est embarrassant” (1933:250); and similarly de Lamberterie: “le rattachement à στόμα ‘bouche’ vient tout de suite à l’ esprit, mais la relation entre
+le terme de base et son prétendu dérivé est des plus obscures, car on est bien
+en peine de justifier l’apophonie ο/ω” (1990:[2.]704). Most recently, the difficulty has been acknowledged by Kölligan (2017:52, n. 41: “Evtl. zu στόμα, aber
+mit unklarem /ω/”), citing Chantraine.
+
+2
+
+Previous accounts
+
+The problem, despite its severity, is often ignored: even the best modern treatments of στόμα and cognates3 omit consideration of στωμύλος entirely. When
+the form is mentioned at all, there is sometimes little more than a descriptive characterization: thus for Wennerberg (1972:27), στωμύλος is built “aus
+der Dehnstufe der Wurzel”—an uninformative observation that says nothing
+about the source or type of the lengthened grade. Only slightly more informative is the perfunctory identification of the relationship between στόμα and
+στωμύλος as one involving “vr̥ddhi” (Debrunner 1954:104): but this is of limited
+value unless the derivational path from the source form to the lengthenedgrade outcome is specified. (As we will see in more detail below, στόμα itself—
+contrary to the implication of Debrunner’s phrasing—cannot serve as a regular
+source for a vr̥ddhi derivation resulting in στωμύλος.)
+More detailed attempts to explain the anomalous ō-grade of στωμύλος have
+not been successful.
+
+2 Gk. στόμα is ordinarily labeled “Hom.+”; but the Myc. boonym to-ma-ko /Stomargos/ ‘WhiteMouth’ is a phrasal determinative compound that implies an accusative of respect /stoma/
+(Meissner and Tribulato 2002:315). On the phonological variant tu-ma-ko /Stumargos/ (cf. Arc.
+στυμεον = Att. dimin. στόμιον), see recently García Ramón 2018:37.
+3 Oettinger 2003:147–149 and 2009:345; Melchert 2007/8:184–186.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+224
+
+vine
+
+2.1
+Darms
+According to Darms (1978:329), the prominent appearance of στωμύλος (and its
+derivatives) in the relatively low-register contexts of Attic comedy suggests that
+its -ω- results from “expressive lengthening”, which could have been supported
+by the constraint in Greek against (in his formulation) three consecutive short
+syllables. The prominence of στωμύλος and derivatives in such contexts is certainly of interest, as we will see below; but this in itself does not justify an appeal
+to the notoriously ill-defined notion of “expressive lengthening”, which has no
+regular behavior in Greek and which would therefore amount to a purely speculative account of στωμύλος with little explanatory value. As for a constraint in
+Greek against “three consecutive short syllables”: this cannot provide the support Darms seeks, since the famous “Tribrach Law” in question actually refers
+to sequences of non-final tribrachs;4 thus an original *στομυλο- would not in
+fact have been problematic in this respect.5
+2.2
+EDG
+Beekes (EDG s.v. στωμύλος) notes the comparison with στόμα, which in his version derives from a PIE source “*st(e)h3-mn̥ ”, and declares στωμύλος to have “full
+grade of the root (*steh3-m-) and a suffix *-ul-”; but at the same time, the entry
+(somewhat incoherently) characterizes the overall etymology of στωμύλος as
+unknown. All of this raises more questions than it answers: even if the root
+analysis “*st(e)h3-” is correct for στόμα and related forms (more on this point in
+§ 3.1), it is unclear how a derivative of a neuter men-stem could have been based
+on the apparently truncated men-stem basis *steh3-m-, which renders this conception, once again, nothing more than a descriptive statement, in the manner
+of a Transponat, about the sequence “στωμ-”; nor is it clear what is meant by “a
+suffix *-ul-”, or how this could have been appended (and with what semantic
+value) to the truncated men-stem basis “*steh3-m-”.
+2.3
+Rasmussen
+The most explicit account of Gk. στωμύλος is due to Rasmussen,6 for whom στωμύλος itself is fundamental to his analysis of στόμα and cognates, which can be
+summarized as follows:
+
+4 See recently, and in great detail, Steriade 2018 (with earlier references).
+5 Nor is it difficult to find other Greek /-ulo-/ sequences with preceding light syllable; see BuckPetersen 1945:372–375 (e.g., ἐριστάφυλος ‘made of fine grapes’ [Od.+], βράβυλον ‘sloe’ [Theoc.],
+ἐρίθυλος ‘robin-redbreast’ [Schol.Ar.], etc.).
+6 1984, somewhat expanded in 1989:241–245.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+225
+
+i.
+
+στόμα and related forms originally inflected as a neuter “o/a-acrostatic”
+noun, like *mór-i, dat. sg. *már-i̯-ei̯ ‘sea’; for the original a-vocalism of the
+oblique stem, cf. Welsh safn ‘lower jaw’ and other Celtic forms pointing to
+*stam-n-.
+ii. στωμύλος points to an original neuter *stóm-u̯ l ̥, with oblique stem-shapes
+(pre-consonantal) *stám-u̯ n̥- and (prevocalic) *stám-un-, in other words
+a PIE u̯ el/n-stem.
+iii. Given, in Rasmussen’s view, a PIE rule that simplifies the sequence *-mu̯ to *-m-,7 the original paradigm would have developed to one with alternating (nom./acc.) *stóm-l ̥ ~ (obl.) *stám-n̥ -; all of the forms related to
+στόμα can then be explained directly on the basis of the oblique stem (as
+with the Celtic *stam-n- forms) or via straightforward developments, as
+with στόμα itself (< *stóm-n̥ , with the root vocalism of the strong forms
+and the stem-formation of the weak forms).
+iv. As for στωμύλος: this is “a vr̥ddhi adjective explainable from *stōm-ul-ós
+with accent retraction according to Wheeler’s Law” (1984:147).8
+Certainly the Wheeler’s Law component of iv. is correct; but everything else is
+problematic. Some critique of Rasmussen’s conception (though without reference to στωμύλος) has been registered by Oettinger (2003:148, n. 18), and more
+could be added. Thus, on the probable non-existence of “o/a-acrostatic” inflection in the word for ‘sea’, see Vine 2011:264–265 (following Nussbaum). As for
+στωμύλος itself: apart from various open questions (exactly what sort of “vr̥ddhi
+adjective” was involved, and why would this have occurred at such a primordial
+stage, even before the development of the simplified “l/n-stem” paradigm that
+led to στόμα?), it is very improbable that a Greek adjective in -υλο- (a productive
+category) would preserve a precious relic of a PIE u̯ el/n-stem—an extremely
+rare type of formation.9 In principle, a Greek -υλο- adjective is far more likely
+to involve inner-Greek productive -υλο- or (what amounts to almost the same
+thing) a formation in -υ-λο- based on a u-stem (as in ἡδύς ‘sweet’ → ἡδύλος
+‘id.’/Ἡδύλος, and other such -υλο- forms).10
+
+7
+8
+
+9
+
+10
+
+As in Gk. μῶμαρ ‘blame’ if from *m[u̯ ]óH-mr̥ (cf. ἀμῡ́μων ‘blameless’, with *-muH-).
+Elements of this approach were hinted at earlier, as for example in Frisk’s notice (GEW s.v.
+στωμύλος) on the comparison of στωμύλος with στόμα (“mit n : u-l- Wechsel?”; cf. also EDG
+on the alleged “suffix *-ul-”, § 2.2), and Debrunner’s assumption of vr̥ddhi (§2 ad init.).
+In his updated version, Rasmussen appends (1989:245, n. 16) three additional examples
+of *-ulo- forms (two of them involving Greek -υλο- words) allegedly based on PIE u̯ el/nstems; but none is convincing: all are purely conjectural, and lack independent support
+for the u̯ el/n-stems.
+On derivational profiles for Gk. -υλο-, see Chantraine 1933:249–251.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+226
+
+vine
+
+2.4
+De Lamberterie
+Another detailed treatment of στωμύλος (together with στόμα and related
+forms) has been provided by de Lamberterie (1990:[2.]704–714). The main
+points bearing on στωμύλος can be summarized as follows:
+i.
+De Lamberterie argues for the connection of στωμύλος with the RV hapax
+stāmú- (VII.20.9b), an idea that goes back to Fick.11 According to de Lamberterie, the meaning of stāmú- in context is roughly ‘criant, implorant,
+gémissant’ or (as in his translation) substantivized ‘cri’:
+eṣá stómo acikradad vr̥ ́ṣā ta
+utá stāmúr maghavann akrapiṣṭa
+VII.20.9ab
+
+Voici la louange qui a mugi à ton adresse (comme) un taureau, et le cri
+que (ton chantre) a poussé (vers toi) d’une voix forte (?), ô Généreux.
+704
+
+ii.
+
+On this basis, de Lamberterie sets up an original u-stem adjective *stōm-ú‘sonore’, whence a derived adjective *στωμυλός, which develops to στωμύλος by Wheeler’s Law.
+iii. De Lamberterie reconstructs a root *stem- ‘(faire) entendre’ on the basis
+of Gmc. *stemnō- ‘voice’ (Go. stibna, OHG stimna/stimma ‘Stimme’, etc.)
+and Anatolian words for ‘ear’ (Hitt. ištamin-, etc.), although he excludes
+the various ‘mouth’ words attested in Greek, Avestan, and Celtic.
+iv. For the lengthened ō-grade of *stōm-ú-: this, he says, “se retrouve sinon
+dans *ōk-ú- ‘rapide’, qui peut s’ expliquer autrement, du moins dans gr.
+μῶλυς ‘mou’, dérivé de *mel(H2)- ‘écraser’” (708).
+On these points: u-stem *stōm-ú- as the basis for a form in Gk. -υλο- (ii.) is
+morphologically unproblematic (cf. ἡδύς → ἡδύλος, § 2.3 ad fin.), and the reconstructed root shape *stem- (iii.) will concern us below (§ 3.1(ii.)). But points i.
+and (especially) iv. are problematic.
+Ad i.: For RV stāmú-, it is instructive to compare the translation by Jamison:
+“This praise has bellowed (like) a bull to you, and (like) a thieving [?] (monkey)
+has screeched, o bounteous one.”12 In other words, as Jamison makes particularly clear in her online Commentary (ad loc.), she prefers connection of stāmúwith √ stā ‘steal’ (so also Geldner), with reference to monkeys, “also known for
+their sharp cries”. Jamison reasonably concludes, however, that “it is impossible
+to be certain about the meaning and etymology of the hapax”.13 It is surely inad11
+12
+13
+
+For bibliographical references, see Lamberterie 1990:[2.]705, n. 14 and KEWA III.513 s.v.
+stāmú-.
+Jamison and Brereton 2014:[2.]908.
+Similarly Mayrhofer (EWAia II.759, s.v.): “Ohne gesicherte Übersetzung und Deutung”.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+227
+
+visable, then, to build a semantic and morphological analysis of Gk. στωμύλος
+on the shaky foundation of such a Rig-Vedic hapax.14
+Ad iv.: Since, as de Lamberterie himself admits, Gk. ὠκύς “peut s’ expliquer
+autrement,”15 everything depends, for the lengthened ō-grade, on the comparison with Gk. μῶλυς ‘soft’—a word not attested until Nicander (2nd c.
+bce). But this is not promising. De Lamberterie’s extended treatment of μῶλυς
+(1990:[1.]375–390) actually offers no explicit account of the lengthened grade,
+apart from vague comparison with the following two items:
+a. Hom.+ μῶλυ ‘a fabulous herb (Hom.); garlic (post-Hom.)’: but this, despite
+de Lamberterie’s apologia, is most plausibly taken as a “pre-Greek” word,
+as is usually thought.16
+b. μῶλος in Hom. μῶλος Ἄρηος ‘turmoil of War’; but this involves either a
+poorly-understood “intensive” formation otherwise found in a few thematic nouns (Barnes 2009:8, assuming an original sense *‘milling of the
+Grinder’ and relationship with *melh2- ‘grind’), or else a vr̥ddhi formation
+related to a gloss form μόλος ‘toil’ (Weiss 2016:482–483), in both cases with
+no clear applicability to a u-stem adjective. (We return to Weiss’s account
+of the form later, with additional details.)
+2.5
+Wennerberg
+Wennerberg (1972:27) connects στωμύλος not only with RV stāmú- but also
+with the Epic Skt. hapax (neut.) sthāman- (MBh. I.5116) ‘neighing (of a horse)’,
+observing unhelpfully once again (cf. § 2 ad init.) that this word arises “aus der
+Dehnstufe der Wurzel”. But Mayrhofer rightly regards the word as “problematisch” (KEWA III.528), in part because it is not entirely clear whether the word
+differs in origin from Ved. (neut.) sthā ́man- ‘location; strength’.17 Under these
+circumstances, the Epic Skt. word is best left aside.
+14
+15
+
+16
+
+17
+
+So already Darms (1978:329).
+The form is now often thought to be reduplicated; see, e.g., EDG s.v. for a reconstruction
+*h1o-h1k̑-ú-, assuming connection with PIE *h1ék̑u̯o- ‘horse’ and regarded as “quite possible”. As noted by de Vaan (EDLIL s.v. ōcior), reconstruction with *h3 is also possible
+(*h3e-h3 k̑-ú-) if the connection with ‘horse’ is abandoned. Formally similar (though not
+involving reduplication) is Dunkel’s conception *h2o-h1k̑-ú-, with an initial particle *h2o
+(LIPP 2.330).
+Note especially EDG s.v., comparing μώλυζα ‘garlic’ (likely related to μῶλυ) with κόνυζα ‘various species of inula or fleabane’ and ὄρυζα ‘rice’, all with “non-Greek suffix” (to which one
+may add μάνυζα ‘garlic’; Beekes 2014:61), leading to the conclusion about μῶλυ that “[a]ll
+proposed IE etymologies … have to be rejected”.
+As Wennerberg notes, Hiersche (1964:66–67) had likewise assumed the existence of two
+different “sthāman-” words, although he favored a different etymological background for
+the epic word.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+228
+
+vine
+
+But the important contribution of Wennerberg’s study is an attractive proposal18 that the words for ‘mouth’ and ‘ear’ belong with the root *temh1- ‘cut’
+(: Gk. τάμνω, Lat. temnō, MIr. tamnaid, etc.; LIV s.v.). If this is correct, the root
+in question is to be reconstructed as *(s)temh1- (with s-mobile), and its derivatives meaning ‘mouth’ and ‘ear’ originally meant ‘slit, opening’, whence ‘bodily
+(oral/aural) orifice’.
+2.6
+Local summary and preview
+The interim conclusion to be drawn is that no satisfactory explanation is available so far for the enigmatic -ω- of στωμύλος. In principle, however, two types
+of approaches are worth considering further:
+i.
+an account based on a morphological vr̥ddhi formation—but one that
+is more explicit in various respects than vague assertions like that of
+Debrunner (§ 2 ad init.) and with a stronger morphological basis than Rasmussen’s vr̥ddhi analysis (§ 2.3), which operates with a questionable (and
+in any case otherwise undocumented, apart from inferences about the
+explanandum στωμύλος itself) PIE u̯ el/n-stem;
+ii. an account that appeals to some other type of morphological lengthened
+grade—but more principled than the vague comparison with obscure
+Greek forms containing poorly-understood lengthened ō-grades.
+Following some additional preliminary background (§§ 3 and 4), I will propose two new solutions to the problem, one of each type (§§ 5 and 6); a choice
+between the two is not easy, although some criteria for evaluation may be available. The paper concludes (§ 7) with discussion of the implications of these
+solutions for the problematic o-grade of Gk. στόμα itself and ultimately its
+reconstructed PIE etymon.
+
+3
+
+More on στόμα and related forms
+
+It will be helpful to review certain additional details about the analysis of Gk.
+στόμα and related forms. But there is no need to rehearse non-essential (and
+sometimes controversial) points, such as how best to interpret the root vocalism of Av. staman- ‘(dog’s) mouth’, or how to interpret the a-vocalism of the
+Celtic data (cf. § 2.3(i.)).
+
+18
+
+Accepted by both Oettinger and Melchert (see n. 3 above).
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+229
+
+3.1
+On the original root shape
+We will accept Wennerberg’s conception (§ 2.5), as does Melchert, who added
+an additional argument (2007/8:184) based on the semantics of CLuv. K Áāštummant- ‘gateway’ < *‘mouth aperture’. We may now comment briefly on two
+other approaches to the reconstruction of the root:
+i.
+The previously popular *steh3-mn̥ (§ 2.2)19 is problematic for several reasons. As pointed out by Oettinger (2003:148), this creates difficulties for
+CLuv. -tummant- (which is not likely to have a background involving *h3)
+and also excludes the Germanic material, with its e-grade forms in the
+word for ‘voice’ (§ 2.4(iii.)), also difficult to square with PIE *h3.20 Nor is
+it attractive, more generally, to posit an obscure verbal root “*steh3-”, with
+unknown meaning, as the basis for a term that appears to be a primary
+men-stem.
+ii. De Lamberterie’s alleged verbal root “*stem-” (§ 2.4(iii.)) is a construct
+based on the words for ‘ear’ (in Anatolian) and ‘voice’ (in Germanic),
+unattractively separating these from Gk. στόμα (as well as the other
+‘mouth’ words in Avestan and Celtic, despite the striking similarities
+between, for example, Hitt. ištamin- and Av. staman-) and (likewise unattractively) separating στόμα from στωμύλος.
+3.2
+Some essentials of Melchert’s analysis (2007/8:184–186)
+It will be useful for further discussion of στωμύλος to recall the basic conclusions of Melchert’s analysis of Gk. στόμα and related forms, especially with
+reference to the o-grade material:
+i.
+What appears descriptively to be a “plain n-stem” in Gk. στόμα and cognates actually goes back to an original neut. men-stem *stómh1-mn̥ . This
+form then underwent laryngeal loss (via the “Saussure-Hirt effect”),
+whence *stómmn̥ ; the resulting sequence, in turn, was subject to regular
+PIE degemination of *-mm- to [-m-],21 whence *stómn̥ > Gk. στόμα.
+ii. The PIE men-stem *stómh1-mn̥ reflects a rare o/e-acrostatic men-stem, for
+which Melchert compared Gk. πῶμα ‘lid, cover’ (: PIE *peh2- ‘protect’).
+iii. A hysterokinetic internal derivative *stomh1-mén- (with o-grade after the
+neut. men-stem) accounts for Hitt. ištamin- ‘ear’.22
+
+19
+
+20
+21
+22
+
+Adherents of this conception include (in addition to EDG s.vv. στόμα and στωμύλος) Hamp
+1982, Melchert 1994:74 (following Oettinger 1982:235), Lubotsky 1997:56–57, and EDHIL s.v.
+(UZU)ištāman-/ištamin-.
+The latter point has been noted also by Kroonen (EDPG s.v. *stimnō-).
+For the *-mm- degemination, see Byrd 2015:44; similarly already Tremblay 1996:126, n. 87.
+See Melchert for discussion of e-grade and zero-grade forms, left aside here.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+230
+4
+
+vine
+
+Vr̥ddhi accounts and other lengthened grades: further discussion
+
+For a vr̥ddhi analysis, it is evident that only patterns of the type “R(o) → R(ō)”
+will be of interest for the problem at hand; other vr̥ddhi patterns (such as R(Ø)
+→ R(e)-ó-, R(e)-o- → R(ē)-ó-, etc.) are not relevant.23
+A second point connected with vr̥ddhi arises from an additional problem
+with the analysis of στωμύλος that was noted by de Lamberterie (besides the
+basic problem of the root vocalism): “[on est bien en peine de justifier …]
+pourquoi la finale -α < *-n̥ du substantif, qui est ancienne …, n’ apparaît pas
+dans l’adjectif” (1990:[2.]704). This is not actually problematic at the level of
+Greek derivational patterns: derivatives of στόμα should be based on the synchronic oblique stem στοματ- (cf. dimin. στομάτιον, adj. στοματικός, etc.); but as
+it happens, -ματυλο- forms based on men-stems are not attested,24 and (given
+the productivity of neut. men-stems in Greek) the absence of -ματυλο- forms
+is probably not an accidental gap. Thus, whatever the reason for this gap, the
+absence of a form like †στωμάτυλος is not in itself a problem.25 Rather than
+a “synchronic Greek” derivation of that kind, στωμύλος should be based on a
+more ancient vr̥ddhi formation, such as one resulting in an o-stem in the first
+instance, which then served as the basis for the -υλο- formation (one of the regular patterns available for -υλο- forms, cf. Hom.+ δεινός ‘terrible, fearful’ → postHom. Δεινύλος, Hom.+ πηγός ‘solid; congealed’ [→ *πηγύλος] → Hom.+ πηγυλίς
+‘frozen; frost’, among other such forms). In that case, however, the absence of
+the nasal (which, as de Lamberterie noted, is assuredly old) is indeed problematic; in other words, an archaic vr̥ddhi formation related to στόμα should
+certainly appear as *stōmno- or *stōmeno- (there being no evidence for “suffix
+truncation” in vr̥ddhi derivatives). And for *stōmno- in particular, the derived
+-υλο- adjective should be *στωμνύλο-, without simplification of /-mn-/.26 The
+conclusion to be drawn from these considerations is that a vr̥ddhi formation
+
+23
+24
+25
+
+26
+
+Convenient descriptive surveys of vr̥ddhi patterns may be found in Darms 1978, Nussbaum
+2009.
+Not a single such form is to be found in Kretschmer-Locker 1944 or Buck-Petersen 1945.
+The absence of -ματυλο- forms might be ascribed, at least in part, to the constraint against
+non-final tribrachs (see again Steriade 2018, n. 4 above), whence dispreferred sequences
+like †ὀνοματυλο- or even †στοματυλο-; but since most simplex deverbative men-stems in
+Greek (at least before the Hellenistic period) have a heavy root syllable (or other heavy
+syllable) preceding the men-stem suffix (cf. Gunkel 2011), this is not likely to be the whole
+story.
+Apart from episodic instances like νώνυμος ‘nameless’ (Od.+), a later simplification of νώνυμνος (Il.+), there is no regular reduction of tautosyllabic /-mn-/, cf. πρύμνα/πρύμνη ‘ship’s
+stern’, κρημνός ‘crag’, etc.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+231
+
+based on the prehistoric n-stem (of any kind, including men-stem) underlying
+Gk. στόμα is not workable.
+A final preliminary point concerns lengthened grades of other types (i.e.,
+non-vr̥ddhi lengthened grades). If στόμα is ultimately based on a neut. menstem (§ 3.2(i.)), even a (rare) o/e-acrostatic version (§ 3.2(ii.)), there is no basis
+for a lengthened ō-grade in such a paradigm, or in any of its regular derivatives.
+
+5
+
+Solution #1: a new Vr̥ddhi account
+
+It has occasionally been acknowledged27 but is generally neglected that some
+Greek data point to the existence of a form (or forms) related to στόμα (and στωμύλος) not based on an n-stem. These data are well-represented in 5th-century
+Greek,28 including the following:
+i.
+dimin. στόμιον ‘mouth’ (various senses, including ‘bridle-bit’) (Aesch.,
+Emped.+; vs. στομάτιον [§ 4])29
+ii. στομόω ‘muzzle, gag’ (Hdt.+), στόμωμα ‘mouth’ (various senses) (Aesch.+)
+iii. στομώδης ‘clear-voiced’ (Soph.+)
+iv. στόμις m. ‘hard-mouthed horse’ (Aesch.)
+v.
+εὔστομος ‘speaking nicely/propitiously [= being silent]’ (Hdt.+), cf. εὐστομέω ‘sing sweetly, speak propitiously’ (Aesch.+); κακόστομος ‘foulmouthed’ (Eur.+), cf. κακοστομέω ‘revile’ (Soph.)
+vi. στομοδόκος ‘στωμύλος’ (Pherecr.)
+As pointed out by Georgacas and others, the range of material seen in these
+forms is consistent with a thematic basis *stom-o- (perhaps among other possible source forms, one of which will come under discussion below). Here we can
+add that στόμαχος (cf. § 1) is also consistent with thematic *στομο-, given one
+standard derivational background for Gk. -αχος forms (Chantraine 1933:403)—
+thus, e.g., νήπιος ‘child(ish)’ → νηπίαχος ‘id.’, etc.30
+I suggest, then, that beside *stóm-n̥ , there was a thematic by-form *stom-o‘mouth’ (in origin what might be called a “*stómos form”: thus ‘cutting’ > ‘slit’, cf.
+27
+28
+29
+30
+
+Georgacas 1958:183; Wennerberg 1972:26 with n. 18, following Georgacas; Hamp 1982.
+Actually Aesch., Emped.+, thus potentially attested from the early 5th century.
+Arc. στυμεον (n. 2 above).
+Darms (1978:329) refers to this material as involving “avoidance” or “circumvention”
+(Umgehung) of the n-stem, perhaps thinking of patterns whereby men-stems can appear
+in the guise of o-stems, as in first compound members, of the type σπέρμα ‘sowing, seed’
+(Hom.+, cf. Myc. pe-mo, pe-ma) → σπερματολόγος ‘picking up seeds’ (Epicharmus), but also
+σπερμολόγος (Aristoph.+). While this can in principle apply to some items (such as στομόδοκος, vi. above), the non-n-stem data are too extensive to be accounted for in this way.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+232
+
+vine
+
+τόμος ‘slice’),31 all but ousted by (*stóm-n̥ >) στόμα in the basic meaning ‘mouth’,
+but marginally surviving in the above non-n-stem forms. It was this thematic
+*stom-o- that served as the basis for a vr̥ddhi derivative *stōm-o-, which can perhaps be most plausibly identified as the type ‘X’ (noun) → ‘X-like’ (Nussbaum
+2009); as Nussbaum observes, a viable semantic pathway would be ‘belonging
+to X’ ~ ‘having the features of X’, which in turn would naturally include both
+“dismissive” terms and diminutives. The resulting vr̥ddhi form *stōmo- ‘like a
+mouth’ would then be further characterized by the expressive adjective suffix -υλο- (which prominently includes “dismissives” and diminutives), whence
+*στωμυλός ‘mouth-like, like nothing but a mouth, pure mouth’ = ‘running off at
+the mouth, talkative, chatty’, and then στωμύλος by Wheeler’s Law (cf. δεινός →
+Δεινύλος, etc., § 4 above). In terms of semantics, Darms (1978:329) was right to
+question a “literal” vr̥ddhi sense like ‘zum Mund gehörig’; but the version just
+described—similar in spirit to Rasmussen’s evocative comparison (1989:245,
+n. 16) with Eng. mouthy—fits well with the expressive value of Gk. -υλο- and
+the prominence of στωμύλος and derivatives in comic usage, the importance of
+which Darms had noted himself (§ 2.1).
+Darms’s other reason for rejecting a vr̥ddhi analysis based on a form like
+*stōmo- was simply the relative rarity of this type of formation in Greek. But this
+is not a strong counterargument, especially given the existence of at least one
+or two other examples of essentially the same type: cf. κόος ‘a hollow, chasm’
+(Hsch.) vs. κῶος (also κῶς) ‘cave, den; prison’ (Strabo, Stephanus of Byzantium,
+Hsch.), i.e., *k̑ouH-o- ‘a hollow’32 → *k̑ōuH-o- ‘hollow-like (thing)’ (Nussbaum
+2009). More recently, Weiss (2016:482–483) has proposed (cf. § 2.4 above, ad
+fin.) that Hom. μῶλος ‘turmoil (esp. of war)’ originally meant *‘struggle’ and
+reflects a vr̥ddhi formation *mōlo- ‘of toil’ (subsequently substantivized), based
+on a *molo- ‘toil’ seen in the gloss form μόλος· πόνος. μάχη. φρύαγμα (Hsch.), to a
+root *(H)mel(H)- (also attested in Lat. molestus ‘tiresome’ and Gk. μόλις ‘hardly’,
+with a further derivative of the vr̥ddhi formation in Lat. mōlēs ‘large mass; struggle’ and its denominative mōlīrī ‘strive’).
+In this scenario, there would be little possibility of connecting στωμύλος with
+RV stāmú- (§ 2.4(i.)); but given (as already discussed) the uncertainties attending such a hapax, this would not be a serious loss.
+
+31
+32
+
+Recently on “τόμος forms” and related material: Nussbaum 2017.
+Cf. Gk. κοῖλος (< κό(ϝ)ιλος) ‘hollow’, κύαρ ‘hole, eye of a needle’, elsewhere Lat. cavus adj.
+‘hollow’, Arm. soyl ‘cavity’, etc.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+233
+
+greek στωμύλος ‘chatty’
+
+6
+
+Solution #2: a different type of lengthened grade
+
+The isolated and non-derivable nature of the sequence στωμ- (in στωμύλος)
+suggests, in principle, a fairly deep archaism; one could thus conjecture that
+another source could be an animate root noun *stómh1-s, with inflection and
+formal renewals similar to those seen in *dóm-s ‘house’:33
+nom. *stómh1-s > *stṓm
+acc. *stómh1-m > *stṓm
+gen. *stémh1-s → *stm̥ h1-és
+(etc.)
+
+~ *dṓm
+*dṓm (→ Gk. δῶμα; Nussbaum 2008)
+*dém-s → *dm̥ (m)-és
+
+The idea that a root noun might underlie στόμα has been tentatively suggested,
+based in part on the non-n-stem forms surveyed above (§ 5), though without
+reference to στωμύλος itself.34 To be sure, the precise derivational pattern “root
+noun → -υλο- form” lacks unequivocal examples; but the variety of derivational
+bases underlying -υλο- forms makes it difficult to exclude this possibility.
+Note further that a root noun can appear with various parallel formations,
+thereby incorporating most of the morphological variety actually in play:
+i.
+root noun (*stṓm) + men-stem (*stómh1-mn̥ ): cf. *bhṓr (Gk. φώρ, Lat. fūr
+‘thief’) + *bhér-mn̥ (Ved. bhárman-)/*bhḗr-mn̥ (RV bhā ́rman-, OCS brěme̜
+‘burden’)35
+ii. root noun (*stṓm) + “τόμος form” (*stómh1-o-): cf. *dṓm ‘house’ + *dóm-o(Ved. dáma-, Gk. δόμος, Lat. domus; Nussbaum 2017:236)
+iii. root noun (*stṓm) + u-stem (RV stāmú- ??): cf. *dṓm ‘house’ + *dom-u- (at
+least Vedic, Slavic, Armenian),36 *dm-ou̯ - (Hom. δμώς ‘slave, captive’)37
+In a more general way, στωμύλος in this conception (root noun *stōm → *stōmulo-) would be formally similar to Lat. hūmānus ‘human’, if this reflects a
+
+33
+34
+
+35
+36
+
+37
+
+On the inflection of *dóm-s, see recently Weiss 2017.
+Cf. Schwyzer (1939:524, n. 5) on δῶμα and στόμα (“phonetisch für *δωμ *στομ (?)?”), Georgacas (1958:183) citing Schwyzer, and Wennerberg (1972:26, n. 18, with a further reference)
+developing Georgacas (“Es ist also erlaubt, für das Indogermanische die Stammformen
+*stom-, *stomen-, *stomo- usw. ‘Mund’ zu rekonstruieren”).
+Although the OCS form is itself ambiguous, other Slavic comparanda (e.g. BCSM brȅme)
+point to acute intonation for Proto-Slavic, thus supporting the ē-grade.
+Ved. dámūnas-, traditionally ‘Hausherr’ et sim. (but see Pinault 2000 for detailed analysis);
+OCS domŭ ‘house’; Arm. tanowtēr ‘master of the house’ (Olsen 1999:674). The Latin u-stem
+domu- can be interpreted as secondary (Weiss 2011:252–253).
+Differently on this u-stem: Widmer 2008, especially 624, n. 20 (interpreting the form as
+secondarily derived from a locative formant).
+
+Indo-European Linguistics 7 (2019) 222–240
+
+234
+
+vine
+
+derived adjective based on a root noun *hōm (: Gk. χθών) ‘earth’ > *hūm,38
+whence (with productive *-āno-) adjectival *hūm-āno-.39
+A choice between the two solutions just advanced is not entirely straightforward. On one hand, the root-noun hypothesis has the capability of incorporating the u-stem RV stāmú-; yet this is not a significant advantage, given the
+difficulties attending that form, as well as the overall rarity of u-stems beside
+root nouns. On the other side of the ledger, it is generally simpler to arrive at
+a reconstructed o-stem, on the basis of material like that in § 5, rather than a
+root noun (a recessive category), even if that basis is technically possible. One
+might thus, on these grounds, give the nod to the vr̥ddhi analysis in § 5. Still,
+the more general result is that we have progressed from the rather desperate
+situation described at the outset to one in which two different solutions for the
+background of Gk. στωμύλος appear to have some plausibility.
+
+7
+
+Implications for Gk. στόμα and related forms (and other o-grade
+neut. men-stems)
+
+Recall that according to Melchert (§3.2(ii.)), Gk. στόμα and cognates descend
+from a rare o/e-acrostatic neut. men-stem, comparable to Gk. πῶμα ‘lid, cover’
+(: *peh2- ‘protect’). Yet this seems questionable: neut. men-stems are resolutely
+proterokinetic, and there is hardly any other evidence for an inflectional construct identifiable as an “o/e-acrostatic neut. men-stem”.
+Given the comparison with Gk. πῶμα (as well as the facts that Greek preserves both men-stems and o-vocalism well), it is instructive to consider other
+cases of o-grade men-stems in Greek (including, descriptively, “ō-grade” examples, as in πῶμα). In general, these fall into three types:
+i.
+etymologically obscure forms (e.g., σῶμα ‘body’)40
+ii. forms with o-vocalism from *h3 (e.g., ὄμμα ‘eye’ < *h3ékw-mn̥ , πῶμα ‘drink’
+< *péh3-mn̥ )
+iii. deverbatives with secondary o-grade—for example, with o-grade imported from an iterative-causative in R(o)-éi̯e/o- (e.g., οἶδμα ‘swelling’ ←
+οἰδέω ‘be swollen’; LIV s.v. *h2ei̯d -)
+What, then, of πῶμα itself? While one cannot absolutely rule out the idea of
+an isolated o/e-acrostatic form (as a representative of a rare type), the o-grade
+38
+39
+40
+
+For the phonology, cf. *bhōr > Lat. fūr (i. above).
+See on this derivational possibility Weiss 2011:289, n. 122.
+There is no shortage of theories; several are surveyed in EDG s.v., together with the assertion that “there is no convincing etymology”.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+235
+
+is also conceivably secondary, essentially after the pattern of iii. (i.e., with secondary o-grade based on some related “legitimate” o-grade form). Thus, despite
+the lack of *-i- in *póh2-mn̥ ‘protection’, the form might have been influenced
+by the o-grade in the parallel hysterokinetic derivative *poh2i-mén- (> Gk. ποιμήν ‘shepherd’), a vocalism that itself has been plausibly explained (Oettinger
+2009:345) as remodeled after *póh2i̯-u- (> Gk. πῶυ ‘flock, herd’), an original acrostatic neuter for which o/e-inflection is regular. Alternatively, there could have
+been an o-grade verbal form in the mix, such as an iterative/causative *poh2(i̯)éi̯e/o- (of the type οἶδμα ← οἰδέω, iii. above),41 or possibly an o-grade perfect, as
+has in fact been suggested.42
+There is really only one other serious candidate in the literature for a PIE o/eacrostatic neut. men-stem, namely Lat. unguen ‘ointment’ and cognates.43 But
+the *h2o- interpretation (followed, for example, by LIV s.v. *h2engw-) depends
+crucially on Janda’s analysis of Gk. δῑθύραμβος ‘type of lyric poetry; festival
+name; epithet of Dionysus’ as (originally) *‘die (Doppel-) Türe salbend/
+preisend’ vel sim. (2000:282–287). Janda’s theory is undeniably clever and is in
+some ways attractive; but the Greek word is at least as likely to be a “pre-Greek”
+item (so, unanimously, the Greek etymological dictionaries: see DELG, GEW,
+and EDG s.v.), as Beekes has plausibly argued in some detail (2014:136–137), on
+the basis of the following considerations:
+a. Gk. δῑθύραμβος is only one of a series of other Greek (and possibly preGreek) words in -αμβος and -υμβος, some also with religious/ceremonial senses: ἴαμβος ‘iamb; iambic trimeter’, θρίαμβος ‘hymn to Dionysus’,
+ἴθυμβος ‘Bacchic dance and song’, σήραμβος· εἶδος κανθάρου Hsch.; cf. also
+καράμβας· ῥάβδον ποιμενικὴν Hsch. Janda offers strained attempts to integrate ἴαμβος and θρίαμβος with δῑθύραμβος, but does not mention ἴθυμβος.
+b. Gk. δῑθύραμβος aligns well formally with a well-attested pre-Greek suffixal element -υρ-: cf. nominal material like ζέφυρος ‘[N]W wind’, λάθυρος
+‘kind of bean’, μαυκυρόν· τὸ χλιαρόν Hsch., σάτυρος ‘satyr’; verbal forms such
+as ὀνυρίζεται· ὀδύρεται Hsch., ψιθυρίζω ‘whisper, mutter’; and a series of
+toponyms, such as Τέγυρα (in Boeotia) and others.
+c. Gk. δῑθύραμβος embodies, descriptively, a type of consonantal variation
+(-αμβο- ~ -αμφο-, cf. ΔΙΘΥΡΑΜΦΟΣ in a 5th-c. Attic vase)44 that is potentially symptomatic of pre-Greek status, although simple error or aspirate
+assimilation is admittedly difficult to exclude.
+41
+42
+43
+44
+
+Cf. LIV s.v. *peh2(i̯)- n. 4 on the possible existence of *poh2-éi̯e/o- in Iranian.
+Cf. van Beek 2016:438, n. 72 on perf. *pe-poh2s- and πῶμα.
+Reconstructed as a plain n-stem *h2óngw-n̥ by Stüber (2000), but see Melchert 2007/8:186–
+187 for the reinterpretation as a men-stem.
+SEG 16 (1959) no. 40; this form is not mentioned by Janda.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+236
+
+vine
+
+Note further that a necessary consequence of the *h2o- claim is the assumption that the Italic thematic verb Lat. unguere, U. umtu ‘anoint’ would have its
+o-grade based on the corresponding noun (Lat. unguen, U. umen).45 But this is
+a primary verb, and one would normally expect influence of this kind to go in
+the other direction—cf. again Gk. οἶδμα ← οἰδέω (iii. above). If, then, the Italic
+verb *ongw-e/o- is basic (rather than the n-stem noun), its o-grade could be
+explained in one of two ways. First, if one makes the assumption of PIE initial *h2-, this could point to an o-grade present (a so-called “molō-verb”); but
+no other evidence speaks in favor of that possibility. Secondly, some other factor would account for the o-grade of all of the forms in question, the obvious
+candidate being root-initial *h3-, the traditional explanation.46
+The upshot of these considerations for PIE *stómh1-mn̥ is that, rather than
+reflecting a rare o/e-acrostatic neut. men-stem, the o-grade might better be
+explained via influence from one or both of the formations described above,
+namely a “τόμος form” *stómh1-o- or a root noun *stṓm/*stém-, the latter perhaps in the adjusted form *stṓm/*stóm- (cf. Gk. πούς/ποδός ‘foot’ < *pód-/
+*péd-).47 In other words, *stómh1-mn̥ ← *stómh1-o- (or ← *stóm-) would be comparable to *poh2i-mén- ← *póh2i̯-u- (above), thereby striking a blow against the
+already questionable notion of “o/e-acrostatic neut. men-stems”.
+In a still broader perspective: this is a time when the classic “Erlangen
+model” of athematic nominal accent and ablaut48 is undergoing serious reevaluation, in more than one respect. Thus, most recently, Kloekhorst 2018 proposes a new conception of the pre-PIE background of the traditional system.
+But there is growing skepticism about the robustness of some of the traditional accent/ablaut classes themselves,49 and there are new approaches to
+the nature and assignment of accent in PIE, such as the so-called “compositional” approach.50 Thus it remains important—indeed, it is now especially
+important—to continue to circumscribe as accurately as possible the descriptive foundations of PIE nominal categories.
+
+45
+46
+47
+48
+49
+
+50
+
+So Janda 2000:284, followed by LIV s.v. *h2engw-.
+Cf. Melchert’s properly agnostic notation “*h2/3engw-”.
+Cf. Melchert’s own assumption that the hysterokinetic derivative *stomh1-mén- owes its
+o-grade vocalism to *stómh1-mn̥ (§ 3.2(iii.)).
+A standard version of the theory is described in Fortson 2010:119–122.
+Thus, for example, the proterokinetic category has come under particular fire, as in
+the reanalysis by Kümmel (2014), demonstrating connections between suffix ablaut and
+phonological structure.
+See Kiparsky 2010; a recent study in that framework, with typological grounding and
+detailed application to Anatolian, is Yates 2017.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+237
+
+Acknowledgments
+An earlier version of this paper was presented at the 37th East Coast IndoEuropean Conference (University of Michigan, June 2018). I am deeply grateful for comments and suggestions received at that time, and also for helpful
+critique from two anonymous IEL referees and from Ron Kim. The usual disclaimers apply.
+
+References
+Barnes, Timothy. 2009. Homeric μῶλος Ἄρηος, Hittite mallai h̬ arrai. In Stephanie W.
+Jamison, H. Craig Melchert, and Brent Vine (eds.), Proceedings of the 20th Annual
+UCLA Indo-European Conference, 1–17. Bremen: Hempen.
+Beekes, Robert S.P. 2014. Pre-Greek: Phonology, Morphology, Lexicon. ed. by Stefan Norbruis. Leiden/Boston: Brill.
+Buck, Carl Darling and Walter Petersen. 1945. A Reverse Index of Greek Nouns and Adjectives (arranged by terminations with brief historical introduction). Chicago: University of Chicago Press.
+Byrd, Andrew Miles. 2015. The Indo-European Syllable. Leiden/Boston: Brill.
+Chantraine, Pierre. 1933. La formation des noms en grec ancien. Paris: Klincksieck.
+Darms, Georg. 1978. Schwäher und Schwager, Hahn und Huhn: Die Vrddhi-Ableitung im
+Germanischen. Munich: Kitzinger (MSS Beiheft 9).
+Debrunner, Albert. 1954. Altindische Grammatik, II.2: Die Nominalsuffixe. Göttingen:
+Vandenhoeck & Ruprecht.
+DELG: Pierre Chantraine, Dictionnaire étymologique de la langue grecque: Histoire des
+mots. Paris: Klincksieck, 1999.
+EDG: Robert S.P. Beekes, Etymological Dictionary of Greek. Leiden/Boston: Brill, 2010.
+EDHIL: Alwin Kloekhorst, Etymological Dictionary of the Hittite Inherited Lexicon. Leiden/Boston: Brill, 2008.
+EDPG: Guus Kroonen, Etymological Dictionary of Proto-Germanic. Leiden/Boston: Brill,
+2013.
+EWAia: Manfred Mayrhofer, Etymologisches Wörterbuch des Altindoarischen. Heidelberg: Winter, 1986–2001.
+García Ramón, José Luis. 2018. Ancient Greek dialectology: old and new questions,
+recent developments. In Georgios K. Giannakis, Emilio Crespo, and Panagiotis Filos
+(eds.), Studies in Ancient Greek Dialects: From Central Greece to the Black Sea, 29–106.
+Berlin/Boston: de Gruyter.
+Georgacas, Demetrius J. 1958. A contribution to Greek word history: derivation and etymology. Glotta 36.161–193.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+238
+
+vine
+
+GEW: Hjalmar Frisk, Griechisches etymologisches Wörterbuch. Heidelberg: Winter,
+1960–1972.
+Gunkel, Dieter. 2011. The emergence of foot structure as a factor in the formation of
+Greek verbal nouns in -μα(τ)-. Münchener Studien zur Sprachwissenschaft 65.77–103.
+Hamp, Eric P. 1982. Welsh safn, Breton staon. Bulletin of the Board of Celtic Studies 30.44–
+45.
+Hiersche, Rolf. 1964. Untersuchungen zur Frage der Tenues aspiratae im Indogermanischen. Wiesbaden: Harrassowitz.
+IEW: Julius Pokorny, Indogermanisches etymologisches Wörterbuch. Tübingen/Basel:
+Francke, 1959.
+Jamison Commentary: Stephanie W. Jamison, Rigveda Translation: Commentary.
+rigvedacommentary.alc.ucla.edu (accessed 4/23/18).
+Jamison, Stephanie W. and Joel P. Brereton. 2014. The Rigveda: The Earliest Religious
+Poetry of India. New York: Oxford University Press.
+Janda, Michael. 2000. Eleusis: Das indogermanische Erbe der Mysterien. Innsbruck:
+Institut für Sprachwissenschaft der Universität Innsbruck.
+KEWA: Manfred Mayrhofer, Kurzgefaßtes etymologisches Wörterbuch des Altindischen.
+Heidelberg: Winter, 1956–1980.
+Kiparsky, Paul. 2010. Compositional vs. paradigmatic approaches to accent and ablaut.
+In Stephanie W. Jamison, H. Craig Melchert, and Brent Vine (eds.), Proceedings of the
+21st Annual UCLA Indo-European Conference, 137–181. Bremen: Hempen.
+Kloekhorst, Alwin. 2018. The origin of the Proto-Indo-European nominal accent-ablaut
+paradigms. In Elisabeth Rieken (ed.), 100 Jahre Entzifferung des Hethitischen, 179–
+203. Wiesbaden: Reichert.
+Kölligan, Daniel. 2017. Dissimilatorischer Schwund von /l/ im Griechischen. Historische
+Sprachforschung 130.42–62.
+Kretschmer, Paul and Ernst Locker. 1944. Rückläufiges Wörterbuch der griechischen
+Sprache. Göttingen: Vandenhoeck & Ruprecht.
+Kümmel, Martin. 2014. Zum “proterokinetischen” Ablaut. In Norbert Oettinger and
+Thomas Steer (eds.), Das Nomen im Indogermanischen: Morphologie, Substantiv versus Adjektiv, Kollektivum, 164–179. Wiesbaden: Reichert.
+de Lamberterie, Charles. 1990. Les adjectifs grecs en -υς: sémantique et comparaison.
+Louvain-la-Neuve: Peeters.
+LIV: Helmut Rix and Martin Kümmel, Lexikon der indogermanischen Verben2. Wiesbaden: Reichert, 2001.
+Lubotsky, Alexander. 1997. Review of Marianne Volkart, Zu Brugmanns Gesetz im Altindischen (1994). Kratylos 42.55–59.
+Meissner, Torsten and Olga Tribulato. 2002. Nominal composition in Mycenaean Greek.
+Transactions of the Philological Society 100:3.289–330.
+Melchert, H. Craig. 1994. Anatolian Historical Phonology. Amsterdam/Atlanta: Rodopi.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+greek στωμύλος ‘chatty’
+
+239
+
+Melchert, H. Craig. 2007/8. Neuter stems with suffix *-(e)n- in Anatolian and ProtoIndo-European. Die Sprache 47:2.182–191.
+Nussbaum, Alan J. 2008. Remarks on one or more Greek words: actually just epic δῶ
+‘dwelling’. Paper presented at the 27th East Coast Indo-European Conference (University of Georgia).
+Nussbaum, Alan J. 2009. Genitivalia. Paper presented at the 28th East Coast IndoEuropean Conference (University of Iceland).
+Nussbaum, Alan J. 2017. Agentive and other derivatives of “τόμος-type” nouns. In Claire
+Le Feuvre, Daniel Petit, and Georges-Jean Pinault (eds.), Verbal Adjectives and Participles in Indo-European Languages, 233–266. Bremen: Hempen.
+Oettinger, Norbert. 1982. Die Dentalerweiterung von n-Stämmen und Heteroklitika
+im Griechischen, Anatolischen und Altindischen. In Johann Tischler (ed.), Serta
+Indogermanica: Festschrift für Günter Neumann, 233–245. Innsbruck: Institut für
+Sprachwissenschaft der Universität Innsbruck.
+Oettinger, Norbert. 2003. Zum Ablaut von n-Stämmen im Anatolischen und der
+Brechung ē > ya. In Eva Tichy, Dagmar S. Wodtko, and Britta Irslinger (eds.), Indogermanisches Nomen: Derivation, Flexion und Ablaut, 141–152. Bremen: Hempen.
+Oettinger, Norbert. 2009. Fälle von o-Stufe der Wurzel hysterokinetischer Nomina im
+Indogermanischen. In Rosemarie Lühr and Sabine Ziegler (eds.), Protolanguage and
+Prehistory, 340–347. Wiesbaden: Reichert.
+Olsen, Birgit Anette. 1999. The Noun in Biblical Armenian: Origin and Word Formation,
+with Special Emphasis on the Indo-European Heritage. Berlin/New York: de Gruyter.
+Pinault, Georges-Jean. 2000. Védique dámūnas-, latin dominus et l’ origine du suffixe de
+Hoffmann. Bulletin de la Société de linguistique de Paris 95:1.61–118.
+Rasmussen, Jens Elmegård. 1984 [1999]. Miscellaneous morphological problems in
+Indo-European languages III: 12. Greek στόμα ‘mouth’, στωμύλος ‘talkative’. In Selected Papers on Indo-European Languages I.146–149. Copenhagen: Museum Tusculanum.
+Rasmussen, Jens Elmegård. 1989. Studien zur Morphophonemik der indogermanischen
+Grundsprache. Innsbruck: Institut für Sprachwissenschaft der Universität Innsbruck.
+Schwyzer, Eduard. 1939. Griechische Grammatik I: Allgemeiner Teil, Lautlehre, Wortbildung, Flexion. Munich: Beck.
+Steriade, Donca. 2018. Quantitative rhythm and Saussure’s tribrach law. In David M.
+Goldstein, Stephanie W. Jamison, and Brent Vine (eds.), Proceedings of the 28th
+Annual UCLA Indo-European Conference, 231–265. Bremen: Hempen.
+Stüber, Karin. [1997] 2000. Urindogermanisch *h1nóm-n̥ ‘Name’, *h2óngu̯ -n̥ ‘Salbe’ und
+der Ablaut der neutralen n-Stämme. Die Sprache 39.74–88.
+Tremblay, Xavier. 1996. Un nouveau type apophonique des noms suffixaux de l’ indoeuropéen. Bulletin de la Société de Linguistique de Paris 91.97–145.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+240
+
+vine
+
+van Beek, Lucien. 2016. The etymology of Greek πέπᾱμαι. In Bjarne Simmelkjær Sandgaard Hansen, Benedicte Nielsen Whitehead, Thomas Olander, and Birgit Anette
+Olsen (eds.), Etymology and the European Lexicon, 427–441. Wiesbaden: Reichert.
+Vine, Brent. 2011. Initial *mo- in Latin and Italic. Münchener Studien zur Sprachwissenschaft 65.261–286.
+Weiss, Michael. 2011. Outline of the Historical and Comparative Grammar of Latin. 2nd
+corrected printing. Ann Arbor/New York: Beech Stave.
+Weiss, Michael. 2016. ‘Sleep’ in Latin and Indo-European: on the non-verbal origin of
+Latin sōpiō. In Dieter Gunkel, Joshua T. Katz, Brent Vine, and Michael Weiss (eds.),
+Sahasram Ati Srajas: Indo-Iranian and Indo-European Studies in Honor of Stephanie
+W. Jamison, 470–485. Ann Arbor/New York: Beech Stave.
+Weiss, Michael. 2017. The paradigm of the word for ‘house, home’ in Old Irish and
+related issues. Indogermanische Forschungen 122.61–82.
+Wennerberg, Claes. 1972. Indogermanisch *stomen- ‘Mund’. Die Sprache 18.24–33.
+Widmer, Paul. 2008. Drei griechische *-ōu̯ -Stämme. In Brigitte Huber, Marianne
+Volkart, and Paul Widmer (eds.), Chomolangma, Demawend und Kasbek: Festschrift
+für Roland Bielmeier zum 65. Geburtstag, 615–630. Halle: International Institute for
+Tibetan and Buddhist Studies.
+Yates, Anthony D. 2017. Lexical Accent in Cupeño, Hittite, and Indo-European. Ph.D.
+diss., University of California, Los Angeles.
+
+Indo-European Linguistics 7 (2019) 222–240
+
+
