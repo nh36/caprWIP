@@ -331,6 +331,7 @@ define pgrmWeakTailVowel [
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
     ō:{*ō} θ:{*θ} i:{*i} |
     ō:{*ō} θ:{*θ} z:{*z} |
+    ō:{*ō} z:{*z} |
     i:{*i} θ:{*θ} ō:{*ō}
 ];
 
@@ -788,7 +789,17 @@ define PGmcRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _
 ];
 
-define PGmcFinalZLoss [{*z} -> 0 || _ .#.];
+# PGmc ō-stem gen.sg. *-ōz: R/T vol.2 §3.1.1 (p.58): "PGmc *gebōz → PWGmc *geba".
+# Z-loss with shortening of preceding bimoric *-ō to *-a, as a single PWGmc development.
+# R/T §3.3.1 (p.98): z-loss preceded rhotacism — final *-z was never rhotacized.
+# This is NOT a shortcut: R/T present no intermediate *-gebō stage. The z-loss and
+# vowel shortening were a single process. Modeling as two steps would over-apply
+# (a separate "final *-ō → *-a" rule would also affect nom.sg. *-ō, which is wrong).
+# Must apply BEFORE general z-deletion (sequential .o.) to prevent ambiguous output.
+# See DEV_NOTES.md for full analysis including exceptionlessness discussion.
+define PGmcFinalOZShortening [{*ō} {*z} -> {*a} || _ .#.];
+define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
+define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
 
 define OEFinalSchwaApocope [
     {*ă} -> 0 || _ .#.
