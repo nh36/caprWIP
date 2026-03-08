@@ -2373,6 +2373,41 @@ Available online at https://ewa.saw-leipzig.de/headwords/de for further consulta
 
 ---
 
+## OEAwLongDiphthong: PGmc *aw → OE ēaw before vowels (Campbell §272)
+
+PGmc *aw before a following vowel → OE ēaw, parallel to the existing
+OEEwLongDiphthong (*ew → ēow). The *w glide is preserved because it remains
+intervocalic; in pre-consonantal / word-final position, *aw had already merged
+with *au → ēa via OEAuFronting + OEDiphthongLeveling.
+
+**Rule:** `{*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}]`
+
+The context `[EnglishStarVocalic | {*ô}]` ensures the rule fires only when *w
+is immediately followed by a vowel. This excludes *j-initial suffixes (e.g.
+*-jăną, *-ją) where *a fronts via i-umlaut instead. {*ô} (trimoraic) is added
+explicitly because it is not in PGmcStarVocalic.
+
+**Pipeline placement:** After OEEwLongDiphthong, before AngloFrisianBrightening.
+At this point *a is still unfronted, so the rule targets *a directly.
+
+**Fixes (3 new matches):**
+- *dawwō → dēaw (was dawu) — dew
+- *strawą → strēaw (was streaw) — straw
+- *xawwăną → hēawan (was heawan) — hew
+
+**Vowel fixed but still mismatching (sc/sċ palatal marker):**
+- *skawōjăną → sċēawian (expected scēawian)
+- *skawô → sċēawa (expected scēawa)
+- *skawōθi → sċēaweþ (expected scēaweþ)
+
+**Correctly excluded:**
+- *xawwją → heow (expected hīeġ) — *j follows *w, not a vowel
+- *strawjăną → streowan (expected strewian) — *j follows *w
+
+Mismatches: 103 → 100.
+
+---
+
 ## Mismatch trajectory — full history
 
 | Date | Mismatches | Matches | Total rows | Match rate |
@@ -2383,3 +2418,4 @@ Available online at https://ewa.saw-leipzig.de/headwords/de for further consulta
 | 2026-02-06b | 262 | 108 | 370 | 29.2% |
 | 2026-02-07 | 256 | 120 | 376 | 31.9% |
 | 2026-03-08 | 103 | 277 | 380 | 72.9% |
+| 2026-03-09 | 100 | 280 | 380 | 73.7% |
