@@ -1,3 +1,38 @@
+# Development Notes — Proto-Germanic → Old English FST Pipeline
+
+## Table of Contents
+
+### Polished topic sections
+- [NWGmc u-lowering Exceptions Near Labials](#nwgmc-u-lowering-exceptions-near-labials)
+- [PWGmc *lþ → *ld Voicing and Verner's Law Overlap](#pwgmc-lþ--ld-voicing-and-verners-law-overlap)
+- [PWGmc *j-related Sound Changes](#pwgmc-j-related-sound-changes--reviewed-see-notable_findingsmd-3)
+
+### Project status and archived work
+- [Project Status (as of 2026-03-08)](#project-status-as-of-2026-03-08)
+- [Consonant Mismatch Bucket Refinement (2026-02-07)](#consonant-mismatch-bucket-refinement-2026-02-07)
+- [A-Restoration Fix (2026-02-06)](#a-restoration-fix-2026-02-06)
+
+### Working diary
+- [Paused: Modern English (RP) Sandbox — Oct–Dec 2025](#paused-modern-english-rp-sandbox--working-diary-octdec-2025)
+- [OE-focused diary (Dec 2025 – Feb 2026)](#2025-12-21) — begins after sandbox section
+
+### Polished analyses (Feb–Mar 2026)
+- [Bimoraic vs. Trimoraic *ō: Comprehensive Analysis](#bimoric-vs-trimoric-ō-comprehensive-analysis-session-028)
+- [Class II Weak Verb Exploration](#class-ii-weak-verb-exploration-class2-weak-exploration-branch)
+- [Cognate set 379 "rock" → corrected to "coat"](#cognate-set-379-rock--corrected-to-coat-rukkăz)
+- [Labiovelar Proto-Form Corrections](#labiovelar-proto-form-corrections-and-post-velar-w-loss-rt-642)
+- [Water fix: PWGmc ō-shortening](#water-fix-pwgmc-ō-shortening-and-a-restoration-correction-3a45a8b)
+- [A-restoration: ræst, tæppa, stemn](#a-restoration-in-ō-stems-and-n-stems-ræst-tæppa-stemn-fronting_missing__afb)
+- [The stefn/stemn Problem](#the-stefnstemn-problem-local-transponent-decision)
+- [z-loss/rhotacism and bimoraic/trimoraic cross-source analysis](#historical-phonology-of-final--z-loss-and-its-interaction-with-rhotacism)
+
+### Companion documents
+- `docs/analysis/notable_findings.md` — Cross-referenced scholarly discussion (§§1–5)
+- `server/fsts/germanic.txt` — FST source
+- `server/data/germanic-aligned-final.tsv` — Gold standard data
+
+---
+
 ## NWGmc u-lowering Exceptions Near Labials
 
 **Date:** 2026-02-13
@@ -136,14 +171,14 @@ implementing a general solution.
 
 ---
 
-## PWGmc *j-related Sound Changes — NEEDS EXPERT REVIEW
+## PWGmc *j-related Sound Changes — Reviewed (see notable_findings.md §3)
 
 **Date:** 2026-02-13
 
 ### Overview
 Two PWGmc sound changes involve the loss or transformation of *j. Both are
 historically legitimate but raise questions about how they should be formalized
-in the FST. These need discussion with experts.
+in the FST. These have been reviewed in detail in `docs/analysis/notable_findings.md` §3.
 
 ### 1. PWGmcSyllabicJ: *ja/*ją → *i (after light syllable, word-finally)
 
@@ -187,11 +222,31 @@ to *iu before *ō. Different mechanisms, different environments, different outco
 
 ---
 
-## CURRENT FOCUS (as of 2026-02-07)
+## Project Status (as of 2026-03-08)
 
-## Proto-West Germanic Stage Implementation (2026-02-07) - IN PROGRESS
+**Pipeline:** PGmc → OE FST builds clean; 50+ ordered sound-change stages.
+**Coverage:** 103 mismatches / 277 matches out of 380 OE rows (**72.9% match rate**).
+**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (current).
 
-**LATEST UPDATE (2026-02-07 evening):** PWGmc stage now consolidated and historically accurate ✓
+**Reference library:** Ringe & Taylor (vols. 1–2), Hogg (vol. 1), Campbell OEG, Bülbring,
+Luick, Kaluza, Orel, Kroonen, EWA Band I (Lloyd & Springer), plus specialised articles.
+Cross-referenced in `docs/analysis/notable_findings.md` (§§1–5).
+
+**Key recent achievements (Feb–Mar 2026):**
+- Bimoraic vs. trimoraic *ō analysis completed and verified against Bülbring, Luick, R/T, Hogg
+- stefn/stemn dossier: pre-OE transponent *stebn- adopted, full scholarly review filed
+- z-loss/rhotacism chronology documented; exceptionlessness concern resolved
+- Campbell OEG OCR'd and integrated; EWA Band I extracted
+- notable_findings.md §§1–4 cross-referenced with Campbell, German-language sources
+
+**Remaining work:** 103 mismatches (breaking, palatalization, consonant clusters, data alignment).
+See `docs/analysis/notable_findings.md` for flagged scholarly issues.
+
+---
+
+### Archived: Proto-West Germanic Stage Implementation (2026-02-07)
+
+*The following records the Feb 2026 PWGmc consolidation work. Statistics cited are from that date.*
 
 **Changes completed:**
 1. **Consolidated PWGmc into WestGermanic** (user correction: they're the same stage)
@@ -280,13 +335,13 @@ Step-by-step per sources:
 - `server/docs/debug_snapshots/oe_mismatch_report_2026-02-07_refined_v3.txt`
 - `server/docs/debug_snapshots/oe_full_trace_report_2026-02-07_refined_buckets.txt`
 
-**Overall statistics:** 256 total mismatches, 120 perfect matches (31.9% match rate)
+**Statistics at the time:** 256 total mismatches, 120 perfect matches (31.9% match rate)
 
 ---
 
-## CURRENT FOCUS (as of 2026-02-06)
+### Archived: Heavy Syllable Nasal Apocope (2026-02-06) — EMPIRICAL DISCOVERY
 
-## Heavy Syllable Nasal Apocope (2026-02-06) — EMPIRICAL DISCOVERY
+*Statistics below are from 2026-02-06.*
 
 **Summary:** Implemented experimental rule deleting proto *-ą after heavy syllables, achieving 
 net +28 case improvement (41 fixes, 13 collateral). This represents an **empirically-derived 
@@ -304,8 +359,8 @@ consonant cluster before ending). After implementing heavy-syllable conditioned 
 
 **What the modeling reveals:**
 The same heavy/light conditioning that applied to *-i/*-u **also applied to *-ą**, despite 
-this not being explicitly documented in our sources. The empirical improvement (282→262 
-mismatches, 23.8%→29.2% match rate) strongly supports this extension.
+this not being explicitly documented in our sources. The empirical improvement at the time (282→262 
+mismatches, 23.8%→29.2% match rate) strongly supported this extension.
 
 This is a **learned phonological pattern** — the computational model has helped us 
 identify a systematic sound change not fully articulated in the reference literature.
@@ -315,7 +370,7 @@ identify a systematic sound change not fully articulated in the reference litera
 2. Extended `OldEnglishHeavyMarker` to mark *-ą when after heavy syllables
 3. Inserted into pipeline after `OldEnglishHighVowelApocope`, before `OldEnglishWeakTailReduction`
 
-**Result:** 282 → 262 total mismatches (-7.1%). Match rate: 23.8% → 29.2% (+5.4 points).
+**Result (2026-02-06):** 282 → 262 total mismatches (-7.1%). Match rate: 23.8% → 29.2% (+5.4 points).
 - `final_vowel_extra`: 60 → 19 (-41 FIXED!)
 - `final_vowel_missing`: 34 → 38 (+4 collateral)
 - `consonant_mismatch_other`: 40 → 49 (+9 collateral)
@@ -380,7 +435,7 @@ form issues.
 - Latest OE diagnostics (2026-02-06):
   - `docs/debug_snapshots/oe_mismatch_report_2026-02-06a.txt` (bucketed mismatches)
   - `docs/debug_snapshots/oe_full_trace_report_2026-02-06a.txt` (full per-lexeme stage trace)
-  - Coverage: **280 mismatches / 90 matches** (370 total OE rows).
+  - Coverage at the time: **280 mismatches / 90 matches** (370 total OE rows).
 - Start‑here repro (fresh run):
   - `python3 server/tools/oe_mismatch_report.py --output docs/debug_snapshots/oe_mismatch_report_YYYY-MM-DDa.txt`
   - `python3 server/tools/oe_full_trace_report.py --output docs/debug_snapshots/oe_full_trace_report_YYYY-MM-DDa.txt`
@@ -399,7 +454,7 @@ form issues.
     and expanded `OldEnglishARestorationStrongOTail` to include common weak-tail patterns where
     A-restoration should still apply (infinitives, agent nouns, etc.).
   - Result: `fronting_missing_no_trigger` dropped from 30 to 11 (19 words fixed).
-- Top mismatch counts (2026-02-06 report; 280 total):
+- Top mismatch counts (2026-02-06 report; 280 total at the time):
   - `final_vowel_extra`: 56
   - `consonant_mismatch_other`: 40
   - `final_vowel_missing`: 34
@@ -451,7 +506,7 @@ form issues.
   - Epenthesis is now a real phonological stage **before** star removal and appears in the full trace.
   - Deterministic `r`-epenthesis uses an `{E}` placeholder with back-shift (→`*o`) vs front fallback (→`*e`).
   - `l`-epenthesis is **restricted to final `*gl` only** (added `OldEnglishGLInsertion`), to avoid over-generation (`*xaslăz` → `hæsel` regression).
-  - Current OE mismatch report (latest run in `docs/debug_snapshots/oe_mismatch_report_2026-01-22g.txt`): **291 mismatches / 79 matches** (370 total OE rows).
+  - Current OE mismatch report (2026-01-22 run): **291 mismatches / 79 matches** (370 total OE rows at the time).
 - Next actionable targets (carryover):
   - **Long-vowel missing (now 5 items as of 2026-01-10):** map *au/*eu/*iu to long diphthongs and move velar shortening out of OE if still needed.
   - 2026-01-10 follow-up: `docs/debug_snapshots/oe_mismatch_report_2026-01-10a.txt` shows long-vowel-missing bucket down to **3** items after extending `OldEnglishDiphthongLeveling`/`OldEnglishEwLongDiphthong`. New log: `docs/debug_snapshots/oe_long_diphthong_traces_2026-01-10.txt`; stats snapshot: `docs/debug_snapshots/oe_apply_down_stats_2026-01-10a.txt`.
@@ -468,6 +523,15 @@ form issues.
     - `*xattuz → hōd`: expected reflex doesn’t match the provided proto stem (phonologically it yields OE “hat”); fix data alignment rather than phonology.
   - 2026-01-10b data note: the “fire” row now uses dat.sg. *fūri (> fȳre) to avoid modelling nominative levelling; see TSV comment.
   - 2026-01-10 rollback: backed out the short-diphthong lengthening experiment; diagnostics back to the post-*fūri* baseline (293 mismatches) with `slaxăną` still in the long-vowel bucket for future work.
+
+---
+
+## Paused: Modern English (RP) Sandbox — Working Diary (Oct–Dec 2025)
+
+*The following entries document the Modern English RP sandbox experiments.*
+*This line of work is paused; the current focus is OE.*
+
+---
 
 ## 2025-12-07
 
@@ -546,7 +610,6 @@ form issues.
 - Follow-up determinism pass: instrumented `trace_english_sandbox.py` for the rhotic probes, then tried to sequentialise both `EnglishSandboxCoreVowelRules` and `EnglishSandboxShortVowelSplit` so each vowel rewrite would fire exactly once (logs in `/usr/app/tmp/vowel_branching_trace.txt`). That change did collapse the outputs (e.g., `*bardaz` finally reduced to a single path), but coverage cratered to 168/376. Reverted to the previous definitions and reran the workflow (`docs/debug_snapshots/english_tracer_log_2025-12-06l.txt`) so we’re back at **206/376** successes with the older branching behaviour intact.
 - Takeaway: branching now clearly comes from overlapping clauses inside the core vowel block and the short-vowel split, but wholesale sequentialisation is too disruptive. Next attempt should peel off one context at a time (e.g., only the `{*ō}` liquid rule) and validate immediately rather than rewriting the entire stage.
 
-- Follow-up audit (logs at `docs/debug_snapshots/english_tracer_log_2025-12-06f.txt`) showed that naive rhotic/weak-tail rewrites tanked coverage, so for now only two safe tweaks remain live: short proto `{*a}` now fronts to `{æ}` by default, and `{*ą}` weak tails convert to `{əʊ}` in `EnglishSandboxWeakTailReductions`. Analyzer coverage is still 205/376, but at least the tail vowels surface as `{…əʊ}` for forms like `*gebaną/*br{au}dą`, which will make future schwa/diphthong work easier to verify.
 
 ## 2025-12-05
 
@@ -1015,209 +1078,6 @@ See you tomorrow!
 
 ### KIT/FOOT contexts + /r/-smoothing harness
 
-- Extended  so FOOT now targets alveolar codas in both starred and plain alphabets ( + weak-tail templates, plain  codas) and added a plain  feed so the KIT split can finally act on closed  syllables. Introduced  between the vowel stack and  so  can surface as  before  deletes .
-- Recompiled via Opening file 'fsts/germanic.txt'.
-defined ProtoVowel: 1.1 kB. 2 states, 22 arcs, 22 paths.
-defined ProtoConsonant: 1.4 kB. 2 states, 28 arcs, 28 paths.
-defined ProtoSymbol: 2.3 kB. 2 states, 50 arcs, 50 paths.
-defined ProtoNucleus: 719 bytes. 4 states, 14 arcs, 14 paths.
-defined ProtoOnsetCore: 5.5 kB. 2 states, 125 arcs, 125 paths.
-defined ProtoOnset: 5.5 kB. 2 states, 125 arcs, 126 paths.
-defined ProtoCodaCore: 5.3 kB. 2 states, 121 arcs, 121 paths.
-defined ProtoCoda: 7.2 kB. 3 states, 242 arcs, 14763 paths.
-defined ProtoStrongSyllable: 13.9 kB. 7 states, 634 arcs, 26041932 paths.
-defined ProtoWeakOnset: 1.4 kB. 2 states, 28 arcs, 29 paths.
-defined ProtoWeakOralNucleus: 585 bytes. 2 states, 9 arcs, 9 paths.
-defined ProtoWeakNasalNucleus: 203 bytes. 2 states, 1 arc, 1 path.
-defined ProtoWeakCoda: 623 bytes. 2 states, 10 arcs, 11 paths.
-defined ProtoWeakOralSyllable: 2.0 kB. 4 states, 56 arcs, 2871 paths.
-defined ProtoWeakNasalSyllable: 1.4 kB. 3 states, 30 arcs, 29 paths.
-defined ProtoWeakTail: 3.4 kB. 7 states, 144 arcs, 8067801 paths.
-defined ProtoSyllable: 13.9 kB. 7 states, 634 arcs, 26041932 paths.
-defined ProtoWord: 17.8 kB. 13 states, 863 arcs, 209143179497574 paths.
-defined Cons: 1.4 kB. 2 states, 28 arcs, 28 paths.
-defined Vowel: 1.1 kB. 2 states, 22 arcs, 22 paths.
-defined FrontVowel: 630 bytes. 2 states, 10 arcs, 10 paths.
-defined BackVowel: 587 bytes. 2 states, 9 arcs, 9 paths.
-defined Sonorant: 456 bytes. 2 states, 6 arcs, 6 paths.
-defined pgrmInitSimple: 1.5 kB. 24 states, 44 arcs, 22 paths.
-defined pgrmMedial: 461 bytes. 6 states, 8 arcs, 4 paths.
-defined pgrmOnsetCore: 2.3 kB. 45 states, 99 arcs, 129 paths.
-defined pgrmOnset: 2.3 kB. 45 states, 99 arcs, 130 paths.
-defined pgrmShortVowel: 577 bytes. 8 states, 12 arcs, 6 paths.
-defined pgrmNasalVowel: 347 bytes. 4 states, 4 arcs, 2 paths.
-defined pgrmLongVowel: 524 bytes. 7 states, 10 arcs, 5 paths.
-defined pgrmDiphthong: 477 bytes. 7 states, 9 arcs, 4 paths.
-defined pgrmNucleus: 952 bytes. 14 states, 27 arcs, 15 paths.
-defined pgrmCodaSimple: 1.3 kB. 21 states, 38 arcs, 19 paths.
-defined pgrmCodaComplex: 3.2 kB. 77 states, 166 arcs, 104 paths.
-defined pgrmCodaNonEmpty: 3.4 kB. 79 states, 171 arcs, 123 paths.
-defined pgrmCoda: 3.4 kB. 79 states, 171 arcs, 124 paths.
-defined pgrmStrongPlainLight: 3.4 kB. 52 states, 159 arcs, 780 paths.
-defined pgrmStrongPlainHeavy: 10.5 kB. 150 states, 603 arcs, 256046 paths.
-defined pgrmStrongPlain: 10.2 kB. 148 states, 583 arcs, 256826 paths.
-defined pgrmStrongNasal: 2.7 kB. 48 states, 119 arcs, 260 paths.
-defined pgrmWeakOnset: 461 bytes. 6 states, 8 arcs, 5 paths.
-defined pgrmWeakOralNucleus: 519 bytes. 7 states, 10 arcs, 5 paths.
-defined pgrmWeakNasalNucleus: 347 bytes. 4 states, 4 arcs, 2 paths.
-defined pgrmWeakCoda: 577 bytes. 8 states, 12 arcs, 7 paths.
-defined pgrmWeakOralSyllable: 1.0 kB. 19 states, 35 arcs, 175 paths.
-defined pgrmWeakNasalSyllable: 611 bytes. 9 states, 14 arcs, 10 paths.
-defined pgrmWeakTailZero: 160 bytes. 1 state, 0 arcs, 1 path.
-defined pgrmWeakTailVowel: 2.3 kB. 71 states, 98 arcs, 38 paths.
-defined pgrmWeakTail: 2.3 kB. 71 states, 98 arcs, 39 paths.
-defined pgrmWord: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
-defined RemoveStars: 332 bytes. 1 state, 2 arcs, Cyclic.
-defined GermanLexOnset: 2.6 kB. 47 states, 116 arcs, 129 paths.
-defined GermanLexCoda: 3.3 kB. 78 states, 167 arcs, 124 paths.
-defined GermanLexConsonant: 4.5 kB. 85 states, 237 arcs, 191 paths.
-defined GermanLexShortVowel: 577 bytes. 8 states, 12 arcs, 6 paths.
-defined GermanLexLongVowel: 524 bytes. 7 states, 10 arcs, 5 paths.
-defined GermanLexNasalVowel: 347 bytes. 4 states, 4 arcs, 2 paths.
-defined GermanLexVowel: 990 bytes. 15 states, 26 arcs, 13 paths.
-defined GermanLexDiphthong: 477 bytes. 7 states, 9 arcs, 4 paths.
-defined GermanProtoInput: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
-defined EnglishSurfaceVowel: 897 bytes. 8 states, 20 arcs, 18 paths.
-defined EnglishSurfaceConsonant: 1.1 kB. 2 states, 23 arcs, 23 paths.
-defined EnglishSurfaceOnset: 1.9 kB. 4 states, 69 arcs, 12720 paths.
-defined EnglishSurfaceCoda: 1.9 kB. 4 states, 69 arcs, 12720 paths.
-defined EnglishSurfaceSyllable: 5.3 kB. 14 states, 266 arcs, 2912371200 paths.
-defined EnglishSurface: 5.9 kB. 12 states, 306 arcs, Cyclic.
-defined DutchSurfaceVowel: 890 bytes. 6 states, 18 arcs, 16 paths.
-defined DutchSurfaceConsonant: 1004 bytes. 2 states, 19 arcs, 19 paths.
-defined DutchSurfaceOnset: 1.6 kB. 4 states, 57 arcs, 7240 paths.
-defined DutchSurfaceCoda: 1.6 kB. 4 states, 57 arcs, 7240 paths.
-defined DutchSurfaceSyllable: 4.4 kB. 12 states, 212 arcs, 838681600 paths.
-defined DutchSurface: 6.0 kB. 12 states, 314 arcs, Cyclic.
-defined GermanSurfaceShortVowel: 713 bytes. 2 states, 12 arcs, 12 paths.
-defined GermanSurfaceMacronVowel: 418 bytes. 2 states, 5 arcs, 5 paths.
-defined GermanSurfaceDiphthong: 414 bytes. 4 states, 5 arcs, 3 paths.
-defined GermanSurfaceVowel: 976 bytes. 4 states, 20 arcs, 20 paths.
-defined GermanSurfaceConsonant: 1.1 kB. 4 states, 24 arcs, 24 paths.
-defined GermanSurfaceOnset: 3.2 kB. 10 states, 156 arcs, 14327 paths.
-defined GermanSurfaceCoda: 3.2 kB. 10 states, 156 arcs, 14327 paths.
-defined GermanSurfaceSyllable: 9.5 kB. 22 states, 529 arcs, 4105258580 paths.
-defined GermanSurface: 12.4 kB. 20 states, 716 arcs, Cyclic.
-defined EnglishInitialKnMarkers: 542 bytes. 2 states, 10 arcs, Cyclic.
-defined EnglishConsonantRules: 4.3 kB. 10 states, 206 arcs, Cyclic.
-defined EnglishGhMarker: 1.7 kB. 3 states, 53 arcs, Cyclic.
-defined EnglishSilentInitialCleanup: 418 bytes. 1 state, 4 arcs, Cyclic.
-defined EnglishGlideDeletion: 2.0 kB. 4 states, 73 arcs, Cyclic.
-defined EnglishGhDeletion: 2.1 kB. 4 states, 76 arcs, Cyclic.
-defined EnglishVowelRules: 1.2 kB. 5 states, 30 arcs, Cyclic.
-defined EnglishOrthography: 374 bytes. 1 state, 3 arcs, Cyclic.
-defined EnglishReflexes: 38.2 kB. 53 states, 2137 arcs, 560537344690722 paths.
-defined English: 16.8 kB. 42 states, 762 arcs, 515886581394 paths.
-16.8 kB. 42 states, 762 arcs, 515886581394 paths.
-Writing to file english.bin.
-defined DutchConsonantRules: 862 bytes. 3 states, 22 arcs, Cyclic.
-defined DutchSibilantRules: 2.6 kB. 6 states, 108 arcs, Cyclic.
-defined DutchVowelRules: 3.3 kB. 7 states, 125 arcs, Cyclic.
-defined DutchReductions: 2.1 kB. 3 states, 66 arcs, Cyclic.
-defined DutchOrthography: 374 bytes. 1 state, 3 arcs, Cyclic.
-defined DutchReflexes: 35.8 kB. 58 states, 1987 arcs, 287148714187734 paths.
-defined Dutch: 13.4 kB. 41 states, 555 arcs, 74013248891 paths.
-13.4 kB. 41 states, 555 arcs, 74013248891 paths.
-Writing to file dutch.bin.
-defined GermanConsonantShift: 3.4 kB. 19 states, 179 arcs, Cyclic.
-defined GermanFinalDevoicing: 1.0 kB. 4 states, 34 arcs, Cyclic.
-defined GermanStopShiftBackVowel: 559 bytes. 4 states, 9 arcs, 8 paths.
-defined GermanStopShiftFrontVowel: 632 bytes. 6 states, 12 arcs, 10 paths.
-defined GermanStopShiftLiquid: 329 bytes. 3 states, 3 arcs, 2 paths.
-defined GermanStopShiftBackLeft: 675 bytes. 6 states, 13 arcs, 24 paths.
-defined GermanStopShiftFrontLeft: 764 bytes. 8 states, 17 arcs, 30 paths.
-defined GermanStopShiftSuffix: 680 bytes. 9 states, 15 arcs, 16 paths.
-defined GermanStopShiftCodaRight: 383 bytes. 3 states, 4 arcs, Cyclic.
-defined GermanStopShift: 3.5 kB. 11 states, 175 arcs, Cyclic.
-defined GermanXPalatalization: 640 bytes. 3 states, 15 arcs, Cyclic.
-defined GermanExtraVowel: 675 bytes. 3 states, 11 arcs, 10 paths.
-defined GermanStarVowel: 1.2 kB. 3 states, 24 arcs, 23 paths.
-defined GermanStarDiphthong: 445 bytes. 5 states, 7 arcs, 5 paths.
-defined GermanStarVocalic: 1.2 kB. 5 states, 27 arcs, 28 paths.
-defined GermanStarConsonant: 1.1 kB. 3 states, 23 arcs, 22 paths.
-defined GermanStarFrontVowel: 672 bytes. 3 states, 11 arcs, 10 paths.
-defined GermanStarBackVowel: 629 bytes. 3 states, 10 arcs, 9 paths.
-defined GermanStarFrontTrigger: 804 bytes. 6 states, 16 arcs, 14 paths.
-defined GermanEToIBeforeW: 746 bytes. 6 states, 23 arcs, Cyclic.
-defined GermanWToUAfterI: 698 bytes. 4 states, 20 arcs, Cyclic.
-defined GermanIuToIi: 747 bytes. 6 states, 23 arcs, Cyclic.
-defined GermanEwChain: 1.2 kB. 10 states, 50 arcs, Cyclic.
-defined GermanAuMonophthContext: 541 bytes. 3 states, 8 arcs, 7 paths.
-defined GermanAuMonophth: 1.5 kB. 8 states, 64 arcs, Cyclic.
-defined GermanLongVowelRules: 802 bytes. 4 states, 23 arcs, Cyclic.
-defined GermanRemoveStars: 5.2 kB. 56 states, 223 arcs, Cyclic.
-defined GermanFinalNasalLoss: 455 bytes. 3 states, 8 arcs, Cyclic.
-defined GermanAzLoss: 550 bytes. 5 states, 13 arcs, Cyclic.
-defined GermanThemeApocope: 640 bytes. 5 states, 17 arcs, Cyclic.
-defined GermanAiShift: 1.3 kB. 12 states, 56 arcs, Cyclic.
-defined GermanHtShift: 746 bytes. 6 states, 23 arcs, Cyclic.
-defined GermanVowelAdjustments: 790 bytes. 2 states, 19 arcs, Cyclic.
-defined GermanCleanup: 432 bytes. 2 states, 5 arcs, Cyclic.
-defined GermanOrthography: 454 bytes. 3 states, 8 arcs, Cyclic.
-defined GermanLengthOrthography: 774 bytes. 2 states, 13 arcs, Cyclic.
-defined GermanRules: 48.4 kB. 267 states, 2982 arcs, Cyclic.
-defined GermanAfterEw: 18.4 kB. 235 states, 1103 arcs, 9992034 paths.
-defined GermanAfterLongV: 18.9 kB. 235 states, 1131 arcs, 10017384 paths.
-defined GermanAfterAu: 19.3 kB. 238 states, 1161 arcs, 10017384 paths.
-defined GermanAfterNasal: 19.3 kB. 236 states, 1159 arcs, 10017384 paths.
-defined GermanAfterConsonant: 20.6 kB. 242 states, 1236 arcs, 10402827 paths.
-defined GermanAfterStopShift: 21.5 kB. 249 states, 1290 arcs, 10560777 paths.
-defined GermanAfterPalatal: 21.6 kB. 249 states, 1290 arcs, 10560777 paths.
-defined GermanAfterAzLoss: 22.2 kB. 250 states, 1328 arcs, 10560777 paths.
-defined GermanAfterApocope: 24.1 kB. 251 states, 1448 arcs, 10560777 paths.
-defined GermanAfterVowelAdj: 24.2 kB. 249 states, 1450 arcs, 13375942 paths.
-defined GermanAfterFinalDevoice: 25.2 kB. 255 states, 1515 arcs, 13375942 paths.
-defined GermanAfterCleanup: 25.3 kB. 259 states, 1524 arcs, 13375942 paths.
-defined GermanAfterOrthography: 25.3 kB. 252 states, 1524 arcs, 13375942 paths.
-defined GermanAfterStarDrop: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
-defined GermanAfterShift: 21.6 kB. 249 states, 1290 arcs, 10560777 paths.
-defined GermanPreSurface: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
-defined GermanReflexes: 25.7 kB. 110 states, 1526 arcs, 15348066 paths.
-defined German: 27.4 kB. 139 states, 1634 arcs, 11054870 paths.
-27.4 kB. 139 states, 1634 arcs, 11054870 paths.
-Writing to file german.bin.
-defined EnglishSandboxSurfaceVowel: 897 bytes. 8 states, 20 arcs, 18 paths.
-defined EnglishSandboxSurfaceConsonant: 1.1 kB. 2 states, 23 arcs, 23 paths.
-defined EnglishSandboxSurfaceOnset: 1.9 kB. 4 states, 69 arcs, 12720 paths.
-defined EnglishSandboxSurfaceCoda: 1.9 kB. 4 states, 69 arcs, 12720 paths.
-defined EnglishSandboxSurfaceSyllable: 5.3 kB. 14 states, 266 arcs, 2912371200 paths.
-defined EnglishSandboxSurface: 5.9 kB. 12 states, 306 arcs, Cyclic.
-defined EnglishSandboxPlainVocalic: 939 bytes. 8 states, 21 arcs, 22 paths.
-defined EnglishSandboxPlainLiquid: 287 bytes. 2 states, 2 arcs, 2 paths.
-defined EnglishSandboxPlainNasal: 287 bytes. 2 states, 2 arcs, 2 paths.
-defined EnglishSandboxStarVowel: 1.2 kB. 3 states, 24 arcs, 23 paths.
-defined EnglishSandboxStarDiphthong: 445 bytes. 5 states, 7 arcs, 5 paths.
-defined EnglishSandboxStarConsonant: 1.1 kB. 3 states, 23 arcs, 22 paths.
-defined EnglishSandboxStarVocalic: 1.2 kB. 5 states, 27 arcs, 28 paths.
-defined EnglishSandboxStarNasal: 329 bytes. 3 states, 3 arcs, 2 paths.
-defined EnglishSandboxStarLiquid: 329 bytes. 3 states, 3 arcs, 2 paths.
-defined EnglishSandboxStarVelarStop: 329 bytes. 3 states, 3 arcs, 2 paths.
-defined EnglishSandboxWeakTailVowel: 2.2 kB. 67 states, 95 arcs, 38 paths.
-defined EnglishSandboxInitialKnMarkers: 1.0 kB. 9 states, 40 arcs, Cyclic.
-defined EnglishSandboxConsonantRules: 8.6 kB. 26 states, 479 arcs, Cyclic.
-defined EnglishSandboxGhMarker: 3.6 kB. 7 states, 171 arcs, Cyclic.
-defined EnglishSandboxSilentInitialCleanup: 418 bytes. 1 state, 4 arcs, Cyclic.
-defined EnglishSandboxGlideDeletion: 3.8 kB. 9 states, 186 arcs, Cyclic.
-defined EnglishSandboxGhDeletion: 3.5 kB. 7 states, 165 arcs, Cyclic.
-defined EnglishSandboxWestGermanic: 800 bytes. 5 states, 23 arcs, Cyclic.
-defined EnglishSandboxOpenSyllableLengthening: 6.5 kB. 10 states, 321 arcs, Cyclic.
-defined EnglishSandboxBreakingLengthening: 3.5 kB. 10 states, 163 arcs, Cyclic.
-defined EnglishSandboxShortVowelSplit: 2.7 kB. 5 states, 109 arcs, Cyclic.
-defined EnglishSandboxCoreVowelRules: 2.8 kB. 14 states, 131 arcs, Cyclic.
-defined EnglishSandboxGreatVowelShift: 3.4 kB. 8 states, 151 arcs, Cyclic.
-defined EnglishSandboxPostVocalicRSmoothing: 392 bytes. 2 states, 4 arcs, Cyclic.
-defined EnglishSandboxWeakTailReductions: 8.8 kB. 48 states, 515 arcs, Cyclic.
-defined EnglishSandboxPostVocalicRLoss: 2.0 kB. 6 states, 87 arcs, Cyclic.
-defined EnglishSandboxVowelRules: 11.1 kB. 29 states, 623 arcs, Cyclic.
-defined EnglishSandboxOrthography: 512 bytes. 3 states, 10 arcs, Cyclic.
-defined EnglishSandboxProtoInput: 18.0 kB. 233 states, 1082 arcs, 9992034 paths.
-defined EnglishSandboxReflexes: 47.8 kB. 344 states, 2950 arcs, 48059871 paths.
-defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
-27.4 kB. 245 states, 1632 arcs, 10110408 paths.
-## 2025-12-04
-
-### KIT/FOOT contexts + /r/-smoothing harness
-
 - Extended EnglishSandboxShortVowelSplit so FOOT now targets alveolar codas in both starred and plain alphabets ({t/d/z} + weak-tail templates, plain {l/r} codas) and added a plain {*i}->{i} feed so the KIT split can finally act on closed {i} syllables. Introduced EnglishSandboxPostVocalicRSmoothing between the vowel stack and /r/-loss so {ɪ} can surface as {ɪə} before EnglishSandboxPostVocalicRLoss deletes {r}.
 - Recompiled via docker compose exec backend sh -lc "cd /usr/app && foma -f fsts/english_brace_sandbox.txt" and wrote the attested-form sweep to tmp/english_sandbox_results.json with the Python harness (loops 376 English IPA forms through flookup english_brace_sandbox.bin).
 - Current sandbox stats: 134/376 successes (down from the previous 179 baseline). Failure buckets from the JSON lens land at KIT=49, FOOT=21, weak-tail=44, post-vocalic /r/=58, rounded {ɔ/əʊ}=28, plus 118 uncategorised other items that need triage.
@@ -1291,6 +1151,14 @@ defined EnglishSandbox: 27.4 kB. 245 states, 1632 arcs, 10110408 paths.
 - Consolidated the early PGmc→OE vowel/weak-tail rules under `EnglishProtoToOE` and added the `english_after_proto_to_oe.bin` stage log so we can trace that layer independently of the later ME/RP stack.
 - Wrote `server/tools/evaluate_proto_to_oe.py` and ran it against `english_after_proto_to_oe.bin`: only 1/376 Old English rows matched at that time; this baseline is superseded by the 2025-12-21 diagnostics (see current focus above).
 - Next coding steps now live in the consolidated PGmc→OE TODOs under 2025-12-21.
+
+## 2025-12-21
+
+---
+
+*End of paused Modern English sandbox diary. OE-focused diary entries follow.*
+
+---
 
 ## 2025-12-21
 
@@ -2473,3 +2341,45 @@ Key observations:
 5. **OEUnstressedLongVowelShortening handles {*ô} → {*a}** as a late change (line 1340), after AFB and A-restoration, so the resulting -a is not fronted — giving OE -a for trimoraic forms, matching all sources.
 
 A hypothetical trimoraic *-ôz (e.g., nom.pl.) is not currently in the suffix list (not needed for our TSV data), but the system would handle it correctly: PGmcFinalOZShortening would not match ({*ō} ≠ {*ô}); PGmcFinalZDeletion would delete {*z}; the freed {*ô} would pass through ō-raising and AFB unchanged; OEUnstressedLongVowelShortening would produce {*a}. Result: -a, matching R/T and Bülbring for nom.pl.
+
+---
+
+## Reference library integration (2026-03-08)
+
+### Campbell's *Old English Grammar* (1959)
+
+OCR'd the full text (438 pages) via `ocrmypdf --force-ocr -l eng` and saved to
+`docs/references/campbell_old_english_grammar.txt` (34,276 lines). Key sections for our work:
+- §§115–118 (u-lowering near labials)
+- §§148–160 (retraction / A-restoration)
+- §§351–353, 388–393 (prehistoric and historical syncope)
+- §§407–408 (West Germanic gemination)
+
+Quotations from Campbell have been integrated into `docs/analysis/notable_findings.md`
+§§1–4, cross-referenced with Hogg, R/T, Bülbring, Luick, and Kaluza.
+
+### EWA Band I (Lloyd & Springer 1988)
+
+Extracted from a mislabeled DJVU file (labeled as Campbell but actually containing EWA).
+Saved to `docs/references/ewa_band1_lloyd_springer.txt` (9,853 lines). Covers a–bezzisto.
+Available online at https://ewa.saw-leipzig.de/headwords/de for further consultation.
+
+### Cross-referencing update
+
+`docs/analysis/notable_findings.md` §§1–4 now integrate:
+- Campbell OEG quotations on syncope, u-lowering, *j-changes, A-restoration
+- German-language sources (Bülbring, Luick, Kaluza) on the same phenomena
+- Points of scholarly agreement and disagreement highlighted for each finding
+
+---
+
+## Mismatch trajectory — full history
+
+| Date | Mismatches | Matches | Total rows | Match rate |
+|------|-----------|---------|------------|------------|
+| Oct 2025 | ~300 | ~70 | 370 | ~19% |
+| 2026-01-22 | 291 | 79 | 370 | 21.4% |
+| 2026-02-06 | 280 | 90 | 370 | 24.3% |
+| 2026-02-06b | 262 | 108 | 370 | 29.2% |
+| 2026-02-07 | 256 | 120 | 376 | 31.9% |
+| 2026-03-08 | 103 | 277 | 380 | 72.9% |
