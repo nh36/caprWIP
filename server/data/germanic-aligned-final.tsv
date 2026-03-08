@@ -990,7 +990,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 721	ʃ au f ə l	*skūflō	ʃ - au f ə l ( - )	ʃaufəl	Schaufel	198	German				shovel	*skūflō	226
 1287	s x ɑu ʋ ə	*skawōjăną	s x ɑu ʋ - - ə - ( - - )	sxɑuʋə	schouwen	353	Dutch				show	*skawōjăną	227
 1286	ʃ əʊ	*skawōjăną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	show	353	English				show	*skawōjăną	227
-2186	s c ē a w i a n	*skawōjăną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	scēawian	353	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			show	*skawōjăną	227
+2186	s ċ ē a w i a n	*skawōjăną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	sċēawian	353	Old_English	Source: Wiktionary etymology (template:inh) | Normalized sċ: initial sc always [ʃ] in OE (Campbell §440).			show	*skawōjăną	227
 1285	ʃ au ə n	*skawōjăną	ʃ - au - - - ə n ( - - )	ʃauən	schauen	353	German				show	*skawōjăną	227
 1194	ʃ aʊ ə	*skūrō	ʃ - aʊ ə r ( - )	ʃaʊə	shower	327	English				shower	*skūrō	356
 2187	s ċ ū r	*skūrō	ʃ - aʊ ə r ( - )	ʃaʊə	sċūr	327	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			shower	*skūrō	356
@@ -1324,7 +1324,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1171	v a r ts ə	*wartōn	v a r - ts ə	vart͡sə	Warze	321	German				wart	*wartōn	301
 1001	ʋ ɑ s ə	*waskăną	ʋ ɑ s - ə - ( - - )	ʋɑsə	wassen	274	Dutch				wash	*waskăną	302
 1000	ʋ ɔ ʃ	*waskăną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wash	274	English				wash	*waskăną	302
-2272	w a s c a n	*waskaną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wasċan	274	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			wash	*waskaną	302
+2272	w a s c a n	*waskaną	ʋ ɔ ʃ - - - ( - - )	ʋɔʃ	wascan	274	Old_English	Source: Wiktionary etymology (template:inh) | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1 | Medial sc before back vowel: not palatalized in early OE (Campbell §440); wascan [sk] is the conservative form.			wash	*waskaną	302
 999	v a ʃ ə n	*waskăną	v a ʃ - ə n ( - - )	vaʃən	waschen	274	German				wash	*waskăną	302
 1279	ʋ ɛ s p	*wabsăz	ʋ ɛ s p - ( - - )	ʋɛsp	wesp	351	Dutch				wasp	*wabsăz	303
 1278	ʋ ɔ s p	*wabsăz	ʋ ɔ s p - ( - - )	ʋɔsp	wasp	351	English				wasp	*wabsăz	303
@@ -1379,7 +1379,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2285	h w ī l	*xwīlō	ʋ aɪ l ( - )	ʋaɪl	hwīl	489	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			while	*xwīlō	314
 1785	v ai l ə	*xwīlō	v ai l ( ə )	vailə	Weile	489	German				while	*xwīlō	314
 689	ʋ aɪ n	*wainōjăną	ʋ aɪ n - - - - - -	ʋaɪn	whine	189	English				whine	*wainōjăną	365
-2286	h w ī n a n	*wainōjăną	ʋ aɪ n - - - - - -	ʋaɪn	hwīnan	189	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			whine	*wainōjăną	365
+2286	h w ī n a n	*hwīnăną	ʋ aɪ n - - - ( - - )	ʋaɪn	hwīnan	189	Old_English	Proto corrected: OE hwīnan (str. I) 'to whine, hiss' < PGmc *hwīnăną (Kroonen 2013 s.v. *hwīnan-, PIE *ḱwey- 'to hiss, whistle'). Not cognate with German weinen < PGmc *wainōjan- (→ OE wānian 'to lament'); cognate linkage is spurious.			whine	*hwīnăną	365
 688	v ai n ə n	*wainōjăną	v ai n - - ə n - -	vainən	weinen	189	German				whine	*wainōjăną	365
 1236	h uː r	*xōrōn	h uː r - ( - )	huːr	hoer	339	Dutch				whore	*xōrōn	315
 1235	h ɔː	*xōrōn	h ɔː r - ( - )	hɔː	whore	339	English				whore	*xōrōn	315
@@ -1475,5 +1475,5 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2314	l e o r n e þ	*liznōθi	l e o r n e θ	leorneθ	leorneþ	544	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Root vowel issue (ie vs eo) same as infinitive.			learn (3sg)	*liznōθi	373
 2315	l i c c a	*likkô	l i k k a	likka	licca	545	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.			lick (iptv.2sg)	*likkô	374
 2316	l i c c e þ	*likkōθi	l i k k e θ	likkeθ	licceþ	546	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Root palatalization issue same as infinitive.			lick (3sg)	*likkōθi	375
-2317	s c ē a w a	*skawô	s k e a w a	skeawa	scēawa	547	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.			show (iptv.2sg)	*skawô	376
-2318	s c ē a w e þ	*skawōθi	s k e a w e θ	skeaweθ	scēaweþ	548	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Root issues (sk→sc, missing ēa) same as infinitive.			show (3sg)	*skawōθi	377
+2317	s ċ ē a w a	*skawô	s k e a w a	skeawa	sċēawa	547	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.			show (iptv.2sg)	*skawô	376
+2318	s ċ ē a w e þ	*skawōθi	s k e a w e θ	skeaweθ	sċēaweþ	548	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Normalized sċ: Campbell §440.			show (3sg)	*skawōθi	377
