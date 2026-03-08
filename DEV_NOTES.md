@@ -2437,6 +2437,116 @@ Proto changed to \*hwīnăną; pipeline now produces hwīnan ✓.
 
 ---
 
+## Weak noun declension class corrections: *gallô, *xnekkô (2026-03-08)
+
+### Overview
+
+The mismatch report contained a bucket `final_vowel_missing__weak_noun_like` with 8 items where the
+pipeline produced a bare stem (no final vowel) but the expected OE form ended in *-a* or *-e*,
+typical of weak noun nominatives. Investigation showed that several TSV entries had the wrong
+PGmc declension class — strong a-stems or strong ō-stems where the OE word is actually a weak
+n-stem. Correcting the proto-form to the weak paradigm feeds the pipeline the right suffix,
+which it then processes correctly.
+
+### Case 1: \*gallą → \*gallô (OE ġealla 'gall, bile')
+
+**Problem.** TSV had \*gallą (strong neuter a-stem). Pipeline gives *ġeall* (no final vowel after
+heavy-syllable apocope). Expected OE form: *ġealla*.
+
+**Correction.** Kroonen (2013) s.v. \*gallōn- reconstructs PGmc \*gallōn- (weak masculine n-stem),
+citation form nom.sg. \*gallô. OE ġealla is indeed weak masculine (BT: "ġealla, an; m.").
+
+**Pipeline result.** \*gallô → ġealla ✓. The weak n-stem suffix *-ô* passes through
+NWGmcNStemNLoss → unstressed vowel shortening → surface *-a*. No further issues.
+
+**Note on cognate set 205.** German *Galle* (feminine) has a different gender and declension class
+from OE ġealla (weak masculine). Other rows in cognate set 205 retain \*gallą; the OE row now
+has \*gallô in both PROTOFORM and PROTO columns.
+
+### Case 2: \*xnakkăz → \*xnekkô (OE hnecca 'neck, nape')
+
+This case required substantially more research than the other weak noun fixes because the OE
+form *hnecca* has *e* where the standard PGmc reconstruction has *a*, and this discrepancy cannot
+be explained by any regular OE sound change.
+
+#### The problem
+
+TSV had \*xnakkăz (strong masculine a-stem, a-grade root vowel). This is wrong in two respects:
+
+1. **Declension class.** OE *hnecca* is weak masculine (BT: "HNECCA, an; m."). All major
+   sources agree the PGmc word was a weak n-stem: Kroonen \*hnakkōn-, Orel \*xnakkaz ~ \*xnakkòn,
+   Kluge/Seebold \*hnakka-/ōn.
+
+2. **Root vowel grade.** The TSV had *a*-grade (\*xnakk-), which would yield OE \*hnacca (with
+   A-restoration before the back suffix vowel, preventing AFB fronting to \*æ). But the standard
+   OE form is *hnecca*, with *e*. No regular OE sound change turns *a* into *e* in this
+   environment.
+
+#### Root vowel ablaut: Kroonen's paradigm
+
+Kroonen (2013) reconstructs this noun with **root vowel ablaut** across the paradigm (cited on
+Wiktionary s.v. \*hnakkô, referencing Kroonen's etymon PIE \*knékō):
+
+| Case | PGmc form | Ablaut grade |
+|------|-----------|-------------|
+| Nom.sg. | \*hnekkô | e-grade (PIE \*knékō) |
+| Gen.sg. | \*hnukkaz | zero-grade |
+| Acc.pl. | \*hnakkunz | a-grade (PIE o-grade) |
+
+This is an amphikinetic paradigm where different case forms have different root vowels. The
+daughter languages then generalized one grade at the expense of the others:
+
+| Grade generalized | Languages | Forms |
+|---|---|---|
+| **e-grade** (from nom.sg.) | OE, OFris, MNdl, some MLG | OE *hnecca*, OFris *hnekka*, MNdl *necke/nec*, MLG *necke* |
+| **a-grade** (from oblique) | ON, OHG, some MLG | ON *hnakkr/hnakki*, OHG *nac/nacko*, MLG *nacke* |
+
+#### Scholarly sources
+
+**Kluge/Seebold** s.v. *Nacken*: "Aus g. \*hnakka-/ōn m. 'Hinterhaupt, Nacken', auch in anord.
+hnakkr, hnakki. **Daneben mit Ablaut** mndl. necke, nec, afr. hnekka, ae. hnecca." This explicitly
+identifies the OE/OFris/MNdl forms as ablaut variants of the ON/OHG forms.
+
+**Kluge/Seebold** s.v. *Genick*: "Kollektivbildung zu mndd. necke, afr. hnekka m., ae. hnecca m.
+'Nacken'. **Dieses steht im Ablaut zu Nacken.**" — "This stands in ablaut with Nacken."
+
+**Orel** s.v. \*xnakkaz ~ \*xnakkòn: Lists only ON hnakki, MLG nacke/necke, OHG nac/nacko.
+Notably **omits OE hnecca entirely**, and does not discuss the ablaut. Orel's entry is therefore
+incomplete for OE purposes.
+
+**Wiktionary** (s.v. PGmc \*hnakkô): Notes that Kroonen reconstructs PIE \*knékō with root vowel
+ablaut, and lists both PWGmc \*hnakkō and \*hnekkō as alternative forms. The OE descendants
+include both \*hnæcca (from a-grade, with Anglo-Frisian Brightening) and *hnecca* (from e-grade).
+
+#### Pipeline verification
+
+| Input | Pipeline output | Match? |
+|-------|----------------|--------|
+| \*xnakkăz | hnæcc | ✗ (wrong class, wrong vowel, no final vowel) |
+| \*xnakkô | hnacca | ✗ (correct class, but a-grade gives wrong root vowel) |
+| \*xnekkô | hnecca | ✓ |
+
+The e-grade form \*xnekkô is not a "transponent" or ad hoc workaround. It is the **actual PGmc
+nominative singular** as reconstructed by Kroonen. The a-grade forms (\*xnakkăz in the TSV) reflect
+the oblique stem that was generalized in ON and OHG, not the nom.sg. citation form.
+
+#### Correction applied
+
+OE row changed from \*xnakkăz to \*xnekkô (both PROTOFORM and PROTO columns). German row
+retains \*xnakkăz (German *Nacken* continues the a-grade, generalized from the oblique).
+
+#### Methodological note
+
+This case illustrates a recurrent problem for the project: standard etymological dictionaries
+often cite a single PGmc form (typically the a-grade or the most widely attested variant), but
+individual daughter languages may continue a *different* ablaut grade of that same paradigm. When
+the TSV imports a shared proto-form from a cognate database, it may silently import the wrong
+grade for a given daughter language. The pipeline then produces a form with the wrong root vowel,
+and the mismatch is not fixable by adding sound rules — it requires correcting the input form to
+the grade actually continued in that branch. This is the same type of issue encountered with the
+stefn/stemn problem (§ Case 3 above), though the hnecca case is more cleanly resolved because
+Kroonen's own reconstruction already supplies the e-grade nom.sg.
+
 ## Mismatch trajectory — full history
 
 | Date | Mismatches | Matches | Total rows | Match rate |
@@ -2449,3 +2559,4 @@ Proto changed to \*hwīnăną; pipeline now produces hwīnan ✓.
 | 2026-03-08 | 103 | 277 | 380 | 72.9% |
 | 2026-03-09 | 100 | 280 | 380 | 73.7% |
 | 2026-03-09b | 95 | 285 | 380 | 75.0% |
+| 2026-03-09c | 93 | 287 | 380 | 75.5% |

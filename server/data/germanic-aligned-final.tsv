@@ -412,7 +412,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 954	f ʊ r x ə	*furx	f ʊ r ( x ə )	fʊrxə	Furche	262	German				furrow	*furx	96
 748	x ɑ l	*gallą	x ɑ l - ( - )	xɑl	gal	205	Dutch				gall	*gallą	97
 747	ɡ ɔː l	*gallą	ɡ ɔː l - ( - )	ɡɔːl	gall	205	English				gall	*gallą	97
-2037	ġ e a l l a	*gallą	ɡ ɔː l - ( - )	ɡɔːl	ġealla	205	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			gall	*gallą	97
+2037	ġ e a l l a	*gallô	ɡ ɔː l - ( - )	ɡɔːl	ġealla	205	Old_English	Proto corrected: weak masc. n-stem *gallô (Kroonen 2013 s.v. *gallōn-, nom.sg. *gallô). OE ġealla is weak masc. TSV had *gallą (strong neut.); cognate set 205 includes German Galle (fem.) — different declension class.			gall	*gallô	97
 746	ɡ a l ə	*gallą	ɡ a l ə ( - )	ɡalə	Galle	205	German				gall	*gallą	97
 201	x ɑ ŋ	*gangăz	x ɑ ŋ - ( - - )	xɑŋ	gang	56	Dutch				gang	*gangăz	98
 200	ɡ æ ŋ	*gangăz	ɡ æ ŋ - ( - - )	ɡæŋ	gang	56	English				gang	*gangăz	98
@@ -789,7 +789,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 429	n aː b ə l	*nablô	n aː b ə l ( - - )	naːbəl	Nabel	118	German				navel	*nablô	181
 1166	n ɛ k	*xnakkăz	- n ɛ k ( - - )	nɛk	nek	319	Dutch				neck	*xnakkăz	182
 1165	n ɛ k	*xnakkăz	- n ɛ k ( - - )	nɛk	neck	319	English				neck	*xnakkăz	182
-2134	h n e c c a	*xnakkăz	- n ɛ k ( - - )	ˈsweːo̯rɑ	hnecca	319	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			neck	*xnakkăz	182
+2134	h n e c c a	*xnekkô	- n ɛ k ( - - )	ˈsweːo̯rɑ	hnecca	319	Old_English	Proto corrected: weak masc. n-stem with e-grade nom.sg. *xnekkô (Kroonen 2013, PIE *knékō). Kroonen reconstructs root ablaut: nom.sg. *hnekkô (e-grade), gen.sg. *hnukkaz (zero-grade), acc.pl. *hnakkunz (a-grade). OE/OFris/MNdl generalized e-grade; ON/OHG generalized a-grade (Kluge/Seebold s.v. Nacken). TSV had *xnakkăz (wrong class + wrong grade). German row retains a-grade *xnakkăz.			neck	*xnekkô	182
 1164	n a k ə n	*xnakkăz	- n a k ( ə n )	nakən	Nacken	319	German				neck	*xnakkăz	182
 483	n oː t	*naudiz	n oː t ( - - )	noːt	nood	132	Dutch				need	*naudiz	183
 482	n iː d	*naudiz	n iː d ( - - )	niːd	need	132	English				need	*naudiz	183
