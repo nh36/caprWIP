@@ -2408,6 +2408,35 @@ Mismatches: 103 → 100.
 
 ---
 
+## TSV proto correction: *wainōjăną → *hwīnăną (OE hwīnan 'to whine')
+
+The OE row for 'whine' (ID 2286) had proto \*wainōjăną, which is the
+reconstruction for PGmc \*wainōjan- 'to lament, weep' (→ OE wānian, German
+weinen, ON veina). But the OE target form hwīnan is a Class I strong verb
+meaning 'to whine, hiss, rush', which Kroonen (2013, s.v. \*hwīnan-) derives
+from PGmc \*hwīnăną, tracing it to PIE \*ḱwey- 'to hiss, whistle.'
+
+The two words are etymologically distinct:
+
+| PGmc form      | OE reflex | Class    | Meaning         | NE descendant |
+|---------------|-----------|----------|-----------------|---------------|
+| \*hwīnăną     | hwīnan    | strong I | to whine, hiss  | whine         |
+| \*wainōjăną   | wānian    | weak II  | to lament, weep | (wane?)       |
+
+The initial \*hw- (< PIE \*ḱw-) vs. \*w- and the vowel grade (\*ī vs. \*ai)
+confirm that these cannot be the same lexeme. The error appears to originate
+from Wiktionary's automatic cognate-linking, which grouped them under the
+same cognate set (189). The German weinen row correctly has \*wainōjăną and
+is unaffected.
+
+Kluge/Seebold (24th ed., s.v. _weinen_) lists 'ne. whine' among descendants
+of g. \*wainō-, but this appears to be a conflation; NE _whine_ continues OE
+hwīnan (str. I), not OE wānian (wk. II).
+
+Proto changed to \*hwīnăną; pipeline now produces hwīnan ✓.
+
+---
+
 ## Mismatch trajectory — full history
 
 | Date | Mismatches | Matches | Total rows | Match rate |
@@ -2419,3 +2448,4 @@ Mismatches: 103 → 100.
 | 2026-02-07 | 256 | 120 | 376 | 31.9% |
 | 2026-03-08 | 103 | 277 | 380 | 72.9% |
 | 2026-03-09 | 100 | 280 | 380 | 73.7% |
+| 2026-03-09b | 95 | 285 | 380 | 75.0% |
