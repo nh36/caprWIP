@@ -45,10 +45,21 @@ may reflect:
 
 **What the literature says:**
 
-- **Campbell (OEG §§389-393, pp.143-147):** "Short medial vowels are
-  syncopated after a long stressed syllable." Does not discuss the following
-  consonant. Notes "much irregularity" and levelling by analogy but does not
-  connect this to specific consonant environments.
+- **Campbell (OEG §§351, 388-393):** Campbell separates prehistoric and
+  historical syncope. §351 gives the prehistoric rule: "i and u are also
+  lost in open medial syllables after a long stressed syllable. This applies
+  to original short vowels only, as i and u had not yet been shortened in
+  this position." §388 restricts loss after short syllables: "Medial
+  unaccented vowels are very freely dropped after short syllables, when the
+  loss causes a group consisting of consonant + l or r to arise." §389
+  extends sporadic loss to other clusters, but notes forms "mostly appear
+  beside forms with preserved middle vowels." §392 on long-stem historical
+  syncope: "After long accented syllables, all fully unaccented vowels had
+  been lost in open medial syllables in prehistoric OE." The key footnote
+  to §388 (fn.2) explicitly cross-references §351 and §341, separating the
+  earlier syncope of i/u in open syllables from the later sporadic losses.
+  Campbell does not discuss the identity of the following consonant as a
+  conditioning factor.
 
 - **Hogg (vol.1 §3.3.3.2, pp.120-121):** "The high vowels were also subject
   to syncope in medial positions after a heavy syllable." Describes syncope
@@ -148,7 +159,7 @@ The differences between the scholars can be tabulated:
 |---------|----------------|-----------------|-------------------|
 | Kaluza (1900) | after long syllable | before *l* only | for light stems only |
 | Luick (1914) | after long syllable, open syllable | similar to Kaluza | phonotactic constraint on clusters (Anm. 2) |
-| Campbell (1962) | after heavy syllable | — | "much irregularity" (no analysis) |
+| Campbell (1962) | after heavy syllable (open syllable, §351); sporadic elsewhere (§§389-393) | before l/r only (§388) | consonant+l/r for light stems (§388); not discussed for heavy |
 | Hogg (1992) | after heavy syllable | — | not discussed |
 | R/T (2014) | after heavy + stressed | CR-cluster complication | for preterites only (CR-clusters) |
 | Fulk (2018) | after heavy syllable | before *l* or *r* | sonority constraint |
@@ -336,14 +347,34 @@ not root-stems." But Fulk says nothing about the labial/velar exceptions.
 The silence is itself informative: the most comprehensive modern comparative
 grammar treats these cases as beneath notice or beyond explanation.
 
+**Campbell (1962), §§115–118** treats the same change as part of the PGmc
+vowel system: "u > o before mid and low vowels. In OE forms this change
+occurs with considerable regularity, e.g. dohtor daughter, god god, gold
+gold, geoc yoke, and passive participles of strong verbs of Classes II,
+III, and IV, e.g. coren, boren, holpen." But he immediately notes the
+exceptions: "There are, however, many exceptions in OE, which have
+preserved u, very often where other West Gmc. languages, especially OHG,
+have o, e.g. full full, fugol bird, bucca buck, wulf wolf, ufan from above,
+OHG foll, fogal, boch, wolf, obana." Campbell then adds a detail others
+miss: "Even within OE itself, there is variation in some words, e.g.
+cnocian knock, spora spur, spornan spurn, beside cnucian, spura, spurnan."
+§116 provides the nasal blocking: before nasal + consonant, "u is retained,
+and e > i irrespective of what vowel follows." §117 extends this to single
+*m* (niman, cuman, guma, sumor) and §118 notes a similar tendency before
+single *n* (þunor, wunað, hunig). Campbell's OHG comparison — "OHG foll,
+fogal, boch, wolf, obana" vs. OE full, fugol, bucca, wulf, ufan — is the
+most direct statement in any of our sources that OE is exceptional here
+while OHG shows regular lowering.
+
 **The OHG contrast is instructive.** OHG consistently has the lowered
 outcome in precisely the environments where OE retains *u: OHG fol, wolf,
 fogal vs. OE full, wulf, fugol. The Kluge/Seebold entries for these words
-show the OHG forms without comment. If Bülbring's labial conditioning were
-correct, it should apply equally in OHG, which shares the consonantal
-environment. It does not, which further undermines any universal phonetic
-explanation. Luick (Anm. 1) notes this explicitly: "während das
-Althochdeutsche durchweg o bietet: wolf, vogal, voll."
+show the OHG forms without comment. Campbell (§115) provides this comparison
+directly. If Bülbring's labial conditioning were correct, it should apply
+equally in OHG, which shares the consonantal environment. It does not,
+which further undermines any universal phonetic explanation. Luick (Anm. 1)
+notes this explicitly: "während das Althochdeutsche durchweg o bietet:
+wolf, vogal, voll."
 
 **Implications for the FST:** The sources agree on the basic rule but
 diverge sharply on the residual exceptions:
@@ -351,6 +382,7 @@ diverge sharply on the residual exceptions:
 | Scholar | Position on exceptions |
 |---------|----------------------|
 | Bülbring (1902) | Labial/velar environment blocks full lowering (phonological) |
+| Campbell (1962) | Lists exceptions, notes OHG contrast; no explanation offered |
 | Luick (1914) | Paradigmatic levelling; consonantal environment selects among doublets |
 | R/T (2014) | Genuinely unexplained; "we do not really know" |
 | Fulk (2018) | Not discussed |
@@ -479,12 +511,23 @@ been fully resolved. Any single-stage FST rule for *j-loss is therefore
 an approximation of what was in reality a gradual dialect-specific process.
 
 **Campbell (1962), §§407–408:** Campbell gives the OE-internal data on
-gemination. §407 notes that consonants are doubled before *j*, except
-that r and l are not doubled in OE. §408 adds that gemination does not
-occur after a long vowel or diphthong, or after two consonants.
-Standard examples: bedd < *badja, settan < *satjan, but herian (not
-×herrian) < *xazjanan. This confirms the heavy-stem blocking of
-gemination from the OE side.
+gemination with direct quotation. §407: "W. Gmc. consonant doubling is
+particularly strongly developed before j, every consonant except r being
+affected after short syllables." His examples: "many weak verbs of Class I,
+as sellan give, fremman do, þennan stretch, clyppan embrace, settan set,
+cnyssan knock, wecċan awake; nouns and adjs. of the ja-, jō-, and jan-/jōn-
+declensions, as cynn race (cf. Goth. g.s. kunjis), sibb relationship, wrecċa
+exile." On the r-exception: "But r was not doubled, whether original or from
+z (§404), and -rj- remained in OE, e.g. nerian save, herias armies (Goth.
+nasjan, harjēs)." On voicing consequences: "When doubled, v and ʒ became
+the corresponding stops, bb and gg (written in OE cg), e.g. OE hebban raise,
+licgan lie < *ɣaƀjan, *liʒjan." §408 extends doubling to liquids: "There
+was clearly already in West. Gmc. extensive doubling of consonants before l
+and r after short vowels, for there is evidence in all the languages, e.g.
+OS appul apple, OHG snottar wise, OE æppel, snottor." Campbell's footnote
+to §407 challenges the standard account of n-gemination, citing Krahe and
+Martinet against the view that "double consonants in weak nouns such as OE
+docga, sugga, crabba...are due to West Gmc. gemination before n."
 
 **Implications for the FST:** The pipeline currently handles *j through a
 sequence of ordered rules: (1) *-ja-/*-ją- > *-i-/*-u- after loss of final
@@ -644,6 +687,42 @@ hara, faran, nacod, macian, dagas, fatu; (2) before long consonants;
 (3) before s+C and f+C; (4) "nur in wenigen Resten" ('only in a few
 relics') before obstruent + liquid: appla, accras. His open-syllable
 examples match Kaluza's and R/T's.
+
+**Campbell (1962), §§157–160:** Campbell provides the most detailed
+positional analysis of A-restoration. §157 opens: "One of the most obvious
+peculiarities of the OE phonological system is that æ and a interchange,
+the former standing in closed syllables, and in open syllables when a front
+vowel (e, in early texts sometimes written i or æ) follows, the latter in
+open syllables when a back vowel (a, o, u) follows." His paradigm case is
+*dæg*: "dæg, dæges, dæge, dagas, daga, dagum." §157 establishes the logic
+of restoration (as opposed to fronting-avoidance): "This interchange is
+clearly due to the restoration of a before a back vowel, for breaking can
+hardly be regarded otherwise than as a change affecting front vowels, and
+from this it follows that OE slēan is developed from *slæxan. Now it is
+hardly conceivable that when Prim. Gmc. *slaxan- was at the stage *slexan,
+Prim. Gmc. *draʒan- would not be at the stage *dræʒan; from which it
+follows that OE dragan has restored a in its first syllable by later change."
+§158 gives positional data: "The restoration of a is common before all single
+consonants and geminates," then: "a is commonly restored also before groups
+consisting of f or s followed by another consonant, e.g. wascan wash, asce
+ash...Before other groups, a is not restored except for a few instances
+before consonant plus liquid: W-S appla, apla apples, watrode he watered,
+Angl. (Rit., Ru.) accras, acras fields, beside æplas, ǣcras, weterode, and
+always sægdon, hæfdon, fædras, næġlas, &c." Campbell thus agrees with Luick
+on the gradient application before clusters, but adds a telling observation:
+"Yet it need not be doubted that a was originally widely restored before
+groups, and that it was subsequently removed by the analogy of forms in which
+a front vowel followed. This is reflected by some doublets, e.g. gæfel, gafol
+tribute, hæġel, hagol hail, fægen, fagen glad." §159 adds: "The restoration
+of a was frequently due to a back vowel which subsequently became a front
+vowel or was lost, e.g. gaderian gather, staþelian found (cf. geador, staþol),
+and weak verbs in -i- (< -ōi-), laþian, macian, hnappian, &c." This is the
+same chronological point as Kaluza's — restoration preceded dissimilation.
+§160 gives the morphological categories: a-nouns (dæg/dagas), adjectives
+(which "generally level a into all open syllables"), ō-nouns (rare: sacu,
+inflected sæce or (anal.) sace), and Class VI strong verbs (which "have in
+W-S a strong tendency to extend the a of the inf. and pres. indic. pl. to
+forms where -e follows").
 
 **Where the scholars disagree:**
 
