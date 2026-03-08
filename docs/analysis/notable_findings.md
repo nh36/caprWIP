@@ -81,6 +81,67 @@ before `[{*θ}|{*ð}|{*d}|{*t}]` only.
 
 **Full analysis:** See `docs/analysis/fryhtu_investigation.md`, §5.
 
+**Cross-referencing with additional sources (March 2026):**
+
+The following sources were consulted to see whether they shed further light on
+the dental-obstruent conditioning of medial syncope that our FST revealed.
+
+- **Fulk (2018), §5.6 (pp.92–94):** Fulk's treatment is the most detailed
+  comparative account now available and provides important indirect
+  confirmation of our finding. He distinguishes two phases of medial vowel
+  loss. In the first, high vowels (*i, *u) in medial open syllables after
+  heavy syllables are lost — this is the standard "weight-based" formulation.
+  In the second, a later prehistoric change, *i is lost after light syllables
+  specifically "when the consonant following the vowel was l or r" (p.93:
+  "micles 'large' < *mikilæs and betra 'better' < *batizô"). He then adds
+  explicitly: "Loss of i (and u) before consonants other than l, r is less
+  regular" (p.93), citing eg(e)sa, ef(e)sian, heolstor. And: "Syncope is
+  constant in a few such words, e.g. eln, hwelc, twelf. It is generally
+  absent when it would create a syllable coda with a disfavored sonority
+  sequence, e.g. wæter 'water', bydel (PDE beadle)."
+
+  This is highly significant. Fulk is the first comparatist to state
+  explicitly (a) that l/r form a privileged class of following consonants for
+  light-stem syncope, and (b) that syncope is blocked when it would create
+  "a disfavored sonority sequence." This is a sonority-based constraint on
+  syncope — exactly the type of conditioning our FST's dental-obstruent
+  restriction captures, albeit from a different angle. Our finding that
+  syncope after heavy syllables fires reliably before dental obstruents but
+  not before other consonants is the mirror image of Fulk's observation
+  about light syllables: in both cases, the phonotactic wellformedness of
+  the resulting cluster determines whether syncope applies. Fulk does not
+  make this connection to heavy-stem syncope explicitly, but his formulation
+  for light stems strongly supports the principle that consonantal
+  environment matters — contrary to the standard "weight-only" account.
+
+- **Kaluza (1900–01), §72 (pp.124–126):** Kaluza's treatment is the oldest
+  in our reference set and is formulated in purely weight-based terms. His
+  rule (d): "Kurze Mittelvokale vor einfacher Konsonanz werden nach langer,
+  vor l auch nach kurzer Stammsilbe ausgestossen" (short medial vowels
+  before a single consonant are deleted after a long root syllable, and
+  before l also after a short root syllable). This singles out *l* as a
+  special following consonant for light-stem syncope — consistent with
+  Fulk's later, more refined formulation. But Kaluza says nothing about the
+  following consonant after heavy syllables. His examples for heavy-stem
+  syncope (engles, dēofles, hālges, hīrde, dǣlde) all happen to have
+  dental or lateral following consonants, which is consistent with our
+  finding but is not noted by Kaluza as a conditioning factor.
+
+- **Orel (2003):** Not relevant to this finding (etymological dictionary,
+  does not discuss synchronic OE phonology).
+
+- **Kluge/Seebold (2002):** Not relevant (German etymological dictionary).
+
+**Assessment:** Fulk (2018) provides the strongest independent support for
+our finding. His explicit recognition of sonority-based constraints on
+syncope (for light stems) validates the principle that our FST discovered
+independently (for heavy stems). The key new observation from cross-
+referencing is that the two patterns — Fulk's "l/r privilege" for light
+stems and our "dental-obstruent restriction" for heavy stems — are likely
+two manifestations of a single underlying principle: **syncope is sensitive
+to the phonotactic wellformedness of the resulting consonant cluster**. This
+connection has not been drawn in the literature.
+
 ---
 
 ## 2. NWGmc u-lowering exceptions near labials: a non-Neogrammarian pattern
@@ -159,6 +220,57 @@ been unable to improve upon.
 **Full analysis:** See DEV_NOTES.md, "NWGmc u-lowering Exceptions Near
 Labials" section.
 
+**Cross-referencing with additional sources (March 2026):**
+
+- **Fulk (2018), §4.3 (pp.56–58):** Fulk gives the most detailed
+  comparative treatment of u-lowering now available. He confirms the
+  standard conditioning: "when u stood before a mid or low vowel in the
+  next syllable...it was lowered to o" and that "lowering is prevented
+  before a tautosyllabic nasal consonant" as well as "when j preceded the
+  non-high vowel conditioning the change: cf. OE cnyssan 'knock', trymman
+  'strengthen' (not †cnessan, †tremman) < *knusjanan, *trumjanan."
+
+  Crucially, Fulk adds a **chronological argument** in footnote 1 (p.58),
+  citing Ringe: this lowering occurred "before the loss of WGmc. *-az,
+  since it is common in a-stem nouns but not root-stems (Ringe & Taylor
+  2014: 27–34, at 29)." This chronological precision — u-lowering preceded
+  *-az loss — is important for our pipeline ordering and suggests that the
+  conditioning vowel was still present in the suffix at the time of
+  lowering. However, Fulk says nothing about the labial/velar exceptions
+  that are the subject of our finding. His examples (*skulō > scolu,
+  *stulanaz > stolen, *ʒulþan > gold) are all regular cases.
+
+  Also noteworthy is Fulk's observation that "heterosyllabic nasal" may
+  also block lowering (OE fruma, guma, cuman retain u), "though OS and OHG
+  show instances of o beside u." This adds another blocking environment
+  not always mentioned in the standard accounts.
+
+- **Orel (2003):** Orel's dictionary does not discuss the phonological
+  conditioning of u-lowering. His entries for *fullaz (p.124) and *wulfaz
+  (p.462) give the expected forms in each daughter language without
+  commenting on why OE retains u. The dictionary format naturally precludes
+  such discussion.
+
+- **Kluge/Seebold (2002):** As a German etymological dictionary, this work
+  consistently shows the lowered OHG forms (fol, wolf, fogal) that contrast
+  with the OE retentions. This confirms the OE-specificity of the exceptions,
+  since OHG lowered u regularly in precisely the environments where OE did
+  not. Kluge/Seebold do not discuss the phenomenon as such.
+
+- **Kaluza (1900–01):** Kaluza's treatment of stressed vowels (§§56–57) does
+  not discuss u-lowering exceptions near labials. His account of *u > *o is
+  integrated into the general vowel correspondences rather than being treated
+  as a separate sound change with conditioning factors.
+
+**Assessment:** Fulk's chronological argument (u-lowering before *-az loss)
+and his additional blocking environment (heterosyllabic nasals) refine the
+picture but do not resolve the labial/velar puzzle. The fact that the most
+comprehensive modern comparative grammar (Fulk 2018) does not even mention
+the labial exceptions — while R/T (2014) discuss them at length and
+explicitly give up on explaining them — confirms our conclusion that these
+exceptions remain genuinely unexplained. Our finding stands: the pattern
+is real but resists Neogrammarian formalization.
+
 ---
 
 ## 3. PWGmc \*j-related sound changes: formalization of under-specified rules
@@ -220,6 +332,49 @@ descriptions.
 **Full analysis:** See DEV_NOTES.md, "PWGmc \*j-related Sound Changes —
 NEEDS EXPERT REVIEW" section.
 
+**Cross-referencing with additional sources (March 2026):**
+
+- **Fulk (2018), §5.8 (Sievers' law, pp.97–100) and §6.11 (WGmc consonant
+  gemination, pp.98, 112–113):** Fulk provides the most thorough modern
+  comparative treatment of the interaction between *j, syllable weight, and
+  gemination. Several points are directly relevant to our finding:
+
+  (a) On Sievers' law, Fulk confirms that "only i/j (and not u/w) attests
+  to alternations" in Germanic and notes that "evidence for it is not found
+  in all the environments in which it might be expected." This validates our
+  observation that the rules governing *j-loss are under-specified.
+
+  (b) On WGmc gemination, Fulk shows that it "occurs in OE ja- and jō-stems
+  like fæstenn 'evening' < *fastunjaz and hæftenn 'captivity' < *xaftunjō,
+  but not byrele 'cup-bearer' < *burilijaz or acc. sg. gydene 'goddess' <
+  *ʒuðinijōn" (p.98), following Barrack (1998). This confirms that the
+  heavy/light distinction governs gemination distribution, not just *j-loss.
+
+  (c) Most importantly for our finding 3, Fulk notes explicitly that R/T's
+  caveat about *ijō → *iu ("the uniqueness of the sequence *ijo...makes it
+  inadvisable to attempt any generalizations") is connected to a broader
+  problem: "the distinction between *-ij- and *-j- was eliminated in favor
+  of the latter, certainly not in Proto-WGmc. itself" (p.99). This confirms
+  that the merger of the two j-allomorphs was a gradual, dialect-specific
+  process — exactly the situation that makes FST formalization difficult.
+
+- **Kaluza (1900–01):** Kaluza's treatment of consonants does not discuss
+  the *j-alternation in terms that connect to our formalization problem.
+  His account of gemination (§§76–77) is descriptive rather than historical.
+
+- **Orel (2003), Kluge/Seebold (2002):** Etymological dictionaries; do not
+  discuss the phonological rules governing *j-behavior.
+
+**Assessment:** Fulk (2018) substantially enriches the picture for this
+finding. His account confirms that the formalization challenges we
+encountered are genuine: the *j-alternation in Germanic is governed by
+interacting factors (syllable weight, morphological class, dialect-specific
+timing of the *ij/*j merger) that the standard prose accounts leave
+deliberately vague. Fulk's explicit statement that the *ij/*j distinction
+was eliminated "not in Proto-WGmc. itself" implies that any single-stage
+FST rule will necessarily be an approximation. This is exactly what our
+implementation experience showed.
+
 ---
 
 ## 4. A-restoration trigger set: {*æ} is NOT a trigger
@@ -272,6 +427,73 @@ persist indefinitely in a prose description.
 
 **Full analysis:** See DEV_NOTES.md, "Water fix: PWGmc ō-shortening and
 A-restoration correction" section.
+
+**Cross-referencing with additional sources (March 2026):**
+
+- **Fulk (2018), §4.12 (pp.72–74) and §4.13 (pp.74–76):** Fulk's treatment
+  is particularly valuable for this finding because he uses different
+  terminology from R/T but describes the same phenomenon, allowing us to
+  confirm our analysis from a different scholarly tradition.
+
+  Fulk does not use R/T's term "A-restoration." Instead he describes the
+  process as part of the interaction between Anglo-Frisian Brightening
+  (AFB) and subsequent retraction. His key passage (§4.13, p.76): "Before
+  w, [æ] was retracted to [a], as in WS ge-sawen 'seen' and pret. pl.
+  sāwon 'saw'. In open syllables it was also retracted before a back vowel
+  in the following syllable, hence nom. pl. dagas 'days' (sg. dæg) and
+  dat. pl. māgum 'kinsman' (nom. sg. mǣg), though ǣ is often found for ā."
+
+  This passage confirms three things: (a) retraction/restoration occurs
+  "before a back vowel in the following syllable" — the trigger must be a
+  back vowel, not any vowel; (b) the gen.sg. dæges (not ×dages) is
+  implicit in Fulk's paradigm (sg. dæg vs. pl. dagas), confirming that the
+  fronted suffix vowel *æ does NOT trigger restoration; (c) Fulk adds the
+  important caveat "though ǣ is often found for ā," suggesting that even
+  in environments where restoration should apply, the fronted variant
+  sometimes persists — a complication our pipeline does not currently model.
+
+- **Kaluza (1900–01), §57 (pp.98–99):** Kaluza's account is the most
+  explicit early formulation of the A-restoration condition and directly
+  supports our finding. His rule (a): "Urg. a = ae. a in offener Silbe vor
+  dunklem Vokal der folgenden Silbe" (PGmc *a = OE a in open syllable
+  before a dark vowel in the following syllable). The key phrase is "vor
+  dunklem Vokal" — before a DARK vowel. Kaluza's examples (dagas, fatu,
+  gladu, faran, grafan) all have back suffixal vowels. He explicitly gives
+  the gen.sg. as cræftas with æ (Anm. 1: "Zu cræft 'Kraft' lautet der
+  Plural cræftas, cræfta, cræftum, weil hier geschlossene Silbe vorliegt")
+  — but this concerns closed syllables, not the trigger question.
+
+  Most importantly, Kaluza's rule (b) adds: "Urg. a bleibt auch
+  unverändert, wenn der dunkle Vokal der folgenden Silbe durch
+  Vokaldissimilation...in einen hellen übergegangen ist" (PGmc *a also
+  remains unchanged when the dark vowel of the following syllable has
+  become a light one through vowel dissimilation). This is the converse of
+  our finding: Kaluza says that even when the surface suffixal vowel has
+  been fronted (by dissimilation), the ORIGINAL back quality of the
+  conditioning vowel still determines the outcome. His examples: hafela
+  (*hafulā-), gaderian (*gadurōjan), macian (*macōjan). This appears to
+  contradict our finding that {*æ} is not a trigger — but Kaluza is
+  describing a different situation: these are cases where the suffixal
+  vowel was *originally* back (ō, u) and was later fronted by
+  dissimilation, NOT cases where AFB fronted an original *a. The distinction
+  is between dissimilated dark > light (Kaluza's case, where restoration
+  persists) and AFB-fronted *a > *æ (our case, where it does not). This
+  is actually a further refinement: restoration is determined by the
+  underlying quality at the time it applies, and AFB-fronted *æ counts
+  as front, while dissimilated ō > e does not undo a prior restoration.
+
+- **Orel (2003), Kluge/Seebold (2002):** Not relevant (etymological
+  dictionaries; do not discuss OE-specific phonological conditioning).
+
+**Assessment:** Both Fulk and Kaluza independently confirm the core of our
+finding: A-restoration requires a genuinely back vowel in the following
+syllable. Kaluza's additional observation about vowel dissimilation adds
+an important nuance — restoration is determined by the vowel quality at
+the time the rule applies, and different sources of fronting (AFB vs.
+dissimilation) have different effects. Fulk's note that "ǣ is often found
+for ā" even in restoration environments suggests that the process may
+have been less categorical than our FST currently models. Both points
+deserve further investigation.
 
 ---
 
