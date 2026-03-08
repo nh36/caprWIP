@@ -1184,6 +1184,15 @@ define OEEwLongDiphthong [
     {*i} {*w} -> {*ēo} {*w} || _ OEEwLongContext
 ];
 
+# PGmc *aw before a vowel → OE ēaw (Campbell §272, Hogg §3.27).
+# Parallel to *au → ēa, but *w is preserved as a glide when followed by
+# a vowel. Placed before AFB so *a is still unfronted at this stage.
+# Context: *w immediately followed by a vocalic (excludes *j-initial
+# suffixes like *-jăną where *a fronts via i-umlaut instead).
+define OEAwLongDiphthong [
+    {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}]
+];
+
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
 define AngloFrisianBrightening [
     {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
@@ -1672,6 +1681,7 @@ define EnglishProtoToOE (
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
     .o. OEEwLongDiphthong
+    .o. OEAwLongDiphthong
     .o. AngloFrisianBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
@@ -1755,6 +1765,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
     .o. OEEwLongDiphthong
+    .o. OEAwLongDiphthong
     .o. AngloFrisianBrightening
     .o. OEBreaking
     .o. OEVelarFricativePalatalization
