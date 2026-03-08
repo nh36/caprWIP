@@ -2547,6 +2547,69 @@ the grade actually continued in that branch. This is the same type of issue enco
 stefn/stemn problem (§ Case 3 above), though the hnecca case is more cleanly resolved because
 Kroonen's own reconstruction already supplies the e-grade nom.sg.
 
+### Case 3: \*flaskō → \*flaskōn (OE flasce 'flask, bottle')
+
+**Problem.** TSV had \*flaskō (strong feminine ō-stem). Pipeline gives *flasc* (no final vowel:
+heavy-syllable apocope removes \*-ō after heavy \*-sk cluster). Expected OE form: *flasce*.
+
+**Declension class correction.** OE flasce is weak feminine (ōn-stem). All major sources agree:
+Orel \*flaskò(n) sb.f., Wiktionary PGmc \*flaskǭ (weak fem.), Kluge/Seebold s.v. *Flasche*
+(implies feminine, connected to \*flataz 'flat'). TSV corrected from \*flaskō to \*flaskōn.
+
+**A-restoration interaction — a pipeline bug discovered.**
+
+Changing the proto to \*flaskōn exposed a deeper pipeline issue. The corrected form went through:
+
+1. NWGmcNStemNLoss: \*flaskōn → \*flaskǭ (nasalized long vowel)
+2. AFB: \*a → \*æ → \*flæskǭ (wrongly fronted)
+3. A-restoration: did NOT fire — \*ǭ was not in OEARestorationTriggerVowel
+4. OESkPalatalization: \*æ (front vowel) before \*sk → \*ʃ (wrongly palatalized)
+5. Unstressed vowel shortening: \*ǭ → \*e
+6. Result: *flæsċe* (wrong root vowel AND wrong consonant)
+
+The root cause: \*ǭ (nasalized long ō, from fem. n-stem \*-ōn → NWGmcNStemNLoss) is
+**phonetically back** but was missing from the A-restoration trigger set. At the historical
+stage when A-restoration applied, the following syllable still had a back vowel (\*ǭ < \*-ōn).
+A-restoration should have prevented the fronting.
+
+**The fix.** Added \*ǭ to OEARestorationTriggerVowel:
+
+```
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
+```
+
+This change causes A-restoration to fire for root \*a before consonant clusters (excluding \*r,
+\*l — which independently block A-restoration) followed by \*ǭ. The derivation now proceeds:
+
+1. NWGmcNStemNLoss: \*flaskōn → \*flaskǭ
+2. AFB: \*a → \*æ → \*flæskǭ
+3. A-restoration: \*æ → \*a (because \*s, \*k in intervening set, \*ǭ now a trigger) → \*flaskǭ
+4. OESkPalatalization: \*a is NOT a front vowel → medial \*sk NOT palatalized → \*flaskǭ
+5. Unstressed vowel shortening: \*ǭ → \*e → \*flaske
+6. Surface: *flasce* ✓
+
+Both the root vowel (a, not æ) and the consonant (sc, not sċ) are now correct. The sc/sċ
+fix is a consequence of the A-restoration fix: because \*a is not fronted, the SkPalatalization
+"after front vowel" context (Campbell §440) no longer matches.
+
+**Regression check.** All other fem. ōn-stems verified:
+
+| Form | Before fix | After fix | Expected | Status |
+|------|-----------|-----------|----------|--------|
+| \*flaskōn | flæsċe | flasce | flasce | **fixed** |
+| \*wartōn | wearte | wearte | wearte | unchanged (\*r blocks) |
+| \*swalwōn | swealwe | swealwe | swealwe | unchanged (\*l blocks) |
+| \*sapōn | sæpe | sape | sæp | bucket change (pre-existing length issue) |
+| \*xertōn | heorte | heorte | heorte | unchanged (\*e root) |
+| \*laimōn | lāme | lāme | lām | unchanged (\*ai root) |
+| \*marōn | mære | mære | mære | unchanged (\*r blocks) |
+
+\*sapōn moved from `final_vowel_extra` to `fronting_missing__afb` because the root vowel is
+now *a* (not *æ*) while the TSV expects *sæp* (with *æ*). However, the expected form "sæp" is
+itself problematic: OE *sāpe* has long *ā* and is weak feminine. The proto \*sapōn has short
+\*a, so neither the old output (*sæpe*) nor the new (*sape*) matches the correct OE *sāpe*.
+This is a separate vowel-length issue in the proto-form.
+
 ## Mismatch trajectory — full history
 
 | Date | Mismatches | Matches | Total rows | Match rate |
@@ -2560,3 +2623,4 @@ Kroonen's own reconstruction already supplies the e-grade nom.sg.
 | 2026-03-09 | 100 | 280 | 380 | 73.7% |
 | 2026-03-09b | 95 | 285 | 380 | 75.0% |
 | 2026-03-09c | 93 | 287 | 380 | 75.5% |
+| 2026-03-09d | 92 | 288 | 380 | 75.8% |

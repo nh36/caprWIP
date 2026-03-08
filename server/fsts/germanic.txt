@@ -1219,7 +1219,10 @@ define AngloFrisianBrightening [
 # they are underlyingly back.
 # {*ô} (trimoric *ō) is a back vowel that triggers A-restoration, but is not
 # in PGmcStarBackVowel to avoid regressions in general vowel rules.
-define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô}];
+# {*ǭ} (nasalized *ō, from fem. n-stem *-ōn via NWGmcNStemNLoss) is phonetically
+# back and must trigger A-restoration. Without it, *flaskōn wrongly yields flæsċe
+# instead of flasce: AFB fronts *a→*æ, then SkPalatalization palatalizes after *æ.
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
 
 define OEARestorationIntervening [
     EnglishStarConsonantNoR - {*l}
