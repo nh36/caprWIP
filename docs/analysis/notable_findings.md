@@ -167,9 +167,11 @@ wæter 'water', bydel (PDE beadle)."
 This is a genuinely new formulation. Where Kaluza and Luick described
 the constraint descriptively (before *l*, in open syllables), Fulk states
 the underlying principle: syncope is constrained by the **sonority** of the
-resulting cluster. A cluster like *-tl-* (wæter → ×wætr) or *-dl-*
-(bydel → ×bydl) violates sonority sequencing; a cluster like *-cl-*
-(micles) or *-tr-* (betra) does not.
+resulting cluster. A cluster like *-dl-* (bydel → ×bydl) violates sonority
+sequencing (stop before lateral); a cluster like *-cl-* (micles) or *-tr-*
+(betra) does not. Wæter is a light-stem case where the following consonant
+is *t*, not *l* or *r*, so Kaluza's and Fulk's light-stem restriction
+predicts non-syncope directly.
 
 **Implications for our implementation:** Our FST restricts syncope to fire
 before dental obstruents `[{*θ}|{*ð}|{*d}|{*t}]`. This works empirically,
@@ -287,7 +289,7 @@ smolt." His solution is that the lowering was incomplete — a half-way
 realisation to "[ou] oder zu engem [o]" — which under influence of
 surrounding labials and velars reverted to u. This amounts to a phonetic
 plausibility argument, not a rule: there is no formalisable distinction
-between *fullaz (retained) and *folkam (lowered), since both have a labial
+between *fullaz (retained) and *fulkam (lowered to OE folc), since both have a labial
 onset and velar/lateral continuation.
 
 **Luick (1914–40), §78 Anm. 3** directly rejects Bülbring. His reasoning
@@ -480,11 +482,12 @@ been fully resolved. Any single-stage FST rule for *j-loss is therefore
 an approximation of what was in reality a gradual dialect-specific process.
 
 **Campbell (1962), §§407–408:** Campbell gives the OE-internal data on
-gemination: "consonants are doubled before j...r, l are not doubled in OE"
-(§407); "gemination does not occur after a long vowel or diphthong,
-or after two consonants" (§408). His examples: bedd < *badja, settan <
-*satjan, but herian not ×herrian < *xazjan. This confirms the heavy-stem
-blocking of gemination from the OE side.
+gemination. §407 notes that consonants are doubled before *j*, except
+that r and l are not doubled in OE. §408 adds that gemination does not
+occur after a long vowel or diphthong, or after two consonants.
+Standard examples: bedd < *badja, settan < *satjan, but herian (not
+×herrian) < *xazjanan. This confirms the heavy-stem blocking of
+gemination from the OE side.
 
 **Implications for the FST:** The pipeline currently handles *j through a
 sequence of ordered rules: (1) *-ja-/*-ją- > *-i-/*-u- after loss of final
@@ -634,12 +637,16 @@ and does not fire), while dissimilation of *ō > *e happens AFTER
 restoration (so restoration has already fired and the later fronting is
 irrelevant).
 
-**Luick (1914–40), §§116–117:** Luick's account (as summarised in
-R/T's bibliography, pp.152–7) treats retraction as a two-stage process:
-first, *æ was retracted before /x/ and velar consonant groups (this is
-pre-restoration); then, more generally before back suffixal vowels. His
-emphasis on the open-syllable condition ("nur in offener Silbe") matches
-Kaluza's formulation and our FST's implementation.
+**Luick (1914–40), §161 (pp.152–153):** Luick's formulation is: "Urengl. æ
+wurde gemeinenglisch vor einem dunklen Folgevokal zu a, ohne daß der
+dazwischen stehende Konsonant von Belang gewesen wäre" ('Pre-OE æ
+became a before a dark following vowel, without the intervening consonant
+being relevant'). He then distinguishes four positional environments:
+(1) "am deutlichsten in offener Silbe" ('most clearly in open syllable'):
+hara, faran, nacod, macian, dagas, fatu; (2) before long consonants;
+(3) before s+C and f+C; (4) "nur in wenigen Resten" ('only in a few
+relics') before obstruent + liquid: appla, accras. His open-syllable
+examples match Kaluza's and R/T's.
 
 **Where the scholars disagree:**
 
