@@ -13,7 +13,7 @@ discussion in the eventual write-up of the project.
 
 **Background:** OE medial syncope deletes short unstressed vowels in medial
 position after heavy syllables. The standard references (Campbell OEG
-§§389-393; Luick Hist. Gr. §§114-121; Hogg vol.1 §3.3.3.2; R/T vol.2 §6.7.3)
+§§389-393; Luick Hist. Gr. §306; Hogg vol.1 §3.3.3.2; R/T vol.2 §6.7.3)
 all formulate the rule in terms of syllable weight and stress position. None of
 them state that the identity of the consonant following the syncopated vowel
 is relevant.
@@ -64,7 +64,7 @@ may reflect:
   following the syncopated vowel. It is the closest any source comes to
   noting that consonantal context matters.
 
-- **Luick (Hist. Gr. §§114-121, pp.279-288):** Foundational treatment;
+- **Luick (Hist. Gr. §306, pp.283-285):** Foundational treatment;
   discusses paradigmatic alternations in detail but formulates conditioning in
   terms of syllable weight and stress, not following consonant.
 
@@ -264,8 +264,8 @@ but it describes a phonetic tendency rather than a sound law.
 FST methodology is designed to test Neogrammarian sound laws; when it cannot
 model a pattern, that failure is itself informative. In this case, it confirms
 that the u-lowering exceptions resist formalization and are likely the result
-of a gradient phonetic effect — precisely the conclusion that four generations
-of scholarship (Bülbring 1902, Luick 1914-40, Hogg 1992, R/T 2014) have
+of a gradient phonetic effect — precisely the conclusion that successive
+generations of scholarship (Bülbring 1902, Luick 1914–40, R/T 2014) have
 been unable to improve upon.
 
 **Full analysis:** See DEV_NOTES.md, "NWGmc u-lowering Exceptions Near
@@ -468,10 +468,7 @@ our pipeline: gemination "occurs in OE ja- and jō-stems like fæstenn
 'evening' < *fastunjaz...but not byrele 'cup-bearer' < *burilijaz or
 acc.sg. gydene 'goddess' < *ʒuðinijōn" (p.98, citing Barrack 1998). This
 is Sievers' law applied to gemination: after a heavy initial syllable in a
-disyllable, *-ij- (not *-j-) appears, and *-ij- does not geminate. The
-pattern matches what our FST encounters with forms like *fryhtu vs.
-*skellinaz — the heavy/light distinction governs whether gemination
-fires.
+disyllable, *-ij- (not *-j-) appears, and *-ij- does not geminate.
 
 The key sentence for our finding 3 is Fulk's chronological note (p.99):
 "the distinction between *-ij- and *-j- was eliminated in favor of the
