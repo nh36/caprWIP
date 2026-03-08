@@ -330,7 +330,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2015	f ȳ s t	*funxwstiz	f ɪ ( - - ) s t ( - - )	fɪst	fȳst	501	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fist	*funxwstiz	78
 1828	f au s t	*funxwstiz	f au ( - - ) s t ( - - )	faust	Faust	501	German				fist	*funxwstiz	78
 50	f l ɑː s k	*flaskō	f l ɑː s k -	flɑːsk	flask	14	English				flask	*flaskō	336
-2016	f l a s c e	*flaskō	f l ɑː s k -	flɑːsk	flasce	14	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			flask	*flaskō	336
+2016	f l a s c e	*flaskōn	f l ɑː s k -	flɑːsk	flasce	14	Old_English	Proto corrected: weak fem. ōn-stem *flaskōn (Orel *flaskò(n) sb.f.; Kroonen *flaskǭ). TSV had *flaskō (strong ō-stem, no final vowel after heavy syllable). A-restoration trigger fix: *ǭ (nasalized, from *-ōn) now triggers A-restoration, preserving root *a before medial *sk.			flask	*flaskōn	336
 49	f l a ʃ ə	*flaskō	f l a ʃ - ə	flaʃə	Flasche	14	German				flask	*flaskō	336
 1811	v l ɑ s	*flaxsą	v l ɑ - s ( - - )	vlɑs	vlas	496	Dutch				flax	*flaxsą	79
 1810	f l æ k s	*flaxsą	f l æ k s ( - - )	flæks	flax	496	English				flax	*flaxsą	79
