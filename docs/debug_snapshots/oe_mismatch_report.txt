@@ -1,10 +1,10 @@
-Total mismatches: 91
+Total mismatches: 78
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      5
+  TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    21
-  Phonology (other buckets):   61
+  Phonology (other buckets):   49
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 2
@@ -23,10 +23,11 @@ Total mismatches: 91
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
+  breaking_extra__eo_for_e: 1
   breaking_extra__eo_for_high: 3
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 2
-  breaking_extra__wrong_form: 3
+  breaking_extra__wrong_form: 2
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
@@ -39,24 +40,19 @@ Total mismatches: 91
   vowel_quality__unstressed_o_a: 1
   vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
+  final_vowel_missing__morph_form_mismatch: 1
   final_vowel_missing__other: 3
-  final_vowel_missing__weak_noun_like: 6
+  final_vowel_missing__weak_noun_like: 5
 --- final_n_missing sub-buckets ---
   final_n_missing__expected_en: 1
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
+  cons_mismatch__c_vs_ċ__cluster: 1
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
-  cons_mismatch__length_diff: 1
   cons_mismatch__n_vs_-__word_final: 1
-  cons_mismatch__n_vs_l__word_final: 2
-  cons_mismatch__n_vs_t__word_final: 4
-  cons_mismatch__r_vs_p__cluster: 1
-  cons_mismatch__r_vs_t__cluster: 4
-  cons_mismatch__r_vs_t__word_final: 1
-  cons_mismatch__t_vs_s__word_final: 1
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
@@ -121,6 +117,9 @@ gemination_extra (1):
 breaking_extra__ea_for_a (1):
   *sparēną -> spearon (expected sparian)
 
+breaking_extra__eo_for_e (1):
+  *strawjăną -> streowan (expected strewian)
+
 breaking_extra__eo_for_high (3):
   *beugăną -> bēogan (expected būgan)
   *newun -> nēowon (expected nigon)
@@ -133,10 +132,9 @@ breaking_extra__ie_for_i (2):
   *geftiz -> ġieft (expected ġift)
   *θrejez -> þrīe (expected þrī)
 
-breaking_extra__wrong_form (3):
+breaking_extra__wrong_form (2):
   *xlaxjăną -> hliehan (expected hlæhhan)
   *skellinăz -> sċiellin (expected sċilling)
-  *strawjăną -> sreowan (expected strewian)
 
 a_restoration_needed (1):
   *nablô -> næfla (expected nafola)
@@ -167,20 +165,26 @@ vowel_quality__unstressed_o_a (1):
 vowel_quality__unstressed_vowel (1):
   *xarbistuz -> hierfist (expected hierfest)
 
+final_vowel_missing__morph_form_mismatch (1):
+  *deljăz -> dill (expected dile)
+
 final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)
   *labbăz -> læbb (expected læppa)
   *spennilō -> spenneol (expected spindle)
 
-final_vowel_missing__weak_noun_like (6):
-  *deljăz -> dil (expected dile)
+final_vowel_missing__weak_noun_like (5):
   *fūri -> fȳr (expected fȳre)
   *skuldrō -> sċoldor (expected sċuldra)
   *sibăz -> sif (expected sife)
   *speru -> speor (expected spere)
+  *tangō -> tang (expected tange)
 
 final_n_missing__expected_en (1):
   *lungō -> lung (expected lungen)
+
+cons_mismatch__c_vs_ċ__cluster (1):
+  *strakkjăną -> strecċan (expected streċċan)
 
 cons_mismatch__f_vs_b__intervocalic (1):
   *xabēną -> hafon (expected habban)
@@ -195,36 +199,8 @@ cons_mismatch__g_vs_h__word_final (2):
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
 
-cons_mismatch__length_diff (1):
-  *weljô -> wila (expected willa)
-
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
-
-cons_mismatch__n_vs_l__word_final (2):
-  *stelljăną -> stilan (expected stillan)
-  *weljaną -> wilan (expected willan)
-
-cons_mismatch__n_vs_t__word_final (4):
-  *fastjăną -> fesan (expected festan)
-  *laistjăną -> lǣsan (expected lǣstan)
-  *satjăną -> setan (expected settan)
-  *setjăną -> sitan (expected sittan)
-
-cons_mismatch__r_vs_p__cluster (1):
-  *spraidjăną -> srǣdan (expected sprǣdan)
-
-cons_mismatch__r_vs_t__cluster (4):
-  *strawą -> srēaw (expected strēaw)
-  *straumăz -> srēam (expected strēam)
-  *strakkjăną -> srecċan (expected streċċan)
-  *strangiz -> srenġ (expected strenġ)
-
-cons_mismatch__r_vs_t__word_final (1):
-  *wintruz -> winer (expected winter)
-
-cons_mismatch__t_vs_s__word_final (1):
-  *θurstuz -> þurt (expected þurst)
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
