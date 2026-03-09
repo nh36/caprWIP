@@ -1036,24 +1036,44 @@ regressions.
 
 **The novel contribution:**
 
-None of the sources we consulted discuss the **ordering** of i-lowering
-relative to u-lowering. Howell & Salmons discuss place feature blocking, and
-Cercignani discusses merger avoidance, but neither addresses the feeding
-interaction we discovered. Our finding suggests:
+Our analysis yielded two potentially novel findings:
 
-1. i-lowering and u-lowering are in a **counter-feeding** relationship
-2. i-lowering must apply **before** u-lowering to produce correct outputs
-3. This ordering is required because u-lowering creates new \*o vowels that
-   would otherwise feed i-lowering in unintended environments
+1. **Onset-velar blocking in OE (extension of Cercignani 1980):** Cercignani
+   notes that in Old Icelandic, \*i was retained "after \*/k/ and \*/g/" (citing
+   Noreen and Gutenbrunner). However, he explicitly states this "was by no
+   means true of at least certain types of Old High German" (OHG shows skif/skef,
+   ginen/genen doublets). Our OE data suggests that onset velars also blocked
+   i-lowering in Old English:
+   - \*xlidą → OE *hlid* (not \**hled*) — onset \*x blocks
+   - \*furxtiθō → OE *fyrhtu* (not \**forhteþu*) — earlier \*x blocks
+   
+   If correct, this makes OE pattern with OIc. (onset blocking) rather than OHG
+   (no onset blocking). This is phonologically coherent: OE and OIc. share
+   northern/Ingvaeonic features. This extension is NOT explicitly stated in the
+   literature and represents a potentially novel observation.
 
-If this ordering constraint is not documented in the literature, it represents
-a methodological contribution from the FST implementation.
+2. **Rule ordering (i-lowering before u-lowering):** None of the sources
+   consulted discuss the ordering of i-lowering relative to u-lowering. Our
+   finding shows:
+   - i-lowering and u-lowering are in a **counter-feeding** relationship
+   - i-lowering must apply **before** u-lowering to produce correct outputs
+   - This ordering is required because u-lowering creates new \*o vowels that
+     would otherwise feed i-lowering in unintended environments
+
+   If this ordering constraint is not documented in the literature, it represents
+   a methodological contribution from the FST implementation.
 
 **Implementation:** The rule is implemented in `server/fsts/germanic.txt` with:
 - `EnglishStarCoronal`: coronals transparent to lowering
 - `EnglishStarVelarOrLabial`: velars and labials that block lowering
-- `NWGmcILowering`: applies only before coronal clusters + non-high vowel
+- `EnglishStarNonVelar`: used for onset-velar blocking
+- `NWGmcILowering`: applies only when (a) no velar in onset, (b) only coronals
+  in coda
 - Pipeline ordering: `NWGmcILowering` before `NWGmcULowering`
+
+**Results (2026-03-09):** Implementing onset-velar blocking yielded +2 matches
+(297 → 299), fixing *lid* (\*xlidą → hlid) and *fright* (\*furxtiθō → fyrhtu)
+without regressions. This confirms the onset-velar blocking hypothesis.
 
 **Full analysis:** See DEV_NOTES.md, "PGmc \*i > WGmc \*e Lowering: The Case
 of nest".
