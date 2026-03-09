@@ -1,0 +1,1224 @@
+American Journal of Germanic Linguistics & Literatures 9.1 (1997): 83-111.
+
+Umlautless Residues in Germanic
+Robert B. Howell
+
+Joseph C. Salmons
+
+University of Wisconsin-Madison
+Evidence suggests that Germanic languages resisted the spread of
+historical umlaut processes. We propose that examples of such
+superficially varied umlautless residues all yield to a single coherent
+phonological account. Specifically, these vocalic assimilations show
+strong preferences for reducing more extreme differences in place of
+articulation between trigger and target while failing to assimilate
+articulatorily closer vowels, so that triggering /i, j / first and most
+consistently mutated /a/ and last and least consistently mutated /u(:)/.
+This vocalic cline interacts with the consonantal material intervening
+between trigger and target, so that obstruent clusters (especially velar or
+labial) are prone to inhibit umlaut. In both cases, the smaller the
+phonetic difference between target and trigger, the less likely umlaut is
+to occur. While umlaut failure has long been consigned to the margins
+of theories of umlaut, we argue that it is crucial, providing a snapshot
+of how umlaut unfolded across western and north Germanic. *
+"The real point at issue is the scope of the phonetic correspondenceclasses and the significance of the residues. The neo-grammarians
+claimed that the results of study justified us . . . in seeking a complete
+analysis of the residues."
+Bloomfield 1933:354
+1. Introduction. While all Germanic languages save Gothic show
+various forms of the vowel harmony process commonly known as
+umlaut, much evidence indicates that all of these languages resisted
+the spread of umlaut in some ways. Umlautless residues, including
+* We thank the following colleagues for discussions on this topic and comments
+on drafts of this paper and other help: two anonymous reviewers for this journal,
+Garry Davis, Stuart Davis, Greg Iverson, Monica Macaulay, Mary Niepokuj,
+Edgar Polome, and Jolanda Vanderwal Taylor. An earlier version of this paper
+was presented at the Germanic Linguistics Annual Conference (GLAC) in Ann
+Arbor, April 20-22, 1995, where we benefited from discussion with numerous
+members of the audience. The usual disclaimers apply.
+© Society for Germanic Philology
+
+84
+
+Howell & Salmons
+
+cases of the failure of nonprimary umlaut in Upper German—
+exemplified in 1 below—have been the subject of intense discussion
+for over a century, discussions in which phonological solutions have
+been out of fashion for decades.
+(1) Umlautless forms (Schirmunski 1962:201-3)
+Dialect
+a. muck
+sduk
+b. khuxa
+lu:ga
+c. slupfs
+lupfa
+d. dro: n ma
+map
+
+Standard
+Miicke
+Stuck
+Kiiche
+Luge
+schliipfen
+liipfen
+traumen
+Rube
+
+Earlier form
+OHG mucka, cf. OS muggia
+OHG stucki
+OHG kuchina
+OHG lugin
+MHG slupfen
+Gmc. *luppian
+MHG troumen
+OHG ruoba < *robjo
+
+A procession of noted scholars since the 1960s have denied outright
+that sound change can account for such recalcitrant data, and they
+resort instead to purely analogical accounts. Building both phonological and comparative arguments, we propose that umlautless
+residues, while complex and variable, in fact reflect well-attested and
+comprehensible patterns of sound change rather than morphological
+realignment, and, moreover, they have clear parallels across Germanic.
+Even the apparent lexical irregularity at the margins of umlaut is
+consistent with data from other vowel harmony systems.
+Phonologically, umlaut shows strong preferences for reducing the
+most extreme differences in place of articulation between trigger, or
+umlaut factor, and target, or affected vowel, while failing to assimilate
+articulatorily closer vowels, so that for /-umlaut, triggering A, j / first
+and consistently mutated /a/ and last but only inconsistently mutated
+/u/.
+This varying effect by distance across the vowel space interacts
+further with consonants intervening between trigger and target, where
+umlaut fails with short /u/ when a geminate, especially velar, stop
+intervenes between target and trigger. Comparatively, these data fit
+closely with broader evidence from Germanic, including Netherlandic,
+Old English, and Old Norse. The basic principle underlying these
+superficially diverse phenomena is, again, simply that more similar
+
+Umlautless Residues in Germanic 85
+
+groups are less likely to show assimilation. Languages around the
+world proffer parallels indicating that the phenomenon known as
+"umlaut failure" or "blocking" in Germanic is part of a wellattested (and thoroughly explicable) phonological process.
+We aim then to place umlaut failure back into the realm of sound
+change and integrate it into an emerging broader school of thought
+on umlaut. The American structuralist theory of umlaut, pioneered
+by Twaddell (1938) and continued into the present decade by Penzl
+(1949, 1994), Antonsen (1969, etc.), and others, remains a widely
+accepted view, one that Keller (1978:160) calls "one of the finest
+achievements of American linguists." An analogical approach to
+umlaut failure becomes necessary under this traditional, Twaddellian
+analysis, which regards umlaut as monolithic and thus exceptionless.
+Iverson and Salmons (1996) argue that this approach fails on a variety
+of descriptive and other grounds, notably that the assumption of a
+single, simultaneous umlaut process in Old High German cannot
+possibly handle any umlaut blocking phenomena. Crucially for the
+present study, the Twaddellian view must explicitly deny any
+phonological regularity and is thus forced to favor analogical
+accounts over phonologically regular ones. Recognition of this
+dilemma, we suggest, was the basic motivation for works such as Penzl
+1949 and Antonsen 1969. As Penzl puts it: "If a form without umlaut
+is not analogical, it can only go back to a form from which the isound was lost before the development of those allophonic variations
+that led to umlaut" (1949). This view is later sharpened by Antonsen
+(1966:120): "If a form without umlaut is not analogical, it can only
+go back to a form which already lacked l-i-l in Proto-Germanic."
+These strong views seem to reflect an implicit understanding of the
+Achilles Heel of Twaddell's account, so that we in some sense draw
+inspiration from the insights of Penzl and Antonsen.
+The attempt to justify analogical approaches to umlaut failure is
+founded on two points. First, Antonsen (1969) finds umlauted forms
+of all types, including Ai/ with velar geminates, in Upper German.
+Given that umlaut failure is a strongly recessive feature, this is to be
+expected; the relevant point is that some dialects show umlaut
+blocking in the environments in question: If a single dialect shows a
+phonologically coherent distribution, we regard claims of analogy as
+untenable. In fact, many dialects show the regular patterns we
+describe, even one thousand years after umlaut ceased to be
+
+86
+
+Howell & Salmons
+
+phonologically active, as we will see below. The second objection is
+that no rule can be defined and motivated (Liissy 1974). Yet, the basic
+regularities in this dataset are remarkable. That umlaut failure occurs
+only with high back vowels but never mid or low vowels in Old High
+German alone is fatal to the analogical view, even before we consider
+evidence from other Germanic languages or intervening consonants.1
+In moving umlaut failure back into the discussion, this paper
+contributes to the growing body of opinion that umlaut was hardly the
+monolithic change posited by Twaddell, but instead a process that can
+only be seen coherently in terms of long, gradual evolution (Buccini
+1992, Iverson, Davis, and Salmons 1994, Fertig 1996, Iverson and
+Salmons 1996).2
+In the rest of this paper, we first establish the central importance of
+umlaut failure in a broader theory of umlaut and then develop a
+principle for which vowels are most and least affected by umlaut,
+which we adapt to cover intervening consonant blocking as well. We
+close by dealing briefly with minor residual irregularities in umlaut
+and other vowel harmony systems.
+2. The Importance of Exceptions to Umlaut. An adequate
+explanatory account of umlaut processes in Germanic must go
+beyond mere description of the conditioning environments and the
+effects they exert on preceding vowels. Simple description of umlaut
+processes leaves key questions unanswered. It is, for example, crucial
+to our understanding of umlaut to review precisely which sequences
+of vowel-intervening consonant(s)-vowel tend to trigger umlaut
+processes in the various dialects of Germanic and which sequences
+rarely or never induce such changes. The investigator must then
+1
+
+Labov has recently noted about unprincipled claims of lexical diffusion that "by
+accepting the word as the fundamental unit of change, the investigator is less
+likely to search for the deeper phonetic regularities that may underlie the process
+of change" (1994:450). This, mutatis mutandis, applies to analogical arguments,
+where proponents have declined to pursue the search for regularity far enough.
+2
+
+Another aspect of this emerging view is that phonological solutions have been
+too often given short shrift in understanding umlaut. For example, Salmons
+(1994) argues that the connection between umlaut and plurality in Old High
+German is ultimately far more directly phonologically driven than many recent
+theories, especially natural morphology, have seen it as being.
+
+Umlautless Residues in Germanic 87
+
+provide a principled phonetic explanation of exactly why umlaut
+processes repeatedly arise cross-dialectally in certain environments
+while other sequences appear to impede umlaut and still other VC0V
+sequences virtually never participate in umlaut. Although extant data
+may never suffice for a seamless account of umlaut in all its
+permutations in the dialects of Germanic, it is safe to say that the facts
+at our disposal have not been fully exploited. Specifically, too little
+attention has been paid the exceptions to umlaut processes. In the
+following paragraphs we will argue that it is precisely these jagged
+edges of umlaut rules that shed the most light on the kinds of
+conditions that tend to trigger umlaut and help to explain the
+subsequent generalization of umlaut to other environments.
+Neogrammarian handbooks typically provide rather complete
+accounts of umlaut processes, prominently featuring a description of
+the conditioning environment and the resulting vocalic mutation.
+Major exceptions to the umlaut rules are also generally recorded in
+subsequent paragraphs whereas more idiosyncratic exceptions tend to
+be buried in the footnotes. More recent, feature-based accounts in the
+generative paradigm have focused on capturing umlaut processes in
+their most general form, while exceptions, which interfere with the
+generality of a rule, are treated cursorily or ignored altogether
+(beginning with King 1969, further developed by Lass and Anderson
+1975, Barrack 1975, Voyles 1991, 1992, and many others). These
+approaches succeed in providing a rudimentary account of a basic
+umlaut rule and admirably capture the fact that umlaut processes
+constitute assimilation of feature(s) of the conditioning vowels by the
+umlauted vowel segment:
+(2)
+
+Secondary umlaut in German
+V —>
+v /_
+[- back]
+back]
+
+Co
+
+V
+[- back]
+[+ high]
+
+This type of rule is not, however, even descriptively adequate if we
+include among our data phonologically well-defined blocking
+environments. Further, it cannot explain why the conditioning factor
+for secondary umlaut must be specified for height as well as for
+frontness, nor does it explain why the process fails to affect reflexes of
+
+88
+
+HoweII & Salmons
+
+OHG u, u and ou in some Upper German dialects when certain
+consonants intervene between root vowel and the umlaut factor.
+If it seems counterintuitive to claim that restrictions on umlaut can
+tell us much about the origin and spread of the process, one must
+realize that early textual evidence reflecting incomplete umlaut
+developments as well as more modern dialectal data showing
+incomplete operation of umlaut processes provide us with valuable
+"snapshots" of the developmental stages of umlaut. Old High
+German texts, for example, reflect German /-umlaut in its infancy.
+Given the fact that Old High German "primary umlaut" is limited to
+the fronting and raising of WGmc. */a/ in certain environments, we
+can view it as a paradigm example of a triggering environment for
+umlaut. On the other hand, the limited failure of "secondary umlaut"
+of OHG lul, IvJ, /ou/ in Upper German dialects of Middle High German
+reflects a late stage in the umlaut process in fossilized form, with the
+unumlauted reflexes of OHG IvJ, IvJ, /ou/ representing the vowels which
+conform least to the original trigger environment for OHG/MHG iumlaut. By comparing various incomplete umlaut processes, we can,
+therefore, potentially arrive at a basic typology of umlaut and
+ascertain what conditions favor the development of umlaut-type
+assimilation and which environments tend to hinder umlaut.
+Howell (1983) and Van Coetsem and Buccini (1988) make clear
+that umlaut processes are crucially affected both by the phonetic
+relationship between the umlaut factor and the preceding vowel and
+by the intervening consonant(s):
+(3) V
+
+C
+
+V
+
+Obviously only a limited subset of possible vocalic sequences in
+Germanic result in umlaut phenomena. This set of umlaut
+environments is in turn potentially affected by intervening
+consonants. An explanatory account of umlaut must deal with both,
+but the vocalic relationship is of primary importance.
+3. Degrees of Difference: Trigger Environment for Umlaut. Umlaut
+processes in Germanic present a broad range of vocalic mutations
+
+Umlautless Residues in Germanic 89
+
+including raising, lowering, fronting, backing, rounding, diphthongization, and combinations thereof. The uncontroversial unifying
+characteristics in this diversity are: 1) umlaut is an assimilatory
+process, and 2) the vowel-to-vowel assimilation is uniformly regressive
+in Germanic. Less clear is why umlaut affects only certain sequences
+of vowels. Even a partial answer to this question would represent a
+contribution to our understanding of the genesis and generalization of
+umlaut.
+Any assimilation necessarily requires as input two phonetically
+different segments. This simple principle represents a point of
+departure for our discussion of the relationship between trigger and
+target in Germanic. In what follows we argue that it is the degree of
+difference between two vowels in height and frontness that determines
+the likelihood of their participation in an umlaut process. Those
+sequences that are most different with respect to tongue position will
+be most susceptible to umlaut and, conversely, those segments which
+are least different phonetically tend to undergo umlaut chronologically later or not at all. This principle, as an anonymous reader
+points out, follows naturally from Vennemann's (1988) "Diachronic
+Maxim," whereby change along a given parameter will always
+improve the worst structures first and the least offensive structures last.
+In a broad theoretical discussion of general characteristics of
+feature spreading in vowel harmony languages, Cole and Kisseberth
+(1994) introduce two basic principles which "drive the existence"
+and, we would argue, the genesis of the spreading of vocalic features:
+1) Perceptibility: Features should be perceptible, that is, "features
+serve to mark contrast, and must be perceptible to fulfill their
+function."
+2) Articulator stability: Minimize changes from the neutral, steady
+state of the articulators, that is, "features are implemented by an
+articulatory system which imposes its own constraints on the
+realization of features" (Cole and Kisseberth 1994).
+These two principles are ideally met when a feature is realized over
+more than one segment, which Cole and Kisseberth express in their
+Principle of Extension:
+
+90
+
+Howell & Salmons
+
+3) Extension: Extend a feature over longer stretches of sound in
+order to maximize perceptibility and articulator stability.3
+All instances of umlaut in Germanic satisfy the Principle of Extension
+1) by maximizing perception of a feature or features of an umlaut
+factor by extending it to a preceding vowel and 2) by increasing
+articulator stability through reduction of articulatory distance between
+umlaut factor and umlauted vowel.
+While both perceptibility and articulator stability are enhanced in
+the output of Germanic umlaut processes, evidence provided by
+incomplete umlaut rules indicates that articulator stability plays a
+decisive role in the chronology of umlaut. In the development of iumlaut in German, we see that the first vowel affected is the short
+vowel most phonetically different from the conditioning factors,
+namely /a/:
+(4) Primary umlaut in German
+
+3
+
+Cole and Kisseberth (1994:4) recognize the fact that there is an "inherent
+tension between the Principle of Extension and the functional role of a feature to
+mark contrasts, since when a F[eature]-domain is extended, the possibility of
+contrast between [F] and its absence is eliminated in all positions within the
+extended domains." But they also simply assume that languages resolve this
+tension in different ways. In Germanic, for example, the extension of frontness
+and/or height of umlaut factors to umlauted vowels most often does not result in
+a complete assimilation to the umlaut factor, but rather in umlauted vowels
+which share features of the original vowel and the umlaut factor. In German, iumlaut of WGmc. */o/, */u/ to MHG /6/, /ii/ results in vowels that reflect the
+roundness and height of the original vowels and the frontness of the umlaut
+factors */i/, */j/, */i/.
+
+Umlautless Residues in Germanic 91
+
+Examples: OHG gast ~ gesti 'guest/guests'; OHG/arw ~ feris ~ ferit
+'(I) go, (you) go, (s/he) goes' (Braune and Eggers 1987:26-29)
+Primary umlaut, which must precede secondary umlaut chronologically,4 illustrates the trigger environment for umlaut processes in
+Germanic (within the limits of traditional vowel features to capture the
+three-way height distinction):
+(4.1) Trigger environment for umlaut (in features)
+target
+I
+V
+[a high]
+[P back]
+
+intervening C5
+Co
+
+trigger
+I
+V
+[-a high]
+[-P back]
+
+(4.2) Trigger environment for umlaut (schematically represented)
+
+4
+
+See Iverson and Salmons 1996. Arguments in favor of placing primary umlaut
+chronologically earlier than secondary umlaut include: 1) primary umlaut is the
+only process to affect the entire continental West Germanic area. Secondary
+umlaut, including umlaut of */a/ in blocking environments, does not occur in
+western Dutch (examples given below), 2) Nonumlaut of WGmc. */a/ in
+"blocking environments" dialectally in Old High German implies later onset of
+at least this part of what is commonly called secondary umlaut, and 3) primary
+umlaut and secondary umlaut result in fundamentally different vocalic
+mutations—it is, in fact, difficult if not impossible to state the results of the
+two processes in one phonological rule. Primary umlaut causes the fronting AND
+raising of WGmc. */a/, while secondary umlaut causes only the fronting of the
+affected vowels, a point going back at least to Vennemann (1972:882).
+5
+
+It is worth noting that umlaut is least constrained when no consonant intervenes, cf. the great extent of the so-called w-breaking in Old English and the
+greater range of u-umlaut in Old Norse when umlauting u directly follows a root
+vowel (Noreen 1970:69-72).
+
+92
+
+Howell & Salmons
+
+Umlaut processes in Germanic indicate that the umlaut effect
+generalizes from this optimal trigger environment to environments
+where phonetic differences between conditioning factor and target
+vowel are less dramatic. In those instances when umlaut processes do
+not reach their full potential extent, the failure occurs as the umlaut
+factor, or trigger, and the target vowel become more similar
+phonetically. For the various types of umlaut in Germanic we
+therefore posit the origin and direction of spread depicted in figures
+5.1-5.4.
+Umlaut has spread out in waves, stopping at points that show its
+historical unfolding. On opposite ends of the West Germanic dialect
+continuum we find interesting examples of partially completed iumlaut processes that illustrate the significance of the trigger
+environment for umlaut depicted in figures 4.1-4.2 above. In coastal
+Dutch, i-umlaut affects only WGmc. */a/ with complete regularity, the
+environment most susceptible to /-umlaut according to the tendential
+cline of umlaut resistance developed here. Only intervening -htclusters block the umlaut effect, a distribution reminiscent of that
+found for primary umlaut in Old High German. Distribution of the /umlaut of WGmc. short *u is, as Goossens (1980:34) states,
+"chaotisch," often with unumlauted forms where an original /-umlaut
+factor was present and umlauted vowels in words with no original
+umlaut factor. The presence of unumlauted forms with an original /umlaut factor points to a more limited distribution of /-umlaut of *u
+in these coastal dialects. In the western dialects all long vowels remain
+unaffected by /-umlaut—that is, what we traditionally call "secondary
+umlaut" in German does not affect coastal Dutch.6 In these dialects,
+the umlaut process has been arrested at an early date (cf. Buccini
+1992), regularly affecting only environments where target and trigger
+are phonetically most highly differentiated.
+It is worth noting that the areal distribution of /-umlaut of the long
+vowels in Dutch is predicted by the degree of articulatory difference
+between target and trigger. WGmc. *d shows /-umlaut in the entire
+southern part of the Dutch linguistic area except for a small West
+Flemish coastal enclave. In Holland, unumlauted forms are found in
+all of North and South Holland as well as in much of the province of
+6
+The situation among the short vowels is obscured particularly by the so-called
+"spontaneous palatalization" of old /u/.
+
+Umlautless Residues in Germanic 93
+
+Utrecht to the east (Weijnen 1991:262). Reflexes of umlauted WGmc.
+*o and *au are, except in a small part of Utrecht, found well to the
+east of the isogloss for umlaut of *a and at no point reach the coast
+(Goossens 1977:91). The extent of /-umlaut of WGmc. long *M can
+not be evaluated because the spontaneous palatalization of all reflexes
+of *u masks the distribution of umlauted forms. We therefore find
+that in Dutch, those long vowels that show a greater phonetic
+difference from the umlaut factor prove more susceptible to the /umlaut process as reflected by their more extensive areal distribution.7
+In Bavarian and Alemannic, on the other hand, we encounter a
+much more extensive operation of /-umlaut. Nonetheless, many
+dialects show failure of /-umlaut when the target contains [u], the
+vowel predicted to be least susceptible to /-umlaut by our account. In
+these dialects, /-umlaut (i.e., "primary" and "secondary" umlaut)
+has affected long and short low and mid vowels, but the fronting of
+high back vowels is more restricted and, as is so often the case in
+incomplete umlaut processes in Germanic, limited by the nature of the
+intervening consonant(s). Just as Dutch shows /-umlaut only when
+target and trigger are maximally different with respect to height and
+frontness, i-umlaut fails in Upper German dialects only when the
+difference between target and trigger is least:
+(5.1)
+
+/-umlaut (trigger WGmc. */i/, */j/, *IV)
+
+A) Coastal Dutch:
+1) /-umlaut: MDu. gewelt 'power', denken 'think', best 'best', bed
+'bed', mensche 'person', tellen 'count', temmen 'be fitting' (<
+WGmc. *giwaldi, *pankjan, *batist-, *badi, *manisk-, *talljan,
+*tammjan ) (Van Loey 1976:14-15)
+7
+
+For an exhaustive set of examples of umlauted versus unumlauted forms in
+Middle Dutch, see Van Loey (1937:28-94).
+
+94
+
+Howell & Salmons
+
+2) no /-umlaut: MDu. machtig 'mighty', kaas 'cheese', horen
+'hear', schoon 'beautiful', groeten 'greet' (vs. German machtig,
+Kdse, horen, scho'n, grufieri)
+B) Upper German:
+Failure of /-umlaut in Middle High German
+1) OHG /uV: UG rumen 'raumen', sumen 'saumen'
+2) OHG /uo/: UG uoben 'iiben', suochen 'suchen'
+3) OHG lovJ: gelouben 'glauben', touben 'betauben', houbet
+'Haupt', zoubern 'zaubern' (Paul, Wiehl, Grosse 1989:67)
+In West Saxon dialects of Old English the limited extent of velar
+umlaut provides a phonetic mirror image of /-umlaut depicted above.
+West Saxon texts show a very limited distribution of o/a-umlaut: only
+high front l\l is affected by the low back trigger, and, once again, the
+process is sensitive to the nature of the intervening consonantism.
+o/a-umlaut of N occurs only before a single liquid or a non-geminate
+labial:
+(5.2) West Saxon o/a-umlaut
+
+Examples: Pre-OE */ > WS eo /_ Q (liquid/labial) o: cleopoda
+'called', teoloda 'worked', bileofa 'food', seofoda 'seventh',
+heora 'their' (Brunner 1965:87); Pre-OE *e > 'nicht streng' WS
+eo l_ (I, r)o: steola 'handle', beoran 'bear' (Brunner 1965:86).
+Some West Saxon texts show a limited o/a-umlaut of e when only a
+liquid intervenes. Once again, the umlaut effect weakens as target and
+trigger become more phonetically similar.
+The distribution of the Old Norse w-umlaut and M-breaking
+processes also serve to illustrate the strong mutating influence exerted
+by the umlaut trigger environment, while the umlaut effect becomes
+
+Umlautless Residues in Germanic 95
+
+increasingly restricted as target and trigger share height features. The
+low vowel a therefore undergoes unrestricted M-umlaut, short mid e is
+diphthongized (so-called 'breaking'), but original high short i is
+rounded only under a very restricted set of circumstances: when
+immediately preceded by a labial consonant or when the umlaut
+factor developed from an original *vv.
+(5.3.1)
+
+M-umlaut/M-breaking of short vowels in Old Norse
+
+1) M-umlaut of *a > q mggr 'son' (cf. Go. magus) sqk 'affair'; Iqnd
+'lands' (< Handu)
+2) M-breaking of *e > io: hiotr 'deer'; hiorr 'sword; (cf. Go.
+hairus); ioforr 'boar'
+3) M-umlaut of *i > y only when umlaut factor develops from *w or
+when target vowel is preceded by a labial: nykr 'water-sprite' (<
+*nikuz < *nikwiz), myklom dat. pi. 'large' (Noreen 1970:69-79,
+87)
+Long vowels in Old Norse show a similar but even more restricted
+distribution of M-umlaut, with low long a undergoing backing and
+labialization regularly but with long mid e and long high i showing
+rounding only when the trigger u directly followed:
+(5.3.2)
+
+M-umlaut/M-breaking of long vowels in Old Norse
+
+96
+
+Howell & Salmons
+
+1) M-umlaut of *d > q: qtom 'we ate', skql 'bowl'
+2) M-umlaut of *e, *i> 4, y only when u follows directly: / ^ 'cattle'
+(< *feu < *fehu), by 'bees' (<*biu)
+In all of the umlaut processes illustrated above, greater phonetic
+similarity between the trigger and target vowels correlates with a
+weaker umlaut effect. This kind of distribution for umlaut processes is
+consistent with and provides additional evidence for Cole and
+Kisseberth's Principle of Articulator Stability. Clearly, all umlaut
+processes in Germanic ultimately work to "minimize changes from
+the neutral, steady state of the articulators" and the evidence
+presented here indicates that umlaut processes in fact originate in and
+spread from environments where the original, pre-umlaut transition
+from target to trigger vowel shows a maximal change "from the
+neutral, steady state of the articulator." In target-trigger sequences
+where the transition from vowel to vowel results in less articulatory
+instability, the umlaut process is more weakly motivated phonetically,
+predictably resulting in a more constrained set of umlaut
+environments and/or chronologically later onset of the umlaut effect.
+While the phonetic relationship between target and trigger vowel
+provides the basic impetus for umlaut processes, it is clear from the
+distribution of umlaut in Germanic that consonants intervening
+between the two vowels can have a crucial limiting effect on the
+operation of umlaut. In every umlaut process illustrated in figures
+5.1-5.3, the nature of the intervening consonantism is critical in
+defining the umlaut environment when the target and trigger conform
+less completely to the Trigger Environment for umlaut. Our account,
+focusing on similarity/difference between target and trigger (with
+intervening consonants) can therefore account for the fact that failure
+of "secondary umlaut" in Upper German is found only when the
+target vowel is, like the trigger, high—but the fact that this failure of
+umlaut is also affected by the intervening consonantism must be
+explained.
+4. Intervening Consonants. That intervening consonants contribute,
+often decisively, to umlaut failure is hardly a new notion. Blocking of
+umlaut by velar geminates following /u/ has been recognized since at
+least von Bahder (1890, cf. Lussy 1974:81-83) and is so striking that
+Schirmunski (1962:201) calls that subtype "regular" in Upper
+
+Umlautless Residues in Germanic 97
+
+German.8 For example, Vetsch describes Appenzeller dialects as
+consistently lacking umlaut of MHG short /u/ before geminates
+(1910:70-72), lacking it in /u:/ before geminate /m/ (1910:77) and so
+on.9 While the most systematic and geographically widespread umlaut
+failure in Old High German occurs with velar geminates, it is also well
+attested with labials, less commonly with coronals, and sporadically
+elsewhere, as seen in the data in Liissy 1974 and other sources. Recall
+that greater differences are more likely to be assimilated earlier in the
+unfolding of umlaut, while lesser differences are the last and least
+likely to be assimilated. Degree of phonetic differentiation covers
+both vocalic and consonantal aspects of blocking: the more
+intervening consonants have in common with target vowels, the likelier
+umlaut failure.
+If we characterize blocking environments in place features, we see
+that not only the vowels, but the entire sequence in the prototypical
+blocking environment, forms of the "ukxi" type, shares the aperture
+feature [+high] and all segments save the trigger share [+dorsal], the
+maximum possible amount of place sharing.10 Exactly this sequence is
+predicted by our principle to be least likely to harmonize. With
+intervening labial geminates, the target and consonants share [+labial],
+one place feature (differing from the trigger vowel), while coronal
+geminates share nothing. This matches with the attested patterns,
+shown in 6:
+8
+
+It has been noted that the dialects showing the most consistent blocking are not
+the most conservative Swiss German dialects, as an argument against these
+residues representing phonological failure of umlaut. Of course, dialects showing
+umlaut failure are all extremely conservative, including even nonreduction and
+loss of final vowels, key to umlaut (cf. Schirmunski 1962:162-64). At any rate,
+retention of one archaic feature is not limited, in principle or in practice, solely
+to the most archaic varieties, but we find rather complex patterns of archaism and
+innovation, in German dialects and elsewhere.
+9
+
+Vetsch does think that umlaut has spread into some lexical items analogically.
+If there is analogical change after it ceased to work phonologically, it can under
+our analysis only be toward, not away from umlaut, but we note also the
+possibility of borrowing of umlauted forms into the dialect.
+10
+
+We assume here, as has much other recent work on Germanic historical
+phonology, Clements's model of feature geometry, with a vowel place node,
+rather than treating all vowels as dorsal.
+
+98
+
+Howell & Salmons
+
+(6) Geminate blocking
+Most common
+Aperture
+Place
+
+< >
+
+Least common
+
+-ukxi
+
+-upfi
+
+-utsi
+
+[±high]
+++++
+[±coronal]
++
+[llabial]
++
+[±dorsal]
++++-
+
++—+
++
+
++—+
+H
+
++
+
++—
+
+(6a) Alemannic examples of blocking by place of intervening
+geminate, from Liissy 1974
+-kx- bucke 'biicken', drucke, hucke 'sich ducken, hinken', jucke
+'springen', lucke 'locken', nucke 'einschlafen'
+-pf- gupfe 'emporschnellen', hupfe 'hiipfen', lupfe 'heben', mupfe
+'einen StoB geben'
+-ts- butze 'putzen, kastrieren', gutze 'iiberschieBen', hutze 'aufspringen', nutze 'niitzen', stutze 'stehenbleiben'
+This cline fits still more precisely if we avail ourselves of a recent
+proposal about place features based on broad cross-linguistic data
+from place assimilations. Using data from various Native American
+languages, Korean, English, and other languages, Rice (1994) points
+to a consistent but asymmetric pattern whereby coronals assimilate to
+labials and velars, labials to velars but not to coronals, while velars do
+not assimilate. This indicates that phonologically, velars have more
+place structure than labials and labials more than coronals. Rice
+captures this generalization formally by positing for place features a
+hierarchical structure like 7a rather than a flat one (7b) or the more
+directly articulatorily oriented proposal of Clements and Hume
+(1994) (7c).11
+
+" Note that this configuration is in some sense consistent with the notion of
+"articulator stability" discussed above, since less marked place requires less
+departure from the neutral position.
+
+Umlautless Residues in Germanic 99
+
+(7) Models of place features
+a.
+
+Place
+Peripheral
+Dorsal
+
+(Coronal)
+
+(Labial)
+
+[Parentheses = unmarked features]
+b.
+
+Place
+Labial
+
+Coronal Dorsal
+
+c.
+
+Place
+Labial
+
+Lingual
+
+Coronal
+
+Dorsal
+
+Crudely put, the best blocking environment is the one with the
+greatest amount of place structure: a dorsal linked to two timing
+slots.'2 Rice's proposal mandates that since dorsals have the most
+structure, they serve as triggers for assimilation, that is, allow their
+structure to spread, but not as targets, since structure cannot spread
+into their existing structure. This theory predicts that dorsals should
+be the most likely segments to block a distant place assimilation, then
+labials, with coronals most likely to be transparent.13
+Still, it is not place features of intervening consonants alone that
+lead to consistent blocking but place specifically of geminates. The
+featural configurations assumed make blocking here feasible and even
+intuitively appealing and consistent with the proposed account, but we
+12
+
+An anonymous reader notes that long vowels are more resistant to change than
+short ones because they have "more structural stability in all regards," pointing
+out a possible parallel to consonantal blocking here.
+13
+
+In fact, this place structure also bears directly on the geographical spread of the
+second or High German consonant shift in somewhat similar ways, as argued by
+Davis, Iverson, and Salmons (manuscript).
+
+100 How ell & Salmons
+
+have not yet accounted for this relationship in terms of modern
+phonological theory, a task to which we now turn. Consonantal
+blocking of vowel harmony and umlaut processes has been the source
+of considerable theoretical maneuvering, even head-scratching. Most
+feature geometries put vowel and consonant place on different tiers,
+predicting that consonants will generally be transparent. When
+consonantal material interacts with harmony, all consonants usually
+block. Beyond this, the well-known "laryngeal transparency"—
+harmony across [h] and [?] in languages where consonants otherwise
+block—is easily enough explicable, since laryngeals lack (supralaryngeal) place specification. But where some consonants do and
+others do not block harmony, things get complicated. In consonants
+that contain "secondary place" specifications, like labiality on a velar
+stop in [kw], these secondary place features are treated, under the
+theoretical assumptions of those like Clements, as vowel place and can,
+by virtue of this, block harmony (an idea already exploited for Old
+High German by Iverson, Davis, and Salmons 1994).14 Geminate
+blocking does not obviously fit into any of these types, and requires
+another approach.
+We see three plausible phonological accounts of this problem. We
+will describe the first in some detail and note the other two only
+briefly. First, we suggest that the Autosegmental Linking Condition is
+responsible for blocking here (just as has been argued for Korean
+(Iverson and Lee, forthcoming) and OHG -/zC-blocking (Iverson,
+Davis, and Salmons 1994). This principle says that "in order to
+change the feature content of a segment [A] every skeletal slot linked
+to [A] must satisfy the rule" (Hayes 1986, this formulation from
+Kenstowicz 1994:413). Where blocking occurs, it is because of shared
+place features. Geminates are by definition multiply linked and thus
+inalterable. Again, the more features shared and the more marked
+those features are, the more likely blocking becomes.
+Variability in blocking can derive, as Greg Iverson suggests to us,
+from two possible configurations, one with feature-sharing and one
+without. That is, sequences of the -ukxi type can be represented either
+14
+
+This should exhaust the possible types of blocking, pace Clements (1991),
+but Casali (1993) finds that Clements-type geometries cannot handle Nawuri
+labial blocking of roundness harmony, so these matters remain controversial.
+
+Umlautless Residues in Germanic 101
+
+as feature sharing or having two independent instantiations of place
+features. The former results in blocking, while the latter does not.
+A second way that feature geometry can help motivate this
+blocking pattern, is specifically by reference to the affricate status of
+the blocking consonants. In works on the structure of "complex
+segments," Steriade (1993 and elsewhere, see also Kenstowicz
+1994:503-6) has proposed that stops consist of two distinct phases,
+closure and release, with affricates characterized as stops with fricative
+release rather than full or nonrelease. As Kenstowicz indicates, this
+"release position is a natural docking site for aspiration and
+glottalization and perhaps secondary place specifications such as
+labialization and palatalization" (1994:503). In short, affricates can
+be seen as having secondary place as a way of capturing the fricative
+release. In this case, where the affricates are ambisyllabic or
+disegmental, the consonants could still share this structure.
+Incorporating Rice's internal organization of the place node into this
+scheme predicts exactly the tendential hierarchy we find among the
+old geminates: velars contain the most place structure and are thus
+most likely to block and so forth. On Steriade's view, then, geminate
+place structures are subordinate to C-place features, offering a close
+parallel to blocking by segments with secondary place features.15
+Third, Stuart Davis (1994) treats a case of geminate umlaut
+blocking in Korean and argues that umlaut in Korean and crosslinguistically is sensitive to syllable weight. Geminate codas give the
+target syllable enough weight to make it umlaut-resistant. This view,
+while we will not pursue it here, is enticing given the weight sensitivity
+of Germanic phonology in general, as familiar from such classic
+works as Murray and Vennemann (1983). Primary umlaut itself was,
+after all, weight sensitive, in its inherent limitation to a short vowel.
+Blocking is, however, not entirely limited to geminates, but occurs
+with -mb- clusters as in umbi 'around' (cf. umlauted variants farther
+north), etc., if only sporadically. Kenstowicz (1994:422-23) in fact
+suggests in a discussion of Kolami vowel copying that geminate
+inalterability may be extendible to clusters sharing place of
+articulation, coincidentally with nasal + oral stop clusters. Nonetheless,
+15
+
+While we do not go so far as to connect vowel height directly to Steriade's
+stop aperture, it is at least interesting to note that it is stops with closer release
+aperture—i.e., affricates—that block.
+
+102 Howell & Salmons
+
+we have additional reason to understand place-sharing clusters as
+sporadic blockers. Nongeminate blocking still most often involves two
+intervening consonants, so that the target syllable generally has a
+coda. Clements (1991) has proposed a unified set of features common
+to vowel and consonant place and demonstrated that "there is
+pressure for agreement in place features across tiers" (1991:16) in
+CV sequences.16 Clements argues for preferential sharing of place
+specifications, such as sequences of [+labial] and those of [+dorsal],
+viz. labial consonant + back rounded vowel and velar consonant plus
+back rounded vowel. An obstruent marked for place in the coda of
+the target syllable could inhibit spread when place features are shared
+between nucleus and coda of the target syllable. Existing target
+rhymes of -uk or -up represent the preferred, feature-sharing
+structure, which is (tendentially) not disturbed by umlaut.17
+Geometrically, this preference is realized as features shared on the
+coda consonant as subordinates of C-place, resulting in blocking, and
+we have variability because this preferred sharing is not pervasive but
+competes with independent instantiations of the features on nucleus
+and coda.18
+This hypothesis that coda obstruents are preferred when they
+share place features with the nucleus is, in fact, dramatically confirmed
+by comparative Germanic evidence. In seventeenth-century English,
+the unrounding of /u/ to [A] is inhibited by a preceding labial—as in
+bull, pull, full, wolf—or following velar—cook, look, rook (Jespersen
+1909, Clements 1990, Milroy 1992). That is, labiality is retained
+16
+
+While monoplanal line-crossing is of course still prohibited, this introduces
+the possibility of line-crossing across planes.
+17
+
+Note that this point—a preference for codas and nuclei to share their place
+features—also gives support to blocking across geminates as well, since velar
+and labial geminates represent by definition place-sharing rhymes of target
+syllables.
+18
+This may have more direct prosodic motivation as well. Codas inevitably
+suffer restrictions on what features and segments they can bear (for example,
+Vennemann 1988, Goldsmith 1990, and Clements 1991), so that this is a
+conservative hypothesis on theoretical grounds, where feature sharing between
+nucleus and coda is an intuitively attractive way of reducing distinctiveness of
+the coda.
+
+Umlautless Residues in Germanic 103
+
+between onset and nucleus, dorsality between nucleus and coda.
+Jespersen's case parallels our (nongeminate) blocking data perfectly:
+both show resistance to an otherwise regular loss of dorsality on
+vowels when the rhyme shares [+dors] and [+hi]. Yet more
+pronounced instances of place sharing between nucleus and coda can
+be observed in Germanic, though, both modern and ancient. Milroy
+(1992) reports that Belfast [ae] is raised to [e] before velar consonants
+in monosyllable codas, as observed in the dialect of Madison,
+Wisconsin as well.19 This kind of example shows particularly strong
+preference for place sharing, since C-place features of codas come to
+be shared with nuclei rather than as in our situation, where sharing
+simply prevents changes away from shared structure.
+"Back" or u-umlaut in Old English and Old Frisian shows a
+related inclination at an earlier date. Old Frisian velar obstruents
+followed by /w/ or IvJ change I'll into I'ml, that is, backness is regressively
+assimilated into the nucleus of a preceding syllable (Sjolin 1969, etc.),
+as in 8:
+(8) Gmc.
+*-irjkw*-ikkw*-irjgw*-igu-
+
+Old Frisian
+diunk- 'dark'
+thiukke 'thick, fat'
+siunga 'sing'
+niugun 'nine'
+
+Other Germanic languages
+ON d0kkr
+OS thikki
+ON syngva
+OS nigun
+
+Dorsality, shared by trigger and all intervening material, comes to be
+shared by the target vowel.
+To summarize this section, the principle governing which vowels
+trigger and are targeted by umlaut governs consonant blocking as
+well: the more place features the target shares with intervening
+consonants, the more likely umlaut failure becomes. Given that
+various West Germanic languages spread place features to target
+vowels in this environment, and given attested resistance to losing
+identical features in sound change, it is not controversial to suggest
+that sequences with a target vowel sharing the appropriate place
+features are inclined to resist fronting processes at least sporadically.
+19
+
+Note that height gets assimilated, not backness, in these two possible first
+steps toward a harmony system. Buccini (1992) establishes a typological
+universal that height harmony necessarily precedes frontness harmony.
+
+104 Howell & Salmons
+
+This produces a viable phonological account of blocking and one
+intimately connected to primary umlaut blocking in the analysis of
+Iverson, Davis, and Salmons (1994), giving a unified account of
+umlaut blocking from beginning to end, with the Autosegmental
+Linking Condition playing a role throughout the long process.
+5. Remaining Apparent Irregularity in Umlaut Failure. The fact
+that the residues in the dataset are so few and so variable has suggested
+to many that they do not reflect regular sound change. Two processes
+have been proposed to account for lexical irregularities, analogy, and
+lexical diffusion. The first has already been shown unlikely above
+and, while some have hinted about lexical diffusion of umlaut (e.g.,
+Hamans 1985), we will not pursue the second here. Our analysis rests
+instead on showing the basic regularity of umlaut failure in and as
+sound change, but a handful of problematic forms remain, leaving our
+rules less than airtight. We are still obligated to show that these are
+consistent with the analysis developed here, phonologically,
+historically, and perhaps even socially.
+With distant assimilations, such wrinkles are remarkably common
+and attested in active phonological processes and recent past changes,
+some showing parallels to the feature-sharing arguments advanced
+here. Some Korean dialects, for instance, show umlaut and umlaut
+blocking patterns often like those of OHG primary umlaut. According
+to Iverson and Lee (forthcoming), a phonologically active umlaut
+process in the Korean dialects of Kyungsang and Cheolla is
+"sociolinguistically variable and subject to considerable lexical
+exceptionality." For Nawuri, Casali (1993:3-6) reports blocking of
+roundness harmony by intervening labial consonants, but this
+blocking is "optional and speech-rate dependent." Nawuri
+centralization harmony "sometimes fails to occur . . . when one or
+both of the flanking consonants is a palatal." In both of these
+systems, as in Germanic, place sharing seems to be central to harmony
+and failure, while both show lexical exceptionality. Other, if less
+precise parallels in lexical exceptionality in harmony systems are
+found around the world. Kenstowicz (1994:354-55) reports a handful
+of cases of failure of ATR harmony in Akan. Clements and Sezer
+(1982:249-50) are able to account for most disharmonic forms in
+
+Umlautless Residues in Germanic 105
+
+Turkish, yet still find themselves with a residue, instances where
+harmony processes can be "optional."20
+In short, lexical irregularity in umlaut failure—the justification for
+considering analogy—is consistent with vowel harmony processes
+around the world, in settings where "analogy" cannot be seriously
+appealed to.21 If this limited irregularity presents a problem—and we
+do not see it as a serious one—it is a problem for theories of vowel
+harmony generally, not a problem for the Upper German case in
+particular.22 If anything, the regularity in attested Upper German
+dialects is astonishing, given the antiquity of umlaut itself. That is, if
+morphological realignments had been busily undoing phonological
+coherent patterns of umlaut for over a millennium, we should find far
+less phonological regularity than we find in more active harmony
+processes, perhaps even the complete obliteration of phonological
+patterns by analogy. Instead we find roughly the same patterns of
+regularity and exceptions in Upper German dialect umlaut and active
+harmony systems.
+While better understanding of prosody may illuminate exceptions,
+a few may ultimately have a social explanation. "Late stage
+20
+
+See also Kirchner 1993.
+
+21
+
+We leave aside here later and clearly analogical processes, such as the
+elimination of umlaut from the singular of some nominal paradigms, such as the
+dative and genitive singular forms of OHG masculine n-stem nouns. Note that
+this process is substantially different from the analogical spread of umlaut to
+new lexical items.
+22
+
+We even leave aside the possibility that more detailed phonetic conditioning is
+at work than has hitherto been uncovered, just as Labov (1994:426-28, 444-48)
+shows subtler distant conditioning for the Atayalic labial/velar shift, previously
+seen as lexical diffusion. For instance, in the limited set of Old High German
+verbs with medial labial affricates, i.e., medial consonants ultimately derived
+from geminates (following the data in Liissy 1974:105, 109-10), some show
+competition between umlauted and umlautless forms (gupfe/gupfe; hiipfe/hupfe;
+liipfe/lupfe; miipfe/mupfe; riipfe/rupfe), while another shows only umlautless
+forms (schlupfe, schnupfe, schupfe, strupfe, stupfe, verstumpfe, supfe, zupfe).
+The first set contains an array of different but always simplex onsets, while the
+second set always contains sibilants and seven of eight contain complex onsets.
+A similar, if weaker pattern of this type exists for the fern. -jo(n) stems
+(1974:89).
+
+106 How ell & Salmons
+
+correction" has become an established part of studies of sound
+change in progress and it fits well with the pattern of lexical
+exceptions we find here. In late stage correction, lexical exceptions to
+otherwise regular sound change reflect borrowings from "higher"
+varieties that have not undergone the sound change in question. The
+change in question is typical of "change from below," that is,
+changes originating in the vernacular and generally reflecting the
+"operation of internal, linguistic factors" (Labov 1994:78). Speakers
+are not conscious of such change until it reaches its last stages and
+when they do become aware of it, new forms can be stigmatized,
+motivating reintroduction of a few unchanged forms. Labov
+(1994:453-54) reanalyzes a number of putative cases of lexical
+diffusion as "late stage correction," including the well-known
+Chaozhou tone split. While we lack the necessary social information to
+prove this case, we note its plausibility. The handful of Middle High
+German forms still blocking with -LC- clusters, for example, would fit
+that pattern particularly nicely: arte 'sort, kind', einfalte 'simplicity',
+drivalte 'trinity', gewaltec 'violent'. With or without late stage
+correction, though, the limited lexical exceptionality we find in the
+Old High German data is at most a minor problem for a phonological
+account of umlaut failure.
+6. Conclusion. Umlaut failure in Old High German and across
+Germanic generally is, we conclude, clearly phonological, driven by
+one principle: the greater the phonetic difference between target and
+trigger, the more likely umlaut is. Less difference correlates then
+directly with umlaut failure. Even the pattern of exceptionality finds
+parallels in other vowel harmony systems. Less principled analogical
+accounts must be dismissed. The hierarchy of umlaut failure reflects
+the likely chronological unfolding of umlaut in Upper German, where
+forms showing the most failure were the last reached by umlaut
+(shown in 9, below).
+Across the board, it is the umlautless residues, evidence of where
+and how umlaut failed, that provide the key to understanding the
+complex unfolding of umlaut over time and space. In primary umlaut,
+a process limited to a single short vowel, intervening vocalized liquids
+systematically removed many umlautable forms. The last forms to
+umlaut were those showing the broadest sharing of features, notably
+between vowels and in the secondary place features of intervening
+
+Umlautless Residues in Germanic 107
+
+consonants. The process of Old High German umlaut—from the early
+days of primary umlaut with LC/hC blocking to the last stages of /u/
+blocked by geminate velars—shows remarkable phonological
+coherence, viewed in the right perspective, and a steady progression,
+shown in 9.
+(9) The generalization of umlaut
+1. Primary: only short /a/ target; intervening V-place as target coda
+blocks: /a/, but not aLC, ahC
+2. Nonprimary:
+a. long and short targets, without former blocking environments: /a:/, lol, etc.
+b. increasingly higher vowels, to IvJ
+c. within the /u/ cases, geminates and place-sharing target
+codas block: Everything but -ukxi, etc.
+3. Consistent umlaut.
+Over the vast majority of the German-speaking territory, umlaut
+ultimately generalized across all environments, reaching stage 3. The
+few southern relict areas retaining umlautlessness, of type 2c, shed
+light on the last steps in umlaut's evolution. Even within those relict
+areas, a hierarchy is apparent, with geminate velars at the top, followed
+by labial and coronal geminates.
+We started with the simple task of showing regular phonological
+development to be the source of Umlautfeindlichkeit in Upper
+German, but something broader has emerged: the many and
+variegated umlaut phenomena found across Germanic all operate and
+fail to operate in accordance with one basic principle of assimilation.
+REFERENCES
+Antonsen, Elmer H. 1966. Review of Aleksander Szulc. 1964. Umlaut und
+Brechung: Zur inneren und ausseren Geschichte der nordischen Sprachen.
+Language 42.115-22.
+. 1969. Zur Umlautfeindlichkeit des Oberdeutschen. Zeitschrift fur
+Dialektologie und Linguistik 36.201-7.
+Bander, Karl von. 1890. Grundlagen des neuhochdeutschen Lautsystems: Beitrage
+zur Geschichte der deutschen Schriftsprache im 15. und 16. Jahrhundert.
+Strassburg: Triibner.
+
+108 Howell & Salmons
+
+Barrack, Charles M. 1975. A diachronic phonology from Proto-Germanic to Old
+English stressing West-Saxon conditions. The Hague: Mouton.
+Bloomfield, Leonard. 1933. Language. New York: Holt, Rinehart and Winston.
+Braune, W. and H. Eggers. 1987. Althochdeutsche Grammatik. 14th edn.
+Tubingen: Max Niemeyer.
+Brunner, Karl. 1965. Altenglische Grammatik nach der angelsachsischen
+Grammatik von Edward Sievers. 3rd edn. Tubingen: Max Niemeyer.
+Buccini, Anthony F. 1992. The development of umlaut and the dialectal position
+of Dutch in Germanic. Doctoral dissertation, Cornell University.
+Campbell, Alistair. 1959. Old English grammar. Oxford: Clarendon.
+Casali, Roderic F. 1993. Labial opacity and roundness harmony in Nawuri.
+Papers in Phonology, ed. by D. Silverman and R. Kirchner, 1-20. (UCLA
+occasional papers in linguistics. 13.) Los Angeles: Department of Linguistics,
+UCLA.
+Catford, J. C. 1988. A practical introduction to phonetics. Oxford: Oxford
+University Press.
+Clements, George N. 1985. The geometry of phonological features. Phonology
+Yearbook 2.225-52.
+. 1990. The role of the sonority cycle in core syllabification. Papers in
+laboratory phonology I, ed. by J. Kingston and M. Beckman, 283-333.
+Cambridge: Cambridge University Press.
+. 1991. Place of articulation in consonants and vowels: A unified theory.
+(Revised paper presented at NELS 21.) Published 1993 as Lieu d'articulation
+des consonnes et des voyelles: une theorie unifee. Architecture des
+representations phonologiques, ed. by B. Laks and A. Rialland, 101—45.
+(Collection sciences du langage.) Paris: CNRS Editions.
+and Elizabeth Hume. 1994. The internal organization of speech sounds.
+A handbook of phonological theory, ed. by John Goldsmith, 245-306.
+Cambridge, MA: Blackwell.
+and Engin Sezer. 1982. Vowel and consonant disharmony in Turkish.
+The structure of phonological representations, part II, ed. by H. van der Hulst
+and N. Smith, 213-55. Dordrecht: Foris.
+Cole, Jennifer and Charles Kisseberth. 1994. An optimal theory of harmony.
+Studies in the Linguistic Sciences 24.101-14.
+Davis, Garry W. and Gregory K. Iverson. 1995. The High German consonant
+shift as feature spreading. AJGLL 7.111-27.
+,
+, and Joseph C. Salmons. Manuscript. Peripherality in the
+spread of the High German consonant shift.
+
+Umlautless Residues in Germanic 109
+
+Davis, Stuart. 1994. Geminate consonants in moraic phonology. West Coast
+Conference on Formal Linguistics 13.32—45.
+Fertig, David. 1996. Orthography, phonology and the umlaut puzzle. Syntactic
+and diachronic studies in Germanic linguistics, ed. by Rosina Lippi-Green and
+Joseph C. Salmons, 169-84. Amsterdam: John Benjamins.
+Goldsmith, John A. 1990. Autosegmental and metrical phonology. Oxford:
+Blackwell.
+Goossens, Jan. 1977. Inleiding tot de Nederlandse dialektologie. Groningen:
+Wolters-Noordhoff.
+. 1980. Middelnederlandse vokaalsystemen. (Verslagen en Mededelingen
+van de Koninklijke Academie voor Nederlandse Taal- en Letterkunde, 2.)
+Ghent: Koninklijke Academic voor Nederlande Taal- en Letterkunde.
+Hamans, Camiel. 1985. Umlaut as a harmony process. Papers from the 6th
+International Conference on Historical Linguistics, ed. by Jacek Fisiak, 21734. (Current issues in linguistic theory, 34.) Amsterdam: John Benjamins.
+Hayes, Bruce. 1986. Inalterability in CV phonology. Language 62.321-51.
+Howell, Robert B. 1983. Contribution to a theory of consonantal influence in
+Germanic: Gothic breaking and Old English breaking and velar umlaut.
+Doctoral dissertation, Cornell University.
+. 1991. Old English breaking and its Germanic analogues. Tubingen:
+Max Niemeyer.
+Iverson, Gregory K., Garry W. Davis, and Joseph C. Salmons. 1994. Umlaut
+blocking environments in Old High German. Folia Linguistica Historica
+15.131-48.
+and Shin-Sook Lee. Forthcoming. Umlaut uniformity in Korean and Old
+High German. Description and explanation in Korean linguistics, ed. by Ross
+King. Ithaca: Cornell East Asia Series.
+and Joseph C. Salmons. 1996. The primacy of primary umlaut. PBB
+118.69-86.
+Jespersen, Otto. 1909. A modern English grammar on historical principles.
+Heidelberg: Carl Winter.
+Keller, R. E. 1978. The German language. New Jersey: The Humanities Press.
+Kenstowicz, Michael. 1994. Phonology in generative grammar. Oxford:
+Blackwell.
+King, Robert D. 1969. Historical linguistics and generative grammar.
+Englewood Cliffs, NJ: Prentice-Hall.
+Kirchner, Robert. 1993. Turkish vowel harmony and disharmony: An optimality
+theoretic account. Manuscript, Rutgers Optimality Archive (available via ftp
+to ruccs.rutgers.edu).
+
+110 Howell & Salmons
+
+Labov, William. 1994. Principles of linguistic change. Volume 1: Internal
+factors. Oxford: Blackwell.
+Lass, Roger and John M. Anderson. 1975. Old English phonology. Cambridge:
+Cambridge University Press.
+Loey, A. van. 1937. Bijdrage tot de kennis van het Zuidwestbrabantsch in da
+Xllle en XlVe eeuw. (Nomina Geographica Flandrica, 4.) The Hague: Nijhoff.
+. 1976. Middelnederlandse Spraakunst. 2. Klankleer. 7th edn. Groningen:
+H. D. Tjeenk Willink.
+Liissy, Heinrich. 1974. Umlautprobleme im Schweizerdeutschen. (Beitrage zur
+schweizerdeutschen Mundartforschung, 20.) Frauenfeld: Huber & Co.
+Milroy, James. 1992. Linguistic variation and change. Oxford: Blackwell.
+Murray, Robert W. and Theo Vennemann. 1983. Sound change and syllable
+structure in Germanic phonology. Language 59.514—28.
+Noreen, Adolf. 1970. Altnordische Grammatik I: Altislandische und
+altnorwegische Grammatik (Laut- und Flexionslehre) unter Beriicksichtigung
+des Urnordischen. University: University of Alabama Press. Reprint of 4th
+edn., 1884. Halle: Max Niemeyer.
+Paul, H., P. Wiehl, and S. Grosse. 1989. Mittelhochdeutsche Grammatik. 23rd
+edn. Tubingen: Max Niemeyer.
+Penzl, Herbert. 1949. Umlaut and secondary umlaut in Old High German.
+Language 25.223-40.
+. 1994. Historiographie und Sprachgeschichte: Zur Beschreibung des
+althochdeutschen j-Umlauts. AJGLL 6.51-62.
+Rice, Keren. 1994. Peripheral in consonants. Canadian Journal of Linguistics
+39.191-216.
+Salmons, Joseph C. 1994. Umlaut and plurality in Old High German: Some
+problems with a natural morphology account. Diachronica. 11.213-29.
+Schirmunski, Viktor M. 1962. Deutsche Mundartkunde. Berlin: AkademieVerlag.
+Sjolin, Bo. 1969. Einfiihrung in das Friesische. Stuttgart: Metzler.
+Steriade, Donca. 1993. Segments, contours, and clusters. Proceedings of the
+XVth International Congress of Linguists, Universite Laval, 9-14 August
+1992, ed. by Andre Crochetiere, et al, 1.71-82. Sainte-Foy: PU Laval.
+Twaddell, W. Freeman. 1938. A note on OHG umlaut. Monatshefte 30.177-81.
+Van Coetsem, Frans and Anthony F. Buccini. 1990. Variation and the
+reconditioning of phonological rules. Lingua 81.169-220.
+Vennemann, Theo. 1972. Phonetic detail in assimilation: Problems in Germanic
+phonology. Language 48.863-82.
+
+Umlautless Residues in Germanic 111
+
+. 1988. Preference laws for syllable structure and the explanation of
+sound change. Berlin: Mouton de Gruyter.
+Vetsch, Jakob. 1910. Die Laute der Appenzeller Mundarten. (Beitrage zur
+Schweizerdeutschen Grammatik, 1.) Frauenfeld: Huber & Co.
+Voyles, Joseph. 1991. A history of OHG /-umlaut. PBB 113.159-94.
+. 1992. On Old High German i-umlaut. On Germanic linguistics: Issues
+and methods, ed. by Irmengard Rauch, Gerald F. Carr, and Robert L. Kyes,
+365-77. (Trends in linguistics. Studies and Monographs, 68.) Berlin: Mouton
+de Gruyter.
+Weijnen, A. 1991. Vergelijkende klankleer van de Nederlandse dialecten. The
+Hague: SDU Uitgeverij.
+Department of German
+818 Van Hise Hall
+1220 Linden Drive
+University of Wisconsin
+Madison, WI 53706
+[rbhowell @ facstaff.wisc.edu]
+[jsalmons @ facstaff. wise .edu]
+
+

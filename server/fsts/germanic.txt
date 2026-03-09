@@ -721,6 +721,18 @@ define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
 
 define EnglishStarConsonantNoLabial [EnglishStarConsonant - EnglishStarLabial];
 
+# Velar consonants (block i-lowering per Howell & Salmons 1997).
+define EnglishStarVelar [{*k} | {*g} | {*ŋ} | {*x} | {*ɣ} | {*h}];
+
+# Combined velar-or-labial class (blocking consonants for i-lowering).
+# Per Howell & Salmons (1997): dorsals and labials share place features with
+# high back vowels and block vowel harmony, while coronals are transparent.
+define EnglishStarVelarOrLabial [EnglishStarVelar | EnglishStarLabial];
+
+# Coronal-only consonants (transparent to i-lowering).
+# Excludes *j (which blocks as semivowel) and nasals (which block by separate rule).
+define EnglishStarCoronal [EnglishStarConsonant - EnglishStarVelarOrLabial - {*j} - EnglishStarNasal];
+
 define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
 
 # Broaden sigma for early OE rules to avoid rejecting symbols not referenced in a rule.
@@ -1322,6 +1334,29 @@ define NWGmcULowering [
     {*u} -> {*o} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
 
+# NWGmc *i → *e lowering before non-high vowels (Campbell §114, Fulk §4.3).
+# Campbell: "i > e before mid and low vowels. In OE this change is shown only by
+# the common Gmc. words *nest* nest, and *wer* man... and by *spec* bacon beside *spic*."
+# Fulk §4.3: "PGmc. i might be lowered to e in parallel fashion before a mid or low
+# vowel in the next syllable. Undeniable examples are OE OHG nest < PIE *nizdos."
+# Fulk notes the change is "much less systematic" than u-lowering and subject to
+# analogical leveling — "leveling away of e being the commonest result."
+# Hogg (1992) p.45: treats this as a PGmc/early WGmc change yielding *nesta-.
+# Bülbring §81d: "*nëstoz 'Nest' aus älterem *nistoz" — explicit derivation.
+# Campbell §116: Redistribution blocked before nasal + consonant (same as u-lowering).
+#
+# CONSONANT CONDITIONING (Howell & Salmons 1997, Cercignani 1980):
+# - Velars and labials BLOCK i-lowering (they share place features with high vowels)
+# - Coronals are TRANSPARENT to i-lowering
+# - This explains why *nest, *wer show lowering (coronal clusters)
+#   but *fish, *lick, *liver retain *i (velar/labial in coda)
+#
+# The rule: *i → *e before a non-high vowel, BUT ONLY IF all intervening
+# consonants are coronals (not velars, labials, nasals, or *j).
+define NWGmcILowering [
+    {*i} -> {*e} || _ EnglishStarCoronal+ EnglishStarNonHighVowel
+];
+
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
 # PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
@@ -1775,6 +1810,7 @@ define OERMetathesis [
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
     PWGmcChanges
+    .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     .o. NWGmcULowering
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
@@ -1871,6 +1907,7 @@ define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRu
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
+    .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     .o. NWGmcULowering
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising

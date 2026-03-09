@@ -1,0 +1,1322 @@
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+University Press Scholarship Online
+
+Oxford Scholarship Online
+Laws and Rules in Indo‐European
+Philomen Probert and Andreas Willi
+
+Print publication date: 2012
+Print ISBN-13: 9780199609925
+Published to Oxford Scholarship Online: September 2012
+DOI: 10.1093/acprof:oso/9780199609925.001.0001
+
+Older Runic evidence for North‐
+West Germanic a‐umlaut of u (and
+‘the converse of Polivanov's Law’)
+Patrick Stiles
+
+DOI:10.1093/acprof:oso/9780199609925.003.0004
+
+Abstract and Keywords
+The main structural effect of North-West-Germanic ‘a-umlaut’
+— which involved shuffling the allophones of /i/, /e/ and /u/
+depending on the following environment — was creation of the
+phoneme short /o/, split from Proto-Germanic /u/, as in Old
+High German gold “gold” beside guldīn “golden”. The
+standard view sees the change as an instance of secondary
+split, phonologized by the loss of one of the conditioning
+factors, short a, from final syllables, thus: nom. sg. */nistaz/
+[nestaz] > /nest(z)/ “nest”. Up to then, the allophones were in
+complementary distribution. However, such forms in the Older
+Runic language (c.150 to 500 AD) as horna (Gallehus),
+worahto [= worahto] (Tune); holtijaR (Gallehus), dohtriR
+(Tune) call this account into question by showing the change
+with the supposed conditioning factors intact. The chapter
+seeks to explain this state of affairs, which is in apparent
+
+Page 1 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+conflict with ‘Polivanov’s Law’, which states there is ‘no split
+without a merger, that is sound-changes that add to the
+inventory of phonemes are always triggered by a phonemic
+merger (including with zero, i.e. loss) elsewhere in the system.
+
+Keywords: Old Germanic languages, sound change, a-umlaut, phonologization,
+Older Runic, Prague School linguistics, PHONEMIC split, Polivanov’s Law
+
+4.1 Details of the change and its main structural
+effect
+4.1.1 Introductory
+
+North‐West Germanic a‐umlaut has been much discussed, yet
+it seems to me that some of the most interesting and
+fundamental problems have not received due attention. These
+are posed by the evidence of Older Runic inscriptions.
+North‐West Germanic is an intermediate proto‐language,
+ancestor of both the North Germanic (Scandinavian) and West
+Germanic languages, which are attested in manuscripts from
+about 1150 and shortly before 700 AD, respectively, and which
+both have earlier runic traditions. They constitute two of the
+three branches of Germanic, the third being East Germanic, in
+effect Bishop Wulfila's Bible translation from the fourth
+century AD, which is attested in manuscripts written two
+centuries later. Older Runic is used to designate the (early
+North Germanic) language of runic inscriptions written in the
+Older Futhark alphabet, from the earliest examples, c. (1)50,
+up to c. 500 AD.1
+(p.44)
+
+This article is not intended as a contribution to
+
+linguistic theory, but to understanding how a‐umlaut might
+have been phonologized. I lay no claims to originality in my
+analysis. Most of what I shall present lies buried in the
+secondary literature in the context of other topics, and I have
+done little more than disinter it. The ideas are hardly
+revolutionary; they have just not been applied to the specific
+problem of a‐umlaut and are not reflected in our handbooks of
+Germanic. I have kept references to a minimum and
+concentrated on earlier work (cf. n. 3).
+
+Page 2 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+4.1.1.1 Mechanism
+
+The term ‘a‐umlaut’ is used here—faute de mieux—as an
+inaccurate but convenient label to refer to a set of early
+assimilatory changes in North‐West Germanic affecting the
+high and mid short vowels in accented syllables.2 The Proto‐
+Germanic inventory had four members: /i/, /e/, /a/, /u/ (cf.
+Benediktsson 1967). The change involved the lowering and
+raising of short i and e and the lowering of short u, depending
+on the one hand whether a high or low vowel followed in the
+next syllable and on the other whether a nasal‐initial
+consonant cluster immediately followed. (The vowel a was
+unaffected by these changes.) The diphthong /eu/ was also
+subject to a‐umlaut, but will not be of concern here.
+4.1.1.2 Environments
+
+The relevant environments are three in number: those that
+conditioned a high vowel, a low vowel, or were neutral. They
+are constituted as follows:
+(a) High vowel: before i,ī, (iu) and j in the following
+syllable, and when the intervening consonantism starts
+with a nasal, regardless of the vocalism of the following
+syllable. (The sequence *‐eww‐ also became *‐iggw‐
+(p.45) regardless of the following vowel: see
+Heidermanns 1986: 297–9, Rasmussen 1989a; cf. Kock
+1910: 98. Similarly, only the sequence ‐ugg(w)‐ occurs;
+cf. Kock 1898: 517.)
+Examples: *giƀiđ ‘gives’ (beside geƀan ‘to give’),
+*hringaz ‘ring’ (〈 *hrengaz, cf. Finnish rengas),
+*hundaz ‘dog’.
+(b) Low vowel: before short a, long ō (and long ā, in so
+far as it existed). (Proto‐Germanic absolute final
+bimoric long *‐ō# had already shortened to *‐u in
+North‐West Germanic by the time of a‐umlaut.)
+Examples: *weraz ‘man’ (〈 *wiraz, cf. Lat. vir), *snozō‐
+‘daughter in law’ (〈 *snuzō‐), *golþa ‘gold’ (beside
+*gulþīn‐ ‘golden’), *korna ‘corn’ (〈 *kurna), *worhtō ‘I
+worked, made’ (beside *wurhtē 3sg.).
+
+Page 3 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(c) Neutral: before u,ū, and ē (also short e, if it existed
+in unaccented syllables). Also when nothing followed
+(in monosyllables).
+Examples: *siđuz ‘custom’, *međuz ‘mead’, *wig ipv.
+‘kill!’, *weg ipv. ‘carry!’, *sehs ‘six’, *snuzu nom. sg.
+‘daughter in law’,*duhtēr nom. sg. ‘daughter’.
+As can be seen, in environment (c) the vowel was unaffected
+and the etymological value was retained. This means that
+although /i/ and /e/ were to a large extent in complementary
+distribution (cf. 4.1.1.3), they did not fully merge as phonemes
+(cf. for example Beeler 1966, Benediktsson 1967: 190–4;
+already Luick 1914–40: 1.i. §71 A2).
+4.1.1.3 Distribution of allophones
+
+The distribution of allophones of the four short accented
+vowels in the various environments can be summarized as in
+Table 4.1.
+Table 4.1 Distribution of allophones of the four
+short accented vowels in North‐West Germanic
+High vowel
+
+Low vowel
+
+Neutral
+
+/i/
+
+[i]
+
+[e]
+
+[i]
+
+/e/
+
+[i]
+
+[e]
+
+[e]
+
+/u/
+
+[u]
+
+[o]
+
+[u]
+
+/a/
+
+[a]
+
+[a]
+
+[a]
+
+This schema implies a stage in the development of the North‐
+West Germanic languages when there were automatic
+positional allophones [i] and [e] of /i/ and /e/, and [u] and [o]
+of /u/ in the raising and lowering environments just specified.
+(By contrast, a occurred in all environments.) During this
+‘phonetic period’,
+
+(p.46)
+
+there were sub‐phonemic variations
+
+within a paradigm, for example nom. sg. [duhte:r], but gen. pl.
+[dohtro:].
+4.1.1.4 Creation of short /o/
+
+The main structural effect of a‐umlaut is the creation of the
+phoneme short /o/, split from Proto‐Germanic /u/. (As
+
+Page 4 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+concerns /i/ and /e/, the upshot is chiefly changes in the
+incidence of pre‐existent phonemes.) Exploring the means
+whereby the single phoneme PGmc short /u/ came to be
+replaced by two phonemes, North and West Germanic /u/ and /
+o/, is the concern of this article.
+
+4.2 The structuralist account and its
+inadequacies
+4.2.1 The change as ‘secondary split’
+
+As the development of /u/ and /o/ from PGmc short */u/
+entailed adding a new term to the phonemic inventory, the
+change is classified by structuralist theory as an example of
+secondary split (as opposed to primary split, where the
+‘splitting’ allophones join pre‐existing phonemes and the
+overall inventory is unaffected).3 It is an axiom, known as
+Polivanov's Law,4 that in a phonological system, there is ‘no
+split without a merger’. That is to say: any split always
+involves a simultaneous merger of some kind. In primary split,
+the splitting‐off allophone is the one that does the merging
+(and the process can also be styled ‘partial merger’). In the
+case of secondary split, the merger takes place elsewhere, as
+the creation of the new phoneme is triggered by merger
+(including with zero) among the conditioning factors; loss of
+contrast there transfers the distinctive function to the
+conditioned phones.
+4.2.2 The classic interpretation
+
+The classic structuralist interpretation is that a‐umlaut was
+phonologized by the loss (merger with zero) of one of the
+conditioning factors, short a, from final
+
+(p.47)
+
+syllables: thus,
+
+for example, nom. sg. /hurna/ [horna] 〉 /horn/ ‘horn’. That is,
+the allophones were in complementary distribution until they
+were phonemicized by the loss of final ‐a (generally regarded
+as the vowel that was lost earliest from final syllables).5
+This view is epitomized by Moulton (1961a: 14–15):
+Die komplementäre Verteilung von urgerm. *[i] und *[e],
+*[u] und *[o], *[iu] und *[eo] war von dem
+Weiterbestehen der unbetonten Vokale der folgenden
+
+Page 5 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+Silben (*i, *u, bzw. *a) völlig abhängig. Solange diese
+unbetonten Vokale fortlebten, wurde die komplementäre
+Verteilung der Allophone aufrechterhalten. Sobald die
+unbetonten Vokale aber zusammenfielen (welches
+jedenfalls theoretisch hätte vorkommen können) oder
+schwanden (welches tatsächlich eintrat), war die
+komplementäre Verteilung der betonten Vokale
+durchbrochen.
+…um die phonetischen Oppositionen *[i e], *[u o], *[iu
+eo] zu phonologisieren, genügte es, daß die
+komplementäre Verteilung der Allophone in je einer
+Lautumgebung aufgehoben wurde. Der Verlust dieser
+unbetonten Vokale und damit die Phonologisierung der
+Allophone der betonten Vokale ist eine Erscheinung, die
+allen nord‐ und westgerm. Sprachen gemeinsam war.
+(Moulton erroneously assumes complementary distribution; cf.
+4.1.1.2–3.)
+4.2.3 Older Runic counter‐evidence
+
+This account would be exemplary and unobjectionable, were it
+not for the existence of certain forms in the Older Runic
+language.6 I cite as examples forms for which both reading
+and interpretation are fairly certain: horna ‘horn’ acc. sg.
+(Gallehus), worahto ‘I made’ [= worahto] (Tune), holtijaR ‘of
+Holt’ (Gallehus), dohtriR ‘daughters’ nom. pl. (Tune).7
+The first two examples have 〈o〉 (presumably o) correctly
+conditioned; the second two examples have 〈o〉 (presumably
+o) analogically transferred from a ‘forme de fondation’ to a
+‘forme fondée’ and present an environment that ‘ought’ to
+have 〈u〉 (u).
+(p.48)
+
+These forms confront the classic structuralist view with
+
+two problems:
+(1) Short ‐a has clearly not been lost—indeed its
+retention after heavy and light syllables both medially
+and finally is one of the defining characteristics of the
+Older Runic linguistic stage, cf. Grønvik (1998: 15)—so
+we would not expect the allophones to be graphically
+
+Page 6 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+represented. We should have only 〈u〉‐spellings in all
+these instances, representing /u/, and the rune 〈o〉
+should denote solely the long vowel /o:/.8 The fact that
+the allophones are graphically represented indicates
+that the sound change of a‐umlaut, paradoxically and
+‘prematurely’, has somehow been phonologized before
+the loss of its conditioning factors. In addition, and in
+apparent contradiction of Polivanov's Law (cf. 4.2.1),
+we appear to have an instance of split without merger.
+If it is not the loss of the conditioning factors, what has
+phonemicized the allophone [o] of the phoneme */u/?
+(2) The distribution of allophones is patently not
+complementary, which again indicates that the sound
+change has been phonologized.
+As scholars almost invariably remark, the forms holtijaR ,
+nom. sg. of a derived adjective, and dohtriR , nom. pl.,
+presuppose base‐forms /holta‐/* and /dohtar‐/*.9 But, although
+this statement is evidently correct, it cannot be said to be
+particularly illuminating for our purposes; the nub of the
+matter is how we are to account for such forms as /holta/*
+and /dohte:r/*. These forms, and /horna/ and /worhto:/,
+constitute the core of the problem that Older Runic poses for
+the classic structuralist view of a‐umlaut; holtijaR and
+dohtriR are merely an epiphenomenon.
+It is admittedly a very small corpus of four items—extendable
+to six if the base‐forms just discussed are included—but
+adequate in the circumstances, I believe. That is, having more
+data would not necessarily tell us much more about the
+language. The two inscriptions come from south‐east Norway
+(Tune) and south Jutland in Denmark (Gallehus), which
+involves a reasonable geographic spread.
+4.2.4 Distribution of reflexes
+
+There has been quite some discussion of the second problem
+mentioned in 4.2.3, that of the distribution of the reflexes,
+largely in the context of the question of ‘i and e, two phonemes
+or one?’ (a non‐issue as they were clearly two, cf. 4.1.1.2–3),
+and the problem of ‘failure of a‐umlaut of i’.10 However, the
+focus here is on the phonologization of o.
+
+Page 7 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(p.49)
+
+Of the West Germanic languages, High German is
+
+usually considered to have carried through the change of u
+to o most consistently, cf. OHG wolf, OE wulf ‘wolf’. Yet, even
+here, by‐forms—e.g. OHG snora, snur(a), Germ. Schnur
+‘daughter in law’, etc.—indicate that later repartitions are the
+result of analogy. In some instances, where there were both
+semantic and phonological variants, the products could be
+lexicalized, cf. OHG stehhal(a) ‘drinking vessel’ and stihhil(a)
+‘prick, sting (Germ. Stachel)’, cognate with Goth. stikls
+‘drinking vessel’.
+It should be noted that in North Germanic reflexes of the
+lowering of u to o show a dialectal distribution. There is a cline
+from west to east, with o‐reflexes much more established in
+the west—in Icelandic, Faroese, Norwegian, and Danish west
+of the Great Belt (Jutlandic and on Funen)—than in Danish
+east of the Great Belt, Scanian (the dialect of Skåne), Swedish,
+and Old Gutnish (the language of the island of Gotland), where
+u‐reflexes predominate. See Bandle (1973: 24–8), with
+important earlier references; compare also the discussion in
+Benediktsson (1967: 184–6). It is clear that the repartition is
+largely the result of secondary developments (cf. Kock 1910:
+esp. 138–9). Thus, even in Old Gutnish, which has one of the
+highest proportions of u‐outcomes, the word for ‘daughter’ has
+preserved a reflex of *o in certain forms of the paradigm, for
+example the accusative singular: dōtur (〈 *dohtaru); while
+elsewhere showing a reflex of u levelled from case‐forms
+providing a high‐vowel environment: dat. pl. dȳtrum (see
+4.1.1.2–3). This is no doubt because the *‐h‐ was lost and the
+preceding vowel lengthened, fossilizing the alternation.11
+Because of the nature of the evidence, the remainder of this
+article relates to Older Runic rather than the rest of North‐
+West Germanic. However, the discussion is mainly about
+interpreting the evidence rather than the evidence itself.
+4.2.5 The problem of phonologization
+
+Relatively little attention seems to have been paid to the first
+problem mentioned in 4.2.3—how /o/ came to be phonemicized
+—except by some Scandinavian scholars whose response is to
+deny that there was any such thing as a‐umlaut in the sense
+
+Page 8 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+used here. (Part of the difficulty stems from a literalistic
+interpretation of a‐umlaut to mean lowering before a following
+short a and nothing else, cf. n. 2.) These scholars operate
+instead with a lowering before certain consonants.
+(p.50)
+
+Thus Harry Andersen (1960: 406) speaks of ‘o‐forms
+
+such as holtijaR (which presupposes *holta not *hulta)
+worahto and dohtriR , which can have nothing whatsoever to
+do with a presumed a‐umlaut’ and concludes that the ‘shift of u
+to o must be extremely old in the Germanic languages
+(compare Gothic) and it must have been independent of a
+following a’.12 He and others posit a Proto‐Germanic lowering
+of u to o before certain consonants, notably r, h—as in Gothic—
+(and to a lesser extent l).13
+This claim does not stand up to scrutiny. In the first place, it is
+directly refuted by such West Germanic forms as OE, OHG
+burg ‘(fortified) town’, OHG suht ‘illness’, zuht ‘nourishment,
+breeding, offspring’; as well as Old Gutnish dȳtrum dat. pl.
+‘daughter’, cited in 4.2.4.
+Secondly, the fact that Proto‐Germanic had no /o/‐phoneme
+means that if there was a lowering of /u/ before certain
+consonants, it must have been sub‐phonemic. Yet, proponents
+of the lowering view offer no account of how a short [o]‐
+allophone was phonemicized. (I would not deny the possibility
+that a lowering influence of h—and r and l—may have worked
+in such a way as to favour the generalization of o‐variants,
+once the phoneme /o/ existed. Consonantal environments
+apparently played a role in determining lexicalized forms of
+words; cf. Bandle 1973: 25–7, with references.)
+These scholars are right to have raised objections, for, as we
+have seen, there are problems the ‘standard view’ ignores.
+Grønvik (1998: 86) notes that ‘diese Allophone [wurden]
+phonemisiert, ohne daß dieser Vorgang bisher völlig geklärt
+wäre. Diese Phonemisierung ist jedoch schon für die älteste
+Runensprache…sicher nachzuweisen.’ The problem should at
+least be addressed, even if it cannot be satisfactorily
+answered.
+
+Page 9 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+4.3 Ways in which allophones achieve phonemic
+status
+4.3.1 The standard view
+
+Conveniently for the present purposes, in a couple of articles
+Dobson explicitly considered the question of how it is that
+allophones come to be phonemicized (1962: 141–4, essentially
+repeated in 1969: 43–8). Two of the ways he gives in which ‘a
+contextual variant, an allophone, comes to be regarded as a
+distinct
+
+(p.51)
+
+sound in its own right, a phoneme separate
+
+from the one from which it arose’ (1962: 141) are of relevance
+to changes that add a phoneme to the inventory (cf. 4.2.1).
+These are (cf. 1969: 43):
+(1) destruction, by some independent sound change, of
+the environment in which the allophone arose, so that it
+ceases to be tied to an existing phonetic context
+(2) an allophone of one phoneme developed in one
+context or set of contexts may become phonetically
+identical with an allophone of a different phoneme
+developed in a different context or set of contexts, in
+such a way that the merged allophones are neither
+referable to a single source nor identifiable as
+occurring in limited and recognizable contexts.
+The first method is prototypical secondary split; the second
+could result in merger with an existing third phoneme (and
+thus be a kind of ‘partial merger’) or it could lead to creation
+of a new phoneme (for example, in a given language, rounding
+of /e/ and fronting of /o/ could coincide and produce a
+previously non‐existent /ö/; in those circumstances, the split
+would also be the product of a merger, although not among
+the conditioning factors). What is clear, however, is that
+neither of these routes can account for the phonologization of
+a‐umlaut (cf. 4.2.3).
+Dobson goes so far as to exclude a further way in which an
+allophone could become a phoneme (perhaps because he
+conceives of this as a general process that comes about ‘when
+the variant ceases to be recognizably dependent on the
+context or contexts in which it originally developed’, 1962:
+141). In his later article (1969: 44), he writes:
+
+Page 10 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+analogical processes, as when a variant developed in one
+inflexional form is transferred to another, must always
+take place after a distinction has become phonemic;3
+the possibility of transference depends on observation
+and choice, and the lack of an automatic link with the
+context. Thus in primitive OE there must already have
+been a phonemic distinction between æ and a
+before *færiþ could be remodelled as *fariþ (to become
+færþ); it is the business of the phonologist to ask by what
+means it had become phonemic, for it certainly does not
+depend on the mere physical difference between the
+sounds, which is slight.
+3
+
+Explanations which assume the analogical substitution
+of one allophone for another are contrary to principle…
+(Cf. Dobson 1962: 143–4 n. 1.) Trnka ([1936 =] 1982: 30)
+seems to have been the first expressly to deny the possibility
+of analogical transference of allophones (also with reference
+to the Old English a ≠ æ opposition).
+4.3.2 Phonemicization by levelling
+
+However, Bazell, for one, had already dissented from this
+position, claiming that an allophone can indeed achieve
+phonemic status by ‘levelling’ (1952: 37):
+(p.52)
+
+The analogical transference of an allophone is by
+
+definition impossible, since the ‘allophone’ would then
+have phonemic status. Occasionally (although this is not
+a very productive source of new phonemes, and is even
+denied entirely by some scholars) new phonemic
+distinctions arise in this way. Thus the Old English short
+vowels a (before back vowels of the following syllable,
+including the combination ‐ia‐) and æ (elsewhere) appear
+to have been variants before analogical forms (fare subj.
+pres. after infin. faran etc., as against fære dat. sing. of
+fær) arose.
+Cf. also the discussion in Hoenigswald (1944: 82–3).
+Bazell, I think, must be correct (probably also specifically for
+the a ≠ æ opposition in West Saxon Old English; similarly
+
+Page 11 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+Samuels 1972: 35). Yet this observation still begs the question
+of how it can be that speakers should start shuffling around a
+supposedly automatic alternation.
+4.3.3 Alternations can cease to be automatic
+
+On this topic, C. A. Ladd (1964: 656) offers an interesting
+insight that adds detail and clarification to Bazell's statement.
+In brief, the alternation must cease to be wholly automatic—if
+by ‘automatic’ we mean that speakers are unaware of it. After
+a lapse of time, the allophonic rule that gave rise to the
+alternation is no longer ‘live’ and
+a new generation of speakers hears the allophones as
+two sounds rather than one. We cannot suppose that
+children have to wait for a minimal pair before they
+decide whether two sounds form two separate phonemes
+or not; what matters is that they can interchange them
+freely…children learning the language…imitate the
+sounds in the distribution in which they heard them, a
+distribution which depends on phonetic criteria. At the
+same time, however, the way is now open for analogical
+interchange which will disturb the phonetic pattern. It is
+in fact the possibility of disturbance which indicates that
+the change has reached the phonemic level; the two
+things go hand in hand. Frequently, it is the appearance
+of analogical forms which leads to the recognition that
+the sound‐change has occurred…
+
+4.3.4 The role of ‘system balance’
+
+Some remarks of Kuryłowicz regarding the phonologization of
+‘a‐umlaut’ are of relevance to how speakers might have
+become aware of the previously automatic alternation in this
+instance (1952b: 54):14
+(p.53)
+
+The rise of long ā…from ē 1…severs the
+
+quantitative bond between [short] /a/ and [long] /o:/, the
+latter becoming the long grade of [o]. The vocalic
+timbres [o] and [u], up to now variants of a single
+phoneme /u/, become INDIRECTLY autonomous owing to
+the phonological distinction between the respective long
+vowels /o:/ and /u:/…
+
+Page 12 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+Kuryłowicz incisively draws attention to the relevance of the
+North‐West Germanic rise of a new long /a:/ phoneme (by
+shift). This had the effect of changing the correlations between
+short and long members of the phonological space. Linking the
+development of the short vowels to the shift of long /e:/ to /a:/
+(except in final syllables) certainly correlates with the fact that
+a‐umlaut is a non‐Gothic North‐West Germanic feature (cf. n.
+2).
+Elmer H. Antonsen developed Kuryłowicz's thought and
+interpreted it as demonstrating how [u] and [o] were
+phonemicized by what Antonsen came to call ‘system
+balance’ (e.g. 1965: 27, 1972: 138, 2002: 25). In his 1965
+article, he noted that /o/ filled the ‘hole in the pattern’ of short
+vowels (compare also Benediktsson 1967: 177, 1970: 102).
+Introduction of a phoneme as a result of the re‐evaluation of
+allophones in terms of the oppositions in the phonological
+system has been discussed several times by Moulton (his study
+1961b offers an interesting analogue to the case of a‐
+umlaut).15
+Awareness of the distinction between the allophones is the
+necessary precondition, but levelling (which may itself have
+been ‘unconscious’) was the decisive step that gave
+phonological status to the variants by disrupting the
+complementary distribution.
+
+4.4 Diachronic considerations and the question
+of reversion
+4.4.1 The transmission problem
+
+The factors outlined in 4.3.2–4 help explain how a‐umlaut
+came to be phonologized before its conditioning factors were
+lost, in defiance of Polivanov's Law. Dobson—and, of course,
+many others; I am only using him as the representative of a
+viewpoint—had a too rigidly synchronic concept of the
+phoneme, and (as a corollary) an almost a‐chronistic approach
+to its application to historical phonology (cf. 4.3.1). Language
+may be a system ‘où tout se tient’, as de Saussure maintained
+(see Koerner 1999), but it is rather a loose system and ‘all
+grammars
+
+(p.54)
+
+leak’ (Sapir 1921: 38), even synchronic ones.
+
+If this were not so and they were ‘watertight’, there would be
+
+Page 13 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+no redundancy and the loss of a phoneme, indeed any real
+change, would be impossible (cf. Hockett 1965: 203). The
+reality is continuous change and, even in a synchronic
+analysis, we are trying to hit a moving target.
+The simplistic transfer of methods of synchronic analysis on to
+the diachronic plane is reminiscent of Zeno's paradoxes (cf.
+Coseriu 1958: 10–12 = 1974: 12–14). One of these is taken up
+memorably by Tolstoj, in the opening section of War and
+Peace, Book Three, Part Three: operating with discrete units
+of motion instead of continuous motion has the result that
+—‘logically’—Achilles can never overtake the tortoise, who has
+been given a start, although we all know in reality that he can.
+Likewise—puristically—the i‐mutation of short o is
+‘impossible’, because, according to the rules of a‐umlaut (cf.
+4.1.1.2), only u could stand before an i‐mutation factor. Yet, of
+course, the i‐mutation of o is well attested, being reflected, for
+example, in OIc. dǿtr ‘daughters’ (nom. pl.). Janda and others
+have fallen into the same ‘logical’ trap (cf. Joseph and Janda
+2003: 409–10 with references) in assuming that the loss of
+conditioning factors ‘ought’ in every case to result in reversion
+of allophones; cf. 4.4.2–3. This is a diachrony that is strangely
+devoid of history.
+Even granting the correctness of the dogma that all speakers
+are totally unaware of subphonemic alternations, this could
+only really be so synchronically; it ignores the transmission of
+language from generation to generation (as noted by Ladd, cf.
+4.3.3)—recognizing, of course, that generations form a
+continuum within the community, cf. Weinreich et al. (1968:
+114) (already Saussure, Cours de linguistique générale I.2. §1
+= 1955: 106).
+4.4.2 ‘Significant allophones’
+
+I think a point C. A. Ladd makes about Old English
+palatalization earlier in the article cited previously is a crucial
+one (1964: 655):
+what happens when a subphonemic variation becomes
+phonemic…is a vital stage in the process which has
+received curiously little attention…In the case of
+
+Page 14 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+conditioned sound‐change the result will eventually be a
+phonemic split of some sort. Now, it is surely not
+sufficient to say that in such cases a subphonemic
+variation becomes phonemic as the result, for instance,
+of a loss of conditioning sounds. In the case of the split
+between back and front c and g in Old English there is
+little question that other consonants than c and g
+originally had fronted allophones, as the same sounds
+which produced fronting of c and g also produced front
+mutation of the vowel of the preceding syllable, no
+matter what the intervening consonant. But only in the
+case of c and g had the variation between the two
+allophones reached such a degree that they could stand
+on
+
+(p.55)
+
+their own without the support of the
+
+conditioning sounds. In other words, even before the loss
+of the conditioning sounds, the two allophones must have
+been potentially phonemic…
+It is probable that these reconstructable ‘significant
+allophones’, which hindsight reveals to have been ‘potential
+phonemes’, correspond synchronically to what may usefully be
+termed ‘perceived allophones’.16 Instead of an absolute divide
+between the phonemic and subphonemic, there is rather a
+cline from unconscious ‘universal phonetic’ accommodations,
+through unnoticed automatic alternations to perceived
+allophones (the dividing line between these two probably
+varying somewhat from speaker to speaker), and on to actual
+phonemic contrasts (the acid test being that they are actually
+exploited functionally). Here, there is also a range, from
+‘marginal phonemes’, with minimal, to ‘full phonemes’, with
+maximal functional load.17
+As C. A. Ladd has pointed out, minute changes in
+pronunciation cannot spread consistently through a speech
+community ‘unless they spread by
+
+(p.56)
+
+imitation’; further,
+
+‘to be imitable, variations in pronunciation must be
+perceptible’ (1965: 100–1; cf. also Weinreich, Labov, and
+Herzog 1968: 130–1). If this were not so, mimicry (the
+imitation of someone else's speech idiosyncracies), let alone
+code‐switching, would be impossible.
+
+Page 15 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+4.4.3 Allophone formation and reversion
+
+Reversion, a subject that Ladd raises in the quotation given in
+4.4.2, is a genuine issue. In many cases where split would be
+possible, the presumed allophonic variation effectively
+vanishes and no phonemicization takes place when the
+‘conditioning factors’ are lost (cf. Hoenigswald 1999: 204).
+Polivanov had already observed that ‘split can only take place
+when there is sufficient physical difference between the
+diverging variants’ (1928: 38 = 1974: 77). Similarly,
+Hoenigswald added a caveat concerning secondary split:
+‘allophones become phonemes when part or all of their
+determining environments fall together without at the same
+time canceling the phonetic difference between the allophones
+in question’ (1960: 94, also 77 ‘if the phones remain distinct’;
+cf. 1999: 204). Compare also the discussion of Janda (in Joseph
+and Janda 2003: 409–10, with references). Van Wijk, in the
+early days of Prague structuralism, explicitly recognized that
+whether phonologization takes place in a given instance is
+largely a matter of phonetics and thus subject to chance (e.g.
+1939: 304–5).18 Much the same point has been made by Ohala
+(e.g. in Joseph and Janda 2003: 683–5; perhaps it is not
+surprising that those who consider these issues reach similar
+conclusions). This underlines the fact that our knowledge is
+imperfect and little more is open to us than post‐hoc
+rationalization.
+Another factor to bear in mind when considering the apparent
+reversion of allophones that one might have expected to be
+phonemicized is the process of allophone formation. A prime
+example, which is scarcely mentioned by the handbooks,
+concerns the phonologization of i‐umlaut in Old High German
+—or rather the non‐phonologization of i‐umlaut at the time of
+the loss of short ‐i after heavy syllables. This is certainly
+different from the situation in Old English: compare OE giest,
+giestas ‘guest, guests’ and mann, menn ‘man, men’, beside
+OHG gast, gesti and man, man. In view of the outcome of
+‘primary umlaut’ (as in gesti), it is hard to see why supposed
+umlaut allophones (of a, at least) should have reverted before
+lost ‐i. Rather than positing wholesale reversion—shortly to be
+followed by phonemicization of other apparently ‘identical’
+
+Page 16 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(p.57)
+
+conditioned variants—it seems more plausible to
+
+suppose that ‘significant’ i‐umlaut allophones had not yet
+formed when short ‐i was lost after heavy syllables, but
+developed later, and were phonemicized by the loss of *‐(i)j‐
+(including ‐ja‐ 〉 ‐e‐), which causes i‐umlaut in both English
+and German, e.g. to drench : tränken; to hear : hören. (On the
+subject of allophone formation, we may further note that
+Russian shows no sign of developing an allophone [ŋ] in words
+such as bank ‘bank’: [bank], not †[baŋk].)
+4.4.4 Citation forms and the spoken chain
+
+It is also worth recalling that sound change originates not in
+citation forms but in the spoken chain. The allegro forms of
+connected speech are characterized by special allophones
+conditioned by their environment in the utterance, and varying
+degrees of reduction (utterances are often distinguished by
+distinctive features that do not play any part in the
+composition of the ‘paradigmatic’ phoneme inventory). In
+‘decoding speech’, the listener evaluates them against the
+template of the lento citation forms (which conventionally
+serve as the basis of phonemic analysis).
+At certain stages, when the divergence gets too big for
+‘comfort’ (ease of comprehension), some sort of
+accommodation takes place in (sections of) the speech
+community. Either (somewhat more rarely, I should guess),
+speakers adjust their ‘contextual forms’ so as to bring them
+more into line with the citation form (‘don't speak in such a
+slovenly fashion, dear’), or (the most usual strategy), the
+citation form is restructured to bring it more into line with the
+contextual form—a fact to which Polivanov already drew
+attention (1928: 39–40 = 1974: 77–8; cf. also Hockett 1965:
+203). This must be what happens in the case of such ‘radical’
+changes as i‐umlaut, when a whole new class of (front
+rounded) phonemes enters the language and, for a period, the
+new forms that contain them compete with the ‘original’
+forms.
+This is one way in which sound change can take place within
+purely chronological ‘space’ (cf. C. A. Ladd 1964: 656, quoted
+in 4.3.3), even where there is little relevant geographical or
+
+Page 17 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+sociological variation in a given speech community (e.g. a
+remote island containing a single village of egalitarians).
+Greater geographical dispersal and social stratification of a
+single speech community will certainly lead to widespread
+‘dialect borrowing’ and a greatly increased rate of change,
+which again can be somewhat offset by literacy, standard
+languages, and so forth.
+I have been concerned with some aspects of the ‘generation of
+innovations’ rather than the ‘propagation of change’ in all its
+sociolinguistic aspects, something we cannot reach in
+reconstructive work.
+(p.58)
+
+4.5 Main conclusions
+
+4.5.1 Review of how a phoneme can be introduced into the
+inventory
+
+To round off the discussion, I rehearse the various ways in
+which a new phoneme can be introduced into the inventory:
+I. As the result of ‘regular sound change’, which is to
+say by secondary split, to which Polivanov's Law
+applies (cf. 4.2.1, 4.2.3(1)).
+II. As the result of some kind of ‘analogy’ (‘split without
+merger’), where—because it is not strictly a sound‐
+change process—Polivanov's Law does not apply:
+(a) The redistribution of perceived allophones by
+levelling within a paradigm and/or between a
+base and a (synchronic) derivative. This is the
+process I have invoked for NWGmc a‐umlaut,
+where the allophones had come to be perceived
+through ‘system balance’ (4.3.4). Levelling of
+this kind is often tacitly adduced in historical
+work, but it is unclear to what extent it is
+explicitly acknowledged in historical linguists’
+theory of what they do. As in conventional
+secondary split (I), the variants must have been
+phonetically conditioned and phonemicization
+results from disruption of complementary
+distribution. This does not hold for the
+remaining two analogical types.
+
+Page 18 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(b) ‘Morphophonemic analogy’—the
+redistribution of allophones by pressure of an
+existing morphophonological alternation. Such a
+development was first suggested by Jakobson
+(1949: 17 = 1971: 114), with the example of
+Byelorussian palatalized consonants. The
+existence of the alternations /rv‐ú/ ‘I tear’ /rv’‐
+oš/ ‘you tear’, /vr‐ú/ ‘I tell lies’ /vr’‐oš/ ‘you tell
+lies’ calls into being the pair /tk‐ú/ ‘I weave’ /tk’‐
+oš/ ‘you weave’ (replacing /tk‐oš/) and creates
+the phoneme palatalized /k’/, which up until then
+had been a positional variant of /k/ in other
+contexts.
+(c) ‘Morphophonemic genesis’—the recombining
+of existing distinctive features so as to fill out
+the pattern of a productive morphophonological
+alternation. A phoneme is created de novo,
+without there having been a pre‐existing
+(phonetically conditioned) allophone awaiting
+phonemicization. This process was proposed by
+Moulton (1961b: esp. 243–6), with an example
+from Swiss German dialects, where the regularly
+developed umlaut alternation /ɔ/~/ö/ (alongside
+the regularly developed umlaut alternation /o/
+~ /ö/) was replaced by the alternation /ɔ/~/ɔ̈/,
+featuring the wholly new phoneme /ɔ̈/. See also
+Moulton (1967: 1402–5), where he introduced
+the term and added some analogous Dutch data.
+(p.59)
+
+III. Via ‘foreign loans’—the result of borrowing
+
+of words containing the new phoneme (from another
+dialect or language). An example is the introduction of
+French loans with initial v‐ into Middle English dialects
+that lacked initial fricative voicing, which made the
+sound phonemic. In Modern Engish, /ž/ occurs in
+French loans such as prestige, and has brought within
+its orbit the medial sound of words such as vision (with
+[‐ž‐] from [‐zj‐]), beside visible (with [z]) and visual,
+which varies.
+
+Page 19 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+Whereas types I and II rely on factors internal to the
+phonological system, type III relates to external factors and, as
+a result, does not necessarily present a particularly interesting
+development structurally (although it may result in hole‐
+filling).
+4.5.2 Methodological rider
+
+From a methodological perspective, I suggest one of the
+‘analogical’ explanations (type II) should be adduced only if it
+does not prove possible to account for the phonologization as
+the result of a merger elsewhere in the system (type I).19
+
+4.6 Summary of the process of a ̠‐umlaut
+By way of summary, I supply a set of diagrams illustrating my
+scenario of the phonologization of North‐Germanic a‐umlaut,
+alongside the development of the vowel system (excluding
+diphthongs) and illustrated by key forms.
+(i) Proto‐Germanic (pre‐allophone formation)
+i:
+
+i
+
+u
+
+u:
+
+e:
+
+e
+
+a (å)
+
+o: (å:)
+
+*/duhtar(‐)/
+
+*/hultaz/
+
+*/duhtariz/
+
+*/hultijaz/
+
+(ii) North‐West Germanic (‘insignificant allophones’)
+The shift of ē 1 to ā (except in final syllables) triggers
+potential new correlations between short and long
+vowels and the likelihood of an allophone [o] of short /
+
+u/:
+(p.60)
+
+(iii) North Germanic I (‘significant allophones’)
+
+In terms of phoneme inventory, this is the same as
+North‐West Germanic. However, a later generation,
+aided and abetted by the long‐short vowel correlations,
+‘perceives’ the [o] allophone of /u/ and levels it within
+paradigms and between bases and their derivatives.
+
+Page 20 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(The sound change has ipso facto ceased to be a ‘live
+rule’ by this stage, so the complementary distribution
+can be disrupted.)
+*/duhtar(‐)/ [dohtar(‐)]
+*[doht(a)riz]20 ←
+
+*/hultaz/ [holtaz]
+*[holtijaz] ←
+
+(iv) North Germanic II (phonemes)
+
+As both u and o occur in all positions, the way is open to their
+extensive shuffling, leading to the observed oddities of their
+distribution. (This is especially true of i and e, with the proviso
+that e generally does not occur before following i etc., in which
+case it falls in with /i/.) Redistributed o before following i etc.,
+instead of reverting to u—an option not now open to it, as the
+allophonic rule is no longer live—persists, later developing the
+‘front mutation allophone’ [ö] in this position (cf. 4.4.1).21
+Notes:
+
+(1) The question as to when the attestation starts depends on
+whether one thinks the inscriptions on the Meldorf fibula
+(dated to the first half of the first century AD) and the
+Osterrönfeld pot‐sherd (dated to the first century AD) use
+runic, ‘proto‐runic’, or Latin characters; cf. in the first
+instance Düwel (2008: 3, 23–4, 178–9). The rough cut‐off date
+of c. 500 AD excludes ‘transitional’ inscriptions that still use
+the older alphabet but show linguistic innovations; cf. Grønvik
+(1998: 16–26). Older Runic is remarkably stable linguistically.
+(2) The term ‘a‐umlaut’ could be justified on the basis that it is
+generally considered that the loss of this vowel in final
+syllables triggered phonologization of the change (cf. 4.2.2),
+but it will turn out that this is in fact not the case. Campbell
+(1962: §111) refers to ‘a tendency to harmonize e, i, and u to
+the vowel which follows in the next syllable’. One could dub it
+the ‘North‐West Germanic short vowel shuffle’, but the term
+
+Page 21 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+might not catch on. See especially Benediktsson (1970: 100–
+5). The phonologized change of a‐umlaut is exclusively a
+North‐West Germanic phenomenon. Any phonemic distinctions
+between the short vowels /i/ and /e/, and /u/ and /o/ in Bible
+Gothic (cf. Braune and Heidermanns 2004: §§20, 24) are of
+independent origin, the result of separate Bible Gothic
+developments (cf. Bennett 1952, with references). It may be
+noted that so‐called Crimean Gothic is to be classed as a
+North‐West Germanic dialect, as it attests a‐umlaut; note
+especially Schuos [for Schnos*]: Sponsa ‘fiancée’ in the list of
+words not recognized by Busbecq (‘cum nostra lingua non
+satis congruentia’). See Stearns (1978: 151–2), Grønvik (1983:
+27).
+(3) I focus on structuralist theory because I consider it the
+best‐fitted to diachronic work, especially the kind of problem
+under consideration (cf. also Issatschenko 1973: 5). A
+sociolinguistic approach, by contrast, is not ideally suited for
+poorly documented or prehistoric stages, although see Ringe
+(2006b) for an inspired example. If they discuss these issues at
+all, other ‘schools’ differ largely in using their own
+terminology and notation. (I allude to some recent work by
+way of references to Joseph and Janda 2003.) As Jean Rostand
+observed: ‘Le biologiste passe; la grenouille reste’.
+(4) The ‘law’ is named after its framer, the Russian linguist and
+orientalist Yevgenij Dmitrievich Polivanov, who promulgated it
+in an article of 1928 (38 = 1974: 77). See especially Jakobson
+(1931: section IX); also Hoenigswald (1960: 77–8, 1999: 202–
+4).
+(5) In my usage, a sound change is ‘phonologized’ and a
+specific allophone is ‘phonemicized’ (achieves phonemic
+status).
+(6) Runes are transliterated into bold letters, while italics are
+used for transcriptions, which necessarily involve some degree
+of interpretation. R represents a rune written for etymological
+z, which had acquired some r‐like features and eventually
+merged with original r. Runic forms are followed in brackets
+by the name of the monument on which they are found. The
+standard edition remains Krause and Jankuhn (1966).
+
+Page 22 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(7) Note also gudija ‘priest’, ON goði (Nordhuglo), wurte
+‘(s)he made’, ‐kurne ‘corn’ dat. sg. (Tjurkö), without the
+conditions for lowering.
+(8) There is no evidence to lead us to believe that 〈o〉 is in
+fact a spelling for /u/ in these examples.
+(9) Dohtēr has apparently been relexicalized, which is further
+evidence of phonologization of a‐umlaut.
+(10) One of the peculiarities of a‐umlaut is that, whereas before
+following i and j only i generally occurs as a reflex, both e and i
+are tolerated as reflexes before a and ō (see the examples in
+the next paragraph). Compare the treatment of Benediktsson
+(1967: 183–4). See Hock (1973) for a discussion of the issues
+and a summary of earlier work.
+(11) Interestingly, some of the early material is in conformity
+with the later distribution: Gallehus holtijaR and horna are
+both from Jutland, Tune worahto and dohtriR from Norway,
+and Tjurkö wurte and ‐kurne from Sweden. Nordhuglo gudija
+comes from western Norway, however.
+(12) ‘o‐former som holtijaR (der forudsætter *holta og ikke
+*hulta), worahto og dohtriR der intet som helst kan have at
+gøre med en formodet a‐omlyd’. ‘Overgangen af u til o må
+være overordentlig gammel i de germanske sprog (sml.
+gotisk), og den må have været uafhængig af et følgende a’.
+(13) As well as Harry Andersen, a vocal opponent of a‐umlaut
+was Erik Harding; cf. Harding (1937–49: esp. items 22, 32, 45,
+49, 65, 86 (‘det obegripliga [incomprehensible] a‐omljudet’),
+97). Compare also Andersen (1986).
+(14) The following quotation is taken out of context and some
+clarifying words are added in square brackets in order to help
+emphasize the desired point. The format is also altered and I
+silently emend one misprint and change the symbolization to
+make clear what are (allo)phones (also in square brackets) and
+what are phonemes (between slashes).
+
+Page 23 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+(15) In the specific context of the creation of a short /o/
+phoneme, we may also note that Haas (1978: 246–8) has
+observed that the quality of a short mid‐back vowel in a given
+phonological system is often tied closely to the quality of the
+corresponding long mid‐back vowel (a point at least
+anticipated by Moulton, e.g. 1960: 163, 1961b: 236–7, 1970:
+23). Similarly, in the case of North‐West Germanic, it could be
+argued that the influence of the long‐vowel contrast /i:/ ≠ /e:/
+helped preserve that between the short vowels /i/ and /e/ (cf.
+4.1.1.2 end).
+(16) ‘Perceived allophones’, which must be based on a degree
+of phonetic dis‐similarity, complement the ‘phonetic similarity’
+criterion for phoneme identification. Others have come to
+similar conclusions; compare the discussion by Janda in Joseph
+and Janda (2003: 412–13).
+(17) Compare the discussion of Janda in Joseph and Janda
+(2003: 415). The idea of the cline and problems of
+indeterminacy can be illustrated by the oft‐discussed situation
+with [æ] in several varieties of contemporary ‘standard
+English’. The speech‐sound occurs in citation forms with three
+degrees of length: (i) short [æ] is found before voiceless
+consonants; while both (ii) slightly longer [æˑ] and (iii) fully
+long [æː] precede voiced segments. Examples are bat; bade
+(also pronounced [beid]); and bad. The first two sounds count
+as short and are automatic positional variants that sound ‘the
+same’ to naïve native speakers. The third is perceptibly
+different. While some words regularly have (iii), e.g. mad, bad,
+sad, there are no rules that predict whether certain other
+words will have (ii) or (iii). Thus I pronounce cadge [æˑ], but
+badge [æː], mag [æˑ] (short for magazine), but bag [æː]. In
+addition, the lexical incidence of the perceived long allophone
+varies from speaker to speaker. In my own speech, brandy and
+shandy are both pronounced with the long variant, whereas for
+some speakers they are conveniently distinguished, with
+brandy, a short drink, having variant (ii), while shandy, a long
+drink, has variant (iii); cf. Fudge (1977: 57, 64; to judge by his
+article, our distribution of (ii) and (iii) differs significantly).
+There are some potential minimal pairs, for example candid
+[kæˑndid] ‘frank’ vs. candied [kæːndid] ‘covered with candy’,
+
+Page 24 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+although, again, I use the long phone (iii) for both (as does
+Fudge 1977: 58). Granted the existence of a noun badger
+‘someone who puts badges on things’ (iii), derived from the
+verb to badge, it would contrast with the animal badger (ii) in
+my speech. There are thus some potential minimal pairs and,
+on some criteria, (iii) might count as a separate phoneme for
+some speakers, although not for others. However, the
+distribution and collocations of the words in question mean
+that there is no serious functional contrast. Wells (1982: 288)
+calls it ‘marginally contrastive’. Compare the varying views on
+this issue—which is only raised here to make a general point—
+of Hoenigswald (1944: 82–3), Bazell (1952: 34; he deems it
+‘marginal’, saying: ‘It is neither quite true nor quite false to
+say that there is an opposition æ/æː in Standard British
+pronunciation’), C. A. Ladd (1964: 656), Fudge (1977), Lass
+(1984: 34–6). A classic example of perceived allophones are
+the German Ich‐ and Ach‐Laute; native speakers have no
+difficulty in hearing the difference between the two sounds,
+while linguists debate whether they should be considered
+contrastive and thus different (albeit marginal) phonemes—
+supposed minimal pairs involve dubious lexemes, diminutive
+suffixes, or compounds (cf. Issatschenko 1973).
+(18) As Gould (2001: 228) remarks: ‘Unpredictable
+contingency, not lawlike order, rules the pathways of history’.
+(19) In the case of NWGmc a‐umlaut, a sound change
+elsewhere may yet be found to have triggered phonologization.
+(20) If we recognize a sound change of PIE *‐er(‐) to *‐ar(‐) in
+Proto‐Germanic unaccented syllables, the North‐West
+Germanic paradigm of ‘daughter’ is seen to have lowering
+environments in the following case‐forms: voc. sg. ‐ar, acc. sg.
+‐ar, nom. pl. ‐ar(z), gen. pl. ‐rō. This is a much stronger base—
+four endings out of nine—from which to generalize o‐vocalism
+(cf. the doubts about a‐umlaut in this form assembled by
+Andersen 1986: 118–19).
+(21) An earlier version of this paper was presented at the
+Second International Symposium on Runes and Runic
+Inscriptions in Sigtuna, Sweden, in September 1985. I would
+like to thank a number of scholars who have been kind enough
+
+Page 25 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+Older Runic evidence for North‐West Germanic a‐
+umlaut of u (and ‘the converse of Polivanov's Law’)
+to read various drafts or discuss these issues over the years:
+Michael Benskin, Paul Bibire, N. E. Collinge, Martin Durrell,
+†Henry M. Hoenigswald, †David McLintock, †William G.
+Moulton, Lena Peterson.
+
+Page 26 of 26
+
+PRINTED FROM OXFORD SCHOLARSHIP ONLINE (www.oxfordscholarship.com). (c) Copyright Oxford University Press, 2017. All
+Rights Reserved. Under the terms of the licence agreement, an individual user may print out a PDF of a single chapter of a
+monograph in OSO for personal use (for details see http://www.oxfordscholarship.com/page/privacy-policy). Subscriber: SUNY
+Binghamton University; date: 01 March 2017
+
+

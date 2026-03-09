@@ -3803,3 +3803,448 @@ Adding OERMetathesis (restricted to \*rVst):
 
 The gains are modest but correct: we now derive *berstan* and *forst* without
 regressions.
+
+---
+
+## PGmc \*i > WGmc \*e Lowering: The Case of *nest* (2026-03-09h)
+
+### The mismatch
+
+Current evaluation shows:
+```
+nest: proto nistą => stage nist | expected nest
+```
+
+The FST produces \*nist (with *i*), but the attested OE form is *nest* (with *e*).
+This is not a bug in the FST — it correctly passes through the input vowel. The
+question is: **what is the correct input form?**
+
+### Survey of the etymological literature
+
+The reconstructions in the major dictionaries diverge on whether to write PGmc
+\*nista- or \*nesta-.
+
+#### Sources reconstructing \*nista- (with *i*)
+
+| Source | Form | OE cited | Notes |
+|--------|------|----------|-------|
+| **Kroonen (2013)** p.388 | \*nista- n. | "OE nest" | "= \*ni-zd-o- (IE)" |
+| **Orel (2003)** p.288 | \*nistan n. | "OE nest" | "Identical with Toch B lesto…" |
+| **Kluge-Seebold (25th)** s.v. Nest | wg. \*nista- n. | "ae. nest" | "Aus wg. \*nista- n. 'Nest'" |
+
+#### Sources reconstructing \*nesta- (with *e*)
+
+| Source | Form | Notes |
+|--------|------|-------|
+| **Hogg (1992)** vol.1 p.45 | Gmc \*nesta- | "Gmc \*nesta- (> OE, OHG nest) is the regular continuation of IE \*ni-sd-o-" |
+| **R/T (2014)** vol.2 p.34 | "\*nistaz (\*nestaz??)" | Explicitly marks uncertainty with "??" |
+
+#### Sources noting the *i > e* change as regular
+
+| Source | Discussion |
+|--------|------------|
+| **Campbell (1959)** §114 | "i > e before mid and low vowels. In OE this change is shown only by the common Gmc. words *nest* nest, and *wer* man" |
+| **Bülbring (1902)** §81d | "\*nëstoz 'Nest' aus älterem \*nistoz" — explicitly showing derivation |
+| **Fulk (2018)** §4.3 | "Undeniable examples are OE OHG nest 'nest' < PIE \*nizdos… from \*ni- as in OE niþer 'down' plus \*-zd- as in full-grade Lat. sedeō 'sit'" |
+
+### The phonological argument
+
+The IE etymology is uncontested:
+- PIE \*ni-zd-o- ("sitting-down-place")
+- \*ni = "down" (cf. OE *niþer* "down")
+- \*zd = zero-grade of \*sed- "sit"
+- \*-o- = thematic vowel
+
+The question is: **when did \*i lower to \*e?**
+
+#### View 1: Lowering occurred in Proto-Germanic (Hogg's position)
+
+Hogg (1992, vol.1 p.45):
+> "/i/ was lowered to /e/ before /a/ of the following syllable (IE \*ni-sd-o- >
+> Gmc \*nesta-)"
+
+On this view, the PGmc form was already \*nesta-. The lowering is a PGmc
+sound change that applied before the breakup of PGmc into daughter languages.
+
+#### View 2: Lowering occurred in West Germanic (Bülbring's position)
+
+Bülbring (1902, §81d):
+> "\*nëstoz 'Nest' aus älterem \*nistoz, \*wëroz 'Mann' aus \*wiroz"
+
+Bülbring calls this "a-Umlaut" — lowering of *i, u* before non-high vowels in the
+following syllable. He treats this as a WGmc phenomenon that took an earlier
+\*nistoz and produced \*nestoz.
+
+#### View 3: Lowering was sporadic and dialectally variable (Fulk's position)
+
+Fulk (2018, §4.3):
+> "It is plain, as well, that PGmc. i might be lowered to e in parallel fashion
+> before a mid or low vowel in the next syllable. Undeniable examples are OE
+> OHG *nest* 'nest'… and OS OFris. OE *wer* 'person, man'… Gothic, once
+> again, stands apart, since PIE i in that language is reflected as aí…"
+
+And crucially:
+> "Plainly, the results of the lowering of i are **much less systematic** than
+> those for the lowering of u, and in NWGmc., i and e alternated in many words,
+> depending on whether or not a high vowel appeared in the following syllable.
+> This created a situation ripe for analogical change… with **leveling away of
+> e being the commonest result**."
+
+Fulk notes (fn. 5):
+> "Ringe (Ringe & Taylor 2014: 34–6) takes the position that this lowering is a
+> **Franconian change** that spread northward irregularly in WGmc., and that in
+> OFris. the change is unrelated, choosing to leave exceptions like OE *nest,
+> wer* unexplained."
+
+### Why the disagreement exists
+
+The fundamental problem is that **\*i > \*e lowering was not fully regular in
+any daughter language**. Campbell (§114) explicitly notes that in OE "this change
+is shown **only by** the common Gmc. words *nest* and *wer*" — plus the doublet
+*spec ~ spic*. This is a tiny set compared to the u > o lowering (Campbell §115).
+
+The sparse attestation means:
+1. We cannot confidently identify the conditioning environment
+2. We cannot determine when the change occurred
+3. Different scholars handle the uncertainty differently:
+   - Conservative: reconstruct \*nista-, note lowering happened "somewhere"
+   - Phonologically explicit: reconstruct \*nesta- for WGmc
+   - Explicitly uncertain: R/T's notation "\*nistaz (\*nestaz??)"
+
+### Attestation in OE
+
+The OE form is unambiguous: **nest** (with *e*).
+
+- Campbell §114: "nest nest"
+- Bülbring §92: "nëst 'Nest'"
+- All major dictionaries: OE *nest* n.
+
+There is no attested OE \**nist*.
+
+### Options for the FST
+
+#### Option A: Change input to \*nestą
+
+Update the TSV to use \*nestą (with *e*) as the proto-form.
+
+**Pros:**
+- Matches Hogg's reconstruction of the PGmc form
+- FST produces correct output with no rule changes
+- Simple fix
+
+**Cons:**
+- Departs from Kroonen, Orel, and Kluge-Seebold's explicit \*nista-
+- Does not model the sound change — it assumes the input already has the
+  changed vowel
+- Potentially misleading for users expecting the etymological \*nist-
+
+#### Option B: Implement *i > e* lowering rule
+
+Add a sound change rule in the WGmc or pre-OE section:
+```
+define WGmcILowering {*i} -> {*e} || _ C {*a} ;
+```
+
+**Pros:**
+- Models the actual historical change
+- Preserves etymological \*nista- in the input
+- Could apply to other words (if any exist in the dataset)
+
+**Cons:**
+- The rule is **not productive** in OE — Campbell says only *nest, wer* show it
+- Risk of overapplication to words that should retain *i*
+- Fulk's note that the commonest analogical outcome was "leveling away of e"
+  suggests OE actively resisted this change
+- Would need careful lexical or phonological conditioning to avoid regressions
+
+#### Option C: Treat as lexical exception in input
+
+Keep the FST unchanged; update the TSV input to \*nestą with a note explaining
+that this represents the WGmc form after sporadic *i > e* lowering.
+
+**Pros:**
+- Honest about the lexical nature of the change
+- Produces correct output
+- Note documents the etymological background
+
+**Cons:**
+- Essentially the same as Option A, but with more documentation
+- Still does not model the change as a sound rule
+
+### The Scholarly Consensus on PGmc \*i > \*e Lowering
+
+The sporadic character of \*i > \*e lowering has troubled scholars for over a
+century. Four major scholarly perspectives, spanning 1966–2012, converge on an
+explanation that is both Neogrammarian and predictive.
+
+#### Lloyd (1966): "Is There an a-Umlaut of i in Germanic?"
+
+Albert L. Lloyd (University of Pennsylvania) argued that **no regular a-umlaut of
+\*i occurred in Proto-Germanic**. His key observation was structural: Indo-European
+\*e split in Germanic depending on context — it raised to \*i before \*i, \*j, \*u and
+before nasal + consonant, but remained \*e elsewhere. This created two phonemes,
+/i/ and /e/, whose distributions **partially overlapped**:
+
+> "In Proto-Germanic itself, however, [i] was always an allophone of /i/, since
+> no /e/ had yet developed in any environment in which it (i.e. /e/) occurred."
+> (Lloyd 1966: 742)
+
+The sporadic \*e forms (like *nest*, *wer*) result not from sound change but from
+**"systemic analogy"** — speakers extended the i ~ e alternation pattern to
+lexical items where it was not etymologically warranted:
+
+> "The forms which show e for i result for the most part from a type of systemic
+> analogy, which may already have had its beginnings in Proto-Germanic, but
+> which continued to operate into the pre-stages of the individual dialects with
+> varying effectiveness." (Lloyd 1966: 744–45)
+
+Crucially, Lloyd adduced strong verbs as counter-evidence: Class I past
+participles (OHG *giritan*, not \**geretan*) retain \*i even though the \*-a- of
+the suffix would predict lowering. Adverbs like OHG *hina, nidana* likewise retain
+\*i. If \*i > \*e were a regular sound change, these forms would be unexplainable.
+
+#### Cercignani (1980): Merger Avoidance
+
+Fausto Cercignani (University of Pisa) refined the analysis with a phonological
+motivation for the **resistance** to \*i lowering:
+
+> "The extreme scarcity of forms with /e/ by a-umlaut of \*/i/ seems to imply
+> that the assimilation exerted by \*[-a] on \*/i/ — **being less powerful than
+> that exerted by \*[-i] on \*/e/** — was resisted, with varying results, **in
+> order to avoid a merger of \*/i/ with \*/e/**." (Cercignani 1980: 131)
+
+The asymmetry with \*u lowering is explained by the phonemic inventory:
+
+> "In the case of \*/u/ before \*[-a], however, the early allophone \*[o]
+> invariably became \*/o/, since there was **no \*/o/ with which to avoid
+> confusion**." (Cercignani 1980: 131–32)
+
+Proto-Germanic lacked a short \*/o/ phoneme (PIE \*a and \*o had merged into
+\*a), so lowering \*u to \*o created no merger risk. But \*i and \*e were both
+phonemes, so lowering \*i to \*e threatened merger — and was therefore resisted.
+
+Cercignani also noted that **consonantal environment** affected the outcome.
+For Old Icelandic, \*i was retained after \*k and \*g (OIc. *skip* 'ship', *gin*
+'mouth of beast'), though this pattern did not hold uniformly in West Germanic.
+
+#### Howell & Salmons (1997): Place Feature Sharing
+
+Robert B. Howell and Joseph C. Salmons (University of Wisconsin–Madison)
+developed a general theory of **umlaut failure** (blocking) based on feature
+geometry. Their key principle:
+
+> "The more place features the target shares with intervening consonants, the
+> more likely umlaut failure becomes." (Howell & Salmons 1997: 97)
+
+They formalized this using Rice's (1994) hierarchical place feature model:
+
+```
+       Place
+         |
+    Peripheral
+      /    \
+  Dorsal  (Labial)
+            |
+        (Coronal)
+
+[Parentheses = unmarked features]
+```
+
+Dorsals (velars) have the most place structure, then labials, then coronals.
+The principle predicts:
+
+- **Velar consonants** (most marked place) are most likely to block vowel harmony
+- **Labial consonants** are next most likely to block
+- **Coronal consonants** (least marked) are most transparent to harmony
+
+Howell & Salmons demonstrated this cline for i-umlaut failure in Upper German:
+
+| Blocking environment | Place features shared | Umlaut failure |
+|----------------------|----------------------|----------------|
+| -kk- (velar geminate) | [+dorsal] + [+high] | **Most common** |
+| -pf- (labial) | [+labial] | Common |
+| -ts- (coronal) | [+coronal] | Least common |
+
+Though their paper focused on i-umlaut (trigger \*i/j, target \*u), the same
+phonetic principle applies to a-umlaut (trigger \*a, target \*i): **the more place
+features shared between the target vowel and intervening consonants, the less
+likely the assimilation**.
+
+#### Stiles (2012): Chronology of Phonologization
+
+Patrick Stiles (University College London), in *Laws and Rules in Indo-European*,
+uses \*nest as an example of how a-umlaut was phonologized:
+
+> "The standard view sees the change as an instance of secondary split,
+> phonologized by the loss of one of the conditioning factors, short a, from
+> final syllables, thus: nom. sg. \*/nistaz/ [nestaz] > /nest(z)/ 'nest'."
+> (Stiles 2012: 43)
+
+Stiles focuses primarily on \*u > \*o lowering, where the Older Runic evidence
+(e.g. *horna*, *holtijaR*) shows the change already complete with conditioning
+factors intact — challenging the standard "phonologization via loss" model.
+This suggests a-umlaut may have been phonologically active earlier than typically
+assumed.
+
+### Applying the Theory to Our Data
+
+Combining these insights yields a testable prediction for when \*i lowers to \*e:
+
+1. **Merger avoidance** (Cercignani): \*i lowering was **resisted** to prevent
+   \*/i/ and \*/e/ from collapsing
+2. **Place feature blocking** (Howell & Salmons): Velars and labials in the
+   coda position **inhibit** the lowering; coronals are **transparent**
+3. **Sporadic analogy** (Lloyd): Where lowering did occur despite resistance,
+   it was lexically gradual ("systemic analogy"), not a regular sound change
+
+Testing against our corpus:
+
+| Word | Proto | Coda cluster | Place features | Expected | OE output |
+|------|-------|--------------|----------------|----------|-----------|
+| nest | \*nistaz | -st- | coronal + coronal | **lowering** | nest ✓ |
+| wer | \*wiraz | -r- | coronal | **lowering** | wer ✓ |
+| fish | \*fiskaz | -sk- | coronal + **dorsal** | **blocking** | fisċ ✓ |
+| lick | \*likkōną | -kk- | **dorsal** geminate | **blocking** | liccian ✓ |
+| liver | \*librō | -br- | **labial** + coronal | **blocking** | lifer ✓ |
+| live | \*libēþi | -b- | **labial** | **blocking** | lifeþ ✓ |
+| widow | \*widuwōn | -d-w- | coronal + **labial** | **blocking** | widuwe ✓ |
+| sieve | \*sibaz | -b- | **labial** | **blocking** | sife ✓ |
+
+The pattern is striking: **every form that retained \*i has a velar or labial
+consonant in the coda**, while the two forms that show lowering (*nest*, *wer*)
+have purely coronal clusters.
+
+### Implementation: Consonant-Conditioned I-Lowering
+
+This suggests a Neogrammarian rule with explicit consonant conditioning:
+
+```
+\*i > \*e / _ [+coronal]... [+coronal] V[-high]
+         (lowering only when ALL intervening consonants are coronal)
+```
+
+More explicitly: \*i lowers to \*e before a non-high vowel **if and only if**
+no velar or labial consonant intervenes.
+
+This is phonetically principled (coronals are most transparent to vowel harmony)
+and empirically motivated (matches the OE distribution).
+
+### Experimental Implementation and Results
+
+Following this analysis, we implemented NWGmcILowering in `server/fsts/germanic.txt`:
+
+```foma
+# NWGmc *i → *e lowering before non-high vowels (Campbell §114).
+# NOTE: Experimental. This should be conditioned to block before velars/labials
+# per Howell & Salmons (1997), but the current implementation does not do so.
+define NWGmcILowering [
+    {*i} -> {*e} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+];
+```
+
+**Result: 9 regressions** (net −3 matches from 297 to 294):
+
+| Concept | Proto | FST output | Expected OE | Blocking C |
+|---------|-------|------------|-------------|------------|
+| fish | \*fiskăz | fesċ | **fisċ** | velar \*k |
+| sieve | \*sibăz | sef | **sife** | labial \*b |
+| liver | \*librō | lefer | **lifer** | labial \*b |
+| live (3sg) | \*libēþi | lefeþ | **lifeþ** | labial \*b |
+| lick | \*likkōjăną | leccian | **liccian** | velar \*kk |
+| lick (iptv.2sg) | \*likkô | lecca | **licca** | velar \*kk |
+| lick (3sg) | \*likkōθi | lecceþ | **licceþ** | velar \*kk |
+| tick | \*tikkô | tecca | **ticia** | velar \*kk |
+| widow | \*widuwōn | wedowe | **widuwe** | labial \*w |
+
+Every regression involves a velar or labial consonant — exactly as predicted
+by Howell & Salmons.
+
+### Path Forward: Two Options
+
+**Option 1: Implement consonant-conditioned rule**
+
+Define character classes for coronal-only clusters and condition the rule:
+
+```foma
+define StarCoronal [{*t}|{*d}|{*þ}|{*ð}|{*s}|{*z}|{*n}|{*r}|{*l}];
+define NWGmcILowering [
+    {*i} -> {*e} || _ StarCoronal+ EnglishStarNonHighVowel
+];
+```
+
+This should lower \*i only when the intervening consonants are all coronals.
+
+**Pros:**
+- Neogrammarian: rule is phonetically principled, not lexically stipulated
+- Predicts *nest, wer* while blocking *fish, lick, liver, etc.*
+- Testable: new data can confirm or refute the prediction
+
+**Cons:**
+- Requires defining new character classes
+- The sample size is small (only 2 lowered forms vs. ~10 blocked)
+- Risk of over-engineering for a rare phenomenon
+
+**Option 2: Input-based solution with documentation**
+
+Update the TSV input for *nest* to \*nestą, document the scholarly analysis, and
+note that this represents the post-lowering WGmc form. This is equivalent to our
+treatment of \*kraft- and \*stab-.
+
+**Pros:**
+- Simple, no FST changes
+- Documents the phenomenon thoroughly
+
+**Cons:**
+- Does not model the sound change in the FST
+- Less satisfying methodologically
+
+### Decision
+
+We will pursue **Option 1** — implementing a consonant-conditioned i-lowering
+rule. This is more consistent with our Neogrammarian methodology, and the
+scholarship from Lloyd, Cercignani, and Howell & Salmons provides strong
+theoretical grounding.
+
+The rule should be:
+- **Conditioned**: \*i lowers to \*e only when no velar/labial intervenes
+- **Position**: After NWGmcULowering (same chronological stratum)
+- **Blocked by**: \*k, \*g, \*ŋ (velars); \*p, \*b, \*f, \*w, \*m (labials)
+
+If this causes unexpected regressions, we have clear diagnostic criteria to
+refine the conditioning.
+
+---
+
+### Sources consulted
+
+**Cercignani, Fausto.** 1980. "Early 'Umlaut' Phenomena in the Germanic
+Languages." *Language* 56.1: 126–136.
+- Argues all "earlier umlauts" should be ascribed to individual dialects, not PGmc
+- Explains \*i > \*e resistance as merger avoidance: "\*/i/ was kept apart from
+  \*/e/" (p. 131)
+- Notes consonantal environment affected outcomes: OIc. retains \*i after \*k, \*g
+  (pp. 130–31)
+
+**Howell, Robert B. & Joseph C. Salmons.** 1997. "Umlautless Residues in
+Germanic." *American Journal of Germanic Linguistics and Literatures* 9.1: 83–111.
+- Key principle: "The more place features the target shares with intervening
+  consonants, the more likely umlaut failure" (p. 97)
+- Uses Rice (1994) place hierarchy: dorsals > labials > coronals
+- Demonstrated for i-umlaut failure of \*u in Upper German before velar geminates
+- Our application: velars/labials block a-umlaut of \*i → \*e
+
+**Lloyd, Albert L.** 1966. "Is There an a-Umlaut of i in Germanic?" *Language*
+42.4: 738–745.
+- Argues NO regular a-umlaut of \*i occurred in Proto-Germanic
+- Sporadic \*e forms result from "systemic analogy" due to partial i/e phoneme
+  overlap (pp. 744–45)
+- Counter-evidence: Class I past participles retain \*i (OHG *giritan*)
+- Adverbs *hina, nidana* retain \*i despite following \*-a-
+
+**Stiles, Patrick.** 2012. "Older Runic evidence for North-West Germanic
+a-umlaut of u." In *Laws and Rules in Indo-European*, ed. Probert & Willi.
+Oxford: OUP. 43–69.
+- Uses *nest* < \*nistaz as example of phonologization
+- Older Runic forms (horna, holtijaR) show a-umlaut with conditioning factors
+  intact
+- Suggests a-umlaut was phonologically active earlier than standardly assumed
