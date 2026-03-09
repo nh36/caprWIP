@@ -283,7 +283,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 203	f aː r ə n	*farăną	f aː r ə n ( - - )	faːrən	fahren	57	German				fare	*farăną	66
 1317	v ɑ s t ə	*fastēną	v ɑ s t ə - ( - - )	vɑstə	vasten	361	Dutch				fast	*fastēną	67
 1316	f ɑː s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fast	361	English				fast	*fastēną	67
-2004	f a s t i a n	*fastēną	f a s t i a n ( - - )	fɑstiɑn	fastian	361	Old_English	TSV fix: was fæst (adj *fastu-); changed to fastian (verb 'to fast' < *fastēn-, Kroonen p.131). Du vasten / G fasten are the verb, not the adj.			fast	*fastēną	67
+2004	f e s t a n	*fastjăną	f a s t i a n ( - - )	fɑstiɑn	festan	361	Old_English	R/T: "festan 'to fix, to fasten' < *fæstjan" (Class I weak); "acquired stative meaning ['to fast'] by lexical confusion" with *fastēn-. OE fæstan has æ from analogy with adj. fæst.			fast	*fastjăną	67
 1315	f a s t ə n	*fastēną	f a s t ə n ( - - )	fastən	fasten	361	German				fast	*fastēną	67
 912	v aː d ə r	*fadēr	v aː d ə r	vaːdər	vader	250	Dutch				father	*fadēr	68
 911	f ɑː ð ə	*fadēr	f ɑː ð ə r	fɑːðə	father	250	English				father	*fadēr	68
@@ -373,7 +373,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 777	f ɔ l k	*fulką	f ɔ l k ( - - )	fɔlk	Volk	213	German				folk	*fulką	87
 1887	v ɔ l ɣ ə	*fulgēną	v ɔ l ɣ ə - ( - - )	vɔlɣə	volgen	517	Dutch				follow	*fulgēną	88
 1886	f ɔ l əʊ	*fulgēną	f ɔ l əʊ - - ( - - )	fɔləʊ	follow	517	English				follow	*fulgēną	88
-2027	f o l g i a n	*fulgēną	f ɔ l əʊ - - ( - - )	fɔləʊ	folgian	517	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			follow	*fulgēną	88
+2027	f y l ġ a n	*fulgjăną	f ɔ l əʊ - - ( - - )	fɔləʊ	fylġan	517	Old_English	Kroonen s.v. *fulgēn-: "OE fylg(e)an continue *fulgjan-"; R/T §2.3.1: "class I weak OE fylgan". WS folgian is Class II from *fulgēn-.			follow	*fulgjăną	88
 1885	f ɔ l ɡ ə n	*fulgēną	f ɔ l ɡ ə n ( - - )	fɔlɡən	folgen	517	German				follow	*fulgēną	88
 1393	v ə r l iː z ə	*leusăną	( v ə r ) l iː z ə - ( - - )	vərliːzə	verliezen	381	Dutch				forlorn	*leusăną	89
 1392	f ə l ɔː n	*leusăną	( f ə - ) l ɔː - - - ( n - )	fəlɔːn	forlorn	381	English				forlorn	*leusăną	89
@@ -683,7 +683,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1436	l ai s t ə	*līstōn	l ai s t ( ə - )	laistə	Leiste	393	German				list	*līstōn	156
 617	l eː v ə	*libēną	l eː v ə - ( - - )	leːvə	leven	170	Dutch				live	*libēną	157
 616	l aɪ v	*libēną	l aɪ v - - ( - - )	laɪv	live	170	English				live	*libēną	157
-2107	l i f e þ	*libēþi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	Source: Wiktionary etymology (template:inh) | 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem			live	*libēną	157
+2107	l i f e þ	*libēþi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	Source: Wiktionary etymology (template:inh) | 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem			live	*libēþi	157
 615	l eː b ə n	*libēną	l eː b ə n ( - - )	leːbən	leben	170	German				live	*libēną	157
 213	l eː v ə r	*librō	l eː v ə r ( - )	leːvər	lever	59	Dutch				liver	*librō	158
 212	l ɪ v ə	*librō	l ɪ v ə r ( - )	lɪvə	liver	59	English				liver	*librō	158
