@@ -7,9 +7,10 @@
 - [PWGmc *lþ → *ld Voicing and Verner's Law Overlap](#pwgmc-lþ--ld-voicing-and-verners-law-overlap)
 - [PWGmc *j-related Sound Changes](#pwgmc-j-related-sound-changes--reviewed-see-notable_findingsmd-3)
 - [OE duru 'door': Stem-Class Correction](#oe-duru-door-stem-class-correction)
+- [PGmc *i > WGmc *e Lowering](#pgmc-i--wgmc-e-lowering-the-case-of-nest-2026-03-09h)
 
 ### Project status and archived work
-- [Project Status (as of 2026-03-08)](#project-status-as-of-2026-03-08)
+- [Project Status (as of 2026-03-10)](#project-status-as-of-2026-03-10)
 - [Consonant Mismatch Bucket Refinement (2026-02-07)](#consonant-mismatch-bucket-refinement-2026-02-07)
 - [A-Restoration Fix (2026-02-06)](#a-restoration-fix-2026-02-06)
 
@@ -28,7 +29,7 @@
 - [z-loss/rhotacism and bimoraic/trimoraic cross-source analysis](#historical-phonology-of-final--z-loss-and-its-interaction-with-rhotacism)
 
 ### Companion documents
-- `docs/analysis/notable_findings.md` — Cross-referenced scholarly discussion (§§1–5)
+- `docs/analysis/notable_findings.md` — Cross-referenced scholarly discussion (§§1–7)
 - `server/fsts/germanic.txt` — FST source
 - `server/data/germanic-aligned-final.tsv` — Gold standard data
 
@@ -132,7 +133,7 @@ These are chronologically later OE-internal changes, distinct from the NWGmc u-l
 ## OE duru 'door': Stem-Class Correction
 
 **Date:** 2026-03-10
-**Status:** Analysis complete; pending TSV update
+**Status:** Implemented (changed OE target to etymological `dor`)
 
 ### The problem
 
@@ -339,24 +340,27 @@ to *iu before *ō. Different mechanisms, different environments, different outco
 
 ---
 
-## Project Status (as of 2026-03-08)
+## Project Status (as of 2026-03-10)
 
 **Pipeline:** PGmc → OE FST builds clean; 50+ ordered sound-change stages.
-**Coverage:** 103 mismatches / 277 matches out of 380 OE rows (**72.9% match rate**).
-**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (current).
+**Coverage:** 302/386 matches (**78.2%**), 78 mismatches, 6 no-output.
+**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (Mar 8) → 78 (current).
 
 **Reference library:** Ringe & Taylor (vols. 1–2), Hogg (vol. 1), Campbell OEG, Bülbring,
-Luick, Kaluza, Orel, Kroonen, EWA Band I (Lloyd & Springer), plus specialised articles.
-Cross-referenced in `docs/analysis/notable_findings.md` (§§1–5).
+Luick, Kaluza, Orel, Kroonen, EWA Band I (Lloyd & Springer), Cercignani, Howell & Salmons,
+plus specialised articles. Cross-referenced in `docs/analysis/notable_findings.md` (§§1–7).
 
 **Key recent achievements (Feb–Mar 2026):**
 - Bimoraic vs. trimoraic *ō analysis completed and verified against Bülbring, Luick, R/T, Hogg
 - stefn/stemn dossier: pre-OE transponent *stebn- adopted, full scholarly review filed
 - z-loss/rhotacism chronology documented; exceptionlessness concern resolved
 - Campbell OEG OCR'd and integrated; EWA Band I extracted
-- notable_findings.md §§1–4 cross-referenced with Campbell, German-language sources
+- notable_findings.md §§1–7 cross-referenced with Campbell, German-language sources
+- **Onset-velar blocking for i-lowering** implemented (potentially novel finding)
+- **Nasal spirant rounding** fixed (*a → *ō, not *ā)
+- **Stem-class corrections**: god (*gudą), door (dor target vs duru)
 
-**Remaining work:** 103 mismatches (breaking, palatalization, consonant clusters, data alignment).
+**Remaining work:** 78 mismatches (u-lowering exceptions, breaking, palatalization, consonant clusters, data alignment).
 See `docs/analysis/notable_findings.md` for flagged scholarly issues.
 
 ---
@@ -4332,7 +4336,7 @@ refine the conditioning.
 
 ---
 
-### Implementation Results (2025-03-09)
+### Implementation Results (2026-03-09)
 
 We implemented Option 1 with consonant-conditioned i-lowering. The key changes
 to `server/fsts/germanic.txt`:
@@ -4470,7 +4474,7 @@ Oxford: OUP. 43–69.
 
 ---
 
-### Refined analysis: onset velars also block i-lowering (2025-03-09 continued)
+### Refined analysis: onset velars also block i-lowering (2026-03-09 continued)
 
 After discovering that our implementation caused 2 regressions (fright, lid) while
 fixing 2 words (nest, wether), we investigated the consonant environments more
