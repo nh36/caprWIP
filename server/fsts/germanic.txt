@@ -256,7 +256,8 @@ define pgrmCodaComplex [
     w:{*w} w:{*w} j:{*j} |
     x:{*x} t:{*t} j:{*j} |
     x:{*x} t:{*t} z:{*z} |
-    n:{*n} x:{*x} w:{*w} s:{*s} t:{*t}
+    n:{*n} x:{*x} w:{*w} s:{*s} t:{*t} |
+    t:{*t} t:{*t} m:{*m}
 ];
 
 define pgrmCodaNonEmpty [pgrmCodaSimple | pgrmCodaComplex];
@@ -1748,6 +1749,15 @@ define OEDentalAssimilation [
     {*θ} -> 0 || {*t} _
 ];
 
+# R/T §6.8.1: geminate consonants were degeminated next to another consonant.
+# E.g. *buttm- → *botm- (Kroonen: OE botm < *buttma-)
+# RESTRICTED: Only apply before sonorants (m, n, l, r), NOT before *j (which
+# triggers j-gemination and should preserve the geminate).
+define OESonorant [{*m}|{*n}|{*l}|{*r}];
+define OEPreconsonantalDegemination [
+    {*t} -> 0 || {*t} _ OESonorant
+];
+
 # R/T §6.4.2: *w lost after non-initial velars (after palatalization).
 # In *ngw clusters, *g is a stop: *w is lost (*singwan → singan).
 # Post-vocalic *gw: *g (= [ɣ] fricative) was lost, *w survives.
@@ -1867,6 +1877,7 @@ define EnglishProtoToOE (
     .o. OEHeavySyllableNasalApocope
     .o. OEMedialSyncope
     .o. OEDentalAssimilation
+    .o. OEPreconsonantalDegemination
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
     .o. OEPrefixIReduction
