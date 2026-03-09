@@ -247,65 +247,143 @@ Changed COUNTERPART from `duru` to `dor` in TSV row 1992, keeping `*durą`.
 
 ---
 
-## OE botm 'bottom': Paradigmatic Leveling
+## OE botm 'bottom': Paradigmatic Leveling and Kluge's Law
 
 **Date:** 2026-03-10
 **Status:** Implemented (changed proto-form to `*buttmăz`)
 
 ### The problem
 
-The TSV lists `*budmăz → botm`, but our FST produces `bodm` (with voiced *d*). The expected form `botm` shows voiceless *t*.
+The TSV lists `*budmăz → botm`, but our FST produces `bodm` (with voiced *d*). The expected form `botm` shows voiceless *t*. The discrepancy reflects complex PIE morphophonology.
 
-### Etymology (Kroonen p.82)
+### PIE and Proto-Germanic etymology
 
-The PIE etymology involves a complex mn-stem paradigm:
+#### The PIE mn-stem paradigm
 
-- **PIE nominative:** `*bʰudʰ-mḗn` 'bottom, ground'
-- **PIE genitive:** `*bʰudʰ-mn-ós`
+The PIE word for 'bottom, ground' was a **hysterodynamic mn-stem** (Kroonen p.82):
 
-In the genitive, the cluster *-dʰmn-* underwent **dissimilation** at the PIE stage:
-> `*bʰudʰ-mn-ós` → `*bʰutn-ós` (Kroonen: "in the genitive, the *m dissimilated")
+| Case | PIE Form | Meaning |
+|------|----------|---------|
+| Nominative | `*bʰudʰ-mḗn` | 'bottom' |
+| Genitive | `*bʰudʰ-mn-ós` | 'of the bottom' |
 
-This yields a PGmc paradigm with alternating stems:
-- **Nominative:** `*budmṓ` (with *d* from PIE *dʰ*)
-- **Genitive:** `*buttaz` (with *tt* from dissimilated *tn* + Kluge's Law)
+The root is `*bʰudʰ-` 'bottom', cognate with:
+- Sanskrit `budhná-` 'bottom, ground'
+- Greek `πυθμήν` (pythmḗn) 'bottom, depth, root'
+- Latin `fundus` 'bottom' (with Thurneysen's Law: `*-dʰn-` → `*-nd-`)
 
-### The daughter-language split
+Note: Kroonen observes that PIE `*bʰudʰ-` itself may be metathesized from `*dʰeubʰ-`, cf. PGmc `*deupa-` 'deep'.
 
-Kroonen explicitly notes the different stem variants:
+#### Dissimilation in the genitive
+
+In the genitive `*bʰudʰ-mn-ós`, the cluster `*-dʰmn-` contained two nasals (`m` and `n`). This triggered **dissimilation** at the PIE stage (Kroonen: "in the genitive, the *m* dissimilated"):
+
+> `*bʰudʰ-mn-ós` → `*bʰut-n-ós`
+
+This dissimilation is the same process that produced:
+- Sanskrit `budhná-` (with `-dhn-` < PIE `*-dʰn-`)
+- Latin `fundus` (with `-nd-` < PIE `*-dʰn-` via Thurneysen's Law)
+
+#### Kluge's Law and gemination
+
+In Proto-Germanic, the dissimilated genitive stem underwent **Kluge's Law** (Kluge 1884; Kroonen 2006). According to this law, voiced stops were geminated by assimilation of a following `*n` in stressed syllables, then devoiced:
+
+> PIE `*bʰut-n-ós` → Pre-PGmc `*but-n-` → PGmc `*buttaz` (geminated + devoiced)
+
+Kroonen (Introduction, §2.2.5.2):
+> "According to the traditional formulation of this law, voiced *b, *d and *g were geminated to *bb, *dd and *gg by the assimilation of a following *n in a stressed syllable. These geminates were then devoiced to *pp, *tt and *kk together with old Proto-Indo-European *b, *d, *g and *gʷ during stage 2 of Grimm's law."
+
+Kroonen explicitly cites `*budmṓ, *buttaz` 'bottom' as a paradigmatic example of Kluge's Law.
+
+#### The resulting PGmc paradigm
+
+Proto-Germanic thus inherited a paradigm with **consonantal alternation**:
+
+| Case | PGmc Form | Root consonant |
+|------|-----------|----------------|
+| Nominative | `*budmṓ` | voiced `*d` |
+| Genitive | `*buttaz` | voiceless geminate `*tt` |
+
+This alternation between `*d ~ *tt` is a classic example of what Kroonen calls "paradigmatic allomorphy" created by Kluge's Law.
+
+### Daughter-language stem variants
+
+The different WGmc and NGmc languages resolved this paradigmatic alternation by **leveling** — but each language leveled to a different stem:
+
+| Language | Form | Stem | Source |
+|----------|------|------|--------|
+| **Old Saxon** | `bodom` | `*budma-` | nominative stem (with `*d`) |
+| **Old High German** | `bodam` | `*buþma-` (?) | variant with fricative (Orel: `*-þ-`) |
+| **Old English** | `botm` | `*buttma-` | oblique stem (with `*tt`) |
+| **Old Norse** | `botn` | `*buttna-` | oblique stem (with `*n` suffix) |
+
+Kroonen (p.82):
 > "The resulting paradigm **\*budmṓ, \*buttaz** gave rise to multiple stem variants, i.e. OS bodom < \*budma-, OE botm < \*buttma- and ON botn < \*buttna-."
 
-Each daughter language generalized a different stem:
-- **Old Saxon:** `bodom` < `*budma-` (nominative stem with *d*)
-- **Old English:** `botm` < `*buttma-` (oblique stem with *tt*)
-- **Old Norse:** `botn` < `*buttna-` (oblique stem with *n-suffix)
+#### The OE form `*buttma-`
 
-### The lautgesetzlich question
+The OE stem `*buttma-` is a **secondary thematicization**:
+1. The oblique stem `*butt-` (with geminate from Kluge's Law) was extracted
+2. The suffix `*-ma-` (from the nominative's `*-m-`) was attached
+3. This created a new thematic a-stem `*buttma-`
 
-Can we find a PGmc proto-form that yields OE `botm` by purely regular development?
+This is a form of **Ausgleichung** (paradigmatic leveling), specifically:
+- The consonantism (`*tt`) comes from the genitive/oblique
+- The suffix (`*-m-`) comes from the nominative
 
-**The complication:** The OE form `*buttma-` is a **secondary thematicization**:
-- The oblique stem `*butt-` (from dissimilation + Kluge's Law)
-- Combined with `*-ma-` (from the nominative's *-m-*)
-- This is Ausgleichung (paradigmatic leveling), not pure phonological development
+#### Other WGmc evidence
 
-**However:** The `*butt-` element *is* lautgesetzlich — it develops regularly from PIE via dissimilation. What's analogical is only the restoration of `*-m-` from the nominative.
+Orel (`*buðmaz ~ *butmaz`) notes: "Unexplained fluctuations in the intervocalic dental." This reflects the paradigmatic alternation.
+
+R/T vol.2 (p.[section on epenthesis]) mentions: "Here too belongs botm 'bottom, ground, foundation' (OF bodem (*-d-), OS bodom, OHG bodam (*-þ-), ON botn; preform')" — showing the dialect variation in consonant quality.
+
+### Campbell on the phonology
+
+Campbell (OEG §419-420) discusses the cluster `*-pm- > -tm-` in West Saxon:
+
+> "After a short vowel, pl, pm > tl, tm in W-S, e.g. botl building, bytla builder, setl seat, botm bottom, bytme keel."
+
+Campbell groups `botm` with words showing "spirant hardening" (`*p` [β] → `t` before liquids/nasals). However, this is **not** what's happening with `botm`:
+
+- The `t` in `botm` is from the **oblique stem** `*butt-` (via Kluge's Law)
+- The geminate `*tt` then simplified to `t` before `m`
+- This is NOT spirant hardening from `*d` → `t`
+
+Campbell §420 notes that Anglian preserved `*pm` as `*bm`:
+> "In Angl., however, pl, pm remained after short vowels and the spirant became voiced... *bopm (cf. ME bothem)"
+
+This confirms that the `t` in WS `botm` is not from a regular `*d > t` change, but from the different stem variant with original `*tt`.
+
+### What is "lautgesetzlich"?
+
+The question of whether `*buttmăz → botm` is "lautgesetzlich" (regular by sound law) is nuanced:
+
+**Purely lautgesetzlich elements:**
+1. PIE dissimilation: `*bʰudʰ-mn-ós` → `*bʰut-n-ós` ✓
+2. Kluge's Law: `*but-n-` → `*butt-` ✓
+3. Preconsonantal degemination: `*buttm-` → `*butm-` ✓
+4. u-lowering: `*butm-` → `*botm-` ✓
+
+**Analogical element:**
+- The re-attachment of `*-m-` to the oblique stem: `*butt-` + `*-ma-` → `*buttma-`
+
+Thus: The **consonantism** of OE `botm` is entirely lautgesetzlich. Only the **suffix** involves analogical restoration.
 
 ### FST implementation
 
-We treat `*buttmăz` as the "pre-OE" input form, representing the leveled paradigm. The FST then applies:
+We treat `*buttmăz` as the pre-OE input form, representing the post-leveling stage. The FST applies:
 
-1. **OEPreconsonantalDegemination** (R/T §6.8.1): `*tt` → `t` before sonorant
+1. **OEPreconsonantalDegemination**: `*tt` → `t` before sonorant
    > `*buttmăz` → `*butmăz`
-2. **OEULowering**: `*u` → `*o` (in non-labial environment)
+2. **OEULowering**: `*u` → `*o`
    > `*butmăz` → `*botmăz`
 3. **Final vowel loss**: `*-ăz` → ∅
    > `*botmăz` → `botm`
 
-**Required changes:**
+**Required FST changes:**
 - Added `t:{*t} t:{*t} m:{*m}` to `pgrmCodaComplex` to parse geminate cluster
-- Added `OEPreconsonantalDegemination` rule to pipeline (restricted to sonorants only
-  to avoid over-applying to j-geminated forms like `*sattjăną → settan`)
+- Added `OEPreconsonantalDegemination` rule (restricted to sonorants to avoid
+  regressing j-geminated forms like `*sattjăną → settan`)
 
 ```foma
 define OESonorant [{*m}|{*n}|{*l}|{*r}];
@@ -314,15 +392,30 @@ define OEPreconsonantalDegemination [
 ];
 ```
 
-### Scholarly justification
+### TSV approach
 
-This approach follows the principle established for `duru/dor`: when an attested OE form reflects a specific stem variant, we use the proto-form that most directly produces that outcome, while documenting the morphophonological history.
+The cognate set now correctly reflects stem-variant divergence:
 
-The `*buttm-` stem is partly analogical (the *-m-* element), but the `*butt-` component is genuinely inherited via regular PIE dissimilation and Kluge's Law. The OE form preserves this inherited voiceless geminate.
+| Doculect | Protoform | Expected | Notes |
+|----------|-----------|----------|-------|
+| Old_English | `*buttmăz` | `botm` | Oblique stem generalized |
+| Dutch | `*budmăz` | `bodem` | Nominative stem generalized |
+| German | `*budmăz` | `Boden` | Nominative stem (marked BOR) |
+
+This is consistent with our principle for `duru/dor`: use the proto-form that most directly produces the attested outcome for each daughter language.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.82, §2.2.5.2
+- Kluge, F. (1884). On gemination from Kluge's Law
+- Kroonen, G. (2006). Cited by Kroonen (2013) for `*budm-/*butt-` paradigm
+- Campbell, A. (1959). *Old English Grammar*, §§419-420
+- Orel, V. (2003). *Handbook of Germanic Etymology*, s.v. `*buðmaz ~ *butmaz`
+- Ringe, D. & Taylor, A. (2014). *The Development of Old English*, vol.2
 
 ### Implementation (2026-03-10)
 
-Changed PROTOFORM from `*budmăz` to `*buttmăz` in TSV row 1959.
+Changed PROTOFORM from `*budmăz` to `*buttmăz` in TSV row 1959 only.
 
 **Result:** 301 → **302/380 matches (+1)**
 
