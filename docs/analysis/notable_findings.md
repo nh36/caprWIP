@@ -13,6 +13,7 @@ discussion in the eventual write-up of the project.
 4. [A-restoration trigger set: {*æ} is NOT a trigger](#4-a-restoration-trigger-set-æ-is-not-a-trigger)
 5. [The stefn/stemn problem: transponent versus reconstruction](#5-the-stefnstemn-problem-transponent-versus-reconstruction)
 6. [PGmc stem-class disambiguation via OE phonology: \*kraft- and \*stab-](#6-pgmc-stem-class-disambiguation-via-oe-phonology-kraft--and-stab-)
+7. [NWGmc \*i > \*e lowering: consonant-conditioned blocking and rule ordering](#7-nwgmc-i--e-lowering-consonant-conditioned-blocking-and-rule-ordering)
 
 ---
 
@@ -965,3 +966,95 @@ make this explicit, rather than blurring the distinction with a notation like
 
 **Full analysis:** See DEV_NOTES.md, "PGmc stem-class disagreements: \*kraft-
 and \*stab-".
+
+
+---
+
+## 7. NWGmc *i > *e lowering: consonant-conditioned blocking and rule ordering
+
+**Date discovered:** 2025-03-09
+
+**Background:** NWGmc \*i lowered to \*e before non-high vowels in the following
+syllable, parallel to the well-established \*u > \*o lowering (a-umlaut).
+However, the \*i lowering is notoriously sporadic — Campbell (OEG §114) notes
+that "in OE this change is shown **only by** the common Gmc. words *nest* and
+*wer*... and by *spec* bacon beside *spic*." This contrasts sharply with
+u-lowering, which is nearly regular. The sporadic character has led scholars
+to either dismiss i-lowering as "not a real sound change" (Lloyd 1966) or to
+treat it as pre-PGmc (Hogg 1992).
+
+**The problem:** Our FST needed to model \*nistą → OE *nest* (with \*i > \*e),
+while correctly preserving \*i in forms like \*fiskăz → *fisċ*, \*likkōjăną →
+*liccian*, \*librō → *lifer*. An unconditional i-lowering rule caused 9
+regressions.
+
+**What we discovered:**
+
+1. **Consonant conditioning via place features:** Following Howell & Salmons
+   (1997), we conditioned i-lowering to apply only when ALL intervening
+   consonants are coronals. Velars and labials block the change via place
+   feature sharing (dorsals and labials share place features with high back
+   vowels and resist harmony processes). This explains:
+   - \*nest (coronal cluster \*-st-): lowering ✓
+   - \*fisċ (velar \*-sk-): blocking ✓
+   - \*liccian (velar geminate \*-kk-): blocking ✓
+   - \*lifer (labial \*-br-): blocking ✓
+
+2. **Rule ordering matters (potentially novel):** When testing \*widuwōn
+   →widow, we discovered a feeding interaction:
+   - If u-lowering runs first: \*widuwōn → \*widowōn, then i-lowering sees
+     \*i_d_o_ (coronal + non-high) → lowering applies → \**wedowe* (incorrect)
+   - If i-lowering runs first: \*widuwōn, i-lowering sees \*i_d_u_ (coronal +
+     HIGH vowel) → lowering blocked → \*widuwōn → u-lowering → \*widowōn (correct
+     for the first syllable)
+
+   By ordering i-lowering **before** u-lowering, the rule correctly sees the
+   original high \*u which prevents the lowering context from being satisfied.
+
+**What the literature says:**
+
+- **Lloyd (1966):** Argues that "the so-called a-umlaut of i in Proto-Germanic
+  did not exist" and that sporadic \*e forms result from "systemic analogy"
+  due to the partial overlap of /i/ and /e/ phonemes after the IE \*e > Gmc
+  \*i split. Lloyd notes that Class I strong verb past participles (OHG
+  *giritan*) retain \*i, which would be unexplainable if lowering were regular.
+
+- **Cercignani (1980):** Explains the scarcity of i-lowering as "merger
+  avoidance": "the assimilation exerted by \*[-a] on \*/i/—being less powerful
+  than that exerted by \*[-i] on \*/e/—was resisted, with varying results,
+  **in order to avoid a merger of \*/i/ with \*/e/**." Notes that consonantal
+  environment affected outcomes in Old Icelandic (retention after \*k, \*g).
+
+- **Howell & Salmons (1997):** Developed a general theory of umlaut blocking
+  based on place feature sharing: "the more place features the target shares
+  with intervening consonants, the more likely umlaut failure becomes." Their
+  hierarchy: dorsals (most blocking) > labials > coronals (most transparent).
+
+- **Stiles (2012):** Uses \*nest < \*nistaz as an example of a-umlaut
+  phonologization, noting that Older Runic forms show the change with
+  conditioning factors still intact.
+
+**The novel contribution:**
+
+None of the sources we consulted discuss the **ordering** of i-lowering
+relative to u-lowering. Howell & Salmons discuss place feature blocking, and
+Cercignani discusses merger avoidance, but neither addresses the feeding
+interaction we discovered. Our finding suggests:
+
+1. i-lowering and u-lowering are in a **counter-feeding** relationship
+2. i-lowering must apply **before** u-lowering to produce correct outputs
+3. This ordering is required because u-lowering creates new \*o vowels that
+   would otherwise feed i-lowering in unintended environments
+
+If this ordering constraint is not documented in the literature, it represents
+a methodological contribution from the FST implementation.
+
+**Implementation:** The rule is implemented in `server/fsts/germanic.txt` with:
+- `EnglishStarCoronal`: coronals transparent to lowering
+- `EnglishStarVelarOrLabial`: velars and labials that block lowering
+- `NWGmcILowering`: applies only before coronal clusters + non-high vowel
+- Pipeline ordering: `NWGmcILowering` before `NWGmcULowering`
+
+**Full analysis:** See DEV_NOTES.md, "PGmc \*i > WGmc \*e Lowering: The Case
+of nest".
+
