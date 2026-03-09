@@ -37,7 +37,9 @@ define OESandboxAfterFinalWeakSchwaApocope OESandboxAfterARestoration
     .o. OEFinalSchwaApocope;
 define OESandboxAfterJGemination OESandboxAfterFinalWeakSchwaApocope
     .o. PWGmcJGemination;
-define OESandboxAfterSkPalatalization OESandboxAfterJGemination
+define OESandboxAfterBAllophony OESandboxAfterJGemination
+    .o. PGmcBAllophony;
+define OESandboxAfterSkPalatalization OESandboxAfterBAllophony
     .o. OESkPalatalization;
 define OESandboxAfterVelarPalatalization OESandboxAfterSkPalatalization
     .o. OEVelarPalatalization;
@@ -172,6 +174,10 @@ save stack old_english_sandbox_after_final_weak_schwa_apocope.bin
 clear stack
 regex OESandboxAfterJGemination;
 save stack old_english_sandbox_after_j_gemination.bin
+
+clear stack
+regex OESandboxAfterBAllophony;
+save stack old_english_sandbox_after_b_allophony.bin
 
 clear stack
 regex OESandboxAfterSkPalatalization;

@@ -683,7 +683,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1436	l ai s t ə	*līstōn	l ai s t ( ə - )	laistə	Leiste	393	German				list	*līstōn	156
 617	l eː v ə	*libēną	l eː v ə - ( - - )	leːvə	leven	170	Dutch				live	*libēną	157
 616	l aɪ v	*libēną	l aɪ v - - ( - - )	laɪv	live	170	English				live	*libēną	157
-2107	l i f i a n	*libēną	l aɪ v - - ( - - )	laɪv	lifian	170	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			live	*libēną	157
+2107	l i f e þ	*libēþi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	Source: Wiktionary etymology (template:inh) | 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem			live	*libēną	157
 615	l eː b ə n	*libēną	l eː b ə n ( - - )	leːbən	leben	170	German				live	*libēną	157
 213	l eː v ə r	*librō	l eː v ə r ( - )	leːvər	lever	59	Dutch				liver	*librō	158
 212	l ɪ v ə	*librō	l ɪ v ə r ( - )	lɪvə	liver	59	English				liver	*librō	158
@@ -1308,7 +1308,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 635	v aː ɡ ə n	*wagnăz	v aː ɡ ə n ( - - )	vaːɡən	Wagen	175	German				wain	*wagnăz	298
 1041	ʋ aː k ə	*wakēną	ʋ aː k ə - ( - - )	ʋaːkə	waken	285	Dutch				wake	*wakēną	299
 1040	ʋ eɪ k	*wakēną	ʋ eɪ k - - ( - - )	ʋeɪk	wake	285	English				wake	*wakēną	299
-2268	w a c a n	*wakēną	ʋ eɪ k - - ( - - )	ʋeɪk	wacan	285	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wake	*wakēną	299
+2268	w a c a n	*wakaną	ʋ eɪ k - - ( - - )	ʋeɪk	wacan	285	Old_English	OE wacan is the strong verb (Class VI) 'to wake up' < PGmc *wakaną, not the weak Class III *wakēną 'to be awake' (→ OE wacian). The cognate set GLOSSID 299 conflates both; German wachen continues the weak verb. | Source: Wiktionary etymology (template:inh)			wake	*wakaną	299
 1039	v a x ə n	*wakēną	v a x ə n ( - - )	vaxən	wachen	285	German				wake	*wakēną	299
 1769	ʋ ɛ r f	*warpą	ʋ ɛ r f ( - - )	ʋɛrf	werf	484	Dutch				warp	*warpą	300
 1562	ʋ ɛ r p ə	*werpăną	ʋ ɛ r p ə - ( - - )	ʋɛrpə	werpen	428	Dutch				warp	*werpăną	300
