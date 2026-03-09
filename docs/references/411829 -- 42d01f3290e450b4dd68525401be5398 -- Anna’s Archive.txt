@@ -1,0 +1,528 @@
+Linguistic Society of America
+Is There an a-Umlaut of i in Germanic?
+Author(s): Albert L. Lloyd
+Source: Language, Vol. 42, No. 4 (Dec., 1966), pp. 738-745
+Published by: Linguistic Society of America
+Stable URL: http://www.jstor.org/stable/411829
+Accessed: 27-12-2015 15:23 UTC
+
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at http://www.jstor.org/page/
+info/about/policies/terms.jsp
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content
+in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship.
+For more information about JSTOR, please contact support@jstor.org.
+
+Linguistic Society of America is collaborating with JSTOR to digitize, preserve and extend access to Language.
+
+http://www.jstor.org
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+IS THERE AN a-UMLAUT OF i IN GERMANIC?
+ALBERT L. LLOYD
+
+University of Pennsylvania
+In order to clarify the phonemic status of Gmc. i and e, it is necessary to reach
+some conclusion regarding the disputed historical development of IE i in Germanic. The assumption of a regular change of IE i to Gmc. e before a, o, or e is
+refuted especially by the evidence of the i in the past participles of first-class
+strong verbs and in adverbs such as OHG hina, nidana, but a considerable number
+of e-forms in the various Germanic dialects must be explained. It can be shown
+that the partial overlapping in Germanic of the two phonemes /i/ (represented
+in all environments by [i]) and /e/ (with the allophones [i] and [el) led to the
+occasional development of an e-allophone of /i/ by a type of systemic analogy.
+
+Recent structural analyses of the Germanic vowel system have found themselves in disagreement as to the phonemic status of Gmc. i and e.l One major
+stumbling block is the uncertainty regarding the historical development of IE i
+in Germanic. Although this problem was dealt with by almost every prestructural Germanic linguist, about the only agreement reached was that some words
+containing an IE i did indeed appear with e in some Germanic dialects, if the
+next syllable contained on a, o, or &,with no intervening j or nasal plus consonant. Yet it could also not be denied that other words retained the i in the same
+environment. Streitberg (1896:56-7), Osthoff (1888:417-8), Kluge (1913:121-3),
+Hirt (1931:45-6), and Prokosch (1939:109) were among those who considered
+the change of i to e (which has variously been called 'Brechung', 'a-umlaut',
+'a/o-umlaut', 'velar umlaut' etc.) to be either Proto-Germanic or Common
+Germanic, though Prokosch, Hirt and Kluge all characterized it as a limited or
+rare change. Paul (1879:82-5), Kock (1898:544), and Krahe (1948:49-50), among
+others, attributed it to the various individual dialects, Old High German especially; Bremer (1909) denied the existence of any such sound change; while both
+Braune and Mitzka (1953:37) and Wilmanns (1911:250ff.) merely noted the
+existence of the e-forms without attempting to explain them.
+Before the phonemic status of i and e can be clarified, some more definite
+conclusions concerning the time and nature of any change from IE i to Gmc. e
+must be established. Our starting point is the following set of undisputed facts:
+(1) Both e and i appear for IE i in the environment in question in all Germanic
+dialects except, of course, Gothic. (2) The distribution varies from dialect to
+dialect, with Old High German showing the largest number of e-forms, Old
+English probably the smallest number. (3) Seldom do more than two dialects
+agree on the use of e in particular words; OHG, OS, OE wer, ON verr, is the only
+certain exception. (4) On the other hand, a large number of words appear with
+i in several dialects, e.g. OE fisc, OHG, OS fisk, ON fiskr; OE, OS witan, ON
+vita, OHG wizzan; ON hliW6,OE hlid (Eng. lid), OHG (h)lit (neut. a-stem), etc.
+1 See
+especially Marchand 1957and the literature cited there; also Moulton 1961. Antonsen (1961:218)considers i and e one phoneme, but later (1964)goes over to the view of two
+phonemes.-This article is based on a paper presented to the Modern Language Association
+in December, 1965.
+738
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+IS THJERE AN a-UMLAUT OF i IN GERMANIC?
+
+739
+
+(5) A few words show double forms within the same dialect, e.g. OHG skif/skef
+beside ON, OS skip, OE scip; OE spic/spec beside ON spik, OHG spec.
+Since we must expect of any legitimate phonetic change some regularity within
+the same environment, there are only two possible explanations for this chaotic
+situation: either a phonetic change took place (in Proto-Germanic or later) and
+was then obscured by analogy, dialect borrowing, or the like; or no phonetic
+change ever took place and all e-forms are analogical. Since analogy plays a role
+in either solution, it will be necessary to look for the signs of greatest regularity
+and the most probable causes for analogical deviation from this regularity.
+We must first examine some of the principal arguments pro and con which
+have been advanced in the past. One of the strongest arguments against the aumlaut of i used to be the fact that no such change occurred in the past participles of strong verbs of the first ablaut class; even in Old High German, where the
+evidence for a-umlaut is strongest, we find ritan, reit, ritum, giritan. Analogical
+levelling on the model of the preterit plural seemed highly unlikely because of
+the complete lack of such levelling in the second class (liogan, loug, lugum, gilogan), where the situation should have been analogous. Furthermore, as Wilmanns (251) put it, 'Warum sollte gerade hier die gesetzliche Lautentwicklung
+konsequent durch Formiibertragung beseitigt sein, da doch sonst die starken
+Verba die Vokale in gr6sster Mannigfaltigkeit bewahren?' This position seemed
+irrefutable, and Paul (84) although expressing a belief in a-umlaut of i in Old
+High German, could only characterize the contradiction in the strong verbs as
+'besonders auffallend.'
+Streitberg attacked this problem with an argument which seems to have won
+general acceptance today (Streitberg et al. 1936:363-4). He insisted that e must
+have been the original vowel of the past participle because (1) verbs of the first
+ablaut class with zero-grade present could not have passed over to the fifth
+class with its stem-vowel e unless the zero-grade vowel i had become e and thereby
+established a contact between the two classes in the past participle; and (2) there
+exist isolated forms, such as the Old High German adjective wesan 'rotten,
+withered', as compared with ON visenn, both of which come from an original past
+participle of a class I verb. If each point is examined in detail, however, serious
+weaknesses are found in Streitberg's attack.
+First, the transfer of verbs from class I to class V: Streitberg refers specifically
+to OHG swedan 'seethe, burn', as opposed to ON suiba, and ON vega 'fight', as
+opposed to Gothic weihan, to which he could also have added OHG ubarwehan
+and the hapax in OE (Beowulf) gewegan. A few other verbs, notably Go. lisan,
+ON lesa, OE, OS, OHG lesan, and Go. gawidan, OHG wetan (all class V), may also
+be transfers from class I, although no forms in this class exist (Prokosch 165,
+173). The transfer of ON vega to class V has nothing whatsoever to do with the
+vowel of the past participle, but came about, at least in part, because of the
+identity of the preterit singular vd < *vaih and the preterit singular of another
+verb vega 'to move', preterit vd < *vah (Noreen 1923:335, Heusler 1950:91).
+Furthermore, the infinitive also appears as viga in Old Norwegian. The influence
+of the other Germanic verb wegan is also clearly evident in Old High German,
+where the unusual form ubarwehanis a confusion of wzhanand wegan, and possibly
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+740
+
+LANGUAGE,VOLUME42, NUMBER4 (1966)
+
+also a zero-grade present *wigan to further complicate matters. A similar explanation probably also underlies OE gewegan.
+There is, however, another important link between class V and zero-grade
+present verbs of class I, which may have contributed to the transfer of vega and
+its cognates, and which is by itself sufficient to explain verbs such as swedan.
+The present singular of a fifth-class verb *sweban and of a first-class zero-grade
+present verb *swiban would be identical in early North and West Germanic,at least
+in the second and third person,2 and in pre-Old High German (and Old Saxon)
+also in the first person.3 Such transfers are therefore no indication of a change of
+i to e in the past participle.
+Streitberg's second point (the existence of such isolated forms as OHG wesan,
+ON visenn) seems at first glance to be more valid; however, the wording 'such
+isolated forms as' is misleading. I have been unable to discover any other forms
+of this type. Although even one isolated irregular form may at times outweigh an
+entire set of regular forms, this particular example is highly questionable. In the
+first place, the connection of the word with Lat. virus, Gk. wos,is by no means
+certain.4 A connection with the Indo-European root *ues in Go. frawisan 'consume', OHG firwesan 'consume, perish', is not impossible.5 Even if an IndoEuropean root *ueis is posited, on the basis of ON visenn, the situation in Old
+High German is ambiguous. An original Old High German participle *wisan,
+existing only as an adjective with no verb forms to support it and with a meaning
+similar to the wesan in firwesan, would surely be drawn into the orbit of wesan.
+For example, are the Old High German weak verbs wes(a)nan, wesenon, firwesanen derived from (1) wesan (ON visenn) or (2) wesan (in OHG firwesan)?
+The two roots (if indeed there were two) have already become inextricably intertwined in Old High German; by Middle High German times they have completely
+fallen together in the verb verwesen (Grimm 1938, s.v. 2verwesen.)Accordingly,
+the presence of an e in wesan proves absolutely nothing.
+It would seem, therefore, that the lack of any a-umlaut of i in the past participles of class I strong verbs should be re-established as a vitally important piece of
+evidence favoring the conclusion that no such regular sound change did in fact
+occur.
+Loanwords from Latin are generally included among the examples of e for i,
+especially ON klefe 'closet' (Lat. clibanus); OE peru 'pear' (Lat. pirum); OHG
+2 This connection had
+already been suggested by Michels, but appeared only as a footnote (Streitberg et al. 363).
+3 The treatment of e before u in Proto-Germanic (and later in North and West Germanic
+before u from PGmc. 6) is still disputed. Most recently, for example, Marchand (350ff.)assumed a change of e to i before PGmc. u (though not before NWGmc. u), but ignored the
+contrary evidence of the ON u-declension, which leads Beeler (1966)to an opposite conclusion. For the purposes of this paper, I am leaving the question open, since it does not directly affect the matter at hand. The presence of a stem-vowel i in the first person singular
+of the Old High German and Old Saxon verb is in any case not disputed.
+4
+Kluge and Mitzka 1963, s.v. verwesen, are somewhat hesitant about this etymology;
+Boisacq (1950:379)labels such a connection 'douteux'.
+6 Streitberg (95) connects Gothic frawisan, MHG verwesen, OHG wesanen, and ON
+visenn.
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+IS THERE AN a-UMLAUTOF i IN GERMANIC?
+
+741
+
+pescen 'to fish' (Lat. piscare); OE segn, OS, OHG segan 'blessing' (Lat. signum);
+and, with variation between e and i, OHG behhari, OS bikeri 'goblet' (Lat.
+bicarium); OE cest, OHG chista 'chest' (Lat. cista); OHG sinaf, senaf, OE, OS
+senep 'mustard' (Lat. sinapis). One of the most complete lists of these loanwords is given by Bremer (150-1), who can give only five with e and five others
+with e - i, as compared with at least twenty-four certain examples of i. Moreover, loanwords must always be used with great caution; here, for example,
+several or all of the forms with e may have been borrowed from Vulgar Latin, in
+which, by the third century A.D., short i had regularly become e (Grandgent
+1907:84-5). Long before this, an alternation of an open i and an e must have
+been present. These loanwords may represent a development in Vulgar Latin,
+and should not be considered here.
+In the Germanic noun declensions, doublets such as OE spic/spec, OHG skif/
+skef have led Marchand and others to suggest that an original mixture of i and
+e in the declension (i before i-sounds, e elsewhere) was levelled out, now in favor
+of e, now in favor of i:
+Nom. sg.
+Gen. sg.
+Dat. sg.
+Loc. sg.
+
+*skepaz
+*skipeza/iza
+*skep6i
+*skipi6
+
+This explanation raises two serious questions. First, what endings contained isounds? Marchand lists the genitive singular as either -eza or -iza, but the latter
+is highly unlikely (Lloyd 1961). Similarly the locative singular in -Z (IE ei) has
+been suggested as the source of the Old English instrumental in e (older i), but
+seems to appear nowhere else in Germanic. It is therefore rather suspect. Moreover, Marchand omits the other singular forms and the entire plural, where there
+is no trace of an i in the endings. A rare (if existent) locative singular can hardly
+have outweighed all other cases and produced an entire declension in i! Second,
+if such an alternation of e and i within the declension is assumed for Gmc. *skip/
+skep with IE i, why not also for words with original e, which, as is well known,
+did change to i before a following i? Yet there are no examples of *wig for weg,
+*fil for fel, *hilm for helm, etc.
+If analogical levelling is thus doubtful in the case of nouns (and adjectives),
+it seems quite impossible in the case of adverbs such as OHG hina, hinana,
+nidana (compare oba, obana with the expected o for u in the same environment).
+The assumption of a change of i to e before a would leave these common words
+with an inexplicable i.
+The evidence of the past participles of class I strong verbs, adverbs such as
+hina, and the lack of agreement among the dialects (with, however, a preponderance of i-forms) thus indicate the retention of IE i unchanged, at least in
+Proto-Germanic; but a considerable number of e-forms remain to be explained
+in the various dialects.
+Under the circumstances, it may seem surprising that a Proto-Germanic
+6 Marchand349.Nominative*skepazshould of coursebe
+
+*skepam(neuter!)
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+LANGUAGE,VOLUME42, NUMBER4 (1966)
+
+742
+
+change of i to e was ever proposed. The reason may be found partly in the
+assumption of a parallel development of i and u. Actually, however, it is better
+to speak of a parallel between e and u.7 IE e split into Gmc i and e, depending on
+the environment, just as IE u split into Gmc. u and o under similar conditions.
+Even here, of course, the parallel is only phonetic and breaks down as soon as the
+phonemic situation is examined. The Indo-European phonemes /e/ and /u/
+developed two allophones each in Germanic: [i], [e], and [u], [o] respectively.
+Since IE /o/ had fallen together with /a/, no overlap occurred with the [o]
+allophone of /u/. IE /i/, however, remained in Germanic as /i/, thereby resulting in a partial overlap of the two phonemes /i/ and /e/:
+
+/i/
+\
+
+/
+
+[i]
+
+/e/
+[e]
+or, according to the system of Hoenigswald (1960:86ff.):
+e
+
+IE
+/
+/PGmc.
+
+i
+
+e *fella-
+
+e > e
+
+i
+
+e >i,
+(before i, j, u?)
+
+i
+
+i
+
+filljan
+*nista*nistjan
+
+In such a situation, where, as the result of a split (e > e, e > i) and merger
+in one environment (e > i, i > i), two phonemes partially overlap, an occasional
+analogical extension of the merger to the other environment is likely to occur
+(i > e) (Hoenigswald 99ff., and esp. 108):
+e
+
+*fella*nesta
+'\
+
+i
+
+*filljan
+\
+
+(*nista-)
+
+\\
+
+nistjan
+7 Bremer
+
+(1909) also refers to this parallel, but for reasons which are irrelevant here
+prefers to use the allophone o rather than u. The parallel is of course not precise if e remains
+before u (see n. 3).
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+IS THERE AN a-UMLAUT OF i IN GERMANIC?
+
+743
+
+Typical examples from Old High German (analogical forms are in brackets):
+1. Before Gmc. a, o, %
+2. Before Gmc. f, j, (u)
+A. IE e
+fel 'skin'
+fillen 'to skin'
+weg 'way, path'
+dwiggi 'pathless'
+berg 'mountain'
+gibirgi 'mountain range'
+erda 'earth'
+irdisk 'earthly'
+B. IE i
+nisten 'to nest'
+*nist, [nest] 'nest'
+ubarspicki 'fat'
+*spic, [spec] 'bacon, lard'
+(OE spic, spec)
+*quic, [quec]'living'
+irquicken 'to revive'
+skif, [skef] 'ship'
+skifilin 'little ship'
+Analogical changes of this type are not unknown. One may compare, for
+example, the change of final [a] to [or] before a following vowel in certain New
+England dialects, as in the idear is (Wittig 1956:83). Since in these dialects final
+r becomes a before a following consonant (thus falling together with original 9),
+but becomes or before vowels, we have a partial overlap of /0/ and /r/ after
+/a/ in word-final position:
+r
+
+0
+
+r > r
+
+r > 0
+(before initial C)
+
+0 > 0
+
+r
+
+here is [hior Iz]
+
+0
+
+here too [hia tu]
+idea is [aidia Iz]
+idea too [aIdia tu]
+
+resulting in the frequent analogic change 0>r:
+
+r
+
+[hiar Iiz]
+[aIdior iz]
+
+0
+
+K', [hio tu]
+'aidia tu]
+
+Since analogy seldom has any regularity, affecting some forms and ignoring
+others with no apparent reason, we can explain the chaotic situation with respect
+to e and i from original i, as opposed to the great regularity in the distribution
+of e and i from original e (which results from a genuine sound change). The abovementioned transfer of class I strong verbs with zero-grade presents to class V
+can now be seen to be a part of the same analogic development:
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+744
+
+LANGUAGE,VOLUME42, NUMBER4 (1966)
+OHG
+e
+
+geban
+swedan
+x,,
+
+i
+(*swidan)
+
+gibit
+\\
+
+swidit
+When did these analogic changes take place? A precise chronology is impossible; quite possibly they occurred at different times in different words. The
+initial impetus may already have been given in Proto-Germanic before final a
+was lost, but this does not mean that all changes must be attributed to that
+period; indeed, the disagreement of the dialects seems to indicate that most, if
+not all, examples belong to the prehistory of the individual dialects. This assumption would present no great methodological difficulties. In Pre-Old High German, for example, the contrasts suggested above (e.g. fel-*filljan) are still
+significant, even after the loss of the class markers -az, -am, etc., since all Old
+High German nouns and adjectives retain an original stem vowel e unmutated
+unless a class marker i, j, or u follows. The environment descriptions would
+merely be restated as: (1) before &,6, or 0; (2) before f, j, or u. It then becomes
+clear that not only did a following a, o, or & certainly not produce a regular
+phonetic change of i to e, but they even seem to have had little to do with the
+analogic merger, which could produce e in ANY environment other than before
+i, j, or u. It is therefore not necessary to assume any analogical changes of this
+nature in Proto-Germanic; nest, which is frequently cited as an example of
+Proto-Germanic change, actually occurs among the older dialects only in Old
+High German and Old English, in both of which it co-exists with the verb
+nisten (nistan) and can be the result of analogic changes in the prehistory of those
+dialects.8 Wer may go back to Proto-Germanic times, if it is an example of the
+same type of change. I would be inclined rather to attribute the e in this word to
+the influence of the following r.9
+In conclusion, the evidence indicates that the so-called a-umlaut of i in ProtoGermanic did not exist; rather, there were two partially overlapping phonemes
+/i/ and /e/.10 The forms which show e for i result for the most part from a type
+8 The variant spelling nist in Middle
+High German makes it possible that even Old High
+German had both nist and nest.
+9 There is considerableevidence within the various North and West Germanicdialects that
+r and h had a lowering effect on the preceding vowel, somewhat similar to the situation in
+Gothic, but much more limited (Kluge 121-3, Baesecke 1918:29ff.) The exact operation
+of this change needs to be more fully explored. The obvious connection of Gmc. *weraz
+with Lat. vir has also been challenged by Pogatscher (1908:261), but his conclusions are
+not generally accepted.
+10The statement by Prokosch (109) that 'Gmc. i and e were practically one phoneme',
+though somewhat vague, is thus not far from the truth, but the word 'practically' must
+be stressed.
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+IS THIEE AN a-UMLAUTOF i IN GERMANIC?
+
+745
+
+of systemic analogy, which may already have had its beginnings in ProtoGermanic, but which continued to operate into the pre-stages of the individual
+dialects with varying effectiveness.
+REFERENCES
+H. 1961. Germanicumlaut anew. Lg. 37.215-30.
+ELMER
+ANTONSEN,
+-- . 1964. Zum Umlaut im Deutschen.Beitragezur Geschichteder DeutschenSprache
+und Literatur(Tiibingen)86.177-96.
+BAESECKE, GEORG.1918. Einfiihrung in das Althochdeutsche. Miinchen, C. H. Beck.
+BEELER,M. S. 1966.Proto-Germanic
+[i] and [e]:one phonemeor two? Lg. 42.473-4.
+SMILE. 1950. Dictionnaire6tymologiquede la langue grecque.4th edition.
+BoISACQ,
+
+Heidelberg,C. Winter.
+
+MITZKA.1953. Althochdeutsche Grammatik.
+and WALTHER
+BRAUNE,THEODOR
+WILHELM,
+
+8th edition.Tiibingen,M. Niemeyer.
+
+BREMER, 0. 1909.Die germanische'Brechung'.Indogermanische
+Forschungen26.148-73.
+GRANDGENT, C. H. 1907. Introduction to Vulgar Latin. Boston, D. C. Heath.
+
+1938. Deutsches Worterbuch 12.1. Leipzig, S. Hirzel.
+GRIMM,JAKOB and WILHELM.
+1950. Altislandisches Elementarbuch. 4th ed. Heidelberg, C. Winter.
+HEUSLER, ANDREAS.
+1931. Handbuch des Urgermanischen, vol. 1. Heidelberg, C. Winter.
+HIRT, HERMANN.
+
+HOENIGSWALD, HENRY M. 1960.Languagechangeand linguisticreconstruction.
+Chicago,
+
+Universityof ChicagoPress.
+
+1913. Urgermanisch. (Grundriss der germanischen Philologie, ed. by
+KLUGE,FRIEDRICH.
+-
+
+HermannPaul, 3rd ed., vol. 2.) Strassburg,K. J. Triibner.
+
+MITZKA. 1963. Etymologisches Worterbuch der deutschen Sprache.
+, and WALTHER
+
+19th ed. Berlin,W. de Gruyter.
+A. 1898.Der A-Umlautund derWechselderEndvokalea:i(e) in den altnordischen
+KOCK,
+Sprachen.Beitragezur Geschichteder DeutschenSpracheund Literatur23.484-555.
+2nd ed., vol. 1. Berlin, W. de
+KRAHE,HANS.1948. GermanischeSprachwissenschaft.
+Gruyter.
+
+LLOYD, ALBERT L. 1961. IE unstressed short e in Germanic. Modern Language Notes
+
+76.847-51.
+
+JAMESW. 1957. Germanic short *i and *e: two phonemes or one? Lg. 33.346MARCHAND,
+54.
+MOULTON, WILLIAM G. 1961. Zur Geschichte des deutschen Vokalsystems. Beitrage
+
+zur Geschichteder DeutschenSpracheund Literatur(Tiibingen)83.1-35.
+
+NOREEN, ADOLF.1923. Altislandische und altnorwegische Grammatik. 4th ed. Halle,
+
+M. Niemeyer.
+H. 1888. EtymologicaI. Beitragezur Geschichteder DeutschenSpracheund
+OSTHOFF,
+Literatur13.395-463.
+
+PAUL, HERMANN.1879. Zur Geschichte des germanischen Vokalismus. Beitrage zur
+
+Geschichteder DeutschenSpracheund Literatur6.1-256.
+
+A. 1908. Etymologisches und Grammatisches. Anglia 31.257-66.
+POGATSCHER,
+EDUARD.1939. A comparativeGermanicgrammar.Philadelphia,Linguistic
+PROKOSCH,
+Society of America.
+WITTTELM. 1896. Urgermanische Grammatik. Heidelberg, C. Winter.
+STREITBERG,
+, VICTORMICHELS,and MAX HERMANNJELLINEK.1936. Germanisch. (Die Er-
+
+forschungder indogermanischenSprachen,ed. by W. Streitberg,vol. 2.) Berlin,
+W. de Gruyter.
+
+WILMANNS,WILHELM.1911. Deutsche Grammatik. 3rd ed., vol. 1. Strassburg, K. J.
+Triibner.
+WIrIG, KURT. 1956. Untersuchungen fiber das R und die Vokalentwicklung vor R im
+heutigen amerikanischen Englisch. Strena anglica, Otto Ritter zum 80. Geburtstag,
+ed. by Gerhard Dietrich and Fritz Schulze, pp. 68-132. Halle, M. Niemeyer.
+
+This content downloaded from 130.113.111.210 on Sun, 27 Dec 2015 15:23:17 UTC
+All use subject to JSTOR Terms and Conditions
+
+

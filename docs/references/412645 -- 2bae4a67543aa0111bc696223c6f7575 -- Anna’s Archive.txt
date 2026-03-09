@@ -1,0 +1,766 @@
+Linguistic Society of America
+Early 'Umlaut' Phenomena in the Germanic Languages
+Author(s): Fausto Cercignani
+Source: Language, Vol. 56, No. 1 (Mar., 1980), pp. 126-136
+Published by: Linguistic Society of America
+Stable URL: http://www.jstor.org/stable/412645
+Accessed: 01-02-2016 20:04 UTC
+
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at http://www.jstor.org/page/
+info/about/policies/terms.jsp
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content
+in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship.
+For more information about JSTOR, please contact support@jstor.org.
+
+Linguistic Society of America is collaborating with JSTOR to digitize, preserve and extend access to Language.
+
+http://www.jstor.org
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT' PHENOMENA IN THE GERMANIC LANGUAGES
+FAUSTOCERCIGNANI
+
+Universityof Pisa
+Not only the evidenceof Gothic, but also that of North and West Germanic,speaks
+againstthe postulationof Proto-Germanic'umlaut' allophones(?1).Furthermore,since
+even the results of the 'earlier umlaut' phenomena affecting */i e u/ in the various
+dialectspoint to the rise of allophonicvariationsin partlydifferentenvironments,all the
+pre-literaryvowel modificationsproducedby both vocalic and consonantalinfluences
+should be ascribed to the prehistoryof the individual Germanic languages (??2-3).
+The scarcityof forms with /e/ by a-umlaut of */il is explainedthroughthe assumption
+that the assimilation exerted by *[-a] on */i/ was widely resisted in order to avoid a
+mergerof */i/ with */e/ (?2).
+'UMLAUT' ALLOPHONES.Although no vowel
+1. ALLEGED PROTO-GERMANIC
+modifications comparable to those attested in the other Germanic languages can be
+shown to have occurred in Pre-Gothic,1 the suggestion that at least certain early
+'umlauts'2 should be ascribed to some stage of Proto-Germanic is by no means
+new.3 These 'earlier (or Proto-Germanic) umlauts'-as distinct from 'later (or
+idiolingual) umlauts'4-include:
+(1) the change */e/ > */i/ before a high front vowel or semivowel (i-umlaut), as
+well as before a cluster of nasal plus consonant:5 PIE */medhjos/(cf. Lat. medius) >
+PGmc. */me5jaz/ > OIc. mipr, OE midd, OFris. midde, OS middi, OHG mitti
+(Go. midjis) 'mid'; PIE */wentos/ (cf. Lat. ventus) > PGmc. */wen6az/ > OIc.
+vindr, OE OFris. OS wind, OHG wint (Go. winds) 'wind';
+before a low or mid vowel,
+(2) the changes */i/ > */e/, */u/ > *[o] (>*/o/)6
+1 See Cercignani 1979a. But the forms adduced by Wienold 1967 against umlaut in Gothic
+must be rejectedas inconclusive(see Antonsen 1969:68-70, 1972:140).As for a special a-umlaut
+across internalopen juncture,proposedby Bennett 1967to explainthe /e/ of the Gothic reduplicating syllable, it is counter-indicatedby the fact that the same assimilatoryinfluenceinvariably
+failed to operateacross internalclose juncture(see Cercignani1979b).
+2 When enclosed in quotation marks, the term 'umlaut' is here used to cover not only vowel
+assimilationproper,but also those cases of consonantalinfluencewhich are sometimesassociated
+-for the sake of terminologicalconvenienceor otherwise-with cases of genuineumlaut(cf., e.g.,
+fnn. 5 and 11, below).
+3 See, e.g., Streitberg(1896, ?94). For a rejection of Streitberg'sview (?71) that spellings like
+Gotones/Gothonesin Tacitus point to the occurrenceof umlaut phenomenain Pre-Gothic,see
+Bennett (1952:340-41).
+4 See, e.g., Sonderegger(1959:3-5). It would seem that a suitable translationof Ger. einzelsprachlichis 'idiolingual(ly)',which I here propose as a new coinage. Ger. einzeldialektischcan
+similarlybe renderedby 'idiodialectical(ly)',as distinct from 'idiolectal(ly)' (Ger. idiolektisch).
+5 This latter case is obviously caused by consonantalinfluence;but since the result is the same
+as for the i-umlaut of */e/ (and both are traditionallyascribed to Proto-Germanic),the term
+'(earlier) i-umlaut' is sometimes used to cover even this case. Penzl (1975, ?4.5a) writes: 'Die
+Forschung hat diesen Wandel von *e zu *i unter der Einwirkungvon i-Lauten der Folgesilbe
+(Nasalen oder Akzentschwache)als i-Umlaut bezeichnet.'For */e/ > */i/ in unaccentedsyllables,
+cf. fn. 40, below.
+6 The phonemicstage */o/ is obviously assumedonly for North and West Germanic
+(see, e.g.,
+Penzl, ?4.5b). Intermediatestages, e.g. *[e] and *[i], have been postulated also for */e/ > */i/
+(cf. Penzl, ?4.5a) and */i/ > */e/ (cf. Hock 1973, ?10.1). But the view that these changes were
+126
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT' PHENOMENA IN THE GERMANIC LANGUAGES
+
+127
+
+except when a high front semivowel or a cluster of nasal plus consonant intervenes
+(a-umlaut): PIE */wiros/ (cf. Lat. vir) > PGmc. */wiraz/ > OIc. verr. OE OFris.
+OS OHG wer (Go. wair) 'man';7 PIE */krnom/ (cf. Skt. srngam) > PGmc.
+*/hurnan/8 > OIc. OE OFris. OS OHG horn (Go. haurn) 'horn'-but PIE
+*/kuntos/ (cf. Gk. kun-) > PGmc. */hun6az/ > OIc. hundr,OE OFris. OS hund,
+OHG hunt (Go. hunds) 'hound, dog'.
+However, while the a-umlaut of */i/ to */e/ as a PGmc. phenomenon has always
+been contested,9 and another change-that of */e/ to */i/ before high back vowels
+(u-umlaut)--has also been ascribed to Proto-Germanic,10 the view has more
+recently been advanced that since both the 'earlier umlauts' and the 'later umlauts'
+are directly related to the Germanic accent shift, at least the phonetic stages of all
+these vowel modifications, produced by both vocalic and consonantal influences,
+should be ascribed to Proto-Germanic.ll
+But unless one is prepared to multiply hypotheses to the highest degree, this
+attractive theory can hardly be reconciled with the available evidence. More
+specifically, even the testimony of the North and West Germanic languages makes
+it extremely difficult to assume a single allophonic stage traceable to Proto-Germanic, since neither the 'umlaut' results nor the basic tendencies are the same in all
+cases. This is clearly illustrated by the operation of u-umlaut in the individual
+dialects: (1) In Old Saxon and Old High German, *[-u] had a raising influence on
+*/e/-cf.filu < */felu/ (OFris.felo) 'much'. (2) In Old Icelandic, it had a rounding
+influence on */i e a/ among the short vowels-cf. miklu/myklo 'much, by far',
+completed through 'a reassignment of allophones, according to which [e] was attracted into the
+orbit of /il (e.g. */seti-/ = *[seti-] > *siti-/) and [i] into the orbit of /e/ (e.g. */nista-/ =
+*[nista-] > */nesta-/)', as stated by Antonsen (1965:28; cf. 1964:183), is hardly tenable, since the
+further raising and lowering were undoubtedly brought about not so much by the relatively small
+space between [e] and [i] and by the asymmetry of the short/lax subsystem (see Antonsen 1964:183)
+as by the influence of the following umlaut determinants *[-i] and *[-a]. However, the assumption that */i/ developed an allophone *[j] only after the merger of */e/ with */i/ (see Hock, ?10.1)
+is quite unnecessary, since the raised allophone of */e/ may well have been completely fronted
+(*[e]) and the lowered allophone of */i/ somewhat retracted (*[']), with a sufficient 'margin of
+safety' for 'the alleged exchange' (Hock, ?6.4) to have taken place.
+7 Cf. Eng. wer[e]wolf(Ger. Werwolf). Other relevant examples are PIE */nisdos/ (cf. Lat. nidus)
+> PGmc. */nistaz/ > OE OS OHG nest 'nest'-and, perhaps, PIE */imnos/ (cf. Lat. imago) >
+PGmc. */ilnaz/ > Olc. iafn > iamm('a-breaking' of *le!), OE efen > emn, OFris. even, OS eban,
+OHG eban (Go. ibns) 'even'. That *[i] had already acquired phonemic status in (late) Proto-indoEuropean is indicated by the dative singular of the Gmc. i-stems, which should be derived from
+PIE */-eji/ and */-oji/ (cf. Antonsen 1972:138). But the phonemization of PIE *[i u] can hardly
+have occurred, as 1 will argue in a separate article, 'through "system balance" upon the rise of
+*/i/ and */u/' (Antonsen 1972:138).
+8
+For the use of [h] to designate a voiceless velar spirant, on the model of [g] for its voiced
+counterpart, see Cercignani (1979d, ?1).
+9 See, e.g., Paul (1879:82-4), Kock (1898:553-4), and Krahe-Meid (1969, ?36). For Lloyd's
+rejection of the change as such, see ?2 and fnn. 37, 39, below.
+10 See Marchand (1957:350-53). For a rejection of the view that the 'earlier umlauts' turned the
+opposition */i/ + */e/ into a variation */i ~ e/, see Cercignani 1979c.
+" See Antonsen (1961:218-20, 1965:25-8, 1972:140). Note that Antonsen's 'umlaut' determinant *[-u] also covers a following velar consonant (1964:181, fn. 14, 1967a:8).
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+LANGUAGE, VOLUME 56, NUMBER 1 (1980)
+
+128
+
+-[f]rekrl-[f]r0okr 'peace',l2
+
+and mQgr < */maguz/ (Go. magus) 'boy'.13 (3) In Old
+
+English, it had a diphthongizing influence on */i e e/-cf. silofr/siolufr > sioc
+seolfor 'silver',
+
+medu/meodu 'mead',
+
+and
+
+Mercian
+
+hefuc/heafuc
+
+(OE hafoc)
+
+'hawk'. (4) In Old Frisian, it had a diphthongizing influence on */i/-cf. nigun/
+niugun'nine'. One might object that the OS and OHG forms are much older than
+those of, say, Old Icelandic, and that the traditional interpretation of the OE
+digraphs as diphthongs is by no means undisputed.14But the fact remains that none
+of these languages favors the postulation of a backing effect of *[-u]. The assumption that the u-umlaut of */e/ to */i/ in Old Saxon and Old High German resulted
+from the coalescence of a back allophone of PGmc. */e/ with a back allophone of
+PGmc. */i/, which subsequently merged with the primary (front) allophone of
+*/i/ itself,15 has nothing to support it except the necessity of reconciling the claim
+that *[-u] invariably had a backing influence with the circumstance that no such
+influence is in fact attested in Old Saxon and Old High German. Similarly, the
+hypothesis that the OIc. rounding was only a secondary development16 is hardly
+supported by the available evidence.17As for the view that the OE 'short' digraphs
+io eo ea denote monophthongal phonemes reflecting earlier back allophones,18 this
+again necessitates the postulation of secondary changes to obliterate the alleged
+backing effect, sometimes even when *[-u] is still present. For example, PGmc. [a]
+has been said to change to back [a] only to revert to central [a] in Pre-English (OE
+ea, as in featu 'vats'), on the assumption of a 'spontaneous' development of allophones which are supposed to have occurred only 'before back vowels and velar
+consonants'.19 Again, PGmc. [e] has been said to change to back [A](OE eo, as in
+meodu 'mead') only to revert to central [e] = eo ue oe o u in early Middle English,
+and to front [e] = e in later Middle English. The assumption here is that the
+central nature of /e/ is attested 'by its later development in Middle English:
+The/e/ of-[f]re)r is best explained by lowering of */i/ (frikr < */fripuz/) in the second element
+of compound names (cf. Hock, 331). But OFris.fretho, OSfre<u vs. OEfri[o]Pu-, OS fri6u, OHG
+fridu reflect */i/ > */e/ before *[-a] in the genitive singular (*/fripawez/).
+13 Even if 'w-umlaut' is left out of account, the rounding influence of *[-u] on */i e/ is attested
+12
+
+at least after labials (see Heusler 1932, ??67-75 and, for a different presentation, Noreen 1923,
+??77, 82). Cf. also the 'u-breaking' of */e/, as in miQPr(OE me[o]du) 'mead', which is explained
+either as e > ea > ja (breaking, shift of stress) > jQ (u-umlaut), or else as e > eu > eo > jo > jQ
+(breaking; see, e.g., Gordon 1957:274).
+14 For the relevant references, see the discussions in Ney 1969 and Giffhorn 1974 (both in
+favor of the traditional interpretation).
+15 See Antonsen (1964:187), where OHG frithu/fridu 'peace' is erroneously given with original
+*/e/ instead of */i/ (cf. Antonsen 1965:26, but 1961:230).
+16 See Antonsen (1961 :220-24), with a discussion of earlier literature on the subject (and cf.
+Antonsen 1963:203-4, 1967b: 25, fn. 25).
+17 Cf. Benediktsson (1963:420). Haugen (1969:114-5) speaks of 'definitely gratuitous assumptions about Icelandic'.
+18 See Antonsen (1961:224-9, 1967a). His interpretation of these digraphs is based on Hockett's
+(1959:575-6).
+19
+See Antonsen (1967a:9-10, and cf. 1961 :225, 228-9); he further assumes central [a] to have
+become eME [ae] = a (>ME [a] = a). The whole series of changes proposed by Antonsen
+(PGmc. [a] > [a] > PE [o] > eME [1e] > ME [a]) is thus more complicated than would appear
+from Ney's discussion (45). For the development of ME /a/, cf. also Cercignani (1980, ??33, 39).
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT'
+
+PHENOMENA
+
+IN THE GERMANIC
+
+LANGUAGES
+
+129
+
+normally it coalesces with front spread /e/, but when found in environments conducive to rounding, it falls together with back round /o/, e.g. OE /wArpan/ > ME
+/worpan/ 'throw'.'20 But apart from the fact that the East Midland and Southern
+form of this verb has /u/, both wurpenand worpe[n] (which is chiefly Northern)
+reflect changes that originated in Old English-cf. lWS wurpanand lNhb. worpa
+(OE weorpan).21
+2. THE 'EARLIER UMLAUTS' AS IDIOLINGUAL PHENOMENA. While
+
+no 'umlaut'
+
+phenomena can be assumed for Proto-Germanic because of the idiosyncratic
+situation of Gothic,22 both the 'earlier' and 'later' vowel modifications in question
+should be ascribed to the prehistory of the individual languages, rather than to a
+'Northwest Germanic' proto-language of the third order. For, in spite of remarkable similarities in both trends and results, even the allophones produced by the
+'earlier' phenomena may well have developed at differenttimes (and under different
+conditions) in the various North and West Germanic languages. Thus the change
+*/e/ > */i/ in accented syllables occurred before *[-i] and before clusters of nasal
+plus consonant in all the relevant dialects; but in some of them, it also took place
+before *[-u]-cf. OS OHG filu < */felu/ (OFris. felo) 'much'-and before single
+nasals regardless of the following vocalism-cf. OE niman, OFris. nima/nema,
+OS niman/neman,OHG neman, Olc. nema (Go. niman) < */nemanan/ 'take'.23 Of
+course, one may insist that a 'geographically limited' change like */e/ > */i/ before
+*[-u] was 'a late innovation of Continental West Germanic';24 but the truth may
+well be that there was only a single raising process of */e/ to (*[e] >) */i/, in partly
+different environments, in the prehistory of each dialect.25 Similar considerations
+apply, mutatis mutandis, to the change */u/ > *[o] (> */o/) before *[[-a],which was
+prevented by an intervening cluster of nasal plus consonant in all the North and
+West Germanic languages, but also by an intervening single nasal in some dialectscf. OE cuman, OFris. kuma/koma, OS kuman, OHG koman/kuman, OIc. koma
+20
+
+Antonsen (1961:228-9), where central /e/ obviously replaces the traditional front /o/.
+For these forms, see Campbell (1959, ??147, 321); Brunner (1965, ?113); and cf. JordanMatthes (1934, ?66, fn. 3), to which Antonsen refers.
+22
+For a rejection of the highly speculative view that Gothic originally exhibited the same
+'earlier umlauts' as the other Germanic languages, see Cercignani 1979a (and cf. fn. 1, above).
+23
+The forms with /i/ could perhaps be explained as analogical, 'da alle anderen starken Verba
+mit oi im Partizip im Prasensstamm i haben' (Luick 1914-40, ?74, n. 2; cf. Helten 1909:124). But
+the influence of a single nasal is also seen at work in the case of */u/ (see below, and cf. Kufner
+1972:89).
+24
+Hock (329). The fact that OS OHG */e/ > */i/ also occurred before *[-u] representing
+PGmc. */-o/-e.g. in OS gibii, OHG gibu < /gebo/ (OE geofu/giefe) '1 give'-need not imply that
+'the change is relatively late' (Campbell, ?113, fn. 7; cf. Cercignani 1973:106) or that a chronological distinction should be drawn between an older u/-umlaut of */e/ to */i/ and 'the change of
+e>i before secondary ii (<c)' (Benediktsson 1967:191, fn. 30). As to Runic gibu for expected
+gebu, it should be explained as reflecting */e/ > */i/ before *[-i] in the 2nd and 3rd persons
+singular (cf. Krause 1971, ?36.2, and Antonsen 1975:22). The change */-o/ > */-O/, proposed by
+Antonsen 'finally and before a high vowel with or without an intervening *In/' (1972:139),
+cannot of course be regarded as late Proto-Germanic, but at most as 'Northwest Germanic'
+(cf. Antonsen 1969:58, 60, 1975:16).
+25
+Cf. Luick (?74), where it is suggested that e > i before m might be contemporaneous with
+e > i before the other determinants.
+21
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+130
+
+LANGUAGE,
+
+VOLUME 56, NUMBER
+
+1 (1980)
+
+(ONorw. komalkuma) < */kWumanan/'come'; OE punor (OFris. thun/thonresdei
+'Thursday'), OS thunar(MLG dunre/donre),OHG donar, OIc. korr < */punaraz/
+'thunder'.26 Nor is it unlikely that in some dialects the change in question was also
+prevented by a neighboring labial-cf. OE full, OFris. OS ful/fol, OHG fol, OIc.
+fullr (Go. fulls) < */fullaz/ 'full'; OEfugol, OFris. fugel, OS fugal/fogal, OHG
+fogal/fugal, OIc. fugl/fogl (Go. fugls) < */fuglaz/ 'fowl, bird'.27 For while, in
+certain dialects and individual forms, /u/ for 'expected' /o/ may well result from
+paradigmatic leveling, analogical replacement alone cannot adequately account for
+the fact that /u/ for /o/, or the variation between /u/ and /o/, is especially frequent
+(at least in some dialects) in labial contexts.28
+Again, the change */i/ > */e/ before *[-a] appears to have been influenced by the
+consonantal environment;29 and although the original conditions under which the
+lowered and retracted allophone *[X]failed to develop in some dialects are hard to
+recover, those which are usually indicated for North Germanic cannot be assumed
+for West Germanic. In Old Icelandic, PGmc. */i/ was apparently retained after
+*/k/ and */g/;30 but this was by no means true of at least certain types of Old High
+German, the language which shows the largest number of forms with /e/ from */i/31
+-cf. OIc. skip vs. OHG skif/skef (<*/skipan/) 'ship'; OIc. gin (<*/ginan/)
+'mouth (of beast)'32 vs. OHG ginen/genen (giwen/gewon) 'yawn'. Analogical
+replacementmust, of course, be responsible for various forms with /i/ for' expected'
+/e/. Thus the /i/ in the past participle of the first strong class (cf. OHG ritan 'ride',
+reit, ritum, giritan) can be explained as reflecting the combined influence of the
+preterit plural and of the i-timbre of the present.33 To be sure, the /i/ of OHG
+26
+Cf. Luick (?81), where retention of u is preferred to a late reversion of o to u before single
+nasals.
+27
+See, e.g., Bulbring (1902, ?116, fn.); he suggested that u might have been retained in labial
+contexts. Bulbring's alternative explanation that u was first lowered and then raised again (cf.
+Wright & Wright 1925, ??108-9) should of course be rejected. But while the (dialectically analogical) /o/ of words like OE folc, OFris. folk (fulk), OS OHG OIc. folk (< */fulkan/) 'folk, people'
+does not speak against a retention of */u/, the /u/ of words like full can hardly be taken (despite
+Luick, ?78, fn. 3) to reflect a sort of paradigmatic leveling assisted by the consonantal environment.
+28
+See, e.g., Brunner (?58), and cf. Holthausen (1921, ?88, fn. 1:' Hier sind wohl teils dialektische
+Eigentumlichkeiten, teils Einflusse benachbarter Laute, teils Ausgleichungen der Grund des
+Schwankens.')
+29
+Cf. Coetsem (1956, ?22)-where, however, the development in question is regarded as
+Proto-Germanic because of its 'general diffusion' (but cf. fn. 22, above).
+30 See Noreen (?60) and Gutenbrunner (1951, ?26.1.2), to which Coetsem (1956, ?22) refers.
+31 For a list of such forms, see Schatz (1927, ?9) and cf. Braune-Mitzka (1967, ?31, fnn. 1-3).
+32
+The example with */g/ given in Gutenbrunner (?26.1.2) is gil 'ravine'. But this is a neuter
+ja-stem (*/giljan/) and is therefore irrelevant.
+33 Cf. Prokosch (1939, ?41a) and Hock (340-41). No such influence need be assumed, however,
+for the past participle of OIc. vega 'fight', an aorist-present verb with */i/ instead of */l/ (Go.
+we/han, OHG wihan/wigan, OE wigan), which was transferred from the first to the fifth class
+because of formal identity not only of its infinitive and past participle, but also of its preterit singular (va < */waih-/), with the corresponding forms of uega 'weigh': ud (<*/wah/ < */wag-/),
+vQgom, vegenn (cf. Prokosch, ?54c). The ONorw. variant viga 'fight' can have /i/ from retained
+*/i/ before *[-i] in the 2nd and 3rd persons present singular.
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT'
+
+PHENOMENA
+
+IN THE GERMANIC
+
+LANGUAGES
+
+131
+
+nidar[e] (< */nipera-/) beside OIc. nepre (nipre), OE neopor (nikor) 'nether, down
+might perhaps derive from a form */nipiri/ < */niperi/,34 possibly with some
+influence on OHG nidana beside OTc.nekan, OE [be]neokan(nipan)'beneath'. But
+such instances as OHG hina, hinana beside OIc. hepan, OE heonan (hionan, hin-)
+'hence'and OE hider (<*/hi6ran/) beside OIc. hepra (hipra < */hi6ron/) 'hither'
+can hardly be accounted for satisfactorily simply by recourse to the analogy of
+OHG nidar[e]etc.-or, even worse, to that of OHG ubarbeside obar 'over'.35 Nor
+is it likely that Olc.fiskr, OEfisc, OFris. OS OHGfisk (Go.fisks)
+
+< */fiskaz/ 'fish'
+
+owes its /i/ to the fact that an original */fiskiz/ 'was remade into an a-stem only
+after the phonemicization of a-umlauted vowels had been completed'.36 As in
+other cases (e.g. OHG skif beside skef), the explanation may well be partly analogical. But the assumption of'a type of systemic analogy', instead of an a-umlaut
+of */i/,37 is by no means convincing, since it cannot be reconciled with the fact that
+an a-umlaut of */u/ did take place; and the theory would at any rate have to be
+re-interpreted as presupposing an analogical substitution of the alternation
+*/e/ - */i/ for the non-alternation */i/
+*/i/ in the prehistory of the individual
+dialects-cf. OHG fel (<*/fellan/) 'skin' - fillen (<*/fill-/ < */fellijanan/) 'to
+nisten (< */nistijanan/)38 'to nest, live' for
+skin'; OHG nest (<*/nistaz/) 'nest'
+an 'expected' OHG nist - nisten.39The type of analogy which must have applied
+here is paradigmatic leveling, most likely from a genitive singular in */-es/,
+before which the original vowel was retained.40 But the extreme scarcity of forms
+with /e/ by a-umlaut of */i/ seems to imply that the assimilation exerted by *[-a] on
+*/i/-being less powerful than that exerted by *[-i] on */e/-was resisted, with
+varying results, in order to avoid a merger of */i/ with */e/: in some types of North
+and West Germanic, */i/ = [i] was kept apart from */e/, in others it was identified
+with the lower phoneme. In the case of */u/ before *[-a], however, the early allophone *[q] invariably became *[o], since there was no */o/ with which to avoid
+confusion. And when the umlaut determinant *[-a] was lost in certain positions,
+34 Cf. OHG after, OE after beside OIc. eptir 'after'-which
+respectively, from */aftera-/ and */afteri/.
+
+Antonsen (1975:44) derives,
+
+35 See Hock (342), where obar is said to show 'generalization of the alternant found in obana'
+Note that OHG uibar (>MHG tiber) beside OHG obar, OS obar, OFris. over, OE ofer 'over'
+should be derived from */uber/ beside */uteri/ > */ubiri/ > OIc. yfir, OHG ,bir[i] > MHG
+uber; and that OE l/fan beside OIc. ofan, OFris. ova, OS oban[a], OHG obana (<*/uban-/) is
+patterned on [on] bufan (< */buban-/ < */Ie-ujan-/) 'above', which has a labial both before and
+after the /u/.
+36
+Hock (343), where Lat. piscis is adduced as supporting evidence.
+37 See Lloyd 1966. For an earlier rejection of this change, see Bremer 1909.
+38
+In Notker, beside neston (< */nistonan/).
+39 Lloyd (738) claims that 'the partial overlapping in Germanic of the two phonemes /i/
+(represented in all environments by [i]) and /e/ (with the allophones [i] and [e]) led to the
+occasional development of an e-allophone of /i/ by a type of systemic analogy'.
+40 Cf. Antonsen (1972:123). The available material is not entirely conclusive; but in the absence
+of evidence to the contrary, it would seem reasonable to assume that the change of unaccented
+*/e/ to */i/ occurred in all positions in Pre-Gothic, and only in favorable contexts (including
+before final */z/) in the prehistory of the individual North and West Germanic languages (cf.
+Cercignani 1979c).
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+132
+
+LANGUAGE, VOLUME 56, NUMBER 1 (1980)
+
+*[o] was phonemized to */o/, while *[i] was merely subsumed (insofar as it had
+escaped further lowering) under the higher allophone of */i/.
+Thus neither the 'earlier umlauts' nor the 'later umlauts' should be ascribed to
+Proto-Germanic-or, for that matter, to 'Northwest Germanic'. True, the disruption of the autonomy of the IE syllable, as a result of the Germanic shift and
+fixation of the accent on root syllables, was undoubtedly a prerequisite for all
+umlaut phenomena; but this does not necessarily imply that it was also their
+immediate cause.41Indeed, the evidence of those dialects in which umlaut phenomena can actually be shown to have taken place indicates that even their earliest
+phonetic stages should be ascribed to the prehistory of the individual (North and
+West) Germanic languages, and that the similarities in certain trends and results
+should be explained from the development of similar prosodic features in languages
+exhibiting similar paradigmatic and syntagmatic structures. The gradual increase in
+strength of the Germanic stress accent, as attested by the progressive weakening
+and loss of vowels in unaccented syllables, was no doubt a decisive factor in this
+process. However, its effect was not so much a 'coloration transfer' from weakening
+unaccented vowels to accented ones,42 but rather an assimilation of accented
+vowels to the vowel or semivowel of a following syllable before the latter's reduction-or, more precisely, an anticipation, in the articulation of accented
+vowels, of at least one feature of the vowel or semivowel of the following
+syllable. Where such a gradual increase was hindered, or its prosodic effects
+counter-acted, by exceptional external factors, the result was (apart from consonantal influence) a more restricted type of vowel assimilation (e.g. only */e/ > */i/
+before *[-i]),43or no vowel assimilation at all. This explains why the language of the
+Goths, who left Scandinavia for the shores of the Baltic and then migrated quite
+early to the Black Sea steppes, exhibits such an idiosyncratic situation with regard
+to umlaut phenomena.
+3. A PARALLELCASE: NASALIZATION AND COMPENSATORYLENGTHENING.That the
+
+'earlier' vowel modifications produced by consonantal influences should likewise
+be ascribed to the prehistory of the individual Germanic languages, and their
+similarities explained from the development of similar prosodic features in related
+dialects, is shown not only by the changes that have just been discussed, but also
+by those connected with the nasalization and compensatory lengthening of */i a u/.
+As is well known, Proto-Germanic is usually assumed to have had the long nasalized
+vowels *[Ta u] before */h/,44 on the ground that all the Germanic languages show
+loss of */n/ before */h/ with compensatory lengthening (and nasalization) of the
+preceding vowel-cf. Go. peihan, OE kton/peon gekungen, OS thihan githungan, OHG dihan (<*/pinhanan/) 'thrive excellent';45 Go. fahan, OIc. Jfa
+41
+Haugen (1969:107) writes: '[umlaut] is often attributed to the fixing of stress on the tonic
+syllable in Proto-Germanic, but it is dubious usage to speak of it as a CAUSE'.
+42
+See Hbfler (1955:62), where the process is described as 'eine Umfarbung in die Richtung auf
+die Qualitat, die "Farbe" der farbverlierenden Nebentonvokale'.
+43 For a hypothetical postulation of this change in Pre-Gothic, see Cercignani 1979a.
+
+44 See, e.g., Streitberg (?93), where one finds the often repeated observation that, since *[a]
+appears as 6 in Old English, the nasalization itself must have been lost in the individual languages.
+45 Also OIc. I)ettr (< */piht-/), OFris. *thtcht 'tight, thick' (cf. WFris. ticht, with shortening
+before the consonant cluster).
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT'
+
+fangenn, OEfon
+
+PHENOMENA
+
+N fangen, OFris. fa46
+
+IN THE GERMANIC
+-
+
+LANGUAGES
+
+fangen, OS OHGfahan
+
+133
+
+(<*/fanhanan/)
+
+seized'; and Go. puihta pugkeik, OIc. botta (< */Pufht-/) N
+gifangan 'seize
+tykke (<*/kunk-l), OE )7h?te kynck, OFris. thuchte thenszt, OS thihta
+thunkid, OHG dihta (<*/punhton/) - dunkit '[me] thought - [me] thinks'. But
+the loss of */n/ before */h/ can hardly be dissociated from a similar loss of both
+*/n/ and */m/ before other voiceless spirants (*/f s p/) in the so-called Ingvaeonic
+languages (including the partly 'Franconized' OS variety) and, with certain
+restrictions, in Old Icelandic-cf. OE OFris. OS fif vs. OHG fimf/finf, Go. fimf
+(<*/femfe/) 'five'47; OE OFris. gos, MLG gas/gos, OIc. g3s vs. OHG gans, Go.
+(<*/gansuz/) 'goose'; and OE muik,OFris. muith,OS mud vs. OS OHG
+*gansus48
+'
+
+mund, Go. munks (< */munpaz/) 'mouth'. 49
+
+To be sure, the loss of */n/ before */h/ and the loss of */n m/ before other voiceless spirants need not reflect a single phenomenon in all the relevant dialects, as
+indeed certain 'Ingvaeonisms' in the modern Alemannic dialect (fif, gas/gos etc.)
+would seem to indicate.50 But as this may well have been the case in, say, PreEnglish or Pre-Frisian, it would obviously be unsafe to assume that the changes
+connected with the loss of */n/ before */h/ were necessarily earlier than those
+connected with the loss of */n m/ before other voiceless spirants. The nasalization
+and compensatory lengthening of */i a u/ should therefore be ascribed to the
+prehistory of the individual Germanic languages, and the similarities in their
+results explained from the development of similar prosodic features in dialects
+exhibiting similar paradigmatic and syntagmatic structures. Thus neither the allophones *[Ta u]51northe phonemes */Tau/52should be postulated for Proto-Germanic.
+All that we need to do to account satisfactorily for the attested phenomena is to
+assume a slight ('normal') nasalization for all PGmc. vowels in a nasal environment, and an idiolingual, non-uniform increase in the degree of nasalization
+according to language as well as position. Where the increase occurred only before
+[r]-whose oral resonance is much more restricted than that of [n m]53-the result
+46 From
+
+*/fwa/ < */fua/ < */foa/ < */fohan/ (see Steller 1928, ?12, and Krogmann 1970:204).
+47 Also OE fifel, OIc.f/fl < */fimfil-/ < */femfil-/'monster' beside OIc. fimbul-'huge'. OIc.
+
+fim[m]for *fjf'five' is patternedon the ordinalfimte, with loss of the interconsonantal*/f/ (Go.
+fimfta; see Noreen (??291.4, 298.2).
+48
+Implied by Sp. ganso.
+49 OIc. mukris from munnr< */munp-/; and OIc. mel, OSwed. mil (OE mi)l but OHG mindil)
+is from *Iminnl-/ < */minpl-/ < */menpil-/ (see Noreen, ??110.1, 261, 275). Yet the latter is often
+given as a relevant example (cf. Kufner, 89, Moulton 1972:170).
+50 See, e.g., Kufner (93), where the prehistoric 'Ingvaeonic' change is said to have taken place
+'centuries later in much of Alemannic'.
+51
+See Coetsem (1956, ?50, 1970:54), Moulton (1961:13; no opposition between, say, *[ah] and
+*[anh]); and Antonsen (1972:127). Penzl (??4.7, 4.8a) writes That PGmc. *[a Gu]
+before */h/ 'were
+still phonemically */an in un/' (by which he seems to mean */an in un/), and that *[a] < *[a]
+became an allophone of */e/ 'auf die Stellung vor geschwachtem velarem Nasal beschrankt'.
+Reis (1974, ??2.1.2.2, 3) would analyse */a/ (by which she seems to mean *[a]) as */an/, but would
+assign *[i u] to */i u/-with a phoneme */a/ occurring only in unaccented syllables.
+52
+See Moulton (1972:170), where the loss of */n/ is regarded as sufficient to produce three new
+phonemes which occurred only before */h/.
+53 Cf. the not infrequent use of (relatively) oral vowels plus /o/ in, e.g., Ger. Restaurant (Fr. /a/),
+Refrain (Fr. /?/), Parfum (Fr. /a/) etc.
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+134
+
+LANGUAGE, VOLUME 56, NUMBER 1 (1980)
+
+was a loss of */n/ before */h/; where it occurred before [ij n m], the result was a
+loss of */n m/ before any voiceless spirant, provided that the loss itself was not
+prevented by special assimilatory changes, such as */np/ > */nn/ in Old Icelandiccf. OIc. annarr (OS OHG andar, Go. ankar < */anperaz/) vs. OE oper, OFris.
+other, OS adar/oJdar'other'. That nasalization became particularly strong in the
+Ingvaeonic languages and in Old Icelandic is of course confirmed by the OE and
+OFris. treatment of PGmc. */a e/ before nasals-cf. OE OFris. man[n]/mon[n]
+'mans and mona (Go. mena) 'moon'-as well as by the evidence provided by the
+anonymous Icelandic author of the 12th century First grammatical treatise.54
+REFERENCES
+ELMER
+umlaut anew. Lg. 37.215-30.
+H.
+1961.
+Germanic
+ANTONSEN,
+. 1963. The Proto-Norse vowel system and the younger fupark. Scandinavian
+Studies 35.195-207.
+--. 1964. Zum Umlaut im Deutschen. Beitrage zur Geschichte der Deutschen Sprache
+und Literatur (Tuiibingen)86.177-96.
+--. 1965. On defining stages in prehistoric Germanic. Lg. 41.19-36.
+1967a. On the origin of Old English digraph spellings. Studies in Linguistics 19.5--.
+17.
+--. 1967b. 'Proto-Scandinavian' and Common Nordic. Scandinavian Studies 39.1639.
+1969. Old High German and the laws of final syllables. Studies in Linguistics
+--.
+21.55-76.
+--. 1972. The Proto-Germanic syllabics (vowels). In Coetsem & Kufner, 117-40.
+. 1975. A concise grammar of the older Runic inscriptions. (Sprachstrukturen,
+Reihe A, 3.) Tubingen: Niemeyer.
+HREINN. 1963. Some aspects of Nordic umlaut and breaking. Lg.
+BENEDIKTSSON,
+39.409-31.
+. 1967. The Proto-Germanic vowel system. To honor Roman Jakobson, 1.174-96.
+The Hague: Mouton.
+--. 1972. The First grammatical treatise. (University of Iceland publications in
+linguistics, 1.) Reykjavik: Institute of Nordic Linguistics.
+WILLIAM
+H. 1952. The earliest Germanic umlauts and the Gothic migrations.
+BENNETT,
+Lg. 28.339-42.
+1967. Some phonologic effects of Pre-Gothic juncture. Lg. 43.661-5.
+--.
+and WALTHERMITZKA.1967. Althochdeutsche Grammatik. 12th
+BRAUNE,WILHELM,
+ed. Tubingen: Niemeyer.
+0. 1909. Die germanische 'Brechung'. Indogermanische Forschungen 26.148BREMER,
+73.
+BRUNNER,KARL.1965. Altenglische Grammatik, nach der angelsachsischen Grammatik
+von Eduard Sievers. 3rd ed. Tubingen: Niemeyer.
+BULBRING,KARLD. 1902. Altenglisches Elementarbuch, I. Heidelberg: Winter.
+A. 1959. Old English grammar. Oxford: University Press.
+CAMPBELL,
+FAUSTO.1973. Indo-European eu in Germanic. Indogermanische ForCERCIGNANI,
+schungen 78.106-12.
+--. 1979a. Alleged Gothic umlauts. Indogermanische Forschungen 84.
+. 1979b. The reduplicating syllable and internal open juncture in Gothic. Zeitschrift fur Vergleichende Sprachforschung 93.126-32.
+. 1979c. Proto-Germanic */i/ and */e/ revisited. Journal of English and Germanic
+Philology 78.72-82.
+54 See Haugen (1972:38-9) and Benediktsson (1972, ?5.2.2.2a), where further evidence is
+adduced in favor of a Nordic distinctionbetweennasal and oral vowels.
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+EARLY 'UMLAUT' PHENOMENA IN THE GERMANIC LANGUAGES
+
+135
+
+--. 1979d. The consonants of German: Synchrony and diachrony. Milan: CisalpinoLa Goliardica.
+--. 1980. Shakespeare's works and Elizabethan pronunciation. Oxford: University
+Press.
+VAN. 1956. Das System der starken Verba und die Periodisierung im
+COETSEM,FRANS
+alteren Germanischen. (Med. Kon. Ned. Akad. Wetensch., afd. lett., N.R., 19:1.)
+Amsterdam: North-Holland.
+-- . 1970. Zur Entwicklung der germanischen Grundsprache. Kurzer Grundriss der
+germanischen Philologie bis 1500, ed. by Ludwig Erich Schmitt, 1.1-93. Berlin:
+de Gruyter.
+--,
+
+and HERBERTL. KUFNER (eds.) 1972. Toward
+
+a grammar of Proto-Germanic.
+
+Tuiibingen:Niemeyer.
+GIFFHORN, JURGEN. 1974. Phonologische
+
+zu den altenglischen
+
+Untersuchungen
+
+Kurz-
+
+diphthongen. Munich: Fink.
+GORDON, E. V. 1957. An introduction to Old Norse. 2nd ed. Oxford: University Press.
+GUTENBRUNNER,
+
+SIEGFRIED. 1951. Historische
+
+Laut- und Formenlehre
+
+des Altislandi-
+
+schen. Heidelberg: Winter.
+HAUGEN, EINAR. 1969. Phonemic
+
+indeterminacy
+
+and Scandinavian
+
+umlaut.
+
+Folia
+
+Linguistica 3.107-19.
+--. 1972. First grammatical treatise. 2nd ed. London: Longman.
+HELTEN,W. VAN. 1909. Grammatisches. Beitrage zur Geschichte der Deutschen
+Sprache und Literatur 34.101-42.
+HEUSLER, ANDREAS. 1932. Altislandisches
+
+Elementarbuch.
+
+3rd ed. Heidelberg:
+
+Winter.
+
+HOCK,HANSH. 1973. On the phonemic status of Germanic e and i. Issues in linguistics:
+Papers in honor of Henry and Renee Kahane, ed. by Braj B. Kachru et al., 319-51.
+Urbana: University of Illinois Press.
+HOCKETT,CHARLESF. 1959. The stressed syllabics of Old English. Lg. 35.575-97.
+
+HOFLER,OTTO.1955. Stammbaumtheorie, Wellentheorie, Entfaltungstheorie. Beitrage
+zur Geschichte der Deutschen Sprache und Literatur (Tubingen) 77.30-66.
+F. 1921. Altsachsisches Elementarbuch. 2nd ed. Heidelberg: Winter.
+HOLTHAUSEN,
+JORDAN, RICHARD, and
+
+H. CH. MATTHES. 1934.
+
+Handbuch
+
+der mittelenglischen
+
+Grammatik. 2nd ed. Heidelberg: Winter.
+KOCK,A. 1898. Der a-Umlaut und der Wechsel der Endvokale a:i (e) in den altnordischen Sprachen. Beitrage zur Geschichte der Deutschen Sprache und Literatur
+23.484-554.
+KRAHE, HANS, and WOLFGANGMEID. 1969. Germanische
+
+7th ed.,
+
+Sprachwissenschaft.
+
+vol. 1. (Sammlung Goschen, 238.) Berlin: de Gruyter.
+KRAUSE, WOLFGANG.1971. Die Sprache der urnordischen
+
+Runeninschriften.
+
+Heidelberg:
+
+Winter.
+KROGMANN,WILLY. 1970. Altfriesisch.
+
+Kurzer Grundriss der germanischen
+
+Philologie
+
+bis 1500, ed. by Ludwig E. Schmitt, 1.190-210. Berlin: de Gruyter.
+KUFNER, HERBERTL. 1972. The grouping and separation
+
+languages.
+
+of the Germanic
+
+In Coetsem & Kufner, 71-97.
+LLOYD,ALBERTL. 1966. Is there an a-umlaut of i in Germanic? Lg. 42.738-45.
+LUICK, KARL. 1914-40. Historische Grammatik der englischen Sprache. Stuttgart:
+Tauchnitz.
+MARCHAND, JAMES W. 1957. Germanic
+
+short
+
+*i and *e: Two phonemes
+
+or one?
+
+Lg. 33.346-54.
+MOULTON, WILLIAMG. 1961. Zur Geschichte
+
+des deutschen Vokalsystems.
+
+Beitrage zur
+
+Geschichte der Deutschen Sprache und Literatur (Tubingen) 83.1-35.
+. 1972. The Proto-Germanic non-syllabics (consonants). In Coetsem & Kufner,
+141-73.
+NEY, JAMESW. 1969. Old English vowel digraph spellings. Linguistics 45.36-49.
+NOREEN,ADOLF.1923. Altislandische und altnorwegische Grammatik. 4th ed. Halle:
+Niemeyer.
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+136
+
+LANGUAGE, VOLUME 56, NUMBER 1 (1980)
+
+PAUL, HERMANN.1879. Zur Geschichte des germanischen Vokalismus. Beitrage zur
+Geschichte der Deutschen Sprache und Literatur 6.1-261.
+PENZL,HERBERT.1975. Vom Urgermanischen zum Neuhochdeutschen. (Grundlagen
+der Germanistik, 16.) Berlin: Erich Schmidt.
+EDUARD.1939. A comparative Germanic grammar. Philadelphia: LSA.
+PROKOSCH,
+REIS, MARGA. 1974. Phonologie des spatgemeingermanischen Vokalismus, unter
+besonderer Berucksichtigung der Nebensilbenvokale. Probleme der historischen
+Phonologie (Beihefte zur ZDL, 12), 23-68. Wiesbaden: Steiner.
+SCHATZ, JOSEF. 1927. Althochdeutsche Grammatik. Gottingen: Vandenhoeck & Ruprecht.
+STEFAN.1959. Die Umlautfrage in den germanischen Sprachen. Kratylos
+SONDEREGGER,
+4.1-12.
+WALTHER.
+1928. Abriss der altfriesischen Grammatik. Halle: Niemeyer.
+STELLER,
+STREITBERG,WILHELM.1896. Urgermanische Grammatik. Heidelberg: Winter.
+WIENOLD,GOTZ. 1967. On umlaut in Gothic. Orbis 16.185-96.
+M. WRIGHT.1925. Old English grammar. 3rd ed.
+WRIGHT,JOSEPH,and ELIZABETH
+Oxford: University Press.
+[Received 14 February 1979.]
+
+This content downloaded from 130.15.241.167 on Mon, 01 Feb 2016 20:04:14 UTC
+All use subject to JSTOR Terms and Conditions
+
+
