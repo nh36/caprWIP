@@ -1622,7 +1622,7 @@ define OEWsPalatalUmlaut [
 ];
 
 define OENasalSpirantLengthening [
-    {*a} -> {*ā} || _ EnglishStarNasal EnglishStarFricative,
+    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
     {*o} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
