@@ -272,9 +272,11 @@ define pgrmStrongPlain [pgrmStrongPlainLight | pgrmStrongPlainHeavy];
 define pgrmStrongNasal pgrmOnset pgrmNasalVowel;
 
 define pgrmPrefixBi [b:{*b} i:{*i}];
-define pgrmStrongPlainPrefixed [pgrmPrefixBi pgrmStrongPlain];
-define pgrmStrongPlainHeavyPrefixed [pgrmPrefixBi pgrmStrongPlainHeavy];
-define pgrmStrongNasalPrefixed [pgrmPrefixBi pgrmStrongNasal];
+define pgrmPrefixGa [g:{*g} a:{*a}];
+define pgrmPrefix [pgrmPrefixBi | pgrmPrefixGa];
+define pgrmStrongPlainPrefixed [pgrmPrefix pgrmStrongPlain];
+define pgrmStrongPlainHeavyPrefixed [pgrmPrefix pgrmStrongPlainHeavy];
+define pgrmStrongNasalPrefixed [pgrmPrefix pgrmStrongNasal];
 
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
@@ -359,6 +361,7 @@ define pgrmWord [
 define PGmcStarVowel [
     {*a} |
     {*e} |
+    {*ĕ} |
     {*i} |
     {*o} |
     {*u} |
@@ -433,6 +436,7 @@ define PGmcStarConsonant [
 
 define PGmcStarFrontVowel [
     {*e} |
+    {*ĕ} |
     {*i} |
     {*y} |
     {*ȳ} |
@@ -639,6 +643,7 @@ define OldEnglishRemoveStars [
     {*æ} -> æ,
     {*ǣ} -> ǣ,
     {*e} -> e,
+    {*ĕ} -> e,
     {*ē} -> ē,
     {*i} -> i,
     {*ī} -> ī,
@@ -689,7 +694,7 @@ define EnglishStarDiphthong PGmcStarDiphthong;
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ}];
 
 define EnglishStarShortVowel [
-    {*a} | {*e} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
+    {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
 ];
 
 define EnglishStarConsonant PGmcStarConsonant;
@@ -713,6 +718,8 @@ define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 define EnglishStarConsonantNoJ [EnglishStarConsonant - {*j}];
 
 define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
+
+define EnglishStarConsonantNoLabial [EnglishStarConsonant - EnglishStarLabial];
 
 define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
 
@@ -1307,9 +1314,10 @@ define EnglishStarNonHighVowel [
 # EXCEPT when a nasal (*n, *m) follows *u (R/T: "no nasal in the syllable coda,
 # nor *j, intervened"). Also blocked before *j ANYWHERE in the intervening consonants.
 # Northern WGmc (OE/OS) also blocks before intervocalic nasals.
-# Exceptions near labials (*full, *wulf, *fugol) are lexically irregular.
+# R/T vol.2 §2.3.1 p.33, Luick 1914-40 §105-6 mention *u retained near labials in
+# specific lexical items (*full, *wulf, *fugol, *bukkaz), but this is irregular.
 # FIX 2026-03-09: Block if *j appears anywhere between *u and non-high vowel.
-# EnglishStarConsonantNoJ is defined earlier (line ~713).
+# EnglishStarConsonantNoJ defined earlier.
 define NWGmcULowering [
     {*u} -> {*o} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
@@ -1353,21 +1361,48 @@ define OEWeakTailNasalLoss [
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
 # Use [EnglishStarConsonant | EnglishPalatalConsonant] because by this point
 # palatalization has already applied, converting {*g}→{*ʤ}, {*k}→{*ʧ}, etc.
-define OEUnstressedLongVowelShortening [
-    {*ā} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    {*ē} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    {*ī} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
-    {*ǣ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+# Unstressed long vowel shortening. Use composition (.o.) to avoid foma's
+# parallel rule context leakage bug (where contexts from one rule in [,]
+# syntax can affect other rules).
+define OEUnstressedLongVowelShortening1 [
+    {*ā} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+define OEUnstressedLongVowelShortening2 [
+    # Exclude *ē when followed by a/o (part of diphthongs *ēa, *ēo)
+    {*ē} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[? - [a | o]] | .#.]
+];
+define OEUnstressedLongVowelShortening3 [
+    # Exclude *ī when followed by e (part of diphthong *īe)
+    {*ī} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[? - e] | .#.]
+];
+define OEUnstressedLongVowelShortening4 [
+    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+define OEUnstressedLongVowelShortening5 [
+    {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+define OEUnstressedLongVowelShortening6 [
+    {*ǣ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+define OEUnstressedLongVowelShortening7 [
     # Nasalized *ǭ (from fem. n-stem *-ōn): bimoric → *æ → OE -e
     # R/T vol.2 §3.1.4: bimoric *-ō → PWGmc *-a → fronted to *-e.
     # The *-ōn → *-ǭ (nasalized) was bimoric (unlike trimoric masc. *-ô).
-    {*ǭ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ǭ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+define OEUnstressedLongVowelShortening8 [
     # Trimoric *ô (masc. n-stem nom.sg.): trimoric → *a → OE -a
     # R/T vol.2 §3.1.4: trimoric *-ō → PWGmc *-ō → *-a.
     {*ô} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
+define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
+    .o. OEUnstressedLongVowelShortening2
+    .o. OEUnstressedLongVowelShortening3
+    .o. OEUnstressedLongVowelShortening4
+    .o. OEUnstressedLongVowelShortening5
+    .o. OEUnstressedLongVowelShortening6
+    .o. OEUnstressedLongVowelShortening7
+    .o. OEUnstressedLongVowelShortening8;
 
 # Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
 # so it only hits second-syllable unstressed *u, not stressed root *u.
@@ -1377,14 +1412,42 @@ define OEMedUnstressedULowering [
     {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
-define OEWeakTailReduction [
+# R/T vol.2 p.303: "So also bi- > be-, ni 'not' > ne."
+# Unstressed prefix *i > *ĕ. Use *ĕ (e-breve) for reduced prefix vowels to mark them
+# as unstressed and exclude them from subsequent stressed-vowel changes (e.g., palatal
+# diphthongization). The *ĕ will later merge with surface e in orthography.
+# Restrict to *b and *n to avoid overapplication to root-initial CiC-.
+# Further restrict: require the consonant after *i to be followed by a vowel,
+# to distinguish prefix bi- (bi-ginn-) from root bind- (b-ind-).
+define OEPrefixIReduction [
+    {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
+];
+
+# ga- prefix: *ga- → *gĕ- (R/T vol.2 §6.9.2-3: unstressed *a in prefixes → *e)
+# PGmc *ga- is the perfective/collective prefix (cf. Goth. ga-, OHG gi-/ge-, OE ge-).
+# The change *a → *e in unstressed syllables is part of unstressed vowel reduction.
+# Use *ĕ (e-breve) to mark the reduced vowel as unstressed, preventing it from
+# undergoing palatal diphthongization (*e → *ie after palatals in stressed syllables).
+# Restrict to word-initial *g *a followed by consonant + vowel to ensure prefix structure.
+define OEPrefixAReduction [
+    {*a} -> {*ĕ} || .#. {*g} _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
+];
+
+# Split into separate composed rules to avoid foma parallel rule context leakage.
+# When using [R1, R2] syntax, contextual restrictions can affect all rules.
+define OEWeakTailReduction1 [
     {*ă} -> {*a},
-    {*ą} -> {*ɔ̆},
-    {*i} -> {*e} || _ .#.,
-    # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
-    # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
+    {*ą} -> {*ɔ̆}
+];
+define OEWeakTailReduction2 [
+    {*i} -> {*e} || _ .#.
+];
+# R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
+# Restrict to non-initial syllables (after at least one vowel + consonant(s)).
+define OEWeakTailReduction3 [
     {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
+define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
@@ -1706,6 +1769,11 @@ define EnglishProtoToOE (
     .o. OEDiphthongLeveling
     .o. OEEwLongDiphthong
     .o. OEAwLongDiphthong
+    # EARLY PREFIX REDUCTION: Unstressed prefix vowels must reduce to *e BEFORE
+    # AFB applies. Otherwise, ga- would undergo AFB (*a → *æ) and then breaking
+    # (*æ → *ea before l+C), yielding incorrect *gea- instead of *ge-.
+    # This is a chronological requirement: unstressed syllables don't undergo AFB.
+    .o. OEPrefixAReduction
     .o. AngloFrisianBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
@@ -1742,6 +1810,8 @@ define EnglishProtoToOE (
     .o. OEDentalAssimilation
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
+    .o. OEPrefixIReduction
+    .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
@@ -1794,6 +1864,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEDiphthongLeveling
     .o. OEEwLongDiphthong
     .o. OEAwLongDiphthong
+    .o. OEPrefixAReduction
     .o. AngloFrisianBrightening
     .o. OEBreaking
     .o. OEVelarFricativePalatalization
@@ -1817,6 +1888,8 @@ define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHig
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
+    .o. OEPrefixIReduction
+    .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEIntervocalicJVocalization
@@ -2120,6 +2193,7 @@ define GermanRemoveStars [
     {*ą} -> ą,
     {*æ} -> æ,
     {*e} -> e,
+    {*ĕ} -> e,
     {*ē} -> ē,
     {*i} -> i,
     {*ī} -> ī,
