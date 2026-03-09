@@ -1351,10 +1351,17 @@ define NWGmcULowering [
 # - This explains why *nest, *wer show lowering (coronal clusters)
 #   but *fish, *lick, *liver retain *i (velar/labial in coda)
 #
-# The rule: *i → *e before a non-high vowel, BUT ONLY IF all intervening
-# consonants are coronals (not velars, labials, nasals, or *j).
+# ONSET-VELAR BLOCKING (extending Cercignani 1980 to OE):
+# Cercignani notes that in Old Icelandic, *i was retained AFTER *k and *g.
+# Our OE data suggests this also applies to OE: *xlidą → hlid (not *hled).
+# We implement this by requiring no velar ANYWHERE from word-start to *i.
+#
+# The rule: *i → *e before a non-high vowel, BUT ONLY IF:
+# 1. No velar appears anywhere before *i (onset blocking)
+# 2. All intervening consonants after *i are coronals (coda blocking)
+define EnglishStarNonVelar [EnglishStarAlphabet - EnglishStarVelar];
 define NWGmcILowering [
-    {*i} -> {*e} || _ EnglishStarCoronal+ EnglishStarNonHighVowel
+    {*i} -> {*e} || .#. EnglishStarNonVelar* _ EnglishStarCoronal+ EnglishStarNonHighVowel
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
