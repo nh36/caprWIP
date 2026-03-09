@@ -6,6 +6,7 @@
 - [NWGmc u-lowering Exceptions Near Labials](#nwgmc-u-lowering-exceptions-near-labials)
 - [PWGmc *lþ → *ld Voicing and Verner's Law Overlap](#pwgmc-lþ--ld-voicing-and-verners-law-overlap)
 - [PWGmc *j-related Sound Changes](#pwgmc-j-related-sound-changes--reviewed-see-notable_findingsmd-3)
+- [OE duru 'door': Stem-Class Correction](#oe-duru-door-stem-class-correction)
 
 ### Project status and archived work
 - [Project Status (as of 2026-03-08)](#project-status-as-of-2026-03-08)
@@ -125,6 +126,122 @@ These are chronologically later OE-internal changes, distinct from the NWGmc u-l
 - Bülbring, K.D. (1902). *Altenglisches Elementarbuch.* I. Teil: Lautlehre. Heidelberg. §81d (a-Umlaut of *u → *o, p.32), §116 (u statt o near labials, pp.45-46).
 - R/T vol.2 §2.3.1 pp.27-33 (our OCR pp.42-48).
 - Kroonen (2013): *wulfa-* p.598, *bukka(n)-* p.98, *fugla-* (see under *fugla-*).
+
+---
+
+## OE duru 'door': Stem-Class Correction
+
+**Date:** 2026-03-10
+**Status:** Analysis complete; pending TSV update
+
+### The problem
+
+The TSV lists `*durą` → `duru`, but our FST produces `dor`. The expected form `duru` has two syllables with *u* in both, while `*durą` (a-stem neuter) yields `dor` with lowered *o* through regular u-lowering.
+
+### Source analysis
+
+**Kroonen (2013) distinguishes two PGmc reconstructions:**
+
+1. **`*dura-` (a-stem neuter)** — "gate, (single) door"
+   - Go. *daur* n., OE *dor* n., OS *dor, dur* n., OHG *tor* n.
+   - < PIE *dhur-o-
+
+2. **`*duri-` (i-stem feminine)** — "door" (originally plural tantum)
+   - ON *dyrr* f./n.pl., OS *duri* f., OHG *turi* f.pl., G *Tür* f.
+   - < PIE *dʰur-ih₂
+
+Critically, Kroonen adds (p.110): "OE *duru*, OFri. *dore*, OHG *tura* f. 'door', on the other hand, goes back to **\*durō-**, which is formally identical to Gr. θύρα."
+
+**R/T (vol.2, p.385) on OE u-stems:**
+
+> "The u-stems remained a recognizable inflectional class, but its membership was reduced to a few very common and basic words. Still inflected as u-stems in early OE are masc. *sunu* 'son' and *wudu* 'wood' and fem. *hand* 'hand', *nosu* 'nose', and ***duru* 'door'** (the last **originally a root-noun that had shifted into the u-stems**)."
+
+R/T also note (p.28) in discussing u-lowering:
+
+> "A possible counterexample in ON is 'door': PGmc *dur- (Goth. pl. *daúrōns*) > ON pl. *dyrr*, OF *dure*, OE, OS *duru*, OHG *turi*."
+
+R/T explain that in ON the word is plurale tantum with nom. pl. *-iz, "which might account for its retention of *u*."
+
+**Hall (Concise Anglo-Saxon Dictionary):**
+
+> "*duru* (dure) f. gs. *dure*, ds. and nap. *dura*, ... door, gate, wicket."
+
+This confirms OE *duru* is feminine with u-stem inflection (gs. -e, ds. -a).
+
+### Stem-class history
+
+The etymology is complex:
+
+1. **PIE**: Root-noun `*dhur-` (like "hand", "tooth", "goose")
+2. **PGmc**: Multiple stem-types coexisted:
+   - `*dura-` (a-stem neuter) → OE *dor* "gate"
+   - `*duri-` (i-stem fem.pl.) → ON *dyrr*, OHG *turi*
+   - `*durō` (ō-stem feminine) → Kroonen cites this for OE *duru*
+3. **OE**: *duru* inflects as an **u-stem feminine** (R/T vol.2 p.385)
+
+The transition from ō-stem `*durō` to u-stem *duru* involves analogical reshaping. The u-stem paradigm (like *sunu*, *nosu*, *hand*) pulled *duru* into its orbit. The nominative singular *-u* (from `*-uz` or by analogy) yielded the form we see.
+
+### Why u-lowering doesn't apply
+
+This is **not** a phonological exception to u-lowering. The issue is purely about stem-class:
+
+- `*durą` (a-stem) → regular u-lowering → *dor* ✓ (correctly modeled)
+- `*durō` (ō-stem) → would give *doru* (u-lowering applies)
+- `*duruz` (u-stem) → no u-lowering → *duru* ✓
+
+The u-stem nominative singular `*-uz` has a high vowel in the ending, so the root vowel *u is not before a non-high vowel. U-lowering is not triggered.
+
+### FST verification
+
+```
+$ echo "duruz" | flookup -i server/old_english.bin
+duruz   duru
+```
+
+Using u-stem `*duruz` correctly yields `duru` without any rule changes.
+
+### Options for the TSV
+
+**Option A: Change OE target to `dor` (keep etymological proto)**
+
+- Keep PROTO as `*durą` (a-stem neuter)
+- Change COUNTERPART from `duru` to `dor`
+- Rationale: `*durą → dor` is the **lautgesetzlich** development
+- The u-stem `duru` is a later analogical reformation, not the direct reflex of `*durą`
+- Hall confirms: "*dor* n. (nap. *dora*, *dor*) door, gate"
+- FST output: `dor` ✓
+
+**Option B: Change proto-form to `*duruz` (u-stem nom.sg.)**
+
+- Change PROTO from `*durą` to `*duruz`
+- Keep COUNTERPART as `duru`
+- Rationale: Models OE *duru* as u-stem (per R/T p.385)
+- Problem: The u-stem is **not etymological**; it's a secondary analogical development
+- This would prioritize an analogically remodeled form over the regular sound-law outcome
+
+**Option C: Split into two rows**
+
+- Row 1: `*durą` → *dor* (a-stem neuter "gate")
+- Row 2: `*duruz` → *duru* (u-stem feminine "door")
+- Documents both reflexes and their distinct proto-forms
+
+### Recommendation (revised after discussion)
+
+**Option A** is most appropriate:
+
+1. The proto-form `*durą` (a-stem) is etymologically correct (< PIE root-noun `*dhur-`)
+2. The regular sound-law development is `*durą → dor` via u-lowering
+3. The u-stem `duru` is a **later analogical shift** (R/T: "originally a root-noun that had shifted into the u-stems")
+4. We should target the etymologically direct reflex, not the analogically remodeled form
+5. OE `dor` is well-attested (Hall: "*dor* n. door, gate")
+
+**Principle:** When both etymological and analogical reflexes are attested, prefer the etymological one for testing sound laws.
+
+### Implementation (2026-03-10)
+
+Changed COUNTERPART from `duru` to `dor` in TSV row 1992, keeping `*durą`.
+
+**Result:** 301 → **302/386 matches (+1)**
 
 ---
 
