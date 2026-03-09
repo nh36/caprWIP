@@ -1753,6 +1753,22 @@ define OEContraction [
     {*ū} {*e} -> {*ū}
 ];
 
+# R-metathesis: Campbell §459, R/T §6.8.2 (p.341)
+# OE metathesized r from before to after a short vowel when followed by s+C cluster.
+# Pattern: CrVsC → CVrsC (where V is a short vowel)
+# Examples: *brestăną → berstan, *frustą → forst
+# Campbell §459(2): "Metathesis is much less frequent when d followed the vowel"
+# So we restrict to s+t cluster (most productive environment), NOT nd, ng, etc.
+# This is variable historically but modeled here for regular cases.
+# Timing: after breaking (WS) per R/T p.341.
+define OERMetathesis [
+    {*r} {*e} -> {*e} {*r} || _ {*s} {*t},
+    {*r} {*u} -> {*u} {*r} || _ {*s} {*t},
+    {*r} {*i} -> {*i} {*r} || _ {*s} {*t},
+    {*r} {*o} -> {*o} {*r} || _ {*s} {*t},
+    {*r} {*a} -> {*a} {*r} || _ {*s} {*t}
+];
+
 # Proto-Germanic → Old English pipeline.
 # Stages: PGmc → PWGmc → NWGmc → Anglo-Frisian → OE
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
@@ -1819,6 +1835,7 @@ define EnglishProtoToOE (
     .o. OEWeightCleanup
     .o. OEHLoss
     .o. OEContraction
+    .o. OERMetathesis
 );
 
 define EnglishProtoInput pgrmWord;
