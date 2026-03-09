@@ -364,10 +364,34 @@ The question of whether `*buttmăz → botm` is "lautgesetzlich" (regular by sou
 3. Preconsonantal degemination: `*buttm-` → `*butm-` ✓
 4. u-lowering: `*butm-` → `*botm-` ✓
 
-**Analogical element:**
-- The re-attachment of `*-m-` to the oblique stem: `*butt-` + `*-ma-` → `*buttma-`
+**The problematic element: How did `-m-` get into `*buttma-`?**
 
-Thus: The **consonantism** of OE `botm` is entirely lautgesetzlich. Only the **suffix** involves analogical restoration.
+The PGmc genitive was `*buttaz` — with **no `-m-`** (the `-m-` was lost in PIE dissimilation). So where does the `-m-` in `*buttma-` come from?
+
+Kroonen (p.82) simply asserts that `*buttma-` is the OE stem variant without explaining its derivation. He writes: "The resulting paradigm `*budmṓ, *buttaz` gave rise to multiple stem variants, i.e. OS bodom < `*budma-`, OE botm < `*buttma-` and ON botn < `*buttna-`."
+
+Compare the three stem variants:
+- `*budma-`: nominative root `*budm-` + thematic `-a-` (straightforward)
+- `*buttna-`: oblique root `*butt-` + oblique suffix `-na-` (< genitive `-n-`) (straightforward)
+- `*buttma-`: oblique root `*butt-` + **nominative** suffix `-ma-` (????)
+
+The ON form `*buttna-` simply thematizes the oblique stem with `-na-` (preserving the genitive `-n-`). This is morphologically transparent.
+
+But the OE form `*buttma-` appears to **blend** features from different paradigm cells:
+- Root consonantism (`*butt-`) from the **oblique/genitive**
+- Suffix (`*-ma-`) from the **nominative**
+
+**Possible explanations:**
+
+1. **Suffix contamination:** Speakers knew both `*budmō` (nom.) and `*buttaz` (gen.) and created a hybrid by combining the oblique root with the nominative suffix. This is morphological "contamination" or "blending."
+
+2. **Independent thematization:** The root `*butt-` was extracted and thematized with a productive `*-ma-` suffix (not borrowed from the old nominative, but formed anew). This would be derivational rather than inflectional.
+
+3. **Something else:** Kroonen cites "Kroonen 2006" for this paradigm, which may contain a fuller explanation not available to us.
+
+**Honest assessment:** The derivation of `*buttma-` is **not fully explained** in our sources. Kroonen asserts it but does not derive it. The `-m-` restoration remains an open question.
+
+For our FST purposes, we use `*buttmăz` as the input because it produces the correct OE output, but we should acknowledge that the morphological history leading to `*buttma-` is not entirely clear.
 
 ### FST implementation
 
