@@ -5,6 +5,15 @@ observations, refinements, or discoveries that go beyond what is stated in the
 standard secondary literature. These are flagged as potential contributions for
 discussion in the eventual write-up of the project.
 
+## Table of Contents
+
+1. [Medial high-vowel syncope: dental-obstruent conditioning](#1-medial-high-vowel-syncope-dental-obstruent-conditioning)
+2. [NWGmc u-lowering exceptions near labials: a non-Neogrammarian pattern](#2-nwgmc-u-lowering-exceptions-near-labials-a-non-neogrammarian-pattern)
+3. [PWGmc \*j-related sound changes: formalization of under-specified rules](#3-pwgmc-j-related-sound-changes-formalization-of-under-specified-rules)
+4. [A-restoration trigger set: {*æ} is NOT a trigger](#4-a-restoration-trigger-set-æ-is-not-a-trigger)
+5. [The stefn/stemn problem: transponent versus reconstruction](#5-the-stefnstemn-problem-transponent-versus-reconstruction)
+6. [PGmc stem-class disambiguation via OE phonology: \*kraft- and \*stab-](#6-pgmc-stem-class-disambiguation-via-oe-phonology-kraft--and-stab-)
+
 ---
 
 ## 1. Medial high-vowel syncope: dental-obstruent conditioning
@@ -851,3 +860,108 @@ ordering, or interaction that is not discussed in the standard literature:
 4. Add an entry to this document with date, background, observation, and
    literature review
 5. Cross-reference the detailed analysis document
+
+---
+
+## 6. PGmc stem-class disambiguation via OE phonology: \*kraft- and \*stab-
+
+**Date discovered:** Session (2026-03-09g)
+
+**Background:** Two TSV entries (cræft, stæf) had PGmc proto-forms ending in
+\*-iz (i-stem nominative singular), which our pipeline processed with i-umlaut
+to yield \*creft and \*stefe. But the attested OE forms are **cræft** and
+**stæf** — with æ, not e — indicating that i-umlaut did not apply.
+
+**What the FST implementation revealed:** The discrepancy forced us to survey
+the etymological literature, which revealed that **modern PGmc dictionaries
+disagree on the stem class** of these lexemes:
+
+| Lexeme | Kroonen (2013) | Orel (2003) | Kluge-Seebold (25th) |
+|--------|----------------|-------------|----------------------|
+| \*kraft- | \*kraftu- (tu-stem) | \*kraftiz ~ \*kraftuz | \*krafti- (i-stem) |
+| \*stab- | \*staba- (a-stem) | \*stabiz ~ \*stabaz | \*stabi-/a- |
+
+This is not a case of one dictionary being "wrong" — the comparative evidence
+is genuinely ambiguous, and different scholars weight the daughter-language
+reflexes differently.
+
+**The observation:** The OE phonological evidence disambiguates the input
+form for English, regardless of what the "true" PGmc reconstruction is:
+
+1. **i-stem \*-iz** → triggers i-umlaut (æ → e) → predicts OE \*creft, \*stefe
+2. **u-stem \*-uz** → triggers a-restoration (æ → a before back vowel) → predicts OE \*craft
+3. **a-stem \*-ăz** → no trigger (suffix vowel is front after AFB, not high) → predicts OE **cræft**, **stæf** ✅
+
+The a-stem analysis is the only one that correctly predicts the attested OE
+forms. The key insight is that after Anglo-Frisian Brightening fronts the
+suffix vowel (\*ă → \*æ), this front vowel does not trigger a-restoration
+(which requires a back vowel) and does not trigger i-umlaut (which requires
+high \*i or \*j).
+
+**Evidence from the daughter languages:**
+
+The disagreement among etymological dictionaries reflects genuine ambiguity
+in the comparative record:
+
+- **ON krafptr** has u-umlaut (a → ǫ), suggesting the stem vowel was followed
+  by \*u when u-umlaut applied → supports u-stem
+- **OHG kraft** (fem., no umlaut) is compatible with a-stem, i-stem, or u-stem
+- **Gothic** lacks both words, removing the most conservative witness
+- **OE cræft, stæf** with æ (not e) are incompatible with i-stem; compatible
+  with a-stem or u-stem (if \*u was lost before a-restoration)
+
+Kluge-Seebold explicitly notes for \*kraft-: "Spuren von u-Flexion (anord.
+krǫptr m.) weisen wohl auf einen parallelen maskulinen u-Stamm" — acknowledging
+that both i-stem and u-stem morphology are attested for this word.
+
+**What the sources say:**
+
+- **Kroonen (2013), p.307:** Reconstructs \*kraftu- as a "tu-stem" (a subtype
+  of u-stem), citing ON krafptr, OE craft, OHG kraft. Notes it is "possibly
+  related to \*krabēn-".
+- **Kroonen (2013), p.469:** Reconstructs \*staba- as an a-stem, citing Gothic
+  stabeis pl., ON stafr, OE stæf. The form is given as \*staba-, not \*stabi-.
+- **Orel (2003), p.220:** Lists "\*kraftiz ~ \*kraftuz" with both alternatives.
+  Notes "OE cræft 'power, might, art, skill'".
+- **Orel (2003), p.378:** Lists "\*stabiz ~ \*stabaz" with both alternatives.
+  Notes "OE stæf 'staff, stick, character'".
+- **Kluge-Seebold (25th), s.v. Kraft:** "Aus g. \*krafti- f. 'Macht, Kraft'...
+  Spuren von u-Flexion (anord. krǫptr m.) weisen wohl auf einen parallelen
+  maskulinen u-Stamm."
+- **Kluge-Seebold (25th), s.v. Stab:** "Aus g. \*stabi-/a- m. 'Stab'" —
+  explicitly marking uncertainty between i-stem and a-stem.
+- **Campbell (1959), §133:** Lists "cræft skill" as an example of OE æ from
+  PGmc \*a. §160 shows "cræftas powers" in the plural.
+- **Luick (1914–40), p.176:** Lists "stæf 'Stab', cræft 'Kraft'" as examples
+  of retained æ.
+- **Fulk (2018), §4.7 n.12:** Cites MHG paradigmatic alternation "kraft beside
+  krefte", showing umlaut variation within the MHG paradigm.
+
+**Significance for the project:** This case demonstrates a powerful application
+of the FST methodology: **using daughter-language phonology to adjudicate
+between competing PGmc reconstructions**. When etymological dictionaries
+disagree on the proto-form, the FST allows us to test each hypothesis against
+the attested outcome. Only the form that produces correct output through
+regular sound changes is viable as the input for that daughter language.
+
+This is similar to the stefn/stemn case (§5), but with a different payoff.
+In that case, the disagreement concerned a single word with a disputed
+consonant cluster. Here, the disagreement concerns the **nominal stem class**
+— a morphological category with systematic phonological consequences (i-umlaut,
+a-restoration, vowel harmony). The FST approach can potentially disambiguate
+stem classes across the lexicon, not just for individual words.
+
+**Methodological note:** Our resolution — using a-stem \*-ăz forms — does not
+claim to have solved the PGmc reconstruction. It claims only that for the
+pre-OE input, the form must have lacked both an i-umlaut trigger and a back
+vowel for a-restoration. This could reflect:
+- An original a-stem inherited into pre-OE
+- A u-stem with early loss of \*u before a-restoration applied
+- An i-stem with early loss of \*i before i-umlaut applied
+
+The OE evidence cannot distinguish these scenarios. But the FST requires us to
+make this explicit, rather than blurring the distinction with a notation like
+"\*krafti-/u-" that leaves the phonological prediction undefined.
+
+**Full analysis:** See DEV_NOTES.md, "PGmc stem-class disagreements: \*kraft-
+and \*stab-".

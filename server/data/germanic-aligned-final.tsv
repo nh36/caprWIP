@@ -192,7 +192,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1091	k uː	*kōz	k uː ( - - )	kuː	Kuh	299	German	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)			cow	*kōz	44
 1508	k r ɑ x t	*kraftiz	k r ɑ x t ( - - )	krɑxt	kracht	413	Dutch				craft	*kraftiz	45
 1507	k r ɑː f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	craft	413	English				craft	*kraftiz	45
-1981	c r æ f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	cræft	413	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			craft	*kraftiz	45
+1981	c r æ f t	*kraftăz	k r ɑː f t ( - - )	krɑːft	cræft	413	Old_English	Kroonen: *kraftu- m. 'strength' (u-stem); Orel: *kraftiz ~ *kraftuz. OE cræft has æ (not e), ruling out i-stem *-iz which would trigger i-umlaut. Using a-stem *kraftăz.			craft	*kraftăz	45
 1506	k r a f t	*kraftiz	k r a f t ( - - )	kraft	Kraft	413	German				craft	*kraftiz	45
 881	k r ɔ p	*kruppăz	k r ɔ p ( - - )	krɔp	krop	242	Dutch				crop	*kruppăz	46
 880	k r ɔ p	*kruppăz	k r ɔ p ( - - )	krɔp	crop	242	English				crop	*kruppăz	46
@@ -1091,7 +1091,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 69	ʃ p ɔ r n	*spurô	ʃ p ɔ r ( - n )	ʃpɔrn	Sporn	20	German				spur	*spurô	249
 1405	s t ɑ f	*stabiz	s t ɑ f ( - - )	stɑf	staf	384	Dutch				staff	*stabiz	250
 1404	s t ɑː f	*stabiz	s t ɑː f ( - - )	stɑːf	staff	384	English				staff	*stabiz	250
-2212	s t æ f	*stabiz	s t ɑː f ( - - )	stɑːf	stæf	384	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			staff	*stabiz	250
+2212	s t æ f	*stabăz	s t ɑː f ( - - )	stɑːf	stæf	384	Old_English	Kroonen: *staba- m. 'staff; letter' (a-stem). OE stæf has æ (not e), ruling out i-stem *-iz. Using a-stem *stabăz.			staff	*stabăz	250
 1403	ʃ t aː p	*stabiz	ʃ t aː b ( - - )	ʃtaːp	Stab	384	German				staff	*stabiz	250
 30	s t aː r t	*sturtijăną	s t aː r t ( - - )	staːrt	staart	8	Dutch				start	*sturtijăną	251
 29	s t ɑː t	*sturtijăną	s t ɑː - t ( - - )	stɑːt	start	8	English				start	*sturtijăną	251

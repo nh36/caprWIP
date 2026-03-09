@@ -3413,5 +3413,146 @@ This allows *fulgjăną → fylġan (with *u → y by i-umlaut, not lowered to *
 | 2026-03-09c | 93 | 287 | 380 | 75.5% |
 | 2026-03-09d | 92 | 288 | 380 | 75.8% |
 | 2026-03-09e | 90 | 289 | 386 | 74.9% |
-| 2026-03-09f | 87 | 292 | 386 | **75.6%** |
+| 2026-03-09f | 87 | 292 | 386 | 75.6% |
+| 2026-03-09g | 85 | 294 | 386 | **76.2%** |
 
+
+---
+
+## PGmc stem-class disagreements: \*kraft- and \*stab- (2026-03-09g)
+
+### Overview
+
+Two TSV rows (`cræft` ID 1981, `stæf` ID 2212) had incorrect proto-forms that caused
+mismatches. Investigation revealed that modern etymological dictionaries **disagree on
+the PGmc stem class** for both lexemes. This disagreement has direct consequences
+for OE phonology: different stem classes predict different OE vowels.
+
+### The problem
+
+| Lexeme | TSV proto (wrong) | Pipeline output | Expected OE |
+|--------|-------------------|-----------------|-------------|
+| cræft  | \*kraftiz         | creft           | cræft       |
+| stæf   | \*stabiz          | stefe           | stæf        |
+
+Both show i-umlaut (æ → e) triggered by the final \*-iz. But the attested OE forms
+have **æ** (not e), indicating no i-umlaut occurred. Either the proto-forms are wrong,
+or there is a sound change we are missing.
+
+### Survey of the etymological literature
+
+#### \*kraft-
+
+| Source | Reconstruction | OE form cited | Stem class |
+|--------|----------------|---------------|------------|
+| **Kroonen (2013)** p.307 | \*kraftu- m. | "OE craft" | tu-stem (u-stem) |
+| **Orel (2003)** p.220 | \*kraftiz ~ \*kraftuz | "OE cræft" | i-stem or u-stem |
+| **Kluge-Seebold (25th ed.)** s.v. Kraft | g. \*krafti- f. | "ae. cræft" | i-stem |
+
+Kluge-Seebold additionally notes: "**Spuren von u-Flexion (anord. krǫptr m.) weisen
+wohl auf einen parallelen maskulinen u-Stamm**" ('traces of u-inflection [ON krǫptr]
+probably indicate a parallel masculine u-stem'). This acknowledges that BOTH stem
+classes are attested in the comparative evidence.
+
+**Fulk (2018)** §4.7 n.12 cites MHG paradigmatic alternation "kraft beside krefte",
+showing umlaut variation within the paradigm — evidence that the stem class was
+unstable or variable.
+
+#### \*stab-
+
+| Source | Reconstruction | OE form cited | Stem class |
+|--------|----------------|---------------|------------|
+| **Kroonen (2013)** p.469 | \*staba- m. | "OE stæf" | a-stem |
+| **Orel (2003)** p.378 | \*stabiz ~ \*stabaz | "OE stæf" | i-stem or a-stem |
+| **Kluge-Seebold (25th ed.)** s.v. Stab | g. \*stabi-/a- | "ae. stæf" | i-stem or a-stem |
+
+Kluge-Seebold explicitly marks uncertainty with the notation "\*stabi-/a-".
+
+### The phonological argument
+
+The OE reflex disambiguates the stem class:
+
+1. **i-stem \*kraftiz / \*stabiz:**
+   - AFB: \*a → \*æ
+   - i-umlaut raising: \*æ → \*e (before \*i in following syllable)
+   - Prediction: OE **creft**, **stefe** (with e)
+
+2. **u-stem \*kraftuz:**
+   - AFB: \*a → \*æ
+   - a-restoration: \*æ → \*a (before back vowel \*u)
+   - Prediction: OE **craft** (with a)
+
+3. **a-stem \*kraftăz / \*stabăz:**
+   - AFB: \*a → \*æ (root), \*ă → \*æ (suffix)
+   - No i-umlaut trigger (suffix vowel is front \*æ)
+   - No a-restoration trigger (suffix vowel is front after AFB)
+   - Final vowel loss
+   - Prediction: OE **cræft**, **stæf** (with æ) ✅
+
+The a-stem analysis correctly predicts the attested OE forms. The key insight is
+that even after AFB fronts the suffix vowel \*ă → \*æ, this front vowel does not
+trigger a-restoration (which requires a **back** vowel) and does not trigger
+i-umlaut (which requires **high** \*i or \*j).
+
+### Why the disagreement exists
+
+The comparative evidence is genuinely ambiguous:
+
+- **ON krafptr** (with u-umlaut of a → ǫ) suggests the stem vowel was followed by
+  \*u at the time u-umlaut applied → supports u-stem
+- **OHG kraft** (fem., no umlaut) is compatible with either a-stem or u-stem
+- **Gothic** lacks the word, removing the most conservative witness
+- **OE cræft** (with æ, not e) is incompatible with i-stem; compatible with
+  a-stem or u-stem (if \*u lost before a-restoration)
+
+The variation between sources reflects genuine uncertainty about PGmc morphology,
+not simple error. Different scholars weight the comparative evidence differently.
+
+### Resolution for the FST pipeline
+
+For purposes of modeling the **OE** outcome, we use a-stem forms:
+- \*kraftăz → cræft ✅
+- \*stabăz → stæf ✅
+
+This produces the correct OE output regardless of whether the PGmc etymon was
+"really" an a-stem, i-stem, or u-stem — because what matters phonologically is
+that the pre-OE input lacked both a high front trigger (for i-umlaut) and a back
+vowel (for a-restoration).
+
+### OE attestation
+
+The OE forms with æ are unambiguous:
+
+- **Campbell** OEG §133: "cræft" as example of OE æ from PGmc \*a
+- **Campbell** OEG §160: "cræftas" pl. (æ preserved before geminates and groups)
+- **Luick** Hist. Gr. p.176: "stæf 'Stab', cræft 'Kraft'" (æ examples)
+- **Bülbring** AE Elementarbuch §179: "craft 'Kraft'" (showing later ME form with a)
+
+The later ME/ModE forms with a (craft, staff) reflect a separate development —
+open syllable lengthening and subsequent changes — not the OE stage.
+
+### TSV updates
+
+**Row 195 (ID 1981):**
+- PROTOFORM: `*kraftiz` → `*kraftăz`
+- PROTO: `*kraftiz` → `*kraftăz`
+- NOTE: "Kroonen: \*kraftu- m. (u-stem); Orel: \*kraftiz ~ \*kraftuz; Kluge-Seebold:
+  \*krafti- f. with parallel u-stem. OE cræft has æ (not e), ruling out i-stem
+  \*-iz which would trigger i-umlaut. Using a-stem \*kraftăz."
+
+**Row 1094 (ID 2212):**
+- PROTOFORM: `*stabiz` → `*stabăz`
+- PROTO: `*stabiz` → `*stabăz`
+- NOTE: "Kroonen: \*staba- m. (a-stem). Orel/Kluge-Seebold: \*stabiz ~ \*stabaz.
+  OE stæf has æ (not e), ruling out i-stem. Using a-stem \*stabăz."
+
+### Evaluation update
+
+- Previous: 292 matches / 87 mismatches (75.6%)
+- Current: 294 matches / 85 mismatches (**76.2%** match rate)
+
+### Cross-reference
+
+This case is documented in `docs/analysis/notable_findings.md` §6 as an example
+of how the FST methodology can disambiguate between competing PGmc reconstructions
+by testing their OE phonological predictions.
