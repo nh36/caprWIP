@@ -333,8 +333,13 @@ define pgrmWeakTailVowel [
     ō:{*ō} θ:{*θ} z:{*z} |
     ō:{*ō} z:{*z} |
     i:{*i} θ:{*θ} ō:{*ō} |
-    # 3sg present indicative (Class III weak) — testing lifed pathway
-    ē:{*ē} þ:{*þ} i:{*i}
+    # Class III weak paradigm cells (for testing archaic forms)
+    # 3sg present indicative: *-ēþi (PGmc *-aiþi → NWGmc *-ēþ)
+    ē:{*ē} þ:{*þ} i:{*i} |
+    # 2sg present indicative: *-ēsi (PGmc *-aisi → NWGmc *-ēs)
+    ē:{*ē} s:{*s} i:{*i} |
+    # imperative sg: *-ē (PGmc *-ai → NWGmc *-ē)
+    ē:{*ē}
 ];
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
@@ -1300,11 +1305,13 @@ define EnglishStarNonHighVowel [
 
 # R/T vol.2 §2.1.1: Stressed *u → *o before non-high vowels in NWGmc,
 # EXCEPT when a nasal (*n, *m) follows *u (R/T: "no nasal in the syllable coda,
-# nor *j, intervened"). Also blocked before *j (but *j triggers i-umlaut later).
+# nor *j, intervened"). Also blocked before *j ANYWHERE in the intervening consonants.
 # Northern WGmc (OE/OS) also blocks before intervocalic nasals.
 # Exceptions near labials (*full, *wulf, *fugol) are lexically irregular.
+# FIX 2026-03-09: Block if *j appears anywhere between *u and non-high vowel.
+# EnglishStarConsonantNoJ is defined earlier (line ~713).
 define NWGmcULowering [
-    {*u} -> {*o} || _ [EnglishStarConsonant - EnglishStarNasal] EnglishStarConsonant* EnglishStarNonHighVowel
+    {*u} -> {*o} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
