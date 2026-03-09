@@ -2610,6 +2610,502 @@ itself problematic: OE *sāpe* has long *ā* and is weak feminine. The proto \*s
 \*a, so neither the old output (*sæpe*) nor the new (*sape*) matches the correct OE *sāpe*.
 This is a separate vowel-length issue in the proto-form.
 
+## ⚠️ FLAGGED ISSUE: PGmc Class III weak verb → OE Class II shift
+
+### The problem
+
+Four OE verbs in the TSV have PGmc \*-ēną (Class III weak) protos, but OE reflects them as Class II weak verbs (ending in -ian):
+
+| ID | Proto | Pipeline output | Expected | OE class |
+|----|-------|----------------|----------|----------|
+| 2004 | \*fastēną | faston | fastian | II (-ian) |
+| 2027 | \*fulgēną | folgon | folgian | II (-ian) |
+| 2107 | \*libēną | leofon | lifian | II (-ian) |
+| 2268 | \*wakēną | wacon | wacan | **strong VI** |
+
+The pipeline correctly produces the regular phonological outcome of \*-ēną: the medial
+\*ē undergoes NWGmcLongENasalRounding (\*ē → \*ō before nasal), yielding -on. But no
+attested OE form preserves this regular outcome for any of these verbs.
+
+### What Kroonen reconstructs
+
+Kroonen's *Etymological Dictionary of Proto-Germanic* gives:
+
+- **\*fastēn-** wv. (under \*fastu- entry, p.131): "Go. fastan, ON fasta, OE fastian, OFri. festia,
+  OHG fastēn ww. 'to fast' < \*fastēn-." Denominal from \*fastu- 'firm'.
+- **\*fulgēn-** wv. (p.158): "OE fylgan, folgian ww. 'id.', E to follow, OS folgon wv., OHG
+  folgēn ww." He also notes: "ON fylgja and OE fylg(e)an continue a formation \*fulgjan-"
+  — i.e. a Class I formation with \*j, separate from the \*-ēn- headword.
+- **\*libēn-** wv. (p.336): "Go. liban ww. 'to live', ON lifa w.v., OE libban wv., OS libbian w.v.,
+  OHG lebēn wv." Kroonen cites OE **libban** (Class III with gemination), NOT lifian. The
+  TSV form lifian is a later Class II innovation within OE.
+- **\*wakān-** s.v. (p.568): "Go. wakan s.v. 'id.', OE wacan." This is a **strong verb** (Class VI),
+  not weak at all. The proto \*wakēną in the TSV is the wrong lexeme — it belongs to the
+  Class III weak "to be awake, watch" (→ OE wacian), not the strong "to wake up" (→ wacan).
+
+### The Class III → Class II shift: Ringe/Taylor's account
+
+R/T vol.2 §3.3.2 (pp.161–163) provide the definitive account of this morphological change:
+
+**Step 1: PWGmc.** Class I weak verbs with heavy root syllables had their present-stem suffix
+remodeled to \*-i- ~ \*-ija- (alternating forms in different paradigm cells). R/T illustrate
+with \*hauzijan 'to hear': 1sg \*hauziju, 2sg \*hauzisi, 3pl \*hauzijap, etc.
+
+**Step 2: Northern WGmc (pre-OE/pre-OFris).** This alternation pattern was extended to
+Class II weak verbs: "in those forms that had \*-ija- in class I the class II suffix was extended
+to \*-ōja-" (Cowgill 1959: 8–9, cited by R/T). R/T give the full paradigm table (p.161):
+
+    PWGmc *ardōn "to dwell":
+    infinitive: *ardōn  → *ardōjan  → OE eardian
+    indic. 3pl: *ardōnþ → *ardōjaþ  → OE eardiaþ
+    iptv. 2sg:  *ardō   → *ardō     → OE earda  (UNCHANGED — no *j)
+    
+**Step 3: Extension to Class III.** R/T p.162: "The extension of this change to the majority
+paradigm of weak class III, so that the uniform stem vowel \*-ē- was replaced by \*-ē- ~
+\*-ēja-, can also have been a general northern innovation; but it can be demonstrated only
+for OE, since in the other northern WGmc languages the relevant verbs appear in weak
+class II."
+
+**Key evidence: relic Class III forms in Anglian OE.** R/T list relics of the \*-ēja- intermediate
+stage that survive in non-WS dialects, alongside the WS Class II innovations:
+
+| Verb | PGmc | Relic form (Anglian) | WS Class II form |
+|------|------|---------------------|------------------|
+| 'be awake' | \*wakē- | N.Merc. weccan, North. wecca | WS wacian |
+| 'spare' | \*sparē- | North. speeria, iptv. sper | WS sparian |
+| 'endure' | \*þolē- | North. dælge, iptv.pl. dæligas | WS þolian |
+| 'dwell' | \*wunē- | N.Merc. wynigaþ | WS wunian |
+| 'worry' | \*sorgē- | E.Merc. soer[g]lendi | WS sorgian |
+| 'lean' | \*hlinē- | E.Merc. onhlingu | WS hlinian |
+| 'live' | \*libē- | **see detailed analysis below** | WS libban / lifian |
+
+*Note on 'live': The Anglian forms lifgende, lifgu are NOT relics of the original Class III
+paradigm — R/T §7.1.5 (pp.364–365) explicitly call them INNOVATIONS reflecting a secondary
+\*-ē- ~ \*-ēja- remodeling. The archaic form is North. 3sg pres. lifed. See "📋 TSV Row 2107".*
+
+### Did \*-ōjăną exist in Proto-Germanic?
+
+**No.** The evidence from R/T is clear that:
+
+1. The \*-ē- → \*-ēja- remodeling was a **northern WGmc** innovation, not PGmc. OHG
+   preserves the unremodeled \*-ēn forms: fastēn, folgēn, lebēn, sorgēn, etc.
+2. The intermediate form was \*-ēja- (not \*-ōja-). This \*-ēja- then merged with the
+   productive Class II \*-ōja- pattern in OE.
+3. The 4 "Class III" verbs in OE (habban, secgan, libban, hycgan) are NOT from \*-ēn- at
+   all — they are from \*-jan- with j-gemination. (R/T pp.365–366, Cowgill 1959.)
+4. There are **no attested OE forms** that show the regular phonological outcome of PGmc
+   \*-ēną (which would be \*-on). Every OE reflex has either the Class II -ian ending or a
+   relic Class III \*-ēja- form.
+
+### Why the pipeline gives -on from \*-ēną
+
+The pipeline correctly applies the regular phonological rules to \*-ēną:
+
+1. NWGmcLongENasalRounding: \*ē → \*ō / \_ nasal (the \*n in \*-ēną triggers this)
+2. Result: \*-ōną → after further changes → -on
+
+This -on outcome is the **phonologically regular** development of \*-ēną. It is simply not
+attested in OE because the morphological Class III→II shift was (near-)universal.
+
+### Handling options for the project
+
+*[Original options A–D superseded by the detailed paradigm-cell analysis below; see "📋 TSV Row 2107: Paradigm-Cell Analysis" for current treatment.]*
+
+### The individual verbs
+
+**wacan (ID 2268)**: **RESOLVED.** This was a **strong verb** (Class VI), not weak Class III.
+The TSV proto \*wakēną was wrong — corrected to \*wakaną. Now matches. (See mismatch trajectory.)
+
+**fastian (ID 2004)**: Denominal from \*fastu- 'firm'. Kroonen \*fastēn-. OE fastian is the
+standard WS Class II reflex. No relic Class III forms attested. **Pending** — may need
+paradigm-cell approach or transponent.
+
+**folgian (ID 2027)**: Kroonen \*fulgēn-, with a note that OE/ON also show a Class I formation
+\*fulgjan- (→ OE fylgan with i-umlaut \*u → \*y). The Class II folgian (with \*u → \*o by
+u-lowering, no i-umlaut) can only come from a form where \*j was separated from the root
+by a syllable. **Pending** — may need paradigm-cell approach.
+
+**lifian (ID 2107)**: See detailed analysis below ("📋 TSV Row 2107: Paradigm-Cell Analysis").
+
+### Methodological significance
+
+This is the same type of problem encountered with the stefn/stemn case: the pipeline
+forces us to distinguish between (a) what PGmc reconstruction scholarship gives us and
+(b) what form must be assumed locally to produce the correct OE output. The Class III→II
+weak verb shift is a morphological analogy, not a regular sound change, and therefore
+falls outside the scope of a Neogrammarian phonological transducer.
+
+The universality of this shift in OE (every PGmc \*-ēn- verb appears as Class II -ian in WS)
+makes it a systematic, predictable gap in the pipeline's coverage. A future morphological
+component could model this shift explicitly. For now, the project must choose between
+transponent forms and documented mismatches.
+
+### References
+
+- Cowgill, W. 1959. 'The inflection of the Germanic ō-presents.' *Language* 35: 1–15.
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic.* Leiden: Brill.
+- Ringe, D. and A. Taylor. 2014. *The Development of Old English* (A Linguistic History of
+  English, vol. 2). Oxford: OUP. §3.3.2 pp.161–163; §7.1.5 pp.362–366.
+
+## ⚙️ J-Gemination/BAllophony Chronology Fix (2026-03-09)
+
+### The bug
+
+The pipeline was producing `lifan` from `*libjăną` instead of expected `libban`. Investigation
+revealed a **chronology error**: PGmcBAllophony (`*b` → `*β` post-vocalically) was firing
+BEFORE PWGmcJGemination, so by the time j-gemination ran, there was no `*b` to geminate.
+
+**Trace before fix:**
+```
+*libjăną → [BAllophony] → *liβjăną → [JGemination] → *liβjăną (no change) → ... → lifan
+```
+
+### R/T evidence for correct chronology
+
+R/T vol.2 pp.50–51 explicitly cite j-gemination operating on underlying /b/:
+
+> "PGmc \*habjana 'to lift' (ON hefja; Goth. hafjan has levelled the voiceless Verner's
+> Law alternant into the present from the past indic. sg.) > PWGmc \*[habˈbʲan] (= \*/habjan/)
+> > OE hebban, OS hebbian"
+
+This shows that at the PWGmc j-gemination stage, the underlying stop /b/ (not allophone [β])
+undergoes gemination. The spirantization to [β] is a **late allophonic rule**, not an early
+phonemicization.
+
+### The fix (implemented)
+
+1. **Removed** PGmcBAllophony from PGmcConsonantRules (which fires early in the pipeline)
+2. **Added** PGmcBAllophony after PWGmcJGemination in EnglishProtoToOE
+3. **Added** geminate-restore clause to handle R/T vol.1 §3.2.4 — geminates are always stops:
+   ```
+   {*β} -> {*b} || _ {*b}
+   ```
+4. **Removed** `{*b} {*j} -> {*v}` from OEJClusterCoalescence (was interfering with geminated
+   `*b*b*j` sequences; non-geminated `*bj` is handled by BAllophony + JLossAfterHeavy)
+
+### Verification
+
+After fix, pipeline correctly produces:
+```
+libjăną → libban ✓
+habjăną → hebban ✓
+```
+
+The BAllophony rule now fires after gemination has already created `*bb`, and the geminate-restore
+clause ensures the first consonant of a geminate is a stop, not a fricative.
+
+---
+
+## 📋 TSV Row 2107 (lifian/libban): Paradigm-Cell Analysis
+
+### Background
+
+Row 2107 currently reads:
+- ID: 2107
+- TOKENS: `l i f i a n`
+- PROTOFORM: `*libēną` (Class III weak infinitive)
+- COUNTERPART: `lifian`
+- PROTO (cognate set): `*libēną`
+
+The question: **Is the infinitive the right paradigm cell to match?** When the infinitive has been
+remodeled (as lifian clearly has), we should consider whether a more conservative finite form
+might offer a cleaner lautgesetzlich pathway.
+
+### Three-way distinction required
+
+We need to distinguish:
+
+1. **Cognate-set headword / etymological proto** — the form used in comparative reconstruction
+   (e.g., Kroonen's \*libēn-, the Class III stative)
+2. **FST input form** — the specific pre-OE or PGmc form that yields the target by regular
+   sound change (may be a different paradigm cell or morphological formation)
+3. **OE target form** — an actually attested OE form, not necessarily the lemma/infinitive
+
+### The Class III paradigm: stem alternation
+
+R/T vol.2 pp.93–94 give the crucial data for 'have', 'say', 'live':
+
+| Cell | OS | OE | Proto stem |
+|------|----|----|------------|
+| pres. inf. | hebbian, seggian, **libbian** | habban, secgan, **libban** | \*-ja- |
+| pres. 3sg. | habed, sagid, [**lebot**] | hæfeþ, segeþ, **lifed** (Anglian) | \*-ai- (> \*-ē-) |
+| pres. 3pl. | hebbiad, seggiad, libbiat | habbaþ, secgaþ, libbaþ | \*-ja- |
+| past 3sg. | habda, sagde, libdun (3pl) | hæfde, segde, lifde | (no linking vowel) |
+| past ptc. | behabd, gisagda, gilibd | hæfd, segd, lifd | (no linking vowel) |
+
+**Key observation:** The Class III paradigm had TWO alternating stems:
+- **\*-ja-** stem in infinitive, 1sg, 3pl indicative, subjunctive, participles → gemination
+- **\*-ai- / \*-ē-** stem in 2sg, 3sg indicative, imperative sg → NO gemination
+
+R/T vol.2 p.388 explicitly reconstruct:
+> "PGmc \*libai- ~ \*libja- 'to live' (Goth. liban, ON lifa, OHG lebén) → northern WGmc
+> \*lib'b/an but **pres. indic. 3sg. \*liboþ** (OS libbian, libod) → early WS OE libban,
+> liofaþ ~ leofaþ, North. lifiga (remodelled), liofaþ, Merc. lifgan (remodelled), liofaþ ~ leofaþ"
+
+### The attested OE paradigm cells (Campbell §762)
+
+Campbell gives the following actual OE forms:
+
+**West Saxon:**
+| Cell | Form | Notes |
+|------|------|-------|
+| pres. indic. 1sg | libbe | \*-ja- stem, geminated |
+| pres. indic. 2sg | **leofast** | \*-ai- stem, Class II intrusion |
+| pres. indic. 3sg | **leofaþ** | \*-ai- stem, Class II intrusion |
+| pres. indic. pl | libbaþ | \*-ja- stem, geminated |
+| pres. subj. | libbe | \*-ja- stem |
+| imper. sg. | **leofa** | \*-ai- stem, Class II intrusion |
+| past indic. | lifde | no linking vowel |
+| past ptc. | lifd | no linking vowel |
+| infinitive | libban | \*-ja- stem, geminated |
+
+**Anglian (Vespasian Psalter, Campbell §762):**
+| Cell | Form | Notes |
+|------|------|-------|
+| pres. indic. 1sg | **lifgu** | \*-ē- + -ja- remodeling |
+| pres. indic. 3sg | **leofaþ** | \*-ai- stem, Class II |
+| pres. indic. pl | **lifgaþ** | \*-ē- + -ja- remodeling |
+| pres. subj. | **lifge** | \*-ē- + -ja- remodeling |
+| pres. ptc. | **lifgende** | \*-ē- + -ja- remodeling |
+| past | lifde | |
+| past ptc. | lifd | |
+
+**Late Northumbrian (Lindisfarne, Campbell §762):**
+| Cell | Form | Notes |
+|------|------|-------|
+| pres. indic. 1sg | hofo | (sic, h- for l-?) |
+| pres. indic. 3sg | **liofaþ** ~ **lifed** | lifed is archaic Class III |
+
+### Critical finding: North. lifed as archaism
+
+R/T vol.2 §7.1.5 (p.364) note:
+> "Except for late North. pres. indic. 3sg. **lifed**, which must be an **archaism** because the
+> verb has largely been remodelled as a class II weak verb in that dialect, we find only class II
+> pres. indic. 2, 3sg. and iptv. sg. forms"
+
+**This is crucial:** The 3sg present **lifed** (late Northumbrian) preserves the archaic \*-ai- / \*-ē-
+stem without Class II contamination. This form descends directly from PGmc **\*libaiþi** or
+pre-OE **\*libēþ**.
+
+### What the sources reconstruct
+
+**Kroonen \*libēn- (p.336):**
+> "\*libēn- w.v. 'to be left; to live' — Go. liban ww. 'to live', ON lifa w.v. 'to live; to be left',
+> Far. liva w.v. 'to live', Elfd. liva w.v. 'id.', **OE libban wv. 'id.'**, E to live, OFri. libba w.v.
+> 'id.', OS libbian w.v. 'id.', Du. leven wv. 'id.', OHG lebén wv. 'id.', G leben wv. 'id.'"
+
+Note: Kroonen cites **OE libban** (infinitive with j-gemination), NOT lifian.
+
+**R/T vol.1 p.35:**
+> "PGmc \*libja- ~ \*libai- 'live' (Goth. liban, ON lifa) > OE libban, OF libba, OS libbian, OHG lebén"
+
+Note the dual reconstruction: **\*libja-** (j-present) AND **\*libai-** (stative). These are the
+two stems of the Class III alternation.
+
+### Are Anglian lifgu, lifgaþ, lifgende archaic?
+
+**No.** R/T vol.2 §7.1.5 (pp.364–365) explicitly argue these are **innovations**:
+
+> "Because these forms are distinctive, they have often been taken to be archaisms. **But it needs
+> to be emphasized that no other Germanic language presents us with any similar phenomenon.** As
+> noted above, the corresponding OS forms agree with WS; so does OF libb-; even the southern OHG
+> relics pres. indic. libis, libit, past libita presuppose a paradigm in which some forms were
+> identical with class I weak forms—i.e. exhibited a palatalized geminate. **The Anglian forms
+> are innovations**, and we must find a way to account for them..."
+
+> "The only plausible source of /j/ in these verb forms is the source of /j/ in weak class II...
+> just as class II \*-ō- was remodelled as \*-ō- ~ \*-ōja- on the model of the class I stem vowel
+> complex \*-i- ~ \*-ija- (Cowgill 1959: 8), so also class III \*-ē- must have been remodelled as
+> \*-ē- ~ \*-ēja- in at least part of the northern WGmc dialect continuum."
+
+So the Anglian forms like **lifgu**, **lifgaþ**, **lifgende** are from a remodeled \*-ē- ~ \*-ēja-
+paradigm — a **northern WGmc innovation**, not an archaism.
+
+### Paradigm-cell assessment
+
+| Paradigm cell | Proto input | Expected OE | Actually attested | Match path |
+|---------------|-------------|-------------|-------------------|------------|
+| infinitive | \*libjăną | libban | libban (WS) | ✅ j-gemination |
+| infinitive | \*libēną | \*libōn? leofon? | lifian (late WS/Anglian) | ❌ morphological shift |
+| 3sg pres. | \*libaiþi / \*libēþ | lifed? leofeþ? | lifed (North.), leofaþ (WS) | ⚠️ needs testing |
+| 2sg pres. | \*libaisi / \*libēs | \*lifes? | leofast (WS) | ⚠️ needs testing |
+| imper. sg. | \*libai / \*libē | \*life? | leofa (WS) | ⚠️ needs testing |
+| pres. ptc. | \*libjandī? | \*libbende | libbende (WS) | ⚠️ j-gemination |
+| past 3sg | \*libdē | lifde | lifde | ✅ trivial |
+
+### The cleanest lautgesetzlich pathways
+
+**Path 1: Infinitive via j-present**
+- Proto: \*libjăną (Class III j-stem infinitive)
+- Sound changes: j-gemination → BAllophony (geminate exception) → ...
+- Output: libban ✅
+- Target: libban (WS, conservative)
+- Status: **WORKING** after j-gemination fix
+
+**Path 2: 3sg present via \*-ai- stem**
+- Proto: \*libaiþi or \*libēþi (3sg present with \*-ai- / \*-ē- stem)
+- Expected changes: \*ai > \*ē (already in Class III); then \*ē remains or undergoes
+  breaking/umlaut depending on environment
+- Expected output: something like \*lifeþ > lifed (with syncope)?
+- Target: lifed (late North., archaism per R/T)
+- Status: **NOT TESTED** — input grammar doesn't accept finite verb forms
+
+**Path 3: Past tense (trivial)**
+- Proto: \*libdē (past 3sg, no linking vowel)
+- Output: lifde
+- Target: lifde (all dialects)
+- Status: **TRIVIALLY CORRECT** — but past tense doesn't help disambiguate lemma
+
+### Conclusion on paradigm-cell approach
+
+The key question is: **Is there a finite paradigm cell that preserves archaic morphology and
+yields an attested OE form by regular sound change?**
+
+**Candidates:**
+1. **Infinitive libban** < \*libjăną — WORKS (j-gemination fix), conservative WS form
+2. **3sg lifed** < \*libēþ(i)? — potentially archaic (R/T call it so), but:
+   - Input grammar doesn't accept finite forms
+   - Would need to test whether \*libēþ → lifed by regular change
+   - Only attested in late Northumbrian (sparse)
+3. **Past lifde** < \*libdē — trivial, but doesn't help with infinitive-lemma question
+
+### Options (revised)
+
+**Option 1: Use infinitive \*libjăną → libban (j-present path)**
+
+- PROTOFORM: \*libjăną
+- COUNTERPART: libban
+- PROTO (cognate set): \*libēną (unchanged)
+- NOTE: documents that libban continues the j-present stem \*libja-, not the \*-ē- stem
+
+*Advantages:*
+- Pipeline match ✓
+- libban is Kroonen's cited OE reflex under \*libēn-
+- Parallel to habban < \*habjăną, hebban < \*hafjăną
+- WS libban is morphologically conservative (R/T §7.1.5)
+
+*Disadvantages:*
+- Changes OE target from TSV's lifian to libban
+- PROTOFORM is a different morphological formation than cognate-set headword
+
+**Option 2: Use 3sg present \*libēþ → lifed (finite cell path)**
+
+- PROTOFORM: \*libēþi (or similar 3sg form)
+- COUNTERPART: lifed
+- PROTO (cognate set): \*libēną
+- Requires: extending pgrmWeakTailVowel to accept \*-ēþi (3sg present ending)
+
+*Advantages:*
+- Preserves the \*-ē- stem of the cognate-set headword
+- Targets an archaic finite form (R/T: "lifed... must be an archaism")
+- Tests the \*-ai- / \*-ē- stem pathway
+
+*Disadvantages:*
+- Requires input grammar extension
+- lifed is sparsely attested (late Northumbrian only)
+- Need to verify \*libēþ → lifed is actually regular (syncope timing, vowel outcomes)
+- Shifts target from infinitive/lemma to a finite form
+
+**Option 3: Split representation (two rows)**
+
+- Row A: \*libjăną → libban (infinitive, j-present path)
+- Row B: \*libēþi → lifed (3sg present, \*-ē- stem path)
+
+*Advantages:*
+- Explicitly represents the two stems of the Class III paradigm
+- Both forms are actually attested OE
+- Provides maximal coverage of the inherited morphology
+
+*Disadvantages:*
+- Doubles the row count for this lexeme
+- May overcomplicate TSV structure
+- Row B requires input grammar extension
+
+**Option 4: Accept documented mismatch**
+
+- Keep PROTOFORM \*libēną, COUNTERPART lifian
+- Document that pipeline produces \*leofon (regular) but OE has lifian (morphological shift)
+
+*Advantages:*
+- Preserves original TSV data
+- Intellectually honest about pipeline limitations
+- Documents Class III→II shift as systematic gap
+
+*Disadvantages:*
+- +1 mismatch
+- lifian is the innovative form, not the conservative one
+
+### Recommendation
+
+**Option 1 remains the strongest single-row solution:**
+- libban is what Kroonen cites under \*libēn-
+- libban < \*libjăną is a working pipeline path
+- The j-present formation (\*libja-) was part of the Class III paradigm alongside \*libai-
+
+**Option 2 is worth investigating** if we want to preserve the \*-ē- stem connection, but it
+requires: (a) extending the input grammar, (b) verifying \*libēþ → lifed is regular, and
+(c) accepting a sparse target (late North. only).
+
+**Option 3 (split) would be methodologically ideal** but may be overkill for TSV structure.
+
+---
+
+### Research on Option 2: 3sg present pathway (2026-03-09 continued)
+
+**Question:** Is \*libēþi → lifed lautgesetzlich (by regular sound change)?
+
+**Research findings:**
+
+R/T vol.2 p.25 explicitly give the parallel derivation for *habban*:
+
+> "PGmc pres. \*habaisi 'you have', \*habaiþi '(s)he has' (Goth. habais, habaiþ) →
+> \*habēs, \*habēþ → OE (North.) hæfes, **hefed**"
+
+The sound changes are:
+1. **\*-aiþi → \*-ēþi** — NWGmc monophthongization of unstressed \*ai → \*ē
+2. **\*-ēþi → \*-ēþ** — Loss of final short \*-i (PWGmc)
+3. **\*-ēþ → -eþ** — Shortening of unstressed long \*ē → e
+4. **-eþ → -ed** — Orthographic variant (late North. <d> for /ð/)
+
+**Pipeline test:**
+
+Extended `pgrmWeakTailVowel` with `ē:{*ē} þ:{*þ} i:{*i}` (3sg present ending).
+
+Results:
+- **libēþi → lifeþ** ✓
+- **hafēþi → hæfeþ** ✓
+- **habēþi → hæfeþ** ✓
+
+**Assessment:** The pipeline produces **lifeþ**, which is the phonologically expected output.
+The attested Northumbrian form **lifed** is an orthographic variant — late Northumbrian texts
+regularly use <d> for /ð/ in unstressed syllables (Campbell §450 note).
+
+**Conclusion:** **The 3sg present pathway is lautgesetzlich.** \*libēþi → lifeþ is a regular
+development, and lifed is just an orthographic variant of lifeþ.
+
+**Recommendation for row 2107:**
+
+| Option | PROTOFORM | COUNTERPART | Pros | Cons |
+|--------|-----------|-------------|------|------|
+| **1** | \*libjăną | libban | Working path, Kroonen's cited form | Different morphology from cognate headword |
+| **2** | \*libēþi | lifeþ (= lifed) | Preserves \*-ē- stem, archaic finite form | Sparse target (late North. only), needs grammar extension |
+
+**My recommendation: Option 1 (infinitive \*libjăną → libban)** remains the stronger choice
+for the TSV because:
+- libban is what Kroonen cites as the OE reflex of \*libēn-
+- libban is the morphologically conservative infinitive in WS/literary OE
+- The j-present stem \*libja- was part of the inherited Class III paradigm
+- lifed, while archaic, is sparsely attested and dialectally marked
+
+However, if the user prefers to **preserve the \*-ē- stem connection**, Option 2 is now
+confirmed to be lautgesetzlich and could be implemented by keeping the grammar extension.
+
+**Decision (2026-03-09):** User chose **Option 2**. Implemented as:
+- PROTOFORM: \*libēþi (3sg present indicative)
+- COUNTERPART: lifeþ (= North. lifed)
+- Grammar extension `ē:{*ē} þ:{*þ} i:{*i}` retained in `pgrmWeakTailVowel`
+- Note: "3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from \*libjăną stem, not \*-ē- stem"
+
 ## Mismatch trajectory — full history
 
 | Date | Mismatches | Matches | Total rows | Match rate |
@@ -2624,3 +3120,4 @@ This is a separate vowel-length issue in the proto-form.
 | 2026-03-09b | 95 | 285 | 380 | 75.0% |
 | 2026-03-09c | 93 | 287 | 380 | 75.5% |
 | 2026-03-09d | 92 | 288 | 380 | 75.8% |
+| 2026-03-09e | 90 | 289 | 386 | 74.9% |

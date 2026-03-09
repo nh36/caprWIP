@@ -332,7 +332,9 @@ define pgrmWeakTailVowel [
     ō:{*ō} θ:{*θ} i:{*i} |
     ō:{*ō} θ:{*θ} z:{*z} |
     ō:{*ō} z:{*z} |
-    i:{*i} θ:{*θ} ō:{*ō}
+    i:{*i} θ:{*θ} ō:{*ō} |
+    # 3sg present indicative (Class III weak) — testing lifed pathway
+    ē:{*ē} þ:{*þ} i:{*i}
 ];
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
@@ -770,8 +772,9 @@ define EnglishInitialKnMarkers [
 ];
 
 define OEJClusterCoalescence (
-    [{*b} {*j} -> {*v}]
-    .o. [{*g} {*j} -> {*ʤ}]
+    # *bj coalescence removed: BAllophony (*b→*β) + JLossAfterHeavy handle
+    # non-geminated *bj; for geminated *bbj, *j is consumed by JLossAfterHeavy.
+    [{*g} {*j} -> {*ʤ}]
     .o. [{*k} {*j} -> {*ʧ}]
 );
 
@@ -809,17 +812,24 @@ define OEFinalSchwaApocope [
 # *b had stop [b] word-initially, after nasals, and geminated;
 # fricative [β] after vowels and liquids (= most other environments).
 # In OE, [β] was written f (since OE f = [v] between vowels).
+# Geminate *bb always remains a stop — the second .o. undoes spirantization
+# of the first element when followed by another *b.
 define PGmcBAllophony [
     {*b} -> {*β} || PGmcStarVocalic _,
     {*b} -> {*β} || [{*l} | {*r}] _
+] .o. [
+    {*β} -> {*b} || _ {*b}
 ];
 
 # NOTE (2026-02-06): OEFinalSchwaApocope moved to EnglishProtoToOE
 # after OEARestoration to fix chronology. A-restoration must see the
 # weak-tail endings before they are apocopated.
+# PGmcBAllophony is deliberately excluded here and placed after
+# PWGmcJGemination in EnglishProtoToOE. R/T vol.2 p.50: j-gemination
+# operates on underlying /b/, not the allophonic [β]. The allophonic
+# split is a late phonetic rule that must follow gemination.
 define PGmcConsonantRules PGmcFinalZLoss
-    .o. PGmcRhotacism
-    .o. PGmcBAllophony;
+    .o. PGmcRhotacism;
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
@@ -1699,6 +1709,10 @@ define EnglishProtoToOE (
     # placed here in the pipeline because it must see *j tokens after schwa
     # apocope has exposed them, and before i-umlaut consumes the trigger.
     .o. PWGmcJGemination
+    # PGmc *b allophony (*b → *β after vowels/liquids) placed AFTER j-gemination.
+    # R/T vol.2 p.50: j-gemination operates on underlying /b/ (e.g. *habjan- → *habban-).
+    # Allophonic [β] only surfaces where *b remains a singleton after gemination.
+    .o. PGmcBAllophony
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPostVelarWLoss
@@ -1775,6 +1789,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEARestoration
     .o. OEFinalSchwaApocope
     .o. PWGmcJGemination
+    .o. PGmcBAllophony
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPostVelarWLoss
