@@ -3556,3 +3556,250 @@ open syllable lengthening and subsequent changes — not the OE stage.
 This case is documented in `docs/analysis/notable_findings.md` §6 as an example
 of how the FST methodology can disambiguate between competing PGmc reconstructions
 by testing their OE phonological predictions.
+
+---
+
+## OE r-Metathesis (Campbell §459, R/T §6.8.2, Luick §136 Anm.1)
+
+### Phonological environment
+
+R-metathesis in OE is the interchange of **r** with a short vowel, moving r from
+before the vowel to after it (or rarely, vice versa). This is one of the most
+pervasive—and most *variable*—sound changes in OE phonology.
+
+### Primary sources
+
+#### Campbell, *Old English Grammar* §459
+
+Campbell provides the most detailed traditional description (p. 184–185):
+
+> **§459. By full metathesis a consonant moves from immediately before a vowel to
+> immediately after it, or the reverse.**
+>
+> (1) **The most frequent metathesis in OE is that of r from before to behind a
+> short vowel followed by s or n.** In §155 and notes, forms are quoted which
+> show that this change was sometimes earlier, sometimes later, than breaking;
+> see also §193.d with footnotes on *hærn, ærn, werna, ærnan, bernan*. Further
+> examples are *berstlian* 'crackle', *burna* 'stream', *cerse* 'cress', *cyrps*
+> 'curly', *first* 'period', *dærstan* 'dregs', *forsc* 'frog', *forst* 'frost',
+> *hors* 'horse'. Many of these words and of those quoted in §§155, 193 occur
+> without metathesis: *brastlian, cresse, crisp, frist-, drestan, frosc, frost,
+> græs, hræn* (Ep. 400), *ren-* (Erf. 1137, Beow. 770), *wrenna*. Beside *eornan*
+> occurs *rinnan*, and there are scattered forms of *beornan, berstan, perscan*
+> without metathesis (§741); beside *burna*, *brunna* occurs in place-names
+> (e.g. Denisæsbrunna BH, Namur and Leningrad MSS.).
+>
+> (2) **Metathesis is much less frequent when d followed the vowel:** North.
+> *birdas* 'young birds', *dirda* (beside rare *dridda* Li. only). After a long
+> vowel, And. 1313 *gescyrded*, Psalter Gloss 92, 1 (several late manuscripts)
+> *gescyrd* for *gescryd(ed)* 'clothed'.
+>
+> (3) Metathesis by which r is moved from behind to before a vowel is much rarer,
+> and is practically limited to before h: North., lW-S *wrohte* 'worked' (beside
+> usual *worhte*); North. *breht* 'bright', *froht* 'afraid', *frohtiga* 'fear',
+> *fryhto* 'fright', *wrihta* 'maker' (all beside forms without metathesis)…
+>
+> (4) Low stress promotes metathesis of r, e.g. *eodorcian* 'ruminate' (cf.
+> *edroc*), adjs. in *-erne* (see §339), the name-elements W-S, Kt. *-ferþ* for
+> Angl. *-friþ*, lW-S *-erd* (e.g. Ælfred, Þeoderd, Ct. of 931…)
+
+A crucial footnote at §459(1):
+
+> **ME *kers* shows OE *cerse* to have had velar c: hence metathesis was later
+> than assibilation; the same no doubt applies to *cyrps* (Lat. *crispus*).**
+
+This establishes a chronological terminus: r-metathesis occurred *after*
+assibilation of velar c before front vowels (i.e., after the palatalization
+that turned *k → tʃ* word-initially).
+
+#### Campbell §155: Breaking and metathesis interaction
+
+Campbell explicitly addresses the dialectal timing (p. 60):
+
+> **§155. Metathesis of r (§459) usually took place too late for secondary
+> r-groups to cause breaking, e.g. *gers* 'grass', *berst* 'he burst', *berstan*
+> 'burst', *perscan* 'thresh', *fersc* 'fresh'. But in Angl., when the vowel is
+> i, metathesis of r is early enough for breaking to occur, e.g. North. *biorna*
+> 'burn', *iorna* 'run', VP *beornan, eornan*; but W-S *birnan, irnan* (cf. §459).**
+
+And in footnote 3:
+
+> lW-S past tenses *bearn, earn* are due to late analogy of *wearp*, &c. (based
+> on the pl. *burnon, wurdon*); eW-S has *born, orn, barn*, where the vowel-sound
+> of *mann*, &c., which may be spelled with a or o, is preserved, although
+> divided from the nasal by a metathesized r. VP has *orn, born*, North., Ru.
+> *arn, barn* (cf. §130).
+
+#### Ringe & Taylor, *The Linguistic History of English* vol. 2, p.340–341
+
+R/T summarize the dialectal differences more clearly:
+
+> A change which had some impact on the surface contrasts among OE vowels was
+> **the common, but variable, metathesis of r with short vowels**. As might be
+> expected, **not all instances of metathesis occurred at the same time**. The
+> intransitive strong verbs meaning 'burn' and 'run, flow' seem to have
+> undergone metathesis **in the Anglian dialects before breaking occurred**
+> (Stanley 1952: 104–6 with references):
+>
+> PGmc \*brinnanan 'to burn (intr.)' (Goth., OS, OHG *brinnan*) > \*birnan >
+> Angl. OE \*biornan > Merc. *beornan*;
+>
+> PGmc \*rinnanan 'to run, to flow' (Goth. *rinnan*, ON *rinna*, OS, OHG
+> *rinnan*) > \*irnan > Angl. OE *iornan* (9th-century Martyrology…) > Merc.
+> *eornan*, North. *iorna*.
+>
+> **In WS, however, metathesis in these words did not occur until after
+> breaking**, with the result that the same verbs are early WS *birnan ~ biernan
+> ~ byrnan, irnan ~ iernan* (Cosijn 1886: 134; Stanley 1952: 104–6). Other
+> examples with front vowels in the root also underwent metathesis after
+> breaking; typical examples are *berscan* 'to thresh', *berstan* 'to burst',
+> *gærs* 'grass', North. *birdas* 'young birds'.
+
+R/T also discuss the causative verbs where metathesis chronology is clearer:
+
+> The WS causatives *bærnan* 'to burn (trans.)' and *ærnan* 'to gallop (a horse)'
+> must have undergone metathesis **before** the sequence *ęn* (which arose by
+> i-umlaut) became *en*:
+>
+> PGmc \*brannijanan 'to burn (trans.)' (Goth. *ga-brannjan*, ON *brenna*, OHG
+> *brennen*) > \*brannijan > OE \*brænnan > *bærnan*;
+>
+> PGmc \*rannijanan 'to cause to run' (Goth. *ur-rannjan* 'to cause (the sun) to
+> rise', ON *renna*, OHG *zesamine-rennen* 'to melt together, to fuse') >
+> \*rannijan > OE \*rænnan > *ærnan* 'to make (a horse) gallop'.
+
+#### Luick, *Historische Grammatik der englischen Sprache* §136 Anm. 1
+
+Luick provides a complementary perspective from German scholarship (p. 199):
+
+> **Wenn die Lautfolge r + Konsonant erst sekundär, durch Metathese, entstanden
+> war, unterblieb die Brechung ebenfalls in der Regel, namentlich im
+> Westsächsischen.** So ws. *birnan* 'brennen', *irnan* 'laufen', *first*
+> 'Frist', *berstan* 'bersten', *fersc* 'frisch', *þerscan* 'dreschen', *gærs*
+> 'Gras', *tōbærst* 'barst', *ærn* 'Haus', *hærn* 'Woge' (§186 Anm. 3), nh.
+> *bersta, gærs, ern* (eb.), merc. *gers*.
+>
+> **Daneben finden sich aber in den anglischen Dialekten auch Formen mit
+> Brechung:** nh. *biorna, iorna*, merc. \**biornan*, \**iornan* (> *beornan,
+> eornan*), und auch im Westsächsischen scheint älteres \**biornan*, \**iornan*
+> bestanden zu haben (§262). **Diese Verschiedenheiten hängen damit zusammen,
+> daß die Metathese gewöhnlich erst nach, zum Teil aber auch vor der Brechung
+> eintrat.**
+
+Translation: "When the sequence r + consonant arose secondarily through
+metathesis, breaking did not occur as a rule, particularly in West Saxon. […]
+However, in the Anglian dialects there are also forms with breaking: Northumbrian
+*biorna, iorna*, Mercian \**biornan*, \**iornan* (> *beornan, eornan*), and in
+West Saxon too older \**biornan*, \**iornan* seem to have existed (§262). **These
+differences are connected with the fact that metathesis usually occurred after,
+but in part also before, breaking.**"
+
+### The definitive study: Stanley (1952)
+
+The most thorough treatment is E. G. Stanley, "The chronology of r-metathesis in
+Old English," *English and Germanic Studies* 5 (1952): 103–115. R/T cite Stanley
+extensively, and he remains the standard reference for the relative chronology of
+metathesis vis-à-vis other OE sound changes.
+
+Stanley's key conclusions:
+
+1. Metathesis affected *Cr + short V* sequences, yielding *C + short V + r*.
+2. The timing varied lexically and dialectally.
+3. In Anglian dialects, metathesis in *brinnan/rinnan* preceded breaking (hence
+   Mercian *beornan, eornan* with diphthong from breaking of metathesized \**i**).
+4. In West Saxon, metathesis in these verbs followed breaking (hence WS *birnan,
+   irnan* with unbroken *i*).
+5. Metathesis in *grass, burst, thresh, fresh* was universally late (post-breaking).
+
+### Phonological conditioning
+
+From the sources, the environment for productive r-metathesis was:
+
+1. **Most productive:** r + short V + s (especially before a following consonant)
+   - *frost* ← \**frust*, *forst*
+   - *berstan* ← \**brestan*
+   - *gærs* ← \**græs*
+   - *fersc* ← \**fresc*
+
+2. **Also common:** r + short V + n
+   - *burna* ← \**brunna* 'stream'
+   - *birnan/beornan* ← \**brinnan* 'burn (intr.)'
+   - *irnan/eornan* ← \**rinnan* 'run'
+
+3. **Less frequent:** r + short V + d (Campbell §459.2)
+   - North. *birdas* 'young birds' (beside *briddas*)
+   - *dirda* ~ *dridda* 'third'
+
+4. **Rare:** r + short V + other consonants
+   - Low-stress environments (§459.4)
+
+### FST implementation
+
+Given the variable and dialectal nature of r-metathesis, we implement a restricted
+rule targeting the most productive environment: **\*r + V + st** clusters.
+
+```
+# OERMetathesis: r-metathesis before *s*t cluster (Campbell §459)
+# PGmc *CrVst → OE CVrst
+# Restricted to *st cluster to avoid overapplication
+define OERMetathesis [
+  [{*r}{*e} -> {*e}{*r} || _ {*s}{*t}] .o.
+  [{*r}{*u} -> {*u}{*r} || _ {*s}{*t}] .o.
+  [{*r}{*i} -> {*i}{*r} || _ {*s}{*t}] .o.
+  [{*r}{*o} -> {*o}{*r} || _ {*s}{*t}] .o.
+  [{*r}{*a} -> {*a}{*r} || _ {*s}{*t}]
+];
+```
+
+This rule correctly derives:
+
+| Input | → | Output | Gloss |
+|-------|---|--------|-------|
+| \*brestanan | → | *berstan* | 'to burst' ✓ |
+| \*frustą | → | *forst* | 'frost' ✓ |
+
+While correctly *not* applying to:
+
+| Input | → | Output | Gloss |
+|-------|---|--------|-------|
+| \*brandaz | → | *brandes* (gen.sg.) | 'brand' ✓ (no metathesis) |
+| \*bringanan | → | *bringan* | 'to bring' ✓ (no metathesis) |
+
+### What the FST does NOT model
+
+1. **Dialectal variation:** We model a single "standard late WS" output. The
+   Anglian forms with breaking (*beornan, eornan*) are not generated.
+
+2. **Metathesis before n:** We do not currently model *brunna → burna* or
+   *brinnan → birnan/beornan*. These verbs have complex paradigmatic
+   interactions (strong verb classes, causative/inchoative pairs) that would
+   require careful lexical conditioning.
+
+3. **Metathesis before d:** This is sporadic and mostly Northumbrian (*birdas*).
+
+4. **Reverse metathesis (r moves forward):** Campbell §459.3 notes this is rare
+   and mostly confined to forms before *h* (*wrohte, breht, froht*). Not modeled.
+
+### Chronological position in the pipeline
+
+OERMetathesis is ordered **after** OEContraction but **before** the final cleanup
+rules. This late position reflects the historical reality that most r-metathesis
+occurred after breaking and most other vowel changes (Campbell §155, §459).
+
+### Outstanding issues
+
+- **\*brunna → burna:** Would require extending the rule to *rVn* environments,
+  but this risks overapplication to forms like *bringan*.
+- **Dialectal forms:** A full dialect model would need multiple output tracks.
+- **Verb paradigm leveling:** The OE verb paradigms show extensive analogical
+  leveling between metathesized and non-metathesized stems.
+
+### Evaluation impact
+
+Adding OERMetathesis (restricted to \*rVst):
+
+- Previous: 295/386 matches (76.4%)
+- Current: 297/386 matches (**76.9%**, +2 matches)
+
+The gains are modest but correct: we now derive *berstan* and *forst* without
+regressions.
