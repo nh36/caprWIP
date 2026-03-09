@@ -1438,6 +1438,10 @@ define OEIUmlautFronting [
     {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
+# R/T §6.6.2: I-umlaut of low front *æ → e. This is the standard OE i-umlaut
+# of short *a: *a → *æ (fronting) → e (raising). Forms like OE stæf, cræft
+# that retain æ do so because their proto-forms lacked i-umlaut triggers
+# (e.g. *staba- a-stem, not *stabiz i-stem).
 define OEIUmlautRaising [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
