@@ -7,6 +7,7 @@
 - [PWGmc *lþ → *ld Voicing and Verner's Law Overlap](#pwgmc-lþ--ld-voicing-and-verners-law-overlap)
 - [PWGmc *j-related Sound Changes](#pwgmc-j-related-sound-changes--reviewed-see-notable_findingsmd-3)
 - [OE duru 'door': Stem-Class Correction](#oe-duru-door-stem-class-correction)
+- [OE botm 'bottom': Paradigmatic Leveling](#oe-botm-bottom-paradigmatic-leveling)
 - [PGmc *i > WGmc *e Lowering](#pgmc-i--wgmc-e-lowering-the-case-of-nest-2026-03-09h)
 
 ### Project status and archived work
@@ -246,6 +247,87 @@ Changed COUNTERPART from `duru` to `dor` in TSV row 1992, keeping `*durą`.
 
 ---
 
+## OE botm 'bottom': Paradigmatic Leveling
+
+**Date:** 2026-03-10
+**Status:** Implemented (changed proto-form to `*buttmăz`)
+
+### The problem
+
+The TSV lists `*budmăz → botm`, but our FST produces `bodm` (with voiced *d*). The expected form `botm` shows voiceless *t*.
+
+### Etymology (Kroonen p.82)
+
+The PIE etymology involves a complex mn-stem paradigm:
+
+- **PIE nominative:** `*bʰudʰ-mḗn` 'bottom, ground'
+- **PIE genitive:** `*bʰudʰ-mn-ós`
+
+In the genitive, the cluster *-dʰmn-* underwent **dissimilation** at the PIE stage:
+> `*bʰudʰ-mn-ós` → `*bʰutn-ós` (Kroonen: "in the genitive, the *m dissimilated")
+
+This yields a PGmc paradigm with alternating stems:
+- **Nominative:** `*budmṓ` (with *d* from PIE *dʰ*)
+- **Genitive:** `*buttaz` (with *tt* from dissimilated *tn* + Kluge's Law)
+
+### The daughter-language split
+
+Kroonen explicitly notes the different stem variants:
+> "The resulting paradigm **\*budmṓ, \*buttaz** gave rise to multiple stem variants, i.e. OS bodom < \*budma-, OE botm < \*buttma- and ON botn < \*buttna-."
+
+Each daughter language generalized a different stem:
+- **Old Saxon:** `bodom` < `*budma-` (nominative stem with *d*)
+- **Old English:** `botm` < `*buttma-` (oblique stem with *tt*)
+- **Old Norse:** `botn` < `*buttna-` (oblique stem with *n-suffix)
+
+### The lautgesetzlich question
+
+Can we find a PGmc proto-form that yields OE `botm` by purely regular development?
+
+**The complication:** The OE form `*buttma-` is a **secondary thematicization**:
+- The oblique stem `*butt-` (from dissimilation + Kluge's Law)
+- Combined with `*-ma-` (from the nominative's *-m-*)
+- This is Ausgleichung (paradigmatic leveling), not pure phonological development
+
+**However:** The `*butt-` element *is* lautgesetzlich — it develops regularly from PIE via dissimilation. What's analogical is only the restoration of `*-m-` from the nominative.
+
+### FST implementation
+
+We treat `*buttmăz` as the "pre-OE" input form, representing the leveled paradigm. The FST then applies:
+
+1. **OEPreconsonantalDegemination** (R/T §6.8.1): `*tt` → `t` before sonorant
+   > `*buttmăz` → `*butmăz`
+2. **OEULowering**: `*u` → `*o` (in non-labial environment)
+   > `*butmăz` → `*botmăz`
+3. **Final vowel loss**: `*-ăz` → ∅
+   > `*botmăz` → `botm`
+
+**Required changes:**
+- Added `t:{*t} t:{*t} m:{*m}` to `pgrmCodaComplex` to parse geminate cluster
+- Added `OEPreconsonantalDegemination` rule to pipeline (restricted to sonorants only
+  to avoid over-applying to j-geminated forms like `*sattjăną → settan`)
+
+```foma
+define OESonorant [{*m}|{*n}|{*l}|{*r}];
+define OEPreconsonantalDegemination [
+    {*t} -> 0 || {*t} _ OESonorant
+];
+```
+
+### Scholarly justification
+
+This approach follows the principle established for `duru/dor`: when an attested OE form reflects a specific stem variant, we use the proto-form that most directly produces that outcome, while documenting the morphophonological history.
+
+The `*buttm-` stem is partly analogical (the *-m-* element), but the `*butt-` component is genuinely inherited via regular PIE dissimilation and Kluge's Law. The OE form preserves this inherited voiceless geminate.
+
+### Implementation (2026-03-10)
+
+Changed PROTOFORM from `*budmăz` to `*buttmăz` in TSV row 1959.
+
+**Result:** 301 → **302/380 matches (+1)**
+
+---
+
 ## PWGmc *lþ → *ld Voicing and Verner's Law Overlap
 
 **Date:** 2026-02-13
@@ -343,7 +425,7 @@ to *iu before *ō. Different mechanisms, different environments, different outco
 ## Project Status (as of 2026-03-10)
 
 **Pipeline:** PGmc → OE FST builds clean; 50+ ordered sound-change stages.
-**Coverage:** 302/386 matches (**78.2%**), 78 mismatches, 6 no-output.
+**Coverage:** 302/380 matches (**79.5%**), 78 mismatches, 6 no-output.
 **Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (Mar 8) → 78 (current).
 
 **Reference library:** Ringe & Taylor (vols. 1–2), Hogg (vol. 1), Campbell OEG, Bülbring,
