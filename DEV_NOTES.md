@@ -4936,3 +4936,110 @@ place structure and are the strongest blockers.
 
 If this generalization is not already in the literature, it represents a potentially
 novel finding from our FST implementation.
+
+---
+
+## OE dile 'dill': i-stem vs. ja-stem (2026-03-10)
+
+### The problem
+
+**TSV row 1990:** `*deljăz → dile` (Old English)
+**FST output:** `*deljăz → dill` (with geminate -ll- from j-gemination)
+**Expected:** `dile` (with single -l-)
+
+The mismatch arises because the TSV uses a **ja-stem** proto-form `*deljăz`, which triggers j-gemination (`*-lj- → *-ll-`), producing OE `dill`. But the attested OE form is `dile` with a single -l-, suggesting an **i-stem** input.
+
+### Kroonen's analysis
+
+Kroonen (p.93, s.v. `*deli- ~ *delja-`) explicitly notes both stem classes:
+
+> "The material offers evidence for both an **i-stem** (OE *dile*) and a **ja-stem** (OS *dilli*, OHG *tilli*). Perhaps the forms with rounded vowels (OE *dyle*, MHG *tülle*) can be adduced to reconstruct an additional ablauting pair `*duli- ~ *dulja-`. If so, the original paradigm probably had ablaut of the root, viz. nom. `*deliz`, gen. `*duljaz` < `*dhél-i-s`, `*dʰl̥-i-ós`."
+
+**Key point:** Kroonen reconstructs:
+- **Nominative (i-stem):** `*deliz`
+- **Genitive (ja-stem with ablaut):** `*duljaz`
+
+The OE form `dile` reflects the **nominative i-stem** `*deliz`, while OS `dilli`, OHG `tilli` reflect the **ja-stem** (generalized from oblique cases or with leveled root vowel).
+
+### Orel's analysis
+
+Orel (s.v. `*ðeljaz`) gives only the ja-stem form, listing OE `dile`, OS `dilli`, OHG `tilli` under the same headword. He does not distinguish i-stem from ja-stem, which obscures the morphological variation that Kroonen highlights.
+
+### Cognate distribution by stem class
+
+| Language | Form | Stem class | Expected from i-stem `*deliz` | Expected from ja-stem `*deljăz` |
+|----------|------|------------|------------------------------|--------------------------------|
+| **Old English** | `dile` | i-stem ✓ | `*deliz → dile` ✓ | `*deljăz → dill` ✗ |
+| **Old Saxon** | `dilli` | ja-stem | — | `*deljăz → dilli` ✓ |
+| **Old High German** | `tilli` | ja-stem | — | `*deljăz → tilli` ✓ |
+| **Dutch** | `dille` | ja-stem | — | `*deljăz → dille` ✓ |
+
+### The solution
+
+**Option A (recommended): Update OE proto-form to i-stem**
+
+Change row 1990 from `*deljăz` to `*deliz`.
+
+- **Rationale:** OE `dile` is the regular i-stem outcome; OS/OHG `dilli/tilli` are ja-stem outcomes. Each daughter language generalized a different stem class.
+- **Parallels:** Same principle as `botm` — use the proto-form that directly produces the attested outcome for each doculect.
+- **Expected:** `*deliz → dile` ✓
+
+**Option B: Keep ja-stem, accept mismatch**
+
+Keep `*deljăz` and document as an exception.
+
+- **Rationale:** Maintain cognate-set unity across daughter languages.
+- **Problem:** The OE form is then not derivable by regular sound change.
+
+### Recommendation
+
+**Option A** is recommended because:
+
+1. **Kroonen explicitly reconstructs `*deliz` as the i-stem nominative** — this is not speculation but standard reconstruction.
+2. **The OE form `dile` (single -l-) is incompatible with j-gemination** — if it were from `*deljăz`, we would expect `*dill`.
+3. **The principle of paradigm-cell matching applies**: use the proto-form that produces the attested outcome for each daughter language.
+4. **The OS/OHG rows can keep `*deljăz`** since their geminate forms `dilli/tilli` are ja-stem outcomes.
+
+This is a straightforward case of daughter-language stem divergence, exactly parallel to the `botm` case.
+
+### What each source says (exhaustive survey)
+
+**Kroonen (2013), p.93, s.v. `*deli- ~ *delja-`:**
+> "The material offers evidence for both an i-stem (OE *dile*) and a ja-stem (OS *dilli*, OHG *tilli*). [...] If so, the original paradigm probably had ablaut of the root, viz. nom. `*deliz`, gen. `*duljaz` < `*dhél-i-s`, `*dʰl̥-i-ós`."
+
+Kroonen reconstructs **both stems** and explicitly derives OE `dile` from i-stem `*deliz`.
+
+**Kluge-Seebold (2011), s.v. *Dill*:**
+> "Aus wg. `*delja-` m. 'Dill', auch in ae. *dile*, nschw. *dill*. Daneben ae. *dyle* (selten), nndl. *dulle*, mhd. *tüll(e)*, nnorw. *dylla*. Am ehesten zu Dolde..."
+
+Kluge-Seebold reconstructs only the **ja-stem** `*delja-` but acknowledges variant forms with different root vowels (`*dyle*, *dulle*, *tülle*). They do not distinguish i-stem from ja-stem for OE.
+
+**Orel (2003), s.v. `*ðeljaz`:**
+> "Swed *dill* 'dill', OE *dile* id., OS *dilli* id., OHG *tilli* id. Related to OIr *deil* 'rod' < `*dheli-`."
+
+Orel gives only the **ja-stem** headword and does not discuss stem-class variation. The Celtic cognate points to i-stem `*dheli-`.
+
+**Fulk (2018), *Comparative Grammar*, §7.11 (ja-stems in NWGmc):**
+> "...probably also *dili* 'dill' (cf. OS *dilli*) in the Corpus Glossary, acc. sg. *dile* in EWS, as well as a few OHG forms like *beti* beside *betti* 'bed' noted below..."
+
+Fulk cites OE `dili` (Corpus Glossary) and `dile` (early WS acc.sg.) as evidence that some ja-stems were **transferred to the i-stems** in OE. This supports Kroonen's dual-stem analysis.
+
+**OE Glossaries (Wright, Hall):**
+The OE dictionaries attest `dile` glossing Latin `anetum` 'dill'. Hall gives `dile, dill` with cross-reference, suggesting both spellings existed. The single -l- form `dile` is primary.
+
+**Campbell (1959), *OEG*:**
+No direct discussion of `dile`, but the ja-stem vs. i-stem alternation is a well-known pattern (§590-591).
+
+**Luick (1914-40):**
+No direct discussion of `dile`.
+
+**Summary:** Kroonen and Fulk explicitly support the i-stem `*deliz` → OE `dile` derivation. Kluge-Seebold and Orel give only the ja-stem but do not explain the single -l- in OE. The OE evidence (single -l-, Corpus Glossary `dili`) strongly supports i-stem classification for OE.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.93, s.v. `*deli- ~ *delja-`
+- Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch*, s.v. *Dill*
+- Orel, V. (2003). *Handbook of Germanic Etymology*, s.v. `*ðeljaz`
+- Fulk, R.D. (2018). *Comparative Grammar of Early Germanic*, §7.11
+- Wright, J. (1898). *Old English Grammar* — OE glossary evidence
+- Hall, J.R.C. (1916). *Concise Anglo-Saxon Dictionary*, s.v. `dile`
