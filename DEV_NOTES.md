@@ -322,20 +322,13 @@ Kroonen (p.82):
 
 #### The OE form `*buttma-`
 
-The OE stem `*buttma-` is a **secondary thematicization**:
-1. The oblique stem `*butt-` (with geminate from Kluge's Law) was extracted
-2. The suffix `*-ma-` (from the nominative's `*-m-`) was attached
-3. This created a new thematic a-stem `*buttma-`
-
-This is a form of **Ausgleichung** (paradigmatic leveling), specifically:
-- The consonantism (`*tt`) comes from the genitive/oblique
-- The suffix (`*-m-`) comes from the nominative
+See below ("The answer: Kroonen 2006") for the full explanation of how OE `*buttma-` arose. In brief: the geminate root `*butt-` (from the oblique) was spread to the nominative while preserving the nominative suffix `-m-`.
 
 #### Other WGmc evidence
 
-Orel (`*buðmaz ~ *butmaz`) notes: "Unexplained fluctuations in the intervocalic dental." This reflects the paradigmatic alternation.
+Orel (`*buðmaz ~ *butmaz`) notes: "Unexplained fluctuations in the intervocalic dental." This reflects the paradigmatic alternation that Kroonen 2006 explains.
 
-R/T vol.2 (p.[section on epenthesis]) mentions: "Here too belongs botm 'bottom, ground, foundation' (OF bodem (*-d-), OS bodom, OHG bodam (*-þ-), ON botn; preform')" — showing the dialect variation in consonant quality.
+R/T vol.2 (§6.9.5) lists the dialect variation in consonant quality: "Here too belongs botm 'bottom, ground, foundation' (OFri. bodem (*-d-), OS bodom, OHG bodam (*-þ-), ON botn)".
 
 ### Campbell on the phonology
 
