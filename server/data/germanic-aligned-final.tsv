@@ -319,7 +319,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1700	f ɪ ŋ ə r	*fingrăz	f ɪ ŋ - ə r ( - - )	fɪŋər	Finger	466	German				finger	*fingrăz	75
 1588	v yː r	*fūri	v yː - - r	vyːr	vuur	435	Dutch				fire	*fūri	76
 1587	f aɪ ə	*fūri	f aɪ - ə r	faɪə	fire	435	English				fire	*fūri	76
-2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Note: using dat.sg. *fūri (> fȳre)			fire	*fūri	76
+2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr. See DEV_NOTES.md.			fire	*fūri	76
 1586	f ɔy ə r	*fūri	f ɔy - ə r	fɔyər	Feuer	435	German				fire	*fūri	76
 1262	v ɪ s	*fiskăz	v ɪ s - ( - - )	vɪs	vis	346	Dutch				fish	*fiskăz	77
 1261	f ɪ ʃ	*fiskăz	f ɪ ʃ - ( - - )	fɪʃ	fish	346	English				fish	*fiskăz	77

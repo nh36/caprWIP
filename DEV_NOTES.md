@@ -5288,3 +5288,192 @@ FST now correctly produces `nǣdre`.
 - Orel, V. (2003). *A Handbook of Germanic Etymology*, p.279
 - Campbell, A. (1959). *Old English Grammar*, §453
 
+
+---
+
+## OE fȳr/fȳre 'fire': Paradigm and umlaut problem (2026-03-10)
+
+### The problem
+
+The TSV uses proto `*fūri` (dative/locative singular) with target `fȳre`.
+The FST produces `fȳr` (without the `-e` ending).
+
+This is a **paradigm-cell selection problem**. The i-umlaut in OE `fȳr` can
+only have arisen from a paradigm cell with `*-i` in the ending. But by regular
+high-vowel apocope, that `*-i` should have been deleted after a heavy syllable.
+
+### The PGmc paradigm (Kroonen p.151)
+
+> "*fōr ~ *fun- n. 'fire' — ... An old heteroclitic formation, probably to be
+> reconstructed as Pre-Germanic *péh₂-ur, gen. *ph₂-un-ós, loc. *ph₂-uén-i.
+> The heteroclisy was preserved by Proto-Germanic, which appears to have had
+> a paradigm *fōr (with *-ou- > *-ō-), gen. *funins (for older *funaz < *ptinés
+> with Dybo's law), dat. *fu(w)eni. ... The attestations with front mutation,
+> e.g. ON fyrr, OE fyr, OHG fuir, fiur, are based on a dative form *fu(w)eri."
+
+So the PGmc paradigm was heteroclitic:
+- nom.sg. `*fōr` (no umlaut trigger — root has *ō, no *-i ending)
+- gen.sg. `*funins` (n-stem, no umlaut)
+- dat.sg. `*fu(w)eri` (r-stem dative with *-i → triggers umlaut)
+
+The WGmc forms with i-umlaut (OE fȳr, OHG fuir/fiur) can ONLY come from
+the dative/locative, since only that case had *-i to trigger umlaut.
+
+### R/T vol.2 p.119 (§4.2.2)
+
+> "The inherited neuter r/n-stems 'water' and 'fire' had apparently undergone
+> a great deal of remodelling in PWGmc. ... the nom.-acc. sg. of the latter was
+> apparently disyllabic *fuir, with an unusual sequence that can only have
+> arisen by levelling of nom.-acc. *-r into the oblique stem *fuin- (dissimilated
+> from *funin-?). ... In the daughters both are inflected as neuter a-stems ...
+> **whether OHG dat. or inst. fyur reflects an inherited dat. sg. *fuiri is
+> doubtful, since endingless dat. sg. forms of other a-stems are also found.**"
+
+Key insight: R/T explicitly note that OHG `fyur` may or may not preserve an
+inherited dat.sg. `*fuiri`. They express doubt because endingless datives occur
+in other a-stems as well — the ending may have been lost and not restored.
+
+### R/T vol.2 pp.379-380 (§7.2.2): Endingless datives
+
+R/T provide a detailed discussion of endingless dat.sg. forms:
+
+> "A striking peculiarity is the appearance of endingless dat. sg. forms where
+> an overt ending -e would be expected. ... The dat. sg. dæg, which competes
+> in locative function with inherited dæge ... can owe its lack of ending to
+> lexical analogy with dat. sg. niht < PWGmc, PGmc *nahti."
+
+The endingless dative pattern spread from `niht` (< `*nahti`) to other nouns
+like `dæg`, `morgen`, `ǣfen`, `hām`, and place-name compounds. This was
+a **later analogical development** after the regular sound change had deleted
+the ending.
+
+### The phonological problem
+
+For `*fūri` → `fȳr(e)`:
+1. PGmc dat.sg. `*fu(w)eri` > PWGmc `*fūri` (with vowel metathesis per Kroonen)
+2. `*ū` is umlauted by following `*i` → `*ȳ`
+3. But then `*i` is apocopated after heavy syllable (long vowel + consonant)
+
+The FST correctly implements step 3, giving `fȳr`. But the attested OE form
+`fȳre` suggests the `-e` was **analogically restored** after apocope.
+
+### Why the `-e` was restored (hypothesis)
+
+Since 'fire' was remodelled as a neuter a-stem in OE (as R/T note), the
+dat.sg. ending `-e` could have been restored by analogy with regular a-stem
+datives (e.g. `word` : `worde`). This is the same type of analogical leveling
+that R/T discuss for other paradigms.
+
+The process was:
+1. Pre-OE: `*fūri` (inherited dative with *-i)
+2. I-umlaut: `*fȳri` (umlaut triggered)
+3. High-vowel apocope: `*fȳr` (ending lost after heavy syllable)
+4. Analogical restoration: `fȳre` (dative ending restored by a-stem analogy)
+
+### What to do
+
+The FST cannot model step 4 (analogical restoration). We have two options:
+
+**Option A: Accept `fȳr` as the output**
+Change the TSV target from `fȳre` (dat.sg.) to `fȳr` (nom.sg.). This is the
+phonologically regular outcome and the standard dictionary headword form.
+
+**Option B: Document as analogical exception**
+Keep `fȳre` as target, document that the `-e` is analogically restored and
+not predictable from the proto-form. Accept the mismatch.
+
+**Option C: Find a different paradigm cell**
+Check whether any other case form both:
+- Had an ending that triggered umlaut
+- Did NOT undergo high-vowel apocope
+
+Looking at the a-stem paradigm, the relevant cases are:
+- gen.sg. `*-is/-as` → no umlaut trigger
+- dat.sg. `*-i` → triggers umlaut, but apocopated
+- gen.pl. `*-ō` → no umlaut trigger  
+- dat.pl. `*-umiz` → no umlaut trigger
+
+None of the other case forms have `*i` in the ending. The locative/dative
+`*-i` is the ONLY source for i-umlaut in this noun.
+
+### Decision
+
+We recommend **Option A**: change the target to `fȳr` (nominative/accusative
+singular), which is the regular phonological outcome and the standard
+dictionary headword. The dative `fȳre` has an analogically restored ending
+that the FST cannot predict.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.151
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2:
+  - §4.2.2 (p.119): PWGmc *fuir and a-stem remodelling
+  - §7.2.2 (pp.379-380): Endingless dative forms and their spread
+
+
+### Update: Four-part analogical model for dative -e restoration (2026-03-10)
+
+The problem with `fȳr`/`fȳre` illustrates a general pattern: when a case ending
+that triggered a stem change (like umlaut) was later deleted by apocope, it could
+be **analogically restored** based on paradigm pressure from nouns where the
+ending was never lost.
+
+#### The four-part analogy
+
+Using `word` (a regular neuter a-stem where dat.sg. `-e` was never lost) as the
+analogical model for `fȳr`:
+
+```
+      Nom.sg.   Dat.sg.
+      -------   -------
+word:  word   :  worde   = (regular a-stem, -e preserved throughout)
+fȳr:   fȳr    :  X       → X = fȳre (by proportion)
+```
+
+The analogy operates as:
+- `word : worde :: fȳr : X`
+- Solving for X: `X = fȳre`
+
+This is classic **four-part analogical leveling**: the surface ending `-e` from
+the regular paradigm is extended to the irregular paradigm, even though the
+ending had been phonologically deleted in `*fūri` > `fȳr`.
+
+#### Why this happens
+
+1. **Phonological deletion**: Pre-OE `*fūri` (dat.sg.) → `*fȳri` (i-umlaut) → 
+   `fȳr` (high-vowel apocope after heavy syllable)
+
+2. **Paradigm pressure**: Regular neuter a-stems like `word` have a clear
+   nom.sg. : dat.sg. distinction (`word` : `worde`). Native speakers expect
+   this pattern.
+
+3. **Analogical restoration**: Speakers who acquire `fȳr` as nom.sg. create
+   `fȳre` as dat.sg. by analogy with `word` : `worde`, even though the
+   historical form was endingless.
+
+#### Attestation of endingless dative
+
+R/T vol.2 p.119 (§4.2.2) note:
+> "whether OHG dat. or inst. fyur (Braune and Reiffenstein 2004: 185) reflects
+> an inherited dat. sg. *fuiri is doubtful, since endingless dat. sg. forms of
+> other a-stems are also found."
+
+This suggests that OHG may preserve an endingless dative `fyur`, which would
+represent the phonologically regular outcome before analogical restoration.
+For OE specifically, we have not found direct attestation of an endingless
+dat.sg. `fȳr`, but the analogy with OHG suggests it may have existed.
+
+R/T §7.2.2 (pp.379-380) discuss the spread of endingless datives from `niht`
+(< PWGmc `*nahti`) to other nouns, showing that endingless datives were a
+productive pattern in early OE.
+
+#### FST implications
+
+The FST correctly produces `fȳr` from `*fūri`, representing:
+- The phonologically regular outcome (stages 1-3 above)
+- NOT the analogically restored form `fȳre` (stage 4)
+
+Since analogical restoration is a morphological process, not a phonological
+one, the FST cannot model it. We flag this as a **known analogical exception**
+in the mismatch report.
+
