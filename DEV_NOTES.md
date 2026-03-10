@@ -419,9 +419,38 @@ Kroonen (2006:23) also addresses why some forms show `-n-` instead of `-m-`:
 
 **Kroonen (2013), p.82:** Summarizes the 2006 analysis but without the full derivational explanation.
 
-**Orel (2003), s.v. `*buðmaz ~ *butmaz`:** Notes "Unexplained fluctuations in the intervocalic dental" — the 2006 article provides the explanation Orel lacked.
+**Hamp (1990), "Variation in Indo-European 'bottom'" (FS Bailey, pp. 447-450):**
 
-**Kluge-Seebold (2011):** Suggests the dental variation "can derive from different assimilation to the nasal" but does not provide the full paradigmatic analysis.
+Hamp offers an **alternative analysis** to Kroonen's, worth documenting for scholarly completeness. His key points:
+
+1. **The Germanic forms require three distinct etyma** (p. 447):
+   - `*boðm` (> OHG *bodam*, OS *bothme*, MDu/MLG forms)
+   - `*botm` (> OE *botm*)
+   - `*bodn` (> OE *bodan*, OFri *boden*, and underlying ON *botn*)
+
+2. **`*bodn` is the clearest etymon** — an exact cognate of Skt. `budhná-`, i.e. PIE `*bʰudʰ-nó-` (p. 447).
+
+3. **The problematic `*-m-` forms:** Hamp explicitly rejects dissimilation and suffix-manipulation explanations (p. 448):
+   > "All such attempts are poorly founded. They all suffer from insufficient specification of phonetic context and from leaving other instances untouched."
+
+4. **Hamp's alternative proposal** (pp. 448-449): Speakers reanalyzed inherited `*budna-` (< `*bʰudʰ-nó-`) as if it were a Vernerized `*buþ-nó-`, extracting a new base `*buþ-` which then produced `*buþma-` → `*boþm-`. This is a **folk-etymological reanalysis** rather than regular sound change.
+
+5. **The `*-t-` in `*butma-`:** Hamp suggests it derives from an old root noun nominative `*bʰuts` (with final devoicing), which was reanalyzed as a stem `*bʰud-` → `*bhud-mo-` (p. 449).
+
+**Comparison with Kroonen (2006):**
+
+| Issue | Kroonen 2006 | Hamp 1990 |
+|-------|--------------|-----------|
+| Source of `*-tt-` | Kluge's Law gemination in oblique | Reanalysis from nom. `*bʰuts` |
+| Source of `*-m-` | Preserved from nominative, never lost | Requires separate `*-ma-` suffix |
+| Mechanism | Regular paradigmatic allomorphy | Folk-etymological reanalysis |
+| Key evidence | Parallel mn-stems (`*hrīma-`) | No parallel cases cited |
+
+**Assessment:** Kroonen's 2006 analysis is more economical because it derives both the geminate and the suffix variation from a single paradigmatic source (the mn-stem alternation), whereas Hamp requires multiple independent reanalyses. Kroonen also provides a parallel case (`*hrīma- ~ *hrīpan-` 'rime') that supports his paradigmatic model. However, Hamp's article is valuable for documenting the range of scholarly opinion and for his explicit rejection of ad hoc dissimilation rules.
+
+**Orel (2003), s.v. `*buðmaz ~ *butmaz`:** Notes "Unexplained fluctuations in the intervocalic dental" — Kroonen 2006 provides an explanation; Hamp 1990 provides a different one.
+
+**Kluge-Seebold (2011):** Cites Hamp 1990 among sources; suggests the dental variation "can derive from different assimilation to the nasal."
 
 **Lühr (1988:340-341):** Cited by Kroonen; discusses counter-examples to Kluge's Law and the `*-þ-` forms.
 
@@ -494,6 +523,7 @@ This is consistent with our principle for `duru/dor`: use the proto-form that mo
 
 **Other sources consulted:**
 - Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.82, §2.2.5.2 — summarizes 2006 analysis
+- Hamp, E. (1990). "Variation in Indo-European 'bottom'." In Edmondson et al. (eds.), *Development and Diversity: FS Bailey*, pp. 447-450. — alternative analysis via folk-etymological reanalysis
 - Orel, V. (2003). *Handbook of Germanic Etymology*, s.v. `*buðmaz ~ *butmaz` — pre-dates Kroonen 2006, notes "Unexplained fluctuations"
 - Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch der deutschen Sprache*, s.v. *Boden*
 - Fulk, R.D. (2018). *Comparative Grammar of Early Germanic*, §4.3, §5.6
