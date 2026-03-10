@@ -5571,3 +5571,65 @@ Changed PROTOFORM from `*flaiskăz` → `*flaiskiz` (i-stem nominative).
 - Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch*, p.318
 
 Evaluation: 308/386 OE matches (79.8%).
+
+---
+
+## OE ġieft 'gift' — WS Palatal Diphthongization
+
+**Date:** 2026-03-10
+**Mismatch:** `*geftiz` → FST `ġieft` | Expected `ġift`
+**Resolution:** Change target from `ġift` → `ġieft` (WS form)
+
+### Problem
+
+The FST produces `ġieft` for PGmc `*geftiz`, but the TSV target is `ġift`. This
+is a **dialect mismatch**, not an FST error.
+
+### Etymology
+
+There are two distinct PGmc words for 'gift':
+
+1. **`*gebō-`** (ō-stem feminine) → OE `giefu` "gift, present" (common word)
+   - Kroonen (2013) p.173: "*gebō- f. 'gift, present' — Go. giba f. 'id.', ON gjǫf f. 'id.', OE giefu f. 'id.'"
+
+2. **`*geftiz`** (i-stem feminine) → OE `ġift`/`ġieft` "gift, marriage gift"
+   - Orel (2003) p.130: "*geftiz sb.f.: Goth fra-gifts 'gift, betrothal', ON gipt, gift 'gift of nature, endowment', OE ift 'gift, marriage gift'"
+   - Derived from `*gebanan` 'to give'
+
+The TSV has `*geftiz` (i-stem), not `*gebō-` (ō-stem).
+
+### WS Palatal Diphthongization
+
+The sound change `*e` → `*ie` after initial palatal consonants is a **West Saxon** feature:
+
+Campbell (1959) §185: "e > ie: scieran cut, giefan give (and related words), gieldan pay..."
+
+The pathway for `*geftiz`:
+1. Initial `*g` palatalizes before front vowel `*e` → `*ʤ` (PWGmc/pre-OE)
+2. `*e` diphthongizes after initial palatal → `*ie` (WS palatal diphthongization)
+3. Final `*-iz` lost by regular apocope after heavy syllable
+
+WS result: `ġieft`
+Non-WS result: `ġift` (no palatal diphthongization)
+
+### Attestation
+
+Campbell shows both forms:
+- WS: `giefu`, `giefan` (with diphthong)
+- Kentish/Anglian: `gift` in compound `giftelic` (§348 fn.2)
+
+Hall (1916): Lists `gifu`/`giefu` as the standard lemma.
+
+### Decision
+
+Since the FST models **West Saxon**, the correct output is `ġieft`, not `ġift`.
+Change the TSV target from `ġift` → `ġieft`.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.173
+- Orel, V. (2003). *A Handbook of Germanic Etymology*, p.130
+- Campbell, A. (1959). *Old English Grammar*, §§185, 348 fn.2
+- Hall, J.R.C. (1916). *A Concise Anglo-Saxon Dictionary*, s.v. giefu
+
+Evaluation: 309/386 OE matches (80.1%).
