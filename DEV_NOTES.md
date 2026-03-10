@@ -5210,3 +5210,81 @@ The w-less form `cudu` is a later/dialectal simplification.
 - Stiles, P.V. (1985-86). NOWELE 6: 93 (u-stem analysis)
 
 Evaluation: 306/386 OE matches (79.3%), up from 305.
+
+---
+
+## OE nǣdre 'adder': Fix proto-form *nēdrōn (2026-03-10)
+
+### The problem
+
+The TSV had `*nadrō` as the proto-form. The FST produced `næder` (with short
+vowel and wrong ending), but the expected form is `nǣdre` (with long vowel
+and weak feminine ending).
+
+### What the sources say
+
+#### Kroonen (2013) pp.381, 386-387
+
+Kroonen distinguishes TWO related words:
+
+1. **`*nadra-` m. 'adder, snake'** (p.381)
+   > "*nadra- m. 'adder, snake' — Go. nadrs* m. 'id.', ON nadr m. 'id.'"
+
+2. **`*nédron-` f. 'viper'** (p.386-387)
+   > "*nédron- f. 'viper' — OE nǣdre, nǣddre f. 'id.' (also Nrth. næder m. 'id.'
+   > < *nédra-), E adder, WFri. njirre c. 'id.', EFri. needer f. 'id.', OS nādra,
+   > nadara f. 'id', MDu. nadre, addre, adder f. 'id.', Du. adder c. 'id.', OHG
+   > nat(a)ra f. 'id.', G Natter f. 'id.'"
+   > 
+   > "A formation ablauting with *nadra- (q.v.)."
+
+The key insight is that OE `nǣdre` comes from the **e-grade feminine**
+`*nēdrōn`, NOT the zero-grade masculine `*nadra-`.
+
+#### Orel (2003) p.279, s.v. `*naþraz`
+
+> "*naþraz sb.m.: Goth nadrs 'adder, viper, snake', ON naðr 'viper, adder,
+> snake'. Related to Lat natrix 'water snake', OIr nathir id., W neidr 'snake',
+> Corn nader id., MBret azr id. See also *nēþrōn ~ *naþrōn."
+
+Orel explicitly lists `*nēþrōn ~ *naþrōn` as an alternative form and
+cross-references it. The feminine form with the long vowel is the source
+for the West Germanic feminine forms.
+
+#### Campbell (1959) §453
+
+Campbell lists `næddre` under gemination before liquids:
+> "næddre adder, ǣttres g.s. poison"
+
+The gemination of -dd- is secondary, arising from the cluster -ðr- (§453).
+The long vowel ǣ < PGmc *ē is regular.
+
+### The ablaut relationship
+
+Both forms derive from PIE *neh₂tr- 'that which winds, winder':
+- Zero-grade: *n̥h₂tr-o- → PGmc `*nadra-` (masculine a-stem)
+- E-grade: *neh₂tr-éh₂- → PGmc `*nēdrōn-` (feminine ōn-stem)
+
+West Germanic languages generally continued the **feminine e-grade** form:
+- OE `nǣdre` < `*nēdrōn`
+- OHG `nāt(a)ra` < `*nēdrōn`
+- OS `nādra` < `*nēdrōn`
+
+Gothic and Norse continued the **masculine zero-grade** form:
+- Go. `nadrs` < `*nadraz`
+- ON `naðr` < `*nadraz`
+
+### The fix
+
+Changed PROTOFORM from `*nadrō` → `*nēdrōn`:
+- `*nē-` → OE `nǣ-` (long vowel with i-umlaut of ē > ǣ)
+- `-drōn` → OE `-dre` (weak feminine ending)
+
+FST now correctly produces `nǣdre`.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, pp.381, 386-387
+- Orel, V. (2003). *A Handbook of Germanic Etymology*, p.279
+- Campbell, A. (1959). *Old English Grammar*, §453
+
