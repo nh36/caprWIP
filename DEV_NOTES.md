@@ -5128,3 +5128,85 @@ Evaluation: 305/386 OE matches (79.0%), up from 304.
 - Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, p.160 (breaking examples)
 - Orel, V. (2003). *Handbook of Germanic Etymology*, pp.57–58, s.v. `*breustan` and `*brustz`
 - Campbell, A. (1959). *Old English Grammar*, §115 (eu > ēo breaking)
+
+---
+
+## OE cwedu/cwidu/cudu 'cud, resin': Fix proto-form *kwedu- (2026-03-10)
+
+### The problem
+
+The TSV had `*kwiθuz` as the proto-form, but this appears to be erroneous.
+The FST produced `cwiþu` which does not match the expected `cudu`.
+
+### What the sources say
+
+#### Kroonen (2013) p.316, s.v. `*kwedu- 2 m. 'resin'`
+
+> "*kwedu- 2 m. 'resin' — OE cwidu, cweodu, c(w)udu m. 'cud, mastix', E cud,
+> quid 'ruminated substance; wad of tobacco', OHG quiti, kuti m. 'resin', MHG
+> kite, küt m. 'id.', G Kitt m. 'putty, cement' > *gʷet-u- (IE) — Skt játu- n.
+> 'varnish, gum'..."
+
+Key points:
+- Proto-form is `*kwedu-` (u-stem) with `*e` and `*d`
+- NOT `*kwiθuz` with `*i` and `*θ`
+- OE shows multiple variant spellings: `cwidu`, `cweodu`, `c(w)udu`
+- The parenthetical `(w)` indicates optional w-loss in the variant `cudu`
+
+#### Ringe & Taylor vol.2 p.42 (dw > ww discussion)
+
+> "The OE neuter cwidu, c(w)udu, gen. cwidwes 'gum, cud' could also have been
+> a u-stem originally (Stiles 1985-6, NOWELE 6: 93 with references); note that
+> its only certain cognate, OHG quiti, chuti 'putty, glue' is apparently an
+> i-stem, like many former u-stems..."
+
+R/T note:
+- Gen. sg. `cwidwes` shows the u-stem declension with *-dw- preserved
+- Originally a u-stem (matching Kroonen's `*kwedu-`)
+- OHG cognate has become an i-stem secondarily
+
+#### Campbell (1959) §218
+
+Campbell discusses `cwudu` in the context of combinative back umlaut:
+> "Cp. -cudu cud, although Ep. has some forms without the change, e.g.
+> uuidu-, uuiloc-, -quidu..."
+
+This shows:
+- `cudu` (with w-loss) is the later Corpus Glossary form
+- Earlier Epinal has `-quidu` (with preserved w as `qu`)
+- The root vowel shows u-umlaut from `*i > u`
+
+#### Hall (1916) s.v. `cudu`
+
+> "cwudu (o, i) n. what is chewed, cud"
+
+Lists variants with `w` (cwudu) and without (cudu), plus `i` variant.
+
+### Analysis
+
+The original PGmc form was `*kwedu-` (u-stem, with `*e` and `*d`):
+- `*kw-` > OE `cw-` (later sometimes simplified to `c-`)
+- `*e` > OE `i` or `u` by umlaut processes
+- `*d` > OE `d` (remains stop, not fricative)
+
+The TSV's `*kwiθuz` was incorrect in two ways:
+1. Had `*i` instead of `*e`
+2. Had `*θ` (voiceless fricative) instead of `*d` (voiced stop)
+
+### The fixes
+
+1. Changed PROTO from `*kwiθuz` → `*kweduz` (u-stem nominative)
+2. Changed COUNTERPART from `cudu` → `cwedu` (preserving etymological `cw-`)
+
+The form `cwedu` (with `e` from ablaut variant) is attested alongside `cwidu`.
+The w-less form `cudu` is a later/dialectal simplification.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.316, s.v. `*kwedu- 2`
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, p.42 (dw > ww)
+- Campbell, A. (1959). *Old English Grammar*, §218 (combinative back umlaut)
+- Hall, J.R.C. (1916). *Concise Anglo-Saxon Dictionary*, s.v. `cudu`
+- Stiles, P.V. (1985-86). NOWELE 6: 93 (u-stem analysis)
+
+Evaluation: 306/386 OE matches (79.3%), up from 305.
