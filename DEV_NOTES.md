@@ -5043,3 +5043,88 @@ No direct discussion of `dile`.
 - Fulk, R.D. (2018). *Comparative Grammar of Early Germanic*, §7.11
 - Wright, J. (1898). *Old English Grammar* — OE glossary evidence
 - Hall, J.R.C. (1916). *Concise Anglo-Saxon Dictionary*, s.v. `dile`
+
+---
+
+## OE brēost 'breast': *breustą not *brustz (2026-03-10)
+
+### The problem
+
+The FST produced `burst` from `*brustz` but expected `brēost`. The mismatch
+shows wrong vowel (*u* vs. *ēo*) and no breaking.
+
+### Scholarly analysis
+
+#### Kroonen (2013) p.76–77: Two distinct PGmc formations
+
+Kroonen explicitly distinguishes two cognate sets for 'breast':
+
+**1. Root noun `*brust-` f. 'breast, chest'**
+> "Go. brusts f. 'id.', OFri. brust, burst n. 'id.', OS brust f. 'id.', MLG borst f.
+> 'id.', Du. borst c. 'id.', OHG brust f. 'id.', G Brust f. 'id.' > *bhrus-sth₂-o- (EUR)"
+
+This form has the zero-grade vowel `*u` with NO diphthong. It is attested in
+Gothic, Frisian (including `burst`), Saxon, and German — but **NOT in OE**.
+
+**2. Thematic `*breusta-` n. 'breast, chest'**
+> "ON brjóst n. 'id.', OE bréost n. 'id.', E breast, OFri. briast n. 'id.', OS briost
+> n. 'id.' = *bhreus-sth₂-o- (EUR)"
+
+This form has the e-grade diphthong `*eu` which gives the breaking/diphthong
+outcomes: ON `ió`, OE `ēo`, OFri. `ia`, OS `io`.
+
+Kroonen notes: "In (unclear) ablaut relation with the root noun *brust- (q.v.).
+Given the largely complementary dialectal distribution with the latter word, it
+is likely that both formations split off from a single PGm. paradigm."
+
+#### Ringe & Taylor vol.2 p.160
+
+R/T list this as a standard example of NWGmc `*eu` breaking:
+> "PNWGmc *breusta 'breast' (ON brjóst, OS briost) > OE bréost (OF briast)"
+
+#### Orel (2003) p.57, s.v. `*breustan`
+
+Orel gives `*breustan sb.n.` → "ON brjóst 'breast', OE bréost id. (also fem. and
+masc.), OFris briast id., OS pl. briost id. **An ablaut variant of *brustz**."
+
+And separately s.v. `*brustz` (p.58): "Goth brusts 'breast', OFris brust id., MLG
+borst id., OHG brust id." — with NO OE reflex listed.
+
+#### Campbell (1959) §115 (OE breaking)
+
+Campbell confirms that OE has `brēost` as an example of the `*eu > ēo` outcome,
+noting that the OS cognate `breost` shows the same development while OHG took
+a different path.
+
+### Summary of dialectal distribution
+
+| Proto-form | Gothic | ON | OE | OFri | OS | OHG/G |
+|------------|--------|-----|-----|------|-----|-------|
+| `*brust-` (zero-grade) | brusts | — | — | brust/burst | brust | brust |
+| `*breusta-` (e-grade) | — | brjóst | brēost | briast | briost | — |
+
+OE **always** shows the `*breusta-` form with breaking. The root noun `*brust-`
+is NOT attested in OE.
+
+### The fix
+
+Changed OE PROTO from `*brustz` → `*breustą`
+
+This is the a-stem nominative singular of the thematic form that produces the
+attested OE `brēost` via regular `*eu > ēo` breaking.
+
+### Verification
+
+```
+echo "breustą" | flookup -i old_english.bin
+breustąbrēost  ✓
+```
+
+Evaluation: 305/386 OE matches (79.0%), up from 304.
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, pp.76–77, s.v. `*breusta-` and `*brust-`
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, p.160 (breaking examples)
+- Orel, V. (2003). *Handbook of Germanic Etymology*, pp.57–58, s.v. `*breustan` and `*brustz`
+- Campbell, A. (1959). *Old English Grammar*, §115 (eu > ēo breaking)
