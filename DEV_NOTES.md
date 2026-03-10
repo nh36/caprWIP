@@ -5477,3 +5477,97 @@ Since analogical restoration is a morphological process, not a phonological
 one, the FST cannot model it. We flag this as a **known analogical exception**
 in the mismatch report.
 
+
+---
+
+## OE flǣsċ 'flesh': Fix proto-form *flaiskiz (2026-03-10)
+
+### The problem
+
+The TSV had `*flaiskăz` (a-stem) as the proto-form. The FST produced `flāsc`
+(with long ā and non-palatal c), but the expected form is `flǣsċ` (with ǣ from
+i-umlaut and palatal ċ from palatalization after front vowel).
+
+### What the sources say
+
+#### Orel (2003) p.108, s.v. `*flaiskaz`
+
+> "*flaiskaz sb.n.: ON flesk 'pork', **OE flǣsc 'meat' (i-stem)**, OFris flāsk id.,
+> OS flēsk id., OHG fleisc id. Of uncertain origin."
+
+Key point: Orel explicitly marks OE as an **i-stem**, not an a-stem. This is
+crucial because only an i-stem would trigger i-umlaut of `*ai > ǣ`.
+
+#### Ringe & Taylor vol.2 pp.234-235 (§6.6.2)
+
+R/T explicitly list `*flaiski` as the PWGmc form for 'flesh':
+
+> "PWGmc *flaiski 'flesh, meat' (OS flēsk, OHG fleisc) > *flæsci > OE flǣsċ"
+
+And on p.250:
+
+> "PWGmc *flaiski 'flesh, meat' (OF, OS flēsk, OHG fleisc) > *flæsci > OE flǣsc"
+
+Note the i-stem nominative singular `*flaiski`, not `*flaiskaz`.
+
+#### Campbell (1959) §442 (Palatalization of sc)
+
+> "sc was palatalized and assibilated after any front vowel, original or due to
+> umlaut, e.g. æsc ash, disc dish, fisc fish, risc rush, the suffix -isc, and
+> **after an umlauted vowel flǣsċ flesh**."
+
+Campbell explicitly cites `flǣsċ` as an example of palatalization after an
+**umlauted vowel**, confirming that the `ǣ` comes from i-umlaut.
+
+#### Campbell (1959) §291 (VP and Li. forms)
+
+In his discussion of é spellings for the i-umlaut of ā:
+> "VP many examples including ... flésċ flesh; ... Li. single occurrences of
+> flésċ, huuēte"
+
+The `é` spelling in VP and Li. represents the i-umlaut of `*ai`.
+
+#### Kluge-Seebold (2011) p.318, s.v. 'Fleisch'
+
+> "Aus wg. *fleiska- n. 'Fleisch', auch in ae. flǣsc, afr. flēsk; dazu anord.
+> flesk(i) 'Speck'..."
+
+Note: Kluge-Seebold reconstructs the WGmc root as `*fleiska-`, but this
+doesn't conflict with OE being an i-stem — the stem class can differ by
+daughter language. The OE i-stem is confirmed by the i-umlaut evidence.
+
+### The phonological development
+
+For an **i-stem** `*flaiskiz`:
+1. `*ai` undergoes i-umlaut triggered by `*-iz` → `*ǣ`
+2. `*-sk-` becomes palatal [ʃ] (spelled `sċ`) after front vowel `ǣ`
+3. Final `*-iz` lost by regular apocope
+
+Result: `flǣsċ` ✓
+
+For an **a-stem** `*flaiskaz`:
+1. `*ai` monophthongizes to `ā` (no umlaut trigger from `*-az`)
+2. `*-sk-` remains velar [sk] (spelled `sc`) — no palatalization trigger
+3. Final `*-az` lost
+
+Result: `flāsc` ✗ (FST output without the fix)
+
+### Why OE has an i-stem while other WGmc languages have a-stem
+
+As R/T note, the PWGmc form was `*flaiski` (i-stem neuter). OE preserved
+this, while OS and OHG shifted to an a-stem `*fleiska-` (perhaps by analogy
+or reanalysis). This is not unusual — the same word can have different stem
+classes in different daughter languages.
+
+### The fix
+
+Changed PROTOFORM from `*flaiskăz` → `*flaiskiz` (i-stem nominative).
+
+### Sources
+
+- Orel, V. (2003). *A Handbook of Germanic Etymology*, p.108
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, pp.234-235, 250
+- Campbell, A. (1959). *Old English Grammar*, §§291, 442
+- Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch*, p.318
+
+Evaluation: 308/386 OE matches (79.8%).
