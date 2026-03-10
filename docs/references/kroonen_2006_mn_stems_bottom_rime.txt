@@ -1,0 +1,392 @@
+Amsterdamer Beiträge zur älteren Germanistik 61 (2006), 17-25
+
+GEMINATION AND ALLOMORPHY IN THE PROTOGERMANIC MN-STEMS: BOTTOM AND RIME
+by Guus Kroonen — Leiden
+§1 In the Germanic languages there is limited but significant evidence
+for the occasional loss of the labial nasal in the Indo-European suffix
+-men-. This development is reminiscent of the situation in IndoIranian. In Die Nominalsuffixe (Altindische Grammatik II, 2),
+Wackernagel and Debrunner mention an interchange between mn- and
+n-stems in Sanskrit. According to them, this interchange reflects a
+Proto-Indo-European rule of mn becoming n: “So gehören die
+Instrumentale v. prathinƗ˷ prenƗ˷ bhǌnƗ˷ mahinƗ˷ [...] zu prathimánpremán- bhǌmán- mahimán- [...] und beruhen auf grundsprachlichem
+Wandel von mn zu n hinter labialem Anlaut [...].” (§ 609a.).
+The evidence for the rule is not limited to Sanskrit. There are also
+cases from other languages that show loss of an m in original stems in
+-men or -mon. In all of these cases, the root contains a labial:
+- PIE *bhudh-nó- ‘bottom’: Lat. fundus m., OI bonn m., Skt. budhnám. ‘bottom’. In view of Gr. ½̨̰̻ҟ̩ m. ‘bottom’, the original
+suffix may have been *-mno- in the genitive (Lühr 2000: 301-302).
+- Av. raoȖna- ‘butter’. If it is related to Icel. rjómi m. ‘cream’ <
+*reu(g)man- and MHG rǀme m. ‘id.’ < *rau(g)man-, raoȖna- may
+derive from *(H)re/ough-mno-. Pokorny (p. 873) reconstructs
+*reughm(e)n-.
+- PSlav. *vČno n. ‘dowry’ (= SCr. vijèno n., Russ. véno n., cf. Hamp
+1970), Gr. ы̠̩̝, ъ̡̠̩̝ n. pl. ‘dowry’, OFri. wettma m. ‘dowry’.
+The root seems to be *h1ued-. Frisk (1, 441-442) considers the
+possibility that the Greek and Slavic suffixes reflect *-mno- in
+view of the Germanic mn-suffix.
+- PGm *bragna- ‘brain’. On the basis of the Germanic forms and Gr.
+̡̨̞̬̲ң̭ m. ‘skull’, Hom. ̞̬ҝ̨̲̝ n. ‘id.’, Pokorny (p. 750) reconstructs *mregh-(m)no-.
+The examples form a significant enough basis to assume that after
+roots with a labial, the cluster *-Cmn- was simplified to *-Cn-. The
+extant forms with retained m must consequently be due to the nomi
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+18
+native, or other forms with full grade of the suffix. Especially in view
+of *bhudh-nó-, we can date back the cluster simplification to the proto-language with some confidence.
+The age of the dissimilation rule is nonetheless irrelevant to what is
+at stake here: it appears that the loss of m can account for the problematic consonantal interchange m ~ p in the word for rime, and the t or
+tt in the word for bottom in Germanic. In these lexemes, the loss of m
+gave rise to a combination of a stop and following dental nasal, which
+ultimately resulted in an allomorphic geminate in Proto-Germanic.
+§ 2 Proto-Germanic geminates were first referred to by Hermann Paul
+(1880: 133 fn.), and explained by Ferdinand Kluge in 1884. The process of Proto-Germanic gemination has remained a fundamental issue
+in Germanic and Indo-European linguistics ever since. Not only does
+the rise of geminates constitute an essential phonological demarcation
+line between Proto-Indo-European and Proto-Germanic, as PIE did
+not have long consonants, but it is also vital to any interpretation of
+the two other basic sound shifts, Grimm’s and Verner’s law, i.e. the
+lenition and voicing of PIE plain stops after unaccented syllables (cf.
+Kortlandt 1991).
+In ‘Die germanische Consonantendehnung’ (1884), Kluge analyzed
+the Proto-Germanic geminates from an Indo-European perspective,
+and his analysis has now become the canonical view. Even though the
+bulk of the words containing a geminate do not have cognates outside
+Germanic, Kluge, as a true Neogrammarian, concluded that the Germanic long stops had arisen through regular sound change: many
+Proto-Germanic geminates can be associated with n-suffixes in other
+Indo-European languages, or otherwise with an attested or putative nstem paradigm in Germanic. Kluge therefore proposed that all PIE
+stops merged into one and the same voiceless geminate when
+followed by an n-suffix.
+- OE bucca m. ‘bock’ < *bukkan- < PIE *bhugǯ on ~ *bhugǯ nós to Arm.
+buc ‘lamb’, Av. bǌza- ‘goat’.
+- OE þaccian ‘to hit, touch’ < *þakkǀjan- < PIE *th2g-n- to Lat. tangǀ
+‘to touch’, Gr. ̡̯̯̝̟ҧ̩ ‘taking’.
+- OE liccian ‘to lick’ < *likkǀjan- < PIE *ligǯ h-n- to Lat. lingǀ, Gr.
+̧̡̥̲̩ҥ̴ ‘lick’.
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+19
+- ON ho˅ttr ‘hat’ < *hattu- next to *hǀda- ‘hood, hat’. The sequence
+*-CCu- points to an acc. pl. *-nns of an unattested n-stem (cf. Lühr
+1988: 200).
+- MoG schnitzen ‘to carve’ < *snitt- < Pre-PGm. *snit-n- alongside
+schneiden ‘cut’ < *snƯþan-.
+Parallel to the assimilation in clusters with resonants (Sievers 1878:
+149 fn), Kluge concluded that the n-suffix had to be stressed because
+in some cases without a geminate an Indo-European n is preserved.
+These forms often have voiceless fricatives, which requires that they
+were root-stressed before Verner’s law (Kluge 1884: 169). An important instance of a PIE n being retained is PGm. *swefnaz ‘sleep’.
+Since it only has root-stressed cognates (Skt. svápna-, Lith. sãpnas
+(2)1, Gr. ҃½̩̫̭, Alb. gjumë2) it can be brought forward to corroborate
+oxytony as a necessary condition to Kluge’s law.
+§ 3 Some time after Grimm’s law, long stops were shortened in heavy
+syllables (Paul 1880: 133; Kluge 1884: 183). Such a chronology can
+be deduced from the fact that geminates were not lenited by this law
+neither in light nor in heavy syllables. There are numerous examples
+of shortening3:
+- ON hvítr ‘white’ < °hwƯtta- < PIE *k̅ueit-no- to Skt. Ğvítna-, Ğvetá‘white’ (Kluge 1884: 183).
+- Go. þairko f. ‘hole in a needle’ < °þerkkǀn- to Go. þairh ‘through’
+(Lühr 1988: 269).
+- OHG scƗf n. ‘sheep’ < °skƝppa- to Go. skaban skof skabans ‘to
+shave’ (Woods 1919: 207; cf. Davis 1991).
+§ 4 On the morphological level, Kluge’s law had far-reaching consequences. There must have been a period of time during which at
+least some n-stems had two allomorphs: the nominative stem without
+and oblique cases with a geminate. An impressive discussion of the
+material is given by Lühr (1988). In short, one could say that some
+1 Following Illiþ-Švityþ 1979: § 9. Standard Modern Lithuanian has a.p. 4.
+2 On initial PIE *s > Alb. gj in stressed syllables, see Kortlandt 1987: 219-226.
+3 In order to facilitate the discussion of the material, I shall often give the intermediate stage directly preceding heavy syllable shortening. This is also regularly
+done by Lühr in her Expressivität und Lautgesetz im Germanischen (1988). For the
+sake of clarity, I shall mark forms that reflect this stage with a degree mark °.
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+20
+time in late Proto-Germanic, there was a paradigmatic interchange of
+long and short stops. The individual daughter languages have often
+generalized only one allomorph:
+I
+*gnútǀn
+*gnutnás
+
+>
+>
+
+II
+*knuþǀn
+*knuttaz
+
+ĺ
+ĺ
+
+III
+OHG knodo m. ‘knot’
+OE cnotta m. ‘knot’
+
+§ 5 The generalizations of the kind observed here are wellunderstood. A different sort of analogy was proposed by Lühr (1988:
+330-344) in her chapter on counter examples of n-gemination, e.g.
+Go. unairkns ‘true’, ON feikn ‘terrible’, Go. taikns ‘token’, etc. While
+these cases seem to have escaped the effects of Kluge’s law, they
+require an explanation. Lühr assumes that the words under discussion
+are the outcome of no longer attested n-inflections, which combined
+the oblique geminate with the n of the nominative in one root form:
+I
+*daikǀn
+*daiknás
+
+>
+>
+
+IIa
+°taih/gǀn
+°taikkaz
+
+ĺ
+
+IIb
+PGm. *taikna-
+
+Since, nevertheless, *taikna- is not directly attested as an n-stem,
+and it cannot be explained why the adjectival weak inflection led to
+double analogy forms only in *erkna- and *faikna-, Lühr’s view is
+difficult to maintain. In the case of *taikna-, it seems more probable
+to me that the root °taikk- is the result of n-gemination in the verb: OE
+tǙcan ‘to teach’ < °taikkjan- < PIE *doik̅-n- (cf. Go. gateihan ‘to
+announce’, Gr. ̡̠ҡ̨̦̩̰̥ ‘to show’, Av. daƝsa- m. ‘sign’). PGm.
+*taikna- ‘sign’ is therefore best interpreted as a more recent derivative
+of this verb with a na-suffix. Apparently, this suffix was still
+productive after the operation of Kluge’s law. Many of Lühr’s other
+counter examples are probably the result of this derivational process.
+§ 6 It must be stressed that not all long stops can be explained by
+Kluge’s law. Geminates that occur in words with no Indo-European
+etymology are far from rare, e.g. OE rætt m. ‘rat’, OFri. rokk m.
+‘skirt’, Go. skatts m. ‘money’. The Indologist and Indo-Europeanist F.
+Kuiper in his article ‘Gothic bagms and Old Norse ylgr’ (1995) called
+“consonant variation” the most characteristic substratum feature in the
+Germanic lexical material. Similarly, geminates are frequently found
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+21
+in Celtic words of unknown origin. A well-known example of this is
+the Celtic word for son, which in Ogham Irish has a genitive maqqi,
+and turns up in OIr. as macc (Vendryes: M1-2).
+Another word with a geminate is OIr. brocc, MW broch, Bret.
+broc’h ‘badger’. This word is reconstructed for Proto-Celtic as
+*brokko- by Peter Schrijver (1995: 460), and has no Indo-European
+etymology. A link outside Celtic is nevertheless provided by OHG
+braccho ‘sniffer dog’ and cognates (Van Wijk 1971: 89a).
+The badger (Meles meles) is known to have a strong sense of smell,
+of which it makes use to find insects while rooting in the ground. This
+meaning is compatible with the one found in Germanic: “sniffer dog”.
+The formal comparison of PGm. *brakkǀn and PCelt. *brokkos is
+unproblematic too. With no good Germanic and Celtic etymology
+present, it is therefore likely that *brokk- was borrowed into these
+languages from an unknown substratum language with long stops.
+It is interesting to see that *brokk- was assigned to the class of the
+n-stems in Germanic. Geminates were apparently associated with the
+n-stems at the time when the word entered the language. Hence we
+may conclude that Kluge’s law was anterior to the adoption of
+*brokk- from an external source.
+§ 7 I shall now discuss the Germanic material that evidences root
+variation in the words for bottom and rime. This root variation, or
+allomorphy, was caused by loss of m in the oblique cases and the
+operation of Kluge’s law.
+a. PGm. *buttma- ‘bottom’
+This Germanic word shows a number of root variants:
+*bud-: - OE bodan m., ME bodme, boden
+- OFri. bodem, boden m.
+- OS bodme dat. sg. m.
+- MLG bǀdem(e), boddem(e), bodden m.
+- MDu. bodem, boden, boom m., Du. bodem c.
+*but(t)-: - OE botem m., ME botme, bot(t)em, E bottom
+- ON botn m.
+*buþ-: - OHG bodam m., MHG bodem, boden m., G Boden m.
+- OS bothme dat. sg. m.
+- ME bothme
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+22
+A sound Indo-European etymology is provided by Gr. ½̨̰̻ҟ̩ m.
+‘ground, basis’, Skt. budhná- m. ‘bottom, ground, depth’, Lat. fundus
+m. ‘ground, bottom’, and MIr. bonn ‘bottom’ (see § 1).
+With regard to the morphology of the word, there are several indications that it originally had a suffix -men- (cf. Pokorny, 174). First
+of all, the Greek word attests this suffix. Secondly, in Germanic, the
+parallelism of the formations that continue *Ɲþma(n)- ‘breath’, e.g.
+OFri. Ɲthma m. and OE Ǚðom m. suggests such an conjugation. For
+these reasons I reconstruct *budman- for Germanic as well. MLG
+bod(d)eme (Gallée 1903: 35) may be a remnant of this weak noun.
+The PIE root of bottom was *bhudh-, with two mediae aspiratae.
+The Germanic forms with *t and *þ are therefore unexpected. As a
+solution, Kluge suggested that OE botm is a contamination of
+*budman- with a form *butta- = Skt. budhná- (1884: 172 fn. 1).
+Needless to say that it is by all means implausible that the geminate
+of *buttma- is to be explained from gemination before m. If this were
+the case, many more geminates would have been expected in this
+position, yet we find OHG fadam ‘embrace’ < *ph2t-mo-, OHG rotmo
+‘blush’, ON roðmi ‘id.’ < * PIE *h1rudh-mon-. The different effects of
+m and n point to assimilation of the latter during Kluge’s law, and
+retention of the labial nasal.
+I therefore think that Kluge’s insight is correct. The fact that
+*but(t)ma- received its t analogically from *buttaz can nevertheless
+only be understood if the two root forms were still part of one and the
+same paradigm after Kluge’s law. In other words, the roots *bud- and
+*but(t)- must have been two allomorphs at a certain stage. In this way,
+Kluge’s proposal fits into the picture of a PGm. inflection in -mn- too.
+Just as the thematic formation *bhudh-nó- in Sanskrit and Italo-Celtic,
+the Germanic allomorph *butt- must be explained from loss of the m
+in the genitive and some other oblique cases: *bhudh-mnós > *bhudhnós (cf. Lühr 2000: 301-302), which by Kluge’s law became *buttaz.
+I
+*bhudhmƝ/ǀn
+*bhudhnás
+
+>
+>
+
+II
+°budmƝ/ǀn
+°buttaz
+
+ĺ
+ĺ
+
+III
+MDu. bodem, OE bodan
+OE botem, ON botn
+
+The paradigm remained intact until after the breaking up of ProtoGermanic. The separate daughter languages show several ways of resolving the allomorphy.
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+23
+The geminate that arose by Kluge’s law spread to the nominative
+allomorph in Old English botem, and probably also in Old Norse botn.
+The original dental was retained in OE bodan, OFri. bodem, boden,
+MDu. bodem, boden, boom m., and therefore probably also in MLG
+bod(d)em(e). If the root had been *buþma-, one would have expected
+to find forms with an s in (dialectal) Dutch; cf. kossem ‘lobe, dewlab’
+< *kuþma- to G Koder ‘double chin, crop’ (van Loey 1964: § 50).
+Finally, OS bothme dat. sg. m., OHG bodam m. (compare also
+*weþman-: OHG wedamo m. ‘dowry’) have *þ which is problematic,
+but must be secondary by any account. It has been explained by Kluge
+(1883) as the result of a West-Germanic shift from *ÿ to *þ before an
+m, whereas Lühr (1988: 341) considered it analogical. Yet, whatever
+its origin may be, it has no consequences for the mn-paradigm reconstructed here.
+The suffix also displays some variation, i.e. between m and n. Final
+m was apparently assimilated to n in many languages (Fick 1909:
+275): OE bodan, OFri. boden (compare OFri. gathen ‘room’ <
+*gaþma-), MDu. boden, MHG boden, G Boden. ON botn is probably
+due to assimilation too. Alternatively, it can be analyzed as a typical
+Scandinavian thematization of a secondary n-stem nom. *budmǀn ~
+gen. *buttnaz like in nafn n. ‘name’ and vatn n. ‘water’, two words
+that represent an Indo-European men-stem and a heteroclitic,
+respectively. There is therefore no direct evidence in favor of a
+reconstruction *budna- in Germanic (pace Lühr 1988: 340-341).
+b. PGm. *hrƯma(n)- ~ *hrƯpan- ‘hoar-frost, rime’.
+Another interesting case is the word group of *hrƯma(n)-: OE hrƯm
+m., ON hrím n., hrími m., and *hrƯpan-: OS hrƯpo m., OHG hrƯffo m.
+We may interpret the attested variation as resulting from a split
+paradigm *krƯPmǀn ~ *krƯP(m)nás. The alternation of m with p does
+not indicate substratum influence, but is reflecting this old paradigm.
+While in the nominative *hrƯPmǀn the labial stop or fricative
+assimilated to the m (cf. *hrƯp-m-, Orel 2003: 187b), the genitive form
+*krƯPmnos developed into *krƯPnás anterior to the operation of
+Kluge’s law. As a result of this law, *krƯPnás became °hrƯppas, and a
+new root variant arose.
+The fact that the genitive form, which after the operation of Kluge’s
+law had lost its n of the suffix, was reassigned to the class of the nstems (= *hrƯpan) shows that the old mn-paradigm remained intact as
+an allomorphic n-stem during a certain period of time. The genitive
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+24
+*hrƯpaz was still perceived as part of the paradigm, and accordingly
+acquired a new nominative *hrƯpǀn in the German dialect continuum.
+At this point, the paradigm split into two lexemes with two different
+roots. The formal divergence in the daughter languages suggests that
+this happened after the breaking up of Proto-Germanic.
+I
+*krƯPmǀn
+*krƯPnás
+
+>
+>
+
+II
+°hrƯPmǀn
+°hrƯppaz
+
+ĺ
+ĺ
+
+III
+ON hrími, OE hrím
+OS rƯpo, OHG hrƯffo
+
+The origin of PGm. *hrƯPman- is unknown. Even though it looks
+like an old formation, no cognates outside Germanic are attested. If
+the word were of Indo-European origin, one would perhaps expect
+*kreip-mon-. At least the PGm. pair *hrƯp- ~ *hrƯm- cannot be used
+anymore to support Pokorny’s root etymology *krei-b-, *krei-m-, akin
+to Latv. krèims m. ‘cream’, etc. (Pokorny, 618).
+§ 8 Summarizing, we can state that Germanic *budman- and
+*hrƯPman- have developed allomorphic paradigms because of the loss
+of the labial nasal and the operation of Kluge’s law. According to
+Wackernagel and Debrunner, the loss of m in the clusters can be
+ascribed to an Indo-European rule confined to roots with an initial
+labial. In view of Av. raoȖna- and PGm. *hrƯPman-, it can be claimed
+that the place of the labial is irrelevant to the operation of the rule.
+Kluge’s law was operative in the genitive and other oblique cases of
+stems in -man- where m was lost. This resulted in allomorphs with a
+geminate. Due to this new allomorphy, the paradigms of ‘bottom’ and
+‘rime’ split into two or more lexemes that could compete with each
+other until well after the Proto-Germanic period. This adequately
+accounts for the dialectal consonantal variation of m and p in ‘rime’
+and of d and tt in ‘bottom’.
+Bibliography
+G. W. Davis 1991: The word sheep in the West Germanic Languages. IF 96, 118135.
+A. Debrunner & J. Wackernagel 1954: Altindische Grammatik II, 2: Die Nominalsuffixe. Göttingen.
+A. Fick, Hj. Falk & A. Torp 1909: Wörterbuch der Indogermanischen Sprachen
+III: Wortschatz der Germanischen Spracheinheit. 4th ed. Göttingen.
+J. H. Gallée 1903: Vorstudien zu einem altniederdeutschen Wörterbuche. Leiden.
+E. P. Hamp 1970: Véno, vijèno. Zbornik za filologiju i lingvistiku 7/1, 255-256.
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+25
+V. M. Illiþ-Švityþ 1979: Nominal accentuation in Baltic and Slavic. Trans. R. L.
+Leed & R. F. Feldstein. Cambridge, Mass. - London.
+F. Kluge 1883: Zur altgermanischen Sprachgeschichte. KZ 26, 68-103.
+— 1884: Die germanische Consonantendehnung. PBB 9, 149-186.
+F. Kortlandt 1987: PIE *s in Albanian. Dutch Studies in South Slavic and Balkan
+Linguistics (= Studies in Slavic and General Linguistics 10). AmsterdamAtlanta, 219-226.
+— 1991: Kluge’s law and the rise of Proto-Germanic geminates. ABäG 34, 1-4.
+F. B. J. Kuiper 1995: Gothic bagms and Old Norse ylgr. NOWELE 25, 63-88.
+A. van Loey 1964: Schönfelds historische grammatica van het Nederlands. Klankleer en woordvorming. 7th ed. Zutphen.
+R. Lühr 1988: Expressivität und Lautgesetz im Germanischen. Heidelberg.
+— 2000: Die Gedichte des Skalden Egill. Dettelbach.
+V. Orel 2003: A handbook of Germanic etymology. Leiden - Boston.
+H. Paul 1880: Die westgermanische Consonantendehnung. PBB 7, 105-135.
+J. Pokorny 1959-1969: Indogermanisches etymologisches Wörterbuch. Bern.
+P. Schrijver 1995: Studies in British Celtic historical phonology. Amsterdam Atlanta.
+E. Sievers 1878: Zur Accent- und Lautlehre der germanischen Sprachen. PBB 5,
+63-163.
+J. Vendryes 1959-: Lexique étymologique de l’irlandais ancien. Paris.
+N. van Wijk 1971: Franck’s etymologisch woordenboek der Nederlandsche taal.
+2nd ed. The Hague.
+
+Downloaded from Brill.com11/12/2020 11:59:42PM
+via University of Gothenburg
+
+
