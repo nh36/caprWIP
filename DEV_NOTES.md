@@ -364,77 +364,77 @@ The question of whether `*buttmăz → botm` is "lautgesetzlich" (regular by sou
 3. Preconsonantal degemination: `*buttm-` → `*butm-` ✓
 4. u-lowering: `*butm-` → `*botm-` ✓
 
-**The problematic element: How did `-m-` get into `*buttma-`?**
+**The key question: How did `-m-` get into `*buttma-`?**
 
 The PGmc genitive was `*buttaz` — with **no `-m-`** (the `-m-` was lost in PIE dissimilation). So where does the `-m-` in `*buttma-` come from?
 
-Kroonen (p.82) simply asserts that `*buttma-` is the OE stem variant without explaining its derivation. He writes: "The resulting paradigm `*budmṓ, *buttaz` gave rise to multiple stem variants, i.e. OS bodom < `*budma-`, OE botm < `*buttma-` and ON botn < `*buttna-`."
+### The answer: Kroonen (2006), "Gemination and allomorphy in the Proto-Germanic mn-stems"
 
-Compare the three stem variants:
-- `*budma-`: nominative root `*budm-` + thematic `-a-` (straightforward)
-- `*buttna-`: oblique root `*butt-` + oblique suffix `-na-` (< genitive `-n-`) (straightforward)
-- `*buttma-`: oblique root `*butt-` + **nominative** suffix `-ma-` (????)
+Kroonen's 2006 article (*ABäG* 61/1, 17-25) provides the full explanation. The key insight is that **the `-m-` was never lost in the nominative** — rather, PIE mn-stems developed **allomorphic paradigms** in PGmc with two coexisting root shapes:
 
-The ON form `*buttna-` simply thematizes the oblique stem with `-na-` (preserving the genitive `-n-`). This is morphologically transparent.
+| Cell | PIE | PGmc |
+|------|-----|------|
+| Nominative | `*bʰudʰ-mḗn` | `*budmōn` (with `-m-`, no gemination) |
+| Genitive | `*bʰudʰ-mn-ós` → `*bʰudʰ-n-ós` | `*buttaz` (m lost, Kluge gemination) |
 
-But the OE form `*buttma-` appears to **blend** features from different paradigm cells:
-- Root consonantism (`*butt-`) from the **oblique/genitive**
-- Suffix (`*-ma-`) from the **nominative**
+Kroonen (2006:22):
+> "The fact that `*but(t)ma-` received its t analogically from `*buttaz` can nevertheless only be understood if the two root forms were still part of one and the same paradigm after Kluge's law. In other words, the roots `*bud-` and `*but(t)-` must have been two allomorphs at a certain stage."
 
-### What each source says (exhaustive survey)
+And crucially (2006:22):
+> "Just as the thematic formation `*bʰudʰ-nó-` in Sanskrit and Italo-Celtic, the Germanic allomorph `*butt-` must be explained from loss of the m in the genitive and some other oblique cases: `*bʰudʰ-mn-ós` > `*bʰudʰ-n-ós` (cf. Lühr 2000: 301-302), which by Kluge's law became `*buttaz`."
 
-**Kroonen (2013), p.82 s.v. `*budman- ~ *buttman-`:**
-> "An old hysterokinetic mn-stem nom. *bhud-mén, gen. *bhud-mn-ós. In the genitive, the m was dissimilated at the Proto-Indo-European stage... The resulting paradigm `*budmṓ, *buttaz` gave rise to multiple stem variants, i.e. OS bodom < `*budma-`, OE botm < `*buttma-` and ON botn < `*buttna-`."
+Kroonen provides this paradigm table (2006:22):
 
-Kroonen **asserts** that `*buttma-` is the OE stem variant but **does not explain** how the `-m-` was restored after being lost in the PIE dissimilation. He cites his own earlier article:
+| Stage I (PIE) | Stage II (PGmc) | Stage III (daughter languages) |
+|---------------|-----------------|--------------------------------|
+| `*bʰudʰ-mē/ōn` | `*budmē/ōn` | MDu. *bodem*, OE *bodan* |
+| `*bʰudʰ-n-ás` | `*buttaz` | OE *botem*, ON *botn* |
 
-**Kroonen (2006), "Gemination and allomorphy in the Proto-Germanic mn-stems: bottom and rime" (ABäG 61/1, 17-25):**
-- This dedicated article on exactly this morphological problem is **not available in our sources**.
-- This is likely where the full explanation resides, but we cannot consult it.
+**The resolution:** The daughter languages resolved this allomorphy in different ways:
 
-**Orel (2003), s.v. `*buðmaz ~ *butmaz`:**
-> "Unexplained fluctuations in the intervocalic dental."
+1. **Generalize the nominative root `*bud-`:** OFri. *bodem*, MDu. *bodem*, OS *bodom*
+2. **Spread the geminate to the nominative:** OE *botem* (< `*buttma-`), ON *botn* (< `*buttna-`)
+3. **Secondary `*þ`:** OHG *bodam*, OS *bothme* (explained by Kluge 1883 as `*d > *þ` before *m*, or as analogical by Lühr 1988:341)
 
-Orel explicitly flags that the dental alternation (`*d : *t`) is **unexplained**. He does not address the `-m-` restoration at all.
+**Why OE `*buttma-` has both `-tt-` AND `-m-`:**
 
-**Kluge-Seebold (2011), s.v. *Boden*:**
-> "Aus vd. *buþma- m. 'Boden', während die außerdeutschen Sprachen auf g. *butma- zurückgehen (anord. botn, ae. botm). Auszugehen ist offenbar von einem ig. *bhudh-men-... Die Verschiedenheit des dentalen Auslauts kann auf verschiedene Assimilation an den Nasal zurückgehen."
+The `-m-` was **never lost** in the nominative `*budmōn`. When speakers spread the geminate root `*butt-` (from the oblique) to replace `*bud-`, they kept the nominative suffix `-mōn`. This is **not** a "restoration" of `-m-` but rather **analogical spread of the root allomorph** while preserving the suffix:
 
-Kluge-Seebold suggests the dental variation "can derive from different assimilation to the nasal" but **does not explain** the morphology of stem formation. They cite:
-- Schlemmer (1971), 143-149
-- Lühr (1988), 340f.
-- Hamp, E. FS Bailey (1990), 447-450
+- Original nominative: `*bud-mōn`
+- Analogical nominative: `*butt-mōn` (new root, old suffix)
 
-These works are **not available in our sources**.
+This is standard analogical leveling: the paradigm had root alternation (`*bud- ~ *butt-`), and one variant was generalized across all cells.
 
-**Fulk (2018), *Comparative Grammar of Early Germanic*, §4.3, §5.6:**
-> "OHG bodam, OIcel. botn, OE botm = Gk. πυθμήν 'bottom' < *bhudh-men-"
+**On the suffix variation (-m- vs -n-):**
 
-Fulk gives the basic etymology but **does not discuss** the stem-variant problem or the `-m-` restoration.
+Kroonen (2006:23) also addresses why some forms show `-n-` instead of `-m-`:
+> "Final m was apparently assimilated to n in many languages (Fick 1909: 275): OE *bodan*, OFri. *boden*... ON *botn* is probably due to assimilation too. Alternatively, it can be analyzed as a typical Scandinavian thematization of a secondary n-stem nom. `*budmōn` ~ gen. `*buttnaz` like in *nafn* n. 'name' and *vatn* n. 'water'."
 
-**Campbell (1959), *Old English Grammar*, §§419-420:**
-Campbell discusses the spirant hardening `*p > t` in WS (`botm, botl`) versus Anglian preservation of the voiced spirant (`*bopm > ME bothem`). This is **purely phonological** — Campbell does not address the morphological derivation of the PGmc stem.
+**Summary of Kroonen's analysis:**
 
-**Ringe & Taylor (2014), vol.2:**
-> "Here too belongs botm 'bottom, ground, foundation' (OF bodem (*-d-), OS bodom, OHG bodam (*-þ-), ON botn; preform')."
+1. PIE `*bʰudʰ-mḗn` was a hysterokinetic mn-stem
+2. In the genitive (and other oblique cases), `-mn-` > `-n-` after labial dissimilation
+3. Kluge's Law then geminated: `*bʰudʰ-n-ós` > `*buttaz`
+4. This created allomorphic paradigms: nom. `*budmōn` ~ gen. `*buttaz`
+5. The paradigm "remained intact until after the breaking up of Proto-Germanic" (2006:22)
+6. Individual daughter languages resolved the allomorphy differently
+7. OE generalized the geminate root to the nominative: `*budmōn` → `*buttmōn` → `*buttma-`
 
-R/T note the preform but **do not explain** the stem-variant morphology.
+**This solves our puzzle:** The `-m-` in `*buttma-` is the **original nominative suffix** that was never lost. The geminate `*-tt-` was spread to it analogically from the oblique forms.
 
-**Summary: The `-m-` restoration problem is NOT addressed in any of our available sources.**
+### What other sources say (for completeness)
 
-The only source that specifically addresses this question — Kroonen (2006), "Gemination and allomorphy in the Proto-Germanic mn-stems: bottom and rime" — is not available to us. This is a gap in our documentation that we cannot fill from the sources at hand.
+**Kroonen (2013), p.82:** Summarizes the 2006 analysis but without the full derivational explanation.
 
-**Possible explanations (speculative):**
+**Orel (2003), s.v. `*buðmaz ~ *butmaz`:** Notes "Unexplained fluctuations in the intervocalic dental" — the 2006 article provides the explanation Orel lacked.
 
-1. **Suffix contamination:** Speakers knew both `*budmō` (nom.) and `*buttaz` (gen.) and created a hybrid by combining the oblique root with the nominative suffix.
+**Kluge-Seebold (2011):** Suggests the dental variation "can derive from different assimilation to the nasal" but does not provide the full paradigmatic analysis.
 
-2. **Independent thematization:** The root `*butt-` was extracted and thematized with a productive `*-ma-` suffix (not borrowed from the old nominative, but formed anew).
+**Lühr (1988:340-341):** Cited by Kroonen; discusses counter-examples to Kluge's Law and the `*-þ-` forms.
 
-3. **Full explanation in Kroonen 2006:** The dedicated article on this exact morphological problem likely contains the answer, but we cannot access it.
+**Campbell (1959), §§419-420:** Discusses WS `*p > t` before nasals vs. Anglian preservation of `*p` — this is a separate, later sound change, not the PGmc paradigmatic alternation.
 
-**Honest assessment:** Among the 23 reference works available to us, **none** explains how the `-m-` was restored in `*buttma-`. Orel explicitly flags the dental variation as "unexplained." Kluge-Seebold cites three additional works (Schlemmer, Lühr, Hamp) that may address this, but they are not in our corpus. The definitive source — Kroonen's 2006 ABäG article dedicated to "Gemination and allomorphy in the Proto-Germanic mn-stems: bottom and rime" — is not available to us.
-
-For our FST purposes, we use `*buttmăz` as the input because it produces the correct OE output. The morphological history leading to `*buttma-` awaits access to Kroonen (2006) or the other works cited.
+**Fulk (2018), Ringe/Taylor (2014):** Give basic etymology without the paradigmatic analysis.
 
 ### FST implementation
 
@@ -459,6 +459,27 @@ define OEPreconsonantalDegemination [
 ];
 ```
 
+### Parallel case: PGmc `*hrīma(n)- ~ *hrīpan-` 'hoar-frost, rime'
+
+Kroonen (2006:23-24) provides a parallel case that supports the mn-stem allomorphy analysis:
+
+| Cell | PIE | PGmc |
+|------|-----|------|
+| Nominative | `*krīP-mōn` | `*hrīPmōn` → `*hrīmōn` (labial assimilated to m) |
+| Genitive | `*krīP-mn-ós` → `*krīP-n-ós` | `*hrīppaz` (Kluge gemination) |
+
+This produced two PGmc lexemes:
+- `*hrīma(n)-`: OE `hrīm` m., ON `hrím` n. (nominative stem)
+- `*hrīpan-`: OS `hrīpo` m., OHG `hrīffo` m. (oblique stem, reassigned to n-stem)
+
+Kroonen (2006:23-24):
+> "The fact that the genitive form, which after the operation of Kluge's law had lost its n of the suffix, was reassigned to the class of the n-stems (= `*hrīpan`) shows that the old mn-paradigm remained intact as an allomorphic n-stem during a certain period of time."
+
+This confirms that:
+1. PIE mn-stems could develop allomorphic paradigms in PGmc
+2. The paradigms persisted "until well after the Proto-Germanic period" (2006:24)
+3. Different daughter languages resolved the allomorphy differently
+
 ### TSV approach
 
 The cognate set now correctly reflects stem-variant divergence:
@@ -473,24 +494,22 @@ This is consistent with our principle for `duru/dor`: use the proto-form that mo
 
 ### Sources
 
-**Consulted (in our corpus):**
-- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.82, §2.2.5.2
-- Orel, V. (2003). *Handbook of Germanic Etymology*, s.v. `*buðmaz ~ *butmaz` — notes "Unexplained fluctuations"
+**Primary source (now consulted):**
+- Kroonen, G. (2006). "Gemination and allomorphy in the Proto-Germanic mn-stems: bottom and rime." *Amsterdamer Beiträge zur älteren Germanistik* 61/1, 17-25.
+  - **This is the definitive source** explaining the allomorphic paradigm and how `*buttma-` arose
+  - Key insight: the `-m-` was never lost in the nominative; the geminate root spread analogically
+
+**Other sources consulted:**
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.82, §2.2.5.2 — summarizes 2006 analysis
+- Orel, V. (2003). *Handbook of Germanic Etymology*, s.v. `*buðmaz ~ *butmaz` — pre-dates Kroonen 2006, notes "Unexplained fluctuations"
 - Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch der deutschen Sprache*, s.v. *Boden*
 - Fulk, R.D. (2018). *Comparative Grammar of Early Germanic*, §4.3, §5.6
 - Campbell, A. (1959). *Old English Grammar*, §§419-420
 - Ringe, D. & Taylor, A. (2014). *The Development of Old English*, vol.2
-
-**Not consulted (cited in Kluge-Seebold but not available):**
-- Schlemmer (1971), 143-149
-- Lühr (1988), 340f.
-- Hamp, E. FS Bailey (1990), 447-450
-
-**Not consulted (likely contains the explanation):**
-- Kroonen, G. (2006). "Gemination and allomorphy in the Proto-Germanic mn-stems: bottom and rime." *Amsterdamer Beiträge zur älteren Germanistik* 61/1, 17-25.
+- Lühr, R. (1988). *Expressivität und Lautgesetz im Germanischen*, 340-341 — cited by Kroonen for `*-þ-` forms
 
 **Original source for Kluge's Law:**
-- Kluge, F. (1884). On gemination from Kluge's Law
+- Kluge, F. (1884). "Die germanische Consonantendehnung." *PBB* 9, 149-186.
 
 ### Implementation (2026-03-10)
 
