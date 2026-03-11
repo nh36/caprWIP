@@ -6622,3 +6622,298 @@ Reviewed all TSV entries with `*nd` clusters to confirm none require `*nð`:
 
 Having exactly one `*ð` form in the TSV (`*funðanăz`) is **correct and complete**.
 All other `*nd` forms have original `*d` from PIE sources other than `*t`.
+
+---
+
+## The *d/*ð Representation Problem: A Systematic Analysis
+
+### The Problem Statement
+
+If we need `*ð` anywhere in our system (currently: `*funðanăz`), then at that point
+we are claiming a phonemic distinction between `*d` and `*ð`. But the sources tell us
+they were allophones in PGmc. This creates an inconsistency:
+
+- If they're allophones, why mark `*ð` at all?
+- If we mark `*ð` in one place, why not everywhere it's phonetically [ð]?
+- If we mark `*d` everywhere, how does the FST know not to apply NSL?
+
+The current solution (using `*ð` exactly once) is unsatisfactory because it's neither
+consistent allophonic notation nor consistent phonemic notation.
+
+### Background: The Three-Way Source Distinction
+
+There are THREE distinct sources for dental obstruents in PGmc:
+
+| Source | PGmc Result | Example | Notes |
+|--------|-------------|---------|-------|
+| PIE *t | *þ (voiceless fric.) | *finþaną "find" | Grimm's Law |
+| PIE *t (Verner) | *ð (voiced fric.) | *funðanaz "found" | Verner's Law on *þ |
+| PIE *dh | *d (voiced stop) | *bindaną "bind" | Direct, no alternation |
+
+The `*þ` vs `*ð` contrast IS phonemic in PGmc — they contrast voicing.
+The `*d` vs `*ð` contrast is allophonic — complementary distribution:
+
+Campbell §398.3:
+> "b, d existed only initially, and in the groups mb, nd... ð, v did not exist
+> initially or after nasals"
+
+So:
+- `*ð` appears: intervocalically, finally
+- `*d` appears: initially, after nasals (mb, nd)
+
+### The Critical Question: What Is *-nð- Phonetically?
+
+When Verner's Law creates `*ð` in a form like `*funðanaz`, what happens when this
+`*ð` follows a nasal?
+
+**Standard interpretation:** The `*ð` would surface as [d] after the nasal (allophonic).
+So `*funðanaz` = phonetically [fundanaz].
+
+**But:** NSL does NOT apply to this cluster, even though phonetically it's [nd].
+Why? Because the UNDERLYING representation is `*-nð-` (voiced fricative), not
+`*-nþ-` (voiceless fricative).
+
+This means NSL is a PHONOLOGICAL rule applying to underlying forms, not a
+PHONETIC rule applying to surface forms. It "sees" the voicing distinction in the
+underlying representation even when it's neutralized phonetically.
+
+### The Three Options
+
+**Option 1: Mark allophonic variation in the TSV from the start**
+
+Write `*ð` wherever the sound is phonetically [ð] (intervocalic, final), and `*d`
+wherever it's phonetically [d] (initial, post-nasal, geminate).
+
+Sub-options:
+- **1a:** Distinguish Verner `*ð` from original `*d` with different symbols
+  - Use `*ð` for Verner-derived voiced fricative
+  - Use `*d` for PIE *dh-derived voiced stop
+  - Add allophonic rule: `*ð → *d / n_` early in the derivation
+  
+- **1b:** Collapse the distinction in post-nasal position
+  - Write `*fundanaz` (not `*funðanaz`) since [d] after nasal
+  - But then how does NSL know not to apply?
+  
+**Analysis of Option 1:**
+
+The problem with 1b is that we lose the information NSL needs. The sequence
+`*-nd-` from PIE *dh (e.g., `*bindaną`) and `*-nd-` from Verner (e.g., `*fundanaz`)
+look identical, but only the former should trigger NSL if we used the infinitive
+`*finþaną`.
+
+Option 1a requires introducing the allophonic rule `*ð → *d / n_` at the PGmc stage,
+BEFORE NSL applies. This preserves the Verner information until NSL has had a
+chance to (not) apply.
+
+**Option 2: Add allophonic variation into the FST rules at a specific point**
+
+Keep the underlying distinction (`*þ` vs `*ð` vs `*d`) in the input, and add rules
+to derive the surface forms.
+
+Sub-options:
+- **2a:** Add `*ð → *d / n_` as a PGmc-level rule, applying AFTER NSL
+  - Input: `*funðanăz`
+  - NSL checks: sees `*nð` (voiced), does NOT apply
+  - Then: `*ð → *d` gives surface `*fundanaz`
+  
+- **2b:** Merge post-nasal hardening with PWGmc dental hardening
+  - Both rules produce `*d` from `*ð`, just at different stages
+  - But: post-nasal hardening should be earlier (PGmc allophony)
+  
+**Analysis of Option 2:**
+
+Option 2a is the cleanest: it keeps the underlying Verner distinction, lets NSL
+"see" it, then applies allophonic hardening to derive the correct surface form.
+
+The chronology would be:
+1. Input: `*funðanăz` (with underlying Verner `*ð`)
+2. NSL: checks for `*-nþ-`, finds `*-nð-`, does NOT apply
+3. PGmc allophony: `*ð → *d / n_` → `*fundanaz`
+4. PWGmc hardening: `*ð → *d` (catches any remaining `*ð`) → already done
+
+Actually, step 3 and 4 could be merged since PWGmc hardening applies to ALL
+`*ð` anyway. The ordering just needs to ensure NSL happens BEFORE the hardening.
+
+**Option 3: Change the Verner output from *ð to *d directly**
+
+Instead of reconstructing Verner as `*þ → *ð`, reconstruct it as `*þ → *d` (at least
+post-nasally). This would mean:
+
+- Input: `*fundanăz` (with Verner-derived `*d`, not `*ð`)
+- But: need some way to mark this `*d` as "from Verner" to block NSL
+
+Sub-options:
+- **3a:** Use a diacritic: `*ḓ` or `*d̬` for "Verner d" (blocks NSL)
+- **3b:** Use abstract features: mark certain forms as [+Verner]
+- **3c:** Abandon the distinction — assume NSL applied before Verner
+
+**Analysis of Option 3:**
+
+Option 3c is historically implausible. The standard chronology is:
+- Grimm's Law: PIE *t → PGmc *þ
+- Verner's Law: PGmc *þ → *ð (in certain environments)
+- NSL: Later, Ingvaeonic, affects *-nþ- but not *-nð-
+
+Verner MUST precede NSL, otherwise NSL would apply to all *-nþ- regardless
+of later Verner voicing.
+
+Options 3a/3b are workarounds that obscure the actual historical phonology.
+They replace a transparent phonological representation (`*ð`) with an arbitrary
+diacritic or feature.
+
+### Evidence from the Sources
+
+**R/T vol.2 p.43:**
+> "PGmc *z had always been a fricative in all positions, but the other voiced
+> obstruents had both stop and fricative allophones... In PWGmc the non-coronal
+> voiced obstruents continued to exhibit that allophony, but `*d` became a stop
+> in all positions."
+
+This confirms:
+1. PGmc: `*d`/`*ð` were allophones with positional distribution
+2. PWGmc: `*d` hardened to a stop everywhere (no more [ð] allophone)
+
+**Campbell §398.3:**
+> "ð, v did not exist initially or after nasals"
+
+This confirms `*-nð-` → surface [nd] in PGmc (allophonic).
+
+**Fulk §4.7 (North Sea Germanic / NSL):**
+> "a nasal consonant was lost before any **voiceless** fricative... The change
+> thus affects mf, ns, nþ"
+
+This confirms NSL targets VOICELESS fricatives (`*þ`), not voiced (`*ð`).
+The distinction must be available to the rule.
+
+### Recommendation: Option 2a
+
+The cleanest solution is:
+
+1. **Keep `*ð` in the TSV** for Verner-derived voiced fricatives
+   - This represents the underlying phonology correctly
+   - It distinguishes Verner `*ð` from original PIE *dh → `*d`
+
+2. **Add PGmc allophonic rule: `*ð → *d / n_`**
+   - Applies AFTER NSL has had a chance to (not) apply
+   - Can be merged with or ordered before PWGmcDentalHardening
+   - Derives correct surface form [nd] from underlying /nð/
+
+3. **Current ordering needs adjustment:**
+   ```
+   NSL applies (checks underlying /þ/ vs /ð/)
+       ↓
+   PGmc/PWGmc: *ð → *d (allophonic + hardening)
+       ↓
+   Later OE rules
+   ```
+
+**Implementation:**
+
+Currently we have `PWGmcDentalHardening` which converts `*ð → *d` at the PWGmc
+stage. This is already AFTER NSL in the rule ordering (NSL is in `OEChanges`).
+
+But wait — NSL is currently in `OEChanges`, which runs AFTER `PWGmcChanges`.
+This means by the time NSL applies, `*ð` has already become `*d`!
+
+Let me check the actual rule ordering...
+
+### Current FST Rule Ordering (germanic.txt)
+
+```foma
+define PWGmcChanges [PWGmcMutations ... .o. PWGmcDentalHardening ...];
+define OEChanges [... .o. OENasalSpirantLengthening ...];
+```
+
+If PWGmcDentalHardening runs BEFORE OENasalSpirantLengthening, then by the
+time NSL checks, `*funðanăz` has already become `*fundanaz`, and NSL sees `*nd`
+(stop), not `*nþ` (voiceless fricative), so it correctly does NOT apply.
+
+BUT: if someone inputs `*finþaną` (infinitive with voiceless `*þ`), NSL would
+also see this AFTER hardening... wait, `*þ` doesn't get hardened by DentalHardening
+(that only affects `*ð`). So `*finþaną` keeps its `*þ` and NSL applies to it.
+
+Actually, this is correct! The current system works because:
+- `*funðanăz`: `*ð` → `*d` (hardening), then NSL sees `*nd` (no lengthening)
+- `*finþaną`: `*þ` unchanged, then NSL sees `*nþ` (lengthening applies)
+
+So the issue is NOT the rule ordering — it's the **notation consistency**.
+
+### Revised Analysis
+
+The current system IS phonologically correct:
+- `*ð` in input represents underlying voiced Verner fricative
+- `PWGmcDentalHardening` converts it to `*d` (surface/PWGmc)
+- NSL then sees `*nd` and does not apply
+
+The objection is **notational**: if `*d` and `*ð` are allophones, why use different
+symbols? The answer is that they ARE different underlying segments:
+
+| Underlying | Source | PWGmc Surface | Distinct from? |
+|------------|--------|---------------|----------------|
+| `*d` | PIE *dh | `*d` | Never was a fricative |
+| `*ð` | Verner on *þ | `*d` | Was a fricative, hardened |
+| `*þ` | Grimm on *t | `*þ` | Voiceless, triggers NSL |
+
+The distinction `*d` (original stop) vs `*ð` (Verner fricative) is lost by PWGmc,
+but it's real at the PGmc stage and could in principle matter for some rules.
+
+However, in our FST, we're inputting **PGmc forms** and deriving **OE forms**.
+The PGmc input should reflect PGmc phonology, which DOES distinguish:
+- `*þ` (voiceless fricative, from Grimm)
+- `*ð` (voiced fricative, from Verner)
+- `*d` (voiced stop, from PIE *dh, only initial/post-nasal)
+
+The fact that `*ð` surfaces as [d] after nasals is an allophonic rule, but the
+underlying representation is still `*ð`.
+
+### Final Recommendation
+
+**Option 2a is already implemented.** The current system is correct:
+
+1. Input `*funðanăz` with underlying Verner `*ð`
+2. `PWGmcDentalHardening` converts `*ð → *d` (for all `*ð`, including post-nasal)
+3. NSL sees `*nd` (not `*nþ`) and does not apply
+
+The "one `*ð` in the TSV" situation is NOT inconsistent because:
+- We use `*ð` for the ONE form where we need to represent Verner voicing
+- Other forms with `*d` have ORIGINAL `*d` from PIE *dh (never was `*ð`)
+- We're not failing to mark `*ð` elsewhere; there IS no `*ð` elsewhere in our data
+
+**However:** If we had more Verner forms in the TSV (e.g., `*cweðaną`, `*snīðaną`),
+we WOULD need to mark them with `*ð` to block NSL if they had `*-nþ-/*-nð-`
+alternations. The fact that we only have ONE such form is a function of our
+data selection, not a flaw in the notation system.
+
+### What Would Need to Change for Consistency
+
+If we wanted to be MORE explicit about the allophony, we could:
+
+1. **Add explicit post-nasal hardening as a separate rule:**
+   ```foma
+   define PGmcPostNasalHardening [
+       {*ð} -> {*d} || {*n} _,
+       {*β} -> {*b} || {*m} _
+   ];
+   ```
+   This would apply at the PGmc stage, making the allophony explicit.
+
+2. **Order it before or with PWGmcDentalHardening:**
+   The output would be the same, but the rule would document the PGmc allophony.
+
+3. **Leave PWGmcDentalHardening to handle only intervocalic/final `*ð`:**
+   ```foma
+   define PWGmcDentalHardening [
+       {*ð} -> {*d}  # applies to any remaining *ð
+   ];
+   ```
+
+This is more explicit but produces the same output. The current system works
+correctly; this would just make the phonological reasoning more transparent.
+
+### Sources Consulted
+
+- Campbell, A. (1959). *Old English Grammar*, §398.3 (pp.163-165)
+- Fulk, R.D. (2018). *A Comparative Grammar of the Early Germanic Languages*,
+  §§4.7, 6.5-6.7
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, p.43
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*
