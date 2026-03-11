@@ -5929,6 +5929,53 @@ define OEMedUnstressedILowering [
 - `*biginnăną` → `beġinnan` ✓ (no regression)
 - Evaluation: 307/386 matches (79.5%)
 
+### Implementation Hurdle: Word-Final *ĭ (Dill Regression)
+
+After the initial implementation, evaluation showed a regression: `*deliz` (dill)
+produced no output (`+?`) instead of `dile`. Tracing revealed the problem:
+
+```
+*deliz → ... → *d*i*l*ĭ (stuck)
+```
+
+The final `*ĭ` (from i-stem nom.sg. `-iz`) was not being converted to `*e` or 
+cleaned up. The issue: `OEMedUnstressedILowering` only matched `*ĭ` before
+consonants:
+
+```foma
+{*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+```
+
+Word-final `*ĭ` has no following consonant, so it passed through unchanged and
+blocked orthography (no mapping for `*ĭ`).
+
+**Solution:** The existing `OEWeakTailReduction2` rule already handled word-final
+`*i → *e`:
+
+```foma
+define OEWeakTailReduction2 [
+    {*i} -> {*e} || _ .#.
+];
+```
+
+This rule runs AFTER `OEUnstressedIMarking`, so we updated it to target `*ĭ`
+instead of `*i`:
+
+```foma
+define OEWeakTailReduction2 [
+    {*ĭ} -> {*e} || _ .#.
+];
+```
+
+Now word-final unstressed `*ĭ` is correctly lowered to `*e`, while stressed
+word-final `*i` (rare but possible) is preserved.
+
+**Final Results:**
+- `*deliz` → `dile` ✓
+- `*xarbistuz` → `hierfest` ✓
+- `*biginnăną` → `beġinnan` ✓
+- Evaluation: 310/386 matches (80.3%) — net +1 from harvest fix
+
 ### Exceptions: When Medial *i is Preserved
 
 **Hogg p.120** and **Campbell §371** specify that `*i` is preserved in:
