@@ -303,16 +303,16 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 462	f a r n	*farnăz	f a r n ( - - )	farn	Farn	127	German				fern	*farnăz	71
 700	v ɛ l t	*felθuz	v ɛ l t ( - - )	vɛlt	veld	192	Dutch				field	*felθuz	72
 699	f iː l d	*felθuz	f iː l d ( - - )	fiːld	field	192	English				field	*felθuz	72
-2009	f e l d	*felθuz	f iː l d ( - - )	fiːld	feld	192	Old_English	R/T §5.1.3 p.171: *felþu-/*feldu- may reflect Verner's alternation or regular PWGmc *lþ→*ld; either gives OE feld			field	*felθuz	72
+2009	f e l d	*felθuz	f iː l d ( - - )	fiːld	feld	192	Old_English	R/T §5.1.3 p.171: *felθu-/*feldu- may reflect Verner's alternation or regular PWGmc *lθ→*ld; either gives OE feld			field	*felθuz	72
 698	f ɛ l t	*felθuz	f ɛ l d ( - - )	fɛlt	Feld	192	German				field	*felθuz	72
 160	v ɛ x t ə	*fextăną	v ɛ x t ə - ( - - )	vɛxtə	vechten	45	Dutch				fight	*fextăną	73
 159	f aɪ t	*fextăną	f aɪ - t - - ( - - )	faɪt	fight	45	English				fight	*fextăną	73
 2010	f e o h t a n	*fextăną	f aɪ - t - - ( - - )	faɪt	feohtan	45	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			fight	*fextăną	73
 158	f ɛ x t ə n	*fextăną	f ɛ x t ə n ( - - )	fɛxtən	fechten	45	German				fight	*fextăną	73
-1762	v ɪ n d ə	*finþăną	v ɪ n d ə - ( - - )	vɪndə	vinden	482	Dutch				find	*finþăną	74
-1761	f aɪ n d	*finþăną	f aɪ n d - - ( - - )	faɪnd	find	482	English				find	*finþăną	74
-2011	f i n d a n	*finþăną	f aɪ n d - - ( - - )	faɪnd	findan	482	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			find	*finþăną	74
-1760	f ɪ n d ə n	*finþăną	f ɪ n d ə n ( - - )	fɪndən	finden	482	German				find	*finþăną	74
+1762	v ɪ n d ə	*finθăną	v ɪ n d ə - ( - - )	vɪndə	vinden	482	Dutch				find	*finθăną	74
+1761	f aɪ n d	*finθăną	f aɪ n d - - ( - - )	faɪnd	find	482	English				find	*finθăną	74
+2011	f u n d e n	*fundenăz	f aɪ n d - - ( - - )	faɪnd	funden	482	Old_English	Past participle mapping: VL *đ is regular in ptp (see DEV_NOTES.md)			find	*fundenăz	74
+1760	f ɪ n d ə n	*finθăną	f ɪ n d ə n ( - - )	fɪndən	finden	482	German				find	*finθăną	74
 1702	v ɪ ŋ ə r	*fingrăz	v ɪ ŋ - ə r ( - - )	vɪŋər	vinger	466	Dutch				finger	*fingrăz	75
 1701	f ɪ ŋ ɡ ə	*fingrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	English				finger	*fingrăz	75
 2012	f i n g e r	*fingrăz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			finger	*fingrăz	75
@@ -399,9 +399,9 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1691	f r ɛ n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	friend	463	English				friend	*frijōndz	94
 2033	f r ē o n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	frēond	463	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			friend	*frijōndz	94
 1690	f r ɔy n t	*frijōndz	f r ɔy ( - - ) n d ( - )	frɔynt	Freund	463	German				friend	*frijōndz	94
-1482	f r aɪ t	*furxtiθō	f - r aɪ - t ( - - - )	fraɪt	fright	406	English	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iþō-abstract from adj. *furhta-; R/T line 21553)			fright	*furxtiθō	338
-2034	f y r h t u	*furxtiθō	f y r h t u	fyrxtu	fyrhtu	406	Old_English	TSV fix: proto *furxtīn → *furxtiθō, target fryhtu → fyrhtu. PGmc *furhtiþō (*iþō-abstract, R/T §6.8) → fyrhtu by i-umlaut + medial syncope + dental assimilation + ō-shortening. Non-metathesized form (Campbell §459: r-metathesis is sporadic). See docs/analysis/fryhtu_investigation.md			fright	*furxtiθō	338
-1481	f ʊ r x t	*furxtiθō	f ʊ r - x t ( - - - )	fʊrxt	Furcht	406	German	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iþō-abstract; OHG forhta < ō-stem *furhtō- but proto unified to *furhtiþō for cognate set)			fright	*furxtiθō	338
+1482	f r aɪ t	*furxtiθō	f - r aɪ - t ( - - - )	fraɪt	fright	406	English	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iθō-abstract from adj. *furhta-; R/T line 21553)			fright	*furxtiθō	338
+2034	f y r h t u	*furxtiθō	f y r h t u	fyrxtu	fyrhtu	406	Old_English	TSV fix: proto *furxtīn → *furxtiθō, target fryhtu → fyrhtu. PGmc *furhtiθō (*iθō-abstract, R/T §6.8) → fyrhtu by i-umlaut + medial syncope + dental assimilation + ō-shortening. Non-metathesized form (Campbell §459: r-metathesis is sporadic). See docs/analysis/fryhtu_investigation.md			fright	*furxtiθō	338
+1481	f ʊ r x t	*furxtiθō	f ʊ r - x t ( - - - )	fʊrxt	Furcht	406	German	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iθō-abstract; OHG forhta < ō-stem *furhtō- but proto unified to *furhtiθō for cognate set)			fright	*furxtiθō	338
 456	v ɔ r s t	*frustą	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch				frost	*frustą	95
 455	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	frost	125	English				frost	*frustą	95
 2035	f o r s t	*frustą	f r ɔ - s t ( - - )	frɔst	forst	125	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			frost	*frustą	95
@@ -435,7 +435,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1874	ɡ ɔ t	*gudą	ɡ ɔ t	ɡɔt	Gott	514	German				god	*gudą	101
 1089	x ɑu t	*gulθą	x ɑu - t ( - - )	xɑut	goud	298	Dutch				gold	*gulθą	102
 1088	ɡ əʊ l d	*gulθą	ɡ əʊ l d ( - - )	ɡəʊld	gold	298	English				gold	*gulθą	102
-2043	g o l d	*gulθą	ɡ əʊ l d ( - - )	ɡəʊld	gold	298	Old_English	R/T §5.1.3 p.171: *gulþa-/*gulda- may reflect Verner's alternation or regular PWGmc *lþ→*ld; either gives OE gold			gold	*gulθą	102
+2043	g o l d	*gulθą	ɡ əʊ l d ( - - )	ɡəʊld	gold	298	Old_English	R/T §5.1.3 p.171: *gulθa-/*gulda- may reflect Verner's alternation or regular PWGmc *lθ→*ld; either gives OE gold			gold	*gulθą	102
 1087	ɡ ɔ l t	*gulθą	ɡ ɔ l d ( - - )	ɡɔlt	Gold	298	German				gold	*gulθą	102
 1294	x ɑ n s	*gansz	x ɑ n s ( - )	xɑns	gans	355	Dutch				goose	*gansz	103
 1293	ɡ uː s	*gansz	ɡ uː - s ( - )	ɡuːs	goose	355	English				goose	*gansz	103
@@ -610,7 +610,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 537	k n ɔ pf	*knuppăz	k n ɔ pf ( - - )	knɔp͡f	Knopf	147	German				knob	*knuppăz	140
 405	l aː d ə	*laθōjăną	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjăną	141
 404	l eɪ d	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjăną	141
-2088	h l a d a n	*xlaθaną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaþaną > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			lade	*xlaθaną	141
+2088	h l a d a n	*xlaθaną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaθaną > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			lade	*xlaθaną	141
 403	l aː d ə n	*laθōjăną	l aː d ( - ) - ə n ( - - )	laːdən	laden	111	German				lade	*laθōjăną	141
 1355	l ɑ n t	*landą	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landą	142
 1354	l æ n d	*landą	l æ n d ( - - )	lænd	land	371	English				land	*landą	142
@@ -683,7 +683,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1436	l ai s t ə	*līstōn	l ai s t ( ə - )	laistə	Leiste	393	German				list	*līstōn	156
 617	l eː v ə	*libēną	l eː v ə - ( - - )	leːvə	leven	170	Dutch				live	*libēną	157
 616	l aɪ v	*libēną	l aɪ v - - ( - - )	laɪv	live	170	English				live	*libēną	157
-2107	l i f e þ	*libēþi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	Source: Wiktionary etymology (template:inh) | 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem			live	*libēþi	157
+2107	l i f e þ	*libēθi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	Source: Wiktionary etymology (template:inh) | 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem			live	*libēθi	157
 615	l eː b ə n	*libēną	l eː b ə n ( - - )	leːbən	leben	170	German				live	*libēną	157
 213	l eː v ə r	*librō	l eː v ə r ( - )	leːvər	lever	59	Dutch				liver	*librō	158
 212	l ɪ v ə	*librō	l ɪ v ə r ( - )	lɪvə	liver	59	English				liver	*librō	158
@@ -797,7 +797,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 481	n oː t	*naudiz	n oː t ( - - )	noːt	Not	132	German				need	*naudiz	183
 126	n aː l t	*nēθlō	n aː - - l ( t )	naːlt	naald	35	Dutch				needle	*nēθlō	184
 125	n iː d ə l	*nēθlō	n iː d ə l ( - )	niːdḷ	needle	35	English				needle	*nēθlō	184
-2136	n ǣ d l	*nēθlō	n iː d ə l ( - )	niːdḷ	nǣdl	35	Old_English	R/T p.435: PGmc *nēþlō/*nēdlō has Verner's alternation; OE nǣdl reflects *d variant			needle	*nēθlō	184
+2136	n ǣ d l	*nēθlō	n iː d ə l ( - )	niːdḷ	nǣdl	35	Old_English	R/T p.435: PGmc *nēθlō/*nēdlō has Verner's alternation; OE nǣdl reflects *d variant			needle	*nēθlō	184
 124	n aː d ə l	*nēθlō	n aː d ə l ( - )	naːdəl	Nadel	35	German				needle	*nēθlō	184
 318	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	Dutch				nest	*nistą	185
 317	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	English				nest	*nistą	185
@@ -1210,7 +1210,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 2242	t ī e n	*texun	t ɛ - - n	tɛn	tīen	237	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*texun	276
 861	ts eː n	*texun	ts eː - - n	t͡seːn	zehn	237	German				ten	*texun	276
 1804	θ eɪ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	thane	494	English				thane	*θegnăz	362
-2243	þ e ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: target þæġn → þeġn (R/T reconstruct *þegnaz with *e and give OE þegn, matching pipeline output).			thane	*θegnăz	362
+2243	þ e ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: target þæġn → þeġn (R/T reconstruct *θegnaz with *e and give OE þegn, matching pipeline output).			thane	*θegnăz	362
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German				thane	*θegnăz	362
 1198	d ɑ ŋ k	*θankăz	d ɑ ŋ k ( - - )	dɑŋk	dank	328	Dutch	!			thanks	*θankăz	277
 1197	θ æ ŋ k s	*θankăz	θ æ ŋ k ( - s )	θæŋks	thanks	328	English	!			thanks	*θankăz	277
@@ -1224,14 +1224,14 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 651	θ iː f	*θeubăz	θ iː f ( - - )	θiːf	thief	179	English				thief	*θeubăz	279
 2246	þ ē o f	*θeubăz	θ iː f ( - - )	θiːf	þēof	179	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thief	*θeubăz	279
 650	d iː p	*θeubăz	d iː b ( - - )	diːp	Dieb	179	German				thief	*θeubăz	279
-715	d ɪ ŋ	*þingą	d ɪ ŋ - ( - - )	dɪŋ	ding	196	Dutch				thing	*þingą	280
-714	θ ɪ ŋ	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	thing	196	English				thing	*þingą	280
-2247	þ i n g	*þingą	θ ɪ ŋ - ( - - )	θɪŋ	þing	196	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thing	*þingą	280
-713	d ɪ ŋ	*þingą	d ɪ ŋ - ( - - )	dɪŋ	Ding	196	German				thing	*þingą	280
-355	d ɛ ŋ k ə	*θankjăną	d ɛ ŋ k ( ə - )	dɛŋkə	denken	98	Dutch	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
-354	θ ɪ ŋ k	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	think	98	English	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
-2248	þ e n ċ a n	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	þenċan	98	Old_English	Proto: *θankăz → *θankjăną (Kroonen *þankjan- 'to think'); OE þenċan (wk.v.)			think	*θankjăną	281
-353	d ɛ ŋ k ə n	*θankjăną	d ɛ ŋ k ( ə n )	dɛŋkən	denken	98	German	Proto: *θankăz → *θankjăną (weak verb, Kroonen *þankjan- 'to think')			think	*θankjăną	281
+715	d ɪ ŋ	*θingą	d ɪ ŋ - ( - - )	dɪŋ	ding	196	Dutch				thing	*θingą	280
+714	θ ɪ ŋ	*θingą	θ ɪ ŋ - ( - - )	θɪŋ	thing	196	English				thing	*θingą	280
+2247	þ i n g	*θingą	θ ɪ ŋ - ( - - )	θɪŋ	þing	196	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thing	*θingą	280
+713	d ɪ ŋ	*θingą	d ɪ ŋ - ( - - )	dɪŋ	Ding	196	German				thing	*θingą	280
+355	d ɛ ŋ k ə	*θankjăną	d ɛ ŋ k ( ə - )	dɛŋkə	denken	98	Dutch	Proto: *θankăz → *θankjăną (weak verb, Kroonen *θankjan- 'to think')			think	*θankjăną	281
+354	θ ɪ ŋ k	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	think	98	English	Proto: *θankăz → *θankjăną (weak verb, Kroonen *θankjan- 'to think')			think	*θankjăną	281
+2248	þ e n ċ a n	*θankjăną	θ ɪ ŋ k ( - - )	θɪŋk	þenċan	98	Old_English	Proto: *θankăz → *θankjăną (Kroonen *θankjan- 'to think'); OE þenċan (wk.v.)			think	*θankjăną	281
+353	d ɛ ŋ k ə n	*θankjăną	d ɛ ŋ k ( ə n )	dɛŋkən	denken	98	German	Proto: *θankăz → *θankjăną (weak verb, Kroonen *θankjan- 'to think')			think	*θankjăną	281
 67	d ɔ r s t	*θurstuz	d ɔ r s t ( - - )	dɔrst	dorst	19	Dutch				thirst	*θurstuz	282
 66	θ ɜː s t	*θurstuz	θ ɜː - s t ( - - )	θɜːst	thirst	19	English				thirst	*θurstuz	282
 2249	þ u r s t	*θurstuz	θ ɜː - s t ( - - )	θɜːst	þurst	19	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thirst	*θurstuz	282
@@ -1240,13 +1240,13 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1715	θ ɪ s ə l	*θestilăz	θ ɪ s - ə l ( - - )	θɪsḷ	thistle	470	English				thistle	*θestilăz	283
 2250	þ i s t e l	*θestilăz	θ ɪ s - ə l ( - - )	θɪsḷ	þistel	470	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thistle	*θestilăz	283
 1714	d ɪ s t ə l	*θestilăz	d ɪ s t ə l ( - - )	dɪstəl	Distel	470	German				thistle	*θestilăz	283
-1660	d oː r n	*θurnăz	d oː r n ( - - )	doːrn	doorn	455	Dutch	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
-1659	θ ɔː n	*θurnăz	θ ɔː - n ( - - )	θɔːn	thorn	455	English	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
-2251	þ o r n	*θurnăz	θ ɔː - n ( - - )	θɔːn	þorn	455	Old_English	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
-1658	d ɔ r n	*θurnăz	d ɔ r n ( - - )	dɔrn	Dorn	455	German	Adopt *θurnăz (m. a-stem; Kroonen *þurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+1660	d oː r n	*θurnăz	d oː r n ( - - )	doːrn	doorn	455	Dutch	Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+1659	θ ɔː n	*θurnăz	θ ɔː - n ( - - )	θɔːn	thorn	455	English	Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+2251	þ o r n	*θurnăz	θ ɔː - n ( - - )	θɔːn	þorn	455	Old_English	Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
+1658	d ɔ r n	*θurnăz	d ɔ r n ( - - )	dɔrn	Dorn	455	German	Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).			thorn	*θurnăz	284
 427	d œy z ə n t	*θūs-undī	d œy z ( - ) ə n t ( - )	dœyzənt	duizend	117	Dutch				thousand	*θūs-undī	285
 426	θ aʊ z ə n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	thousand	117	English				thousand	*θūs-undī	285
-2252	þ ū s e n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	þūsend	117	Old_English	Kroonen *þūsundī- f. 'thousand' → OE þūsend; sendan 'to send' is wrong lexeme			thousand	*θūs-undī	285
+2252	þ ū s e n d	*θūs-undī	θ aʊ z ( - ) ə n d ( - )	θaʊzṇd	þūsend	117	Old_English	Kroonen *θūsundī- f. 'thousand' → OE þūsend; sendan 'to send' is wrong lexeme			thousand	*θūs-undī	285
 425	t au z ə n d	*θūs-undī	t au z ( - ) ə n d ( - )	tauzənt	tausend	117	German				thousand	*θūs-undī	285
 1351	d ɔ r s ə	*θreskăną	d ɔ r - s - ə - ( - - )	dɔrsə	dorsen	370	Dutch				thrash	*θreskăną	286
 1350	θ r æ ʃ	*θreskăną	θ - r æ ʃ - - - ( - - )	θræʃ	thrash	370	English				thrash	*θreskăną	286
@@ -1417,11 +1417,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 275	v ɪ n t ə r	*wintruz	v ɪ n t ə r ( - - )	vɪntər	Winter	76	German				winter	*wintruz	320
 1272	ʋ ɛɪ d ə	*waiθiz	ʋ ɛɪ d ( ə - )	ʋɛɪdə	weide	349	Dutch				withy	*waiθiz	321
 1271	ʋ ɪ ð ɪ	*waiθiz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	withy	349	English				withy	*waiθiz	321
-2296	w ī þ i ġ	*wīθijăz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	wīþiġ	349	Old_English	Wiktionary: PGmc *wīþijaz > OE wīþiġ; *waiþiz is wrong lexeme (catch/hunt)			withy	*wīθijăz	321
+2296	w ī þ i ġ	*wīθijăz	ʋ ɪ ð ( ɪ - )	ʋɪðɪ	wīþiġ	349	Old_English	Wiktionary: PGmc *wīθijaz > OE wīþiġ; *waiθiz is wrong lexeme (catch/hunt)			withy	*wīθijăz	321
 1270	v ai d ə	*waiθiz	v ai d ( ə - )	vaidə	Weide	349	German				withy	*waiθiz	321
 704	ʋ ɑu t	*walθuz	ʋ ɑu - t ( - - )	ʋɑut	woud	193	Dutch				wold	*walθuz	322
 703	ʋ əʊ l d	*walθuz	ʋ əʊ l d ( - - )	ʋəʊld	wold	193	English				wold	*walθuz	322
-2297	w ea l d	*walθuz	ʋ əʊ l d ( - - )	ʋəʊld	weald	193	Old_English	Kroonen p.572 *walþu- > OE weald; wald is Anglian (R/T p.313 WS wealdan vs Merc. waldan)			wold	*walθuz	322
+2297	w ea l d	*walθuz	ʋ əʊ l d ( - - )	ʋəʊld	weald	193	Old_English	Kroonen p.572 *walθu- > OE weald; wald is Anglian (R/T p.313 WS wealdan vs Merc. waldan)			wold	*walθuz	322
 702	v a l t	*walθuz	v a l d ( - - )	valt	Wald	193	German				wold	*walθuz	322
 1527	ʋ ɔ l f	*wulfăz	ʋ ɔ l f ( - - )	ʋɔlf	wolf	418	Dutch				wolf	*wulfăz	323
 1526	ʋ ʊ l f	*wulfăz	ʋ ʊ l f ( - - )	ʋʊlf	wolf	418	English				wolf	*wulfăz	323

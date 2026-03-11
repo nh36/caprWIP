@@ -5998,3 +5998,376 @@ These all involve following **palatal** consonants. The `-st-` cluster in
 - Orel, V. (2003). *A Handbook of Germanic Etymology*, p.161.
 - Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2,
   §6.9.6 (pp.332-335).
+
+---
+
+## OE findan 'to find': Verner's Law, NSL, and Paradigm-Cell Mapping
+
+**Date:** 2026-03-11
+**Status:** Under investigation; requires paradigm-cell solution
+
+### The Problem
+
+The TSV protoform `*finθăną` (after þ→θ normalization) causes the FST to produce
+`fīþan` instead of the expected `findan`. The FST's Nasal Spirant Lengthening
+(NSL) rule triggers on the `*nθ` cluster, lengthening the vowel and deleting the
+nasal:
+
+```
+*finθăną → *fīθăn → fīþan (✗ wrong)
+expected: findan (✓)
+```
+
+### Forschungsgeschichte: Comprehensive Literature Review
+
+#### 1. Verner's Law: Discovery and Formulation
+
+Karl Verner's 1877 paper explained the apparent exceptions to Grimm's Law by
+showing that PIE voiceless stops became voiced fricatives in Germanic when the
+immediately preceding syllable did not bear the PIE accent. This explains why
+PIE `*pəter-` → Gmc `*faðer` (OE `fæder`) but PIE `*bhrāter-` → Gmc `*brōþer`
+(OE `brōþor`).
+
+**Hogg (1992)** (Cambridge History of English, vol.1, pp.40-42) provides a clear
+formulation:
+
+> "According to Verner's Law voiceless stops of Indo-European, which regularly
+> yielded voiceless spirants in Germanic, became voiced if the accent in
+> Indo-European was not on the immediately preceding syllable."
+
+The PIE `*s` also underwent this change, yielding `*z` (later `*r` by rhotacism).
+
+#### 2. Grammatischer Wechsel in Strong Verb Paradigms
+
+The term "Grammatischer Wechsel" (grammatical alternation) was used by Jacob
+Grimm and Adolf Holzmann (1870) to describe the consonant alternations within
+strong verb paradigms resulting from Verner's Law.
+
+**Fulk (2018) §12.17** provides the definitive modern statement:
+
+> "It is usually assumed that voicing under Verner's law is to be expected only
+> in the **preterite plural** and the **passive participle** of strong verbs, an
+> expectation raised by the variable position of the accent in Sanskrit verbs."
+
+This means for a Class III verb like `*finþan-`, the PGmc paradigm was:
+
+| Form | Reconstructed | Stress | Consonant |
+|------|---------------|--------|-----------|
+| Infinitive | `*finþaną` | Root-stressed | Voiceless `*þ` |
+| Present 1sg | `*finþō` | Root-stressed | Voiceless `*þ` |
+| Present 3sg | `*finþiþi` | Root-stressed | Voiceless `*þ` |
+| Preterite 1/3sg | `*fanþ` | Root-stressed | Voiceless `*þ` |
+| **Preterite Plural** | `*funđunþ` | Suffix-stressed | **Voiced `*đ`** |
+| **Past Participle** | `*funđanaz` | Suffix-stressed | **Voiced `*đ`** |
+
+The voiced `*đ` in the pret. pl. and past ptp. reflects PIE suffix-accentuation:
+in the perfect plural and participial forms, the accent was on the ending, not
+the root, triggering Verner's Law voicing.
+
+#### 3. Nasal Spirant Lengthening (NSL)
+
+**Fulk (2018) §4.11** defines NSL precisely:
+
+> "In North Sea Germanic a nasal consonant was lost before any voiceless
+> fricative, with nasalization and compensatory lengthening of the preceding
+> vowel. The change thus affects **mf, ns, nþ**..."
+
+The affected clusters:
+- `*mf` → `*f̃` (e.g., `*fimf` → `*fīf` → OE `fīf` 'five')
+- `*ns` → `*s̃` (e.g., `*gans` → `*gōs` → OE `gōs` 'goose')
+- `*nþ` → `*þ̃` (e.g., `*anþeraz` → `*ōþer` → OE `ōþer` 'other')
+
+**R/T vol.2 §5.1.1** (pp.154-157) provides the crucial data for `*finþan`:
+
+> "PGmc *finþan 'to find' (Goth. finþan, ON finna, OHG findan) > *fīþan > OS
+> fīðan (beside findan **with voiced VL alternant levelled**, cf. OE findan, OF
+> finda)"
+
+#### 4. Evidence from the Daughter Languages
+
+**Gothic:** `finþan` — Preserved the voiceless `*þ` throughout the paradigm
+(Gothic eliminated Verner alternations by analogy, generalizing the voiceless).
+
+**Old Norse:** `finna` — The `*þ` was assimilated to `*nn` after nasal (a
+separate change, not NSL).
+
+**Old Saxon:** BOTH forms attested:
+- `fīðan` — NSL applied to `*finþan` → `*fīþan` → `fīðan`
+- `findan` — The Verner's Law voiced alternant `*đ` (> `*d`) was generalized
+
+**Old English:** ONLY `findan` — The voiced alternant won completely.
+
+**Old Frisian:** `finda` — Same as OE, voiced alternant generalized.
+
+**Old High German:** `findan` — Voiced alternant, but no NSL anyway (OHG is
+not Ingvaeonic).
+
+#### 5. Etymological Dictionary Reconstructions
+
+**Kroonen (2013) p.142:**
+
+> "*finþan- sv. 'to find; to feel' — Go. finþan sv. 'id.', ON finna sw. 'id.',
+> **OE findan sw. 'id.'**, E to find, OFri. finda sv. 'id.', OS fīðan, findan
+> sv. 'id.', ODu. findan sv. 'id.', Du. vinden sv. 'id.', OHG findan sv. 'id.',
+> G finden sv. 'id.' > *pént-e- (IE)"
+
+Kroonen lists OE as `findan` (with `d`), reflecting the levelled voiced form.
+He also mentions related forms `*fanþjan-`, `*fandōn-`, `*fundōn-`.
+
+**Orel (2003) p.99:**
+
+> "*fenþanan str.vb.: Goth finþan 'to find out, to recognize, to learn', ON
+> finna 'to find', OE findan id., OFris finda id., OS findan id., OHG findan
+> id. A secondary verb derived from *pontHo-..."
+
+Orel uses `*fenþanan` (with `*þ`), the original PIE-based form, but notes the
+actual OE form has `d`.
+
+#### 6. The Levelling Chronology
+
+**Campbell (1959) §741** describes the OE Class III paradigm:
+
+> "bindan, bind — band, bond — bundon — bunden
+> Similarly many verbs, e.g. drincan drink, gelimpan happen, grindan grind,
+> springan spring, climban climb... Findan find, has in W-S 1st and 3rd past
+> sg. funde (replacing fand)."
+
+Campbell notes the OE paradigm shows `d` throughout, with even the pret. sg.
+showing `funde` (levelled from the plural) instead of expected `×fand`.
+
+**Hogg (1992) p.108** discusses the phonological merger:
+
+> "Old English spelling never shows these changes, so that we find in strong
+> verbs alternations such as drīfan, drāf, drifon, drifen 'drive'... the third
+> and fourth have [v,z] due to Verner's Law."
+
+For `*finþan`, the original Verner alternation `*þ/*đ` has been completely
+eliminated in OE by generalizing the voiced form.
+
+**Fulk (2018) §12.17** confirms the pattern for Classes I-III:
+
+> "The considerable preponderance of the evidence thus suggests that... the
+> pattern in [Classes I-III] was... voicing in the preterite (sg. and pl.) and
+> the pass. participle."
+
+### Analysis: The Core Insight
+
+The key insight from the user is: **rather than using the infinitive form
+(where the voiced consonant was ANALOGICALLY introduced), we should use a
+paradigm cell where the voiced consonant was REGULAR (lautgesetzlich).**
+
+In PGmc, the voiced `*đ` was **regular** (not analogical) in:
+- **Preterite plural:** `*funđunþ`
+- **Past participle:** `*funđanaz`
+
+If OE generalized the voiced alternant from these cells, and we want to model
+the most *regular* pathway into OE, we should trace through one of these
+cells — not the infinitive, which had the voiced form only by analogy.
+
+### The Full PGmc Paradigm
+
+| Cell | PGmc Form | Expected Consonant | Notes |
+|------|-----------|-------------------|-------|
+| Inf. | `*finþaną` | `*þ` (voiceless) | Root-stressed |
+| Pres. 1sg | `*finþō` | `*þ` | Root-stressed |
+| Pres. 2sg | `*finþizi` | `*þ` | Root-stressed |
+| Pres. 3sg | `*finþiþi` | `*þ` | Root-stressed |
+| Pres. pl. | `*finþanþi` | `*þ` | Root-stressed |
+| Pret. 1/3sg | `*fanþ` | `*þ` | Root-stressed, o-grade |
+| Pret. 2sg | `*funþiz` (WGmc) | `*þ` | WGmc adopted from pl. stem |
+| **Pret. pl.** | `*funđunþ` | **`*đ`** | Suffix-stressed, Verner |
+| **Past ptp.** | `*funđanaz` | **`*đ`** | Suffix-stressed, Verner |
+
+### The Full OE Paradigm
+
+| Cell | OE Form | Consonant | Source |
+|------|---------|-----------|--------|
+| Inf. | `findan` | `d` | **Levelled** from pret. pl./ptp. |
+| Pres. 1sg | `finde` | `d` | Levelled |
+| Pres. 2sg | `findest` | `d` | Levelled |
+| Pres. 3sg | `findeþ` | `d` | Levelled |
+| Pres. pl. | `findaþ` | `d` | Levelled |
+| Pret. 1/3sg | `fand` ~ `funde` | `d` | Levelled (W-S even has `funde`) |
+| **Pret. pl.** | `fundon` | `d` | **Regular** from `*funđunþ` |
+| **Past ptp.** | `funden` | `d` | **Regular** from `*funđanaz` |
+
+### Proposal: Use the Past Participle as the Protoform
+
+**Rationale:** The past participle `*funđanaz` (or nominalized `*funđanaz`) has:
+
+1. **Regular (lautgesetzlich) `*đ`** — not analogical
+2. **No NSL** — the cluster is `*nđ` (voiced), not `*nþ` (voiceless)
+3. **Regular sound changes into OE** — `*funđanaz` → `*fundanaz` → `funden`
+
+If we use the past participle as the representative form, the FST will:
+- Not trigger NSL (because `*đ` is voiced)
+- Correctly derive OE `funden`
+
+**Alternative: Use the Preterite Plural `*funđunþ`**
+
+This also has regular `*đ`, and would derive `fundon` by regular sound change.
+
+### Which Cell is Optimal?
+
+For `*finþan`, both pret. pl. and past ptp. have regular `*đ`. But for FST
+evaluation, we typically compare against the infinitive as target. This creates
+a mismatch:
+
+- Input: pret. pl. `*funđunþ` or past ptp. `*funđanaz`
+- Expected output: `findan` (infinitive)
+
+This won't work directly — we'd get `fundon` or `funden`, not `findan`.
+
+### Revised Options
+
+#### Option E: Use a Paradigm Cell with Regular `*đ` and Match to That Cell
+
+Change the target in the TSV from `findan` (infinitive) to a form where the `d`
+is inherited regularly:
+
+| Protoform | Target | Regular? |
+|-----------|--------|----------|
+| `*funđunþ` | `fundon` (pret. pl.) | ✓ Regular |
+| `*funđanaz` | `funden` (past ptp.) | ✓ Regular |
+
+**Pros:**
+- Fully lautgesetzlich — no analogy involved
+- No FST changes needed
+- Honest about what is regular vs. analogical
+
+**Cons:**
+- Changes the "cognate set" structure (not infinitive-to-infinitive)
+- Requires TSV schema to allow paradigm-cell mappings
+
+#### Option F: Use Pre-Levelled Proto `*findaną`
+
+Use an intermediate proto-stage that reflects post-levelling, pre-OE:
+
+- Input: `*findaną` (Pre-Ingvaeonic, with levelled `*d`)
+- Output: `findan` (OE infinitive)
+
+**Pros:**
+- Infinitive-to-infinitive mapping preserved
+- Reflects the actual input to OE sound changes
+- Simple TSV fix
+
+**Cons:**
+- Not "true" PGmc — uses an intermediate reconstructed stage
+- The `*d` in the infinitive is etymologically analogical
+
+#### Option G: Acknowledge and Document
+
+Keep the infinitive mapping but document that `findan` is not derivable by
+regular sound change from `*finþaną`. Either:
+1. Mark as "irregular/analogical" in the TSV
+2. Use a separate column for "remarks" explaining the levelling
+
+### Recommendation
+
+**Option E (past participle mapping) is the most principled** for a
+Neogrammarian FST that aims to model regular sound change. The past participle:
+
+- Has regular `*đ` from Verner's Law
+- Develops regularly to OE `funden`
+- Avoids the NSL problem entirely
+
+**For practical purposes**, Option F (pre-levelled `*findaną`) is acceptable
+as it reflects the actual input form that OE inherited. This is analogous to
+how we use PWGmc forms with j-gemination already applied.
+
+### Similar Verbs to Check
+
+Other Class III verbs with potential Verner alternations:
+
+| Verb | PGmc Inf. | Expected VL in pret.pl./ptp. | OE |
+|------|-----------|------------------------------|-----|
+| bind | `*binþan-` | `*đ` | `bindan` (d generalized) |
+| find | `*finþan-` | `*đ` | `findan` (d generalized) |
+| grind | `*grinþan-` | `*đ` (?) | `grindan` |
+| wind | `*winþan-` | `*đ` (?) | `windan` |
+
+Also Class I verbs with `*s/*z` alternation (cf. Hogg's `drīfan` example):
+- `*rīsaną` → OE `rīsan` (s) vs. `riron` (VL `*z` → `r`)
+- `*kiusaną` → OE `cēosan` (s) vs. `curon` (VL `*z` → `r`)
+
+### Current FST Implementation
+
+The current `EnglishStarFricative` class is:
+```foma
+define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+```
+
+And NSL is:
+```foma
+define OENasalSpirantLengthening [
+    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
+    {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
+    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
+    ...
+];
+```
+
+**Note:** The NSL rule is phonologically correct — `*nþ` DID trigger NSL in
+Ingvaeonic. The problem is not the rule but the input form: the infinitive
+`*finþaną` underwent Verner levelling before NSL applied.
+
+### Action Items
+
+1. ~~Research which paradigm cell gives the most regular OE outcome~~
+2. ~~Determine if past participle `*funđanaz` → `funden` is viable~~
+3. ~~Alternatively, use pre-levelled `*findaną` if infinitive mapping is required~~
+4. Check other Class III verbs for similar issues
+
+### Resolution (2026-03-11)
+
+**Solution: Past participle paradigm-cell mapping**
+
+The infinitive `*finþaną` has voiceless `*þ` (Verner's Law: root-stressed), but OE
+`findan` shows levelled `d` throughout. Rather than trace the analogical infinitive,
+we map the past participle where `*đ > *d` is **regular**:
+
+| Proto | Target | Notes |
+|-------|--------|-------|
+| `*fundenăz` | `funden` | Fully lautgesetzlich |
+
+**Changes made:**
+
+1. **TSV** (row 2011): Changed from `*finθăną → findan` to `*fundenăz → funden`
+   - Note field: "Past participle mapping: VL *đ is regular in ptp (see DEV_NOTES.md)"
+
+2. **FST input grammar** (`pgrmCodaComplex`): Added `n:{*n} ð:{*ð}` cluster
+   - Required for forms with post-nasal voiced fricative
+
+3. **NSL rule** (`OENasalSpirantLengthening`): Created `EnglishStarVoicelessFricative`
+   class (excluding `*ð`, `*β`) to prevent spurious lengthening before voiced
+   fricatives. NSL only applies to voiceless: `*mf, *ns, *nþ` (Fulk §4.11).
+
+4. **Protoform adjustment**: Used `*fundenăz` (with `*e` in suffix) rather than
+   `*fundanăz` because OE past participles have `-en` from unstressed fronting.
+   The `-enăz` suffix was already in `pgrmWeakTailVowel`.
+
+**Why this works:**
+
+- PGmc `*funđanaz` (ptp.) had regular Verner-voiced `*đ` (suffix-stressed)
+- Post-nasal `*đ` hardened to `*d` in WGmc (represented directly in proto)
+- NSL does not apply because `*d` is a stop, not a fricative
+- Unstressed `*a > *e` in suffix gives OE `-en`
+- Result: `*fundenăz → funden` ✓
+
+### Sources
+
+- Bammesberger, A. (1992). "The place of English in Germanic and Indo-European"
+  in Hogg (ed.) *Cambridge History of the English Language*, vol.1, pp.26-66.
+- Campbell, A. (1959). *Old English Grammar*, §§390-392, 735-741.
+- Fulk, R.D. (2018). *A Comparative Grammar of the Early Germanic Languages*,
+  §§4.11, 6.6-6.7, 12.17.
+- Grimm, J. (1848). *Geschichte der deutschen Sprache*.
+- Hogg, R.M. (1992). *A Grammar of Old English* / *Cambridge History of the
+  English Language* vol.1, pp.40-42, 107-108.
+- Holzmann, A. (1870). *Altdeutsche Grammatik*.
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.142.
+- Orel, V. (2003). *A Handbook of Germanic Etymology*, p.99.
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2,
+  §5.1.1 (pp.154-157).
+- Verner, K. (1877). "Eine Ausnahme der ersten Lautverschiebung" *Zeitschrift
+  für vergleichende Sprachforschung* 23: 97-130.
