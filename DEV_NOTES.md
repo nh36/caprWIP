@@ -5633,3 +5633,267 @@ Change the TSV target from `ġift` → `ġieft`.
 - Hall, J.R.C. (1916). *A Concise Anglo-Saxon Dictionary*, s.v. giefu
 
 Evaluation: 309/386 OE matches (80.1%).
+
+---
+
+## OE hierfest 'harvest' — Unstressed Front Vowel Merger
+
+**Date:** 2026-03-10
+**Mismatch:** `*xarbistuz` → FST `hierfist` | Expected `hierfest`
+**Issue:** FST lacks the late OE unstressed `*i > *e` merger
+**Status:** Solution identified — implement `OEMedUnstressedILowering`
+
+### The Problem
+
+The FST produces `hierfist` with `-ist-` in the second syllable, but the TSV
+expects `hierfest` with `-est-`. The question is: what sound change converts
+medial `*-ist-` to `-est-`?
+
+### Etymology: PGmc Had *i
+
+All major sources agree that PGmc had `*i` in the medial syllable:
+
+**Kroonen (2013) p.210:**
+> "*harbista- m. 'autumn, fall' — ON haustr m. 'id.', ... OE herfest m.
+> 'harvest, autumn', ... OHG herbist m. 'harvest; autumn'"
+
+**Orel (2003) p.161:**
+> "*xarbistuz ~ *xarbustuz sb.m.: ON haust 'autumn' (neut.), OE hærfest
+> 'harvest, autumn', OFris herfst id., OHG herbist id."
+
+**Bammesberger (1997) p.223:**
+> "Über die etymologische Verknüpfung einer Grundform urg. *harb-ista-z
+> bestehen kaum Unklarheiten, denn *harb- läßt sich gut mit lat. carpere
+> 'pflücken' und gr. καρπός 'Frucht' verbinden."
+
+The `*i` is secure from IE etymology (*kerp-/*karp- 'to pluck').
+
+### Two Separate Sound Changes: Distinguishing Them
+
+There are TWO different `*i > *e` changes in OE phonology. The literature
+must be read carefully to distinguish them:
+
+#### 1. Early Stressed/Root-Initial *i > *e (Very Limited)
+
+**Campbell (1959) §114:**
+> "i > e before mid and low vowels. In OE this change is shown **only by**
+> the common Gmc. words nest nest, and wer man"
+
+This is an early, PRE-OE change affecting **stressed** root-initial `*i`
+before non-high vowels. It is extremely limited — Campbell explicitly says
+it applies "only" to `nest` and `wer`.
+
+This is NOT the change relevant to `hierfest`.
+
+#### 2. Late OE Unstressed Front Vowel Merger (General)
+
+**Hogg (1992) Cambridge History vol.1, pp.119-120:**
+> "By the time of the earliest texts it would appear that the front vowels
+> had merged together as /e/, for in those texts, although inflectional -i
+> and -æs were often preserved, even the best of scribes make enough errors
+> ... to make one suppose that they were attempting with only a limited
+> degree of success to represent a stage which was fast becoming a hazy
+> memory. We are thus entitled to claim that **by about 700 all unstressed
+> front vowels had become /e/**. The only exception is that [i] was
+> preserved in derivational suffixes such as **-ig, -ing, -isc**, e.g.
+> mihtig 'mighty', cyning 'king', Englisc 'English'."
+
+**Campbell (1959) §369:**
+> "æ, e, and i fell together in a sound written e in unaccented syllables.
+> æ and i remain undisturbed only in very early texts."
+
+**R/T (2014) vol.2, §6.9.6 (pp.332-335):**
+> "The most important change was the merger of æ and i as e in unstressed
+> word-final and other inflectional syllables... The same merger occurred
+> in various derivational suffixes; thus ærist 'first' (Cæd 5) > ærest,
+> dryhtin 'lord' (spelled dryctin, Cæd 8) > dryhten, and so on. Inherited i
+> adjacent to palatals generally survives, for instance in -isc and in
+> -ig < *-ig."
+
+THIS is the change relevant to `hierfest`. It is:
+- **Late**: occurring around 700 AD, AFTER i-umlaut
+- **General**: affecting ALL unstressed front vowels, not just `*i`
+- **With exceptions**: `*i` preserved before palatals (-ig, -ing, -isc, -iht)
+
+### Why OHG Differs
+
+OHG `herbist` **retains** the medial `-i-`, while OE has `-e-`. This is
+because the unstressed front vowel merger is **OE-specific**, not a pan-WGmc
+development. Each WGmc language had different unstressed vowel developments:
+
+- **OHG**: Retained distinct unstressed vowels longer
+- **OE**: Merged æ, e, i → e in unstressed syllables by ~700
+- **OS**: Variable (forms with both `-i-` and `-e-`)
+
+### The Full Development Path for WS *hierfest
+
+Given PGmc `*harbistaz`, the native WS development is:
+
+1. `*harbistaz` — PGmc nominative singular
+2. `*hærbist-` — a-fronting: `*a > *æ` (R/T §5.1.2)
+3. `*hearbist-` — breaking: `*æ > *ea` before `r+C` (Campbell §139)
+4. `*hierbist-` — i-umlaut: `*ea > *ie` triggered by medial `*-i-` (Campbell §200)
+5. `*hierbest-` — **unstressed i > e** (Hogg p.120, Campbell §369, R/T §6.9.6)
+6. `hierfest` — spelling conventions, consonant changes
+
+The crucial point: the medial `*i` does TWO things sequentially:
+- First (at step 4) it **triggers i-umlaut** in the root syllable
+- Later (at step 5) it **itself lowers to e** as an unstressed vowel
+
+There is no contradiction here. The i-umlaut trigger and the unstressed
+lowering are ordered chronologically: umlaut happens first, unstressed
+merger happens later.
+
+### Bammesberger (1997): What He Did and Didn't Address
+
+Bammesberger's article focused on two issues:
+
+1. **Refuting the `*harubist-` hypothesis**: He showed that Campbell's
+   reconstruction `*haruvist-` (with medial `*u` for "double umlaut") cannot
+   be correct, because (a) OHG and OFris show no trace of medial `*u`, and
+   (b) ME `hervest` cannot derive from `*harubist-`. The correct PGmc is
+   `*harbist-` with `*i`.
+
+2. **Showing that WS `hærfest` is borrowed from Anglian**: The native WS
+   development would give `*hierfest` or `*hyrfest`, but this is unattested.
+   The forms `hærfest` and `herfest` found in WS texts are Anglian borrowings.
+
+Bammesberger did NOT explicitly address how `*-ist-` becomes `-est-`. He
+simply assumed it, writing derivations like "durch i-Umlaut entstand
+*herbist > herfest" (§8, p.227) without explaining the medial vowel change.
+This is presumably because Campbell §369 (which he cites extensively) makes
+clear that unstressed `*i > e` is a general, productive change.
+
+### The Campbell *haruvist- Hypothesis (Rejected)
+
+For completeness, here is why Campbell's `*haruvist-` fails:
+
+**Bammesberger (1997) §6 (p.226):**
+> "Da lætemest... von der Silbenstruktur her den gleichen Bau wie *harubista-
+> aufweist, im Altenglischen aber als lætemest erscheint, müßte man bei
+> strikter Anwendung der Lautgesetze als Reflex von *harubist- > *hærybist-
+> im Altenglischen **hærefest** erwarten."
+
+If `*harubist-` were correct, we'd expect OE **hærefest** (with preserved
+medial vowel reflex), not `hærfest`. The double-umlaut theory predicts the
+wrong outcome.
+
+**Bammesberger (1997) §7 (p.227):**
+> "Ein gravierender Einwand gegen den Ansatz *harubist- als Vorform von ae.
+> hærfest besteht darin, daß auf diesem Wege die me. Form hervest nicht
+> unmittelbar erklärt werden kann."
+
+ME `hervest` cannot derive from `*harubist-`, but easily derives from
+`*harbist-`.
+
+### WS hærfest as Anglian Borrowing
+
+**Bammesberger (1997) §14 (p.230):**
+> "Die den Lautregeln des Westsächsischen entsprechende Fortsetzung
+> *hierfest, *hyrfest von urg. *harbist- (1.) ist nicht überliefert. Sowohl
+> hærfest als auch herfest können jedoch auf der Basis von *harbist- im
+> Rahmen der nichtwestsächsischen Phonologie als regelrecht erklärt werden.
+> Im Westsächsischen darf man hærfest in die Gruppe von Lexemen einreihen,
+> die als Übernahmen aus dem Anglischen gelten."
+
+("The regular WS development *hierfest, *hyrfest from PGmc *harbist- is NOT
+attested. Both hærfest and herfest can, however, be regularly explained from
+*harbist- within non-WS phonology. In WS, we may classify hærfest among
+the lexemes that count as borrowings from Anglian.")
+
+This confirms: the FST producing `hierfist` is almost correct — it's just
+missing the final step (unstressed `*i > *e`). Once that's added, it will
+produce `hierfest`, the expected native WS form.
+
+### Current FST Gap
+
+The FST already has:
+- `OEMedUnstressedULowering` (line 1454-1456): medial `*u → *o`
+- `OEWeakTailReduction2` (line 1486): final `*i → *e`
+
+**Missing:** A parallel rule for **medial** unstressed `*i → *e`.
+
+The FST correctly handles final unstressed `*i`, but not medial unstressed
+`*i`. This is why `*hierbist-` stays as `hierfist` instead of becoming
+`hierfest`.
+
+### Implementation Attempt #1: Simple Parallel Rule (FAILED)
+
+Initial attempt: add `OEMedUnstressedILowering` parallel to the `*u` rule:
+
+```foma
+define OEMedUnstressedILowering [
+    {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ 
+                    _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+
+**Result:** This caused a regression on `begin`:
+- `*biginnăną` → `beġennan` (wrong) instead of `beġinnan` (correct)
+
+**Problem:** The rule lowered the ROOT vowel `*i` in `ginn-`, not just the
+prefix vowel. The pattern V+C+_C matches both:
+- `*harb-ist-` (correct: `-ist-` is unstressed)
+- `*bi-ginn-` (wrong: `ginn-` is the stressed root)
+
+### Implementation Attempt #2: Mark Unstressed Vowels First
+
+The solution is to explicitly mark which `*i` vowels are unstressed BEFORE
+applying the lowering rule. The FST already uses breve markers (e.g., `*ĭ`)
+for reduced vowels in some contexts.
+
+**Stress assignment logic:**
+
+1. By default, the **first syllable** is stressed (Germanic stress rule)
+2. Exception: if the word begins with a **known unstressed prefix**
+   (`*bi-`, `*ga-`, `*fra-`, etc.), stress falls on the **second syllable**
+3. All vowels NOT in the stressed syllable are unstressed
+
+**Implementation plan:**
+
+1. Add a rule `OEUnstressedIMarking` that converts `{*i}` → `{*ĭ}` in
+   positions that are NOT stressed:
+   - After the first syllable (in words without prefix)
+   - After the second syllable (in words with unstressed prefix)
+   - The first/second syllable `*i` remains unmarked (= stressed)
+
+2. Modify `OEMedUnstressedILowering` to only target `{*ĭ}`:
+   ```foma
+   define OEMedUnstressedILowering [
+       {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+   ];
+   ```
+
+3. Order: `OEUnstressedIMarking` must come AFTER i-umlaut but BEFORE
+   `OEMedUnstressedILowering`.
+
+**Defining "first syllable" vs "second syllable":**
+
+- First syllable: `.#.` to first vowel
+- Second syllable: first vowel + C+ to second vowel
+- For prefix words: `.#. {prefix} C* V` marks the stressed syllable
+
+This requires careful FST engineering to identify syllable boundaries.
+
+### Exceptions: When Medial *i is Preserved
+
+**Hogg p.120** and **Campbell §371** specify that `*i` is preserved in:
+- `-ig` (e.g., `mihtig` 'mighty')
+- `-ing` (e.g., `cyning` 'king')
+- `-isc` (e.g., `Englisc` 'English')
+- `-iht` (e.g., `stæniht` 'stony')
+
+These all involve following **palatal** consonants. The `-st-` cluster in
+`*-ist-` is NOT palatal, so the lowering should apply.
+
+### Sources
+
+- Bammesberger, A. (1997). 'Die Vorform von altenglisch hærfest', *Anglia*
+  115: 223-230.
+- Campbell, A. (1959). *Old English Grammar*, §§114, 369-372.
+- Hogg, R.M. (1992). *A Grammar of Old English* / *Cambridge History of the
+  English Language* vol.1, pp.119-120.
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.210.
+- Orel, V. (2003). *A Handbook of Germanic Etymology*, p.161.
+- Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2,
+  §6.9.6 (pp.332-335).
