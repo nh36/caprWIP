@@ -196,6 +196,7 @@ define pgrmCodaComplex [
     n:{*n} n:{*n} |
     n:{*n} r:{*r} |
     n:{*n} θ:{*θ} |
+    n:{*n} ð:{*ð} |
     p:{*p} n:{*n} |
     p:{*p} p:{*p} |
     r:{*r} b:{*b} |
@@ -288,6 +289,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} n:{*n} |
     ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} n:{*n} ą:{*ą} |
+    a:{*a} n:{*n} ă:{*ă} z:{*z} |
     ă:{*ă} n:{*n} ē:{*ē} |
     j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
@@ -711,6 +713,9 @@ define EnglishStarVelarStop [{*k} | {*g}];
 define EnglishStarLabial [{*b} | {*β} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
 define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+
+# Voiceless fricatives only - for NSL (Fulk §4.11: *mf, *ns, *nþ)
+define EnglishStarVoicelessFricative [{*f} | {*s} | {*θ} | {*h} | {*x}];
 
 define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
 
@@ -1688,16 +1693,16 @@ define OEWsPalatalUmlaut [
 ];
 
 define OENasalSpirantLengthening [
-    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
-    {*e} -> {*ē} || _ EnglishStarNasal EnglishStarFricative,
-    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarFricative,
-    {*o} -> {*ō} || _ EnglishStarNasal EnglishStarFricative,
-    {*u} -> {*ū} || _ EnglishStarNasal EnglishStarFricative,
-    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarFricative
+    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*e} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*o} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*u} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative
 ];
 
 define OENasalSpirantLoss [
-    EnglishStarNasal -> 0 || _ EnglishStarFricative
+    EnglishStarNasal -> 0 || _ EnglishStarVoicelessFricative
 ];
 
 define OESkPalatalization [
