@@ -6451,3 +6451,63 @@ approach because it's a genuine Verner alternation case.
   §5.1.1 (pp.154-157).
 - Verner, K. (1877). "Eine Ausnahme der ersten Lautverschiebung" *Zeitschrift
   für vergleichende Sprachforschung* 23: 97-130.
+
+### Further Research: Other Potential *ð Forms in TSV (2026-03-11)
+
+**Question:** Is having only one `*ð` form (`*funðanăz → funden`) correct, or are we
+missing other Verner þ/ð cases?
+
+**Investigation methodology:**
+1. Searched Campbell §398.2 for dental Verner paradigms
+2. Cross-referenced Fulk §12.17 (Verner's Law in strong verbs)
+3. Checked R/T vol.2 for Class I and III dental alternations
+4. Audited current TSV forms with `*d` for potential Verner origins
+
+**Key sources on dental Verner:**
+
+Campbell §398.2 gives the canonical example list for all Verner alternations:
+> "infs. and pass. parts. of OE drifan drive, céosan choose, snīþan cut, féon draw,
+> séon see, would be `*dreifan-, *drivan-`; `*keusan-, *kozan-`; `*sneipan-, *snidan-`;
+> `*teuxan-, *tozan-`; `*sexuan-, *sezuan-`"
+
+Fulk §12.17 specifically discusses the dental case:
+> "In Old English... the preterite plural consistently reflects a voiced fricative
+> where Prokosch predicts a voiceless (cwǣdon 'said', wǣron 'were', gefǣgon 'rejoiced')...
+> the passive participle reflects a voiced one, as predicted, in cweden 'said' and
+> sewen, gesawen 'seen'."
+
+**Current TSV status for dental Verner verbs:**
+
+| Verb | PGmc (theoretical inf.) | OE inf. | OE outcome | Status in TSV |
+|------|-------------------------|---------|------------|---------------|
+| find | `*finþaną` | findan | leveled `d` | **FIXED**: using `*funðanăz → funden` |
+| ride | `*rīþaną` | rīdan | leveled `d` | Present: `*rīdăną → rīdan` (leveled form) |
+| say | `*kweþaną` | cweðan | leveled `ð` | **Not in TSV** |
+| cut | `*snīþaną` | snīþan | no leveling | **Not in TSV** |
+
+**Analysis:**
+
+1. **`*rīdăną → rīdan`**: Current TSV uses the leveled form with `*d`. This is correct
+   for our purposes — the FST derives `rīdan` correctly. The true PGmc infinitive
+   would be `*rīþaną`, but OE generalized the Verner `d` throughout the paradigm.
+   Since the infinitive IS the form we're targeting, using leveled `*rīdăną` is
+   acceptable (analogous to Option F for findan).
+
+2. **`cweðan, snīþan`**: These verbs are not in our TSV, so no action needed.
+
+3. **`findan`**: This required special treatment because:
+   - NSL applies to `*-nþ-` (voiceless) but NOT to `*-nð-` (voiced)
+   - Using the infinitive `*finþaną` triggers spurious NSL → wrong output
+   - Solution: use past participle `*funðanăz` where `*ð` is regular from Verner
+
+**Conclusion:**
+
+Having only one `*ð` form in the TSV (`*funðanăz`) is **correct**. The other dental
+Verner verbs in the TSV (`rīdan`) work fine with their leveled protoforms because:
+
+1. Leveling happened in PGmc/PWGmc, before OE sound changes
+2. The leveled infinitive form IS what we're deriving
+3. No problematic sound change (like NSL) makes the leveled form unworkable
+
+The `findan` case was unique because NSL specifically targets voiceless `*þ` in
+`*-nþ-` clusters. For `rīdan`, there's no `*n` before the dental, so no NSL issue.
