@@ -196,6 +196,7 @@ define pgrmCodaComplex [
     n:{*n} n:{*n} |
     n:{*n} r:{*r} |
     n:{*n} θ:{*θ} |
+    n:{*n} ð:{*ð} |
     p:{*p} n:{*n} |
     p:{*p} p:{*p} |
     r:{*r} b:{*b} |
@@ -288,6 +289,7 @@ define pgrmWeakTailVowel [
     ă:{*ă} n:{*n} |
     ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} n:{*n} ą:{*ą} |
+    a:{*a} n:{*n} ă:{*ă} z:{*z} |
     ă:{*ă} n:{*n} ē:{*ē} |
     j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
@@ -1125,6 +1127,16 @@ define PWGmcLThVoicing [
     {*θ} -> {*d} || {*l} _
 ];
 
+# PWGmc: Dental fricative hardening (R/T vol.2 p.43).
+# R/T: "In PWGmc the non-coronal voiced obstruents continued to exhibit that
+# allophony, but *d became a stop in all positions."
+# PGmc *ð (voiced dental fricative) → PWGmc *d (stop) universally.
+# This affects Verner's Law forms where *þ was voiced to *ð (e.g., past participles).
+# Examples: *funðanaz → *fundanaz (ptp. of 'find'), *weorðan → *werdan
+define PWGmcDentalHardening [
+    {*ð} -> {*d}
+];
+
 # R/T §3.1.4: Before word-final *r, bimoric *ō → *a in PWGmc.
 # PGmc *watōr → PWGmc *watar → OE wæter.
 # The *a is then fronted by AFB and reduced by §6.9.6 merger.
@@ -1133,7 +1145,7 @@ define PWGmcPreFinalRShortening [
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
-# Order: monophthongization, ij-contraction, syllabic j, lþ-voicing.
+# Order: monophthongization, ij-contraction, syllabic j, lþ-voicing, dental hardening.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
@@ -1142,6 +1154,7 @@ define PWGmcChanges [
     .o. PWGmcIjContraction
     .o. PWGmcSyllabicJ
     .o. PWGmcLThVoicing
+    .o. PWGmcDentalHardening
     .o. PWGmcPreFinalRShortening
 ];
 
@@ -1544,6 +1557,26 @@ define OEPrefixAReduction [
 
 # Split into separate composed rules to avoid foma parallel rule context leakage.
 # When using [R1, R2] syntax, contextual restrictions can affect all rules.
+# Hogg (1992) p.120: "By First Fronting /a/ became /æ/ as in stressed syllables"
+# Unstressed suffix *a → *æ (parallel to stressed AFB, but applies before nasals too).
+# This feeds OEWeakTailReduction3 (*æ → *e), giving the chain: *a → *æ → *e.
+#
+# CRITICAL: Must run BEFORE OEWeakTailReduction1 ({*ă}→{*a}) to preserve the distinction
+# between original *a (e.g., in *-anăz participle suffix) and *ă (e.g., in *-jăną infinitive).
+# - *a (true short a, no breve): undergoes fronting → *æ → *e
+# - *ă (weak/reduced, with breve): skips this rule, becomes *a via Reduction1, stays *a
+#
+# This is NOT a separate sound change but an extension of AFB to unstressed pre-nasal
+# positions. AFB (line 1248) explicitly blocks before nasals, which is correct for
+# STRESSED syllables (giving OE mann not *mænn). But in UNSTRESSED syllables, fronting
+# did occur, as shown by participle *-anaz → *-æn → -en.
+#
+# Example: PGmc *funðanăz → *funðænăz → *funden (via *æ→*e)
+# Counter-example: *liznōjăną → leornian (the *ă skips this rule, stays as -ian)
+define OEUnstressedAFronting [
+    {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+
 define OEWeakTailReduction1 [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆}
@@ -1558,7 +1591,7 @@ define OEWeakTailReduction2 [
 define OEWeakTailReduction3 [
     {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
-define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
+define OEWeakTailReduction OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
