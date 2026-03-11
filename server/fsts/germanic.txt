@@ -1455,6 +1455,67 @@ define OEMedUnstressedULowering [
     {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
+# ===========================================================================
+# UNSTRESSED *i MARKING AND LOWERING
+# ===========================================================================
+# Hogg (1992) p.120: "by about 700 all unstressed front vowels had become /e/"
+# Campbell §369: "æ, e, and i fell together in a sound written e in unaccented syllables"
+# R/T §6.9.6: "The same merger occurred in various derivational suffixes; thus
+#   ærist 'first' > ærest, dryhtin 'lord' > dryhten"
+#
+# The challenge: we must distinguish STRESSED *i (which stays *i) from UNSTRESSED
+# *i (which lowers to *e). OE stress falls on:
+#   - First syllable (default Germanic stress), OR
+#   - Second syllable (if first syllable is an unstressed prefix: bi-, ga-, fra-, etc.)
+#
+# Strategy:
+#   Step 1: Mark ALL *i after the first vowel as *ĭ (tentatively unstressed)
+#   Step 2: For bi-/ni- prefix words, also mark the prefix *i as *ĭ
+#   Step 3: For prefix words, RESTORE the second-syllable *ĭ back to *i (stressed)
+#   Step 4: Lower remaining *ĭ to *e
+# ===========================================================================
+
+# Step 1: Mark non-first-syllable *i as unstressed (*ĭ)
+# Any *i preceded by a vowel + one or more consonants is in a non-first syllable.
+# Example: *harbistaz → *harb*ĭstaz (the *i in -ist- is after *a + *rb)
+define OEUnstressedIMarking1 [
+    {*i} -> {*ĭ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+
+# Step 2: For bi-/ni- prefix words, mark the prefix *i as unstressed
+# Pattern: word-initial *b/*n followed by *i followed by C+V (proving it's a prefix)
+# Example: *biginnăną → *b*ĭginnăną
+define OEUnstressedIMarking2 [
+    {*i} -> {*ĭ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
+];
+
+# Step 3: For prefix words, restore the stressed root *ĭ back to *i
+# After an unstressed prefix, the SECOND vowel is stressed.
+# Prefixes to handle:
+#   - bi-, ni- (prefix vowel is now *ĭ from step 2)
+#   - ga- (prefix vowel is *a)
+#   - fra- (prefix vowel is *a after *fr)
+# Example: *b*ĭg*ĭnnăną → *b*ĭg*innăną (restore second *ĭ)
+define OEUnstressedIMarking3 [
+    # bi-, ni- prefixes: restore *ĭ after prefix *ĭ + consonant(s)
+    {*ĭ} -> {*i} || .#. [{*b} | {*n}] {*ĭ} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
+    # ga- prefix: restore *ĭ after *ga + consonant(s)
+    {*ĭ} -> {*i} || .#. {*g} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
+    # fra- prefix: restore *ĭ after *fra + consonant(s)
+    {*ĭ} -> {*i} || .#. {*f} {*r} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+
+# Combine the marking steps
+define OEUnstressedIMarking OEUnstressedIMarking1 .o. OEUnstressedIMarking2 .o. OEUnstressedIMarking3;
+
+# Step 4: Lower unstressed *ĭ to *e
+# Only *ĭ (marked as unstressed) gets lowered; stressed *i is preserved.
+# Exception: *i preserved before palatals (-ig, -ing, -isc, -iht) — but those
+# involve palatal consonants which aren't matched by our consonant class here.
+define OEMedUnstressedILowering [
+    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+
 # R/T vol.2 p.303: "So also bi- > be-, ni 'not' > ne."
 # Unstressed prefix *i > *ĕ. Use *ĕ (e-breve) for reduced prefix vowels to mark them
 # as unstressed and exclude them from subsequent stressed-vowel changes (e.g., palatal
@@ -1880,6 +1941,8 @@ define EnglishProtoToOE (
     .o. OEPreconsonantalDegemination
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
+    .o. OEUnstressedIMarking
+    .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
     .o. OEPrefixAReduction
     .o. OEWeakTailReduction
@@ -1960,6 +2023,8 @@ define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHig
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
     .o. OEMedUnstressedULowering
+    .o. OEUnstressedIMarking
+    .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
     .o. OEPrefixAReduction
     .o. OEWeakTailReduction
