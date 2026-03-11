@@ -6910,6 +6910,34 @@ If we wanted to be MORE explicit about the allophony, we could:
 This is more explicit but produces the same output. The current system works
 correctly; this would just make the phonological reasoning more transparent.
 
+---
+
+### DECISION (2026-03-11): Option 2a Confirmed
+
+**After systematic analysis, we confirm the current approach is correct.**
+
+The representation scheme is:
+- `*þ` = voiceless fricative (Grimm's Law on PIE *t)
+- `*ð` = voiced fricative (Verner's Law on *þ)
+- `*d` = voiced stop (PIE *dh, or surface form after hardening)
+
+The FST implements this via:
+1. Input forms use `*ð` for Verner-derived voiced fricatives
+2. `PWGmcDentalHardening` converts `*ð → *d` (runs early in pipeline)
+3. `OENasalSpirantLengthening` runs later, sees the result
+
+This correctly handles:
+- `*funðanăz`: hardening → `*fundanăz` → NSL sees `*nd` → no lengthening ✓
+- `*finþaną`: unchanged → NSL sees `*nþ` → lengthening applies ✓
+
+**Why only one `*ð` in the TSV is correct:**
+- Other `*nd` forms (bindan, windan, hund, etc.) have ORIGINAL `*d` from PIE `*dh`
+- They were never `*þ` or `*ð` at any stage — no Verner alternation
+- Only `*finþaną/*funðanaz` is a genuine Verner case requiring the distinction
+
+**No changes needed.** The current system is phonologically sound and correctly
+models the PGmc → OE derivation.
+
 ### Sources Consulted
 
 - Campbell, A. (1959). *Old English Grammar*, §398.3 (pp.163-165)
