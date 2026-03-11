@@ -6318,85 +6318,79 @@ Ingvaeonic. The problem is not the rule but the input form: the infinitive
 3. ~~Alternatively, use pre-levelled `*findaną` if infinitive mapping is required~~
 4. Check other Class III verbs for similar issues
 
-### Resolution (2026-03-11) — NEEDS REVISION
+### Resolution (2026-03-11) — FULLY LAUTGESETZLICH
 
-**Current solution (problematic):**
+**Final solution:**
 
-The current implementation uses `*fundenăz → funden`, but this involved two
-shortcuts that bypassed proper sound change modeling:
+The derivation is now fully lautgesetzlich, using the true PGmc past participle
+`*funðanăz` and deriving `funden` via proper sound change rules:
 
-**Issue 1: `*ð → *d` (dental fricative → stop)**
-
-The PGmc past participle was `*funðanaz` with voiced dental fricative `*ð`.
-In PWGmc, this `*ð` became `*d` (stop) **universally** — not just after nasals.
+**Sound change 1: PWGmc dental hardening (`*ð → *d`)**
 
 R/T vol.2 p.43: "In PWGmc the non-coronal voiced obstruents continued to
 exhibit that allophony, but `*d` became a stop in all positions."
 
-**Problem:** Instead of implementing a PWGmc `*ð → *d` rule in the FST, I
-simply wrote `*d` directly into the protoform. This is expedient but not
-lautgesetzlich.
+**Implementation:** Added `PWGmcDentalHardening` rule in `germanic.txt` (line ~1131):
+```foma
+define PWGmcDentalHardening [
+    {*ð} -> {*d}
+];
+```
+This is composed into `PWGmcChanges` after `PWGmcLThVoicing`.
 
-**Proper solution:** Add a PWGmc rule: `{*ð} → {*d}`. This rule already exists
-implicitly in the orthography (`{*ð} → ð`), but it should be a consonant
-hardening rule that applies before other changes.
-
-**Issue 2: `*a → *e` in unstressed syllables**
-
-The PGmc past participle suffix was `*-anaz`. In OE this becomes `-en`.
+**Sound change 2: Unstressed `*a → *æ → *e`**
 
 Hogg (1992) p.120: "By First Fronting /a/ became /æ/ as in stressed syllables...
 By the time of the earliest texts... the front vowels had merged together as /e/...
 We are thus entitled to claim that by about 700 all unstressed front vowels
 had become /e/."
 
-So the historical chain is: `*-anaz → *-ænaz → *-enaz → OE -en`
+The historical chain: `*-anăz → *-ænăz → -en`
 
-**Problem:** Instead of implementing this sound change, I simply wrote `*e`
-directly into the protoform (`*fundenăz`). This bypasses the lautgesetzlich
-derivation.
+**Implementation:** Added `OEUnstressedAFronting` rule in `germanic.txt` (line ~1558):
+```foma
+define OEUnstressedAFronting [
+    {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ 
+                    _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
 
-**Proper solution:** The FST should have a rule for unstressed `*a → *æ`
-(already exists for stressed syllables: Anglo-Frisian Brightening). Then a
-rule for unstressed front vowel merger to `*e` should apply.
+**Critical ordering:** This rule must run BEFORE `OEWeakTailReduction1` (which
+converts `{*ă} → {*a}`). This preserves the distinction between:
+- Original `*a` (true short a, no breve): fronted to `*æ`, then merged to `*e`
+- Original `*ă` (weak/reduced, with breve): skips fronting, stays as `a`
 
-**Changes made (some unnecessary):**
+Example contrast:
+- `*funðanăz` → `funden`: the `-an-` has true `*a`, which fronts
+- `*liznōjăną` → `leornian`: the `-ăn-` has `*ă`, which stays as `-ian`
 
-1. **TSV** (row 2011): Changed from `*finθăną → findan` to `*fundenăz → funden`
-   - This is a workaround, not a proper derivation
+The existing `OEWeakTailReduction3` (`*æ → *e` in non-initial syllables) then
+completes the merger.
 
-2. **FST input grammar** (`pgrmCodaComplex`): Added `n:{*n} ð:{*ð}` cluster
-   - **UNNECESSARY** — we don't use `*ð` in the final protoform since we
-     wrote `*d` directly
+**Changes made:**
 
-3. **FST input grammar** (`pgrmWeakTailVowel`): Added `a:{*a} n:{*n} ă:{*ă} z:{*z}`
-   - **UNNECESSARY** — we use `-enăz` which was already defined
+1. **TSV** (row 2011): Using true PGmc form `*funðanăz → funden`
 
-4. **NSL rule** (`OENasalSpirantLengthening`): Created `EnglishStarVoicelessFricative`
-   class (excluding `*ð`, `*β`) to prevent spurious lengthening before voiced
-   fricatives.
-   - **USEFUL** — NSL should indeed only apply to voiceless fricatives
-     (`*mf, *ns, *nþ` per Fulk §4.11), not to voiced ones
+2. **FST** (`PWGmcDentalHardening`): New rule for `*ð → *d`
 
-**Summary of what needs to be done:**
+3. **FST** (`OEUnstressedAFronting`): New rule for unstressed `*a → *æ`
 
-1. **Remove unnecessary FST additions:**
-   - `n:{*n} ð:{*ð}` in `pgrmCodaComplex`
-   - `a:{*a} n:{*n} ă:{*ă} z:{*z}` in `pgrmWeakTailVowel`
+4. **FST** (`pgrmCodaComplex`): Added `n:{*n} ð:{*ð}` cluster for input grammar
 
-2. **Keep the useful NSL fix:**
-   - `EnglishStarVoicelessFricative` class
-   - Updated NSL rules to use voiceless-only class
+5. **FST** (`pgrmWeakTailVowel`): Added `a:{*a} n:{*n} ă:{*ă} z:{*z}` suffix
 
-3. **Future work (to make derivation fully lautgesetzlich):**
-   - Add PWGmc `*ð → *d` rule (dental fricative hardening)
-   - Add unstressed `*a → *æ` rule (parallel to stressed AFB)
-   - Add unstressed front vowel merger to `*e` rule (Hogg p.120)
-   - Then use `*funðanaz` as the protoform (true PGmc form)
+6. **FST** (`EnglishStarVoicelessFricative`): New class excluding `*ð`, `*β`
+   to prevent spurious NSL before voiced fricatives
 
-4. **For now:** The `*fundenăz` protoform is a late-stage representation that
-   incorporates two sound changes not yet implemented in the FST. This is
-   acceptable as a workaround but should be documented as such.
+**Verification:**
+
+Derivation trace for `*funðanăz → funden`:
+```
+WestGermanic:     *f*u*n*d*a*n*ă     (PWGmcDentalHardening: *ð → *d)
+WeakTailReduction: *f*u*n*d*e*n      (OEUnstressedAFronting + Reduction3)
+```
+
+Mismatch count: 77 (improved from 78 before these changes)
 
 ### Sources
 

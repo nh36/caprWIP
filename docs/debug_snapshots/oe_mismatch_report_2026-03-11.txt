@@ -1,10 +1,10 @@
-Total mismatches: 71
+Total mismatches: 77
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
   Phonology (core buckets):    18
-  Phonology (other buckets):   46
+  Phonology (other buckets):   52
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
@@ -38,7 +38,7 @@ Total mismatches: 71
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
-  vowel_quality__unstressed_vowel: 1
+  vowel_quality__unstressed_vowel: 7
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__other: 3
   final_vowel_missing__weak_noun_like: 5
@@ -155,8 +155,12 @@ vowel_quality__u_o_alternation (1):
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
 
-vowel_quality__unstressed_vowel (1):
-  *wīθijăz -> wīþeġ (expected wīþiġ)
+vowel_quality__unstressed_vowel (7):
+  *bakaną -> bacen (expected bacan)
+  *grabaną -> grafen (expected grafan)
+  *wadaną -> waden (expected wadan)
+  *wakaną -> wacen (expected wacan)
+  *waskaną -> wascen (expected wascan)
 
 final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)
@@ -196,7 +200,7 @@ cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
 
 cons_mismatch__þ_vs_d__intervocalic (1):
-  *xlaθaną -> hlaþan (expected hladan)
+  *xlaθaną -> hlaþen (expected hladan)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
