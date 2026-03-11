@@ -6511,3 +6511,114 @@ Verner verbs in the TSV (`rīdan`) work fine with their leveled protoforms becau
 
 The `findan` case was unique because NSL specifically targets voiceless `*þ` in
 `*-nþ-` clusters. For `rīdan`, there's no `*n` before the dental, so no NSL issue.
+
+### Clarification: PGmc *d vs *ð — Allophony vs Phonemic Contrast
+
+**Question raised:** Did PGmc really distinguish `*d` and `*ð`? When we write `*d`,
+is that AS OPPOSED TO `*ð`?
+
+**Answer:** In PGmc, `*d` and `*ð` were **allophones** of the same phoneme, in
+complementary distribution:
+
+Campbell §398.3:
+> "b, d existed only initially, and in the groups mb, nd... ð, v did not exist
+> initially or after nasals"
+
+Fulk (2018) p.28:
+> "The characters b, d, g represent voiced stops initially and after nasal
+> consonants (and in gemination), **otherwise voiced fricatives**"
+
+So the distribution was:
+- `[d]` (stop): initially, after nasals (`*nd`), in geminates
+- `[ð]` (fricative): intervocalically, finally
+
+**However**, the contrast that DOES matter is `*þ` (voiceless) vs `*ð` (voiced):
+
+| Source | PGmc | Description |
+|--------|------|-------------|
+| PIE *t | *þ | Voiceless fricative (Grimm's Law) |
+| PGmc *þ (Verner) | *ð | Voiced fricative (Verner's Law) |
+| PIE *dh | *d | Voiced stop (direct) |
+
+This `*þ/*ð` contrast is phonemically real in PGmc, even though `*d` and `*ð` are
+allophonic. The voicing difference (*þ voiceless, *ð voiced) is what matters for NSL.
+
+**Why this matters for NSL:**
+
+NSL lengthens vowels before *nasal + voiceless fricative*. The rule targets:
+- `*-nþ-` → lengthening (voiceless)
+- `*-nf-` → lengthening (voiceless)
+- `*-ns-` → lengthening (voiceless)
+
+But NOT:
+- `*-nð-` → no lengthening (voiced)
+- `*-nd-` → no lengthening (stop, or from PIE *dh)
+
+**Critical chronology:**
+
+1. PGmc `*finþaną` (infinitive: *þ voiceless, from Grimm on PIE *t)
+2. PGmc `*funðanaz` (past ptp: *ð voiced, from Verner on *þ)
+3. **NSL applies**: `*finþaną → *fīnþaną` (lengthens before voiceless *þ)
+   But `*funðanaz` unchanged (no lengthening before voiced *ð)
+4. **PWGmc hardening**: `*ð → *d` everywhere (R/T vol.2 p.43)
+   Result: `*fundanaz → funden`
+
+So even though `*ð` after nasal would have been phonetically [d] in PGmc (allophonic),
+the **voicing contrast with *þ** was still active when NSL applied. The contrast is:
+- `*þ` = voiceless = triggers NSL
+- `*ð` = voiced = does NOT trigger NSL
+
+This is why we need `*funðanăz` in the TSV — to ensure the FST knows this is the
+voiced Verner alternant that should NOT undergo NSL.
+
+**Implication for TSV protoforms:**
+
+When we write `*d` vs `*ð`, we are NOT claiming a phonemic contrast between these
+sounds (they were allophones). Rather, we are marking:
+- `*d`: either original PIE *dh, or the result of PWGmc hardening of *ð
+- `*ð`: specifically the voiced Verner alternant, needed when NSL must be blocked
+
+For most verbs, using `*d` is fine because:
+1. If it's from PIE *dh, there was never a *þ/*ð alternation
+2. If it's from leveled Verner, the leveling happened pre-OE
+
+We only need explicit `*ð` when:
+1. The verb has PIE *t → Grimm *þ → Verner *ð alternation
+2. AND using the infinitive (*-nþ-) would trigger spurious NSL
+3. AND we're using a paradigm cell where *ð was regular
+
+Currently only `*funðanăz → funden` meets all three criteria.
+
+### Systematic Check: TSV Forms with *nd Clusters (2026-03-11)
+
+Reviewed all TSV entries with `*nd` clusters to confirm none require `*nð`:
+
+| OE | Protoform | PIE Etymology | *d Source | Needs *ð? |
+|----|-----------|---------------|-----------|-----------|
+| bindan | *bindăną | *bhendh- "to bind" | original *dh | No |
+| windan | *windăną | *wendh- "to turn" | original *dh | No |
+| hund | *xundăz | *ku-ont- "dog" | original dental suffix | No |
+| hand | *xanduz | *kont-? "hand" | original | No |
+| grund | *grunduz | unknown | original | No |
+| land | *landą | *lendh- "land" | original *dh | No |
+| sendan | *sandjăną | causative of *sinþan- | Verner *d in causative | No (no *nþ cluster) |
+| funden | *funðanăz | *pent- "to find" | **Verner *ð** | **Yes** ✓ |
+
+**Key findings:**
+
+1. **`bindan, windan`**: PIE roots `*bhendh-, *wendh-` with aspirated `*dh` → PGmc `*d`.
+   No Grimm `*þ` ever existed. (Fulk §3.6; R/T vol.2 p.157)
+
+2. **`hund`** (Kroonen p.256): PIE `*ku-ont-` "dog" with dental suffix. Not from `*t`.
+
+3. **`sendan`**: Though derived from `*sinþan-` "to go" (with `*þ` from PIE `*t`), the
+   causative `*sandjan-` already has the **voiced Verner alternant** built in. The
+   cluster is `*-ndj-`, not `*-nþ-` or `*-nð-`, so NSL doesn't apply anyway.
+
+4. **`findan → funden`**: The ONLY genuine Verner case with `*-nþ-/*-nð-` alternation
+   where NSL matters. Fixed with `*funðanăz` using past participle.
+
+**Conclusion:**
+
+Having exactly one `*ð` form in the TSV (`*funðanăz`) is **correct and complete**.
+All other `*nd` forms have original `*d` from PIE sources other than `*t`.
