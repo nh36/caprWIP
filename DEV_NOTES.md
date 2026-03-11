@@ -6392,6 +6392,48 @@ WeakTailReduction: *f*u*n*d*e*n      (OEUnstressedAFronting + Reduction3)
 
 Mismatch count: 77 (improved from 78 before these changes)
 
+### Verification: Other Class III Verbs with *d Are NOT Verner Cases
+
+During implementation, a question arose: should other Class III verbs like `*bindăną`
+and `*windăną` also be treated as Verner alternation cases?
+
+**Research conclusion: NO.** These verbs have **original `*d`** from PIE aspirated
+`*dh`, not from Verner's Law voicing of `*þ`.
+
+**Evidence from Ringe/Taylor vol.2:**
+
+1. **`*bindaną`** (p.157):
+   > "PGmc *bindana 'to tie' (Goth. ga-bindan, ON binda) > PWGmc *bindan"
+   
+   R/T reconstructs `*bindana` with `*d` throughout. Fulk §3.6 confirms PIE
+   `*bhendh-` (with aspirated `*dh`), which becomes PGmc `*d` directly.
+
+2. **`*tredaną`** (p.78, 325):
+   > "PGmc *trudaŋ 'to step on' (Goth. trudan, ON troða) > PWGmc *tredan"
+   
+   The `*d` is original, not from Verner levelling.
+
+3. **`*knedaną`** (p.78):
+   > "'to knead' are reflected in PWGmc *tredan and *knedan"
+
+4. **`*waldaną`** (p.232):
+   > "PGmc *waldaŋ 'to control, to rule'"
+
+**Contrast with `*finþaną`:**
+
+R/T (p.157) explicitly shows `*finþaną` as a Verner case:
+
+> "PGmc *finþaŋ 'to find' (Goth. finþan, ON finna, OHG findan) > *fīþan > OS fīðan
+> (beside findan **with voiced VL alternant levelled**, cf. OE findan, OF finda)"
+
+The key difference:
+- `*finþan-`: PIE `*pent-` has voiceless `*t` → Grimm `*þ` → Verner `*ð` (in some cells)
+- `*bindan-`: PIE `*bhendh-` has aspirated `*dh` → PGmc `*d` (no alternation)
+
+**Conclusion:** The current TSV protoforms `*bindăną`, `*windăną`, `*tredăną`, etc.
+are **etymologically correct**. Only `*finþaną → findan` required the paradigm-cell
+approach because it's a genuine Verner alternation case.
+
 ### Sources
 
 - Bammesberger, A. (1992). "The place of English in Germanic and Indo-European"
