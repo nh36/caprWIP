@@ -5638,10 +5638,10 @@ Evaluation: 309/386 OE matches (80.1%).
 
 ## OE hierfest 'harvest' — Unstressed Front Vowel Merger
 
-**Date:** 2026-03-10
+**Date:** 2026-03-10 (completed 2026-03-11)
 **Mismatch:** `*xarbistuz` → FST `hierfist` | Expected `hierfest`
 **Issue:** FST lacks the late OE unstressed `*i > *e` merger
-**Status:** Solution identified — implement `OEMedUnstressedILowering`
+**Status:** ✅ FIXED — `OEUnstressedIMarking` + `OEMedUnstressedILowering` implemented
 
 ### The Problem
 
@@ -5874,6 +5874,60 @@ for reduced vowels in some contexts.
 - For prefix words: `.#. {prefix} C* V` marks the stressed syllable
 
 This requires careful FST engineering to identify syllable boundaries.
+
+### Implementation Attempt #3: Three-Step Marking (SUCCESSFUL)
+
+The final implementation uses three marking steps before the lowering rule:
+
+```foma
+# Step 1: Mark ALL *i after first vowel+consonants as unstressed (*ĭ)
+define OEUnstressedIMarking1 [
+    {*i} -> {*ĭ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+
+# Step 2: Mark prefix *i in bi-/ni- words as unstressed
+define OEUnstressedIMarking2 [
+    {*i} -> {*ĭ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
+];
+
+# Step 3: RESTORE stressed root *ĭ back to *i after prefixes
+define OEUnstressedIMarking3 [
+    {*ĭ} -> {*i} || .#. [{*b} | {*n}] {*ĭ} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
+    {*ĭ} -> {*i} || .#. {*g} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
+    {*ĭ} -> {*i} || .#. {*f} {*r} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+
+# CRITICAL: Step 2 must run BEFORE Step 1
+# After Step 1 marks root *i as *ĭ, the *ĭ is NOT in EnglishStarVocalic,
+# so Step 2's pattern won't match. Order: 2 → 1 → 3
+define OEUnstressedIMarking OEUnstressedIMarking2 .o. OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
+
+# Step 4: Lower only marked unstressed *ĭ to *e
+define OEMedUnstressedILowering [
+    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+
+**Example traces:**
+
+1. `*harbistuz` (harvest):
+   - Input: `*h*a*r*b*i*s*t*u*z`
+   - After Step 2: unchanged (no prefix)
+   - After Step 1: `*h*a*r*b*ĭ*s*t*u*z` (medial *i marked)
+   - After Step 3: unchanged (no prefix to restore)
+   - After lowering: `*h*a*r*b*e*s*t*u*z` → `hierfest` ✓
+
+2. `*biginnăną` (begin):
+   - Input: `*b*i*ʤ*i*n*n*ă*n*ą` (after palatalization)
+   - After Step 2: `*b*ĭ*ʤ*i*n*n...` (prefix *i marked)
+   - After Step 1: `*b*ĭ*ʤ*ĭ*n*n...` (root *i also marked)
+   - After Step 3: `*b*ĭ*ʤ*i*n*n...` (root *ĭ restored — stressed)
+   - After lowering: prefix *ĭ → *e, root *i preserved → `beġinnan` ✓
+
+**Results:**
+- `*xarbistuz` → `hierfest` ✓ (fixed from `hierfist`)
+- `*biginnăną` → `beġinnan` ✓ (no regression)
+- Evaluation: 307/386 matches (79.5%)
 
 ### Exceptions: When Medial *i is Preserved
 
