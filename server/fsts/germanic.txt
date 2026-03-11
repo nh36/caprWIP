@@ -1506,7 +1506,9 @@ define OEUnstressedIMarking3 [
 ];
 
 # Combine the marking steps
-define OEUnstressedIMarking OEUnstressedIMarking1 .o. OEUnstressedIMarking2 .o. OEUnstressedIMarking3;
+# IMPORTANT: Step 2 must run BEFORE Step 1, because after Step 1 marks the
+# root *i as *ĭ, Step 2's pattern won't match (*ĭ not in EnglishStarVocalic).
+define OEUnstressedIMarking OEUnstressedIMarking2 .o. OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
 
 # Step 4: Lower unstressed *ĭ to *e
 # Only *ĭ (marked as unstressed) gets lowered; stressed *i is preserved.
