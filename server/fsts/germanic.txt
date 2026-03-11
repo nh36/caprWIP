@@ -1545,8 +1545,10 @@ define OEWeakTailReduction1 [
     {*ă} -> {*a},
     {*ą} -> {*ɔ̆}
 ];
+# Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120).
+# Only targets *ĭ (marked unstressed by OEUnstressedIMarking), not stressed *i.
 define OEWeakTailReduction2 [
-    {*i} -> {*e} || _ .#.
+    {*ĭ} -> {*e} || _ .#.
 ];
 # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
