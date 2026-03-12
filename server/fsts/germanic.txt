@@ -31,7 +31,7 @@ define ProtoOnsetCore [
     mb|mm|mn|mr|nd|ng|nj|nk|nn|nr|nθ|pn|pp|rb|rd|rg|rk|rm|rn|rp|rr|rt|rw|rx|rθ|
     sk|sl|sm|sn|sp|st|sw|tj|tn|tr|tt|wj|wr|ww|
     xm|xn|xr|xs|xt|xw|zd|zj|zn|zw|θl|θr|
-    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ngj|ngr|ngw|ntr|rst|rwj|rxt|spr|stj|str|wwj|xtj|nxwst
+    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ngj|ngr|ngw|ntr|nxst|rst|rwj|rxt|spr|stj|str|wwj|xtj|nxwst
 ];
 define ProtoOnset [0|ProtoOnsetCore];
 
@@ -42,7 +42,7 @@ define ProtoCodaCore [
     mb|mm|mn|mr|nd|ng|nj|nk|nn|nr|nθ|pn|pp|rb|rd|rg|rk|rm|rn|rp|rr|rt|rw|rx|rθ|
     sk|sl|sm|st|sz|tj|tn|tr|tt|wj|ww|wz|
     xm|xs|xt|xw|xz|zd|zj|zn|zw|θl|θr|θz|
-    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst
+    kkj|ldr|lgw|llj|ltj|ndj|ndl|ndr|ndz|ngj|ngr|ngw|nsz|ntr|nxst|rst|rwj|rxt|stj|stz|wwj|xtj|xtz|nxwst
 ];
 define ProtoCoda (0 | ProtoCodaCore | ProtoCodaCore ProtoCodaCore);
 
@@ -257,6 +257,7 @@ define pgrmCodaComplex [
     w:{*w} w:{*w} j:{*j} |
     x:{*x} t:{*t} j:{*j} |
     x:{*x} t:{*t} z:{*z} |
+    n:{*n} x:{*x} s:{*s} t:{*t} |
     n:{*n} x:{*x} w:{*w} s:{*s} t:{*t} |
     t:{*t} t:{*t} m:{*m}
 ];

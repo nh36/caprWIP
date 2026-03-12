@@ -6945,3 +6945,81 @@ models the PGmc → OE derivation.
   §§4.7, 6.5-6.7
 - Ringe, D. & Taylor, A. (2014). *Linguistic History of English* vol.2, p.43
 - Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*
+
+---
+
+## TSV Error: *funxwstiz → should be *funxstiz (cognate 501, fȳst)
+
+**Date:** 2026-03-11  
+**Status:** Error identified, pending correction
+
+### The Problem
+
+Row 2015 in the TSV contains:
+```
+PROTOFORM: *funxwstiz
+COUNTERPART: fȳst
+```
+
+The FST produces no output (`+?`) because the cluster `*nxwst` is not in the
+grammar (specifically not in `pgrmCodaComplex`).
+
+### Source Analysis
+
+**Kroonen (2013, p.148)** reconstructs:
+> **\*funhsti-** f. 'fist' < IE \*pn̥ksti- < \*penkʷ- 'five'
+
+This translates to our notation as **`*funxstiz`** (with `*x` for Kroonen's `*h`).
+There is NO labiovelar `*w` in Kroonen's reconstruction.
+
+**Wiktionary** (source of our TSV automation, commit eda0845, Dec 2025) gives:
+> PGmc \*funstiz (with NO fricative at all!)
+
+This is a simplification — Kroonen's reconstruction `*funhsti-` clearly shows
+the `*h` (= `*x`), reflecting the PIE velar in `*penkʷ-` → `*pn̥ksti-`.
+
+**The erroneous `*w`:**  
+The TSV form `*funxwstiz` appears to be a conflation of two things:
+1. The correct cluster `*nx` (from PIE `*nk`)
+2. A spurious `*w` perhaps from confusion with the PIE labiovelar `*kʷ`
+
+However, the PIE labiovelar `*kʷ` in `*penkʷe` 'five' loses its labialization
+in the zero-grade `*pn̥ksti-` before the `*s`. The daughter form is `*funhsti-`,
+not `×*funhwsti-`.
+
+### Origin of the Error
+
+The form `*funxwstiz` appears in the TSV from the very first commit that added
+OE cognates (eda0845, "Add Old English automation for Germanic TSV", Dec 2025).
+It was part of the automated Wiktionary scraping. The exact source of the
+spurious `*w` is unclear — it may have been:
+- A typo in one of the Wiktionary reconstruction pages
+- An error in the scraping/normalization script
+- A mistaken back-formation from the PIE labiovelar
+
+### The Fix
+
+Change row 2015:
+- FROM: `*funxwstiz`
+- TO: `*funxstiz`
+
+The cluster `nxst` is NOT currently in `pgrmCodaComplex` — only `nxwst` exists.
+We will need to add `nxst` to the coda complex list when fixing this.
+
+### Expected Derivation
+
+```
+*funxstiz
+  → NWGmc *funsti- (x-loss before consonant, per R/T §5.5.4)
+  → *ū lengthening before lost fricative
+  → PWGmc *fūnsti- or *fūsti-
+  → OE fȳst (i-umlaut)
+```
+
+This matches the attested cognates:
+- OE fȳst
+- OHG fūst → NHG Faust
+- OS fūst
+- Dutch vuist
+
+All show the long vowel from compensatory lengthening.
