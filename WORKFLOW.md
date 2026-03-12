@@ -1,0 +1,119 @@
+# CAPR V3 Working Procedures
+
+**READ THIS FIRST** when resuming work on this project.
+
+## Directory Structure
+- `server/fsts/germanic.txt` - Main FST source code
+- `server/data/germanic-aligned-final.tsv` - Proto → OE data
+- `server/tools/` - All utility scripts (mismatch reports, tracing, etc.)
+- `docs/debug_snapshots/` - Output reports
+- `DEV_NOTES.md` - Development documentation and decisions
+
+## Key Scripts in server/tools/
+
+| Script | Purpose | Usage |
+|--------|---------|-------|
+| `oe_mismatch_report.py` | **Primary mismatch report** | `docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py` |
+| `trace_old_english_sandbox.py` | Trace single derivation | See below |
+| `run_oe_reports.py` | Run all reports | `docker compose exec backend python3 /usr/app/tools/run_oe_reports.py` |
+
+## Compiling the FST
+
+**CRITICAL**: The FST file does NOT end with `quit`, so you MUST use `-e quit`:
+
+```bash
+docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"
+```
+
+Takes ~2 minutes. Without `-e quit` it hangs forever at the interactive prompt.
+
+## Running the Mismatch Report
+
+```bash
+docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
+```
+
+Output: `docs/debug_snapshots/oe_mismatch_report.txt`
+
+## Testing a Single Derivation
+
+```bash
+# Apply-down (proto → surface)
+docker compose exec backend bash -c "echo 'x a l d a n' | flookup old_english.bin"
+
+# Apply-up (surface → proto) - use -i flag
+docker compose exec backend bash -c "echo 'healdan' | flookup -i old_english.bin"
+```
+
+**Note**: Input uses spaces between characters, NO asterisk prefix.
+
+## After Changing germanic.txt
+
+1. Recompile FST: `docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"`
+2. Run mismatch report: `docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py`
+3. Check output: `cat docs/debug_snapshots/oe_mismatch_report.txt`
+
+## After Changing TSV Data
+
+1. No FST recompile needed
+2. Just run mismatch report again
+
+## Common Mistakes to Avoid
+
+1. **Don't try to use the web API for reports** - use the Python scripts directly
+2. **Don't forget `-e quit`** when running foma
+3. **Don't wait synchronously for long tasks** - foma compilation is ~2 min, not 45 min
+4. **Scripts are in `server/tools/`** not `server/` or root
+
+## Mismatch Fix Workflow
+
+**IMPORTANT**: Never change the TSV without explicit user approval.
+
+### Step 1: Run Mismatch Report
+```bash
+docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
+cat docs/debug_snapshots/oe_mismatch_report.txt
+```
+
+### Step 2: Categorize Issues
+The report groups mismatches into buckets:
+- **no_output**: Form doesn't compile - grammar issue
+- **Core phonology buckets**: breaking, i-umlaut, etc.
+- **TSV/data fixes**: Wrong protoform or target
+
+### Step 3: Research Before Fixing
+For each mismatch, BEFORE proposing changes:
+
+1. **Check the literature** - consult:
+   - Campbell's OE Grammar
+   - Fulk's Comparative Grammar
+   - R/T vol.1 and vol.2
+   - Kroonen's Etymological Dictionary
+   
+2. **Document findings** in DEV_NOTES.md:
+   - What the sources say
+   - What the sound change should be
+   - Why the current output is wrong
+   
+3. **Trace the derivation** to understand where it goes wrong:
+   ```bash
+   docker compose exec backend python3 /usr/app/tools/trace_old_english_sandbox.py "protoform"
+   ```
+
+4. **Present options to user** with citations
+
+### Step 4: Discuss with User
+- Present the research findings
+- Explain the options (FST rule fix vs TSV data fix)
+- Get explicit approval before any TSV changes
+
+### Step 5: Implement Fix
+Only after user approval:
+- If FST change: edit germanic.txt, recompile, rerun report
+- If TSV change: edit TSV with full documentation in NOTES column
+
+### What NOT to Do
+- ❌ Change TSV without discussion
+- ❌ Assume the fix without checking sources
+- ❌ Skip documentation
+- ❌ Make multiple changes without testing between them
