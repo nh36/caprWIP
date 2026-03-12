@@ -77,7 +77,7 @@ define Vowel ProtoVowel;
 
 define pgrmInitSimple [
     p:{*p} | t:{*t} | k:{*k} | b:{*b} | d:{*d} | g:{*g} |
-    f:{*f} | þ:{*þ} | s:{*s} | h:{*h} | x:{*x} |
+    f:{*f} | þ:{*þ} | s:{*s} | x:{*x} |
     m:{*m} | n:{*n} | ŋ:{*ŋ} |
     l:{*l} | r:{*r} | j:{*j} | w:{*w} |
     z:{*z} | ð:{*ð} | θ:{*θ} | ɣ:{*ɣ}
@@ -416,7 +416,6 @@ define PGmcStarConsonant [
     {*d} |
     {*f} |
     {*g} |
-    {*h} |
     {*j} |
     {*k} |
     {*l} |
@@ -661,7 +660,6 @@ define OldEnglishRemoveStars [
     {*d} -> d,
     {*f} -> f,
     {*g} -> g,
-    {*h} -> h,
     {*k} -> c,
     {*l} -> l,
     {*m} -> m,
@@ -712,10 +710,10 @@ define EnglishStarVelarStop [{*k} | {*g}];
 
 define EnglishStarLabial [{*b} | {*β} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
-define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*h} | {*x}];
+define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*x}];
 
 # Voiceless fricatives only - for NSL (Fulk §4.11: *mf, *ns, *nþ)
-define EnglishStarVoicelessFricative [{*f} | {*s} | {*θ} | {*h} | {*x}];
+define EnglishStarVoicelessFricative [{*f} | {*s} | {*θ} | {*x}];
 
 define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
 
@@ -728,7 +726,7 @@ define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
 define EnglishStarConsonantNoLabial [EnglishStarConsonant - EnglishStarLabial];
 
 # Velar consonants (block i-lowering per Howell & Salmons 1997).
-define EnglishStarVelar [{*k} | {*g} | {*ŋ} | {*x} | {*ɣ} | {*h}];
+define EnglishStarVelar [{*k} | {*g} | {*ŋ} | {*x} | {*ɣ}];
 
 # Combined velar-or-labial class (blocking consonants for i-lowering).
 # Per Howell & Salmons (1997): dorsals and labials share place features with
@@ -1869,7 +1867,6 @@ define OEPostVelarWLoss [
 ];
 
 define OEHLoss [
-    {*h} -> 0 || EnglishStarVocalic _ EnglishStarVocalic,
     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
 ];
 
@@ -2397,7 +2394,6 @@ define GermanRemoveStars [
     {*d} -> d,
     {*f} -> f,
     {*g} -> g,
-    {*h} -> h,
     {*j} -> j,
     {*k} -> k,
     {*l} -> l,
