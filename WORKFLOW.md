@@ -117,3 +117,16 @@ Only after user approval:
 - ❌ Assume the fix without checking sources
 - ❌ Skip documentation
 - ❌ Make multiple changes without testing between them
+
+## Input Format for FST
+
+**Proto forms in the FST use concatenated characters, NOT space-separated:**
+- ✓ Correct: `bakăną`, `funxwstiz`  
+- ✗ Wrong: `b a k a n`, `f u n x w s t i z`
+
+The TSV stores space-separated (column 2), but FST input is concatenated.
+
+To test a derivation:
+```bash
+docker compose exec backend bash -c "cd /usr/app && foma -e 'load old_english.bin' -e 'down funxwstiz' -e 'quit'"
+```
