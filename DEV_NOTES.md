@@ -8556,3 +8556,120 @@ PROTO-FORM ITSELF:
 
 This is how PGmc morphology worked — different suffixes for different forms.
 We're modeling the PROTOFORMS correctly, not adding special rules.
+
+### Empirical Validation (Dry Run 2026-03-13)
+
+Tested the proposed fix:
+
+**Changes made:**
+1. FST: Added `{*ă}` to `OEARestorationTriggerVowel` (line 1276)
+2. TSV: Changed 5 OE strong verb infinitives from `-aną` to `-ăną`:
+   - `*bakaną` → `*bakăną` (bacan)
+   - `*grabaną` → `*grabăną` (grafan)  
+   - `*wadaną` → `*wadăną` (wadan)
+   - `*wakaną` → `*wakăną` (wacan)
+   - `*waskaną` → `*waskăną` (wascan)
+
+**Results (targeted forms):**
+```
+bakăną → bacan ✓ (was bacen)
+grabăną → grafan ✓ (was græfen)
+wadăną → wadan ✓ (was wæden)
+wakăną → wacan ✓ (was wæcen)
+waskăną → wascan ✓ (was wæscen)
+weljăną → willan ✓ (was willen)
+```
+
+All 6 targeted forms now match their expected OE targets.
+
+**BUT: SIGNIFICANT REGRESSIONS OBSERVED!**
+
+Adding `{*ă}` to `OEARestorationTriggerVowel` causes A-restoration to fire on
+ALL forms with `{*ă}` in suffix position — including nouns where the root `*a`
+SHOULD front to `æ`:
+
+```
+kraftăz → craft (should be cræft) - REGRESSED
+dagăz → dag (should be dæġ) - REGRESSED
+mastăz → mast (should be mæst) - REGRESSED
+xrabnăz → hrafn (should be hræfn) - REGRESSED
+stabăz → staf (should be stæf) - REGRESSED
+tappăn → tappan (should be tæppan) - REGRESSED
+wagnăz → wagn (should be wæġn) - REGRESSED
+labbăz → labb (should be læppa) - REGRESSED (was læbb)
+wabsăz → wafs (should be wæsp) - REGRESSED (was wæfs)
+```
+
+**Mismatch count:** 78 → 79 (net +1 WORSE)
+
+- **Fixed: 6** (bake, grave, wade, wake, wash, will)
+- **Regressed: 9** (craft, day, mast, raven, staff, tap, wain, lap, wasp)
+
+### Analysis: Why the Fix Fails
+
+The problem is **phonological overgeneralization**:
+
+1. **What we wanted:** Strong verb infinitives like `*bakăną` should have
+   A-restoration because the suffix `{*ă}` is a (reduced) back vowel.
+
+2. **What happened:** ALL forms with `{*ă}` in their suffix now trigger
+   A-restoration — including a-stem nouns like `*kraftăz` where the suffix
+   `{*ă}` is just a thematic vowel before `*-z`.
+
+The distinction we're trying to capture is NOT simply "presence of `{*ă}`
+in the following syllable" — it's something more specific about infinitives.
+
+### The Real Difference: Syllable Structure
+
+Looking at R/T vol.2 p.153 again:
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was
+> followed by a nasal in the syllable coda"
+
+This means:
+- `*bak.ăn#` (infinitive, final): nasal IN CODA → `a` nasalized → not fronted → `-an`
+- `*bak.ăn.ăz` (participle): nasal IN ONSET → `a` NOT nasalized → fronted → `-en`
+- `*kraft.ăz` (noun): no nasal → `a` NOT nasalized → fronts → `cræft`
+
+The key insight is that **it's not about the vowel quality of `{*ă}`** — it's
+about whether the ROOT vowel is followed by a syllable that ends in a nasal.
+
+### Possible Correct Fix
+
+We need to condition A-restoration NOT on "following vowel is back" but on
+"following syllable ends in a nasal." This requires syllable structure markers.
+
+Alternatively, we could mark the infinitive suffix differently:
+- `{*ãną}` (nasalized) vs `{*aną}` (not nasalized)
+
+But this is getting complex. The simplest correct approach may be:
+
+1. Keep separate proto-forms for infinitive vs participle in the TSV
+2. Infinitive: uses `{*ăną}` which skips fronting (already works)
+3. Participle: uses `{*anăz}` which triggers fronting (already works)
+4. DON'T add `{*ă}` to A-restoration trigger
+
+The current system actually handles infinitives correctly for forms where
+A-restoration is not needed (e.g., light-root verbs). The problem is only
+with heavy-root verbs like `*bakaną` where BOTH A-restoration AND non-fronting
+are required.
+
+**Status:** FIX REJECTED — causes more regressions than improvements.
+
+### Alternative Approaches to Explore
+
+1. **Syllable structure marking:** Mark syllable boundaries in proto-forms
+   to correctly condition A-restoration on "followed by back vowel in same
+   or following syllable" vs "followed by fronting environment."
+
+2. **Explicit A-restoration marker:** Add a diacritic to proto-forms that
+   need A-restoration, e.g., `*bākăną` (with macron on root vowel).
+
+3. **Accept the limitation:** Acknowledge that this phonological conditioning
+   is too complex for a simple FST and mark these forms with special encoding.
+
+4. **Review the TSV entries:** Are the expected forms actually correct?
+   Do forms like `*kraftăz → cræft` really require fronting, or could the
+   TSV be wrong?
+
+This needs more research before proceeding.
