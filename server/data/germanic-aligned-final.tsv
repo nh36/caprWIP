@@ -43,10 +43,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1153	b ɪ ɡ ɪ n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	begin	316	English				begin	*biginnăną	11
 1943	b e ġ i n n a n	*biginnăną	( b ɪ ) ɡ ɪ n - - ( - - )	bɪɡɪn	beġinnan	316	Old_English	Palatalization of *g between *i and *i is regular per R/T §6.4.1 Rule 1. OE beġinnan confirmed (Wiktionary, BT).			begin	*biginnăną	11
 1152	b ə ɡ ɪ n ə n	*biginnăną	( b ə ) ɡ ɪ n ə n ( - - )	bəɡɪnən	beginnen	316	German				begin	*biginnăną	11
-266	x ə l oː v ə	*galaubjăną	( x ə ) l oː v - ə - ( - - )	xəloːvə	geloven	73	Dutch	Proto: *laubjăną → *galaubjăną (ga- prefix set: Du. geloven, G glauben, OE ġelīefan)			believe	*galaubjăną	12
-265				bɪliːv		73	English	Out-of-set: ME believe < OE belīefan (be- prefixed *bilaubijan), distinct from ge-/ga- formation			believe	*galaubjăną	12
-1944	ġ e l ī e f a n	*galaubjăną	( b ɪ ) l iː v - - - ( - - )	bɪliːv	ġelīefan	73	Old_English	TSV: belīefan → ġelīefan (WS ge- formation; cf. Du. geloven, G glauben)			believe	*galaubjăną	12
-264	ɡ l au b ə n	*galaubjăną	( ɡ - ) l au b - ə n ( - - )	ɡlaubən	glauben	73	German	Proto: *laubjăną → *galaubjăną (ga- prefix set)			believe	*galaubjăną	12
+266	x ə l oː v ə	*galaubijăną	( x ə ) l oː v - ə - ( - - )	xəloːvə	geloven	73	Dutch	Proto: *laubjăną → *galaubijăną (ga- prefix set: Du. geloven, G glauben, OE ġelīefan)			believe	*galaubijăną	12
+265				bɪliːv		73	English	Out-of-set: ME believe < OE belīefan (be- prefixed *bilaubijan), distinct from ge-/ga- formation			believe	*galaubijăną	12
+1944	ġ e l ī e f a n	*galaubijăną	( b ɪ ) l iː v - - - ( - - )	bɪliːv	ġelīefan	73	Old_English	TSV: belīefan → ġelīefan (WS ge- formation; cf. Du. geloven, G glauben)			believe	*galaubijăną	12
+264	ɡ l au b ə n	*galaubijăną	( ɡ - ) l au b - ə n ( - - )	ɡlaubən	glauben	73	German	Proto: *laubjăną → *galaubijăną (ga- prefix set)			believe	*galaubijăną	12
 1688	b ɑ l x	*balgiz	b ɑ l x ( - - )	bɑlx	balg	462	Dutch				belly	*balgiz	13
 1687	b ɛ l ɪ	*balgiz	b ɛ l ɪ ( - - )	bɛlɪ	belly	462	English				belly	*balgiz	13
 1945	b i e l ġ	*balgiz	b ɛ l ɪ ( - - )	wɒmb	bielġ	462	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			belly	*balgiz	13
@@ -110,16 +110,16 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 224	b aʊ	*bōguz	b aʊ - ( - - )	baʊ	bough	62	English				bough	*bōguz	334
 1960	b ō g	*bōguz	b aʊ - ( - - )	baʊ	bōg	62	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bough	*bōguz	334
 223	b uː k	*bōguz	b uː k ( - - )	buːk	Bug	62	German				bough	*bōguz	334
-1298	b œy ɣ ə	*baugjăną	b œy ɣ - ə - ( - - )	bœyɣə	buigen	356	Dutch				bow	*baugjăną	27
+1298	b œy ɣ ə	*baugijăną	b œy ɣ - ə - ( - - )	bœyɣə	buigen	356	Dutch				bow	*baugijăną	27
 930	b œy ɣ ə	*beugăną	b œy ɣ ə - ( - - )	bœyɣə	buigen	255	Dutch				bow	*beugăną	27
 1420	b oː x	*bugô	b oː x - -	boːx	boog	388	Dutch				bow	*bugô	27
-1297	b əʊ	*baugjăną	b əʊ - - - - ( - - )	bəʊ	bow	356	English				bow	*baugjăną	27
-1961	b ī e ġ a n	*baugjăną	b əʊ - - - - ( - - )	bəʊ	bīeġan	356	Old_English	Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-			bow	*baugjăną	27
+1297	b əʊ	*baugijăną	b əʊ - - - - ( - - )	bəʊ	bow	356	English				bow	*baugijăną	27
+1961	b ī e ġ a n	*baugijăną	b əʊ - - - - ( - - )	bəʊ	bīeġan	356	Old_English	Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-			bow	*baugijăną	27
 929	b əʊ	*beugăną	b əʊ - - - ( - - )	bəʊ	bow	255	English				bow	*beugăną	27
 1962	b ū g a n	*beugăną	b əʊ - - - ( - - )	bəʊ	būgan	255	Old_English	Kroonen *beugan- sv.2 → OE būgan (expected *bēogan from *eu breaking). The ū is ANALOGICAL from preterite sg. būg (Class II ablaut *eu:*au:*u:*u). OE leveled ū through the paradigm. FST mismatch documented as analogical exception.			bow	*beugăną	27
 1419	b əʊ	*bugô	b əʊ - - -	bəʊ	bow	388	English				bow	*bugô	27
 1963	b o g a	*bugô	b əʊ - - -	bəʊ	boga	388	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*bugô	27
-1296	b ɔy ɡ ə n	*baugjăną	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German		C V c - v c		bow	*baugjăną	27
+1296	b ɔy ɡ ə n	*baugijăną	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German		C V c - v c		bow	*baugijăną	27
 928	b iː ɡ ə n	*beugăną	b iː ɡ ə n ( - - )	biːɡən	biegen	255	German				bow	*beugăną	27
 1418	b oː ɡ ə n	*bugô	b oː ɡ ə n	boːɡən	Bogen	388	German				bow	*bugô	27
 1033	b uː r	*būrą	b uː - r ( - - )	buːr	boer	283	Dutch				bower	*būrą	28
@@ -283,7 +283,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 203	f aː r ə n	*farăną	f aː r ə n ( - - )	faːrən	fahren	57	German				fare	*farăną	66
 1317	v ɑ s t ə	*fastēną	v ɑ s t ə - ( - - )	vɑstə	vasten	361	Dutch				fast	*fastēną	67
 1316	f ɑː s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fast	361	English				fast	*fastēną	67
-2004	f e s t a n	*fastjăną	f a s t i a n ( - - )	fɑstiɑn	festan	361	Old_English	R/T: "festan 'to fix, to fasten' < *fæstjan" (Class I weak); "acquired stative meaning ['to fast'] by lexical confusion" with *fastēn-. OE fæstan has æ from analogy with adj. fæst.			fast	*fastjăną	67
+2004	f e s t a n	*fastijăną	f a s t i a n ( - - )	fɑstiɑn	festan	361	Old_English	R/T: "festan 'to fix, to fasten' < *fæstjan" (Class I weak); "acquired stative meaning ['to fast'] by lexical confusion" with *fastēn-. OE fæstan has æ from analogy with adj. fæst.			fast	*fastijăną	67
 1315	f a s t ə n	*fastēną	f a s t ə n ( - - )	fastən	fasten	361	German				fast	*fastēną	67
 912	v aː d ə r	*fadēr	v aː d ə r	vaːdər	vader	250	Dutch				father	*fadēr	68
 911	f ɑː ð ə	*fadēr	f ɑː ð ə r	fɑːðə	father	250	English				father	*fadēr	68
@@ -373,7 +373,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 777	f ɔ l k	*fulką	f ɔ l k ( - - )	fɔlk	Volk	213	German				folk	*fulką	87
 1887	v ɔ l ɣ ə	*fulgēną	v ɔ l ɣ ə - ( - - )	vɔlɣə	volgen	517	Dutch				follow	*fulgēną	88
 1886	f ɔ l əʊ	*fulgēną	f ɔ l əʊ - - ( - - )	fɔləʊ	follow	517	English				follow	*fulgēną	88
-2027	f y l ġ a n	*fulgjăną	f ɔ l əʊ - - ( - - )	fɔləʊ	fylġan	517	Old_English	Kroonen s.v. *fulgēn-: "OE fylg(e)an continue *fulgjan-"; R/T §2.3.1: "class I weak OE fylgan". WS folgian is Class II from *fulgēn-.			follow	*fulgjăną	88
+2027	f y l ġ a n	*fulgijăną	f ɔ l əʊ - - ( - - )	fɔləʊ	fylġan	517	Old_English	Kroonen s.v. *fulgēn-: "OE fylg(e)an continue *fulgjan-"; R/T §2.3.1: "class I weak OE fylgan". WS folgian is Class II from *fulgēn-.			follow	*fulgijăną	88
 1885	f ɔ l ɡ ə n	*fulgēną	f ɔ l ɡ ə n ( - - )	fɔlɡən	folgen	517	German				follow	*fulgēną	88
 1393	v ə r l iː z ə	*leusăną	( v ə r ) l iː z ə - ( - - )	vərliːzə	verliezen	381	Dutch				forlorn	*leusăną	89
 1392	f ə l ɔː n	*leusăną	( f ə - ) l ɔː - - - ( n - )	fəlɔːn	forlorn	381	English				forlorn	*leusăną	89
@@ -516,10 +516,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 253	h ɛ d	*xaubudą	h ɛ - ( - ) d ( - - )	hɛd	head	70	English				head	*xaubudą	121
 2063	h ē a f o d	*xaubudą	h ɛ - ( - ) d ( - - )	ˈhæːɑ̯vod	hēafod	70	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			head	*xaubudą	121
 252	h au p t	*xaubudą	h au p ( - ) t ( - - )	haupt	Haupt	70	German				head	*xaubudą	121
-189	h eː l ə	*xailjăną	h eː l - ə - ( - - )	heːlə	helen	53	Dutch				heal	*xailjăną	122
-188	h iː l	*xailjăną	h iː l - - - ( - - )	hiːl	heal	53	English				heal	*xailjăną	122
-2064	h ǣ l a n	*xailjăną	h iː l - - - ( - - )	hiːl	hǣlan	53	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			heal	*xailjăną	122
-187	h ai l ə n	*xailjăną	h ai l - ə n ( - - )	hailən	heilen	53	German				heal	*xailjăną	122
+189	h eː l ə	*xailijăną	h eː l - ə - ( - - )	heːlə	helen	53	Dutch				heal	*xailijăną	122
+188	h iː l	*xailijăną	h iː l - - - ( - - )	hiːl	heal	53	English				heal	*xailijăną	122
+2064	h ǣ l a n	*xailijăną	h iː l - - - ( - - )	hiːl	hǣlan	53	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			heal	*xailijăną	122
+187	h ai l ə n	*xailijăną	h ai l - ə n ( - - )	hailən	heilen	53	German				heal	*xailijăną	122
 114	h ɑ r t	*xertōn	h ɑ r t ( - - )	hɑrt	hart	32	Dutch				heart	*xertōn	123
 113	h ɑː t	*xertōn	h ɑː - t ( - - )	hɑːt	heart	32	English				heart	*xertōn	123
 2065	h e o r t e	*xertōn	h ɑː - t ( - - )	ˈheo̯rˠte	heorte	32	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			heart	*xertōn	123
@@ -620,17 +620,17 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1553	l æ p	*labbăz	l æ p ( - - )	læp	lap	426	English				lap	*labbăz	143
 2090	l æ p p a	*labbăz	l æ p ( - - )	læp	læppa	426	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lap	*labbăz	143
 1552	l a p ə n	*labbăz	l a p ( ə n )	lapən	Lappen	426	German				lap	*labbăz	143
-535	l ɑː s t	*laistjăną	l ɑː s t - - - ( - - )	lɑːst	last	146	English				last	*laistjăną	345
-2091	l ǣ s t a n	*laistjăną	l ɑː s t - - - ( - - )	lɑːst	lǣstan	146	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			last	*laistjăną	345
-534	l ai s t ə n	*laistjăną	l ai s t - ə n ( - - )	laistən	leisten	146	German				last	*laistjăną	345
+535	l ɑː s t	*laistijăną	l ɑː s t - - - ( - - )	lɑːst	last	146	English				last	*laistijăną	345
+2091	l ǣ s t a n	*laistijăną	l ɑː s t - - - ( - - )	lɑːst	lǣstan	146	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			last	*laistijăną	345
+534	l ai s t ə n	*laistijăną	l ai s t - ə n ( - - )	laistən	leisten	146	German				last	*laistijăną	345
 1063	l ɑ x ə	*lakăną	l ɑ x ə - ( - - )	lɑxə	lachen	291	Dutch				laugh	*lakăną	144
 1062	l ɑː f	*lakăną	l ɑː f - - ( - - )	lɑːf	laugh	291	English				laugh	*lakăną	144
 2092	h l æ h h a n	*xlaxjăną	l ɑː f - - ( - - )	lɑːf	hlæhhan	291	Old_English	R/T: PGmc *hlahjanan > OE hlæhhan/hliehhan			laugh	*xlaxjăną	144
 1061	l a x ə n	*lakăną	l a x ə n ( - - )	laxən	lachen	291	German				laugh	*lakăną	144
-1746	l ɛɪ d ə	*laidjăną	l ɛɪ d - ə - ( - - )	lɛɪdə	leiden	478	Dutch				lead	*laidjăną	145
-1745	l iː d	*laidjăną	l iː d - - - ( - - )	liːd	lead	478	English				lead	*laidjăną	145
-2093	l ǣ d a n	*laidjăną	l iː d - - - ( - - )	liːd	lǣdan	478	Old_English	R/T vol.2 13527-29: PGmc *laidijaną > OE lǣdan (to lead)			lead	*laidjăną	145
-1744	l ai t ə n	*laidjăną	l ai t - ə n ( - - )	laitən	leiten	478	German				lead	*laidjăną	145
+1746	l ɛɪ d ə	*laidijăną	l ɛɪ d - ə - ( - - )	lɛɪdə	leiden	478	Dutch				lead	*laidijăną	145
+1745	l iː d	*laidijăną	l iː d - - - ( - - )	liːd	lead	478	English				lead	*laidijăną	145
+2093	l ǣ d a n	*laidijăną	l iː d - - - ( - - )	liːd	lǣdan	478	Old_English	R/T vol.2 13527-29: PGmc *laidijaną > OE lǣdan (to lead)			lead	*laidijăną	145
+1744	l ai t ə n	*laidijăną	l ai t - ə n ( - - )	laitən	leiten	478	German				lead	*laidijăną	145
 664	l oː f	*laubą	l oː f ( - - )	loːf	loof	182	Dutch				leaf	*laubą	146
 663	l iː f	*laubą	l iː f ( - - )	liːf	leaf	182	English				leaf	*laubą	146
 2094	l ē a f	*laubą	l iː f ( - - )	læːɑ̯f	lēaf	182	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			leaf	*laubą	146
@@ -744,10 +744,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 238	m iː l	*mēlą	m iː l ( - - )	miːl	meal	66	English				meal	*mēlą	171
 2122	m ǣ l	*mēlą	m iː l ( - - )	miːl	mǣl	66	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			meal	*mēlą	171
 237	m aː l	*mēlą	m aː l ( - - )	maːl	Mal	66	German				meal	*mēlą	171
-75	m eː n ə	*mainjăną	m eː n - ə - ( - - )	meːnə	menen	21	Dutch				mean	*mainjăną	172
-74	m iː n	*mainjăną	m iː n - - - ( - - )	miːn	mean	21	English				mean	*mainjăną	172
-2123	m ǣ n a n	*mainjăną	m iː n - - - ( - - )	miːn	mǣnan	21	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			mean	*mainjăną	172
-73	m ai n ə n	*mainjăną	m ai n - ə n ( - - )	mainən	meinen	21	German				mean	*mainjăną	172
+75	m eː n ə	*mainijăną	m eː n - ə - ( - - )	meːnə	menen	21	Dutch				mean	*mainijăną	172
+74	m iː n	*mainijăną	m iː n - - - ( - - )	miːn	mean	21	English				mean	*mainijăną	172
+2123	m ǣ n a n	*mainijăną	m iː n - - - ( - - )	miːn	mǣnan	21	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			mean	*mainijăną	172
+73	m ai n ə n	*mainijăną	m ai n - ə n ( - - )	mainən	meinen	21	German				mean	*mainijăną	172
 648	m iː d	*mizdō	m iː - d ( - )	miːd	meed	178	English				meed	*mizdō	348
 2124	m ē d	*mizdō	m iː - d ( - )	miːd	mēd	178	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			meed	*mizdō	348
 647	m iː t ə	*mizdō	m iː - t ( ə )	miːtə	Miete	178	German				meed	*mizdō	348
@@ -934,10 +934,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 106	s iː k	*sōkjăną	s iː k - - - ( - - )	siːk	seek	30	English				seek	*sōkjăną	214
 2171	s ē ċ a n	*sōkjăną	s iː k - - - ( - - )	siːk	sēċan	30	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			seek	*sōkjăną	214
 105	z uː x ə n	*sōkjăną	z uː x - ə n ( - - )	zuːxən	suchen	30	German				seek	*sōkjăną	214
-1381	z ɛ n d ə	*sandjăną	z ɛ n d - ə - ( - - )	zɛndə	zenden	378	Dutch				send	*sandjăną	215
-1380	s ɛ n d	*sandjăną	s ɛ n d - - - ( - - )	sɛnd	send	378	English				send	*sandjăną	215
-2172	s e n d a n	*sandjăną	s ɛ n d - - - ( - - )	sɛnd	sendan	378	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			send	*sandjăną	215
-1379	z ɛ n d ə n	*sandjăną	z ɛ n d - ə n ( - - )	zɛndən	senden	378	German				send	*sandjăną	215
+1381	z ɛ n d ə	*sandijăną	z ɛ n d - ə - ( - - )	zɛndə	zenden	378	Dutch				send	*sandijăną	215
+1380	s ɛ n d	*sandijăną	s ɛ n d - - - ( - - )	sɛnd	send	378	English				send	*sandijăną	215
+2172	s e n d a n	*sandijăną	s ɛ n d - - - ( - - )	sɛnd	sendan	378	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			send	*sandijăną	215
+1379	z ɛ n d ə n	*sandijăną	z ɛ n d - ə n ( - - )	zɛndən	senden	378	German				send	*sandijăną	215
 1819	z ɛ t ə	*satjăną	z ɛ t - ə - ( - - )	zɛtə	zetten	498	Dutch				set	*satjăną	216
 1818	s ɛ t	*satjăną	s ɛ t - - - ( - - )	sɛt	set	498	English				set	*satjăną	216
 2173	s e t t a n	*satjăną	s ɛ t - - - ( - - )	sɛt	settan	498	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			set	*satjăną	216
@@ -1006,10 +1006,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1568	s ɪ ŋ	*singwăną	s ɪ ŋ - - - ( - - )	sɪŋ	sing	430	English				sing	*singwăną	229
 2190	s i n g a n	*singwăną	s ɪ ŋ - - - ( - - )	sɪŋ	singan	430	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sing	*singwăną	229
 1567	z ɪ ŋ ə n	*singwăną	z ɪ ŋ - ə n ( - - )	zɪŋən	singen	430	German				sing	*singwăną	229
-1609	z ɛ ŋ ə	*sangjăną	z ɛ ŋ - - ə - ( - - )	zɛŋə	zengen	441	Dutch				singe	*sangjăną	230
-1608	s ɪ n ʤ	*sangjăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	singe	441	English				singe	*sangjăną	230
-2191	s e n ġ a n	*sangjăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	senġan	441	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			singe	*sangjăną	230
-1607	z ɛ ŋ ə n	*sangjăną	z ɛ ŋ - - ə n ( - - )	zɛŋən	sengen	441	German				singe	*sangjăną	230
+1609	z ɛ ŋ ə	*sangijăną	z ɛ ŋ - - ə - ( - - )	zɛŋə	zengen	441	Dutch				singe	*sangijăną	230
+1608	s ɪ n ʤ	*sangijăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	singe	441	English				singe	*sangijăną	230
+2191	s e n ġ a n	*sangijăną	s ɪ n ʤ - - - ( - - )	sɪnʤ	senġan	441	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			singe	*sangijăną	230
+1607	z ɛ ŋ ə n	*sangijăną	z ɛ ŋ - - ə n ( - - )	zɛŋən	sengen	441	German				singe	*sangijăną	230
 1055	z ʉ s t ə r	*swestēr	z - ʉ s t ə r	zʉstər	zuster	289	Dutch				sister	*swestēr	231
 1054	s ɪ s t ə	*swestēr	s - ɪ s t ə r	sɪstə	sister	289	English				sister	*swestēr	231
 2192	s w u s t o r	*swestēr	s - ɪ s t ə r	sɪstə	swustor	289	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sister	*swestēr	231
@@ -1034,10 +1034,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1911	s l aɪ m	*slīmą	s l aɪ m ( - - )	slaɪm	slime	524	English				slime	*slīmą	236
 2197	s l ī m	*slīmą	s l aɪ m ( - - )	slaɪm	slīm	524	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slime	*slīmą	236
 1910	ʃ l ai m	*slīmą	ʃ l ai m ( - - )	ʃlaim	Schleim	524	German				slime	*slīmą	236
-1815	s m eː r ə	*smerwjăną	s m eː r - - ə - ( - - )	smeːrə	smeren	497	Dutch				smear	*smerwjăną	237
-1814	s m ɪə	*smerwjăną	s m ɪə r - - - - ( - - )	smɪə	smear	497	English				smear	*smerwjăną	237
-2198	s m ie r w a n	*smerwjăną	s m ɪə r - - - - ( - - )	smɪə	smierwan	497	Old_English	Source: Kroonen p.458 *smerwjan- > OE smierwan; R/T §6.7.1 p.289 WS smierwan (Merc. smirwan is Anglian)			smear	*smerwjăną	237
-1813	ʃ m iː r ə n	*smerwjăną	ʃ m iː r - - ə n ( - - )	ʃmiːrən	schmieren	497	German				smear	*smerwjăną	237
+1815	s m eː r ə	*smerwijăną	s m eː r - - ə - ( - - )	smeːrə	smeren	497	Dutch				smear	*smerwijăną	237
+1814	s m ɪə	*smerwijăną	s m ɪə r - - - - ( - - )	smɪə	smear	497	English				smear	*smerwijăną	237
+2198	s m ie r w a n	*smerwijăną	s m ɪə r - - - - ( - - )	smɪə	smierwan	497	Old_English	Source: Kroonen p.458 *smerwjan- > OE smierwan; R/T §6.7.1 p.289 WS smierwan (Merc. smirwan is Anglian)			smear	*smerwijăną	237
+1813	ʃ m iː r ə n	*smerwijăną	ʃ m iː r - - ə n ( - - )	ʃmiːrən	schmieren	497	German				smear	*smerwijăną	237
 1059	s n eː ʋ	*snaiwăz	s n eː ( ʋ - - )	sneːʋ	sneeuw	290	Dutch				snow	*snaiwăz	238
 1058	s n əʊ	*snaiwăz	s n əʊ ( - - - )	snəʊ	snow	290	English				snow	*snaiwăz	238
 2199	s n ā w	*snaiwăz	s n əʊ ( - - - )	snɑːw	snāw	290	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *snaigwăz → *snaiwăz (Kroonen *snaiwa-, R/T *snaiwaz; no labiovelar in this etymology).			snow	*snaiwăz	238
@@ -1081,10 +1081,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 416	s p uː n	*spēnuz	s p uː n ( - - )	spuːn	spoon	114	English				spoon	*spēnuz	247
 2209	s p ō n	*spēnuz	s p uː n ( - - )	spuːn	spōn	114	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spoon	*spēnuz	247
 415	ʃ p aː n	*spēnuz	ʃ p aː n ( - - )	ʃpaːn	Span	114	German				spoon	*spēnuz	247
-1504	s p r ɛɪ d ə	*spraidjăną	s p r ɛɪ d - ə - ( - - )	sprɛɪdə	spreiden	412	Dutch				spread	*spraidjăną	248
-1503	s p r ɛ d	*spraidjăną	s p r ɛ d - - - ( - - )	sprɛd	spread	412	English				spread	*spraidjăną	248
-2210	s p r ǣ d a n	*spraidjăną	s p r ɛ d - - - ( - - )	sprɛd	sprǣdan	412	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spread	*spraidjăną	248
-1502	ʃ p r ai t ə n	*spraidjăną	ʃ p r ai t - ə n ( - - )	ʃpraitən	spreiten	412	German				spread	*spraidjăną	248
+1504	s p r ɛɪ d ə	*spraidijăną	s p r ɛɪ d - ə - ( - - )	sprɛɪdə	spreiden	412	Dutch				spread	*spraidijăną	248
+1503	s p r ɛ d	*spraidijăną	s p r ɛ d - - - ( - - )	sprɛd	spread	412	English				spread	*spraidijăną	248
+2210	s p r ǣ d a n	*spraidijăną	s p r ɛ d - - - ( - - )	sprɛd	sprǣdan	412	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spread	*spraidijăną	248
+1502	ʃ p r ai t ə n	*spraidijăną	ʃ p r ai t - ə n ( - - )	ʃpraitən	spreiten	412	German				spread	*spraidijăną	248
 71	s p oː r	*spurô	s p oː r ( - - )	spoːr	spoor	20	Dutch				spur	*spurô	249
 70	s p ɜː	*spurô	s p ɜː r ( - - )	spɜː	spur	20	English				spur	*spurô	249
 2211	s p o r a	*spurô	s p ɜː r ( - - )	spɜː	spora	20	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			spur	*spurô	249
@@ -1109,10 +1109,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1626	s t ɛ m	*stamnăz	s t ɛ m ( - - - )	stɛm	stem	446	English				stem	*stamnăz	254
 2216	s t e f n	*stebnō	s t e f n	stefn	stefn	446	Old_English	Pre-OE transponent *stebn- (citation form *stebnō per R/T p.330) > OE stefn. The form stemn is a later WS variant (fn > mn assimilation, Bülbring §445: 'erst in Alfreds Zeit'). The deeper PGmc reconstruction remains disputed (see DEV_NOTES); this entry uses the local pre-OE transponent and defers cross-branch analysis.			stem	*stebnō	254
 1625	ʃ t a m	*stamnăz	ʃ t a m ( - - - )	ʃtam	Stamm	446	German				stem	*stamnăz	254
-1397	s t ɪ l ə	*stelljăną	s t ɪ l - ə - ( - - )	stɪlə	stillen	382	Dutch				still	*stelljăną	255
-1396	s t ɪ l	*stelljăną	s t ɪ l - - - ( - - )	stɪl	still	382	English				still	*stelljăną	255
-2217	s t i l l a n	*stelljăną	s t ɪ l - - - ( - - )	stɪl	stillan	382	Old_English	OE stillan wv. 'to still, calm' matches verb form of Du. stillen, G stillen; stille is adj.			still	*stelljăną	255
-1395	ʃ t ɪ l ə n	*stelljăną	ʃ t ɪ l - ə n ( - - )	ʃtɪlən	stillen	382	German				still	*stelljăną	255
+1397	s t ɪ l ə	*stellijăną	s t ɪ l - ə - ( - - )	stɪlə	stillen	382	Dutch				still	*stellijăną	255
+1396	s t ɪ l	*stellijăną	s t ɪ l - - - ( - - )	stɪl	still	382	English				still	*stellijăną	255
+2217	s t i l l a n	*stellijăną	s t ɪ l - - - ( - - )	stɪl	stillan	382	Old_English	OE stillan wv. 'to still, calm' matches verb form of Du. stillen, G stillen; stille is adj.			still	*stellijăną	255
+1395	ʃ t ɪ l ə n	*stellijăną	ʃ t ɪ l - ə n ( - - )	ʃtɪlən	stillen	382	German				still	*stellijăną	255
 449	s t ɛ l t	*steltjōn	s t ɛ l t - - ( - )	stɛlt	stelt	123	Dutch				stilt	*steltjōn	256
 448	s t ɪ l t	*steltjōn	s t ɪ l t - - ( - )	stɪlt	stilt	123	English				stilt	*steltjōn	256
 2218	* s t i l t e	*steltjōn	s t ɪ l t - - ( - )	stɪlt	-	123	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | Unattested OE; reconstructed *stilte.			stilt	*steltjōn	256
@@ -1144,10 +1144,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1362	s t r iː m	*straumăz	s t r iː m ( - - )	striːm	stream	373	English				stream	*straumăz	262
 2225	s t r ē a m	*straumăz	s t r iː m ( - - )	striːm	strēam	373	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			stream	*straumăz	262
 1361	ʃ t r oː m	*straumăz	ʃ t r oː m ( - - )	ʃtroːm	Strom	373	German				stream	*straumăz	262
-733	s t r ɛ k ə	*strakkjăną	s t r ɛ k - ə - ( - - )	strɛkə	strekken	201	Dutch				stretch	*strakkjăną	263
-732	s t r ɛ ʧ	*strakkjăną	s t r ɛ ʧ - - - ( - - )	strɛʧ	stretch	201	English				stretch	*strakkjăną	263
-2226	s t r e ċ ċ a n	*strakkjăną	s t r ɛ ʧ - - - ( - - )	strɛʧ	streċċan	201	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			stretch	*strakkjăną	263
-731	ʃ t r ɛ k ə n	*strakkjăną	ʃ t r ɛ k - ə n ( - - )	ʃtrɛkən	strecken	201	German				stretch	*strakkjăną	263
+733	s t r ɛ k ə	*strakkijăną	s t r ɛ k - ə - ( - - )	strɛkə	strekken	201	Dutch				stretch	*strakkijăną	263
+732	s t r ɛ ʧ	*strakkijăną	s t r ɛ ʧ - - - ( - - )	strɛʧ	stretch	201	English				stretch	*strakkijăną	263
+2226	s t r e ċ ċ a n	*strakkijăną	s t r ɛ ʧ - - - ( - - )	strɛʧ	streċċan	201	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			stretch	*strakkijăną	263
+731	ʃ t r ɛ k ə n	*strakkijăną	ʃ t r ɛ k - ə n ( - - )	ʃtrɛkən	strecken	201	German				stretch	*strakkijăną	263
 359	s t r oː j ə	*strawjăną	s t r oː - j ə - ( - - )	stroːjə	strooien	99	Dutch				strew	*strawjăną	264
 358	s t r uː	*strawjăną	s t r uː - - - - ( - - )	struː	strew	99	English				strew	*strawjăną	264
 2227	s t r e w i a n	*strawjăną	s t r uː - - - - ( - - )	struː	strewian	99	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			strew	*strawjăną	264
