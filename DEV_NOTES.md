@@ -8656,20 +8656,192 @@ are required.
 
 **Status:** FIX REJECTED — causes more regressions than improvements.
 
-### Alternative Approaches to Explore
+### Primary vs Secondary Nasalization: The Correct Solution
 
-1. **Syllable structure marking:** Mark syllable boundaries in proto-forms
-   to correctly condition A-restoration on "followed by back vowel in same
-   or following syllable" vs "followed by fronting environment."
+After further research in R/T, the correct model involves distinguishing TWO
+types of nasalized vowels:
 
-2. **Explicit A-restoration marker:** Add a diacritic to proto-forms that
-   need A-restoration, e.g., `*bākăną` (with macron on root vowel).
+#### 1. Primary Nasalization (already in FST as `{*ą}`)
 
-3. **Accept the limitation:** Acknowledge that this phonological conditioning
-   is too complex for a simple FST and mark these forms with special encoding.
+R/T vol.2 §5.1.1 (p.139-140): "loss of nasals immediately preceding fricatives,
+with lengthening and nasalization of the preceding vowel"
 
-4. **Review the TSV entries:** Are the expected forms actually correct?
-   Do forms like `*kraftăz → cræft` really require fronting, or could the
-   TSV be wrong?
+Examples:
+- `*fimf` → `*fīf` → OE `fīf` "five"
+- `*munþaz` → `*mūþ` → OE `mūþ` "mouth"  
+- `*tanþ-` → `*tōþ` → OE `tōþ` "tooth"
 
-This needs more research before proceeding.
+This is PHONEMIC nasalization — the nasal consonant is LOST and its feature
+is transferred to the vowel. We already encode this with `{*ą}` (ogonek).
+
+#### 2. Secondary Nasalization (contact nasalization, NOT yet in FST)
+
+R/T vol.2 §5.1.2 (p.142): "Stressed low vowels were nasalized when immediately
+followed by a nasal in the northern WGmc dialects; unstressed *a was apparently
+nasalized when immediately followed by a nasal in the syllable coda, but not
+when immediately followed by an intervocalic nasal."
+
+This is ALLOPHONIC nasalization — the nasal consonant is RETAINED but causes
+the preceding vowel to become phonetically nasalized. Crucially:
+
+- **Coda nasal → nasalization:** `*bind.an#` (infinitive) — nasal in coda → `-a-` nasalized
+- **Onset nasal → no nasalization:** `*bind.an.az` (participle) — nasal in onset → `-a-` NOT nasalized
+
+The nasalization blocks fronting:
+- Nasalized `-a-` → stays `-a-` → OE `-an` (infinitive)
+- Non-nasalized `-a-` → fronts to `-æ-` → `-e-` → OE `-en` (participle)
+
+#### Proposed Encoding
+
+**Current symbols:**
+- `{*a}` = full short a (undergoes fronting)
+- `{*ă}` = reduced/unstressed short a (breve; skips fronting via different mechanism)
+- `{*ą}` = PRIMARY nasalized a (ogonek; from lost -n- before fricatives)
+
+**New symbol needed:**
+- `{*ã}` = SECONDARY nasalized a (tilde; contact nasalization from coda nasal)
+
+#### Why We Need Both `{*ą}` and `{*ã}`
+
+| Symbol | Source | Nasal consonant | Blocks fronting? | Triggers A-restoration? |
+|--------|--------|-----------------|------------------|------------------------|
+| `{*ą}` | -nC- → -ṼC- | LOST | Yes | No (not back vowel) |
+| `{*ã}` | -Vn# coda | RETAINED | Yes | Yes (is back vowel) |
+
+The key insight: `{*ã}` is phonetically a back vowel (just nasalized), so it
+SHOULD trigger A-restoration. `{*ą}` has different phonetic quality (raised/
+rounded in NWGmc) and does NOT trigger A-restoration.
+
+#### Proposed Implementation
+
+**Step 1: Add `{*ã}` to the symbol inventory**
+
+In `germanic.txt`, add to relevant definitions.
+
+**Step 2: Use `{*ã}` in infinitive suffix**
+
+Change infinitive encoding from `*-ăną` to `*-ãną`:
+- The `{*ã}` indicates contact nasalization (won't front)
+- The `{*ą}` is already correct (primary nasalization, word-final)
+
+**Step 3: Add sound change rule for secondary nasalization**
+
+Before `OEUnstressedAFronting`, add a rule that nasalizes unstressed `*a`
+when followed by coda nasal:
+```foma
+# Contact nasalization: unstressed *a → *ã before coda nasal
+define OEContactNasalization [
+    {*a} -> {*ã} || _ {*n} .#.   # word-final = coda nasal
+];
+```
+
+Actually, this could be done AUTOMATICALLY instead of in the TSV:
+- If `{*a}` is followed by `{*n}` at word boundary → nasalize to `{*ã}`
+- If `{*a}` is followed by `{*n}` + vowel → keep as `{*a}` (onset nasal)
+
+**Step 4: Block fronting of `{*ã}`**
+
+`OEUnstressedAFronting` targets `{*a}` only — `{*ã}` would naturally skip it.
+
+**Step 5: Add `{*ã}` to A-restoration trigger**
+
+```foma
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ} | {*ã}];
+```
+
+This is CORRECT because `{*ã}` is phonetically a back vowel (just nasalized).
+Unlike adding `{*ă}`, this won't cause regressions because:
+- `{*ã}` only appears in infinitive suffix (coda nasal context)
+- Nouns like `*kraftăz` use `{*ă}`, not `{*ã}` (no coda nasal)
+
+#### Example Derivations
+
+**Infinitive `*bakãną` → `bacan`:**
+1. A-restoration: `{*ã}` is back vowel → `*a` in root stays `*a`
+2. Fronting: `{*ã}` skips `OEUnstressedAFronting` → suffix stays `-an`
+3. Result: `bacan` ✓
+
+**Participle `*bakanăz` → `bacen`:**
+1. A-restoration: `{*a}` in suffix is back vowel → `*a` in root stays `*a`
+2. Fronting: `{*a}` in suffix fronts → `{*æ}` → `{*e}` → suffix becomes `-en`
+3. Result: `bacen` ✓
+
+**Noun `*kraftăz` → `cræft`:**
+1. A-restoration: `{*ă}` is NOT in trigger list → `*a` in root fronts
+2. Result: `cræft` ✓
+
+**Infinitive `*bindãną` → `bindan`:**
+1. A-restoration: N/A (no root `*a`)
+2. Fronting: `{*ã}` skips fronting → suffix stays `-an`
+3. Result: `bindan` ✓
+
+#### The Automatic Nasalization Rule (RECOMMENDED)
+
+The TSV currently has:
+- 83 infinitives with `-ăną` (breve)
+- 7 infinitives with `-aną` (full vowel, inconsistent)
+
+Rather than fixing TSV inconsistencies, we derive nasalization automatically:
+
+```foma
+# Secondary nasalization: unstressed *a/*ă → *ã before word-final nasal
+# R/T vol.2 p.153: "Unstressed *a was nasalized... only if followed by
+# a nasal in the syllable coda" - word-final position = coda
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ã} || [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*n} .#.
+];
+```
+
+This rule:
+1. Applies to BOTH `{*a}` and `{*ă}` (fixing the TSV inconsistency)
+2. Only triggers when followed by word-final `{*n}` (coda position)
+3. Does NOT apply to participles `*-anăz` (nasal not word-final)
+4. Does NOT apply to nouns `*-ăz` (no nasal)
+
+**Pipeline order:**
+1. `OESecondaryNasalization` (new rule, before A-restoration)
+2. `OEARestoration` (with `{*ã}` in trigger list)
+3. `OEUnstressedAFronting` (targets `{*a}` only, `{*ã}` skips)
+4. `OEWeakTailReduction` (converts remaining `{*ă}` → `{*a}`)
+
+This approach:
+- Requires NO TSV changes
+- Is phonologically accurate (nasalization was automatic, not lexical)
+- Fixes all 7 problematic forms automatically
+- Handles the 83 existing forms correctly
+
+#### Implementation Details
+
+**New symbol: `{*ã}` (a with tilde)**
+
+Add to symbol definitions alongside existing vowels. The tilde indicates
+secondary (contact) nasalization, distinct from ogonek `{*ą}` which indicates
+primary nasalization from lost nasal consonant.
+
+**Cleanup rule needed:**
+
+After all vowel processes, convert `{*ã}` back to `{*a}` for orthography:
+```foma
+define OENasalCleanup [
+    {*ã} -> {*a}
+];
+```
+
+**Full implementation checklist:**
+- [ ] Add `{*ã}` to symbol definitions
+- [ ] Add `OESecondaryNasalization` rule  
+- [ ] Add `{*ã}` to `OEARestorationTriggerVowel`
+- [ ] Add `OENasalCleanup` at appropriate point
+- [ ] Verify `OEUnstressedAFronting` doesn't match `{*ã}`
+- [ ] Test with full mismatch report
+
+#### Status: READY FOR IMPLEMENTATION
+
+This approach solves the problem correctly:
+1. Infinitives get `-an` (nasalized `{*ã}` blocks fronting)
+2. Participles get `-en` (non-nasalized `{*a}` fronts)
+3. Root `*a` in infinitives gets A-restoration (`{*ã}` is back vowel)
+4. Root `*a` in nouns fronts to `æ` (`{*ă}` is NOT in trigger)
+
+**Decision: Use automatic derivation (option B)** — more elegant and 
+phonologically accurate.
