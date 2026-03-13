@@ -8006,3 +8006,99 @@ updated.
 ### Mismatch Count
 
 After these changes: **77 mismatches** (improved from 78)
+
+---
+
+## Source Attestation of *-ijăną Forms (2026-03-13)
+
+### Evidence from Fulk (2018) *Comparative Grammar*
+
+Fulk consistently uses `-ijanan` notation for heavy-stem Class I weak verbs.
+Direct attestations in the text:
+
+| Our notation | Fulk's notation | OE reflex | Citation |
+|-------------|-----------------|-----------|----------|
+| `*leuxtijăną` | `*liuxtijanan` | līehtan | §4.5, §4.7: "PGmc. *liuxtijanan > līehtan 'illuminate'" |
+| `*sōkijăną` | `*sōkijanan` | sēċan | §4.7: "PGmc. *sōkijanan > sēcan 'seek'" |
+| `*galaubijăną` | `*lauƀijanan` | ġelīefan | (cf. `*ga-` prefix; root `*lauƀ-`) |
+| `*xauzijăną` | `*xauzijanan` | hīeran | (root `*xauz-` 'hear') |
+| `*wurkijăną` | `*wurkijanan` | wyrċan | (root `*wurk-` 'work') |
+| `*dōmijăną` | `*dōmijanan` | dēman | (root `*dōm-` 'judge') |
+
+Fulk's index (p.373) lists: `liuxtijanan 4.5, 4.7` — confirming the `-ij-` form.
+
+### Evidence from Ringe & Taylor (2014) Vol.2
+
+R/T also consistently use `-ijană` notation. Direct attestations:
+
+| Our notation | R/T notation | OE reflex | Citation |
+|-------------|--------------|-----------|----------|
+| `*sōkijăną` | `*sōkijană` | sēċan | p.157: "PGmc *sōkijană 'to look for, to seek'" |
+| `*galaubijăną` | `*galaubijana` | ġelīefan | p.245: "PGmc *galaubijana 'to believe'" |
+| `*baugijăną` | `*baugijana` | bīeġan | p.158: "PNWGmc *baugijana 'to bend (it)'" |
+| `*laistijăną` | `*laistijana` | lǣstan | p.231: "PGmc *laistijana 'to follow'" |
+| `*laidijăną` | `*laidijană` | lǣdan | p.229: "PGmc *laidijană 'to make go'" |
+| `*sandijăną` | `*sandijană` | sendan | p.229: "PGmc *sandijană 'to send'" |
+| `*xailijăną` | `*hailijană` | hǣlan | p.234: "PGmc *hailijană 'to heal, to cure'" |
+| `*garwijăną` | `*garwijană` | ġierwan | p.157: "PNWGmc *garwijană 'to prepare'" |
+
+R/T pp.156-157 lists dozens of `-ijană` forms for heavy-stem Class I weak verbs.
+
+### Analysis: Which Forms Are Etymologically Correct?
+
+**Criterion:** A heavy-stem Class I weak verb should have `-ijăną` (Sievers' Law).
+Stem weight is determined by:
+- Long vowel (VV) = heavy
+- Two consonants in coda (CC) = heavy
+- Short vowel + single consonant (VC) = light
+
+**Our heavy-stem verbs in TSV:**
+
+| Current TSV | Stem | Weight | Correct form | Source |
+|------------|------|--------|--------------|--------|
+| `*sturtijăną` | sturt- (CVCC) | heavy | ✓ `*sturtijăną` | Wiktionary |
+| `*leuxtijăną` | leuxt- (CVCC) | heavy | ✓ `*leuxtijăną` | Fulk §4.5, §4.7 |
+| `*galaubjăną` | galaub- (CVVC) | heavy | → `*galaubijăną` | R/T p.245 |
+| `*baugjăną` | baug- (CVVC) | heavy | → `*baugijăną` | R/T p.158 |
+| `*fastjăną` | fast- (CVCC) | heavy | → `*fastijăną` | (by analogy) |
+| `*fulgjăną` | fulg- (CVCC) | heavy | → `*fulgijăną` | (by analogy) |
+| `*laidjăną` | laid- (CVVC) | heavy | → `*laidijăną` | R/T p.229 |
+| `*laistjăną` | laist- (CVVCC) | heavy | → `*laistijăną` | R/T p.231 |
+| `*mainjăną` | main- (CVVC) | heavy | → `*mainijăną` | (by analogy) |
+| `*sandjăną` | sand- (CVCC) | heavy | → `*sandijăną` | R/T p.229 |
+| `*sangjăną` | sang- (CVCC) | heavy | → `*sangijăną` | (by analogy) |
+| `*smerwjăną` | smerw- (CCVCC) | heavy | → `*smerwijăną` | (by analogy) |
+| `*spraidjăną` | spraid- (CCVVC) | heavy | → `*spraidijăną` | (by analogy) |
+| `*stelljăną` | stell- (CVCC) | heavy | → `*stellijăną` | (by analogy) |
+| `*strakkjăną` | strakk- (CVCC) | heavy | → `*strakkijăną` | (by analogy) |
+| `*xailjăną` | xail- (CVVC) | heavy | → `*xailijăną` | R/T p.234 |
+| `*sōkjăną` | sōk- (CVV) | heavy | → `*sōkijăną` | R/T p.157, Fulk §4.7 |
+| `*θankjăną` | θank- (CVCC) | heavy | → `*θankijăną` | (by analogy; Go. þagkjan) |
+
+**Light-stem verbs (keep `-jăną`):**
+
+| TSV | Stem | Weight | Status |
+|-----|------|--------|--------|
+| `*bidjăną` | bid- (CVC) | light | ✓ correct |
+| `*satjăną` | sat- (CVC) | light | ✓ correct |
+| `*setjăną` | set- (CVC) | light | ✓ correct |
+| `*xlaxjăną` | xlax- (CCVC) | light | ✓ correct |
+
+### Decision: Should We Update All Heavy-Stem Forms?
+
+**Arguments FOR updating to `-ijăną`:**
+1. Etymologically correct according to R/T, Fulk, and Sievers' Law
+2. Consistent with our stated goal of using PGmc input notation
+3. The SieversLawSyncope rule correctly handles them anyway
+4. Educational/documentary value
+
+**Arguments AGAINST:**
+1. Extra work with no empirical benefit (FST produces same output)
+2. Risk of introducing typos in batch edits
+3. TSV is already correct for practical purposes
+
+**Recommendation:** Update the TSV to use etymologically correct `-ijăną` for all
+heavy-stem Class I weak verbs. This maintains scholarly accuracy and consistency
+with our PGmc input notation decision, even though the FST produces identical
+output due to the syncope rule. The changes should be made systematically and
+verified against the stem-weight analysis above.
