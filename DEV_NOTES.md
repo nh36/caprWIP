@@ -6957,7 +6957,7 @@ models the PGmc → OE derivation.
 ## TSV Error: *funxwstiz → should be *funxstiz (cognate 501, fȳst)
 
 **Date:** 2026-03-11  
-**Status:** Error identified, pending correction
+**Status:** ✅ FIXED — TSV corrected, `nxst` cluster added (commit 9ac6ed9)
 
 ### The Problem
 
@@ -7019,7 +7019,7 @@ The cluster `nxst` was NOT in `pgrmCodaComplex` — added in commit 9ac6ed9.
 ## NSL Chronology Bug: *funxstiz → fyxt instead of fȳst
 
 **Date:** 2026-03-12  
-**Status:** Diagnosed, fix proposed
+**Status:** ✅ FIXED — NSL moved to NWGmc stage (commit 8b2ca1d)
 
 ### The Problem
 
@@ -7153,6 +7153,27 @@ From R/T §5.1.1, examples of NSL that should work:
   → OE fȳst ✓
 ```
 
+### Implementation (2026-03-12)
+
+The fix was implemented in commit 8b2ca1d:
+
+1. **Renamed rules**: `OENasalSpirantLengthening` → `NWGmcNasalSpirantLengthening`,
+   `OENasalSpirantLoss` → `NWGmcNasalSpirantLoss`
+
+2. **Moved rules** in the pipeline from the OE section to the NWGmc section,
+   placing them after `NWGmcLongENasalRounding` and before `OEAuFronting`:
+   ```
+   .o. NWGmcLongENasalRounding
+   .o. NWGmcNasalSpirantLengthening  # Moved here from later in pipeline
+   .o. NWGmcNasalSpirantLoss         # Moved here from later in pipeline
+   .o. NWGmcPreconsonantalXLoss      # Added in same commit
+   .o. OEAuFronting
+   ```
+
+**Result after NSL fix:** `*funxstiz` → `fȳxt` (vowel now long, but `*x` survives)
+
+The remaining `*x` was fixed by the preconsonantal x-loss rule (see next section).
+
 ### Sources Consulted
 
 - R/T vol.2 §5.1.1 (pp.140-142): "Loss of nasals immediately preceding fricatives"
@@ -7166,7 +7187,7 @@ From R/T §5.1.1, examples of NSL that should work:
 ## Preconsonantal *x Loss: *xs > *s before Consonant Clusters
 
 **Date:** 2026-03-13  
-**Status:** Documented, ready to implement
+**Status:** ✅ FIXED — `NWGmcPreconsonantalXLoss` implemented (commit 8b2ca1d)
 
 ### The Problem
 
@@ -7281,6 +7302,34 @@ Proposed position in `EnglishProtoToOE`:
 | `*funxstiz` | `fȳst` | `fȳxt` | x not lost |
 | `*wahstmaz` | `wæstm` | (check) | x should be lost |
 | `*sehstoþ-` | `sesta` | (check) | x should be lost |
+
+### Implementation (2026-03-13)
+
+The rule `NWGmcPreconsonantalXLoss` was implemented in commit 8b2ca1d:
+
+```foma
+define NWGmcPreconsonantalXLoss [
+  {*x} -> 0 || _ EnglishPhoneme EnglishPhoneme
+];
+```
+
+The rule deletes `*x` when followed by two consonant phonemes. Placed in the
+NWGmc section after NSL and before `OEAuFronting`.
+
+**Result:**
+```
+*funxstiz → fȳst ✓
+```
+
+Full derivation trace:
+1. `*funxstiz` (input)
+2. `*fūxstiz` (NSL lengthening: `*u` → `*ū` before `*nx`)
+3. `*fūxstiz` (NSL loss: `*n` → ∅ before fricative)
+4. `*fūstiz` (x-loss: `*x` → ∅ before `-st-`)
+5. `*fȳst` (i-umlaut: `*ū` → `*ȳ`)
+6. `fȳst` (orthography)
+
+Mismatch count reduced from 78 to 77.
 
 ### Sources
 
