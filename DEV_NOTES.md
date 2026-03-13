@@ -8102,3 +8102,103 @@ heavy-stem Class I weak verbs. This maintains scholarly accuracy and consistency
 with our PGmc input notation decision, even though the FST produces identical
 output due to the syncope rule. The changes should be made systematically and
 verified against the stem-weight analysis above.
+
+---
+
+## CVVC Stems and Sievers' Law: The *baug- vs *straw- Distinction
+
+### The Question
+
+We updated `*baugjăną` → `*baugijăną` but left `*strawjăną` unchanged. Both appear
+to have CVVC structure (diphthong + consonant). Is this treatment consistent?
+
+### Answer: Yes, It Is Correct
+
+The key insight from R/T and Fulk is that **the structural type matters**:
+
+1. **`*baug-` (diphthong + C)** → Heavy stem → `*-ijăną`
+   - Structure: `au` diphthong + `g` consonant
+   - R/T p.158 explicitly: `*baugijana 'to bend'`
+   - The `au` is a true nucleus diphthong; the `g` is a coda consonant
+   - Syllable weight: VVC (heavy)
+
+2. **`*straw-` (vowel + glide sequence)** → Special treatment → `*-jăną`
+   - Structure: `a` vowel + `w` glide before another consonant
+   - R/T p.51, p.176 explicitly: `*strawjana 'to spread out'`
+   - Fulk §4.10: `*strawjanan > *strawwjan > *strauwjan > OE strēgan`
+   - The `-awj-` sequence undergoes WGmc gemination differently
+
+### R/T's Explicit Statements (vol.2)
+
+**On `*baug-` (p.158, p.240):**
+> PNWGmc *baugijana 'to bend (it)' (ON beygja, OS bōgian, OHG bougen 'to incline') 
+> → *béagjan → WS OE bīegan
+
+**On `*straw-` (p.51, p.176):**
+> PGmc *strawjana 'to spread out' (Goth. straujan) → PWGmc *strawwan (OHG gistrouwen)
+> → *straujan → *stréajan → Angl. OE strégan
+
+R/T explains (p.51):
+> "When the preceding vowel was *a the usual OE outcome seems to reflect not *aw'w' 
+> but *auj, with *j surviving and the diphthong developing normally..."
+> "But because gemination was not a merger—it involved no loss of contrasts—and did 
+> not alter underlying forms, it was reversible"
+
+### Fulk's Explicit Statement (§4.10)
+
+> "The handbooks prescribe that new diphthongs developed when the sequences -awj- and 
+> -iwj- underwent WGmc. gemination... There are, however, significant reasons to doubt this."
+> 
+> "It is difficult to imagine how w could have remained consonantal in forms like 
+> *strawjanan and *niwjaz"
+
+Fulk explicitly writes `*strawjanan` (not `*strawijanan`), suggesting the `-aw-` 
+sequence already behaves as a unit and doesn't trigger Sievers' Law the same way.
+
+### The Phonological Distinction
+
+| Stem Type | Example | Structure | Sievers' Law | Sources |
+|-----------|---------|-----------|--------------|---------|
+| VVC + C | `*baug-` | au.g | HEAVY → `-ijăną` | R/T p.158 |
+| VVC + C | `*laist-` | ai.st | HEAVY → `-ijăną` | R/T p.231 |
+| VVC + C | `*laid-` | ai.d | HEAVY → `-ijăną` | R/T p.229 |
+| V + wC | `*straw-` | a.wj | SPECIAL | R/T p.51 |
+| V + wC | `*xaw-` | a.wj | SPECIAL | R/T p.51 |
+
+The crucial difference:
+- In `*baug-`, the diphthong `au` is the syllable nucleus and `g` is a coda consonant
+- In `*straw-`, the `w` is part of a consonant cluster `-wj-` that undergoes gemination
+
+### U/W Consistency in Diphthongs
+
+**Question raised:** Are we using 'u' and 'w' consistently?
+
+**Answer:** The distinction is phonological, not orthographic:
+- `au` in `*baug-` = diphthong (two vowel morae in nucleus)
+- `aw` in `*straw-` = vowel + glide (where `w` patterns with consonants)
+
+Our TSV uses:
+- `au` in diphthongs: `*baugjăną`, `*galaubjăną`, `*xlaupaną`
+- `aw` before consonants: `*strawjăną`, `*xlawjăną` (if we had it)
+
+This is consistent with the phonological reality:
+- `*baugjăną` → the `au` is a nucleus diphthong, `g` + `j` are consonants
+- `*strawjăną` → the `a` is the nucleus, `wj` behaves as consonant cluster
+
+**Verification of our TSV:**
+```
+*baugjăną     ✓ (au diphthong + gj consonants)
+*galaubjăną   ✓ (au diphthong + bj consonants)  
+*strawjăną    ✓ (a vowel + wj consonant cluster)
+*xlaxjăną     ✓ (a vowel + xj consonants, light stem)
+```
+
+### Conclusion
+
+Our treatment is correct:
+1. `*baugjăną` → `*baugijăną` ✓ (true CVVC heavy stem)
+2. `*strawjăną` → unchanged ✓ (special `-awj-` cluster, not true CVVC)
+
+The sources explicitly use these forms, and the phonological reasoning supports
+the distinction: `*baug-` has a diphthongal nucleus + consonant coda (heavy),
+while `*straw-` has a simple vowel nucleus + glide-consonant cluster (special case).
