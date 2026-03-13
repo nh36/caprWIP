@@ -16,6 +16,13 @@
 - [Preconsonantal *x Loss: *xs > *s](#preconsonantal-x-loss-xs--s-before-consonant-clusters)
 - [PGmc *d/*ð Representation Decision](#decision-2026-03-11-option-2a-confirmed)
 
+### Sievers' Law and Class I Weak Verbs (Mar 2026)
+- [Sievers' Law: The *sturtijăną Question](#sievers-law-and-class-i-weak-verb-infinitives-the-sturtijăną-question)
+- [DECISION: Adopting PGmc Input Notation](#decision-update-2026-03-13-adopting-pgmc-input-notation)
+- [Sievers' Law Implementation Status](#sievers-law-implementation-status-2026-03-13)
+- [Source Attestation of *-ijăną Forms](#source-attestation-of--ijăną-forms-2026-03-13)
+- [CVVC Stems: *baug- vs *straw- Distinction](#cvvc-stems-and-sievers-law-the-baug--vs-straw--distinction)
+
 ### Project status and archived work
 - [Project Status (as of 2026-03-10)](#project-status-as-of-2026-03-10)
 - [Consonant Mismatch Bucket Refinement (2026-02-07)](#consonant-mismatch-bucket-refinement-2026-02-07)
@@ -7535,10 +7542,10 @@ Change TSV row 2303:
 
 ---
 
-## TSV Fix: *sturtijăną → *sturtjăną (styrtan 'to start, leap')
+## TSV Analysis: *sturtijăną (styrtan 'to start, leap')
 
 **Date:** 2026-03-13  
-**Status:** Under investigation
+**Status:** RESOLVED — form kept as `*sturtijăną` (see Decision Update below)
 
 ### The Problem
 
@@ -7800,18 +7807,23 @@ later). Therefore `*sturtijăną` is inconsistent with our notation and should b
 
 ### Final Resolution
 
-The change from `*sturtijăną` → `*sturtjăną` is **correct** because:
+~~The change from `*sturtijăną` → `*sturtjăną` is **correct** because:~~
 
-1. Our TSV consistently uses post-leveling notation for all other heavy-stem
-   Class I weak verbs
-2. Orel's `*startjanan` confirms the normalized form uses `-jan-`
-3. Kluge-Seebold's `*sturt-ija-` is morphological notation, not phonological
-4. The Sievers' Law alternation was leveled out in PWGmc, and our FST models
-   PWGmc → OE development
+**SUPERSEDED** — See "DECISION UPDATE" section below. We are adopting PGmc input
+notation, which means heavy-stem Class I weak verbs retain `*-ijăną`. The form
+`*sturtijăną` is **KEPT** in the TSV.
 
-The "disagreement" between sources is not a disagreement at all — it's different
-notational conventions (PGmc with Sievers' Law active vs. normalized/leveled
-forms).
+The following analysis was written before the decision to use PGmc notation:
+
+> 1. Our TSV consistently uses post-leveling notation for all other heavy-stem
+>    Class I weak verbs
+> 2. Orel's `*startjanan` confirms the normalized form uses `-jan-`
+> 3. Kluge-Seebold's `*sturt-ija-` is morphological notation, not phonological
+> 4. The Sievers' Law alternation was leveled out in PWGmc, and our FST models
+>    PWGmc → OE development
+
+This reasoning is still valid for understanding the sources, but we ultimately
+decided to use PGmc input forms and add a SieversLawSyncope rule instead.
 
 ---
 
@@ -7964,48 +7976,45 @@ AFTER j-gemination in the rule ordering.
 - Added `SieversLawSyncope` rule: `*i → 0 / C_j` (after PWGmcJGemination)
 
 **2. TSV Updates (server/data/germanic-aligned-final.tsv):**
-- `*sturtjăną` → `*sturtijăną` (reverted to etymologically correct form)
-- `*leuxtjăną` → `*leuxtijăną` (empirically necessary — fixes `līehtan`)
+- Updated ALL heavy-stem Class I weak verbs to use `*-ijăną` notation
+- 16 verb lemmas updated (107 TSV cell replacements total)
 
-### Empirical Testing Results
+### Updated Forms (alphabetical)
 
-Most heavy-stem Class I weak verbs produce identical output with either `-jăną`
-or `-ijăną` because the `SieversLawSyncope` rule correctly removes the `*i`
-after j-gemination has been blocked.
+| Old Form | New Form | Source |
+|----------|----------|--------|
+| `*baugjăną` | `*baugijăną` | R/T p.158 |
+| `*fastjăną` | `*fastijăną` | by analogy (CVCC heavy) |
+| `*fulgjăną` | `*fulgijăną` | by analogy (CVCC heavy) |
+| `*galaubjăną` | `*galaubijăną` | R/T p.245 |
+| `*laidjăną` | `*laidijăną` | R/T p.229 |
+| `*laistjăną` | `*laistijăną` | R/T p.231 |
+| `*leuxtjăną` | `*leuxtijăną` | Fulk §4.5, §4.7 |
+| `*mainjăną` | `*mainijăną` | by analogy (CVVC heavy) |
+| `*sandjăną` | `*sandijăną` | R/T p.229 |
+| `*sangjăną` | `*sangijăną` | by analogy (CVCC heavy) |
+| `*smerwjăną` | `*smerwijăną` | by analogy (CCVCC heavy) |
+| `*sōkjăną` | `*sōkijăną` | R/T p.157, Fulk §4.7 |
+| `*spraidjăną` | `*spraidijăną` | by analogy (CCVVC heavy) |
+| `*stelljăną` | `*stellijăną` | by analogy (CVCC heavy) |
+| `*strakkjăną` | `*strakkijăną` | by analogy (CCVCC heavy) |
+| `*sturtjăną` | `*sturtijăną` | Kluge-Seebold (as *sturt-ija-) |
+| `*θankjăną` | `*θankijăną` | by analogy (CVCC heavy) |
+| `*xailjăną` | `*xailijăną` | R/T p.234 |
 
-**Exception:** `*leuxtijăną` produces different (correct) output:
-- `*leuxtjăną` → `līetan` (WRONG — missing `h`)
-- `*leuxtijăną` → `līehtan` (CORRECT)
+### Forms NOT Updated (light stems or special cases)
 
-The `*xt` cluster interacts differently with the `*j` when there's an
-intervening `*i`. This is likely related to how the `*x` → `h` is preserved
-before the palatalization context.
-
-### Forms NOT Changed (empirically equivalent)
-
-The following heavy-stem verbs work correctly with either `-jăną` or `-ijăną`:
-- `*galaubjăną` / `*galaubijăną` → `ġelīefan` ✓
-- `*baugjăną` / `*baugijăną` → `bīeġan` ✓
-- `*fulgjăną` / `*fulgijăną` → `fylġan` ✓
-- `*laidjăną` / `*laidijăną` → `lǣdan` ✓
-- `*laistjăną` / `*laistijăną` → `lǣstan` ✓
-- `*mainjăną` / `*mainijăną` → `mǣnan` ✓
-- `*sandjăną` / `*sandijăną` → `sendan` ✓
-- `*sangjăną` / `*sangijăną` → `senġan` ✓
-- `*smerwjăną` / `*smerwijăną` → `smierwan` ✓
-- `*spraidjăną` / `*spraidijăną` → `sprǣdan` ✓
-- `*stelljăną` / `*stellijăną` → `stillan` ✓
-- `*xailjăną` / `*xailijăną` → `hǣlan` ✓
-- `*sōkjăną` / `*sōkijăną` → `sēċan` ✓
-- `*θankjăną` / `*θankijăną` → `þenċan` ✓
-
-These forms remain with `-jăną` in the TSV since the syncope rule handles them
-correctly. Only forms that empirically require `-ijăną` for correct output are
-updated.
+| Form | Reason | Source |
+|------|--------|--------|
+| `*bidjăną` | Light stem (CVC) | — |
+| `*satjăną` | Light stem (CVC) | — |
+| `*setjăną` | Light stem (CVC) | — |
+| `*strawjăną` | Special `-awj-` cluster | R/T p.51, Fulk §4.10 |
+| `*xlaxjăną` | Light stem (rhyme = VC) | R/T explicitly uses `*hlahjana` |
 
 ### Mismatch Count
 
-After these changes: **77 mismatches** (improved from 78)
+After all changes: **77 mismatches** (stable)
 
 ---
 
@@ -8052,28 +8061,28 @@ Stem weight is determined by:
 - Two consonants in coda (CC) = heavy
 - Short vowel + single consonant (VC) = light
 
-**Our heavy-stem verbs in TSV:**
+**Heavy-stem verbs in TSV (all now updated to `-ijăną`):**
 
-| Current TSV | Stem | Weight | Correct form | Source |
-|------------|------|--------|--------------|--------|
-| `*sturtijăną` | sturt- (CVCC) | heavy | ✓ `*sturtijăną` | Wiktionary |
-| `*leuxtijăną` | leuxt- (CVCC) | heavy | ✓ `*leuxtijăną` | Fulk §4.5, §4.7 |
-| `*galaubjăną` | galaub- (CVVC) | heavy | → `*galaubijăną` | R/T p.245 |
-| `*baugjăną` | baug- (CVVC) | heavy | → `*baugijăną` | R/T p.158 |
-| `*fastjăną` | fast- (CVCC) | heavy | → `*fastijăną` | (by analogy) |
-| `*fulgjăną` | fulg- (CVCC) | heavy | → `*fulgijăną` | (by analogy) |
-| `*laidjăną` | laid- (CVVC) | heavy | → `*laidijăną` | R/T p.229 |
-| `*laistjăną` | laist- (CVVCC) | heavy | → `*laistijăną` | R/T p.231 |
-| `*mainjăną` | main- (CVVC) | heavy | → `*mainijăną` | (by analogy) |
-| `*sandjăną` | sand- (CVCC) | heavy | → `*sandijăną` | R/T p.229 |
-| `*sangjăną` | sang- (CVCC) | heavy | → `*sangijăną` | (by analogy) |
-| `*smerwjăną` | smerw- (CCVCC) | heavy | → `*smerwijăną` | (by analogy) |
-| `*spraidjăną` | spraid- (CCVVC) | heavy | → `*spraidijăną` | (by analogy) |
-| `*stelljăną` | stell- (CVCC) | heavy | → `*stellijăną` | (by analogy) |
-| `*strakkjăną` | strakk- (CVCC) | heavy | → `*strakkijăną` | (by analogy) |
-| `*xailjăną` | xail- (CVVC) | heavy | → `*xailijăną` | R/T p.234 |
-| `*sōkjăną` | sōk- (CVV) | heavy | → `*sōkijăną` | R/T p.157, Fulk §4.7 |
-| `*θankjăną` | θank- (CVCC) | heavy | → `*θankijăną` | (by analogy; Go. þagkjan) |
+| TSV Form | Stem | Weight | Source |
+|----------|------|--------|--------|
+| `*baugijăną` | baug- (CVVC) | heavy | R/T p.158 |
+| `*fastijăną` | fast- (CVCC) | heavy | (by analogy) |
+| `*fulgijăną` | fulg- (CVCC) | heavy | (by analogy) |
+| `*galaubijăną` | galaub- (CVVC) | heavy | R/T p.245 |
+| `*laidijăną` | laid- (CVVC) | heavy | R/T p.229 |
+| `*laistijăną` | laist- (CVVCC) | heavy | R/T p.231 |
+| `*leuxtijăną` | leuxt- (CVCC) | heavy | Fulk §4.5, §4.7 |
+| `*mainijăną` | main- (CVVC) | heavy | (by analogy) |
+| `*sandijăną` | sand- (CVCC) | heavy | R/T p.229 |
+| `*sangijăną` | sang- (CVCC) | heavy | (by analogy) |
+| `*smerwijăną` | smerw- (CCVCC) | heavy | (by analogy) |
+| `*sōkijăną` | sōk- (CVV) | heavy | R/T p.157, Fulk §4.7 |
+| `*spraidijăną` | spraid- (CCVVC) | heavy | (by analogy) |
+| `*stellijăną` | stell- (CVCC) | heavy | (by analogy) |
+| `*strakkijăną` | strakk- (CVCC) | heavy | (by analogy) |
+| `*sturtijăną` | sturt- (CVCC) | heavy | Kluge-Seebold |
+| `*θankijăną` | θank- (CVCC) | heavy | (by analogy; Go. þagkjan) |
+| `*xailijăną` | xail- (CVVC) | heavy | R/T p.234 |
 
 **Light-stem verbs (keep `-jăną`):**
 
@@ -8084,24 +8093,22 @@ Stem weight is determined by:
 | `*setjăną` | set- (CVC) | light | ✓ correct |
 | `*xlaxjăną` | xlax- (CCVC) | light | ✓ correct |
 
-### Decision: Should We Update All Heavy-Stem Forms?
+**Special cases (keep `-jăną`):**
 
-**Arguments FOR updating to `-ijăną`:**
+| TSV | Reason | Source |
+|-----|--------|--------|
+| `*strawjăną` | Special `-awj-` cluster | R/T p.51, Fulk §4.10 |
+
+### Decision: Update All Heavy-Stem Forms — COMPLETED
+
+All heavy-stem Class I weak verbs have been updated to use `-ijăną` notation.
+This was done in commit ec7555e (2026-03-13).
+
+**Rationale:**
 1. Etymologically correct according to R/T, Fulk, and Sievers' Law
 2. Consistent with our stated goal of using PGmc input notation
 3. The SieversLawSyncope rule correctly handles them anyway
 4. Educational/documentary value
-
-**Arguments AGAINST:**
-1. Extra work with no empirical benefit (FST produces same output)
-2. Risk of introducing typos in batch edits
-3. TSV is already correct for practical purposes
-
-**Recommendation:** Update the TSV to use etymologically correct `-ijăną` for all
-heavy-stem Class I weak verbs. This maintains scholarly accuracy and consistency
-with our PGmc input notation decision, even though the FST produces identical
-output due to the syncope rule. The changes should be made systematically and
-verified against the stem-weight analysis above.
 
 ---
 
