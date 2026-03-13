@@ -8835,6 +8835,114 @@ define OENasalCleanup [
 - [ ] Verify `OEUnstressedAFronting` doesn't match `{*ã}`
 - [ ] Test with full mismatch report
 
+### Notational Questions: Symbol Design for Secondary Nasalization
+
+#### Question 1: Can We Reuse `{*ą}` Instead of Adding `{*ã}`?
+
+The user asks whether `{*ą}` (primary nasalization) could be reused for secondary
+nasalization, which would be more internally consistent.
+
+**Analysis of `{*ą}` in the pipeline:**
+
+1. **Input sources of `{*ą}`:**
+   - Appears in TSV as final vowel of infinitives: `-ăną`, `-aną`
+   - Used in weak endings: `-ēną`, `-ōną`, etc.
+
+2. **What happens to word-final `{*ą}`:**
+   - Line 1415-1416 `OEWeakTailNasalLoss`: `{*n}{*ą} → {*n}` at word boundary
+   - Line 1868 `OEHeavySyllableNasalApocope`: `{*ą} → 0` after consonant
+   - So word-final `{*ą}` is ABSORBED or DELETED before late rules
+
+3. **Pipeline order:**
+   - `OEARestoration` (line 1999) — where we need nasalized trigger
+   - ...many rules...
+   - `OEWeakTailNasalLoss` (line 2026) — where `{*ą}` is absorbed
+
+**Conclusion:** At the time of `OEARestoration`, the final `{*ą}` token is still
+present. If we were to convert `{*ă}/{*a}` to `{*ą}` for secondary nasalization,
+we'd have multiple `{*ą}` tokens with different fates:
+- The FINAL `{*ą}` (original): gets absorbed by `OEWeakTailNasalLoss`
+- The PENULTIMATE `{*ą}` (from secondary nasalization): should become surface `-a-`
+
+This creates a problem: `OEWeakTailReduction1` converts `{*ą} → {*ɔ̆}` (line 1582),
+which would incorrectly round our secondary-nasalized vowel!
+
+**However**, there's another option: we could introduce secondary nasalization
+AFTER `OEWeakTailReduction1` has converted `{*ą} → {*ɔ̆}`. At that point, `{*ą}`
+would be free for reuse. But this might be too late — secondary nasalization
+needs to happen BEFORE A-restoration for the trigger to work.
+
+**Verdict:** Reusing `{*ą}` is risky because of the timing issues. A distinct
+symbol `{*ã}` is cleaner, though admittedly adds complexity.
+
+#### Question 2: Should Nasalized `{*a}` and `{*ă}` Merge or Stay Distinct?
+
+The user points out that if we nasalize both `{*a}` and `{*ă}`, we might get
+distinct outputs:
+- `{*a}` + nasalization → `{*ą}` or `{*ã}`?
+- `{*ă}` + nasalization → `{*ą̆}` (nasalized reduced a) or same as above?
+
+**Phonological question:** Do nasalized full and nasalized reduced vowels
+behave differently in Old English?
+
+**R/T's account (vol.2 p.153):**
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was
+> followed by a nasal in the syllable coda"
+
+R/T does not distinguish full vs reduced here — the conditioning is purely
+phonological (coda vs onset nasal). Both undergo the same change:
+- Before coda nasal → nasalized → NOT fronted
+- Before onset nasal → NOT nasalized → fronted
+
+**For A-restoration:** The question is whether the nasalized vowel triggers
+A-restoration. Since both `{*a}` and `{*ă}` are phonetically back vowels,
+their nasalized counterparts should ALSO be phonetically back. So:
+- Nasalized `{*a}` = back vowel → triggers A-restoration
+- Nasalized `{*ă}` = back vowel → triggers A-restoration
+
+**Practical conclusion:** The full vs reduced distinction is neutralized by
+nasalization for the purposes of:
+1. Blocking fronting (both are nasalized → both don't front)
+2. Triggering A-restoration (both are back → both trigger)
+
+Therefore, **merging to a single symbol `{*ã}`** is correct:
+- `{*a}` before coda nasal → `{*ã}`
+- `{*ă}` before coda nasal → `{*ã}`
+
+This merger is phonologically motivated: the nasalization process neutralizes
+the full/reduced distinction because both become "nasalized back vowel."
+
+#### Alternative: Use `{*ą̃}` for "Secondarily Nasalized" to Distinguish From Primary `{*ą}`
+
+If we want to preserve the distinction between:
+- Primary nasalization `{*ą}` (from lost nasal before fricative, e.g., `*fimf → *fīf`)
+- Secondary nasalization `{*ã}` (from coda nasal contact, e.g., `*-an# → *-ã̃n#`)
+
+We could use:
+- `{*ą}` = primary nasalized a (already exists, different phonological source)
+- `{*ã}` = secondary nasalized a (new, from coda nasal)
+
+The tilde vs ogonek distinction would parallel the phonological difference:
+- Ogonek `ą`: compensatory lengthening + nasalization (nasal is LOST)
+- Tilde `ã`: contact nasalization (nasal is RETAINED)
+
+**This is the recommended approach.**
+
+#### Summary of Symbol Design Decisions
+
+| Symbol | Meaning | Source | Nasal consonant | Use case |
+|--------|---------|--------|-----------------|----------|
+| `{*a}` | Full short a | Input | N/A | General |
+| `{*ă}` | Reduced/unstressed a | Input (breve) | N/A | Weak syllables |
+| `{*ą}` | Primary nasalized a | Lost N before fricative | LOST | `*fimf → *fīf` |
+| `{*ã}` | Secondary nasalized a | Contact with coda N | RETAINED | `*-aną → *-ãn` |
+
+The rule `[{*a} | {*ă}] → {*ã}` before coda nasal is a merger because:
+1. Both are phonetically back vowels
+2. The nasalization neutralizes the full/reduced distinction
+3. Both trigger A-restoration equally
+4. Both block fronting equally
+
 #### Status: READY FOR IMPLEMENTATION
 
 This approach solves the problem correctly:
@@ -8843,5 +8951,5 @@ This approach solves the problem correctly:
 3. Root `*a` in infinitives gets A-restoration (`{*ã}` is back vowel)
 4. Root `*a` in nouns fronts to `æ` (`{*ă}` is NOT in trigger)
 
-**Decision: Use automatic derivation (option B)** — more elegant and 
-phonologically accurate.
+**Decision: Use `{*ã}` (tilde) for secondary nasalization** — distinct from
+primary `{*ą}` (ogonek), phonologically accurate merger of full/reduced.
