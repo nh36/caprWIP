@@ -8930,13 +8930,11 @@ The tilde vs ogonek distinction would parallel the phonological difference:
 
 ### Question: Did Two Types of Nasalization Coexist Synchronically?
 
-This is an important phonological question. If primary and secondary nasalization
-were distinct at the same synchronic stage, that implies the language had two
-contrastive types of nasalized vowels — typologically unusual.
+This is an important phonological question. Let me re-read R/T carefully.
 
 #### Evidence from R/T
 
-R/T vol.2 §5.1.2 (p.142, lines ~8343-8360) directly addresses this:
+R/T vol.2 §5.1.2 (p.142, lines ~8343-8360):
 
 > "Stressed low vowels were nasalized when immediately followed by a nasal in
 > the northern WGmc dialects; unstressed *a was apparently nasalized when
@@ -8952,56 +8950,76 @@ R/T vol.2 §5.1.2 (p.142, lines ~8343-8360) directly addresses this:
 > complementary distribution with other, similar sounds (see Ringe and Eska
 > 2013: 91-2)."
 
-This passage confirms:
-1. Secondary nasalization (contact nasalization before coda nasals) became PHONEMIC
-2. Native learners "reanalyzed their nasalization as distinctive"
-3. They were "prompted to do so by the existence of non-alternating nasalized vowels
-   before fricatives" — i.e., primary nasalization
+#### CORRECTED Reading of This Passage (2026-03-13)
 
-**Key insight:** The two nasalizations DID coexist. Primary nasalization (from
-lost nasals before fricatives) was already present and may have "prompted" the
-reanalysis of secondary nasalization as phonemic.
+**What "distinctive" means here:** R/T is saying that nasalized vowels became
+phonemically **distinct from oral vowels** — i.e., /ã/ ≠ /a/. They are NOT saying
+that primary-nasalized and secondary-nasalized vowels were distinct from EACH OTHER.
 
-#### Chronology of the Two Nasalizations
+The passage says:
+1. Contact nasalization (before coda nasals) became PHONEMIC (not just allophonic)
+2. Speakers "reanalyzed their nasalization as distinctive" = nasalized vs oral is contrastive
+3. "Prompted by non-alternating nasalized vowels before fricatives" = the existence of
+   ALREADY-PHONEMIC nasalized vowels (from lost nasal+fricative clusters) served as a
+   MODEL for treating contact nasalization as also phonemic
 
-R/T vol.2 p.141 (lines ~8305-8310):
+**Key insight:** R/T is describing ONE category of nasalized vowels arising from
+multiple historical sources, NOT two contrasting types of nasalized vowels. All
+nasalized [ã] merged into a single phoneme /ã/, distinct from oral /a/.
 
-> "The rule resulting from this sound change should have been subphonemic until
-> **the loss of nasalization in the separate prehistories of the daughters**, but
-> the fact that many lexemes exhibited nasalized long vowels with no alternation
-> could have led some native learners to posit those vowels as underlying."
+#### Implications for Our Model
 
-This suggests:
-1. Primary nasalization eventually DENASALIZED (became oral long vowels)
-2. But before that happened, it influenced how secondary nasalization was analyzed
-3. By the time of written OE, both nasalization types had been lost — we only know
-   they existed because they fed later changes (rounding, non-fronting)
+If primary and secondary nasalization merged to ONE phoneme:
+- All nasalized [ã] = one phonemic category
+- They were distinct from oral [a], not from each other
+- We might not need TWO symbols (`{*ą}` and `{*ã}`)
 
-#### Did They Contrast Phonemically?
+**However**, there's still a STRUCTURAL difference in our FST:
+- Primary nasalization: nasal consonant LOST (`*fimf > *fīf`) — long vowel, no following N
+- Secondary nasalization: nasal consonant RETAINED (`*-an#`) — short vowel, followed by N
 
-The question is whether primary and secondary nasalized vowels were contrastive
-or allophonic. R/T's analysis suggests they were:
-- **Complementary distribution:** Primary occurred before fricatives (nasal lost);
-  secondary occurred before retained nasals
-- **Same outcome:** Both blocked fronting (became rounded in stressed, stayed [a]
-  in unstressed)
-- **Possible merger:** Since both had the same phonological behavior, native learners
-  may have analyzed them as the same phoneme
+These require different treatment in the FST because:
+- Primary `{*ą}`: already encoded in input, follows specific rules (e.g., `{*ą} → {*ɔ̆}`)
+- Secondary: needs to be DERIVED from `{*a}/{*ă}` + coda nasal context
 
-For our FST modeling purposes, the key point is: **both types blocked fronting**.
-Whether we call them distinct phonemes or allophones doesn't affect the outcome.
+#### Revised Symbol Analysis
 
-#### Conclusion on Coexistence
+Given that R/T implies ONE phonemic category of nasalized vowels:
 
-Yes, two types of nasalized vowels coexisted synchronically in pre-OE:
-1. **Primary nasalized vowels** (from lost nasal + fricative): long, no following nasal
-2. **Secondary nasalized vowels** (from contact with coda nasal): short, followed by nasal
+**Option A: Use `{*ą}` for both**
+- Reuse `{*ą}` as the output of secondary nasalization
+- Problem: `{*ą}` already has rules like `{*ą} → {*ɔ̆}` that shouldn't apply to infinitive `-an`
+- Would require careful ordering or context restrictions
 
-R/T explicitly state that the existence of primary nasalization may have prompted
-the reanalysis of secondary nasalization as phonemic. Eventually both were lost
-(denasalized), but their effects persist in OE:
-- Stressed nasalized vowels → rounded (ō)
-- Unstressed nasalized vowels → NOT fronted (stayed -an, not -en)
+**Option B: Use `{*ã}` for secondary only (current proposal)**
+- Add new `{*ã}` for contact nasalization
+- Not claiming they were PHONEMICALLY distinct — just STRUCTURALLY distinct in the FST
+- The distinction is implementational, not phonological
+
+**Option C: Derive secondary nasalization contextually**
+- Don't add a symbol at all
+- Instead, condition fronting and A-restoration directly on "followed by coda nasal"
+- More complex rule contexts, but fewer symbols
+
+#### Conclusion
+
+R/T's "distinctive" means nasalized vs oral, NOT primary vs secondary. The two
+nasalizations likely merged phonemically. Our use of different symbols (`{*ą}` vs
+`{*ã}`) is for IMPLEMENTATION convenience (they have different structural contexts
+and different downstream rules), not because they were phonemically distinct.
+
+For our FST modeling purposes, the key point is: **both sources of nasalization
+blocked fronting**. Whether we use one symbol or two is an implementation choice.
+
+#### Summary: One Phoneme, Multiple Sources
+
+Pre-OE had ONE phonemic category of nasalized vowels [ã], arising from two sources:
+1. **Loss of nasal before fricative** (primary): `*ańx > *āx` — long, no following nasal
+2. **Contact with coda nasal** (secondary): `*-an#` — short, followed by nasal
+
+Both blocked fronting. Eventually denasalized, but effects persist in OE:
+- Stressed nasalized *ã → rounded (ō)  
+- Unstressed nasalized *ã → NOT fronted (stays -an, not -en)
 
 ### Citations for Full vs Reduced Vowel Merger
 
