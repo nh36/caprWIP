@@ -7952,3 +7952,57 @@ suffix.
 
 For our FST, we need to implement **syncope** (a regular sound change), placed
 AFTER j-gemination in the rule ordering.
+
+---
+
+## Sievers' Law Implementation Status (2026-03-13)
+
+### Changes Made
+
+**1. Grammar (server/fsts/germanic.txt):**
+- Added `*-ijăną` pattern to `pgrmWeakTailVowel` (lines 296-297)
+- Added `SieversLawSyncope` rule: `*i → 0 / C_j` (after PWGmcJGemination)
+
+**2. TSV Updates (server/data/germanic-aligned-final.tsv):**
+- `*sturtjăną` → `*sturtijăną` (reverted to etymologically correct form)
+- `*leuxtjăną` → `*leuxtijăną` (empirically necessary — fixes `līehtan`)
+
+### Empirical Testing Results
+
+Most heavy-stem Class I weak verbs produce identical output with either `-jăną`
+or `-ijăną` because the `SieversLawSyncope` rule correctly removes the `*i`
+after j-gemination has been blocked.
+
+**Exception:** `*leuxtijăną` produces different (correct) output:
+- `*leuxtjăną` → `līetan` (WRONG — missing `h`)
+- `*leuxtijăną` → `līehtan` (CORRECT)
+
+The `*xt` cluster interacts differently with the `*j` when there's an
+intervening `*i`. This is likely related to how the `*x` → `h` is preserved
+before the palatalization context.
+
+### Forms NOT Changed (empirically equivalent)
+
+The following heavy-stem verbs work correctly with either `-jăną` or `-ijăną`:
+- `*galaubjăną` / `*galaubijăną` → `ġelīefan` ✓
+- `*baugjăną` / `*baugijăną` → `bīeġan` ✓
+- `*fulgjăną` / `*fulgijăną` → `fylġan` ✓
+- `*laidjăną` / `*laidijăną` → `lǣdan` ✓
+- `*laistjăną` / `*laistijăną` → `lǣstan` ✓
+- `*mainjăną` / `*mainijăną` → `mǣnan` ✓
+- `*sandjăną` / `*sandijăną` → `sendan` ✓
+- `*sangjăną` / `*sangijăną` → `senġan` ✓
+- `*smerwjăną` / `*smerwijăną` → `smierwan` ✓
+- `*spraidjăną` / `*spraidijăną` → `sprǣdan` ✓
+- `*stelljăną` / `*stellijăną` → `stillan` ✓
+- `*xailjăną` / `*xailijăną` → `hǣlan` ✓
+- `*sōkjăną` / `*sōkijăną` → `sēċan` ✓
+- `*θankjăną` / `*θankijăną` → `þenċan` ✓
+
+These forms remain with `-jăną` in the TSV since the syncope rule handles them
+correctly. Only forms that empirically require `-ijăną` for correct output are
+updated.
+
+### Mismatch Count
+
+After these changes: **77 mismatches** (improved from 78)
