@@ -7337,3 +7337,101 @@ Mismatch count reduced from 78 to 77.
 - R/T vol.2 pp.156-158: Variable `*h` loss before CC clusters
 - Kaluza, M. *Historische Grammatik* §70: `*funhsti- → *fūsti- → fȳst`
 - Luick, K. *Historische Grammatik* §250: Compensatory lengthening contexts
+
+---
+
+## Grammar Inconsistency: θ vs þ in Input Notation
+
+**Date:** 2026-03-13  
+**Status:** Under investigation
+
+### The Problem
+
+Five forms produce no output (`+?`) in the mismatch report:
+
+| Proto (TSV) | Expected OE | Issue |
+|-------------|-------------|-------|
+| `*libēθi` | `lifeþ` | Uses θ (Greek theta) |
+| `*regna-bugô` | `reġnboga` | Compound with hyphen |
+| `*sturtijăną` | `styrtan` | Unknown |
+| `*wira-aldiz` | `weorold` | Compound with hyphen |
+| `*wurmaz/wurmiz` | `wyrm` | Slash for alternants |
+
+### Root Cause: θ/þ Inconsistency
+
+The grammar (`pgrmWord`) uses TWO different characters for the dental fricative:
+- **θ (Greek theta, U+03B8)**: Used in 12 input patterns
+- **þ (Latin thorn, U+00FE)**: Used in only 2 input patterns
+
+These map to DIFFERENT internal symbols:
+- `θ:{*θ}` → internal `{*θ}`
+- `þ:{*þ}` → internal `{*þ}`
+
+The sound change rules (e.g., `EnglishStarVoicelessFricative`) use `{*θ}`, NOT `{*þ}`.
+
+**Critical mismatch for `*libēθi`:**
+- TSV row 2107 has: `*libēθi` (theta)
+- Grammar line 344 has: `ē:{*ē} þ:{*þ} i:{*i}` (thorn!)
+- Result: The input `ēθi` doesn't match the pattern `ēþi`, so no parse
+
+### Investigation: Which Character Should We Use?
+
+**Option A: Standardize on θ (theta)**
+- Pro: Already used in 12/14 input patterns
+- Pro: Already used in all phoneme class definitions (`EnglishStarFricative`, etc.)
+- Con: Need to change 2 grammar lines (80, 344)
+- Con: Confusing since OE uses þ orthographically
+
+**Option B: Standardize on þ (thorn)**
+- Pro: Matches OE orthographic convention
+- Pro: More intuitive for Germanic linguists
+- Con: Need to change 12 grammar lines + all phoneme classes
+- Con: More invasive change
+
+**Option C: Accept both (normalization)**
+- Add a rule that converts `þ` → `θ` at input
+- Pro: TSV can use either character
+- Con: Adds complexity to the grammar
+
+### Recommendation
+
+**Option A** seems most practical — the grammar already predominantly uses θ internally.
+The two lines using þ (lines 80, 344) appear to be oversights.
+
+### Other `no_output` Issues
+
+1. **Compounds with hyphen** (`*regna-bugô`, `*wira-aldiz`): Grammar doesn't parse hyphens
+2. **Alternants with slash** (`*wurmaz/wurmiz`): Grammar doesn't parse slashes
+3. **`*sturtijăną`**: Needs investigation (possibly `ij` cluster or `rti` sequence)
+
+These are TSV format issues, not phonological problems.
+
+### Sources
+
+- Unicode Standard: θ = U+03B8 (Greek Small Letter Theta)
+- Unicode Standard: þ = U+00FE (Latin Small Letter Thorn)
+
+### Implementation (2026-03-13)
+
+**Fix applied:** Standardized on θ (U+03B8) for dental fricative throughout:
+
+1. **Line 80** (`pgrmInitSimple`): Removed `þ:{*þ}` — θ already in line 83
+2. **Line 344** (`pgrmWeakTailVowel`): Changed `þ` → `θ` for 3sg pattern
+3. **Line 433** (`PGmcStarPhoneme`): Removed `{*þ}` from phoneme inventory
+4. **Lines 601, 2448**: Removed `{*þ} -> þ` from orthography rules
+
+**Result:**
+- `*libēθi` → `lifeþ` ✓ (was `+?`)
+- Mismatch count: 77 → 76
+
+**Remaining `no_output` forms (4):**
+These are TSV notation issues, not phonology bugs:
+
+| Form | Issue | Fix needed |
+|------|-------|------------|
+| `*regna-bugô` | Hyphen in compound | Remove hyphen or handle compounds |
+| `*wira-aldiz` | Hyphen in compound | Remove hyphen or handle compounds |
+| `*sturtijăną` | `ij` cluster not in grammar | TSV: `*sturtjăną` |
+| `*wurmaz/wurmiz` | Slash for alternants | TSV: pick one form |
+
+These require TSV edits, not grammar changes.

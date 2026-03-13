@@ -1,9 +1,9 @@
-Total mismatches: 77
+Total mismatches: 76
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
-  Phonology (core buckets):    17
+  Phonology (core buckets):    16
   Phonology (other buckets):   53
 
 === CORE BUCKETS ===
@@ -13,7 +13,7 @@ Total mismatches: 77
   breaking_missing__expected_eo: 2
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 4
-  no_output: 5
+  no_output: 4
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
@@ -83,8 +83,7 @@ long_vowel_missing (4):
   *mizdō -> meord (expected mēd)
   *texun -> teoon (expected tīen)
 
-no_output (5):
-  *libēθi -> +? (expected lifeþ)
+no_output (4):
   *regna-bugô -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
