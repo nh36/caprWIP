@@ -1680,6 +1680,32 @@ define PWGmcJGemination [
     {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
 ];
 
+# Sievers' Law Syncope (PWGmc): *-CijV- → *-CjV-
+# R/T vol.2 p.157: "the sequence *-CijV- was syncopated to *-CjV-"
+# This syncope removes the Sievers' Law *i that blocked j-gemination in heavy stems.
+#
+# Chronology (R/T vol.2 pp.156-157):
+# 1. PGmc: Sievers' Law produces *-ija- after heavy stems, *-ja- after light
+# 2. PWGmc: j-gemination applies to *Cj → *CCj (light stems only — heavy stems
+#    have *Cij, so the C is not directly before j, blocking gemination)
+# 3. PWGmc: *-CijV- syncope removes the blocking *i (after gemination!)
+# 4. Later: palatalization, etc.
+#
+# Evidence this is a regular sound change (not analogical leveling):
+# - R/T explicitly calls it "syncope" and "syncopated" (p.157)
+# - Applies exceptionlessly to "every class I weak present with a heavy root
+#   syllable and all ja-stem, jan-stem, and jōn-stem nominals with heavy root
+#   syllables" (p.157)
+#
+# Example derivation:
+# PGmc *sōkijană → j-gemination BLOCKED (no *Cj) → syncope *sōkjană → OE sēċan
+#
+# Note: This rule must be ordered AFTER PWGmcJGemination (so heavy stems avoid
+# gemination) and BEFORE palatalization (so *kj → *ċ can apply).
+define SieversLawSyncope [
+    {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
+];
+
 # Loss of internal j after heavy syllables; block after r.
 define OEJLossAfterHeavy [
     {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) [EnglishStarConsonantNoR | EnglishPalatalConsonant] _,
@@ -1984,6 +2010,10 @@ define EnglishProtoToOE (
     # R/T vol.2 p.50: j-gemination operates on underlying /b/ (e.g. *habjan- → *habban-).
     # Allophonic [β] only surfaces where *b remains a singleton after gemination.
     .o. PGmcBAllophony
+    # Sievers' Law syncope: *-CijV- → *-CjV- (R/T vol.2 p.157)
+    # Must be AFTER j-gemination (heavy stems avoided gemination via blocking *i)
+    # and BEFORE palatalization (so *kj → *ċ can apply).
+    .o. SieversLawSyncope
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPostVelarWLoss
