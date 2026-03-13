@@ -1722,7 +1722,14 @@ define OEWsPalatalUmlaut [
     {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
 ];
 
-define OENasalSpirantLengthening [
+# NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
+# "The most obvious phonological innovation of the northern dialects is the loss
+# of nasals immediately preceding fricatives, with lengthening and nasalization
+# of the preceding vowel."
+# CHRONOLOGY: This is a NWGmc change, shared by OE, OF, OS. It must precede
+# OE i-umlaut, otherwise umlauted vowels like *y (from *u) won't be lengthened.
+# See DEV_NOTES.md: "NSL Chronology Bug: *funxstiz → fyxt instead of fȳst"
+define NWGmcNasalSpirantLengthening [
     {*a} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
@@ -1731,8 +1738,17 @@ define OENasalSpirantLengthening [
     {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative
 ];
 
-define OENasalSpirantLoss [
+define NWGmcNasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarVoicelessFricative
+];
+
+# NWGmc Preconsonantal *x Loss (Campbell §417, R/T pp.156-158)
+# *x → ∅ before two or more consonants.
+# Examples: *funxstiz → fūstiz → fȳst, *wahstmaz → wæstm, *sehsto → sesta
+# This is a NWGmc change shared with OS (e.g. OS wastum).
+# Must follow NSL (which creates the *xCC cluster) and precede breaking/i-umlaut.
+define NWGmcPreconsonantalXLoss [
+    {*x} -> 0 || _ EnglishStarConsonant EnglishStarConsonant
 ];
 
 define OESkPalatalization [
@@ -1932,6 +1948,13 @@ define EnglishProtoToOE (
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
+    # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
+    # fricatives with compensatory lengthening. Must precede i-umlaut so that
+    # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
+    .o. NWGmcNasalSpirantLengthening
+    .o. NWGmcNasalSpirantLoss
+    # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
+    .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -1968,8 +1991,7 @@ define EnglishProtoToOE (
     .o. OEJClusterCoalescence
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
-    .o. OENasalSpirantLengthening
-    .o. OENasalSpirantLoss
+    # NSL moved earlier in pipeline (NWGmc stage, before i-umlaut) — see lines 1945-1946
     .o. OEWeakTailNasalLoss
     .o. OEWeightMarkers
     .o. OEHighVowelApocope
@@ -2032,6 +2054,11 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
+    # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
+    .o. NWGmcNasalSpirantLengthening
+    .o. NWGmcNasalSpirantLoss
+    # NWGmc *x loss before CC clusters (Campbell §417)
+    .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -2053,8 +2080,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEJClusterCoalescence
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
-    .o. OENasalSpirantLengthening
-    .o. OENasalSpirantLoss
+    # NSL moved earlier in pipeline (NWGmc stage)
     .o. OEWeakTailNasalLoss;
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;

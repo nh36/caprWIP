@@ -10,6 +10,12 @@
 - [OE botm 'bottom': Paradigmatic Leveling](#oe-botm-bottom-paradigmatic-leveling)
 - [PGmc *i > WGmc *e Lowering](#pgmc-i--wgmc-e-lowering-the-case-of-nest-2026-03-09h)
 
+### Mismatch fixes (Mar 2026)
+- [TSV Error: *funxwstiz → should be *funxstiz](#tsv-error-funxwstiz--should-be-funxstiz-cognate-501-fȳst)
+- [NSL Chronology Bug: *funxstiz → fyxt instead of fȳst](#nsl-chronology-bug-funxstiz--fyxt-instead-of-fȳst)
+- [Preconsonantal *x Loss: *xs > *s](#preconsonantal-x-loss-xs--s-before-consonant-clusters)
+- [PGmc *d/*ð Representation Decision](#decision-2026-03-11-option-2a-confirmed)
+
 ### Project status and archived work
 - [Project Status (as of 2026-03-10)](#project-status-as-of-2026-03-10)
 - [Consonant Mismatch Bucket Refinement (2026-02-07)](#consonant-mismatch-bucket-refinement-2026-02-07)
@@ -6997,29 +7003,288 @@ spurious `*w` is unclear — it may have been:
 - An error in the scraping/normalization script
 - A mistaken back-formation from the PIE labiovelar
 
-### The Fix
+### The Fix (TSV correction)
 
 Change row 2015:
 - FROM: `*funxwstiz`
 - TO: `*funxstiz`
 
-The cluster `nxst` is NOT currently in `pgrmCodaComplex` — only `nxwst` exists.
-We will need to add `nxst` to the coda complex list when fixing this.
+The cluster `nxst` was NOT in `pgrmCodaComplex` — added in commit 9ac6ed9.
 
-### Expected Derivation
+**Status (2026-03-12):** TSV corrected, cluster added, but derivation produces
+`fyxt` instead of expected `fȳst`. See next section for diagnosis.
+
+---
+
+## NSL Chronology Bug: *funxstiz → fyxt instead of fȳst
+
+**Date:** 2026-03-12  
+**Status:** Diagnosed, fix proposed
+
+### The Problem
+
+After correcting the TSV from `*funxwstiz` to `*funxstiz` and adding the `nxst`
+cluster to the grammar, the FST now produces output — but the wrong output:
+
+```
+*funxstiz → fyxt (actual)
+*funxstiz → fȳst (expected)
+```
+
+Issues observed:
+1. The `*n` should be lost (NSL) but survives
+2. The vowel should lengthen (NSL) but doesn't
+3. The `*x` survives instead of being lost with compensatory lengthening
+
+### Pipeline Trace
+
+Tracing through the pipeline stages:
+
+| Stage | Form | Notes |
+|-------|------|-------|
+| proto_input | `*f*u*n*x*s*t*i*z` | ✓ Parsed correctly |
+| After i-umlaut | `*f*y*n*x*s*t*i` | ✓ i-umlaut applied |
+| After NSL lengthening | `*f*y*n*x*s*t*i` | ✗ NO CHANGE! |
+| After NSL loss | `*f*y*n*x*s*t*i` | ✗ Nasal not lost |
+| Final | `fyxt` | Wrong: should be `fȳst` |
+
+### Root Cause: NSL Rule Missing `*y`
+
+The NSL lengthening rule (`OENasalSpirantLengthening`) only handles these vowels:
+
+```foma
+{*a} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+{*e} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+{*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+{*o} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+{*u} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+{*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative
+```
+
+**The rule doesn't handle `*y`!**
+
+When `*funxstiz` undergoes i-umlaut, `*u → *y`. Then when NSL tries to apply,
+it looks for `*u` but finds `*y`, so no lengthening occurs.
+
+### The Deeper Issue: Chronological Ordering
+
+The real problem is **chronological ordering**. Looking at R/T vol.2 §5.1.1:
+
+> "The most obvious phonological innovation of the **northern dialects** is the
+> loss of nasals immediately preceding fricatives, with lengthening and
+> nasalization of the preceding vowel."
+
+NSL was a **NWGmc** change (shared by OE, OF, OS) — it operated BEFORE the
+Proto-OE stage where i-umlaut applies.
+
+**Historical ordering (correct):**
+1. NWGmc NSL: `*funxstiz` → `*fūxstiz` or `*fūstiz` (nasal loss + vowel lengthening)
+2. OE i-umlaut: `*fūsti-` → `*fȳsti-` (long `*ū` → long `*ȳ`)
+3. OE shortening: `*fȳst` (long vowel shortens before cluster? — but OE preserves `fȳst`)
+
+**Our pipeline ordering (current, WRONG):**
+1. OE i-umlaut: `*funxstiz` → `*fynxstiz` (before NSL!)
+2. OE NSL: no match (rule expects `*u`, sees `*y`)
+3. Result: `*fynxst` → `fyxt` (wrong)
+
+### Evidence from R/T
+
+R/T vol.2 gives the PWGmc form directly:
+> PWGmc `*fūsti` 'fist' (OF fest, OS, OHG fūst) > OE fyst
+
+This confirms that NSL had already applied by the PWGmc stage, producing `*fūsti-`
+with the long vowel. R/T lists this under i-umlaut examples (p.224, 287), showing
+that `*fūsti-` → `fyst` involves i-umlaut of `*ū` → `*y` (written `y` = /y:/ → /y/).
+
+### Other Evidence: German and Dutch
+
+The cognates support the long-vowel reconstruction:
+- OHG `fūst` → NHG `Faust` (long vowel preserved)
+- OS `fūst` (long vowel)
+- Dutch `vuist` (long vowel from `*ū`)
+- OE `fȳst` (should have long vowel `ȳ`)
+
+### Proposed Fix: Move NSL Earlier in Pipeline
+
+**Option A: Move NSL to NWGmc stage (before i-umlaut)**
+
+Move `OENasalSpirantLengthening` and `OENasalSpirantLoss` from the OE section
+to the NWGmc section of the pipeline, specifically BEFORE `OEIUmlaut`.
+
+This would require:
+1. Renaming the rules to `NWGmcNasalSpirantLengthening` / `NWGmcNasalSpirantLoss`
+2. Moving them before `OEIUmlaut` in `EnglishProtoToOE`
+3. Testing for regressions on other NSL forms
+
+**Option B: Add `*y` to NSL rules**
+
+Keep NSL in its current position but add:
+```foma
+{*y} -> {*ȳ} || _ EnglishStarNasal EnglishStarVoicelessFricative
+```
+
+This is a **patch**, not a proper fix. It would work for this case but doesn't
+reflect the correct historical phonology. It also might create problems for
+forms where i-umlaut should NOT feed NSL.
+
+**Recommendation: Option A**
+
+The correct fix is to move NSL earlier in the pipeline. This reflects the
+actual historical chronology (NWGmc NSL → OE i-umlaut) and should work for
+all affected forms without needing to patch individual vowel rules.
+
+### Known NSL Forms to Test After Fix
+
+From R/T §5.1.1, examples of NSL that should work:
+- `*gansiz` → `gēs` 'geese' ✓ (currently works — no i-umlaut involved)
+- `*tanþ-` → `tōþ` 'tooth' ✓ (currently works)
+- `*funxstiz` → `fȳst` 'fist' ✗ (currently `fyxt`)
+- `*munþaz` → `mūþ` 'mouth' (should check)
+- `*anstiz` → `ēst` 'favor' (should check)
+
+### Expected Derivation After Fix
 
 ```
 *funxstiz
-  → NWGmc *funsti- (x-loss before consonant, per R/T §5.5.4)
-  → *ū lengthening before lost fricative
-  → PWGmc *fūnsti- or *fūsti-
-  → OE fȳst (i-umlaut)
+  → NWGmc *fū̃xstiz (NSL: vowel lengthening + nasalization)
+  → NWGmc *fūstiz (nasal loss before fricative, x-loss in cluster)
+  → PWGmc *fūsti- (final *-z loss)
+  → OE *fȳst (i-umlaut: *ū → *ȳ)
+  → OE fȳst ✓
 ```
 
-This matches the attested cognates:
-- OE fȳst
-- OHG fūst → NHG Faust
-- OS fūst
-- Dutch vuist
+### Sources Consulted
 
-All show the long vowel from compensatory lengthening.
+- R/T vol.2 §5.1.1 (pp.140-142): "Loss of nasals immediately preceding fricatives"
+- R/T vol.2 p.224, 287: `PWGmc *fūsti` → OE `fyst`
+- Kaluza, *Historische Grammatik der englischen Sprache* §70-71:
+  `fȳst Faust (*funhsti-)` — shows the expected derivation
+- Kroonen (2013) p.148: `*funhsti-` 'fist'
+
+---
+
+## Preconsonantal *x Loss: *xs > *s before Consonant Clusters
+
+**Date:** 2026-03-13  
+**Status:** Documented, ready to implement
+
+### The Problem
+
+After fixing NSL chronology (moving it before i-umlaut), the derivation of
+`*funxstiz` now produces `fȳxt` instead of expected `fȳst`:
+
+```
+*funxstiz → fȳxt (current, after NSL fix)
+*funxstiz → fȳst (expected)
+```
+
+The vowel is now correctly long (`ȳ`), and the nasal is correctly lost. But the
+`*x` survives when it should be lost in the cluster `*xst`.
+
+### Historical Background
+
+The loss of `*x` (written `*h` in most handbooks) before consonant clusters is
+a well-documented NWGmc/OE change, though its exact conditioning has been
+debated.
+
+**Campbell §417 (p.173):**
+> "When a consonant follows, xs > s in OE, e.g. *wastm* fruit, *-wæsma* growth
+> (both related to *weaxan*), North. *sesta* sixth, beside W-S, Ru. *syxta*...
+> but *wrixlan* exchange (from *gewrixl*, where *l* is vocalic), *pixl* axle
+> beside *pisl*..."
+
+Campbell's examples:
+| Proto form | OE outcome | Notes |
+|------------|------------|-------|
+| `*wahstmaz` | `wæstm` | 'fruit, growth' (x lost before -stm) |
+| `*sehstoþ-` | North. `sesta` | 'sixth' (x lost before -st) |
+| `*pihsla-` | `pixl ~ pisl` | 'axle' (variable: x kept or lost) |
+| `*niuhsijan` | `néosan` | 'to visit' (x lost before -s-) |
+
+Campbell notes this change "is found in all West Gmc. languages, and in North
+Gmc., e.g. ON *ίsl* 'axle'; OS *wueslon* 'exchange', *wuastum* 'fruit'".
+
+**R/T vol.2 pp.156-158 (§5.2.3):**
+> "We might account for the variation in *pixl* ~ *pisl* by suggesting that `*h`
+> was lost only when the cluster was word-final; but that makes it impossible
+> to account for *sesta* and *néosan*—and note further that *eaxl* 'shoulder'
+> < `*ahslu` is another counterexample. The best we can do is to conclude that
+> **`*h` was lost, possibly variably, possibly only in some dialects, when
+> followed by two or more consonants** at a time before breaking occurred in OE."
+
+R/T's examples from pp.156-158:
+| Proto form | OE outcome | Notes |
+|------------|------------|-------|
+| `*niuhsijan` | `néosan` | 'to visit, seek out' |
+| `*sehsto-` | North. `sesta` | 'sixth' (W-S `siexta` by analogy) |
+| `*pihslu-` | `pixl ~ pisl` | variable, both attested |
+| `*wahstma-` | `westm` | 'growth, fruit' (also OS `wastum`) |
+
+**Kaluza §70:**
+Gives the derivation directly: `fȳst Faust (aus *fūsti- für *fuhsti-, *funhsti-)`
+
+This shows the intermediate form `*fūsti-` with `*x` already lost before the
+cluster `-st-`.
+
+### The Rule
+
+The change is: `*x` → ∅ / _ CC (before two or more consonants)
+
+This must have occurred:
+1. After NSL (which produces `*fū̃xstiz` → `*fūxstiz`)
+2. Before i-umlaut (which sees `*fūstiz` and produces `*fȳst`)
+3. Before OE breaking (R/T: "before breaking occurred in OE")
+
+The change is a **NWGmc** development (shared with OS), not purely OE.
+
+### Variability
+
+R/T and Campbell both note the change was **variable**:
+- `pixl ~ pisl` both attested in OE
+- `eaxl` 'shoulder' < `*ahslu` shows preserved `*x`
+
+However, for `*funxstiz` → `fȳst`, the attested OE form has NO `*x`, so
+our FST should apply the rule.
+
+### Pipeline Placement
+
+The rule should be placed:
+1. After `NWGmcNasalSpirantLoss` (NSL needs to operate first)
+2. Before `OEBreaking` (R/T: change occurred before breaking)
+3. Before `OEIUmlaut` (Kaluza shows `*fūsti-` as the pre-umlaut form)
+
+Proposed position in `EnglishProtoToOE`:
+```
+.o. NWGmcNasalSpirantLengthening
+.o. NWGmcNasalSpirantLoss
+.o. NWGmcPreconsonantalXLoss  # NEW
+.o. OEAuFronting
+...
+```
+
+### Expected Derivation After Fix
+
+```
+*funxstiz
+  → *fū̃xstiz (NSL lengthening: *u → *ū̃ before *nx)
+  → *fūxstiz (NSL loss: *n → ∅ before *x)
+  → *fūstiz  (x-loss: *x → ∅ before CC cluster)
+  → *fūsti-  (final *-z loss)
+  → *fȳst    (i-umlaut: *ū → *ȳ)
+  → fȳst ✓
+```
+
+### Forms to Test After Implementation
+
+| Proto | Expected | Current | Issue |
+|-------|----------|---------|-------|
+| `*funxstiz` | `fȳst` | `fȳxt` | x not lost |
+| `*wahstmaz` | `wæstm` | (check) | x should be lost |
+| `*sehstoþ-` | `sesta` | (check) | x should be lost |
+
+### Sources
+
+- Campbell, A. (1959). *Old English Grammar*, §417 (p.173): `*xs > s` before C
+- R/T vol.2 pp.156-158: Variable `*h` loss before CC clusters
+- Kaluza, M. *Historische Grammatik* §70: `*funhsti- → *fūsti- → fȳst`
+- Luick, K. *Historische Grammatik* §250: Compensatory lengthening contexts

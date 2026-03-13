@@ -3,8 +3,8 @@ Total mismatches: 77
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
-  Phonology (core buckets):    18
-  Phonology (other buckets):   52
+  Phonology (core buckets):    17
+  Phonology (other buckets):   53
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
@@ -13,7 +13,7 @@ Total mismatches: 77
   breaking_missing__expected_eo: 2
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 4
-  no_output: 6
+  no_output: 5
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
@@ -52,6 +52,7 @@ Total mismatches: 77
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
+  cons_mismatch__t_vs_h__intervocalic: 1
   cons_mismatch__þ_vs_d__cluster: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
@@ -69,7 +70,7 @@ breaking_missing__expected_ea_got_a (1):
 
 breaking_missing__expected_eo (2):
   *juką -> ġoc (expected ġeoc)
-  *jugunθiz -> ġugyþe (expected ġeoguþ)
+  *jugunθiz -> ġugȳþ (expected ġeoguþ)
 
 breaking_missing__expected_eo_got_e (3):
   *fedwōrez -> fedwore (expected fēower)
@@ -82,12 +83,12 @@ long_vowel_missing (4):
   *mizdō -> meord (expected mēd)
   *texun -> teoon (expected tīen)
 
-no_output (6):
-  *funxwstiz -> +? (expected fȳst)
+no_output (5):
   *libēθi -> +? (expected lifeþ)
   *regna-bugô -> +? (expected reġnboga)
   *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
+  *wurmaz/wurmiz -> +? (expected wyrm)
 
 final_vowel_extra (6):
   *laimōn -> lāme (expected lām)
@@ -195,6 +196,9 @@ cons_mismatch__h_vs_m__cluster (1):
 
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
+
+cons_mismatch__t_vs_h__intervocalic (1):
+  *leuxtjăną -> līetan (expected līehtan)
 
 cons_mismatch__þ_vs_d__cluster (1):
   *nēθlō -> nǣþl (expected nǣdl)
