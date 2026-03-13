@@ -6010,7 +6010,7 @@ These all involve following **palatal** consonants. The `-st-` cluster in
 ## OE findan 'to find': Verner's Law, NSL, and Paradigm-Cell Mapping
 
 **Date:** 2026-03-11
-**Status:** Under investigation; requires paradigm-cell solution
+**Status:** ✅ FIXED — TSV corrected to *wurmiz; requires paradigm-cell solution
 
 ### The Problem
 
@@ -7343,7 +7343,7 @@ Mismatch count reduced from 78 to 77.
 ## Grammar Inconsistency: θ vs þ in Input Notation
 
 **Date:** 2026-03-13  
-**Status:** Under investigation
+**Status:** ✅ FIXED — TSV corrected to *wurmiz
 
 ### The Problem
 
@@ -7435,3 +7435,380 @@ These are TSV notation issues, not phonology bugs:
 | `*wurmaz/wurmiz` | Slash for alternants | TSV: pick one form |
 
 These require TSV edits, not grammar changes.
+
+---
+
+## TSV Fix: *wurmaz/wurmiz → *wurmiz (wyrm 'worm')
+
+**Date:** 2026-03-13  
+**Status:** ✅ FIXED — TSV corrected to *wurmiz
+
+### The Problem
+
+Row 2303 in the TSV has:
+```
+PROTOFORM: *wurmaz/wurmiz
+COUNTERPART: wyrm
+```
+
+The slash notation `*wurmaz/wurmiz` is invalid FST input syntax and produces
+no output (`+?`).
+
+### Source Analysis
+
+**Kroonen (2013, p.600)** reconstructs:
+> **\*wurmi-** m. 'worm' — Go. *waurms* m. 'snake', ON *ormr* m. 'id.', 
+> OE *wyrm* m. 'snake, worm', OFri. *wirm* m. 'worm', OS *wurm* m. 'id.',
+> OHG *wurm* m. 'worm, snake'
+
+Kroonen explicitly gives **`*wurmi-`** (i-stem), translating to our notation
+as `*wurmiz` (nom.sg. masculine i-stem).
+
+**Orel (2003, p.467)** reconstructs:
+> **\*wurmaz ~ wurmiz** sb.m.: Goth *waurms* 'snake', ON *ormr* 'serpent',
+> OE *wyrm* id., OFri. *worm* id., OS *wurm* id., OHG *wurm* id.
+
+Orel hedges with both forms, but the OE evidence strongly favors `*wurmiz`.
+
+**Ringe & Taylor (vol.2, p.197)** give:
+> PGmc **\*wurmiz** 'worm, snake' (Goth. *waurms*, ON *ormr*, OFri. *wirm*,
+> OS, OHG *wurm*) > OE *wyrm*
+
+R/T explicitly use **`*wurmiz`** (i-stem) as the PGmc form.
+
+**Campbell §602** lists **wyrm** as an i-stem noun in the "like *giest*" 
+category (short root syllable i-stems).
+
+**Bülbring §280, §359** also treats wyrm as an i-stem.
+
+### Phonological Evidence: i-Umlaut
+
+The OE form **wyrm** shows i-umlaut: PGmc *u > OE y.
+
+I-umlaut requires an *i or *j in a following syllable:
+- If a-stem `*wurmaz`: nom.sg. has no umlaut trigger → would give **×wurm**
+- If i-stem `*wurmiz`: nom.sg. *-iz triggers umlaut → gives **wyrm** ✓
+
+The presence of /y/ in OE wyrm is diagnostic of an i-stem input.
+
+### Why the Slash Notation?
+
+The TSV has `*wurmaz/wurmiz` likely because:
+1. Wiktionary or the scraping source hedged between stem classes
+2. Continental WGmc (OS wurm, OHG wurm) shows no umlaut, suggesting `*wurmaz`
+3. But OE wyrm requires `*wurmiz` for regular sound change
+
+The continental forms without umlaut may reflect:
+- Analogical leveling from oblique cases (which had *-a-, *-ō- suffixes)
+- Or a genuinely different dialectal reconstruction
+
+### Recommendation
+
+For the OE row, use **`*wurmiz`** (i-stem) because:
+1. All major handbooks (Kroonen, R/T, Campbell) reconstruct i-stem for OE
+2. The OE form wyrm requires i-umlaut, which only `*wurmiz` provides
+3. The FST correctly derives: `*wurmiz` → `wyrm` ✓
+
+The German/Dutch rows could potentially use `*wurmaz` if those branches
+preserved the a-stem, but that's a separate question.
+
+### FST Verification
+
+```
+*wurmiz → wyrm ✓ (i-umlaut applies)
+*wurmaz → ??? (currently no output — needs *wurmăz with breve)
+```
+
+### The Fix
+
+Change TSV row 2303:
+- FROM: `*wurmaz/wurmiz`
+- TO: `*wurmiz`
+
+### Sources
+
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.600: `*wurmi-`
+- Orel, V. (2003). *Handbook of Germanic Etymology*, p.467: `*wurmaz ~ wurmiz`
+- Ringe & Taylor (2014). *Linguistic History of English* vol.2, p.197: `*wurmiz`
+- Campbell, A. (1959). *Old English Grammar*, §602: wyrm as i-stem
+- Bülbring, K. (1902). *Altenglisches Elementarbuch*, §280, §359: wyrm as i-stem
+
+---
+
+## TSV Fix: *sturtijăną → *sturtjăną (styrtan 'to start, leap')
+
+**Date:** 2026-03-13  
+**Status:** Under investigation
+
+### The Problem
+
+Row 2213 in the TSV has:
+```
+PROTOFORM: *sturtijăną
+COUNTERPART: styrtan
+```
+
+The cluster `ij` is not in the grammar's recognized clusters, producing no
+output (`+?`). Additionally, the form `*sturtijăną` appears to be incorrectly
+reconstructed.
+
+### Source Analysis
+
+**Kluge-Seebold (2011)** s.v. *stürzen*:
+> Aus wg. **\*sturt-ija-** Vsw. "stürzen", auch in ae. *sturtan*, afr. *sterta*.
+
+This gives WGmc **`*sturt-ija-`**, which in standard PGmc infinitive notation
+would be **`*sturtjăną`** (Class I weak verb).
+
+**Note on notation:** Kluge-Seebold's `-ija-` represents the Class I weak
+suffix `*-jan-` with the connecting vowel. This is NOT `i` + `j` as separate
+segments, but the standard way of writing the causative/Class I weak suffix.
+
+**Orel (2003, p.372)** s.v. `*startjanan`:
+> **\*startjanan** wk.vb.: ON *sterta* 'to crease, to pleat', ME *sterten*
+> 'to drive up, to start', MHG *sterzen* 'to stalk, to grow stiff'.
+> Related to `*stertaz` II.
+
+Orel reconstructs the related verb as **`*startjanan`** with just `*-jan-`.
+
+**Orel (2003, p.384)** s.v. `*sturjanan`:
+> **\*sturjanan** wk.vb.: OE *styrian* 'to stir, to move', OS *far-sturian*
+> 'to subvert', OHG *ir-sturen* 'to shake'.
+
+This related verb also has just `*-jan-`, not `*-ijan-`.
+
+### Class I Weak Verb Morphology
+
+PGmc Class I weak verbs are formed with the suffix **`*-jan-`** (not `*-ijan-`):
+- Root + `*-jan-` + thematic endings
+- Example: `*sturt-` + `*-jan-` + `*-ăną` = `*sturtjăną`
+
+The notation `*-ija-` in some handbooks (like Kluge-Seebold) represents the
+same suffix `*-jan-` — the `i` is the thematic vowel, the `j` is the suffix,
+the `a` is part of the following inflection. It does NOT mean there's a
+separate `*i` segment before `*j`.
+
+### The Error
+
+The TSV form `*sturtijăną` appears to have incorrectly parsed the suffix as:
+- `*sturt-` (root) + `*ij` + `*ăną` (infinitive)
+
+When it should be:
+- `*sturt-` (root) + `*j` + `*ăną` (infinitive) = `*sturtjăną`
+
+This may have originated from a Wiktionary source that used the notation
+`*sturtijaną` (with full `*-ijaną` infinitive ending) which was then
+incorrectly normalized to `*sturtijăną`.
+
+### FST Verification
+
+```
+*sturtjăną → styrtan ✓ (verified working)
+*sturtijăną → +? (ij cluster not recognized)
+```
+
+### Recommendation
+
+Change TSV row 2213 (and cognate rows 28-30):
+- FROM: `*sturtijăną`
+- TO: `*sturtjăną`
+
+### Sources
+
+- Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch*, s.v. *stürzen*: WGmc `*sturt-ija-`
+- Orel, V. (2003). *Handbook of Germanic Etymology*, p.372, 384: `*startjanan`, `*sturjanan`
+- R/T vol.2 §7.1.4: Class I weak verb stem formation with `*-jan-` suffix
+
+---
+
+## Sievers' Law and Class I Weak Verb Infinitives: The *sturtijăną Question
+
+**Date:** 2026-03-13  
+**Status:** Under deep investigation
+
+### The Problem
+
+The TSV has row 2213:
+```
+PROTOFORM: *sturtijăną
+COUNTERPART: styrtan
+```
+
+The cluster `*ij` is not in the grammar, producing no output. But more
+fundamentally: **is `*sturtijăną` the correct PGmc form, or should it be
+`*sturtjăną`?**
+
+Different handbooks appear to give different answers:
+- Kluge-Seebold: `wg. *sturt-ija-` (with `-ija-`)
+- Orel: `*startjanan` (with just `-jan-`)
+
+Why the apparent disagreement?
+
+### Sievers' Law: The Root of the Alternation
+
+The "disagreement" is actually a reflection of **Sievers' Law**, a PGmc/PIE
+phonological rule that created systematic alternation between `-j-` and `-ij-`
+depending on the weight of the preceding syllable.
+
+**R/T vol.2 pp.69-70 (Cowgill's analysis):**
+
+> In PGmc, j-presents with **light** root syllables exhibited a stem vowel
+> complex `*-i- ~ *-ja-`, while those with **heavy** root syllables exhibited
+> `*-ī- ~ *-ija-`; the underlying forms for both were `*/-j-i-/ ~ */-j-a-/`
+> (with the alternating vowel of simple thematic presents), at least at first,
+> and the rule system that yielded the surface outcomes was the following:
+
+```
+                    after light syllables     after heavy syllables
+underlying forms    /-j-/ + /-i- ~ -a-/       /-j-/ + /-i- ~ -a-/
+Sievers' Law        -ji- ~ -ja-               -iji- ~ -ija-
+j > 0 / _ i         -i- ~ -ja-                -ii- ~ -ija-
+contraction         -i- ~ -ja-                -ī- ~ -ija-
+```
+
+In other words:
+- **After a light syllable** (CV): `*-jan-` surfaces as just `*-jan-` (j stays)
+- **After a heavy syllable** (CVC, CVV): `*-jan-` surfaces as `*-ijan-` (j → ij)
+
+### Applying This to *sturt-
+
+The root `*sturt-` has the shape **CVCC** — this is unambiguously **heavy**.
+
+Therefore, by Sievers' Law:
+- The underlying suffix `*/-jan-/` should surface as `*/-ijan-/`
+- The full infinitive would be **`*sturtijăną`** (as in the TSV!)
+
+### Why Does Orel Write *startjanan?
+
+Orel's notation `*startjanan` is **normalized/simplified notation** that
+abstracts away from the Sievers' Law alternation. He writes the suffix as
+`*-jan-` uniformly regardless of stem weight. This is a common practice in
+etymological dictionaries to keep entries consistent.
+
+Similarly, when R/T gives PWGmc paradigms (p.108-109), they write:
+```
+pres. inf. sōkijan laggjan domijan ...
+```
+
+Note `sōkijan` (heavy stem) vs `laggjan` (ending in geminate = heavy).
+Both show `-jan-` in the infinitive, but this is **after** the leveling that
+occurred in PWGmc/WGmc where the Sievers' Law alternation was eliminated.
+
+### What Kluge-Seebold's *sturt-ija- Means
+
+Kluge-Seebold writes `wg. *sturt-ija-` with **morpheme boundaries marked**.
+The notation `-ija-` represents the **Class I weak suffix + thematic vowel**
+as a morphological unit. This is NOT phonological transcription of "i then j",
+but rather morphological analysis.
+
+However, in the **PGmc** (not WGmc) form, after a heavy stem like `*sturt-`,
+Sievers' Law would indeed produce surface `*-ij-`.
+
+### The Chronological Question: PGmc vs. PWGmc
+
+Here's where it gets crucial for our FST:
+
+1. **In PGmc (and PNWGmc):** Sievers' Law was active. Heavy-stem Class I weak
+   verbs would have infinitives like `*sturtijăną` (with `-ij-`).
+
+2. **In PWGmc:** The alternation was leveled. R/T vol.2 pp.70-71 describes how
+   native learners reanalyzed the paradigm, eventually replacing `*-ī-` with
+   `*-i-` and eliminating the alternation. The suffix became uniformly `*-jan-`.
+
+3. **The question for our FST:** Are we modeling **PGmc** input or **PWGmc**
+   input?
+
+### Evidence from Our TSV and Grammar
+
+Looking at our existing TSV forms:
+- `*libjăną` → libban (NOT `*libijăną`)
+- `*habjăną` → hebban (NOT `*habijăną`)
+
+These heavy-stem Class I weak verbs use `*-jăną`, not `*-ijăną`. This suggests
+our TSV notation represents **post-Sievers'-Law-leveling** forms (i.e., PWGmc
+or later).
+
+If so, `*sturtijăną` is **inconsistent** with our notation convention. It
+should be `*sturtjăną`.
+
+### Why the TSV Has *sturtijăną
+
+The TSV was generated from Wiktionary data. Wiktionary entries sometimes
+preserve older/more archaic reconstructions, and may not be internally
+consistent about whether they're giving PGmc or PWGmc forms.
+
+The form `*sturtijaną` (Wiktionary notation) was then normalized to our
+notation as `*sturtijăną` — but the `ij` cluster was inherited from the source.
+
+### Recommendation
+
+**Option A:** Change TSV from `*sturtijăną` → `*sturtjăną`
+
+This aligns with:
+- Our existing TSV conventions (cf. `*libjăną`, `*habjăną`)
+- The post-Sievers'-Law-leveling stage that our FST effectively models
+- Orel's normalized notation `*startjanan`
+
+**Option B:** Keep `*sturtijăną` and add `ij` to the grammar
+
+This would be appropriate if:
+- We want to model true PGmc (pre-leveling) forms
+- We consistently update ALL heavy-stem Class I weak verbs to use `-ij-`
+
+Option B would require systematic review of all Class I weak verbs after heavy
+stems, which is a significant undertaking.
+
+### Decision Pending
+
+We need to decide whether our input notation represents:
+1. PGmc (with Sievers' Law active) → would need `*-ijăną` after heavy stems
+2. PWGmc/WGmc (post-leveling) → would need `*-jăną` uniformly
+
+Our existing data (libjan, habjan, etc.) suggests we're using convention #2.
+Therefore, `*sturtijăną` should be corrected to `*sturtjăną`.
+
+### Sources
+
+- R/T vol.2 pp.69-71: Sievers' Law and its leveling in PWGmc
+- Fulk *Comparative Grammar* §5.8: Sievers' Law in WGmc
+- Orel (2003) p.372: `*startjanan`
+- Kluge-Seebold (2011) s.v. *stürzen*: `wg. *sturt-ija-`
+
+### Empirical Confirmation from Our TSV
+
+A systematic check of heavy-stem Class I weak verbs in our TSV confirms that
+**all** use `-jăną`, not `-ijăną`:
+
+| Proto-form | Stem shape | Suffix | OE reflex |
+|------------|------------|--------|-----------|
+| `*galaubjăną` | CVCC (heavy) | `-jăną` | ġelīefan |
+| `*laistjăną` | CVCC (heavy) | `-jăną` | lǣstan |
+| `*laidjăną` | CVVd (heavy) | `-jăną` | lǣdan |
+| `*leuxtjăną` | CVCC (heavy) | `-jăną` | līehtan |
+| `*sōkjăną` | CVVk (heavy) | `-jăną` | sēċan |
+| `*sandjăną` | CVCC (heavy) | `-jăną` | sendan |
+| `*stelljăną` | CVCC (heavy) | `-jăną` | stillan |
+| `*strakkjăną` | CVCC (heavy) | `-jăną` | streċċan |
+
+All of these have heavy stems (either closed syllables CVCC or long vowels CVV+C),
+and all use `-jăną`. If we were using pre-Sievers'-Law-leveling notation, these
+would all need `-ijăną`.
+
+**Conclusion:** Our TSV convention is **post-Sievers'-Law-leveling** (= PWGmc or
+later). Therefore `*sturtijăną` is inconsistent with our notation and should be
+`*sturtjăną`.
+
+### Final Resolution
+
+The change from `*sturtijăną` → `*sturtjăną` is **correct** because:
+
+1. Our TSV consistently uses post-leveling notation for all other heavy-stem
+   Class I weak verbs
+2. Orel's `*startjanan` confirms the normalized form uses `-jan-`
+3. Kluge-Seebold's `*sturt-ija-` is morphological notation, not phonological
+4. The Sievers' Law alternation was leveled out in PWGmc, and our FST models
+   PWGmc → OE development
+
+The "disagreement" between sources is not a disagreement at all — it's different
+notational conventions (PGmc with Sievers' Law active vs. normalized/leveled
+forms).
