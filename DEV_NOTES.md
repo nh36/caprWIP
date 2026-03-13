@@ -8209,3 +8209,38 @@ Our treatment is correct:
 The sources explicitly use these forms, and the phonological reasoning supports
 the distinction: `*baug-` has a diphthongal nucleus + consonant coda (heavy),
 while `*straw-` has a simple vowel nucleus + glide-consonant cluster (special case).
+
+---
+
+## TSV Fix: OE dōn 'do' (Long Vowel)
+
+**Date:** 2026-03-13  
+**Status:** FIXED
+
+### The Problem
+
+TSV row 1991 had:
+- COUNTERPART: `don` (short vowel)
+- FST output: `dōn` (long vowel)
+
+This was counted as a mismatch, but the FST was correct.
+
+### Source Analysis
+
+**Fulk (2018)** consistently writes `OE dōn` with long vowel:
+- §12.61: "OE dōn 'do' and its WGmc. cognates"
+- §12.9: "remarkable that the WGmc. simplex verb (OE dōn, OS dōn, duon, OHG tuon)"
+- Index: `dōn` listed with long vowel
+
+The OE verb 'do' has a long vowel throughout its history, from PGmc `*dōną` 
+(infinitive of an athematic verb) to OE `dōn`.
+
+### The Fix
+
+Changed TSV row 1991:
+- TOKENS: `d o n` → `d ō n`
+- COUNTERPART: `don` → `dōn`
+
+### Mismatch Count
+
+77 → 76 (improved by 1)
