@@ -7812,3 +7812,143 @@ The change from `*sturtijăną` → `*sturtjăną` is **correct** because:
 The "disagreement" between sources is not a disagreement at all — it's different
 notational conventions (PGmc with Sievers' Law active vs. normalized/leveled
 forms).
+
+---
+
+## DECISION UPDATE (2026-03-13): Adopting PGmc Input Notation
+
+### Decision Made
+
+After further consultation, we are adopting **PGmc** (Proto-Germanic) input
+notation, NOT PWGmc. This means:
+
+1. **Heavy-stem Class I weak verbs need `*-ijăną`**, not `*-jăną`
+2. The grammar must accept `*-ij-` clusters
+3. Sound change rules must handle the `*-ij- → *-j-` change that occurred in PWGmc
+
+### Technical Research: What Actually Happened in PWGmc?
+
+There are **two distinct phenomena** described in R/T vol.2:
+
+**1. Analogical Leveling of Stem-Vowel Alternation (pp.69-71)**
+
+The **indicative 2sg/3sg** forms had alternating stem vowels:
+- Light stems: `*-i- ~ *-ja-` (e.g., `*satisi, *satjaþi`)
+- Heavy stems: `*-ī- ~ *-ija-` (long `*-ī-` from Sievers' Law contraction)
+
+In PWGmc, the heavy-stem `*-ī-` was **analogically leveled** to short `*-i-`:
+> "The alternation *-ī- ~ *-ija-, on the other hand, was replaced by *-i- ~ *-ija-"
+> (R/T vol.2 p.70)
+
+This leveling was **analogical, not phonological**:
+> "Native learner reanalysis of the rules... seems at least as plausible a cause"
+> (R/T vol.2 p.71)
+
+**Important:** This leveling affected the **indicative forms** (2sg/3sg), NOT the
+infinitive. The infinitive suffix `*-ija-` remained unchanged.
+
+**2. Syncope of *-CijV- to *-CjV- (pp.156-157)**
+
+A **separate, regular sound change** occurred:
+> "the sequence *-CijV- was syncopated to *-CjV-"
+> (R/T vol.2 p.157)
+
+This syncope affected **infinitives and other forms**:
+
+> "PGmc *sōkijană 'to look for, to seek' (Goth. sōkjan, ON sækja) >
+> PWGmc *sōkijan > *sōkjan > OE sēċan"
+> (R/T vol.2 p.157)
+
+### Chronology of PWGmc Changes
+
+Critical question: When does `*-CijV- → *-CjV-` syncope occur relative to
+j-gemination?
+
+**Evidence from R/T vol.2 p.157:**
+
+> "the sequence *-CijV- was syncopated to *-CjV-; the syncope could not have
+> occurred earlier because after it occurred there would have been no model for
+> the northern WGmc remodelling in weak class II"
+
+This tells us the syncope occurred **AFTER** the class II remodeling used
+`*-ija-` as its model. The chronology must be:
+
+1. **PGmc:** Sievers' Law active
+   - Light stems: `*satjăną` (j directly after C)
+   - Heavy stems: `*sōkijăną` (i between C and j)
+
+2. **PWGmc Phase 1: j-gemination**
+   - Light stems: `*satjăną → *sattjăną` (C geminates before j)
+   - Heavy stems: `*sōkijăną` (BLOCKED — the i prevents C from being directly before j)
+   
+3. **PWGmc Phase 2: Class II remodeling** (using `*-ija-` as model)
+
+4. **PWGmc Phase 3: *-CijV- syncope**
+   - Heavy stems: `*sōkijăną → *sōkjăną` (syncope)
+   - Light stems: already `*-CCjăną`, syncope not applicable
+
+5. **Later:** Palatalization, other OE changes
+   - `*sōkjăną → OE sēċan`
+
+### Why Heavy Stems Don't Geminate
+
+The crucial insight: **j-gemination has the structural description `*Cj`** —
+a consonant DIRECTLY before j. In heavy-stem forms with Sievers' Law:
+
+- `*sōkijăną`: The sequence is `*k-i-j`, NOT `*k-j`
+- The `*i` intervenes between the consonant and `*j`
+- Therefore gemination cannot apply
+
+In light-stem forms:
+- `*satjăną`: The sequence IS `*t-j`
+- Gemination applies: `*t-j → *tt-j`
+
+### Implementation for the FST
+
+**Rule:** `SieversLawSyncope` (or `HeavyStemISyncope`)
+
+```foma
+# R/T vol.2 p.157: *-CijV- → *-CjV- (PWGmc)
+# This syncope removes the blocking *i after j-gemination has applied to light stems.
+# Must be ordered AFTER PWGmcJGemination.
+define SieversLawSyncope [
+    {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
+];
+```
+
+**Rule ordering:**
+1. `PWGmcJGemination` — geminates light stems
+2. `SieversLawSyncope` — removes blocking `*i` from heavy stems
+3. Palatalization rules — `*kj → *ċ`, etc.
+
+### Sources
+
+- R/T vol.2 pp.69-71: Sievers' Law and analogical leveling of stem-vowel alternation
+- R/T vol.2 pp.156-157: `*-CijV- → *-CjV-` syncope in PWGmc
+- Fulk (2018) *Comparative Grammar* §5.8: Sievers' Law in WGmc
+
+### Why This Is a Regular Sound Change (Not Analogical Leveling)
+
+R/T vol.2 p.157 explicitly calls this **syncope**, not leveling:
+
+> "the sequence *-CijV- was syncopated to *-CjV-"
+
+And describes it as affecting "every class I weak present with a heavy root
+syllable and all ja-stem, jan-stem, and jōn-stem nominals with heavy root
+syllables" (p.157) — i.e., exceptionless application characteristic of a
+phonological rule.
+
+The **analogical leveling** described on pp.69-71 is a **different phenomenon**
+affecting the indicative 2sg/3sg stem vowels (`*-ī- → *-i-`), not the infinitive
+suffix.
+
+### Summary
+
+| Phenomenon | Type | What changes | When |
+|-----------|------|--------------|------|
+| Stem-vowel leveling | Analogical | `*-ī- → *-i-` in 2sg/3sg | PWGmc |
+| *-CijV- syncope | Sound change | `*-ij- → *-j-` in infinitives | PWGmc, AFTER gemination |
+| j-gemination | Sound change | `*Cj → *CCj` after light stems | PWGmc |
+
+For our FST, we need to implement **syncope** (a regular sound change), placed
+AFTER j-gemination in the rule ordering.
