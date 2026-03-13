@@ -8928,6 +8928,149 @@ The tilde vs ogonek distinction would parallel the phonological difference:
 
 **This is the recommended approach.**
 
+### Question: Did Two Types of Nasalization Coexist Synchronically?
+
+This is an important phonological question. If primary and secondary nasalization
+were distinct at the same synchronic stage, that implies the language had two
+contrastive types of nasalized vowels — typologically unusual.
+
+#### Evidence from R/T
+
+R/T vol.2 §5.1.2 (p.142, lines ~8343-8360) directly addresses this:
+
+> "Stressed low vowels were nasalized when immediately followed by a nasal in
+> the northern WGmc dialects; unstressed *a was apparently nasalized when
+> immediately followed by a nasal in the syllable coda, but not when immediately
+> followed by an intervocalic nasal. **This must have amounted to more than
+> the automatic nasalization typical of vowels in contact with nasal consonants;
+> the subsequent development of these nasalized vowels shows that native
+> learners had reanalyzed their nasalization as distinctive, either underlying or
+> the output of a categorical phonological rule. They might have been prompted
+> to do so by the existence of non-alternating nasalized vowels before fricatives**
+> (see the preceding section and immediately below), since native learners tend
+> to project non-alternating sounds into underlying forms even when they are in
+> complementary distribution with other, similar sounds (see Ringe and Eska
+> 2013: 91-2)."
+
+This passage confirms:
+1. Secondary nasalization (contact nasalization before coda nasals) became PHONEMIC
+2. Native learners "reanalyzed their nasalization as distinctive"
+3. They were "prompted to do so by the existence of non-alternating nasalized vowels
+   before fricatives" — i.e., primary nasalization
+
+**Key insight:** The two nasalizations DID coexist. Primary nasalization (from
+lost nasals before fricatives) was already present and may have "prompted" the
+reanalysis of secondary nasalization as phonemic.
+
+#### Chronology of the Two Nasalizations
+
+R/T vol.2 p.141 (lines ~8305-8310):
+
+> "The rule resulting from this sound change should have been subphonemic until
+> **the loss of nasalization in the separate prehistories of the daughters**, but
+> the fact that many lexemes exhibited nasalized long vowels with no alternation
+> could have led some native learners to posit those vowels as underlying."
+
+This suggests:
+1. Primary nasalization eventually DENASALIZED (became oral long vowels)
+2. But before that happened, it influenced how secondary nasalization was analyzed
+3. By the time of written OE, both nasalization types had been lost — we only know
+   they existed because they fed later changes (rounding, non-fronting)
+
+#### Did They Contrast Phonemically?
+
+The question is whether primary and secondary nasalized vowels were contrastive
+or allophonic. R/T's analysis suggests they were:
+- **Complementary distribution:** Primary occurred before fricatives (nasal lost);
+  secondary occurred before retained nasals
+- **Same outcome:** Both blocked fronting (became rounded in stressed, stayed [a]
+  in unstressed)
+- **Possible merger:** Since both had the same phonological behavior, native learners
+  may have analyzed them as the same phoneme
+
+For our FST modeling purposes, the key point is: **both types blocked fronting**.
+Whether we call them distinct phonemes or allophones doesn't affect the outcome.
+
+#### Conclusion on Coexistence
+
+Yes, two types of nasalized vowels coexisted synchronically in pre-OE:
+1. **Primary nasalized vowels** (from lost nasal + fricative): long, no following nasal
+2. **Secondary nasalized vowels** (from contact with coda nasal): short, followed by nasal
+
+R/T explicitly state that the existence of primary nasalization may have prompted
+the reanalysis of secondary nasalization as phonemic. Eventually both were lost
+(denasalized), but their effects persist in OE:
+- Stressed nasalized vowels → rounded (ō)
+- Unstressed nasalized vowels → NOT fronted (stayed -an, not -en)
+
+### Citations for Full vs Reduced Vowel Merger
+
+The user requests explicit citations supporting the merger of `{*a}` and `{*ă}`
+when nasalized.
+
+#### R/T's Treatment of the Infinitive Vowel
+
+R/T vol.2 p.153 (lines ~9001-9008):
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was followed
+> by a nasal in the syllable coda (unstressed *a apparently did not occur in that
+> position). The most obvious examples are infinitives and participles, e.g.:
+>
+> PGmc *bindana 'to tie' (Goth. ga-bindan, ON binda) > PWGmc *bindan (OS bindan,
+> OHG bintan) > *bindan > OE bindan, OF binda"
+
+Note that R/T write `*bindana` with **full vowels** — they do not use breve notation.
+The scholarly literature does not generally distinguish "full" vs "reduced" `*a` in
+unstressed position; that is a notation we have introduced in our TSV/FST for
+implementation convenience.
+
+#### Campbell's Treatment
+
+Campbell (1959) §120 (lines ~3825-3840) discusses nasalization before fricatives:
+
+> "In Prim. Gmc. the combinations aŋx, iŋx, uŋx became āx, īx, ūx by loss of the
+> nasal consonant, and compensatory lengthening and nasalization of the vowel.
+> ī and ū were subsequently developed like original ī and ū, but while ā became
+> ō in Goth., North Gmc., OHG, and OS, it retained its nasalization, and ultimately
+> became ō in OE and OFris."
+
+Campbell does not discuss a distinction between "full" and "reduced" nasalized
+vowels. The nasalization applies to the vowel quality `*a`, regardless of stress
+or reduction.
+
+#### Hogg's Treatment
+
+Hogg (1992) p.120 (lines ~5855-5870) discusses unstressed vowel fronting:
+
+> "By First Fronting /a/ became /æ/ as in stressed syllables"
+
+This is the general rule for unstressed /a/. The infinitive `-an` is an exception
+precisely BECAUSE of nasalization — but Hogg does not distinguish "full" vs
+"reduced" `a` in this context.
+
+#### The Breve Notation is Our Implementation Choice
+
+The breve `ă` in our TSV/FST is a PRACTICAL notation for marking unstressed vowels
+that behave differently from stressed vowels. It does not reflect a distinction made
+in the scholarly literature.
+
+R/T's analysis (vol.2 p.153) is clear: "Unstressed *a was nasalized... only if it
+was followed by a nasal in the syllable coda." This applies to the vowel phoneme
+`*a` in unstressed position — there is no suggestion that a "reduced" variant would
+behave differently.
+
+#### Justification for the Merger
+
+Given the evidence:
+1. R/T, Campbell, and Hogg all discuss "unstressed *a" as a single category
+2. None distinguish "full unstressed a" from "reduced unstressed a"
+3. The nasalization conditioning is purely phonological (coda vs onset nasal)
+4. Both `{*a}` and `{*ă}` in our notation represent "unstressed a" in the relevant position
+
+Therefore, merging `{*a}` and `{*ă}` to `{*ã}` when nasalized is phonologically
+justified. The breve/non-breve distinction in our TSV reflects implementation
+conventions, not a phonological distinction that would survive nasalization.
+
 #### Summary of Symbol Design Decisions
 
 | Symbol | Meaning | Source | Nasal consonant | Use case |
@@ -8938,10 +9081,10 @@ The tilde vs ogonek distinction would parallel the phonological difference:
 | `{*ã}` | Secondary nasalized a | Contact with coda N | RETAINED | `*-aną → *-ãn` |
 
 The rule `[{*a} | {*ă}] → {*ã}` before coda nasal is a merger because:
-1. Both are phonetically back vowels
-2. The nasalization neutralizes the full/reduced distinction
-3. Both trigger A-restoration equally
-4. Both block fronting equally
+1. Both represent "unstressed *a" in the scholarly literature
+2. The nasalization conditioning (coda nasal) applies equally to both
+3. Both are phonetically back vowels → both trigger A-restoration
+4. Both get nasalized → both block fronting
 
 #### Status: READY FOR IMPLEMENTATION
 
