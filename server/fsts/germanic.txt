@@ -293,6 +293,8 @@ define pgrmWeakTailVowel [
     a:{*a} n:{*n} ă:{*ă} z:{*z} |
     ă:{*ă} n:{*n} ē:{*ē} |
     j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
+    # Sievers' Law: heavy-stem Class I weak infinitive *-ijăną (R/T vol.2 pp.69-70)
+    i:{*i} j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} r:{*r} ă:{*ă} z:{*z} |
     a:{*a} r:{*r} a:{*a} s:{*s} |
     a:{*a} s:{*s} |
