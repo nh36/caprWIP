@@ -8244,3 +8244,315 @@ Changed TSV row 1991:
 ### Mismatch Count
 
 77 → 76 (improved by 1)
+
+---
+
+## Analysis: Strong Verb Infinitive `-an` vs Participle `-en` (2026-03-13)
+
+### The Problem
+
+- FST: `*bakaną` → `bacen` (wrong)
+- Expected: `*bakaną` → `bacan` (correct per R/T)
+
+The `-an-` in strong verb infinitives is being fronted to `-en-`.
+
+### Tracing the Rules
+
+1. Input: `bakaną` = `b a k a n ą`
+2. Grammar parses: `{*b} {*a} {*k} {*a} {*n} {*ą}`
+3. `OEUnstressedAFronting` matches the second `{*a}`:
+   - After: vocalic + consonants (`baka` → vowel + k + vowel)
+   - Before: consonants (`n`)
+   - Result: `{*a}` → `{*æ}`
+4. `OEWeakTailReduction3` converts `{*æ}` → `{*e}` in unstressed position
+5. Final output: `bacen` instead of `bacan`
+
+### What R/T Says
+
+R/T vol.2 shows:
+- `*bakan → OE bacan` (infinitive preserves `-an`)
+- Participle `*funðanăz → *funden` (participle fronts to `-en`)
+
+So the fronting rule is CORRECT for participles but INCORRECT for infinitives.
+
+### Key Question: What distinguishes them phonologically?
+
+| Form | Structure | Ending | Result |
+|------|-----------|--------|--------|
+| Infinitive | `*bak-an-ą` | final `*ą` | `-an` (no fronting) |
+| Participle | `*funð-an-ăz` | medial `*ă`, final `*z` | `-en` (fronts) |
+
+Hypothesis: The final `*ą` (nasal vowel) blocks fronting of the preceding `-an-`.
+
+### Checking the Grammar Definition
+
+Line 292: `a:{*a} n:{*n} ą:{*ą} |`
+
+The strong verb infinitive uses `*a` (full vowel) in `-an-`, not `*ă` (breve).
+
+### The Rule That's Too Broad
+
+```foma
+define OEUnstressedAFronting [
+    {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant|EnglishPalatalConsonant]+ 
+                    _ [EnglishStarConsonant|EnglishPalatalConsonant]
+];
+```
+
+This rule fronts `*a` in ANY unstressed position before consonants. But it should
+NOT apply when the `*a` is in an infinitive `-anǫ` ending.
+
+### Possible Fixes
+
+**Option A: Modify the rule to exclude infinitive context**
+
+Add a negative lookahead: don't front if the pattern is `*a n ą` (infinitive ending).
+
+**Option B: Change the grammar to use `*ă` for infinitive `-an-`**
+
+Line 292 would become: `ă:{*ă} n:{*n} ą:{*ą}`
+
+But this requires changing all TSV protoforms from `-aną` to `-ăną`.
+
+**Option C: Add a specific exception for word-final `-anǫ`**
+
+The rule could check: don't front `*a` if followed by `*n *ą` at word boundary.
+
+### Research Findings (2026-03-13)
+
+#### R/T's Key Statement (vol.2, p.153)
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was
+> followed by a nasal in the **syllable coda** (unstressed *a apparently did
+> not occur in that position)."
+
+With examples:
+- **Infinitive**: PGmc `*bindana` > PWGmc `*bindan` > OE `bindan`
+- **Participle**: PGmc `*bindand-` > PWGmc `*bindandi` > OE `bindende`
+
+#### The Phonological Distinction
+
+| Form | PWGmc | Syllable Structure | Nasalization | Fronting |
+|------|-------|-------------------|--------------|----------|
+| Infinitive | `*bind.an` | `-a-` before coda `n#` | YES | NO → `-an` |
+| Participle | `*bind.a.năz` | `-a-` before onset `n-` | NO | YES → `-en` |
+
+The key is **syllable structure**:
+- In infinitive `-an#`, the `n` is in the **coda** (word-final)
+- In participle `-anăz`, the `n` is in the **onset** of the following syllable
+
+When `*a` is followed by a nasal in the **coda**, it becomes nasalized and
+blocks fronting. When followed by a nasal in an **onset**, no nasalization
+occurs and fronting proceeds normally.
+
+#### Implications for FST Design
+
+The current `OEUnstressedAFronting` rule is:
+```foma
+{*a} -> {*æ} || Vocalic Consonants+ _ Consonants
+```
+
+This fires on ANY `*a` followed by consonants. But it should NOT fire when
+the `*a` is immediately followed by a word-final nasal (i.e., when `n` is in
+the coda, not onset).
+
+The structural difference:
+- Infinitive: `...a.n#` (n in coda) → no fronting
+- Participle: `...a.n.ăz` (n in onset of next syllable) → fronting
+
+#### TSV Encoding Observations
+
+Looking at the TSV data:
+- Dutch/English/German rows use `*bakăną` (breve `ă`)
+- OE row uses `*bakaną` (full `a`)
+- Notes say "Proto encoding: -aną (full vowel) for A-restoration"
+
+This encoding is problematic because:
+1. It makes OE rows inconsistent with other daughter rows
+2. The "A-restoration" rationale is confused — A-restoration applies to the
+   ROOT vowel, not the suffix vowel
+3. Using full `*a` causes the suffix to be fronted by `OEUnstressedAFronting`
+
+#### Possible Fixes
+
+**Option A: Modify OEUnstressedAFronting to exclude word-final context**
+
+Add exception: don't front `*a` when followed by `{*n} .#.` (word-final nasal).
+
+```foma
+define OEUnstressedAFronting [
+    {*a} -> {*æ} || Vocalic Consonants+ _ Consonants
+    - Vocalic Consonants+ _ {*n} .#.
+];
+```
+
+Pros: Models the phonological conditioning directly (coda vs onset)
+Cons: May need refinement for other word-final patterns
+
+**Option B: Change TSV to use `*-ăną` (breve) for all infinitives**
+
+Make OE rows match other daughter languages. The breve `*ă` would skip
+`OEUnstressedAFronting` (which targets `{*a}` only).
+
+Pros: Makes TSV consistent across languages
+Cons: Requires fixing A-restoration to trigger on `{*ă}` too — BUT this
+would be encoding grammatical (infinitive) info into a phonological rule
+
+**Option C: Use syllable markers in the representation**
+
+Explicitly mark syllable boundaries in the proto representation, then
+condition fronting on open syllable only.
+
+Pros: Most phonologically accurate
+Cons: Major overhaul of the entire system; possibly overkill
+
+**Option D: Keep nasal vowel `*ą` until later**
+
+Currently `OEWeakTailNasalLoss` deletes `*ą` before `OEWeakTailReduction`
+runs. If we moved nasal loss AFTER fronting, the presence of `*ą` would
+indicate that the preceding nasal is in the coda (not onset).
+
+```
+Chain before: *bakaną → (nasal loss) → *bakan → (fronting) → *bækan → *bæcen
+Chain after:  *bakaną → (fronting blocked by ą context) → *bakaną → (nasal loss) → *bacan
+```
+
+Pros: Uses existing phonological information (nasal vowel presence)
+Cons: May affect other rules that depend on current ordering
+
+### Clarification: Why Option B ≠ Option C (2026-03-13)
+
+User raised: "Isn't Option C (syllable markers) effectively the same as Option B
+(use breve ă), since both mark the vowel as unaccented?"
+
+**Answer: No, they encode different information.**
+
+- **Option B (breve ă)**: Marks the VOWEL as reduced/unaccented. The breve is a
+  property of the vowel itself, saying "this vowel is weak."
+
+- **Option C (syllable markers)**: Marks the SYLLABLE BOUNDARY, showing whether
+  the following consonant is in coda vs onset. This is structural information
+  about where syllable boundaries fall, not a property of the vowel.
+
+The R/T conditioning is about **syllable structure**, not vowel quality:
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was
+> followed by a nasal **in the syllable coda**"
+
+The conditioning factor is the POSITION of the following nasal (coda vs onset),
+not whether the vowel is "reduced."
+
+Using breve `*ă` to mean "don't front this one" would be encoding grammatical
+information (infinitive vs participle) into a vowel symbol, rather than modeling
+the actual phonological conditioning (syllable structure).
+
+**However**, in our FST, we DON'T explicitly model syllable structure. We use
+linear symbol sequences. So we need a way to capture the phonological
+conditioning using the information we DO have.
+
+### Further Research (2026-03-13)
+
+#### What R/T Actually Says
+
+R/T p.126 and p.233 explicitly shows: `*bakan > OE bacan`
+
+So for the infinitive:
+1. A-restoration DID apply (root `*æ` → `*a`) — showing suffix had a back vowel
+2. Suffix `-an` did NOT front — showing the `*a` before coda nasal was protected
+
+The infinitive suffix vowel must be:
+- Phonetically BACK (to trigger A-restoration)
+- Protected from fronting (because followed by coda nasal)
+
+#### The Two Separate Sound Changes
+
+1. **A-restoration** (R/T §6.3.1): "Stressed *æ followed by C(C) + back vowel → *a"
+   - Triggered by ANY back vowel in the following syllable
+   - R/T gives examples like `gladum` where inflectional endings trigger it
+
+2. **Unstressed vowel fronting** (R/T p.153): "*a → *æ unless followed by coda nasal"
+   - Blocked only when the nasal is in the coda (word-final)
+   - Infinitive `-an#` has coda nasal → no fronting
+   - Participle `-anVz` has onset nasal → fronting occurs
+
+#### The Core Question
+
+Is the reduced vowel `*ă` phonetically a back vowel?
+
+**Answer: YES.** The breve marks REDUCTION (shortening, weakening), not 
+frontness. A reduced `*ă` is still a low back vowel, just unstressed/shortened.
+
+The phonetic realization: `[ɐ]` or `[ə]` — still central-to-back, not front.
+
+#### Why Adding `{*ă}` to A-Restoration Trigger is NOT Grammatically Conditioned
+
+The objection was: "adding `{*ă}` would encode grammatical (infinitive) info."
+
+But this is WRONG. Consider:
+
+- `{*a}` = full low back vowel
+- `{*ă}` = reduced low back vowel
+
+Both are phonetically BACK. The difference is stress/prominence, not frontness.
+
+A-restoration is triggered by BACK vowels. Both `{*a}` and `{*ă}` are back.
+Therefore, BOTH should trigger A-restoration. This is purely phonological.
+
+What IS grammatically conditioned would be saying "don't front infinitives."
+But we're NOT doing that. We're saying:
+
+1. `{*ă}` is a back vowel → triggers A-restoration (phonological)
+2. `{*ă}` is not `{*a}` → skips `OEUnstressedAFronting` which targets `{*a}` (already working)
+3. The reason infinitive has `{*ă}` not `{*a}` is the breve encoding in TSV
+
+#### The Real Question: Should the Infinitive Suffix Have Breve?
+
+Looking at the TSV:
+- Dutch/German/English: `*bakăną` (breve) — 65 forms use breve
+- OE (current): `*bakaną` (full) — only ~5 forms use full vowel
+
+The OE rows are INCONSISTENT with the other languages. The note says
+"Proto encoding: -aną (full vowel) for A-restoration" — but this reasoning
+was WRONG. The TSV should use breve `*ă` like the other languages.
+
+The original encoder thought full `*a` was needed for A-restoration. But 
+reduced `*ă` IS a back vowel and SHOULD trigger A-restoration.
+
+#### Recommended Fix
+
+**Step 1: Fix the FST**
+Add `{*ă}` to A-restoration trigger vowels:
+```foma
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ} | {*ă}];
+```
+
+This is phonologically correct: reduced back vowel IS a back vowel.
+
+**Step 2: Fix the TSV**
+Change OE strong verb infinitives from `-aną` to `-ăną`:
+- `*bakaną` → `*bakăną`
+- `*grabaną` → `*grabăną`
+- etc.
+
+This makes OE rows consistent with other languages.
+
+**Result:**
+- `*bakăną` → A-restoration triggers (ă is back) → root stays `a`
+- `*bakăną` → Fronting rule skips `ă` → suffix stays `an`
+- Output: `bacan` ✓
+
+#### Why This is NOT Grammatically Conditioned
+
+The fix does NOT encode "infinitive" anywhere:
+
+1. `{*ă}` triggers A-restoration because it's phonetically back
+2. `{*ă}` skips fronting because the rule targets `{*a}` only
+3. The TSV uses `{*ă}` for infinitives because that's the correct proto-form
+
+The grammar distinction (infinitive vs participle) is encoded in the 
+PROTO-FORM ITSELF:
+- Infinitive: `*-ăną` (with reduced vowel, word-final nasal)
+- Participle: `*-anăz` (with full vowel, non-final nasal)
+
+This is how PGmc morphology worked — different suffixes for different forms.
+We're modeling the PROTOFORMS correctly, not adding special rules.
