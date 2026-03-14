@@ -9565,3 +9565,138 @@ Input            → Output   Expected   Match?
 The FST correctly models R/T's syllable-structure-based analysis by encoding
 the distinction in the input forms (final `*ą` vs `*ăz`) and applying a rule
 that matches only the infinitive pattern.
+
+
+## Critical Analysis: Does Our FST Actually Model R/T's Phonology? (2026-03-15)
+
+### The Problem
+
+The user raised a critical concern: R/T's analysis is based on **syllable structure**
+(whether the nasal is in coda or onset position), but our FST checks for a 
+**symbol sequence** (`{*n} {*ą}`). These are not the same thing.
+
+**R/T's analysis (syllable-based):**
+- Infinitive `*bind.an#` → `n` is in the **coda** (word-final) → nasalization
+- Participle `*bind.an.az` → `n` is in the **onset** of `-az` syllable → no nasalization
+
+**Our FST approach (symbol-based):**
+- Rule: `[{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.`
+- Matches presence of infinitive marker `*ą`, NOT syllable structure
+
+### The Chronology Problem
+
+There is a deeper issue with the chronology. Consider when our rule runs:
+
+**At the point `OESecondaryNasalization` applies (before apocope):**
+- Infinitive `*bakaną` syllabifies as `*ba.ka.ną`
+- The `n` is in the **onset** of the final syllable `*-ną`, NOT the coda!
+
+If nasalization is truly conditioned on syllable structure, then at this stage
+the infinitive should NOT nasalize either, because the `n` is not in coda position
+until AFTER the final `*ą` apocopates.
+
+**After apocope:**
+- Infinitive `*bakan` → now `n` is truly in coda position
+- But at this stage, both infinitive and participle end in `-an#`!
+
+This creates a paradox: 
+1. If nasalization happens before apocope, the syllable structure doesn't yet show coda `n`
+2. If nasalization happens after apocope, we can't distinguish infinitive from participle
+
+### How Our FST Resolves the Paradox
+
+Our FST uses the morphological marker `*ą` as a **proxy** for what will later
+become a coda nasal. The reasoning is:
+
+1. The infinitive morpheme is `*-aną` with final nasalized vowel
+2. This nasalized vowel will apocopate, leaving `*-an#` with coda nasal
+3. We use the PRESENCE of `*ą` to identify forms that will have coda nasals
+4. We apply nasalization to the suffix vowel BEFORE apocope, while we can still distinguish
+
+This is phonologically **anticipatory** — we're marking a vowel based on what
+its environment will be, not what it currently is.
+
+### Is This Valid?
+
+**Arguments FOR the approach:**
+
+1. **It produces correct outputs:** Infinitives get `-an`, participles get `-en`
+
+2. **The information is recoverable:** The distinction between infinitive and
+   participle IS present in the input forms; we're just accessing it before
+   the distinguishing feature (final `*ą`) is lost
+
+3. **Morphological conditioning is real:** R/T p.142 notes that "native learners
+   had reanalyzed their nasalization as distinctive... prompted to do so by the
+   existence of non-alternating nasalized vowels." The morphological structure
+   may have played a role in preserving the distinction.
+
+4. **Cross-linguistic precedent:** Many sound changes are morphologically
+   conditioned or show morpheme-structure effects that cannot be reduced to
+   pure phonological environment.
+
+**Arguments AGAINST the approach:**
+
+1. **Not what R/T describes:** R/T explicitly frames this as a syllable-structure
+   phenomenon. Our rule doesn't check syllable structure at all.
+
+2. **Chronological incoherence:** If the rule fires before apocope, we're
+   conditioning on a FUTURE syllable structure. Real sound changes can't
+   look into the future.
+
+3. **Alternative analysis possible:** Perhaps nasalization happened AFTER
+   apocope, and the distinction was preserved by other means (morphological
+   identity, analogical restoration, etc.).
+
+### What the Sources Actually Say About Chronology
+
+**R/T vol.2 p.142:**
+> "Unstressed *a was apparently nasalized when immediately followed by a nasal
+> in the syllable coda, but not when immediately followed by an intervocalic
+> nasal."
+
+This describes the **result** (coda vs onset), not the **mechanism**. R/T does
+not specify exactly when nasalization occurred relative to apocope.
+
+**R/T vol.2 chronology diagram (p.304):**
+The diagram shows `a>& (not /__w[-front])` with `(Ingvaeonic developments of
+unstr. vowels roughly here)` — this places fronting (and by implication the
+nasalization that blocks it) at the Ingvaeonic stage, before the full development
+of individual OE sound changes.
+
+The diagram does NOT explicitly place nasalization relative to apocope.
+
+**Campbell §116:** Does not address chronology.
+
+**Hogg §3.3.2:** Discusses syllable structure but not chronology of nasalization.
+
+### Conclusion
+
+Our FST approach is a **pragmatic workaround** that uses morphological markers
+to achieve the correct phonological outcome. It is NOT a direct model of R/T's
+syllable-structure analysis.
+
+**Honest assessment:**
+- ✓ Produces correct outputs
+- ✓ Exploits information present in the input
+- ✗ Does not model actual syllable structure
+- ✗ Chronologically anticipatory (conditions on future environment)
+- ? May or may not reflect actual historical mechanism
+
+**Possible improvements:**
+
+1. **Explicit syllable markers:** If we added syllable boundary markers (`.`)
+   to inputs, we could write rules that actually check coda vs onset position.
+   This would be more phonologically accurate but would require major TSV changes.
+
+2. **Post-apocope rule with morphological diacritics:** Mark infinitives with
+   a feature that survives apocope, then apply nasalization conditioning on
+   that feature. This would be more honest about the morphological nature of
+   the conditioning.
+
+3. **Accept the pragmatic solution:** Document that the rule is a workaround
+   and produces correct outputs even if it doesn't model the phonology exactly.
+
+**Current decision:** We accept option (3) for now. The rule works, and we
+document its limitations. If future work requires more accurate syllable-structure
+modeling, we can revisit the design.
