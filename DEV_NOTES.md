@@ -9114,3 +9114,67 @@ This approach solves the problem correctly:
 
 **Decision: Use `{*ã}` (tilde) for secondary nasalization** — distinct from
 primary `{*ą}` (ogonek), phonologically accurate merger of full/reduced.
+
+### IMPLEMENTATION: Option A — Reusing {*ą} (2026-03-14)
+
+Based on user feedback that Option B ({*ã}) overcomplicates things since there was
+only ONE phonemic category of nasalized vowels, we implemented Option A: reusing
+the existing {*ą} symbol for secondary nasalization.
+
+#### Changes Made
+
+**1. OESecondaryNasalization rule added (lines ~1576-1586):**
+```foma
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+];
+```
+This nasalizes unstressed *a/*ă before word-final nasal, matching R/T's description.
+
+**2. OEWeakTailReduction1 modified (lines ~1593-1600):**
+```foma
+define OEWeakTailReduction1 [
+    {*ă} -> {*a},
+    {*ą} -> {*a} || _ [{*n} | {*m}],  # NEW: denasalize before nasal to *a
+    {*ą} -> {*ɔ̆}                       # Primary nasalization → rounded
+];
+```
+The key insight: secondary nasalized vowels (before retained nasal) denasalize
+to plain *a, NOT to *ɔ̆. Primary nasalized vowels (no following nasal) become *ɔ̆.
+
+**3. OEWeakTailReduction composition updated:**
+```foma
+define OEWeakTailReduction OESecondaryNasalization .o. OEUnstressedAFronting .o. ...
+```
+
+#### Results
+
+**Mismatch count: 78 → 72 (6 fewer mismatches)**
+
+Fixed forms (strong verb infinitives):
+- `*bakaną` → `bacan` ✓ (was `bacen`)
+- `*grafaną` → `grafan` ✓ (was `græfen`) 
+- `*wadaną` → `wadan` ✓ (was `wæden`)
+- `*wakaną` → `wacan` ✓ (was `wæcen`)
+- `*þwahaną` → `þwēan` ✓ (was `þwæhan`)
+- `*swillaną` → `swillan` ✓ (was `swillen`) [if present]
+
+No regressions detected.
+
+#### Why This Works
+
+The derivation for `*bakaną`:
+1. Input: `{*b}{*a}{*k}{*a}{*n}{*ą}`
+2. OESecondaryNasalization: `{*b}{*a}{*k}{*ą}{*n}{*ą}` (penultimate *a → *ą)
+3. OEUnstressedAFronting: skips {*ą} (only targets {*a})
+4. OEWeakTailNasalLoss: `{*b}{*a}{*k}{*ą}{*n}` (final -ną → -n)
+5. OEWeakTailReduction1: `{*b}{*a}{*k}{*a}{*n}` ({*ą} before {*n} → {*a})
+6. A-restoration sees back vowel {*a} in trigger position → keeps root {*a}
+7. Output: `bacan` ✓
+
+Compare participle `*bakanaz`:
+1. Input: `{*b}{*a}{*k}{*a}{*n}{*a}{*z}`
+2. OESecondaryNasalization: no change (N not word-final, in onset of `-az`)
+3. OEUnstressedAFronting: `{*b}{*a}{*k}{*æ}{*n}{*æ}{*z}` (both unstressed *a → *æ)
+4. Continues to `bæcen` ✓
+
