@@ -1,23 +1,23 @@
-Total mismatches: 78
+Total mismatches: 65
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      4
+  TSV/data fixes needed:      3
   Documented exceptions:       4
-  Phonology (core buckets):    21
-  Phonology (other buckets):   49
+  Phonology (core buckets):    16
+  Phonology (other buckets):   42
 
 === CORE BUCKETS ===
-  i_umlaut_missing_true: 2
+  i_umlaut_missing_true: 1
   fronting_missing__afb: 1
   breaking_missing__expected_ea_got_a: 1
-  breaking_missing__expected_eo: 3
+  breaking_missing__expected_eo: 2
   breaking_missing__expected_eo_got_e: 3
-  long_vowel_missing: 5
-  no_output: 6
+  long_vowel_missing: 4
+  no_output: 2
+  palatalization_missing: 2
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
-  length_extra_other: 2
   palatal_marker_variant: 1
   syncopation_missing: 2
   gemination_extra: 1
@@ -26,21 +26,19 @@ Total mismatches: 78
   breaking_extra__eo_for_e: 1
   breaking_extra__eo_for_high: 3
   breaking_extra__ie_for_e: 1
-  breaking_extra__ie_for_i: 2
+  breaking_extra__ie_for_i: 1
   breaking_extra__wrong_form: 2
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
 --- back_expected_front_out sub-buckets ---
-  back_expected_front_out__other: 2
+  back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__stressed_vowel: 6
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
-  vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
-  final_vowel_missing__morph_form_mismatch: 1
   final_vowel_missing__other: 3
   final_vowel_missing__weak_noun_like: 5
 --- final_n_missing sub-buckets ---
@@ -53,14 +51,11 @@ Total mismatches: 78
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
-  cons_mismatch__þ_vs_d__cluster: 1
-  cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
 
-i_umlaut_missing_true (2):
-  *flaiskăz -> flāsc (expected flǣsċ)
+i_umlaut_missing_true (1):
   *sai -> sā (expected sǣ)
 
 fronting_missing__afb (1):
@@ -69,29 +64,28 @@ fronting_missing__afb (1):
 breaking_missing__expected_ea_got_a (1):
   *skaiθiz -> sċǣþ (expected sċēaþ)
 
-breaking_missing__expected_eo (3):
-  *brustz -> burst (expected brēost)
+breaking_missing__expected_eo (2):
   *juką -> ġoc (expected ġeoc)
-  *jugunθiz -> ġugyþe (expected ġeoguþ)
+  *jugunθiz -> ġugȳþ (expected ġeoguþ)
 
 breaking_missing__expected_eo_got_e (3):
   *fedwōrez -> fedwore (expected fēower)
   *xemenăz -> hemen (expected heofon)
   *weslon -> weslon (expected weosule)
 
-long_vowel_missing (5):
-  *nadrō -> næder (expected nǣdre)
+long_vowel_missing (4):
   *bō -> bu (expected bā]] [[þā)
   *xawwją -> heow (expected hīeġ)
   *mizdō -> meord (expected mēd)
   *texun -> teoon (expected tīen)
 
-no_output (6):
-  *funxwstiz -> +? (expected fȳst)
-  *libēþi -> +? (expected lifeþ)
+no_output (2):
   *regna-bugô -> +? (expected reġnboga)
-  *sturtijăną -> +? (expected styrtan)
   *wira-aldiz -> +? (expected weorold)
+
+palatalization_missing (2):
+  *xunăgą -> hunag (expected huniġ)
+  *wīθijăz -> wīþ (expected wīþiġ)
 
 final_vowel_extra (6):
   *laimōn -> lāme (expected lām)
@@ -99,10 +93,6 @@ final_vowel_extra (6):
   *saiwălō -> sāwalu (expected sāwol)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
-
-length_extra_other (2):
-  *dōną -> dōn (expected don)
-  *finþăną -> fīþan (expected findan)
 
 palatal_marker_variant (1):
   *skūflō -> sċūfl (expected scofl)
@@ -128,19 +118,17 @@ breaking_extra__eo_for_high (3):
 breaking_extra__ie_for_e (1):
   *raukiz -> rīeċ (expected rēc)
 
-breaking_extra__ie_for_i (2):
-  *geftiz -> ġieft (expected ġift)
+breaking_extra__ie_for_i (1):
   *θrejez -> þrīe (expected þrī)
 
 breaking_extra__wrong_form (2):
   *xlaxjăną -> hliehan (expected hlæhhan)
-  *skellinăz -> sċiellin (expected sċilling)
+  *skellinăz -> sċiellen (expected sċilling)
 
 a_restoration_needed (1):
   *nablô -> næfla (expected nafola)
 
-back_expected_front_out__other (2):
-  *kwiθuz -> cwiþu (expected cudu)
+back_expected_front_out__other (1):
   *swestēr -> swester (expected swustor)
 
 vowel_quality__stressed_vowel (6):
@@ -162,12 +150,6 @@ vowel_quality__u_o_alternation (1):
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
 
-vowel_quality__unstressed_vowel (1):
-  *xarbistuz -> hierfist (expected hierfest)
-
-final_vowel_missing__morph_form_mismatch (1):
-  *deljăz -> dill (expected dile)
-
 final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)
   *labbăz -> læbb (expected læppa)
@@ -184,7 +166,7 @@ final_n_missing__expected_en (1):
   *lungō -> lung (expected lungen)
 
 cons_mismatch__c_vs_ċ__cluster (1):
-  *strakkjăną -> strecċan (expected streċċan)
+  *strakkijăną -> strecċan (expected streċċan)
 
 cons_mismatch__f_vs_b__intervocalic (1):
   *xabēną -> hafon (expected habban)
@@ -201,12 +183,6 @@ cons_mismatch__h_vs_m__cluster (1):
 
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
-
-cons_mismatch__þ_vs_d__cluster (1):
-  *nēθlō -> nǣþl (expected nǣdl)
-
-cons_mismatch__þ_vs_d__intervocalic (1):
-  *xlaθaną -> hlaþan (expected hladan)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
