@@ -235,6 +235,7 @@ define pgrmCodaComplex [
     θ:{*θ} l:{*l} |
     θ:{*θ} r:{*r} |
     θ:{*θ} z:{*z} |
+    ð:{*ð} l:{*l} |
     k:{*k} k:{*k} j:{*j} |
     l:{*l} d:{*d} r:{*r} |
     l:{*l} g:{*g} w:{*w} |

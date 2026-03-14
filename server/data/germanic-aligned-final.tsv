@@ -610,7 +610,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 537	k n ɔ pf	*knuppăz	k n ɔ pf ( - - )	knɔp͡f	Knopf	147	German				knob	*knuppăz	140
 405	l aː d ə	*laθōjăną	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjăną	141
 404	l eɪ d	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjăną	141
-2088	h l a d a n	*xlaθaną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaθaną > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			lade	*xlaθaną	141
+2088	h l a d a n	*xlaðaną	l eɪ d ( - ) - - - ( - - )	leɪd	hladan	111	Old_English	Wiktionary: PGmc *hlaðaną (Verner) > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1			lade	*xlaðaną	141
 403	l aː d ə n	*laθōjăną	l aː d ( - ) - ə n ( - - )	laːdən	laden	111	German				lade	*laθōjăną	141
 1355	l ɑ n t	*landą	l ɑ n t ( - - )	lɑnt	land	371	Dutch				land	*landą	142
 1354	l æ n d	*landą	l æ n d ( - - )	lænd	land	371	English				land	*landą	142
@@ -797,7 +797,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 481	n oː t	*naudiz	n oː t ( - - )	noːt	Not	132	German				need	*naudiz	183
 126	n aː l t	*nēθlō	n aː - - l ( t )	naːlt	naald	35	Dutch				needle	*nēθlō	184
 125	n iː d ə l	*nēθlō	n iː d ə l ( - )	niːdḷ	needle	35	English				needle	*nēθlō	184
-2136	n ǣ d l	*nēθlō	n iː d ə l ( - )	niːdḷ	nǣdl	35	Old_English	R/T p.435: PGmc *nēθlō/*nēdlō has Verner's alternation; OE nǣdl reflects *d variant			needle	*nēθlō	184
+2136	n ǣ d l	*nēðlō	n iː d ə l ( - )	niːdḷ	nǣdl	35	Old_English	R/T p.435: PGmc *nēdlō has Verner's alternation; OE nǣdl reflects *d variant			needle	*nēðlō	184
 124	n aː d ə l	*nēθlō	n aː d ə l ( - )	naːdəl	Nadel	35	German				needle	*nēθlō	184
 318	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	Dutch				nest	*nistą	185
 317	n ɛ s t	*nistą	n ɛ s t ( - - )	nɛst	nest	88	English				nest	*nistą	185
