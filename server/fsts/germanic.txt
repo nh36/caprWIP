@@ -1578,12 +1578,20 @@ define OEPrefixAReduction [
 # SECONDARY NASALIZATION (R/T vol.2 §5.1.2, p.153):
 # "Unstressed *a was nasalized, and therefore not fronted, only if it was
 # followed by a nasal in the syllable coda."
-# This converts {*a} and {*ă} to {*ą} before word-final nasal, blocking fronting.
+#
+# FIXED 2026-03-13: The original rule context was `_ {*n} .#.` which matched
+# both infinitives AND participles AFTER apocope had deleted final vowels.
+# This incorrectly nasalized participle -an- suffix, blocking fronting.
+#
+# The corrected rule runs BEFORE apocope, when final vowels are still present:
+#   - Infinitive *bakaną: matches `*a*n*ą.#.` → nasalize → bacan ✓
+#   - Participle *bakanăz: has `*a*n*ă*z.#.` → no match → fronts to -en ✓
+#
 # Examples:
-#   Infinitive *bakaną: *bak.a.ną → *bak.ą.ną → bacan (NOT *bacen)
-#   Participle *bakanaz: *bak.a.naz → no nasalization (N in onset) → bæcen
+#   Infinitive *bakaną: *bak-a-ną → *bak-ą-ną (nasalized) → bacan
+#   Participle *fundanăz: *fund-an-ăz → no match → *fund-æn-ăz → funden
 define OESecondaryNasalization [
-    [{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+    [{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.
 ];
 
 define OEUnstressedAFronting [
@@ -1609,7 +1617,10 @@ define OEWeakTailReduction2 [
 define OEWeakTailReduction3 [
     {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
-define OEWeakTailReduction OESecondaryNasalization .o. OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
+# NOTE: OESecondaryNasalization removed from here and moved to main pipeline
+# before OEFinalSchwaApocope. It must run while final vowels are still present
+# to distinguish infinitive *-anąˈ from participle *-anăz. See lines 1580-1597.
+define OEWeakTailReduction OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
@@ -2019,6 +2030,13 @@ define EnglishProtoToOE (
     # AFTER A-restoration, not before. A-restoration needs to see the weak-tail
     # endings (like *-ăz, *-ą) to determine whether to apply. Historical chronology
     # per Ringe/Taylor: §6.3 Retraction (early) → §6.8 Apocope (later).
+    #
+    # OESecondaryNasalization must run BEFORE apocope (2026-03-13 fix):
+    # - Rule context is `_ {*n} {*ą} .#.` to match only infinitive *-anąˈ
+    # - At this point, infinitive has *-anąˈ but participle has *-anăz
+    # - After apocope, both become *-an, making them indistinguishable
+    # See DEV_NOTES.md "OESecondaryNasalization Bug — Participle Fronting Failure"
+    .o. OESecondaryNasalization
     .o. OEFinalSchwaApocope
     # PWGmc j-gemination is historically a PWGmc change (R/T §3.1.2), but is
     # placed here in the pipeline because it must see *j tokens after schwa

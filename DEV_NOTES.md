@@ -9179,6 +9179,102 @@ Compare participle `*bakanaz`:
 4. Continues to `bæcen` ✓
 
 
+## OESecondaryNasalization Bug — Participle Fronting Failure (2026-03-14)
+
+### Symptom
+
+The FST produces `fundan` instead of `funden` for participle `*funðanăz`. The medial
+`*a` should front to `*æ → *e`, but it remains `*a`.
+
+### Root Cause Analysis
+
+Through systematic tracing, we discovered that `OESecondaryNasalization` is incorrectly
+nasalizing BOTH infinitives AND participles, when it should only nasalize infinitives.
+
+#### The Bug
+
+The current rule (line 1586) is:
+```foma
+[{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+```
+
+This matches `*a/*ă` when followed by `*n/*m` at word boundary (`.#.`).
+
+**Problem**: By the time `OESecondaryNasalization` runs (as part of `OEWeakTailReduction`
+at pipeline line 2057), final vowels have already been deleted:
+- `OEFinalSchwaApocope` (line 2022): deletes final `*ă`
+- `OEHeavySyllableNasalApocope` (line 2047): deletes final `*ą` after consonants
+
+So at the point where `OESecondaryNasalization` runs:
+- Infinitive `*bakaną` has become `*bakan` (final `*ą` gone)
+- Participle `*funðanăz` has become `*fundan` (final `*ăz` gone)
+
+Both forms now end in `*-an`, so the rule `_ {*n} .#.` matches BOTH, nasalizing both!
+
+#### Evidence from Pipeline Tracing
+
+Building up the pipeline step by step (D1 through D17) then adding `OESecondaryNasalization`:
+
+```
+"Participle after nasalization:" → *f*u*n*d*ą*n  (WRONG! Should be *a not *ą)
+"Infinitive after nasalization:" → *b*a*k*ą*n    (Correct)
+```
+
+Both get nasalized because both look like `*-an` at word end.
+
+#### The Intended Logic
+
+The rule was meant to distinguish:
+- **Infinitive** `*bak-an-ą`: the `*n` is in the **coda** (followed only by word-final `*ą`)
+- **Participle** `*fund-an-ăz`: the `*n` is in the **onset** of next syllable (`-ăz`)
+
+When `*n` is in the coda, the preceding `*a` was nasalized in pre-OE, blocking fronting.
+When `*n` is in onset, no nasalization occurred, so fronting proceeds normally.
+
+### Solution
+
+**Fix the rule context** to match the ORIGINAL structure (before apocope), not the
+apocopated structure:
+
+**Current (buggy):**
+```foma
+[{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+```
+
+**Corrected:**
+```foma
+[{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] {*ą} .#.
+```
+
+The corrected rule matches `*a/*ă` before `*n/*m` followed by `*ą` at word end.
+This is the infinitive pattern `*-anąˈ, where the final `*ą` marks that `*n` is in coda.
+
+**Testing the corrected pattern:**
+- `bakaną` → `bakZną` (matches: infinitive pattern) ✓
+- `bakană` → `bakană` (no match: participle, `*n` not before `*ą`) ✓
+- `bakanăz` → `bakanăz` (no match: participle with suffix) ✓
+
+**ADDITIONALLY** — the rule must be **moved earlier in the pipeline**, to a point
+before `OEFinalSchwaApocope` and `OEHeavySyllableNasalApocope` delete the final vowels.
+At that point, we can see the original structure:
+- Infinitive: `*-anąˈ — rule matches, nasalizes
+- Participle: `*-anăz` — rule does NOT match
+
+### Implementation Steps
+
+1. **Change the rule context** from `_ {*n} .#.` to `_ {*n} {*ą} .#.`
+2. **Move `OESecondaryNasalization`** earlier in the pipeline, before apocope
+3. **Verify** that infinitives get `-an` and participles get `-en`
+
+### Why This Wasn't Caught Earlier
+
+The nasalization fix (commit 18b921e) was tested on **infinitives** (which worked
+correctly: `bacan`, `grafan`, `wadan`, etc.). The bug only affects **participles**,
+which have a different suffix structure. The `*funðanăz → funden` entry was added
+to the TSV as a Verner's Law fix, and only then did we notice the `-en` → `-an`
+mismatch.
+
+
 ## Verner's Law TSV Corrections (2026-03-14)
 
 ### Issue
@@ -9255,3 +9351,30 @@ break `pgrmCodaComplex` definition.
 - `*xlaðaną` → `hladan` ✓ (was `hlaþan`)
 - `*nēðlō` → `nǣdl` ✓ (was `nǣþl`)
 - Mismatch count: 72 → 70 (2 fixed)
+
+### Implementation Complete (2026-03-14)
+
+**Changes made:**
+
+1. **Rule context updated** (line 1585-1596 in germanic.txt):
+   ```foma
+   # Old (buggy):
+   [{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+   
+   # New (fixed):
+   [{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.
+   ```
+   
+2. **Rule moved earlier in pipeline** (line 2039-2040):
+   - Now runs BEFORE `OEFinalSchwaApocope`
+   - At this point, infinitive has `*-anąˈ but participle has `*-anăz`
+   
+3. **Removed from OEWeakTailReduction composition** (line 1620):
+   - The rule is now in the main pipeline, not bundled with other weak-tail rules
+
+**Test results:**
+- `*funðanăz` → `funden` ✓ (was `fundan`)
+- `*bakaną` → `bacan` ✓ (still works)
+
+**Mismatch count:** 66 → 65 (one fix, no regressions)
+
