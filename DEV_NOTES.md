@@ -9477,3 +9477,91 @@ docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
 cat docs/debug_snapshots/oe_mismatch_report.txt | head -5
 ```
 
+
+### Detailed FST Correspondence with R/T Analysis (2026-03-14)
+
+This section documents exactly how the FST models the infinitive/participle
+distinction described in R/T vol.2 §5.1.2 (p.142, p.153).
+
+#### What R/T Says
+
+R/T vol.2 p.153:
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was 
+> followed by a nasal in the syllable coda... The most obvious examples are 
+> infinitives and participles, e.g.:
+>
+> PGmc *bindana 'to tie' > PWGmc *bindan > OE bindan
+> PGmc *bindand- 'tying' > PWGmc *bindandi > OE bindende"
+
+Key insight: The **syllable structure** determines whether nasalization occurs:
+- Infinitive suffix `-an#`: the `n` is in the **coda** (word-final)
+- Participle suffix `-and-`: the `n` is in the **onset** of the next syllable
+
+#### What the FST Does
+
+**Input forms in TSV:**
+```
+Infinitive:  *bakaną   (ends in nasalized vowel *ą)
+Participle:  *funðanăz (ends in reduced vowel *ă + *z)
+```
+
+**After early pipeline stages (A-restoration):**
+```bash
+# Command: load old_english_sandbox_after_a_restoration.bin; down X
+
+Infinitive *bakaną:   → *b*a*k*a*n*ą   (final *ą present)
+Participle *funðanăz: → *f*u*n*d*a*n*ă  (final *z already gone, *ă present)
+```
+
+**OESecondaryNasalization rule (line 1594):**
+```foma
+[{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.
+```
+
+This rule says: nasalize `*a` or `*ă` when followed by `*n` then `*ą` at word end.
+
+**How the rule distinguishes the forms:**
+
+| Form | At rule application | Pattern match? | Result |
+|------|---------------------|----------------|--------|
+| Infinitive `*bakaną` | `*b*a*k*a*n*ą` | YES: `*a` before `*n*ą.#.` | `*a` → `*ą` → stays `-an` |
+| Participle `*funðanăz` | `*f*u*n*d*a*n*ă` | NO: `*a` before `*n*ă`, not `*n*ą` | `*a` stays `*a` → fronts to `-en` |
+
+**After the full pipeline:**
+```bash
+# Command: load old_english.bin; down X
+
+Infinitive *bakaną:   → bacan  (suffix -an preserved ✓)
+Participle *funðanăz: → funden (suffix fronted to -en ✓)
+```
+
+#### Correspondence to R/T's Analysis
+
+| R/T concept | FST representation |
+|-------------|-------------------|
+| "nasal in syllable coda" | word-final nasal in `*-anąˈ pattern |
+| "intervocalic nasal" (onset) | non-final nasal in `*-anăz` pattern |
+| "nasalized... not fronted" | `*a` → `*ą` → survives as `-an` |
+| "not nasalized... fronted" | `*a` stays `*a` → fronts → `-en` |
+
+**Key encoding decision:** The TSV encodes the distinction using the final vowel:
+- Infinitive uses `*ą` (nasalized vowel marking word-final coda nasal)
+- Participle uses `*ă` + `*z` (reduced vowel + consonant marking non-final structure)
+
+The FST rule exploits this distinction: it looks for the specific pattern `*n*ą.#.`
+which only occurs in infinitives, not participles.
+
+#### Verification
+
+Tested derivations:
+```
+Input            → Output   Expected   Match?
+*bakaną          → bacan    bacan      ✓
+*funðanăz        → funden   funden     ✓
+*bindaną         → bindan   bindan     ✓
+*xaldaną         → healdan  healdan    ✓
+```
+
+The FST correctly models R/T's syllable-structure-based analysis by encoding
+the distinction in the input forms (final `*ą` vs `*ăz`) and applying a rule
+that matches only the infinitive pattern.
