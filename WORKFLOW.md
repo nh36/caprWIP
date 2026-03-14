@@ -130,3 +130,44 @@ To test a derivation:
 ```bash
 docker compose exec backend bash -c "cd /usr/app && foma -e 'load old_english.bin' -e 'down funxwstiz' -e 'quit'"
 ```
+
+---
+
+## Agent Notes (for AI assistants)
+
+### Common Mistakes to Avoid
+
+1. **ALWAYS use Docker** for compilation and mismatch reports:
+   ```bash
+   # CORRECT:
+   docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"
+   docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
+   
+   # WRONG (creates inconsistent .bin files):
+   cd server && foma -q -f fsts/germanic.txt
+   python3 server/tools/oe_mismatch_report.py
+   ```
+
+2. **Always include `-e quit`** when running foma. Without it, foma hangs at interactive prompt.
+
+3. **Don't use `foma -l` or `source`** — use `foma -q -l file.txt -e quit` (load is a foma internal command, not a flag behavior).
+
+4. **The .bin files in root vs server/** can get out of sync. Docker writes to `/usr/app/` which maps to `server/` in the repo.
+
+5. **When mismatch counts seem inconsistent**, recompile using Docker and re-run the report.
+
+### Quick Reference
+
+```bash
+# Compile (takes ~2 min)
+docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"
+
+# Report
+docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
+
+# Test single word
+docker compose exec backend bash -c "echo 'b a k a n ą' | flookup old_english.bin"
+
+# Check count
+head -1 docs/debug_snapshots/oe_mismatch_report.txt
+```
