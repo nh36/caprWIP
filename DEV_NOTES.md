@@ -9775,3 +9775,107 @@ position when fronting applied.
 The sources consistently describe syllable-conditioned nasalization. Our FST
 achieves the correct results by using morphological markers that correlate with
 the syllable structure after early apocope.
+
+
+## Implementation Plan: Phonologically Correct Nasalization (2026-03-15)
+
+**Branch:** `fix/syllable-conditioned-nasalization`
+
+### Problem Statement
+
+The current implementation of `OESecondaryNasalization` uses a morphological
+hack: it checks for the pattern `{*n} {*ą} .#.` to identify infinitives. This
+works but does not model the actual phonological process described in the sources.
+
+Fulk (2018) §5.6 is explicit:
+> "Anglo-Frisian a was nasalized before a nasal consonant (**but only a
+> tautosyllabic one if the vowel was unstressed**), otherwise fronted to æ...
+> before heterosyllabic n in inflected forms of OE OFris. pp. faren- 'gone'
+> < *faræn- < *faran-."
+
+The conditioning is **syllable structure**: coda (tautosyllabic) nasal triggers
+nasalization; onset (heterosyllabic) nasal does not.
+
+### Root Cause: Pipeline Chronology
+
+The current pipeline order is backwards:
+
+```
+Line 2039: OESecondaryNasalization      ← runs while *ą still present
+Line 2040: OEFinalSchwaApocope
+Line 2065: OEHeavySyllableNasalApocope  ← {*ą} -> 0 || _ .#. (too late!)
+```
+
+Because `*ą` apocope happens AFTER nasalization, we had to hack the rule to
+look for `{*ą}` as a morphological marker. But historically:
+
+1. Final `*-ą` apocopated early (Ingvaeonic stage)
+2. This put the infinitive nasal in **coda** position (`*bakan#`)
+3. Nasalization applied to `a` before coda nasal
+4. Fronting applied to non-nasalized `a`
+
+### The Fix
+
+We already have `OEHeavySyllableNasalApocope` (line 1896) which does exactly
+what we need: `{*ą} -> 0 || OEAnyConsonant _ .#.`. We just need to run it
+BEFORE `OESecondaryNasalization`, not after.
+
+**Step 1:** Move `OEHeavySyllableNasalApocope` earlier in the pipeline
+- Currently at line 2065 (after nasalization and fronting)
+- Move to before line 2039 (before `OESecondaryNasalization`)
+
+**Step 2:** Simplify `OESecondaryNasalization` to true coda conditioning
+```foma
+# BEFORE (morphological hack):
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.
+];
+
+# AFTER (phonologically correct):
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ {*n} .#.
+];
+```
+
+The rule now conditions on word-final `{*n}`, which IS coda position.
+
+### Expected Derivations
+
+| Input | After `*ą` apocope | After nasalization | After fronting | Output |
+|-------|-------------------|-------------------|----------------|--------|
+| `*bakaną` | `*bakan#` | `*bakąn#` | (blocked) | `bacan` |
+| `*bakanăz` | `*bakanăz` | (n not final) | `*bækænæ` | `bacen` |
+| `*bindaną` | `*bindan#` | `*bindąn#` | (blocked) | `bindan` |
+| `*fundanăz` | `*fundanăz` | (n not final) | fronts | `funden` |
+
+**Why this works:**
+
+After `*ą` apocope:
+- Infinitive `*bakaną` → `*bakan#`: nasal is now word-final (coda position)
+- Participle `*bakanăz` → unchanged: nasal still followed by `*ă` (onset position)
+
+The nasalization rule `_ {*n} .#.` now directly tests for coda position.
+
+### What We're NOT Changing
+
+- The `*ą` vs `*ă` distinction in input forms (already correct)
+- The fronting rules (already correctly ordered after nasalization)
+- The schwa apocope rules (must stay after fronting)
+
+### Verification Plan
+
+1. Compile FST via Docker
+2. Test infinitives: `*bakaną → bacan`, `*bindaną → bindan`, `*faraną → faran`
+3. Test participles: `*bakanăz → bacen`, `*fundanăz → funden`
+4. Run full mismatch report
+5. Check for regressions in other `-an` / `-en` forms
+
+### Why This Matters
+
+This change makes the FST a more accurate model of historical phonology:
+- The conditioning is now truly syllable-based (word-final = coda)
+- The chronology matches what the sources describe
+- We eliminate the morphological hack that used `*ą` as a marker
+
+The sources (Fulk, R/T, Luick, Campbell) all describe coda-conditioned
+nasalization. Our pipeline should model that directly.
