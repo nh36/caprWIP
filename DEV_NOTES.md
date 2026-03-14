@@ -9178,3 +9178,80 @@ Compare participle `*bakanaz`:
 3. OEUnstressedAFronting: `{*b}{*a}{*k}{*æ}{*n}{*æ}{*z}` (both unstressed *a → *æ)
 4. Continues to `bæcen` ✓
 
+
+## Verner's Law TSV Corrections (2026-03-14)
+
+### Issue
+
+Several TSV entries have PGmc protoforms with voiceless fricatives (`*θ`, `*x`, `*s`)
+where OE shows the voiced reflex (`d`, `g`, `r`), indicating Verner's Law applied.
+
+Verner's Law: PIE voiceless stops became PGmc voiceless fricatives (*f, *θ, *x, *s),
+but when the preceding syllable was unaccented in PIE, these became voiced
+(*β, *ð, *ɣ, *z). In WGmc/OE, voiced fricatives became stops in certain positions:
+- `*ð` → OE `d`
+- `*ɣ` → OE `g`
+- `*z` → OE `r` (rhotacism, earlier change)
+
+### Analysis: `*xlaθaną` → `hladan`
+
+**TSV row 2088:**
+- PROTOFORM: `*xlaθaną` (voiceless `*θ`)
+- COUNTERPART: `hladan` (voiced `d`)
+- NOTE: "Wiktionary: PGmc *hlaθaną > OE hladan"
+
+**Problem:** If PGmc had voiceless `*θ`, OE would have `þ` (as in `baþan` "to bathe").
+The OE form `hladan` with `d` shows Verner's Law applied.
+
+**Kroonen (s.v. *hlaþan-):** Confirms OE `hladan` with `d`. The entry shows the
+verb is Class VI strong (inf. `hladan`, past sg. `hlōd`, past pl. `hlōdon`, ptp. `hladen`).
+Verner alternation is expected in Class VI infinitives.
+
+**Fix:** Change protoform to `*xlaðaną` (with Verner's `*ð` → OE `d`).
+
+**Result:** 72 → 71 mismatches. `hladan` now matches.
+
+### Analysis: `*nēθlō` → `nǣdl`
+
+**TSV row 2136:**
+- PROTOFORM: `*nēθlō` (voiceless `*θ`)
+- COUNTERPART: `nǣdl` (voiced `d`)
+- NOTE: "R/T p.435: PGmc *nēθlō/*nēdlō has Verner's alternation; OE nǣdl reflects *d variant"
+
+**Problem:** Same issue — TSV note explicitly acknowledges Verner's alternation
+and that OE reflects the `*d` variant, but PROTOFORM still has `*θ`.
+
+**Fix:** Change protoform to `*nēdlō` for the OE row.
+
+### Similar Cases to Review
+
+Looking at current mismatches with `θ` → expected `d`:
+1. ✓ `lade`: `*xlaθaną` → `*xlaðaną` (FIXED)
+2. `needle`: `*nēθlō` → `*nēdlō` (TO FIX)
+3. `withy`: `*wīθijăz` → expected `wīþiġ` — this has `þ` in OE, so NOT Verner
+
+For `withy`, OE `wīþiġ` has voiceless `þ`, matching PGmc `*θ`. The mismatch is
+something else (probably suffix handling, not Verner).
+
+### Pattern
+
+Our TSV convention should be: **use the post-Verner form in PROTOFORM** when
+the OE reflex shows Verner's Law applied. This matches our practice elsewhere
+(e.g., `*funðanăz` for participle `funden`).
+
+**UPDATE:** Used `*ð` (eth, voiced dental fricative) instead of `*d` (stop) for the
+proto-form, since:
+- `*ð` is the PGmc Verner's Law outcome
+- `*ð` → `*d` happens in PWGmc by `PWGmcDentalHardening` rule (line 1138)
+- TSV protoform should represent PGmc stage
+
+Added `ð:{*ð} l:{*l}` to `pgrmCodaComplex` to accept `ðl` clusters.
+
+**Compilation note:** Must use `echo "source fsts/germanic.txt" | foma` rather
+than `cat fsts/germanic.txt | foma -p` — the latter causes syntax errors that
+break `pgrmCodaComplex` definition.
+
+**Results:**
+- `*xlaðaną` → `hladan` ✓ (was `hlaþan`)
+- `*nēðlō` → `nǣdl` ✓ (was `nǣþl`)
+- Mismatch count: 72 → 70 (2 fixed)
