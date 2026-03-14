@@ -1573,12 +1573,29 @@ define OEPrefixAReduction [
 #
 # Example: PGmc *funðanăz → *funðænăz → *funden (via *æ→*e)
 # Counter-example: *liznōjăną → leornian (the *ă skips this rule, stays as -ian)
+
+# SECONDARY NASALIZATION (R/T vol.2 §5.1.2, p.153):
+# "Unstressed *a was nasalized, and therefore not fronted, only if it was
+# followed by a nasal in the syllable coda."
+# This converts {*a} and {*ă} to {*ą} before word-final nasal, blocking fronting.
+# Examples:
+#   Infinitive *bakaną: *bak.a.ną → *bak.ą.ną → bacan (NOT *bacen)
+#   Participle *bakanaz: *bak.a.naz → no nasalization (N in onset) → bæcen
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ [{*n} | {*m}] .#.
+];
+
 define OEUnstressedAFronting [
     {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
+# Secondary nasalized vowels (before coda nasal) denasalize to *a, not *ɔ̆.
+# Primary nasalized vowels (from lost nasal+fricative) become *ɔ̆.
+# R/T vol.2 §5.1.2: unstressed *a before coda nasal was nasalized, blocking fronting.
+# After blocking fronting, the nasalization is lost → plain *a.
 define OEWeakTailReduction1 [
     {*ă} -> {*a},
+    {*ą} -> {*a} || _ [{*n} | {*m}],
     {*ą} -> {*ɔ̆}
 ];
 # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120).
@@ -1591,7 +1608,7 @@ define OEWeakTailReduction2 [
 define OEWeakTailReduction3 [
     {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
-define OEWeakTailReduction OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
+define OEWeakTailReduction OESecondaryNasalization .o. OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
