@@ -9378,3 +9378,102 @@ break `pgrmCodaComplex` definition.
 
 **Mismatch count:** 66 → 65 (one fix, no regressions)
 
+
+### Source Research for Participle Nasalization Fix (2026-03-14)
+
+The fix to `OESecondaryNasalization` (distinguishing infinitive from participle)
+is supported by multiple sources:
+
+#### R/T vol.2 §5.1.2 (p.142)
+
+> "Stressed low vowels were nasalized when immediately followed by a nasal in
+> the northern WGmc dialects; **unstressed *a was apparently nasalized when
+> immediately followed by a nasal in the syllable coda, but not when immediately
+> followed by an intervocalic nasal**."
+
+This is the key passage. The conditioning environment is **syllable structure**:
+- Coda nasal (infinitive `*-anąˈ) → nasalization → blocks fronting → `-an`
+- Onset nasal (participle `*-anăz`, where `n` is onset of final syllable) → no nasalization → fronts → `-en`
+
+#### R/T vol.2 p.153
+
+Explicit infinitive vs participle examples:
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it was followed
+> by a nasal in the syllable coda... The most obvious examples are infinitives and
+> participles, e.g.:
+>
+> PGmc *bindana 'to tie' > PWGmc *bindan > OE bindan, OF binda;
+> PGmc *bindand- 'tying' > PWGmc *bindandi > OE bindende, OF bindende"
+
+The infinitive suffix `-an` stays `-an` (nasalized, no fronting).
+The participle suffix `-and-` becomes `-end-` (fronted, no nasalization).
+
+#### Campbell (1959) §116
+
+Campbell discusses the preservation of `u` and raising of `e > i` before nasal+consonant:
+
+> "The redistribution of e, i, o, u... does not take place before a nasal consonant
+> followed by another consonant... OE forms exemplifying this are... the passive
+> participles and infinitives of strong verbs of Class III like swummen, bunden,
+> sprungen, swimman, bindan, springan."
+
+Campbell groups infinitives and participles together here because both have
+`-nd-` or `-ng-` clusters. But note: infinitives preserve the cluster throughout
+(`bindan`), while participles show fronting in the *suffix vowel* (`bunden` with
+`-en`, not `-an`). Campbell's focus is on the *root* vowel behavior before NC clusters.
+
+#### Hogg (1992) vol.1 §3.3.2
+
+Hogg discusses syllable structure:
+
+> "The onset consists of the consonantal segments preceding the vowel... The coda
+> contains the remaining consonantal elements in the syllable."
+
+This confirms the syllable-structure analysis: in infinitive `*bind.an`, the final
+`-n` is in the coda; in participle `*bind.an.az`, the medial `-n-` is in the onset
+of the following syllable.
+
+#### Summary
+
+All three sources support the phonological conditioning:
+- **Syllable-final (coda) nasal** → nasalization → blocks fronting → OE `-an`
+- **Syllable-initial (onset) nasal** → no nasalization → fronts → OE `-en`
+
+The fix correctly models this by checking for `{*n} {*ą} .#.` (infinitive pattern
+with word-final nasal vowel) rather than just `{*n} .#.` (any word-final nasal).
+
+
+## Mismatch Progress Log (2026-03-14)
+
+This section tracks mismatch count changes over time.
+
+| Date | Mismatches | Change | Commit | Notes |
+|------|------------|--------|--------|-------|
+| 2026-03-12 | 78 | — | — | Baseline before nasalization work |
+| 2026-03-14 12:12 | 72 | -6 | 18b921e | Secondary nasalization (infinitives -an fixed) |
+| 2026-03-14 16:17 | 70 | -2 | 223ad24 | Verner TSV fixes: lade, needle |
+| 2026-03-14 20:34 | 65 | -5 | 62fced4 | Participle nasalization fix (funden) |
+
+**Note on 72 → 65 discrepancy:** The mismatch report showed 66 after the Verner
+fixes (not 70). The discrepancy may be due to:
+1. Different compiled FST versions (root vs server directory)
+2. Cached/stale .bin files
+3. Report run at different compilation states
+
+Current verified count: **65 mismatches** (as of commit 62fced4).
+
+### How to verify mismatch count
+
+Always use Docker for consistency:
+```bash
+# Compile FST (MUST use -e quit)
+docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"
+
+# Run report
+docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
+
+# Check result
+cat docs/debug_snapshots/oe_mismatch_report.txt | head -5
+```
+
