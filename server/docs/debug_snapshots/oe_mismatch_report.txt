@@ -1,10 +1,10 @@
-Total mismatches: 63
+Total mismatches: 62
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
   Phonology (core buckets):    16
-  Phonology (other buckets):   40
+  Phonology (other buckets):   39
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
@@ -18,7 +18,6 @@ Total mismatches: 63
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
-  palatal_marker_variant: 1
   syncopation_missing: 2
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
@@ -110,12 +109,6 @@ final_vowel_extra (6):
   *saiwălō -> sāwalu (expected sāwol)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
-
-palatal_marker_variant (1):
-  *skūflō -> sċūfl (expected scofl)
-  >> ISSUE: Orthographic difference: sċ vs sc, ċ vs c
-  >> LIKELY: TSV uses one spelling convention, FST uses another
-  >> ACTION: Normalize TSV to consistent palatal marking convention
 
 syncopation_missing (2):
   *melukz -> meoloc (expected meolc)
