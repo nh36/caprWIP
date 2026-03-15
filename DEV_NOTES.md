@@ -10102,3 +10102,34 @@ This means the short vowel is an INGVAEONIC (North Sea Germanic) feature shared 
 
 The phonological reality is clear: OE *skuflō (short) → scofl is regular via u-lowering.
 We need not explain the Proto-WGmc variation, only model the OE-internal development.
+
+**Additional sources (2026-03-15)**:
+
+5. **Kroonen, Proto-Germanic N-Stems (2011), p.66**:
+   Reconstructs `*skóblō-` (with o-grade, short vowel) for 'shovel'.
+   Lists: "OHG scófla, scóvala : scóbla, G Schaufel 'shovel' < *skóblō-"
+   
+   The o-grade reconstruction (*skóblō- not *skūblō-) aligns with the
+   Ingvaeonic short-vowel forms (OE scofl, MLG schuffel, MDu schuffel).
+
+6. **Seebold, Vergleichendes Wörterbuch der germ. starken Verben (1970), p.416-417**:
+   Entry for *skeub-a- 'to shove' shows:
+   - Gothic: af-skiuban (e-grade)
+   - OE: scūfan, scēofan (both ū and ēo variants attested)
+   - OHG: skioban (io-diphthong, i.e. eu-grade > io)
+   
+   Seebold lists derived nouns:
+   - *skub-ja-m: OE ge-scyfe 'shoving'
+   - *skub-ila-z: OHG skubil 'bolt, bar'
+   
+   Does NOT list a *skūflō- form, only zero-grade *skub- derivatives.
+
+**Synthesis**:
+The etymological literature consistently shows:
+- The base verb *skeub- ~ *skūb- had ablaut variants
+- The -lō instrumental ('shovel') was formed from the **o-grade** (*skob-lō > *skóblō-)
+  according to Kroonen 2011
+- Continental WGmc shows later lengthening to *skūflō (OHG scūvala)
+- Ingvaeonic retained the original short vowel: *skoblō > OE scofl
+
+Our FST correctly uses *skuflō (short vowel) for OE, enabling u-lowering to produce scofl.
