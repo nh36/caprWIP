@@ -10030,3 +10030,47 @@ across multiple dialects.
 - Vespasian Psalter and Rushworth (major early texts) have no -h spellings at all
 - The -h is primarily a Late WS spelling convention, not a universal OE change
 
+
+---
+
+## *skuflō 'Shovel' Reconstruction (2026-03-15)
+
+**Issue**: Mismatch showing `*skūflō → sċūfl` (expected `scofl`). Two problems:
+1. Proto had long *ū but OE shows short vowel (u-lowering should apply)
+2. Palatal marker inconsistency (sċ vs sc)
+
+**Research findings**:
+
+1. **Kroonen** (Etymological Dictionary of Proto-Germanic, p.445):
+   Reconstructs `*skublō-` with SHORT u. Lists: "OHG scufla, scubla, G Schaufel f.
+   'shovel, vane' < *skublō-". Derives from *skeub-/*skub- 'to shove'.
+
+2. **Orel** (Handbook of Germanic Etymology, p.347):
+   `*skuflò sb.f.` — again with SHORT u (no macron). Lists "OE scofl" alongside
+   "OS wind-skūfla, OHG scūvala".
+
+3. **Kluge-Seebold** (Etymologisches Wörterbuch, s.v. "Schaufel"):
+   Critical evidence: "Aus vd. *skūflō f. **Daneben mit Vokalkürze ae. scofl**"
+   Translation: "From Pre-Gmc *skūflō f. **Alongside with vowel shortness OE scofl**"
+   
+   This explicitly confirms:
+   - Continental WGmc (OHG, OS) had LONG *ū: *skūflō
+   - OE specifically has SHORT vowel variant: *skuflō → scofl
+
+4. **Campbell** (Old English Grammar, §444):
+   Attests `scofl` in Epinal glosses alongside `hofr, girdéfa, uulfes` as examples
+   of intervocalic fricative voicing contexts.
+
+**Why Wiktionary was wrong**:
+Wiktionary apparently generalized the Continental form `*skūflō` (with long ū) to
+all WGmc. But Kluge-Seebold explicitly notes OE has a different vowel quantity.
+This may reflect:
+- Pre-OE shortening before consonant clusters (cf. similar shortenings)
+- Or a separate ablaut grade in the derivation (*skub- vs *skūb-)
+
+**Resolution**:
+1. Correct proto in TSV: `*skūflō` → `*skuflō` (short u, per Kroonen/Orel/Kluge)
+2. Normalize target: `scofl` → `sċofl` (palatal marker for consistency)
+3. With short *u, NWGmcULowering applies: *u → *o before non-high *ō
+
+**Result**: Mismatch fixed. FST now correctly produces `sċofl`.
