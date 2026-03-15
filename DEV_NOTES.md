@@ -10133,3 +10133,36 @@ The etymological literature consistently shows:
 - Ingvaeonic retained the original short vowel: *skoblō > OE scofl
 
 Our FST correctly uses *skuflō (short vowel) for OE, enabling u-lowering to produce scofl.
+
+**CORRECTION - What the sources actually say (2026-03-15)**:
+
+I incorrectly stated the Continental long vowel was a "later lengthening." The sources
+do NOT explicitly say this. Here is what they actually state:
+
+1. **Kroonen (Etymological Dictionary, p.445)**: Lists `*skublō-` with short u.
+   No discussion of dialectal variation or chronology.
+
+2. **Kroonen (N-Stems 2011, p.66)**: Lists `*skóblō-` with o-grade.
+   References Sievers (1883:98) and Kocks (1903:258-65) but the OCR is garbled.
+
+3. **Kluge-Seebold**: Says "Aus vd. *skūflō f. Daneben mit Vokalkürze ae. scofl,
+   mndd. schuf(f)el, mndl. schuffel." 
+   - Reconstructs long *ū for Continental (vd. = voralthochdeutsch)
+   - Notes short vowel "alongside" (Daneben) for Ingvaeonic
+   - Does NOT explain WHY there is a difference or which is original
+
+4. **Seebold (1970)**: Shows *skeub-a- entry but no *skuflō- form at all.
+
+**What we can confidently say**:
+- Continental WGmc (OHG, OS) has long *ū: *skūflō > scūvala
+- Ingvaeonic (OE, MLG, MDu) has short vowel: *skuflō > scofl
+- The variation exists; the sources document it but don't explain it
+
+**What we CANNOT say from these sources**:
+- Which form is "original" vs "innovative"
+- Whether lengthening occurred in Continental or shortening in Ingvaeonic
+- The precise mechanism of the change
+
+**For our FST**: We use short *skuflō for OE because that's what the Ingvaeonic 
+reflexes require. This is descriptively correct regardless of which proto-form 
+is historically prior.
