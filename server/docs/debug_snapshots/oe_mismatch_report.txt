@@ -1,10 +1,10 @@
-Total mismatches: 65
+Total mismatches: 63
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
   Phonology (core buckets):    16
-  Phonology (other buckets):   42
+  Phonology (other buckets):   40
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
@@ -48,7 +48,6 @@ Total mismatches: 65
   cons_mismatch__c_vs_ċ__cluster: 1
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
-  cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
 --- suffix_form sub-buckets ---
@@ -173,10 +172,6 @@ cons_mismatch__f_vs_b__intervocalic (1):
 
 cons_mismatch__f_vs_s__cluster (1):
   *wabsăz -> wæfs (expected wæsp)
-
-cons_mismatch__g_vs_h__word_final (2):
-  *laugō -> lēag (expected lēah)
-  *trugą -> trog (expected troh)
 
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)

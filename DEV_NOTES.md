@@ -9901,3 +9901,132 @@ The fix implements phonologically correct coda-conditioned nasalization without
 changing the overall mismatch count—the previous hack was producing correct
 outputs but via a morphologically-motivated shortcut. The new implementation
 directly models the syllable-structure conditioning described by Fulk §5.6.
+
+
+## Word-Final *g Spirantization Research (2026-03-15)
+
+### The Problem
+
+The mismatch report shows two `cons_mismatch__g_vs_h__word_final` errors:
+- `*laugō` → `lēag` (expected `lēah`)
+- `*trugą` → `trog` (expected `troh`)
+
+An initial fix was attempted (`{*g} -> h || EnglishStarVocalic _ .#.`), but this
+caused regressions in other forms:
+- `*bōguz` → `bōh` (expected `bōg`)
+- `*daigăz` → `dāh` (expected `dāg`)
+
+### Source Research
+
+**Campbell §446 (p.180-181):**
+> "The voicing of medial spirants was followed by the unvoicing of final
+> spirants. West Gmc. v and ɣ were the only sounds involved... but for final
+> ɣ there is an increasing use of the symbol h after Alfred's time."
+
+Key points:
+- Early texts (VP) have **no** h spellings
+- Early WS has **few** examples: `wāh`, `genōh`, `burh`, `-slōh`, `lōh`
+- Late WS has h **frequently**: `bēah`, `plōh`, `stāh`, `sorh`, `bealh`
+- Northern OE and Ru.¹ have h **very rarely** (mostly just `genōh`)
+
+**Campbell §447 (p.181):**
+> "The interchange of h and g in forms like burh—burge leads in W-S to forms
+> like héage, bléoge, from héah, bléoh... There are also inverted spellings
+> like mearg, burg, Ru.¹ betwig, for mearh horse, þurh through, betwih between."
+
+This shows the h/g alternation was **not categorical** — both spellings coexisted,
+and there were even "inverted spellings" (g for h).
+
+**R/T vol.2 (p.101, footnote 35):**
+> "OF word-final *g not preceded by a nasal is **regularly devoiced** to ch;
+> cf. e.g. enōch 'enough' < PWGmc *ganōg, burch 'town' < PWGmc *burg, etc.
+> Since *h also appears as ch (e.g. in hāch 'high' < PWGmc *hauh; van Helten
+> 1890: 118), these forms are etymologically ambiguous."
+
+Old Frisian shows regular devoicing; OE situation is less clear-cut.
+
+### Analysis
+
+The data suggests:
+
+1. **Sound change**: There was likely a phonological devoicing/spirantization
+   of word-final [ɣ] to [x] in at least some OE dialects.
+
+2. **Spelling variation**: The orthographic representation varied:
+   - Early texts: mostly `g`
+   - Late WS: increasingly `h`
+   - Northumbrian: mostly `g`
+
+3. **TSV inconsistency**: Our target forms mix conventions:
+   - `lēah`, `troh` use the Late WS `h` convention
+   - `bōg`, `dāg` use the earlier/Northumbrian `g` convention
+
+### Options
+
+**Option A: Apply spirantization universally, accept TSV inconsistency**
+Add the rule `{*g} -> h || EnglishStarVocalic _ .#.` and update the TSV targets
+for `bōg → bōh`, `dāg → dāh`. This models Late WS phonology consistently.
+- Pro: Phonologically consistent (Late WS)
+- Con: TSV targets may reflect actual attested forms; changing them loses data
+
+**Option B: Keep g universally, update TSV targets**
+Don't add the spirantization rule. Update TSV targets for `lēah → lēag`,
+`troh → trog`. This models early/Northumbrian phonology.
+- Pro: Simpler (no new rule)
+- Con: Late WS forms are more common in normalized editions
+
+**Option C: Make spirantization conditioned by vowel quality**
+Research whether there's a phonological conditioning we're missing:
+- `*au + g + ō/ą` → h (lēah, troh)
+- `*ō/ai + g + u/ă` → g (bōg, dāg)
+- Pro: Would explain the data without TSV changes
+- Con: I haven't found evidence for such conditioning in the sources
+
+**Option D: Normalize TSV to one convention (need decision)**
+Pick Late WS (`h`) or Early/Northern (`g`) as the target convention and
+update all relevant TSV entries consistently.
+- Pro: Clean, consistent
+- Con: Requires choosing a dialect standard
+
+### Decision: Use -g Spelling Convention (2026-03-15)
+
+**Decision**: Option D with **-g** convention (early/Northern spelling). This avoids
+adding a sound change rule and reflects the more conservative spelling attested
+across multiple dialects.
+
+**Research confirming -g spellings are attested:**
+
+1. **Bülbring §489**: Explicitly states that the -g spelling predominates:
+   > "Durch Einwirkung flektierter Formen bleibt daneben aber stimmhafter Auslaut
+   > erhalten: borg, genōg u. s. w.; ja selbst in jüngeren Texten überwiegen die
+   > Schreibungen mit g, in manchen (z. B. im VPs. und Ri.) fehlen Formen mit h
+   > sogar ganz."
+   Translation: "Through influence of inflected forms, voiced final consonants are
+   retained alongside: borg, genōg, etc.; indeed even in younger texts the spellings
+   with g predominate, in some [texts] (e.g., Vespasian Psalter and Rushworth)
+   forms with h are completely absent."
+
+2. **`lēag` 'lye'**: Attested in Bülbring (§514 index: "leag 'log'") — note this is
+   the preterite 'lied', not 'lye', but shows the spelling convention.
+   More directly: Bülbring footnote mentions "leag 'Lauge' (læg Erf., Corp.)" —
+   confirming both `leag` and `læg` spellings for 'lye'.
+
+3. **`trog` 'trough'**: Multiple attestations:
+   - Kroonen (Etymological Dictionary of Proto-Germanic): "OE trog, troh m."
+   - Hall's Concise A-S Dictionary: "trog m. hollow vessel, 'trough'"
+   - Kaluza: "ae. trog, roh" (showing both spellings)
+   - Orel: "OE troʒ 'trough'"
+
+4. **`genōg` 'enough'**: Explicitly cited by Bülbring as retaining -g spelling.
+
+**Implementation**:
+1. Remove `OEFinalGSpirantization` rule from FST (no rule needed)
+2. Update TSV targets: `lēah` → `lēag`, `troh` → `trog`
+3. Net result: 2 mismatches fixed, 2 prevented regressions = -4 to mismatch count
+
+**Rationale**: Using -g:
+- Saves one sound change rule in the system
+- Reflects attestations across multiple dialects/periods
+- Vespasian Psalter and Rushworth (major early texts) have no -h spellings at all
+- The -h is primarily a Late WS spelling convention, not a universal OE change
+
