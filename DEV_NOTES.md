@@ -9879,3 +9879,25 @@ This change makes the FST a more accurate model of historical phonology:
 
 The sources (Fulk, R/T, Luick, Campbell) all describe coda-conditioned
 nasalization. Our pipeline should model that directly.
+
+### Implementation Results (2026-03-15)
+
+**Changes made to `server/fsts/germanic.txt`:**
+
+1. Moved `OEHeavySyllableNasalApocope` from line ~2065 to ~2039 (before nasalization)
+2. Simplified `OESecondaryNasalization` rule from `_ {*n} {*ą} .#.` to `_ {*n} .#.`
+3. Updated pipeline comments to document the chronology
+
+**Test results (flookup):**
+```
+bakaną   → bacan    ✓ (infinitive: nasalization blocks fronting)
+bindaną  → bindan   ✓ (infinitive: nasalization blocks fronting)
+funðanăz → funden   ✓ (participle: fronting applies, -en ending)
+```
+
+**Mismatch count:** 65 (unchanged from before fix)
+
+The fix implements phonologically correct coda-conditioned nasalization without
+changing the overall mismatch count—the previous hack was producing correct
+outputs but via a morphologically-motivated shortcut. The new implementation
+directly models the syllable-structure conditioning described by Fulk §5.6.

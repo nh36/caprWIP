@@ -1,10 +1,10 @@
-Total mismatches: 74
+Total mismatches: 65
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
-  Phonology (core buckets):    14
-  Phonology (other buckets):   53
+  Phonology (core buckets):    16
+  Phonology (other buckets):   42
 
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
@@ -14,10 +14,10 @@ Total mismatches: 74
   breaking_missing__expected_eo_got_e: 3
   long_vowel_missing: 4
   no_output: 2
+  palatalization_missing: 2
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 6
-  length_extra_other: 1
   palatal_marker_variant: 1
   syncopation_missing: 2
   gemination_extra: 1
@@ -38,7 +38,6 @@ Total mismatches: 74
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
-  vowel_quality__unstressed_vowel: 7
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__other: 3
   final_vowel_missing__weak_noun_like: 5
@@ -52,9 +51,6 @@ Total mismatches: 74
   cons_mismatch__g_vs_h__word_final: 2
   cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__n_vs_-__word_final: 1
-  cons_mismatch__t_vs_h__intervocalic: 1
-  cons_mismatch__þ_vs_d__cluster: 1
-  cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
@@ -87,15 +83,16 @@ no_output (2):
   *regna-bugô -> +? (expected reġnboga)
   *wira-aldiz -> +? (expected weorold)
 
+palatalization_missing (2):
+  *xunăgą -> hunag (expected huniġ)
+  *wīθijăz -> wīþ (expected wīþiġ)
+
 final_vowel_extra (6):
   *laimōn -> lāme (expected lām)
   *natją -> nete (expected net)
   *saiwălō -> sāwalu (expected sāwol)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
-
-length_extra_other (1):
-  *dōną -> dōn (expected don)
 
 palatal_marker_variant (1):
   *skūflō -> sċūfl (expected scofl)
@@ -153,13 +150,6 @@ vowel_quality__u_o_alternation (1):
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
 
-vowel_quality__unstressed_vowel (7):
-  *bakaną -> bacen (expected bacan)
-  *grabaną -> grafen (expected grafan)
-  *wadaną -> waden (expected wadan)
-  *wakaną -> wacen (expected wacan)
-  *waskaną -> wascen (expected wascan)
-
 final_vowel_missing__other (3):
   *knuppăz -> cnopp (expected cnobba)
   *labbăz -> læbb (expected læppa)
@@ -176,7 +166,7 @@ final_n_missing__expected_en (1):
   *lungō -> lung (expected lungen)
 
 cons_mismatch__c_vs_ċ__cluster (1):
-  *strakkjăną -> strecċan (expected streċċan)
+  *strakkijăną -> strecċan (expected streċċan)
 
 cons_mismatch__f_vs_b__intervocalic (1):
   *xabēną -> hafon (expected habban)
@@ -193,15 +183,6 @@ cons_mismatch__h_vs_m__cluster (1):
 
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
-
-cons_mismatch__t_vs_h__intervocalic (1):
-  *leuxtjăną -> līetan (expected līehtan)
-
-cons_mismatch__þ_vs_d__cluster (1):
-  *nēθlō -> nǣþl (expected nǣdl)
-
-cons_mismatch__þ_vs_d__intervocalic (1):
-  *xlaθaną -> hlaþen (expected hladan)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
