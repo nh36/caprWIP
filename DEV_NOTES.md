@@ -10074,3 +10074,31 @@ This may reflect:
 3. With short *u, NWGmcULowering applies: *u → *o before non-high *ō
 
 **Result**: Mismatch fixed. FST now correctly produces `sċofl`.
+
+**Further analysis: Why the vowel length difference?**
+
+Kluge-Seebold provides the key insight. For the base verb `schieben`:
+> "Aus g. *skeub-a- mit der Variante *skūb-a-"
+> (From Gmc *skeub-a- **with the variant** *skūb-a-)
+
+The Germanic verb had TWO ablaut grades:
+- Full e-grade: *skeub- (shows in Gothic af-skiuban, OE scēofan)
+- Zero-grade with compensatory lengthening: *skūb- (shows in OE scūfan variant)
+
+For the instrumental noun "shovel":
+- Continental WGmc (OHG, OS) used long-vowel grade: *skūflō → OHG scūvala
+- **Ingvaeonic** (OE, MLG, MDu) used SHORT vowel: *skuflō → OE scofl
+
+Kluge explicitly notes: "Daneben mit Vokalkürze ae. scofl, mndd. schuf(f)el, mndl. schuffel"
+This means the short vowel is an INGVAEONIC (North Sea Germanic) feature shared by:
+- Old English: scofl
+- Middle Low German: schuf(f)el  
+- Middle Dutch: schuffel
+
+**Possible explanations**:
+1. Ingvaeonic used the zero-grade WITHOUT lengthening (*skub- not *skūb-)
+2. Early Ingvaeonic shortened *ū before -fl- cluster
+3. Analogical influence from related forms with short vowel
+
+The phonological reality is clear: OE *skuflō (short) → scofl is regular via u-lowering.
+We need not explain the Proto-WGmc variation, only model the OE-internal development.
