@@ -17,6 +17,130 @@ from typing import Dict, Iterable, List, Tuple
 
 PROTO_STRIP_RE = re.compile(r"[{}*\s\-/()]")
 
+# =============================================================================
+# DIAGNOSTIC NOTES: Initial impressions for each bucket type
+# These help prioritize fixes and understand root causes.
+# =============================================================================
+BUCKET_DIAGNOSTICS: Dict[str, Dict[str, str]] = {
+    # CORE BUCKETS
+    "i_umlaut_missing_true": {
+        "issue": "I-umlaut trigger not applied",
+        "likely_cause": "Diphthong (*ai) not being parsed as umlaut trigger, or rule ordering",
+        "action": "Check i-umlaut rule handles diphthongs with *i component",
+    },
+    "fronting_missing__afb": {
+        "issue": "A-fronting before nasals/consonants not applied",
+        "likely_cause": "Often TSV issue — proto is one form class (verb), target is another (noun)",
+        "action": "Check paradigm cell alignment; may need different proto form",
+    },
+    "breaking_missing__expected_ea": {
+        "issue": "Breaking to ēa not applied",
+        "likely_cause": "Breaking context not recognized (before r/l/h + consonant)",
+        "action": "Check breaking rule environments",
+    },
+    "breaking_missing__expected_ea_got_a": {
+        "issue": "Expected ēa but got short a/æ",
+        "likely_cause": "Breaking not applying; may also involve length issues",
+        "action": "Check breaking before dental fricatives (þ/ð)",
+    },
+    "breaking_missing__expected_eo": {
+        "issue": "Breaking to ēo not applied",
+        "likely_cause": "Breaking context (before r/l/h + C) not triggering for *e/i",
+        "action": "Check breaking rule for front vowels before velars",
+    },
+    "breaking_missing__expected_eo_got_e": {
+        "issue": "Expected ēo but got e/ē",
+        "likely_cause": "Breaking rule missing this context or ordered wrong",
+        "action": "Check *e before r/l/h in breaking environments",
+    },
+    "long_vowel_missing": {
+        "issue": "Long vowel expected but short produced",
+        "likely_cause": "Compensatory lengthening, contraction, or TSV proto issue",
+        "action": "Check if proto should have long vowel; check lengthening rules",
+    },
+    "no_output": {
+        "issue": "FST produces no output (grammar rejection)",
+        "likely_cause": "Compound separator (-), unusual cluster, or grammar gap",
+        "action": "Check if proto contains unsupported sequences; may need grammar extension",
+    },
+    "palatalization_missing": {
+        "issue": "Palatal ġ/ċ expected but velar g/c produced",
+        "likely_cause": "Palatalization rule not applying in this context",
+        "action": "Check palatalization environments; may be suffix-related",
+    },
+    # OTHER BUCKETS
+    "palatal_marker_variant": {
+        "issue": "Orthographic difference: sċ vs sc, ċ vs c",
+        "likely_cause": "TSV uses one spelling convention, FST uses another",
+        "action": "Normalize TSV to consistent palatal marking convention",
+    },
+    "gemination_extra": {
+        "issue": "FST geminated where target has single consonant",
+        "likely_cause": "West Germanic gemination applied incorrectly, or TSV target is unusual",
+        "action": "Research actual OE form; may be borrowing or irregular",
+    },
+    "a_restoration_needed": {
+        "issue": "Fronted æ where target has restored a (before back vowel)",
+        "likely_cause": "A-restoration rule not applying or incomplete",
+        "action": "Check a-restoration scope — may miss some contexts (e.g., nafola)",
+    },
+    "back_expected_front_out__other": {
+        "issue": "FST produced front vowel, target has back vowel",
+        "likely_cause": "Dialectal/analogical form, or vowel coloring not modeled",
+        "action": "Research if target is regular or a variant; may need u-coloring rule",
+    },
+    "final_n_missing__expected_en": {
+        "issue": "Target ends in -en but FST dropped the n",
+        "likely_cause": "TSV target may be oblique form (dat.pl), not nominative",
+        "action": "Check TSV proto/target paradigm cell alignment",
+    },
+    "final_n_missing__expected_an": {
+        "issue": "Target ends in -an but FST has bare stem",
+        "likely_cause": "TSV paradigm cell mismatch or n-stem morphology",
+        "action": "Verify proto form matches expected OE form class",
+    },
+    "syncopation_missing": {
+        "issue": "FST kept medial vowel that target syncopates",
+        "likely_cause": "High vowel syncope rule not applying (meoloc→meolc)",
+        "action": "Check syncope rule for unstressed high vowels",
+    },
+    "breaking_extra__eo_for_high": {
+        "issue": "FST broke to eo where target has high vowel (ū/ī)",
+        "likely_cause": "Breaking applied where it shouldn't; may be TSV proto issue",
+        "action": "Check if proto vowel is correct (*eu vs *ū)",
+    },
+    "breaking_extra__wrong_form": {
+        "issue": "Breaking difference plus consonant skeleton mismatch",
+        "likely_cause": "TSV proto/target are different lexemes or form classes",
+        "action": "Verify TSV alignment; likely needs different proto",
+    },
+    "vowel_quality__stressed_vowel": {
+        "issue": "Root vowel differs (e.g., e vs i, a vs o)",
+        "likely_cause": "Dialectal variation, analogical leveling, or proto vowel wrong",
+        "action": "Research the specific vowel history; may be TSV issue",
+    },
+    "vowel_quality__u_lowering_exception": {
+        "issue": "FST lowered u→o but target keeps u (wulf, bucc, etc.)",
+        "likely_cause": "Known lexical exceptions to u-lowering (Luick §78)",
+        "action": "Add exception list to u-lowering rule or accept as documented",
+    },
+    "final_vowel_extra": {
+        "issue": "FST has final vowel, target is vowelless",
+        "likely_cause": "Apocope not applied, or TSV target is reduced form",
+        "action": "Check apocope rules; may be morphology mismatch",
+    },
+    "final_vowel_missing__weak_noun_like": {
+        "issue": "Target ends in -e/-a (weak noun), FST has bare stem",
+        "likely_cause": "Proto is strong form, target is weak; or apocope over-applied",
+        "action": "Check morphological class alignment in TSV",
+    },
+    "cons_mismatch__f_vs_b__intervocalic": {
+        "issue": "FST has f where target has b (intervocalic)",
+        "likely_cause": "Missing or misapplied *b→*β→f vs geminate *bb→bb",
+        "action": "Check if this is gemination context (habban has *bb)",
+    },
+}
+
 # Treat these as vowels in the proto stream when looking for an i/j trigger.
 PROTO_VOWELS = set("aeiouyāēīōūǣȳ")
 PROTO_TRIGGERS = set("ijī")
@@ -878,6 +1002,12 @@ def write_report(
         lines.append(f"{key} ({len(items)}):")
         for proto, out, expected in items[:max_examples]:
             lines.append(f"  {proto} -> {out} (expected {expected})")
+        # Add diagnostic note for singleton buckets
+        if len(items) <= 2 and key in BUCKET_DIAGNOSTICS:
+            diag = BUCKET_DIAGNOSTICS[key]
+            lines.append(f"  >> ISSUE: {diag['issue']}")
+            lines.append(f"  >> LIKELY: {diag['likely_cause']}")
+            lines.append(f"  >> ACTION: {diag['action']}")
         lines.append("")
 
     for key in other_order:
@@ -889,6 +1019,12 @@ def write_report(
         lines.append(f"{key} ({len(items)}):")
         for proto, out, expected in items[:max_examples]:
             lines.append(f"  {proto} -> {out} (expected {expected})")
+        # Add diagnostic note for singleton/small buckets
+        if len(items) <= 2 and key in BUCKET_DIAGNOSTICS:
+            diag = BUCKET_DIAGNOSTICS[key]
+            lines.append(f"  >> ISSUE: {diag['issue']}")
+            lines.append(f"  >> LIKELY: {diag['likely_cause']}")
+            lines.append(f"  >> ACTION: {diag['action']}")
         lines.append("")
 
     lines.append("=== A-FRONTING AUDIT ===")
