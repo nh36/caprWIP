@@ -1,15 +1,15 @@
-# CAPR V3 Working Procedures
+# Germanic (OE) Working Procedures
 
-**READ THIS FIRST** when resuming work on this project.
+**READ THIS FIRST** when resuming work on the Old English pipeline.
 
 ## Directory Structure
-- `server/fsts/germanic.txt` - Main FST source code
-- `server/data/germanic-aligned-final.tsv` - Proto → OE data
-- `server/tools/` - All utility scripts (mismatch reports, tracing, etc.)
-- `docs/debug_snapshots/` - Output reports
-- `DEV_NOTES.md` - Development documentation and decisions
+- `Germanic/fsts/germanic.txt` - Main FST source code
+- `Germanic/data/germanic-aligned-final.tsv` - Proto → OE data
+- `Germanic/tools/` - All utility scripts (mismatch reports, tracing, etc.)
+- `Germanic/docs/debug_snapshots/` - Output reports
+- `Germanic/docs/DEV_NOTES.md` - Development documentation and decisions
 
-## Key Scripts in server/tools/
+## Key Scripts in Germanic/tools/
 
 | Script | Purpose | Usage |
 |--------|---------|-------|
@@ -33,7 +33,7 @@ Takes ~2 minutes. Without `-e quit` it hangs forever at the interactive prompt.
 docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
 ```
 
-Output: `docs/debug_snapshots/oe_mismatch_report.txt`
+Output: `Germanic/docs/debug_snapshots/oe_mismatch_report.txt`
 
 ## Testing a Single Derivation
 
@@ -51,7 +51,7 @@ docker compose exec backend bash -c "echo 'healdan' | flookup -i old_english.bin
 
 1. Recompile FST: `docker compose exec backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"`
 2. Run mismatch report: `docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py`
-3. Check output: `cat docs/debug_snapshots/oe_mismatch_report.txt`
+3. Check output: `cat Germanic/docs/debug_snapshots/oe_mismatch_report.txt`
 
 ## After Changing TSV Data
 
@@ -63,7 +63,7 @@ docker compose exec backend bash -c "echo 'healdan' | flookup -i old_english.bin
 1. **Don't try to use the web API for reports** - use the Python scripts directly
 2. **Don't forget `-e quit`** when running foma
 3. **Don't wait synchronously for long tasks** - foma compilation is ~2 min, not 45 min
-4. **Scripts are in `server/tools/`** not `server/` or root
+4. **Scripts are in `Germanic/tools/`** not `server/` or root
 
 ## Mismatch Fix Workflow
 
@@ -72,7 +72,7 @@ docker compose exec backend bash -c "echo 'healdan' | flookup -i old_english.bin
 ### Step 1: Run Mismatch Report
 ```bash
 docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
-cat docs/debug_snapshots/oe_mismatch_report.txt
+cat Germanic/docs/debug_snapshots/oe_mismatch_report.txt
 ```
 
 ### Step 2: Categorize Issues
@@ -90,7 +90,7 @@ For each mismatch, BEFORE proposing changes:
    - R/T vol.1 and vol.2
    - Kroonen's Etymological Dictionary
    
-2. **Document findings** in DEV_NOTES.md:
+2. **Document findings** in Germanic/docs/DEV_NOTES.md:
    - What the sources say
    - What the sound change should be
    - Why the current output is wrong
@@ -169,5 +169,5 @@ docker compose exec backend python3 /usr/app/tools/oe_mismatch_report.py
 docker compose exec backend bash -c "echo 'b a k a n ą' | flookup old_english.bin"
 
 # Check count
-head -1 docs/debug_snapshots/oe_mismatch_report.txt
+head -1 Germanic/docs/debug_snapshots/oe_mismatch_report.txt
 ```
