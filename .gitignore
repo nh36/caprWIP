@@ -5,3 +5,7 @@
 server/german_after_*.bin
 server/german_pre_surface.bin
 server/german_surface_prep.bin
+
+# FST compiled binaries (regenerated from .txt sources)
+/build/*.bin
+build/
