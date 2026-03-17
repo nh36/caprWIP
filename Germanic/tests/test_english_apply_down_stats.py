@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-MODULE_PATH = Path(__file__).resolve().parents[1] / "server" / "tools" / "english_apply_down_stats.py"
+MODULE_PATH = Path(__file__).resolve().parents[1] / "tools" / "english_apply_down_stats.py"
 spec = importlib.util.spec_from_file_location("english_apply_down_stats", MODULE_PATH)
 ENGLISH_STATS = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(ENGLISH_STATS)
