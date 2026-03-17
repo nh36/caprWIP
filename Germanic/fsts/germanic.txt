@@ -2056,8 +2056,11 @@ define EnglishProtoToOE (
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPostVelarWLoss
-    .o. OEWsPalatalDiphthongization
+    # I-umlaut must precede WS palatal diphthongization: *skaiθiz → *skǣθ (i-umlaut)
+    # → sċēaþ (WS palatal diph of ǣ → ēa after ʃ). Campbell §185 confirms both
+    # sċǣþ and sċēaþ exist; the ēa form requires i-umlauted ǣ as input.
     .o. OEIUmlaut
+    .o. OEWsPalatalDiphthongization
     .o. OEJClusterCoalescence
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut

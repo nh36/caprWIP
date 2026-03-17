@@ -10166,3 +10166,139 @@ do NOT explicitly say this. Here is what they actually state:
 **For our FST**: We use short *skuflō for OE because that's what the Ingvaeonic 
 reflexes require. This is descriptively correct regardless of which proto-form 
 is historically prior.
+
+---
+
+## I-Umlaut / WS Palatal Diphthongization Chronology (2026-03-17)
+
+### The Problem: *skaiθiz → sċǣþ instead of sċēaþ
+
+Row 2178 in the TSV: `*skaiθiz` → expected `sċēaþ`, got `sċǣþ`.
+
+The FST produces sċǣþ (with long ǣ), but the TSV target is sċēaþ (with diphthong ēa).
+Both forms are attested in Old English.
+
+### Campbell's Evidence (OE Grammar §185)
+
+Campbell explicitly lists both forms:
+> "with ǣ, the mutation of ā: sǣǣþ sheath, beside sċēaþ"
+
+So both sċǣþ and sċēaþ are valid OE forms. The ēa form arises from West Saxon 
+palatal diphthongization, which converts ǣ → ēa after initial palatals (ʧ, ʤ, ʃ, j).
+
+### Historical Derivation
+
+The expected historical sequence for sċēaþ:
+
+1. PGmc *skaiθiz (i-stem noun)
+2. PWGmc *skāθiz (ai-monophthongization: *ai → *ā)
+3. OE *skǣθ (i-umlaut: *ā → *ǣ from *-iz suffix)
+4. OE *ʃǣθ (sk-palatalization: *sk → *ʃ before front vowel)
+5. WS sċēaþ (WS palatal diphthongization: ǣ → ēa after initial ʃ)
+
+The key insight: **i-umlaut must precede WS palatal diphthongization** for the 
+ēa outcome. Without i-umlaut first, the vowel is still *ā at the WS palatal 
+diphthongization stage, and that rule doesn't target ā.
+
+### Current FST Rule Order (INCORRECT)
+
+In `germanic.txt` lines 2055-2065:
+```
+    .o. OESkPalatalization      # sk → ʃ
+    .o. OEVelarPalatalization
+    .o. OEPostVelarWLoss
+    .o. OEWsPalatalDiphthongization  # ǣ → ēa after palatals
+    .o. OEIUmlaut                    # ā → ǣ (triggered by *-iz)
+```
+
+This order means:
+1. After sk-palatalization: *ʃāθiz
+2. At WS palatal diphthongization: still *ʃāθiz (ā not ǣ, so rule doesn't fire)
+3. At i-umlaut: *ʃǣθ (ā → ǣ, but too late for WS palatal diph)
+4. Output: sċǣþ ✓ (matches actual FST output)
+
+### Proposed Fix: Reorder Rules
+
+Move OEIUmlaut before OEWsPalatalDiphthongization:
+```
+    .o. OESkPalatalization
+    .o. OEVelarPalatalization
+    .o. OEPostVelarWLoss
+    .o. OEIUmlaut                    # ā → ǣ FIRST
+    .o. OEWsPalatalDiphthongization  # then ǣ → ēa
+```
+
+This gives:
+1. After sk-palatalization: *ʃāθiz
+2. At i-umlaut: *ʃǣθ (ā → ǣ)
+3. At WS palatal diphthongization: *ʃēaθ (ǣ → ēa after ʃ) ✓
+
+### Risks / What to Check
+
+Moving i-umlaut earlier could affect other forms. Need to verify:
+
+1. **Breaking interaction**: OEBreaking currently comes before both. Does breaking
+   need to precede i-umlaut? Checking the chain... OEBreaking is defined in the 
+   OEVowelRules section, which is composed much earlier (~line 1230). So breaking
+   already precedes i-umlaut in our pipeline.
+
+2. **Back mutation**: OEBackMutation follows OEIUmlaut. Campbell says back mutation
+   applied to i-umlauted vowels, so this order should remain: i-umlaut → back mutation.
+   Moving i-umlaut earlier maintains this relative order.
+
+3. **WS palatal umlaut**: OEWsPalatalUmlaut currently follows OEIUmlaut. R/T says
+   WS palatal umlaut applies to short diphthongs (eo, io, ie → i before ht, hp, hs).
+   This should still work if i-umlaut precedes it.
+
+4. **Other forms with initial palatals**: Forms like *gēbanan → giefan, *jērą → géar.
+   These have short *e that undergoes WS palatal diphthongization to ie. The rule
+   `{*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _` should still work regardless
+   of i-umlaut ordering (these forms don't have i-umlaut triggers).
+
+### References
+
+- Campbell, OE Grammar, §185: lists both sċǣþ and sċēaþ
+- R/T vol.2 §6.5.1: WS diphthongization by initial palatals
+- R/T vol.2 §6.6: I-umlaut
+
+### Action Items
+
+1. ✅ Document the issue and proposed fix (this entry)
+2. ⬜ Move OEIUmlaut before OEWsPalatalDiphthongization in germanic.txt
+3. ⬜ Recompile FST and run mismatch report
+4. ⬜ Verify sċēaþ now works
+5. ⬜ Check for regressions in other forms
+
+
+### Implementation Result (2026-03-17)
+
+Moved OEIUmlaut before OEWsPalatalDiphthongization in germanic.txt (lines 2055-2065).
+
+**Result**: 
+- Fixed: *skaiθiz → sċēaþ ✓ (was sċǣþ)
+- Total mismatches: still 62 (no change)
+
+**Trade-off discovered**:
+One form changed from match to mismatch: *geftiz → ġift (expected ġieft per TSV).
+
+The issue: For *skaiθiz, i-umlaut must precede WS palatal diphthongization (to create ǣ
+as input). For *geftiz, WS palatal diphthongization would need to precede i-umlaut (to
+create ie from e before i-umlaut raises e to i).
+
+**Analysis of ġieft claim**:
+- TSV source: "Wiktionary etymology (template:inh)"
+- Not found in Kroonen's etymological dictionary
+- Campbell lists "geofu gift" and "giefu" (from *gebō), not *geftiz
+- ModE "gift" is actually from ON gift, not OE
+- The *geftiz reconstruction may be questionable
+
+**Decision**: Keep the i-umlaut reordering because:
+1. The sċēaþ fix is well-documented (Campbell §185)
+2. The ġieft target is weakly sourced (just Wiktionary)
+3. Both sċǣþ and ġift are plausible OE forms
+4. Total mismatch count unchanged
+
+**TODO**: Research *geftiz etymology and verify if ġieft or ġift is the correct OE form.
+If ġift is correct, update TSV. If ġieft is correct, we need a more sophisticated
+solution (possibly splitting i-umlaut into pre-palatalization and post-palatalization
+stages, or flagging this as dialectal variation).
