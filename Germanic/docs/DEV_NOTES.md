@@ -5587,16 +5587,15 @@ Evaluation: 308/386 OE matches (79.8%).
 
 ---
 
-## OE ġieft 'gift' — WS Palatal Diphthongization
+## OE ġift 'gift' — I-Umlaut Blocks WS Palatal Diphthongization
 
-**Date:** 2026-03-10
+**Date:** 2026-03-10 (revised 2026-03-17)
 **Mismatch:** `*geftiz` → FST `ġieft` | Expected `ġift`
-**Resolution:** Change target from `ġift` → `ġieft` (WS form)
+**Resolution:** TSV target is correct as `ġift`; i-umlaut chronology fix resolves this
 
-### Problem
+### Problem (Original)
 
-The FST produces `ġieft` for PGmc `*geftiz`, but the TSV target is `ġift`. This
-is a **dialect mismatch**, not an FST error.
+The FST produced `ġieft` for PGmc `*geftiz`, but the TSV target was `ġift`.
 
 ### Etymology
 
@@ -5605,45 +5604,95 @@ There are two distinct PGmc words for 'gift':
 1. **`*gebō-`** (ō-stem feminine) → OE `giefu` "gift, present" (common word)
    - Kroonen (2013) p.173: "*gebō- f. 'gift, present' — Go. giba f. 'id.', ON gjǫf f. 'id.', OE giefu f. 'id.'"
 
-2. **`*geftiz`** (i-stem feminine) → OE `ġift`/`ġieft` "gift, marriage gift"
-   - Orel (2003) p.130: "*geftiz sb.f.: Goth fra-gifts 'gift, betrothal', ON gipt, gift 'gift of nature, endowment', OE ift 'gift, marriage gift'"
-   - Derived from `*gebanan` 'to give'
+2. **`*geftiz`** (i-stem feminine) → OE `ġift` "gift, marriage gift"
+   - Orel (2003) p.130: "*geftiz sb.f.: ... **OE ift 'gift, marriage gift'**"
+   - Kluge-Seebold (2011) s.v. Gift: "auch in gt. -gifts, anord. gift(a) f., **ae. gift f.**"
+   - Campbell (1959) §427: Lists "**gift** gift" as example of initial palatalization
 
 The TSV has `*geftiz` (i-stem), not `*gebō-` (ō-stem).
 
-### WS Palatal Diphthongization
+### Why ġift, NOT ġieft: I-Umlaut Chronology
 
-The sound change `*e` → `*ie` after initial palatal consonants is a **West Saxon** feature:
+The critical insight is that **i-umlaut of *e → *i is a Proto-Germanic phenomenon**,
+not a late OE change. Cercignani (1980) "Early 'Umlaut' Phenomena" pp.126-127:
 
-Campbell (1959) §185: "e > ie: scieran cut, giefan give (and related words), gieldan pay..."
+> "the change */e/ > */i/ before a high front vowel or semivowel (i-umlaut)...
+> PIE */medhjos/ > PGmc. */miðjaz/ > OE midd"
 
-The pathway for `*geftiz`:
-1. Initial `*g` palatalizes before front vowel `*e` → `*ʤ` (PWGmc/pre-OE)
-2. `*e` diphthongizes after initial palatal → `*ie` (WS palatal diphthongization)
-3. Final `*-iz` lost by regular apocope after heavy syllable
+This means i-umlaut applies BEFORE any OE-specific changes like WS palatal
+diphthongization. The chronology for `*geftiz` is:
 
-WS result: `ġieft`
-Non-WS result: `ġift` (no palatal diphthongization)
+1. PGmc `*geftiz` — the *-iz suffix triggers i-umlaut
+2. **I-umlaut**: `*e` → `*i` (Proto-Germanic level, very early)
+3. PWGmc `*giftiz` — vowel is now `*i`, not `*e`
+4. Initial `*g` palatalizes before front vowel `*i` → `*ʤ`
+5. WS palatal diphthongization: `*e` → `*ie` — **DOES NOT APPLY** (no `*e` present)
+6. Final `*-iz` lost by regular apocope after heavy syllable
 
-### Attestation
+Result: `ġift` in **all OE dialects**, including West Saxon.
 
-Campbell shows both forms:
-- WS: `giefu`, `giefan` (with diphthong)
-- Kentish/Anglian: `gift` in compound `giftelic` (§348 fn.2)
+Compare with `*gebaną` → `giefan`:
+1. PGmc `*gebaną` — the *-ăną infinitive has NO i-umlaut trigger
+2. I-umlaut: does not apply (no *-i- in following syllable)
+3. PWGmc `*gebăn` — vowel remains `*e`
+4. Initial `*g` palatalizes before front vowel `*e` → `*ʤ`
+5. **WS palatal diphthongization**: `*e` → `*ie` (applies because `*e` is still present)
+6. Various other changes...
 
-Hall (1916): Lists `gifu`/`giefu` as the standard lemma.
+Result: WS `giefan` (with diphthong) vs. Anglian `gefan` (without)
 
-### Decision
+### Attestation Evidence
 
-Since the FST models **West Saxon**, the correct output is `ġieft`, not `ġift`.
-Change the TSV target from `ġift` → `ġieft`.
+**Orel (2003) p.130** explicitly gives **OE `ift`** (with short `i`) as the reflex:
+> "*geftiz sb.f.: Goth fra-gifts 'gift, betrothal', ON gipt, gift 'gift of nature,
+> endowment', **OE ift 'gift, marriage gift'**"
+
+**Kluge-Seebold (2011)** s.v. Gift explicitly gives **OE `gift`**:
+> "Aus g. *gefti- f. 'Gabe' (zu geben), auch in gt. -gifts, anord. gift(a) f.,
+> **ae. gift f.**, afr. jeft(e) m./f."
+
+**Campbell (1959) §427** lists **`gift gift`** (not `gieft`) as an example:
+> "Examples of initial palatal sounds are: ... **gift gift**, gifre greedy,
+> ginnan begin, gefan (W-S giefan) give..."
+
+Note Campbell writes `gift` but `giefan` — the difference is precisely because
+`gift` (< `*geftiz`) had i-umlaut while `giefan` (< `*gebaną`) did not.
+
+**Campbell (1959) §348 fn.2** attests `gift-` in Kentish compound `giftelic`:
+> "exceptions to the syncopation of -i- in compounds... with i-nouns, e.g. brydelíc,
+> gebyrdetíd, gewyrdelic, **giftelic**, tidelíce, hlípeget, ærdelond (Kt., Ct. 42)"
+
+**Campbell (1959) §187** confirms WS palatal diphthongization is dialectally limited:
+> "The diphthongization of front vowels after palatals is **unknown to all Kt.
+> and Merc. texts**"
+
+This is consistent with `gift` being the form everywhere — but the deeper point
+is that even WS would have `gift` because i-umlaut applies before WS palatal
+diphthongization.
+
+### The Analogical Form *gieft
+
+No source I consulted actually attests a WS form `*gieft`. If such a form existed,
+it would be **analogical** — speakers remodeling `gift` to `gieft` to match the
+pattern of related words like `giefan`, `giefu`. But the etymological dictionaries
+(Orel, Kluge-Seebold) give only `gift`/`ift`, and Campbell's citation of `gift`
+(not `gieft`) in §427 as a WS palatalization example confirms this is the
+phonologically regular outcome.
+
+### Resolution
+
+The TSV target `ġift` was correct. The FST was producing `ġieft` because
+i-umlaut was ordered AFTER WS palatal diphthongization. The chronology fix
+(moving OEIUmlaut before OEWsPalatalDiphthongization) corrects this.
 
 ### Sources
 
-- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.173
+- Cercignani, F. (1980). "Early 'Umlaut' Phenomena in the Germanic Languages",
+  *Language* 56.1, pp.126-136
 - Orel, V. (2003). *A Handbook of Germanic Etymology*, p.130
-- Campbell, A. (1959). *Old English Grammar*, §§185, 348 fn.2
-- Hall, J.R.C. (1916). *A Concise Anglo-Saxon Dictionary*, s.v. giefu
+- Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch der deutschen Sprache*, s.v. Gift
+- Campbell, A. (1959). *Old English Grammar*, §§185, 187, 348 fn.2, 427
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.173
 
 Evaluation: 309/386 OE matches (80.1%).
 
