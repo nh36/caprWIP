@@ -5670,20 +5670,40 @@ This is consistent with `gift` being the form everywhere — but the deeper poin
 is that even WS would have `gift` because i-umlaut applies before WS palatal
 diphthongization.
 
-### The Analogical Form *gieft
+### The Variant Spelling gieft
 
-No source I consulted actually attests a WS form `*gieft`. If such a form existed,
-it would be **analogical** — speakers remodeling `gift` to `gieft` to match the
-pattern of related words like `giefan`, `giefu`. But the etymological dictionaries
-(Orel, Kluge-Seebold) give only `gift`/`ift`, and Campbell's citation of `gift`
-(not `gieft`) in §427 as a WS palatalization example confirms this is the
-phonologically regular outcome.
+The spelling `gieft` does exist in scholarly sources, but requires careful interpretation:
+
+**Bright (1917)** *Anglo-Saxon Reader* glossary gives: "**gyft (gift, gieft)**, f."
+This recognizes `gieft` as a variant spelling of the 'dowry/wedding' word.
+
+**Sweet** *Anglo-Saxon Primer* prints `gieft-` forms: `giefta`, `gieftum`, `gieft-hūs`,
+`gieft-līc`. However, Sweet explicitly states in the preface:
+> "The spelling has been made **rigorously uniform** throughout on an early
+> West-Saxon basis."
+
+Sweet's forms are **normalized editorial spellings**, not diplomatic manuscript readings.
+
+**Bosworth-Toller** uses `gift`/`gyft` as the headword for 'dowry, marriage', and
+`gifu`/`giefu` for ordinary 'gift, grace' — NOT `gieft` as a main headword.
+
+**The etymological dictionaries** (Orel, Kluge-Seebold) give only `gift`/`ift`.
+
+**Campbell §427** lists `gift gift` (not `gieft`) as the WS palatalization example.
+
+**Interpretation**: The form `gieft` exists as a later variant (possibly analogical to
+`giefan`, `giefu`), but `gift` is the primary and phonologically regular outcome.
+The etymological dictionaries' consistent use of `gift`/`ift` and Campbell's choice
+of `gift` for his exemplary form both indicate that `gift` — not `gieft` — is the
+inherited, lautgesetzlich form.
+
+For the FST, which models regular sound change, the target should be `ġift`.
 
 ### Resolution
 
-The TSV target `ġift` was correct. The FST was producing `ġieft` because
-i-umlaut was ordered AFTER WS palatal diphthongization. The chronology fix
-(moving OEIUmlaut before OEWsPalatalDiphthongization) corrects this.
+The TSV target `ġift` is correct as the phonologically regular outcome. The FST
+was producing `ġieft` because i-umlaut was ordered AFTER WS palatal diphthongization.
+The chronology fix (moving OEIUmlaut before OEWsPalatalDiphthongization) corrects this.
 
 ### Sources
 
@@ -5693,6 +5713,8 @@ i-umlaut was ordered AFTER WS palatal diphthongization. The chronology fix
 - Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch der deutschen Sprache*, s.v. Gift
 - Campbell, A. (1959). *Old English Grammar*, §§185, 187, 348 fn.2, 427
 - Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic*, p.173
+- Bright, J.W. (1917). *An Anglo-Saxon Reader* (4th ed.), glossary s.v. gyft
+- Sweet, H. *An Anglo-Saxon Primer*, preface and glossary
 
 Evaluation: 309/386 OE matches (80.1%).
 
