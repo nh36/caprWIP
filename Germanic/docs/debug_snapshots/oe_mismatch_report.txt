@@ -1,9 +1,9 @@
-Total mismatches: 62
+Total mismatches: 61
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      3
   Documented exceptions:       4
-  Phonology (core buckets):    16
+  Phonology (core buckets):    15
   Phonology (other buckets):   39
 
 === CORE BUCKETS ===
@@ -11,7 +11,6 @@ Total mismatches: 62
   fronting_missing__afb: 1
   breaking_missing__expected_eo: 2
   breaking_missing__expected_eo_got_e: 3
-  breaking_missing__expected_ie_got_i: 1
   long_vowel_missing: 4
   no_output: 2
   palatalization_missing: 2
@@ -77,9 +76,6 @@ breaking_missing__expected_eo_got_e (3):
   *fedwōrez -> fedwore (expected fēower)
   *xemenăz -> hemen (expected heofon)
   *weslon -> weslon (expected weosule)
-
-breaking_missing__expected_ie_got_i (1):
-  *geftiz -> ġift (expected ġieft)
 
 long_vowel_missing (4):
   *bō -> bu (expected bā]] [[þā)
