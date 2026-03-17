@@ -10302,3 +10302,59 @@ create ie from e before i-umlaut raises e to i).
 If ġift is correct, update TSV. If ġieft is correct, we need a more sophisticated
 solution (possibly splitting i-umlaut into pre-palatalization and post-palatalization
 stages, or flagging this as dialectal variation).
+
+### Correction: *geftiz → ġift, not ġieft (2026-03-17)
+
+The earlier fix (2026-03-10) changing the TSV target from `ġift` to `ġieft` needs revision.
+
+**Background: WS palatal diphthongization vs i-umlaut**
+
+Both WS palatal diphthongization and i-umlaut affect front vowels, but they interact differently depending on whether an i-umlaut trigger is present:
+
+1. **Without i-umlaut trigger** (e.g., *gebaną 'to give'):
+   - *gebaną → palatalization → *ġebaną
+   - WS palatal diphthongization: *e → *ie after ġ → *ġiebaną
+   - Result: WS `giefan` with diphthong ie
+
+2. **With i-umlaut trigger** (e.g., *geftiz 'gift'):
+   - *geftiz → palatalization → *ġeftiz
+   - i-umlaut: *e → *i (triggered by *-iz) → *ġiftiz
+   - WS palatal diphthongization: no effect (rule targets *e, not *i)
+   - Result: `ġift` with simple i
+
+**Why i-umlaut precedes WS palatal diphthongization**
+
+This chronology is confirmed by the *skaiθiz → sċēaþ case documented above. For sċēaþ to
+show ēa (from ǣ via WS palatal diph), the i-umlaut (*ā → *ǣ) must have already applied.
+The same chronology means that for *geftiz, i-umlaut (*e → *i) applies first, leaving no
+*e for WS palatal diphthongization to target.
+
+**Attested forms**
+
+Both forms exist in the historical record, but they represent different dialects:
+- **Anglian/Kentish**: `gift` (Campbell §348 fn.2: compound `giftelic`)
+- **West Saxon**: presumably `gieft` (analogical to giefan, giefu, etc.)
+
+The WS `gieft` form, if it existed, would be analogical - not the regular phonological outcome. 
+Speakers may have remodeled *gift to *gieft to match the pattern of related words like giefan.
+
+**Evidence for `gift` as the regular outcome**
+
+Orel (2003) p.130 reconstructs:
+> "*geftiz sb.f.: Goth fra-gifts 'gift, betrothal', ON gipt, gift 'gift of nature, endowment', **OE ift 'gift, marriage gift'**"
+
+Orel gives OE `ift` with short i - the expected outcome with i-umlaut preceding WS palatal
+diphthongization.
+
+**Decision**
+
+Since our FST models regular sound changes (not analogical leveling), the target should be
+the phonologically regular form `ġift`, not the potentially analogical WS form `ġieft`.
+
+The Anglian form is **more conservative** in this case - it preserves the regular outcome
+of the sound changes, while WS may have introduced analogical ie by paradigm leveling with
+giefan/giefu.
+
+**TSV correction**: Row 2040 COUNTERPART changed from `ġieft` back to `ġift`.
+
+**Mismatch count**: 62 → 61
