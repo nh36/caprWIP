@@ -10491,14 +10491,126 @@ to `[EnglishStarLabial | EnglishStarLiquid]`.
 
 **Result:** `*juką` → `ġeoc` ✓
 
-### Sources
+### Sources and Scholarly Discussion (5+ sources)
 
-- Campbell (1959) §171: "After [PGmc] *j there was a strong tendency in W-S and 
-  North. ... to develop a glide front vowel to facilitate the passage from front 
-  consonant to back vowel." The glide is "proved by cases in which the accent is 
-  transferred to it."
-- Campbell (1959) §172: Lists `iuc, gioc, geoc` as variant spellings of 'yoke',
-  showing the `e/i` glide written "with considerable regularity" in WS.
-- Ringe & Taylor (2014) p.5: Transcribe `geoc` as /jok/, suggesting the
-  `e` may be orthographic rather than phonetic in later WS. But Campbell's 
-  evidence for accent transfer supports a genuine phonetic glide in earlier stages.
+#### 1. Campbell (1959) §§171–173: The Core Evidence
+
+**§171** describes the phenomenon:
+> "After [PGmc *j] there was a strong tendency in W-S and North., which appears 
+> less markedly in Kt. and Merc., to develop a glide front vowel to facilitate 
+> the passage from front consonant to back vowel. The main accent of the word 
+> remained on the back vowel, so that no diphthong of the typical OE kind with 
+> an accented front vowel as first element was formed."
+
+Campbell addresses the question of orthographic vs. phonetic reality:
+> "It has, therefore, sometimes been argued that the symbol (e or i), which is 
+> generally supposed to represent a glide, is merely a diacritic to indicate 
+> the palatal nature of the preceding consonant. **The existence of the glide 
+> vowel is, however, proved by cases in which the accent is transferred to it.**"
+
+**§172** documents the WS spelling variants:
+> "for Prim. Gmc. initial *jū we find iū (gū), giū, geū... e.g. iung, giong, geong 
+> young, iugup, giogup, geogup youth, **iuc, gioc, geoc yoke**"
+
+**§173** provides Campbell's "accent transfer" proof — the key evidence:
+> "Other North. forms with glides are **geong way, geonga go** (both with í 
+> transferred from past **géong**)"
+
+Campbell's argument is that in the verb *gangan* 'to go', the past tense *géong* 
+had a long stressed vowel. This long vowel somehow "transferred" to the glide 
+in related forms *geong* 'way' and *geonga* 'go', creating words where the 
+accent sits on what was originally a transitional glide. This would be 
+impossible if the glide were merely orthographic.
+
+**§176** describes an alternate development where the glide itself takes the accent 
+and the original back vowel is lost: `ju > íu > ý > í`, producing North. `ging` 
+beside WS `geong` 'young'.
+
+#### 2. Hogg (1992) §7.72–74: The Phonological Framework
+
+Hogg confirms the phenomenon in his authoritative grammar, noting that WS exhibits:
+> "Under the influence of an initial palatal consonant [j, ʃ] — spelled ⟨g⟩ and 
+> ⟨sc⟩ — the mid and low front vowels were diphthongised to ⟨ie⟩ and ⟨ea⟩. 
+> This process... is called palatal diphthongisation."
+
+Hogg also gives the etymological derivation:
+> "IE *jugóm 'yoke' (cf. Skt yugá-, Gk ζυγόν, Lat. iugum, Gmc *jukan (> Go. juk, 
+> OE geoc))"
+
+This confirms that *juka- is the correct PGmc reconstruction, and that the OE 
+reflex is indeed `geoc`.
+
+#### 3. Fulk (2018): Comparative Evidence
+
+Fulk's *Comparative Grammar of the Early Germanic Languages* §4.4 gives the 
+cognate set:
+> "OIcel. ok, OE geoc, OHG joh beside juh and OS juk = Gk. ζυγόν, Lat. jugum 
+> 'yoke' < PIE *yugom"
+
+Note the interesting distribution: ON loses *j entirely (giving `ok`), OHG 
+preserves *j without a glide (`joh`), but OE develops the characteristic 
+glide (`geoc`). This is a specifically Anglian/WS development.
+
+Fulk also notes (§4.8n9):
+> "In a form such as geol(o)ca 'yolk', from WGmc. *jelokôn, e would have been 
+> diphthongized to ie by the initial palatal consonant, and this appears to 
+> have been converted to io (later eo) by back mutation."
+
+This shows the interaction of palatal diphthongization with other processes.
+
+#### 4. Kroonen (2013): The Proto-Germanic Reconstruction
+
+Kroonen's *Etymological Dictionary of Proto-Germanic* s.v. *juka- confirms:
+> "*juka- n. 'yoke' — Go. juk n. 'id.', ON ok n. 'id.', Far. ok n. 'id.', Elfd. 
+> uok n. 'id.', **OE geoc n. 'id.'**, E yoke, OS juk n. 'id.', Du. juk n. 'id.', 
+> OHG joh n. 'id.', G Joch n. 'id.' > *iug-o- (IE)"
+
+Kroonen reconstructs PGmc *juka- (with *-a stem), matching the form we use.
+
+#### 5. Kluge-Seebold (25th ed.): German Etymology
+
+The standard German etymological dictionary confirms:
+> "g. *juka- n. 'Joch', auch in gt. juk, anord. ok, ae. geoc"
+
+This independently confirms the PGmc reconstruction and the OE form.
+
+#### 6. Ringe & Taylor (2014): The Phonetic Question
+
+R&T transcribe `geoc` as /jok/ (p.5), suggesting the `e` may be purely 
+orthographic in later WS — simply a convention for writing [j] before a 
+back vowel. They also note that `geong ~ iung` 'young' is "exceptionally" 
+[juŋ], meaning the `e` in `geong` has no phonetic value.
+
+However, R&T's analysis applies to *later* WS. Campbell's accent-transfer 
+evidence from forms like `geong` 'way' (with long vowel from past `géong`) 
+suggests the glide was phonetically real in *earlier* stages. The development 
+appears to be:
+- **Early OE**: genuine phonetic glide [jeu̯]
+- **Later WS**: purely orthographic convention [jo]
+
+#### 7. Bright's Anglo-Saxon Reader (1891) §74
+
+Bright's grammar states:
+> "initial *ju becomes geo, gio"
+
+This is a traditional statement of the rule, reflecting 19th-century understanding.
+
+### Summary: Phonetic vs. Orthographic
+
+The scholarly consensus shows a nuanced picture:
+
+1. **Early OE**: The glide was phonetically real — a transitional vowel 
+   facilitating the articulation of palatal + back vowel sequences.
+   
+2. **Evidence for phonetic reality**: Campbell's accent-transfer argument 
+   (géong past → geong 'way' with stress on glide).
+   
+3. **Later WS**: The glide became purely orthographic — a spelling convention 
+   for [j] before back vowels, with no phonetic value.
+   
+4. **Dialect variation**: North. `giung`, Mercian forms without glide, etc.
+
+For FST purposes, we model the phonologically real early stage, inserting 
+a glide vowel `*e` that later undergoes the same development as other vowels.
+This produces the correct orthographic output `geoc` regardless of whether 
+the `e` was still phonetic by the time of our target texts.
