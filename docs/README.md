@@ -1,37 +1,41 @@
 # CAPR Documentation Index
 
-This index points to the working documents we rely on most often. Use it as the
-jumping-off point before editing code or linguistics files.
+This index points to the working documents across the project.
 
+## Project Overview
 
-## Getting the stack running
-- [`README.md`](../README.md) – quick start plus project overview.
-- [`docs/runbook.md`](runbook.md) – step-by-step checklist (Docker, Caddy,
-  regression harness, tear-down).
-- [`SETUP.md`](../SETUP.md) – full install notes (Docker vs. manual).
-- [`USAGE.md`](../USAGE.md) – interface walkthrough and basic FST debugging tips.
+- [../README.md](../README.md) — Project landing page with quick start
 
-## Day-to-day reference
-- [`DEV_NOTES.md`](../DEV_NOTES.md) – latest hand-off; add a dated section for
-  each session.
-- [`docs/regression_checks.md`](regression_checks.md) – design of the API smoke
-  test harness (`server/tools/api_regression.py`).
-- [`docs/REFISHING_BEHAVIOR.md`](REFISHING_BEHAVIOR.md) – backend behaviour when
-  toggling “Use new FST?”.
+## Component Documentation
 
-## Germanic workbench
-- [`docs/germanic_transducer_report.md`](germanic_transducer_report.md) –
-  coverage stats, recent fixes, next steps.
-- [`docs/germanic_notes/README.md`](germanic_notes/README.md) – links to the
-  supporting Word docs from the October 2025 push.
-- [`docs/germanic_refresh_template.md`](germanic_refresh_template.md) – repeatable
-  checklist for exporting/comparing Germanic snapshots.
+### Germanic Pipeline
+- [../Germanic/README.md](../Germanic/README.md) — Germanic pipeline overview
+- [../Germanic/docs/DEV_NOTES.md](../Germanic/docs/DEV_NOTES.md) — Research log and phonological decisions
+- [../Germanic/docs/debug_snapshots/](../Germanic/docs/debug_snapshots/) — Timestamped mismatch reports
+- [../Germanic/docs/analysis/](../Germanic/docs/analysis/) — Investigation notes
 
-## Backend & pipeline
-- [`server/README.md`](../server/README.md) – Flask routes and dependencies.
-- [`server/pipeline/README.md`](../server/pipeline/README.md) – lexicon/pipeline
-  scripts.
-- [`cognate-app/README.md`](../cognate-app/README.md) – Svelte interface notes.
+### Burmish Pipeline
+- [../Burmish/README.md](../Burmish/README.md) — Burmish pipeline overview
 
-When adding a new reference doc, drop it into `docs/` (or a subfolder) and
-update this index so future hand-offs stay discoverable.
+### Shared Application
+- [../app/README.md](../app/README.md) — Web application (Flask + Svelte)
+
+## Setup & Operations
+
+- [../SETUP.md](../SETUP.md) — Full installation guide (Docker + manual)
+- [../USAGE.md](../USAGE.md) — UI walkthrough
+- [runbook.md](runbook.md) — Day-to-day operational checklist
+- [regression_checks.md](regression_checks.md) — API smoke test design
+- [REFISHING_BEHAVIOR.md](REFISHING_BEHAVIOR.md) — Backend behavior documentation
+
+## Reference Materials
+
+- [references/](references/) — Scholarly sources (PDFs + text extracts)
+  - Grammars: Campbell, Hogg, Ringe/Taylor, Fulk
+  - Etymological dictionaries: Kroonen, Orel, Kluge-Seebold
+  - Articles: Lloyd, Cercignani, Stiles, etc.
+- [references/oe_sound_change_index.md](references/oe_sound_change_index.md) — Index of OE sound changes with source references
+
+## Historical / Archived
+
+- [plans/](plans/) — Old planning documents
