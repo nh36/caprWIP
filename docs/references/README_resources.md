@@ -56,6 +56,16 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 - `aneightcenturyl00librgoog.txt`  
   Hessels / early glossary material (Eighth-Century Latin-Anglo-Saxon Glossary).
 
+## Old English primers and readers
+
+- `sweet_anglo_saxon_primer.txt` / `.pdf`  
+  Sweet, *An Anglo-Saxon Primer* (Oxford University Press).  
+  Introductory grammar with notes and glossary. ~7,000 lines.
+
+- `bright_anglo_saxon_reader.txt` / `.pdf`  
+  Bright, *An Anglo-Saxon Reader* (4th ed., 1917).  
+  Reader with notes, complete glossary, chapter on versification, and outline of OE grammar. ~27,700 lines.
+
 ## Articles and special studies
 
 - `vine_2019_greek_stomylos.txt`  
