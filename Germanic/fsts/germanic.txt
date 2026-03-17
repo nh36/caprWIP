@@ -1758,10 +1758,12 @@ define OEUnstressedEIContraction [
 # R/T §6.9.4: Back umlaut (WS). *e → eo only before l/r/labial + *u.
 # *i → io/eo before l/r/labial + back vowel. *æ → ea before l/r/labial + back vowel.
 # Back umlaut of *e is more restricted than *i and *æ in WS.
+# NOTE: Use separate symbols {*e} {*o} not multichar {*eo} for proper pipeline handling.
+# NOTE: Context must NOT be optional — [X | Y] not (X | Y).
 define OEBackMutation [
-    {*e} -> {*eo} || _ (EnglishStarLabial | EnglishStarLiquid) {*u},
-    {*i} -> {*eo} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger,
-    {*æ} -> {*ea} || _ (EnglishStarLabial | EnglishStarLiquid) EnglishBackMutationTrigger
+    {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ];
 
 # R/T vol.2 §6.9.7: WS palatal umlaut.
@@ -1866,6 +1868,25 @@ define OEVelarFricativePalatalization [
     {*ɣ} -> {*j} || _ {*j}
 ]
     .o. EnglishStarAlphabet*;
+
+# Campbell §§171-172: WS palatal glide before back vowels.
+# After initial palatalized consonants, a glide vowel develops before back vowels.
+# Examples: *juką → ġeoc 'yoke', *jungaz → ġeong 'young', *jugunþiz → ġeoguþ 'youth'
+# Campbell §172: "for Prim. Gmc. initial *jū we find iū (gū), giū, geū... geoc yoke"
+# The glide+u combination is written 'eo' or 'io' in WS.
+# Only applies word-initially (Campbell: "initial *jū").
+define OEWsPalatalGlide [
+    # WS palatal glide insertion: insert *e between initial palatal and *u
+    # Creates *eo (later eo) — Campbell §§171-172: geoc 'yoke', geoguþ 'youth'
+    # Cannot use epenthesis (0 ->) with multichar symbols; use direct replacement.
+    {*j} {*u} -> {*j} {*e} {*u} || .#. _
+] .o. [
+    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _
+] .o. [
+    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _
+] .o. [
+    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _
+];
 
 # Pragmatic approach: encode heavy-syllable apocope directly rather than using
 # a two-step mark-then-delete system (which misbehaves under composition due to
@@ -1999,6 +2020,9 @@ define OERMetathesis [
 define EnglishProtoToOE (
     PWGmcChanges
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
+    # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
+    # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
+    .o. OEWsPalatalGlide
     .o. NWGmcULowering
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
@@ -2055,6 +2079,7 @@ define EnglishProtoToOE (
     .o. SieversLawSyncope
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    # WS palatal glide moved earlier (before u-lowering) at line ~2023
     .o. OEPostVelarWLoss
     # I-umlaut must precede WS palatal diphthongization: *skaiθiz → *skǣθ (i-umlaut)
     # → sċēaþ (WS palatal diph of ǣ → ēa after ʃ). Campbell §185 confirms both
@@ -2122,6 +2147,8 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
+    # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
+    .o. OEWsPalatalGlide
     .o. NWGmcULowering
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
@@ -2147,6 +2174,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PGmcBAllophony
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    # WS palatal glide moved earlier (before u-lowering)
     .o. OEPostVelarWLoss
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
