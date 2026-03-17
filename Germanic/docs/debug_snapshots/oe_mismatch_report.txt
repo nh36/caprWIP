@@ -9,9 +9,9 @@ Total mismatches: 62
 === CORE BUCKETS ===
   i_umlaut_missing_true: 1
   fronting_missing__afb: 1
-  breaking_missing__expected_ea_got_a: 1
   breaking_missing__expected_eo: 2
   breaking_missing__expected_eo_got_e: 3
+  breaking_missing__expected_ie_got_i: 1
   long_vowel_missing: 4
   no_output: 2
   palatalization_missing: 2
@@ -26,7 +26,7 @@ Total mismatches: 62
   breaking_extra__eo_for_high: 3
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
-  breaking_extra__wrong_form: 2
+  breaking_extra__wrong_form: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
@@ -48,6 +48,7 @@ Total mismatches: 62
   cons_mismatch__f_vs_b__intervocalic: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__h_vs_m__cluster: 1
+  cons_mismatch__length_diff: 1
   cons_mismatch__n_vs_-__word_final: 1
 --- suffix_form sub-buckets ---
 
@@ -65,12 +66,6 @@ fronting_missing__afb (1):
   >> LIKELY: Often TSV issue — proto is one form class (verb), target is another (noun)
   >> ACTION: Check paradigm cell alignment; may need different proto form
 
-breaking_missing__expected_ea_got_a (1):
-  *skaiθiz -> sċǣþ (expected sċēaþ)
-  >> ISSUE: Expected ēa but got short a/æ
-  >> LIKELY: Breaking not applying; may also involve length issues
-  >> ACTION: Check breaking before dental fricatives (þ/ð)
-
 breaking_missing__expected_eo (2):
   *juką -> ġoc (expected ġeoc)
   *jugunθiz -> ġugȳþ (expected ġeoguþ)
@@ -82,6 +77,9 @@ breaking_missing__expected_eo_got_e (3):
   *fedwōrez -> fedwore (expected fēower)
   *xemenăz -> hemen (expected heofon)
   *weslon -> weslon (expected weosule)
+
+breaking_missing__expected_ie_got_i (1):
+  *geftiz -> ġift (expected ġieft)
 
 long_vowel_missing (4):
   *bō -> bu (expected bā]] [[þā)
@@ -140,9 +138,8 @@ breaking_extra__ie_for_e (1):
 breaking_extra__ie_for_i (1):
   *θrejez -> þrīe (expected þrī)
 
-breaking_extra__wrong_form (2):
+breaking_extra__wrong_form (1):
   *xlaxjăną -> hliehan (expected hlæhhan)
-  *skellinăz -> sċiellen (expected sċilling)
   >> ISSUE: Breaking difference plus consonant skeleton mismatch
   >> LIKELY: TSV proto/target are different lexemes or form classes
   >> ACTION: Verify TSV alignment; likely needs different proto
@@ -210,6 +207,9 @@ cons_mismatch__f_vs_s__cluster (1):
 
 cons_mismatch__h_vs_m__cluster (1):
   *tauxmăz -> tēahm (expected tēam)
+
+cons_mismatch__length_diff (1):
+  *skellinăz -> sċillen (expected sċilling)
 
 cons_mismatch__n_vs_-__word_final (1):
   *sundrōjăną -> sundrian (expected sundor-)
