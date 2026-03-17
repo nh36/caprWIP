@@ -1,7 +1,7 @@
 services:
   backend:
     build:
-      context: server
+      context: backend
       dockerfile: Dockerfile
     entrypoint:
       - flask
@@ -13,7 +13,7 @@ services:
     ports:
       - 5001:5000
     volumes:
-      - ./server:/usr/app                    # Backend code
+      - ./backend:/usr/app                   # Backend code
       - ./Germanic/data:/usr/app/data        # Germanic data files
       - ./Germanic/fsts:/usr/app/fsts        # Germanic FST sources
       - ./Germanic/tools:/usr/app/tools      # Germanic tools
@@ -22,9 +22,9 @@ services:
       - frontend
   frontend:
     build:
-      context: cognate-app
+      context: frontend
       dockerfile: Dockerfile
     ports:
       - 8080:8080
     volumes:
-      - ./client:/usr/app
+      - ./frontend:/usr/app
