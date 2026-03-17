@@ -10429,3 +10429,76 @@ giefan/giefu.
 **TSV correction**: Row 2040 COUNTERPART changed from `ġieft` back to `ġift`.
 
 **Mismatch count**: 62 → 61
+
+---
+
+## OE ġeoc 'yoke' — Palatal Glide before Back Vowel (not breaking)
+
+**Date:** 2026-03-17
+**Mismatch:** `*juką` → FST `ġoc` | Expected `ġeoc`
+**Status:** NEEDS NEW RULE — Palatal glide insertion
+
+### The Problem
+
+FST produces `ġoc`, but target is `ġeoc`. The mismatch report classified this as
+"breaking_missing__expected_eo", but this is incorrect — the `eo` in `ġeoc` is NOT
+from breaking.
+
+### Campbell's Explanation
+
+Campbell (1959) §172 explains this:
+
+> "In W-S the glide is written with considerable regularity... for Prim. Gmc.
+> initial *jū we find iū (gū), giū, geū... e.g. iung, giong, geong young, iugup,
+> giogup, geogup youth, **iuc, gioc, geoc yoke**"
+
+The `e/eo` is a **palatal glide** that develops to facilitate the transition from
+a palatalized consonant to a following back vowel. The sequence for `*juką`:
+
+1. `*j` palatalizes to `*ʤ` (before any vowel)
+2. A glide vowel `e/i` develops between palatalized `*ʤ` and back vowel `*u`
+3. The `*u` lowers to `o` by regular *u > *o before low vowels
+4. Result: `ġeoc` (with the `e` being the palatal glide)
+
+This is fundamentally different from breaking:
+- **Breaking**: front vowel → diphthong before r/l/h + consonant
+- **Palatal glide**: glide vowel inserted after palatal consonant, before back vowel
+
+Campbell §171:
+> "After [palatal] there was a strong tendency in W-S and North... to develop
+> a glide front vowel to facilitate the passage from front consonant to back vowel."
+
+### Required Fix
+
+The FST needs a new rule for palatal glide insertion:
+- After initial *j (and palatalized *ʤ, *ʧ, *ʃ)
+- Before *u
+- Insert glide vowel *e
+
+### Fix Implemented (2026-03-17)
+
+Added `OEWsPalatalGlide` rule in `germanic.txt`. Key implementation details:
+
+1. **Cannot use epenthesis** (`0 -> {*e}`) with foma multichar symbols — must 
+   use direct replacement: `{*j} {*u} -> {*j} {*e} {*u}`
+2. **Must precede u-lowering** so the rule can target `*u` (which later becomes `*o`)
+3. **Parentheses make context optional in foma** — use `[X | Y]` for required
+   alternation, not `(X | Y)` which makes the group optional
+
+Also fixed spurious `*e → *eo` in `OEBackMutation` caused by optional parentheses
+making labial/liquid context optional; changed `(EnglishStarLabial | EnglishStarLiquid)`
+to `[EnglishStarLabial | EnglishStarLiquid]`.
+
+**Result:** `*juką` → `ġeoc` ✓
+
+### Sources
+
+- Campbell (1959) §171: "After [PGmc] *j there was a strong tendency in W-S and 
+  North. ... to develop a glide front vowel to facilitate the passage from front 
+  consonant to back vowel." The glide is "proved by cases in which the accent is 
+  transferred to it."
+- Campbell (1959) §172: Lists `iuc, gioc, geoc` as variant spellings of 'yoke',
+  showing the `e/i` glide written "with considerable regularity" in WS.
+- Ringe & Taylor (2014) p.5: Transcribe `geoc` as /jok/, suggesting the
+  `e` may be orthographic rather than phonetic in later WS. But Campbell's 
+  evidence for accent transfer supports a genuine phonetic glide in earlier stages.
