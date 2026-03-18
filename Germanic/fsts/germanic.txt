@@ -1689,6 +1689,14 @@ define OEIUmlautDiphthong [
     {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
+# Loss of *w before unstressed *i (R/T vol.2 §6.7.1, p.258-259; Campbell §406).
+# Non-word-initial *w was regularly lost before fully unstressed *i.
+# Example: PGmc *saiwiz 'sea' > *sāwi > *sǣi > OE sǣ
+# Must apply BEFORE i-umlaut (so *ā can umlaut to *ǣ) but AFTER ai monophthongization.
+define OEWLossBeforeI [
+    {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
+];
+
 define OEIUmlaut OEIUmlautFronting
     .o. OEIUmlautRaising
     .o. OEIUmlautDiphthong;
@@ -2081,6 +2089,8 @@ define EnglishProtoToOE (
     .o. OEVelarPalatalization
     # WS palatal glide moved earlier (before u-lowering) at line ~2023
     .o. OEPostVelarWLoss
+    # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ
+    .o. OEWLossBeforeI
     # I-umlaut must precede WS palatal diphthongization: *skaiθiz → *skǣθ (i-umlaut)
     # → sċēaþ (WS palatal diph of ǣ → ēa after ʃ). Campbell §185 confirms both
     # sċǣþ and sċēaþ exist; the ēa form requires i-umlauted ǣ as input.
@@ -2176,6 +2186,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEVelarPalatalization
     # WS palatal glide moved earlier (before u-lowering)
     .o. OEPostVelarWLoss
+    # Loss of *w before unstressed *i (R/T §6.7.1)
+    .o. OEWLossBeforeI
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
