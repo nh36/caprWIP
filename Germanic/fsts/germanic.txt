@@ -328,6 +328,8 @@ define pgrmWeakTailVowel [
     w:{*w} ō:{*ō} n:{*n} |
     u:{*u} z:{*z} |
     ą:{*ą} |
+    # ja-stem neuter nom/acc sg (2026-03-18): *-ją, e.g. *natją 'net'
+    j:{*j} ą:{*ą} |
     ē:{*ē} n:{*n} ą:{*ą} |
     ē:{*ē} r:{*r} |
     ī:{*ī} n:{*n} |
@@ -856,7 +858,7 @@ define PGmcBAllophony [
 # after OEARestoration to fix chronology. A-restoration must see the
 # weak-tail endings before they are apocopated.
 # PGmcBAllophony is deliberately excluded here and placed after
-# PWGmcJGemination in EnglishProtoToOE. R/T vol.2 p.50: j-gemination
+# PWGmcJGemination in PWGmcChanges. R/T vol.2 p.50: j-gemination
 # operates on underlying /b/, not the allophonic [β]. The allophonic
 # split is a late phonetic rule that must follow gemination.
 define PGmcConsonantRules PGmcFinalZLoss
@@ -1145,14 +1147,46 @@ define PWGmcPreFinalRShortening [
     {*ō} -> {*a} || _ {*r} .#.
 ];
 
+# West Germanic j‑gemination after light syllables (short vowel + single consonant).
+# Fulk §6.15: "Before j the change regularly applies to any consonant other than r
+# (including r < z) after a short vowel."
+#
+# CHRONOLOGY FIX (2026-03-18): Moved here from later in the pipeline.
+# J-gemination must precede PWGmcSyllabicJ because:
+# 1. Gemination applies to *Cj (consonant directly before *j)
+# 2. After gemination, *natją → *nattją (now has cluster *tt)
+# 3. PWGmcSyllabicJ only applies after SINGLE consonant, so won't match *nattją
+# 4. Result: *nattją → *nattą (j-loss after heavy) → nett (apocope)
+#
+# Per Fulk §7.11: Both geminated (betti) and non-geminated (beti) forms attest,
+# but gemination is the regular WGmc outcome.
+define PWGmcJGemination [
+    {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
+    {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
+    {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
+    {*d} -> {*d} {*d} || EnglishStarShortVowel _ {*j},
+    {*k} -> {*k} {*k} || EnglishStarShortVowel _ {*j},
+    {*g} -> {*g} {*g} || EnglishStarShortVowel _ {*j},
+    {*f} -> {*f} {*f} || EnglishStarShortVowel _ {*j},
+    {*s} -> {*s} {*s} || EnglishStarShortVowel _ {*j},
+    {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
+    {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
+    {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
+    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
+];
+
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
-# Order: monophthongization, ij-contraction, syllabic j, lþ-voicing, dental hardening.
+# Order: monophthongization, ij-contraction, J-GEMINATION, syllabic j, lþ-voicing, dental hardening.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
+#
+# CRITICAL: PWGmcJGemination must precede PWGmcSyllabicJ (Fulk §6.15).
+# Gemination creates heavy syllables that block syllabic-j vocalization.
 define PWGmcChanges [
     PWGmcAiMonophthongization
     .o. PWGmcIjContraction
+    .o. PWGmcJGemination
     .o. PWGmcSyllabicJ
     .o. PWGmcLThVoicing
     .o. PWGmcDentalHardening
@@ -1701,22 +1735,6 @@ define OEIUmlaut OEIUmlautFronting
     .o. OEIUmlautRaising
     .o. OEIUmlautDiphthong;
 
-# West Germanic j‑gemination after light syllables (short vowel + single consonant).
-define PWGmcJGemination [
-    {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
-    {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
-    {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
-    {*d} -> {*d} {*d} || EnglishStarShortVowel _ {*j},
-    {*k} -> {*k} {*k} || EnglishStarShortVowel _ {*j},
-    {*g} -> {*g} {*g} || EnglishStarShortVowel _ {*j},
-    {*f} -> {*f} {*f} || EnglishStarShortVowel _ {*j},
-    {*s} -> {*s} {*s} || EnglishStarShortVowel _ {*j},
-    {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
-    {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
-    {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
-    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
-];
-
 # Sievers' Law Syncope (PWGmc): *-CijV- → *-CjV-
 # R/T vol.2 p.157: "the sequence *-CijV- was syncopated to *-CjV-"
 # This syncope removes the Sievers' Law *i that blocked j-gemination in heavy stems.
@@ -2073,10 +2091,10 @@ define EnglishProtoToOE (
     # OESecondaryNasalization now simply checks `_ {*n} .#.` — true coda position
     .o. OESecondaryNasalization
     .o. OEFinalSchwaApocope
-    # PWGmc j-gemination is historically a PWGmc change (R/T §3.1.2), but is
-    # placed here in the pipeline because it must see *j tokens after schwa
-    # apocope has exposed them, and before i-umlaut consumes the trigger.
-    .o. PWGmcJGemination
+    # PWGmc j-gemination moved to PWGmcChanges (2026-03-18). Must run BEFORE
+    # PWGmcSyllabicJ so that *natją → *nattją (gemination creates heavy stem).
+    # See DEV_NOTES.md "OE nett 'net': ja-stem Gemination Chronology Bug"
+    #
     # PGmc *b allophony (*b → *β after vowels/liquids) placed AFTER j-gemination.
     # R/T vol.2 p.50: j-gemination operates on underlying /b/ (e.g. *habjan- → *habban-).
     # Allophonic [β] only surfaces where *b remains a singleton after gemination.
@@ -2180,7 +2198,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEVelarFricativePalatalization
     .o. OEARestoration
     .o. OEFinalSchwaApocope
-    .o. PWGmcJGemination
     .o. PGmcBAllophony
     .o. OESkPalatalization
     .o. OEVelarPalatalization

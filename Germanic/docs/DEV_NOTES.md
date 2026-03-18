@@ -11130,3 +11130,120 @@ rather than `æ`. The a-stem reconstruction is the correct phonological input.
 Current: `PROTOFORM = *sapiz`
 Proposed: `PROTOFORM = *sapą`
 Note: "OE neut. a-stem (Hall, K-S); i-stem *sapiz → *sep via i-umlaut (Campbell §193); dissolution from n-stem (Kroonen)"
+
+---
+
+## OE nett 'net': ja-stem Gemination Chronology Bug (2026-03-18)
+
+### The Problem
+
+The FST produces `*natją → nete` instead of expected `nett` (or `net`).
+
+**Full trace:**
+```
+ProtoInput:   *n*a*t*j*ą
+WestGermanic: *n*a*t*i      ← PWGmcSyllabicJ converts *j*ą → *i
+...
+JGemination:  *n*æ*t*i      ← No gemination (no *j left!)
+...
+Orthography:  nete
+```
+
+### Scholarly Sources on the Correct OE Form
+
+**Orel (2003), s.v. `*natjan`:**
+> "Goth nati 'net', ON net id., **OE nett** id., OFris net, nette id., OS netti id., OHG nezzi id."
+
+Orel clearly gives the OE form as `nett` (with geminate -tt-), not `net` (single -t-).
+
+**Hall (1916), A Concise Anglo-Saxon Dictionary:**
+Lists compound forms like `ælnett`, `fengnett`, `fisconett`, all with -nett (geminate).
+
+**Campbell (1959), §66:**
+Notes that "Double consonant symbols are very frequently simplified at the ends of words" in OE manuscripts. So `net` and `nett` may both appear, but the underlying form has the geminate.
+
+**Campbell (1959), §607-609 (ja-stem neuters):**
+Shows the paradigm split:
+- **Short stems** (light syllable) like `spere` 'spear' → retain final `-e`
+- **Long stems** (heavy syllable) like `geswinc` 'toil' → lose final vowel
+
+The key insight: after j-gemination, `*natt-` is a **heavy** stem (short V + CC), so it should lose its final vowel.
+
+### The Chronological Error
+
+**Fulk (2018), §6.15 (West Germanic consonant gemination):**
+> "In the WGmc. protolanguage there was consonant doubling before sonorant consonants... Before j the change regularly applies to any consonant other than r (including r < z) after a short vowel."
+
+**Fulk (2018), §7.11 (ja-stems in NWGmc):**
+> "...probably also *dili* 'dill' (cf. OS *dilli*) in the Corpus Glossary, acc. sg. *dile* in EWS, as well as a few OHG forms like *beti* beside *betti* 'bed' noted below..."
+
+Note 5 of §7.11 explains that both geminated (`betti`) and non-geminated (`beti`) forms are attested, with the geminated form being the regular WGmc outcome.
+
+**R/T vol.2, §3.1.2 (p. 46):**
+> "Upon the loss of unstressed *a and *ą, preceding postconsonantal *j and *w became syllabic *i and *u respectively"
+
+This describes `PWGmcSyllabicJ`, but the **critical chronological point** is that j-gemination must precede this change (Fulk §6.15 makes clear gemination applies "before j").
+
+### Current FST Rule Order (WRONG)
+
+The current FST has:
+```
+1. PWGmcChanges (includes PWGmcSyllabicJ: *jă → *i after light syllable)
+... many rules ...
+2. PWGmcJGemination (after OEFinalSchwaApocope)
+```
+
+This order means:
+1. `*natją` → `*nati` (PWGmcSyllabicJ absorbs the *j)
+2. Later, JGemination runs but there's no *j to trigger gemination
+
+### Correct Order per Scholarship
+
+Per Fulk §6.15, the order should be:
+1. **J-gemination** applies to `*Cj` → `*CCj` (light syllables only)
+2. **J-loss/vocalization** applies after heavy syllables (which now includes newly geminated forms)
+
+Correct derivation:
+```
+*natją → *nattją (gemination: *tj → *ttj)
+       → *nattą  (j-loss after heavy syllable)
+       → nett    (apocope of *ą after heavy)
+```
+
+### TSV Data Issue
+
+The TSV expects `net` (row 2138), but scholarly sources (Orel, Hall) give `nett`.
+
+**TSV row 2138:**
+```
+ID: 2138
+PROTOFORM: *natją
+EXPECTED: net
+```
+
+This should probably be `nett` per Orel's reconstruction.
+
+### Proposed Fix
+
+**Option A: Fix FST chronology (rule reordering)**
+Move `PWGmcJGemination` before `PWGmcSyllabicJ`. This requires careful analysis of what else might break.
+
+**Option B: Condition PWGmcSyllabicJ to not apply when j-gemination would**
+Add a condition: `PWGmcSyllabicJ` only applies to *rj (since *r doesn't geminate) and to heavy stems (where *j would be lost anyway without gemination).
+
+**Option C: Fix TSV only**
+If the FST is otherwise working and `nete` is simply an acceptable archaic/dialectal variant (cf. Fulk's `beti` beside `betti`), we could mark `net` as a known exception.
+
+### Scholarly Support Summary
+
+| Source | Key Finding |
+|--------|-------------|
+| **Orel (2003)** | OE form is `nett` (geminate), from PGmc `*natjan` |
+| **Fulk §6.15** | J-gemination applies to `*Cj` before j-loss/vocalization |
+| **Fulk §7.11** | Notes both `beti` and `betti` exist; geminated form is regular |
+| **Campbell §607-609** | Heavy-stem ja-neuters lose final vowel; light stems keep `-e` |
+| **R/T §3.1.2** | Syllabic *j (*j → *i) applies "upon loss of unstressed *a and *ą" |
+
+### Status
+
+Awaiting user decision on which fix to implement.

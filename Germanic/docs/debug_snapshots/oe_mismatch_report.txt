@@ -1,10 +1,10 @@
-Total mismatches: 60
+Total mismatches: 59
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    13
-  Phonology (other buckets):   39
+  Phonology (other buckets):   38
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -15,7 +15,7 @@ Total mismatches: 60
   palatalization_missing: 2
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 6
+  final_vowel_extra: 5
   epenthetic_vowel_missing: 1
   syncopation_missing: 2
   gemination_extra: 1
@@ -88,12 +88,12 @@ palatalization_missing (2):
   >> LIKELY: Palatalization rule not applying in this context
   >> ACTION: Check palatalization environments; may be suffix-related
 
-final_vowel_extra (6):
+final_vowel_extra (5):
   *laimōn -> lāme (expected lām)
-  *natją -> nete (expected net)
   *saiwălō -> sāwalu (expected sāwol)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
+  *wullo -> wollo (expected wull)
 
 epenthetic_vowel_missing (1):
   *strawjăną -> strewan (expected strewian)
