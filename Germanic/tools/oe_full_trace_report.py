@@ -91,7 +91,7 @@ def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
         for row in reader:
             if row.get("DOCULECT") != "Old_English":
                 continue
-            proto = (row.get("PROTO") or "").strip()
+            proto = (row.get("PROTOFORM") or "").strip()
             counterpart = (row.get("COUNTERPART") or "").strip()
             if not proto or not counterpart or counterpart == "-":
                 continue

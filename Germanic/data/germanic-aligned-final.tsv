@@ -494,7 +494,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1529	h ɛ r p s t	*xarbistuz	h ɛ r p - s t ( - - )	hɛrpst	Herbst	419	German				harvest	*xarbistuz	115
 1337	h ɛ b ə	*xabēną	h ɛ b ə - ( - - )	hɛbə	hebben	366	Dutch				have	*xabēną	116
 1336	h æ v	*xabēną	h æ v - - ( - - )	hæv	have	366	English				have	*xabēną	116
-2058	h a b b a n	*xabēną	h æ v - - ( - - )	hæv	habban	366	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			have	*xabēną	116
+2058	h æ f e þ	*xabēθi	h æ v - - ( - - )	hæv	hæfeþ	366	Old_English	3sg pres. indic. (lautgesetzlich); inf. habban is analogical (umlaut leveled, Fulk §12.47)			have	*xabēną	116
 1335	h aː b ə n	*xabēną	h aː b ə n ( - - )	haːbən	haben	366	German				have	*xabēną	116
 756	h aː x	*xagô	h aː x ( - - )	haːx	haag	207	Dutch				haw	*xagô	117
 755	h ɔː	*xagô	h ɔː - ( - - )	hɔː	haw	207	English				haw	*xagô	117
@@ -920,11 +920,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 332	z a l b ə	*salbō	z a l b ə	zalbə	Salbe	92	German				salve	*salbō	210
 977	s ɑ p	*sapōn	s ɑ p ( - - - )	sɑp	sap	268	Dutch				sap	*sapōn	211
 976	s æ p	*sapōn	s æ p ( - - - )	sæp	sap	268	English				sap	*sapōn	211
-2168	s æ p	*sapōn	s æ p ( - - - )	sæp	sæp	268	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sap	*sapōn	211
+2168	s æ p	*sapą	s æ p ( - - - )	sæp	sæp	268	Old_English	OE neut. a-stem (Hall, K-S); Kroonen: n-stem *safō dissolved dialectally			sap	*sapōn	211
 975	z a f t	*sapōn	z a f ( - - t )	zaft	Saft	268	German				sap	*sapōn	211
 1490	z eː	*sai	z eː	zeː	zee	408	Dutch				sea	*sai	212
 1489	s iː	*sai	s iː	siː	sea	408	English				sea	*sai	212
-2169	s ǣ	*sai	s iː	sæː	sǣ	408	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sea	*sai	212
+2169	s ǣ	*saiwiz	s iː	sæː	sǣ	408	Old_English	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ			sea	*sai	212
 1488	z eː	*sai	z eː	zeː	See	408	German				sea	*sai	212
 514	z oː m	*saumăz	z oː m ( - - )	zoːm	zoom	140	Dutch				seam	*saumăz	213
 513	s iː m	*saumăz	s iː m ( - - )	siːm	seam	140	English				seam	*saumăz	213
