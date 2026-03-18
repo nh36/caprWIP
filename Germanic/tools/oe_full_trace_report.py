@@ -509,25 +509,28 @@ def write_report(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    default_root = Path(__file__).resolve().parents[1]
+    # Default paths: relative to this file's location in Germanic/tools/
+    tools_dir = Path(__file__).resolve().parent
+    germanic_dir = tools_dir.parent  # Germanic/
+    repo_root = germanic_dir.parent  # capr-v3-working/
     parser.add_argument(
         "--tsv",
-        default=str(default_root / "data" / "germanic-aligned-final.tsv"),
+        default=str(germanic_dir / "data" / "germanic-aligned-final.tsv"),
         help="Aligned TSV with Old English rows (default: %(default)s)",
     )
     parser.add_argument(
         "--bin",
-        default=str(default_root / "old_english.bin"),
+        default=str(repo_root / "backend" / "old_english.bin"),
         help="Generator FST for apply-down (default: %(default)s)",
     )
     parser.add_argument(
         "--bin-dir",
-        default=str(default_root),
+        default=str(repo_root / "backend"),
         help="Directory containing old_english_sandbox_after_*.bin (default: %(default)s)",
     )
     parser.add_argument(
         "--output",
-        default=str(Path("docs/debug_snapshots/oe_full_trace_report.txt")),
+        default=str(germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"),
         help="Report output path (default: %(default)s)",
     )
     args = parser.parse_args()
