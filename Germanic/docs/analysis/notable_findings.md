@@ -14,6 +14,7 @@ discussion in the eventual write-up of the project.
 5. [The stefn/stemn problem: transponent versus reconstruction](#5-the-stefnstemn-problem-transponent-versus-reconstruction)
 6. [PGmc stem-class disambiguation via OE phonology: \*kraft- and \*stab-](#6-pgmc-stem-class-disambiguation-via-oe-phonology-kraft--and-stab-)
 7. [NWGmc \*i > \*e lowering: consonant-conditioned blocking and rule ordering](#7-nwgmc-i--e-lowering-consonant-conditioned-blocking-and-rule-ordering)
+8. [PGmc \*þistilaz 'thistle': unresolved \*e/\*i reconstruction problem](#8-pgmc-þistilaz-thistle-unresolved-ei-reconstruction-problem)
 
 ---
 
@@ -1078,3 +1079,92 @@ without regressions. This confirms the onset-velar blocking hypothesis.
 **Full analysis:** See DEV_NOTES.md, "PGmc \*i > WGmc \*e Lowering: The Case
 of nest".
 
+
+---
+
+## 8. PGmc \*þistilaz 'thistle': unresolved \*e/\*i reconstruction problem
+
+**Date discovered:** 2026-03-18
+
+**The puzzle:**
+
+All Germanic daughter languages attest 'thistle' with root vowel \*i:
+
+| Language | Form | Root vowel |
+|----------|------|------------|
+| OE | þistel | i |
+| ON | þistill | i |
+| OHG | distil(a) | i |
+| OS | thistil | i |
+| Dutch | distel | i |
+| German | Distel | i |
+
+Yet major etymological dictionaries disagree on the Proto-Germanic reconstruction:
+
+- **Orel (2003):** Reconstructs \*þe(x)stilaz with root **\*e**
+- **Kluge-Seebold (25th ed.):** Reconstructs \*þistila- with root **\*i**
+
+**The phonological problem:**
+
+If Orel's \*þe(x)stilaz with \*e is correct, we need to explain how \*e became \*i in **all** daughter languages. The standard accounts invoke:
+
+1. **PGmc raising** (Campbell §112, Luick §§71-76): \*e > \*i before \*i in following syllable
+2. **OE i-umlaut**: \*e > \*i before \*-il- suffix (Fulk §5.5)
+
+But there are problems:
+
+- **ON þistill** shows \*i yet lacks an i-umlaut environment (ON preserves \*-ill, doesn't trigger umlaut)
+- If PGmc raising applied "with practically perfect regularity" (Campbell), why does Orel still reconstruct \*e?
+- The "raising" solution assumes PIE \*-elo- > PGmc \*-ila-, but Cercignani (1979), following Krahe-Meid, argues some \*-il- words may have **original PIE \*-ilo-**
+
+**Competing IE etymologies:**
+
+The root itself is disputed:
+
+| Etymology | IE Root | Proposed by |
+|-----------|---------|-------------|
+| "weave/fashion" | \*tek̂s- | Orel (via \*þexsanan, Lat. textilis) |
+| "prick" | \*(s)teig- | Kluge-Seebold, Pokorny |
+
+If from \*tek̂s-, root \*e is expected. If from \*(s)teig-, the normal outcome would be PGmc \*ī (from IE \*ei), not short \*i — requiring special pleading.
+
+**The unresolved question:**
+
+**We do not understand how scholars who reconstruct \*e in the root vowel (Orel) explain the phonology.** If the reconstruction is \*þe(x)stilaz:
+
+1. Why do ALL daughter languages show \*i, including ON which lacks the umlaut trigger?
+2. Was PGmc raising applied? If so, why isn't the surface form \*þistilaz given as the reconstruction?
+3. If raising was pre-PGmc, what is the evidence for underlying \*e?
+4. Did Orel intend \*þe(x)stilaz as a deep/underlying form, with surface \*þistilaz?
+
+No source consulted explains this discrepancy.
+
+**Sources consulted:**
+
+- Orel (2003), *Handbook of Germanic Etymology*, p. 419
+- Kluge-Seebold (25th ed.), s.v. "Distel"
+- Campbell, *OEG*, §§111-112
+- Luick, *Historische Grammatik*, §§71-76
+- Fulk (2018), *Comparative Grammar*, §§4.4, 5.5
+- Cercignani (1979), "Proto-Germanic */i/ and */e/ Revisited," JEGP 78:72-82
+
+**Sources needed (not in local collection):**
+
+- de Vries, *Altnordisches etymologisches Wörterbuch* (ANEW) — s.v. þistill
+- Pokorny IEW — full entries for \*tek̂s- and \*(s)teig-
+- EWA Band II — s.v. distil
+- Holthausen, *Altenglisches etymologisches Wörterbuch* — s.v. þistel
+
+**FST status:**
+
+```
+$ echo 'θestilăz' | flookup -i old_english.bin
+θestilăz    þestel  ✗
+
+$ echo 'θistilăz' | flookup -i old_english.bin
+θistilăz    þistel  ✓
+```
+
+The FST correctly handles \*θistilăz → þistel. **TSV updated 2026-03-18:** Changed PROTOFORM to \*θistilăz (adopting Kluge-Seebold). The scholarly question about Orel's \*e reconstruction remains open.
+
+**Full analysis:** See DEV_NOTES.md, "OE þistel 'thistle': I-Umlaut Not Preserved (2026-03-18)".
