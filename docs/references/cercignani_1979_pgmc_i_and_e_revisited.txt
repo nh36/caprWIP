@@ -1,0 +1,659 @@
+Proto-Germanic /i/ and /e/ Revisited
+Author(s): Fausto Cercignani
+Source: The Journal of English and Germanic Philology, Vol. 78, No. 1 (Jan., 1979), pp. 7282
+Published by: University of Illinois Press
+Stable URL: https://www.jstor.org/stable/27708429
+Accessed: 18-03-2026 21:35 UTC
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide
+range of content in a trusted digital archive. We use information technology and tools to increase productivity and
+facilitate new forms of scholarship. For more information about JSTOR, please contact support@jstor.org.
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at
+https://about.jstor.org/terms
+
+University of Illinois Press is collaborating with JSTOR to digitize, preserve and extend
+access to The Journal of English and Germanic Philology
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+o363-694/79/oioo-oo72$1-00/?
+? 1979 by the Board of Trustees of the University of Illinois
+
+PROTO-GERMANIC */i/ AND */e/ REVISITED
+Fausto Cercignani, University of Pisa
+
+Ever since the late 1870's, when the view that Proto-Indo-European
+exhibited only three vowel qualities (?, u, a) was shown to be incor
+rect,1 most Germanists have had to reconcile themselves to- the asym
+
+metry which the identification of PIE */o/ (and */9/) with */a/
+produced in the Proto-Germanic short/lax subsystem: two front
+phonemes (*/i/ and */e/) versus one back phoneme (#/u/). But while
+
+some have presented the Proto-Germanic short/lax vowels in a rec
+tangle which gives a false impression of symmetry,2 others have at
+tempted to restore a genuine symmetry by assuming that after certain
+early vowel modifications (or 'umlauts') produced by both vocalic and
+
+consonantal influences, Proto-Germanic came to exhibit the parallel
+phonemes */i ~ e/ and */ u ~ o/.3
+In a recent contribution on Proto-Germanic morphophonemics,
+Frans van Coetsem notes that the ensuing controversy has not yet been
+settled one way or the other and?having lamented "the difficulty of
+
+determining in an exact way (1) whether or not there was a PGmc.
+w-umlaut [and] (2) what the changes were in nonstressed position"?
+concludes that "even if there was w-umlaut in PGmc, there may or
+may not have been total complementarity of i and e."4
+
+As can be seen, the assumption of a PGmc. */i ~ e/ implies the
+following set of postulates: (1) Proto-Germanic was affected by 'umlaut'
+phenomena, (2) consequently, pre-Gothic itself was originally affected
+i See further Eduard Prokosch, A Comparative Germanic Grammar (Philadelphia,
+
+1939), ? 34a and the references there given.
+
+2 See, e.g., Winfred P. Lehmann, "The Conservatism of Germanic Phonology,"
+
+JEGP, 52 (1953), 149, and Hreinn Benediktsson, "The Proto-Germanic Vowel System,"
+To Honor Roman Jakobson (The Hague, 1967), 1, 175.
+3 See especially James W. Marchand, "Germanic Short *i and *e: Two Phonemes
+
+or One?" Lg., 33 (1957), 346-54, and cf. below. Marchand 's view has been adopted
+by William G. Moulton, "Zur Geschichte des deutschen Vokalsystems," PBB, 83
+(T?b., 1961), 6-12; Elmer H. Antonsen, "Germanie Umlaut Anew," Lg., 37 (1961),
+218; and Baidur Panzer, "Die westgermanischen Kurzvokale im Niederdeutschen,"
+FoL, 1 (1967), 251. But Antonsen no longer subscribes to this view?cf. n. 13, below,
+and see his "On Defining Stages in Prehistoric Germanic," Lg., 41 (1965), 27, and
+"The Proto-Germanic Syllabics (Vowels)," Toward a Grammar of Proto-Germanic,
+eds. Frans van Coetsem and Herbert L. Kufner (T?bingen, 1972), pp. 122-23.
+4 See Frans van Coetsem, "Proto-Germanic Morphophonemics," Toward a Gram
+mar of Proto-Germanic (T?bingen, 1972), p. 195.
+
+72
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+Proto-Germanic *?ij and */e/ Revisited 73
+by these vowel modifications, and (3) the operation of certain changes
+in unaccented syllables and of certain 'umlaut' phenomena (including
+an w-umlaut of */e/ to */i/) resulted in total complementarity of PGmc.
+
+*/i/ and */e/. It is the purpose of the present study to reassert that
+an w-umlaut of */e/ to */i/ can be assumed only for the prehistory of
+
+Old Saxon and Old High German, and to show that even if the first
+two postulates mentioned above could be accepted as valid,5 and the
+change */e/ > #/i/ before *[-u] ascribed to Proto-Germanic, it would
+still be necessary to assume a PGmc. */i/ ?= */e/ rather than */i ~ e/,
+since the opposition between */i/ and */e/ was preserved throughout
+the prehistory of all the North and West Germanic languages.
+
+The postulation of a PGmc. */e ~ i/ appears to have developed
+
+from the notion that after the operation of the ?-umlaut of */e/ to
+*/i/ (including */e/ > */i/ before clusters of nasal plus consonant)6
+and of the a-umlaut of */i/ to */e/, the additional change #/e/ > */i/
+
+before *[-u] produced a total complementarity of */i/ and */e/ at
+least in some dialects. W. Freeman Twaddell avoided this conclusion
+by assuming that the w-umlaut of */e/ to */i/ (as well as the a-umlaut
+of */i/ to */e/) occurred "only in some cases in some dialects," that is,
+that it was restricted not only to certain dialects, but also to specific
+words within those dialects.7 A few years later, however, J. Fourquet
+suggested that while in Old English and Old Icelandic the 'progressive
+
+neutralization' of the opposition */i/ ?^ */e/ was incomplete, in Old
+High German and Old Saxon it reached consummation as a result of
+the w-umlaut of */e/ to */i/.8 In the same year, J. Kurylowicz claimed
+that "the sporadic 'breaking' of 1 to e in West and North G., especially
+in German, and the occasional raise of e to T before u in German and
+
+Saxon, furnish a clue to the comprehension of the Gothic vowel
+system": since the Gothic distribution presupposes "a previous phono
+
+logical coincidence of Germanic ? and e," similar changes could be
+assumed for pre-Gothic, though with a subsequent phonetic identifi
+
+cation of the allophones *[i] and *[e] (as well as *[u] and *[o]).9
+
+It was apparently as an elaboration of this approach in Proto
+
+Germanic terms that the theory of a PGmc. */i ~ e/ was first worked
+
+5 But see Fausto Cercignani, "Early 'Umlaut' Phenomena in the Germanic Lan
+guages," Lg., 56 (1980) and "Alleged Gothic Umlauts," IF, 84 (1979).
+6 Cf. Herbert Penzl, Vom Urgermanischen zum Neuhochdeutschen (Berlin, 1975),
+? 4.5a. For */e/ > */i/ in unaccented syllables see below.
+7 See W. Freeman Twaddell, "The Prehistoric Germanic Short Syllabics," Lg.,
+24 (1948), 145
+8 See J. Fourquet, "The Two e's of Middle High German: A Diachronie Phonemic
+Approach," Word, 8 (1952), 130-31.
+9 See J. KuryJ-owicz, "The Germanic Vowel System," BPTJ, 11 (1952), 53-54.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+74 Cercignani
+out by James W. Marchand.10 Having explained seeming exceptions
+as due to analogical levelings after the relevant phonemizations,11
+Marchand reasserts that the a-umlaut of */i/ to */e/ cannot be dis
+sociated from the a-umlaut of */u/ to *[o], explicitly ascribes the
+w-umlaut of */e/ to */i/ to Proto-Germanic?which thus came to
+exhibit, in his view, the parallel phonemes */i ~ e/ and */u ~ o/?
+and concludes that whereas in North and West Germanic the loss of
+vocalic determinants resulted in the phonemization of PGmc. *[i] and
+
+*[e] (as well as of PGmc. *[u] and *[o]), in pre-Gothic it led to an
+obliteration of the phonetic difference between PGmc. *[i] and *[e]
+(as well as between PGmc. *[u] and *[o]).12
+Now, quite apart from the validity of the Proto-Germanic umlaut
+assumption and its implications with regard to pre-Gothic, Marchanda
+theory can be shown to be untenable on two counts.13 The first is that
+
+the u-umlaut of */e/ to */i/ is typical only of Old Saxon and Old
+High German, where it is attested before *[-u] representing both
+PGmc. */-u/ and PGmc. */-?/: OS OHG filu 'much' versus OI fi?l
+OFris. fel[o], OE fela/feolu (Goth, filu < */felu/) and OS gibu, OHG
+gibu 'I give' versus OI gef, OFris. ieve, OE giefe/geofu (Goth, giba <
+*/geb?/).14 In the other languages there is no conclusive example of
+10 For earlier cursory remarks about the complementarity, or virtual comple
+mentarity, of PGmc. */i/ and */e/ see, e.g., George Tr?ger and Henry L. Smith,
+"A Chronology of Indo-Hittite," SIL, 8 (1950), 67, 69, 70; Antoine Meillet, Carac
+t?res g?n?raux des langues germaniques, 3rd ed. (Paris, 1926), p. 61; and Prokosch,
+? 41a, n.
+11 Cf. also James W. Marchand, "The Phonemic Status of OHG e" (Word, 12
+[1956], 84, 86), where Old High German pairs like gibu 'I give' - gebu 'gift (dat. sg.)'
+are adduced against Fourquet's postulation of an OHG OS /i ~ e/, and explained
+as reflecting paradigmatic levelings after the phonemization of pHG *[i] and *[e]
+upon the loss of their vocalic determinants.
+12 See Marchand, Lg., 33 (1957), 34?~54
+13 The objection that if #/i/ and */e/ were one phoneme, "there would be no
+possibility of leveling between these two variants" (Elmer H. Antonsen, "The Proto
+Norse Vowel System and the Younger FuJ>ark," ScS, 35 [1963], 197-98, n. 8, and cf.
+his "Zum Umlaut im Deutschen," PBB, 86 [Tub., 1964], 183-84, n. 21) is clearly
+refuted by analogical levelings between *[u] and *[o]: not only OHG skiffskef
+'ship,' but also OI sunr/sonr 'son'?cf. Marchand, Lg., 33 (1957), 347-48, 350-51,
+and Hans H. Hock, "On the Phonemic Status of Germanic e and i," Issues in
+Linguistics: Papers in Honor of Henry and Ren?e Kahane, ed. B. B. Kachru et al.
+(Urbana, 1973), p. 327.
+14 Ru. gibu for expected gebu should be explained as reflecting */e/ > */i/
+before *[-i] in the second and third singular?cf. Wolfgang Krause, Die Sprache der
+urnordischen Runeninschriften (Heidelberg, 1971), ? 36.2, and Elmer H. Antonsen,
+A Concise Grammar of the Older Runic Inscriptions (T?bingen, 1975), p. 22. The
+change */-?/ > */-?/ proposed by the American scholar "finally and before a high
+vowel with or without an intervening */n/" (Antonsen, Toward a Grammar, p. 139)
+cannot of course be regarded as late Proto-Germanic but, at most, as 'Northwest
+Germanic'?cf. Antonsen, "Old High German and the Laws of Final Syllables," SIL,
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+Proto-Germanie */i/ and */e/ Revisited 75
+this change, since the unique OI sipr, OE sidu/(sio)seodu, OFris. side,
+
+OS sidu, OHG situ (Goth, sidus) 'custom' need not be connected with
+Gk. eOo?,15 while problematic forms like OFris. si[u]gun, OE sifunj
+(sio)seofon 'seven' (OS sibun, OHG sibun, Goth, sibun < */set>un/)16
+and OE mile/(mio)meol[u]c 'milk' (OI mi?lk, OFris. melok, OS miluk,
+OHG miluh, Goth, miluks < */meluks/) may well reflect the change
+*/e/ > */i/ before *[-i] in inflected forms exhibiting the sequence
+
+*/eCuC?/,17 for example, dat. sg. */se?>un?/ < */sebuniji/ <
+
+*/set>uneji/ and gen. sg. */melukiz/ < */melukez/. Moreover, both
+Old Icelandic and Old English, as well as Old Frisian, preserve the
+original opposition */i/ ^ */e/ before *[-u]: OI lipr (< * /lipuz/) ?
+
+miQpr (< /meSuz/), OE lipu-jliopu-medu/meodu, OFris. lith18
+'limb' ? mede 'mead.' And while the evidence of Old Icelandic is
+
+clearly incontrovertible,19 that of Old English can hardly be regarded
+as "somewhat ambiguous,"20 for though the digraphs io and eo were
+largely interchangeable, the graphs i and e were not.
+
+The second consideration militating against the hypothesis of a
+PGmc. */i ~ e/ is that even if an w-umlaut of */e/ to */i/ could be
+assumed for North and West Germanic as a whole, it would still be
+impossible to postulate a complementary distribution of #/i/ and
+#/e/ in the prehistory of any of the relevant languages. For not only
+
+in North Germanic and the so-called Ingvaeonic dialects, but also in
+21 (1969-70), 5^' Go, and Concise Grammar, p. 16. For a modification of Antonsen's
+rule to suit Gothic see M. Reis, "Phonologie des sp?tgemeingermanischen Vokalismus
+unter besonderer Ber?cksichtigung der Nebensilbenvokale," Probleme der histori
+
+schen Phonologie (Wiesbaden, 1974), pp. 42-44.
+15 Cf. M. S. Beeler, "Proto-Germanic [i] and [e]: One Phoneme or Two?," Lg.,
+42 (1966), 474; Benediktsson, "Proto-Germanic Vowel System," p. 187; and Hock,
+"Phonemic Status," p. 328.
+16 Cf. Hans Krahe and W. Meid, Germanische Sprachwissenschaft, 7th ed. (Berlin,
+1969), 11, ? 62. For the peculiar OI siau see also Prokosch, ? 99.
+
+17 See Karl Luick, Historische Grammatik der englischen Sprache (Stuttgart,
+1914-40), ? 73, and A. Campbell, Old English Grammar (Oxford, 1959), ? 331-3?
+
+and cf. the discussion in Benediktsson, pp. 188-90.
+18 See Walther Steller, Abri? der altfriesischen Grammatik (Halle, 1928), ? 57, and
+cf. OFris. sun 'son' beside sunu (-0, -a, -e). OFris. fretho/frethe (cf. OS fre?u versus
+OE fri[o]pu-, OS fridu, OHG fridu) reflects */i/ > */e/ before *[-a] in the genitive
+singular (#/frif)awez/), but OI ~[f]repr beside fripr (< */friJ)Uz/) is best explained
+by lowering of */i/ in the second element of compound names (cf. Hock, p. 331),
+
+while OFris. lith, which varies with leth, is also inflected (like OE lip) as a neuter
+a-stem (cf. Steller, ?50).
+19 See Beeler, pp. 473-74; Benediktsson, pp. 190-91; Antonsen, Toward a Gram
+mar, p. 123; and Hock, pp. 328-29, 331. Having mentioned Beeler's objections to
+Marchand without comment, Panzer (FoL, 1 [1967], 253-54) still prefers to believe
+that all the Germanic languages went through a stage at which */i/ and */e/ had
+come to exhibit a complementary distribution.
+20 Antonsen, Toward a Grammar, p. 123.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+76 Cercignani
+Old Saxon and Old High German there were positions in which the
+contrast */i/ ?- */e/ was preserved even after the operation of the
+various vocalic and consonantal influences involving the changes
+*/e/ > */i/ and #/i/ > */e/. The relevant contexts are those in
+which either #/-e/ or no vowel followed, since, despite persistent
+disagreement on the development of unaccented */e/, the opposition
+#/i/ v^ # /e/ can be shown to have been preserved at least in originally
+disyllabic forms in #/-e/ as well as in monosyllables.
+
+Unaccented */e/ has been assumed to have developed according
+to either of two different hypotheses: (1) unaccented */e/ became
+*/i/ in all positions after the loss of final */e/ (as well as */a/) and
+before the ?-umlaut of */e/ to */i/,21 (2) unaccented */e/ became
+*/i/ only in certain positions and did not otherwise affect a preceding
+vowel.22 Neither of these theories can be definitively proved or dis
+proved, although the available evidence appears to favour the second
+rather than the first. Hock would explain OHG ferit 'you travel' from
+*/fariJ)|?y < */fare{}|<5(e)/, its more frequent variant far et from a new
+
+formation farat (cf. beret, below), OS is 'his, its' from unstressed
+#/is/ < #/es|z(a)/ < PIE */eso/, and its variant es from stressed
+*/es|z(a)/.23 But these forms can hardly be taken to show that un
+accented */e/ invariably became */i/, since OHG ferit can be ac
+counted for as a new formation after 3rd sg. ferit (*/fari?(i)/ <
+*/fare<5i/),24 OHG faret as a regular development of */fareS(e)/, OS
+
+is as a new formation after neut. nom. it (< */it/),25 and OS es as a
+regular development of */esa/. On the other hand, Antonsen would
+explain OHG beret 'you bear,' OI fallep 'you fall' from */bereS(e)/,
+*/falle?(e)/, OHG skif 'ship' from */skipes/ (and skef from */skipan/,
+
+etc.), OS OE wulf, OI ulfr 'wolf from */wulfes/ (and OHG wolf
+
+21 See, e.g., Hock, pp. 345-46.
+22 See, e.g., Antonsen, Toward a Grammar, pp. 138-39, where unaccented */e/
+is assumed to have become */i/ before final */z/ and before a high vowel (cf. An
+tonsen, Concise Grammar, pp. 15-17). For earlier suggestions see Hermann Hirt,
+Handbuch des Urgermanischen (Heidelberg, 1931), I, ? 31B.1; Prokosch, ? 79d-3; and
+
+Albert L. Lloyd, "Indo-European Unstressed Short e in Germanic," MLN, 76
+
+(1961), 847-51. For a modification of Lloyd's rule, see Reis, pp. 29-32.
+23 See Hock, pp. 335-38.
+24 Cf. Wilhelm Braune and Walther Mitzka, Althochdeutsche Grammatik, 12th
+
+ed. (T?bingen, 1967), ? 308, n. ib: "Strittig bleibt die Erkl?rung der Form auf
+-it, die doch wohl analoge Neubildung ist." Also Hock, pp. 337-38, where the
+
+model "3 sg. mahh?t : saget : ferit | 2 pl. mahh?t : saget : X = ferit" is, however, re
+jected. But the operation of analogy would hardly be prevented by the circumstance
+
+that the verbs of the second and third weak class are "mainly derivational cate
+gories and consequently 'formes fond?es' " (Hock, p. 337). Nor would the rise of a
+new form ferit be precluded by the resulting, inevitable homophony with 3rd sg.
+ferit?though such homophony was, in fact, eventually eliminated (cf. ModG. fahrt).
+25 Cf. lOHG is beside es 'of it' and see Braune-Mitzka, ? 283, n. ic.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+Proto-Germanie */i/ and */e/ Revisited 77
+
+from */wulfaz/, etc.).26 But OHG b?ret (Alem. berat), OI fallep can
+not be accepted as conclusive evidence that unaccented */e/ had no
+effect on a preceding vowel, since they could always be accounted for
+as leveled from 3rd pi. berant, falla (< */beranc5(i)/, */fallan?(i)/).27
+
+Nor would it be impossible to reconcile the occurrence of Goth, -is
+(which is usually derived from PGmc. */-esa/ < PIE */-eso/) with
+the assumption that the Old High German (and Old Saxon) genitive
+singular ending -es is an independent leveling from des (OS thes,
+Goth, pis < */J>esa/ < */teso/) 'of the/that' which replaced an earlier
+
+-as corresponding to Ru. -as (OI -$), OE -ees > -es, OS OHG -as
+(< PGmc. */-asa/ < PIE #/-oso/).28
+
+As for the view that the only source of a-stem forms without a-umlaut
+is the genitive singular, it still remains to be proved definitively, since
+
+OHG skif and OS OE wulf, OI ulfr could always be explained as due
+to quasi-paradigmatic leveling?cf. OHG skifUln 'little ship' and OE
+wylf (< */wulb?/), OI ylgr (< */wulg.w?s/, with */-iz/ from the
+?-stems) 'she-wolf?and to paradigmatic leveling from the locative
+singular (with #/-ei/ > */-?/ > OE -i > -e) and the instrumental
+singular (with */-?/ > OS OHG -u), both of which have indeed been
+assumed for the prehistory of North and West Germanic as a whole.29
+But the lack of forms with ?-umlaut (from the locative) and i?-umlaut
+
+(from the instrumental) in the case of a-stems with original */e/
+(e.g., OS OHG berg 'mountain'), as well as the occurrence of deriva
+tives with #[-i] (e.g., OS OHG gibirgi 'mountain range'), shows that
+leveling from both the locative (and/or instrumental) and from related
+
+forms is unlikely to be responsible for instances like OHG skif and
+OS OE wulf, OI ulfr.so Nor is it possible?irrespective of the solution
+adopted for final */e/?to explain the lack of variants in the case of
+a-stems with original */e/ (e.g., *birg beside berg) by assuming that
+
+all the North and West Germanic languages originally exhibited a
+
+vocative singular form (with */-e/, as in Goth, dag versus nom. dags
+26 See Antonsen, Toward a Grammar, p. 123.
+27 Cf. Krahe-Meid, II, ? 69, and Andreas Heusler, Altisl?ndisches Elementarbuch,
+4th ed. (Heidelberg, 1950), ? 342. The Old High German ending -et (with no umlaut
+
+in the stem) has also been derived from a Proto-Germanic leveled form: PIE
+*/bherete/ > PGmc. */t>iri?(i)/ > #/beri?/ > */bere?/-see Fritz P. Knapp, "Wie
+
+derum germanisches ?2," PBB, 96 (Tub., 1974), 232.
+28 Cf. Hock, pp. 335-36, where the analogical explanation is accepted with regard
+
+to OHG -es.
+
+29 See Hock, pp. 343-44.
+30 The case of an r-stem with original */e/ like OI syster 'sister' is of course
+different, since #/i/ was here leveled from the nominative plural: */swesterez/ >
+*/swestiriz/ > *swist(i)riz/ > systr versus OE sweostor, OFris. swester/sister, OS
+swestar, OHG swester jswister (Goth, swistar < * /swest?r/).
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+78 Cercignani
+'day'), and that "the subsequent syncretism of nominative singulars
+like *spek(R), *wolf(R), *berg(R) with vocative singulars like *spik,
+*wulf, *berg" produced "the doublets *spek(R)/'spik(R) and *wolf^R)/
+
+rvulf(R) [as opposed to] *berg(R)."31 For on the assumption of a dis
+tinct vocative form for North and West Germanic, the available evi
+
+dence appears to justify only the postulation of a subsequent func
+tional replacement of the vocative by the nominative, and not of a
+formal syncretism resulting in "the new category nominative/voca
+tive."32
+
+The indirect evidence of the <z-stems with original */e/ would there
+fore seem to show that instances like OHG skif 'ship,' OE spit (beside
+
+spec < */spikan/) 'bacon,' and OS OE wulf, OI ulfr 'wolf can be
+
+explained analogically only if it is assumed that they were leveled
+from the genitive singular33 and, consequently, that unaccented */e/
+had no effect on the preceding vowel. But even this conclusion must
+
+remain a tentative one, since analogical replacement alone cannot
+
+have been responsible either for the extreme scarcity of forms with
+/e/ by fl-umlaut of #/i/ or for the abundance of forms with /u/ instead
+
+of, or beside, expected /o/, especially in certain dialects. In the former
+
+case, it would appear that the assimilatory trend to lower #/i/ to
+identity with */e/?being less powerful than the tendency */e/ >
+*/i/ before #[-i]?was resisted, with varying results, in all the North
+
+and West Germanic languages:34 OHG skef/skif, OS OFris. skip, OE
+scipy OI (Goth.) skip 'ship,' OHG OFris. spek, OE spec ?spit, OI spik
+'bacon,' etc. In the latter case, the change */u/ > *[o] (> #/o/) be
+fore *[-a] appears to have been prevented, at least within certain
+dialects, by a neighbouring labial?cf. OE full, OFris. OS fui/fol, OHG
+fol, OI fullr (Goth, fulls < */fullaz/) 'full,' OE fugol, OFris. fugel,
+OS OHG fugal/fogal, OI fugl/fogl (Goth, fugls < */fuglaz/) 'fowl,
+bird'?so that there is always the possibility of an occasional exten
+sion of the idiolectal variation between */u/ and */o/ in labial
+contexts to other environments, e.g., in OI gull/goll beside OE OFris.
+
+OS OHG gold (Goth, gulp < */guipan/) 'gold.'
+In the absence of evidence to the contrary, it would nevertheless
+seem reasonable to conclude that the change of unaccented */e/ to
+#/i/ should be assumed to have occurred in all positions in pre-Gothic,
+
+and only in favourable contexts in the prehistory of the individual
+North and West Germanic languages. Here, the tendency of unac
+31 Hock, p. 345.
+32 Hock, p 345.
+33 Cf. OFris. fretho, OS fre?u among the i?-stems (n. 18, above).
+34 Cf. Cercignani, Lg., 56 (1980), ? 2.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+Proto-Germanic * ?if and */e/ Revisited 79
+cented */e/ to become */i/ should be postulated before high vowels,
+
+as in OHG henin (< */"hanin(i)/ < */haneni/)35 'cock (dat.)' beside
+leveled haninZQ and OHG lembir 'lambs' (with *[-u] representing
+PGmc. #/-?/, #/lambez?/),37 before nasals (at least when followed
+by another consonant), as in OS penning, OHG pfenning (< */pan
+?engaz/) 'penny,' and before final #/z/,38 as in OE OS men (< */man
+
+nez/) beside OS OHG man (< /mannaz/) 'men.'39 Forms like OHG
+elina 'ell' and mihhil (OS mikil) 'great' may well have PGmc. */-in?/ <
+
+PIE */-in?/ (cf. Goth, aleina, with */-?no/ < */-?n?/) and PGmc.
+*/-ila-/ < PIE */-ilo-/ rather than PIE */-en?/ and */-elo-/,40
+and cannot therefore be adduced to show that */e/ in unaccented
+syllables became */i/ "in viel gr??erem Umfang als in den Ton
+silben."41 Nor should it be forgotten that participial formations in
+#/-ina-/ (e.g., OE cymen 'come') can be derived from PIE */-ino-/
+rather than from #/-eno-/,42 and that */i/ from */e/ before a single
+nasal would, at any rate, be quite likely in the latter.43
+
+If the change of unaccented */e/ to */i/ in North and West Ger
+manic occurred only in favourable contexts, then the contrast * /{/ =^
+35 For the use of [Ti] to designate a voiceless velar spirant on the model of the
+symbol [g] denoting its voiced counterpart see Fausto Cercignani, The Consonants
+of German: Synchrony and Diachrony (Milan, 1979), ? 1.
+36 Cf. Braune-Mitzka, ? 221, n. 2. Lloyd (MLN, 76 [1961], 849-50) would explain
+
+the dative variant hanen as having unaccented e from the genitive form hanen
+
+(< #/hanenaz/), which occurs beside hanin.
+
+37 Knapp (PBB, 96 [Tub., 1974], 222) objects that an i?-umlaut of */e/ to */i/
+cannot be ascribed to Proto-Germanic even in the case of accented syllables, and
+that in Old Saxon and Old High German */e/ > */i/ occurs only before retained
+*[-u], e.g., in gidu and gibu 'I give.' But while the change in question should hardly
+be assumed for Proto-Germanic, unaccented vowels cannot be expected to behave
+(as Knapp himself notes) exactly like accented ones, and *[-u] would of course be
+lost earlier in third than in second syllables.
+38 Cf. the Old Icelandic 'i?-umlaut,' as in ker (Goth, kas < */kazan/) 'vessel,' and
+see further Adolf Noreen, Altisl?ndische und altnorwegische Grammatik, 4th ed.
+
+(Halle, 1923), ? 71.
+39 Cf. also OI ?tr, OE f t/f?t, OFris. fit (< */f?tez/).
+40 Cf. H. Kr?he and W. Meid, Germanische Sprachwissenschaft (Berlin, 1967),
+in, ?? 87a.2, 94.1b, and Lloyd, pp. 848-49.
+41 H. Kr?he and W. Meid, Germanische Sprachwissenschaft, 7th ed. (Berlin, 1969),
+1, ? 45.
+42 For the latter see, e.g., Campbell, ? 331.2, n. 1. Antonsen (Concise Grammar,
+p. 22) assumes PIE */-yno-/, despite his recognition that the dative singular of the
+Germanic ?-stems (PIE */?eji/ and */?oji/) indicates that *[i] had already acquired
+phonemic status in (late) Proto-Indo-European. Be that as it may, the phonemiza
+tion of PIE *[i] and *[u] can hardly have occurred, as will be argued in a separate
+article, "through 'system balance' upon the rise of */?/ and */?/" (Antonsen,
+Toward a Grammar, p. 138).
+43 Cf. the tendency */e/ > */i/ in accented syllables, as in OE niman, OFris.
+
+nima/nema, OS niman/neman (OHG neman, OI nema and Goth, niman <
+/nemanan/) 'take.'
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+8o Cercignani
+*/e/ was obviously preserved also in unaccented syllables throughout
+the prehistory of all the relevant languages, as can be seen from original
+
+instances like */mari/ 'sea'? */fare/ 'travel thou' and */fare?i/ 'he
+travels' ? /farefte/ 'you travel,' as well as from later forms like
+#/mari/ 'sea' ? */fare/ (< */fare/ < #/farai/) 'journey (dat. sg.)' and
+#/fari?y 'he travels' ? #/fare?/ 'you travel.'44 But regardless of the
+
+solution adopted for the development of unaccented */e/, the fact
+
+remains that in North and West Germanic the contrast */i/ 7^ */e/
+was preserved at least in originally disyllabic forms in */-e/ as well as
+
+in monosyllables. Forms like OE mere, OS OHG meri (< */mari/)
+'sea' and OE OHG far45 (< */fare/) 'travel thou' cannot of course
+be taken to show "the loss of final -e before weakly stressed -e be
+came -i'."46 But their evidence is of paramount importance, since
+
+what they do show is that final */e/ preserved its separate identity,
+
+and that no ?-umlaut occurred in original disyllables in #/-e/?cf.
+OE fcer[e]st*7 OHG feris[t] (< */faris(i)/ < */faresi/) 'thou travelst.'
+This is confirmed by cases like OE (Nhb) ge-wit*8 (< */wite/) 'know
+thou' and OE her (< * /here/) 'bear thou'?cf. OE bir[e]st (< */t>eris(i) <
+*/beresi/) 'thou bearst'?which also prove beyond reasonable doubt
+that in originally disyllabic forms in */-e/ accented #/e/ was pre
+served49 and, consequently, that the opposition */i/ =? #/e/ was re
+tained at least here. Comparable forms are, therefore, OI vit and her
+(despite 2nd sg. ind. herr), as well as OS her beside analogical bir,50
+while a reconstructed minimal pair would be */wige/ 'kill thou' ?^
+*/wege/ 'carry thou' or, according to the first hypothesis discussed
+above, */wig/ # #/weg/.51
+As for the suggestion that "the opposition i : e may have maintained
+its distinctive function in Proto-Germanic before ? and, at any rate,
+44 The claim that the developments in unaccented syllables establish a contrast
+#/i/ 7a */e/ for late Proto-Germanic (see Reis, p. 24) implies the dubious postula
+tion of exactly the same changes not only for North and West Germanic as a whole,
+but also for pre-Gothic.
+45 OE far for *f r, after faran?ci. OE f re < */fare/ 'journey (dat. sg.),' above.
+46 w. P. Lehmann, "A Definition of Proto-Germanic," Lg., 37 (1961), 71, and cf.
+
+Benediktsson, p. 193. OE mec (ONorw. mek) 'me (ace.),' which has been adduced
+on both sides as representing PGmc. */meke/ (cf. Lloyd, p. 851), goes back to
+
+PGmc. #/mek/ (see below) and is therefore irrelevant.
+47 With ?-umlaut of analogical */a/ (as in faran) instead of */ae/?cf. Campbell,
+? 193c, and Karl Brunner, Altenglische Grammatik, 3rd ed. (T?bingen, 1965), ? 96.3.
+48 Beside OE wite, a subjunctive form (cf. OHG wizz?s[t]).
+
+49 Cf. Benediktsson, p. 193: "If the pre-Old English form had been *bir, we
+
+should not, in view of 2nd sg. ind. bires(t), have expected analogical replacement of
+
+i by e."
+50 Like OHG bir, the Old Saxon variant should of course be explained after
+
+biris[t] (cf. Krahe-Meid, 11, ? 79).
+51 Cf. Benediktsson, p. 193, and Hock, p. 331.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+Proto-Germanic */i/ and */e? Revisited 81
+before ai,52 it should be observed that OI stige (beside stege) 'ladder'
+
+?as well as OSw. bughi (beside boghi) 'bow'?can be explained as
+having retained the original vowel before an intervening */]/
+(*/stigj?n/ > */stigja/ > stigi > -<?)53 rather than before */-en/ and,
+further, that Ru. wurte (OI orte < #/wurhte?/) 'wrought' may have
+graphic u for o, and so may Ru. -kurne (OI home < ^/kurna1/) 'corn
+(dat.)' in the same inscription.54 Again, instances like OHG bib?n (but
+
+eModG beben) 'tremble' can be explained as having */i/ from
+
+original forms with */~W (cf. OE bifian), while instances like OHG
+leb?n (OE libban, lifgan, OS libbian) 'live'?as well as OHG won?n
+(OE wunian) 'dwell'?need not reflect the vowel of older syncopated
+preterites, e.g., */lit)??n/ > OHG *lepta 'lived.'55 Nor is it necessary,
+
+in the case of OI d?tter, OE dohtor, OFris. dochter, OS dohtar, OHG
+
+tohter (Goth, dauhtar < */8uhter/) 'daughter' either to have recourse
+
+to leveling from a form like gen. sg. */?uhtraz/56 or to devise "a
+Proto-Germanic change of *e to a [before] r."57
+With regard to monosyllables the evidence is obviously rather scanty,
+
+but #/e/ was clearly preserved in, e.g., */sehs/ 'six'?cf. OI sex, OE
+5^[o]x > .?[e]x, OFris. sex, OS OHG sehs (Goth, saihs)?which would
+contrast not only with forms containing original */i/, such as */it/
+
+'it'-cf. Ru. [i]t (OI pat), OE hit, OFris. hit > het, OS it, OHG iz >
+ez (Goth, f?a)?but also with those in which */i/ represented */e/,
+
+such as */ik/ T > Ru. ik (beside Ru. OI ek), OE ic, OFris. OS ik,
+
+OHG ih (Goth, ik < #/ek/). The vowel of */ik/ can of course be ex
+plained as leveled from the originally unstressed dat. */miz/ (OFris.
+
+ml, OS mi, OHG mir) < stressed */mez/ (OI m?r, OE m? and Goth.
+mis)5s or, according to the first hypothesis discussed above, as de
+veloped from */e/ in unstressed */ek/.59 The same applies to the ac
+52 Benediktsson, p. 192 and pp. 191-92, followed by Reis, pp. 24-25. The */i/
+in the past participle of the first strong class (OHG ritan 'ride' ? reit, ritum ?
+giritan) should be explained as reflecting the combined influence of the preterite
+plural and of the ?-timbre of the present?cf. Prokosch, ? 41a, and Hock, pp. 340-41.
+In view of the evidence of Gothic, the resulting contrast */i/ ?^ */e/ before */-a/
+cannot of course be regarded as late Proto-Germanic (see Reis, p. 25) but, at most,
+
+as 'Northwest Germanic'
+53 See Nils Lid, "Den nordiske nominativ singularis av maskuline an-stamnier,"
+NTS, 16 (1952), 237-40, and cf. Antonsen, Concise Grammar, p. 21.
+
+54 Cf. Antonsen, Concise Grammar, pp. 5, 13.
+55 Cf. Marchand, Lg., 33 (1957), 348, and Hock, pp. 332-33
+56 See Benediktsson, pp. 191-92.
+57 Hock, pp. 333-34. On Ru. swestar reformed according to ace. */swestarun/ see
+Antonsen, Concise Grammar, p. 40, against Krause, ? 28.6.
+58 Cf. Antonsen, Concise Grammar, pp. 22, 40, where Ru. mez (or, traditionally,
+meR), is interpreted as m?z, and OE m? derived from */m?z/ rather than from me?
+but see Krause, ? 24, and Krahe-Meid, n, ? 32.
+59 See, e.g., Benediktsson, p. 194, and Hock, p. 345.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+82 Cercignani
+cusative form */mik/ (OI OS mik, OHG mih) beside */mek/ (ONorw.
+
+mek, OE mec and Goth, mik), which is from PIE */me/, with */k/
+after */ek/,60 and not, as is often assumed, from a PGmc. */meke/
+representing a PIE */mege/.61
+
+Thus, even if the early changes */e/ > */i/ (including */e/ > */i/
+before *[-u]) and */i/ > */e/ could be assumed for all the Germanic
+languages, it would still be impossible to ascribe */i ~ e/ to any stage
+of Proto-Germanic, since the opposition */i/ ^ */e/ can be shown to
+have been preserved throughout the prehistory of all the North and
+West Germanic dialects at least in originally disyllabic forms in */-e/
+as well as in monosyllables. In pre-Saxon and pre-High German, where
+*/e/ was actually identified with */i/ also before *[-u], the functional
+load of */i/ t?= */e/ obviously came to be lower than in the rest of
+North and West Germanic, irrespective of whether or not the raising
+of #/e/ to */i/ in the various positions occurred at different times.
+But the contrast survived even in these dialects, and its functional
+load was subsequently increased, as in the rest of North and West
+Germanic, through paradigmatic levelings and other analogical pro
+cesses, as well as through the gradual loss of vocalic determinants.
+60 Cf. Krahe-Meid, il, ? 32.
+
+61 See, e.g., Oxford Dictionary of English Etymology, ed. C. T. Onions et al.
+
+(Oxford, 1966), s.v. me.
+
+This content downloaded from 92.233.156.185 on Wed, 18 Mar 2026 21:35:52 UTC
+All use subject to https://about.jstor.org/terms
+
+

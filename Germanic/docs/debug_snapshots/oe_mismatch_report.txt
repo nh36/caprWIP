@@ -1,10 +1,10 @@
-Total mismatches: 59
+Total mismatches: 58
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    13
-  Phonology (other buckets):   38
+  Phonology (other buckets):   37
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -32,7 +32,7 @@ Total mismatches: 59
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
-  vowel_quality__stressed_vowel: 6
+  vowel_quality__stressed_vowel: 5
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
@@ -147,12 +147,12 @@ back_expected_front_out__other (1):
   >> LIKELY: Dialectal/analogical form, or vowel coloring not modeled
   >> ACTION: Research if target is regular or a variant; may need u-coloring rule
 
-vowel_quality__stressed_vowel (6):
+vowel_quality__stressed_vowel (5):
   *xerdō -> heord (expected hierd)
   *liznōjăną -> liernian (expected leornian)
   *nasō -> nasu (expected nosu)
-  *θestilăz -> þestel (expected þistel)
   *liznô -> lierna (expected leorna)
+  *liznōθi -> lierneþ (expected leorneþ)
 
 vowel_quality__u_lowering_exception (4):
   *bukkăz -> bocc (expected bucc)

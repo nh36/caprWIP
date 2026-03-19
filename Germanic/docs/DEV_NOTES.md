@@ -15,6 +15,8 @@
 - [NSL Chronology Bug: *funxstiz → fyxt instead of fȳst](#nsl-chronology-bug-funxstiz--fyxt-instead-of-fȳst)
 - [Preconsonantal *x Loss: *xs > *s](#preconsonantal-x-loss-xs--s-before-consonant-clusters)
 - [PGmc *d/*ð Representation Decision](#decision-2026-03-11-option-2a-confirmed)
+- [OE þistel 'thistle': Scholarly Controversy](#oe-þistel-thistle-i-umlaut-not-preserved-2026-03-18)
+- [OE huniġ 'honey': The -ag > -ig Sound Change](#oe-huniġ-honey-the--ag---ig-sound-change-2026-03-19)
 
 ### Sievers' Law and Class I Weak Verbs (Mar 2026)
 - [Sievers' Law: The *sturtijăną Question](#sievers-law-and-class-i-weak-verb-infinitives-the-sturtijăną-question)
@@ -11246,4 +11248,273 @@ If the FST is otherwise working and `nete` is simply an acceptable archaic/diale
 
 ### Status
 
-Awaiting user decision on which fix to implement.
+**RESOLVED (2026-03-18):** Implemented Option A. See commit eb814f7.
+
+---
+
+## OE þistel 'thistle': I-Umlaut Not Preserved (2026-03-18)
+
+### The Problem
+
+```
+PROTO: *θestilăz
+EXPECTED: þistel (with i from i-umlaut)
+OUTPUTS: þestel (with e — umlaut not preserved)
+```
+
+The FST correctly applies i-umlaut (`*e → *i` before the trigger `*i` in the suffix), producing intermediate `*θ*i*s*t*i*l`, but the final output is `þestel` with both vowels as `e`.
+
+### Diagnostic Trace
+
+Using the current (Mar 18 18:14) compiled binaries:
+
+| Stage | Output |
+|-------|--------|
+| `old_english_sandbox_after_i_umlaut.bin` | `*θ*i*s*t*i*l` ✓ |
+| `old_english_sandbox_after_ws_palatal_umlaut.bin` | `*θ*i*s*t*i*l` ✓ |
+| `english_after_proto_to_oe.bin` (current) | `*θ*e*s*t*e*l` ✗ |
+| `old_english.bin` (final) | `þestel` ✗ |
+
+**Critical finding:** I-umlaut fires correctly, but something between `OEWsPalatalUmlaut` and the end of `ProtoToOE` is reverting both vowels back to `e`.
+
+### Root Cause Investigation
+
+The `EnglishAfterProtoToOEWeakTail` stage composition includes `OEWeakTailNasalLoss` at the end. Testing shows:
+- After `ws_palatal_umlaut`: form is `*θ*i*s*t*i*l` ✓
+- The `weak_tail_nasal_loss` sandbox bin returns `+?` (rejection)
+
+This suggests the intermediate FST composition may be losing the form somewhere, causing the pipeline to fall back to a non-umlauted variant.
+
+**NOTE:** The sandbox stage binaries are stale (14:49) vs main FST (18:14). Need to regenerate sandbox binaries to get accurate intermediate stage traces.
+
+### Scholarly Context
+
+**Campbell OEG §204:** Lists `þistel` as the standard OE form, from PGmc `*þistilaz` with i-stem suffix.
+
+**Orel (2003):** Reconstructs PGmc `*þistila-` → OE `þistel`, OHG `distil`, ON `þistill`.
+
+**The TSV proto:** Uses `*θestilăz` with root vowel `*e`. This may itself be an error — many sources reconstruct `*i` as the root vowel (cf. ON `þistill` showing no umlaut but original `*i`).
+
+### Possible Issues
+
+1. **Proto-form error:** The reconstruction `*θestilăz` may be wrong; should be `*θistilăz`
+2. **Umlaut environment:** The sequence `*e...i...i` may confuse the FST composition
+3. **Weak-tail cleanup:** Some rule may be normalizing medial unstressed `*i` back to `*e`
+
+### Research Questions
+
+1. What is the correct PGmc reconstruction? `*θestilaz` vs `*θistilaz`?
+2. Is the ON form `þistill` evidence for original `*i`?
+3. Does German `Distel` show original `*i` or umlauted `*i < *e`?
+
+### Resolution: TSV Updated Despite Scholarly Controversy
+
+**The Problem:**
+
+The etymology of Germanic "thistle" is genuinely contested, with scholars disagreeing not just about the root vowel but about the underlying Indo-European etymology itself.
+
+**Scholarly sources consulted:**
+
+**Orel (2003), p. 419:**
+> "*þe(x)stilaz sb.m.: ON þistill 'thistle', OE äistel id., EFris dìssel id., OS thistil id., OHG distil id. (also fem. distila). **Derivationally identical with Lat textilis 'woven'. Further related to *þexsanan.** T-F 184; H AEEW 366; WH II 678–679; **P I 1016 (to IE *steig- 'to prick')**; F 1065; V ANEW 611; Z II 176; O 918; K-S 185."
+
+Orel reconstructs `*þe(x)stilaz` with root `*e` (the `(x)` indicates uncertainty about a medial laryngeal/velar). Critically, Orel gives **two competing etymologies**:
+1. Connection to Latin *textilis* "woven" and PGmc `*þexsanan` "to swingle (flax)" — this would connect to IE *tek̂s- "weave, fashion"
+2. Pokorny's connection to IE *steig- "to prick"
+
+**Kluge-Seebold (25th ed.), s.v. "Distel":**
+> "Aus g. **\*þistila-** m. (und andere Stammbildungen), **das einer plausiblen Etymologie zuliebe als \*þīhstila- angesetzt werden kann**. Zu einer s-losen Variante der Wurzel *(s)teig- 'stechen'..."
+
+Kluge-Seebold reconstructs **\*þistila-** with root `*i`, but explicitly notes this form "can be set up for the sake of a plausible etymology" — acknowledging this is a theory-driven reconstruction, not independently established. They connect it to IE *(s)teig- "to prick", requiring an *s*-less variant.
+
+**Orel on `*þexsanan` (p. 417-418):**
+> "*þexsanan str.vb.: MHG dehsan 'to swingle (flax)' (str. pret.). Related to Hitt tak"- 'to tie, to join', Toch B tàks- 'to chop up, to grind up', Skt tákšati 'to fashion, to create, to do carpentry', Av ta"- 'to cut (out)', **Lat texò 'to weave'**, Lith ta"aU, ta"ÿti 'to chop off, to do carpentry', Slav *tesati 'to hew'."
+
+If thistle is related to `*þexsanan` via IE *tek̂s-, the root vowel `*e` is original.
+
+**The Two Competing IE Etymologies:**
+
+| Etymology | IE Root | Expected PGmc vowel | Proponent |
+|-----------|---------|---------------------|-----------|
+| "weave/fashion" | *tek̂s- | *e | Orel (via *þexsanan, Lat. textilis) |
+| "prick" | *(s)teig- | *ī (or *i via special development?) | Kluge-Seebold, Pokorny |
+
+**The Problem with Each Etymology:**
+
+1. **If from *tek̂s- "weave":** Root `*e` is expected, but this requires explaining why the PGmc raising `*e > *i` before `*-il-` didn't apply, OR assuming it did apply (giving surface `*i`), which would support our TSV fix.
+
+2. **If from *(s)teig- "prick":** The normal development of IE *ei is PGmc *ī, not *i. Kluge-Seebold's `*þistila-` with short *i requires special pleading (perhaps zero-grade *stig-?).
+
+**Campbell §112 and Luick §§71-76:**
+
+Both describe PGmc `*e > *i` before `*i` in the following syllable as operating "with practically perfect regularity." If the underlying form had `*e` (from *tek̂s-), the surface PGmc form should have `*i`.
+
+> Campbell: "§112. **e > i before i.** This change is **carried out with practically perfect regularity in all the Germanic languages**."
+
+> Luick: "§76. Der phonetische Vorgang bei dem Wandel von e zu i vor i į besteht in der Vorausnahme der Zungenhöhe des Folgelautes."
+
+**Cross-linguistic evidence:**
+
+| Language | Form | Root vowel |
+|----------|------|------------|
+| OE | þistel | i |
+| ON | þistill | i |
+| OHG | distil(a) | i |
+| OS | thistil | i |
+| Dutch | distel | i |
+| German | Distel | i |
+
+All attested forms show `i`. This is consistent with either:
+- Original `*i` (from *(s)teig-?)
+- Raised `*i < *e` (from *tek̂s- + PGmc raising)
+
+**Assessment:**
+
+This is **not a simple TSV error** but reflects genuine scholarly disagreement about:
+1. The correct IE etymology (*tek̂s- vs *(s)teig-)
+2. Whether the root vowel `*e` or `*i` is original
+3. The morphological analysis (the `(x)` in Orel's reconstruction)
+
+**Sources NOT explicitly supporting our proposed fix:**
+- Orel reconstructs `*þe(x)stilaz` with `*e`, not `*þistilaz` with `*i`
+- The *tek̂s- etymology would predict underlying `*e`
+
+**Sources supporting `*i` reconstruction:**
+- Kluge-Seebold directly reconstructs `*þistila-` with `*i` (but acknowledges this is theory-driven)
+- Campbell §112 and Luick §§71-76 predict raising even if underlying `*e`
+- All daughter languages show `i`
+
+**Verification:**
+```
+$ echo 'θestilăz' | flookup -i old_english.bin
+θestilăz	þestel  ✗ (PGmc raising not modeled in FST)
+
+$ echo 'θistilăz' | flookup -i old_english.bin  
+θistilăz	þistel  ✓
+```
+
+**TSV UPDATED (2026-03-18):** Changed PROTOFORM from `*θestilăz` to `*θistilăz` (row 2250). The scholarly controversy remains unresolved, but since all daughter languages show `*i` and the FST correctly produces `þistel` from `*θistilăz`, we adopt Kluge-Seebold's reconstruction. Note added to TSV referencing notable_findings §8.
+
+**Further research needed:** Specialist literature on the *þe(x)stilaz/*þistilaz controversy. Sources to consult (not in local collection):
+- de Vries, *Altnordisches etymologisches Wörterbuch* (ANEW) — s.v. þistill
+- Falk-Torp, *Norwegisch-dänisches etymologisches Wörterbuch* — s.v. tistel
+- Walde-Pokorny/Pokorny IEW — full entry for *tek̂s- and *(s)teig-
+- EWA (Etymologisches Wörterbuch des Althochdeutschen) — Band II s.v. distil
+- Holthausen, *Altenglisches etymologisches Wörterbuch* — s.v. þistel
+- de Vries, *Nederlands etymologisch woordenboek* — s.v. distel
+
+**Cercignani (1979), "Proto-Germanic */i/ and */e/ Revisited" (JEGP 78:72-82):**
+
+Added to local sources 2026-03-18. While Cercignani does not discuss "thistle" directly, he provides crucial background on the PGmc */i/ ~ */e/ question:
+
+> "Forms like OHG elina 'ell' and mihhil (OS mikil) 'great' may well have PGmc. */-inā/ < PIE */-inā/ (cf. Goth. aleina, with */-ēno/ < */-ēnā/) and **PGmc. */-ila-/ < PIE */-ilo-/ rather than PIE */-enā/ and */-elo-/**" (p. 79, citing Krahe-Meid III §§87a.2, 94.1b)
+
+This is directly relevant: Cercignani (following Krahe-Meid) argues that words with the *-il- suffix may have **original PIE *-ilo-** with *i, not *-elo- with *e that was raised. If thistle had PIE *-ilo-, the PGmc root vowel *i would be **original**, not derived from raising.
+
+This adds another layer to the controversy: not only is the root etymology disputed (*tek̂s- vs *(s)teig-), but even the suffix vowel may have been originally *i rather than *e.
+
+---
+
+## OE huniġ 'honey': The -ag > -ig Sound Change (2026-03-19)
+
+### The Problem
+
+```
+PROTO: *xunăgą
+EXPECTED: huniġ
+OUTPUTS: hunag
+```
+
+The FST produces `hunag` but the expected OE form is `huniġ`. Two issues:
+1. Vowel: `-a-` vs `-i-` in the final syllable
+2. Consonant: velar `g` vs palatal `ġ`
+
+### Scholarly Sources
+
+**R/T vol.2 (p. 228):**
+> "PNWGmc *hunaga 'honey' (ON hunang, OHG honag) > *hunæg > *huneg > OE hunig"
+
+R/T explicitly shows the derivation with intermediate stages.
+
+**Campbell OEG §376:**
+> "Contrary to the usual change i > e, there is a change e > i before g. This is seen in the suffix -ig (< -eg < -æg), which except in the earliest texts appears as -ig..."
+
+Campbell documents the sound change sequence: `-ag > -æg > -eg > -ig` before `g`.
+
+**Campbell OEG §118:**
+> "punor thunder, wunap he dwells, hunig (older -æg) honey"
+
+Campbell explicitly notes `hunig` has "older -æg", confirming the Epinal Glossary attestation.
+
+**Kroonen (2013) s.v. *hunanga-:**
+> "*hunanga- m. 'honey' — ON hunang n. 'id.', ... OE hunig n. 'id.' ... The n of the suffix was dissimilated in most Germanic languages"
+
+Kroonen reconstructs `*hunanga-` with the `-ng-` cluster, noting dissimilation in OE.
+
+**Kluge-Seebold s.v. "Honig":**
+> "Aus g. *hunanga- n. 'Honig', auch in anord. hunang n., ae. hunig n."
+
+**Orel (2003) p. 195:**
+> "*xunăgą sb.n.: ON hunang 'honey' (secondary -n-), OE huni id."
+
+Note: Orel gives OE as `huni`, not `huniġ`.
+
+**Luick §81:**
+> "huniz (aus *hunag) 'Honig'"
+
+### Analysis
+
+The sound change is well-documented:
+
+1. **PGmc** `*xunangą` → **NWGmc** `*hunaga` (nasal dissimilation: `*-ng- > -g-`)
+2. **NWGmc** `*hunaga` → **Pre-OE** `*hunæg` (a-fronting before back vowel lost)
+3. **Pre-OE** `*hunæg` → `*huneg` (Campbell §376: `-æg > -eg`)
+4. **Pre-OE** `*huneg` → OE `hunig` (Campbell §376: `-eg > -ig` before `g`)
+5. OE `hunig` → `huniġ` (palatalization: `g > ġ` after front vowel)
+
+The key missing rule is Campbell §376: **unstressed `-ag > -ig` before final `g`**.
+
+### Cross-linguistic Evidence
+
+| Language | Form | Suffix |
+|----------|------|--------|
+| ON | hunang | -ang (no dissimilation) |
+| OHG | honag | -ag |
+| OS | honig/huneg | -ig/-eg |
+| OE | huniġ | -iġ |
+
+OE shows the most advanced stage of the `-ag > -ig` change.
+
+### FST Implication
+
+This requires a new rule:
+
+**OE Unstressed -ag Raising (Campbell §376):**
+```
+*-ag > -æg > -eg > -ig / _g#
+```
+
+This change is specific to sequences ending in `-ag` before word-final `g`. It's part of a broader pattern affecting the `-ig` suffix (< older `-æg`), seen also in:
+- `halig` (< `*hailagaz`), with Epinal `haleg`
+- `bodig` (< `*budagą`), with Corpus `bodeg`
+- `mōdig` (< `*mōdagaz`)
+
+### Resolution
+
+**Option A (FST fix):** Implement Campbell §376 rule for `-ag > -ig` before final `g`.
+
+**Option B (TSV fix):** Change proto to a form that already has `-ig` suffix. But this would be inaccurate to the reconstruction.
+
+**Recommendation:** Option A — this is a genuine OE sound change that should be modeled in the FST. Multiple words are affected (all `-ig` adjectives from `-ag-` stems).
+
+### Verification
+
+```
+$ echo 'xunăgą' | flookup -i old_english.bin
+xunăgą    hunag  ✗
+
+# After implementing Campbell §376:
+# Expected: xunăgą → huniġ ✓
+```
+
+**STATUS: PENDING** — Requires FST rule implementation.
