@@ -1,9 +1,9 @@
-Total mismatches: 58
+Total mismatches: 57
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
-  Phonology (core buckets):    13
+  Phonology (core buckets):    12
   Phonology (other buckets):   37
 
 === CORE BUCKETS ===
@@ -12,7 +12,7 @@ Total mismatches: 58
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
   no_output: 2
-  palatalization_missing: 2
+  palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 5
@@ -81,8 +81,7 @@ no_output (2):
   >> LIKELY: Compound separator (-), unusual cluster, or grammar gap
   >> ACTION: Check if proto contains unsupported sequences; may need grammar extension
 
-palatalization_missing (2):
-  *xunăgą -> hunag (expected huniġ)
+palatalization_missing (1):
   *wīθijăz -> wīþ (expected wīþiġ)
   >> ISSUE: Palatal ġ/ċ expected but velar g/c produced
   >> LIKELY: Palatalization rule not applying in this context
