@@ -11507,14 +11507,46 @@ This change is specific to sequences ending in `-ag` before word-final `g`. It's
 
 **Recommendation:** Option A — this is a genuine OE sound change that should be modeled in the FST. Multiple words are affected (all `-ig` adjectives from `-ag-` stems).
 
+### Implementation (2026-03-19)
+
+The FST already had `OELateUnstressedAgSuffix` (lines 1690-1704) which implements Campbell §376:
+```foma
+define OELateUnstressedAgSuffix (
+    [{*a} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*g}]
+    .o.
+    [{*g} -> {*ʤ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ {*e} _ .#.]
+    .o.
+    [{*e} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*ʤ}]
+);
+```
+
+The rule wasn't firing because the input had `{*ă}` (unstressed schwa marker) instead of `{*a}`.
+The preceding `OEWeakTailReduction1` should convert `{*ă} → {*a}`, but it wasn't working.
+
+**Root cause:** Foma sigma pollution. The parallel rule definition `[R1, R2, R3]` creates identity
+arcs that compete with conversion arcs when sigma contains `*` and `ă` as separate symbols.
+
+**Fix:** Changed `OEWeakTailReduction1` from parallel union to sequential composition:
+```foma
+# OLD (broken):
+define OEWeakTailReduction1 [
+    {*ă} -> {*a},
+    {*ą} -> {*a} || _ [{*n} | {*m}],
+    {*ą} -> {*ɔ̆}
+];
+
+# NEW (working):
+define OEWeakTailReduction1a [{*ă} -> {*a}];
+define OEWeakTailReduction1b [{*ą} -> {*a} || _ [{*n} | {*m}]];
+define OEWeakTailReduction1c [{*ą} -> {*ɔ̆}];
+define OEWeakTailReduction1 OEWeakTailReduction1a .o. OEWeakTailReduction1b .o. OEWeakTailReduction1c;
+```
+
 ### Verification
 
 ```
 $ echo 'xunăgą' | flookup -i old_english.bin
-xunăgą    hunag  ✗
-
-# After implementing Campbell §376:
-# Expected: xunăgą → huniġ ✓
+xunăgą    huniġ  ✓
 ```
 
-**STATUS: PENDING** — Requires FST rule implementation.
+**STATUS: FIXED** (2026-03-19) — Mismatch count 58 → 57.

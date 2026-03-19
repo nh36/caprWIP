@@ -1636,11 +1636,15 @@ define OEUnstressedAFronting [
 # Primary nasalized vowels (from lost nasal+fricative) become *ɔ̆.
 # R/T vol.2 §5.1.2: unstressed *a before coda nasal was nasalized, blocking fronting.
 # After blocking fronting, the nasalization is lost → plain *a.
-define OEWeakTailReduction1 [
-    {*ă} -> {*a},
-    {*ą} -> {*a} || _ [{*n} | {*m}],
-    {*ą} -> {*ɔ̆}
-];
+#
+# FOMA BUG WORKAROUND (2026-03-19): The original parallel rule definition
+# [R1, R2, R3] creates identity arcs that block the {*ă} → {*a} conversion.
+# When * and ă are separate symbols in the sigma (from the lexicon), parallel
+# rules compete with identity paths. Sequential composition avoids this.
+define OEWeakTailReduction1a [{*ă} -> {*a}];
+define OEWeakTailReduction1b [{*ą} -> {*a} || _ [{*n} | {*m}]];
+define OEWeakTailReduction1c [{*ą} -> {*ɔ̆}];
+define OEWeakTailReduction1 OEWeakTailReduction1a .o. OEWeakTailReduction1b .o. OEWeakTailReduction1c;
 # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120).
 # Only targets *ĭ (marked unstressed by OEUnstressedIMarking), not stressed *i.
 define OEWeakTailReduction2 [
