@@ -15,6 +15,7 @@ discussion in the eventual write-up of the project.
 6. [PGmc stem-class disambiguation via OE phonology: \*kraft- and \*stab-](#6-pgmc-stem-class-disambiguation-via-oe-phonology-kraft--and-stab-)
 7. [NWGmc \*i > \*e lowering: consonant-conditioned blocking and rule ordering](#7-nwgmc-i--e-lowering-consonant-conditioned-blocking-and-rule-ordering)
 8. [PGmc \*þistilaz 'thistle': unresolved \*e/\*i reconstruction problem](#8-pgmc-þistilaz-thistle-unresolved-ei-reconstruction-problem)
+9. [OE wīþiġ 'withy': ja-stem vs. -ig suffix problem](#9-oe-wīþiġ-withy-ja-stem-vs--ig-suffix-problem)
 
 ---
 
@@ -1166,5 +1167,95 @@ $ echo 'θistilăz' | flookup -i old_english.bin
 ```
 
 The FST correctly handles \*θistilăz → þistel. **TSV updated 2026-03-18:** Changed PROTOFORM to \*θistilăz (adopting Kluge-Seebold). The scholarly question about Orel's \*e reconstruction remains open.
+
+**Full analysis:** See DEV_NOTES.md, "OE þistel 'thistle': I-Umlaut Not Preserved (2026-03-18)".
+
+
+---
+
+## 9. OE wīþiġ 'withy': ja-stem vs. -ig suffix problem
+
+**Date discovered:** 2026-03-20
+
+**The puzzle:**
+
+OE `wīþiġ` 'withy, willow' (TSV row 2296) is reconstructed as a ja-stem:
+
+| Source | Reconstruction | Notes |
+|--------|----------------|-------|
+| Wiktionary | \*wīþijaz | Standard ja-stem masculine |
+| Kluge-Seebold | \*wīþja/ō | ja/jō-stem (masc/fem variants) |
+
+Yet the attested OE form `wīþig` preserves the `-ig` suffix, which should NOT survive from a heavy monosyllabic ja-stem.
+
+**The phonological problem (per Adamczyk 2001):**
+
+According to Adamczyk (2001), "Old English reflexes of Sievers' Law," heavy monosyllabic ja-stems yield OE `-e` in the nom.sg., NOT `-ig`:
+
+| Proto-form | OE form | Gloss |
+|------------|---------|-------|
+| \*andijaz | **ende** | 'end' |
+| \*witijam | **wite** | 'punishment' |
+| \*linþijaz | **līðe** | 'gentle' |
+
+The derivation: \*-ijaz → \*-ij (z-loss) → \*-ii (j-vocalization) → \*-ī (contraction) → **-e** (unstressed reduction)
+
+Therefore, \*wīþijaz should yield OE \*wīþe or simply \*wīþ — NOT wīþig.
+
+**FST behavior:**
+
+```
+$ echo 'wīθijăz' | flookup -i old_english.bin
+wīθijăz    wīþ
+```
+
+The FST produces `wīþ`, which is phonologically correct per Adamczyk's analysis:
+1. SieversLawSyncope deletes \*i before \*j after consonant: \*θ\*i\*j → \*θ\*j
+2. OEJLossAfterHeavy deletes \*j after heavy syllable: \*wī\*θ\*j → \*wī\*θ
+
+**Where does OE -ig come from?**
+
+Campbell §376 reveals that OE `-ig` has TWO distinct sources:
+
+1. **From ja-stem \*-ijaz** (via Sievers' Law alternation) — yields `-e` after heavy stems
+2. **From \*-ag-/\*-ig-** (adjective-forming suffix) — raises to `-ig` before palatal g
+
+If `wīþig` has the second suffix (\*-igaz or \*-agaz), the `-ig` would be expected. But **no etymological source reconstructs** \*wīþigaz or \*wīþagaz.
+
+**Possible explanations (none confirmed):**
+
+1. **Different suffix:** The word was formed with \*-igaz (productive adjective suffix), not ja-stem \*-ijaz
+2. **Analogical restoration:** The highly productive OE `-ig` suffix was restored after regular phonological loss
+3. **Late formation:** Post-PGmc derivative \*wīþ- + OE `-ig`
+4. **K-S's speculative \*wīþw- stem:** Based on non-Gmc cognates (Gk ἰτέα, OPruss witwan, Skt vetasá-)
+
+**The unresolved question:**
+
+**No authoritative source provides a proto-form that yields OE `wīþig` through regular sound change.** The FST's output `wīþ` is phonologically correct for any ja-stem reconstruction. The attested form requires either:
+- An undocumented proto-form (\*wīþigaz?)
+- Analogy to the productive `-ig` suffix class
+- A late derivation post-dating the ja-stem phonology
+
+**Sources consulted:**
+
+- Campbell (OEG) §576 (ja-nouns), §376 (-ig suffix)
+- Kluge-Seebold (25th ed.) s.v. "Weide 1"
+- Kroonen (2013) — no entry for this lexeme
+- R/T vol.2 p.70 (ja-stem overview)
+- Bülbring §327
+- Adamczyk (2001) "Old English reflexes of Sievers' Law," Studia Anglica Posnaniensia
+- Erdmann (1972) "Suffixal j in Germanic," Language 48
+- Pierce (1999, 2003, 2006) — Sievers' Law studies
+
+**Sources needed (not in local collection):**
+
+- de Vries ANEW s.v. víðir
+- Holthausen AEW s.v. wīþig
+- OED "withy" (full etymology)
+- Any specialist study of OE -ig adjectives
+
+**TSV status:** Marked as Known Exception (FST correct but no proto yields attested form).
+
+**Full analysis:** See DEV_NOTES.md, "OE wīþiġ 'withy': ja-stem Adjective vs Sievers' Law Syncope (2026-03-19)".
 
 **Full analysis:** See DEV_NOTES.md, "OE þistel 'thistle': I-Umlaut Not Preserved (2026-03-18)".
