@@ -17,6 +17,7 @@
 - [PGmc *d/*ð Representation Decision](#decision-2026-03-11-option-2a-confirmed)
 - [OE þistel 'thistle': Scholarly Controversy](#oe-þistel-thistle-i-umlaut-not-preserved-2026-03-18)
 - [OE huniġ 'honey': The -ag > -ig Sound Change](#oe-huniġ-honey-the--ag---ig-sound-change-2026-03-19)
+- [OE wīþiġ 'withy': ja-stem vs Sievers' Law](#oe-wīþiġ-withy-ja-stem-adjective-vs-sievers-law-syncope-2026-03-19)
 
 ### Sievers' Law and Class I Weak Verbs (Mar 2026)
 - [Sievers' Law: The *sturtijăną Question](#sievers-law-and-class-i-weak-verb-infinitives-the-sturtijăną-question)
@@ -11550,3 +11551,343 @@ xunăgą    huniġ  ✓
 ```
 
 **STATUS: FIXED** (2026-03-19) — Mismatch count 58 → 57.
+
+---
+
+## OE wīþiġ 'withy': ja-stem Adjective vs Sievers' Law Syncope (2026-03-19)
+
+**Date:** 2026-03-19
+**Status:** UNDER INVESTIGATION
+
+### The Problem
+
+TSV row 2296:
+```
+PROTOFORM: *wīθijăz
+COUNTERPART: wīþiġ
+```
+
+FST produces `wīþ` instead of expected `wīþiġ`. The `-ij-` suffix is being incorrectly deleted.
+
+### Pipeline Trace
+
+Using the sandbox trace stages:
+```
+proto_input:              *w*ī*θ*i*j*ă*z
+proto_to_oe_apocope:      *w*ī*θ*i*j      (final *ă*z lost ✓)
+proto_to_oe_weight_cleanup: *w*ī*θ*e*j    (*i → *e unexpected)
+proto_to_oe:              *w*ī*θ          (*e*j deleted!)
+```
+
+### Root Cause Analysis
+
+The deletion happens in two stages:
+
+1. **Sievers' Law Syncope** (`SieversLawSyncope`):
+   ```foma
+   {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
+   ```
+   This deletes `*i` before `*j` after any consonant. So `*θ*i*j` → `*θ*j`.
+
+2. **OEJLossAfterHeavy**:
+   ```foma
+   {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) [EnglishStarConsonantNoR | EnglishPalatalConsonant] _
+   ```
+   This deletes `*j` after heavy syllable + consonant. So `*ī*θ*j` → `*ī*θ`.
+
+### The Problem: Over-application of Sievers' Law Syncope
+
+`SieversLawSyncope` is designed for **Class I weak verb infinitives** (e.g., `*sōkijăną → *sōkjăną`), where the `-ij-` is a Sievers' Law alternation that gets leveled to `-j-` in PWGmc/WGmc.
+
+However, `*wīþijaz` is a **ja-stem adjective**, NOT a weak verb. The `-ij-` here is:
+- Part of the ja-stem nominal suffix `-ijaz` (nom.sg.masc.)
+- NOT subject to Sievers' Law syncope
+
+### Source Evidence
+
+**Fulk §5.8 (Sievers' Law):**
+> "In Gmc. only i/j (and not u/w) attests to alternations of this type, and evidence
+> for it is not found in all the environments in which it might be expected. For example,
+> although Go. masc. ja-stems like harjis and haírdeis attest to the variation, jō-stems do
+> not—there is no inflectional difference between, e.g., bandi 'band' and mawi
+> 'maiden'—and denuclearization has subsequently applied after heavy syllables..."
+
+Key point: Sievers' Law creates an alternation between `-j-` (after light) and `-ij-` (after heavy) in **Gothic ja-stems**. But Fulk notes that "denuclearization has subsequently applied after heavy syllables" — meaning the `-ij-` was later simplified to `-j-` in nom.sg. forms like `haírdeis` (< `*xirðijaz`).
+
+However, this leveling happened **differently in different paradigm cells**. For OE ja-stem adjectives, the evidence is:
+
+**Campbell §369-376:**
+The suffix `-ig` (OE) comes from TWO sources:
+1. Primitive OE `-ag` > `-eg` > `-ig` (Campbell §376)
+2. Original `-ig` from ja-stems
+
+**R/T §6.8.2 (ja-stem adjectives):**
+Heavy-stem ja-adjectives like `*mékijaz > méce` show apocope of final `-i` after heavy stem.
+BUT there are also cases where the `-ig` suffix is preserved.
+
+### The Distinction
+
+The question is: when did ja-stem `-ij-` survive vs. when was it leveled?
+
+For OE `wīþiġ` 'withy':
+- Proto: `*wīþijaz` (ja-stem masc. nom.sg.)
+- The `-ij-` represents the ja-stem thematic suffix
+- OE reflex: `wīþiġ` with preserved `-iġ`
+
+This suggests the `-ij-` was NOT deleted in this word. The development would be:
+```
+*wīþijaz → *wīþij (z-loss) → *wīþiʤ (j-palatalization) → wīþiġ
+```
+
+### Why Sievers' Law Syncope Should NOT Apply
+
+`SieversLawSyncope` is modeled after R/T vol.2 p.157's description of the change `*-CijV- → *-CjV-` in **infinitives**. This is a specific sound change affecting:
+- Class I weak verb infinitives after heavy stems
+- Where the `*i` comes from Sievers' Law epenthesis (not underlying morphology)
+
+For ja-stem adjectives like `*wīþijaz`, the `*i` is part of the underlying morpheme `-ij-`, not an epenthetic vowel. The syncope rule should NOT apply here.
+
+### Proposed Fix
+
+**Option A:** Add an exception to `SieversLawSyncope` for word-final `-ijV` sequences.
+
+The issue is distinguishing:
+- Verbal `-ijăną` (Sievers context → syncope applies)
+- Adjectival `-ijăz` (ja-stem suffix → syncope doesn't apply)
+
+This could be done by checking the following context: syncope before `*j*ă*n` (verbal) but not before `*j*ă*z` (nominal).
+
+**Option B:** Restrict `SieversLawSyncope` to apply only in verbal contexts.
+
+This requires morphological conditioning, which is complex in FST form.
+
+**Option C:** Condition the rule on the context after `*j`:
+```foma
+{*i} -> 0 || [EnglishStarConsonant] _ {*j} {*ă} {*n}
+```
+
+This restricts syncope to contexts where `-ijn-` follows (verbal), not `-ij#` or `-ij-V` (nominal).
+
+### Research Needed
+
+1. Verify that OE `wīþiġ` is genuinely a ja-stem, not an i-stem
+2. Check if there are other ja-stem adjectives in the TSV with `-ijăz` suffix
+3. Verify the exact conditioning of Sievers' Law syncope in R/T
+
+### Comprehensive Source Research (2026-03-19)
+
+#### Primary Etymological Sources
+
+**Kluge-Seebold (Weide 1)** (lines 97909-97922):
+> "Aus g. *wīþja/ō m./f. 'Weide', auch in anord. víðir m., ae. wīþig m.; vielleicht ist eine 
+> ältere Form *wīþw-, da die außergermanischen Sprachen mehrfach auf einen solchen 
+> Lautstand weisen. Die Weide heißt ersichtlich nach ihren biegsamen, zum Flechten gut 
+> geeigneten Zweigen; letztlich liegt den Bezeichnungen ig. *weie- 'winden, flechten' 
+> zugrunde (l. viēre usw.)."
+
+Key points:
+- Reconstructs **g. `*wīþja/ō`** (ja-stem masculine/feminine)
+- OE form: `wīþig` m.
+- Cognates: ON `víðir` m., NHG `Weide`
+- Etymology: from IE *weie- 'to wind, plait' (cf. Lat. viēre)
+
+**Kroonen (*salihon-)** (p. 465):
+The entry for `*salihon-` 'sallow, willow' shows another tree name (OE `sealh`), but wīþiġ is a different plant/tree, not covered under the same entry. Kroonen appears not to have a separate entry for `*wīþijaz`.
+
+**Orel (*lukkaz)** (p. 534):
+> "Related to IE *leug- 'to bend', cf. Gk λύγος 'withy; screw-press', Lith. lùgnas 'supple, flexible'."
+
+This confirms 'withy' refers to flexible willow branches for plaiting.
+
+#### OE Phonological/Grammatical Sources
+
+**Bülbring §327** (Altenglisches Elementarbuch):
+Lists `wiþiġ 'Weide'` as an example of late e > i before palatal ġ:
+> "wipiz Weide"
+
+This confirms:
+- OE spelling `wiþiġ` (also `wipiz` in glossary contexts)
+- The word shows i before palatal consonant
+
+**Campbell §576** (ja-Nouns):
+> "The endings were in Gmc. the same as those of the a-nouns, preceded by *i after short, 
+> *ī after long syllables (§398.4). Before endings which remained in West Gmc. all 
+> consonants except r were doubled after a short syllable (§407). In OE *i and *ī were 
+> lost after both originally long syllables and ones lengthened by the West Gmc. doubling 
+> of consonants (§398.4)."
+
+Important: This describes the **loss of stem-forming *i/ī** in the nom.sg. of ja-nouns after heavy syllables. For a word like `*wīþijaz`:
+- Heavy syllable (`wīþ-`) → the *i should be lost → expected `*wīþjaz` → `*wīþj` → `wīþ`
+
+But OE `wīþiġ` **preserves** the -iġ! This requires explanation.
+
+**Campbell §89** (Stress):
+> "-ig, When from older -ig, e.g. daldwérnige Ex. 50, médcwdnige El. 377; but -ig is 
+> mainly from -æg, and its vowel is then syncopated metrically, though often written"
+
+This suggests two sources for OE `-ig`:
+1. Original `-ig` (from ja-stem)
+2. Derived from `-æg` via raising (a different development)
+
+**Kaluza §102** (Historische Grammatik):
+Lists `sealh Weide` (= 'willow') in the masculine a-stem paradigm. Note: `sealh` is a different word (= 'sallow'), distinct from `wīþiġ`.
+
+#### Sievers' Law Sources
+
+**Fulk §§5.8, 7.9-7.11** (Comparative Grammar):
+> "These were formed in PIE by the addition of the theme vowel to both verb and noun 
+> stems in *-i̯o- (or the ablaut alternant *-ei̯o-, chiefly in denominal adjectives...). 
+> The development of the Gmc. suffix was different according to whether the preceding 
+> syllable was heavy or light, giving PGmc *-ija- and *-ja-, respectively, under 
+> Sievers' law."
+
+On Gothic ja-stems (Fulk §7.10):
+> "Heavy-stemmed nom. -eis is usually explained as deriving from PGmc *-ijaz > *-ijz > 
+> *-iiz > -īs."
+
+This confirms:
+- After heavy syllables: PGmc `*-ijaz`
+- After light syllables: PGmc `*-jaz`
+- The `-ij-` is a Sievers' Law alternation
+
+**R/T vol.2 p.70** (PWGmc restructurings):
+> "Since word-final *-j had become *-i already in PNWGmc... the iptv. 2sg. could already 
+> have ended in *-i in pre-PWGmc... Native learner reanalysis of the rules that yielded 
+> the surface pattern, or of the underlying forms, seems at least as plausible a cause 
+> of this levelling."
+
+R/T emphasize that leveling happened differently for verbs vs. nominals, and that the Sievers alternation was subject to reanalysis.
+
+**R/T vol.2 p.33** on `-ijaz` ethnonyms:
+> "horna 'horn' but also the ethnonym Holtijaz 'of Holt', derived from a place name 
+> apparently identical with an ordinary word for 'woods', PNWGmc *hulta > *holta"
+
+This shows `-ijaz` adjectives/ethnonyms preserving `-ij-` after heavy syllables in Early Runic.
+
+### The wīþiġ Puzzle: Why is -iġ Preserved?
+
+Given that:
+1. `*wīþijaz` has a heavy stem (`wīþ-`)
+2. Heavy-stem ja-nouns typically lose the `-i-` in OE (Campbell §576)
+3. Yet OE `wīþiġ` preserves `-iġ`
+
+Possible explanations:
+
+**A. Suffixal `-ig` (not ja-stem `-ijaz`):**
+The OE `-ig` may derive from a different suffix, not the ja-stem thematic vowel. The Germanic suffix *-īga- or *-iga- appears in many OE adjectives/nouns (e.g., `hāliġ` 'holy', `bysiġ` 'busy'). If `wīþiġ` was reanalyzed as having this suffix, the `-ig` would be morphologically stable.
+
+**B. Deadjectival Noun:**
+The word may be a noun derived from a ja-stem adjective that retained the suffix in its lexicalized form. Compare how English "withy" refers to flexible branches, not the tree itself—a substantivized adjective meaning "the flexible/pliant one."
+
+**C. Late Attestation Effect:**
+Kluge-Seebold reconstructs `*wīþja/ō`, suggesting the form may have varied. If some dialects had `*wīþjaz` (light-stem pattern) rather than `*wīþijaz`, OE would get `wīþiġ` regularly.
+
+**D. Analogical Restoration:**
+The `-ig` suffix was so productive in OE that it may have been restored analogically in words where it was historically lost.
+
+### Wright's Vocabulary (Anglo-Saxon Old English):
+
+> "Withy is still a common provincial name for the willow."
+
+This confirms the meaning 'willow/flexible branch' persisted into Modern English dialects.
+
+### Conclusion: Revised Analysis
+
+The key insight from this research is that **the FST's Sievers' Law syncope rule is probably correct in its application**, but the **TSV proto-form may need adjustment**.
+
+If the word developed as:
+- `*wīþjaz` (without Sievers `-i-`) → `*wīþj` → `*wīþi` (j > i finally) → `wīþ` (apocope)
+
+Then the expected OE outcome would indeed be `wīþ` (as the FST produces).
+
+The attested `wīþiġ` likely reflects:
+1. A different formation with suffix *-iga- (productive adjective suffix), OR
+2. Analogical restoration of `-ig` after the regular phonological output, OR
+3. A variant proto-form like `*wīþigaz` (with the *-iga- suffix from the start)
+
+### The *wīþw- Hypothesis (Kluge-Seebold)
+
+Kluge-Seebold proposes "vielleicht ist eine ältere Form **`*wīþw-`**" — an older stem with final *-w-. This is based on non-Germanic comparisons:
+- Greek ἰτέα 'willow' (< PIE *weit-u-?)
+- Old Prussian `witwan` n. 'willow'
+- Latvian `vītuõls` 'willow branch'
+- Sanskrit `vetasá-` m. 'rattan, cane'
+
+If the original stem was `*wīþw-`, several formations are possible:
+1. **`*wīþwaz`** (a-stem) → OE `*wīþu` or `*wīþo`
+2. **`*wīþwijaz`** (ja-stem with w preserved) → complex development
+3. **`*wīþwō`** (ō-stem feminine) → OE `*wīþu`
+
+The `-w-` in the stem complicates matters because PGmc `*-wij-` clusters undergo special developments. However, this hypothesis is not widely accepted and K-S themselves mark it as uncertain ("vielleicht").
+
+### Key Question: Why Does wīþiġ Preserve -ig?
+
+The standard ja-stem development (per Campbell §576) predicts:
+- Heavy stem + `-ijaz` → loss of `-i-` → `*wīþjaz` → `*wīþj` → `wīþ`
+
+Yet we have attested `wīþig`. Possible explanations:
+
+1. **The proto-form had `-igaz` (or `-agaz`), not `-ijaz`:**
+   The OE suffix `-ig` comes from TWO sources (Campbell §376):
+   - Prim. OE `-ig` (from ja-stem `-ijaz`) 
+   - Prim. Gmc. `-ag-` → `-æg-` → `-eg-` → `-ig-` (before palatal g)
+   
+   If `wīþig` derives from `*wīþagaz` (or `*wīþigaz` with the productive *-iga- suffix), the `-ig` would be expected.
+
+2. **Analogical restoration:**
+   The `-ig` suffix was extremely productive in OE adjectives. Even if the regular phonological development yielded `*wīþ`, analogy with hundreds of other `-ig` words could restore the suffix.
+
+3. **Dialectal variation:**
+   K-S note the word varies between masculine and feminine, ja-stem and jō-stem. Different dialects may have had different formations.
+
+4. **Late formation:**
+   The word might be a post-PGmc derivative from the root `*wīþ-` + the productive OE suffix `-ig`.
+
+### New Sources Integrated (2026-03-20): Sievers' Law Literature
+
+Five new articles on Sievers' Law have been added to the references:
+- **Adamczyk 2001** "Old English reflexes of Sievers' Law" (Studia Anglica Posnaniensia)
+- **Erdmann 1972** "Suffixal j in Germanic" (Language 48: 407-415)
+- **Pierce 2003** "Prosody and Sievers' Law in Gothic" (BGSL)
+- **Pierce 2006** "Syllable Structure and Sievers' Law in Gothic" (JGL 18.4: 275-319)
+- **Pierce 1999** Review of Barrack's "Sievers' Law in Germanic" (AJGLL 11.1)
+
+**Key Finding from Adamczyk 2001:**
+> "Most transparent traces of the process are to be sought in the nominative and accusative singular 
+> of masculine and neuter ja-stems where light and heavy noun stems display conspicuously different 
+> inflectional pattern. The prime examples are monosyllabic neuter ja-stem nouns: cynn 'folk' vs. 
+> wite 'punishment' or masculine ja-stems: dynn 'noise' vs. **ende 'end'** where **heavy monosyllabic 
+> stems carry suffixal -e**, forcibly indicative of the original syllabic alternant *-iiV-."
+
+This confirms:
+- Heavy monosyllabic ja-stems → OE **`-e`** (not `-ig`)
+- Light monosyllabic ja-stems → gemination (e.g., `cynn`, `dynn`)
+- Examples: `ende` < `*andijaz`, `wite` < `*witijam`, `līðe` 'gentle' < `*linþijaz`
+
+**Implication for wīþiġ:**
+The proto-form `*wīþijaz` (heavy monosyllable) should yield OE `*wīþe` or simply `*wīþ`, **NOT** `wīþig`. The attested form `wīþig` cannot derive regularly from a ja-stem with this proto-form.
+
+None of the new Sievers' Law articles mention `wīþiġ` specifically.
+
+### Unresolved: No Single Authoritative Proto-form
+
+- **Kluge-Seebold:** `*wīþja/ō` (ja/jō-stem) — predicts OE `*wīþe` or `*wīþ`
+- **Wiktionary/TSV:** `*wīþijaz` — same problem (per Adamczyk 2001)
+- **No source** gives a form like `*wīþigaz` or `*wīþagaz` that would directly yield `wīþig`
+
+This is a case where the attested OE form does not straightforwardly derive from the reconstructed PGmc form by regular sound change. Either:
+- The reconstruction is wrong, or
+- There was analogical interference, or
+- There was dialectal variation we don't fully understand
+
+### STATUS: RESEARCH COMPLETE, AWAITING DECISION
+
+**Options for user:**
+
+A. **Accept FST output `wīþ` as phonologically correct** and mark `wīþig` as an analogical/irregular form in the TSV notes. This is the most conservative approach.
+
+B. **Mark as Known Exception** — add `*wīþijaz` → `wīþig` to the exception list, acknowledging that the `-ig` preservation is unexplained.
+
+C. **Change proto-form** to something that would yield `wīþig` (but no authoritative source supports such a form).
+
+D. **Further research** — search for specialist literature on Germanic tree names / plant names to see if there's a known explanation for this word's development.

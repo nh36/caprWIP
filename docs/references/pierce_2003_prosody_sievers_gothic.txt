@@ -1,0 +1,949 @@
+PROSODY AND SIEVERS’ LAW IN GOTHIC*
+
+1. Introduction
+In 1878, Eduard Sievers proposed his eponymous law, in order to
+account for certain vowel/semivowel alternations found in a number
+of Indo-European language families (certainly in Germanic, Indic, and
+Iranian, possibly also in Greek, Latin, Baltic, Slavic, Celtic, and Tocharian). Sievers formulated his law as follows: »unbetontes [. . .] i oder
+u ist consonant nach kurzer, vokal nach langer silbe ohne rücksicht
+auf die sonstige accentlage des wortes« (Sievers 1878, p. 129), thus
+accounting for the contrast between forms like Gothic nasjis ›thou
+savest‹ and sôkeis ›thou seekest‹, where nasjis contains a light initial
+syllable and therefore shows the semivowel alternant, while sôkeis
+contains a heavy initial syllable and thus exhibits the vocalic alternant.1
+Sievers’ Law remains one of the classic problems of historical Germanic (and Indo-European) phonology; Sievers’ deceptively simple
+formulation has resulted in an enormous body of literature. This
+paper critically examines one of the most recent treatments of this
+problem, the generally thoughtful essay by Yookang Kim (Kim 2001).
+Although Kim’s analysis is careful and well-argued, some of his arguments and conclusions are not entirely supported by the Gothic data,
+and a response therefore seems appropriate.
+
+* An earlier version of this paper was presented at the 2001 meeting of
+the Michigan Linguistics Society. I thank the conference participants
+for useful comments and discussion. I am grateful to San Duanmu,
+Robert Kyes, Tomas Riad, Joseph Salmons, Bruce Spencer and
+especially Yookang Kim for their comments on various versions of this
+paper (although they do not necessarily agree with me on all points).
+Any oversights or errors are mine alone.
+1
+Siever’s use of the terms ›heavy‹ and ›light‹ follows traditional practice:
+›heavy‹ syllables are syllables containing a long vowel or a diphthong,
+or a short vowel followed by two or more consonants, while ›light‹
+syllables are syllables containing a short vowel followed by a single
+consonant.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+224
+
+MARC PIERCE
+
+II. The problem
+In Gothic, Sievers’ Law is restricted to certain morphological
+contexts. The i/j alternation appears in Class 1 weak verbs, masculine
+ja stem nouns, and ja stem adjectives, the u/w alternation is even
+more limited, occurring in only a handful of forms. Kim (2001) restricts his analysis to the i/j alternation, and more specifically to the
+i/j alternation in the masculine ja stem nouns and the Class 1 weak
+verbs, as these morphological classes have best preserved Sievers’
+Law in Gothic, and the following discussion is therefore similarily
+restricted. The relevant alternation can be seen in the following paradigms (reproduced from Kim 2001, p. 101). Forms that exhibit Sievers’
+Law are in bold. Main stress falls on the initial syllable of all these
+forms; note also that Gothic ·eiÒ represents [i].
+(1)
+
+Sievers’ Law in Gothic: Class 1 weak verbs
+
+Gloss
+Inf.
+Sg. 1
+2
+3
+Du. 1
+2
+Pl. 1
+2
+3
+(2)
+
+light stems
+
+heavy stems
+
+polysyllabic stems
+
+›choose‹
+nasjan
+nasja
+nasjis
+nasjiþ
+nasjôs
+nasjats
+nasjam
+nasjiþ
+nasjand
+
+›seek‹
+sôkjan
+sôkja
+sôkeis
+sôkeiþ
+sôkjôs
+sôkjats
+sôkjam
+sôkeiþ
+sôkjand
+
+›praise‹
+mikiljan
+mikilja
+mikileis
+mikileiþ
+mikiljôs
+mikiljats
+mikiljam
+mikileiþ
+mikiljand
+
+Sievers’ Law in Gothic: masculine ja stem nouns
+
+Gloss
+Sg. nom.
+gen.
+dat.
+acc.
+voc.
+Pl. nom.
+gen.
+dat.
+acc.
+
+light stems
+
+heavy stems
+
+polysyllabic stems
+
+›army‹
+harjis
+harjis
+harja
+(hari)
+(hari)
+harjôs
+harjê
+harjam
+harjans
+
+›herdsman‹
+hairdeis
+hairdeis
+hairdja
+hairdi
+hairdi
+hairdjôs
+hairdjê
+hairdjam
+hairdjans
+
+›disciple‹
+sipôneis
+sipôneis
+sipônja
+sipôni
+sipôni
+sipônjôs
+sipônjê
+sipônjam
+sipônjans
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+225
+
+III. Kim’s analysis
+Kim’s analysis is couched within the Lexical Phonology (hereafter
+LP) framework, which, he suggests, provides a better account of the
+fact that Sievers’ Law is restricted to certain morphological contexts.
+He points out that most previous accounts of Sievers’ Law in Gothic
+tend to simply note that Sievers’ Law only applies in certain morphological contexts in Gothic, and then offer an account of Sievers’ Law
+without ever accounting for these morphological conditions (Kim
+2001, p. 115). Within LP, however, this problem can be easily resolved.
+In LP, there are two types of phonological rules, lexical and postlexical; lexical rules are (or can be) sensitive to morpholexical information, while postlexical rules are not, and Kim therefore formulates
+Sievers’ Law as a lexical rule. This accounts for the morphological
+sensitivity of Sievers’ Law in a more principled way than merely stipulating which morphological categories it applies in, as it follows from
+the theory of LP itself (but see below for further discussion).
+Kim further argues that LP provides an advantage in analyzing the
+diachronic develpoment of Sievers’ Law. He suggests that Sievers’
+Law was a postlexical rule which applied across the board in ProtoIndo-European and then became a lexical rule in Gothic. Differences
+between the Indo-European language families in the application of
+Sievers’ Law can also be attributed to this shift, since the various
+Indo-European dialects can now be viewed as different points on the
+continuum of the shift of Sievers’ Law from a postlexical rule to a
+lexical one.
+With regard specifically to Gothic, Kim views Sievers’ Law as a repair strategy, designed to yield maximal optimal foot parsing, by parsing words into moraic trochees (bimoraic, left-headed feet). He further assumes that the underlying representation of the relevant segment is / j /; that final consonants are extrametrical; and the consonant
++ j clusters are tautosyllabified, in accordance with the Maximal Onset Principle.2 He recognizes that this final assumption conflicts with
+the scribal evidence for Gothic syllabification, and resolves this di2
+
+Kim had earlier formulated the Maximal Onset Principle as follows:
+»Incorporate all consonants preceding each vowel into the onset of
+the vowel [by which he surely must mean ›syllable‹] if and only if the
+incorporation does not violate the Sonority Principle and the languagespecific phonotactic constraint« (Kim 2000, p. 25).
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+226
+
+MARC PIERCE
+
+lemma by following Barrack (1998, p. 39), and claiming that word divisions in these cases reflect morphological boundaries, not phonological ones.3 Consider the following forms: nasjis ›(thou) savest‹, sôkeis
+›(thou) seekest‹, and mikileis ›(thou) praisest‹. According to Kim,
+these forms are parsed as follows (syllable boundaries are indicated
+with a period and foot boundaries with parentheses, extrametrical
+material is enclosed in angled brackets, and long vowels are written
+as two short vowels):
+(3)
+
+Gothic foot parsing I (Kim 2001, p. 121)
+(na.sji)·sÒ
+
+(soo)(kii)·sÒ
+
+(mi.ki)(lii)·sÒ
+
+The short stem form nasjis can be exhaustively parsed into moraic
+trochees without any changes being made to the underlying representation, and the underlying / j / therefore surfaces as [j]. However, neither sôkeis nor mikileis can be exhaustively parsed into moraic trochees without some change being made to the underlying representation, and the underlying / j / is therefore vocalized to [i], which then
+merges with the following [i] of the suffix, yielding [i]. All of these
+forms meet the morphological restrictions on Sievers’ Law (more accurately, the lexical rule Kim uses to formalize Sievers’ Law), and are
+therefore subject to it.
+Kim’s analysis has a number of advantages over other earlier analyses. It places Sievers’ Law in its early Germanic context, as one of a
+number of phonological phenomena sensitive to foot structure, in that
+they are either repair strategies to yield maximal foot parsing, like
+Sievers’ Law in Gothic, or apply in the domain of the foot, like Germanic stress assignment (although this comment applies more precisely to the larger work that his essay is derived from, Kim 2000). As
+such, Kim is able to account for several seemingly unrelated phonological phenomena, since he views them all as attempts to fit this
+preferred foot structure. It also provides a more principled account
+of the morphological sensitivity of Sievers’ Law, thanks to the two
+types of rules available within LP. Furthermore, the different rule
+types allow a better account of the diachronic development of Sievers’ Law in Gothic and its dialectal distribution in Indo-European, as
+outlined above.
+
+3
+
+This claim is also made, although more tentatively, by Voyles (1992,
+p. 89) and Riad (1992, p. 86 f.).
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+227
+
+IV. Problems with Kim’s analysis
+Despite these advantages, there are several problems with Kim’s
+proposals that need to be discussed further. The first of these is that
+his proposed tautosyllabification of consonant + j clusters is contradicted by the scribal evidence. Recall that Kim argues that such clusters are tautosyllabified due to the Maximal Onset Principle, which,
+as he notes, is »crosslinguistically well supported« (Kim 2001, p. 123,
+fn. 32). Before discussing the evidence for Gothic syllabification, it
+should be pointed out that Kim’s reliance on theoretical considerations to motivate Gothic syllabification is somewhat problematic,
+since it would seem preferable to determine if Gothic syllable structure conformed to this theoretical principle, rather than to assume
+that it does.
+Determining the syllable structure of living languages is not overly
+complicated, as native speakers tend to have reasonably reliable intuitions about syllables (or at least about certain aspects of syllables,
+e. g. how many syllables a word contains), and the syllable structure
+of living languages can therefore be determined with relative ease.4
+Where there are no native speakers to consult (as is of course the
+case with Gothic), other methods must be employed.
+Devine and Stephens (1994, p. 37Ð43) argue that three major types
+of evidence provide insight into the syllable structure of dead languages: metrical, linguistic, and orthographic.5 In addition, Tomas
+Riad (p. c.) and Joseph Salmons (p. c.) have both suggested that language universals may provide evidence for syllable structure. While
+metrical and linguistic evidence are relatively uncontroversial and do
+not require extensive commentary, typological/universal evidence and
+orthographic evidence are more troublesome, and are therefore discussed in somewhat more detail. In terms of metrical evidence, given
+the equivalent weight of CVC and CVV sequences, if the initial syllable
+4
+
+San Duanmu (p. c.) reminds me that the claims made here may be too
+strong, as speakers tend to be uncertain about syllable boundaries in
+some words, e. g. Modern English city. However, while speakers’ intuitions about syllable structure may not be foolproof, they are reasonably reliable.
+5
+Although this division is obviously somewhat artificial, since metrical
+and orthographic phenomena are indeed linguistic in nature, it is both
+reasonably traditional and convenient, and is hence retained here. I
+thank Tomas Riad for reminding me of this.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+228
+
+MARC PIERCE
+
+in a VCCV sequence is metrically and phonologically heavy, then the
+sequence must be syllabified VC.CV. On the other hand, if the initial
+syllable is metrically and phonologically light, then the sequence must
+be syllabified V.CCV. As to linguistic evidence, a number of linguistic
+developments are clearly contingent on syllable structure. For instance, in Middle Dutch, short stressed vowels were lengthened in
+open syllables, e. g. vôgel ›bird‹, cf. Old English fugel. This lengthening
+is apparently triggered by the requirement that stressed syllables must
+be heavy, indicating that the word must have been syllabified vô.gel,
+since a syllabification *vog.el would have resulted in a heavy stressed
+syllable and thus obviated the need for vowel lengthening.
+The use of language universals and typology in reconstruction remains controversial, and a comprehensive discussion of this issue is
+beyond the scope of this paper (see Schwink 1994 for more detailed
+discussion); the following brief remarks will have to suffice.6 The typological generalization relevant for our purposes is that languages
+that tautosyllabify stop + liquid clusters generally also tautosyllabify
+stop + semivowel clusters, and one could therefore argue that since
+stop (or þ) + liquid clusters were tautosyllabified in Gothic (a claim
+that currently seems uncontroversial), stop + semivowel clusters
+must also have been tautosyllabified, in accordance with this principle.
+This argument ist not completely compelling, however. Caution is
+advisable in the use of universals and typology in reconstruction,
+since universals need not be absolute.7 For instance, one of the points
+raised by Vennemann (1984, p. 40) in support of his bifurcation theory
+of the Germanic Consonant Shift(s) is that stops become fricatives
+more frequently than fricatives become stops. Since his proposals are
+in accordance with this generalization, he claims that they are preferable to the traditional theory. As Stevens (1998, p. 22 f.) points out,
+however, occlusion certainly does occur in Germanic; Stevens cites
+examples like the following: Holtzmann’s Law, e. g. Gothic twaddjê,
+Old Norse tveggja ›of two‹, both from Proto-Germanic *twajjê; Old
+High German alwâri ›all true‹, but Modern German albern ›inane‹;
+6
+
+Although Kim is not reconstructing a proto-language, his use of typological considerations to determine Gothic syllabification is sufficiently
+close that the same criticisms apply.
+7
+This is of course not to say that typology and universals are useless
+for reconstruction, merely that they must be employed with caution.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+229
+
+and Modern English [bıdnıs] for business. A similar point can be
+made regarding Gothic syllabification: although most languages that
+tautosyllabify stop + liquid clusters also tautosyllabify stop + semivowel clusters, it is not necessarily true that all languages do so.8
+The drawback to rejecting Kim’s claim is that it entails accepting
+the view that Gothic is a typologically odd language, which tautosyllabifies stop + liquid clusters, but heterosyllabifies stop + semivowel
+clusters. This is not an insurmountable difficulty; Comrie (1993, p. 95)
+suggests that »possibly every language is implausible in at least one
+area of its grammar«, and there seems to be no reason to expect
+Gothic to be different. Vennemann (1988, p. 3) further notes that
+»changes run along many parameters, and they may incidentally shoot
+holes in parameters that are not theirs.« For instance, at least in some
+cases, the tautosyllabification of consonant + semivowel clusters results in a bimoraic stressed syllable, which is more preferred than a
+monomoraic stressed syllable. In such cases, forming a more preferred syllable leads to a violation of the typological generalization
+cited above Ð a case of an optimization on one parameter resulting
+in a less optimal structure on another parameter.
+We now consider the language-internal evidence for Gothic syllabification, namely the orthographic evidence. The main question regarding orthographic evidence for syllabification is the following: do word
+breaks at the ends of lines in manuscripts correspond to syllable divisions, or are they motivated by some other factor or factors? Fix and
+Birkmann (1998, p. 23 f.) suggest that there are five possible types of
+word divisions: (1) »chaotic«, by which words were divided randomly,
+with no attention paid to their structure, either phonological or morphological; (2) »phonological«, where word breaks indeed correspond
+to syllable breaks; (3) »calligraphic«, where the scribe may be paying
+more attention to how the manuscript actually looks than to the structure of the words; (4) »morphological«, where words are divided according to morphological criteria; and, finally, (5) »orthopoeic«,
+where word breaks are intended to show the quantity of the preceding
+vowel.
+The traditional interpretation of the Gothic orthographic evidence,
+going back to Hechtenberg Collitz (1906) and Schulze (1908), has
+8
+
+Moreover, it seems that language-internal evidence must be given precedence over language-external evidence, assuming, of course, that the
+language-internal evidence is reliable.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+230
+
+MARC PIERCE
+
+been that word breaks are phonologically motivated, i. e. that when
+the Gothic scribes came to the end of a line in a manuscript, they
+divided words at syllable boundaries, and not according to one of the
+other factors mentioned above. Thus, Schulze (1908, p. 484) claimed
+that »in allen gotischen Handschriften wird die Praxis der Zeilenbrechung durch feste Regeln beherrscht, die [. . .] auf dem Prinzipe
+rationeller und konsequenter Silbenbildung beruhen.« More recently,
+a number of scholars, including Dresher and Lahiri (1991), Barrack
+(1998), and now Kim (2001), have argued against the traditional interpretation, claiming that word breaks do not necessarily correspond
+to syllable breaks, specifically in the case of consonant + semivowel
+clusters.
+However, there are compelling reasons to accept the traditional
+view. Frey (1989, p. 286) points out that a syllabification of Gothic
+based on the traditional interpretation of word breaks generally coincides with both the Syllable Preference Laws codified in Vennemann
+(1988) and with syllable structure in North and West Germanic (based
+on an examination of North and West Germanic verse).9 In addition,
+of the three sources of evidence cited in Devine and Stephens (1994),
+the only truly reliable evidence we have for Gothic syllable structure
+is the orthographic evidence. There is no metrical evidence for Gothic
+syllabification (due to the absence of poetic texts from the surviving
+Gothic corpus), and using linguistic evidence brings us in danger of
+circular conclusions, as we may assume that certain phonological developments occurred because of syllable structure, and analyze them
+as such, but then use our very analysis as evidence for syllable structure. Furthermore, rejecting the orthographic evidence means that improbable or unsupported claims can be made, since such arguments
+can be justified by claiming that certain developments are not recorded orthographically. In light of this, it would seem that the burden
+of proof is on those scholars who claim that the orthographic evidence does not reflect syllable structure, at least in the absence of
+any truly compelling evidence in favor of this claim.
+Furthermore, Kim’s reasoning for rejecting the traditional claim that
+word breaks correspond to syllable breaks seems questionable. He
+notes that, as pointed out already by Hechtenberg Collitz (1906), com9
+
+Frey (1989, p. 289 f.) also argues that the treatment of muta cum liquida
+clusters provides evidence for this connection. Her reasoning on this
+point is somewhat unclear, and is therefore not discussed here.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+231
+
+pounds and simplex words pattern differently in the Gothic manuscripts. In simplex words, word breaks occur before the last consonant of the cluster, while in compounds a word break occurs between
+each member of the compound. Based on this observation, Kim
+claims that, under the traditional interpretation, the Syllable Preference Laws proposed in Murray and Vennemann (1983) do not apply
+in compounds, because word breaks in compounds (and therefore
+syllable breaks, according to the traditional view) are morphologically-based. But, since syllable and morpheme boundaries do not always coincide, »it is hard to explain why different conventions are
+used in compounds and in non compounds [. . .]. Therefore it is hard
+to justify M[urray and] V[ennemann]’s argument that the scribal conventions manifest syllabification in Gothic« (Kim 2001, p. 109).
+Kim’s reasoning here is somewhat unclear. Different conventions
+are indeed used in treating compounds and simplex words, but that
+does not mean that the traditional interpretation must be rejected. In
+fact, it is largely unsurprising that compounds and simplex words are
+treated differently; if speakers perceive them as different types of
+words, they may well be treated differently.10 Pierce (2002, p. 56 f.)
+accounts for the different treatment of compounds and simplex
+words, while retaining the traditional interpretation of word breaks,
+by arguing that compounds were treated as groups of words, and that
+word boundaries had to coincide with syllable breaks. Thus, a syllable
+break had to occur between each component of a compound; other
+syllable breaks in compounds are done according to phonological criteria. Evidence from the Skeireins manuscript appears to support this
+claim. Frey (1989, p. 282) points out that in this particular manuscript,
+syllabification can vary with respect to the clitic -uh ›and‹, as in forms
+like nauhþ anuh ›yet‹ and sumanuhþ an ›partly‹, which can be divided
+into morphemes as nauh + þan + uh and suman + uh + þan, respectively (here a plus sign indicates a morpheme boundary). Since the
+phonological environments are the same, we would expect both
+forms to syllabify in the same way. Yet this is not the case; nauhþ anuh is syllabified nauhþ a.nuh, and sumanuhþ an suman.uhþ an
+(omitting irrevelant syllable breaks). This variation can be accounted
+for, as argued above, by assuming that syllable breaks had to occur
+10
+
+Note also in this context that the ›Chicago Manual of Style‹ prescribes
+different rules for word breaks in compounds and in simplex words in
+Modern English.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+232
+
+MARC PIERCE
+
+before each element of a compound. As long as words were perceived
+as compounds, the various members of the compound were treated
+as separate words. Once this perception had been obscured, however,
+these forms were treated as simplex words. In the case of the two
+forms mentioned above, it seems that speakers of Gothic perceived
+sumanuhþ an as a compound, and hence syllabified each member
+separately. On the other hand, nauhþ anuh was no longer perceived
+as a compound, and was therefore syllabified as a simplex word.
+Returning now to the syllabification of consonant + j clusters, careful examination of the Gothic material indeed seems to disprove Kim’s
+claim that such clusters were tautosyllabified. There are two positions
+to be considered here, word-initial and word-internal. It is relatively
+clear that most languages permit a richer set of syllable onsets word
+initially than word internally. For instance, in Modern English, [pw]
+and [bw] onsets are marginal at best. They are only attested in loan
+words, and then only word-initially, e. g. pueblo and bwana (Hammond 1999, p. 11). In Gothic, consonant + j clusters are not attested
+in word initial position, where we would in fact expect to find them
+if they were licit syllable onsets. While there may well be other explanations for the lack of such onsets word initially besides a ban on
+such clusters (this may reflect an accidental gap in the surviving
+Gothic corpus, for instance), their absence from word initial position
+is at least slightly disconcerting.
+Moreover, consonant + j onsets are unattested word internally.
+Hermann (1923, p. 288) states that there are approximately 260 such
+clusters attested at word breaks in the Gothic corpus, along with
+about 80 consonant + w clusters. Of these clusters, only one is tautosyllabified (assuming again that word breaks correspond to syllable
+breaks), fraþja ›understanding, knowledge‹ (dat.sg.), which is syllabified fra.þja. Assuming that such clusters were really tautosyllabified, their apparent heterosyllabification in the manuscripts remains
+to be accounted for.
+As mentioned above, Kim’s solution to this problem, following Barrack (1998, p. 39), is to propose that word breaks involving these clusters do not reflect syllable breaks, but rather morphological boundaries. This proposal is open to question, however, since not all consonant + semivowel clusters contain a morpheme boundary. Consider
+forms affected by Holtzmann’s Law, e. g. twaddjê ›of two‹, where the
+syllable break occurs before the j but the morpheme break before the
+ê, or triggwa ›covenant‹, where the syllable break occurs before the
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+233
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+w but the morpheme break before the a; or a few verbs whose stems
+end in w, e. g., siggwan ›to sing‹, where the morpheme break occurs
+before the final vowel of the word, but the syllable break before the
+semivowel. Moreover, there is no readily apparent reason as to why
+just these clusters were syllabified according to morphological
+factors. That is, if all other consonant clusters are syllabified due to
+phonological factors (as both Kim and Barrack seem to believe), why
+should just consonant + j clusters (or consonant + semivowel clusters
+in general) be syllabified otherwise?
+Furthermore, if we were to accept any claim that word breaks do
+not correspond to syllable breaks in simplex words, accepting the
+claim made by Hermann (1923) would result in a simpler analysis.
+Hermann (1923, p. 291) argued that muta cum liquida clusters were
+really heterosyllabified, and that their apparent tautosyllabification in
+the Gothic manuscripts is the result of influence from Greek scribal
+practices. If we accept Hermann’s claim, then all consonant clusters
+were heterosyllabified word-internally, which can accounted for by
+means of a constraint banning complex onsets.11 However, Hermann’s
+proposal faces the same difficulty as Kim’s: why would one type of
+consonant cluster be treated differently from all other consonant clusters (cf. Frey 1989, p. 289 f.).
+Once the proposed tautosyllabification of consonant + j clusters is
+rejected, Kim’s analysis is weakened. Consider the same three forms
+cited in (3): nasjis, sôkeis, and mikileis. Given that such clusters
+are heterosyllabified, pace Kim, but retaining the other points of his
+analysis, these three forms must be parsed as follows. (Again, syllable
+boundaries are indicated with a dot, foot boundaries with parentheses, and extrametrical material is enclosed in angled brackets):
+(4)
+
+Gothic foot parsing II
+*(nas)(ji)·sÒ
+
+(soo)(kii)·sÒ
+
+(mi.ki)(lii)·sÒ
+
+Kim’s analysis successfully accounts for both sôkeis and mikileis, but
+founders on nasjis; the inviolable extrametricality of final consonants
+blocks an exhaustive parse into moraic troches.
+There are a handful of other, more minor, difficulties with Kim’s
+analysis which will be discussed in somewhat less detail. First, Kim’s
+analysis encounters problems once it is extended beyond the very
+11
+
+Other constraints banning the insertion, deletion, and reordering of
+segments would intervene to permit complex onsets word-initially.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+234
+
+MARC PIERCE
+
+limited set of data it is designed to account for. In fairness, it must be
+conceded that Kim’s analysis is not meant to provide a general account of Gothic syllable structure, but it does seem that a more general account would be preferable. For example, forms like brôþar
+›brother‹ and saljan ›to make an offering‹ cannot be exhaustively
+parsed into moraic trochees using Kim’s footing algorithm, because
+final consonants are invariably extrametrical.12
+Next, Kim’s analysis is overly complicated. Sievers’ Law can certainly be treated in terms of syllable structure, as has been recently
+done by Riad (1992), Rice (1994), and Pierce (2002), among others
+(and such an analysis is sketched below), reference to foot structure
+is consequently unnecessary. As mentioned above, Kim (2001) is
+based on his dissertation, Kim (2000), in which he argues that a
+number of phonological phenomena found in the early Germanic languages can be accounted for by reference to foot structure. However,
+all of these phenomena can also be analyzed in terms of syllable structure (with the possible exception of high vowel deletion in Old English), which seems to further support the claim that a foot-based
+analysis of Sievers’ Law in Gothic is unnecessary. Furthermore, a footbased analysis does not appear to have any real advantages over a
+syllable-based analysis.
+However, even if a foot-based analysis is necessary (and advantageous), it is possible to develop such an analysis that gives the orthographic evidence the consideration it deserves without encountering
+problems with the light stems, as done by Kiparsky (1998), an Optimality Theory (hereafter OT) analysis of the problem. Since OT constraints can be violable, Kiparsky is able to provide a more principled
+account of Sievers’ Law in Gothic than Kim by letting his constraint
+FOOT-FORM (feet must be bimoraic trochees) outrank his extrametricality constraint (final consonants must be extrametrical). Final consonants can therefore be extrametrical when necessary so that the
+rest of the word can be footed as bimoraic trochees, but can be
+parsed as part of a foot/syllable so that the entire word can be footed
+as bimoraic trochees.
+Kim rejects Kiparsky’s analysis largely on the basis of Kiparsky’s
+proposed (and admittedly inelegant) constraint *σ[Cj, which bans con12
+
+Contrast this with the analysis proposed in Kiparsky (1998), which can
+account for such forms by letting final consonants be extrametrical in
+some cases, but not in others (see below).
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+235
+
+sonant + j onsets, a constraint about which Kim states »it is hard to
+see the constraint *σ[Cj as being universal« (Kim 2001, p. 114). This is
+an accurate criticism, since the standard OT view is that all constraints are indeed universal. However, Kiparsky (1998) never claims
+that this constraint is meant to be universal, and in fact never mentions the standard OT view in his paper. Note also that Kim’s own
+formulation of the Maximal Onset Principle leaves an escape hatch
+for language-specific phonotactic constraints.
+The next problem to be considered is the correct underlying representation of the relevant segment. As indicated above, Kim assumes
+that the underlying representation of the relevant segment is / j /, yet
+does not provide any justification for this assumption, leaving the impression that this is a relatively unimportant issue. However, this is
+not the case, as the choice of the correct underlying representation
+plays a crucial role both diachronically and synchronically. Riad
+(1992, p. 48 et pass.) argues at length that the correct underlying representation is in fact neither /i/ or / j /, but rather an archiphoneme,
+i. e. a vocoid unspecified for the feature [vocalic] (cf. the similar argument in Calabrese 1994). The crucial forms are those where we have
+these phonemes (whatever their correct underlying representation
+may be) adjacent to each other, e. g. mawi ~ máujôs ›girl‹ (nom.sg. ~
+gen.sg.). In these cases, we must be able to predict the correct surface
+forms based on the underlying representation.
+It seems that employing two archiphonemes, one from which surface i and j are derived, and one from which surface u and w are
+derived, yields the best account of such cases. In the case of mawi,
+the u/w archiphoneme must be an onset, and consequently a semivowel, because both *maui and *mawj are illicit. If the u/w archiphonemes surfaces as a semivowel, then the i/j archiphoneme must
+be a vowel. Similarly, in the case of máujôs, the i/j archiphoneme
+must be a semivowel, since otherwise an onsetless syllable would
+result.
+In addition, employing underlying archiphonemes seems to fit better with certain diachronic aspects of Sievers’ Law. Marchand (1973,
+p. 70 f.) suggests that i and j were allophones of one archiphoneme,
+and u and w allophones of another, in Pre-Gothic. In Gothic itself,
+this distribution seems to be breaking down, such that where PreGothic had had two archiphonemes, one for u/w and the other for i/
+j, Gothic had six phonemes: /i/, / j /, /u/, and /w/, as well as the i/j and
+u/w archiphonemes retained from Pre-Gothic. It may well have been
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+236
+
+MARC PIERCE
+
+that only forms containing the i/j and u/w archiphonemes were subject to Sievers’ Law in Gothic and that a constraint banning any
+change in the underlying value of the feature [vocalic] then blocked
+any change in forms containing /i/, / j /, /u/, or /w/. This proposal seems
+to also account for the fact that the u/w alternation is more limited
+than the i/j alternation in Gothic (if the u/w archiphoneme was lost
+before the i/j archiphoneme, then it is natural that the u/w alternation
+is more restricted), as well as for the ›exceptions to Sievers’ Law‹
+discussed in Murray and Vennemann (1983) and Kiparsky (2000).
+Kim also assumes that word-final consonants are extrametrical. His
+reasoning is as follows. Riad (1992, p. 43) distinguishes between obstruents and sonorants on the basis of sonority, and then further suggests that not all consonants can be moraic in all contexts. In Gothic,
+Riad claims, sonorants can be moraic in both stressed and unstressed
+syllables, while obstruents can only be moraic in stressed syllables.
+Kim points out, however, that it is difficult to distinguish phonologically between obstruents and sonorants in word final position, and
+therefore concludes that »without any negative evidence, it may be
+safer to assume that all word-final consonants are extrametrical in
+Gothic« (Kim 2001, p. 122, fn. 30). As was the case with his choice of
+an underlying representation, one wishes that Kim had justified his
+choice more thoroughly, since it seems that it might be just as safe to
+assume that word-final consonants are never extrametrical, or that
+word-final consonants can be extrametrical sometimes.
+Two final, more theoretically-oriented, issues remain to be discussed here. First, any account of Sievers’ Law in Gothic must somehow account for the fact that the alternation is morphologically restricted. As noted above, Kim argues that LP allows him to account
+for this fact in a more principled way than mere stipulation, due to
+the distinction drawn between lexical and postlexical rules. He notes
+that this distinction between lexical and postlexical rules follows
+from the theory itself, and is therefore not stipulative. There appear
+to be two ways to handle this problem within OT. One could argue,
+as Pierce (2002) does, that the morphological restrictions on Sievers’
+Law result from the loss of the archiphoneme, which occurred earlier
+in some contexts than in others. Alternatively, one could simply stipulate that the necessary constraints are only ranked appropriately in
+the relevant morphological contexts.
+It seems that either of these claims is a explanatorily adequate as
+Kim’s proposals. A lexical rule is (or can be) still a morphologically
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+237
+
+conditioned phonological rule, and, in comparison to the second OT
+approach to this problem just mentioned, for example, it is somewhat
+unclear how a morphologically conditioned rule outperforms a morphologically restricted set of constraints in terms of explanatory adequacy. In addition, the distinction between lexical and postlexical
+rules is indeed stipulative, albeit a stipulation of the theory itself, not
+of individual analyses.
+Secondly, Kim argues that LP also provides a better account of the
+diachronic development of Sievers’ Law, again due to the different
+types of rules available within LP. Contrast this approach with OT,
+where the standard view is that sound change can be formalized as
+constraint reranking. While this problem can be accounted for within
+OT by using archiphonemes, it is somewhat more problematic for an
+OT analysis that does not use archiphonemes. This in fact seems to
+be the biggest advantage that an LP account has over an OT account,
+since LP has a clearly-defined life cycle for rules, while there is no
+corresponding life-cycle for OT constraints. This is not to say that OT
+cannot handle diachronic data, only that LP approaches to sound
+change are better-developed (cf. Kiparsky 1995). This issue therefore
+remains open at this time.
+V. An alternative analysis
+We now sketch a possible alternative analysis of Sievers’ Law in
+Gothic. Pierce (2002), in an OT analysis of the phenomenon, argues
+that it results from the interaction of the following OT constraints
+on syllable structure, although additional constraints are necessary to
+account for all aspects of Gothic syllable structure:13
+(5) The Onset Constraint (ONS):
+Syllables must have onsets (Prince and Smolensky 1993, p. 16).
+(6) Prokosch’s Law (PL)
+Stressed syllables must be heavy (Prokosch 1938, p. 134).
+(7) The Coda Constraint (NO CODA)
+Syllables may not have codas (Prince and Smolensky 1993, p. 34).
+
+These constraints are ranked in the following order:
+(8) ONS >> PL >> NO CODA
+13
+
+No introduction to OT is given here. Readers unfamiliar with the theory
+are referred to Kager (1999).
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+238
+
+MARC PIERCE
+
+Sievers’ Law is therefore a consequence of Gothic syllabification.
+When ONS must be satisfied, the underlying archiphoneme will be
+manifested as a semivowel; otherwise, it is a vowel.
+The ›additional constraints‹ mentioned above include some way of
+formalizing the fact that consonant + semivowel clusters are not permitted. A variety of proposals have been made in the literature. Pierce
+(2002) relies on a family of constraints banning various types of complex onsets, as well as a family of constraints banning various types
+of syllable contacts. If the various constraints belonging to these two
+families are properly ranked with regard to each other, then the tautosyllabification of muta cum liquida clusters and the heterosyllabification of consonant + semivowel clusters can be accounted for, by having the constraint banning consonant + semivowel onsets outrank the
+constraint banning consonant + semivowel contacts, while the constraint banning muta cum liquida contacts outranks that banning muta
+cum liquida onsets. Alternatively, Kiparsky (1998) employs a constraint banning consonant + j onsets (as does Calabrese 1994, although Calabrese’s analysis is couched in a much different theoretical
+framework). This issue will not be discussed further here, although it
+must be kept in mind that consonant + j clusters are illicit, however
+this ban is ultimately formalized.
+The following tableaux illustrate the interaction of these constraints. Since the same constraints account for all the alternations,
+only the Class 1 weak verbs are discussed here, starting with the light
+stem nasjis. Pierce (2002) follows Riad (1992) in using an archiphoneme, transcribed here as /ı/, as the underlying representation of the
+relevant segment.
+Table 1: Light stems: nasjis ›(thou) savest‹
+/nasjıs/
+
+ONS
+
+PL
+
+NO CODA
+
+nas.jis
+
+冪
+
+冪
+
+**
+
+nas.iis
+
+*!
+
+冪
+
+**
+
+na.siis
+
+冪
+
+*!
+
+*
+
+na.sjis
+
+冪
+
+*!
+
+*
+
+The winning candidate nasjis (nas.jis) obeys ONS and PL, but violates
+NO CODA Ð a violation caused by the need to obey the higher-ranking
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+239
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+constraint PL. The losing candidates all violate either ONS or PL (in
+addition to NO CODA) and are therefore eliminated.
+The next form to consider is the heavy stem sôkeis.
+Table 2: Heavy stems: sôkeis ›(thou) seekest‹
+/sokııs/
+
+ONS
+
+PL
+
+NO CODA
+
+soo.kiis
+
+冪
+
+冪
+
+*
+
+sook.iis
+
+*!
+
+冪
+
+**
+
+sook.jis
+
+冪
+
+冪
+
+**!
+
+The attested form sôkeis (sô.keis) is preferred over the two alternate
+candidates because it obeys ONS and PL, while only violating NO
+CODA once. Its competitors either violate PL or incur additional NO
+CODA violations. In addition, *sô.kjis is ruled out by the ban on consonant + semivowel onsets discussed above.
+The final form considered here is the polysyllabic stem mikileis.
+Table 3: Polysyllabic stems: mikileis ›(thou) praisest‹
+/mıkılııs/
+
+ONS
+
+PL
+
+NO CODA
+
+mi.ki.liis
+
+冪
+
+*
+
+*
+
+mik.il.iis
+
+*!
+
+冪
+
+**
+
+mi.kil.jis
+
+冪
+
+*
+
+**!
+
+The winning candidate mikileis (mi.ki.leis) violates PL and NO
+CODA. Its competitors either violate ONS or incur more NO CODA
+violations; mikileis is therefore optimal. As was the case with *sô.kjis,
+*mi.ki.ljis is ruled out by the ban on tautosyllabified consonant +
+semivowel clusters.
+VI. Conclusion
+This paper critically examined Kim (2001), one of the most recent
+treatments of one of the classic problems of historical Germanic (and
+Indo-European) phonology, namely Sievers’ Law in Gothic. It was argued that, although Kim’s analysis is generally thoughtful and well-
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+240
+
+MARC PIERCE
+
+argued, not all of his proposals and conclusions are supported by the
+Gothic data. For instance, his proposed tautosyllabification of consonant + semivowel clusters is contradicted by the scribal evidence. An
+alternative proposal, one couched within OT, was sketched, and it
+was argued that the OT proposal was as explanatorily adequate as
+Kim’s, while avoiding some of the problems of his analysis.
+
+REFERENCES
+Barrack, C. 1998: Sievers’ Law in Germanic, New York.
+Calabrese, A. 1994: Sievers’ Law in Gothic. A synchronic analysis with
+some notes on its diachronic development, The Linguistic Review 11,
+p. 49Ð94.
+Comrie, B. 1993: Typology and reconstruction. Historical linguistics: Problems and perspectives, ed. by Ch. Jones, London and New York,
+p. 74Ð97.
+Devine, A. M., & L. D. Stephens 1994: The prosody of Greek speech, Oxford.
+Dresher, B. E., & A. Lahiri 1991: The Germanic foot. Metrical coherence
+in Old English, Linguistic Inquiry 22, p. 251Ð285.
+Fix, H., & Th. Birkmann 1998: Die Worttrennung am Zeilenende in Handschriften der Snorra Edda, in: H. Fix (Ed.), Snorri Sturluson. Beiträge
+zu Werk und Rezeption, Berlin, p. 23Ð33.
+Frey, E. 1989: Worttrennung und Silbenstruktur des Gotischen mit besonderer Berücksichtigung der Skeireins, Indogermanische Forschungen
+94, p. 272Ð293.
+Hammond, M. 1999: The phonology of English, Oxford.
+Hechtenberg Collitz, K. 1906: Syllabication in Gothic, Journal of English
+and Germanic Philology 6, p. 72Ð91.
+Hermann, E. 1923: Silbenbildung im Griechischen und in den anderen indogermanischen Sprachen, Göttingen.
+Kager, R. 1999: Optimality theory, Cambridge.
+Kim, Y. 2000: Prosody and prosodically-motivated processes from Germanic to Middle English, Doctoral dissertation, University of Wisconsin-Madison.
+Ð 2001: Prosody and i/j alternation in Gothic, Journal of Germanic Linguistics 13, p. 97Ð130.
+Kiparsky, P. 1995: The phonological basis of sound change. The handbook
+of phonological theory, ed. by J. Goldsmith, Cambridge/MA, p. 640Ð
+670.
+Ð 1998: Sievers’ Law as prosodic optimization. Mir curad: Studies in
+honor of Calvert Watkins, ed. by J. Jasanoff [et al.], Innsbruck, p. 345Ð
+360.
+Ð 2000: Analogy as optimization. ›Exceptions‹ to Sievers’ Law in Gothic.
+Analogy, levelling, markedness, ed. by A. Lahiri, Berlin, p. 15Ð46.
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+241
+
+PROSODY AND SIEVERS’ LAW IN GOTHIC
+
+Marchand, J. W. 1973: The sounds and phonemes of Wulfila’s Gothic, The
+Hague.
+Murray, R. W., & Th. Vennemann 1983: Sound change and syllable structure in Germanic phonology, Language 59, p. 514Ð528.
+Pierce, M. 2002: Syllable structure and Sievers’ Law in Gothic and Old
+Norse, Doctoral dissertation, University of Michigan.
+Prince, A., & P. Smolensky 1993: Optimality theory. Constraint interaction
+in generative grammar, Technical Report # 2, Rutgers University Center for Cognitive Science.
+Prokosch, E. 1938: A comparative Germanic grammar, Philadelphia.
+Riad, T. 1992: Structures in Germanic prosody, Doctoral dissertation,
+Stockholm University.
+Rice, C. 1994: Sievers’ Law in Gothic. MS, University of Tromsø.
+Schulze, W. 1908: Wortbrechung in den gotischen Handschriften. Sitzungsberichte der preußischen Akademie der Wissenschaften, p. 610Ð624
+[Page references to reprint in Schulze 1966].
+Ð 1966: Kleine Schriften, 2nd ed., ed. by W. Wissmann, Göttingen,
+p. 483Ð496.
+Schwink, F. W. 1994: Linguistic typology, universality, and the realism of
+reconstruction, Washington, D. C.
+Sievers, E. 1878: Zur accent- und lautlehre der germanischen sprachen,
+PBB 5, p. 63Ð163.
+Stevens, Ch. M. 1998: On the bifurcation and repression theories of Germanic and German, Washington, D. C.
+Vennemann, Th. 1984: Hochgermanisch und Niedergermanisch. Die Verzweigungstheorie der germanisch-deutschen Lautverschiebungen,
+PBB 106, p. 1Ð45.
+Ð 1988: Preference laws for syllable structure, Berlin.
+Voyles, J. 1992: Early Germanic grammar, New York.
+
+ANN ARBOR, MICHIGAN
+
+MARC PIERCE
+
+Brought to you by | University of Georgia Libraries
+Authenticated
+Download Date | 5/29/15 2:42 AM
+
+
