@@ -1,0 +1,311 @@
+Disclaimer: This is a machine generated PDF of selected content from our databases. This functionality is provided solely for your
+convenience and is in no way intended to replace original scanned PDF. Neither Cengage Learning nor its licensors make any
+representations or warranties with respect to the machine generated PDF. The PDF is automatically generated "AS IS" and "AS
+AVAILABLE" and are not retained in our systems. CENGAGE LEARNING AND ITS LICENSORS SPECIFICALLY DISCLAIM ANY
+AND ALL EXPRESS OR IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES FOR AVAILABILITY,
+ACCURACY, TIMELINESS, COMPLETENESS, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE. Your use of the machine generated PDF is subject to all use restrictions contained in The Cengage Learning
+Subscription and License Agreement and/or the Gale Academic OneFile Terms and Conditions and by using the machine
+generated PDF functionality you agree to forgo any and all claims against Cengage Learning or its licensors for your use of the
+machine generated PDF functionality and any output derived therefrom.
+
+Old English reflexes of Sievers' Law
+Author: Elzbieta Adamczyk
+Date: Annual 2001
+From: Studia Anglica Posnaniensia: International Review of English Studies
+Publisher: Adam Mickiewicz University
+Document Type: Article
+Length: 4,656 words
+Full Text:
+1. Introductory remarks
+Ever since its original formulation in 1878, Sievers' law has been subject to much critique and remained a matter of contention
+centred primarily around the extent of its application, its precise dating, the degree of its preservation (or recoverability) as well as
+correlation other phonological developments. Investigated at length as it has been, the law is still regarded as one of the most
+complex and intricate phenomena of Indo-European but also Germanic phonology. Visible traces of its former operation are restricted
+to a few Indo-European dialects, including, beside Germanic, Old Indian, Greek, Italic and possibly Baltic, and their adequate
+interpretation poses multiple difficulties. Although Germanic reflexes are limited only to a few morphological categories, Germanic
+morphophonemics, when compared to other Indo-European dialects, preserves the traces with remarkable regularity, revealing at the
+same time a most refined and unique pattern.
+Sievers' original formulation of the law concerned allophonic variation of (some of) the resonants in the E parent language, which
+were assumed to be unspecified for syllabicity, the vocalic variants interchanging with their consonantal counterparts in accordance
+with the environment, in particular in line with the weight of the preceding syllable. (1) Importantly, Sievers' analysis and
+reconstruction of the original variation of Proto-Indo-European resonants were made on the basis of Germanic data, and involved
+suffixal -ei- (/i/) /-ji- alternation in Gothic, characteristic of certain morphological categories, such as weak verbs and ja-stem nouns.
+Specifically, Gothic -ei- and -ji- were found to contrast in such environments as singular present indicative forms of first class weak
+verbs (jan-verbs): (2 sg.) nasjis 'save', frapjis 'comprehend', (3 sg.) lagjip 'lay' vs. waurkeis 'do', sokeip 'seek', (3 sg.) namneip 'take',
+taikneis 'express' where the -ji- alternant is expected in verbs containing etymological ly light syllable in the root, whereas the -eivariant -- in verbs containing a heavy syllable (or two light ones). Equally illustrative and probably most familiar is the harjis 'army's'
+vs. hairdeis 'shepherd's' correspondence, characteristic of genitive singular forms of masculine ja-stem nouns, where the former is
+derived from a suffix preceded by a short syllable, the latter from a suffix preceded by a long one. These suffixal variants are
+assumed to mirror the prehistoric alternation of syllabic *-ii- vs. non-syllabic *-i-, induced originally by Sievers' rule, whereby syllabic *ii- (> Go. ei) followed regularly a heavy syllable and non-syllabic *-i-. (> Go. ji) a light one, provided the cluster was followed by a
+vowel. (2) The development of these two exemplary sequences can be sketched in the following manner:
+(1) Go. harjis < PG */Xariesal < IE */korieso/
+Go. hairdeis < PG */Xeroiiesa/ < IE */kerdhieso/,
+where ei /i/ obtains presumably as a result of vocalisation of i after i.
+Gothic appears to be most consistent among Germanic languages in its reflection of Sievers' law, displaying the pattern invariably,
+with remarkable regularity. Naturally, the evidence for Sievers' pattern in Germanic goes beyond what is proffered by Gothic, and,
+taking aside temporarily Old English data (which will constitute the main body of the present investigation), similar suffixal alternation
+can also be found in Old Scandinavian forms: Old Icelandic genitive singular hirpes 'shepherd's' (< PG *ii) vs. nips 'descendant's' (<
+PG *i), or nominative plural forms hiroar (*hirpiar < *hiroiiar) vs. niojar (< *nioiar (Lehmann 1955: 358). Quite conspicuous is the fact
+that while in Gothic the prehistoric alternation *-iiV- vs. *-iV- is a surface correspondence, directly observable, it is less so in the other
+Germanic languages, including Old English where the pattern has been obscured on the superficial level. (3)
+Among later elaborations of the law remarkable is that of Edgerton, considered supplementary to the original rule, which ascribed
+greater generality to the alternation. Edgerton's treatment (1934, 1943) favoured notably the extension of Sievers' rule to other
+resonants, i.e., liquids and nasals. All Proto-Indo-European resonants were thus ascribed a threefold function whereby each could
+serve as a vowel (i u r l m n) consonant (i u r l m n) and a sequence of vowel plus consonant (ii uu rr, etc.), with the environment
+determining the occurrence of particular variant. In fact, Edgerton provided a detailed systematic treatment of the resonant
+allophones in all environments, attempting to prove the regularity and exceptionlessness of Sievers' rule, which led to conclusion that
+
+the alternation between syllabic and non-syllabic allophones of the resonants was conditioned in the parent language on phonological
+basis. Such variation is still evident, as observed by Edgerton, in Vedic Sanskrit documents, where it is p roved to be regulated by
+phonological conditioning rather than morphological factors. (4) In reference to Germanic, it is assumed that by the time of ProtoGermanic each of these sounds constituted a separate phoneme or a combination of phonemes. Credited with great viability and
+much acclaimed, Edgerton's formulation came to be known as the "generalised version" of Sievers' law or "Sievers-Edgerton law".
+The major difficulty which stems from Edgerton's extension when applied to Germanic concerns recoverability of the prehistoric
+operation of the law on other resonants, specifically the fact that no reflexes of resonants other than J are preserved there.
+Intriguing is also the question of the origin and consequently precise dating of Sievers' rule. What the Germanic material adduces are
+only remnants of a process once operative but no longer alive. In fact, Old Indic is the only Indo-European dialect where Sievers' law
+is visible as a living process in historical times, appearing quite regularly in the Rigvedic literature. With respect to Germanic, it is
+commonly assumed that the process was still an active phonological rule in the grammar of Proto-Germanic which ceased to operate
+in the early dialectal stage of Germanic, preceding shortly the historical stages of individual dialects. The gradual demise of the law
+as a process is associated with the shift from Indo-European pitch accent to stress accent in Proto-Germanic, and related to reductive
+processes operative in Germanic at that time, namely syncope and apocope. Although such dating seems to be representative of the
+majority stance, propositions that Sievers' law was still operative in the early gramma rs of individual Germanic dialects are not
+uncommon (e.g., Horowitz 1974; Murray 1988).
+Probably the most extreme stand as far as the origin and dating of the process are concerned is the surmise that it developed
+parallelly but independently in individual Germanic and other Indo-European dialects, which implies that it may be only typologically
+rather than genetically related phenomenon in these Indo-European languages (polygenetic hypothesis). Yet, given the nature of the
+evidence furnished by both Germanic and non-Germanic dialects (especially the fact that the law as an essentially non-reductive
+process runs counter to the preferred reductive line of development in Germanic and is thus unlikely to have developed
+independently) as well as lack of cogent evidence indisputably supporting the polygenetic hypothesis, one is inclined to recognise
+that the variation was originally Proto-Indo-European (late Proto-Indo-European) and was inherited by daughter languages, the view
+essentially consistent with Sievers' original assumption. (5)
+2. Sievers' law in Old English
+As has already been mentioned, in Old English unlike in Gothic, the pre-historic alternation of *-iiV- ~ *-iV- is not noticeable on the
+surface level. The pattern of suffixal alternations which can be traced back to Sievers' law, arrived at when examining Old English
+data, involves primarily Old English nominal and adjectival systems. Most transparent traces of the process are to be sought in the
+nominative and accusative singular of masculine and neuter ja-stems where light and heavy noun stems display conspicuously
+different inflectional pattern. The prime examples are monosyllabic neuter ja-stem nouns: cynn 'fblk' vs. wite 'punishment' or
+masculine ja-stems: dynn 'noise' vs. ende 'end' where heavy monosyllabic stems carry suffixal -e, forcibly indicative of the original
+syllabic alternant *-iiV-. Derivation of the forms ende and cynn can be presented as follows:
+(2) a. (masc.) *andiian > *andi > *endi > ende where after the loss of the ending, the /ii/ subject to contraction, results in long /i/,
+subsequently reduced to /e/, in contrast to:
+b. (neut.) *kunian > *kunnjan > *kynni > cynn, with regular working of gemination, followed by umlaut and loss of the j glide
+Identical pattern seems to obtain in other morphosyntactic categories, namely nominative and accusative plural of neuter ja-stems:
+cynn vs. witu, both forms evincing the original prevocalic *-iV- vs. *-iiV- alternation induced by Sievers' law (*kunio > *kunnjo > kynnu
+> cynn, vs. uitiio > witu). The maintenance of suffixal -u after a heavy stem or in a sequence of heavy-light syllables, also as in: ricu
+(<*rikiiu), ierfu 'inheritance', aerendu (< *arundiiu) 'errand', gepeodu 'language', netenu 'animal', faestenu, 'fortress', piccetu 'thicket', is
+considered to be a reflex of the syllabic variant of Sievers' law *-iiV.
+Another morphological category which offers fine support for the earlier working of the law in Old English are ja- and jo-stem
+adjectives where the distinction between heavy and light stems can be very clearly observed, primarily in nominative and accusative
+singular: (heavy) liSe 'gentle' vs. (light) nytt 'useful'. Here alike the opposition between preservation of terminal -e and gemination
+counts as a reflex of Sievers' rule, operative in the prehistoric Germanic adjectival system. Other familiar examples include: aepele
+'noble', claene 'clean', maere 'famous', wierpe 'worthy', ece 'eternal vs. midd 'middle', gesibb 'alive', etc.
+Evidently, even this small sample of Old English data seems to confirm the assumption that Sievers' rule was sensitive to syllable
+weight and the alternation governed by the law should be viewed with regard to Proto-Germanic syllable structure.
+As implied by the data, of great importance to the analysis of Sievers' law in Old English is its relation to West Germanic gemination
+which Old English as a West Germanic dialect underwent, and which was present not just in monosyllabic but also in polysyllabic
+stems. As a result of this process as applied to the nominal and adjectival systems in monosyllables, final consonants of both ja-and
+jo- stems were doubled presumably in pre-Old English period. In relation to Sievers' law, suggestive is the fact that the doubling could
+occur in light syllables only if the consonant was followed by the palatal glide /j/, which implies that it could not affect stems with
+original suffixal *-iiV-. Gemination then can be seen as a process indirectly indicative of Sievers' non-syllabic alternant *-iV-*.
+Accordingly, light monosyllabic ja- and jo- stems exhibiting gemination in inflected forms (e.g., wedd 'pledge') in nom./acc. singular go
+back to the non-syllabic alternant *-iV, whereas heavy monosyllabic stems exhibiting vowel termination -e (e.g., hwaete 'wheat') can
+be adduced as evidence for the syllabic *-iiV- alternant. In other words, the failure of monosyllabic sequences containing heavy stem
+to undergo gemination can be attributed to earlier working of Sievers' law.
+Most importantly, gemination, as a prominent feature tightly related to Sievers' development, takes the analysis of reflexes of the law
+beyond the limits of the nominal and adjectival systems (the question to be addressed), just to mention Old English ja-stem verbs,
+
+e.g., fremman, sellan, biddan which are believed to have derived from Proto-Germanic light stems terminated in syllabic *-iValternant.
+Although Sievers restricted his formulation to monosyllables, offering no rules for polysyllabic stems, it has been convincingly proved
+(notably by Erdmann 1972) that valuable evidence for the operation of the rule in Germanic can be adduced by polysyllables,
+especially by disyllabic stems, where the Old English data are particularly relevant. The traditional account of the disyllabic ja- and jostems in Proto-Germanic held that polysyllabic j-stems are derived just like heavy j-monosyllables, namely take the syllabic *-iiValternant of Sievers' law, irrespective of their internal syllabic structure (Erdmann 1972: 410). Examination of reflexes of Sievers' rule
+in polysyllabic structures of Old English reveals new intriguing patterns of the operation of the rule in these segments and proves that
+differentiation within these polysyllabic stems is necessary. What seems to be of significance here is that the parallelism in the
+distribution of monosyllabic and polysyllabic j-stems, which the data evince, draws a gain upon the syllable structure of the nouns,
+with particular reference to syllable weight. Just as in the case of monosyllabic stems, in polysyllabic alike weight of the preceding
+syllable seems to be decisive factor in the alternation.
+The underlying assumption made is that a heavy syllable is metrically equivalent in weight to a sequence of two light syllables,
+equivalence which is assumed to have emerged in Proto-Germanic after the operation of Verner's law and subsequent Germanic
+fixation of initial stress. Accordingly, disyllabic stems containing two light syllables (and somewhat less regularly polysyllabic stems)
+(e.g., merece 'smallage'), just like heavy monosyllables (e.g., esne 'servant'), uniformly point to prehistoric syllabic sequence *-iiV- (<
+*marikija), whereas stems containing the sequence heavy-light syllable (byroen 'burden') can be placed on a par with light
+monosyllabic stems (synn 'sin') and are assumed to derive from the non-syllabic form of Proto-Germanic *-iV - (<*burpinjo). This
+principle of equivalence in weight is commonly referred to as resolution and seems to have played a crucial role also in other
+phonological developments in Old English. (6) Importantly, the equivalence in this context is Germ anic-specific and thus in the period
+before accentual transformation, possibly still in early Proto-Germanic, Sievers' law was sensitive only to the distinction between light
+and heavy syllables.
+In this extended (polysyllabic) context Sievers' rule for Old English could be stated as follows: suffixal non-syllabic -i- is vocalised to a
+syllabic -i- when preceded by a heavy syllable or by a sequence of two light syllables and remains unchanged when preceded by a
+light syllable or a sequence of heavy-light syllables. It can be sketched in the following way:
+(3) i [right arrow] ii / heavy syll._____ V i [right arrow] no change / light syll._____ V
+/ light-light _____ V / heavy-light _____ V
+Evidently the pattern reveals a neat correlation to the principle of syllable preference (optimal syllable law) which disallows, in this
+particular case, overheavy syllables, considered least preferred for Proto-Germanic, in fact unacceptable. Specifically, trisyllabic
+sequences of the type CVCC.iV or CVVC.iV violate evidently the optimal syllable law since they contain overheavy syllables initially.
+With the vowel introduced in line with Sievers' law and with the resulting resyllabification, superheavy syllable can be reduced to
+acceptable sequences of CVC.Ci.iV and CVV.Ci.iV (Murray 1986: 262).
+The assumption of metrical equivalence made, bearing on the question again is the revealed relation between gemination and
+inflection in disyllabic stems, where the relevant morphosyntactic categories are again nominative and accusative singular of ja- and
+jo- stems. The presence of gemination vs. vowel termination in the former and gemination vs. lack of it in the latter reflects the
+alternation defined by Sievers' law. More specifically, the presence of final vowel -e in nom./acc. sg. ja-stems in sequences of two
+light syllables, as in: eowode 'flock', hemepe 'shirt', merece 'smallage', byrele 'cup-bearer', swefete 'sleep' in contrast to gemination of
+final consonants in heavy-light sequences, as in: peowet(t) 'slavery', faesten(n) 'fortress', nyrwet(t) 'narrowness', baernett 'arson',
+westen(n) 'desert' can be attributed to earlier operation of Sievers' rule. Analogically, the absence of gemination in nom./acc. singular
+of such jo-stems as: saeEen 'statement', menen 'maid-servant', haefen 'possession', se len 'gift', all containing a sequence of two
+light syllables vs. its presence in heavy-light sequences, as in: byrgenn 'burial', byrpenn 'burden', raedenn 'state', haeftenn 'captivity'
+allows to trace the former set of forms to the original syllabic variant *-iiV- whereas the latter to the original non-syllabic *-iV- alternant.
+Interestingly, indicative of the syllabic alternant in this group (jo-stems) is also the prominent nom. sg -u affix in such words as:
+hyrnetu 'hornet', ylfetu 'swan', lempetu 'basin', anetu 'solitude', occurring frequently on side of their geminated forms (hyrnett, ylfett,
+etc.) (Campbell 1959: 238-239).
+Consequently, the pattern evinced by disyllabic stems in these categories is analogical to the pattern displayed by monosyllabic
+stems, with the weight of the preceding syllables playing a decisive role in both cases.
+Probably most controversial aspect of Sievers' law in Old English is its quite enigmatic relation to reductive developments operative in
+Old English, namely apocope and syncope (traditionally subsumed under the common name of high vowel deletion). Both processes
+are similar in terms of the mechanism employed for their operation, namely both are sensitive to syllable weight and count. Striking is
+the fact that apparently identical environment--heavy stem or its equivalent sequence--triggers two contradictory processes, which the
+two certainly are in this context: reduction (apocope/syncope) vs. preservation of unstressed high (front) vowels (Sievers' law). It is all
+the more confusing, given that the environment conducive to the operation of Sievers' law here is typically reductive in Germanic,
+characterised by the evident tendency for short unstressed vowels to be deleted, whereas the process itself, in contrast to apocope or
+syncope, is certainly far from being reductive.
+The correlation between Sievers and high vowel deletion can be illustrated with the aforementioned example of nom./acc. plural of
+heavy ja- stems where the regular expected operation of apocope is evidently violated. The expected outcome of the rule in the case
+of nom./acc. plural of heavy neuter ja-stems is zero ending, yet forms such as ierfu, aerendu, gepeodu, netenu, getimbru ('buildings')
+but also neuter plural adjectival forms such as: aepelu 'noble'., cenu 'bold', ecu 'eternal', maeru 'famous' seem to run counter to the
+
+rule. The unexpectedly preserved -u affix cannot be explained otherwise but as a reflex of earlier activity of Sievers' law, traceable to
+its syllabic alternant *-iiV.
+Given such intricate pattern of interrelation between the two processes an appeal to their relative chronology seems necessary. Et is
+commonly assumed on the basis of comparative data furnished by other Germanic languages that Sievers' law must have occurred
+prior to apocope (after heavy syllables) so that the latter could not obliterate the condition for its operation. Consequently, Sievers'
+law is dated to early Proto-Germanic (yet as an inherited phenomenon with origins in Proto-Indo-European), whereas apocope
+(presumably followed by syncope) somewhat later to Common Germanic stage.
+As already remarked, Old English verbs do not seem to preserve reflexes of Proto-Germanic *-iiV- and *-iV- alternants superficially.
+Yet, given that gemination was a prominent feature of Sievers' development, serving as an exponent of the non-syllabic alternant *iV-, and the fact that Old English verbs were subject to the process as well, the pattern which weak verbs of the first class evince can
+hint at the original distribution generated by Sievers' law. Accordingly, geminated verbs (e.g., fremman 'do', hrissan 'shake', trymman
+'strengthen') can be traced back to the non-syllabic alternant, occurring after light syllable stem (i.e., *framjan > *frammjan >
+fremman), whereas non-geminated ones (e.g., secan 'seek', fedan 'feed', cypan 'make known') -- to the original syllabic *-iValternant, expected after heavy syllable stems (*sokijan > secan). In fact, the glide is visible on the surface level in a single
+environment, namely where gemination failed to operate after light stems ending in -r, where it appears as -i-, e.g., nerian 'save' <
+*nazjan.
+The available evidence furnished by Old English material seems to testify sufficiently to the existence of the ancient *-iiV- ~ *-iValternation presupposed by Sievers' law, in spite of the fact that it is not visible on the surface level, as seems to be the case with
+Gothic.
+3. The Converse of Sievers' law in Old English
+The Converse was originally introduced by Edgerton (1934) who postulated its operation in Proto-Indo-European, basing his analysis
+on a noteworthy suffixal alternation in Vedic. It is questionable however whether the Converse can be applied to Germanic at all. The
+process is again dependent on the quantity of the preceding syllable. According to the rule, the weak grade vowels i and u (and
+possibly other syllabic resonants) were lost after a light syllable when preceded by a consonant and followed by a corresponding
+semivowel and a vowel. The development can be schematically sketched as follows:
+(4) -ii - > -i- / light syllable ___V
+It has been claimed that if any evidence for the Converse exists in Germanic, it must be looked for in the West Germanic subbranch,
+for reason of its very close correlation to West Germanic gemination, in particular the fact that gemination, regularly triggered by the
+presence of the following glide /j/ could be blocked whenever the consonant to be geminated was followed by the -ij-cluster. The
+available evidence testifying presumably to the application of the rule in Old English is limited to virtually two cases, namely, genitive
+plural forms of i-stem nouns: Deni(g)a (< *dani) 'Dane' and wini(g)(e)a < (*wini) 'friend', both forms lacking the expected gemination of
+the nasal and preserving instead the palatal semivowel (Erdman 1972: 409). The assumed reconstructed base forms (gen. p1.) of the
+attested nouns are: *dan-ij-o and *win-ij-o, both desyllabified to single glides as late as in the Old English period (i.e., after West
+Germanic gemination and reductions). Convincing as the data may seem, due to its evident and disturbing scarcity, it can hardly be
+considered a sufficient proof for the existence of the Converse in Old English. It must be noticed moreover that the process,
+conceived of as a reductive development which it undoubtedly is, conflicts with other reductive processes in Old English in that unlike
+apocope or syncope which target preferentially at sequences containing heavy syllables, it reduces quite unexpectedly sequences
+containing light syllables. The development then seems to run counter to the prevalent and consistent trend for reductive processes
+in Germanic heavy rather than light syllables.
+Although the Converse seems also to be evinced by non-West Germanic data, in anomalous ja-stem declension of Old Norse
+masculine and neuter nouns, as well as some Gothic i-stem nouns (e.g., naweis 'dead'), they do not allow for assuming
+unquestionably the relevance of the Converse for Proto-Germanic.
+4. Final remarks
+It seems that the role of Sievers' law in Old English material has been largely underestimated upon the traditional view which holds
+that it is Gothic which testifies most convincingly to the earlier activity of the law. West Germanic dialects in turn were viewed as least
+likely to display reflexes of the rule primarily due to multiple levelling developments, characteristic of this subbranch, activated in the
+majority of cases in exactly the same environment. Detailed examination of Old English material but also broader perspective
+adopted in which to view the data (namely, the relation between Sievers, gemination and Germanic reductive developments) allow to
+conclude that the Old English material furnishes cogent evidence for the presence of Sievers' distinct alternants *-iV- ~ *-iiV- in ProtoGermanic. The pattern evinced by the nominal, adjectival (and possibly verbal) systems can be considered a relic of the original
+distribution of semivowel alternants. Undeniably of paramount importance to the analysis is gemination with its principled pattern of
+occurrence allowing for the emergence of fundamental dichotomy, observable on the superficial level in relevant categories: terminal
+vowel or non-geminated stem consonant vs. geminated consonant. Such coherent and refined pattern of preserving traces of the
+process can be indicative of relative conservatism of Old English.
+As concerns sequences containing other resonants, available Old English data provide little if any evidence indicative of SieversEdgerton pattern. Just as in the case of other Germanic dialects, the traces left in Old English evince undeniably the application of the
+rule only in the case of palatal glide (i/i), not even the labiovelar one (u/u). In fact, the scarcity of traces of other resonants has been
+explained in relation to consonantal strength of resonantal phonemes; the consonantally stronger phones (according to the scale of
+consonantal strength--resonants other than semivowels) are most likely to occupy marginal position within the syllable and as such
+
+can more readily undergo desyllabification (R>R) of their syllabic segment. (7) As a result, no evidence for their syllabic alternants is
+available (Murray 1988: 221-222).
+Finally, it seems justified to conclude that Sievers' law as a process sensitive to phonological weight allows some insights into the
+prosodic structure of pre-historic Old English and definitely exposes the crucial role which short/long syllable opposition played in Old
+English and certainly in Proto-Germanic.
+(1.) "... unbetontes ... i oder u vor einem vokal ist consonant nach kurzer, vokal nach langer silbe ohne rucksicht auf die sonstige
+accentlage des wortes" (Sievers 1878: 129).
+(2.) In fact Sievers' rule assumed parallel alternation for both semivowel phonemes: palatal /j/ and labiovelar /w/; the latter however
+seems less relevant to Germanic which preserves essentially no traces of its alternation.
+(3.) The fact that the Germanic morphophonemic alternations reflect consistently Indo-European allophonic variation has been
+accepted as a proof that Indo-European resonant system was maintained in Proto-Germanic, possibly until the stage when individual
+Germanic dialects started to emerge; such view points implicitly to relative conservatism of the Germanic parent language (yet it is
+not unanimously recognised) (Lehmann 1955: 365).
+(4.) Importantly, in Classical Sanskrit which is the later stage of Vedic Sanskrit, the alternation is no longer governed by Sievers' law;
+instead the glides are consistently present in prevocalic position.
+(5.) Interestingly, a different, later date of the operation of Sievers' law can be postulated on the basis of ancient Germanic loan words
+in Balto-Finnic, which prove that the rule was not yet operative even at an early stage of Proto-Germanic. It seems that the reflex of
+Indo-European resonant /y/ had a non-syllabic realisation after a heavy syllable which is evident in Germanic sequences o, d, p, t + y,
+reflected in early Proto-Finnic as palatalised geminate affricate (Fin. ts < cc), e.g., maltsa < Gmc *malSja, otsa < Gmc *anSja(Koivulehto 1986: 290; cf. Ritter 1977).
+(6.) This metrical equivalence can be also explained in terms of moraic phonology, specifically mora-counting principle according to
+which bimoraic heavy syllable (stressed) is equivalent to bimoraic sequence of two light syllables, each assigned a single mora.
+(7.) This assumption remains in line with the rule for preferred syllable contact (syllable contact law) which states that: "a syllable
+contact within a simplex word is the more preferred the greater the strength difference is between the onset of the second syllable
+and the offset of the first syllable" (Venemann 1988: 212).
+REFERENCES
+Andersen, Henning (ed.)
+1955 Historical linguistics. Amsterdam - Philadelphia: John Benjamins.
+Beade, Pedro
+1972 "Sievers' law in Gothic and other related matters", Lingua 30: 449-459.
+Brogyanyi, Bela - Thomas Kromme1bein (eds.)
+1986 Germanic dialects: Linguistic and philological investigations. Amsterdam - Philadelphia: John Benjamins.
+Campbell, Alistair
+1959 Old English grammar. Oxford: The Clarendon Press.
+Collinge, Neville E.
+1985 The laws of Indo-European. Amsterdam - Philadelphia: John Benjamins.
+Dahl, Ivar
+1938 Substantival inflection in Early Old English. Lundt: C.W.K. Gleerup.
+Edgerton, Franklin
+1934 "Sievers' law and Indo-European weak-grade vocalism", Language 10: 235-264.
+1943 "The Indoeuropean semivowels", Language 19: 83-124.
+Erdmann, Peter H.
+1972 "Suffixal j in Germanic", Language 48: 407-415.
+
+Gussmann, Edmund (ed.)
+1988 Phono-morphology. Studies in the interaction of phonology and morphology. Lublin: Redakcja Wydawnictw KUL.
+Horowitz, Franklin E.
+1974 Sievers' law and the evidence of the Rigveda. (Janua Linguarum, Series practica 216.) The Hague: Mouton.
+Koivulehto, Jorma
+1986 "Die Sieversche Regel im Lichte der Germanisch-Finnischen Lehnbeziehungen", in: Bela Brogyanyi - Thomas Krommelbein
+(eds.), 249-294.
+Lehmann, Winfred P.
+1955 "The Proto-Indo-European resonants in Germanic", Language 31: 355-366.
+Luick, Karl
+1921 Historische Grammatik der englischen Sprache. Leipzig: Tauchnitz.
+Murray, Robert W.
+1986 Phonological strength and early Germanic syllable structure. Munchen: Wilhelm Fink Verlag.
+1988 "The shortening of stressed long vowels in Old English", Diachronica 5: 75-107
+Murray, Robert W.
+1993 "Phonologically based morphological change: High vowel deletion and paradigmatic implications in Old English", in: Henning
+Andersen (ed.), 323-335.
+Ritter, Ralf P.
+1977 "Zur Frage der finnischen Evidenz fur die Sieverssche Regel im Germanischen", Die Sprache 23: 171-179.
+Seebold, Elmar
+1972 Das System der indogermanischen Halbvokale. Heidelberg: Winter.
+Sievers, Eduard
+1878 "Zur accent- und lautlehre der germanishen sprachen III. Zum vokalischen auslautsgesetz", Beitrage zur Geschichte der
+deutschen Sprache und Literatur 5: 101-163.
+Vennemann, Theo
+1988 "Phonologically conditioned morphological change", in: Edmund Gussmann (ed.), 194-219.
+Voyles, Joseph B.
+1992 Early Germanic grammar, Pre-, proto- and post-Germanic languages. London: Academic Press.
+Will, Werner H.
+1970 "The resonant system in Proto-Germanic", Journal of English and Germanic Philology 69: 211-222.
+Adamczyk, Elzbieta
+Copyright: COPYRIGHT 2001 Adam Mickiewicz University
+http://ifa.amu.edu.pl/sap/
+Source Citation (MLA 8th Edition)
+Adamczyk, Elzbieta. "Old English reflexes of Sievers' Law." Studia Anglica Posnaniensia: International Review of English Studies,
+2001, p. 61+. Gale Academic OneFile, https://link.gale.com/apps/doc/A92803246/AONE?u=amst&sid=AONE&xid=353b67ac.
+Accessed 16 June 2020.
+Gale Document Number: GALE|A92803246
+
+

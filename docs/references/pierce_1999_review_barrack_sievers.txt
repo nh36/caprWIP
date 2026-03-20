@@ -1,0 +1,209 @@
+American Journal of Germanic Linguistics & Literatures 11.1 (1999)
+
+125
+
+Sievers' Law in Germanic. By Charles Barrack. (Berkeley
+Insights in Linguistics and Semiotics, 22). New York: Peter Lang,
+1998. Pp. xii, 288. Hardcover. $52.95.
+Reviewed by MARC PIERCE, University of Michigan
+The volume under consideration discusses one of the classic
+problems of Germanic phonology, the vowel/glide alternation known
+as Sievers' Law (hereafter SL). In order to account for alternations
+like Gothic nasjis [nasjis] 'save' but sokeis [so:ki:s] 'seek', Sievers
+(1878:129) formulated his law as follows: "Unbetontes . . . i oder u
+vor einem vocal ist consonant nach kurzer, vocal nach langer silbe
+ohne riicksicht auf die sonstige accentlage des wortes." Later
+historical developments have obscured the picture somewhat;
+according to Barrack (p. 1), "virtually every aspect of SL has been
+the subject of controversy, save one: . . . it appears with pristine,
+remarkable regularity only in the case of -j- and -ij- and in only one
+dialect of Indo-European, in . . . Gothic." (I have modified Barrack's
+transcription slightly, and use <j> where he uses <i> and <w> where he
+uses <u>). Issues addressed in the monograph include the following:
+evidence for SL in West Germanic, specifically Old English; possible
+links between SL and other phonological developments in early
+Germanic; and the origins of SL (i.e., whether it was polygenetic or
+monogenetic).
+The analysis presented in the book is conservative, agreeing
+largely with Sievers's own (1878) study, and employs the syllable
+preference laws developed mainly by Theo Vennemann (1988).
+Barrack argues that SL began as "denuclearization of unaccented
+high vowels in prevocalic position after light syllables" (p. 215), and
+then became a nuclearization process due to the change in accent
+systems from Indo-European to Germanic. For this portion of his
+analysis, Barrack draws heavily on what he refers to as "the
+Dahl/Erdmann hypothesis" (p. 108), which claims that front loaded
+stems (66) are equivalent to light monosyllabic stems (6-), and
+balanced stems (66) to heavy stems ((a)a-). This hypothesis,
+originally developed by Dahl (1938) to account for gemination in
+Old English, was extended by Erdmann (1972) to include SL. Given
+this hypothesis, Barrack assumes the following formulation for SL in
+
+126
+
+Reviews
+
+Germanic: "*j/w nuclearize to *ij/uw after a heavy . . . or a balanced
+. . . stem; otherwise they remain unchanged" (p. 156).
+Barrack's analysis crucially relies on his reconstruction of ProtoGermanic syllable structure, specifically of *-VCjV sequences. There
+are two possibilities here; such sequences could be syllabified either as
+*-$$CjV or as *-$C$jV ($ indicates a syllable boundary). Sievers
+(1892) contended that the first syllabification was the correct one, a
+position defended by Barrack here (as well as in Barrack 1991), and
+one that has been attacked by a number of scholars, most recently
+Murray (1993). Barrack bases his conclusion on a variety of data
+(open syllable lengthening in Faroese and Icelandic; word division in
+the Gothic and Old English manuscripts), which, he concludes,
+demonstrate a tendency to tautosyllabify voiceless stop + r clusters.
+Since these four languages, with at least one representative from the
+three main branches of Germanic, all tautosyllabify these clusters
+following stressed vowels, Barrack reconstructs the same
+syllabification for Proto-Germanic, for example, *-V$TrV- (T is used
+as a cover symbol for "any voiceless stop")- Barrack then argues that
+the presence of this syllabification demands that *- VTjV sequences be
+syllabified as *-V$TjV—a conclusion based on the Synchronic
+Maxim posited by Vennemann (1988:3), which holds that if less
+preferred structures occur in a language, then more preferred
+structures will also occur. (According to the Head Law, Tj is more
+preferred than Tr.)
+This argument, while elegant, ultimately fails to convince, largely
+because of Barrack's interpretation of the Synchronic Maxim as an
+absolute law. Consider the following: Icelandic tautosyllabifies certain
+consonant clusters, including pv. If the Synchronic Maxim were an
+absolute law, then pi clusters would also be tautosyllabified, since pi is
+a more preferred syllable head than pv. However, pi clusters are
+actually heterosyllabified (e.g., epli [ep$li] 'apple', Einarsson
+1949:20), indicating that the Synchronic Maxim should not be
+interpreted as an absolute law, but rather as a statement of preference,
+since other developments may lead to violations of it. (Note that this
+appears to be Vennemann's view as well; cf. Vennemann 1988:4).
+This indicates that Barrack's proposed syllabification may well be
+incorrect, which considerably weakens his analysis.
+The traditional view of SL is that it is most clearly preserved in
+Gothic, has been largely eliminated in Old Norse, and occurs only
+
+American Journal of Germanic Linguistics & Literatures 11.1 (1999)
+
+127
+
+marginally, if at all, in West Germanic. Barrack partially accepts the
+traditional view of West Germanic, agreeing that SL is only marginal
+in Old High German and Old Saxon, but argues that Old English
+actually preserves SL much more extensively than the traditional view
+would have it, and even better than Gothic in some contexts: "Old
+English preserves the distinction between the reflexes of the two
+Proto-Germanic alternants *-jV- and *- ijV- among the nominals
+better than any other Germanic dialect" (p. 141; italics in original).
+The reflex of the Proto-Germanic glide is retained in all environments
+in Old English as gemination (PGmc. *bidjan > OE biddan 'ask'), as
+-j- (PGmc. *nazjan > OE nerian 'save'), or as final -i, which later
+shifted to -e (PGmc. *harjaz > OE here 'army'). There are a few
+exceptions to this generalization, namely, when the glide preceded
+*-/- and "possibly in the nominative singular masculine of the jastems" (p. 145), for example, *salijip > *salip > OE selep 'he/she
+gives'.
+Much of the Old English evidence for SL must be recaptured by
+internal reconstruction, and Barrack spends a good deal of the chapter
+on Old English doing just that. He examines apocope/syncope,
+breaking, and brightening, and concludes that various differences in
+these developments can best be accounted for if SL applied in Old
+English as well. For instance, breaking, by which "short front vowels
+develop a back off-glide when preceding a liquid followed by a
+consonant" (p. 151), occurs in fiellan 'to fell', but not in tellan 'to
+tell', even though these forms differ only in their initial segments.
+Barrack reconstructs tellan as an original light stem (PGmc. *taljan),
+and fiellan as an original heavy stem (PGmc. *fallijan), leading to the
+further conclusion that *taljan, but not *fallijan, would have been
+subject to SL. Given that this possible application of SL is the only
+difference in the developments of these two forms, Barrack views this
+as strong evidence for the preservation of SL in Old English.
+Barrack also argues that SL can be linked to two other
+phonological developments found in early Germanic: high vowel
+deletion (syncope) and the metrics of Germanic alliterative verse
+{Stabreim). In terms of high vowel deletion, Barrack points out that
+"unstressed *i/*u are lost after heavy or balanced stems, but remain
+after light stressed or front-loaded stems" (p. 146). This leads to the
+curious situation that high vowel deletion eliminates short unstressed
+high vowels in the same environments in which SL preserves
+
+128
+
+Reviews
+
+them—an observation that Barrack returns to when considering the
+genesis of SL. As for Stabreim, given that heavy stems and balanced
+stems are equivalent, the same environment that triggers SL and high
+vowel deletion forms a lift in Stabreim. These observations are not
+new; they are the focus of Dresher and Lahiri 1991, a study
+mentioned by Barrack but dismissed with the comment that it is
+"marred by [its failure] . . . to consider the Dahl/Erdmann
+hypothesis" (p. 165).
+The origin of SL is also controversial. Horowitz (1974:66) argued
+that it was polygenetic, "since its effects do not entirely coincide from
+language to language." Seebold (1972:340-41) took another
+position, basically arguing for poly genesis, but hedging his bets by
+admitting that monogenesis was also a possibility. Sievers himself
+(1878:139) viewed it as a Proto-Indo-European alternation, and hence
+monogenetic: "die doppelheit der bildung [muss] als indogermanisches eigentum beansprucht werden," and Barrack agrees.
+This conclusion is based on the connection (and conflict) between SL
+and high vowel deletion, two competing processes that occur in the
+same conditioning environment. Barrack resolves this anomaly by
+appealing to periodization, arguing that SL took place before high
+vowel deletion—a view "consistent with the proposition that SL began
+in Proto-Indo-European and continued as an active process . . . in
+Proto-Germanic . . . but gradually became morpholo-gized in the
+individual daughter dialects" (p. 168).
+Ultimately, however, Barrack's analysis fails to convince the
+reader fully. Perhaps the major weakness of the book is that Barrack
+relies so heavily on his proposed syllabification of Proto-Germanic; if
+his proposed syllabification is faulty, then much of his argumentation
+is also faulty. The quality of the book is uneven; some sections (e.g.,
+the discussion of SL in Old English and the review of SL in the other
+Indo-European languages) are well argued and convincing, but others
+(e.g., the discussion of Proto-Germanic syllabification) do not come
+up to this standard. The volume itself is well bound and quite sturdy.
+It is unfortunately marred by a number of typographical errors, most
+of which are minor and self-correcting (e.g., Beowolf for Beowulf),
+although some are more troublesome (e.g., footnote 13 to chapter
+nine is missing). Finally, as a basketball fan, I feel obligated to point
+out that the Los Angeles Lakers are (presumably) named after the
+Great Lakes, not for Silver Lake in Los Angeles, since the team
+
+American Journal of Germanic Linguistics & Literatures 11.1 (1999)
+
+129
+
+originated in Minneapolis before moving to Los Angeles in 1960 (p.
+257).
+These critical remarks should not be taken as a total rejection of
+the book. Despite its flaws, the book is still the most comprehensive
+treatment of SL in Germanic to date, thought-provoking, and worthy
+of investigation.
+REFERENCES
+Barrack, Charles M. 1991. PGmc. *-fcjV- revisited. AJGLL 3.119-44.
+Dahl, Ivar. 1938. Substantival inflection in early Old English vocalic stems.
+Lund: Gleerup.
+Dresher, B. Elan, and Aditi Lahiri. 1991. The Germanic foot: Metrical coherence
+in Old English. Linguistic Inquiry 22.251-86.
+Einarsson, Stefan. 1949. Icelandic: Grammar, texts, glossary. Baltimore: The
+Johns Hopkins Press.
+Erdmann, Peter H. 1972. Suffixaly in Germanic. Language 48.407-15.
+Horowitz, Franklin Eugene. 1974. Sievers' Law and the evidence of the Rigveda.
+The Hague: Mouton.
+Murray, Robert W. 1993. PGmc. *-tQV-: A response to Barrack. AJGLL
+5.1-28.
+, and Theo Vennemann. 1983. Sound change and syllable structure in
+Germanic phonology. Language 59.514-28.
+Seebold, Elmar. 1972. Das System der indogermanischen Halbvokale.
+Heidelberg: Carl Winter.
+Sievers, Eduard. 1878. Zur accent- und lautlehre der germanischen sprachen. PBB
+5.63-163.
+. 1892. Zur westgermanischen Gemination. PBB 16.262-65.
+Vennemann, Theo. 1988. Preference laws for syllable structure. Berlin: Mouton
+de Gruyter.
+Department of Germanic Languages and Literatures
+University of Michigan
+3110 Modern Languages Building
+Ann Arbor, MI 48109-1275
+[karhu @ umich.edu]
+
+

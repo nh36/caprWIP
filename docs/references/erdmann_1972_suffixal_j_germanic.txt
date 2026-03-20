@@ -1,0 +1,562 @@
+Linguistic Society of America
+Suffixal j in Germanic
+Author(s): Peter H. Erdmann
+Source: Language, Vol. 48, No. 2 (Jun., 1972), pp. 407-415
+Published by: Linguistic Society of America
+Stable URL: http://www.jstor.org/stable/412142
+Accessed: 27-03-2015 13:33 UTC
+
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at
+http://www.jstor.org/page/info/about/policies/terms.jsp
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content
+in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship.
+For more information about JSTOR, please contact support@jstor.org.
+
+Linguistic Society of America is collaborating with JSTOR to digitize, preserve and extend access to Language.
+
+http://www.jstor.org
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+SUFFIXAL j IN GERMANIC
+PETER H. ERDMANN
+
+University of Hamburg
+Comparative treatment of the Germanicresonants has, in the past, emphasized
+Gothic. An analysis of irregular Old English material here leads to a better understanding of the problem. The present paper provides evidence for an extension of
+Sievers' Law to polysyllables, and a refutation of Lehmann's claim that the IE
+resonant system was maintained into late Proto-Germanic.l
+
+It is well knownthat Germanicnouns and verbs with a j-formativehave two
+types of syllablestructure.The suffixis said to represent/ij/ followinga heavy
+or unstressedsyllable, and /j/ elsewhere.
+Sievers (1878:129-30) noticed the allomorphic distribution of suffixal j for
+monosyllables, but was unable to give any rules for polysyllabic stems. He based
+his formulation on Germanic evidence, primarily on Old English, showing that it
+was necessary to postulate syllabic and consonantal variants in order to avoid
+contradictions with existing syncope rules for unstressed vowels (132-6). Research following Sievers' classic article has concentrated almost exclusively on
+the comparative aspect by linking the Germanic phenomena with allophonic
+variations in the Rigveda (Edgerton 1943).2
+Regardless of the situation in Indo-European, it is necessary for Germanic to
+distinguish between a syllabic and consonantal variant of suffixal j. Conclusive
+evidence is found in Old English, e.g. in the nom.acc. pi. of heavy ja-neuters as
+compared with their light counterparts:3 *kun-j-u 'races', *rzk-j-u 'kingdoms'.
+In the attested nom.acc. pi. cyn, ricu one observes loss of final u after a light
+stem syllable, but not after a heavy one. This contradicts the apocope rules for
+Old English: (1) in monosyllabic stems, high vowels drop after a light syllable;
+(2) in polysyllabic stems, final u drops in forms of the structure
+lght-
+
+{heavy}
+
+- U
+
+heavy -
+
+heavy
+
+- u
+
+light
+
+- u
+
+but not in formsof the structure
+heavy -
+
+(Sievers-Brunner 1965, ??146-9). It is obvious that the only chance for *rZk-j-u
+to retain its final u phonologically is to be of the structure HEAVY-LIGHT-U. The
+j has to be a syllable, and it has to be light. As a kind of syllable filler, one can
+1 I would like to thank Calvert Watkins and Gregory Nagy for reading an earlier draft of
+this paper, and Warren Cowgill for suggesting several revisions in the present version.
+2For a summary of the Germanic resonants, see Coetsem (1970:69-74) and Will 1970.
+For a discussion of the Sievers-Edgerton Law, cf. Szemerenyi (1970:98-103).
+8 The reconstructed forms in this paper are base forms arrived at by internal evidence.
+They are the input to the rule mechanism deriving the attested forms of the various Germanic dialects. I label these underlying representations 'pre-OE,' 'pre-Gothic' etc. to
+avoid confusion with the forms to be postulated for Common or Proto-Germanic, which
+should be based on the internal reconstructions of the individual dialects.
+407
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+408
+
+LANGUAGE, VOLUME 48, NUMBER 2 (1972)
+
+assume a preceding vocalic element, so that an internal reconstruction arrives
+at a form *rik-ij-u, which preserves its final u regularly, and which is supported
+by forms found in Runic inscriptions.
+While graphemic ricu represents its phonemic output /rik'u/, a written form
+like cyn must represent a heavy syllable which lost its final u bythe syncope rule
+for monosyllables; i.e., /kynn/ goes back to /kynnu/, which was geminated by
+suffixal j and dropped its palatal semivowel after a heavy syllable. Final geminates are simplified in Old English. Sievers' Law then would be a rule specifying
+the phonetic variants of suffixal j by operating on base forms like *kun-j-u and
+*rnk-j-u.
+In the past, the Germanic resonants have been discussed from the comparative
+point of view with Gothic emphasized to the exclusion of other dialects. Lehmann
+1955 tried to explain some morphophonemic variations in Gothic as reflexes of
+the Sievers-Edgerton Law, in order to underscore his thesis that the IndoEuropean resonant system had been maintained into late Proto-Germanic. The
+question has been much discussed, and one can elaborate on the criticism of
+Marchand 1956 and Winter 1955 to arrive at a more comprehensive view of the
+problem. Gothic represents only part of the picture; it is necessary to include
+Old English and Old Norse, which hold the key to a better understanding. Old
+High German, Old Saxon, and Old Frisian provide only marginal evidence,
+verifying certain aspects of the rules to be derived from a study of the Old English
+and Old Norse material. The present article sets the frame for a wider study of
+suffixal j in Germanic by linking the realizational rules of underlying j in two
+Germanic dialects-Old English and Gothic.
+Lehmann's contention must be seen in the wider perspective of his claim that
+Germanic represents a 'conservative' Indo-European dialect, retaining archaic
+features of the proto-language. The only support for this theory which Lehmann
+was able to offer, up to the discovery of Indo-European resonants in Germanic,
+had been his interpretation of Grimm's Law. As a phonetic change, it was said
+by him to have a more preserving quality than, e.g., a phonemic change (Lehmann
+1953). But one must question the validity of a characterization of Germanic
+based exclusively on superficial phonological features, ignoring the incisive
+morphological changes which the language has undergone since Indo-European
+times. I will start with an examination of the points Lehmann considered decisive
+for his arguments.
+Gothic has morphophonemic variation between /ji/ and /l/ for light and heavy
+ja-masculines, e.g. gen. sg. harjis 'army' vs. hairdeis 'shepherd'. There are only
+traces of a comparable differentiation for the ja-neuters, e.g. gen. sg. gawairpeis
+'peace', waldufneis 'power'. As a rule, the heavy ja-neuters are declined like their
+light-syllabic counterparts. Lehmann (1955:360) interprets the different paradigmatic treatment of /ji/ and /l/ as a breakdown of the original positional
+distribution of resonants in Gothic. If the Indo-European resonant system had
+broken down in Gothic, it should have done so for both masculines and neuters.
+The fact that only the latter eliminate the morpheme alternants points to an
+analogical process based on gender.
+Lehmann puts special emphasis on Edgerton's 'Converse of Sievers' Law'. He
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+SUFFIXAL j IN GERMANIC
+
+409
+
+maintains that the causative suffix ij of late Proto-Germanic was altered in
+accordance with the purely phonetic resonant rules of Indo-European. A reconstructed infinitive like *naz-ij-ana 'rescue' became Gothic /nasjan/ by the abovementioned 'Converse'. Marchand has pointed out that causatives like /nasjan/
+can be explained by analogy to the je/jo-presents alternating according to
+Sievers' Law, which refers to a phonetic realizational rule in Proto-Germanic,
+described as such by Sievers himself, who interpreted j and ij as phonetic representations of an underlying j. A reconstruction such as *naz-ij-ana is based on
+etymological considerations, and is unsupported by internal evidence pointing
+to a suffix j undifferentiated for factitives, denominatives, or primary verbs in
+IE je/jo-, and for causatives or iteratives in IE eje/ejo- (Kieckers 1928:225-32).
+The problem of the 'Converse' is not a question of Germanic linguistics
+proper.
+There are other reasons for rejecting Lehmann's claim that the 'Converse'
+worked in Proto-Germanic. For Gothic it does not matter whether we start with
+a base form *naz-ij-ana or *naz-j-ana. In both cases general phonetic rules,
+which are needed apart from the present problem, derive the attested infinitive
+/nasjan/. There is no difference between an etymological ij and a phonetic
+sequence ij derived by Sievers' Law; both result in j. It is therefore impossible
+to prove on internal grounds that Go. /nasjan/ reflects the phonetic alteration
+of *naz-ij-ana according to the Sievers-Edgerton Law for both morphological
+and phonological reasons.4
+It is only in West Germanic that we can hope to find evidence for the 'Converse of Sievers' Law', since the gemination of a final root consonant will not
+apply where there is a following ij. There are actually two cases of the 'Converse'
+in Old English. The gen. plurals of light-syllabic *dani- 'Dane' and *wini'friend' are attested as Deni(g)a5 and wini(g) (e)a6, beside their analogical forms
+Dena and wina (Sievers-Brunner, ?262, fn. 2).
+It need not concern us here whether Deni(g)a or wini(g) (e)a is phonetically a
+di- or trisyllabic form. What matters in this context is the lack of gemination
+of the nasal and the preservation of the palatal semivowel. There are two possibilities for reconstructing the gen. pl. preforms of the two attested nouns:
+first, they can have *dan-j-o and *win-j-o as their underlying representations.
+These base forms would lead to /denna/ and /winna/, showing gemination of
+root-final n and subsequent loss of j after a heavy syllable-i.e., forms which are
+nowhere attested.
+The palatal semivowel thus has to be separated from the root in order to block
+the doubling of the nasal, and the second possibility of reconstruction gives
+*dan-ij-o, *win-ij-o. Both these preforms are supported by comparative evidence
+(Kieckers, 115). However, both nouns violate Lehmann's claim that the 'Converse of Sievers' Law' applied in Germanic, whereby the suffix should have
+4For a recent criticism of Lehmann's views, see Will (216-17).
+6Bosworth (1898:1233)lists the following form for the gen. pl. of *dani-: wine Deniga.
+
+Toller (1921:148) supplements: Denia leode, maegen Deniga.
+6 For the gen. p1. of *wini-, Bosworth (1233)lists winiga (wunga, MS) hleo, winia bealdor,
+winigea ledsum.
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+410
+
+LANGUAGE, VOLUME 48, NUMBER 2 (1972)
+
+changed from -ij-o to -j-o in late Proto-Germanic, making *dan-j-6 and *win-j-o
+undergo j-gemination and loss of the palatal suffix-which did not happen, as is
+apparent from the attested forms. The gen. pi. *dan-ij-o, *win-ij-o have to be
+maintained until after the West Germanic doubling of consonants, and-as will
+be recalled from the discussion of the nom.acc. pi. *rzk-ij-u-until after the syncope of unstressed high vowels in Old English, i.e. well into the period of the
+individual dialects.
+There is a basic difference between suffixal j and the declensional suffix found
+in the gen. pi. of i-nouns. The former has to be listed in the lexicon as j, which is
+specified by 'Sievers' Law' as /j/ or /ij/; but the gen. pi. must be entered as ij,
+because it cannot be predicted by 'Sievers' Law' and is not altered by the 'Converse' (cf. Dahl 1938:166).
+It has become clear that Sievers' Law refers to a morphophonemic rule of
+Germanic, regulating the allomorphic distribution of suffixal j; but it is not
+linked to 'Converse', for which there is no evidence at all. Since there are two
+cases in Old English where morphological ij is not altered in accordance with the
+phonetic rules postulated by Edgerton, it seems improbable that the Germanic
+phenomena are on a par with the allophonic variations of the Indo-European
+resonants.
+Sievers was unable to give any rules for polysyllabic j-stems: 'fur die Stellung
+/j/
+[of
+and /ij/ (Sievers writes i)] nach Ableitungssilben lasst sich eine bestimmte
+Regel nicht geben' (1898, ?45, 8). Grammars have, however, formulated a rule
+that in some dialects polysyllabic
+j-stems are inflected like heavy
+j-monosyllables.7
+In Gothic, nouns like ragineis 'counselor' and siponeis 'disciple', or verb forms
+like 3sg. pres.
+ind. mikileid 'extols' and riqizei1b'becomes dark', are inflected like
+monosyllabic heavy roots. Lehmann (1955:363-5) postulated junctures after
+heavy monosyllables and polysyllables, which were supposed to have been lost
+after light root syllables, to bring out the parallelism. This clearly is not an
+explanation. The use of junctures mirrors the phonological theory of the time
+when Lehmann wrote his article. Winter (530-2) tried to explain the fact in
+terms of syllable structure of the polysyllabic base, pointing to a parallel in his
+native Low German dialect of Haselau (20 miles northwest of Hamburg). We
+have arrived at a similar solution from an interpretation of irregular polysyllabic
+j-nouns in Old English, of which the Gothic material is only a special instance.
+The solution in terms of syllable structure is based on internal evidence, which
+supports an extension of Sievers' Law to polysyllables under statable conditions.
+Consider the following polysyllabic ja-neuters in Old English: nom.acc. sg.
+aerende,
+serend,
+**ud-jd-ja 'errand', *hamipr-ja 'shirt'. The former is attested as
+7
+and
+I take OE a3rendeto be the reflex of the derivational form
+*aeryndi
+nerynd.
+Cf. Nagy's statement (1970:35): 'There is no compelling internal evidence to justify
+the positing of a special extension, as it were, of Sievers' Rule, wherein Germanic (or at
+least Gothic) -CjV- becomes -CijY- after not only preceding heavy syllables but also preceding disyllables; THIS TRADITIONAL EXPLANATION MERELY ACCOUNTS FOR ATTESTED
+8
+[emphasis
+...
+'
+added]. While I agree with Nagy on his latter pronouncement, I have
+FORMS
+to disagree with him on the question of internal evidence.
+Bosworth (17) gives no examples for the spelling variant srynd, which is listed in the
+lemma. Cowgill (personal communication) suggests that it is a late spelling 'dating from
+the time when unaccented short vowels had all merged in Old English'.
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+SUFFIXAL
+j IN GERMANIC
+
+411
+
+which one expectsto get after applyingthe necessaryrules, and OE asrendto be
+the result of an analogicalremodelingof polysyllabicj-stems after polysyllabic
+i-stems, which lose their final -i's in syllable structuresof the form HEAVYHEAVY-ENDING. The -e in OE serendegoes back to -i because of the general
+loweringof unstressedhigh vowels in classical Old English (Pilch 1970:74-5).
+Underlying *hami-j-a is attested as hemepe(Toller, 531), showing a voiced
+intervocalic[d] as a positionalvariant of basic A.Unstressed-e results from the
+above-mentionedloweringof post-tonic-i in classicalOldEnglish.
+Heavy monosyllabic*and-j-a'end' likewiseshows up as ende,going back to
+endi in Early Old English.The nom.acc.sg. *and-j-a,specifiedby Sievers'Law
+as *and-ij-a,loses its final -a and vocalizesthe semivowel,which contractswith
+the precedingunstressed-i to long -i. Derivational *and- escapes the syncope
+of post-tonicfinal high vowels, which appliesonly to short -i or -u, and finally
+shortensits -Z.9Derivational *eryndi and *hemipi likewise must show a long
+final -z beforethe syncopeof unstressedfinalhigh vowels, sinceshort -i wouldbe
+lost in a polysyllabic structure HEAVY-HEAVY-Ior LIGHT-LIGHT-Z.Only HEAVYLIGHT-I preservesits finalshort -i (Sievers-Brunner,
+?149).Final -z as a contrac-
+
+tion of ij leads to reconstructions*arund-ij-aand *hamif-ij-a;i.e., ij occursin
+polysyllablesafter a heavy middlesyllableand after two light syllables.
+In polysyllables,a heavy middlesyllableequalstwo light syllablesin presuffixal
+position. The weight of the syllableprecedingthe heavy middlesyllableis of no
+importancefor the specificationof underlyingj. Thereis no differencebetweena
+heavy syllable in a mono- or polysyllabic structure. We can summarizethe
+conditionsin the followingrule:
+J-A]/i/
+-
+
+/j/
+
+/
+
+{(Isij/ablel)
+syllableJ]
+-heavy 1n[-heavy 1 r
+syllable LsyllableJ
+
+-
+
+elsewhere
+
+I.e., underlyingj is rewrittenas /ij/ followinga heavy syllablewhetherstressed
+or unstressedand followingtwo light syllables. In all other cases, suffixalj is
+specifiedas /j/ (cf. Dahl, 74-81).
+Formslike a?rende
+and hemepeare exceptionalattestationsof the derivational
+forms of underlying *arund-j-aand *hMmip-j.a.In general, the neuter polysyllabicj-stems of Old Englishhave been influencedby their non-suffixedpolysyllabiccorrespondents.OE westen'desert'goes back to a base form *wostin-j-a
+in the nom.acc. sg. Final -a drops before the West Germanicdoublingof consonants. Prejunctural-j is subsequentlyvocalized along with the fronting of
+stressed -o- to -a-, which is unroundedin West Saxon. Final vocalized-i is not
+lost in syllable structures of the form HEAVY-LIGHT-I,according to the apocope
+
+rules of Old English. The derivationalform of underlying*wostjn-fiatherefore
+reads *westini,which loses its final vowel by analogy with the non-suffixed
+polysyllabic a-neuters like OE heafod'head'. The nom.acc. pl. of underlying
+is attested as westinuor westinnu.Applyingthe necessaryrules to
+*w6stin-j-.u
+9 Derivational
+
+*and- is not to be taken as a form of Proto-Germanic
+
+comparable to a
+
+reconstruction like *piwj 'servant', but as a stage in the derivation of underlying *and-.ja.
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+412
+
+LANGUAGB, VOLUME 48, NUMBER 2 (1972)
+
+*w6stin-j-uresultsin a derivationalnom.acc.pi. *westinn,which is alteredon the
+basis of the non-suffixednom.acc. pi. heafodu,preservingits final -u regularly.
+The situationin Gothicis only a specialcase of the rulesgivenfor OldEnglish.
+The following polysyllabic ja-masculines are attested: nom. sg. *ragin-j-az
+(LIGHT-LIGHT-j) 'counselor',nom. sg. *sipon-j-az(HEAVY-j) 'disciple', which
+must be specified according to the extended version of Sievers' Law as *ragin-ij-az
+and *sipon-ij-az. These underlying forms lose their unstressed -a-; preconsonantal
+
+-j- is vocalized and contracts with preceding-i- to long -z-. Long unstressed
+vowels are not shortenedbefore a final consonantin Gothic. Voiced final -z is
+subject to the unvoicingof final voiced spirants.Applyingthese rules to basic
+*ragin-ij-az and *sipon-ij-az leads to their attested forms ragineis and siponeis.
+
+Whetherthe Gothicagentivesuffix-areiscontainsa long or short -a- has been
+a problem.'0The suffixis said to be borrowedfrom Lat. -drius, with long -a-.
+Apart fromthis ocbviousreasonfor positing a long -a- in -areis,there is internal
+evidencefor assumingthe -a- to be long. The long /-z-/ of -areis can arise only
+after a heavy syllable or two light ones, accordingto our rules specifyingthe
+derivation of basic j in polysyllables.The six nominal agents of Go. bokareis
+'scribe', laisareis 'teacher', *liupareis 'singer',ll motareis 'toll-taker', sokareis
+
+'scholar',and wullareis'cloth-fuller'are all of the polysyllabicstructureHEAVYar-ji.2 If the -a- in -areis is short, the agentive suffixshouldread -aris or -arjis
+analogically.A long /-i-/ in -areisis possible only in a syllable structureof the
+form ([syllable])[+heavy syllable]+ j; i.e. the -a- in -areis has to be long to
+yield formslike the attested bokareisor laisareis.We thus take the basic form
+of the Gothic agentive suffix -areis to be *-ar-j-az in the nom. sg.
+
+Amongthe weak verbs of the first class, the only polysyllabicstems are again
+of the structurenEAVY-j and LIGHT-LIGHT-j. Streitberg(1906, ?216) cites the
+followinginfinitives:weitwodjan'bearwitness',arbaidjan'work',riqizjan'become
+dark', mikiljan 'extol', managjan 'augment'. Both syllable structures lead
+regularlyto forms like 2pl. pres. ind. weitwodeip,mikileid,or riqizeib(Jellinek,
+?195).
+The only counter-examplesmight come from polysyllablesof the structure
+HEAVY-LIGHT-j, which should show formsin -jis, -jii for the 2-3sg. and -jii for
+the 2pl. pres.ind. Thereare infinitiveslike audagjan'beatify',glitmunjan'shine',
+kaupatjan
+
+'slap one's face', lauhatjan
+
+'flash', and swoqatjan
+
+'sigh', which are of
+
+the polysyllabicstructurethat is decisivefor the proposedextensionof Sievers'
+Law. No verbs,however,show any attested formsfor the crucial2-3sg. and 2pl.
+pres. ind. The three forms are attested with polysyllabicverbs only for the
+10For a summary of arguments relating to Old High German, see Braune-Mitzka (1967,
+?200, fn. 1). The two forms of the agentive suffix, *ar-j-az and *ar-j:az, are discussed by
+Meid (1967:83).
+11Nom. sg. *liupareis is not attested. Streitberg (1960:2.86) records the nom. p1.
+liubarjos.
+" Goth. daimonareis 'demoniac' is not to be counted as an agentive noun. Cf. Jellinek
+(1926:188-9):'Es ist keine got. Ableitung mit Suffix -arja-, sondern eine leichte Umbildung
+von [Gk.] daimonidriosoder [Lat.] daemoniarius'.
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+SUFFIXAL j IN GERMANIC
+
+413
+
+structure
++heavy ]|
+
+([syllable])
+
+[r-heavy1 r-heavy
+
+P
+
+l Lsyllable L_syllableJJ
+but not for the syllablestructure
+[+heavyi r-heavy 1 +
+L syllableJ L syllableJ
+Ourrulesfor the extensionof Sievers'Law to polysyllablesare confirmedby the
+Gothic materialfor the ei-forms;ji-forms in polysyllabicverbs of the structure
+HEAVY-LIGHT-j are not attested.
+Finally,we have to specifywhatis to be understoodby a light or heavy syllable.
+For Gothic the ruleshave been laid down (Kieckers,223-4): syllablesendingin
+a vowel, whetherlong or diphthongal,arecountedas light, as are syllablesending
+in a single consonantprecededby a short vowel. The weighingof a syllable as
+heavy or light is not affected by the controversyover whether Gothic had
+diphthongsor not. If we take long vowelsto be sequencesof two identicalvocalic
+nuclei, and diphthongsto be clustersof two non-identicalvocalic nuclei in their
+deep-phonologicalrepresentation,the traditionalspecificationcan be reducedto
+the following formula (the basic vocalic nucleus has been symbolizedby V):
+[-short
+
+[vowel]
+
+]1
+
+l
+
+[diphthong]
+
+-*
+
+r+shortr [i
+
+V1V2-* V {<
+^}= syllable
+V
+
+L vowelj |_consonantJ
+
+V C
+
+Syllablesendingin two or more consonantsare counted as heavy, regardlessof
+the quantity of the precedingvowel. Syllablesendingin a single consonantare
+weighedas heavy if precededby a long vowel or a diphthong.These statements
+can be reducedto the followingformula(the asteriskstandsforpossibleadditional
+consonants):
+(Tashort]
+
+1 vowel
+
+0 ,-
+
+2*
+
+[consonantj
+
+-
+
+C
+
+[[diphthong]J
+The following examples illustrate the distinction: (1) after a light syllable,
+nasjip 'rescues', stojip 'judges',taujip 'makes',siujip 'sows', and the adjectives
+fullatojis 'perfect', ubiltojis 'evil-doing'; (2) after a heavy syllable, sandei,b
+'sends',taikneip'shows',faurhteij' 'you (pl.) are afraid',draibeis'you (sg.) derive',
+hauseip 'hears', sokeip 'seeks',weneip 'hopes'.13
+18 I have been unable to find an ei-form for the sequence -iuC-. The j-verbs riurjan
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+414
+
+LANGUAGE, VOLUME 48, NUMBER 2 (1972)
+
+The rule for Gothic that j-polysyllables are inflected like heavy j-monosyllables
+has to be detailed by the observation that the Gothic j-polysyllables, which show
+the long /-i-/ in forms like the 2-3sg. and 2pl. pres. ind., are all of a syllable
+structure that regularly requires the j-suffix to be specified as /ij/, according to
+the extended version of Sievers' Law arrived at by an analysis of Old English
+material.
+The evidence of Old English and Gothic allows, then, for an extension of
+Sievers' Law to polysyllabic j-stems in Early Germanic. The allomorphic distribution of suffixal j has to be postulated for mono- and polysyllables alike. One
+can account for the parallelism in terms of syllable structure. Following a heavy
+syllable (stressed or unstressed) or two light syllables, suffixalj has to be specified
+as /ij/. Following a light syllable, which will be stressed in case of monosyllabic
+j-roots and unstressed in case of j-polysyllables preceded by a heavy stressed
+syllable, the suffix shows up as /j/.
+REFERENCES
+BOSWORTH,JOSEPH. 1898. An Anglo-Saxon dictionary. London: Oxford University Press.
+
+BRAUNE,WILHELM,and WALTHERMITZKA.1967. Althochdeutsche Grammatik. 12th
+ed. Tiibingen: Niemeyer.
+FRANSVAN.1970. Zur Entwicklung der germanischen Grundsprache. Kurzer
+COETSEM,
+GrundriB der germanischen Philologie bis 1500, vol. 1, ed. by L. E. Schmitt, 1-93.
+Berlin: de Gruyter.
+DAHL,IVAR.1938. Substantival inflexion in Early Old English. (Lund studies in English,
+7.) Lund: Gleerup.
+FRANKLIN.
+1943. The Indo-European semivowels. Lg. 19.83-124.
+EDGERTON,
+MAX H. 1926. Geschichte der gotischen Sprache. Berlin: de Gruyter.
+JELLINEK,
+ERNST.1928. Handbuch der vergleichenden gotischen Grammatik. Miunchen:
+KIECKERS,
+Hueber.
+
+P. 1953. The conservatismof Germanicphonology. Journal of
+WINFRED
+LEHMANN,
+Englishand GermanicPhilology52.140-52.
+-.
+1955.The Proto-Indo-European
+resonantsin Germanic.Lg. 31.355-66.
+W. 1956.The 'Converseof Sievers'Law'and the Germanicfirst-class
+JAMES
+MARCHAND,
+weak verbs. Lg. 32.285-7.
+1967. Gernanische Sprachwissenschaft, 3. Berlin: de Gruyter.
+MEID, WOLFGANG.
+1970. Greek dialects and the transformation of an Indo-European
+NAGY, GREGORY.
+process. Cambridge, Mass.: Harvard University Press.
+PILCH,HERBERT.1970. Altenglische Grammatik. Miinchen: Hueber.
+SIEVERS,EDUARD.1878. Zur Accent- und Lautlehre der germanischen Sprachen. Beitrage
+zur Geschichte der Deutschen Sprache und Literatur 5.63-163.
+--.
+1898. Angelsachsische Grammatik. 3rd ed. Halle: Niemeyer.
+SIEVERS,EDUARD,and KARLBRUNNER.1965. Altenglische Grammatik. 3rd ed. Tiibingen:
+Niemeyer.
+WILHELM.
+1906. Gotisches Elementarbuch. Heidelberg: Winter.
+STREITBERG,
+-.
+1960. Die gotische Bibel. 4th ed. Heidelberg: Winter.
+'ruin' and puiJpjan'bless' have no recorded forms for the 2-3sg. and 2pl. pres. ind., which
+would show the complex iu to belong to the binuclear set of Gothic vowels. The deepphonological vowel system of Gothic is based on the primary distinction into a mono- and
+binuclear set of vowels, which has traditonally been explained as an opposition of length.
+Whether the binuclear set consists only of monophthongs is still a problem.
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+SUFFIXALj IN GERMANIC
+
+415
+
+OSWALD.
+1970. Einfuiihrungin die vergleichendeSprachwissenschaft.
+SZEMERINYI,
+Darmstadt:WissenschaftlicheBuchgesellschaft.
+1921. An Anglo-Saxon dictionary (Supplement). London:
+TOLLER,T. NORTHCOTE.
+
+OxfordUniversityPress.
+WILL, WERNERH. 1970. The resonant system in Proto-Germanic. Journal of English
+
+and GermanicPhilology69.211-22.
+WINTER, WERNER. 1955. Juncture in Proto-Germanic: some deliberations. Lg. 31.530-2.
+
+[Received11 June 1971]
+
+This content downloaded from 128.235.251.160 on Fri, 27 Mar 2015 13:33:37 UTC
+All use subject to JSTOR Terms and Conditions
+
+
