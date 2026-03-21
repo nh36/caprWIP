@@ -16,8 +16,7 @@ Total mismatches: 56
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 4
-  epenthetic_vowel_missing: 1
-  syncopation_missing: 1
+  epenthetic_vowel_missing: 2
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -93,14 +92,9 @@ final_vowel_extra (4):
   *westănē -> westane (expected west)
   *wullo -> wollo (expected wull)
 
-epenthetic_vowel_missing (1):
+epenthetic_vowel_missing (2):
   *strawjăną -> strewan (expected strewian)
-
-syncopation_missing (1):
-  *natilōn -> nætele (expected netle)
-  >> ISSUE: FST kept medial vowel that target syncopates
-  >> LIKELY: High vowel syncope rule not applying (meoloc→meolc)
-  >> ACTION: Check syncope rule for unstressed high vowels
+  *θistilăz -> þistl (expected þistel)
 
 gemination_extra (1):
   *tikkô -> ticca (expected ticia)
@@ -118,7 +112,7 @@ breaking_extra__eo_for_high (4):
   *beugăną -> bēogan (expected būgan)
   *newun -> nēowon (expected nigon)
   *skeubăną -> sċēofan (expected sċūfan)
-  *spennilō -> spenneolu (expected spindle)
+  *spennilō -> spinneolu (expected spindle)
 
 breaking_extra__ie_for_e (1):
   *raukiz -> rīeċ (expected rēc)
