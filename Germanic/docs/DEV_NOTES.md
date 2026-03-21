@@ -6,6 +6,7 @@
 - [NWGmc u-lowering Exceptions Near Labials](#nwgmc-u-lowering-exceptions-near-labials)
 - [PWGmc *lþ → *ld Voicing and Verner's Law Overlap](#pwgmc-lþ--ld-voicing-and-verners-law-overlap)
 - [PWGmc *j-related Sound Changes](#pwgmc-j-related-sound-changes--reviewed-see-notable_findingsmd-3)
+- [OE Medial Vowel Syncope: meolc and netle](#oe-medial-vowel-syncope-meolc-and-netle-2026-03-21)
 - [OE duru 'door': Stem-Class Correction](#oe-duru-door-stem-class-correction)
 - [OE botm 'bottom': Paradigmatic Leveling](#oe-botm-bottom-paradigmatic-leveling)
 - [PGmc *i > WGmc *e Lowering](#pgmc-i--wgmc-e-lowering-the-case-of-nest-2026-03-09h)
@@ -18,6 +19,7 @@
 - [OE þistel 'thistle': Scholarly Controversy](#oe-þistel-thistle-i-umlaut-not-preserved-2026-03-18)
 - [OE huniġ 'honey': The -ag > -ig Sound Change](#oe-huniġ-honey-the--ag---ig-sound-change-2026-03-19)
 - [OE wīþiġ 'withy': ja-stem vs Sievers' Law](#oe-wīþiġ-withy-ja-stem-adjective-vs-sievers-law-syncope-2026-03-19)
+- [OE heofon 'heaven': Back Umlaut and Nasal Dissimilation](#oe-heofon-heaven-back-umlaut-and-medial-syncope-2026-03-20)
 
 ### Sievers' Law and Class I Weak Verbs (Mar 2026)
 - [Sievers' Law: The *sturtijăną Question](#sievers-law-and-class-i-weak-verb-infinitives-the-sturtijăną-question)
@@ -129,6 +131,76 @@ Luick (Anm. 1) and R/T both note that OE, OFris., and OS share the u-preserving 
 
 **For future expert discussion:** The most promising angle might be Luick's observation about consonantal environment (near labials/gutturals + l). While neither Luick nor R/T accept this as a categorical rule, the statistical clustering might reflect a phonetic tendency — perhaps the acoustic similarity between labial/velar environments and the labial component of [u] made the lowered [o] variant phonetically less stable in those contexts. This would be a gradient/probabilistic effect rather than a Neogrammarian rule, and is therefore fundamentally not modelable in a deterministic FST. Bülbring's "incomplete lowering + reversion" model (§116 Anm.) is the most explicit formulation of this intuition, but the counterexamples (folc, bolla, etc.) preclude formalizing it.
 
+### Expert consultation: Stefan Schuhmacher (Vienna, 2026-03-20)
+
+Prof. Schuhmacher confirmed the scholarly consensus and provided additional clarifications:
+
+**Terminology:** He prefers "Lowering of \*u" over "A-Umlaut" as more transparent.
+
+**Scope:** "Such lowering affects **only stressed vowels**... I do not see that the lowering affects unstressed vowels such as the middle vowel in the word for 'widow'." This validates our implementation restricting lowering to stressed syllables.
+
+**On the labial exceptions:** "I have always been inclined to think that the preceding /w/, /b/, /f/ blocked the lowering but as far as I remember, there are lots of counterexamples." He dismisses the paradigmatic leveling hypothesis as "not very attractive" and offers no solution: "I have no solution."
+
+**On bucc:** "There may be additional complications such as the possibility that *bucc* originally may have been a u-stem word, in which case the vowel of Old English *bucc* would be what we expect." This is a potential explanation worth noting.
+
+**Follow-up research (2026-03-20):** Kroonen (EDPG, p.82) reconstructs \*bukka(n)-
+as an **n-stem**, not a u-stem: "it seems likely that the word was originally
+inflected as an n-stem, viz. \*bukō, gen. \*bukkaz < \*bhug-ōn, \*bhug-n-ós."
+The gemination reflects Kluge's Law in the n-stem genitive. Kluge-Seebold
+confirms OE had both bucca (n-stem) and bucc (a-stem). Whether there was ever
+a u-stem variant remains unverified. See notable_findings.md §2 for details.
+
+**OHG contrast:** "Franconian/Alemannic/Bavarian here consistently have /o/, i.e. 'Old High German' fol, wolf, fogal, boc."
+
+**Key quote:** "It does hurt our Neogrammarian pride that what looks like a full-blown sound law (and not just a 'tendency') seems to have some exceptions."
+
+**On \*i-lowering:** "This is really no more than a 'tendency'... *nest* and *wer* 'man' are the usual suspects but no one has been able to mention a substantial number of other candidates." He sharply criticizes Cercignani (1980): "To put it nicely, that article is unhelpful. I can make neither head nor tail of it."
+
+See `Germanic/docs/analysis/notable_findings.md` §2 and §7 for full quotations.
+
+### Stress restriction fix (2026-03-20)
+
+Schuhmacher emphasized: "lowering is only found in stressed vowels." Our original
+`NWGmcULowering` rule had no stress restriction—it applied to any `*u` followed
+by the right consonant+vowel pattern, regardless of position. This caused:
+
+- `*widuwōn` → ×widowe (expected: widuwe)
+
+The second `*u` in `*widuwōn` is in an unstressed syllable and should NOT lower.
+
+**Fix:** Add left context `.#. EnglishStarConsonant*` to constrain lowering to
+`*u` in the **first syllable** (the stressed position in PGmc):
+
+```foma
+# OLD (applied to any *u):
+{*u} -> {*o} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] ...
+
+# NEW (only first-syllable *u):
+{*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] ...
+```
+
+The pattern `.#. EnglishStarConsonant*` means "word-start followed by zero or
+more consonants"—i.e., no vowel may precede the `*u`. This ensures only `*u`
+in the initial (stressed) syllable is lowered.
+
+**Worked example: `*widuwōn`**
+
+Word structure: `*w*i*d*u*w*ō*n` (stress on first syllable `*wid-`)
+
+- First `*u` (after `*d`): preceded by `*w*i*d` which contains vowel `*i` → NOT matched
+- Second `*u` (after `*w`): preceded by `*w*i*d*u*w` which contains vowels → NOT matched
+
+Result: neither `*u` lowers → `widuwe` ✓
+
+**Worked example: `*wulfaz`**
+
+Word structure: `*w*u*l*f*a*z` (stress on first syllable `*wulf-`)
+
+- The `*u`: preceded by `*w` (consonant only, no vowel) → MATCHED
+- Following context: `*l*f*a` = consonant + non-nasal consonant + non-high vowel → triggers lowering
+
+Result: `*u` → `*o` → `wolf` (but OE retains `wulf`—this is a documented exception)
+
 ### Related: effects of initial labials on vowels (Bülbring §§260-274)
 
 Note that Bülbring's "Dreizehntes Kapitel" (§§260-274) discusses a *separate* set of phenomena — the effects of initial labials (especially w) on following vowels and diphthongs. These include:
@@ -138,12 +210,674 @@ Note that Bülbring's "Dreizehntes Kapitel" (§§260-274) discusses a *separate*
 
 These are chronologically later OE-internal changes, distinct from the NWGmc u-lowering exceptions discussed above. They may be relevant for future modeling of late WS orthographic variants.
 
+### OE Medial unstressed `*u → *o`: Conditioning environment (2026-03-20)
+
+**Problem discovered:** After fixing NWGmcULowering to restrict to stressed vowels,
+`*widuwōn` still produced `widowe` instead of `widuwe`. The culprit was a separate
+rule `OEMedUnstressedULowering` that lowered ALL medial unstressed `*u` to `*o`.
+
+**Investigation:** We have two types of words with medial `*u`:
+
+1. **Words where medial `*u → *o` is correct:**
+   - `*xeβun` (< `*xemonų`) → `heofon` (Campbell §293)
+   - `*sebun` → `seofon` (Campbell §293, §331 fn.3)
+
+2. **Words where medial `*u` should remain:**
+   - `*widuwōn` → `widuwe` (R/T, Campbell §218-219: both `widuwe` and `wuduwe` attested)
+
+**Extensive research (2026-03-20):**
+
+Campbell §331 footnote 3 provides the crucial evidence:
+> "in Prim. OE *sefun existed beside *sifuni (§ 293)"
+
+This reveals that the medial vowel alternation is conditioned by the **following vowel**:
+- **Uninflected `*sefun`**: medial `*u` before nothing → becomes `*o` → `seofon`
+- **Inflected `*sifuni`**: medial `*u` before high vowel `*i` → remains `*u`
+
+R/T vol.2 §6.9.3 (p.324) clarifies the chronology:
+> "PGmc *sebun 'seven' (Goth. sibun, ON sjau, OS sibun, OHG sibun) > WS,
+> North. OE seofon, Merc. seofen"
+
+The key is the **dialectal difference**:
+- **WS/Northumbrian**: medial `*u → *o` → `seofon`, `heofon`
+- **Mercian**: medial `*u → *e` (vowel harmony per Campbell §385) → `seofen`, `heofen`
+
+Campbell §385 on vowel harmony:
+> "there is a strong tendency for the first of two successive unaccented **back**
+> vowels to be reduced to a sound written **e**"
+
+This explains Mercian `seofen` (with `e`), but WS/Northumbrian has a different
+development: medial back vowel → `o` (not `e`).
+
+**For `*widuwōn` → `widuwe`:**
+- R/T gives WS OE `wuduwe ~ widuwe` — note medial vowel is `u`, not `o`
+- Campbell §218-219: the variation is in the ROOT vowel (`i ~ u` from back mutation)
+- The medial `u` stays as `u` because it's followed by `*w` + vowel, not by a nasal alone
+
+**Key source found: Campbell §373**
+
+Campbell §373 explicitly describes this change and its conditioning:
+
+> "§ 373. Unaccented u is preserved in all instances in the early North. short
+> texts... In Ep., however, **protected u > o very often**, e.g. uuiloc-, helostr,
+> déatlicostan, suornodun... Ordinary OE forms are, however, e.g. héafod head,
+> **heofon** heaven, tungol star, past indic. pl. -on..."
+
+And critically, the exception:
+
+> "**u is always well preserved after accented u**, e.g. sunu, **wudu**, dugup;
+> before m, e.g. mapum, d.p. -um, -sum as suffix; in the suffix -ung; in the
+> suffix -uc of whatever origin..."
+
+This gives us the **consensus conditioning**: unaccented `u → o`, EXCEPT:
+1. After an accented `u` (e.g., `wudu`, `sunu`, `dugup`)
+2. Before `m` (e.g., `mapum`, dative plural `-um`)
+3. In certain suffixes (`-ung`, `-uc`)
+
+**Application to our test cases:**
+
+- `*sebun` → `seofon` ✓: accented `*e`, so medial `*u` → `*o`
+- `*xeβun` → `heofon` ✓: accented `*e`, so medial `*u` → `*o`
+- `*widuwōn` → `widuwe` ✓: accented `*i` (but followed by `u`!), and more importantly
+  the second `*u` follows after root `*widu-` which has `u` — Campbell says `u` is
+  preserved "after accented u" which applies to `wudu-` variant. The `widuwe` form
+  has root `i`, but the paradigm shows variation with `wuduwe` (back mutation).
+
+**Proposed rule (Option C: After-accented-u blocking):**
+
+The change is: unaccented `*u → *o`, blocked when the stressed syllable contains `*u`.
+
+```foma
+# Campbell §373: unaccented u → o, EXCEPT after accented u
+# Block if stressed syllable (first syllable) contains *u
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || [EnglishStarVocalic - {*u}] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+
+This says: lower medial `*u` to `*o` only if the preceding vowel is NOT `*u`.
+
+**Predictions:**
+- `*sébun` (accented `*e`): `*u → *o` → `seofon` ✓
+- `*xéβun` (accented `*e`): `*u → *o` → `heofon` ✓
+- `*wúduwōn` (accented `*u`): `*u` preserved → `wuduwe` ✓
+- `*wíduwōn` (accented `*i`): should give `*u → *o`? But OE has `widuwe`...
+
+**Comprehensive research on OE widow forms (2026-03-21):**
+
+| Source | Forms given | Notes |
+|--------|-------------|-------|
+| Campbell §218 | `wuduwe ~ widuwe ~ weoduwe` | "combinative u-umlaut" in labial env. |
+| Luick §296 | WS `wuduwe`; `widuwe` from `widwe` | **`widuwe` is analogical** |
+| R/T vol.2 p.322 | WS `wuduwe ~ widuwe`; Merc `widwe`; North `widua` | Dialectal variation |
+| Bülbring §264 | WS `wuduwe`; Angl `widwe`; Ælfric `widewe` | `wuduwe` is WS form |
+| Kroonen p.585 | `widewe, wudewe` | |
+| Kluge-Seebold p.895 | `widewe` | |
+| Orel p.462 | `widuwe` | |
+| Kaluza §65 | `wuduwe ~ wioduwe ~ weoduwe` | Back mutation variants |
+| Hall (Concise Dict.) | `wuduwe (i, o, y; e)` | Many attested spellings |
+
+**Which form is lautgesetzlich (regular phonological outcome)?**
+
+The derivation from PGmc `*widuwōn`:
+
+1. **Back mutation (u-umlaut)** before labials/liquids (Campbell §218, Bülbring §264):
+   - Root `*i` → `*u` when followed by `u` in labial environment
+   - `*wíduwōn` → `*wúduwōn` (Bülbring: "durch Einfluß eines vorangehenden w zu u")
+
+2. **Medial `*u` preservation** after accented `*u` (Campbell §373):
+   - "u is always well preserved after accented u, e.g. sunu, **wudu**, dugup"
+   - `*wúduwōn` → `wuduwe` (medial `u` preserved, not lowered to `o`)
+
+3. **Syncopation** in Anglian:
+   - `*wuduwā` → `widwe` (Mercian), `widua` (Northumbrian)
+
+4. **Analogical restoration**:
+   - Luick explicitly states: "**widuwe nach widwe**" — i.e., `widuwe` is restored
+     from the syncopated form, not a direct phonological outcome
+
+**Conclusion:** The **lautgesetzlich WS form is `wuduwe`**, with:
+- Back mutation `i → u` in the root (before following `u`, in labial environment)
+- Preservation of medial `u` (after accented `u`, per Campbell §373)
+
+The form `widuwe` (with root `i`) is **analogical** — either:
+- Restored from syncopated `widwe`, or
+- Influenced by related forms without back mutation
+
+**Implications for the FST:**
+
+Our current TSV target is `widuwe`, but this is an analogical form. Options:
+
+1. **Change TSV target to `wuduwe`** — the lautgesetzlich outcome. The FST should
+   produce this via back mutation + medial `u` preservation.
+
+2. **Keep `widuwe` but mark as analogical** — accept that the FST won't produce
+   the analogical form correctly.
+
+3. **Implement both back mutation and Campbell §373 blocking** — the FST should
+   produce `wuduwe` (lautgesetzlich), which we can then compare against the
+   attested `wuduwe ~ widuwe` variation.
+
+**Recommendation:** Change TSV target to `wuduwe`. This is the regular phonological
+outcome per the sources. The form `widuwe` involves analogical restoration that
+our FST is not designed to model.
+
+### Paradigm-cell analysis: Where does `widwe` come from? (2026-03-21)
+
+Luick §221 Anm.1 says "widuwe nach widwe" — i.e., `widuwe` is analogically formed
+**from** the syncopated form `widwe`. This raises a crucial question: how does
+`widwe` (syncopated) exist when R/T §6.7.3 explicitly states that short vowels
+(*i, *u, *y) are **NOT syncopated after light syllables**?
+
+**The structural analysis:**
+
+PGmc `*wíduwōn` has the syllable structure: `*wí.du.wōn` (3 syllables)
+- First syllable: `*wi-` — SHORT (light syllable: CV with short vowel)
+- Second syllable: `*-du-` — open medial syllable
+- Third syllable: `*-wōn` — the ending
+
+R/T §6.7.3 lists `*widuwōn-` among examples where medial vowels were "not 
+syncopated after light syllables":
+> "PGmc *widuwōn- 'widow' (Goth. widuwo, OF widwe, OS widowa, OHG wituwa) > 
+> *widuwe > OE widuwe"
+
+Yet R/T also attest (p.322): "WS OE wuduwe ~ widuwe, but **Merc. widwe**, North. widua"
+
+**The paradox:**
+
+If medial vowels don't syncopate after light syllables, why does Mercian have `widwe`?
+
+**Key evidence from Campbell §218:**
+
+Campbell lists attested forms from specific texts:
+- **VP (Vespasian Psalter, Mercian)**: `wudu` BUT `widwe`
+- **Ru.¹ (Mercian)**: `widuwana` (gen.pl.)
+- **North**: `widwe`
+
+The SAME Mercian text (VP) has BOTH:
+- `wudu` 'wood' (< PGmc `*widu`) — WITH back mutation
+- `widwe` 'widow' — WITHOUT back mutation (AND syncopated!)
+
+This contrast is diagnostic: for disyllabic `*widu`, back mutation applied (→ `wudu`).
+For trisyllabic `*widuwō`, syncopation happened EARLY (before back mutation), 
+removing the triggering `*u`, so back mutation couldn't apply.
+
+**Possible explanations for Mercian/Anglian `widwe`:**
+
+1. **Pre-OE dialectal syncopation**: Some Northwest Germanic dialects may have 
+   syncopated medial vowels in `-uwV-` sequences even after light syllables. 
+   Old Frisian also has `widwe` (syncopated), supporting this.
+
+2. **Sequence-specific contraction**: The sequence `-uwV-` (labial glide + 
+   high vowel + vowel) may have undergone special contraction rather than 
+   regular syncopation. Compare how `-ij-` and `-uw-` sequences sometimes 
+   simplify across Germanic.
+
+3. **Analogical spread**: The syncopated form may have originated in certain
+   inflected case forms where the environment was more favorable, then spread
+   to the citation form.
+
+**Chronological ordering:**
+
+The fact that `widwe` lacks back mutation tells us:
+
+```
+Early (before back mutation):   Syncopation    *widuwā → *widwā
+↓
+Back mutation period:           No trigger     *widwā (no *u to trigger!)
+↓
+Later developments:             → widwe
+```
+
+For `wudu` 'wood' (< `*widu`), there was no medial vowel to syncopate, so back 
+mutation applied normally: `*widu → *wudu → wudu`.
+
+**What about `wuduwe`?**
+
+The WS form `wuduwe` must derive from a pathway where syncopation did NOT happen:
+
+```
+Early:                          No syncopation  *widuwā
+↓
+Back mutation period:           Triggered       *widuwā → *wuduwā
+↓
+Medial u preservation:          Campbell §373   *wuduwā (after accented *u)
+↓
+Later developments:             → wuduwe
+```
+
+**Summary of lautgesetzliche outcomes:**
+
+| Form | Lautgesetzlich pathway | Notes |
+|------|------------------------|-------|
+| `wuduwe` | *widuwō → back mutation → *wuduwō → wuduwe | **WS regular** |
+| `widwe` | *widuwō → early syncopation → *widwō → widwe | **Anglian/Mercian** |
+| `widuwe` | `widwe` + analogical vowel restoration → widuwe | **Analogical** (Luick) |
+| `widua` | = `widuwa` → widua | **Northumbrian** (no syncopation, no BM) |
+
+The form `widuwe` is specifically identified by Luick as analogical: speakers had
+`widwe` (syncopated) and restored the medial vowel without re-applying back 
+mutation (which was no longer productive).
+
+**Conclusion:**
+
+Both `wuduwe` and `widwe` are arguably lautgesetzlich — they represent different
+dialectal developments:
+- WS: no early syncopation → back mutation applies → `wuduwe`
+- Anglian: early syncopation → back mutation can't apply → `widwe`
+
+The form `widuwe` is **analogical** — a compromise between the syncopated Anglian
+`widwe` and the full three-syllable structure expected from the etymology.
+
+**For the FST:** Target `wuduwe` as the regular WS outcome. The FST cannot model
+the early Anglian syncopation (which may be a dialectal retention from NWGmc or
+a sequence-specific contraction), nor the subsequent analogical restoration to
+`widuwe`.
+
 ### References
 
-- Luick, K. (1914-40). *Historische Grammatik der englischen Sprache.* Leipzig. §78 (pp.147-148), esp. Anm. 1-3.
-- Bülbring, K.D. (1902). *Altenglisches Elementarbuch.* I. Teil: Lautlehre. Heidelberg. §81d (a-Umlaut of *u → *o, p.32), §116 (u statt o near labials, pp.45-46).
-- R/T vol.2 §2.3.1 pp.27-33 (our OCR pp.42-48).
-- Kroonen (2013): *wulfa-* p.598, *bukka(n)-* p.98, *fugla-* (see under *fugla-*).
+- Campbell, A. (1959). *Old English Grammar.* Oxford. §218 (back mutation in labial env.), §373 (unaccented u preserved after accented u).
+- Luick, K. (1914-40). *Historische Grammatik der englischen Sprache.* Leipzig. §296 p.204 ("widuwe nach widwe" — analogical).
+- Bülbring, K.D. (1902). *Altenglisches Elementarbuch.* I. Teil: Lautlehre. Heidelberg. §264 (w + i → u before following u).
+- R/T vol.2 §6.9.3 p.322 (widow dialectal variants).
+- Kaluza, M. (1906-07). *Historische Grammatik der englischen Sprache.* Berlin. §65 (wuduwe variants).
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic.* Leiden. p.585 (*widu(w)ōn-).
+- Kluge, F. & Seebold, E. (2011). *Etymologisches Wörterbuch der deutschen Sprache.* Berlin. p.895 (Witwe).
+- Orel, V. (2003). *A Handbook of Germanic Etymology.* Leiden. p.462 (*wiðuwōn).
+- Hall, J.R.C. (1960). *A Concise Anglo-Saxon Dictionary.* 4th ed. Cambridge. s.v. wuduwe.
+- Schuhmacher, S. (2026). Personal communication, 2026-03-20.
+
+### FST analysis: Why changing target to `wuduwe` won't suffice (2026-03-21)
+
+**Current FST output:** `*widuwōn → widowe`
+
+**Traced derivation:**
+```
+Stage                      Output
+after_back_mutation        *w*i*d*u*w*ǭ    (no back mutation applied)
+after_proto_to_oe          *w*i*d*o*w*e    (medial *u → *o!)
+after_orthography          widowe
+```
+
+**Problem 1: No w + i → u raising**
+
+Bülbring §264 describes a sound change where **w causes following i to become u** before 
+a back vowel:
+> "durch Einfluß eines vorangehenden w zu u: wudu 'Holz' aus *wiudu (<*widu)"
+
+Examples:
+- `*widu → wudu` 'wood'
+- `*widuwōn → *wuduwōn → wuduwe` 'widow'
+- `*swistur → swustur` 'sister'
+- `*twiwa → tuwa` 'twice'
+
+This rule is NOT the same as diphthongizing back mutation (`*i → *eo`). It's a 
+**vowel backing/raising** caused by labial `*w`. The FST does not implement this rule.
+
+**Problem 2: Medial *u → *o lowering in labial environment**
+
+The FST incorrectly lowered medial `*u → *o`, producing `widowe` instead of `widuwe`.
+Even without the w+i→u rule, the medial vowel should remain `*u` in a labial environment.
+
+Campbell §373 states that medial `u` is preserved:
+- "after accented u" (e.g., `sunu`, `wudu`, `dugup`)
+- "before m" (e.g., `mapum`, dat.pl. `-um`)
+
+The word `*widuwōn` has labial `*w` both before and after the medial `*u`. This labial 
+environment should block u-lowering.
+
+**Implications:**
+
+If we change the TSV target to `wuduwe`:
+- Current output: `widowe`
+- Expected: `wuduwe`
+- Still a mismatch (different form, same count)
+
+**Required fixes:**
+
+| Issue | Fix | Priority |
+|-------|-----|----------|
+| Medial `*u → *o` in labial env. | Block `OEMedUnstressedULowering` near labials | High |
+| Root `*wi- → *wu-` | Add w+i→u rule (Bülbring §264) | Lower (separate issue) |
+
+### Research on blocking medial u → o in labial environments (2026-03-21)
+
+**Campbell §373 conditions for u-preservation:**
+> "u is always well preserved after accented u, e.g. sunu, wudu, dugup; before m, 
+> e.g. mapum, d.p. -um, -sum as suffix; in the suffix -ung; in the suffix -uc of 
+> whatever origin"
+
+The explicit conditions are:
+1. After accented u (sunu, wudu, dugup)
+2. Before m (mapum, -um)
+3. In suffix -ung
+4. In suffix -uc
+
+Campbell does **not** explicitly mention labials in general as blocking u → o.
+
+**However, empirical evidence is decisive:**
+
+The form `*widowe` (with medial **o**) is **completely unattested** in any source. All 
+documented OE forms have medial **u**:
+- `widuwe` (R/T, Campbell, standard)
+- `wuduwe` (WS, with back mutation)
+- `widwe` (Anglian, syncopated)
+- `weoduwe` (with breaking)
+- `widuwana` (Ru.¹ gen.pl., Campbell §218)
+
+The FST's output `widowe` is a ghost form — it appears in no text, no dictionary, no 
+scholarly source.
+
+**Scholarly support for labial blocking:**
+
+While Campbell §373 doesn't explicitly state "before labials," the environments he lists 
+share a phonetic feature: they all involve **rounded/labial** segments:
+- After accented **u** (rounded vowel)
+- Before **m** (labial nasal)
+- In -**u**ng (following u)
+- In -**u**c (following u)
+
+The generalization may be: medial *u is preserved in **labial environments** broadly 
+construed — i.e., when adjacent to rounded vowels or labial consonants.
+
+**Bülbring §264** discusses `w + i → u` as a specifically labial phenomenon:
+> "durch Einfluß eines vorangehenden w zu u"
+
+This shows that `*w` is recognized as creating a labial environment that affects vowels.
+
+**Decision:**
+
+Given that:
+1. `widowe` is completely unattested
+2. All attested forms have medial `u`
+3. The word is surrounded by labials (`*w...w`)
+4. Campbell's preservation conditions cluster around labial/rounded environments
+
+We will block `OEMedUnstressedULowering` when medial `*u` is immediately preceded or 
+followed by `*w`. This is a conservative, empirically-driven fix.
+
+**Implementation:** Add negative context `~[{*w}]` to the medial u-lowering rule.
+
+---
+
+### Clarification: Two distinct *u → *o changes (2026-03-21)
+
+**For Prof. Schuhmacher's review:**
+
+Our FST currently conflates two separate sound changes that affect `*u`. We need to
+distinguish them clearly because they have different conditioning:
+
+#### 1. NWGmc U-Lowering ("A-Umlaut" / Lowering of *u)
+
+**Rule:** Stressed `*u → *o` before a non-high vowel (*a, *o, *ē) in the following syllable.
+
+**Examples:**
+- `*wulfăz` → `wulf` (OE retains `u`; OHG has `wolf` — the OE form is an exception)
+- `*fullăz` → `full` (OE retains `u`; OHG has `fol` — exception)
+- `*bukkăz` → `bucc` (OE retains `u`; OHG has `boc` — exception)
+
+**Status in FST:** Implemented as `NWGmcULowering`, restricted to stressed vowels
+following Schuhmacher's advice: "lowering is only found in stressed vowels."
+
+**Question for Schuhmacher:** This rule correctly predicts OHG forms but fails for many
+OE forms which exceptionally retain `*u`. We've documented the exceptions and accepted
+them as lexical irregularities (following R/T's conclusion: "We do not really know why
+*u failed to lower in these forms"). Is this the appropriate treatment?
+
+#### 2. OE Medial Unstressed *u → *o (Campbell §373)
+
+**Rule:** Unstressed medial `*u → *o` in West Saxon and Northumbrian, but NOT after
+an accented `*u` in the preceding syllable.
+
+**Examples where the change applies:**
+- `*sebun → seofon` 'seven' (accented vowel is `*e`, not `*u`)
+- `*xeβun → heofon` 'heaven' (accented vowel is `*e`, not `*u`)
+- Past plural `-un → -on` (accented vowel is in the root, not `*u`)
+
+**Examples where the change is blocked:**
+- `*sunu → sunu` 'son' (accented `*u` blocks lowering of medial `*u`)
+- `*wudu → wudu` 'wood' (accented `*u` blocks lowering of medial `*u`)
+- `*dugup → dugup` 'retinue' (accented `*u` blocks lowering)
+
+**The widow problem:**
+
+Campbell §373: "u is always well preserved after accented u, e.g. sunu, wudu, dugup."
+
+For `*widuwōn → widuwe/wuduwe`:
+- If back mutation applied first: `*widuwōn → *wuduwōn`; then the accented vowel
+  is `*u`, and medial `*u` should be preserved → `wuduwe` ✓
+- If back mutation did NOT apply: `*widuwōn` has accented `*i`, so medial `*u`
+  SHOULD lower to `*o` → ×`widowe`
+
+But `widowe` is **completely unattested**. All forms have medial `u`: `widuwe`, `wuduwe`,
+`widwe`, `weoduwe`. This suggests either:
+- Back mutation always applied (producing `*wuduwōn` with accented `*u`), or
+- The labial environment (`*w...w`) blocks medial u-lowering independently
+
+**Question for Schuhmacher:** Your statement "I do not see that the lowering affects
+unstressed vowels such as the middle vowel in the word for 'widow'" clarifies that
+NWGmc U-Lowering doesn't apply to unstressed vowels. But Campbell §373 documents a
+*separate* change affecting unstressed medial `*u → *o` in words like `seofon, heofon`.
+
+Is Campbell's "protected u > o" (§373) accepted in current scholarship? If so, why
+doesn't it affect widow's medial vowel? Is the conditioning:
+1. "After accented `*u`" (Campbell's stated exception), or
+2. "In labial environments" (the `*w...w` around the medial vowel), or
+3. Something else entirely?
+
+**Status in FST:** Currently implemented as `OEMedUnstressedULowering` with no 
+blocking conditions, which incorrectly produces `×widowe`. Proposed fix: block when
+the accented (first) vowel is `*u`, per Campbell §373.
+
+---
+
+## OE Medial Vowel Syncope: meolc and netle (2026-03-21)
+
+**Date:** 2026-03-21
+**Status:** Research complete; implementation needed
+
+### The problem
+
+Two mismatches involve failure to syncopate medial vowels:
+
+| Proto-form | FST output | Expected | Gloss |
+|------------|------------|----------|-------|
+| `*melukz` | `meoloc` | `meolc` | 'milk' |
+| `*natilōn` | `nætele` | `netle` | 'nettle' |
+
+Both show medial vowel retention where the attested OE forms have syncope.
+
+### Summary of OE syncope rules (scholarly consensus)
+
+The following synthesis is based on R/T vol.2 §6.7.3, Campbell §§388-392, and Hogg 
+vol.1 pp.225-232.
+
+**Two types of general syncope:**
+
+1. **Non-high vowel syncope** (`*a/*e → ∅`): Applies **regardless of preceding 
+   syllable weight**, as long as the syllable is stressed. This affects PWGmc `*a` 
+   and its i-umlaut product `*e`.
+   
+   Examples:
+   - PGmc strong adj. masc. acc. sg. `*-ana` → OE `-ne` (always syncopated)
+   - `*haitadē` → OE `hatte` 'is called'
+   - `*saiwalō` → `*sawlu` → `sāwol` 'soul'
+
+2. **High vowel syncope** (`*i/*u/*y → ∅`): Applies **only after heavy syllables**
+   (long vowel, diphthong, or short vowel + two consonants).
+   
+   Examples after heavy syllables:
+   - `*grundila` → OE `gryndle` 'herring' (heavy: `grun-`)
+   - `*baisimō` → OE `beorma` 'yeast' (heavy: `bais-`)
+   - `*néadiling` → OE `nīedling` 'slave' (heavy: `nēad-`)
+   - Comparatives: `*langira` → `lengra` 'longer'
+   - Weak I preterites: `*héaridē` → `hīerde` 'heard'
+
+   **NOT syncopated after light syllables:**
+   - `*neredē` → OE `nerede` 'saved' (light: `ner-`, single consonant)
+   - `*betira` → OE `betera` 'better' (light: `bet-`, single consonant)
+
+### The milk problem: `*melukz` → `meoloc` (expected `meolc`)
+
+**Structural analysis:**
+- PGmc reconstruction: `*meluk-` (root noun, Kroonen p.363)
+- Syllable structure: `*me.lukz` — first syllable is **light** (CV with short vowel)
+- OE forms: WS `meoloc ~ meolc`, Anglian `milc`
+
+**The scholarly consensus:**
+
+Campbell §353 and §628.5 explain that `*melukz` is a **consonant-stem** (root noun)
+with paradigm variation:
+- Nom.sg.: `*melukz` → `meoloc` (with breaking `e → eo`, no syncope)
+- Gen./dat.sg.: `*milukiz/*miluki` → Anglian `milc` (with i-umlaut and syncope)
+
+R/T §6.6.4 (p.253): "The usual WS form of 'milk' is `meolc < meoluc < *meluk`... 
+However, in Anglian dialects we find Merc., North. `milc` 'milk'... It would seem 
+reasonable to suggest that the form with *i* was generalized from the gen., dat. sg."
+
+**Key point:** The syncopated form `milc` shows **early syncope** that occurred even
+before i-umlaut — R/T (p.257) notes this as a "possible early instance of syncope."
+The WS form `meoloc ~ meolc` shows **variable syncope after a light syllable**.
+
+Campbell §390: "Only monosyllabic forms occur for... meol(o)c milk, seol(o)c silk,
+weol(o)c whelk." This indicates that both syncopated (`meolc`) and unsyncopated
+(`meoloc`) forms coexisted in WS.
+
+**Problem for FST:**
+The first syllable `*me-` is **light** (short vowel, single consonant). Per the 
+general rule, high vowel `*u` should NOT syncopate after light syllables. Yet OE 
+has both `meoloc` (unsyncopated, as predicted) AND `meolc` (syncopated, exceptional).
+
+**Possible explanations:**
+
+1. **Paradigmatic leveling:** The syncopated form `milc` (< gen./dat.sg. `*milyci` 
+   with heavy syllable from consonant cluster) was generalized to nom./acc.
+   
+2. **Late/variable syncope:** Campbell §390-391 notes that syncope "after short 
+   syllables before a consonant group" produced monosyllables like `cyng` < `cyning`,
+   `world` < `woruld`. The cluster `-lk-` may have triggered late syncope.
+
+3. **Early exceptional syncope:** R/T (p.257) mentions `milc` as a possible case of
+   "unusually early syncope" that is not fully explained.
+
+### The nettle problem: `*natilōn` → `nætele` (expected `netle`)
+
+**Structural analysis:**
+- PGmc reconstruction: `*natilōn-` (n-stem, diminutive of `*natōn-` 'nettle')
+- Kroonen (p.384): "The diminutive `*natilōn-`, cf. OSw. nätla, nässla... OE netele, 
+  netle, netel, E nettle, OHG nezzila..."
+- Syllable structure: `*na.ti.lōn` — first syllable is **light** (CV with short vowel)
+- OE forms: `netele ~ netle ~ netel`
+
+**The scholarly evidence:**
+
+Campbell §589: "netel nettle, spinel spindle; the medial syllable is not syncopated
+in the inflected forms..." This implies the uninflected form (nom.sg.) may syncopate.
+
+R/T §6.7.4 (p.275-276): "The most obvious pattern is very specific: unstressed *i in
+open syllables is often syncopated **next to l**. In addition to the forms mentioned
+in the preceding paragraph, we find syncope in some inflected forms of `fetel` 'belt'
+(though apparently not of `cytel, cetel` 'kettle'), in `netle ~ netele` 'nettle',
+and in North. dat. sg. `cryple` 'cripple'..."
+
+R/T continues: "Two words which originally contained long *ī probably belong here 
+as well: PGmc `*swalikaz` 'of such a kind'... > OE `*swelīc, swelīce`... > `swelc, 
+swelce`; so also OE `hwelc` 'which?'... The exceptionless syncope in these two 
+words (which has been levelled into the endingless forms) argues that their *ī 
+had been shortened to *i early in allegro speech and the shortening was then 
+generalized..."
+
+**Key finding:** R/T identifies syncope "next to l" as a **specific pattern** that
+operates independently of the general heavy-syllable requirement. This explains:
+- `netle ~ netele` (syncope next to l, though after light syllable)
+- `eln` 'ell' < `*alnō` < PGmc `*alinō` (syncope next to l)
+- `twelf` 'twelve' < `*twalif-` (syncope next to l)
+
+### Proposed FST implementation
+
+**For milk (`meolc`):**
+
+Option A: Accept `meoloc` as the regular output; mark `meolc` as an exception.
+The FST correctly predicts the unsyncopated form; the syncopated variant involves
+either paradigm leveling or exceptional early syncope.
+
+Option B: Add a rule for late syncope before `-lk-` clusters. However, this may
+overapply to other words.
+
+**Recommendation:** Option A. The form `meoloc` is well-attested in WS, and the
+variation `meoloc ~ meolc` reflects paradigmatic leveling rather than a sound law.
+
+**For nettle (`netle`):**
+
+Option A: Accept `nætele` as the regular output; mark `netle` as an exception.
+
+Option B: Implement the "syncope next to l" pattern identified by R/T. This would
+apply to:
+- `*natilōn` → `netle` ✓
+- `*alinō` → `eln` ✓
+- `*twalif-` → `twelf` ✓
+- But may overapply to `*cytel` → `cetel` (NOT `*cetl`)
+
+**The l-adjacent syncope pattern** (R/T §6.7.4):
+
+The conditioning appears to be:
+1. Unstressed `*i` in an open syllable
+2. Immediately adjacent to `*l` (before or after)
+3. Applies even after light syllables
+4. BUT is lexically variable (applies to `netle`, `eln`, `twelf`, NOT to `cetel`)
+
+**Recommendation:** Given the lexical variability, Option A is safer. Mark `netle`
+as reflecting a "l-adjacent syncope" pattern that is not fully regular.
+
+### Current FST rule and needed changes
+
+**Current rule (lines 2028-2032):**
+```foma
+define OEMedialSyncope [
+    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
+    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
+];
+```
+
+This rule only syncopates `*i` before **dental obstruents** (`*θ/*ð/*d/*t`), and
+only after heavy syllables (the third line requires two consonants). Neither milk
+nor nettle fits this pattern:
+- `*melukz`: medial `*u` (not `*i`), before `*k` (not dental)
+- `*natilōn`: medial `*i`, before `*l` (not dental), after light syllable
+
+**Possible additions:**
+
+1. **High vowel syncope before velars after heavy syllables:**
+   ```foma
+   {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*k}|{*g}]
+   ```
+   This would NOT help `meolc` (light syllable `me-`).
+
+2. **l-adjacent syncope (experimental):**
+   ```foma
+   {*i} -> 0 || _ {*l} OEAnyConsonant
+   ```
+   This would syncopate `*i` immediately before `*l + consonant`. But this is
+   lexically variable and may overapply.
+
+**Conclusion:** Neither case has a fully regular phonological solution. Both
+involve patterns that are lexically variable or exceptional. Recommend accepting
+the current outputs as the regular predictions and documenting the syncopated
+variants as exceptions involving paradigm leveling or the variable "l-adjacent
+syncope" pattern.
+
+### References
+
+- Campbell, A. (1959). *Old English Grammar.* Oxford. §§353, 388-392, 589, 628.5.
+- R/T = Ringe, D. & Taylor, A. (2014). *The Development of Old English.* (A 
+  Linguistic History of English, vol. 2). Oxford. §§6.6.4, 6.7.3, 6.7.4.
+- Hogg, R.M. (1992). *A Grammar of Old English, vol. 1: Phonology.* Oxford. 
+  pp.225-232.
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic.* Leiden. 
+  pp.363-364 (`*meluk-`), p.384 (`*natilōn-`).
+- Luick, K. (1914-40). *Historische Grammatik der englischen Sprache.* Leipzig.
+  §§303-306 (Urenglische Synkopierungen).
 
 ---
 
@@ -4855,6 +5589,14 @@ Cercignani's claim is specific to Old Icelandic and explicitly denied for OHG. O
 hypothesis that onset velars block i-lowering in OE would be a **novel extension**
 of the literature, supported by the data (OE hlid retains *i) but not explicitly
 attested in prior scholarship.
+
+**Re-examination (2026-03-20, following Schuhmacher's query):** After Schuhmacher
+questioned "whether it is an idea of Cercignani's or a (possibly wrong) conclusion
+of yours," we re-read Cercignani 1980 (p.289–292). Cercignani **does** explicitly
+state that OIc. retained \*i after \*/k/ and \*/g/, citing Noreen §60 and
+Gutenbrunner §26.1.2. However, he explicitly denies this for OHG. Our extension
+to OE is indeed our own hypothesis—not stated anywhere in Cercignani—based on the
+empirical success of the rule (+2 matches, no regressions).
 
 #### Refined hypothesis (potentially novel)
 
@@ -11891,3 +12633,582 @@ B. **Mark as Known Exception** — add `*wīþijaz` → `wīþig` to the excepti
 C. **Change proto-form** to something that would yield `wīþig` (but no authoritative source supports such a form).
 
 D. **Further research** — search for specialist literature on Germanic tree names / plant names to see if there's a known explanation for this word's development.
+
+---
+
+## OE heofon 'heaven': Back Umlaut and Medial Syncope (2026-03-20)
+
+### The Mismatch
+
+TSV row 2068:
+- PROTOFORM: `*xemenăz`
+- COUNTERPART: `heofon`
+- FST output: `hemen` ✗
+
+The FST produces `hemen` but we expect `heofon`. Two issues:
+1. `e` → `eo` (back umlaut) not applied
+2. Final `-en` vs `-on`
+
+### Source Research
+
+**Kroonen (2013) p.220:**
+> `*hemina-` ~ `*hemna-` m. 'heaven' — Go. himins m. 'id.', ON himinn m. 'id.', 
+> Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil, 
+> heban m. 'id.', ODu. himil m. 'id.', Du. hemel c. 'id.', OHG himil m. 'id.', G 
+> Himmel m. 'id.'
+
+Kroonen notes:
+- Two stems: `*hemina-` and `*hemna-` (the latter syncopated)
+- OE `heofon`, OS `heban` vs. Go. `himins`, ON `himinn`
+- "The dialectal difference ... seems to point to two different stems"
+- Continental WGmc forms with -l from dissimilation `*hemina-` → `*hemila-`
+
+**Kluge-Seebold s.v. "Himmel":**
+> g. `*himena-` m. "Himmel" ... ae. heofon, as. heban das m dissimilatorisch zu v 
+> (stimmhafter bilabialer Reibelaut) weiterentwickelt haben.
+
+K-S explicitly states: OE/OS have dissimilation **m → v/b** (bilabial fricative).
+
+**Campbell OEG §381:**
+> "So heofon is for older hefzen (CH)"
+
+Campbell confirms: The earliest OE form was `hefzen` (Cædmon's Hymn). The `eo` is from 
+**back umlaut** (u-umlaut), not breaking.
+
+**Campbell OEG §210.1:**
+> "In W-S u-umlaut is general before labials and liquids, e.g. heofon heaven, eofor boar"
+
+Back umlaut: `e` → `eo` before labials (f, b, m, etc.) when followed by back vowel in 
+the next syllable.
+
+**R/T vol.2 p.324:**
+> "northern WGmc `*hebun` 'sky, heaven' (OS heban) > WS, North. OE heofon, Merc. heofen"
+
+R/T give the direct NWGmc input as `*hebun` (already syncopated, with m→b dissimilation).
+
+### Phonological Development
+
+The full chain:
+1. PIE `*h₂ékmōn` (stone, anvil, meteorite → heaven's vault)
+2. PGmc `*himinaz` ~ `*heminaz` (paradigmatic remodeling per Kroonen)
+3. NWGmc `*hemunaz` (u-lowering environment?)
+4. WGmc `*hemn-` (medial syncope of unstressed vowel)
+5. OE/OS `*hefn-` / `*hebn-` (m→f/b dissimilation to avoid -mn- cluster)
+6. OE `heofon` (back umlaut: e→eo before labial + back vowel)
+
+The dissimilation `*m → *f/b` is triggered by the following nasal in `*-mn-`.
+
+### Updated Analysis After Pipeline Review (2026-03-20)
+
+**Tracing `*xemenăz` through FST:**
+- `english_after_proto_input`: `*x*e*m*e*n*ă*z`
+- `old_english_sandbox_after_back_mutation`: `*ç*e*m*e*n` (no back umlaut!)
+- Final output: `hemen` ✗
+
+**Why back umlaut doesn't fire:**
+The OEBackMutation rule requires:
+```
+{*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+```
+The context is labial + `{*u}`. But our form has `*e*m*e*n` — the second vowel is 
+`*e`, not `*u`. So back umlaut is correctly NOT firing.
+
+**The TSV problem:**
+The TSV has `*xemenăz` (with `-en-`), but:
+- Kroonen reconstructs `*hemina-` (with `-in-`)
+- R/T give NWGmc `*hebun` (with `-un-`)
+
+The back vowel `-un-` that triggers back umlaut comes from **paradigmatic leveling**. 
+Per Campbell §210.1, we see alternations like `heofon` (back-umlauted, from oblique 
+cases with `-un-`) vs. `hefen` (front vowel, from nominative with `-in-`).
+
+**What the FST was missing:**
+
+To derive `heofon` from PGmc `*heminaz`, we need these changes:
+
+1. **Suffix vowel change** `-in-` → `-un-` in certain paradigm forms (NWGmc?)
+   This is complex — it's either (a) paradigmatic leveling, or (b) a regular 
+   NWGmc change in certain noun classes
+
+2. **Medial syncope** `*hemin-` → `*hemn-` (but this happens AFTER 1)
+
+3. **m → f dissimilation** `*hemn-` → `*hefn-` (to avoid -mn- cluster)
+   This is well-attested: K-S explicitly states "m dissimilatorisch zu v"
+
+4. **Back umlaut** `*hefun` → `heofun` (e → eo before labial + u)
+   This is already in the FST but needs the -un- suffix to trigger
+
+### FST Changes Implemented (2026-03-20)
+
+**1. Grammar extension for `-unăz` suffix pattern:**
+
+Added to `pgrmWeakTailVowel` (line 325):
+```foma
+u:{*u} n:{*n} ă:{*ă} z:{*z} |
+```
+This allows the FST to accept forms like `*xemunăz` which have the oblique-case 
+`-un-` suffix that triggers back umlaut.
+
+**2. New rule: OENasalDissimilation (line 1801):**
+```foma
+define OENasalDissimilation [
+    {*m} -> {*f} || EnglishStarShortVowel _ EnglishStarShortVowel {*n} [EnglishStarShortVowel | .#.]
+];
+```
+
+This implements the m → f dissimilation described by K-S: "ae. heofon, as. heban 
+das m dissimilatorisch zu v weiterentwickelt haben."
+
+**Conditioning:**
+- Left context: preceded by a short vowel (i.e., `*m` is coda of first syllable)
+- Right context: followed by short vowel + `*n` + (vowel or word-end)
+- This prevents the rule from applying to:
+  - Geminates like `*mannaz` (no vowel between the two nasals)
+  - Geminates like `*swimmanan` (first `*m` not in dissimilation context)
+  - Word-initial `*m` (not preceded by vowel)
+
+**3. Pipeline integration:**
+
+Added `OENasalDissimilation` BEFORE `OEBackMutation` in both pipeline definitions 
+(OldEnglishCore at ~line 2135 and EnglishAfterProtoToOEWeakTail at ~line 2228).
+
+The ordering is critical:
+1. Dissimilation: `*xemunăz` → `*xefunăz` (`*m` → `*f` before syllable with `*n`)
+2. Back umlaut: `*xefunăz` → `*xeofunăz` (`*e` → `*eo` before labial + `*u`)
+3. Later rules: → `heofon`
+
+**Test results:**
+
+```
+$ echo 'xemunăz' | flookup -i backend/old_english.bin
+xemunăz    heofon    ✓
+
+$ echo 'mannăz' | flookup -i backend/old_english.bin
+mannăz    mann    ✓  (no regression)
+
+$ echo 'swimmăną' | flookup -i backend/old_english.bin
+swimmăną    swimman    ✓  (no regression)
+```
+
+**Mismatch count:** 57 (unchanged from before these changes)
+
+### TSV Fix Proposed
+
+**Current state:**
+Row 2068 has PROTOFORM `*xemenăz` (with `-en-` suffix)
+- This yields `hefen` (dissimilation fires, but no back umlaut — wrong final vowel)
+- The `-en-` suffix doesn't trigger back umlaut (not a back vowel)
+
+**Proposed change:**
+Change PROTOFORM from `*xemenăz` to `*xemunăz` (with `-un-` suffix)
+
+**Rationale:**
+1. **Kroonen p.220:** Reconstructs `*hemina-` ~ `*hemna-`, noting dialectal difference
+   between Go. `himins`, ON `himinn` vs. OE `heofon`, OS `heban`
+
+2. **R/T vol.2 p.324:** Gives the direct NWGmc input as `*hebun` — this shows that 
+   the OE word derives from a form with `-un-`, not `-in-`
+
+3. **Campbell §210.1:** Documents paradigm alternation: `heofon` (from oblique cases 
+   with back vowel) vs. `hefen` (from nominative with front vowel)
+
+4. **The `-un-` is not arbitrary:** It represents the oblique-case stem form that was 
+   generalized into the nominative in Old English. The PGmc paradigm had:
+   - nom.sg. `*himinaz` / `*heminaz` (with `-in-`)
+   - oblique cases had `-un-` (from paradigmatic ablaut or analogical extension)
+   - OE generalized the oblique stem, creating `heofon` with back umlaut
+
+**What this means for our methodology:**
+
+We're inputting a "virtual" proto-form that represents the actual OE input, not the 
+pure PGmc nominative. This is justified because:
+- The paradigmatic leveling happened in NWGmc, before OE
+- Our FST models phonology, not morphological paradigm selection
+- The form we use should represent what actually fed into OE sound changes
+
+**Alternative (rejected):**
+We could model the `-in-` → `-un-` change as a morphological rule, but this would:
+- Require knowing stem class information
+- Be specific to this one word (or a small class)
+- Add complexity for little gain
+
+Using `*xemunăz` directly is simpler and more transparent.
+
+### STATUS: READY FOR TSV UPDATE
+
+The FST now correctly handles `*xemunăz` → `heofon`. The TSV should be updated:
+- Change PROTOFORM column from `*xemenăz` to `*xemunăz`
+- Change PROTO column (column 13) from `*xemenăz` to `*xemunăz`
+- Update NOTE to document the oblique-stem choice
+
+### PGmc Paradigm Research (2026-03-21)
+
+**The Problem:** The user correctly points out that we can't simply write `-un-` arbitrarily 
+into the proto-form. We need to identify what **actual PGmc case form** would have had 
+this vowel pattern.
+
+**Kroonen's mn-stem analysis (p.220):**
+
+Kroonen reconstructs the PGmc paradigm as an **mn-stem** (heteroclitic alternation between 
+`-m-` and `-n-` suffixes in different cases):
+
+> "it is probably more attractive to think that both stems split off from the oblique 
+> cases of a paradigm **nom. `*hemô`, gen. `*hemnaz`, dat. `*hemeni`**"
+
+This is a more archaic structure than a simple an-stem. The paradigm alternated:
+- Strong cases (nom/acc): `-m-` or `-on-` suffix
+- Weak cases (gen/dat): `-n-` suffix with different ablaut grade
+
+**Fulk §7.31 on the an-stem accusative:**
+
+> "Gmc. requires `*-on-` > `*-on-um`, in which **`*-on-` should have yielded, in (N)WGmc., 
+> `*-un-` before `*u` in the next syllable**, whereas `*-on-` in EGmc. developed to `*-an-`"
+
+So in NWGmc, the accusative singular suffix `-on-` was raised to `-un-` before the following 
+case ending `-u(m)`. This is the source of the `-un-` we need!
+
+**R/T vol.2 p.168-169 — full an-stem paradigm for `*gumô` 'man':**
+
+| Case | OE | ← PWGmc | ← PGmc |
+|------|-----|---------|--------|
+| nom.sg. | guma | `*gumō` | `*gumô` |
+| **acc.sg.** | guman | `*gumanų` | **`*gumanų`** |
+| gen.sg. | guman | `*gumini` | `*guminiz` |
+| dat.sg. | guman | `*gumini` | `*gumini` |
+| nom.pl. | guman | `*gumanį` | `*gumaniz` |
+| acc.pl. | guman | `*gumanų̄` | `*gumanunz` |
+
+The **accusative singular** `*gumanų` is the form that shows `-un-` in NWGmc (from PGmc 
+`*-on-` raised before following `-u`).
+
+**Early OE evidence — Campbell §210.1 and Ruthwell Cross:**
+
+Campbell notes that back umlaut requires a back vowel in the following syllable. The 
+Ruthwell Cross has `heafunzs` (gen.sg. 'of heaven'), showing the `-un-` suffix was still 
+present in early OE before it was leveled.
+
+**R/T vol.2 p.272:**
+
+> "northern WGmc `*hebun` 'sky, heaven', gen. `*hebunas`, etc. (OS heban, hebanas, etc.) 
+> > OE heofon, heofones"
+
+R/T give the NWGmc form as `*hebun` (nom.) with gen. `*hebunas`. The nominative form 
+`*hebun` itself shows that OE had **already generalized the oblique-case stem** (with 
+`-un-`) into the nominative.
+
+**Reconstruction:**
+
+For the mn-stem `*hemô` 'heaven', the accusative singular would be:
+- PGmc: **`*hemonų`** (with `-on-` suffix + `-u(m)` case ending)
+- NWGmc: **`*hemunų`** (raising of `-on-` → `-un-` before following `-u`)
+- After nasal dissimilation: **`*hebunų`** → `*hebun`
+
+The form that fed into OE was the acc.sg. `*hemonų` (or an oblique plural form), which:
+1. Had `-on-` that raised to `-un-` in NWGmc
+2. Triggered back umlaut (e → eo before labial + back vowel)
+3. Was then generalized across the paradigm in OE
+
+**For the FST:**
+
+We use `*xemunăz` as a "virtual proto-form" representing the **accusative singular** or 
+**generalized oblique stem**. 
+
+### Testing Results (2026-03-20)
+
+Testing the FST with various forms:
+
+```
+xemon  → heofon  ✓  (oblique stem with -on)
+ximon  → heofon  ✓  (alternate root vowel)
+xemun  → heofon  ✓  (with -un)
+xemunăz → heofon ✓  (with -unăz ending)
+xemenăz → hefen  ✗  (with -enăz — no back umlaut)
+```
+
+The form `*xemon` (representing the PGmc mn-stem oblique stem `*hemon-`) correctly 
+produces `heofon` because:
+1. The `*o` in `-on` triggers back umlaut for `*i` → `*eo` (via `EnglishBackMutationTrigger`)
+2. Nasal dissimilation `*m → *f` fires before the `-on` (now `-on` with `*n`)
+3. The `-on` ending is preserved (no apocope because CVCVC structure)
+
+**Recommended TSV form:** `*xemon`
+
+This represents the bare **mn-stem oblique stem** (per Kroonen's paradigm nom. `*hemô`, 
+gen. `*hemnaz`, dat. `*hemeni`). The oblique stem was `*hemon-` which, when generalized 
+to the nominative in northern WGmc, produced `*hebon` (with dissimilation) → OE `heofon`.
+
+### Progress on PGmc acc.sg. `*xemonų` Support (2026-03-20)
+
+**Grammar changes made:**
+1. Added `ų:{*ų}` to `pgrmNasalVowel` (line 136)
+2. Added `{*ų}` to `PGmcStarVowel` (line 395)
+3. Added `o:{*o} n:{*n} ų:{*ų}` pattern to `pgrmWeakTailVowel` (line 321)
+4. Added `{*o} {*n} {*ų}` to `EnglishWeakTailVowelStar` (line 787)
+5. Added `NWGmcUnstressedORaising` rule: `{*o} → {*u}` before `{*ų}` (line 1447)
+6. Added `{*ų} -> u` to `OldEnglishRemoveStars` (line 653)
+
+**Testing results:**
+```
+xemonų → heomonu  (partially working, but not heofon)
+```
+
+**Problems identified:**
+1. **Nasal dissimilation not firing:** The `OENasalDissimilation` rule requires:
+   - Left context: short vowel + `*m` + short vowel + `*n` + (short vowel OR word-end)
+   - For `*xemunų`: the `*ų` at the end is neither a short vowel nor word-end
+   
+2. **Final `-u` not apocopated:** The apocope rules may also not recognize `*ų`
+
+### Research Findings on mn-Dissimilation (2026-03-20)
+
+**Source 1: Fulk Comparative Grammar §6.14 (cluster simplification):**
+> "In the cluster mn, the first consonant tends to lose its nasality by dissimilation,
+> though the results are hardly regular, and the reverse change (of ƀn to mn) is well
+> attested in NWGmc. Fairly secure examples include... **OE heofon, OS heƀan 'heaven'**
+> (cf. Go. himins, OIcel. himinn and the alternative stem in l by heteroclisis, OFris. 
+> himel, himul, OS OHG himil)."
+
+Fulk identifies this as **mn-dissimilation**: when two nasals appear in successive 
+syllables, the first loses its nasality. The change is `*m...n` → `*β/ƀ...n`.
+
+**Source 2: Kluge-Seebold s.v. "Himmel":**
+> "ae. heofon, as. heban das m dissimilatorisch zu v (stimmhafter bilabialer Reibelaut) 
+> weiterentwickelt haben."
+
+K-S confirms the dissimilation `m → v` (voiced bilabial fricative = `[β]`), which in 
+OE orthography is written `f` intervocalically.
+
+**Source 3: Campbell OEG §381:**
+> "So heofon is for older hefzen (CH)"
+
+Campbell says the earliest OE form (Cædmon's Hymn) was `hefzen`, with `f` already 
+present. This suggests the dissimilation occurred **before OE** — i.e., in NWGmc.
+
+**Source 4: R/T vol.2 p.272, 324:**
+R/T give the NWGmc input as `*hebun` (with `b`, not `m`), showing the dissimilation 
+was already complete by NWGmc. OS `heban` and OE `heofon` both derive from this form.
+
+**Chronology synthesis:**
+
+1. **PGmc** `*heminaz` (nom.sg.) / `*hemonų` (acc.sg.) — with `*m`
+2. **Pre-NWGmc** mn-dissimilation: `*hemonų` → `*hebonų` (or `*heβonų`)
+3. **NWGmc** o-raising: `*hebonų` → `*hebunų` (before following `-ų`)
+4. **PWGmc** denasalization: `-ų` → `-u`
+5. **Early OE** back umlaut: `*hebun` → `*heobun` → `heofon`
+
+**Key insight:** The mn-dissimilation is a **NWGmc** change, not an OE change. It occurs 
+before the case ending is lost. The environment is simply: `*m...n` across syllables 
+(first nasal dissimilates when another nasal follows in the next syllable).
+
+**Implications for FST:**
+
+The current `OENasalDissimilation` rule is mis-timed. It should:
+1. Be moved earlier in the pipeline (to NWGmc stage, before denasalization)
+2. Have simpler conditioning: `*m` → `*β/ƀ` when followed (in next syllable) by `*n`
+
+The context `[EnglishStarShortVowel | .#.]` after `*n` is too restrictive — historically,
+the dissimilation occurred while the case ending `-ų` was still present.
+
+**Proposed fix:**
+
+Rename rule to `NWGmcMnDissimilation` and move to NWGmc stage with conditioning:
+```foma
+# NWGmc mn-dissimilation (Fulk §6.14): m → β when n follows in next syllable
+define NWGmcMnDissimilation [
+    {*m} -> {*β} || EnglishStarVocalic _ EnglishStarVocalic EnglishStarConsonant* {*n}
+];
+```
+
+This says: `*m` → `*β` when preceded by a vowel and followed by (vowel + consonants + `*n`).
+
+**Current status:** Research complete. Ready to implement properly-timed dissimilation rule.
+
+### Update: NWGmc mn-Dissimilation Rule Implemented (2026-03-20)
+
+Successfully implemented `NWGmcMnDissimilation` rule:
+- Added to `germanic.txt` at line 1456
+- Added to both pipeline locations (after `NWGmcUnstressedORaising`)
+- Added to `old_english_sandbox.txt` with dedicated stage bins
+
+**Testing results:**
+```
+xemonų → heofonu   (dissimilation works! but extra -u)
+xemunăz → heofon   ✓
+xemon → heofon     ✓
+```
+
+**Remaining issue: Final -ų apocope not working**
+
+The derivation trace shows:
+```
+proto_input:              *x*e*m*o*n*ų
+nwgmc_unstressed_o_raising: *x*e*m*u*n*ų  (o→u before ų)
+nwgmc_mn_dissimilation:    *x*e*β*u*n*ų  (m→β)
+back_mutation:             *ç*e*o*β*u*n*ų (e→eo before labial+u)
+high_vowel_apocope:        *ç*e*o*β*u*n*ų (NO CHANGE - problem!)
+surface:                   heofonu
+```
+
+The final `*ų` should be apocopated but isn't.
+
+### Analysis: Why Final -ų Apocope Fails
+
+**The current `OEHighVowelApocope` rule (lines 1972-1985) has these patterns:**
+
+1. `{*u/i/ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.`
+2. `{*u/i/ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.`
+3. `{*u/i/ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.`
+
+**The word structure at apocope time:**
+
+After back mutation, the form is: `*ç*e*o*β*u*n*ų`
+
+Breaking this down:
+- `*ç` = palatal fricative (from `*x`)
+- `*e*o` = diphthong (from back umlaut)
+- `*β` = labial fricative (from mn-dissimilation)
+- `*u` = short vowel (from o-raising)
+- `*n` = nasal consonant
+- `*ų` = final nasal vowel
+
+So the structure is: `ONSET + DIPHTHONG + CONSONANT + VOWEL + CONSONANT + FINAL_VOWEL`
+
+Or in terms of syllables: `heof-un-ų` (trisyllabic)
+
+**Why the rule doesn't match:**
+
+Pattern 2 requires: `Diphthong + Consonant+ + final_vowel`
+
+But we have: `Diphthong + Consonant + Vowel + Consonant + final_vowel`
+
+The `*u` in the middle is a **vowel**, not a consonant. So `OEAnyConsonant+` doesn't match 
+`*β*u*n` because `*u` is not a consonant.
+
+**Campbell §345 on final high vowel loss:**
+
+> "u and i... were lost in Prim. OE, in final unaccented syllables after **a long accented 
+> syllable**, or **a short accented syllable and another syllable**. They remained after 
+> a short accented syllable, or a long accented syllable followed by a short syllable."
+
+Key conditions:
+1. After long accented syllable → final -u/-i lost
+2. After short accented syllable + another syllable → final -u/-i lost
+
+In `heofunų`:
+- First syllable `heof-` is **long** (contains diphthong)
+- Therefore final `-ų` should be lost regardless of intervening syllables
+
+**The problem:** The current rule patterns assume the structure is disyllabic 
+(stressed_syllable + final_vowel). They don't account for trisyllabic words where 
+an unstressed syllable intervenes.
+
+**Proposed solution:**
+
+Add patterns for trisyllabic words:
+```foma
+# Pattern for: Long/Diphthong + C+ + unstressed_V + C+ + final_vowel
+{*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.
+```
+
+This matches: `*e*o` (diphthong) + `*β` (consonant) + `*u` (short vowel) + `*n` (consonant) + `*ų`
+
+**Alternative consideration:**
+
+Should the medial `*u` (from o-raising) have already syncopated by this point? 
+
+Campbell §341-344 discusses medial vowel syncope, but that typically applies to different 
+environments. The `-un-` suffix seems to be retained in the nom./acc.sg. of n-stems.
+
+**Historical comparison:**
+
+OE `heofon` appears to be disyllabic in attested forms (two syllables: `heo-fon`). This 
+suggests that either:
+1. The medial vowel syncopated before apocope, OR
+2. The final vowel apocopated even with the intervening syllable
+
+Looking at other trisyllabic examples in OE:
+- `héafod` (head) < `*xaubudą` — the final `-ą` is lost via `OEHeavySyllableNasalApocope` (different rule!)
+- `weorod` (troop) — similar pattern
+
+**Correction after testing:**
+
+Traced both `xaubudą` (heafod) and `xemonų` (heofon) through the pipeline:
+- `xaubudą → hēafod` ✓ — works because it ends in `*ą`, handled by `OEHeavySyllableNasalApocope`
+- `xemonų → heofonu` ✗ — fails because it ends in `*ų`, handled by `OEHighVowelApocope`
+
+The key difference:
+- `OEHeavySyllableNasalApocope`: `{*ą} -> 0 || OEAnyConsonant _ .#.` — unconditional after consonant
+- `OEHighVowelApocope`: requires specific syllable weight patterns
+
+**Why the treatment differs:**
+
+Historically:
+- `*ą` (neuter a-stem ending) → denasalized to `*a`, then unconditionally lost in all positions
+- `*ų` (accusative ending) → denasalized to `*u`, then subject to heavy syllable rule (Campbell §345)
+
+So `*ų` should be treated like `*u` (conditional on syllable weight), not like `*ą` (unconditional).
+
+The problem is that `OEHighVowelApocope` doesn't have patterns for trisyllabic words. The current 
+patterns assume:
+- Long syllable + consonants + final vowel (disyllabic)
+- Short syllable + heavy consonant cluster + final vowel (heavy disyllabic)
+
+But `heofon` at apocope time is: `*ç*e*o*β*u*n*ų` = diphthong + C + V + C + final_V (trisyllabic)
+
+**Solution: Add trisyllabic patterns**
+
+Campbell §345 says final `-u/-i` is lost after:
+1. A long accented syllable, OR
+2. A short accented syllable + another syllable
+
+For case 1 (long syllable), we need to match regardless of intervening syllables:
+```
+Long/Diphthong + C+ + [any number of syllables] + final_vowel
+```
+
+The simplest addition is:
+```foma
+{*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.
+```
+
+This handles: `*e*o` (diphthong) + `*β` (C) + `*u` (V) + `*n` (C) + `*ų` (final)
+
+**Decision:** Add trisyllabic patterns to `OEHighVowelApocope` to handle words like `heofon` 
+where an unstressed syllable intervenes between the long root and the final vowel.
+
+### Update: Trisyllabic Apocope Implemented (2026-03-20)
+
+Added trisyllabic patterns to `OEHighVowelApocope`:
+- Long vowel/diphthong + C+ + unstressed V + C+ + final vowel
+- Short vowel + C + short V + C+ + final vowel
+
+**Testing results:**
+```
+xemonų → heofon   ✓ (was heofonu)
+xemunăz → heofon  ✓
+xemon → heofon    ✓
+xaubudą → hēafod  ✓ (unchanged)
+```
+
+**Full derivation trace for `xemonų`:**
+```
+proto_input:              *x*e*m*o*n*ų           (PGmc acc.sg.)
+nwgmc_unstressed_o_raising: *x*e*m*u*n*ų        (*o → *u before *ų)
+nwgmc_mn_dissimilation:    *x*e*β*u*n*ų         (*m → *β before nasal)
+back_mutation:             *ç*e*o*β*u*n*ų       (*e → *eo before labial+u)
+high_vowel_apocope:        *ç*e*o*β*u*n         (final *ų deleted!)
+proto_to_oe:               *ç*e*o*β*o*n         (*u → *o lowering)
+orthography:               heofon               ✓
+```
+
+**Mismatch count:** 56 (down from 60)
+
+**Summary of heofon changes:**
+1. Added `ų:{*ų}` support to grammar (pgrmNasalVowel, PGmcStarVowel, etc.)
+2. Added `NWGmcUnstressedORaising` rule: `*o → *u` before `*ų`
+3. Added `NWGmcMnDissimilation` rule: `*m → *β` before nasal in next syllable
+4. Added trisyllabic patterns to `OEHighVowelApocope`
+5. Added `{*ų} -> u` to `OldEnglishRemoveStars`
+
+**Key insight:** The mn-dissimilation is a NWGmc change (not OE), and the final vowel 
+apocope rule needed to handle trisyllabic words per Campbell §345.

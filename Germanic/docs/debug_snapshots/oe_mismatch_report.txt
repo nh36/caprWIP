@@ -1,10 +1,10 @@
-Total mismatches: 57
+Total mismatches: 56
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      4
   Documented exceptions:       4
   Phonology (core buckets):    12
-  Phonology (other buckets):   37
+  Phonology (other buckets):   36
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -15,9 +15,9 @@ Total mismatches: 57
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 5
+  final_vowel_extra: 4
   epenthetic_vowel_missing: 1
-  syncopation_missing: 2
+  syncopation_missing: 1
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -35,7 +35,7 @@ Total mismatches: 57
   vowel_quality__stressed_vowel: 5
   vowel_quality__u_lowering_exception: 4
   vowel_quality__u_o_alternation: 1
-  vowel_quality__unstressed_o_a: 1
+  vowel_quality__unstressed_o_a: 2
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__morph_form_mismatch: 1
   final_vowel_missing__other: 2
@@ -62,8 +62,8 @@ breaking_missing__expected_eo (1):
 
 breaking_missing__expected_eo_got_e (4):
   *fedwōrez -> fedwore (expected fēower)
-  *xemenăz -> hemen (expected heofon)
   *weslon -> weslon (expected weosule)
+  *juką -> ġeuc (expected ġeoc)
   *jugunθiz -> ġeugȳþ (expected ġeoguþ)
 
 breaking_missing__expected_ie (1):
@@ -87,9 +87,8 @@ palatalization_missing (1):
   >> LIKELY: Palatalization rule not applying in this context
   >> ACTION: Check palatalization environments; may be suffix-related
 
-final_vowel_extra (5):
-  *laimōn -> lāme (expected lām)
-  *saiwălō -> sāwalu (expected sāwol)
+final_vowel_extra (4):
+  *laimōn -> lāfe (expected lām)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
   *wullo -> wollo (expected wull)
@@ -97,8 +96,7 @@ final_vowel_extra (5):
 epenthetic_vowel_missing (1):
   *strawjăną -> strewan (expected strewian)
 
-syncopation_missing (2):
-  *melukz -> meoloc (expected meolc)
+syncopation_missing (1):
   *natilōn -> nætele (expected netle)
   >> ISSUE: FST kept medial vowel that target syncopates
   >> LIKELY: High vowel syncope rule not applying (meoloc→meolc)
@@ -162,8 +160,9 @@ vowel_quality__u_lowering_exception (4):
 vowel_quality__u_o_alternation (1):
   *widuwōn -> widowe (expected widuwe)
 
-vowel_quality__unstressed_o_a (1):
+vowel_quality__unstressed_o_a (2):
   *mēnōθz -> mōnoþ (expected mōnaþ)
+  *saiwălō -> sāwal (expected sāwol)
 
 final_vowel_missing__morph_form_mismatch (1):
   *deljăz -> dill (expected dile)
