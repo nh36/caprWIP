@@ -9,7 +9,11 @@ define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
     .o. PWGmcChanges;
 define OESandboxAfterNWGmcULowering OESandboxAfterWestGermanic
     .o. NWGmcULowering;
-define OESandboxAfterNWGmcNStemNLoss OESandboxAfterNWGmcULowering
+define OESandboxAfterNWGmcUnstressedORaising OESandboxAfterNWGmcULowering
+    .o. NWGmcUnstressedORaising;
+define OESandboxAfterNWGmcMnDissimilation OESandboxAfterNWGmcUnstressedORaising
+    .o. NWGmcMnDissimilation;
+define OESandboxAfterNWGmcNStemNLoss OESandboxAfterNWGmcMnDissimilation
     .o. NWGmcNStemNLoss;
 define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcNStemNLoss
     .o. NWGmcFinalLongORaising;
@@ -53,10 +57,11 @@ define OESandboxAfterBackMutation OESandboxAfterJClusterCoalescence
     .o. OEBackMutation;
 define OESandboxAfterWsPalatalUmlaut OESandboxAfterBackMutation
     .o. OEWsPalatalUmlaut;
+# NOTE: NWGmc rules use NWGmc prefix, not OE prefix
 define OESandboxAfterNasalSpirantLengthening OESandboxAfterWsPalatalUmlaut
-    .o. OENasalSpirantLengthening;
+    .o. NWGmcNasalSpirantLengthening;
 define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
-    .o. OENasalSpirantLoss;
+    .o. NWGmcNasalSpirantLoss;
 define OESandboxAfterWeakTailNasalLoss OESandboxAfterNasalSpirantLoss
     .o. OEWeakTailNasalLoss;
 define OESandboxAfterWeightMarkers OESandboxAfterWeakTailNasalLoss
@@ -118,6 +123,14 @@ save stack old_english_sandbox_after_west_germanic.bin
 clear stack
 regex OESandboxAfterNWGmcULowering;
 save stack old_english_sandbox_after_nwgmc_u_lowering.bin
+
+clear stack
+regex OESandboxAfterNWGmcUnstressedORaising;
+save stack old_english_sandbox_after_nwgmc_unstressed_o_raising.bin
+
+clear stack
+regex OESandboxAfterNWGmcMnDissimilation;
+save stack old_english_sandbox_after_nwgmc_mn_dissimilation.bin
 
 clear stack
 regex OESandboxAfterNWGmcNStemNLoss;

@@ -406,6 +406,81 @@ documented irregularities in the TSV. A Bülbring-style labial-blocking
 rule would produce more regressions than fixes, since forms like *folkam,
 *fulmō, *fulgijan- all show regular lowering in identical environments.
 
+### Expert consultation (Stefan Schuhmacher, Vienna, 2026-03-20)
+
+We consulted Prof. Stefan Schuhmacher (University of Vienna) on the u-lowering
+exceptions. His response provides important terminological and empirical
+clarifications:
+
+**On terminology:** Schuhmacher prefers "Lowering of high vowels" or "Lowering
+of \*u" over the traditional "a-Umlaut" (German *a-Umlaut*).
+
+**On the scope of the rule:** "To begin with, it must be mentioned that such
+lowering **affects only stressed vowels**... I do not see that the lowering
+affects unstressed vowels such as the middle vowel in the word for 'widow'."
+This confirms our implementation, which restricts u-lowering to stressed
+syllables.
+
+**On the labial environment exceptions:** "In these words the erstwhile *u is
+preceded by bilabial /w/ and /b/ or by labiodental /f/. I have always been
+inclined to think that the preceding /w/, /b/, /f/ blocked the lowering but
+as far as I remember, **there are lots of counterexamples**." This aligns with
+Luick's position. Schuhmacher adds: "Others have wondered whether there were
+places in the paradigm of these words where lowering did not occur, such as
+the instrumental singular (e.g., \*wulfu) or the dative plural (e.g., \*wulfum)
+but this strikes me as not very attractive." He notes no solution exists.
+
+**On the OHG contrast:** "I must mention that Franconian/Alemannic/Bavarian
+here **consistently have /o/**, i.e. 'Old High German' fol, wolf, fogal, boc."
+This confirms Campbell's observation that OE is exceptional here while
+continental WGmc shows regular lowering.
+
+**On bucc specifically:** "There may be additional complications such as the
+possibility that *bucc* originally may have been a u-stem word, in which case
+the vowel of Old English *bucc* would be what we expect." This is a potential
+explanation for one exception that we had not fully considered.
+
+**Follow-up research on bucc stem-class (2026-03-20):** We checked Kroonen
+(EDPG, p.82) and Kluge-Seebold (s.v. "Bock") on this question:
+
+- **Kroonen** reconstructs \*bukka(n)- as an **n-stem** (not u-stem): "Most of
+  the evidence points to a thematic form \*bukka-, but in view of the gemination
+  of the final consonant it seems likely that the word was originally inflected
+  as an **n-stem**, viz. \*bukō, gen. \*bukkaz." The gemination (\*-kk-) reflects
+  the n-stem genitive \*-n-os > \*-az with Kluge's Law ("spontaneous gemination").
+  He derives it from PIE \*bhug-ōn, gen. \*bhug-n-ós.
+
+- **Kluge-Seebold** notes: "ae. bucca (n-Stamm, neben bucc 'Rehbock')" — i.e., OE
+  had **both** an n-stem (bucca) and an a-stem (bucc), confirming the word's
+  complex inflectional history.
+
+**Assessment:** Kroonen's reconstruction is n-stem, not u-stem. However,
+Schuhmacher's suggestion could still be valid if there was an earlier u-stem
+stage (\*buku-?) before the n-stem formation, or if some dialects preserved a
+u-stem variant. The word's IE cognates (Av. būza-, Arm. bowc) show no n-stem
+suffix, so the n-stem formation is Germanic. Whether a u-stem variant existed
+alongside the n-stem would require more investigation. For now, we note:
+1. The n-stem reconstruction explains the gemination via Kluge's Law
+2. Schuhmacher's u-stem hypothesis remains unverified but not disproven
+3. Either stem-class might explain retention of \*u if the paradigm lacked
+   lowering-triggering vowels in certain forms
+
+**On the character of the exceptions:** "It does hurt our Neogrammarian pride
+that what looks like a full-blown sound law (and not just a 'tendency') seems
+to have some exceptions." This candidly acknowledges the problem.
+
+**On \*i-lowering (parallel change):** "As for the expected parallel lowering
+of \*i > e, this is really no more than a 'tendency' (my apologies for the
+vague term). That is, *nest* and *wer* 'man' are the usual suspects but no one
+has been able to mention a substantial number of other candidates for such
+lowering. **Such lowering simply seems not to happen across the board.**
+Unpleasant as it is, this is the way it is."
+
+**Summary from Schuhmacher:**
+- "\*u is lowered in most of the cases where we would expect it but does not always take place, for whatever reason."
+- "\*i is not usually lowered but there are at least *nest* and *wer* where it did happen."
+- "As far as I can see, **lowering is only found in stressed vowels** so there is no need to bother about the development of words like \*furxtiθō. \*u is not lowered here (because an \*i follows, which itself is not lowered), and later the \*u is fronted to y precisely because of the \*i."
+
 ---
 
 ## 3. PWGmc \*j-related sound changes: formalization of under-specified rules
@@ -1080,6 +1155,65 @@ without regressions. This confirms the onset-velar blocking hypothesis.
 **Full analysis:** See DEV_NOTES.md, "PGmc \*i > WGmc \*e Lowering: The Case
 of nest".
 
+### Expert consultation (Stefan Schuhmacher, Vienna, 2026-03-20)
+
+We consulted Prof. Stefan Schuhmacher on i-lowering. His response clarifies
+the status of the change and questions our use of Cercignani:
+
+**On i-lowering as a "tendency":** "As for the expected parallel lowering of
+\*i > e, this is really no more than a 'tendency' (my apologies for the vague
+term). That is, *nest* and *wer* 'man' are the usual suspects but **no one has
+been able to mention a substantial number of other candidates** for such
+lowering. Such lowering simply seems not to happen across the board.
+Unpleasant as it is, this is the way it is."
+
+**On Cercignani (1980):** Schuhmacher's assessment of the article we cited is
+blunt: "I have also looked at Cercignani's article... To put it nicely, that
+article is **unhelpful. I can make neither head nor tail of it.**" He questions
+our interpretation: "Does he actually say that 'in Old Icelandic, onset velars
+(\*/k/, /g/) blocked the lowering of \*i'??? And if so, how does he explain the
+lack of lowering of \*i in words other than 'nest' and 'man'? I don't
+understand where that idea came from, and whether it is an idea of Cercignani's
+or a (possibly wrong) conclusion of yours."
+
+**On chronology:** "Now since the very 'sporadic' lowering of \*i certainly is
+not a sound law, it is **impossible to find any chronological relationship**
+with the almost exceptionless lowering of \*u."
+
+**Implications for our implementation:** Our onset-velar blocking rule produced
+correct empirical results (+2 matches, no regressions), but we should:
+1. Re-examine the Cercignani attribution to ensure it accurately represents his claims
+2. Consider whether our rule is an independent observation rather than a citation of Cercignani
+3. Be cautious about treating sporadic i-lowering as a formalizable sound law
+
+**Re-examination of Cercignani attribution (2026-03-20):**
+
+In response to Schuhmacher's question, we re-read Cercignani 1980, p. 289–292.
+Cercignani does explicitly state (lines 289–291):
+
+> "In Old Icelandic, PGmc. \*/i/ was apparently retained after \*/k/ and \*/g/;
+> but this was by no means true of at least certain types of Old High German."
+
+So yes, Cercignani **does** attribute onset-velar blocking to Old Icelandic—citing
+Noreen §60 and Gutenbrunner §26.1.2. But he explicitly denies this pattern for OHG,
+which shows doublets (skif/skef, ginen/genen).
+
+**Crucial clarification:** Cercignani says nothing about Old English. Our extension
+of onset-velar blocking to OE is **our own hypothesis**, supported by OE data
+(hlid, fyrhtu) but not stated anywhere in Cercignani. The phrasing "extension of
+Cercignani 1980" in our earlier notes was correct but potentially misleading—it
+should be understood as "we extend a pattern Cercignani observed for OIc. to OE"
+rather than "Cercignani claims this for OE."
+
+Whether Schuhmacher's puzzlement concerns Cercignani's claim for OIc. (which is
+explicit in the text) or our extension to OE (which he correctly identifies as
+our own inference) is unclear. In either case, our documentation now explicitly
+separates:
+- What Cercignani says (OIc. onset-velar blocking, citing Noreen and Gutenbrunner)
+- What we hypothesize (that OE patterns with OIc., not OHG)
+
+The rule ordering (i-lowering before u-lowering) remains necessary for correct
+outputs, regardless of how i-lowering is characterized theoretically.
 
 ---
 

@@ -133,7 +133,7 @@ define pgrmShortVowel [
 ];
 
 define pgrmNasalVowel [
-    ą:{*ą} | ę:{*ę}
+    ą:{*ą} | ę:{*ę} | ų:{*ų}
 ];
 
 define pgrmLongVowel [
@@ -316,12 +316,16 @@ define pgrmWeakTailVowel [
     i:{*i} j:{*j} ă:{*ă} z:{*z} |
     o:{*o} |
     o:{*o} n:{*n} |
+    # Acc.sg. of an-stem nouns: PGmc *-onų (Fulk §7.31)
+    # e.g. *hemonų 'heaven (acc.sg.)' → OE heofon
+    o:{*o} n:{*n} ų:{*ų} |
     u:{*u} |
     u:{*u} d:{*d} ą:{*ą} |
     u:{*u} k:{*k} a:{*a} z:{*z} |
     u:{*u} k:{*k} ă:{*ă} z:{*z} |
     u:{*u} k:{*k} z:{*z} |
     u:{*u} n:{*n} |
+    u:{*u} n:{*n} ă:{*ă} z:{*z} |
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
     u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
     u:{*u} w:{*w} ō:{*ō} n:{*n} |
@@ -388,6 +392,7 @@ define PGmcStarVowel [
     {*ō} |
     {*œ} |
     {*ū} |
+    {*ų} |
     {*ɑ} |
     {*ɔ} |
     {*ɔ̆} |
@@ -645,6 +650,7 @@ define OldEnglishRemoveStars [
     {*ā} -> ā,
     {*ă} -> a,
     {*ą} -> a,
+    {*ų} -> u,
     {*ɔ} -> o,
     {*ɔ̆} -> a,
     {*æ} -> æ,
@@ -778,6 +784,8 @@ define EnglishWeakTailVowelStar [
     {*i} {*z} |
     {*o} |
     {*o} {*n} |
+    # Acc.sg. of an-stem nouns: PGmc *-onų (Fulk §7.31)
+    {*o} {*n} {*ų} |
     {*u} |
     {*u} {*d} {*ą} |
     {*u} {*k} {*a} {*z} |
@@ -1382,8 +1390,13 @@ define EnglishStarNonHighVowel [
 # specific lexical items (*full, *wulf, *fugol, *bukkaz), but this is irregular.
 # FIX 2026-03-09: Block if *j appears anywhere between *u and non-high vowel.
 # EnglishStarConsonantNoJ defined earlier.
+# FIX 2026-03-20: Restrict to STRESSED vowels only (Schuhmacher consultation).
+# In PGmc, stress is on the initial syllable. We enforce this by requiring that
+# no vowel precedes the *u being lowered (i.e., *u must be in the first syllable).
+# This fixes *widuwōn → widuwe (not ×widowe): the second *u is unstressed and
+# should not lower.
 define NWGmcULowering [
-    {*u} -> {*o} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+    {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
 
 # NWGmc *i → *e lowering before non-high vowels (Campbell §114, Fulk §4.3).
@@ -1430,6 +1443,23 @@ define NWGmcNStemNLoss [
 # This does NOT apply to: nasalized *ǭ (fem. n-stem), trimoric *ô (masc. n-stem).
 define NWGmcFinalLongORaising [
     {*ō} -> {*u} || _ .#.
+];
+
+# NWGmc: Unstressed *o → *u raising before following *u (Fulk §7.31).
+# Fulk: "*-on- should have yielded, in (N)WGmc., *-un- before *u in the next syllable"
+# This explains the acc.sg. of an-stems: PGmc *-onų → NWGmc *-unų → OE -an/-un
+# Example: *hemonų (acc.sg. 'heaven') → *hemunų → OE heofon (with back umlaut)
+define NWGmcUnstressedORaising [
+    {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
+];
+
+# NWGmc mn-dissimilation (Fulk §6.14, K-S s.v. Himmel)
+# When two nasals appear in successive syllables, the first loses nasality.
+# PGmc *hemonų → NWGmc *hebonų → (later) OE heofon.
+# The output is *β (voiced bilabial fricative), which becomes OE f intervocalically.
+# Environment: V_VCn where C is any consonant(s) and n is a nasal.
+define NWGmcMnDissimilation [
+    {*m} -> {*β} || EnglishStarVocalic _ EnglishStarVocalic EnglishStarConsonant* EnglishStarNasal
 ];
 
 # R/T vol.2 §5.1.2: PGmc *ē₁ → OE ǣ. Historically *ē₁ lowered to *ā in NWGmc,
@@ -1498,10 +1528,11 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening7
     .o. OEUnstressedLongVowelShortening8;
 
-# Medial unstressed *u → *o: restrict to non-initial *u (preceded by V+C+)
-# so it only hits second-syllable unstressed *u, not stressed root *u.
-# Word-final *u (from *-ō) is also excluded by requiring a following consonant.
-# Use [EnglishStarConsonant | EnglishPalatalConsonant] for post-palatalization context.
+# Medial unstressed *u → *o in OE (WS/Northumbrian).
+# This is DISTINCT from NWGmcULowering (stressed u-lowering).
+# The exact conditioning is under investigation — see DEV_NOTES.md
+# "OE Medial unstressed *u → *o: Conditioning environment" for details.
+# Currently using original broad rule; may need refinement for *widuwōn → widuwe.
 define OEMedUnstressedULowering [
     {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
@@ -1790,6 +1821,21 @@ define OEUnstressedEIContraction [
 # Back umlaut of *e is more restricted than *i and *æ in WS.
 # NOTE: Use separate symbols {*e} {*o} not multichar {*eo} for proper pipeline handling.
 # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
+
+# OE/OS m → f dissimilation before syllable containing n (K-S s.v. Himmel):
+# "ae. heofon, as. heban das m dissimilatorisch zu v weiterentwickelt haben"
+# Campbell OEG §381: "heofon is for older hefzen (CH)"
+# The dissimilation happens when *m precedes a syllable with *n:
+# *hemunaz → *hefunaz → heofon (with back umlaut)
+# Context: *m + vowel + n (i.e., m in one syllable, n in the next)
+# IMPORTANT: This does NOT apply when:
+# - the n is geminate (*nn) — e.g., *mannaz → mann
+# - the m is part of a geminate (*mm) — e.g., *swimmanan → swimman
+# - the m is word-initial — only applies to medial m
+define OENasalDissimilation [
+    {*m} -> {*f} || EnglishStarShortVowel _ EnglishStarShortVowel {*n} [EnglishStarShortVowel | .#.]
+];
+
 define OEBackMutation [
     {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
@@ -1930,12 +1976,32 @@ define OEHeavyMarker ?*;  # identity — no marking needed
 define OEWeightMarkers OEHeavyMarker;
 
 define OEHighVowelApocope [
+    # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    # Disyllabic: diphthong + consonant(s) + final vowel
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
+    # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # Trisyllabic: long/diphthong + unstressed syllable + final vowel (Campbell §345)
+    # Pattern: LongV/Diph + C+ + shortV + C+ + final_vowel
+    # Example: heofon < *xemonų: *e*o + *β + *u + *n + *ų
+    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
+    # Pattern: shortV + C + shortV + C+ + final_vowel
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
     # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.
@@ -2054,6 +2120,8 @@ define EnglishProtoToOE (
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
     .o. OEWsPalatalGlide
     .o. NWGmcULowering
+    .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
@@ -2119,6 +2187,7 @@ define EnglishProtoToOE (
     .o. OEIUmlaut
     .o. OEWsPalatalDiphthongization
     .o. OEJClusterCoalescence
+    .o. OENasalDissimilation
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
     # NSL moved earlier in pipeline (NWGmc stage, before i-umlaut) — see lines 1945-1946
@@ -2182,6 +2251,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
     .o. NWGmcULowering
+    .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcFinalLongORaising
     .o. NWGmcLongELowering
@@ -2212,6 +2283,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
+    .o. OENasalDissimilation
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
     # NSL moved earlier in pipeline (NWGmc stage)
