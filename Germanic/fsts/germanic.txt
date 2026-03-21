@@ -2044,10 +2044,13 @@ define OEMedialSyncope [
 # IMPORTANT: Must be in MEDIAL position (preceded by vowel + consonant).
 # Otherwise deletes root vowels in words like *weljaną 'will'.
 # Context: vowel between consonant and *l (creating Cl cluster).
+# R/T §6.7.4: "unstressed *i in open syllables is often syncopated next to l"
+# R/T explicitly mentions only *i (not *e). The medial vowel is still *i at this
+# point because OEMedUnstressedILowering fires AFTER syncope in the pipeline.
 define OELAdjacentSyncope [
-    [{*i}|{*e}] -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
-    [{*i}|{*e}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    [{*i}|{*e}] -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
 ];
 
 # Post-syncope dental cluster simplification: *tθ → *t.

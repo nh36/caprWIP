@@ -854,17 +854,24 @@ nor nettle fits this pattern:
    ```
    This would NOT help `meolc` (light syllable `me-`).
 
-2. **l-adjacent syncope (IMPLEMENTED 2026-03-21):**
+2. **l-adjacent syncope (IMPLEMENTED 2026-03-21, corrected 2026-03-21):**
    ```foma
+   # R/T §6.7.4: "unstressed *i in open syllables is often syncopated next to l"
+   # R/T explicitly mentions only *i (not *e).
    define OELAdjacentSyncope [
-       [{*i}|{*e}] -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
-       [{*i}|{*e}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-       [{*i}|{*e}] -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
+       {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
+       {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
+       {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
    ];
    ```
-   Syncopates medial `*i/*e` immediately before `*l`. Required constraint:
+   Syncopates medial `*i` immediately before `*l`. Required constraint:
    must be in medial position (preceded by vowel + consonant) to avoid 
    deleting root vowels in words like `*weljaną` → `willan`.
+
+   **Pipeline ordering note:** R/T mentions only `*i`, not `*e`. An earlier
+   draft targeted `[{*i}|{*e}]` but this was unnecessary: the medial vowel
+   is still `*i` at this point because `OEMedUnstressedILowering` (which
+   lowers `*ĭ` → `*e`) fires AFTER syncope in the pipeline.
 
    Also required: restrict `NWGmcILowering` to first syllable only, so that
    medial `*i` is preserved until after i-umlaut. This allows `*natilōn` to
