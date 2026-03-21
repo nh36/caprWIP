@@ -20,6 +20,7 @@
 - [OE huniġ 'honey': The -ag > -ig Sound Change](#oe-huniġ-honey-the--ag---ig-sound-change-2026-03-19)
 - [OE wīþiġ 'withy': ja-stem vs Sievers' Law](#oe-wīþiġ-withy-ja-stem-adjective-vs-sievers-law-syncope-2026-03-19)
 - [OE heofon 'heaven': Back Umlaut and Nasal Dissimilation](#oe-heofon-heaven-back-umlaut-and-medial-syncope-2026-03-20)
+- [OE lungen 'lung': The *-anjō Suffix Problem](#oe-lungen-lung-the--anjō-suffix-problem-2026-03-21)
 
 ### Sievers' Law and Class I Weak Verbs (Mar 2026)
 - [Sievers' Law: The *sturtijăną Question](#sievers-law-and-class-i-weak-verb-infinitives-the-sturtijăną-question)
@@ -13227,3 +13228,145 @@ orthography:               heofon               ✓
 
 **Key insight:** The mn-dissimilation is a NWGmc change (not OE), and the final vowel 
 apocope rule needed to handle trisyllabic words per Campbell §345.
+
+---
+
+## OE lungen 'lung': The *-anjō Suffix Problem (2026-03-21)
+
+**Date:** 2026-03-21
+
+### The mismatch
+
+The mismatch report shows:
+```
+*lungō -> lung (expected lungen)
+```
+
+The TSV entry (row 2114) has proto `*lungō` with an earlier note claiming it was fixed
+from `*lungwąn` (spurious) to `*lungō` (neut. n-stem per Kroonen). But this note was
+**incorrect** — it confused the base form `*lungô` with the derived OE form.
+
+### Etymology research
+
+**Wiktionary reconstruction:**
+- OE `lungen` < PGmc **`*lunganjō`** (ō-stem feminine)
+- This is an extension of the simpler `*lungô` via the `*-anjō` suffix
+- Cognates: OFris `lungene/lungen`, OS `lungannia`, OHG `lunganna/lungunna`
+
+**The `*-anjō` suffix:**
+This is a productive Germanic derivational suffix (related to PIE *-n̥yo-) that creates
+feminine nouns, often body-part terms. The suffix contains `*-anj-` which in OE
+regularly becomes `-en-` (via i-umlaut of *a → *e, then j-loss).
+
+**Bosworth-Toller attestations:**
+- `lungen` — nominative singular (glossed as *pulmo*)
+- `lungenne` — dative singular ("ðone man ðe biþ lungenne wund" = wounded in the lung)
+- `lungena` — genitive plural (*pulmones*)
+
+**OE declension (Wiktionary):**
+
+| Case | Singular | Plural |
+|------|----------|--------|
+| Nom. | lungen | lungenna, lungenne |
+| Acc. | lungenne | lungenna, lungenne |
+| Gen. | lungenne | lungenna |
+| Dat. | lungenne | lungennum |
+
+This is a **strong ō-stem** with an unusual `-en` nominative from the `*-anjō` suffix,
+NOT a weak n-stem as the earlier TSV note claimed.
+
+### FST analysis
+
+Current behavior:
+```
+*lungō  → lung   (high-vowel apocope deletes final *u from *ō → *u)
+*lungô  → lunga  (weak masc. ending -ô → -a)
+*lungōn → lunge  (weak fem. with -n retained → -e)
+```
+
+Testing the correct proto:
+```
+*lunganjō → +? (REJECTED — grammar doesn't support -anj- suffix)
+```
+
+The issue is that our `pgrmWord` grammar doesn't include the `*-anjō` derivational
+suffix pattern. The form `*lunganjō` has the structure:
+- Root: `lung-`
+- Suffix: `-anj-` (derivational)
+- Ending: `-ō` (ō-stem nom.sg.)
+
+### Why this is difficult
+
+The `*-anjō` suffix is **derivational** (word-formation), not **inflectional** (paradigm
+endings). Our grammar is built around inflectional patterns (strong/weak noun classes,
+verb conjugations), not derivational morphology.
+
+Adding support for `*-anjō` would require:
+1. Defining the suffix in the proto inventory
+2. Creating rules for its OE development: `*anj` → `-en-` (via i-umlaut + j-loss)
+3. Extending `pgrmWord` to accept this suffix between root and inflection
+
+This is significant grammar work for what may be a handful of words.
+
+### Options
+
+**Option A: TSV target adjustment**
+Change the OE target from `lungen` to `lung`. The bare form `lung` is arguably the
+"underlying" form before the `-anjō` derivation. However, `lung` as a standalone OE
+word is **unattested** — all OE forms have the `-en-` (< `*-anj-`).
+
+**Problems:** Target would be a ghost form.
+
+**Option B: Accept as grammar limitation**
+Mark this as a documented exception: the `*-anjō` derivational suffix is outside the
+scope of our inflectional grammar. Add a TSV note explaining the situation.
+
+**Problems:** Mismatch remains in the report.
+
+**Option C: Extend grammar for *-anjō**
+Add the `*-anjō` suffix to `pgrmWord` and implement the necessary sound changes.
+
+Required work:
+1. Add `{*a}{*n}{*j}` or similar to the proto inventory
+2. Create `pgrmAnjSuffix` pattern
+3. Extend word templates to include it
+4. Add `*anj → *en` rule (i-umlaut of *a + j-loss)
+
+**Problems:** Significant grammar extension for a small number of words. Need to
+identify how many other words use this suffix before deciding if it's worth it.
+
+**Option D: Use a simplified proto form**
+If we can find a proto form that:
+- Is accepted by the grammar
+- Produces `lungen` or close to it
+- Is etymologically defensible
+
+For example, if we treated the pre-OE form as already having undergone the `*anj → *en`
+change, something like `*lungenō` or `*lungenjō`...
+
+Testing:
+```
+*lungenō → +? (likely rejected)
+```
+
+This may not work either, and would be etymologically dubious.
+
+### Recommendation
+
+**Option B** is the most honest approach for now. The `*-anjō` suffix represents
+derivational morphology that our inflectional grammar was not designed to handle.
+Document this as a known limitation, update the TSV note to correctly explain the
+etymology, and mark as `[EXCEPTION: derivational suffix outside grammar scope]`.
+
+If we encounter many more `*-anjō` words causing mismatches, Option C becomes more
+attractive.
+
+### References
+
+- Wiktionary: [lungen (Old English)](https://en.wiktionary.org/wiki/lungen#Old_English)
+- Wiktionary: [Reconstruction:Proto-Germanic/*lunganjō](https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/lunganj%C5%8D)
+- Bosworth-Toller: *lungen* (pulmo)
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic.* p.367 (*lungōn-)
+  — Note: Kroonen's entry is for the simpler `*lungōn-` (n-stem), but the OE form
+  specifically reflects the `*-anjō` derivative.
+
