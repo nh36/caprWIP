@@ -854,18 +854,26 @@ nor nettle fits this pattern:
    ```
    This would NOT help `meolc` (light syllable `me-`).
 
-2. **l-adjacent syncope (experimental):**
+2. **l-adjacent syncope (IMPLEMENTED 2026-03-21):**
    ```foma
-   {*i} -> 0 || _ {*l} OEAnyConsonant
+   define OELAdjacentSyncope [
+       [{*i}|{*e}] -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
+       [{*i}|{*e}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
+       [{*i}|{*e}] -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
+   ];
    ```
-   This would syncopate `*i` immediately before `*l + consonant`. But this is
-   lexically variable and may overapply.
+   Syncopates medial `*i/*e` immediately before `*l`. Required constraint:
+   must be in medial position (preceded by vowel + consonant) to avoid 
+   deleting root vowels in words like `*weljaną` → `willan`.
 
-**Conclusion:** Neither case has a fully regular phonological solution. Both
-involve patterns that are lexically variable or exceptional. Recommend accepting
-the current outputs as the regular predictions and documenting the syncopated
-variants as exceptions involving paradigm leveling or the variable "l-adjacent
-syncope" pattern.
+   Also required: restrict `NWGmcILowering` to first syllable only, so that
+   medial `*i` is preserved until after i-umlaut. This allows `*natilōn` to
+   properly undergo i-umlaut (`*a` → `*e`) before medial `*i` is lowered.
+
+**Implementation status:**
+- **meolc (milk):** Accepted `meoloc` as the regular output (light syllable
+  blocks high-vowel syncope). TSV updated to target `meoloc`.
+- **netle (nettle):** L-adjacent syncope implemented. `*natilōn` → `netle` ✓
 
 ### References
 
