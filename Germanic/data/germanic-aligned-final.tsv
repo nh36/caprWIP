@@ -1054,7 +1054,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1358	s p æ n	*spannăną	s p æ n - - ( - - )	spæn	span	372	English				span	*spannăną	241
 2202	s p a n n a n	*spannăną	s p æ n - - ( - - )	spæn	spannan	372	Old_English	OE target: spann→spannan (inf. of str.v. class VII; noun 'spann' in *spannō row)			span	*spannăną	241
 570	s p æ n	*spannō	s p æ n ( - )	spæn	span	156	English				span	*spannō	241
-2203	s p a n n	*spannō	s p æ n ( - )	spæn	spann	156	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			span	*spannō	241
+2203	s p a n n e	*spannăi	s p æ n ( - )	spæn	spanne	156	Old_English	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ăi preserves medial geminate; unstressed *ăi→*ē (R/T §6.1.5). See DEV_NOTES §fem-ō-stem-datsg.			span	*spannăi	241
 1357	ʃ p a n ə n	*spannăną	ʃ p a n ə n ( - - )	ʃpanən	spannen	372	German				span	*spannăną	241
 569	ʃ p a n ə	*spannō	ʃ p a n ( ə )	ʃpanə	Spanne	156	German				span	*spannō	241
 1232	s p ɑ r	*sparrô	s p ɑ r - -	spɑr	spar	338	Dutch				spar	*sparrô	242
@@ -1433,7 +1433,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1049	v ʊ n d ə r	*wundrą	v ʊ n d ə r ( - - )	vʊndər	Wunder	288	German	MT			wonder	*wundrą	324
 1486	ʋ ɔ l	*wullo	ʋ ɔ l -	ʋɔl	wol	407	Dutch				wool	*wullo	325
 1485	ʋ ʊ l	*wullo	ʋ ʊ l -	ʋʊl	wool	407	English				wool	*wullo	325
-2300	w u l l	*wullo	ʋ ʊ l -	ʋʊl	wull	407	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			wool	*wullo	325
+2300	w u l l	*wullō	ʋ ʊ l -	ʋʊl	wull	407	Old_English	EXCEPTION: u-lowering blocked near labials (Luick §78, R/T §2.3.1, Brunner §68). FST outputs regular woll; attested wull is genuine lexical exception. See DEV_NOTES §NWGmc-u-lowering-exceptions.			wool	*wullō	325
 1484	v ɔ l ə	*wullo	v ɔ l ə	vɔlə	Wolle	407	German				wool	*wullo	325
 235	ʋ oː r t	*wurdą	ʋ oː r t ( - - )	ʋoːrt	woord	65	Dutch				word	*wurdą	326
 234	ʋ ɜː d	*wurdą	ʋ ɜː - d ( - - )	ʋɜːd	word	65	English				word	*wurdą	326

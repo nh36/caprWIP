@@ -144,6 +144,13 @@ define pgrmDiphthong [
     {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu}
 ];
 
+# Unstressed diphthong: {*ăi} undergoes NWGmc monophthongization to *ē (not *ā).
+# R/T §6.1.5: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
+# Used in weak-tail endings like fem. ō-stem dat.sg. *-ăi → -e.
+define pgrmUnstressedDiphthong [
+    {ăi}:{*ăi}
+];
+
 define pgrmCodaSimple [
     m:{*m} | n:{*n} | ŋ:{*ŋ} | s:{*s} | z:{*z} | r:{*r} | l:{*l} |
     p:{*p} | t:{*t} | k:{*k} | b:{*b} | d:{*d} | g:{*g} | f:{*f} |
@@ -305,6 +312,13 @@ define pgrmWeakTailVowel [
     # MUST use *a (not *ă) to undergo unstressed fronting: *a → *æ → *e
     # e.g. *mannas → mannes (geminate medial before -es)
     a:{*a} s:{*s} |
+    # Dat.sg. of fem. ō-stem: PGmc *-ăi → OE -e (Brunner §252)
+    # Uses unstressed diphthong *ăi which monophthongizes to *ē at NWGmc stage
+    # (NWGmcUnstressedAiMonophthongization), then shortens: *ē → *e in unstressed position.
+    # R/T §6.1.5: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
+    # Used for geminate-stem fem. nouns where medial geminate is preserved.
+    # e.g. *spannăi → spanne
+    {ăi}:{*ăi} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
     e:{*e} n:{*n} ă:{*ă} z:{*z} |
     e:{*e} r:{*r} |
@@ -414,6 +428,7 @@ define PGmcStarVowel [
 
 define PGmcStarDiphthong [
     {*ai} |
+    {*ăi} |  # Unstressed *ai (R/T §6.1.5: unstressed *ai→*ē)
     {*au} |
     {*ea} |
     {*ēa} |
@@ -1441,6 +1456,16 @@ define NWGmcILowering [
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
+# NWGmc: Unstressed *ăi → *ē (R/T §6.1.5, lines 2055, 2244-2264).
+# R/T: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
+# This is chronologically SEPARATE from PWGmc *ai → *ā (stressed).
+# The unstressed *ăi merges with *ē, then follows regular development:
+# *ē → *e (shortening in unstressed position) → OE -e.
+# Used in weak-tail endings like fem. ō-stem dat.sg. *-ăi.
+define NWGmcUnstressedAiMonophthongization [
+    {*ăi} -> {*ē}
+];
+
 # PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
 # Masc. n-stem nom.sg. uses trimoric *-ô (no -n), which is NOT affected.
@@ -2153,6 +2178,7 @@ define OERMetathesis [
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
     PWGmcChanges
+    .o. NWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
@@ -2287,6 +2313,7 @@ define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRu
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
+    .o. NWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide

@@ -1,10 +1,10 @@
-Total mismatches: 56
+Total mismatches: 55
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      4
-  Documented exceptions:       4
+  TSV/data fixes needed:      3
+  Documented exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   36
+  Phonology (other buckets):   35
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -15,7 +15,7 @@ Total mismatches: 56
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 4
+  final_vowel_extra: 3
   epenthetic_vowel_missing: 2
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
@@ -32,7 +32,7 @@ Total mismatches: 56
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__stressed_vowel: 5
-  vowel_quality__u_lowering_exception: 4
+  vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 2
 --- final_vowel_missing sub-buckets ---
@@ -40,7 +40,6 @@ Total mismatches: 56
   final_vowel_missing__other: 2
   final_vowel_missing__weak_noun_like: 4
 --- final_n_missing sub-buckets ---
-  final_n_missing__expected_en: 1
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__c_vs_ċ__cluster: 1
@@ -86,11 +85,10 @@ palatalization_missing (1):
   >> LIKELY: Palatalization rule not applying in this context
   >> ACTION: Check palatalization environments; may be suffix-related
 
-final_vowel_extra (4):
+final_vowel_extra (3):
   *laimōn -> lāfe (expected lām)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
-  *wullo -> wollo (expected wull)
 
 epenthetic_vowel_missing (2):
   *strawjăną -> strewan (expected strewian)
@@ -145,11 +143,12 @@ vowel_quality__stressed_vowel (5):
   *liznô -> lierna (expected leorna)
   *liznōθi -> lierneþ (expected leorneþ)
 
-vowel_quality__u_lowering_exception (4):
+vowel_quality__u_lowering_exception (5):
   *bukkăz -> bocc (expected bucc)
   *fuglăz -> fogol (expected fugol)
   *rustō -> orst (expected rust)
   *wulfăz -> wolf (expected wulf)
+  *wullō -> woll (expected wull)
 
 vowel_quality__u_o_alternation (1):
   *widuwōn -> widowe (expected widuwe)
@@ -170,12 +169,6 @@ final_vowel_missing__weak_noun_like (4):
   *skuldrō -> sċoldor (expected sċuldra)
   *sibăz -> sif (expected sife)
   *tangō -> tang (expected tange)
-
-final_n_missing__expected_en (1):
-  *lungō -> lung (expected lungen)
-  >> ISSUE: Target ends in -en but FST dropped the n
-  >> LIKELY: TSV target may be oblique form (dat.pl), not nominative
-  >> ACTION: Check TSV proto/target paradigm cell alignment
 
 cons_mismatch__c_vs_ċ__cluster (1):
   *strakkijăną -> strecċan (expected streċċan)
