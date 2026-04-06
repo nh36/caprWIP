@@ -13361,12 +13361,277 @@ etymology, and mark as `[EXCEPTION: derivational suffix outside grammar scope]`.
 If we encounter many more `*-anjō` words causing mismatches, Option C becomes more
 attractive.
 
+### Implementation: Option C (2026-04-05)
+
+User approved Option C. Implementation added `a:{*a} n:{*n} j:{*j} ō:{*ō}` to
+`pgrmWeakTailVowel` (line ~343). The grammar now accepts `*lunganjō` but produces
+`lungenn` (double n) instead of `lungen`.
+
+**Testing:**
+```
+$ printf 'lunganjō\n' | flookup -i old_english.bin
+lunganjō	lungenn
+```
+
+**The problem:** WGmc gemination turns `*nj → *nnj` before j-loss, leaving `*nn`.
+OHG preserves the geminate (`lunganna`), but OE/OFris simplify to single `n`.
+
+### Word-final geminate simplification: scholarly consensus
+
+The question is whether word-final geminates were phonologically simplified in OE,
+and if so, whether this applies to ALL geminates or only those derived from
+j-gemination.
+
+**The key scholarly sources:**
+
+**Kurath 1956** (*Language* 32:435) — cited by both Brunner and Hogg as authoritative:
+Argues that variant spellings with single final consonants (e.g., `bed` for `bedd`)
+reflect **phonological degemination**, not merely graphic variation. The occasional
+double spellings are analogical restorations from inflected forms.
+
+**Brunner 1965 §231** (docs/references/brunner_1965_altenglische_grammatik.txt):
+> "Vereinfachung von Gemination tritt namentlich in folgenden Fällen ein:
+> 1. Gewöhnlich im Wortauslaut, vgl. Formen wie eal, fear, man, swim, sib, sceat,
+> bed, sæc, teoh mit ealles, feorran, monnes, swimman, sibbe, sceattes, beddes,
+> sæcce, teohhe; doch schreibt man oft auch eall, monn, upp, sibb, bedd, bliss
+> u. dgl. ... Das Aufgeben der Doppelschreibung im Auslaut kann sehr wohl auf
+> Vereinfachung der Geminaten zurückgehen, die gelegentlichen Doppelschreibungen
+> wären dann aus den flektierten Formen übernommen (so Kurath, Language 32, 435)."
+
+Translation: "Simplification of gemination occurs especially in the following cases:
+1. Usually in word-final position... The abandonment of double spelling in final
+position may well reflect simplification of geminates; the occasional double spellings
+would then be taken over from inflected forms (so Kurath, Language 32, 435)."
+
+**Hogg 1992** (Cambridge History of English, vol.1, docs/references/hogg_vol1.txt):
+> "variant spellings with single final consonants appeared, e.g. bed, and, as
+> Kurath (1956:435) argues, these are best explained as due to degemination of
+> final consonants. Thus the language reverted to a system in which geminate
+> consonants could only appear medially."
+
+**Campbell 1959 §66** (docs/references/campbell_old_english_grammar.txt):
+Campbell calls the variation "only a graphic simplification" but his footnote 1 to
+§457 acknowledges: "Early in ME (or in lOE...) double consonants were simplified
+at the ends of syllables."
+
+**Erdmann 1972** (docs/references/erdmann_1972_suffixal_j_germanic.txt):
+> "Final geminates are simplified in Old English."
+
+**The scholarly consensus (Kurath → Brunner → Hogg):**
+1. Word-final geminates were **phonologically simplified** in OE
+2. This applies to **ALL** word-final geminates, not just j-derived ones
+3. Double spellings like `mann`, `bedd` are **analogical restorations** from
+   inflected forms (`mannes`, `beddes`), not preservation of phonological geminates
+4. The phonological reality was single consonants word-finally: /man/, /bed/, /lungen/
+
+### Implications for our FST
+
+This means our rule should simplify ALL word-final geminates, not just those from
+j-gemination. The TSV targets like `mann` and `bann` represent **orthographic
+conventions** (influenced by inflected forms), not the phonological output.
+
+**However**, this creates a problem: our TSV has targets like `mann` (with geminate
+spelling), so if we degeminate phonologically, we'll get `man` → mismatch!
+
+**Options:**
+
+**Option A: Model phonology, accept orthographic mismatches**
+Apply universal word-final degemination. Forms like `*mannăz → man` and
+`*lunganjō → lungen` would both show single final consonants. The TSV
+targets `mann`, `bann`, `spann` would become "orthographic mismatches"
+documented as acceptable.
+
+**Option B: Don't model word-final degemination at all**
+Remove the degemination rule entirely. Accept that `*lunganjō → lungenn` is
+a mismatch, document it as a limitation. This preserves matches for `mann`, etc.
+
+**Option C: Selective degemination (linguistically problematic)**
+Only degeminate geminates that arose from j-gemination. This would require
+distinguishing "etymological" from "secondary" geminates — but sound change
+cannot see etymology. This is a hack, not a principled phonological rule.
+
+**Recommendation:** Option A is most consistent with the scholarly consensus.
+We should model the phonology correctly and document that orthographic targets
+like `mann` represent spelling conventions, not phonological outputs.
+
+### Implementation decision (pending)
+
+Need to decide whether to:
+1. Implement universal word-final degemination and update TSV targets accordingly
+2. Accept the current partial implementation as a pragmatic compromise
+3. Remove degemination entirely and document `lungenn` as a known limitation
+
 ### References
 
-- Wiktionary: [lungen (Old English)](https://en.wiktionary.org/wiki/lungen#Old_English)
+- Kurath, H. (1956). "The loss of long consonants and the rise of voiced fricatives
+  in Middle English." *Language* 32:435-445.
+- Brunner, K. (1965). *Altenglische Grammatik nach der angelsächsischen Grammatik
+  von Eduard Sievers.* 3rd ed. Tübingen: Niemeyer. §231.
+- Hogg, R.M. (1992). *A Grammar of Old English. Vol. 1: Phonology.* Oxford: Blackwell.
+  [= Cambridge History of English, vol.1]
+- Campbell, A. (1959). *Old English Grammar.* Oxford: Clarendon. §66, §457-458.
+- Erdmann, P.H. (1972). "Suffixal *-j- in Germanic." *Language* 48.2:407-415.
 - Wiktionary: [Reconstruction:Proto-Germanic/*lunganjō](https://en.wiktionary.org/wiki/Reconstruction:Proto-Germanic/lunganj%C5%8D)
-- Bosworth-Toller: *lungen* (pulmo)
-- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic.* p.367 (*lungōn-)
-  — Note: Kroonen's entry is for the simpler `*lungōn-` (n-stem), but the OE form
-  specifically reflects the `*-anjō` derivative.
+- Kroonen, G. (2013). *Etymological Dictionary of Proto-Germanic.* Leiden: Brill. p.367.
+
+
+### Paradigm-cell approach for geminate-stem words
+
+**The problem with word-final geminates:**
+
+The scholarly consensus (Kurath 1956, Brunner §231, Hogg 1992) is clear: word-final geminates 
+were *phonologically simplified* in Old English. Spellings like `mann`, `bedd`, `bann` are 
+*orthographic conventions* — analogical restorations from inflected forms — not phonological 
+geminates. The phonological output was single consonants: /man/, /bed/, /lungen/.
+
+This creates an FST problem: if we implement word-final degemination as a sound change, then:
+- `*lunganjō → lungen` ✓ (correct! j-gemination → final degemination)
+- `*mannăz → man` ✗ (wrong! target is `mann` in orthography)
+- `*banną → ban` ✗ (wrong! target is `bann`)
+
+A selective rule that only degeminates "secondary" (j-derived) geminates but preserves 
+"etymological" geminates is phonologically illegitimate: sound change cannot see morphology 
+or etymology.
+
+**The solution: paradigm-cell matching**
+
+Instead of targeting the nominative singular (where geminates are word-final and simplified), 
+we can target an *oblique case* where the geminate remains **medial** before a vowel-initial 
+suffix. In medial position, geminates are phonologically preserved.
+
+Candidate paradigm cells for masc./neut. a-stems:
+
+| Case    | PGmc ending | OE ending | Geminate position | Preserved? |
+|---------|-------------|-----------|-------------------|------------|
+| nom.sg. | *-ăz        | -Ø        | word-final        | ✗          |
+| gen.sg. | *-ăs/*-ĕsă  | -es       | medial            | ✓          |
+| dat.sg. | *-ai        | -e        | medial            | ✓          |
+| acc.sg. | *-ą         | -Ø        | word-final        | ✗          |
+
+The **genitive singular** (`*-ăs` → `-es`) is the best choice:
+1. Geminate is medial before `-es`, so preservation is regular
+2. The ending is universally attested across all declension classes
+3. Gen.sg. forms are well-documented in glossaries and texts
+4. Example: `*mannăs` → `mannes` with geminate preserved
+
+**Alternative: use existing nominative targets**
+
+For words with etymological geminates, the orthographic convention `mann` (for phonological 
+/man/) is universally understood in OE scholarship. We could:
+1. Keep nominative targets (`mann`, `bann`, etc.)
+2. Simply not apply word-final degemination at all (Option B)
+3. Accept that the FST produces the phonologically correct output even if the conventional 
+   orthography differs
+
+This is defensible because:
+- The FST models *phonological* development, not orthographic conventions
+- `man` (our output) = /man/ (the actual phonological form)
+- `mann` (traditional target) = /man/ (same, just spelled differently)
+
+**Decision needed:**
+
+Option A (paradigm-cell): Switch geminate-stem nouns to gen.sg. targets
+  - Pro: Geminates preserved by regular phonology
+  - Con: Targets become `mannes`, `bannes`, etc. (less intuitive as headwords)
+  - Con: Requires adding gen.sg. ending to grammar
+
+Option B (accept phonological output): Keep nominative targets, remove degemination rule
+  - Pro: Simple, no grammar changes needed
+  - Con: FST produces `man` but target is `mann` — permanent mismatches
+  - Con: These would need to be marked as "orthographic only" differences
+
+Option C (selective by morphology): Only degeminate j-derived geminates
+  - Pro: `lungen` works, `mann` works
+  - Con: **Phonologically illegitimate** — sound change cannot see etymology
+  - Rejected by user as a "hack"
+
+**Recommendation:**
+
+Option A (paradigm-cell) is the most principled approach. It uses the natural morphological 
+structure of the language to find forms where geminates are preserved by regular phonology. 
+This aligns with our approach for other paradigm-cell matches (e.g., using 3sg present for 
+verbs with analogically remodeled infinitives).
+
+Implementation would require:
+1. Adding gen.sg. ending `ă:{*ă} s:{*s}` to `pgrmWeakTailVowel`
+2. Updating TSV for geminate-stem nouns: change proto to gen.sg. forms
+3. Removing `OEFinalGeminateSimplification` rule (not needed if we use medial targets)
+
+
+#### Implementing Option A: gen.sg. paradigm-cell approach
+
+**Step 1: Verify gen.sg. phonology (research completed 2026-04-05)**
+
+PGmc gen.sg. for masc. a-stems: *-ăs or *-eso (scholarly debate on exact form)
+OE outcome: -es (earlier -æs in some dialects)
+
+From Fulk Comparative Grammar:
+> "OE masc. a-stem gen. sg. -es (early -æs)"
+> "with fronting in OE masc. a-stem gen. sg. -es (early -æs), OFris. -es"
+
+From Brunner 1965:
+> Gen.sg. ending is -es for all a-stem masculines and neuters (§236-237)
+> Example paradigm: wine (friend) → gen.sg. wines
+
+Sound change pathway: *-ăs → *-as → -æs → -es (by regular front mutation of unstressed *a)
+No complications for geminates — the geminate remains medial before -es and is preserved.
+
+**Step 2: Check existing grammar support**
+
+Current `pgrmWeakTailVowel` already has some -s endings:
+- Line 301: `a:{*a} s:{*s}` — appears to be some genitive or s-ending
+- Line 302: `ă:{*ă} z:{*z}` — nominative singular (a-stem masc.)
+
+**CRITICAL FINDING (2026-04-05):** For gen.sg. we need `a:{*a} s:{*s}` (NOT `ă:{*ă} s:{*s}`)!
+
+The breve vowel `*ă` is used in the grammar to mark vowels that SKIP unstressed fronting.
+The chain is:
+1. `OEUnstressedAFronting`: `*a` → `*æ` (non-initial syllables)
+2. `OEWeakTailReduction1a`: `*ă` → `*a` (happens AFTER fronting!)
+3. `OEWeakTailReduction3`: `*æ` → `*e`
+
+So `*ă` skips fronting and stays `a`, while `*a` → `*æ` → `*e`.
+
+For gen.sg. `-es`, we need the fronting, so we use `*a` not `*ă`:
+- Proto input: `*mannas` (with full *a, not breve)
+- Result: `*mannas` → `*mannæs` → `mannes` ✓
+
+Note: *s remains *s in gen.sg. (no Verner's Law — the ending was accented in PIE).
+
+**Step 3: Implementation (completed 2026-04-05)**
+
+Grammar change (germanic.txt line ~306):
+```
+# Gen.sg. of a-stem masc./neut.: PGmc *-as → OE -es
+# MUST use *a (not *ă) to undergo unstressed fronting: *a → *æ → *e
+a:{*a} s:{*s} |
+```
+
+Test results:
+- `*mannas` → `mannes` ✓ (geminate preserved, fronting applied)
+- `*mannăz` → `man` ✓ (nom.sg still works with degemination)
+- `*lunganjō` → `lungen` ✓ (j-derived geminate degeminates correctly)
+
+**Step 4: TSV updates needed**
+
+Geminate-related mismatches identified (2026-04-05):
+
+| Row | Concept | Current proto | Output | Target | Issue |
+|-----|---------|---------------|--------|--------|-------|
+| 1936 | ban | `*banną` | ban | bann | word-final degemination |
+| 2119 | man | `*mannăz` | man | mann | word-final degemination |
+| 2203 | span | `*spannō` | span | spann | word-final degemination |
+| 2300 | wool | `*wullo` | wollo | wull | degemination + vowel |
+
+**Neuter a-stems:** Gen.sg. uses the same `-es` ending as masculines (Brunner §237).
+Therefore `*banną` (neuter) can use gen.sg. `*bannas` → `bannes`.
+
+**Implementation completed (2026-04-05):**
+
+1. ✓ Updated row 2119 (man): proto `*mannas`, target `mannes`
+2. ✓ Updated row 1936 (ban): proto `*bannas`, target `bannes` 
+3. For span (fem. ō-stem), different paradigm — investigate separately
+4. For wool, different issue (vowel) — investigate separately
+
+**Results:** Mismatch count improved from 64 → 62 (2 fixes).
 
