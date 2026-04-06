@@ -228,7 +228,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German				dew	*dawwō	53
 896	d ɪ l ə	*deljăz	d ɪ l ( - ə - )	dɪlə	dille	246	Dutch				dill	*deljăz	54
 895	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	dill	246	English				dill	*deljăz	54
-1990	d i l e	*deljăz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			dill	*deliz	54
+1990	d i l e	*deliz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	I-stem *deliz per Kroonen p.93: "evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)". OE generalized i-stem; OS/OHG generalized ja-stem. See DEV_NOTES §dile.			dill	*deliz	54
 894	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	Dill	246	German	BOR		Low German	dill	*deljăz	54
 1584	d uː n	*dōną	d uː - n ( - - )	duːn	doen	434	Dutch				do	*dōną	55
 1583	d uː	*dōną	d uː - - ( - - )	duː	do	434	English				do	*dōną	55
@@ -606,7 +606,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 769	k n ɛ x t	*knixtăz	k n ɛ x - t	knɛxt	Knecht	211	German				knight	*knixtăz	139
 539	k n oː p	*knuppăz	k n oː p ( - - )	knoːp	knoop	147	Dutch				knob	*knuppăz	140
 538	n ɔ b	*knuppăz	- n ɔ b ( - - )	nɔb	knob	147	English				knob	*knuppăz	140
-2087	c n o b b a	*knuppăz	- n ɔ p ( - - )	nɔppa	cnobba	147	Old_English	Unattested Old English cognate; likely *cnobba based on ME knob (Chaucer) and Frisian knobbe.			knob	*knuppăz	140
+2087	c n o b b a	*knubbô	- n ɔ p ( - - )	nɔppa	cnobba	147	Old_English	Unattested Old English cognate; likely *cnobba based on ME knob (Chaucer) and Frisian knobbe.			knob	*knubbô	140
 537	k n ɔ pf	*knuppăz	k n ɔ pf ( - - )	knɔp͡f	Knopf	147	German				knob	*knuppăz	140
 405	l aː d ə	*laθōjăną	l aː d ( - ) - ə - ( - - )	laːdə	laden	111	Dutch				lade	*laθōjăną	141
 404	l eɪ d	*laθōjăną	l eɪ d ( - ) - - - ( - - )	leɪd	lade	111	English				lade	*laθōjăną	141
@@ -618,7 +618,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1353	l a n t	*landą	l a n d ( - - )	lant	Land	371	German				land	*landą	142
 1554	l ɑ p	*labbăz	l ɑ p ( - - )	lɑp	lap	426	Dutch				lap	*labbăz	143
 1553	l æ p	*labbăz	l æ p ( - - )	læp	lap	426	English				lap	*labbăz	143
-2090	l æ p p a	*labbăz	l æ p ( - - )	læp	læppa	426	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lap	*labbăz	143
+2090	l a p p a	*lappô	l a p p ( - )	lap	lappa	426	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			lap	*lappô	143
 1552	l a p ə n	*labbăz	l a p ( ə n )	lapən	Lappen	426	German				lap	*labbăz	143
 535	l ɑː s t	*laistijăną	l ɑː s t - - - ( - - )	lɑːst	last	146	English				last	*laistijăną	345
 2091	l ǣ s t a n	*laistijăną	l ɑː s t - - - ( - - )	lɑːst	lǣstan	146	Old_English	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			last	*laistijăną	345
