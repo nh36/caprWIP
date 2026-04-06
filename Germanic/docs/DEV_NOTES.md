@@ -13873,7 +13873,13 @@ This parallels:
 **Test results:**
 - `echo "spannăi" | flookup -i old_english.bin` → `spanne` ✓
 - Stressed *ai forms still work: `*bainą → bān`, `*dailiz → dǣl` ✓
-- Mismatch count: 62 → 55 (7 improvement)
+- Mismatch count: 56 → 55 (1 fix for span)
+
+**CORRECTION (2026-04-06):** Earlier claimed "62 → 55 (7 improvement)" was erroneous.
+The 62 count came from testing with a stale `backend/old_english.bin` that hadn't
+been updated from previous commits. The actual change from this commit is 56 → 55.
+The wool and lungen changes visible in the diff are from TSV updates in earlier
+commits that only became visible when the backend bin was refreshed.
 
 **Key insight:** Using separate symbols for stressed (*ai) vs. unstressed (*ăi) 
 diphthongs allows the FST to apply different monophthongization rules at the 
