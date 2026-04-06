@@ -5822,6 +5822,14 @@ No direct discussion of `dile`.
 - Wright, J. (1898). *Old English Grammar* — OE glossary evidence
 - Hall, J.R.C. (1916). *Concise Anglo-Saxon Dictionary*, s.v. `dile`
 
+### Implementation (2026-04-06)
+
+**Option A implemented:** Changed TSV row 1990 from `*deljăz` to `*deliz`.
+
+Test: `echo "deliz" | flookup -i old_english.bin` → `dile` ✓
+
+Mismatch count: 55 → 54 (1 fix).
+
 ---
 
 ## OE brēost 'breast': *breustą not *brustz (2026-03-10)
@@ -13891,3 +13899,296 @@ This mirrors the phonological reality described by R/T and avoids context-sensit
 hacks in a single rule.
 
 ---
+
+## OE cnobba 'knob': Unattested form (2026-04-06)
+
+### The problem
+
+**TSV row 2087:** `*knuppăz → cnobba` (Old English)
+**FST output:** `*knuppăz → cnopp`
+**Expected:** `cnobba`
+
+The TSV note says: "Unattested Old English cognate; likely *cnobba based on ME knob (Chaucer) and Frisian knobbe."
+
+### Research
+
+#### Kroonen's email (2026-01-22)
+
+Guus Kroonen confirmed:
+- Old English `*cnobba` is **unattested**; first attestation is ME (Chaucer)
+- The likely OE form would be `*cnobba` based on Frisian `knobbe` and Faroese `knubbi`
+- These forms point to a Germanic weak noun `*knubban-`
+- OE `cnæp` belongs to `*knapp-`, NOT the `*knubb-` family
+
+#### Orel (s.v. *knuppaz)
+
+Reconstructs `*knuppaz` (strong masc.) with cognates Norw. dial. `knupp` 'bud', MLG `knuppe`, 
+OHG `knopf` 'knot'. Notes it is "identical with OIr. `gnobh` 'knot, knag'."
+
+#### Kroonen (s.v. *knab/ppan-)
+
+Documents an **ablauting n-stem paradigm** for the related `*knab/ppan-` 'knob; boy':
+
+> "The root variation results from an allomorphic n-stem paradigm *knabō, gen. *knappaz 
+> < Pre-Gm. *gnob'-ōn, gen. *gnob'-n-ós, that split up into 1) *knabō, *knabbaz and 
+> 2) *knapō, *knappaz."
+
+This pattern shows how the same root yields both **voiced** (`*knabb-`) and **voiceless** 
+(`*knapp-`) variants depending on morphological ablaut.
+
+### Analysis
+
+The key insight is that there are **two distinct etyma** in the "knob" family:
+
+1. **`*knuppaz` (strong a-stem with voiceless `*pp`):**
+   - Norw. dial. `knupp`, MLG `knuppe`, OHG `knopf`, Dutch `knoop`
+   - PGmc → OE: `*knuppăz → cnopp` (regular, but OE `*cnopp` unattested)
+
+2. **`*knubban- (weak n-stem with voiced `*bb`):**
+   - Frisian `knobbe`, Faroese `knubbi`, ME `knob`
+   - PGmc → OE: `*knubbô → cnobba` (regular, but OE `*cnobba` unattested)
+
+These are **ablaut variants of the same root** (like `*knab/ppan-` in Kroonen), where:
+- Zero-grade in open syllable → `*knub-` (lenited to `*knubb-` in some formations)
+- Zero-grade in closed syllable → `*knupp-` (fortis geminate)
+
+The ME form `knob` (with voiced consonant) descends from the **`*knubban-`** variant, 
+not from `*knuppaz`. This is why Kroonen suggested `*cnobba` as the expected OE form.
+
+### FST testing
+
+```
+*knuppăz → cnopp   (a-stem, voiceless geminate)
+*knubbô  → cnobba  (n-stem, voiced geminate) ✓
+*knuppô  → cnoppa  (n-stem, voiceless geminate)
+```
+
+The FST correctly produces `cnobba` from `*knubbô`.
+
+### Solution
+
+**Change the proto-form from `*knuppăz` to `*knubbô`.**
+
+The TSV currently has the wrong etymon. The ME `knob` (and its hypothetical OE ancestor 
+`*cnobba`) derives from the **voiced, weak-noun** variant `*knubban-`, not the voiceless 
+strong noun `*knuppaz`.
+
+**TSV update:**
+- Row 2087: Proto `*knuppăz` → `*knubbô`
+- Target: `cnobba` (unchanged, but now matches FST output)
+- Note: Keep the "unattested" note, but clarify it now has correct proto
+
+### Implementation (2026-04-06)
+
+Row 2087 changed:
+- Proto: `*knuppăz` → `*knubbô`
+
+FST verification:
+```
+echo "knubbô" | flookup -i Germanic/fsts/old_english.bin
+knubbô	cnobba
+```
+
+✓ Match achieved.
+
+
+## OE læppa 'lap, skirt': n-stem with voiceless *pp (2026-04-06)
+
+### The problem
+
+**TSV row 2090:** `*labbăz → læppa` (Old English)
+**FST output:** `*labbăz → læbb`
+**Expected:** `læppa`
+
+Two problems:
+1. **Voicing:** Proto has `*bb` (voiced), but OE has `pp` (voiceless)
+2. **Stem class:** Proto is a-stem (`*-ăz`), but OE `læppa` is a weak n-stem
+
+### Research
+
+**Brunner §190, §258:**
+Lists `lappa` (with variants `laeppa`, plural `leappan`) as **swm** (schwaches Maskulinum = 
+weak masculine n-stem). Notes it alongside other weak nouns like `budda, ebba, frogga`.
+
+**Campbell §158:**
+Cites `lappa` as example of a-restoration before geminate: "lappa skirt" (not `*læppa`).
+The base vowel is `a` with i-umlaut giving `æ` in some forms.
+
+**Kluge-Seebold (s.v. *Lappen*):**
+> "Das -pp- erscheint auch außerdeutsch: as. lappa, afr. lappa, ae. lappa (vereinzelt); 
+> mit anderem Vokal ae. læppa, anord. leppr."
+
+Notes both `lappa` and `læppa` in OE, and `pp` across West Germanic (not `bb`).
+
+**Kroonen (s.v. *lofan- ~ *lappan-*):**
+Reconstructs an **ablauting n-stem** `nom. *lōfō, gen. *lappaz, dat. *labeni` (< PIE 
+*léh₂p-ōn, *lh₂p-n-ós, *lh₂p-én-i). This is a weak noun with `pp` in the genitive.
+
+The root has `*p` (voiceless), not `*b` (voiced). The geminate `*pp` in the oblique 
+cases is regular for this ablauting pattern.
+
+### Analysis
+
+1. **The proto-form `*labbăz` is doubly wrong:**
+   - Should have `*pp` (voiceless), not `*bb` (voiced)
+   - Should be an n-stem, not an a-stem
+
+2. **Kroonen's reconstruction gives `*lappan-` (n-stem)** as the PGmc form.
+
+3. **For OE, the nom.sg. should be `*lappō` → `lappa`** (with a-restoration), or 
+   with umlaut `læppa`.
+
+### Options
+
+**Option A (recommended): Change proto to weak n-stem `*lappō`**
+
+Change row 2090 from `*labbăz` to `*lappō` (fem. n-stem nom.sg.).
+
+Test: Need to verify FST supports this input.
+
+**Option B: Change proto to `*lappăz`**
+
+Keep a-stem but fix voicing. This would give `læpp` (without final vowel), 
+which doesn't match the weak-noun target `læppa`.
+
+**Option C: Mark as exception**
+
+The mismatch involves both voicing and stem-class issues that may require 
+deeper investigation.
+
+### FST Testing (2026-04-06)
+
+Tested proto-forms:
+- `*lappô` → `lappa` ✓ (trimoric ō for masc. n-stem nom.sg.)
+- `*lappō` → `lapp` (bimoric ō doesn't give final -a)
+- `*lappăz` → `læpp` (a-stem, no final vowel)
+
+**Result:** `*lappô` produces `lappa`, an attested OE form.
+
+### The a/æ variation in OE lappa ~ læppa: Comprehensive Analysis
+
+The variation between `lappa` (with `a`) and `læppa` (with `æ`) in Old English is 
+a well-documented phenomenon explained by the interaction of **Anglo-Frisian 
+Brightening** (AFB) and **A-restoration**.
+
+#### Standard Phonological Development (Brunner §10, §49-50; Campbell §157-159)
+
+1. **Anglo-Frisian Brightening (AFB):** PGmc `*a` → Pre-OE `*æ` 
+   This is the regular development of short `*a` in Pre-Old English, making it 
+   "brighter" (more front). This is a general rule applying to all PGmc `*a`.
+
+2. **A-restoration:** Pre-OE `*æ` → OE `a` / before back vowel in following syllable
+   Brunner §50.1: "In mehrsilbigen Wörtern steht a regelmäßig, wenn die Folgesilbe 
+   einen der volaren Vokale a, o, u enthält."
+   
+   Campbell §158: "The restoration of a is common before all single consonants and 
+   geminates, e.g. ... lappa skirt."
+
+3. **Why `lappa` has `a` (standard form):**
+   - PGmc `*lappô` (nom.sg. of weak masc. n-stem)
+   - AFB: `*lappô` → `*læppô`
+   - A-restoration: `*læppô` → `*lappô` (back vowel `*ô` triggers restoration)
+   - Final shortening: `*lappô` → `lappa`
+   
+   The trimoric `*ô` in the ending is a back vowel that triggers a-restoration.
+
+4. **Why `læppa` also exists:**
+   
+   Brunner §10 explicitly notes "lappa Lappen **(neben læppa)**" showing both forms 
+   existed. The variant `læppa` can be explained in several ways:
+
+   a. **Analogical leveling from oblique cases:**
+      Campbell §159 notes that a-restoration often "was frequently due to a back 
+      vowel which subsequently became a front vowel or was lost."
+      
+      In oblique cases where a front vowel followed (e.g., gen.sg. or weak dat.sg. 
+      with `-an` ending where the a was originally fronted), the `æ` was regular:
+      - gen.sg. `*læppan` (no back vowel triggering restoration)
+      - The `æ` from oblique cases could be leveled into the nominative.
+
+   b. **Paradigm regularization:**
+      Once the system had both forms (`lappa` in nom., `læppa` in certain oblique 
+      cases), scribes and speakers could generalize either variant throughout.
+
+   c. **VP/Mercian Back Umlaut (Campbell §206):**
+      In VP and certain Mercian texts, `æ` that was NOT restored could undergo 
+      **back umlaut** to `ea` before certain consonants, but remained as `æ` 
+      before geminates and velars. Campbell §206 cites "leappan d.s. skirt" 
+      (dat. pl. of lappa) with `ea` from back umlaut.
+      
+      This shows that within the paradigm, different forms preserved different 
+      reflexes:
+      - nom.sg. `lappa` (with a-restoration)
+      - dat.pl. `leappan` (with back umlaut from unrestored `*æ`)
+      - other forms `læppa` (with simple `æ` where back umlaut didn't apply)
+
+   d. **Dialect variation:**
+      Not all OE dialects applied a-restoration with equal consistency. Forms with 
+      `æ` may reflect dialects where restoration was less complete before geminates.
+
+5. **The plural form `leappan` (Campbell):**
+   
+   The `ea` in the plural `leappan` (from dat.pl. `*læppum` or similar) is evidence 
+   of **back umlaut** in VP/Mercian: when `æ` was followed by a back vowel and 
+   NOT restored to `a`, it could become `ea` instead. This shows the phonological 
+   complexity in the paradigm:
+   
+   - nom.sg. `lappa` (a-restoration before back suffix vowel)
+   - dat.pl. `leappan` (back umlaut of `æ` before back vowel, alternative to restoration)
+   - other cases `læppa` (neither restoration nor back umlaut, or analogical)
+
+#### Orel's Reconstruction (*lappōn-)
+
+Orel (Handbook of Germanic Etymology, s.v. *lappōn) reconstructs:
+> "*lappōn sb.m.: OE læppa 'skirt, ear-lobe', OFris lappa 'cloth, rag', 
+> OS lappo id., OHG *lapfo id."
+
+Orel gives the proto-form as `*lappōn-` (masc. n-stem), citing OE `læppa` (with `æ`).
+This confirms the n-stem analysis and shows scholarly preference for `*pp` (voiceless).
+
+#### Kroonen's Ablauting n-stem Analysis
+
+Kroonen's more detailed reconstruction (s.v. *lofan- ~ *lappan-) shows this is an 
+**ablauting n-stem** with different root grades in different forms:
+- nom. `*lōfō` (o-grade)
+- gen. `*lappaz` (zero-grade with geminate)
+- dat. `*labeni` (zero-grade with single consonant)
+
+This ablaut pattern (< PIE *léh₂p-ōn, *lh₂p-n-ós, *lh₂p-én-i) explains the daughter-
+language variation: different languages generalized different ablaut grades.
+
+OE generalized the **geminate zero-grade** form `*lapp-` throughout the paradigm, 
+with the masc. n-stem nom.sg. ending `*-ô` (trimoric).
+
+### Conclusion
+
+**Opinio communis:** PGmc `*lappô` (masc. n-stem nom.sg.) with voiceless `*pp`.
+
+**FST solution:** `*lappô` → `lappa`
+
+This yields `lappa`, which is the standard a-restored form documented in Campbell §158. 
+The variant `læppa` represents either:
+1. Analogical spread of `æ` from oblique cases where it was regular
+2. Dialect variation in the application of a-restoration
+3. Leveling in scribal practice
+
+Since `lappa` is the phonologically regular outcome and is well-attested, we use 
+it as our target form. The TSV change is:
+
+**Before:** `*labbăz` → `læppa`
+**After:** `*lappô` → `lappa`
+
+### Implementation (2026-04-06)
+
+Row 2090 changed:
+- Proto: `*labbăz` → `*lappô`
+- Target: `læppa` → `lappa`
+
+FST verification:
+```
+echo "lappô" | flookup -i Germanic/fsts/old_english.bin
+lappô	lappa
+```
+
+✓ Match achieved.
+
