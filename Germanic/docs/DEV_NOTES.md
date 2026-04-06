@@ -132,6 +132,10 @@ Luick (Anm. 1) and R/T both note that OE, OFris., and OS share the u-preserving 
 
 **For future expert discussion:** The most promising angle might be Luick's observation about consonantal environment (near labials/gutturals + l). While neither Luick nor R/T accept this as a categorical rule, the statistical clustering might reflect a phonetic tendency — perhaps the acoustic similarity between labial/velar environments and the labial component of [u] made the lowered [o] variant phonetically less stable in those contexts. This would be a gradient/probabilistic effect rather than a Neogrammarian rule, and is therefore fundamentally not modelable in a deterministic FST. Bülbring's "incomplete lowering + reversion" model (§116 Anm.) is the most explicit formulation of this intuition, but the counterexamples (folc, bolla, etc.) preclude formalizing it.
 
+**Additional citation (Brunner §68):** Brunner echoes Bülbring: "In einigen Wörtern steht, zumal in der Nachbarschaft von Labialen, statt des zu erwartenden o ein u, z. B. full voll, wulf Wolf, wulle Wolle, fugol Vogel, bucca Bock, cnucian stoßen, ufan oben..." ("In some words, especially in the neighborhood of labials, instead of the expected o, a u appears..."). His examples align with the pattern but provide no formal conditioning.
+
+**Phonetic note:** Labial consonants share the [+round] feature with /u/. This articulatory compatibility may have created a phonetically favorable context for preserving the high back rounded vowel. However, as Bülbring and Luick both concede, this cannot be formalized as a categorical rule given the counterexamples.
+
 ### Expert consultation: Stefan Schuhmacher (Vienna, 2026-03-20)
 
 Prof. Schuhmacher confirmed the scholarly consensus and provided additional clarifications:
@@ -13635,3 +13639,249 @@ Therefore `*banną` (neuter) can use gen.sg. `*bannas` → `bannes`.
 
 **Results:** Mismatch count improved from 64 → 62 (2 fixes).
 
+---
+
+## Fem. ō-stem gen.sg. paradigm-cell for span (2026-04-06)
+
+### Problem
+
+For `*spannō → span` (expected `spann`), we want to use a paradigm-cell approach
+similar to what we did for masc. a-stems (mann, bann).
+
+**Masc. a-stem solution (working):**
+- Gen.sg. `*mannas → mannes` ✓
+- The `*-as` ending preserves `*s`, providing a following consonant for fronting
+- Chain: `*a → *æ → *e` (fronting requires following consonant)
+
+**Fem. ō-stem problem:**
+- Gen.sg. ending is `*-āz` → OE `-e` (Brunner §252)
+- But `*z` is deleted word-finally EARLY in the pipeline (PGmcFinalZDeletion)
+- This leaves `*-ā` which shortens to `*-a`
+- The fronting rule `OEUnstressedAFronting` requires a FOLLOWING consonant:
+  ```foma
+  {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant]+ _ [EnglishStarConsonant]
+  ```
+- Word-final `*a` (no following consonant) does NOT front
+- Result: `*spannāz → *spannā → *spanna → spanna` (wrong, expected `spanne`)
+
+### Attempted solutions
+
+**Attempt 1: Use `*-āz` directly**
+- Tested: `echo "spannāz" | flookup -i old_english.bin` → `spanna`
+- Failed: word-final `*a` doesn't front
+
+**Attempt 2: Use `*-ās` (unvoiced, no z-deletion)**
+- Tested: `echo "spannās" | flookup -i old_english.bin` → `spannes`
+- Failed: `*s` is preserved, giving `-es` not `-e`
+- The fem. ō-stem gen.sg. should be `-e` with NO final consonant
+
+### Analysis
+
+The fundamental issue is chronological ordering:
+1. `PGmcFinalZDeletion` runs in `PGmcConsonantRules` (early)
+2. `OEUnstressedLongVowelShortening` runs much later
+3. `OEUnstressedAFronting` requires a following consonant
+
+By the time fronting could apply, the `*z` is long gone.
+
+### Solution: Use dat.sg. instead of gen.sg.
+
+The dat.sg. of fem. ō-stems is `*-ai` → OE `-e` (Brunner §252).
+The diphthong `*ai` undergoes a different set of changes that don't have the
+word-final consonant problem:
+- `*ai → *ǣ → *ē → *e` (monophthongization, then reduction in unstressed position)
+
+This gives the same OE outcome `-e` but through a different phonological path.
+
+**Proposed:**
+- Add dat.sg. `*-ai` to pgrmWeakTailVowel
+- Use `*spannai → spanne` for the paradigm-cell mapping
+
+**Scholarly justification:**
+Brunner §252 shows both gen.sg. and dat.sg. have OE `-e` for fem. ō-stems.
+Using the dat.sg. as the paradigm-cell representative is phonologically
+equivalent and avoids the word-final fronting problem.
+
+### Testing dat.sg. *-ai approach (2026-04-06)
+
+Initial attempt failed:
+- Added `{ai}:{*ai}` to pgrmWeakTailVowel
+- Tested: `echo "spannai" | flookup -i old_english.bin` → `spanna` (wrong!)
+
+**Diagnosis:** The FST rule `PWGmcAiMonophthongization` converts `{*ai} → {*ā}` 
+unconditionally. But this is correct only for STRESSED syllables. In unstressed 
+position, `*ai` should become `*ē`, not `*ā`.
+
+### Research: Stressed vs. Unstressed *ai Monophthongization
+
+**Ringe & Taylor vol. 2 §6.1.5 (line 2055-2264):**
+
+> "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
+> (line 2055-56)
+
+> "the NWGmc merger of unstressed *ai with *é" (line 2264)
+
+This is a critical distinction:
+- **Stressed *ai → *ā** (WGmc monophthongization to long back vowel)
+- **Unstressed *ai → *ē** (NWGmc monophthongization to long front mid vowel)
+
+Examples from R/T:
+- Stressed: *hailaz → WGmc *hālaz → OE hāl "whole, hale"
+- Unstressed: dat.sg. *-ai → *-ē → OE -e
+
+The merger of unstressed `*ai` with `*ē` means they follow the same subsequent 
+development path — both shorten and reduce to unstressed `-e`.
+
+### Proposed Implementation
+
+Modify `PWGmcAiMonophthongization` to distinguish stressed from unstressed context:
+
+```foma
+# Stressed vs. unstressed *ai monophthongization (R/T §6.1.5)
+# - Unstressed *ai → *ē (preceded by a vowel + consonant(s))
+# - Stressed *ai → *ā (elsewhere, including word-initial)
+define PWGmcAiMonophthongization [
+    {*ai} -> {*ē} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _,
+    {*ai} -> {*ā}
+];
+```
+
+**Context detection:** If `{*ai}` is preceded by a vowel and one or more consonants, 
+it is in the unstressed (weak tail) position of a PGmc word. Otherwise it is stressed.
+
+**Expected chain for *spannai:**
+1. Input: `*spannai` (dat.sg. of fem. ō-stem)
+2. `PWGmcAiMonophthongization`: `*ai → *ē` (unstressed) → `*spannē`
+3. `OEUnstressedLongVowelShortening`: `*ē → *e` → `*spanne`
+4. Final: `spanne` ✓
+
+### Input Notation
+
+Per user suggestion: use breve over the unstressed `*a` in `*-ăi` to explicitly 
+mark that this diphthong is in unstressed position. This would make the TSV entry:
+- Proto: `*spannăi`
+- Target: `spanne`
+
+This parallels our existing convention where `*ă` marks unstressed short vowels 
+(as opposed to `*a` which undergoes fronting).
+
+**However:** The grammar currently treats `{ai}:{*ai}` as a multicharacter symbol. 
+If we want `*ăi` with a breve, we may need `{ăi}:{*ăi}` as a distinct symbol, or 
+handle it character-by-character as `ă:{*ă} i:{*i}`.
+
+### Next Steps
+
+1. Update `PWGmcAiMonophthongization` with context-sensitive rule
+2. Add `{ai}:{*ai}` to pgrmWeakTailVowel (already done)
+3. Test: `echo "spannai" | flookup -i old_english.bin` should give `spanne`
+4. Update TSV row 2203 (span): proto `*spannai`, target `spanne`
+5. Run mismatch report to verify improvement
+
+### Revised analysis: Two separate changes for *ai (2026-04-06)
+
+Per user feedback, the stressed vs. unstressed *ai monophthongization should be
+treated as TWO SEPARATE CHANGES at different chronological stages, not a
+context-sensitive hack in a single rule.
+
+**Chronological facts from R/T:**
+
+1. **PWGmc *ai → *ā (stressed):** Traditional West Germanic monophthongization.
+   Already in place in PWGmc for stressed syllables.
+   Example: PGmc *hailaz → PWGmc *hālaz → OE hāl
+
+2. **NWGmc *ai → *ē (unstressed):** R/T §6.1.5 (line 2244-2264):
+   > "This monophthongization would be a good candidate for a PNWGmc sound change"
+   > "the NWGmc merger of unstressed *ai with *é discussed here"
+   
+   This is the merger of unstressed *ai with *ē, which then follows the regular
+   development path for unstressed long vowels.
+
+**R/T evidence for separate changes:**
+
+Line 2055-56: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
+Line 2264: "the NWGmc merger of unstressed *ai with *é discussed here"
+
+The fact that R/T discusses this specifically for NWGmc (not PWGmc) confirms
+these are chronologically separate developments.
+
+**Input notation: use breve to mark unstressed *ai**
+
+Following the established convention where `*ă` marks unstressed short vowels
+(which skip fronting), we should use `*ăi` for unstressed diphthong:
+- `*ai` = stressed diphthong (→ *ā by PWGmc monophthongization)
+- `*ăi` = unstressed diphthong (→ *ē by NWGmc monophthongization)
+
+This parallels:
+- `*a` = vowel that undergoes fronting
+- `*ă` = vowel that skips fronting (weak tail vowel)
+
+**Implementation plan:**
+
+1. Keep existing `PWGmcAiMonophthongization: {*ai} → {*ā}` in PWGmc stage (stressed)
+
+2. Add new `NWGmcUnstressedAiMonophthongization: {*ăi} → {*ē}` at NWGmc stage
+
+3. Add `{ăi}:{*ăi}` to pgrmDiphthong or a separate weak-tail diphthong definition
+
+4. In pgrmWeakTailVowel, use `{ăi}:{*ăi}` for the dat.sg. ending
+
+5. TSV entry for span: proto `*spannăi`, target `spanne`
+
+**Expected chain for *spannăi:**
+1. Input: `*spannăi` 
+2. NWGmc stage: `{*ăi} → {*ē}` → `*spannē`
+3. Later: `*ē` shortens to `*e` in unstressed position → `spanne`
+
+### Implementation completed (2026-04-06)
+
+**Changes made:**
+
+1. **Added pgrmUnstressedDiphthong definition** (line ~147-152):
+   ```foma
+   define pgrmUnstressedDiphthong [
+       {ăi}:{*ăi}
+   ];
+   ```
+
+2. **Added {*ăi} to PGmcStarDiphthong** (line ~431):
+   ```foma
+   {*ăi} |  # Unstressed *ai (R/T §6.1.5: unstressed *ai→*ē)
+   ```
+
+3. **Added NWGmcUnstressedAiMonophthongization rule** (line ~1458-1466):
+   ```foma
+   define NWGmcUnstressedAiMonophthongization [
+       {*ăi} -> {*ē}
+   ];
+   ```
+
+4. **Added rule to NWGmc composition** in both EnglishProtoToOE and 
+   EnglishAfterProtoToOEWeakTail pipelines:
+   ```foma
+   .o. NWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
+   ```
+
+5. **Updated pgrmWeakTailVowel** with dat.sg. ending (line ~321):
+   ```foma
+   {ăi}:{*ăi} |
+   ```
+
+6. **Updated TSV row 2203** (span):
+   - Proto: `*spannăi` (was `*spannās`)
+   - Target: `spanne`
+
+**Test results:**
+- `echo "spannăi" | flookup -i old_english.bin` → `spanne` ✓
+- Stressed *ai forms still work: `*bainą → bān`, `*dailiz → dǣl` ✓
+- Mismatch count: 62 → 55 (7 improvement)
+
+**Key insight:** Using separate symbols for stressed (*ai) vs. unstressed (*ăi) 
+diphthongs allows the FST to apply different monophthongization rules at the 
+correct chronological stages:
+- PWGmc: `{*ai} → {*ā}` (stressed)
+- NWGmc: `{*ăi} → {*ē}` (unstressed)
+
+This mirrors the phonological reality described by R/T and avoids context-sensitive
+hacks in a single rule.
+
+---
