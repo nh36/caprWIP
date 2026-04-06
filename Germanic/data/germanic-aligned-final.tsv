@@ -13,7 +13,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 312	b a l	*balluz	b a l ( - - )	bal	Ball	87	German		C V C		ball	*balluz	3
 521	b ɑ n	*banną	b ɑ n ( - - )	bɑn	ban	142	Dutch				ban	*banną	4
 520	b æ n	*banną	b æ n ( - - )	bæn	ban	142	English				ban	*banną	4
-1936	b a n n	*banną	b æ n ( - - )	bæn	bann	142	Old_English	TSV: bannan (verb inf.) → bann (noun, masc. a-stem nom.sg.); *banną is neut./masc. a-stem			ban	*banną	4
+1936	b a n n e s	*bannas	b æ n ( - - ) e s	bænes	bannes	142	Old_English	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Original: *banną → bann (nom.sg.). Note: a-stem neuter, gen.sg. same as masc.			ban	*bannas	4
 519	b a n	*banną	b a n ( - - )	ban	Bann	142	German		C V C		ban	*banną	4
 221	b ɛ r x	*bergą	b ɛ r x ( - - )	bɛrx	berg	61	Dutch				barrow	*bergą	5
 220	b æ r əʊ	*bergą	b æ r əʊ ( - - )	bærəʊ	barrow	61	English				barrow	*bergą	5
@@ -710,7 +710,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1824	l au s	*lūsz	l au s ( - )	laus	Laus	500	German				louse	*lūsz	162
 892	l ɔ ŋ	*lungō	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch				lung	*lungō	163
 891	l ʌ ŋ	*lungō	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English				lung	*lungō	163
-2114	l u n g e n	*lungō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	TSV fix: proto was *lungwą (spurious -wą); changed to *lungō (neut. n-stem, Kroonen *lungōn- p.367). OE lungen specifically < *lungunjo- (Kroonen), a derivative of *lungō.			lung	*lungō	163
+2114	l u n g e n	*lunganjō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). Previous TSV had *lungō (simpler n-stem per Kroonen p.367), but OE lungen specifically reflects the *-anjō derivative. Grammar extended to accept *-anjō suffix (2026-04-05).			lung	*lungō	163
 890	l ʊ ŋ ə	*lungō	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German				lung	*lungō	163
 1329	l ʉ s t	*lustuz	l ʉ s t ( - - )	lʉst	lust	364	Dutch				lust	*lustuz	164
 1328	l ʌ s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	English				lust	*lustuz	164
@@ -730,7 +730,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 987	m a l ts	*maltăz	m a l ts ( - - )	malt͡s	Malz	271	German				malt	*maltăz	167
 1928	m ɑ n	*mannăz	m ɑ ( - - ) n	mɑn	man	529	Dutch				man	*mannăz	168
 1927	m æ n	*mannăz	m æ ( - - ) n	mæn	man	529	English				man	*mannăz	168
-2119	m a n n	*mannăz	m æ ( - - ) n	mɒnː	mann	529	Old_English	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			man	*mannăz	168
+2119	m a n n e s	*mannas	m æ ( - - ) n e s	mɒnːes	mannes	529	Old_English	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate orthographically. Original: *mannăz → mann (nom.sg.).			man	*mannas	168
 1926	m a n	*mannăz	m a ( - - ) n	man	Mann	529	German				man	*mannăz	168
 44	m ɑ r k	*markō	m ɑ r k -	mɑrk	mark	12	Dutch				march	*markō	169
 43	m ɑː ʧ	*markō	m ɑː - ʧ -	mɑːʧ	march	12	English				march	*markō	169

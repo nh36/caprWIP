@@ -300,6 +300,11 @@ define pgrmWeakTailVowel [
     a:{*a} r:{*r} a:{*a} s:{*s} |
     a:{*a} s:{*s} |
     ă:{*ă} z:{*z} |
+    # Gen.sg. of a-stem masc./neut.: PGmc *-as → OE -es
+    # Used for geminate-stem nouns where medial geminate is preserved
+    # MUST use *a (not *ă) to undergo unstressed fronting: *a → *æ → *e
+    # e.g. *mannas → mannes (geminate medial before -es)
+    a:{*a} s:{*s} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
     e:{*e} n:{*n} ă:{*ă} z:{*z} |
     e:{*e} r:{*r} |
@@ -338,6 +343,9 @@ define pgrmWeakTailVowel [
     ē:{*ē} r:{*r} |
     ī:{*ī} n:{*n} |
     ō:{*ō} |
+    # *-anjō derivational suffix: forms feminine nouns (body parts, abstracts)
+    # e.g. *lunganjō 'lung' → OE lungen (i-umlaut of *a → *e, j-loss)
+    a:{*a} n:{*n} j:{*j} ō:{*ō} |
     ō:{*ō} r:{*r} |
     ô:{*ô} |
     ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
@@ -1805,6 +1813,14 @@ define OEJLossAfterHeavy [
     {*j} -> 0 || EnglishStarShortVowel [EnglishStarConsonant | EnglishPalatalConsonant] [EnglishStarConsonantNoR | EnglishPalatalConsonant] _
 ];
 
+# Final geminate simplification after j-loss (Campbell §457; Erdmann 1972).
+# WGmc gemination: *nj → *nnj. After j-loss: *nn word-finally.
+# OE/OFris simplify final geminates; OHG preserves them.
+# e.g. *lunganjō → *lungannj- → *lungenn → lungen (not ×lungenn)
+define OEFinalGeminateSimplification [
+    {*n} -> 0 || {*n} _ .#.
+];
+
 # Intervocalic *j vocalization: *j → *i between vowels.
 # In OE class II weak verbs (*-ōjan-), *j surfaces as part of the -ian suffix.
 define OEIntervocalicJVocalization [
@@ -2229,6 +2245,7 @@ define EnglishProtoToOE (
     .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
+    .o. OEFinalGeminateSimplification
     .o. OEIntervocalicJVocalization
     .o. OEUnstressedEIContraction
     .o. OEWeightCleanup
@@ -2322,6 +2339,7 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
+    .o. OEFinalGeminateSimplification
     .o. OEIntervocalicJVocalization
     .o. OEUnstressedEIContraction
     .o. OEWeightCleanup
