@@ -10302,13 +10302,14 @@ This section tracks mismatch count changes over time.
 | 2026-04-05 | 55 | -2 | — | span fix (feminine ō-stem dat.sg.) |
 | 2026-04-06 | 52 | -3 | — | TSV fixes: dile, lappa, cnobba |
 | 2026-04-07 | 50 | -2 | — | būgan/sċūfan → past 3pl paradigm cells |
+| 2026-04-07 | 49 | -1 | — | heord fix: was 'hierd' (herdsman ≠ herd) |
 
 **Note on April 7 methodology clarification:** The temporary count of "58" reported 
 earlier was erroneous—`evaluate_proto_to_oe.py` was reading the `PROTO` column 
 (cognate set headword) instead of `PROTOFORM` (the actual FST input). The correct 
-script `oe_mismatch_report.py` reads `PROTOFORM` and shows 50 mismatches.
+script `oe_mismatch_report.py` reads `PROTOFORM` and shows 49 mismatches.
 
-Current verified count: **50 mismatches** (326 matches, 2 no-output, 378 total OE rows)
+Current verified count: **49 mismatches** (327 matches, 2 no-output, 378 total OE rows)
 as of 2026-04-07, using `oe_mismatch_report.py` with freshly compiled `Germanic/fsts/old_english.bin`.
 
 ### How to verify mismatch count
@@ -14436,3 +14437,58 @@ reflect OE analogical forms where paradigm leveling replaced expected `*ēo` (fr
 `*eu`) with `*ū` (from the past plural/participle). 
 
 The FST correctly models regular sound change; the OE forms are irregular/analogical.
+
+---
+
+## OE heord 'herd' vs hierde 'herdsman' (2026-04-07)
+
+### Problem
+
+Row 2073 has `*xerdō → hierd` but FST produces `heord`. This looks like an ie/eo 
+confusion, but is actually a **TSV data error**: the COUNTERPART is wrong.
+
+### Research
+
+**Two distinct etyma:**
+
+| PGmc | Meaning | OE | Source |
+|------|---------|-----|--------|
+| `*herdō` | "herd" (noun, ō-stem) | `heord` | R/T p.182, 285 |
+| `*hirdijaz` | "herdsman" (agent noun, ja-stem) | `hierde` | R/T p.46, 248 |
+
+**R/T vol.2 (p.182):**
+> PGmc \*herdō 'herd' (Goth. hairda) > PNWGmc \*herdu (ON hjorð, OHG herta) > OE heord
+
+**R/T vol.2 (p.248):**
+> PGmc \*hirdijaz 'herdsman' (Goth. hairdeis, ON hirðir, OS hirdi, OHG hirti) > 
+> \*hiordi > WS \*hierdi > hierde
+
+**Campbell (§146 fn.3):**
+> The diphthong of *hiorde* herdsman, is probably the mutation of that of 
+> \*heordi- (cf. §202), an analogical formation with the vowel of *heord*, herd.
+
+**Sound change derivations:**
+
+1. **`*herdō` "herd":**
+   - `*e` → `eo` (breaking before `*rd`)
+   - Result: `heord` ✓
+
+2. **`*hirdijaz` "herdsman":**
+   - `*i` → `io` (breaking before `*rd`) → `ie` (i-umlaut from `*-ij-`)
+   - Result: `hierde` (with weak ja-stem ending)
+
+### Analysis
+
+The FST is **correct**: `*xerdō` → `heord`. The TSV COUNTERPART `hierd` is wrong—
+it should be `heord`. The original Wiktionary data apparently conflated the noun 
+"herd" with the agent noun "herdsman".
+
+Note: The TSV also has `hierd` without the final `-e`. If we wanted the herdsman, 
+it would be `hierde` (weak ja-stem nom.sg.).
+
+### Solution
+
+**Fix TSV row 2073:** Change COUNTERPART from `hierd` to `heord`.
+
+The FST already produces the correct output; this is a data error, not a phonology 
+error.
