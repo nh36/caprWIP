@@ -116,7 +116,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 1297	b əʊ	*baugijăną	b əʊ - - - - ( - - )	bəʊ	bow	356	English				bow	*baugijăną	27
 1961	b ī e ġ a n	*baugijăną	b əʊ - - - - ( - - )	bəʊ	bīeġan	356	Old_English	Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-			bow	*baugijăną	27
 929	b əʊ	*beugăną	b əʊ - - - ( - - )	bəʊ	bow	255	English				bow	*beugăną	27
-1962	b ū g a n	*beugăną	b əʊ - - - ( - - )	bəʊ	būgan	255	Old_English	Kroonen *beugan- sv.2 → OE būgan (expected *bēogan from *eu breaking). The ū is ANALOGICAL from preterite sg. būg (Class II ablaut *eu:*au:*u:*u). OE leveled ū through the paradigm. FST mismatch documented as analogical exception.			bow	*beugăną	27
+1962	b u g o n	*bugun	b əʊ - - - ( - - )	bəʊ	bugon	255	Old_English	Past 3pl. Infinitive būgan has analogical ū (Campbell §740); past 3pl bugon is lautgesetzlich from *bugun.			bow	*bugun	27
 1419	b əʊ	*bugô	b əʊ - - -	bəʊ	bow	388	English				bow	*bugô	27
 1963	b o g a	*bugô	b əʊ - - -	bəʊ	boga	388	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*bugô	27
 1296	b ɔy ɡ ə n	*baugijăną	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German		C V c - v c		bow	*baugijăną	27
@@ -982,7 +982,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	STRUCTURE	BOR
 589	ʃ ʊ l t ə r	*skuldrō	ʃ - ʊ l t ə r ( - )	ʃʊltər	Schulter	162	German				shoulder	*skuldrō	224
 1442	s x œy v ə	*skeubăną	s x œy v ə - ( - - )	sxœyvə	schuiven	394	Dutch				shove	*skeubăną	225
 1441	ʃ ʌ v	*skeubăną	ʃ - ʌ v - - ( - - )	ʃʌv	shove	394	English				shove	*skeubăną	225
-2184	s ċ ū f a n	*skeubăną	ʃ - ʌ v - - ( - - )	ʃʌv	sċūfan	394	Old_English	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			shove	*skeubăną	225
+2184	s ċ u f o n	*skubun	ʃ - ʌ v - - ( - - )	ʃʌv	sċufon	394	Old_English	Past 3pl. Infinitive sċūfan has analogical ū (Campbell §740); past 3pl sċufon is lautgesetzlich from *skubun.			shove	*skubun	225
 1440	ʃ iː b ə n	*skeubăną	ʃ - iː b ə n ( - - )	ʃiːbən	schieben	394	German				shove	*skeubăną	225
 723	s x ɔ f ə l	*skuflō	s x ɔ f ə l ( - )	sxɔfəl	schoffel	198	Dutch				shovel	*skuflō	226
 722	ʃ ʌ v ə l	*skuflō	ʃ - ʌ v ə l ( - )	ʃʌvḷ	shovel	198	English				shovel	*skuflō	226
