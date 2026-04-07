@@ -119,6 +119,26 @@ BUCKET_DIAGNOSTICS: Dict[str, Dict[str, str]] = {
         "likely_cause": "Dialectal variation, analogical leveling, or proto vowel wrong",
         "action": "Research the specific vowel history; may be TSV issue",
     },
+    "vowel_quality__ie_vs_eo": {
+        "issue": "FST has ie where target has eo (or vice versa)",
+        "likely_cause": "i-umlaut applied where back mutation expected, or vice versa",
+        "action": "Check umlaut/mutation chronology; ie < eo (i-umlaut) vs eo (breaking/back mutation)",
+    },
+    "vowel_quality__ie_vs_ea": {
+        "issue": "FST has ie where target has ea (or vice versa)",
+        "likely_cause": "Breaking diphthong confusion; ie < i + breaking vs ea < æ + breaking",
+        "action": "Check breaking input vowel; may be proto vowel issue",
+    },
+    "vowel_quality__a_vs_o": {
+        "issue": "FST has a where target has o (or vice versa)",
+        "likely_cause": "Pre-nasal rounding (*a > o before nasal), or dialectal",
+        "action": "Check nasal context; if not pre-nasal, may be dialectal or TSV issue",
+    },
+    "vowel_quality__i_vs_e": {
+        "issue": "FST has i where target has e (or vice versa)",
+        "likely_cause": "Raising/lowering; may involve unstressed reduction or breaking input",
+        "action": "Check stress and surrounding consonants; e before r,l,h often raises",
+    },
     "vowel_quality__u_lowering_exception": {
         "issue": "FST lowered u→o but target keeps u (wulf, bucc, etc.)",
         "likely_cause": "Known lexical exceptions to u-lowering (Luick §78)",
@@ -638,6 +658,19 @@ def _vowel_quality_subtype(out: str, expected: str, proto_norm: str) -> str:
     # 3. Stressed vowel: first vowel differs, rest are the same
     if len(out_vowels) == len(exp_vowels) and len(out_vowels) >= 1:
         if out_vowels[0] != exp_vowels[0] and out_vowels[1:] == exp_vowels[1:]:
+            pair = frozenset({out_vowels[0], exp_vowels[0]})
+            # ie vs eo: diphthong confusion (i-umlaut vs back mutation)
+            if pair == frozenset({"ie", "eo"}) or pair == frozenset({"īe", "ēo"}):
+                return "vowel_quality__ie_vs_eo"
+            # ie vs ea: breaking variant confusion
+            if pair == frozenset({"ie", "ea"}) or pair == frozenset({"īe", "ēa"}):
+                return "vowel_quality__ie_vs_ea"
+            # a vs o: pre-nasal rounding or other
+            if pair == frozenset({"a", "o"}) or pair == frozenset({"ā", "ō"}):
+                return "vowel_quality__a_vs_o"
+            # i vs e: raising/lowering
+            if pair == frozenset({"i", "e"}) or pair == frozenset({"ī", "ē"}):
+                return "vowel_quality__i_vs_e"
             return "vowel_quality__stressed_vowel"
 
     # 4. Unstressed vowel: first vowel matches, later vowel(s) differ
