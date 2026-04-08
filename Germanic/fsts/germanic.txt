@@ -363,6 +363,11 @@ define pgrmWeakTailVowel [
     ō:{*ō} r:{*r} |
     ô:{*ô} |
     ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
+    # Class II weak infinitive: *-ōną (fientive/inchoative verbs)
+    # R/T vol.2 §3.3.1: "fientive verbs in *-nō- ~ *-na-" e.g. *liznōną 'to learn'
+    # The *-n- is part of the verbal stem (fientive suffix), not the infinitive ending.
+    # This allows e.g. *leznōną → leornian with correct *e-grade.
+    ō:{*ō} n:{*n} ą:{*ą} |
     ō:{*ō} n:{*n} |
     ō:{*ō} n:{*n} d:{*d} z:{*z} |
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
@@ -438,6 +443,8 @@ define PGmcStarDiphthong [
     {*eu} |
     {*ie} |
     {*īe} |
+    {*io} |  # Breaking product of *i (Campbell §148: *i → *io before r/l + C)
+    {*īo} |  # Long counterpart (breaking of *ī)
     {*iu}
 ];
 
@@ -601,7 +608,7 @@ define EnglishSurface EnglishSurfaceSyllable+;
 
 define OldEnglishSurfaceVowel [
     {a} | {e} | {i} | {o} | {u} | {y} | {æ} | {ā} | {ē} | {ī} | {ō} | {ū} |
-    {ǣ} | {ȳ} | {ea} | {ēa} | {eo} | {ēo} | {ie} | {īe} | {ä} | {ọ} | {ự} |
+    {ǣ} | {ȳ} | {ea} | {ēa} | {eo} | {ēo} | {io} | {īo} | {ie} | {īe} | {ä} | {ọ} | {ự} |
     {ɔ} | {ɔ̆} | {ɪ}
 ];
 define OldEnglishSurfaceConsonant [
@@ -666,6 +673,8 @@ define OldEnglishRemoveStars [
     {*ēa} -> ēa,
     {*eo} -> eo,
     {*ēo} -> ēo,
+    {*io} -> io,
+    {*īo} -> īo,
     {*ie} -> ie,
     {*īe} -> īe,
     {*ʃ} -> s ċ,
@@ -1264,10 +1273,14 @@ define OEBreakingE [
     {*e} -> {*eo} || _ EnglishBreakingLContextE
 ];
 
+# Campbell §148: "i was broken, and appears as io (later eo in most dialects)"
+# The *ie outcome in WS comes from subsequent i-umlaut of *io (Campbell §201),
+# NOT from breaking directly. See DEV_NOTES.md "Comprehensive Analysis: Breaking
+# of *i and I-Umlaut of Diphthongs (2026-04-07)" for full documentation.
 define OEBreakingI [
-    {*i} -> {*ie} || _ EnglishBreakingRContext,
-    {*i} -> {*ie} || _ EnglishBreakingHContext,
-    {*i} -> {*ie} || _ EnglishBreakingWContext
+    {*i} -> {*io} || _ EnglishBreakingRContext,
+    {*i} -> {*io} || _ EnglishBreakingHContext,
+    {*i} -> {*io} || _ EnglishBreakingWContext
 ];
 
 define OEBreaking OEBreakingA
@@ -1787,9 +1800,14 @@ define OEIUmlautRaising [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
+# Campbell §201: "io: the i-umlaut of these sounds in W-S is ie"
+# The *io rule handles breaking products; *eo rule handles breaking of *e.
+# See DEV_NOTES.md "Comprehensive Analysis" (2026-04-07) for sources.
 define OEIUmlautDiphthong [
     {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*io} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*īo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
