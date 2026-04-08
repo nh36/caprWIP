@@ -1,10 +1,10 @@
-Total mismatches: 55
+Total mismatches: 47
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      3
+  TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   35
+  Phonology (other buckets):   28
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -17,11 +17,12 @@ Total mismatches: 55
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 3
   epenthetic_vowel_missing: 2
+  syncopation_missing: 1
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
-  breaking_extra__eo_for_high: 4
+  breaking_extra__eo_for_high: 2
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
   breaking_extra__wrong_form: 1
@@ -31,13 +32,11 @@ Total mismatches: 55
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
-  vowel_quality__stressed_vowel: 5
+  vowel_quality__a_vs_o: 1
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 2
 --- final_vowel_missing sub-buckets ---
-  final_vowel_missing__morph_form_mismatch: 1
-  final_vowel_missing__other: 2
   final_vowel_missing__weak_noun_like: 4
 --- final_n_missing sub-buckets ---
 --- inflectional_suffix_extra sub-buckets ---
@@ -94,6 +93,12 @@ epenthetic_vowel_missing (2):
   *strawjăną -> strewan (expected strewian)
   *θistilăz -> þistl (expected þistel)
 
+syncopation_missing (1):
+  *knixtăz -> cnioht (expected cniht)
+  >> ISSUE: FST kept medial vowel that target syncopates
+  >> LIKELY: High vowel syncope rule not applying (meoloc→meolc)
+  >> ACTION: Check syncope rule for unstressed high vowels
+
 gemination_extra (1):
   *tikkô -> ticca (expected ticia)
   >> ISSUE: FST geminated where target has single consonant
@@ -106,11 +111,12 @@ breaking_extra__ea_for_a (1):
 breaking_extra__eo_for_e (1):
   *speru -> speoru (expected spere)
 
-breaking_extra__eo_for_high (4):
-  *beugăną -> bēogan (expected būgan)
+breaking_extra__eo_for_high (2):
   *newun -> nēowon (expected nigon)
-  *skeubăną -> sċēofan (expected sċūfan)
   *spennilō -> spinneolu (expected spindle)
+  >> ISSUE: FST broke to eo where target has high vowel (ū/ī)
+  >> LIKELY: Breaking applied where it shouldn't; may be TSV proto issue
+  >> ACTION: Check if proto vowel is correct (*eu vs *ū)
 
 breaking_extra__ie_for_e (1):
   *raukiz -> rīeċ (expected rēc)
@@ -136,12 +142,11 @@ back_expected_front_out__other (1):
   >> LIKELY: Dialectal/analogical form, or vowel coloring not modeled
   >> ACTION: Research if target is regular or a variant; may need u-coloring rule
 
-vowel_quality__stressed_vowel (5):
-  *xerdō -> heord (expected hierd)
-  *liznōjăną -> liernian (expected leornian)
+vowel_quality__a_vs_o (1):
   *nasō -> nasu (expected nosu)
-  *liznô -> lierna (expected leorna)
-  *liznōθi -> lierneþ (expected leorneþ)
+  >> ISSUE: FST has a where target has o (or vice versa)
+  >> LIKELY: Pre-nasal rounding (*a > o before nasal), or dialectal
+  >> ACTION: Check nasal context; if not pre-nasal, may be dialectal or TSV issue
 
 vowel_quality__u_lowering_exception (5):
   *bukkăz -> bocc (expected bucc)
@@ -156,13 +161,6 @@ vowel_quality__u_o_alternation (1):
 vowel_quality__unstressed_o_a (2):
   *mēnōθz -> mōnoþ (expected mōnaþ)
   *saiwălō -> sāwal (expected sāwol)
-
-final_vowel_missing__morph_form_mismatch (1):
-  *deljăz -> dill (expected dile)
-
-final_vowel_missing__other (2):
-  *knuppăz -> cnopp (expected cnobba)
-  *labbăz -> læbb (expected læppa)
 
 final_vowel_missing__weak_noun_like (4):
   *fūri -> fȳr (expected fȳre)

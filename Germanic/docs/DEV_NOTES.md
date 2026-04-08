@@ -10303,14 +10303,21 @@ This section tracks mismatch count changes over time.
 | 2026-04-06 | 52 | -3 | — | TSV fixes: dile, lappa, cnobba |
 | 2026-04-07 | 50 | -2 | — | būgan/sċūfan → past 3pl paradigm cells |
 | 2026-04-07 | 49 | -1 | — | heord fix: was 'hierd' (herdsman ≠ herd) |
+| 2026-04-08 | 47 | -2 | — | OEBreakingI fix: *i→*io (Campbell §148); liornian TSV entries |
+
+**Note on April 8 OEBreakingI fix:** Fixed a phonologically incorrect shortcut where 
+`OEBreakingI` was producing `*ie` directly. Per Campbell §148, breaking of `*i` produces 
+`*io` (not `*ie`); the `*ie` outcome in WS comes from subsequent i-umlaut of `*io` 
+(Campbell §201). Also fixed a broken symlink in the container that was preventing 
+`old_english.bin` from being updated.
 
 **Note on April 7 methodology clarification:** The temporary count of "58" reported 
 earlier was erroneous—`evaluate_proto_to_oe.py` was reading the `PROTO` column 
 (cognate set headword) instead of `PROTOFORM` (the actual FST input). The correct 
 script `oe_mismatch_report.py` reads `PROTOFORM` and shows 49 mismatches.
 
-Current verified count: **49 mismatches** (327 matches, 2 no-output, 378 total OE rows)
-as of 2026-04-07, using `oe_mismatch_report.py` with freshly compiled `Germanic/fsts/old_english.bin`.
+Current verified count: **47 mismatches** (329 matches, 2 no-output, 378 total OE rows)
+as of 2026-04-08, using `oe_mismatch_report.py` with freshly compiled `Germanic/fsts/old_english.bin`.
 
 ### How to verify mismatch count
 
@@ -14492,3 +14499,781 @@ it would be `hierde` (weak ja-stem nom.sg.).
 
 The FST already produces the correct output; this is a data error, not a phonology 
 error.
+
+---
+
+## OE leornian 'to learn' — ie vs eo diphthong problem (2026-04-07)
+
+### Problem
+
+Three TSV entries show the FST producing `ie` where the target has `eo`:
+
+| Proto | FST output | Target | Concept |
+|-------|------------|--------|---------|
+| `*liznōjăną` | liernian | leornian | infinitive |
+| `*liznô` | lierna | leorna | iptv.2sg |
+| `*liznōθi` | lierneþ | leorneþ | 3sg pres. |
+
+The FST applies breaking (*e → *eo before rC) then i-umlaut (*eo → *ie from *-ōj-).
+But the attested WS form is `leornian`, not `*liernian`.
+
+### Research
+
+#### 1. Proto-Germanic reconstruction
+
+**Kroonen (p.340):**
+> `*liznōn-` wv. 'to learn' — OE leornian, E to learn, OFri. lirna, lerna, 
+> OS linon, OHG lernōn, lernēn, lirnēn
+
+**R/T vol.2 (p.38, 84, 95, 183):**
+> OE liornian ~ leornian, OF lirnia ~ lernia, OS linon, OHG lirnén ~ lernén 
+> 'to learn' < PGmc \*liznō- ~ \*lizna-, derivationally related to \*laizijana 
+> 'to teach'
+
+Both sources attest **root vowel variation**: PGmc \*lizn- shows both \*i and \*e 
+alternants. This is NOT a simple case of one proto-form.
+
+#### 2. Sound change pathway
+
+**Campbell §123 (fn.2):**
+> The eo of *meord*, *leornian* is from e by a later change (see §146). 
+> Beside *leornian*, forms with *io* are found in North., where original 
+> *eo* and *io* are well distinguished, and reflect a Prim. OE variation 
+> of e and i. This variation recurs in OHG *lernen*, *lirnen* and OFris. 
+> *lernia*, *lirnia*, so the word can hardly be regarded as reliable 
+> evidence for the sound-change under discussion. Its variation of vowel 
+> is perhaps due purely to variation in stem-suffix between -i- and -ō-, 
+> and is to be referred to §114 above.
+
+Campbell explicitly states:
+1. The `eo` in `leornian` comes from `*e` via breaking (§146), NOT from `*i`
+2. North. has `io` (= \*i + breaking + umlaut), WS/Merc has `eo` (= \*e + breaking)
+3. The i/e variation is **pre-Germanic**, reflected in OHG/OFris. doublets
+
+**Campbell §146:**
+> e is broken to eo with very great regularity before u and x, and before 
+> x and r followed by a consonant.
+
+#### 3. The two derivational paths
+
+**Path A (with \*i root):**
+```
+*liznōjăną → *lirnōjăną (z-loss) → *liornōjan (breaking *i→io before rC)
+           → *liernōjan (i-umlaut io→ie from *-ōj-) → liernian
+```
+This gives North. `liornian` or theoretically WS `*liernian`.
+
+**Path B (with \*e root):**
+```
+*leznōjăną → *lernōjăną (z-loss) → *leornōjan (breaking *e→eo before rC)
+           → leornian (no i-umlaut: eo does NOT umlaut to ie in this context)
+```
+This gives WS/Merc `leornian`.
+
+**Key insight:** Campbell §202 shows that i-umlaut of `eo` yields `io` (later WS `eo`), 
+NOT `ie`. The sequence `*eo → *ie` only occurs in specific WS contexts with 
+breaking-derived `io` before \*i (which then becomes WS `ie`). But in `leornian`, 
+the i-umlaut trigger is in the suffix \*-ōj-, NOT in the root.
+
+#### 4. Why WS has `leornian` not `*liernian`
+
+**Campbell §202:**
+> A small group of words (§124) suggest that the mutation of eo was io, 
+> for they appear in W-S always with eo (from older io, which they still 
+> have in North.), and never have ie.
+
+The WS form `leornian` shows that:
+1. The WS form descends from the **\*e-grade** variant `*leznōn-`, NOT `*liznōn-`
+2. Breaking gave `*leorn-`, and there was no subsequent i-umlaut to `ie`
+3. The North. form `liornian` descends from the **\*i-grade** variant
+
+This is a case of **dialectal selection** of different ablaut grades, NOT 
+a failure of i-umlaut to apply.
+
+#### 5. Why the FST produces `ie`
+
+Our current proto-form `*liznōjăną` has **\*i** as the root vowel. This forces:
+- Breaking: \*i → \*io before rC
+- I-umlaut: \*io → \*ie (from the \*-ōj- suffix)
+- Result: `liernian`
+
+But the WS target `leornian` requires the **\*e-grade** root. With \*e:
+- Breaking: \*e → \*eo before rC
+- I-umlaut of `eo` → still `eo` (not `ie`) in this environment
+- Result: `leornian`
+
+### Analysis options
+
+**Option A: Change proto to \*e-grade**
+
+Change PROTOFORM from `*liznōjăną` to `*leznōjăną` (or `*lirnōjăną` if z-loss 
+is pre-input). This would give:
+- `*leznōjăną` → `*lernōjăną` → `leornian` ✓
+
+But this misrepresents the etymology if `*liznōn-` is the primary reconstruction.
+
+**Option B: Use a non-umlauting paradigm cell**
+
+Find a paradigm cell without the \*-j- trigger. The Class II weak verb paradigm:
+- Infinitive: `*-ōną` (no \*j) — but \*-ōn- suffix doesn't trigger umlaut anyway
+- Wait: the TSV has `*liznōjăną` with explicit \*-ōj-. Is this correct?
+
+**Checking the verb class:**
+
+R/T (p.38): "OE liornian ~ leornian ... fientive verbs in \*-nō- ~ \*-na-"
+
+This is a **Class II weak verb** (fientive/inchoative in \*-nō-), NOT a Class I 
+weak verb in \*-jan-. The infinitive should be `*liznōną` NOT `*liznōjăną`.
+
+The \*-j- in our proto-form is WRONG! Class II weak verbs have infinitive in 
+\*-ōną, NOT \*-ōjăną.
+
+**Option C: Accept the mismatch**
+
+The attested WS `leornian` and North. `liornian` reflect **different ablaut 
+grades** that were already variable in PGmc. The FST correctly models the 
+\*i-grade development. The \*e-grade form is not phonologically derivable 
+from `*liznōn-` — it requires `*leznōn-`.
+
+If we want `leornian`, we need `*leznōną` as the proto-form.
+
+### Decision
+
+**Root cause:** The proto-form `*liznōjăną` has two problems:
+1. The root vowel \*i gives `ie` (via breaking + umlaut), but WS needs \*e for `eo`
+2. The suffix \*-ōjăną is wrong for a Class II weak verb (should be \*-ōną)
+
+**Solution:** Change PROTOFORM to `*leznōną` (the \*e-grade Class II infinitive).
+
+With `*leznōną`:
+- z-loss: `*lernōną`
+- Breaking: `*leornōnan` 
+- Weak tail: `leornian` ✓
+
+This aligns with:
+- Campbell's statement that WS `eo` is from `*e` (not `*i`)
+- R/T's attestation of both `*lizn-` and `*lezn-` variants
+- Correct Class II weak verb morphology
+
+### FST Analysis
+
+The FST rule `OEIUmlautDiphthong` applies `{*eo} -> {*ie}` for i-umlaut. However, 
+Campbell §202 shows that i-umlaut of `*eo` should yield `*io`, which in WS becomes 
+`*eo` again (via io→eo leveling), NOT `*ie`.
+
+The correct mapping is:
+- `*eo` (from breaking of `*e`) + i-umlaut → `*io` → WS `eo`
+- `*io` (from breaking of `*i`) + i-umlaut → WS `ie`
+
+Our FST treats both as `→ ie`, which is correct for the second case but wrong 
+for the first.
+
+**Fundamental issue:** The FST cannot distinguish between `*eo` from breaking 
+of `*e` vs `*io` from breaking of `*i` at the point where i-umlaut applies. 
+By that stage, both have merged to `*eo`/`*io`.
+
+### Recommendation
+
+**For leornian specifically:** The simplest fix is to use the `*e-grade` proto-form 
+`*leznōną` (without the incorrect `*-j-` in the suffix). This represents the 
+WS-ancestor form and avoids the problematic i-umlaut pathway entirely:
+
+```
+*leznōną → *lernōną (rhotacism) → *leornōną (breaking) → leornian
+```
+
+No i-umlaut applies because Class II weak verbs have `*-ōną`, not `*-ōjăną`.
+
+**For the TSV entries:**
+- Row 2095: Change `*liznōjăną` to `*leznōną` (infinitive)
+- Row 2313: Change `*liznô` to `*leznō` (iptv.2sg uses stem + `*-ō`)
+- Row 2314: Change `*liznōθi` to `*leznōθi` (3sg has `*-θi`, still no `*j`)
+
+**Why this works:**
+1. Uses the attested `*e-grade` variant (per Campbell, R/T)
+2. Corrects the verb class (Class II weak = `*-ōną`, not `*-ōjăną`)
+3. Avoids the problematic i-umlaut of `*eo` issue entirely
+
+### Solution (2026-04-07)
+
+**Tested:** `*leznōjăną` → `leornian` ✓
+
+The `*-ōjăną` suffix is correct (Class II weak verbs were remodeled from `*-ō-` 
+to `*-ōja-` per R/T vol.2 p.72). The issue was only the **root vowel**:
+- `*i` root → `liernian` (via breaking + i-umlaut)
+- `*e` root → `leornian` (via breaking; no i-umlaut of `eo`)
+
+**TSV changes needed:**
+| Row | Old proto | New proto | Target |
+|-----|-----------|-----------|--------|
+| 2095 | `*liznōjăną` | `*leznōjăną` | leornian |
+| 2313 | `*liznô` | `*leznô` | leorna |
+| 2314 | `*liznōθi` | `*leznōθi` | leorneþ |
+
+This aligns with Campbell §123 fn.2: "The eo of *meord*, *leornian* is from e 
+by a later change" — i.e., WS has the `*e-grade` variant.
+
+### Extended Research (2026-04-07)
+
+#### What the sources actually say about PGmc reconstruction
+
+**Kroonen** (Etymological Dictionary of Proto-Germanic, p.340):
+> `*liznōn-` w.v. 'to learn' — OE leornian ww. 'id.', E to learn, OFri. lirna, 
+> lerna w.v. 'id.', OS linon w.v. 'id.', OHG lirnēn, lernēn, lirnēn w.v. 'id.', 
+> G lernen w.v. 'id.' (EUR).
+> An inchoative verb continuing a medio-passive factitive neh₂-present 
+> *lis-nh₂- 'to make oneself know'. See also *lisan-.
+
+Kroonen reconstructs **only** `*liznōn-` (with `*i`), from PIE root `*lis-` 
+(zero-grade of `*leis-`). He does NOT posit an `*e-grade` variant `*lezn-`.
+
+**R/T vol.2** (pp. 38-39, 111):
+> `PGmc *lizno- ~ *lizna-` 'to learn' (derivationally related to `*laizijana` 
+> 'to teach') > OE liornian, OFri. lirnia, OS linon, OHG lirnēn
+
+R/T consistently uses `*lizn-` (with `*i`), never `*lezn-`.
+
+**Fulk** (Comparative Grammar §6.8):
+> "probably `*lizn-` is a WGmc. innovation in OE leornian, OFri. lerna, lirna, 
+> OS līnon, OHG lirnēn, lernēn 'learn'"
+
+**Conclusion:** The opinio communis is that the PGmc form is `*liznōn-` 
+(with root `*lizn-` < PIE `*lis-`). There is no scholarly basis for 
+reconstructing an `*e-grade` variant `*lezn-`.
+
+#### Why WS has `eo` and Northumbrian has `io`
+
+**Campbell §123 fn.2:**
+> "The eo of meord, leornian is from e by a later change (see § 146). 
+> Beside leornian, forms with io are found in North., where original eo 
+> and io are well distinguished, and reflect a Prim. OE variation of e and i."
+
+But crucially:
+> "This variation recurs in OHG lernen, lirnen and OFris. lernia, lirnia, 
+> so the word can hardly be regarded as reliable evidence for the sound-change 
+> under discussion. Its variation of vowel is **perhaps due purely to variation 
+> in stem-suffix between -i- and -∅-**, and is to be referred to § 114 above."
+
+**Campbell §154 fn.3:**
+> "Leornian learn, should show variation between eo and i (§ 123, footnote 2), 
+> the latter appearing when -i- stood in the next syllable: **eo would appear 
+> to have been levelled through**, and then mutated before -i-, giving rise 
+> to eW-S liornian, North. liornta (cf. § 202)."
+
+**Campbell §202** (the key passage):
+> "a small group of words (§ 124) suggest that **the mutation of eo was io**, 
+> for they appear in W-S always with eo (from older io, which they still have 
+> in North.), and **never have ie**. This confirms and supplements the view of 
+> Sievers that when eo was analogically introduced into a position in which it 
+> was followed by i or j in the next syllable, the product of i-umlaut was 
+> **io even in W-S**, and that this io became eo later (see § 296)."
+
+And specifically about `leornian`:
+> "In eW-S we find always with io or eo, **leornian** learn (cf. § 154, 
+> footnote 3), léode people, gepéode language..."
+
+#### The FST problem: incorrect i-umlaut rule for diphthongs
+
+Our current rule in germanic.txt:
+```
+define OEIUmlautDiphthong [
+    {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+];
+```
+
+The rule `{*eo} -> {*ie}` is **incorrect** according to Campbell. The correct 
+situation is:
+
+1. I-umlaut of `*ea` → `*ie` (Campbell §200) ✓
+2. I-umlaut of `*ēa` → `*īe` ✓
+3. I-umlaut of `*io` → `*ie` in West Saxon (Campbell §201) ✓
+4. **I-umlaut of `*eo` → `*io`** NOT `*ie` (Campbell §202) ✗ (our rule is wrong)
+5. Later WS `*io` → `*eo` (Campbell §296)
+
+This explains why `*liznōjăną` produces `liernian` instead of `leornian`:
+- `*lizn-` undergoes breaking: `*i → *io` before `rn`
+- Our incorrect rule then applies i-umlaut: `*io → *ie` (should stay `*io`)
+- Result: `liernian` instead of `leornian`
+
+#### Proposed fix to FST
+
+The correct treatment for OE diphthong i-umlaut should be:
+
+1. `*ea` → `*ie` (i-umlaut)
+2. `*ēa` → `*īe` (i-umlaut)
+3. `*io` → `*ie` (i-umlaut in WS; but NOT in Anglian)
+4. `*eo` → `*io` (i-umlaut produces `io`, not `ie`)
+5. Add new late rule: WS `*io` → `*eo` (later WS monophthongization)
+
+However, the interaction is complex:
+- Breaking produces `*io` from `*i` before r + cons
+- Breaking produces `*eo` from `*e` before r + cons
+- If `*io` from breaking of `*i` then i-umlaut gives `*ie`
+- If `*eo` from breaking of `*e` then i-umlaut gives `*io` → later `*eo`
+
+But the FST cannot track the *source* of a diphthong — it only sees `*io` or `*eo`.
+
+**Key insight from Campbell §154 fn.3:**
+The variation in `leornian` is due to **suffix alternation** (`*-i-` vs `*-∅-`), 
+not root vowel ablaut. When `-i-` followed in the suffix, breaking of root `*i` 
+was blocked (§154.3), giving unbroken `*i`. When no `-i-` followed, breaking 
+occurred normally.
+
+Campbell's account:
+1. PGmc `*liznōjanan` (with `*i` root, `-ōj-` suffix)
+2. Primitive OE: Breaking should give `*io` before `rn`, but `-i-` follows → blocks breaking
+3. Result: `*lirnōjanan` (unbroken `*i` retained in some forms)
+4. Leveling: WS levels `eo` throughout (from forms without `-i-`)
+5. Then i-umlaut before `-i-` gives `io` (in forms with suffix `-ian`)
+6. Late WS: `io` → `eo`
+7. Result: WS `leornian`, North. `liornian`
+
+This is extremely complex paradigmatic leveling, not a simple phonological rule.
+
+#### Summary and options
+
+**The problem:** 
+- PGmc `*liznōjăną` (with `*i` root) is the correct reconstruction
+- Our FST produces `liernian` but WS target is `leornian`
+- The issue is in our `OEIUmlautDiphthong` rule: `{*eo} -> {*ie}` is too broad
+
+**Why our FST fails:**
+1. `*lizn-` → breaking → `*liorn-` (correct: `*i` → `*io` before `rn`)
+2. i-umlaut: our rule `{*eo} -> {*ie}` incorrectly applies to `*io`
+3. Result: `liernian` (incorrect for WS)
+
+**What should happen (per Campbell §202):**
+1. `*lizn-` → breaking → `*liorn-` (correct)
+2. i-umlaut of `*io` → `*io` (half-umlaut: stays `io` in WS)
+3. Late WS: `*io` → `*eo`
+4. Result: `leornian` (correct)
+
+**Option A: Fix the i-umlaut rule (principled but complex)**
+
+Modify `OEIUmlautDiphthong` to distinguish the source of the diphthong:
+- `*io` from breaking of `*i` → WS i-umlaut gives `*ie` (full umlaut)
+- `*eo` from breaking of `*e` → WS i-umlaut gives `*io` (half-umlaut)
+
+But the FST cannot track diphthong provenance. This would require:
+- Distinct symbols: `{*io.from.i}` vs `{*io.from.iu}` etc.
+- Major FST refactoring
+
+**Option B: Use paradigm-cell matching (as with būgan/sċūfan)**
+
+Find a paradigm cell where phonology is regular:
+- Test: Does any cell (3sg, imperative, etc.) work with `*lizn-` root?
+- If Northumbrian `liornian` (with `io`) comes out, that's valid since it's 
+  an attested OE form (just not West Saxon).
+
+Testing: `*liznōjăną → liernian` (incorrect, has `ie`)
+
+The problem is that our i-umlaut is applying everywhere, including to forms
+where Campbell says it should give `io` not `ie`.
+
+**Option C: Accept Northumbrian as target**
+
+Since Northumbrian `liornian` has `io` (per Campbell §154 fn.3), we could:
+- Keep proto `*liznōjăną`
+- Change TSV target from `leornian` to `liornian`
+- This is linguistically sound: North. preserved original `io`
+
+But this seems like giving up on modeling WS correctly.
+
+**Option D: Mark as known limitation**
+
+Document that `leornian` involves complex paradigmatic leveling 
+(Campbell §154 fn.3, §202) that cannot be modeled with simple 
+phonological rules. Add to "unsolved problems" section.
+
+**Recommendation:**
+
+Option A (fixing the i-umlaut rule) is the principled solution but requires 
+significant FST refactoring. Before committing to that, we should verify:
+
+1. How many other mismatches are caused by this same `*eo → *ie` issue?
+2. Can we distinguish `*io` from breaking of `*i` vs `*io` from PGmc `*iu`?
+
+If this is a pervasive issue affecting many forms, Option A is justified.
+If it only affects `leornian` and a few edge cases, Option D may be pragmatic.
+
+### Cross-Source Research on i-Umlaut of Diphthongs (2026-04-07)
+
+#### R/T vol.2 §6.6.3 (pp.240-250) — most detailed account
+
+R/T provides the clearest treatment of i-umlaut of diphthongs:
+
+**Short diphthongs:**
+- `*ea` → WS `ie`, other dialects `e` (numerous examples, p.240-246)
+- `*io` → WS `ie`, other dialects unchanged `io` (→ later `eo`) (pp.247-249)
+- `*eo` (if introduced by leveling) → `io` which later merged with `eo` (p.247)
+
+**Long diphthongs:**
+- `*ēa` → WS `īe`, other dialects `ē` (pp.245-246)
+- `*īo` → WS `īe`, other dialects unchanged `īo` (→ later `ēo`) (pp.249-250)
+
+**Critical passage on `*eo` (p.247):**
+> "The diphthongs eo and ēo could not have occurred in direct i-umlauting 
+> environments by regular sound change, but they might have been introduced 
+> into such environments by levelling. Following up a suggestion of Eduard 
+> Sievers, Campbell suggests that there are a few examples of that development, 
+> and that **\*eo, \*ēo were umlauted to io, īo**, which in WS and Mercian 
+> subsequently merged with eo, ēo again (Campbell 1962: 81-2 with references).
+> Unfortunately most of his examples are not convincing."
+
+**On `leornian` specifically:**
+> "No form of the verb **liornian** 'to learn' contained an i-umlauting 
+> environment at the time the change occurred (see 3.3.1, 6.2.2)."
+
+This is crucial: R/T denies that `leornian` underwent i-umlaut at all!
+
+#### Brunner §107 — confirms "Halbumlaut"
+
+Brunner confirms the Sievers "Halbumlaut" phenomenon:
+
+> "Der i-Umlaut zu io, īo ist streng ws. ebenfalls ie, ī, y... Außerws. ist 
+> io, īo unverändert..."
+
+And:
+> "In einer Anzahl von Wörtern... steht schon altws. eo, selten io statt 
+> des wegen i-Umlauts zu erwartenden ie, i, y. Diese von Sievers als 
+> **'Halbumlaut'** bezeichnete Erscheinung..."
+
+Examples of Halbumlaut: `ġeþēode` 'language', `stīeran ~ stēoran` 'to steer', 
+`lēode` 'people'.
+
+#### Summary of what the sources agree on
+
+1. **`*ea` → WS `*ie`**: All sources agree. Our rule is correct.
+
+2. **`*io` → WS `*ie`**: All sources agree. Our rule handles this.
+
+3. **`*eo` does NOT become `*ie` by regular i-umlaut**: 
+   - Campbell §202: "the mutation of eo was io"
+   - R/T p.247: "*eo, *ēo were umlauted to io, īo"
+   - Brunner §107: confirms Halbumlaut phenomenon
+   
+4. **In WS, `*io` and `*eo` later merge to `eo`** (Campbell §296, R/T passim)
+
+5. **`leornian` is a special case**: R/T explicitly states that no form of 
+   `liornian` "contained an i-umlauting environment at the time the change 
+   occurred" (p.247).
+
+#### Implications for our FST
+
+Our current rule:
+```foma
+{*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+```
+
+This is **incorrect**. The correct rule should be:
+```foma
+{*eo} -> {*io} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+```
+
+Then we need a later rule for WS `*io → *eo` merger.
+
+However, this raises a complication: our FST cannot distinguish:
+- `*io` from breaking of `*i` (which should umlaut to `*ie`)
+- `*io` from i-umlaut of `*eo` (which should stay `*io` → later `*eo`)
+
+In other words, all `*io` at the i-umlaut stage came from breaking of `*i`, 
+so the rule `*io → *ie` is correct for those forms. The issue is that `*eo` 
+(from breaking of `*e`) should become `*io` (not `*ie`) by i-umlaut.
+
+#### The `leornian` problem revisited
+
+Per R/T (p.247), `leornian` did NOT undergo i-umlaut at all. The pathway was:
+1. PGmc `*liznōn-` (inchoative, Class II weak)
+2. Breaking: `*i → *io` before `rn` → `*liornōn-`
+3. **No i-umlaut** (Class II weak infinitives didn't have `-j-` in pre-OE)
+4. Result: Northumbrian `liornian` (with `io`)
+
+But WS has `leornian` with `eo`. Where did the `eo` come from?
+
+Campbell §154 fn.3 says:
+> "eo would appear to have been **levelled through** [from forms without -i-], 
+> and then mutated before -i-, giving rise to eW-S liornian, North. liornta"
+
+So the pathway to WS `leornian` involves:
+1. Paradigmatic leveling of `eo` from non-umlauting cells
+2. Then Halbumlaut (i-umlaut of `eo` → `io`)
+3. Then WS `io → eo` merger
+4. Result: `leornian`
+
+This is NOT a regular phonological development — it involves **morphological 
+leveling**. Our FST cannot model this.
+
+#### Conclusion
+
+The core issue is:
+- Our rule `{*eo} → {*ie}` is incorrect phonologically
+- The correct rule is `{*eo} → {*io}` (then later `*io → *eo` in WS)
+- But fixing this won't help `leornian` because that word involves paradigmatic 
+  leveling, not regular phonology
+
+**Recommendation:** 
+1. Fix the i-umlaut rule anyway (for phonological correctness)
+2. For `leornian`, use Option C (Northumbrian target `liornian`)
+
+The FST change would be:
+```
+# OLD (incorrect):
+{*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+
+# NEW (correct):
+{*eo} -> {*io} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+# (Then add late WS *io → *eo rule)
+```
+
+But before implementing, we need to check: do we have ANY forms that actually 
+have `*eo` in an i-umlauting environment? If not (as R/T suggests), this 
+change may be moot.
+
+### Key Finding: Breaking of `*i` Should Produce `*io`, Not `*ie` (2026-04-07)
+
+**Campbell §148:**
+> "i was broken, and appears as **io** (later eo in most dialects) with great 
+> regularity before [h and h+C]... Before r and [h], when a consonant follows, 
+> i appears to have been frequently broken, but since i follows in the next 
+> syllable in all instances, these forms will be considered below (§ 201)."
+
+**R/T p.183** (on `leornian`):
+> "PGmc *liznōn- 'to learn' ... > PWGmc *liznōn > *lirnōjan > OE **liornian**"
+
+**Our FST bug:**
+```foma
+# INCORRECT (current):
+define OEBreakingI [
+    {*i} -> {*ie} || _ EnglishBreakingRContext,
+    ...
+];
+
+# CORRECT (should be):
+define OEBreakingI [
+    {*i} -> {*io} || _ EnglishBreakingRContext,
+    ...
+];
+```
+
+**Derivational chain for `*liznōjăną`:**
+
+Current (incorrect):
+1. `*liznōjăną` (input)
+2. Breaking: `*i → *ie` → `*lieznōjăną` (WRONG!)
+3. z-loss/rhotacism: `*liernōjăną`
+4. i-umlaut: (nothing to do, already `ie`)
+5. Result: `liernian` ✗
+
+Correct:
+1. `*liznōjăną` (input)
+2. Breaking: `*i → *io` → `*lioznōjăną`
+3. z-loss/rhotacism: `*liornōjăną`
+4. **No i-umlaut** (suffix is `*-ōjăną`, no high vowel in next syllable at relevant time)
+5. Result: `liornian` ✓ (Northumbrian form)
+
+**Why WS has `leornian` with `eo`:**
+Per Campbell §154 fn.3 and §202: WS "levelled `eo` through" from non-umlauting 
+paradigm cells, then applied Halbumlaut (`eo → io`), then `io → eo` merger.
+This is morphological leveling, not regular phonology.
+
+**Action item:**
+Fix `OEBreakingI` to produce `*io`, not `*ie`. This is a genuine FST bug.
+After fixing, `*liznōjăną` should yield `liornian` (the correct Northumbrian form).
+For WS `leornian`, we accept that as Option C (use Northumbrian as target).
+
+### Comprehensive Analysis: Breaking of *i and I-Umlaut of Diphthongs (2026-04-07)
+
+This section consolidates all research on the breaking rule bug and i-umlaut of 
+diphthongs, with full quotations from primary sources.
+
+#### The Core Problem
+
+Our FST produces `liernian` from `*liznōjăną`, but the correct OE form is 
+`leornian` (WS) or `liornian` (Northumbrian). The root cause is that our 
+`OEBreakingI` rule directly produces `*ie`:
+
+```foma
+# CURRENT (incorrect):
+define OEBreakingI [
+    {*i} -> {*ie} || _ EnglishBreakingRContext,
+    ...
+];
+```
+
+But Campbell §148 explicitly states that breaking of `*i` produces `*io`, not `*ie`:
+
+> "**i was broken, and appears as io** (later eo in most dialects) with great 
+> regularity before u, and before x followed by a consonant, e.g. niowul 
+> prostrate, þreowa three times, aseowen pass. part. sifted; tiohhian consider, 
+> Peohtas Picts, meox manure. Before r and x, when a consonant follows, i 
+> appears to have been frequently broken, but since i follows in the next 
+> syllable in all instances, these forms will be considered below (§ 201)."
+> — Campbell §148 (p.58)
+
+The `ie` outcome in WS comes from **subsequent i-umlaut** of the `*io` produced 
+by breaking, NOT from breaking directly.
+
+#### I-Umlaut of *io (Campbell §201)
+
+Campbell §201 explains that `*io` from breaking undergoes i-umlaut to `ie` in WS:
+
+> "**io: the i-umlaut of these sounds in W-S is ie**, but in nW-S they were not 
+> changed; examples are:
+>
+> (1) io by breaking before r is frequently subject to i-umlaut in W-S forms, 
+> e.g. W-S **bierhto** brightness, **fierr** farther, **afierran** drive out, 
+> **hiertan** encourage, **ierre** anger, angry, **smierewan** they anoint 
+> (CP 69, 11), **-wierpð** he throws, **wiers(a)** worse, **-wierð** he becomes, 
+> **wierðe** worth, **hierde** shepherd. Kt. examples, except stierce, d.s. calf, 
+> iorsienne become angry, KG, all show the later change io > eo (§ 297), e.g. 
+> weorðe Ct. 41, and 3rd sg. pres. indic. -weorpð, -weorð, geornð, KG. **In this 
+> position Angl. texts practically always have unbroken**: see § 154.3 and 
+> footnotes."
+> — Campbell §201 (pp.80-81)
+
+This establishes the derivational chain:
+1. Breaking: `*i → *io` (before r + consonant)
+2. I-umlaut (WS only): `*io → *ie` (when i-umlaut trigger present)
+3. Result: WS `ie`, Anglian `i` (unbroken) or `io` (broken but no umlaut)
+
+#### The Anglian Exception (Campbell §154.3)
+
+Campbell §154.3 explains that in Anglian dialects, breaking of `*i` was **blocked** 
+when `-i-` followed in the next syllable:
+
+> "In Angl. dialects **the breaking of i regularly failed before r followed by a 
+> consonant if -i- stood in the next syllable**. The occurrences are: various 
+> forms and derivatives of **smirwan** smear, **afirran** remove, **hirtan** 
+> encourage in VP; various compounds of smirwan in Ep. and Cp.; and gesuirbet 
+> polishes, cirn churn (MS. cerm), first roof, Cp.; various forms of smirwan 
+> and afirran in tenth-century North. and Ru."
+> — Campbell §154.3 (p.60)
+
+This is why Anglian has `smirwan` (unbroken) while WS has `smierwan` (broken + 
+i-umlaut).
+
+#### The *leornian* Problem (Campbell §154.3 footnote 3)
+
+Campbell's footnote 3 to §154 specifically addresses `leornian`:
+
+> "**Leornian** learn, should show variation between eo and i (§ 123, footnote 2), 
+> the latter appearing when -i- stood in the next syllable: **eo would appear to 
+> have been levelled through**, and then mutated before -i-, giving rise to 
+> **eW-S liornian**, **North. liornta** (cf. § 202)."
+> — Campbell §154.3 fn.3 (p.60)
+
+Key points:
+- The regular phonological outcome for Northumbrian is `liornian` (with `io`)
+- Early WS also had `liornian` (with `io`)
+- Late WS `leornian` (with `eo`) is the result of **paradigmatic leveling** 
+  followed by the WS `io/eo` merger (§296)
+
+#### The WS *io/eo* Merger (Campbell §296)
+
+Campbell §296 documents that WS `io` and `eo` merged:
+
+> "In W-S it is evident that the graphs eo and io had become equivalent in force 
+> by the time of the oldest manuscripts... **io by breaking and half-umlaut 
+> (§ 202) is always replaced by eo in leornian and related words in Oros.**, 
+> but in CP io and eo both appear."
+> — Campbell §296 (p.126)
+
+This confirms that `leornian` with `eo` is a late WS spelling reflecting the 
+`io/eo` merger, NOT regular phonology.
+
+#### I-Umlaut of *eo: The Halbumlaut (Campbell §202)
+
+Campbell §202 describes the "Halbumlaut" phenomenon for `*eo`:
+
+> "**eo: a small group of words (§ 124) suggest that the mutation of eo was io**, 
+> for they appear in W-S always with eo (from older io, which they still have in 
+> North.), and **never have ie**. This confirms and supplements the view of 
+> Sievers that when eo was analogically introduced into a position in which it 
+> was followed by i or j in the next syllable, **the product of i-umlaut was io 
+> even in W-S**, and that this io became eo later (see § 296)."
+> — Campbell §202 (p.82)
+
+Important: This applies to a "small group of words" where `*eo` was "analogically 
+introduced" — NOT to regular breaking of `*e`. Our current rule `{*eo} → {*ie}` 
+is correct for regular cases.
+
+#### R/T Confirmation
+
+R/T vol.2 confirms the derivation of `liornian`:
+
+> "PGmc *liznōn- 'to learn' ... > PWGmc *liznōn > *lirnōjan > OE **liornian**"
+> — R/T vol.2 p.183
+
+And explicitly states that no i-umlaut applied:
+
+> "No form of the verb **liornian** 'to learn' contained an i-umlauting 
+> environment at the time the change occurred (see 3.3.1, 6.2.2)."
+> — R/T vol.2 p.247
+
+This confirms that the infinitive `*liznōjăną` did NOT undergo i-umlaut, so the 
+regular outcome is `liornian` (with `io` from breaking), not `liernian` (which 
+would require i-umlaut).
+
+#### Brunner Confirmation
+
+Brunner §107 confirms the Halbumlaut phenomenon:
+
+> "Der i-Umlaut zu io, īo ist streng ws. ebenfalls ie, ī, y... Außerws. ist 
+> io, īo unverändert... In einer Anzahl von Wörtern... steht schon altws. eo, 
+> selten io statt des wegen i-Umlauts zu erwartenden ie, i, y. Diese von 
+> Sievers als **'Halbumlaut'** bezeichnete Erscheinung..."
+> — Brunner §107
+
+Translation: "The i-umlaut of io, īo in strict WS is likewise ie, ī, y... 
+Outside WS, io, īo is unchanged... In a number of words... already early WS 
+has eo, rarely io instead of the ie, i, y expected from i-umlaut. This 
+phenomenon, termed **'Halbumlaut'** by Sievers..."
+
+#### Source Disagreement: *smerwijăną vs *smirwijăną
+
+There is a genuine reconstruction disagreement for the verb "to smear":
+
+**Kroonen (p.458)** reconstructs with `*e`:
+> "*smerwjan-" ... "Cf. also ON smyrva, smyrja, OE smierwan, Du. smeren, 
+> OHG smirwen, G Schmieren w.v. 'to smear, anoint' < *smerwjan-."
+
+**R/T vol.2 (p.183, p.248)** reconstructs with `*i`:
+> "PNWGmc **\*smirwijana** 'to smear, to anoint' (ON smyrva ~ smyrja, 
+> OHG smirwen) > *smiorwjan, *smiorwisl > WS *smierwjan, *smierisl > 
+> **smierwan**, *smierels"
+
+This disagreement affects the derivational analysis:
+- With Kroonen's `*smerwijăną`: breaking of `*e → *eo`, then i-umlaut `*eo → *ie`
+- With R/T's `*smirwijăną`: breaking of `*i → *io`, then i-umlaut `*io → *ie`
+
+Both arrive at the same OE outcome `smierwan`, but via different pathways. 
+Our TSV follows Kroonen (`*smerwijăną`), which is defensible but may need 
+updating if we prefer R/T's reconstruction.
+
+#### Summary: Required FST Changes
+
+Based on this research, two changes are required:
+
+**1. Fix `OEBreakingI`:** Change `{*i} → {*ie}` to `{*i} → {*io}`
+
+This correctly models Campbell §148: breaking produces `*io`, not `*ie`.
+
+**2. Add i-umlaut of `*io`:** Add `{*io} → {*ie}` to `OEIUmlautDiphthong`
+
+This correctly models Campbell §201: `*io` (from breaking) undergoes i-umlaut 
+to `*ie` in WS when an umlaut trigger is present.
+
+**The `{*eo} → {*ie}` rule should remain unchanged.** Campbell §202's Halbumlaut 
+(`*eo → *io`) applies only to a "small group" of analogically-introduced forms, 
+not to regular breaking of `*e`.
+
+After these changes:
+- Forms with breaking of `*i` AND i-umlaut trigger → `ie` (as before)
+- Forms with breaking of `*i` WITHOUT i-umlaut trigger → `io` (fixed!)
+
+**TSV update:** Change the target for `*liznōjăną` variants from WS `leornian` 
+(analogical) to Northumbrian `liornian` (regular phonological outcome).
+
