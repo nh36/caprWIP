@@ -10304,6 +10304,7 @@ This section tracks mismatch count changes over time.
 | 2026-04-07 | 50 | -2 | — | būgan/sċūfan → past 3pl paradigm cells |
 | 2026-04-07 | 49 | -1 | — | heord fix: was 'hierd' (herdsman ≠ herd) |
 | 2026-04-08 | 47 | -2 | — | OEBreakingI fix: *i→*io (Campbell §148); liornian TSV entries |
+| 2026-04-08 | 46 | -1 | — | cniht fix: TSV *knixtăz→*knextăz (R/T), FST {*io}→{*i} palatal umlaut |
 
 **Note on April 8 OEBreakingI fix:** Fixed a phonologically incorrect shortcut where 
 `OEBreakingI` was producing `*ie` directly. Per Campbell §148, breaking of `*i` produces 
@@ -10316,7 +10317,7 @@ earlier was erroneous—`evaluate_proto_to_oe.py` was reading the `PROTO` column
 (cognate set headword) instead of `PROTOFORM` (the actual FST input). The correct 
 script `oe_mismatch_report.py` reads `PROTOFORM` and shows 49 mismatches.
 
-Current verified count: **47 mismatches** (329 matches, 2 no-output, 378 total OE rows)
+Current verified count: **46 mismatches** (330 matches, 2 no-output, 378 total OE rows)
 as of 2026-04-08, using `oe_mismatch_report.py` with freshly compiled `Germanic/fsts/old_english.bin`.
 
 ### How to verify mismatch count
@@ -15276,4 +15277,142 @@ After these changes:
 
 **TSV update:** Change the target for `*liznōjăną` variants from WS `leornian` 
 (analogical) to Northumbrian `liornian` (regular phonological outcome).
+
+
+---
+
+## OE cniht 'knight, servant' — Palatal Umlaut Analysis (2026-04-08)
+
+### The Mismatch
+
+**Row:** 2016 (knight)
+**TSV proto:** `*knixtăz`  
+**TSV target:** `cniht`
+**FST output:** `cnioht`
+
+### Reconstruction Evidence
+
+The major etymological dictionaries reconstruct this word with `*e`, NOT `*i`:
+
+**Ringe & Taylor vol.2 (p.127):**
+> "PGmc **\*kneht** 'boy, servant'... OE cniht"
+
+**Ringe & Taylor vol.2 (p.335):**
+> "cniht 'boy, servant' < *kneht (§2.5.3.1.3)"
+
+**Orel (p.220):**
+> "**\*knextaz** m. 'boy'"
+
+**Kluge-Seebold (s.v. Knecht):**
+> "**\*knehta-** 'Bursche, Knecht'"
+
+Only one source (our current TSV) has `*knixtăz` with `*i`. This appears to be an error.
+
+### Phonological Analysis
+
+#### Path A: From *knextăz (correct reconstruction)
+
+```
+*knextăz     PGmc input (with *e)
+*cneoxtăz    Breaking of *e before xt (Campbell §151)
+*cneoxtăz    No AFB applies (breaking blocks fronting)
+*cneoxt      Final schwa apocope
+*cniht       Palatal umlaut: *eo → *i before xt# (Campbell §308, Brunner §122)
+cniht        Surface form ✓
+```
+
+#### Path B: From *knixtăz (incorrect reconstruction)
+
+```
+*knixtăz     PGmc input (with *i)
+*cnioxtăz    Breaking of *i before xt (Campbell §148)
+*cnioxt      Final schwa apocope  
+*cnioht      *io does NOT undergo palatal umlaut (missing rule!)
+cnioht       Surface form ✗ (not attested)
+```
+
+### Campbell on Palatal Umlaut (§305–308)
+
+Campbell §308 describes the change of `eo` to `i` before `xt`:
+
+> "A specially OE change eo > e, when final or before consonant + front vowel,
+> is rare in texts with normal orthography... Palatal umlaut has taken place
+> regularly in niht, riht, -sliht 'blow', meaht, might, siht, with their
+> derivatives and compounds, but not in the plurals neahtas, &c."
+
+Campbell §306:
+> "Before palatal consonant groups there is a raising and contraction of
+> rising diphthongs io, eo, but not ea, to i, but this does not apply before
+> the back vowel of the inflexion, e.g. cniht 'servant', pl. cneohtas..."
+
+#### Brunner §122 (Altenglische Grammatik)
+
+Brunner provides the clearest explanation:
+
+> "eo und io wurden im Westsächsischen schon vor der Zeit Ælfreds vor 
+> obigen h-Gruppen [ht, hs] allgemein zu i, wenn kein Velarvokal auf sie 
+> folgte, z. B. **cniht** Diener, **riht** recht, aber Plur. **cneohtas** 
+> (dann mit Ausgleich auch cneoht, cnihtas)..."
+
+Translation: "eo and io became i in West Saxon already before Alfred's time
+before h-groups [ht, hs] generally, when no back vowel followed, e.g.
+**cniht** 'servant', **riht** 'right', but pl. **cneohtas** (then with
+leveling also cneoht, cnihtas)..."
+
+Key insight: Brunner explicitly says both `eo` AND `io` → `i` before `ht/hs`.
+
+### FST Analysis
+
+The FST has `OEWsPalatalUmlaut` (lines 1914–1918):
+
+```foma
+define OEWsPalatalUmlaut [
+    {*eo} -> {*i} || _ OEHCluster .#.,
+    {*ie} -> {*i} || _ OEHCluster .#.,
+    {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
+];
+```
+
+**Bug identified:** The rule handles `{*eo}` and `{*ie}` but is **missing `{*io}`**.
+
+Per Brunner, `io` also undergoes palatal umlaut before `ht/hs`. This omission
+means that if a word had original `*i` (which breaks to `*io`), the palatal
+umlaut would fail to apply.
+
+### Resolution: Two Fixes Required
+
+**Fix 1 (TSV):** Correct the proto-form from `*knixtăz` to `*knextăz`
+
+All major sources reconstruct with `*e`. The `*i` is an error.
+
+**Fix 2 (FST):** Add `{*io}` to `OEWsPalatalUmlaut`
+
+Even though the correct reconstruction has `*e`, the FST should correctly
+model all phonological processes. Per Brunner, `io` → `i` before `ht/hs`:
+
+```foma
+define OEWsPalatalUmlaut [
+    {*eo} -> {*i} || _ OEHCluster .#.,
+    {*io} -> {*i} || _ OEHCluster .#.,      # Added per Brunner §122
+    {*ie} -> {*i} || _ OEHCluster .#.,
+    {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*io} -> {*i} || _ OEHCluster EnglishStarFrontVowel,  # Added per Brunner §122
+    {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
+];
+```
+
+### Impact Assessment
+
+After implementing Fix 1 (TSV):
+- `*knextăz → cniht` ✓ (already works in current FST)
+
+After implementing Fix 2 (FST):
+- Both `*knextăz → cniht` and `*knixtăz → cniht` would work
+- Any other words with breaking `*i → *io` before `ht/hs` would be correctly handled
+
+### Recommended Action
+
+1. Update TSV row 2016: change PROTO from `*knixtăz` to `*knextăz`
+2. Update FST `OEWsPalatalUmlaut` to include `{*io}` rules
 

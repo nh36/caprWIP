@@ -1913,8 +1913,10 @@ define OEBackMutation [
 define OEHCluster [{*x} [{*t} | {*p} | {*s}]];
 define OEWsPalatalUmlaut [
     {*eo} -> {*i} || _ OEHCluster .#.,
+    {*io} -> {*i} || _ OEHCluster .#.,
     {*ie} -> {*i} || _ OEHCluster .#.,
     {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*io} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
 ];
 
