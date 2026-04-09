@@ -16079,3 +16079,128 @@ Orel (2003) uses `*tauxmaz` (with x) for team but `*draumaz` (without g) for dre
 This inconsistency reflects the unsettled status of these forms in the literature.
 We follow Kroonen's consistent use of the Verner-voiced form `*g` for both,
 which is phonologically correct given the (DRV) marking.
+
+---
+
+---
+
+## OE fēower 'four': PWGmc *dw → *ww Assimilation (2026-04-09)
+
+### The Mismatch
+
+```
+breaking_missing__expected_eo_got_e:
+  *fedwōrez -> fedwore (expected fēower)
+```
+
+The FST produces `fedwore` but OE has `fēower` with breaking ēo.
+
+### Source Analysis
+
+**R/T vol.2 §3.1.1 (pp.56-57) — The Critical Reference:**
+
+> "The most unusual sound change shared by all the WGmc languages was
+> clearly a PWGmc innovation: the intervocalic sequences `*zw` and `*dw` were
+> assimilated to `*ww` (Stiles 1985-6, NOWELE 6: 89-94). There is really only
+> one example of each input cluster, but the basic nature of the lexemes involved
+> makes the change virtually certain:
+>
+> PGmc `*fedwor` 'four' (Goth. fidwor) > `*fewwar` > PWGmc `*feuwar` (see 3.1.4 on
+> the vowel of the final syllable) > OE féower, OF fiuwer, OS fiuwar; OHG fior has
+> been backformed to fiordo 'fourth', etc. (Stiles 1985-6, NOWELE 6: 91-2);
+>
+> PGmc `*izwiz` 'you (dat. pl.)' (Goth. izwis) > `*iwwi` > PWGmc `*iuwi` ~ `*iuw`
+> (see 3.1.4) > OE iow, OF it, OS, OHG iu;
+>
+> This appears to have been a single change in which voiced coronal fricatives
+> were assimilated to a following `*w`."
+
+**Key observations:**
+1. R/T reconstructs PGmc `*fedwor` (short `o`, no suffix), confirmed by Gothic fidwor
+2. The change is `*dw → *ww` (and `*zw → *ww`)
+3. A subsequent geminate simplification: `*Vww → *Vuw` (R/T §3.1.4)
+
+**R/T vol.2 §3.1.4 (pp.65-66) — Geminate *ww Simplification:**
+
+> "The PGmc geminates `*jj` and `*ww`... In WGmc, however, the first member of
+> the geminate normally develops exactly like the second element of an ordinary
+> i- or u-diphthong. This presupposes a reanalysis by language learners in terms
+> of CV-phonology..."
+
+Examples:
+- `*blewwana` 'to beat' (Goth. bliggwan) > PWGmc `*bleuwan` > OHG bliuwan
+- `*glawwuz` 'exact' (ON gløggr) > PWGmc `*glauw` 'wise' > OE glēaw
+- `*dawwō` 'dew' > PWGmc `*dauwō` > OE dēaw
+
+### The Development Chain for 'four'
+
+R/T explicitly gives this derivation:
+
+1. **PGmc `*fedwor`** — archaic form preserved in Gothic fidwor
+2. **→ `*fewwar`** — PWGmc coronal assimilation (`*dw → *ww`)
+3. **→ `*feuwar`** — PWGmc geminate simplification (`*eww → *euw`)
+4. **→ OE `fēower`** — regular `*eu → ēo` monophthongization
+
+### TSV Correction Needed
+
+The current TSV has `*fedwōrez` which has several issues:
+- **Long ō**: R/T shows short `*o` (`*fedwor`), not long `*ō`
+- **Suffix -ez**: R/T gives bare `*fedwor`, the `-ez` suffix is spurious and
+  produces an unwanted final `-e` in the output
+
+**Correct reconstruction:** `*fedwor` (matching R/T and Gothic fidwor)
+
+### FST Changes Required
+
+We need TWO new PWGmc rules:
+
+**Rule 1: PWGmc Coronal-W Assimilation (R/T §3.1.1)**
+
+```foma
+define PWGmcCoronalWAssimilation [
+    {*d} -> {*w} || _ {*w},
+    {*z} -> {*w} || _ {*w}
+];
+```
+
+**Rule 2: PWGmc Geminate *ww Simplification (R/T §3.1.4)**
+
+Note: The existing FST already handles `*ww` inputs correctly via `*ww → ēo`.
+Testing `*kewwăną → ċēowan` ✓, `*dawwō → dēaw` ✓, `*xawwăną → hēawan` ✓.
+
+Therefore, only Rule 1 is strictly needed. The assimilation produces `*fewwor`,
+and existing rules handle `*eww → ēo`.
+
+However, the existing pathway may be handling `*Vww` via a different mechanism
+than R/T's two-step analysis. We should verify the derivation path.
+
+### Verification of Existing *ww Handling
+
+Existing TSV entries with `*ww`:
+- `*kewwăną → ċēowan` ✓
+- `*dawwō → dēaw` ✓
+- `*xawwăną → hēawan` ✓
+- `*xawwją → hīeġ` ✓
+
+All work. The `*eww`, `*aww` sequences are correctly becoming `ēo`, `ēa`.
+
+### Implementation Plan
+
+1. **Fix TSV**: `*fedwōrez` → `*fedwor` (correct reconstruction with `*dw`)
+2. **Add rule**: `PWGmcCoronalWAssimilation` at PWGmc stage
+3. **Verify**: Existing `*ww` words don't regress
+
+### Potential Other Affected Forms
+
+R/T mentions only two clear examples of the `*dw/*zw → *ww` change:
+- `*fedwor` 'four' — the only OE example in our TSV
+- `*izwiz` 'you (dat.pl.)' — OE ēow (not in TSV but derivable)
+
+### Chronological Placement
+
+The coronal assimilation is an early PWGmc change (R/T §3.1.1 places it before
+§3.1.4 geminate simplification). It should be ordered:
+
+1. PWGmcCoronalWAssimilation (`*dw/*zw → *ww`)
+2. (Existing rules handle `*ww → ēo` pathway)
+

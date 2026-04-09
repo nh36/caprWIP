@@ -336,6 +336,9 @@ define pgrmWeakTailVowel [
     i:{*i} j:{*j} ă:{*ă} z:{*z} |
     o:{*o} |
     o:{*o} n:{*n} |
+    # Numeral tail: *-or (e.g. PGmc *fedwor 'four', Goth. fidwor)
+    # R/T vol.2 §3.1.1: PGmc *fedwor → *fewwar → PWGmc *feuwar → OE fēower
+    o:{*o} r:{*r} |
     # Acc.sg. of an-stem nouns: PGmc *-onų (Fulk §7.31)
     # e.g. *hemonų 'heaven (acc.sg.)' → OE heofon
     o:{*o} n:{*n} ų:{*ų} |
@@ -1155,6 +1158,17 @@ define PWGmcAiMonophthongization [
     {*ai} -> {*ā}
 ];
 
+# PWGmc: Coronal fricative assimilation before *w (R/T vol.2 §3.1.1, pp.56-57).
+# R/T: "The intervocalic sequences *zw and *dw were assimilated to *ww."
+# Key examples:
+#   PGmc *fedwor 'four' (Goth. fidwor) → *fewwar → PWGmc *feuwar → OE fēower
+#   PGmc *izwiz 'you dat.pl.' (Goth. izwis) → *iwwi → PWGmc *iuwi → OE ēow
+# Stiles 1985-6, NOWELE 6: 89-94.
+define PWGmcCoronalWAssimilation [
+    {*d} -> {*w} || _ {*w},
+    {*z} -> {*w} || _ {*w}
+];
+
 # PWGmc: Denasalization of word-final nasal vowels (R/T §3.1.4, line 3960).
 # In PWGmc, word-final nasal vowels lost their nasalization: *ą → *a, *ę → *e, etc.
 define PWGmcDenasalization [
@@ -1244,7 +1258,7 @@ define PWGmcJGemination [
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
-# Order: monophthongization, ij-contraction, J-GEMINATION, syllabic j, lþ-voicing, dental hardening.
+# Order: monophthongization, CORONAL-W-ASSIMILATION, ij-contraction, J-GEMINATION, syllabic j, lþ-voicing, dental hardening.
 # NOTE: PWGmcDenasalization (*ą→*a etc.) is historically correct but DISABLED
 # because downstream apocope rules depend on seeing {*ą} tokens. Denasalization
 # must only be added after those rules are updated to handle denasalized forms.
@@ -1253,6 +1267,7 @@ define PWGmcJGemination [
 # Gemination creates heavy syllables that block syllabic-j vocalization.
 define PWGmcChanges [
     PWGmcAiMonophthongization
+    .o. PWGmcCoronalWAssimilation
     .o. PWGmcIjContraction
     .o. PWGmcJGemination
     .o. PWGmcSyllabicJ
