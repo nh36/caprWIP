@@ -15769,3 +15769,87 @@ The FST normalizes to Late WS orthography. Dialectal variants are not modeled:
 - Early WS `iung, iuc, gioc` (various spellings before standardization)
 - The intermediate forms `ging, gigoð` (with accent shift and subsequent 
   vowel loss) require separate treatment if needed.
+
+---
+
+## OE brēost 'breast': TSV PROTOFORM Correction (2026-04-09)
+
+### The Mismatch
+
+The mismatch report shows:
+```
+*brustz -> burst (expected brēost)
+```
+
+The FST produces `burst` from PROTOFORM `*brustz`, but the expected OE form is
+`brēost` with the characteristic breaking diphthong ēo.
+
+### Investigation
+
+Checking the TSV row (line 143):
+- PROTOFORM: `*brustz`
+- PROTO: `*breustą`
+- COUNTERPART: `brēost`
+
+The PROTOFORM and PROTO columns disagree. Testing both:
+```
+$ echo "brustz" | flookup -i fsts/old_english.bin
+brustz    burst
+
+$ echo "breustą" | flookup -i fsts/old_english.bin
+breustą   brēost
+```
+
+The FST correctly produces `brēost` from `*breustą`. The issue is the wrong
+PROTOFORM in the TSV.
+
+### Source Research
+
+**Kroonen (p.76, *breusta-):**
+> "*breusta- n. 'breast, chest' — ON brjóst n. 'id', OE bréost n. 'id', E breast,
+> OFri. briast n. 'id.', OS briost n. 'id.' = *bhreus-sth₂-o- (EUR)"
+
+Kroonen explicitly reconstructs **`*breusta-`** with the diphthong *eu*, deriving
+it from PIE *bhreus- 'to swell, sprout'.
+
+**Kroonen (p.76, *brust-):**
+> "*brust- f. 'breast, chest' — Go. brusts f. 'id.', OFri. brust, burst n. 'id.', OS brust
+> f. 'id.', MLG borst f. 'id.', Du. borst c. 'id.', OHG brust f. 'id.', G Brust f. 'id.'"
+
+There is ALSO a root noun `*brust-` (without diphthong), but Kroonen explicitly
+notes that OE brēost derives from `*breusta-`, not `*brust-`:
+> "A root noun closely related to *breusta- (q.v.) with the same meaning."
+
+The two formations have complementary distribution: `*breusta-` → OE, ON, OS, OFri;
+`*brust-` → Gothic, OHG, German.
+
+**R/T vol.2 (p.174):**
+> "PNWGmc *breusta 'breast' (ON brjóst, OS briost) > OE bréost (OF briast)"
+
+R/T also reconstructs **`*breusta`** for the NWGmc form that yields OE brēost.
+
+### Analysis
+
+The diphthong *eu in `*breusta-` explains OE brēost:
+1. PGmc `*breusta-` with *eu diphthong
+2. *eu → OE ēo by regular monophthongization (Campbell §129)
+3. Result: brēost
+
+The simple *u in `*brust-` would give OE †brust or †bryst (with i-umlaut in some
+forms), NOT brēost. The ēo diphthong can only come from *eu.
+
+### Fix
+
+The TSV PROTOFORM `*brustz` is incorrect. It should be `*breustą` to match:
+1. The PROTO column (which already has `*breustą`)
+2. Kroonen's reconstruction `*breusta-`
+3. R/T's reconstruction `*breusta`
+
+This is a data entry error, not a phonology problem. The FST is correct.
+
+### Related Forms
+
+Gothic brusts shows the `*brust-` form (without diphthong), which is why OHG also
+has Brust (not †Briost). The two reconstructions represent different ablaut grades
+or possibly different original formations that became associated through semantic
+similarity.
