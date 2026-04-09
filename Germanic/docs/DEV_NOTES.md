@@ -15416,3 +15416,356 @@ After implementing Fix 2 (FST):
 1. Update TSV row 2016: change PROTO from `*knixtăz` to `*knextăz`
 2. Update FST `OEWsPalatalUmlaut` to include `{*io}` rules
 
+
+---
+
+## OE Palatal Glide: Missing Orthography Rule for *e + *u → eo (2026-04-08)
+
+### The Problem
+
+The FST produces `ġeuc` for `*juką` (yoke), but the expected OE form is `ġeoc`.
+Similar issues affect `*jugunθiz` (youth): FST produces `ġeugȳþ` instead of
+expected `ġeoguþ`.
+
+### Investigation
+
+Testing the palatal glide rule in isolation with the full composed transducer:
+
+```
+$ foma -l fsts/germanic.txt -e "regex EnglishProtoInput .o. PGmcConsonantRules .o. EnglishProtoToOE;"
+$ down juką
+*j*e*u*k
+```
+
+The glide IS being correctly inserted: `*j*u*k*ą` → `*j*e*u*k` (with `*e` glide).
+
+But the final output is `ġeuc` instead of `ġeoc`. The issue is in the orthography.
+
+### Campbell on Palatal Glide Orthography (§§171-172)
+
+Campbell §171-172 explains the orthographic representation of palatal glide + back vowel:
+
+> "§171. It will be obvious from §170 that in eOE there could be no palatal
+> consonant before a back vowel except Prim. Gmc. *j. After *j there was a
+> strong tendency in W-S and North... to develop a glide front vowel to
+> facilitate the passage from front consonant to back vowel."
+
+> "§172. In W-S the glide is written with considerable regularity... So for
+> Prim. Gmc. initial *jū we find iū (gū), giū, geū, the last being practically
+> established in later texts, e.g. iung, giong, geong young, iuguð, gioguð,
+> geoguð youth, iuc, gioc, geoc yoke..."
+
+And crucially:
+
+> "A palatal glide + u is written eo, io or iu in W-S and Kt."
+
+### Root Cause Analysis
+
+The issue is in `OldEnglishRemoveStars` (lines 669-721). This rule converts
+internal starred symbols to orthographic output:
+
+```foma
+{*eo} -> eo,
+{*io} -> io,
+...
+{*e} -> e,
+{*u} -> u,
+```
+
+But there's NO rule to convert the sequence `{*e}{*u}` (glide + original u)
+to the diphthong `eo`. Instead:
+- `{*e}` becomes `e`  
+- `{*u}` becomes `u`
+- Result: `eu` (incorrect)
+
+### Chronology
+
+1. PGmc `*juk-` enters pipeline
+2. `OEWsPalatalGlide` inserts `*e` glide: `*j*e*u*k-`
+3. Note: u-lowering does NOT apply because `*u` is now in second syllable  
+   (rule only lowers `*u` when `.#. Consonant* _`, i.e., first syllable)
+4. At orthography stage: `*e*u` → `eu` (WRONG)
+5. Should be: `*e*u` (glide+u) → `eo` (Campbell §172)
+
+### Why Didn't u-Lowering Apply?
+
+The `NWGmcULowering` rule (line 1434) has this context:
+
+```foma
+{*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] ...
+```
+
+This only applies when `*u` immediately follows word-initial consonants. Once
+the glide `*e` is inserted before `*u`, the pattern no longer matches because
+there's now a vowel between the word boundary and `*u`.
+
+This is phonologically CORRECT: the glide insertion effectively moves `*u` out
+of the first syllable, so it doesn't undergo the first-syllable u-lowering rule.
+The `eo` spelling is orthographic, not phonological lowering.
+
+### The Fix
+
+Add a rule to convert glide+u sequence to `eo` in the orthography/surface stage.
+
+The cleanest approach: Add a rule early in the post-core pipeline that combines
+the glide `*e` with following `*u` into the diphthong `*eo`:
+
+```foma
+# Palatal glide + u → eo orthography (Campbell §172)
+# After initial palatal, glide *e + *u is written as eo/io
+define OEGlideUToDiphthong [
+    {*e} {*u} -> {*eo} || [{*j}|{*ʤ}|{*ʧ}|{*ʃ}] _
+];
+```
+
+This converts `*j*e*u*k` → `*j*eo*k`, then `OldEnglishRemoveStars` correctly
+maps `{*eo}` → `eo`, giving final output `ġeoc`.
+
+### Expected Outcome After Fix
+
+1. `*juką` → `ġeoc` ✓ (currently: `ġeuc`)
+2. `*jugunθiz` → `ġeoguþ` ✓ (currently: `ġeugȳþ`)
+3. `*jungaz` → `ġeong` ✓ (currently: `ġeung`)
+
+### Implementation Notes
+
+The new rule should be placed AFTER `OEWsPalatalGlide` (which inserts the glide)
+but BEFORE any rules that might alter the vowel quality. The orthography stage
+in `OldEnglishCore` is:
+
+```
+OldEnglishCore = EnglishProtoInput .o. PGmcConsonantRules .o. EnglishProtoToOE
+```
+
+The rule should be added to `EnglishProtoToOE` after `OEWsPalatalGlide`, or
+alternatively as part of the orthography cleanup near `OECjCleanup`.
+
+---
+
+## Palatal Glide Orthography: Comprehensive Research (2026-04-09)
+
+### Summary of the Issue
+
+The FST produces `ġeuc` for PGmc `*juką` 'yoke', but the expected OE form is
+`ġeoc`. Similarly, `*jugunθiz` 'youth' yields `ġeugȳþ` instead of `ġeoguþ`.
+The phonology is correct (glide *e is inserted), but the orthography layer
+fails to convert glide+u to the standard WS digraph `eo`.
+
+### Primary Source Research
+
+#### 1. Campbell §§171–176 (pp. 65–67)
+
+Campbell provides the fullest treatment of palatal glide development in OE:
+
+**§171 (p.65):**
+> "It will be obvious from §170 that in eOE there could be no palatal 
+> consonant before a back vowel except Prim. Gmc. *j. After *j there was 
+> a strong tendency in W-S and North., which appears less markedly in 
+> Kt. and Merc., to develop a **glide front vowel** to facilitate the 
+> passage from front consonant to back vowel. The main accent of the word 
+> remained on the back vowel, so that no diphthong of the typical OE kind 
+> with an accented front vowel as first element was formed."
+
+Campbell explicitly addresses the phonetic status of the glide:
+
+> "The usual subsequent history of the sounds under consideration is 
+> **loss of the glide and development of the back vowel in ME**. Thus 
+> OE *geoc* becomes ME *yok*, just as if the glide vowel had never existed. 
+> It has, therefore, sometimes been argued that the symbol (e or i), which 
+> is generally supposed to represent a glide, is merely a diacritic to 
+> indicate the palatal nature of the preceding consonant. The existence 
+> of the glide vowel is, however, **proved by cases in which the accent 
+> is transferred to it**."
+
+Key passage on orthography:
+
+> "The glide is usually written e, but sometimes i. **In W-S and Kt., 
+> glide+u is usually written eo or io, probably to avoid the multiplication 
+> of graphs**: North. uses the more phonetic iu, e.g. *giung* young, and 
+> this graph is occasionally found in W-S also."
+
+**§172 (p.66):**
+> "In W-S the glide is written with considerable regularity, though forms 
+> without it are frequent, especially in early texts. So for Prim. Gmc. 
+> initial *jū we find iū (gū), giū, geū, the last being practically 
+> established in later texts, e.g. iung, giong, **geong** young, iuguð, 
+> gioguð, **geoguð** youth, iuc, gioc, **geoc** yoke, giocða itch..."
+
+Campbell also documents the spelling of the glide before other back vowels:
+
+> "For Prim. Gmc. *ja before nasals W-S has gio, geo, e.g. **giond, geond** 
+> throughout, **begiondan, begeondan** beyond, **geon** yonder."
+
+Campbell's fascinating footnote on pronunciation:
+
+> "An interesting spelling is *Geeweorða*, which apparently represents the 
+> natural W-S pronunciation of Iugurtha (Oros., freq.)."
+
+**§173–§175: Dialectal Variation**
+
+- **Northumbrian (§173):** "giung (but cf. §176), begeonda, begeande"
+- **Mercian (§174):** VP shows glide "only in the prefix geond-, and in 
+  geōmrung sadness"
+- **Kentish (§175):** "gioc Ct. 42, beside iocled Ct. 35; geocled occurs 
+  Ct. 49 (Merc.-Kt.)"
+
+**§176 (p.66): The ging/giung Alternation**
+
+Campbell explains the Northumbrian form ging (vs. WS geong):
+
+> "More usual in North. than the form giung quoted above is ging, and the 
+> same development appears exclusively in gigoð. VP also has ging beside 
+> gung... The explanation of these forms would seem to be that first a 
+> glide developed after the initial palatal, producing the rising diphthong 
+> iu, and that the accent was then transferred to the first element of 
+> that diphthong. Subsequently the second, now unstressed, part of the 
+> diphthong was lost, having perhaps communicated its rounding to the 
+> first element. Finally this rounding was lost by the influence of the 
+> preceding palatal. The development thus would be **ju > iú > ý > í**."
+
+#### 2. Brunner §92 (pp. 64–66)
+
+Brunner (Altenglische Grammatik, 3rd ed. 1965) provides complementary detail:
+
+**§92. Vor volaren und sekundären palatalen Vokalen nach germ. j und nach sc:**
+
+> "Nach germ. j (geschrieben ʒ oder i, §175) kommt vor:
+> a) eo, altws. io für ae. u in **ʒeonʒ** jung, **ʒeoʒoð** Jugend, doch 
+> kommt daneben auch u und iu vor, also **iuriʒ, iuʒuð** und **ʒiunʒ**; 
+> spätws. ist die gew. Form eo, also **ʒeonʒ, ʒeoʒoð**."
+
+On dialectal distribution:
+
+> "Kent. steht neben **iunʒ** ebenfalls manchmal **ʒeonʒ**, ebenso 
+> **ʒeoʒoð**. Im Vesp. Ps. und R¹ heißt es stets **ʒiunʒ, ʒiuʒuð** 
+> (iuʒuð); nordh. (R², L) **ʒiunʒ** und (R², L, Rit.) **ʒiuʒoð**."
+
+On 'yoke':
+
+> "b) Bei o und ō (verschiedener Herkunft) ist io, eo ziemlich gemeinae., 
+> so ws. **ʒioc, ʒeoc** Joch, **ʒiōmrian, ʒeōmrian** jammern, **ʒeōmor** 
+> jammervoll; ebenso kent. **ʒioc** (neben **ioc**)."
+
+#### 3. Luick §169 (pp. 158–159)
+
+Luick (Historische Grammatik der englischen Sprache, 1921/1940) provides 
+the most detailed phonological analysis:
+
+> "Am deutlichsten und stärksten trat diese Entwicklung zutage, wenn auf 
+> den palatalen Konsonanten ein velarer Vokal folgte, was hauptsächlich 
+> bei anlautendem j öfter vorkam. In dieser Folge entstanden wohl 
+> **gemeinenglisch die schwebenden Diphthonge iu, eo und ea**, die sich 
+> in der angegebenen Weise weiterentwickelten."
+
+On the "level stress" (schwebende) diphthongs:
+
+> "Je nach dem Satzzusammenhang, d. h. dem Verhältnis zu den übrigen 
+> starkbetonten Elementen im Satze, konnte in ihnen bald die eine, bald 
+> die andere Komponente mehr hervortreten, die schwebenden Diphthonge 
+> also **in fallende oder steigende umschlagen**."
+
+On West-Saxon doublets:
+
+> "Im Westsächsischen ist der Bestand von Doppelformen besonders deutlich. 
+> Alfred zeigt jung, ʒung 'jung', iuʒoð, ʒuʒoð 'Jugend', iu 'einst', 
+> ʒeāra 'einst', daneben aber ʒionʒ, ʒioʒoð, ʒēo, ʒēomor 'Jammer', **geoc** 
+> 'Joch'. Später wurden diese letzteren Formen (mit der jüngeren 
+> Entwicklung des io zu eo) in der Schreibung verallgemeinert."
+
+Luick's key phonological note (Anm. 3):
+
+> "Ob unseren historischen Formen fallender oder steigender Diphthong 
+> zugrunde liegt, ist zum Teil an der Schreibung zu erkennen: **io, eo, i 
+> für iu weist auf iu**; ea für oder neben eo auf eo."
+
+#### 4. Ringe & Taylor (2014), vol. 2, p. 5
+
+R/T provide the crucial phonological interpretation:
+
+> "After word-initial /j/ followed by a back vowel that practice was 
+> universal. Thus *geara* 'long ago' is /ja:ra/, *geomor* 'lamentation' is 
+> /jo:mor/, **geoc 'yoke' is /jok/**; exceptionally, *geong ~ iung* 'young' 
+> is /jung/. On the other hand, *géar* 'year', *geolu* 'yellow', *georne* 
+> 'gladly', etc. contain genuine diphthongs."
+
+This confirms that in geoc 'yoke', the orthographic `eo` represents the 
+phoneme /o/ (not a true diphthong), while the `e` is a purely orthographic 
+representation of the palatal glide.
+
+#### 5. Hogg (1992), vol. 1, §§5.20–5.24
+
+Hogg discusses glide epenthesis in the context of breaking:
+
+> "The explanation of breaking, therefore, which fits best with both the 
+> spelling evidence and the range of phonetic possibilities is that it 
+> involved the introduction of an **epenthetic glide** between a front vowel 
+> and a following velar or velarised consonant."
+
+While this specifically concerns breaking (not palatal glide insertion), 
+it establishes the general principle that OE used digraphs to represent 
+glide+vowel sequences.
+
+### Dialectal Distribution Summary
+
+| Dialect      | 'young'              | 'yoke'          | 'youth'              |
+|--------------|----------------------|-----------------|----------------------|
+| Early WS     | iung, giong          | iuc, gioc       | iuguð, gioguð        |
+| Late WS      | geong                | geoc            | geoguð               |
+| Kentish      | iung, geong          | gioc, ioc       | geogoð               |
+| Mercian (VP) | giung, iuguð         | —               | —                    |
+| Northumbrian | giung, ging          | geocc, iocc     | giugoð, gigoð        |
+
+The normalized Late WS spelling `eo` is used consistently for glide+u after 
+initial palatals. Northumbrian preserves the more phonetic `iu` spelling.
+
+### Why U-Lowering Does Not Apply
+
+The `NWGmcULowering` rule (line 1434) has this context:
+```foma
+{*u} -> {*o} || .#. EnglishStarConsonant* _ [...]
+```
+
+This only applies when `*u` immediately follows word-initial consonants. 
+Once the glide `*e` is inserted before `*u`, the pattern no longer matches:
+- Before glide insertion: `*j*u*k` — `*u` is in first syllable ✓
+- After glide insertion: `*j*e*u*k` — `*u` is now preceded by `*e`, so the 
+  `.#. Consonant* _` context fails.
+
+This is phonologically CORRECT: the `eo` in `geoc` is orthographic, not the 
+result of phonological lowering. R/T explicitly transcribe geoc as /jok/.
+
+### Implementation Strategy
+
+Since `OldEnglishOrthography` converts `{*j}` → `ġ` before `OldEnglishRemoveStars`, 
+we need to catch the sequence `ġ{*e}{*u}` and convert it to `ġ{*eo}`:
+
+```foma
+# OEGlideUToEO: Convert palatal glide + u to eo diphthong (orthographic)
+# Campbell §172: "A palatal glide + u is written eo, io or iu in W-S and Kt."
+# R/T vol.2 p.5: "geoc 'yoke' is /jok/" — the eo is purely orthographic.
+# Brunner §92: geong, geoc with eo for u after initial j.
+# Luick §169: Rising diphthongs iu, eo after palatals with level stress.
+define OEGlideUToEO [
+    {*e} {*u} -> {*eo} || [ġ|ċ|{sċ}] _
+];
+```
+
+This rule should be placed:
+1. AFTER `OldEnglishOrthography` (which converts `*j` → `ġ`)
+2. BEFORE `OldEnglishRemoveStars` (which would otherwise convert `*e*u` → `eu`)
+
+### Expected Results After Fix
+
+| Proto       | Current Output | Expected | Status |
+|-------------|----------------|----------|--------|
+| *juką       | ġeuc           | ġeoc     | FIXED  |
+| *jugunθiz   | ġeugȳþ         | ġeoguþ   | FIXED  |
+| *jungaz     | ġeung          | ġeong    | FIXED  |
+
+### Dialect Considerations
+
+The FST normalizes to Late WS orthography. Dialectal variants are not modeled:
+- Northumbrian `giung, iocc` (phonetic iu spelling)
+- Early WS `iung, iuc, gioc` (various spellings before standardization)
+- The intermediate forms `ging, gigoð` (with accent shift and subsequent 
+  vowel loss) require separate treatment if needed.
