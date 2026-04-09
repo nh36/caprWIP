@@ -15853,3 +15853,229 @@ Gothic brusts shows the `*brust-` form (without diphthong), which is why OHG als
 has Brust (not †Briost). The two reconstructions represent different ablaut grades
 or possibly different original formations that became associated through semantic
 similarity.
+
+---
+
+## OE tēam 'team, offspring': *gm Cluster Analysis (2026-04-09)
+
+### The Mismatch
+
+The mismatch report shows:
+```
+cons_mismatch__h_vs_m__cluster (1):
+  *tauxmăz -> tēahm (expected tēam)
+```
+
+The FST produces `tēahm` from PROTOFORM `*tauxmăz`, but the expected OE form is
+`tēam` without the spirant.
+
+### The Core Question
+
+There are two ways to fix this mismatch:
+
+**Option A: Change TSV to use post-spirant-loss form (`*taumăz`)**
+- Treats *g-loss as a PGmc-stage change already complete before the input to OE
+- Matches our treatment of `*draumăz` → drēam
+
+**Option B: Add FST rule for *gm → *m**
+- Treats *g-loss as a sound change to be modeled in the FST
+- Uses the etymologically fuller form `*taugmăz` in TSV
+- More "etymologically transparent" approach
+
+The key question: Was the *g still present in "late PGmc" (the stage we model)?
+
+### Source Research: Reconstruction Forms
+
+**Kroonen (p.511, *tauma-):**
+> "*tauma- m. 'rein, bridle, rope' — ON taumr m. 'id.', Far. teymur m. 'id.', Elfd.
+> tom m. 'id.', OE téam m. 'id.', OFri. tam m. 'id.', ODu. tém m. 'id.', Du. toom c.
+> 'id.', OHG zoum m. 'id.', G Zaum m. 'id.' (DRV)."
+>
+> "A mo-stem created to the root of *teuhan- (q.v.). **The original form was
+> *taugma-, which like *drauma- < *draugma- lost its *g.**"
+
+Kroonen uses **`*tauma-`** as his headword (post-loss form) but explicitly notes
+the "original form was *taugma-". Same for *drauma- < *draugma-.
+
+**Kroonen (p.101, *drauma-):**
+> "*drauma- m. 'dream' — ON draumr m. 'id.', Far. dreymur adj. 'id.', OE dréam
+> m. 'id.', E dream, OFri. dram m. 'id.', OS drém m. 'id.', Du. droom c. 'id.', OHG
+> troum m. 'id.', G Traum m. 'id.' > *d*roug*-mo- (DRV).
+>
+> Continuing *draugma-, a mo-stem derived from the strong verb *dreugan-
+> (q.v.)."
+
+Kroonen gives `*d*roug*-mo-` as the PIE form but uses `*drauma-` as the PGmc 
+reconstruction. The etymology shows *draugma- as an intermediate stage.
+
+**Orel (p.403, *tauxmaz):**
+> "*tauxmaz sb.m.: ON taumr 'bridle, rein', OE teám 'tie, offspring, family,
+> children', OFris tàm 'bridle, descendants, offspring', MLG tòm 'bridle, rein',
+> OHG zoum id. Derived from *teuxanan."
+
+Orel uses **`*tauxmaz`** (with the spirant) as his headword, representing the
+pre-loss stage.
+
+**Orel (p.75, *draumaz):**
+> "*draumaz sb.m.: ON draumr 'dream', OE dreám 'joy, pleasure', OFris dràm
+> 'dream', OS dròm id., OHG troum id."
+
+Notably, Orel uses `*draumaz` (without spirant) for 'dream' but `*tauxmaz`
+(with spirant) for 'team'. This inconsistency suggests different scholars handle
+this differently even within the same work.
+
+### Source Research: The *gm → *m Change
+
+**Timing of the change:**
+
+Kroonen explicitly states the *g was lost in PGmc: "The original form was
+*taugma-, which... lost its *g." He uses the post-loss forms as his standard
+reconstructions, suggesting he treats this as a PGmc-stage change.
+
+The development involves:
+- PIE *deuk-mn- (mo-stem to root *deuk- 'pull') 
+- → Pre-PGmc *teugma- (with regular ablaut *eu from *o-grade)
+- → PGmc *taugma- (with *eu > *au by Verner's Law voicing and vowel development)
+- → PGmc *tauma- (with *g-loss before *m)
+
+**Nature of the change:**
+
+This appears to be spirant-loss before nasal in a specific cluster environment.
+Compare the general PGmc treatment of clusters:
+- Kroonen (p.143): discusses *-mn- > *-bn- (as in *stebna- 'voice')
+- But *-gm- seems to simply lose the *g rather than developing a different stop
+
+No daughter language shows *-gm- > *-γm- > *-ʔm- or similar — all show complete
+*g-loss. This universality suggests the change happened early in PGmc.
+
+### Analysis: Which Approach is Better?
+
+**Arguments for Option A (TSV fix to `*taumăz`):**
+
+1. **Consistency**: Our TSV already uses `*draumăz` for drēam, not `*draugmăz`.
+   Using `*taumăz` would be parallel.
+
+2. **Kroonen's practice**: Kroonen uses `*tauma-` and `*drauma-` as his standard
+   PGmc reconstructions. If we follow his authority, we should use post-loss forms.
+
+3. **Simplicity**: No new FST rule needed. This is a data correction.
+
+4. **No daughter evidence for *gm**: No Germanic language shows evidence of a
+   *gm cluster (no **teahm, **tōhm, etc.). This suggests *g was lost very early.
+
+**Arguments for Option B (FST rule *gm → *m):**
+
+1. **Etymological transparency**: The TSV would show the fuller, more etymological
+   form `*taugmăz`, making the morphological derivation (mo-stem from *teuhan-)
+   clearer.
+
+2. **Orel's practice**: Orel uses `*tauxmaz`, suggesting some scholars prefer
+   the pre-loss form for reconstruction.
+
+3. **Modeling completeness**: Adding the rule makes the FST model more complete,
+   documenting a real PGmc sound change rather than hiding it in the input data.
+
+4. **Scope**: How many other words might need this rule? Are there other *gm
+   clusters we haven't noticed?
+
+**Potential affected words:**
+
+Searching for mo-stems from velar-final roots:
+- `*drauma-` (dream) — already uses post-loss form in TSV
+- `*tauma-` (team) — currently uses pre-loss form `*tauxmăz`
+- `*stauma-` (steam) — Kroonen p.488: "*stauma- m. 'steam' — OE stéam"
+  (no mention of original *staugma-, may be a different derivation)
+
+The affected set seems small: mainly tēam and drēam.
+
+### Decision Criteria
+
+**If we prioritize consistency with existing practice:**
+→ Option A: Fix TSV to `*taumăz` (matches drēam treatment)
+
+**If we prioritize etymological transparency and completeness:**
+→ Option B: Add FST rule *gm → *m, keep `*taugmăz` in TSV
+
+**If we want "correct PGmc":**
+→ Depends on definition. Kroonen's standard PGmc = post-loss; Orel is mixed.
+
+### Recommendation
+
+**Option A (TSV fix) is recommended** for these reasons:
+
+1. It maintains consistency with our existing `*draumăz` → drēam treatment
+2. It follows Kroonen's standard practice of using post-loss forms
+3. It requires no new FST infrastructure for a change that affects only 2 words
+4. The *gm → *m change is a very early PGmc development, arguably pre-dating
+   the "late PGmc" stage we model as FST input
+
+However, if the user prefers etymological transparency, Option B is viable:
+- Add rule: `define PGmcGmLoss {*g} -> 0 || _ {*m}`
+- Place early in PGmc rules (before any other cluster changes)
+- Keep `*taugmăz` in TSV
+
+### Current TSV State
+
+Row 2241: PROTOFORM `*tauxmăz`, PROTO `*tauxmăz`, expected `tēam`
+Row 1995: PROTOFORM `*draumăz`, PROTO `*draumăz`, expected `drēam` ✓
+
+The inconsistency (drēam uses post-loss, tēam uses pre-loss) suggests a data
+entry error for tēam rather than a deliberate choice.
+
+### Fix Applied (2026-04-09)
+
+**Decision: Implement as FST sound change rule (Option B with refinement)**
+
+Per user direction, the sound change `*gm → *m` should be handled by the 
+transducer rather than by ad hoc TSV adjustments. This makes the derivation
+transparent and pushes the reconstruction back to the earliest PGmc stage.
+
+**Key finding: The segment is *g (voiced), not *x (voiceless)**
+
+Kroonen marks both `*tauma-` and `*drauma-` as **(DRV)** — "Derived with Verner's 
+Law". This confirms the segment is the Verner-voiced [ɣ], not voiceless [x].
+
+Derivation:
+1. PIE *deuk-mó- (mo-stem to root *deuk- 'pull', with suffix accent)
+2. → Grimm's Law: *teux-mo- (PIE *d → *t, PIE *k → *x)
+3. → Verner's Law: *teug-mo- (voicing of *x → *g after unaccented syllable)
+4. → *taugma- (regular vowel developments)
+5. → *tauma- (this rule: `*g → Ø / _ *m`)
+
+**Implementation:**
+
+1. **Added cluster to grammar** (germanic.txt line 177):
+   ```
+   g:{*g} m:{*m} |
+   ```
+
+2. **Added PGmc sound change rule** (germanic.txt after PGmcRhotacism):
+   ```foma
+   # PGmc *gm → *m: spirant loss before *m (Kroonen p.511, p.101)
+   define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
+   ```
+
+3. **Added to rule composition** (PGmcConsonantRules):
+   ```foma
+   define PGmcConsonantRules PGmcFinalZLoss
+       .o. PGmcGmSimplification
+       .o. PGmcRhotacism;
+   ```
+
+4. **Updated TSV to use Verner-voiced forms**:
+   - tēam: `*tauxmăz` → `*taugmăz` (all language rows)
+   - drēam: `*draumăz` → `*draugmăz` (all language rows)
+
+**Results:**
+
+- `*taugmăz` → `tēam` ✓
+- `*draugmăz` → `drēam` ✓
+- No regressions
+- Mismatches: 44 → 43
+
+**Orel inconsistency resolved:**
+
+Orel (2003) uses `*tauxmaz` (with x) for team but `*draumaz` (without g) for dream.
+This inconsistency reflects the unsettled status of these forms in the literature.
+We follow Kroonen's consistent use of the Verner-voiced form `*g` for both,
+which is phonologically correct given the (DRV) marking.

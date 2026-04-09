@@ -174,6 +174,7 @@ define pgrmCodaComplex [
     f:{*f} t:{*t} |
     g:{*g} j:{*j} |
     g:{*g} l:{*l} |
+    g:{*g} m:{*m} |
     g:{*g} n:{*n} |
     g:{*g} w:{*w} |
     k:{*k} j:{*j} |
@@ -881,6 +882,16 @@ define PGmcRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _
 ];
 
+# PGmc *gm → *m: spirant loss before *m (Kroonen p.511, p.101)
+# Kroonen: "*tauma- ... The original form was *taugma-, which like *drauma- <
+# *draugma- lost its *g."
+# Both *tauma- and *drauma- are marked (DRV) = "with Verner's Law", confirming
+# the *g is voiced [ɣ], not voiceless *x. The voicing comes from Verner's Law
+# operating on the suffix-accented mo-stems: PIE *deuk-mó- → *teuxmo- → *teugmo-
+# (Verner) → *taugma- → *tauma- (this rule).
+# This is an early PGmc change; no daughter language shows *-gm-.
+define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
+
 # PGmc ō-stem gen.sg. *-ōz: R/T vol.2 §3.1.1 (p.58): "PGmc *gebōz → PWGmc *geba".
 # Z-loss with shortening of preceding bimoric *-ō to *-a, as a single PWGmc development.
 # R/T §3.3.1 (p.98): z-loss preceded rhotacism — final *-z was never rhotacized.
@@ -918,6 +929,7 @@ define PGmcBAllophony [
 # operates on underlying /b/, not the allophonic [β]. The allophonic
 # split is a late phonetic rule that must follow gemination.
 define PGmcConsonantRules PGmcFinalZLoss
+    .o. PGmcGmSimplification
     .o. PGmcRhotacism;
 
 define EnglishGhMarker [
