@@ -1,14 +1,13 @@
-Total mismatches: 46
+Total mismatches: 43
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    12
-  Phonology (other buckets):   27
+  Phonology (core buckets):    8
+  Phonology (other buckets):   28
 
 === CORE BUCKETS ===
-  breaking_missing__expected_eo: 1
-  breaking_missing__expected_eo_got_e: 4
+  breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
   no_output: 2
@@ -16,6 +15,7 @@ Total mismatches: 46
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 3
+  length_extra_other: 1
   epenthetic_vowel_missing: 2
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
@@ -34,6 +34,7 @@ Total mismatches: 46
   vowel_quality__a_vs_o: 1
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
+  vowel_quality__unstressed_e_o: 1
   vowel_quality__unstressed_o_a: 2
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
@@ -42,7 +43,6 @@ Total mismatches: 46
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__c_vs_ċ__cluster: 1
   cons_mismatch__f_vs_s__cluster: 1
-  cons_mismatch__h_vs_m__cluster: 1
   cons_mismatch__length_diff: 1
   cons_mismatch__n_vs_-__word_final: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
@@ -50,17 +50,11 @@ Total mismatches: 46
 
 === DETAILED EXAMPLES ===
 
-breaking_missing__expected_eo (1):
-  *brustz -> burst (expected brēost)
-  >> ISSUE: Breaking to ēo not applied
-  >> LIKELY: Breaking context (before r/l/h + C) not triggering for *e/i
-  >> ACTION: Check breaking rule for front vowels before velars
-
-breaking_missing__expected_eo_got_e (4):
-  *fedwōrez -> fedwore (expected fēower)
+breaking_missing__expected_eo_got_e (1):
   *weslon -> weslon (expected weosule)
-  *juką -> ġeuc (expected ġeoc)
-  *jugunθiz -> ġeugȳþ (expected ġeoguþ)
+  >> ISSUE: Expected ēo but got e/ē
+  >> LIKELY: Breaking rule missing this context or ordered wrong
+  >> ACTION: Check *e before r/l/h in breaking environments
 
 breaking_missing__expected_ie (1):
   *xawwją -> hew (expected hīeġ)
@@ -87,6 +81,9 @@ final_vowel_extra (3):
   *laimōn -> lāfe (expected lām)
   *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westane (expected west)
+
+length_extra_other (1):
+  *jugunθiz -> ġeogȳþ (expected ġeoguþ)
 
 epenthetic_vowel_missing (2):
   *strawjăną -> strewan (expected strewian)
@@ -151,6 +148,9 @@ vowel_quality__u_lowering_exception (5):
 vowel_quality__u_o_alternation (1):
   *widuwōn -> widowe (expected widuwe)
 
+vowel_quality__unstressed_e_o (1):
+  *fedwor -> fēowor (expected fēower)
+
 vowel_quality__unstressed_o_a (2):
   *mēnōθz -> mōnoþ (expected mōnaþ)
   *saiwălō -> sāwal (expected sāwol)
@@ -166,9 +166,6 @@ cons_mismatch__c_vs_ċ__cluster (1):
 
 cons_mismatch__f_vs_s__cluster (1):
   *wabsăz -> wæfs (expected wæsp)
-
-cons_mismatch__h_vs_m__cluster (1):
-  *tauxmăz -> tēahm (expected tēam)
 
 cons_mismatch__length_diff (1):
   *skellinăz -> sċillen (expected sċilling)
