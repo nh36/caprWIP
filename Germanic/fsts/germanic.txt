@@ -668,6 +668,22 @@ define OECjCleanup [
     {*ʤ} {*j} -> {*ʤ}
 ];
 
+# OEGlideUToEO: Convert palatal glide + u to eo diphthong (orthographic)
+# Campbell §172: "A palatal glide + u is written eo, io or iu in W-S and Kt."
+# R/T vol.2 p.5: "geoc 'yoke' is /jok/" — the eo is purely orthographic for /o/.
+# Brunner §92.1: geong, geoc with eo for u after initial j.
+# Luick §169: Rising diphthongs iu, eo after palatals with level stress.
+#
+# The glide *e was inserted by OEWsPalatalGlide: *juk → *jeuk.
+# At this point OldEnglishOrthography has converted *j → ġ.
+# We now merge the glide+u sequence into the digraph *eo.
+#
+# NOTE: ġ{*e}{*u} → ġ{*eo} because eo is the normalized WS spelling.
+# Northumbrian iu spellings (giung) are dialectal variants not modeled here.
+define OEGlideUToEO [
+    {*e} {*u} -> {*eo} || [ġ|ċ|{sċ}] _
+];
+
 define OldEnglishRemoveStars [
     {*ea} -> ea,
     {*ēa} -> ēa,
@@ -2425,6 +2441,7 @@ define OldEnglishRules OldEnglishAfterEpenthesis
     .o. OECjCleanup
     .o. OEXsMerge
     .o. OldEnglishOrthography
+    .o. OEGlideUToEO
     .o. OldEnglishRemoveStars;
 
 define OldEnglishReflexes OldEnglishRules .o. OldEnglishSurface;
