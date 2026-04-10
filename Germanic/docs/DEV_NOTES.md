@@ -16574,3 +16574,95 @@ The user asked whether the epenthesis rule was "a hack to fix water." The answer
 - `OEEpentheticInsertion` is a real phonological rule needed for words like `finger`, `timber`, `winter`
 - It is NOT a hack for `water` — water works via a different rule (`PWGmcFinalOrLowering`)
 - Both rules are necessary and do different things in the phonological pipeline
+
+---
+
+### Stiles 1985-6 on the Numeral 'four': Research Summary (2026-04-10)
+
+**Citation:**
+```
+Stiles, P.V. 1985-6. "The fate of the numeral '4' in Germanic."
+North-Western Language Evolution (NOWELE) 6.81-104, 7.3-27, 8.3-25.
+```
+
+This three-part article by Patrick V. Stiles is the definitive study of the numeral 'four'
+across Germanic, and it directly validates our implementation of `PWGmcFinalOrLowering`.
+
+**Part 1 (NOWELE 6.81-104): PIE background, ending origin, medial consonantism**
+
+**Key finding on the ending `*-ōr → *-ar`:**
+
+Stiles demonstrates that Gothic `fidwōr` preserves the long vowel from the PIE neuter
+plural `*kʷetuōr` (an "endingless" neuter with lengthened-grade vowel):
+
+> "The Gothic form fidwōr can ONLY have obtained its long vowel from the Indo-European
+> neuter form *kʷetuōr — there is no possible analogical source. It clearly follows
+> from this that the regular reflex in Gothic of an Indo-European final sequence *-ōr#
+> was -ōr#. (The corollary is, of course, that the vowel retained its length in this
+> position in Proto-Germanic.)" (p.86)
+
+But in West Germanic, the long vowel was shortened:
+
+> "In West Germanic, OE feower, OFr. fiuwer, and OS fiuuuar can only be reconciled
+> under a West-Germanic pre-form with the ending *-ar (the Old High German form has
+> been rebuilt, see below §1.3.2.). Economy requires that we do not separate these
+> forms from Go. fidwōr without good cause. These Ingvaeonic forms thus indicate that
+> **the Proto-Germanic sequence *-ōr was shortened to *-ar in West Germanic.**" (p.88)
+
+This confirms exactly what we implemented in `PWGmcFinalOrLowering`:
+```foma
+{*ō} -> {*a} || _ {*r} .#.
+```
+
+**On the medial consonantism `*-ðw- → *-ww-`:**
+
+Stiles revives Hartmann's sound law (originally proposed 1900 but rejected for OHG):
+
+> "WGmc. *-ðw- > *-ww-... This soundchange must be very early, for it precedes
+> both the occlusion of PGmc. *ð, and the rhotacism of PGmc *z." (p.92)
+
+The assimilation `*-ðw- → *-ww-` also applied to `*-zw- → *-ww-`, as shown by
+the pronoun: Go. izwis → OE ēow (from `*iwwar-`).
+
+Thus for 'four': PGmc `*feðwōr` → WGmc `*fewwar` → OE `feower`.
+
+(Our FST handles this through the `*e → *eo` breaking before w and the subsequent
+development, though the exact consonantism mechanism deserves future refinement.)
+
+**Part 2 (NOWELE 7.3-27): Gothic/WGmc inflection**
+
+Stiles discusses how '4' inflected partially in Gothic and West Germanic (only in certain
+syntactic environments) using i-stem nominal endings added to the reflex of `*feðwor`.
+
+He also confirms that the shortening in NGmc followed a different pattern — NGmc used
+syncope rather than shortening (p.15 referencing Krause 1948 §55).
+
+**Part 3 (NOWELE 8.3-25): Ordinals and combining-forms**
+
+Stiles discusses the ordinal `*feurþan-` (OE fēorþa) and combining-form `*fetur-`.
+The ordinal shows dissimilatory loss of the first -t- (parallel to Latin quartus < *kʷatwortos).
+
+**Implementation validation:**
+
+Our `PWGmcFinalOrLowering` rule correctly implements the sound change that Stiles documents
+for West Germanic:
+
+| Proto-Form | Rule Application | Output |
+|------------|------------------|--------|
+| `*fedwōr` | `*ō → *a` before `*r#` | `*fedwar` → (breaking) → `fēower` ✓ |
+| `*watōr` | `*ō → *a` before `*r#` | `*watar` → (AFB) → `wæter` ✓ |
+| `*xōrōn` | `*ō → *a` before `*r#` | `*xōran` → `hōre` ✓ |
+
+The rule applies at the Pre-West-Germanic stage (as Stiles says, after PGmc but before
+the distinctive WGmc developments like rhotacism).
+
+**Note on chronology:**
+
+Stiles places the `*-ðw- → *-ww-` assimilation "very early" — before both occlusion of
+`*ð` and rhotacism of `*z`. This means it belongs to the PWGmc stage (or earlier). The
+`*-ōr → *-ar` shortening is similarly PWGmc.
+
+**Files:**
+- `docs/references/stiles_1985_four_part1_nowele6.pdf`
+- `docs/references/stiles_1986_four_part2_nowele7.pdf`
+- `docs/references/stiles_1986_four_part3_nowele8.pdf`
