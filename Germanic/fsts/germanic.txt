@@ -336,8 +336,13 @@ define pgrmWeakTailVowel [
     i:{*i} j:{*j} ă:{*ă} z:{*z} |
     o:{*o} |
     o:{*o} n:{*n} |
-    # Numeral tail: *-or (e.g. PGmc *fedwor 'four', Goth. fidwor)
-    # R/T vol.2 §3.1.1: PGmc *fedwor → *fewwar → PWGmc *feuwar → OE fēower
+    # Numeral tail: *-wōr (e.g. PGmc *fedwōr 'four', Go. fidwōr)
+    # Structure: *fed (heavy) + -wōr (tail)
+    # R/T vol.2 §3.1.4: Bimoric *ō → *a before word-final *r in PWGmc
+    # Then regular *dw → *ww: *fedwōr → *fedwar → *fewwar → *feuwar → OE fēower
+    # Stiles 1985-6, NOWELE 6.81-104, 7.3-27, 8.3-25.
+    w:{*w} ō:{*ō} r:{*r} |
+    ō:{*ō} r:{*r} |
     o:{*o} r:{*r} |
     # Acc.sg. of an-stem nouns: PGmc *-onų (Fulk §7.31)
     # e.g. *hemonų 'heaven (acc.sg.)' → OE heofon
@@ -1158,6 +1163,19 @@ define PWGmcAiMonophthongization [
     {*ai} -> {*ā}
 ];
 
+# PWGmc: Bimoric *ō → *a before word-final *r (R/T vol.2 §3.1.4, pp.58-59; Fulk §5.3).
+# R/T: "Word-finally, and before word-final *r, surviving bimoric long ō-vowels
+#       became PWGmc *a"
+# Fulk: "Final r was also preserved, and before it ō apparently remained in Gothic
+#        and developed to a in WGmc."
+# Key examples:
+#   PGmc *fedwōr 'four' (Go. fidwōr) → PWGmc *fedwar → OE fēower
+#   PGmc *watōr 'water' (Go. wato) → PWGmc *watar → OE wæter
+# Gothic preserves *ō; WGmc shows *a outcome. Stiles 1985-6 is the key source.
+define PWGmcFinalOrLowering [
+    {*ō} -> {*a} || _ {*r} .#.
+];
+
 # PWGmc: Coronal fricative assimilation before *w (R/T vol.2 §3.1.1, pp.56-57).
 # R/T: "The intervocalic sequences *zw and *dw were assimilated to *ww."
 # Key examples:
@@ -1267,6 +1285,7 @@ define PWGmcJGemination [
 # Gemination creates heavy syllables that block syllabic-j vocalization.
 define PWGmcChanges [
     PWGmcAiMonophthongization
+    .o. PWGmcFinalOrLowering
     .o. PWGmcCoronalWAssimilation
     .o. PWGmcIjContraction
     .o. PWGmcJGemination
