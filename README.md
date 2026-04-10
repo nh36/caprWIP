@@ -7,14 +7,15 @@ CAPR is a Dockerized toolkit for comparative linguistics, combining:
 
 ## Project Components
 
-This repository contains **two parallel research pipelines** sharing common infrastructure:
+This repository contains **three parallel research pipelines** sharing common infrastructure:
 
 | Component | Description | Status |
 |-----------|-------------|--------|
 | **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Active development (62 of 1057 rows mismatched) |
 | **[Burmish/](Burmish/)** | Proto-Burmish reconstruction | Maintenance mode |
+| **[Celtic/](Celtic/)** | Proto-Celtic → daughter languages (Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, Celtiberian) | Early development |
 
-Both use the same web application and FST tooling but have independent data, transducers, and documentation.
+All three use the same web application and FST tooling but have independent data, transducers, and documentation.
 
 ## Quick Start
 
@@ -43,6 +44,9 @@ capr-v3-working/
 │   ├── data/               # Burmish wordlists
 │   ├── fsts/               # burmish.txt
 │   └── ...
+├── Celtic/                 # Proto-Celtic pipeline
+│   ├── data/               # celtic-aligned-final.tsv
+│   └── fsts/               # celtic.txt + compiled .bin per daughter language
 ├── app/                    # Shared web application
 │   ├── backend/            # Flask API (compare_fst.py, refish.py, etc.)
 │   └── frontend/           # Svelte cognate board UI
@@ -84,6 +88,30 @@ See [Germanic/README.md](Germanic/README.md) for detailed documentation.
 Proto-Burmish reconstruction using LingPy/LingRex for cognate detection.
 
 See [Burmish/README.md](Burmish/README.md) for documentation.
+
+## Celtic Pipeline
+
+Proto-Celtic FST-based sound change modeling covering Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, and Celtiberian.
+
+Key files:
+- `Celtic/fsts/celtic.txt` — Main FST mapping Proto-Celtic to all daughter languages
+- `Celtic/data/celtic-aligned-final.tsv` — Aligned proto-forms and daughter reflexes
+
+**Development workflow:**
+```bash
+# Compile FST
+docker compose exec -T backend bash -c "cd /usr/app && foma -q -l fsts/celtic.txt -e quit"
+```
+
+To use Celtic data in the UI, mount Celtic paths in `docker-compose.yml`:
+```yaml
+volumes:
+  - ./server:/usr/app
+  - ./Celtic/data:/usr/app/data
+  - ./Celtic/fsts:/usr/app/fsts
+```
+
+See [Celtic/README.md](Celtic/README.md) for full documentation.
 
 ## Documentation
 
