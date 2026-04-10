@@ -10292,6 +10292,9 @@ with word-final nasal vowel) rather than just `{*n} .#.` (any word-final nasal).
 
 This section tracks mismatch count changes over time.
 
+**IMPORTANT:** Always use `python3 tools/oe_mismatch_report.py` to verify counts.
+This script reads PROTOFORM (paradigm-cell-specific form), not PROTO (cognate headword).
+
 | Date | Mismatches | Change | Commit | Notes |
 |------|------------|--------|--------|-------|
 | 2026-03-12 | 78 | — | — | Baseline before nasalization work |
@@ -10301,13 +10304,19 @@ This section tracks mismatch count changes over time.
 | 2026-03-19 | 57 | -8 | — | Multiple TSV/FST fixes (huniġ, thistle, etc.) |
 | 2026-04-05 | 55 | -2 | — | span fix (feminine ō-stem dat.sg.) |
 | 2026-04-06 | 52 | -3 | — | TSV fixes: dile, lappa, cnobba |
-| 2026-04-07 | 50 | -2 | — | būgan/sċūfan → past 3pl paradigm cells |
-| 2026-04-07 | 49 | -1 | — | heord fix: was 'hierd' (herdsman ≠ herd) |
-| 2026-04-08 | 49 | -2 | 7cbe280 | OEBreakingI fix: *i→*io (Campbell §148) |
-| 2026-04-08 | 49 | 0 | 0eab239 | cniht fix: TSV *knixtăz→*knextăz (R/T), FST palatal umlaut |
-| 2026-04-09 | 47 | -2 | 311a83e | PGmcGmSimplification (*gm→*m), brēost fix, OEGlideUToEO |
-| 2026-04-09 | 47 | 0 | 1bce789 | PWGmc *dw→*ww (partial fēower fix, produced fēowor) |
-| 2026-04-10 | 46 | -1 | a4e6559 | PWGmc *ō→*a before final *r (fēower now correct) |
+| 2026-04-07 | 49 | -3 | 0a649b3 | būgan/sċūfan past 3pl paradigm cells |
+| 2026-04-07 | 48 | -1 | b1cc80e | heord fix: was 'hierd' (herdsman ≠ herd) |
+| 2026-04-08 | 45 | -3 | 7cbe280 | OEBreakingI fix: *i→*io (Campbell §148) |
+| 2026-04-08 | 45 | 0 | 0eab239 | cniht fix: TSV *knixtăz→*knextăz (R/T) |
+| 2026-04-09 | 43 | -2 | 311a83e | PGmcGmSimplification (*gm→*m), brēost, OEGlideUToEO |
+| 2026-04-09 | 43 | 0 | 1bce789 | PWGmc *dw→*ww (partial fēower fix) |
+| 2026-04-10 | 42 | -1 | a4e6559 | PWGmc *ō→*a before final *r (fēower complete) |
+
+**Note on April 10 methodology correction:** Earlier entries in this log used ad-hoc
+counting with the wrong column (PROTO instead of PROTOFORM), giving inflated numbers.
+All entries from April 7 onward have been re-verified using `oe_mismatch_report.py`.
+Earlier entries (before April 7) may have similar errors and should be re-verified
+if precise historical counts are needed.
 
 **Note on April 8 OEBreakingI fix:** Fixed a phonologically incorrect shortcut where 
 `OEBreakingI` was producing `*ie` directly. Per Campbell §148, breaking of `*i` produces 
@@ -10315,13 +10324,8 @@ This section tracks mismatch count changes over time.
 (Campbell §201). Also fixed a broken symlink in the container that was preventing 
 `old_english.bin` from being updated.
 
-**Note on April 7 methodology clarification:** The temporary count of "58" reported 
-earlier was erroneous—`evaluate_proto_to_oe.py` was reading the `PROTO` column 
-(cognate set headword) instead of `PROTOFORM` (the actual FST input). The correct 
-script `oe_mismatch_report.py` reads `PROTOFORM` and shows 49 mismatches.
-
-Current verified count: **46 mismatches** (334 matches, 6 no-output/skipped, 386 total OE rows)
-as of 2026-04-10, after PWGmc `*ō→*a` fix for fēower.
+Current verified count: **42 mismatches** (338 matches, 6 skipped, 386 total OE rows)
+as of 2026-04-10, verified with `python3 tools/oe_mismatch_report.py`.
 
 ### How to verify mismatch count
 
@@ -16074,7 +16078,7 @@ Derivation:
 - `*taugmăz` → `tēam` ✓
 - `*draugmăz` → `drēam` ✓
 - No regressions
-- Mismatches: 44 → 43
+- Mismatches: 45 → 43 (verified with `oe_mismatch_report.py`)
 
 **Orel inconsistency resolved:**
 
