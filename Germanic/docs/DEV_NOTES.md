@@ -16466,3 +16466,111 @@ as the authoritative treatment of this sound change.
 **Implementation:** Rule `PWGmcFinalOrLowering` (germanic.txt line ~1170) and 
 rule `PWGmcCoronalWAssimilation` (germanic.txt line ~1183).
 
+
+### PWGmc *ō → *a Rule: No Redundancy with Epenthesis (2026-04-10)
+
+**Question:** Was the `PWGmcFinalOrLowering` rule (`*ō → *a || _ *r .#.`) redundant given that
+`*watōr → wæter` was already working before the rule was added?
+
+**Investigation:**
+
+The user noted that `*watōr → wæter` appeared to work before the `*ō → *a` rule was added.
+Tracing revealed:
+
+1. **History of water in TSV:**
+   - Original: `*watną` (n-stem) — didn't work
+   - Changed to: `*watrą` (r-stem base) — worked via epenthesis
+   - Current: `*watōr` (nominative singular) — works via `*ō → *a` rule
+
+2. **Two derivation paths:**
+
+   Path A (current `*watōr`):
+   ```
+   *watōr → *watar (PWGmcFinalOrLowering)
+         → *wætær (a-fronting)
+         → wæter (unstressed vowel reduction)
+   ```
+
+   Path B (earlier `*watrą`):
+   ```
+   *watrą → *wætr (apocope of *ą, a-fronting)
+         → *wætEr (OEEpentheticInsertion: V C+ __ r# → E inserted)
+         → wæter (OEEpentheticFront: *E → *e)
+   ```
+
+3. **Conclusion:** **NO REDUNDANCY.** The rules do different things:
+   - `PWGmcFinalOrLowering` handles etymological long `*ō` before final `*r`
+   - `OEEpentheticInsertion` handles syllable structure (inserting vowel before final r after cluster)
+
+4. **The correct reconstruction `*watōr`:**
+   - Kroonen gives `*watar-/*watan-` (r/n heteroclitic stem)
+   - Nominative singular is `*watōr` with long `*ō`
+   - Gothic preserves `*ō` (cf. Go. fidwōr 'four')
+   - WGmc `*ō → *a` before final `*r` (R/T §3.1.4)
+
+The `*ō → *a` rule was needed to handle the etymologically correct reconstruction;
+the epenthesis rule would have been a workaround for an underspecified proto-form,
+but is still needed for other words (see next section).
+
+**Duplicate rule removal (2026-04-10):**
+
+During this investigation, I discovered that I had accidentally created a duplicate rule:
+- `PWGmcFinalOrLowering` (lines ~1175, added April 10)
+- `PWGmcPreFinalRShortening` (lines ~1246, added March 6)
+
+Both did the same thing: `{*ō} → {*a} || _ {*r} .#.`
+
+I removed `PWGmcPreFinalRShortening` and kept `PWGmcFinalOrLowering` (which has better
+documentation including the Stiles 1985-6 citation). No functionality change; just cleanup.
+
+### OEEpentheticInsertion: Parasitic Vowel in Final Consonant Clusters (2026-04-10)
+
+**The Rule:**
+`OEEpentheticInsertion` inserts an epenthetic vowel before final `*r` (and `*l` in specific contexts)
+when preceded by a consonant cluster:
+
+```foma
+{*r} -> {*E} {*r} || (V) C+ _ .#.
+```
+
+**Examples:**
+- PGmc `*fingrăz` → OE `finger` (via `*fingr → *fingEr → *finger`)
+- PGmc `*timbrą` → OE `timber` (via `*timbr → *timbEr → *timber`)
+- PGmc `*wintruz` → OE `winter` (via `*wintr → *wintrEr → *winter`)
+- PGmc `*hungruz` → OE `hungor` (via `*hungr → *hungrEr → *hungEr → *hungor`)
+
+**Is this a "real" rule or a hack?**
+
+This is a **real phonological rule** representing "parasitic vowel insertion" (also called "anaptyxis"
+or "svarabhakti vowel"). Campbell (OEG §§463-464) discusses the development of medial vowels 
+in unstressed syllables. R/T vol.2 §6.9.5 places this epenthesis in mid-7th century chronology.
+
+The rule applies because Old English (like other Germanic languages) resolved syllable-final
+consonant clusters by inserting a vowel to create a more pronounceable syllable structure:
+- `*Cr# → *CeR#` (where C = obstruent, R = sonorant)
+
+The quality of the epenthetic vowel depends on the preceding vowel:
+- After back vowels: `*E → *o` (e.g., `hungor`, `fugol`)
+- After front vowels: `*E → *e` (e.g., `finger`, `timber`)
+
+This is handled by `OEEpentheticBackShift` (→ *o) and `OEEpentheticFront` (→ *e).
+
+**Relationship to *watōr:**
+
+The user asked whether the epenthesis rule was "a hack to fix water." The answer is **no**:
+
+1. For `*watōr → wæter`, the rule that does the work is `PWGmcFinalOrLowering`:
+   `*watōr → *watar` (R/T §3.1.4: bimoric *ō → *a before word-final *r in PWGmc)
+
+2. The epenthesis rule (`OEEpentheticInsertion`) would only apply if we used `*watrą` as the
+   proto-form. In that case: `*watrą → *wætr → *wætEr → wæter`.
+
+3. The current TSV correctly uses `*watōr` (the reconstructed nominative singular of the r/n-stem),
+   so the derivation goes through `PWGmcFinalOrLowering`, not through epenthesis.
+
+4. Both paths yield `wæter`, but `*watōr` is the etymologically correct reconstruction.
+
+**Conclusion:**
+- `OEEpentheticInsertion` is a real phonological rule needed for words like `finger`, `timber`, `winter`
+- It is NOT a hack for `water` — water works via a different rule (`PWGmcFinalOrLowering`)
+- Both rules are necessary and do different things in the phonological pipeline
