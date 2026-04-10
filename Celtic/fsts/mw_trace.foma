@@ -1,0 +1,19 @@
+source fsts/celtic.txt
+
+# Trace *brātīr through each step  
+regex CelticProtoInput;
+apply down
+*brātīr
+
+regex CelticProtoInput .o. ProtoBrythPreLenRules;
+apply down
+*brātīr
+
+regex CelticProtoInput .o. ProtoBrythPreLenRules .o. ProtoBrythLenition;
+apply down
+*brātīr
+
+regex MWStarred;
+apply down
+*brātīr
+
