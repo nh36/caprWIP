@@ -13,7 +13,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 312	b a l	*balluz	b a l ( - - )	bal	Ball	87	German			C V C		ball	*balluz	3
 521	b ɑ n	*banną	b ɑ n ( - - )	bɑn	ban	142	Dutch					ban	*banną	4
 520	b æ n	*banną	b æ n ( - - )	bæn	ban	142	English					ban	*banną	4
-1936	b a n n e s	*bannas	b æ n ( - - ) e s	bænes	bannes	142	Old_English	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Original: *banną → bann (nom.sg.). Note: a-stem neuter, gen.sg. same as masc.				ban	*bannas	4
+1936	b a n n e s	*bannas	b æ n ( - - ) e s	bænes	bannes	142	Old_English	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Note: a-stem neuter, gen.sg. same as masc.	Original: *banną → bann (nom.sg.).			ban	*bannas	4
 519	b a n	*banną	b a n ( - - )	ban	Bann	142	German			C V C		ban	*banną	4
 221	b ɛ r x	*bergą	b ɛ r x ( - - )	bɛrx	berg	61	Dutch					barrow	*bergą	5
 220	b æ r əʊ	*bergą	b æ r əʊ ( - - )	bærəʊ	barrow	61	English					barrow	*bergą	5
@@ -168,7 +168,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1752	b ɛ r s t ə n	*brestăną	b ɛ r - s t ə n ( - - )	bɛrstən	bersten	480	German					burst	*brestăną	38
 193	k ɑ l f	*kalbăz	k ɑ l f ( - - )	kɑlf	kalf	54	Dutch					calf	*kalbăz	39
 192	k ɑː f	*kalbăz	k ɑː - f ( - - )	kɑːf	calf	54	English					calf	*kalbăz	39
-1975	ċ e a l f	*kalbăz	k ɑː - f ( - - )	kɑːf	ċealf	54	Old_English	TSV: cealf → ċealf; WS palatalized initial (R/T §6.4.1 rule 1: k before front vowel)				calf	*kalbăz	39
+1975	ċ e a l f	*kalbăz	k ɑː - f ( - - )	kɑːf	ċealf	54	Old_English	WS palatalized initial (R/T §6.4.1 rule 1: k before front vowel)	TSV: cealf → ċealf;			calf	*kalbăz	39
 191	k a l p	*kalbăz	k a l b ( - - )	kalp	Kalb	54	German					calf	*kalbăz	39
 993	k ɑu ʋ ə	*kewwăną	k ɑu ʋ ə - ( - - )	kɑuʋə	kauwen	272	Dutch					chew	*kewwăną	40
 992	ʧ uː	*kewwăną	ʧ uː - - - ( - - )	ʧuː	chew	272	English					chew	*kewwăną	40
@@ -188,7 +188,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 6	k ɔ r n	*kurną	k ɔ r n ( - - )	kɔrn	Korn	533	German					corn	*kurną	43
 1093	k uː	*kōz	k uː ( - - )	kuː	koe	299	Dutch	TSV fix: proto *kōwz → *kōz (Kroonen *kō- ~ *ku-, nom.sg. *kōz; -w- was spurious, not in Kroonen or R/T)				cow	*kōz	44
 1092	k aʊ	*kōz	k aʊ ( - - )	kaʊ	cow	299	English	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)				cow	*kōz	44
-1980	c ȳ	*kūi	c ȳ	kyː	cȳ	299	Old_English	TSV fix: using PGmc dat.sg. *kūi (> OE cȳ by i-umlaut, R/T §6.6.1). Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich. See docs/analysis/cow_root_noun_investigation.md				cow	*kūi	44
+1980	c ȳ	*kūi	c ȳ	kyː	cȳ	299	Old_English	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.	TSV fix: using PGmc dat.sg. *kūi (> OE cȳ by i-umlaut, R/T §6.6.1). | See docs/analysis/cow_root_noun_investigation.md			cow	*kūi	44
 1091	k uː	*kōz	k uː ( - - )	kuː	Kuh	299	German	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)				cow	*kōz	44
 1508	k r ɑ x t	*kraftiz	k r ɑ x t ( - - )	krɑxt	kracht	413	Dutch					craft	*kraftiz	45
 1507	k r ɑː f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	craft	413	English					craft	*kraftiz	45
@@ -228,7 +228,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German					dew	*dawwō	53
 896	d ɪ l ə	*deljăz	d ɪ l ( - ə - )	dɪlə	dille	246	Dutch					dill	*deljăz	54
 895	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	dill	246	English					dill	*deljăz	54
-1990	d i l e	*deliz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	"I-stem *deliz per Kroonen p.93: ""evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)"". OE generalized i-stem; OS/OHG generalized ja-stem. See DEV_NOTES §dile."				dill	*deliz	54
+1990	d i l e	*deliz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	"I-stem *deliz per Kroonen p.93: ""evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)"". OE generalized i-stem; OS/OHG generalized ja-stem. §dile."	See DEV_NOTES			dill	*deliz	54
 894	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	Dill	246	German	BOR			Low German	dill	*deljăz	54
 1584	d uː n	*dōną	d uː - n ( - - )	duːn	doen	434	Dutch					do	*dōną	55
 1583	d uː	*dōną	d uː - - ( - - )	duː	do	434	English					do	*dōną	55
@@ -319,7 +319,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1700	f ɪ ŋ ə r	*fingrăz	f ɪ ŋ - ə r ( - - )	fɪŋər	Finger	466	German					finger	*fingrăz	75
 1588	v yː r	*fūri	v yː - - r	vyːr	vuur	435	Dutch					fire	*fūri	76
 1587	f aɪ ə	*fūri	f aɪ - ə r	faɪə	fire	435	English					fire	*fūri	76
-2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr. See DEV_NOTES.md.				fire	*fūri	76
+2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr.	See DEV_NOTES.md.			fire	*fūri	76
 1586	f ɔy ə r	*fūri	f ɔy - ə r	fɔyər	Feuer	435	German					fire	*fūri	76
 1262	v ɪ s	*fiskăz	v ɪ s - ( - - )	vɪs	vis	346	Dutch					fish	*fiskăz	77
 1261	f ɪ ʃ	*fiskăz	f ɪ ʃ - ( - - )	fɪʃ	fish	346	English					fish	*fiskăz	77
@@ -377,7 +377,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1885	f ɔ l ɡ ə n	*fulgēną	f ɔ l ɡ ə n ( - - )	fɔlɡən	folgen	517	German					follow	*fulgēną	88
 1393	v ə r l iː z ə	*leusăną	( v ə r ) l iː z ə - ( - - )	vərliːzə	verliezen	381	Dutch					forlorn	*leusăną	89
 1392	f ə l ɔː n	*leusăną	( f ə - ) l ɔː - - - ( n - )	fəlɔːn	forlorn	381	English					forlorn	*leusăną	89
-2028	l ē o s a n	*leusăną	l ē o s a n ( - - )	leːosɑn	lēosan	381	Old_English	TSV fix: was forloren (prefixed past participle for-lēosan); changed to lēosan (bare infinitive matching proto *leusăną, Kroonen *leusan-). Du verliezen / G verlieren are also prefixed forms of this verb.				forlorn	*leusăną	89
+2028	l ē o s a n	*leusăną	l ē o s a n ( - - )	leːosɑn	lēosan	381	Old_English	Du verliezen / G verlieren are also prefixed forms of this verb.	TSV fix: was forloren (prefixed past participle for-lēosan); changed to lēosan (bare infinitive matching proto *leusăną, Kroonen *leusan-).			forlorn	*leusăną	89
 1391	f ɛ r l iː r ə n	*leusăną	( f ɛ r ) l iː r ə n ( - - )	fɛrliːrən	verlieren	381	German					forlorn	*leusăną	89
 363	v iː r	*fedwōr	v iː ( - - - ) r ( - - )	viːr	vier	100	Dutch					four	*fedwōr	90
 362	f ɔː	*fedwōr	f ɔː ( - - - ) r ( - - )	fɔː	four	100	English					four	*fedwōr	90
@@ -400,7 +400,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 2033	f r ē o n d	*frijōndz	f r ɛ ( - - ) n d ( - )	frɛnd	frēond	463	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			friend	*frijōndz	94
 1690	f r ɔy n t	*frijōndz	f r ɔy ( - - ) n d ( - )	frɔynt	Freund	463	German					friend	*frijōndz	94
 1482	f r aɪ t	*furxtiθō	f - r aɪ - t ( - - - )	fraɪt	fright	406	English	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iθō-abstract from adj. *furhta-; R/T line 21553)				fright	*furxtiθō	338
-2034	f y r h t u	*furxtiθō	f y r h t u	fyrxtu	fyrhtu	406	Old_English	TSV fix: proto *furxtīn → *furxtiθō, target fryhtu → fyrhtu. PGmc *furhtiθō (*iθō-abstract, R/T §6.8) → fyrhtu by i-umlaut + medial syncope + dental assimilation + ō-shortening. Non-metathesized form (Campbell §459: r-metathesis is sporadic). See docs/analysis/fryhtu_investigation.md				fright	*furxtiθō	338
+2034	f y r h t u	*furxtiθō	f y r h t u	fyrxtu	fyrhtu	406	Old_English	PGmc *furhtiθō (*iθō-abstract, R/T §6.8) → fyrhtu by i-umlaut + medial syncope + dental assimilation + ō-shortening. Non-metathesized form (Campbell §459: r-metathesis is sporadic).	TSV fix: proto *furxtīn → *furxtiθō, target fryhtu → fyrhtu. | See docs/analysis/fryhtu_investigation.md			fright	*furxtiθō	338
 1481	f ʊ r x t	*furxtiθō	f ʊ r - x t ( - - - )	fʊrxt	Furcht	406	German	TSV fix: proto *furxtīn → *furxtiθō (PGmc *iθō-abstract; OHG forhta < ō-stem *furhtō- but proto unified to *furhtiθō for cognate set)				fright	*furxtiθō	338
 456	v ɔ r s t	*frustą	v - ɔ r s t ( - - )	vɔrst	vorst	125	Dutch					frost	*frustą	95
 455	f r ɔ s t	*frustą	f r ɔ - s t ( - - )	frɔst	frost	125	English					frost	*frustą	95
@@ -427,7 +427,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 619	ɡ ɪ f t	*geftiz	ɡ ɪ f t ( - - )	ɡɪft	Gift	171	German					gift	*geftiz	99
 752	x eː v ə	*gebăną	x eː v ə - ( - - )	xeːvə	geven	206	Dutch					give	*gebăną	100
 751	ɡ ɪ v	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	give	206	English					give	*gebăną	100
-2041	ġ i e f a n	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	ġiefan	206	Old_English	TSV: giefan → ġiefan; WS palatalized initial (R/T §6.4.1 rule 1: g before front vowel)				give	*gebăną	100
+2041	ġ i e f a n	*gebăną	ɡ ɪ v - - ( - - )	ɡɪv	ġiefan	206	Old_English	WS palatalized initial (R/T §6.4.1 rule 1: g before front vowel)	TSV: giefan → ġiefan;			give	*gebăną	100
 750	ɡ eː b ə n	*gebăną	ɡ eː b ə n ( - - )	ɡeːbən	geben	206	German					give	*gebăną	100
 1876	x ɔ t	*gudą	x ɔ t	xɔt	god	514	Dutch					god	*gudą	101
 1875	ɡ ɔ d	*gudą	ɡ ɔ d	ɡɔd	god	514	English					god	*gudą	101
@@ -483,7 +483,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 392	h a n t	*xanduz	h a n d ( - - )	hant	Hand	108	German					hand	*xanduz	113
 532	h ɑ n d ə l ə	*xandlōjăną	h ɑ n d ə l ( ə - - - - - )	hɑndələ	handelen	145	Dutch					handle	*xandlōjăną	114
 531	h æ n d ə l	*xandlōjăną	h æ n d ə l ( - - - - - - )	hændḷ	handle	145	English					handle	*xandlōjăną	114
-2055	h a n d l i a n	*xandlōjăną	h a n d l i a n ( - - - - - )	hɑndliɑn	handlian	145	Old_English	TSV fix: was handle (noun f.); changed to handlian (verb 'to handle' < *handulōną, Kroonen/Wiktionary). Du handelen / G handeln are the verb.				handle	*xandlōjăną	114
+2055	h a n d l i a n	*xandlōjăną	h a n d l i a n ( - - - - - )	hɑndliɑn	handlian	145	Old_English	Du handelen / G handeln are the verb.	TSV fix: was handle (noun f.); changed to handlian (verb 'to handle' < *handulōną, Kroonen/Wiktionary).			handle	*xandlōjăną	114
 530	h a n d ə l n	*xandlōjăną	h a n d ə l ( - n - - - - )	handəln	handeln	145	German					handle	*xandlōjăną	114
 452	h ɑː m	*xarmăz	h ɑː - m ( - - )	hɑːm	harm	124	English					harm	*xarmăz	340
 2056	h e a r m	*xarmăz	h ɑː - m ( - - )	hɑːm	hearm	124	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			harm	*xarmăz	340
@@ -552,7 +552,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1444	h ɛ l f ə n	*xelpăną	h ɛ l f ə n ( - - )	hɛlfən	helfen	395	German					help	*xelpăną	128
 477	h ɪ l f ə	*xelpō	h ɪ l f ə	hɪlfə	Hilfe	131	German					help	*xelpō	128
 345	h ɜː d	*xerdō	h ɜː - d ( - )	hɜːd	herd	95	English					herd	*xerdō	342
-2073	h e o r d	*xerdō	h ɜː - d ( - )	hɜːd	heord	95	Old_English	TSV fix: was 'hierd' (herdsman) but *xerdō 'herd' (noun) > heord (R/T p.182); hierde 'herdsman' < *hirdijaz (R/T p.248)				herd	*xerdō	342
+2073	h e o r d	*xerdō	h ɜː - d ( - )	hɜːd	heord	95	Old_English		TSV fix: was 'hierd' (herdsman) but *xerdō 'herd' (noun) > heord (R/T p.182); hierde 'herdsman' < *hirdijaz (R/T p.248)			herd	*xerdō	342
 344	h eː r d ə	*xerdō	h eː r t ( ə )	heːrdə	Herde	95	German	BOR				herd	*xerdō	342
 93	h ɑu ʋ ə	*xawwăną	h - ɑu ʋ ə - ( - - )	hɑuʋə	houwen	26	Dutch					hew	*xawwăną	129
 92	h j uː	*xawwăną	h j uː - - - ( - - )	hjuː	hew	26	English					hew	*xawwăną	129
@@ -710,7 +710,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1824	l au s	*lūsz	l au s ( - )	laus	Laus	500	German					louse	*lūsz	162
 892	l ɔ ŋ	*lungō	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch					lung	*lungō	163
 891	l ʌ ŋ	*lungō	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English					lung	*lungō	163
-2114	l u n g e n	*lunganjō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). Previous TSV had *lungō (simpler n-stem per Kroonen p.367), but OE lungen specifically reflects the *-anjō derivative. Grammar extended to accept *-anjō suffix (2026-04-05).				lung	*lungō	163
+2114	l u n g e n	*lunganjō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). 367), but OE lungen specifically reflects the *-anjō derivative.	Previous TSV had *lungō (simpler n-stem per Kroonen p. | Grammar extended to accept *-anjō suffix (2026-04-05).			lung	*lungō	163
 890	l ʊ ŋ ə	*lungō	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German					lung	*lungō	163
 1329	l ʉ s t	*lustuz	l ʉ s t ( - - )	lʉst	lust	364	Dutch					lust	*lustuz	164
 1328	l ʌ s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	English					lust	*lustuz	164
@@ -730,7 +730,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 987	m a l ts	*maltăz	m a l ts ( - - )	malt͡s	Malz	271	German					malt	*maltăz	167
 1928	m ɑ n	*mannăz	m ɑ ( - - ) n	mɑn	man	529	Dutch					man	*mannăz	168
 1927	m æ n	*mannăz	m æ ( - - ) n	mæn	man	529	English					man	*mannăz	168
-2119	m a n n e s	*mannas	m æ ( - - ) n e s	mɒnːes	mannes	529	Old_English	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate orthographically. Original: *mannăz → mann (nom.sg.).				man	*mannas	168
+2119	m a n n e s	*mannas	m æ ( - - ) n e s	mɒnːes	mannes	529	Old_English	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate orthographically.	Original: *mannăz → mann (nom.sg.).			man	*mannas	168
 1926	m a n	*mannăz	m a ( - - ) n	man	Mann	529	German					man	*mannăz	168
 44	m ɑ r k	*markō	m ɑ r k -	mɑrk	mark	12	Dutch					march	*markō	169
 43	m ɑː ʧ	*markō	m ɑː - ʧ -	mɑːʧ	march	12	English					march	*markō	169
@@ -870,7 +870,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1549	r ɪ n d ə	*rindō	r ɪ n d ə	rɪndə	Rinde	425	German					rind	*rindō	351
 1385	r ɔ k	*rukkăz	r ɔ k ( - - )	rɔk	rok	379	Dutch					coat	*rukkăz	200
 1384	r ɒ k	*rukkăz	r ɒ k ( - - )	rɒk	rock	379	English					coat	*rukkăz	200
-2155	r o c c	*rukkăz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Garment word: OE rocc 'tunic' (brēostrocc, pistolrocc etc.), from PGmc *rukkăz (a-stem). Previous entry conflated stone and garment etymologies.				coat	*rukkăz	200
+2155	r o c c	*rukkăz	r ɔ k ( - - )	rɔk	rocc	379	Old_English	Garment word: OE rocc 'tunic' (brēostrocc, pistolrocc etc.), from PGmc *rukkăz (a-stem).	Previous entry conflated stone and garment etymologies.			coat	*rukkăz	200
 1383	ʁ ɔ k	*rukkăz	ʁ ɔ k ( - - )	ʁɔk	Rock	379	German					coat	*rukkăz	200
 1738	r eː	*raixōn	r eː ( - - - )	reː	ree	476	Dutch					roe	*raixōn	201
 1737	r əʊ	*raixōn	r əʊ ( - - - )	rəʊ	roe	476	English					roe	*raixōn	201
@@ -1040,7 +1040,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1813	ʃ m iː r ə n	*smerwijăną	ʃ m iː r - - ə n ( - - )	ʃmiːrən	schmieren	497	German					smear	*smerwijăną	237
 1059	s n eː ʋ	*snaiwăz	s n eː ( ʋ - - )	sneːʋ	sneeuw	290	Dutch					snow	*snaiwăz	238
 1058	s n əʊ	*snaiwăz	s n əʊ ( - - - )	snəʊ	snow	290	English					snow	*snaiwăz	238
-2199	s n ā w	*snaiwăz	s n əʊ ( - - - )	snɑːw	snāw	290	Old_English	TSV fix: proto *snaigwăz → *snaiwăz (Kroonen *snaiwa-, R/T *snaiwaz; no labiovelar in this etymology).	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			snow	*snaiwăz	238
+2199	s n ā w	*snaiwăz	s n əʊ ( - - - )	snɑːw	snāw	290	Old_English		Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *snaigwăz → *snaiwăz (Kroonen *snaiwa-, R/T *snaiwaz; no labiovelar in this etymology).			snow	*snaiwăz	238
 1057	ʃ n eː	*snaiwăz	ʃ n eː ( - - - )	ʃneː	Schnee	290	German					snow	*snaiwăz	238
 1100	z ɔ r x	*surgō	z ɔ r x -	zɔrx	zorg	301	Dutch					sorrow	*surgō	239
 1099	s ɔ r əʊ	*surgō	s ɔ r əʊ -	sɔrəʊ	sorrow	301	English					sorrow	*surgō	239
@@ -1054,7 +1054,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1358	s p æ n	*spannăną	s p æ n - - ( - - )	spæn	span	372	English					span	*spannăną	241
 2202	s p a n n a n	*spannăną	s p æ n - - ( - - )	spæn	spannan	372	Old_English	OE target: spann→spannan (inf. of str.v. class VII; noun 'spann' in *spannō row)				span	*spannăną	241
 570	s p æ n	*spannō	s p æ n ( - )	spæn	span	156	English					span	*spannō	241
-2203	s p a n n e	*spannăi	s p æ n ( - )	spæn	spanne	156	Old_English	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ăi preserves medial geminate; unstressed *ăi→*ē (R/T §6.1.5). See DEV_NOTES §fem-ō-stem-datsg.				span	*spannăi	241
+2203	s p a n n e	*spannăi	s p æ n ( - )	spæn	spanne	156	Old_English	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ăi preserves medial geminate; unstressed *ăi→*ē (R/T §6.1.5). §fem-ō-stem-datsg.	See DEV_NOTES			span	*spannăi	241
 1357	ʃ p a n ə n	*spannăną	ʃ p a n ə n ( - - )	ʃpanən	spannen	372	German					span	*spannăną	241
 569	ʃ p a n ə	*spannō	ʃ p a n ( ə )	ʃpanə	Spanne	156	German					span	*spannō	241
 1232	s p ɑ r	*sparrô	s p ɑ r - -	spɑr	spar	338	Dutch					spar	*sparrô	242
@@ -1177,7 +1177,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1365	z au f ə n	*sūpăną	z au f ə n ( - - )	zaufən	saufen	374	German					sup	*sūpăną	269
 1283	z ʋ aː l yː ʋ	*swalwōn	z ʋ aː l ( yː ʋ - - )	zʋaːlyːʋ	zwaluw	352	Dutch					swallow	*swalwōn	270
 1282	s ʋ ɔ l əʊ	*swalwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swallow	352	English					swallow	*swalwōn	270
-2234	s w e a l w e	*swalwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swealwe	352	Old_English	Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the verb 'to swallow' | TSV fix: proto *swalgwōn → *swalwōn (Kroonen *swalwōn-, R/T *swalwa; no *g in this etymology, confused with *swelganą to swallow).				swallow	*swalwōn	270
+2234	s w e a l w e	*swalwōn	s ʋ ɔ l ( əʊ - - - )	sʋɔləʊ	swealwe	352	Old_English	Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the verb 'to swallow'	TSV fix: proto *swalgwōn → *swalwōn (Kroonen *swalwōn-, R/T *swalwa; no *g in this etymology, confused with *swelganą to swallow).			swallow	*swalwōn	270
 1281	ʃ v a l b ə	*swalwōn	ʃ v a l ( - b ə - )	ʃvalbə	Schwalbe	352	German					swallow	*swalwōn	270
 1630	s ʋ ɔ n	*swanăz	s ʋ ɔ n ( - - )	sʋɔn	swan	447	English					swan	*swanăz	360
 2235	s w a n	*swanas	s ʋ ɔ n ( - - )	sʋɔn	swanes	447	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *swanas (> swanes)		swan	*swanas	360
@@ -1210,7 +1210,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 2242	t ī e n	*texun	t ɛ - - n	tɛn	tīen	237	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*texun	276
 861	ts eː n	*texun	ts eː - - n	t͡seːn	zehn	237	German					ten	*texun	276
 1804	θ eɪ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	thane	494	English					thane	*θegnăz	362
-2243	þ e ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English	TSV fix: target þæġn → þeġn (R/T reconstruct *θegnaz with *e and give OE þegn, matching pipeline output).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			thane	*θegnăz	362
+2243	þ e ġ n	*θegnăz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: target þæġn → þeġn (R/T reconstruct *θegnaz with *e and give OE þegn, matching pipeline output).			thane	*θegnăz	362
 1803	d eː ɡ ə n	*θegnăz	d eː ɡ ə n ( - - )	deːɡən	Degen	494	German					thane	*θegnăz	362
 1198	d ɑ ŋ k	*θankăz	d ɑ ŋ k ( - - )	dɑŋk	dank	328	Dutch	!				thanks	*θankăz	277
 1197	θ æ ŋ k s	*θankăz	θ æ ŋ k ( - s )	θæŋks	thanks	328	English	!				thanks	*θankăz	277
@@ -1269,11 +1269,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 2257	t ī d	*tīdiz	t aɪ d ( - - )	taɪd	tīd	263	Old_English	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'				tide	*tīdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German					tide	*tīdiz	290
 814	t ɪ m b ə	*timrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English					timber	*timrą	363
-2258	t i m b e r	*timbrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	TSV fix: proto *timrą → *timbrą (Kroonen *timbra- with *b; OE timber).	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der)			timber	*timbrą	363
+2258	t i m b e r	*timbrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	OE timber).	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der) | TSV fix: proto *timrą → *timbrą (Kroonen *timbra- with *b;			timber	*timbrą	363
 813	ts ɪ m ə r	*timrą	ts ɪ m - ə r ( - - )	t͡sɪmər	Zimmer	223	German					timber	*timrą	363
 1723	t eː n	*taixōn	t eː ( - - n )	teːn	teen	472	Dutch	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-; -w- from PIE labiovelar already lost in NWGmc)				toe	*taixōn	291
 1722	t əʊ	*taixōn	t əʊ ( - - - )	təʊ	toe	472	English	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-)				toe	*taixōn	291
-2259	t ā	*taixōn	t ā	taː	tā	472	Old_English	TSV fix: proto *taixwō → *taixōn (R/T §6.6 line 18000: PNWGmc *taihōn- > PWGmc *taihā > OE tāhe > tā by intervocalic h-loss + contraction). See docs/analysis/four_complex_tsv_items.md				toe	*taixōn	291
+2259	t ā	*taixōn	t ā	taː	tā	472	Old_English		TSV fix: proto *taixwō → *taixōn (R/T §6.6 line 18000: PNWGmc *taihōn- > PWGmc *taihā > OE tāhe > tā by intervocalic h-loss + contraction). | See docs/analysis/four_complex_tsv_items.md			toe	*taixōn	291
 1721	ts eː ə	*taixōn	ts eː ( - ə - )	t͡seːə	Zehe	472	German	TSV fix: proto *taixwō → *taixōn (R/T PNWGmc *taihōn-)				toe	*taixōn	291
 1592	t eː k ə	*taikną	t eː k ə - ( - - )	teːkə	teken	436	Dutch					token	*taikną	292
 1591	t əʊ k ə n	*taikną	t əʊ k ə n ( - - )	təʊkən	token	436	English					token	*taikną	292
@@ -1332,7 +1332,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1277	v ɛ s p ə	*wabsăz	v ɛ s p - ( ə - )	vɛspə	Wespe	351	German					wasp	*wabsăz	303
 1132	ʋ aː t ə r	*watną	ʋ aː t ə r	ʋaːtər	water	310	Dutch					water	*watną	304
 1131	ʋ ɔː t ə	*watną	ʋ ɔː t ə r	ʋɔːtə	water	310	English					water	*watną	304
-2274	w æ t e r	*watōr	ʋ ɔː t ə r	ˈwæter	wæter	310	Old_English	TSV fix: proto *watną → *watōr (Kroonen *watar-/*watan- r/n-stem, nom.sg. *watōr; R/T §3.1.4 *ō→*a before final *r in PWGmc).	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			water	*watōr	304
+2274	w æ t e r	*watōr	ʋ ɔː t ə r	ˈwæter	wæter	310	Old_English	R/T §3.1.4 *ō→*a before final *r in PWGmc).	Source: Wiktionary Old English Swadesh list (retrieved 2025-12-12) | Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *watną → *watōr (Kroonen *watar-/*watan- r/n-stem, nom.sg. *watōr;			water	*watōr	304
 1130	v a s ə r	*watną	v a s ə r	vasər	Wasser	310	German					water	*watną	304
 849	ʋ ɑ s	*waxsą	ʋ ɑ - s ( - - )	ʋɑs	was	233	Dutch					wax	*waxsą	305
 696	ʋ ɑ s ə	*waxsăną	ʋ ɑ - s ə - ( - - )	ʋɑsə	wassen	191	Dutch					wax	*waxsăną	305
@@ -1372,7 +1372,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1119	v ɪ d ə r	*wiθră	v ɪ d ə r ( - )	vɪdər	Widder	307	German					wether	*wiθră	312
 413	ʋ ɑ l	*walăz	ʋ ɑ l ( - - )	ʋɑl	wal	113	Dutch					whale	*walăz	313
 412	ʋ eɪ l	*walăz	ʋ eɪ l ( - - )	ʋeɪl	whale	113	English					whale	*walăz	313
-2284	h w æ l	*xwalăz	ʋ eɪ l ( - - )	ʋeɪl	hwæl	113	Old_English	TSV fix: proto *walăz → *xwalăz (Kroonen *hwalaz with initial *hw-; OE hwæl).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			whale	*xwalăz	313
+2284	h w æ l	*xwalăz	ʋ eɪ l ( - - )	ʋeɪl	hwæl	113	Old_English	OE hwæl).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: proto *walăz → *xwalăz (Kroonen *hwalaz with initial *hw-;			whale	*xwalăz	313
 411	v aː l	*walăz	v aː l ( - - )	vaːl	Wal	113	German					whale	*walăz	313
 1787	ʋ ɛɪ l	*xwīlō	ʋ ɛɪ l ( - )	ʋɛɪl	wijl	489	Dutch					while	*xwīlō	314
 1786	ʋ aɪ l	*xwīlō	ʋ aɪ l ( - )	ʋaɪl	while	489	English					while	*xwīlō	314
@@ -1433,7 +1433,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1049	v ʊ n d ə r	*wundrą	v ʊ n d ə r ( - - )	vʊndər	Wunder	288	German	MT				wonder	*wundrą	324
 1486	ʋ ɔ l	*wullo	ʋ ɔ l -	ʋɔl	wol	407	Dutch					wool	*wullo	325
 1485	ʋ ʊ l	*wullo	ʋ ʊ l -	ʋʊl	wool	407	English					wool	*wullo	325
-2300	w u l l	*wullō	ʋ ʊ l -	ʋʊl	wull	407	Old_English	EXCEPTION: u-lowering blocked near labials (Luick §78, R/T §2.3.1, Brunner §68). FST outputs regular woll; attested wull is genuine lexical exception. See DEV_NOTES §NWGmc-u-lowering-exceptions.				wool	*wullō	325
+2300	w u l l	*wullō	ʋ ʊ l -	ʋʊl	wull	407	Old_English	EXCEPTION: u-lowering blocked near labials (Luick §78, R/T §2.3.1, Brunner §68). FST outputs regular woll; attested wull is genuine lexical exception. §NWGmc-u-lowering-exceptions.	See DEV_NOTES			wool	*wullō	325
 1484	v ɔ l ə	*wullo	v ɔ l ə	vɔlə	Wolle	407	German					wool	*wullo	325
 235	ʋ oː r t	*wurdą	ʋ oː r t ( - - )	ʋoːrt	woord	65	Dutch					word	*wurdą	326
 234	ʋ ɜː d	*wurdą	ʋ ɜː - d ( - - )	ʋɜːd	word	65	English					word	*wurdą	326
