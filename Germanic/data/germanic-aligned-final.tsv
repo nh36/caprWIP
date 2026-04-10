@@ -228,7 +228,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1518	t au	*dawwō	t - au - ( - )	tau	Tau	416	German					dew	*dawwō	53
 896	d ɪ l ə	*deljăz	d ɪ l ( - ə - )	dɪlə	dille	246	Dutch					dill	*deljăz	54
 895	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	dill	246	English					dill	*deljăz	54
-1990	d i l e	*deliz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	"I-stem *deliz per Kroonen p.93: ""evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)"". OE generalized i-stem; OS/OHG generalized ja-stem. §dile."	See DEV_NOTES			dill	*deliz	54
+1990	d i l e	*deliz	d ɪ l ( - - - )	dɪl	dile	246	Old_English	"I-stem *deliz per Kroonen p.93: ""evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)"". OE generalized i-stem; OS/OHG generalized ja-stem."	See DEV_NOTES §dile.			dill	*deliz	54
 894	d ɪ l	*deljăz	d ɪ l ( - - - )	dɪl	Dill	246	German	BOR			Low German	dill	*deljăz	54
 1584	d uː n	*dōną	d uː - n ( - - )	duːn	doen	434	Dutch					do	*dōną	55
 1583	d uː	*dōną	d uː - - ( - - )	duː	do	434	English					do	*dōną	55
@@ -710,7 +710,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1824	l au s	*lūsz	l au s ( - )	laus	Laus	500	German					louse	*lūsz	162
 892	l ɔ ŋ	*lungō	l ɔ ŋ - ( - - )	lɔŋ	long	245	Dutch					lung	*lungō	163
 891	l ʌ ŋ	*lungō	l ʌ ŋ - ( - - )	lʌŋ	lung	245	English					lung	*lungō	163
-2114	l u n g e n	*lunganjō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). 367), but OE lungen specifically reflects the *-anjō derivative.	Previous TSV had *lungō (simpler n-stem per Kroonen p. | Grammar extended to accept *-anjō suffix (2026-04-05).			lung	*lungō	163
+2114	l u n g e n	*lunganjō	l u ŋ g e n ( - )	lunɡen	lungen	245	Old_English	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). OE lungen specifically reflects the *-anjō derivative.	Previous TSV had *lungō (simpler n-stem per Kroonen p.367). | Grammar extended to accept *-anjō suffix (2026-04-05).			lung	*lungō	163
 890	l ʊ ŋ ə	*lungō	l ʊ ŋ - ( ə - )	lʊŋə	Lunge	245	German					lung	*lungō	163
 1329	l ʉ s t	*lustuz	l ʉ s t ( - - )	lʉst	lust	364	Dutch					lust	*lustuz	164
 1328	l ʌ s t	*lustuz	l ʌ s t ( - - )	lʌst	lust	364	English					lust	*lustuz	164
