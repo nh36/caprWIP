@@ -16204,3 +16204,258 @@ The coronal assimilation is an early PWGmc change (R/T §3.1.1 places it before
 1. PWGmcCoronalWAssimilation (`*dw/*zw → *ww`)
 2. (Existing rules handle `*ww → ēo` pathway)
 
+
+---
+
+## Research: The fēower Final Syllable Problem (-or vs -er) (2026-04-09)
+
+### The Current State
+
+After implementing PWGmcCoronalWAssimilation (`*dw → *ww`):
+- Input: `*fedwor`
+- Output: `fēowor` 
+- Expected: `fēower`
+
+The initial diphthong is correct (`fēo-`), but the final syllable has `-or` not `-er`.
+
+### R/T's Complete Derivation (vol.2 §6.9.6, p.333)
+
+R/T gives this explicit chain for 'four':
+
+```
+PGmc *fedwor (Goth. fidwor)
+    → *fewwar            [PWGmc *dw → *ww assimilation, §3.1.1]
+    → PWGmc *feuwar      [geminate *ww → *uw simplification, §3.1.4]
+    → *feuwæer           [unstressed *a → *æ fronting]
+    → OE *féowæer        [*eu → ēo monophthongization]
+    → fēower             [unstressed *æ → e merger, §6.9.6]
+```
+
+### The Key Insight: *o → *a Vowel Change
+
+Looking carefully at R/T's chain:
+- PGmc `*fedwor` has **`*o`** in the final syllable
+- But `*fewwar` has **`*a`** in the final syllable
+
+This is NOT just a typo. R/T (§6.9.6, p.333) explicitly contrasts:
+- `*wator 'water'` → PWGmc `*watar` → `*wæter` → OE `wæter`
+- `*fedwor 'four'` → `*fewwar` → PWGmc `*feuwar` → `*feuwæer` → OE `fēower`
+
+### What Changed the Vowel?
+
+The `*o → *a` change occurs **during or immediately after** the `*dw → *ww` 
+assimilation. Looking at the Gothic evidence:
+- Gothic `fidwor` preserves `*o`
+- WGmc languages show `*a` (OS `fiuwar`, OHG backformed `fior`)
+
+R/T doesn't explicitly discuss WHY `*o → *a` here. Possible explanations:
+
+1. **Analogical leveling**: The `*-ar` ending may have been generalized from 
+   related forms in the numeral paradigm or other `r`-finals
+
+2. **Pre-assimilation adjustment**: The vowel may have lowered to `*a` as part
+   of the environment that triggered `*dw → *ww`
+
+3. **PWGmc Auslautgesetz**: There may be a general rule that `*-or# → *-ar#`
+   in PWGmc (but this needs verification)
+
+### The Regular `*-ar → -er` Development
+
+Once we have `*-ar`, the rest is regular per R/T §6.9.6:
+
+1. **Unstressed *a fronting** (§5.1.2): `*a → *æ` in unstressed syllables
+   - This is the "Anglo-Frisian Brightening" equivalent for unstressed vowels
+   - Affects words like `*obar → *obær → ofer` 'over'
+   - And `*watar → *wæter → wæter` 'water'
+
+2. **Unstressed æ/e merger** (§6.9.6): `*æ → e` in final/inflectional syllables
+   - PWGmc `*a`, `*æ`, and `*ē` all merge as OE `e` in unstressed position
+   - Examples: `*-as → -æs → -es` (gen.sg.), `*dagai → dagæ → dæge` (dat.sg.)
+
+### The FST's Current Behavior
+
+Our FST correctly handles the `*a → e` path for unstressed syllables:
+- `*watar → wæter` ✓ (if we had this input)
+- `*obar → ofer` ✓ (if we had this input)
+
+But `*fedwor` keeps `*o` because:
+1. We don't have a rule changing `*o → *a` in the numeral context
+2. Unstressed `*o` doesn't undergo the same fronting as `*a`
+
+### Verification: Does *o → e Ever Happen?
+
+Testing in the FST:
+- `*fedwor → fēowor` (keeps `o`)
+- `*fedwar → ???` (need to test if `*ar` pattern is accepted)
+
+The grammar has `o:{*o} r:{*r}` in pgrmWeakTailVowel but may not have 
+`a:{*a} r:{*r}` for this position.
+
+### Implementation Options
+
+**Option A: Add *o → *a rule before *dw → *ww**
+- Add: `{*o} → {*a} || _ {*r} .#.` (word-final `-or → -ar`)
+- Scope: Very narrow, basically just for `*fedwor`
+- Risk: May affect other `-or` words incorrectly
+
+**Option B: Change TSV to PWGmc stage form**
+- Use `*fewwar` or `*feuwar` as input (post-assimilation)
+- Pro: Avoids adding ad-hoc rules
+- Con: Loses the oldest PGmc reconstruction
+
+**Option C: Add `a:{*a} r:{*r}` to grammar + fix TSV**
+- Change TSV from `*fedwor` to `*fedwar`
+- The `*dw → *ww` + existing `*a → e` path should work
+- Note: This assumes the `*o → *a` change predates our starting point
+
+**Option D: Special-case numeral handling**
+- Treat numerals as a special morphological class
+- May be warranted since Gothic `fidwor` ≠ WGmc forms
+
+### Recommendation
+
+Option C seems most practical:
+1. The `*o → *a` change is real but poorly understood
+2. Using `*fedwar` captures the pre-WGmc form that feeds regular rules
+3. The existing `*a → e` pathway should then produce `fēower`
+
+However, this requires:
+1. Adding `a:{*a} r:{*r}` to pgrmWeakTailVowel (if not already present)
+2. Changing TSV from `*fedwor` to `*fedwar`
+3. Verifying no regressions
+
+### Cross-Reference: Other *-or Words
+
+Need to check if there are other PGmc `*-or` words in the TSV that become
+OE `-er`. If so, Option A (general `*-or → *-ar` rule) may be warranted.
+
+### Status
+
+Current output: `*fedwor → fēowor` (close but wrong final vowel)
+This needs further work to achieve `fēower`.
+
+
+---
+
+## Updated Research: The -ōr → -ar → -er Chain (2026-04-09)
+
+### Key Discovery: PGmc *ō → WGmc *a Before Final *r
+
+After comprehensive review of sources, the vowel change is now clear:
+
+**Fulk (Comparative Grammar, §5.3):**
+> "Final r was also preserved, and before it ō apparently remained in Gothic and 
+> developed to a in WGmc. (> OE OFris. e), as in Go. fidwōr, OE fēower, 
+> OS fi(u)war 'four' (Stiles 1985–6)"
+
+**R/T vol.2 §3.1.4 (p.58-59):**
+> "Word-finally, and before word-final *r, surviving bimoric long ō-vowels
+> became PWGmc *a, while trimoric long ō-vowels became PWGmc *ō"
+
+### The Complete Derivation for 'four'
+
+Based on R/T and Fulk, with Stiles 1985-6 as the primary specialized source:
+
+```
+PIE *kʷetuōr (collective/neuter; cf. Lat. quattuor)
+    ↓
+PGmc *fedwōr (with bimoric *ō; Gothic preserves as fidwōr)
+    ↓ [PWGmc *ō → *a before final *r; R/T §3.1.4]
+*fedwar 
+    ↓ [PWGmc *dw → *ww assimilation; R/T §3.1.1, Stiles 1985-6]
+*fewwar
+    ↓ [PWGmc geminate simplification *Vww → *Vuw; R/T §3.1.4-5]
+PWGmc *feuwar
+    ↓ [Unstressed *a → *æ by Anglo-Frisian Brightening; Fulk §4.12]
+pre-OE *feuwær
+    ↓ [*eu → ēo monophthongization; Fulk §4.10]
+*fēowær
+    ↓ [Unstressed *æ → e merger; R/T §6.9.6]
+OE fēower ✓
+```
+
+### Gothic as Evidence for Long *ō
+
+Gothic `fidwōr` preserves the long `*ō` unchanged before final `-r`, which is
+the key evidence that PGmc had `*-ōr`, not `*-or` (short). The WGmc languages
+all show the expected outcome of the `*ō → *a` Auslautgesetz.
+
+### The `*ō → *a` Rule (R/T §3.1.4)
+
+This is part of a broader pattern of PWGmc Auslautgesetze:
+- **Bimoric `*ō` → `*a`** word-finally and before word-final `*r`
+- **Trimoric `*ō` → `*ō`** in the same environments (preserved)
+- Examples with bimoric `*ō`:
+  - `*fedwōr` → `*fedwar` (four)
+  - `*watōr` → `*watar` (water)
+  - `*gebōz` → `*gebaz` (gen.sg. 'of a gift')
+
+### Implementation Implications
+
+**TSV Reconstruction:**
+The correct PGmc reconstruction is `*fedwōr` (with long `*ō`). The current TSV
+has `*fedwor` which is ambiguous about vowel length.
+
+**FST Changes Required:**
+
+Option A: Add the PWGmc `*ō → *a` rule:
+```foma
+define PWGmcFinalOrShortening [
+    {*ō} -> {*a} || _ {*r} .#.
+];
+```
+
+Option B: Use PWGmc stage input `*fedwar` in TSV:
+- Loses PGmc reconstruction
+- But avoids adding another rule
+
+**Recommendation:** Option A is better because:
+1. Preserves the oldest (PGmc) reconstruction in TSV
+2. Models a real, well-documented PWGmc sound change
+3. Will apply to `*watōr → wæter` as well (if we add that word)
+4. Follows the principle of pushing reconstruction as far back as possible
+
+### Sources Consulted
+
+1. **R/T vol.2 §3.1.1** (pp.56-57): `*dw/*zw → *ww` assimilation
+2. **R/T vol.2 §3.1.4** (pp.58-59): `*ō → *a` before final `*r`
+3. **R/T vol.2 §3.1.5** (pp.61-62): `*Vww → *Vuw` geminate simplification
+4. **R/T vol.2 §6.9.6** (pp.332-334): Unstressed vowel mergers
+5. **Fulk §5.3** (p.94): `*ō → *a` before final `*r` in WGmc
+6. **Fulk §4.12** (p.72): Anglo-Frisian Brightening (`*a → *æ`)
+7. **Kroonen** (p.133): `*fedwar-` entry with WGmc discussion
+8. **Stiles 1985-6** (NOWELE 6: 89-94): Primary source on `*fedwōr`
+
+### Status
+
+Research complete. Ready for implementation when approved.
+
+
+---
+
+## Bibliography: Stiles 1985-6 (The Fate of the Numeral '4' in Germanic)
+
+**Full Citation:**
+> Stiles, Patrick V. 1985-6. "The fate of the numeral '4' in Germanic." 
+> *NOWELE* (North-Western European Language Evolution) 6.81-104, 7.3-27, 8.3-25.
+
+This three-part article is the primary specialist source on the development of 
+PGmc `*fedwōr` 'four' across the Germanic languages. Key points cited in our 
+implementation:
+
+1. **NOWELE 6: 81-104 (1985)** — Core article establishing the `*dw → *ww` 
+   assimilation and the `*-ōr → *-ar` Auslautgesetz in PWGmc.
+
+2. **NOWELE 6: 88** — Evidence that OE `-er` in `fēower` derives from shortened 
+   `*-ar` via the same pathway as inherited short `*-er`.
+
+3. **NOWELE 6: 89-94** — Detailed discussion of the `*dw → *ww` and `*zw → *ww` 
+   assimilations, with the two key examples: `*fedwōr` 'four' and `*izwiz` 
+   'you.DAT.PL'.
+
+This article is repeatedly cited by both R/T vol.2 and Fulk's *Comparative Grammar*
+as the authoritative treatment of this sound change.
+
+**Implementation:** Rule `PWGmcFinalOrLowering` (germanic.txt line ~1170) and 
+rule `PWGmcCoronalWAssimilation` (germanic.txt line ~1183).
+
