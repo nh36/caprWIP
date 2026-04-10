@@ -10303,8 +10303,11 @@ This section tracks mismatch count changes over time.
 | 2026-04-06 | 52 | -3 | — | TSV fixes: dile, lappa, cnobba |
 | 2026-04-07 | 50 | -2 | — | būgan/sċūfan → past 3pl paradigm cells |
 | 2026-04-07 | 49 | -1 | — | heord fix: was 'hierd' (herdsman ≠ herd) |
-| 2026-04-08 | 47 | -2 | — | OEBreakingI fix: *i→*io (Campbell §148); liornian TSV entries |
-| 2026-04-08 | 46 | -1 | — | cniht fix: TSV *knixtăz→*knextăz (R/T), FST {*io}→{*i} palatal umlaut |
+| 2026-04-08 | 49 | -2 | 7cbe280 | OEBreakingI fix: *i→*io (Campbell §148) |
+| 2026-04-08 | 49 | 0 | 0eab239 | cniht fix: TSV *knixtăz→*knextăz (R/T), FST palatal umlaut |
+| 2026-04-09 | 47 | -2 | 311a83e | PGmcGmSimplification (*gm→*m), brēost fix, OEGlideUToEO |
+| 2026-04-09 | 47 | 0 | 1bce789 | PWGmc *dw→*ww (partial fēower fix, produced fēowor) |
+| 2026-04-10 | 46 | -1 | a4e6559 | PWGmc *ō→*a before final *r (fēower now correct) |
 
 **Note on April 8 OEBreakingI fix:** Fixed a phonologically incorrect shortcut where 
 `OEBreakingI` was producing `*ie` directly. Per Campbell §148, breaking of `*i` produces 
@@ -10317,8 +10320,8 @@ earlier was erroneous—`evaluate_proto_to_oe.py` was reading the `PROTO` column
 (cognate set headword) instead of `PROTOFORM` (the actual FST input). The correct 
 script `oe_mismatch_report.py` reads `PROTOFORM` and shows 49 mismatches.
 
-Current verified count: **46 mismatches** (330 matches, 2 no-output, 378 total OE rows)
-as of 2026-04-08, using `oe_mismatch_report.py` with freshly compiled `Germanic/fsts/old_english.bin`.
+Current verified count: **46 mismatches** (334 matches, 6 no-output/skipped, 386 total OE rows)
+as of 2026-04-10, after PWGmc `*ō→*a` fix for fēower.
 
 ### How to verify mismatch count
 
