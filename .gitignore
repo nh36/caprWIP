@@ -2,11 +2,20 @@
 /*/__pycache__
 /*/*/__pycache__
 /refishing
-server/german_after_*.bin
-server/german_pre_surface.bin
-server/german_surface_prep.bin
 
 # FST compiled binaries (regenerated from .txt sources)
+# Only Germanic/fsts/*.bin should be tracked (mounted by Docker)
+/*.bin
+/build/
 /build/*.bin
-build/
-backend/*.bin
+/backend/*.bin
+/Germanic/*.bin
+/server/german_after_*.bin
+/server/german_pre_surface.bin
+/server/german_surface_prep.bin
+
+# Temporary/sandbox files
+*_sandbox*.bin
+*_debug*.bin
+*_tmp*.bin
+*_prev*.bin
