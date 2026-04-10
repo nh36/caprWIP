@@ -1240,12 +1240,10 @@ define PWGmcDentalHardening [
     {*ð} -> {*d}
 ];
 
-# R/T §3.1.4: Before word-final *r, bimoric *ō → *a in PWGmc.
-# PGmc *watōr → PWGmc *watar → OE wæter.
-# The *a is then fronted by AFB and reduced by §6.9.6 merger.
-define PWGmcPreFinalRShortening [
-    {*ō} -> {*a} || _ {*r} .#.
-];
+# NOTE: PWGmcPreFinalRShortening was here but has been consolidated into
+# PWGmcFinalOrLowering (line ~1175) to avoid duplication. Both rules did
+# the same thing: {*ō} -> {*a} || _ {*r} .#. (R/T §3.1.4). See the earlier
+# definition for detailed documentation including Stiles 1985-6 citation.
 
 # West Germanic j‑gemination after light syllables (short vowel + single consonant).
 # Fulk §6.15: "Before j the change regularly applies to any consonant other than r
@@ -1292,7 +1290,7 @@ define PWGmcChanges [
     .o. PWGmcSyllabicJ
     .o. PWGmcLThVoicing
     .o. PWGmcDentalHardening
-    .o. PWGmcPreFinalRShortening
+    # NOTE: PWGmcPreFinalRShortening removed - was duplicate of PWGmcFinalOrLowering
 ];
 
 # Early Old English open-syllable lengthening promotes short vowels before CV onsets.
