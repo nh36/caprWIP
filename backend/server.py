@@ -55,10 +55,11 @@ def with_json(*outer_args):
 @app.route("/list-inputs")
 def list_inputs():
     files = [f.split("/")[-1] for f in glob.glob("/usr/app/data/*.tsv")]
-    # Only expose the two production datasets in the UI dropdown.
+    # Only expose the production datasets we support in the UI dropdown.
     allowed_inputs = {
         "germanic-aligned-final.tsv",
         "burmish-aligned-final.tsv",
+        "celtic-aligned-final.tsv",
     }
     filtered = sorted([f for f in files if f in allowed_inputs])
     return {"inputs": filtered}
