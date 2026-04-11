@@ -16778,88 +16778,184 @@ marked linking vowels, avoiding over-application to suffix vowels.
 **Status:** Implemented for compound linking vowels. The `*wiră-aldiz` case has
 additional issues beyond syncope (back mutation/breaking in compound context).
 
-### OE weorold 'world': Etymology and FST Challenges (2026-04-11)
+### OE weorold 'world': Comprehensive Etymology (2026-04-11)
 
 **Current state:**
 - TSV row 2302: `*wiră-aldiz` → expected `weorold`
 - FST produces: `werield` (after compound syncope fix)
 - Issues: (1) `wir-` instead of `weor-`, (2) `-ield` instead of `-old`
 
-**R/T etymology (vol. 2, p.317):**
+#### 1. Etymology and Reconstruction
 
-> "PNWGmc *weraldiz 'world' (lit. 'age of men', often shifted into the ō-stems:
-> ON verǫld, OE warld vs. i-stem OS werold, OHG weralt) > *weraldu > *weruld
+**Compound structure:** PGmc `*weraldiz` = `*weraz` 'man' + `*aldiz` 'age'
+(Wiktionary, Kroonen, Kluge-Seebold, Orel all agree)
+
+- Kroonen reconstructs `*wira-` 'm. "man"' < PIE `*uiH-ró-` (p.645)
+- Kroonen reconstructs `*aldi-` 'f. "age"' < PIE `*h₂el-ti-` (p.59)
+- Kluge-Seebold: "wg. `*wira-aldō` f. 'Zeitalter, Welt'" (s.v. Welt)
+- Seebold: "ae. weoruld, woruld, -old, world" < compound with `*wera-` (p.21)
+
+**R/T vol. 2, p.317 (key passage):**
+
+> "One word underwent combinative back umlaut (variably) even in WS:
+>
+> PNWGmc `*weraldiz` 'world' (lit. 'age of men', often shifted into the ō-stems:
+> ON verǫld, OE warld vs. i-stem OS werold, OHG weralt) > `*weraldu` > `*weruld`
 > (6.3.3) > WS OE weorold ~ worold (also with u in the 2nd syll.), Merc. weoruld,
-> North. woruld, Kent. wiarald."
+> North. woruld, Kent. wiarald.
+>
+> The Northumbrian form could have developed through an intermediate stage
+> `*weoruld` (see above)."
 
-**Key insights from R/T:**
+#### 2. The Root Vowel: `*e`, not `*i`
 
-1. **Proto-form has `*e`, not `*i`**: R/T reconstructs `*weraldiz`, not `*wiraldiz`.
-   The TSV `*wiră-aldiz` has the wrong root vowel.
+All major sources reconstruct PGmc `*weraz` 'man', not `*wiraz`:
+- Kroonen: `*wira-` < PIE `*uiH-ró-` (with Dybo's Law pretonic shortening)
+- The `*i` is from PIE, but PGmc had `*e` in this word
+- Our TSV `*wiră-aldiz` has the wrong vowel in the first element
 
-2. **Stem-class shift**: The word "often shifted into the ō-stems" — from i-stem
-   `-iz` to ō-stem `-u`. This is crucial because:
-   - i-stem `-iz` triggers i-umlaut: `*ald → *æld → ield` (wrong)
-   - ō-stem `-u` does NOT trigger i-umlaut: `*ald → old` (correct)
+**Cognate evidence:**
+- Gothic `wair`, ON `verr`, OE `wer`, OS `wer`, OHG `wer` — all show `*e`
+- The Latin cognate `vir` 'man' confirms PIE `*u̯iHrós`, but Germanic has `*e`
 
-3. **Medial vowel change `*a → *u`**: R/T shows `*weraldu > *weruld` with
-   reference to §6.3.3. The medial `*a` assimilates to following `*u`.
+#### 3. Stem-Class Shift: i-stem → ō-stem
 
-4. **Back mutation**: `*weruld → weorold` — the `*e` breaks to `eo` before
-   `*r + *u` (labial environment).
+R/T explicitly states the word "often shifted into the ō-stems." This is crucial:
 
-**Derivation chain per R/T:**
+| Stem class | Ending | i-Umlaut | Expected outcome |
+|------------|--------|----------|------------------|
+| i-stem | `-iz` | Yes | `*ald → *æld → ield` (wrong) |
+| ō-stem | `-u` | No | `*ald → old` (correct) |
+
+The cognates confirm this split:
+- **i-stem reflexes:** OS `werold`, OHG `weralt` (with front vowel from i-umlaut)
+- **ō-stem reflexes:** ON `verǫld`, OFris. `warld`, OE `weorold`
+
+#### 4. Combinative Back Umlaut
+
+R/T vol. 2, p.316-317 discusses "combinative back umlaut" — a special case where
+`*we-` becomes `*wo-` or `*weo-` when followed by a back vowel (`*u`/`*o`).
+
+**Campbell §210:**
+> "After w, combinative back umlaut generally but not always intervened, e.g.
+> woruld world, swostor sister, swolop heat, all beside forms with eo"
+
+**Luick §222:**
+> "Die Folge we wurde unter den Bedingungen des u-Umlautes zu wo im nördlichen
+> Nordhumbrischen (Li. Ri.) und Strengwestsächsischen: nh. world 'Welt', worud
+> 'Schar', ws. worold"
+
+**Luick §113b:**
+> "Westgerm. e nach w unter den Vorbedingungen des u-Umlauts (§108,1) erscheint
+> im nördlichen Nordhumbrischen (L, Rit.) und im streng Ws. als o. Es heißt also
+> nordh. woruld Welt (auch mit Abschwächung des u worold, woreld, und mit
+> Synkope world), worud Schar, ws. worold, swostor Schwester."
+
+This explains the dialectal variation:
+- **WS:** `worold` ~ `weorold` (combinative back umlaut variably applied)
+- **Mercian:** `weoruld` (ordinary back umlaut, not combinative)
+- **Northumbrian:** `woruld` (combinative back umlaut fully applied)
+- **Kentish:** `wiarald` (distinctive Kentish development)
+
+#### 5. The Medial Vowel: `*a → *u`
+
+R/T shows `*weraldu > *weruld` and cites §6.3.3. This is puzzling because §6.3.3
+discusses WS retraction of `*ǣ → *ā` before back vowels, not `*a → *u`.
+
+**Possible explanations:**
+
+1. **R/T citation error:** The "(6.3.3)" may be a cross-reference error or OCR issue
+2. **Assimilation:** Medial `*a` assimilates to following `*u` (lexically specific)
+3. **Suffix ablaut:** The word may have had variant forms with `*u` in some cases
+
+**Luick's analysis (§113 Anm. 2):**
+> "hläfurd, -ord 'Herr' (aus `*hlaitward`), w(e)oruld, -old 'Welt' (aus `*werald`).
+> Außerdem können manche oben unter 1. erwähnte o auf älteres u zurückgehen."
+
+Luick confirms the `*a → *u` change but doesn't explain its mechanism, saying
+these phenomena are "in ihrem Wesen und Zusammenhang noch recht unklar"
+(still quite unclear in their nature and connection).
+
+#### 6. Derivation Chain (Revised)
+
+Based on comprehensive sources:
 ```
-*weraldiz     (PGmc i-stem)
-↓ (stem-class shift to ō-stem)
-*weraldu      (PWGmc ō-stem)
-↓ (medial *a → *u assimilation to final *u)
-*weruld       (§6.3.3 — identity unclear, possibly WS-specific)
-↓ (back mutation: *e → *eo before r + u)
-*weoruld
-↓ (final cluster simplification)
-weorold ✓
+*weraz + *aldiz → *weraldiz    (PGmc i-stem compound)
+↓ (stem-class shift in pre-WGmc)
+*weraldu                        (PWGmc ō-stem; cf. ON verǫld)
+↓ (medial *a → *u — unclear mechanism; possibly assimilation)
+*weruld                         (pre-OE)
+↓ (combinative back umlaut: *we- → *weo-/*wo- before *-u-)
+*weoruld ~ *woruld              (dialectal variation)
+↓ (unstressed vowel reduction/syncope)
+weorold ~ worold                (OE)
 ```
 
-**Problems for FST modeling:**
+#### 7. Dialectal Outcomes
 
-1. **The `*a → *u` change is problematic.** R/T cites §6.3.3, but that section
-   discusses WS retraction of `*ǣ → *a` before back vowels — not `*a → *u`.
-   This may be a lexically-specific assimilation, or R/T's citation is to a
-   different part of §6.3.3 not about long vowels.
+| Dialect | Form | Explanation |
+|---------|------|-------------|
+| WS | `weorold` ~ `worold` | Variable combinative back umlaut |
+| Mercian | `weoruld` | Regular back umlaut |
+| Northumbrian | `woruld`, `world` | Full combinative back umlaut + syncope |
+| Kentish | `wiarald` | Distinctive Kentish eo → ia |
 
-2. **Compound vs simplex treatment.** Our TSV treats this as a compound
-   (`*wiră-aldiz` with hyphen), but the medial vowel development doesn't
-   follow normal compound rules. R/T treats it as a derivative compound
-   that behaves more like a simplex word.
+Campbell §210 fn. 1 notes that in `swostor` 'sister', "The preceding w apparently
+helps combinative back umlaut... to take place in this word, although the
+consonant group st would not normally permit it." The same applies to `woruld`.
 
-3. **Dialectal variation.** R/T notes: "WS OE weorold ~ worold... Merc.
-   weoruld, North. woruld, Kent. wiarald." The vowel outcomes vary by dialect.
+#### 8. FST Implementation Options
 
-**Recommended TSV fix:**
+**Option A: Use nominative ō-stem form `*weraldu`**
+- Pro: Historically accurate pre-form per R/T
+- Con: Requires modeling the `*a → *u` change, which is lexically specific
+- FST output prediction: `*weraldu` → `*weoroldu` (back mutation) → close but not exact
 
-Change the proto-form from `*wiră-aldiz` to `*weraldu` (the ō-stem form that
-R/T says is the immediate pre-OE ancestor). This:
-- Gives correct root vowel `*e` (not `*i`)
-- Avoids i-umlaut from `-iz`
-- Makes the compound linking vowel disappear (it's now medial `*a` in simplex)
+**Option B: Use pre-form with `*u` already present: `*weruldu`**
+- Pro: Bypasses the mysterious `*a → *u` change
+- Con: No clear attestation for this exact form
+- FST output prediction: `*weruldu` → `weorold` (if combinative back umlaut works)
 
-However, we still need the `*a → *u` change for full correctness. Options:
+**Option C: Target Northumbrian `woruld` with syncopated form**
+- Pro: North. shows clearest lautgesetzlich development
+- Con: Our target is `weorold` (WS form)
 
-**Option A: Accept approximate match**
-- Use `*weraldu` → produces something like `*weoroldu → weorolde` (with
-  a-restoration of medial vowel and back mutation of root)
-- Close but not exact
+**Option D: Mark as documented exception**
+- Pro: Acknowledges the unique phonological history
+- Con: Doesn't reduce mismatch count
 
-**Option B: Use paradigm cell form**
-- If a different paradigm cell (e.g., acc.sg. `*weruldu`?) exists with
-  the `*u` already present, that could work
-- Needs further research into OE ō-stem paradigms
+**Recommendation:** Try Option B with `*weruldu`. If our FST handles:
+1. Combinative back umlaut: `*we- → *weo-` before `*-u-`
+2. Unstressed vowel handling in final syllable
+...then it should produce `weorold` or close to it.
 
-**Option C: Mark as documented exception**
-- The `*a → *u` change in `*weraldu → *weruld` may be lexically specific
-- Document and move on
+#### 9. TSV Changes Required
 
-**Status:** Research complete. TSV definitely needs fixing (`*wiră-` → `*wer-`
-at minimum). The medial vowel development remains challenging.
+At minimum, fix the root vowel:
+- **PROTO:** `*weraldiz` (not `*wiră-aldiz`)
+- **PROTOFORM:** `*weruldu` or `*weraldu` (ō-stem form, no hyphen)
+- **Remove hyphen:** This is not a productive compound — treat as simplex
+
+The hyphenated compound notation `*wiră-aldiz` is doubly wrong:
+1. Wrong root vowel (`*i` instead of `*e`)
+2. Wrong stem class (i-stem `-iz` instead of ō-stem `-u`)
+
+#### 10. Source Summary
+
+| Source | Reconstruction | Key point |
+|--------|----------------|-----------|
+| R/T vol. 2, p.317 | `*weraldiz → *weraldu → *weruld` | Stem-class shift; combinative back umlaut |
+| Campbell §210 | — | `woruld`, `swostor` show combinative back umlaut after `w` |
+| Luick §222, §113b | `*werald` | `we → wo` in North. and strict WS |
+| Brunner §110 Anm. 3 | `ws. weorold` | Regular back umlaut in non-strict WS |
+| Kroonen | `*wira-` + `*aldi-` | Component etymologies |
+| Kluge-Seebold | `*wira-aldō` | WGmc reconstruction |
+| Orel | `*wira-alđiz` | Uses older notation |
+| Wiktionary | `*weraldiz` (i-stem) | Modern consensus form |
+
+**Status:** Comprehensive research complete. TSV needs:
+1. Root vowel fix: `*wir-` → `*wer-`
+2. Stem class fix: i-stem `-iz` → ō-stem `-u`
+3. Remove compound hyphen
+4. Medial `*a → *u` change is lexically specific — may need to use `*weruldu`
 
