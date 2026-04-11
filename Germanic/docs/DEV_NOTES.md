@@ -16808,7 +16808,7 @@ additional issues beyond syncope (back mutation/breaking in compound context).
 > The Northumbrian form could have developed through an intermediate stage
 > `*weoruld` (see above)."
 
-#### 2. The Root Vowel: `*i` vs `*e` — ACTUALLY DISPUTED
+#### 2. The Root Vowel: `*i` vs `*e` — GENUINELY UNCERTAIN AT PGmc
 
 **The sources are inconsistent:**
 
@@ -16819,25 +16819,31 @@ additional issues beyond syncope (back mutation/breaking in compound context).
 | Kluge-Seebold | `*wera-` | `*wira-aldō` (inconsistent!) |
 | R/T vol.2 | `*wiraz (*weraz??)` — **explicitly uncertain** | `*weraldiz` (uses `*e`!) |
 
-**R/T vol. 2, p.56 on the simplex:**
-> "PIE *wih₁rés 'young' ... > PGmc *wiraz (**weraz??**; Goth. wair, ON verr)"
+**R/T vol. 2, p.56-57 on the simplex:**
+> "PIE `*wih₁rés` 'young' ... > PGmc `*wiraz` (**`*weraz??`**; Goth. wair, ON verr)
+> > OE, OS, OHG wer"
+>
+> "**We cannot be sure that PGmc did not already exhibit `*e` in these words**"
 
-R/T explicitly flags the reconstruction as uncertain! They note that we cannot be
-sure PGmc didn't already have `*e`, because:
-- The word survives in forms where `*i > *e` lowering would have applied anyway
-- Gothic `wair` shows `ai` (< `*e` or `*i` — ambiguous)
-- ON `verr` shows `e` (but this could be from `*i > *e` lowering)
+R/T explicitly flags the reconstruction as uncertain. The evidence is ambiguous:
+- PIE clearly had `*wiHrós` (cf. Lat. `vir`, Skt. `vīrá-`)
+- Gothic `wair` could reflect either `*i` or `*e` (the spelling is ambiguous)
+- ON `verr` has `e`, but this could be from `*i > *e` lowering
+- WGmc uniformly shows `e` (OE, OS, OHG `wer`)
 
-**Cognate evidence supports BOTH readings:**
-- Gothic `wair`, ON `verr`, OE `wer`, OS `wer`, OHG `wer` — surface forms have `e`
-- But PIE clearly had `*wiHrós` (cf. Lat. `vir`, Skt. `vīrá-`)
-- The `*i > *e` lowering (NWGmc) makes the pre-OE form have `*e` regardless
+**R/T's conclusion (p.57):**
+> "The reasons why these two words [*wer and *nest] consistently exhibit e
+> remain unrecoverable."
 
-**Conclusion:** For the COMPOUND, R/T uses `*weraldiz` with `*e`, which is correct
-for the NWGmc/pre-OE stage even if PGmc had `*wira-`. Our TSV issue is that we
-have the hyphenated compound notation `*wiră-aldiz` — even if `*i` is defensible
-for PGmc, the notation suggests we're feeding something through the FST that
-should already have undergone `*i > *e` lowering.
+**For our purposes:** R/T uses `*weraldiz` (with `*e`) for the compound in all
+derivational discussions (pp. 202, 326). Whether PGmc had `*wira-` or `*wera-`,
+the pre-OE input to our FST should have `*e` because:
+1. The `*i > *e` lowering would have applied in NWGmc anyway
+2. R/T's compound notation consistently uses `*wer-`
+3. All WGmc daughter forms show `e`
+
+Our PROTOFORM `*wer-uldu` correctly uses `*e`.
+Our PROTO `*weraldiz` follows R/T's notation for the etymological form.
 
 #### 3. Stem-Class Shift: i-stem → ō-stem
 
@@ -16878,39 +16884,64 @@ This explains the dialectal variation:
 - **Northumbrian:** `woruld` (combinative back umlaut fully applied)
 - **Kentish:** `wiarald` (distinctive Kentish development)
 
-#### 5. The Medial Vowel: `*a → *u`
+#### 5. The Medial Vowel: `*a → *u` — A REGULAR (LIMITED) SOUND CHANGE
 
-R/T shows `*weraldu > *weruld` and cites §6.3.3. This is puzzling because §6.3.3
-discusses WS retraction of `*ǣ → *ā` before back vowels, not `*a → *u`.
+**Key finding from R/T vol. 2, p.202 (§6.3.3):**
 
-**Possible explanations:**
+R/T explicitly describes this as a **regular sound change** (not lexically specific),
+albeit limited in scope. The section is titled "West Saxon retraction of *æ and
+**other minor changes**" (emphasis added). R/T states:
 
-1. **R/T citation error:** The "(6.3.3)" may be a cross-reference error or OCR issue
-2. **Assimilation:** Medial `*a` assimilates to following `*u` (lexically specific)
-3. **Suffix ablaut:** The word may have had variant forms with `*u` in some cases
+> "In others the unstressed vowel has not only been retracted but **raised all
+> the way to u, usually spelled u ~ o** unless a nasal follows immediately"
 
-**Luick's analysis (§113 Anm. 2):**
-> "hläfurd, -ord 'Herr' (aus `*hlaitward`), w(e)oruld, -old 'Welt' (aus `*werald`).
-> Außerdem können manche oben unter 1. erwähnte o auf älteres u zurückgehen."
+R/T gives three parallel examples showing this is a pattern:
 
-Luick confirms the `*a → *u` change but doesn't explain its mechanism, saying
-these phenomena are "in ihrem Wesen und Zusammenhang noch recht unklar"
-(still quite unclear in their nature and connection).
+| Proto-form | Intermediate | OE outcome | Gloss |
+|------------|--------------|------------|-------|
+| `*hlab(z)wærd` | `*hlab(w)ard` | `hlafurd ~ hlaford` | 'lord' |
+| `*furh(z)lang` | — | `furlung` | 'furlong' |
+| `*werald(i)` | `*werældʒ(i) > *werald` | `weoruld ~ weorold` | 'world' |
+
+**Conditioning environment:** Unstressed `*a` in medial syllables of compounds
+is raised to `*u` before certain consonant clusters. This is a **regular** (phonologically
+conditioned) change, not a lexically arbitrary one.
+
+**Luick's assessment (§113 Anm. 1) was premature:**
+Luick wrote "Diese Erscheinungen sind in ihrem Wesen und Zusammenhang noch
+recht unklar" (1914-40), but R/T (2014) provides a clearer analysis: this is part
+of a broader pattern of unstressed vowel raising in compound medial syllables.
+
+**FST implications:**
+Since this is a regular sound change, we could in principle model it in the FST:
+- Environment: unstressed medial `*a` in compounds before certain consonants
+- But the conditioning is complex and interacts with stress patterns
+
+For now, we input `*wer-uldu` (with `*u` already present) because:
+1. The change is limited to a small set of compounds
+2. Modeling compound-internal stress interactions is complex
+3. The FST's `OEMedUnstressedULowering` handles the subsequent `*u → *o`
 
 #### 6. Derivation Chain (Revised)
 
 Based on comprehensive sources:
 ```
 *weraz + *aldiz → *weraldiz    (PGmc i-stem compound)
-↓ (stem-class shift in pre-WGmc)
+↓ (stem-class shift in pre-WGmc — ANALOGICAL)
 *weraldu                        (PWGmc ō-stem; cf. ON verǫld)
-↓ (medial *a → *u — unclear mechanism; possibly assimilation)
+↓ (medial *a → *u raising — REGULAR per R/T p.202)
 *weruld                         (pre-OE)
 ↓ (combinative back umlaut: *we- → *weo-/*wo- before *-u-)
 *weoruld ~ *woruld              (dialectal variation)
-↓ (unstressed vowel reduction/syncope)
+↓ (medial unstressed *u → *o — REGULAR per OEMedUnstressedULowering)
 weorold ~ worold                (OE)
 ```
+
+**Changes classified:**
+- Stem-class shift (i-stem → ō-stem): **ANALOGICAL** — cannot model
+- Medial `*a → *u` raising: **REGULAR** (R/T p.202) — could model but complex
+- Combinative back umlaut: **REGULAR** — modeled (back mutation rule)
+- Medial `*u → *o` lowering: **REGULAR** — modeled (`OEMedUnstressedULowering`)
 
 #### 7. Dialectal Outcomes
 
