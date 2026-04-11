@@ -4,7 +4,7 @@ This directory contains the active FST development for modeling sound changes fr
 
 ## Current Status
 
-**62 mismatches** out of 1057 lexemes (94% accuracy)
+**42 mismatches** out of ~386 OE lexemes (89% accuracy)
 
 ## Directory Structure
 
@@ -52,6 +52,24 @@ Edit `Germanic/fsts/germanic.txt`, recompile, and check results.
 - **DEV_NOTES.md** — Detailed research log with source citations
 - **debug_snapshots/** — Historical mismatch reports for comparison
 - **analysis/** — Deep-dive investigations on specific phenomena
+
+## TSV Column Conventions
+
+The main data file `germanic-aligned-final.tsv` uses these key columns:
+
+| Column | Purpose |
+|--------|---------|
+| **PROTOFORM** | The specific morphological form used as FST input (e.g., dat.sg. \*kūi for cȳ) |
+| **PROTO** | The cognate-set citation form / dictionary headword (e.g., nom.sg. \*kōz) |
+| **COUNTERPART** | The target Old English form |
+| **NOTE** | Scholarly notes with citations (Kroonen, R/T, Campbell, etc.) |
+| **HISTORY** | Project history: Wiktionary sources, TSV fixes, internal refs |
+
+**PROTOFORM vs PROTO:** These columns diverge when we use a paradigm-cell form
+(gen.sg., dat.sg., 3sg pres.) for the FST because the citation form doesn't yield
+the attested OE form by regular sound change. For example:
+- OE **cȳ** 'cow (dat.sg.)': PROTOFORM=\*kūi (dat.sg.), PROTO=\*kōz (nom.sg.)
+- OE **lifeþ** '(he) lives': PROTOFORM=\*libēθi (3sg), PROTO=\*libēną (infinitive)
 
 ## Sound Change Pipeline
 
