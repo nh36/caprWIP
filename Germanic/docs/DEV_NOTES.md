@@ -10313,6 +10313,7 @@ This script reads PROTOFORM (paradigm-cell-specific form), not PROTO (cognate he
 | 2026-04-09 | 43 | -2 | 311a83e | PGmcGmSimplification (*gm→*m), brēost, OEGlideUToEO |
 | 2026-04-09 | 43 | 0 | 1bce789 | PWGmc *dw→*ww (partial fēower fix) |
 | 2026-04-10 | 42 | -1 | a4e6559 | PWGmc *ō→*a before final *r (fēower complete) |
+| 2026-04-11 | 41 | -1 | ae80654 | OECompoundLinkingSyncope: *regnă-bugô→reġnboga |
 
 **Note on April 10 methodology correction:** Earlier entries in this log used ad-hoc
 counting with the wrong column (PROTO instead of PROTOFORM), giving inflated numbers.
@@ -10326,8 +10327,8 @@ if precise historical counts are needed.
 (Campbell §201). Also fixed a broken symlink in the container that was preventing 
 `old_english.bin` from being updated.
 
-Current verified count: **42 mismatches** (338 matches, 6 skipped, 386 total OE rows)
-as of 2026-04-10, verified with `python3 tools/oe_mismatch_report.py`.
+Current verified count: **41 mismatches** (339 matches, 6 skipped, 386 total OE rows)
+as of 2026-04-11, verified with `python3 tools/oe_mismatch_report.py`.
 
 ### How to verify mismatch count
 
