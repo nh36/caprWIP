@@ -16935,13 +16935,13 @@ analogical, not regular sound changes that the FST can model:
 **Solution:** Use different values for PROTO and PROTOFORM:
 - **PROTO** = PGmc etymological form for cognate-set identification: `*weraldiz`
 - **PROTOFORM** = "transponent" — the pre-OE form that the FST can process to
-  yield the attested OE output: `*wer-oldu`
+  yield the attested OE output: `*wer-uldu`
 
 The term "transponent" (borrowing from music theory) captures that this is the
 *input form* needed to produce the correct output, not necessarily a historically
 attested intermediate stage.
 
-**Why `*wer-oldu` specifically:**
+**Why `*wer-uldu` specifically:**
 
 1. **`*wer-`** (not `*wir-`): R/T uses `*weraldiz` for the compound (with `*e`),
    even while noting uncertainty about the simplex. The NWGmc `*i > *e` lowering
@@ -16951,29 +16951,40 @@ attested intermediate stage.
    the medial vowel. The FST's compound syncope rule (`OECompoundLinkingSyncope`)
    only targets `*ă`, so we use zero linking vowel to get the syncopated form.
 
-3. **`*old-`** (not `*ald-`): The `*a → *u → *o` change is lexically specific and
-   cannot be modeled by regular rules. We input `*o` directly. Technically this
-   represents `*uld` with back mutation applied, but the FST handles back mutation
-   from the environment (`*-u` ending), so `*old-` works.
+3. **`*uld-`** (with `*u`, not `*ald-` or `*old-`): R/T's derivation explicitly
+   shows `*weruld` with `*u`. The medial `*a → *u` change is lexically specific
+   and cannot be modeled by regular rules — we must input `*u` directly. The FST
+   then applies `OEMedUnstressedULowering` (`*u → *o` in medial unstressed position)
+   to derive the surface `o` in `weorold`.
+
+   Testing confirms:
+   - `*wer-aldu → wereald` (wrong: AFB + breaking apply to *a)
+   - `*wer-uldu → weorold` ✓ (correct: *u triggers back mutation, then lowers to *o)
+   - `*wer-oldu → weorold` (works but skips the regular *u→*o rule)
+
+   Using `*wer-uldu` is preferable because it leverages more of the regular
+   phonology: only the `*a → *u` change is stipulated; the `*u → *o` lowering
+   is a regular sound change (`OEMedUnstressedULowering`).
 
 4. **`-u`** (ō-stem): The stem-class shift is analogical. We input the ō-stem
    ending directly so that i-umlaut doesn't apply to `*ald → *æld → *ield`.
 
 **FST verification:**
 ```
-$ echo "wer-oldu" | flookup -i old_english.bin
-wer-oldu    weorold
+$ echo "wer-uldu" | flookup -i old_english.bin
+wer-uldu    weorold
 ```
 
 The FST correctly applies:
-- Compound boundary deletion: `wer-oldu → weroldu`
-- Back mutation: `*e → *eo` before back vowel → `weoroldu`
-- High vowel apocope: `-u` drops → `weorold` ✓
+- Compound boundary deletion: `wer-uldu → weruldu`
+- Back mutation: `*e → *eo` before back vowel `*u` → `weoruldu`
+- Medial unstressed u-lowering: `*u → *o` → `weoroldu`
+- High vowel apocope: final `-u` drops → `weorold` ✓
 
 #### 9. TSV Changes (Implemented)
 
 **Row 2302 (weorold):**
-- **PROTOFORM:** `*wer-oldu` (transponent for FST)
+- **PROTOFORM:** `*wer-uldu` (transponent for FST)
 - **PROTO:** `*weraldiz` (PGmc etymological form)
 - **NOTE:** Detailed citation explaining the PROTO/PROTOFORM distinction
 
