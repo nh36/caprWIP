@@ -64,8 +64,8 @@ long_vowel_missing (3):
   *texun -> teoon (expected tīen)
 
 no_output (2):
-  *regna-bugô -> +? (expected reġnboga)
-  *wira-aldiz -> +? (expected weorold)
+  *regnă-bugô -> +? (expected reġnboga)
+  *wiră-aldiz -> +? (expected weorold)
   >> ISSUE: FST produces no output (grammar rejection)
   >> LIKELY: Compound separator (-), unusual cluster, or grammar gap
   >> ACTION: Check if proto contains unsupported sequences; may need grammar extension

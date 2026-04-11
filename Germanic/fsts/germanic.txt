@@ -396,13 +396,34 @@ define pgrmWeakTailVowel [
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
 
-define pgrmWord [
+# Simple (non-compound) word patterns
+define pgrmSimpleWord [
     (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmWeakTailVowel |
     (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmCausativeSuffix pgrmWeakTailVowel |
     (pgrmStrongPlain | pgrmStrongPlainPrefixed) pgrmWeakTailZero |
     (pgrmStrongNasal | pgrmStrongNasalPrefixed) pgrmWeakTailVowel |
     (pgrmStrongNasal | pgrmStrongNasalPrefixed) pgrmWeakTailZero
 ];
+
+# Compound separator: hyphen marks compound boundary in proto-form
+# The hyphen is deleted during transduction (maps to 0)
+define pgrmCompoundSep [{-}:0];
+
+# Linking vowel in compounds: typically ă or zero
+define pgrmLinkingVowel [ă:{*ă} | 0];
+
+# Compound word: First element is strong syllable + optional linking vowel,
+# second element can have various structures.
+# Attested compounds:
+#   *regnă-bugô (CVCC-ă + CV-ô) = heavy + linking + heavy
+#   *θūs-undī (CVːC + VC-ī) = heavy + heavy (no linking vowel)
+#   *wiră-aldiz (CV-ă + VC-Vz) = light + linking + heavy
+define pgrmCompoundFirst [pgrmStrongPlain pgrmLinkingVowel];
+define pgrmCompoundSecond [pgrmStrongPlainHeavy pgrmWeakTailVowel];
+define pgrmCompoundWord [pgrmCompoundFirst pgrmCompoundSep pgrmCompoundSecond];
+
+# Full word grammar: simple or compound
+define pgrmWord [pgrmSimpleWord | pgrmCompoundWord];
 
 ##############################################
 ## Proto-Germanic starred inventories        ##
