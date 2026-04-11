@@ -13,7 +13,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 312	b a l	*balluz	b a l ( - - )	bal	Ball	87	German			C V C		ball	*balluz	3
 521	b ɑ n	*banną	b ɑ n ( - - )	bɑn	ban	142	Dutch					ban	*banną	4
 520	b æ n	*banną	b æ n ( - - )	bæn	ban	142	English					ban	*banną	4
-1936	b a n n e s	*bannas	b æ n ( - - ) e s	bænes	bannes	142	Old_English	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Note: a-stem neuter, gen.sg. same as masc.	Original: *banną → bann (nom.sg.).			ban	*bannas	4
+1936	b a n n e s	*bannas	b æ n ( - - ) e s	bænes	bannes	142	Old_English	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Note: a-stem neuter, gen.sg. same as masc.	Original: *banną → bann (nom.sg.).			ban	*banną	4
 519	b a n	*banną	b a n ( - - )	ban	Bann	142	German			C V C		ban	*banną	4
 221	b ɛ r x	*bergą	b ɛ r x ( - - )	bɛrx	berg	61	Dutch					barrow	*bergą	5
 220	b æ r əʊ	*bergą	b æ r əʊ ( - - )	bærəʊ	barrow	61	English					barrow	*bergą	5
@@ -53,7 +53,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1686	b a l k	*balgiz	b a l k ( - - )	balk	Balg	462	German			C V C C		belly	*balgiz	13
 262	b ɛ s	*bazją	b ɛ s - ( - - )	bɛs	bes	72	Dutch					berry	*bazją	14
 261	b ɛ r ɪ	*bazją	b ɛ r - ( ɪ - )	bɛrɪ	berry	72	English					berry	*bazją	14
-1946	b e r ġ e s	*bazjas	b e r ġ ( e s )	berġes	berġes	72	Old_English	Note: using gen.sg. *bazjas (> berġes); R/T vol.2 §6.8.2: *rj did not geminate in PWGmc	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			berry	*bazjas	14
+1946	b e r ġ e s	*bazjas	b e r ġ ( e s )	berġes	berġes	72	Old_English	Note: using gen.sg. *bazjas (> berġes); R/T vol.2 §6.8.2: *rj did not geminate in PWGmc	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			berry	*bazją	14
 260	b eː r ə	*bazją	b eː r - ( ə - )	beːrə	Beere	72	German					berry	*bazją	14
 546	b iː d ə	*beudăną	b iː d ə - ( - - )	biːdə	bieden	149	Dutch					bid	*beudăną	15
 1453	b ɪ d ə	*bidjăną	b ɪ d - ə - ( - - )	bɪdə	bidden	397	Dutch					bid	*bidjăną	15
@@ -188,7 +188,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 6	k ɔ r n	*kurną	k ɔ r n ( - - )	kɔrn	Korn	533	German					corn	*kurną	43
 1093	k uː	*kōz	k uː ( - - )	kuː	koe	299	Dutch	TSV fix: proto *kōwz → *kōz (Kroonen *kō- ~ *ku-, nom.sg. *kōz; -w- was spurious, not in Kroonen or R/T)				cow	*kōz	44
 1092	k aʊ	*kōz	k aʊ ( - - )	kaʊ	cow	299	English	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)				cow	*kōz	44
-1980	c ȳ	*kūi	c ȳ	kyː	cȳ	299	Old_English	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.	TSV fix: using PGmc dat.sg. *kūi (> OE cȳ by i-umlaut, R/T §6.6.1). | See docs/analysis/cow_root_noun_investigation.md			cow	*kūi	44
+1980	c ȳ	*kūi	c ȳ	kyː	cȳ	299	Old_English	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.	TSV fix: using PGmc dat.sg. *kūi (> OE cȳ by i-umlaut, R/T §6.6.1). | See docs/analysis/cow_root_noun_investigation.md			cow	*kōz	44
 1091	k uː	*kōz	k uː ( - - )	kuː	Kuh	299	German	TSV fix: proto *kōwz → *kōz (correct PGmc nom.sg. per Kroonen)				cow	*kōz	44
 1508	k r ɑ x t	*kraftiz	k r ɑ x t ( - - )	krɑxt	kracht	413	Dutch					craft	*kraftiz	45
 1507	k r ɑː f t	*kraftiz	k r ɑː f t ( - - )	krɑːft	craft	413	English					craft	*kraftiz	45
@@ -319,7 +319,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1700	f ɪ ŋ ə r	*fingrăz	f ɪ ŋ - ə r ( - - )	fɪŋər	Finger	466	German					finger	*fingrăz	75
 1588	v yː r	*fūri	v yː - - r	vyːr	vuur	435	Dutch					fire	*fūri	76
 1587	f aɪ ə	*fūri	f aɪ - ə r	faɪə	fire	435	English					fire	*fūri	76
-2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr.	See DEV_NOTES.md.			fire	*fūri	76
+2013	f ȳ r e	*fūri	f ȳ r e	fyːre	fȳre	435	Old_English	ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr.	See DEV_NOTES.md.			fire	*fūrą	76
 1586	f ɔy ə r	*fūri	f ɔy - ə r	fɔyər	Feuer	435	German					fire	*fūri	76
 1262	v ɪ s	*fiskăz	v ɪ s - ( - - )	vɪs	vis	346	Dutch					fish	*fiskăz	77
 1261	f ɪ ʃ	*fiskăz	f ɪ ʃ - ( - - )	fɪʃ	fish	346	English					fish	*fiskăz	77
@@ -475,7 +475,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1781	h a l ə	*xallō	h a l ə	halə	Halle	488	German					hall	*xallō	111
 438	h aː m ə r	*xamarăz	h aː m ə r ( - - )	haːmər	hamer	120	Dutch					hammer	*xamarăz	112
 437	h æ m ə	*xamarăz	h æ m ə r ( - - )	hæmə	hammer	120	English					hammer	*xamarăz	112
-2053	h a m e r e s	*xamaras	h æ m ə r ( - - )	hæmər	hameres	120	Old_English	Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *xamaras (> hameres)		hammer	*xamaras	112
+2053	h a m e r e s	*xamaras	h æ m ə r ( - - )	hæmər	hameres	120	Old_English	Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	 | Note: using gen.sg. *xamaras (> hameres)		hammer	*xamară	112
 436	h a m ə r	*xamarăz	h a m ə r ( - - )	hamər	Hammer	120	German					hammer	*xamarăz	112
 394	h ɑ n t	*xanduz	h ɑ n t ( - - )	hɑnt	hand	108	Dutch					hand	*xanduz	113
 393	h æ n d	*xanduz	h æ n d ( - - )	hænd	hand	108	English					hand	*xanduz	113
@@ -683,7 +683,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1436	l ai s t ə	*līstōn	l ai s t ( ə - )	laistə	Leiste	393	German					list	*līstōn	156
 617	l eː v ə	*libēną	l eː v ə - ( - - )	leːvə	leven	170	Dutch					live	*libēną	157
 616	l aɪ v	*libēną	l aɪ v - - ( - - )	laɪv	live	170	English					live	*libēną	157
-2107	l i f e þ	*libēθi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem	Source: Wiktionary etymology (template:inh)			live	*libēθi	157
+2107	l i f e þ	*libēθi	l aɪ v - - ( - - )	laɪv	lifeþ	170	Old_English	3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem	Source: Wiktionary etymology (template:inh)			live	*libēną	157
 615	l eː b ə n	*libēną	l eː b ə n ( - - )	leːbən	leben	170	German					live	*libēną	157
 213	l eː v ə r	*librō	l eː v ə r ( - )	leːvər	lever	59	Dutch					liver	*librō	158
 212	l ɪ v ə	*librō	l ɪ v ə r ( - )	lɪvə	liver	59	English					liver	*librō	158
@@ -730,7 +730,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 987	m a l ts	*maltăz	m a l ts ( - - )	malt͡s	Malz	271	German					malt	*maltăz	167
 1928	m ɑ n	*mannăz	m ɑ ( - - ) n	mɑn	man	529	Dutch					man	*mannăz	168
 1927	m æ n	*mannăz	m æ ( - - ) n	mæn	man	529	English					man	*mannăz	168
-2119	m a n n e s	*mannas	m æ ( - - ) n e s	mɒnːes	mannes	529	Old_English	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate orthographically.	Original: *mannăz → mann (nom.sg.).			man	*mannas	168
+2119	m a n n e s	*mannas	m æ ( - - ) n e s	mɒnːes	mannes	529	Old_English	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate orthographically.	Original: *mannăz → mann (nom.sg.).			man	*mannăz	168
 1926	m a n	*mannăz	m a ( - - ) n	man	Mann	529	German					man	*mannăz	168
 44	m ɑ r k	*markō	m ɑ r k -	mɑrk	mark	12	Dutch					march	*markō	169
 43	m ɑː ʧ	*markō	m ɑː - ʧ -	mɑːʧ	march	12	English					march	*markō	169
@@ -812,7 +812,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 572	n ɛ s ə l	*natilōn	n ɛ s ə l ( - - )	nɛsəl	Nessel	157	German					nettle	*natilōn	349
 1541	n ɑ x t	*naxtz	n ɑ x t ( - )	nɑxt	nacht	422	Dutch					night	*naxtz	187
 1540	n aɪ t	*naxtz	n aɪ - t ( - )	naɪt	night	422	English					night	*naxtz	187
-2140	n i h t	*naxti	n aɪ - t ( - )	niçt	niht	422	Old_English	R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht				night	*naxti	187
+2140	n i h t	*naxti	n aɪ - t ( - )	niçt	niht	422	Old_English	R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht				night	*naxts	187
 1539	n a x t	*naxtz	n a x t ( - )	naxt	Nacht	422	German					night	*naxtz	187
 130	n ɑ x t m ɛ r iː	*marōn	( n ɑ x t ) m ɛ r ( iː - )	nɑxtmɛriː	nachtmerrie	36	Dutch					nightmare	*marōn	188
 129	n aɪ t m ɛə	*marōn	( n aɪ - t ) m ɛə r ( - - )	naɪtmɛə	nightmare	36	English					nightmare	*marōn	188
@@ -859,7 +859,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 2151	r ē c	*raukiz	r iː k ( - - )	riːk	rēc	194	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			reek	*raukiz	198
 706	r au x	*raukiz	r au x ( - - )	raux	Rauch	194	German					reek	*raukiz	198
 560	r ɛ s t	*rastō	r ɛ s t ( - )	rɛst	rest	153	English					rest	*rastō	350
-2152	r æ s t e	*rastōz	r æ s t e	ræste	ræste	153	Old_English	Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still present). After PWGmc z-loss with vowel shortening (*-ōz > *-a, R/T §3.1.1 p.58), suffix is front, no A-restoration, AFB gives ræ-. Attested ræste abundantly in BT (tó ræste, on ræste, etc.). Paradigmatic leveling from oblique ræst- to nom.sg. (cf. R/T §6.3.2 on dag paradigm).				rest	*rastōz	350
+2152	r æ s t e	*rastōz	r æ s t e	ræste	ræste	153	Old_English	Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still present). After PWGmc z-loss with vowel shortening (*-ōz > *-a, R/T §3.1.1 p.58), suffix is front, no A-restoration, AFB gives ræ-. Attested ræste abundantly in BT (tó ræste, on ræste, etc.). Paradigmatic leveling from oblique ræst- to nom.sg. (cf. R/T §6.3.2 on dag paradigm).				rest	*rastō	350
 559	r a s t	*rastō	r a s t ( - )	rast	Rast	153	German					rest	*rastō	350
 167	r ɛɪ d ə	*rīdăną	r ɛɪ d ə - ( - - )	rɛɪdə	rijden	47	Dutch					ride	*rīdăną	199
 166	r aɪ d	*rīdăną	r aɪ d - - ( - - )	raɪd	ride	47	English					ride	*rīdăną	199
@@ -920,11 +920,11 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 332	z a l b ə	*salbō	z a l b ə	zalbə	Salbe	92	German					salve	*salbō	210
 977	s ɑ p	*sapōn	s ɑ p ( - - - )	sɑp	sap	268	Dutch					sap	*sapōn	211
 976	s æ p	*sapōn	s æ p ( - - - )	sæp	sap	268	English					sap	*sapōn	211
-2168	s æ p	*sapą	s æ p ( - - - )	sæp	sæp	268	Old_English	OE neut. a-stem (Hall, K-S); Kroonen: n-stem *safō dissolved dialectally				sap	*sapōn	211
+2168	s æ p	*sapą	s æ p ( - - - )	sæp	sæp	268	Old_English	OE neut. a-stem (Hall, K-S); Kroonen: n-stem *safō dissolved dialectally				sap	*sapą	211
 975	z a f t	*sapōn	z a f ( - - t )	zaft	Saft	268	German					sap	*sapōn	211
 1490	z eː	*sai	z eː	zeː	zee	408	Dutch					sea	*sai	212
 1489	s iː	*sai	s iː	siː	sea	408	English					sea	*sai	212
-2169	s ǣ	*saiwiz	s iː	sæː	sǣ	408	Old_English	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ				sea	*sai	212
+2169	s ǣ	*saiwiz	s iː	sæː	sǣ	408	Old_English	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ				sea	*saiwiz	212
 1488	z eː	*sai	z eː	zeː	See	408	German					sea	*sai	212
 514	z oː m	*saumăz	z oː m ( - - )	zoːm	zoom	140	Dutch					seam	*saumăz	213
 513	s iː m	*saumăz	s iː m ( - - )	siːm	seam	140	English					seam	*saumăz	213
@@ -1054,7 +1054,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1358	s p æ n	*spannăną	s p æ n - - ( - - )	spæn	span	372	English					span	*spannăną	241
 2202	s p a n n a n	*spannăną	s p æ n - - ( - - )	spæn	spannan	372	Old_English	OE target: spann→spannan (inf. of str.v. class VII; noun 'spann' in *spannō row)				span	*spannăną	241
 570	s p æ n	*spannō	s p æ n ( - )	spæn	span	156	English					span	*spannō	241
-2203	s p a n n e	*spannăi	s p æ n ( - )	spæn	spanne	156	Old_English	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ăi preserves medial geminate; unstressed *ăi→*ē (R/T §6.1.5).	See DEV_NOTES §fem-ō-stem-datsg.			span	*spannăi	241
+2203	s p a n n e	*spannăi	s p æ n ( - )	spæn	spanne	156	Old_English	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ăi preserves medial geminate; unstressed *ăi→*ē (R/T §6.1.5).	See DEV_NOTES §fem-ō-stem-datsg.			span	*spannō	241
 1357	ʃ p a n ə n	*spannăną	ʃ p a n ə n ( - - )	ʃpanən	spannen	372	German					span	*spannăną	241
 569	ʃ p a n ə	*spannō	ʃ p a n ( ə )	ʃpanə	Spanne	156	German					span	*spannō	241
 1232	s p ɑ r	*sparrô	s p ɑ r - -	spɑr	spar	338	Dutch					spar	*sparrô	242
@@ -1467,13 +1467,13 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 869	j uː θ	*jugunθiz	j uː - - - θ ( - - )	juːθ	youth	239	English					youth	*jugunθiz	333
 2308	ġ e o g u þ	*jugunθiz	j uː - - - θ ( - - )	juːθ	ġeoguþ	239	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			youth	*jugunθiz	333
 868	j uː ɡ ə n t	*jugunθiz	j uː ɡ ə n d ( - - )	juːɡənt	Jugend	239	German					youth	*jugunθiz	333
-2309	m a c a	*makô	m a k a	maka	maca	539	Old_English	Class II weak iptv. 2sg test (R/T §5.2). Trimoric *ō → OE -a.				make (iptv.2sg)	*makô	368
-2310	m a c e þ	*makōθi	m a k e θ	makeθ	maceþ	540	Old_English	Class II weak 3sg pres. indic. test (R/T §5.2). Regular phonology: *ōθi → -eþ (i-umlaut of *ō). Attested macaþ is analogical.				make (3sg)	*makōθi	369
-2311	b o r a	*burô	b o r a	bora	bora	541	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.				bore (iptv.2sg)	*burô	370
-2312	b o r e þ	*burōθi	b o r e θ	boreθ	boreþ	542	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ (i-umlaut of *ō). Attested boraþ is analogical.				bore (3sg)	*burōθi	371
-2313	l i o r n a	*liznô	l e o r n a	liorna	liorna	543	Old_English	Northumbrian iptv.2sg. Uses io from regular breaking; WS leorna has leveled eo.				learn (iptv.2sg)	*liznô	372
-2314	l i o r n e þ	*liznōθi	l e o r n e θ	liorneθ	liorneþ	544	Old_English	Northumbrian 3sg. Uses io from regular breaking (no i-umlaut trigger in Class II weak). WS leorneþ has leveled eo.				learn (3sg)	*liznōθi	373
-2315	l i c c a	*likkô	l i k k a	likka	licca	545	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.				lick (iptv.2sg)	*likkô	374
-2316	l i c c e þ	*likkōθi	l i k k e θ	likkeθ	licceþ	546	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Root palatalization issue same as infinitive.				lick (3sg)	*likkōθi	375
-2317	s ċ ē a w a	*skawô	s k e a w a	skeawa	sċēawa	547	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.				show (iptv.2sg)	*skawô	376
-2318	s ċ ē a w e þ	*skawōθi	s k e a w e θ	skeaweθ	sċēaweþ	548	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Normalized sċ: Campbell §440.				show (3sg)	*skawōθi	377
+2309	m a c a	*makô	m a k a	maka	maca	539	Old_English	Class II weak iptv. 2sg test (R/T §5.2). Trimoric *ō → OE -a.				make (iptv.2sg)	*makōną	368
+2310	m a c e þ	*makōθi	m a k e θ	makeθ	maceþ	540	Old_English	Class II weak 3sg pres. indic. test (R/T §5.2). Regular phonology: *ōθi → -eþ (i-umlaut of *ō). Attested macaþ is analogical.				make (3sg)	*makōną	369
+2311	b o r a	*burô	b o r a	bora	bora	541	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.				bore (iptv.2sg)	*burōną	370
+2312	b o r e þ	*burōθi	b o r e θ	boreθ	boreþ	542	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ (i-umlaut of *ō). Attested boraþ is analogical.				bore (3sg)	*burōną	371
+2313	l i o r n a	*liznô	l e o r n a	liorna	liorna	543	Old_English	Northumbrian iptv.2sg. Uses io from regular breaking; WS leorna has leveled eo.				learn (iptv.2sg)	*liznōjăną	372
+2314	l i o r n e þ	*liznōθi	l e o r n e θ	liorneθ	liorneþ	544	Old_English	Northumbrian 3sg. Uses io from regular breaking (no i-umlaut trigger in Class II weak). WS leorneþ has leveled eo.				learn (3sg)	*liznōjăną	373
+2315	l i c c a	*likkô	l i k k a	likka	licca	545	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.				lick (iptv.2sg)	*likkōną	374
+2316	l i c c e þ	*likkōθi	l i k k e θ	likkeθ	licceþ	546	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Root palatalization issue same as infinitive.				lick (3sg)	*likkōną	375
+2317	s ċ ē a w a	*skawô	s k e a w a	skeawa	sċēawa	547	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.				show (iptv.2sg)	*skawōną	376
+2318	s ċ ē a w e þ	*skawōθi	s k e a w e θ	skeaweθ	sċēaweþ	548	Old_English	Class II weak 3sg pres. indic. test. Regular phonology: *ōθi → -eþ. Normalized sċ: Campbell §440.				show (3sg)	*skawōną	377
