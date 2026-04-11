@@ -16925,39 +16925,63 @@ Campbell §210 fn. 1 notes that in `swostor` 'sister', "The preceding w apparent
 helps combinative back umlaut... to take place in this word, although the
 consonant group st would not normally permit it." The same applies to `woruld`.
 
-#### 8. FST Implementation Options
+#### 8. FST Implementation: The "Transponent" Approach
 
-**Option A: Use nominative ō-stem form `*weraldu`**
-- Pro: Historically accurate pre-form per R/T
-- Con: Requires modeling the `*a → *u` change, which is lexically specific
-- FST output prediction: `*weraldu` → `*weoroldu` (back mutation) → close but not exact
+**The problem:** Several changes in the derivation chain are lexically specific or
+analogical, not regular sound changes that the FST can model:
+1. The stem-class shift i-stem → ō-stem is **analogical** (paradigmatic leveling)
+2. The medial `*a → *u` change is **lexically specific** (Luick: "noch recht unklar")
 
-**Option B: Use pre-form with `*u` already present: `*weruldu`**
-- Pro: Bypasses the mysterious `*a → *u` change
-- Con: No clear attestation for this exact form
-- FST output prediction: `*weruldu` → `weorold` (if combinative back umlaut works)
+**Solution:** Use different values for PROTO and PROTOFORM:
+- **PROTO** = PGmc etymological form for cognate-set identification: `*weraldiz`
+- **PROTOFORM** = "transponent" — the pre-OE form that the FST can process to
+  yield the attested OE output: `*wer-oldu`
 
-**Option C: Target Northumbrian `woruld` with syncopated form**
-- Pro: North. shows clearest lautgesetzlich development
-- Con: Our target is `weorold` (WS form)
+The term "transponent" (borrowing from music theory) captures that this is the
+*input form* needed to produce the correct output, not necessarily a historically
+attested intermediate stage.
 
-**Option D: Mark as documented exception**
-- Pro: Acknowledges the unique phonological history
-- Con: Doesn't reduce mismatch count
+**Why `*wer-oldu` specifically:**
 
-**Recommendation:** Try Option B with `*weruldu`. If our FST handles:
-1. Combinative back umlaut: `*we- → *weo-` before `*-u-`
-2. Unstressed vowel handling in final syllable
-...then it should produce `weorold` or close to it.
+1. **`*wer-`** (not `*wir-`): R/T uses `*weraldiz` for the compound (with `*e`),
+   even while noting uncertainty about the simplex. The NWGmc `*i > *e` lowering
+   would have applied anyway.
 
-#### 9. TSV Changes Required
+2. **Zero linking vowel**: R/T's derivation `*weraldu → *weruld` shows syncope of
+   the medial vowel. The FST's compound syncope rule (`OECompoundLinkingSyncope`)
+   only targets `*ă`, so we use zero linking vowel to get the syncopated form.
 
-At minimum, fix the root vowel:
-- **PROTO:** `*weraldiz` (not `*wiră-aldiz`)
-- **PROTOFORM:** `*weruldu` or `*weraldu` (ō-stem form, no hyphen)
-- **Remove hyphen:** This is not a productive compound — treat as simplex
+3. **`*old-`** (not `*ald-`): The `*a → *u → *o` change is lexically specific and
+   cannot be modeled by regular rules. We input `*o` directly. Technically this
+   represents `*uld` with back mutation applied, but the FST handles back mutation
+   from the environment (`*-u` ending), so `*old-` works.
 
-The hyphenated compound notation `*wiră-aldiz` is doubly wrong:
+4. **`-u`** (ō-stem): The stem-class shift is analogical. We input the ō-stem
+   ending directly so that i-umlaut doesn't apply to `*ald → *æld → *ield`.
+
+**FST verification:**
+```
+$ echo "wer-oldu" | flookup -i old_english.bin
+wer-oldu    weorold
+```
+
+The FST correctly applies:
+- Compound boundary deletion: `wer-oldu → weroldu`
+- Back mutation: `*e → *eo` before back vowel → `weoroldu`
+- High vowel apocope: `-u` drops → `weorold` ✓
+
+#### 9. TSV Changes (Implemented)
+
+**Row 2302 (weorold):**
+- **PROTOFORM:** `*wer-oldu` (transponent for FST)
+- **PROTO:** `*weraldiz` (PGmc etymological form)
+- **NOTE:** Detailed citation explaining the PROTO/PROTOFORM distinction
+
+The compound hyphen is retained in PROTOFORM because:
+1. It marks the compound boundary for the FST's phonotactic parser
+2. The FST's `pgrmCompoundWord` grammar requires this structure
+
+The original `*wiră-aldiz` was doubly wrong:
 1. Wrong root vowel (`*i` instead of `*e`)
 2. Wrong stem class (i-stem `-iz` instead of ō-stem `-u`)
 
@@ -16974,9 +16998,10 @@ The hyphenated compound notation `*wiră-aldiz` is doubly wrong:
 | Orel | `*wira-alđiz` | Uses older notation |
 | Wiktionary | `*weraldiz` (i-stem) | Modern consensus form |
 
-**Status:** Comprehensive research complete. TSV needs:
-1. Root vowel fix: `*wir-` → `*wer-`
-2. Stem class fix: i-stem `-iz` → ō-stem `-u`
-3. Remove compound hyphen
-4. Medial `*a → *u` change is lexically specific — may need to use `*weruldu`
+**Status (2026-04-11):** TSV updated. Row 2302 now has:
+- PROTOFORM: `*wer-oldu` (transponent for FST)
+- PROTO: `*weraldiz` (PGmc etymological form)
+- Detailed NOTE with citations
+
+**Mismatch count:** 41 → 40 (weorold fix successful)
 

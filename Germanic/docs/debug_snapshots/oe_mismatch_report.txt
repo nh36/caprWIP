@@ -1,10 +1,10 @@
-Total mismatches: 41
+Total mismatches: 40
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    6
-  Phonology (other buckets):   28
+  Phonology (other buckets):   27
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -16,7 +16,6 @@ Total mismatches: 41
   final_vowel_extra: 3
   length_extra_other: 1
   epenthetic_vowel_missing: 3
-  syncopation_missing: 1
   gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -81,12 +80,6 @@ epenthetic_vowel_missing (3):
   *saiwălō -> sāwl (expected sāwol)
   *strawjăną -> strewan (expected strewian)
   *θistilăz -> þistl (expected þistel)
-
-syncopation_missing (1):
-  *wiră-aldiz -> weraield (expected weorold)
-  >> ISSUE: FST kept medial vowel that target syncopates
-  >> LIKELY: High vowel syncope rule not applying (meoloc→meolc)
-  >> ACTION: Check syncope rule for unstressed high vowels
 
 gemination_extra (1):
   *tikkô -> ticca (expected ticia)
