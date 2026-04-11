@@ -16792,7 +16792,8 @@ additional issues beyond syncope (back mutation/breaking in compound context).
 
 - Kroonen reconstructs `*wira-` 'm. "man"' < PIE `*uiH-ró-` (p.645)
 - Kroonen reconstructs `*aldi-` 'f. "age"' < PIE `*h₂el-ti-` (p.59)
-- Kluge-Seebold: "wg. `*wira-aldō` f. 'Zeitalter, Welt'" (s.v. Welt)
+- Kluge-Seebold: "wg. `*wira-aldō` f. 'Zeitalter, Welt'" but ALSO "g. `*wera-` 'Mann'" (s.v. Welt)
+- Orel: `*wira-alđiz` (p.463)
 - Seebold: "ae. weoruld, woruld, -old, world" < compound with `*wera-` (p.21)
 
 **R/T vol. 2, p.317 (key passage):**
@@ -16807,16 +16808,36 @@ additional issues beyond syncope (back mutation/breaking in compound context).
 > The Northumbrian form could have developed through an intermediate stage
 > `*weoruld` (see above)."
 
-#### 2. The Root Vowel: `*e`, not `*i`
+#### 2. The Root Vowel: `*i` vs `*e` — ACTUALLY DISPUTED
 
-All major sources reconstruct PGmc `*weraz` 'man', not `*wiraz`:
-- Kroonen: `*wira-` < PIE `*uiH-ró-` (with Dybo's Law pretonic shortening)
-- The `*i` is from PIE, but PGmc had `*e` in this word
-- Our TSV `*wiră-aldiz` has the wrong vowel in the first element
+**The sources are inconsistent:**
 
-**Cognate evidence:**
-- Gothic `wair`, ON `verr`, OE `wer`, OS `wer`, OHG `wer` — all show `*e`
-- The Latin cognate `vir` 'man' confirms PIE `*u̯iHrós`, but Germanic has `*e`
+| Source | Simplex 'man' | Compound 'world' |
+|--------|---------------|------------------|
+| Kroonen | `*wira-` | (implicit `*wira-aldiz`) |
+| Orel | `*wiraz` | `*wira-alđiz` |
+| Kluge-Seebold | `*wera-` | `*wira-aldō` (inconsistent!) |
+| R/T vol.2 | `*wiraz (*weraz??)` — **explicitly uncertain** | `*weraldiz` (uses `*e`!) |
+
+**R/T vol. 2, p.56 on the simplex:**
+> "PIE *wih₁rés 'young' ... > PGmc *wiraz (**weraz??**; Goth. wair, ON verr)"
+
+R/T explicitly flags the reconstruction as uncertain! They note that we cannot be
+sure PGmc didn't already have `*e`, because:
+- The word survives in forms where `*i > *e` lowering would have applied anyway
+- Gothic `wair` shows `ai` (< `*e` or `*i` — ambiguous)
+- ON `verr` shows `e` (but this could be from `*i > *e` lowering)
+
+**Cognate evidence supports BOTH readings:**
+- Gothic `wair`, ON `verr`, OE `wer`, OS `wer`, OHG `wer` — surface forms have `e`
+- But PIE clearly had `*wiHrós` (cf. Lat. `vir`, Skt. `vīrá-`)
+- The `*i > *e` lowering (NWGmc) makes the pre-OE form have `*e` regardless
+
+**Conclusion:** For the COMPOUND, R/T uses `*weraldiz` with `*e`, which is correct
+for the NWGmc/pre-OE stage even if PGmc had `*wira-`. Our TSV issue is that we
+have the hyphenated compound notation `*wiră-aldiz` — even if `*i` is defensible
+for PGmc, the notation suggests we're feeding something through the FST that
+should already have undergone `*i > *e` lowering.
 
 #### 3. Stem-Class Shift: i-stem → ō-stem
 
