@@ -16689,59 +16689,79 @@ For `*regnă-bugô → reġnafoga`, the issues are:
 1. **Linking vowel `ă` survives** — should syncopate to yield `reġnboga`
 2. **`*b → f`** — lenition applying incorrectly; target has `b` (stop)
 
-**Analysis:**
+**R/T §6.7.3: General syncope of short vowels (p.264-265):**
 
-The root cause is that compound-internal syncope must occur **before** lenition
-(B-allophony) applies. The chronology should be:
+> "Short vowels in unstressed word-internal open syllables were lost under
+> particular conditions. **Nonhigh *æ (the reflex of PWGmc *a and *e) and *e
+> (the i-umlaut product of the same) were usually lost regardless of the 
+> preceding syllable's weight**, so long as the preceding syllable was stressed;
+> high *i and *u were lost only if the preceding syllable was both heavy and stressed."
+
+This explains why our FST fails:
+
+1. Our `OEMedialSyncope` only targets `*i` — it does not delete `*æ` (reflex of `*a/ă`)
+2. The pipeline has:
+   - `OEWeakTailReduction1a`: `*ă → *a`
+   - `OEUnstressedAFronting`: `*a → *æ` in medial position
+   - **NO RULE** deleting medial `*æ`
+
+**The actual derivation chain should be:**
 
 ```
-*regnă-bugô
-↓ (compound linking-vowel syncope)
+*regnă-bugô    (proto-form)
+↓ (unstressed *ă → *a)
+*regna-bugô
+↓ (unstressed fronting: *a → *æ)
+*regnæ-bugô
+↓ (general syncope: *æ → 0 after stressed syllable)  ← MISSING RULE
 *regn-bugô
-↓ (B-allophony: *b → *β only after vowels/liquids — here after *n, so BLOCKED)
-*regn-bugô
+↓ (B-allophony: *b → *β only after vowels — blocked after *n)
+*regn-bugô     (b stays as stop)
 ↓ (other changes)
 reġnboga ✓
 ```
 
-But currently:
+**R/T p.281 confirms the compound pattern:**
 
-```
-*regnă-bugô
-↓ (B-allophony: *b after *ă, so *b → *β)
-*regnă-βugô
-↓ (no syncope for *ă)
-*regnă-βugô
-↓ (*β → f in output)
-reġnafoga ✗
-```
+> "The fact that compounds with a-stem first members regularly fail to
+> exhibit their stem vowel can also be the result of general syncope, though re-
+> compounding with the nom. sg. (which had been endingless since the PWGmc
+> period, see 3.1.2) is difficult to rule out in most cases."
 
-**Evidence from R/T:**
-
-Ringe & Taylor vol.2 p.330 shows `elnboga 'elbow'` (= `eln` + `boga`), a parallel
-compound where `b` remains a stop because the linking vowel deleted early. The entry
-for `eln` notes: "eln is normal (including in the compound elnboga 'elbow')".
-
-This confirms that compound linking vowels were lost early enough that the second
-element's initial consonant was protected from lenition by being post-consonantal.
+And R/T p.330 shows `elnboga 'elbow'` (= `eln` + `boga`) where `b` remains a stop.
 
 **Proposed Solution:**
 
-Add a **compound-internal linking-vowel syncope rule** at the PWGmc stage, ordered
-before B-allophony:
+Add a general syncope rule for nonhigh vowels (`*æ`, `*e`) parallel to the
+existing `OEMedialSyncope` for `*i`. This is NOT compound-specific — it's a
+regular OE sound change that applies to all internal unstressed nonhigh vowels.
 
 ```foma
-# Compound linking-vowel syncope (PWGmc stage)
-# The linking vowel *ă between compound elements is deleted when:
-# - It follows a heavy syllable (CV:C, CVCC) in the first element
-# - The second element begins with a consonant
-# This must precede B-allophony to block lenition of post-consonantal stops.
-define PWGmcCompoundLinkingSyncope [
-    {*ă} -> 0 || OEAnyConsonant _ OEAnyConsonant
+# R/T §6.7.3: General syncope of nonhigh short vowels (*æ, *e)
+# Unlike high vowels (*i, *u), these syncopate after ANY stressed syllable,
+# not just heavy ones. "Nonhigh *æ... and *e... were usually lost regardless
+# of the preceding syllable's weight, so long as the preceding syllable was stressed."
+define OEGeneralSyncope [
+    {*æ} -> 0 || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant,
+    {*e} -> 0 || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant
 ];
 ```
 
-This should be inserted after j-gemination but before B-allophony in `PWGmcChanges`.
+**Ordering:**
+- Must come AFTER `OEUnstressedAFronting` (which creates the `*æ` to delete)
+- Must come BEFORE `PGmcBAllophony` (so syncope bleeds lenition in compounds)
+
+The current pipeline has:
+1. `OEFinalSchwaApocope` — final `*ă → 0`
+2. `PGmcBAllophony` — `*b → *β` after vowels
+
+We need to insert `OEGeneralSyncope` **before** B-allophony, after the rules that
+create medial `*æ`. This may require reordering: `OEUnstressedAFronting` currently
+runs much later (in `OEWeakTailReduction` at line 2373), but fronting and syncope
+should run earlier, at the OE stage before allophony.
+
+**Status:** Analysis refined with R/T citations. Implementation requires reordering
+`OEUnstressedAFronting` to run earlier (before B-allophony) and adding `OEGeneralSyncope`.
 
 **Caveats:**
 
