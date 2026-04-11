@@ -16778,3 +16778,88 @@ marked linking vowels, avoiding over-application to suffix vowels.
 **Status:** Implemented for compound linking vowels. The `*wiră-aldiz` case has
 additional issues beyond syncope (back mutation/breaking in compound context).
 
+### OE weorold 'world': Etymology and FST Challenges (2026-04-11)
+
+**Current state:**
+- TSV row 2302: `*wiră-aldiz` → expected `weorold`
+- FST produces: `werield` (after compound syncope fix)
+- Issues: (1) `wir-` instead of `weor-`, (2) `-ield` instead of `-old`
+
+**R/T etymology (vol. 2, p.317):**
+
+> "PNWGmc *weraldiz 'world' (lit. 'age of men', often shifted into the ō-stems:
+> ON verǫld, OE warld vs. i-stem OS werold, OHG weralt) > *weraldu > *weruld
+> (6.3.3) > WS OE weorold ~ worold (also with u in the 2nd syll.), Merc. weoruld,
+> North. woruld, Kent. wiarald."
+
+**Key insights from R/T:**
+
+1. **Proto-form has `*e`, not `*i`**: R/T reconstructs `*weraldiz`, not `*wiraldiz`.
+   The TSV `*wiră-aldiz` has the wrong root vowel.
+
+2. **Stem-class shift**: The word "often shifted into the ō-stems" — from i-stem
+   `-iz` to ō-stem `-u`. This is crucial because:
+   - i-stem `-iz` triggers i-umlaut: `*ald → *æld → ield` (wrong)
+   - ō-stem `-u` does NOT trigger i-umlaut: `*ald → old` (correct)
+
+3. **Medial vowel change `*a → *u`**: R/T shows `*weraldu > *weruld` with
+   reference to §6.3.3. The medial `*a` assimilates to following `*u`.
+
+4. **Back mutation**: `*weruld → weorold` — the `*e` breaks to `eo` before
+   `*r + *u` (labial environment).
+
+**Derivation chain per R/T:**
+```
+*weraldiz     (PGmc i-stem)
+↓ (stem-class shift to ō-stem)
+*weraldu      (PWGmc ō-stem)
+↓ (medial *a → *u assimilation to final *u)
+*weruld       (§6.3.3 — identity unclear, possibly WS-specific)
+↓ (back mutation: *e → *eo before r + u)
+*weoruld
+↓ (final cluster simplification)
+weorold ✓
+```
+
+**Problems for FST modeling:**
+
+1. **The `*a → *u` change is problematic.** R/T cites §6.3.3, but that section
+   discusses WS retraction of `*ǣ → *a` before back vowels — not `*a → *u`.
+   This may be a lexically-specific assimilation, or R/T's citation is to a
+   different part of §6.3.3 not about long vowels.
+
+2. **Compound vs simplex treatment.** Our TSV treats this as a compound
+   (`*wiră-aldiz` with hyphen), but the medial vowel development doesn't
+   follow normal compound rules. R/T treats it as a derivative compound
+   that behaves more like a simplex word.
+
+3. **Dialectal variation.** R/T notes: "WS OE weorold ~ worold... Merc.
+   weoruld, North. woruld, Kent. wiarald." The vowel outcomes vary by dialect.
+
+**Recommended TSV fix:**
+
+Change the proto-form from `*wiră-aldiz` to `*weraldu` (the ō-stem form that
+R/T says is the immediate pre-OE ancestor). This:
+- Gives correct root vowel `*e` (not `*i`)
+- Avoids i-umlaut from `-iz`
+- Makes the compound linking vowel disappear (it's now medial `*a` in simplex)
+
+However, we still need the `*a → *u` change for full correctness. Options:
+
+**Option A: Accept approximate match**
+- Use `*weraldu` → produces something like `*weoroldu → weorolde` (with
+  a-restoration of medial vowel and back mutation of root)
+- Close but not exact
+
+**Option B: Use paradigm cell form**
+- If a different paradigm cell (e.g., acc.sg. `*weruldu`?) exists with
+  the `*u` already present, that could work
+- Needs further research into OE ō-stem paradigms
+
+**Option C: Mark as documented exception**
+- The `*a → *u` change in `*weraldu → *weruld` may be lexically specific
+- Document and move on
+
+**Status:** Research complete. TSV definitely needs fixing (`*wiră-` → `*wer-`
+at minimum). The medial vowel development remains challenging.
+
