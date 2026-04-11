@@ -47,6 +47,8 @@
 - [A-restoration: ræst, tæppa, stemn](#a-restoration-in-ō-stems-and-n-stems-ræst-tæppa-stemn-fronting_missing__afb)
 - [The stefn/stemn Problem](#the-stefnstemn-problem-local-transponent-decision)
 - [z-loss/rhotacism and bimoraic/trimoraic cross-source analysis](#historical-phonology-of-final--z-loss-and-its-interaction-with-rhotacism)
+- [Stiles 1985-6 on 'four'](#stiles-1985-6-on-the-numeral-four-research-summary-2026-04-10)
+- [Compound Words: *regnă-bugô](#compound-words-regnă-bugô--reġnboga-rainbow-2026-04-11)
 
 ### Companion documents
 - `docs/analysis/notable_findings.md` — Cross-referenced scholarly discussion (§§1–7)
@@ -16666,3 +16668,92 @@ Stiles places the `*-ðw- → *-ww-` assimilation "very early" — before both o
 - `docs/references/stiles_1985_four_part1_nowele6.pdf`
 - `docs/references/stiles_1986_four_part2_nowele7.pdf`
 - `docs/references/stiles_1986_four_part3_nowele8.pdf`
+
+---
+
+### Compound Words: *regnă-bugô → reġnboga 'rainbow' (2026-04-11)
+
+**Problem:**
+
+Our compound grammar now accepts hyphenated proto-forms, but the phonological output
+is wrong:
+
+| Proto-Form | FST Output | Target |
+|------------|------------|--------|
+| `*regnă-bugô` | `reġnafoga` | `reġnboga` |
+| `*wiră-aldiz` | `weraield` | `weorold` |
+| `*θūs-undī` | `þūsynde` | `þūsend` |
+
+For `*regnă-bugô → reġnafoga`, the issues are:
+
+1. **Linking vowel `ă` survives** — should syncopate to yield `reġnboga`
+2. **`*b → f`** — lenition applying incorrectly; target has `b` (stop)
+
+**Analysis:**
+
+The root cause is that compound-internal syncope must occur **before** lenition
+(B-allophony) applies. The chronology should be:
+
+```
+*regnă-bugô
+↓ (compound linking-vowel syncope)
+*regn-bugô
+↓ (B-allophony: *b → *β only after vowels/liquids — here after *n, so BLOCKED)
+*regn-bugô
+↓ (other changes)
+reġnboga ✓
+```
+
+But currently:
+
+```
+*regnă-bugô
+↓ (B-allophony: *b after *ă, so *b → *β)
+*regnă-βugô
+↓ (no syncope for *ă)
+*regnă-βugô
+↓ (*β → f in output)
+reġnafoga ✗
+```
+
+**Evidence from R/T:**
+
+Ringe & Taylor vol.2 p.330 shows `elnboga 'elbow'` (= `eln` + `boga`), a parallel
+compound where `b` remains a stop because the linking vowel deleted early. The entry
+for `eln` notes: "eln is normal (including in the compound elnboga 'elbow')".
+
+This confirms that compound linking vowels were lost early enough that the second
+element's initial consonant was protected from lenition by being post-consonantal.
+
+**Proposed Solution:**
+
+Add a **compound-internal linking-vowel syncope rule** at the PWGmc stage, ordered
+before B-allophony:
+
+```foma
+# Compound linking-vowel syncope (PWGmc stage)
+# The linking vowel *ă between compound elements is deleted when:
+# - It follows a heavy syllable (CV:C, CVCC) in the first element
+# - The second element begins with a consonant
+# This must precede B-allophony to block lenition of post-consonantal stops.
+define PWGmcCompoundLinkingSyncope [
+    {*ă} -> 0 || OEAnyConsonant _ OEAnyConsonant
+];
+```
+
+This should be inserted after j-gemination but before B-allophony in `PWGmcChanges`.
+
+**Caveats:**
+
+1. The rule `{*ă} -> 0 || C_C` might over-apply to non-compound medial contexts.
+   Need to verify against words with legitimate medial `*ă` (weak noun suffixes, etc.).
+
+2. Alternative: change the TSV to use `*regn-bugô` (no linking vowel) if the syncope
+   is assumed in the proto-form. But this conflates reconstruction with FST input.
+
+3. The `*wiră-aldiz` case also needs compound-specific breaking rules — the first
+   element `wir-` should trigger breaking (`*wiră → weora-`), but the environment
+   might differ in compounds.
+
+**Status:** Research complete; implementation pending. Need to test compound-internal
+syncope rule against existing words to verify it doesn't over-apply.
