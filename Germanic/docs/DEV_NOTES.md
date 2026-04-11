@@ -17047,3 +17047,192 @@ The original `*wiră-aldiz` was doubly wrong:
 
 **Mismatch count:** 41 → 40 (weorold fix successful)
 
+#### 11. Deeper Research: `*i → *e` Lowering (2026-04-12)
+
+**Question:** If PIE had `*wiHrós`, what sound change yielded PGmc `*wer-`? When?
+
+**Fulk (2018) §4.3 — "Lowering of short mid and high vowels":**
+
+Fulk provides the most comprehensive modern treatment. Key points:
+
+> "PGmc. *i > *e before certain consonants followed by a non-high vowel in the
+> next syllable" (paraphrase of §4.3)
+
+But crucially, Fulk n.5 on `*wer` and `*nest`:
+
+> "Ringe (Ringe & Taylor 2014: 34–6) takes the position that this lowering is a
+> Franconian change that spread northward irregularly in WGmc., and that in OFris.
+> the change is unrelated, **choosing to leave exceptions like OE nest, wer unexplained**.
+> By contrast, Lloyd (1966) argues that an allophone [e] of /i/ arose occasionally
+> in Gmc. on the basis of systemic analogy."
+
+This confirms R/T's position: the `*i > *e` in `*wer` is **unexplained** — it's an
+exception that R/T acknowledges but cannot derive from regular sound change.
+
+**R/T vol. 2, pp.56-57 (§2.3.1):**
+
+R/T discusses this directly:
+
+> "PIE `*wih₁rés` 'young' ... > ... > PGmc `*wiraz` (`*weraz??`; Goth. wair, ON verr)
+> > OE, OS, OHG wer;
+>
+> PIE `*nisdós` 'seat' ... > PGmc `*nistaz` (`*nestaz??`) > OE, OHG nest.
+>
+> **We cannot be sure that PGmc did not already exhibit `*e` in these words**"
+
+R/T gives two possible explanations:
+1. PGmc might already have had `*e` (we simply don't know)
+2. There was `*i > *e` lowering in WGmc, but it was "modestly extensive... in the
+   southern part of the WGmc area, usually before labial and velar obstruents"
+
+**The environment for regular lowering (R/T p.57):**
+
+> "There was a modestly extensive lowering of `*i` to `e` in the southern part of
+> the WGmc area, usually **before labial and velar obstruents** which were in turn
+> followed by nonhigh vowels"
+
+Examples: `*k"ik"az` > OHG `quec` (but OE `cwic`), `*wikon-` > OHG `wëhha` (but OE `wicu`).
+
+**But `*wiraz` doesn't fit this environment!** The consonant after `*i` is `*r` (a
+sonorant), not a labial or velar obstruent. So the lowering in `*wer` is **irregular**.
+
+**Dating the change:**
+
+For the regular (Southern WGmc) `*i > *e` lowering:
+- Post-PGmc (Gothic doesn't show it except before r, h, hw — that's independent)
+- Probably OHG/Franconian origin, spreading northward (R/T's position)
+- Pre-OE if OE shows any examples (which it does: `nest`, `wer`)
+
+For `*wir- → *wer-` specifically:
+- Cannot be dated because it's irregular
+- Might be PGmc (R/T: "We cannot be sure PGmc did not already exhibit *e")
+- Might be independent changes in each branch
+
+**Campbell §114 — "Lowering of i to e":**
+
+Campbell notes:
+
+> "Apart from the change i > e in the neighbourhood of l and r (§172–4), OE
+> shares with the other WGmc. languages occasional lowering of i to e, though
+> instances are rather more frequent in the other WGmc. languages than in OE"
+
+He gives examples: OE `wer`, `nest`, `spec` (OS `spëk`). He notes the development
+is "sporadic" and "the conditions... are obscure."
+
+**Conclusion for `*wir- → *wer-`:**
+
+The change is **real but not regularly derivable**:
+- PIE `*wiHrós` → PGmc `*wiraz` is the expected development
+- But all NWGmc languages show `*e`: ON `verr`, OE/OS/OHG `wer`
+- R/T explicitly flags the reconstruction as uncertain: `*wiraz (*weraz??)`
+- This is an acknowledged exception that cannot be explained by regular phonology
+
+**For FST purposes:** We use `*wer-` because that's what all WGmc daughters show.
+Whether the change was PGmc `*i > *e`, NWGmc `*i > *e`, or something earlier, the
+pre-OE input form had `*e`. The FST correctly models the subsequent development.
+
+#### 12. Deeper Research: Medial `*a → *u` Raising (2026-04-12)
+
+**Question:** R/T says `*a → *u` happens "in compounds." But sound changes can't
+reference morphology. What is the TRUE phonological conditioning?
+
+**R/T vol. 2, p.202 (§6.3.3) — the key passage:**
+
+> "In others the unstressed vowel has not only been retracted but **raised all
+> the way to u**, usually spelled u ~ o unless a nasal follows immediately"
+
+Examples: `hlafurd`, `furlung`, `weoruld`, `ācumba`.
+
+**R/T vol. 2, p.18 (on Gothic parallel):**
+
+R/T describes a similar change in Gothic `ainummehun` (but not `ainamma`):
+
+> "The raising of -a- in this one form is plausibly ascribed to its position
+> **immediately before -m- between a primary and a secondary stress** (thus
+> áinummḗhun, see Braune and Heidermanns 2004: 29, §4 Anm. 2)"
+
+This is the key insight! The conditioning is **prosodic**, not morphological:
+
+- Primary stress on first syllable (compound first element)
+- Secondary stress on second element of compound
+- The medial syllable (bearing unstressed `*a`) is **metrically the weakest**
+
+In metrical terms: `*hláf(z)wàrd` → medial syllable is in a **trough** between two
+stressed positions. This prosodic weakness may trigger extra reduction (raising).
+
+**Comparative evidence:**
+
+1. **Gothic** `ainummehun` shows the same `*a → *u` in the same prosodic position
+2. **OS/OHG** don't show this raising: `werold`, `weralt` (not `*weruld`)
+3. **OE only** has this complete raising: `weoruld`, `hlafurd`, `furlung`
+
+This suggests the raising may be an **OE-specific** continuation of a broader NWGmc
+tendency. R/T (p.18) says the Gothic change "could be completely independent of the
+NWGmc change; but it is also possible that a single historical change took place
+over several generations."
+
+**Phonological characterization:**
+
+The conditioning is not simply "in compounds" but rather:
+
+> Unstressed `*a` → `*u` / σ́ C(C) _ C(C) σ̀
+
+Where σ́ = primary stressed syllable, σ̀ = secondary stressed syllable.
+
+This is a **prosodically-conditioned vowel reduction** — the vowel in the metrically
+weakest position is raised (centralized, then raised further to `u`).
+
+**Why "compound" appears to be the conditioning:**
+
+Compounds are the **only** polysyllables in OE that have:
+1. Primary stress on the first element
+2. Secondary stress on the second element
+3. A medial syllable trapped between them
+
+Monomorphemic words with medial syllables don't show this because the medial syllable
+isn't trapped between two stresses — it just bears regular unstressed vowel reduction.
+
+**Luick §113 Anm. 1 (1914):**
+
+> "Diese Erscheinungen sind in ihrem Wesen und Zusammenhang noch recht unklar"
+> ("These phenomena are still quite unclear in their nature and connection")
+
+Luick gives `hláfurd`, `w(e)oruld`, `furlung` as examples. His uncertainty predates
+R/T's prosodic analysis (2014), which provides a clearer framework.
+
+**FST implementation considerations:**
+
+Modeling this properly would require:
+1. Marking primary and secondary stress in compounds
+2. Applying a prosodically-conditioned rule: `*a → *u` in inter-stress position
+3. Ordering this after compound formation but before other vowel changes
+
+This is complex because our FST doesn't currently track compound-internal stress.
+For now, we handle this by stipulating the raised vowel in the PROTOFORM (`*wer-uldu`).
+
+**Potential future improvement:**
+
+If we implement compound stress marking, we could add a rule like:
+
+```foma
+# Inter-stress vowel raising in compounds (OE only)
+# Unstressed *a → *u between primary and secondary stress
+define OEInterStressRaising [
+    {*a} -> {*u} || {·} OEAnyConsonant+ _ OEAnyConsonant+ {ˌ}
+];
+```
+
+Where `{·}` marks primary stress boundary and `{ˌ}` marks secondary stress.
+
+But this requires reworking compound phonotactics significantly. For now, the
+transponent approach (`*wer-uldu`) is the pragmatic solution.
+
+**Summary:**
+
+| Question | Answer |
+|----------|--------|
+| Is `*a → *u` a regular change? | Yes, but prosodically conditioned |
+| What is the environment? | Inter-stress position (σ́ _ σ̀) |
+| Why does it look "compound-specific"? | Only compounds have this stress pattern |
+| Do we model it in FST? | Not yet — we stipulate `*u` in PROTOFORM |
+
