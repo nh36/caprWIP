@@ -16748,32 +16748,32 @@ define OEGeneralSyncope [
 ```
 
 **Ordering:**
-- Must come AFTER `OEUnstressedAFronting` (which creates the `*æ` to delete)
+- Must come AFTER j-gemination (which operates on underlying `*b`)
 - Must come BEFORE `PGmcBAllophony` (so syncope bleeds lenition in compounds)
 
-The current pipeline has:
-1. `OEFinalSchwaApocope` — final `*ă → 0`
-2. `PGmcBAllophony` — `*b → *β` after vowels
+**Implementation (2026-04-11):**
 
-We need to insert `OEGeneralSyncope` **before** B-allophony, after the rules that
-create medial `*æ`. This may require reordering: `OEUnstressedAFronting` currently
-runs much later (in `OEWeakTailReduction` at line 2373), but fronting and syncope
-should run earlier, at the OE stage before allophony.
+Added `OECompoundLinkingSyncope` targeting breve-marked `*ă` specifically:
 
-**Status:** Analysis refined with R/T citations. Implementation requires reordering
-`OEUnstressedAFronting` to run earlier (before B-allophony) and adding `OEGeneralSyncope`.
+```foma
+# Compound linking vowel syncope: R/T §6.7.3 general syncope.
+# The breve-marked *ă in compounds (e.g., *regnă-bugô) syncopates in word-internal
+# position. Word-internal = followed by at least C+V (i.e., another syllable).
+# This targets only *ă (the linking vowel marker), not *a from inflectional endings.
+define OECompoundLinkingSyncope [
+    {*ă} -> 0 || OEAnyConsonant _ OEAnyConsonant+ EnglishStarVocalic
+];
+```
 
-**Caveats:**
+Placed in pipeline BEFORE `PGmcBAllophony`. This is more conservative than the
+originally proposed `OEGeneralSyncope` for all `*æ` — it only targets the breve-
+marked linking vowels, avoiding over-application to suffix vowels.
 
-1. The rule `{*ă} -> 0 || C_C` might over-apply to non-compound medial contexts.
-   Need to verify against words with legitimate medial `*ă` (weak noun suffixes, etc.).
+**Result:**
+- `*regnă-bugô → reġnboga` ✓ (was `reġnafoga`)
+- `*wiră-aldiz → weraield` (still wrong — separate issue with `*wir-` breaking)
+- `*bannas → bannes` ✓ (suffix vowel correctly preserved)
 
-2. Alternative: change the TSV to use `*regn-bugô` (no linking vowel) if the syncope
-   is assumed in the proto-form. But this conflates reconstruction with FST input.
+**Status:** Implemented for compound linking vowels. The `*wiră-aldiz` case has
+additional issues beyond syncope (back mutation/breaking in compound context).
 
-3. The `*wiră-aldiz` case also needs compound-specific breaking rules — the first
-   element `wir-` should trigger breaking (`*wiră → weora-`), but the environment
-   might differ in compounds.
-
-**Status:** Research complete; implementation pending. Need to test compound-internal
-syncope rule against existing words to verify it doesn't over-apply.
