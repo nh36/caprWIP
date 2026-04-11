@@ -15,7 +15,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-PROTO_STRIP_RE = re.compile(r"[{}*\s\-/()]")
+# Note: Hyphen (-) is NOT stripped because compounds use it (e.g., *regnă-bugô)
+PROTO_STRIP_RE = re.compile(r"[{}*\s/()]")
 
 # =============================================================================
 # DIAGNOSTIC NOTES: Initial impressions for each bucket type
