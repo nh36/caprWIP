@@ -356,6 +356,10 @@ define pgrmWeakTailVowel [
     u:{*u} n:{*n} ă:{*ă} z:{*z} |
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
     u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
+    # *-unþi- abstract suffix with early apocope of -i (R/T vol.2 p.141)
+    # e.g. *jugunþ → geoguþ 'youth', *dugunþ → duguþ 'virtue'
+    # The -i was lost before i-umlaut, so medial *u is NOT umlauted
+    u:{*u} n:{*n} θ:{*θ} |
     u:{*u} w:{*w} ō:{*ō} n:{*n} |
     w:{*w} ō:{*ō} n:{*n} |
     u:{*u} z:{*z} |
@@ -1673,11 +1677,23 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 
 # Medial unstressed *u → *o in OE (WS/Northumbrian).
 # This is DISTINCT from NWGmcULowering (stressed u-lowering).
-# The exact conditioning is under investigation — see DEV_NOTES.md
-# "OE Medial unstressed *u → *o: Conditioning environment" for details.
-# Currently using original broad rule; may need refinement for *widuwōn → widuwe.
+# The exact conditioning is under investigation — see DEV_NOTES.md §14.8.1.
+# Campbell §373-374 shows complex conditioning:
+# - "protected u > o very often" (e.g. heafod < *xaubud-)
+# - BUT "u is always well preserved... in -up, -ung suffixes" (e.g. duguþ, geoguþ)
+# The -uþ suffix (< *-unþi-) is a specific exception.
+# For now: keep the rule broad, but handle suffix exceptions via lexicon.
+# Words like geoguþ will use PROTOFORM without the -iz trigger for i-umlaut,
+# Campbell §373: "protected u > o very often" BUT "u is always well preserved
+# after accented u" (vowel harmony). So medial unstressed u → o UNLESS preceded
+# by a stressed u. Examples:
+#   *xaubudą → hēafod (au is not u, so medial u lowers)
+#   *jugunθ → geoguþ (first u is stressed, second u preserved by harmony)
+#   *dugunþ → duguþ (both u's, harmony preserves)
+#
+# Rule: medial u → o, except when preceded by u in prior syllable.
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
 # ===========================================================================

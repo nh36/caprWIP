@@ -18271,3 +18271,210 @@ Our FST uses *wiră-aldu as PROTOFORM and correctly derives weorold via:
 
 This is now confirmed by multiple sources as the standard reconstruction.
 
+
+### §14.8: ġeoguþ 'youth' — *-unþi- Abstract Noun Suffix
+
+**Problem:** FST produces `ġeogȳþ` but expected OE is `ġeoguþ`.
+
+**Trace analysis:**
+- Input: `*jugunθiz`
+- At NasalSpirantLengthening: `*jeugunθi` → `*jeugūnθi` (u lengthened)
+- At NasalSpirantLoss: `*jeugūθi`
+- At IUmlaut: `*jeugȳθi` (ū → ȳ by i-umlaut)
+- Final output: `ġeogȳþ`
+
+**Expected development (scholarly consensus):**
+- OE `geoguþ` has medial `u`, NOT `ȳ`
+- Similarly `duguþ` 'virtue' < `*dugunþi-` has `u` NOT `y`
+
+**Sources:**
+1. **Campbell §332**: "dugup chivalry < *dugunp-, and so geogup youth"
+   - No `-i-` in his reconstruction: just `*jugunp-`, `*dugunp-`
+   
+2. **Ringe/Taylor vol.2 p.141**: "PWGmc *jugunþi 'youth' (OHG jugund) > *jugiþ > OE geoguþ ~ iuguþ"
+   - The medial vowel was SYNCOPATED in the intermediate stage `*jugiþ`
+
+3. **Fulk §5.6**: "NSGmc. loss of a nasal consonant before a voiceless fricative, with compensatory lengthening (and later shortening) of the preceding vowel (§4.11), as with *juʒunþ- > OE geoguþ"
+   - Confirms lengthening happened but was later shortened
+
+4. **Kroonen s.v. *dugunþi-**: "A derivation to *dugan- with the suffix *-unþi-"
+   - OE `dugud` shows `u`, not `y`
+
+**Analysis:**
+The `-i-` of the `*-unþi-` suffix was apocopated BEFORE i-umlaut could apply. The development was:
+1. PGmc `*jugunþiz` (nom.sg. with `-iz`)
+2. WGmc/PWGmc `*jugunþi` (loss of final `-z`)
+3. Early apocope of `-i`: `*jugunþ`
+4. NSL: `*jugūnþ` → `*jugūþ` (nasal loss, vowel lengthened)
+5. Later shortening of medial long vowel: `*juguþ`
+6. WsPalatalGlide: `*jeuguþ`
+7. OE `geoguþ`
+
+Crucially, i-umlaut did NOT apply because the triggering `-i` was already gone.
+
+**Fix options:**
+
+A. **Modify PROTOFORM**: Use `*jugunθ` (without `-iz`) as the transposition form, representing the pre-apocope but post-final-z-loss stage. This is the stage-appropriate form for OE derivation.
+
+B. **Add FST rule for early *-i apocope in *-unθi- suffix**: Before i-umlaut, delete the `-i-` in this specific suffix context. This is more complex but keeps PROTO = PROTOFORM.
+
+C. **Add rule for unstressed long vowel shortening before i-umlaut can apply**: This would undo the i-umlaut effect by shortening first, but this is chronologically incorrect (shortening was later).
+
+**Recommendation:** Option A is simplest and linguistically accurate. The PROTOFORM should represent the form at the relevant derivational stage, not necessarily the reconstructed PGmc nominative singular.
+
+**Implementation:**
+- PROTO: `*jugunþiz` (the reconstructed PGmc nom.sg.)
+- PROTOFORM: `*jugunθ` (the OE-input form, after `-iz` > `-i` > ∅)
+- Expected output: `geoguþ` (via regular NSL + shortening)
+
+**Testing needed:** Verify that `jugunθ` is accepted by the lexicon grammar. If not, add `u:{*u} n:{*n} θ:{*θ}` to pgrmWeakTailVowel.
+
+### §14.8.1: OE Medial Unstressed *u → *o: Final Syllable Exception
+
+**Background:** While investigating `geoguþ` 'youth', discovered an over-application of the medial unstressed u-lowering rule.
+
+**Problem in Trace:**
+- Input: `*jugunθ` (with early `-iz` apocope)
+- After NWGmc processing: `*jeugūθ`
+- After NSL: `*jeugūþ` (nasal lost, vowel lengthened)
+- After shortening: `*jeuguþ` (medial long vowel shortened)
+- After `OEMedUnstressedULowering`: `*jeogoþ` ← **WRONG**
+- Expected: `ġeoguþ` (with `u`, not `o`)
+
+**Current Rule (germanic.txt line ~1684):**
+```foma
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant]+ _ [EnglishStarConsonant]
+];
+```
+This applies whenever `*u` is preceded by vowel+consonant(s) and followed by consonant(s). It does NOT distinguish medial from final syllables.
+
+**Campbell §373 Evidence:**
+> "In later sources u has an increasing tendency to change to o, but it was **far more stable in absolute finality** than when protected."
+
+This means:
+- **Medial** `*u` (= "protected u") → `*o` (common, but not universal)
+- **Final syllable** `*u` → `*u` preserved (more stable)
+
+**Examples:**
+- `heafod` 'head' < `*xaubuda-`: medial `u` → `o` ✓
+- `geoguþ` 'youth' < `*jugunþ`: final syllable `u` → preserved as `u`
+- `duguþ` 'virtue' < `*dugunþ`: final syllable `u` → preserved as `u`
+
+**Analysis:**
+In `geoguþ`, the syllable structure is:
+- `*jeu.guþ` (two syllables)
+- The `u` is in the **final closed syllable** (CVC: `guþ`)
+
+The medial u-lowering rule should only apply to **medial** syllables, not final ones. The word-final position condition is: there must be MORE material after the u+consonant for the rule to apply.
+
+**Proposed Fix:**
+Add `?+` (= "one or more characters") after the consonant context to ensure it's not word-final:
+```foma
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || EnglishStarVocalic [EnglishStarConsonant]+ _ [EnglishStarConsonant] ?+
+];
+```
+
+This means: lower `*u` → `*o` only when followed by consonant(s) AND more material (not word-final).
+
+**Testing needed:**
+1. `jugunθ` should → `ġeoguþ` (not `ġeogoþ`)
+2. `xaubuda` should still → `heafod` (medial u → o preserved)
+3. Check other words ending in `-uþ`, `-ud`, `-un`, etc.
+
+### §14.8.2: Stress Marking for Medial U-Lowering — Research and Options
+
+**The Problem:**
+The medial u-lowering rule (`OEMedUnstressedULowering`) currently applies to ALL medial `*u`, but Campbell §373 shows it's stress-conditioned:
+- "protected u > o very often" (when unstressed)
+- "u is always well preserved after accented u" (when stressed syllable also has u)
+
+**Current System:**
+We already mark unstressed vowels with breve in PROTOFORM:
+- `ă` = unstressed a (e.g., in weak tail `-ăz`, `-ăną`)
+- But we have NO marker for unstressed `u` vs stressed `u`
+
+**Option A: Introduce `ŭ` for unstressed u**
+Add `ŭ:{*ŭ}` to the lexicon inventory. Then the u-lowering rule targets `*ŭ` specifically:
+```foma
+define OEMedUnstressedULowering [
+    {*ŭ} -> {*o} || ...
+];
+```
+Pro: Consistent with our `ă` convention.
+Con: Requires updating many PROTOFORMs.
+
+**Option B: Use stress markers on syllables**
+Introduce explicit stress markers like `ˈ` (primary stress) at syllable boundaries:
+```
+*ˈxaubudą → heafod (unstressed u → o)
+*ˈjugunθ → geoguþ (u after stressed u → preserved)
+```
+Pro: More linguistically explicit.
+Con: Significant lexicon restructuring; stress is usually predictable in Germanic.
+
+**Option C: Mark stressed u explicitly, leave unstressed unmarked**
+Use regular `u` for stressed position, `ŭ` for unstressed:
+```
+*xaubŭdą → heafod (ŭ → o)
+*jugunθ → geoguþ (both u's stressed or in harmonic context)
+```
+Pro: Minimal changes - only add `ŭ` where needed.
+Con: Requires case-by-case analysis of which `u`s are unstressed.
+
+**Analysis of `geoguþ` vs `heafod`:**
+
+1. `*xaubudą` 'head':
+   - Syllables: `*ˈxau.bu.dą` (stress on first)
+   - First syllable: `au` (stressed diphthong)
+   - Second syllable: `bu` (UNSTRESSED `u`)
+   - Third syllable: `dą` (UNSTRESSED)
+   - Result: unstressed `u` → `o` = `heafod`
+
+2. `*jugunθiz` 'youth':
+   - Syllables: `*ˈjug.unθ.iz` (stress on first)
+   - First syllable: `jug` (STRESSED `u`)
+   - Second syllable: `unθ` (unstressed, but has `u` after stressed `u`)
+   - Campbell: "u is always well preserved after accented u"
+   - Result: second `u` preserved by harmony = `geoguþ`
+
+**Proposed Implementation (Option A):**
+1. Add `ŭ:{*ŭ}` to lexicon inventory
+2. Update u-lowering rule to target `{*ŭ}` only
+3. Update PROTOFORMs:
+   - `*xaubŭdą` → heafod (unstressed u marked)
+   - `*jugunθ` → geoguþ (no change - root u stressed, suffix u in harmony)
+
+**Testing the Hypothesis:**
+Check other words with medial/final `u`:
+- `sunu` 'son' < `*sunuz` - stressed `u`, preserved
+- `wudu` 'wood' < `*widuz` - both `u`s? Check...
+- `duguþ` 'virtue' < `*dugunþi-` - stressed `u`, harmony preserved
+
+Need to verify: is "vowel harmony" (u...u → both preserved) a real conditioning factor, or is it just that STRESSED `u` blocks lowering in the following unstressed syllable?
+
+### §14.8.3: Implemented Solution — Vowel Harmony Exception (2026-04-13)
+
+**Solution:**
+Modified `OEMedUnstressedULowering` to apply u → o **except** when preceded by another `u` or `ū`:
+
+```foma
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+
+**Phonetic Basis:**
+Campbell §373: "u is always well preserved after accented u" — this is **vowel harmony**. When the stressed syllable contains `u`, the following unstressed `u` is preserved rather than lowering to `o`.
+
+**Examples (all now working):**
+- `*xaubudą` → `hēafod` ✓ (first syllable has `au` not `u`, so medial u lowers)
+- `*jugunθ` → `ġeoguþ` ✓ (first syllable has `u`, second u preserved by harmony)
+- `*dugunθ` → `duguþ` ✓ (both u's, harmony preserves)
+
+**TSV Update:**
+Row 1468 (youth): Changed PROTOFORM from `*jugunθiz` to `*jugunθ`. The `-iz` suffix was apocopated early in *-unþi- abstracts (R/T vol.2 p.141), so no i-umlaut triggered. This is a morphologically-conditioned exception, so we pre-apply it in PROTOFORM rather than modeling it as a general rule.
+
+**Why not general early i-apocope rule:**
+The early loss of `-i` in *-unþi- is specific to this derivational suffix class and cannot be captured by a general phonological rule without referencing morphological structure. Our approach of using transponent PROTOFORMs for morphologically-conditioned exceptions is consistent with how we handle other cases (e.g., `*wer-uldu` for weorold).
