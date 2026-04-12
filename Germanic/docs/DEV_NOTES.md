@@ -17683,3 +17683,118 @@ Neither type produces `*i → *eo` directly. The rule was historically unmotivat
 
 **Decision (2026-04-12):** Rule deleted from `OEBackMutation`. If we ever find a case
 requiring direct `*i → *eo`, we can add it back with proper documentation.
+
+#### 14.6 Implementing Inter-Stress Raising: `*a → *u` (2026-04-12)
+
+**Goal:** Enable using `*wir-aldu` (with original `*i`) as the PROTOFORM for `weorold`,
+letting the FST derive the correct form automatically via:
+1. i-lowering: `*wir- → *wer-`
+2. Inter-stress raising: `*-ald- → *-uld-`
+3. Back mutation: `*wer- → *weor-` (before liquid + back vowel)
+
+**What is inter-stress raising?**
+
+R/T §6.3.3 describes prosodically conditioned vowel changes in compounds. When a short
+`*a` appears in a "trough" between primary and secondary stress, it can raise to `*u`.
+Examples:
+- `*wer-aldu → *wer-uldu → weorold` (world)
+- `*hlab-ardu → *hlab-urdu → hlafurd` (lord)
+- `*fur-langu → *fur-lungu → furlong` (furlong)
+
+**Attempt 1: Simple rule before AFB**
+
+Added rule after `OEPrefixAReduction`, before `AngloFrisianBrightening`:
+
+```foma
+define OEInterStressRaising [
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ EnglishStarConsonant+ PGmcStarBackVowel
+];
+```
+
+This converts `*a → *u` when:
+- Preceded by a vowel (not word-initial)
+- Followed by consonant(s) + back vowel
+
+**Problem 1: Over-application**
+
+The rule triggered on `*xamaras` (hammer) → `*xamuras` and `*lunganjō` → `*lungunjō`
+because `PGmcStarBackVowel` includes `*a`. So any `*a` followed by C+ and another `*a`
+was incorrectly raised.
+
+**Fix:** Narrowed target to only `*u/ū`:
+
+```foma
+define OEInterStressRaising [
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ EnglishStarConsonant+ [{*u}|{*ū}]
+];
+```
+
+**Attempt 2: With linking vowel `*ă`**
+
+Tried `wiră-aldu` (with linking vowel). Inter-stress raising correctly converted:
+`*weră-aldu → *weră-uldu`
+
+But breaking then failed because the linking vowel `*ă` blocked the breaking context
+`*r + C`. Breaking saw `*r*ă*u...` instead of `*r*u...`.
+
+**Attempt 3: Moving compound linking syncope earlier**
+
+Moved `OECompoundLinkingSyncope` before AFB/breaking to delete `*ă` early.
+
+**Result:** Massive regression (40 → 118 mismatches). The compound syncope rule 
+(`{*ă} -> 0 || C _ C+ V`) over-applied in non-compound contexts, breaking epenthesis
+in 61 words.
+
+**Reverted** this approach.
+
+**Working solution: Use `wir-aldu` (no linking vowel)**
+
+The form `wir-aldu` (without linking vowel `*ă`) works correctly:
+
+1. `wir-aldu` → `*w*i*r*a*l*d*u` (template accepts it)
+2. i-lowering: `*w*e*r*a*l*d*u`
+3. Inter-stress raising: `*w*e*r*u*l*d*u` (`*a → *u` before `*l*d*u`)
+4. AFB: no change (medial `*u` is back vowel)
+5. Breaking: no change (context `*rV` not `*rC`)
+6. Back mutation: `*w*e*o*r*u*l*d*u` (`*e → *eo` before liquid + `*u`)
+7. Final: `weorold` ✓
+
+**Technical insight:** The diphthongization `*e → *eo` comes from **back mutation**
+(R/T §6.9.6: `*e → *eo` before labial/liquid + back vowel), not breaking (which
+requires `*r + consonant`). This is the correct historical analysis.
+
+**Current status:** Rule implemented, testing for side effects on mismatch count.
+
+**Files modified:**
+- `Germanic/fsts/germanic.txt`: Added `OEInterStressRaising` definition (line ~1378)
+  and composed it after `OEPrefixAReduction`, before `AngloFrisianBrightening`
+- `Germanic/fsts/old_english_sandbox.txt`: Added new sandbox stage
+- `Germanic/tools/oe_full_trace_report.py`: Added new stage to trace report
+
+**Open question:** Should we update the TSV to use `wir-aldu` as PROTOFORM? This would
+demonstrate more sound changes explicitly. Currently `wer-uldu` is the transponent
+with changes pre-applied. Need to verify no regressions first.
+
+**Final solution (2026-04-12):**
+
+The key insight is that inter-stress raising in compounds applies when the consonant
+cluster before `*u` does NOT include `*j`. In derivational suffixes like `*-anjō`, 
+the `*j` immediately precedes `*u`, blocking the rule.
+
+Final rule:
+```foma
+define OEInterStressRaising [
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+];
+```
+
+This correctly handles:
+- `*wer-aldu → *wer-uldu → weorold` ✓ (consonant before u is d)
+- `*hlab-ardu → *hlab-urdu → hlafurd` ✓ (consonant before u is d)
+- `*lunganjō → lungen` ✓ (j before u blocks rule)
+- `*xamaras → hameres` ✓ (no u in following syllable)
+
+**Mismatch count:** Unchanged at 40 (no regression).
+
+**Verification complete:** The rule is ready for use. TSV can now use `wir-aldu` 
+as PROTOFORM instead of pre-computed `wer-uldu`.

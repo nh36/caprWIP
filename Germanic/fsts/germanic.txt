@@ -1368,6 +1368,19 @@ define OEBreaking OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI;
 
+# Inter-stress raising: *a → *u in medial position before *u specifically (R/T §6.3.3).
+# In compounds like wir-aldu 'world', the medial *a assimilates to the following *u.
+# Condition: *a must follow a vowel (not word-initial), be followed by consonant(s),
+# and the consonant immediately before *u must NOT be *j. This prevents over-application
+# in derivational suffixes like *-anjō where *j precedes the *u.
+# Example: *weraldu → *weruldu (after i-lowering, before breaking).
+# Counter-example: *lunganjō stays unchanged (j before u blocks the rule).
+# This rule MUST apply BEFORE AFB (which would convert *a → *æ) and BEFORE breaking
+# (which would convert *a → *ea before lC).
+define OEInterStressRaising [
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+];
+
 define OEAuFronting [
     {*au} -> {*aeu}
 ];
@@ -2316,6 +2329,10 @@ define EnglishProtoToOE (
     # (*æ → *ea before l+C), yielding incorrect *gea- instead of *ge-.
     # This is a chronological requirement: unstressed syllables don't undergo AFB.
     .o. OEPrefixAReduction
+    # Inter-stress raising: *a → *u in compounds before back vowel (R/T §6.3.3).
+    # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
+    # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
+    .o. OEInterStressRaising
     .o. AngloFrisianBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.

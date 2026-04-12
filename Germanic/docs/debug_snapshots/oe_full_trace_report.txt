@@ -29,6 +29,7 @@ DiphthongLeveling: *n*ǣ*d*r*ǭ
 EwLongDiphthong: *n*ǣ*d*r*ǭ
 AwLongDiphthong: *n*ǣ*d*r*ǭ
 PrefixAReductionEarly: *n*ǣ*d*r*ǭ
+InterStressRaising: *n*ǣ*d*r*ǭ
 AngloFrisianBrightening: *n*ǣ*d*r*ǭ
 Breaking: *n*ǣ*d*r*ǭ
 VelarFricPal: *n*ǣ*d*r*ǭ
@@ -108,6 +109,7 @@ DiphthongLeveling: *b*a*k*a*n*ą
 EwLongDiphthong: *b*a*k*a*n*ą
 AwLongDiphthong: *b*a*k*a*n*ą
 PrefixAReductionEarly: *b*a*k*a*n*ą
+InterStressRaising: *b*a*k*a*n*ą
 AngloFrisianBrightening: *b*æ*k*a*n*ą
 Breaking: *b*æ*k*a*n*ą
 VelarFricPal: *b*æ*k*a*n*ą
@@ -187,6 +189,7 @@ DiphthongLeveling: *b*a*n*n*a*s
 EwLongDiphthong: *b*a*n*n*a*s
 AwLongDiphthong: *b*a*n*n*a*s
 PrefixAReductionEarly: *b*a*n*n*a*s
+InterStressRaising: *b*a*n*n*a*s
 AngloFrisianBrightening: *b*a*n*n*æ*s
 Breaking: *b*a*n*n*æ*s
 VelarFricPal: *b*a*n*n*æ*s
@@ -266,6 +269,7 @@ DiphthongLeveling: *b*e*r*g*ą
 EwLongDiphthong: *b*e*r*g*ą
 AwLongDiphthong: *b*e*r*g*ą
 PrefixAReductionEarly: *b*e*r*g*ą
+InterStressRaising: *b*e*r*g*ą
 AngloFrisianBrightening: *b*e*r*g*ą
 Breaking: *b*eo*r*g*ą
 VelarFricPal: *b*eo*r*g*ą
@@ -345,6 +349,7 @@ DiphthongLeveling: *b*a*s*t*ą
 EwLongDiphthong: *b*a*s*t*ą
 AwLongDiphthong: *b*a*s*t*ą
 PrefixAReductionEarly: *b*a*s*t*ą
+InterStressRaising: *b*a*s*t*ą
 AngloFrisianBrightening: *b*æ*s*t*ą
 Breaking: *b*æ*s*t*ą
 VelarFricPal: *b*æ*s*t*ą
@@ -424,6 +429,7 @@ DiphthongLeveling: *b*a*θ*ą
 EwLongDiphthong: *b*a*θ*ą
 AwLongDiphthong: *b*a*θ*ą
 PrefixAReductionEarly: *b*a*θ*ą
+InterStressRaising: *b*a*θ*ą
 AngloFrisianBrightening: *b*æ*θ*ą
 Breaking: *b*æ*θ*ą
 VelarFricPal: *b*æ*θ*ą
@@ -503,6 +509,7 @@ DiphthongLeveling: *b*a*r*d*ă
 EwLongDiphthong: *b*a*r*d*ă
 AwLongDiphthong: *b*a*r*d*ă
 PrefixAReductionEarly: *b*a*r*d*ă
+InterStressRaising: *b*a*r*d*ă
 AngloFrisianBrightening: *b*æ*r*d*ă
 Breaking: *b*ea*r*d*ă
 VelarFricPal: *b*ea*r*d*ă
@@ -582,6 +589,7 @@ DiphthongLeveling: *b*e*b*r*u
 EwLongDiphthong: *b*e*b*r*u
 AwLongDiphthong: *b*e*b*r*u
 PrefixAReductionEarly: *b*e*b*r*u
+InterStressRaising: *b*e*b*r*u
 AngloFrisianBrightening: *b*e*b*r*u
 Breaking: *b*e*b*r*u
 VelarFricPal: *b*e*b*r*u
@@ -661,6 +669,7 @@ DiphthongLeveling: *b*ō*k*u
 EwLongDiphthong: *b*ō*k*u
 AwLongDiphthong: *b*ō*k*u
 PrefixAReductionEarly: *b*ō*k*u
+InterStressRaising: *b*ō*k*u
 AngloFrisianBrightening: *b*ō*k*u
 Breaking: *b*ō*k*u
 VelarFricPal: *b*ō*k*u
@@ -740,6 +749,7 @@ DiphthongLeveling: *b*i*ʤ*i*n*n*ă*n*ą
 EwLongDiphthong: *b*i*ʤ*i*n*n*ă*n*ą
 AwLongDiphthong: *b*i*ʤ*i*n*n*ă*n*ą
 PrefixAReductionEarly: *b*i*ʤ*i*n*n*ă*n*ą
+InterStressRaising: *b*i*ʤ*i*n*n*ă*n*ą
 AngloFrisianBrightening: *b*i*ʤ*i*n*n*ă*n*ą
 Breaking: *b*i*ʤ*i*n*n*ă*n*ą
 VelarFricPal: *b*i*ʤ*i*n*n*ă*n*ą
@@ -787,7 +797,7 @@ WGlide: *b*e*ʤ*i*n*n*a*n
 GhMarker: *b*e*ʤ*i*n*n*a*n
 GlideDeletion: *b*e*ʤ*i*n*n*a*n
 Epenthesis: *b*e*ʤ*i*n*n*a*n
-Orthography: beġinnan, be*ġinnan
+Orthography: be*ġinnan, beġinnan
 Surface: beġinnan
 
 --- believe ---
@@ -819,6 +829,7 @@ DiphthongLeveling: *g*a*l*ēa*b*i*j*ă*n*ą
 EwLongDiphthong: *g*a*l*ēa*b*i*j*ă*n*ą
 AwLongDiphthong: *g*a*l*ēa*b*i*j*ă*n*ą
 PrefixAReductionEarly: *g*ĕ*l*ēa*b*i*j*ă*n*ą
+InterStressRaising: *g*ĕ*l*ēa*b*i*j*ă*n*ą
 AngloFrisianBrightening: *g*ĕ*l*ēa*b*i*j*ă*n*ą
 Breaking: *g*ĕ*l*ēa*b*i*j*ă*n*ą
 VelarFricPal: *g*ĕ*l*ēa*b*i*j*ă*n*ą
@@ -898,6 +909,7 @@ DiphthongLeveling: *b*a*l*ʤ*i
 EwLongDiphthong: *b*a*l*ʤ*i
 AwLongDiphthong: *b*a*l*ʤ*i
 PrefixAReductionEarly: *b*a*l*ʤ*i
+InterStressRaising: *b*a*l*ʤ*i
 AngloFrisianBrightening: *b*æ*l*ʤ*i
 Breaking: *b*æ*l*ʤ*i
 VelarFricPal: *b*æ*l*ʤ*i
@@ -945,7 +957,7 @@ WGlide: *b*e*l*ʤ
 GhMarker: *b*e*l*ʤ
 GlideDeletion: *b*e*l*ʤ
 Epenthesis: *b*ie*l*ʤ
-Orthography: bielġ, biel*ġ
+Orthography: biel*ġ, bielġ
 Surface: bielġ
 
 --- berry ---
@@ -977,6 +989,7 @@ DiphthongLeveling: *b*a*r*j*a*s
 EwLongDiphthong: *b*a*r*j*a*s
 AwLongDiphthong: *b*a*r*j*a*s
 PrefixAReductionEarly: *b*a*r*j*a*s
+InterStressRaising: *b*a*r*j*a*s
 AngloFrisianBrightening: *b*æ*r*j*æ*s
 Breaking: *b*æ*r*j*æ*s
 VelarFricPal: *b*æ*r*j*æ*s
@@ -1024,7 +1037,7 @@ WGlide: *b*e*r*j*e*s
 GhMarker: *b*e*r*j*e*s
 GlideDeletion: *b*e*r*j*e*s
 Epenthesis: *b*e*r*j*e*s
-Orthography: berġes, ber*ġes
+Orthography: ber*ġes, berġes
 Surface: berġes
 
 --- bier ---
@@ -1056,6 +1069,7 @@ DiphthongLeveling: *b*ǣ*r*u
 EwLongDiphthong: *b*ǣ*r*u
 AwLongDiphthong: *b*ǣ*r*u
 PrefixAReductionEarly: *b*ǣ*r*u
+InterStressRaising: *b*ǣ*r*u
 AngloFrisianBrightening: *b*ǣ*r*u
 Breaking: *b*ǣ*r*u
 VelarFricPal: *b*ǣ*r*u
@@ -1135,6 +1149,7 @@ DiphthongLeveling: *b*i*n*d*ă*n*ą
 EwLongDiphthong: *b*i*n*d*ă*n*ą
 AwLongDiphthong: *b*i*n*d*ă*n*ą
 PrefixAReductionEarly: *b*i*n*d*ă*n*ą
+InterStressRaising: *b*i*n*d*ă*n*ą
 AngloFrisianBrightening: *b*i*n*d*ă*n*ą
 Breaking: *b*i*n*d*ă*n*ą
 VelarFricPal: *b*i*n*d*ă*n*ą
@@ -1214,6 +1229,7 @@ DiphthongLeveling: *b*u*r*d*i
 EwLongDiphthong: *b*u*r*d*i
 AwLongDiphthong: *b*u*r*d*i
 PrefixAReductionEarly: *b*u*r*d*i
+InterStressRaising: *b*u*r*d*i
 AngloFrisianBrightening: *b*u*r*d*i
 Breaking: *b*u*r*d*i
 VelarFricPal: *b*u*r*d*i
@@ -1293,6 +1309,7 @@ DiphthongLeveling: *b*l*ō*d*ą
 EwLongDiphthong: *b*l*ō*d*ą
 AwLongDiphthong: *b*l*ō*d*ą
 PrefixAReductionEarly: *b*l*ō*d*ą
+InterStressRaising: *b*l*ō*d*ą
 AngloFrisianBrightening: *b*l*ō*d*ą
 Breaking: *b*l*ō*d*ą
 VelarFricPal: *b*l*ō*d*ą
@@ -1372,6 +1389,7 @@ DiphthongLeveling: *b*o*r*d*ą
 EwLongDiphthong: *b*o*r*d*ą
 AwLongDiphthong: *b*o*r*d*ą
 PrefixAReductionEarly: *b*o*r*d*ą
+InterStressRaising: *b*o*r*d*ą
 AngloFrisianBrightening: *b*o*r*d*ą
 Breaking: *b*o*r*d*ą
 VelarFricPal: *b*o*r*d*ą
@@ -1451,6 +1469,7 @@ DiphthongLeveling: *b*ā*n*ą
 EwLongDiphthong: *b*ā*n*ą
 AwLongDiphthong: *b*ā*n*ą
 PrefixAReductionEarly: *b*ā*n*ą
+InterStressRaising: *b*ā*n*ą
 AngloFrisianBrightening: *b*ā*n*ą
 Breaking: *b*ā*n*ą
 VelarFricPal: *b*ā*n*ą
@@ -1530,6 +1549,7 @@ DiphthongLeveling: *b*ō*k
 EwLongDiphthong: *b*ō*k
 AwLongDiphthong: *b*ō*k
 PrefixAReductionEarly: *b*ō*k
+InterStressRaising: *b*ō*k
 AngloFrisianBrightening: *b*ō*k
 Breaking: *b*ō*k
 VelarFricPal: *b*ō*k
@@ -1609,6 +1629,7 @@ DiphthongLeveling: *b*o*r*ō*j*ă*n*ą
 EwLongDiphthong: *b*o*r*ō*j*ă*n*ą
 AwLongDiphthong: *b*o*r*ō*j*ă*n*ą
 PrefixAReductionEarly: *b*o*r*ō*j*ă*n*ą
+InterStressRaising: *b*o*r*ō*j*ă*n*ą
 AngloFrisianBrightening: *b*o*r*ō*j*ă*n*ą
 Breaking: *b*o*r*ō*j*ă*n*ą
 VelarFricPal: *b*o*r*ō*j*ă*n*ą
@@ -1688,6 +1709,7 @@ DiphthongLeveling: *b*ō*s*m*ă
 EwLongDiphthong: *b*ō*s*m*ă
 AwLongDiphthong: *b*ō*s*m*ă
 PrefixAReductionEarly: *b*ō*s*m*ă
+InterStressRaising: *b*ō*s*m*ă
 AngloFrisianBrightening: *b*ō*s*m*ă
 Breaking: *b*ō*s*m*ă
 VelarFricPal: *b*ō*s*m*ă
@@ -1767,6 +1789,7 @@ DiphthongLeveling: *b*o*t*t*m*ă
 EwLongDiphthong: *b*o*t*t*m*ă
 AwLongDiphthong: *b*o*t*t*m*ă
 PrefixAReductionEarly: *b*o*t*t*m*ă
+InterStressRaising: *b*o*t*t*m*ă
 AngloFrisianBrightening: *b*o*t*t*m*ă
 Breaking: *b*o*t*t*m*ă
 VelarFricPal: *b*o*t*t*m*ă
@@ -1846,6 +1869,7 @@ DiphthongLeveling: *b*ō*g*u
 EwLongDiphthong: *b*ō*g*u
 AwLongDiphthong: *b*ō*g*u
 PrefixAReductionEarly: *b*ō*g*u
+InterStressRaising: *b*ō*g*u
 AngloFrisianBrightening: *b*ō*g*u
 Breaking: *b*ō*g*u
 VelarFricPal: *b*ō*g*u
@@ -1925,6 +1949,7 @@ DiphthongLeveling: *b*ēa*ʤ*i*j*ă*n*ą
 EwLongDiphthong: *b*ēa*ʤ*i*j*ă*n*ą
 AwLongDiphthong: *b*ēa*ʤ*i*j*ă*n*ą
 PrefixAReductionEarly: *b*ēa*ʤ*i*j*ă*n*ą
+InterStressRaising: *b*ēa*ʤ*i*j*ă*n*ą
 AngloFrisianBrightening: *b*ēa*ʤ*i*j*ă*n*ą
 Breaking: *b*ēa*ʤ*i*j*ă*n*ą
 VelarFricPal: *b*ēa*ʤ*i*j*ă*n*ą
@@ -2004,6 +2029,7 @@ DiphthongLeveling: *b*u*g*u*n
 EwLongDiphthong: *b*u*g*u*n
 AwLongDiphthong: *b*u*g*u*n
 PrefixAReductionEarly: *b*u*g*u*n
+InterStressRaising: *b*u*g*u*n
 AngloFrisianBrightening: *b*u*g*u*n
 Breaking: *b*u*g*u*n
 VelarFricPal: *b*u*g*u*n
@@ -2083,6 +2109,7 @@ DiphthongLeveling: *b*o*g*ô
 EwLongDiphthong: *b*o*g*ô
 AwLongDiphthong: *b*o*g*ô
 PrefixAReductionEarly: *b*o*g*ô
+InterStressRaising: *b*o*g*ô
 AngloFrisianBrightening: *b*o*g*ô
 Breaking: *b*o*g*ô
 VelarFricPal: *b*o*g*ô
@@ -2162,6 +2189,7 @@ DiphthongLeveling: *b*ū*r*ą
 EwLongDiphthong: *b*ū*r*ą
 AwLongDiphthong: *b*ū*r*ą
 PrefixAReductionEarly: *b*ū*r*ą
+InterStressRaising: *b*ū*r*ą
 AngloFrisianBrightening: *b*ū*r*ą
 Breaking: *b*ū*r*ą
 VelarFricPal: *b*ū*r*ą
@@ -2241,6 +2269,7 @@ DiphthongLeveling: *b*r*a*n*d*a*s
 EwLongDiphthong: *b*r*a*n*d*a*s
 AwLongDiphthong: *b*r*a*n*d*a*s
 PrefixAReductionEarly: *b*r*a*n*d*a*s
+InterStressRaising: *b*r*a*n*d*a*s
 AngloFrisianBrightening: *b*r*a*n*d*æ*s
 Breaking: *b*r*a*n*d*æ*s
 VelarFricPal: *b*r*a*n*d*æ*s
@@ -2320,6 +2349,7 @@ DiphthongLeveling: *b*r*ēa*d*ą
 EwLongDiphthong: *b*r*ēa*d*ą
 AwLongDiphthong: *b*r*ēa*d*ą
 PrefixAReductionEarly: *b*r*ēa*d*ą
+InterStressRaising: *b*r*ēa*d*ą
 AngloFrisianBrightening: *b*r*ēa*d*ą
 Breaking: *b*r*ēa*d*ą
 VelarFricPal: *b*r*ēa*d*ą
@@ -2399,6 +2429,7 @@ DiphthongLeveling: *b*r*e*k*ă*n*ą
 EwLongDiphthong: *b*r*e*k*ă*n*ą
 AwLongDiphthong: *b*r*e*k*ă*n*ą
 PrefixAReductionEarly: *b*r*e*k*ă*n*ą
+InterStressRaising: *b*r*e*k*ă*n*ą
 AngloFrisianBrightening: *b*r*e*k*ă*n*ą
 Breaking: *b*r*e*k*ă*n*ą
 VelarFricPal: *b*r*e*k*ă*n*ą
@@ -2478,6 +2509,7 @@ DiphthongLeveling: *b*r*ēo*s*t*ą
 EwLongDiphthong: *b*r*ēo*s*t*ą
 AwLongDiphthong: *b*r*ēo*s*t*ą
 PrefixAReductionEarly: *b*r*ēo*s*t*ą
+InterStressRaising: *b*r*ēo*s*t*ą
 AngloFrisianBrightening: *b*r*ēo*s*t*ą
 Breaking: *b*r*ēo*s*t*ą
 VelarFricPal: *b*r*ēo*s*t*ą
@@ -2557,6 +2589,7 @@ DiphthongLeveling: *b*r*ō*ʧ*i
 EwLongDiphthong: *b*r*ō*ʧ*i
 AwLongDiphthong: *b*r*ō*ʧ*i
 PrefixAReductionEarly: *b*r*ō*ʧ*i
+InterStressRaising: *b*r*ō*ʧ*i
 AngloFrisianBrightening: *b*r*ō*ʧ*i
 Breaking: *b*r*ō*ʧ*i
 VelarFricPal: *b*r*ō*ʧ*i
@@ -2636,6 +2669,7 @@ DiphthongLeveling: *b*r*ū*d*i
 EwLongDiphthong: *b*r*ū*d*i
 AwLongDiphthong: *b*r*ū*d*i
 PrefixAReductionEarly: *b*r*ū*d*i
+InterStressRaising: *b*r*ū*d*i
 AngloFrisianBrightening: *b*r*ū*d*i
 Breaking: *b*r*ū*d*i
 VelarFricPal: *b*r*ū*d*i
@@ -2715,6 +2749,7 @@ DiphthongLeveling: *b*r*i*n*g*ă*n*ą
 EwLongDiphthong: *b*r*i*n*g*ă*n*ą
 AwLongDiphthong: *b*r*i*n*g*ă*n*ą
 PrefixAReductionEarly: *b*r*i*n*g*ă*n*ą
+InterStressRaising: *b*r*i*n*g*ă*n*ą
 AngloFrisianBrightening: *b*r*i*n*g*ă*n*ą
 Breaking: *b*r*i*n*g*ă*n*ą
 VelarFricPal: *b*r*i*n*g*ă*n*ą
@@ -2794,6 +2829,7 @@ DiphthongLeveling: *b*r*ū*k*ă*n*ą
 EwLongDiphthong: *b*r*ū*k*ă*n*ą
 AwLongDiphthong: *b*r*ū*k*ă*n*ą
 PrefixAReductionEarly: *b*r*ū*k*ă*n*ą
+InterStressRaising: *b*r*ū*k*ă*n*ą
 AngloFrisianBrightening: *b*r*ū*k*ă*n*ą
 Breaking: *b*r*ū*k*ă*n*ą
 VelarFricPal: *b*r*ū*k*ă*n*ą
@@ -2873,6 +2909,7 @@ DiphthongLeveling: *b*r*e*s*t*ă*n*ą
 EwLongDiphthong: *b*r*e*s*t*ă*n*ą
 AwLongDiphthong: *b*r*e*s*t*ă*n*ą
 PrefixAReductionEarly: *b*r*e*s*t*ă*n*ą
+InterStressRaising: *b*r*e*s*t*ă*n*ą
 AngloFrisianBrightening: *b*r*e*s*t*ă*n*ą
 Breaking: *b*r*e*s*t*ă*n*ą
 VelarFricPal: *b*r*e*s*t*ă*n*ą
@@ -2952,6 +2989,7 @@ DiphthongLeveling: *k*a*l*b*ă
 EwLongDiphthong: *k*a*l*b*ă
 AwLongDiphthong: *k*a*l*b*ă
 PrefixAReductionEarly: *k*a*l*b*ă
+InterStressRaising: *k*a*l*b*ă
 AngloFrisianBrightening: *k*æ*l*b*ă
 Breaking: *k*ea*l*b*ă
 VelarFricPal: *k*ea*l*b*ă
@@ -3031,6 +3069,7 @@ DiphthongLeveling: *ʧ*e*w*ă*n*ą
 EwLongDiphthong: *ʧ*ēo*w*ă*n*ą
 AwLongDiphthong: *ʧ*ēo*w*ă*n*ą
 PrefixAReductionEarly: *ʧ*ēo*w*ă*n*ą
+InterStressRaising: *ʧ*ēo*w*ă*n*ą
 AngloFrisianBrightening: *ʧ*ēo*w*ă*n*ą
 Breaking: *ʧ*ēo*w*ă*n*ą
 VelarFricPal: *ʧ*ēo*w*ă*n*ą
@@ -3110,6 +3149,7 @@ DiphthongLeveling: *k*l*i*m*b*ă*n*ą
 EwLongDiphthong: *k*l*i*m*b*ă*n*ą
 AwLongDiphthong: *k*l*i*m*b*ă*n*ą
 PrefixAReductionEarly: *k*l*i*m*b*ă*n*ą
+InterStressRaising: *k*l*i*m*b*ă*n*ą
 AngloFrisianBrightening: *k*l*i*m*b*ă*n*ą
 Breaking: *k*l*i*m*b*ă*n*ą
 VelarFricPal: *k*l*i*m*b*ă*n*ą
@@ -3189,6 +3229,7 @@ DiphthongLeveling: *k*a*m*b*ă
 EwLongDiphthong: *k*a*m*b*ă
 AwLongDiphthong: *k*a*m*b*ă
 PrefixAReductionEarly: *k*a*m*b*ă
+InterStressRaising: *k*a*m*b*ă
 AngloFrisianBrightening: *k*a*m*b*ă
 Breaking: *k*a*m*b*ă
 VelarFricPal: *k*a*m*b*ă
@@ -3268,6 +3309,7 @@ DiphthongLeveling: *k*o*r*n*ą
 EwLongDiphthong: *k*o*r*n*ą
 AwLongDiphthong: *k*o*r*n*ą
 PrefixAReductionEarly: *k*o*r*n*ą
+InterStressRaising: *k*o*r*n*ą
 AngloFrisianBrightening: *k*o*r*n*ą
 Breaking: *k*o*r*n*ą
 VelarFricPal: *k*o*r*n*ą
@@ -3347,6 +3389,7 @@ DiphthongLeveling: *k*ū*i
 EwLongDiphthong: *k*ū*i
 AwLongDiphthong: *k*ū*i
 PrefixAReductionEarly: *k*ū*i
+InterStressRaising: *k*ū*i
 AngloFrisianBrightening: *k*ū*i
 Breaking: *k*ū*i
 VelarFricPal: *k*ū*i
@@ -3426,6 +3469,7 @@ DiphthongLeveling: *k*r*a*f*t*ă
 EwLongDiphthong: *k*r*a*f*t*ă
 AwLongDiphthong: *k*r*a*f*t*ă
 PrefixAReductionEarly: *k*r*a*f*t*ă
+InterStressRaising: *k*r*a*f*t*ă
 AngloFrisianBrightening: *k*r*æ*f*t*ă
 Breaking: *k*r*æ*f*t*ă
 VelarFricPal: *k*r*æ*f*t*ă
@@ -3505,6 +3549,7 @@ DiphthongLeveling: *k*r*o*p*p*ă
 EwLongDiphthong: *k*r*o*p*p*ă
 AwLongDiphthong: *k*r*o*p*p*ă
 PrefixAReductionEarly: *k*r*o*p*p*ă
+InterStressRaising: *k*r*o*p*p*ă
 AngloFrisianBrightening: *k*r*o*p*p*ă
 Breaking: *k*r*o*p*p*ă
 VelarFricPal: *k*r*o*p*p*ă
@@ -3584,6 +3629,7 @@ DiphthongLeveling: *d*a*l*ă
 EwLongDiphthong: *d*a*l*ă
 AwLongDiphthong: *d*a*l*ă
 PrefixAReductionEarly: *d*a*l*ă
+InterStressRaising: *d*a*l*ă
 AngloFrisianBrightening: *d*æ*l*ă
 Breaking: *d*æ*l*ă
 VelarFricPal: *d*æ*l*ă
@@ -3663,6 +3709,7 @@ DiphthongLeveling: *d*a*g*ă
 EwLongDiphthong: *d*a*g*ă
 AwLongDiphthong: *d*a*g*ă
 PrefixAReductionEarly: *d*a*g*ă
+InterStressRaising: *d*a*g*ă
 AngloFrisianBrightening: *d*æ*g*ă
 Breaking: *d*æ*g*ă
 VelarFricPal: *d*æ*g*ă
@@ -3710,7 +3757,7 @@ WGlide: *d*æ*ʤ
 GhMarker: *d*æ*ʤ
 GlideDeletion: *d*æ*ʤ
 Epenthesis: *d*æ*ʤ
-Orthography: dæġ, dæ*ġ
+Orthography: dæ*ġ, dæġ
 Surface: dæġ
 
 --- deal ---
@@ -3742,6 +3789,7 @@ DiphthongLeveling: *d*ā*l*i
 EwLongDiphthong: *d*ā*l*i
 AwLongDiphthong: *d*ā*l*i
 PrefixAReductionEarly: *d*ā*l*i
+InterStressRaising: *d*ā*l*i
 AngloFrisianBrightening: *d*ā*l*i
 Breaking: *d*ā*l*i
 VelarFricPal: *d*ā*l*i
@@ -3821,6 +3869,7 @@ DiphthongLeveling: *d*ǣ*d*i
 EwLongDiphthong: *d*ǣ*d*i
 AwLongDiphthong: *d*ǣ*d*i
 PrefixAReductionEarly: *d*ǣ*d*i
+InterStressRaising: *d*ǣ*d*i
 AngloFrisianBrightening: *d*ǣ*d*i
 Breaking: *d*ǣ*d*i
 VelarFricPal: *d*ǣ*d*i
@@ -3900,6 +3949,7 @@ DiphthongLeveling: *d*ēo*r*ą
 EwLongDiphthong: *d*ēo*r*ą
 AwLongDiphthong: *d*ēo*r*ą
 PrefixAReductionEarly: *d*ēo*r*ą
+InterStressRaising: *d*ēo*r*ą
 AngloFrisianBrightening: *d*ēo*r*ą
 Breaking: *d*ēo*r*ą
 VelarFricPal: *d*ēo*r*ą
@@ -3979,6 +4029,7 @@ DiphthongLeveling: *d*a*w*u
 EwLongDiphthong: *d*a*w*u
 AwLongDiphthong: *d*ēa*w*u
 PrefixAReductionEarly: *d*ēa*w*u
+InterStressRaising: *d*ēa*w*u
 AngloFrisianBrightening: *d*ēa*w*u
 Breaking: *d*ēa*w*u
 VelarFricPal: *d*ēa*w*u
@@ -4058,6 +4109,7 @@ DiphthongLeveling: *d*e*l*i
 EwLongDiphthong: *d*e*l*i
 AwLongDiphthong: *d*e*l*i
 PrefixAReductionEarly: *d*e*l*i
+InterStressRaising: *d*e*l*i
 AngloFrisianBrightening: *d*e*l*i
 Breaking: *d*e*l*i
 VelarFricPal: *d*e*l*i
@@ -4137,6 +4189,7 @@ DiphthongLeveling: *d*ō*n*ą
 EwLongDiphthong: *d*ō*n*ą
 AwLongDiphthong: *d*ō*n*ą
 PrefixAReductionEarly: *d*ō*n*ą
+InterStressRaising: *d*ō*n*ą
 AngloFrisianBrightening: *d*ō*n*ą
 Breaking: *d*ō*n*ą
 VelarFricPal: *d*ō*n*ą
@@ -4216,6 +4269,7 @@ DiphthongLeveling: *d*o*r*ą
 EwLongDiphthong: *d*o*r*ą
 AwLongDiphthong: *d*o*r*ą
 PrefixAReductionEarly: *d*o*r*ą
+InterStressRaising: *d*o*r*ą
 AngloFrisianBrightening: *d*o*r*ą
 Breaking: *d*o*r*ą
 VelarFricPal: *d*o*r*ą
@@ -4295,6 +4349,7 @@ DiphthongLeveling: *d*ā*g*ă
 EwLongDiphthong: *d*ā*g*ă
 AwLongDiphthong: *d*ā*g*ă
 PrefixAReductionEarly: *d*ā*g*ă
+InterStressRaising: *d*ā*g*ă
 AngloFrisianBrightening: *d*ā*g*ă
 Breaking: *d*ā*g*ă
 VelarFricPal: *d*ā*g*ă
@@ -4374,6 +4429,7 @@ DiphthongLeveling: *d*r*ēa*m*ă
 EwLongDiphthong: *d*r*ēa*m*ă
 AwLongDiphthong: *d*r*ēa*m*ă
 PrefixAReductionEarly: *d*r*ēa*m*ă
+InterStressRaising: *d*r*ēa*m*ă
 AngloFrisianBrightening: *d*r*ēa*m*ă
 Breaking: *d*r*ēa*m*ă
 VelarFricPal: *d*r*ēa*m*ă
@@ -4453,6 +4509,7 @@ DiphthongLeveling: *d*r*a*n*ʧ*i
 EwLongDiphthong: *d*r*a*n*ʧ*i
 AwLongDiphthong: *d*r*a*n*ʧ*i
 PrefixAReductionEarly: *d*r*a*n*ʧ*i
+InterStressRaising: *d*r*a*n*ʧ*i
 AngloFrisianBrightening: *d*r*a*n*ʧ*i
 Breaking: *d*r*a*n*ʧ*i
 VelarFricPal: *d*r*a*n*ʧ*i
@@ -4532,6 +4589,7 @@ DiphthongLeveling: *d*r*i*n*k*ă*n*ą
 EwLongDiphthong: *d*r*i*n*k*ă*n*ą
 AwLongDiphthong: *d*r*i*n*k*ă*n*ą
 PrefixAReductionEarly: *d*r*i*n*k*ă*n*ą
+InterStressRaising: *d*r*i*n*k*ă*n*ą
 AngloFrisianBrightening: *d*r*i*n*k*ă*n*ą
 Breaking: *d*r*i*n*k*ă*n*ą
 VelarFricPal: *d*r*i*n*k*ă*n*ą
@@ -4611,6 +4669,7 @@ DiphthongLeveling: *d*r*ī*b*ă*n*ą
 EwLongDiphthong: *d*r*ī*b*ă*n*ą
 AwLongDiphthong: *d*r*ī*b*ă*n*ą
 PrefixAReductionEarly: *d*r*ī*b*ă*n*ą
+InterStressRaising: *d*r*ī*b*ă*n*ą
 AngloFrisianBrightening: *d*r*ī*b*ă*n*ą
 Breaking: *d*r*ī*b*ă*n*ą
 VelarFricPal: *d*r*ī*b*ă*n*ą
@@ -4690,6 +4749,7 @@ DiphthongLeveling: *e*r*θ*ǭ
 EwLongDiphthong: *e*r*θ*ǭ
 AwLongDiphthong: *e*r*θ*ǭ
 PrefixAReductionEarly: *e*r*θ*ǭ
+InterStressRaising: *e*r*θ*ǭ
 AngloFrisianBrightening: *e*r*θ*ǭ
 Breaking: *eo*r*θ*ǭ
 VelarFricPal: *eo*r*θ*ǭ
@@ -4737,7 +4797,7 @@ WGlide: *eo*r*θ*e
 GhMarker: *eo*r*θ*e
 GlideDeletion: *eo*r*θ*e
 Epenthesis: *eo*r*θ*e
-Orthography: eorþe, eor*þe
+Orthography: eor*þe, eorþe
 Surface: eorþe
 
 --- eat ---
@@ -4769,6 +4829,7 @@ DiphthongLeveling: *e*t*ă*n*ą
 EwLongDiphthong: *e*t*ă*n*ą
 AwLongDiphthong: *e*t*ă*n*ą
 PrefixAReductionEarly: *e*t*ă*n*ą
+InterStressRaising: *e*t*ă*n*ą
 AngloFrisianBrightening: *e*t*ă*n*ą
 Breaking: *e*t*ă*n*ą
 VelarFricPal: *e*t*ă*n*ą
@@ -4848,6 +4909,7 @@ DiphthongLeveling: *ǣ*l*ă
 EwLongDiphthong: *ǣ*l*ă
 AwLongDiphthong: *ǣ*l*ă
 PrefixAReductionEarly: *ǣ*l*ă
+InterStressRaising: *ǣ*l*ă
 AngloFrisianBrightening: *ǣ*l*ă
 Breaking: *ǣ*l*ă
 VelarFricPal: *ǣ*l*ă
@@ -4927,6 +4989,7 @@ DiphthongLeveling: *f*a*l*l*ă*n*ą
 EwLongDiphthong: *f*a*l*l*ă*n*ą
 AwLongDiphthong: *f*a*l*l*ă*n*ą
 PrefixAReductionEarly: *f*a*l*l*ă*n*ą
+InterStressRaising: *f*a*l*l*ă*n*ą
 AngloFrisianBrightening: *f*æ*l*l*ă*n*ą
 Breaking: *f*ea*l*l*ă*n*ą
 VelarFricPal: *f*ea*l*l*ă*n*ą
@@ -5006,6 +5069,7 @@ DiphthongLeveling: *f*a*r*ă*n*ą
 EwLongDiphthong: *f*a*r*ă*n*ą
 AwLongDiphthong: *f*a*r*ă*n*ą
 PrefixAReductionEarly: *f*a*r*ă*n*ą
+InterStressRaising: *f*a*r*ă*n*ą
 AngloFrisianBrightening: *f*æ*r*ă*n*ą
 Breaking: *f*æ*r*ă*n*ą
 VelarFricPal: *f*æ*r*ă*n*ą
@@ -5085,6 +5149,7 @@ DiphthongLeveling: *f*a*s*t*i*j*ă*n*ą
 EwLongDiphthong: *f*a*s*t*i*j*ă*n*ą
 AwLongDiphthong: *f*a*s*t*i*j*ă*n*ą
 PrefixAReductionEarly: *f*a*s*t*i*j*ă*n*ą
+InterStressRaising: *f*a*s*t*i*j*ă*n*ą
 AngloFrisianBrightening: *f*æ*s*t*i*j*ă*n*ą
 Breaking: *f*æ*s*t*i*j*ă*n*ą
 VelarFricPal: *f*æ*s*t*i*j*ă*n*ą
@@ -5164,6 +5229,7 @@ DiphthongLeveling: *f*a*d*ǣ*r
 EwLongDiphthong: *f*a*d*ǣ*r
 AwLongDiphthong: *f*a*d*ǣ*r
 PrefixAReductionEarly: *f*a*d*ǣ*r
+InterStressRaising: *f*a*d*ǣ*r
 AngloFrisianBrightening: *f*æ*d*ǣ*r
 Breaking: *f*æ*d*ǣ*r
 VelarFricPal: *f*æ*d*ǣ*r
@@ -5243,6 +5309,7 @@ DiphthongLeveling: *f*e*x*u
 EwLongDiphthong: *f*e*x*u
 AwLongDiphthong: *f*e*x*u
 PrefixAReductionEarly: *f*e*x*u
+InterStressRaising: *f*e*x*u
 AngloFrisianBrightening: *f*e*x*u
 Breaking: *f*eo*x*u
 VelarFricPal: *f*eo*x*u
@@ -5290,7 +5357,7 @@ WGlide: *f*eo*x
 GhMarker: *f*eo*GH
 GlideDeletion: *f*eo*GH
 Epenthesis: *f*eo*x
-Orthography: feoh, feo*h
+Orthography: feo*h, feoh
 Surface: feoh
 
 --- fell ---
@@ -5322,6 +5389,7 @@ DiphthongLeveling: *f*e*l*l*ą
 EwLongDiphthong: *f*e*l*l*ą
 AwLongDiphthong: *f*e*l*l*ą
 PrefixAReductionEarly: *f*e*l*l*ą
+InterStressRaising: *f*e*l*l*ą
 AngloFrisianBrightening: *f*e*l*l*ą
 Breaking: *f*e*l*l*ą
 VelarFricPal: *f*e*l*l*ą
@@ -5401,6 +5469,7 @@ DiphthongLeveling: *f*a*r*n*ă
 EwLongDiphthong: *f*a*r*n*ă
 AwLongDiphthong: *f*a*r*n*ă
 PrefixAReductionEarly: *f*a*r*n*ă
+InterStressRaising: *f*a*r*n*ă
 AngloFrisianBrightening: *f*æ*r*n*ă
 Breaking: *f*ea*r*n*ă
 VelarFricPal: *f*ea*r*n*ă
@@ -5480,6 +5549,7 @@ DiphthongLeveling: *f*e*l*d*u
 EwLongDiphthong: *f*e*l*d*u
 AwLongDiphthong: *f*e*l*d*u
 PrefixAReductionEarly: *f*e*l*d*u
+InterStressRaising: *f*e*l*d*u
 AngloFrisianBrightening: *f*e*l*d*u
 Breaking: *f*e*l*d*u
 VelarFricPal: *f*e*l*d*u
@@ -5559,6 +5629,7 @@ DiphthongLeveling: *f*e*x*t*ă*n*ą
 EwLongDiphthong: *f*e*x*t*ă*n*ą
 AwLongDiphthong: *f*e*x*t*ă*n*ą
 PrefixAReductionEarly: *f*e*x*t*ă*n*ą
+InterStressRaising: *f*e*x*t*ă*n*ą
 AngloFrisianBrightening: *f*e*x*t*ă*n*ą
 Breaking: *f*eo*x*t*ă*n*ą
 VelarFricPal: *f*eo*x*t*ă*n*ą
@@ -5606,7 +5677,7 @@ WGlide: *f*eo*x*t*a*n
 GhMarker: *f*eo*GH*t*a*n
 GlideDeletion: *f*eo*GH*t*a*n
 Epenthesis: *f*eo*x*t*a*n
-Orthography: feohtan, feo*htan
+Orthography: feo*htan, feohtan
 Surface: feohtan
 
 --- find ---
@@ -5638,6 +5709,7 @@ DiphthongLeveling: *f*u*n*d*a*n*ă
 EwLongDiphthong: *f*u*n*d*a*n*ă
 AwLongDiphthong: *f*u*n*d*a*n*ă
 PrefixAReductionEarly: *f*u*n*d*a*n*ă
+InterStressRaising: *f*u*n*d*a*n*ă
 AngloFrisianBrightening: *f*u*n*d*a*n*ă
 Breaking: *f*u*n*d*a*n*ă
 VelarFricPal: *f*u*n*d*a*n*ă
@@ -5717,6 +5789,7 @@ DiphthongLeveling: *f*i*n*g*r*ă
 EwLongDiphthong: *f*i*n*g*r*ă
 AwLongDiphthong: *f*i*n*g*r*ă
 PrefixAReductionEarly: *f*i*n*g*r*ă
+InterStressRaising: *f*i*n*g*r*ă
 AngloFrisianBrightening: *f*i*n*g*r*ă
 Breaking: *f*i*n*g*r*ă
 VelarFricPal: *f*i*n*g*r*ă
@@ -5796,6 +5869,7 @@ DiphthongLeveling: *f*i*s*k*ă
 EwLongDiphthong: *f*i*s*k*ă
 AwLongDiphthong: *f*i*s*k*ă
 PrefixAReductionEarly: *f*i*s*k*ă
+InterStressRaising: *f*i*s*k*ă
 AngloFrisianBrightening: *f*i*s*k*ă
 Breaking: *f*i*s*k*ă
 VelarFricPal: *f*i*s*k*ă
@@ -5875,6 +5949,7 @@ DiphthongLeveling: *f*ū*s*t*i
 EwLongDiphthong: *f*ū*s*t*i
 AwLongDiphthong: *f*ū*s*t*i
 PrefixAReductionEarly: *f*ū*s*t*i
+InterStressRaising: *f*ū*s*t*i
 AngloFrisianBrightening: *f*ū*s*t*i
 Breaking: *f*ū*s*t*i
 VelarFricPal: *f*ū*s*t*i
@@ -5954,6 +6029,7 @@ DiphthongLeveling: *f*l*a*s*k*ǭ
 EwLongDiphthong: *f*l*a*s*k*ǭ
 AwLongDiphthong: *f*l*a*s*k*ǭ
 PrefixAReductionEarly: *f*l*a*s*k*ǭ
+InterStressRaising: *f*l*a*s*k*ǭ
 AngloFrisianBrightening: *f*l*æ*s*k*ǭ
 Breaking: *f*l*æ*s*k*ǭ
 VelarFricPal: *f*l*æ*s*k*ǭ
@@ -6033,6 +6109,7 @@ DiphthongLeveling: *f*l*a*x*s*ą
 EwLongDiphthong: *f*l*a*x*s*ą
 AwLongDiphthong: *f*l*a*x*s*ą
 PrefixAReductionEarly: *f*l*a*x*s*ą
+InterStressRaising: *f*l*a*x*s*ą
 AngloFrisianBrightening: *f*l*æ*x*s*ą
 Breaking: *f*l*ea*x*s*ą
 VelarFricPal: *f*l*ea*x*s*ą
@@ -6112,6 +6189,7 @@ DiphthongLeveling: *f*l*ēa*x
 EwLongDiphthong: *f*l*ēa*x
 AwLongDiphthong: *f*l*ēa*x
 PrefixAReductionEarly: *f*l*ēa*x
+InterStressRaising: *f*l*ēa*x
 AngloFrisianBrightening: *f*l*ēa*x
 Breaking: *f*l*ēa*x
 VelarFricPal: *f*l*ēa*x
@@ -6159,7 +6237,7 @@ WGlide: *f*l*ēa*x
 GhMarker: *f*l*ēa*GH
 GlideDeletion: *f*l*ēa*GH
 Epenthesis: *f*l*ēa*x
-Orthography: flēah, flēa*h
+Orthography: flēa*h, flēah
 Surface: flēah
 
 --- flee ---
@@ -6191,6 +6269,7 @@ DiphthongLeveling: *f*l*ēo*x*ă*n*ą
 EwLongDiphthong: *f*l*ēo*x*ă*n*ą
 AwLongDiphthong: *f*l*ēo*x*ă*n*ą
 PrefixAReductionEarly: *f*l*ēo*x*ă*n*ą
+InterStressRaising: *f*l*ēo*x*ă*n*ą
 AngloFrisianBrightening: *f*l*ēo*x*ă*n*ą
 Breaking: *f*l*ēo*x*ă*n*ą
 VelarFricPal: *f*l*ēo*x*ă*n*ą
@@ -6270,6 +6349,7 @@ DiphthongLeveling: *f*l*ā*ʃ*i
 EwLongDiphthong: *f*l*ā*ʃ*i
 AwLongDiphthong: *f*l*ā*ʃ*i
 PrefixAReductionEarly: *f*l*ā*ʃ*i
+InterStressRaising: *f*l*ā*ʃ*i
 AngloFrisianBrightening: *f*l*ā*ʃ*i
 Breaking: *f*l*ā*ʃ*i
 VelarFricPal: *f*l*ā*ʃ*i
@@ -6349,6 +6429,7 @@ DiphthongLeveling: *f*l*ō*d*u
 EwLongDiphthong: *f*l*ō*d*u
 AwLongDiphthong: *f*l*ō*d*u
 PrefixAReductionEarly: *f*l*ō*d*u
+InterStressRaising: *f*l*ō*d*u
 AngloFrisianBrightening: *f*l*ō*d*u
 Breaking: *f*l*ō*d*u
 VelarFricPal: *f*l*ō*d*u
@@ -6428,6 +6509,7 @@ DiphthongLeveling: *f*l*ēo*g*ă*n*ą
 EwLongDiphthong: *f*l*ēo*g*ă*n*ą
 AwLongDiphthong: *f*l*ēo*g*ă*n*ą
 PrefixAReductionEarly: *f*l*ēo*g*ă*n*ą
+InterStressRaising: *f*l*ēo*g*ă*n*ą
 AngloFrisianBrightening: *f*l*ēo*g*ă*n*ą
 Breaking: *f*l*ēo*g*ă*n*ą
 VelarFricPal: *f*l*ēo*g*ă*n*ą
@@ -6507,6 +6589,7 @@ DiphthongLeveling: *f*o*l*ô
 EwLongDiphthong: *f*o*l*ô
 AwLongDiphthong: *f*o*l*ô
 PrefixAReductionEarly: *f*o*l*ô
+InterStressRaising: *f*o*l*ô
 AngloFrisianBrightening: *f*o*l*ô
 Breaking: *f*o*l*ô
 VelarFricPal: *f*o*l*ô
@@ -6586,6 +6669,7 @@ DiphthongLeveling: *f*ō*d*r*ą
 EwLongDiphthong: *f*ō*d*r*ą
 AwLongDiphthong: *f*ō*d*r*ą
 PrefixAReductionEarly: *f*ō*d*r*ą
+InterStressRaising: *f*ō*d*r*ą
 AngloFrisianBrightening: *f*ō*d*r*ą
 Breaking: *f*ō*d*r*ą
 VelarFricPal: *f*ō*d*r*ą
@@ -6665,6 +6749,7 @@ DiphthongLeveling: *f*a*l*d*ă*n*ą
 EwLongDiphthong: *f*a*l*d*ă*n*ą
 AwLongDiphthong: *f*a*l*d*ă*n*ą
 PrefixAReductionEarly: *f*a*l*d*ă*n*ą
+InterStressRaising: *f*a*l*d*ă*n*ą
 AngloFrisianBrightening: *f*æ*l*d*ă*n*ą
 Breaking: *f*ea*l*d*ă*n*ą
 VelarFricPal: *f*ea*l*d*ă*n*ą
@@ -6744,6 +6829,7 @@ DiphthongLeveling: *f*o*l*k*ą
 EwLongDiphthong: *f*o*l*k*ą
 AwLongDiphthong: *f*o*l*k*ą
 PrefixAReductionEarly: *f*o*l*k*ą
+InterStressRaising: *f*o*l*k*ą
 AngloFrisianBrightening: *f*o*l*k*ą
 Breaking: *f*o*l*k*ą
 VelarFricPal: *f*o*l*k*ą
@@ -6823,6 +6909,7 @@ DiphthongLeveling: *f*u*l*ʤ*i*j*ă*n*ą
 EwLongDiphthong: *f*u*l*ʤ*i*j*ă*n*ą
 AwLongDiphthong: *f*u*l*ʤ*i*j*ă*n*ą
 PrefixAReductionEarly: *f*u*l*ʤ*i*j*ă*n*ą
+InterStressRaising: *f*u*l*ʤ*i*j*ă*n*ą
 AngloFrisianBrightening: *f*u*l*ʤ*i*j*ă*n*ą
 Breaking: *f*u*l*ʤ*i*j*ă*n*ą
 VelarFricPal: *f*u*l*ʤ*i*j*ă*n*ą
@@ -6870,7 +6957,7 @@ WGlide: *f*y*l*ʤ*a*n
 GhMarker: *f*y*l*ʤ*a*n
 GlideDeletion: *f*y*l*ʤ*a*n
 Epenthesis: *f*y*l*ʤ*a*n
-Orthography: fylġan, fyl*ġan
+Orthography: fyl*ġan, fylġan
 Surface: fylġan
 
 --- forlorn ---
@@ -6902,6 +6989,7 @@ DiphthongLeveling: *l*ēo*s*ă*n*ą
 EwLongDiphthong: *l*ēo*s*ă*n*ą
 AwLongDiphthong: *l*ēo*s*ă*n*ą
 PrefixAReductionEarly: *l*ēo*s*ă*n*ą
+InterStressRaising: *l*ēo*s*ă*n*ą
 AngloFrisianBrightening: *l*ēo*s*ă*n*ą
 Breaking: *l*ēo*s*ă*n*ą
 VelarFricPal: *l*ēo*s*ă*n*ą
@@ -6981,6 +7069,7 @@ DiphthongLeveling: *f*e*w*a*r
 EwLongDiphthong: *f*ēo*w*a*r
 AwLongDiphthong: *f*ēo*w*a*r
 PrefixAReductionEarly: *f*ēo*w*a*r
+InterStressRaising: *f*ēo*w*a*r
 AngloFrisianBrightening: *f*ēo*w*æ*r
 Breaking: *f*ēo*w*æ*r
 VelarFricPal: *f*ēo*w*æ*r
@@ -7060,6 +7149,7 @@ DiphthongLeveling: *f*o*x*s*ă
 EwLongDiphthong: *f*o*x*s*ă
 AwLongDiphthong: *f*o*x*s*ă
 PrefixAReductionEarly: *f*o*x*s*ă
+InterStressRaising: *f*o*x*s*ă
 AngloFrisianBrightening: *f*o*x*s*ă
 Breaking: *f*o*x*s*ă
 VelarFricPal: *f*o*x*s*ă
@@ -7139,6 +7229,7 @@ DiphthongLeveling: *f*r*ēo*s*ă*n*ą
 EwLongDiphthong: *f*r*ēo*s*ă*n*ą
 AwLongDiphthong: *f*r*ēo*s*ă*n*ą
 PrefixAReductionEarly: *f*r*ēo*s*ă*n*ą
+InterStressRaising: *f*r*ēo*s*ă*n*ą
 AngloFrisianBrightening: *f*r*ēo*s*ă*n*ą
 Breaking: *f*r*ēo*s*ă*n*ą
 VelarFricPal: *f*r*ēo*s*ă*n*ą
@@ -7218,6 +7309,7 @@ DiphthongLeveling: *f*r*ēo*n*d
 EwLongDiphthong: *f*r*ēo*n*d
 AwLongDiphthong: *f*r*ēo*n*d
 PrefixAReductionEarly: *f*r*ēo*n*d
+InterStressRaising: *f*r*ēo*n*d
 AngloFrisianBrightening: *f*r*ēo*n*d
 Breaking: *f*r*ēo*n*d
 VelarFricPal: *f*r*ēo*n*d
@@ -7297,6 +7389,7 @@ DiphthongLeveling: *f*u*r*x*t*i*θ*u
 EwLongDiphthong: *f*u*r*x*t*i*θ*u
 AwLongDiphthong: *f*u*r*x*t*i*θ*u
 PrefixAReductionEarly: *f*u*r*x*t*i*θ*u
+InterStressRaising: *f*u*r*x*t*i*θ*u
 AngloFrisianBrightening: *f*u*r*x*t*i*θ*u
 Breaking: *f*u*r*x*t*i*θ*u
 VelarFricPal: *f*u*r*x*t*i*θ*u
@@ -7344,7 +7437,7 @@ WGlide: *f*y*r*x*t*u
 GhMarker: *f*y*r*x*t*u
 GlideDeletion: *f*y*r*x*t*u
 Epenthesis: *f*y*r*x*t*u
-Orthography: fyrhtu, fyr*htu
+Orthography: fyr*htu, fyrhtu
 Surface: fyrhtu
 
 --- frost ---
@@ -7376,6 +7469,7 @@ DiphthongLeveling: *f*r*o*s*t*ą
 EwLongDiphthong: *f*r*o*s*t*ą
 AwLongDiphthong: *f*r*o*s*t*ą
 PrefixAReductionEarly: *f*r*o*s*t*ą
+InterStressRaising: *f*r*o*s*t*ą
 AngloFrisianBrightening: *f*r*o*s*t*ą
 Breaking: *f*r*o*s*t*ą
 VelarFricPal: *f*r*o*s*t*ą
@@ -7455,6 +7549,7 @@ DiphthongLeveling: *f*u*r*x
 EwLongDiphthong: *f*u*r*x
 AwLongDiphthong: *f*u*r*x
 PrefixAReductionEarly: *f*u*r*x
+InterStressRaising: *f*u*r*x
 AngloFrisianBrightening: *f*u*r*x
 Breaking: *f*u*r*x
 VelarFricPal: *f*u*r*x
@@ -7502,7 +7597,7 @@ WGlide: *f*u*r*x
 GhMarker: *f*u*r*x
 GlideDeletion: *f*u*r*x
 Epenthesis: *f*u*r*x
-Orthography: furh, fur*h
+Orthography: fur*h, furh
 Surface: furh
 
 --- gall ---
@@ -7534,6 +7629,7 @@ DiphthongLeveling: *g*a*l*l*ô
 EwLongDiphthong: *g*a*l*l*ô
 AwLongDiphthong: *g*a*l*l*ô
 PrefixAReductionEarly: *g*a*l*l*ô
+InterStressRaising: *g*a*l*l*ô
 AngloFrisianBrightening: *g*æ*l*l*ô
 Breaking: *g*ea*l*l*ô
 VelarFricPal: *g*ea*l*l*ô
@@ -7613,6 +7709,7 @@ DiphthongLeveling: *g*a*n*g*ă
 EwLongDiphthong: *g*a*n*g*ă
 AwLongDiphthong: *g*a*n*g*ă
 PrefixAReductionEarly: *g*a*n*g*ă
+InterStressRaising: *g*a*n*g*ă
 AngloFrisianBrightening: *g*a*n*g*ă
 Breaking: *g*a*n*g*ă
 VelarFricPal: *g*a*n*g*ă
@@ -7666,7 +7763,7 @@ Surface: gang
 --- ghost ---
 PROTO: *gaistăz
 EXPECTED: gāst
-OUTPUTS: geist, gāst
+OUTPUTS: gāst, geist
 
 ProtoInput: *g*a*i*s*t*ă*z, *g*ai*s*t*ă*z
 InitialKn: *g*a*i*s*t*ă*z, *g*ai*s*t*ă*z
@@ -7692,6 +7789,7 @@ DiphthongLeveling: *g*a*i*s*t*ă, *g*ā*s*t*ă
 EwLongDiphthong: *g*a*i*s*t*ă, *g*ā*s*t*ă
 AwLongDiphthong: *g*a*i*s*t*ă, *g*ā*s*t*ă
 PrefixAReductionEarly: *g*a*i*s*t*ă, *g*ā*s*t*ă
+InterStressRaising: *g*a*i*s*t*ă, *g*ā*s*t*ă
 AngloFrisianBrightening: *g*a*i*s*t*ă, *g*ā*s*t*ă
 Breaking: *g*a*i*s*t*ă, *g*ā*s*t*ă
 VelarFricPal: *g*a*i*s*t*ă, *g*ā*s*t*ă
@@ -7739,8 +7837,8 @@ WGlide: *g*e*i*s*t, *g*ā*s*t
 GhMarker: *g*e*i*s*t, *g*ā*s*t
 GlideDeletion: *g*e*i*s*t, *g*ā*s*t
 Epenthesis: *g*e*i*s*t, *g*ā*s*t
-Orthography: geist, gāst
-Surface: geist, gāst
+Orthography: gāst, geist
+Surface: gāst, geist
 
 --- gift ---
 PROTO: *geftiz
@@ -7771,6 +7869,7 @@ DiphthongLeveling: *ʤ*e*f*t*i
 EwLongDiphthong: *ʤ*e*f*t*i
 AwLongDiphthong: *ʤ*e*f*t*i
 PrefixAReductionEarly: *ʤ*e*f*t*i
+InterStressRaising: *ʤ*e*f*t*i
 AngloFrisianBrightening: *ʤ*e*f*t*i
 Breaking: *ʤ*e*f*t*i
 VelarFricPal: *ʤ*e*f*t*i
@@ -7850,6 +7949,7 @@ DiphthongLeveling: *ʤ*e*b*ă*n*ą
 EwLongDiphthong: *ʤ*e*b*ă*n*ą
 AwLongDiphthong: *ʤ*e*b*ă*n*ą
 PrefixAReductionEarly: *ʤ*e*b*ă*n*ą
+InterStressRaising: *ʤ*e*b*ă*n*ą
 AngloFrisianBrightening: *ʤ*e*b*ă*n*ą
 Breaking: *ʤ*e*b*ă*n*ą
 VelarFricPal: *ʤ*e*b*ă*n*ą
@@ -7929,6 +8029,7 @@ DiphthongLeveling: *g*o*d*ą
 EwLongDiphthong: *g*o*d*ą
 AwLongDiphthong: *g*o*d*ą
 PrefixAReductionEarly: *g*o*d*ą
+InterStressRaising: *g*o*d*ą
 AngloFrisianBrightening: *g*o*d*ą
 Breaking: *g*o*d*ą
 VelarFricPal: *g*o*d*ą
@@ -8008,6 +8109,7 @@ DiphthongLeveling: *g*o*l*d*ą
 EwLongDiphthong: *g*o*l*d*ą
 AwLongDiphthong: *g*o*l*d*ą
 PrefixAReductionEarly: *g*o*l*d*ą
+InterStressRaising: *g*o*l*d*ą
 AngloFrisianBrightening: *g*o*l*d*ą
 Breaking: *g*o*l*d*ą
 VelarFricPal: *g*o*l*d*ą
@@ -8087,6 +8189,7 @@ DiphthongLeveling: *g*ō*s
 EwLongDiphthong: *g*ō*s
 AwLongDiphthong: *g*ō*s
 PrefixAReductionEarly: *g*ō*s
+InterStressRaising: *g*ō*s
 AngloFrisianBrightening: *g*ō*s
 Breaking: *g*ō*s
 VelarFricPal: *g*ō*s
@@ -8166,6 +8269,7 @@ DiphthongLeveling: *g*r*a*s*ą
 EwLongDiphthong: *g*r*a*s*ą
 AwLongDiphthong: *g*r*a*s*ą
 PrefixAReductionEarly: *g*r*a*s*ą
+InterStressRaising: *g*r*a*s*ą
 AngloFrisianBrightening: *g*r*æ*s*ą
 Breaking: *g*r*æ*s*ą
 VelarFricPal: *g*r*æ*s*ą
@@ -8245,6 +8349,7 @@ DiphthongLeveling: *g*r*a*b*a*n*ą
 EwLongDiphthong: *g*r*a*b*a*n*ą
 AwLongDiphthong: *g*r*a*b*a*n*ą
 PrefixAReductionEarly: *g*r*a*b*a*n*ą
+InterStressRaising: *g*r*a*b*a*n*ą
 AngloFrisianBrightening: *g*r*æ*b*a*n*ą
 Breaking: *g*r*æ*b*a*n*ą
 VelarFricPal: *g*r*æ*b*a*n*ą
@@ -8324,6 +8429,7 @@ DiphthongLeveling: *g*r*ī*p*ă*n*ą
 EwLongDiphthong: *g*r*ī*p*ă*n*ą
 AwLongDiphthong: *g*r*ī*p*ă*n*ą
 PrefixAReductionEarly: *g*r*ī*p*ă*n*ą
+InterStressRaising: *g*r*ī*p*ă*n*ą
 AngloFrisianBrightening: *g*r*ī*p*ă*n*ą
 Breaking: *g*r*ī*p*ă*n*ą
 VelarFricPal: *g*r*ī*p*ă*n*ą
@@ -8403,6 +8509,7 @@ DiphthongLeveling: *g*r*u*n*d*u
 EwLongDiphthong: *g*r*u*n*d*u
 AwLongDiphthong: *g*r*u*n*d*u
 PrefixAReductionEarly: *g*r*u*n*d*u
+InterStressRaising: *g*r*u*n*d*u
 AngloFrisianBrightening: *g*r*u*n*d*u
 Breaking: *g*r*u*n*d*u
 VelarFricPal: *g*r*u*n*d*u
@@ -8482,6 +8589,7 @@ DiphthongLeveling: *g*a*s*t*i
 EwLongDiphthong: *g*a*s*t*i
 AwLongDiphthong: *g*a*s*t*i
 PrefixAReductionEarly: *g*a*s*t*i
+InterStressRaising: *g*a*s*t*i
 AngloFrisianBrightening: *g*æ*s*t*i
 Breaking: *g*æ*s*t*i
 VelarFricPal: *g*æ*s*t*i
@@ -8561,6 +8669,7 @@ DiphthongLeveling: *x*a*g*l*ą
 EwLongDiphthong: *x*a*g*l*ą
 AwLongDiphthong: *x*a*g*l*ą
 PrefixAReductionEarly: *x*a*g*l*ą
+InterStressRaising: *x*a*g*l*ą
 AngloFrisianBrightening: *x*æ*g*l*ą
 Breaking: *x*æ*g*l*ą
 VelarFricPal: *ç*æ*g*l*ą
@@ -8608,7 +8717,7 @@ WGlide: *ç*æ*ʤ*l
 GhMarker: *ç*æ*ʤ*l
 GlideDeletion: *ç*æ*ʤ*l
 Epenthesis: *ç*æ*ʤ*l
-Orthography: hæġl, hæ*ġl, *hæġl, *hæ*ġl
+Orthography: *hæ*ġl, *hæġl, hæ*ġl, hæġl
 Surface: hæġl
 
 --- hair ---
@@ -8640,6 +8749,7 @@ DiphthongLeveling: *x*ǣ*r*ą
 EwLongDiphthong: *x*ǣ*r*ą
 AwLongDiphthong: *x*ǣ*r*ą
 PrefixAReductionEarly: *x*ǣ*r*ą
+InterStressRaising: *x*ǣ*r*ą
 AngloFrisianBrightening: *x*ǣ*r*ą
 Breaking: *x*ǣ*r*ą
 VelarFricPal: *ç*ǣ*r*ą
@@ -8687,7 +8797,7 @@ WGlide: *ç*ǣ*r
 GhMarker: *ç*ǣ*r
 GlideDeletion: *ç*ǣ*r
 Epenthesis: *ç*ǣ*r
-Orthography: hǣr, *hǣr
+Orthography: *hǣr, hǣr
 Surface: hǣr
 
 --- hall ---
@@ -8719,6 +8829,7 @@ DiphthongLeveling: *x*a*l*l*u
 EwLongDiphthong: *x*a*l*l*u
 AwLongDiphthong: *x*a*l*l*u
 PrefixAReductionEarly: *x*a*l*l*u
+InterStressRaising: *x*a*l*l*u
 AngloFrisianBrightening: *x*æ*l*l*u
 Breaking: *x*ea*l*l*u
 VelarFricPal: *ç*ea*l*l*u
@@ -8766,7 +8877,7 @@ WGlide: *ç*ea*l*l
 GhMarker: *ç*ea*l*l
 GlideDeletion: *ç*ea*l*l
 Epenthesis: *ç*ea*l*l
-Orthography: heall, *heall
+Orthography: *heall, heall
 Surface: heall
 
 --- hammer ---
@@ -8798,6 +8909,7 @@ DiphthongLeveling: *x*a*m*a*r*a*s
 EwLongDiphthong: *x*a*m*a*r*a*s
 AwLongDiphthong: *x*a*m*a*r*a*s
 PrefixAReductionEarly: *x*a*m*a*r*a*s
+InterStressRaising: *x*a*m*a*r*a*s
 AngloFrisianBrightening: *x*a*m*æ*r*æ*s
 Breaking: *x*a*m*æ*r*æ*s
 VelarFricPal: *x*a*m*æ*r*æ*s
@@ -8845,7 +8957,7 @@ WGlide: *x*a*m*e*r*e*s
 GhMarker: *x*a*m*e*r*e*s
 GlideDeletion: *x*a*m*e*r*e*s
 Epenthesis: *x*a*m*e*r*e*s
-Orthography: hameres, *hameres
+Orthography: *hameres, hameres
 Surface: hameres
 
 --- hand ---
@@ -8877,6 +8989,7 @@ DiphthongLeveling: *x*a*n*d*u
 EwLongDiphthong: *x*a*n*d*u
 AwLongDiphthong: *x*a*n*d*u
 PrefixAReductionEarly: *x*a*n*d*u
+InterStressRaising: *x*a*n*d*u
 AngloFrisianBrightening: *x*a*n*d*u
 Breaking: *x*a*n*d*u
 VelarFricPal: *x*a*n*d*u
@@ -8924,7 +9037,7 @@ WGlide: *x*a*n*d
 GhMarker: *x*a*n*d
 GlideDeletion: *x*a*n*d
 Epenthesis: *x*a*n*d
-Orthography: hand, *hand
+Orthography: *hand, hand
 Surface: hand
 
 --- handle ---
@@ -8956,6 +9069,7 @@ DiphthongLeveling: *x*a*n*d*l*ō*j*ă*n*ą
 EwLongDiphthong: *x*a*n*d*l*ō*j*ă*n*ą
 AwLongDiphthong: *x*a*n*d*l*ō*j*ă*n*ą
 PrefixAReductionEarly: *x*a*n*d*l*ō*j*ă*n*ą
+InterStressRaising: *x*a*n*d*l*ō*j*ă*n*ą
 AngloFrisianBrightening: *x*a*n*d*l*ō*j*ă*n*ą
 Breaking: *x*a*n*d*l*ō*j*ă*n*ą
 VelarFricPal: *x*a*n*d*l*ō*j*ă*n*ą
@@ -9003,7 +9117,7 @@ WGlide: *x*a*n*d*l*i*a*n
 GhMarker: *x*a*n*d*l*i*a*n
 GlideDeletion: *x*a*n*d*l*i*a*n
 Epenthesis: *x*a*n*d*l*i*a*n
-Orthography: handlian, *handlian
+Orthography: *handlian, handlian
 Surface: handlian
 
 --- harm ---
@@ -9035,6 +9149,7 @@ DiphthongLeveling: *x*a*r*m*ă
 EwLongDiphthong: *x*a*r*m*ă
 AwLongDiphthong: *x*a*r*m*ă
 PrefixAReductionEarly: *x*a*r*m*ă
+InterStressRaising: *x*a*r*m*ă
 AngloFrisianBrightening: *x*æ*r*m*ă
 Breaking: *x*ea*r*m*ă
 VelarFricPal: *ç*ea*r*m*ă
@@ -9082,7 +9197,7 @@ WGlide: *ç*ea*r*m
 GhMarker: *ç*ea*r*m
 GlideDeletion: *ç*ea*r*m
 Epenthesis: *ç*ea*r*m
-Orthography: hearm, *hearm
+Orthography: *hearm, hearm
 Surface: hearm
 
 --- harvest ---
@@ -9114,6 +9229,7 @@ DiphthongLeveling: *x*a*r*b*i*s*t*u
 EwLongDiphthong: *x*a*r*b*i*s*t*u
 AwLongDiphthong: *x*a*r*b*i*s*t*u
 PrefixAReductionEarly: *x*a*r*b*i*s*t*u
+InterStressRaising: *x*a*r*b*i*s*t*u
 AngloFrisianBrightening: *x*æ*r*b*i*s*t*u
 Breaking: *x*ea*r*b*i*s*t*u
 VelarFricPal: *ç*ea*r*b*i*s*t*u
@@ -9161,7 +9277,7 @@ WGlide: *ç*ie*r*β*e*s*t
 GhMarker: *ç*ie*r*β*e*s*t
 GlideDeletion: *ç*ie*r*β*e*s*t
 Epenthesis: *ç*ie*r*β*e*s*t
-Orthography: hierfest, *hierfest
+Orthography: *hierfest, hierfest
 Surface: hierfest
 
 --- have ---
@@ -9193,6 +9309,7 @@ DiphthongLeveling: *x*a*b*ǣ*θ*i
 EwLongDiphthong: *x*a*b*ǣ*θ*i
 AwLongDiphthong: *x*a*b*ǣ*θ*i
 PrefixAReductionEarly: *x*a*b*ǣ*θ*i
+InterStressRaising: *x*a*b*ǣ*θ*i
 AngloFrisianBrightening: *x*æ*b*ǣ*θ*i
 Breaking: *x*æ*b*ǣ*θ*i
 VelarFricPal: *ç*æ*b*ǣ*θ*i
@@ -9240,7 +9357,7 @@ WGlide: *ç*æ*β*e*θ
 GhMarker: *ç*æ*β*e*θ
 GlideDeletion: *ç*æ*β*e*θ
 Epenthesis: *ç*æ*β*e*θ
-Orthography: hæfeþ, hæfe*þ, *hæfeþ, *hæfe*þ
+Orthography: *hæfeþ, *hæfe*þ, hæfeþ, hæfe*þ
 Surface: hæfeþ
 
 --- haw ---
@@ -9272,6 +9389,7 @@ DiphthongLeveling: *x*a*g*ô
 EwLongDiphthong: *x*a*g*ô
 AwLongDiphthong: *x*a*g*ô
 PrefixAReductionEarly: *x*a*g*ô
+InterStressRaising: *x*a*g*ô
 AngloFrisianBrightening: *x*æ*g*ô
 Breaking: *x*æ*g*ô
 VelarFricPal: *ç*æ*g*ô
@@ -9319,7 +9437,7 @@ WGlide: *ç*a*g*a
 GhMarker: *ç*a*g*a
 GlideDeletion: *ç*a*g*a
 Epenthesis: *ç*a*g*a
-Orthography: haga, *haga
+Orthography: *haga, haga
 Surface: haga
 
 --- hawk ---
@@ -9351,6 +9469,7 @@ DiphthongLeveling: *x*a*b*u*k*ă
 EwLongDiphthong: *x*a*b*u*k*ă
 AwLongDiphthong: *x*a*b*u*k*ă
 PrefixAReductionEarly: *x*a*b*u*k*ă
+InterStressRaising: *x*a*b*u*k*ă
 AngloFrisianBrightening: *x*æ*b*u*k*ă
 Breaking: *x*æ*b*u*k*ă
 VelarFricPal: *ç*æ*b*u*k*ă
@@ -9398,7 +9517,7 @@ WGlide: *ç*a*β*o*k
 GhMarker: *ç*a*β*o*k
 GlideDeletion: *ç*a*β*o*k
 Epenthesis: *ç*a*β*o*k
-Orthography: hafoc, *hafoc
+Orthography: *hafoc, hafoc
 Surface: hafoc
 
 --- hazel ---
@@ -9430,6 +9549,7 @@ DiphthongLeveling: *x*a*s*l*ă
 EwLongDiphthong: *x*a*s*l*ă
 AwLongDiphthong: *x*a*s*l*ă
 PrefixAReductionEarly: *x*a*s*l*ă
+InterStressRaising: *x*a*s*l*ă
 AngloFrisianBrightening: *x*æ*s*l*ă
 Breaking: *x*æ*s*l*ă
 VelarFricPal: *ç*æ*s*l*ă
@@ -9477,7 +9597,7 @@ WGlide: *ç*æ*s*l
 GhMarker: *ç*æ*s*l
 GlideDeletion: *ç*æ*s*l
 Epenthesis: *ç*æ*s*l
-Orthography: hæsl, *hæsl
+Orthography: *hæsl, hæsl
 Surface: hæsl
 
 --- head ---
@@ -9509,6 +9629,7 @@ DiphthongLeveling: *x*ēa*b*u*d*ą
 EwLongDiphthong: *x*ēa*b*u*d*ą
 AwLongDiphthong: *x*ēa*b*u*d*ą
 PrefixAReductionEarly: *x*ēa*b*u*d*ą
+InterStressRaising: *x*ēa*b*u*d*ą
 AngloFrisianBrightening: *x*ēa*b*u*d*ą
 Breaking: *x*ēa*b*u*d*ą
 VelarFricPal: *ç*ēa*b*u*d*ą
@@ -9556,7 +9677,7 @@ WGlide: *ç*ēa*β*o*d
 GhMarker: *ç*ēa*β*o*d
 GlideDeletion: *ç*ēa*β*o*d
 Epenthesis: *ç*ēa*β*o*d
-Orthography: hēafod, *hēafod
+Orthography: *hēafod, hēafod
 Surface: hēafod
 
 --- heal ---
@@ -9588,6 +9709,7 @@ DiphthongLeveling: *x*ā*l*i*j*ă*n*ą
 EwLongDiphthong: *x*ā*l*i*j*ă*n*ą
 AwLongDiphthong: *x*ā*l*i*j*ă*n*ą
 PrefixAReductionEarly: *x*ā*l*i*j*ă*n*ą
+InterStressRaising: *x*ā*l*i*j*ă*n*ą
 AngloFrisianBrightening: *x*ā*l*i*j*ă*n*ą
 Breaking: *x*ā*l*i*j*ă*n*ą
 VelarFricPal: *x*ā*l*i*j*ă*n*ą
@@ -9635,7 +9757,7 @@ WGlide: *x*ǣ*l*a*n
 GhMarker: *x*ǣ*l*a*n
 GlideDeletion: *x*ǣ*l*a*n
 Epenthesis: *x*ǣ*l*a*n
-Orthography: hǣlan, *hǣlan
+Orthography: *hǣlan, hǣlan
 Surface: hǣlan
 
 --- heart ---
@@ -9667,6 +9789,7 @@ DiphthongLeveling: *x*e*r*t*ǭ
 EwLongDiphthong: *x*e*r*t*ǭ
 AwLongDiphthong: *x*e*r*t*ǭ
 PrefixAReductionEarly: *x*e*r*t*ǭ
+InterStressRaising: *x*e*r*t*ǭ
 AngloFrisianBrightening: *x*e*r*t*ǭ
 Breaking: *x*eo*r*t*ǭ
 VelarFricPal: *ç*eo*r*t*ǭ
@@ -9714,7 +9837,7 @@ WGlide: *ç*eo*r*t*e
 GhMarker: *ç*eo*r*t*e
 GlideDeletion: *ç*eo*r*t*e
 Epenthesis: *ç*eo*r*t*e
-Orthography: heorte, *heorte
+Orthography: *heorte, heorte
 Surface: heorte
 
 --- hearth ---
@@ -9746,6 +9869,7 @@ DiphthongLeveling: *x*e*r*θ*ă
 EwLongDiphthong: *x*e*r*θ*ă
 AwLongDiphthong: *x*e*r*θ*ă
 PrefixAReductionEarly: *x*e*r*θ*ă
+InterStressRaising: *x*e*r*θ*ă
 AngloFrisianBrightening: *x*e*r*θ*ă
 Breaking: *x*eo*r*θ*ă
 VelarFricPal: *ç*eo*r*θ*ă
@@ -9793,7 +9917,7 @@ WGlide: *ç*eo*r*θ
 GhMarker: *ç*eo*r*θ
 GlideDeletion: *ç*eo*r*θ
 Epenthesis: *ç*eo*r*θ
-Orthography: heorþ, heor*þ, *heorþ, *heor*þ
+Orthography: *heor*þ, *heorþ, heor*þ, heorþ
 Surface: heorþ
 
 --- heath ---
@@ -9825,6 +9949,7 @@ DiphthongLeveling: *x*ā*θ*i
 EwLongDiphthong: *x*ā*θ*i
 AwLongDiphthong: *x*ā*θ*i
 PrefixAReductionEarly: *x*ā*θ*i
+InterStressRaising: *x*ā*θ*i
 AngloFrisianBrightening: *x*ā*θ*i
 Breaking: *x*ā*θ*i
 VelarFricPal: *x*ā*θ*i
@@ -9872,7 +9997,7 @@ WGlide: *x*ǣ*θ
 GhMarker: *x*ǣ*θ
 GlideDeletion: *x*ǣ*θ
 Epenthesis: *x*ǣ*θ
-Orthography: hǣþ, hǣ*þ, *hǣþ, *hǣ*þ
+Orthography: *hǣþ, *hǣ*þ, hǣþ, hǣ*þ
 Surface: hǣþ
 
 --- heaven ---
@@ -9904,6 +10029,7 @@ DiphthongLeveling: *x*e*β*u*n*ų
 EwLongDiphthong: *x*e*β*u*n*ų
 AwLongDiphthong: *x*e*β*u*n*ų
 PrefixAReductionEarly: *x*e*β*u*n*ų
+InterStressRaising: *x*e*β*u*n*ų
 AngloFrisianBrightening: *x*e*β*u*n*ų
 Breaking: *x*e*β*u*n*ų
 VelarFricPal: *ç*e*β*u*n*ų
@@ -9951,7 +10077,7 @@ WGlide: *ç*e*o*β*o*n
 GhMarker: *ç*e*o*β*o*n
 GlideDeletion: *ç*e*o*β*o*n
 Epenthesis: *ç*e*o*β*o*n
-Orthography: heofon, *heofon
+Orthography: *heofon, heofon
 Surface: heofon
 
 --- hedge ---
@@ -9983,6 +10109,7 @@ DiphthongLeveling: *x*a*g*g*j*ă
 EwLongDiphthong: *x*a*g*g*j*ă
 AwLongDiphthong: *x*a*g*g*j*ă
 PrefixAReductionEarly: *x*a*g*g*j*ă
+InterStressRaising: *x*a*g*g*j*ă
 AngloFrisianBrightening: *x*æ*g*g*j*ă
 Breaking: *x*æ*g*g*j*ă
 VelarFricPal: *ç*æ*g*g*j*ă
@@ -10030,7 +10157,7 @@ WGlide: *ç*e*ʤ*ʤ
 GhMarker: *ç*e*ʤ*ʤ
 GlideDeletion: *ç*e*ʤ*ʤ
 Epenthesis: *ç*e*ʤ*ʤ
-Orthography: heġġ, heġ*ġ, he*ġġ, he*ġ*ġ, *heġġ, *heġ*ġ, *he*ġġ, *he*ġ*ġ
+Orthography: *heġġ, *heġ*ġ, *he*ġġ, *he*ġ*ġ, heġġ, heġ*ġ, he*ġġ, he*ġ*ġ
 Surface: heġġ
 
 --- helm ---
@@ -10062,6 +10189,7 @@ DiphthongLeveling: *x*e*l*m*ă
 EwLongDiphthong: *x*e*l*m*ă
 AwLongDiphthong: *x*e*l*m*ă
 PrefixAReductionEarly: *x*e*l*m*ă
+InterStressRaising: *x*e*l*m*ă
 AngloFrisianBrightening: *x*e*l*m*ă
 Breaking: *x*e*l*m*ă
 VelarFricPal: *ç*e*l*m*ă
@@ -10109,7 +10237,7 @@ WGlide: *ç*e*l*m
 GhMarker: *ç*e*l*m
 GlideDeletion: *ç*e*l*m
 Epenthesis: *ç*e*l*m
-Orthography: helm, *helm
+Orthography: *helm, helm
 Surface: helm
 
 --- help ---
@@ -10141,6 +10269,7 @@ DiphthongLeveling: *x*e*l*p*ă*n*ą
 EwLongDiphthong: *x*e*l*p*ă*n*ą
 AwLongDiphthong: *x*e*l*p*ă*n*ą
 PrefixAReductionEarly: *x*e*l*p*ă*n*ą
+InterStressRaising: *x*e*l*p*ă*n*ą
 AngloFrisianBrightening: *x*e*l*p*ă*n*ą
 Breaking: *x*e*l*p*ă*n*ą
 VelarFricPal: *ç*e*l*p*ă*n*ą
@@ -10188,7 +10317,7 @@ WGlide: *ç*e*l*p*a*n
 GhMarker: *ç*e*l*p*a*n
 GlideDeletion: *ç*e*l*p*a*n
 Epenthesis: *ç*e*l*p*a*n
-Orthography: helpan, *helpan
+Orthography: *helpan, helpan
 Surface: helpan
 
 --- help ---
@@ -10220,6 +10349,7 @@ DiphthongLeveling: *x*e*l*p*u
 EwLongDiphthong: *x*e*l*p*u
 AwLongDiphthong: *x*e*l*p*u
 PrefixAReductionEarly: *x*e*l*p*u
+InterStressRaising: *x*e*l*p*u
 AngloFrisianBrightening: *x*e*l*p*u
 Breaking: *x*e*l*p*u
 VelarFricPal: *ç*e*l*p*u
@@ -10267,7 +10397,7 @@ WGlide: *ç*e*l*p
 GhMarker: *ç*e*l*p
 GlideDeletion: *ç*e*l*p
 Epenthesis: *ç*e*l*p
-Orthography: help, *help
+Orthography: *help, help
 Surface: help
 
 --- herd ---
@@ -10299,6 +10429,7 @@ DiphthongLeveling: *x*e*r*d*u
 EwLongDiphthong: *x*e*r*d*u
 AwLongDiphthong: *x*e*r*d*u
 PrefixAReductionEarly: *x*e*r*d*u
+InterStressRaising: *x*e*r*d*u
 AngloFrisianBrightening: *x*e*r*d*u
 Breaking: *x*eo*r*d*u
 VelarFricPal: *ç*eo*r*d*u
@@ -10346,7 +10477,7 @@ WGlide: *ç*eo*r*d
 GhMarker: *ç*eo*r*d
 GlideDeletion: *ç*eo*r*d
 Epenthesis: *ç*eo*r*d
-Orthography: heord, *heord
+Orthography: *heord, heord
 Surface: heord
 
 --- hew ---
@@ -10378,6 +10509,7 @@ DiphthongLeveling: *x*a*w*ă*n*ą
 EwLongDiphthong: *x*a*w*ă*n*ą
 AwLongDiphthong: *x*ēa*w*ă*n*ą
 PrefixAReductionEarly: *x*ēa*w*ă*n*ą
+InterStressRaising: *x*ēa*w*ă*n*ą
 AngloFrisianBrightening: *x*ēa*w*ă*n*ą
 Breaking: *x*ēa*w*ă*n*ą
 VelarFricPal: *ç*ēa*w*ă*n*ą
@@ -10425,7 +10557,7 @@ WGlide: *ç*ēa*ʋ*a*n
 GhMarker: *ç*ēa*ʋ*a*n
 GlideDeletion: *ç*ēa*a*n
 Epenthesis: *ç*ēa*w*a*n
-Orthography: hēawan, *hēawan
+Orthography: *hēawan, hēawan
 Surface: hēawan
 
 --- hind ---
@@ -10457,6 +10589,7 @@ DiphthongLeveling: *x*e*n*d*j*u
 EwLongDiphthong: *x*e*n*d*j*u
 AwLongDiphthong: *x*e*n*d*j*u
 PrefixAReductionEarly: *x*e*n*d*j*u
+InterStressRaising: *x*e*n*d*j*u
 AngloFrisianBrightening: *x*e*n*d*j*u
 Breaking: *x*e*n*d*j*u
 VelarFricPal: *ç*e*n*d*j*u
@@ -10504,7 +10637,7 @@ WGlide: *ç*i*n*d
 GhMarker: *ç*i*n*d
 GlideDeletion: *ç*i*n*d
 Epenthesis: *ç*i*n*d
-Orthography: hind, *hind
+Orthography: *hind, hind
 Surface: hind
 
 --- hoard ---
@@ -10536,6 +10669,7 @@ DiphthongLeveling: *x*o*r*d*ą
 EwLongDiphthong: *x*o*r*d*ą
 AwLongDiphthong: *x*o*r*d*ą
 PrefixAReductionEarly: *x*o*r*d*ą
+InterStressRaising: *x*o*r*d*ą
 AngloFrisianBrightening: *x*o*r*d*ą
 Breaking: *x*o*r*d*ą
 VelarFricPal: *x*o*r*d*ą
@@ -10583,7 +10717,7 @@ WGlide: *x*o*r*d
 GhMarker: *x*o*r*d
 GlideDeletion: *x*o*r*d
 Epenthesis: *x*o*r*d
-Orthography: hord, *hord
+Orthography: *hord, hord
 Surface: hord
 
 --- hold ---
@@ -10615,6 +10749,7 @@ DiphthongLeveling: *x*a*l*d*ă*n*ą
 EwLongDiphthong: *x*a*l*d*ă*n*ą
 AwLongDiphthong: *x*a*l*d*ă*n*ą
 PrefixAReductionEarly: *x*a*l*d*ă*n*ą
+InterStressRaising: *x*a*l*d*ă*n*ą
 AngloFrisianBrightening: *x*æ*l*d*ă*n*ą
 Breaking: *x*ea*l*d*ă*n*ą
 VelarFricPal: *ç*ea*l*d*ă*n*ą
@@ -10662,7 +10797,7 @@ WGlide: *ç*ea*l*d*a*n
 GhMarker: *ç*ea*l*d*a*n
 GlideDeletion: *ç*ea*l*d*a*n
 Epenthesis: *ç*ea*l*d*a*n
-Orthography: healdan, *healdan
+Orthography: *healdan, healdan
 Surface: healdan
 
 --- home ---
@@ -10694,6 +10829,7 @@ DiphthongLeveling: *x*ā*m*ă
 EwLongDiphthong: *x*ā*m*ă
 AwLongDiphthong: *x*ā*m*ă
 PrefixAReductionEarly: *x*ā*m*ă
+InterStressRaising: *x*ā*m*ă
 AngloFrisianBrightening: *x*ā*m*ă
 Breaking: *x*ā*m*ă
 VelarFricPal: *x*ā*m*ă
@@ -10741,7 +10877,7 @@ WGlide: *x*ā*m
 GhMarker: *x*ā*m
 GlideDeletion: *x*ā*m
 Epenthesis: *x*ā*m
-Orthography: hām, *hām
+Orthography: *hām, hām
 Surface: hām
 
 --- honey ---
@@ -10773,6 +10909,7 @@ DiphthongLeveling: *x*u*n*ă*g*ą
 EwLongDiphthong: *x*u*n*ă*g*ą
 AwLongDiphthong: *x*u*n*ă*g*ą
 PrefixAReductionEarly: *x*u*n*ă*g*ą
+InterStressRaising: *x*u*n*ă*g*ą
 AngloFrisianBrightening: *x*u*n*ă*g*ą
 Breaking: *x*u*n*ă*g*ą
 VelarFricPal: *x*u*n*ă*g*ą
@@ -10820,7 +10957,7 @@ WGlide: *x*u*n*a*g
 GhMarker: *x*u*n*a*g
 GlideDeletion: *x*u*n*a*g
 Epenthesis: *x*u*n*a*g
-Orthography: huniġ, huni*ġ, *huniġ, *huni*ġ
+Orthography: *huniġ, *huni*ġ, huniġ, huni*ġ
 Surface: huniġ
 
 --- hood ---
@@ -10852,6 +10989,7 @@ DiphthongLeveling: *x*ō*d*ă
 EwLongDiphthong: *x*ō*d*ă
 AwLongDiphthong: *x*ō*d*ă
 PrefixAReductionEarly: *x*ō*d*ă
+InterStressRaising: *x*ō*d*ă
 AngloFrisianBrightening: *x*ō*d*ă
 Breaking: *x*ō*d*ă
 VelarFricPal: *x*ō*d*ă
@@ -10899,7 +11037,7 @@ WGlide: *x*ō*d
 GhMarker: *x*ō*d
 GlideDeletion: *x*ō*d
 Epenthesis: *x*ō*d
-Orthography: hōd, *hōd
+Orthography: *hōd, hōd
 Surface: hōd
 
 --- hoof ---
@@ -10931,6 +11069,7 @@ DiphthongLeveling: *x*ō*f*ă
 EwLongDiphthong: *x*ō*f*ă
 AwLongDiphthong: *x*ō*f*ă
 PrefixAReductionEarly: *x*ō*f*ă
+InterStressRaising: *x*ō*f*ă
 AngloFrisianBrightening: *x*ō*f*ă
 Breaking: *x*ō*f*ă
 VelarFricPal: *x*ō*f*ă
@@ -10978,7 +11117,7 @@ WGlide: *x*ō*f
 GhMarker: *x*ō*f
 GlideDeletion: *x*ō*f
 Epenthesis: *x*ō*f
-Orthography: hōf, *hōf
+Orthography: *hōf, hōf
 Surface: hōf
 
 --- horn ---
@@ -11010,6 +11149,7 @@ DiphthongLeveling: *x*o*r*n*ą
 EwLongDiphthong: *x*o*r*n*ą
 AwLongDiphthong: *x*o*r*n*ą
 PrefixAReductionEarly: *x*o*r*n*ą
+InterStressRaising: *x*o*r*n*ą
 AngloFrisianBrightening: *x*o*r*n*ą
 Breaking: *x*o*r*n*ą
 VelarFricPal: *x*o*r*n*ą
@@ -11057,7 +11197,7 @@ WGlide: *x*o*r*n
 GhMarker: *x*o*r*n
 GlideDeletion: *x*o*r*n
 Epenthesis: *x*o*r*n
-Orthography: horn, *horn
+Orthography: *horn, horn
 Surface: horn
 
 --- hound ---
@@ -11089,6 +11229,7 @@ DiphthongLeveling: *x*u*n*d*ă
 EwLongDiphthong: *x*u*n*d*ă
 AwLongDiphthong: *x*u*n*d*ă
 PrefixAReductionEarly: *x*u*n*d*ă
+InterStressRaising: *x*u*n*d*ă
 AngloFrisianBrightening: *x*u*n*d*ă
 Breaking: *x*u*n*d*ă
 VelarFricPal: *x*u*n*d*ă
@@ -11136,7 +11277,7 @@ WGlide: *x*u*n*d
 GhMarker: *x*u*n*d
 GlideDeletion: *x*u*n*d
 Epenthesis: *x*u*n*d
-Orthography: hund, *hund
+Orthography: *hund, hund
 Surface: hund
 
 --- knead ---
@@ -11168,6 +11309,7 @@ DiphthongLeveling: *Kn*e*d*ă*n*ą
 EwLongDiphthong: *Kn*e*d*ă*n*ą
 AwLongDiphthong: *Kn*e*d*ă*n*ą
 PrefixAReductionEarly: *Kn*e*d*ă*n*ą
+InterStressRaising: *Kn*e*d*ă*n*ą
 AngloFrisianBrightening: *Kn*e*d*ă*n*ą
 Breaking: *Kn*e*d*ă*n*ą
 VelarFricPal: *Kn*e*d*ă*n*ą
@@ -11247,6 +11389,7 @@ DiphthongLeveling: *Kn*e*w*ą
 EwLongDiphthong: *Kn*ēo*w*ą
 AwLongDiphthong: *Kn*ēo*w*ą
 PrefixAReductionEarly: *Kn*ēo*w*ą
+InterStressRaising: *Kn*ēo*w*ą
 AngloFrisianBrightening: *Kn*ēo*w*ą
 Breaking: *Kn*ēo*w*ą
 VelarFricPal: *Kn*ēo*w*ą
@@ -11326,6 +11469,7 @@ DiphthongLeveling: *Kn*e*x*t*ă
 EwLongDiphthong: *Kn*e*x*t*ă
 AwLongDiphthong: *Kn*e*x*t*ă
 PrefixAReductionEarly: *Kn*e*x*t*ă
+InterStressRaising: *Kn*e*x*t*ă
 AngloFrisianBrightening: *Kn*e*x*t*ă
 Breaking: *Kn*eo*x*t*ă
 VelarFricPal: *Kn*eo*x*t*ă
@@ -11405,6 +11549,7 @@ DiphthongLeveling: *Kn*u*b*b*ô
 EwLongDiphthong: *Kn*u*b*b*ô
 AwLongDiphthong: *Kn*u*b*b*ô
 PrefixAReductionEarly: *Kn*u*b*b*ô
+InterStressRaising: *Kn*u*b*b*ô
 AngloFrisianBrightening: *Kn*u*b*b*ô
 Breaking: *Kn*u*b*b*ô
 VelarFricPal: *Kn*u*b*b*ô
@@ -11484,6 +11629,7 @@ DiphthongLeveling: *x*l*a*d*a*n*ą
 EwLongDiphthong: *x*l*a*d*a*n*ą
 AwLongDiphthong: *x*l*a*d*a*n*ą
 PrefixAReductionEarly: *x*l*a*d*a*n*ą
+InterStressRaising: *x*l*a*d*a*n*ą
 AngloFrisianBrightening: *x*l*æ*d*a*n*ą
 Breaking: *x*l*æ*d*a*n*ą
 VelarFricPal: *x*l*æ*d*a*n*ą
@@ -11531,7 +11677,7 @@ WGlide: *x*l*a*d*a*n
 GhMarker: *x*l*a*d*a*n
 GlideDeletion: *x*l*a*d*a*n
 Epenthesis: *x*l*a*d*a*n
-Orthography: hladan, *hladan
+Orthography: *hladan, hladan
 Surface: hladan
 
 --- land ---
@@ -11563,6 +11709,7 @@ DiphthongLeveling: *l*a*n*d*ą
 EwLongDiphthong: *l*a*n*d*ą
 AwLongDiphthong: *l*a*n*d*ą
 PrefixAReductionEarly: *l*a*n*d*ą
+InterStressRaising: *l*a*n*d*ą
 AngloFrisianBrightening: *l*a*n*d*ą
 Breaking: *l*a*n*d*ą
 VelarFricPal: *l*a*n*d*ą
@@ -11642,6 +11789,7 @@ DiphthongLeveling: *l*a*p*p*ô
 EwLongDiphthong: *l*a*p*p*ô
 AwLongDiphthong: *l*a*p*p*ô
 PrefixAReductionEarly: *l*a*p*p*ô
+InterStressRaising: *l*a*p*p*ô
 AngloFrisianBrightening: *l*æ*p*p*ô
 Breaking: *l*æ*p*p*ô
 VelarFricPal: *l*æ*p*p*ô
@@ -11721,6 +11869,7 @@ DiphthongLeveling: *l*ā*s*t*i*j*ă*n*ą
 EwLongDiphthong: *l*ā*s*t*i*j*ă*n*ą
 AwLongDiphthong: *l*ā*s*t*i*j*ă*n*ą
 PrefixAReductionEarly: *l*ā*s*t*i*j*ă*n*ą
+InterStressRaising: *l*ā*s*t*i*j*ă*n*ą
 AngloFrisianBrightening: *l*ā*s*t*i*j*ă*n*ą
 Breaking: *l*ā*s*t*i*j*ă*n*ą
 VelarFricPal: *l*ā*s*t*i*j*ă*n*ą
@@ -11800,6 +11949,7 @@ DiphthongLeveling: *l*ā*d*i*j*ă*n*ą
 EwLongDiphthong: *l*ā*d*i*j*ă*n*ą
 AwLongDiphthong: *l*ā*d*i*j*ă*n*ą
 PrefixAReductionEarly: *l*ā*d*i*j*ă*n*ą
+InterStressRaising: *l*ā*d*i*j*ă*n*ą
 AngloFrisianBrightening: *l*ā*d*i*j*ă*n*ą
 Breaking: *l*ā*d*i*j*ă*n*ą
 VelarFricPal: *l*ā*d*i*j*ă*n*ą
@@ -11879,6 +12029,7 @@ DiphthongLeveling: *l*ēa*b*ą
 EwLongDiphthong: *l*ēa*b*ą
 AwLongDiphthong: *l*ēa*b*ą
 PrefixAReductionEarly: *l*ēa*b*ą
+InterStressRaising: *l*ēa*b*ą
 AngloFrisianBrightening: *l*ēa*b*ą
 Breaking: *l*ēa*b*ą
 VelarFricPal: *l*ēa*b*ą
@@ -11958,6 +12109,7 @@ DiphthongLeveling: *l*i*r*n*ō*j*ă*n*ą
 EwLongDiphthong: *l*i*r*n*ō*j*ă*n*ą
 AwLongDiphthong: *l*i*r*n*ō*j*ă*n*ą
 PrefixAReductionEarly: *l*i*r*n*ō*j*ă*n*ą
+InterStressRaising: *l*i*r*n*ō*j*ă*n*ą
 AngloFrisianBrightening: *l*i*r*n*ō*j*ă*n*ą
 Breaking: *l*io*r*n*ō*j*ă*n*ą
 VelarFricPal: *l*io*r*n*ō*j*ă*n*ą
@@ -12037,6 +12189,7 @@ DiphthongLeveling: *l*e*θ*r*ą
 EwLongDiphthong: *l*e*θ*r*ą
 AwLongDiphthong: *l*e*θ*r*ą
 PrefixAReductionEarly: *l*e*θ*r*ą
+InterStressRaising: *l*e*θ*r*ą
 AngloFrisianBrightening: *l*e*θ*r*ą
 Breaking: *l*e*θ*r*ą
 VelarFricPal: *l*e*θ*r*ą
@@ -12116,6 +12269,7 @@ DiphthongLeveling: *l*ēa*k*ă
 EwLongDiphthong: *l*ēa*k*ă
 AwLongDiphthong: *l*ēa*k*ă
 PrefixAReductionEarly: *l*ēa*k*ă
+InterStressRaising: *l*ēa*k*ă
 AngloFrisianBrightening: *l*ēa*k*ă
 Breaking: *l*ēa*k*ă
 VelarFricPal: *l*ēa*k*ă
@@ -12195,6 +12349,7 @@ DiphthongLeveling: *l*ǣ*t*ă*n*ą
 EwLongDiphthong: *l*ǣ*t*ă*n*ą
 AwLongDiphthong: *l*ǣ*t*ă*n*ą
 PrefixAReductionEarly: *l*ǣ*t*ă*n*ą
+InterStressRaising: *l*ǣ*t*ă*n*ą
 AngloFrisianBrightening: *l*ǣ*t*ă*n*ą
 Breaking: *l*ǣ*t*ă*n*ą
 VelarFricPal: *l*ǣ*t*ă*n*ą
@@ -12274,6 +12429,7 @@ DiphthongLeveling: *l*i*k*k*ō*j*ă*n*ą
 EwLongDiphthong: *l*i*k*k*ō*j*ă*n*ą
 AwLongDiphthong: *l*i*k*k*ō*j*ă*n*ą
 PrefixAReductionEarly: *l*i*k*k*ō*j*ă*n*ą
+InterStressRaising: *l*i*k*k*ō*j*ă*n*ą
 AngloFrisianBrightening: *l*i*k*k*ō*j*ă*n*ą
 Breaking: *l*i*k*k*ō*j*ă*n*ą
 VelarFricPal: *l*i*k*k*ō*j*ă*n*ą
@@ -12353,6 +12509,7 @@ DiphthongLeveling: *x*l*i*d*ą
 EwLongDiphthong: *x*l*i*d*ą
 AwLongDiphthong: *x*l*i*d*ą
 PrefixAReductionEarly: *x*l*i*d*ą
+InterStressRaising: *x*l*i*d*ą
 AngloFrisianBrightening: *x*l*i*d*ą
 Breaking: *x*l*i*d*ą
 VelarFricPal: *x*l*i*d*ą
@@ -12400,7 +12557,7 @@ WGlide: *x*l*i*d
 GhMarker: *x*l*i*d
 GlideDeletion: *x*l*i*d
 Epenthesis: *x*l*i*d
-Orthography: hlid, *hlid
+Orthography: *hlid, hlid
 Surface: hlid
 
 --- life ---
@@ -12432,6 +12589,7 @@ DiphthongLeveling: *l*ī*b*ą
 EwLongDiphthong: *l*ī*b*ą
 AwLongDiphthong: *l*ī*b*ą
 PrefixAReductionEarly: *l*ī*b*ą
+InterStressRaising: *l*ī*b*ą
 AngloFrisianBrightening: *l*ī*b*ą
 Breaking: *l*ī*b*ą
 VelarFricPal: *l*ī*b*ą
@@ -12511,6 +12669,7 @@ DiphthongLeveling: *l*ēo*x*t*i*j*ă*n*ą
 EwLongDiphthong: *l*ēo*x*t*i*j*ă*n*ą
 AwLongDiphthong: *l*ēo*x*t*i*j*ă*n*ą
 PrefixAReductionEarly: *l*ēo*x*t*i*j*ă*n*ą
+InterStressRaising: *l*ēo*x*t*i*j*ă*n*ą
 AngloFrisianBrightening: *l*ēo*x*t*i*j*ă*n*ą
 Breaking: *l*ēo*x*t*i*j*ă*n*ą
 VelarFricPal: *l*ēo*x*t*i*j*ă*n*ą
@@ -12558,7 +12717,7 @@ WGlide: *l*īe*x*t*a*n
 GhMarker: *l*īe*GH*t*a*n
 GlideDeletion: *l*īe*GH*t*a*n
 Epenthesis: *l*īe*x*t*a*n
-Orthography: līehtan, līe*htan
+Orthography: līe*htan, līehtan
 Surface: līehtan
 
 --- lime ---
@@ -12590,6 +12749,7 @@ DiphthongLeveling: *l*ī*m*ą
 EwLongDiphthong: *l*ī*m*ą
 AwLongDiphthong: *l*ī*m*ą
 PrefixAReductionEarly: *l*ī*m*ą
+InterStressRaising: *l*ī*m*ą
 AngloFrisianBrightening: *l*ī*m*ą
 Breaking: *l*ī*m*ą
 VelarFricPal: *l*ī*m*ą
@@ -12669,6 +12829,7 @@ DiphthongLeveling: *l*i*n*d*u
 EwLongDiphthong: *l*i*n*d*u
 AwLongDiphthong: *l*i*n*d*u
 PrefixAReductionEarly: *l*i*n*d*u
+InterStressRaising: *l*i*n*d*u
 AngloFrisianBrightening: *l*i*n*d*u
 Breaking: *l*i*n*d*u
 VelarFricPal: *l*i*n*d*u
@@ -12748,6 +12909,7 @@ DiphthongLeveling: *l*ī*n*ǭ
 EwLongDiphthong: *l*ī*n*ǭ
 AwLongDiphthong: *l*ī*n*ǭ
 PrefixAReductionEarly: *l*ī*n*ǭ
+InterStressRaising: *l*ī*n*ǭ
 AngloFrisianBrightening: *l*ī*n*ǭ
 Breaking: *l*ī*n*ǭ
 VelarFricPal: *l*ī*n*ǭ
@@ -12827,6 +12989,7 @@ DiphthongLeveling: *l*ī*s*t*ǭ
 EwLongDiphthong: *l*ī*s*t*ǭ
 AwLongDiphthong: *l*ī*s*t*ǭ
 PrefixAReductionEarly: *l*ī*s*t*ǭ
+InterStressRaising: *l*ī*s*t*ǭ
 AngloFrisianBrightening: *l*ī*s*t*ǭ
 Breaking: *l*ī*s*t*ǭ
 VelarFricPal: *l*ī*s*t*ǭ
@@ -12906,6 +13069,7 @@ DiphthongLeveling: *l*i*b*ǣ*θ*i
 EwLongDiphthong: *l*i*b*ǣ*θ*i
 AwLongDiphthong: *l*i*b*ǣ*θ*i
 PrefixAReductionEarly: *l*i*b*ǣ*θ*i
+InterStressRaising: *l*i*b*ǣ*θ*i
 AngloFrisianBrightening: *l*i*b*ǣ*θ*i
 Breaking: *l*i*b*ǣ*θ*i
 VelarFricPal: *l*i*b*ǣ*θ*i
@@ -12985,6 +13149,7 @@ DiphthongLeveling: *l*i*b*r*u
 EwLongDiphthong: *l*i*b*r*u
 AwLongDiphthong: *l*i*b*r*u
 PrefixAReductionEarly: *l*i*b*r*u
+InterStressRaising: *l*i*b*r*u
 AngloFrisianBrightening: *l*i*b*r*u
 Breaking: *l*i*b*r*u
 VelarFricPal: *l*i*b*r*u
@@ -13064,6 +13229,7 @@ DiphthongLeveling: *l*ā*θ*ă
 EwLongDiphthong: *l*ā*θ*ă
 AwLongDiphthong: *l*ā*θ*ă
 PrefixAReductionEarly: *l*ā*θ*ă
+InterStressRaising: *l*ā*θ*ă
 AngloFrisianBrightening: *l*ā*θ*ă
 Breaking: *l*ā*θ*ă
 VelarFricPal: *l*ā*θ*ă
@@ -13111,7 +13277,7 @@ WGlide: *l*ā*θ
 GhMarker: *l*ā*θ
 GlideDeletion: *l*ā*θ
 Epenthesis: *l*ā*θ
-Orthography: lāþ, lā*þ
+Orthography: lā*þ, lāþ
 Surface: lāþ
 
 --- lock ---
@@ -13143,6 +13309,7 @@ DiphthongLeveling: *l*o*k*ą
 EwLongDiphthong: *l*o*k*ą
 AwLongDiphthong: *l*o*k*ą
 PrefixAReductionEarly: *l*o*k*ą
+InterStressRaising: *l*o*k*ą
 AngloFrisianBrightening: *l*o*k*ą
 Breaking: *l*o*k*ą
 VelarFricPal: *l*o*k*ą
@@ -13222,6 +13389,7 @@ DiphthongLeveling: *l*o*k*k*ă
 EwLongDiphthong: *l*o*k*k*ă
 AwLongDiphthong: *l*o*k*k*ă
 PrefixAReductionEarly: *l*o*k*k*ă
+InterStressRaising: *l*o*k*k*ă
 AngloFrisianBrightening: *l*o*k*k*ă
 Breaking: *l*o*k*k*ă
 VelarFricPal: *l*o*k*k*ă
@@ -13301,6 +13469,7 @@ DiphthongLeveling: *l*ū*s
 EwLongDiphthong: *l*ū*s
 AwLongDiphthong: *l*ū*s
 PrefixAReductionEarly: *l*ū*s
+InterStressRaising: *l*ū*s
 AngloFrisianBrightening: *l*ū*s
 Breaking: *l*ū*s
 VelarFricPal: *l*ū*s
@@ -13380,6 +13549,7 @@ DiphthongLeveling: *l*u*n*g*a*n*n*j*u
 EwLongDiphthong: *l*u*n*g*a*n*n*j*u
 AwLongDiphthong: *l*u*n*g*a*n*n*j*u
 PrefixAReductionEarly: *l*u*n*g*a*n*n*j*u
+InterStressRaising: *l*u*n*g*a*n*n*j*u
 AngloFrisianBrightening: *l*u*n*g*a*n*n*j*u
 Breaking: *l*u*n*g*a*n*n*j*u
 VelarFricPal: *l*u*n*g*a*n*n*j*u
@@ -13459,6 +13629,7 @@ DiphthongLeveling: *l*u*s*t*u
 EwLongDiphthong: *l*u*s*t*u
 AwLongDiphthong: *l*u*s*t*u
 PrefixAReductionEarly: *l*u*s*t*u
+InterStressRaising: *l*u*s*t*u
 AngloFrisianBrightening: *l*u*s*t*u
 Breaking: *l*u*s*t*u
 VelarFricPal: *l*u*s*t*u
@@ -13538,6 +13709,7 @@ DiphthongLeveling: *l*ēa*g*u
 EwLongDiphthong: *l*ēa*g*u
 AwLongDiphthong: *l*ēa*g*u
 PrefixAReductionEarly: *l*ēa*g*u
+InterStressRaising: *l*ēa*g*u
 AngloFrisianBrightening: *l*ēa*g*u
 Breaking: *l*ēa*g*u
 VelarFricPal: *l*ēa*g*u
@@ -13617,6 +13789,7 @@ DiphthongLeveling: *m*a*k*ō*j*ă*n*ą
 EwLongDiphthong: *m*a*k*ō*j*ă*n*ą
 AwLongDiphthong: *m*a*k*ō*j*ă*n*ą
 PrefixAReductionEarly: *m*a*k*ō*j*ă*n*ą
+InterStressRaising: *m*a*k*ō*j*ă*n*ą
 AngloFrisianBrightening: *m*æ*k*ō*j*ă*n*ą
 Breaking: *m*æ*k*ō*j*ă*n*ą
 VelarFricPal: *m*æ*k*ō*j*ă*n*ą
@@ -13696,6 +13869,7 @@ DiphthongLeveling: *m*a*l*t*ă
 EwLongDiphthong: *m*a*l*t*ă
 AwLongDiphthong: *m*a*l*t*ă
 PrefixAReductionEarly: *m*a*l*t*ă
+InterStressRaising: *m*a*l*t*ă
 AngloFrisianBrightening: *m*æ*l*t*ă
 Breaking: *m*ea*l*t*ă
 VelarFricPal: *m*ea*l*t*ă
@@ -13775,6 +13949,7 @@ DiphthongLeveling: *m*a*n*n*a*s
 EwLongDiphthong: *m*a*n*n*a*s
 AwLongDiphthong: *m*a*n*n*a*s
 PrefixAReductionEarly: *m*a*n*n*a*s
+InterStressRaising: *m*a*n*n*a*s
 AngloFrisianBrightening: *m*a*n*n*æ*s
 Breaking: *m*a*n*n*æ*s
 VelarFricPal: *m*a*n*n*æ*s
@@ -13854,6 +14029,7 @@ DiphthongLeveling: *m*a*r*k*u
 EwLongDiphthong: *m*a*r*k*u
 AwLongDiphthong: *m*a*r*k*u
 PrefixAReductionEarly: *m*a*r*k*u
+InterStressRaising: *m*a*r*k*u
 AngloFrisianBrightening: *m*æ*r*k*u
 Breaking: *m*ea*r*k*u
 VelarFricPal: *m*ea*r*k*u
@@ -13933,6 +14109,7 @@ DiphthongLeveling: *m*a*s*t*ă
 EwLongDiphthong: *m*a*s*t*ă
 AwLongDiphthong: *m*a*s*t*ă
 PrefixAReductionEarly: *m*a*s*t*ă
+InterStressRaising: *m*a*s*t*ă
 AngloFrisianBrightening: *m*æ*s*t*ă
 Breaking: *m*æ*s*t*ă
 VelarFricPal: *m*æ*s*t*ă
@@ -14012,6 +14189,7 @@ DiphthongLeveling: *m*ǣ*l*ą
 EwLongDiphthong: *m*ǣ*l*ą
 AwLongDiphthong: *m*ǣ*l*ą
 PrefixAReductionEarly: *m*ǣ*l*ą
+InterStressRaising: *m*ǣ*l*ą
 AngloFrisianBrightening: *m*ǣ*l*ą
 Breaking: *m*ǣ*l*ą
 VelarFricPal: *m*ǣ*l*ą
@@ -14091,6 +14269,7 @@ DiphthongLeveling: *m*ā*n*i*j*ă*n*ą
 EwLongDiphthong: *m*ā*n*i*j*ă*n*ą
 AwLongDiphthong: *m*ā*n*i*j*ă*n*ą
 PrefixAReductionEarly: *m*ā*n*i*j*ă*n*ą
+InterStressRaising: *m*ā*n*i*j*ă*n*ą
 AngloFrisianBrightening: *m*ā*n*i*j*ă*n*ą
 Breaking: *m*ā*n*i*j*ă*n*ą
 VelarFricPal: *m*ā*n*i*j*ă*n*ą
@@ -14170,6 +14349,7 @@ DiphthongLeveling: *m*a*x*t*i
 EwLongDiphthong: *m*a*x*t*i
 AwLongDiphthong: *m*a*x*t*i
 PrefixAReductionEarly: *m*a*x*t*i
+InterStressRaising: *m*a*x*t*i
 AngloFrisianBrightening: *m*æ*x*t*i
 Breaking: *m*ea*x*t*i
 VelarFricPal: *m*ea*x*t*i
@@ -14249,6 +14429,7 @@ DiphthongLeveling: *m*e*l*u*k
 EwLongDiphthong: *m*e*l*u*k
 AwLongDiphthong: *m*e*l*u*k
 PrefixAReductionEarly: *m*e*l*u*k
+InterStressRaising: *m*e*l*u*k
 AngloFrisianBrightening: *m*e*l*u*k
 Breaking: *m*e*l*u*k
 VelarFricPal: *m*e*l*u*k
@@ -14328,6 +14509,7 @@ DiphthongLeveling: *m*ō*d*ă
 EwLongDiphthong: *m*ō*d*ă
 AwLongDiphthong: *m*ō*d*ă
 PrefixAReductionEarly: *m*ō*d*ă
+InterStressRaising: *m*ō*d*ă
 AngloFrisianBrightening: *m*ō*d*ă
 Breaking: *m*ō*d*ă
 VelarFricPal: *m*ō*d*ă
@@ -14407,6 +14589,7 @@ DiphthongLeveling: *m*ō*d*ǣ*r
 EwLongDiphthong: *m*ō*d*ǣ*r
 AwLongDiphthong: *m*ō*d*ǣ*r
 PrefixAReductionEarly: *m*ō*d*ǣ*r
+InterStressRaising: *m*ō*d*ǣ*r
 AngloFrisianBrightening: *m*ō*d*ǣ*r
 Breaking: *m*ō*d*ǣ*r
 VelarFricPal: *m*ō*d*ǣ*r
@@ -14486,6 +14669,7 @@ DiphthongLeveling: *n*a*g*l*ă
 EwLongDiphthong: *n*a*g*l*ă
 AwLongDiphthong: *n*a*g*l*ă
 PrefixAReductionEarly: *n*a*g*l*ă
+InterStressRaising: *n*a*g*l*ă
 AngloFrisianBrightening: *n*æ*g*l*ă
 Breaking: *n*æ*g*l*ă
 VelarFricPal: *n*æ*g*l*ă
@@ -14533,7 +14717,7 @@ WGlide: *n*æ*ʤ*l
 GhMarker: *n*æ*ʤ*l
 GlideDeletion: *n*æ*ʤ*l
 Epenthesis: *n*æ*ʤ*l
-Orthography: næġl, næ*ġl
+Orthography: næ*ġl, næġl
 Surface: næġl
 
 --- name ---
@@ -14565,6 +14749,7 @@ DiphthongLeveling: *n*a*m*ô
 EwLongDiphthong: *n*a*m*ô
 AwLongDiphthong: *n*a*m*ô
 PrefixAReductionEarly: *n*a*m*ô
+InterStressRaising: *n*a*m*ô
 AngloFrisianBrightening: *n*a*m*ô
 Breaking: *n*a*m*ô
 VelarFricPal: *n*a*m*ô
@@ -14644,6 +14829,7 @@ DiphthongLeveling: *n*a*b*u
 EwLongDiphthong: *n*a*b*u
 AwLongDiphthong: *n*a*b*u
 PrefixAReductionEarly: *n*a*b*u
+InterStressRaising: *n*a*b*u
 AngloFrisianBrightening: *n*æ*b*u
 Breaking: *n*æ*b*u
 VelarFricPal: *n*æ*b*u
@@ -14723,6 +14909,7 @@ DiphthongLeveling: *x*n*e*k*k*ô
 EwLongDiphthong: *x*n*e*k*k*ô
 AwLongDiphthong: *x*n*e*k*k*ô
 PrefixAReductionEarly: *x*n*e*k*k*ô
+InterStressRaising: *x*n*e*k*k*ô
 AngloFrisianBrightening: *x*n*e*k*k*ô
 Breaking: *x*n*e*k*k*ô
 VelarFricPal: *x*n*e*k*k*ô
@@ -14770,7 +14957,7 @@ WGlide: *x*n*e*k*k*a
 GhMarker: *x*n*e*k*k*a
 GlideDeletion: *x*n*e*k*k*a
 Epenthesis: *x*n*e*k*k*a
-Orthography: hnecca, *hnecca
+Orthography: *hnecca, hnecca
 Surface: hnecca
 
 --- need ---
@@ -14802,6 +14989,7 @@ DiphthongLeveling: *n*ēa*d*i
 EwLongDiphthong: *n*ēa*d*i
 AwLongDiphthong: *n*ēa*d*i
 PrefixAReductionEarly: *n*ēa*d*i
+InterStressRaising: *n*ēa*d*i
 AngloFrisianBrightening: *n*ēa*d*i
 Breaking: *n*ēa*d*i
 VelarFricPal: *n*ēa*d*i
@@ -14881,6 +15069,7 @@ DiphthongLeveling: *n*ǣ*d*l*u
 EwLongDiphthong: *n*ǣ*d*l*u
 AwLongDiphthong: *n*ǣ*d*l*u
 PrefixAReductionEarly: *n*ǣ*d*l*u
+InterStressRaising: *n*ǣ*d*l*u
 AngloFrisianBrightening: *n*ǣ*d*l*u
 Breaking: *n*ǣ*d*l*u
 VelarFricPal: *n*ǣ*d*l*u
@@ -14960,6 +15149,7 @@ DiphthongLeveling: *n*e*s*t*ą
 EwLongDiphthong: *n*e*s*t*ą
 AwLongDiphthong: *n*e*s*t*ą
 PrefixAReductionEarly: *n*e*s*t*ą
+InterStressRaising: *n*e*s*t*ą
 AngloFrisianBrightening: *n*e*s*t*ą
 Breaking: *n*e*s*t*ą
 VelarFricPal: *n*e*s*t*ą
@@ -15039,6 +15229,7 @@ DiphthongLeveling: *n*a*t*t*j*ą
 EwLongDiphthong: *n*a*t*t*j*ą
 AwLongDiphthong: *n*a*t*t*j*ą
 PrefixAReductionEarly: *n*a*t*t*j*ą
+InterStressRaising: *n*a*t*t*j*ą
 AngloFrisianBrightening: *n*æ*t*t*j*ą
 Breaking: *n*æ*t*t*j*ą
 VelarFricPal: *n*æ*t*t*j*ą
@@ -15118,6 +15309,7 @@ DiphthongLeveling: *n*a*t*i*l*ǭ
 EwLongDiphthong: *n*a*t*i*l*ǭ
 AwLongDiphthong: *n*a*t*i*l*ǭ
 PrefixAReductionEarly: *n*a*t*i*l*ǭ
+InterStressRaising: *n*a*t*i*l*ǭ
 AngloFrisianBrightening: *n*æ*t*i*l*ǭ
 Breaking: *n*æ*t*i*l*ǭ
 VelarFricPal: *n*æ*t*i*l*ǭ
@@ -15197,6 +15389,7 @@ DiphthongLeveling: *n*a*x*t*i
 EwLongDiphthong: *n*a*x*t*i
 AwLongDiphthong: *n*a*x*t*i
 PrefixAReductionEarly: *n*a*x*t*i
+InterStressRaising: *n*a*x*t*i
 AngloFrisianBrightening: *n*æ*x*t*i
 Breaking: *n*ea*x*t*i
 VelarFricPal: *n*ea*x*t*i
@@ -15276,6 +15469,7 @@ DiphthongLeveling: *m*a*r*ǭ
 EwLongDiphthong: *m*a*r*ǭ
 AwLongDiphthong: *m*a*r*ǭ
 PrefixAReductionEarly: *m*a*r*ǭ
+InterStressRaising: *m*a*r*ǭ
 AngloFrisianBrightening: *m*æ*r*ǭ
 Breaking: *m*æ*r*ǭ
 VelarFricPal: *m*æ*r*ǭ
@@ -15355,6 +15549,7 @@ DiphthongLeveling: *ā*n*ă
 EwLongDiphthong: *ā*n*ă
 AwLongDiphthong: *ā*n*ă
 PrefixAReductionEarly: *ā*n*ă
+InterStressRaising: *ā*n*ă
 AngloFrisianBrightening: *ā*n*ă
 Breaking: *ā*n*ă
 VelarFricPal: *ā*n*ă
@@ -15434,6 +15629,7 @@ DiphthongLeveling: *o*f*n*ă
 EwLongDiphthong: *o*f*n*ă
 AwLongDiphthong: *o*f*n*ă
 PrefixAReductionEarly: *o*f*n*ă
+InterStressRaising: *o*f*n*ă
 AngloFrisianBrightening: *o*f*n*ă
 Breaking: *o*f*n*ă
 VelarFricPal: *o*f*n*ă
@@ -15513,6 +15709,7 @@ DiphthongLeveling: *o*x*s*ô
 EwLongDiphthong: *o*x*s*ô
 AwLongDiphthong: *o*x*s*ô
 PrefixAReductionEarly: *o*x*s*ô
+InterStressRaising: *o*x*s*ô
 AngloFrisianBrightening: *o*x*s*ô
 Breaking: *o*x*s*ô
 VelarFricPal: *o*x*s*ô
@@ -15592,6 +15789,7 @@ DiphthongLeveling: *r*e*g*n*ą
 EwLongDiphthong: *r*e*g*n*ą
 AwLongDiphthong: *r*e*g*n*ą
 PrefixAReductionEarly: *r*e*g*n*ą
+InterStressRaising: *r*e*g*n*ą
 AngloFrisianBrightening: *r*e*g*n*ą
 Breaking: *r*e*g*n*ą
 VelarFricPal: *r*e*g*n*ą
@@ -15639,7 +15837,7 @@ WGlide: *r*e*ʤ*n
 GhMarker: *r*e*ʤ*n
 GlideDeletion: *r*e*ʤ*n
 Epenthesis: *r*e*ʤ*n
-Orthography: reġn, re*ġn
+Orthography: re*ġn, reġn
 Surface: reġn
 
 --- rainbow ---
@@ -15671,6 +15869,7 @@ DiphthongLeveling: *r*e*g*n*ă*b*u*g*ô
 EwLongDiphthong: *r*e*g*n*ă*b*u*g*ô
 AwLongDiphthong: *r*e*g*n*ă*b*u*g*ô
 PrefixAReductionEarly: *r*e*g*n*ă*b*u*g*ô
+InterStressRaising: *r*e*g*n*ă*b*u*g*ô
 AngloFrisianBrightening: *r*e*g*n*ă*b*u*g*ô
 Breaking: *r*e*g*n*ă*b*u*g*ô
 VelarFricPal: *r*e*g*n*ă*b*u*g*ô
@@ -15718,7 +15917,7 @@ WGlide: *r*e*ʤ*n*b*o*g*a
 GhMarker: *r*e*ʤ*n*b*o*g*a
 GlideDeletion: *r*e*ʤ*n*b*o*g*a
 Epenthesis: *r*e*ʤ*n*b*o*g*a
-Orthography: reġnboga, re*ġnboga
+Orthography: re*ġnboga, reġnboga
 Surface: reġnboga
 
 --- raven ---
@@ -15750,6 +15949,7 @@ DiphthongLeveling: *x*r*a*b*n*ă
 EwLongDiphthong: *x*r*a*b*n*ă
 AwLongDiphthong: *x*r*a*b*n*ă
 PrefixAReductionEarly: *x*r*a*b*n*ă
+InterStressRaising: *x*r*a*b*n*ă
 AngloFrisianBrightening: *x*r*æ*b*n*ă
 Breaking: *x*r*æ*b*n*ă
 VelarFricPal: *x*r*æ*b*n*ă
@@ -15797,7 +15997,7 @@ WGlide: *x*r*æ*β*n
 GhMarker: *x*r*æ*β*n
 GlideDeletion: *x*r*æ*β*n
 Epenthesis: *x*r*æ*β*n
-Orthography: hræfn, *hræfn
+Orthography: *hræfn, hræfn
 Surface: hræfn
 
 --- read ---
@@ -15829,6 +16029,7 @@ DiphthongLeveling: *r*ǣ*d*ă*n*ą
 EwLongDiphthong: *r*ǣ*d*ă*n*ą
 AwLongDiphthong: *r*ǣ*d*ă*n*ą
 PrefixAReductionEarly: *r*ǣ*d*ă*n*ą
+InterStressRaising: *r*ǣ*d*ă*n*ą
 AngloFrisianBrightening: *r*ǣ*d*ă*n*ą
 Breaking: *r*ǣ*d*ă*n*ą
 VelarFricPal: *r*ǣ*d*ă*n*ą
@@ -15908,6 +16109,7 @@ DiphthongLeveling: *r*a*s*t*a
 EwLongDiphthong: *r*a*s*t*a
 AwLongDiphthong: *r*a*s*t*a
 PrefixAReductionEarly: *r*a*s*t*a
+InterStressRaising: *r*a*s*t*a
 AngloFrisianBrightening: *r*æ*s*t*æ
 Breaking: *r*æ*s*t*æ
 VelarFricPal: *r*æ*s*t*æ
@@ -15987,6 +16189,7 @@ DiphthongLeveling: *r*ī*d*ă*n*ą
 EwLongDiphthong: *r*ī*d*ă*n*ą
 AwLongDiphthong: *r*ī*d*ă*n*ą
 PrefixAReductionEarly: *r*ī*d*ă*n*ą
+InterStressRaising: *r*ī*d*ă*n*ą
 AngloFrisianBrightening: *r*ī*d*ă*n*ą
 Breaking: *r*ī*d*ă*n*ą
 VelarFricPal: *r*ī*d*ă*n*ą
@@ -16066,6 +16269,7 @@ DiphthongLeveling: *r*i*n*d*u
 EwLongDiphthong: *r*i*n*d*u
 AwLongDiphthong: *r*i*n*d*u
 PrefixAReductionEarly: *r*i*n*d*u
+InterStressRaising: *r*i*n*d*u
 AngloFrisianBrightening: *r*i*n*d*u
 Breaking: *r*i*n*d*u
 VelarFricPal: *r*i*n*d*u
@@ -16145,6 +16349,7 @@ DiphthongLeveling: *r*o*k*k*ă
 EwLongDiphthong: *r*o*k*k*ă
 AwLongDiphthong: *r*o*k*k*ă
 PrefixAReductionEarly: *r*o*k*k*ă
+InterStressRaising: *r*o*k*k*ă
 AngloFrisianBrightening: *r*o*k*k*ă
 Breaking: *r*o*k*k*ă
 VelarFricPal: *r*o*k*k*ă
@@ -16224,6 +16429,7 @@ DiphthongLeveling: *r*ō*d*u
 EwLongDiphthong: *r*ō*d*u
 AwLongDiphthong: *r*ō*d*u
 PrefixAReductionEarly: *r*ō*d*u
+InterStressRaising: *r*ō*d*u
 AngloFrisianBrightening: *r*ō*d*u
 Breaking: *r*ō*d*u
 VelarFricPal: *r*ō*d*u
@@ -16303,6 +16509,7 @@ DiphthongLeveling: *r*ū*m*ą
 EwLongDiphthong: *r*ū*m*ą
 AwLongDiphthong: *r*ū*m*ą
 PrefixAReductionEarly: *r*ū*m*ą
+InterStressRaising: *r*ū*m*ą
 AngloFrisianBrightening: *r*ū*m*ą
 Breaking: *r*ū*m*ą
 VelarFricPal: *r*ū*m*ą
@@ -16382,6 +16589,7 @@ DiphthongLeveling: *r*ā*p*ą
 EwLongDiphthong: *r*ā*p*ą
 AwLongDiphthong: *r*ā*p*ą
 PrefixAReductionEarly: *r*ā*p*ą
+InterStressRaising: *r*ā*p*ą
 AngloFrisianBrightening: *r*ā*p*ą
 Breaking: *r*ā*p*ą
 VelarFricPal: *r*ā*p*ą
@@ -16461,6 +16669,7 @@ DiphthongLeveling: *r*ō*θ*r*ă
 EwLongDiphthong: *r*ō*θ*r*ă
 AwLongDiphthong: *r*ō*θ*r*ă
 PrefixAReductionEarly: *r*ō*θ*r*ă
+InterStressRaising: *r*ō*θ*r*ă
 AngloFrisianBrightening: *r*ō*θ*r*ă
 Breaking: *r*ō*θ*r*ă
 VelarFricPal: *r*ō*θ*r*ă
@@ -16540,6 +16749,7 @@ DiphthongLeveling: *r*i*n*n*ă*n*ą
 EwLongDiphthong: *r*i*n*n*ă*n*ą
 AwLongDiphthong: *r*i*n*n*ă*n*ą
 PrefixAReductionEarly: *r*i*n*n*ă*n*ą
+InterStressRaising: *r*i*n*n*ă*n*ą
 AngloFrisianBrightening: *r*i*n*n*ă*n*ą
 Breaking: *r*i*n*n*ă*n*ą
 VelarFricPal: *r*i*n*n*ă*n*ą
@@ -16619,6 +16829,7 @@ DiphthongLeveling: *r*u*ʤ*i
 EwLongDiphthong: *r*u*ʤ*i
 AwLongDiphthong: *r*u*ʤ*i
 PrefixAReductionEarly: *r*u*ʤ*i
+InterStressRaising: *r*u*ʤ*i
 AngloFrisianBrightening: *r*u*ʤ*i
 Breaking: *r*u*ʤ*i
 VelarFricPal: *r*u*ʤ*i
@@ -16698,6 +16909,7 @@ DiphthongLeveling: *s*e*g*l*ą
 EwLongDiphthong: *s*e*g*l*ą
 AwLongDiphthong: *s*e*g*l*ą
 PrefixAReductionEarly: *s*e*g*l*ą
+InterStressRaising: *s*e*g*l*ą
 AngloFrisianBrightening: *s*e*g*l*ą
 Breaking: *s*e*g*l*ą
 VelarFricPal: *s*e*g*l*ą
@@ -16745,7 +16957,7 @@ WGlide: *s*e*ʤ*l
 GhMarker: *s*e*ʤ*l
 GlideDeletion: *s*e*ʤ*l
 Epenthesis: *s*e*ʤ*l
-Orthography: seġl, se*ġl
+Orthography: se*ġl, seġl
 Surface: seġl
 
 --- sake ---
@@ -16777,6 +16989,7 @@ DiphthongLeveling: *s*a*k*u
 EwLongDiphthong: *s*a*k*u
 AwLongDiphthong: *s*a*k*u
 PrefixAReductionEarly: *s*a*k*u
+InterStressRaising: *s*a*k*u
 AngloFrisianBrightening: *s*æ*k*u
 Breaking: *s*æ*k*u
 VelarFricPal: *s*æ*k*u
@@ -16856,6 +17069,7 @@ DiphthongLeveling: *s*a*l*t*ą
 EwLongDiphthong: *s*a*l*t*ą
 AwLongDiphthong: *s*a*l*t*ą
 PrefixAReductionEarly: *s*a*l*t*ą
+InterStressRaising: *s*a*l*t*ą
 AngloFrisianBrightening: *s*æ*l*t*ą
 Breaking: *s*ea*l*t*ą
 VelarFricPal: *s*ea*l*t*ą
@@ -16935,6 +17149,7 @@ DiphthongLeveling: *s*a*l*b*u
 EwLongDiphthong: *s*a*l*b*u
 AwLongDiphthong: *s*a*l*b*u
 PrefixAReductionEarly: *s*a*l*b*u
+InterStressRaising: *s*a*l*b*u
 AngloFrisianBrightening: *s*æ*l*b*u
 Breaking: *s*ea*l*b*u
 VelarFricPal: *s*ea*l*b*u
@@ -17014,6 +17229,7 @@ DiphthongLeveling: *s*a*p*ą
 EwLongDiphthong: *s*a*p*ą
 AwLongDiphthong: *s*a*p*ą
 PrefixAReductionEarly: *s*a*p*ą
+InterStressRaising: *s*a*p*ą
 AngloFrisianBrightening: *s*æ*p*ą
 Breaking: *s*æ*p*ą
 VelarFricPal: *s*æ*p*ą
@@ -17093,6 +17309,7 @@ DiphthongLeveling: *s*ā*w*i
 EwLongDiphthong: *s*ā*w*i
 AwLongDiphthong: *s*ā*w*i
 PrefixAReductionEarly: *s*ā*w*i
+InterStressRaising: *s*ā*w*i
 AngloFrisianBrightening: *s*ā*w*i
 Breaking: *s*ā*w*i
 VelarFricPal: *s*ā*w*i
@@ -17172,6 +17389,7 @@ DiphthongLeveling: *s*ēa*m*ă
 EwLongDiphthong: *s*ēa*m*ă
 AwLongDiphthong: *s*ēa*m*ă
 PrefixAReductionEarly: *s*ēa*m*ă
+InterStressRaising: *s*ēa*m*ă
 AngloFrisianBrightening: *s*ēa*m*ă
 Breaking: *s*ēa*m*ă
 VelarFricPal: *s*ēa*m*ă
@@ -17251,6 +17469,7 @@ DiphthongLeveling: *s*ō*ʧ*i*j*ă*n*ą
 EwLongDiphthong: *s*ō*ʧ*i*j*ă*n*ą
 AwLongDiphthong: *s*ō*ʧ*i*j*ă*n*ą
 PrefixAReductionEarly: *s*ō*ʧ*i*j*ă*n*ą
+InterStressRaising: *s*ō*ʧ*i*j*ă*n*ą
 AngloFrisianBrightening: *s*ō*ʧ*i*j*ă*n*ą
 Breaking: *s*ō*ʧ*i*j*ă*n*ą
 VelarFricPal: *s*ō*ʧ*i*j*ă*n*ą
@@ -17330,6 +17549,7 @@ DiphthongLeveling: *s*a*n*d*i*j*ă*n*ą
 EwLongDiphthong: *s*a*n*d*i*j*ă*n*ą
 AwLongDiphthong: *s*a*n*d*i*j*ă*n*ą
 PrefixAReductionEarly: *s*a*n*d*i*j*ă*n*ą
+InterStressRaising: *s*a*n*d*i*j*ă*n*ą
 AngloFrisianBrightening: *s*a*n*d*i*j*ă*n*ą
 Breaking: *s*a*n*d*i*j*ă*n*ą
 VelarFricPal: *s*a*n*d*i*j*ă*n*ą
@@ -17409,6 +17629,7 @@ DiphthongLeveling: *s*a*t*t*j*ă*n*ą
 EwLongDiphthong: *s*a*t*t*j*ă*n*ą
 AwLongDiphthong: *s*a*t*t*j*ă*n*ą
 PrefixAReductionEarly: *s*a*t*t*j*ă*n*ą
+InterStressRaising: *s*a*t*t*j*ă*n*ą
 AngloFrisianBrightening: *s*æ*t*t*j*ă*n*ą
 Breaking: *s*æ*t*t*j*ă*n*ą
 VelarFricPal: *s*æ*t*t*j*ă*n*ą
@@ -17488,6 +17709,7 @@ DiphthongLeveling: *s*e*b*u*n
 EwLongDiphthong: *s*e*b*u*n
 AwLongDiphthong: *s*e*b*u*n
 PrefixAReductionEarly: *s*e*b*u*n
+InterStressRaising: *s*e*b*u*n
 AngloFrisianBrightening: *s*e*b*u*n
 Breaking: *s*e*b*u*n
 VelarFricPal: *s*e*b*u*n
@@ -17567,6 +17789,7 @@ DiphthongLeveling: *s*k*a*f*t*ą
 EwLongDiphthong: *s*k*a*f*t*ą
 AwLongDiphthong: *s*k*a*f*t*ą
 PrefixAReductionEarly: *s*k*a*f*t*ą
+InterStressRaising: *s*k*a*f*t*ą
 AngloFrisianBrightening: *s*k*æ*f*t*ą
 Breaking: *s*k*æ*f*t*ą
 VelarFricPal: *s*k*æ*f*t*ą
@@ -17646,6 +17869,7 @@ DiphthongLeveling: *s*k*a*m*u
 EwLongDiphthong: *s*k*a*m*u
 AwLongDiphthong: *s*k*a*m*u
 PrefixAReductionEarly: *s*k*a*m*u
+InterStressRaising: *s*k*a*m*u
 AngloFrisianBrightening: *s*k*a*m*u
 Breaking: *s*k*a*m*u
 VelarFricPal: *s*k*a*m*u
@@ -17725,6 +17949,7 @@ DiphthongLeveling: *ʃ*e*r*ă*n*ą
 EwLongDiphthong: *ʃ*e*r*ă*n*ą
 AwLongDiphthong: *ʃ*e*r*ă*n*ą
 PrefixAReductionEarly: *ʃ*e*r*ă*n*ą
+InterStressRaising: *ʃ*e*r*ă*n*ą
 AngloFrisianBrightening: *ʃ*e*r*ă*n*ą
 Breaking: *ʃ*e*r*ă*n*ą
 VelarFricPal: *ʃ*e*r*ă*n*ą
@@ -17804,6 +18029,7 @@ DiphthongLeveling: *s*k*ā*θ*i
 EwLongDiphthong: *s*k*ā*θ*i
 AwLongDiphthong: *s*k*ā*θ*i
 PrefixAReductionEarly: *s*k*ā*θ*i
+InterStressRaising: *s*k*ā*θ*i
 AngloFrisianBrightening: *s*k*ā*θ*i
 Breaking: *s*k*ā*θ*i
 VelarFricPal: *s*k*ā*θ*i
@@ -17883,6 +18109,7 @@ DiphthongLeveling: *ʃ*ǣ*p*ą
 EwLongDiphthong: *ʃ*ǣ*p*ą
 AwLongDiphthong: *ʃ*ǣ*p*ą
 PrefixAReductionEarly: *ʃ*ǣ*p*ą
+InterStressRaising: *ʃ*ǣ*p*ą
 AngloFrisianBrightening: *ʃ*ǣ*p*ą
 Breaking: *ʃ*ǣ*p*ą
 VelarFricPal: *ʃ*ǣ*p*ą
@@ -17962,6 +18189,7 @@ DiphthongLeveling: *ʃ*e*l*d*u
 EwLongDiphthong: *ʃ*e*l*d*u
 AwLongDiphthong: *ʃ*e*l*d*u
 PrefixAReductionEarly: *ʃ*e*l*d*u
+InterStressRaising: *ʃ*e*l*d*u
 AngloFrisianBrightening: *ʃ*e*l*d*u
 Breaking: *ʃ*e*l*d*u
 VelarFricPal: *ʃ*e*l*d*u
@@ -18041,6 +18269,7 @@ DiphthongLeveling: *ʃ*ī*n*ă*n*ą
 EwLongDiphthong: *ʃ*ī*n*ă*n*ą
 AwLongDiphthong: *ʃ*ī*n*ă*n*ą
 PrefixAReductionEarly: *ʃ*ī*n*ă*n*ą
+InterStressRaising: *ʃ*ī*n*ă*n*ą
 AngloFrisianBrightening: *ʃ*ī*n*ă*n*ą
 Breaking: *ʃ*ī*n*ă*n*ą
 VelarFricPal: *ʃ*ī*n*ă*n*ą
@@ -18120,6 +18349,7 @@ DiphthongLeveling: *s*k*u*b*u*n
 EwLongDiphthong: *s*k*u*b*u*n
 AwLongDiphthong: *s*k*u*b*u*n
 PrefixAReductionEarly: *s*k*u*b*u*n
+InterStressRaising: *s*k*u*b*u*n
 AngloFrisianBrightening: *s*k*u*b*u*n
 Breaking: *s*k*u*b*u*n
 VelarFricPal: *s*k*u*b*u*n
@@ -18199,6 +18429,7 @@ DiphthongLeveling: *s*k*o*f*l*u
 EwLongDiphthong: *s*k*o*f*l*u
 AwLongDiphthong: *s*k*o*f*l*u
 PrefixAReductionEarly: *s*k*o*f*l*u
+InterStressRaising: *s*k*o*f*l*u
 AngloFrisianBrightening: *s*k*o*f*l*u
 Breaking: *s*k*o*f*l*u
 VelarFricPal: *s*k*o*f*l*u
@@ -18278,6 +18509,7 @@ DiphthongLeveling: *s*k*a*w*ō*j*ă*n*ą
 EwLongDiphthong: *s*k*a*w*ō*j*ă*n*ą
 AwLongDiphthong: *s*k*ēa*w*ō*j*ă*n*ą
 PrefixAReductionEarly: *s*k*ēa*w*ō*j*ă*n*ą
+InterStressRaising: *s*k*ēa*w*ō*j*ă*n*ą
 AngloFrisianBrightening: *s*k*ēa*w*ō*j*ă*n*ą
 Breaking: *s*k*ēa*w*ō*j*ă*n*ą
 VelarFricPal: *s*k*ēa*w*ō*j*ă*n*ą
@@ -18357,6 +18589,7 @@ DiphthongLeveling: *s*k*ū*r*u
 EwLongDiphthong: *s*k*ū*r*u
 AwLongDiphthong: *s*k*ū*r*u
 PrefixAReductionEarly: *s*k*ū*r*u
+InterStressRaising: *s*k*ū*r*u
 AngloFrisianBrightening: *s*k*ū*r*u
 Breaking: *s*k*ū*r*u
 VelarFricPal: *s*k*ū*r*u
@@ -18436,6 +18669,7 @@ DiphthongLeveling: *s*ī*d*ǭ
 EwLongDiphthong: *s*ī*d*ǭ
 AwLongDiphthong: *s*ī*d*ǭ
 PrefixAReductionEarly: *s*ī*d*ǭ
+InterStressRaising: *s*ī*d*ǭ
 AngloFrisianBrightening: *s*ī*d*ǭ
 Breaking: *s*ī*d*ǭ
 VelarFricPal: *s*ī*d*ǭ
@@ -18515,6 +18749,7 @@ DiphthongLeveling: *s*i*n*g*w*ă*n*ą
 EwLongDiphthong: *s*i*n*g*w*ă*n*ą
 AwLongDiphthong: *s*i*n*g*w*ă*n*ą
 PrefixAReductionEarly: *s*i*n*g*w*ă*n*ą
+InterStressRaising: *s*i*n*g*w*ă*n*ą
 AngloFrisianBrightening: *s*i*n*g*w*ă*n*ą
 Breaking: *s*i*n*g*w*ă*n*ą
 VelarFricPal: *s*i*n*g*w*ă*n*ą
@@ -18594,6 +18829,7 @@ DiphthongLeveling: *s*a*n*ʤ*i*j*ă*n*ą
 EwLongDiphthong: *s*a*n*ʤ*i*j*ă*n*ą
 AwLongDiphthong: *s*a*n*ʤ*i*j*ă*n*ą
 PrefixAReductionEarly: *s*a*n*ʤ*i*j*ă*n*ą
+InterStressRaising: *s*a*n*ʤ*i*j*ă*n*ą
 AngloFrisianBrightening: *s*a*n*ʤ*i*j*ă*n*ą
 Breaking: *s*a*n*ʤ*i*j*ă*n*ą
 VelarFricPal: *s*a*n*ʤ*i*j*ă*n*ą
@@ -18673,6 +18909,7 @@ DiphthongLeveling: *s*e*t*t*j*ă*n*ą
 EwLongDiphthong: *s*e*t*t*j*ă*n*ą
 AwLongDiphthong: *s*e*t*t*j*ă*n*ą
 PrefixAReductionEarly: *s*e*t*t*j*ă*n*ą
+InterStressRaising: *s*e*t*t*j*ă*n*ą
 AngloFrisianBrightening: *s*e*t*t*j*ă*n*ą
 Breaking: *s*e*t*t*j*ă*n*ą
 VelarFricPal: *s*e*t*t*j*ă*n*ą
@@ -18752,6 +18989,7 @@ DiphthongLeveling: *s*e*x*s
 EwLongDiphthong: *s*e*x*s
 AwLongDiphthong: *s*e*x*s
 PrefixAReductionEarly: *s*e*x*s
+InterStressRaising: *s*e*x*s
 AngloFrisianBrightening: *s*e*x*s
 Breaking: *s*eo*x*s
 VelarFricPal: *s*eo*x*s
@@ -18831,6 +19069,7 @@ DiphthongLeveling: *s*l*a*x*ă*n*ą
 EwLongDiphthong: *s*l*a*x*ă*n*ą
 AwLongDiphthong: *s*l*a*x*ă*n*ą
 PrefixAReductionEarly: *s*l*a*x*ă*n*ą
+InterStressRaising: *s*l*a*x*ă*n*ą
 AngloFrisianBrightening: *s*l*æ*x*ă*n*ą
 Breaking: *s*l*ea*x*ă*n*ą
 VelarFricPal: *s*l*ea*x*ă*n*ą
@@ -18910,6 +19149,7 @@ DiphthongLeveling: *s*l*ǣ*p*ă*n*ą
 EwLongDiphthong: *s*l*ǣ*p*ă*n*ą
 AwLongDiphthong: *s*l*ǣ*p*ă*n*ą
 PrefixAReductionEarly: *s*l*ǣ*p*ă*n*ą
+InterStressRaising: *s*l*ǣ*p*ă*n*ą
 AngloFrisianBrightening: *s*l*ǣ*p*ă*n*ą
 Breaking: *s*l*ǣ*p*ă*n*ą
 VelarFricPal: *s*l*ǣ*p*ă*n*ą
@@ -18989,6 +19229,7 @@ DiphthongLeveling: *s*l*ī*m*ą
 EwLongDiphthong: *s*l*ī*m*ą
 AwLongDiphthong: *s*l*ī*m*ą
 PrefixAReductionEarly: *s*l*ī*m*ą
+InterStressRaising: *s*l*ī*m*ą
 AngloFrisianBrightening: *s*l*ī*m*ą
 Breaking: *s*l*ī*m*ą
 VelarFricPal: *s*l*ī*m*ą
@@ -19068,6 +19309,7 @@ DiphthongLeveling: *s*m*e*r*w*i*j*ă*n*ą
 EwLongDiphthong: *s*m*e*r*w*i*j*ă*n*ą
 AwLongDiphthong: *s*m*e*r*w*i*j*ă*n*ą
 PrefixAReductionEarly: *s*m*e*r*w*i*j*ă*n*ą
+InterStressRaising: *s*m*e*r*w*i*j*ă*n*ą
 AngloFrisianBrightening: *s*m*e*r*w*i*j*ă*n*ą
 Breaking: *s*m*eo*r*w*i*j*ă*n*ą
 VelarFricPal: *s*m*eo*r*w*i*j*ă*n*ą
@@ -19147,6 +19389,7 @@ DiphthongLeveling: *s*n*ā*w*ă
 EwLongDiphthong: *s*n*ā*w*ă
 AwLongDiphthong: *s*n*ā*w*ă
 PrefixAReductionEarly: *s*n*ā*w*ă
+InterStressRaising: *s*n*ā*w*ă
 AngloFrisianBrightening: *s*n*ā*w*ă
 Breaking: *s*n*ā*w*ă
 VelarFricPal: *s*n*ā*w*ă
@@ -19226,6 +19469,7 @@ DiphthongLeveling: *s*o*r*g*u
 EwLongDiphthong: *s*o*r*g*u
 AwLongDiphthong: *s*o*r*g*u
 PrefixAReductionEarly: *s*o*r*g*u
+InterStressRaising: *s*o*r*g*u
 AngloFrisianBrightening: *s*o*r*g*u
 Breaking: *s*o*r*g*u
 VelarFricPal: *s*o*r*g*u
@@ -19305,6 +19549,7 @@ DiphthongLeveling: *s*p*a*n*n*ă*n*ą
 EwLongDiphthong: *s*p*a*n*n*ă*n*ą
 AwLongDiphthong: *s*p*a*n*n*ă*n*ą
 PrefixAReductionEarly: *s*p*a*n*n*ă*n*ą
+InterStressRaising: *s*p*a*n*n*ă*n*ą
 AngloFrisianBrightening: *s*p*a*n*n*ă*n*ą
 Breaking: *s*p*a*n*n*ă*n*ą
 VelarFricPal: *s*p*a*n*n*ă*n*ą
@@ -19384,6 +19629,7 @@ DiphthongLeveling: *s*p*a*n*n*ē
 EwLongDiphthong: *s*p*a*n*n*ē
 AwLongDiphthong: *s*p*a*n*n*ē
 PrefixAReductionEarly: *s*p*a*n*n*ē
+InterStressRaising: *s*p*a*n*n*ē
 AngloFrisianBrightening: *s*p*a*n*n*ē
 Breaking: *s*p*a*n*n*ē
 VelarFricPal: *s*p*a*n*n*ē
@@ -19463,6 +19709,7 @@ DiphthongLeveling: *s*p*a*r*r*ô
 EwLongDiphthong: *s*p*a*r*r*ô
 AwLongDiphthong: *s*p*a*r*r*ô
 PrefixAReductionEarly: *s*p*a*r*r*ô
+InterStressRaising: *s*p*a*r*r*ô
 AngloFrisianBrightening: *s*p*æ*r*r*ô
 Breaking: *s*p*ea*r*r*ô
 VelarFricPal: *s*p*ea*r*r*ô
@@ -19542,6 +19789,7 @@ DiphthongLeveling: *s*p*i*n*n*ă*n*ą
 EwLongDiphthong: *s*p*i*n*n*ă*n*ą
 AwLongDiphthong: *s*p*i*n*n*ă*n*ą
 PrefixAReductionEarly: *s*p*i*n*n*ă*n*ą
+InterStressRaising: *s*p*i*n*n*ă*n*ą
 AngloFrisianBrightening: *s*p*i*n*n*ă*n*ą
 Breaking: *s*p*i*n*n*ă*n*ą
 VelarFricPal: *s*p*i*n*n*ă*n*ą
@@ -19621,6 +19869,7 @@ DiphthongLeveling: *s*p*ō*n*u
 EwLongDiphthong: *s*p*ō*n*u
 AwLongDiphthong: *s*p*ō*n*u
 PrefixAReductionEarly: *s*p*ō*n*u
+InterStressRaising: *s*p*ō*n*u
 AngloFrisianBrightening: *s*p*ō*n*u
 Breaking: *s*p*ō*n*u
 VelarFricPal: *s*p*ō*n*u
@@ -19700,6 +19949,7 @@ DiphthongLeveling: *s*p*r*ā*d*i*j*ă*n*ą
 EwLongDiphthong: *s*p*r*ā*d*i*j*ă*n*ą
 AwLongDiphthong: *s*p*r*ā*d*i*j*ă*n*ą
 PrefixAReductionEarly: *s*p*r*ā*d*i*j*ă*n*ą
+InterStressRaising: *s*p*r*ā*d*i*j*ă*n*ą
 AngloFrisianBrightening: *s*p*r*ā*d*i*j*ă*n*ą
 Breaking: *s*p*r*ā*d*i*j*ă*n*ą
 VelarFricPal: *s*p*r*ā*d*i*j*ă*n*ą
@@ -19779,6 +20029,7 @@ DiphthongLeveling: *s*p*o*r*ô
 EwLongDiphthong: *s*p*o*r*ô
 AwLongDiphthong: *s*p*o*r*ô
 PrefixAReductionEarly: *s*p*o*r*ô
+InterStressRaising: *s*p*o*r*ô
 AngloFrisianBrightening: *s*p*o*r*ô
 Breaking: *s*p*o*r*ô
 VelarFricPal: *s*p*o*r*ô
@@ -19858,6 +20109,7 @@ DiphthongLeveling: *s*t*a*b*ă
 EwLongDiphthong: *s*t*a*b*ă
 AwLongDiphthong: *s*t*a*b*ă
 PrefixAReductionEarly: *s*t*a*b*ă
+InterStressRaising: *s*t*a*b*ă
 AngloFrisianBrightening: *s*t*æ*b*ă
 Breaking: *s*t*æ*b*ă
 VelarFricPal: *s*t*æ*b*ă
@@ -19937,6 +20189,7 @@ DiphthongLeveling: *s*t*u*r*t*i*j*ă*n*ą
 EwLongDiphthong: *s*t*u*r*t*i*j*ă*n*ą
 AwLongDiphthong: *s*t*u*r*t*i*j*ă*n*ą
 PrefixAReductionEarly: *s*t*u*r*t*i*j*ă*n*ą
+InterStressRaising: *s*t*u*r*t*i*j*ă*n*ą
 AngloFrisianBrightening: *s*t*u*r*t*i*j*ă*n*ą
 Breaking: *s*t*u*r*t*i*j*ă*n*ą
 VelarFricPal: *s*t*u*r*t*i*j*ă*n*ą
@@ -20016,6 +20269,7 @@ DiphthongLeveling: *s*t*e*r*b*ă*n*ą
 EwLongDiphthong: *s*t*e*r*b*ă*n*ą
 AwLongDiphthong: *s*t*e*r*b*ă*n*ą
 PrefixAReductionEarly: *s*t*e*r*b*ă*n*ą
+InterStressRaising: *s*t*e*r*b*ă*n*ą
 AngloFrisianBrightening: *s*t*e*r*b*ă*n*ą
 Breaking: *s*t*eo*r*b*ă*n*ą
 VelarFricPal: *s*t*eo*r*b*ă*n*ą
@@ -20095,6 +20349,7 @@ DiphthongLeveling: *s*t*e*l*ă*n*ą
 EwLongDiphthong: *s*t*e*l*ă*n*ą
 AwLongDiphthong: *s*t*e*l*ă*n*ą
 PrefixAReductionEarly: *s*t*e*l*ă*n*ą
+InterStressRaising: *s*t*e*l*ă*n*ą
 AngloFrisianBrightening: *s*t*e*l*ă*n*ą
 Breaking: *s*t*e*l*ă*n*ą
 VelarFricPal: *s*t*e*l*ă*n*ą
@@ -20174,6 +20429,7 @@ DiphthongLeveling: *s*t*e*b*n*u
 EwLongDiphthong: *s*t*e*b*n*u
 AwLongDiphthong: *s*t*e*b*n*u
 PrefixAReductionEarly: *s*t*e*b*n*u
+InterStressRaising: *s*t*e*b*n*u
 AngloFrisianBrightening: *s*t*e*b*n*u
 Breaking: *s*t*e*b*n*u
 VelarFricPal: *s*t*e*b*n*u
@@ -20253,6 +20509,7 @@ DiphthongLeveling: *s*t*e*l*l*i*j*ă*n*ą
 EwLongDiphthong: *s*t*e*l*l*i*j*ă*n*ą
 AwLongDiphthong: *s*t*e*l*l*i*j*ă*n*ą
 PrefixAReductionEarly: *s*t*e*l*l*i*j*ă*n*ą
+InterStressRaising: *s*t*e*l*l*i*j*ă*n*ą
 AngloFrisianBrightening: *s*t*e*l*l*i*j*ă*n*ą
 Breaking: *s*t*e*l*l*i*j*ă*n*ą
 VelarFricPal: *s*t*e*l*l*i*j*ă*n*ą
@@ -20332,6 +20589,7 @@ DiphthongLeveling: *s*t*o*k*k*ă
 EwLongDiphthong: *s*t*o*k*k*ă
 AwLongDiphthong: *s*t*o*k*k*ă
 PrefixAReductionEarly: *s*t*o*k*k*ă
+InterStressRaising: *s*t*o*k*k*ă
 AngloFrisianBrightening: *s*t*o*k*k*ă
 Breaking: *s*t*o*k*k*ă
 VelarFricPal: *s*t*o*k*k*ă
@@ -20411,6 +20669,7 @@ DiphthongLeveling: *s*t*ā*n*ă
 EwLongDiphthong: *s*t*ā*n*ă
 AwLongDiphthong: *s*t*ā*n*ă
 PrefixAReductionEarly: *s*t*ā*n*ă
+InterStressRaising: *s*t*ā*n*ă
 AngloFrisianBrightening: *s*t*ā*n*ă
 Breaking: *s*t*ā*n*ă
 VelarFricPal: *s*t*ā*n*ă
@@ -20490,6 +20749,7 @@ DiphthongLeveling: *s*t*ō*l*ă
 EwLongDiphthong: *s*t*ō*l*ă
 AwLongDiphthong: *s*t*ō*l*ă
 PrefixAReductionEarly: *s*t*ō*l*ă
+InterStressRaising: *s*t*ō*l*ă
 AngloFrisianBrightening: *s*t*ō*l*ă
 Breaking: *s*t*ō*l*ă
 VelarFricPal: *s*t*ō*l*ă
@@ -20569,6 +20829,7 @@ DiphthongLeveling: *s*t*o*r*k*ă
 EwLongDiphthong: *s*t*o*r*k*ă
 AwLongDiphthong: *s*t*o*r*k*ă
 PrefixAReductionEarly: *s*t*o*r*k*ă
+InterStressRaising: *s*t*o*r*k*ă
 AngloFrisianBrightening: *s*t*o*r*k*ă
 Breaking: *s*t*o*r*k*ă
 VelarFricPal: *s*t*o*r*k*ă
@@ -20648,6 +20909,7 @@ DiphthongLeveling: *s*t*o*r*m*ă
 EwLongDiphthong: *s*t*o*r*m*ă
 AwLongDiphthong: *s*t*o*r*m*ă
 PrefixAReductionEarly: *s*t*o*r*m*ă
+InterStressRaising: *s*t*o*r*m*ă
 AngloFrisianBrightening: *s*t*o*r*m*ă
 Breaking: *s*t*o*r*m*ă
 VelarFricPal: *s*t*o*r*m*ă
@@ -20727,6 +20989,7 @@ DiphthongLeveling: *s*t*r*a*w*ą
 EwLongDiphthong: *s*t*r*a*w*ą
 AwLongDiphthong: *s*t*r*ēa*w*ą
 PrefixAReductionEarly: *s*t*r*ēa*w*ą
+InterStressRaising: *s*t*r*ēa*w*ą
 AngloFrisianBrightening: *s*t*r*ēa*w*ą
 Breaking: *s*t*r*ēa*w*ą
 VelarFricPal: *s*t*r*ēa*w*ą
@@ -20806,6 +21069,7 @@ DiphthongLeveling: *s*t*r*ēa*m*ă
 EwLongDiphthong: *s*t*r*ēa*m*ă
 AwLongDiphthong: *s*t*r*ēa*m*ă
 PrefixAReductionEarly: *s*t*r*ēa*m*ă
+InterStressRaising: *s*t*r*ēa*m*ă
 AngloFrisianBrightening: *s*t*r*ēa*m*ă
 Breaking: *s*t*r*ēa*m*ă
 VelarFricPal: *s*t*r*ēa*m*ă
@@ -20885,6 +21149,7 @@ DiphthongLeveling: *s*t*r*a*n*ʤ*i
 EwLongDiphthong: *s*t*r*a*n*ʤ*i
 AwLongDiphthong: *s*t*r*a*n*ʤ*i
 PrefixAReductionEarly: *s*t*r*a*n*ʤ*i
+InterStressRaising: *s*t*r*a*n*ʤ*i
 AngloFrisianBrightening: *s*t*r*a*n*ʤ*i
 Breaking: *s*t*r*a*n*ʤ*i
 VelarFricPal: *s*t*r*a*n*ʤ*i
@@ -20964,6 +21229,7 @@ DiphthongLeveling: *s*t*ō*d*ą
 EwLongDiphthong: *s*t*ō*d*ą
 AwLongDiphthong: *s*t*ō*d*ą
 PrefixAReductionEarly: *s*t*ō*d*ą
+InterStressRaising: *s*t*ō*d*ą
 AngloFrisianBrightening: *s*t*ō*d*ą
 Breaking: *s*t*ō*d*ą
 VelarFricPal: *s*t*ō*d*ą
@@ -21043,6 +21309,7 @@ DiphthongLeveling: *s*u*m*a*r*ă
 EwLongDiphthong: *s*u*m*a*r*ă
 AwLongDiphthong: *s*u*m*a*r*ă
 PrefixAReductionEarly: *s*u*m*a*r*ă
+InterStressRaising: *s*u*m*a*r*ă
 AngloFrisianBrightening: *s*u*m*æ*r*ă
 Breaking: *s*u*m*æ*r*ă
 VelarFricPal: *s*u*m*æ*r*ă
@@ -21122,6 +21389,7 @@ DiphthongLeveling: *s*u*n*n*ǭ
 EwLongDiphthong: *s*u*n*n*ǭ
 AwLongDiphthong: *s*u*n*n*ǭ
 PrefixAReductionEarly: *s*u*n*n*ǭ
+InterStressRaising: *s*u*n*n*ǭ
 AngloFrisianBrightening: *s*u*n*n*ǭ
 Breaking: *s*u*n*n*ǭ
 VelarFricPal: *s*u*n*n*ǭ
@@ -21201,6 +21469,7 @@ DiphthongLeveling: *s*ū*p*ă*n*ą
 EwLongDiphthong: *s*ū*p*ă*n*ą
 AwLongDiphthong: *s*ū*p*ă*n*ą
 PrefixAReductionEarly: *s*ū*p*ă*n*ą
+InterStressRaising: *s*ū*p*ă*n*ą
 AngloFrisianBrightening: *s*ū*p*ă*n*ą
 Breaking: *s*ū*p*ă*n*ą
 VelarFricPal: *s*ū*p*ă*n*ą
@@ -21280,6 +21549,7 @@ DiphthongLeveling: *s*w*a*l*w*ǭ
 EwLongDiphthong: *s*w*a*l*w*ǭ
 AwLongDiphthong: *s*w*a*l*w*ǭ
 PrefixAReductionEarly: *s*w*a*l*w*ǭ
+InterStressRaising: *s*w*a*l*w*ǭ
 AngloFrisianBrightening: *s*w*æ*l*w*ǭ
 Breaking: *s*w*ea*l*w*ǭ
 VelarFricPal: *s*w*ea*l*w*ǭ
@@ -21359,6 +21629,7 @@ DiphthongLeveling: *s*w*a*n*a*s
 EwLongDiphthong: *s*w*a*n*a*s
 AwLongDiphthong: *s*w*a*n*a*s
 PrefixAReductionEarly: *s*w*a*n*a*s
+InterStressRaising: *s*w*a*n*a*s
 AngloFrisianBrightening: *s*w*a*n*æ*s
 Breaking: *s*w*a*n*æ*s
 VelarFricPal: *s*w*a*n*æ*s
@@ -21438,6 +21709,7 @@ DiphthongLeveling: *s*w*e*l*l*ă*n*ą
 EwLongDiphthong: *s*w*e*l*l*ă*n*ą
 AwLongDiphthong: *s*w*e*l*l*ă*n*ą
 PrefixAReductionEarly: *s*w*e*l*l*ă*n*ą
+InterStressRaising: *s*w*e*l*l*ă*n*ą
 AngloFrisianBrightening: *s*w*e*l*l*ă*n*ą
 Breaking: *s*w*e*l*l*ă*n*ą
 VelarFricPal: *s*w*e*l*l*ă*n*ą
@@ -21517,6 +21789,7 @@ DiphthongLeveling: *s*w*i*m*m*ă*n*ą
 EwLongDiphthong: *s*w*i*m*m*ă*n*ą
 AwLongDiphthong: *s*w*i*m*m*ă*n*ą
 PrefixAReductionEarly: *s*w*i*m*m*ă*n*ą
+InterStressRaising: *s*w*i*m*m*ă*n*ą
 AngloFrisianBrightening: *s*w*i*m*m*ă*n*ą
 Breaking: *s*w*i*m*m*ă*n*ą
 VelarFricPal: *s*w*i*m*m*ă*n*ą
@@ -21596,6 +21869,7 @@ DiphthongLeveling: *s*w*ī*n*ą
 EwLongDiphthong: *s*w*ī*n*ą
 AwLongDiphthong: *s*w*ī*n*ą
 PrefixAReductionEarly: *s*w*ī*n*ą
+InterStressRaising: *s*w*ī*n*ą
 AngloFrisianBrightening: *s*w*ī*n*ą
 Breaking: *s*w*ī*n*ą
 VelarFricPal: *s*w*ī*n*ą
@@ -21675,6 +21949,7 @@ DiphthongLeveling: *s*w*e*r*d*ą
 EwLongDiphthong: *s*w*e*r*d*ą
 AwLongDiphthong: *s*w*e*r*d*ą
 PrefixAReductionEarly: *s*w*e*r*d*ą
+InterStressRaising: *s*w*e*r*d*ą
 AngloFrisianBrightening: *s*w*e*r*d*ą
 Breaking: *s*w*eo*r*d*ą
 VelarFricPal: *s*w*eo*r*d*ą
@@ -21754,6 +22029,7 @@ DiphthongLeveling: *t*a*p*p*ă*n
 EwLongDiphthong: *t*a*p*p*ă*n
 AwLongDiphthong: *t*a*p*p*ă*n
 PrefixAReductionEarly: *t*a*p*p*ă*n
+InterStressRaising: *t*a*p*p*ă*n
 AngloFrisianBrightening: *t*æ*p*p*ă*n
 Breaking: *t*æ*p*p*ă*n
 VelarFricPal: *t*æ*p*p*ă*n
@@ -21833,6 +22109,7 @@ DiphthongLeveling: *t*ēa*m*ă
 EwLongDiphthong: *t*ēa*m*ă
 AwLongDiphthong: *t*ēa*m*ă
 PrefixAReductionEarly: *t*ēa*m*ă
+InterStressRaising: *t*ēa*m*ă
 AngloFrisianBrightening: *t*ēa*m*ă
 Breaking: *t*ēa*m*ă
 VelarFricPal: *t*ēa*m*ă
@@ -21912,6 +22189,7 @@ DiphthongLeveling: *θ*e*g*n*ă
 EwLongDiphthong: *θ*e*g*n*ă
 AwLongDiphthong: *θ*e*g*n*ă
 PrefixAReductionEarly: *θ*e*g*n*ă
+InterStressRaising: *θ*e*g*n*ă
 AngloFrisianBrightening: *θ*e*g*n*ă
 Breaking: *θ*e*g*n*ă
 VelarFricPal: *θ*e*g*n*ă
@@ -21959,7 +22237,7 @@ WGlide: *θ*e*ʤ*n
 GhMarker: *θ*e*ʤ*n
 GlideDeletion: *θ*e*ʤ*n
 Epenthesis: *θ*e*ʤ*n
-Orthography: þeġn, þe*ġn, *þeġn, *þe*ġn
+Orthography: þe*ġn, þeġn, *þe*ġn, *þeġn
 Surface: þeġn
 
 --- thanks ---
@@ -21991,6 +22269,7 @@ DiphthongLeveling: *θ*a*n*k*ă
 EwLongDiphthong: *θ*a*n*k*ă
 AwLongDiphthong: *θ*a*n*k*ă
 PrefixAReductionEarly: *θ*a*n*k*ă
+InterStressRaising: *θ*a*n*k*ă
 AngloFrisianBrightening: *θ*a*n*k*ă
 Breaking: *θ*a*n*k*ă
 VelarFricPal: *θ*a*n*k*ă
@@ -22070,6 +22349,7 @@ DiphthongLeveling: *θ*a*k*ą
 EwLongDiphthong: *θ*a*k*ą
 AwLongDiphthong: *θ*a*k*ą
 PrefixAReductionEarly: *θ*a*k*ą
+InterStressRaising: *θ*a*k*ą
 AngloFrisianBrightening: *θ*æ*k*ą
 Breaking: *θ*æ*k*ą
 VelarFricPal: *θ*æ*k*ą
@@ -22149,6 +22429,7 @@ DiphthongLeveling: *θ*ēo*b*ă
 EwLongDiphthong: *θ*ēo*b*ă
 AwLongDiphthong: *θ*ēo*b*ă
 PrefixAReductionEarly: *θ*ēo*b*ă
+InterStressRaising: *θ*ēo*b*ă
 AngloFrisianBrightening: *θ*ēo*b*ă
 Breaking: *θ*ēo*b*ă
 VelarFricPal: *θ*ēo*b*ă
@@ -22228,6 +22509,7 @@ DiphthongLeveling: *θ*i*n*g*ą
 EwLongDiphthong: *θ*i*n*g*ą
 AwLongDiphthong: *θ*i*n*g*ą
 PrefixAReductionEarly: *θ*i*n*g*ą
+InterStressRaising: *θ*i*n*g*ą
 AngloFrisianBrightening: *θ*i*n*g*ą
 Breaking: *θ*i*n*g*ą
 VelarFricPal: *θ*i*n*g*ą
@@ -22307,6 +22589,7 @@ DiphthongLeveling: *θ*a*n*ʧ*i*j*ă*n*ą
 EwLongDiphthong: *θ*a*n*ʧ*i*j*ă*n*ą
 AwLongDiphthong: *θ*a*n*ʧ*i*j*ă*n*ą
 PrefixAReductionEarly: *θ*a*n*ʧ*i*j*ă*n*ą
+InterStressRaising: *θ*a*n*ʧ*i*j*ă*n*ą
 AngloFrisianBrightening: *θ*a*n*ʧ*i*j*ă*n*ą
 Breaking: *θ*a*n*ʧ*i*j*ă*n*ą
 VelarFricPal: *θ*a*n*ʧ*i*j*ă*n*ą
@@ -22386,6 +22669,7 @@ DiphthongLeveling: *θ*u*r*s*t*u
 EwLongDiphthong: *θ*u*r*s*t*u
 AwLongDiphthong: *θ*u*r*s*t*u
 PrefixAReductionEarly: *θ*u*r*s*t*u
+InterStressRaising: *θ*u*r*s*t*u
 AngloFrisianBrightening: *θ*u*r*s*t*u
 Breaking: *θ*u*r*s*t*u
 VelarFricPal: *θ*u*r*s*t*u
@@ -22465,6 +22749,7 @@ DiphthongLeveling: *θ*o*r*n*ă
 EwLongDiphthong: *θ*o*r*n*ă
 AwLongDiphthong: *θ*o*r*n*ă
 PrefixAReductionEarly: *θ*o*r*n*ă
+InterStressRaising: *θ*o*r*n*ă
 AngloFrisianBrightening: *θ*o*r*n*ă
 Breaking: *θ*o*r*n*ă
 VelarFricPal: *θ*o*r*n*ă
@@ -22544,6 +22829,7 @@ DiphthongLeveling: *θ*r*e*s*k*ă*n*ą
 EwLongDiphthong: *θ*r*e*s*k*ă*n*ą
 AwLongDiphthong: *θ*r*e*s*k*ă*n*ą
 PrefixAReductionEarly: *θ*r*e*s*k*ă*n*ą
+InterStressRaising: *θ*r*e*s*k*ă*n*ą
 AngloFrisianBrightening: *θ*r*e*s*k*ă*n*ą
 Breaking: *θ*r*e*s*k*ă*n*ą
 VelarFricPal: *θ*r*e*s*k*ă*n*ą
@@ -22623,6 +22909,7 @@ DiphthongLeveling: *θ*u*n*r*ă
 EwLongDiphthong: *θ*u*n*r*ă
 AwLongDiphthong: *θ*u*n*r*ă
 PrefixAReductionEarly: *θ*u*n*r*ă
+InterStressRaising: *θ*u*n*r*ă
 AngloFrisianBrightening: *θ*u*n*r*ă
 Breaking: *θ*u*n*r*ă
 VelarFricPal: *θ*u*n*r*ă
@@ -22702,6 +22989,7 @@ DiphthongLeveling: *t*ī*d*i
 EwLongDiphthong: *t*ī*d*i
 AwLongDiphthong: *t*ī*d*i
 PrefixAReductionEarly: *t*ī*d*i
+InterStressRaising: *t*ī*d*i
 AngloFrisianBrightening: *t*ī*d*i
 Breaking: *t*ī*d*i
 VelarFricPal: *t*ī*d*i
@@ -22781,6 +23069,7 @@ DiphthongLeveling: *t*i*m*b*r*ą
 EwLongDiphthong: *t*i*m*b*r*ą
 AwLongDiphthong: *t*i*m*b*r*ą
 PrefixAReductionEarly: *t*i*m*b*r*ą
+InterStressRaising: *t*i*m*b*r*ą
 AngloFrisianBrightening: *t*i*m*b*r*ą
 Breaking: *t*i*m*b*r*ą
 VelarFricPal: *t*i*m*b*r*ą
@@ -22860,6 +23149,7 @@ DiphthongLeveling: *t*ā*x*ǭ
 EwLongDiphthong: *t*ā*x*ǭ
 AwLongDiphthong: *t*ā*x*ǭ
 PrefixAReductionEarly: *t*ā*x*ǭ
+InterStressRaising: *t*ā*x*ǭ
 AngloFrisianBrightening: *t*ā*x*ǭ
 Breaking: *t*ā*x*ǭ
 VelarFricPal: *t*ā*x*ǭ
@@ -22939,6 +23229,7 @@ DiphthongLeveling: *t*ā*k*n*ą
 EwLongDiphthong: *t*ā*k*n*ą
 AwLongDiphthong: *t*ā*k*n*ą
 PrefixAReductionEarly: *t*ā*k*n*ą
+InterStressRaising: *t*ā*k*n*ą
 AngloFrisianBrightening: *t*ā*k*n*ą
 Breaking: *t*ā*k*n*ą
 VelarFricPal: *t*ā*k*n*ą
@@ -23018,6 +23309,7 @@ DiphthongLeveling: *t*u*n*g*ǭ
 EwLongDiphthong: *t*u*n*g*ǭ
 AwLongDiphthong: *t*u*n*g*ǭ
 PrefixAReductionEarly: *t*u*n*g*ǭ
+InterStressRaising: *t*u*n*g*ǭ
 AngloFrisianBrightening: *t*u*n*g*ǭ
 Breaking: *t*u*n*g*ǭ
 VelarFricPal: *t*u*n*g*ǭ
@@ -23097,6 +23389,7 @@ DiphthongLeveling: *t*ū*n*ą
 EwLongDiphthong: *t*ū*n*ą
 AwLongDiphthong: *t*ū*n*ą
 PrefixAReductionEarly: *t*ū*n*ą
+InterStressRaising: *t*ū*n*ą
 AngloFrisianBrightening: *t*ū*n*ą
 Breaking: *t*ū*n*ą
 VelarFricPal: *t*ū*n*ą
@@ -23176,6 +23469,7 @@ DiphthongLeveling: *t*r*e*d*ă*n*ą
 EwLongDiphthong: *t*r*e*d*ă*n*ą
 AwLongDiphthong: *t*r*e*d*ă*n*ą
 PrefixAReductionEarly: *t*r*e*d*ă*n*ą
+InterStressRaising: *t*r*e*d*ă*n*ą
 AngloFrisianBrightening: *t*r*e*d*ă*n*ą
 Breaking: *t*r*e*d*ă*n*ą
 VelarFricPal: *t*r*e*d*ă*n*ą
@@ -23255,6 +23549,7 @@ DiphthongLeveling: *t*r*o*g*ą
 EwLongDiphthong: *t*r*o*g*ą
 AwLongDiphthong: *t*r*o*g*ą
 PrefixAReductionEarly: *t*r*o*g*ą
+InterStressRaising: *t*r*o*g*ą
 AngloFrisianBrightening: *t*r*o*g*ą
 Breaking: *t*r*o*g*ą
 VelarFricPal: *t*r*o*g*ą
@@ -23334,6 +23629,7 @@ DiphthongLeveling: *w*a*d*a*n*ą
 EwLongDiphthong: *w*a*d*a*n*ą
 AwLongDiphthong: *w*a*d*a*n*ą
 PrefixAReductionEarly: *w*a*d*a*n*ą
+InterStressRaising: *w*a*d*a*n*ą
 AngloFrisianBrightening: *w*æ*d*a*n*ą
 Breaking: *w*æ*d*a*n*ą
 VelarFricPal: *w*æ*d*a*n*ą
@@ -23413,6 +23709,7 @@ DiphthongLeveling: *w*a*g*n*ă
 EwLongDiphthong: *w*a*g*n*ă
 AwLongDiphthong: *w*a*g*n*ă
 PrefixAReductionEarly: *w*a*g*n*ă
+InterStressRaising: *w*a*g*n*ă
 AngloFrisianBrightening: *w*æ*g*n*ă
 Breaking: *w*æ*g*n*ă
 VelarFricPal: *w*æ*g*n*ă
@@ -23460,7 +23757,7 @@ WGlide: *ʋ*æ*ʤ*n
 GhMarker: *ʋ*æ*ʤ*n
 GlideDeletion: *ʋ*æ*ʤ*n
 Epenthesis: *w*æ*ʤ*n
-Orthography: wæġn, wæ*ġn
+Orthography: wæ*ġn, wæġn
 Surface: wæġn
 
 --- wake ---
@@ -23492,6 +23789,7 @@ DiphthongLeveling: *w*a*k*a*n*ą
 EwLongDiphthong: *w*a*k*a*n*ą
 AwLongDiphthong: *w*a*k*a*n*ą
 PrefixAReductionEarly: *w*a*k*a*n*ą
+InterStressRaising: *w*a*k*a*n*ą
 AngloFrisianBrightening: *w*æ*k*a*n*ą
 Breaking: *w*æ*k*a*n*ą
 VelarFricPal: *w*æ*k*a*n*ą
@@ -23571,6 +23869,7 @@ DiphthongLeveling: *w*a*r*p*ą
 EwLongDiphthong: *w*a*r*p*ą
 AwLongDiphthong: *w*a*r*p*ą
 PrefixAReductionEarly: *w*a*r*p*ą
+InterStressRaising: *w*a*r*p*ą
 AngloFrisianBrightening: *w*æ*r*p*ą
 Breaking: *w*ea*r*p*ą
 VelarFricPal: *w*ea*r*p*ą
@@ -23650,6 +23949,7 @@ DiphthongLeveling: *w*e*r*p*ă*n*ą
 EwLongDiphthong: *w*e*r*p*ă*n*ą
 AwLongDiphthong: *w*e*r*p*ă*n*ą
 PrefixAReductionEarly: *w*e*r*p*ă*n*ą
+InterStressRaising: *w*e*r*p*ă*n*ą
 AngloFrisianBrightening: *w*e*r*p*ă*n*ą
 Breaking: *w*eo*r*p*ă*n*ą
 VelarFricPal: *w*eo*r*p*ă*n*ą
@@ -23729,6 +24029,7 @@ DiphthongLeveling: *w*a*r*t*ǭ
 EwLongDiphthong: *w*a*r*t*ǭ
 AwLongDiphthong: *w*a*r*t*ǭ
 PrefixAReductionEarly: *w*a*r*t*ǭ
+InterStressRaising: *w*a*r*t*ǭ
 AngloFrisianBrightening: *w*æ*r*t*ǭ
 Breaking: *w*ea*r*t*ǭ
 VelarFricPal: *w*ea*r*t*ǭ
@@ -23808,6 +24109,7 @@ DiphthongLeveling: *w*a*s*k*a*n*ą
 EwLongDiphthong: *w*a*s*k*a*n*ą
 AwLongDiphthong: *w*a*s*k*a*n*ą
 PrefixAReductionEarly: *w*a*s*k*a*n*ą
+InterStressRaising: *w*a*s*k*a*n*ą
 AngloFrisianBrightening: *w*æ*s*k*a*n*ą
 Breaking: *w*æ*s*k*a*n*ą
 VelarFricPal: *w*æ*s*k*a*n*ą
@@ -23887,6 +24189,7 @@ DiphthongLeveling: *w*a*t*a*r
 EwLongDiphthong: *w*a*t*a*r
 AwLongDiphthong: *w*a*t*a*r
 PrefixAReductionEarly: *w*a*t*a*r
+InterStressRaising: *w*a*t*a*r
 AngloFrisianBrightening: *w*æ*t*æ*r
 Breaking: *w*æ*t*æ*r
 VelarFricPal: *w*æ*t*æ*r
@@ -23966,6 +24269,7 @@ DiphthongLeveling: *w*a*x*s*ą
 EwLongDiphthong: *w*a*x*s*ą
 AwLongDiphthong: *w*a*x*s*ą
 PrefixAReductionEarly: *w*a*x*s*ą
+InterStressRaising: *w*a*x*s*ą
 AngloFrisianBrightening: *w*æ*x*s*ą
 Breaking: *w*ea*x*s*ą
 VelarFricPal: *w*ea*x*s*ą
@@ -24045,6 +24349,7 @@ DiphthongLeveling: *w*a*x*s*ă*n*ą
 EwLongDiphthong: *w*a*x*s*ă*n*ą
 AwLongDiphthong: *w*a*x*s*ă*n*ą
 PrefixAReductionEarly: *w*a*x*s*ă*n*ą
+InterStressRaising: *w*a*x*s*ă*n*ą
 AngloFrisianBrightening: *w*æ*x*s*ă*n*ą
 Breaking: *w*ea*x*s*ă*n*ą
 VelarFricPal: *w*ea*x*s*ă*n*ą
@@ -24124,6 +24429,7 @@ DiphthongLeveling: *w*e*g*ă
 EwLongDiphthong: *w*e*g*ă
 AwLongDiphthong: *w*e*g*ă
 PrefixAReductionEarly: *w*e*g*ă
+InterStressRaising: *w*e*g*ă
 AngloFrisianBrightening: *w*e*g*ă
 Breaking: *w*e*g*ă
 VelarFricPal: *w*e*g*ă
@@ -24171,7 +24477,7 @@ WGlide: *ʋ*e*ʤ
 GhMarker: *ʋ*e*ʤ
 GlideDeletion: *ʋ*e*ʤ
 Epenthesis: *w*e*ʤ
-Orthography: weġ, we*ġ
+Orthography: we*ġ, weġ
 Surface: weġ
 
 --- weapon ---
@@ -24203,6 +24509,7 @@ DiphthongLeveling: *w*ǣ*p*n*ą
 EwLongDiphthong: *w*ǣ*p*n*ą
 AwLongDiphthong: *w*ǣ*p*n*ą
 PrefixAReductionEarly: *w*ǣ*p*n*ą
+InterStressRaising: *w*ǣ*p*n*ą
 AngloFrisianBrightening: *w*ǣ*p*n*ą
 Breaking: *w*ǣ*p*n*ą
 VelarFricPal: *w*ǣ*p*n*ą
@@ -24282,6 +24589,7 @@ DiphthongLeveling: *w*e*d*r*ą
 EwLongDiphthong: *w*e*d*r*ą
 AwLongDiphthong: *w*e*d*r*ą
 PrefixAReductionEarly: *w*e*d*r*ą
+InterStressRaising: *w*e*d*r*ą
 AngloFrisianBrightening: *w*e*d*r*ą
 Breaking: *w*e*d*r*ą
 VelarFricPal: *w*e*d*r*ą
@@ -24361,6 +24669,7 @@ DiphthongLeveling: *w*e*b*ă*n*ą
 EwLongDiphthong: *w*e*b*ă*n*ą
 AwLongDiphthong: *w*e*b*ă*n*ą
 PrefixAReductionEarly: *w*e*b*ă*n*ą
+InterStressRaising: *w*e*b*ă*n*ą
 AngloFrisianBrightening: *w*e*b*ă*n*ą
 Breaking: *w*e*b*ă*n*ą
 VelarFricPal: *w*e*b*ă*n*ą
@@ -24440,6 +24749,7 @@ DiphthongLeveling: *w*e*θ*r*ă
 EwLongDiphthong: *w*e*θ*r*ă
 AwLongDiphthong: *w*e*θ*r*ă
 PrefixAReductionEarly: *w*e*θ*r*ă
+InterStressRaising: *w*e*θ*r*ă
 AngloFrisianBrightening: *w*e*θ*r*ă
 Breaking: *w*e*θ*r*ă
 VelarFricPal: *w*e*θ*r*ă
@@ -24487,7 +24797,7 @@ WGlide: *ʋ*e*θ*r
 GhMarker: *ʋ*e*θ*r
 GlideDeletion: *ʋ*e*θ*r
 Epenthesis: *w*e*θ*e*r
-Orthography: weþer, we*þer
+Orthography: we*þer, weþer
 Surface: weþer
 
 --- whale ---
@@ -24519,6 +24829,7 @@ DiphthongLeveling: *x*w*a*l*ă
 EwLongDiphthong: *x*w*a*l*ă
 AwLongDiphthong: *x*w*a*l*ă
 PrefixAReductionEarly: *x*w*a*l*ă
+InterStressRaising: *x*w*a*l*ă
 AngloFrisianBrightening: *x*w*æ*l*ă
 Breaking: *x*w*æ*l*ă
 VelarFricPal: *x*w*æ*l*ă
@@ -24566,7 +24877,7 @@ WGlide: *x*ʋ*æ*l
 GhMarker: *x*ʋ*æ*l
 GlideDeletion: *x*ʋ*æ*l
 Epenthesis: *x*w*æ*l
-Orthography: hwæl, *hwæl
+Orthography: *hwæl, hwæl
 Surface: hwæl
 
 --- while ---
@@ -24598,6 +24909,7 @@ DiphthongLeveling: *x*w*ī*l*u
 EwLongDiphthong: *x*w*ī*l*u
 AwLongDiphthong: *x*w*ī*l*u
 PrefixAReductionEarly: *x*w*ī*l*u
+InterStressRaising: *x*w*ī*l*u
 AngloFrisianBrightening: *x*w*ī*l*u
 Breaking: *x*w*ī*l*u
 VelarFricPal: *x*w*ī*l*u
@@ -24645,7 +24957,7 @@ WGlide: *x*ʋ*ī*l
 GhMarker: *x*ʋ*ī*l
 GlideDeletion: *x*ʋ*ī*l
 Epenthesis: *x*w*ī*l
-Orthography: hwīl, *hwīl
+Orthography: *hwīl, hwīl
 Surface: hwīl
 
 --- whine ---
@@ -24677,6 +24989,7 @@ DiphthongLeveling: *x*w*ī*n*ă*n*ą
 EwLongDiphthong: *x*w*ī*n*ă*n*ą
 AwLongDiphthong: *x*w*ī*n*ă*n*ą
 PrefixAReductionEarly: *x*w*ī*n*ă*n*ą
+InterStressRaising: *x*w*ī*n*ă*n*ą
 AngloFrisianBrightening: *x*w*ī*n*ă*n*ą
 Breaking: *x*w*ī*n*ă*n*ą
 VelarFricPal: *x*w*ī*n*ă*n*ą
@@ -24724,7 +25037,7 @@ WGlide: *x*ʋ*ī*n*a*n
 GhMarker: *x*ʋ*ī*n*a*n
 GlideDeletion: *x*ʋ*ī*n*a*n
 Epenthesis: *x*w*ī*n*a*n
-Orthography: hwīnan, *hwīnan
+Orthography: *hwīnan, hwīnan
 Surface: hwīnan
 
 --- whore ---
@@ -24756,6 +25069,7 @@ DiphthongLeveling: *x*ō*r*ǭ
 EwLongDiphthong: *x*ō*r*ǭ
 AwLongDiphthong: *x*ō*r*ǭ
 PrefixAReductionEarly: *x*ō*r*ǭ
+InterStressRaising: *x*ō*r*ǭ
 AngloFrisianBrightening: *x*ō*r*ǭ
 Breaking: *x*ō*r*ǭ
 VelarFricPal: *x*ō*r*ǭ
@@ -24803,7 +25117,7 @@ WGlide: *x*ō*r*e
 GhMarker: *x*ō*r*e
 GlideDeletion: *x*ō*r*e
 Epenthesis: *x*ō*r*e
-Orthography: hōre, *hōre
+Orthography: *hōre, hōre
 Surface: hōre
 
 --- wield ---
@@ -24835,6 +25149,7 @@ DiphthongLeveling: *w*a*l*d*ă*n*ą
 EwLongDiphthong: *w*a*l*d*ă*n*ą
 AwLongDiphthong: *w*a*l*d*ă*n*ą
 PrefixAReductionEarly: *w*a*l*d*ă*n*ą
+InterStressRaising: *w*a*l*d*ă*n*ą
 AngloFrisianBrightening: *w*æ*l*d*ă*n*ą
 Breaking: *w*ea*l*d*ă*n*ą
 VelarFricPal: *w*ea*l*d*ă*n*ą
@@ -24914,6 +25229,7 @@ DiphthongLeveling: *w*ī*b*ą
 EwLongDiphthong: *w*ī*b*ą
 AwLongDiphthong: *w*ī*b*ą
 PrefixAReductionEarly: *w*ī*b*ą
+InterStressRaising: *w*ī*b*ą
 AngloFrisianBrightening: *w*ī*b*ą
 Breaking: *w*ī*b*ą
 VelarFricPal: *w*ī*b*ą
@@ -24993,6 +25309,7 @@ DiphthongLeveling: *w*e*x*t*i
 EwLongDiphthong: *w*e*x*t*i
 AwLongDiphthong: *w*e*x*t*i
 PrefixAReductionEarly: *w*e*x*t*i
+InterStressRaising: *w*e*x*t*i
 AngloFrisianBrightening: *w*e*x*t*i
 Breaking: *w*eo*x*t*i
 VelarFricPal: *w*eo*x*t*i
@@ -25072,6 +25389,7 @@ DiphthongLeveling: *w*e*l*l*j*a*n*ą
 EwLongDiphthong: *w*e*l*l*j*a*n*ą
 AwLongDiphthong: *w*e*l*l*j*a*n*ą
 PrefixAReductionEarly: *w*e*l*l*j*a*n*ą
+InterStressRaising: *w*e*l*l*j*a*n*ą
 AngloFrisianBrightening: *w*e*l*l*j*a*n*ą
 Breaking: *w*e*l*l*j*a*n*ą
 VelarFricPal: *w*e*l*l*j*a*n*ą
@@ -25151,6 +25469,7 @@ DiphthongLeveling: *w*e*l*l*j*ô
 EwLongDiphthong: *w*e*l*l*j*ô
 AwLongDiphthong: *w*e*l*l*j*ô
 PrefixAReductionEarly: *w*e*l*l*j*ô
+InterStressRaising: *w*e*l*l*j*ô
 AngloFrisianBrightening: *w*e*l*l*j*ô
 Breaking: *w*e*l*l*j*ô
 VelarFricPal: *w*e*l*l*j*ô
@@ -25230,6 +25549,7 @@ DiphthongLeveling: *w*i*n*d*ă*n*ą
 EwLongDiphthong: *w*i*n*d*ă*n*ą
 AwLongDiphthong: *w*i*n*d*ă*n*ą
 PrefixAReductionEarly: *w*i*n*d*ă*n*ą
+InterStressRaising: *w*i*n*d*ă*n*ą
 AngloFrisianBrightening: *w*i*n*d*ă*n*ą
 Breaking: *w*i*n*d*ă*n*ą
 VelarFricPal: *w*i*n*d*ă*n*ą
@@ -25309,6 +25629,7 @@ DiphthongLeveling: *w*i*n*t*r*u
 EwLongDiphthong: *w*i*n*t*r*u
 AwLongDiphthong: *w*i*n*t*r*u
 PrefixAReductionEarly: *w*i*n*t*r*u
+InterStressRaising: *w*i*n*t*r*u
 AngloFrisianBrightening: *w*i*n*t*r*u
 Breaking: *w*i*n*t*r*u
 VelarFricPal: *w*i*n*t*r*u
@@ -25388,6 +25709,7 @@ DiphthongLeveling: *w*a*l*d*u
 EwLongDiphthong: *w*a*l*d*u
 AwLongDiphthong: *w*a*l*d*u
 PrefixAReductionEarly: *w*a*l*d*u
+InterStressRaising: *w*a*l*d*u
 AngloFrisianBrightening: *w*æ*l*d*u
 Breaking: *w*ea*l*d*u
 VelarFricPal: *w*ea*l*d*u
@@ -25467,6 +25789,7 @@ DiphthongLeveling: *w*u*n*d*r*ą
 EwLongDiphthong: *w*u*n*d*r*ą
 AwLongDiphthong: *w*u*n*d*r*ą
 PrefixAReductionEarly: *w*u*n*d*r*ą
+InterStressRaising: *w*u*n*d*r*ą
 AngloFrisianBrightening: *w*u*n*d*r*ą
 Breaking: *w*u*n*d*r*ą
 VelarFricPal: *w*u*n*d*r*ą
@@ -25546,6 +25869,7 @@ DiphthongLeveling: *w*o*r*d*ą
 EwLongDiphthong: *w*o*r*d*ą
 AwLongDiphthong: *w*o*r*d*ą
 PrefixAReductionEarly: *w*o*r*d*ą
+InterStressRaising: *w*o*r*d*ą
 AngloFrisianBrightening: *w*o*r*d*ą
 Breaking: *w*o*r*d*ą
 VelarFricPal: *w*o*r*d*ą
@@ -25625,6 +25949,7 @@ DiphthongLeveling: *w*e*r*u*l*d*u
 EwLongDiphthong: *w*e*r*u*l*d*u
 AwLongDiphthong: *w*e*r*u*l*d*u
 PrefixAReductionEarly: *w*e*r*u*l*d*u
+InterStressRaising: *w*e*r*u*l*d*u
 AngloFrisianBrightening: *w*e*r*u*l*d*u
 Breaking: *w*e*r*u*l*d*u
 VelarFricPal: *w*e*r*u*l*d*u
@@ -25704,6 +26029,7 @@ DiphthongLeveling: *w*u*r*m*i
 EwLongDiphthong: *w*u*r*m*i
 AwLongDiphthong: *w*u*r*m*i
 PrefixAReductionEarly: *w*u*r*m*i
+InterStressRaising: *w*u*r*m*i
 AngloFrisianBrightening: *w*u*r*m*i
 Breaking: *w*u*r*m*i
 VelarFricPal: *w*u*r*m*i
@@ -25783,6 +26109,7 @@ DiphthongLeveling: *w*r*i*n*g*ă*n*ą
 EwLongDiphthong: *w*r*i*n*g*ă*n*ą
 AwLongDiphthong: *w*r*i*n*g*ă*n*ą
 PrefixAReductionEarly: *w*r*i*n*g*ă*n*ą
+InterStressRaising: *w*r*i*n*g*ă*n*ą
 AngloFrisianBrightening: *w*r*i*n*g*ă*n*ą
 Breaking: *w*r*i*n*g*ă*n*ą
 VelarFricPal: *w*r*i*n*g*ă*n*ą
@@ -25862,6 +26189,7 @@ DiphthongLeveling: *g*a*r*n*ą
 EwLongDiphthong: *g*a*r*n*ą
 AwLongDiphthong: *g*a*r*n*ą
 PrefixAReductionEarly: *g*a*r*n*ą
+InterStressRaising: *g*a*r*n*ą
 AngloFrisianBrightening: *g*æ*r*n*ą
 Breaking: *g*ea*r*n*ą
 VelarFricPal: *g*ea*r*n*ą
@@ -25941,6 +26269,7 @@ DiphthongLeveling: *j*ǣ*r*ą
 EwLongDiphthong: *j*ǣ*r*ą
 AwLongDiphthong: *j*ǣ*r*ą
 PrefixAReductionEarly: *j*ǣ*r*ą
+InterStressRaising: *j*ǣ*r*ą
 AngloFrisianBrightening: *j*ǣ*r*ą
 Breaking: *j*ǣ*r*ą
 VelarFricPal: *j*ǣ*r*ą
@@ -26020,6 +26349,7 @@ DiphthongLeveling: *j*e*u*k*ą
 EwLongDiphthong: *j*e*u*k*ą
 AwLongDiphthong: *j*e*u*k*ą
 PrefixAReductionEarly: *j*e*u*k*ą
+InterStressRaising: *j*e*u*k*ą
 AngloFrisianBrightening: *j*e*u*k*ą
 Breaking: *j*e*u*k*ą
 VelarFricPal: *j*e*u*k*ą
@@ -26099,6 +26429,7 @@ DiphthongLeveling: *m*a*k*ô
 EwLongDiphthong: *m*a*k*ô
 AwLongDiphthong: *m*a*k*ô
 PrefixAReductionEarly: *m*a*k*ô
+InterStressRaising: *m*a*k*ô
 AngloFrisianBrightening: *m*æ*k*ô
 Breaking: *m*æ*k*ô
 VelarFricPal: *m*æ*k*ô
@@ -26178,6 +26509,7 @@ DiphthongLeveling: *m*a*k*ō*θ*i
 EwLongDiphthong: *m*a*k*ō*θ*i
 AwLongDiphthong: *m*a*k*ō*θ*i
 PrefixAReductionEarly: *m*a*k*ō*θ*i
+InterStressRaising: *m*a*k*ō*θ*i
 AngloFrisianBrightening: *m*æ*k*ō*θ*i
 Breaking: *m*æ*k*ō*θ*i
 VelarFricPal: *m*æ*k*ō*θ*i
@@ -26257,6 +26589,7 @@ DiphthongLeveling: *b*o*r*ô
 EwLongDiphthong: *b*o*r*ô
 AwLongDiphthong: *b*o*r*ô
 PrefixAReductionEarly: *b*o*r*ô
+InterStressRaising: *b*o*r*ô
 AngloFrisianBrightening: *b*o*r*ô
 Breaking: *b*o*r*ô
 VelarFricPal: *b*o*r*ô
@@ -26336,6 +26669,7 @@ DiphthongLeveling: *b*o*r*ō*θ*i
 EwLongDiphthong: *b*o*r*ō*θ*i
 AwLongDiphthong: *b*o*r*ō*θ*i
 PrefixAReductionEarly: *b*o*r*ō*θ*i
+InterStressRaising: *b*o*r*ō*θ*i
 AngloFrisianBrightening: *b*o*r*ō*θ*i
 Breaking: *b*o*r*ō*θ*i
 VelarFricPal: *b*o*r*ō*θ*i
@@ -26415,6 +26749,7 @@ DiphthongLeveling: *l*i*r*n*ô
 EwLongDiphthong: *l*i*r*n*ô
 AwLongDiphthong: *l*i*r*n*ô
 PrefixAReductionEarly: *l*i*r*n*ô
+InterStressRaising: *l*i*r*n*ô
 AngloFrisianBrightening: *l*i*r*n*ô
 Breaking: *l*io*r*n*ô
 VelarFricPal: *l*io*r*n*ô
@@ -26494,6 +26829,7 @@ DiphthongLeveling: *l*i*r*n*ō*θ*i
 EwLongDiphthong: *l*i*r*n*ō*θ*i
 AwLongDiphthong: *l*i*r*n*ō*θ*i
 PrefixAReductionEarly: *l*i*r*n*ō*θ*i
+InterStressRaising: *l*i*r*n*ō*θ*i
 AngloFrisianBrightening: *l*i*r*n*ō*θ*i
 Breaking: *l*io*r*n*ō*θ*i
 VelarFricPal: *l*io*r*n*ō*θ*i
@@ -26573,6 +26909,7 @@ DiphthongLeveling: *l*i*k*k*ô
 EwLongDiphthong: *l*i*k*k*ô
 AwLongDiphthong: *l*i*k*k*ô
 PrefixAReductionEarly: *l*i*k*k*ô
+InterStressRaising: *l*i*k*k*ô
 AngloFrisianBrightening: *l*i*k*k*ô
 Breaking: *l*i*k*k*ô
 VelarFricPal: *l*i*k*k*ô
@@ -26652,6 +26989,7 @@ DiphthongLeveling: *l*i*k*k*ō*θ*i
 EwLongDiphthong: *l*i*k*k*ō*θ*i
 AwLongDiphthong: *l*i*k*k*ō*θ*i
 PrefixAReductionEarly: *l*i*k*k*ō*θ*i
+InterStressRaising: *l*i*k*k*ō*θ*i
 AngloFrisianBrightening: *l*i*k*k*ō*θ*i
 Breaking: *l*i*k*k*ō*θ*i
 VelarFricPal: *l*i*k*k*ō*θ*i
@@ -26731,6 +27069,7 @@ DiphthongLeveling: *s*k*a*w*ô
 EwLongDiphthong: *s*k*a*w*ô
 AwLongDiphthong: *s*k*ēa*w*ô
 PrefixAReductionEarly: *s*k*ēa*w*ô
+InterStressRaising: *s*k*ēa*w*ô
 AngloFrisianBrightening: *s*k*ēa*w*ô
 Breaking: *s*k*ēa*w*ô
 VelarFricPal: *s*k*ēa*w*ô
@@ -26810,6 +27149,7 @@ DiphthongLeveling: *s*k*a*w*ō*θ*i
 EwLongDiphthong: *s*k*a*w*ō*θ*i
 AwLongDiphthong: *s*k*ēa*w*ō*θ*i
 PrefixAReductionEarly: *s*k*ēa*w*ō*θ*i
+InterStressRaising: *s*k*ēa*w*ō*θ*i
 AngloFrisianBrightening: *s*k*ēa*w*ō*θ*i
 Breaking: *s*k*ēa*w*ō*θ*i
 VelarFricPal: *s*k*ēa*w*ō*θ*i
@@ -26892,6 +27232,7 @@ DiphthongLeveling: *x*a*w*j*ą
 EwLongDiphthong: *x*a*w*j*ą
 AwLongDiphthong: *x*a*w*j*ą
 PrefixAReductionEarly: *x*a*w*j*ą
+InterStressRaising: *x*a*w*j*ą
 AngloFrisianBrightening: *x*æ*w*j*ą
 Breaking: *x*æ*w*j*ą
 VelarFricPal: *ç*æ*w*j*ą
@@ -26939,7 +27280,7 @@ WGlide: *ç*e*ʋ
 GhMarker: *ç*e*ʋ
 GlideDeletion: *ç*e*ʋ
 Epenthesis: *ç*e*w
-Orthography: hew, *hew
+Orthography: *hew, hew
 Surface: hew
 
 --- weasel ---
@@ -26971,6 +27312,7 @@ DiphthongLeveling: *w*e*s*l*o*n
 EwLongDiphthong: *w*e*s*l*o*n
 AwLongDiphthong: *w*e*s*l*o*n
 PrefixAReductionEarly: *w*e*s*l*o*n
+InterStressRaising: *w*e*s*l*o*n
 AngloFrisianBrightening: *w*e*s*l*o*n
 Breaking: *w*e*s*l*o*n
 VelarFricPal: *w*e*s*l*o*n
@@ -27053,6 +27395,7 @@ DiphthongLeveling: *b*u
 EwLongDiphthong: *b*u
 AwLongDiphthong: *b*u
 PrefixAReductionEarly: *b*u
+InterStressRaising: *b*u
 AngloFrisianBrightening: *b*u
 Breaking: *b*u
 VelarFricPal: *b*u
@@ -27132,6 +27475,7 @@ DiphthongLeveling: *m*e*r*d*u
 EwLongDiphthong: *m*e*r*d*u
 AwLongDiphthong: *m*e*r*d*u
 PrefixAReductionEarly: *m*e*r*d*u
+InterStressRaising: *m*e*r*d*u
 AngloFrisianBrightening: *m*e*r*d*u
 Breaking: *m*eo*r*d*u
 VelarFricPal: *m*eo*r*d*u
@@ -27211,6 +27555,7 @@ DiphthongLeveling: *t*e*x*u*n
 EwLongDiphthong: *t*e*x*u*n
 AwLongDiphthong: *t*e*x*u*n
 PrefixAReductionEarly: *t*e*x*u*n
+InterStressRaising: *t*e*x*u*n
 AngloFrisianBrightening: *t*e*x*u*n
 Breaking: *t*eo*x*u*n
 VelarFricPal: *t*eo*x*u*n
@@ -27293,6 +27638,7 @@ DiphthongLeveling: *w*ī*θ*i*j*ă
 EwLongDiphthong: *w*ī*θ*i*j*ă
 AwLongDiphthong: *w*ī*θ*i*j*ă
 PrefixAReductionEarly: *w*ī*θ*i*j*ă
+InterStressRaising: *w*ī*θ*i*j*ă
 AngloFrisianBrightening: *w*ī*θ*i*j*ă
 Breaking: *w*ī*θ*i*j*ă
 VelarFricPal: *w*ī*θ*i*j*ă
@@ -27375,6 +27721,7 @@ DiphthongLeveling: *l*ā*β*ǭ
 EwLongDiphthong: *l*ā*β*ǭ
 AwLongDiphthong: *l*ā*β*ǭ
 PrefixAReductionEarly: *l*ā*β*ǭ
+InterStressRaising: *l*ā*β*ǭ
 AngloFrisianBrightening: *l*ā*β*ǭ
 Breaking: *l*ā*β*ǭ
 VelarFricPal: *l*ā*β*ǭ
@@ -27454,6 +27801,7 @@ DiphthongLeveling: *θ*ū*s*u*n*d*ī
 EwLongDiphthong: *θ*ū*s*u*n*d*ī
 AwLongDiphthong: *θ*ū*s*u*n*d*ī
 PrefixAReductionEarly: *θ*ū*s*u*n*d*ī
+InterStressRaising: *θ*ū*s*u*n*d*ī
 AngloFrisianBrightening: *θ*ū*s*u*n*d*ī
 Breaking: *θ*ū*s*u*n*d*ī
 VelarFricPal: *θ*ū*s*u*n*d*ī
@@ -27533,6 +27881,7 @@ DiphthongLeveling: *w*e*s*t*ă*n*ē
 EwLongDiphthong: *w*e*s*t*ă*n*ē
 AwLongDiphthong: *w*e*s*t*ă*n*ē
 PrefixAReductionEarly: *w*e*s*t*ă*n*ē
+InterStressRaising: *w*e*s*t*ă*n*ē
 AngloFrisianBrightening: *w*e*s*t*ă*n*ē
 Breaking: *w*e*s*t*ă*n*ē
 VelarFricPal: *w*e*s*t*ă*n*ē
@@ -27615,6 +27964,7 @@ DiphthongLeveling: *j*e*u*g*ū*θ*i
 EwLongDiphthong: *j*e*u*g*ū*θ*i
 AwLongDiphthong: *j*e*u*g*ū*θ*i
 PrefixAReductionEarly: *j*e*u*g*ū*θ*i
+InterStressRaising: *j*e*u*g*ū*θ*i
 AngloFrisianBrightening: *j*e*u*g*ū*θ*i
 Breaking: *j*e*u*g*ū*θ*i
 VelarFricPal: *j*e*u*g*ū*θ*i
@@ -27697,6 +28047,7 @@ DiphthongLeveling: *f*ū*r*i
 EwLongDiphthong: *f*ū*r*i
 AwLongDiphthong: *f*ū*r*i
 PrefixAReductionEarly: *f*ū*r*i
+InterStressRaising: *f*ū*r*i
 AngloFrisianBrightening: *f*ū*r*i
 Breaking: *f*ū*r*i
 VelarFricPal: *f*ū*r*i
@@ -27776,6 +28127,7 @@ DiphthongLeveling: *s*k*o*l*d*r*u
 EwLongDiphthong: *s*k*o*l*d*r*u
 AwLongDiphthong: *s*k*o*l*d*r*u
 PrefixAReductionEarly: *s*k*o*l*d*r*u
+InterStressRaising: *s*k*o*l*d*r*u
 AngloFrisianBrightening: *s*k*o*l*d*r*u
 Breaking: *s*k*o*l*d*r*u
 VelarFricPal: *s*k*o*l*d*r*u
@@ -27855,6 +28207,7 @@ DiphthongLeveling: *s*i*b*ă
 EwLongDiphthong: *s*i*b*ă
 AwLongDiphthong: *s*i*b*ă
 PrefixAReductionEarly: *s*i*b*ă
+InterStressRaising: *s*i*b*ă
 AngloFrisianBrightening: *s*i*b*ă
 Breaking: *s*i*b*ă
 VelarFricPal: *s*i*b*ă
@@ -27934,6 +28287,7 @@ DiphthongLeveling: *t*a*n*g*u
 EwLongDiphthong: *t*a*n*g*u
 AwLongDiphthong: *t*a*n*g*u
 PrefixAReductionEarly: *t*a*n*g*u
+InterStressRaising: *t*a*n*g*u
 AngloFrisianBrightening: *t*a*n*g*u
 Breaking: *t*a*n*g*u
 VelarFricPal: *t*a*n*g*u
@@ -28016,6 +28370,7 @@ DiphthongLeveling: *x*l*a*x*j*ă*n*ą
 EwLongDiphthong: *x*l*a*x*j*ă*n*ą
 AwLongDiphthong: *x*l*a*x*j*ă*n*ą
 PrefixAReductionEarly: *x*l*a*x*j*ă*n*ą
+InterStressRaising: *x*l*a*x*j*ă*n*ą
 AngloFrisianBrightening: *x*l*æ*x*j*ă*n*ą
 Breaking: *x*l*ea*x*j*ă*n*ą
 VelarFricPal: *x*l*ea*ç*j*ă*n*ą
@@ -28063,7 +28418,7 @@ WGlide: *x*l*ie*ç*a*n
 GhMarker: *x*l*ie*ç*a*n
 GlideDeletion: *x*l*ie*ç*a*n
 Epenthesis: *x*l*ie*ç*a*n
-Orthography: hliehan, hlie*han, *hliehan, *hlie*han
+Orthography: *hliehan, *hlie*han, hliehan, hlie*han
 Surface: hliehan
 
 --- nine ---
@@ -28095,6 +28450,7 @@ DiphthongLeveling: *n*e*w*u*n
 EwLongDiphthong: *n*ēo*w*u*n
 AwLongDiphthong: *n*ēo*w*u*n
 PrefixAReductionEarly: *n*ēo*w*u*n
+InterStressRaising: *n*ēo*w*u*n
 AngloFrisianBrightening: *n*ēo*w*u*n
 Breaking: *n*ēo*w*u*n
 VelarFricPal: *n*ēo*w*u*n
@@ -28174,6 +28530,7 @@ DiphthongLeveling: *r*ēa*ʧ*i
 EwLongDiphthong: *r*ēa*ʧ*i
 AwLongDiphthong: *r*ēa*ʧ*i
 PrefixAReductionEarly: *r*ēa*ʧ*i
+InterStressRaising: *r*ēa*ʧ*i
 AngloFrisianBrightening: *r*ēa*ʧ*i
 Breaking: *r*ēa*ʧ*i
 VelarFricPal: *r*ēa*ʧ*i
@@ -28253,6 +28610,7 @@ DiphthongLeveling: *s*p*a*r*ō*n*ą
 EwLongDiphthong: *s*p*a*r*ō*n*ą
 AwLongDiphthong: *s*p*a*r*ō*n*ą
 PrefixAReductionEarly: *s*p*a*r*ō*n*ą
+InterStressRaising: *s*p*a*r*ō*n*ą
 AngloFrisianBrightening: *s*p*æ*r*ō*n*ą
 Breaking: *s*p*æ*r*ō*n*ą
 VelarFricPal: *s*p*æ*r*ō*n*ą
@@ -28332,6 +28690,7 @@ DiphthongLeveling: *s*p*e*r*u
 EwLongDiphthong: *s*p*e*r*u
 AwLongDiphthong: *s*p*e*r*u
 PrefixAReductionEarly: *s*p*e*r*u
+InterStressRaising: *s*p*e*r*u
 AngloFrisianBrightening: *s*p*e*r*u
 Breaking: *s*p*e*r*u
 VelarFricPal: *s*p*e*r*u
@@ -28411,6 +28770,7 @@ DiphthongLeveling: *θ*r*e*j*e
 EwLongDiphthong: *θ*r*e*j*e
 AwLongDiphthong: *θ*r*e*j*e
 PrefixAReductionEarly: *θ*r*e*j*e
+InterStressRaising: *θ*r*e*j*e
 AngloFrisianBrightening: *θ*r*e*j*e
 Breaking: *θ*r*e*j*e
 VelarFricPal: *θ*r*e*j*e
@@ -28493,6 +28853,7 @@ DiphthongLeveling: *n*a*b*l*ô
 EwLongDiphthong: *n*a*b*l*ô
 AwLongDiphthong: *n*a*b*l*ô
 PrefixAReductionEarly: *n*a*b*l*ô
+InterStressRaising: *n*a*b*l*ô
 AngloFrisianBrightening: *n*æ*b*l*ô
 Breaking: *n*æ*b*l*ô
 VelarFricPal: *n*æ*b*l*ô
@@ -28572,6 +28933,7 @@ DiphthongLeveling: *s*w*e*s*t*ǣ*r
 EwLongDiphthong: *s*w*e*s*t*ǣ*r
 AwLongDiphthong: *s*w*e*s*t*ǣ*r
 PrefixAReductionEarly: *s*w*e*s*t*ǣ*r
+InterStressRaising: *s*w*e*s*t*ǣ*r
 AngloFrisianBrightening: *s*w*e*s*t*ǣ*r
 Breaking: *s*w*e*s*t*ǣ*r
 VelarFricPal: *s*w*e*s*t*ǣ*r
@@ -28654,6 +29016,7 @@ DiphthongLeveling: *s*ā*w*ă*l*u
 EwLongDiphthong: *s*ā*w*ă*l*u
 AwLongDiphthong: *s*ā*w*ă*l*u
 PrefixAReductionEarly: *s*ā*w*ă*l*u
+InterStressRaising: *s*ā*w*ă*l*u
 AngloFrisianBrightening: *s*ā*w*ă*l*u
 Breaking: *s*ā*w*ă*l*u
 VelarFricPal: *s*ā*w*ă*l*u
@@ -28733,6 +29096,7 @@ DiphthongLeveling: *s*t*r*a*w*j*ă*n*ą
 EwLongDiphthong: *s*t*r*a*w*j*ă*n*ą
 AwLongDiphthong: *s*t*r*a*w*j*ă*n*ą
 PrefixAReductionEarly: *s*t*r*a*w*j*ă*n*ą
+InterStressRaising: *s*t*r*a*w*j*ă*n*ą
 AngloFrisianBrightening: *s*t*r*æ*w*j*ă*n*ą
 Breaking: *s*t*r*æ*w*j*ă*n*ą
 VelarFricPal: *s*t*r*æ*w*j*ă*n*ą
@@ -28812,6 +29176,7 @@ DiphthongLeveling: *θ*i*s*t*i*l*ă
 EwLongDiphthong: *θ*i*s*t*i*l*ă
 AwLongDiphthong: *θ*i*s*t*i*l*ă
 PrefixAReductionEarly: *θ*i*s*t*i*l*ă
+InterStressRaising: *θ*i*s*t*i*l*ă
 AngloFrisianBrightening: *θ*i*s*t*i*l*ă
 Breaking: *θ*i*s*t*i*l*ă
 VelarFricPal: *θ*i*s*t*i*l*ă
@@ -28894,6 +29259,7 @@ DiphthongLeveling: *b*o*k*k*ă
 EwLongDiphthong: *b*o*k*k*ă
 AwLongDiphthong: *b*o*k*k*ă
 PrefixAReductionEarly: *b*o*k*k*ă
+InterStressRaising: *b*o*k*k*ă
 AngloFrisianBrightening: *b*o*k*k*ă
 Breaking: *b*o*k*k*ă
 VelarFricPal: *b*o*k*k*ă
@@ -28973,6 +29339,7 @@ DiphthongLeveling: *f*o*g*l*ă
 EwLongDiphthong: *f*o*g*l*ă
 AwLongDiphthong: *f*o*g*l*ă
 PrefixAReductionEarly: *f*o*g*l*ă
+InterStressRaising: *f*o*g*l*ă
 AngloFrisianBrightening: *f*o*g*l*ă
 Breaking: *f*o*g*l*ă
 VelarFricPal: *f*o*g*l*ă
@@ -29052,6 +29419,7 @@ DiphthongLeveling: *m*ō*n*ō*θ
 EwLongDiphthong: *m*ō*n*ō*θ
 AwLongDiphthong: *m*ō*n*ō*θ
 PrefixAReductionEarly: *m*ō*n*ō*θ
+InterStressRaising: *m*ō*n*ō*θ
 AngloFrisianBrightening: *m*ō*n*ō*θ
 Breaking: *m*ō*n*ō*θ
 VelarFricPal: *m*ō*n*ō*θ
@@ -29131,6 +29499,7 @@ DiphthongLeveling: *n*a*s*u
 EwLongDiphthong: *n*a*s*u
 AwLongDiphthong: *n*a*s*u
 PrefixAReductionEarly: *n*a*s*u
+InterStressRaising: *n*a*s*u
 AngloFrisianBrightening: *n*æ*s*u
 Breaking: *n*æ*s*u
 VelarFricPal: *n*æ*s*u
@@ -29210,6 +29579,7 @@ DiphthongLeveling: *r*o*s*t*u
 EwLongDiphthong: *r*o*s*t*u
 AwLongDiphthong: *r*o*s*t*u
 PrefixAReductionEarly: *r*o*s*t*u
+InterStressRaising: *r*o*s*t*u
 AngloFrisianBrightening: *r*o*s*t*u
 Breaking: *r*o*s*t*u
 VelarFricPal: *r*o*s*t*u
@@ -29289,6 +29659,7 @@ DiphthongLeveling: *w*i*d*u*w*ǭ
 EwLongDiphthong: *w*i*d*u*w*ǭ
 AwLongDiphthong: *w*i*d*u*w*ǭ
 PrefixAReductionEarly: *w*i*d*u*w*ǭ
+InterStressRaising: *w*i*d*u*w*ǭ
 AngloFrisianBrightening: *w*i*d*u*w*ǭ
 Breaking: *w*i*d*u*w*ǭ
 VelarFricPal: *w*i*d*u*w*ǭ
@@ -29368,6 +29739,7 @@ DiphthongLeveling: *w*o*l*f*ă
 EwLongDiphthong: *w*o*l*f*ă
 AwLongDiphthong: *w*o*l*f*ă
 PrefixAReductionEarly: *w*o*l*f*ă
+InterStressRaising: *w*o*l*f*ă
 AngloFrisianBrightening: *w*o*l*f*ă
 Breaking: *w*o*l*f*ă
 VelarFricPal: *w*o*l*f*ă
@@ -29447,6 +29819,7 @@ DiphthongLeveling: *w*o*l*l*u
 EwLongDiphthong: *w*o*l*l*u
 AwLongDiphthong: *w*o*l*l*u
 PrefixAReductionEarly: *w*o*l*l*u
+InterStressRaising: *w*o*l*l*u
 AngloFrisianBrightening: *w*o*l*l*u
 Breaking: *w*o*l*l*u
 VelarFricPal: *w*o*l*l*u
@@ -29529,6 +29902,7 @@ DiphthongLeveling: *s*p*e*n*n*i*l*u
 EwLongDiphthong: *s*p*e*n*n*i*l*u
 AwLongDiphthong: *s*p*e*n*n*i*l*u
 PrefixAReductionEarly: *s*p*e*n*n*i*l*u
+InterStressRaising: *s*p*e*n*n*i*l*u
 AngloFrisianBrightening: *s*p*e*n*n*i*l*u
 Breaking: *s*p*e*n*n*i*l*u
 VelarFricPal: *s*p*e*n*n*i*l*u
@@ -29608,6 +29982,7 @@ DiphthongLeveling: *t*i*k*k*ô
 EwLongDiphthong: *t*i*k*k*ô
 AwLongDiphthong: *t*i*k*k*ô
 PrefixAReductionEarly: *t*i*k*k*ô
+InterStressRaising: *t*i*k*k*ô
 AngloFrisianBrightening: *t*i*k*k*ô
 Breaking: *t*i*k*k*ô
 VelarFricPal: *t*i*k*k*ô
@@ -29690,6 +30065,7 @@ DiphthongLeveling: *k*w*i*θ*u
 EwLongDiphthong: *k*w*i*θ*u
 AwLongDiphthong: *k*w*i*θ*u
 PrefixAReductionEarly: *k*w*i*θ*u
+InterStressRaising: *k*w*i*θ*u
 AngloFrisianBrightening: *k*w*i*θ*u
 Breaking: *k*w*i*θ*u
 VelarFricPal: *k*w*i*θ*u
@@ -29737,7 +30113,7 @@ WGlide: *k*ʋ*i*θ*u
 GhMarker: *k*ʋ*i*θ*u
 GlideDeletion: *k*ʋ*i*θ*u
 Epenthesis: *k*w*i*θ*u
-Orthography: cwiþu, cwi*þu
+Orthography: cwi*þu, cwiþu
 Surface: cwiþu
 
 --- shilling ---
@@ -29769,6 +30145,7 @@ DiphthongLeveling: *ʃ*e*l*l*i*n*ă
 EwLongDiphthong: *ʃ*e*l*l*i*n*ă
 AwLongDiphthong: *ʃ*e*l*l*i*n*ă
 PrefixAReductionEarly: *ʃ*e*l*l*i*n*ă
+InterStressRaising: *ʃ*e*l*l*i*n*ă
 AngloFrisianBrightening: *ʃ*e*l*l*i*n*ă
 Breaking: *ʃ*e*l*l*i*n*ă
 VelarFricPal: *ʃ*e*l*l*i*n*ă
@@ -29848,6 +30225,7 @@ DiphthongLeveling: *s*t*r*a*k*ʧ*i*j*ă*n*ą
 EwLongDiphthong: *s*t*r*a*k*ʧ*i*j*ă*n*ą
 AwLongDiphthong: *s*t*r*a*k*ʧ*i*j*ă*n*ą
 PrefixAReductionEarly: *s*t*r*a*k*ʧ*i*j*ă*n*ą
+InterStressRaising: *s*t*r*a*k*ʧ*i*j*ă*n*ą
 AngloFrisianBrightening: *s*t*r*æ*k*ʧ*i*j*ă*n*ą
 Breaking: *s*t*r*æ*k*ʧ*i*j*ă*n*ą
 VelarFricPal: *s*t*r*æ*k*ʧ*i*j*ă*n*ą
@@ -29927,6 +30305,7 @@ DiphthongLeveling: *s*u*n*d*r*ō*j*ă*n*ą
 EwLongDiphthong: *s*u*n*d*r*ō*j*ă*n*ą
 AwLongDiphthong: *s*u*n*d*r*ō*j*ă*n*ą
 PrefixAReductionEarly: *s*u*n*d*r*ō*j*ă*n*ą
+InterStressRaising: *s*u*n*d*r*ō*j*ă*n*ą
 AngloFrisianBrightening: *s*u*n*d*r*ō*j*ă*n*ą
 Breaking: *s*u*n*d*r*ō*j*ă*n*ą
 VelarFricPal: *s*u*n*d*r*ō*j*ă*n*ą
@@ -30006,6 +30385,7 @@ DiphthongLeveling: *w*a*b*s*ă
 EwLongDiphthong: *w*a*b*s*ă
 AwLongDiphthong: *w*a*b*s*ă
 PrefixAReductionEarly: *w*a*b*s*ă
+InterStressRaising: *w*a*b*s*ă
 AngloFrisianBrightening: *w*æ*b*s*ă
 Breaking: *w*æ*b*s*ă
 VelarFricPal: *w*æ*b*s*ă
@@ -30331,6 +30711,8 @@ dew :: *dawwō, hew :: *xawwăną, show :: *skawōjăną, straw :: *strawą, sho
 
 PrefixAReductionEarly: 1
 believe :: *galaubijăną
+
+InterStressRaising: 0
 
 AngloFrisianBrightening: 89
 bake :: *bakaną, ban :: *bannas, bast :: *bastą, bath :: *baθą, beard :: *bardăz, belly :: *balgiz, berry :: *bazjas, brand :: *brandas, calf :: *kalbăz, craft :: *kraftăz, dale :: *dalăz, day :: *dagăz, fall :: *fallăną, fare :: *farăną, fast :: *fastijăną, father :: *fadēr, fern :: *farnăz, flask :: *flaskōn, flax :: *flaxsą, fold :: *falθăną, four :: *fedwōr, gall :: *gallô, grass :: *grasą, grave :: *grabaną, guest :: *gastiz, hail :: *xaglą, hall :: *xallō, hammer :: *xamaras, harm :: *xarmăz, harvest :: *xarbistuz, have :: *xabēθi, haw :: *xagô, hawk :: *xabukăz, hazel :: *xaslăz, hedge :: *xagjăz, hold :: *xaldăną, lade :: *xlaðaną, lap :: *lappô, make :: *makōjăną, malt :: *maltăz, man :: *mannas, march :: *markō, mast :: *mastăz, might :: *maxtiz, nail :: *naglăz, nave :: *nabō, net :: *natją, nettle :: *natilōn, night :: *naxti, nightmare :: *marōn, raven :: *xrabnăz, rest :: *rastōz, sake :: *sakō, salt :: *saltą, salve :: *salbō, sap :: *sapą, set :: *satjăną, shaft :: *skaftą, slay :: *slaxăną, spar :: *sparrô, staff :: *stabăz, summer :: *sumarăz, swallow :: *swalwōn, swan :: *swanas, tap :: *tappăn, thatch :: *θaką, wade :: *wadaną, wain :: *wagnăz, wake :: *wakaną, warp :: *warpą, wart :: *wartōn, wash :: *waskaną, water :: *watōr, wax :: *waxsą, wax :: *waxsăną, whale :: *xwalăz, wield :: *waldăną, wold :: *walθuz, yarn :: *garną, make (iptv.2sg) :: *makô, make (3sg) :: *makōθi, hay :: *xawwją, laugh :: *xlaxjăną, spare :: *sparēną, navel :: *nablô, strew :: *strawjăną, nose :: *nasō, stretch :: *strakkijăną, wasp :: *wabsăz
