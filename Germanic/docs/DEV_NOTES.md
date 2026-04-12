@@ -17798,3 +17798,394 @@ This correctly handles:
 
 **Verification complete:** The rule is ready for use. TSV can now use `wir-aldu` 
 as PROTOFORM instead of pre-computed `wer-uldu`.
+
+---
+
+## §14.7 OE þūsend 'thousand': Compound Analysis (2026-04-12)
+
+### Initial Problem Statement
+
+| Proto-Form | FST Output | Expected OE |
+|------------|------------|-------------|
+| `*θūs-undī` | `þūsynde` | `þūsend` |
+
+The FST produces `þūsynde` but the expected OE form is `þūsend`. Two issues:
+
+1. **Vowel quality**: FST gives `y` (from i-umlaut `*u → *y`), but OE has `e`
+2. **Final vowel**: FST preserves final `-e`, but expected form has no final vowel
+
+### Trace Analysis
+
+```
+ProtoInput: *θ*ū*s*u*n*d*ī
+...
+IUmlaut: *θ*ū*s*y*n*d*ī     ← *u → *y via i-umlaut
+...
+HighVowelApocope: *θ*ū*s*y*n*d*ī  ← final *ī NOT deleted
+...
+Surface: þūsynde
+```
+
+The compound marker `-` is stripped during normalization, so the FST sees 
+`θūsundī` as a single unit, not a compound.
+
+### Preliminary Observations
+
+**Wiktionary etymology:**
+- PGmc `*þūsundī` (ī/jō-stem, nom.sg.)
+- PWGmc `*þūsundi` (with SHORT final `-i`, not long `-ī`)
+- OE `þūsend`
+
+**Cross-Germanic comparison:**
+- OS `thūsund` — keeps `u`
+- OD `thūsunt` — keeps `u`
+- OE `þūsend` — has `e`, not `y`
+
+The OE `e` (not `y`) is unexpected. Standard i-umlaut `*u → *y` should apply.
+Either:
+1. OE `þūsend` is analogical (leveled from a case without umlaut?)
+2. There's a special sound change `*u → e` in this environment
+3. The medial vowel was already `*e` at some pre-OE stage
+
+### Issues with Current TSV
+
+1. **Long final vowel**: TSV has `*θūs-undī` with long `*ī`, but PWGmc shows 
+   short `*-i`. The `OEHighVowelApocope` rule only deletes short `*i/*u/*ų`.
+
+2. **Compound not parsed**: The hyphen is stripped by normalization, so 
+   compound-specific rules don't apply.
+
+### Research Needed
+
+- What do R/T, Fulk, Campbell say about `þūsend` etymology?
+- Is there a documented `*u → e` (not `*y`) change in certain contexts?
+- What is the correct proto-form for FST input?
+
+---
+
+
+### Research Findings
+
+#### Source 1: Fulk, *Comparative Grammar of Early Germanic* (§10.6)
+
+> "The PGmc. word is reconstructed as *þūsund-, a compound of *þūs- < PIE 
+> *tū-s- (cf. Skt. tavás- 'strong', Lat. tōtus 'all', OE ge-þūf 'thriving') 
+> and *xund- '100', hence with the meaning 'strong hundred'."
+
+**Critical observation**: Fulk notes that `þūsend` is inflected differently 
+across Germanic:
+- Gothic: **jō-stem** (þūsundi)
+- ON: **i-stem** (þúsund)  
+- **OE: neuter a-stem** (þūsend)
+- OS: indeclinable (thūsund)
+- OHG: ō-stem or neut. a-stem (dūsunt)
+
+This is significant: OE restructured the word as a **neuter a-stem**, 
+losing the original jō-stem inflection that would have carried the 
+umlauting `-ī`.
+
+#### Source 2: Kroonen, *EDPG* (p.554)
+
+> **\*þūsundī-** f. 'thousand' — Go. þūsundi f. 'id.', ON þúsund f. 'id.', 
+> ... **OE þūsend num. 'id.'**, E thousand...
+
+Kroonen reconstructs PGmc as `*þūsundī-` (feminine jō-stem), but notes 
+OE `þūsend` directly — confirming the OE form has no final vowel and 
+no umlauted medial vowel.
+
+#### Source 3: Campbell, *Old English Grammar* (§689, §203)
+
+§689: "Þūsend thousand, is a **neut. noun**, g.s. -es, d.s. -e, n.a.p. 
+unchanged or -u (-o, -a), g.p. -a (rarely -ra), d.p. -um."
+
+§203: Campbell discusses compounds with `þūs-` and notes that `þyslic` 
+(beside `þuslic`) 'such' shows the alternation `y ~ u`, demonstrating 
+that i-umlaut of `u → y` CAN occur in this element when followed by 
+an umlauting suffix (the `-lic` suffix contains a front vowel).
+
+**Key note** (§203): "Only in this word [þyslic] is the mutation of the 
+medial -u- recorded as y."
+
+#### Source 4: R/T, *Linguistic History vol.2*
+
+No specific discussion of `þūsend` vowel development found.
+
+### Analysis
+
+1. **Paradigm restructuring**: PGmc `*þūsundī-` (jō-stem) was reanalyzed 
+   in OE as a neuter a-stem. This removed the final `-ī` that would 
+   trigger i-umlaut.
+
+2. **The medial `u → e` problem**: Even if the final `-ī` was lost early, 
+   the medial `u` should remain as `u` (as it does in OS `thūsund`, 
+   OHG `dūsunt`). The OE `e` is unexplained by regular sound change.
+
+3. **Possible explanations for `e`**:
+   - (a) **Analogical leveling** from oblique cases with umlauted vowel, 
+     but with `e` instead of `y`?
+   - (b) **Unstressed vowel reduction**: The second syllable is unstressed; 
+     perhaps `u → e` is a weakening specific to this position?
+   - (c) **Contamination** from related forms like `sendan` 'to send'?
+     (The TSV notes: "sendan 'to send' is wrong lexeme" — this may be 
+     folk etymology at work historically)
+
+4. **Cross-Germanic evidence**:
+   | Language | Form | Medial V | Final V |
+   |----------|------|----------|---------|
+   | Gothic | þūsundi | u | i |
+   | ON | þúsund | u | — |
+   | OS | thūsund | u | — |
+   | OHG | dūsunt | u | — |
+   | **OE** | **þūsend** | **e** | **—** |
+
+   Only OE has `e`. This is an OE-specific innovation, not a regular 
+   inherited development.
+
+### Conclusion
+
+The OE form `þūsend` with medial `e` appears to be **irregular/analogical**, 
+not the result of regular i-umlaut (which would give `*þȳsend` or `*þysend`).
+
+**FST options**:
+
+1. **Use `*θūsund` as PROTOFORM** (without final `-ī`)
+   - Predicts: `*þūsund` → keeps `u` → wrong (OE has `e`)
+   - Would need a special rule for unstressed `u → e`
+
+2. **Use `*θūsendi` as PROTOFORM** (pre-applying the vowel change)
+   - Predicts: `*þūsendi` → `þūsend` (final i deletes) ✓
+   - This is an ad hoc solution, not modeling the actual history
+
+3. **Mark as documented exception**
+   - Accept that `þūsend` is irregular and the FST cannot derive it 
+     from regular sound changes
+
+**Recommendation**: Option 2 (use `*θūsendi`) provides a working transponent, 
+though it doesn't model the actual historical development. The note should 
+document that the medial `e` is an OE-specific analogical development.
+
+---
+
+### Extended Research: The Origin of Medial `-e-` (2026-04-12)
+
+The user asked: "If it is analogical, what was the Vorbild (model)?" This 
+requires investigating whether there is a four-part proportional analogy 
+or some other mechanism.
+
+#### Evidence from Luick §198
+
+Luick §198c describes the critical parallel case of **OE ærende 'errand'**:
+
+> "ws. ærende 'Botschaft' (vgl. as. ārundi und § 163)"
+
+The derivation is:
+- PGmc `*arundiiu` (with syllabic `-iiV` from Sievers' Law)
+- The medial `u` underwent i-umlaut → `*y`
+- Then `*y → *i → e` in unstressed syllables (§369: "æ, e, and i fell 
+  together in a sound written e in unaccented syllables")
+
+**Key insight**: The `-und-` → `-end-` change in `ærende` provides a model 
+for understanding `þūsend`. Both words have:
+- Original medial `-und-`
+- Attested OE medial `-end-`
+
+#### Campbell §369: Unstressed Vowel Merger
+
+Campbell §369 states:
+> "æ, e, and i fell together in a sound written e in unaccented syllables."
+
+This means that AFTER i-umlaut converted `*u → *y` (which would have been 
+written `i` or `y`), the resulting high front vowel would have merged with 
+`e` in unstressed position.
+
+However, this only applies if there WAS an i-umlaut trigger.
+
+#### The Problem: Missing Umlaut Trigger in þūsend
+
+For `ærende`, the Sievers' Law `-iiV` suffix provided the umlaut trigger.
+For `þūsend`, the situation is more complex:
+
+1. **Gothic þūsundi** (jō-stem): The nom.sg. `-ī` would trigger i-umlaut
+2. **OE restructured as neuter a-stem**: Lost the `-ī` ending
+
+If OE took the restructured a-stem nom.sg. (without `-ī`) BEFORE i-umlaut 
+applied, then there was no trigger, and we'd expect `*þūsund` (as in OS, OHG).
+
+If OE preserved some forms with the jō-stem `-ī` long enough for i-umlaut 
+to apply, then we'd expect `*þȳsend` or `*þysend` (with `y`), not `þūsend`.
+
+The attested OE `þūsend` with `e` (not `y` or `u`) is therefore puzzling.
+
+#### Hypothesis 1: Analogical Leveling from ærende-Type Words
+
+The `-end-` in `þūsend` may be analogical to the productive class of 
+words ending in `-end`, including:
+
+1. **Agent nouns** (present participle forms): `hǣlend` 'saviour', 
+   `wealdend` 'ruler', `wigend` 'warrior' (Campbell §634)
+2. **Words with original `-und-`**: `ærende` 'errand' < `*arundiiu`
+
+**Proportional analogy** (four-part):
+```
+*arundi : ærende :: *þūsundi : X
+                    X = þūsend
+```
+
+This would explain why the vowel is `e` specifically (not `y` or `u`):
+the model words all had medial `-e-` by the time the analogy applied.
+
+#### Hypothesis 2: Unstressed u → e in Certain Positions
+
+Campbell §373-374 discusses unstressed `u → o` (not `e`). This doesn't 
+directly explain `þūsend`.
+
+However, **Luick §492** (p. 610) groups `þūsend` with `ærende`:
+
+> "und den nach diesen Mustern umgebildeten Formen thousand 
+> 'tausend', erand(e) 'Botschaft' (ae. pūsend, ærende)"
+
+This suggests that Luick considered `þūsend` to have been **reshaped on 
+the model of** words like `ærende` — supporting the analogical hypothesis.
+
+#### Hypothesis 3: Folk Etymology with -end Agent Suffix
+
+OE speakers may have reanalyzed `þūsund` as if it contained the 
+productive `-end` agent suffix (from present participles). This would 
+be a folk etymological reanalysis:
+
+- `*þūs-und` → reanalyzed as `þūs-end` (as if "the strong one" or similar)
+
+This is speculative but would explain the specific vowel quality `e`.
+
+#### Kluge-Seebold's Entry
+
+Kluge-Seebold *Etymologisches Wörterbuch* confirms:
+> "ae. þūsend"
+
+The entry notes that the OE form has `e`, not `u`. It reconstructs 
+PGmc `*þūsundi-` but doesn't explain the OE vowel specifically.
+
+#### Cross-Germanic Summary
+
+| Language | Form | Medial V | Morphology |
+|----------|------|----------|------------|
+| Gothic | þūsundi | u | jō-stem |
+| ON | þúsund | u | i-stem |
+| OS | thūsund | u | indeclinable |
+| OHG | dūsunt | u | ō-stem/a-stem |
+| **OE** | **þūsend** | **e** | **neuter a-stem** |
+
+Only OE has medial `e`. This is **OE-specific**.
+
+#### Conclusion: The Vorbild
+
+The most likely explanation is **analogical leveling** to the pattern 
+of words with `-end-` < earlier `-und-` (via i-umlaut and unstressed 
+vowel reduction), particularly `ærende` 'errand'.
+
+The four-part proportional analogy:
+```
+earlier *arundi → ærende (with regular i-umlaut + reduction)
+-----------------------------------------------------------
+                         ↓ (analogical model)
+earlier *þūsundi → þūsend (irregular; modeled on ærende pattern)
+```
+
+The key difference:
+- `ærende` had a Sievers' Law environment (`*-iiV`) that triggered 
+  regular i-umlaut of medial `u → y → e`
+- `þūsend` did NOT have this environment after paradigm restructuring, 
+  but adopted the `-end` shape analogically
+
+**This is NOT regular phonology.** The FST cannot derive `þūsend` from 
+`*þūsundī` by regular sound changes. The `e` is an analogical innovation 
+specific to Old English.
+
+#### Could Regular I-Umlaut Have Applied? (Addressing the -ī → -y → -e Pathway)
+
+The user asked: "Is there no possibility that the -ī triggered the change 
+of u to y and that this later became e like in 'errand' and that the -ī 
+was lost later?"
+
+This is a reasonable hypothesis, but it **cannot work** for `þūsend` due 
+to "double umlaut" in trisyllabics.
+
+**The Double Umlaut Problem (Luick §198, Campbell §203)**
+
+In trisyllabic words with the structure **V₁-u-ī**, BOTH vowels undergo 
+i-umlaut — not just the medial `u`, but also the root vowel V₁.
+
+Luick §198:
+> "der Vokal der Tonsilbe wie sonst umgelautet" 
+> (= "the vowel of the stressed syllable is umlauted as usual")
+
+Campbell §203:
+> "When unaccented *i or j followed a medial vowel, there might be 
+> double umlaut, i.e. both the medial vowel and the vowel of the first 
+> syllable might be affected"
+
+**Examples of double umlaut:**
+- PGmc `*gaduling-` → OE `gædeling` (BOTH `*a → æ` AND `*u → e`)
+- PGmc `*aƀunsti-` → OE `æfest` 'envy' (BOTH `*a → æ` AND `*u → e`)
+
+**Application to þūsend:**
+
+If `*þūsundī` had undergone regular i-umlaut, BOTH vowels would umlaut:
+- Root `*ū → *ȳ` (long ū umlauts to long ȳ)
+- Medial `*u → *y` (then → *i → *e in unstressed syllables)
+
+The expected outcome would be: **`*þȳsend`** (with ȳ in root), NOT `þūsend`
+
+**The Attested Form Proves Early -ī Loss**
+
+OE `þūsend` has:
+- Root vowel `ū` (NOT `ȳ`)
+- Medial vowel `e`
+
+The preserved `ū` in the root **proves** that the `-ī` was lost BEFORE 
+i-umlaut applied. If i-umlaut had applied, we would see `*þȳsend`.
+
+This aligns with Luick §199 Anm. 1 and §305 Anm. 1, which document 
+**early loss of -i in compounds and certain grammatical categories** — 
+sometimes BEFORE i-umlaut occurred:
+
+> Luick §305 Anm. 1: "Jedenfalls hebt sich von der Hauptmasse der Fälle, 
+> die erst nach dem i-Umlaut entstanden, eine Schichte ab, **die vor ihm 
+> liegt**" (= "a layer stands out that lies before [i-umlaut]")
+
+**Chronological Reconstruction:**
+
+1. PGmc `*þūsundī-` (jō-stem) — with final `-ī`
+2. Pre-OE paradigm restructuring: `*þūsundī-` → `*þūsund-` (neuter a-stem)
+   - The `-ī` was lost at this stage
+3. I-umlaut period applies (6th–7th century)
+   - `*þūsund-` has no umlaut trigger → remains `*þūsund`
+4. Analogical reshaping to `þūsend`
+   - Modeled on words like `ærende` with `-und- → -end-`
+   - The Vorbild (model) words HAD undergone regular i-umlaut + reduction
+
+**Conclusion: The -ī → Umlaut → Loss Pathway Is Excluded**
+
+The pathway `-ī triggers u→y, then y→e, then -ī is lost` CANNOT explain 
+`þūsend` because:
+
+1. If i-umlaut applied, it would affect BOTH vowels → `*þȳsend`
+2. The attested `ū` in the root proves no i-umlaut occurred
+3. Therefore the `-ī` was lost BEFORE i-umlaut
+4. The medial `e` must be analogical, not phonologically regular
+
+The fact that words like `ærende` (< `*arundiiu`) DID undergo regular 
+i-umlaut (with the Sievers' Law environment preserving the trigger long 
+enough) explains why `-und- → -end-` became a productive pattern that 
+could then be extended analogically to `þūsend`.
+
+#### FST Implementation Decision
+
+Use transponent `*θūsendi` (with pre-applied vowel change) and add a 
+note explaining that:
+1. The medial `e` is analogical, not from regular i-umlaut
+2. The model (Vorbild) was probably words like `ærende` with `-und- → -end-`
+3. This is OE-specific; OS/OHG retain `u`
+4. The preserved `ū` (not `ȳ`) in the root proves the `-ī` was lost before 
+   i-umlaut; if i-umlaut had applied, double umlaut would give `*þȳsend`
+
