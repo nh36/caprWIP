@@ -11,7 +11,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-PROTO_STRIP_RE = re.compile(r"[{}*\s\-/()]")
+# Strip braces, stars, whitespace, slashes, parens — but KEEP hyphens for compound markers
+PROTO_STRIP_RE = re.compile(r"[{}*\s/()]")
 
 PROTO_VOWELS = set("aeiouyāēīōūǣȳ")
 PROTO_TRIGGERS = set("ijī")
@@ -25,49 +26,86 @@ OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
+# STAGES must match EnglishProtoToOE in germanic.txt and old_english_sandbox.txt
+# Updated 2026-04-12 to sync with main pipeline.
 STAGES: List[Tuple[str, str]] = [
+    # Stage 1: Proto Input
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
     ("InitialKn", "old_english_sandbox_after_initial_kn.bin"),
     ("Palatalisation", "old_english_sandbox_after_palatalisation.bin"),
     ("ConsonantRules", "old_english_sandbox_after_consonant_rules.bin"),
+    # Stage 2: PWGmc Changes
     ("WestGermanic", "old_english_sandbox_after_west_germanic.bin"),
+    # Stage 3: NWGmc Vowel Changes (early)
+    ("NWGmcUnstressedAiMonoph", "old_english_sandbox_after_nwgmc_unstressed_ai_monoph.bin"),
+    ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
+    ("WsPalatalGlide", "old_english_sandbox_after_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
+    ("NWGmcUnstressedORaising", "old_english_sandbox_after_nwgmc_unstressed_o_raising.bin"),
+    ("NWGmcMnDissimilation", "old_english_sandbox_after_nwgmc_mn_dissimilation.bin"),
+    ("NWGmcNStemNLoss", "old_english_sandbox_after_nwgmc_n_stem_n_loss.bin"),
     ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
+    # Stage 4: Nasal-Spirant Changes (early, before i-umlaut)
+    ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
+    ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
+    ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
+    # Stage 5: Anglo-Frisian and Early OE Vowel Changes
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
     ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
     ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),
     ("EwLongDiphthong", "old_english_sandbox_after_ew_long_diphthong.bin"),
+    ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
+    ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
-    ("BreakingLengthening", "old_english_sandbox_after_breaking_lengthening.bin"),
+    ("Breaking", "old_english_sandbox_after_breaking.bin"),
     ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
     ("ARestoration", "old_english_sandbox_after_a_restoration.bin"),
-    ("FinalWeakSchwaApocope", "old_english_sandbox_after_final_weak_schwa_apocope.bin"),
-    ("JGemination", "old_english_sandbox_after_j_gemination.bin"),
+    # Stage 6: Apocope and Nasalization
+    ("HeavySyllableNasalApocope", "old_english_sandbox_after_heavy_syllable_nasal_apocope.bin"),
+    ("SecondaryNasalization", "old_english_sandbox_after_secondary_nasalization.bin"),
+    ("FinalSchwaApocope", "old_english_sandbox_after_final_schwa_apocope.bin"),
+    # Stage 7: Gemination and Allophony
+    ("CompoundLinkingSyncope", "old_english_sandbox_after_compound_linking_syncope.bin"),
+    ("BAllophony", "old_english_sandbox_after_b_allophony.bin"),
+    ("SieversLawSyncope", "old_english_sandbox_after_sievers_law_syncope.bin"),
+    # Stage 8: Palatalization
     ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
     ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
-    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
+    ("PostVelarWLoss", "old_english_sandbox_after_post_velar_w_loss.bin"),
+    ("WLossBeforeI", "old_english_sandbox_after_w_loss_before_i.bin"),
+    # Stage 9: Umlaut and Mutation
     ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
+    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
     ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
+    ("NasalDissimilation", "old_english_sandbox_after_nasal_dissimilation.bin"),
     ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
     ("WsPalatalUmlaut", "old_english_sandbox_after_ws_palatal_umlaut.bin"),
-    ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
-    ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
+    # Stage 10: Late Sound Changes
     ("WeakTailNasalLoss", "old_english_sandbox_after_weak_tail_nasal_loss.bin"),
     ("WeightMarkers", "old_english_sandbox_after_weight_markers.bin"),
     ("HighVowelApocope", "old_english_sandbox_after_high_vowel_apocope.bin"),
-    ("HeavySyllableNasalApocope", "old_english_sandbox_after_heavy_syllable_nasal_apocope.bin"),
+    ("MedialSyncope", "old_english_sandbox_after_medial_syncope.bin"),
+    ("LAdjacentSyncope", "old_english_sandbox_after_l_adjacent_syncope.bin"),
+    ("DentalAssimilation", "old_english_sandbox_after_dental_assimilation.bin"),
+    ("PreconsonantalDegemination", "old_english_sandbox_after_preconsonantal_degemination.bin"),
+    ("UnstressedLongVowelShortening", "old_english_sandbox_after_unstressed_long_vowel_shortening.bin"),
+    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
+    ("UnstressedIMarking", "old_english_sandbox_after_unstressed_i_marking.bin"),
+    ("MedUnstressedILowering", "old_english_sandbox_after_med_unstressed_i_lowering.bin"),
+    ("PrefixIReduction", "old_english_sandbox_after_prefix_i_reduction.bin"),
+    ("PrefixAReductionLate", "old_english_sandbox_after_prefix_a_reduction_late.bin"),
     ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
     ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
+    ("FinalGeminateSimplification", "old_english_sandbox_after_final_geminate_simplification.bin"),
     ("IntervocalicJVocalization", "old_english_sandbox_after_intervocalic_j_vocalization.bin"),
-    ("WeightCleanup", "old_english_sandbox_after_weight_cleanup_full.bin"),
+    ("UnstressedEIContraction", "old_english_sandbox_after_unstressed_ei_contraction.bin"),
+    ("WeightCleanup", "old_english_sandbox_after_weight_cleanup.bin"),
     ("HLoss", "old_english_sandbox_after_h_loss.bin"),
     ("Contraction", "old_english_sandbox_after_contraction.bin"),
-    ("ProtoToOEWeakTail", "old_english_sandbox_after_proto_to_oe_weak_tail.bin"),
-    ("ProtoToOEWeightMarkers", "old_english_sandbox_after_proto_to_oe_weight_markers.bin"),
-    ("ProtoToOEApocope", "old_english_sandbox_after_proto_to_oe_apocope.bin"),
-    ("ProtoToOEWeightCleanup", "old_english_sandbox_after_proto_to_oe_weight_cleanup.bin"),
+    ("RMetathesis", "old_english_sandbox_after_r_metathesis.bin"),
+    # Stage 11: Full pipeline checkpoints (composites)
     ("ProtoToOE", "old_english_sandbox_after_proto_to_oe.bin"),
     ("WGlide", "old_english_sandbox_after_w_glide.bin"),
     ("GhMarker", "old_english_sandbox_after_gh_marker.bin"),
