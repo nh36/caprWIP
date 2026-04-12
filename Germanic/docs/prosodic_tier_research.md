@@ -254,6 +254,139 @@ At this point, we have:
 
 ---
 
+## 9. ALTERNATIVE: Stressed Vowel Notation (User Suggestion)
+
+The user suggested a simpler approach: mark stressed vowels with acute accent
+(like `á`, `ú`) just as we mark unstressed with breve (`ă`). Syllable counting
+can be done by counting vowels rather than explicit boundaries.
+
+### 9.1 Notation Comparison
+
+| Approach | Example Input | Pros | Cons |
+|----------|---------------|------|------|
+| **Dot boundaries** | `*ˈjug.un.θiz` | Explicit structure | Conflicts with `*` prefix; extra chars |
+| **Stressed vowels** | `*júgunθiz` | Minimal change; natural | Requires vowel inventory update |
+| **CVC template** | `CVC.VCC.VCz` | Shows weight | Separate from segments |
+
+### 9.2 Stressed Vowel Approach — Prototype
+
+```foma
+# Stressed vowels (acute accent)
+define StressedV [á:{*á} | ú:{*ú} | í:{*í} | é:{*é} | ó:{*ó}];
+
+# Unstressed vowels (plain or breve)
+define UnstressedV [a:{*a} | u:{*u} | i:{*i} | e:{*e} | o:{*o} | ă:{*ă}];
+
+# Any vowel
+define AnyV [StressedV | UnstressedV];
+
+# Consonants
+define C [...];
+
+# Count vowels: at least 2 vowels between stressed and target
+define TwoVowelsBetween [StressedV C* [AnyV C*]+];
+
+# Early i-apocope: delete *i in 3rd+ syllable
+define EarlyIApocope [{*i} -> 0 || TwoVowelsBetween _ {*z} .#.];
+```
+
+### 9.3 Test Results
+
+| Input | Output | Expected | ✓ |
+|-------|--------|----------|---|
+| `júgunθiz` | `*j*ú*g*u*n*θ*z` | apocopate (3rd) | ✓ |
+| `fótiz` | `*f*ó*t*i*z` | preserve (2nd) | ✓ |
+| `háubudumiz` | `*h*á*u*b*u*d*u*m*z` | apocopate (4th) | ✓ |
+
+### 9.4 Integration with Existing System
+
+**Minimal changes needed:**
+1. Add `{*á}`, `{*é}`, `{*í}`, `{*ó}`, `{*ú}` to symbol inventory
+2. Add `á:{*á}`, etc. to lexicon patterns (`pgrmRoot`, etc.)
+3. Update TSV: mark stressed vowel in first syllable (usually predictable)
+
+**Fits existing convention:**
+- Already use `ă` for unstressed → use `á` for stressed
+- Already use `{*ă}` multi-char symbol → add `{*á}`
+- Counting vowels works because Germanic stress is initial
+
+### 9.5 Syllable Weight via Structure
+
+For Sievers' Law (heavy vs light stems), we can check weight by pattern:
+- **Light:** single short vowel + single consonant (CV)
+- **Heavy:** long vowel OR diphthong OR closed syllable (CVV, CVC, CVCC)
+
+```foma
+# Light stem: short stressed vowel + single consonant + j
+define LightStem [C StressedShortV C {*j}];
+
+# Heavy stem: anything else before j
+define HeavyStem [[C StressedLongV | C StressedShortV C C] [{*i}] {*j}];
+```
+
+This doesn't require explicit syllable boundaries — weight is inferable from
+the segment sequence.
+
+### 9.6 Advantages Over Dot Notation
+
+1. **No conflict with `*` prefix** — dots might be parsed oddly
+2. **Minimal TSV changes** — just change first vowel per word
+3. **Natural reading** — `*júgunθiz` reads like a proto-form
+4. **Vowel counting is simple** — no explicit boundary tracking
+5. **Compatible with diphthongs** — `*áu` marks stressed diphthong
+
+### 9.7 Resolved Questions
+
+**1. Long vowels:** Treat macron vowels (`ā, ē, ī, ō, ū`) as inherently stressed.
+   - Germanic has initial stress, so long vowels in first syllable = stressed
+   - For unstressed long vowels (rare), could use breve+macron: `ā̆`
+   - Simplification: macron = stressed in root syllables
+
+**2. Secondary stress in compounds:** Use grave accent (`à, è, ì, ò, ù`)
+   - Primary: `á, é, í, ó, ú` (acute)
+   - Secondary: `à, è, ì, ò, ù` (grave)
+   - Unstressed: `a, e, i, o, u` (plain) or `ă` (explicit unstressed)
+   - Example: `*wér-àldu` (primary on first element, secondary on second)
+
+**3. Diphthongs:** Count as ONE vowel (one syllable nucleus)
+   - Stressed: `*áu, *ái, *éu, *éi`
+   - Unstressed: `*au, *ai, *eu, *ei`
+   - Example: `*háubudumiz` = 4 syllables (*áu + *u + *u + *i)
+
+### 9.8 Full Symbol Inventory for Prosodic Notation
+
+| Type | Short | Long | Diphthong |
+|------|-------|------|-----------|
+| **Primary stress** | á é í ó ú | ā́ ḗ ī́ ṓ ū́ (or just ā ē ī ō ū) | áu ái éu éi |
+| **Secondary stress** | à è ì ò ù | ā̀ ḕ ī̀ ṑ ū̀ | àu àì |
+| **Unstressed** | a e i o u | — | au ai eu ei |
+| **Explicit unstressed** | ă ĕ ĭ ŏ ŭ | — | — |
+
+**Simplification:** In practice, we may only need:
+- Acute for primary stress: `á, ú, áu`
+- Plain for unstressed in polysyllables: `a, u, au`
+- Breve for grammatical endings: `ă` (already in use)
+- Grave for secondary stress in compounds (rare)
+
+### 9.9 Next Steps for Implementation
+
+1. **Add symbols to germanic.txt:**
+   - Add `{*á}, {*é}, {*í}, {*ó}, {*ú}` to vowel inventories
+   - Add `{*áu}, {*ái}` to diphthong inventory
+   - Add `á:{*á}`, etc. to lexicon patterns
+
+2. **Update TSV entries (~700 rows):**
+   - Mark first syllable vowel as stressed (acute accent)
+   - Most entries: just change first vowel (predictable stress)
+   - Compounds: mark secondary stress if needed
+
+3. **Write prosodic rules:**
+   - Early i-apocope (Luick §296)
+   - Possibly: Sievers' Law weight check
+   - Possibly: stress-conditioned syncope
+
+---
+
 ## 6. Next Steps
 
 1. ~~Research Foma flag diacritics for state tracking~~ (tested, works but awkward)
