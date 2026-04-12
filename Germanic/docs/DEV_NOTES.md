@@ -49,6 +49,8 @@
 - [z-loss/rhotacism and bimoraic/trimoraic cross-source analysis](#historical-phonology-of-final--z-loss-and-its-interaction-with-rhotacism)
 - [Stiles 1985-6 on 'four'](#stiles-1985-6-on-the-numeral-four-research-summary-2026-04-10)
 - [Compound Words: *regnă-bugô](#compound-words-regnă-bugô--reġnboga-rainbow-2026-04-11)
+- [ġeoguþ 'youth': *-unþi- suffix and u-lowering](#14.9-comprehensive-documentation--ġeoguþ-youth-2026-04-12)
+- [§15: Early vs. Late Apocope of High Vowels](#15-research--early-vs-late-apocope-of-high-vowels-2026-04-12)
 
 ### Companion documents
 - `docs/analysis/notable_findings.md` — Cross-referenced scholarly discussion (§§1–7)
@@ -18478,6 +18480,212 @@ Row 1468 (youth): Changed PROTOFORM from `*jugunθiz` to `*jugunθ`. The `-iz` s
 
 **Why not general early i-apocope rule:**
 The early loss of `-i` in *-unþi- is specific to this derivational suffix class and cannot be captured by a general phonological rule without referencing morphological structure. Our approach of using transponent PROTOFORMs for morphologically-conditioned exceptions is consistent with how we handle other cases (e.g., `*wer-uldu` for weorold).
+
+---
+
+## §15: RESEARCH — Early vs. Late Apocope of High Vowels (2026-04-12)
+
+The question arose: should we model **early i-apocope** (PGmc/common Germanic stage)
+as a general FST rule, rather than using transponent PROTOFORMs for individual lexemes?
+
+This section documents the research into the different types and chronological stages
+of high vowel apocope in Germanic, drawing on Luick, Brunner, R/T, and Campbell.
+
+### §15.1: Two Distinct Stages of High Vowel Apocope
+
+The key finding is that there were **two chronologically distinct apocope processes**:
+
+| Stage | Chronology | Conditioning | Evidence | I-umlaut? |
+|-------|------------|--------------|----------|-----------|
+| **Early (PGmc/WGmc)** | Pre-Anglo-Frisian | After unstressed syllables (3rd/4th position) | Not in runic inscriptions | NO |
+| **Late (Pre-OE)** | Post-AFB, pre-spelling | After heavy stressed syllables | Shows umlaut effects | YES (triggered before loss) |
+
+**Brunner §145:**
+> "Ursprüngliches -i war gemeingerm. abgefallen im unmittelbaren Auslaut und vor -z 
+> nach unbetonten Silben (also in dritten und vierten Silben von der betonten aus 
+> gezählt)."
+
+Translation: "Original -i had fallen in common Germanic in absolute final position 
+and before -z after **unstressed syllables** (i.e., in third and fourth syllables 
+counting from the stressed one)."
+
+**Brunner §145, Anm. 1 (critical note):**
+> "Der frühe gemeingerm. Abfall dieser -i ist dadurch erwiesen, daß sie ae. keinen 
+> i-Umlaut mehr bewirkten."
+
+Translation: "The early common Germanic loss of these -i is proven by the fact that 
+they no longer caused i-umlaut in OE."
+
+**Brunner §146:** 
+Contrasts this with LATER apocope after stressed heavy syllables:
+> "Nach betonten Silben sind ursprünglich i und u im Uraltenglischen noch durchgehends 
+> erhalten gewesen... Diese urae. i und u wurden dann im Ae. zum Teil apokopiert... 
+> doch hat -i noch vorher den i-Umlaut bewirkt."
+
+Translation: "After stressed syllables, original i and u were still fully preserved 
+in Pre-OE... These Pre-OE i and u were then partly apocopated in OE... but -i had 
+**previously triggered i-umlaut**."
+
+### §15.2: Luick's Formulation (Historische Grammatik §296)
+
+**Luick §296 (pp.272-273) on early apocope:**
+> "Das i, mochte es alt oder nach §295 entstanden sein, schwand in großem Umfang im 
+> Auslaut und vor einfachem Konsonanten der letzten Silbe, nämlich in vierter Silbe 
+> (von der betonten an) durchaus, in dritter nach langer Tonsilbe."
+
+Translation: "The i, whether old or arising from §295, was lost extensively in final 
+position and before a single consonant of the last syllable, namely in the **fourth 
+syllable** (from the stressed one) **always**, in the **third syllable after a long 
+stressed syllable**."
+
+**Luick's examples:**
+- 4th syllable: `*xaubudumiz` dat.pl. 'to heads' → `*xaubudum` (i lost)
+- 4th syllable: `*wurdumiz` 'to words' → `*wurdum` (i lost)
+- 3rd syllable after heavy: `*xilpis, *xilpip` 2/3sg.pres. → `*xilps, *xilpp` (later OE `hilps, hilpþ`)
+
+**Luick §296 Anm. 2:**
+> "Die verschiedene Behandlung von dreisilbigen Formen mit langer und kurzer 
+> Tonsilbe ist von R. Weyhe erkannt worden (PBB 31, 43ff.)."
+
+Translation: "The different treatment of trisyllabic forms with long vs. short 
+stressed syllables was recognized by R. Weyhe (PBB 31, 43ff.)."
+
+**Luick §296 Anm. 4:**
+> "Das frühe Datum dieser Vorgänge erhellt aus dem Umstande, daß in keiner unserer 
+> Quellen zur Erkenntnis des urgermanischen Bestandes die hier besprochenen Vokale 
+> noch vorhanden sind, auch nicht in solchen, die, wie die ältesten Runeninschriften, 
+> eine große Anzahl später geschwundener Endsilbenvokale aufweisen."
+
+Translation: "The early date of these processes is evident from the fact that in 
+none of our sources for understanding the Proto-Germanic state are the vowels 
+discussed here still present, not even in those which, like the earliest runic 
+inscriptions, show a large number of later-lost final vowels."
+
+### §15.3: Luick §304 — Later Pre-OE Apocope (Different Rule!)
+
+**Luick §304 (p.281-282):**
+> "In derselben Periode, aber etwas später, schwand auch i und u in nachtonigen 
+> Silben in großem Umfange, doch innerhalb ganz anderer Grenzen als æ und e."
+
+Translation: "In the same period, but somewhat later, i and u were also lost in 
+post-tonic syllables to a great extent, **but within quite different limits** than 
+æ and e."
+
+**Conditioning (Luick §304):**
+> "Im Auslaut schwanden i und u unmittelbar nach langer Tonsilbe, und auch nach 
+> kurzer, wenn darauf noch eine andere Silbe folgte (nicht aber unmittelbar nach 
+> kurzer)."
+
+Translation: "In final position, i and u were lost immediately after a long stressed 
+syllable, and also after a short one if another syllable followed (but not immediately 
+after a short one)."
+
+**Examples with i-loss (Luick §304a):**
+- `*fōti` dat.sg. 'foot' → `fēt` (long stem, i-umlaut applied, then i lost)
+- `*bōki` dat.sg. 'book' → `bēc` (long stem, umlaut applied, then i lost)
+
+**Examples without i-loss:**
+- `*wini` nom.sg. 'friend' → `wine` (short stem, i preserved as -e)
+- `*sunu` nom.sg. 'son' → `sunu` (short stem, u preserved)
+
+### §15.4: R/T Vol.2 §6.8.1 — Apocope Conditioning
+
+**R/T (pp.284-296) on apocope of short high vowels:**
+> "After general syncope had run its course, short *i and *u were lost word-finally:
+> 1. After a heavy syllable
+> 2. After an unstressed syllable preceded by a stressed light syllable"
+
+**Chronological diagram (R/T p.304):**
+The diagram shows apocope occurring AFTER:
+- General syncope
+- Palatalization of velars
+- I-umlaut
+
+This confirms the LATE apocope (§304/§146) triggered i-umlaut before the vowel was lost.
+
+### §15.5: The *-unþi- Suffix — Why Early Loss?
+
+For `*jugunþiz` 'youth' and `*dugunþiz` 'virtue', the evidence shows the `-i-` was 
+lost at the **early** stage, not the late one:
+
+1. **No i-umlaut:** OE `geoguþ`, `duguþ` show `u`, not `y`
+2. **Syllable count:** `*jugunþiz` is 4 syllables (jug-un-þi-z)
+   - The `-i-` is in the **fourth** syllable position
+   - This falls under Luick §296: "in fourth syllable always [lost]"
+
+**Alternatively (Weyhe's rule):**
+`*jugunþi` (after z-loss) is 3 syllables:
+- First: `jug-` (heavy, stressed)
+- Second: `un-` (unstressed)
+- Third: `-þi` (final)
+
+By Weyhe's rule: i lost after unstressed syllable that follows heavy stressed syllable.
+
+### §15.6: Should We Model Early i-Apocope as an FST Rule?
+
+**Arguments FOR a general early i-apocope rule:**
+
+1. **It is a regular sound change:** Luick §296 and Brunner §145 formulate clear 
+   phonological conditions (not morpheme-specific).
+
+2. **Consistent with FST philosophy:** Pure phonological conditioning.
+
+3. **Would allow full PROTO forms:** We could use `*jugunθiz` in PROTOFORM.
+
+**Arguments AGAINST a general early i-apocope rule:**
+
+1. **Complex conditioning:** The rule depends on:
+   - Syllable count from stressed syllable (3rd/4th position)
+   - Weight of preceding syllables
+   - Whether position is absolute final or before -z/-n
+
+2. **Lack of stress marking in current system:** Our PROTOFORMs don't mark 
+   syllable boundaries or stress. Adding them would require significant restructuring.
+
+3. **Limited application:** The early apocope affects only specific suffix classes:
+   - Dat/Instr.pl. `-miz` (but we use -um in PROTOFORM anyway)
+   - Gen/Dat.sg. weak nouns `-niz/-ni` (morphologically predictable)
+   - 2/3sg. present `-isi/-iþi` (paradigm cells not used much)
+   - Abstract `-unþi-` (only a few lexemes)
+
+4. **Transponent works:** Using truncated PROTOFORMs is simpler and already 
+   handles all known cases.
+
+### §15.7: Decision — Continue Using Transponent PROTOFORMs
+
+For the current pipeline, we will **not** implement a general early i-apocope rule.
+
+**Rationale:**
+1. The conditioning requires syllable counting and stress tracking that our current 
+   notation doesn't support.
+2. The affected lexemes are few and identifiable.
+3. The transponent approach (pre-applied apocope in PROTOFORM) is consistent with 
+   how we handle other morphologically-complex cases (`*wer-uldu` for weorold, 
+   paradigm cells for strong verbs, etc.).
+
+**Future consideration:**
+If we eventually add prosodic marking to PROTOFORMs (stress, syllable boundaries), 
+we could revisit this decision. A general early apocope rule would then be:
+
+```foma
+# Hypothetical early i-apocope (NOT IMPLEMENTED)
+# Luick §296 / Brunner §145
+# Condition: final -i in 4th+ syllable, or in 3rd after heavy syllable
+define EarlyIApocope [
+    {*i} -> 0 || σ̄ [any*] σ̆ _ .#.  # after unstressed syll following heavy
+];
+```
+
+This is left for future work if prosodic marking is added.
+
+### §15.8: Summary of Apocope Types
+
+| Type | Stage | Luick | Brunner | Triggers umlaut? | Our handling |
+|------|-------|-------|---------|------------------|--------------|
+| Early i-apocope (3rd/4th syll.) | PGmc/WGmc | §296 | §145 | NO | Transponent PROTOFORM |
+| Late i-apocope (after heavy) | Pre-OE | §304 | §146 | YES | FST rule (implicit in cascade) |
+| Late u-apocope (after heavy) | Pre-OE | §304 | §148 | — | FST rule (implicit) |
+| Medial syncope (æ, e) | Pre-OE | §303 | §159 | — | FST rule `OEMedialSyncope` |
 
 ---
 
