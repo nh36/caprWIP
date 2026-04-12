@@ -387,10 +387,358 @@ the segment sequence.
 
 ---
 
-## 6. Next Steps
+## 10. IMPLEMENTATION DESIGN (Redundant System)
+
+The user prefers **redundancy** — it's acceptable to have both macron AND acute on a vowel
+(e.g., `ā́` for stressed long ā). This simplifies the design: stress marking is explicit
+and orthogonal to vowel length.
+
+### 10.1 Notation System
+
+#### 10.1.1 Stressed Short Vowels (New)
+| Vowel | Input | Starred |
+|-------|-------|---------|
+| á | `á:{*á}` | `{*á}` |
+| é | `é:{*é}` | `{*é}` |
+| í | `í:{*í}` | `{*í}` |
+| ó | `ó:{*ó}` | `{*ó}` |
+| ú | `ú:{*ú}` | `{*ú}` |
+| ý | `ý:{*ý}` | `{*ý}` |
+
+#### 10.1.2 Stressed Long Vowels (New, Redundant Marking)
+| Vowel | Input | Starred | Notes |
+|-------|-------|---------|-------|
+| ā́ | `ā́:{*ā́}` | `{*ā́}` | U+0101 + U+0301 |
+| ḗ | `ḗ:{*ḗ}` | `{*ḗ}` | U+1E17 (precomposed) |
+| ī́ | `ī́:{*ī́}` | `{*ī́}` | U+012B + U+0301 |
+| ṓ | `ṓ:{*ṓ}` | `{*ṓ}` | U+1E53 (precomposed) |
+| ū́ | `ū́:{*ū́}` | `{*ū́}` | U+016B + U+0301 |
+
+**Fallback:** If combining marks cause issues, use `ā́` as `{ā́}` multichar symbol.
+
+#### 10.1.3 Secondary Stress (Compounds)
+| Vowel | Input | Starred | Notes |
+|-------|-------|---------|-------|
+| à | `à:{*à}` | `{*à}` | Secondary stress, short |
+| è | `è:{*è}` | `{*è}` | Secondary stress, short |
+| etc. | | | |
+| ā̀ | `ā̀:{*ā̀}` | `{*ā̀}` | Secondary stress, long |
+
+#### 10.1.4 Stressed Diphthongs (New)
+| Diphthong | Input | Starred |
+|-----------|-------|---------|
+| áu | `{áu}:{*áu}` | `{*áu}` |
+| ái | `{ái}:{*ái}` | `{*ái}` |
+| éu | `{éu}:{*éu}` | `{*éu}` |
+| íu | `{íu}:{*íu}` | `{*íu}` |
+
+#### 10.1.5 Nasalized Vowels with Stress
+| Vowel | Input | Starred | Notes |
+|-------|-------|---------|-------|
+| ą́ | `ą́:{*ą́}` | `{*ą́}` | Stressed nasal (if needed) |
+
+#### 10.1.6 Existing Unstressed Markers (Kept)
+| Vowel | Input | Starred | Notes |
+|-------|-------|---------|-------|
+| ă | `ă:{*ă}` | `{*ă}` | Weak tail unstressed |
+| ĕ | (add) | `{*ĕ}` | If needed |
+
+### 10.2 Vowel Hierarchy for Rules
+
+```foma
+# ==== PRIMARY STRESS ====
+# Short stressed (acute)
+define StressedShortV [
+    {*á} | {*é} | {*í} | {*ó} | {*ú} | {*ý}
+];
+
+# Long stressed (macron + acute, redundant)
+define StressedLongV [
+    {*ā́} | {*ḗ} | {*ī́} | {*ṓ} | {*ū́}
+];
+
+# Stressed diphthongs (acute on first element)
+define StressedDiphthong [
+    {*áu} | {*ái} | {*éu} | {*íu}
+];
+
+# All primary-stressed vocalics
+define PrimaryStressedV [StressedShortV | StressedLongV | StressedDiphthong];
+
+# ==== SECONDARY STRESS ====
+define SecondaryStressedShortV [
+    {*à} | {*è} | {*ì} | {*ò} | {*ù}
+];
+define SecondaryStressedLongV [
+    {*ā̀} | {*ḕ} | {*ī̀} | {*ṑ} | {*ū̀}
+];
+define SecondaryStressedV [SecondaryStressedShortV | SecondaryStressedLongV];
+
+# ==== UNSTRESSED ====
+# Plain short vowels (unstressed by default in non-initial position)
+define UnstressedShortV [
+    {*a} | {*e} | {*i} | {*o} | {*u} | {*y}
+];
+
+# Explicit unstressed (breve)
+define ExplicitUnstressedV [
+    {*ă} | {*ĕ} | {*ĭ} | {*ŏ} | {*ŭ}
+];
+
+# Nasalized (typically unstressed endings)
+define NasalV [
+    {*ą} | {*ę} | {*ų}
+];
+
+# Long vowels in weak tails (rare, usually unstressed)
+define WeakTailLongV [
+    {*ē} | {*ō} | {*ī}
+];
+
+# ==== COMBINED CLASSES ====
+# Any stressed vowel
+define AnyStressedV [PrimaryStressedV | SecondaryStressedV];
+
+# Any unstressed vowel
+define AnyUnstressedV [
+    UnstressedShortV | ExplicitUnstressedV | NasalV | WeakTailLongV
+];
+
+# All vocalic segments (for syllable counting)
+define AllVocalic [AnyStressedV | AnyUnstressedV];
+
+# Consonants (existing PGmcStarConsonant)
+define C PGmcStarConsonant;
+```
+
+### 10.3 Prosodically-Conditioned Rules
+
+#### 10.3.1 Early i-Apocope (Luick §296, Brunner §145)
+
+```foma
+# Early i-apocope: *i lost in 3rd or 4th syllable from stress
+# Condition: At least 2 vowels between stressed vowel and target *i
+# Effect: *i → 0 word-finally before *z
+# Timing: BEFORE i-umlaut (proven by lack of umlaut)
+#
+# Example: *júgunθiz → *júgunθz (then -z deletion → *júgunθ → geoguþ)
+#          3 vowels: ú-u-i, so i is in 3rd position → delete
+#
+# Counterexample: *fṓtiz → *fṓtiz (2 vowels: ṓ-i, so i is in 2nd position → keep)
+
+define TwoOrMoreUnstressedAfterStress [
+    C* AnyUnstressedV [C* AnyUnstressedV]+
+];
+
+define EarlyIApocope [
+    {*i} -> 0 || PrimaryStressedV TwoOrMoreUnstressedAfterStress C* _ {*z} .#.
+];
+```
+
+#### 10.3.2 Inter-Stress Raising (R/T vol.2 p.255)
+
+```foma
+# Inter-stress raising: unstressed *a → *u between primary and secondary stress
+# Applies in compounds: *wér-àldu → *wér-ùldu
+# R/T vol.2 p.255: "*a became u in the first member of compounds when directly
+#                  followed by a stressed syllable"
+#
+# This rule would replace the transponent approach for weorold.
+
+define InterStressRaising [
+    {*a} -> {*u} || PrimaryStressedV C+ _ C+ SecondaryStressedV
+];
+```
+
+#### 10.3.3 Sievers' Law Weight Check (Optional)
+
+```foma
+# Sievers' Law: heavy stems have -ij- surface, light stems have -j- surface
+# Heavy = long V OR diphthong OR closed syllable
+# Currently encoded in input; could derive if stress markers present
+#
+# NOT IMPLEMENTING NOW — input encoding is sufficient
+```
+
+### 10.4 Changes to germanic.txt
+
+#### 10.4.1 Symbol Inventories
+
+Add after line ~475 (PGmcStarVowel):
+
+```foma
+# ===== PROSODIC STRESS MARKERS =====
+# Added 2026-04-12 for syllable-counting rules (Luick §296, etc.)
+
+define PGmcStressedShortVowel [
+    {*á} | {*é} | {*í} | {*ó} | {*ú} | {*ý}
+];
+
+define PGmcStressedLongVowel [
+    {*ā́} | {*ḗ} | {*ī́} | {*ṓ} | {*ū́}
+];
+
+define PGmcStressedDiphthong [
+    {*áu} | {*ái} | {*éu} | {*íu}
+];
+
+define PGmcSecondaryStressVowel [
+    {*à} | {*è} | {*ì} | {*ò} | {*ù} |
+    {*ā̀} | {*ḕ} | {*ī̀} | {*ṑ} | {*ū̀}
+];
+
+define PGmcPrimaryStressed [
+    PGmcStressedShortVowel | PGmcStressedLongVowel | PGmcStressedDiphthong
+];
+
+define PGmcAnyStressed [PGmcPrimaryStressed | PGmcSecondaryStressVowel];
+```
+
+#### 10.4.2 Lexicon Patterns (pgrmShortVowel etc.)
+
+Modify lines 131-145:
+
+```foma
+# Original (unstressed or unmarked)
+define pgrmShortVowel [
+    a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | y:{*y}
+];
+
+# ADD: Stressed short vowels
+define pgrmStressedShortVowel [
+    á:{*á} | é:{*é} | í:{*í} | ó:{*ó} | ú:{*ú} | ý:{*ý}
+];
+
+# Original long vowels
+define pgrmLongVowel [
+    ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū} | ô:{*ô}
+];
+
+# ADD: Stressed long vowels (redundant macron+acute)
+define pgrmStressedLongVowel [
+    {ā́}:{*ā́} | {ḗ}:{*ḗ} | {ī́}:{*ī́} | {ṓ}:{*ṓ} | {ū́}:{*ū́}
+];
+
+# Original diphthongs
+define pgrmDiphthong [
+    {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu}
+];
+
+# ADD: Stressed diphthongs
+define pgrmStressedDiphthong [
+    {áu}:{*áu} | {ái}:{*ái} | {éu}:{*éu} | {íu}:{*íu}
+];
+
+# Combined root vowels (for pgrmStrongSyllable)
+define pgrmRootVowel [
+    pgrmShortVowel | pgrmStressedShortVowel |
+    pgrmLongVowel | pgrmStressedLongVowel |
+    pgrmDiphthong | pgrmStressedDiphthong
+];
+```
+
+#### 10.4.3 Strong Syllable Pattern
+
+Modify line ~280:
+
+```foma
+define pgrmStrongPlainLight pgrmOnset [pgrmShortVowel | pgrmStressedShortVowel] 0;
+define pgrmStrongPlainHeavy [
+    pgrmOnset [pgrmLongVowel | pgrmStressedLongVowel | pgrmDiphthong | pgrmStressedDiphthong] pgrmCoda |
+    pgrmOnset [pgrmShortVowel | pgrmStressedShortVowel] pgrmCodaNonEmpty
+];
+```
+
+#### 10.4.4 RemoveStars Update
+
+Modify line ~567 to strip stress marks:
+
+```foma
+define RemoveStars [
+    {*} -> 0,
+    {á} -> {a}, {é} -> {e}, {í} -> {i}, {ó} -> {o}, {ú} -> {u}, {ý} -> {y},
+    {à} -> {a}, {è} -> {e}, {ì} -> {i}, {ò} -> {o}, {ù} -> {u},
+    {ā́} -> {ā}, {ḗ} -> {ē}, {ī́} -> {ī}, {ṓ} -> {ō}, {ū́} -> {ū},
+    {ā̀} -> {ā}, {ḕ} -> {ē}, {ī̀} -> {ī}, {ṑ} -> {ō}, {ū̀} -> {ū}
+];
+```
+
+### 10.5 Rule Ordering
+
+Insert prosodic rules at appropriate chronological positions:
+
+```
+PGmc stage:
+  ... (existing)
+
+NWGmc/PWGmc stage:
+  ... (existing)
+  EarlyIApocope          # NEW — before i-umlaut (Luick §296)
+  ... (existing)
+
+Pre-OE stage:
+  InterStressRaising     # NEW — compounds only, if implemented
+  ... (existing)
+  OEIUmlaut
+  ... (existing)
+```
+
+### 10.6 TSV Migration Strategy
+
+#### 10.6.1 Priority Order
+
+1. **Test words only** — Validate with 5-10 known forms first
+2. **Prosodic-sensitive forms** — Forms that currently use transponents (~50)
+3. **All simple words** — Bulk update: first vowel → stressed (~650)
+
+#### 10.6.2 Automated Conversion
+
+For simple words (non-compounds, initial stress):
+- Replace first vowel with stressed variant
+- `a` → `á`, `e` → `é`, `i` → `í`, `o` → `ó`, `u` → `ú`
+- `ā` → `ā́`, `ē` → `ḗ`, etc.
+
+For compounds:
+- Mark primary stress on first element
+- Mark secondary stress on second element
+- `*wiră-aldu` → `*wírăn-àldu` (if implementing inter-stress raising)
+- Or keep transponent if simpler
+
+#### 10.6.3 Validation Script
+
+```python
+# Check that every PROTOFORM has exactly one primary-stressed vowel
+# Check that stress is on first syllable (Germanic initial stress)
+# Flag exceptions for manual review
+```
+
+### 10.7 Testing Plan
+
+1. **Unit tests:** Individual rules in isolation
+   - EarlyIApocope: `*júgunθiz → *júgunθz` ✓, `*fṓtiz → *fṓtiz` ✓
+   - InterStressRaising: `*wér-àldu → *wér-ùldu` ✓
+
+2. **Integration tests:** Full pipeline
+   - `*júgunθ → ġeoguþ` (no i-umlaut because early apocope)
+   - `*fṓtiz → fēt` (normal i-umlaut because no early apocope)
+
+3. **Regression tests:** Ensure existing forms still work
+   - Batch test all ~700 rows before/after migration
+
+### 10.8 Rollback Plan
+
+Keep the `prosodic-tier-exploration` branch separate. If prosodic tier proves
+unworkable, the main branch is unaffected. Transponent workarounds remain valid.
+
+---
+
+## 6. Next Steps (Updated)
 
 1. ~~Research Foma flag diacritics for state tracking~~ (tested, works but awkward)
 2. ~~Prototype inline stress markers for early i-apocope~~ (**DONE**)
-3. Inventory ALL phenomena and decide if prosodic tier is worth it
-4. Compare complexity of prosodic rules vs transponent workarounds
-5. If proceeding: design syllabification notation for TSV
+3. ~~Inventory ALL phenomena and decide if prosodic tier is worth it~~ (**DONE - worth it**)
+4. ~~Design implementation~~ (**DONE - see §10**)
+5. **NEXT:** Implement Phase 1 — Add symbols to germanic.txt
+6. **NEXT:** Implement Phase 2 — Test with 5 known forms
+7. **NEXT:** Implement Phase 3 — Bulk TSV migration
+8. **NEXT:** Implement Phase 4 — Write prosodic rules
