@@ -17049,75 +17049,150 @@ The original `*wiră-aldiz` was doubly wrong:
 
 #### 11. Deeper Research: `*i → *e` Lowering (2026-04-12)
 
-**Question:** If PIE had `*wiHrós`, what sound change yielded PGmc `*wer-`? When?
+**Question:** If PIE had `*wiHrós`, what sound change yielded PGmc/WGmc `*wer-`? When?
 
-**Fulk (2018) §4.3 — "Lowering of short mid and high vowels":**
+**The core problem:** PIE `*wiHrós` should regularly yield PGmc `*wiraz` (with `*i`),
+yet all NWGmc daughters show `*e`: ON `verr`, OE/OS/OHG `wer`. How did `*i` become `*e`?
 
-Fulk provides the most comprehensive modern treatment. Key points:
+**Fulk (2018) §4.3 — "Redistribution of the Proto-Germanic short mid and high vowels: lowering"**
 
-> "PGmc. *i > *e before certain consonants followed by a non-high vowel in the
-> next syllable" (paraphrase of §4.3)
+Fulk provides the most comprehensive modern treatment and explicitly argues for a
+**regular sound change** (not sporadic), contra R/T's more cautious position:
 
-But crucially, Fulk n.5 on `*wer` and `*nest`:
+> "It is plain, as well, that PGmc. `*i` might be lowered to `e` in parallel fashion
+> [to `*u > *o`] before a mid or low vowel in the next syllable. **Undeniable examples**
+> are OE OHG `nest` 'nest' < PIE `*nizdos` (cf. Skt. `nīḍáḥ`, Lat. `nīdus`) ... and
+> OS OFris. OE `wer(-)` 'person, man', OIcel. `verr` 'man' (cf. Lat. `vir`, Welsh `gŵr` 'man')."
+
+Fulk argues this is **part of a systematic pattern** of distance assimilation that affected
+both high vowels:
+- `*u > *o` before mid/low vowels (very regular across NWGmc)
+- `*i > *e` before mid/low vowels (less regular, but still systematic)
+
+**The mechanism (Fulk's analysis):**
+
+The loss of PIE `*o` (merger with `*a`) created an **asymmetric vowel system**:
+
+```
+PIE:     i    u          PGmc:    i    u
+         e    o     →            e    (gap)
+            a                       a
+```
+
+Fulk explains (p.55-56):
+
+> "This elimination of /o/ created an imbalance in the phonemic inventory of Gmc.
+> vowels, because the result was that there was no back vowel corresponding to front
+> /e/... it is an oft-observed characteristic of phonological systems... that
+> asymmetrical systems tend to be unstable."
+
+The lowering of `*u > *o` and `*i > *e` before non-high vowels is a **distance assimilation**
+that partially restored symmetry:
+
+```
+Before high V:    i    u       Before non-high V:   e    o
+                 (e)   (o)                          (i)   (u)
+                    a                                  a
+```
+
+**Why `*wer` and `*nest` are regular under Fulk's analysis:**
+
+Fulk explicitly lists them as "**undeniable examples**" of the regular change, not exceptions.
+The environment is:
+
+> `*i > *e` / _ C {a, e, o} (i.e., before a consonant followed by a non-high vowel)
+
+For `*wiraz` 'man':
+- `*wir-` has `*i` before `*r`
+- The following syllable has `*-az` (non-high vowel)
+- Therefore `*i > *e` by regular lowering → `*weraz`
+
+For `*nistaz` 'nest':
+- `*nist-` has `*i` before `*st`
+- The following syllable has `*-az` (non-high vowel)
+- Therefore `*i > *e` by regular lowering → `*nestaz`
+
+**The disagreement with R/T:**
+
+R/T (2014) pp.34-36 and pp.56-57 take a more cautious view:
+
+1. They restrict the regular change to "usually before **labial and velar obstruents**"
+2. They treat `*wer` and `*nest` as unexplained exceptions
+3. They suggest the `*e` might be original in PGmc: "We cannot be sure that PGmc
+   did not already exhibit `*e` in these words"
+
+Fulk n.5 summarizes this disagreement:
 
 > "Ringe (Ringe & Taylor 2014: 34–6) takes the position that this lowering is a
 > Franconian change that spread northward irregularly in WGmc., and that in OFris.
-> the change is unrelated, **choosing to leave exceptions like OE nest, wer unexplained**.
-> By contrast, Lloyd (1966) argues that an allophone [e] of /i/ arose occasionally
-> in Gmc. on the basis of systemic analogy."
+> the change is unrelated, **choosing to leave exceptions like OE nest, wer unexplained**."
 
-This confirms R/T's position: the `*i > *e` in `*wer` is **unexplained** — it's an
-exception that R/T acknowledges but cannot derive from regular sound change.
+**Alternative analyses cited by Fulk:**
 
-**R/T vol. 2, pp.56-57 (§2.3.1):**
+1. **Lloyd (1966):** "argues that an allophone [e] of /i/ arose occasionally in Gmc.
+   on the basis of systemic analogy" — a phonetically motivated but not strictly
+   phonological explanation.
 
-R/T discusses this directly:
+2. **Cercignani (1980b):** "explains the rarity of the change outside of High German
+   as due to avoidance of merger of /e/ with /i/" — the change was blocked in some
+   dialects because it would have collapsed a phonemic distinction.
 
-> "PIE `*wih₁rés` 'young' ... > ... > PGmc `*wiraz` (`*weraz??`; Goth. wair, ON verr)
-> > OE, OS, OHG wer;
->
-> PIE `*nisdós` 'seat' ... > PGmc `*nistaz` (`*nestaz??`) > OE, OHG nest.
->
-> **We cannot be sure that PGmc did not already exhibit `*e` in these words**"
+3. **Hirt (1931-4)** and **Krahe & Meid (1969):** Analogical leveling within paradigms
+   could restore `*i` in forms where lowering had occurred, obscuring the original
+   regularity of the change.
 
-R/T gives two possible explanations:
-1. PGmc might already have had `*e` (we simply don't know)
-2. There was `*i > *e` lowering in WGmc, but it was "modestly extensive... in the
-   southern part of the WGmc area, usually before labial and velar obstruents"
+**Campbell §114 — "i > e before mid and low vowels":**
 
-**The environment for regular lowering (R/T p.57):**
+Campbell provides the traditional OE grammar view:
 
-> "There was a modestly extensive lowering of `*i` to `e` in the southern part of
-> the WGmc area, usually **before labial and velar obstruents** which were in turn
-> followed by nonhigh vowels"
+> "In OE this change is shown only by the common Gmc. words `nest` nest, and `wer`
+> man (Lat. `nidus`, `vir`), and by `spec`, bacon, beside `spic`. Instances are rather
+> more frequent in the other West Gmc. languages."
 
-Examples: `*k"ik"az` > OHG `quec` (but OE `cwic`), `*wikon-` > OHG `wëhha` (but OE `wicu`).
+Campbell lists OFris. examples: `leth` 'limb', `quec` 'cattle', `bevia` 'shake',
+`frethia` 'make peace', `levath` 'he lives'. The fact that OFris. and OS show more
+examples suggests the change was more productive in those dialects.
 
-**But `*wiraz` doesn't fit this environment!** The consonant after `*i` is `*r` (a
-sonorant), not a labial or velar obstruent. So the lowering in `*wer` is **irregular**.
+**Dating and staging:**
 
-**Dating the change:**
+| Scholar | Date of `*i > *e` | Scope |
+|---------|-------------------|-------|
+| Fulk | NWGmc or possibly PGmc | Regular before non-high V |
+| R/T | Franconian (OHG), spreading north | Limited; `*wer`, `*nest` unexplained |
+| Campbell | Pre-OE but sporadic | Limited to few examples in OE |
+| Streitberg, Krahe & Meid | PGmc | Regular but obscured by leveling |
 
-For the regular (Southern WGmc) `*i > *e` lowering:
-- Post-PGmc (Gothic doesn't show it except before r, h, hw — that's independent)
-- Probably OHG/Franconian origin, spreading northward (R/T's position)
-- Pre-OE if OE shows any examples (which it does: `nest`, `wer`)
+Fulk n.6: "Streitberg 1896: §68; cf. Krahe & Meid 1969: I, §36" argue for a PGmc date.
 
-For `*wir- → *wer-` specifically:
-- Cannot be dated because it's irregular
-- Might be PGmc (R/T: "We cannot be sure PGmc did not already exhibit *e")
-- Might be independent changes in each branch
+**The Gothic evidence:**
 
-**Campbell §114 — "Lowering of i to e":**
+Gothic complicates the picture because it has a **different** `*i > *e` change:
+- Go. `*i > ai` [ε] before `r, h, hw`
+- This is independent of the NWGmc change
+- Fulk: "Gothic, once again, stands apart, since PIE i in that language is reflected
+  as `aí` (probably /ɛ/ or /e/) before /r, x, xw/, otherwise i"
 
-Campbell notes:
+So for `*wiraz` 'man', Gothic `wair` shows the Gothic-specific lowering before `*r`,
+not evidence for or against the NWGmc change.
 
-> "Apart from the change i > e in the neighbourhood of l and r (§172–4), OE
-> shares with the other WGmc. languages occasional lowering of i to e, though
-> instances are rather more frequent in the other WGmc. languages than in OE"
+**Conclusion for `*wir- → *wer-`:**
 
-He gives examples: OE `wer`, `nest`, `spec` (OS `spëk`). He notes the development
-is "sporadic" and "the conditions... are obscure."
+The scholarly consensus is divided:
+
+| Analysis | Implication for our FST |
+|----------|------------------------|
+| **Fulk:** Regular NWGmc change | Could model `*i > *e` / _ C [+low/mid] |
+| **R/T:** Unexplained exception | Must stipulate `*e` in input |
+| **Streitberg/Krahe:** Regular PGmc | Could model as early rule |
+
+For practical purposes, we stipulate `*wer-` in the PROTOFORM because:
+1. All NWGmc daughters agree on `*e`
+2. Whether regular or irregular, the pre-OE form had `*e`
+3. Modeling the change is complex (interactions with paradigmatic leveling)
+
+The key insight from Fulk is that this is **not** an arbitrary exception but part of
+a systematic (if variably applied) tendency to lower high vowels before non-high
+vowels in the next syllable — the same pattern that gives us `*u > *o` universally.
 
 **Conclusion for `*wir- → *wer-`:**
 
