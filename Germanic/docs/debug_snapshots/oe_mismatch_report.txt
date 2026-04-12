@@ -16,11 +16,11 @@ Total mismatches: 40
   final_vowel_extra: 3
   length_extra_other: 1
   epenthetic_vowel_missing: 3
-  gemination_extra: 1
+  gemination_extra: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
-  breaking_extra__eo_for_high: 2
+  breaking_extra__eo_for_high: 1
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
   breaking_extra__wrong_form: 1
@@ -81,7 +81,8 @@ epenthetic_vowel_missing (3):
   *strawjăną -> strewan (expected strewian)
   *θistilăz -> þistl (expected þistel)
 
-gemination_extra (1):
+gemination_extra (2):
+  *spennilō -> spinnlu (expected spindle)
   *tikkô -> ticca (expected ticia)
   >> ISSUE: FST geminated where target has single consonant
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
@@ -93,9 +94,8 @@ breaking_extra__ea_for_a (1):
 breaking_extra__eo_for_e (1):
   *speru -> speoru (expected spere)
 
-breaking_extra__eo_for_high (2):
+breaking_extra__eo_for_high (1):
   *newun -> nēowon (expected nigon)
-  *spennilō -> spinneolu (expected spindle)
   >> ISSUE: FST broke to eo where target has high vowel (ū/ī)
   >> LIKELY: Breaking applied where it shouldn't; may be TSV proto issue
   >> ACTION: Check if proto vowel is correct (*eu vs *ū)
