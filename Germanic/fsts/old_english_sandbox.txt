@@ -1,13 +1,33 @@
 source fsts/germanic.txt
 
-# Old English sandbox: trace the OE core only (avoid later English vowel rules).
+# Old English sandbox: trace the OE core pipeline stage-by-stage.
+# MUST MATCH EnglishProtoToOE in germanic.txt (lines 2289-2396)
+# Updated 2026-04-12 to sync with main pipeline.
+
+# ============================================================================
+# Stage 1: Proto Input (accepts pgrmWord grammar)
+# ============================================================================
 define OESandboxAfterProtoInput EnglishAfterProtoInput;
 define OESandboxAfterInitialKn EnglishAfterInitialKn;
 define OESandboxAfterPalatalisation EnglishAfterPalatalisation;
 define OESandboxAfterConsonantRules EnglishAfterConsonantRules;
+
+# ============================================================================
+# Stage 2: PWGmc Changes
+# ============================================================================
 define OESandboxAfterWestGermanic OESandboxAfterConsonantRules
     .o. PWGmcChanges;
-define OESandboxAfterNWGmcULowering OESandboxAfterWestGermanic
+
+# ============================================================================
+# Stage 3: NWGmc Vowel Changes (early) - lines 2291-2302
+# ============================================================================
+define OESandboxAfterNWGmcUnstressedAiMonoph OESandboxAfterWestGermanic
+    .o. NWGmcUnstressedAiMonophthongization;
+define OESandboxAfterNWGmcILowering OESandboxAfterNWGmcUnstressedAiMonoph
+    .o. NWGmcILowering;
+define OESandboxAfterOEWsPalatalGlide OESandboxAfterNWGmcILowering
+    .o. OEWsPalatalGlide;
+define OESandboxAfterNWGmcULowering OESandboxAfterOEWsPalatalGlide
     .o. NWGmcULowering;
 define OESandboxAfterNWGmcUnstressedORaising OESandboxAfterNWGmcULowering
     .o. NWGmcUnstressedORaising;
@@ -21,7 +41,21 @@ define OESandboxAfterNWGmcLongELowering OESandboxAfterNWGmcFinalLongORaising
     .o. NWGmcLongELowering;
 define OESandboxAfterNWGmcLongENasalRounding OESandboxAfterNWGmcLongELowering
     .o. NWGmcLongENasalRounding;
-define OESandboxAfterAuFronting OESandboxAfterNWGmcLongENasalRounding
+
+# ============================================================================
+# Stage 4: NWGmc Nasal-Spirant Changes (early, before i-umlaut) - lines 2306-2309
+# ============================================================================
+define OESandboxAfterNasalSpirantLengthening OESandboxAfterNWGmcLongENasalRounding
+    .o. NWGmcNasalSpirantLengthening;
+define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
+    .o. NWGmcNasalSpirantLoss;
+define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterNasalSpirantLoss
+    .o. NWGmcPreconsonantalXLoss;
+
+# ============================================================================
+# Stage 5: Anglo-Frisian and Early OE Vowel Changes - lines 2310-2324
+# ============================================================================
+define OESandboxAfterAuFronting OESandboxAfterNWGmcPreconsonantalXLoss
     .o. OEAuFronting;
 define OESandboxAfterWWSimplification OESandboxAfterAuFronting
     .o. OEWWSimplification;
@@ -29,63 +63,127 @@ define OESandboxAfterDiphthongLeveling OESandboxAfterWWSimplification
     .o. OEDiphthongLeveling;
 define OESandboxAfterEwLongDiphthong OESandboxAfterDiphthongLeveling
     .o. OEEwLongDiphthong;
-define OESandboxAfterAngloFrisianBrightening OESandboxAfterEwLongDiphthong
+define OESandboxAfterAwLongDiphthong OESandboxAfterEwLongDiphthong
+    .o. OEAwLongDiphthong;
+define OESandboxAfterPrefixAReductionEarly OESandboxAfterAwLongDiphthong
+    .o. OEPrefixAReduction;
+define OESandboxAfterAngloFrisianBrightening OESandboxAfterPrefixAReductionEarly
     .o. AngloFrisianBrightening;
-define OESandboxAfterBreakingLengthening OESandboxAfterAngloFrisianBrightening
+define OESandboxAfterBreaking OESandboxAfterAngloFrisianBrightening
     .o. OEBreaking;
-define OESandboxAfterVelarFricPal OESandboxAfterBreakingLengthening
+define OESandboxAfterVelarFricPal OESandboxAfterBreaking
     .o. OEVelarFricativePalatalization;
 define OESandboxAfterARestoration OESandboxAfterVelarFricPal
     .o. OEARestoration;
-define OESandboxAfterFinalWeakSchwaApocope OESandboxAfterARestoration
+
+# ============================================================================
+# Stage 6: Apocope and Nasalization - lines 2336-2339
+# ============================================================================
+define OESandboxAfterHeavySyllableNasalApocope OESandboxAfterARestoration
+    .o. OEHeavySyllableNasalApocope;
+define OESandboxAfterSecondaryNasalization OESandboxAfterHeavySyllableNasalApocope
+    .o. OESecondaryNasalization;
+define OESandboxAfterFinalSchwaApocope OESandboxAfterSecondaryNasalization
     .o. OEFinalSchwaApocope;
-define OESandboxAfterJGemination OESandboxAfterFinalWeakSchwaApocope
-    .o. PWGmcJGemination;
-define OESandboxAfterBAllophony OESandboxAfterJGemination
+
+# ============================================================================
+# Stage 7: Compound Syncope and B-Allophony - lines 2347-2356
+# ============================================================================
+define OESandboxAfterCompoundLinkingSyncope OESandboxAfterFinalSchwaApocope
+    .o. OECompoundLinkingSyncope;
+define OESandboxAfterBAllophony OESandboxAfterCompoundLinkingSyncope
     .o. PGmcBAllophony;
-define OESandboxAfterSkPalatalization OESandboxAfterBAllophony
+define OESandboxAfterSieversLawSyncope OESandboxAfterBAllophony
+    .o. SieversLawSyncope;
+
+# ============================================================================
+# Stage 8: Palatalization and W-Loss - lines 2357-2362
+# ============================================================================
+define OESandboxAfterSkPalatalization OESandboxAfterSieversLawSyncope
     .o. OESkPalatalization;
 define OESandboxAfterVelarPalatalization OESandboxAfterSkPalatalization
     .o. OEVelarPalatalization;
-define OESandboxAfterWsPalatalDiphthongization OESandboxAfterVelarPalatalization
-    .o. OEWsPalatalDiphthongization;
-define OESandboxAfterIUmlaut OESandboxAfterWsPalatalDiphthongization
+define OESandboxAfterPostVelarWLoss OESandboxAfterVelarPalatalization
+    .o. OEPostVelarWLoss;
+define OESandboxAfterWLossBeforeI OESandboxAfterPostVelarWLoss
+    .o. OEWLossBeforeI;
+
+# ============================================================================
+# Stage 9: I-Umlaut and Related - lines 2366-2371
+# ============================================================================
+define OESandboxAfterIUmlaut OESandboxAfterWLossBeforeI
     .o. OEIUmlaut;
-define OESandboxAfterJClusterCoalescence OESandboxAfterIUmlaut
+define OESandboxAfterWsPalatalDiphthongization OESandboxAfterIUmlaut
+    .o. OEWsPalatalDiphthongization;
+define OESandboxAfterJClusterCoalescence OESandboxAfterWsPalatalDiphthongization
     .o. OEJClusterCoalescence;
-define OESandboxAfterBackMutation OESandboxAfterJClusterCoalescence
+define OESandboxAfterNasalDissimilation OESandboxAfterJClusterCoalescence
+    .o. OENasalDissimilation;
+define OESandboxAfterBackMutation OESandboxAfterNasalDissimilation
     .o. OEBackMutation;
 define OESandboxAfterWsPalatalUmlaut OESandboxAfterBackMutation
     .o. OEWsPalatalUmlaut;
-# NOTE: NWGmc rules use NWGmc prefix, not OE prefix
-define OESandboxAfterNasalSpirantLengthening OESandboxAfterWsPalatalUmlaut
-    .o. NWGmcNasalSpirantLengthening;
-define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
-    .o. NWGmcNasalSpirantLoss;
-define OESandboxAfterWeakTailNasalLoss OESandboxAfterNasalSpirantLoss
+
+# ============================================================================
+# Stage 10: Late OE Changes - lines 2373-2380
+# ============================================================================
+define OESandboxAfterWeakTailNasalLoss OESandboxAfterWsPalatalUmlaut
     .o. OEWeakTailNasalLoss;
 define OESandboxAfterWeightMarkers OESandboxAfterWeakTailNasalLoss
     .o. OEWeightMarkers;
 define OESandboxAfterHighVowelApocope OESandboxAfterWeightMarkers
     .o. OEHighVowelApocope;
-define OESandboxAfterHeavySyllableNasalApocope OESandboxAfterHighVowelApocope
-    .o. OEHeavySyllableNasalApocope;
-define OESandboxAfterWeakTailReduction OESandboxAfterHeavySyllableNasalApocope
+define OESandboxAfterMedialSyncope OESandboxAfterHighVowelApocope
+    .o. OEMedialSyncope;
+define OESandboxAfterLAdjacentSyncope OESandboxAfterMedialSyncope
+    .o. OELAdjacentSyncope;
+define OESandboxAfterDentalAssimilation OESandboxAfterLAdjacentSyncope
+    .o. OEDentalAssimilation;
+define OESandboxAfterPreconsonantalDegemination OESandboxAfterDentalAssimilation
+    .o. OEPreconsonantalDegemination;
+
+# ============================================================================
+# Stage 11: Unstressed Vowel Changes - lines 2381-2386
+# ============================================================================
+define OESandboxAfterUnstressedLongVowelShortening OESandboxAfterPreconsonantalDegemination
+    .o. OEUnstressedLongVowelShortening;
+define OESandboxAfterMedUnstressedULowering OESandboxAfterUnstressedLongVowelShortening
+    .o. OEMedUnstressedULowering;
+define OESandboxAfterUnstressedIMarking OESandboxAfterMedUnstressedULowering
+    .o. OEUnstressedIMarking;
+define OESandboxAfterMedUnstressedILowering OESandboxAfterUnstressedIMarking
+    .o. OEMedUnstressedILowering;
+define OESandboxAfterPrefixIReduction OESandboxAfterMedUnstressedILowering
+    .o. OEPrefixIReduction;
+define OESandboxAfterPrefixAReductionLate OESandboxAfterPrefixIReduction
+    .o. OEPrefixAReduction;
+
+# ============================================================================
+# Stage 12: Final Cleanup - lines 2387-2395
+# ============================================================================
+define OESandboxAfterWeakTailReduction OESandboxAfterPrefixAReductionLate
     .o. OEWeakTailReduction;
 define OESandboxAfterJLossAfterHeavy OESandboxAfterWeakTailReduction
     .o. OEJLossAfterHeavy;
-define OESandboxAfterIntervocalicJVocalization OESandboxAfterJLossAfterHeavy
+define OESandboxAfterFinalGeminateSimplification OESandboxAfterJLossAfterHeavy
+    .o. OEFinalGeminateSimplification;
+define OESandboxAfterIntervocalicJVocalization OESandboxAfterFinalGeminateSimplification
     .o. OEIntervocalicJVocalization;
-define OESandboxAfterWeightCleanup OESandboxAfterIntervocalicJVocalization
+define OESandboxAfterUnstressedEIContraction OESandboxAfterIntervocalicJVocalization
+    .o. OEUnstressedEIContraction;
+define OESandboxAfterWeightCleanup OESandboxAfterUnstressedEIContraction
     .o. OEWeightCleanup;
 define OESandboxAfterHLoss OESandboxAfterWeightCleanup
     .o. OEHLoss;
 define OESandboxAfterContraction OESandboxAfterHLoss
     .o. OEContraction;
-define OESandboxAfterProtoToOEWeakTail EnglishAfterProtoToOEWeakTail;
-define OESandboxAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeightMarkers;
-define OESandboxAfterProtoToOEApocope EnglishAfterProtoToOEApocope;
-define OESandboxAfterProtoToOEWeightCleanup EnglishAfterProtoToOEWeightCleanup;
+define OESandboxAfterRMetathesis OESandboxAfterContraction
+    .o. OERMetathesis;
+
+# ============================================================================
+# Stage 13: Surface Forms (orthography etc.)
+# These use the English* definitions which include the full pipeline
+# ============================================================================
 define OESandboxAfterProtoToOE EnglishAfterProtoToOE;
 define OESandboxAfterWGlide EnglishAfterWGlide;
 define OESandboxAfterGhMarker EnglishAfterGhMarker;
@@ -96,10 +194,15 @@ define OESandboxAfterSurface OldEnglishReflexes;
 
 define OESandbox OESandboxAfterSurface;
 
+# ============================================================================
+# Save intermediate bins for stage-by-stage tracing
+# ============================================================================
+
 clear stack
 regex OESandbox;
 save stack old_english_sandbox.bin
 
+# Stage 1: Proto Input
 clear stack
 regex OESandboxAfterProtoInput;
 save stack old_english_sandbox_after_proto_input.bin
@@ -116,9 +219,23 @@ clear stack
 regex OESandboxAfterConsonantRules;
 save stack old_english_sandbox_after_consonant_rules.bin
 
+# Stage 2: PWGmc
 clear stack
 regex OESandboxAfterWestGermanic;
 save stack old_english_sandbox_after_west_germanic.bin
+
+# Stage 3: NWGmc Vowel Changes (early)
+clear stack
+regex OESandboxAfterNWGmcUnstressedAiMonoph;
+save stack old_english_sandbox_after_nwgmc_unstressed_ai_monoph.bin
+
+clear stack
+regex OESandboxAfterNWGmcILowering;
+save stack old_english_sandbox_after_nwgmc_i_lowering.bin
+
+clear stack
+regex OESandboxAfterOEWsPalatalGlide;
+save stack old_english_sandbox_after_ws_palatal_glide.bin
 
 clear stack
 regex OESandboxAfterNWGmcULowering;
@@ -148,6 +265,20 @@ clear stack
 regex OESandboxAfterNWGmcLongENasalRounding;
 save stack old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin
 
+# Stage 4: Nasal-Spirant (early)
+clear stack
+regex OESandboxAfterNasalSpirantLengthening;
+save stack old_english_sandbox_after_nasal_spirant_lengthening.bin
+
+clear stack
+regex OESandboxAfterNasalSpirantLoss;
+save stack old_english_sandbox_after_nasal_spirant_loss.bin
+
+clear stack
+regex OESandboxAfterNWGmcPreconsonantalXLoss;
+save stack old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin
+
+# Stage 5: Anglo-Frisian and Early OE
 clear stack
 regex OESandboxAfterAuFronting;
 save stack old_english_sandbox_after_au_fronting.bin
@@ -165,12 +296,20 @@ regex OESandboxAfterEwLongDiphthong;
 save stack old_english_sandbox_after_ew_long_diphthong.bin
 
 clear stack
+regex OESandboxAfterAwLongDiphthong;
+save stack old_english_sandbox_after_aw_long_diphthong.bin
+
+clear stack
+regex OESandboxAfterPrefixAReductionEarly;
+save stack old_english_sandbox_after_prefix_a_reduction_early.bin
+
+clear stack
 regex OESandboxAfterAngloFrisianBrightening;
 save stack old_english_sandbox_after_anglo_frisian_brightening.bin
 
 clear stack
-regex OESandboxAfterBreakingLengthening;
-save stack old_english_sandbox_after_breaking_lengthening.bin
+regex OESandboxAfterBreaking;
+save stack old_english_sandbox_after_breaking.bin
 
 clear stack
 regex OESandboxAfterVelarFricPal;
@@ -180,18 +319,33 @@ clear stack
 regex OESandboxAfterARestoration;
 save stack old_english_sandbox_after_a_restoration.bin
 
+# Stage 6: Apocope and Nasalization
 clear stack
-regex OESandboxAfterFinalWeakSchwaApocope;
-save stack old_english_sandbox_after_final_weak_schwa_apocope.bin
+regex OESandboxAfterHeavySyllableNasalApocope;
+save stack old_english_sandbox_after_heavy_syllable_nasal_apocope.bin
 
 clear stack
-regex OESandboxAfterJGemination;
-save stack old_english_sandbox_after_j_gemination.bin
+regex OESandboxAfterSecondaryNasalization;
+save stack old_english_sandbox_after_secondary_nasalization.bin
+
+clear stack
+regex OESandboxAfterFinalSchwaApocope;
+save stack old_english_sandbox_after_final_schwa_apocope.bin
+
+# Stage 7: Compound Syncope and B-Allophony
+clear stack
+regex OESandboxAfterCompoundLinkingSyncope;
+save stack old_english_sandbox_after_compound_linking_syncope.bin
 
 clear stack
 regex OESandboxAfterBAllophony;
 save stack old_english_sandbox_after_b_allophony.bin
 
+clear stack
+regex OESandboxAfterSieversLawSyncope;
+save stack old_english_sandbox_after_sievers_law_syncope.bin
+
+# Stage 8: Palatalization and W-Loss
 clear stack
 regex OESandboxAfterSkPalatalization;
 save stack old_english_sandbox_after_sk_palatalization.bin
@@ -201,16 +355,29 @@ regex OESandboxAfterVelarPalatalization;
 save stack old_english_sandbox_after_velar_palatalization.bin
 
 clear stack
-regex OESandboxAfterWsPalatalDiphthongization;
-save stack old_english_sandbox_after_ws_palatal_diphthongization.bin
+regex OESandboxAfterPostVelarWLoss;
+save stack old_english_sandbox_after_post_velar_w_loss.bin
 
+clear stack
+regex OESandboxAfterWLossBeforeI;
+save stack old_english_sandbox_after_w_loss_before_i.bin
+
+# Stage 9: I-Umlaut and Related
 clear stack
 regex OESandboxAfterIUmlaut;
 save stack old_english_sandbox_after_i_umlaut.bin
 
 clear stack
+regex OESandboxAfterWsPalatalDiphthongization;
+save stack old_english_sandbox_after_ws_palatal_diphthongization.bin
+
+clear stack
 regex OESandboxAfterJClusterCoalescence;
 save stack old_english_sandbox_after_j_cluster_coalescence.bin
+
+clear stack
+regex OESandboxAfterNasalDissimilation;
+save stack old_english_sandbox_after_nasal_dissimilation.bin
 
 clear stack
 regex OESandboxAfterBackMutation;
@@ -220,14 +387,7 @@ clear stack
 regex OESandboxAfterWsPalatalUmlaut;
 save stack old_english_sandbox_after_ws_palatal_umlaut.bin
 
-clear stack
-regex OESandboxAfterNasalSpirantLengthening;
-save stack old_english_sandbox_after_nasal_spirant_lengthening.bin
-
-clear stack
-regex OESandboxAfterNasalSpirantLoss;
-save stack old_english_sandbox_after_nasal_spirant_loss.bin
-
+# Stage 10: Late OE
 clear stack
 regex OESandboxAfterWeakTailNasalLoss;
 save stack old_english_sandbox_after_weak_tail_nasal_loss.bin
@@ -241,9 +401,47 @@ regex OESandboxAfterHighVowelApocope;
 save stack old_english_sandbox_after_high_vowel_apocope.bin
 
 clear stack
-regex OESandboxAfterHeavySyllableNasalApocope;
-save stack old_english_sandbox_after_heavy_syllable_nasal_apocope.bin
+regex OESandboxAfterMedialSyncope;
+save stack old_english_sandbox_after_medial_syncope.bin
 
+clear stack
+regex OESandboxAfterLAdjacentSyncope;
+save stack old_english_sandbox_after_l_adjacent_syncope.bin
+
+clear stack
+regex OESandboxAfterDentalAssimilation;
+save stack old_english_sandbox_after_dental_assimilation.bin
+
+clear stack
+regex OESandboxAfterPreconsonantalDegemination;
+save stack old_english_sandbox_after_preconsonantal_degemination.bin
+
+# Stage 11: Unstressed Vowel Changes
+clear stack
+regex OESandboxAfterUnstressedLongVowelShortening;
+save stack old_english_sandbox_after_unstressed_long_vowel_shortening.bin
+
+clear stack
+regex OESandboxAfterMedUnstressedULowering;
+save stack old_english_sandbox_after_med_unstressed_u_lowering.bin
+
+clear stack
+regex OESandboxAfterUnstressedIMarking;
+save stack old_english_sandbox_after_unstressed_i_marking.bin
+
+clear stack
+regex OESandboxAfterMedUnstressedILowering;
+save stack old_english_sandbox_after_med_unstressed_i_lowering.bin
+
+clear stack
+regex OESandboxAfterPrefixIReduction;
+save stack old_english_sandbox_after_prefix_i_reduction.bin
+
+clear stack
+regex OESandboxAfterPrefixAReductionLate;
+save stack old_english_sandbox_after_prefix_a_reduction_late.bin
+
+# Stage 12: Final Cleanup
 clear stack
 regex OESandboxAfterWeakTailReduction;
 save stack old_english_sandbox_after_weak_tail_reduction.bin
@@ -253,12 +451,20 @@ regex OESandboxAfterJLossAfterHeavy;
 save stack old_english_sandbox_after_j_loss_after_heavy.bin
 
 clear stack
+regex OESandboxAfterFinalGeminateSimplification;
+save stack old_english_sandbox_after_final_geminate_simplification.bin
+
+clear stack
 regex OESandboxAfterIntervocalicJVocalization;
 save stack old_english_sandbox_after_intervocalic_j_vocalization.bin
 
 clear stack
+regex OESandboxAfterUnstressedEIContraction;
+save stack old_english_sandbox_after_unstressed_ei_contraction.bin
+
+clear stack
 regex OESandboxAfterWeightCleanup;
-save stack old_english_sandbox_after_weight_cleanup_full.bin
+save stack old_english_sandbox_after_weight_cleanup.bin
 
 clear stack
 regex OESandboxAfterHLoss;
@@ -269,21 +475,10 @@ regex OESandboxAfterContraction;
 save stack old_english_sandbox_after_contraction.bin
 
 clear stack
-regex OESandboxAfterProtoToOEWeakTail;
-save stack old_english_sandbox_after_proto_to_oe_weak_tail.bin
+regex OESandboxAfterRMetathesis;
+save stack old_english_sandbox_after_r_metathesis.bin
 
-clear stack
-regex OESandboxAfterProtoToOEWeightMarkers;
-save stack old_english_sandbox_after_proto_to_oe_weight_markers.bin
-
-clear stack
-regex OESandboxAfterProtoToOEApocope;
-save stack old_english_sandbox_after_proto_to_oe_apocope.bin
-
-clear stack
-regex OESandboxAfterProtoToOEWeightCleanup;
-save stack old_english_sandbox_after_proto_to_oe_weight_cleanup.bin
-
+# Stage 13: Surface Forms
 clear stack
 regex OESandboxAfterProtoToOE;
 save stack old_english_sandbox_after_proto_to_oe.bin
