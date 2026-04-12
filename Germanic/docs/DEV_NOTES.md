@@ -18181,11 +18181,93 @@ could then be extended analogically to `þūsend`.
 
 #### FST Implementation Decision
 
-Use transponent `*θūsendi` (with pre-applied vowel change) and add a 
-note explaining that:
+Use transponent `*θūs-endi` (with pre-applied vowel change and compound marker) 
+and add a note explaining that:
 1. The medial `e` is analogical, not from regular i-umlaut
 2. The model (Vorbild) was probably words like `ærende` with `-und- → -end-`
 3. This is OE-specific; OS/OHG retain `u`
 4. The preserved `ū` (not `ȳ`) in the root proves the `-ī` was lost before 
    i-umlaut; if i-umlaut had applied, double umlaut would give `*þȳsend`
+
+---
+
+### Update: New Source Material (2026-04-12)
+
+Several new sources have been added to docs/references/ that shed light on the 
+OE þūsend problem:
+
+#### 1. Viredaz 2025 "Germanic, Slavic and Baltic 'thousand' once more"
+
+Key finding (§2.1.4):
+> "Van Helten 1906: 122 seems to imply that e of þūsend represents the regular 
+> umlaut of *u. **It seems to us that OE e in this position could spell ə and 
+> reflect any PGmc short vowel**, cf. Brunner 1942: 123."
+
+This is significant: Viredaz suggests the OE `e` might NOT be from i-umlaut at all, 
+but simply a **schwa-spelling** in an unstressed syllable. In OE, unstressed vowels 
+often merged to [ə], spelled ⟨e⟩. If so, OE þūsend could reflect *þūsund- directly, 
+with the medial `u` simply reduced to schwa and spelled `e`.
+
+This would mean our analysis (double umlaut → analogical reshaping) is one possibility, 
+but Viredaz's "schwa-spelling" hypothesis is another. Both explain the preserved `ū` 
+in the root.
+
+**Cross-reference**: Brunner 1942: 123 (= *Altenglische Grammatik* §53 on unstressed 
+vowel reduction)
+
+#### 2. Lühr 1998 "Zur Semantifizierung von Zahlwörtern"
+
+Lühr provides detailed analysis of the Germanic 'thousand' forms (pp. 117ff). She 
+notes the forms: got. þusundi, anord. þusund, ae. þusend, ahd. dūsunt. The article 
+focuses more on the semantic and morphological aspects (the -hundī compound element) 
+than on the OE vowel quality specifically.
+
+#### 3. Stiles 2012 "Older Runic evidence for NWGmc a-umlaut"
+
+While not directly about þūsend, this chapter is relevant for understanding the 
+chronology of vowel changes in NWGmc. Stiles challenges the standard "secondary split" 
+account of a-umlaut, showing that Older Runic forms like `horna`, `worahto`, `holtijaR` 
+display lowering even with conditioning factors intact.
+
+This is relevant for the *wir- → wer- change in "world" — see below.
+
+#### 4. Kylstra "Zum Alter des 'älteren' Umlauts im Germanischen"
+
+Discusses the chronology of "older umlaut" (a-umlaut, i.e., i/e and u/o alternations). 
+Engages with Cercignani 1980's claim that older umlaut wasn't Proto-Germanic.
+
+---
+
+### Implications for "world" (*wiră-aldu → weorold)
+
+The Stiles 2012 chapter and Streitberg *Urgermanische Grammatik* (now in docs/references/) 
+provide context for the *i → *e lowering before *a:
+
+**Streitberg** (p. 57, on *nest*):
+> "Lat. nīdus aus idg. *nizdos 'Nest', ae. mnd. ahd. nest, Grundform urgerm. *nestoz."
+
+This confirms the standard view: PIE *nizdos → PGmc *nestaz (with i→e before a).
+
+**Stiles** (p. 47-48):
+The "a-umlaut" of *i → *e before *a is part of a larger pattern:
+- Before high vowels (i, ī, j): *e → *i (raising)
+- Before low vowels (a, ō, etc.): *i → *e (lowering)
+- Before low vowels: *u → *o (lowering)
+
+The key insight is that these changes may have been **earlier** than traditionally 
+assumed, potentially already underway in Proto-NWGmc before the loss of final 
+syllable vowels.
+
+For *wiră-aldu 'world':
+- Root *wir- 'man' had *i
+- Following *-ald- had *a
+- Therefore *i → *e is expected (giving *wer-)
+- This is **regular phonology**, not analogical
+
+Our FST uses *wiră-aldu as PROTOFORM and correctly derives weorold via:
+1. InterStressRaising: *a → *u / _C₀ú (gives *-uldu)
+2. NWGmcILowering: *i → *e / _C₀a (gives wer-)
+3. Breaking: *e → *eo / _{r,l}C
+
+This is now confirmed by multiple sources as the standard reconstruction.
 
