@@ -1,20 +1,20 @@
-Total mismatches: 40
+Total mismatches: 39
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    6
-  Phonology (other buckets):   27
+  Phonology (core buckets):    7
+  Phonology (other buckets):   25
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
+  no_output: 1
   palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 3
-  length_extra_other: 1
+  final_vowel_extra: 2
   epenthetic_vowel_missing: 3
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
@@ -62,19 +62,24 @@ long_vowel_missing (3):
   *mizdō -> meord (expected mēd)
   *texun -> teoon (expected tīen)
 
+no_output (1):
+  *jugunθ -> +? (expected ġeoguþ)
+  >> ISSUE: FST produces no output (grammar rejection)
+  >> LIKELY: Compound separator (-), unusual cluster, or grammar gap
+  >> ACTION: Check if proto contains unsupported sequences; may need grammar extension
+
 palatalization_missing (1):
   *wīθijăz -> wīþ (expected wīþiġ)
   >> ISSUE: Palatal ġ/ċ expected but velar g/c produced
   >> LIKELY: Palatalization rule not applying in this context
   >> ACTION: Check palatalization environments; may be suffix-related
 
-final_vowel_extra (3):
+final_vowel_extra (2):
   *laimōn -> lāfe (expected lām)
-  *θūs-undī -> þūsynde (expected þūsend)
   *westănē -> westne (expected west)
-
-length_extra_other (1):
-  *jugunθiz -> ġeogȳþ (expected ġeoguþ)
+  >> ISSUE: FST has final vowel, target is vowelless
+  >> LIKELY: Apocope not applied, or TSV target is reduced form
+  >> ACTION: Check apocope rules; may be morphology mismatch
 
 epenthetic_vowel_missing (3):
   *saiwălō -> sāwl (expected sāwol)
