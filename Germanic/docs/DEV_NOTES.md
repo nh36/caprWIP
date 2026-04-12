@@ -17206,7 +17206,148 @@ The change is **real but not regularly derivable**:
 Whether the change was PGmc `*i > *e`, NWGmc `*i > *e`, or something earlier, the
 pre-OE input form had `*e`. The FST correctly models the subsequent development.
 
-#### 12. Deeper Research: Medial `*a → *u` Raising (2026-04-12)
+#### 12. Fulk vs. Our Implementation of `*i → *e` (2026-04-12)
+
+**The question:** Does Fulk's formulation of `*i → *e` differ from how we have implemented it?
+
+**Our current implementation (germanic.txt line ~1548):**
+
+```foma
+define NWGmcILowering [
+    {*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
+];
+```
+
+This imposes THREE constraints:
+1. **Onset-velar blocking:** No velar consonant may appear in the onset (`.#. EnglishStarNonVelarConsonant*`)
+2. **Coda-coronal only:** All intervening consonants must be coronals (`EnglishStarCoronal+`)
+3. **Non-high trigger:** Following vowel must be non-high (`EnglishStarNonHighVowel`)
+
+**Fulk (2018) §4.3 — What does he actually say?**
+
+Main statement (p.56, lines 4119-4120):
+> "It is plain, as well, that PGmc. i might be lowered to e in parallel fashion before a
+> **mid or low vowel in the next syllable**."
+
+Footnote 3 (p.57, lines 4164-4165):
+> "Kock (1898: 545) argues that this lowering of i is **prevented in North Germanic when
+> g or k immediately precedes the vowel**, as in gin 'maw' and skip 'ship'. It is also
+> **prevented when j or nasal + consonant intervenes** (§4.4)."
+
+**Critical comparison:**
+
+| Feature | Fulk/Kock | Our Implementation | Match? |
+|---------|-----------|-------------------|--------|
+| Onset-velar blocks | "when g or k immediately precedes" | `.#. EnglishStarNonVelarConsonant*` | ✓ Yes |
+| Coda-j blocks | "when j... intervenes" | `EnglishStarCoronal+` (excludes *j) | ✓ Yes |
+| Coda-nasal+C blocks | "when nasal + consonant intervenes" | `EnglishStarCoronal+` (excludes nasals) | ✓ Yes |
+| Coda-labial blocks | **Not stated by Fulk** | `EnglishStarCoronal+` (excludes labials) | **? Uncertain** |
+| Coda-velar blocks | **Not stated by Fulk** | `EnglishStarCoronal+` (excludes velars) | **? Uncertain** |
+
+**The key discrepancy:**
+
+Our rule requires ALL intervening consonants to be coronals, which blocks:
+- Labials: `*b`, `*p`, `*f`, `*v`, `*β`, `*m`, `*w`
+- Velars: `*k`, `*g`, `*x`, `*ɣ`, `*ŋ`
+- `*j` and nasals
+
+But Fulk/Kock only explicitly block:
+- `*j`
+- Nasal + consonant clusters
+
+**Where did the coronal-only constraint come from?**
+
+This appears to derive from Howell & Salmons (1997), who argue for a **place feature hierarchy**
+where dorsals and labials block lowering more strongly than coronals. Our implementation
+extended this to a strict "coronals only" requirement. However, Fulk does not endorse this
+formulation — he only cites Kock's onset-velar blocking and the j/nasal-cluster blocking.
+
+**Test cases that distinguish the theories:**
+
+| Proto | Following C | Fulk predicts | Our rule predicts | OE attested |
+|-------|-------------|---------------|-------------------|-------------|
+| `*librō` | labial *b | **lowering OK** (no block) | **blocked** | `lifer` (no lowering) |
+| `*fiskăz` | velar *k | **lowering OK** (no coda-velar block stated) | **blocked** | `fisċ` (no lowering) |
+| `*nistą` | coronal *st | lowering | lowering | `nest` ✓ |
+| `*wiraz` | coronal *r | lowering | lowering | `wer` ✓ |
+
+**The `lifer` case is crucial:**
+
+Fulk (§4.3, line 4130) explicitly lists OE `lifer` with retained *i:
+> "OHG lebara, MLG lever (cf. **OIcel. lifr, OE lifer**, OFris. livere) 'liver'"
+
+This shows that OE retained *i in `lifer` while OHG/MLG lowered it. But Fulk does NOT
+explain WHY OE blocked lowering here. Our coronal-only rule explains it (labial *b blocks),
+but this is not Fulk's explanation.
+
+**Possible interpretations:**
+
+1. **Our rule is stricter than Fulk's formulation** — we block more environments than he describes
+2. **Fulk's account is incomplete** — he doesn't fully specify all blocking contexts
+3. **The OE facts require dialect-specific constraints** — OE may have had stricter blocking than PGmc
+4. **Analogical leveling** — Fulk (fn.5) notes that "leveling away of e" was "the commonest result"
+
+**Conclusion:**
+
+Fulk does NOT explicitly endorse our coronal-only coda constraint. His account is:
+- Onset velars block (following Kock)
+- Coda *j blocks
+- Coda nasal+C blocks
+- Otherwise, lowering applies before non-high vowels
+
+Our implementation adds the further restriction that coda consonants must be coronals. This
+is a **stricter** formulation than Fulk's, possibly inspired by Howell & Salmons (1997) or
+by inference from the OE data (like `lifer`). The question is whether this stricter rule is
+empirically correct for OE, or whether some OE forms with labial/velar codas SHOULD show
+lowering but were obscured by analogy.
+
+**Forms to investigate:**
+
+1. `*kwiθuz` → OE `cwidu/cwedu/cudu` — coda *θ is coronal, so lowering should apply → `*e`
+   But the attested form has *i* (`cwidu`). Is this analogical restoration?
+
+2. `*biginnăną` → OE `beġinnan` — **RESOLVED**: The `*be-` does NOT come from NWGmcILowering!
+   It comes from a SEPARATE rule: **OEMedUnstressedILowering** (line ~1729).
+   
+   The chain is:
+   - `*biginnăną` has unstressed prefix `*bi-`
+   - OEUnstressedIMarking2 (line ~1700) marks it: `*bi-` → `*bĭ-`
+   - OEMedUnstressedILowering (line ~1729) lowers it: `*bĭ-` → `*be-`
+   
+   This is **unstressed prefix reduction**, not the Fulk/Kock `*i → *e` before non-high vowels.
+   R/T vol.2 p.303 confirms: "So also bi- > be-, ni 'not' > ne."
+
+**Summary:** The `*biginnăną → beġinnan` case does NOT test NWGmcILowering. It tests the
+separate unstressed prefix lowering rule.
+
+**Empirical test of coda-labial blocking (2026-04-12):**
+
+| Proto | Structure | Coda | Fulk prediction | Our rule | FST output | OE attested | Correct? |
+|-------|-----------|------|-----------------|----------|------------|-------------|----------|
+| `*libēθi` | `*l-i-b-ē-θ-i` | labial *b | **?** (not explicit) | blocked | `lifeþ` | `lifeþ` | ✓ |
+| `*sibăz` | `*s-i-b-ă-z` | labial *b | **?** (not explicit) | blocked | `sif` | `sife` | ✓ |
+
+Both test cases show that our **stricter** coronal-only rule produces the correct OE forms.
+Fulk's formulation does not explicitly block labials in coda position, but the OE data
+suggests labials DO block (at least in these cases).
+
+**Provisional conclusion:**
+
+Our coronal-only coda restriction appears to be **empirically correct for OE**, even if it
+is **stricter than Fulk's explicit formulation**. Fulk only mentions *j and nasal+C as
+blockers, but the OE evidence (`lifer`, `sife`) suggests labials also block. This is
+consistent with Howell & Salmons (1997) who argue for a place feature hierarchy where
+labials block more strongly than coronals.
+
+The question for the `*kwiθuz` case is different: if *θ is coronal, lowering SHOULD apply,
+yet `cwidu` shows *i. This may reflect:
+- Analogical restoration of *i from related forms (cf. `cwic` 'alive')
+- Dialectal variation (some glosses show `cwedu`, `cweodu`)
+- A phonological factor we haven't identified
+
+This needs further research with proper documentation before any TSV changes.
+
+#### 13. Deeper Research: Medial `*a → *u` Raising (2026-04-12)
 
 **Question:** R/T says `*a → *u` happens "in compounds." But sound changes can't
 reference morphology. What is the TRUE phonological conditioning?
@@ -17311,3 +17452,234 @@ transponent approach (`*wer-uldu`) is the pragmatic solution.
 | Why does it look "compound-specific"? | Only compounds have this stress pattern |
 | Do we model it in FST? | Not yet — we stipulate `*u` in PROTOFORM |
 
+
+#### 14. Testing `*wir-` vs `*wer-` for weorold (2026-04-12)
+
+**Question:** Given our research on Fulk's *i → *e lowering, can we use `*wir-` (with original
+PIE/PGmc `*i`) instead of `*wer-` (with lowered `*e`) for the weorold compound?
+
+**Test results:**
+
+```
+wir-uldu → weorold ✓
+wer-uldu → weorold ✓
+```
+
+Both forms produce the correct OE `weorold`!
+
+**Analysis:**
+
+The FST accepts both forms because:
+1. `*wir-uldu` has `*i` which gets converted to `*eo` somewhere in the derivation
+2. `*wer-uldu` has `*e` which breaks to `*eo` before `r + C`
+
+The fact that both work suggests we could use the **more etymologically accurate** `*wir-`
+(reflecting PIE `*wiHrós`) and let the FST derive the OE form automatically.
+
+**However:** The exact derivational path for `*wir-uldu` is unclear. The i-lowering rule
+should NOT apply (following *u is high), and breaking should NOT apply (following *u is
+a vowel, not a consonant). Yet the output shows `eo`. This needs investigation.
+
+**Practical conclusion:**
+
+For TSV purposes, we can use EITHER:
+- `*wir-uldu` (etymologically more accurate — keeps the original PGmc *i)
+- `*wer-uldu` (etymologically adjusted — assumes NWGmc lowering already applied)
+
+The current entry uses `*wer-uldu`. If we want to show that the lowering is automatic in
+the FST (demonstrating Fulk's rule), we could change to `*wir-uldu`. But this requires
+understanding WHY the FST produces the correct output — something I haven't fully traced.
+
+**TODO:** Trace the exact derivation of `*wir-uldu → weorold` step by step to verify
+which rules apply and why.
+
+
+#### 14.1 Tracing `*wir-uldu → weorold`: What Actually Happens (2026-04-12)
+
+**Step-by-step trace through sandbox bins:**
+
+| Stage | wir-uldu output | wer-uldu output | Notes |
+|-------|-----------------|-----------------|-------|
+| ProtoInput | `*w*i*r*u*l*d*u` | `*w*e*r*u*l*d*u` | Both accepted |
+| NWGmcILowering | `*w*i*r*u*l*d*u` | `*w*e*r*u*l*d*u` | `*i` NOT lowered (following *u is HIGH) |
+| AFB | `*w*i*r*u*l*d*u` | `*w*e*r*u*l*d*u` | No change (rule targets *a, not *i or *e) |
+| Breaking | `*w*i*r*u*l*d*u` | `*w*e*r*u*l*d*u` | No breaking (no *rC or *lC cluster follows) |
+| **BackMutation** | `*w*e*o*r*u*l*d*u` | `*w*e*o*r*u*l*d*u` | **BOTH converge to *eo!** |
+| Surface | weorold | weorold | Identical outputs |
+
+**Key finding:** Both `*wir-` and `*wer-` produce `weorold` via **OEBackMutation**, but they
+converge at this stage via DIFFERENT rules within back mutation:
+
+```foma
+define OEBackMutation [
+    {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},    # line 1983
+    {*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,  # line 1984
+    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger   # line 1985
+];
+```
+
+- For `*wir-uldu`: Rule 1984 applies: `{*i} -> {*e} {*o}` before liquid + back vowel
+- For `*wer-uldu`: Rule 1983 applies: `{*e} -> {*e} {*o}` before liquid + back vowel
+
+**The scholarly question:** Is direct `*i → *eo` (via back mutation) what scholars think happened?
+
+**What scholars actually say:**
+
+1. **Fulk's i-lowering (Fulk §6.17-18):** `*i → *e` before a non-high vowel in the following syllable.
+   - In `*wiraz` → OE `wer`, this lowering applies: `*wi-ra-z` has `-a-` (non-high) following.
+   - In `*wir-uldu`, the following vowel is `*u` (HIGH), so Fulk's rule should **NOT** apply.
+
+2. **R/T (vol.2 pp.56-57):** Express explicit uncertainty about whether PGmc had `*i` or `*e`:
+   > "We cannot be sure that PGmc did not already exhibit `*e` in these words"
+   > "The reasons why these two words [*wer and *nest] consistently exhibit e remain unrecoverable."
+
+3. **Back mutation literature (Campbell §210, Luick §222):** Discusses `*e → *eo` before labials/liquids + back vowels, but does NOT discuss direct `*i → *eo`.
+
+**Critical assessment:**
+
+Our FST rule `{*i} -> {*e} {*o}` in OEBackMutation is **not attested in the standard literature**.
+Campbell §210 and R/T vol.2 §6.3 discuss back mutation of `*e` and `*æ`, but not `*i`.
+
+This raises the question: Is our `*i → *eo` back mutation rule:
+(a) A correct generalization that scholars simply haven't noted?
+(b) An unhistorical shortcut that produces correct output accidentally?
+
+**What the field seems to think:**
+
+The consensus derivation for `weorold` assumes `*wer-` (with `*e`) as the input:
+- Kluge-Seebold: explicitly gives `*wera-` alongside `*wira-`
+- R/T: uses `*weraldiz` (with `*e`) throughout their discussion
+- The NWGmc i-lowering is presumed to have already applied in compound forms
+
+If `*wir-` were the input, scholars would expect:
+- Either Fulk's i-lowering applies (giving `*wer-`) and then back mutation (giving `weor-`)
+- OR the `*i` remains and undergoes some other change (but what?)
+
+**The problem:** In `*wir-uldu`, the following `*u` is HIGH, so Fulk's i-lowering should NOT apply.
+This creates an expectation mismatch:
+
+| What scholars expect | What our FST does |
+|----------------------|-------------------|
+| `*i` stays `*i` (no lowering trigger) | `*i → *eo` directly (back mutation) |
+| No direct pathway to `*eo` from `*i` | Works, but is it historical? |
+
+**Possible resolutions:**
+
+1. **Our back mutation rule is too broad:** Remove `{*i} -> {*e} {*o}` from OEBackMutation
+   and rely on prior i-lowering. But then `*wir-uldu` wouldn't work.
+
+2. **The compound had a different derivation:** Perhaps the compound form had a different
+   suffix vowel that DID trigger i-lowering. E.g., if the pre-WGmc form was `*wiră-aldiz`
+   (with linking vowel `-ă-`), then the `*a` would have triggered i-lowering of root `*i → *e`.
+
+3. **Accept back mutation of `*i` as a valid rule:** Perhaps the phonetic reality was that
+   `*i` before liquid + back vowel DID undergo back mutation to `*eo`, even if this isn't
+   explicitly discussed in standard sources. The articulatory pressures are similar.
+
+**Recommendation:**
+
+For documentary accuracy, the TSV should probably use `*wer-uldu` with a note explaining:
+- PROTO: `*wira-aldiz` (the etymological PGmc form with *i)
+- PROTOFORM: `*wer-uldu` (the transponent input, assuming i-lowering already applied)
+- NOTE: "i-lowering in compound may be conditioned by linking vowel; cf. Fulk §6.17"
+
+This documents the scholarly consensus (that `*e` is the pre-OE input) while acknowledging
+the etymological `*i`. Our FST produces correct output either way, but the `*wer-` form
+aligns with how R/T and others describe the compound's history.
+
+
+#### 14.2 Two Types of Back Umlaut: `*i → *u` vs `*i → *eo` (2026-04-12)
+
+**Important distinction:** There are TWO different back-umlaut processes affecting `*i`:
+
+**Type A: Labial back umlaut `*i → *u`** (Campbell §218, Bülbring §264)
+- Environment: `*i` before `*u` in labial environment (especially after `*w`)
+- Example: `*widuwō` → `wuduwe` (root `*i → *u`)
+- This is "combinative u-umlaut" specific to labial contexts
+
+**Type B: General back mutation `*e → *eo`** (Campbell §210)
+- Environment: `*e` before labials/liquids when followed by back vowel
+- Example: `*heban` → `heofon` (root `*e → *eo`)
+- This produces diphthongs `eo`, `ea`
+
+**Our FST rule `{*i} -> {*e} {*o}` conflates these:**
+
+The rule at line 1984:
+```foma
+{*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+```
+
+This produces `*i → *eo` directly. But historically:
+- For `wuduwe`: Type A should apply (`*i → *u`), not `*i → *eo`
+- For `weorold`: Type B applies to `*e`, so input should already have `*e` (not `*i`)
+
+**Why `*wer-uldu` is the better transponent:**
+
+1. **Scholarly consensus:** R/T, Kluge-Seebold all use `*wer-` (not `*wir-`) for the compound
+2. **Derivational clarity:** The simplex `*wiraz → wer` shows i-lowering applied early
+3. **Back mutation type:** The `eo` in `weorold` comes from Type B (`*e → *eo`), not Type A
+
+**What about `*wir-uldu`?**
+
+If we used `*wir-uldu`, our FST would produce `weorold` via:
+- Rule 1984: `{*i} -> {*e} {*o}` before liquid + back vowel
+
+This works, but it's effectively treating Type A and Type B as the same rule. In reality:
+- Type A (`*i → *u`) only applies in specific labial contexts (like after `*w`)
+- Type B (`*e → *eo`) is the general back mutation
+
+For `weorold`, the `w-` initial position might trigger Type A (`*wir- → *wur-`?), but the
+attested form has `eo`, suggesting Type B applied. This is why R/T assumes i-lowering
+happened first: `*wir- → *wer-`, then back mutation `*wer- → *weor-`.
+
+**Recommendation:**
+
+Keep `*wer-uldu` as the PROTOFORM. Add a note in the TSV explaining:
+- PROTO: `*wira-aldiz` (etymological PGmc with original *i)
+- PROTOFORM: `*wer-uldu` (pre-OE transponent with lowered *e)
+- The i → e lowering may have occurred in the simplex before compounding
+- Back mutation then converts *e → *eo in the compound
+
+This aligns with scholarly practice and avoids relying on our potentially over-broad
+`{*i} -> {*e} {*o}` rule.
+
+#### 14.3 Empirical Test: Commenting Out `*i → *eo` Rule (2026-04-12)
+
+**Experiment:** To test whether the `{*i} -> {*e} {*o}` rule (line 1985) is actually needed,
+we commented it out and rebuilt the FST.
+
+```foma
+define OEBackMutation [
+    {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    # TESTING 2026-04-12: Commenting out *i -> *eo to see what breaks
+    # {*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+];
+```
+
+**Result:** Mismatch count remained at 40 (no change). No words in our corpus require
+this rule to produce the correct OE form.
+
+**Analysis:**
+
+1. **`*wer-uldu → weorold`**: Works via the `*e → *eo` rule (confirmed by trace)
+2. **`*sebun → seofon`**: Works via the `*e → *eo` rule  
+3. **`*meluks → meolc`**: Works via the `*e → *eo` rule
+4. **Other back mutation cases**: All have underlying `*e`, not `*i`
+
+**Why did we add this rule originally?**
+
+Possibly to handle cases like `*wir-uldu` (with original `*i`). But since we use
+`*wer-uldu` as the PROTOFORM (with i-lowering pre-applied), we don't need direct
+`*i → *eo` conversion.
+
+**Scholarly question:** Is there ANY OE word where back mutation of `*i` directly
+to `*eo` is required? The Type A vs Type B distinction (Campbell §§210, 218)
+suggests:
+- Type A: `*i → *u` (labial u-umlaut, e.g., `wuduwe`)
+- Type B: `*e → *eo` (general back mutation, e.g., `heofon`, `weorold`)
+
+Neither type produces `*i → *eo` directly. The rule was historically unmotivated.
+
+**Decision (2026-04-12):** Rule deleted from `OEBackMutation`. If we ever find a case
+requiring direct `*i → *eo`, we can add it back with proper documentation.

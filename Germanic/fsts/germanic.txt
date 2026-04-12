@@ -1981,7 +1981,6 @@ define OENasalDissimilation [
 
 define OEBackMutation [
     {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*i} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
     {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ];
 
