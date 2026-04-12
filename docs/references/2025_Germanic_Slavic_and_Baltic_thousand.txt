@@ -1,0 +1,2344 @@
+     Germanic, Slavic and Baltic ‘thousand’ once more
+                                 Rémy Viredaz, Geneva
+                                     20.10.2025
+
+1.     Introduction
+       1.1. Problem statement
+       The word for ‘thousand’ in Baltic, Slavic and Germanic languages is a well-
+known puzzle, with forms that are obviously related but annoyingly divergent
+(Bopp 1853: 446; Derksen 2015: 473 f., 2008: 503, Comrie 1992: 792-795, Jakob
+2024: 740-745, Kroonen 2013: 554, Ross–Berns 1992: 621): Lithuanian tū́kstantis,
+Latvian tũkstuots; Finnish (loan) tuhat; Old Prussian acc. pl. tūsimtons; Slavic
+*tysętji, *tysǫtji; Gothic þūsundi, Old Norse þúsund without umlaut but also
+þúsand, þúsind, þúshund, þús-hundrað, Old English þūsend, Old High German
+dūsunt.
+       The most commonly posited PIE preform is now perhaps *tuH-s-(o)nt- >
+*tūs(o)nt-, but the word underwent a number of irregular changes, more or less well
+explained, on its way to the daughter languages, especially in Baltic, and several
+points remain disputed1.
+
+2.     Germanic
+      See forms in Ross–Berns 1992: 621, 682, Lühr 1998: 890 f., Gorbachov
+2006: 2, Braune 2023/1886: 229 §274.
+
+       2.1. Vocalism
+       Ross–Berns 1992: 621 posit no less than five protoforms : (1) *þūsundjō- f.,
+nom. sg. *þūsundī, (2) *þūsunda- n., (3) *þūsanda- n., (4) *þūsandja- n., (5)
+*þūsinda- n. However, this is a minority view. Only the first of these types is sure,
+while the semblance of others can often be explained by secondary innovations, i.
+e. post-Proto-Germanic accidents, see van Helten 1906: 122 f., Gorbachov 2006: 2,
+13.
+
+
+
+
+1
+ It’s a pleasure to thank Anthony Jakob, Juho Pystynen and Douglas G. Kilday for their crucial
+help with various points of this paper (fnn. 2, 32, 54, 76, 78).
+     2.1.1. Gothic
+     Goth þusundi subst. f., nom. pl. -jos (Streitberg 1920: 136 f.), reflects PGmc
+*þūsundī.
+
+       2.1.2. Old Norse
+
+       2.1.2.1.Nominative ending
+       ON þúsund f.2, without umlaut, is not phonetically regular (if from *-ī)3.
+Even morphologically, *þūsundī contrasts with other *-ī/*-jō-stems like *wulgī
+‘she-wolf’, *armī ‘sleeve’ ® *-īz > ylgr, ermr.
+       a) Van Helten, l. c. 122 explains it by an irregular shortening of final *-ī4
+supposed to have occurred early enough for the resulting *-i to undergo the primary
+apocope, the one that predates umlaut. However, that’s not the likeliest chronology,
+because that would imply that Gothic had escaped this irregular shortening and
+only suffered the later, regular shortening of final long vowels. Now, the archaism
+of Gothic is not generally due to its having split off earlier (in fact, earlier
+emigration is more of a factor of innovations), but to a larger extent merely to its
+being attested earlier.
+       b) One alternative explanation would be to favour the opposite chronology:
+1° Regular pan-Germanic shortening of final long vowels5. 2° “Post-Gothic”,
+irregular loss of *-i in this word, both in North and West Germanic (below), early
+enough to predate umlaut, hence ON þúsund.
+       Numerals are relatively prone to irregular phonetic reductions. However,
+þúsund is neither particularly frequent, nor particularly long. Another factor of
+these reductions is that numerals often appear in contexts in which a numeral is
+expected so that it potentially contrasts mostly with other numerals. Still,
+‘thousand’ does not really fits this criterion, because of its frequent use for an
+indefinite large quantity (2.4).
+       c) þúsund is both nominative and accusative, unlike the regular type, Gothic
+nom. mawi : acc. mauja ‘girl’ (~ Lith. saldì, sáldžią ‘sweet (fem.)’, OCS bogynji,
+bogynjǫ ‘goddess’). This suggests that the word shifted to the *i-inflection for some
+
+2
+  Thanks to Douglas G. Kilday for his help in understanding the intricate diachrony of *-ĭ-, *-ō-
+and *-ī/jō- stems in ON.
+3
+  Gorbachov 2006: 2 suggests that nom. sg. þúsund, gen. sg. þúsundar are phonetically regular,
+which is mistaken on both accounts as far as we have understood ON phonology.
+4
+  Van Helten does not specify whether this shortening would be regular or irregular, but we have
+found no rule to that effect anywhere in Noreen’s grammars.
+5
+  This shortening is pan-Germanic, but not Proto-Germanic, cf. *-ō > Goth -a vs. OHG, ON (*)-
+u.
+reason, i. e. the reflex of *þūsundī (with its paradigm) gave way to what would
+have been the reflex of a virtual *þūsundiz. Most old *i-stems do not show -r in
+the nominative singular in ON, and many do not show umlaut, perhaps because
+PGmc *-in was treated as *-i i. e. the final *n did not “protect” *i, *u from early
+shortening (whereas it did protect *ō, i. e. *-ōn was not treated like *-ō). Indeed,
+van Helten 1906: 123 speaks on an “Übertritt des ī-starnmes in die fem. i-
+Deklination”. The reason for this change of inflection is probably that the model of
+the feminines in nom. sg. *-ō : nom. pl. *-ōz induced the feminines in nom. sg. -ī to
+take the nom. pl. *-īz of the *-i-stems (< *-ijiz < PIE *-eyes).
+
+       2.1.2.2. Inflection
+       The inflection is not phonetically regular either6, but it’s consistent with the
+hypothesis of a shift to the *-i-stem inflection:
+       a) Nom. pl. þúsyndir, þúsynder, with i-umlaut.
+       b) Gen. sg. þúsundar,dat. pl. þúsundum with no trace of the *j of PGmc
+*þūsundjōz. Regular sound change would have yielded umlaut throughout, but
+perhaps the stem of unumlauted acc. sg. -und (if regular, cf. 2.1.2.1) spread to the
+nominative and the rest of the inflection.
+       c) Occasional analogical cxtension of u in West Norse pl. þúsunder, of *y in
+the sg. -ind forms below (van Helten, l. c.).
+
+       2.1.2.3.Variations in vocalism
+       An unattested *þúsynd (2.1.2.2 c) seems necessary to account for the forms
+in -ind – unless one is wishing to admit a PGmc *þūsenda- (as if from PIE
+*tūsento-) in addition to *þūsundī (< *tūsn̥tī).
+       Although van Helten (l. c.)7 sees the i in Runic Swedish þusind, Old Danish
+t(h)usin(d) as a spelling for /y/, this type of spelling seems too frequent for that
+explanation and reflects perhaps a linguistic reality, namely a dissimilation of
+unaccented *y to i after ú in this word. The dissimilation may have taken place
+either in the singular *þúsynd, analogical of pl. þúsynder, or directly in pl. þúsynder
+> *þúsinder before the creation of þúsind.
+       Rather than analogy, an alternative explanation for the *-ynd (> -ind) forms
+(including Old Frisian below) might be that PGmc *þūsundī regionally and
+optionally escaped the irregular shortening of *-ī mentioned above. Yet such an
+
+
+6
+  Gorbachov’s square brackets and asterisks in 2006: 2 do not mark unattested forms, but forms
+that have drifted away from the devī́ type (or mawi type in Gothic).
+7
+  With references to Noreen, whose only evidence for Old Norse is a hapax ind for ynd. [We have
+not been able to see van Helten’s Altnostfrk. Gr.]
+early areal feature straddling the main dialectal division between North and West
+Germanic may not be likely.
+      As for the a of OSw þúsand, ODan tusand, it results from an “obvious”
+influence of hundrað ‘hundred’ according to van Helten (l. c.).
+      The other spellings OSw þúsæn, ODan thusænd are not clear to us.
+      There is some extent of unpredictable variation i ~a ~ u (a forerunner to the
+reduction to ə) in Old Norse and Old Swedish (Noreen 1904: 164-167).
+
+       2.1.3. High German
+       Explanations similar to those cited for Old Norse above account for OHG
+thūsunt, dūsunt and Old North-East Franconian thūsint (van Helten, l. c.). The loss
+of the ending (whatever the reason, see 2.1.2.1 for Old Norse) in *þūsundī ® OHG
+dūsunt is probably responsible for the latter becoming indeclinable or shifting to
+other inflection types (cf. Gorbachov 2006: 2). Influence of hunt ‘hundred’ caused
+an occasional shift to the neuter gender (van Helten, l. c. 123; Lühr 1998. 891).
+       The rare MHG variant tūsant (Ross–Berns l. c., quoting Mausser 1933: 525;
+not in Lexer), besides tūsent, tūsunt, cannot be explained in the same way as
+suggested for ON þúsand by van Helten (above, 2.1.2, end), since ‘hundred’ does
+not show forms in a in German. Given its date and the lack of instances such as
+*thūsant, *dūsant in this word in German (Ross–Berns 1992, 620), we must rather
+have to do with an inverse spelling of +tūsənt, cf. ābant ~ ābent [ə] ‘evening’ (cf.
+Mausser 1933, 525).
+       The neuter gender of tūsent in Notker and the indeclinable use of thūsunt by
+Otfrid are analogical to hunt ‘hundred’ (van Helten, l. c. 123).
+
+       2.1.4. English
+       OE þūsend cannot reflect Comrie’s (1992: 621) PGmc *þūsenda- (which
+would be *þūsinda- and cause umlaut). The change of inflection suggested above
+2.1.2.1 c would let us expect umlaut (cf. *anstiz ‘favour’ > OE ǣst, ēst, Ol Frisian
+enst vs. ON ást, ǫ́st, OS OHG anst). Van Helten 1906: 122 seems to imply that e of
+þūsend represents the regular umlaut of *u. It seems to us that OE e in this position
+could spell ə and reflect any PGmc short vowel, cf. Brunner 1942: 123.
+       -and in the modern spellling thousand is not old but appears in Middle
+English – not in the literature according to MED (except for one line in Chaucer8),
+
+8
+  Canterbury Tales A 1954 (Wright 1956). – We don’t know what MED means by “thousend
+[thousand]”. The text has thousand in all four modern editions we have looked up, with no
+mention of a varia lectio, and so does the Hegwrt manuscript photographed in Ruggiers 1979:
+100.
+but abundantly in other sources (among many other spellings: eMED s. v.
+thousand).
+
+       2.1.5. Old Frisian
+       thûsend, with e to be explained as in Old English (2.1.4).
+
+       2.1.6. Methodological note
+       Linguistic reconstruction mostly strives to monogenesis, i. e. tracing cognate
+forms of the daughter languages to a single prototype9. In a privileged instance such
+as PIE *sweḱs ‘six’, monogenesis is a welcome conclusion (namely, all the alleged
+evidence for initial variants *se-, *we-, *ks(w)e- can be plausibly dismissed as
+resulting from post-PIE innovations on criteria other than the mere wish for
+monogenesis, Viredaz 1997). More often, however, monogenesis is only a working
+hypothesis, based on the general principle of parsimony (Occam’s razor), even if in
+many cases, like PGmc *þūsundī, unicity of origin can only be achieved through a
+number of additional hypotheses, e. g. irregular sound changes, analogical levelings
+or borrowings. (There’a whole typology of irregular changes, with some of them
+less irregular than others.) Nevertheless, we hold that the example of *sweḱs
+confirms the general validity of the monogenetic principle.
+
+       2.2.   Inlaut consonantism
+
+       2.2.1. The *-s-h- tale
+       Some Germanic forms have often been pressed into service in favour of an
+etymology starting from PGmc *þūshundī, PIE *tūs-ḱm̥t-ī *‘Krafthundert’:
+Cleasby-Vigfusson 751 s. v. þúsund, Bugge 1888: 327, Streitberg 1896: 145; for
+further references see Bugge l. c., Pijnenburg 1989: 100, Lühr 1998: 892,
+Gorbachov 2006: 8. Despite all refutations, this view is still adhered to, with slight
+reservation, by Kroonen 2013: 554 s. v. *þūsundī-. However, PIE *-sḱ- would yield
+Gmc *-sk- (because *tus, *þūs is not an independent word). An attempt to fix this
+problem is Szemerényi’s (1990: 240 f., 1996: 227) *tūso-ḱm̥tī > *þūsa-hundī
+(followed by Rix 1991: 225), which, however, only makes things worse even for
+Germanic in terms of irregular sound changes.
+       These forms are better explained otherwise:
+       ON þúshund, a rare variant of þúsund, is certainly due to popular etymology
+after *hund ‘cent’ (Hirt 1896: 345, van Helten 1906: 122, Gorbachov 2006: 13).
+Another variant is þúshundrað. A problem for this view is that þúshund only turns
+
+9
+ This may not belong to the usual or registered acceptations of the word, but it concords with its
+overall meaning and we’ve found it useful for the present discussion.
+up in written documents after hund ‘hundred’ has gone out of use: þúshund is not
+found in the earliest documents while hund (Cleasby-Vigfusson 292) is only found
+as first member of poetic compounds with a value that could be weakly translated
+as ‘very’. A solution is perhaps that þúshund was initially branded as incorrect
+speech and only later found its way in the formal language of a few writers. That
+þúshund might be older than þúsund is disproved by its non-occurrence in the
+earliest texts and especially by Gothic þūsundi.
+       The archaic form thuschunde that Jakob Grimm (1853: 385), followed by
+Kluge (who finds that the evidence “besonders schwer wiegt”, 1901: 491) and
+others (including Kroonen 2013, 554: with a tad of caution), wanted to read in the –
+extremely corrupt – glosses to the Lex Salica, is unfounded speculation: the
+spellings -tius chunde, -tus chunde, -thus chunde, -tos chunde of cod. 8 correspond
+to -nu sunde, -t usunde, tho sunde, -no sunde of the Heroldiana; another line of the
+same list shows in these two manuscripts -thocundi, to condi respectively; spellings
+in ch must be analogical of the word chunna (< *hund-n-) which occurs several
+times in that list (van Helten 1900: 512, 514, 516, followed by e. g. Ross–Berns
+1992: 621, Lühr 1993: 120 f., 1998: 894)10.
+       It’s remarkable how successful this *-s-h-tale has been (e. g. Brugmann
+1909: 48 f., Mausser 1933: 873) and how late it’s remained attractive to some
+scholars even though it has already been disproved in 1896-1900.
+
+        2.2.2. Verner’s Law
+        The voiceless *s of PGmc *þūsundī proves that the PIE accent was on the
+first syllable (unless perhaps one starts from PIE *tūtsn̥tī, which we don’t, 5.1.2, or
+from *tūs-ḱm̥tī, which is impossible, 2.2.1, 5.1.1).
+        Mausser 1933: 873(2) insists that the voiced *d of the third syllable proves
+that the PIE accent was final. This, however, is a misinterpretation of Verner’s
+Law. Verner’s voicing is regular after a non-initial syllable whatever the accent
+        While the initial accent of Lithuanian tū́kstantis, Slavic *tysę/ǫtji is not
+significant because it might also be due to Hirt’s Law, the former initial accent
+implied by Gmc *þūsundī must be inherited.
+
+      2.2.3. The d-less forms
+      In light of Goth sunjis ‘true’, sunja ‘truth’, OE synne ‘sin’ (vs. OS sundia,
+OHG suntea ‘id.’), Goth sunjon sik ‘to excuse oneself’, ON synja ‘to deny (a
+charge)’, syn ‘denial’ it seems that PGmc *-ndj- is regularly reduced to *-nj-, hence
+
+10
+  Gorbachov 2006: 11, 13 cites the Salian forms as if they were sprachwirklich, which they are
+not, and analogical of *hund ‘hundred’, which is not accurate (the source of the influence is
+chunna, a derivative of *hund, see above).
+PIE *h1s-n̥t-íh2, *-yéh2-s > post-PIE *sn̥tī́, *sn̥tyā́s > PGmc *sundī, *sunjōz, with
+leveling in different directions, and *sn̥t-yó- (Skt satyá- ‘true’) > PGmc *sunja- (e.
+g. van Helten 1906: 123, Kroonen 2013: 492)11.
+       In ‘thousand’, however, it seems that the re-generalization of *-nd- is old and
+pan- or Proto-Germanic and that the final -n of some languages (Modern Swedish
+and Norwegian, sporadically in Old Swedish and Danish, in Middle English and in
+modern Frisian, Dutch and Low German dialects, Ross–Berns 1992: 621) is a later
+irregular reduction of *-nd, because d-less forms are not found in the oldest
+documents (Gothic [not significant for paucity of examples], Runic ON; OHG, OS,
+OE).
+
+      2.3. Later accidents
+      We’ll skip a few curiosities that are too late to be relevant for the Indo-
+European etymology, e. g.:
+      Initial devoicing in MHG tūsent, ModG tausend vs. OHG dūsunt, see Bugge
+1888: 325 f., Braune 2023: 228 §167 Anm. 8.
+      Irregular (?) reduction in Middle Dutch duust, duyst (beside dusen(t), dusant,
+dusentich), Flemish duust, Ross–Berns 1992: 621, Lühr 1998: 891.
+      General or sporadic reduction *-nd > -n (2.2.3).
+      Velar for dental in the MHG variants tūsinc, tūseng, tūsig, Ross–Berns 1992:
+682 n. 324; compare perhaps nd > ng in Swiss-German, Zurich tuusig, Aabig,
+Hund, hinder, Bern tuusig, Aabe (general), Hung, hinger (countryside)/Hund,
+hinder (city12) ‘thousand, evening, dog. behind’ (Weber–Bächtold 1983, von
+Greyerz–Bietenhard 1984, s. vv.); the wider extension with ‘thousand’ perhaps by
+dissimilation13.
+
+       2.4. Frequency, meaning
+       Cleasby-Vigfússon 751 s. v. þúsund note the following:
+       There is little doubt that with the ancient heathen Scandinavians (and perhaps all
+       Teutons), before their contact with the civilised southern people, the notion of numbers
+       was limited, and that their thousand was not a definite number, but a vague term, denoting
+       a swarm, crowd, host (cp. the Gr. μυρίοι): in ancient lays it occurs thrice (Hkv., Em., Fas.
+       i. 502), but indefinitely (…) [I]n the ancient popular literature, uninfluenced by southern
+       writers, ‘þúsund,’ as a definite number, occurs, we think, not half-a-dozen times. As the
+
+11
+   It could be asked whether Skt satyá-, Gmc *sunja- is not old but back-formed on the feminine
+oblique stem. However, this is unlikely especially for the Skt word.
+12
+   Restored after other dialects that had remained closer to Standard German.
+13
+   There is even an isolated spelling ʒowsing in Middle English (eMED s. v. thousand). Unlike
+the German instances, it is perhaps linked to the shift -ənd ® -ing of the participle suffix, itself
+due to a confusion with the action noun suffix -ing.
+       multiple of ten duodecimal hundreds, ere the decimal hundred was adopted, ‘þúsund’
+       would mean twelve decimal hundreds (…) [I]n ecclesiastical writers, and in annals
+       influenced by the Latin and the like, it [‘þúsund’] is frequent enough (…).
+       As regards the meaning, however, it is possible, and even likely, that the
+“vague” meaning is secondary rather than primary. This happens for other
+numerals as well, often in a hyperbolic sense, e. g. French être à deux doigts de…
+(very close), haut comme trois pommes (as tall as three apples, said of a small
+child), Il fait toujours trente-six choses à la fois (many; some say trente-six mille),
+Je te l’ai déjà dit cent fois, C’est mille fois meilleur.
+
+     2.5. Conclusion (Germanic)
+     Although not everything is clear, it seems reasonably possible that all
+Germanic forms go back to a single prototype *þūsundī.
+
+3.     Slavic
+        3.1. Final
+        OCS tysęšti and tysǫšti < *-tji f.14, *jā-stem,(Comrie 1992: 793).
+        Eastern and Southern languages have forms like R týsjača, SCr tȉsuća, as if
+from Slavic *-tja, by analogical leveling.
+        Western languages and most of Slovenian show masculine forms in -c,
+Sln -č, as if from *-tjь. See Comrie 1992: 794 f. for the areal extension and the
+actual forms. As explained by Vondrák 1906: 337 f., 1924: 424, Vaillant 1958:
+648, this *-tjь has arisen from the genitive plural *-tjь of the *jā-stem, which was
+originally used for all cases of multiples of 1000 from 5000 onwards, such as *pętь
+(‘5’, inflected) + *tysętjь/*tysǫtjь (gen. pl.).
+
+       3.2.   Vocalism
+
+       3.2.1. Distribution
+       The vowel of the second syllable goes back to either *ę or *ǫ. Apart from
+those languages or dialects that have replaced ‘1000’ by loans or paraphrases, *ę is
+reflected in East Slavic, Polish and older Slovak, *ǫ in Serbo-Croatian and
+Slovenian; both are found Old Church Slavonic (below) and both have somehow
+merged in Czech: see Comrie 1992: 793, with more detail in 793-795.
+
+
+14
+  The nominative singular in -šta given in some grammars is not found in OCS itself, as far as
+Diels 1963: 218, Anm. 8 is aware of. This certainly holds as well for the examples of -šta in
+Savvina kniga and Psalt. sin. adduced by Pijnenburg 1989: 100.
+      Old Church Slavonic, as said, has both tysęšt- and tysǫšt-, often in the same
+manuscript: see Diels 1932: 93 for their distribution. According to Rosenkranz
+1955: 107, it seems that tysǫšti (more common) is Macedonian and tysęšti
+Bulgarian; it’s not clear to us if this conclusion is arrived at based on the
+manuscript evidence or on extrapolation from the distribution in the modern
+languages. Although Modern Bulgarian and Macedonian use (x)iljada (3.4), note
+that an obsolete Bulgarian tísešta is quoted by Vasmer s. v. ты́сяча, after
+Mladenov15.
+
+       3.2.2. Chronology
+       Applying the principle of parsimony (2.1.6) 1° within Slavic and 2° between
+IE dialects, one expects 1° that Proto-Slavic had only one of the two protoforms
+*tysętji and *tysǫtji, and 2° that this protoform was *tysętji < *-intī with zero grade
+in accordance with Germanic *þūsundī (in spite of East Baltic tū́kstantis,
+tūkstuoš)16.
+       However, unless we have missed something, none of the two expectations
+above is obvious from Slavic-internal evidence, such as the distribution of the two
+spellings in OCS manuscripts, the areas of the two kinds of reflexes in the daughter
+languages, or the outcome of other instances of competition between suffixal *ę
+and *ǫ.
+       Thus, OCS byšęšte-je/byšǫšte-je ‘τὰ μέλλοντα, the future’, OCz pro-byšúcný
+‘useful’ (compared by Gorbachov 2006: 11) corresponds to Lith bū́siąs
+(and -antis), fem. -anti adj. ‘future’, which means that *byšǫtj- is inherited and
+*byšętj- a preliterary innovation (perhaps due to nom. sing. m. *byšę < Pre-Slavic
+*būšjans: while the OCS alternation -ę : -ǫšt- is well preserved in participles of *-
+je-presents, *byšǫšt- had lost its verbal basis and thus its participial status so that its
+isolation may have made it more vulnerable). As for OCS goręšt-/gorǫšt- ‘burning’
+(compared by Comrie 1992: 792), gorǫšt- (S-Cr gòrūćī ‘hot, burning’) is the older
+form while goręšt- is built on the (new) present indicative stem gori- (according to
+e. g. Meillet 1924: 19617).
+
+
+
+
+15
+   I don’t know if this tísešta could be a mere coinage by Mladenov or his predecessor Gerov,
+based on OCS tysęšta. But perhaps this would rather have produced *tísəšta, based on tysǫšta.
+16
+   Some scholars indeed admit that only *ę is old in Slavic in this word, but for invalid reasons
+(PIE *tūs-ḱm̥tī, Comrie 1992: 792) or undisclosed reasons (Gorbachov 2006: 11, 13).
+17
+   Cf. Meillet–Vaillant 1965: 235. – Le russe moderne a à la fois gorjáčij ‘chaud, brûlant’ et
+gorjúčij ‘combustible, inflammable’ (Ščerba–Matusevič, Dict. r.-fr.).
+       Although *tysętji/*tysǫtji is not a participle, it has been suggested that *ę ®
+*ǫ in it was due to the influence of the (present active) participles18. There are two
+suffixes for these participles, *-ǫt- (with present indicatives in -e-, *-je- and even
+postvocalic -i-) and *-ęt- (with present indicatives in postconsonantal *-i-) (Diels
+1963: 232 f., cf. 244-281)19. Thus it can be assumed that -ǫt- was felt as the normal
+or general suffix and -ęt- as linked to clear specific conditions, which may have
+lead speakers to think that *tysętji was a mistake for **tysǫtji and favour the latter
+by hypercorrection.
+       Still, it is a bit frustrating to have no Slavic-internal factual evidence for this
+conclusion, which is nothing but our a priori hypothesis (merely based on the
+principle of parsimony, see beginning of paragraph), and, worse, not even to have a
+more obvious explanation than the above for the assumed innovation.
+
+       3.3. Consonantism
+       As is known, the reconstruction *tūs(o)nt- (1), suggested by Germanic
+*þūsundī (2), and morphologically more likely than others (3.3.1), does not directly
+account for the Slavic -s-, because it should yield Sl. *tūšant-/*tūšint- > *tyxǫt-
+/*tyšęt-. Many proposals have been attempted to solve this difficulty20.
+
+       3.3.1. Misguided attempts
+       Hirt 1896 and others (including Vaillant 1958: 647, Lühr 1998: 898) think
+that the Slavic word is borrowed from Germanic. But that’s digging a hole to fill
+another, because it’s now the Slavic -t- (and -ę-) that would be problematic.
+       It has also been thought that the Germanic, Slavic and Baltic word was a loan
+from an unknown language (Wanderwort, see 5.3), which may help if the
+borrowing postdates the RUKI law. While the assumption of a German loan can
+
+18
+   Vondrák (quoted by Lühr 1993: 12628, Gorbachov 2006: 11) thinks that …… – Comrie 1992:
+792 starts from *ę (cf. n. 16) and suggests a reinterpretation as a participle as the possible cause
+for a hesitation between *ę an *ǫ; ibid. 793, however, he suggests reinterpretations of BSl *-mt-
+(our *-n̥t-), first as a suffix subject to ablaut, and subsequently as the suffix of the present
+participle. (Cf. Endzelīns 1923: 365 f., 1971 : 183, as a means of explaining the alleged change *-
+amt- ® *-ant- in Baltic.) – Gorbachov 2006: 13 starts from *tysętji as well and adds: “Slavic
+*tysętji is secondary and relatively rare (participle-influenced?); no o-grade would have been
+originally possible”; cf. ibid. 11: “purely morphological assimilation of *ty̋sętji to the fem.
+participial paradigm?”.
+19
+   We omit the few instances of former athematic presents as well as vědě ‘know’ (see Diels
+1933: 233, 262, 278 f.). – The rule survives in the daughter languages (Serbo-Croatian: Vaillant
+GSC 188 f.; Russian: Garde 1980: 317). The distribution in similar in Baltic (Lithuanian) for
+present active participles in -ant- and -int- (Kurschat 1876 …….).
+20
+   The following is just a sample. See more detail and more criticism in Pijnenburg 1989: 100-
+104, Lühr 1998: 892-901, Gorbachov 2006: 7-9.
+easily be refuted because the Proto-Germanic form is known well enough, that of a
+Wanderwort is hard to falsify, not because it is better founded but, on the contrary,
+because we know nothing of the source language.
+       Comrie 792 starts from “a form like *tū(s)-ḱm̥t-”, which “will give regularly
+*tysęt-”, thus assuming an *s-less prototype for Slavic. However, *-sḱ- would not
+account for the Germanic reflex (2.2). This means that the Germanic (-s-), Slavic
+(*-ḱ-) and Baltic (*-sḱ-) words would go back to three different forms in (late) PIE.
+       Pijnenburg 1989: 104 suggests *tūtsn̥tī, which would indeed account for the
+Slavic and Germanic reflexes (cf. Gmc *wīsaz ‘wise’ < *weissa-)21. But it’s
+morphologically problematic, and does not really account for Baltic -st- (see 5.1.2).
+       We long thought that the solution was a PIE *tūst(o)nt-, with dissimilatory
+loss of the medial *t in all languages except East Baltic. The RUKI law does not
+apply in Slavic before a stop (Meillet–Vaillant 1934: 32, 34, Vaillant 1950: 29); or
+more exactly, it did apply, but a later innovation changed Slavic *š of any origin to
+s (or z) before a stop (cf. Viredaz 1997: 115, with reference to Pedersen)22; later, *š
+became *x in Slavic before a vowel or semi-vowel (and still later, *x became x´ > š
+before front vowel and j). Thus, it sufficed to assume that the dissimilation in
+question predated the change of Satem *št to Slavic st and that would have
+accounted for the Slavic s. But this *tūst(o)nt-, too, is morphologically problematic,
+because we’ve never found a satisfying explanation for the internal *-(s)t- (5.1.3).
+
+       3.3.2. Influence of ‘hundred’
+       Finally, given the weakness of the proposals above (3.3.1), “[i]t seems that
+we cannot avoid assuming that the word for thousand was influenced by […]
+‘hundred’” (to use the words of Derksen 2015: 474 s. v. tū́kstantis, in contrast to
+2008: 503 s. v. *tysǫti: “The exact formation is unclear”), before the latter was
+replaced by the Iranian loan *sata > *soto > *sъto23. This solution has also been
+that of Aitzetmüller 1978: 140, Lühr 1993: 123, bottom, 124, bottom; Gorbachov
+2006: 10).
+
+21
+    As if from *weidsto-, but more probably a later vr̥ddhi-derivative of *wissa- ‘known’ <
+*widsto-.
+22
+   In our opinion, the circumstance “of any origin” constitutes the “proof” that Vaillant 1950: 29
+deemed was lacking.
+23
+   Our explanation of sъto in 2020, 416 f. is utterly unlikely, and it is better to follow Šaxmatov’s
+view (quoted by Vasmer) of a reduction of *soto < *sata. However, there remain 1° the
+contradiction between the reduction in *soto and the lack of reduction in *desętь (except later in
+bound phrases for teens or tens), despite the fact that the latter is longer and more frequent, and
+2° the contradiction between Romanian sută, which seems to suggest a borrowing at a Slavic
+stage close to *suta, and the Slavic reduction, which seems to have occurred at a later stage *soto
+> sъto. We hope to return to this problem elsewhere.
+       Rather than *tyšętji, *tyxǫtji ® *tysętji, *tysǫtji after *sęto (thus Gorbachov
+2006: 10, and, presumably, implicitly the other authors cited as well), or *tūxintī ®
+*tūsintī after *sinta ‘hundred’, we think it more likely that the change took place
+earlier as *tūšintī > *tūčintī after *činta24.
+
+      3.4. Loans
+      Various Slavic languages or dialects – including, alas, Bulgarian and
+Macedonian – have replaced the old word by loans from neighbouring languages
+(Greek, German, Hungarian, Romance) or paraphrases (Comrie 1992: 793-795).
+
+4.     East Baltic
+      Lithuanian tū́kstantis, with many variants, Latvian tũkstuotis, with variants25,
+see Kurschat 1876: 263, 269, Bezzenberger 1877: 183, 333, Endzelīns 1971: 183,
+Fraenkel 1965: 1135, Pijnenburg 1989: 99 f., Comrie 1992: 792 f., Smoczyński
+2018: 1532. Ordinal Lith tū́kstantas and others, Latv tũkstuošais, Kurschat 265,
+Endzelīns 1971: 185.
+      The connection with the Germanic and Slavic forms raises many questions26.
+
+       4.1.   -k-
+
+      4.1.1. Epenthesis
+      East Baltic -k- in this word must be epenthetic (Stang 1966: 109, Derksen
+2018: 474).
+
+
+
+24
+   Although it has long been customary to posit *ś for the Balto-Slavic stage of PIE *ḱ > Baltic
+*š, Slavic s, this is not the most plausible reconstruction. For reasons of diachronic phonetic
+likelihood independent of the word for ‘thousand’, we posit PIE *ḱ, *ḱs, *ḱt, *ḱst > Satem I *ć,
+*ćš, *ćt, *ćšt > Satem II *ć, *tš, *ćt, *št (Viredaz 1997: 11410-11) > Balto-Slavic *č, *č, *čt (or
+*št), *št. For PIE *ḱ at least, this is now indeed commonly done. – In this paper, we have
+followed the majority and write *ḱ, *k for our usual *k1, *k2. This does not entail a change of
+opinion, however (“*ḱ” was not a palatal in PIE but it became one in Satem dialects including
+Luwian). – As for the RUKI law, for obvious phonetic reasons, the path must have been *s > *š >
+Indo-Aryan ṣ rather than *s > *ṣ > other languages š (see also 4.2 for Baltic). Note, however, that
+Stang’s *ṣ is just a conventional symbol for the altered *s without reference to its exact phonetic
+value (cf. Stang 1966: 16).
+25
+    As is known, the official spelling uses o while comparativists mostly write uo after
+Mühlenbach–Endzelīns (Petit 2020: 56, 58), which is closer to the pronunciation and emphasizes
+the symmetry with ie.
+26
+   Our approach of taking the problems one by one may not be the best way to reach a solution
+after all. We keep it as a mode of exposition, however.
+        An epenthetic k or g is frequent in (East and West) Baltic before a cluster of
+sibilant + dental stop, and even found sometimes before a sibilant generally (Stang
+l. c. 108-110). In tū́kstantis, the velar not only may, but must be secondary because,
+if it were inherited (as Smoczyński suggests, see below 5.4.3), the expected sibilant
+after it would be *š by RUKI law. Indeed, a k-less variant is attested once each in
+Old Lithuanian (gen. tûstanczios, Postilė, 1599) and Old Latvian (tuuſtoſche, ALEW
+s. v. tū́kstantis). More precisely, Daukša’s Postille has -kst- generally (e. g. 12530,
+29717) and -st- only once (12331), which is “vielleicht nicht Druckfehler” (Senn
+1966: 213).
+
+       4.1.2. Root tūk-?
+       Since the velar epenthesis is not regular but sporadic, one might think that an
+additional factor such as an influence of the Baltic root *tuk- ou *tūk- ‘grow fat’27
+(thus Comrie 1992: 792) would be welcome. However, no such factors seem to
+have taken place in other examples of epenthesis (though we have not made a
+systematic search), and we would not like to make tū́kstantis an exception.
+       In any case, this root tuk- cannot be the proper etymology (as Smoczyński
+suggests, see below 5.4.3), were it only because of the following s (4.1.1).
+
+       4.2. -s-
+       The sibilant in the Lithuanian word for ‘thousand’ is s, not š, at all times and
+in all dialects, with the following exceptions as far as I know, all in the old
+language:
+       – In Bretkūnas’ translation of the Bible (started 1579, published 1590),
+Bezzenberger 1877: 81 observes that the word often has the spelling tukſchtantis, in
+which ſch is sometimes corrected to ſ, sometimes not. This means that -kst- was the
+
+27
+   There are three different views: (a) root tuk-/*taũk-, acute secondary, LIV2 s. v. *teuk- and
+Smoczyński 2018: 1533 s. vv. tū́ kstantis, tùkti; (b) root *tū́ k-/táuk- according to Endzelīns 1923:
+5843, Gorbachov 2006: 12, Derksen 2015: 474 s. v. taukaĩ, less convincing; (c) Adolphi 1685:
+204 “still” distinguished Latv tūkstu, tūkt ‘swell’ and tūku, tukt ‘grow fat’ (Endzelīns, l. c.), which
+implies two original Baltic roots *tūk- and *tuk-, the latter with a nasal-infix present. – This root
+(or one of these roots) is found in Baltic (Derksen 2015: 459 f., 474), Slavic (Derksen 2008: 499
+f.) and Germanic (*þeuha-‘thigh’). The root *tū- < *tuH- of other languages is also found in
+Slavic (Derksen 2008: 503 f. s. v. tyti ‘grow fat’, Vasmer–Trubačev s. v. отава ‘aftermath’) and
+even Baltic (Lith túlas ‘many’, Smoczyński 2018: 1534). – Perhaps an original *tuk- acquired an
+optional variant *tūk- in Baltic with expressive lengthening triggered by the influence of *tū-, and
+early Latvian secondarily introduced a semantic distinction between tuk- and tūk-; the
+phonetically regular merging of present *túnk- > tũk- with non-present *tū́ k- > tũk- may have
+been the reason that prompted the addition of the present suffix -st- in the latter root. – In Indo-
+European, a root *teuHk- (Derksen, Kroonen) would be anomalous; as for *teuk-, it might be a
+(dialectal) expressive variant of *teuH- or just a different root.
+correct form, but the higher frequency of the sequence kšt in the language led to
+Bretkūnas’s hesitation, as Bezzenberger notes.
+       – tukſchtancʒias (acc. pl.) is found in the Wolfenbüttel Postille (1573;
+ALEW).
+       – tûkßteriopą ‘thousandfold’ is found in Daukša’s Postille (1599; ALEW; see
+4.1.1 for other spellings there)28.
+       The old Finnic *š seen in e. g. Finnish tuhat, Mari təžem is not, in our
+opinion, a sufficient proof for a shibilant *š in the Baltic source language(s) (see
+7.3 below).
+       The preservation of PIE *s after i, u is regular in Baltic, in which the RUKI
+law does not apply fully, although the conditions for the reflexes s or š are unclear,
+see Stang 1966: 13-16, 94-99.
+       This s is not a Baltic innovation (such as PIE *s > Balto-Slavic *š or *ṣ >
+Baltic s with Brugmann I 781 or Hamp 1973: 173), but an archaism, and Stang l. c.
+15 cites a similar retention in Nuristani29, pointed out by his Oslo colleague
+Morgenstierne in 1926: 56 and later in 1975: 340.
+       In the case of Nuristani, the exceptions are probably borrowings from
+Gāndhārī (Middle Indic of the Dardic type) (Morgenstierne 1975: 340). In the case
+of Baltic, the reasons for the double treatment are unclear (Stang 1966: 96-99)30.
+       We do not exclude that *s had an altered pronunciation after *i, *u in Early
+Baltic, but our claim is at least that these allophones had not become phonemic *š
+as they had in Slavic, Iranian and Indic.
+       In spite of many shared innovations, some of them remarkable, notably in the
+domain of prosody, Baltic and Slavic had remained different dialects inside the
+
+28
+   There are examples of a spelling s for anteconsonantal š in older texts (Stang 1966 : 99 f.).
+However, this cannot apply to ‘thousand’ in Bretkunas’ text, both because the spellings and
+occasional correctopns show the opposite situation and because the modern languiage has s, not
+š.
+29
+   Mistakenly referred to there as a part of Dardic.
+30
+   Hamp 1973: 175 f. holds that the reflex of PIE *s after *i, *u in Baltic is s before a back vowel
+(including a) and *š before a front vowel (in fact, the suffixes -ỹs/-is < *-ijas or -ė̃/-ė < *-ijā). He
+then lists the “clearest attested forms”, that is, those that conform to his law. However, even
+allowing for analogical leveling (in unpredictable direction) between a derivative and its basis
+(even if not attested in Baltic), there remain the exceptions vẽtušas ‘old’ and aušrà ‘dawn’, aũšta,
+aũšti ‘dawns, to dawn’ (< *aus-ro-, *au(s)-sḱe-, *aus-ti-) on the one hand, ausìs ‘ear’ on the
+other (whose dual ausì is even inherited, PIE *ausī < *h2us-s-ih1, though the singular replaces a
+PIE neuter *ausos < *h2eus-os preserved in Slavic, Irslinger 2008: 339). Furthermore, all
+examples of the suffixes *-ija- or *-ijā- are Baltic only or Balto-Slavic only and thus likely to
+postdate RUKI. – It has not been possible in preparing this paper to gather and discuss all the
+literature devoted to the Baltic reflexes of *s after i, u.
+Balto-Slavic language community, as results from some early differences such as
+perhaps 3 sg. present indicative *-et vs. *-eti, 1 pl. *-ome vs. *-omos; perhaps Lith
+vanduõ vs. Sl voda ‘water’ as if from *wondô, *wodhô for *wodô(n).
+
+      4.3. -t-
+      On the question of East Baltic -st- vs. -s- of other languages, see 5 below.
+
+       4.4. Vocalism
+       As we have seen, Germanic reflects a (late) PIE *tūs-n̥t-ī and Slavic
+continues either *tūs-n̥t-ī as well or (less likely) *tūs-ont-ī (3.2); West Baltic
+doesn’t testify (as OPr tūsimtons may be borrowed, 6.4).
+       For (East) Baltic *-ant-i- (stem class uncertain, see 4.6), various origins can
+be thought of, mainly these two:
+       a) PIE *tūs-ont-, of which *tūsn̥tī was the feminine. A stem in *-omt- or *-
+ont- is almost universally posited. Enlargement of consonant stems through *-i- is
+well known in European languages31, especially Balto-Slavic (after acc. sg. *-m̥ >
+*-in). PIE *deḱ-m̥t- ‘ten’ > Lith dešimt(i)- has partly remained a consonant stem
+(Endzelīns 1971, 182), but ‘thousand’ matches this, too (in dialects: Zinkevičius
+1981: 64.).
+       b) PIE *tūs-n̥t-ī, with zero grade of the first suffix as in Germanic, then a
+reshaping of both suffixes, yielding *tūs-ant-is. This is (part of) Gorbachov’s
+solution, which we shall present and discuss later (5.4.5-5.5.0).
+
+       4.5. The nasal
+       Although many authors posit *-mt- for Proto-Baltic – because of Old
+Prussian tūsimtons but also etymologiae causa because of PIE *(d)ḱm̥tó- or Proto-
+Baltic *čimta-‘hundred’ – the valid evidence points to *-nt- only (6.2).
+
+       4.6. The final32
+       Lith tū́kstantis was a feminine in the old language (Bretkūnas, 1579-1590:
+genitive -ties) and it has been a masculine since the old language (Daukša, 1599)
+until today (genitive -czio, -čio). Some dialects have feminines in -čià or -tė.
+       The shift to masculine may be due to the analogy of šim͂tas ‘hundred’.
+       For the rest, it’s difficult to determine the original inflection from Lithuanian
+evidence alone. (See, however, Gorbachov 2006: 6.)
+
+
+31
+  Starting from dat. sg. *-ei (Meillet, Meier-Brügger).
+32
+   Thanks to Anthony Jakob for his help in relation with the variations of the final within
+Lithuanian, as well as various other topics in this paper.
+      Comparison with Slavic and Germanic suggests the two possible PIE origins
+seen above (4.4).
+
+5.     East Baltic -st-
+       The hardest nut to crack is the internal cluster -st- of East Baltic as opposed
+to the s of Germanic and Slavic (and *š in Fennic). Many explanations have been
+attempted33.
+
+       5.1. “Preformist” attempts
+       There have been attempts to find a solution in Proto-Indo-European itself.
+
+       5.1.1. *-s-ḱ-
+       A common old view was that a compound stem *tūs-ḱomt- could account for
+the reflexes of all three branches Germanic, Slavic and Baltic. In reality, it accounts
+for none of the three (or just for East Baltic if this had earlier had *tūstintī). See in
+particular the bibliography and criticism by Pijnenburg 1989: 100-103, Lühr 1998:
+882-894, Gorbachov 2006: 8; see also 2.2.1 above.
+
+       5.1.2. *-ts-
+       Pijnenburg 1989: 104 f. suggests a cluster *ts, thus *tūtsn̥tī and *tūtsontī. 34
+       This would work fine for Germanic and Slavic, but the metathesis required
+for East Baltic is unsupported (only *ks > sk is attested; one might adduce Lith
+stìrna ‘roe deer’ or stum͂bras ‘wisent’ but there is no indication that they go back to
+*ts-).
+
+       5.1.3. Our first attempt: *-st-
+       For a long time, we thought we had found the perfect solution (and this is the
+very reason we finally decided to write an article on this word): PIE *tūst(o)nt-,
+with dissimilation of the medial *t in all languages except East Baltic.
+       In Slavic, the dissimilation would have postdated the Slavic regular change
+of *št to st (3.3.1)
+       For a short time, we thought the word could be a compound *tū(s)-st-(o)nt- <
+*tuhx(s)-sth2-(o)nt- from the root of Latin stare, but this hardly makes sense.
+
+
+
+
+33
+   Gorbachov’s category of “amusing” theories (2006: 9) has been dispatched in our paper under
+various headings, no doubt for lack of humour on our part.
+34
+   Brief criticism by Gorbachov 2006: 9, Jakob 2024: 141.
+      5.2. Other “ingenuous” attempts
+      Another option is to start from PIE *tuHs-(o)nt- > *tūs(o)nt-, which accounts
+for Germanic and (indirectly, 3.3.2) Slavic, and try to find a plausible reason why
+PIE *-s- would have become *-st- in East Baltic.
+
+        5.2.1. tū́kstas
+        A few authors have derived their solutions from the ordinal tū́kstas* (attested
+is the definite tūkstàsis), supposed to have been the model for a reshaping of the
+cardinal.
+        Gauthiot 1906: 3 f. thinks that East Baltic, at one point, had both the cardinal
+*tū́šamtis, from *tūs-ḱomt- (5.1.1, 4.5), and an ordinal *tū́kstas, formed directly on
+the root *tūs-.
+        Būga 1908: 138 derives tū́kstas from *tūskstós < *tūsiko-stó-s (cf. MHG dial.
+tūsig, Gk χῑλιοστός).
+        Lühr 1993: 128, 1998: 901 thinks that *tūstas is a shortening of *tūsantas on
+the model of *šimtas ‘hundredth’.
+        We have little doubt, however, that tū́kstas*, tūkstàs-is is merely a shortening
+of tū́kstantas, tūkstantàs-is*35 and thus does not explain the -st-.
+
+       5.2.2. -sta-
+       Several attempts involve the inchoative verbal suffix -sta-: see 5.4 below.
+
+      5.3. “Defeatist” attempt
+      I mean the approach that gives up searching for explanations within IE and
+assumes a Wanderwort of unknown origin. This includes Pedersen 1943: 185 ,
+Stang 1966: 282, 1972: 59, Jakob 2024: 144 f.
+      For sure it’s also a positive thing to try and gather potential evidence for
+regional substrates
+      Still, this approach has the downside of explaining little and not yielding an
+etymology, because the phonology and lexicon of the assumed source language are
+unknown. It’s only plausible if no Indo-European interpretation is.
+
+      5.4. Inchoative -sta-
+      A number of proposals involve the Baltic inchoative suffix -sta-, supposed to
+continue PIE *-sḱe/o-. (This origin of the Baltic verbal suffix is advocated by
+Leumann 1942, Gorbachov 2006: 11, 2014, and accepted with reservation by
+
+35
+  Similar judgment by Kalnins 2015: 36, but on the whole we are not too convinced by Kalnins’
+somewhat hasty treatment of ‘thousand’ (p. 35 f.).
+Kalnins 2015: 56; it has been rejected by many though without a satisfying
+alternative.)
+
+       5.4.1. Hamp
+       Hamp 1973: 174 starts from *tuH-sḱ-ont- > *tūsḱont- (for all three branches
+Baltic, Slavic and Germanic, which is impossible, 5.1.1), a form he rightly insists
+was not a compound of ‘hundred’ (but underwent its influence in Old Prussian, p.
+172, and perhaps Germanic, p. 174).
+       It is not fully clear if Hamp sees *-sḱ- as inchoative or as an unexplained
+suffix. He writes: “We appear superficially on morphological grounds to have a
+present participle *tūsḱont-, or *tuH-sḱ-ont-, of a base *teuH- forming a *-sḱ-
+present in the expected zero-grade” (p. 174), which leaves it open whether what is
+mere appearance is the participial status of *-ont-, the inchoative value of *-sḱ-, or
+both.
+       Hamp emphasizes that the word is an old ablauting formation, *-ont-/*-n̥t- >
+Balt *-ant-/*-int- (p. 173 f.), which by the way is not compatible with an inchoative
+present participle.
+       Hamp was among the first to assume a double reflex of PIE *sḱ depending
+on whether it was followed by a back vowel (including a) or a front vowel. The
+Baltic reflex of *sḱ has variously been thought to be š (Brugmann 1886: ……
+1897: 781, Gauthiot 1906: 4, and others), šk (Stang 1966: 92), st (Leumann 1942),
+sk and st (Pedersen 1943: 188-192, for Proto-Balto-Slavic), st and š (Hamp 1973:
+173-175), then again sk and st (Gorbachov 2006: 11, 2014, for Proto-Baltic,
+followed by Kalnins 2015: 56 and ourself, below 5.5).
+
+      5.4.2. Comrie
+      For Comrie 1992: 792 f., an earlier *tūšant- (< *tūsont-) was reinterpreted as
+a present participle (perhaps ‘that which is fat (big)’), then a t was inserted by
+confusion of this present stem *tūša- and the newer inchoative present *tū-sta-.
+
+       5.4.3. Smoczyński
+        Smoczyński 2018: 1533 thinks of the verbal suffix -st-a-, mais celui-ci est
+propre au baltique, où il représente i.-e. *-sk1-e/o-. Il part d’un participe présent
+*tuñk-st-ant- *‘an increasing (hundred)’, mais *-nk- aussi serait propre au baltique.
+On pourrait tout au plus comprendre ce *tunk-st-ant- comme une réfection
+(étymologie populaire), c’est-à-dire supposer qu’un *tūsant- hérité ait été
+réinterprété en baltique (oriental) comme un participe de présent inchoatif ou de
+changement d’état *tū-st-ant-. Cependant, la motivation sémantique manque pour
+un verbe de changement d’état (pourquoi ‘a growing hundred’ plutôt que ‘a bid
+hundred’ ?), alors que *s ® st représenterait une modification phonétique notable.
+De plus, cette explication ne rendrait pas compte du s slave, pour lequel une autre
+hypothèse resterait nécessaire (telle que l’influence du mot ‘cent’, comme nous
+l’avons vu).
+       The objection is of a semantic nature (5.4.3): ‘thousand’ will not be
+described as a change of state, ‘a growing hundred’, ‘a growing amount’, but in
+stative terms, ‘a big hundred’, ‘a big amount’.
+
+       5.4.4. Our second attempt
+       On the other hand, the introduction of the -sta- suffix could be understood if
+it results from an accidental reinterpretation of a non-inchoative pre-form.
+       We suggest a hypercorrection. It can be speculated that the inchoative
+present participle suffix -st-ant- was frequent enough to undergo an occasional
+reduction to *-sant- by dissimilation in fast speech. This may have led speakers to
+interpreting *tūsant- ‘thousand’ as a careless pronunciation of *tūstant- and to
+“restoring” that *tūstant-. This process would have taken place before the assumed
+enlargement of the consonant stem *-ant- to a vowel stem *-ant-i-.
+       This is the solution I advocated in the Abstract sent to the organizers, before
+I knew Gorbachov’s proposal..
+
+       5.4.5. Gorbachov
+       Yaroslav Gorbachov proposed an attractive solution in a 2006 talk, which he,
+however, has not published (except for his sound law, see c below), although there
+is a pdf of the handout. His solution for East Baltic can be summarized as follows
+(2006: 13)36:
+       0) PIE *túhxs-n̥t-ih2 ‘biggy’ > *tū́sn̥tī as in Germanic and Slavic.
+       1) Folk-etymological alteration *tūsintī ® *tūs-ćimtī after *ćimta-
+‘hundred’37. That would explain the appearance of the cluster *sć (> st) even before
+any attraction of the (semantically unrelated) inchoative suffix. On the other hand,
+that would mean quite a big jump, unlike Slavic *tūšintī ® *tūčintī (3.3.2).
+       2) *sć > st, as in the inchoative suffix PIE *-sḱe/o- but not only (PIE *sḱ >
+Baltic *sć > st before a front vowel: new sound law by Gorbachov, whose proof is
+sketched in 2006: 11 f. and detailed in 2014;
+
+
+36
+   In fact, Gorbachov assumes two varieties of East Baltic, the other being the extinct Baltic
+language that’s reflected in the Finnic loanwords, but see 6 below.
+37
+   Gorbachov writes *ć for Proto-Balto-Slavic and Proto-Baltic (from PIE *ḱ), while we posit
+PBS *č, PB *š (from PIE *ḱ and *ḱs), but the difference is not relevant here.
+       3) Change of inflection: *-ī ® *-is. Gorbachov sees two possible reasons
+(2006: 12):
+       a) Influence of dešimtìs (ibid., but the form need not be starred; already Lühr
+1993: 124), even though the suffix was not as close (*tūstantī) as Gorbachov
+thought (*tūstimtī). Although ‘ten’ was originally a consonant stem, whose original
+inflection is still partially preserved (Endzelīns 1971: 182), it is likely that it shifted
+early to the i-inflection in the nominative singular (instead of expected *dešins) and
+in the plural cases with consonant-initial endings. (Even the dialectal gen. pl.
+tū́kstantū̜ may be analogical of the archaism dešimtų ̃.)
+       b) Pivotal role of accusative *tū́stimtin. However, the accusative must have
+been in *-ją: Lith sáldžią, Slav bogynjǫ, Goth mauja, 2.1.2.1 c, whereas Skt. devī́m
+is analogical for *devíyam < *daiwíHm̥, no doubt after nom. devī́ and the type in
+nom. -ā, acc. -ām.
+       Earlier (2006: 6), Gorbachov makes another remark:
+       c) “Historical devī-class is moribund in East Baltic: outside the fem.
+participles there are two devī nouns left in Stand. Lithuanian + two more in the
+dialects—all (…) designating persons (…).”
+       We retain a and c as plausible factors, not b.
+       4) *-imtis ®-antis, perhaps by analogy of the participle of -sta-presents
+(2006: 12). This frees us of the necessity of positing a (late) PIE masculine (?)
+numeral *tūsont- in addition to the feminine *tūsn̥tī of Germanic and Slavic. On the
+other hand, this involves two changes at once.
+       It would be more obvious to swap stages 3 and 4, so that *-imtī still had *-ī
+when it underwent the analogy of *-antī. See also 5.5.2.1 below.
+
+       5.5. Our third attempt
+       There is a difficulty with Gorbachov’s solution38. That *-intī ® *-antī by
+attaction of the “normal” participle suffix (cf. 3.2) is possible, but, given the clear
+difference in Baltic between *nt and *mt (6.2), how can the influence of *čimta-
+‘hundred’ (with *m) on *tūsintī (presumably with *n) winds up producing *tūsčantī
+(with *n)? And after all, while in Slavic an influence of *činta- on *tūšintī to
+produce *tūčintī (3.3.2) is but a small flick, in Baltic an influence of *čimta- on
+*tūsintī is less obvious.
+
+      5.5.1. Main changes
+      That’s why we finally opt for still a different solution: *tūsintī ® *tūsantī ®
+*tūstantī:
+38
+     Perhaps this is a reason why our colleague left his 19 year old talk unpublished.
+       5.5.1.1.*-int- ® *ant-
+       Stage 1: Balt. *tūsintī ® *tūsantī by attraction of the unmarked participial
+suffix.
+       That is, on the one hand, we gladly give up the earlier view that derives the
+East Baltic word from a masculine *tūsont-, which is less economical, and prefer
+Gorbachov’s suggestion of a reshaping on the model of participial *-antī.
+       On the other hand, we do not follow our colleague as regards the timing and
+motives of this reshaping. Gorbachov places it at a late stage, as we have seen
+(5.4.5 e), and attributes it to a specific verb *tūk-sta- allegedly reflected in Latv
+tūkstu, infinitive tūkt ‘swell’, which we don’t deem possible. First, this suffixed
+present may well be a Latvian innovation only (cf. our fn. 27, which concords with
+the “usual” view quoted in Gorbachov 2006: 125). Second, the insertion of k in Lith
+tū́kstantis, Latv tũkstuotis was only completed after the earliest literary documents
+(4.1), whereas the reshaping *i ® a took place much earlier (as it predates the pre-
+literary Latvian change *ant > ōt > uot).
+       La préexistence d’un verbe n’est pas nécessaire pour cette réinterprétation (il
+suffit que l’attraction produise un verbe “virtuel”; cf. p. ex. recrudescence)
+       There’s no need to worry about the lack of a specific trigger for this change
+*-intī > *-antī, because exactly the same happened in Slavic when *tysętji ®
+*tysǫtji (3.2). The change does not even need to have taken place earlier in Baltic
+than in Slavic, because *tysętji ® *tysǫtji must have taken place during or after the
+migration, thus roughly in the 7th or 8th century, while the earliest East Baltic
+literary text goes back to around 1500. The Slavic and Baltic changes are
+independent, however, because *tysętji ® *tysǫtji affected an area that may be
+described as South-West Slavic (3.2).
+
+        5.5.1.2.*-s- ® *-st-
+        Stage 2: *tūsantī ® *tūstantī by the (unusual) process that we have proposed
+above (5.4.4: formal attraction from inchoative *-stantī made possible by a
+phonetic hypercorrection against the latter’s fast-speech dissimilated variant *-
+santī).
+        Here again, we do not attribute the change to a specific verb, but only to the
+high number of -sta-presents.
+        In our solution, there has been no attraction of ‘thousand’ by ‘hundred’ in
+Proto-Baltic and East Baltic.
+      5.5.2. Late changes
+      We happen to depart from Gorbachov’s solution in our timing of the later
+stages as well: *tūstantī ® tūstantis ® *tū́kstantis:
+
+       5.5.2.1.*-ī ® -is
+       Stage 3: change of inflection, *tūstantī ® *tūstantis.
+       The factors are probably the following two (4.6 a, c):
+       1) The attraction of dešimtìs – even though the suffix was, by far, not as
+close (*tūstantī) as Gorbachov thought (*tūstimtī).
+       2) The *-ī-inflection was almost only found in feminine particples.
+       Even so, the contradiction is surprising between our stage 2 (5.5.1.2,
+Gorbachov’s stage 4), in which the word for ‘thousand’ is reinterpreted as a
+participle, and our stage 3 (Gorbachov’s stage 3). A possible reason is that our
+word is likely to have increased its frequency, at least in its proper numeral
+function, between our stages 2 and 3: cf. Cleasby-Vigfusson’s remarks on ON
+þúsund (above, 2.4). In early times, ‘thousand’ is likely to have been relatively
+unfrequent, and mostly used in its figurative meaning ‘innumerable’; accordingly it
+fell pray more easily to the merely formal attraction of particples in *-antī. Later, it
+presumably became more frequent, thus more independent (from the participles –
+hence the possibility of acc. *-in entailing nom. -is), and more definitely felt as a
+numeral – which opened the way to an influence of dešimtìs39. (The difference of
+accentual paradigm seems not to have been an obstacle.) Note that Gorbachov’s
+different relative chronology does not allow this explanation of the contradiction.
+
+       5.5.2.2.k-insertion
+       Stage 4: As we have seen, an influence of the root(s) *tuk-, *tūk- is not likely
+(4.1.2), and, as we have seen as well (5.5.1.1, 4.1.2), the existence of a verb
+*tūksta- is unlikely and unnecessary.
+       k-less forms are still attested in the oldest Lith and Latv documents (one
+each, 4.1.1).
+
+
+
+
+39
+   To tell the truth, we have not checked the frequency and semantic use of ‘thousand’ in Old
+Lithuanian texts. But note that the only example of ‘thousand’ in Old Prussian shows the “vague”
+meaning (‘for thousand generations’, 6.1.1).6.1
+6.     Old Prussian
+       6.1.   Attestation
+
+       6.1.1. Form
+       The only attestation is the accusative plural tūsimtons (Enchiridion 3718,
+Trautmann 1910: 297; 16th century): en tūsimtons streipstoos ‘in tausent Gelied, in
+thousand generations’. These are the only instances of spellings -ons or -oos for
+Baltic *-ans (Trautmann 220).
+
+      6.1.2. Gender
+      The word is probably masculine, although a feminine is technically possible
+(because the accusative plural of ā-stems is generally spelt -ans like that of a-
+stems, see Trautmann 228, where all examples of § 134 a-b are from the
+Enchiridion).
+      The Enchiridion still has the neuter gender, although many neuters have
+already shifted to the masculine (Trautmann 1910: 21940, Petit 2000: 32, 33 bottom,
+2010: 153). We thus don’t know whether the masculine tūsimtons reflects an earlier
+neuter (like ‘hundred’) or not.
+
+       6.1.3. Number
+       The Prussian word is used in the plural (like Greek χῑ́λιοι), unlike its East
+Baltic or Slavic counterparts (tū́kstantis, tysęšti)41.
+       Although the Enchiridion is full of translation errors, there is no ground for
+amending this word. It’s unlikely that the final s of tūsimtons is due to anticipation
+of the initial or final s of *streipstons, because Will generally had his informant
+translate only one word at a time (Petit 2022). Unlikely, too, that the informant had
+mixed up tausend ‘thousand’ (pronounced tausent which is Will’s spelling) with
+tausende ‘thousands’.
+
+
+
+40
+   The three Catechisms, of whom the Enchiridion is the third, are written in the dialect of
+Sambia (Samland), Trautmann 1910: XXI, 131.
+41
+   Compare the use of ‘ten’ (Trautmann 1910: 320, 251 f.): dessempts, dessimpts nom. sg. (other
+cases unknown, but no doubt a feminine i-stem) in the first two Catechisms, once dessimton
+(nom. sg. n.) in the Enchiridion (Stai Dessimton Pallaipsai), twice dessimtons (acc. pl.) in the
+Enchiridion as well (Dessimtons Pallaipsans, stans Dessimtons pallaipsans). – The neuter gender
+of dessimton, contrasting with the animate gender of dessimpts, must be analogical to *simton
+which is the expected form of the word for ‘hundred’. The same holds for its shift to the thematic
+inflection.
+       6.2. The final
+       For Trautmann 1910: 252, an earlier *tūsimtis, with the same ending as Lith.
+tū́kstantis, underwent the same fate as dessimpts ‘ten’; that is, the shortening of the
+-is nominative ending to -s induced a late shift from the i- to the a-inflection42.
+       Though late (postdating the syncope is *-as, *-is), this process must have
+taken place at a time when the word for ‘thousand’ was still a substantive (as in
+East Baltic or Proto-Slavic) and not yet an adjective (as in the Enchiridion, 6.1.3).
+       The change of inflection entailed a change in gender, from feminine to
+masculine, not easily attributable to ‘hundred’ which may still have been neuter.
+
+       6.3. The nasal
+       The m in OPr tūsimtons, as opposed to n in Lith tū́kstantis, is analogical to
+the word for ‘hundred’ (Hirt 1896: 347, Vaillant 1958: 647, Hamp 1973: 172, Lühr
+1993: 129, Gorbachov 2006: 5, 13, Jakob 2024: 14031). This is the obvious
+explanation, even though ‘hundred’ is unattested and the two words may have been
+of different genders (6.1.2 and fn. 41).
+       The assumption (etymologiae causa) of a Proto-Baltic and Proto-Indo-
+European *mt in ‘thousand’ (Brugmann 1911: 48 f., Endzelīns 183, Pokorny 1083,
+Lühr 1993: 124, 1998, 897, Jakob 2024: 14031) cannot be held. The clusters *-mt-
+and *-nt- are clearly distinguished in the Baltic languages (cf. Jakob l. c.), at least
+in the basic vocabulary, and ‘hundred’ had *-mt-, ‘thousand’ had *nt. Compare on
+the one hand Lith šim̃tas ‘hundred’, lett. sìmts ; lit. dešimtìs ‘dix’ (et dẽšimt
+indéclinable, forme réduite de l’accusatif), Latv desmit, OPr dessimpts, dessempts
+(f.) and dessimton (fn. 41), ordinal respectively dešim̃tas, desmitais, dessimpts; on
+the other hand e. g. añtras, uôtrs, antars ‘second’, infixed presents like Lith kriñta,
+Latv krìt ‘he falls’ (Endzelīns 1971: 216), numerals deviñtas, devîtais, newints
+‘ninth’43 and, precisely, Lith tū́kstantis, Latv tūkstuots.
+       Neither is there a reason to favour a spontaneous phonetic change. Since
+there exists a sporadic dialectal dissimilation of nt, nd, nk to mt, md, mk in
+Lithuanian and Latvian (Smoczyński 2018: passim44) – often after u or at a distance
+
+42
+   No influence of *simta- ‘hundred’ is expected here, as the latter was presumably still neuter.
+43
+   The apparent exception septiñtas, septît(ai)s does not reflect a PIE *septm̥tos, which did not
+exist, but it replaces Lith sẽkmas, OPr sep(t)mas < i.-e. *septmos (cf. Endzelīns 184 and OCS
+sedmъ). Like the cardinal Lith septynì, Latv septiņi, the new ordinal is derived from *septin <
+*septm̥ (Comrie 1992: 756). The treatment of final *m is independent from that of m before t.
+44
+   Pp. 230 dimsta, 245 drémžti, 297 firánka, 381 f. grémžti, grę́sti, 405 gùndyti, 546 kinkýti,
+609267 (krìsti: various exx.), 688 lentà, 1011 prakléntas, 1063 rantýti, 1082(436) rémžti and others,
+1174 siùndyti, 1316508 wissambs, 1317 stùnda, 1381 f.(526) (various), 1383 šiñkorius, 1537 tùntas.
+– See also Fraenkel 1953: 107 f.
+after p, f – Smoczyński attempts to explain in that way the m in Prussian tūsimtons
+(l. c. 609267, 1316508, 1533) and even in the Baltic words for ‘ten’ (tacitly p. 216)
+and ‘hundred’ (XLI, 1011, 1381 f.). That’s however impossible for the latter two, in
+which mt is not sporadic but pan-Baltic and constant (and is even generally seen as
+going back to Proto-Indo-European). And that’s unlikely for tūsimtons, because nt
+> mt is not attested in Old Prussian and the ananlogy of ‘hundred’ yields a
+sufficient explanation.
+
+        6.4. The stem
+        Even not counting the final (a-stem, 6.2) and the nasal (m for n, 6.3), the
+Prussian form tūsimta- is markedly different from East Baltic, Lith tū́kstantis.
+        (a) One way of accounting for all the remaining differences at once is put
+forward by Smoczyński 2018: 1532 f. s. v. túkstantis, who sees a loan from MHG
+tūsent as “most likely”. As is known, both Low German and High German were
+present in Prussia (see e. g. König–Paul 1994: 64, 74 f., 184, 188).
+        The borrowing may even have been from New High German, because the
+German of the Elbing Vocabulary (14th or 13th century, Petit 2010: 22) is precisely
+a dialect of High German45 that had not diphthongized MHG ī, ǖ, ū46 even though it
+shares in the monophthongization of ie, üe, uo47. The word for ‘thousand’ itself, as
+we have seen, is not attested before the 16th century ( A question could be why Old
+Prussian would have rendered the German ə of the second syllable as i, but it’s hard
+to tell what the “expected” vowel would have been anyway.
+        (b) On the other hand, “deep” differences between East and West Baltic in
+some features are not unknown, especially in the field of numerals: compare the
+words for ‘third’, OPr tīrts < *tritas (metathesis, Smoczyński 2018: 1507)48 vs.
+
+
+45
+   E. g. 16 Woche, 17 Sontag, 30 Tal, 41 Hiczcze, 76 Scheitel, 86 Naseloch, 92 Czan, 94 Czunge,
+119 Citczcze, 120 Hercze, 210 Thoere, 211 Grosthor, 212 Phorte, 214 Rochloch. Exception: 100
+Schulder.
+46
+   E. g. 34 Vueer, 56 Is, 95 Gume, 111 Mus, 114 Dume, 188 Wip and the unambiguously High
+German 11 Tufel, 57 Ryf, 61 Tych, 122 Buch (‘belly’). In e. g. 113 Vuest, 193 Hues, 802 Czuen,
+superscript e presumably spells length rather than umlaut, cf. fn. 47 and 800 Styeg. Exception:
+120 Seyte ‘side’ with diphthong.
+47
+   E. g. 43 Glut, 62 Vlys (‘stream’), 63 Reynvlys (‘rain fall’), 128 Nyre, 139 Dy, 140 Kny, 160
+Blut, 170 Muter, 173 Brud(er), 180 Stifmut(er), 217 Barkenstul. In e. g. 145 Vues, 146 Vuessale,
+148 Vuesbret, 216 Stuel, ue or ue is thus presumably a historical spelling for long u, cf. fn. 46.
+48
+   There is no inherited PIE *tr̥t- either in OPr tīrts or in Old (non-Dardic?) Indo-Aryan tr̥tī́ya- <
+*tritī́ya- (by dissimilation: Osthoff 1881……, Milizia, diss. 2003 + JIES 2004……, cf. śr̥ṇu-
+pres. ‘hear’ < śruṇu-, ll. cc. … and Scheftelowitz, KZ 1925, « Ein urindisches Liquidengesetz »,
+spec. p. 262-265). Far from the combinations by G. Schmidt, « Idg. Ordinalzahlen » (IF 97,
+1992), there are thus no other PIE forms for ‘third’ to be reconstructed than *tr(i)yo- (not directly
+East Baltic trẽčias, trešs < *tretjas, Slavic *tretьjь < *tretijas (< *tritiyos); ‘six,
+sixth’, OPr *uscha-, usts < *(š)uš-ja-, *(š)uš-ta- vs. Lith šešì, šẽštas, Sl šestь, šestъ
+(Viredaz 1997: 116, with reff. fn. 23 to Bezzenberger for the OPr cardinal); or more
+modestly ‘nine’, with OPr n- vs. East Baltic and Slavic d-.
+       Since we have been led to posit *tūsintī for an early stage of East Baltic
+(5.5.1.1), another solution is thus to derive the Old Prussian form directly from it49
+(plus the late changes discussed in 6.3, 6.2).
+       (c) Variants of scenario (b) cannot be excluded because OPr /s/ can in
+principle reflect any of the three BSl phonemes *s, *š and *č, a pre-merger *s
+without RUKI is slightly more likely than *š with it, because of the generally closer
+relationship with East Baltic than with Slavic; and a alteration of the sibilant under
+the influence of ‘hundred’ is less likely thans in Slavic because of the greater
+difference between ‘hundred’ and ‘thousand’50.
+       In conclusion, solution (b) seems to be the most likely although (a) or the
+alternatives mentioned in (c) are perhaps not excluded.
+
+       6.5. Conclusion (West Baltic)
+       Perhaps the OPr word was borrowed from a regional High German *tūsənt
+(6.4 a), as *tūsintas or -an, with i for German ə, then altered to *tūsimtan after
+*simtan ‘hundred’ (6.3) and finally to tūsimts* in later Old Prussian (Enchiridion)
+in the process of loss of the neuter gender. But maybe it could be why ə was
+rendered by i rather than another vowel, or whether there had been enough time for
+nt to be altered to mt.
+       Or perhaps West Baltic directly reflects Proto-Baltic *tūsintī, unlike East
+Baltic that reshaped it to *tūsantī (6.4 b, 5.5.1.1). Later, on the other hand, *-nt-
+was changed to *-mt- after (*čimtan >) *simtan ‘hundred’ (6.3), the word shifted to
+
+
+attested, but cf. I-Ir *ktur(i)ya- ‘fourth’ and Szemerényi, Numerals …), *tri-to- (regular) and *tri-
+t-(i)yo- (a blend of the two others).
+49
+   This is in fact, mutatis mutandis, Trautmann’s explanation (6.2).
+50
+   In this paper and especially in this paragraph 6.4, it is assumed that PIE *ḱ and *s were treated
+in Old Prussian in the same way as in Lithuanian before *š merged with s in the former. That is:
+(1) RUKI only took place sporadically after *i, *u (4.2); (2) PIE *ḱ > Balto-Slavic *č > Baltic *š >
+Old Prussian s though a late merger (as in Latvian). This is the most economical solution.
+Alternatives are thinkable:
+(1) RUKI did not take place at all after *i, *u in West Baltic.
+(2) RUKI took place throughout after *i, *u in West Baltic (as in Slavic).
+(3) PIE *ḱ > BS *č > OPr s due to an early change *č > *c as in Slavic.
+In our opinion, (1) and (2) are unlikely and (3) is not worth considering. If, nonetheless, one or
+two of them are retained, it’s easy to rewrite our 6.4 accordingly.
+the (feminine) ĭ-declension (as in East Baltic, 5.4.5:3, 5.5.2.1) and finally to the
+(masculine) a-declension (6.2).
+
+7.     Fenno-Volgaic languages
+      7.1. Forms
+      Our word is also found in Fenno-Volgaic or North-Western Uralic
+languages, namely Fennic51, Sámi, Mordvin and Mari52, presumably as direct and
+indirect loan from East Baltic given the a of the second syllable: Finnish tuhat, gen.
+tuhannen; Estonian tuhat, gen. tuhanden; Sámi tuhāt53; Mordvin ťožań; Mari tüžem
+54
+   .
+
+       7.2.    u vs. *ū
+
+       7.2.1. Problem statement
+       The shortening of old *ī, *ū is regular in Fennic (cf. most recently Pystynen
+2022: 12-14), so that it could account for the short u in tuhat if the borrowing took
+place early enough.
+       Jakob 2024: 108 f. doubts that this is the case. Indeed, unlike those from
+Germanic, most borrowings from Baltic are later than the shortening in question
+and reflect Baltic ū as uu (l. c. 108, citing Plöger 1982: 93)55. According to Jakob,
+there is not even a single convincing example of *ū> u in Baltic loans.
+
+
+
+51
+   Or Finnic, Baltic Finnic, French fennique, German Ostseefinnisch. – We prefer Fennic over
+Finnic because it allows us to use Finn as unambiguous abbreviation for ‘Finnish’.
+52
+   We use “Fenno-Volgaic” as a cover term for these four branches, without any phylogenetic
+implications. The same goes for “Volgaic”, even though Mordvin and Mari do not form a
+phylogenetic “clade” or “node”. – At first we wanted to keep the Fenno-Volgaic section very
+short, but the differences between early East Baltic *tūsantī and early Fennic *tušante decided
+otherwise.
+53
+   tuhāt, duhat, dufat, doχāt, tōvan̄t etc., see SKES s. v. tuhat. These are recent loans from
+Finnish, later than the Finnish changes *š > *x (> h) and, for most, *-nt > t. – Add Swedish Sámi
+tusan from Swedish (Thomsen 1890-1893: 233).
+54
+   Thanks to Anthony Jakob and Juho Pystynen for their bibliographical and other help in relation
+with the Finno-Ugric part.
+55
+   Pystynen, l. c. 12, has a list of 11 loans from Germanic (and a few others) that shortened their
+*ī, *ū and Plöger, l. c. 94. a list of 5 others that did not. It may be presumed that the former are
+earlier than the latter, but I cannot confirm this by semantic or other criteria. – In loans from
+Baltic, Plöger l. c. 93 f. cites three examples of *ī ® ii, two of *ū > uu, one of closed *ē (from
+*ai) > ii, two of *ō > uu.
+       7.2.2. kulo
+
+        7.2.2.1.The question
+        Thus, writes Jakob, although Finn kulo ‘wildfire; last year’s grass’ certainly
+corresponds to Latv. kũla ‘last year’s grass’, the etymology of the Baltic word is
+uncertain and so is the direction of the borrowing (Jakob 2024: 143, w. lit.).
+Similarly, kulo is not listed in Suhonen 1988, although it is in Pystynen 2022: 12.
+        Yet the Indo-European etymology may be better than is deemed by ALEW
+(s. v. kūlė ̃) and Jakob (l. c. with fn. 37)56.
+        The relation between Greek καίω ‘kindle’, med. ‘burn’, aor. ἔκηα and
+ἔκαυσα < *kh2w-ye/o-, *keh2u-s- and the anteconsonantal zero grade *kh2u- >
+*kuh2- > *kū- in Lith kū̃lės ‘Brandpilze’ (LIV2 345) and Latv kũla, Lith kū́lymas
+‘last year’s grass’ (Smoczyński 2018: 625) is not only “formally possible” (Jakob l.
+c.), but it seems semantically sound (see below57). It would have been a weakness if
+the root were only found in two branches, Greek and Baltic, but a likely third
+witness is Toch A koṃ, B kauṃ ‘sun, day’ < *kāu-ni- < *keh2u-ni- (cf. ALEW
+online s. v. kūlė ̃, Adams 2013: I 225).
+
+       7.2.2.2.The Finnish material
+       Finnish kulo has a double meaning. On the one hand, ‘withered grass, last
+year’s grass’ (Thomsen 1890-1893: 111, 99, 122, 144, 190 f.) , ‘longue herbe
+desséchée et jaunie par l’hiver’ (Yrjö-Koskinen 1900), ‘ungemäht gebliebenes
+vertrocknetes Gras vom Vorjahr’ (SES); cf. Karelian kulo ‘sun-scorched hay
+(usually from the previous year) left uncut or mowed too late’ (SES).
+       On the other hand it means the same as kulovalkea (Y.-K., SES, perh.
+Thomsen 190) (with valkea ‘white, bright’ and ‘fire’, though ‘fire’ is usually tuli),
+namely: ‘Lauffeuer, Waldbrand’ (Thomsen 190), ‘incendie d’une forêt, d’une
+prairie, traînée de feu’ (Y.-K.), ‘Lauffeuer’ (SES), that is, ‘grass fire, uncontrolled
+fire in a dry grass area or, by extension, a forest’. Hence also Finn kulouta,
+kuloutua ‘mit vorjährigem Grase bedeckt werden, verbrannt werden’, kulottaa
+‘vorjähriges Gras anzünden, Waldbrand machen’ (Thomsen l. c.).
+       Other compounds include: kuloniitty (niitty ‘meadow’), ‘pré dont on ne
+fauche l’herbe que tous les deux ans, a meadow that’s only mowed every two
+years’ (Y.-K.); kulonalainen (ala ‘under’) ‘qui vit dans l’herbe desséchée, qu’on
+n’a pas fauchée’.
+
+
+56
+   The SES entry kulo even has an addition (KR 2021): “Nowadays, its Baltic origin is considered
+certain.” However, as we have seen, this has now been challenged again by Jakob l. c.
+57
+   Our English translations from Finnish (SES), Danish (Thomsen) or even German are tentative.
+     Derivatives include: Finn kulouta, kuloutua ‘mit vorjährigem Grase bedeckt
+werden, verbrannt werden’, kulottaa ‘vorjähriges Gras anzünden, Waldbrand
+machen’ (Thomsen l. c.);
+
+        7.2.2.3.The Baltic material
+        – *kū́lā in Latv kũla ‘last year’s grass, dry grass; moulted fur, snake’s skin’
+(Smoczyński 2018 s. v. kū̃lės; ‘altes dürres Gras, namentlich vom vorigen Jahre
+übrig gebliebenes; das alte Haar des Viehs zur Zeit des Abwerfens’, Thomsen
+1890–1893: 190);
+        – Latv wilka-kūla’ganz schlechtes Morastgras. welches das Vieh nicht frisst’
+(Thomsen); Lith (Memel) kules ‘eine Grasart auf Torfwiesen’ (ibid.);
+        – Lith kū́lymas, kū́limas ‘last year’s grass that has not been cut’ (Smoczyński
+l. c.);
+        – Lith iš-kūlýti ‘to dry, wither’, which, as Jakob notes l. c. fn. 13, cannot be
+related to its Latvian synonym kàlst, root kàlt-;
+        – Latv “kūlāt (kūlēt with multiple forms) ‘dürr werden’” (Thomsen l. c.);
+        – Latv kūlas uguns, kūlas ugunsgrēks ‘dry grass fire’ (uguns ‘fire’, grēks
+‘sin, transgression’, ugunsgrēks ‘(uncontrolled) fire’. Judging by the Google results
+(Sept 2025), the phenomenon seems to be very common and accidental.
+        – Lith kū̃lės f. pl. ‘Brand im Getreide’ (Thomsen), ‘stem rust, parasitic fungi
+causing dark spots on stems, ears, grain, Ustilago; Brandpilze, Staubbrand, zgorzel’
+(Smoczyński 2018: 625, w. lit.), ‘charbon des céréales’; with metatony before -ė,
+cf. Derksen 1996: 54-58, 62 f.; from *kūl-ijā-; also kūlė́ti ‘brandig werden’
+(Thomsen), kūlė́tas ‘infected with stem rust’. Other Lithuanian names for Ustilago
+are degulỹs (from dègti ‘burn’) and súodžiai (‘soot’) (Smoczyński 2018: 877,
+1328).
+
+       7.2.2.4.Discussion
+       The majority of items in both the Fennic list and the Baltic list above relate
+directly to ‘dry grass’, not to ‘grass fire’ or ‘burnt grass’. This suggests that the
+adjective *kū-ló- underlying Balt *kū́lā did not mean ‘burnt’ (thus Walde-Pokorny
+377) but ‘inflammable’ Withered or dry grass is highly inflammable and grass fire
+spreads rapidly. It thus made sense to use a word meaning ‘inflammable’ to
+describe the ‘dry’ stage reached by grass or grassland areas. Later, the meaning
+could be extended to the withering state of other plants as well.
+       Is an adjective *kū-ló- ‘inflammable’ plausible from the IE point of view?
+See Brugmann 1906: 373-377, Endzelīns 1971: 109 f., Chantraine 1933: 237-251
+for the (multiple) semantic values of PIE, Baltic and Greek derivatives in
+*-lo-, -la-, -λο-. “Inflammable” could be classified among the adjectives or nouns
+expressing the “Begriff einer tadelhaften Gewohnheit” (Brugmann: 374), “some
+kind of negative characteristic” (Endzelīns: 109 f.) or having a “valeur ‘péjorative’”
+(Chantraine: (238-)239), like Latin bibulus, crēdulus, gemulus, querulus, OHG
+ëzzal ‘voracious’, Lith kùšlas ‘small, puny (etc.)’ (< *‘tired’, Smoczyński 2018 s.
+v., or perhaps rather *‘easily tired’), Latv mirla f. ‘miserable, emaciated creature’,
+Greek δειλός ‘coward’ (ll. cc.). A PIE *kh2u-ló- (> *kū-ló-) *“easily burning,
+having an unpleasant tendency to take fire, inflammable’, would probably fit in the
+same frame – provided the basic meaning of the root was not ‘kindle’ (transitive,
+LIV2 345 ‘anzünden, verbrennen’) but ‘burn’ (intransitive). This is indeed in line
+with the Tocharian derivative koṃ/kauṃ ‘sun, day’ (7.2.2.1), but requires that the
+Greek transitive καίω be secondarily derived from the medio-passive καίομαι, a
+process that is well known in Greek (cf. φθείρω, ὄλλῡμι, σφάλλω), but generally
+not obvious from the Greek data alone.
+        I’m not sure if some Baltic or Fennic derivatives require that the adjective
+*kū-lo- was polysemic and meant both ‘inflammable’ and ‘burning’ or ‘burnt’, or if
+the whole word family can derive from ‘inflammable’, ‘dry grass’. Thus, Finn
+kulottaa ‘put fire to dry grass, start a grass fire, a forest fire’ could have originated
+as ‘to do dry grass’, i. e. to do what is usually done to it, to take care of it; Finn kulo
+in the sense of ‘grass fire, wildfire in grassland or forest’ could have arisen either as
+shortening of compunds kulovalkea, kulotuli (the latter used in Estonian) or by
+metonymical extension of ‘dry grass’. The latter would entail that the same word
+could mean both ‘dry grass’ and ‘burnt grass’, which seems unlikely. Lith kū̃lės can
+hardly be the testis unus for an early sense ‘burnt’ of *kūla-. Perhaps, unlike many
+of its synonyms in various languages, this name of the disease does not derive from
+‘burnt’ but from ‘withered, dried’58.
+
+       7.2.2.5.Conclusion (kulo)
+       Independently of the etymology, there may be a few indications for the
+direction of borrowing to be Baltic > Fennic: it seems easier to explain a shortening
+of *ū in Fennic than a lengthening of *u in Baltic (7.2.2.1); ‘dry grass’ is close to
+semantic fields such as agriculture (e. g. ‘hay’, Finn heinä) or soil conditions (e. g.
+frost) that have a good number of Baltic-to-Fennic loans but perhaps none in the
+other direction (I haven’t elaborated on this point above).
+       The etymology is a strong indication because no etymology of Finn kulo is
+known on the Uralic side while the Indo-European etymology of Balt *kū́lā ‘dry
+grass’ seems rather sound (7.2.2.1, 7.2.2.4).
+
+
+
+58
+     Or from *‘dried out and liable to get burnt (like dry grass)’, but that seems too subtle.
+       7.2.3. lyhyt
+       Another possible example of shortening is Finnish lyhyt ‘short’ (gen. lyhyen),
+if from the Baltic feminine active past participle *lū́ž-us-ī (Lith lū́žusi, of lū́žti,
+intransitive) ‘broken’ (Liukkonen 1994, Pystynen 2022: 12)59, or more probably
+from the masculine accusative *-usin (Lith -usį)60. We are not aware of another
+etymology for lyhyt61.
+       For the final s, Liukkonen p. 2 compares airut ‘herald, messenger’ <
+Germanic *airuz; olut ‘beer’ ~ Lith alùs; ohut ‘thin’ ~ Latv ass ‘pointed, sharp’
+<*ašus. This does not seem to be a regular change, however, since nominatives in -
+us, -ys do occur.
+       Liukkonen l. c. attributes the shortening of *ū to the position before h, for
+which he adduces not only tuhat but also puhdas (below).
+
+       7.2.4. puhdas
+       Finnish puhdas ‘clean, clear, pure, sheer (unadorned)’ (gen. puhtaan) is
+usually traced to Indo-European *puHtos (Mayrhofer II 106, SES s. v.) or better
+Indo-Iranian *puHtas (Wiktionary s. v., accessed 9.25). However, that makes for an
+uncannily early borrowing for a word that’s only attested in Baltic Fennic.
+        Liukkonen 1994: 91 has a more plausible proposal in this respect, the Baltic
+participle *pọ̄štas62. The Baltic verb is Lith puõšti, dial. also púošti, ‘decorate,
+ornament, embellish, beautify’, Latv puost ‘clean, sweep, clear; decorate, beautify’
+(Smoczyński 2018: 1038). The semantics fits rather well. According to Liukkonen,
+the word was borrowed in Fennic as *pūštas, hence *pūhδas > *puhδas > puhdas63.
+
+     7.2.5. Migratory argument
+     Let us add that, for geographical reasons, the first contacts between Fennic
+and Baltic must have been even older than those with Germanic, so that the
+
+59
+   Not retained in SES or Wiktionary (fn. 61).
+60
+   See Endzelīns 1971: 257 for the inflection of the active past participle. – As for the Lith root
+lūž-/lauž- ‘to break’, its own etymology is complicated by the fact that it implies an Indo-
+European palatal, whereas its Indo-Iranian cognate implies a velar (LIV2 415 f. and n. 1);
+nevertheless, it is not disputed; perhaps the languages of Europe have merged *leug- ‘to break’
+and *leuǵ- ‘to bend’.
+61
+   Wiktionary in English speaks of an “unknown root”
+(https://en.wiktionary.org/wiki/Reconstruction:Proto-Finnic/l%C3%BCh%C3%BCt 19.06.2025).
+Versions in other languages do not give any etymology. SES (accessed 09.25) derives it from an
+ad hoc root.
+62
+   Puhdas would thus be added to Plöger’s examples, cf. fn. 55.
+63
+   Liukkonen’s etymology is mentioned as a possibility in SES (in the bibliographical note, after
+Koivulehto).
+hypothesis of a Fennic shortening of *ī, *ū in some of the Baltic loanwords is not
+as ad hoc as Jakob (2024: 108) fears.
+
+       7.2.6. Conclusion
+       In short, apart from tuhat, the potential evidence for the shortening of Baltic
+*ū in some Finnish loans is scarce, but not bad: we have only noticed two
+examples, namely kulo ‘dry grass, dry grass fire’ (7.2.2), whose Baltic source *kū́lā
+would have a good IE etymology, and lyhyt ‘short’ (7.2.2.5), from the Baltic
+participle *lū́žusī (nom. fem.) or *-in (acc. masc.) ‘broken’.
+       For Liukkonen, the shortening of *ū is simply due to the following h, for
+which he adds a further example, puhdas ‘pure’ < Balt *pọ̄štas ‘beautified’ (7.2.4).
+The rule would not cover kulo, so that we would still only have two parallels for the
+shortening in tuhat.
+       It may be speculated that the examples of Balt. ū, *ọ̄ > Finn u (the four listed
+here) are earlier borrowings than those of Balt ū, *ọ̄, ī, *ē ̣ > Finn uu, ii (the four +
+four listed by Plöger 1982: 93). However, no such difference is obvious from the
+semantics of the two groups of loans.
+       On the other hand, alternatives to a Baltic origin of tuhat are unpromising. A
+Germanic source would not explain the a in our opinion (2.1.2.3). A loan from
+Slavic (*týsęšti, i. e. *tū́sEntjī) would not account for the Fennic form at all. A loan
+from an unknown, non-Indo-European language is, in our opinion, too “big” a
+hypothesis for such as “small” difference as Fennic *uš vs. Baltic *ūs; it would not
+really explain the Fennic form since the sound laws of that language are not known;
+and it would not explain the Germanic-Baltic-Slavic word itself (see also 5.3, 8.1).
+       All in all, our position is that Finnish tuhat is best explained as a loan from
+Baltic and that the short u is not an obstacle to this, whatever its cause.
+
+          7.3.   *š vs. *s
+
+       7.3.1. Baltic *š?
+       Finnish h in tuhat, from a former *š64, is generally seen as evidence that the
+Baltic source language had *š due to the RUKI law. This is undoubtedly the simpler
+hypothesis from the Uralic point of view. However, this is not what the Baltic and
+IE evidence points to:
+       – Lith tū́kstantis and its variants are always attested with -kst- in Lithuanian;
+the only exception of Bretkūnas is not an archaism (4.2);
+
+
+
+64
+     Cf. *š > x in e.g. Slavic, Spanish, perhaps for different reasons.
+       – Many Baltic words do not have *s > *š after i, u, and this is an archaism
+(4.2, after Stang).
+       Now we cannot exclude that the Fennic word was borrowed from an aberrant
+Baltic dialect that had *tūšantī (or *tūštantī) with *š. Nevertheless, this is
+uneconomical (from the Baltic point of view). Although the Baltic loans in Fennic
+must indeed be from an extinct Baltic dialect (Nieminen 1957), that dialect is
+unlikely to have had *š where Lithuanian does not65. (If *s > *š is an innovation
+that failed to reach Baltic because of its marginal position, it is not expected to have
+reached an even more marginal area.) We will thus explore a different solution
+(7.3.2-7.3.4).
+
+       7.3.2. *š from foreign *s
+       It is not uncommon for a Finnish h (< *š) to reflect an *s of the source
+language, whether Germanic (Koivulehto 1984: 115-117, Kallio 2015: 6 f.), Slavic
+(e.g. Finn Pihkova ‘Pskov’ < Pьskovъ, Old Russian Plěskovъ), or Baltic (Jakob
+1924 b: 142), even after vowels other than i, u. However, most of these cases are
+not very relevant to the one at hand:
+       – Germanic, having no opposition between s and š, must have had an apical
+pronunciation of s, which sounds midway between s and š to speakers who have
+both phonemes in their language and pronounce the former as “predorsal” or
+laminal (cf. Martinet 1955, 235 f., Koivulehto 1984: 115 f.);
+       – Loans from Slavic certainly belong to a later period than the Baltic
+borrowings, at least those Baltic borrowings that are old enough to have undergone
+the shortening of *ī, *ū.
+       Nonetheless, we have to provide examples of Baltic (Lithuanian) s vs.
+Finnish h if we are to make Balt *tūsantī > tuhat plausible. This is what we’re
+attempting below (7.3.3).
+
+       7.3.3. *š from Baltic *s
+       A list of Baltic loans in Fennic (arranged by semantic groups) is given by
+Suhonen 198866. While loanwords with h vs. Lith š or ž are numerous (more than
+30), those with h vs. Lith s are indeed very rare67:
+
+65
+   It is safe to admit that Latvian formerly had *š in the same conditions as Lithuanian does,
+either from PIE *ḱ, *ḱs or from PIE *s, before it merged it with s (like Mazurian Polish dialects)
+and acquired a new š from *č < *tj. Alternatives assuming that PIE *ḱ, *ḱs reached Latv s
+through the same path as in Slavic, or that Latvian did not undergo RUKI at all, are more
+complicated and will not be considered.
+66
+   An earlier list, alphabetical, is found in the second part of Thomsen 1890-1893. We have not
+used it systematically.
+       7.3.3.1.Word-final examples
+       – Some words have -e < *-ex < *-ix < *-iš vs. Baltic -is: at least herne ‘pea’,
+helle ‘hot weather’, Lith žìrnis ‘pea’, šil ̃tis ‘Wärme, heat’.
+     68
+
+       These two are very important for our purpose, because these Baltic words are
+not i-stems, but ia-stems, with nom. sg. -is < *-īs < *-ijas, thus with no application
+of the RUKI law even if it had been fully active in the Baltic dialect concerned.
+       None of the Baltic loans ends in -is. Those in -i (like hanhi below)
+presumably reflect the Baltic accusative69.
+       In addition, the contrast between Finnish *-eh from Baltic *-īs and Finnish -
+as, -äs from Baltic *-as shows that word-final position is not the cause for the
+Finnish reflex *š, or not its primary cause.
+       Unfortunately, these examples only concern Baltic *s after *i, not after *u.
+
+       7.3.3.2.Word-internal examples
+       – laiha ‘thin, skinny, Lith líesas ‘id’. A Germanic *laisa- (Jakob 2024: 142)
+does not exist, but only *laisizan- ‘less’, which, though considered as related
+(Kroonen 2013 s.v.), is not as good a semantic match anyway.
+       – vihvilä ‘rush, Juncus’, Lith viksvà ‘Riedgrad, Segge, sedge, Carex’, dial.
+vikšvà (probably from *wiswā, cf. 4.1.1 above and Smoczyński 2018, s. v.).
+Possible cognates with different meanings in Slavic and Germanic (Fraenkel,
+Smoczyński).
+       – hanhi ‘goose’, Lith žąsìs ‘id.’ (perhaps an assimilation *š–s > *š–š).
+       – pahla ‘fishing rod’, Lith baslỹs ‘pole’. An apparently Lithuanian-only
+creation, indirectly on the root bed- ‘poke, pierce, stick’ (Smoczyński 2018, s. v.).
+       – lahto ‘bird snare in treetop’, Lith slãstai, slą́ stos etc. (many variants,
+though none with š) ‘(rat) trap’, Latv slasts, sla(g)zds ‘bird trap’70. Etymology
+uncertain (Jakob 2024: 141, w. lit.).
+       – mähkä ‘Geschwür, Knollen (am Baum), Knoten’, Lith mẽzgas, mãzgas
+‘Knoten, zugezogene Schlinge’ (Suhonen 609, with source; not found with this
+meaning in SES).
+
+67
+   Our sources for most of the etymologies were wiktionary.com and SES, where a few of those
+retained by Suhonen have been left out. – The Baltic source of the loanwords may have been
+closer to Latvian, but we cite Lithuanian for the preserved distinction s : š.
+68
+   The regular Finnish lenition of the initial stop of a closed syllable yields opposite results in
+paradigms in -i, gen. -en and in *-eh, gen. *-ehen, e. g. joki, joen ‘lake’ but helle, helteen.
+69
+   For the loss of Baltic final *n in Fennic loans, compare paimen ‘shepherd’ corresponding to
+Lith acc. píemenį rather than nom. piemuõ.
+70
+   Etymology and glosses after SES; details of Baltic forms after Smoczyński 2018.
+       – ahingas ‘Fischgabel, leister, pronged fishing spear’, ‘lysterjærn, iron spike
+for the leister’s prongs’, Lith ãkstinas ‘thorn, prickle; sharp stick, goad’ (Suhonen
+1988, 599, with reservation; Thomsen 1890-1893: 75, 82, 158; details of the Lith
+word after Smoczyński s. v.). Lith ãkstinas and akstìs ‘small pole with a sharp end
+(etc.)’ are themselves borrowed from Slavic *ostьnъ ‘spike, goad’ (Thomsen 158)
+and *ostь ‘spike, thorn (etc.)’. Given the IE source *aḱ- or *aḱs-, the Slavic origin
+of the Baltic words is proved by their having s, not *š. (The variant akštìs might be
+inherited but it’s rather a secondary alteration of akstìs.) The Fennic word shows a
+change of suffix (Thomsen 82), but also an unexpected reflex of Balt kst or *st.
+Thomsen 75 sees it as a case of h for expected hd, but the only other example cited
+is tuhat, which cannot be from *hd in view of the Mordvin and Mari ž (7.1, 7.7).
+Nevertheless, the change *hδ > h is regular in other Fennic languages, cf. Finnish
+puhdas, Ingrian, Karelian, Estonian puhas, Votic puhaz (SES), so that its sporadic
+application in Finnish seems possible and would accound for ahingas.
+       Though about half of these examples have a cluster *s + consonant, this is
+hardly relevant because Finnish usually allows these clusters.
+
+      7.3.3.3.Counter-examples
+      Words in which Balt *s (or *š) corresponds to Finn s even after i, u, r:
+      – karsas ‘crooked (etc.)’, cf. Lith (s)kers̃ as ‘transverse, sideways, crooked’.
+Slavic *čersъ ‘through’ with no RUKI effect points to BS *(s)kertsa-. At the time of
+the borrowing, *ts > s had probably already taken place, like *č (from PIE *ḱ) > š.
+      – laiska ‘lazy’, cf. Latv laĩsks ‘id.’, but the etymology and direction of
+borrowing are uncertain.
+      – kausta ‘Seitenholz des Arbeitsschlittens’, cf. Latvian skausts ‘wedge (?);
+neck, shoulder or loin (of an animal) (?)’71. A semantic link is not obvious. We
+don’t know the Baltic word’s etymology, nor whether it had *s or *š.
+      – musta ‘black’; Baltic etymology unlikely72.
+
+71
+   Finnish word’s translation and Latvian word after SES; Latvian word’s translation after SES
+(‘niska, säkä’) and Ulmann 1872: 260 (‘der Keil, das Kreuz, der Nacken eines Thieres’. Not in
+Thomsen 1890-1893.
+72
+   This last example, not listed by Suhonen (1988: 608, Farbenbezeichungen), is adduced by
+Liukkonen 1994: 91, who derives Finn musta ‘black’ from a Baltic participle *musta- ‘beaten
+(e. g. eye)’, cf. Lith mùšti ‘beat’. That is, if we understand correctly, Finn ‘black’ < Baltic
+‘bruised’. This is unlikely, however. That seems to us too marginal an acceptation of ‘black’ and
+too inaccurate as a colour designation to be the origin of a general term for ‘black’. There is
+another Finnish adjective museva ‘dark, blackish’ (SES), but it lacks the passive suffix -ta- and
+thus cannot be interpreted as ‘beaten’. Finn mustelma ‘bruise’ can easily derive from musta
+‘black’ (through muste ‘ink’) but this does not mean that the reverse change is likely. To account
+for the difference between Balt š and Finn s, Liukkonen needs a sporadic free variation between s
+       7.3.4. Conclusions
+       To sum up, the evidence we have found for Baltic *s > Fennic *š boils down
+to very little:
+       – Not a single example after *ū̆ (except for tuhat itself).
+       – Nouns in final *-īs (< *-ijas) > Fennic *-iš (7.3.3.1). This means that even
+after *i, Fennic *š need not point to a RUKI reflex in Baltic.
+       – Two words in internal *-is- (laiha, vihvilä, 7.3.3.2). This may be due to
+either “heightening” of *s (ibid.), or to mere palatalization… or to chance.
+       – A few other words (hanhi, pahla, lahto and the distorted ahingas, 7.3.3.2).
+Various factors can be imagined, but not confirmed. The cluster st is normally
+allowed in Finnish.
+       Some of these loans may be later that tuhat.
+       Counter-evidence is even more scarce; possible examples are kausta, laiska,
+musta but none of them is certain (7.3.3.3).
+       The contradiction between tuhat and kausta, musta (if one or both of the
+latter were really from Baltic) would be annoying but need not worry us because
+various factors may have been at play.
+       All in all, our position is that Finnish tuhat is best explained as a loan from
+Baltic, that the Baltic source form was most probably *tūsantī (or *tūstantī) with
+*s, and that there are a few parallels for a sporadic rendering of Baltic *s as *š in
+Fennic.
+       This view is far from resting on a firm ground, but we still advocate it,
+because the main alternatives would be either an early split of (East) Baltic, with
+full RUKI affecting not only Slavic but also the language that was the source of the
+Baltic loans in Finnish, or a non-IE origin of the word, two scenarios we find even
+less likely (7.3.1). See also 7.2.6.
+
+       7.4. *š vs. st
+       We used to think that the lack of the medial t in Fennic *tušante vs. Lith
+tū́kstantis was due to a dissimilation (cf. 3.3.1, 5.1.3).
+
+
+and š, which he sees in Lith blùšti ~ blùsti and *plauš- ~ *plaus-, referring to papers by Čekman
+and Karaliūnas respectively. We have not checked these papers but only the entries in
+Smoczyński 2018. According to Smoczyński, blùsti ‘blink (etc.)’ derives from the onomatopoeia
+blùst (also blūst, blàst). This makes the variation s ~ š in this word irrelevant. A relation between
+pláusti ‘rince’ and plaũšas, plaušaĩ ‘fiber (of flax, hemp), bast’ is not obvious; the latter seems
+closer to plùšti ‘fray, be torn apart, wear out’. (In his paper written in Lithuanian, Liukkonen
+does not tranlate the Lithuanian words end roots, which did not help us understand his
+hypotheses.)
+       However, since we have been led to posit an early East Baltic stage *tūsantī
+(5.5.1.1), this form can be the direct source of the Fennic word, provided the loan
+can be dated early enough, which is indeed the case until evidence to the contrary.
+Note that the short u in Finnish points to an early loan, too (7.2), although we don’t
+know exactly how early is “early” in either case.
+
+       7.5. The nasal
+       For a long time, our word was posited with *-mt- in Baltic, and accordingly
+in Fennic, at the time of the borrowing.
+       At first, this was mostly for the etymological reason we have already seen
+(the derivation from ‘hundred’, 4.5).
+       Thomsen 1893: 232 f. cites the Baltic forms including OPr tusimtons and the
+Fenno-Volgaic forms including Mari, but he does not propose any reconstruction of
+an earlier stage (except for the Fennic nominative singular [*]tuhansi).
+       Gauthiot 1906 insists (against Hirt’s objections) on the etymology *tūs-
+ḱ(o)mt- and posits *tū́šamt- as the original Lithuanian form; he also cites the
+Mordvin and Mari forms, but it’s not clear if he wants to derive the Mari -m from
+the old *-mt-.
+       Būga 1908: 138 posits a pre-Lithuanian *tušamtís, again for etymological
+reasons (*tūs-ḱm̥t-), but he does not cite the Fenno-Volgaic forms, exeept for
+Finnish “tuhansi” (apparently taken from Thomsen, see fn. 73). Būga presumably
+did not know Gauthiot’s 1906 article, nor his Paris talk of 1904 (published later that
+year), when he wrote his big 1908 book, mainly based on his notes written until the
+autumn of 1905 (preface, p. V f.).
+       Nieminen 1957: 190, too, posits a primitive Baltic form *tūšamtis (*tūšimtis
+in West Baltic), whence a Proto-Fennic *tušamte, but he does not cite forms of
+other Fenno-Volgaic languages.
+       Vaillant 1958: 647, on the other hand, derives Finnish “tuhansi” from an
+earlier [Fennic] “*tū̆šanti-” with *n, but he does not give a reconstruction of earlier
+Baltic forms.
+       SKES V 1374 (1975) writes Proto-Baltic *tūšamt-, Proto-Fennic *tušamte-,
+and posits an “[m]” in the pre-forms of Mordvin and Mari.
+       Lühr 1993: 124, 1998: 897 gives the Finnish pre-form as *tušamte-,
+presumably on the authority of SKES (not Stang), although she posits the early
+Baltic form as *tūšantis with n (897 f.; more clearly 1993: 124) and does not
+mention the Volgaic forms.
+       Liukkonen 1999: 90, en passant, posits a dialectal Baltic *tūšamtē (see also
+7.6) > Fennic *tūšamte (with later shortening of *ū, 7.2.3), presumably on the
+authority of SKES, as it doesn’t cite the Volgaic forms nor any Indo-European
+etymology.
+       Gorbachov 2006: 4, 13 and Jakob 2024: 140, 144, also posit *-mt- in both the
+Baltic source and the Fenno-Volgaic rendering, but only on account of the final m
+in Mari tüžem. Both authors have rightly abandoned the old etymology of
+‘thousand’, so they have to attribute the Baltic purported labial nasal to a secondary
+influence of ‘hundred’, even though ‘hundred’ had *i (*šimta-) where ‘thousand’
+had *a at the time of the borrowing (*tūsantī or similar). In our view, this influence
+was impossible, because of the different vowel (and different sibilant), and the
+Baltic source must have had *-nt-.
+       Van Pareren 2008: 127(18), quoting Stang 1966: 100, is aware that mt in Old
+Prussian cannot be old.
+
+       7.6. The final
+       Finnish tuhat, gen. tuhannen, plural tuhannet, gen. tuhansien, ordinal
+tuhannes73; Estonian tuhat, gen. tuhanden, ordinal tuhandes; see SKES V 1374 for
+further Fennic forms.
+       The Baltic source of the Finnish loan was formerly mostly posited as
+*tūšamtis (7.5), an i-stem like Old Lithuanian tūkstantis.
+       However, it is more likely that the Old Lithuanian form goes back to
+*tūstantī (5.4.5:3, 5.5.2.1), which implies a still earlier *tūsantī at the time of the
+borrowing (5.5, 7.5).
+       Liukkonen 1999: 19 posits a dialectal Baltic *tūšamtē- as source of the
+Finnic loan, but this is hardly possible because the modern dialectal tū́kstantė is
+likely to be a late reshaping of the *jā-stem, whereas the lack of a medial *t in the
+Fennic loan points to an early stage (*tūsantī, 5.5.1) for the time of the borrowing.
+       In Finnish, apart from the nominative singular, the alternation e/i/Ø (and
+te/de/si/t) in the inflection of tuhat matches exactly that of inherited words like joki
+‘lake’, nimi ‘name’ and more specifically käsi ‘hand’, vesi ‘water’ < Uralic *joke,
+*nime, *käte, *wete74. In any case, since there was no (reconstructible) contrast
+
+
+
+73
+   We’re not sure what Thomsen 1890-1893: 76 f., 233 means by tuhansi (without asterisk or
+hyphen, but between brackets), as opposed to the “usual” (“sædv.”) nominative tuhat and stem
+tuhante-. This tuhansi is then cited by Būga 1908: 138, Vaillant 1958, 647, Fraenkel 1136, and
+others, as if it were the form (or one form) of the nominative singular, but as far as we have been
+able to enquire it’s not the case and tuhansi- is only one of the stems of the plural.
+74
+   We conventionally write the final vowel as -e but there is currently no consensus on whether it
+was originally *e, *i ~ *ı or *ə (Pystynen 2017: 7).
+between *i and *e for the stem-final vowel in Fennic75, there is no reason to prefer
+*tūšamtē or *tūsantê over *tūsantī as the Baltic source of Fennic *tušante.
+      What’s unclear to us is the apparently irregular loss of final *e or later *i
+even before the Fennic change *ti > *ci (> si).
+      Finally, the nasal was regularly lost before a syllable-final stop (cf. Posti
+1953: 56-59).
+
+      7.7. Mordvin, Mari
+      As we have briefly noted (7.1.0), our word is also found in the Mordvin
+languages and in Mari.
+
+      7.7.1. Forms
+      Sources: (a) Wiedemann 1865: 16176; Thomsen 99, 233, SKES V (1975):
+1374; (b) Paasonen 1990 [1889-1901]77, s. v.; Jakob 2024: 144.
+      Mordvin: Moksha ťožεń, -äń, -än; Erzya (a) ťoža, ťožov, (b) ťožań, ťužäń78,
+Kuldym village ťožəm79. – Erzya also uses tyštsa (thus Wiedemann), tyštša, tysjača
+(thus Gauthiot 1906: 1), from Russian тысяча, тыща80.
+      Mari: West tə·žem, East tüže·m.
+
+      7.7.2. Comments
+      A number of remarks come to mind81:
+      (a) The Mordvin and Mari forms are remarkably similar despite the
+languages not being closely related. Perhaps the word has been borrowed from one
+of them into the other.
+      (b) Mordvin ť- is irregular. Inherited *u, *ū normally become Md o, u
+respectively (Bereczki 1988: 320 f.), but the preceding dental is unaffected (see
+
+75
+   The contrast between nominatives in -i and -e in Modern Finnish is only due to the presence, in
+the latter, of a former final *x < *š, cf. 7.3.3.1.
+76
+   Probably the ultimate source for the following. (Thanks to A. Jakob, 2025 b, for the references
+to Weidemann and Paasonen.)
+77
+   The dictionary published in 1990 is based on materials collected during four field trips between
+1889 and 1901, see map in Paasonen 1990 : LXIII. (Thanks to Jakob 2025 b for the reference and
+PDF.)
+78
+   a in the former and u in the latter are irregular. – It appears from the examples given in the
+entry that ťožań is from a Moksha-born Erzya speaker. – (Both observations by Jakob 2025 b.)
+79
+   In the inflected (?) form ťožməń (perhaps for ťožmäń according to the dictionary).
+80
+   Russian words can be freely used in Erzya sentences, Raun 1988: 97. Apparently this was
+already the case in Weidemann’s time.
+81
+    See also van Pareren 2008: 126-129 for another discussion of the Mordvin loan and a
+comprehensive bibliography.
+Rédei I 534-538, II 800 f. for *tu-). Mari ü is irregular as well, for expected *u (cf.
+Bereczki 1988: 338). SKES V 1374 asks whether the front vocalism in Mari is due
+to šǜ·δə ‘hundred’ and the palatal initial in Mordvin to śado ‘hundred’.
+       (c) On the one hand, the final m in Mari tüžem (and even Kuldym Moksha
+ťožəm) should be old, because final m easily becomes n (or presumably ń in a
+palatalizing context?) and not vice-versa. On the other hand, however, the origin of
+this -m connot be sought in Baltic, which had *nt, not *mt (4.5, 6.3, 7.5). Even if
+the Baltic source somehow had *mt, its expected Fennic rendering may well have
+been *nt. And even if early Fennic or Fenno-Volgaic had *mt, there is little doubt
+that its Mari reflex would have been*nt > n82. We see no other choice than to
+consider the Mari labial as an innovation. Perhaps there was a propagation of the
+labial feature of the vowel of the first syllable?
+       (d) Erzya ťoža might have its final from Russian týšča, which is also used in
+Erzya (7.7.1). However, loss of final *ń is also found in some other words (van
+Pareren 2008: 125, Jakob 2025 b) and perhaps does not even need an explanation.
+       (e) Erzya -v in ťožov “would seem to imply *-ŋ” (Jakob 2025 b).
+       (f) Suhonen 1988: 614 observes that it is not necessary to assume that Baltic
+loanwords in Mordvin and Mari have reached these languages through Fennic
+mediation; and that Mordvin has some Baltic loans that are not found in Fennic. In
+the word for ‘thousand’, however, the three branches agree closely in that they all
+reflect a protoform in *-ŭša- as against East Baltic *-ūsta- < *-ūsa- < *-ūsi- (4.2,
+5.5.1). This is best explained if the word was borrowed from early Fennic (*tušante
+or *-i). Presumably Mordvin borrowed it from Fennic (indirectly83) and Mari from
+Mordvin (cf. a).
+
+       7.8. Conclusion (Fenno-Volgaic)
+       We tentatively maintain that early Fennic *tŭšante (final vowel uncertain)
+was borrowed from early Baltic *tūsantī (or *tūstantī). The main alternatives
+would be an extinct Far-Eastern or Far-North-Eastern Baltic dialect with *-ūš- (to
+account for *š) or even a non-Indo-European origin of this word (to account for the
+short *u), both of which we deem even more unlikely. There are a few possible
+parallels for this shortening of *ū (7.2) and this rendering of *s as *š (7.3) in Baltic
+loans. Even so, these substitutions are not well proven and not well explained.
+       There are reasons to believe that the Mordvin word was borrowed from
+Fennic and the Mari word from Mordvin (7.7). This is not formally proven, and
+82
+  However, we have not checked the reflex of *pt in Mari (and Mordvin).
+83
+   Before the expansion of Russian, several cultures have left archaeological traces between the
+present-day territories of Baltic or Fennic and Mordvin languages, part of them Fenno-Ugric, part
+of them not but perhaps Baltic, see van Pareren 2008: 74 f.
+even if it were that would not entail a similar conclusion for other loans listed by
+Suhonen 1988: 614 or van Pareren 2008: 84-133 .
+      The question of a palaeo-Baltic substrate fully remains in spite of our
+removal of the word for ‘thousand’84. To cite only one study, most of the other
+examples discussed or mentioned by Jakob 2024 are of a different sort in that they
+have no Slavic counterpart and no discernible IE etymology.
+
+8.     Etymology
+       8.1.   Root
+
+       8.1.1. Forms
+       Our word is currently mostly seen as a derivative *tuhx-s-(o)nt- of the IE root
+*teuhx- *‘to swell, to grow thick, big, strong’, cf. Ved TAVI ‘be strong, have
+power’, tuvi- ‘very’, tavás- ‘strong’ < *teuhx-és-; on this root see Mayrhofer I: 638
+f., LIV2 639 f.)85; for this etymology (even before the laryngeal theory) see Bopp
+1853: 46 and e. g. Lühr 1993: 125 (chosen as an example of “Semantifizierung von
+Zahlwörtern”), Gorbachov 2006: 10; further references in Pijnenburg 1989: 100
+under (2) and Lühr 1998: 894 f.
+       Others have seen it as a compound of the same root with a word for
+‘hundred’ (see Pijnenburg l. c. under (1) and Lühr l. c. 892 f.), which amounts to
+the same semantically speaking, but does not account for the Germanic and
+Slavic -s- (5.1.1).
+       A relation of ‘thousand’ to this root ‘big, strong’ is only denied, to our
+knowledge, by those few scholars who hold for a non-Indo-European origin, be it
+for formal reasons only (namely, the apparent impossibility of tracimg the
+Germanic, Slavic, Baltic and Fennic forms to a single preform if this is sought for
+in Indo-European: thus Jakob 2024: 144 f.), or, additionally, because the semantic
+connection is allegedly unfounded (“schwebt in Wirklichkeit in der Luft”, Stang
+1972: 59, quoting Pedersen 1943: 185).
+       Now, a non-IE origin does not solve the formal difficulties (it gives no
+explanation for the divergent East Baltic form, at least, 5.3).
+
+
+
+84
+   And ‘lax’, if from PIE *lok1-os-/*lk1-s- with Lith lašiša < *-šaš- < *-šas-, and perhaps by
+metaphor Latin locusta ‘grasshopper’.
+85
+   Laryngeal *h1 in our opinion (Francis’ Law) if Gk grec τῡρός ‘cheese’ is related; *h2 according
+to Peters 1980: 290243, who relates Gk σάος ‘safe and sound’ < *twawos < *tuh2-ewo-. None of
+these two etymologies is semantically satisfying, however.
+       8.1.2. Semantics
+       As for the semantic connection (*‘big, strong’ > ‘thousand’), it can be
+supported by a number of parallels.
+       (a) ‘big’ > an unspecified big number:
+       – Lith tū́las (sg. or pl.) ‘several, many’, cf. OPr tūlan ‘much, a lot’, from the
+same root PIE *tuhx-86;
+       – French force ‘strength’ can be used in the sense of ‘many, a goodly number
+of’ (e. g. avec force remerciements ‘with profuse thanks’; this is a remnant of
+medieval syntax and semantics in the sense of ‘une quantité de’, cf. FEW III: 728
+f.).
+       – Gk ἅλις ‘in abundance, in throngs, enough’, from the same PIE root as
+English swell according to Imberciadori 2023.
+       (b) an unspecified big number > a definite big number:
+       – Gk μῡρίοι ‘countless’ > μῡ́ριοι ‘ten thousand’ (Chantraine s. v.).
+       (c) ‘big’ > a definite big number
+       – English grand subst. ‘a thousand of some unit of currency’, from grand
+adj. ‘large, great’;
+       – French grosse subst. ‘twelve dozens’ (thus not as big a number as
+‘thousand’, however), feminine of gros adj. ‘groß, dick ; big, fat’.
+       (d) ‘strength, size’ > ‘number’:
+       Armenian t‘iw ‘number’, plausibly from *tēwes-o- *‘relative to strength’
+from an assumed sigmatic neuter *tewes- < *teuH-es- ‘strength’ (cf. Olsen 1999:
+23).
+
+      8.2. *-s-suffix
+      a) The sigmatic stem is perhaps the zero grade of the sigmatic neuter
+deverbative *teuhx-os ‘bigness’, or perhaps an enlarged root *tuhxs- that is seen in
+some Germanic and other words (Pokorny 1084).
+      A substantive *téuhx-os n., Skt. *távas- n. is not directly attested.
+      There are (with -s-):
+      In the R̥gveda (Mayrhofer I: 638 f.):
+      – tavás- adj. ‘strong’,
+      – tavás- m. subst. ‘strength’, with suffixal accent (but “hardly substantive”
+according to Wackernagel-Debrunner 1954 £ §123cA, mettre la page, et 884),
+
+86
+  A connection with Slavic tylъ ‘nape of the neck’ is uncertain, cf. on the contrary Gk αὐχήν ‘id.’
+< *anǵhw-én- < *anǵh-ú- ‘narrow’.
+       – távasvant- ‘strong’, as if from *távas- ‘strength’ (adjectives in -vant-
+reflect the accent of the basic noun, with few exceptions that are not similar to
+távas-vant-, Wackernagel-Debrunner 1954: 884),
+       – táviṣī- ‘strength’ (*téuhxs-ih2) and its own derivatives,
+       – tuvíṣ-, túviṣ- (in derivatives, a contamination of *taviṣ- and *tuvi-).
+       In Armenian: t‘iw ‘number’ (8.1.2 d) makes a neuter *téuhx-os plausible but
+a post-PIE creation is not excluded.
+       If a noun or adjective in *tuhxs- is derived from a noun *téuhx-os, it must go
+back to a time when sigmatic neuters still had an ablauting paradigm, of which
+there only remain two traces as far as I know, *h2eus-os, gen. *h2us-és-s, dual
+*h2us-s-íh1 ‘ear(s)’ (cf. Irslinger 2008: 339-342) and *h3éh1-os, *h3h1-és-s v. sim.
+‘mouth’ (cf. Irslinger 2008: 387-390)87.
+       b) Alternatively, an enlarged root *t(e)uhx-s- is perhaps to be recognized in a
+number of derivatives, like ON þústa ‘heap’, Old Irish tuaimm ‘hill’ (Pokorny
+1084).
+
+       8.3.   *-nt-suffix
+
+       8.3.1. Parallels
+       Since only a feminine in *-n̥tī can be safely reconstructed, while the a or *ǫ
+is probably or possibly not old in the Old Norse and Old High German variants
+tusand, dūsant (2.1), in regional Slavic *tysǫtji (3.2) and in East Baltic *tū́stantis
+(5.4.5:4, 5.5.1.1), mere linguistic comparison does not tell us whether the full grade
+of the underlying masculine had been *tuHs-ont-, *tuHs-ent- or even *teuHs-ont-.
+       The suffix of this *tuHs-n̥t- *‘big, strong’ (to cite its zero grade) is found in a
+few other adjective (of related meaning), but their formations are different88:
+       a) *bh ̥rǵh-ónt- ‘high’ (Ved br̥hánt- ‘high, big, strong, etc.’; see Mayrhofer II:
+232 for its cognates; note Arm barjunk‘ pl. ‘high’ < *bh ̥rǵh-ónt-es, Stempel 1983:
+92), synonym of *bh ̥rǵh-ú- and others (see Mayrhofer l. c.), is merely the present
+participle of the v e r b *bherǵh- ‘to rise’ (LIV2 78 f., Schirmer–Kümmel), just as
+
+87
+   The ‘ear’ word is not attested in Tocharian and Anatolian, as if it were a creation of “Core
+Indo-European” (unless it). On the other hand, Anatolian has already levelled the alternation (in
+nepiš, nepišaš ‘sky’, like Skt. nábhaḥ, nábhasaḥ, Gk. νέφος, νέφεος ‘claud’, and partly in aiš,
+išaš < *h3eh1-es, *h3h1-es-os). The leveling presumably took place independently in Anatolian
+and the rest of Indo-European. A verbal root for these three nouns is unknown, unlike the
+productive type *ǵénh1os and the possible *téuh2-os discussed here.
+88
+   The following derives from this concise remark by Neri 2009: 8: “(…) ein sekundäres Adjektiv
+*tuh2-s-ont- ‚groß, angeschwollen‘ (zu *teu̯h2-s- ‚Schwellung‘) (…) (zu den sekundären -ont-
+Bildungen vgl. z. B. uridg. *m(e)ǵ-éh2-ont- → ai. mahā́ nt-)”.
+*h1d-ónt- ‘tooth’ is the (non-Anatolian) present participle of *h1ed- ‘to bite
+(repeatedly or lastingly), to eat’89.
+        b) *m̥ǵ-eh2-ént- (v. sim.)/*m̥ǵ-h2-n̥t- ‘big’ is an enlargement of the
+a d j e c t i v e *meǵ-éh2- (or *-óh2-), neuter *méǵ-h2 (Ved mahā́m acc., máhi, see
+Mayrhofer II: 337-339, Wodtko 2008: 468, 470-473), seen in Vedic mahā́nt-/
+mahat- ‘big’ and its Avestan cognate, Greek ἄγᾱν ‘too much’, Latin ingēns ‘huge’
+(Mayrhofer l. c., Meier-Brügger 1979, Wodtko 2008: 469, 474 f.)90. – For
+Mayrhofer l. c., IIr *maȷ́h-aH-ant- ‘big’ is analogical of *bhr̥ȷ́h-ánt- ‘high’, so that
+we would not have to care about the morphological function of the suffix.
+However, because of ἄγᾱν, ingēns, this analogy would have to go back to the proto-
+language, which requires *meǵ-eh2-ónt- or *m̥ǵ-eh2-ónt- with *o: this ancienty
+would make the full grade *-eh2- (or *-oh2-) even stranger and this vocalism makes
+the second α of ἄγᾱν perhaps more difficult to explain. See Wodtko 2008 l. c. for
+alternative views on this suffix.
+        c) Formally more archaic and semantically more remote: *ǵérh2-ont-/*ǵr̥h2-
+n̥t- ‘old’, an adjective (not a participle) from the verb *ǵerh2- ‘alt machen, let grow
+old’ (LIV2 165 s. Kümmel)91.
+
+     8.3.2. Conservative analysis
+     E. g. present participle *tūs(o)nt- < *tuh2s-(o)nt-, Lühr 1998: 898, 901;
+denominal adjective *tūs(o)nt- < *tuH-s-(o)nt-, Neri 2009: 8; or only its feminine
+
+89
+   *h1ed- is morphologically a “present root”, i. e. durative; ‘bite repeatedly’: cf. Lat. mandūcāre
+‘masticate’ > French manger; ‘bite lastingly’: cf. *h1ed-won-/*h1d-un- ‘pain’ (Schindler ……,
+Lamberterie ……).
+90
+   See Meier-Brügger l. c. 155, 157 for the Greek long ᾱ. The rebuttal of Osthoff’s Law in final
+position by Peters 1980: 309 f. is mistaken. – The connection of Lat ingēns with Ved mahā́ nt-,
+Gk ἄγᾱν was discovered in the late 19th c, but rejected in the early 20th until it was revived by
+Meier-Brügger 1979, now followed by Wodtko l. c., cf. de Vaan s. v., and others. – This
+etymology of Lat. ingent- (< *engant-) involves a semantic difficulty because its meaning is not
+just the neutral ‘big’ but an expressive, emphatic ‘huge, immense, enormous’. The obstacle can
+be taken care of, however, with the assumption of a semantic attraction by negative compounds
+like immēnsus ‘immeasurable, boundless, huge, enormous, infinite’ (mostly “with some degree of
+hyperbole”, OLD), further away immānis ‘savage, frightful; of enormous size, tremendous, very
+great’, īnfīnītus ‘indefinite, unrestricted; in hyperboles: endlessly long, infinite in quantity or
+amount, innumerable, immense, extreme’; with a different prefix ēnormis. Perhaps ingēns was
+reinterpreted as a negative compound itself, with or without a sense being given to the second
+element.
+91
+   NOT ‘aufreiben, attrite’, a concoction of Grassmann’s faithfully handed down for generations.
+Mycenaean and Laconian Greek *geronsiā was the council of elders, not of decrepit oldsters;
+Non-Balkanic European *ǵr̥h2-no- ‘grain, corn’, is not from *‘zerrieben’ (that would mean
+‘flour’!), but from ‘which has ripened’ (de Vaan 2008 s. v. grānum).
+*tū́sn̥tī < *túHs-n̥t-ih2, Gorbachov 2006: 10, 13; further views discussed by
+Pijnenburg 1989: 103 f, Lühr 1993: 121.
+
+       8.3.2.1.Notes
+       Un participe présent est supposé par Lühr 1993, 124, Casaretto 2004, 441 ;
+mais il faudrait un présent athématique au vu de l’alternance *-ont-/*-n̥t-, or il
+n’existe guère de présents en *R(Ø)-se-. Un participe aoriste conviendrait mal pour
+le sens (aspect ponctuel) et peut-être pour le vocalisme radical.
+       Neri 2009, 8 suppose un adjectif dénominatif du type de v. i. mahā́nt-/
+mahat- < i.-ir. *maȷ́aHant-/*maȷ́Hat-, mais ce dernier a un vocalisme différent et
+n’est pas entièrement clair lui-même. Pour Wackernagel-Debrunner II/2, 166 f.,
+Mayrhofer II, 337 f. (1994), il s’agit d’une innovation indo-iranienne,
+élargissement de *maȷ́áH- < *meǵ-oh2- d’après *bh ̥rȷ́h-ánt- ‘haut’. Pour Meier-
+Brügger 1979, de Vaan 2008, 303, Wodtko 2008, 469, 474 f., la formation est déjà
+indo-européenne et source du latin ingēns ‘énorme, immense’. Ce dernier
+rapprochement serait sémantiquement improbable (passage d’un terme neutre
+‘grand’ à un terme expressif/emphatique) si l’on ne pouvait supposer une attraction
+des composés négatifs immēnsus ‘sans limites, immense, démesuré, infini’ et plus
+lointainement immānis ‘monstrueux, gigantesque, immense’, īnfīnītus ‘sans fin,
+illimité, infini’. Le degré plein serait peut-être *m̥ǵ-éh2-ont- ; l’initiale i.-ir. ma-
+serait une réfection de *a- < *m̥- d’après le simple *maȷ́aH- (v. i. mahā́-) < *méǵ-
+oh2-.
+       D'autres adjectifs en *-ont- sont *bh ̥rǵh-ónt-/-n̥t- ‘haut’, doublet de *bh ̥rǵh-ú-,
+qui a bien le degré radical zéro mais est déverbatif, et *ǵérh2-ont-/*ǵr̥h2-n̥t- ‘vieux’
+(Mayrhofer II, 576, av. litt.), déverbatif également.
+       À cause du *s, *tuHs-(o)nt- peut difficilement être déverbatif et devrait donc
+être dérivé de *teuH-és- ‘fort’, skr. távas-, ou de *téuH-es- ‘force’, cf. avest. paiti-
+tauuah- ‘…’ et le dérivé arm. t‘iw ‘nombre’ s’il vient de *tēwes-o- ¬ *téwes- <
+*téuH-es- (cf. Olsen …déjà citée). Dans les deux cas, cependant, le degré radical
+zéro suppose un accent suffixal *tuHs-ónt-.
+       Cette analyse, dans la ligne de celle de Neri (ci-dessus), reste possible si l’on
+suppose que le terme de quantité *tū́s(o)nt- ‘mille’ (ou plutôt : ‘grande quantité’,
+…), un substantif, est dérivé de l’adjectif *tūs(ó)nt- par la “loi des appellatifs”, à la
+manière dont gr. λεῦκος, nom d’un poisson, λεύκη ‘peuplier blanc’ sont dérivés de
+λευκός, λευκή ‘blanc, blanche’ (cf. Vendryes 1904, 152 f.).
+
+      8.3.3. Risky analysis
+      If the Northern IE word for ‘thousand’ is derived from *teuhx-es- ‘big size,
+strength’, the expected suffix would rather be *-went- (or *-wont-) ‘having,
+endowed with’, yielding *tuhxs-wn̥t-ih2 > *tūswn̥tī. (Similar formation in RV távas-
+vant- ‘strong’, although this is an independent, later creation rather than a reshaping
+of *tuhxs-went-.)
+
+       8.3.3.1.Phonetics
+       The loss of *w would be rather unproblematic in Balto-Slavic, which has
+other instances of loss of *w after a sibilant (OCS sestra ‘sister’, Lith sesuõ ‘id.’,
+šẽšuras ‘father-in-law’, sãpnas ‘sleep’) or even after *k (večerъ, vãkaras ‘evening’
+vs. Arm gišer ‘night’ < *wekwero-, Viredaz 2017: 6). (The loss is independent in B
+and S: šẽšuras ≠ svekъrъ.) In our word this could be a dissimilatory loss due to the
+preceding *ū.
+       As for Germanic, it is known that *w is preserved before *u in initial position
+(many examples: Kroonen 2013: 597-601) as well as after consonant when
+supported by the analogy of full-grade forms (as in past participles like English
+swollen, swum, German gezwungen ‘forced’ < OHG gidwungan). However, there
+seem to be a few examples of loss92:
+       *ga-sunda- ‘sound, healthy’, probably akin with Gmc *swinþa- ‘strong’
+(Kluge–Seebold s. vv. gesund, geschwind)93.
+       *sunda-, ON sund n. ‘a swimming’, OE sund ‘power of swimming’ (hence
+also Hence also ON synda ‘swim’, syndr ‘able to swim’, OE syndig perh. ‘skillled
+in swimming’), vs. Goth swumfsl ‘pool’ (a more recent creation, or w preserved
+because link still felt with ‘swim’. (Wiktionary: “possibly with restored w”.)
+       Thus, if these two etymologies are correct, *tūswn̥tī > *þūsundī would be
+regular.
+       (Should they not, a dissimilation from the preceding *ū might be pressed to
+duty.)
+
+      8.3.3.2.Morphology
+      Zero grade before the suffix *-went- is possible not only if the basic noun
+had zero grade but also if it had an alternation between full grade and zero grade
+(cf. Wackernagel-Debrunner 1954: 885 for Sanskrit), e. g. Ved. kṣumánt-
+
+92
+   WGmc *þurh ‘through’ is not an example of *w-loss, cf. Goth þairh, OE þerh, þurh ‘id.’ <
+*þerxwe (Kroonen 2013: 538). It may well be related to *þwerxa- ‘cross’ (adj.), but the latter is
+probably from *þerxwa- (Kroonen 2013: 556).
+93
+   Seebold himself (l. c.) derives the latter from a stem *sǵh-went- ‘strong’. If correct, this could
+be added to our §8.3.1. However, there does not seem to have been a root noun with the meaning
+‘strength’. The root *seǵh- rather meant ‘get a firm hold of’, hence either ‘to defeat, conquer’, or
+‘to possess, to have’. A meaning ‘strong, stength’ only developed in a few derivatives, see
+Wodtko 2008: 600 f.
+‘abounding in food, strong (etc.)’, Avestan fšūmant- ‘keeping cattle’ (Mayrhofer I:
+433), from *péḱu/*pḱu- ‘bétail’.
+       Such an alternation in the sigmatic noun *téuhx-os/*tuhx-s- would point to a
+very archaic stage (cf. 8.2 a end), before the leveling of the productive type to
+generalized *R(e)-es- (except for nom.-acc. sg. *R(e)-os in non-Anatolian).
+       The reconstruction *tuHs-wn̥t-ih2 does not seem to yield cognates in other IE
+languages any more that *tuHs-n̥t-ih294.
+
+       8.3.3.3.Dialectology
+       *-went- (or *-wont-) is only attested in Anatolian, Indo-Iranian, Greek, while
+*tūs(w)n̥tī is fond in none of them. Could it be that *-wEnt- was a dialectal feature
+in “Indo-Hittite” and still was in “Core Indo-European”?
+       In a conservative, Stammbaum-centered view, one would think that if a
+feature is old enough to be found in Anatolian, it is also old enough to have been
+proto-“Core Indo-European” and thus common to all “Core Indo-European”.
+       But perhaps PIE already had a few dialectal nuances when it experimented
+its major split between Anatolian and the rest, and perhaps that split crossed some
+pre-existing variations. Note that this would imply that the Anatolian split resulted
+from more than one migration.
+        Thus speculation derives from the observation that Luwian is Satem-like in
+its reflex of *ḱ, and even Aryan-like in its vocalism, with Čop’s law as a kind of
+pendant of Brugmann’s law (because both point to PIE *e being shorter than PIE
+*o). These could be just two instances of parallel development, but the fact that in
+both cases Luwian sides with Indo-Iranian whil Hittite sides with European gives to
+think. However, it would take more than two instances to even have the beginnings
+of a proof.
+       In short: in a conservative view of dialectology, the discrepancy between the
+areas of *tūsn̥tī and that if *-went- is no obstacle to our etymology *tūswn̥ti,
+because an earlier pan-European extension of *-went- (and even *tūswn̥tī in its
+original meaning of ‘huge number’ can be taken for granted. In the freer view we
+avocate in the case of Luwian and Aryan above, on the contrary, said discrepancy
+speaks against our own analysis of the ‘thousand’ word. This dialectological
+question will be left open at least here.
+
+
+
+94
+  It goes without saying that if this new reconstruction is correct, *tūsn̥tī in previous paragraphs
+must be changed to *tūswn̥tī in all instances where it refers to early stages (prior to the
+presumably independent loss of *w in Germanic and Balto-Slavic), and *tuHsn̥tih2 to
+*tuHswn̥tih2 where appropriate (at least not in quotations nor in 8.3.2).
+       8.4. Accent
+       The accent of the feminine adjective must have been on the final *-íh2.
+       On the other hand, the accent of the substantive ‘thousand’ was on the first
+syllable as shown by Germanic. (In Balto-Slavic, the initial accent might be due to
+Hirt’s Law.)
+       This accent shift is a regular marker of the substantivization (Vendryes 1904:
+152-154, 160 f., Dieu 264-271).
+       The case is not the same as in Gk μῡρίοι (adj.) ‘countless’ > μῡ́ριοι (adj.) ‘ten
+thousand’ (8.1.2 b).
+       Accordingly, the accent shift need not be linked to the new numeral meaning.
+       Nor do we think (as do Hamp 1968: 277 and probably many others) that the
+Northern type *tūsn̥tī took the place of earlier terms belonging to the *ǵheslo-
+family.
+       It seems more plausible to us that the substantive *tuhxs-n̥t-ih2 was already
+Proto-Indo-European (8.2 a, end) but that it merely meant ‘a huge quantity’, and
+only took the numeral value ‘thousand’ in “North European” dialects, at the same
+period (or a little later) when “Southern” dialects attributed the meaning ‘thousand’
+to some derivatives or compounds of *ǵhes-lo- ‘hand(ful) (of seeds)’ (9.2 a).
+
+9.     ‘Mille’ dans les dialectes indo-européens
+       9.1. Formes
+       Le numéral ‘mille’ se présente ainsi dans les langues indo-européennes (hors
+anatolien95 et tokharien96) :
+       a) Termes apparemment dérivés de *ǵhes-lo- (apparenté à *ǵhes-r̥ ‘main’) et
+désignant à l’origine une poignée de grains de blé (Rix 1991); *ǵheslo- aurait
+signifié ‘main’ (Rix) ou peut-êttre ‘poignée’ (à notre avis):
+       – Quasi *sm̥-ǵheslo- > i.-ir. *sa-ȷ́hásra-, neutre thématique comme *ćatá-
+‘cent’97 ;
+
+95
+   Le mot ‘mille’ ne nous est pas connu: Eichner in Gvozdanović 1992: ……; wiktionary: …….
+96
+   Tocharian had its own term, A wälts B yaltse < *weltyo- or perh. *welso-, cf. sl. *velьjь,
+*velikъ ‘grand’, Adams 2013, 523 av. litt. – A tmāṃ, B tmāne, tumāne ‘myriade’ est emprunté au
+turc ou directement au chinois, ibid. 318 s.
+97
+   Les deux mots ont été empruntés en finno-ougrien *ćata et *ćarsa (Rédei 1988: 466 f., avec
+l’ancienne restitution *ś. Le second ne reflète pas forcément un plus archaïque *ȷ́hásra- (qui
+contredirait l’analyse sémantique de Rix 1991: 230 f., mais serait compatible avec *ǵhes-lo-
+‘poignée’) : il pourrait aussi avoir perdu la première syllabe *sa- par une forme de simplification
+ou de dissimilation.
+       – Quasi *ǵhesl-io- > proto-grec *khéhlioi, adjectif comme x-κόσιοι
+(dor. -κάτιοι) ‘x cents’ et μριοι ‘dix mille’ ;
+       – P.-ê. quasi *smih2 ǵhesl-ieh2 > *smī ǵhesliā f. ® *-i (neutre comme centum)
+> lat. mīlle, pl. mīlia (*smī-ǵhslī, Sommer £date, *smī-ǵheslī > *mīhēli-, Szemerényi
+1954, *smī ǵhesliā, Hamp 1968). Ce juxtaposé serait antérieur à l’élimination des
+laryngales, car *-ih2 final devient ia dans les monosyllabes en latin (tria, qui; de
+même en germanique, cf. *þrijō, et peut-être en celtique).
+       Hamp 1968: 277 f. further speculates that the Greek and Latin types are
+substitutes for a pan-IE *sm̥-ǵheslo- preserved in Indo-Iranian, but we hardly see
+more basis for this than the strive for monogenesis (2.1.6) rather than factual
+support.
+       b) Termes apparemment dérivés de *tuH- ‘gros, fort’ : germanique et slave
+*tuHs-n̥t-ih2 f. > *tū́sn̥tī (2, 2.5), baltique *tuHs-ont- > *tū́sont- m. ou n. (6).
+       £ Tocharian (n. 96): Meillet, Antoine (1911-1912). “Les noms de
+nombres en tokharien B.” Mémoires de la Société de linguistique de Paris 17:
+281-294 : velьjь ou velikъ aussi ‘1000’ ? > éventuellement mettre dans le
+Handout corrigé
+       c) Les autres branches ne peuvent pas être classées :
+       – Le terme hérité (s’il a existé) a été remplacé par des emprunts en celtique
+insulaire (p. ex. gall. mil, v. irl. míle), albanais (mijë), arménien (hazar).
+       – Le mot ‘mille’ n’est pas attesté en celtique continental, dans les langues
+italiques autre que le latin, en phrygien.
+
+       9.2. Comments
+       1) = 9.1
+       2) Given its etymology, the word *tūswn̥tī (or even *tūsn̥tī) must go back to
+Proto-Indo-European and thus be just as old, if not older, than the derivatives and
+compounds of *ǵhes-lo-.
+       3) The precise dialectal extension of *tūs(w)n̥tī is unknown. Although *tūsn̥tī
+is often cited as the paramount example of a Baltic-Slavic-Germanic isogloss, let’s
+note that we don’t know what word for ‘thousand’, if any, was used in Tocharian,
+Armenian, Albanian and Celtic before they resorted to loans, nor what words were
+used in Anatolian.
+       4) Still,*tūs(w)n̥tī has a more “compact” dialect area than the “Southern”
+group of words, which points to an innovation, that is, to the meaning ‘thousand’
+being a late, dialectal specialization of ‘huge number’.
+10. Conclusions
+       10.1. Summary of conclusions
+       – Germanic and Slavic may reflect the single protoform *tūsn̥tī (this is not
+new: 2, 3).
+       – So may Baltic (Gorbachov, modified: 5.5, 6).
+       – East Baltic: perhaps *tūsintī ® *tūsantī ® *tūstantī ® *tūstantis (~ *-jā)
+> tū́kstantis (5.5, 10.1).
+       – Old Prussian: either from “Elbing” High German *tūsənt (Smoczyński,
+modified), or from Early Baltic *tūsintī above (6).
+       – Finnic *tušante from East Baltic *tūsantī. We’ve tried to argue that the
+shortening of ū and the retraction of *s are possible in such a loan (7).
+       – Root: *teuH- ‘thick, big, strong’ (this is not new). While the primary verb
+meant ‘to grow big’ (LIV2), the numeral cannot derive from *‘growing big’ and
+must have been built on a nominal derivative, such as *teuH-es- ‘bigness’, at a time
+when sigmatic neuters still had ablaut.
+       – Suffix: rather than *-ent- or *-ont-, which do not yield a good
+morphological interpretation, perhaps the adjective was in fact *tuHs-went-
+‘endowed with bigness’, feminine *tuHs-wn̥t-ih2 > *tūswn̥tī, with the sporadic loss
+of postconsonantal *w known in Balto-Slavic and a conditioned loss of *w in
+Germanic (8.3).
+       – Initial accent (proved by Germanic) due to the substantivization of the
+adjective *tuHs-wn̥t-íh2 (8.4)
+       – If this etymology is correct, the noun *tuHs-n̥t-íh2 or *tuHs-wn̥t-íh2 ‘huge
+number’ must already have been Proto-IE (9).
+       – The semantic specialization to ‘thousand’, on the other hand, may well
+have been post-PIE in both the “South” and the “North” (cf. 9).
+       – Note the unity of the “Northern” term *tū́swn̥tī as opposed to the variety of
+the “Southern” terms *ǵhesl-io-, *sm̥-ǵheslo-, *smī-ǵhesl-iā (9).
+       – The precise dialectal distribution of the “Northern” and “Southern” terms is
+unknown, because the old terms (if any) have given way to loanwords in Celtic,
+Albanian, Armenian, Tocharian and the word for ‘thousand’ is unknown in
+Continental Celtic and in Anatolian languages (9).
+
+      10.2. Diachrony of tū́ kstantis
+      *teuhx- ‘to swell, grow thick, big, strong’ (LIV2 p.)
+       > *teuhx-os n. ‘big size, strength’ (cf. Skt távas-vat- ‘strong etc.’; weak stem
+*tuhx-s- in Pre-PIE, § où je citerai ‘oreille’8.3.3.2; alternatively, stem *tuhx-s- of
+uncertain origin and function, 8.3.2)
+       > *tuhxs-wént- adj. ‘big, strong’ (vérif. accent)
+       > *tuhxs-wn̥t-íh2 (fem. of preceding; not sure what nouns it was used with)
+       > *túhxs-wn̥t-ih2 ‘huge quantity or number’ (substantivization of preceding,
+8.4)
+       > “North PIE” *tū́swn̥tī ‘a thousand of’ (fem.) (vs. various “South PIE”
+derivatives of *ǵhes-lo-, 9.1)
+       > Baltic *tū́swintī, Slavic *tū́šwintī, Germanic *tū́swuntī
+       (*s vs. *š: 4.2; loss of *w independently in B, S, and G, 8.3.3.1)
+       > a) Baltic *tū́sintī (see below),
+       b) Slavic *tū́šintī (> *tū́čintī after *činta- ‘hundred’, > PSl I *tū́sintjī > PSl
+II *týsętji > variant *týsǫtji, 3, spec. 3.2.2),
+       c) Germanic *tū́suntī (later *þūsunþī > *þūsundī, 2.2.2)
+       > East Baltic *tū́santī (after the unmarked present participle suffix, 5.4.5 4,
+5.5.1.1; West Baltic: either still *tū́sintī, later *tū́simtī after *simtan ‘hundred’, 6.5;
+or the OPr word is borrowed from German, ibid.)
+       > *tū́stantī (perhaps by hypercorrection on the model of the inchoative
+present participle fem. -stantī if this was occasionally reduced to *-santī in fast
+speech by dissimilation, 5.4.4, 5.5.1.2)
+       > tū́stantis (Bretkūnas, hapax; change of inflection, perhaps because *-ī > -i
+was unfrequent except in adjectives, 5.4.5: 3 c; alternative change to -ančia,
+dial. -antė, or further change to masc. -is, gen. -io, ibid.).
+       > tū́kstantis (sporadic k-insertion, 4.1.1; an additional influence of the root
+  ̆
+tūk- ‘grow fat’ is unlikely after all, 4.1.2).
+11. Bibliography
+Adams, Douglas Q., 2013: A Dictionary of Tocharian B 2. 2 vol. (11995)
+       Amsterdam/New York.
+Adolphi, Henricus, 1685: Erster Versuch einer kurtz-gefasseten Anleitung zur
+       Lettischen Sprache.
+Aitzetmüller, Rudolf, 1978: Altbulgarische Grammatik als Einführung in die
+       slavische Sprachwissenschaft. Freiburg i. B.: Weiher.
+ALEW:        Altlitauisches    etymologisches       Wörterbuch,       online    version,
+       <https://alew.uni-frankfurt.de/>
+Bereczki, Gábor, 1988, “Geschichte der wolgafinnischen Sprachen”, in: Sinor (ed.)
+       1988: 314-350.
+Bezzenberger, Adalbert, 1877 : Beiträge zur Geschichte der litauischen Sprache
+       auf Grund litauischer Texte des XVI. und XVII. Jahrhunderts, Göttingen.
+Bopp, Franz, 1853: Über die Sprache der alten Preussen in ihren
+       verwandtschaftlichen Beziehungen. Berlin
+Braune, Wilhelm, et alii, 2023: Althochdeutsche Grammatik 117 (11886).
+Brugmann, Karl: Grundriss der vergleichenden Grammatik der indogermanischen
+       Sprachen, Strasburg: Trübner.
+       1886: I1, 1897: I2/1-2, 1906: II2/1, 1909: II2/2/1, 1911: II2/2/2.
+Brunner, Karl, 1942: Altenglische Grammatik. Halle S.: Niemeyer.
+Būga, Kazimiėras, 1908: Aistiški studijai (Aistische Studien). St. Petersburg.
+Bugge,      Sophus,      1888,    “Etymologische       Studien      über    germanische
+       Lautverschiebung”, PBB 13: 311-339.
+Casaretto, Antje. 2004. Nominale Wortbildung der gotischen Sprache. Die
+       Derivation der Substantive. Heidelberg: Universitätsverlag C. Winter.
+       (Indogermanische Bibliothek. Dritte Reihe: Untersuchungen).
+Chantraine, Pierre, 1933: La formation des noms en grec ancien, Paris:
+       Klincksieck. Reprint 1979.
+Cleasby–Vigfusson 1874: An Icelandic-English dictionary, based on the ms.
+       collections of the late Richard Cleasby. Enlarged and completed by
+       Gudbrand Vigfusson. Oxford: Clarendon.
+Comrie, Bernard, 1992: “Balto-Slavonic”. In: IEN: 717-833.
+Derksen, Rick, 1996: Metatony in Baltic.
+—, 2008: Etymological dictionary of the Slavic inherited lexicon, Leiden : Brill.
+—, 2015: Etymological dictionary of the Baltic inherited lexicon, Leiden : Brill.
+Diels, Paul. 1963: Altkirchenslavische Grammatik. Heidelberg: Winter.
+Dieu, Éric, 2022: Traité d’accentuation grecque, Innsbruck: Institut für
+       Sprachwissenschaft der Universität.
+Endzelīns, Jānis, 1923: Lettische Grammatik.
+—, 1971: Comparative Phonology and Morphology of the Baltic Languages.
+       Translated by W. R. Schmalstieg and B. Jēgers. La Haye/Paris. (Latvian
+       original 1948, Lithuanian translation 1957.)
+FEW: Walter von Wartburg et al., Französisches Etymologisches Wörterbuch,
+       1928–.
+Fraenkel, Ernst, 1953: “Hypernormalismen besonders im Slavischen”, ZfslPh 22:
+       88-122.
+—, 1962-1965: Litauisches etymologisches Wörterbuch. 2 vol. Heidelberg : Winter
+       and Göttingen : Vandenhoeck & Ruprecht.
+Garde, Paul, 1980: Grammaire russe I: Phonologie – Morphologie. Paris : Institut
+       d’études slaves.
+Gauthiot, Robert, 1906: “Finnois: tuhat”. JSFO 23/14: 1-4.
+Gorbachov, Yaroslav, 2006: “North Indo-European” *tuhxsn̥tih2 ‘1000’. A new
+       proposal. [Conference handout.] AATSEEL Annual Meeting, Philadelphia,
+       29 December 2006.
+—, 2014: “The origin of the Baltic inchoative in -sta-. An overlooked Proto-Baltic
+       sound law”, IF 119: 21-53.
+von Greyerz, Otto & Bietenhard, Ruth, 1984: Berndeutsches Wörterbuch3. Bern:
+       Francke (11976).
+Grimm, Jakob, 1853: Geschichte der deutschen Sprache I2. Leipzig: Hirzel.
+Hamp, Eric P., 1968: “Latin mīlle”, Glotta 46: 274-278
+—, 1973: “North European ‘1000’”: In: Cl. Corum, T. Cedric Snith-Stark, A.
+       Weiser (eds.), Papers from the IX Regional Meeting of the Chicago
+       Linguistic Society, April 13-15, 1973. Chicago: Chicago Linguistic Society,
+       172-178.
+van Helten, Willem, 1900: “Zu den malbergischen Glossen und den salfränkischen
+       Formeln und Lehnwörtern in der Lex Salica”, PBB (Halle) 25: 225-542.
+– 1906: “Zum germanischen Zahlwort”. IF 18, 84-126.
+Hirt, Herman, 1896: “Akzentstudien. 1. Germ. got. þūsundi”. IF 6: 344-349.
+IEN, 1992: Jadranka Gvozdanović, Indo-European Numerals. Berlin - New York:
+       Mouton de Gruyter.
+Imberciadori, G. (2023). On the etymology of Greek ἅλις ‘in abundance, in
+       throngs; enough’, en Cuadernos de Filología Clásica. Estudios griegos e
+       indoeuropeos 33, 27-37.
+Irslinger 2008: entries in NIL.
+Jakob, Anthony, 2024: “The palaeo-Baltic substrate: a methodological
+       exploration”. In: E litoribus Balticis etymologiae, 123–162. Uralica
+       Helsingiensia 15. Helsinki 2024.
+—, 2025: personal communications (a: Aug 11; b: Sept 22).
+Kallio, Petri, 2015: “The stratigraphy of the Germanic loanwords in Finnic”, in:
+       John Ole Askedal & Hans Frede Nielsen (eds.), Early Germanic Languages
+       in Contact: 23-38. NOWELE Supplement Series 27. Amsterdam -
+       Philadelphia, PA.
+Kalniņš. Aigars, 2016: The Baltic sta-present and the Outcome of PIE *sḱ in Baltic
+       Diss. Copenhagen (Betreuer: Thomas Olander).
+Kluge 1901, “Vorgeschichte der germanischen Dialekte”, in Hermann Paul (ed.),
+       Grundriss der germanischen Philologie I2, Strasbourg: Trübner: 320–496.
+Kluge–Seebold, 1995: Seebold, Elmar, Kluge: Etymologisches Wörterbuch der
+       deutschen Sprache. Bearbeitet von Elmar Seebold. 23., erweiterte Auflage.
+       Berlin-New York : de Gruyter.
+Koivulehto, Jorma. 1984: “Itämerensuomalais-germaaniset kosketukset”
+       [Ostseefinnisch-germanische Kontakte]. In Åström, Sven-Erik (ed.), Suomen
+       väestön esihistorialliset juuret [Die prähistorischen Wurzeln der finnischen
+       Bevölkerung]: 191– 204. Helsinki: Societas Scientiarum Fennica.
+Kroonen, Guus, 2013: Etymological Dictionary of Proto-Germanic.
+       Leiden/Boston : Brill.
+Kurschat, Friedrich, 1876: Grammatik der littauischen Sprache, Halle:
+       Waisenhaus.
+Leumann, Manu, 1942: “Idg. sk̂ im Altindischen und im Litauischen. 3. Die
+       litauischen st-Praesentien”. IF 58: 113-130. (Reprinted in his Kleine
+       Schriften, 1959.)
+Liukkonen, Kari, 1994: “Baltų dalyviai suomių kalboje” (Baltic participles in
+       Finnish), Baltistica 4: 90-91.
+LIV2, 2001: Lexikon der indogermanischen Verben2 (ed. H. Rix), Wiesbaden.
+Lühr, Rosemarie, 1993: “Zur Semantifizierung von Zahlwörtern: Das Wort
+       ‚Tausend‘ – eine germanisch-baltoslavische Isoglosse?” Linguistica 33:
+       Bojan Čop septuagenario in honorem oblata, 33: 117–136.
+      <https://www.researchgate.net/publication/307718845_Zur_Semantifizierung_von
+      _Zahlwortern_das_Wort_’tausend’_-_eine_ germanisch-baltoslavische_Isoglosse>
+[—], 1998: “dûsunt”. In : Etymologisches Wörterbuch des Althochdeutschen II
+     (Hgg. Lloyd, Lühr, Springer). Vandenhoeck & Ruprecht : 890-902.
+     <https://ewa.saw-leipzig.de/articles/d%C3%BBsunt/>
+eMED: Middle English Dictionary, online database for the period 1100–1500,
+      https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary.
+Martinet, André, 1955: Économie des changements phonétiques, Berne : Francke.
+      Réimpr.
+Mausser, Otto, 1933: Mittelhochdeutsche Grammatik auf vergleichender
+      Grundlage- München: Hueber. Reprint 1972.
+Mayrhofer, Manfred, 1986-2001: Etymologisches Wörterbuch des Altindoarischen.
+      3 vol. Heidelberg : Winter.
+MED A Middle-English Dictionary, containing words used by English writers from
+      the twelfth to the fifteenth century, by Francis Henry Stratmann. A New
+      Edition, revised, rearranged, and enlarged by Henry Bradley. Oxford:
+      Clarendon, 1891. Reprints: OUP.
+Meier-Brügger, Michael, 1979: “Griechisch (μηδὲν) ἄγᾱν”, MSS 38: 155-163.
+Meillet, Antoine, 1923: Caractères généraux des langues germaniques2. Paris:
+      Hachette. (11917).
+—, 1924: Le slave commun1.
+Meillet, Antoine & Vaillant, André, 1934: Le slave commun2. Reprint 1965.
+—, 1980: Grammaire de la langue serbo-croate2 (11924).
+Morgenstierne 1926: Report on a linguistic mission to Afghanistan, Instituttet for
+      sammenlignende kulturforskning, Oslo.
+Morgenstierne 1975: Irano-Dardica, Wiesbaden: Reichert: chapter “Die Stellung
+      der Kafirsprachen”, 325-377.
+Neri, Sergio, 2009, review of Don Ringe, From Proto-Indo-European to Proto-
+      Germanic, in Kratylos 54 (2009), 1-25.
+Nieminen, Eino, 1957: “Über einige Eigenschaften der baltischen Sprache, die sich
+      in den ältesten baltischen Lehnwörtern der ostseefinnischen Sprachen
+      abspiegelt”, Proceedings of the Finnish academy of science and letters 1956:
+      185-206. Helsinki: Academy.
+NIL, 2008: Dagmar S. Wodtko, Britta Irslinger, Carolin Schneider, Nomina im
+      Indogermanischen Lexikon, Heidelberg: Winter.
+Noreen, Adolf, 1904: Altschwedische Grammatik. Halle: Niemeyer.
+Olsen, Birgit Anette. 1999. The Noun in Biblical Armenian, origin and word-
+      formation. Berlin-New York: Mouton De Gruyter.
+Paasonen 1990: Mordwinisches Wörterbuch.
+van Pareren, Remco, 2008: “Die direkten baltischen Lehnwörter im
+      Mordwinischen”, Finnisch-ugrische Mitteilungen 30/31: 69-147.
+Pedersen, Holger, 1943: “Et baltoslavisk problem”. In: R. Brøndal, V. Brøndal,
+       Chr. Møller, H. Olsen (eds.), In memoriam Kr. Sandfeld. Udgivet paa 70-
+       aarsdagen for Hans Fødsel. København: Gyldendalske Boghandel Nordisk
+       Forlag, 184-194.
+Peters, Martin, 1980: Untersuchungen zur Vertretung der indogermanischen
+       Laryngale im Griechischen. Wien: ÖAW.
+Petit, Daniel, 2000: “Quelques observations sur les substantifs de genre neutre en
+       vieux prussien”. Baltistica 35: 29-43.
+—, 2010: Untersuchungen zu den baltischen Sprachen. Leiden, Boston: Brill.
+—, 2022: “Traduction et oralité dans l’Enchiridion vieux-prussien (1561)”, BSL
+       117: 217-247.
+Pijnenburg, W. J. J., 1989: “Eine germanisch-baltoslawische Isoglosse”, HS 102:
+       99-106.
+Plöger, Angela, 1982. “Über die Entstehung des finnischen Stammtyps
+       CV̄C(Ca/ä)”. Finnisch-Ugrische Forschungen 44: 66–98.
+Pokorny, Julius: Indogermanisches Etymologisches Wörterbuch (1959–1969).
+Pystynen, Juho, 2022: “New lines of evidence on the secondariness of Finnic *ii,
+       *uu”. HELSLANG Summer Conference · 2022-05-24.
+       https://www.academia.edu/79912362/New_lines_of_evidence_on_the_secon
+       dariness_of_Finnic_ii_uu
+Raun, Alo, 1988: “The Mordvin language”, in: Sinor (ed.), 1988: 96- 110.
+Rédei, Károly (dir.), 1988–1991: Uralisches etymologisches Wörterbuch. 3 vol.
+       Wiesbaden: Harrassowitz.
+Rix, Helmut, 1991: “Urindogermanisch *ǵheslo- in den südindogermanischen
+       Ausdrücken für ‘1000’”. In: Studia etymologica Indoeuropaea memoriae
+       A.J. van Windekens (1915-1989) dicata (ed. L. Isebaert), Louvain: 225-231.
+Ross, Alan & Berns, Jan, 1992: “Germanic”. In: IEN: 555-715.
+Ruggiers, Paul G., 1979: The Canterbury Tales. Geoffrrey Chaucer. A Facsimile
+       and Transcription of the Hengwrt Manuscript, with Variants from the
+       Ellesmere Manuscript. University of Oklahoma Press and Dawson,
+       Folkestone, UK.
+Seebold: see Kluge–Seebold
+Senn, Alfred, 1966: Handbuch der litauischen Sprache. Heidelberg: Winter.
+SES: Suomen etymologinen sanakirja [Finnish etymological dictionary].
+       Kotimaisten      kielten      keskus     [National  Languages       Center].
+       https://kaino.kotus.fi/ses/. Accessed Sept-Oct 2025
+Sinor, Denis (ed.), 1988: The Uralic languages: description, history and foreign
+       influences. Leiden etc.: Brill, 1988.
+SKES: Suomen kielen etymologinen sanakirja [Etymological dictionary of the
+       Finnish language. 7 vol. 1975-1983.
+Smoczyński, Wojciech, 2018: Lithuanian Etymological Dictionary, Berlin etc.:
+       Lang.
+Sommer, Ferdinand, 1899:£ “titre” IF 10: 216 f.
+Stang, Christian S, 1966: Vergleichende Grammatik der Baltischen Sprachen.
+       Oslo: Universitetsforlaget.
+—, 1972. Lexikalische Sonderübereinstimmungen zwischen dem Slavischen,
+       Baltischen und Germanischen. Oslo: Universitetsforlaget.
+Stempel, Reinhard, 1983: Die infiniten Verbalformen des Armenischen. Frankfurt a.
+       M.-Bern: Lang.
+Streitberg, Wilhelm, 1896: Urgermanische Grammatik. Heidelberg: Winter.
+—, 1920: Gotisches Elementarbuch5-6. Heidelberg: Winter.
+Suhonen, Seppo, 1988: “Die baltischen Lehnwörter der finnisch-ugrischen
+       Sprachen”. In: Sinor (ed.) 1988: 596-615.
+Szemerényi, Oswald, 1954: “The Indo-European cluster sl in Latin”. Archivum
+       Linguisticum 6: 38-41. Reprinted in his Scripta Minora II, 1987: 711-725.
+—, 1990: Einführung in die vergleichende Sprachwissenschaft4. Darmstadt (11970).
+—, 1996: Introduction to Indo-European Linguistics. Transl. of 1990 by Irene and
+       David Morgan Jones. Oxford: OUP.
+Thomsen 1890-1893
+Trautmann, Reinhold, 1910: Die altpreußischen Sprachdenkmäler. Reprint
+       Göttingen: Vandenhoeck & Ruprecht, 1970.
+Ulmann, Carl Christian, 1872 Lettisches Wörterbuch. Erster Theil: Lettisch-
+       deutsches Wörterbuch. Riga: Brutzer.
+de Vaan, Michiel, 2008: Etymological dictionary of Latin and the other Italic
+       Languages, Leiden: Brill.
+Vaillant André, 1950: Grammaire comparée des langues slaves. I. Phonétique.
+       Lyon–Paris, IAC.
+—, 1958: Grammaire comparée des langues slaves. II. Morphologie. Première
+       partie : Flexion nominale. Lyon–Paris, IAC.
+Vasmer, Max & Trubačov, Oleg: Ètimologičeskij slovar´ russkogo jazyka.
+       Moscow, 1964-1978.
+Vendryes, Joseph, 1904: Traité d’accentuation grecque, Paris, Klincksieck.
+      Réimpr. Villers-sur-Marne, Phénix, 2003.
+Viredaz, Rémy, 1997: “‘Six’ en indo-européen”. IF 102, 112-150.
+—, 2017: “Notes d’étymologie armémienne III”, REArm 37 (2016-217): 1-20.
+—, 2020: “Notes d’étymologie slave ». In: Etymologus. Festschrift for Václav
+      Blažek, ed. Harald Bichlmeier, Ondřej Šefčík, Roman Sukač. Hamburg :
+      Baar: 403-422.
+Vondrák, Wenzel (Václav): Vergleichende slavische Grammatik 11906, 21924.
+Wackernagel, Jakob & Debrunner, Albert, 1954: Altindische Grammatik II/2.
+      Nominalsuffixe. Göttingen : Vandenhoeck & Ruprecht.
+Walde, Alois & Pokorny, Julius. Vergleichendes Wörterbuch der idg. Sprachen. I,
+      1930, II, 1927. Berlin.
+Weber, Albert & Bächtold, Jacques M., 1983: Zürichdeutsches Wörterbuch3.
+      Zürich: Rohr.
+Wiedemann 1865: Grammatik der Ersa-Mordwinischen Sprache
+Wodtko 2008: entries in NIL.
+Yrjö-Koskinen, Eino Sakari, 1900: Dictionnaire finnnois-français. Helsinki : Impr.
+      Suomalaisen Kirjallisuuden Seura
+Zinkevičius, Zigmas, 1980-1981: Lietuvių kalbos istorinė gramatika. 2 vol.
+      Vilnius: Mokslas.
+

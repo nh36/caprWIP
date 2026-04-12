@@ -1,0 +1,881 @@
+Rosemarie Liihr                                                        CDU 801.52: 803.808.31-26
+GieBen
+
+
+         ZUR SEMANTIFIZIERUNG VON ZAHLWORTERN:
+                DAS WORT 'TAUSEND' - EINE
+          GERMANISCH-BALTOSLAVISCHE ISOGLOSSE?
+
+
+A. VORBEMERKUNG
+
+      Gegeniiber den Zahlen bis 'zehn' sind die unmittelbar darauffolgenden Zahlen in
+den indogermanischen Sprachen durchsichtige Bildungen. Das liegt daran, daB das
+indogermanische Zahlensystem auf dem Dezimalsystem aufgebaut ist und sich von
+der Zahl 'elf' an Beziehungen zu 'zehn' herstellen lassen. Was nun die hoheren Zah-
+len, nfu:nlich die fiir 'hundert' und 'tausend', angeht, so ist die Zahl 'hundert' auf
+'zehn' ('zehn mal zehn') und die Zahl 'tausend' auf 'hundert' ('zehn mal hundert')
+beziehbar. Weil dem so ist, ist zu erwarten, daB Sprecher indogermanischer Sprachen
+fiir sie undurchsichtige Worter fiir 'hundert' oder 'tausend' nach dem Wort 'zehn' bzw.
+'hundert' umgebildet oder neugebildet haben. In der Tat ist dies bei dem gotischen
+Wort 'hundert' der Fali: Got. tafhuntehund (lmal), tafhuntafhund (3mal), das syn-
+chron als 'zehn Einheiten zu Hundert', d.h. 'in bezug auf Hundert', gedeutet werden
+konnte (Liihr 1977: 65), hat die Kontinuante von urgerm. *xundan 'hundert' ersetzt.
+Auch bei dem Wort 'tausend' sind derartige EinfluBnahmen zu vermuten. Wabrend
+aber fiir das Wort 'hundert' mit Sicherheit ein einziges urindogermanisches Wort re-
+konstruiert werden kann, verhill.t es sich bei dem Wort 'tausend' anders. Ai. sahdsram,
+av. haza1}ram, griech. XiAWl (ion. XEiA.wi) und wohl auch lat. mille 'tausend' bilden
+eine Sprachgruppe, der mit got. pusundi usw., aschwed. pasand, lit. tUkstantis (filter
+tukštantis), Iett. tfi.kstuotis, aksl. tys~šti, tysQšti 1 usw. eine andere gegeniibersteht.
+Nach verbreiteter Ansicht ist das Wort 'tausend' dabei eine der auffallendsten lexika-
+lischen Ubereinstimmungen zwischen dem Germanischen, Baltischen und Slavi-
+schen. Auch Pijnenburg ( 1989: lOOff.) tritt in seinem Beitrag "Eine germanisch-balto-
+slawische Isoglosse" fiir die Gleichsetzung ein. Nach einer kritischen Uberpriifung
+der in neueren etymologischen Worterbiichern, Handbiichem, Grammatiken und Mo-
+nographien erschienenen Deutungen kommt er zu dem SchluB, daB im J ahr 1986 nach
+wie vor Feists Feststellung aus dem Jahre 1939 (1939: 505f.) gilt: "Im einzelnen ist in
+der Bild. der Formen noch manches unklar". Demgegeniiber zielt Pijnenburgs Beitrag
+auf eine Losung der "Formprobleme" ab, wobei aber die "semantische Seite der Sache
+- die 'eigentliche' Bedeutung" "hOchst problematisch" bleibe. Er rekonstruiert ein
+
+     Nach Rosenkranz (1955: 107) scheint tysQšti makedonisch und tys~šti bulgarisch zu sein.
+
+
+                                                                                               117
+*tiit-SIJ.t-I; eine von vielen Deutungsmoglichkeiten sei: 'dasjenige, was eine Menge
+bildet; eine groBe Quantitlit bildend'. Mit dieser Deutung schlieBt sich Pijnenburg,
+was das zweite Element betrifft, der Auffassung van Heltens (1905: 121f.) an, der fiir
+das Wort 'tausend' ebenfalls von einer Zusammensetzung mit Hilfe des Partizips von
+*es- 'sein', nlimlich *sIJ.t-I (vgl. ai. satf), ausging. Anders als Pijnenburg sah aber van
+Helten in dem ersten Bestandteil des Kompositums ein *tiis- in der Funktion eines
+Substantivs, das wie lat. flos 'Blume' gebildet sei. Dieser Ansatz ist jedoch wie alle
+diejenigen Erklarungen, die von einem Bestandteil *tiis- ausgehen, ohne Zusatzan-
+nahmen lautlich unhaltbar.
+       Betrachtet man nun Pijnenburgs Deutung, so waren mit dem Ansatz *tiit-sl}.t-Iin
+der Tat eine Reihe von Problemen gelOst. Es sind jedoch nur die lautlichen Probleme-
+diese sind bei Pijnenburg in aller Ausfuhrlichkeit dargestellt und brauchen daher im
+folgenden (B 1) nicht noch einmal vollstandig abgehandelt zu werden; tibrig bleiben
+Probleme, die die Morphologie und Wortbildung betreffen:
+1) *tiit- in *tiit-SIJ.t-ImiiBte als Wurzelnomen aufgefaBt werden. Ein solches Wurzel-
+     nomen existiert aber sonst nicht. Got. puthaurn 'Trompete' ist keine Parallele, da
+     put- wie dt. tuten vermutlich onomatopoetischen Ursprungs ist (Feist 1939: 506).
+2) Eine Zusammensetzung aus einem Wurzelnomen und einem Partizip des Verbs
+   'sein' entspricht keinem gelaufigen germanisch-baltoslavischen Kompositions-
+   typ2.
+      Da also Pijnenburgs Deutung des Wortes 'tausend' nicht tiberzeugt, soll im fol-
+genden die Problematik des germanischen und baltoslavischen Wortes 'tausend' er-
+neut aufgerollt werden. Es wird zu zeigen versucht, welche Schwierigkeiten sich er-
+geben, wenn man mit Pijnenburg an einer germanisch-baltoslavischen Isoglosse fest-
+halt3 und dabei Lautliches, Morphologie und Wortbildung angemessen beriicksichtigt.
+Die Diskussion der tibrigen Erklarungsversuche ergibt dabei, daB moglicherweise
+eine der bereits vorgenommenen Deutungen haltbar ist. Doch mtissen etliche Modifi-
+kationen vorgenommen werden.
+
+
+
+
+2     Meid 1967: 25ff.; Senn 1966: 340f.; Brugmann 1906: 67f. Im Altindischen fungieren Komposita mit einem
+      Partizip Prlisens im Hinterglied als verbale Rektionskomposita (z.B. ai. divi-spf§aru- 'den Himmel
+      beriihrend'), oder das Vorderglied ist ein Priifix (z.B. ai. su-vidvams- 'wohlkundig'); vgl. Wackernagel
+      1957: 193f.
+
+3     So auch Schelesniker 1987:.233. Jedoch wiirden die im Slavischen, Baltischen und Germanischen bei dem
+      Wort 'tausend' vorliegenden "untereinander unklaren Lautverhliltnisse" daher riihren, "daB dieses Wort so
+      ziemlich unter die letzten Bildungen der !osen Dialektgemeinschaft fallt."
+
+118
+B. HAUPTTEIL
+
+l. Die bisherigen Erkliirungsversuche
+     Pijnenburg teilt die bisherigen Erkli:irungsversuche <les Wortes 'tausend' nach
+drei Hauptlinien:
+1) "Das Wort ist eine Zusammensetzung von idg. *tiis- 'stark, kraftig, viel' und idg.
+    *krpt-ja, *krpt-jom, <las wiederum von der Wurzel von idg. *frpt6m 'hundert' 4
+    abgeleitet ist"5.
+2) "Das Wort ist eine Ableitung mittels eines (Partizip-)Suffixes *-ent-, *-ont-, *-l}t-
+    von einem Wort idg. *tžis-"6 • Hinzuzufilgen ist Hamps (1973: 174) Ansatz *tži-sK-
+    ont-, ein Partizip Prasens von einem Prasens auf *-sf-.
+3) "Das Wort ist eine Entlehnung, sei es <les Germanischen aus dem Slawischen, sei
+    es <les Slawischen aus dem Germanischen".
+    Hinzu kommt die These 4), daB <las Wort 'tausend' im Baltischen, Slavischen und
+    Germanischen erst einzelsprachlich und damit unabhangig voneinander aus *tžis-
+    und dem Wort 'hundert' zusammengesetzt ist.
+     Im Falle von These 1) ist der in der Forschung schon angebrachten Kritik zu-
+nachst einmal hinzuzufiigen, daB wegen <les Ablauts im Altkirchenslavischen und im
+Altschwedischen eine Vorform *tuHs-Komt-ih2 , *tuHs-frpt-jehz-s 'Krafthundert' 7, die
+mit Ausgleich ein N ebeneinander von *tuHs-Komt-ih2 und *tuHs-frpt-ih2 ergeben hat-
+te, anzusetzen ware. Doch bleiben auch bei einem solchen Ansatz die immer wieder
+zitierten Einwande, von denen die folgenden die wichtigsten sind, bestehen:
+a) DaB uridg. *sf zu balt. -st- wird (Leumann 1942: 126f.; Hamp 1973: 174ff. und
+    Anm. 4), ist nach wie vor nicht erwiesen, wie <las bekannte Gegenbeispiel alit.
+    zeška (neulit. {eško) 'sucht', lett. ieskaju 'lause', aksl. iskQ (neben ištQ mit -št- aus
+    der 2. Sg. išteši < *išč-) 8 'suche (auf), fordere' < urbaltoslav. *'ejske/a- < vorurbal-
+
+4    Die urindogerrnanische Vorforrn des Wortes 'hundert' wird auch als *h;.t6m angesetzt und min lit. šimtas,
+     lett. s'imts als Angleichung an das Wort 'zehn' (lit. dešimt'is, lett. desmit, dial. desimt) betrachtet (Kent
+     1929: 345; Peeters 1978: 28; Bengtson 1987: 257).
+5    Zuerst Bugge 1888: 326f.; ferner Jensen 1952: 55; Porzig 1954: 142; Polome 1972: 51. Pinault (1989: 63)
+     verweist fiir die Bedeutung "'fort-cent'" von "germ. thus-hundz" auftoch. A wiilts, B yaltse < *w'iiltsa <
+     *!!eldhom' force' (nach Rix 1991: 226 Anm. 4 jedoch recte *!!el-tjo-m 'groBe Zahl' [Windekens 1976: 66;
+     1979: 198, 202] oder *!Jeldom).
+6    Vgl. Schade 1872/1882: 937. Eine unwahrscheinliche Mischung der ersten und zweiten These nimmt
+     Brugmann (1911: 48f.) vor: Neben dem Kompositum 'Krafthundert' habe es "eine gleichlautende, in beiden
+     Gliedern deklinable Wortverbindung gegeben ... , die bestand aus einem mit einem nt-Forrnans gebildeten
+     Adjektiv mit der Bedeutung 'schwellend, kriiftig, stark' (vgl. etwa got. nehr undja 'der nachste'. .. ) und dem
+     Substantivum *krpt6-m ('kriiftiges, starkes Hundert')."
+7    Vgl. Comries (1992: 792) Ansatz *tii(s)-Krpt-, wobei das erste Element mit ai. tuvi- 'sehr' verwandt sei.
+     Da nicht nur im Gerrnanischen, sondern auch im Slavischen und Baltischen (vgl. unten) Suffixablaut auftritt,
+     kann dieser Ablaut keine germanische Neuerung sein (anders Lloyd/Springer 1988: 354).
+8    Stang 1942: 37; zu den Formen im einzelnen vgl. Koch 1990: 47lff.
+
+                                                                                                               119
+   toslav. *ejske/o- zeigt9. Gegeniiber dem ererbten sk.-Prasens uridg. *hj,s-ske!o- (ai.
+   icchati, av. isaiti 'sucht, wiinscht') ist in vorurbaltoslav. *ejsk.e!o- wohl die Dehn-
+   stufe aus dem fiir das Vorurbaltoslavische zu postulierenden s-Aorist *ejs- <
+   *h~js-s- eingefiihrt (Klingenschmitt 1982: 67 Anm. 5 als eine Moglichkeit). Hille
+   wie lit. pa-ž[stu (Jnfinitiv pažznti), lett. pa-vstu 'kenne, erkenne' (vgl. lat. nosco,
+   ap. xšnasa-, arm. čanač'em < uridg. *glJ.hrske!o- 'erkennen'), lit. gzmstu, lett.
+   dzzmstu 'werde geboren' (vgl. griech. Bamcro, ai. gacchati < *gwrp.-sk.e!o- 'kom-
+   men') sind sekundare Bildungen, die sich dem Prasenstyp nasaler Wurzelauslaut +
+   st-Suffix (rzmstu, rzmti 'ruhig werden') angeschlossen haben; mit lit. gzmstu vgl.
+   das danebenstehende aus dem Aorist hervorgegangene Prasens gemu 'werde gebo-
+   ren' (Jnfinitiv gimti) (Stang 1966: 337ff.).
+b) Auch im Slavischen fiihrt ein Ansatz *tuHs-komt-ih2, *tuHs-krp.t-ih2 nicht zu den
+   bezeugten Lautformen. Wie aksl. iskQ deutlich macht, hatte sich vor velarem Vokal
+   *tyskQšti 10 ergeben; und was die Form mit~ betrifft, so weist kslav. voštalll> 'wach-
+   sern' < *vosken'b, eine Ableitung von aksl. vosk'b 'Wachs' (lit. viiškos), auf eine
+   Lautentwicklung zu št vor (urspriinglich) palatalem Vokal hin. Aus *tuHs-krp.t-ih2
+   ware demnach ein aksl. *tyšt~šti hervorgegangen.
+c) Im Germanischen kann keine bereits vorurgermanische Zusammensetzung *tuHs-
+   krp.t-ih2, deren Elemente nicht mehr segmentierbar waren, fortgesetzt sein; denn
+   die Kontinuante von *s-k ware wie inlautendes *s.k:. behandelt worden, und *sk
+   (*s.k:.) bleibt unverschoben; vgl. an. lQskr 'schlaff, trage' (air. lase; Meid 1967:
+    195). Doch besteht die Moglichkeit, daB *-krpt- in vorurgerm. *tUHs-krp.t-ih2 auf
+   das Wort 'hundert', *krpt6m, bezogen worden ist und *-k- dann Anlautsbehand-
+   lung (>*X) erfahren bat. Das Ergebnis ware dann ein urgerm. *pus-xundI. Da die
+   Fortsetzung von *X aber nur in aisl. pushund, aisl., runenschwed. (Stein von Sale-
+   by II) pushundrao auftaucht und das Wort sonst kein inlautendes h aufweist (got.
+   pusundi; anord. pusund '1200', seltener '1000', awn. pl. pusundir, runenschwed.
+   Pusind, aschwed. pasand, pasund; ahd. dusunt, thusunt, tusent; as. thž'i.sundig;
+   andl. thusint; ae. pusend; afries. thusend; Ross/Berns 1992: 621 ), miiBte in diesem
+   Fall h wie in anord. lfkame, ae. Ucuma lautgesetzlich geschwunden, im Altnordi-
+   schen jedoch teilweise restituiert sein 11 - das von Grimm (1868: 253f.) als Stiitze
+   angefiihrte salfrank. thž'i.schunde, thuis chunde, tos chunde 'GroBtausend, 1200'
+
+9     Shevelov 1964: 141. Demgegeniiber treten Endzelin (1923: 111), Brauer (1961: 172) und andere fiir den
+      Lautwandel von uridg. *s.k zu slav. s und lit. š, lett. s und damit fiir einen Zusammenfall mit den
+      Fortsetzungen von uridg. *k ein. Doch sind auch in anderen Palatalsprachen die Vertretungen von uridg.
+      *sk und *k verschieden (Arumaa 1976: 154). Lit. aUšti 'tagen, dlimmem', dessen -š- Brugmann (1897:
+      568) wegen ai. ucchdti 'leuchtet' von einer Lautfolge *-s-s.k- herleitet, kann š < *s wie in lit. aušrii
+      'Morgenrote, Morgendammerung' aufweisen. Ebensowenig ist aksl. pasQ 'weide' ein eindeutiges Beispiel
+      fiir den Wandel von *sk zu aksl. s.
+1O    Im folgenden wird fiir den Nominativ Singular im Altkirchenslavischen die sich aus den Casus obliqui
+      ergebende Form mit -š- aus -št- < *-ti- angegeben.
+11    Kluge 1901: 491; 1913: § 66: Als "Spiritus asper" verklingt h friihzeitig in der Kompositionsfuge.
+
+120
+     bleibt fern, weil eh nur steht, wenn chunna vorausgeht (van Helten 1900: 515).
+     Daneben besteht die Moglichkeit, daB die allein ein -s- aufweisenden Formen, die
+     die iiberwiegenden Lautungen sind, etwas Altes, h-haltiges aisl. pii.shund und aisl.,
+     runenschwed. pii.shundrao aber eine "lectio facilior" darstellen, da sich deren h
+     leicht als volksetymologische Angleichung an das Wort 'hundert' erklfut (Hirt
+     1896: 345) 12 • lst dem so, so waren fiir das Urgermanische die Formen *PilsundI,
+     *pusandi der korrekte Ansatz.
+      Die zweite, von Pijnenburg (1989: 103) als ''Ableitungstheorie" bezeichnete The-
+se besteht aus drei Varianten: Es wird Ableitung angenommen erstens durch ein nt-
+Suffi.x in "verstarkender, elativierender Funktion", die im Slavischen und Baltischen
+in Wortem wie russ. bol'šuščij 'sehr groB', lit. gražiiitelis 'wunderschč:in', senifitelis
+'steinalt', jaunifitelis 'blutjung' noch vorhanden sei (Aitzetmiiller 1991: 140 und
+Anm. 205), zweitens durch ein Adjektivsuffix wie in got. nehtundja 'der Nachste'
+(Hirt 1896: 347) und drittens durch ein Partizipialsuffx *-.f}t-. Die letzte These stammt
+von Szemerenyi (1970: 209). Sie ist ohne Modifikationen jedoch ebenso unhaltbar
+wie die beiden anderen Varianten der Ableitungstheorie, da *s hinter u-Laut mogli-
+cherweise zu balt. *š, aber auf jeden Fali zu aksl. x vor velarem Vokal und š vor
+palatalem Vokal gefiihrt hatte. Seinen Ansatz *tii.s.fJtihat Szemerenyi ( 1990: 241) iibri-
+gens spater korrigiert. An dessen Stelle setzt er ein *tilso-krp.t-i mit einem adjektivi-
+schen Element *tii.so- 'stark', das mit *til-nw- 'stark' in ahd. dumo 'Daumen', *tfi-ro-
+'geschwollen' in lat. obturo zu vergleichen sei. Nach der Lautverschiebung sei im
+Germanischen der "Bindevokal" in *pusa- geschwunden 13 und *-sh- zu -s- verein-
+facht worden. Die germanische Form sei auch die Quelle der slavischen und nicht
+umgekehrt 14 , wie etwa Hamp (1973: 174) erwagt; und lit. t6.kstantis sei aus *tilsant-
+umgestaltet (Vaillant 1958: 647f.). Szemerenyis revidierte Erklarung des Wortes 'tau-
+send' ist aber nicht weniger problematisch als seine zunachst vertretene "Ableitungs-
+theorie". Denn es fehlt eine Erklarung, wie man sich den Suffixablaut vorzustellen
+hat. Weiterhin ist die Annahme, das slavische Wort sei aus dem Germanischen ent-
+lehnt, lautlich mit Schwierigkeiten belastet (vgl. unten).
+     Die dritte These, nach der das Wort eine Entlehnung sei, ist auf den ersten Blick
+nicht von der Hand zu weisen, da es Beispiele fiir die Entlehnung von Zahlwortem fiir
+hohere Zahlen gibt: z.B. alb. mije 'tausend' aus dem Lateinischen, arm. hazar 'tau-
+send' aus dem Iranischen, air. mile 'tausend' aus dem Lateinischen (Lehmann 1986:
+368). Wie spater Szemerenyi hat so Hirt (1896: 348) Entlehnung des slavischen Wor-
+
+12    Pijnenburg ( 1989: 101 f.) weist darauf hin, daB h sonst nach Konsonant erscheint, und zwar in got. jJuthaurn
+      'Trompete' und in allen Priifixbildungen mit der Fortsetzung des Priifixes *uz-. Doch kann h hier ebenso
+      restituiert sein.
+13    Meid 1967: 21. Als Parallele fiir den Schwund des Kompositionsvokals vor *-h- konnte man die Vorform
+      vonBeheim, *bajja-zaima-, anflihren (Liihr 1982: 480 Anm. 3).
+14    Ebenso Rix (1991: 225f.): Germ. *]Jiisa-hundi setz.e ein *tuhso-(d)Japtih2 'starkes, dickes Hundert' fort
+      und sei ins Baltische und Slavische entlehnt.
+
+                                                                                                              121
+tes 'tausend' aus dem Germanischen vermutet 15 • Doch bereitet bei dieser Annahme
+zum einen der im Slavischen auftretende Suffixablaut Probleme (Kiparsky 1934: 88);
+denn urgerm. *]Jusundf hlitte ebenso wie urgerm. *]Jusandf eine Lautung mit aksl. Q
+ergeben; zur Vertretung von urgerm. *an als aksl. Qvgl. aksl. x9dož;bstvo 'Erfahrung'
+gegeniiber got. handugs 'weise' (Stocki 1950: 55); zum anderen wlire urgerm. *d
+wohl als d entlehnt worden, wodurch sich aksl. *tysQždi (lit. *tii.sundi!*tii.šundi) erge-
+ben hlitte (Kiparsky 1934: 88; Pijnenburg 1989: 100). Wenig wahrscheinlich ist auch
+die Annahme einer Entlehnung des germanischen Wortes aus dem Slavischen 16: Geht
+man von einem urslav. *tyxQt'i aus, so wliren zwar *y durch *ii. und *Q durch *an
+substituierbar gewesen, aber fiir *x wlire kaum ein *s eingetreten, sondern sicher ur-
+germ. *X (vgl. aksl. xyzb 'Hiitte' < urgerm. *xusan). Und was ein urslav. *tyšt;t'i als
+Ausgangspunkt angeht, so hlitte in der Tat *š mit urgerm. *s wiedergegeben werden
+konnen. Doch fragt sich, ob urslav. *t; im Germanischen als *un erschienen wlire; es
+sei denn, man hlitte das aus dem Slavischen entlehnte Wort 'tausend' nach dem germa-
+nischen Wort 'hundert' (*xuntJan) umgebildet; vgl. demgegeniiber aksl. hnt;(d)Zb
+'Fiirst' < urgerm. *kuningaz (Arumaa 1964: 134). Bine weitere Variante der Endeh-
+nungstheorie findet sich bei Uhlenbeck (1906: 300f.), nach dem die slavischen For-
+men aus dem Germanischen, die baltischen aus dem Slavischen entlehnt sind. Wie
+aber z.B. lit. tiikstantis aus urslav. *tyxQt'i, *tyšt;t'i hervorgegangen sein soll, bleibt
+unklar17 .
+      Die vierte These, nach der das Wort 'tausend' einzelsprachlich innerhalb des Sla-
+vischen, Baltischen und Germanischen aus *til.s- und dem Wort 'hundert' zusarnmen-
+gesetzt ist, erscheint Pijnenburg (1989: 647) fiir aksl. tyst;šti (Vaillant 1958: 647) zu
+Recht moglich: Nach den Regeln von Leskien (1990: 48) und Shevelov (1964: 188)
+hlitte sich aus *tyx- < *til.s- + *st;šti < *Krptf zunlichst *tyxst;šti ergeben miissen; vgl.
+ksl. dbxnQti 'atmen' (zu lit. dusti) mit x vor Konsonant (n). Da jedoch in der Periode
+des Slavischen kein einziger Fali von -xs- zu finden sei, konne bezeugtes tyst;šti Re-
+prlisentant von urslav. *tyx + st;šti gewesen sein. Auch im Germanischen ist eine erst
+einzelsprachliche Zusammensetzung mit dem Wort 'hundert' denkbar, sofern der
+Schwund von anlautendem *h- im Kompositionshinterglied gemeingermanischen Al-
+ters ist (vgl. oben). Jedoch hlilt Pijnenburg (1989: 103) die baltischen Lautungen nicht
+fiir erst im Baltischen zustande gekommeneBildungen. Denn "eine erst baltische Zu-
+sammensetzung *tii.s-/tii.š- aus idg. *til.s- und šimti- aus idg. *Krpti- muB balt. *tii.šimti-
+ergeben." "Auch wenn man von einer Grundform mit Vollstufe-o ausgeht, also *til.s- +
+šamti-, kann nicht ohne weiteres auf lit. tiikstantis, lett. tii.kstoš, tfikstuotis geschlossen
+werden." Zu bemerken ist jedoch, daB im AltpreuBischen ein Akk.Pl. tusimtons be-
+gegnet, der ohne weiteres das Wort 'hundert' enthalten kann; vgl. lit. šiiiltas, lett. szmts
+
+15    Hirt 1898: 340; Vaillant 1948: 184; Franck/Wijk 1949: 142.
+16    Lexer 1876: 1590 ("wahrscheinlich"); Kawczynski 1888: 607f.; Sobolevskij 1912: 480.
+17    Nach Stang (1972: 59) stammt das Wort 'tausend' aus "unbekannter Quelle, das sich in nach-ieur. Zeit in
+      einem bestimmten Sprachkreis verbreitet hat:'
+
+122
+(Vaillant 1958: 647; Comrie 1992: 792). Genau diese altpreuBische Lautform wird bei
+der folgenden ErkHirung eine entscheidende Rolle spielen.
+
+II. Bin neuer Er.klarungsversuch
+     1. Die gemeinsame Vorform
+      Uberblickt man nun die germanischen und baltoslavischen Lautungen, so ist
+zweierlei von Bedeutung: Man hat Lautformen, die <las Wort 'hundert' enthalten kon-
+nen, andere aber, wo dies nicht moglich ist. Zum zweiten ist der Suffixablaut, der sich,
+wenn man <las AltpreuBische mit einbezieht, in allen drei Sprachgruppen findet, auf-
+fallend. Betrachtet man zuerst diesen Suffixablaut, so ist die vielfach in der Forschung
+vertretene Au:ffassung, <las Wort 'tausend' sei urspriinglich eine Zusammensetzung
+mit dem Wort 'hundert' gewesen und sekundar an die Partizipien des Prasens angegli-
+chen worden 18, nicht sehr iiberzeugend. Da keine semantischen Beriihrungspunkte
+zwischen Partizipien <les Prasens und Zahlwortem bestehen (Aitzetmiiller 1991: 140),
+kfune allenfalls eine rein formale Angleichung in Prage. Doch fehlt dafiir die Ratio.
+Anders steht es, wenn man <len umgekehrten Weg annimmt, also eine Partizipialbil-
+dung - wegen des Suffixablauts und der Lautfolge -nt- kommt am ehesten eine solche
+BHdung in Frage19 -, und die Angleichung an <las Wort 'hundert' als sekundar betrach-
+tet. Denn daB eine als Zahlwort fiir 'tausend' gebrauchte Bildung, die von Haus aus
+kein Zahlwort war, nach einem Zahlwort umgestaltet ist, erscheint weitaus einsichti-
+ger. Die folgende Arbeitshypothese ist somit: Ein Partizip Prasens, das substantiviert
+worden sein miiBte, bildet im Germanischen und Baltoslavischen die Basis <les Wortes
+'tausend'. Dadas Wort 'tausend' auf <las Wort 'hundert' beziehbar war, konnte es nach
+dem Wort 'hundert' umgebildet werden.
+     Trifft diese Annahme zu, so ist als nachstes nach einem solchen Partizip Prasens
+als Ausgangsform des Wortes 'tausend' zu suchen, von der aus sich die Abweichungen
+
+18   Z.B. Vondrak 1924: 423 (als Moglichkeit); Comrie 1992: 792f.: Die Fortsetzung von *til(s)-/apt- sei im
+     Baltischen und Slavischen sekundlir zum Partizip umgedeutet worden. Fiir das Nebeneinander von urslav.
+     *tys<;t- und *tysQt- verweist er auf aksl. gorf;Št-, gorQšt- 'brennend'; und urbalt. *tilšant- sei als Partizip
+     interpretiert worden, indem der Priisensstamm *tilša- mit einem neuen Priisensstamm *til-sta- vermischt
+     wurde. In iihnlicher Weise hat bereits Endzelin (1923: 366) fiir die "litauisch-lettische Ursprache" ein
+     *til(s)-šamt- angesetzt, das, "sobald es nicht mehr als Kompositum empfunden wurde, volksetymologisch
+     einem Partizip *tilšant- (aus ide. til-sfo-nt-) angeglichen" wurde. Auf den Priisensstamm urbalt. *tilša-
+     deute dabei noch indirekt lett. tilskt (neben tilkt) 'schwellen, fett werden'. Weiterhin sei neben dem
+     Priisensstanun *tilša- < *til-sfo ein gleichbedeutender Priisensstamm *til-sta- aufgekommen, deren
+     Kontaminationsprodukt *tilšta- die Bildung eines Partizips *tilštant- 'tausend' ermoglicht habe. -k- in lit.
+     tUkstantis und lett. tilkstoš schlieBlich stamme aus der gleichbedeutenden Wurzelform *tilk- (lett. tCtkstu
+     'ich schwelle, werde fett'). Vgl. auch Osthoff/Brugmann 1890: 11; Walde/Pokorny 1930: 707; Fraenkel
+      1932: 98. Nach Cornrie (1992: 792) ist ebenso k von der Wurzel *tuk- (lett. tCtkstu 'werde fett') bezogen,
+     -s- aber von den Verben auf-sta-.
+
+19   Theoretisch konnte ein Vertreter des "amphidynamischen" Typs *pef-ont-s (vgl. griech. EICWV), *uf-pt-es
+     (ai. usatas) 'wiinschend' vorliegen. Doch ist dieser Typ in keiner Einzelsprache lebendig (Rix 1976: 123,
+     234).
+
+                                                                                                               123
+im Germanischen, Baltischen und Slavischen am einfachsten erkliiren lassen. Fiir die
+Rekonstruktion dieser Form spielt das aus dem Baltischen entlehnte finn. tuhat, Gen.
+tuhannan 'tausend' eine Rolle. Finn. -h- steht hier hOchstwahrscheinlich fur balt. *-š-
+(Vorform *tušamte- 20 ) und nicht ftir *-št-, *-st- (Stang 1966: 282)21 , und balt. *-š-
+kann auf uridg. *k, *fs22 oder *s (hinter *ii) zuriickgehen, Lautwandel, die bekannt-
+lich nicht allgemein durchgeftihrt sind (Stang 1966: 91:ff.). Wenn aber das Finnische
+fiir das Baltische einen s-Laut erweist, muB die st-Verbindung im baltischen Wort
+'tausend' eine Neuerung sein. Als Transponate ftir das Wort 'tausend' ergeben sich so,
+wenn man mogliche Angleichungen an das Wort 'hundert' zunachst unberiicksichtigt
+laBt, die Partizipialstamme vorurslav. *tilkont-, *tilkiJ.t- und *tiiksont-, *tuKSJJ.t-, vor-
+urbalt. *tilkont-, *tiiksont- und *tiisont- (k in lit. tUkstantis, lett. tii.kstuotis laBt sich auf
+sekundaren Einschub vor Sibilant zuriickftihren; vgl. alett. tuustosch-; Stang 1966:
+109) und vorurgerm. *tiisont-, *tiisl).t-. Fiir das Germanische ist daran zu erinnern,
+daB altes inlautendes *-sk- erhalten geblieben wiire und so nicht vorliegen kann. *-s-
+vertritt allenfalls eine urspriingliche Lautfolge *-s-x-, die aber nur von einer Zusam-
+mensetzung mit dem Wort 'hundert' und nicht von einer Partizipialbildung herleitbar
+ist. Zu den Transponaten hat man auch die sich aus apreuB. tusimtons ergebende Vor-
+form zu stellen (Shevelov 1964: 91). Diese ist, wenn man m als sekundiire Anglei-
+chung an das Wort 'hundert' betrachtet, entweder als *tilkiJ.t-, *tuKSJJ.t- oder *tiisJJ.t-
+anzusetzen. Vergleicht man nun diese Transponate miteinander, so erscheinen sie zu
+ahnlich, als daB sie unabhangig voneinander zustande gekommen sein konnen. Der
+Unterschied betrifft lediglich den auf *ii folgenden Konsonantenstand: vorurslav. mnd
+vorurbalt. *K, vorurslav. und vorurbalt. *fs, vorurgerm. und vorurbalt. *s. Um nun zu
+entscheiden, welches die tatsachliche Vorform darstellt, ist nicht nur zu beachten, wie
+*K, *ks und *sim Germanischen und Baltoslavischen vertreten sind. Auch miissen
+mogliche Angleichungen an die Fortsetzung von *k des Wortes 'hundert' in die Uber-
+legungen mit einbezogen werden. Die Formen mit *.Kund *ks, *tilkont-, *tilkiJ.t- bzw.
+*tiiksont-, *tiiksl).t- scheiden aus, weil sie im Germanischen zu Lautungen mit *Xfg
+bzw. *xs geftihrt hatten und in *piisund-, *piisand- nicht das Wort 'hundert' eingedeu-
+tet sein kann. Ubrig bleibt so nur der Partizipialstamm *tiisont-, *tiiSJJ.t-. lst dieser
+Stamm der richtige Ansatz, kann -s- im Slavischen auf Angleichung an das Wort 'hun-
+dert' (aksl. Sbto) beruhen. Einer besonderen Erkliirung bedarf jedoch -st- im Balti-
+schen, eine Lautfolge, die, wie sich zeigen wird, mittelbar ebenso mit dem Wort 'hun-
+dert' in Zusammenhang gebracht werden kann.
+
+20    Itkonen/Joki/Peltola 1975: 1374. Vgl. finn. hanhi 'Gans' < balt. *šanše. Zuweilen steht finn. h in
+      Lehnwčirtern jedoch auch fiir st in der Lautfolge str, wie finn. ihra 'Speck' (an. istra 'Fetthiille der
+      Eingeweide') zeigt (Hakulinen 1957: 34f.).
+21    Aitzetmiiller 1991: 140. Arumaa (1985: 199) findet ž bei der wolgafinnischen Entsprechung auffallend.
+      Doch entspricht auch sonst wolgafinn. ž einem finn. h < *š; vgl. mordwin. Erza ožo, tscheremiss. užar
+      'gelb' zu finn. viha 'Zorn, HaB' (ai. vi$d-, av. viša- 'Gift') (Hinweis von R.-P. Ritter).
+22    Vgl. ksl. osb 'Achse', lit. ašis, lat. axis (Arumaa 1976: lOOf.).
+
+124
+      Demnach ware also im Germanischen die regulare Form fortgesetzt. Dies ver-
+trligt sich mit einer moglichen Hypothese iiber das Ursprungsgebiet des Wortes 'tau-
+send'. Denn hlilt man an einer germanisch-baltoslavischen Isoglosse fest, so gibt es
+eventuell Hinweise darauf, daB das Wort bei <len Vorfahren der Germanen aufgekom-
+men ist und sich von da aus zu den Vorfahren der Balten und Slaven verbreitet hat -
+Vorurgermanisch, Vorurbaltisch und Vorurslavisch bildeten damals noch ein "Kom-
+mmrlkationskontinuum". Es handelt sich um den Ausgang und um die Verbalwurzel
+des Partizips bei der Vorform <les Wortes 'tausend'.
+      Wegen des i-Lautes im Ausgang (vgl. got. ]Jfisundi, Pl. ]Jiisundjos, aksl. tys<;šti,
+tysQšti) diirfte morphologisch am ehesten ein substantiviertes Femininum auf *-J (vgl.
+ai. bhtirant-I, griech. <jJepovaa f. 'tragend' < *-ih2 ) vorliegen, das im Baltischen in
+Angleichung an lit. dešimtzs, -ies f. 'zehn' (aksl. des<;tb) nach den i-Stlimmen flektiert
+wurde (lit. dial. tilkstantis, -ies f.; lit. tilkstantis, -čio m. nach dem Vorbild von šimtas
+'hundert'; Fraenkel 1910: 202). Bin substantiviertes Partizip auf *-list jedoch inner-
+halb der germanischen und baltoslavischen Sprachen nur im Germanischen nachweis-
+bar; vgl. got. hulundi 'Hohle', Frauenname ahd. Purgunt (ai. b[hati, av. barazaiti f.
+'hohe, starke', gall. Brigantes, air. Brigit23 ). Auch die der Partizipialbildung *tfisonti,
+*tfislJ.ti zugrundeliegende Wurzel *tfis- erscheint in dieser Form moglicherweise im
+Germanischen: Aisl. ]JU.Strm. 'Feindseligkeit, Zorn' im Sinne von '(vor Zorn) Ange-
+schwollensein', nostfries. dfist 'Troddel', nnorw. tfist 'Biischel, Haarzotte, Quaste',
+tfista 'Biischel, Knoten, Biindel, Baum mit buschiger Krone', nisl. pusta 'Haufen,
+Masse' konnen auf ein *tfis- 'schwellen' + t zuriickgefiihrt werden24 • In der Form
+*tuH-s- stellt sich die Wurzel zu der in ai. tdvi§i 'Kraft, Starke', aav., jav. tauuiši
+'Kraft, Korperkraft' auftretenden Wurzelform *teya2s-(Mayrhofer 1992: 639). Sofern
+diese Wurzel, was allerdings nicht weiter belegt werden kann, auch als Verbalwurzel
+verwendbar war und von ihr Partizipien gebildet wurden, ergibt sich als Grundbedeu-
+tung von *tiis1J.ti, *tiisonti die Bedeutung 'Anschwellende (Menge); Anschwellung,
+Haufe' 25 ; vgl. die Bedeutung 'Menge' von aksl. t'hma (russ. tbma) '10 000', das wohl
+nicht von lit. tum(s)tas 'Haufen, Menge', (Ašmena) tumstas '1000' (Fraenkel 1965:
+1136) zu trennen ist (Aitzetmiiller 1991: 141)26.
+
+23   Brugmann 1913/14: 305ff.; Meid 1967: 171.
+
+24   Holthausen 1930: 257. Ob lett. ruska 'Geschwulst', tUsk'is 'Wassersucht' ebenso von der Wurzel *tfls-
+     herstarnmen, ist unsicher, da die lettischen Wi:irter eine sk-Ableitung von lett. tU/a 'schwellen' sein ki:innen
+     (Pokomy 1959: 1084).
+
+25   Eine mit dem Wort 'tausend' vergleichbare Bildung hat man in toch. B tumane (-t'mane), tmline (-tmane),
+     A tmiim 'zehntausend' gesehen und dies als Substantivierung eines von der unerweiterten Wurzel *teyH2-
+     'stark sein' abgeleiteten mediopassivischen Partizips 'das, was angeschwollen ist' betrachtet (Windekens
+     1941: 143; kritisch <lazu Winter 1992: 127). Auch eine Entlehnung aus dem Iranischen wurde erwogen
+     (Windekens 1976: 642; lsebaert 1980, 102f., 118). Bei dem tocharischen Wort handelt es sich jedoch um
+     ein altes Kultur- und Wanderwort, das sich in vielen asiatischen Sprachen, so-auBer im Tocharischen - im
+     Persischen, Tiirkischen, Mongolischen, Tungusischen, Chinesischen, findet und dessen Herkunft bis heute
+     nicht sicher gekliirt ist (Hinweis von K.T.Schrnidt; vgl. Doerfer 1965: 641f.).
+
+                                                                                                                125
+      2. Aisl. Pushund, aisl., runenschwed. pushundrao
+      Was nun die Sonderentwicklungen im Germanischen, Slavischen und Baltischen
+angeht, so erklfut sich -h- in aisl. Pushund, aisl., rui:J.enschwed. Pilshundrao als Anglei-
+chung an das Wort 'hundert' (vgl. aisl. pushund, aisl., runenschwed. pushundrao mit
+aisl., aschwed. hund-rap), sofem als Vorform tatsachlich allein ein s-haltiges *tilsgtl
+(*tilsontl) anzusetzen ist. Da das Wort 'hundert' und das Wort 'tausend' die iiberein-
+stimmende Lautfolge *-und- aufweisen, liegt im Germanischen die Eindeutung von
+'hundert' besonders nahe.
+      3. Alcsl. tys~šti, tysQšti
+     Anders verhillt es sich im Slavischen, da die auslautende Lautgruppe abweicht:
+*tyXQt'i, *tyš~t'i gegeniiber aksl. s»to, wobei das slavische Wort 'hundert' lautgesetz-
+lich nicht aus der urindogermanischen Vorform *1Gp.t6m herleitbar ist. Doch erscheint
+die zu erwartende Lautung *s~to, die, von der Umbildung nach der Nom./Akk.-En-
+dung der neutralen o- und s-stammigen Substantive im Slavischen und nach den a-
+stammigen Maskulina im Baltischen abgesehen, lit. šimtas, lett. s1mts entspricht27 , in
+slav. *tys~t'i (Aitzetmilller 1991: 140). Daher liegt der SchluB nahe, daB auch das
+Slavische die lautgesetzliche Fortsetzung des urindogermanischen Wortes 'hundert'
+besessen hat und diese in das Wort 'tausend' eingedeutet wurde28. Ebenso zeigt
+apreuB. tilsimtons diese Umbildung. Aus diesem Grunde ist moglicherweise bereits in
+der Vorstufe des Baltoslavischen die schwundstufige Form *tilsgtI nach dem Wort
+'hundert' umgebildet worden (Hirt 1896: 347). Verfolgt man nun die Entwicklung im
+Slavischen weiter, so diirfte von *tys~t'i aus das *s auch in die danebenstehende, ur-
+spriinglich o-stufige Form *tyxQt'i eingedrungen sein und so ein *tysQt'i ergeben ha-
+ben.
+     Gesetzt den Fali, daB zu dieser Zeit im Slavischen noch die lautgesetzliche Kon-
+tinuante des Wortes 'hundert', *s~to, vorhanden war, so gewinnt man moglicherweise
+weiterhin eine Erklarung fiir die im Slavischen abweichende Lautform des Wortes
+
+26    Sadnik/Aitzetmiiller 1955: 323t. Anders Vasmer 1958: 162: Die Bedeutung von aksl. tbma sei
+      Lehniibersetzung aus turkotatar. tuman 'zehntausend, Nebel' (Rosenkranz 1955: 107). Fraenkel (1932: 98)
+      verweist weiterhin auf poln. chmura und griech. vi<f!o~ 'Wolke', Worter, die ebenfalls groBe Zahlen,
+      Unmengen bezeichnen.
+27    Uridg. *l]l kann im Friihurslavischen zwar auch als *um vertreten sein, doch stimmen das Baltische und
+      Slavische hinsichtlich der Vokalqualitlit der Fortsetzungen von uridg. *l]l und *g sonst iiberein; vgl. aksl.
+      dQti, lit. dilmti 'wehen, blasen', aksl. Priis. dbmQ, apreuB. dumsle 'Homblase' (Arumaa 1964: 135). Zudem
+      erscheinen sonst palatale Reflexe von *lJl und *p hinter der Fortsetzung von Palatalen (Shevelov 1964:
+      86ff.; Comrie 1992: 784).
+28    Die Lautfolge *ty- war moglicherweise volksetymologisch auf urslav. *tyji5 'werde fett' (aruss„ russ.-ksl.
+      tyti, tyju 'mafvsaeai', ukr. tyty, tyju, skr. ilti, iljem, tschech. tfti, tyji, poln. tyC, tyji;, osorb. tyC usw.;
+      Vasmer 1958: 162) zu beziehen und *tysQt'i so als 'fettes, groBes Hundert' = 'Tausend' zu interpretieren
+      (Vondrak 1924: 132, 423). Demgegeniiber betrachtet Kawczynski (1888: 607) eineBedeutungsentwicklung
+      von 'fette, groBe Zahl' zu 'tausend' als eine der "kiihnsten" "Bedeutungsverschiebungen", "aufwelche man
+      je verfallen ist." Doch wird der eben erwogene Bedeutungsansatz 'fettes, groBes Hundert; > 'Tausend' als
+      volksetymologische Deutung von *tysi;t'i verstanden.
+
+126
+'hundert' (aksl. S'bto usw.), dessen velarer Vokal gegeniiber dem palatalen Vokal im
+Baltischen (lit. šiiiJ.tas, lett. szmts) entgegen den Lautregeln ist. Die Erklarung voll-
+zieht sich in drei Schritten: In gleicher Weise wie im Slavischen *tys~t'i auf die Form
+*s~to 'hundert' bezogen werden konnte, bestand die Moglichkeit, nach der urspriing-
+lich o-stufi.gen Form *tysQt'i eine ablautende Variante *sQto 'hundert' zu bilden29 .
+Weiterhin war es moglich, daB ebenso wie *~in *s~to als antekonsonantische Vertre-
+tung der Reduktionsstufe *hm auffaBbar war, *Q in *sQto als antekonsonantische Ver-
+tretung der Reduktionsstufe *'bm betrachtet wurde. Trat nun in einem solchen syn-
+chron als Vertretung von *'bm geltenden *Q eine durch Schwachtonigkeit bedingte
+Entnasalierung ein, so war das Ergebnis *b, wie es in dem slavischen Wort 'hundert'
+(aksl. s'bto usw.) auftritt. Bin Nebeneinander von verwandten Formen mit *Q, *bund
+*'b + Nasal, deren unterschiedliche Laute fur damalige Sprecher mit Schwachtonig-
+keit in Verbindung gebracht werden konnen, begegnet im Slavischen auch sonst, und
+zwar in dem Nominalprafix SQ-, in den Verbalprafixen sDn- und s'b- 'zusammen' und
+in dler Priiposition s'b 'mit'. Vielleicht hat der ftir das Wort 'hundert' erwogene Wandel
+von *Q zu *b aber sogar in einem weiteren Zahlwort eine unmittelbare Parallele: Ent-
+spricht aksl. V'btOr'b 'zweiter' den Wortem lit. aiit(a)ras, ai. antara-, got. anpar, so
+konnte auch hier *Q der Vorform *Qtor'b (Arumaa 1964: 135; Schmalstieg 1971:
+139f.)30 als Vertretung einer Reduktionsstufe (*nn) empfunden und im Schwachton zu
+*b entnasaliert worden sein. Im Falle des Wortes 'hundert' ist aksl. S'bto jedenfalls auf
+Kosten der lautgesetzlichen Form verallgemeinert worden31 •
+      4. Lit. tiikstantis, lett. tfi.kstuotis
+     Noch problematischer als im Slavischen liegt der Fali im Litauischen und Letti-
+schen. Denn hier hat man bei dem Wort 'tausend', wie bemerkt, ein -st-, das weder
+von der durch das Finnische geforderten Vorform mit *-š- noch mit der angenomme-
+nen partizipialen Vorform *tfisonti (*tfis{ltf) vereinbar ist und auch nicht mit dem An-
+laut des Wortes 'hundert' (lit. šimtas, lett. simts) tibereinstimmt. Doch moglicherweise
+hat das Wort 'hundert' auch bei der Umbildung des litauisch-lettischen Wortes 'tau-
+send' eine Rolle gespielt. Uberlegt man zunachst, in welcher Art von Zahlwort ein -t-
+
+29   V gl. Shevelov 1964: 91: "*simtom obtains a parallel form *sumtom under the influence of alternating -imt-
+     : -umt- (later -~t- : -Qt-) in *til(s)simt-". Doch geht Shevelov, wie sein Ansatz *tii(s)krpt-ja zeigt, fiir das
+     Wort 'tausend' offensichtlich von einer alten Zusammensetzung mit dem Wort 'hundert', *tiis- + *Krpt- (zu
+     aruss., russ.-ksl. tyti 'fett werden') aus (141, 181).
+30   Anders z.B. Meillet 1895: 329: *p-; Brugmann 1909: 169: *u-; Pedersen 1905: 395: zu ai. v{taras 'weiter
+     fiihrend' (Vasmer 1950: 237 mit weiterer Literatur).
+31   Barschel (1967: 451) wendet sich zu Recht entschieden gegen Arumaas (1964: 130) Auffassung von aksl.
+     s'bto als iranischem Lehnwort - iran. a wird nicht durch slav. 'b oder b wiedergegeben (Arumaa: urslav.
+     *sbmto-), und ein Ansatz iran. *sutam bzw. *sitam sei fiir die slavische Form nicht gerechtfertigt. Nach
+     Barschel ist nasalloses s'bto erst auf slavischem Boden entstanden, und zwar sei vor dem Abfall des
+     Auslautskonsonanten *s'bmtom zu *s'btom dissimiliert worden (ebenso bereits Vondrak 1924: 147, 423;
+     Shevelov 1964: 91). Wenig einsichtig ist Szemerenyis (1960: 65) Annahme, daB eine friihere Form *sinton
+     durch die Endung der ehemaligen Dekadenbezeichnungen *-s'b (z.B. *newins'b(n) 'neunzig') umgestaltet
+     sei. Weiterhin ist ein Ansatz uridg. *Kutam fiir aksl. S'bto nicht gerechtfertigt (Comrie 1992: 784).
+
+                                                                                                                127
+zu erwarten ist, so stOBt man unweigerlich auf das Ordinale; vgl. lit. trečias 'dritter' (<
+*-tja-) gegeniiber trys 'drei', ketviftas 'vierter' gegeniiber ketur'i 'vier' usw. Wabrend
+sich in diesen Zahlen Kardinale und Ordinale durch das Fehlen bzw. Vorhandensein
+von -t- unterscheiden, gibt es ein Wort, das in der gleichen Lautform sowohl als
+Kardinale als auch als Ordinale fungiert, und zwar genau das Wort 'hundert': lit.
+šimtas, Iett. s'imts 'hundert', 'hundertster', ein Zusammenfall, der dadurch bedingt ist,
+daB die Fortsetzung von *-om in *.hp.t6m als neutrale Endung aufgefaBt wurde, das
+Neutrum beim Substantiv aber im Litauisch-Lettischen aufgegeben und zumeist zum
+Maskulinum umgebildet worden ist (Stang 1966: 179). Ahnliche lautliche Uberein-
+stimmungen zeigen sich beim Kardinale und Ordinale des Wortes 'tausend': lit. tUk-
+stantis, lett. til.kstuotis Kardinale und lit. tUkstantysis (Kurschat), tUkstantas (Jablons-
+kis), tUkstantinis, lett. til.kstuošais Ordinale. Da also die Kardinalia und Ordinalia der
+Worter 'hundert' und 'tausend', von den Endungen beim Wort 'tausend' abgesehen,
+jeweils identisch sind, liegt der SchluB nahe, daB das Wort 'tausend' in der Vorstufe
+des Litauisch-Lettischen durch den EinfluB des Wortes 'hundert' zu seinem t-Laut
+gekommen ist32 • Fiir diese Annahme spielen nun die im Litauischen in filteren Gram-
+matiken angegebenen Ordinalia t6.kstinis und tilkstasis3 3, die keine Entsprechung
+beim Kardinale haben, eine Rolle. Folgende Entwicklung erscheint denkbar: Neben
+dem Kardinale *tilsantis 'tausend' stand ein Ordinale *tilsantas 'tausendster' mit ad-
+jektivischer Flexion; zu den Ausgangen vgl. lit. dešimt'is 'zehn' neben dešimtas 'zehn-
+ter'. In Verbindung mit Substantiven wurde das Ordinale *tilsantas zu *til.stas (lit.
+tilkstas-is, tUkst-inis) verkiirzt. Eine derartige Verkiirzung hat in anderen indogermani-
+schen Sprachen bei Ordinalia Parallelen (z.B. urgerm. *tegunjJan- > ae. Lindisfarne
+teigoa < -tegoa in mehrsilbigen Wortern34) und kommt auch im Baltischen im Falle
+von Silben, die aus Vokal und Nasal bestehen, vor (z.B. vargoninkas neben vargoni-
+ninkas 'Organist' mit Suffix -ininkas35 ). Fiir das Litauisch-Lettische gab es im Falle
+des zweisilbigen Ordinale 'tausendster' jedoch das Vorbild *šimtas 'hundertster'. Was
+die weitere Entwicklung des Wortes 'tausend' im Baltischen betrifft, so ist anzuneh-
+ men, daB die langere Form des Ordinale, *tilsantas, weiter bestand. Unter dem Ein-
+fluB von *tiisantas und den Vorformen der Ordinalia lit. septintas, lett. septftais 'sieb-
+ter', aštuntas, lett. dial. astilt( ai)s 36 wurde *til.stas zu *tilstantas erweitert; vgl. mndd.
+twelftende neben twelfte 'zwolfter' (Laseh 1914: 210) wohl nach dem Vorbild von
+ teinde 'zehnter', achteste, teinste, afries. achtunda (Lloyd/Springer 1988: 123).
+ SchlieBlich- wegen des Gleichlauts von *šimtas 'hundert, hundertster' und *dešimtis
+
+32    Zur lautlichen Beeinflussung von Ordinalia durch Ordinalia, die durch eine Rechenoperation aufeinander
+      beziehbar sind, vgl. Winter (1969: 38), der auf die nach 'zehnter' umgebildeten Ordinalia griech. arkad.
+      mµno--co; 'fiinfter' (OEICOWc;), ai. paiicamds 'fiinfter' (da§amds) verweist.
+33    Kurschat 1876: 265; Senn/Salys 1963: 731; Endzelin 1971: 185.
+34    Sievers/Brunner 1965: 256; Ross/Berns 1992: 632.
+35    Senn 1966: 319; Endzelin 1971: 36, 70.
+36    Zur Erkllirung der Formen auf *-nt- siehe Stang 1%6: 283f.
+
+128
+'zehn', *dešimtas 'zehnter' - trat neben das Ordinale *tiJ.stantas ein Kardinale
+*tiistantis37 •
+
+
+C. ZUSAMMENFASSUNG
+
+      Sind die angenommenen Umbildungen des Wortes 'tausend' im Germanischen
+undl Baltoslavischen zutreffend, so kann man in beiden Fallen von einer Semantifizie-
+rung der Lautform des Wortes 'tausend' sprechen. Denn in die Fortsetzungen der
+postulierten Grundform *tusonti, *til.SIJ.ti 'Anschwellung, Haufe', der Substantivie-
+rung eines Partizip Prasens ('Anschwellende [Menge]'), wurde - mehr oder weniger
+offensichtlich-das Wort 'hundert' eingedeutet. Der vorgestellten Deutung des Wortes
+'tausend' am nachsten kommt Aitzetmiillers (1991: 140) Behandlung dieses Wortes.
+Auch fiir ihn sind als Grundformen *tiJ.sonti, *til.SIJ.ti anzunehmen, die nach dem Wort
+'hundert' umgebildet wurden. Doch sieht er, wie bemerkt, in diesen Bildungen keine
+Partizipien, sondem Adjektive mit einem -nt- in elativierender Funktion.
+      Ausgangspunkt fiir die oben gegebene Diskussion war die Uberlegung, daB
+sich - wegen des fiir ein Partizip Prasens typischen Suffixablauts *-ont-, *-IJ.t- - als
+Grundform des Wortes 'tausend' eher ein Partizip anbietet als ein Zahlwort. Denn die
+Annahme, daB ein Partizip, das als Zahlwort fungiert, nach einem Zahlwort umgebil-
+det wird, ist plausibler als der umgekehrte Weg. Von den fiir das Wort 'tausend' in
+Prage kommenden Transponaten *tiifont-, *tii.kpt- und *tiJ.ksont-, *tuKSIJ.t- (vorur-
+slav., moglicherweise auch vorurbalt.) und *tiJ.sont-, *tii.sIJ.t- (vorurgerm., eventuell
+auch vorurbalt.) wurden die im Germanischen nahezu unverandert fortgesetzten Lau-
+tungen *tusont-, *tii.sIJ.t- als Grundformen des Wortes 'tausend' betrachtet, weil sich
+daraus die einzelsprachlichen Vertretungen mitsamt ihren Umbildungen nach dem
+Wort 'hundert' am einfachsten ableiten lassen. Lag in den drei Sprachzweigen keine
+lautgesetzliche Vertretung von *tiJ.sont-, *tii.sIJ.t- vor, so istim Falle des Germanischen
+und AltpreuBischen die Eindeutung des Wortes 'hundert' am sichtbarsten: vgl. aisl.
+]Jushund, aisl., runenschwed. pushundrao mit aisl., aschwed. hund-rap; apreuB. tusim-
+tons mit lit. šiiiJ.tas, lett. s1mts. Die Entsprechung des baltischen Wortes 'hundert',
+urslav. *st;to (mit Umbildung nach der Nom./Akk.-Endung der neutralen o- und s-
+stfunmigen Substantive), die entgegen dem bezeugten Wort ( aksl. sbto) den regularen
+palatalen Vokal aufweist, diirfte ebenso im Slavischen vorgelegen haben, wie aksl.
+tyst;šti (anstelle von *tyšt;šti) deutlich macht. Von tyst;šti ist -s- wohl femer auf die
+Vorform *tyxQšti von aksl. tysQšti libergegangen. Trifft dies zu und hat zu dieser Zeit
+
+37   In iihnlicher Weise nimmt Gauthiot ( 1904: XIX) eine Ubertragung von st aus dem Ordinale tiikstas an; doch
+     geht er fiir die Vorform von einer selbstandigen Bildung *tiis-to- aus, die unmittelbar vom Vorderglied *tiis-
+     mit dem *-to- der Ordinalia gebildet sei. Leumann (1942: 128) kritisiert an dieser Auffassung "die
+     Uberspringung des Elementes '100"', worin ihm zweifellos zuzustimmen ist. Seiner Meinung nach ist
+     tiikstas eine verkiirzteAbleitung vom Kardinale tiikstantis, "natiirlich in Anlehnung anšimtas '100', wobei
+     schon šimtas als Ordinale leicht moglich war, weil es an die regularen Ordinalia auf -tas der kleineren
+     Zahlen anklang."
+
+                                                                                                              129
+die auch fiir das Slavische zu postulierende Form *s~to 'hundert' existiert, konnte aus
+tysQšti eine mit *s~to ablautende Variante *sQto erschlossen worden sein, wodurch
+sich eventuell eine Erklfuung fiir die im Slavischen abweichende Lautform des Wortes
+'hundert' (s'bto) ergibt (vgl. oben). Was schlieBlich die noch zu erklarenden Formen
+im Baltischen betrifft, so sind durch EinfluBnahme <les Wortes 'hundert', <las im Bal-
+tischen nicht nur als Kardinale, sondern auch als Ordinale fungiert, moglicherweise
+weiterhin die Lautformen lit. tUkstantis, lett. tiikstuotis 'tausend' deutbar. Die bezeug-
+ten Ordinalia lit. tUkstinis und tilkstasis konnten auf ein neben dem Kardinale *tiisan-
+tis 'tausend' vorhandenes Ordinale *tiisantas 'tausendster' weisen, das in Verbindung
+mit Substantiven nach dem Vorbild von *šimtas 'hundertster' zu *tiistas (lit. tilkstas-
+is, tUkst-inis) verkiirzt wurde. Die langere Form *tiisantas miillte daneben weiter exi-
+stiert haben, *tiistas nach deren Vorbild und anderer Ordinalia mit der Lautfolge -ntas
+zu *tiistantas erweitert worden38 und schlieBlich neben *tiistantas ein Kardinale
+*tiistantis getreten sein. Gegeniiber dem Slavischen ware dabei im Baltischen im Falle
+der Form mit urspriinglich o-stufigem Suffix also nicht die ganze Lautform <les Wor-
+tes 'hundert' in das Wort 'tausend' iibernommen, sondem nur ein allein fiir das litau-
+isch-lettische Wort 'hundert' charakteristischer Lautstand: Im Zuge der Aufgabe des
+Neutrums beim Substantiv war der Ausgang *-tas des Kardinale (gegeniiber *-tom
+von *hp.t6m) mit dem des Ordinale zusammengefallen.
+      Mit <len angenommenen Umbildungen nach dem Wort 'hundert' kann das Wort
+'tausend' im Germanischen und Baltoslavischen tatsachlich als Isoglosse betrachtet
+werden.
+
+
+Literaturverzeichnis
+
+Aitzetmiiller 1991: R. Aitzetmiiller, Altbulgarische Grammatik als Einfiihrung in die
+    slavische Sprachwissenschaft, 2Freiburg i. Br. (Monumenta linguae slavicae dia-
+    lecti veteris. Fontes et dissertationes 30)
+Arumaa 1964. 1976. 1985: P. Arumaa, Urslavische Grammatik. Einfiihrung in das
+    vergleichende Studium der slavischen Sprachen, 1: Einleitung, Lautlehre (l. Teil:
+    Vokalismus, II. Teil: Betonung). II: Konsonantismus. III: Formenlehre, Heidel-
+    berg
+Barschel 1967: B. Barschel, Besprechung von: Arumaa 1964, Wissenschaftliche Zeit-
+    schrift der Martin-Luther-Universiilit Halle-Wittenberg, Gesellschafts- und
+    sprachwissenschaftliche Reihe 16, 449--451
+Bengtson 1987: J.D. Bengtson, Notes on Indo-European "10", "100", and "1000",
+    Diachronica 4, 257-262
+Brauer 1961: H. Brauer, Slavische Sprachwissenschaft, 1: Einleitung, Lautlehre, Ber-
+    lin (Sammlung Goschen 1191/1191a/1191b)
+
+38    Auch die Annahme einer Kontamination wiire moglich.
+
+130
+Brugmann 1897. 1906. 1911: K. Brugmann, Vergleichende Laut-, Stammbildungs-
+    und Flexionslehre der indogermanischen Sprachen ... , I. II, l. II, 2, 1, 2StraBburg
+-   -      1909: Gotisch bairos und der Dual der Indogermanen, Indogermanische For-
+        schungen 24, 165-173
+-   -     1913/14: Zur nominalen Stammbildung der germanischen Sprachen, Indoger-
+        manische Forschungen 33, 300-313
+Bugge 1888: S. Bugge, Etymologische Studien iiber germanische Lautverschiebung,
+   Beitrage zur Geschichte der deutschen Sprache und Literatur 13, 311-339
+Comrie 1992: B. Comrie, Balto-Slavonic, in: Gvozdanovic 1992: 717-833
+Doerfer 1965: G. Doerfer, Tiirkische und mongolische Elemente im Neupersischen,
+    II, Wiesbaden
+Endzelin 1923: J. Endzelin, Lettische Grammatik, Heidelberg (Indogermanische Bi-
+    bliothek 5.1)
+-   -       1971: J. Endzelins' Comparative Phonology and Morphology of the Baltic
+        Languages, translated by W.R. Schmalstieg/ B. Jegers, The Hague/Paris (Slavis-
+        tic Printings and Reprintings 85)
+Feist 1939: S. Feist, Vergleichendes Worterbuch der Gotischen Sprache, 3Leiden
+Fraenkel 1910: E. Fraenkel, Beitrage zur griechischen Grammatik, Zeitschrift ftir ver-
+    gleichende Sprachforschung 43, 193-219
+-   -     1932: Zur tocharischen Grammatik, Indogermanische Forschungen 50, 97-
+        108
+-   -     1965: Litauisches etymologisches Worterbuch, II, Heidelberg
+Franck/Wijk 1949: J. Franck/N. van Wijk, Etymologisch woordenboek der nederland-
+    sche taal, 2den Haag
+Gauthiot 1904: M. Gauthiot, [Zu lit. tukstantis], Bulletin de la societe de linguistique
+    de Paris 13, XIX
+Gvozdanovic 1992: J. Gvozdanovic (Ed.), Indo-European Numerals, Berlin/New
+   York (Trends in Linguistics: Studies and Monographs 57)
+Grimm 1868: J. Grimm, Geschichte der deutschen Sprache, I, 3Leipzig
+Hakulinen 1957: L. Hakulinen, Handbuch der finnischen Sprache. Aus dem Finni-
+    schen iibersetzt..., I, Wiesbaden
+Hamp 1973: E.P. Hamp, NorthEuropean "1000", in: C. Corum/T.C. Smith-Stark/ A.
+   Weiser (Ed.), Papers from the Ninth Regional Meeting [of the] Chicago Linguis-
+   tic Society, April 13-15, 1973, Chicago, 172-178
+van Helten 1900: W. van Helten, Zu den malbergischen Glossen ... , Beitrage zur Ge-
+    schichte der deutschen Sprache und Literatur 25, 225-542
+-   -     1905: Zum germanischen Zahlwort, Indogermanische Forschungen 18, 84-
+        126
+                                                                                    131
+Hirt 1896: H. Hirt, Akzentstudien, 1: Germ. got. pusundi, Indogermanische Forschun-
+     gen 6, 344-349                                                          ·
+-   -      1898: Grammatisches und Etymologisches, Beitrage zur Geschichte der deut-
+        schen Sprache und Literatur 23, 288-357
+Holthausen 1930: F. Holthausen, Wortdeutungen, Indogermanische Forschungen, 48,
+    254-267
+Isebaert 1980: L. Isebaert, De Indo-Iraanse bestanddelen in de Tocharische woorden-
+     schat. Vraagstukken van fonische productinterferentie, met bijzondere aandacht
+     voor de Indo-Iraanse diafonen a, a, Phil. Diss. Leuven
+Itkonen/Joki/Peltola 1975: E. Itkonen / A.J. Joki /R. Peltola, Suomen kielen etymolo-
+     ginen sanakirja, V, Helsinki (Lexico Societatis Fenno-Ugricae 12, 5)
+Jensen 1952: H. Jensen, Die indo-europaischen Zahlworter 10, 100, 1000, Zeitschrift
+    flir Phonetik und allgemeine Sprachwissenschaft 6, 50-57
+Kawczynski 1888: M. Kawczynski, Germanisch-slavische Etymologien, Archiv ftir
+   slavische Philologie 11, 607-613
+Kent 1929: R.C. Kent, The Labial Nasa! before Stops in Primitive Indo-European, in:
+    Donum natalicium Schrijnen, Nijmegen/Utrecht, 342-346
+Kiparsky 1934: V. Kiparsky, Die gemeinslavischen Lehnworter aus dem Germani-
+    schen, Helsinki (Annales Academiae Scientiarum Fennicae, B 32, 2)
+Klingenschmitt 1982: G. Klingenschmitt, Das altarmenische Verbum, Wiesbaden
+Kluge 1901: F. Kluge, Vorgeschichte der altgermanischen Dialekte, in: H. Paul (Hg.),
+    Grundrill der germanischen Philologie, I, 2StraBburg, 320-496
+-   -     1913: Urgermanisch. Vorgeschichte der altgermanischen Dialekte, 3StraBburg
+        (GrundriB der germanischen Philologie 2)
+Koch 1990: Ch. Koch, Das morphologische System des altkirchenslavischen Ver-
+   bums, I: Text, Mlinchen (Miinchner Universitats-Schriften. Reihe der Philosophi-
+    schen Fakultat 22/I)
+Kurschat 1876: F. Kurschat, Grammatik der littauischen Sprache, Halle
+Laseh 1914: A. Laseh, Mittelniederdeutsche Grammatik, Halle a. S. (Sammlung kur-
+    zer Grammatiken germanischer Dialekte 9)
+Lehmann 1986: W.P. Lehmann, A Gothic Etymological Dictionary, Leiden
+Leskien 1990: A. Leskien, Handbuch der altbulgarischen (altkirchenslavischen) Spra-
+    che. Grammatik, Texte, Glossar, 1°Heidelberg
+Leumann 1942: M. Leumann, Idg. sf im Altindischen und Litauischen, Indogermani-
+   sche Forschungen 58, 1-26, 113-130
+Lexer 1876: M. Lexer, Mittelhochdeutsches Handworterbuch, II, Leipzig [1974]
+Lloyd/Springer 1988: A.L. Lloyd/ O. Springer, Etymologisches Wdrterbuch <les Alt-
+    hochdeutschen, I: -a - bezzisto, Gottingen/Ziirich
+132
+Ltihr 1977: R. Ltihr, Die Dekaden '70-120' im Germanischeri, Miinchener Studien
+     zur Sprachwissenschaft 36, 59-71
+- - 1982: Studien zur Sprache des Hildebrandliedes, II: Kommentar, Frankfurt am
+     Main/Bern (Regensburger Beitrage zur deutschen Sprach- und Literaturwissen-
+     schaft B/22)
+Mayrhofer 1992: M. Mayrhofer, Etymologisches Worterbuch des Altindoarischen, I,
+    Heidelberg
+Meid 1967: W. Meid, Germanische Sprachwissenschaft, III: Wortbildungslehre, Ber-
+    lin (Sammlung Goschen 1218/ 1218a/1218b)
+Meillet 1895: A. Meillet, Etymologies, Indogermanische Forschungen 5, 328-334
+Osthoff/Brugmann 1890: H. Osthoff I K. Brugmann, Morphologische Untersuchun-
+     gen auf dem Gebiete der indogermanischen Sprachen, V, Leipzig
+Pedersen 1905: H. Pedersen, Die nasalprasentia und der slavische akzent, Zeitschrift
+     fiir vergleichende Sprachforschung 38, 297-421
+Peeters 1978: Ch. Peeters, Indo-European *hp.t6m oder *fi;.t6m? A Comparative Di-
+     lemma, Zeitschrift fiir vergleichende Sprachforschung 92, 27-28
+Pijnenburg 1989: W.J.J. Pijnenburg, Bine germanisch-baltoslawische Isoglosse, Hi-
+     storische Sprachforschung 102, 99-106
+Pinault 1989: G.-J. Pinault, Introduction au tokharien, LALIES. Actes des sessions de
+    linguistique et de litterature 7, 5-224
+Pokorny 1959: J. Pokorny, Indogermanisches etymologisches Worterbuch, I,
+    Bern/Miinchen
+Polome 1972: E.C. Polome, Germanic and the other Indo-European Languages, in: F.
+    van Coetsem I H.L. Kufner (Ed.), Toward a Grammar of Proto-Germanic, Tiibin-
+    gen, 43-69
+Porzig 1954: W. Porzig, Die Gliederung des indogermanischen Sprachgebiets, Hei-
+    delberg
+Rix 1976: H. Rix, Historische Grammatik des Griechischen. Laut- und Formenlehre,
+    Darmstadt (21992)
+- - 1991: Urindogermanisch *teslo- in den siidindogermanischen Ausdriicken
+    fiir "1000", in: L. Isebaert (Ed.), Studia etymologica indoeuropaea. Memoriae
+    A.J. van Windekens (1915-1989) dicata, Leuven (OrientaliaLovaniensia analec-
+    ta 45), 225-231
+Rosenkranz 1955: B. Rosenkranz, Historische Laut- und Formenlehre des Altbulgari-
+    schen (Altkirchenslavischen), Heidelberg
+Ross/Berns 1992: A.S.C. Ross/J. Berns, Germanic, in Gvozdanovic 1992: 555-715
+Sadnik/Aitzetmiiller 1955: L. Sadnik/ R. Aitzetmiiller, Handworterbuch zu den altkir-
+    chenslavischen Texten, Heidelberg/'s-Gravenhage
+Schade 1872/1882: O. Schade, Altdeutsches Worterbuch, II, Halle a. S. [1965]
+                                                                                 133
+Schelesniker 1987: H. Schelesniker, Die Schichten des urslavischen Wortschatzes, in:
+    W. Meid (Hg.), Studien zum indogermanischen Wortschatz, Innsbruck (lnns-
+    brucker Beitrage zur Sprachwissenschaft 52), 227-244
+Schmalstieg 1971: W. Schmalstieg, Die Entwicklung der a-Deklination im Slavi-
+    schen, Zeitschrift fiir slavische Philologie 36, 130-146
+Senn 1966: A. Senn, Handbuch der litauischen Sprache, 1: Grammatik, Heidelberg
+Senn/Salys 1963: A. Senn/A. Salys, Worterbuch der litauischen Schriftsprache. Litau-
+    isch-Deutsch, IV, Heidelberg
+Shevelov 1964: G.Y. Shevelov, A prehistory of Slavic. The historical phonology of
+    Common Slavic, Heidelberg
+Sievers/Brunner 1965: K. Brunner, Altenglische Grammatik nach der angelsachsi-
+    schen Grammatik von E.Sievers, 3Tiibingen (Sammlung kurzer Grammatiken
+    germanischer Dialekte A3)
+Sobolevskij 1912: A. Sobolevskij, Besprechung von: C. Mladenov, [Alte germ. Ele-
+    mente in slav. Sprachen] (bulg.), Sofia 1910, Archiv fiir slavische Philologie 33,
+    473-482
+Stang 1942: Chr.S. Stang, Das slavische und baltische Verbum, Oslo (Skrifter utg. av
+    Det Norske Videnskaps-Akademi i Oslo, II. Hist.-Filos. Klasse, 1942 No. 1)
+- - 1966: Vergleichende Grammatik der Baltischen Sprachen, Oslo/Bergen/Troms!I)
+- - 1972: Lexikalische Sonderiibereinstimmungen zwischen dem Slavischen,
+    Baltischen und Germanischen, Oslo/Bergen/Troms!I) (Skrifter utg. av Det Norske
+    Videnskaps-Akademi i Oslo II. Hist.-Filos. Klasse, Ny Serie 11)
+Stocki 1950: R.S. Stocki, Slavs and Teutons. The Oldest Germanic-Slavic Relations,
+    Milwaukee, Wisconsin
+Szemerenyi 1960: O. Szemerenyi, Studies in the lndo-European system of numerals,
+    Heidelberg
+- - 1970. 1990: Einfiihrung in die vergleichende Sprachwissenschaft, l.4narm-
+    stadt
+Uhlenbeck 1906: C.C. Uhlenbeck, Aanteekeningen bij Gotische etymologieen, Tijd-
+    schrift voor nederlandsche taal en letterkunde 25, 245-306
+Vaillant 1948: A. Vaillant, Notules, Revue des etudes slaves 24, 176-184
+- - 1958: Grammaire comparee des langues slaves, II: Morphologie, 2: Flexion
+     pronominale,Lyon/Paris
+Vasmer 1950. 1958: M. Vasmer, Russisches etymologisches Worterbuch, I. III, Hei-
+     delberg
+Vondrak: 1924: W. Vondrak:, Vergleichende Slavische Grammatik, 1: Lautlehre und
+     Stammbildungslehre, 2Gottingen
+Wackernagel 1957: J. Wackernagel, Altindische Grammatik, 11,1: Einleitung zur
+     Wortlehre. Nominalkomposition, 2GOttingen
+134
+Walde/Pokomy 1930: A. Walde/J. Pokorny, Vergleichendes Worterbuch der indoger-
+    manischen Sprachen, 1, Berlin/Leipzig
+Windekens 1941: A.J. Van Windekens, Lexique etymologique des dialectes tokha-
+    riens, Louvain (Bibliotheque du Museon 11)
+   - 1976. 1979: Le Tokharien confronte avec les autres langues indo-europeennes,
+    1: La phonetique et le vocabulaire. II, 1: La morphologie nominale, Louvain (Tra-
+    vaux... de l'Universite catholique neerlandaise de Louvain 11. 12)
+Winter 1969: W. Winter, Analogischer Sprachwandel und semantische Struktur, Folia
+    Linguistica 3, 29-45
+- - 1992: Tocharian, in: Gvozdanovic 1992: 97-161
+
+
+                                       Povzetek
+     K SEMANTIFIKACIJI ŠTEVNIKOV: LEKSEM ''TISOČ" - GERMANSKO-BALTOSLOVANSKA
+                                     IZOGLOSA?
+
+      V indoevropskih jezikih so števniki, ki označujejo števila večja od "deset", v nasprotju s števniki, ki
+označujejo manjša števila, jasne tvorbe. Tako stanje je posledica indoevropskega decimalnega števnega sistema.
+Števnik za "enajst" je tvorjen na podlagi števnika za "deset", števnik za "sto" na podlagi števnika za "deset"
+("deset krat deset"), števnik za "tisoč" na podlagi števnika za "sto" ("deset krat sto"). Vpliv takega besedotvor-
+nega vzorca je možno zaslediti tudi pri germanskem in baltoslovanskem števniku za "tisoč".
+       Najnovejša Pijnenburgova razlaga iz zloženke *tut-syt-i ne prepričuje, ker korenski samostalnik *tut-
+nikjer ni izpričan in ker germansko-baltoslovanski besedotvorni vzorec zloženke iz korenskega samostalnika in
+deležnika glagola s pomenom "biti" ni dokazljiv. Starejše poskuse razlag germansko-baltoslovanskega števnika
+za "tisoč" je možno razdeliti v štiri skupine:
+        1) Ieksemje zloženka iz ievr. *tus- "močan, krepek, mnog'' in ievr. *k'rp.t-ja, *k'rp.t-jom, kar je izvedeno
+iz ievr. k'rp.t6m "sto";
+      2) leksemje izpeljanka z (deležniško) pripono *-ent- *-ont, *-yt- iz ievr. *tus-; semkaj je potrebno prišteti
+tudi Hampovo (1973: 174) rekonstrukcijo *tu-sk'-ont-, deležnik sedanjika na *-sk'-;
+      3) Ieksem je izposojenka, ali germanska iz slovanščine ali pa slovanska iz germanščine;
+     4) Ieksem za "tisoč" je bil v baltščini, slovanščini in germanščini neodvisno v vsaki jezikovni skupini
+posebej zložen iz *tus- in leksema za "sto".
+        Razlaga pod 1) ni verjetna zaradi prevoja v csl. (Q : ~)in stšved. (jJusand: Pusund) kot tudi a) zaradi
+nedokazljivega prehoda ievr. *-sk' - v balt. -st-, b) ker bi se ievr. *tUHs-k'rp.t-ih2 razvilo v csl. *tyšt~šti in c) ker
+bi se ievr. *tUHs-k'rp.t-ih2 z medglasnim *-s-k' - praviloma razvilo v germ. *-sk-. Upoštevajoč možnost, da bi se
+*-k'rp.t- v pragerm. *tUHs-k'rp.t-ih2 naslonilo na leksem za "sto" *k'rp.t6m in bi se *-k'rp.t- v pragerm. *tUHs-
+k'rp.t-ih2 naslonilo na leksem za "sto" *k'rp.t6m in bi fonetični razvoj *k' sledil pravilu obravnave na vzglasju,
+pa bi pričakovali pragerm. refleks *Pus-xundi. Takšno pragerm. iztočnico bi lahko potrjevalo stisl. pushund in
+stisl., runskošved. pushundralJ, vendar sta obliki zaradi drugih germ. refleksov, ki medglasnega -h- nimajo,
+verjetno nastali po ljudskoetimološki naslonitvi na leksem za "sto".
+      Razlaga pod 2) ni verjetna, ker bi se *s za u-jevskim glasom morda razvil v balt. š, vsekakor pa v csl. X
+pred temnim samoglasnikom in v š pred palatalnim samoglasnikom.
+      Razlagi pod 3) nista možni, ker bi bilo pragerm. *Piisundi kot tudi pragerm. *Piisandiv csl. prevzeto z *Q,
+pragerm. *d pa bi bil v slov. prevzet kot d, zato bi pričakovali csl. *tysQždi (lit. *tusundil*tušundz). Tudi nasprot-
+na pot izposoje ni verjetna, ker bi bilo praslov. *tyxQt'i s *-x- v germ. verjetno prevzeto s pragerm. *z, praslov.
+možna izhodna oblika *tyš~t'i bi bila v prevzeta s pragerm. *s, vprašanje pa je, ali bi se psi.*~ v germ. realiziral
+kot un.
+
+                                                                                                                    135
+        Razlaga pod 4) o posameznojezikovnem nastanku leksema za "tisoč" bi bila za csl. tysr;šti možna Ob
+ predpostavki, da je izpad vzglasnega *h- v drugem delu zloženke splošnogermanske starosti, je enako možno
+ sklepati tudi za germ. jezike. Toda v balt. bi se zloženka morala realizirati v *tiišimti-. Tudi domneva polne
+o-prevojne stopnje, torej *tfis- + šamti-, izpričanih lit. tllkstantis, let. tfikstoš, tfikstuotis ne pojasnjuje. Za tu
+predlagano razlago pa je odločilnega pomena stprus. tož. mn. tusimtons, ki gotovo vsebuje leksem za "sto",
+prim. lit. šimtas, lot. simts.
+        Ker nobena od dosedanjih razlag za germ. in baltoslov. leksem "tisoč" ne vzdrži kritike, se ponuja teza, da
+je podlago za germ. in baltoslov. leksem za ''tisoč" tvoril posamostaljeni sedanjiški deležnik, ki je bil zaradi
+povezave pomena ''tisoč" s "sto" verjetno preoblikovan od leksema za "sto". Ob takšni domnevi se namreč da
+najbolj preprosto razložiti vsa razhajanja v germanskih, baltskih in slovanskih jezikih. Glede na fonetične razvoje
+v vseh treh jezikovnih skupinah se kot najbolj verjetna izhodna deležniška osnova izkaže *tfisont-, *tfisJ}.t-. V
+germanščinije torej izpričana fonetično regularna oblika. Zaradi izglasnega -i (prim got. piisundi, mn. Piisund-
+jos, csl. tysr;šti, tysQšt1) je potrebno izhajati iz posamostaljene oblike za ženski spol na *-i, ki je v balt. pod
+vplivom lit. dešimtls, -ies (ž.) "deset" prešla v i-sklanjatev (lit. nareč. tllkstantis, -ies (ž.), lit. tllkstantis, -čio
+(m.) pod vplivom šimtas). Potrditev za koren *tfis- v deležniških oblikah *tiisonti, *tfisJ}.ti nudijo germanski
+jeziki s stisl. pustr (m.) "sovražnost, jeza" v smislu "nadutost, zateklost (od jeze)", nnorv. tfist "šop, šop las, čop",
+tiista "šop, vozel, sveženj, drevo s bujno krošnjo"< *tfis- + -t- in sti. ttivi$i"moč, sila", stav., mlav. tauuiši "moč,
+telesna moč" iz korenske oblike *teyazs-. Osnovni pomen *tfisonti, *tfisJ}.tije bil "otekajoča (množica); otelklost,
+kup", prim. pomen "množica" csl. t'bma (rus. tbma) "10 000", kar se ne da ločiti od lit. tWr!(s)tas "kup,
+množica", (Ašmena) tumstas "1000".
+        Odstopanja od pričakovanega fonetičnega refleksa se razlagajo:
+        a) stisl. pushund, stisl. in runskošved. piishundrao imajo -h- pod vplivom leksema za "sto";
+       b) pričakovana slov. refleksa sta *ty~t'i in *tyš<;t'i. Pod vplivom pričakovanega slov. refleksa *s<;to za
+ide. *k'Ipt6m se je *tyš<;t'i preoblikovalo v *tys<;t'i, ta oblika pa je sprožila zamenjavo x s s tudi v o-stopenjski
+obliki *tyxQt'i. Ker je bilo pod vplivom leksema za "sto" je preoblikovano tudi stprus. tfisimtons, je možno
+predpostaviti, daje bila ničtostopenjska oblika *tfiSJ}.ti pod vplivom lekserna za "sto" preoblikovana že v baltos-
+lovanskem obdobju. Ob slov. *tys<;t'i z ohranjenim pričakovanim fonetičnim refleksom za leksem "sto" se po-
+nuja možnost razlage nepričakovanega slov. refleksa za leksem "sto" (csl. S'bto itd.). Tako kot je *tys<;t'i nastalo
+na podlagi oblike *s<;to "sto", je možno, daje prvotna o-stopenjska oblika *tysQt'i vplivala na nastanek prevojne
+variante *sQto "sto", ta pa se je v šibki tonični poziciji denazalizirala v *s'bto, prim imensko predpono *sQ-,
+glagolsko predpono S'bn- in S'b- "skupaj" in predlog s'b "z", csl. V'bton "drugi" za pričakovano *Qton, prim. lit
+afit(a)ras, sti. antara-, got. anpar.
+       c) lit. tllkstantis in let. tii.kstuotis je prav tako možno razložiti z vplivom leksema za "sto". Poleg glavnega
+števnika *tiisantis je bil tvorjen vrstilni števnik *tfisantas "tisoči" s pridevniškim sklanjatvenim vzorcem. V
+povezavi s samostalnikom je bil vrstilni števnik *tfisantas skrajšan v *tfistas (lit. tfikstas-is, tllkstinis). Pod
+vplivom daljše še ohranjene oblike vrstilnega števnika *tfisantas in drugih vrstilnih števnikov (lit. septifltas, let.
+septitais) pa se je *tfistas podaljšalo v *tfistantas. Pod vplivom vzorca *dešimtis "10" : *dešimtas "10." se je
+tvoril nov glavni števnik *tfistantis.
+       Zaradi prikazanih preoblikovanj pod vplivom leksema za "sto" je leksem za "tisoč" lahko imeti za ger-
+mansko-baltoslovansko izogloso.
+
+
+
+
+136
+
