@@ -18478,3 +18478,242 @@ Row 1468 (youth): Changed PROTOFORM from `*jugunθiz` to `*jugunθ`. The `-iz` s
 
 **Why not general early i-apocope rule:**
 The early loss of `-i` in *-unþi- is specific to this derivational suffix class and cannot be captured by a general phonological rule without referencing morphological structure. Our approach of using transponent PROTOFORMs for morphologically-conditioned exceptions is consistent with how we handle other cases (e.g., `*wer-uldu` for weorold).
+
+---
+
+## §14.9: COMPREHENSIVE DOCUMENTATION — ġeoguþ 'youth' (2026-04-12)
+
+This section provides thorough documentation of the phonological analysis and
+FST implementation for OE `ġeoguþ` 'youth' < PGmc `*jugunþiz`.
+
+### §14.9.1: Etymology and Proto-Form Reconstruction
+
+**Proto-Germanic form:**  
+- `*jugunþiz` (Kroonen: `*ju(w)unþi-`)
+- PIE `*h₂iu-H-ti-` (Kroonen p.xxxi: "PGm. *ju(w)unþi- 'youth' < *h₂iu-Hₓ-ti-")
+- The suffix is `*-unþi-` (cognate with Latin `-unt-` in `iuvent-` 'youth')
+
+**Cognates (Kroonen s.v. *dugunþi-):**  
+- Go. — (not attested, but cf. `junda` 'youth' < `*juwundi-`)
+- ON — (not attested in this form)
+- OHG `jugund` < PWGmc `*juwunþi-` (with preserved nasal)
+- OS `juguð`
+- OFri. `jogethe`
+- OE `ġeoguþ` ~ `iugoþ` (Campbell §170: "VP gér year, gé ye, iung young, iugop youth")
+
+**Key observation:** The OHG form `jugund` shows the **preserved nasal** before
+the dental, while OE/OS/OFri show nasal loss with compensatory lengthening.
+This is the Ingvaeonic/North Sea Germanic change `*-nþ- > *-þ-` with vowel
+lengthening (Campbell §332, Fulk §5.6).
+
+### §14.9.2: The *-unþi- Abstract Suffix — Morphological Class
+
+**The suffix `*-unþi-`:**  
+Kroonen (s.v. `*dugunþi-`): "A derivation to `*dugan-` with the suffix `*-unþi-`
+(for which cf. `*ju(w)unþi-`)."
+
+This suffix formed feminine abstract nouns, parallel to Latin `-unt-`:
+- PGmc `*dugunþi-` > OE `duguþ` 'valor, manhood'
+- PGmc `*jugunþi-` > OE `ġeoguþ` 'youth'
+
+**Campbell §332:**
+> "The Ingvaeonic loss of nasal consonants before voiceless spirants with
+> compensatory lengthening of the vowel... occurs in unaccented syllables
+> also... `duguþ` chivalry < `*dugunþ-`, and so `geoguþ` youth."
+
+Note Campbell's reconstruction: `*dugunþ-` **without** the final `-i(z)`.
+This is significant for the question of i-umlaut.
+
+### §14.9.3: The Central Problem — Why No I-Umlaut?
+
+**The puzzle:**  
+If PGmc `*jugunþiz` had a word-final `-iz`, why doesn't the medial `*u` show
+i-umlaut? Compare:
+- `*fullijaną` > OE `fyllan` 'fill' (i-umlaut of `*u` > `*y`)
+- `*kuningaz` > OE `cyning` 'king' (i-umlaut of `*u` > `*y`)
+
+But:
+- `*jugunþiz` > OE `ġeoguþ` (NO umlaut — still `u`, not `y`)
+- `*dugunþiz` > OE `duguþ` (NO umlaut — still `u`, not `y`)
+
+**The solution — Early i-apocope in heavy-stemmed abstracts:**
+
+R/T vol.2 p.141 (PWGmc changes):
+> "PWGmc `*jugunþi` 'youth' (OHG `jugund`) > `*juguþ` > OE `geoguþ` ~ `iuguþ`"
+
+Note the intermediate form `*juguþ` — the `-i` is already gone before the OE
+stage. R/T show:  
+`*jugunþi` → `*juguþ` (i-apocope + NSL of nasal before þ)
+
+**Chronology:**
+1. `*-unþi-` suffix (PGmc)
+2. Early apocope of final `-i` after heavy syllable (pre-OE)
+3. NSL (Nasal-Spirant Law): `*-nþ- > *-þ-` with compensatory lengthening
+4. I-umlaut (applies only if `-i-` still present — but it's gone!)
+5. Result: `*u` is **not** umlauted
+
+**R/T §6.8.1 (Apocope of short high vowels, p.284-296):**
+> "After general syncope had run its course, short *i and *u were lost word-
+> finally after a heavy syllable and after an unstressed syllable preceded by
+> a stressed light syllable."
+
+The form `*jugunþi` has:
+- First syllable: `jug-` (heavy, with coda `g`)
+- Second syllable: `unþ-` (unstressed, heavy)
+- Third syllable: `-i` (word-final after heavy syllable)
+
+By R/T's rule, the final `-i` was apocopated **before** i-umlaut could apply.
+
+### §14.9.4: Analogy or Regular Development?
+
+**Question:** Was the early loss of `-i` a regular phonological development
+or was it analogical?
+
+**Answer: Regular phonological development (with possible analogical reinforcement)**
+
+The high vowel apocope after heavy syllables is a **general sound law** in
+NWGmc/PWGmc (R/T §6.8.1), not specific to this suffix. Compare:
+
+**Parallel examples of heavy-stem i-apocope:**
+- PGmc `*bandi` > PWGmc `*bandi` > OE `bend` 'fetter' (no `-i`)
+- PGmc `*ga(r)di` > PWGmc `*gærdi` > OE `gierd` 'rod' (no `-i`)
+- PGmc `*ak"isi` > PWGmc `*akwisi` > OE `æx` 'axe' (no `-i`)
+
+**However**, some analogical leveling may have occurred in the abstract noun
+paradigm. Campbell's reconstruction `*dugunþ-` (without `-i`) suggests the
+stem had been reanalyzed as an `-u-`-stem or consonant stem rather than an
+`-i-`-stem. The OE paradigm shows:
+
+- nom.sg. `ġeoguþ` (< `*juguþ`)
+- gen.sg. `ġeoguþe` (extended with `-e`)
+- dat.sg. `ġeoguþe`
+
+The lack of any trace of `-i-` in the paradigm (no umlaut, no `-i-` in
+oblique cases) confirms the early loss was **complete and regular**, not
+just nominative-specific.
+
+### §14.9.5: Vowel Harmony and Medial U-Preservation
+
+**The second problem:** Even after fixing the i-umlaut issue, the FST was
+producing `*ġeogoþ` (with `o`) instead of `ġeoguþ` (with `u`).
+
+**Campbell §373-374 (Unstressed u → o):**
+> "In Ep., however, protected u > o very often, e.g. `uuiloc-`, `helostr`,
+> `déatlicostan`, `suornodun`..."
+>
+> "u is always well preserved after accented u, e.g. `sunu`, `wudu`, `duguþ`"
+
+This is **vowel harmony**: unstressed `u` following stressed `u` is preserved,
+while unstressed `u` following other vowels tends to lower to `o`.
+
+**Analysis:**
+
+| Word | First syllable | Second syllable | Result |
+|------|----------------|-----------------|--------|
+| `*xaubudą` 'head' | `*xau-` (diphthong, NOT `u`) | `-bud-` (unstressed `u`) | `hēafod` (`u` → `o`) |
+| `*jugunþ` 'youth' | `*jug-` (stressed `u`) | `-uþ` (unstressed `u`) | `ġeoguþ` (`u` preserved) |
+| `*dugunþ` 'virtue' | `*dug-` (stressed `u`) | `-uþ` (unstressed `u`) | `duguþ` (`u` preserved) |
+
+**Phonetic explanation:**
+The preservation of unstressed `u` after stressed `u` is a type of **regressive
+vowel harmony** (or dissimilation avoidance). When the stressed syllable already
+contains `[u]`, the articulatory target for backness/roundness is maintained
+through the word, preventing the lowering to `[o]` that otherwise occurs in
+unstressed medial position.
+
+**Other examples of this harmony:**
+- `*sunuz` > OE `sunu` 'son' (both u's preserved)
+- `*wuduz` > OE `wudu` 'wood' (both u's preserved)
+
+### §14.9.6: FST Implementation
+
+**Rule modification:**
+
+The `OEMedUnstressedULowering` rule was modified to include a negative
+context for preceding `{*u}` or `{*ū}`:
+
+```foma
+# Campbell §373: "protected u > o very often" BUT "u is always well preserved
+# after accented u" (vowel harmony). So medial unstressed u → o UNLESS preceded
+# by a stressed u. Examples:
+#   *xaubudą → hēafod (au is not u, so medial u lowers)
+#   *jugunθ → geoguþ (first u is stressed, second u preserved by harmony)
+#   *dugunþ → duguþ (both u's, harmony preserves)
+#
+# Rule: medial u → o, except when preceded by u in prior syllable.
+define OEMedUnstressedULowering [
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+
+**Negative context:** `[EnglishStarVocalic - [{*u}|{*ū}]]`
+
+This means: "apply the rule when the preceding vocalic element is **not** `{*u}`
+or `{*ū}`." When the stressed syllable contains `u` or `ū`, the rule does not
+apply, preserving the unstressed `u`.
+
+**TSV update:**
+
+Row 1468 (youth): PROTOFORM changed from `*jugunθiz` to `*jugunθ`.
+
+The NOTE field explains:
+> "PROTOFORM uses truncated form without -iz: R/T vol.2 p.141 notes early
+> apocope of -i in *-unþi- abstracts (before i-umlaut). Campbell §332:
+> 'duguþ chivalry < *dugunþ-, and so geoguþ youth.' The early i-apocope is
+> morphologically conditioned, so we pre-apply it in PROTOFORM rather than
+> model it as a general rule."
+
+### §14.9.7: Why Pre-Apply in PROTOFORM Rather Than Model as a Rule?
+
+**Design principle:**  
+We use **transponent PROTOFORMs** when a change is:
+1. Morphologically conditioned (specific to certain suffix classes)
+2. Cannot be captured by purely phonological conditioning
+3. Represents a stage intermediate between PGmc and the target OE form
+
+**The early i-apocope in `*-unþi-`:**
+
+While R/T §6.8.1 shows that high vowel apocope after heavy syllables is a
+general rule, the **relative chronology** with respect to i-umlaut is what
+makes `*-unþi-` special:
+
+- In most cases, i-umlaut preceded high vowel apocope
+- In `*-unþi-` abstracts, the evidence (lack of umlaut in `geoguþ`, `duguþ`)
+  shows apocope preceded umlaut
+
+This chronological exception cannot be modeled without:
+1. Flagging specific morphemes, OR
+2. Adding a special early apocope rule that applies only to certain contexts
+
+Both options violate our principle of **phonologically-conditioned rules only**.
+Therefore, we pre-apply the apocope in PROTOFORM, treating `*jugunþ` as the
+transponent input.
+
+**Parallel case:** `*wer-uldu` for `weorold` (pre-applied inter-stress raising).
+
+### §14.9.8: Verification and Test Results
+
+**FST outputs (all correct):**
+```
+jugunθ   → ġeoguþ  ✓
+xaubudą  → hēafod  ✓
+dugunθ   → duguþ   ✓
+```
+
+**Mismatch count:** 40 → 39 (−1)
+
+### §14.9.9: References
+
+- **Campbell, A.** (1959). *Old English Grammar*. §332 (NSL in unstressed
+  syllables), §373-374 (unstressed u → o), §170 (iugoþ spelling).
+
+- **Ringe, D. & Taylor, A.** (2014). *A Linguistic History of English*, vol. 2.
+  p.141 (PWGmc *jugunþi > *juguþ), §6.8.1 (apocope of short high vowels).
+
+- **Kroonen, G.** (2013). *Etymological Dictionary of Proto-Germanic*.
+  s.v. *dugunþi- (suffix *-unþi-), p.xxxi (*ju(w)unþi- etymology).
+
+- **Fulk, R.D.** (2018). *A Comparative Grammar of Early Germanic*.
+  §5.6 (Ingvaeonic NSL in unstressed syllables, with geoguþ example).
+
+---

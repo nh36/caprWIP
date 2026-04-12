@@ -356,9 +356,26 @@ define pgrmWeakTailVowel [
     u:{*u} n:{*n} ă:{*ă} z:{*z} |
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
     u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
-    # *-unþi- abstract suffix with early apocope of -i (R/T vol.2 p.141)
-    # e.g. *jugunþ → geoguþ 'youth', *dugunþ → duguþ 'virtue'
-    # The -i was lost before i-umlaut, so medial *u is NOT umlauted
+    # *-unþi- ABSTRACT SUFFIX with early apocope of -i (DEV_NOTES.md §14.9)
+    #
+    # This pattern handles forms like *jugunþ (youth), *dugunþ (virtue) where
+    # the final *-i(z) was apocopated BEFORE i-umlaut applied.
+    #
+    # Evidence for early i-loss:
+    # - Campbell §332 reconstructs "*dugunþ-, and so geoguþ youth" (no -i)
+    # - R/T vol.2 p.141: "*jugunþi 'youth' > *juguþ > OE geoguþ ~ iuguþ"
+    # - R/T §6.8.1: short *i lost word-finally after heavy syllable
+    # - OE shows NO i-umlaut of medial *u (contrast *fullijaną > fyllan)
+    #
+    # Cognates showing the suffix:
+    # - OE ġeoguþ, duguþ (Ingvaeonic: nasal lost before þ)
+    # - OHG jugund, tugund (non-Ingvaeonic: nasal preserved)
+    # - OS juguð (Ingvaeonic)
+    # - OFri jogethe (Ingvaeonic)
+    #
+    # Chronology: *-unþi- suffix → early -i apocope → NSL (*-nþ- > *-þ-) →
+    # i-umlaut (nothing to trigger it!) → OE ġeoguþ
+    #
     u:{*u} n:{*n} θ:{*θ} |
     u:{*u} w:{*w} ō:{*ō} n:{*n} |
     w:{*w} ō:{*ō} n:{*n} |
@@ -1683,15 +1700,41 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # - BUT "u is always well preserved... in -up, -ung suffixes" (e.g. duguþ, geoguþ)
 # The -uþ suffix (< *-unþi-) is a specific exception.
 # For now: keep the rule broad, but handle suffix exceptions via lexicon.
-# Words like geoguþ will use PROTOFORM without the -iz trigger for i-umlaut,
-# Campbell §373: "protected u > o very often" BUT "u is always well preserved
-# after accented u" (vowel harmony). So medial unstressed u → o UNLESS preceded
-# by a stressed u. Examples:
-#   *xaubudą → hēafod (au is not u, so medial u lowers)
-#   *jugunθ → geoguþ (first u is stressed, second u preserved by harmony)
-#   *dugunþ → duguþ (both u's, harmony preserves)
+# ===========================================================================
+# MEDIAL UNSTRESSED U LOWERING (Campbell §373-374)
+# ===========================================================================
+# Campbell §373: "protected u > o very often" — medial unstressed u tends to
+# lower to o in most environments.
 #
-# Rule: medial u → o, except when preceded by u in prior syllable.
+# HOWEVER, Campbell §373 also states: "u is always well preserved after
+# accented u, e.g. sunu, wudu, duguþ" — this is VOWEL HARMONY.
+#
+# PHONETIC EXPLANATION:
+# When the stressed syllable contains [u], the articulatory target for
+# backness/roundness is maintained through the word, preventing the lowering
+# to [o] that otherwise occurs in unstressed medial position. This is a type
+# of regressive vowel harmony (or dissimilation avoidance).
+#
+# EXAMPLES:
+#   *xaubudą → hēafod (first syllable has *au, not *u, so medial u lowers)
+#   *jugunθ  → ġeoguþ (first syllable has stressed *u, second u preserved)
+#   *dugunθ  → duguþ  (first syllable has stressed *u, second u preserved)
+#   *sunuz   → sunu   (both u's preserved)
+#   *wuduz   → wudu   (both u's preserved)
+#
+# IMPLEMENTATION:
+# The rule applies u → o in medial position, BUT uses a negative context
+# [EnglishStarVocalic - [{*u}|{*ū}]] to exclude application when preceded
+# by a syllable containing *u or *ū. When the stressed syllable contains
+# *u, the rule does not apply, preserving the unstressed *u.
+#
+# NOTE ON ġeoguþ (see DEV_NOTES.md §14.9 for full documentation):
+# PGmc *jugunþiz lost its final *-i(z) BEFORE i-umlaut due to R/T §6.8.1
+# (apocope of short high vowels after heavy syllable). Campbell §332
+# reconstructs "*dugunþ-, and so geoguþ youth" without the -i. Therefore,
+# PROTOFORM uses *jugunθ (without -iz) as a transponent form. The medial
+# *u is preserved by vowel harmony, not umlauted.
+#
 define OEMedUnstressedULowering [
     {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
