@@ -67,7 +67,9 @@ define OESandboxAfterAwLongDiphthong OESandboxAfterEwLongDiphthong
     .o. OEAwLongDiphthong;
 define OESandboxAfterPrefixAReductionEarly OESandboxAfterAwLongDiphthong
     .o. OEPrefixAReduction;
-define OESandboxAfterAngloFrisianBrightening OESandboxAfterPrefixAReductionEarly
+define OESandboxAfterInterStressRaising OESandboxAfterPrefixAReductionEarly
+    .o. OEInterStressRaising;
+define OESandboxAfterAngloFrisianBrightening OESandboxAfterInterStressRaising
     .o. AngloFrisianBrightening;
 define OESandboxAfterBreaking OESandboxAfterAngloFrisianBrightening
     .o. OEBreaking;
@@ -302,6 +304,10 @@ save stack old_english_sandbox_after_aw_long_diphthong.bin
 clear stack
 regex OESandboxAfterPrefixAReductionEarly;
 save stack old_english_sandbox_after_prefix_a_reduction_early.bin
+
+clear stack
+regex OESandboxAfterInterStressRaising;
+save stack old_english_sandbox_after_inter_stress_raising.bin
 
 clear stack
 regex OESandboxAfterAngloFrisianBrightening;

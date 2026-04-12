@@ -58,6 +58,7 @@ STAGES: List[Tuple[str, str]] = [
     ("EwLongDiphthong", "old_english_sandbox_after_ew_long_diphthong.bin"),
     ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
     ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
+    ("InterStressRaising", "old_english_sandbox_after_inter_stress_raising.bin"),
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
     ("Breaking", "old_english_sandbox_after_breaking.bin"),
     ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
