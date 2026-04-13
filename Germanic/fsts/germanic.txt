@@ -129,7 +129,8 @@ define pgrmOnsetCore [
 define pgrmOnset [0 | pgrmOnsetCore];
 
 define pgrmShortVowel [
-    a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | y:{*y}
+    a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | y:{*y} |
+    á:{*á} | é:{*é} | í:{*í} | ó:{*ó} | ú:{*ú}
 ];
 
 define pgrmNasalVowel [
@@ -479,7 +480,8 @@ define PGmcStarVowel [
     {*ɜ} |
     {*ʉ} |
     {*ʊ} |
-    {*ǣ}
+    {*ǣ} |
+    {*á} | {*é} | {*í} | {*ó} | {*ú}
 ];
 
 define PGmcStarDiphthong [
@@ -765,6 +767,11 @@ define OldEnglishRemoveStars [
     {*ū} -> ū,
     {*ȳ} -> ȳ,
     {*y} -> y,
+    {*á} -> a,
+    {*é} -> e,
+    {*í} -> i,
+    {*ó} -> o,
+    {*ú} -> u,
     {*b} -> b,
     {*β} -> f,
     {*d} -> d,
@@ -805,7 +812,8 @@ define EnglishStarDiphthong PGmcStarDiphthong;
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ}];
 
 define EnglishStarShortVowel [
-    {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą}
+    {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą} |
+    {*á} | {*é} | {*í} | {*ó} | {*ú}
 ];
 
 define EnglishStarConsonant PGmcStarConsonant;
