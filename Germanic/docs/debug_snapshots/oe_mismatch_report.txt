@@ -1,21 +1,20 @@
-Total mismatches: 97
+Total mismatches: 55
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
-  Documented exceptions:       1
-  Phonology (core buckets):    27
-  Phonology (other buckets):   67
+  Documented exceptions:       5
+  Phonology (core buckets):    18
+  Phonology (other buckets):   30
 
 === CORE BUCKETS ===
-  breaking_missing__expected_eo: 4
+  breaking_missing__expected_eo: 1
   breaking_missing__expected_eo_got_e: 4
   breaking_missing__expected_ie: 4
   long_vowel_missing: 8
-  palatalization_missing: 7
+  palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
-  palatal_marker_variant: 2
   epenthetic_vowel_missing: 3
   gemination_extra: 2
   r_metathesis: 1
@@ -32,11 +31,9 @@ Total mismatches: 97
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__a_vs_o: 1
-  vowel_quality__i_vs_e: 2
   vowel_quality__ie_vs_eo: 1
-  vowel_quality__u_lowering_exception: 1
-  vowel_quality__u_o_alternation: 32
-  vowel_quality__unstressed_e_o: 2
+  vowel_quality__u_lowering_exception: 5
+  vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
   vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
@@ -53,11 +50,11 @@ Total mismatches: 97
 
 === DETAILED EXAMPLES ===
 
-breaking_missing__expected_eo (4):
+breaking_missing__expected_eo (1):
   *fríjōndz -> friiond (expected frēond)
-  *wír-aldu -> wirold (expected weorold)
-  *júką -> ġuc (expected ġeoc)
-  *júgunθ -> ġugoþ (expected ġeoguþ)
+  >> ISSUE: Breaking to ēo not applied
+  >> LIKELY: Breaking context (before r/l/h + C) not triggering for *e/i
+  >> ACTION: Check breaking rule for front vowels before velars
 
 breaking_missing__expected_eo_got_e (4):
   *xémonų -> hefon (expected heofon)
@@ -66,24 +63,23 @@ breaking_missing__expected_eo_got_e (4):
   *wéslon -> weslon (expected weosule)
 
 breaking_missing__expected_ie (4):
-  *gébăną -> gefan (expected ġiefan)
+  *gébăną -> ġefan (expected ġiefan)
   *xáwwją -> hew (expected hīeġ)
   *skérăną -> sċeran (expected sċieran)
   *skélduz -> sċeld (expected sċield)
 
 long_vowel_missing (8):
   *bō -> bu (expected bā]] [[þā)
-  *kéwwăną -> ceowan (expected ċēowan)
+  *kéwwăną -> ċeowan (expected ċēowan)
   *fúnxstiz -> fyst (expected fȳst)
   *fédwōr -> feower (expected fēower)
   *gánsz -> ġeas (expected gōs)
 
-palatalization_missing (7):
-  *géftiz -> gift (expected ġift)
-  *régną -> regn (expected reġn)
-  *régnă-bugô -> regnboga (expected reġnboga)
-  *séglą -> segol (expected seġl)
-  *θégnăz -> þegn (expected þeġn)
+palatalization_missing (1):
+  *wīθijăz -> wīþ (expected wīþiġ)
+  >> ISSUE: Palatal ġ/ċ expected but velar g/c produced
+  >> LIKELY: Palatalization rule not applying in this context
+  >> ACTION: Check palatalization environments; may be suffix-related
 
 final_vowel_extra (2):
   *láimōn -> lāfe (expected lām)
@@ -91,13 +87,6 @@ final_vowel_extra (2):
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
-
-palatal_marker_variant (2):
-  *fískăz -> fisc (expected fisċ)
-  *θréskăną -> þrescan (expected þresċan)
-  >> ISSUE: Orthographic difference: sċ vs sc, ċ vs c
-  >> LIKELY: TSV uses one spelling convention, FST uses another
-  >> ACTION: Normalize TSV to consistent palatal marking convention
 
 epenthetic_vowel_missing (3):
   *sáiwălō -> sāwl (expected sāwol)
@@ -153,35 +142,21 @@ vowel_quality__a_vs_o (1):
   >> LIKELY: Pre-nasal rounding (*a > o before nasal), or dialectal
   >> ACTION: Check nasal context; if not pre-nasal, may be dialectal or TSV issue
 
-vowel_quality__i_vs_e (2):
-  *nístą -> nist (expected nest)
-  *wíθră -> wiþer (expected weþer)
-  >> ISSUE: FST has i where target has e (or vice versa)
-  >> LIKELY: Raising/lowering; may involve unstressed reduction or breaking input
-  >> ACTION: Check stress and surrounding consonants; e before r,l,h often raises
-
 vowel_quality__ie_vs_eo (1):
   *smérwijăną -> smeorwan (expected smierwan)
   >> ISSUE: FST has ie where target has eo (or vice versa)
   >> LIKELY: i-umlaut applied where back mutation expected, or vice versa
   >> ACTION: Check umlaut/mutation chronology; ie < eo (i-umlaut) vs eo (breaking/back mutation)
 
-vowel_quality__u_lowering_exception (1):
-  *frústą -> frust (expected forst)
-  >> ISSUE: FST lowered u→o but target keeps u (wulf, bucc, etc.)
-  >> LIKELY: Known lexical exceptions to u-lowering (Luick §78)
-  >> ACTION: Add exception list to u-lowering rule or accept as documented
+vowel_quality__u_lowering_exception (5):
+  *búkkăz -> bocc (expected bucc)
+  *fúglăz -> fogol (expected fugol)
+  *rústō -> orst (expected rust)
+  *wúlfăz -> wolf (expected wulf)
+  *wúllō -> woll (expected wull)
 
-vowel_quality__u_o_alternation (32):
-  *búrdą -> burd (expected bord)
-  *búrōjăną -> burian (expected borian)
-  *búttmăz -> butm (expected botm)
-  *búgô -> buga (expected boga)
-  *kúrną -> curn (expected corn)
-
-vowel_quality__unstressed_e_o (2):
-  *θúnrăz -> þuner (expected þunor)
-  *wúndrą -> wunder (expected wundor)
+vowel_quality__u_o_alternation (1):
+  *wíduwōn -> widowe (expected widuwe)
 
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
@@ -191,7 +166,7 @@ vowel_quality__unstressed_vowel (1):
 
 final_vowel_missing__weak_noun_like (4):
   *fūri -> fȳr (expected fȳre)
-  *skúldrō -> sċulder (expected sċuldra)
+  *skúldrō -> sċoldor (expected sċuldra)
   *síbăz -> sif (expected sife)
   *tángō -> tang (expected tange)
 

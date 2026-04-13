@@ -550,7 +550,10 @@ define PGmcStarFrontVowel [
     {*œ} |
     {*ɛ} |
     {*ʉ} |
-    {*ǣ}
+    {*ǣ} |
+    # Stressed short front vowels:
+    {*é} |
+    {*í}
 ];
 
 define PGmcStarBackVowel [
@@ -562,7 +565,11 @@ define PGmcStarBackVowel [
     {*ū} |
     {*ɑ} |
     {*ɔ} |
-    {*ʊ}
+    {*ʊ} |
+    # Stressed short back vowels:
+    {*á} |
+    {*ó} |
+    {*ú}
 ];
 
 define PGmcStarFrontTrigger [
@@ -570,7 +577,11 @@ define PGmcStarFrontTrigger [
     {*ai} |
     {*ei} |
     {*eu} |
-    {*iu}
+    {*iu} |
+    # Stressed diphthongs:
+    {*ái} |
+    {*éu} |
+    {*íu}
 ];
 
 define RemoveStars {*} -> 0;
@@ -1594,7 +1605,9 @@ define EnglishStarNonHighVowel [
 # This fixes *widuwōn → widuwe (not ×widowe): the second *u is unstressed and
 # should not lower.
 define NWGmcULowering [
-    {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+    {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel,
+    # Stressed variant (stress absorbed into output):
+    {*ú} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
 
 # NWGmc *i → *e lowering before non-high vowels (Campbell §114, Fulk §4.3).
@@ -1627,7 +1640,9 @@ define NWGmcULowering [
 define EnglishStarNonVelar [EnglishStarAlphabet - EnglishStarVelar];
 define EnglishStarNonVelarConsonant [EnglishStarConsonant - EnglishStarVelar];
 define NWGmcILowering [
-    {*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
+    {*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel,
+    # Stressed variant (stress absorbed):
+    {*í} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
@@ -2223,13 +2238,17 @@ define OEWsPalatalGlide [
     # WS palatal glide insertion: insert *e between initial palatal and *u
     # Creates *eo (later eo) — Campbell §§171-172: geoc 'yoke', geoguþ 'youth'
     # Cannot use epenthesis (0 ->) with multichar symbols; use direct replacement.
-    {*j} {*u} -> {*j} {*e} {*u} || .#. _
+    {*j} {*u} -> {*j} {*e} {*u} || .#. _,
+    {*j} {*ú} -> {*j} {*e} {*u} || .#. _
 ] .o. [
-    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _
+    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
+    {*ʤ} {*ú} -> {*ʤ} {*e} {*u} || .#. _
 ] .o. [
-    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _
+    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
+    {*ʧ} {*ú} -> {*ʧ} {*e} {*u} || .#. _
 ] .o. [
-    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _
+    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
+    {*ʃ} {*ú} -> {*ʃ} {*e} {*u} || .#. _
 ];
 
 # Pragmatic approach: encode heavy-syllable apocope directly rather than using
