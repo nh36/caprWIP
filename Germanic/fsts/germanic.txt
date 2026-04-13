@@ -142,7 +142,8 @@ define pgrmLongVowel [
 ];
 
 define pgrmDiphthong [
-    {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu}
+    {ai}:{*ai} | {au}:{*au} | {eu}:{*eu} | {iu}:{*iu} |
+    {ái}:{*ái} | {áu}:{*áu} | {éu}:{*éu} | {íu}:{*íu}
 ];
 
 # Unstressed diphthong: {*ăi} undergoes NWGmc monophthongization to *ē (not *ā).
@@ -498,7 +499,8 @@ define PGmcStarDiphthong [
     {*īe} |
     {*io} |  # Breaking product of *i (Campbell §148: *i → *io before r/l + C)
     {*īo} |  # Long counterpart (breaking of *ī)
-    {*iu}
+    {*iu} |
+    {*ái} | {*áu} | {*éu} | {*íu}
 ];
 
 define PGmcStarVocalic [
@@ -772,6 +774,10 @@ define OldEnglishRemoveStars [
     {*í} -> i,
     {*ó} -> o,
     {*ú} -> u,
+    {*ái} -> a i,
+    {*áu} -> a u,
+    {*éu} -> e u,
+    {*íu} -> i u,
     {*b} -> b,
     {*β} -> f,
     {*d} -> d,
@@ -1210,7 +1216,8 @@ define EnglishLongVowelRealisation [
 
 # Traditional West Germanic monophthongization
 define PWGmcAiMonophthongization [
-    {*ai} -> {*ā}
+    {*ai} -> {*ā},
+    {*ái} -> {*ā}
 ];
 
 # PWGmc: Bimoric *ō → *a before word-final *r (R/T vol.2 §3.1.4, pp.58-59; Fulk §5.3).
@@ -1411,13 +1418,17 @@ define OEInterStressRaising [
 ];
 
 define OEAuFronting [
-    {*au} -> {*aeu}
+    {*au} -> {*aeu},
+    {*áu} -> {*áeu}
 ];
 
 define OEDiphthongLeveling [
     {*aeu} -> {*ēa},
+    {*áeu} -> {*ēa},
     {*eu} -> {*ēo},
-    {*iu} -> {*ēo}
+    {*éu} -> {*ēo},
+    {*iu} -> {*ēo},
+    {*íu} -> {*ēo}
 ];
 
 define OEWWSimplification [
