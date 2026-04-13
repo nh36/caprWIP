@@ -1,15 +1,15 @@
-Total mismatches: 55
+Total mismatches: 49
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    18
+  Phonology (core buckets):    12
   Phonology (other buckets):   30
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
-  breaking_missing__expected_eo_got_e: 4
-  breaking_missing__expected_ie: 4
+  breaking_missing__expected_eo_got_e: 1
+  breaking_missing__expected_ie: 1
   long_vowel_missing: 8
   palatalization_missing: 1
 
@@ -20,6 +20,7 @@ Total mismatches: 55
   r_metathesis: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
+  breaking_extra__eo_for_e: 1
   breaking_extra__eo_for_high: 4
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
@@ -35,7 +36,6 @@ Total mismatches: 55
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
   vowel_quality__unstressed_o_a: 1
-  vowel_quality__unstressed_vowel: 1
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
 --- final_n_missing sub-buckets ---
@@ -56,17 +56,14 @@ breaking_missing__expected_eo (1):
   >> LIKELY: Breaking context (before r/l/h + C) not triggering for *e/i
   >> ACTION: Check breaking rule for front vowels before velars
 
-breaking_missing__expected_eo_got_e (4):
-  *xémonų -> hefon (expected heofon)
-  *mélukz -> meloc (expected meoloc)
-  *sébun -> sefon (expected seofon)
+breaking_missing__expected_eo_got_e (1):
   *wéslon -> weslon (expected weosule)
+  >> ISSUE: Expected ēo but got e/ē
+  >> LIKELY: Breaking rule missing this context or ordered wrong
+  >> ACTION: Check *e before r/l/h in breaking environments
 
-breaking_missing__expected_ie (4):
-  *gébăną -> ġefan (expected ġiefan)
+breaking_missing__expected_ie (1):
   *xáwwją -> hew (expected hīeġ)
-  *skérăną -> sċeran (expected sċieran)
-  *skélduz -> sċeld (expected sċield)
 
 long_vowel_missing (8):
   *bō -> bu (expected bā]] [[þā)
@@ -105,6 +102,9 @@ r_metathesis (1):
 
 breaking_extra__ea_for_a (1):
   *spárēną -> spearon (expected sparian)
+
+breaking_extra__eo_for_e (1):
+  *spéru -> speoru (expected spere)
 
 breaking_extra__eo_for_high (4):
   *knéxtăz -> cneoht (expected cniht)
@@ -160,9 +160,6 @@ vowel_quality__u_o_alternation (1):
 
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
-
-vowel_quality__unstressed_vowel (1):
-  *spéru -> speru (expected spere)
 
 final_vowel_missing__weak_noun_like (4):
   *fūri -> fȳr (expected fȳre)
