@@ -500,7 +500,12 @@ define PGmcStarDiphthong [
     {*io} |  # Breaking product of *i (Campbell §148: *i → *io before r/l + C)
     {*īo} |  # Long counterpart (breaking of *ī)
     {*iu} |
-    {*ái} | {*áu} | {*éu} | {*íu}
+    {*ái} | {*áu} | {*éu} | {*íu} |
+    # Stressed breaking products (prosodic tier):
+    {*éa} |  # Breaking of stressed *á
+    {*ḗa} |  # Breaking of stressed *á before x+weak tail (lengthened)
+    {*éo} |  # Breaking of stressed *é
+    {*ío}    # Breaking of stressed *í
 ];
 
 define PGmcStarVocalic [
@@ -740,14 +745,19 @@ define OEGlideUToEO [
 ];
 
 define OldEnglishRemoveStars [
-    {*ea} -> ea,
-    {*ēa} -> ēa,
-    {*eo} -> eo,
-    {*ēo} -> ēo,
-    {*io} -> io,
-    {*īo} -> īo,
-    {*ie} -> ie,
-    {*īe} -> īe,
+    {*ea} -> e a,
+    {*ēa} -> ē a,
+    {*eo} -> e o,
+    {*ēo} -> ē o,
+    {*io} -> i o,
+    {*īo} -> ī o,
+    {*ie} -> i e,
+    {*īe} -> ī e,
+    # Stressed breaking diphthongs (prosodic tier):
+    {*éa} -> e a,
+    {*ḗa} -> ē a,
+    {*éo} -> e o,
+    {*ío} -> i o,
     {*ʃ} -> s ċ,
     {*a} -> a,
     {*ā} -> ā,
@@ -1380,14 +1390,24 @@ define OEBreakingA [
     {*a} -> {*ea} || _ EnglishBreakingXContextNonWeakA,
     {*æ} -> {*ea} || _ EnglishBreakingRContext,
     {*æ} -> {*ea} || _ EnglishBreakingLContext,
-    {*æ} -> {*ea} || _ EnglishBreakingHContext
+    {*æ} -> {*ea} || _ EnglishBreakingHContext,
+    # Stressed variants: stressed *á also breaks to stressed *éa
+    {*á} -> {*éa} || _ EnglishBreakingRContext,
+    {*á} -> {*éa} || _ EnglishBreakingLContext,
+    {*á} -> {*ḗa} || _ EnglishBreakingXContextWeakTail,
+    {*á} -> {*éa} || _ EnglishBreakingXContextNonWeakA
 ];
 
 define OEBreakingE [
     {*e} -> {*eo} || _ EnglishBreakingRContext,
     {*e} -> {*eo} || _ EnglishBreakingHContext,
     {*e} -> {*eo} || _ EnglishBreakingWContext,
-    {*e} -> {*eo} || _ EnglishBreakingLContextE
+    {*e} -> {*eo} || _ EnglishBreakingLContextE,
+    # Stressed variants
+    {*é} -> {*éo} || _ EnglishBreakingRContext,
+    {*é} -> {*éo} || _ EnglishBreakingHContext,
+    {*é} -> {*éo} || _ EnglishBreakingWContext,
+    {*é} -> {*éo} || _ EnglishBreakingLContextE
 ];
 
 # Campbell §148: "i was broken, and appears as io (later eo in most dialects)"
@@ -1397,7 +1417,11 @@ define OEBreakingE [
 define OEBreakingI [
     {*i} -> {*io} || _ EnglishBreakingRContext,
     {*i} -> {*io} || _ EnglishBreakingHContext,
-    {*i} -> {*io} || _ EnglishBreakingWContext
+    {*i} -> {*io} || _ EnglishBreakingWContext,
+    # Stressed variants
+    {*í} -> {*ío} || _ EnglishBreakingRContext,
+    {*í} -> {*ío} || _ EnglishBreakingHContext,
+    {*í} -> {*ío} || _ EnglishBreakingWContext
 ];
 
 define OEBreaking OEBreakingA
@@ -1454,12 +1478,16 @@ define OEEwLongDiphthong [
 # Context: *w immediately followed by a vocalic (excludes *j-initial
 # suffixes like *-jăną where *a fronts via i-umlaut instead).
 define OEAwLongDiphthong [
-    {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}]
+    {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}],
+    # Stressed variant (prosodic tier):
+    {*á} {*w} -> {*ḗa} {*w} || _ [EnglishStarVocalic | {*ô}]
 ];
 
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
 define AngloFrisianBrightening [
-    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.],
+    # Stressed variant (stress absorbed):
+    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
@@ -1961,7 +1989,12 @@ define OEIUmlautFronting [
     {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    # Stressed variants (stress mark absorbed into output):
+    {*á} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*é} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ó} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ú} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
 # R/T §6.6.2: I-umlaut of low front *æ → e. This is the standard OE i-umlaut
