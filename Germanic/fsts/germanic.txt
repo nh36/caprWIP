@@ -2120,7 +2120,9 @@ define OENasalDissimilation [
 
 define OEBackMutation [
     {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    # Stressed variant (stress absorbed):
+    {*é} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
 ];
 
 # R/T vol.2 §6.9.7: WS palatal umlaut.
@@ -2215,7 +2217,9 @@ define OEWsPalatalDiphthongization [
     {*æ} -> {*ea} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
-    {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
+    {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
+    # Stressed variants (stress absorbed):
+    {*é} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
 ];
 
 define OEVelarFricativePalatalization [
