@@ -1825,16 +1825,18 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # CHRONOLOGY FIX (2026-04-14): This rule MUST run BEFORE NWGmcULowering
 # (stressed *ú → *ó) so that the vowel harmony check can see the stressed *ú.
 # If run later, the stressed *ú will have become *ó then *eo, and the harmony
-# exception won't match. Campbell §373 examples (sunu, wudu, duguþ) require
-# this chronology.
+# NOTE ON CHRONOLOGY (see DEV_NOTES.md §14.13):
+# Campbell §332: Ingvaeonic nasal loss before voiceless spirants with
+# compensatory lengthening: *-unθ- → *-ūθ- (e.g., *dugunθ- → *dugūθ- → duguþ).
+# This lengthening MUST happen BEFORE u-lowering, so that long *ū is protected.
+# Short *u (as in past plural *-un → -on) undergoes regular lowering.
 #
-# NOTE ON ġeoguþ (see DEV_NOTES.md §14.9 for full documentation):
-# PGmc *jugunþiz lost its final *-i(z) BEFORE i-umlaut due to PWGmcEarlyIApocope
-# (Brunner §145, R/T §6.8.1). Campbell §332 reconstructs "*dugunþ-, and so
-# geoguþ youth" without the -i. The medial *u is preserved by vowel harmony.
+# The harmony check in Campbell §373 ("u preserved after accented u") was 
+# misunderstood: duguþ preserves u NOT because of harmony with stressed u,
+# but because compensatory lengthening made the medial vowel LONG *ū.
 #
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
 # ===========================================================================
@@ -2496,10 +2498,6 @@ define EnglishProtoToOE (
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
     .o. OEWsPalatalGlide
-    # CHRONOLOGY FIX (2026-04-14): Medial unstressed u-lowering MUST run BEFORE
-    # stressed u-lowering (NWGmcULowering) so vowel harmony can see stressed *ú.
-    # Campbell §373: "u preserved after accented u" — sunu, wudu, duguþ, geoguþ.
-    .o. OEMedUnstressedULowering
     .o. NWGmcULowering
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
@@ -2512,6 +2510,10 @@ define EnglishProtoToOE (
     # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
     .o. NWGmcNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
+    # Medial unstressed u-lowering (Campbell §373, §332). MUST run AFTER
+    # NasalSpirantLengthening/Loss so that *-unθ- → *-ūθ- forms have long *ū.
+    # Long *ū doesn't lower; short *u (as in past pl. *-un → -on) lowers to *o.
+    .o. OEMedUnstressedULowering
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
@@ -2643,8 +2645,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
-    # CHRONOLOGY FIX (2026-04-14): OEMedUnstressedULowering before NWGmcULowering
-    .o. OEMedUnstressedULowering
     .o. NWGmcULowering
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
@@ -2655,6 +2655,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
     .o. NWGmcNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
+    # Medial unstressed u-lowering: AFTER nasal-spirant lengthening
+    .o. OEMedUnstressedULowering
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
@@ -2687,7 +2689,7 @@ define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWe
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
-    # NOTE: OEMedUnstressedULowering moved earlier in pipeline (before NWGmcULowering)
+    # NOTE: OEMedUnstressedULowering runs after NasalSpirantLoss (see §14.13)
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
