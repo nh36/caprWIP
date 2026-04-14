@@ -505,7 +505,8 @@ define PGmcStarDiphthong [
     {*éa} |  # Breaking of stressed *á
     {*ḗa} |  # Breaking of stressed *á before x+weak tail (lengthened)
     {*éo} |  # Breaking of stressed *é
-    {*ío}    # Breaking of stressed *í
+    {*ío} |  # Breaking of stressed *í
+    {*íe}    # Stressed ie from palatal diphthongization
 ];
 
 define PGmcStarVocalic [
@@ -769,6 +770,7 @@ define OldEnglishRemoveStars [
     {*ḗa} -> ē a,
     {*éo} -> e o,
     {*ío} -> i o,
+    {*íe} -> i e,
     {*ʃ} -> s ċ,
     {*a} -> a,
     {*ā} -> ā,
@@ -1463,7 +1465,11 @@ define OEDiphthongLeveling [
     {*eu} -> {*ēo},
     {*éu} -> {*ēo},
     {*iu} -> {*ēo},
-    {*íu} -> {*ēo}
+    {*íu} -> {*ēo},
+    # Split symbols from palatal glide (stress preserved where present):
+    {*e} {*u} -> {*eo},
+    {*é} {*u} -> {*éo},
+    {*i} {*u} -> {*eo}
 ];
 
 define OEWWSimplification [
@@ -1606,8 +1612,8 @@ define EnglishStarNonHighVowel [
 # should not lower.
 define NWGmcULowering [
     {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel,
-    # Stressed variant (stress absorbed into output):
-    {*ú} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+    # Stressed variant (stress preserved):
+    {*ú} -> {*ó} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ];
 
 # NWGmc *i → *e lowering before non-high vowels (Campbell §114, Fulk §4.3).
@@ -1641,8 +1647,8 @@ define EnglishStarNonVelar [EnglishStarAlphabet - EnglishStarVelar];
 define EnglishStarNonVelarConsonant [EnglishStarConsonant - EnglishStarVelar];
 define NWGmcILowering [
     {*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel,
-    # Stressed variant (stress absorbed):
-    {*í} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
+    # Stressed variant (stress preserved):
+    {*í} -> {*é} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
@@ -2121,8 +2127,8 @@ define OENasalDissimilation [
 define OEBackMutation [
     {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
-    # Stressed variant (stress absorbed):
-    {*é} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+    # Stressed variant (stress preserved on first element):
+    {*é} -> {*é} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
 ];
 
 # R/T vol.2 §6.9.7: WS palatal umlaut.
@@ -2218,8 +2224,8 @@ define OEWsPalatalDiphthongization [
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
-    # Stressed variants (stress absorbed):
-    {*é} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
+    # Stressed variant (stress preserved):
+    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
 ];
 
 define OEVelarFricativePalatalization [
@@ -2243,16 +2249,16 @@ define OEWsPalatalGlide [
     # Creates *eo (later eo) — Campbell §§171-172: geoc 'yoke', geoguþ 'youth'
     # Cannot use epenthesis (0 ->) with multichar symbols; use direct replacement.
     {*j} {*u} -> {*j} {*e} {*u} || .#. _,
-    {*j} {*ú} -> {*j} {*e} {*u} || .#. _
+    {*j} {*ú} -> {*j} {*é} {*u} || .#. _
 ] .o. [
     {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
-    {*ʤ} {*ú} -> {*ʤ} {*e} {*u} || .#. _
+    {*ʤ} {*ú} -> {*ʤ} {*é} {*u} || .#. _
 ] .o. [
     {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
-    {*ʧ} {*ú} -> {*ʧ} {*e} {*u} || .#. _
+    {*ʧ} {*ú} -> {*ʧ} {*é} {*u} || .#. _
 ] .o. [
     {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
-    {*ʃ} {*ú} -> {*ʃ} {*e} {*u} || .#. _
+    {*ʃ} {*ú} -> {*ʃ} {*é} {*u} || .#. _
 ];
 
 # Pragmatic approach: encode heavy-syllable apocope directly rather than using
