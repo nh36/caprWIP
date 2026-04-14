@@ -19241,3 +19241,123 @@ This is a properly phonological solution with no morphological conditioning.
 3. Late shortening: long `*ū` → `u` in unstressed syllables (LATE)
 
 The key insight: u-lowering happens AFTER nasal loss but BEFORE late shortening.
+
+---
+
+## §15: DISCOVERY — Early i-Apocope and Weak Class II 3sg (2026-04-14)
+
+### The Problem
+
+After implementing `PWGmcEarlyIApocope` (loss of final `-i` in 3rd/4th syllable position),
+we found that weak verb class II 3sg forms like `*mákōθi → macoþ` instead of expected
+`maceþ`. The FST is producing `-oþ` instead of `-eþ`.
+
+**Affected forms (5 regressions):**
+| Protoform | FST output | Expected OE | Error |
+|-----------|------------|-------------|-------|
+| `*mákōθi` | `macoþ` | `maceþ` | `-o-` not `-e-` |
+| `*búrōθi` | `boroþ` | `boreþ` | `-o-` not `-e-` |
+| `*líznōθi` | `liornoþ` | `liorneþ` | `-o-` not `-e-` |
+| `*líkkōθi` | `liccoþ` | `licceþ` | `-o-` not `-e-` |
+| `*skáwōθi` | `sċēawoþ` | `sċēaweþ` | `-o-` not `-e-` |
+
+### The Phonological Analysis
+
+**Syllable structure:** `*má.kō.θi` = 3 syllables, final `-i` in 3rd position
+
+**Early i-apocope rule:** `{*i} -> 0 || V́C+VC+ _ .#.`
+
+This rule correctly deletes the final `-i` because it's in the 3rd syllable. Without the
+`-i`, there's no umlaut trigger, so the `-ō-` doesn't front to `-e-` (via `-ij-`).
+
+**This is actually correct behavior!** The FST is working as designed.
+
+### Why the OE Forms Show `-eþ`
+
+The key insight comes from Campbell §756 on weak class II origins:
+
+> "This conjugation is a mixture of one in which endings were added to Gmc. -ō-
+> (2nd and 3rd sg. pres. indic. and imper.) and of one in which they were preceded
+> by -j- as in Class I, but this -j- followed -ō-."
+
+The PGmc endings were:
+- **1sg:** `-ōjō` ← has `-j-`
+- **2sg:** `-ōsi` ← NO `-j-`
+- **3sg:** `-ōþi` ← NO `-j-`
+- **1pl:** `-ōjanþi` ← has `-j-`
+- **2pl:** `-ōjanþi` ← has `-j-`
+- **3pl:** `-ōjanþi` ← has `-j-`
+- **Imperative sg:** `-ō` (bare stem, no ending)
+
+The medial `-ōj-` in 1sg and plural forms developed through these stages:
+1. `-ōj-` → `-ēi-` (via monophthongization/fronting)
+2. `-ēi-` → `-ij-` (shortening)
+3. `-ij-` → `-i-/-ig-` (OE medial reflex)
+
+But the **2sg and 3sg never had `-j-`** in the suffix! They had `-ōsi` and `-ōþi` directly.
+
+### The Analogical Solution
+
+The OE `-eþ` in 3sg forms like `maceþ` is **analogical**:
+
+1. In forms with `-ōj-` (1sg, plurals), the `-ōj-` → `-ij-` produced i-umlaut
+2. This umlauted vowel was **generalized** across the paradigm
+3. The 3sg `-ōþi` ending, which phonologically should give `-oþ`, was remodeled to `-eþ`
+
+Campbell §339 confirms: "medial -ij- < -ēi- < -ōj- in the present system of weak verbs
+of Class II (written -i- or -ig-)"
+
+### Why i-Apocope Makes the Problem Visible
+
+For monosyllabic roots like `*mak-`:
+- **1sg:** `*má.kō.jō` = 3 syllables, but final `-ō` (not `-i`), so no apocope
+- **3sg:** `*má.kō.θi` = 3 syllables, final `-i` in 3rd position → **apocope applies**
+
+After apocope: `*má.kō.θ` — no `-i` to trigger umlaut, and no `-j-` either.
+
+The umlauting never could have happened phonologically in the 3sg of trisyllabic
+class II weak verbs. The `-eþ` outcome is ENTIRELY analogical.
+
+### What This Means for Our FST
+
+**The FST is producing the correct phonological output.** The forms with `-oþ` are
+what regular sound change would produce.
+
+**The OE attestations show analogical leveling,** not lautgesetzlich development.
+
+### Options Going Forward
+
+**Option A: Accept `-oþ` as the phonological output**
+- Document that OE `-eþ` is analogical
+- Count these as "known analogical forms" in mismatch reports
+- This is the most historically accurate representation
+
+**Option B: Find a paradigm cell where umlaut is regular**
+- The 1sg `-ōjō` might work: `*má.kō.jō` has `-j-` which triggers umlaut
+- But then final vowel development differs
+- Need to research whether 1sg can serve as target
+
+**Option C: Use a disyllabic root where 3sg `-i` survives**
+- For verbs like `*bōr-ōθi` (2 syllables), the `-i` is in 2nd position
+- No apocope would apply: `*bṓ.rōθi` → umlaut should work
+- But we need to verify this gives correct output
+
+**Option D: Re-examine our PROTOFORM notation**
+- Perhaps the PROTOFORM should reflect the analogical leveling
+- Use `*mákōji` (with j) to force umlaut application
+- But this misrepresents the actual PGmc form
+
+### Recommendation
+
+**Option A is the correct scholarly approach.** The FST should model regular sound
+change; analogical developments are outside its scope.
+
+However, we could add a "known analogical" category to the mismatch report so these
+don't count as "bugs" but rather as "forms that underwent analogical leveling."
+
+### References
+
+- **Campbell §339**: i-umlaut in weak II medial `-ōj-`
+- **Campbell §756**: Origin of weak II present endings (distinction between `-ōj-` and non-j forms)
+- **Fulk §12.43**: Historical development of weak class 2, Cowgill's analysis
+- **Ringe & Taylor**: Ingvaeonic extension of class I endings to class II
