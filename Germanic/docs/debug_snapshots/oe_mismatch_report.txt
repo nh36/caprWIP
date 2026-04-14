@@ -1,10 +1,10 @@
-Total mismatches: 51
+Total mismatches: 49
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   32
+  Phonology (other buckets):   30
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -17,7 +17,6 @@ Total mismatches: 51
   final_vowel_extra: 2
   epenthetic_vowel_missing: 3
   gemination_extra: 2
-  r_metathesis: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
@@ -97,10 +96,6 @@ gemination_extra (2):
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
   >> ACTION: Research actual OE form; may be borrowing or irregular
 
-r_metathesis (2):
-  *bréstăną -> brestan (expected berstan)
-  *frústą -> frost (expected forst)
-
 breaking_extra__ea_for_a (1):
   *spárēną -> spearon (expected sparian)
 
@@ -152,7 +147,7 @@ vowel_quality__ie_vs_eo (1):
 vowel_quality__u_lowering_exception (5):
   *búkkăz -> bocc (expected bucc)
   *fúglăz -> fogol (expected fugol)
-  *rústō -> rost (expected rust)
+  *rústō -> orst (expected rust)
   *wúlfăz -> wolf (expected wulf)
   *wúllō -> woll (expected wull)
 
