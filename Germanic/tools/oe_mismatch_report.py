@@ -11,6 +11,7 @@ import argparse
 import csv
 import re
 import subprocess
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
@@ -1109,7 +1110,7 @@ def main() -> None:
     rows = load_rows(tsv_path)
     buckets, other_subs = build_report(rows, bin_path)
     write_report(buckets, other_subs, output_path, args.examples)
-    print(f"Wrote {output_path}")
+    print(f"Wrote {output_path}", file=sys.stderr)
 
 
 if __name__ == "__main__":
