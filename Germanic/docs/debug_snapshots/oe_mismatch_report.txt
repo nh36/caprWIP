@@ -1,7 +1,7 @@
 Wrote /Users/nathanhill/capr-v3-working/Germanic/docs/debug_snapshots/oe_mismatch_report.txt
 ed exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   29
+  Phonology (other buckets):   26
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -17,9 +17,9 @@ ed exceptions:       5
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
-  breaking_extra__eo_for_high: 3
+  breaking_extra__eo_for_high: 1
   breaking_extra__ie_for_e: 1
-  breaking_extra__ie_for_i: 2
+  breaking_extra__ie_for_i: 1
   breaking_extra__wrong_form: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
@@ -98,17 +98,17 @@ breaking_extra__ea_for_a (1):
 breaking_extra__eo_for_e (1):
   *spéru -> speoru (expected spere)
 
-breaking_extra__eo_for_high (3):
-  *knéxtăz -> cneoht (expected cniht)
+breaking_extra__eo_for_high (1):
   *néwun -> neowon (expected nigon)
-  *séxs -> seox (expected six)
+  >> ISSUE: FST broke to eo where target has high vowel (ū/ī)
+  >> LIKELY: Breaking applied where it shouldn't; may be TSV proto issue
+  >> ACTION: Check if proto vowel is correct (*eu vs *ū)
 
 breaking_extra__ie_for_e (1):
   *ráukiz -> rīeċ (expected rēc)
 
-breaking_extra__ie_for_i (2):
+breaking_extra__ie_for_i (1):
   *θréjez -> þrīe (expected þrī)
-  *wéxtiz -> wieht (expected wiht)
 
 breaking_extra__wrong_form (1):
   *xláxjăną -> hliehan (expected hlæhhan)
