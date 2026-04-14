@@ -19069,3 +19069,107 @@ and added stressed `{*ú}` to the harmony exception.
 3. Consider whether harmony should be applied via a "marking" rule rather 
    than exception in the lowering rule
 4. Document findings and implement correct solution
+
+---
+
+## §14.12: RESEARCH FINDINGS — Medial U-Lowering and Vowel Harmony (2026-04-14)
+
+### Summary of Research
+
+After thorough review of Campbell (1959), Hogg (1992), Luick, and R/T, the
+distinction between forms like `duguþ` (with preserved u) and `bugon` (with
+lowered o) is now clear.
+
+### Key Finding: Campbell §373 Applies to FINAL Position Only
+
+Campbell §373 states: "u is always well preserved after accented u, e.g. 
+sunu, wudu, duguþ; before m, e.g. maþum, d.p. -um..."
+
+The crucial observation is that ALL of Campbell's examples are in **final** 
+or **suffix-final** position:
+- `sunu` — final -u
+- `wudu` — final -u  
+- `duguþ` — suffix-final -uþ
+- `maþum` — suffix-final -um
+
+This is NOT about medial vowels in verb inflections like `-un-` in past plurals.
+
+### The Past Plural `-on` (older `-un`) is Regular
+
+Campbell §373 explicitly notes: "past indic. pl. -un (very rarely -on)" in 
+early texts, with "Ordinary OE forms" having "-on". The lowering of `-un` 
+to `-on` in past plural forms is a completely regular development that 
+applied even when the stressed syllable had *u.
+
+Evidence:
+- Campbell §49: "o is written for unaccented u with increasing frequency, 
+  especially before a consonant (e.g. past pl. in -on, older -un)"
+- This is not blocked by vowel harmony with a preceding stressed *u
+
+### Why `duguþ` but `bugon`?
+
+The distinction is structural:
+- `duguþ` < `*dugunþ-`: The suffix `-unþ-` (abstract noun suffix) is in 
+  **final** position, where Campbell §373 harmony applies
+- `bugon` < `*bugun`: The `-un` is a **medial** inflectional ending before 
+  word boundary, subject to regular u → o lowering
+
+The vowel harmony rule ("u preserved after accented u") targets:
+1. Word-final `-u`
+2. Suffix-final `-uþ`, `-um`, `-ung`, `-uc`
+
+It does NOT target:
+1. Medial `-u-` in verb forms
+2. Inflectional endings that were originally followed by other material
+
+### Campbell §385: A Different Kind of Vowel Harmony
+
+Campbell §385 describes a DIFFERENT process for medial unstressed vowels:
+"Already in VP and eW-S, there is a strong tendency for the first of two 
+successive unaccented back vowels to be reduced to a sound written e."
+
+Examples: `fugelas` from `fugol`, `roderas` from `rodor`
+
+This is **reduction** to `e`, not preservation of `u`. It's about the 
+interaction of two unstressed syllables, not about stressed/unstressed 
+u-harmony.
+
+### Hogg's Summary (§3.3.3.2)
+
+Hogg confirms: "word-finally after another /u/, as in sunu 'son', or before 
+/m/, as in the dative plural inflexion -um, and also in the suffix -uc, 
+-ung... the <u> was normally preserved."
+
+Again, the examples are all final/suffix-final, not medial verb inflections.
+
+### FST Implementation Consequences
+
+The current FST implementation has a bug: we moved `OEMedUnstressedULowering`
+earlier and added `{*ú}` to the harmony exception. This incorrectly preserves
+medial `-u-` in verb forms.
+
+**The fix should be:** Only apply harmony for **suffix-final** position, not
+for verb inflectional endings.
+
+Possible approaches:
+1. Remove `{*ú}` from the exception entirely (the stressed syllable harmony 
+   shouldn't apply to medial positions)
+2. Add structural conditioning to distinguish suffix-final from medial
+3. Handle `*-unþ-` suffix forms specially (like duguþ, geoguþ) while allowing
+   regular lowering elsewhere
+
+### Re-analysis of Test Cases
+
+| Form | Structure | Expected | Reason |
+|------|-----------|----------|--------|
+| `*júgunθ` | stem + abstract suffix `-unþ` | `ġeoguþ` | suffix-final u → harmony applies |
+| `*dúgunθ` | stem + abstract suffix `-unþ` | `duguþ` | suffix-final u → harmony applies |
+| `*búgun` | stem + past pl. inflection `-un` | `bugon` | inflectional u → regular lowering |
+| `*skúbun` | stem + past pl. inflection `-un` | `sċufon` | inflectional u → regular lowering |
+
+### References
+
+- **Campbell §373**: Preservation of unstressed u in specific environments
+- **Campbell §385-387**: Vowel harmony (reduction) in medial syllables  
+- **Hogg §3.3.3.2**: Unstressed vowel reduction (confirms suffix-final pattern)
+- **Campbell §49**: Regular lowering of past pl. `-un` to `-on`
