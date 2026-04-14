@@ -1,10 +1,9 @@
 Wrote /Users/nathanhill/capr-v3-working/Germanic/docs/debug_snapshots/oe_mismatch_report.txt
 ed exceptions:       5
-  Phonology (core buckets):    7
+  Phonology (core buckets):    6
   Phonology (other buckets):   26
 
 === CORE BUCKETS ===
-  breaking_missing__expected_eo: 1
   breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
@@ -44,12 +43,6 @@ ed exceptions:       5
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
-
-breaking_missing__expected_eo (1):
-  *fríjōndz -> friiond (expected frēond)
-  >> ISSUE: Breaking to ēo not applied
-  >> LIKELY: Breaking context (before r/l/h + C) not triggering for *e/i
-  >> ACTION: Check breaking rule for front vowels before velars
 
 breaking_missing__expected_eo_got_e (1):
   *wéslon -> weslon (expected weosule)

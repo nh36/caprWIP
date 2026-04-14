@@ -1286,7 +1286,9 @@ define PWGmcDenasalization [
 # Only *frijōndz has this sequence in our dataset. See DEV_NOTES.md for
 # relationship to PWGmcSyllabicJ and expert review flags.
 define PWGmcIjContraction [
-    {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant
+    {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant,
+    # Stressed variant (stress preserved):
+    {*í} {*j} {*ō} -> {*íu} || _ EnglishStarConsonant
 ];
 
 # PWGmc: Syllabic *j after loss of final *-a (R/T §3.1.2, p. 46).
