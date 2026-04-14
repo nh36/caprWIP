@@ -2148,7 +2148,14 @@ define OEWsPalatalUmlaut [
     {*ie} -> {*i} || _ OEHCluster .#.,
     {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*io} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
-    {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel
+    {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    # Stressed variants (stress absorbed: result is short i):
+    {*éo} -> {*i} || _ OEHCluster .#.,
+    {*ío} -> {*i} || _ OEHCluster .#.,
+    {*íe} -> {*i} || _ OEHCluster .#.,
+    {*éo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*ío} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    {*íe} -> {*i} || _ OEHCluster EnglishStarFrontVowel
 ];
 
 # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
