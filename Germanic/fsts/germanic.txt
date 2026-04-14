@@ -2035,7 +2035,11 @@ define OEIUmlautDiphthong [
     {*io} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*īo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*eo} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+    {*ēo} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    # Stressed diphthong variants (stress preserved through i-umlaut):
+    {*éa} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*éo} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*ío} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
 # Loss of *w before unstressed *i (R/T vol.2 §6.7.1, p.258-259; Campbell §406).

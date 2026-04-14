@@ -1,10 +1,7 @@
-Total mismatches: 49
-
-=== INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      2
-  Documented exceptions:       5
+Wrote /Users/nathanhill/capr-v3-working/Germanic/docs/debug_snapshots/oe_mismatch_report.txt
+ed exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   30
+  Phonology (other buckets):   29
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -20,9 +17,9 @@ Total mismatches: 49
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
-  breaking_extra__eo_for_high: 4
+  breaking_extra__eo_for_high: 3
   breaking_extra__ie_for_e: 1
-  breaking_extra__ie_for_i: 1
+  breaking_extra__ie_for_i: 2
   breaking_extra__wrong_form: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
@@ -31,7 +28,6 @@ Total mismatches: 49
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__a_vs_o: 1
-  vowel_quality__ie_vs_eo: 1
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 2
   vowel_quality__unstressed_o_a: 1
@@ -102,17 +98,17 @@ breaking_extra__ea_for_a (1):
 breaking_extra__eo_for_e (1):
   *spéru -> speoru (expected spere)
 
-breaking_extra__eo_for_high (4):
+breaking_extra__eo_for_high (3):
   *knéxtăz -> cneoht (expected cniht)
   *néwun -> neowon (expected nigon)
   *séxs -> seox (expected six)
-  *wéxtiz -> weoht (expected wiht)
 
 breaking_extra__ie_for_e (1):
   *ráukiz -> rīeċ (expected rēc)
 
-breaking_extra__ie_for_i (1):
+breaking_extra__ie_for_i (2):
   *θréjez -> þrīe (expected þrī)
+  *wéxtiz -> wieht (expected wiht)
 
 breaking_extra__wrong_form (1):
   *xláxjăną -> hliehan (expected hlæhhan)
@@ -137,12 +133,6 @@ vowel_quality__a_vs_o (1):
   >> ISSUE: FST has a where target has o (or vice versa)
   >> LIKELY: Pre-nasal rounding (*a > o before nasal), or dialectal
   >> ACTION: Check nasal context; if not pre-nasal, may be dialectal or TSV issue
-
-vowel_quality__ie_vs_eo (1):
-  *smérwijăną -> smeorwan (expected smierwan)
-  >> ISSUE: FST has ie where target has eo (or vice versa)
-  >> LIKELY: i-umlaut applied where back mutation expected, or vice versa
-  >> ACTION: Check umlaut/mutation chronology; ie < eo (i-umlaut) vs eo (breaking/back mutation)
 
 vowel_quality__u_lowering_exception (5):
   *búkkăz -> bocc (expected bucc)
