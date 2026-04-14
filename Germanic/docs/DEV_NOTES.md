@@ -18991,3 +18991,81 @@ Without early i-apocope (wrong):
 With early i-apocope (correct):
 - *júgunθiz → *júgunθi (z-loss) → *júgunθ (early i-apocope) → *jéogunθ (u-lowering) 
   → *jéogūθ (NSL) → ġeoguþ ✓ (no i-umlaut trigger)
+
+---
+
+## §14.11: Medial U-Lowering Chronology — RESEARCH NEEDED (2026-04-14)
+
+### Problem Statement
+
+Campbell §373 states: "u is always well preserved after accented u, e.g. sunu, 
+wudu, dugup." This vowel harmony blocks unstressed *u from lowering to *o when 
+the preceding stressed syllable contains *u.
+
+The challenge is implementing this in the FST cascade where:
+1. **NWGmcULowering** changes stressed *ú → *ó (before non-high vowels)
+2. **OEBreaking** changes *ó → *eo (before r/l/h+C, g/w)
+3. **OEMedUnstressedULowering** runs later — but by then, stressed *ú has 
+   become *éo, so the harmony condition (*u in stressed syllable) is invisible
+
+### Attempted Fix (2026-04-14)
+
+Moved `OEMedUnstressedULowering` earlier in cascade (before `NWGmcULowering`) 
+and added stressed `{*ú}` to the harmony exception.
+
+**Result:** Fixed `*júgunθ → ġeoguþ` but caused regressions:
+- `*búgun → bugun` (expected `bugon`) — harmony over-applied
+- `*xémonų → heofun` (expected `heofon`) — harmony over-applied
+- `*skúbun → sċufun` (expected `sċufon`) — harmony over-applied
+
+### Open Questions
+
+1. **What exactly conditions Campbell's vowel harmony?**
+   - Is it the **underlying** *u in the stressed syllable?
+   - Or the **surface** [u] (after breaking/lowering)?
+   - Campbell's examples (sunu, wudu, duguþ) all have surface [u] in stressed 
+     syllable — do forms with stressed *u → [eo] still trigger harmony?
+
+2. **Why does `*júgunθ → ġeoguþ` preserve medial u, but `*búgun → bugon` lowers it?**
+   - Both have stressed *ú followed by medial *u
+   - Both stressed *ú will become *éo via lowering + breaking
+   - Yet ġeoguþ keeps u, bugon lowers to o
+
+3. **Is the distinction morphological?**
+   - `duguþ, geoguþ`: derived nouns with suffix *-unþi-
+   - `bugon, sċufon`: inflected verb forms (past plural)
+   - Does harmony only apply to certain morphological classes?
+
+4. **Is the distinction phonological?**
+   - `*júgunθ`: C-ú-C-u-C-θ (medial u before dental)
+   - `*búgun`: C-ú-C-u-C (medial u before velar nasal cluster in some forms?)
+   - Different environments for the unstressed *u?
+
+5. **Chronological ordering question**
+   - When exactly did unstressed u-lowering occur historically?
+   - Did it occur before or after stressed u-lowering?
+   - Did harmony apply at a stage when stressed *u was still [u], then get 
+     "frozen" even after the stressed vowel changed?
+
+### Sources to Consult
+
+1. **Campbell §373-374**: Full treatment of unstressed u → o
+2. **Luick §§335-340**: Unstressed vowel development
+3. **Hogg (1992) §§5.99-5.104**: Medial unstressed vowels
+4. **Fulk (2018) §7.31**: Unstressed vowel changes
+5. **R/T vol.2 §6.5**: Unstressed vowel changes in Pre-OE
+
+### Current Status
+
+- Early i-apocope implemented correctly (PWGmcEarlyIApocope)
+- Vowel harmony partially working but over-applying
+- Need to identify the correct conditioning environment
+- May need to mark harmony at one stage but apply lowering at another
+
+### Next Steps
+
+1. Research the exact phonological/morphological conditioning
+2. Check if harmony only applies to certain syllable structures
+3. Consider whether harmony should be applied via a "marking" rule rather 
+   than exception in the lowering rule
+4. Document findings and implement correct solution
