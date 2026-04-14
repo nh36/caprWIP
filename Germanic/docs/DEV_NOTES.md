@@ -18925,3 +18925,69 @@ dugunθ   → duguþ   ✓
   §5.6 (Ingvaeonic NSL in unstressed syllables, with geoguþ example).
 
 ---
+
+## 14.10 Early i-Apocope: Chronology and Implementation (2026-04-14)
+
+### Sources
+
+1. **Brunner §145**: "Ursprüngliches -i war gemeingerm. abgefallen im unmittelbaren 
+   Auslaut und vor -z nach unbetonten Silben (also in dritten und vierten Silben 
+   von der betonten aus gezählt)."
+   
+   Translation: "Original -i was lost in Common Germanic in immediate word-final 
+   position and before -z after unstressed syllables (i.e., in third and fourth 
+   syllables counting from the stressed syllable)."
+
+2. **Brunner §145 Anm. 1**: "Der frühe gemeingerm. Abfall dieser -i ist dadurch 
+   erwiesen, daß sie ae. keinen i-Umlaut mehr bewirkten."
+   
+   Translation: "The early Common Germanic loss of these -i is proven by the fact 
+   that they no longer triggered i-umlaut in OE."
+
+3. **R/T vol.2 p.141**: "*jugunþi > *juguþ > OE geoguþ ~ iuguþ"
+   
+   Shows the apocope as a PWGmc stage change.
+
+### Chronology
+
+The early i-apocope is a **Proto-Germanic** or **early West Germanic** change, 
+occurring WELL BEFORE i-umlaut (which is a late Pre-OE/early OE change). The key 
+evidence is that these lost -i vowels never triggered i-umlaut.
+
+Order of changes:
+1. **PGmc/PWGmc**: Early i-apocope (final -i lost after unstressed syllables in 
+   3rd/4th position from stress)
+2. **NWGmc**: Nasal spirant lengthening (*unθ → *ūθ)
+3. **Pre-OE**: i-umlaut (triggered by -i/-j in following syllable)
+
+### Conditioning
+
+The rule applies when:
+- Final `-i` (or `-iz` after z-deletion)
+- In an unstressed syllable
+- That is the 3rd or 4th syllable from the stressed syllable
+
+With stress marking, we can detect this by looking for:
+- A stressed vowel (primary stress marker)
+- Followed by at least one unstressed syllable + consonants
+- Then final `-i`
+
+### Implementation
+
+The rule must be placed in the **PWGmc** section of the cascade, before nasal 
+spirant lengthening and well before i-umlaut. This requires:
+
+1. Moving OEEarlyIApocope definition to PWGmc section (~line 1300)
+2. Renaming to PWGmcEarlyIApocope (since it's a PWGmc change)
+3. Adding to PWGmcChanges cascade
+4. Updating sandbox trace tool
+
+### Example: *júgunθiz → ġeoguþ
+
+Without early i-apocope (wrong):
+- *júgunθiz → ... → *júgunθi (z-loss) → *jéogunθi (u-lowering) → *jéogūθi (NSL) 
+  → *jéogȳθ (i-umlaut) → †ġeogȳþ ✗
+
+With early i-apocope (correct):
+- *júgunθiz → *júgunθi (z-loss) → *júgunθ (early i-apocope) → *jéogunθ (u-lowering) 
+  → *jéogūθ (NSL) → ġeoguþ ✓ (no i-umlaut trigger)

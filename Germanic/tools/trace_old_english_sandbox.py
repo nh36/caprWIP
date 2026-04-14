@@ -31,8 +31,9 @@ STAGES: List[Tuple[str, str]] = [
     ("BAllophony", "old_english_sandbox_after_b_allophony.bin"),
     ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
     ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
-    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
+    # NOTE: PWGmcEarlyIApocope now part of WestGermanic stage (Stage 2)
     ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
+    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
     ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
     ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),

@@ -112,6 +112,7 @@ define OESandboxAfterWLossBeforeI OESandboxAfterPostVelarWLoss
 
 # ============================================================================
 # Stage 9: I-Umlaut and Related - lines 2366-2371
+# NOTE: PWGmcEarlyIApocope now part of PWGmcChanges (Stage 2), not here.
 # ============================================================================
 define OESandboxAfterIUmlaut OESandboxAfterWLossBeforeI
     .o. OEIUmlaut;
@@ -369,6 +370,7 @@ regex OESandboxAfterWLossBeforeI;
 save stack old_english_sandbox_after_w_loss_before_i.bin
 
 # Stage 9: I-Umlaut and Related
+# NOTE: PWGmcEarlyIApocope is now part of PWGmcChanges at Stage 2
 clear stack
 regex OESandboxAfterIUmlaut;
 save stack old_english_sandbox_after_i_umlaut.bin
