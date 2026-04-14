@@ -1486,7 +1486,10 @@ define OEEwLongContext [
 
 define OEEwLongDiphthong [
     {*e} {*w} -> {*ēo} {*w} || _ OEEwLongContext,
-    {*i} {*w} -> {*ēo} {*w} || _ OEEwLongContext
+    {*i} {*w} -> {*ēo} {*w} || _ OEEwLongContext,
+    # Stressed variants (stress absorbed into length):
+    {*é} {*w} -> {*ēo} {*w} || _ OEEwLongContext,
+    {*í} {*w} -> {*ēo} {*w} || _ OEEwLongContext
 ];
 
 # PGmc *aw before a vowel → OE ēaw (Campbell §272, Hogg §3.27).
@@ -2171,7 +2174,13 @@ define NWGmcNasalSpirantLengthening [
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*o} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative
+    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    # Stressed variants (stress absorbed into length):
+    {*á} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*é} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*í} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*ó} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative
 ];
 
 define NWGmcNasalSpirantLoss [
