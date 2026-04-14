@@ -2431,7 +2431,11 @@ define OERMetathesis [
     {*r} {*u} -> {*u} {*r} || _ {*s} {*t},
     {*r} {*i} -> {*i} {*r} || _ {*s} {*t},
     {*r} {*o} -> {*o} {*r} || _ {*s} {*t},
-    {*r} {*a} -> {*a} {*r} || _ {*s} {*t}
+    {*r} {*a} -> {*a} {*r} || _ {*s} {*t},
+    # Stressed variants (stress preserved):
+    {*r} {*é} -> {*é} {*r} || _ {*s} {*t},
+    {*r} {*ó} -> {*ó} {*r} || _ {*s} {*t},
+    {*r} {*á} -> {*á} {*r} || _ {*s} {*t}
 ];
 
 # Proto-Germanic → Old English pipeline.
