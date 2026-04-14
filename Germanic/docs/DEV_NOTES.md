@@ -19173,3 +19173,71 @@ Possible approaches:
 - **Campbell §385-387**: Vowel harmony (reduction) in medial syllables  
 - **Hogg §3.3.3.2**: Unstressed vowel reduction (confirms suffix-final pattern)
 - **Campbell §49**: Regular lowering of past pl. `-un` to `-on`
+
+---
+
+## §14.13: REVISED ANALYSIS — Vowel Length, Not Position (2026-04-14)
+
+### The Real Phonological Distinction
+
+After further analysis, I was wrong about "final vs. medial position." The user 
+correctly pointed out this was morphological conditioning in disguise.
+
+**The actual distinction is VOWEL LENGTH:**
+
+1. **`*dugunþ-` → `duguþ`** (u preserved)
+   - Campbell §332: Ingvaeonic nasal loss before voiceless spirants
+   - `*-unþ-` → `*-ūþ-` (nasal lost with **compensatory lengthening**)
+   - Long unstressed `*ū` is NOT subject to u-lowering
+   - Later shortened to `u` after u-lowering no longer applies
+
+2. **`*bugun` → `bugon`** (u lowered)
+   - Word-final `-un` — nasal NOT before voiceless spirant
+   - **NO** nasal loss, **NO** compensatory lengthening
+   - Short unstressed `*u` → `*o` by regular lowering
+
+### Ingvaeonic Nasal Loss (Campbell §121, §332)
+
+The rule: nasals are lost before voiceless fricatives (θ, f, s) with 
+compensatory lengthening of the preceding vowel.
+
+Applies to:
+- `*anθ-` → `*āθ-` (e.g., `*gans` → `gōs` 'goose')  
+- `*unθ-` → `*ūθ-` (e.g., `*dugunθ-` → `*dugūθ-` → `duguþ`)
+- `*unf-` → `*ūf-`
+- `*uns-` → `*ūs-`
+
+Does NOT apply to:
+- Word-final `-un#` — no following consonant to trigger the change
+- `-un` before voiced consonants
+
+### Campbell §373 Reinterpreted
+
+When Campbell says "u is always well preserved after accented u, e.g. sunu, 
+wudu, duguþ" — the `u` in `duguþ` is preserved NOT because of harmony with 
+stressed `u`, but because it was originally **long** `*ū` from compensatory 
+lengthening, and long vowels don't lower.
+
+The other examples (`sunu`, `wudu`) have **word-final** `-u` which also 
+doesn't lower — this may be a separate phenomenon (word-final position 
+protection) or the lowering rule specifically targets pre-consonantal position.
+
+### FST Implementation
+
+The fix should NOT add stressed `{*ú}` to the harmony exception. Instead:
+
+1. Implement Ingvaeonic nasal loss at the appropriate chronological point
+2. This creates long `*ū` in suffix `-unþ-` forms
+3. Make u-lowering target only SHORT `*u`, not long `*ū`
+4. Short `-un` (past plural) will lower to `-on`
+5. Long `-ūþ-` (from nasal loss) will NOT lower
+
+This is a properly phonological solution with no morphological conditioning.
+
+### Chronology
+
+1. Ingvaeonic nasal loss: `*-unθ-` → `*-ūθ-` (EARLY)
+2. Unstressed u-lowering: short `*u` → `*o` before consonants (MIDDLE)
+3. Late shortening: long `*ū` → `u` in unstressed syllables (LATE)
+
+The key insight: u-lowering happens AFTER nasal loss but BEFORE late shortening.
