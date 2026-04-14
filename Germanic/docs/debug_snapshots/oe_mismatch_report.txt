@@ -1,10 +1,10 @@
-Total mismatches: 39
+Total mismatches: 44
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    6
-  Phonology (other buckets):   26
+  Phonology (other buckets):   31
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -32,6 +32,7 @@ Total mismatches: 39
   vowel_quality__a_vs_o: 1
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 2
+  vowel_quality__unstressed_e_o: 5
   vowel_quality__unstressed_o_a: 1
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
@@ -137,7 +138,14 @@ vowel_quality__u_lowering_exception (5):
 
 vowel_quality__u_o_alternation (2):
   *wíduwōn -> widowe (expected widuwe)
-  *júgunθ -> ġeogoþ (expected ġeoguþ)
+  *wír-aldu -> weoruld (expected weorold)
+
+vowel_quality__unstressed_e_o (5):
+  *mákōθi -> macoþ (expected maceþ)
+  *búrōθi -> boroþ (expected boreþ)
+  *líznōθi -> liornoþ (expected liorneþ)
+  *líkkōθi -> liccoþ (expected licceþ)
+  *skáwōθi -> sċēawoþ (expected sċēaweþ)
 
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
