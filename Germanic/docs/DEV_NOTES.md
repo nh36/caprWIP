@@ -19361,3 +19361,129 @@ don't count as "bugs" but rather as "forms that underwent analogical leveling."
 - **Campbell §756**: Origin of weak II present endings (distinction between `-ōj-` and non-j forms)
 - **Fulk §12.43**: Historical development of weak class 2, Cowgill's analysis
 - **Ringe & Taylor**: Ingvaeonic extension of class I endings to class II
+
+---
+
+## §15.1: CORRECTION — Weak Class II 3sg Should Be `-aþ`, Not `-eþ` (2026-04-14)
+
+### The Error in Our TSV
+
+The TSV entries for weak class II 3sg forms (rows 2310, 2312, 2314, etc.) claim:
+
+> "Regular phonology: *ōθi → -eþ (i-umlaut of *ō). Attested macaþ is analogical."
+
+**This is BACKWARDS.** The actual regular outcome is `-aþ`, and the `-eþ` forms 
+(where they occur) are the result of vowel harmony or dialectal variation.
+
+### Evidence from Campbell
+
+**Campbell §355.4** lists the weak class II endings with their etymologies:
+
+> "forms of weak verbs of Class II, **lufas, -aþ**, -od, -ad (< **-ōsi, -ōþi**, 
+> -ōd-, -ōd-, § 331.6)"
+
+The 3sg ending is **`-aþ`** (with `-a-`), derived directly from PGmc `*-ōþi`.
+
+**Campbell's paradigm (§754)** shows:
+- 3sg indicative: **`lufaþ`** (with `-a-`)
+- NOT `lufeþ` (with `-e-`)
+
+**Campbell §757** on dialectal variants:
+
+> "2nd and 3rd sg. pres. indic. sometimes has **-o-** in IW-S and KG; Ru.¹ has 
+> frequent **-e-**."
+
+This confirms that `-e-` is a VARIANT (dialectal/late), not the regular outcome.
+The base form has `-a-` (or `-o-` in some dialects).
+
+### Evidence from Ringe & Taylor
+
+**R/T vol.2, p.80** explicitly states:
+
+> "class II weak pres. 2sg. -as(t), 3sg. **-aþ**" have "**stable -a-**"
+
+They contrast this with forms that show `-o-/-a-` alternation, noting that the
+weak class II 3sg has STABLE `-a-`.
+
+### The Sound Change Chain
+
+PGmc `*-ōþi` develops as follows:
+
+1. `*-ōþi` — PGmc 3sg ending (NO `-j-` in this paradigm cell)
+2. `*-ōþ` — early i-apocope deletes final `-i` (for trisyllabic forms)
+3. `*-aþ` — late unstressed `*ō` shortening gives `-a-` (Campbell §355.4)
+
+There is **NO i-umlaut** in the 3sg because:
+- The ending `*-ōþi` never contained `-j-`
+- Even if `-i` survived, short final `-i` after heavy syllables typically doesn't 
+  trigger umlaut in this late position
+
+### Where Does `-eþ` Come From?
+
+The `-e-` in some weak class II forms arises from:
+
+1. **Vowel harmony (Campbell §385)**: When two successive unstressed back vowels
+   occur, the first may reduce to `e`. This explains past plural `-edon` for 
+   `-odon`, and by analogy sg. `-ede`.
+
+2. **Dialectal variation**: Northumbrian and Mercian texts show more `-e-` forms.
+   Campbell §757: "Ru.¹ has frequent -e-."
+
+3. **Analogical leveling**: The umlauted vowel from 1sg/plural forms (which had
+   `-ōj-` → `-i-/-ig-`) may have been generalized to 2sg/3sg in some paradigms.
+
+### What This Means for Our FST
+
+**Our FST output `macoþ` is closer to correct than the TSV's expected `maceþ`!**
+
+| Form | FST output | TSV expected | Actual regular OE |
+|------|------------|--------------|-------------------|
+| `*mákōθi` | `macoþ` | `maceþ` ❌ | `macaþ` ✓ |
+| `*búrōθi` | `boroþ` | `boreþ` ❌ | `boraþ` ✓ |
+| `*líznōθi` | `liornoþ` | `liorneþ` ❌ | `liornaþ` ✓ |
+
+The FST's `-oþ` represents an intermediate stage before final `*ō > a` shortening.
+We need to implement late unstressed `*ō > a` to get the correct `-aþ` output.
+
+### Required FST Fix
+
+Add a rule for late unstressed `*ō` shortening:
+
+```
+# Late unstressed *ō shortening (Campbell §355.4)
+# PGmc *-ōþi, *-ōsi → OE -aþ, -as(t)
+define OELateUnstressedOShortening [
+    {*ō} -> {*a} || EnglishStarConsonant _ EnglishStarConsonant
+];
+```
+
+This should be ordered AFTER i-umlaut but BEFORE final orthographic cleanup.
+
+### TSV Corrections Needed
+
+The following TSV entries need corrected COUNTERPART and NOTES:
+
+| Row | Current | Should be | Note correction |
+|-----|---------|-----------|-----------------|
+| 2310 | `maceþ` | `macaþ` | Regular *ōθi → -aþ. TSV note was wrong. |
+| 2312 | `boreþ` | `boraþ` | Regular *ōθi → -aþ. TSV note was wrong. |
+| 2314 | `liorneþ` | `liornaþ` | Regular *ōθi → -aþ. Forms with -eþ are dialectal. |
+| 2316 | `licceþ` | `liccaþ` | Regular *ōθi → -aþ. |
+| 2318 | `sċēaweþ` | `sċēawaþ` | Regular *ōθi → -aþ. |
+
+### References
+
+- **Campbell §355.4**: Weak II endings `-as, -aþ` (< `-ōsi, -ōþi`)
+- **Campbell §754**: Paradigm shows `lufaþ` (3sg)
+- **Campbell §757**: Dialectal `-o-` and `-e-` variants
+- **Campbell §385**: Vowel harmony `-edon` for `-odon`
+- **R/T vol.2, p.80**: "class II weak pres. 2sg. -as(t), 3sg. -aþ" with "stable -a-"
+- **Fulk §12.41**: Weak class 2 inflection table
+
+### Lesson Learned
+
+The original TSV notes were written assuming that any OE `-e-` must reflect 
+i-umlaut. But in weak class II, the 2sg/3sg endings **never had the `-j-`** that
+would trigger umlaut. The `-j-` appears only in 1sg (`-ōjō`) and plurals 
+(`-ōjanþi`). The `-e-` in dialectal 3sg forms is from vowel harmony or analogy,
+not from regular i-umlaut.
