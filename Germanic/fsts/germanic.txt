@@ -1277,6 +1277,26 @@ define PWGmcDenasalization [
     {*ų} -> {*u} || _ .#.
 ];
 
+# PWGmc Early i-Apocope (Brunner §145, R/T vol.2 p.141)
+# Final *-i lost in 3rd/4th syllables from stress, BEFORE i-umlaut.
+# Brunner §145: "Ursprüngliches -i war gemeingerm. abgefallen... nach unbetonten 
+# Silben (also in dritten und vierten Silben von der betonten aus gezählt)."
+# Brunner §145 Anm.1: "Der frühe gemeingerm. Abfall dieser -i ist dadurch erwiesen,
+# daß sie ae. keinen i-Umlaut mehr bewirkten."
+# 
+# Key evidence: forms like *júgunθiz → ġeoguþ show NO i-umlaut of medial *u,
+# proving the final *-i was already lost before i-umlaut applied.
+# R/T p.141: "*jugunþi > *juguþ > OE geoguþ ~ iuguþ"
+#
+# Pattern: stressed-V + C+ + V + C+ + final *i → delete the *i
+# This targets the 3rd syllable position (σ́.σ.σi).
+define PGmcStarStressedVowel [
+    {*á} | {*é} | {*í} | {*ó} | {*ú}
+];
+define PWGmcEarlyIApocope [
+    {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.
+];
+
 # PWGmc: *ijō contraction (R/T §3.1.5, p. 62; Luick 1914-40: 118).
 # R/T: "A roughly similar change of *ijo to *iu appears to have occurred in
 # the word 'friend' in PWGmc"
@@ -1365,6 +1385,7 @@ define PWGmcJGemination [
 # Gemination creates heavy syllables that block syllabic-j vocalization.
 define PWGmcChanges [
     PWGmcAiMonophthongization
+    .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
     .o. PWGmcFinalOrLowering
     .o. PWGmcCoronalWAssimilation
     .o. PWGmcIjContraction
@@ -1797,19 +1818,23 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 #
 # IMPLEMENTATION:
 # The rule applies u → o in medial position, BUT uses a negative context
-# [EnglishStarVocalic - [{*u}|{*ū}]] to exclude application when preceded
-# by a syllable containing *u or *ū. When the stressed syllable contains
-# *u, the rule does not apply, preserving the unstressed *u.
+# to exclude application when preceded by a syllable containing *u/*ū/*ú.
+# When the stressed syllable contains *u (including stressed *ú), the rule
+# does not apply, preserving the unstressed *u.
+#
+# CHRONOLOGY FIX (2026-04-14): This rule MUST run BEFORE NWGmcULowering
+# (stressed *ú → *ó) so that the vowel harmony check can see the stressed *ú.
+# If run later, the stressed *ú will have become *ó then *eo, and the harmony
+# exception won't match. Campbell §373 examples (sunu, wudu, duguþ) require
+# this chronology.
 #
 # NOTE ON ġeoguþ (see DEV_NOTES.md §14.9 for full documentation):
-# PGmc *jugunþiz lost its final *-i(z) BEFORE i-umlaut due to R/T §6.8.1
-# (apocope of short high vowels after heavy syllable). Campbell §332
-# reconstructs "*dugunþ-, and so geoguþ youth" without the -i. Therefore,
-# PROTOFORM uses *jugunθ (without -iz) as a transponent form. The medial
-# *u is preserved by vowel harmony, not umlauted.
+# PGmc *jugunþiz lost its final *-i(z) BEFORE i-umlaut due to PWGmcEarlyIApocope
+# (Brunner §145, R/T §6.8.1). Campbell §332 reconstructs "*dugunþ-, and so
+# geoguþ youth" without the -i. The medial *u is preserved by vowel harmony.
 #
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
 # ===========================================================================
@@ -2471,6 +2496,10 @@ define EnglishProtoToOE (
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
     .o. OEWsPalatalGlide
+    # CHRONOLOGY FIX (2026-04-14): Medial unstressed u-lowering MUST run BEFORE
+    # stressed u-lowering (NWGmcULowering) so vowel harmony can see stressed *ú.
+    # Campbell §373: "u preserved after accented u" — sunu, wudu, duguþ, geoguþ.
+    .o. OEMedUnstressedULowering
     .o. NWGmcULowering
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
@@ -2542,6 +2571,7 @@ define EnglishProtoToOE (
     .o. OEPostVelarWLoss
     # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ
     .o. OEWLossBeforeI
+    # NOTE: PWGmcEarlyIApocope now in PWGmcChanges (Stage 2), not here.
     # I-umlaut must precede WS palatal diphthongization: *skaiθiz → *skǣθ (i-umlaut)
     # → sċēaþ (WS palatal diph of ǣ → ēa after ʃ). Campbell §185 confirms both
     # sċǣþ and sċēaþ exist; the ēa form requires i-umlauted ǣ as input.
@@ -2561,7 +2591,6 @@ define EnglishProtoToOE (
     .o. OEDentalAssimilation
     .o. OEPreconsonantalDegemination
     .o. OEUnstressedLongVowelShortening
-    .o. OEMedUnstressedULowering
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
@@ -2614,6 +2643,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
+    # CHRONOLOGY FIX (2026-04-14): OEMedUnstressedULowering before NWGmcULowering
+    .o. OEMedUnstressedULowering
     .o. NWGmcULowering
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
@@ -2656,7 +2687,7 @@ define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWe
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
-    .o. OEMedUnstressedULowering
+    # NOTE: OEMedUnstressedULowering moved earlier in pipeline (before NWGmcULowering)
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
