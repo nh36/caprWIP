@@ -1,5 +1,8 @@
-Wrote /Users/nathanhill/capr-v3-working/Germanic/docs/debug_snapshots/oe_mismatch_report.txt
-ed exceptions:       5
+Total mismatches: 39
+
+=== INTERVENTION SUMMARY ===
+  TSV/data fixes needed:      2
+  Documented exceptions:       5
   Phonology (core buckets):    6
   Phonology (other buckets):   26
 
