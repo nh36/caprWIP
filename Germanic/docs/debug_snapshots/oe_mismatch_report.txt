@@ -1,10 +1,10 @@
-Total mismatches: 49
+Total mismatches: 51
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    12
-  Phonology (other buckets):   30
+  Phonology (other buckets):   32
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo: 1
@@ -17,7 +17,7 @@ Total mismatches: 49
   final_vowel_extra: 2
   epenthetic_vowel_missing: 3
   gemination_extra: 2
-  r_metathesis: 1
+  r_metathesis: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_e: 1
@@ -34,7 +34,7 @@ Total mismatches: 49
   vowel_quality__a_vs_o: 1
   vowel_quality__ie_vs_eo: 1
   vowel_quality__u_lowering_exception: 5
-  vowel_quality__u_o_alternation: 1
+  vowel_quality__u_o_alternation: 2
   vowel_quality__unstressed_o_a: 1
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
@@ -97,8 +97,9 @@ gemination_extra (2):
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
   >> ACTION: Research actual OE form; may be borrowing or irregular
 
-r_metathesis (1):
+r_metathesis (2):
   *bréstăną -> brestan (expected berstan)
+  *frústą -> frost (expected forst)
 
 breaking_extra__ea_for_a (1):
   *spárēną -> spearon (expected sparian)
@@ -151,12 +152,13 @@ vowel_quality__ie_vs_eo (1):
 vowel_quality__u_lowering_exception (5):
   *búkkăz -> bocc (expected bucc)
   *fúglăz -> fogol (expected fugol)
-  *rústō -> orst (expected rust)
+  *rústō -> rost (expected rust)
   *wúlfăz -> wolf (expected wulf)
   *wúllō -> woll (expected wull)
 
-vowel_quality__u_o_alternation (1):
+vowel_quality__u_o_alternation (2):
   *wíduwōn -> widowe (expected widuwe)
+  *júgunθ -> ġeogoþ (expected ġeoguþ)
 
 vowel_quality__unstressed_o_a (1):
   *mēnōθz -> mōnoþ (expected mōnaþ)
