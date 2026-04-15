@@ -1758,7 +1758,10 @@ define OEUnstressedLongVowelShortening3 [
     {*ī} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[? - e] | .#.]
 ];
 define OEUnstressedLongVowelShortening4 [
-    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    # R/T vol.2 p.80: weak II 2sg -as(t), 3sg -aþ have "stable a"
+    # Campbell §355.4: "lufas, -aþ" from "-ōsi, -ōþi" (after i-apocope)
+    # The *-ōθu- in nouns like *fiskōþuz → fiscop uses different path (via *u raising)
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
