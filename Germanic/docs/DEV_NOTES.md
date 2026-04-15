@@ -20328,6 +20328,106 @@ Changes made to `Germanic/fsts/germanic.txt`:
 
 **Results:**
 - `*mákōθi → macaþ` ✓ (was `maceþ` with the `*ă` hack)
-- Mismatch count: 56 (down from 194 with broken bin, comparable to previous ~39-56)
+- Mismatch count: 56 (up from 43, due to regressions—see §15.8)
 - The chronology now correctly models Campbell §355: late `*ō` shortening produces 
   `*a` that was never present during fronting
+
+### §15.8 Two-Stage *ō Shortening: Early vs Late (Research)
+
+#### The Problem
+
+The §15.7 reordering fix successfully produces `macaþ` from `*mákōθi`, but it 
+introduced regressions: forms like `*érθōn → eorþæ` (expected `eorþe`) now show 
+`-æ` instead of `-e`. The `*æ → *e` reduction ran too early—before these forms 
+had their `*ō` shortened.
+
+#### Key Finding from Campbell §355
+
+Campbell explicitly distinguishes **two chronologically distinct** shortenings of `*ō`:
+
+> "With regard to all these shortenings, it will be observed that, even when 
+> shortened late, *ō became *a, but that this *a was of too late origin to 
+> become *æ by Anglo-Frisian fronting (§333). Thus *ō if shortened **early** 
+> gives OE *æ(e)*, but if shortened **late** it gives *a*."
+> — Campbell §355, lines 9804-9808
+
+#### Two Shortening Stages
+
+**1. Early Shortening** (`*ō → *a → *æ → e`)
+
+Occurs BEFORE fronting completes. The resulting `*a` undergoes full fronting chain.
+
+Examples from Campbell:
+- Weak noun endings: `*-ōn → -e` (tunge, éage, eorþe)
+- Acc. sg. ō-stems: `*-ōm → -e` (giefe) — §331.5, line 9280
+- Various other unstressed positions
+
+Phonological context: `*ō` before nasals, or in positions that shortened early.
+
+**2. Late Shortening** (`*ō → *a`, stays as `a`)
+
+Occurs AFTER fronting is complete. The resulting `*a` never undergoes fronting.
+
+Examples from Campbell §355, line 9794:
+- Weak II present forms: `*-ōsi → -as`, `*-ōþi → -aþ` (lufas, lufaþ, macaþ)
+- Past tenses: `*-ōd- → -od/-ad` (lufode/lufade)
+
+Phonological context: `*ō` before `*θ`, `*s` in weak II verbal endings.
+
+#### Supporting Evidence
+
+**Campbell §331.5** (lines 9279-9284):
+> "But in all areas *ō > *a when a nasal had followed, e.g. OE a.s. giefe < *-æ < 
+> *-a < *-ōm, and so n.s.f. of weak nouns, tunge < *-ōn. This indicates that at 
+> the time of shortening the vowel was nasalized by influence of the lost nasal."
+
+This shows weak noun `-ōn` shortened early enough for the `*a` to front.
+
+**Campbell §333** (lines 9387-9388):
+> "Except before nasals, unaccented *a > *æ (later e, §369), e.g. n.s.f. and n. 
+> of weak nouns, OE tunge, éage"
+
+Confirms the fronting applied to weak noun endings.
+
+**Ringe/Taylor vol.2 p.80** (lines 4358-4359):
+> "class II weak pres. 2sg. -as(t), 3sg. -aþ and the second syllable of monaþ 
+> 'month' have **stable a**"
+
+The term "stable a" indicates this `*a` never participated in fronting alternations.
+
+#### FST Implementation Plan
+
+The current approach (moving all fronting early) is wrong because it assumes 
+all `*ō` shortening is late. We need to model the two-stage process:
+
+**Option A: Context-Sensitive Shortening**
+- Create `OEEarlyOShortening`: `*ō → *a` before nasals (weak nouns)
+- Keep `OELateOShortening`: `*ō → *a` before `*θ`, `*s` (weak II verbs)
+- Order: Early shortening → Fronting → Late shortening
+
+**Option B: Revert and Use Morphological Markers**
+- Revert to original pipeline order
+- Mark weak II `*ō` distinctly in input (e.g., `*ō̆` or use `*ă` in input)
+- This `*ō` shortens to `*a` that doesn't front
+
+**Option C: Two-Pass Fronting**
+- Run fronting once early (catches early-shortened `*a`)
+- Run `*ō` shortening
+- Run fronting again (but with condition to skip weak II contexts)
+
+#### Recommendation
+
+Option A (context-sensitive shortening) is the most historically accurate and 
+cleanest approach. The key insight is that the environments are distinguishable:
+- Before nasals = early shortening
+- Before dentals in weak II = late shortening
+
+#### Regressions Identified (56 vs 43 mismatches)
+
+**9 new mismatches** (regressions):
+- `-æ` vs `-e` endings: `*érθōn → eorþæ`, `*fádēr → fædær`, `*fláskōn → flascæ`, 
+  `*nēdrōn → nǣdræ`, `*xábēθi → hæfæþ`
+- Other: `*mízdō`, `*táixōn`, `*téxun`, `*wír-aldu`
+
+**8 items fixed** (no longer mismatching):
+- `*fédwōr`, `*fríjōndz`, `*fúnxstiz`, `*gánsz`, `*júgunθ`, `*kéwwăną`, `*mēnōθz`, `*násō`
