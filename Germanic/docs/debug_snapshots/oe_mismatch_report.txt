@@ -1,10 +1,10 @@
-Total mismatches: 43
+Total mismatches: 56
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    6
-  Phonology (other buckets):   30
+  Phonology (other buckets):   43
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -15,6 +15,7 @@ Total mismatches: 43
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
   epenthetic_vowel_missing: 3
+  syncopation_missing: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -29,9 +30,9 @@ Total mismatches: 43
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
+  vowel_quality__ae_e_alternation: 18
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 2
-  vowel_quality__unstressed_vowel: 6
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
 --- final_n_missing sub-buckets ---
@@ -67,7 +68,7 @@ palatalization_missing (1):
   >> ACTION: Check palatalization environments; may be suffix-related
 
 final_vowel_extra (2):
-  *láimōn -> lāfe (expected lām)
+  *láimōn -> lāfæ (expected lām)
   *wéstănē -> westne (expected west)
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
@@ -78,6 +79,12 @@ epenthetic_vowel_missing (3):
   *stráwjăną -> strewan (expected strewian)
   *θístilăz -> þistl (expected þistel)
 
+syncopation_missing (1):
+  *táixōn -> tāæ (expected tā)
+  >> ISSUE: FST kept medial vowel that target syncopates
+  >> LIKELY: High vowel syncope rule not applying (meoloc→meolc)
+  >> ACTION: Check syncope rule for unstressed high vowels
+
 gemination_extra (2):
   *spénnilō -> spinnlu (expected spindle)
   *tíkkô -> ticca (expected ticia)
@@ -86,7 +93,7 @@ gemination_extra (2):
   >> ACTION: Research actual OE form; may be borrowing or irregular
 
 breaking_extra__ea_for_a (1):
-  *spárēną -> spearen (expected sparian)
+  *spárēną -> spearan (expected sparian)
 
 breaking_extra__eo_for_e (1):
   *spéru -> speoru (expected spere)
@@ -116,10 +123,17 @@ a_restoration_needed (1):
   >> ACTION: Check a-restoration scope — may miss some contexts (e.g., nafola)
 
 back_expected_front_out__other (1):
-  *swéstēr -> swester (expected swustor)
+  *swéstēr -> swestær (expected swustor)
   >> ISSUE: FST produced front vowel, target has back vowel
   >> LIKELY: Dialectal/analogical form, or vowel coloring not modeled
   >> ACTION: Research if target is regular or a variant; may need u-coloring rule
+
+vowel_quality__ae_e_alternation (18):
+  *nēdrōn -> nǣdræ (expected nǣdre)
+  *érθōn -> eorþæ (expected eorþe)
+  *fádēr -> fædær (expected fæder)
+  *fláskōn -> flascæ (expected flasce)
+  *xábēθi -> hæfæþ (expected hæfeþ)
 
 vowel_quality__u_lowering_exception (5):
   *búkkăz -> bocc (expected bucc)
@@ -129,15 +143,8 @@ vowel_quality__u_lowering_exception (5):
   *wúllō -> woll (expected wull)
 
 vowel_quality__u_o_alternation (2):
-  *wíduwōn -> widowe (expected widuwe)
+  *wíduwōn -> widowæ (expected widuwe)
   *wír-aldu -> weoruld (expected weorold)
-
-vowel_quality__unstressed_vowel (6):
-  *mēnōθz -> mōneþ (expected mōnaþ)
-  *mákōθi -> maceþ (expected macaþ)
-  *búrōθi -> boreþ (expected boraþ)
-  *líznōθi -> liorneþ (expected liornaþ)
-  *líkkōθi -> licceþ (expected liccaþ)
 
 final_vowel_missing__weak_noun_like (4):
   *fūri -> fȳr (expected fȳre)
