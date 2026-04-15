@@ -19729,3 +19729,110 @@ that actually yields OE `nosu`. This is a TSV data correction, not an FST change
 
 **Note:** The `*ō → *a` rule change we made earlier is correct for weak verb endings.
 This regression exposed a pre-existing etymological error in the TSV.
+
+---
+
+## §15.4 FST Rule Fix: OEUnstressedLongVowelShortening4 Context (2026-04-15)
+
+### The Problem
+
+After implementing the `*ō → *a` sound change value fix (§15.2), we found that the
+rule still wasn't applying to weak verb class II 3sg forms. Trace analysis showed:
+
+```
+--- make (3sg) ---
+PROTO: *mákōθi
+EXPECTED: macaþ
+OUTPUTS: maceþ
+
+ProtoInput: *m*á*k*ō*θ*i
+...
+ARestoration: *m*a*k*ō*θ
+...
+UnstressedLongVowelShortening [carry]: *m*a*k*ō*θ   ← RULE FAILED!
+...
+```
+
+The `[carry]` notation indicates the rule **did not fire** — the form was carried
+through unchanged with `*ō` still present.
+
+### Root Cause Analysis
+
+The original rule:
+```foma
+{*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+```
+
+This context means: "Apply after a vowel followed by one or more consonants, with
+nothing following." The trailing underscore `_` with no following context means
+**word-final position only**.
+
+But in `*m*a*k*ō*θ`:
+- The `*ō` is in **medial** position (followed by `*θ`)
+- The form at this stage is `makōθ`, not `makō`
+- The rule context doesn't match because `*ō` is not word-final
+
+### Historical Forms at This Stage
+
+By the time we reach UnstressedLongVowelShortening, the forms look like:
+
+| Protoform | At this stage | Issue |
+|-----------|---------------|-------|
+| `*mákōθi` | `*makōθ` | `*ō` followed by `*θ` (medial) |
+| `*búrōθi` | `*borōθ` | `*ō` followed by `*θ` (medial) |
+| `*mēnōθz` | `*mēnōθ` | `*ō` followed by `*θ` (medial) |
+| `*násō` | `*nasu` | This form worked because final `*ō` → `*u` first (different path) |
+
+The weak II verb endings (`*-ōθi`) and `mōnaþ` (`*-ōθz`) have `*ō` in **medial**
+position at this stage, not final. The final consonant `*θ` is still present.
+
+### Why *násō Worked Differently
+
+For `*násō → nosu` (now fixed to `*núsō`):
+1. The `*ō` was in **final** position
+2. `NWGmcFinalLongORaising` applied: `*ō → *u` (final position)
+3. Then medial `*u` lowered to `*o` (via u-lowering)
+4. Result: `nosu`
+
+This is a different sound change path — final `*ō` raising to `*u` is separate
+from medial/final `*ō` shortening to `*a`.
+
+### The Fix
+
+Extend the rule context to match `*ō` in both final and medial unstressed positions:
+
+**Before:**
+```foma
+{*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+```
+
+**After:**
+```foma
+{*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+```
+
+The added `[EnglishStarConsonant | EnglishPalatalConsonant]*` allows zero or more
+trailing consonants after the `*ō`:
+- Zero consonants = final position (as before)
+- One+ consonants = medial position (new coverage)
+
+### Affected Forms
+
+This fix should resolve all 4 weak II 3sg regressions:
+1. `*mákōθi → macaþ` (currently produces `maceþ`)
+2. `*búrōθi → boraþ` (currently produces `boreþ`)
+3. `*líkkōθi → liccaþ` (currently produces `licceþ`)
+4. `*líznōθi → liornaþ` (currently produces `liorneþ`)
+
+Plus the `mōnaþ` regression:
+5. `*mēnōθz → mōnaþ` (currently produces `mōneþ`)
+
+### Risk Assessment
+
+**Low risk.** The change only broadens when the rule fires — it doesn't change
+what the rule does when it fires (still `*ō → *a`). The original final-position
+cases are still covered by the new context (via zero trailing consonants).
+
+Forms that need `*ō → *o` (like `fiscop < *fiskōþuz`) go through a different path:
+the `-u-` following `*ō` triggers raising first (`*ō → *u` → `*o`), so they never
+reach this rule with `*ō` intact.
