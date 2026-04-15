@@ -1767,9 +1767,9 @@ define OEUnstressedLongVowelShortening4 [
     # Campbell §355: "this a was of too late origin to become æ by Anglo-Frisian fronting"
     # The *-ōθu- in nouns like *fiskōþuz → fiscop uses different path (via *u raising)
     # Rule applies to *ō in both final AND medial unstressed positions (see §15.4)
-    # OUTPUT: *ă (not *a) so that OEUnstressedAFronting does not apply (see §15.5)
-    # The *ă → *a conversion happens later in OEWeakTailReduction1a, after fronting
-    {*ō} -> {*ă} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+    # CHRONOLOGY FIX (§15.7): This rule now runs AFTER OEUnstressedAFronting/WeakTailReduction3,
+    # so the *a output is never present during fronting. Plain *a is correct here.
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
 ];
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
@@ -2002,7 +2002,17 @@ define OEWeakTailReduction3 [
 # NOTE: OESecondaryNasalization removed from here and moved to main pipeline
 # before OEFinalSchwaApocope. It must run while final vowels are still present
 # to distinguish infinitive *-anąˈ from participle *-anăz. See lines 1580-1597.
-define OEWeakTailReduction OEUnstressedAFronting .o. OEWeakTailReduction1 .o. OEWeakTailReduction2 .o. OEWeakTailReduction3;
+
+# CHRONOLOGY FIX (§15.7): Split OEWeakTailReduction into early and late phases.
+# The fronting chain (*a → *æ → *e) must complete BEFORE OEUnstressedLongVowelShortening,
+# so that *a from late *ō shortening is never present during fronting.
+# Campbell §355: "this a was of too late origin to become æ by Anglo-Frisian fronting"
+
+# Early phase: fronting chain (runs BEFORE long vowel shortening)
+define OEUnstressedFrontingChain OEUnstressedAFronting .o. OEWeakTailReduction3;
+
+# Late phase: remaining reductions (runs AFTER long vowel shortening)
+define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
@@ -2603,6 +2613,10 @@ define EnglishProtoToOE (
     .o. OELAdjacentSyncope
     .o. OEDentalAssimilation
     .o. OEPreconsonantalDegemination
+    # CHRONOLOGY FIX (§15.7): OEUnstressedFrontingChain (*a → *æ → *e) must run
+    # BEFORE OEUnstressedLongVowelShortening, so that *a from late *ō shortening
+    # is never present during fronting. Campbell §355 confirms this chronology.
+    .o. OEUnstressedFrontingChain
     .o. OEUnstressedLongVowelShortening
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
@@ -2699,6 +2713,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
+    # CHRONOLOGY FIX (§15.7): OEUnstressedFrontingChain must run before shortening
+    .o. OEUnstressedFrontingChain
     .o. OEUnstressedLongVowelShortening
     # NOTE: OEMedUnstressedULowering runs after NasalSpirantLoss (see §14.13)
     .o. OEUnstressedIMarking
