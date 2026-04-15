@@ -404,6 +404,10 @@ define pgrmWeakTailVowel [
     ō:{*ō} n:{*n} d:{*d} z:{*z} |
     ō:{*ō} r:{*r} e:{*e} z:{*z} |
     ō:{*ō} θ:{*θ} i:{*i} |
+    # 3sg after early i-apocope: *-ōθ (needed for vowel shortening to apply)
+    ō:{*ō} θ:{*θ} |
+    # 3sg after vowel shortening: *-aθ (output of *ō → *a shortening)
+    a:{*a} θ:{*θ} |
     ō:{*ō} θ:{*θ} z:{*z} |
     ō:{*ō} z:{*z} |
     i:{*i} θ:{*θ} ō:{*ō} |
@@ -1761,7 +1765,8 @@ define OEUnstressedLongVowelShortening4 [
     # R/T vol.2 p.80: weak II 2sg -as(t), 3sg -aþ have "stable a"
     # Campbell §355.4: "lufas, -aþ" from "-ōsi, -ōþi" (after i-apocope)
     # The *-ōθu- in nouns like *fiskōþuz → fiscop uses different path (via *u raising)
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    # Rule applies to *ō in both final AND medial unstressed positions (see §15.4)
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
 ];
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
