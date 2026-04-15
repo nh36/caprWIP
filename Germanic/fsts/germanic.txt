@@ -1764,9 +1764,12 @@ define OEUnstressedLongVowelShortening3 [
 define OEUnstressedLongVowelShortening4 [
     # R/T vol.2 p.80: weak II 2sg -as(t), 3sg -aþ have "stable a"
     # Campbell §355.4: "lufas, -aþ" from "-ōsi, -ōþi" (after i-apocope)
+    # Campbell §355: "this a was of too late origin to become æ by Anglo-Frisian fronting"
     # The *-ōθu- in nouns like *fiskōþuz → fiscop uses different path (via *u raising)
     # Rule applies to *ō in both final AND medial unstressed positions (see §15.4)
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+    # OUTPUT: *ă (not *a) so that OEUnstressedAFronting does not apply (see §15.5)
+    # The *ă → *a conversion happens later in OEWeakTailReduction1a, after fronting
+    {*ō} -> {*ă} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
 ];
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _

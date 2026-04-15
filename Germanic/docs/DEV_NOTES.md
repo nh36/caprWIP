@@ -19836,3 +19836,365 @@ cases are still covered by the new context (via zero trailing consonants).
 Forms that need `*ō → *o` (like `fiscop < *fiskōþuz`) go through a different path:
 the `-u-` following `*ō` triggers raising first (`*ō → *u` → `*o`), so they never
 reach this rule with `*ō` intact.
+
+## §15.5 BUG ANALYSIS: Weak II 3sg -aþ → -eþ Regression (2026-04-15)
+
+### The Problem
+
+After extending `OEUnstressedLongVowelShortening4` to apply medially (§15.4), we
+expected weak class II 3sg forms like `*mákōθi` to produce `macaþ`. Instead, the
+FST produces `maceþ` — the `-a-` from `*ō` shortening is being spuriously fronted
+to `-e-`.
+
+**Expected:** `*mákōθi` → `macaþ`  
+**Actual:** `*mákōθi` → `maceþ`
+
+This is a 4-form regression affecting:
+- `*mákōθi → maceþ` (expected `macaþ`)
+- `*búrōθi → boreþ` (expected `boraþ`)
+- `*líkkōθi → licceþ` (expected `liccaþ`)
+- `*líznōθi → liorneþ` (expected `liornaþ`)
+
+### Debugging Trace
+
+A step-by-step trace through the main pipeline reveals:
+
+| Stage | Output | Notes |
+|-------|--------|-------|
+| After PWGmcChanges | `*m*á*k*ō*θ` | Early i-apocope deleted `-i` ✓ |
+| After I-umlaut | `*m*a*k*ō*θ` | No umlaut (no trigger) ✓ |
+| After OEUnstressedLongVowelShortening | `*m*a*k*a*θ` | `*ō → *a` applied ✓ |
+| After OEUnstressedIMarking | `*m*a*k*a*θ` | No change ✓ |
+| After OEMedUnstressedILowering | `*m*a*k*a*θ` | No change ✓ |
+| After OEPrefixIReduction | `*m*a*k*a*θ` | No change ✓ |
+| After OEPrefixAReduction | `*m*a*k*a*θ` | No change ✓ |
+| **After OEWeakTailReduction** | **`*m*a*k*e*θ`** | **BUG: `-a-` → `-e-`** |
+
+The bug occurs in `OEWeakTailReduction`, specifically in its sub-rules.
+
+### Root Cause Analysis
+
+`OEWeakTailReduction` is a composite rule (line 2002 of germanic.txt):
+
+```foma
+define OEWeakTailReduction OEUnstressedAFronting 
+    .o. OEWeakTailReduction1 
+    .o. OEWeakTailReduction2 
+    .o. OEWeakTailReduction3;
+```
+
+The problematic sub-rules are:
+
+**1. OEUnstressedAFronting (line 1972-1974):**
+```foma
+define OEUnstressedAFronting [
+    {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+];
+```
+This converts `*a` to `*æ` when it follows V+C+ and precedes C.
+
+For `*m*a*k*a*θ`:
+- The second `*a` matches: after `*a*k` (V+C) and before `*θ` (C)
+- Result: `*m*a*k*æ*θ`
+
+**2. OEWeakTailReduction3 (line 1996-1998):**
+```foma
+define OEWeakTailReduction3 [
+    {*æ} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+```
+This converts `*æ` to `*e` after V+C+.
+
+For `*m*a*k*æ*θ`:
+- The `*æ` matches: after `*a*k` (V+C)
+- Result: `*m*a*k*e*θ`
+
+### Historical Analysis
+
+The question is: **Should the `-a-` from `*ō` shortening undergo unstressed fronting?**
+
+#### Evidence that it should NOT front:
+
+1. **Campbell §355.4** gives the weak II paradigm with "stable a":
+   - "lufas, -aþ" from "-ōsi, -ōþi"
+   - The forms are spelled with `a`, not `e`
+
+2. **R/T vol.2 p.80** states weak II 2sg/3sg have "stable a":
+   - The `-a-` in these forms is historically from `*-ō-`, not original `*-a-`
+
+3. **Chronological argument:**
+   - Unstressed fronting `*a → *æ` is an early Anglo-Frisian change
+   - Unstressed `*ō → *a` shortening is a later OE change
+   - The `*a` from `*ō` shortening was never present when fronting applied
+
+4. **Phonological argument:**
+   - Original `*a` in `-anaz` (participle ending) → fronted to `-æn-` → `-en`
+   - But `*ō` in `-ōθi` → shortened to `-a-` → stays `-a-` (no fronting)
+   - Different sources, different outcomes
+
+#### The key distinction:
+
+| Source | Example | Outcome | Why |
+|--------|---------|---------|-----|
+| Original PGmc `*a` | `*fundanaz` | `-en` | Present at fronting stage |
+| Shortened `*ō → *a` | `*makōθi` | `-aþ` | `*ō` still long at fronting stage |
+
+### Potential Solutions
+
+#### Option A: Use `*ă` (breve-a) for `*ō` Shortening
+
+Change `OEUnstressedLongVowelShortening4` to produce `*ă` instead of `*a`:
+
+```foma
+# Before (current):
+{*ō} -> {*a} || ...
+
+# After (proposed):
+{*ō} -> {*ă} || ...
+```
+
+**Pros:**
+- Clean implementation using existing infrastructure
+- `*ă` already defined as "reduced/protected a" that skips `OEUnstressedAFronting`
+- `OEWeakTailReduction1a` converts `*ă → *a` AFTER fronting has applied
+- Minimal code change
+
+**Cons:**
+- Semantic shift: `*ă` originally meant "schwa-colored a" (from input notation)
+- May cause issues if `*ă` has other special behaviors we're not aware of
+
+#### Option B: Reorder Rules
+
+Move `OEUnstressedLongVowelShortening` to run AFTER `OEWeakTailReduction`:
+
+**Pros:**
+- `*ō` wouldn't become `*a` until after fronting has already applied
+
+**Cons:**
+- May break other sound changes that depend on current ordering
+- Shortening should logically precede weak-tail reduction
+- High risk of cascading breakage
+
+#### Option C: Add Blocking Context to OEUnstressedAFronting
+
+Modify `OEUnstressedAFronting` to not apply before `*θ`:
+
+```foma
+{*a} -> {*æ} || EnglishStarVocalic [C]+ _ [C - {*θ}]
+```
+
+**Pros:**
+- Directly targets the problematic context
+
+**Cons:**
+- Ad-hoc and unprincipled
+- May block legitimate fronting in other `-aθ-` sequences
+- Treats the symptom, not the cause
+
+#### Option D: Introduce New Symbol for "Stable A"
+
+Create a new symbol like `*ạ` (underdot-a) for "stable a from *ō":
+
+```foma
+{*ō} -> {*ạ} || ...  # Shortening produces stable-a
+# Then later:
+{*ạ} -> {*a}         # Stable-a becomes regular a (after fronting)
+```
+
+**Pros:**
+- Most phonologically explicit
+- Clear semantic distinction
+
+**Cons:**
+- Requires adding new symbol to all sigma definitions
+- More complex implementation
+- `*ă` already serves this purpose
+
+### Recommended Solution: Option A
+
+Use `*ă` for `*ō` shortening. The change flow would be:
+
+1. `*mákōθi` enters pipeline
+2. PWGmcEarlyIApocope deletes `-i`: `*mákōθ`
+3. `OEUnstressedLongVowelShortening4`: `*ō → *ă` → `*mákăθ`
+4. `OEUnstressedAFronting`: `*a → *æ` — does NOT match `*ă`!
+5. `OEWeakTailReduction1a`: `*ă → *a` → `*mákáθ`
+6. Surface: `macaþ` ✓
+
+This leverages the existing `*ă` infrastructure designed precisely for this purpose:
+protecting vowels from premature fronting.
+
+### Verification Needed Before Implementation
+
+1. **Check all uses of `*ă` in the pipeline** — ensure changing shortening output
+   won't interfere with other rules that expect `*a` from `*ō`
+
+2. **Check if any rules specifically need `*a` (not `*ă`) from `*ō` shortening**
+
+3. **Test with full mismatch report** after change to verify no regressions
+
+### References
+
+- Campbell §355.4: weak class II paradigm "lufas, -aþ"
+- R/T vol.2 p.80: "stable a" in weak II inflections
+- germanic.txt lines 1764-1770: `OEUnstressedLongVowelShortening4`
+- germanic.txt lines 1972-1974: `OEUnstressedAFronting`
+- germanic.txt lines 1985-1988: `OEWeakTailReduction1`
+- germanic.txt lines 1996-1998: `OEWeakTailReduction3`
+
+### Research Findings: Chronology of *ō Shortening vs. *a Fronting
+
+#### Campbell §355 (lines 9804-9810) — The Definitive Statement
+
+Campbell explicitly states the chronological relationship:
+
+> "With regard to all these shortenings, it will be observed that, **even when shortened
+> late, ō became a**, but that **this a was of too late origin to become æ by Anglo-Frisian
+> fronting** (§ 333). Thus **ō if shortened early gives OE æ(e), but if shortened late it
+> gives a**."
+
+This is the key evidence. Campbell distinguishes two paths:
+
+| Source | Shortening Time | Fronting? | OE Outcome |
+|--------|-----------------|-----------|------------|
+| Early `*ō` shortening | Early | Yes | `æ → e` |
+| Late `*ō` shortening | Late | No | `a` |
+
+The weak II endings `-as(t), -aþ` (from `-ōsi, -ōþi`) belong to the **late** category.
+They were shortened **after** fronting had ceased to operate.
+
+#### Campbell §355.4 (lines 9793-9795) — The Specific Forms
+
+Campbell lists the weak II endings explicitly:
+
+> "forms of weak verbs of Class II, **lufas, -aþ, -od, -ad** (< -ōsi, -ōþi, -ōd-, -ōd-, § 331.6)"
+
+These forms have `-a-`, not `-e-`. The `*ō` in these endings was shortened **late**,
+meaning after fronting had stopped being productive.
+
+#### R/T vol.2 p.80 (lines 4358-4359) — "Stable a"
+
+R/T confirms the stability of this `-a-`:
+
+> "class II weak pres. 2sg. -as(t), 3sg. -aþ and the second syllable of monaþ 'month'
+> have **stable a**, while -or has stable o"
+
+The term "stable a" indicates this vowel does not alternate with `æ/e` — it was
+never subject to fronting because the shortening happened too late.
+
+#### Hogg (1992) p.120 — Unstressed First Fronting
+
+Hogg confirms that First Fronting affected unstressed syllables too:
+
+> "By First Fronting (see §3.3.4.1) /a/ became /æ/ as in stressed syllables"
+
+This means original unstressed `*a` → `*æ` → `e` (via the usual unstressed merger).
+But `*ō` → `*a` (late shortening) never underwent this change.
+
+#### The Chronology
+
+Based on the sources:
+
+```
+Stage 1: First Fronting (Anglo-Frisian Brightening)
+         *a → *æ (both stressed and unstressed)
+         
+Stage 2: [Other changes]
+
+Stage 3: Unstressed Long Vowel Shortening (Late)
+         *ō → *a (in positions like -ōsi, -ōþi)
+         
+Stage 4: Unstressed *æ → *e
+         But *a from late shortening is NOT affected
+```
+
+The `*a` from Stage 3 was never present during Stage 1, so it never fronted.
+
+#### Implications for the FST
+
+The FST currently applies these changes in the wrong order:
+
+1. `OEUnstressedLongVowelShortening4`: `*ō → *a`
+2. `OEUnstressedAFronting`: `*a → *æ`  ← INCORRECTLY matches the `*a` from (1)
+3. `OEWeakTailReduction3`: `*æ → *e`
+
+**The fix must ensure that `*a` from `*ō` shortening does not undergo fronting.**
+
+#### Recommended Implementation
+
+**Option A (confirmed by research):** Use `*ă` for late `*ō` shortening.
+
+The `*ă` symbol represents a "protected" vowel that:
+- Is defined in the existing sigma
+- Skips `OEUnstressedAFronting` (which only targets `{*a}`)
+- Converts to `*a` via `OEWeakTailReduction1a` AFTER fronting has applied
+
+Change `OEUnstressedLongVowelShortening4`:
+```foma
+# Before:
+{*ō} -> {*a} || ...
+
+# After:
+{*ō} -> {*ă} || ...
+```
+
+This correctly models the late chronology: the vowel from `*ō` shortening was
+never available for fronting, which is now represented by the fact that `*ă`
+is not subject to the fronting rule.
+
+### Verification: Using *ă for Late *ō Shortening
+
+The `*ă` symbol is already used in the FST to represent "weak/reduced a" in endings:
+- Infinitive `-ăną`, `-jăną`
+- Participle `-ănăz`
+- Weak nominative `-ăz`
+- etc.
+
+**Crucially, `*ă` is designed to skip fronting:**
+
+1. `OEUnstressedAFronting` (line 1972-1974) targets only `{*a}`:
+   ```foma
+   {*a} -> {*æ} || EnglishStarVocalic [C]+ _ [C]
+   ```
+   It does NOT match `{*ă}`.
+
+2. `OEWeakTailReduction1a` (line 1985) converts `*ă → *a`:
+   ```foma
+   [{*ă} -> {*a}]
+   ```
+   This runs AFTER fronting (inside `OEWeakTailReduction`).
+
+3. The rule order in `OEWeakTailReduction` (line 2002) is:
+   ```
+   OEUnstressedAFronting .o. OEWeakTailReduction1 .o. ...
+   ```
+   Fronting runs first, THEN `*ă → *a`.
+
+**This is exactly the mechanism needed for late `*ō` shortening.**
+
+By changing `OEUnstressedLongVowelShortening4` to produce `*ă`:
+- The shortened vowel escapes fronting (because fronting doesn't target `*ă`)
+- It later becomes `*a` via `OEWeakTailReduction1a`
+- This correctly models Campbell's "late shortening" that was "too late to undergo fronting"
+
+### Implementation Confirmation
+
+The fix is minimal and well-founded:
+
+**File:** `Germanic/fsts/germanic.txt`  
+**Line:** 1769 (inside `OEUnstressedLongVowelShortening4`)
+
+**Before:**
+```foma
+{*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+```
+
+**After:**
+```foma
+{*ō} -> {*ă} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+```
+
+**Rationale:**
+- The `*ă` symbol already exists for this exact purpose
+- The rule ordering is already correct
+- This accurately models the historical chronology (Campbell §355)
