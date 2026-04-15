@@ -49,7 +49,12 @@ define OESandboxAfterNasalSpirantLengthening OESandboxAfterNWGmcLongENasalRoundi
     .o. NWGmcNasalSpirantLengthening;
 define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss;
-define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterNasalSpirantLoss
+# CRITICAL: OEMedUnstressedULowering runs HERE (after NasalSpirantLoss), NOT in Stage 11!
+# Main pipeline line 23: .o. OEMedUnstressedULowering
+# This is U-lowering (different from I-lowering which runs later in Stage 11)
+define OESandboxAfterMedUnstressedULowering OESandboxAfterNasalSpirantLoss
+    .o. OEMedUnstressedULowering;
+define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterMedUnstressedULowering
     .o. NWGmcPreconsonantalXLoss;
 
 # ============================================================================
@@ -147,12 +152,13 @@ define OESandboxAfterPreconsonantalDegemination OESandboxAfterDentalAssimilation
 
 # ============================================================================
 # Stage 11: Unstressed Vowel Changes - lines 2381-2386
+# NOTE: OEMedUnstressedULowering is in Stage 4 (after NasalSpirantLoss), NOT here!
+# This stage has OEMedUnstressedILowering (I-lowering), which is a DIFFERENT rule.
+# Main pipeline order: UnstressedLongVowelShortening → UnstressedIMarking → MedUnstressedILowering
 # ============================================================================
 define OESandboxAfterUnstressedLongVowelShortening OESandboxAfterPreconsonantalDegemination
     .o. OEUnstressedLongVowelShortening;
-define OESandboxAfterMedUnstressedULowering OESandboxAfterUnstressedLongVowelShortening
-    .o. OEMedUnstressedULowering;
-define OESandboxAfterUnstressedIMarking OESandboxAfterMedUnstressedULowering
+define OESandboxAfterUnstressedIMarking OESandboxAfterUnstressedLongVowelShortening
     .o. OEUnstressedIMarking;
 define OESandboxAfterMedUnstressedILowering OESandboxAfterUnstressedIMarking
     .o. OEMedUnstressedILowering;
@@ -276,6 +282,11 @@ save stack old_english_sandbox_after_nasal_spirant_lengthening.bin
 clear stack
 regex OESandboxAfterNasalSpirantLoss;
 save stack old_english_sandbox_after_nasal_spirant_loss.bin
+
+# OEMedUnstressedULowering runs here (after NasalSpirantLoss), NOT in Stage 11!
+clear stack
+regex OESandboxAfterMedUnstressedULowering;
+save stack old_english_sandbox_after_med_unstressed_u_lowering.bin
 
 clear stack
 regex OESandboxAfterNWGmcPreconsonantalXLoss;
@@ -429,9 +440,8 @@ clear stack
 regex OESandboxAfterUnstressedLongVowelShortening;
 save stack old_english_sandbox_after_unstressed_long_vowel_shortening.bin
 
-clear stack
-regex OESandboxAfterMedUnstressedULowering;
-save stack old_english_sandbox_after_med_unstressed_u_lowering.bin
+# NOTE: OEMedUnstressedULowering save is now in Stage 4 (after NasalSpirantLoss)
+# Stage 11 only has OEMedUnstressedILowering (I-lowering)
 
 clear stack
 regex OESandboxAfterUnstressedIMarking;
