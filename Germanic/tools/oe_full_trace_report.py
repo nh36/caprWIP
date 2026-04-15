@@ -445,6 +445,7 @@ def write_report(
     bin_path: Path,
     bin_dir: Path,
     output_path: Path,
+    trace_all: bool = False,
 ) -> None:
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     stage_fires: Dict[str, List[str]] = defaultdict(list)
@@ -511,12 +512,16 @@ def write_report(
             continue
         lines.append(f"=== BUCKET: {bucket} ({len(items)}) ===")
         lines.append("")
+        # Skip detailed tracing for exact_match unless --all is specified
+        skip_trace = (bucket == "exact_match" and not trace_all)
         for row in items:
             lines.append(f"--- {row['concept']} ---")
             lines.append(f"PROTO: {row['proto']}")
             lines.append(f"EXPECTED: {row['counterpart']}")
             lines.append(f"OUTPUTS: {row['outputs']}")
             lines.append("")
+            if skip_trace:
+                continue
             prev_outputs: List[str] | None = None
             lexeme_label = f"{row['concept']} :: {row['proto']}"
             for label, outputs in trace_lexeme(row["proto_norm"], bin_dir):
@@ -572,6 +577,11 @@ def main() -> None:
         default=str(germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"),
         help="Report output path (default: %(default)s)",
     )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Trace all entries including exact_match (default: mismatches only)",
+    )
     args = parser.parse_args()
 
     tsv_path = Path(args.tsv).expanduser().resolve()
@@ -581,7 +591,7 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows = load_rows(tsv_path)
-    write_report(rows, bin_path, bin_dir, output_path)
+    write_report(rows, bin_path, bin_dir, output_path, trace_all=args.all)
     print(f"Wrote {output_path}")
 
 

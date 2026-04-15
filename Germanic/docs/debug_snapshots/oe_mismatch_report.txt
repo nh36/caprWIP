@@ -1,10 +1,10 @@
-Total mismatches: 44
+Total mismatches: 43
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    6
-  Phonology (other buckets):   31
+  Phonology (other buckets):   30
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -29,11 +29,9 @@ Total mismatches: 44
 --- back_expected_front_out sub-buckets ---
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
-  vowel_quality__a_vs_o: 1
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 2
-  vowel_quality__unstressed_e_o: 5
-  vowel_quality__unstressed_o_a: 1
+  vowel_quality__unstressed_vowel: 6
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 4
 --- final_n_missing sub-buckets ---
@@ -88,7 +86,7 @@ gemination_extra (2):
   >> ACTION: Research actual OE form; may be borrowing or irregular
 
 breaking_extra__ea_for_a (1):
-  *spárēną -> spearon (expected sparian)
+  *spárēną -> spearen (expected sparian)
 
 breaking_extra__eo_for_e (1):
   *spéru -> speoru (expected spere)
@@ -123,12 +121,6 @@ back_expected_front_out__other (1):
   >> LIKELY: Dialectal/analogical form, or vowel coloring not modeled
   >> ACTION: Research if target is regular or a variant; may need u-coloring rule
 
-vowel_quality__a_vs_o (1):
-  *násō -> nasu (expected nosu)
-  >> ISSUE: FST has a where target has o (or vice versa)
-  >> LIKELY: Pre-nasal rounding (*a > o before nasal), or dialectal
-  >> ACTION: Check nasal context; if not pre-nasal, may be dialectal or TSV issue
-
 vowel_quality__u_lowering_exception (5):
   *búkkăz -> bocc (expected bucc)
   *fúglăz -> fogol (expected fugol)
@@ -140,15 +132,12 @@ vowel_quality__u_o_alternation (2):
   *wíduwōn -> widowe (expected widuwe)
   *wír-aldu -> weoruld (expected weorold)
 
-vowel_quality__unstressed_e_o (5):
-  *mákōθi -> macoþ (expected maceþ)
-  *búrōθi -> boroþ (expected boreþ)
-  *líznōθi -> liornoþ (expected liorneþ)
-  *líkkōθi -> liccoþ (expected licceþ)
-  *skáwōθi -> sċēawoþ (expected sċēaweþ)
-
-vowel_quality__unstressed_o_a (1):
-  *mēnōθz -> mōnoþ (expected mōnaþ)
+vowel_quality__unstressed_vowel (6):
+  *mēnōθz -> mōneþ (expected mōnaþ)
+  *mákōθi -> maceþ (expected macaþ)
+  *búrōθi -> boreþ (expected boraþ)
+  *líznōθi -> liorneþ (expected liornaþ)
+  *líkkōθi -> licceþ (expected liccaþ)
 
 final_vowel_missing__weak_noun_like (4):
   *fūri -> fȳr (expected fȳre)

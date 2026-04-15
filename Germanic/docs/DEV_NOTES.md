@@ -19606,3 +19606,126 @@ the contexts more carefully.
 - **Campbell §355.4**: Explicit list of weak II endings with `-a-`
 - **R/T vol.2, p.80**: "class II weak pres. 2sg. -as(t), 3sg. -aþ" have "stable a"
 - **R/T §6.8.3**: General framework for unstressed long vowel shortening
+
+### Verification and Clarification (2026-04-15)
+
+After careful review of Campbell §331.6, §355.4, §357, and §637, and R/T vol.2 p.80:
+
+**The rule is context-dependent:**
+
+1. **Noun suffix `-ōþuz`** (abstract nouns like `*fiskōþuz`):
+   - The `-u-` following `-ōþ-` triggers raising: `*-ōþu-` → `*-uþu-` → `-oþ` (via u-lowering)
+   - Result: `fiscop, duguþ, ġeoguþ`
+
+2. **Verb ending `-ōþi`** (weak II 3sg present):
+   - After apocope of `-i`, late shortening gives: `*-ōþ` → `-aþ`
+   - Result: `lufaþ, macaþ, mōnaþ`
+   - Campbell §757 notes dialectal `-oþ` variants but standard WS has `-aþ`
+
+3. **R/T vol.2 p.80** explicitly contrasts:
+   - "class II weak pres. 2sg. -as(t), 3sg. **-aþ** and the second syllable of **mōnaþ** 'month' have **stable a**"
+   - vs. comparative adverb **-or** which has "**stable o**"
+
+**The key insight:** The distinction is NOT about whether it's a verb vs. noun, but about the **following vowel** at the time of shortening:
+- `*-ōþu-` (noun with following `-u-`) → raising → `-uþ-` → `-oþ-`
+- `*-ōþ(i)` (verb with following `-i-` or nothing) → no raising → late shortening → `-aþ`
+
+**For our FST:** Since we target standard West Saxon, and since after early i-apocope 
+the verb forms end in `-ōθ` (not `-ōθu`), they should give `-aþ`.
+
+**The fix:** Change `OEUnstressedLongVowelShortening4` from `{*ō} -> {*o}` to `{*ō} -> {*a}`.
+
+**Caveat:** This may affect other forms. We'll need to check if any forms with unstressed 
+`*ō` legitimately need `-o-` as the output. If so, we may need to condition the rule more 
+carefully (e.g., distinguish `-ōþu-` from `-ōþ(i)`).
+
+---
+
+## §15.3 TSV Correction: OE nosu 'nose' — Ablaut *nasō ~ *nusō (2026-04-15)
+
+### The Issue
+
+After implementing the `*ō → *a` fix for weak verb class II endings, the mismatch
+report showed a new item in `vowel_quality__a_vs_o`:
+
+```
+*násō -> nasu (expected nosu)
+```
+
+The FST correctly produced `nasu`, but the expected form was `nosu` with `o`.
+
+### Research: The Etymological Ablaut
+
+**Campbell §116** provides the key evidence:
+> "We find o before Prim. Gmc. -ō, which has become -u in OE, e.g. OE **nosu < *nusō**"
+
+This explicitly reconstructs `*nusō` (with `*u`), not `*nasō` (with `*a`).
+
+**Kroonen (EDPG p.424)** documents the ablaut paradigm:
+> "*nasō- ~ *nusō- f. 'nose' — ON nọs f. 'nostril', Far. nọs f., nasar pl. 'nose', 
+> OSw. nasær f.pl. 'id.', **OE nosu** f. 'id.', E nose, OFri. nose f. 'id.', 
+> OS nasa-druppo m. 'cold', Du. neus c. 'nose', OHG nasa f. 'id.', G Nase f. 'id.'"
+
+Kroonen explicitly notes:
+> "The origin of the exclusively Germanic ablaut of **\*nasō-** (ON nọs, OHG nasa) 
+> vs. **\*nusō-** (**OE nosu**, OFri. nose, Du. neus) is unclear, but the root 
+> **\*nus-** is likely to have arisen as a secondary zero grade following a 
+> remodeling of the original paradigm."
+
+So we have two Proto-Germanic forms:
+- `*nasō` → ON nọs, OHG nasa (with `a`)
+- `*nusō` → **OE nosu**, OFri. nose, Du. neus (with `u`)
+
+### The Sound Change Pathway
+
+For `*nusō → nosu`:
+
+1. `*nusō` — Proto-Germanic input (zero-grade root `*nus-`)
+2. `*nusu` — NWGmc final `*ō` raising to `*u` (fem. ō-stem nom.sg.)
+3. `*nosu` — Medial `*u` lowering to `*o` before `*u` (Campbell §373)
+4. `nosu` — Surface form
+
+The FST correctly handles this:
+```
+$ echo 'núsō' | flookup -i Germanic/fsts/old_english.bin
+núsō    nosu
+```
+
+For comparison, `*nasō → nasu`:
+
+1. `*nasō` — Proto-Germanic input (full-grade root `*nas-`)
+2. `*nasu` — NWGmc final `*ō` raising to `*u`
+3. `*næsu` — Anglo-Frisian Brightening (`*a → *æ`)
+4. `*nasu` — A-restoration before back vowel (`*æ → *a` / _ ... u)
+5. `nasu` — Surface form
+
+The FST also handles this correctly:
+```
+$ echo 'násō' | flookup -i Germanic/fsts/old_english.bin
+násō    nasu
+```
+
+### Related Forms
+
+Campbell §193.c mentions `nasu` in the context of a-fronting/i-umlaut alternations:
+> "næss cape, beside ness (cf. **nasu**)"
+
+This confirms that `nasu` (with `a`) is also a legitimate OE form, but it's derived
+from the `*nasō` ablaut variant. Both `nasu` and `nosu` are attested in OE.
+
+### The TSV Error
+
+The TSV had:
+- PROTOFORM: `*násō` (full-grade with `*a`)
+- Expected: `nosu` (with `o`)
+
+This is inconsistent. If the proto is `*nasō`, the expected OE should be `nasu`.
+If we want `nosu`, the proto must be `*nusō`.
+
+### The Fix
+
+Change PROTOFORM from `*násō` to `*núsō` to match the zero-grade ablaut variant
+that actually yields OE `nosu`. This is a TSV data correction, not an FST change.
+
+**Note:** The `*ō → *a` rule change we made earlier is correct for weak verb endings.
+This regression exposed a pre-existing etymological error in the TSV.
