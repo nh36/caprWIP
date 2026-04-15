@@ -1761,14 +1761,27 @@ define OEUnstressedLongVowelShortening3 [
     # Exclude *ī when followed by e (part of diphthong *īe)
     {*ī} -> {*i} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[? - e] | .#.]
 ];
-define OEUnstressedLongVowelShortening4 [
-    # R/T vol.2 p.80: weak II 2sg -as(t), 3sg -aþ have "stable a"
-    # Campbell §355.4: "lufas, -aþ" from "-ōsi, -ōþi" (after i-apocope)
-    # Campbell §355: "this a was of too late origin to become æ by Anglo-Frisian fronting"
-    # The *-ōθu- in nouns like *fiskōþuz → fiscop uses different path (via *u raising)
-    # Rule applies to *ō in both final AND medial unstressed positions (see §15.4)
-    # CHRONOLOGY FIX (§15.7): This rule now runs AFTER OEUnstressedAFronting/WeakTailReduction3,
-    # so the *a output is never present during fronting. Plain *a is correct here.
+# TWO-STAGE *ō SHORTENING (§15.8)
+# Campbell §355: "*ō if shortened early gives OE æ(e), but if shortened late it gives a"
+#
+# Early shortening: *ō before nasals → *a (fronts to æ then e)
+#   - Weak noun endings: *-ōn → -e (tunge, eorþe)
+#   - Campbell §331.5: "n.s.f. of weak nouns, tunge < -ōn"
+#
+# Late shortening: *ō elsewhere → *a (stays as a, "stable a")
+#   - Weak II present: *-ōsi → -as, *-ōþi → -aþ (lufas, macaþ)
+#   - R/T vol.2 p.80: "weak II pres. 2sg -as(t), 3sg -aþ have stable a"
+
+define OEEarlyOShortening [
+    # EARLY: *ō → *a before nasals (runs BEFORE fronting)
+    # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
+];
+
+define OELateOShortening [
+    # LATE: *ō → *a elsewhere (runs AFTER fronting)
+    # This *a was "of too late origin to become æ" (Campbell §355)
+    # Covers weak II -ōθi, -ōsi and any remaining *ō
     {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
 ];
 define OEUnstressedLongVowelShortening5 [
@@ -1788,10 +1801,12 @@ define OEUnstressedLongVowelShortening8 [
     # R/T vol.2 §3.1.4: trimoric *-ō → PWGmc *-ō → *-a.
     {*ô} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
+
+# Composite shortening rule (without *ō, which is handled separately in two stages)
 define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening2
     .o. OEUnstressedLongVowelShortening3
-    .o. OEUnstressedLongVowelShortening4
+    # OEUnstressedLongVowelShortening4 removed — replaced by OEEarlyOShortening + OELateOShortening
     .o. OEUnstressedLongVowelShortening5
     .o. OEUnstressedLongVowelShortening6
     .o. OEUnstressedLongVowelShortening7
@@ -2003,15 +2018,23 @@ define OEWeakTailReduction3 [
 # before OEFinalSchwaApocope. It must run while final vowels are still present
 # to distinguish infinitive *-anąˈ from participle *-anăz. See lines 1580-1597.
 
-# CHRONOLOGY FIX (§15.7): Split OEWeakTailReduction into early and late phases.
-# The fronting chain (*a → *æ → *e) must complete BEFORE OEUnstressedLongVowelShortening,
-# so that *a from late *ō shortening is never present during fronting.
-# Campbell §355: "this a was of too late origin to become æ by Anglo-Frisian fronting"
+# TWO-STAGE *ō SHORTENING (§15.8): Pipeline order is now:
+#   1. OEEarlyOShortening: *ō → *a before nasals (weak nouns)
+#   2. OEUnstressedAFronting: *a → *æ (Anglo-Frisian fronting, §333)
+#   3. OELateOShortening: *ō → *a elsewhere (weak II verbs)  
+#   4. OEUnstressedLongVowelShortening: other long vowels (including *ǭ → *æ)
+#   5. OEUnstressedAEMerger: *æ → *e (unstressed vowel merger, §369)
+# This models Campbell §355: early-shortened *ō fronts, late-shortened *ō doesn't.
+# The merger (§369) is separate from and later than fronting (§333).
 
-# Early phase: fronting chain (runs BEFORE long vowel shortening)
-define OEUnstressedFrontingChain OEUnstressedAFronting .o. OEWeakTailReduction3;
+# Anglo-Frisian fronting only (runs early, between early and late *ō shortening)
+define OEUnstressedFrontingEarly OEUnstressedAFronting;
 
-# Late phase: remaining reductions (runs AFTER long vowel shortening)
+# Unstressed vowel merger (runs late, after ALL shortening including *ǭ → *æ)
+# Campbell §369: "æ, e, and i fell together in a sound written e"
+define OEUnstressedAEMerger OEWeakTailReduction3;
+
+# Remaining weak tail reductions (runs after merger)
 define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2;
 
 define OEEpentheticInsertion [
@@ -2613,11 +2636,17 @@ define EnglishProtoToOE (
     .o. OELAdjacentSyncope
     .o. OEDentalAssimilation
     .o. OEPreconsonantalDegemination
-    # CHRONOLOGY FIX (§15.7): OEUnstressedFrontingChain (*a → *æ → *e) must run
-    # BEFORE OEUnstressedLongVowelShortening, so that *a from late *ō shortening
-    # is never present during fronting. Campbell §355 confirms this chronology.
-    .o. OEUnstressedFrontingChain
+    # TWO-STAGE *ō SHORTENING (§15.8):
+    # 1. Early: *ō → *a before nasals (weak nouns like tunge, eorþe)
+    .o. OEEarlyOShortening
+    # 2. Fronting: *a → *æ (Anglo-Frisian fronting, §333)
+    .o. OEUnstressedFrontingEarly
+    # 3. Late: *ō → *a elsewhere (weak II verbs like macaþ, lufaþ)
+    .o. OELateOShortening
+    # 4. Other long vowel shortening (ī, ū, ǣ, ǭ → æ, etc.)
     .o. OEUnstressedLongVowelShortening
+    # 5. Merger: *æ → *e (unstressed vowel merger, §369)
+    .o. OEUnstressedAEMerger
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
@@ -2713,9 +2742,12 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
 define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
-    # CHRONOLOGY FIX (§15.7): OEUnstressedFrontingChain must run before shortening
-    .o. OEUnstressedFrontingChain
+    # TWO-STAGE *ō SHORTENING (§15.8):
+    .o. OEEarlyOShortening
+    .o. OEUnstressedFrontingEarly
+    .o. OELateOShortening
     .o. OEUnstressedLongVowelShortening
+    .o. OEUnstressedAEMerger
     # NOTE: OEMedUnstressedULowering runs after NasalSpirantLoss (see §14.13)
     .o. OEUnstressedIMarking
     .o. OEMedUnstressedILowering
