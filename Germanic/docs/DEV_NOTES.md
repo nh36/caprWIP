@@ -19487,3 +19487,122 @@ i-umlaut. But in weak class II, the 2sg/3sg endings **never had the `-j-`** that
 would trigger umlaut. The `-j-` appears only in 1sg (`-ōjō`) and plurals 
 (`-ōjanþi`). The `-e-` in dialectal 3sg forms is from vowel harmony or analogy,
 not from regular i-umlaut.
+
+---
+
+## §15.2: RESEARCH — Unstressed *ō Shortening: *ō → *a, NOT *o (2026-04-14)
+
+### The Problem
+
+Our current FST rule `OEUnstressedLongVowelShortening4` does:
+```
+{*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+```
+
+But this gives `macoþ` when we need `macaþ`. Campbell and R/T both confirm that
+unstressed `*ō` → `a`, NOT `o`.
+
+### Evidence from Campbell §355
+
+Campbell §355 at the end explicitly states:
+
+> "even when shortened late, **ō became a**, but that this a was of too late origin 
+> to become æ by Anglo-Frisian fronting (§333). Thus **ō if shortened early gives 
+> OE æ(e), but if shortened late it gives a**."
+
+Campbell §355.4 gives the specific examples:
+
+> "forms of weak verbs of Class II, **lufas, -aþ**, -od, -ad (< **-ōsi, -ōþi**, 
+> -ōd-, -ōd-, § 331.6)"
+
+So the development is:
+- PGmc `*-ōsi` → OE `-as(t)` (2sg)
+- PGmc `*-ōþi` → OE `-aþ` (3sg)
+
+### Evidence from R/T vol.2
+
+**R/T vol.2, p.80** explicitly states:
+
+> "class II weak pres. 2sg. **-as(t)**, 3sg. **-aþ** and the second syllable of 
+> **mōnaþ** 'month' have **stable a**"
+
+They note this is NOT the same as the `-o-` that appears elsewhere.
+
+**R/T §6.8.3** (pp.298-300) gives the general rule for unstressed long vowel 
+shortening after syncope and apocope. The key examples show:
+
+- `*-ō` → `-a` (e.g., class II weak iptv. 2sg. `-a` < PWGmc `*-ō`)
+- `*-ē` → `-e` (most positions)
+- `*-ī` → `-i` → `-e` (after shortening)
+
+### The Sound Change
+
+**Unstressed `*ō` → `a`** (late OE, after AFB)
+
+This is DIFFERENT from:
+1. PWGmc bimoric `*-ō` → `*-a` (early, subject to AFB → OE `-e`)
+2. PWGmc trimoric `*-ô` → `*-a` (late, NOT subject to AFB → OE `-a`)
+
+The weak class II medial `*-ō-` is trimoric-like in behavior: it shortens late,
+giving `-a-`, not `-e-`.
+
+### Chronology
+
+1. **Early PWGmc bimoric shortening**: `*-ō` → `*-a` (subject to AFB → `-e`)
+2. **Anglo-Frisian Brightening**: `*a` → `*æ` (applies to early `-a-`)
+3. **Late unstressed shortening**: `*ō` → `a` (NOT subject to AFB → `-a-`)
+
+The late timing is crucial. Campbell says the resulting `-a-` was "of too late
+origin to become æ by Anglo-Frisian fronting."
+
+### FST Implementation
+
+**Current rule (WRONG):**
+```
+define OEUnstressedLongVowelShortening4 [
+    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+```
+
+**Correct rule:**
+```
+define OEUnstressedLongVowelShortening4 [
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+];
+```
+
+### Test Cases
+
+After the fix:
+| Input | Current output | Expected output |
+|-------|----------------|-----------------|
+| `*mákōθi` | `macoþ` | `macaþ` |
+| `*búrōθi` | `boroþ` | `boraþ` |
+| `*mēnōθz` | `mōnoþ` | `mōnaþ` |
+
+### Why We Had It Wrong
+
+The original implementation may have been confused by:
+1. The `-ode/-ade` alternation in past tenses (which has different conditioning)
+2. Some dialects showing `-o-` (Campbell §757: "2nd and 3rd sg. pres. indic. 
+   sometimes has -o- in IW-S and KG")
+3. General assumption that long vowels shorten to their corresponding short vowel
+
+But Campbell is explicit: unstressed `*ō` → `a`, not `o`.
+
+### Downstream Effects
+
+Changing `*ō` → `a` may affect other forms. We need to verify:
+1. Weak class II past tense `-ode/-ade` forms (different conditioning)
+2. Other forms with medial `*-ō-`
+3. Whether any forms SHOULD have `-o-` from `*ō`
+
+If some forms need `-o-` while others need `-a-`, we may need to distinguish
+the contexts more carefully.
+
+### References
+
+- **Campbell §355**: "ō became a" in late shortening; "-as, -aþ" from "-ōsi, -ōþi"
+- **Campbell §355.4**: Explicit list of weak II endings with `-a-`
+- **R/T vol.2, p.80**: "class II weak pres. 2sg. -as(t), 3sg. -aþ" have "stable a"
+- **R/T §6.8.3**: General framework for unstressed long vowel shortening
