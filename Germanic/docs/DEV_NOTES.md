@@ -20198,3 +20198,136 @@ The fix is minimal and well-founded:
 - The `*ă` symbol already exists for this exact purpose
 - The rule ordering is already correct
 - This accurately models the historical chronology (Campbell §355)
+
+---
+
+### §15.7 Re-examining the *a vs *ă Solution (2026-04-15)
+
+**Problem identified:** Using `*ă` for late `*ō` shortening may be masking a chronological 
+problem rather than solving it. The concern is: if both `*a` and `*ă` represent unstressed 
+short *a*, using two symbols might indicate:
+
+1. An inconsistency in notation
+2. A hack to work around rule-ordering issues
+3. Conflation of historically distinct changes under one rule
+
+#### The Real Chronology (Campbell §355)
+
+Campbell §355 (lines 9805-9808) states:
+
+> "even when shortened late, ō became a, but that this a was of too late origin to 
+> become æ by Anglo-Frisian fronting (§ 333). Thus ō if shortened early gives OE æ(e), 
+> but if shortened late it gives a."
+
+The key insight is that Campbell describes a **chronological** distinction:
+
+```
+EARLY:
+  1. First Fronting: *a → *æ (both stressed and unstressed)
+  2. Unstressed merger: *æ → *e
+
+LATE:
+  3. Long vowel shortening: *ō → *a (in certain environments)
+```
+
+If shortening happens **after** the fronting chain has completed, then the new `*a` 
+was never present during fronting and therefore never fronted. No special symbol needed.
+
+#### Current FST Order (Problematic)
+
+The current pipeline order is:
+```
+line 2560: .o. OEHeavySyllableNasalApocope
+line 2563: .o. OEFinalSchwaApocope
+line 2600: .o. OEHighVowelApocope
+line 2606: .o. OEUnstressedLongVowelShortening   ← shortening
+line 2611: .o. OEWeakTailReduction               ← includes fronting + merger
+```
+
+The problem: Shortening runs BEFORE `OEWeakTailReduction`, which contains 
+`OEUnstressedAFronting` (`*a → *æ`) and `OEWeakTailReduction3` (`*æ → *e`).
+
+So the current flow for `*mákōθi` is:
+1. Apocope: `*mákōθi` → `*mákōθ`
+2. Shortening: `*mákōθ` → `*mákaθ` (if using plain *a)
+3. Fronting: `*mákaθ` → `*mákæθ`  ← WRONG! This `*a` should not front
+4. Merger: `*mákæθ` → `*mákeθ`
+5. Result: `maceþ` ✗ (should be `macaþ`)
+
+#### The `*ă` Hack (Currently Implemented)
+
+The `*ă` solution works by making shortening output `*ă` instead of `*a`:
+1. Shortening: `*mákōθ` → `*mákăθ` (ă not a)
+2. Fronting: `*mákăθ` — no change (fronting only targets `{*a}`)
+3. Reduction1a: `*mákăθ` → `*mákaθ` (ă → a after fronting)
+4. Result: `macaþ` ✓
+
+This works but is conceptually wrong — we're using a special symbol to track 
+chronological origin, when we should instead fix the rule ordering.
+
+#### The Correct Fix: Reorder Rules
+
+If we move the fronting chain to run BEFORE shortening:
+
+```
+NEW ORDER:
+line 260x: .o. OEUnstressedAFronting             ← fronting early
+line 260x: .o. OEWeakTailReduction3              ← *æ → *e early  
+line 2606: .o. OEUnstressedLongVowelShortening   ← shortening late
+line 2611: .o. OEWeakTailReduction               ← remaining reductions
+```
+
+Then for `*mákōθi`:
+1. Apocope: `*mákōθi` → `*mákōθ`
+2. Fronting: `*mákōθ` — no `*a` to front
+3. Merger: `*mákōθ` — no `*æ` to merge
+4. Shortening: `*mákōθ` → `*mákaθ` (plain *a, no problem)
+5. Result: `macaþ` ✓
+
+And for participle `*fundanăz` → `funden`:
+1. Fronting: `*fundanăz` — the `-an-` has original `*a` → `*fundænăz`
+2. Merger: `*fundænăz` → `*fundenăz`
+3. Shortening: no long vowels
+4. Result: `funden` ✓
+
+This is the correct solution: it models the actual historical chronology without 
+needing a special symbol to track vowel origin.
+
+#### Implementation Plan
+
+1. **Revert** `OEUnstressedLongVowelShortening4` from `{*ō} -> {*ă}` back to `{*ō} -> {*a}`
+2. **Extract** `OEUnstressedAFronting` and `OEWeakTailReduction3` from `OEWeakTailReduction`
+3. **Move** them to run BEFORE `OEUnstressedLongVowelShortening`
+4. **Keep** `OEWeakTailReduction1` and `OEWeakTailReduction2` where they are
+
+The `*ă` symbol continues to serve its original purpose (marking weak endings in 
+input forms like `*libjăną`) but is no longer needed as output of shortening.
+
+#### Implementation Complete (2026-04-15)
+
+Changes made to `Germanic/fsts/germanic.txt`:
+
+1. **Line 1772**: Reverted `{*ō} -> {*ă}` to `{*ō} -> {*a}` in `OEUnstressedLongVowelShortening4`
+
+2. **Lines 2006-2015**: Split `OEWeakTailReduction` into early and late phases:
+   ```foma
+   # Early phase: fronting chain (runs BEFORE long vowel shortening)
+   define OEUnstressedFrontingChain OEUnstressedAFronting .o. OEWeakTailReduction3;
+   
+   # Late phase: remaining reductions (runs AFTER long vowel shortening)
+   define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2;
+   ```
+
+3. **Lines 2616-2619**: Inserted `OEUnstressedFrontingChain` before `OEUnstressedLongVowelShortening`:
+   ```foma
+   .o. OEUnstressedFrontingChain
+   .o. OEUnstressedLongVowelShortening
+   ```
+
+4. **Lines 2716-2717**: Same fix applied to sandbox pipeline.
+
+**Results:**
+- `*mákōθi → macaþ` ✓ (was `maceþ` with the `*ă` hack)
+- Mismatch count: 56 (down from 194 with broken bin, comparable to previous ~39-56)
+- The chronology now correctly models Campbell §355: late `*ō` shortening produces 
+  `*a` that was never present during fronting
