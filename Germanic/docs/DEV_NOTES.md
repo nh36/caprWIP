@@ -21746,4 +21746,186 @@ Adopt **Option 1**. Phase 1d is closed. Update the misleading comment at
 germanic.txt lines 1958–1969 (separate small cleanup commit). Move on to
 Phase 1e (rewrite §16 accent convention documentation).
 
+### §17.10.12 — Phase 1d revised: eliminate `{*ă}` via positional conditioning
+
+User feedback (2026-04-21): if the breve distinction is not in the sources
+(R/T, Luick, Campbell, Hogg), then whatever phonological work it is currently
+doing should be re-expressible by tighter conditioning or better chronology.
+Option 1 (retain breve) is rejected. The task is to design a migration path
+where every breve becomes plain `{*a}` without regression.
+
+#### A. Where the breve is actually consulted
+
+From `grep "{\*ă}"` on germanic.txt, the rules that currently discriminate
+breve from plain `a` are:
+
+| Line | Rule | Depends on breve? |
+|---|---|---|
+| 297–358 | `pgrmWord` shape definitions (~15 shapes) | Grammar-level only; no sound change |
+| 440 | `pgrmLinkingVowel` | Role 2 (compound-linking); out of scope |
+| 469, 907–915 | Alphabet / `EnglishWeakTailVowelStar` | Mirror of grammar shapes |
+| 999 | `{*ă} -> 0 || _ .#.` (word-final deletion) | **Yes** — distinguishes deletable tail vowel from retained plain `a` |
+| 1043 | `EnglishRhoticWeakTail [{*ă}|{*ą}|{*ɔ̆}]` | Defines rhotic-context weak tail |
+| 1174 | `{*ă} -> {*ə}` (schwa reduction) | Targets only breve |
+| 1564 | `OEARestorationTriggerVowel` — breve NOT in set | **Yes** — plain triggers restoration, breve does not |
+| 1573–1593 | `OEARestorationStrongOTail` (patterns) | Vestigial (see below) |
+| 1987 | `[{*a}|{*ă}] -> {*ą}` (2° nasalization) | Fires on both; no discrimination |
+| 2012 | `OEWeakTailReduction1a {*ă} -> {*a}` | Late rule; becomes vacuous after migration |
+| 2458 | Vowel syncope in weak cluster | Targets breve only |
+
+#### B. The A-restoration case analysed phonologically
+
+Empirical evidence from §17.10.11 showed the breve matters most visibly in
+`OEARestoration`. A closer look at the rule body:
+
+```
+define OEARestoration (
+    {*æ} -> {*a} || _ [Intervening]* TriggerVowel
+                     - [Intervening]* WeakTailVowel
+);
+define OEARestorationIntervening [EnglishStarConsonantNoR - {*l}];
+define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
+```
+
+Two facts govern the behaviour:
+
+1. **`{*ă}` is not in `EnglishStarBackVowel`** (line 564–578: only
+   `{*a}, *o, *u, *ā, *ō, *ū, *ɑ, *ɔ, *ʊ, *á, *ó, *ú`). So a tail
+   containing only breves never provides a trigger vowel.
+2. **`{*r}` and `{*l}` are not in `OEARestorationIntervening`**. So a j-verb
+   like `*wærjaną` fails the intervening context immediately: the first
+   consonant after `*æ` is `r`, which blocks the rule regardless of tail.
+
+This means:
+
+- `*bæk.aną` (plain): intervening = `k`, trigger = `a` → **fires** → `bacan`.
+- `*bæk.ăną` (breve): intervening = `k`, no trigger vowel in tail → does not fire → `bæcan`.
+- `*wær.janą` (plain): intervening fails at `r` → **does not fire** → `werġan` (via i-umlaut).
+- `*wær.jăną` (breve): intervening fails at `r` → does not fire → `werġan`.
+
+**Key consequence**: for j-verbs, the tail vowel is irrelevant to restoration.
+The grammar's current insistence on breve (`j:{*j} ă:{*ă} n:{*n} ą:{*ą}`,
+line 306) is a pgrmWord shape-level constraint, not a sound-change
+requirement. We can add a plain-a twin shape `j:{*j} a:{*a} n:{*n} ą:{*ą}`
+and j-verbs will still surface correctly.
+
+And for non-j-verbs (Class VI and the rest), if we migrate all tail breves
+to plain, restoration will fire wherever R/T predicts it — because the rule
+already conditions on "back vowel following single non-r-non-l intervening
+consonant", which is R/T §6.3.1's rule.
+
+This means the breve's apparent "A-restoration blocker" Role 5 is an
+**artefact of which symbols happen to be in `EnglishStarBackVowel`**, not a
+necessary encoding. Removing the breve and letting all tail vowels be plain
+`{*a}` gives R/T-compliant behaviour for free.
+
+#### C. The `OEARestorationStrongOTail` list is vestigial
+
+Lines 1573–1593 list patterns like `{*ă}{*n}{*ą}` and `{*ă}{*z}` as
+"strong-O-tails" (supposed to permit restoration). These work by subtraction
+from `WeakTailVowel` in the rule body. **But since none of these patterns
+contains a trigger vowel, the subtraction is vacuous**: if the tail has no
+trigger vowel, the rule fails at the `[Intervening]* TriggerVowel` clause
+regardless of the subtraction. This list can be deleted entirely once
+migration is done (or simplified to reflect genuinely attested retraction
+environments per R/T).
+
+#### D. Other breve-sensitive rules — neogrammarian re-expression
+
+- **Line 999 (final `{*ă}` deletion)**: after migration, the rule becomes
+  "delete word-final unstressed `{*a}`". R/T §6.8 (final unstressed shortening
+  and deletion) supports this. But not all final plain `a` are deletable — e.g.,
+  retraction-outputs like `nomen *dagaz → *dæg → dæg` go through different
+  paths. In practice, after AFB, A-restoration, syncope, and other rules have
+  fired, a final `{*a}` really is a deletion target. Need to verify empirically
+  that unconditional final-`{*a}` deletion at that stage is safe.
+
+- **Line 1174 (schwa reduction `{*ă} -> {*ə}`)**: becomes "unstressed `{*a}
+  -> {*ə}` in the appropriate prosodic position". Again position rather than
+  tag.
+
+- **Line 2458 (weak-cluster syncope)**: targets breve-between-consonants.
+  After migration, targets plain `{*a}` in the same environment (a specific
+  structural context, not a quality distinction).
+
+- **Line 2012 (`OEWeakTailReduction1a`)**: becomes identity; delete the rule.
+
+#### E. Phased migration plan (Phase 1d-α → 1d-δ)
+
+Each phase is one commit (or a small cluster), with 37-mismatch verification
+at every step.
+
+**Phase 1d-α: widen grammar to accept both**
+- Add plain-a twin shapes to `pgrmWord` and `EnglishWeakTailVowelStar`
+  alongside every breve shape (lines 297–358, 907–915). Example: next to
+  `j:{*j} ă:{*ă} n:{*n} ą:{*ą}` add `j:{*j} a:{*a} n:{*n} ą:{*ą}`.
+- Add `{*a}`-analogues to `OEARestorationStrongOTail` patterns (or plan to
+  delete — see 1d-γ).
+- Rebuild. Expect 37 mismatches unchanged (existing TSV still uses breve).
+- Commit: `phase 1d-α (role 1): widen grammar to accept plain-a tail twins`.
+
+**Phase 1d-β: migrate TSV**
+- Mechanical replacement in `germanic-aligned-final.tsv`: tail `ă` → `a` in
+  all weak-tail positions. Roughly 335 infinitives (`-ăną` → `-aną`), ~189
+  nominals (`-ăz` → `-az`), etc. Preserve Role 2 compound-linking breves
+  (if any remain).
+- Rebuild. Verify 37 mismatches. Diff the per-form outputs to catch
+  regressions not caught by the mismatch count.
+- Commit: `phase 1d-β (role 1): migrate TSV tail ă → a`.
+
+**Phase 1d-γ: simplify rules**
+- Delete vestigial `OEARestorationStrongOTail` entries that contained only
+  breve (now vacuous).
+- Update the misleading comment at lines 1958–1969 to reflect actual
+  behaviour.
+- Rebuild. Verify 37 mismatches.
+- Commit: `phase 1d-γ (role 1): simplify OEARestoration; fix comment`.
+
+**Phase 1d-δ: remove `{*ă}` from alphabet and remaining references**
+- Update line 999 (final deletion), line 1043 (rhotic tail), line 1174
+  (schwa reduction), line 1987 (2° nasalization), line 2012 (reduction —
+  delete), line 2458 (syncope) to target plain `{*a}` instead of `{*ă}`
+  where semantically equivalent.
+- Remove `ă` / `{*ă}` from alphabet definitions (lines 469, 848, 907, 1624).
+- Remove breve-only shapes from pgrmWord/mirror now that TSV no longer
+  produces them.
+- Rebuild. Verify 37 mismatches.
+- Commit: `phase 1d-δ (role 1): drop {*ă} from inventory`.
+
+#### F. Risks and safeguards
+
+1. **Scope of migration is large**: ~500 TSV rows touched. Safeguard: run
+   full per-form diff at each phase, not just mismatch count.
+2. **Final-`{*a}` deletion may over-apply** after migration (line 999). If
+   so, the fix must be purely phonological: tighten conditioning on the
+   segmental environment (e.g., preceding consonant class, syllable weight,
+   stress), not on morphological identity of a suffix. This project is
+   strictly neogrammarian; morphologically conditioned sound changes are not
+   permitted. If a clean phonological conditioning cannot be found, the
+   right move is a chronology adjustment (fire the rule before or after
+   some other change) — never a morphological selector.
+3. **`pgrmLinkingVowel` (line 440)** uses `{*ă}` for Role 2. Must keep that
+   occurrence through Phase 1d (it is out of scope until Phase 2).
+4. **Chronology sensitivity**: if some rule currently relies on breve being
+   present at a particular stage and plain at another, migration exposes
+   that. Safeguard: stage-by-stage sandbox trace inspection of
+   representative forms (Class VI strong, Class II weak, j-verb, participle,
+   a-stem nom-sg, o-stem nom-sg) at every phase.
+
+#### G. Deliverable order for this phase
+
+1. This document (§17.10.12) — commit standalone.
+2. Implement Phase 1d-α (grammar widening) — commit.
+3. Implement Phase 1d-β (TSV migration) — commit.
+4. Implement Phase 1d-γ (rule simplification + comment fix) — commit.
+5. Implement Phase 1d-δ (inventory removal) — commit.
+6. Move on to Phase 1e (§16 accent convention rewrite — now dramatically
+   simplified: three accent marks, acute/plain/long, with breve gone
+   except for Role 2).
+
+#### H. Supersedes §17.10.11 §H
+
+Option 1 ("retain breve") is **rejected** per user direction. Option 2 is
+adopted with the above concrete plan.
+
 
