@@ -154,11 +154,23 @@ define OESandboxAfterPreconsonantalDegemination OESandboxAfterDentalAssimilation
 # Stage 11: Unstressed Vowel Changes - lines 2381-2386
 # NOTE: OEMedUnstressedULowering is in Stage 4 (after NasalSpirantLoss), NOT here!
 # This stage has OEMedUnstressedILowering (I-lowering), which is a DIFFERENT rule.
-# Main pipeline order: UnstressedLongVowelShortening → UnstressedIMarking → MedUnstressedILowering
+# Main pipeline order (germanic.txt lines 2650-2659):
+#   EarlyOShortening → UnstressedFrontingEarly → LateOShortening
+#     → UnstressedLongVowelShortening → UnstressedAEMerger
+#     → UnstressedIMarking → MedUnstressedILowering
+# See DEV_NOTES §17.10.5 for sandbox-sync plan rationale.
 # ============================================================================
-define OESandboxAfterUnstressedLongVowelShortening OESandboxAfterPreconsonantalDegemination
+define OESandboxAfterEarlyOShortening OESandboxAfterPreconsonantalDegemination
+    .o. OEEarlyOShortening;
+define OESandboxAfterUnstressedFrontingEarly OESandboxAfterEarlyOShortening
+    .o. OEUnstressedFrontingEarly;
+define OESandboxAfterLateOShortening OESandboxAfterUnstressedFrontingEarly
+    .o. OELateOShortening;
+define OESandboxAfterUnstressedLongVowelShortening OESandboxAfterLateOShortening
     .o. OEUnstressedLongVowelShortening;
-define OESandboxAfterUnstressedIMarking OESandboxAfterUnstressedLongVowelShortening
+define OESandboxAfterUnstressedAEMerger OESandboxAfterUnstressedLongVowelShortening
+    .o. OEUnstressedAEMerger;
+define OESandboxAfterUnstressedIMarking OESandboxAfterUnstressedAEMerger
     .o. OEUnstressedIMarking;
 define OESandboxAfterMedUnstressedILowering OESandboxAfterUnstressedIMarking
     .o. OEMedUnstressedILowering;
@@ -437,8 +449,24 @@ save stack old_english_sandbox_after_preconsonantal_degemination.bin
 
 # Stage 11: Unstressed Vowel Changes
 clear stack
+regex OESandboxAfterEarlyOShortening;
+save stack old_english_sandbox_after_early_o_shortening.bin
+
+clear stack
+regex OESandboxAfterUnstressedFrontingEarly;
+save stack old_english_sandbox_after_unstressed_fronting_early.bin
+
+clear stack
+regex OESandboxAfterLateOShortening;
+save stack old_english_sandbox_after_late_o_shortening.bin
+
+clear stack
 regex OESandboxAfterUnstressedLongVowelShortening;
 save stack old_english_sandbox_after_unstressed_long_vowel_shortening.bin
+
+clear stack
+regex OESandboxAfterUnstressedAEMerger;
+save stack old_english_sandbox_after_unstressed_ae_merger.bin
 
 # NOTE: OEMedUnstressedULowering save is now in Stage 4 (after NasalSpirantLoss)
 # Stage 11 only has OEMedUnstressedILowering (I-lowering)

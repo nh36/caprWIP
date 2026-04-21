@@ -21429,3 +21429,70 @@ still fires on internally-derived word-final `{*ă}` (Role 1 forms like
 `*fúnðanăz` that reach the apocope stage with trailing `ă` after
 z-deletion). Full removal of the rule is deferred to Phase 1d (Role 1
 migration).
+
+### §17.10.7 — Correction: `*wíθr` fails i-lowering; migrate to `*wíθrą` instead
+
+**The §17.10.5 empirical claim was wrong.** On re-running the probes
+after the sandbox-sync compile, both forms now give:
+
+```
+wíθră  -> weþer   ✓ (baseline, 37 mismatches)
+wíθr   -> wiþer   ✗ (i-lowering fails to fire; 38 mismatches)
+wíθrą  -> weþer   ✓ (nasalized-*a neuter a-stem nom.sg.)
+wíθru  -> wiþer   ✗ (*u is a HighVowel — blocked by rule)
+```
+
+**Why `*wíθr` fails.** `NWGmcILowering` (germanic.txt line 1678) is
+defined as
+
+```
+{*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
+```
+
+It requires a **non-high vowel after the coronal**. `*wíθr` has no
+vowel after `θ`, so the rule cannot fire. `OEEpentheticInsertion`
+later inserts `{*E}` before word-final `*r`, but that is too late
+(post-NWGmc) and `{*E}` is not the trigger NWGmcILowering scans for.
+
+**Why `*wíθrą` is the right target.** PGmc reconstructs `*wéþruz` /
+`*wéþrą` for 'wether' (cognate-set headword, Kroonen). The neuter
+a-stem nom.sg. `*wíθrą` is an actual reconstructable PGmc form, not
+an engineering tag. Pipeline behaviour:
+
+1. `*ą` is a NonHighVowel → NWGmcILowering fires: `*wíθrą → *wéþrą`.
+2. Pre-OE loss of word-final nasalized `*ą` (existing machinery)
+   removes the final vowel: `*wéþrą → *wéþr`.
+3. `OEEpentheticInsertion` inserts `{*E}` before word-final `*r`:
+   `*wéþr → *weþEr → weþer`. ✓
+
+This is the same derivational path the breve `*ă` hack was papering
+over — except `*ą` is etymologically transparent and doesn't require
+a special symbol outside the PGmc reconstruction inventory.
+
+**R/T §3.1.2 re-reading.** §3.1.2 covers loss of word-final *-a/*-ą
+in PWGmc, but §3.1.3 clarifies that nasalized `*ą` behaves differently
+from short oral `*a` in the intermediate stages (it is lost later in
+the chronology, after NWGmc i-lowering has had a chance to apply).
+The FST's current ordering (i-lowering before apocope of `*ą`) is
+consistent with that.
+
+**Revised migration target.** Replace `*wíθră` → `*wíθrą` (breve
+`ă` → ogonek `ą`) in all 8 TSV occurrences. Empirical verification:
+produces `weþer` ✓, mismatch count stays at 37.
+
+**Sandbox behaviour.** The sandbox sync committed separately is
+unaffected by this correction — it was purely about late-pipeline
+trace fidelity. This correction only changes which TSV migration
+we apply.
+
+### §17.10.8 — Revised execution plan
+
+Step 2 of §17.10.6 is updated:
+
+- OLD: TSV edit `*wíθră` → `*wíθr`.
+- NEW: TSV edit `*wíθră` → `*wíθrą` (breve → ogonek).
+
+All other steps (sandbox sync, recompile, verify 37, commit) are
+unchanged. The sandbox sync commit may proceed independently; the
+TSV edit follows it.
+
