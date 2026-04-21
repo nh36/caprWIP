@@ -20431,3 +20431,127 @@ cleanest approach. The key insight is that the environments are distinguishable:
 
 **8 items fixed** (no longer mismatching):
 - `*fédwōr`, `*fríjōndz`, `*fúnxstiz`, `*gánsz`, `*júgunθ`, `*kéwwăną`, `*mēnōθz`, `*násō`
+
+## §16 Accent-Marking Conventions (Pre-merge Stocktake, 2026-04-21)
+
+Formal documentation of the stress/length notation used in PROTOFORMs and FST
+input, prompted by pre-merge hygiene review.
+
+### §16.1 Inventory
+
+| Role | Symbol | Example |
+|---|---|---|
+| Primary-stressed short root vowel | `á é í ó ú` | `*fláskōn`, `*líbrō` |
+| Stressed long root vowel | `ā ē ī ō ū ǭ ô` | `*blōdą`, `*bērō`, `*búgô` |
+| Unstressed short vowel (inflection / suffix) | `ă` | `*dagăz`, `*bakăną` |
+| Unstressed nasalized vowel (inflection) | `ą ę ų` | `*dagą`, `*xundą` |
+| Unstressed long vowel in inflection | `ō ē ī ū` (no accent) | `*bōkō`, `*mēnōθz` |
+
+### §16.2 Convention
+
+1. **Short root vowel → acute.** Any short vowel in a stressed root position
+   carries an acute accent: `á é í ó ú`. This is the *positive* signal of
+   primary stress that pairs with `{*á}` clauses in `OEBreaking`, AFB,
+   `OEIUmlaut`, `NasalSpirantLaw`, etc.
+
+2. **Long root vowel → no accent.** A long vowel (`ā ē ī ō ū`) in a root
+   position is, by Germanic initial stress, *always* primary-stressed. Marking
+   these with acute (`ā́`, `ḗ`, etc.) would be typographically fragile (combining
+   diacritics) and phonologically redundant. The FST treats every `{*ā}` /
+   `{*ē}` / ... in root position as stressed.
+
+3. **Breve `ă` = unstressed short vowel.** Used in inflectional suffixes and
+   linking vowels (`*dagăz`, `*-ăną`, `*wiră-aldiz`). `ă` is distinct from `a`
+   in the FST: rules that target short `{*a}` do NOT match `{*ă}`, which lets
+   us protect inflectional vowels from root-level changes (AFB, Breaking, etc.)
+   while still feeding them through unstressed-specific rules
+   (`OEUnstressedFrontingEarly`, `OEUnstressedAEMerger`, `OEWeakTailReduction`).
+
+4. **Plain `a e i o u` (no diacritic) → narrow technical use only.** Most
+   appearances are in weak-tail patterns where `{*a}` is deliberately NOT
+   marked as `{*ă}` in order to feed the later unstressed `*a → *æ → *e`
+   chain (e.g. gen.sg. *-az for geminate stems, nom.pl. *-os-derived forms
+   after z-loss). A plain short vowel in a ROOT position is an unmigrated
+   legacy form and should be corrected to acute.
+
+5. **Prefixes `bi-`, `ga-` carry a plain `{*a}` / `{*i}`, not `ă` and not
+   acute.** These Germanic prefixes are unstressed (the verb root bears
+   primary stress: `*bigínnăną`, `*galáubijăną`). The plain `{*a}` in `ga-`
+   is a deliberate choice so AFB can still front it to `{*æ}` → `{*e}`
+   (yielding OE `ġe-`).
+
+### §16.3 Why `ă` is not redundant with acute
+
+Acute marks the POSITIVE signal "this short vowel is stressed". Breve marks
+the POSITIVE signal "this short vowel is unstressed and inflectional." The
+plain unmarked `{*a}` is a third category — short, positionally ambiguous,
+reserved for specific morphological slots (prefix vowels, certain weak-tail
+patterns). These three categories are genuinely distinct and all three are
+referenced in FST rules.
+
+### §16.4 Not yet adopted: grave for secondary stress
+
+A future extension could use grave accent (`à è ì ò ù`) for secondary-stressed
+vowels in compound second elements (e.g. `*wérd-àldu`). This would support:
+- Inter-stress `*a → *u` raising (between primary and secondary stress peaks)
+- Syllable-count-sensitive i-apocope (Luick §296)
+- Compound-medial syncope
+
+Until compound-stress machinery is built in the FST, this is deferred. Current
+compounds are pre-resolved in the PROTOFORM (hyphens + pre-applied changes).
+
+### §16.5 Migration TODO
+
+- Old_English rows: 100% migrated. No action required.
+- Non-OE doculect rows: 102 distinct PROTOFORMs still use plain short root
+  vowels. These are never fed to the OE FST, so there is no correctness
+  impact; but data-consistency across cognate-set rows motivates migration.
+  See plan in session notes for the programmatic approach.
+
+### §16.6 Post-migration FST-rule audit plan
+
+After non-OE rows are migrated, every PROTOFORM in the repository will follow
+the convention. At that point, a rule audit can check:
+
+- Rules that currently accept `{*a}`-or-`{*á}`: can the plain clause be
+  dropped for rules that SHOULD only fire on stressed vowels? (Answer
+  depends on whether any plain `{*a}` in a root context still exists in
+  FST-input data. After migration, answer is no.)
+- Rules that currently accept `{*a}` only: are they truly unstressed-only?
+  If a stressed input could reach them, they need an `{*á}` clause.
+
+This audit is separate from the migration; migration is the prerequisite.
+
+### §16.7 Post-migration FST-rule audit (outcome, 2026-04-21)
+
+After completing the TSV migration (707 PROTOFORM updates, 947 PROTO updates in
+`germanic-aligned-final.tsv`; mismatch count unchanged at 37), the FST rules
+were audited for opportunities to restrict plain-vowel clauses to acute-only.
+
+**Findings:**
+
+- **Rules with paired `{*a}`/`{*á}` clauses** (`OEBreakingA`, `AngloFrisianBrightening`,
+  `OEIUmlautFronting`, `NWGmcNasalSpirantLengthening`, `OERMetathesis`): the
+  plain `{*a}` clauses are load-bearing for non-root `{*a}` that must undergo
+  the change — most importantly **AFB on prefix `ga-`**, which converts
+  unstressed `{*a}` to `{*æ}` → `{*e}` to give OE `ġe-` in `ġelīefan`,
+  `ġeloven`, etc. Removing plain clauses would break the prefix derivation.
+  **No change.**
+
+- **Rules with plain `{*a}` / `{*e}` / `{*i}` / `{*o}` / `{*u}` only** (e.g.
+  `OEUnstressedAFronting`, `OEPrefixAReduction`, `OEHighVowelApocope`,
+  `OEMedialSyncope`, `OEInterStressRaising`, `SieversLawSyncope`): these
+  rules target unstressed/inflectional positions by design. Before the
+  migration a misplaced plain `{*a}` in a root could have accidentally been
+  caught by them; after the migration every stressed root carries acute or
+  is long, so these rules *are now automatically restricted* to their
+  intended unstressed domain. No rule change needed — the TSV convention
+  is what protects the FST.
+
+- **Rules with acute `{*á}` only** (e.g. diphthong formation `{*é}{*u}→{*éo}`,
+  palatal diphthongization): these target stressed roots and are correct.
+
+**Conclusion:** the migration hardens the FST without requiring rule edits.
+The acute/plain/breve three-way distinction in the TSV now reliably
+partitions stressed / prefix-or-weak-tail / inflectional vowels, and existing
+rule contexts exploit exactly that partition. No simplifications applied.
