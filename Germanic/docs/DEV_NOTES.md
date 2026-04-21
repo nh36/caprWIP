@@ -20555,3 +20555,290 @@ were audited for opportunities to restrict plain-vowel clauses to acute-only.
 The acute/plain/breve three-way distinction in the TSV now reliably
 partitions stressed / prefix-or-weak-tail / inflectional vowels, and existing
 rule contexts exploit exactly that partition. No simplifications applied.
+
+## §17 RESEARCH + PLAN — Option A Refactor: Eliminate Breve `ă`, Adopt Campbell's Nasal-Context Rule (2026-04-21)
+
+### §17.0 Why §16 needs revision
+
+§16 (written earlier this session) documents the "three-way" acute/plain/breve
+system as if it were a principled phonological distinction. On review, it is
+not. It is an **engineering convention** that encodes morphology-indexed lexical
+tags as if they were vowel symbols. The literature (Campbell, Ringe/Taylor,
+Fulk, Brunner) uses only **length** (long vs short) at the input level; stress
+and morphological context are handled by **rule context and chronology**, not
+by diacritics on the vowels themselves.
+
+Specifically: §16.3 claims `{*ă}` marks "this short vowel is unstressed and
+inflectional" as a positive phonological signal. But the FST uses `{*ă}` and
+`{*a}` *interchangeably* in several inflectional slots:
+
+- Infinitive `-aną` uses PLAIN `{*a}` (pgrmWeakTailVowel line 303)
+- Class-I weak infinitive `-jăną` uses BREVE `{*ă}` (line 306)
+- Both surface as OE `-an` — identical outcome, different symbols.
+
+And conversely, the `ă g ą` slot (line 299) uses breve, but Campbell §333 /
+R/T p.350 say the `a` in this position DOES front (`*hāl-ag → *hāl-eg →
+hālig`). So the breve is *wrong* there relative to the literature — we get the
+right output for `huniġ` via a different pathway that bypasses the breve's
+intended shielding, suggesting the breve is not actually doing load-bearing work
+in that slot.
+
+### §17.1 What Campbell / R/T actually say
+
+**Campbell §333** (the key passage):
+
+> *a* is subject to the same alternative developments in unaccented as in
+> accented syllables, becoming *æ* normally, **but *a* before nasals**. […]
+> Except before nasals, unaccented *a* > *æ* (later *e*, §369), e.g. n.s.f.
+> weak nouns *tunge*, *éage*; a.s. of ō-declension *giefe*; g.s. of
+> a-declension OE *-es*, earlier *-æs* < *-as*; ending OE *-æg*, *-eg* (later
+> *-ig*, §376) < *-ag*, e.g. *hunæg*, *hāleg*.
+
+This is a **single phonological rule conditioned purely by following
+consonant**. No symbol distinction is needed at input.
+
+**Ringe/Taylor vol. 2 p.350** corroborates for `halig`:
+> `PNWGmc *hailagaz > PWGmc *hailag > *haleg > *haləg > OE halig`.
+
+Forms that surface with `-a-` in OE despite being unaccented fall into two
+classes:
+
+1. **Before a nasal in the same syllable** (Campbell §333): `-an` inf.,
+   `guman`, `éastan`. Rule context alone handles these.
+
+2. **From a long vowel shortened AFTER fronting had run** (Campbell §355):
+   3pl `-aþ` < `-ōþ`, and various `-ōsi` / `-ōþi` outcomes. These are a
+   **chronology** matter — late `*ō → *a` shortening runs after
+   unstressed-a fronting, so the resulting `*a` never meets the fronting
+   rule. Already implemented as `OELateOShortening` (ordered after AFB).
+
+These are the only two escape hatches. Everywhere else, unaccented `*a`
+fronts to `*æ` and then merges with `*e`.
+
+### §17.2 What `{*ă}` is actually doing in the current FST
+
+The rule `OEWeakTailReduction1a [{*ă} -> {*a}]` (unconditional) runs LATE,
+after AFB and fronting. So the entire effect of breve is:
+
+> Postpone this short vowel until after the fronting rules have fired, then
+> convert it to plain `{*a}`.
+
+That is: breve = "immune to fronting, but otherwise identical to `*a`."
+
+### §17.3 Inventory of current breve usages
+
+Following-consonant distribution of `ă` in the TSV (from
+`germanic-aligned-final.tsv`, 637 tokens counted):
+
+| Follows `ă` | Count | Campbell prediction | Current FST |
+|---|---|---|---|
+| `n` | 340 | `a` stays (nasal guard) | `ă → a` (same result) |
+| `z` | 290 | `a → æ → e` | `ă` shields; then `ă → a`; final `*az` apocopated → identical surface result because `-az` is lost entirely in OE before fronting can matter |
+| `g` | 4 | `a → æ → e` (halig) | `ă` shields — but output happens to be right via other rules |
+| `l` | 4 | `a → æ → e` | should front |
+| `i` | 1 | (in `ăi` = `*-ăi` dat.sg.) | handled separately via `ăi → ē` chain |
+| `-` | 7 | — (word-final) | final apocope / weak-tail reduction |
+
+And FST rule slots in `pgrmWeakTailVowel` that use `{*ă}`:
+
+- `ă`, `ă n`, `ă n ą`, `j ă n ą`, `i j ă n ą`, `ă n ē`, `ă l ō`, `ă z`,
+  `ă g ą`, plus various `_ _ ă z` patterns.
+
+**Crucial observation**: of the 340 `ă n` occurrences, *every single one*
+would be shielded by Campbell's nasal-context rule automatically. Of the 290
+`ă z` occurrences, the final `-az` is removed by apocope BEFORE fronting
+would matter; we need to verify the rule ordering but it's very likely
+transparent. The remaining `ă g/l/i/-` slots are a small set.
+
+### §17.4 Key FST rules affected
+
+Survey of all rules referencing `{*a}`, `{*á}`, or `{*ă}`:
+
+**Fronting / merger rules** (the target of the refactor):
+- `OEUnstressedAFronting [{*a} -> {*æ} || V C+ _ C]` — **NO nasal guard**
+  today; only fires on plain `{*a}` so breve shields by accident of symbol
+  choice. Phase 1 must add nasal guard.
+- `AngloFrisianBrightening` — paired `{*a}`/`{*á}` clauses with existing
+  nasal exception `_ [C - Nasal | .#.]`. Already Campbell-style.
+- `OELateUnstressedAgSuffix` — already targets plain `{*a}` before `{*g}`;
+  will start firing on slots previously shielded by `ă`, which is
+  correct per R/T p.350 (`*haleg → halig`).
+
+**Chronology rules** (must preserve ordering):
+- `OEEarlyOShortening [{*ō} -> {*a} || _ Nasal]` — runs BEFORE fronting.
+  Produces `a` in pre-nasal position. Campbell's nasal guard protects it.
+- `OELateOShortening [{*ō} -> {*a}]` — runs AFTER fronting. Produces `a`
+  that never meets the fronting rule. Output `-aþ`, `-as(t)` preserved.
+
+**Post-fronting collapse** (will be simplified):
+- `OEWeakTailReduction1a [{*ă} -> {*a}]` — after refactor, this rule
+  becomes a no-op (no more `{*ă}` in the stream). **Remove entirely.**
+
+**Context rules to re-verify after refactor**:
+- `OEBreakingA`, `OEIUmlautFronting`, `OERMetathesis`,
+  `NWGmcNasalSpirantLengthening` — all have paired `{*a}`/`{*á}` clauses;
+  need verification that removing the "shielded by ă" cases doesn't cause
+  spurious breaking/umlaut in inflectional positions.
+
+**Symbol-inventory rules to clean up last**:
+- `pgrmShortVowel`, `PGmcStarVowel`, `pgrmWeakTailVowel`, `pgrmLinkingVowel`:
+  remove `ă:{*ă}` from input alphabet and remove `{*ă}` from abstract star
+  alphabets.
+
+### §17.5 Phased refactor plan
+
+**Guiding principle**: each phase is a single logical change. After each
+phase: compile, run mismatch report, commit if count didn't regress (or
+expected to regress). If count regresses unexpectedly, rollback via
+`git reset --hard HEAD` (stashing any dirty WIP first) and reassess.
+
+Never touch git history beyond new commits on `prosodic-tier-exploration`.
+
+#### Phase 1 — Add nasal-context guard to `OEUnstressedAFronting`
+
+**Change**: rewrite the rule from
+
+```
+{*a} -> {*æ} || V C+ _ C
+```
+
+to
+
+```
+{*a} -> {*æ} || V C+ _ [C - EnglishStarNasal]
+```
+
+(Use existing `EnglishStarNasal` set if defined; otherwise inline
+`[{*n} | {*m}]`.)
+
+**Expected mismatch impact**: zero. Currently `{*a}` before nasal in
+unstressed position comes ONLY from certain chronology-specific rules; the
+nasal guard just makes explicit what the current symbol-shielding does
+implicitly for the breve slots. Plain-`{*a}` pre-nasal contexts today are
+rare and already handled (the infinitive uses plain `{*a}` and relies on —
+what, exactly? Need to verify). If this phase regresses, the rule is doing
+more work than I thought and the diagnosis in §17.2 is incomplete.
+
+**Verification**: re-run `python3 Germanic/tools/oe_mismatch_report.py`;
+expect 37 (unchanged).
+
+**Commit**: `phase 1: add nasal-context guard to OEUnstressedAFronting`.
+
+#### Phase 2 — Migrate breve `ă` → plain `a` in the FST input alphabets only
+
+**Change**: in `pgrmShortVowel`, `pgrmWeakTailVowel`, `pgrmLinkingVowel`,
+`PGmcStarVowel`, `PGmcStarBackVowel`, `EnglishStarShortVowel`,
+`EnglishWeakTailVowelStar`, `EnglishStarNonHighVowel`: replace every
+`ă:{*ă}` with `a:{*a}` and every `{*ă}` with `{*a}`. Do NOT yet touch the
+TSV. Do NOT yet remove `OEWeakTailReduction1a`.
+
+**Rationale for order**: if the grammar now accepts plain `a` wherever it
+previously accepted `ă`, it can still parse breve input (since the symbol
+still appears on the input side of `ă:{*ă}` anywhere it's typed in TSV — but
+no: `ă` needs `ă:{*ă}` to parse as input). So this phase DOES require TSV
+migration too, or the FST will reject breve characters.
+
+*Revised*: do Phase 2 as a combined change: migrate FST alphabets and TSV
+simultaneously. Script (Python, CRLF-preserving) that rewrites every `ă`
+to `a` in `germanic-aligned-final.tsv` and every `{*ă}`/`ă:` in
+`germanic.txt` to `{*a}`/`a:`. Verify character counts match.
+
+**Expected mismatch impact**: this is where it gets interesting. Most slots
+(`ă n`) will be protected by Phase 1's nasal guard. `ă z` slots should be
+transparent (final apocope). `ă g/l` slots will START fronting (e.g.
+if any `halig`-type form exists in OE data, it's already matching `hālig`
+— but via a different path).
+
+**Verification checklist**:
+1. Mismatch count (expect equal or lower — maybe a small improvement if
+   any word hinged on a path bug hidden by breve).
+2. Spot-check specific outputs:
+   - `libban`, `hebban` (weak-I with `jăn` → `jan`) still work
+   - `bakăną → bacan` (weak tail `ăn` → `an`)
+   - `wulf < *wulfaz` unchanged (final `-az` still apocopated)
+   - `huniġ < *xunagą` still works (may shift through `hunæg → huneg → hunig`)
+   - 3pl pres `-aþ` outputs unchanged (chronology path)
+   - infinitive `-an` outputs unchanged
+3. Compile cleanly, no symbol-not-found errors.
+
+**Commit**: `phase 2: replace {*ă} with {*a} throughout FST + TSV`.
+
+#### Phase 3 — Remove `OEWeakTailReduction1a`
+
+**Change**: delete the rule `OEWeakTailReduction1a [{*ă} -> {*a}]` from
+both the rule pipeline and any declaration; it is now a no-op since `{*ă}`
+no longer appears in the stream.
+
+**Expected mismatch impact**: zero.
+
+**Commit**: `phase 3: remove obsolete OEWeakTailReduction1a`.
+
+#### Phase 4 — Audit and clean paired `{*a}` / `{*á}` rule clauses
+
+With the notation now "short vowel: `a` or `á`" (two symbols, not three),
+walk each paired rule and decide:
+
+- If the rule must fire on stressed AND unstressed `a`: keep both clauses.
+- If the rule is stressed-only (`OEBreakingA` etc.): drop the plain
+  `{*a}` clause. Relies on TSV convention that every root-position short
+  vowel carries acute.
+- If the rule is unstressed-only: drop the `{*á}` clause. (Most already are.)
+
+Do each rule in its own commit with a mismatch verification.
+
+**Commit cadence**: one commit per rule cleanup.
+
+#### Phase 5 — Rewrite §16 in DEV_NOTES to reflect 2-way convention
+
+After phases 1–4 land:
+- Rewrite §16.1 inventory: two categories (acute = stressed; plain or
+  long = context-dependent).
+- Rewrite §16.3 to remove the "breve ≠ acute" argument (no longer exists).
+- Preserve §17 as historical record of the refactor.
+- Update §16.7 audit to reflect new state.
+
+**Commit**: `docs: rewrite §16 accent convention for 2-way system`.
+
+### §17.6 Risks and mitigations
+
+- **Risk**: Phase 2 reveals that some slot was actually relying on breve's
+  shielding (not just morphological indexing). Mismatch count goes up.
+  **Mitigation**: git revert, diagnose the specific slot, decide whether
+  to (a) add a targeted chronology fix, (b) add an explicit rule-context
+  guard, or (c) abandon Option A and document why.
+
+- **Risk**: Accidental introduction of bugs via mass `ă → a` substitution
+  (e.g. the character appearing inside comments or alignment columns).
+  **Mitigation**: the substitution script must be scoped to the PROTOFORM
+  and PROTO columns in TSV, and to `{*ă}` / `ă:` tokens in `germanic.txt`;
+  comments in `germanic.txt` that mention `ă` explanatorily can be left
+  alone in Phase 2 and reworded in Phase 5.
+
+- **Risk**: CRLF preservation gets broken (as in the earlier migration).
+  **Mitigation**: use the same binary-read / string-replace / binary-write
+  pattern that worked for the §16 migration.
+
+- **Risk**: The "before nasal → a stays" rule needs refinement for
+  *medial* nasal-plus-vowel cases (where the nasal is not same-syllable).
+  Campbell §334 notes that unaccented `*a > *æ` before a nasal *if the
+  nasal did not belong to the same syllable*, with later transfer. This
+  may matter for the `-anăz` (weak masc.) and `-erez` patterns.
+  **Mitigation**: in Phase 1, implement the straightforward rule; if
+  Phase 2 surfaces miscoded forms, add a Campbell §334 refinement.
+
+### §17.7 Success criterion
+
+The refactor succeeds when:
+
+1. Mismatch count ≤ 37 (current best) across all phases.
+2. `{*ă}` no longer appears anywhere in `germanic.txt` or the TSV's
+   PROTO/PROTOFORM columns.
+3. `OEWeakTailReduction1a` is removed.
+4. `OEUnstressedAFronting` has an explicit nasal-context guard matching
+   Campbell §333.
+5. §16 is rewritten to document a 2-way (not 3-way) convention that
+   aligns with field-standard notation.
+
+At that point, every unstressed-a outcome in the FST is explained by
+**rule context and chronology**, not by symbol-level tags — matching
+how Campbell, R/T, Fulk, and Brunner present the history.
