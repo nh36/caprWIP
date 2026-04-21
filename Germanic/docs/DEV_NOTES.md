@@ -20842,3 +20842,434 @@ The refactor succeeds when:
 At that point, every unstressed-a outcome in the FST is explained by
 **rule context and chronology**, not by symbol-level tags — matching
 how Campbell, R/T, Fulk, and Brunner present the history.
+
+### §17.8 Phase 1 — nasal-context guard on fronting is REDUNDANT (2026-04-21)
+
+**Outcome of Phase 1 experimentation: abandon the nasal-context guard.**
+The current pipeline already achieves Campbell §333 / §334 behaviour
+through chronology, without needing any nasal-context restriction on
+`OEUnstressedAFronting`. Adding such a guard *regresses* the output.
+
+#### Attempt history
+
+1. Blunt guard `|| V C+ _ [C - Nasal]`: blocks fronting before any nasal.
+   Mismatch 37 → 38. `*fúnðanăz → fundan` (expected `funden`).
+2. Refined guard `|| V C+ _ [[C - Nasal] | [Nasal V]]`: tries to permit
+   fronting before a heterosyllabic (onset) nasal. Mismatch still 38,
+   same regression. Traced the refined rule directly in foma: the
+   `[Nasal V]` alternative does not fire on `*fúndan` because —
+   **critically** — by the time `OEUnstressedAFronting` runs, the
+   following `*ă` has *already* been apocopated by `OEFinalSchwaApocope`
+   (line 2604, which runs ~48 rules before fronting at line 2651). So
+   the only right-context available is `_ *n .#.`, i.e. coda, not
+   `_ *n V`. The guard therefore cannot see the heterosyllabic context
+   Campbell §334 describes.
+
+#### Why the baseline rule is already correct
+
+The baseline (no nasal guard) fronts every unstressed `*a` in
+`V C+ _ C` / `V C+ _ #` context. The §333 exception for infinitives is
+enforced NOT by the fronting rule but by an earlier stage that
+*nasalises* the stem vowel so the fronting rule no longer sees it:
+
+```
+OEHeavySyllableNasalApocope:   {*ą} → 0 || C _ .#.
+OESecondaryNasalization:       [{*a}|{*ă}] → {*ą} || _ {*n} .#.
+OEFinalSchwaApocope:           {*ă} → 0 || _ .#.
+```
+
+Derivations:
+
+- **Infinitive `*hólpaną`** (stem-final `*ą`):
+  1. HeavyNasalApocope drops final `*ą` → `*hólpan`.
+  2. SecondaryNasalization sees `*a` before word-final `*n` → `*hólpąn`.
+  3. Fronting rule targets `*a`, not `*ą`: does not fire.
+  4. Later `OEWeakTailReduction1b` denasalises `*ą → *a` before a nasal:
+     `*hólpąn → *hólpan → helpan`. ✓
+
+- **Past participle `*fúnðanăz`** (stem-final `*ă`, preceded by `*a-n-`):
+  1. z-drop: `*fúndană`.
+  2. HeavyNasalApocope: no `*ą` in form; no effect.
+  3. SecondaryNasalization: `*n` is followed by `*ă`, not `.#.`; no
+     effect.
+  4. FinalSchwaApocope: `*ă → 0` word-finally → `*fúndan`.
+  5. Fronting rule fires on medial `*a` (no `*ą` marking) → `*fúndæn`
+     → `funden`. ✓
+
+The infinitive/participle distinction is thus made by
+`OESecondaryNasalization` firing BEFORE `OEFinalSchwaApocope`. The
+infinitive's nasal is word-final at that moment (after heavy-syllable
+apocope) and gets the `*ą` protective marking; the participle's nasal
+is still intervocalic and does not get marked.
+
+#### Phase 1 conclusion
+
+- Revert `OEUnstressedAFronting` to its committed (no-guard) form.
+- Do NOT add a nasal-context restriction; the context would have to be
+  evaluated *before* final-vowel apocope, which the rule ordering does
+  not currently guarantee (and changing the order is a separate,
+  higher-risk decision that should only be made with independent
+  motivation and a documented proposal).
+- The Option A migration (§17) can proceed WITHOUT a Phase 1
+  fronting-rule change. What Phase 1 actually needs to ensure, once
+  `{*ă}` is removed from the data, is that the apocope/nasalization
+  machinery still distinguishes word-final short unstressed vowels from
+  stressed ones. That is a re-scoping task — to be drafted as §17.9
+  before any further code changes.
+
+Action taken now: only a documentation update. The rule in
+`germanic.txt` will be reverted to baseline in the next edit so the
+mismatch count returns to 37.
+
+### §17.9 Rescoped Phase 1 — what actually breaks when `{*ă}` is removed (2026-04-21)
+
+Replaces the naïve Phase 1 in §17.5. We now know (from §17.8) that the
+fronting rule needs NO change. The real Phase 1 work is auditing every
+rule that treats `{*ă}` as semantically distinct from `{*a}` and
+reformulating it in a way that doesn't depend on the breve symbol.
+
+#### §17.9.1 Semantic roles of breve in the current grammar
+
+Beyond the symbol-shielding-from-fronting role (which §17.8 showed to be
+an accidental side effect of symbol identity, not a required function),
+`{*ă}` does four distinct jobs:
+
+1. **Morphological tag in weak-tail shape definitions**
+   (`pgrmWeakTailVowel`, `EnglishWeakTailVowelStar`, `pgrmLinkingVowel`,
+   and the `*a*r*ă*z`-style slots in `pgrmWord`). Breve declares "this
+   position is an inflectional/linking vowel, not a stem vowel".
+
+2. **Trigger for compound-linking syncope** (`OECompoundLinkingSyncope`,
+   line 2458): `{*ă} → 0 || C _ C+ V`. The rule must NOT delete medial
+   stem `a` (e.g. the `a` in `*fúndanăz`). Today this is ensured purely
+   by symbol identity: stem `a` is `{*a}`, linking `a` is `{*ă}`.
+
+3. **Trigger for word-final schwa apocope** (`OEFinalSchwaApocope`,
+   line 999): `{*ă} → 0 || _ .#.`. Drops final unstressed short vowels
+   (participle `*fúndană → fúndan`). Stressed final `a` (if any) must
+   NOT drop.
+
+4. **Trigger for post-h-loss contraction** (`OEContraction`, lines
+   2492–2507): `V + {*ă} → V̄`. Only applies when the following short
+   vowel is unstressed (weak-tail), not when it is a stressed stem
+   vowel. Today symbol identity enforces this.
+
+There are also cosmetic appearances in rule *contexts* (e.g. in
+`OESecondaryNasalization`'s LHS `[{*a} | {*ă}]`) that disappear for free
+once breve merges into `a` — the rule trivially becomes `{*a} → {*ą}`.
+And `OEWeakTailReduction1a [{*ă} → {*a}]` becomes a no-op to delete.
+
+#### §17.9.2 Replacement strategy by role
+
+Roles 1–4 each need an explicit phonological/positional criterion that
+does not rely on breve. Candidates:
+
+- **Role 1 (morphological tag)**: the weak-tail shape definitions in
+  `pgrmWeakTailVowel` etc. don't need a special symbol — they're already
+  positional (everything after the first stressed root syllable). We
+  simply rewrite `ă:{*ă}` → `a:{*a}` in those slots. No rule depends on
+  breve-vs-plain here except via roles 2–4.
+
+- **Role 2 (compound-linking syncope)**: today the rule targets
+  `{*ă}` globally and relies on convention that only linking vowels are
+  marked breve. After migration, the target is "short unstressed medial
+  vowel in `C _ C+ V` context". Since stressed vowels in Proto-Germanic
+  are marked with an acute OR are long, we can reformulate as:
+
+  ```
+  {*a} → 0 || OEAnyConsonant _ OEAnyConsonant+ EnglishStarVocalic
+  ```
+
+  *Risk*: this now fires on the medial `a` in any `C a C+ V` slot,
+  including the participle stem-vowel slot `*fúndanăz` → the medial
+  `a` sits in `C [a] C+ V` context (`*d [a] n ă`). That WOULD get
+  syncopated. ❌
+  
+  So Role 2 cannot simply generalise: we need additional context to
+  protect paradigm-internal stem vowels. Options:
+  - (a) Restrict to positions immediately after a root-internal
+    syllable boundary — but foma doesn't know syllable structure.
+  - (b) Key off a compound marker. If compound-linking positions have a
+    distinct marker in the TSV (e.g. hyphen in PROTOFORM), preserve it
+    and key the rule off that. Some compound TSV forms already use
+    hyphens (e.g. `*regnă-bugô`). Audit needed.
+  - (c) Use a stress-adjacency test: "short `a` between two non-initial
+    consonant groups AND NOT followed by a syllable that starts a new
+    stem". Non-trivial.
+  - (d) Keep `{*ă}` ONLY for linking vowels (in TSV and in this one
+    rule), migrate everywhere else. This is a partial refactor but may
+    be the pragmatic minimum.
+
+- **Role 3 (final schwa apocope)**: reformulate as
+  `{*a} → 0 || [short, not acute] _ .#.`. Since PGmc had no word-final
+  stressed short `*a` (stressed `a` was always long or had become long
+  via compensatory lengthening or diphthongisation), the simple form
+  `{*a} → 0 || _ .#.` is probably SAFE. Must verify by searching the
+  TSV for any stressed word-final plain `a`. Also need to verify no FST
+  rule produces one.
+
+- **Role 4 (post-h-loss contraction)**: reformulate as `V + a → V̄`
+  where V is a short vowel, keying off the positional context after
+  h-loss. The rule already lives in `OEContraction` with specific
+  contexts. Should be safe to drop breve-specific patterns and keep
+  only the plain-`a` patterns, since the rule only fires after h-loss
+  brings two vowels together and those second vowels are by definition
+  in weak-tail (unstressed) position in the relevant OE lexicon. Again,
+  verify against TSV and against the pipeline state at this stage.
+
+#### §17.9.3 Feasibility verdict
+
+Roles 1, 3, and 4 look tractable — each can be reformulated with
+purely positional context, given a quick TSV audit.
+
+Role 2 (compound-linking syncope) is the sticking point. Without
+breve, we lose the ability to distinguish a linking `a` from a stem
+`a` at the same phonological position. A pragmatic path is a
+**partial migration**: keep breve ONLY in linking-vowel position in
+the TSV (option (d)), migrate everywhere else. This changes the
+question from "eliminate breve entirely" to "reduce breve to its one
+genuinely-necessary role".
+
+Alternatively (option (b)), introduce an explicit morphological
+marker on compound boundaries in the TSV (many compounds already have
+a hyphen) and key the syncope rule off that. This is cleaner in the
+long run but requires an audit of compound forms in the TSV.
+
+#### §17.9.4 Proposed revised phase plan
+
+Do not commit any FST changes until each sub-phase passes mismatch
+verification at 37. Document findings from the audits below in this
+section before making code changes.
+
+**Sub-phase 1a — audits (no code changes):**
+- A1. Survey TSV `germanic-aligned-final.tsv` for any stressed
+  word-final plain `a` (to de-risk Role 3).
+- A2. Survey TSV for all forms with breve `ă` and categorise by
+  function: linking vowel (Role 2), inflectional weak tail (Role 1),
+  word-final schwa (Role 3), pre-h-loss linking (Role 4).
+- A3. Survey FST for every rule referencing `{*ă}` directly or in a
+  context; classify by role (done partially in §17.9.1 above).
+- A4. Survey TSV for compound forms to determine whether hyphens (or
+  another morphological marker) reliably flag compound boundaries.
+
+**Sub-phase 1b — decide on breve scope:**
+After A1–A4, choose between:
+- **Plan X (full removal)**: viable only if A4 shows compound markers
+  are reliable AND Role 2 can be reformulated cleanly.
+- **Plan Y (partial removal)**: keep breve for linking vowels only.
+  Reduces the three-accent system to "acute + plain + breve-in-linking"
+  = one less symbol class in practice, with documented rationale.
+
+**Sub-phase 1c — implement chosen plan, one role at a time:**
+- Role 3 first (simplest): generalise `OEFinalSchwaApocope` to plain
+  `a`, migrate word-final breves in TSV. Verify 37.
+- Role 4 next: drop `V+{*ă}` contraction clauses where duplicate with
+  `V+{*a}`; migrate any affected TSV forms. Verify 37.
+- Role 1 next: migrate inflectional breves in TSV (non-linking). The
+  weak-tail shape definitions in `pgrmWord` etc. change `ă:{*ă}` to
+  `a:{*a}`. Delete `OEWeakTailReduction1a`. Verify 37.
+- Role 2 last: either migrate with new compound-marker logic (Plan X)
+  or leave intact (Plan Y). Verify 37.
+
+**Sub-phase 1d — §16 rewrite:**
+Describe the final accent convention (2- or 3-way), with the specific
+role of breve if retained.
+
+Each sub-phase is a commit. No git history rewriting.
+
+
+### §17.10 Decision — postpone Role 2 (compound-linking); adopt Plan Y-minimal
+
+Per user decision (2026-04-21): compound-linking syncope (Role 2) is
+hard and its resolution is not on the critical path. We adopt a
+*Plan Y-minimal* scope for now:
+
+- **Retain `{*ă}` exclusively for compound-linking vowels.** That is,
+  after Phase 1 completes, the only remaining breve occurrences in the
+  TSV and in the grammar will be in compound-linking position
+  (currently the `ă:{*ă}` slot in `pgrmLinkingVowel`, and the
+  corresponding linking-vowel patterns in `pgrmWord`, e.g. any
+  `*regnă-bugô`-type entries).
+- Migrate Roles 1, 3, 4 (inflectional tag, final apocope, contraction)
+  away from breve, following the per-role plan below.
+- Defer Role 2 to a separate §17.11 future effort once Phase 1 is
+  stable and committed.
+
+This trims audits A2 (categorise breves) and A4 (compound markers)
+down to the minimum needed to SEPARATE compound-linking breves from
+all other breves. A1 (stressed word-final `a`) and A3 (FST rule
+classification) remain as written.
+
+#### §17.10.1 Revised sub-phase plan
+
+**1a audits (no code changes):**
+- A1. Scan TSV for any row with stressed word-final plain `a`.
+- A2'. Categorise every `ă` occurrence in TSV as either (i) linking
+  vowel or (ii) non-linking. A linking vowel is one that sits in a
+  compound-internal position (typically between two stem roots). The
+  practical heuristic: tokens containing a `-` (hyphen) in PROTOFORM,
+  or matching known compound-linking slots (`*-ă-` between two stems).
+  Record counts per class and list all non-linking `ă` forms.
+- A3'. Enumerate every FST rule referencing `{*ă}`; tag each as
+  Role 1 (tag), 2 (linking), 3 (final apocope), 4 (contraction), or
+  "hybrid" (accepts linking + non-linking context).
+
+**1b migrate Role 3 (final apocope):**
+1. Confirm A1 shows no stressed word-final plain `a` needing
+   protection.
+2. Generalise `OEFinalSchwaApocope`: `{*ă} → 0 || _ .#.` becomes
+   `{*a} → 0 || _ .#.` (OR add `{*a}` clause alongside, keeping
+   backwards compatibility until TSV migration).
+3. In TSV, change every word-final `ă` that is NOT compound-linking
+   to `a`. (Per A2', these are the non-linking final breves.)
+4. Compile, verify 37 mismatches.
+5. Commit: `phase 1b (role 3): generalise final apocope to plain {*a}`.
+
+**1c migrate Role 4 (post-h-loss contraction):**
+1. In `OEContraction`, drop the breve-specific clauses
+   (`{*a}{*ă} → {*ā}`, etc.) — they become redundant once the input
+   no longer contains `{*ă}` in those positions. Keep the
+   `{*a}{*a} → {*ā}` clauses.
+2. Any TSV entries that depended on breve in the contraction-feeding
+   position (typically a medial vowel after h-loss of the form `V h V`
+   where the second V was breve) need to be migrated. Use A2' to
+   identify them.
+3. Compile, verify 37.
+4. Commit: `phase 1c (role 4): drop breve clauses from OEContraction`.
+
+**1d migrate Role 1 (weak-tail morphological tag) + remove
+`OEWeakTailReduction1a`:**
+1. In TSV, change every remaining non-linking `ă` to `a` in
+   inflectional positions.
+2. In `germanic.txt`, change every non-linking `ă:{*ă}` to `a:{*a}`
+   in `pgrmWord`, `pgrmShortVowel`, `pgrmWeakTailVowel`, and the star
+   alphabets (`PGmcStarVowel`, `EnglishStarShortVowel`, etc.).
+   CRITICALLY: do NOT touch `pgrmLinkingVowel` (that stays as
+   `ă:{*ă} | 0` per Plan Y-minimal).
+3. `OEWeakTailReduction1a [{*ă} → {*a}]` is now only relevant for
+   any surviving linking breve. Keep it if linking syncope fails for
+   some reason (fallback), otherwise it becomes a no-op for all
+   syncopated-away linking breves. Leave it in place with a comment
+   tying it to the Role 2 (still-pending) breve retention.
+4. In rule *contexts* that used `[{*a} | {*ă}]` (e.g.
+   `OESecondaryNasalization`), simplify to `{*a}` only (since `{*ă}`
+   now only appears in linking position and never sits before a
+   word-final nasal).
+5. Compile, verify 37.
+6. Commit: `phase 1d (role 1): migrate inflectional breves to plain {*a}`.
+
+**1e §16 accent-convention doc update:**
+Rewrite §16 to describe the new convention:
+- acute `á é í ó ú` = stressed short root vowel;
+- long `ā ē ī ō ū ǭ ô` = stressed by convention (vowel length implies
+  stress in PGmc roots);
+- plain `a e i o u` = unstressed inflectional or sub-stressed
+  (paradigm-cell contexts);
+- breve `ă` = **reserved for compound-linking vowels only** (Role 2).
+  Documented as a temporary retention pending Role 2 reformulation.
+
+Also update §17.5 to point readers to §17.9 / §17.10 as the authoritative
+plan, and mark §17.5's Phase 1 (nasal guard) as superseded.
+
+Commit: `phase 1e: rewrite §16 for 2+ε-way convention (linking breve retained)`.
+
+#### §17.10.2 What §17.11 (future) will address
+
+The outstanding Role 2 work is: reformulate `OECompoundLinkingSyncope`
+so it does not depend on the `{*ă}` symbol — either by keying off a
+morphological compound marker (e.g. hyphen in PROTOFORM, or a
+dedicated compound-boundary symbol `{-}` in the grammar) or by
+another mechanism. This is deferred. Breve survives in linking
+position until §17.11 is done.
+
+
+### §17.10.3 Audit findings (A1, A2', A3') — 2026-04-21
+
+#### A1 — stressed word-final plain `a` in TSV
+
+**Zero occurrences.** Every TSV PROTOFORM ending in an unaccented `a`
+was already breve. Safe to generalise `OEFinalSchwaApocope` to target
+plain `{*a}` — no stressed-position collateral.
+
+#### A2' — linking vs non-linking breves in TSV
+
+- **Linking breves** (compound-internal, hyphen in PROTOFORM): 7 rows,
+  across 2 distinct forms: `*regnă-bugô`, `*wíră-aldiz`. These stay
+  breve per §17.10.
+- **Non-linking breves**: 643 rows, 190 distinct forms. These migrate
+  to plain `a`. Position distribution (of the 190 distinct forms,
+  counting only the first breve per form):
+    - word-final: 1 form (`*wíθră`) — target of Role 3 migration
+    - pre-`*n`: 101 — inflectional endings (infinitive `*-ăną`,
+      nominal `*-ăn`, participle `*-ănaz`, etc.)
+    - pre-`*z`: 84 — masc-nom-sg `*-ăz`
+    - pre-other (`*l`, `*i`, `*g`): 4 (`*saiwălō`, `*spánnăi`,
+      `*xúnăgą`, `*sáiwălō`)
+
+Total migration footprint in TSV: 643 rows, 189 unique non-linking
+forms (190 - 1 final that's already captured). The final-position
+form (`*wíθră`) also migrates — `ă → a`.
+
+#### A3' — FST rule classification by role
+
+Every `{*ă}` reference in `germanic.txt`, classified:
+
+**Role 1 (morphological weak-tail tag) — migrate in Phase 1d**:
+- Lines 297, 299–302, 304–306, 308–309, 312: `pgrmWord` weak-tail
+  shape alternatives (`ă:{*ă}`, `ă:{*ă} n:{*n} ą:{*ą}`, etc.).
+  Change each `ă:{*ă}` to `a:{*a}`.
+- Lines 326, 329, 332, 335, 338, 355, 358: further `pgrmWord` slots
+  (`e:{*e} n:{*n} ă:{*ă} z:{*z}`, etc.).
+- Line 469: `{*ă}` entry in `PGmcStarVowel` alphabet. After migration
+  the symbol is unused outside Role 2; keep the entry anyway (it is
+  still in `pgrmLinkingVowel`'s output side).
+- Line 848: `{*ă}` in `EnglishStarShortVowel`. Same — keep.
+- Lines 907, 909–915: `EnglishWeakTailVowelStar` alternatives — mirror
+  of `pgrmWord` slots. Migrate each.
+- Lines 1574, 1585, 1587, 1589, 1590, 1592: right-context patterns in
+  `OEARestoration`. Mirror of weak-tail shapes. Migrate each.
+- Line 1624: `{*ă}` entry in `EnglishStarNonHighVowel`. Keep.
+- Line 1043: `{*ă}` entry in `EnglishRhoticWeakTail`. Keep (Role 2
+  breve should still count as a weak tail).
+
+**Role 2 (compound-linking) — KEEP per §17.10**:
+- Line 440: `pgrmLinkingVowel [ă:{*ă} | 0]`. Unchanged.
+- Line 2458: `OECompoundLinkingSyncope` targets `{*ă}`. Unchanged.
+
+**Role 3 (final apocope) — migrate in Phase 1b**:
+- Line 999: `OEFinalSchwaApocope [{*ă} → 0 || _ .#.]`. Change target
+  to `{*a}`. A1 verified no stressed collateral.
+- Line 2012: `OEWeakTailReduction1a [{*ă} → {*a}]`. After Role 1/3
+  migration, this rule only fires on Role 2 linking breves that
+  escaped syncope. Keep it (as a safety net) with an updated comment.
+
+**Role 4 (post-h-loss contraction) — migrate in Phase 1c**:
+- Lines 2492, 2494, 2496, 2498, 2500, 2502, 2503, 2506, 2507: each of
+  the form `{*V} {*ă} → {*V̄}`. After Role 1 migration these become
+  redundant duplicates of the plain-`a` clauses on the preceding/
+  following lines. Simply delete the `{*ă}` clauses.
+
+**Hybrid (will simplify)**:
+- Line 1987: `OESecondaryNasalization [[{*a} | {*ă}] → {*ą} || _ *n .#.]`.
+  After migration, simplify to `[{*a}] → {*ą} || …` (the `{*ă}` branch
+  never fires because linking breves don't appear before word-final
+  `*n`).
+
+**Orthography / surface (verify, likely keep)**:
+- Line 781: `{*ă} → a` in OE orthography. Keep — handles surviving
+  linking breve on the rare occasion it wasn't syncopated.
+- Line 1174: `{*ă} → {*ə}` in `EnglishRhoticBreaking`. Keep (same
+  rationale).
+
+**Comments referencing `ă` — update in Phase 1e**:
+- Lines 1557, 1958, 2009.
+
+#### §17.10.4 Migration confidence summary
+
+- A1 green (0 rows): Role 3 migration is low-risk.
+- A2' gives us a precise, bounded migration target: 190 distinct TSV
+  forms, 643 rows.
+- A3' confirms every Role-1/3/4 rule has a clean positional /
+  contextual replacement. No surprise dependencies.
+
+Proceeding to Phase 1b (Role 3).

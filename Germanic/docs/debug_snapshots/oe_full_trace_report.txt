@@ -1,4 +1,4 @@
-=== BUCKET: exact_match (336) ===
+=== BUCKET: exact_match (337) ===
 
 --- adder ---
 PROTO: *nēdrōn
@@ -969,6 +969,11 @@ OUTPUTS: niht
 PROTO: *márōn
 EXPECTED: mære
 OUTPUTS: mære
+
+--- nose ---
+PROTO: *núsō
+EXPECTED: nosu
+OUTPUTS: nosu
 
 --- one ---
 PROTO: *áinăz
@@ -3545,7 +3550,7 @@ Orthography: *þistl, þistl
 Surface: þistl
 
 
-=== BUCKET: vowel_quality_other (14) ===
+=== BUCKET: vowel_quality_other (13) ===
 
 --- buck ---
 PROTO: *búkkăz
@@ -3786,86 +3791,6 @@ GlideDeletion: *m*ō*n*e*θ
 Epenthesis: *m*ō*n*e*θ
 Orthography: mōne*þ, mōneþ
 Surface: mōneþ
-
---- nose ---
-PROTO: *násō
-EXPECTED: nosu
-OUTPUTS: nasu
-
-ProtoInput: *n*á*s*ō
-InitialKn: *n*á*s*ō
-Palatalisation: *n*á*s*ō
-ConsonantRules: *n*á*s*ō
-WestGermanic: *n*á*s*ō
-NWGmcUnstressedAiMonoph: *n*á*s*ō
-NWGmcILowering: *n*á*s*ō
-WsPalatalGlide: *n*á*s*ō
-NWGmcULowering: *n*á*s*ō
-NWGmcUnstressedORaising: *n*á*s*ō
-NWGmcMnDissimilation: *n*á*s*ō
-NWGmcNStemNLoss: *n*á*s*ō
-NWGmcFinalLongORaising: *n*á*s*u
-NWGmcLongELowering: *n*á*s*u
-NWGmcLongENasalRounding: *n*á*s*u
-NasalSpirantLengthening: *n*á*s*u
-NasalSpirantLoss: *n*á*s*u
-NWGmcPreconsonantalXLoss: *n*á*s*u
-AuFronting: *n*á*s*u
-WWSimplification: *n*á*s*u
-DiphthongLeveling: *n*á*s*u
-EwLongDiphthong: *n*á*s*u
-AwLongDiphthong: *n*á*s*u
-PrefixAReductionEarly: *n*á*s*u
-InterStressRaising: *n*á*s*u
-AngloFrisianBrightening: *n*æ*s*u
-Breaking: *n*æ*s*u
-VelarFricPal: *n*æ*s*u
-ARestoration: *n*a*s*u
-HeavySyllableNasalApocope: *n*a*s*u
-SecondaryNasalization: *n*a*s*u
-FinalSchwaApocope: *n*a*s*u
-CompoundLinkingSyncope: *n*a*s*u
-BAllophony: *n*a*s*u
-SieversLawSyncope: *n*a*s*u
-SkPalatalization: *n*a*s*u
-VelarPalatalization: *n*a*s*u
-PostVelarWLoss: *n*a*s*u
-WLossBeforeI: *n*a*s*u
-IUmlaut: *n*a*s*u
-WsPalatalDiphthongization: *n*a*s*u
-JClusterCoalescence: *n*a*s*u
-NasalDissimilation: *n*a*s*u
-BackMutation: *n*a*s*u
-WsPalatalUmlaut: *n*a*s*u
-WeakTailNasalLoss: *n*a*s*u
-WeightMarkers: *n*a*s*u
-HighVowelApocope: *n*a*s*u
-MedialSyncope: *n*a*s*u
-LAdjacentSyncope: *n*a*s*u
-DentalAssimilation: *n*a*s*u
-PreconsonantalDegemination: *n*a*s*u
-UnstressedLongVowelShortening [carry]: *n*a*s*u
-MedUnstressedULowering [carry]: *n*a*s*u
-UnstressedIMarking [carry]: *n*a*s*u
-MedUnstressedILowering [carry]: *n*a*s*u
-PrefixIReduction [carry]: *n*a*s*u
-PrefixAReductionLate [carry]: *n*a*s*u
-WeakTailReduction [carry]: *n*a*s*u
-JLossAfterHeavy [carry]: *n*a*s*u
-FinalGeminateSimplification [carry]: *n*a*s*u
-IntervocalicJVocalization [carry]: *n*a*s*u
-UnstressedEIContraction [carry]: *n*a*s*u
-WeightCleanup [carry]: *n*a*s*u
-HLoss [carry]: *n*a*s*u
-Contraction [carry]: *n*a*s*u
-RMetathesis [carry]: *n*a*s*u
-ProtoToOE [resume]: *n*a*s*u
-WGlide: *n*a*s*u
-GhMarker: *n*a*s*u
-GlideDeletion: *n*a*s*u
-Epenthesis: *n*a*s*u
-Orthography: nasu
-Surface: nasu
 
 --- rust ---
 PROTO: *rústō
@@ -5305,8 +5230,8 @@ loam :: *láimōn
 NWGmcNStemNLoss: 2
 loam :: *láimōn, widow :: *wíduwōn
 
-NWGmcFinalLongORaising: 9
-both :: *bō, meed :: *mízdō, shoulder :: *skúldrō, tongs :: *tángō, soul :: *sáiwălō, nose :: *násō, rust :: *rústō, wool :: *wúllō, spindle :: *spénnilō
+NWGmcFinalLongORaising: 8
+both :: *bō, meed :: *mízdō, shoulder :: *skúldrō, tongs :: *tángō, soul :: *sáiwălō, rust :: *rústō, wool :: *wúllō, spindle :: *spénnilō
 
 NWGmcLongELowering: 1
 sister :: *swéstēr
@@ -5340,8 +5265,8 @@ PrefixAReductionEarly: 0
 InterStressRaising: 1
 world :: *wír-aldu
 
-AngloFrisianBrightening: 9
-hay :: *xáwwją, laugh :: *xláxjăną, spare :: *spárēną, navel :: *náblô, strew :: *stráwjăną, nose :: *násō, make (3sg) :: *mákōθi, stretch :: *strákkijăną, wasp :: *wábsăz
+AngloFrisianBrightening: 8
+hay :: *xáwwją, laugh :: *xláxjăną, spare :: *spárēną, navel :: *náblô, strew :: *stráwjăną, make (3sg) :: *mákōθi, stretch :: *strákkijăną, wasp :: *wábsăz
 
 Breaking: 4
 meed :: *mízdō, ten :: *téxun, laugh :: *xláxjăną, learn (3sg) :: *líznōθi
@@ -5349,8 +5274,8 @@ meed :: *mízdō, ten :: *téxun, laugh :: *xláxjăną, learn (3sg) :: *líznō
 VelarFricPal: 2
 hay :: *xáwwją, laugh :: *xláxjăną
 
-ARestoration: 2
-nose :: *násō, make (3sg) :: *mákōθi
+ARestoration: 1
+make (3sg) :: *mákōθi
 
 HeavySyllableNasalApocope: 6
 hay :: *xáwwją, laugh :: *xláxjăną, spare :: *spárēną, strew :: *stráwjăną, stretch :: *strákkijăną, sunder :: *súndrōjăną
@@ -5453,8 +5378,8 @@ nine :: *néwun, strew :: *stráwjăną, widow :: *wíduwōn, show (3sg) :: *sk�
 Epenthesis: 17
 hay :: *xáwwją, weasel :: *wéslon, withy :: *wīθijăz, west :: *wéstănē, shoulder :: *skúldrō, nine :: *néwun, sister :: *swéstēr, soul :: *sáiwălō, strew :: *stráwjăną, fowl :: *fúglăz, widow :: *wíduwōn, wolf :: *wúlfăz, wool :: *wúllō, world :: *wír-aldu, show (3sg) :: *skáwōθi, cud :: *kwíθuz, wasp :: *wábsăz
 
-Orthography: 44
-hay :: *xáwwją, weasel :: *wéslon, both :: *bō, meed :: *mízdō, ten :: *téxun, withy :: *wīθijăz, loam :: *láimōn, west :: *wéstănē, fire :: *fūri, shoulder :: *skúldrō, sieve :: *síbăz, tongs :: *tángō, laugh :: *xláxjăną, nine :: *néwun, reek :: *ráukiz, spare :: *spárēną, spear :: *spéru, three :: *θréjez, navel :: *náblô, sister :: *swéstēr, soul :: *sáiwălō, strew :: *stráwjăną, thistle :: *θístilăz, buck :: *búkkăz, fowl :: *fúglăz, month :: *mēnōθz, nose :: *násō, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfăz, wool :: *wúllō, world :: *wír-aldu, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (3sg) :: *skáwōθi, spindle :: *spénnilō, tick :: *tíkkô, cud :: *kwíθuz, shilling :: *skéllinăz, stretch :: *strákkijăną, sunder :: *súndrōjăną, wasp :: *wábsăz
+Orthography: 43
+hay :: *xáwwją, weasel :: *wéslon, both :: *bō, meed :: *mízdō, ten :: *téxun, withy :: *wīθijăz, loam :: *láimōn, west :: *wéstănē, fire :: *fūri, shoulder :: *skúldrō, sieve :: *síbăz, tongs :: *tángō, laugh :: *xláxjăną, nine :: *néwun, reek :: *ráukiz, spare :: *spárēną, spear :: *spéru, three :: *θréjez, navel :: *náblô, sister :: *swéstēr, soul :: *sáiwălō, strew :: *stráwjăną, thistle :: *θístilăz, buck :: *búkkăz, fowl :: *fúglăz, month :: *mēnōθz, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfăz, wool :: *wúllō, world :: *wír-aldu, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (3sg) :: *skáwōθi, spindle :: *spénnilō, tick :: *tíkkô, cud :: *kwíθuz, shilling :: *skéllinăz, stretch :: *strákkijăną, sunder :: *súndrōjăną, wasp :: *wábsăz
 
 Surface: 14
 hay :: *xáwwją, withy :: *wīθijăz, laugh :: *xláxjăną, reek :: *ráukiz, three :: *θréjez, thistle :: *θístilăz, month :: *mēnōθz, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (3sg) :: *skáwōθi, cud :: *kwíθuz, stretch :: *strákkijăną

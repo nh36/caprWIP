@@ -1988,6 +1988,15 @@ define OESecondaryNasalization [
 ];
 
 define OEUnstressedAFronting [
+    # Campbell §333: unaccented *a > *æ (later *e, §369) EXCEPT before a
+    # tautosyllabic (coda) nasal. Campbell §334: before a heterosyllabic
+    # nasal, fronting DOES apply, yielding e.g. strong past participles
+    # in -en < *-anaz.
+    # See DEV_NOTES §17.8: the §333 coda-nasal exception is NOT enforced
+    # here but by OESecondaryNasalization + OEFinalSchwaApocope chronology:
+    # infinitive *-aną → *-ąn (nasalised, protected from fronting);
+    # participle *-anăz → *-an (plain *a, fronted to *æ → -en).
+    # Any nasal-context guard on this rule over-blocks the participle.
     {*a} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
 ];
 
