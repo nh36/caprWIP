@@ -21596,4 +21596,154 @@ configuration*. They are dead code rather than duplicates.
 
 Role 4 is then complete. Role 1 remains for Phase 1d.
 
+### §17.10.11 — Phase 1d (Role 1) research findings: breve is NOT an engineering tag; rescope
+
+Phase 1d was scoped (§17.9.2) as a bulk migration: rewrite `ă:{*ă}` → `a:{*a}`
+in `pgrmWeakTailVowel` shapes and the mirror alphabet `EnglishWeakTailVowelStar`,
+on the assumption that "no rule downstream of Role-3/4 depends on the breve vs
+plain distinction." **That assumption is wrong.** Empirical probing against the
+running pipeline reveals the breve is doing real phonological work in at least
+two places in the A-restoration / fronting complex.
+
+#### A. Empirical probes (stems with root `*á`, Class VI strong verb infinitives)
+
+| Input | Output | Rule behaviour |
+|---|---|---|
+| `*bákăną` (breve) | `bæcan` ✗ | AFB fires; A-restoration does NOT fire |
+| `*bákaną` (plain) | `bacan` ✓ | AFB fires; A-restoration fires, restoring back `a` |
+
+The current TSV has `*bákaną` with plain `a` for exactly this reason — the 10
+Class VI strong verbs (`bákaną, grábaną, xláðaną, wádaną, wákaną, wáskaną, …`)
+rely on the plain `a` in the infinitival suffix to trigger OEARestoration.
+`OEARestorationTriggerVowel` (germanic.txt line 1564) is
+`EnglishStarBackVowel | {*ô} | {*ǭ}` — which **includes `{*a}` but not `{*ă}`**.
+A naive migration would flip all 335 `-ăną` forms to `-aną` and cause A-
+restoration to over-apply.
+
+Conversely, 335 forms use `-ăną` (breve) precisely *because* their roots do
+**not** want A-restoration to fire — e.g., Class I weak j-verbs (`*wárjăną →
+werġan`), which need to keep the fronted `æ` so that i-umlaut can act on it.
+
+#### B. Empirical probes (j-verb grammar constraint)
+
+| Input | Output | Reason |
+|---|---|---|
+| `*wárjăną` | `werġan` ✓ | `pgrmWord` accepts shape 306: `j:{*j} ă:{*ă} n:{*n} ą:{*ą}` |
+| `*wárjaną` | `+?` | No parallel shape with plain `a`; grammar rejects the input |
+
+`pgrmWord` (lines 296–360) does not carry a plain-`a` twin of the j-verb
+infinitive shape. A migration must therefore either (i) add such shapes or
+(ii) leave j-verb breves alone.
+
+#### C. Probes confirming breve is inert outside AFB contexts
+
+For verbs whose root has **no** AFB-subject stressed `á` / `é` etc., the breve
+and plain produce identical output (AFB simply doesn't fire, and nothing
+downstream differs):
+
+| Input pair | Output | Difference |
+|---|---|---|
+| `*bíndăną` vs `*bíndaną` | `bindan` | none |
+| `*xélpăną` vs `*xélpaną` | `helpan` | none |
+| `*béudăną` vs `*béudaną` | `bēodan` | none |
+| `*kwémăną` vs `*kwémaną` | `cwefan` | none |
+| `*lókōjăną` vs `*lókōjaną` | `locian` | none |
+| `*libjăną` vs `*libjaną` | `libban` | none |
+
+But the set of "safe" breves (those where substituting plain `a` is output-
+preserving) is precisely the set whose root doesn't feed AFB — i.e., it's not
+safely identifiable from the TSV without running the pipeline on every form.
+
+#### D. Correction to germanic.txt comment (lines 1958–1969)
+
+The comment claims "plain `*a` fronts via OEUnstressedAFronting; breve `*ă`
+skips this rule." Empirically (§A above), both plain and breve undergo AFB in
+root position; the meaningful downstream difference is that **plain `*a` is
+an A-restoration trigger; breve `*ă` is not**. The comment conflates
+OEUnstressedAFronting (medial middle-syllable `a`, as in the participle
+`*fúnðanăz → funden`) with A-restoration (root-vowel retraction triggered by
+the following suffix vowel). Both rules care about breve-vs-plain, but in
+opposite positions:
+
+- **Middle-syllable position** (participle `*fúnðanăz`): plain `a` = fronts to
+  `e` (→ `-en`); breve would block fronting (→ `-an`). The TSV uses plain
+  here.
+- **Tail position** (infinitive suffix `*-aną / *-ăną`): plain `a` = triggers
+  A-restoration of a stressed root AFB-vowel (Class VI); breve `ă` = blocks
+  restoration (all other classes). The TSV uses both, morphologically sorted.
+
+The comment should be rewritten to reflect this.
+
+#### E. Relation to Ringe & Taylor vol. 2 §6.3.1
+
+R/T describe a single phonological rule (retraction / A-restoration) conditioned
+on "a single non-nasal consonant or geminate or sC-cluster followed by a back
+vowel." In their account there is no breve vs plain distinction; all unstressed
+non-front vowels are simply `*a` / `*ō` / `*u`. Our FST uses `{*ă}` as an
+engineering device to *block* A-restoration in environments where R/T's rule
+predicts retraction but the attested OE outcome shows fronted `æ` — chiefly
+Class I weak j-verbs, where post-AFB i-umlaut would in any case front the
+vowel back. In other words: **for R/T-compliant Class VI verbs we let the
+restoration rule fire (plain `a`); for j-verbs we short-circuit it (breve
+`ă`)**. This is a tag with a clear phonological consequence, even if R/T
+don't posit a separate vowel.
+
+#### F. Role 5: A-restoration blocker
+
+Adding to the four roles catalogued in §17.9.1/§17.10, the breve has a fifth,
+previously unnoticed role:
+
+- **Role 5 (A-restoration blocker)**: in tail position (specifically the
+  inf-suffix `{*ă}{*n}{*ą}`), the breve distinguishes suffixes that do vs do
+  not trigger OEARestoration of a preceding AFB-vowel. This is what keeps
+  Class VI `bacan` apart from Class I j-verb `werġan` in the current grammar.
+
+Role 5 is linguistically meaningful (even if the particular implementation —
+a breve tag — is one of several possible ways to encode it). Unlike Roles 3
+and 4 (now eliminated) and Role 2 (postponed), Role 5 **cannot be deleted
+without a substantive rewrite of OEARestoration**.
+
+#### G. Revised Phase 1d plan — two options
+
+**Option 1 (recommended): Abandon the naive Role 1 migration; retain Role 5.**
+
+Plan Y-minimal is effectively already at its stable end-state. `{*ă}` is
+retained as a meaningful phonological marker in inflectional tail position
+(Roles 2 and 5); Roles 3 and 4 have been cleaned up (§17.10.7–10). The
+accent-convention stocktake proposal ("4 accents is overkill") is answered by
+the observation that the four marks — long (`ā`), acute-stressed (`á`),
+plain-unstressed (`a`), and breve-reduced (`ă`) — each carry a distinct
+phonological role:
+
+- long: inherently long vowel (no conditioning needed)
+- acute: stressed short vowel (input to AFB, breaking, i-umlaut targets)
+- plain: unstressed short vowel that participates fully in A-restoration /
+  unstressed-A-fronting / etc.
+- breve: unstressed short vowel whose position blocks A-restoration (Role 5);
+  also marks compound-linking seams (Role 2)
+
+This is three degrees of vowel reduction, not four — the long mark is
+orthogonal. Three is arguably defensible for OE.
+
+Under Option 1, Phase 1d is closed as "research-only, no code change". Phase
+1e (documentation) remains.
+
+**Option 2 (deferred): Rewrite OEARestoration to use positional conditioning.**
+
+Extract Role 5 out of the vowel tag and into the rule itself: e.g., condition
+A-restoration on "not preceded by `{*j}`" or on an explicit
+`ClassVIStrongSuffix` shape rather than on the plain-vs-breve vowel-quality
+distinction. Then migrate all remaining breves to plain. This is substantial
+work (needs R/T §6.3.1 full conditioning, j-verb chronology relative to AFB,
+etc.), carries regression risk across 345+ verb forms, and does not clearly
+yield a simpler grammar. **Deferred** — revisit only if a future feature
+specifically requires eliminating the breve tag (e.g., unification with an
+NWGmc-layer inventory that has no breve).
+
+#### H. Decision
+
+Adopt **Option 1**. Phase 1d is closed. Update the misleading comment at
+germanic.txt lines 1958–1969 (separate small cleanup commit). Move on to
+Phase 1e (rewrite §16 accent convention documentation).
+
 
