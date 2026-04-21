@@ -21496,3 +21496,104 @@ All other steps (sandbox sync, recompile, verify 37, commit) are
 unchanged. The sandbox sync commit may proceed independently; the
 TSV edit follows it.
 
+### §17.10.9 — Phase 1c (Role 4) research findings: OEContraction breve clauses are fully redundant
+
+**Hypothesis from §17.10.3 (A3'):** the 9 `{*V}{*ă} → {*V̄}`
+clauses in `OEContraction` (lines 2492, 2494, 2496, 2498, 2500,
+2502, 2503, 2506, 2507) are redundant duplicates of plain-`a`
+clauses, so they can simply be dropped in Phase 1c.
+
+**Concern raised on closer reading of OEContraction.** Only four
+of the nine breve clauses have an obvious plain-`a` twin in the
+current rule — those involving diphthongs (2502/2501 `{*ea}`,
+2503/2504 `{*ēa}`, 2506/2505 `{*eo}`, 2507/2508 `{*ēo}`). The
+five simple-vowel clauses (2492, 2494, 2496, 2498, 2500) have
+twins only in the form `{*V}{*V}` (same-vowel gemination, lines
+2491, 2493, 2495, 2497, 2499), not `{*V}{*a}`. So in principle,
+if any TSV form fed a simple `{*V}{*a}` sequence into contraction
+(e.g. post-Role 1 `{*e}{*a}` from a former `{*e}{*ă}`), dropping
+the breve clause without adding a plain-a twin would regress.
+
+**TSV audit — what actually feeds OEContraction?** The only way
+to get a two-vowel sequence at the contraction stage is via
+`OEHLoss` (deletes intervocalic `*x`) or earlier glide-deletions.
+Scanning all PROTOFORMs for `[aeiou][x][ăa]`:
+
+```
+pattern     count
+uxă         4  (only form: *fléuxăną — flee)
+```
+
+Plus the already-known stressed-vowel cases:
+```
+áxă         4  (*sláxăną — slay)
+éxu         8  (*féxu — cattle)
+ixō         8  (*sixōną — see-inf)
+```
+
+All stressed cases have their stressed vowel converted to a
+diphthong by breaking BEFORE contraction (e.g. `{*á} → {*ḗa}`
+before weak-tail x-context, line 1437; `{*é} → {*éo}` before h,
+line 1448). After breaking + h-loss they arrive at contraction
+as diphthong + breve, handled by the diphthong clauses. The
+only simple-vowel-before-breve case in the TSV (`*fléuxăną`)
+also reaches contraction as a diphthong because `éu` tokenises
+as the composite `{*éu}` which breaks to `{*ēo}` (line 1493).
+
+**Empirical verification.** Dropped all 9 breve clauses from
+`OEContraction`, recompiled, re-ran the mismatch report:
+
+```
+Total mismatches: 37  (unchanged)
+sláxăną  → slēan   ✓
+fléuxăną → flēon   ✓
+féxu     → feoh    ✓
+téxun    → teoon   (= baseline, pre-existing mismatch)
+wíθrą    → weþer   ✓
+```
+
+Zero regressions. The audit claim in §17.10.3 holds in practice:
+all 9 breve clauses are dead code at the current TSV state.
+
+**Safety for future Role 1 migration.** Even after Role 1
+migrates all inflectional `ă → a`, no new `{*V}{*a}` contraction
+feeds will materialise, because:
+
+1. No simple (non-diphthong) PGmc stem vowel appears directly
+   before `x ă` in the TSV outside `*fléuxăną` (audit above).
+2. `*fléuxăną`'s `éu` is tokenised as a composite that breaks
+   to `ēo`, so contraction sees a diphthong input regardless.
+3. All h-loss feeds for stressed simple vowels go through
+   breaking first (lines 1435–1450 cover `á`, `é` before
+   H/breaking contexts).
+
+So dropping the 9 clauses is **safe now and remains safe after
+Role 1**. No need to add replacement `{*V}{*a}` clauses.
+
+**Revised §17.10.3 correction.** The A3' claim that lines
+2492/2494/2496/2498/2500 are "redundant duplicates of the
+plain-`a` clauses on the preceding/following lines" was loose
+wording — the actual reason they are dropabble is that *no TSV
+input reaches OEContraction in a simple-vowel + breve (or +a)
+configuration*. They are dead code rather than duplicates.
+
+### §17.10.10 — Phase 1c execution plan
+
+1. In `Germanic/fsts/germanic.txt`, delete the 9 lines from
+   `OEContraction`:
+   - 2492 `{*a} {*ă} -> {*ā},`
+   - 2494 `{*e} {*ă} -> {*ē},`
+   - 2496 `{*i} {*ă} -> {*ī},`
+   - 2498 `{*o} {*ă} -> {*ō},`
+   - 2500 `{*u} {*ă} -> {*ū},`
+   - 2502 `{*ea} {*ă} -> {*ēa},`
+   - 2503 `{*ēa} {*ă} -> {*ēa},`
+   - 2506 `{*eo} {*ă} -> {*ēo},`
+   - 2507 `{*ēo} {*ă} -> {*ēo},`
+2. No TSV edit.
+3. Recompile, verify 37 mismatches.
+4. Commit: `phase 1c (role 4): drop breve clauses from OEContraction (§17.10.9/.10)`.
+
+Role 4 is then complete. Role 1 remains for Phase 1d.
+
+
