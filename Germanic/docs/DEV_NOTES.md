@@ -21273,3 +21273,159 @@ Every `{*ă}` reference in `germanic.txt`, classified:
   contextual replacement. No surprise dependencies.
 
 Proceeding to Phase 1b (Role 3).
+
+### §17.10.5 — Phase 1b (Role 3) research findings: AFB chronology blocks naive rule-target migration
+
+**Initial plan**: generalise `OEFinalSchwaApocope` from `{*ă} -> 0 || _ .#.`
+to accept plain `{*a}` as well; migrate the single non-linking word-final
+breve (`*wíθră`) to `*wíθra` in the TSV. Expected: 37 mismatches preserved.
+
+**Actual outcome**: `*wíθra → weþre` (expected `weþer`). Regression 37 → 38.
+
+**Root cause (empirical)**: traced via sandbox. At the
+`OEAngloFrisianBrightening` stage, the word-final `*a` is already
+fronted to `*æ`. By the time `OEFinalSchwaApocope` runs, there is no
+`*a` left to apocopate. The `*æ` then passes through unstressed-merger
+(`*æ → *e`) to surface as `-e`, yielding `weþre` instead of the
+epenthetic `weþer`.
+
+The culprit is the `.#.` alternative in `AngloFrisianBrightening`
+(germanic.txt line 1538):
+
+```
+{*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+```
+
+With `{*ă}` as the transponent, AFB is a no-op on the weak tail (AFB
+only targets `{*a}`/`{*á}`), so apocope later deletes it cleanly. The
+breve was functioning as an "inert, deletion-bound" marker that
+sidestepped AFB. Switching to plain `{*a}` exposes the conflict.
+
+**Historical reality (R/T vol.2 §3.1.2, pp.59-61)**:
+
+> "Another sweeping sound change that characterizes all WGmc languages
+> is the loss of unstressed *a and *ą word-finally and before final *-z.
+> […] the loss of word-final short low vowels was clearly a **PWGmc
+> change**, since several other pan-WGmc changes followed it."
+
+R/T's chronology:
+1. Loss of *-z after unstressed vowels (PWGmc).
+2. Loss of word-final *-a and *-ą (PWGmc).
+3. Later: Anglo-Frisian Brightening (Ingvaeonic / pre-OE).
+
+That is, word-final short *-a was **gone before AFB ever fired**. The
+present FST has the reverse order (AFB at line 2589, apocope at line
+2606), which is historically inaccurate. It works only because the
+`{*ă}` transponent makes the step-2 residue invisible to step-3.
+
+R/T §3.1.2 goes further (p.60): the final *a of nom.sg. *-az (a-stem
+masc./neut.) was *also* lost in the same PWGmc step, after *z-loss,
+leaving a bare stem. Cognate endings:
+- PGmc *pewaz > PWGmc *beu > OE þēo(w).
+- PGmc *slaganaz > PWGmc *slagan > OE sleġen.
+- PGmc *kuningaz > PWGmc *kuning > OE cyning.
+- PGmc *stainą > PWGmc *stain > OE stān.
+- PGmc *hurną > PWGmc *horn > OE horn.
+
+So at the PWGmc stage where we start the OE pipeline, no form should
+end in a short *-a at all.
+
+**Implication for `*wíθră`**: this is a u-stem noun (PGmc *weþruz,
+possibly *weþru- / *weþr-, see R/T vol.2 p.59 n.5). At PWGmc stage
+after z-loss and any final-vowel-loss, the form is `*weþr` (bare
+stem). The `ă` in our TSV is a legacy computational artifact, not a
+historical reality.
+
+Empirical confirmation — direct FST probes on the main bin:
+
+```
+wíθră    →  weþer   (current: breve triggers apocope)
+wíθr     →  weþer   (bare stem: epenthesis inserts *E before *r)
+wíθru    →  weþer   (u-stem: high-vowel apocope + epenthesis)
+wíθra    →  weþre   (breaks: AFB fronts final *a, blocks epenthesis)
+```
+
+`*wíθr` already produces the correct output via
+`OEEpentheticInsertion` (line 2050): `{*r} -> {*E} {*r} || V C+ _ .#.`.
+
+**Conclusion — revised Phase 1b plan**:
+
+Migrate `*wíθră → *wíθr` (bare PWGmc stem, historically correct)
+rather than `*wíθră → *wíθra`. This:
+- Aligns with R/T's chronology (no word-final short *a at OE stage).
+- Requires no change to `OEFinalSchwaApocope` (rule target stays `{*ă}`).
+- Requires no change to `pgrmWeakTailVowel`.
+- Requires no change to AFB's `.#.` clause.
+- Preserves 37 mismatches (probe shows `*wíθr → weþer`).
+
+Role 3 breve removal therefore reduces to a TSV edit on a single form.
+After this edit, `{*ă}` no longer appears word-finally in any TSV
+PROTOFORM, and the `.#.` clause of `OEFinalSchwaApocope` becomes
+effectively dead code (still firing only on derived `{*ă}` from the
+pipeline — see Role 1). Full removal of the rule is deferred to
+Phase 1d (Role 1 migration), when the weak-tail shape definitions no
+longer produce word-final `{*ă}` either.
+
+**Separate issue discovered during this investigation**: the
+`old_english_sandbox.txt` pipeline has drifted from the main
+`germanic.txt` OE pipeline. The sandbox stops at
+`OESandboxAfterPreconsonantalDegemination` followed directly by
+`OEUnstressedLongVowelShortening` / `OEUnstressedIMarking`, omitting
+the main pipeline's `OEEarlyOShortening`, `OEUnstressedFrontingEarly`,
+`OELateOShortening`, `OEUnstressedAEMerger` stages (germanic.txt lines
+2651-2659). The sandbox is consequently unreliable for late-pipeline
+tracing. Sync required before implementing any further rule changes
+that depend on trace evidence.
+
+**Concrete sandbox sync plan** (to be applied to
+`Germanic/fsts/old_english_sandbox.txt` before any further germanic.txt
+edits in Phase 1b):
+
+Replace the single composition
+```
+OESandboxAfterUnstressedLongVowelShortening =
+    OESandboxAfterPreconsonantalDegemination .o. OEUnstressedLongVowelShortening
+```
+with the five-stage expansion matching main pipeline lines 2650-2658:
+
+```
+OESandboxAfterEarlyOShortening         = …AfterPreconsonantalDegemination .o. OEEarlyOShortening
+OESandboxAfterUnstressedFrontingEarly  = …AfterEarlyOShortening           .o. OEUnstressedFrontingEarly
+OESandboxAfterLateOShortening          = …AfterUnstressedFrontingEarly    .o. OELateOShortening
+OESandboxAfterUnstressedLongVowelShortening
+                                       = …AfterLateOShortening            .o. OEUnstressedLongVowelShortening
+OESandboxAfterUnstressedAEMerger       = …AfterUnstressedLongVowelShortening .o. OEUnstressedAEMerger
+OESandboxAfterUnstressedIMarking       = …AfterUnstressedAEMerger         .o. OEUnstressedIMarking
+```
+
+and add matching `regex OESandboxAfter…;` lines in the writer block
+(lines ~340-420 of `old_english_sandbox.txt`) so the
+`backend/old_english_sandbox_after_early_o_shortening.bin` (and four
+sibling bins) are produced on every rebuild. Expected new stage bins:
+
+- `old_english_sandbox_after_early_o_shortening.bin`
+- `old_english_sandbox_after_unstressed_fronting_early.bin`
+- `old_english_sandbox_after_late_o_shortening.bin`
+- `old_english_sandbox_after_unstressed_a_e_merger.bin` (name to mirror existing snake_case convention; placeholder — pick consistent name on edit).
+
+No main-pipeline rule changes are implied by this sync; it only exposes
+pre-existing stages for tracing.
+
+### §17.10.6 — Revised Phase 1b plan (Role 3)
+
+Order of operations:
+
+1. **Sandbox sync** (§17.10.5 concrete plan above). No main-pipeline
+   change, no mismatch-count change. Recompile, confirm 37.
+2. **TSV edit**: `*wíθră` → `*wíθr` (8 occurrences across 4 doculect
+   rows). Bare PWGmc stem is historically correct. Empirical probe
+   confirms `*wíθr → weþer` via existing `OEEpentheticInsertion`.
+3. **Recompile, verify 37 mismatches.**
+4. **Commit** (sandbox sync + TSV edit + this §17.10.5/§17.10.6 docs).
+
+Role 3 is then complete: no word-final `{*ă}` remains in any TSV
+PROTOFORM. The `{*ă} -> 0 || _ .#.` rule remains in place because it
+still fires on internally-derived word-final `{*ă}` (Role 1 forms like
+`*fúnðanăz` that reach the apocope stage with trailing `ă` after
+z-deletion). Full removal of the rule is deferred to Phase 1d (Role 1
+migration).
