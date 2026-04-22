@@ -23285,3 +23285,74 @@ rule, and the bins rebuilt. Expected mismatch delta: 40 → 39.
 
 Awaiting user decision: R1 (recommended), R2, or R3.
 
+### §17.10.19 — Case 2 implementation via R3 (probe + scholarship)
+
+User selected R3 (reorder `OEMedUnstressedULowering` after
+`OEInterStressRaising`) pending scholarship review and a probe.
+
+#### Scholarship on relative chronology
+
+- **Inter-stress raising (R/T vol. 2 §6.3.3, pp. 200–202).** Placed in
+  the Pre-OE / early-OE prosodic layer: "when a short *a appears in a
+  trough between primary and secondary stress, it raises to *u." The
+  examples `*wer-aldu → *wer-uldu`, `*hlab-ardu → *hlab-urdu`,
+  `*fur-langu → *fur-lungu` are all Pre-OE derivations feeding later OE
+  changes (back-mutation, breaking).
+- **Medial unstressed u → o (Campbell §§49, 373–374).** Campbell §49
+  describes it as an orthographic/phonetic drift in historical OE: "o
+  is written for unaccented u with increasing frequency, especially
+  before a consonant (e.g. past pl. in -on, older -un)". Fulk (*Grammar
+  of OE*, §7.31, n.6) likewise treats it as a late, gradient OE change.
+  Every Campbell example is synchronically OE.
+- **Hogg 1992 §3.3.3.2** places the `u/o` alternation in the same late
+  OE layer ("by the end of the early OE period"), well after the
+  prosodic raisings.
+- **Luick §§335–340** treats the unstressed-vowel mergers (incl. `u→o`)
+  as the last prehistoric layer before the classical OE period,
+  chronologically later than anything prosodic in compounds.
+
+All four principal sources agree: **inter-stress raising is
+pre-OE/early-OE; medial u-lowering is late-early-OE to historical OE**
+— i.e. raising is *chronologically earlier* and should feed lowering.
+The current FST ordering (lowering at line 2623 before raising at line
+2639) is anti-chronological. R3 brings the FST in line with scholarly
+consensus.
+
+#### Probe result
+
+Applied R3 in both the main (`EnglishProtoToOE`) and trace
+(`EnglishAfterProtoToOEWeakTail`) stacks, rebuilt the bins, and ran
+`oe_mismatch_report.py`:
+
+```
+baseline (HEAD):  40 mismatches
+R3 probe:         38 mismatches  (Δ = −2)
+
+fixed by R3:
+  *sáiwalō  → sāwol   (Case 2 target)
+  *wír-aldu → weorold (previously produced weoruld)
+
+new regressions: none
+```
+
+Notable: the TSV row for `*wír-aldu` (row 1444) already carried a
+derivation note listing `(4) medial *u > *o` as an expected step — a
+step that could not actually fire under the old ordering because
+lowering ran before raising. R3 makes the TSV's documented derivation
+match the FST's actual behaviour.
+
+Trace stack was also updated so sandbox stage bins reflect the new
+ordering (the trace stack had been silently drifting — `OEInterStressRaising`
+was missing entirely from it; added alongside the lowering move).
+
+#### Decision
+
+R3 is correct scholarship and net-positive empirically. Implementation
+retained. No follow-on TSV changes strictly required, though the
+`*wír-aldu` row's note can be simplified in a future pass (the four
+numbered steps now all run in the FST rather than being pre-applied).
+
+Mismatch count: **40 → 38**. Case 2 closed. Next: Case 3
+(`*rástōz → ræst`, expected `ræste`).
+
+
