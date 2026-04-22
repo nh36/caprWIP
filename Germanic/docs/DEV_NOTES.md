@@ -23113,3 +23113,90 @@ and report such rows in a separate section without counting them in the
 headline number.
 
 
+
+---
+
+### §17.10.17 — Case 2 implementation write-up: `*sáiwalō → sāwul` (expected `sāwol`)
+
+Case 1 is resolved (commit `7de47d9`, TSV retarget to attested `tæppa`
+with analogical note). Case 2 addressed here.
+
+#### Probe (current state of the pipeline)
+
+Against `Germanic/fsts/old_english.bin` (post-Option-X build, commit
+`9eafa59`):
+
+| Input         | FST output | Target   |
+|---------------|-----------|----------|
+| `sáiwalō`     | `sāwul`   | `sāwol`  |
+
+The only residue is `u` vs. `o` in the parasite vowel. Everything else
+is correct: syncope of medial `*-a-` (Campbell §589.5), preservation of
+`w` between the long `ā` and the `l`, and length on the stressed `ā`.
+
+#### Side-effect audit for word-final `*w + *l`
+
+Scanned `Germanic/data/germanic-aligned-final.tsv` for every Old-English
+row whose COUNTERPART ends in `l` and whose PROTOFORM contains a
+`w + l` sequence (medial or cluster):
+
+| COUNTERPART | PROTOFORM | Note |
+|-------------|-----------|------|
+| `sāwol`     | `*sáiwalō` | this row; the only one |
+
+No other OE row in the TSV has a `*w + *l` word-final cluster at the
+point where `OEEpentheticVowel` fires. Therefore the rule proposed below
+cannot over-apply to any currently-tracked lexeme.
+
+#### Proposed FST change
+
+Add `OEWLInsertion` immediately after `OEGLInsertion` in the
+`OEEpentheticVowel` composition (germanic.txt lines 2126–2133). Rule
+signature is the direct `*w + *l` analogue of the existing `*g + *l`
+rule; phonologically conditioned (not morphological), and aligned with
+Campbell §362's grouping of `sāwol` with `fugol`/`tungol`/`nagel`.
+
+```foma
+define OEWLInsertion [
+    {*w} {*l} -> {*w} {*o} {*l} || _ .#.
+];
+
+define OEEpentheticVowel OEEpentheticInsertion
+    .o. OEEpentheticBackShift
+    .o. OEEpentheticFront
+    .o. OEGLInsertion
+    .o. OEWLInsertion;
+```
+
+**Why `o` directly (not `u → o` via later lowering).** The unrelated
+ordering bug flagged in §17.10.15 (Case 2, point (ii)) — where
+`OEMedUnstressedULowering` runs before `OEInterStressRaising` and
+therefore cannot lower the raised `*u` — remains a latent issue, but is
+not in the path here. With `OEWLInsertion` inserting `*o` directly at
+the epenthesis stage, the derivation is:
+
+```
+*sáiwalō
+  → (syncope, §341)                        *sáiwlō
+  → (NWGmc final-long-ō-raising)           *sáiwlū / *sáiwlu
+  → …                                      *sāwl
+  → OEEpentheticVowel / OEWLInsertion      *sāwol
+  → (later cleanup)                        sāwol
+```
+
+This matches Campbell §589.5's explicit derivation of `sāwol`.
+
+**Mismatch-count impact (expected).** −1 row (`sāwul → sāwol`), bringing
+the total from 40 → 39. No side effects expected (audit above).
+
+#### Execution plan
+
+1. Apply the FST edit (germanic.txt, two places: the stack and the
+   trace-stack `EnglishAfterProtoToOEWeakTail`, per project convention of
+   keeping the two stacks synced).
+2. Rebuild OE bins via `bash Germanic/tools/rebuild_oe_bins.sh`.
+3. Re-run `python3 Germanic/tools/oe_mismatch_report.py`; verify count
+   is 39 and no new mismatches appeared.
+4. Commit and push. Move to Case 3.
+
+Next step is the edit itself, pending user approval of this write-up.
