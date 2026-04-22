@@ -21928,4 +21928,270 @@ at every step.
 Option 1 ("retain breve") is **rejected** per user direction. Option 2 is
 adopted with the above concrete plan.
 
+### §17.10.13 — Phase 1d-β follow-up: AFB must not apply word-finally
+
+**Date:** 2026-04-21 (continuation)
+
+**Background.** After executing Phase 1d-β (TSV migration of breve → plain
+`*a` in Role 1 positions), the mismatch count regressed from 37 → 98. The
+largest bucket (60 cases) is `final_vowel_extra`: heavy a-stem nom.sg.
+forms such as `*bárdaz` now surface with a spurious final `e`
+(`bearde`, `bōsme`, `botme`, …) instead of the correct apocoped
+`beard`, `bōsm`, `botm`.
+
+**Diagnosis.** Sandbox tracing at successive pipeline stages shows:
+
+```
+*bárdaz at AFB         → *b*æ*r*d*æ     (root á→æ, tail a→æ)
+*bárdaz at A-rest.     → *b*ea*r*d*æ    (breaking intervenes)
+*bárdaz at apocope     → *b*ea*r*d*æ    (rule targets {*ă}/{*a} only)
+```
+
+Before migration the tail carried `{*ă}`; `AngloFrisianBrightening` only
+targets `{*a}` / `{*á}`, so `{*ă}` survived AFB unchanged and was then
+deleted by `OEFinalSchwaApocope` targeting `{*ă}`. After migration the
+tail is `{*a}`, which AFB happily fronts to `{*æ}` word-finally; the
+apocope rule as written never sees `{*a}` in final position and so the
+fronted vowel survives into the surface.
+
+**Two candidate fixes.**
+
+1. **Extend `OEFinalSchwaApocope` to also delete final `{*æ}`.** Works
+   empirically — rebuilds yielded 39 mismatches (vs. 37 baseline) —
+   but it implies that an OE-internal apocope rule is deleting the
+   **front** reflex of the final low vowel, after AFB has already
+   applied. That is not what Ringe/Taylor reconstruct.
+
+2. **Restrict AFB so that it cannot apply word-finally.** Keep apocope
+   targeting `{*a}` (plus the legacy `{*ă}` while Role 2 is still in
+   place). This reflects R/T's explicit chronology (see below).
+
+**R/T on word-final `*a` (vol.2 §3.1.2, pp. 45–46).** R/T treat the loss
+of word-final short low vowels as a **PWGmc** change. In successive
+examples they write the PWGmc stage already **without** the final
+vowel, before any OE-specific fronting could apply:
+
+> PGmc *haftaz 'bound' … > **PWGmc *haft** 'captive' … > OE hæft
+> PGmc *stabaz 'staff, letter' … > **PWGmc *stab** … > OE stæf
+> PGmc *paþaz 'path' … > **PWGmc *paþ** … > OE pæþ
+> PGmc *h^aþaraz 'which (of two)?' … > **PWGmc *hwaþar** > OE hwæþer
+
+The ordering R/T propose (vol.2 p. 46) is:
+
+  (1) loss of *-z after all unstressed vowels, then
+  (2) loss of word-final *-a and *-ą.
+
+Both are pre-OE PWGmc changes. AFB ("northern WGmc fronting of *a and
+*ā", vol.2 §5.1 and §6.1, pp. 198 ff.) is an OE/Ingvaeonic innovation
+that presupposes the PWGmc monosyllabic stem. R/T say explicitly
+(vol.2 p. 307) that "no specifically OE sound changes can be dated
+before the fronting, while one of the earliest must have followed
+it" — and the loss of final short *-a is specifically **not** one of
+those OE-era post-AFB changes; it is older. Hence at AFB time, no
+short word-final `*a` exists to front.
+
+**Implication for the FST.** In our pipeline, `PGmcFinalZLoss` runs at
+line ~1027 (still within the pre-OE composition) and leaves final
+`{*a}`. The historically accurate next step would be to apocope that
+`{*a}` immediately — but the FST currently relies on seeing the weak
+tail (`{*-az}` / `{*-a}`) at A-restoration stage to condition retraction
+of fronted `{*æ}` to `{*a}` before back vowels (see §2614 chronology
+note in `germanic.txt`). That constraint forces apocope to remain
+after A-restoration in the composition order.
+
+We can still respect R/T's chronology phonologically by **conditioning
+AFB not to fire word-finally**. This is a purely segmental restriction
+(no morphological reference); it says "AFB acts on `*a` before a
+non-nasal consonant" — full stop — which is what R/T's examples
+instantiate. Word-final `*a`, which at OE time historically didn't
+exist, is simply out of the rule's domain.
+
+Concretely, change line 1567 from
+
+```
+{*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+```
+
+to
+
+```
+{*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
+```
+
+The stressed-vowel clause (`{*á}`) is a different story: stressed `*á`
+in monosyllables (like `*stab → stæf`) **does** undergo AFB
+word-finally per R/T's derivation `PWGmc *stab > OE stæf` (stressed
+monosyllable, no final vowel at AFB stage, but the **root vowel** is
+final after apocope, and AFB applies). So keep `| .#.` in the
+stressed clause.
+
+**Expected mismatch impact.** Restoring 37 mismatches (baseline),
+matching the pre-migration state.
+
+**Why this is neogrammarian-clean.** The rule is restricted by a
+segmental context alone (following consonant class). No morphological
+selector; no "apply only in weak tails"; no reference to syllable
+weight or paradigm. It is simply R/T's descriptive statement
+re-encoded.
+
+**Next step.** Apply the edit, rebuild, verify 37 mismatches, commit
+as Phase 1d-β.
+
+
+#### Foma parallel-rule context-merging gotcha (discovered 2026-04-21)
+
+After applying the AFB edit above, the mismatch count stayed at 98.
+Direct testing of the compiled `AngloFrisianBrightening` with
+`apply down` / `flookup` revealed that final unstressed `*a` was still
+being fronted to `*æ`, despite the unstressed clause no longer listing
+`.#.` in its context.
+
+Minimal reproduction (in an isolated foma session that `source`s
+`fsts/germanic.txt`):
+
+```
+# Unstressed clause alone: correct behaviour
+define TestA [ {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal] ];
+regex TestA; apply down *d*a*g*a     →  *d*æ*g*a        # final a preserved ✓
+
+# Both clauses combined with comma — the actual AFB shape:
+define TestAB [
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal],
+    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+];
+regex TestAB; apply down *d*a*g*a    →  *d*æ*g*æ        # final a fronted ✗
+
+# Both clauses combined, but with .#. dropped from the stressed clause too:
+define TestAB2 [
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal],
+    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
+];
+regex TestAB2; apply down *d*a*g*a   →  *d*æ*g*a        # final a preserved ✓
+```
+
+**Conclusion.** When foma combines parallel rewrites with `,` inside a
+single `define [ ... ]` block, the CONTEXTS are effectively unioned
+across the parallel rules, even when the TARGETS differ. Adding `.#.`
+to the stressed `{*á}` clause is enough to let the unstressed `{*a}`
+clause fire word-finally too. This is a property of foma's parallel
+rewrite semantics and is not documented alongside the `,` shorthand in
+the R/T FST appendix.
+
+**Fix for the FST.** Split the two AFB clauses into two SEPARATE
+`define` blocks composed sequentially with `.o.`. Under sequential
+composition each rule has its own context and the stressed-clause
+context cannot leak into the unstressed-clause domain. Concretely:
+
+```
+define AngloFrisianBrighteningUnstressed [
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
+];
+define AngloFrisianBrighteningStressed [
+    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+];
+```
+
+and in `EnglishProtoToOE`, replace the single `.o. AngloFrisianBrightening`
+line with `.o. AngloFrisianBrighteningUnstressed .o. AngloFrisianBrighteningStressed`.
+Ordering between the two is immaterial (disjoint targets), but keeping
+unstressed first matches the historical intuition that the two clauses
+are notational halves of one change.
+
+This is still neogrammarian-clean: each sub-rule is conditioned solely
+by segmental context.
+
+**Trace sync.** `old_english_sandbox.txt` `source`s `germanic.txt`, so
+it picks up the renamed rules automatically. It references AFB once by
+name (line ~77). That single `.o. AngloFrisianBrightening` reference
+must be replaced with the two-rule pair to keep the sandbox trace
+isomorphic to the main stack.
+
+#### Follow-on regression: A-restoration overfires on bare `{*a}` weak tails (2026-04-21)
+
+After applying the split-AFB fix, rebuild, and re-running the mismatch
+report, the count dropped from 98 → 45 (vs. baseline 37). Remaining
+regressions are `fronting_missing__afb` cases such as
+`*dágaz → dag (expected dæġ)`, `*kráftaz → craft`, `*stábaz → staf`,
+`*bárdaz → bard`. The root `*á` is being retracted back to `*a`.
+
+Stepwise foma tracing shows that `OEARestoration` is firing when the
+weak tail is bare `{*a}` or `{*a}{*z}`:
+
+```
+regex OEARestoration;
+apply down *d*æ*g*a     →  *d*a*g*a      (RULE FIRES — should be blocked)
+apply down *d*æ*g*ă     →  *d*æ*g*ă      (blocked, correct)
+apply down *d*æ*g*a*z   →  *d*a*g*a*z    (RULE FIRES — should be blocked)
+apply down *d*æ*g*o     →  *d*a*g*o      (fires, correct — genuine back trigger)
+```
+
+**Why the breve tail worked.** `OEARestorationTriggerVowel` draws from
+`EnglishStarBackVowel` which does NOT include `{*ă}`. So when the tail
+was `{*ă}` (pre-migration), the trigger-vowel context simply did not
+match — the rule's subtraction arm was irrelevant, because the rule
+never had grounds to fire in the first place.
+
+**Why the plain tail breaks it.** Post-migration, the tail is bare
+`{*a}`. `{*a}` IS in `EnglishStarBackVowel`, so the trigger arm of
+the rule now matches. The rule relies on the subtraction
+`[Int]* Trigger - [Int]* WeakTail` to block restoration when the
+match is a weak tail. Empirically (see below) this subtraction does
+not block `{*a}` even though `{*a}` is demonstrably in both
+`OEARestorationTriggerVowel` and `OEARestorationWeakTailVowel`.
+
+**Demonstration that `{*a}` is in both sets.**
+
+1. `{*æ} -> {*a} || _ [Int]* OEARestorationTriggerVowel` — a rule
+   using ONLY the trigger context — fires on `*d*æ*g*a`, `*d*æ*g*a*z`,
+   `*d*æ*g*o`. Confirms `{*a}` is in the trigger set.
+2. `{*æ} -> {*a} || _ [Int]* OEARestorationWeakTailVowel` — a rule
+   using ONLY the blocker context — also fires on `*d*æ*g*a`,
+   `*d*æ*g*ă`, `*d*æ*g*a*z`. Confirms `{*a}`, `{*ă}`, `{*a}{*z}` are
+   all in the blocker set.
+3. The real rule with `[Int]* Trigger - [Int]* Block` subtraction
+   fails to block exactly and only for the bare `{*a}` cases.
+
+**Hypothesis.** Foma context-subtraction `L1 _ R1 - L2 _ R2` operates
+over the language of (left,right) context pairs. When the subtrahend
+is a transducer (as `OEARestorationWeakTailVowel` is — it inherits
+input:output pair structure from `pgrmWeakTailVowel` via
+`EnglishWeakTailVowel`), the subtraction appears to match on the
+cross-product rather than on the lower-side (post-PGmc) string
+alone, and the intended blocking fails. Explicit `.l` (lower)
+projection of the subtrahend does block, but also over-blocks — some
+legitimate trigger cases get caught because the lower projection of
+`pgrmWeakTailVowel` covers many vowel sequences including pure back
+vowels.
+
+**Implication.** The subtraction-based formulation of
+`OEARestoration` was only accidentally correct under the breve
+regime, because `{*ă}` lay outside the trigger set and the
+subtraction never had to do any work. Under the post-migration
+regime, bare `{*a}` can appear both as a genuine trigger (`-os`
+restored via `{*o}` elsewhere in the suffix, medial compound vowels,
+…) and as a blocker (weak tail `{*a}`, `{*a}{*z}`, `{*a}{*s}`). The
+rule needs an expression that does not rely on transducer-level set
+difference.
+
+**Research needed before further code edits.**
+
+1. Determine canonically which surface shapes A-restoration must fire
+   on (for each trigger class: `*o`, `*ō`, `*u`, `*ū`, `*ô`, `*ǭ`,
+   genuine stressed `*á` in compounds if any, …) and which it must
+   NOT fire on (weak `*a`-tails, `*ă`-tails, weak `*ą`).
+2. Survey how other FST grammars (e.g. Ringe/Taylor's own) encode the
+   "restore before back-vowel suffix BUT NOT weak-tail" constraint.
+3. Investigate whether reformulating the trigger set at the top of
+   the file (adding a dedicated `OEARestorationTriggerVowel` alphabet
+   that explicitly excludes weak-tail-position `{*a}` shapes) is
+   cleaner than relying on context subtraction.
+4. Verify in foma by unit test that whatever new formulation
+   (a) fires correctly on `*dagos → dagas`, `*stapol`, `*knafō`,
+   `*wiralduz`-type forms, and (b) blocks on `*dagaz`, `*stabaz`,
+   `*bardaz`, `*kwiθuz`-type forms.
+
+Only after that research is written up here should the rule itself
+be rewritten. No further code change is made in this pass beyond the
+split-AFB fix; the A-restoration regression is catalogued for
+dedicated work.
 

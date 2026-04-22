@@ -1,12 +1,14 @@
-Total mismatches: 37
+Total mismatches: 45
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    6
+  Phonology (core buckets):    14
   Phonology (other buckets):   24
 
 === CORE BUCKETS ===
+  fronting_missing__afb: 5
+  fronting_missing__also_wrong_form: 3
   breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
@@ -14,7 +16,7 @@ Total mismatches: 37
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
-  epenthetic_vowel_missing: 3
+  epenthetic_vowel_missing: 2
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -30,20 +32,31 @@ Total mismatches: 37
   back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__u_lowering_exception: 5
-  vowel_quality__u_o_alternation: 2
+  vowel_quality__u_o_alternation: 3
 --- final_vowel_missing sub-buckets ---
-  final_vowel_missing__weak_noun_like: 4
+  final_vowel_missing__weak_noun_like: 5
 --- final_n_missing sub-buckets ---
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
   cons_mismatch__c_vs_ċ__cluster: 1
-  cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__length_diff: 1
   cons_mismatch__n_vs_-__word_final: 1
   cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
+
+fronting_missing__afb (5):
+  *kráftaz -> craft (expected cræft)
+  *mástaz -> mast (expected mæst)
+  *xrábnaz -> hrafn (expected hræfn)
+  *stábaz -> staf (expected stæf)
+  *táppan -> tappan (expected tæppan)
+
+fronting_missing__also_wrong_form (3):
+  *dágaz -> dag (expected dæġ)
+  *wágnaz -> wagn (expected wæġn)
+  *wábsaz -> wafs (expected wæsp)
 
 breaking_missing__expected_eo_got_e (1):
   *wéslon -> weslon (expected weosule)
@@ -60,22 +73,21 @@ long_vowel_missing (3):
   *téxun -> teoon (expected tīen)
 
 palatalization_missing (1):
-  *wīθijăz -> wīþ (expected wīþiġ)
+  *wīθijaz -> wīþ (expected wīþiġ)
   >> ISSUE: Palatal ġ/ċ expected but velar g/c produced
   >> LIKELY: Palatalization rule not applying in this context
   >> ACTION: Check palatalization environments; may be suffix-related
 
 final_vowel_extra (2):
   *láimōn -> lāfe (expected lām)
-  *wéstănē -> westne (expected west)
+  *wéstanē -> westene (expected west)
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
 
-epenthetic_vowel_missing (3):
-  *sáiwălō -> sāwl (expected sāwol)
-  *stráwjăną -> strewan (expected strewian)
-  *θístilăz -> þistl (expected þistel)
+epenthetic_vowel_missing (2):
+  *stráwjaną -> strewan (expected strewian)
+  *θístilaz -> þistl (expected þistel)
 
 gemination_extra (2):
   *spénnilō -> spinnlu (expected spindle)
@@ -103,7 +115,7 @@ breaking_extra__ie_for_i (1):
   *θréjez -> þrīe (expected þrī)
 
 breaking_extra__wrong_form (1):
-  *xláxjăną -> hliehan (expected hlæhhan)
+  *xláxjaną -> hliehan (expected hlæhhan)
   >> ISSUE: Breaking difference plus consonant skeleton mismatch
   >> LIKELY: TSV proto/target are different lexemes or form classes
   >> ACTION: Verify TSV alignment; likely needs different proto
@@ -121,38 +133,45 @@ back_expected_front_out__other (1):
   >> ACTION: Research if target is regular or a variant; may need u-coloring rule
 
 vowel_quality__u_lowering_exception (5):
-  *búkkăz -> bocc (expected bucc)
-  *fúglăz -> fogol (expected fugol)
+  *búkkaz -> bocc (expected bucc)
+  *fúglaz -> fogol (expected fugol)
   *rústō -> orst (expected rust)
-  *wúlfăz -> wolf (expected wulf)
+  *wúlfaz -> wolf (expected wulf)
   *wúllō -> woll (expected wull)
 
-vowel_quality__u_o_alternation (2):
+vowel_quality__u_o_alternation (3):
+  *sáiwalō -> sāwul (expected sāwol)
   *wíduwōn -> widowe (expected widuwe)
   *wír-aldu -> weoruld (expected weorold)
 
-final_vowel_missing__weak_noun_like (4):
+final_vowel_missing__weak_noun_like (5):
   *fūri -> fȳr (expected fȳre)
+  *rástōz -> arst (expected ræste)
   *skúldrō -> sċoldor (expected sċuldra)
-  *síbăz -> sif (expected sife)
+  *síbaz -> sif (expected sife)
   *tángō -> tang (expected tange)
 
 cons_mismatch__c_vs_ċ__cluster (1):
-  *strákkijăną -> strecċan (expected streċċan)
-
-cons_mismatch__f_vs_s__cluster (1):
-  *wábsăz -> wæfs (expected wæsp)
+  *strákkijaną -> strecċan (expected streċċan)
 
 cons_mismatch__length_diff (1):
-  *skéllinăz -> sċillen (expected sċilling)
+  *skéllinaz -> sċillen (expected sċilling)
 
 cons_mismatch__n_vs_-__word_final (1):
-  *súndrōjăną -> sundrian (expected sundor-)
+  *súndrōjaną -> sundrian (expected sundor-)
 
 cons_mismatch__þ_vs_d__intervocalic (1):
   *kwíθuz -> cwiþu (expected cwedu)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
+*kráftaz -> craft (expected cræft)
+*mástaz -> mast (expected mæst)
+*xrábnaz -> hrafn (expected hræfn)
+*stábaz -> staf (expected stæf)
+*táppan -> tappan (expected tæppan)
 
 --- fronting_missing__also_wrong_form ---
+*dágaz -> dag (expected dæġ)
+*wágnaz -> wagn (expected wæġn)
+*wábsaz -> wafs (expected wæsp)
