@@ -2617,10 +2617,6 @@ define EnglishProtoToOE (
     # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
     .o. NWGmcNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
-    # Medial unstressed u-lowering (Campbell §373, §332). MUST run AFTER
-    # NasalSpirantLengthening/Loss so that *-unθ- → *-ūθ- forms have long *ū.
-    # Long *ū doesn't lower; short *u (as in past pl. *-un → -on) lowers to *o.
-    .o. OEMedUnstressedULowering
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
@@ -2637,6 +2633,13 @@ define EnglishProtoToOE (
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
     # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
     .o. OEInterStressRaising
+    # PROBE §17.10.19 (R3): medial u-lowering moved AFTER InterStressRaising so
+    # that *u's newly raised from *a (e.g. *sāwalu → *sāwulu) are visible to
+    # lowering. Original position was immediately after NasalSpirantLoss.
+    # Campbell §373 / §49 place unstressed u → o late; R/T §6.3.3 places
+    # inter-stress raising in pre-OE — so lowering-after-raising is the
+    # chronologically correct order.
+    .o. OEMedUnstressedULowering
     # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
     # See DEV_NOTES §17.10.14 for the cross-source survey.
     .o. PWGmcFinalBareALoss
@@ -2775,8 +2778,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
     .o. NWGmcNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
-    # Medial unstressed u-lowering: AFTER nasal-spirant lengthening
-    .o. OEMedUnstressedULowering
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAuFronting
@@ -2785,6 +2786,11 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEEwLongDiphthong
     .o. OEAwLongDiphthong
     .o. OEPrefixAReduction
+    # Inter-stress raising (R/T §6.3.3): *a → *u before AFB/breaking.
+    .o. OEInterStressRaising
+    # Medial unstressed u-lowering moved AFTER InterStressRaising per
+    # §17.10.19 (R3). Mirrors main-stack ordering.
+    .o. OEMedUnstressedULowering
     .o. PWGmcFinalBareALoss
     .o. AngloFrisianBrightening
     .o. OEBreaking
