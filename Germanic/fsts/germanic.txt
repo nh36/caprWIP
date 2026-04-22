@@ -1014,28 +1014,50 @@ define PGmcRhotacism [
 # This is an early PGmc change; no daughter language shows *-gm-.
 define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 
-# PGmc ō-stem gen.sg. *-ōz: R/T vol.2 §3.1.1 (p.58): "PGmc *gebōz → PWGmc *geba".
-# Z-loss with shortening of preceding bimoric *-ō to *-a, as a single PWGmc development.
+# PGmc ō-stem gen.sg. / acc.sg. / nom.pl. *-ōz.
+# R/T vol.2 §6.8.3 pp.299-300 (the primary passage, correcting the earlier
+# §3.1.1 citation): "ō-stem acc. sg., gen. sg. -e < -ā < *-ā < PWGmc *-a <
+# PGmc acc. sg. *-ō, gen. sg. *-ōz". R/T give a LAUTGESETZLICH pathway to OE
+# -e via AFB-fronting of the unstressed final vowel and later weakening.
+# (Campbell §586 and Brunner §252 Anm.1 treat OE gen.sg. -e as analogical
+# from the acc.pl./dat.sg.; R/T is the source followed here, consistent
+# with the project's R/T-first policy for chronology — see §17.10.14.)
+#
 # R/T §3.3.1 (p.98): z-loss preceded rhotacism — final *-z was never rhotacized.
-# This is NOT a shortcut: R/T present no intermediate *-gebō stage. The z-loss and
-# vowel shortening were a single process. Modeling as two steps would over-apply
-# (a separate "final *-ō → *-a" rule would also affect nom.sg. *-ō, which is wrong).
-# Must apply BEFORE general z-deletion (sequential .o.) to prevent ambiguous output.
-# See DEV_NOTES.md for full analysis including exceptionlessness discussion.
-define PGmcFinalOZShortening [{*ō} {*z} -> {*a} || _ .#.];
+# The z-loss and vowel shortening were a single process; no intermediate *-gebō
+# stage is posited.
+#
+# OUTPUT SYMBOL: {*æ} (not {*a}). The unstressed final vowel of R/T's chain
+# undergoes AFB-fronting (their `*-ā → *-ǣ` step) concurrently with its
+# shortening; we encode the post-AFB result directly. This keeps the rule
+# out of the downstream PWGmcFinalBareALoss filter (which targets {*a}
+# from nom.sg. m.a-stem *-az, a distinct and earlier loss), and the
+# resulting {*æ} is not in EnglishStarBackVowel so it cannot trigger
+# A-restoration on the stem. The parallel is OEUnstressedLongVowelShortening7
+# (`{*ǭ} → {*æ}`), which likewise writes straight to the fronted short form.
+# OEUnstressedAEMerger (OEWeakTailReduction3) later converts {*æ} → {*e}.
+# Full derivation and audit: DEV_NOTES §17.10.20.
+#
+# Must apply BEFORE general z-deletion (sequential .o.) to prevent ambiguous
+# output.
+define PGmcFinalOZShortening [{*ō} {*z} -> {*æ} || _ .#.];
 define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
 define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
 
 # PWGmc final bare-a loss (R/T §§3.1-3.4, §6.1-6.2).
-# Word-final *-a (arisen from nom.sg. m.a-stem *-az via z-loss, and from
-# f.ō-stem *-ōz via PGmcFinalOZShortening) was lost at the PWGmc stage,
-# BEFORE AFB and retraction. Brunner §10 is explicit that retraction sees
-# the tail as it stood at retraction time, i.e. already without this *-a.
-# Moving this loss to run BEFORE AngloFrisianBrightening fixes the
-# A-restoration regression catalogued in DEV_NOTES §17.10.13: post-
-# Phase 1d-β migration, bare {*a} is in the trigger set, and leaving
-# final *-a in place at retraction time causes false-positive firing on
-# forms like *dagaz → *daga → **dag (correct is *dæg).
+# Word-final *-a of **nom.sg. m.a-stem *-az** origin (via z-loss) was lost at
+# the PWGmc stage, BEFORE AFB and retraction. Brunner §10 is explicit that
+# retraction sees the tail as it stood at retraction time, i.e. already
+# without this *-a. Moving this loss to run BEFORE AngloFrisianBrightening
+# fixes the A-restoration regression catalogued in DEV_NOTES §17.10.13.
+#
+# SCOPE: this rule targets {*a} only. The f.ō-stem *-ōz outcome is
+# represented as {*æ} by PGmcFinalOZShortening (see above; DEV_NOTES
+# §17.10.20) precisely so the two historically-distinct *-a tokens do not
+# collapse here. Keeping the two distinct at the symbolic level preserves
+# R/T's chronology: the m.a-stem *-a is the early PWGmc loss; the ō-stem
+# *-a is a later shortening whose AFB-fronted outcome survives to give
+# OE weak-tail `-e`.
 # See DEV_NOTES §17.10.14 for the cross-source survey and
 # Germanic/docs/debug_snapshots/reorder_audit.txt for the audit.
 define PWGmcFinalBareALoss [
