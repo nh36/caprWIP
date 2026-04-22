@@ -23509,7 +23509,189 @@ TSV note on row 862 updated: citation corrected from "R/T §3.1.1 p.58"
 derivation description updated to match the Option γ pathway
 (simultaneous shortening + AFB-fronting of the unstressed final).
 
-#### Decision
+#### Decision (provisional)
 
-Option γ retained. Mismatch count: **38 → 37**. Case 3 closed.
-Next: Case 4 (`*fúnðanaz → fundan`, expected `funden`).
+Option γ retained pending deeper source check below.
+
+### §17.10.21 — Case 3 re-evaluation: is Option γ genuinely defensible?
+
+Reviewer pushback (valid): Option γ as coded in §17.10.20 collapses two
+historically distinct changes — (a) z-loss + bimoric `*ō`-shortening,
+and (b) subsequent AFB-fronting of the surviving `*-a` — into a single
+rule that writes `*-ōz → *-æ` in one step. Reviewer also questioned
+whether R/T actually *reject* the Campbell/Brunner analogical account
+or merely offer a phonological alternative. Both concerns are
+answered below, with verbatim-source checks and a proposed
+**unbundling** of the rule that aligns the FST with R/T's explicit
+three-stage chronology.
+
+#### 1. What each source actually says (verbatim)
+
+**Ringe & Taylor vol.2 §3.1 (pp. 46-47, 58-59)** distinguishes three
+sequential PWGmc changes affecting word-final vowels. Paraphrasing
+their itemised presentation:
+
+  1. **z-loss** after unstressed vowels: `*-az → *-a`; `*-ōz → *-ō`
+     (the long vowel is retained; R/T explicitly state z-loss preceded
+     rhotacism — final `*-z` was never rhotacized; p. 98).
+  2. **Loss of short word-final `*-a` and `*-ą`** (inherited, whether
+     from PGmc `*-a` / `*-ą` directly or secondarily from `*-az`):
+     `*daga → *dag`; `*staina → *stain`; `*horna → *horn`.
+  3. **Unrounding of bimoric word-final `*-ō`** (and before word-final
+     `*-r`): p. 58-59 — "Word-finally, and before word-final `*-r`,
+     surviving **bimoric** long ō-vowels became PWGmc `*-a`, while
+     **trimoric** long ō-vowels became PWGmc `*-ō`."
+
+The critical point: step (3) creates *new* `*-a` tokens AFTER step (2)
+has already eliminated the earlier `*-a`. R/T's example `*gebōz →
+PWGmc *geba > OE giefe` (p. 4054 of OCR) shows this late `*-a`
+surviving word-final loss precisely because it arose after that loss
+had finished. This is R/T's chronological solution to the puzzle
+Campbell/Brunner handled analogically.
+
+**R/T vol.2 §6.8.3 pp. 299-300** gives the derivation chain (OCR
+reconstructed):
+
+> ō-stem acc. sg., gen. sg. `-e < -æ < *-ǣ < PWGmc *-a < PGmc acc. sg.
+> *-ō, gen. sg. *-ōz`
+
+— presented without hedging and in the same paragraph that derives
+a-stem dat.sg. `-e < PWGmc *-ē` and fem. n-stem nom.sg. `tunge <
+PWGmc *tunga`. R/T treat all three as lautgesetzlich outcomes.
+
+**However:** R/T do NOT explicitly rebut the analogical account. They
+present a phonological derivation, leaving the reader to conclude
+that analogy is unnecessary. A search of vol.2 for "analogical",
+"analogy", "levelling" in the context of ō-stem endings turns up
+discussions of *other* analogies (e.g. line 11620, 15314, 18370) but
+no explicit engagement with Campbell §586's claim. Honest summary:
+R/T *provide a lautgesetzlich chain* but do *not* argue against
+analogy.
+
+**Campbell §586 (OE Grammar)** holds that gen.sg. `-e` is analogical
+from the acc.pl. (where `-e` is itself the expected outcome of
+`*-ōz` trimoric → `*-ō` → `-e` via a different route). His
+chronology conflates the two `*-ōz` suffixes (gen.sg. bimoric vs.
+acc.pl. trimoric or the reverse, depending on who one consults).
+
+**Brunner §252 Anm.1 (AG)** concurs: gen.sg. `-e` is "wohl analogisch
+nach" the acc.pl./dat.sg.
+
+**Majority view in the field**: analogical. R/T are the minority but
+are explicitly followed in this project for chronology disputes
+(DEV_NOTES §17.10.14 policy note; §17.10.19 precedent for Case 2 R3).
+
+#### 2. Why Option γ as coded is architecturally unsatisfactory
+
+Option γ writes `PGmcFinalOZShortening: *-ōz → *-æ` as a single-step
+rewrite. This compresses three R/T historical steps into one FST
+rule output:
+
+  i.  PGmc z-loss                 (`*-ōz → *-ō`)
+  ii. PWGmc bimoric ō-unrounding  (`*-ō → *-a`)
+  iii. Pre-OE AFB-fronting        (`*-a → *-ǣ → *-æ`)
+
+Collapsing these into one `*-ōz → *-æ` rewrite is correct at the
+endpoint but loses the chronological information that R/T explicitly
+present. Reviewer's "feels hacky" intuition is well-founded.
+
+#### 3. The system already maintains the correct symbol architecture
+
+Our inventory already distinguishes:
+
+  - `{*ō}`   = bimoric long ō (default; treated as bimoric throughout
+              the OE pipeline)
+  - `{*ô}`   = trimoric long ō (survives as such; feeds
+              `OEUnstressedLongVowelShortening8` → `{*a}` → OE `-a`)
+  - `{*ǭ}`   = nasalized bimoric ō (from fem. n-stem `*-ōn` via
+              `NWGmcNStemNLoss`; feeds
+              `OEUnstressedLongVowelShortening7` → `{*æ}` → OE `-e`)
+
+The bimoric/trimoric distinction is **kept** through PGmc → PWGmc →
+OE. It is only collapsed in the sister-language pipelines
+(`DutchTrimoricMerge`, `GermanTrimoricMerge` at lines 3054, 3249),
+which is correct — those daughters merged them historically.
+
+This means: **we have the tools to handle gen.sg. `*-ōz` without any
+telescoping**. The bimoric `{*ō}` that survives z-deletion is
+exactly the segment R/T's step (3) targets, and a dedicated
+`{*ō} → {*æ}` rule parallel to the existing `{*ǭ} → {*æ}` at
+`OEUnstressedLongVowelShortening7` would model step (3) directly.
+
+#### 4. Unbundled proposal (Option δ)
+
+Replace the single-step `PGmcFinalOZShortening: *-ōz → *-æ` with a
+sequence that mirrors R/T's three steps:
+
+  - **Step 1 (z-loss, existing):** delete `PGmcFinalOZShortening`
+    entirely; let `PGmcFinalZDeletion` handle all word-final `*-z`
+    uniformly. After this rule: `*-az → *-a`, `*-ōz → *-ō`
+    (bimoric), `*-ôz → *-ô` (trimoric, if any).
+  - **Step 2 (short *-a loss, existing):** `PWGmcFinalBareALoss`
+    unchanged. Deletes `{*a}` only. The surviving `{*ō}` from step
+    (1) is untouched.
+  - **Step 3 (bimoric ō-unrounding + AFB-fronting, new):** add
+    a late word-final rule `{*ō} → {*æ} || _ .#.` at or near
+    `OEUnstressedLongVowelShortening` (beside the existing `{*ǭ}`
+    and `{*ô}` handlers). This handles the same gen.sg./acc.sg./
+    acc.pl. `*-ō` that R/T step (3) targets, and the output `{*æ}`
+    feeds into the existing weakening chain → OE `-e`.
+
+This structure:
+
+  - assigns one FST rule per R/T historical step;
+  - preserves the bimoric/trimoric distinction all the way to the
+    late OE-block handler;
+  - uses the same target symbol `{*æ}` as the parallel `{*ǭ}`
+    handler, making the phonological parallelism explicit;
+  - avoids any A-restoration concerns (the relevant back vowel
+    `{*ō}` is gone by the time A-restoration fires);
+  - does not change the endpoint (still `ræste`), so the mismatch
+    count should remain 37.
+
+#### 5. Regression risks for Option δ
+
+Adding `{*ō} → {*æ}` word-final is broader than the `*-ōz → *-æ`
+Option γ. Risk audit needed for:
+
+  - **Words where the PROTOFORM has trimoric `*-ô`** (masc. n-stem
+    nom.sg., e.g. `*namô`, `*tungô`): unaffected — use `{*ô}`, not
+    `{*ō}`.
+  - **Words where the PROTOFORM has bimoric `*-ō`** without `*-z`
+    (fem. ō-stem acc.sg., fem. n-stem acc.sg.-style forms): these
+    should ALSO follow R/T step (3) and give OE `-e` historically.
+    Need TSV audit to confirm targets are consistent.
+  - **Fem. ō-stem nom.sg. `*-ō`:** per R/T p. 267, this is handled
+    separately by `NWGmcFinalLongORaising` (`*-ō → *-u`) which
+    fires earlier. If `NWGmcFinalLongORaising` runs before the
+    proposed new rule, nom.sg. is already `*-u` and the new rule
+    doesn't see it. Ordering to verify.
+  - **Any non-final-position `{*ō}`:** restricted by `_ .#.` so
+    unaffected.
+
+#### 6. Honest statement of R/T's position vs. field consensus
+
+For the TSV note and for any future readers: R/T's derivation is the
+minority account; Campbell and Brunner treat gen.sg. `-e` as
+analogical. R/T give a lautgesetzlich chain but do not explicitly
+argue against analogy. The project follows R/T per its standing
+chronology policy, and Option δ implements that choice honestly,
+one FST rule per R/T historical step, without collapsing.
+
+#### 7. Decision point
+
+Three live options:
+
+  - **γ (current):** keep the committed code. Endpoint-correct;
+    architecturally bundled; tested.
+  - **δ (proposed):** unbundle as described in §4. Matches R/T's
+    chronology one-to-one; requires regression audit on all TSV
+    rows whose PROTOFORM ends in `{*ō}`.
+  - **Revert to analogical treatment** (like Case 1 `tæppan`): mark
+    the TSV row as analogical with no FST change. Aligns with
+    Campbell/Brunner majority; abandons R/T-first policy for this
+    case.
+
+Awaiting reviewer decision before any code change.
+
+— end §17.10.21
