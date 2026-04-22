@@ -24430,3 +24430,181 @@ still outside `PGmcConsonantRules`.
 - [ ] Trace stage mirrors the main-pipeline position for z-loss.
 
 — end §17.10.25
+
+### §17.10.26 — Plan of attack: Case 4 + classification of post-§17.10.25 "regressions"
+
+**Status**: §17.10.24 + §17.10.25 applied and committed as `45f7db7`.
+Mismatch count 37. Case 3 chronology work is **closed**. This
+section plans the two remaining tasks from the Phase 1d-β regression
+loop: (i) re-classify the apparent u-lowering "regressions" and (ii)
+attack Case 4 (`*fúnðanaz → funden`).
+
+#### 1. Re-classification of *rústō and *wúllō
+
+`*rústō → orst (expected rust)` and `*wúllō → woll (expected wull)`
+were reported as "new regressions" after §17.10.24/25 landed. They
+are **not actually regressions of our chronology work**. Three
+converging pieces of evidence:
+
+1. The mismatch report buckets both under
+   `vowel_quality__u_lowering_exception`, not `vowel_quality__u_o_alternation`
+   — the report tool uses the `_U_LOWERING_ROOTS` set in
+   `oe_mismatch_report.py` (which already contains "rust"/"rost" and
+   "wull"/"woll") to separate documented lexical exceptions from
+   genuine model errors.
+
+2. The TSV row for `*wúllō` (row 2300) carries the explicit note
+   `EXCEPTION: u-lowering blocked near labials (Luick §78, R/T
+   §2.3.1, Brunner §68). FST outputs regular woll; attested wull is
+   genuine lexical exception.` Row 2162 for `*rústō` similarly
+   notes `OE rust retains u; cf. R/T §2.3.1 for general u-lowering
+   exceptions.`
+
+3. DEV_NOTES §"NWGmc u-lowering Exceptions Near Labials"
+   (2026-02-13) surveys Bülbring, Luick, R/T, Brunner, and Prof.
+   Schuhmacher's 2026-03-20 consultation, and reaches the explicit
+   decision: *"Accept the mismatches. The FST correctly models the
+   regular NWGmc u-lowering as a phonological rule. The u-preserving
+   forms are genuine lexical exceptions for which no phonological
+   conditioning has been established."*
+
+§17.10.23's raising-at-top placement was inadvertently producing
+un-lowered \*u in these exception roots — **by over-broadly bleeding
+U-lowering for all root-*u + suffix-*-ō forms**, not just for the
+labial exceptions. That looked like a "fix" for *rústō and *wúllō
+but actually broke three other genuinely regular forms (*núsō,
+*skúflō, *súrgō), and its surface "correctness" for the labial
+exceptions was phonologically accidental.
+
+§17.10.24/25 restore the phonologically regular outcome for all five
+forms. The three regular forms are now correctly OE-lowered; the two
+lexical exceptions remain in the mismatch report as *expected and
+documented* exceptions, consistent with the §62 decision.
+
+**Action**: No FST work needed. Verification only:
+
+- [ ] Confirm `*rústō` and `*wúllō` are still in the
+      `vowel_quality__u_lowering_exception` bucket after
+      `45f7db7` (not in `u_o_alternation` or elsewhere).
+- [ ] Confirm the total `u_lowering_exception` count is now 5 (one
+      more than the 4 pre-§17.10.23 if §17.10.23 had been masking
+      only *wúllō — verify).
+- [ ] Leave TSV notes and DEV_NOTES §62 unchanged; they correctly
+      describe the current model behaviour.
+
+Provisional closure: **no action, verified-in-report only.**
+
+#### 2. Case 4 — `*fúnðanaz → funden`
+
+Current state from the 37-mismatch report:
+
+```
+vowel_quality__unstressed_vowel (1):
+  *fúnðanaz -> fundan (expected funden)
+```
+
+The FST produces `fundan`; the attested WS OE strong past participle
+is `funden`. The difference is the unstressed suffix vowel: `-an`
+vs. `-en`. This is a suffix-reduction / weak-tail question, not a
+root-vowel question. The root vowel `u` is correct (pre-nasal
+u-retention — R/T §2.3.1 notes that nasal + consonant clusters
+protect \*u from lowering).
+
+Proposed investigation (in this order):
+
+1. **Source audit**. R/T vol.2 §7.1.4 pp.337-338 on strong past
+   participles — what do they say about the suffix vowel? Campbell
+   §736-740 on the ptp morphology — what does he give for the
+   attested WS form and the dialectal range? Hogg §7.100 ff on the
+   reduction of unstressed \*a in suffixes. Collect verbatim.
+
+2. **Morphological audit**. Strong verbs Class III-IV have ptp stem
+   + `-en`. The `-en` is not `-an` weakened: it's a distinct
+   morpheme historically. Check R/T / Fulk / Ringe PGmc on the
+   reconstructed PGmc ptp suffix:
+      - Class III/IV: *-anaz ~ *-enaz?
+      - Gothic shows -ans (e.g. *bundans*), pointing to *-anaz.
+      - OE/ON show *-en* (WGmc innovation? e-grade by analogy with
+        Class V/VI, per Ringe §3.2.5?).
+
+   The TSV's PROTOFORM is `*fúnðanaz`, i.e. PGmc *-anaz. The
+   phonologically regular reflex of `-anaz` in OE is `-an` (via
+   z-loss + bare-a loss? or via some other path). But the attested
+   suffix is `-en`, which must come from either:
+
+     (a) a different proto-form (`*fúnðenaz` or `*fúnðinaz`), or
+     (b) a morphological/analogical e-spread from the other ptp
+         classes, or
+     (c) a phonological umlaut / vowel-assimilation rule specific
+         to Class III/IV.
+
+3. **Probe the current pipeline**. Run
+   `oe_full_trace_report.py *fúnðanaz` to see where in the stack
+   the suffix is `an` and where (if anywhere) it becomes `en`. The
+   existing `EnglishWeakTailReductions` / `OEUnstressedAEMerger`
+   / `OEWeakTailReduction3` sequence handles most unstressed \*a
+   → e via the `*a → *æ → e` path (§§6.8.2-3 in R/T). It is
+   plausible the ptp suffix \*-anaz is not reaching that path.
+
+4. **Decide between approaches**. Depending on the source audit:
+
+   (α) *Phonological fix*: if R/T propose a regular phonological
+       change `*-anaz → *-en` (or `*-an → *-en` by some assimilation
+       or umlaut), add/adjust the rule and trust it to apply only
+       in the ptp environment. Preferable if the change is
+       Neogrammarian.
+
+   (β) *Morphological fix*: if the attested `-en` is analogical /
+       morphological (e-spread from Class V/VI ptps), the TSV
+       should either:
+         - carry a PROTOFORM with e-grade suffix (`*fúnðenaz`),
+           which the FST can then feed phonologically regularly
+           through the existing `-en` path, or
+         - carry a separate annotation that the suffix is
+           morphologically remodelled, with PROTOFORM left as
+           `*fúnðanaz` and the mismatch accepted.
+
+   (γ) *Paradigm-cell reassignment*: if the conservative pre-form
+       is clearly a different cell (unlikely for ptp), switch.
+       Following the §17.10.17 / §17.10.19 precedents for lifian
+       and sāwol.
+
+5. **Verify no other ptp is affected**. Search the TSV for rows
+   with PROTOFORM ending `-anaz` that are ptps (STRUCTURE field or
+   HISTORY field). Any that currently pass do so via some path our
+   analysis must not break; any that currently fail should be
+   handled by the same fix.
+
+6. **Implement, rebuild, verify**. Target: mismatch count 37 → 36.
+   Write up the investigation in a new DEV_NOTES §17.10.27 with
+   verbatim source quotations, a decision matrix over (α)/(β)/(γ),
+   the probe output, and the final implemented change.
+
+#### 3. Sequencing and commits
+
+Case 4 is a self-contained ptp-morphology question. It should be
+its own sequence:
+
+1. §17.10.27 — Case 4 source audit + probe output.
+2. Decision round-trip with user on (α)/(β)/(γ).
+3. Implementation + rebuild.
+4. Post-implementation §17.10.28 (if any deltas from the plan).
+5. Commit + push.
+
+The *rústō/*wúllō verification in §17.10.26 §1 is a single
+read-only check against the current mismatch report; can be
+collapsed into the Case 4 commit or stand alone.
+
+#### 4. Out of scope for this plan
+
+- `*wíduwōn → widowe (expected widuwe)` — this is in the
+  `vowel_quality__u_o_alternation` bucket (a genuine model error)
+  but it is the *medial* unstressed vowel, not the same class as
+  the three §17.10.25 fixes. Defer to a post-Phase-1d-β cleanup.
+- `*mízdō → miord (expected mēd)` — this is breaking of \*i before
+  \*zd + contraction; an entirely different question from Case 3/4.
+  Defer.
+- The `vowel_quality__u_lowering_exception` bucket's five
+  labial-exception entries — per §62, these are accepted.
+
+— end §17.10.26
