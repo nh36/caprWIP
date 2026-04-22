@@ -91,7 +91,17 @@ STAGES: List[Tuple[str, str]] = [
     ("LAdjacentSyncope", "old_english_sandbox_after_l_adjacent_syncope.bin"),
     ("DentalAssimilation", "old_english_sandbox_after_dental_assimilation.bin"),
     ("PreconsonantalDegemination", "old_english_sandbox_after_preconsonantal_degemination.bin"),
+    # Two-stage *ō shortening with fronting wedged between (germanic.txt §15.8, lines 2794-2804):
+    #   1. EarlyOShortening: *ō → *a before nasals (weak nouns)
+    #   2. UnstressedFrontingEarly (= OEUnstressedAFronting): *a → *æ (Anglo-Frisian fronting, Campbell §§333-334)
+    #   3. LateOShortening: *ō → *a elsewhere (weak II verbs)
+    #   4. UnstressedLongVowelShortening: other long vowels
+    #   5. UnstressedAEMerger: *æ → *e in inflectional syllables (Campbell §369)
+    ("EarlyOShortening", "old_english_sandbox_after_early_o_shortening.bin"),
+    ("UnstressedFrontingEarly", "old_english_sandbox_after_unstressed_fronting_early.bin"),
+    ("LateOShortening", "old_english_sandbox_after_late_o_shortening.bin"),
     ("UnstressedLongVowelShortening", "old_english_sandbox_after_unstressed_long_vowel_shortening.bin"),
+    ("UnstressedAEMerger", "old_english_sandbox_after_unstressed_ae_merger.bin"),
     ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
     ("UnstressedIMarking", "old_english_sandbox_after_unstressed_i_marking.bin"),
     ("MedUnstressedILowering", "old_english_sandbox_after_med_unstressed_i_lowering.bin"),
