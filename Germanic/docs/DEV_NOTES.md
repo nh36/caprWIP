@@ -23200,3 +23200,88 @@ the total from 40 → 39. No side effects expected (audit above).
 4. Commit and push. Move to Case 3.
 
 Next step is the edit itself, pending user approval of this write-up.
+
+### §17.10.18 — Case 2 revised: OEWLInsertion does not fire; actual pathway differs
+
+The FST edit proposed in §17.10.17 was applied (germanic.txt, after
+`OEGLInsertion`, composed into `OEEpentheticVowel`) and bins rebuilt.
+The rule compiles cleanly but **does not fire**: the probe still
+outputs `sāwul`, and the mismatch count is unchanged (40).
+
+#### Stage-by-stage trace (actual FST behaviour)
+
+Probing the sandbox stage bins with input `sáiwalō`:
+
+| After stage                        | Form         |
+|------------------------------------|--------------|
+| `nwgmc_u_lowering`                 | `*sāwalō`    |
+| `med_unstressed_u_lowering`        | `*sāwalu`    |
+| `inter_stress_raising`             | `*sāwulu`    |
+| `b_allophony`                      | `*sāwulu`    |
+| `medial_syncope`                   | `*sāwul`     |
+| (final, after epenthesis + surface) | `sāwul`      |
+
+The pathway that §17.10.17 assumed (`… → *sāwl → OEWLInsertion → *sāwol`)
+never materialises. What actually happens:
+
+1. NWGmc final-long-ō-raising shortens `*-ō → *-u` → `*sāwalu`.
+2. `OEMedUnstressedULowering` runs once (line 2634) but at this stage
+   the medial vowel is still `*a`; the final `*u` has no following
+   consonant so the rule's `_ C` context does not match; no change.
+3. `OEInterStressRaising` (line 2650) raises medial `*a → *u` →
+   `*sāwulu`.
+4. `OEMedialSyncope` (line 2712) deletes the final `*u` → `*sāwul`.
+5. By the time `OEEpentheticVowel` runs, the string is `*sāwul` — there
+   is **no `*w + *l` adjacency**; the newly-raised `*u` sits between
+   them. `OEWLInsertion`'s structural description `{*w}{*l} → {*w}{*o}{*l} || _ .#.`
+   cannot match.
+
+In retrospect, §17.10.15's diagnosis flagged two problems — (i) missing
+parasiting rule, (ii) `OEMedUnstressedULowering` running before
+`OEInterStressRaising` so the raised `*u` is never lowered — and
+§17.10.17 addressed only (i). The actual defect is (ii): the pipeline
+does not syncopate the medial vowel at all (Campbell §589.5's first
+step never fires here), so the `*u → *o` lowering is the only surgery
+that can recover `sāwol`.
+
+#### Revised options
+
+**Option R1 — narrow word-final `*u → *o` lowering in `_w_l_` context.**
+Repurpose the (currently inert) `OEWLInsertion` slot:
+
+```foma
+define OEWLLowering [
+    {*u} -> {*o} || {*w} _ {*l} .#.
+];
+```
+
+Surgical; conditioned exactly on the shape that `sāwol` exhibits; no
+risk of collateral damage elsewhere in the lexicon (no other TSV entry
+has `*w + *u + *l .#.` pattern — confirmed by prior audit in
+§17.10.17).
+
+**Option R2 — second-pass `OEMedUnstressedULowering` after
+`OEMedialSyncope`.** Add a second composition of the existing rule
+post-syncope in the main stack. More general (catches any post-syncope
+raised `*u`) but broader side-effects: any medial `*u` with a C-final
+environment at that stage becomes `*o`. Needs a full probe sweep across
+the TSV before adopting.
+
+**Option R3 — reorder: move `OEMedUnstressedULowering` after
+`OEInterStressRaising`.** The most "principled" fix (addresses the
+ordering bug itself), but the one flagged as highest-risk in §17.10.15
+because multiple other forms depend on the current ordering. Very
+likely to produce new mismatches that need triage.
+
+#### Recommendation
+
+Pursue **R1** first. It is the minimum-surgery fix consistent with
+Campbell §362/§589.5 (grouping `sāwol` with parasited-`o` forms such as
+`fugol`, `nagel`), and leaves the known ordering bug documented but
+unchanged — to be revisited when a later case actually requires a
+general solution. If R1 is accepted, the already-added (inert)
+`OEWLInsertion` stanza will be replaced in place with the lowering
+rule, and the bins rebuilt. Expected mismatch delta: 40 → 39.
+
+Awaiting user decision: R1 (recommended), R2, or R3.
+
