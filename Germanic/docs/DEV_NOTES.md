@@ -22943,4 +22943,81 @@ reported before any TSV edit.
 rebuild. If the probe fails, report back with the failure mode before
 touching the TSV.
 
+#### §17.10.16a — Clarifications added after review
+
+Two points needed sharpening after a review round.
+
+**(i) What the sources actually say about the source of the noun's `æ`.**
+
+Fulk §12.19 n.6 is explicitly about `stæppan`, a Class VI **verb**. The
+mechanism he describes — analogical `a`-for-`æ` drawn from non-umlauted
+ablaut grades within the same verbal paradigm — does not translate to a
+noun: nouns have no ablaut grades to level from. The audit above shows that
+no cell of the n-stem paradigm `*tappô, *tappan-, *tappum-` yields
+lautgesetzlich `tæpp-` either; every cell has a back vowel in the following
+syllable at AFB time.
+
+So where does attested `tæppa` get its `æ`? The handbooks (Kroonen, Orel,
+Bülbring) list the form without explaining the analogy, so there is no
+single verbatim quote to cite. The only internally consistent source is
+**derivational leveling from the co-radical j-stems** — the Class I weak
+j-verb `*tappjaną` and the nomen agentis `*tappj-ārijaz` (OE `tæppere`) —
+both of which have `æ` by regular sound law (AFB fronts `*á → *æ` before a
+following `*j/*i`, with no A-restoration trigger, same pathway as libban
+and hebban). The front-vowel root allomorph is phonologically legitimate in
+the j-paradigm; it then spreads to the derivationally related n-stem noun,
+giving attested `tæppa` instead of expected `tappa`. This kind of
+root-vowel harmonisation across a derivational family is a standard
+Germanicist move, but we should be explicit that, for *this* lexeme, we
+are inferring the source of the analogy rather than quoting a handbook
+that names it.
+
+**(ii) What the TSV originally encoded, what I am proposing, and why the
+two differ.**
+
+The original row 1202 analysed OE surface `tæppan` as an **n-stem noun
+oblique case**: the TSV note read *"Oblique (n-stem acc.sg.) *tappăn >
+tæppan"*. That framing was driven by the comparative cognate sets — Orel
+s.v. `*tappòn`, Kroonen n-stems §1381 — both of which head the entry
+with the **noun** and cite OE `tæppa` as the reflex. Given that framing,
+an `-an`-final OE shape was parsed as an n-stem oblique case of that
+noun. But — as the audit above demonstrates — starting from any cell of
+the nominal paradigm, the FST can only ever produce back-vowel `tapp-`;
+no lautgesetzlich path leads from a nominal PGmc input to a front-vowel
+OE surface.
+
+The OE surface string `tæppan` is shape-ambiguous in OE: it is either an
+n-stem oblique *or* the infinitive of a Class I weak j-verb. Only the
+j-verb reading yields a lautgesetzlich derivation from PGmc. The existence
+of the underlying verb in OE is guaranteed not by Orel (who lists only
+the noun) but by the attested deverbal agent noun `wīn-tæppere` — the
+`-ere` suffix is deverbal by rule (Campbell §584), so its presence in the
+OE lexicon requires a base verb `tæppan` in the same lexicon.
+
+**The proposal is therefore conceptually a re-parsing of the same OE
+surface form, not a switch to a different lexeme.** Same attested target,
+same root, same derivational family. In the three-way distinction the user
+laid out much earlier in this project — (a) the cognate-set headword /
+etymological proto, (b) the specific pre-OE/PGmc input used as the FST
+source, and (c) the attested OE target — we are:
+
+- leaving (c) the attested OE target unchanged (`tæppan`);
+- updating (b) the FST input from the n-stem oblique `*táppan` to the
+  j-verb infinitive `*táppjaną`, because that is the input from which the
+  attested target actually derives by regular sound law;
+- accepting that (a) the cognate-set headword, per Kroonen/Orel, is the
+  noun `*tappô`; the noun and verb belong to the same derivational family
+  but are distinct lexemes, and the noun's analogical `æ` is a separate
+  downstream fact that lies outside what the FST models.
+
+**Was the j-verb reading "what was intended all along"?** Plausibly in
+part. The OE target field `tæppan` happens to coincide shape-wise with the
+Class I weak j-verb infinitive, which is most likely why the row was
+populated with that surface form rather than with the nom.sg. `tæppa`
+(which one would expect if the target really had been a noun). But the
+PROTOFORM was filled in as if the target were a noun oblique, producing a
+mismatch between (b) and (c): the PROTOFORM describes a pathway that
+does not actually land on the chosen surface. The present proposal
+simply realigns (b) with (c).
+
 
