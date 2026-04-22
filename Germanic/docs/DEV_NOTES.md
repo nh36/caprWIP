@@ -23356,3 +23356,160 @@ Mismatch count: **40 → 38**. Case 2 closed. Next: Case 3
 (`*rástōz → ræst`, expected `ræste`).
 
 
+
+### §17.10.20 — Case 3 implementation: PGmcFinalOZShortening outputs `{*æ}` directly (Option γ)
+
+**Case**: `*rástōz → ræst` (expected `ræste`). Final `-e` of f.ō-stem
+gen.sg. never materialises — the FST apocopates it.
+
+#### Sources re-visited
+
+R/T §6.8.3 (vol.2 pp.299–300), verbatim:
+> "ō-stem acc. sg., gen. sg. **-e < -ā < *-ā < PWGmc *-a < PGmc acc. sg. *-ō,
+> gen. sg. *-ōz**, e.g. in sorge 'trouble, of trouble' < sorge < *sorge
+> < PWGmc *sorga < PGmc acc. sg. *surgō (Goth. saurga), gen. sg. *surgoz …"
+
+Campbell §586:
+> "The OE development of these forms is regular **except in the gen. sg.,
+> where the phonological development would be -a**. Possibly the form
+> has been influenced by the acc. pl. …"
+
+Brunner §252 Anm.1:
+> "… nach §44 Anm.3,1 die Endung -a zu erwarten, doch wurde der Gen.
+> anscheinend an den Dat. Sg. angeglichen."
+
+The field thus splits: Campbell and Brunner say `-e` is **analogical**
+(from acc.pl. / dat.sg.), with the lautgesetzlich outcome being short
+`-a`; R/T derive `-e` **phonologically** via an intermediate long
+`*-ā` that fronts under AFB and weakens to `-e`.
+
+This project has been following R/T for chronology throughout the
+§17.10.1x series (Cases 1, 2; §17.10.14 Option X). Consistency with
+that policy, and the desire for strictly neogrammarian FST derivations
+where any source offers one, recommend the R/T pathway here too.
+
+#### Why Option α (as drafted in §17.10.14) will not work unchanged
+
+§17.10.14 proposed making `PGmcFinalOZShortening` output `{*ā}` (long)
+rather than `{*a}`, reasoning that `{*ā}` survives `PWGmcFinalBareALoss`
+and shortens later to yield a weak-tail `-e`. The write-up flagged two
+preconditions to verify:
+
+1. `{*ā}` not caught by `NWGmcFinalLongORaising` — ✓ (rule targets `{*ō}`).
+2. `{*ā}` NOT in `EnglishStarBackVowel` — **FALSE**. `{*ā}` is listed
+   in `EnglishStarBackVowel` at germanic.txt line 584. It is therefore
+   in `OEARestorationTriggerVowel`.
+
+With `{*rástā}` entering A-restoration, the root `*á → *æ` (AFB) would
+be immediately retracted back to `*a` by the final `{*ā}` trigger,
+yielding `**rastā` → `**rast` → `**rast`. Option α thus requires one
+of: (i) subtracting `{*ā}` from the retraction trigger set, or (ii)
+extending AFB to long vowels so `{*ā}` word-final is fronted to
+`{*ǣ}` before A-restoration sees it. Both are additional machinery
+changes with their own audit requirements.
+
+#### Option γ — output `{*æ}` directly
+
+A simpler Plan B that is **equally consistent with R/T** and already
+consistent with the pipeline's existing handling of unstressed `*-a`
+tails:
+
+```
+define PGmcFinalOZShortening [{*ō} {*z} -> {*æ} || _ .#.];
+```
+
+Rationale. R/T's chain has AFB applying to the `*-ā` intermediate to
+produce a front vowel that weakens to `-e`. Since the AFB step is the
+pivotal transition in R/T's chain, and since our FST represents
+post-AFB short front low vowel as `{*æ}` throughout, we can collapse
+R/T's `PWGmc *-a → *-ā → *-ǣ` into a single rule output `{*æ}` without
+loss of modeling content. The equivalent pattern is already used in
+`OEUnstressedLongVowelShortening7` (`{*ǭ} → {*æ}` for nasalized trimoric
+*ō) — the rule writes directly to the fronted short form.
+
+This mirrors exactly the already-working gen.sg. m.a-stem pathway
+`*dagas → *dægæs → *dæges`: there, AFB fronts an unstressed `*a`
+because a non-nasal consonant follows; here, we encode the parallel
+simultaneous-fronting that R/T's chain requires for unstressed final
+`*-a` of ō-stem origin.
+
+Verification items (none requires additional pipeline changes):
+
+- `{*æ}` is NOT in `EnglishStarBackVowel` (line 580–594): confirmed by
+  inspection. A-restoration therefore does not fire on the stem.
+- `{*æ}` is NOT targeted by `PWGmcFinalBareALoss` (targets `{*a}` only):
+  confirmed.
+- `{*æ}` word-final is not targeted by `NWGmcFinalLongORaising`
+  (targets `{*ō}` only): confirmed.
+- `OEUnstressedAEMerger` (= `OEWeakTailReduction3`) converts
+  unstressed `{*æ}` to `{*e}` at the expected stage: confirmed.
+
+Expected derivation for `*rástōz`:
+
+```
+*rástōz
+  → *rástæ           (PGmcFinalOZShortening: {*ō}{*z} → {*æ})
+  → (various rules pass through; no word-final rule touches {*æ})
+  → *rǽstæ           (AFB stressed clause fronts *á → *æ before *s)
+  → (A-restoration: following syllable has {*æ}, NOT a trigger → no change)
+  → (apocope rules: {*æ} not targeted)
+  → *ræste           (OEUnstressedAEMerger: unstressed {*æ} → {*e})
+```
+
+#### Nom.pl. audit
+
+PGmc ō-stem nom.pl. is homophonous with gen.sg. (`*-ōz`). Under Option
+γ, any ō-stem nom.pl. in the TSV would produce `-e` rather than `-a`.
+This is the **Anglian** outcome (per Campbell §586, R/T §6.8.3); West
+Saxon normalizes to `-a` analogically. Before committing the FST
+change, audit the TSV for ō-stem nom.pl. targets ending in `-a` and
+decide whether any require re-annotation as analogical (parallel to
+the Case 1 `tæppan` treatment).
+
+#### TSV note correction
+
+Row 862 (`*rástōz`) currently cites "R/T §3.1.1 p.58" for the weak-tail
+reduction. That section reference is wrong: §3.1.1 covers coronal
+consonant changes. The correct citation is R/T §6.8.3 pp.299–300.
+Update the TSV note as part of the commit.
+
+#### Relation to Cases 1, 2, 4
+
+- Case 1 (`*táppan`): resolved as analogical — no FST change. Case 3
+  could in principle be resolved the same way (per Campbell/Brunner),
+  but here R/T offers a clean lautgesetzlich path, so we take it.
+- Case 2 (`*sáiwalō`): fixed by R3 chronology reorder. Independent of
+  Case 3; the two changes do not interact.
+- Case 4 (`*fúnðanaz → fundan`, expected `funden`): participial
+  fronting (Campbell §334). Unrelated pathway. The nom.pl. audit for
+  Case 3 should be completed before Case 4 work, because §17.10.14
+  mentioned splitting `PWGmcFinalBareALoss` — a change Option γ makes
+  unnecessary (no splitting needed; the f.ō-stem case is handled
+  upstream by choice of output symbol).
+
+#### Probe result
+
+Applied Option γ (single-symbol change to `PGmcFinalOZShortening`
+output), rebuilt the bins, and ran `oe_mismatch_report.py`:
+
+```
+baseline (pre-Case-3):  38 mismatches
+Option γ:               37 mismatches  (Δ = −1)
+
+fixed:             *rástōz → ræste
+new regressions:   none
+```
+
+TSV audit of `*-ōz` PROTOFORMs (ō-stem nom.pl. regression check): only
+one row uses the suffix — row 862 (the Case 3 target itself). No
+nom.pl. rows to regress. Audit clean.
+
+TSV note on row 862 updated: citation corrected from "R/T §3.1.1 p.58"
+(wrong section — coronal consonant changes) to "R/T §6.8.3 pp.299-300";
+derivation description updated to match the Option γ pathway
+(simultaneous shortening + AFB-fronting of the unstressed final).
+
+#### Decision
+
+Option γ retained. Mismatch count: **38 → 37**. Case 3 closed.
+Next: Case 4 (`*fúnðanaz → fundan`, expected `funden`).
