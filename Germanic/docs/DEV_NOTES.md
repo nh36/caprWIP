@@ -23020,4 +23020,96 @@ mismatch between (b) and (c): the PROTOFORM describes a pathway that
 does not actually land on the chosen surface. The present proposal
 simply realigns (b) with (c).
 
+#### §17.10.16b — Probe result: the j-verb proposal does not work
+
+A probe against the current `old_english.bin` (after the Option X rebuild,
+commit `9eafa59`) gives the following outputs for the relevant j-stems:
+
+| Input           | FST output |
+|-----------------|-----------|
+| `*stapjaną`     | `steppan` |
+| `*xabjaną`      | `hebban`  |
+| `*libjaną`      | `libban`  |
+| `*táppjaną`     | `teppan`  |
+| `*táppjăną`     | `teppan`  |
+
+The FST does the right thing *phonologically*: AFB fronts `*á → *æ`, then
+i-umlaut driven by the following `*j` raises `*æ → *e`, and j-gemination
+cleanup gives the surface geminate. The pathway is identical to
+`*xabjaną → hebban` (with umlaut of `*a → e` via `æ`).
+
+**Crucially, Fulk's quote applies here too.** Fulk §12.19 n.6 (line 18362)
+states that `stæppan` is the *analogical* variant and that `steppan` —
+"less common" but lautgesetzlich — is the form that would be expected by
+regular sound law:
+
+> "The form stæppan (rather than the less common steppan) is generally
+> regarded by the handbooks as more original… Rather, æ in the root is
+> due to analogical substitution of a for æ prior to umlaut, a change
+> that is particularly frequent in verbs of class VI (§4.7; Hogg &
+> Fulk 2011: §6.65)."
+
+By the same reasoning, the lautgesetzlich Class I weak j-verb output of
+the *tap-* root is `teppan`, not `tæppan`. **Any attested OE `tæppan` verb
+would itself be analogical** in exactly the way `stæppan` is analogical.
+
+**Consequence.** The j-verb proposal in §17.10.16 was mistaken. It rested
+on the assumption that the j-verb pathway preserves `æ` lautgesetzlich —
+but it does not; i-umlaut raises it further to `e`. The `æ`-retaining
+forms libban/hebban only preserve `i/æ` because the root vowel is `*i`
+(already front-high, no umlaut change) or `*a` with umlaut to `e` giving
+the attested form already. For `*á` > `*æ` > `*e`, the chain goes all
+the way to `e`.
+
+**This means *every* part of the `tap-` root's attested OE paradigm shows
+analogical `æ`:**
+- the n-stem noun `tæppa` (expected lautgesetzlich `tappa` by AR);
+- the agent noun `tæppere` (expected lautgesetzlich `teppere` by umlaut);
+- any verbal form (expected lautgesetzlich `teppan` / `teppeþ` by umlaut).
+
+There is no cell of the root's paradigm — nominal or verbal — that yields
+an attested OE form by strict neogrammarian sound change. The root is a
+total analogical reformation.
+
+#### §17.10.16c — Revised proposal: accept the mismatch as analogical
+
+Given that no lautgesetzlich PGmc input yields any attested OE surface
+form of this root, the user's approved decision space (A) attested
+lautgesetzlich target or (B) paradigm-cell match — leaves no viable
+pipeline-fix option. The row is genuinely stuck.
+
+The honest recommendation is therefore:
+
+**Option A (revised).** Retarget TSV row 1202 to the attested n-stem
+nom.sg. `tæppa` (PROTOFORM `*táppô`), acknowledging in the NOTE that the
+`æ` is analogical (per Fulk's stæppan-style argument, plausibly sourced
+from the co-radical j-stems). The FST's lautgesetzlich output `tappa`
+will continue to differ from the target `tæppa`, so the row will remain
+in the mismatch bucket — but it will now be documented as a *known
+analogical case*, not a phonology bug.
+
+| Field | Current | Proposed |
+|-------|---------|----------|
+| PROTOFORM / PROTO | `*táppan` | `*táppô` |
+| COUNTERPART | `tæppan` | `tæppa` |
+| NOTE | (n-stem oblique; contradicted) | N-stem nom.sg. `tæppa`; attested `æ` is analogical (Fulk §12.19 n.6 for the parallel `stæppan` case; plausibly levelled from the co-radical j-stem verb/agent noun, which themselves show analogical `æ`). Lautgesetzlich output would be `tappa` by A-restoration; retained as a documented analogical case. |
+
+This does not reduce the mismatch count (still 40), but it correctly
+reclassifies the row.
+
+**Open question for the user.** Should analogical-only mismatches of this
+sort be (i) tolerated in the count as documented-but-genuine mismatches,
+or (ii) moved into a separate "analogical" bucket that is tracked but
+not counted toward the main regression figure? The project currently has
+no tooling for the latter; adding a column to the mismatch report or a
+flag in the TSV would be a small additional scope. Decision deferred to
+the user.
+
+**Next step.** Await user decision on (i) vs. (ii) before touching the
+TSV. If (i): apply the PROTOFORM/COUNTERPART/NOTE changes as tabulated
+above. If (ii): also extend `Germanic/tools/oe_mismatch_report.py` to
+recognise an `analogical=true` flag in the NOTE column (or equivalent)
+and report such rows in a separate section without counting them in the
+headline number.
+
 
