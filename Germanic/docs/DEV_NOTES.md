@@ -24608,3 +24608,353 @@ collapsed into the Case 4 commit or stand alone.
   labial-exception entries — per §62, these are accepted.
 
 — end §17.10.26
+
+
+### §17.10.27 Case 4 (`*fúnðanaz → funden`) source audit (2026-04-22)
+
+*Status: pure research. No FST change in this section.*
+
+#### 1. Scope of the audit
+
+Case 4 is the last of the four mismatches that were queued up for
+Phase 1d-β. The target row is TSV 2011:
+
+```
+PROTOFORM = *fúnðanaz        (strong ptp., class III, nom.sg.masc.)
+OE        = funden           (expected)
+FST out   = fundan           (current)
+bucket    = vowel_quality__unstressed_vowel
+```
+
+The root vowel is not in question (Gmc. *u* before nasal + C is
+stable). The mismatch is entirely in the **unstressed participial
+suffix**: the FST yields `-an`, the attested OE form is `-en`.
+
+This is a general problem, not a lexical peculiarity of *findan*:
+the class III/IV/V strong participles generally surface in OE with
+`-en` (`bunden`, `funden`, `holpen`, `gemunden`, `numen`, `coren`,
+`tobrocen`, etc.), even though the inherited PGmc/PWGmc suffix is
+*-an-* (see comparative table below). Any change we make here
+therefore has paradigm-wide scope.
+
+The three candidate approaches outlined in §17.10.26 are:
+
+| | Approach | Sketch |
+|---|---|---|
+| **α** | phonological | A rule that turns unaccented *-an-* into *-en-* (via `*æ`) in the relevant environment, producing the uninflected `-en` outcome directly. |
+| **β** | morphological | Change the TSV PROTOFORM to reflect a different reconstructed shape (e.g., R/T's *-in-* alternant, `*fúnðinaz`), or accept the mismatch as analogical remodelling outside the scope of the phonological grammar. |
+| **γ** | paradigm-cell | Swap the nom.sg.masc. for an inflected cell (e.g., dat.sg.masc. `*fúnðanamu`, nom.pl.masc. `*fúnðanai`) where the *a* is heterosyllabic to the nasal and regular fronting applies; then figure out how to back-project to the uninflected form. |
+
+The audit below weighs α/β/γ against the primary sources.
+
+#### 2. Primary sources on the OE strong past participle suffix
+
+**R/T vol. 2, pp. 1947-1964** (PGmc-era *-an-* ~ *-in-* variation).
+R/T discuss the Gmc evidence at length under the rubric of strong
+past participles and cognate adjectives ("past participles, which
+must originally have had no vowel before the *-n-"). They write:
+
+> "The strong past participle suffix is always *-ana-* synchronically
+> in Gothic, but note the adjective *fulgins* 'hidden' …  The
+> attested Early Runic examples all exhibit *-ina-*, but in later ON
+> *u* in the roots of strong past participles is always lowered to
+> *o*, which guarantees that *-ana-* also occurred (Krause 1971:
+> 107). In WGmc we normally find *-ana-*, but the early WS OE
+> variant *cymen* 'come' (2x, beside the usual *cumen*) and a
+> considerable number of other forms from several dialects
+> (Campbell 1962: 77, 303, 306-7) seem to reflect *-ina-* instead.
+> Other things being equal, the hypothesis that best accounts for
+> such widespread variation in the attested daughters is that
+> *-an-* became *-in-* by sound change in some forms of some of
+> these adjectives and participles — apparently in PGmc …  But
+> there has been so much levelling in every direction that it is
+> difficult to make out what the original pattern of alternation
+> was."
+>
+> (R/T vol. 2, pp. 1947-1964, edited lightly for OCR.)
+
+Note that R/T's *-in-* ≠ *-en-*. The *-in-* variant accounts for
+the small, residual set of u-umlauted ptps (OE *cymen*, *onligen*),
+not the mass of regular *-en* participles. R/T separately cite the
+PWGmc reconstruction in their sketch:
+
+> "past ptc. liwan wordan ko/uman bedan latan
+>
+> … Note *o* < *u* in the past ptcc.; OS and OHG have levelled *w*
+> into the past indic. of the first verb, but cf. OE ptc.
+> *onligen* 'lent'."
+>
+> (R/T vol. 2, p. 6551 in our text dump; PWGmc paradigm.)
+
+PWGmc in R/T's reconstruction ends the ptp. in *-an*. The *-en* of
+the standard OE outcome is therefore a post-PWGmc change. R/T's
+own narrative does not provide the rule for the mass OE *-en*;
+it addresses only the residual *-in-* lexemes.
+
+**Campbell §732.h** (origin of the ptp suffix):
+
+> "(h) The passive participle is a verbal adj. in I-E *-en-* or
+> *-on-*. In OE, Gmc. *-an-* from *-on-* was usually developed
+> (§ 334). On traces of Gmc. *-in-* (< IE *-en-*) see § 735.k,
+> and on umlaut of the root vowel § 736.m."
+
+So Campbell, like R/T, distinguishes the mainstream source
+(*-an-*, giving regular OE *-en*) from the residual *-in-* source
+(giving a few i-umlauted OE relics). He explicitly cross-refers to
+his §334 for the mainstream development.
+
+**Campbell §334** (the mainstream source — this is the critical
+passage):
+
+> "§ 334. Unlike the accented vowel, unaccented *a* > *æ* before a
+> nasal consonant *if this did not belong to the same syllable*,
+> and this *æ* could be transferred to forms where vowel and nasal
+> belonged to the same syllable. Thus CH *hefaen-*, *heben*, are due
+> to infl. \**hevenes*, &c. **This is the origin of OE -en when
+> absence of umlaut shows it not to be from -in**, and when it is
+> not due to parasiting, e.g. strong pass. parts. in *-en* (still
+> often *-an* in Ep.), *mægen* 'might' (OHG *magan*), *fægen*
+> 'glad' (OS *fagan*), *þéoden* 'prince' (Goth. *þiudans*)."
+
+This is the locus classicus. Campbell's analysis has three parts:
+
+1. **Phonological**: unstressed *a* fronts to *æ* before a nasal
+   that is the onset of the *following* syllable (i.e.,
+   heterosyllabic nasal). Tautosyllabic nasal blocks the change.
+2. **Analogical**: in paradigms where some cell has the nasal
+   heterosyllabic (e.g., inflected ptp gen.sg. *-anes* →
+   *-ænes*), the fronted variant spreads to cells where the
+   nasal is tautosyllabic (e.g., nom.sg.masc. *-an*).
+3. **Diagnostic**: where *e* is found *without* i-umlaut of the
+   root, the source is *-an-* via §334, not *-in-*. Presence of
+   i-umlaut (as in *cymen* < *kwem-in-az*) flags the residual
+   *-in-* source.
+
+The "still often *-an* in Ep." comment confirms that the fronting
+and its analogical spread are still in progress as of the earliest
+OE records (Épinal Glossary, c. 700) — this is **early OE**, not
+PGmc or PWGmc.
+
+**Campbell §735.k** (early-text variation):
+
+> "(k) The pass. part. appears in early texts with both *-in-* and
+> *-æn-* (cf. §§ 204.8, 334), e.g. Ep. *forsleginum*, *gibæn*. The
+> development proper to the uninflected form (*-an*, *-on*) is not
+> found in OE."
+
+The last sentence is the decisive diagnostic: if we ran the
+strictly phonological rule on the uninflected form (*-an* with
+tautosyllabic nasal), we should see it survive as OE *-an*. That
+it surfaces as *-en* throughout the paradigm proves the analogical
+levelling Campbell posits in §334. **The OE uninflected ptp form
+is morphologically levelled, not phonologically derived from the
+bare uninflected shape.**
+
+**Hogg vol. 1 §3.3.4.1** (classical paradigm — taken for granted):
+
+Hogg gives the OE paradigm tables (p.7138-7147 in our dump) with
+Past participle `-en` as a fixed ending. He does not trace the
+derivation here. Elsewhere (p.7377) he notes, relevant to the
+*stressed* root vowel:
+
+> "the failure of Gmc \*/a/ plus nasal to undergo first fronting
+> in proto-Old English."
+
+Hogg §3.3.4.1 talks about the *stressed* root (e.g., *bindan*'s
+preterite singular *band*, not *bend*), not the unstressed suffix;
+this is the §333 exception (AFB blocked before tautosyllabic nasal
+in stressed syllables). The stressed and unstressed regimes differ
+precisely because §334 (unstressed) has additional freedom in
+heterosyllabic position.
+
+**Fulk § on Class III-V strong verbs** (comparative table):
+
+Fulk's tabulation of *bindan* gives the ptp cognates in a compact
+form (pp. 20160-20165 in our text dump):
+
+```
+          Go.        OIcel.    OE       OFris.   OS         OHG
+ptp:      bundans    bundinn   bunden   bunden   gibundan   gibuntan
+```
+
+This table crystallises the pattern:
+
+- *-an-*: Goth., OS, OHG → retained.
+- *-in-*: OIcel. → the R/T *-in-* variant, regularised in ON.
+- **-en-**: **OE and OFris.** — the Anglo-Frisian/Ingvaeonic
+  innovation, exactly coextensive with the Campbell §334 zone.
+
+Fulk p. 6286 also cites the ON parallel:
+
+> "Before a nasal consonant in a closed syllable, *a* develops to
+> *e* (later *i*), as in *\*wōðanaz* > *Óðinn* (name, without
+> i-umlaut) and pp. *\*faranaz* > *farinn* 'gone'."
+
+The ON change is independent and later, but it confirms the
+cross-Germanic tendency: unstressed *a* before nasal is phonetically
+vulnerable to raising/fronting in several branches independently.
+
+#### 3. Synthesis
+
+The source consensus is clear:
+
+- **Mainstream OE -en participles** (the large majority, including
+  *funden*, *bunden*, *holpen*, *numen*, *coren*, *tobrocen*,
+  *wordan→worden*, etc.) come from PGmc *-an-* via a regular
+  **early-OE (or Anglo-Frisian)** sound change:
+
+      unaccented *a* > *æ* (> *e*)  //  _ nasal-consonant that is
+                                         the onset of the following
+                                         syllable
+
+  This is **Campbell §334**, universally accepted. The change
+  operates on inflected forms (where the nasal is heterosyllabic
+  to a following vowel) and is then **analogically extended** to
+  the uninflected nom.sg.masc. form (where the nasal is
+  tautosyllabic).
+
+- **Residual -en from *-in-*** (*cymen*, *onligen*, and a scatter
+  of i-umlauted relics) is a much smaller class that R/T assign to
+  a PGmc-era *-an-* ~ *-in-* alternation. This does *not* account
+  for the bulk of the pattern.
+
+- **Gothic/OS/OHG *-an-*** is the inherited default. OE/OFris.
+  innovate jointly.
+
+#### 4. Implications for α / β / γ
+
+**α (phonological fix)** — *strongly supported by sources.* The
+mainstream account *is* phonological. The canonical formulation
+(Campbell §334) can be rendered in the FST as a rule applying at
+the early-OE stage, after bare-*a* loss has yet to strip the final
+vowel of the ptp:
+
+  - Input shape (post-z-loss, pre-bare-*a*-loss):
+    `*fúnðana` (three-syllable form, final *-a* still present).
+  - Syllabification: `fun.ða.na` — the medial *n* is onset of the
+    following syllable, heterosyllabic to the unstressed *a*.
+  - Rule: `{*a} → {*æ}  ||  _ N V` (unstressed context only).
+  - Output: `*fúnðæna` → (further unstressed-vowel handling) →
+    `*fúnðen` → `funden`. ✓
+
+The **infinitive** *findan* (PGmc *fínðaną* → PWGmc *fínðan* with
+final *-ną* already lost in PWGmc per R/T p. 6551) does **not**
+have a following vowel at the early-OE stage: its shape is already
+`*fínðan#`. The nasal is tautosyllabic. The rule does not apply. ✓
+
+This correctly captures the **morphologically sensitive**
+distribution that Campbell posits: different rule environments in
+the two categories because the categories *are* phonologically
+different at the stage the rule fires.
+
+The **analogical extension** Campbell describes (uninflected ptp
+surfaces as *-en* despite its bare-ness) does **not need to be
+modelled as analogy** in the FST: if the rule fires on the
+inflected shape and then bare-*a*-loss follows, the output is
+already *-en#*. The FST's PROTOFORM already *is* the post-AFB-ready
+shape `*fúnðana-(z)`, so the rule sees the heterosyllabic
+environment regardless of which surface cell we ultimately want.
+
+**β (morphological fix)** — *partially supported but non-general.*
+R/T's *-in-* path is real but restricted. Changing TSV PROTOFORMs
+from *-anaz* to *-inaz* wholesale would:
+
+- Wrongly attribute the whole class to a PGmc-era alternation that
+  R/T themselves say is residual;
+- Predict i-umlaut of the root vowel (since *-in-* is an i-trigger
+  at the relevant chronological stage), which almost never surfaces
+  — OE *bunden* (no y), *holpen* (no y), *funden* (no y), etc.;
+- Be inconsistent with Campbell §735.k, which diagnoses exactly
+  these forms as **not** from *-in-* precisely because of the
+  absence of umlaut.
+
+β is appropriate for *cymen*, *onligen*, and the small residual
+set, but not for the Case 4 target. Accepting the mismatch as
+"analogical remodelling" is also defensible but concedes ground
+that the sources say we do not need to concede.
+
+**γ (paradigm-cell reassignment)** — *unnecessary if α works.* The
+only motivation for γ would be if we couldn't get the phonology to
+run on the nom.sg. shape. But α *does* get it to run, because the
+PROTOFORM `*fúnðanaz` already has the heterosyllabic environment
+(courtesy of the nom.sg.masc. ending *-az*, which disappears only
+after z-loss and then bare-*a*-loss). Using dat.sg. or gen.sg.
+would be a needless complication and would misrepresent the
+morphological cell being computed.
+
+#### 5. Verdict
+
+Approach **α** is the source-best option. The rule is:
+
+> At an early-OE stage (post-z-loss, pre-bare-*a*-loss), unstressed
+> *a* fronts to *æ* when immediately followed by a nasal consonant
+> that is in turn followed by a vowel (i.e., heterosyllabic
+> nasal).
+
+This is exactly Campbell §334 as written. It fires on ptps
+(`*fúnðana` → `*fúnðæna`) but not on infinitives (`*fínðan#`), not
+on past-tense forms (`*fand#` / `*fundun`), and not on most finite
+participial inflections where the endings are not of *-aNV#* shape.
+
+The change may also have consequences for other ptp-like forms
+(`*mægen`, `*fægen`, `*þéoden`, etc.) that are expected to surface
+with *-en*. These should already be matching or be separately
+diagnosable; the audit step before implementation will be to run
+`oe_full_trace_report.py` on a representative set and check that
+the rule does not regress forms where `-an` is desired (notably
+infinitives and any uninflected *-an# tokens).
+
+#### 6. Open questions to resolve before α is implemented
+
+1. **Exact location in the pipeline.** The rule must fire:
+   - *after* z-loss (so the PROTOFORM *-anaz* has become *-ana*);
+   - *before* bare-*a*-loss (so the final *-a* is still present to
+     make the nasal heterosyllabic);
+   - *before* OEUnstressedAFronting (so we don't need to pre-empt
+     any *æ* → *e* raising there — or, alternatively, we *use*
+     OEUnstressedAFronting as the second leg of the derivation,
+     with this rule supplying the *-æ-* input for it).
+
+2. **Interaction with existing rules.**
+   - OEUnstressedAFronting already does `{*a} → {*æ}` in
+     word-final-syllable contexts. We should check whether its
+     environment already (accidentally?) covers this case or not.
+   - PWGmcFinalBareALoss handles `-a#`. If it strips the final
+     *-a* before our rule fires, we lose the heterosyllabic
+     trigger. So ordering is critical.
+
+3. **Blast radius.** We need to enumerate which other PROTOFORMs
+   in the TSV have the shape `Xana` / `XanV` in the weak tail and
+   check that they are all targets where *-en* is desired. Prime
+   candidates:
+   - All strong past participles (class I-V).
+   - A few n-stem and *-ina-/-ena-* derived adjectives, e.g.
+     *mægen* ← *maganaz* (type 4 nouns/adjs.).
+   - Forms like *þéoden* ← *þiudanaz* ← *þiudans*.
+
+   Forms where `-an` should survive (e.g., ptp forms that have
+   already undergone bare-*a* loss before the rule, or inherently
+   unaffected items) should be checked by a full-trace probe.
+
+4. **Heavy-stem syncope interaction.** Some heavy-stem ptps
+   syncopate medial vowels (e.g., *wunden* ← *\*wundanaz*,
+   *funden* ← *\*fundanaz*). We need the rule to bleed syncope or
+   be bled by it at the right stage. Probably the rule should
+   apply before medial syncope, since the ending-*-en* is stable
+   even in forms that later syncopate other medials.
+
+These four items are to be resolved in a short §17.10.27.1 probe
+section before any FST edit.
+
+#### 7. Commit plan
+
+1. Commit this §17.10.27 audit (no code change).
+2. Run `oe_full_trace_report.py *fúnðanaz` and a representative
+   set of neighbours; write the probe results as §17.10.27.1.
+3. Decide the rule location + environment precisely (α-exact).
+4. Implement as a single FST edit, rebuild, verify 37 → 36 (or
+   better), check for regressions.
+5. Post-implementation §17.10.28 if any deltas from the plan, or
+   to document the final rule location and any side-effects.
+
+— end §17.10.27
