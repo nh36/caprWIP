@@ -1014,35 +1014,37 @@ define PGmcRhotacism [
 # This is an early PGmc change; no daughter language shows *-gm-.
 define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 
-# PGmc ō-stem gen.sg. / acc.sg. / nom.pl. *-ōz.
-# R/T vol.2 §6.8.3 pp.299-300 (the primary passage, correcting the earlier
-# §3.1.1 citation): "ō-stem acc. sg., gen. sg. -e < -ā < *-ā < PWGmc *-a <
-# PGmc acc. sg. *-ō, gen. sg. *-ōz". R/T give a LAUTGESETZLICH pathway to OE
-# -e via AFB-fronting of the unstressed final vowel and later weakening.
-# (Campbell §586 and Brunner §252 Anm.1 treat OE gen.sg. -e as analogical
-# from the acc.pl./dat.sg.; R/T is the source followed here, consistent
-# with the project's R/T-first policy for chronology — see §17.10.14.)
+# PGmc final *-z deletion. R/T vol.2 §3.3.1 (p.98): z-loss preceded
+# rhotacism — final *-z was never rhotacized.
 #
-# R/T §3.3.1 (p.98): z-loss preceded rhotacism — final *-z was never rhotacized.
-# The z-loss and vowel shortening were a single process; no intermediate *-gebō
-# stage is posited.
+# As of DEV_NOTES §17.10.23, z-loss is PLAIN: the earlier bundled rule
+# PGmcFinalOZShortening (which also collapsed *-ōz → *-æ, Option γ) was
+# removed in favour of R/T's own chronology. The z-loss-exposed *-ō is
+# handled later by PWGmcSurvivingBimoricOUnrounding (R/T §3.1 pp.58-59),
+# which matches R/T's "surviving bimoric *-ō → PWGmc *-a" (represented
+# here as long *-ā so length can be tracked through AFB until R/T's own
+# OE-stage shortening at §6.8.3). The full staged chain is:
 #
-# OUTPUT SYMBOL: {*æ} (not {*a}). The unstressed final vowel of R/T's chain
-# undergoes AFB-fronting (their `*-ā → *-ǣ` step) concurrently with its
-# shortening; we encode the post-AFB result directly. This keeps the rule
-# out of the downstream PWGmcFinalBareALoss filter (which targets {*a}
-# from nom.sg. m.a-stem *-az, a distinct and earlier loss), and the
-# resulting {*æ} is not in EnglishStarBackVowel so it cannot trigger
-# A-restoration on the stem. The parallel is OEUnstressedLongVowelShortening7
-# (`{*ǭ} → {*æ}`), which likewise writes straight to the fronted short form.
-# OEUnstressedAEMerger (OEWeakTailReduction3) later converts {*æ} → {*e}.
-# Full derivation and audit: DEV_NOTES §17.10.20.
+#   *-ōz (PGmc)
+#    ↓ PGmcFinalZDeletion              [this rule, step 3]
+#   *-ō  (PWGmc, z-lost)
+#    ↓ PWGmcSurvivingBimoricOUnrounding [step 5, word-final]
+#   *-ā  (PWGmc/WGmc)
+#    ↓ AngloFrisianBrightening          [step 6, word-final long-vowel clause]
+#   *-ǣ  (pre-OE)
+#    ↓ OEUnstressedLongVowelShortening6 [step 7, existing rule]
+#   *-æ  (eOE)
+#    ↓ OEUnstressedAEMerger             [step 8]
+#   -e   (OE)
 #
-# Must apply BEFORE general z-deletion (sequential .o.) to prevent ambiguous
-# output.
-define PGmcFinalOZShortening [{*ō} {*z} -> {*æ} || _ .#.];
+# Ordering constraint within PGmcConsonantRules: z-deletion must run
+# BEFORE PGmcRhotacism so that word-final *-z is lost, not rhotacized.
+# The PNWGmc *-ō → *-u raising (NWGmcFinalLongORaising, R/T pp.30-31)
+# must run BEFORE this rule so that pre-existing word-final *-ō
+# (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
+# That ordering is enforced in OldEnglishCore (see below).
 define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
-define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
+define PGmcFinalZLoss PGmcFinalZDeletion;
 
 # PWGmc final bare-a loss (R/T §§3.1-3.4, §6.1-6.2).
 # Word-final *-a of **nom.sg. m.a-stem *-az** origin (via z-loss) was lost at
@@ -1052,16 +1054,34 @@ define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
 # fixes the A-restoration regression catalogued in DEV_NOTES §17.10.13.
 #
 # SCOPE: this rule targets {*a} only. The f.ō-stem *-ōz outcome is
-# represented as {*æ} by PGmcFinalOZShortening (see above; DEV_NOTES
-# §17.10.20) precisely so the two historically-distinct *-a tokens do not
-# collapse here. Keeping the two distinct at the symbolic level preserves
-# R/T's chronology: the m.a-stem *-a is the early PWGmc loss; the ō-stem
-# *-a is a later shortening whose AFB-fronted outcome survives to give
-# OE weak-tail `-e`.
+# handled separately by PGmcFinalZDeletion (z-loss, step 3) followed by
+# PWGmcSurvivingBimoricOUnrounding (step 5, {*ō} → {*ā}) below, per
+# DEV_NOTES §17.10.23 (R/T §3.1 pp.58-59 + §6.8.3 pp.299-300). The two
+# historically-distinct *-a tokens do not collapse here because the
+# "surviving bimoric" form is carried as long *-ā until R/T's OE-stage
+# shortening (§6.8.3).
 # See DEV_NOTES §17.10.14 for the cross-source survey and
 # Germanic/docs/debug_snapshots/reorder_audit.txt for the audit.
 define PWGmcFinalBareALoss [
     {*a} -> 0 || _ .#.
+];
+
+# PWGmc/WGmc surviving-bimoric *-ō unrounding (R/T vol.2 §3.1, pp.58-59).
+# After z-loss has exposed a new crop of word-final *-ō (from *-ōz), and
+# after bare-a-loss has run, the surviving bimoric *-ō unrounds. R/T
+# write this output as PWGmc "*-a" but the IMMEDIATELY-following pre-OE
+# stage in their derivation (pp.299-300) is long *-ǣ, so length must be
+# carried across this change. We represent the output as LONG *-ā and
+# let the existing downstream OE shortening (§6.8.3) reduce the length
+# at the stage R/T themselves date the shortening to.
+#
+# Context `_ .#.` (word-final only): at the pipeline position where this
+# rule fires, all pre-existing word-final *-ō has already been raised to
+# *-u by NWGmcFinalLongORaising, and nasalized *-ǭ is a distinct symbol.
+# So the only *-ō reaching this rule is the z-loss-exposed "surviving"
+# one. See DEV_NOTES §17.10.23 for the full chronology and audit.
+define PWGmcSurvivingBimoricOUnrounding [
+    {*ō} -> {*ā} || _ .#.
 ];
 
 define OEFinalSchwaApocope [
@@ -1617,9 +1637,19 @@ define AngloFrisianBrighteningUnstressed [
 define AngloFrisianBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
+# Long-vowel AFB clause for the surviving-bimoric outcome (R/T
+# vol.2 §3.1 pp.58-59 → §6.8.3 pp.299-300). The "*-ā" here is the
+# length-preserved output of PWGmcSurvivingBimoricOUnrounding; AFB
+# fronts it to *-ǣ, which OEUnstressedLongVowelShortening6 later
+# reduces to *-æ. Narrow context `_ .#.` to avoid touching any
+# root-length *ā in medial position. See DEV_NOTES §17.10.23.
+define AngloFrisianBrighteningLongFinal [
+    {*ā} -> {*ǣ} || _ .#.
+];
 define AngloFrisianBrightening [
     AngloFrisianBrighteningUnstressed .o.
-    AngloFrisianBrighteningStressed
+    AngloFrisianBrighteningStressed .o.
+    AngloFrisianBrighteningLongFinal
 ];
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
@@ -2631,7 +2661,10 @@ define EnglishProtoToOE (
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
-    .o. NWGmcFinalLongORaising
+    # NWGmcFinalLongORaising moved to OldEnglishCore (before PGmcConsonantRules)
+    # per DEV_NOTES §17.10.23 — R/T pp.30-31 order this PNWGmc change BEFORE
+    # PWGmc z-loss so that gen.sg. *-ōz is sheltered (by its *-z) and does
+    # not raise. Leaving it here would catch the z-loss-exposed *-ō.
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
@@ -2665,6 +2698,10 @@ define EnglishProtoToOE (
     # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
     # See DEV_NOTES §17.10.14 for the cross-source survey.
     .o. PWGmcFinalBareALoss
+    # R/T §3.1 pp.58-59: "surviving" bimoric *-ō (z-loss-exposed) unrounds.
+    # Output kept LONG (*-ā) so length is preserved through AFB; shortening
+    # happens at R/T's dated OE stage (§6.8.3). See DEV_NOTES §17.10.23.
+    .o. PWGmcSurvivingBimoricOUnrounding
     .o. AngloFrisianBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
@@ -2756,6 +2793,11 @@ define EnglishProtoToOE (
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
+    # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (for nom.sg.
+    # *gebō etc.) fires BEFORE PWGmc z-loss. Sheltered *-ōz is not raised
+    # here because its *-z blocks the word-final context. See DEV_NOTES
+    # §17.10.23 for the full chronology.
+    .o. NWGmcFinalLongORaising
     .o. PGmcConsonantRules
     .o. EnglishProtoToOE;
 
@@ -2782,7 +2824,9 @@ define EnglishReflexes OldEnglishCore
 define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
-define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRules;
+# PNWGmc *-ō → *-u raising fires BEFORE z-loss (R/T pp.30-31 vs p.46).
+# See DEV_NOTES §17.10.23.
+define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. NWGmcFinalLongORaising .o. PGmcConsonantRules;
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
@@ -2794,7 +2838,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
-    .o. NWGmcFinalLongORaising
+    # NWGmcFinalLongORaising moved to OldEnglishCore/trace-pre-consonant-rules
+    # per DEV_NOTES §17.10.23. The trace stage applies it via EnglishAfterConsonantRules.
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
@@ -2814,6 +2859,9 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # §17.10.19 (R3). Mirrors main-stack ordering.
     .o. OEMedUnstressedULowering
     .o. PWGmcFinalBareALoss
+    # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
+    # See DEV_NOTES §17.10.23.
+    .o. PWGmcSurvivingBimoricOUnrounding
     .o. AngloFrisianBrightening
     .o. OEBreaking
     .o. OEVelarFricativePalatalization
