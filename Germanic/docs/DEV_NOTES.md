@@ -22195,3 +22195,218 @@ be rewritten. No further code change is made in this pass beyond the
 split-AFB fix; the A-restoration regression is catalogued for
 dedicated work.
 
+
+### §17.10.14 — Phase 1d-β research: cross-source survey on A-restoration chronology and conditioning
+
+Goal of this section: before redesigning `OEARestoration` to deal with
+the post-migration bare `{*a}` regression catalogued in §17.10.13,
+establish exactly what the field thinks the sound change is,
+chronologically and phonologically, so any new FST formulation is
+neogrammarian and historically defensible.
+
+Sources surveyed (in our local copy of `docs/references/`):
+
+- Ringe & Taylor, *The Development of Old English* (R/T vol. 2)
+  §6.3.1, pp. 189-194.
+- Campbell, *Old English Grammar* §§157-163.
+- Hogg, *Cambridge History of the English Language* vol. 1 ch. 3,
+  “Restoration of *a*” (pp. 105-106 of our scan).
+- Brunner, *Altenglische Grammatik* §§10-11.
+- Luick, *Historische Grammatik der englischen Sprache* §§144-149.
+- Bülbring, *Altenglisches Elementarbuch* §§220-225.
+- Kaluza, *Historische Grammatik* §§102 etc. (paradigm tables).
+- Fulk, *Comparative Grammar of the Early Germanic Languages*
+  §§ on OE æ-retraction.
+
+#### 1. Unanimous field consensus
+
+All sources agree on the core of the change:
+
+> Stressed pre-OE **/æ/** (< PGmc */a/ via AFB) and, sporadically,
+> **/æː/** (< West-Gmc */ãː/ via AFB), retract to **/a, aː/** when a
+> **back vowel (a, o, u)** stands in the **immediately following
+> syllable**.
+
+Paradigm illustration (all sources converge):
+
+| PWGmc / pre-OE stage | pre-OE after AFB | OE surface |
+|----------------------|------------------|------------|
+| *dag (nom.sg.)       | *dæg             | *dæg*     |
+| *dages (gen.sg., from *dag-as via unstressed fronting of *a before -s) | *dæges | *dæges* |
+| *dage (dat.sg., < *-ē) | *dæge          | *dæge*    |
+| *dagas (nom.pl., < *-ōs/*-os) | *dægas   | *dagas*   |
+| *daga (gen.pl., < *-ō) | *dæga          | *daga*    |
+| *dagum (dat.pl.)     | *dægum           | *dagum*   |
+
+(R/T p.189-190; Campbell §160; Brunner §10; Kaluza §102.)
+
+#### 2. Explicit chronology — unanimous
+
+a. **AFB precedes retraction.** Otherwise there is nothing to retract.
+   R/T §6.3.1: “The last change affecting back vowels in
+   prehistoric OE, **following AFB and breaking**, was the retraction
+   of */æ/ to */a/...” Hogg p.105: retraction is a “final adjustment
+   to the low vowel system in the light of the modifications just
+   discussed” (= AFB + breaking).
+
+b. **Retraction sees the back vowel as it stood at retraction time.**
+   Brunner §10 is categorical: *“vor einem a, o, u der Folgesilbe
+   (**auch wenn diese wegen späteren Lautwandels nicht mehr erhalten
+   sind**)”* — “even if [the back vowel] is no longer preserved due
+   to later sound change.” This is the chronological claim that
+   matters most: **later** reductions/apocope are later; retraction
+   sees the vowel qua it was.
+
+c. **Final-syllable losses that occurred in PWGmc, before pre-OE,
+   were already gone at retraction time.** R/T §§3.1-3.4, 6.1-6.2
+   treat PWGmc final *-az, *-ą, *-a, *-ō (in some positions) as
+   having been lost or merged at the PWGmc stage, well before AFB.
+   Thus at AFB / retraction time:
+     - nom.sg. masc. a-stems were already *dag (not *dagaz);
+     - nom.sg. neut. a-stems already *hūs (not *hūsą);
+     - nom.sg. masc. i-stems already *winiz > *wini;
+     - gen.sg. *-as present → later *-es;
+     - nom.pl. *-as present → retracts.
+
+d. **Reductions internal to pre-OE (high-vowel apocope, schwa
+   apocope, i-apocope) all POST-date retraction.** R/T §6.3.1 and
+   §6.5 place these after retraction. Brunner §10’s “auch wenn
+   nicht mehr erhalten” refers to these pre-OE reductions.
+
+e. **Retraction targets STRESSED æ.** R/T p.194 cites *hægtesse*:
+   the second syllable *-tesse* had unstressed *-æ-* which failed to
+   retract before the /o/ of the following syllable.
+
+#### 3. Implication for the FST
+
+The field chronology is:
+
+```
+PGmc → ... → PWGmc final-syllable loss (*-az, *-ą, *-a, some *-ō → Ø)
+      → pre-OE [no final *-z or *-ą on nom.sg. masc./neut. a-stems]
+      → AFB → breaking → retraction
+      → ... → pre-OE reductions (high-vowel apocope, schwa apocope,
+         i-apocope, final -a before -s raising to -e, etc.)
+      → OE
+```
+
+Our current FST places the z-loss / final-schwa apocope **AFTER**
+AFB/retraction. That is historically backwards. The pipeline worked
+up to now only because `{*ă}` (weak-tail marker) was outside the
+retraction trigger set, so the ordering happened not to matter.
+Post-migration, bare `{*a}` is in the trigger set, and the
+historically backwards order now produces empirically wrong output.
+
+The sources are unanimous: the fix is to put the pipeline in the
+order the sources describe.
+
+#### 4. Plan — Option X (PREFERRED): move PWGmc final-loss BEFORE AFB
+
+Historically accurate. Matches R/T, Campbell, Hogg, Brunner, Luick,
+Bülbring, Kaluza, Fulk — all of them. Makes A-restoration trivial:
+any back vowel in the immediately following syllable triggers it, no
+subtraction needed, no trigger-set surgery needed.
+
+Concrete steps:
+
+1. **Identify which losses are actually PWGmc-final, not pre-OE.**
+   Per R/T §§3.1-3.4 and §6.1-6.2:
+     - Nom.sg. masc. a-stem *-az → Ø (PWGmc).
+     - Nom/acc.sg. neut. a-stem *-ą → Ø (PWGmc, if short-stem) or
+       → surfacing (if long-stem, eventually also lost pre-OE).
+     - Nom.sg. masc. i-stem *-iz → Ø after heavy-syllable stems,
+       → *-i after light (PWGmc).
+     - Final unstressed *-a from *-ō/*-ō̃ in some positions
+       (treatment varies by stem class; R/T §3.3.2).
+     - Gen.sg. *-as remains.
+     - Nom.pl. *-ōs / *-os (a-stems) remains.
+     - Gen.pl. *-ō remains.
+     - Dat.pl. *-um(z) remains.
+     - Dat.sg. *-ē remains.
+     - Weak verb II *-ōj-/*-ō- remains.
+
+2. **Extract these PWGmc-era losses into a new FST block** (call it
+   `PWGmcFinalLossBlock` or similar) that runs **between** our
+   existing PWGmc stage and the pre-OE / AFB block.
+
+3. **Remove the same losses** (specifically the part that targets
+   nom.sg. masc. a-stem *-az and neut. *-ą) from the late apocope
+   block currently running after AFB/retraction. Keep in the late
+   block only the TRULY pre-OE reductions: schwa apocope, high-
+   vowel apocope, i-apocope, etc.
+
+4. **Retraction rule simplifies.** With nom.sg. *-Ø, the rule
+   `{*æ} → {*a} || _ C [Int]* BackVowel` has no false positives
+   from nom.sg., because nom.sg. has no following vowel at all.
+   Trigger set can be a simple union of back vowels
+   `[{*a}|{*o}|{*ō}|{*u}|{*ū}|{*ô}|{*ǭ}]` — the empty suffix in
+   nom.sg. just fails to match. No subtraction needed. No
+   top-of-file surgery. The rule becomes trivially neogrammarian.
+
+5. **Unstressed-a fronting before -s (gen.sg. *-as → *-es)**
+   needs to happen at the right time. Per Campbell §369-370 and
+   R/T §6.1.7, this is a separate pre-OE change that precedes
+   retraction. In FST terms: we want gen.sg. to surface as `*dæges`
+   but nom.pl. as `*dagas`. Both have following `-Vs` at the
+   morphology level, but gen.sg. is `*-as` and nom.pl. is `*-Vs`
+   where V is historically *-ōs / *-os (back). So the fronting rule
+   must target `{*a}` in `*-a-s#` specifically. In our grammar, if
+   nom.pl. keeps its historical `{*o}` or `{*ō}` at retraction time
+   (before schwa apocope), then:
+     - gen.sg. `*dag-as` → `*dag-as` (no back vowel after) → AFB
+       → `*dæg-as` → fronting: `*dæg-es` → retraction: no back
+       trigger → `*dæges` ✓
+     - nom.pl. `*dag-ōs` → AFB → `*dæg-ōs` → retraction: back
+       trigger `{*ō}` → `*dag-ōs` → schwa reduction → `*dagas` ✓
+   Need to confirm the `*-ōs` vs `*-os` reconstruction is consistent
+   with our current TSV.
+
+6. **Audit intervening rules for dependencies on pre-reduction tails.**
+   Rules that currently assume *-az is present at their firing time:
+     - Nasalization (if any rule uses *-az context).
+     - I-umlaut (no — I-umlaut is about the following syllable being
+       i/j, and *-iz loss is already handled separately).
+     - Breaking conditioning (no — breaking is about consonant
+       environment, not suffix).
+   Needs an exhaustive check of all rules between current position
+   of z-loss and new proposed position.
+
+#### 5. Option Y — fallback only
+
+Redefine `OEARestorationTriggerVowel` at the top of the file to
+exclude bare weak-tail `{*a}`. Available as a fallback if Option X
+turns out to have side effects in Step 6 audit that we can’t
+cleanly work around. **Not preferred**: it does not model the
+chronology the sources describe; it is a workaround.
+
+#### 6. Trigger-set verification (still needed under Option X)
+
+Probe 1 is still worth doing even with Option X, because we need to
+confirm that under the reordered pipeline every retraction-required
+form has a literal back vowel in the next syllable at retraction
+time. Specifically: enumerate, from the TSV, every OE lexeme whose
+PROTOFORM contains AFB-position *a* with a corresponding surface *a*
+(retracted), and list the shape of the following syllable's vowel.
+Write to `Germanic/docs/debug_snapshots/retraction_trigger_survey.txt`.
+
+#### 7. Concrete next steps
+
+1. **Probe 1**: trigger-vowel shape survey (as above).
+2. **Audit A1**: identify every rule between current
+   `OEUnstressedZLoss` (line ~1XXXX) and `OEFinalSchwaApocope` (line
+   ~1029) that is ALREADY applying assumptions about the shape of
+   weak tails. Record in `Germanic/docs/debug_snapshots/
+   reorder_audit.txt`.
+3. **Audit A2**: classify each change in the current late-apocope
+   block as PWGmc-era (move earlier) vs truly pre-OE (keep late).
+4. **Dry-run proposal**: write the reordered rule stack in a
+   sandbox `germanic_pwgmc_reorder.sandbox.txt` and compile.
+5. **Test**: apply down on canonical forms
+   (*dag-, *stap-, *nak-, *mak-ōj-, *kwiθ-, *bard-, *fat-, *staf-,
+   *stæð-, *bæð-, *hægtess-). Verify retraction fires / blocks as
+   per the paradigm tables in §1.
+6. **Mismatch report**: if sandbox clean, fold into main
+   `germanic.txt`. Rebuild, run mismatch report. Target: ≤37.
+7. **Document in §17.10.15**, commit, push.
+
+No code changes in this pass. Research only.
