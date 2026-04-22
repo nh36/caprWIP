@@ -24107,3 +24107,198 @@ preserved at each stage until R/T themselves reduce it. Implementation
 is scheduled only after the user approves this plan.
 
 — end §17.10.23
+
+### §17.10.24 — Case 3 Option δ post-implementation: regression analysis and reorder proposal
+
+**Status**: §17.10.23 is now *implemented and committed* as
+`b61e01a` on `prosodic-tier-exploration`. This section is the
+post-implementation probe report and the follow-up reorder proposal.
+No FST edits are pending until this analysis is approved.
+
+#### 1. Probe result
+
+- Case 3 target **passes**: `*rástōz → ræste` ✓ (no longer in the
+  mismatch list).
+- Two incidental **fixes**: `*rústō` and `*wúllō` no longer mismatch.
+- Net mismatch total: 37 → 38 (+1).
+
+#### 2. Regression cluster
+
+Three forms have *newly* fallen out of alignment, all with the exact
+same shape — root \*u + word-final suffix \*-ō — and all tagged by
+`oe_mismatch_report.py` under `vowel_quality__u_o_alternation`:
+
+| PROTOFORM  | Got     | Expected |
+|------------|---------|----------|
+| \*núsō     | nusu    | nosu     |
+| \*skúflō   | sċufl   | sċofl    |
+| \*súrgō    | surg    | sorg     |
+
+A fourth form, `*skúldrō → sċuldor` (was `sċoldor` at baseline; target
+`sċuldra`), shifts within the mismatch set for the same reason — its
+root-\*u no longer lowers. A fifth, `*mízdō → miord` (was `meord`;
+target `mēd`) is a different issue (breaking of \*i before \*zd) and
+is *not* a true regression of Option δ; it is an independent problem
+touched tangentially by the rebuild and is excluded from this
+analysis.
+
+#### 3. Root-cause: U-lowering has been bled
+
+`NWGmcULowering` is the PNWGmc rule (R/T §3.1) that lowers root \*u
+→ \*o when the next syllable contains a non-high back vowel (\*a, \*o,
+\*ō). In R/T's chronology it is one of the *earliest* PNWGmc rules.
+
+In the §17.10.23 implementation, `NWGmcFinalLongORaising` was
+relocated into `OldEnglishCore` to fire **before** `PGmcConsonantRules`
+and therefore **before** `EnglishProtoToOE` (which is where
+`NWGmcULowering` lives). The intention was to shelter \*-ōz from
+raising by keeping raising pre-z-loss.
+
+The side effect: for a form like \*núsō, raising now fires *first*,
+rewriting the suffix to \*-u **before** U-lowering ever sees the
+original non-high \*-ō. U-lowering then inspects a high-high sequence
+(root \*u / suffix \*-u) and, correctly by its own rule, does nothing.
+The root \*u surfaces as u, not o.
+
+Schematically:
+
+```
+Current (wrong) order          | R/T order (correct)
+──────────────────────────────-|───────────────────────────────-
+1. NWGmcFinalLongORaising      | 1. NWGmcULowering
+     *núsō → *núsu             |      *núsō → *nósō
+2. PGmcFinalZDeletion          | 2. NWGmcFinalLongORaising
+     (no effect)               |      *nósō → *nósu
+3. NWGmcULowering              | 3. PGmcFinalZDeletion
+     *núsu (no trigger) stays  |      (no effect)
+```
+
+R/T are unambiguous here: U-lowering is PNWGmc stage 1, raising is
+PNWGmc stage 1 in the same pages (§3.1, p.30 and pp.30-31), but the
+derivations show U-lowering fed by the original *-ō shape — raising
+applies to the lowered-form's suffix, not to the suffix that
+U-lowering still needs to see. Our §17.10.23 chronology was
+directionally right (raising pre z-loss) but placed raising one
+stratum too early.
+
+#### 4. Interaction with the rhotacism / z-loss ordering
+
+The reason §17.10.23 put raising above `PGmcConsonantRules` at all
+was the z-loss ordering: inside `PGmcConsonantRules` the composition
+is `PGmcFinalZLoss .o. PGmcGmSimplification .o. PGmcRhotacism`, which
+applies z-loss *first*. Leaving raising inside `EnglishProtoToOE`
+(post-`PGmcConsonantRules`) would mean z-loss fired first, stripping
+the \*-z from \*-ōz and exposing the bare \*-ō to raising, collapsing
+the \*-ō vs \*-ōz distinction that R/T crucially rely on.
+
+The solution §17.10.23 chose — move raising above the whole
+consonant-rules block — solves the z-loss problem but inadvertently
+bleeds U-lowering.
+
+The correct solution is to keep raising where it *originally* was,
+inside `EnglishProtoToOE` directly after `NWGmcULowering`, and to
+move only the **z-loss rule itself** to fire later, after raising.
+Two sub-problems follow from that:
+
+1. **Rhotacism**: `PGmcRhotacism` currently has context `{*z} → {*r}
+   || V _` with no right-side constraint. It relied on z-loss,
+   composed immediately before it inside `PGmcConsonantRules`,
+   bleeding word-final \*-z before rhotacism could see it (R/T p.98:
+   word-final \*-z was lost, not rhotacized). If z-loss moves out of
+   `PGmcConsonantRules`, rhotacism would now see word-final \*-z and
+   wrongly rhotacize \*rástōz → \*rástōr. The fix is to restrict
+   rhotacism's context to require *some* following symbol —
+   `V _ ?` — which permits every medial position (VzV, VzC) but
+   blocks the word boundary. This is R/T-faithful: their rhotacism
+   was never word-final (p.98).
+
+   A stricter `V _ V` (pure intervocalic) was tested on 2026-04-21
+   and produces five additional regressions — medial VzC forms
+   (\*mizdō etc.) legitimately rhotacize. So `V _ ?` is the correct
+   generalization.
+
+2. **Z-loss position**: the cleanest placement is inside
+   `EnglishProtoToOE`, after `NWGmcFinalLongORaising` and before
+   `PWGmcFinalBareALoss`. This matches R/T's numbering precisely
+   (step 2 raising → step 3 z-loss → step 4 bare-a loss → step 5
+   surviving bimoric unrounding).
+
+#### 5. Proposed edits (six, in one commit)
+
+1. `PGmcRhotacism` (def at line ~1003 in current HEAD): change right
+   context from nothing to `?`. Add a comment citing R/T p.98 and
+   DEV_NOTES §17.10.24.
+
+2. `PGmcConsonantRules` (def at line ~1111): drop
+   `PGmcFinalZLoss` from the composite, leaving
+   `PGmcGmSimplification .o. PGmcRhotacism`. Add a comment explaining
+   the z-loss relocation.
+
+3. `EnglishProtoToOE` (def ~line 2646): immediately after
+   `.o. NWGmcULowering` (line ~2660), insert `.o.
+   NWGmcFinalLongORaising` (restoring its *original* position from
+   before §17.10.23). Remove the stale comment block at lines
+   2664-2667 that explains the §17.10.23 relocation (it is no longer
+   accurate).
+
+4. Same block: immediately before `.o. PWGmcFinalBareALoss` (line
+   ~2700), insert `.o. PGmcFinalZDeletion`. Add a comment citing
+   R/T §3.3.1 p.98 + §6.8.3 pp.299-300 step 3.
+
+5. `OldEnglishCore` (def at line ~2795): remove the `.o.
+   NWGmcFinalLongORaising` clause and its comment block. Core becomes
+   just `EnglishProtoInput .o. PGmcConsonantRules .o.
+   EnglishProtoToOE`.
+
+6. Trace-stage mirror (`EnglishAfterConsonantRules` line ~2829,
+   `EnglishAfterProtoToOEWeakTail` line ~2832): mirror edits 3-5
+   exactly: drop raising from `EnglishAfterConsonantRules`, insert
+   raising after `NWGmcULowering` in the trace composite, and insert
+   z-loss before `PWGmcFinalBareALoss` in the trace composite.
+
+#### 6. Expected outcome
+
+- Case 3 target `*rástōz → ræste` **continues to pass**. Derivation:
+  - PGmcConsonantRules: Gm-simplification (no effect), rhotacism
+    (no effect — right context is `?`, word-final *-z blocked)
+  - NWGmcULowering: no trigger (root \*a, not \*u).
+  - NWGmcFinalLongORaising: blocked by the sheltering -z.
+  - PGmcFinalZDeletion: \*rástōz → \*rástō.
+  - PWGmcFinalBareALoss: no effect.
+  - PWGmcSurvivingBimoricOUnrounding: \*rástō → \*rástā.
+  - AFB: \*rástā → \*rǣstǣ (acute→æ + long-final ā→ǣ).
+  - OE shortening: \*rǣstǣ → \*rǣste. ✓
+
+- `*núsō → nosu` **restored**. Derivation:
+  - PGmcConsonantRules: no effect.
+  - NWGmcULowering: \*núsō → \*nósō ✓ (original suffix visible).
+  - NWGmcFinalLongORaising: \*nósō → \*nósu.
+  - PGmcFinalZDeletion: no effect.
+  - Remainder of pipeline: \*nósu → nosu. ✓
+
+- `*skúflō → sċofl` and `*súrgō → sorg` **restored** by the same
+  derivation pattern.
+
+- Pre-existing fixes `*rústō`, `*wúllō` **retained** (they were fixed
+  by §17.10.23's main innovation — the surviving-bimoric unrounding
+  + long-final AFB path — which is untouched by this reorder).
+
+- Expected mismatch count: **36** (37 baseline − 2 keep − 1
+  regression resolved; net −1).
+
+#### 7. Audit checklist (pre-compile)
+
+- [ ] No other rule produces word-final \*-z between PGmcConsonantRules
+      and `PGmcFinalZDeletion`'s new position. If any did, they would
+      be rhotacized under the new `V _ ?` context.
+- [ ] No other rule consumes \*-ōz between raising and z-loss.
+- [ ] `OldEnglishCore` still composes in the order
+      EnglishProtoInput → PGmcConsonantRules → EnglishProtoToOE
+      after edit 5.
+- [ ] Trace stage `EnglishAfterConsonantRules` no longer references
+      `NWGmcFinalLongORaising`; the trace stage
+      `EnglishAfterProtoToOEWeakTail` now applies raising between
+      U-lowering and n-loss, and applies z-loss between med-U-lowering
+      and bare-a loss.
+
+— end §17.10.24
