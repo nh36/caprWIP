@@ -1027,7 +1027,8 @@ define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
 define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
 
 define OEFinalSchwaApocope [
-    {*ă} -> 0 || _ .#.
+    {*ă} -> 0 || _ .#.,
+    {*a} -> 0 || _ .#.
 ];
 
 # PGmc voiced obstruent allophony (R/T vol.1 §3.2.4, vol.2 p.100):
@@ -1562,10 +1563,26 @@ define OEAwLongDiphthong [
 ];
 
 # Anglo-Frisian Brightening (First Fronting): */a/ > */æ/ except before nasals.
-define AngloFrisianBrightening [
-    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.],
-    # Stressed variant (stress absorbed):
+# CHRONOLOGY (see DEV_NOTES §17.10.13): per R/T vol.2 §3.1.2 pp. 45-46,
+# word-final short *-a was already lost in PWGmc (before AFB). Hence AFB
+# does not apply to unstressed *a word-finally — no such segment existed
+# at AFB time. The stressed clause keeps the final context because
+# stressed monosyllables like PWGmc *stab > OE stæf do undergo AFB with
+# the stressed root vowel in final position after apocope.
+#
+# SPLIT RULES: the unstressed and stressed clauses are defined and
+# composed separately because foma's parallel-rewrite `,` unions the
+# contexts across clauses even when targets differ (see DEV_NOTES
+# §17.10.13, "Foma parallel-rule context-merging gotcha").
+define AngloFrisianBrighteningUnstressed [
+    {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
+];
+define AngloFrisianBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+];
+define AngloFrisianBrightening [
+    AngloFrisianBrighteningUnstressed .o.
+    AngloFrisianBrighteningStressed
 ];
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
