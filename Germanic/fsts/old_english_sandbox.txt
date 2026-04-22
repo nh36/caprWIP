@@ -166,9 +166,9 @@ define OESandboxAfterUnstressedFrontingEarly OESandboxAfterEarlyOShortening
     .o. OEUnstressedFrontingEarly;
 define OESandboxAfterLateOShortening OESandboxAfterUnstressedFrontingEarly
     .o. OELateOShortening;
-define OESandboxAfterUnstressedLongVowelShortening OESandboxAfterLateOShortening
+define OESandboxAfterUnstressedLongVowShort OESandboxAfterLateOShortening
     .o. OEUnstressedLongVowelShortening;
-define OESandboxAfterUnstressedAEMerger OESandboxAfterUnstressedLongVowelShortening
+define OESandboxAfterUnstressedAEMerger OESandboxAfterUnstressedLongVowShort
     .o. OEUnstressedAEMerger;
 define OESandboxAfterUnstressedIMarking OESandboxAfterUnstressedAEMerger
     .o. OEUnstressedIMarking;
@@ -186,9 +186,9 @@ define OESandboxAfterWeakTailReduction OESandboxAfterPrefixAReductionLate
     .o. OEWeakTailReduction;
 define OESandboxAfterJLossAfterHeavy OESandboxAfterWeakTailReduction
     .o. OEJLossAfterHeavy;
-define OESandboxAfterFinalGeminateSimplification OESandboxAfterJLossAfterHeavy
+define OESandboxAfterFinalGemSimplif OESandboxAfterJLossAfterHeavy
     .o. OEFinalGeminateSimplification;
-define OESandboxAfterIntervocalicJVocalization OESandboxAfterFinalGeminateSimplification
+define OESandboxAfterIntervocalicJVocalization OESandboxAfterFinalGemSimplif
     .o. OEIntervocalicJVocalization;
 define OESandboxAfterUnstressedEIContraction OESandboxAfterIntervocalicJVocalization
     .o. OEUnstressedEIContraction;
@@ -461,7 +461,7 @@ regex OESandboxAfterLateOShortening;
 save stack old_english_sandbox_after_late_o_shortening.bin
 
 clear stack
-regex OESandboxAfterUnstressedLongVowelShortening;
+regex OESandboxAfterUnstressedLongVowShort;
 save stack old_english_sandbox_after_unstressed_long_vowel_shortening.bin
 
 clear stack
@@ -497,7 +497,7 @@ regex OESandboxAfterJLossAfterHeavy;
 save stack old_english_sandbox_after_j_loss_after_heavy.bin
 
 clear stack
-regex OESandboxAfterFinalGeminateSimplification;
+regex OESandboxAfterFinalGemSimplif;
 save stack old_english_sandbox_after_final_geminate_simplification.bin
 
 clear stack
