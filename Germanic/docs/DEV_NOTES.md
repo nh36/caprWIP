@@ -23695,3 +23695,415 @@ Three live options:
 Awaiting reviewer decision before any code change.
 
 — end §17.10.21
+
+### §17.10.22 — Case 3 risk audit for Option δ (pre-implementation)
+
+Reviewer approved Plan δ subject to a prior risk audit. Audit results
+below, followed by the revised implementation design.
+
+#### 1. TSV audit (Old_English doculect only)
+
+```
+PROTOFORM-final    count   notes
+*-ōz                  1    Row 2152: *rástōz (Case 3 target itself)
+*-ô (trimoric)       21    masc. n-stem nom.sg.; distinct symbol
+*-ôz                  0    —
+*-ōn                 20    fem. n-stem; caught by NWGmcNStemNLoss → *-ǭ
+*-ō (plain)          34    fem. ō-stem nom.sg.; handled by
+                             NWGmcFinalLongORaising → *-u
+*-a (plain)           0    no bare-*-a PROTOFORM rows
+*-ā (plain)           0    no bare-*-ā PROTOFORM rows
+```
+
+#### 2. Interaction check — why the "remove OZShortening, add late rule" sketch fails
+
+The initial Option δ sketch proposed deleting `PGmcFinalOZShortening`
+and handling the surviving `{*ō}` with a late OE-block rule parallel
+to `OEUnstressedLongVowelShortening7` (`{*ǭ} → {*æ}`). Audit reveals
+this cannot work: `NWGmcFinalLongORaising` (germanic.txt 1791, fires
+at main-stack line 2634) converts word-final bimoric `{*ō}` to
+`{*u}` — the fem. ō-stem nom.sg. path (`*gebō → *gebu → giefu`).
+If `PGmcFinalOZShortening` is removed, `*rástōz` becomes:
+
+  - `PGmcFinalZDeletion`:        `*rástōz → *rástō`
+  - `NWGmcFinalLongORaising`:    `*rástō → *rástu`   ← wrong
+  - remainder of pipeline:       `*rástu → ræstu`    ← not `ræste`
+
+The discrimination between gen.sg. `*-ōz` and nom.sg. `*-ō` is
+therefore REQUIRED at or before `NWGmcFinalLongORaising` time, and
+must use the `{*z}` as context (the two are indistinguishable at
+surface after z-deletion).
+
+#### 3. Revised Option δ — in-place split of the PGmc-stage rule
+
+Split the current single-step `PGmcFinalOZShortening: {*ō}{*z} → {*æ}`
+into two rules, each modelling one historical step:
+
+```
+define PGmcFinalOZShortening    [{*ō} {*z} -> {*a} || _ .#.];
+define PGmcFinalBimoricAFronting [{*a}     -> {*æ} || _ .#.];
+define PGmcFinalZDeletion        [{*z}     -> 0   || _ .#.];
+define PGmcFinalZLoss
+    PGmcFinalOZShortening
+    .o. PGmcFinalBimoricAFronting
+    .o. PGmcFinalZDeletion;
+```
+
+- Rule 1 (`PGmcFinalOZShortening`) models R/T's bundled z-loss +
+  bimoric ō-unrounding for `*-ōz`. R/T §3.1 do not posit an
+  intermediate `*-ō` after z-loss for the `*-ōz` suffix — the
+  bimoric shortening and z-loss apply in the same context. Keeping
+  these bundled in one rule is consistent with R/T's own presentation.
+- Rule 2 (`PGmcFinalBimoricAFronting`) models R/T's pre-OE
+  AFB-fronting of the surviving bimoric-origin `*-a` (R/T §6.8.3 chain
+  `PWGmc *-a > pre-OE *-ǣ > OE *-æ > -e`). This is the change the
+  original Option γ absorbed into the OZShortening rewrite.
+
+Rule 2 is safe because: at its firing point (between OZShortening and
+ZDeletion in the `.o.`-composition), the ONLY word-final `*-a` in any
+form is the one just produced by Rule 1. `PGmcFinalZDeletion` has not
+yet fired, so no `*-a` from `*-az` exists yet. And audit item (1)
+confirms no PROTOFORM row has a bare word-final `*-a` to begin with.
+
+#### 4. Honest disclosure — relative chronology reversed
+
+R/T's actual relative chronology is:
+
+  (a) PWGmc z-loss (`*-az → *-a`)
+  (b) PWGmc loss of short word-final `*-a` / `*-ą`
+  (c) PWGmc bimoric `*-ō` unrounding (creates *new* `*-a`, which
+      *survives* because (b) has already finished)
+  (d) pre-OE AFB-fronting of the surviving `*-a`
+
+In R/T's chronology the bimoric `*-a` is the LATER of the two `*-a`
+tokens; ours creates it FIRST (before ZDeletion/BareALoss). This is
+a deliberate trade-off: the FST's composition semantics guarantee the
+endpoint is the same, and keeping both `*-a` tokens distinct via
+rule-order is operationally equivalent to keeping them distinct via
+their historical timestamps. The composed relation is identical to
+R/T's chronologically-ordered derivation.
+
+Readers who care about absolute timing should note that our
+`PGmcFinalBimoricAFronting` is a chronologically-advanced stand-in
+for the pre-OE AFB-fronting that, in R/T, applies late. This is a
+presentational compromise forced by the absence of a mora diacritic
+in the TSV PROTOFORMs.
+
+#### 5. Regression-risk summary
+
+  - 34 rows with final `*-ō`: **SAFE** — rule keyed on `*-ōz`,
+    not `*-ō` alone.
+  - 21 rows with final `*-ô`: **SAFE** — distinct symbol, not
+    targeted.
+  - 20 rows with final `*-ōn`: **SAFE** — converted to `*-ǭ` by
+    `NWGmcNStemNLoss` before interacting with any of these rules.
+  - 0 rows with bare final `*-a` or `*-ā`: **NOT APPLICABLE**.
+  - Row 2152 `*rástōz` (Case 3): expected outcome unchanged
+    (`ræste`).
+
+Expected mismatch count post-implementation: **37** (unchanged from
+Option γ). The refactor is semantics-preserving; its purpose is
+architectural honesty, not endpoint change.
+
+— end §17.10.22
+
+### §17.10.23 — Case 3 Option δ (final): genuine R/T-chronology reorder, length preserved
+
+Supersedes the earlier Option δ sketches in §17.10.21–22. Those sketches
+either (a) quietly kept the FST order unchanged while relabelling an output
+symbol, or (b) claimed "no pipeline reorder needed". Both are rejected.
+This plan matches R/T's chronology **and** conditions rule-for-rule, keeps
+every long vowel long for as long as R/T keep it long, and reorders the
+FST pipeline wherever R/T's relative chronology demands it.
+
+#### 1. The exact R/T chain we are modelling (p.300, verbatim)
+
+R/T derive the ō-stem acc.sg./gen.sg. ending thus:
+
+  PGmc gen.sg. \*-ōz → PWGmc \*-a → pre-OE \*-ǣ → eOE \*-ę → OE -e
+
+Stage-by-stage with the relevant change at each step:
+
+  (a) PGmc \*surgōz (input)
+  (b) PWGmc \*surgō         — PWGmc z-loss (R/T §3.1.1, p.46)
+  (c) PWGmc \*surga         — "surviving bimoric \*-ō → \*-a" (R/T §3.1, pp.58–59; dated post-Early-Runic, so late PWGmc/WGmc)
+  (d) pre-OE \*sorgǣ        — AFB applies; output is LONG \*-ǣ
+  (e) eOE \*sorgę           — unstressed word-final long-vowel shortening (R/T §6.8.3, pp.298–299)
+  (f) OE sorge              — final weakening of \*-æ → -e
+
+Note on length (the key to this plan). R/T write the PWGmc stage as
+short "\*-a" but the **next** stage is long "\*-ǣ". Length cannot appear
+from nowhere; R/T are implicitly carrying moraic/etymological length
+through the PWGmc stage and re-expressing it at AFB. The cleanest way
+to model this in foma without inventing a mora diacritic is to keep
+the vowel **long the whole time** — \*-ā at stage (c), \*-ǣ at (d) —
+and only shorten at (e), exactly where R/T themselves shorten. This
+is the operational content of the reviewer's instruction to "keep long
+vowels longer".
+
+R/T's PNWGmc \*-ō → \*-u change for nom.sg. \*gebō → \*gebu (R/T §3.1,
+pp.30–31) is chronologically EARLIER than z-loss: it applies to \*-ō
+that is already word-final in PNWGmc. Gen.sg. \*-ōz is sheltered by
+its \*-z and so is **not** caught by this raising. This relative
+ordering is the linchpin of the whole derivation: it is what keeps
+nom.sg. and gen.sg. apart.
+
+#### 2. R/T's full relative chronology (for word-final \*-ō/\*-ōz/\*-ōn)
+
+  1. PNWGmc n-loss with nasalization:        \*-ōn → \*-ǭ
+  2. PNWGmc bimoric raising (non-nasal):     \*-ō  → \*-ū → \*-u  (word-final only, \*-ōz sheltered)
+  3. PWGmc z-loss:                           \*-ōz → \*-ō
+  4. PWGmc short-a/ą loss:                   \*-a, \*-ą  → ∅     (ordered after z-loss, R/T p.46)
+  5. PWGmc surviving bimoric:                \*-ō  → \*-ā       (= R/T's "PWGmc \*-a" with length preserved)
+  6. pre-OE AFB:                             \*-ā  → \*-ǣ       (long-vowel AFB, word-final)
+  7. OE unstressed word-final long shortening: \*-ǣ → \*-æ
+  8. OE weakening:                           \*-æ → -e
+
+Steps 1, 7, 8 already have foma rules (`NWGmcNStemNLoss`,
+`OEUnstressedLongVowelShortening*`, `OEWeakTailReduction3`). Steps 2
+and 3 have rules but in the WRONG relative order (see §3 below).
+Steps 4, 6 have partial rules. Step 5 has no dedicated rule — it is
+currently faked by `PGmcFinalOZShortening` (Option γ), which bundles
+3+5+6+7 into one output.
+
+#### 3. Current FST order vs. what R/T require
+
+**Current** (as of Option γ, commit `e688a0e`):
+
+  `OldEnglishCore = EnglishProtoInput .o. PGmcConsonantRules .o. EnglishProtoToOE`
+
+where `PGmcConsonantRules` = `PGmcFinalZLoss .o. PGmcGmSimplification
+.o. PGmcRhotacism`, and `PGmcFinalZLoss` itself =
+`PGmcFinalOZShortening .o. PGmcFinalZDeletion`. Z-loss (step 3) fires
+**first**, before `NWGmcFinalLongORaising` (step 2) which is buried
+inside `EnglishProtoToOE` at line 2797. This reverses R/T's
+chronology: R/T require step 2 to **precede** step 3.
+
+The Option γ workaround for this inversion is the bundled
+`PGmcFinalOZShortening`, which telescopes steps 3+5+6+7 so that by
+the time `NWGmcFinalLongORaising` fires, the \*-ōz tokens are already
+gone (as \*-æ) and won't be mis-raised to \*-u. That works, but it is
+precisely the chronological bundling the reviewer has rejected.
+
+**Required** (R/T-faithful):
+
+  `OldEnglishCore = EnglishProtoInput
+      .o. NWGmcFinalLongORaising      [step 2 — PNWGmc, before z-loss]
+      .o. PGmcConsonantRules          [contains step 3 z-loss + rhotacism]
+      .o. EnglishProtoToOE;`
+
+with `NWGmcFinalLongORaising` **removed** from its current position
+inside `EnglishProtoToOE` (and mirror-removed from the trace-stage
+`EnglishAfterProtoToOEWeakTail` at line 2797, then re-added to the
+trace stage in the correct early position).
+
+Why this ordering is safe:
+
+  - `NWGmcFinalLongORaising` is `{*ō} → {*u} || _ .#.`. Its context
+    requires word-final \*-ō. \*-ōz still has \*-z between the \*-ō
+    and the word boundary, so `*rástōz` does not match. Only
+    pre-existing word-final \*-ō (nom.sg. \*gebō, neut.pl. \*grasō,
+    1sg.pres. \*kʷemō, etc.) matches. These are exactly R/T's
+    step-2 targets.
+  - After z-loss, \*-ōz → \*-ō, but `NWGmcFinalLongORaising` has
+    already fired and will not re-fire (composed cascade, no loop).
+    This is what preserves the distinction between nom.sg. \*-u and
+    gen.sg. \*-ō.
+  - Rhotacism (`{*z} → {*r} || V _`) would catch word-final \*-z if
+    z-loss didn't precede it, so z-loss MUST stay before rhotacism.
+    Keeping `PGmcConsonantRules` intact preserves that ordering.
+  - Pulling `NWGmcFinalLongORaising` out of the NWGmc cluster does
+    not disturb any other rule: no rule in `PWGmcChanges` or in the
+    pre-existing NWGmc cluster produces word-final bare \*-ō (audit
+    obligation below).
+
+#### 4. Exact code changes (all of them, in dependency order)
+
+**4.1 Split PGmcFinalZLoss into its components and drop the bundling.**
+
+Remove the Option-γ rule `PGmcFinalOZShortening` entirely. Redefine
+`PGmcFinalZLoss` as just `PGmcFinalZDeletion`:
+
+```foma
+# Old (Option γ, to be removed):
+define PGmcFinalOZShortening [{*ō}{*z} -> {*æ} || _ .#.];
+define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
+
+# New:
+define PGmcFinalZLoss PGmcFinalZDeletion;
+```
+
+Everything downstream of `PGmcFinalZLoss` keeps its current hookup;
+the identifier still resolves but no longer bundles.
+
+**4.2 Move NWGmcFinalLongORaising before PGmcConsonantRules.**
+
+In `OldEnglishCore` (currently line 2758–2760):
+
+```foma
+# Old:
+define OldEnglishCore EnglishProtoInput
+    .o. PGmcConsonantRules
+    .o. EnglishProtoToOE;
+
+# New:
+define OldEnglishCore EnglishProtoInput
+    .o. NWGmcFinalLongORaising       # step 2 — R/T §3.1 pp.30–31
+    .o. PGmcConsonantRules           # step 3 z-loss + rhotacism
+    .o. EnglishProtoToOE;
+```
+
+In `EnglishProtoToOE` / `EnglishAfterProtoToOEWeakTail` (line 2797),
+**delete** the existing `.o. NWGmcFinalLongORaising` line.
+
+Mirror both changes in any debug/trace composition that reflects the
+main pipeline (`EnglishAfterProtoToOEWeakTail` block around line
+2788 is the one that matters for `oe_full_trace_report.py`).
+
+**4.3 Add PWGmcSurvivingBimoricOUnrounding (step 5).**
+
+New rule, output LONG \*-ā (not short \*-a). R/T's "surviving"
+condition is automatic: at this point in the pipeline, all
+pre-existing word-final \*-ō has already been consumed by step 2,
+and anything nasalized (\*-ǭ) is a distinct symbol, so only z-loss
+survivors remain.
+
+```foma
+# R/T §3.1 pp.58–59 (WGmc, post-Early-Runic).
+# Applies to word-final bimoric \*-ō exposed by z-loss. Kept LONG
+# (as \*-ā) so that subsequent AFB and OE-shortening can handle
+# length exactly as R/T's chronology implies (see §17.10.23).
+define PWGmcSurvivingBimoricOUnrounding [
+    {*ō} -> {*ā} || _ .#.
+];
+```
+
+Place in the `EnglishAfterProtoToOEWeakTail` composition immediately
+**after** `PWGmcFinalBareALoss` (line 2816) and **before**
+`AngloFrisianBrightening` (line 2817). Rationale: R/T order is
+(4) bare-a-loss → (5) surviving-bimoric → (6) AFB.
+
+**4.4 Extend AngloFrisianBrightening for long word-final \*-ā.**
+
+Add a clause (alongside the existing short-vowel clauses):
+
+```foma
+# Long-vowel AFB for the surviving-bimoric outcome (R/T §3.1 §3.2; the
+# length-preserved counterpart of unstressed {*a} → {*æ}).
+{*ā} -> {*ǣ} || _ .#.
+```
+
+Scope is deliberately narrow (word-final only) to avoid regressing
+any root-length \*ā that should not front in other environments.
+
+**4.5 Add OEUnstressedLongVowelShortening1a (step 7).**
+
+Parallel to existing shortening7 (`{*ǭ} → {*æ}`) and shortening8
+(`{*ô} → {*a}`):
+
+```foma
+# Word-final unstressed long-vowel shortening — long ǣ → short æ.
+# R/T §6.8.3 pp.298–299: "word-final unstressed long vowels were
+# shortened after the apocope of short high vowels".
+define OEUnstressedLongVowelShortening1a [
+    {*ǣ} -> {*æ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+];
+```
+
+Compose before `OEUnstressedLongVowelShortening1` in the existing
+shortening composite.
+
+**4.6 No change to OEWeakTailReduction3.** Existing `{*æ} → {*e}`
+handles step 8 as before.
+
+#### 5. Worked derivation: \*rástōz → ræste under the new pipeline
+
+  (a) Input:                              \*rástōz
+  (b) NWGmcFinalLongORaising (step 2):    no match, \*-z blocks    → \*rástōz
+  (c) PGmcFinalZDeletion (step 3):        \*-ōz → \*-ō              → \*rástō
+  (d) PGmcRhotacism:                      no word-final \*-z left  → \*rástō
+  (e) ... NWGmc cluster (no word-final-\*-ō producers) ...          → \*rástō
+  (f) PWGmcFinalBareALoss (step 4):       no match, \*ō not \*a     → \*rástō
+  (g) PWGmcSurvivingBimoricOUnrounding (step 5): \*-ō → \*-ā       → \*rástā
+  (h) AFB (step 6): root \*á → \*æ; word-final \*ā → \*ǣ            → \*ræstǣ
+  (i) OEUnstressedLongVowelShortening1a (step 7): \*-ǣ → \*-æ      → \*ræstæ
+  (j) OEWeakTailReduction3 (step 8): \*-æ → -e                     → ræste ✓
+
+Every arrow corresponds to exactly one R/T change with the R/T
+condition. Length is preserved from (a) through (h); shortening
+happens at (i) which is where R/T shorten.
+
+#### 6. Worked derivation: \*gebō → giefu (control — must not regress)
+
+  (a) Input:                              \*gebō
+  (b) NWGmcFinalLongORaising (step 2):    \*-ō → \*-u (word-final, no z) → \*gebu
+  (c) PGmcFinalZDeletion:                 no match                       → \*gebu
+  (d) ... remainder of pipeline unchanged ...                            → giefu ✓
+
+Note this worked identically under the old order (raising eventually
+fired on \*-ō); the relative position of raising vs. z-loss only
+matters when a \*-ōz input exists. The move is safe for all \*-ō-only
+inputs.
+
+#### 7. Pre-implementation audit checklist
+
+Before editing germanic.txt, verify:
+
+  [A] **No word-final \*-ō producer between the new
+      NWGmcFinalLongORaising position and its old position.**
+      Search: any rule in PGmcConsonantRules, PWGmcChanges, or the
+      NWGmc cluster (lines ~1091 through ~2795) that outputs `{*ō}`
+      in context `_ .#.`. Grep for `-> {*ō}` and inspect contexts.
+      Expected: no such rule (the only word-final \*-ō at this point
+      is the z-loss output, which is the one we WANT to reach the
+      new step-5 rule).
+
+  [B] **No rule consumes word-final \*-ā between steps 5 and 6.**
+      Grep for `{*ā} ->` and inspect. Expected: none word-final.
+
+  [C] **No rule consumes word-final \*-ǣ between steps 6 and 7.**
+      Grep for `{*ǣ} ->` and inspect. Expected: only the new
+      shortening1a should touch it word-final.
+
+  [D] **No other \*-ōz-final OE PROTOFORM in the TSV.**
+      Already audited §17.10.22: only row 2152. Re-confirm before
+      commit.
+
+  [E] **No OE PROTOFORM ending in \*-ā (long)** that would be
+      incorrectly fronted by the new AFB clause. Already audited
+      §17.10.22: zero. Re-confirm.
+
+  [F] **Trace-stage alignment.** `EnglishAfterProtoToOEWeakTail`
+      (line 2788) must continue to mirror the main pipeline
+      position-for-position, including the new early raising and the
+      new step-5 rule. Otherwise `oe_full_trace_report.py` will
+      desynchronize.
+
+Blocking audit failures abort the edit. Non-blocking warnings are
+documented and the edit proceeds.
+
+#### 8. Expected outcome
+
+  - Mismatch count: **37** (unchanged from Option γ).
+  - Behaviour for row 2152: `*rástōz → ræste` ✓.
+  - Behaviour for all 34 \*-ō, 21 \*-ô, 20 \*-ōn rows: unchanged.
+  - No new chronological bundling; each rule corresponds to exactly
+    one R/T change at the R/T relative position.
+  - Length information carried through the pipeline from PGmc to
+    early OE, shortened only at the R/T-dated OE shortening stage.
+
+#### 9. Why this supersedes §17.10.21–22
+
+§17.10.21 proposed unbundling but kept the pipeline order, requiring
+a rule to fire "out of order" relative to R/T. §17.10.22's risk audit
+was sound but its draft Option δ implementation still relied on
+representing the PWGmc stage as short \*-a, silently smuggling length
+in via a second rule. Neither was R/T-faithful.
+
+§17.10.23 (this section) is R/T-faithful in three respects
+simultaneously: (a) relative chronology, (b) conditions on each
+change (word-final, non-nasal, bimoric, z-less), and (c) vowel length
+preserved at each stage until R/T themselves reduce it. Implementation
+is scheduled only after the user approves this plan.
+
+— end §17.10.23
