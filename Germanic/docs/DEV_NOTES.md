@@ -22410,3 +22410,392 @@ Write to `Germanic/docs/debug_snapshots/retraction_trigger_survey.txt`.
 7. **Document in §17.10.15**, commit, push.
 
 No code changes in this pass. Research only.
+
+### §17.10.15 — Phase 1d-β post-Option-X: source-verified research on the four residual regressions (2026-04-22)
+
+**Context.** Option X (commit `9eafa59`) landed `PWGmcFinalBareALoss` before AFB
+and moved us from 45 → 40 mismatches. Against the pre-migration baseline of 37,
+four rows in the mismatch report changed category or are newly flagged:
+
+| # | TSV row | PROTOFORM          | FST output | Expected | Bucket                         |
+|---|---------|--------------------|------------|----------|--------------------------------|
+| 1 | 1202    | `*táppan`          | `tappan`   | `tæppan` | `fronting_missing__afb`        |
+| 2 | 1051    | `*sáiwalō`         | `sāwul`    | `sāwol`  | `vowel_quality__u_o_alternation` |
+| 3 | 862     | `*rástōz`          | `ræst`     | `ræste`  | `final_vowel_missing__weak_noun_like` |
+| 4 | 314     | `*fúnðanaz`        | `fundan`   | `funden` | `vowel_quality__unstressed_vowel` |
+
+Research was done first by surveying the pipeline, then by going back to the
+sources and QUOTING verbatim. The source quotations below reshape several of the
+preliminary proposals. Each case is now paired with (a) what the consensus of
+grammarians actually says, (b) what the pipeline is doing, (c) why the two
+disagree, (d) a revised proposal.
+
+The user-directed sequence is **one case per round**: research → propose →
+implement → verify → commit. This section records the research for **all four**
+so the plan is visible; implementation happens in §17.10.16 ff., one at a time.
+
+---
+
+#### Case 1 — `*táppan → tappan` (expected `tæppan`)
+
+**Expert consensus — n-stem oblique forms DO retract.**
+
+Campbell §158 (lines 4733–4737):
+> "The restoration of a is common before all single consonants and geminates,
+> e.g. faran, calan, bacan, gnagan, grafan, stapol, sadol, latost, lapode,
+> cassoc, hassuc, mattoc, **crabba, hnappian, racca, lappa**."
+
+Campbell §158 footnote (line 4764):
+> "Before geminates doublets with æ sometimes exist, e.g. **læppa**, **hnappian**."
+
+Brunner §10 (lines 1146–1161):
+> "Das kurze a kommt nur in bestimmten Stellungen vor und zwar: vor einem
+> a, o, u der Folgesilbe (auch wenn diese wegen späteren Lautwandels nicht mehr
+> erhalten sind), z. B. habban, **crabba**, **lappa (neben læppa)**, appla,
+> mattuc, as-sa, cassuc, hassuc, Pl. dagas, atol, nacod, Pl. fatu, sadol,
+> stadelian, nafela, macedon, ebenso vor dem aus -ōj- entstandenen -i- der schw.
+> Vb. II. Kl. (§ 411, 1) macian …"
+
+R/T §6.3.1 (lines 11124–11174, vol.2 p.192):
+> "Retracted a also normally appears in the root syllables of n-stems, most of
+> whose endings exhibit a (< *ǭ) in OE: PNWGmc *krabbō 'crab' (ON krabbi) >
+> PWGmc *krabbō > *kræbba > OE **crabba**; PNWGmc *flaskon- 'bottle' >
+> PWGmc *flaska, *flaskon- > *flæske, *flæskon- > OE flasce, flascan; …
+> PWGmc *man(na)slago > *man(ne)slega > OE manslaga."
+
+**All three sources agree**: the n-stem oblique suffix `*-an-` (and other
+morphologically definable suffixes with back vowels) is a standard A-restoration
+context. The lautgesetzlich result is `tappan`, with `tæppa` / `læppa` / `hnappian`
+etc. cited explicitly as cases where retraction applied before geminate + back
+vowel. Campbell's footnote acknowledges that **doublets with æ sometimes exist**
+before geminates (paradigmatic leveling from the nom.sg.), but these are the
+marked form, not the regular outcome.
+
+**What our pipeline does.** It correctly applies A-restoration to the root of
+`*táppan` and outputs `tappan`.
+
+**Why there is a disagreement.** The TSV target `tæppan` is taken from the
+leveled paradigm (nom.sg. `tæppa` generalised back to oblique stem). This is a
+post-phonological analogical change, not a sound-law outcome, and the TSV's own
+note even says so: "attested OE tæppa shows paradigmatic leveling from
+oblique." But the lautgesetzlich form IS `tappan`.
+
+**Revised proposal.** The prior pipeline-first pass proposed adding `{*a}{*n}`
+to the A-restoration exclusion set. That proposal is **directly contradicted by
+all three primary sources** and would, if implemented, retro-fit a
+morphologically-motivated exception into the sound-law layer. Do not implement.
+
+Two acceptable resolutions:
+
+(a) **Correct the TSV target** from `tæppan` to `tappan`. The FST output is
+already correct under strictly neogrammarian assumptions. This keeps the
+pipeline pristine.
+
+(b) **Move the remodeling to a paradigm-cell mapping / relic note.** If the
+project wants to retain `tæppan` as the target, it should be labeled a
+post-phonological leveling — analogous to the `lifian`/`libban` decision in
+earlier sessions — and documented as such; the pipeline should still produce
+`tappan` as the lautgesetzlich form, with the attested `tæppan` flagged as
+analogical.
+
+**Decision: go with (a).** It is the neogrammarian choice and has no cost.
+
+---
+
+#### Case 2 — `*sáiwalō → sāwul` (expected `sāwol`)
+
+**Expert consensus — the canonical WS parasite vowel is `o`, with early/dialectal `u`.**
+
+Campbell §362 (lines 9960–9987):
+> "Normal OE forms are fugol, tungol, cumbol, **sāwol**, nagel, æppel, segel,
+> þunor, wundor, winter, fæger, æcer, hrefen, ofen, bēsum, māþum, westum.
+> Less frequent is -or (early -ur), &c., after front vowels although it is to
+> be similarly explained, e.g. fefor, pipor, VP bitur, westum."
+
+Campbell §373 (lines 10189–10195):
+> "Unaccented u is preserved in all instances in the early North. short texts,
+> BH and LV. In Ep., however, protected u > o very often … VP preserves even
+> protected u extensively, e.g. hēafud, wuldur [= WS hēafod, wuldor]."
+
+Campbell §589.5 (lines 15255–15257):
+> "**Sāwol** soul (Gothic saiwala), and **Lifer** liver (OHG lebara), had
+> syncopation of medial a in all cases (§ 341), but parasiting subsequently
+> arose in nom. sg., though saul, sæwl also occur."
+
+R/T §6.8.3 (lines 17198–17201) for the dat.sg.:
+> "sāwle 'for a soul' < sawle < *sawele < PWGmc *saiwalē < PGmc *saiwaldai
+> (Goth. saiwalai)."
+
+**Consensus.** In back-vowel stressed contexts the parasite is /o/ in WS
+(fugol, sāwol, hēafod); early/dialectal /u/ survives as a minor variant
+(hēafud, wuldur). The path for _soul_ per Campbell §589.5 is: medial *-a-
+syncopates in all cases → the nom.sg. develops a parasite vowel after `w + l`
+→ WS `sāwol`.
+
+**What our pipeline does.** It ends up with the dialectal/early `sāwul`
+instead of `sāwol`. Two issues were identified:
+
+- `OEMedUnstressedULowering` (germanic.txt lines 1927–1929) runs at a point
+  where the medial vowel is still `*a`, and only **later** does
+  `OEInterStressRaising` raise `*a → *u`. The lowering rule never sees the raised
+  `*u`, so it cannot lower it to `*o`.
+- There is **no `OEWLInsertion`** analogous to `OEGLInsertion` (lines
+  2126–2128). `OEGLInsertion` handles `*gl → *gol` word-finally; there is no
+  rule for `*wl` word-finally.
+
+**Revised proposal.**
+
+(i) Add `OEWLInsertion` parallel to `OEGLInsertion`:
+
+```foma
+define OEWLInsertion [
+    {*w} {*l} -> {*w} {*o} {*l} || _ .#.
+];
+```
+
+Insert it into the `OEEpentheticVowel` composition chain immediately after
+`OEGLInsertion`. Rationale: Campbell §362 lists `sāwol` in the same class as
+`fugol`, `tungol`, `nagel`, all of which are handled by direct insertion of
+the parasite vowel with regular quality. This is phonologically conditioned
+(after `w` + `l` word-finally), not morphologically.
+
+(ii) Separately, the `OEInterStressRaising` vs `OEMedUnstressedULowering`
+ordering bug is real (the raising rule feeds the lowering rule but runs
+later). But: fixing (i) alone may obviate (ii) for _soul_, since with
+`OEWLInsertion` in place, the pathway goes `*sāwlu → *sāwolu → sāwol`
+directly, without the inter-stress raising detour. Fix (ii) is in principle
+correct but may be risky and should be deferred unless needed after (i).
+
+**Source note.** Campbell §589.5 gives the syncope-first pathway explicitly
+for _sāwol_; the insertion should therefore be modelled at the
+`OEEpentheticVowel` stage, not at the inter-stress raising stage.
+
+---
+
+#### Case 3 — `*rástōz → ræst` (expected `ræste`)
+
+**Expert consensus — PGmc gen.sg. `*-ōz` → OE `-e` by regular development.**
+
+R/T §6.8.3 (lines 17203–17206, vol.2 pp.299–300) — the key passage:
+> "ō-stem acc. sg., gen. sg. **-e < -ā < *-ā < PWGmc *-a < PGmc acc. sg. *-ō,
+> gen. sg. *-ōz**, e.g. in sorge 'trouble, of trouble' < sorge < *sorge <
+> PWGmc *sorga (OS, OHG sorga) < PGmc acc. sg. *surgō (Goth. saurga),
+> gen. sg. *surgoz (Goth. *saurgos, ON sorgar)."
+
+Campbell §586 (lines 15156–15164):
+> "The Prim. Gmc. forms of the case-endings were sg. -ō, -ōm, -ōz, -ai, pl. -ōz,
+> -ōns, -ōm, -ōmiz. The OE development of these forms is regular **except in
+> the gen. sg., where the phonological development would be -a**. Possibly the
+> form has been influenced by the acc. pl. …"
+
+Brunner §252 Anm.1 (lines 9852–9865):
+> "Der Gen. Sg. hatte idg. schleiftoniges -āa … im Ae. wäre daher nach §44 Anm.3,1
+> **die Endung -a zu erwarten**, doch wurde der Gen. anscheinend an den Dat. Sg.
+> angeglichen."
+
+**Consensus.** PGmc gen.sg. `*-ōz` → PWGmc `*-a` (short, via bimoric-long unrounding
+after z-loss) → pre-OE `*-ā` (fronted under AFB simultaneously with the root) →
+OE `-e` (by the regular unstressed-front-vowel weakening). Both Campbell §586
+and Brunner §252 Anm.1 concede that the strictly phonological endpoint is
+short `-a` (from which analogical leveling with the dat.sg. gave `-e`); R/T
+§6.8.3 derives the `-e` directly via AFB on the shortened ending. Either way,
+the ending survives to produce `-e` — not Ø.
+
+**Correction to TSV note.** The TSV comment on row 862 cites "R/T §3.1.1 p.58".
+That section reference is **wrong**: §3.1.1 is about coronal consonant changes.
+The correct citation is **R/T §6.8.3 pp.299–300**. The TSV characterization of
+the result (*-ōz → *-a) is consistent with R/T, just misfiled. Update the TSV
+note.
+
+**What our pipeline does.**
+
+1. `PGmcFinalOZShortening: {*ō}{*z} -> {*a}` turns `*rástōz → *rásta`.
+2. `PWGmcFinalBareALoss: {*a} -> 0 / _ .#.` (our new rule from Option X) deletes
+   the `*-a` → `*rást`.
+3. AFB → `ræst`. Final output: `ræst`. The `-e` never materialises.
+
+**Why they disagree.** Option X's `PWGmcFinalBareALoss` was designed to delete
+the `*-a` from nom.sg. m.a-stem `*-az`. But after `PGmcFinalOZShortening`, the
+ō-stem gen.sg. / nom.pl. `*-a` **looks identical** to the nom.sg. m.a-stem
+`*-a`, and `PWGmcFinalBareALoss` cannot distinguish them. It deletes both,
+collapsing the gen.sg. ending.
+
+The two `*-a` tokens are in fact phonologically distinct in age: the nom.sg.
+m.a-stem `*-az → *-a` is an early PWGmc change (and `*-a` is immediately lost);
+the gen.sg. ō-stem `*-ōz → *-a` is a later shortening (per R/T the shortening
+of word-final unstressed long vowels occurred after the apocope of short
+high vowels). Option X failed to preserve this chronological distinction.
+
+**Revised proposal.**
+
+Keep the two `*-a` tokens distinct at the symbolic level. The minimal change is
+to have `PGmcFinalOZShortening` output a symbol that `PWGmcFinalBareALoss`
+does NOT delete. Candidates:
+
+(α) Use `{*ā}` (long). `PWGmcFinalBareALoss` targets `{*a}` only, so `{*ā}`
+survives. Then `OEUnstressedLongVowelShortening1` shortens it to `{*a}`
+**after** the A-restoration trigger check. AFB converts the now-short `*a` to
+`*æ`. `OEUnstressedAEMerger` gives `-e`. No new symbol, no new rule.
+
+  **Risks to verify**: that `{*ā}` word-final is not caught by
+  `NWGmcFinalLongORaising` (it targets `{*ō}`, so OK), and that `{*ā}` is
+  NOT in `EnglishStarBackVowel` (so A-restoration does not fire on the root).
+
+(β) Introduce a new dedicated marker (e.g. `{*ǎ}`). Requires more wiring; avoid
+unless (α) proves unworkable.
+
+**Flag — nom.pl. interaction.** PGmc ō-stem nom.pl. is homophonous with gen.sg.
+(`*-ōz`). The same pathway would give OE nom.pl. `-e` under (α). This is the
+**Anglian** outcome (Campbell §586); WS normalizes to `-a` analogically. The
+TSV lexicon must therefore be audited: any ō-stem nom.pl. targets of form `-a`
+will regress under this fix unless marked as analogical or handled by a late
+analogical rule. This needs a probe BEFORE implementation.
+
+---
+
+#### Case 4 — `*fúnðanaz → fundan` (expected `funden`)
+
+**Expert consensus — the strong ptp `-en` comes from Campbell §334 fronting.**
+
+Campbell §334 (lines 9393–9403):
+> "Unlike the accented vowel, **unaccented a > æ before a nasal consonant
+> if this did not belong to the same syllable**, and this æ could be
+> transferred to forms where vowel and nasal belonged to the same syllable.
+> Thus CH hefaen-, heben, are due to infl. *hevenes, &c. **This is the origin
+> of OE -en when absence of umlaut shows it not to be from -in, and when it
+> is not due to parasiting, e.g. strong pass. parts. in -en** (still often
+> -an in Ep.), mægen might (OHG magan), fegen glad (OS fagan), þēoden
+> prince (Goth. þiudans)."
+
+Campbell §735.k (lines 20276–20279):
+> "(k) The pass. part. appears in early texts with both -in- and -æn- (cf.
+> §§ 204.8, 334), e.g. Ep. forsleginum, gibaen. The development proper to the
+> uninflected form (-an, -on) is not found in OE."
+
+Campbell §333 (line 9387):
+> "Except before nasals, unaccented a > æ (later e, § 369) …"
+
+R/T §6.8.3 (lines 17140–17142) on the parallel `*-inaz`:
+> "PGmc *gulþinaz 'golden' > PWGmc *gulþin > *guldin, masc. nom.-acc. pl.
+> *guldinē, etc. > *gyldin, *gyldine, etc. > OE gylden, gyldene, etc."
+
+**Consensus mechanism.** The regular OE ptp suffix `-en` arises by two steps:
+
+1. In the **inflected** forms (`*fundananą` acc.sg., `*fundananai` dat.sg., …),
+   the suffix vowel `*-a-` is in an **open** syllable with the `*-n-` belonging
+   to the NEXT syllable. Campbell §333/§334's rule ("unaccented *a > æ, except
+   before a tautosyllabic nasal") fronts this `*-a-` → `*-æ-`.
+2. The fronted `*-æ-` is analogically generalised into the uninflected
+   nom.sg.m., displacing the regularly-derived `*-an`. This is the step
+   Campbell §334 calls the "transfer".
+
+The result is OE `funden`, `gulden`, `gyldene`, `þēoden`. Early texts still
+show `-an` (`gibaen`, `forsleginum`) as the pre-transfer stage.
+
+**What our pipeline does.** After Option X:
+
+```
+*fúnðanaz
+  → PGmcFinalZDeletion: *fúnðana
+  → PWGmcFinalBareALoss (first pass): *fúnðan   # bare final *-a deleted
+  → OESecondaryNasalization: *fúnðąn            # *-a before word-final *n nasalized
+  → AFB / retraction / … : no change
+  → (unstressed vowel weakening): *fundąn → fundan
+```
+
+Output: `fundan` (the non-fronted early-text form).
+
+**Why they disagree.** After Option X's first-pass `PWGmcFinalBareALoss`, the
+participle's suffix `*-an-a` has lost its final `*-a`; the `*-n` is now
+**tautosyllabic** and word-final. At this point `OESecondaryNasalization` fires
+and nasalizes the suffix vowel (protecting it from later fronting). The
+pipeline collapses participle `*-an(a)` with infinitive `*-an(ą)` at the wrong
+stage.
+
+The underlying issue: `PWGmcFinalBareALoss` was designed to delete the
+nom.sg. m.a-stem `*-a` and the ō-stem gen.sg. / nom.pl. `*-a`. It fires too
+generally and catches the participle's `*-a` too, which should SURVIVE long
+enough to keep `*-n` heterosyllabic during `OESecondaryNasalization` /
+`OEUnstressedFrontingEarly`.
+
+**Revised proposal — NOT a simple reorder.**
+
+The prior pipeline-first pass proposed reordering `OEUnstressedFrontingEarly`
+to run before `OESecondaryNasalization`, OR using a `{*az}` marker. The
+reorder alone **breaks the infinitive**: for `*bakan` (post-apocope), the root
+`*-a-` in `bak-a-n` would be fronted before nasalization could protect it.
+Campbell §333/§334 are clear that the distinction between infinitive and
+participle is PHONOLOGICAL in origin: at the time the fronting rule applied,
+the participle suffix `*-a` was still **followed by `*-a-z`** and so the
+`*-n-` was heterosyllabic; the infinitive had already lost `*-ą` and its `*-n`
+was tautosyllabic.
+
+The correct neogrammarian fix is to preserve this chronology in the pipeline
+by **delaying `PWGmcFinalBareALoss` in the participle context**. Concretely,
+keep the first-pass `PWGmcFinalBareALoss` (before AFB) — but restrict its
+deletion set to tokens that truly WERE word-final-`*-a` at PWGmc time (nom.sg.
+`*-az` via z-loss; ō-stem gen.sg. / nom.pl. `*-ōz` via shortening). The
+participle's `*-a` arises from deletion of `*-z` of `*-anaz`, and the resulting
+`*-a` is a stage-later token.
+
+**Implementation sketch (to be prototyped in §17.10.17):**
+
+- Split `PWGmcFinalBareALoss` into two rules:
+  - `PGmcZLossNomSgALoss`: only deletes `*-a` that arose from nom.sg. `*-az`.
+    This can be done by running it BEFORE `PGmcFinalZDeletion` of participial
+    `*-az`, if the two can be ordered.
+  - Participial `*-anaz` retains its `*-a` until after
+    `OESecondaryNasalization` and `OEUnstressedFrontingEarly`.
+- Alternatively, model Campbell §334 directly: add an
+  `OEUnstressedFrontingHeterosyllabicNasal` rule that runs BEFORE
+  `OESecondaryNasalization` and targets `{*a}` in the context
+  `V C* _ {*n} {*a} .#.` (i.e., medial `*-a` before `*-na` at word edge).
+  This captures the inflected-form trigger directly and does not depend on
+  chronology tricks.
+
+**Recommendation.** The Campbell-§334-literal rule is the cleanest option:
+
+```foma
+# Campbell §334: unaccented *a fronts to *æ before a heterosyllabic nasal.
+# In pre-OE participial *-anaz forms, the *-n- is heterosyllabic because
+# the following *-a- is still present when this rule fires.
+define OEParticipialFronting [
+    {*a} -> {*æ} || _ {*n} {*a} .#.
+];
+```
+
+Insert this BEFORE `PWGmcFinalBareALoss`. After the rule fires, the sequence
+is `*fund-æ-n-a`, which is then reduced by the subsequent rules
+(`PWGmcFinalBareALoss` removes the final `*-a`, giving `*fundæn`;
+`OEUnstressedAEMerger` → `funden`). The infinitive `*bakaną → *bakaną` (no
+`*-a` before `*-n-a .#.`; `*-n-ą` has nasalised `*ą`) is untouched.
+
+This is fully source-supported (Campbell §334 is the direct citation), strictly
+neogrammarian, and introduces no markers.
+
+**Nuance to verify before implementing.** The pattern `_ {*n} {*a} .#.` must
+not over-apply to weak-class-II `*-ō(j)a(n)ą` or to `*-al-a` / `*-an-a`
+derived nouns that should NOT front. A pilot probe is required.
+
+---
+
+#### Proposed execution plan — one case per round
+
+The four cases are independent in principle, but Cases 3 and 4 both involve
+`PWGmcFinalBareALoss` and should be planned together. The proposed order
+(simplest first, most invasive last):
+
+1. **Round 1 (Case 1)** — update TSV row 1202 target from `tæppan` to `tappan`.
+   No FST change. Expected: −1 mismatch.
+2. **Round 2 (Case 2)** — add `OEWLInsertion`. Expected: −1 mismatch. Verify
+   no side effects on other `wl#` targets in the lexicon.
+3. **Round 3 (Case 3)** — change `PGmcFinalOZShortening` output to `{*ā}`.
+   Before implementation: audit ō-stem nom.pl. targets in the TSV to
+   anticipate the Anglian-vs-WS `-e`/`-a` collision. Expected: −1 mismatch,
+   possibly +some if nom.pl. rows regress.
+4. **Round 4 (Case 4)** — add `OEParticipialFronting`. Before implementation:
+   probe for over-application on `-na.#.` contexts. Expected: −1 mismatch.
+
+Each round follows the template: DEV_NOTES sub-section (§17.10.16…) with
+probe results + implementation diff → commit → push → next round.
+
