@@ -1000,8 +1000,17 @@ define EnglishPalatalisation EnglishEarlyPalatalisation;
 
 define EnglishWGlideRule [{*w} -> {*ʋ}];
 
+# PGmc rhotacism (R/T vol.2 §3.3.1 p.98). Right-context `?` requires
+# *some* symbol to follow *z, which permits every medial position
+# (VzV, VzC) but blocks the word boundary. R/T are explicit that
+# word-final *-z was **lost**, not rhotacized — handled by
+# PGmcFinalZDeletion, now composed later in the pipeline (inside
+# EnglishProtoToOE, after NWGmcFinalLongORaising). A stricter V_V
+# context was tried and rejected (regresses medial VzC forms such
+# as *mízdō); `V _ ?` is the R/T-faithful generalization. See
+# DEV_NOTES §17.10.24.
 define PGmcRhotacism [
-    {*z} -> {*r} || EnglishStarVocalic _
+    {*z} -> {*r} || EnglishStarVocalic _ ?
 ];
 
 # PGmc *gm → *m: spirant loss before *m (Kroonen p.511, p.101)
@@ -1108,8 +1117,17 @@ define PGmcBAllophony [
 # PWGmcJGemination in PWGmcChanges. R/T vol.2 p.50: j-gemination
 # operates on underlying /b/, not the allophonic [β]. The allophonic
 # split is a late phonetic rule that must follow gemination.
-define PGmcConsonantRules PGmcFinalZLoss
-    .o. PGmcGmSimplification
+# PGmcFinalZLoss (= PGmcFinalZDeletion) is NOT composed here. Per
+# DEV_NOTES §17.10.24, R/T's chronology requires z-loss to fire after
+# NWGmcFinalLongORaising (step 2 → step 3 in R/T §6.8.3 pp.299-300).
+# Composing z-loss at the top of OldEnglishCore would strip *-z from
+# *-ōz before raising could shelter the gen.sg. ending, collapsing
+# the *-ō vs. *-ōz distinction R/T rely on. Instead, z-loss is
+# composed inside EnglishProtoToOE immediately before
+# PWGmcFinalBareALoss. PGmcRhotacism (above) has been scoped to
+# non-word-final contexts so it no longer needs z-loss to bleed the
+# word-final case.
+define PGmcConsonantRules PGmcGmSimplification
     .o. PGmcRhotacism;
 
 define EnglishGhMarker [
@@ -2658,13 +2676,22 @@ define EnglishProtoToOE (
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
     .o. OEWsPalatalGlide
     .o. NWGmcULowering
+    # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (nom.sg.
+    # *gebō etc.). Must fire AFTER NWGmcULowering — U-lowering needs
+    # to see the original non-high *-ō suffix on forms like *núsō
+    # → *nósō → *nósu — and BEFORE PGmcFinalZDeletion, so gen.sg.
+    # *-ōz is sheltered by its -z from raising. See DEV_NOTES §17.10.24.
+    .o. NWGmcFinalLongORaising
+    # PWGmc z-loss (R/T §3.3.1 p.98, §6.8.3 pp.299-300 step 3). Placed
+    # immediately after raising — still R/T step 3, but tight to step 2
+    # — so the OE cluster below sees a z-free input. If z-loss drifts
+    # later, OEMedUnstressedULowering treats word-final *-uz as medial
+    # (the *-z satisfies its right-context consonant slot) and wrongly
+    # lowers *-u → *-o. See DEV_NOTES §17.10.25.
+    .o. PGmcFinalZDeletion
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
-    # NWGmcFinalLongORaising moved to OldEnglishCore (before PGmcConsonantRules)
-    # per DEV_NOTES §17.10.23 — R/T pp.30-31 order this PNWGmc change BEFORE
-    # PWGmc z-loss so that gen.sg. *-ōz is sheltered (by its *-z) and does
-    # not raise. Leaving it here would catch the z-loss-exposed *-ō.
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
@@ -2793,11 +2820,6 @@ define EnglishProtoToOE (
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
-    # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (for nom.sg.
-    # *gebō etc.) fires BEFORE PWGmc z-loss. Sheltered *-ōz is not raised
-    # here because its *-z blocks the word-final context. See DEV_NOTES
-    # §17.10.23 for the full chronology.
-    .o. NWGmcFinalLongORaising
     .o. PGmcConsonantRules
     .o. EnglishProtoToOE;
 
@@ -2824,9 +2846,7 @@ define EnglishReflexes OldEnglishCore
 define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
-# PNWGmc *-ō → *-u raising fires BEFORE z-loss (R/T pp.30-31 vs p.46).
-# See DEV_NOTES §17.10.23.
-define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. NWGmcFinalLongORaising .o. PGmcConsonantRules;
+define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRules;
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
@@ -2835,11 +2855,13 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
     .o. NWGmcULowering
+    # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
+    .o. NWGmcFinalLongORaising
+    # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
+    .o. PGmcFinalZDeletion
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
-    # NWGmcFinalLongORaising moved to OldEnglishCore/trace-pre-consonant-rules
-    # per DEV_NOTES §17.10.23. The trace stage applies it via EnglishAfterConsonantRules.
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
