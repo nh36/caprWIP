@@ -24302,3 +24302,131 @@ Two sub-problems follow from that:
       and bare-a loss.
 
 — end §17.10.24
+
+### §17.10.25 — Case 3 Option δ post-reorder: *-uz cluster regression
+
+**Status**: §17.10.24's six edits are applied to `germanic.txt` but
+NOT yet committed. Rebuild shows mismatch count climbed 38 → **50**.
+This section analyzes the new regressions and proposes the fix.
+Nothing has been rebuilt since the regression was observed.
+
+#### 1. Probe outcome (vs. post-§17.10.23 baseline of 38)
+
+- Case 3 target `*rástōz → ræste` still passes ✓.
+- `*núsō → nosu`, `*skúflō → sċofl`, `*súrgō → sorg`, `*láimōn → lām`,
+  `*wéstanē → west` — **fixed** by the reorder (root-*u lowered
+  again). `*skúldrō` and `*mízdō` shift back to their pre-§17.10.23
+  forms (`sċoldor`, `meord`).
+- `*rústō`, `*wúllō` — **re-regress** (lose their §17.10.23 fix).
+- Eight **new** mismatches, all sharing the shape *CVCuz:
+
+| PROTOFORM  | Got     | Expected |
+|------------|---------|----------|
+| \*bébruz   | befro   | befer    |
+| \*bōguz    | bōgo    | bōg      |
+| \*félθuz   | feldo   | feld     |
+| \*flōduz   | flōdo   | flōd     |
+| \*grúnduz  | grundo  | grund    |
+| \*kwíθuz   | cwiþo   | cwedu    |
+| \*rústō    | orst    | rust     |
+| \*spēnuz   | spōno   | spōn     |
+
+Net: five fixes, ten new-or-shifted regressions, +12 total mismatches.
+
+#### 2. Root-cause: z-loss fires too late, spoofing OEMedUnstressedULowering
+
+`OEMedUnstressedULowering` (germanic.txt line ~1997) has context:
+
+    {*u} -> {*o} || [V - u/ū] C+ _ C
+
+i.e. lower unstressed \*u → \*o when it is flanked by a consonant on
+each side and a non-high vowel in the preceding syllable. The final
+context position is "some consonant follows" — which, before
+§17.10.24's reorder, matched only truly medial \*u because word-final
+\*-uz had its \*-z stripped early (inside `PGmcConsonantRules`).
+
+§17.10.24 moves `PGmcFinalZDeletion` all the way down to just before
+`PWGmcFinalBareALoss`, which is *after* `OEMedUnstressedULowering`.
+Consequence: in forms like \*bébruz, at the OEMedUnstressedULowering
+stage the form is still \*bebruz — the \*u has a real \*z to its
+right, satisfying the "\_ C" context — and it lowers to \*bebroz.
+Then, finally, z-loss fires, yielding \*bebro. From there the OE
+pipeline cannot reach the attested \*befer (the \*u would have had to
+survive as a word-final high vowel to drive the expected apocope and
+syncope pattern).
+
+Ten different forms fail for this exact reason. The rhotacism
+restriction (context `V _ ?`) is independent of this and is not
+implicated.
+
+#### 3. Why the *-ōz path doesn't suffer
+
+For \*-ōz forms (\*rástōz etc.), \*-ō is *long*, not \*-u. It never
+triggers OEMedUnstressedULowering (which targets short \*u). So z-loss
+firing late doesn't damage them — they wait for it patiently and get
+stripped just in time for the surviving-bimoric-unrounding step. This
+is why Case 3 keeps working and only *-uz forms break.
+
+#### 4. Proposed fix — tighten z-loss to PWGmc stage, not OE stage
+
+R/T §3.3.1 p.98 dates z-loss to the PWGmc period (specifically, after
+raising and before bare-a loss — our steps 2 → 3 → 4). The only hard
+constraint between raising and bare-a loss is:
+
+- (a) z-loss must fire **after** `NWGmcFinalLongORaising` (so *-ōz
+      shelters during raising).
+- (b) z-loss must fire **before** any rule whose rightmost context
+      slot is a consonant matching \*z and whose target is a
+      word-final vowel immediately to \*z's left. `OEMedUnstressedULowering`
+      is such a rule.
+
+Therefore z-loss should fire **immediately after raising**, in the
+PNWGmc/PWGmc cluster — not in the OE cluster where it currently sits.
+R/T-chronology-wise this is *tighter* to their numbering, not looser:
+step 3 (z-loss) follows step 2 (raising) directly, with only
+PNWGmc/PWGmc housekeeping rules (MnDissimilation, NStemNLoss,
+LongELowering, NasalSpirantLengthening/Loss, PreconsonantalXLoss)
+between them, none of which consume or produce \*z.
+
+OE-stage rules (OEAuFronting, OEPrefixAReduction, OEInterStressRaising,
+OEMedUnstressedULowering, ...) then all run against a z-free input,
+exactly as R/T's chronology predicts — the "OE stage" begins with
+word-final \*-z already gone.
+
+#### 5. Proposed edit (one, single-line move)
+
+Move the `.o. PGmcFinalZDeletion` line (currently positioned just
+before `.o. PWGmcFinalBareALoss`, line ~2700 in main pipeline and
+~2882 in trace) up to immediately after the `.o. NWGmcFinalLongORaising`
+line (~2663 main, ~2858 trace). Update the comment on that line from
+its current §17.10.24-step-4 framing to cite §17.10.25's tightening
+rationale.
+
+No other rule positions change. `PGmcRhotacism`'s `V _ ?` restriction
+(applied in §17.10.24 edit 1) remains necessary because z-loss is
+still outside `PGmcConsonantRules`.
+
+#### 6. Expected outcome
+
+- Every R/T ordering constraint still honoured: U-lowering → raising
+  → z-loss → bare-a loss → surviving bimoric unrounding.
+- `*rástōz → ræste` still passes (sheltering during raising unchanged).
+- `*núsō`, `*skúflō`, `*súrgō`, `*láimōn`, `*wéstanē` stay fixed
+  (U-lowering still bleeds correctly).
+- All eight *-uz regressions dissolve (z stripped before OEMedUnstressedULowering
+  ever sees them, exactly as in pre-§17.10.24 behaviour).
+- `*rústō`, `*wúllō` re-acquire their §17.10.23 fix (the surviving-
+  bimoric + long-final-AFB path is untouched and composes
+  downstream).
+- Target mismatch count: **36** (§17.10.24 target).
+
+#### 7. Audit checklist
+
+- [ ] No rule between raising and bare-a loss consumes \*z.
+- [ ] No rule between raising and bare-a loss has a target vowel
+      with \*z in its trigger context (other than rhotacism, which
+      we have already scoped away from word-final).
+- [ ] `OEMedUnstressedULowering` fires against z-free input.
+- [ ] Trace stage mirrors the main-pipeline position for z-loss.
+
+— end §17.10.25
