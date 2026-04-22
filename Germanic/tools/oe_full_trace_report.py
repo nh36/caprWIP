@@ -26,8 +26,17 @@ OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
-# STAGES must match EnglishProtoToOE in germanic.txt and old_english_sandbox.txt
-# Updated 2026-04-12 to sync with main pipeline.
+# STAGES must mirror the save order in Germanic/fsts/old_english_sandbox.txt
+# exactly — each entry corresponds one-to-one to a `regex OESandboxAfterX;
+# save stack ... .bin` pair there. If the sandbox order changes, update both.
+#
+# Key non-obvious points:
+#   - OEMedUnstressedULowering fires EARLY in the pipeline (after NasalSpirantLoss,
+#     before NWGmcPreconsonantalXLoss) — not with the other unstressed-vowel rules.
+#     See old_english_sandbox.txt lines 55-58 and germanic.txt line 2724.
+#   - Two-stage *ō shortening (§15.8): EarlyOShortening → UnstressedFrontingEarly →
+#     LateOShortening → UnstressedLongVowelShortening → UnstressedAEMerger
+#     (Campbell §§333, 355, 369).
 STAGES: List[Tuple[str, str]] = [
     # Stage 1: Proto Input
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
@@ -47,9 +56,10 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
-    # Stage 4: Nasal-Spirant Changes (early, before i-umlaut)
+    # Stage 4: Nasal-Spirant Changes and early medial u-lowering
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
     ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
+    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
     # Stage 5: Anglo-Frisian and Early OE Vowel Changes
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
@@ -91,22 +101,17 @@ STAGES: List[Tuple[str, str]] = [
     ("LAdjacentSyncope", "old_english_sandbox_after_l_adjacent_syncope.bin"),
     ("DentalAssimilation", "old_english_sandbox_after_dental_assimilation.bin"),
     ("PreconsonantalDegemination", "old_english_sandbox_after_preconsonantal_degemination.bin"),
-    # Two-stage *ō shortening with fronting wedged between (germanic.txt §15.8, lines 2794-2804):
-    #   1. EarlyOShortening: *ō → *a before nasals (weak nouns)
-    #   2. UnstressedFrontingEarly (= OEUnstressedAFronting): *a → *æ (Anglo-Frisian fronting, Campbell §§333-334)
-    #   3. LateOShortening: *ō → *a elsewhere (weak II verbs)
-    #   4. UnstressedLongVowelShortening: other long vowels
-    #   5. UnstressedAEMerger: *æ → *e in inflectional syllables (Campbell §369)
+    # Stage 11: Two-stage *ō shortening (§15.8) wrapped around fronting + unstressed merger
     ("EarlyOShortening", "old_english_sandbox_after_early_o_shortening.bin"),
     ("UnstressedFrontingEarly", "old_english_sandbox_after_unstressed_fronting_early.bin"),
     ("LateOShortening", "old_english_sandbox_after_late_o_shortening.bin"),
     ("UnstressedLongVowelShortening", "old_english_sandbox_after_unstressed_long_vowel_shortening.bin"),
     ("UnstressedAEMerger", "old_english_sandbox_after_unstressed_ae_merger.bin"),
-    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
     ("UnstressedIMarking", "old_english_sandbox_after_unstressed_i_marking.bin"),
     ("MedUnstressedILowering", "old_english_sandbox_after_med_unstressed_i_lowering.bin"),
     ("PrefixIReduction", "old_english_sandbox_after_prefix_i_reduction.bin"),
     ("PrefixAReductionLate", "old_english_sandbox_after_prefix_a_reduction_late.bin"),
+    # Stage 12: Final Cleanup
     ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
     ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
     ("FinalGeminateSimplification", "old_english_sandbox_after_final_geminate_simplification.bin"),
@@ -116,7 +121,7 @@ STAGES: List[Tuple[str, str]] = [
     ("HLoss", "old_english_sandbox_after_h_loss.bin"),
     ("Contraction", "old_english_sandbox_after_contraction.bin"),
     ("RMetathesis", "old_english_sandbox_after_r_metathesis.bin"),
-    # Stage 11: Full pipeline checkpoints (composites)
+    # Stage 13: Surface / orthography
     ("ProtoToOE", "old_english_sandbox_after_proto_to_oe.bin"),
     ("WGlide", "old_english_sandbox_after_w_glide.bin"),
     ("GhMarker", "old_english_sandbox_after_gh_marker.bin"),
