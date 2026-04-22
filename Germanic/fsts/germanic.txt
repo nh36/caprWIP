@@ -1026,9 +1026,24 @@ define PGmcFinalOZShortening [{*ō} {*z} -> {*a} || _ .#.];
 define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
 define PGmcFinalZLoss PGmcFinalOZShortening .o. PGmcFinalZDeletion;
 
-define OEFinalSchwaApocope [
-    {*ă} -> 0 || _ .#.,
+# PWGmc final bare-a loss (R/T §§3.1-3.4, §6.1-6.2).
+# Word-final *-a (arisen from nom.sg. m.a-stem *-az via z-loss, and from
+# f.ō-stem *-ōz via PGmcFinalOZShortening) was lost at the PWGmc stage,
+# BEFORE AFB and retraction. Brunner §10 is explicit that retraction sees
+# the tail as it stood at retraction time, i.e. already without this *-a.
+# Moving this loss to run BEFORE AngloFrisianBrightening fixes the
+# A-restoration regression catalogued in DEV_NOTES §17.10.13: post-
+# Phase 1d-β migration, bare {*a} is in the trigger set, and leaving
+# final *-a in place at retraction time causes false-positive firing on
+# forms like *dagaz → *daga → **dag (correct is *dæg).
+# See DEV_NOTES §17.10.14 for the cross-source survey and
+# Germanic/docs/debug_snapshots/reorder_audit.txt for the audit.
+define PWGmcFinalBareALoss [
     {*a} -> 0 || _ .#.
+];
+
+define OEFinalSchwaApocope [
+    {*ă} -> 0 || _ .#.
 ];
 
 # PGmc voiced obstruent allophony (R/T vol.1 §3.2.4, vol.2 p.100):
@@ -2622,6 +2637,9 @@ define EnglishProtoToOE (
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
     # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
     .o. OEInterStressRaising
+    # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
+    # See DEV_NOTES §17.10.14 for the cross-source survey.
+    .o. PWGmcFinalBareALoss
     .o. AngloFrisianBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
@@ -2767,6 +2785,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEEwLongDiphthong
     .o. OEAwLongDiphthong
     .o. OEPrefixAReduction
+    .o. PWGmcFinalBareALoss
     .o. AngloFrisianBrightening
     .o. OEBreaking
     .o. OEVelarFricativePalatalization

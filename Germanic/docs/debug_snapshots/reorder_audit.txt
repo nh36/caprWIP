@@ -1,0 +1,243 @@
+# Phase 1d-β Audit A1 + A2 — Rule Reordering for Option X
+# Date: 2026-04-22
+# Goal: identify which apocope/loss rules currently run AFTER
+# AngloFrisianBrightening in EnglishProtoToOE but historically (per R/T
+# §§3.1-3.4, §6.1-6.2) belong BEFORE, and what depends on them.
+
+## Current pipeline (relevant subset), germanic.txt line numbers
+
+line 1027   PGmcFinalZLoss (PGmcFinalOZShortening + PGmcFinalZDeletion)
+              — runs in PGmcConsonantRules at line 2716. BEFORE everything.
+              — deletes word-final *z, shortens *-ōz to *-a.
+line 1308   PWGmcDenasalization — DEFINED but DISABLED; commented out in
+              PWGmcChanges (line 1416: "downstream apocope rules depend
+              on seeing {*ą} tokens").
+line 1029   OEFinalSchwaApocope [
+                 {*ă} -> 0 || _ .#.,
+                 {*a} -> 0 || _ .#.
+              ] — invoked only at line 2644, AFTER OEARestoration.
+line 1583   AngloFrisianBrightening — invoked at line 2625.
+line 1650   OEARestoration — invoked at line 2629.
+line 2641   OEHeavySyllableNasalApocope — removes inf. *-ąˈ before nasalization.
+line 2643   OESecondaryNasalization
+line 2644   OEFinalSchwaApocope (LATE usage)
+line 2681   OEHighVowelApocope — later still.
+
+## Input shapes at retraction time (line 2629)
+
+After PGmcConsonantRules + PWGmcChanges + NWGmc* + breaking-predecessors,
+and with PWGmcDenasalization DISABLED, the word-final shapes seen at
+AFB/retraction are, by PF suffix class (counted from TSV column
+PROTOFORM, Old_English rows):
+
+    PF ending   |  count | pre-OE at retraction after z-loss
+    ------------+--------+---------------------------------
+    *-aną (inf) |    99  | *-aną (ą still nasal)
+    *-Cą  (n.a) |    ~55 | *-Cą  (ą still nasal)
+    *-Cąˈ / *-Cn̩ |    —  | as above
+    *-az  (m.a) |   many | *-a  (z deleted → bare final a)
+    *-ōz  (f.ō) |   many | *-a  (→ via PGmcFinalOZShortening)
+    *-iz  (i-st)|   many | *-i  (i-st nom.sg.) or Ø (heavy)
+    *-ō   (f-st)|    few | *-ō
+    *-oną / *-ōną etc (other inf.) | few | various
+    *-u,*-um,*-ōs, *-ōm etc | variable
+
+**Critical observation**: The TSV has NO Old_English PROTOFORM ending in
+bare `a` (grep shows zero matches for `[^aąăōo]a$` or `á$`). Every word-
+final *a at retraction time is the result of:
+
+  (a) PGmcFinalOZShortening: *-ōz → *-a (f.ō-stems, some others);
+  (b) PGmcFinalZDeletion from *-az (m.a-stem nom.sg.).
+
+R/T §§3.1-3.4 is explicit that **BOTH** of these word-final *-a
+outcomes are lost in PWGmc, before AFB. The current FST keeps them
+around because they were historically invisible to AFB/retraction
+anyway (since the trigger set excluded {*ă}, and historically final
+*a had been lost). Post-migration, bare {*a} is in the trigger set
+and now these historical ghosts cause over-triggering.
+
+## A1: rules between OEARestoration and OEFinalSchwaApocope that depend
+## on word-final weak-tail shapes
+
+Survey of lines 2629 → 2644:
+
+line 2629   OEARestoration                — fires on back V in next σ.
+line 2641   OEHeavySyllableNasalApocope   — deletes infinitive *-ąˈ.
+line 2643   OESecondaryNasalization       — nasalises *V before coda *n.
+
+These rules operate on distinct material:
+- OEHeavySyllableNasalApocope targets {*ą}ˈ (nasal vowel with stress
+  marker, infinitive ending) — NOT bare {*a}.
+- OESecondaryNasalization targets *V{*n} in coda position — needs the
+  output of apocope, not of final-a loss.
+- OEARestoration is the rule we're trying to fix.
+
+**Conclusion**: no rule between retraction and apocope depends on
+bare word-final {*a} surviving. Moving a final-bare-a deletion earlier
+(before AFB) is safe with respect to this block.
+
+## A2: classify each change in OEFinalSchwaApocope as PWGmc-era vs pre-OE
+
+```
+OEFinalSchwaApocope [
+    {*ă} -> 0 || _ .#.,     (A)
+    {*a} -> 0 || _ .#.      (B)
+];
+```
+
+Clause (A) `{*ă} -> 0 || _ .#.`:
+   — target no longer occurs in TSV (Phase 1d-β migrated all `ă` → `a`).
+   — clause is a dead-letter as of the migration. Can be removed in
+     Phase 1d-δ (drop `{*ă}` from alphabet entirely). For now, keep
+     for defensiveness against any residual `ă` inputs.
+
+Clause (B) `{*a} -> 0 || _ .#.`:
+   — targets bare word-final `a`. Per A1 survey, the sources are:
+     nom.sg. masc. a-stem *-az (post-z-loss) and f.ō-stem nom.sg.
+     *-ōz (post-PGmcFinalOZShortening).
+   — R/T says both were lost in PWGmc, BEFORE AFB.
+   — currently placed AFTER AFB/retraction. This is the
+     chronological error.
+   — CLASSIFICATION: **PWGmc-era**, move earlier.
+
+## Proposed reordering (Option X)
+
+1. Split `OEFinalSchwaApocope` into two rules:
+
+   ```
+   define PWGmcFinalBareALoss [
+       {*a} -> 0 || _ .#.
+   ];
+
+   define OEFinalSchwaApocope [
+       {*ă} -> 0 || _ .#.
+   ];
+   ```
+
+2. In `EnglishProtoToOE`, insert `PWGmcFinalBareALoss` before AFB:
+
+   ```
+   .o. OEPrefixAReduction
+   .o. OEInterStressRaising
+   .o. PWGmcFinalBareALoss   <-- NEW POSITION
+   .o. AngloFrisianBrightening
+   .o. OEBreaking
+   .o. OEVelarFricativePalatalization
+   .o. OEARestoration
+   ...
+   .o. OEFinalSchwaApocope   <-- now only handles stray {*ă}
+   ```
+
+3. Mirror the change in the trace stack (`EnglishAfterProtoToOE*`).
+
+## Side-effect audit for PWGmcFinalBareALoss before AFB
+
+Inputs (word-final `a`) that would be deleted earlier under Option X:
+
+  *-az (m.a-stem nom.sg.) → *-a → Ø   ← intended fix
+  *-ōz (f.ō-stem nom.sg.) → *-a → Ø   ← intended fix
+
+Downstream rules that run between PWGmcFinalBareALoss's new position
+and the OLD OEFinalSchwaApocope position — do any depend on word-final
+`a` being present? Walk the chain (lines 2625-2644):
+
+  AngloFrisianBrightening       — targets stressed *a → *æ; bare
+                                  word-final *a is unstressed (no
+                                  acute). Clause for stressed á is
+                                  separate. No dependency.
+  OEBreaking                    — needs specific consonant contexts
+                                  (r/l/h/w); doesn't consume final
+                                  vowels. No dependency.
+  OEVelarFricativePalatalization — targets *x → *ç, no dependency.
+  OEARestoration                — needs following-syllable back V.
+                                  IF the word-final a was a false
+                                  trigger, removing it is the FIX.
+                                  IF it was a TRUE trigger for
+                                  preceding root æ → a, removing it
+                                  changes outcome. Need probe. See
+                                  below.
+  OEHeavySyllableNasalApocope   — targets *-ąˈ, not *-a.
+  OESecondaryNasalization       — targets *V before coda *n; no
+                                  dependency on final a.
+
+### Key question: were any word-final bare `a` (from *-az, *-ōz)
+### acting as TRUE retraction triggers for a preceding æ?
+
+Case analysis:
+
+(i) Nom.sg. m.a-stem *-az (→ *-a):
+    — input like *dagaz, *bardaz, *stabaz.
+    — at retraction time (historical): no tail at all (R/T: already
+      lost in PWGmc) → no retraction → OE *dæg, *beard, *stæf.
+    — Empirical OE forms: *dæg, *beard, *stæf ✓ (MATCHES R/T).
+    — With PWGmcFinalBareALoss before AFB: final -a deleted → no
+      trigger → AFB gives *dæg → correct.
+    — Under current pipeline: final -a present at retraction → false
+      trigger → *dag (wrong). This IS the regression.
+
+(ii) Nom.sg. f.ō-stem *-ōz (→ *-a via PGmcFinalOZShortening):
+    — input like *gebōz → *geba; *skapaną (unrelated); *laiβō (if any).
+    — Historical OE nom.sg. f.ō-stems: *geofu, *gifu, *lufu etc.
+    — f.ō-stem nom.sg. in OE ended in *-u or *-Ø. The pre-OE stage
+      had *-ō / *-u, not *-a. R/T §3.1.1 (our line 1017-1022): f.ō-
+      stem nom.sg. *-ōz → *-a as the PWGmc outcome, but this *-a
+      was lost word-finally BEFORE AFB (that's the same PWGmc final
+      loss).
+    — So for f.ō-stems, final -a at retraction time should also be
+      absent. Option X correctly deletes it early.
+    — Check our TSV: grep finds ZERO OE PFs ending in bare `a`
+      (already confirmed above), so this case is empirically empty
+      — but defending the rule for when it does arise is still
+      required for compound-linking and other inputs.
+
+(iii) Medial (non-final) bare `a`:
+    — PWGmcFinalBareALoss has context `_ .#.` — word-final only.
+    — Medial bare `a` (e.g. *daga-, *stapula-, *wirald-) is NOT
+      affected. These remain available as retraction triggers
+      where they genuinely are (e.g. gen.pl. *dagō → still has *ō,
+      not *a; weak II *makōj- still has *ō).
+    — So there's no collateral damage to medial triggers.
+
+### Verdict
+
+Option X is surgical and safe. The new `PWGmcFinalBareALoss` rule
+deletes only word-final bare `{*a}` that arose from PGmc *z-loss,
+matching R/T's PWGmc chronology. It removes the false-trigger
+problem for A-restoration without disturbing any medial back vowel
+that genuinely should trigger retraction.
+
+## Remaining question: interaction with OESecondaryNasalization
+## and OEHeavySyllableNasalApocope (infinitive chain)
+
+Infinitive *-aną → PGmcFinalZLoss (no *z, unchanged) → PWGmcChanges
+(no denasalization) → ... → AFB: unstressed *a in *-ąˈ → does AFB
+fire on the -a- in -aną? Check the rule.
+
+Pre-migration AFB targets stressed *á and specific unstressed *a
+contexts. Post-Phase 1d-β AFB split (§17.10.13): unstressed AFB
+applies only word-medially (not word-finally). So *-aną is safe.
+OEHeavySyllableNasalApocope then converts *-ąˈ to Ø, followed by
+OESecondaryNasalization.
+
+Under Option X, we DO NOT touch *-aną: our new rule only deletes
+word-final bare `{*a}`, not `{*ą}`. So the infinitive chain is
+unaffected.
+
+## Next step — Dry-run proposal in sandbox
+
+Create a `germanic_pwgmc_reorder.sandbox.txt` that differs from
+main germanic.txt only by:
+
+1. Adding `define PWGmcFinalBareALoss` at line ~1028.
+2. Splitting `OEFinalSchwaApocope` — keep only the {*ă} clause.
+3. Inserting `.o. PWGmcFinalBareALoss` before AngloFrisianBrightening
+   at line 2625.
+
+Compile. Apply down on canonical forms:
+    *dagaz, *bardaz, *stabaz,       — expect dæg, beard, stæf
+    *dagōs, *dagō, *dagum,          — expect dagas, daga, dagum
+    *stapulaz, *nakudaz,            — expect stapol, nacod
+    *karōn, *makōjan,               — expect carian, macian
+    *kwiθuz, *watar, *fatą.         — expect cwidu, wæter, fæt
+
+Compare with main stack. Run mismatch report. Target ≤37.
