@@ -3,11 +3,10 @@ Total mismatches: 40
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    7
-  Phonology (other buckets):   26
+  Phonology (core buckets):    6
+  Phonology (other buckets):   27
 
 === CORE BUCKETS ===
-  fronting_missing__afb: 1
   breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
@@ -15,6 +14,7 @@ Total mismatches: 40
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
+  front_expected_back_out: 1
   epenthetic_vowel_missing: 2
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
@@ -47,12 +47,6 @@ Total mismatches: 40
 
 === DETAILED EXAMPLES ===
 
-fronting_missing__afb (1):
-  *táppan -> tappan (expected tæppan)
-  >> ISSUE: A-fronting before nasals/consonants not applied
-  >> LIKELY: Often TSV issue — proto is one form class (verb), target is another (noun)
-  >> ACTION: Check paradigm cell alignment; may need different proto form
-
 breaking_missing__expected_eo_got_e (1):
   *wéslon -> weslon (expected weosule)
   >> ISSUE: Expected ēo but got e/ē
@@ -79,6 +73,9 @@ final_vowel_extra (2):
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
+
+front_expected_back_out (1):
+  *táppô -> tappa (expected tæppa)
 
 epenthetic_vowel_missing (2):
   *stráwjaną -> strewan (expected strewian)
@@ -166,6 +163,5 @@ cons_mismatch__þ_vs_d__intervocalic (1):
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
-*táppan -> tappan (expected tæppan)
 
 --- fronting_missing__also_wrong_form ---

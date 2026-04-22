@@ -1199,7 +1199,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 207	ʃ v eː r t	*swérdą	ʃ v eː r t ( - - )	ʃveːrt	Schwert	58	German					sword	*swérdą	273
 330	t ɑ p	*tappô	t ɑ p - ( - )	tɑp	tap	91	Dutch					tap	*tappô	274
 329	t æ p	*tappô	t æ p - ( - )	tæp	tap	91	English					tap	*tappô	274
-2240	t æ p p a n	*táppan	t æ p p a n	tæppan	tæppan	91	Old_English	Oblique (n-stem acc.sg.) *tappăn > tæppan: suffix *-an has front *a, no A-restoration, AFB gives æ. Nom.sg. *tappô would trigger A-restoration (*a > *a retained), but attested OE tæppa shows paradigmatic leveling from oblique. Parallel to cow (*kūi > cȳ), fire (*fūri > fȳre).				tap	*táppan	274
+2240	t æ p p a	*táppô	t æ p p a	tæppa	tæppa	91	Old_English	N-stem masc. nom.sg.; attested OE `tæppa` (Orel s.v. *tappòn; Kroonen n-stems §1381). The `æ` is analogical — no cell of the nominal paradigm yields lautgesetzlich `tæpp-` (all cells have back vowels in the following syllable at AFB time), and the Class I weak j-verb pathway yields `teppan` via i-umlaut (not `tæppan`). Most plausibly levelled from the co-radical j-stems which themselves show analogical `æ` in the manner of Fulk §12.19 n.6 on `stæppan`. FST's lautgesetzlich output is `tappa` by A-restoration; mismatch retained as a documented analogical case. See DEV_NOTES §17.10.16a–c.				tap	*táppô	274
 328	ts a pf ə n	*tappô	ts a pf ə ( n )	t͡sap͡fən	Zapfen	91	German					tap	*tappô	274
 1389	t oː m	*táugmaz	t oː - m ( - - )	toːm	toom	380	Dutch					team	*táugmaz	275
 1388	t iː m	*táugmaz	t iː - m ( - - )	tiːm	team	380	English					team	*táugmaz	275
