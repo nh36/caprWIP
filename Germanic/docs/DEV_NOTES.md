@@ -24958,3 +24958,116 @@ section before any FST edit.
    to document the final rule location and any side-effects.
 
 — end §17.10.27
+
+
+## §17.10.28: Case 4 (*fúnðanaz → funden) — root cause and Lautgesetzlich fix
+
+*Status: diagnosis complete, fix specified, implementation pending.*
+
+### Diagnosis (via the now-synchronised trace report)
+
+With the OE trace report resynced to the main pipeline (commit f43b25a,
+`skills/sync-trace-report.md`), `*fúnðanaz` traces cleanly stage by stage:
+
+```
+PGmcFinalZDeletion:            *f*ú*n*d*a*n*a       (final *z deleted)
+PWGmcFinalBareALoss:           *f*ú*n*d*a*n         (final *a deleted)
+…
+SecondaryNasalization:         *f*ú*n*d*ą*n         (medial *a nasalised!)
+…all later vowel rules bleed on the nasalised *ą…
+ProtoToOE:                     *f*ú*n*d*a*n
+Surface:                       fundan                (expected: funden)
+```
+
+The break is at `OESecondaryNasalization` (germanic.txt line 2119), whose
+current body is:
+
+```foma
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ {*n} .#.
+];
+```
+
+This rule runs *after* `PWGmcFinalBareALoss`. By that stage the participle
+tail `-anaz` has been stripped of its final `-z` (z-loss) and its final
+`-a` (bare-a-loss), leaving `-an#` — exactly the shape of the infinitive
+suffix. The rule cannot distinguish the two and nasalises both.
+
+### What the rule is *really* trying to model
+
+R/T vol.2 §5.1.2 p.142:
+
+> "Stressed low vowels were nasalized when immediately followed by a
+> nasal in the northern WGmc dialects; **unstressed *a was apparently
+> nasalized when immediately followed by a nasal in the syllable coda,
+> but not when immediately followed by an intervocalic nasal**."
+
+- Infinitive `*bind.an#` — `*n` in the **coda** (word-final) → nasalised → `-an`
+- Participle `*bind.an.az` — `*n` in the **onset** of the next syllable → not nasalised → fronted → `-en`
+
+Our FST doesn't model syllables directly; we need a symbolic proxy for
+"the nasal is in the coda". The currently-deployed proxy is "the nasal
+is word-final at the point the rule fires", which would be adequate if
+the rule fired *before* the tail of the participle got apocopated —
+but it fires after, so the proxy is empty.
+
+### Why the previous "fix" wasn't really a fix
+
+A 2026-04-22 migration (commit `c386dc0`, "phase 1d-β partial: TSV ă→a
+migration") bulk-migrated 1282 weak-tail cells `{*ă} → {*a}`, including
+row 2011. Before that migration the participle ending in row 2011 was
+`-ăz` (breve), which `PWGmcFinalBareALoss` (body `{*a} -> 0 || _ .#.`)
+does not match. That made the rule appear to work, but *only* because
+we were encoding the heterosyllabic boundary through a secondary
+marking-of-unaccentedness distinction (`*ă` vs `*a`). Using two
+different symbols for "unstressed vowel" to carry phonological
+information is a load-bearing hack that hides the real conditioning —
+and the migration, which was a legitimate simplification, exposed it.
+
+We should *not* re-introduce the breve on row 2011. There is only one
+unaccented schwa-like low vowel at this stage, and we should spell it
+one way.
+
+### The Lautgesetzlich fix
+
+The infinitive ending carries a phonologically distinct segment that
+the participle ending does not: the nasalised unstressed `*ą`. That
+segment is a genuine feature of the form, not a diacritic proxy —
+it descends from PGmc `*-aną` and is the historical marker of the
+thematic infinitive. Crucially, it is still present at the point
+`OESecondaryNasalization` fires (`OEHeavySyllableNasalApocope` is
+upstream in the composition but only deletes `*ą` after consonants;
+the rule-ordering puts the sandbox nasalisation *before* heavy
+apocope can strip it in infinitive environments — see trace).
+
+Restore the rule body to the 2026-03-14 form that explicitly
+conditions on that segment:
+
+```foma
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ą} || _ {*n} {*ą} .#.
+];
+```
+
+Reading: "an unstressed low vowel nasalises before `*n` when the next
+segment is the word-final thematic `*ą`" — i.e. in the infinitive. The
+participle has no `*ą` in that slot (it has the inflectional `-az`
+tail, which decomposes into ordinary phonological material), so the
+rule simply doesn't fire on it. No ă/a distinction is needed.
+
+This is the correct characterisation of the old sound change, using
+only segments that are independently motivated.
+
+### Verification plan
+
+1. Apply the rule change on line 2119 (no TSV change).
+2. Rebuild bins.
+3. Full trace on `*fúnðanaz` — expect `*f*u*n*d*e*n` by
+   `UnstressedAEMerger` and `funden` at surface.
+4. Full trace on `*bakaną` — expect `bacan` at surface (no regression
+   on the infinitive path).
+5. Run `oe_mismatch_report.py` — expect 37 → 36.
+6. Audit any other `{*a} → {*ą}` or `{*ă} → {*ą}` paths in the pipeline
+   that could be swept up by the tightened context.
+
+— end §17.10.28
