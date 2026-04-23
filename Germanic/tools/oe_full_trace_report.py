@@ -31,9 +31,12 @@ BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 # save stack ... .bin` pair there. If the sandbox order changes, update both.
 #
 # Key non-obvious points:
-#   - OEMedUnstressedULowering fires EARLY in the pipeline (after NasalSpirantLoss,
-#     before NWGmcPreconsonantalXLoss) — not with the other unstressed-vowel rules.
-#     See old_english_sandbox.txt lines 55-58 and germanic.txt line 2724.
+#   - NWGmcFinalLongORaising fires EARLY (right after NWGmcULowering), and
+#     PGmcFinalZDeletion fires right after it — before NWGmcUnstressedORaising.
+#   - OEMedUnstressedULowering fires AFTER OEInterStressRaising (not with the
+#     other NWGmc rules). Historically tricky — it operates on unstressed *u.
+#   - PWGmcFinalBareALoss and PWGmcSurvivingBimoricOUnrounding sit between
+#     MedUnstressedULowering and AngloFrisianBrightening.
 #   - Two-stage *ō shortening (§15.8): EarlyOShortening → UnstressedFrontingEarly →
 #     LateOShortening → UnstressedLongVowelShortening → UnstressedAEMerger
 #     (Campbell §§333, 355, 369).
@@ -50,16 +53,16 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
     ("WsPalatalGlide", "old_english_sandbox_after_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
+    ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
+    ("PGmcFinalZDeletion", "old_english_sandbox_after_pgmc_final_z_deletion.bin"),
     ("NWGmcUnstressedORaising", "old_english_sandbox_after_nwgmc_unstressed_o_raising.bin"),
     ("NWGmcMnDissimilation", "old_english_sandbox_after_nwgmc_mn_dissimilation.bin"),
     ("NWGmcNStemNLoss", "old_english_sandbox_after_nwgmc_n_stem_n_loss.bin"),
-    ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
-    # Stage 4: Nasal-Spirant Changes and early medial u-lowering
+    # Stage 4: Nasal-Spirant Changes
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
     ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
-    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
     # Stage 5: Anglo-Frisian and Early OE Vowel Changes
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
@@ -69,6 +72,9 @@ STAGES: List[Tuple[str, str]] = [
     ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
     ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
     ("InterStressRaising", "old_english_sandbox_after_inter_stress_raising.bin"),
+    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
+    ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
+    ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
     ("Breaking", "old_english_sandbox_after_breaking.bin"),
     ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
