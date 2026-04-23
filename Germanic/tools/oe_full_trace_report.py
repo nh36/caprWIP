@@ -26,8 +26,20 @@ OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
-# STAGES must match EnglishProtoToOE in germanic.txt and old_english_sandbox.txt
-# Updated 2026-04-12 to sync with main pipeline.
+# STAGES must mirror the save order in Germanic/fsts/old_english_sandbox.txt
+# exactly — each entry corresponds one-to-one to a `regex OESandboxAfterX;
+# save stack ... .bin` pair there. If the sandbox order changes, update both.
+#
+# Key non-obvious points:
+#   - NWGmcFinalLongORaising fires EARLY (right after NWGmcULowering), and
+#     PGmcFinalZDeletion fires right after it — before NWGmcUnstressedORaising.
+#   - OEMedUnstressedULowering fires AFTER OEInterStressRaising (not with the
+#     other NWGmc rules). Historically tricky — it operates on unstressed *u.
+#   - PWGmcFinalBareALoss and PWGmcSurvivingBimoricOUnrounding sit between
+#     MedUnstressedULowering and AngloFrisianBrightening.
+#   - Two-stage *ō shortening (§15.8): EarlyOShortening → UnstressedFrontingEarly →
+#     LateOShortening → UnstressedLongVowelShortening → UnstressedAEMerger
+#     (Campbell §§333, 355, 369).
 STAGES: List[Tuple[str, str]] = [
     # Stage 1: Proto Input
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
@@ -41,13 +53,14 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
     ("WsPalatalGlide", "old_english_sandbox_after_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
+    ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
+    ("PGmcFinalZDeletion", "old_english_sandbox_after_pgmc_final_z_deletion.bin"),
     ("NWGmcUnstressedORaising", "old_english_sandbox_after_nwgmc_unstressed_o_raising.bin"),
     ("NWGmcMnDissimilation", "old_english_sandbox_after_nwgmc_mn_dissimilation.bin"),
     ("NWGmcNStemNLoss", "old_english_sandbox_after_nwgmc_n_stem_n_loss.bin"),
-    ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
-    # Stage 4: Nasal-Spirant Changes (early, before i-umlaut)
+    # Stage 4: Nasal-Spirant Changes
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
     ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
@@ -59,6 +72,9 @@ STAGES: List[Tuple[str, str]] = [
     ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
     ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
     ("InterStressRaising", "old_english_sandbox_after_inter_stress_raising.bin"),
+    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
+    ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
+    ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
     ("Breaking", "old_english_sandbox_after_breaking.bin"),
     ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
@@ -91,12 +107,17 @@ STAGES: List[Tuple[str, str]] = [
     ("LAdjacentSyncope", "old_english_sandbox_after_l_adjacent_syncope.bin"),
     ("DentalAssimilation", "old_english_sandbox_after_dental_assimilation.bin"),
     ("PreconsonantalDegemination", "old_english_sandbox_after_preconsonantal_degemination.bin"),
+    # Stage 11: Two-stage *ō shortening (§15.8) wrapped around fronting + unstressed merger
+    ("EarlyOShortening", "old_english_sandbox_after_early_o_shortening.bin"),
+    ("UnstressedFrontingEarly", "old_english_sandbox_after_unstressed_fronting_early.bin"),
+    ("LateOShortening", "old_english_sandbox_after_late_o_shortening.bin"),
     ("UnstressedLongVowelShortening", "old_english_sandbox_after_unstressed_long_vowel_shortening.bin"),
-    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
+    ("UnstressedAEMerger", "old_english_sandbox_after_unstressed_ae_merger.bin"),
     ("UnstressedIMarking", "old_english_sandbox_after_unstressed_i_marking.bin"),
     ("MedUnstressedILowering", "old_english_sandbox_after_med_unstressed_i_lowering.bin"),
     ("PrefixIReduction", "old_english_sandbox_after_prefix_i_reduction.bin"),
     ("PrefixAReductionLate", "old_english_sandbox_after_prefix_a_reduction_late.bin"),
+    # Stage 12: Final Cleanup
     ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
     ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
     ("FinalGeminateSimplification", "old_english_sandbox_after_final_geminate_simplification.bin"),
@@ -106,7 +127,7 @@ STAGES: List[Tuple[str, str]] = [
     ("HLoss", "old_english_sandbox_after_h_loss.bin"),
     ("Contraction", "old_english_sandbox_after_contraction.bin"),
     ("RMetathesis", "old_english_sandbox_after_r_metathesis.bin"),
-    # Stage 11: Full pipeline checkpoints (composites)
+    # Stage 13: Surface / orthography
     ("ProtoToOE", "old_english_sandbox_after_proto_to_oe.bin"),
     ("WGlide", "old_english_sandbox_after_w_glide.bin"),
     ("GhMarker", "old_english_sandbox_after_gh_marker.bin"),
@@ -445,6 +466,7 @@ def write_report(
     bin_path: Path,
     bin_dir: Path,
     output_path: Path,
+    trace_all: bool = False,
 ) -> None:
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     stage_fires: Dict[str, List[str]] = defaultdict(list)
@@ -511,12 +533,16 @@ def write_report(
             continue
         lines.append(f"=== BUCKET: {bucket} ({len(items)}) ===")
         lines.append("")
+        # Skip detailed tracing for exact_match unless --all is specified
+        skip_trace = (bucket == "exact_match" and not trace_all)
         for row in items:
             lines.append(f"--- {row['concept']} ---")
             lines.append(f"PROTO: {row['proto']}")
             lines.append(f"EXPECTED: {row['counterpart']}")
             lines.append(f"OUTPUTS: {row['outputs']}")
             lines.append("")
+            if skip_trace:
+                continue
             prev_outputs: List[str] | None = None
             lexeme_label = f"{row['concept']} :: {row['proto']}"
             for label, outputs in trace_lexeme(row["proto_norm"], bin_dir):
@@ -572,6 +598,11 @@ def main() -> None:
         default=str(germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"),
         help="Report output path (default: %(default)s)",
     )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Trace all entries including exact_match (default: mismatches only)",
+    )
     args = parser.parse_args()
 
     tsv_path = Path(args.tsv).expanduser().resolve()
@@ -581,7 +612,7 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows = load_rows(tsv_path)
-    write_report(rows, bin_path, bin_dir, output_path)
+    write_report(rows, bin_path, bin_dir, output_path, trace_all=args.all)
     print(f"Wrote {output_path}")
 
 
