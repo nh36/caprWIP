@@ -1,16 +1,15 @@
-Total mismatches: 36
+Total mismatches: 35
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    6
+  Phonology (core buckets):    5
   Phonology (other buckets):   23
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
   breaking_missing__expected_ie: 1
   long_vowel_missing: 3
-  palatalization_missing: 1
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
@@ -58,12 +57,6 @@ long_vowel_missing (3):
   *bō -> bu (expected bā]] [[þā)
   *mízdō -> meord (expected mēd)
   *téxun -> teoon (expected tīen)
-
-palatalization_missing (1):
-  *wīθijaz -> wīþ (expected wīþiġ)
-  >> ISSUE: Palatal ġ/ċ expected but velar g/c produced
-  >> LIKELY: Palatalization rule not applying in this context
-  >> ACTION: Check palatalization environments; may be suffix-related
 
 final_vowel_extra (2):
   *láimōn -> lāfe (expected lām)
