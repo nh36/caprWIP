@@ -1594,6 +1594,38 @@ define OEInterStressRaising [
     {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
 ];
 
+# OEAwjGlideFormation: *aw + *j → *au + *j (and *aww + *j → *au + *j).
+# See DEV_NOTES.md §17.10.36-research for full source synthesis.
+#
+# The literature is divided on the PWGmc internal chronology of
+# this context:
+#   Camp A (Kögel 1884 → Luick §98 Anm.2 → Brunner §227/§408 Anm.12
+#           → Bülbring §540 → Campbell §120.2/§407 → R/T vol.2 §3.2.4
+#           lines 3762-3781): *aw + *j geminated to *aw'w' + *j in
+#           PWGmc, then reversed to *au + *j in pre-OE when preceded
+#           by *a. Luick himself calls this "wahrscheinlich aber
+#           nicht strikte zu erweisen" — probable but not strictly
+#           provable.
+#   Camp B (Fulk §4.10 fn.1 lines 4968-4973): no gemination of *w
+#           before *j ever; the *u was a glide throughout, cf. Gothic
+#           stráujan, niujis. Kroonen, Orel, Kluge-Seebold
+#           reconstruct single *w in the relevant headwords.
+#
+# Both camps CONVERGE on *au + *j as the OE-stage input. We model
+# the net effect with a single short-circuit rule, formally neutral
+# between the two accounts. The narrow context (*a precedence
+# required) keeps this from interacting with *e/*i/*o/*u + *w + *j
+# sequences (e.g. *niwjaz, *triwją), where separate analyses apply.
+#
+# Stress preserved where present (stressed *á → *áu, parallel to
+# the existing *áu pattern handled by OEAuFronting below).
+define OEAwjGlideFormation [
+    {*á} {*w} {*w} {*j} -> {*áu} {*j},
+    {*a} {*w} {*w} {*j} -> {*au} {*j},
+    {*á} {*w}      {*j} -> {*áu} {*j},
+    {*a} {*w}      {*j} -> {*au} {*j}
+];
+
 define OEAuFronting [
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
@@ -2707,6 +2739,7 @@ define EnglishProtoToOE (
     .o. NWGmcNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. NWGmcPreconsonantalXLoss
+    .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
@@ -2875,12 +2908,11 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. NWGmcPreconsonantalXLoss
+    .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
     .o. OEEwLongDiphthong
-    .o. OEAwLongDiphthong
-    .o. OEPrefixAReduction
     # Inter-stress raising (R/T §6.3.3): *a → *u before AFB/breaking.
     .o. OEInterStressRaising
     # Medial unstressed u-lowering moved AFTER InterStressRaising per

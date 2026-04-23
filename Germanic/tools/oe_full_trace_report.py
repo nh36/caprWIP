@@ -65,6 +65,7 @@ STAGES: List[Tuple[str, str]] = [
     ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
     # Stage 5: Anglo-Frisian and Early OE Vowel Changes
+    ("AwjGlideFormation", "old_english_sandbox_after_awj_glide_formation.bin"),
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
     ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
     ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),
