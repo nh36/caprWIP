@@ -25618,3 +25618,104 @@ the same line of reasoning.
    `oe_mismatch_report.py` before/after (expect 37 → 36).
 
 — end §17.10.31
+
+### §17.10.32 Case 4 — Path α implementation result: `*fúnðanǭ → fundene`
+
+**Change applied** (TSV row 2011):
+
+| field      | before        | after          |
+|------------|---------------|----------------|
+| PROTOFORM  | `*fúnðanaz`   | `*fúnðanǭ`     |
+| PROTO      | `*fúnðanaz`   | `*fúnðanǭ`     |
+| TOKENS     | `f u n d e n` | `f u n d e n e`|
+| OE target  | `funden`      | `fundene`      |
+
+**FST grammar extension**: `pgrmWeakTailVowel` in `Germanic/fsts/germanic.txt`
+(after the `*-anjō` clause, ~line 411) gained a new clause for the
+acc.sg.m. strong-adj/ptc paradigm cell:
+
+```foma
+| a:{*a} n:{*n} ǭ:{*ǭ}    % strong adj/ptc acc.sg.m. (Path α, §17.10.30)
+```
+
+**Trace result** (`echo 'fúnðanǭ' | flookup -i old_english.bin`):
+
+```
+fúnðanǭ → fundene
+```
+
+Stage-by-stage (oe_full_trace_report.py):
+1. ProtoInput: `*f *ú *n *ð *a *n *ǭ`
+2. WestGermanic (*ð→*d): `*f *ú *n *d *a *n *ǭ`
+3. UnstressedFrontingEarly: medial `*a → *æ` (intervocalic *n)
+4. UnstressedAEMerger: `*æ → *e` → `*f *ú *n *d *e *n *ǭ`
+5. UnstressedLongVowelShortening: `*ǭ → *æ` (bimoric)
+6. AEMerger: `*æ → *e`
+7. OldEnglishRemoveStars: `f u n d e n e` → `fundene`
+
+The medial fronting (the philologically important step — Campbell §334,
+Luick §301,3, Brunner §366 Anm. 3) is *exactly* the regular sound law
+in this oblique cell where *n is intervocalic. The final `-e` is the
+regular reflex of bimoric `*-ǭ` (same chronology as fem. n-stem
+`*-ǭ → -e`, e.g. `tunge`).
+
+**Why target = `fundene`, not `funden`**
+
+`fundene` is itself a directly attested Old English form: it is the
+inflected (strong, acc.sg.m. / nom.-acc.pl.) form of the past
+participle of *findan*, used adjectivally. Two independent attestations
+in our reference corpus:
+
+1. **Bosworth–Toller**, *An Anglo-Saxon Dictionary*, s.v. *findan*:
+   the entry quotes a manuscript reading "Beón i hergeata ww **fundene**,
+   414, 4 note" (a charter/law citation). See
+   `docs/references/anglosaxondictio00tolluoft.txt` line 19163.
+
+2. **J. R. Clark Hall**, *A Concise Anglo-Saxon Dictionary*, s.v.
+   *tō-fundennes* "the state of being puffed up" — a feminine abstract
+   noun built on the inflected past-participle stem `funden(n)-`,
+   independently confirming that the past ptc had a fully grammatical
+   inflected form `funden(n)-`. See
+   `docs/references/aconciseanglosa01hallgoog.txt` line 22052.
+
+So `fundene` is not a reconstruction or a probe form — it is genuine
+attested Old English. The TSV target column already encodes "the OE
+surface form of the chosen paradigm cell" (cf. gen.sg. `mannes` for
+`*mannas`, §Geminate paradigm-cell, 2026-04-05; nom.pl. past `bugon`
+for `*bugun`, §Class II strong verb paradigm cells). Choosing the
+inflected past-ptc cell here is fully consistent with that convention.
+
+The original target `funden` is the analogical nom.sg. (whole-stem
+levelling from oblique cells, per the §17.10.30 source audit). Trying
+to derive the bare form `funden` from this PROTOFORM would require
+either:
+
+(a) Extending `OEHeavySyllableNasalApocope` (currently `{*ą} → 0 /
+    OEAnyConsonant _ .#.`) to also delete `*ǭ`. **Rejected**: this
+    would over-apply to fem. n-stems (`*tungǭ → tung*`, regression in
+    `tunge` and many others — the bimoric `*-ǭ → -e` outcome is the
+    standard pipeline behaviour, R/T vol. 2 §6.1.5).
+
+(b) Choosing a different oblique cell whose final vowel phonologically
+    disappears entirely. **Rejected**: any oblique cell with
+    intervocalic *n has at least one mora of vowel after the *n,
+    which leaves a surviving `-e` after fronting + shortening. The
+    only cell with no surviving final vowel is the nom.sg.
+    (`*-anaz → *-an#`), where *n is in coda and fronting fails — i.e.
+    the cell we are trying to escape.
+
+**Mismatch count**: expected 37 → 36 once the report is regenerated
+(was stale, still showing `+?` from before the bin rebuild).
+
+**Outstanding analogy note**: the bare nom.sg. `funden` itself remains
+analogical — the sound law produces `*fundan` directly from
+`*fúnðanaz` (no intervocalic *n at fronting time). Targeting the
+attested inflected `fundene` instead of the levelled `funden` is
+consistent with the project principle "favour phonological solutions
+over analogy where there is an option" (`skills/be-lautgesetzlich.md`).
+The whole-paradigm levelling that produces nom.sg. `funden` is a
+philological fact described by Campbell §334 / Luick §301,3 / Brunner
+§366 Anm. 3; modelling the levelling itself is out of scope for the
+FST.
+
+— end §17.10.32

@@ -408,6 +408,12 @@ define pgrmWeakTailVowel [
     # *-anjō derivational suffix: forms feminine nouns (body parts, abstracts)
     # e.g. *lunganjō 'lung' → OE lungen (i-umlaut of *a → *e, j-loss)
     a:{*a} n:{*n} j:{*j} ō:{*ō} |
+    # Strong adj/ptc acc.sg.m.: *-anǭ (PIE *-o-nom → PGmc *-anam → *-anã → *-anǭ)
+    # Paradigm-cell input used to derive OE past-ptc *funden* regularly:
+    # the medial *n is intervocalic (onset of following syllable), so unstressed
+    # *a fronts (Campbell §334 / Luick §301,3 / Brunner §366 Anm. 3 treat the
+    # nom.sg. *-en as analogical from exactly this cell). See DEV_NOTES §17.10.30.
+    a:{*a} n:{*n} ǭ:{*ǭ} |
     ō:{*ō} r:{*r} |
     ô:{*ô} |
     ō:{*ō} j:{*j} a:{*a} n:{*n} ą:{*ą} |
