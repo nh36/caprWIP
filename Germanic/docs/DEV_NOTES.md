@@ -25071,3 +25071,192 @@ only segments that are independently motivated.
    that could be swept up by the tightened context.
 
 — end §17.10.28
+
+
+## §17.10.29: Case 4 — research update; conditioning and opinio communis
+
+*Revising §17.10.28.* User prompt: "if there is a secondary nasalization
+that actually matters for the sound change, then maybe we need to add a
+rule that puts in the secondary nasalization. In any case the answer is
+always to be Lautgesetzlich, and to have the conditioning and chronology
+match what the field thinks." Before implementing anything, audit the
+primary sources.
+
+### What the field actually says
+
+**Ringe & Taylor vol 2 §5.1.2 (pp. 142, 153)**
+
+> "Stressed low vowels were nasalized when immediately followed by a
+> nasal in the northern WGmc dialects; unstressed *a was apparently
+> nasalized when immediately followed by a nasal **in the syllable
+> coda**, but not when immediately followed by an **intervocalic
+> nasal**. This must have amounted to more than the automatic
+> nasalization typical of vowels in contact with nasal consonants; the
+> subsequent development of these nasalized vowels shows that native
+> learners had reanalyzed their nasalization as distinctive…"
+
+> "Unstressed *a was nasalized, and therefore not fronted, only if it
+> was followed by a nasal in the syllable coda…"
+
+This is a **structural**, not word-positional, conditioning. R/T's
+actual reconstruction chain for the past participle (p. 199,
+`*siwanaz`):
+
+> PGmc past ptc. *siwanaz 'filtered' (OHG *siwan) > *siwæn > OE *ā-siowen
+
+Note that R/T bring the medial *a of the participle through
+fronting (*a → *æ → *e) **while the final *-az suffix is still
+accounted for in their reconstruction** — fronting fires when the
+nasal is still heterosyllabic.
+
+**Campbell §333–§334 (pp. 141)**
+
+§333: "Unaccented *a* is subject to the same alternative developments…
+but *a* before nasals."
+
+§334 (crucial): "Unlike the accented vowel, unaccented *a* > *æ*
+before a nasal consonant **if this did not belong to the same
+syllable**, and **this *æ* could be transferred to forms where vowel
+and nasal belonged to the same syllable**. Thus CH *hefæn-*, *heben*,
+are due to infl. *\*hevenes*, etc. **This is the origin of OE -en when
+absence of umlaut shows it not to be from -in, and when it is not
+due to parasiting, e.g. strong pass. parts. in -en (still often -an
+in Ep.)**"
+
+**Fulk 4111** is consistent: the lowering/fronting distinction is
+sensitive to the tauto- vs heterosyllabic status of the following
+nasal.
+
+**Hogg vol 1** does not add material differing from Campbell.
+
+### Consensus
+
+1. The sound change is structural: *a* nasalises before a **coda
+   nasal**, not before an **onset nasal**. Surface position of the
+   nasal (word-final vs intervocalic) is a proxy that only sometimes
+   lines up with the right syllabification.
+
+2. The nasalisation is **phonologically distinctive** (R/T), not a
+   mere automatic contact colouring. R/T and the DEV_NOTES §5.1.1
+   history represent this with `*ą` (primary / long, lost-nasal origin)
+   vs `*ã` (secondary / short, coda-nasal origin). We have never
+   actually introduced `*ã`; the current FST conflates it with `*ą`.
+
+3. **Campbell explicitly states that `-en` in strong past participles
+   is analogical**, not phonological. The sound-law output of nom.sg.
+   `*fundanaz` is `*fundan` — which is what Epinal and Ps(A) relic forms
+   actually attest (`witen` ~ `-an`, etc.). The `-en` that WS and most
+   prose preserve is **transferred from oblique cells** where the nasal
+   was heterosyllabic: `*fúnðanas, *fúnðanōm, *fúnðanai…`.
+
+### Implication for Case 4 (*fúnðanaz → funden)
+
+Our FST is in fact producing the **sound-law-correct** output (`fundan`)
+for the nom.sg. protoform. The attested target `funden` is analogical
+per Campbell §334. Two Lautgesetzlich paths are therefore available;
+§17.10.28's option β is only one of them, and not the most principled.
+
+#### Path α — paradigm-cell PROTOFORM (Lautgesetzlich via Campbell's own account)
+
+Replace the TSV PROTOFORM on row 2011 with an inflected cell in which
+the stem-final nasal is genuinely heterosyllabic. Candidate cells for
+the strong a-stem adjective/participle paradigm:
+
+- acc.sg.m. `*fúnðanǭ` — heavy acc.sg. ending `*-anǭ`. After
+  `OEHeavySyllableNasalApocope` deletes the final `*ǭ` (light-final
+  apocope after consonant cluster `*n*d*...`), only `*funden` remains.
+- nom.pl.m. `*fúnðanai` — fronts through `*funðenai` → `*funðene` →
+  (final schwa apocope) `funden`. The `-e` endings exist, so this
+  would need the HeavySyllable apocope to strip them — viable, but
+  the output depends on apocope order for short front vowels.
+- gen.sg.m. `*fúnðanas` — yields `*funðenas → funðenes → fundenes`,
+  not the bare `funden`. Only useful as a morphological paradigm cell
+  with explicit -es target.
+
+Methodologically this matches prior precedents: **mannes** (row 2119,
+gen.sg. `*mannas`), **spanne** (row 2140, dat.sg. `*spannăi`),
+**ræste** (row 2152, gen.sg. `*rastōz`), and **cow/fire** (§3399).
+The rule is: when the attested OE form arose by morphological transfer
+in a specific cell, encode that cell — do not rig phonology to
+produce the analogical outcome from the nom.sg. protoform.
+
+**Recommendation:** use acc.sg.m. `*fúnðanǭ`. This requires a trace
+to confirm that `*ǭ` is present at the right stages and is stripped
+by heavy apocope, but it is mechanically parallel to the acc.sg.
+*-ą / *-ǭ handling we already have for other classes.
+
+#### Path β — rule-based, with a genuine secondary-nasalisation rule
+
+If we want to model nasalisation phonologically rather than
+morphologically, the proper Lautgesetzlich rule is not the current
+`_ {*n} .#.` (word-position proxy) but:
+
+```foma
+# Secondary nasalisation: unstressed *a → *ã before a coda *n
+# Body reflects R/T §5.1.2: conditioning is syllable-structural,
+# encoded here via chronology — rule fires after infinitive's final
+# *ą has been apocopated (HeavySyllableNasalApocope) but before
+# participle's final tail (*-as / *-anǭ etc.) has been apocopated.
+define OESecondaryNasalization [
+    [{*a} | {*ă}] -> {*ã} || _ {*n} .#.
+];
+```
+
+and all downstream rules (`OEUnstressedAFronting`, `OEARestoration`,
+the `OEWeakTail` reductions) must be taught about `*ã` as a distinct
+symbol. See the detailed plan in §14 above ("Primary vs Secondary
+Nasalization: The Correct Solution"), which we drafted but never
+executed.
+
+For this path to solve Case 4, the `PWGmcFinalBareALoss` rule — which
+currently fires very early and strips the participle's final *-a
+together with the m.a-stem's — must also be audited. Option (i) move
+it later; option (ii) scope it to truly-bare-a m.a-stem contexts and
+not to derived `*-anaz` endings. Either requires re-examining one of
+the earliest PWGmc rules and carries regression risk across the noun
+inflection.
+
+#### Path γ — chronology fix alone (the committed §17.10.28)
+
+The previous plan restores the rule body to `_ {*n} {*ą} .#.`. This
+uses the final thematic `*ą` of the infinitive as a proxy for
+"infinitive context", which is *not* what R/T or Campbell say
+conditioned the change. It would work for Case 4 in isolation but
+models the conditioning wrong and would mislead future debugging.
+**Withdraw this recommendation.**
+
+### Decision
+
+**Adopt Path α**: TSV PROTOFORM change on row 2011 from `*fúnðanaz` to
+`*fúnðanǭ` (strong adj. acc.sg.m.n.). Rule-level chronology and
+nasalisation unchanged for now. This is the most Lautgesetzlich option
+— it models exactly what Campbell §334 says happened — and requires no
+rule-body changes.
+
+If regressions surface elsewhere (e.g. other strong ptcs with the same
+`*-anaz` encoding), the paradigm-cell substitution is applied per-row,
+consistently.
+
+Path β (full structural secondary-nasalisation with `*ã`) is parked
+as a future architectural project. It is the right way to model the
+change phonologically, but it is disproportionate for Case 4 alone
+and would require auditing every rule that currently operates on
+`*a`/`*ą` in nasal contexts.
+
+### Verification plan for Path α
+
+1. Revert the §17.10.28-inspired rule-body change (if any was applied).
+   Current rule body on line 2119 remains `_ {*n} .#.` from main.
+2. Edit TSV row 2011: PROTOFORM `*fúnðanaz` → `*fúnðanǭ`.
+3. Trace `*fúnðanǭ` — expect *a in `-an-` stays through heavy apocope
+   (because the following *ǭ is not yet gone at SecondaryNasalization
+   time), fronts to *æ → *e at UnstressedAFronting, and emerges as
+   `funden` after final apocope strips *ǭ.
+4. If the trace shows *ǭ persisting to the surface, adjust the cell
+   choice or ensure `OEHeavySyllableNasalApocope` sees `*ǭ` in the
+   apocope environment. (It should: *ǭ after a heavy-syllable
+   consonant cluster is exactly the rule's target.)
+5. Run `oe_mismatch_report.py`; expect 37 → 36.
+6. No rule changes, no bin rebuild of sources outside the TSV pipeline.
+
+— end §17.10.29
