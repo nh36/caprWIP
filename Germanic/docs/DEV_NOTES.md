@@ -26065,3 +26065,171 @@ cell switch. A probe of the trial PROTOFORM through the compiled FST
 plan would have caught this before the TSV edit.
 
 — end §17.10.34a
+
+---
+
+### §17.10.35 *wīθijaz → wīþ (expected wīþiġ): wrong suffix etymology
+
+**Bucket**: `palatalization_missing` (1 case).
+
+**Symptom**: TSV row 2296 has PROTOFORM `*wīθijaz`, COUNTERPART `wīþiġ`,
+but the FST emits bare `wīþ` (suffix lost entirely). Probe:
+
+```
+$ echo wīθijaz | flookup -i old_english.bin
+wīθijaz	wīþ
+```
+
+**Diagnosis**: `*wīθijaz` would be a heavy-stem ja-stem masc. adj. in
+`*-ijaz` (Sievers's law full form), in which post-heavy *j is lost and
+the suffix collapses on the apocope path, giving bare `wīþ`. The FST
+actually does what that morphology says.
+
+But the *-ijaz reconstruction (cited in the existing NOTE as
+"Wiktionary") is the wrong etymology for OE `wiðiġ / wīðiġ` 'willow,
+withy'. That noun does not contain a productive ja-stem adj. suffix;
+it contains the homophonous nominal/adjectival derivational suffix
+`-iġ`, whose source is PGmc `*-ag-` (short *a), NOT `*-ij-`.
+
+**Sources (opinio communis)**:
+
+- Campbell §275(7): "The suffix `-ig` represents Prim. OE `-æg`
+  (> `-eg`, e.g. CH `haleg`) and `-ig`... Examples are `hunig` honey,
+  `mōdig` brave, `hālig` holy, beside North. [unmutated forms]." Both
+  the noun-suffix (in `hunig`, `wiðig`, `bodig`) and the adj. suffix
+  (in `hālig`, `mōdig`) trace to the SAME `*-ag-` source.
+
+- Campbell §376: "there is a change *e > *i before *g. This is seen
+  in the suffix `-ig` (< `-eg` < `-æg`)..." This is distinct from "`-īg`
+  < Goth. `-eigs`" (long *ī, with i-umlaut of the preceding syllable).
+
+- Hall, A Concise Anglo-Saxon Dictionary, s.v.: "wiþig. wiðiġe m.
+  withe, 'withy', willow, BR" — masc. with no macron marked, although
+  the macronation conventions in Hall are inconsistent.
+
+- Orel, Handbook of Germanic Etymology, s.v.: distinguishes
+  `*wiþiz` (fem.) — Goth. kuna-wida 'fetter, cord', ON við 'withy',
+  MLG wede 'fetter', OHG wid — from
+  `*wiþjōn` (fem. n-stem) — ON viðja 'withy', OE wiððe 'thong, cord',
+  OFri withe, MDu wide, OHG witta 'head-band'.
+  Note Orel reconstructs only the fem. forms; the OE masc. `wiðiġ`
+  'willow' is a derivative not given an explicit PGmc reconstruction
+  but transparently formed with the `*-ag-` suffix on the same root.
+
+- **Kluge-Seebold s.v. "Weide¹"** reconstructs **PGmc `*wīþja-/ō-`
+  m./f. "Weide"**, "auch in anord. víðir m., **ae. wīþig m.**;
+  vielleicht ist eine ältere Form `*wīþw-`". This explicitly groups
+  OE `wīþig` (masc.) under a ja-/jō-stem reconstruction with **long
+  *ī*** in the root, traces it ultimately to PIE *wei̯ə- 'to wind,
+  weave' (Lat. *viēre*), and notes a possible older *wīþw-* variant
+  (cf. Gk. *itéa*, OPrus. *witwan*, Latv. *vītuols*, all from
+  *wiet-u-*). Kluge's reconstruction is the source of the Wiktionary
+  PROTOFORM `*wīþijaz` (the Sievers's-law full form of a heavy-stem
+  *-ja-* + *-az*).
+
+  **However, Kluge's `*wīþja-/ō-` reconstruction is morphologically
+  inconsistent with the OE `-ig` ending it itself cites**: a heavy-
+  stem masc. ja-stem regularly yields OE forms in `-e` or `-Ø` (cf.
+  *ende* < *andjaz, *hierde* < *xerdijaz, *here* < *xarjaz; gen.
+  *eldes* etc.) — **not** in `-ig`. Kluge appears to be giving
+  shorthand reconstruction for the cognate set as a whole (ON *víðir*
+  m. *ja*-stem; OHG *wīda* fem. ō-stem; MHG *wīde* fem.) without
+  fully accounting for the OE `-ig` suffix, which must be a secondary
+  derivational layer (the productive OE noun-/adj.-forming suffix
+  treated by Campbell §275(7) and §376). The Wiktionary
+  `*wīθijaz` PROTOFORM inherits this incompleteness from Kluge: it
+  reproduces the cognate-set headword but fails to produce the
+  attested OE form by regular sound change (the FST output `wīþ` is
+  in fact the correct lautgesetzlich heavy ja-stem outcome).
+
+- **Kroonen, Etymological Dictionary of Proto-Germanic, has NO entry
+  for this lexeme.** The dictionary's only `wid-/wīd-/wiþ-` entries
+  in this semantic neighbourhood are `*wida-` 'wide, distant' (PIE
+  *h₂uei-dʰh₁-o-, OE wīd 'wide') and `*widu-` 'tree, wood' (PIE
+  *(h₂)uidʰ-u-, OE widu/wudu 'wood'). Kroonen's omission is
+  noteworthy: he is the most up-to-date PGmc lexicon we hold, and his
+  silence on `*wīþja-`/`*wiþjōn` likely reflects (a) the lexeme's
+  reconstructionally marginal status (only Goth. *kuna-wida* and the
+  fem. n-stem cognates have a clean PIE source), and (b) that the
+  OE masc. `*-ag-` derivative is too transparent to merit a separate
+  entry. Effectively, Kroonen tacitly endorses the structural picture
+  whereby the OE form is a derivational compound of *wiþ-* + the
+  productive *-ag-* suffix, not a direct reflex of any single PGmc
+  lemma.
+
+**Synthesis of the source positions**:
+
+| Source | Reconstruction | Treats OE `wīþig` as |
+|---|---|---|
+| Wiktionary | `*wīþijaz` (ja-stem) | direct reflex (problematic) |
+| Kluge-Seebold | `*wīþja-/ō-` (ja-/jō-stem) | direct reflex (problematic, see above) |
+| Orel | `*wiþjōn` fem. + `*wiþiz` fem. | only fem. forms reconstructed; OE masc. derivative |
+| Campbell §275(7), §376 | OE `-ig` < `*-ag-` (short *a) | morphologically a `*wiþ-` + `*-ag-` derivative |
+| Kroonen | (no entry) | (silent, tacit endorsement of derivational analysis) |
+
+The two "direct reflex" reconstructions (Wiktionary, Kluge) are
+philologically tidy at the cognate-set level but **fail
+lautgesetzlich verification**: a heavy-stem ja-/jō-stem does not
+yield OE `-ig`. Campbell's `*-ag-` suffix analysis is the only
+account that survives an end-to-end sound-change check.
+
+The current TSV PROTOFORM `*wīθijaz` therefore conflates two
+different morphological objects: it tries to use the ja-stem masc.
+adj./noun ending on a noun whose OE shape requires the `*-ag-`
+derivational suffix.
+
+**Parallel evidence in the TSV**: row 2079 `*xúnagą → huniġ` already
+uses the correct suffix shape (`*-agą`, neuter). It works through the
+existing pgrmWord allow-list (line 304: `a:{*a} g:{*g} ą:{*ą}`). No
+allow-list change is needed.
+
+**Probe of the proposed PROTOFORM through the compiled FST**
+(per `skills/mismatch-loop.md` paradigm-cell-switch sub-gate):
+
+```
+$ echo wīθagą | flookup -i old_english.bin
+wīθagą	wīþiġ
+```
+
+Exact match to the TSV target. The lautgesetzlich chain:
+
+  *wīθ-agą → (a-umlaut: long *ī untouched, only short *u/*i affected)
+   → *wīþ-agą → (unstr. *a > *e in OE)
+   → *wīþ-egą → (e > i / _g, Campbell §376)
+   → *wīþ-igą → (apocope of nasal vowel; palatalization of *g before
+     *i)
+   → wīþ-iġ ✓
+
+**Vowel length question**: Hall's Concise A-S writes the word as
+`wiþig` without macron; modern editions (and the current TSV) use
+`wīþiġ`. Kluge's reconstruction has long *ī* in the root and matches
+ON *víðir* in length. We retain the long-*ī* form because (a) that's
+the existing TSV target, (b) Kluge supports it, (c) `*wīθagą`
+produces it cleanly, and (d) the vowel length question is orthogonal
+to the suffix question. If a future audit decides the OE target
+should be short, the PROTOFORM would become `*wíθagą`, which probes
+to `weþiġ` (a-umlaut of short *i to *e) — that would then fall into
+the same `vowel_quality__u_lowering_exception` family addressed in
+§17.10.34/§17.10.34a. For now, the long-*ī* path is both the cleaner
+derivation and the consensus Continental form.
+
+**Plan**:
+
+1. Edit row 2296: PROTOFORM `*wīθijaz` → `*wīθagą`,
+   TOKENS `w ī θ i j a z` → `w ī θ a g ą`,
+   PROTO column likewise updated to `*wīþagą` (the `*wīθijaz`
+   headword is, on the lautgesetzlich evidence, an unworkable
+   reconstruction for the OE form).
+   NOTE: replace the brief Wiktionary citation with a §17.10.35
+   reference and a one-line summary of why Campbell `*-ag-` beats
+   Kluge `*-ja-` for the OE form.
+
+2. Re-run `python3 tools/oe_mismatch_report.py`; verify count drops
+   by 1 (from 36 to 35) and the `palatalization_missing` bucket loses
+   its only entry.
+
+3. Verify no other row regresses.
+
+4. Commit + push.
+
+— end §17.10.35

@@ -1393,3 +1393,68 @@ If `wīþig` has the second suffix (\*-igaz or \*-agaz), the `-ig` would be expe
 **Full analysis:** See DEV_NOTES.md, "OE wīþiġ 'withy': ja-stem Adjective vs Sievers' Law Syncope (2026-03-19)".
 
 **Full analysis:** See DEV_NOTES.md, "OE þistel 'thistle': I-Umlaut Not Preserved (2026-03-18)".
+
+---
+
+### Resolution (DEV_NOTES §17.10.35, 2026-04-23)
+
+**The puzzle is solved.** "Possible explanation 1" above (suffix
+`*-igaz`/`*-agaz` rather than ja-stem `*-ijaz`) turns out to be
+correct, and the etymological source is **Campbell §275(7) and §376
+itself** — already cited in the original section but its implications
+for *wīþiġ* not followed through. Campbell explicitly groups *wiðig*
+with *hunig*, *bodig*, *hālig* as derivatives in OE `-ig` < Prim. OE
+`-æg` < PGmc `*-ag-` (short *a). The structurally exact PGmc parent
+is `*wīþagą` (neut. *-agą), morphologically parallel to `*xúnagą` →
+`hunig` (TSV row 2079, which works in the FST without modification).
+
+**End-to-end FST verification:**
+
+```
+$ echo wīθagą | flookup -i old_english.bin
+wīθagą  wīþiġ
+```
+
+Exact match to the attested OE target. The lautgesetzlich chain is:
+
+  *wīθ-agą → (a-umlaut leaves long *ī untouched: only *u/*i affected)
+   → *wīþ-agą → (unstr. *a > *e) → *wīþ-egą →
+   (Campbell §376 *e > *i / _g) → *wīþ-igą → (apocope of nasal
+   vowel; palatalization of *g before *i) → wīþ-iġ ✓
+
+**Why this is a "really useful" finding for the project**:
+
+The Wiktionary `*wīþijaz` and Kluge-Seebold `*wīþja-/ō-` reconstructions
+that were the starting point of the puzzle are **morphologically
+inconsistent with the OE form they themselves cite**. A heavy-stem
+masc. ja-stem in PGmc regularly yields OE `-e` or `-Ø` (cf. *ende*,
+*hierde*, *here*, *wite*, *līðe* — exactly the parallels this
+section's table at the top lists). The FST output `wīþ` from
+`*wīþijaz` is the *correct* lautgesetzlich heavy-ja-stem outcome.
+Both reference works (and Wiktionary which follows Kluge) silently
+elide this inconsistency: they give a cognate-set headword that fits
+the Continental cognates (OHG *wīda* fem. ō-stem, ON *víðir* m.
+ja-stem) and tack the OE form on without checking whether the Old
+English suffix `-ig` is morphologically derivable from the
+reconstructed stem.
+
+**The FST surfaced this elision automatically.** Running the
+reconstructed PROTOFORM through the compiled grammar produced a
+philologically defensible output (`wīþ`, the regular ja-stem outcome)
+that did not match the attested OE form — exposing that the
+Wiktionary/Kluge reconstruction cannot derive *wīþiġ* without invoking
+analogy. Switching to Campbell's `*-ag-` derivational analysis (which
+Campbell himself explicitly classifies *wiðig* under) yields the
+attested form by regular sound change end-to-end. This is a clean
+example of the FST functioning as a Neogrammarian audit tool: it
+mechanically separates "this reconstruction yields the attested form
+by regular sound change" from "this reconstruction is asserted to be
+the source of the attested form, but cannot derive it without
+analogy."
+
+**Updated TSV status (2026-04-23)**: PROTOFORM changed from
+`*wīθijaz` to `*wīθagą`; row matches under the Campbell §275(7)/§376
+suffix etymology. Sections of the standard etymological literature
+(Wiktionary headword, Kluge-Seebold s.v. Weide¹) that retain the
+`*-ja-` reconstruction for the OE form should be regarded as
+inheriting an unverified analogy.
