@@ -160,7 +160,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1134	b r au x ə n	*brūkaną	( - - ) b r au x ə n ( - - )	brauxən	brauchen	311	German					brook	*brūkaną	36
 34	b ɔ k	*búkkaz	b ɔ k ( - - )	bɔk	bok	9	Dutch					buck	*búkkaz	37
 33	b ʌ k	*búkkaz	b ʌ k ( - - )	bʌk	buck	9	English					buck	*búkkaz	37
-1973	b u c c	*búkkaz	b ʌ k ( - - )	bʌk	bucc	9	Old_English	Kroonen p.98 *bukka(n)- > OE bucc; u retained near labial b despite non-high following vowel (R/T §2.3.1 p.33, cf. Luick 1914-40: 105-6)				buck	*búkkaz	37
+1973	b u c c	*búkkaz	b ʌ k ( - - )	bʌk	bucc	9	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): Campbell §115 names bucca as exception to a-umlaut (regular outcome = **bocc, cf. OHG boch). No lautgesetzlich PROTOFORM available: every paradigm cell with low *a/*ō triggers a-umlaut, every cell with high *i triggers i-umlaut (→ **byċċ); attested bucc is doubly irregular.				buck	*búkkaz	37
 32	b ɔ k	*búkkaz	b ɔ k ( - - )	bɔk	Bock	9	German					buck	*búkkaz	37
 1754	b ɑ r s t ə	*bréstaną	b ɑ r - s t ə - ( - - )	bɑrstə	barsten	480	Dutch					burst	*bréstaną	38
 1753	b ɜː s t	*bréstaną	b ɜː - - s t - - ( - - )	bɜːst	burst	480	English					burst	*bréstaną	38
@@ -385,7 +385,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 361	f iː r	*fedwōr	f iː ( - - - ) r ( - - )	fiːr	vier	100	German					four	*fedwōr	90
 1834	v oː ɣ ə l	*fúglaz	v oː ɣ ə l ( - - )	voːɣəl	vogel	502	Dutch					fowl	*fúglaz	91
 1833	f aʊ l	*fúglaz	f aʊ - - l ( - - )	faʊl	fowl	502	English					fowl	*fúglaz	91
-2030	f u g o l	*fúglaz	f aʊ - - l ( - - )	faʊl	fugol	502	Old_English	R/T §2.3.1 p.33: *fuglaz > OE fugol; u retained near labial f (exception to u-lowering, cf. Luick 1914-40: 105-6)				fowl	*fúglaz	91
+2030	f u g o l	*fúglaz	f aʊ - - l ( - - )	faʊl	fugol	502	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): Campbell §115 names fugol as exception to a-umlaut (regular outcome = **fogol, cf. OHG fogal). No lautgesetzlich PROTOFORM available: every paradigm cell with low *a/*ō triggers a-umlaut, every cell with high *i triggers i-umlaut; attested fugol is doubly irregular.				fowl	*fúglaz	91
 1832	f oː ɡ ə l	*fúglaz	f oː ɡ ə l ( - - )	foːɡəl	Vogel	502	German					fowl	*fúglaz	91
 342	v ɔ s	*fúxsaz	v ɔ - s ( - - )	vɔs	vos	94	Dutch					fox	*fúxsaz	92
 341	f ɔ k s	*fúxsaz	f ɔ k s ( - - )	fɔks	fox	94	English					fox	*fúxsaz	92
@@ -896,7 +896,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 965	r ɪ n ə n	*rínnaną	r ɪ n ə n ( - - )	rɪnən	rinnen	265	German					run	*rínnaną	353
 737	r uː s t	*rustō	r uː s t ( - )	ruːst	roest	202	Dutch					rust	*rustō	205
 736	r ʌ s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	English					rust	*rustō	205
-2162	r u s t	*rústō	r ʌ s t ( - )	rʌst	rust	202	Old_English	OE rust retains u; cf. R/T §2.3.1 for general u-lowering exceptions				rust	*rustō	205
+2162	r u s t	*rústō	r ʌ s t ( - )	rʌst	rust	202	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): regular sound change gives **rost (Stiles 2012 §4.1.1.2 env. b: low *ō triggers a-umlaut). Campbell §115 groups with the u-preservation exceptions. No lautgesetzlich paradigm cell available: i-stem/gen.sg. cells with high *i would instead trigger i-umlaut (→ **ryst).				rust	*rustō	205
 735	r ɔ s t	*rustō	r ɔ s t ( - )	rɔst	Rost	202	German					rust	*rustō	205
 1464	r ɔ ɣ ə	*rúgiz	r ɔ ɣ ə ( - )	rɔɣə	rogge	400	Dutch					rye	*rúgiz	206
 1463	r aɪ	*rúgiz	r aɪ - - ( - )	raɪ	rye	400	English					rye	*rúgiz	206
@@ -1425,7 +1425,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 702	v a l t	*wálθuz	v a l d ( - - )	valt	Wald	193	German					wold	*wálθuz	322
 1527	ʋ ɔ l f	*wúlfaz	ʋ ɔ l f ( - - )	ʋɔlf	wolf	418	Dutch					wolf	*wúlfaz	323
 1526	ʋ ʊ l f	*wúlfaz	ʋ ʊ l f ( - - )	ʋʊlf	wolf	418	English					wolf	*wúlfaz	323
-2298	w u l f	*wúlfaz	ʋ ʊ l f ( - - )	ʋʊlf	wulf	418	Old_English	R/T §2.3.1 p.33: *wulfaz > OE wulf; u retained near labial w/f (exception to u-lowering, cf. Luick 1914-40: 105-6)				wolf	*wúlfaz	323
+2298	w u l f	*wúlfaz	ʋ ʊ l f ( - - )	ʋʊlf	wulf	418	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): Campbell §115 names wulf as exception to a-umlaut (regular outcome = **wolf, cf. OHG wolf). No lautgesetzlich PROTOFORM available: every paradigm cell with low *a/*ō triggers a-umlaut, every cell with high *i triggers i-umlaut (attested 'wulfe' from *wulfi has umlaut *levelled analogically* per Brunner §230 Anm., so lautgesetzlich outcome of *wulfi would be **wylfe). attested wulf is doubly irregular.				wolf	*wúlfaz	323
 1525	v ɔ l f	*wúlfaz	v ɔ l f ( - - )	vɔlf	Wolf	418	German					wolf	*wúlfaz	323
 1051	ʋ ɔ n d ə r	*wúndrą	ʋ ɔ n d ə r ( - - )	ʋɔndər	wonder	288	Dutch	MT				wonder	*wúndrą	324
 1050	ʋ ʌ n d ə	*wúndrą	ʋ ʌ n d ə r ( - - )	ʋʌndə	wonder	288	English	MT				wonder	*wúndrą	324
@@ -1433,7 +1433,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1049	v ʊ n d ə r	*wúndrą	v ʊ n d ə r ( - - )	vʊndər	Wunder	288	German	MT				wonder	*wúndrą	324
 1486	ʋ ɔ l	*wúllo	ʋ ɔ l -	ʋɔl	wol	407	Dutch					wool	*wúllo	325
 1485	ʋ ʊ l	*wúllo	ʋ ʊ l -	ʋʊl	wool	407	English					wool	*wúllo	325
-2300	w u l l	*wúllō	ʋ ʊ l -	ʋʊl	wull	407	Old_English	EXCEPTION: u-lowering blocked near labials (Luick §78, R/T §2.3.1, Brunner §68). FST outputs regular woll; attested wull is genuine lexical exception.	See DEV_NOTES §NWGmc-u-lowering-exceptions.			wool	*wullō	325
+2300	w u l l	*wúllō	ʋ ʊ l -	ʋʊl	wull	407	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): regular sound change from *wúllō gives **woll (Stiles 2012 §4.1.1.2 env. (b): low *ō triggers a-umlaut). Campbell §115 explicitly lists 'full' as an exact morphological parallel exception, with OHG 'foll' as the regular outcome. Unlike wulf/fugol/bucc/rust, wull is a fem. ō-stem with no paradigm cell containing high *i/*ī/*j to escape via env. (a) — every cell has a back-vowel ending. The FST output 'woll' is the correct regular result; attested 'wull' is non-derivable in this FST.	See DEV_NOTES §17.10.34.			wool	*wúllō	325
 1484	v ɔ l ə	*wúllo	v ɔ l ə	vɔlə	Wolle	407	German					wool	*wúllo	325
 235	ʋ oː r t	*wúrdą	ʋ oː r t ( - - )	ʋoːrt	woord	65	Dutch					word	*wúrdą	326
 234	ʋ ɜː d	*wúrdą	ʋ ɜː - d ( - - )	ʋɜːd	word	65	English					word	*wúrdą	326

@@ -25990,3 +25990,78 @@ phonological failures.
 4. Commit TSV change.
 
 — end §17.10.34
+
+---
+
+### §17.10.34a Revision: paradigm-cell switch does NOT work — all 5 are documented exceptions
+
+The plan in §17.10.34 was applied (TSV edited; rows 1973/2030/2162/2298
+switched to gen.sg. `*-is` PROTOFORMs). The rebuild + mismatch report
+showed a **regression**: the category count stayed at 36 but the four
+rows now produced `no_output: 4` — i.e. the new PROTOFORMs yielded no
+FST output at all. Probing the current (already-committed) FST directly
+with `flookup` revealed why the strategy is flawed at a deeper level
+than pgrmWord allow-listing:
+
+```
+$ echo wúlfi | flookup -i old_english.bin
+wúlfi	wylf
+```
+
+The FST returns `wylf`, not `wulf`: i-umlaut applies to the *u before
+heavy-syllable i-apocope removes the *i. This is the correct
+lautgesetzlich outcome for a *wulfi input — parallel to *sunniz → synn,
+*bugjan → byċġan, etc.
+
+This reveals the fallacy of the §17.10.34 plan. For a-umlaut to be
+blocked via Stiles env. (a) we need high *i in the next syllable;
+but the very same *i then feeds i-umlaut, fronting the preserved *u
+to *y. **Every paradigm cell** of these words therefore falls into
+one of two traps:
+
+- Cells with low *a / *ō / *ai in next syllable → a-umlaut applies → **wolf, **fogol, **bocc, **rost
+- Cells with high *i / *ī / *j in next syllable → a-umlaut blocked, but i-umlaut applies → **wylf, **fygl, **byċċ, **ryst
+
+There is **no PGmc/NWGmc paradigm cell** from which attested `wulf`,
+`fugol`, `bucc`, `rust` can be derived by regular sound change.
+
+This matches Brunner's own analysis at §230 Anm. (cited in the audit
+at the top of §17.10.34): the attested instr.sg. `wulfe` is not the
+lautgesetzlich outcome of `*wulfi` — Brunner explicitly says i-umlaut
+"has as a rule been levelled away after other cases" (*der i-Umlaut
+ist in der Regel nach den anderen Kasus aufgegeben*). The attested
+instr.sg. `wulfe` is itself an analogical form (umlaut-levelled from
+the `wulf-` stem of the nom.sg.). So invoking `*wulfi` as a lautgesetz-
+lich source for `wulf` doubles the analogy rather than eliminating it.
+
+Campbell §115 is now reread in this light: its list of exceptions
+(`wulf`, `full`, `bucca`, `fugol`) is not a list of "unexplained
+u-retention" to be escaped via paradigm levelling — it is a list of
+words in which the entire paradigm has been analogically reshaped to
+a surface `u` stem, against the regular outcome.
+
+**Conclusion: all five cases are genuine, non-derivable documented
+exceptions — same status as wull.** Lautgesetzlich faithfulness
+requires accepting that the FST cannot derive them. The correct action
+per `skills/be-lautgesetzlich.md` is to **not** invent a non-existent
+paradigm-cell source; instead, document them in the NOTE column and
+leave them as mismatches.
+
+**Action taken**: reverted the TSV edits for rows 1973/2030/2162/2298
+(PROTOFORM/TOKENS/COUNTERPART restored to committed values); rewrote
+each NOTE to cite §17.10.34 and Campbell §115 as documented
+exceptions. Row 2300 (wull) kept its §17.10.34 note. All five now
+surface in the mismatch report bucket
+`vowel_quality__u_lowering_exception`, properly categorised.
+
+**Skill-file implication**: the `skills/mismatch-loop.md` gate is
+working — §17.10.34 was written before the TSV edit, but the flaw
+(Brunner's levelling caveat) was present in a passing line of the
+source audit and was not weighed against the chronology. Future loops
+should **verify the lautgesetzlich chain end-to-end** (all rules up to
+the target stage, not just a-umlaut) before committing to a paradigm-
+cell switch. A probe of the trial PROTOFORM through the compiled FST
+(§3 of `skills/fst-build-and-tokenize.md`) as part of the §17.10.34
+plan would have caught this before the TSV edit.
+
+— end §17.10.34a

@@ -29,6 +29,28 @@ some mismatches"
 > Do not mark `loop-NN-devnotes` done until the section is appended to
 > `DEV_NOTES.md` and (preferably) committed. Do not start
 > `loop-NN-implement` until then.
+>
+> ### ⛔ Paradigm-cell-switch sub-gate
+>
+> If the proposed fix involves switching the PROTOFORM to a different
+> paradigm cell (e.g. nom.sg. → gen.sg., infinitive → past-ptc, etc.),
+> you MUST verify end-to-end lautgesetzlichkeit **by probing the trial
+> PROTOFORM through the already-compiled FST with `flookup`** before
+> writing the implementation step of the DEV_NOTES section. Example:
+>
+> ```
+> $ echo 'wúlfi' | flookup -i backend/old_english.bin
+> wúlfi	wylf
+> ```
+>
+> If the FST output is not the attested OE target string, the proposed
+> cell is NOT lautgesetzlich for that word — usually because a rule
+> downstream of the blocking rule (e.g. i-umlaut after a-umlaut-
+> blocking) also applies. Abandon the cell switch; the word is a
+> documented exception, not a paradigm-cell candidate. (See
+> DEV_NOTES §17.10.34a for a worked example: the u-lowering
+> "exceptions" cluster where every cell traps into either a-umlaut
+> (low V → wolf) or i-umlaut (high V → wylf).)
 
 The mismatch loop is the project's standard work cycle: pick a
 PROTOFORM that the FST gets wrong, decide what's wrong, fix it
