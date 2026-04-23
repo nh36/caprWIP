@@ -1,27 +1,26 @@
-Total mismatches: 35
+Total mismatches: 34
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      2
+  TSV/data fixes needed:      3
   Documented exceptions:       5
-  Phonology (core buckets):    5
-  Phonology (other buckets):   23
+  Phonology (core buckets):    4
+  Phonology (other buckets):   22
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
-  breaking_missing__expected_ie: 1
   long_vowel_missing: 3
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
   front_expected_back_out: 1
-  epenthetic_vowel_missing: 2
+  epenthetic_vowel_missing: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_high: 1
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
-  breaking_extra__wrong_form: 1
+  breaking_extra__wrong_form: 2
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
   a_restoration_needed: 1
@@ -50,9 +49,6 @@ breaking_missing__expected_eo_got_e (1):
   >> LIKELY: Breaking rule missing this context or ordered wrong
   >> ACTION: Check *e before r/l/h in breaking environments
 
-breaking_missing__expected_ie (1):
-  *xáwwją -> hew (expected hīeġ)
-
 long_vowel_missing (3):
   *bō -> bu (expected bā]] [[þā)
   *mízdō -> meord (expected mēd)
@@ -68,8 +64,7 @@ final_vowel_extra (2):
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
 
-epenthetic_vowel_missing (2):
-  *stráwjaną -> strewan (expected strewian)
+epenthetic_vowel_missing (1):
   *θístilaz -> þistl (expected þistel)
 
 gemination_extra (2):
@@ -94,8 +89,9 @@ breaking_extra__ie_for_e (1):
 breaking_extra__ie_for_i (1):
   *θréjez -> þrīe (expected þrī)
 
-breaking_extra__wrong_form (1):
+breaking_extra__wrong_form (2):
   *xláxjaną -> hliehan (expected hlæhhan)
+  *stráwjaną -> strīeian (expected strewian)
   >> ISSUE: Breaking difference plus consonant skeleton mismatch
   >> LIKELY: TSV proto/target are different lexemes or form classes
   >> ACTION: Verify TSV alignment; likely needs different proto

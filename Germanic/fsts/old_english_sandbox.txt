@@ -66,7 +66,9 @@ define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterNasalSpirantLoss
 # ============================================================================
 # Stage 5: Anglo-Frisian and Early OE Vowel Changes - lines 2310-2324
 # ============================================================================
-define OESandboxAfterAuFronting OESandboxAfterNWGmcPreconsonantalXLoss
+define OESandboxAfterAwjGlideFormation OESandboxAfterNWGmcPreconsonantalXLoss
+    .o. OEAwjGlideFormation;
+define OESandboxAfterAuFronting OESandboxAfterAwjGlideFormation
     .o. OEAuFronting;
 define OESandboxAfterWWSimplification OESandboxAfterAuFronting
     .o. OEWWSimplification;
@@ -323,6 +325,10 @@ regex OESandboxAfterNWGmcPreconsonantalXLoss;
 save stack old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin
 
 # Stage 5: Anglo-Frisian and Early OE
+clear stack
+regex OESandboxAfterAwjGlideFormation;
+save stack old_english_sandbox_after_awj_glide_formation.bin
+
 clear stack
 regex OESandboxAfterAuFronting;
 save stack old_english_sandbox_after_au_fronting.bin

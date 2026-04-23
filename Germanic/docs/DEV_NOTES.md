@@ -26233,3 +26233,751 @@ derivation and the consensus Continental form.
 4. Commit + push.
 
 — end §17.10.35
+
+
+§17.10.36 strewian / streowian / strēawian / strēgan: opinio-communis audit + lautgesetzlich-stretch analysis
+==============================================================================================================
+Date: 2026-04-23
+TSV row: 2227
+Bucket: epenthetic_vowel_missing (1 case)
+Status: AUDIT — no TSV/grammar change yet; awaiting decision on options below.
+
+Mismatch (initial state)
+------------------------
+PROTOFORM `*stráwjaną` (Class I weak); current FST output `strewan`;
+TSV target `strewian`. The FST loses *j after the heavy *aw-diphthong
+root (the regular Sievers / heavy-stem Class I behavior that gives
+*andijaz → ende, *witijam → wite). No -i- survives in the
+lautgesetzlich Class I infinitive, hence the bucket label.
+
+Sister-form audit
+-----------------
+Probed via Docker `flookup -i old_english.bin`:
+
+  *strawjaną    → strewan
+  *sawjaną      → sewan
+  *siwjaną      → sīewan
+
+The grammar consistently produces `-Vwan` for `-Vwjaną` heavy-stem
+Class I inputs.
+
+Opinio communis on the etymology
+--------------------------------
+**1. PGmc reconstruction.** Universal across the major reference
+works — this is a Class I weak verb in *-jan-:
+
+| Source                | Reconstruction         | Class    |
+|-----------------------|------------------------|----------|
+| Wiktionary            | `*strawjaną`           | I weak   |
+| Kroonen (2013) p.483  | `*straujan-`           | I weak   |
+| Orel (2003) p.381     | `*strawjanan`          | I weak   |
+| Ringe-Taylor vol.2    | `*strawjanǭ`           | I weak   |
+| Kluge-Seebold s.v. streuen | `*strewjan-`     | I weak   |
+
+The *aw / *au / *ew / *au-jan / *aw-jan variation across these
+reconstructions is purely notational: PGmc *u and *w are
+positionally allophonic, and the *e- vs *a-grade reflects different
+ablaut analyses but converges on the same Class I weak structure.
+The cognate evidence is decisive: **Gothic straujan** is
+unambiguously Class I (the *-jan- suffix), and Gothic is the most
+archaic Gmc witness for verbal morphology.
+
+**2. OE treatment in the etymological dictionaries.** Kroonen, Orel,
+and Wiktionary all gloss OE forms (`stréowian` / `streáwian` /
+`strewian`) as *direct reflexes* of the Class I PGmc verb, **without
+flagging any morphological/phonological problem**. This is the bare
+lemma-to-lemma cognate-set treatment.
+
+**3. The dissenting voices: Ringe-Taylor and Campbell.**
+
+Ringe-Taylor vol.2 §6.1 (p. 247, lines 14271-14272) traces the full
+phonological chain explicitly:
+
+   PGmc *strawjanǭ
+   > PWGmc *strawwjan       (West Gmc gemination)
+   > *straujan              (j → palatal glide before i)
+   > *strēajan              (i-umlaut + breaking → ēa)
+   > **Angl. strēgan**      (j-strengthening → g; see Hall p. 32698:
+                             "strégan see streowian")
+
+R/T then state explicitly (vol.2 fn. 27, lines 14977-14980):
+
+  "A WS class II weak verb **streowian** is well attested and **must
+  reflect remodelling of the inherited class I verb**. It seems
+  possible that strewede is actually a class II form..."
+
+Campbell §753.7 (OEG p.329) gives the same diagnosis from a different
+angle — all WS forms (`strewian`, `streowian`, `stréawian`) are
+analogically rebuilt, with `streowian` reflecting Class I → Class II
+transference (cf. footnote chain §753.6 fn. 2, fn. 4 covering
+`eowian`, `siowian`, `spiowian` as the same class of `-w-` verbs).
+
+So Campbell + R/T together give a clear, consistent dissenting
+analysis that the etymological dictionaries paper over:
+
+  PGmc Class I `*strawjanǭ`
+    → (regular sound change in Anglian)
+       Anglian OE `strēgan` (attested, poetic, e.g. Sea 97)
+    → (Class I → Class II morphological transference, OE-specific)
+       NWGmc `*strawōjan-` / `*strewōjan-`
+    → (regular sound change from the Class II input)
+       WS `streowian` / `strewian` / `strēawian` (all attested)
+
+**4. Why the etymological dictionaries don't reconstruct Class II.**
+Because Gothic straujan and the other early WGmc cognates (OHG
+strewen, OS strōian, etc.) all require PGmc Class I. The Class II
+forms are an OE-internal (or, per R/T fn. 27, possibly NWGmc-shared)
+**morphological** development — they are not part of the inherited
+PGmc verb, just a secondary remodeling that affected this particular
+verb. R/T and Campbell document the remodeling; Kroonen/Orel/
+Wiktionary's lemma-to-lemma cognate-set format doesn't have a slot
+to record it.
+
+Longest lautgesetzlich stretch
+------------------------------
+The Class I → Class II transference is a non-Neogrammarian
+morphological event that interrupts the lautgesetzlich trajectory.
+The longest unbroken lautgesetzlich stretch from PGmc Class I
+`*strawjanǭ` to an actually attested OE form is therefore:
+
+  **PGmc *strawjanǭ → ... → Anglian OE `strēgan`** (R/T vol.2 §14271)
+
+This is the entire PGmc-to-OE phonological chain, with no
+morphological intervention. The Anglian dialect preserves the
+inherited Class I verb; West Saxon has remodeled it.
+
+For the post-transference path:
+
+  Pre-OE Class II `*strawōjan-` → WS `strēawian` (lautgesetzlich
+  from the post-transference NWGmc input; ~5-step chain via
+  *aw → ēa breaking + Class II *-ōjan- → -ian)
+
+is also lautgesetzlich, but it begins after the morphological
+transference, so the stretch is shorter and the input is not the
+"inherited" PGmc form.
+
+FST coverage probe
+------------------
+Per the skill's paradigm-cell sub-gate, all viable PROTOFORM
+candidates were probed before any TSV edit:
+
+  *strawjaną    → strewan       (Class I — yields hypothetical, not attested)
+  *strawōjaną   → strēawian    ✓ (Class II — attested WS variant)
+  *strawjōną    → strewen       (no OE match)
+  *straujaną    → strīeian      (no OE match)
+  *strawjanǭ    → strewene      (no OE match)
+  *strēajan(ą)  → +?            (not in pgrmWord allow-list)
+  *strēġaną     → +?            (not in pgrmWord allow-list)
+
+The grammar already produces:
+  • Class II `strēawian` from `*strawōjaną` (lautgesetzlich).
+  • Hypothetical `strewan` from `*strawjaną` (lautgesetzlich Class I
+    infinitive — but this surface form is not attested in OE for
+    this verb because of the Class II transference).
+
+The grammar does NOT currently produce the Anglian form `strēgan`
+(R/T's chain involves a *j → *g strengthening rule after long
+diphthong + before *i, which the OE grammar does not currently
+encode — it loses *j instead).
+
+Options for resolving the mismatch
+----------------------------------
+
+**Option A: post-transference Class II input → strēawian (1 attested target swap)**
+   - PROTOFORM `*stráwjaną` → `*stráwōjaną`
+   - COUNTERPART `strewian` → `strēawian`
+   - PROTO column: leave as `*strāwjaną` to preserve the PGmc
+     opinio-communis reconstruction (PROTO = etymological;
+     PROTOFORM = FST input post-transference).
+   - NOTE: cite Campbell §753.7 + R/T fn.27; explain Class I → II
+     remodeling.
+   - **Lautgesetzlich stretch covered**: post-transference NWGmc → WS OE.
+   - **Cost**: 2 TSV fields change; no grammar work.
+   - **Mismatch impact**: 35 → 34.
+
+**Option B: Anglian-target with grammar extension → strēgan (longest stretch)**
+   - Keep PROTOFORM `*stráwjaną` (PGmc Class I, opinio communis).
+   - COUNTERPART `strewian` → `strēgan` (Anglian dialect, attested in
+     Hall p.32698; R/T vol.2 §14271 derive it lautgesetzlich).
+   - Grammar: add j → g strengthening rule per R/T's
+     `*strēajan → strēgan` step. Need to scope carefully so it
+     doesn't overgenerate (likely conditioned on heavy diphthong +
+     *j + *a/*i sequence after i-umlaut feeding).
+   - **Lautgesetzlich stretch covered**: ENTIRE PGmc Class I → OE
+     Anglian (longest possible; matches R/T's published chain).
+   - **Cost**: 1 TSV field + grammar extension (new rule, regression
+     risk for other -wj- verbs; would need careful scoping).
+   - **Mismatch impact**: 35 → 34 if the rule scopes cleanly.
+
+**Option C: documented exception (no field change)**
+   - Like §17.10.34a (u-lowering exceptions): FST output `strewan`
+     is the philologically correct Class I reflex; OE attested form
+     is non-derivable by sound law alone (Campbell + R/T explicit).
+   - NOTE updated to cite Campbell §753.7 + R/T fn.27 framing the
+     mismatch as a documented Class I → II morphological exception.
+   - **Lautgesetzlich stretch covered**: PGmc Class I → hypothetical
+     `*strewan` (which is correct phonology but not attested in OE).
+   - **Cost**: 0 field changes; no grammar work.
+   - **Mismatch impact**: 35 stays at 35; documented-exception
+     accounting bucket grows by 1.
+
+Recommendation
+--------------
+Option A is the lowest-risk fix that maps to an attested form by
+regular sound change end-to-end. It explicitly encodes the
+Class I → II transference Campbell + R/T document, splits the
+representation cleanly (PROTO = PGmc opinio communis;
+PROTOFORM = post-transference FST input), and avoids grammar
+extensions whose side-effects on other -wj- verbs (sewjaną etc.)
+would need separate validation.
+
+Option B is the philologically richest because it covers the entire
+lautgesetzlich trajectory R/T published, but the cost is real:
+adding a j → g strengthening rule needs careful conditioning and
+will likely interact with the existing j-loss machinery. If we want
+to model R/T's chain anyway as a grammar capability (it would
+benefit other -auj- and -awj- inputs), Option B is the strategic
+move; if not, Option A captures most of the value.
+
+Option C is the safe fallback if both A and B feel like overreach
+for a single mismatch.
+
+— end §17.10.36 (audit-only; no TSV/grammar change yet)
+
+
+§17.10.36 — additional documentation: scope of R/T's j → g strengthening rule
+-----------------------------------------------------------------------------
+
+User question (2026-04-23): "Is this rule specific to Anglian? Does
+it affect other words, whether in our data or not?"
+
+Dialect distribution
+~~~~~~~~~~~~~~~~~~~~
+
+The rule is **NOT Anglian-specific**. R/T vol.2 §6.1 gives parallel
+chains across all major OE dialects, with dialect-specific *output*
+shapes (breaking on/off, i-umlaut output) but the *j → *g
+strengthening step itself is general OE:
+
+| PGmc/PWGmc input         | WS         | Mercian    | Northumbrian  | R/T cite      |
+|--------------------------|------------|------------|---------------|---------------|
+| *awjō 'island'           | íeġ        | —          | (Angl.) éġ    | §14264-14266  |
+| *hawja 'hay'             | hīeġ       | hēġ        | hēġ           | §14268-14269  |
+| *kawjan / *kaw'wjan 'call' | cieġan   | cēġan      | ceiga         | §14274-14275  |
+| *strawjanǭ 'strew'       | (rebuilt)  | (rebuilt)  | (Angl.) strēgan | §14271-14272 |
+
+Every dialect that fed the chain through to the OE stage produces a
+form with -g-/-ġ- (or *-i̯- → -i-/-y- in late changes). The dialect
+variation is in the **vowel** (WS shows breaking → ēa → ie via
+i-umlaut; Anglian/Mercian skip breaking → ē). The j-strengthening
+step is shared.
+
+Note: WS shows the rule for *nouns* (íeġ, hīeġ, cieġan) but not for
+the *strawjanǭ verb specifically, because the WS verb was
+**morphologically remodelled** (Class I → Class II) BEFORE the
+j-strengthening could fire on it, leaving streowian/strewian/strēawian
+without the regular -g-. Anglian preserved the verb in Class I long
+enough for the regular sound change to apply, hence Angl. strēgan.
+This is exactly the dialect+morphology interaction R/T fn.27
+documents.
+
+Affected forms in our TSV
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Probed all rows where PROTOFORM contains *Vw+j or *Vw+w sequences:
+
+  Row  PROTOFORM         Current FST    Target           Status
+  ──── ───────────────── ─────────────  ─────────────── ─────────────
+  1961 *báugijaną        bīeġan         bīeġan          ✓ already correct
+                                                          (via existing *gj→ʤ)
+  1976 *kéwwaną          ċēowan         ċēowan          ✓ no *j present
+  1989 *dáwwō            dēaw           dēaw            ✓ no *j present
+  2061 *xáwwją           hew            hīeġ            ✗ MISMATCH
+                                                          (R/T §6.1 case)
+  2074 *xáwwaną          hēawan         hēawan          ✓ Class VII strong, no *j
+  2116 *láugō            lēag           lēag            ✓ no *j present
+  2142 *néwun            nēowon         nigon           ✗ different issue
+                                                          (numeral; *néwun has no *j)
+  2186 *skáwōjaną        sċēawian       sċēawian        ✓ Class II *-ōjan-: *ō
+                                                          intervenes between *w and *j
+  2198 *smérwijaną       smierwan       smierwan        ✓ heavy ja-stem, j-loss correct
+  2227 *stráwjaną        strewan        strewian        ✗ MISMATCH (R/T §6.1 case)
+  2288 *wíduwōn          widowe         widuwe          ✓ no *j; vowel-quality issue
+  2298 *wúlfaz           wolf           wulf            ✓ unrelated (u-lowering)
+  2308 *júgunθ           ġeoguþ         ġeoguþ          ✓ no *j after vowel
+  2317 *skáwô            sċēawa         sċēawa          ✓ no *j; Class II noun
+  2318 *skáwōθi          sċēawaþ        sċēawaþ         ✓ Class II 3sg; *ō intervenes
+
+Summary:
+  - **2 mismatches potentially resolved** by adding the rule: rows
+    2061 (hīeġ) and 2227 (strēgan).
+  - **13 currently-correct forms with similar surface material
+    confirmed safe**: either the *j is not present (Class VII strong
+    *aww-, *eww- verbs and *Vw- nouns), or *ō intervenes between *w
+    and *j (Class II *-ōjan-), or the form is already handled by an
+    existing rule (*gj→ʤ for *báugijaną).
+
+Rule scope
+~~~~~~~~~~
+
+The structural environment per R/T §6.1 is:
+
+   stressed *a + *w (+ *w from WGmc gemination) + *j + unstressed V
+
+→  *a + *w + *j (after WGmc *ww simplification before *j) →
+   stressed *au + *j →
+   stressed *ēa + *j (i-umlaut + breaking) →
+   stressed *ē + *g + V (j-strengthening + monophthongization)
+
+The implementation rule needs to convert *j → *g in the environment
+" *aw _ V" (after WGmc-gemination simplification) before
+OEJLossAfterHeavy fires. This is a NARROW environment: only
+*aw+j (and its post-gemination form *aww+j) feeds the rule; *aw+w,
+*aw+a, *Vw without following *j, and Class II *-ōj- are all
+untouched.
+
+No data-set forms outside rows 2061 and 2227 match the trigger
+environment. Outside the data set, the rule would also affect any
+hypothetical *kawj-, *hawj-, *awj-, *strawj-, *brawj- inputs — i.e.
+the small closed class of *Vw-j heavy-stem ja-/jan-stems that R/T
+explicitly enumerate. None of those other inputs appear in the TSV.
+
+Regression risk assessment
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Risk            Source                                    Likelihood
+  ──────────────  ────────────────────────────────────────  ──────────
+  Class II verbs  *skáwōjaną (row 2186) — *ō between        VERY LOW
+                  *w and *j blocks rule                     (rule won't fire)
+  Class I *gj/*kj *báugijaną (row 1961) — already handled   NONE (different
+                  by existing *gj→ʤ; rule is *aw+j only      input shape)
+  Class VII       *kéwwaną, *xáwwaną — no *j present         NONE
+  Other *Vw       *dáwwō, *láugō — no *j present             NONE
+  i-umlaut        Rule fires on *au+j; subsequent breaking   LOW (relies on
+                  to *ēa is already in OE grammar             existing rules)
+
+The *only* failure mode that needs care: ensuring the rule precedes
+OEJLossAfterHeavy (line 2308), so *j survives long enough to be
+strengthened to *g. After strengthening, *g is not subject to *j-loss.
+
+Implementation plan (post-audit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--------------------------------------------------------------
+WITHDRAWN. The "single-rule" sketch below was based on a too-
+shallow reading of R/T. After re-reading R/T vol.2 §3.2.4
+(lines 3762-3781) and §6.1 (lines 14260-14275), it is clear
+that no single *j → *g rewrite captures what R/T document,
+and no source justifies a one-step *aw + *j → ē/ēa + g change.
+The actual literature-backed chronology is laid out in the
+new sub-section §17.10.36-chronology below; the simple sketch
+is preserved here only to mark the previous error.
+
+      (withdrawn) define OEAwjStrengthening [
+          {*j} -> {*g} || {*a} {*w} _ ,
+          {*j} -> {*g} || {*a} {*w} {*w} _
+      ];
+--------------------------------------------------------------
+
+§17.10.36-chronology — Literature-backed staged chronology
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Re-grounded in R/T vol.2 (with Campbell §§120-121, §407 cross-
+checked). Each stage is cited; nothing is invented.
+
+STAGE 1 — PWGmc *w-gemination before *j
+   R/T vol.2 §3.2.4 (lines 3700-3760, esp. 3730-3760):
+   "gemination of all consonants except *r by *j" — this
+   includes *w (R/T explicitly cite OHG houwi, gistrouwen as
+   gemination outcomes for *hawja, *strawjanǭ at lines
+   3770-3774). So PNWGmc *awj → PWGmc *aw'w' is a regular
+   step that should hold for all *Vw + *j inputs.
+
+   FST status: PWGmcJGemination (line 1480) currently
+   geminates {p,b,t,d,k,g,f,s,m,n,l,ŋ} but NOT *w. R/T's
+   inventory is "all except *r" (and *z); *w is included.
+   This is a *missing* rule clause in our PWGmc gemination.
+
+STAGE 2 — Pre-OE *aw'w' → *auj (gemination reversed before *j
+          when preceded by *a)
+   R/T vol.2 §3.2.4, lines 3762-3781 (the critical passage):
+
+       "When the preceding vowel was *a the usual OE outcome
+        seems to reflect not *aw'w' but *auj, with *j
+        surviving and the diphthong developing normally"
+
+       "a sequence of changes PNWGmc *awj > PWGmc *[aw'w'] >
+        pre-OE *[auj] can have occurred, and I suggest that
+        that is exactly what happened. This solution is in
+        principle the same as that of Campbell 1962: 46"
+
+   R/T cite Campbell §46 in support, and call this a
+   "reversal" of the gemination (degemination + revocalization
+   to *u). The OE outcomes that follow (*éaj, eventually ég
+   /ieg/cég etc.) all start from the *auj stage, NOT from
+   *aw'w'.
+
+   FST status: this rule does not exist. *strawjaną, *xawwją
+   are currently fed forward as *aw + *j and *aww + *j
+   respectively; nothing converts them to *au + *j.
+
+STAGE 3 — *au → *éa (existing breaking machinery)
+   R/T vol.2 §6.6.1 (i-umlaut of diphthongs); the chain
+   *auj → *éaj at lines 14264-14275 (R/T §6.1):
+
+       PGmc *awjō → ... > *auju > *éaju (umlauted) > ...
+       PGmc *strawjanǭ → ... > *straujan > *stréajan > ...
+
+   *au is i-umlauted to *éa by the following *j (R/T treat
+   this as a single i-umlaut step on the diphthong, parallel
+   to *éa → *íe).
+
+   FST status: existing OEAuFronting (*au → *aeu) +
+   OEDiphthongLeveling (*aeu → *ēa) handle *au → *ēa
+   generally, but this happens unconditionally, not as
+   "i-umlaut by *j". For our purposes the net effect is the
+   same — *au always becomes *ēa in the FST — so as long as
+   stage 2 has fired, the existing rules will produce *ēaj.
+
+STAGE 4 — j-strengthening: pre-OE *éaj → *éag
+   R/T vol.2 §6.1, lines 14264-14275: chain ends with -g/-ġ
+   in all four parallel cases (ég/hég/cég/strégan in Anglian;
+   ieg/hieg/ciegan in WS). Campbell §266 (palatal glide *j
+   → *g/[ġ] after diphthong, "consonantalization of *j to
+   palatal stop"). Hogg 1992 §3.27, fn.
+
+   The strengthening is conditioned by the preceding diphthong
+   (*éa specifically — not just any vowel; cf. Campbell §266's
+   restriction). The output *g is palatalized in OE
+   orthography to ġ when followed by a front vowel.
+
+STAGE 5 — Dialect split: Anglian smoothing vs WS i-umlaut
+   R/T vol.2 §6.1 lines 14264-14275 explicitly list:
+
+       *awjō:        WS ieg,   Angl. ég
+       *hawja:       WS hieg,  Merc./North. hég
+       *kawjan:      WS ciegan, Kent./Merc. cégan, North. ceiga
+       *strawjanǭ:   (WS rebuilt as Class II), Angl. strégan
+
+   Two different dialect-specific reflexes of *éa+g:
+     - WS: *éa undergoes i-umlaut to *íe (still triggered by
+       the *j that has not yet fully merged with the new *g,
+       OR by the high-front feature of the new palatal *g
+       itself); output ie+ġ.
+     - Anglian: *éa undergoes "Anglian smoothing" to *é
+       before the new (palatal) *g; output é+g.
+
+   R/T do not give a unified rule for this split — the WS
+   outcome has *éa → *íe (a normal i-umlaut of the diphthong,
+   per OEIUmlautDiphthong), and Anglian smoothing is its own
+   well-known dialectal rule (Campbell §§222-233, esp. §225
+   on smoothing of *éa → *é before c/g/h).
+
+   FST status: existing OEIUmlautDiphthong already handles
+   *ēa → *īe before triggers (line 2258); it would fire if
+   stage 4 left a *j (or any IUmlautTrigger) between *éa and
+   the rest of the word at the moment i-umlaut runs. Anglian
+   smoothing is NOT modeled in the FST. Our FST is "WS-default"
+   in dialect choice elsewhere.
+
+What this means for our two targets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Target 1: row 2061 *xáwwją → hīeġ (WS).
+    WS pathway (stages 1-5):
+      *xawwją (input already has *aww, stage 1 vacuous)
+      → stage 2 → *xaują
+      → stage 3 → *xēają
+      → stage 4 → *xēag(j)ą
+      → stage 5 (WS) → *xīegą → hīeġ ✓
+    Reachable with stages 2, 4 added (stages 1, 3, 5-WS exist).
+
+Target 2: row 2227 *strawjaną → strēgan (Anglian).
+    Anglian pathway (stages 1-5):
+      *strawjaną → stage 1 → *strawwjaną
+      → stage 2 → *straujaną
+      → stage 3 → *strēajaną
+      → stage 4 → *strēag(j)aną
+      → stage 5 (Anglian smoothing) → *strēganą → strēgan ✓
+    Reachable only if stage 5-Anglian (smoothing of *éa → *é
+    before *g) is added.
+
+    WS pathway would yield (predicted but unattested):
+      *strawjaną → ... → *strīeganą → strīegan
+    R/T explicitly say WS lacks the regular reflex (verb
+    remodelled to streowian).
+
+The dialect-mixing problem
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Our TSV target for row 2227 is the Anglian form (strēgan),
+because no WS regular reflex exists. Our TSV target for row
+2061 is the WS form (hīeġ). A single deterministic FST cannot
+straightforwardly produce both unless either:
+
+   (a) we add Anglian smoothing as a general rule and accept
+       that other *ēa+g/*ēa+c forms in the corpus will smooth
+       too (regression risk to be surveyed: cnēoris, dēag,
+       sēag, etc.), or
+   (b) we change the row 2227 target to predicted WS
+       *strīegan and document this as "predicted regular WS
+       reflex; attested form is morphologically remodelled
+       streowian", forgoing the Anglian attestation, or
+   (c) we leave row 2227 as a documented exception (no
+       grammar change), and only add stages 1-2 to fix row
+       2061 (hīeġ), netting one fix instead of two.
+
+Open questions for the user
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q1. Stage 1 fix: should PWGmcJGemination be extended to
+    include *w, given R/T's explicit "all except *r" wording?
+    (This is a literature-backed addition independent of the
+    strewian/strēgan question.)
+
+Q2. Stage 2: how should the *aw'w' → *auj reversal be
+    formulated? R/T describe it as a chronological
+    "reversal" — engineering-wise we can either skip
+    gemination of *w before *j (single-rule short-circuit),
+    or fully gemination-then-reversal in two rules (more
+    faithful to R/T's stated chronology but more code).
+
+Q3. Stage 5 dialect choice: A vs B vs C above? This is the
+    consequential decision — A introduces a new dialect-
+    specific rule with regression surface, B abandons the
+    Anglian-only attestation in favour of a predicted-only
+    WS form, C scopes the fix down to just hīeġ.
+
+NO IMPLEMENTATION until Q1-Q3 are resolved.
+
+— end §17.10.36 audit-supplement (rewritten 2026-04-23 to be
+  literature-backed and to flag the dialect-mixing problem)
+
+§17.10.36-research — Multi-source research on Q1 and Q2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To resolve Q1 (did PWGmc *w gem before *j?) and Q2 (how to
+formulate the gemination/reversal in the FST?), three parallel
+research probes were run over: (i) English grammars (Campbell,
+Hogg, Fulk); (ii) German grammars (Brunner, Luick, Bülbring,
+Kaluza); (iii) dedicated articles and etymological dictionaries
+(Erdmann 1972, Kroonen, Orel, Kluge-Seebold, Streitberg).
+
+Below: source-by-source verbatim positions, then synthesis
+showing that the literature is genuinely divided into two
+camps, but that the two camps CONVERGE on the same FST-relevant
+intermediate (*au + *j as the input to OE-stage rules) — so the
+engineering choice between them is essentially notational.
+
+1. Camp A — gemination-then-reversal (Kögel-Luick-R/T tradition)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* BRUNNER (1965) §227, lines 8908-8924:
+    "Westgermanische Gemination vor j: Alle einfachen
+     Konsonanten außer r werden nach kurzem Vokal vor folgendem
+     j in den westgermanischen Sprachen gemindert"
+    ('all simplex consonants except *r are doubled after short
+     vowel before following *j'). *w not excepted ⇒ included.
+  Brunner §408 Anm.12 (line 16472) reconstructs *kaw(w)jan
+  with parenthesized geminate notation, signalling an
+  intermediate *w'w'.
+
+* LUICK (1921) §97, lines 6873-6917; §98 Anm.2 (lines
+  6914-6917):
+    "Daß in den Fällen mit ursprünglichem a den altenglischen
+     Formen -auwj- und nicht -auj- zugrunde liegt (so zuerst
+     R. Kögel, PBB 9, 533), ist nicht strikte zu erweisen,
+     aber nach der ganzen Sachlage wahrscheinlich."
+    ('That in cases with original *a the OE forms reflect
+     -auwj- and not -auj- (first proposed by R. Kögel,
+     PBB 9, 533) cannot be strictly proven, but is probable
+     given the overall situation.')
+  This is the LOCUS CLASSICUS: Luick attributes the proposal
+  to Kögel 1884, calls it "probable" (wahrscheinlich) but
+  explicitly admits it is "not strictly provable" (nicht
+  strikte zu erweisen). R/T's analysis is descended from this
+  Luick-Kögel proposal.
+
+* BÜLBRING (1902) §540, lines 10255-10276:
+    "Dehnung vor j … ist bei allen Konsonanten außer r
+     eingetreten" ('Doubling before *j … occurred with all
+     consonants except *r'). *w not excepted ⇒ included.
+
+* CAMPBELL (1959) §407, line 10872:
+    "W. Gmc. consonant doubling is particularly strongly
+     developed before j, every consonant except r being
+     affected after short syllables."
+  Campbell §120.2 (lines 3946-3957) uses the cryptic notation
+  "auj > auut" which most readers (including R/T) take as
+  shorthand for an intermediate gemination + reversal.
+
+* RINGE-TAYLOR (2014) vol.2 §3.2.4, lines 3762-3781: the
+  fullest modern statement of this position; explicitly cites
+  Campbell §46 ("This solution is in principle the same as
+  that of Campbell 1962: 46").
+
+2. Camp B — no gemination of *w before *j; *u was always a
+   glide (Fulk; etymological dictionaries by implication)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* FULK (2018) §4.10 fn.1, lines 4968-4973 (the strongest
+  recent dissent):
+    "It is difficult to imagine how w could have remained
+     consonantal in forms like *strawjanan and *niwjaz (cf.
+     Go. stráujan, niujis), and at all events WGmc.
+     *strauwjan should be expected to have developed not to
+     EWS *strīegan but to *strīewjan > *strīewan (§6.15).
+     See also §6.10 on the unlikelihood of the dismantling
+     of geminates in this fashion. Rather, EWS *strīegan
+     may be derived unproblematically from PGmc.
+     *straujanan, and OE nīewe may be assumed to have
+     undergone the same sort of paradigm regularization
+     that affected words like OE þēow, gen. þēowes
+     'servant' (§7.12)."
+  Three arguments here: (a) Gothic stráujan, niujis show the
+  underlying form already had *u (glide), not consonantal *w;
+  (b) if a true *strauwjan existed, it should give OE
+  *strīewan, not *strīegan; (c) "dismantling" geminates
+  (R/T's pre-OE reversal) is independently unlikely.
+
+* HOGG (1992) §3.3.3.1, lines 4456-4457: "all the consonants
+  except / / / and the approximants /j,w/ could be doubled"
+  in OE — explicitly excludes /w/ from gemination at the OE
+  stage. Doesn't directly address PWGmc, but signals
+  reluctance to treat *w like other consonants.
+
+* KROONEN (2013): reconstructs *straujan- (single *u, no
+  gemination), *kaujan- (single *u). Geminate *ww in
+  *hawwan- (the strong verb 'to hew') is original — it is
+  the BASE of the noun *hauja-, not an intermediate
+  gemination of a single *w by a *j suffix.
+
+* ORE L (2003): reconstructs *strawan / *strawjanan (single
+  *w throughout); *xawwjan with *ww but inherited from base
+  *xawwanan (matching Kroonen's analysis). No
+  gemination-by-*j machinery posited.
+
+* KLUGE-SEEBOLD (24th edn): reconstructs *strawa- (single
+  *w), *haw-ja- (single *w; the ja-noun derived from the
+  geminate strong verb *haww-a- but with regular reduction
+  of geminate). Again, no gemination triggered by *j.
+
+* ERDMANN (1972) — the article devoted to "Suffixal j in
+  Germanic" — is silent on *w + *j; it discusses gemination
+  of nasals and stops only.
+
+* STREITBERG (1896) — pre-Kögel; treats gemination as a
+  general phenomenon without distinguishing *w cases.
+
+3. Synthesis: where the two camps actually agree
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Camp A says: PNWGmc *aw + *j → PWGmc *aw'w' + *j → pre-OE
+*au + *j (gemination then reversal).
+
+Camp B says: PNWGmc/PGmc *au + *j → pre-OE *au + *j (no
+gemination ever; the underlying form had *u all along).
+
+BOTH camps reach the same intermediate stage just before
+the OE-stage sound changes: *au + *j (or, equivalently,
+*aw + *j written with *u as a glide). From that stage
+onward they agree on the chronology:
+
+    *au + *j  →  *éa + *j  (i-umlaut+breaking; existing FST
+                            machinery handles this via
+                            OEAuFronting + OEDiphthongLeveling)
+              →  *éa + *g  (j-strengthening; new rule needed)
+              →  dialect-conditioned smoothing/umlaut
+                            (still open in Q3)
+
+The disagreement is ONLY about pre-PWGmc / PWGmc internal
+chronology (was there a transient *w'w' stage?). For an
+FST whose grain begins at PGmc and runs to OE, the two
+camps prescribe the same input to the OE rules.
+
+4. Recommendation on Q1 and Q2 (engineering-realistic, honest)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q1 RECOMMENDATION: Do NOT add *w to PWGmcJGemination as a
+general rule.
+
+  Rationale:
+   * The literature is genuinely divided. Brunner, Luick,
+     Bülbring, Campbell, R/T say YES; Fulk explicitly says NO;
+     Hogg signals NO at the OE stage; etymological dictionaries
+     do not engage. Luick himself (the closest thing to a
+     locus classicus) calls the gemination "not strictly
+     provable" (nicht strikte zu erweisen).
+   * Even within Camp A, the *w'w' stage is immediately
+     reversed before *j when preceded by *a (which is
+     precisely the only environment where it would matter
+     for our corpus). Adding gemination then reversal is two
+     rules to model what amounts to a no-op for OE outcomes.
+   * Adding *w to general PWGmcJGemination risks regressions
+     on any short-vowel + *w + *j input we have NOT yet
+     surveyed (e.g. *niwjaz 'new', *triwją 'tree', *frawjō
+     'lord'); each would need a corresponding reversal clause
+     to avoid bad outcomes.
+
+Q2 RECOMMENDATION: Implement the *aw + *j → *au + *j step
+as a SINGLE pre-OE rule (Fulk-style short-circuit), formally
+neutral between Camp A and Camp B.
+
+  Rationale:
+   * Both camps converge on *au + *j as the OE-stage input.
+     Whether we got there via gemination + reversal (Camp A)
+     or via "the *u was a glide all along" (Camp B), the
+     single rewrite *aw + *j → *au + *j captures the net
+     effect.
+   * One rule instead of two; narrowly scoped (only *aw + *j
+     and *aww + *j contexts, NOT general *Cw + *j); no
+     impact on other gemination outcomes elsewhere in the
+     pipeline.
+   * Fulk explicitly endorses the direct derivation
+     ("*strīegan may be derived unproblematically from
+     PGmc *straujanan"); Luick explicitly admits the
+     gemination-and-reversal is unprovable; R/T explicitly
+     describe their *aw'w' as transient and immediately
+     reversed before *j. Engineering this as one
+     rewrite is consistent with all three.
+
+  Proposed rule (provisional; only stages 1-2 of the chain;
+  stages 4-5 still pending Q3):
+
+      define OEAwjGlideFormation [
+          {*a} {*w} {*w} {*j} -> {*a} {*u} {*j},
+          {*a} {*w}      {*j} -> {*a} {*u} {*j}
+      ];
+
+  Then the existing OEAuFronting (*au → *aeu) and
+  OEDiphthongLeveling (*aeu → *ēa) handle stage 3 unchanged.
+  Stage 4 (j-strengthening *j → *g after *éa) is a new
+  narrow rule. Stage 5 (dialect smoothing vs i-umlaut) is
+  the still-open Q3.
+
+  Citations to attach to the new rule in fsts/germanic.txt:
+   * R/T vol.2 §3.2.4 lines 3762-3781 (Camp A account)
+   * Fulk §4.10 fn.1 lines 4968-4973 (Camp B account)
+   * Luick §98 Anm.2 lines 6914-6917 (Kögel 1884 originator
+     attribution and Luick's "wahrscheinlich aber nicht
+     strikte zu erweisen" caveat)
+   * Note: rule is engineering-equivalent under both camps;
+     does NOT take a position on the disputed PWGmc
+     internal chronology.
+
+  REGRESSION SURFACE: This rule fires on any *aw + *j or
+  *aww + *j sequence in the pipeline. Before adopting it,
+  re-survey the 15 *Vw+*j rows already documented in the
+  audit-supplement above (rows 2061, 2227, plus the 13
+  confirmed-safe forms) and verify that none of the
+  confirmed-safe forms acquire wrong outputs. The narrow
+  context (*a precedence required) should keep impact
+  minimal — *e/*i/*o/*u + *w + *j are not touched.
+
+Q3 REMAINS OPEN. Once Q1+Q2 are resolved with the above
+recommendation, the Q3 dialect question (Anglian smoothing
+vs WS i-umlaut for stage 5) becomes the only remaining
+decision. Proceed only after user confirmation of this
+research synthesis.
+
+— end §17.10.36-research
