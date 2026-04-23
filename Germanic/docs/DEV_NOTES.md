@@ -25260,3 +25260,185 @@ and would require auditing every rule that currently operates on
 6. No rule changes, no bin rebuild of sources outside the TSV pipeline.
 
 — end §17.10.29
+
+---
+
+### §17.10.30 Case 4 — sharpened source audit: is `*fundanaz → funden` lautgesetzlich?
+
+Responding to the user's challenge: §17.10.29 equivocated slightly, and
+the user asked for a much sharper picture. This section reports a
+deeper pass through `docs/references/` looking specifically for
+explicit statements on whether the strong past participle's `-en`
+ending is a regular outcome of `PGmc *-anaz` or an analogical transfer
+from the oblique cells. Each source is quoted, located, and classified
+**EXPLICIT-ANALOGICAL / EXPLICIT-REGULAR / IMPLICIT / NO-POSITION**.
+
+#### 1. Campbell (1959) §334 — EXPLICIT-ANALOGICAL
+
+> "Unlike the accented vowel, unaccented *a > *æ before a nasal
+> consonant if this did not belong to the same syllable, and this *æ
+> could be transferred to forms where vowel and nasal belonged to the
+> same syllable. Thus CH `hefæn-`, `heben`, are due to infl.
+> `*hevenes`, &c. This is the origin of OE `-en` when absence of
+> umlaut shows it not to be from `-in`, and when it is not due to
+> parasiting, e.g. **strong pass. parts. in `-en` (still often `-an`
+> in Ep.)**."
+> — Campbell §334, our line 9393 area.
+
+Unequivocal. Sound-law outcome of `*fundanaz` is `*fundan`; the common
+OE form `funden` is analogical from obliques where *n was
+heterosyllabic. The Epinal `-an` forms are residual evidence of the
+regular development.
+
+#### 2. Luick (1914 ff.) §301,3 — EXPLICIT-ANALOGICAL
+
+> "`*hebanæs, -æ` gen. dat. 'Himmels, Himmel' **und danach auch nom.
+> `hefæn`** (Hymn. Cädm.) […] und namentlich die starken part. prät.:
+> **Ep. `abundan`** 'gebunden', `-scribæn` bestimmt, `zibeataen`
+> geschlagen"
+> — Luick §301,3, our line 16160–16176.
+
+"Danach auch nom." ("also in the nominative **afterwards**, on that
+model") is as explicit as analogy language gets. The unmarked form is
+the oblique outcome; the nominative `hefæn` — and, by explicit
+extension, the strong past-participle nom.sg. — is remade on its
+pattern. Luick's Epinal citations are identical in force to
+Campbell's: the sound-law nom.sg. is `-an`, attested in our oldest
+text.
+
+#### 3. Brunner (1965) §366, Anm. 3 — EXPLICIT-ANALOGICAL
+
+Brunner is perhaps the sharpest of the three:
+
+> "Das gemeinae. `-en` entspricht teils einem frühae. `-æn` aus germ.
+> `-an`, idg. `-on-` **unter Verallgemeinerung der in flektierten
+> Kasus eingetretenen Entwicklung** (§ 44, Anm. 3, 2); teils einem
+> frühae. `-in` (germ. `-in` aus idg. `-en-`, das zu `-on-` im
+> Suffixablaut, § 141, 2, steht). Die beiden Formen kommen in den
+> ältesten Texten noch nebeneinander vor, z. B. Corp. `binumine`, Ep.
+> `forsle^inum` neben **Ep. `gibæn`, `asolcæn`, `gibeatæn`, `awunden`
+> usw.**"
+> — Brunner §366 Anm. 3, our line 13995–14003.
+
+"Unter Verallgemeinerung der in flektierten Kasus eingetretenen
+Entwicklung" = "under the generalization of the development that took
+place in the inflected cases". This is precisely an analogical-
+transfer statement. Brunner then gives the exact same Epinal
+citations as Luick (adding `*awunden` — where `u` is from inter-stress
+raising, not the medial-vowel issue — and `gibeatæn`).
+
+Brunner §141,2 confirms the segregation: "ansonsten ist die a- (idg.
+o-) Stufe mit ae. `-en` aus `-æn` (§ 366, 2) durchgeführt" —
+"otherwise the a-grade with OE `-en` from `-æn` has been carried
+through." "Carried through" (*durchgeführt*) is morphological levelling
+language, not sound-law language.
+
+#### 4. Ringe & Taylor, vol. 2 (2014) — NO-POSITION / CHRONOLOGY IMPLIES ANALOGICAL
+
+R/T nowhere explicitly address whether the strong past ptc nom.sg.
+`-en` is regular or analogical. Their §5.1.2 examples of unstressed
+*a-fronting before heterosyllabic *n are:
+
+- **Infinitive** `*bindana > bindan` (coda, nasalised): our line 9001
+- **Present participle** `*bindandi > bindændi > bindende` (onset,
+  fronted): same passage
+
+Strong past ptps are conspicuously absent from this list. Their
+passing derivation `*siwanaz > *siween > OE ā-siowen` (line 10874)
+skips the intermediate stages and does not tell us when fronting
+fires relative to apocope.
+
+Now apply R/T's own chronology. In vol. 2 §4.1.2 (our line 3348 ff.)
+R/T give the PWGmc final-vowel sequence:
+
+1. loss of *-z after unstressed vowels;
+2. loss of word-final *-a and *-ą.
+
+**Both steps are PWGmc**, i.e. they precede any specifically OE rule,
+including OE unstressed-*a fronting before heterosyllabic *n. So by
+the time fronting can apply, `*fundanaz` has already been reduced to
+`*fundan` — *n is now in coda, the nom.sg. fails the onset-*n
+condition, and the medial *a nasalises but does not front. The
+regular nom.sg. outcome is `*fundan`. R/T's own chronology therefore
+implies analogy for the standard OE `funden`, even though they do not
+say so explicitly.
+
+Classified NO-POSITION on the surface; **CHRONOLOGY-IMPLIES-
+ANALOGICAL** on careful reading. R/T's silence is not evidence for
+regularity — it is silence.
+
+#### 5. Fulk (2018) — NO-POSITION
+
+Fulk's comparative grammar discusses the tautosyllabic/heterosyllabic
+nasal distinction generally (our line 4111) but does not take an
+explicit position on the strong past ptc nom.sg. in OE specifically.
+Searching for `past participle.*-en`, `-anaz.*-en`, `regenerat`,
+`fronted in the oblique` yielded nothing targeted to this question.
+Classified NO-POSITION.
+
+#### 6. Bülbring, Kaluza, Hogg — NO EXPLICIT HIT
+
+Greps against `bulbring_altenglisches_elementarbuch.txt`,
+`kaluza_historische_grammatik_englisch.txt`, and `hogg_vol1.txt` for
+the targeted strings did not surface explicit passages on the
+regular-vs-analogical status of strong-ptc `-en`. Absence of an
+explicit statement is not evidence either way; what matters is that
+no source in our library **denies** the Campbell/Luick/Brunner
+analogical account.
+
+#### 7. The opinio communis
+
+| Source | Classification |
+|---|---|
+| Campbell §334 | EXPLICIT-ANALOGICAL |
+| Luick §301,3 | EXPLICIT-ANALOGICAL |
+| Brunner §366 Anm. 3, §141,2 | EXPLICIT-ANALOGICAL |
+| R/T vol. 2 §5.1.2 + §4.1.2 chronology | NO-POSITION on surface; chronology implies analogical |
+| Fulk | NO-POSITION |
+| Bülbring, Kaluza, Hogg | NO explicit position found |
+
+**There is no source in our reference library that claims, explicitly
+or implicitly, that `funden` is the lautgesetzlich nom.sg. outcome of
+`*fundanaz`.** Three major handbooks (Campbell, Luick, Brunner)
+explicitly classify it as an analogical transfer from the oblique
+cells. The fourth (R/T) is silent on the surface but whose stated
+chronology positively demands the analogical analysis. The opinio
+communis is unanimous for **analogy**.
+
+#### 8. Consequence for §17.10.29
+
+§17.10.29's decision to adopt Path α (paradigm-cell PROTOFORM
+substitution, using `*fúnðanǭ` acc.sg.m. or an equivalent oblique
+cell) is the only lautgesetzlich choice available to us. Path β
+(adding a structural secondary-nasalisation rule that would make
+`-en` fall out by rule from `*fundanaz`) is not supported by **any**
+author in our library and would require us to reject R/T's explicit
+PWGmc chronology. Path β is therefore withdrawn definitively and
+should not be revisited without new primary-source evidence.
+
+The `be-lautgesetzlich` skill already warns (step 2, "check sources
+for the opinio communis, do not invent a rule whose support is
+weaker than the paradigm-cell alternative"). This section is a live
+worked example of that discipline.
+
+#### 9. Implementation plan (unchanged from §17.10.29)
+
+1. Row 2011 of `Germanic/data/germanic-aligned-final.tsv`: change
+   PROTOFORM from `*fúnðanaz` (nom.sg.m.) to an oblique cell whose
+   medial *a sits in a fronting environment (n in onset). Candidates:
+   acc.sg.m. `*fúnðanǭ`, dat.sg.m. `*fúnðanammai`, or any inflected
+   case whose medial *n is intervocalic. Prefer `*fúnðanǭ` for minimal
+   deviation from the existing PROTOFORM.
+2. Retain target `funden`.
+3. Add a COMMENT (or inline note) citing Campbell §334 / Luick §301,3
+   / Brunner §366 Anm. 3: "nom.sg. `-en` analogical from obliques;
+   using acc.sg.m. paradigm cell as Lautgesetzlich input."
+4. Run `Germanic/tools/oe_full_trace_report.py` over the new
+   PROTOFORM to confirm the stage-by-stage trace reaches `funden`.
+5. Run `Germanic/tools/oe_mismatch_report.py`; expect 37 → 36.
+
+No rule changes; no `*ã` introduction; no chronology tweaks. This is a
+pure data fix of exactly the kind `be-lautgesetzlich` §5 (paradigm-
+cell precedent) was written to codify.
+
+— end §17.10.30
