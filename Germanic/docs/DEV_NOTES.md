@@ -25719,3 +25719,89 @@ philological fact described by Campbell §334 / Luick §301,3 / Brunner
 FST.
 
 — end §17.10.32
+
+
+### §17.10.33 Diphthong consistency audit — `OEBackMutation` unified to `{*eo}`/`{*ea}`/`{*éo}`
+
+**Motivation.** Survey of `fsts/germanic.txt` found that the project's
+declared diphthong inventory (`PGmcStarDiphthong`, line 514) is
+uniformly **single multichar symbols** (`{*eo}`, `{*ēa}`, `{*éo}`,
+…) — 21 symbols total, short/long × plain/stressed. Every
+diphthong-producing rule in the pipeline emits a single multichar
+symbol that matches this inventory, with one exception:
+`OEBackMutation` (previously lines 2355–2360) emitted **decomposed
+symbols** `{*e}{*o}`, `{*e}{*a}`, `{*é}{*o}`, with an inline comment
+"Use separate symbols … for proper pipeline handling." The comment
+provided no justification and no cross-reference.
+
+**Why the decomposition was wrong.** Back umlaut/back mutation is
+phonologically diphthong formation — the entire literature (R/T vol. 2
+§6.9.4; Campbell §§205–211; Hogg 1992 §5.107ff.; Brunner §§103–111)
+treats the output as a short diphthong on a par with breaking
+products. Breaking (`OEBreaking`, lines 1540–1577) correctly emits
+unified `{*ea}`, `{*eo}`, `{*éa}`, `{*éo}`. The decomposed output in
+back mutation was invisible to the alias `EnglishStarDiphthong`
+(line 865 = `PGmcStarDiphthong`), which meant the back-mutation output
+did **not** trigger downstream rules keyed on diphthongs — most
+importantly the heavy-syllable apocope patterns at lines ~2523,
+~2536, ~2569, ~2589 (`{*u}/{*i} → 0 / EnglishStarDiphthong …`) and
+the contraction/leveling rules at lines 2636–2644 (`{*eo}{*a} →
+{*ēo}` etc.). This was a silent inconsistency: back-mutated forms
+quietly bypassed rules that applied to every other diphthong.
+
+**Sources on back mutation producing a true diphthong.**
+- R/T vol. 2 §6.9.4: "short *e, *i, *æ develop a back glide … the
+  resulting [ea], [eo], [io] are short diphthongs."
+- Campbell §205: "u/a-umlaut … produces the short diphthongs io, eo,
+  ea."
+- Hogg 1992 §5.107: "back umlaut creates the diphthongs /eo, io, ea/
+  out of the preceding short front vowel + [u ̯]."
+- Brunner §103 Anm. 1: back mutation outputs the same short diphthongs
+  that breaking and palatal diphthongisation produce.
+
+No source we surveyed treats the output as a vowel–glide sequence
+with intervening consonantal structure or as a disyllabic hiatus
+cluster.
+
+**Change.** `fsts/germanic.txt` lines 2355–2360:
+
+```foma
+define OEBackMutation [
+    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+];
+```
+
+(Previously: emitted split `{*e}{*o}`, `{*e}{*a}`, `{*é}{*o}` with
+an unexplained "proper pipeline handling" note.)
+
+**Probe result.** Mismatch count **36 → 36** (unchanged). Exactly one
+case moved between buckets:
+
+| PROTOFORM | Before | After | Target |
+| --- | --- | --- | --- |
+| `*spéru` | `speoru` (`breaking_extra__eo_for_e`) | `speor` (`final_vowel_missing__weak_noun_like`) | `spere` |
+
+This is diagnostic, not a regression: the unified `{*éo}` from back
+mutation now correctly feeds `OEHighVowelApocope` (line 2523,
+`{*u} → 0 / EnglishStarDiphthong OEAnyConsonant+ _ .#.`), so the
+final `*u` apocopates as it does after every other diphthong. Before
+the change the split `{*é}{*o}` was invisible to that rule and the
+`*u` was retained. Neither output matches the attested target
+`spere`, but the post-change output is on the correct phonological
+trajectory — it just exposes a separate, latent issue (light-stem
+neuter ja-stem paradigm-cell handling for `spere`) that is out of
+scope here. No other mismatch changed.
+
+No other back-mutation case shows any change in output.
+
+**Status.** Implemented. Mismatch count unchanged at 36, but the
+pipeline is now internally consistent with respect to the diphthong
+inventory, and back-mutation outputs are correctly visible to all
+downstream diphthong-keyed rules (apocope, contraction, i-umlaut of
+diphthongs, etc.). The `*spéru → speor` divergence from the target
+`spere` is logged as a latent light-stem ja-stem paradigm-cell issue
+for a future iteration.
+
+— end §17.10.33
