@@ -3,6 +3,33 @@
 **Invocation:** "mismatch loop", "run a mismatch pass", "let's pick off
 some mismatches"
 
+> ## ⛔ STOP — HARD GATE BEFORE ANY EDIT
+>
+> **No edit to `germanic.txt`, `*.tsv`, or any pipeline file may be
+> proposed until a draft of the §17.10.X DEV_NOTES section for this
+> iteration exists on disk.**
+>
+> The reasoning, sources, and proposed change MUST be written into
+> `Germanic/docs/DEV_NOTES.md` first — not just discussed in chat.
+> Source-audit notes typed into the chat thread are NOT a substitute
+> for the DEV_NOTES draft. (See "Anti-patterns" at the end.)
+>
+> Recommended SQL gate at the start of each iteration:
+>
+> ```sql
+> INSERT INTO todos (id, title, description) VALUES
+>   ('loop-NN-devnotes',  'Draft §17.10.X for [PROTOFORM]', '...'),
+>   ('loop-NN-implement', 'Apply rule/TSV change for [PROTOFORM]', '...'),
+>   ('loop-NN-verify',    'Rebuild + report + commit',    '...');
+> INSERT INTO todo_deps (todo_id, depends_on) VALUES
+>   ('loop-NN-implement', 'loop-NN-devnotes'),
+>   ('loop-NN-verify',    'loop-NN-implement');
+> ```
+>
+> Do not mark `loop-NN-devnotes` done until the section is appended to
+> `DEV_NOTES.md` and (preferably) committed. Do not start
+> `loop-NN-implement` until then.
+
 The mismatch loop is the project's standard work cycle: pick a
 PROTOFORM that the FST gets wrong, decide what's wrong, fix it
 Lautgesetzlich-ly, prove the fix doesn't regress anything else, write

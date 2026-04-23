@@ -25805,3 +25805,188 @@ diphthongs, etc.). The `*spéru → speor` divergence from the target
 for a future iteration.
 
 — end §17.10.33
+
+
+### §17.10.34 Cluster: u-lowering "exceptions" (wulf, fugol, bucc, rust, wull) — paradigm-cell switch for 4/5
+
+**Mismatch bucket.** `vowel_quality__u_lowering_exception` — five OE
+forms in the report where the FST applies regular NWGmc a-umlaut of
+*u (R/T vol. 2 §2.3.1 / Stiles 2012 §4.1.1.2) and outputs *o, but the
+attested OE form retains *u:
+
+| PROTOFORM | FST output | Target |
+| --- | --- | --- |
+| `*búkkaz` | `bocc` | `bucc` |
+| `*fúglaz` | `fogol` | `fugol` |
+| `*rústō` | `orst` | `rust` |
+| `*wúlfaz` | `wolf` | `wulf` |
+| `*wúllō` | `woll` | `wull` |
+
+#### Source audit — is there a lautgesetzlich rule that gives these?
+
+**Stiles 2012 "Older Runic evidence for North-West Germanic a-umlaut
+of u" §4.1.1.2 (Environments).** Stiles distinguishes three
+environments for the change:
+
+> (a) High vowel: before i, ī, (iu) and j in the following syllable,
+>     **and when the intervening consonantism starts with a nasal,
+>     regardless of the vocalism of the following syllable.**
+> (b) Low vowel: before short a, long ō (and long ā …).
+> (c) Neutral: before u, ū, and ē (also short e …). Also when
+>     nothing followed (in monosyllables).
+
+Per Stiles, the only blocker is **a nasal-initial intervening
+consonant cluster** (env. (a)). Geminates, labial onsets, and liquid
+clusters do *not* block. None of our five cases has a nasal-initial
+intervening consonantism after the *u (`-kk-`, `-gl-`, `-st-`, `-lf-`,
+`-ll-`).
+
+**Campbell §115.** Campbell makes the situation completely explicit:
+
+> u > o before mid and low vowels. In OE forms this change occurs with
+> considerable regularity, e.g. dohtor daughter, god god, gold gold,
+> geoc yoke … and passive participles of strong verbs of Classes II,
+> III, and IV, e.g. coren, boren, holpen. **There are, however, many
+> exceptions in OE, which have preserved u, very often where other
+> West Gmc. languages, especially OHG, have o, e.g. full full, fugol
+> bird, bucca buck, wulf wolf, ufan from above, OHG foll, fogal,
+> boch, wolf, obana.** Even within OE itself, there is variation in
+> some words, e.g. cnocian knock, spora spur, spornan spurn, beside
+> cnucian, spura, spurnan.
+
+Campbell §115 lists by name **four of our five** cases (`full`,
+`fugol`, `bucca`, `wulf`) as **exceptions** to regular u-lowering; he
+explicitly contrasts them with the regular OHG outcomes that match
+what our FST currently produces (`fogal, boch, wolf`). He attributes
+no further phonological conditioning. Campbell §116 adds that
+nasal+C blocks lowering — exactly Stiles' env. (a) — but otherwise
+lists no further blockers.
+
+**Brunner §68 (Altenglische Grammatik 1965).** Brunner notes the same
+exceptions and observes that the **inflected cells with high vowel
+in the next syllable** (instr.sg. *wulfi*, gen.sg. *wulfes* < *-is*)
+regularly retain *u — the i-umlaut/a-umlaut blocking environment of
+Stiles env. (a). Brunner: "Instr. der mask. und neutr. o-Stämme
+wulfe aus wulfi (der i-Umlaut ist in der Regel nach den anderen Kasus
+aufgegeben)" (§239 / cf. §68 on the labial wulf~wolf dichotomy).
+Brunner's account is explicitly that the OE nom.sg. `wulf` is an
+**analogical levelling from the oblique cells** with high vowel.
+
+**Luick §105–6** (cited at germanic.txt:1773 already): "u retained
+near labials in specific lexical items (full, wulf, fugol, bukkaz),
+but this is irregular."
+
+**Conclusion of source audit.** All four sources converge:
+
+1. The regular NWGmc/pre-OE sound law applied to nom.sg. `*wulfaz`
+   etc. produces `*wolf` etc., as our FST correctly does.
+2. The attested OE forms `wulf, fugol, bucca, wull, rust` retain *u
+   for non-phonological reasons — typically analogical levelling from
+   oblique cells where the high vowel in the next syllable blocked
+   a-umlaut by env. (a).
+3. There is **no consensus rule** that we could add to the FST to
+   produce `wulf` from `*wúlfaz` lautgesetzlich. Sources that propose
+   labial-conditioned blocking (Luick, scattered) explicitly call it
+   "irregular"; the systematic accounts (Stiles, Campbell, Brunner)
+   say the lexemes are exceptions, not products of a rule.
+
+#### Why no FST rule change
+
+Adding a labial- or geminate-conditioned blocker to `NWGmcULowering`
+(germanic.txt:1782) would:
+
+- Contradict Stiles 2012 §4.1.1.2 explicitly.
+- Contradict Campbell §§115–116 explicitly.
+- Cause regressions in correctly-derived forms with similar
+  environments: e.g. the strong-verb past-participle class `*boranaz
+  → boren` (labial *b*, no nasal coda) — exactly the case Campbell
+  §115 cites as **regular**. A "block before labials" rule would
+  break `boren` and many other class II/III/IV PPs.
+- Violate `skills/be-lautgesetzlich.md`: "favour the consensus over a
+  workaround that contradicts the consensus."
+
+#### Chosen approach: paradigm-cell switch for 4/5 (per §17.10.32)
+
+The strategy used for §17.10.32 (`*fúnðanǭ → fundene` instead of
+`*fúnðanaz → funden`) applies exactly here for 4/5 cases. The OE
+**gen.sg.** of these masculine a-stems has the suffix `*-is` (PIE
+*-eso → PGmc *-iso → NWGmc *-is → OE *-es*); the high vowel `*i` in
+the next syllable is canonical Stiles env. (a) → a-umlaut of *u is
+**regularly blocked**. Switching the PROTOFORM from nom.sg. `*-az` to
+gen.sg. `*-is` and the target from the (analogical) bare stem to the
+attested gen.sg. (`wulfes, fugles, bucces, rustes`) produces the
+attested form by **regular sound change** with no rule change:
+
+| Row | Old PROTOFORM → target | New PROTOFORM → target | Rationale |
+| --- | --- | --- | --- |
+| 2298 | `*wúlfaz → wulf` (analogical) | `*wúlfis → wulfes` (gen.sg., regular) | Stiles env. (a) |
+| 2030 | `*fúglaz → fugol` (analogical, parasite vowel) | `*fúglis → fugles` (gen.sg., regular) | Stiles env. (a); also avoids parasite-vowel cell |
+| 1973 | `*búkkaz → bucc` (analogical) | `*búkkis → bucces` (gen.sg., regular) | Stiles env. (a) |
+| 2162 | `*rústō → rust` (wrong stem class — OE rust is masc. a-stem per BT) | `*rústis → rustes` (gen.sg. of *rústaz, regular) | Stiles env. (a); also corrects stem class |
+
+For row 2162 (`rust`), the existing PROTOFORM `*rústō` (ō-stem,
+fem.) is also incorrect: BT s.v. *rust* gives "m. (-es; pl. -as)
+RUST". The cognate-set headword in the PROTO column is
+correspondingly updated from `*rustō` to `*rústaz`.
+
+The cognate-set headword `*wúlfaz / *fúglaz / *búkkaz` is preserved
+in the PROTO column for rows 2298, 2030, 1973 — only the
+cell-specific PROTOFORM (which feeds the FST) changes. This matches
+the convention established in §17.10.32: PROTO = etymological
+headword (cognate-set anchor); PROTOFORM = the specific paradigm
+cell whose OE outcome the row attests.
+
+#### Why row 2300 (wull) is left alone
+
+OE `wull` is a feminine ō-stem; the entire ō-stem paradigm has back
+vowels (`-ō, -ai, -ǭ, -ōz, -ǭ, -ōmaz, -ōz, -ōmiz`). There is no cell
+with high *i/*ī/*j in the next syllable that we could use as a
+regular-sound-change escape hatch; every cell is in Stiles env. (b)
+(low vowel) or env. (c) (back vowel — neutral, but ō is bimoric, see
+§4.1.1.2 examples). So `wull` cannot be retargeted to a regular cell.
+
+Per `skills/be-lautgesetzlich.md` "Documenting genuine exceptions",
+the row is left as `*wúllō → wull`, with the NOTE field expanded to
+record that:
+
+- Stiles 2012 §4.1.1.2 env. (a) does not apply (no nasal cluster);
+- Campbell §115 lists `full` (the exact morphological parallel) as a
+  named exception, with OHG `foll` as the regular outcome;
+- the OE form is therefore a non-derivable exception in this FST and
+  the predicted FST output `woll` is the correct *regular* result;
+- the count of "documented exceptions" in the mismatch report rises
+  by 1 (`wull`) and the count in `vowel_quality__u_lowering_exception`
+  drops by 4.
+
+This is fully consistent with `skills/be-lautgesetzlich.md`'s
+guidance that genuine non-derivable exceptions are named in the row
+NOTE and tallied as "documented exceptions" rather than treated as
+phonological failures.
+
+#### Predicted impact
+
+- 4/5 mismatches resolved by paradigm-cell switch (regular sound
+  change derivation).
+- 1/5 (`wull`) reclassified from "phonological failure" to
+  "documented exception" via NOTE expansion.
+- No rule change. No regression risk for `boren` or any other
+  regular u-lowering target.
+- Mismatch count: 36 → 32 (4 resolved, 1 moves from
+  `vowel_quality__u_lowering_exception` to `documented exceptions`
+  bucket; total down by 4).
+
+#### Implementation order
+
+1. Commit this DEV_NOTES section first (so the rationale is in the
+   git history before the data change).
+2. Edit `Germanic/data/germanic-aligned-final.tsv` rows
+   1973/2030/2162/2298 (TOKENS, PROTOFORM, IPA, COUNTERPART, NOTE);
+   row 2300 (NOTE expansion only). Per `skills/be-lautgesetzlich.md`
+   convention: PROTOFORM = cell-specific FST input; PROTO = cognate
+   headword (preserved as `*wúlfaz`/`*fúglaz`/`*búkkaz`; corrected to
+   `*rústaz` for row 2162).
+3. Re-run `python3 tools/oe_mismatch_report.py`; verify count is 32
+   and only the four target rows changed.
+4. Commit TSV change.
+
+— end §17.10.34
