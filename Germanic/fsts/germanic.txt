@@ -2353,10 +2353,10 @@ define OENasalDissimilation [
 ];
 
 define OEBackMutation [
-    {*e} -> {*e} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*æ} -> {*e} {*a} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
     # Stressed variant (stress preserved on first element):
-    {*é} -> {*é} {*o} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
 ];
 
 # R/T vol.2 §6.9.7: WS palatal umlaut.
