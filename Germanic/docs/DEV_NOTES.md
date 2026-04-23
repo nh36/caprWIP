@@ -25442,3 +25442,179 @@ pure data fix of exactly the kind `be-lautgesetzlich` §5 (paradigm-
 cell precedent) was written to codify.
 
 — end §17.10.30
+
+---
+
+### §17.10.31 Case 4 — two follow-up questions: fundan attestation and why we went to the PP
+
+The user asked two further questions before implementing §17.10.30's fix:
+(1) Is `fundan` itself (nom.sg. strong past ptc of `findan`) attested
+anywhere in early OE? If so, we could simply change the **target** to
+`fundan` and keep the nom.sg. PROTOFORM, avoiding a paradigm-cell
+substitution entirely. (2) Why did this cognate set get mapped to the
+past participle in the first place, when the infinitive is the usual
+headword cell? This section answers both.
+
+#### (1) Is `fundan` attested?
+
+**Direct attestation check — result: not demonstrated from our
+library.**
+
+Method: ran `grep -ciE "\bfundan\b"` over every `.txt` file in
+`docs/references/`. Exactly one hit: `seebold_vergleichendes_
+woerterbuch.txt` line 18274, and that hit is a **Old Saxon** principal
+part (`findan (fidan), fand, fundun, fundan`) — not OE. Seebold's OE
+line (line 18266) gives `findan, fand, fundon, funden`, with `-en`
+only and no variant noted. The Bosworth–Toller supplement passages we
+spot-checked all have `funden`; none shows `fundan` for this verb.
+
+**Indirect / pattern-level evidence — suggestive but not conclusive.**
+
+The general pattern is well documented:
+
+- **Campbell §334** (our line 9395): "strong pass. parts. in -en
+  (still often -an in Ep.)". This is a *general* statement about the
+  class, not a list of specific attested forms.
+- **Brunner §366 Anm. 3** (our line 13995 ff.) gives specific Epinal
+  examples: `gibæn`, `asolcæn`, `gibeatæn`, `awunden`. Note that his
+  fourth example, **`awunden` from `awindan` 'to wind up'**, is the
+  *structurally closest parallel to our case*: a Class III verb with
+  a nasal + voiced stop cluster and u-grade past-ptc root. Brunner's
+  citation shows Epinal has `-en` here, not `-an` — although Brunner
+  is grouping it with the `-æn/-an/-en` family (i.e. the a-grade
+  suffix) rather than the `-in` family. This makes `awunden` a
+  *levelled* form already in Epinal.
+- No corresponding Epinal citation of `fundan` (or `gefundan`,
+  `afundan`, etc.) surfaces in our library. We also checked Hall's
+  concise dictionary (nil), Bright's reader (nil), and the
+  Eighth-Century Latin Glossary edition (nil for `fundan`).
+
+**Assessment.** The general pattern is documented and makes `fundan`
+*plausible* as an early-OE variant, especially in the Mercian /
+Anglian relic layer. But we have **no direct attestation** of
+`fundan` from any source in `docs/references/`. Given that our
+`be-lautgesetzlich` skill demands positive philological support for
+target choices (not just typological plausibility), we cannot simply
+re-target the existing PROTOFORM `*fúnðanaz` to the surface form
+`fundan` on the strength of a general pattern. Doing so would be
+reconstructing an attested-but-unevidenced form to save the rule,
+which is the opposite of the discipline we are trying to enforce.
+
+**Fallback check.** If the user wishes to press further on this, the
+canonical places to look are: the Epinal–Erfurt glossary (Pheifer
+1974, Bischoff et al. 1988), the Corpus glossary (Lindsay 1921), the
+Vespasian Psalter gloss (Kuhn 1965), and the Leiden glossary (Glogger
+1901). None of these is in our `docs/references/` at present. The
+DOE Corpus (`www.doe.utoronto.ca`) would give a definitive answer,
+but we do not query it offline. **Recommendation: treat `fundan` as
+unattested for our purposes unless primary-source access is
+provided**, and proceed with the §17.10.30 paradigm-cell plan.
+
+If the user can provide a specific citation of `fundan` (e.g. "Ep.
+1094" or similar), this section should be revised and the TSV plan
+simplified to: target = `fundan`, PROTOFORM unchanged. That would be
+the minimal-footprint fix.
+
+#### (2) Why did this word get mapped to the past participle in the first place?
+
+Reading the project history (§17.10 area of DEV_NOTES, our lines
+6865–7500), the move from infinitive to past participle was made for
+reasons **completely unrelated** to the medial-vowel question we are
+currently debating. The motivating problem was the
+**Verner's-Law voiced/voiceless dental alternation**, not nasalised
+vs. fronted *a*.
+
+Short history:
+
+1. **Initial state.** Row 2011 of the TSV had `PROTOFORM = *finþaną`
+   (infinitive) → `TARGET = findan` (infinitive). This is the
+   obvious lemma-to-lemma mapping.
+
+2. **Problem discovered** (DEV_NOTES line 6865 ff., heading "OE
+   findan: Verner's Law, NSL, and Paradigm-Cell Mapping"). The FST
+   produces `fīþan`, not `findan`. Trace: PGmc `*finþaną` has
+   voiceless `*þ` after nasal; the Nasal Spirant Lengthening (NSL)
+   rule fires on `*nþ` and yields `*fīþan`.
+
+3. **Etymological diagnosis** (DEV_NOTES line 6943, Kroonen quote).
+   OE `findan` shows the **levelled Verner alternant**: voiced `*d`
+   generalised across the whole paradigm from the pret.pl. and past
+   ptc. cells (where it was regular after Verner's Law) into the
+   present and infinitive (where the regular outcome would have been
+   voiceless `*þ` > `*ð` > something other than `d`). Compare OS
+   `fīðan` beside `findan`, Goth. `finþan` — voiceless in the
+   infinitive is the conservative pattern; voiced is the Ingvaeonic
+   innovation by paradigm levelling.
+
+4. **Consequence.** No PGmc proto-form of the *infinitive* cell will
+   yield OE `findan` by regular sound change, because `findan`'s *d*
+   is analogical. The infinitive's *d* arrived by paradigm-internal
+   levelling from cells where *d* was regular (via Verner's Law
+   voicing after unstressed vowel / before nasal). So the infinitive
+   is constitutively irregular for a Neogrammarian FST.
+
+5. **Options canvassed** (DEV_NOTES lines 7082–7138):
+   - **Option E**: re-target the TSV to a paradigm cell whose *d* is
+     genuinely regular (pret.pl. `*funđunþ → fundon`, or past ptc
+     `*funđanaz → funden`).
+   - **Option F**: use a pre-levelled pseudo-proto `*findaną` (with
+     *d* already in place) as the PROTOFORM.
+   - **Option G**: mark as irregular/analogical in the TSV.
+
+6. **Decision.** Option E with the **past participle** was chosen
+   (DEV_NOTES line 7126 ff.): "Option E (past participle mapping) is
+   the most principled for a Neogrammarian FST that aims to model
+   regular sound change. The past participle has regular *đ from
+   Verner's Law, develops regularly to OE `funden`, avoids the NSL
+   problem entirely." This was committed at §17.10 (see DEV_NOTES
+   around line 7187, "Using true PGmc form `*funðanăz → funden`").
+
+7. **The Verner fix worked.** With `*funðanăz → funden`:
+   - `*ð` is allophonically hardened to `*d` after nasal (PGmc
+     allophony, no analogy needed)
+   - No NSL (NSL targets `*þ`, not `*ð` / `*d`)
+   - The paradigm-cell choice is motivated by Verner's Law
+     chronology and is a textbook example of what
+     `be-lautgesetzlich` §5 (paradigm-cell precedent) endorses.
+
+#### The irony of our current situation
+
+The past ptc nom.sg. was chosen in (6) **specifically to avoid an
+analogical form** (the infinitive's levelled *d*). We ended up on
+the past ptc cell because we believed it was the most
+lautgesetzlich cell in the paradigm — and it *is*, for the
+consonant. But §17.10.28–§17.10.30 have now demonstrated that for
+the **medial vowel** the past ptc nom.sg. is *also* analogical:
+Campbell, Luick, and Brunner unanimously classify the `-en` in
+strong past ptc nom.sg. as a levelling from oblique cells. We
+escaped the consonantal analogy and walked straight into a vocalic
+one.
+
+The §17.10.30 fix (switch PROTOFORM to acc.sg.m. `*fúnðanǭ` or
+another oblique cell) resolves both problems simultaneously:
+
+- `*ð` is still present → regular Verner hardening to `[d]` after
+  nasal (preserves the §17.10 fix).
+- Medial `*a` is intervocalic (n in onset of following syllable) →
+  regular OE fronting applies → `*æ` → `*e`.
+- Heavy-syllable nasal apocope handles the `*ǭ` final vowel.
+- Surface output: `funden`, lautgesetzlich on both fronts.
+
+The oblique cell is thus the *cleanest* cell in the paradigm for
+this verb — cleaner than both the infinitive (levelled consonant)
+and the nom.sg. past ptc (levelled vowel). This is not a
+degradation of our §17.10 decision; it is a refinement of it along
+the same line of reasoning.
+
+#### Action items (carried forward from §17.10.30)
+
+1. Implement the paradigm-cell substitution (acc.sg.m. `*fúnðanǭ`)
+   unless the user supplies direct attestation of `fundan`.
+2. If attestation is supplied, the simpler fix is: keep PROTOFORM
+   `*fúnðanaz`, change TARGET to `fundan`, and note in COMMENT that
+   this is the relic Epinal/Anglian form preserving the regular
+   outcome.
+3. Verify with `oe_full_trace_report.py`; run
+   `oe_mismatch_report.py` before/after (expect 37 → 36).
+
+— end §17.10.31
