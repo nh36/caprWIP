@@ -31,8 +31,9 @@ STAGES: List[Tuple[str, str]] = [
     ("BAllophony", "old_english_sandbox_after_b_allophony.bin"),
     ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
     ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
-    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
+    # NOTE: PWGmcEarlyIApocope now part of WestGermanic stage (Stage 2)
     ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
+    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
     ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
     ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
     ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
@@ -76,17 +77,30 @@ def dedupe_preserve(seq: Iterable[str]) -> List[str]:
 
 
 def run_stage(bin_dir: Path, bin_name: str, form: str) -> List[str]:
-    stage_path = (bin_dir / bin_name).resolve()
-    if not stage_path.exists():
-        raise FileNotFoundError(f"Missing stage binary: {stage_path}")
-    proc = subprocess.run(
-        ["flookup", "-i", str(stage_path)],
-        input=f"{form}\n".encode("utf-8"),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=True,
-    )
-    if proc.stderr:
+    """Run flookup on a stage binary. Uses docker compose exec if bin_dir is /usr/app."""
+    stage_path = bin_dir / bin_name
+    
+    # If bin_dir is container path, use docker compose exec
+    if str(bin_dir) == "/usr/app":
+        proc = subprocess.run(
+            ["docker", "compose", "exec", "-T", "backend", "flookup", "-i", str(stage_path)],
+            input=f"{form}\n".encode("utf-8"),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    else:
+        # Local path - check existence and run directly
+        resolved = stage_path.resolve()
+        if not resolved.exists():
+            raise FileNotFoundError(f"Missing stage binary: {resolved}")
+        proc = subprocess.run(
+            ["flookup", "-i", str(resolved)],
+            input=f"{form}\n".encode("utf-8"),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    
+    if proc.returncode != 0 and proc.stderr:
         sys.stderr.buffer.write(proc.stderr)
     outputs: List[str] = []
     for raw in proc.stdout.decode("utf-8").splitlines():
