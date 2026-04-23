@@ -29,15 +29,22 @@ define OESandboxAfterOEWsPalatalGlide OESandboxAfterNWGmcILowering
     .o. OEWsPalatalGlide;
 define OESandboxAfterNWGmcULowering OESandboxAfterOEWsPalatalGlide
     .o. NWGmcULowering;
-define OESandboxAfterNWGmcUnstressedORaising OESandboxAfterNWGmcULowering
+# MAIN-PIPELINE ORDER (germanic.txt lines 2688-2697):
+# NWGmcULowering → NWGmcFinalLongORaising → PGmcFinalZDeletion
+#   → NWGmcUnstressedORaising → NWGmcMnDissimilation → NWGmcNStemNLoss
+# FinalLongORaising must precede z-loss (ō/ōz distinction), and z-loss
+# must precede ORaising/MnDissim/NStemNLoss so those see a z-free form.
+define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcULowering
+    .o. NWGmcFinalLongORaising;
+define OESandboxAfterPGmcFinalZDeletion OESandboxAfterNWGmcFinalLongORaising
+    .o. PGmcFinalZDeletion;
+define OESandboxAfterNWGmcUnstressedORaising OESandboxAfterPGmcFinalZDeletion
     .o. NWGmcUnstressedORaising;
 define OESandboxAfterNWGmcMnDissimilation OESandboxAfterNWGmcUnstressedORaising
     .o. NWGmcMnDissimilation;
 define OESandboxAfterNWGmcNStemNLoss OESandboxAfterNWGmcMnDissimilation
     .o. NWGmcNStemNLoss;
-define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcNStemNLoss
-    .o. NWGmcFinalLongORaising;
-define OESandboxAfterNWGmcLongELowering OESandboxAfterNWGmcFinalLongORaising
+define OESandboxAfterNWGmcLongELowering OESandboxAfterNWGmcNStemNLoss
     .o. NWGmcLongELowering;
 define OESandboxAfterNWGmcLongENasalRounding OESandboxAfterNWGmcLongELowering
     .o. NWGmcLongENasalRounding;
@@ -49,12 +56,11 @@ define OESandboxAfterNasalSpirantLengthening OESandboxAfterNWGmcLongENasalRoundi
     .o. NWGmcNasalSpirantLengthening;
 define OESandboxAfterNasalSpirantLoss OESandboxAfterNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss;
-# CRITICAL: OEMedUnstressedULowering runs HERE (after NasalSpirantLoss), NOT in Stage 11!
-# Main pipeline line 23: .o. OEMedUnstressedULowering
-# This is U-lowering (different from I-lowering which runs later in Stage 11)
-define OESandboxAfterMedUnstressedULowering OESandboxAfterNasalSpirantLoss
-    .o. OEMedUnstressedULowering;
-define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterMedUnstressedULowering
+# NOTE: OEMedUnstressedULowering moved to AFTER InterStressRaising (Stage 5)
+# to match main pipeline (germanic.txt line 2726). Previous sandbox order
+# (here, after NasalSpirantLoss) diverged from main and made the sandbox
+# unreliable as a debug view. See DEV_NOTES §17.10.28.
+define OESandboxAfterNWGmcPreconsonantalXLoss OESandboxAfterNasalSpirantLoss
     .o. NWGmcPreconsonantalXLoss;
 
 # ============================================================================
@@ -74,7 +80,17 @@ define OESandboxAfterPrefixAReductionEarly OESandboxAfterAwLongDiphthong
     .o. OEPrefixAReduction;
 define OESandboxAfterInterStressRaising OESandboxAfterPrefixAReductionEarly
     .o. OEInterStressRaising;
-define OESandboxAfterAngloFrisianBrightening OESandboxAfterInterStressRaising
+# MAIN-PIPELINE ORDER (germanic.txt lines 2725-2734):
+# InterStressRaising → OEMedUnstressedULowering
+#   → PWGmcFinalBareALoss → PWGmcSurvivingBimoricOUnrounding
+#   → AngloFrisianBrightening
+define OESandboxAfterMedUnstressedULowering OESandboxAfterInterStressRaising
+    .o. OEMedUnstressedULowering;
+define OESandboxAfterPWGmcFinalBareALoss OESandboxAfterMedUnstressedULowering
+    .o. PWGmcFinalBareALoss;
+define OESandboxAfterSurvivingBimoricOUnround OESandboxAfterPWGmcFinalBareALoss
+    .o. PWGmcSurvivingBimoricOUnrounding;
+define OESandboxAfterAngloFrisianBrightening OESandboxAfterSurvivingBimoricOUnround
     .o. AngloFrisianBrightening;
 define OESandboxAfterBreaking OESandboxAfterAngloFrisianBrightening
     .o. OEBreaking;
@@ -262,6 +278,15 @@ clear stack
 regex OESandboxAfterNWGmcULowering;
 save stack old_english_sandbox_after_nwgmc_u_lowering.bin
 
+# Main-pipeline order: FinalLongORaising → PGmcFinalZDeletion → UnstressedORaising
+clear stack
+regex OESandboxAfterNWGmcFinalLongORaising;
+save stack old_english_sandbox_after_nwgmc_final_long_o_raising.bin
+
+clear stack
+regex OESandboxAfterPGmcFinalZDeletion;
+save stack old_english_sandbox_after_pgmc_final_z_deletion.bin
+
 clear stack
 regex OESandboxAfterNWGmcUnstressedORaising;
 save stack old_english_sandbox_after_nwgmc_unstressed_o_raising.bin
@@ -273,10 +298,6 @@ save stack old_english_sandbox_after_nwgmc_mn_dissimilation.bin
 clear stack
 regex OESandboxAfterNWGmcNStemNLoss;
 save stack old_english_sandbox_after_nwgmc_n_stem_n_loss.bin
-
-clear stack
-regex OESandboxAfterNWGmcFinalLongORaising;
-save stack old_english_sandbox_after_nwgmc_final_long_o_raising.bin
 
 clear stack
 regex OESandboxAfterNWGmcLongELowering;
@@ -295,11 +316,8 @@ clear stack
 regex OESandboxAfterNasalSpirantLoss;
 save stack old_english_sandbox_after_nasal_spirant_loss.bin
 
-# OEMedUnstressedULowering runs here (after NasalSpirantLoss), NOT in Stage 11!
-clear stack
-regex OESandboxAfterMedUnstressedULowering;
-save stack old_english_sandbox_after_med_unstressed_u_lowering.bin
-
+# OEMedUnstressedULowering save moved to Stage 5 (after InterStressRaising)
+# to match main pipeline. See DEV_NOTES §17.10.28.
 clear stack
 regex OESandboxAfterNWGmcPreconsonantalXLoss;
 save stack old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin
@@ -332,6 +350,20 @@ save stack old_english_sandbox_after_prefix_a_reduction_early.bin
 clear stack
 regex OESandboxAfterInterStressRaising;
 save stack old_english_sandbox_after_inter_stress_raising.bin
+
+# Main-pipeline order: InterStressRaising → MedUnstressedULowering
+#   → PWGmcFinalBareALoss → PWGmcSurvivingBimoricOUnrounding → AFB
+clear stack
+regex OESandboxAfterMedUnstressedULowering;
+save stack old_english_sandbox_after_med_unstressed_u_lowering.bin
+
+clear stack
+regex OESandboxAfterPWGmcFinalBareALoss;
+save stack old_english_sandbox_after_pwgmc_final_bare_a_loss.bin
+
+clear stack
+regex OESandboxAfterSurvivingBimoricOUnround;
+save stack old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin
 
 clear stack
 regex OESandboxAfterAngloFrisianBrightening;
