@@ -82,11 +82,14 @@ define OESandboxAfterPrefixAReductionEarly OESandboxAfterAwLongDiphthong
     .o. OEPrefixAReduction;
 define OESandboxAfterInterStressRaising OESandboxAfterPrefixAReductionEarly
     .o. OEInterStressRaising;
+# §16.6: strip Nebenton graves after inter-stress raising.
+define OESandboxAfterStripSecondaryStress OESandboxAfterInterStressRaising
+    .o. OEStripSecondaryStress;
 # MAIN-PIPELINE ORDER (germanic.txt lines 2725-2734):
-# InterStressRaising → OEMedUnstressedULowering
+# InterStressRaising → StripSecondaryStress → OEMedUnstressedULowering
 #   → PWGmcFinalBareALoss → PWGmcSurvivingBimoricOUnrounding
 #   → AngloFrisianBrightening
-define OESandboxAfterMedUnstressedULowering OESandboxAfterInterStressRaising
+define OESandboxAfterMedUnstressedULowering OESandboxAfterStripSecondaryStress
     .o. OEMedUnstressedULowering;
 define OESandboxAfterPWGmcFinalBareALoss OESandboxAfterMedUnstressedULowering
     .o. PWGmcFinalBareALoss;
@@ -359,7 +362,11 @@ clear stack
 regex OESandboxAfterInterStressRaising;
 save stack old_english_sandbox_after_inter_stress_raising.bin
 
-# Main-pipeline order: InterStressRaising → MedUnstressedULowering
+clear stack
+regex OESandboxAfterStripSecondaryStress;
+save stack old_english_sandbox_after_strip_secondary_stress.bin
+
+# Main-pipeline order: InterStressRaising → StripSecondaryStress → MedUnstressedULowering
 #   → PWGmcFinalBareALoss → PWGmcSurvivingBimoricOUnrounding → AFB
 clear stack
 regex OESandboxAfterMedUnstressedULowering;

@@ -130,7 +130,8 @@ define pgrmOnset [0 | pgrmOnsetCore];
 
 define pgrmShortVowel [
     a:{*a} | e:{*e} | i:{*i} | o:{*o} | u:{*u} | y:{*y} |
-    á:{*á} | é:{*é} | í:{*í} | ó:{*ó} | ú:{*ú}
+    á:{*á} | é:{*é} | í:{*í} | ó:{*ó} | ú:{*ú} |
+    à:{*à} | è:{*è} | ì:{*ì} | ò:{*ò} | ù:{*ù}
 ];
 
 define pgrmNasalVowel [
@@ -508,7 +509,11 @@ define PGmcStarVowel [
     {*ʉ} |
     {*ʊ} |
     {*ǣ} |
-    {*á} | {*é} | {*í} | {*ó} | {*ú}
+    {*á} | {*é} | {*í} | {*ó} | {*ú} |
+    # Secondary-stress (Nebenton) short vowels — compound second-element
+    # root vowels marked with grave per Luick/Brunner/Bülbring convention.
+    # See DEV_NOTES §16.6.
+    {*à} | {*è} | {*ì} | {*ò} | {*ù}
 ];
 
 define PGmcStarDiphthong [
@@ -580,7 +585,10 @@ define PGmcStarFrontVowel [
     {*ǣ} |
     # Stressed short front vowels:
     {*é} |
-    {*í}
+    {*í} |
+    # Secondary-stress (Nebenton) front short vowels — see §16.6
+    {*è} |
+    {*ì}
 ];
 
 define PGmcStarBackVowel [
@@ -596,7 +604,11 @@ define PGmcStarBackVowel [
     # Stressed short back vowels:
     {*á} |
     {*ó} |
-    {*ú}
+    {*ú} |
+    # Secondary-stress (Nebenton) back short vowels — see §16.6
+    {*à} |
+    {*ò} |
+    {*ù}
 ];
 
 define PGmcStarFrontTrigger [
@@ -823,6 +835,13 @@ define OldEnglishRemoveStars [
     {*í} -> i,
     {*ó} -> o,
     {*ú} -> u,
+    # Belt-and-braces grave stripping (OEStripSecondaryStress should
+    # already have fired by this point; these are safety nets).
+    {*à} -> a,
+    {*è} -> e,
+    {*ì} -> i,
+    {*ò} -> o,
+    {*ù} -> u,
     {*ái} -> a i,
     {*áu} -> a u,
     {*éu} -> e u,
@@ -868,7 +887,9 @@ define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*�
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą} |
-    {*á} | {*é} | {*í} | {*ó} | {*ú}
+    {*á} | {*é} | {*í} | {*ó} | {*ú} |
+    # Secondary-stress (Nebenton) short vowels — §16.6
+    {*à} | {*è} | {*ì} | {*ò} | {*ù}
 ];
 
 define EnglishStarConsonant PGmcStarConsonant;
@@ -1591,7 +1612,29 @@ define OEBreaking OEBreakingA
 # This rule MUST apply BEFORE AFB (which would convert *a → *æ) and BEFORE breaking
 # (which would convert *a → *ea before lC).
 define OEInterStressRaising [
-    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
+    # DEV_NOTES §16.6: Nebenton-conditioned raising of compound
+    # second-element root *a. Luick §306, Brunner §402, R/T vol.2
+    # §6.3.3 p.200-202: short *a in the trough between primary
+    # stress and a weak/lost secondary stress raises to *u. The
+    # grave-a itself is the prosodic conditioning marker; no
+    # right-context is required — the compound-internal prosodic
+    # position is encoded directly in the PROTOFORM.
+    # Example: *wír-àldu → *wír-uldu → (u-lowering) → weorold.
+    {*à} -> {*u}
+];
+
+# DEV_NOTES §16.6.3 (architecture option C): Neutralise any remaining
+# Nebenton marks to plain short vowels so the rest of the OE cascade
+# (breaking, AFB, i-umlaut, u-lowering) sees only acute-primary or
+# plain short vowels. Fires AFTER OEInterStressRaising so the grave
+# remains visible to that rule.
+define OEStripSecondaryStress [
+    {*à} -> {*a},
+    {*è} -> {*e},
+    {*ì} -> {*i},
+    {*ò} -> {*o},
+    {*ù} -> {*u}
 ];
 
 # OEAwjGlideFormation: *aw + *j → *au + *j (and *aww + *j → *au + *j).
@@ -1795,7 +1838,10 @@ define EnglishStarNonHighVowel [
     {*a} | {*ā} | {*ă} | {*ą} |
     {*e} | {*ē} |
     {*o} | {*ō} | {*ɔ̆} |
-    {*ô}
+    {*ô} |
+    # DEV_NOTES §16.6: Nebenton-graves count as their plain counterparts
+    # for right-context classes (before OEStripSecondaryStress fires).
+    {*à} | {*è} | {*ò}
 ];
 
 # R/T vol.2 §2.1.1: Stressed *u → *o before non-high vowels in NWGmc,
@@ -2783,6 +2829,10 @@ define EnglishProtoToOE (
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
     # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
     .o. OEInterStressRaising
+    # §16.6: neutralise Nebenton graves to plain short vowels
+    # immediately after inter-stress raising, before the general
+    # stress-sensitive cascade.
+    .o. OEStripSecondaryStress
     # PROBE §17.10.19 (R3): medial u-lowering moved AFTER InterStressRaising so
     # that *u's newly raised from *a (e.g. *sāwalu → *sāwulu) are visible to
     # lowering. Original position was immediately after NasalSpirantLoss.
@@ -2945,6 +2995,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEEwLongDiphthong
     # Inter-stress raising (R/T §6.3.3): *a → *u before AFB/breaking.
     .o. OEInterStressRaising
+    # §16.6: strip Nebenton graves after raising (OE-only pipeline).
+    .o. OEStripSecondaryStress
     # Medial unstressed u-lowering moved AFTER InterStressRaising per
     # §17.10.19 (R3). Mirrors main-stack ordering.
     .o. OEMedUnstressedULowering

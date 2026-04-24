@@ -2,6 +2,31 @@
 
 **READ THIS FIRST** when resuming work on the Old English pipeline.
 
+## Default Research Practice: Three-Agent Source Audit
+
+For any change that touches sound-change chronology, conditioning, or prosodic
+tier (anything where “what do the standard grammars say?” matters), **default
+to a three-agent parallel research audit** before proposing or implementing:
+
+1. **German-language grammars agent** — Brunner, Bülbring, Luick, Kaluza,
+   Sievers–Brunner, Ringe vol. 1 (where relevant).
+2. **English-language grammars agent** — Campbell, Hogg, Hogg & Fulk,
+   Fulk (comparative), Ringe & Taylor vol. 2, Minkova, Lass.
+3. **Modeling / internal-docs agent** — reads our own `DEV_NOTES.md`,
+   `prosodic_tier_research.md`, relevant FST definitions, and surveys
+   computational/notational best practice for the issue at hand.
+
+Launch them in parallel via `task` with `agent_type: explore` and
+`mode: background`. Each gets a tightly scoped prompt asking for section
+numbers, direct quotes, and an honest "the source does not address this"
+when warranted.
+
+After the three reports land, synthesize into a new `§N.N.N` subsection of
+`DEV_NOTES.md` (research first), then run empirical probes against the FST
+bins / TSV, append a `§N.N.N-probes` subsection, and only then propose an
+implementation. This is the pattern used for §17.10.36-q3 (j-strengthening
+after front diphthongs).
+
 ## Directory Structure
 - `Germanic/fsts/germanic.txt` - Main FST source code
 - `Germanic/data/germanic-aligned-final.tsv` - Proto → OE data
