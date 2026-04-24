@@ -111,13 +111,11 @@ define OESandboxAfterHeavySyllableNasalApocope OESandboxAfterARestoration
     .o. OEHeavySyllableNasalApocope;
 define OESandboxAfterSecondaryNasalization OESandboxAfterHeavySyllableNasalApocope
     .o. OESecondaryNasalization;
-define OESandboxAfterFinalSchwaApocope OESandboxAfterSecondaryNasalization
-    .o. OEFinalSchwaApocope;
 
 # ============================================================================
 # Stage 7: Compound Syncope and B-Allophony - lines 2347-2356
 # ============================================================================
-define OESandboxAfterCompoundLinkingSyncope OESandboxAfterFinalSchwaApocope
+define OESandboxAfterCompoundLinkingSyncope OESandboxAfterSecondaryNasalization
     .o. OECompoundLinkingSyncope;
 define OESandboxAfterBAllophony OESandboxAfterCompoundLinkingSyncope
     .o. PGmcBAllophony;
@@ -404,10 +402,6 @@ save stack old_english_sandbox_after_heavy_syllable_nasal_apocope.bin
 clear stack
 regex OESandboxAfterSecondaryNasalization;
 save stack old_english_sandbox_after_secondary_nasalization.bin
-
-clear stack
-regex OESandboxAfterFinalSchwaApocope;
-save stack old_english_sandbox_after_final_schwa_apocope.bin
 
 # Stage 7: Compound Syncope and B-Allophony
 clear stack
