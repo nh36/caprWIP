@@ -28521,3 +28521,661 @@ rows, reducing that bucket from 5 to 4.
 - Orel, V. 2003. *Handbook of Germanic Etymology*, p. 326 (*sibaz).
 - Pokorny, J. *Indogermanisches etymologisches Wörterbuch* I 889–890, 894.
 - Ringe, D. & Taylor, A. 2014. *The Development of Old English*, §3.2.4, pp. 383–384.
+
+## §17.16  spere PROTOFORM research (row 1070 investigation)
+
+### §17.16.1  Problem
+
+Row 1070 in `germanic-aligned-final.tsv` has PROTOFORM `*spéru`
+with COUNTERPART `spere` 'spear'. The FST derives `*spéru → speor`
+(via back umlaut: *e + r + u → eo; then WS levelled back), which
+mismatches the target `spere`. This is the last `spere`-bucket
+`final_vowel_missing__weak_noun_like` case, directly parallel at
+the surface to §17.15 *sife* (`*síbaz` → `*síbi`).
+
+### §17.16.2  Research methodology
+
+Per DEV_NOTES house rule (§17.14.2, §17.15.2), three parallel
+general-purpose research agents were dispatched:
+
+- **spere-kroonen-orel** — PGmc reconstruction (Kroonen 2013, Orel
+  2003, Kluge/Seebold, Pokorny, Ringe 2006, Brunner).
+- **spere-oe-attestation** — OE paradigm and lemma (Bosworth-Toller,
+  Bright's Reader, Clark Hall, Campbell §§607–609, Brunner §§262,
+  288 Anm.).
+- **spere-breaking** — OE breaking vs back umlaut rules (Hogg 1992
+  §§5.7, 5.36; Campbell §§139–156, 205–221; Brunner §§79–85, 139;
+  Luick §§113–138; R/T §3.3.6).
+
+All three agents converged independently.
+
+### §17.16.3  Etymological consensus
+
+| Source | Reconstruction | Stem class |
+|---|---|---|
+| Kroonen 2013:467 | *\*speru-* m. 'spear' | u-stem (masc., but daughter reflexes neut.) |
+| Orel 2003:367 | *\*speru* sb. n. 'spear' | neuter |
+| Kluge/Seebold (s.v. *Speer*) | WGmc *\*speru- n.* | neuter |
+| Campbell §§607–609 | OE *spere* = short-stem neut. i-stem | grouped with *sife*, *gedyre*, *orlege* |
+| Brunner §263 Anm. 4 | "dann wohl auch *spere*, welches in älterer Zeit in Kompositis als *spe(o)ru-* erscheint" | orig. neut. s-stem → absorbed into i-decl. |
+| Brunner §288 Anm. | NS suffix IE *-es*, PGmc *-iz*; loss of *-z > *-i* (short stem) > OE *-e* | s-stem neut. |
+
+**PIE root**: *sper(H)-* 'pole, rafter, spear' (Pokorny IEW I 990–991,
+Kroonen 2013:467 refines to *sperH-u-* with root-final laryngeal
+evidenced by Lat. *sparus* < *sprH-o-*). Cognates: Lat. *sparus*
+'short javelin', possibly Alb. *shpardh(ë)* < *sporH-*. The
+frequently cited Gk *sparton* 'rope' is from a different root
+(*sperH-* 'twist') and is **not** a cognate.
+
+**Stem class question**: Kroonen's *\*speru- and Brunner's s-stem
+*\*speriz describe the same paradigm from different vantage points.
+The NS/Asg cell feeds OE *spere* as **\*speriz → WGmc *speri → OE
+spere**, precisely parallel to §17.15 *sife* < *\*sibi*. The
+suffixal *-u-* that Kroonen reconstructs surfaces in OE **compounds**
+(*speoru-*, *speru-*) and in the reformed **plural** *speru/speoru*,
+not in the singular.
+
+### §17.16.4  OE paradigm (Campbell §607)
+
+|       | Sg.  | Pl.                |
+|-------|------|--------------------|
+| NA    | spere | **speru** / speoru |
+| G     | speres | spera             |
+| D     | spere | sperum            |
+
+- **Singular** NAsg *spere*: attested in Beowulf, *Maldon* 25
+  (`feolhearde speru` is plural), prose passim (Clark Hall s.v.;
+  BT s.v.; Bright's Reader glossary).
+- **Plural** *speru* ~ dialectal *speoru*: Brunner §139 explicitly
+  names this as a back-umlaut relic (WS levelled *speoru* → *speru*
+  under pressure from NS *spere*).
+- **Composition stem** *speoru-*: Brunner §263 Anm. 4; preserves the
+  older s-stem *-u-* vocalism.
+
+**The current TSV *\*spéru encodes the PLURAL / composition form,
+not the singular** — that is the source of the mismatch. The FST's
+`*spéru → speor` is in fact a *correct* phonological derivation of
+the (eventually-levelled) plural via back umlaut.
+
+### §17.16.5  FST probe (pre-change)
+
+```
+$ echo 'speri'   | flookup -i backend/old_english.bin   → spire   ✗
+$ echo 'spéri'  | flookup -i backend/old_english.bin   → spire   ✗
+$ echo 'speriz'  | flookup -i backend/old_english.bin   → spire   ✗
+$ echo 'spériz' | flookup -i backend/old_english.bin   → spire   ✗
+$ echo 'speraz'  | flookup -i backend/old_english.bin   → sper    ✗
+$ echo 'spere'   | flookup -i backend/old_english.bin   → +?      (no grammar)
+```
+
+**Critical finding**: the etymologically-correct input `*speri` does
+NOT yield `spere` in our FST. It yields `spire` — because the FST
+applies i-mutation (*e → *i before *-i) before *-i lowers to *-e.
+This is the expected phonological outcome. Compare §17.15 *sibi →
+sife*, which succeeds only because its root vowel is already *i
+(zero-grade), so i-mutation is vacuous.
+
+### §17.16.6  Why does attested OE have *spere*, not *spire*?
+
+This is a **well-known philological puzzle**, flagged explicitly in
+the literature:
+
+- **Brunner §262 Anm. 1**: *"Ob `-e-` in `spere` Speer auf i-Umlaut
+  zurückgeht oder nicht, ist unklar; gelegentlich erscheinen im
+  Plural Formen mit Velarumlaut (`speoru`)."*
+  ('Whether -e- in *spere* goes back to i-mutation or not is
+  unclear; occasional back-umlauted plural forms (*speoru*) appear.')
+- **Campbell §609**: *"all [short-stem neut. i-stems] have
+  developments of the root vowel normal before -i- except `spere`,
+  which has the vowel of early reformed pl. `*sperō`."*
+
+**Campbell's explicit explanation**: OE *spere* is **not** the
+regular phonological outcome of *\*speri. The expected phonological
+outcome is *\*spiri* (with i-mutation), as the FST correctly
+produces. The attested root-vowel *e* of *spere* is **analogical**,
+levelled from the plural *\*sperō* (which had no *-i* in the next
+syllable and therefore did not trigger i-mutation).
+
+This is **not** parallel to §17.14 *cwedu*: there, the attested
+`cwedu` IS the direct lautgesetzlich reflex of PGmc *\*kweðuz* (NS
+e-grade), with regular final-*-z loss and *\*ð > \*d via
+`PWGmcDentalHardening`. The analogical/secondary forms in that
+paradigm are the *other* variants (cwidu, cweodu, cwudu, cudu); we
+explicitly chose the conservative inherited form. Here, by
+contrast, **no** single proto-cell gives the attested singular
+`spere` by regular rules: *\*speri gives *\*spire (the handbook-
+predicted phonological reflex), and *\*speru gives the plural
+*\*speoru. The **attested singular** `spere` requires analogical
+levelling of the root vowel from the plural.
+
+### §17.16.7  Control set probe
+
+```
+$ echo 'sibi'     | flookup -i backend/old_english.bin   → sife    ✓ (§17.15)
+$ echo 'hertan'   | flookup -i backend/old_english.bin   → +?  (no grammar for bare stem)
+$ echo 'harjaz'   | flookup -i backend/old_english.bin   → +?  (no grammar for bare stem)
+```
+
+The i-mutation → `spire` pathway is the regular rule; the §17.15
+*sibi → sife* success only obtains because the root vowel is
+already *i (zero-grade root *sib-). `spere` is genuinely
+**unexpected** by regular phonology — a recognised analogical
+exception in the handbooks.
+
+### §17.16.8  Options
+
+Given that the etymologically-correct input `*spéri` produces `spire`
+(not `spere`), three options remain:
+
+**Option A** — **Keep *\*spéru* (status quo); reclassify as
+documented exception.** Mark row 1070 as a known analogical form
+like *tæppa*, *fȳre*. Add a NOTE citing Campbell §609 and Brunner
+§262 Anm. 1. The FST output `speor` (phonologically regular back-
+umlauted plural, later levelled in WS to *speru*) is kept; the
+singular `spere` is acknowledged as analogical. This sidesteps
+rather than resolves the mismatch.
+
+**Option B** — **Change to *\*spéri*; reclassify as documented
+exception with corrected PROTOFORM.** This makes the TSV
+etymologically honest (the NS is *\*speri-*, not the plural
+*\*speru*), accepts that the FST output `spire` is the lautgesetzlich
+outcome, and documents `spere` as the analogically-levelled attested
+form. The mismatch report still shows `spire` vs `spere`, but the
+PROTOFORM is now correct. This is the most etymologically honest
+option.
+
+**Option C** — **Model the analogical levelling explicitly** in
+the FST, e.g. by adding a paradigm-levelling rule that restores the
+unmutated root vowel in short-stem neuter i-stems when the plural
+(without *-i) is analogically dominant. This would affect *spere*
+correctly, but risks regressing *\*sibi → sife* (which works
+phonologically) and other i-stems, and introduces an analogical
+rule into a grammar that is otherwise purely sound-law-based.
+High complexity, low generality.
+
+**Option D** — **Paradigm-cell-match approach (§17.14 precedent)**:
+use the **plural** *\*speru* as the canonical TSV input and change
+the COUNTERPART to the attested plural *speru* (or *speoru* in
+Anglian). This keeps the FST derivation `*spéru → speor` (which is
+phonologically regular if we accept back umlaut in WS, though WS
+levelled it away), OR use the Anglian plural *\*speru → speoru*.
+This accepts that the singular *spere* is not cleanly derivable
+from any Proto-Germanic input via regular rules, and represents
+the paradigm through a different cell.
+
+### §17.16.9  Recommendation
+
+Option B is the most etymologically honest. The PROTOFORM *\*spéri*
+is the consensus reconstruction of the NS across all consulted
+sources, and the fact that the regular phonological outcome is
+*\*spire* rather than attested *spere* is a recognised philological
+datum (Campbell §609, Brunner §262 Anm. 1). Option A leaves an
+incorrect PROTOFORM in the TSV. Option C adds complexity for a
+single lexeme. Option D changes the attested target, which is a
+more drastic move than correcting the proto.
+
+**The FST cannot be expected to produce `spere` from any input by
+regular rules**; this is an analogical form in the handbooks.
+
+### §17.16.10  Citations
+
+- Bosworth-Toller, s.v. *spere*.
+- Bright, J. W. *Anglo-Saxon Reader*, glossary s.v. *spere* (ns./ds./as./ap. *speru*).
+- Brunner, K. 1965. *Altenglische Grammatik*. §§79–85, 139, 182, 262 Anm. 1, 263 Anm. 4, 288 Anm.
+- Campbell, A. 1959. *Old English Grammar*. §§139–156, 205–221, 607–609.
+- Clark Hall, J. R. *A Concise A-S Dictionary*, s.v. *spere*, *nap. spe(o)ra*.
+- Fulk, R. D. 2018. *Comparative Grammar of the Early Germanic Languages*. §§5.9–5.10, 7.x.
+- Hogg, R. 1992. *A Grammar of Old English*, vol. 1. §§5.7, 5.36.
+- Kluge, F. / Seebold, E. *Etymologisches Wörterbuch*, s.v. *Speer*.
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*, p. 467 (*\*speru-*).
+- Luick, K. 1914–1940. *Historische Grammatik der englischen Sprache*. §§113–138.
+- Orel, V. 2003. *Handbook of Germanic Etymology*, p. 367 (*\*speru*).
+- Pokorny, J. *Indogermanisches etymologisches Wörterbuch* I 990–991.
+- Ringe, D. 2006. *From Proto-Indo-European to Proto-Germanic*. §3.4.2.2, pp. 279–280.
+- Ringe, D. & Taylor, A. 2014. *The Development of Old English*. §3.3.6.
+
+### §17.16.11  Paradigm-cell approach (Option D): detailed investigation
+
+Following user feedback (2026-04-24: "I probably want Option D, because
+I think it is most lautgesetzlich"), this section expands Option D
+into a fully-reasoned proposal.
+
+**Correction to §17.16.6**: the §17.14 *cwedu* precedent is that
+`cwedu` IS the **lautgesetzlich reflex** of the inherited PGmc NS
+*\*kweðuz* — direct e-grade, final *-z loss, *\*ð > *\*d — with no
+analogy invoked. Analogical forms in that paradigm are the *other*
+variants (`cwidu, cweodu, cwudu, cudu`); we chose the one cell that
+works by sound law. The parallel to *spere* is therefore: find the
+one cell of the 'spear' paradigm that works by sound law, and use
+that as the TSV target. An earlier passage in §17.16.6 that
+implied "cwedu itself was analogical" was misleading and has been
+corrected.
+
+### §17.16.12  Research agent: spere-plural-speoru (synthesis)
+
+Dispatched 2026-04-24 to investigate the plural-cell option. Key
+findings:
+
+**Attestation of Anglian/conservative `speoru`**:
+- Leiden Glossary: **speoruliran** 'spear-muscles' (cited Campbell
+  §276 as early back-umlaut attestation).
+- Cleopatra / Corpus / Épinal-Erfurt glossaries: *"Contos, speoru"*
+  and *"Contos, speoru, odde spreotas"* (Wright, *A-S and OE
+  Vocabularies*) — A.pl. glossing Latin *contos* 'poles, pikes'.
+- Grein–Köhler / Clark Hall: **speora** n.a.pl. (late-OE variant).
+
+**Attestation of WS `speru`**:
+- Maldon 25: *feolhearde speru* (A.pl.); Beowulf; Ælfric; Wulfstan.
+- Standard WS N/A.pl. of the neut. i-stem paradigm (Campbell §607,
+  Brunner §262).
+
+**Derivation — explicit in handbooks**:
+
+- **Campbell §211**: *"... `speoru` spear, and before a geminate
+  North. `seolla` ..."* — `speoru` is cited as a textbook example of
+  back umlaut (*e + r + u → eo + r + u).
+- **Campbell §210.1**: *"Analogical removal is frequent, e.g.
+  `speru` spear ... after infl. `spere`, n.s."* — WS `speru` is
+  **explicitly analogical**, levelled from `speoru` under pressure
+  from the sg.
+- **Brunner §110.1**: *"doch ist das `eo` in der Flexion durch
+  Ausgleichung beseitigt in ws. Nom. Akk. Pl. `speru` ... nach dem
+  Sg. `spere` Speer"*. Same: WS `speru` is secondary/levelled;
+  Anglian `speoru` is the faithful sound-law output.
+
+**Derivation chain** (fully lautgesetzlich):
+
+```
+PIE neut. *sper(H)- (collective / NPl in *-h₂)
+  → PGmc *sperō (NPl neut., a-stem refashioning, Campbell §608)
+  → WGmc *speru (regular shortening of neut. pl. *-ō > *-u)
+  → pre-OE *speru
+  → OE speoru  (back umlaut of *e before r + u; Campbell §§210.1,
+                211; Brunner §110.1; attested Anglian/glossary)
+  → WS speru   (analogical de-back-umlaut after sg. spere; Campbell
+                §210.1; Brunner §110.1)
+```
+
+**Parallels** (short-stem neut. a-stem / i-stem plurals with
+lautgesetzlich back umlaut):
+- *terwa-* → teoru 'tar' (Campbell §§81, 583; Brunner §110.1)
+- *smerwa-* → smeoru 'grease' (Campbell §583; Brunner §110.1)
+- *heoru-* 'sword' in compounds (same rule)
+- *heolor* 'balance', *heolstor* 'hiding-place' (e + l + back V)
+
+### §17.16.13  FST probe for plural cell
+
+Probing the current `backend/old_english.bin`:
+
+```
+$ echo 'speru'  | flookup -i backend/old_english.bin   → speor   ✗
+$ echo 'spéru' | flookup -i backend/old_english.bin   → speor   ✗
+$ echo 'sperō' | flookup -i backend/old_english.bin   → speor   ✗
+$ echo 'teru'   | flookup -i backend/old_english.bin   → teor    ✗
+$ echo 'smeru'  | flookup -i backend/old_english.bin   → smeor   ✗
+$ echo 'faru'   | flookup -i backend/old_english.bin   → fear    ✗
+```
+
+The FST apocopates final *-u even for light-stem neuters like
+*speru, *teru, *smeru, *faru — and the result is the BROKEN /
+back-umlauted vowel without the *-u suffix.
+
+Control (stops, not liquids):
+
+```
+$ echo 'skipu'  | flookup -i backend/old_english.bin   → sċipu   ✓
+$ echo 'gatu'   | flookup -i backend/old_english.bin   → ġetu    ✓
+$ echo 'wordu'  | flookup -i backend/old_english.bin   → word    ✓  (heavy; correct apocope)
+$ echo 'landu'  | flookup -i backend/old_english.bin   → land    ✓  (heavy; correct apocope)
+```
+
+**Diagnosis**: The FST handles OE high-vowel apocope correctly for
+STOPS (skipu retained, wordu apocopated — weight-conditioned as
+Campbell §345 prescribes). But after a /r/ (and by extension /l/,
+likely /n/, /m/), apocope fires even on light stems — producing
+*speor, *teor, *smeor, *fear — none of which are the attested
+lemmas.
+
+The attested OE lemmas ARE:
+- **speoru** (Anglian), **speru** (WS levelled) — not *speor
+- **teoru**, **tearu** — not *teor
+- **smeoru** — not *smeor
+- **faru** 'journey' (fem. ō-stem, not neut. pl., but as NSg also
+  ends in -u lautgesetzlich; attested `faru`, not `fear`)
+
+### §17.16.14  The lautgesetzlich rule the FST is missing
+
+Per Campbell §345 and Hogg §6.22, **Old English high-vowel apocope**:
+
+> *Final short high vowels (*-i, *-u) are lost after a HEAVY (long)
+> syllable (long V, or short V + 2 consonants); they are retained
+> after a LIGHT (short) syllable (short V + 1 consonant).*
+
+This rule is **purely phonological**: it refers to syllable weight
+(a property of the stem), never to stem-class or grammatical number.
+The same rule governs:
+- neut. NPl: *\*skipu → sċipu* (retained) vs *\*wordu → word* (lost);
+- masc. i-stem NSg: *\*sigi → sige* (retained) vs *\*winī > wine*
+  (this case is special — see Campbell §600 for heavy-stem wine);
+- fem. ō-stem NSg: *\*farō > faru* (retained) vs *\*ȳrþu > ȳrþ* (lost).
+
+The FST's current behavior (apocopating *-u after any liquid
+regardless of stem weight) **violates this lautgesetzlich rule**.
+It is not a case where we want to encode a morphological distinction
+(plural vs singular) — the rule is already purely phonological; it
+just isn't firing correctly before /r/ (and likely before /l/, /n/,
+/m/).
+
+### §17.16.15  Option D revised (lautgesetzlich justification)
+
+The plural-cell option rests on two lautgesetzlich moves:
+
+1. **PGmc NPl *\*speru* (< *\*sperō)** is the historically regular
+   neuter plural form. This is uncontroversial (Campbell §608).
+
+2. **OE speoru** is the regular sound-law output (*e + r + u → eo +
+   r + u by back umlaut; final *-u retained after light stem by
+   Campbell §345). WS `speru` with unrounded root vowel is
+   transparently analogical.
+
+The FST bug §17.16.14 (apocopating *-u after light-stem /r/) must
+therefore be fixed independently of any decision on *speru vs
+*speri* — it is a general phonological error affecting many forms
+(*teru → teor, *smeru → smeor, *faru → fear, *\*speru → speor).
+Fixing it is a prerequisite for Option D but is **not** a
+spere-specific intervention. It is a proper correction to the
+rule inventory, grounded in Campbell §345.
+
+### §17.16.16  Open research: stem-class relation of *-u and *-i
+
+User flagged (2026-04-24): the agents described Kroonen's u-stem
+*\*speru-* and Brunner's s-stem *\*speriz* as "the same paradigm from
+different angles", but this needs more detailed explanation. The
+PIE-level reconstruction also oscillated between u-stem and s-stem
+in the agents' syntheses. A further research agent
+(**spere-stem-class-deepdive**) has been dispatched to produce:
+
+- A clear PIE prototype (u-stem *\*sperH-u-s vs s-stem
+  *\*sper-os/-es- vs heteroclite);
+- The full PGmc paradigm (NS/GS/DS/NPl/...) with -u/-i allomorphs
+  placed by cell;
+- An explanation of why Kroonen lemmatises with *-u- and Brunner
+  with *-i-.
+
+This section will be expanded when the agent returns.
+
+### §17.16.17  Revised plan (pending stem-class agent)
+
+1. Wait for spere-stem-class-deepdive agent to produce a rigorous
+   PGmc paradigm.
+2. Investigate and document the FST's *-u apocope rule: locate the
+   rule, identify why it fires before /r/, and write up the needed
+   correction as a separate sub-section (candidate §17.17).
+3. Only after those two are documented, choose between:
+   - **Option D** (plural cell speoru): requires the FST rule
+     fix from (2) plus TSV edit.
+   - **Option B** (spire, fallback): retain *\*spéri as proto,
+     accept `spire` as the lautgesetzlich output, document `spere`
+     as analogical-exception.
+4. Do NOT apply any TSV or FST change until the full research
+   packet is approved.
+
+### §17.16.18  Stem-class deep-dive agent (result)
+
+Agent `spere-stem-class-deepdive` returned 2026-04-24. Summary:
+
+**The hypothesis that NSg *speriz + NPl *speru form one heteroclitic
+paradigm (Kroonen = pl.-stem, Brunner = sg.-stem) is NOT the
+consensus.** Kroonen and Brunner propose two *incompatible* PGmc
+stem classes, not two halves of one paradigm. No source
+(Kroonen 2013, Orel 2003, Ringe 2006, Ringe/Taylor 2014, Fulk,
+Kluge-Seebold, Streitberg) reconstructs an i/u or s/u heteroclite
+for 'spear'.
+
+**Mainstream position**: PGmc *speru- n., u-stem (Kroonen 2013:467;
+Orel 2003:364 explicitly neut.; Kluge-Seebold s.v. *Speer* "g.
+*speru- n."), from PIE *sperH-u-. OE *spere* is then a light neut.
+i-stem with regular NASg *spere*, NAPl *speru* (Campbell §607).
+
+**Brunner's os/es-stem analysis** (§263 Anm. 4, §288 Anm.) rests on:
+(i) non-umlauted root vowel *e* in *spere*,
+(ii) compound form *speoru-*.
+Both are independently explicable — *speoru-* is the regular u-stem
+composition form; Campbell §609 derives the non-umlauted *e* from
+an analogical pl. *\*sperō. Crucially, Ringe/Taylor 2014 endorses
+Brunner §288 Anm. for *ege, bere, hete, sige* (all with Gothic
+z-stem cognates: *barizeins, agis, hatis, sigis*) but does NOT
+include *spere* in that list. Brunner himself marks it
+"wohl/wahrscheinlich".
+
+**Implication for Option D**: we should treat *spere* as a plain
+**light neuter u-stem** (Kroonen *speru-, Orel *speru-). The PGmc
+paradigm for this class (Kroonen 2013:xxii; Ringe 2006:282) is:
+
+| Cell | PGmc form   | Attested OE target          |
+|------|-------------|-----------------------------|
+| NSg  | *speru      | spere (analogical — see §17.16.12) |
+| GSg  | *speroz     | speres                      |
+| DSg  | *spere(w)i  | spere                       |
+| ASg  | *speru      | spere (analogical)          |
+| NPl  | *speru      | speoru (Angl.) / speru (WS) |
+| APl  | *speru      | speoru / speru              |
+
+The NPl/APl cell is the one that yields **lautgesetzlich speoru**
+via back umlaut + light-stem -u retention. This is the Option-D
+target.
+
+### §17.17  FST bug: apocope treats short diphthongs as heavy
+
+Triggered by §17.16 investigation; affects a much wider class of
+forms than just *speru*.
+
+#### §17.17.1  Diagnosis
+
+`OEHighVowelApocope` (germanic.txt:2604) has a clause:
+
+```
+{*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.
+```
+
+— intended for heavy syllables like "long diphthong + C". The class
+`EnglishStarDiphthong` (line 873 → line 510 `PGmcStarDiphthong`)
+contains ALL diphthongs indiscriminately:
+
+- Short diphthongs (from breaking / back-umlaut): `*ea *eo *io`
+- Long diphthongs: `*ēa *ēo *īo`
+- Acute-stressed: `*ái *áu *éu *éa *ḗa *éo *ío *íe`, etc.
+
+Consequence: any form that undergoes back-umlaut or breaking before
+the apocope rule has its final *-u* deleted, regardless of the
+underlying stem weight.
+
+#### §17.17.2  Affected forms (all should retain -u)
+
+Probes on `backend/old_english.bin` (2026-04-24, post-§17.15 state):
+
+| Input      | FST output | Expected   | Notes                        |
+|------------|-----------|------------|------------------------------|
+| *speru     | speor     | speoru     | neut. u-stem NPl             |
+| *teru      | teor      | teoru      | neut. 'tar' (< *terwa-)      |
+| *smeru     | smeor     | smeoru     | neut. 'grease' (< *smerwa-)  |
+| *faru      | fear      | faru       | fem. ō-stem 'journey'        |
+
+Controls (stop-final, no breaking/BU → no bug):
+
+| Input      | FST output | Expected   |
+|------------|-----------|------------|
+| *skipu     | sċipu     | sċipu  ✓   |
+| *gatu      | ġetu      | ġetu   ✓   |
+| *wordu     | word      | word   ✓   |
+| *landu     | land      | land   ✓   |
+
+#### §17.17.3  Phonological reasoning
+
+Campbell §345, Hogg §6.22: high-vowel apocope is conditioned by
+**stem weight at the time of the change**. Stem weight is:
+
+- LIGHT = short V + 1 C (e.g. *scip-, *gat-, *sper-, *ter-, *far-)
+- HEAVY = long V / diphthong, OR short V + 2+ C
+
+Short diphthongs in OE (*ea, *eo, *io) arose from back-umlaut and
+breaking OF A SHORT MONOPHTHONG in an otherwise light syllable
+(*sper + u → *speor + u). The underlying syllable is still light:
+one consonant onset, one short vocalic nucleus (bi-moraic by some
+analyses, but behaving as LIGHT for weight-sensitive rules
+including apocope — Campbell §34, §§210.1–211).
+
+LONG diphthongs (from e.g. contraction, lengthening, or loan) ARE
+heavy and DO trigger apocope.
+
+The FST therefore needs to distinguish short-diphthong contexts
+(LIGHT, -u retained) from long-diphthong contexts (HEAVY, -u lost).
+
+#### §17.17.4  Candidate fix
+
+Split `EnglishStarDiphthong` into:
+
+```
+define EnglishStarShortDiphthong [
+    {*ea} | {*eo} | {*io} | {*iu} | {*ie} | {*éa} | {*éo} | {*ío} | {*íe}
+    # (acutes retain primary-stress marking but the syllable is historically LIGHT
+    #  when the source was a short vowel before breaking/BU)
+];
+
+define EnglishStarLongDiphthong [
+    {*ēa} | {*ēo} | {*īe} | {*īo} | {*ḗa} |
+    {*ái} | {*áu} | {*éu} | {*íu}
+    # these are historically long (long-vowel source, contraction, or inherited)
+];
+
+define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
+```
+
+Then in `OEHighVowelApocope`, replace `EnglishStarDiphthong` with
+`EnglishStarLongDiphthong` in the "heavy" clauses. Short diphthongs
+will then fall through to the "short vowel + 1 consonant + u"
+(light stem) case and retain -u.
+
+**Caveat**: the acute-marked *éa, *éo, *ío* need careful
+classification — these are currently listed in `PGmcStarDiphthong`
+(lines 524–530) as "stressed breaking products". Breaking of
+stressed *á, *é, *í before r+C gives *éa, *éo, *ío: the preceding
+vowel was short, so the syllable was LIGHT (short V + r + C — but
+wait: two consonants, so it was historically HEAVY by breaking
+environment). This class likely belongs with LONG diphthongs for
+apocope purposes, because breaking only fired in heavy-rhyme
+environments (Campbell §§139ff.).
+
+So the classification is:
+
+- Back-umlaut products (*ea, *eo, *io from short V + liquid/velar + back V): LIGHT source → short diphthong → light for apocope.
+- Breaking products (*ea, *eo, *io from short V + rC/lC/hC): HEAVY source (the cluster itself makes the syllable heavy) → already apocopates correctly since there are 2 consonants.
+- Acute breaking products (*éa, *éo, *ío from long stressed V + rC): HEAVY → long diphthong for apocope.
+- Inherited long diphthongs (*ēa, *ēo, *īo, *ái, *áu, *éu): HEAVY → long diphthong.
+
+In other words: a short diphthong in the context `_ + SINGLE consonant + final V` is ALWAYS from back-umlaut (because breaking required a cluster). So the rule can be: don't fire high-vowel apocope if the context is short-diphthong + single consonant. In environments with 2+ consonants, the apocope fires correctly regardless (word, land — short V + 2 C).
+
+#### §17.17.5  Probe plan (pre-implementation)
+
+Before committing to the fix, probe:
+
+1. Are there any forms currently in the TSV that RELY on the
+   buggy behavior (i.e., short-diphthong + single C + u that
+   SHOULD apocopate)?
+2. Run `oe_mismatch_report.py` after the proposed rule split to
+   confirm no regression.
+3. Check specific lemmas: *heofon* (xemonų → heofon — trisyllabic,
+   already fits existing rules), *beoden* (should not be
+   affected), *feorh* ('life' — back-umlauted but no final -u in
+   attested form).
+
+#### §17.17.6  Next steps
+
+Gate: obtain user approval for the split-class fix (§17.17.4)
+before editing germanic.txt. This is a rule-level change that may
+affect many forms beyond *spere*; careful regression testing
+required. The §17.16 *spere* TSV edit depends on this fix landing
+first, because only then does `*speru → speoru` derive correctly.
+
+
+### §17.16.19  Verification that *speoru* is NApl (not NSg)
+
+User query (2026-04-24): "Are you totally sure that *speoru* is the
+plural? It looked to me like some of those philological examples
+were singular."
+
+Re-examined the primary attestations. Result: **speoru is NApl,
+confirmed**. Details:
+
+**(a) Épinal-Erfurt Glossary** (Wright, *AS & OE Vocabularies* p. 1170):
+
+```
+Clustella, clustorloc.  Contis, spreotum.     ← Lat. DAT.PL glosses OE DAT.PL *spreotum*
+Cladica, wefl...        Contos, speoru.       ← Lat. ACC.PL glosses OE *speoru*
+```
+
+Latin *contis* = dat./abl.pl. of *contus*; *contos* = acc.pl. The
+glossator matches grammatical number systematically across adjacent
+lines (spreotum dat.pl., speoru opposite acc.pl.). Therefore
+*speoru* in this citation is **ACC.PL**, not NSg.
+
+**(b) Brunner §110.1** (direct quotation):
+
+> *"(Pl. Ep. Gl.), doch ist das *eo* in der Flexion durch
+> Ausgleichung beseitigt in ws. **Nom. Akk. Pl. speru**, Dat.
+> sperum..."*
+
+Brunner explicitly labels the Épinal-Erfurt *speoru* as "Pl.
+Ep. Gl." and identifies it with the WS N.Akk.Pl. *speru* (after
+levelling). There is no suggestion in Brunner of a sg. *speoru*.
+
+**(c) Campbell §607 paradigm** (Campbell, direct quotation):
+
+```
+Nom. spere      N/A Pl. speru
+Acc. spere      Gen. Pl. spera
+Gen. speres     Dat. Pl. sperum
+Dat. spere
+```
+
+The paradigm is clear: NSg = *spere*, NApl = *speru* (post-levelling).
+Pre-levelling NApl = *speoru* (inferred from §210.1).
+
+**(d) Campbell §210.1** (direct quotation):
+
+> *"Analogical removal is frequent, e.g. **speru** spear, nefum d.p.
+> nephews, after infl. **spere, n.s.** nefa."*
+
+WS *speru* (the NApl) is described as analogically de-back-umlauted
+after NSg *spere*. This presupposes a pre-levelling NApl *speoru*.
+
+**(e) Campbell §211** list context:
+
+> *"Examples are eosol ass (beside esol) for *esel (cf. § 518), and
+> similarly meowle maiden (Goth. mawilo), eowu ewe for ewe (< Prim.
+> Gmc. *ayi), Cp. freomo benefit (usually fremu), **speoru spear**,
+> and before a geminate North. seolla, sealla give, beside sella."*
+
+The user's caution that this list "looks singular" is understandable:
+*eowu, meowle, fremu/freomo* ARE NSg forms. But §211 is a list of
+examples of the SOUND CHANGE (back umlaut of *e produced by
+i-umlaut), not of NSg forms. The grammatical cell is not the point
+of the citation; the vocalism is. For *speoru* specifically, the
+attested cell is A.Pl. (see (a), (b)). Campbell places *speoru* in
+this list because its vocalism *eo* instantiates the same sound
+change, not because it is singular.
+
+**(f) Leiden Glossary `speoruliran`** (Campbell §276, §211):
+
+This is a **compound** (*speoru-* + *liran* 'muscles'), cited for
+the vocalism *eo*. Compounds in OE can take the u-stem / pl.-stem
+shape in the first member regardless of the simplex's paradigm
+(cf. *sunu-*, *medu-*). So *speoruliran* evidences the composition
+form, not a sg. *speoru*. It does not bear on the NSg question.
+
+**Conclusion**: *speoru* is an A.Pl. form attested in the Épinal-
+Erfurt Glossary; it is the pre-levelling Anglian/non-WS form of
+N.Akk.Pl.; the corresponding WS form *speru* is analogical. There
+is no sg. *speoru* in the attestation. Option D's target — OE A.Pl.
+*speoru* derived from PGmc NPl *\*speru* by back umlaut + light-stem
+-u retention — stands on secure philological ground.
