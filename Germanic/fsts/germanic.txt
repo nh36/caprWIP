@@ -294,34 +294,23 @@ define pgrmStrongNasalPrefixed [pgrmPrefix pgrmStrongNasal];
 
 define pgrmWeakTailZero [0];
 define pgrmWeakTailVowel [
-    ă:{*ă} |
     # §17.10.12 Phase 1d-α: plain-a twin of every breve shape, added during
     # migration. Once Phase 1d-β is complete and the TSV no longer produces
     # breve tails, the breve shapes will be removed (Phase 1d-δ).
     a:{*a} |
     i:{*i} |
-    ă:{*ă} g:{*g} ą:{*ą} |
     a:{*a} g:{*g} ą:{*ą} |
-    ă:{*ă} l:{*l} ō:{*ō} |
     a:{*a} l:{*l} ō:{*ō} |
-    ă:{*ă} n:{*n} |
     a:{*a} n:{*n} |
-    ă:{*ă} n:{*n} ą:{*ą} |
     a:{*a} n:{*n} ą:{*ą} |
-    a:{*a} n:{*n} ă:{*ă} z:{*z} |
     a:{*a} n:{*n} a:{*a} z:{*z} |
-    ă:{*ă} n:{*n} ē:{*ē} |
     a:{*a} n:{*n} ē:{*ē} |
-    j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     j:{*j} a:{*a} n:{*n} ą:{*ą} |
     # Sievers' Law: heavy-stem Class I weak infinitive *-ijăną (R/T vol.2 pp.69-70)
-    i:{*i} j:{*j} ă:{*ă} n:{*n} ą:{*ą} |
     i:{*i} j:{*j} a:{*a} n:{*n} ą:{*ą} |
-    a:{*a} r:{*r} ă:{*ă} z:{*z} |
     a:{*a} r:{*r} a:{*a} z:{*z} |
     a:{*a} r:{*r} a:{*a} s:{*s} |
     a:{*a} s:{*s} |
-    ă:{*ă} z:{*z} |
     a:{*a} z:{*z} |
     # Gen.sg. of a-stem masc./neut.: PGmc *-as → OE -es
     # Used for geminate-stem nouns where medial geminate is preserved
@@ -338,20 +327,15 @@ define pgrmWeakTailVowel [
     # e.g. *spannai → spanne
     {ai}:{*ai} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
-    e:{*e} n:{*n} ă:{*ă} z:{*z} |
     e:{*e} r:{*r} |
     e:{*e} r:{*r} a:{*a} z:{*z} |
-    e:{*e} r:{*r} ă:{*ă} z:{*z} |
     e:{*e} z:{*z} |
     i:{*i} l:{*l} a:{*a} z:{*z} |
-    i:{*i} l:{*l} ă:{*ă} z:{*z} |
     i:{*i} l:{*l} ō:{*ō} |
     i:{*i} l:{*l} ō:{*ō} n:{*n} |
-    i:{*i} n:{*n} ă:{*ă} z:{*z} |
     i:{*i} n:{*n} a:{*a} z:{*z} |
     i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
     i:{*i} z:{*z} |
-    i:{*i} j:{*j} ă:{*ă} z:{*z} |
     i:{*i} j:{*j} a:{*a} z:{*z} |
     o:{*o} |
     o:{*o} n:{*n} |
@@ -369,10 +353,8 @@ define pgrmWeakTailVowel [
     u:{*u} |
     u:{*u} d:{*d} ą:{*ą} |
     u:{*u} k:{*k} a:{*a} z:{*z} |
-    u:{*u} k:{*k} ă:{*ă} z:{*z} |
     u:{*u} k:{*k} z:{*z} |
     u:{*u} n:{*n} |
-    u:{*u} n:{*n} ă:{*ă} z:{*z} |
     u:{*u} n:{*n} a:{*a} z:{*z} |
     u:{*u} n:{*n} d:{*d} ī:{*ī} |
     u:{*u} n:{*n} θ:{*θ} i:{*i} z:{*z} |
