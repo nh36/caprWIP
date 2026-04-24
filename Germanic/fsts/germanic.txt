@@ -2350,6 +2350,35 @@ define OEFinalGeminateSimplification [
     {*n} -> 0 || {*n} _ .#.
 ];
 
+# OE j-retention (orthographic ġ) after *aw-derived long front diphthongs.
+# See DEV_NOTES §17.10.36-q3 for full multi-source research synthesis.
+#
+# R/T vol.1 lines 7169-7172: "*j was not lost after *w" — PGmc-level
+# retention of *j in *awj/*iwj environments.
+# Kaluza §89(b): "Urg. j im In- und Auslaut nach langen Vokalen = ae. g"
+# (strēgan, cīegan, hīeġ are listed in this class).
+# Bülbring §458/§460: j "wird fast stets g geschrieben" after long V.
+# Brunner §129 Anm.2: *strawjan > strēgan explicitly derived via diphthong
+#   formation + j-retention + i-umlaut (contra short-stem *satjan → settan).
+# Lück §98: explicit WS reconstruction "*strīeġan", with critical contrast
+#   niwja → niowe (NO -g-) vs strawjan → strēgan (WITH -g-). The rule is
+#   NARROWER than "any long diphthong" — *iu-series does not trigger.
+#
+# Restricted left context to *aw-derived diphthongs: {*ēa|*ḗa|*éa} and
+# their i-umlauted outcomes {*īe|*íe}. Deliberately excludes *ēo/*īo/*eo/
+# *io (*iu-series) per Lück niwe/niowe contrast.
+#
+# Regression surface: empirically zero. See DEV_NOTES §17.10.36-q3-probes:
+# of 386 OE corpus forms, only *stráwjaną → *strīej... reaches this
+# environment (target); *xáwwją → hīeġ has word-final *j (not matched,
+# correctly bypasses this rule and is handled by orthography {*j} → ġ / _ .#.).
+#
+# Ordering: must fire AFTER OEIUmlaut (so *ēa → *īe umlaut completes)
+# and BEFORE OEIntervocalicJVocalization (so *j is not converted to *i).
+define OEJStrengtheningAfterFrontDiphthong [
+    {*j} -> {*ʒ} || [{*ēa}|{*ḗa}|{*íe}|{*īe}|{*éa}] _ EnglishStarVocalic
+];
+
 # Intervocalic *j vocalization: *j → *i between vowels.
 # In OE class II weak verbs (*-ōjan-), *j surfaces as part of the -ian suffix.
 define OEIntervocalicJVocalization [
@@ -2848,6 +2877,7 @@ define EnglishProtoToOE (
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEFinalGeminateSimplification
+    .o. OEJStrengtheningAfterFrontDiphthong
     .o. OEIntervocalicJVocalization
     .o. OEUnstressedEIContraction
     .o. OEWeightCleanup
@@ -2959,6 +2989,7 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEFinalGeminateSimplification
+    .o. OEJStrengtheningAfterFrontDiphthong
     .o. OEIntervocalicJVocalization
     .o. OEUnstressedEIContraction
     .o. OEWeightCleanup

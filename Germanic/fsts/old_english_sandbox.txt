@@ -206,7 +206,9 @@ define OESandboxAfterJLossAfterHeavy OESandboxAfterWeakTailReduction
     .o. OEJLossAfterHeavy;
 define OESandboxAfterFinalGemSimplif OESandboxAfterJLossAfterHeavy
     .o. OEFinalGeminateSimplification;
-define OESandboxAfterIntervocalicJVocalization OESandboxAfterFinalGemSimplif
+define OESandboxAfterJStrengtheningAfterFrontDiphthong OESandboxAfterFinalGemSimplif
+    .o. OEJStrengtheningAfterFrontDiphthong;
+define OESandboxAfterIntervocalicJVocalization OESandboxAfterJStrengtheningAfterFrontDiphthong
     .o. OEIntervocalicJVocalization;
 define OESandboxAfterUnstressedEIContraction OESandboxAfterIntervocalicJVocalization
     .o. OEUnstressedEIContraction;
@@ -537,6 +539,10 @@ save stack old_english_sandbox_after_j_loss_after_heavy.bin
 clear stack
 regex OESandboxAfterFinalGemSimplif;
 save stack old_english_sandbox_after_final_geminate_simplification.bin
+
+clear stack
+regex OESandboxAfterJStrengtheningAfterFrontDiphthong;
+save stack old_english_sandbox_after_j_strengthening_after_front_diphthong.bin
 
 clear stack
 regex OESandboxAfterIntervocalicJVocalization;
