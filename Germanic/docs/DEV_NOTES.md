@@ -28009,3 +28009,162 @@ pgrmWeakTailVowel alternatives like `-ănā`, `-ăz`, etc., and
 morphological ending-identification rather than conditioning
 sound changes, and belongs to the separate §17 weak-tail
 cleanup programme.
+
+
+## §17.13 — Eliminating the remaining breve `{*ă}` (2026-04-24)
+
+### §17.13.1 Motivation
+
+After §17.11 (acute/grave prosodic tiers carrying primary- and
+Nebenton-stress information) and §17.12 (word-final condition
+replacing `{*ăi}`), the only remaining engineering diacritic
+was the short-breve `{*ă}` used in weak-tail morphology.
+
+At the point where §17.13 began, all TSV PROTOFORM cells were
+already breve-free (§17.12.5 residual note). The breve survived
+only inside the grammar machinery — as parallel alternatives on
+the lower side of `pgrmWeakTailVowel`, as a dedicated inventory
+symbol in half a dozen vowel sets, and as a trio of consuming
+rules (`OEFinalSchwaApocope`, `OEWeakTailReduction1a`,
+`{*ă}→{*ə}` inside `EnglishWeakTailReductions`).
+
+The goal of §17.13 was to remove these residues and run the
+grammar on plain `{*a}` alone.
+
+### §17.13.2 Failed naïve sweep (archived, for future-warning)
+
+A first attempt removed every `{*ă}` reference from
+`germanic.txt` in a single pass (sigma sets, `pgrmWeakTailVowel`
+alternatives, consumers, and `OEFinalSchwaApocope`). The rebuild
+regressed mismatches from **33 → 71**. The regressions spanned
+bucket categories that were not obviously related to the breve:
+
+- `vowel_quality__u_o_alternation` ×22 (e.g. `*búrdą → burd`
+  expected `bord`),
+- `final_vowel_extra` ×15 (e.g. `*búrdiz → byrde` expected
+  `byrd`),
+- `final_vowel_missing__weak_noun_like` ×5,
+- plus scattered breaking, palatal, gemination regressions.
+
+The lesson: `{*ă}` was carrying phonology, not just marking.
+`OEUnstressedAFronting` depended on `OEWeakTailReduction1a`
+firing AFTER it so that genuine morphological `*a` (e.g. in the
+participle suffix `-anaz`) could front while transient breve `*ă`
+(in, say, `-jană` before Secondary Nasalization) was protected
+until afterwards. `OEFinalSchwaApocope` deleted final `{*ă}`
+where a plain `{*a}` would persist. The sets were tuned so
+certain contexts matched breve-only.
+
+A blanket sweep scrambled all of this at once. The sweep was
+reverted via `git checkout Germanic/fsts/germanic.txt
+Germanic/fsts/old_english_sandbox.txt` and the pipeline returned
+to 33 mismatches.
+
+### §17.13.3 Staged migration (successful)
+
+The successful approach was a six-phase mismatch-loop:
+
+**Phase A (safe sigma shrinks).** Remove `{*ă}` from four purely
+contextual vowel-inventory classes whose membership never drove
+rule firing when a plain-`{*a}` alternative also existed:
+`PGmcStarVowel`, `EnglishStarShortVowel`,
+`EnglishStarNonHighVowel`, `EnglishRhoticWeakTail`. Each of A1,
+A2, A3 was rebuilt and checked independently; all held at 33.
+Commit `5cbaf0e`.
+
+**Phase B (retire the breve-introducing source).** All 18
+`ă:{*ă}` alternatives in `pgrmWeakTailVowel` had plain-a twins
+from the §17.10.12 Phase 1d-α migration. Since the TSV PROTOFORM
+column was already breve-free, the plain-a path was always the
+one actually fed into the FST; the breve path was structurally
+dead. A batch removal of all 18 lines held at 33. Commit
+`a4f7e6e`. After this, no derivation in the pipeline introduced
+`{*ă}` anywhere.
+
+**Phase C (retire the consumers).** With `{*ă}` never entering
+the derivation, every rule or inventory entry that consumed it
+became vacuous. Five sub-steps, each verified:
+
+- C1. Delete `{*ă}` alternatives from `EnglishWeakTailVowelStar`
+  (8 entries), `OEARestorationStrongOTail` (6 entries), and the
+  `{*ă}→a,` orthography map in `OldEnglishRemoveStars`.
+- C2. Simplify `OESecondaryNasalization` from
+  `[{*a}|{*ă}]→{*ą}` to `{*a}→{*ą}`.
+- C3. Delete `OEFinalSchwaApocope` — rule definition, both
+  cascade insertion points (lines ~2846 and ~2987), the sandbox
+  stage `OESandboxAfterFinalSchwaApocope`, and its save-stack
+  target in `old_english_sandbox.txt`.
+- C4. Delete `OEWeakTailReduction1a` ({*ă}→{*a}); rewire
+  `OEWeakTailReduction1 = 1b .o. 1c` (nasalization clauses only).
+- C5. Remove the `{*ă}→{*ə}` clause from
+  `EnglishWeakTailReductions`.
+
+All held at 33. Commit `c0963b1`.
+
+### §17.13.4 How OEUnstressedAFronting still works
+
+The most delicate question was what carries the
+stressed/unstressed partition that the breve used to provide for
+`OEUnstressedAFronting`. Before §17.13 the cascade was:
+
+1. `OESecondaryNasalization` at `[{*a}|{*ă}] → {*ą} || _ {*n} .#.`
+   — nasalized final-nasal codas to protect infinitive `-ană`
+   from fronting.
+2. `OEUnstressedAFronting` at `{*a} → {*æ}` in medial
+   intervocalic position — fired only on plain `{*a}`, not on
+   `{*ă}`.
+3. `OEWeakTailReduction1a` at `{*ă} → {*a}` — converted the
+   protected breves to plain a afterwards, so they surfaced as
+   `-a` rather than `-e`.
+
+The partition was: fronting applied to genuine morphological
+stressed-ish `*a` (participle `-anaz`), but was withheld from
+breve `*ă` (infinitive `-jană`) until after fronting had finished.
+
+After §17.13 the partition is carried by two facts:
+
+(a) `OESecondaryNasalization` still runs first and still converts
+    any final-nasal-coda `{*a}` to `{*ą}`, which is no longer a
+    target of `OEUnstressedAFronting` (whose input type is
+    `{*a}`, not `{*ą}`).
+
+(b) The right-context requirement on `OEUnstressedAFronting`
+    (`EnglishStarVocalic C+ _ C`) restricts fronting to
+    non-initial medial syllables, which is the correct
+    phonological condition (Campbell §333, Hogg p.120).
+
+The forms that used to be protected by the breve are now
+protected either (a) by nasalization for `-ană`-type tails, or
+(b) by not matching the medial context for word-final or
+word-initial position. The empirical mismatch count is evidence
+that the partition survives intact: 33 before and 33 after.
+
+### §17.13.5 Files changed
+
+- `Germanic/fsts/germanic.txt` — four inventory sets, 18
+  `pgrmWeakTailVowel` alternatives, 14 dead breve alternatives
+  in `EnglishWeakTailVowelStar` and `OEARestorationStrongOTail`,
+  one `OldEnglishRemoveStars` entry, one
+  `OESecondaryNasalization` simplification, three rule
+  definitions (`OEFinalSchwaApocope`, `OEWeakTailReduction1a`,
+  `{*ă}→{*ə}` clause), two cascade removals, and comment
+  updates at ~lines 1755, 2145, 2200.
+- `Germanic/fsts/old_english_sandbox.txt` — remove the
+  `OESandboxAfterFinalSchwaApocope` stage definition and its
+  save-stack line.
+
+TSV and test fixtures were untouched. The `ă` character still
+appears in DEV_NOTES and some TSV NOTE/HISTORY prose columns;
+those are human-readable annotations and do not feed the FST.
+
+### §17.13.6 Outcome
+
+The grammar is now breve-free at every live code site. Combined
+with §17.11 and §17.12, no engineering diacritic conditions
+appear anywhere in the phonological cascade. Stress, position,
+and prosodic tier are the only triggers. The `{*ă}` mentions
+that remain in `germanic.txt` are §17.13 explanatory comments
+documenting the historical state and the refactor.
+
+Mismatches: 33 throughout (Phases A, B, C) and 33 after final
+rebuild from clean commit `c0963b1`.
