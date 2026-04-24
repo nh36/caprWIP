@@ -29179,3 +29179,178 @@ N.Akk.Pl.; the corresponding WS form *speru* is analogical. There
 is no sg. *speoru* in the attestation. Option D's target — OE A.Pl.
 *speoru* derived from PGmc NPl *\*speru* by back umlaut + light-stem
 -u retention — stands on secure philological ground.
+
+### §17.17.7  Detailed implementation plan
+
+**Goal**: enable `*spéru → speoru` by making apocope weight-sensitive
+with short diphthongs counted as light. Baseline at start: 31
+mismatches (`oe_mismatch_report.py`, 2026-04-24, post-§17.15).
+
+#### Phase 1 — FST refactor (germanic.txt)
+
+**1a. Split the diphthong class.** Replace the single
+`EnglishStarDiphthong` with a pair plus a union:
+
+```
+define EnglishStarShortDiphthong [
+    {*ea} | {*eo} | {*io}
+    # Short diphthongs: products of breaking of short V (always in a
+    # 2-C environment, already heavy by short-V+2C rule) OR of
+    # back-umlaut (single C environment, LIGHT by stem-weight).
+    # Listing them separately lets the heavy-apocope rule exclude them.
+];
+
+define EnglishStarLongDiphthong [
+    {*ai} | {*au} | {*ei} | {*eu} | {*iu} |
+    {*ēa} | {*ēo} | {*īe} | {*īo} |
+    {*ái} | {*áu} | {*éu} | {*íu} |
+    {*éa} | {*ḗa} | {*éo} | {*ío} | {*íe} |
+    {*ie}
+    # Long/acute diphthongs: inherited long, or acute-marked breaking
+    # products of stressed vowels. Breaking of stressed short V
+    # required a cluster (so the environment was always heavy);
+    # acute marks stress, but for apocope purposes these always fall
+    # in heavy environments.
+    # {*ie} is WS i-umlaut of *io; classed as long-quality pending probe.
+];
+
+define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
+```
+
+Keep the union `EnglishStarDiphthong` so callers that don't care
+about weight (OEJLossAfterHeavy, OELAdjacentSyncope) are unaffected.
+
+**1b. Narrow the apocope clauses.** In `OEHighVowelApocope`, change
+`EnglishStarDiphthong` to `EnglishStarLongDiphthong` on the four
+"diphthong + C+ + final-V" clauses (lines 2610–2612, 2623–2625).
+
+**1c. Audit other uses of `EnglishStarDiphthong`**:
+- **OEJLossAfterHeavy (2368)**: leave as union (no BU fed by *j).
+- **OEMedialSyncope (2656)**: change to `EnglishStarLongDiphthong`
+  for consistency with apocope (same Campbell §345 weight logic).
+- **OELAdjacentSyncope (2676)**: leave as union (applies to both
+  weights per R/T §6.7.4).
+
+#### Phase 2 — TSV refactor (germanic-aligned-final.tsv row 1070)
+
+Current row 1070: `PROTO *spéru, PROTOFORM *spéru, COUNTERPART spere`.
+
+Change to: `PROTO *spéru, PROTOFORM *spéru, COUNTERPART speoru`.
+
+**Keep the acute `*é`** — it marks primary stress (Hauptton) on the
+root syllable. §17.13 eliminated the BREVE (`ă`, unstressed marker);
+the acute stays.
+
+Add NOTES column: "Paradigm-cell choice: NApl. WS attested as
+levelled `speru` (after sg. `spere`, Campbell §210.1); Anglian
+`speoru` retains back-umlaut of short stem + light-stem -u
+(Campbell §§210.1, 211; Brunner §110.1; Ep.Gl. *Contos, speoru*)."
+
+#### Phase 3 — Probes (BEFORE implementation)
+
+- **P1 (control)**: *skipu, *gatu → retain -u. **Confirmed §17.17.2.**
+- **P2 (target)**: *spéru, *teru, *smeru, *faru after fix.
+  Expected: speoru, teoru, smeoru, faru.
+- **P3 (short V + 2C still apocopates after breaking)**: test
+  that heavy-by-cluster cases still lose -u. Probe *wordu, *landu
+  (no breaking), and *fyrhtu (short V + cluster).
+- **P4 (long diphthong still apocopates)**: *dēopu → dēop,
+  *lēofu → lēof.
+- **P5 (OEMedialSyncope)**: *strengiþō → strengþu or similar.
+- **P6 (acute-short-V = short V)**: confirm `*spéru` and `*speru`
+  yield the same output (the acute is in `EnglishStarShortVowel`
+  per line 879, so the context matches either way).
+- **P7 (regression)**: full `oe_mismatch_report.py`. Target 31→30.
+
+#### Phase 4 — Apply
+
+1. Edit germanic.txt (diphthong split + narrow apocope/medialsyncope).
+2. Rebuild `backend/old_english.bin`.
+3. Rerun P1–P6.
+4. Edit TSV row 1070.
+5. Run `oe_mismatch_report.py` (target 31→30).
+6. Adjust if regressions.
+7. Commit + push.
+
+#### Phase 5 — Documentation
+
+- Append probe results as §17.17.8.
+- Final Option-D justification as §17.16.20.
+- Commit DEV_NOTES separately from code.
+
+### §17.17.8 Implementation results (short-diphthong weight refactor)
+
+Baseline: 31 mismatches (commit `511d5cf`).
+Final:    30 mismatches.
+
+**Changes to `Germanic/fsts/germanic.txt`:**
+
+1. Split `EnglishStarDiphthong` into two subclasses and a union:
+   - `EnglishStarShortDiphthong` = {*ea *eo *io *éa *éo *ío *íe}
+     (back-umlaut products of short vowels, with or without Hauptton
+     acute; acute is a stress diacritic, NOT a length marker).
+   - `EnglishStarLongDiphthong` = {*ai *au *ei *eu *iu *ēa *ēo *īe *īo
+     *ái *áu *éu *íu *ḗa *ie} (inherited long diphthongs and their
+     acute counterparts, plus lengthened breaking *ḗa and WS palatal
+     *ie).
+   - `EnglishStarDiphthong` = union, preserved for any legacy consumer.
+
+2. Refactored `OEHighVowelApocope` diphthong clauses along weight
+   lines (Campbell §345, Hogg §6.22):
+   - `LongDiphthong + C+` → heavy → apocopate (any C count).
+   - `ShortDiphthong + C` (single C) → LIGHT → RETAIN -u. This is
+     the critical new case: back-umlaut of a light stem (e.g.
+     *spéru → speoru, *teru → teoru, *smeru → smeoru).
+   - `ShortDiphthong + C + C+` (2+ C) → heavy → apocopate
+     (e.g. *xérdō → heord, *márkō → mearc, *xállō → heall).
+   - Trisyllabic clauses extended symmetrically for
+     ShortDiphthong first-syllables: trisyllabic apocope fires
+     regardless of stress-syllable weight (Campbell §345),
+     so *xémonų → *xéomonų → heofon works after the split.
+
+3. Added Campbell §§238/346 rule: final high vowels lost after
+   /*x/ (h) regardless of weight, ordered before intervocalic
+   h-loss. E.g. *féxu → *féoxu → feoh (not feou).
+
+4. Refactored `OEMedialSyncope` disyllabic-heavy diphthong clause
+   from `Diphthong` → `LongDiphthong` for parallel treatment
+   (short diphthongs are not heavy enough to trigger medial
+   syncope either).
+
+**Changes to `Germanic/data/germanic-aligned-final.tsv`:**
+
+- Row 1070 (spear): COUNTERPART `spere` → `speoru`, IPA
+  `spɪəru`, NOTE updated to document paradigm-cell choice
+  (Épinal-Erfurt NApl, Brunner §110.1, Campbell §607, §210).
+  PROTOFORM `*spéru` retained (acute = Hauptton).
+
+**Verification probes (all after rebuild):**
+
+| input     | output  | expected | note                  |
+|-----------|---------|----------|-----------------------|
+| *spéru    | speoru  | speoru   | NApl, LIGHT, BU kept  |
+| *speru    | speoru  | —        | acute-less also works |
+| *teru     | teoru   | teoru    | LIGHT retains -u      |
+| *smeru    | smeoru  | smeoru   | LIGHT retains -u      |
+| *xérdō    | heord   | heord    | HEAVY (rd cluster)    |
+| *márkō    | mearc   | mearc    | HEAVY (rk cluster)    |
+| *xállō    | heall   | heall    | HEAVY (ll geminate)   |
+| *xémonų   | heofon  | heofon   | trisyllabic (light 1) |
+| *féxu     | feoh    | feoh     | §238 -u after h loss  |
+| *skipu    | sċipu   | sċipu    | LIGHT, no diphthong   |
+| *landu    | land    | land     | HEAVY, no diphthong   |
+
+**Regressions that self-resolved** (all restored to pre-fix
+behaviour by the round-3 short-diphthong-plus-cluster and
+-u-after-h clauses): heall, heord, mearc, heofon, feoh.
+
+**Known remaining issue** (not from this refactor, documented
+for future work): `*faru → fearu` — back-umlaut of *a is
+dialect-restricted (Kentish/Anglian, not WS). The current
+grammar fires BU on *a generally; this is pre-existing and
+not relevant to the spere/speoru fix.
+
+**Net mismatch delta:** 31 → 30 (one fewer: row 1070 now matches).
+
+See §17.16 for the original research motivation and Option D
+selection; §17.17.1–.7 for the bug diagnosis and staged plan.

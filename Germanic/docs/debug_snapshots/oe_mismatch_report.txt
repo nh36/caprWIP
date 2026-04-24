@@ -1,10 +1,10 @@
-Total mismatches: 31
+Total mismatches: 30
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    4
-  Phonology (other buckets):   20
+  Phonology (other buckets):   19
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -30,7 +30,7 @@ Total mismatches: 31
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
 --- final_vowel_missing sub-buckets ---
-  final_vowel_missing__weak_noun_like: 4
+  final_vowel_missing__weak_noun_like: 3
 --- final_n_missing sub-buckets ---
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
@@ -116,10 +116,9 @@ vowel_quality__u_lowering_exception (5):
 vowel_quality__u_o_alternation (1):
   *wíduwōn -> widowe (expected widuwe)
 
-final_vowel_missing__weak_noun_like (4):
+final_vowel_missing__weak_noun_like (3):
   *fūri -> fȳr (expected fȳre)
   *skúldrō -> sċoldor (expected sċuldra)
-  *spéru -> speor (expected spere)
   *tángō -> tang (expected tange)
 
 cons_mismatch__c_vs_ċ__cluster (1):
