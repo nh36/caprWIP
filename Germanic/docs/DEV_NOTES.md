@@ -29354,3 +29354,359 @@ not relevant to the spere/speoru fix.
 
 See §17.16 for the original research motivation and Option D
 selection; §17.17.1–.7 for the bug diagnosis and staged plan.
+
+### §17.16.20 Coda — PGmc \**speru*- 'spear': cell-by-cell paradigm dossier
+
+This subsection consolidates the paradigm-by-paradigm case underlying
+Option D (§§17.16.11–.19, §17.17). It is intended as a self-contained
+reference: a later reader should be able to adjudicate the WS *spere* ~
+Anglian *speoru* question without returning to the handbooks. Compiled
+from a two-agent research probe (PGmc reconstruction; OE attestation by
+cell × dialect) cross-checked against Ringe & Taylor 2014, Ringe 2006,
+Kroonen 2013, Orel 2003, Campbell 1959, Brunner 1965, Hogg 1992,
+Prokosch 1939, Pheifer 1974 (ed. Épinal/Erfurt), Lindsay (ed. Corpus),
+Wright–Wülcker, DOE, Bosworth–Toller.
+
+#### 1. PGmc paradigm reconstruction
+
+##### 1.1 Stem-class baseline
+
+Kroonen (2013: 467) lemmatises \**speru-* (listed "m.", but the West
+and North Germanic daughters are uniformly neuter — ON *spjǫr* n., OE
+*spere* n., OS *sper* n., OHG *sper* n., OFri. *spere* — Kroonen's "m."
+is a stem-lemma convention, not an assertion about PGmc grammatical
+gender). Orel (2003: 364) reconstructs \**speru* sb.n. Kluge–Seebold
+s.v. *Speer* gives PGmc \**speru-* n. There is **no Gothic cognate**:
+Gothic uses *gais* 'spear' (i-stem); *ga-spildnan* 'be destroyed'
+(considered briefly) is unrelated (← \**spelþ-*; Lehmann GED). Gothic's
+absence means proterokinetic/hysterokinetic distribution of u-stem
+endings is not directly testable; reconstruction projects from
+\**faihu* n. ~ \**sunuz* m. (Ringe 2006: 282; R/T 2014 §3.1.1, p. 55).
+PIE antecedent: \**sperH-u-* (Kroonen 2013: 467, with Lat. *sparus*
+← \**sprH-o-*). The proto-lexeme is a neuter u-stem from the outset;
+**no evidence for a heteroclite \*s/u or \*i/u paradigm** (settled in
+§17.16.18).
+
+##### 1.2 Cell-by-cell PGmc reconstruction
+
+Endings follow Ringe (2006: 282) and R/T (2014: 55 §3.1.1),
+cross-checked against Prokosch (1939 §89, p. 239) and Goth. \**faihu*
+(gsg. *faihaus*, dsg. *faihau*). Neuter u-stems lack the masc. NSg
+\*-z; the NAsg and NApl are morphologically distinct only in that
+the NApl was refashioned after the a-stem neuter pl. in \*-ō
+(Campbell §608).
+
+| Cell | PGmc        | Ending      | Source / note |
+|------|-------------|-------------|---------------|
+| NSg  | \**speru*   | \**-u*      | Neut. u-stem NAsg has bare \*-u; Ringe 2006:282; R/T §3.1.1. |
+| ASg  | \**speru*   | \**-u*      | Merges with NSg (neut.). |
+| GSg  | \**sperauz* | \**-auz*    | Goth. *faihaus*; Ringe 2006:282. |
+| DSg  | \**speriwi* | \**-iwi*    | Matches OHG dsg. *-iu*; pre-WGmc \*-iw- preserved in OHG. |
+| ISg  | \**sperū*   | \**-ū*      | Ringe 2006:282 (< PIE \*-uH); merges with NAsg after shortening. *Uncertain* — some handbooks merge ISg with DSg already in PGmc. |
+| NPl  | \**sperō* (> WGmc \**speru*) | \**-ō*  | Campbell §608: a-stem-borrowed pl. ending. |
+| APl  | \**sperō*   | as NPl      | |
+| GPl  | \**speriwǭ* | \**-iwǭ*    | Ringe 2006:282; R/T p. 55. \*w collapses early in WGmc. |
+| DPl  | \**sperumiz*| \**-umiz*   | Generalised u-stem dpl. |
+| IPl  | \**sperumiz*| = DPl       | DPl/IPl syncretise in PGmc u-stems (R/T p. 55). |
+
+Cells flagged uncertain: ISg (merger with NAsg likely already PGmc;
+no OE reflex either way); GPl (shape of \*-iwō vs. \*-ō varies between
+handbooks; Prokosch §89 gives simply \*-ǭ).
+
+#### 2. Sound-law projection to OE (no analogy)
+
+Standard relative chronology per R/T 2014 Pt. II, Campbell §§92–109,
+§§210–211, §345; Hogg §§5.103–110, §6.22:
+
+1. NWGmc: \*ē > \*ā (irrelevant); \*-z preserved.
+2. WGmc: loss of final \*-z; shortening of unstressed \*-ō > \*-u in
+   final syllables (Campbell §331.1, §608); loss of final nasal
+   vowels.
+3. Pre-OE: \*a > \*æ in unstressed syllables; \*ai > \*ā.
+4. OE: breaking; back umlaut (Campbell §§210–211, Hogg §§5.103–110);
+   high-vowel apocope by syllable weight (Campbell §345, Hogg §6.22);
+   i-umlaut; final \*-u > -o/-a in later stages.
+
+##### 2.1 NSg \**speru*
+
+\**speru* → (WGmc) \**speru* → (pre-OE) \**speru*. Light stem,
+final \*-u retained (§345). Root \*e + r + u in next syllable
+triggers BU in Anglian and Kentish unconditionally; in WS variably
+(Campbell §§210–211, Brunner §110.1, Hogg §5.103).
+
+- Anglian/Kentish: \**speoru*. WS (early): \**speoru*.
+  WS (variable / paradigm-pressed): \**speru*.
+- **Attested form**: *spere* — **NOT the lautgesetzlich u-stem
+  output** in any dialect (see §4).
+
+##### 2.2 ASg \**speru*
+
+Identical to NSg.
+
+##### 2.3 GSg \**sperauz*
+
+\**sperauz* → (WGmc) \**sperō* → (pre-OE) \**spera*. Root \*e + r +
+**back V** → BU triggered. Lautgesetzlich Angl. \**speora*; WS \**spera*
+(after de-BU analogy).
+
+**Attested form**: *speres* — a-stem GSg ending; this cell is
+analogically reshaped (cross-paradigm a-stem influence) in all dialects.
+
+##### 2.4 DSg \**speriwi*
+
+\**speriwi* → \**speri* (after loss of intervocalic \*w and outer \*-i)
+→ light-stem \*-i retained → \**speri* > *spere*. Root \*e + r + **i**
+(front) → **no BU triggered** (Hogg §5.104 — BU requires back V in
+next syllable). Inner \*i conditions no i-umlaut of root \*e (\*e does
+not i-umlaut). **All dialects: *spere* — regular.**
+
+This is the **only singular cell whose lautgesetzlich output matches
+attestation**.
+
+##### 2.5 ISg \**sperū*
+
+If distinct from NAsg: same derivation as NSg → \**speoru* (Angl.),
+\**speoru* ~ \**speru* (WS). Not independently attested (syncretises
+with DSg = *spere*).
+
+##### 2.6 NPl \**sperō* > WGmc \**speru*
+
+\**sperō* → (WGmc) \**speru* (Campbell §331.1, §608: a-stem-borrowed
+\*-ō shortened to \*-u before OE stage) → (pre-OE) \**speru*. Light
+stem → \*-u retained (§345). Root \*e + r + u → BU triggered.
+
+- Anglian/Kentish: ***speoru*** — lautgesetzlich.
+- WS (early): ***speoru*** — lautgesetzlich.
+- WS (standard, levelled): ***speru*** — analogical de-BU
+  (Campbell §210.1: *"Analogical removal is frequent, e.g. **speru**
+  spear … after infl. **spere**, n.s."*).
+
+##### 2.7 APl
+
+Identical to NPl.
+
+##### 2.8 GPl \**speriwǭ*
+
+Inner \*i blocks BU. Lautgesetzlich \**spera* in all dialects;
+attested *spera*. Non-diagnostic for BU.
+
+##### 2.9 DPl \**sperumiz*
+
+\**sperumiz* → (WGmc) \**sperum* (loss of \*-iz) → (pre-OE) \**sperum*.
+Root \*e + r + u → BU triggered.
+
+- Anglian/Kentish: \**speorum* — lautgesetzlich.
+- WS (levelled): *sperum* — analogical de-BU (Brunner §110.1
+  explicitly: *"in ws. Nom. Akk. Pl. speru, Dat. sperum, … nach dem
+  Sg. spere"*).
+
+##### 2.10 IPl
+
+= DPl.
+
+##### 2.11 Summary table — sound-law outputs vs. attestation
+
+| Cell | PGmc        | Reg. Angl./Kent. | Reg. WS (strict) | Attested OE      |
+|------|-------------|------------------|------------------|------------------|
+| NSg  | \**speru*   | \**speoru*       | \**speoru*~speru | *spere* (NOT reg)|
+| ASg  | \**speru*   | \**speoru*       | \**speoru*~speru | *spere* (NOT reg)|
+| GSg  | \**sperauz* | \**speora*       | \**speora*~spera | *speres* (NOT reg)|
+| DSg  | \**speriwi* | ***spere***      | ***spere***      | *spere* ✓ REG    |
+| ISg  | \**sperū*   | \**speoru*       | \**speoru*~speru | (= DSg *spere*)  |
+| NPl  | \**speru*   | ***speoru***     | ***speoru***     | *speoru*/*speru* |
+| APl  | \**speru*   | ***speoru***     | ***speoru***     | *speoru*/*speru* |
+| GPl  | \**speriwǭ* | *spera*          | *spera*          | *spera* ✓ REG    |
+| DPl  | \**sperumiz*| \**speorum*      | \**speorum*~spm  | *sperum* (level.)|
+| IPl  | = DPl       | as DPl           | as DPl           | as DPl           |
+
+#### 3. Attested OE forms by cell × dialect
+
+Sources: Campbell §§607–610, §§210–211; Brunner §§263, 288, §110.1;
+DOE s.v. *spere*; Bosworth–Toller s.v. *spere*, *speoru*; Hogg 1992
+§§5.103–110; Pheifer 1974 (Épinal/Erfurt); Lindsay (Corpus);
+Wright–Wülcker; Hessels (Leiden).
+
+| Cell | WS (eW-S/lW-S) | Anglian/Mercian | Northumbrian | Kentish | Early glossaries |
+|------|----------------|-----------------|--------------|---------|------------------|
+| NSg | *spere* (Ælfric, Beowulf, Maldon) | *spere* | *spere* (Lindisfarne, rare) | *spere* | *spere* |
+| ASg | *spere* | *spere* | *spere* | — | *spere* |
+| GSg | *speres* | *speres* | *speres* | — | — |
+| DSg | *spere* | *spere* | *spere* | — | — |
+| NPl | **speru** (Maldon 25 *feolhearde speru*; Bwf; Ælfric) | **speoru** (Corpus Glossary, Cleopatra) | *speoru* (sporadic) | *speoru* (expected, thinly attested) | **speoru** (Corpus #528 *contos : speoru*; Cleopatra *Contos, speoru odde spreotas*; Leiden compound) |
+| APl | *speru* | **speoru** | *speoru* | — | **speoru** |
+| GPl | *spera* | *spera* | — | — | — |
+| DPl | *sperum* | *sperum* (no BU-retained attestation) | — | — | — |
+| Cmpd | *spere-* | ***speoru-*** (Leiden Glossary *speoruliran* 'spear-muscles', cited Campbell §276) | — | — | ***speoru-*** |
+
+##### 3.1 Source-locus correction
+
+Earlier sections (and the original DEV_NOTES §17.16.19) cited the
+locus of *speoru* as **Épinal-Erfurt** "Contos, speoru" following
+Brunner §110.1 ("Pl. Ep. Gl."). On closer inspection (research agent
+2), the canonical form is best cited as **Corpus Glossary entry #528
+*contos : speoru*** (Mercian, ca. 800; Lindsay's edition), with
+parallels in the Cleopatra Glossary. Brunner's "Ep. Gl." is a loose
+citation; Épinal itself uses *spreot* for *contus*. The Erfurt and
+later glossaries (Cleopatra) preserve *speoru* alongside *spreotas*
+in the same gloss line. Épinal's *teru, smeru* (without BU) vs.
+Corpus *teoru, smeoru* (with BU) reflect the same diachronic
+contrast — the early-Mercian Corpus and Cleopatra glosses are the
+better witnesses to BU, the Épinal glossary an earlier (slightly
+pre-BU?) layer.
+
+##### 3.2 Key empirical findings
+
+- **Anglian NSg with BU is not attested.** The NSg is *spere* across
+  all dialects, because the singular paradigm reshaped to the i-stem
+  (or DSg-pivot) pattern *before* any OE stage. The "expected
+  Anglian \**speoru* NSg" is a virtual form — never written.
+- **NApl *speoru* is robustly attested in Anglian and the early
+  glossaries** (Corpus #528, Cleopatra, Leiden compound, sporadic
+  Northumbrian). Standard WS uses levelled *speru*.
+- Brunner §110.1 explicit: *"doch ist das eo in der Flexion durch
+  Ausgleichung beseitigt in ws. Nom. Akk. Pl. speru, Dat. sperum …
+  nach dem Sg. spere Speer"*.
+- Campbell §211 cites *speoru* as a textbook example of BU of \*e
+  before r + u.
+
+#### 4. Lautgesetzlich vs. analogical, cell by cell
+
+| Cell | WS | Anglian | Nthb | Analysis |
+|------|----|---------|------|----------|
+| NSg *spere* | (b) | (b) | (b) | Analogical from i-stem NSg \**speriz* OR from DSg \**speriwi* > *spere* by paradigmatic levelling. Lautgesetzlich u-stem output \**speoru*/\**speru* never surfaces in sg.; reshape pre-OE. |
+| ASg *spere* | (b) | (b) | (b) | Follows NSg. |
+| GSg *speres* | (b) | (b) | (b) | a-stem GSg \*-es imported. |
+| DSg *spere* | (a) | (a) | (a) | **Regular** — inner \*i blocks BU. The pivot for sg. levelling. |
+| ISg | (b) | (b) | (b) | Syncretised with DSg. |
+| NPl WS *speru* | (b) | — | — | **Analogical de-BU**, levelled from NSg *spere* (Campbell §210.1, Brunner §110.1). |
+| NPl Angl. *speoru* | — | **(a)** | (a) | **Regular** BU (Campbell §211). |
+| APl | as NPl | as NPl | — | |
+| GPl *spera* | (a/c) | (a/c) | — | No BU expected (inner \*i); ending non-diagnostic. |
+| DPl WS *sperum* | (b) | — | — | Analogical de-BU; Brunner §110.1 lists alongside *speru*. |
+| DPl \**speorum* Angl. | — | (a) expected | — | Lautgesetzlich; thinly attested. |
+
+##### 4.1 WS *spere* NSg — no de-BU question arises
+
+WS NSg *spere* cannot be analysed as "de-back-umlauted from \**speoru*",
+because the attested form has final **-e**, not **-u**. The -u that
+would *trigger* BU in the NSg has already been replaced by -e in the
+sg. before any OE stage — either (i) by a u→i stem-class shift in the
+sg. (\**speriz* > *spere*) pre-OE, or (ii) by levelling of DSg *spere*
+(< \**speriwi*) over the rest of the sg. paradigm. Either way, BU never
+fired in the sg. The *e* of *spere* is a primary -e, not a
+de-back-umlauted vowel.
+
+##### 4.2 WS NApl *speru* — de-BU, NOT phonologically blocked BU
+
+WS *speru/sperum* are **specifically levelled** forms, not products of
+a strict-WS phonological block on BU. Campbell §210.1 is explicit
+("Analogical removal is frequent, e.g. **speru** spear, **nefum** d.p.
+nephews, after infl. **spere**, n.s. **nefa**"). Parallels:
+
+- *teru* 'tar' WS variant ~ standard *teoru*: WS does have BU before
+  /r/+u commonly.
+- *heorot, eofor, heofon, beofor, Eoforwīċ* in WS show BU before
+  labials and liquids (Campbell §210.1).
+- *nefum* dpl 'nephews' is levelled from *nefa* NSg by the same
+  mechanism as *sperum* from *spere*.
+
+Therefore strict WS has BU of \*e before r + back V as a regular sound
+law; WS *speru/sperum* are paradigmatically levelled forms under
+pressure from five sg. cells with -e and no BU.
+
+#### 5. Why a singular target cannot diagnose u-stem BU
+
+Four of the five singular cells *would* show BU by sound law, but
+**none is attested with BU in any dialect**:
+
+| Sg. cell | Next-syll V | BU fires? | Reg. Anglian | Attested |
+|----------|-------------|-----------|--------------|----------|
+| NSg \**speru*   | \*u | yes | \**speoru* | *spere*  ✗ |
+| ASg \**speru*   | \*u | yes | \**speoru* | *spere*  ✗ |
+| GSg \**sperauz* | \*a | yes | \**speora* | *speres* ✗ |
+| DSg \**speriwi* | \*i | **no** | *spere* | *spere* ✓ |
+| ISg \**sperū*   | \*u | yes | \**speoru* | (= DSg) ✗ |
+
+The DSg *spere* matches sound-law output, but shows **no BU**, so it
+does not diagnose u-stem vocalism — the same surface form would result
+from an i-stem reconstruction. **The NApl is therefore the unique cell
+where (a) PGmc is robustly reconstructed, (b) OE shows BU, (c) Anglian
+*speoru* is attested, and (d) WS *speru* is transparently analytically
+secondary.**
+
+This is the philological anchor for Option D, and the answer to the
+user's question of whether we needed to switch to the plural to get
+the Anglian form: **yes — the singular paradigm is everywhere reshaped
+pre-OE; only the NApl preserves the lautgesetzlich u-stem output with
+BU intact.**
+
+#### 6. Paradigm-levelling timeline
+
+- **Pre-OE**: sg. shift from u-stem to i-stem (or DSg-pivot
+  generalisation) complete before earliest records. No OE dialect
+  attests u-stem sg. \**speoru*. Cf. *sunu* m. which preserves
+  u-stem sg. \**sunu*; spear is non-trivially reshaped already.
+- **Early OE (7th–8th c. glossaries)**: conservative NApl *speoru*
+  in Corpus, Cleopatra, Leiden. Compound *speoru-* attested. Mercian
+  paradigm at this stage: sg. *spere* (already levelled) + pl.
+  *speoru* (lautgesetzlich).
+- **Early WS (Alfredian, 9th c.)**: *speoru* sporadic alongside
+  *speru*; de-BU levelling in progress.
+- **Late WS (Ælfric, Wulfstan, 10th–11th c.)**: NApl *speru*,
+  DPl *sperum* — de-BU complete in WS.
+- **Late OE**: variant *speora* (Clark Hall) — re-interpretation as
+  weak-like plural.
+
+The Mercian glossaries thus attest precisely the predicted
+synchronic state: sg. levelled to DSg *spere* + pl. lautgesetzlich
+*speoru* with BU.
+
+#### 7. Dialectal picture
+
+| Dialect | Cells preserving lautgesetzlich BU | Cells with analogical de-BU |
+|---------|-----------------------------------|------------------------------|
+| Anglian (Mercian) | NApl *speoru*; cmpd *speoru-*; (DPl \**speorum* expected) | Sg. fully levelled to *spere*. |
+| Kentish | NApl *speoru* (expected; thin documentation) | Sg. levelled. |
+| Northumbrian | NApl *speoru* (sporadic) | Sg. levelled; pl. under WS pressure later. |
+| Early WS | NApl *speoru* sporadic | Sg. levelled; pl. levelling in progress. |
+| Standard lWS | None | NApl *speru*, DPl *sperum* both de-BU'd. |
+| Early glossaries | NApl *speoru*; cmpd *speoru-* | Sg. *spere*. |
+
+The single cell where dialects visibly diverge is **NApl (and DPl)**.
+This is precisely the cell Option D selects as the FST target.
+
+#### 8. Bibliography
+
+- Brunner, K. 1965. *Altenglische Grammatik*. 3. Aufl. Tübingen:
+  Niemeyer. §110.1 (BU and its analogical removal, pp. 85–86, with
+  explicit *speru / sperum* levelling); §§263, 270–275, 288.
+- Campbell, A. 1959. *Old English Grammar*. Oxford: OUP. §§210–211
+  (BU, WS analogical removal); §276 (Leiden *speoruliran*); §345
+  (high-vowel apocope by stem weight); §§607–610 (neut. i-stem
+  paradigm); §617.
+- DOE (Dictionary of Old English, Toronto). s.v. *spere* n.
+- Bosworth–Toller. s.v. *spere*, *speoru*.
+- Fulk, R. D. 2018. *A Comparative Grammar of the Early Germanic
+  Languages*. Amsterdam: Benjamins.
+- Hogg, R. M. 1992. *A Grammar of Old English, vol. 1: Phonology*.
+  Oxford: Blackwell. §§5.103–110 (BU); §6.22 (apocope).
+- Hogg & Fulk 2011. *A Grammar of Old English, vol. 2: Morphology*.
+- Kluge–Seebold 2011, s.v. *Speer*.
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*.
+  Leiden: Brill. p. 467 s.v. \**speru-*.
+- Lehmann, W. P. 1986. *A Gothic Etymological Dictionary*. Leiden:
+  Brill. (s.v. *gais*; absence of \**speru-* cognate.)
+- Lindsay, W. M. (ed.). The Corpus Glossary. Cambridge.
+- Orel, V. 2003. *A Handbook of Germanic Etymology*. Leiden: Brill.
+  p. 364, s.v. \**speru*.
+- Pheifer, J. D. 1974. *Old English Glosses in the Épinal-Erfurt
+  Glossary*. Oxford.
+- Prokosch, E. 1939. *A Comparative Germanic Grammar*. Philadelphia:
+  LSA. §§89–90 (u-stem paradigm).
+- Ringe, D. 2006. *From Proto-Indo-European to Proto-Germanic*.
+  Oxford: OUP. p. 282; p. 289.
+- Ringe, D. & A. Taylor. 2014. *The Development of Old English*.
+  Oxford: OUP. pp. 55 §3.1.1; p. 115; p. 385.
+- Wright, T. & R. P. Wülcker. *Anglo-Saxon and Old English
+  Vocabularies*. (For Cleopatra Glossary *Contos, speoru odde
+  spreotas*.)
