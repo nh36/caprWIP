@@ -28387,3 +28387,137 @@ convergence explicitly.
 
 Expected: 33 → 32 mismatches (remove one row's divergence, no other row
 affected since PGmc *\*kweðuz* is unique to this TSV row).
+
+## §17.15  sife PROTOFORM research (row 1003 fix)
+
+### §17.15.1  Problem
+
+Row 1003 in `germanic-aligned-final.tsv` had PROTOFORM `*síbaz`
+(masc. a-stem) with COUNTERPART `sife` 'sieve'. The FST correctly
+derives `*síbaz → sif` (a-stem neut./masc. nom.sg., with loss of
+final *-az), but the expected OE attested form is `sife` (with final
+-e). This registered as a `final_vowel_missing__weak_noun_like`
+mismatch in the §17.14-baseline report of 32.
+
+### §17.15.2  Research methodology
+
+Per DEV_NOTES house rule (§17.14.2), three parallel general-purpose
+research agents were dispatched:
+
+- **sife-kroonen-orel** — etymological reconstruction (Kroonen 2013,
+  Orel 2003, Kluge/Seebold, Pokorny, Ringe & Taylor 2014).
+- **sife-oe-attestation** — OE attestation and paradigm class
+  (Bosworth-Toller, Clark Hall, Bright's Reader, Campbell 1959,
+  Brunner 1965).
+- **sife-wgmc-gemination** — WGmc gemination behavior with *bj
+  (R/T vol.2, Hogg 1992, Campbell §§407–409, Fulk 2018 §5.9).
+
+All three agents **converged** on a single reconstruction:
+**PGmc *sibi-** (short-stem neuter i-stem, historically from a
+PGmc/PIE neuter s-stem *sib-iz*).
+
+### §17.15.3  Etymological consensus
+
+| Source | Reconstruction | Stem class | Notes |
+|---|---|---|---|
+| Kluge/Seebold (s.v. *Sieb*) | WGmc *sibi- n. | i-stem neut. | "Auslautvariante von *seihen*" |
+| Orel 2003:326 | *sibaz sb. n. | ambiguous (his -az = cover notation) | IE *seip-/*seib- (Pokorny IEW I 889–890, 894) |
+| Brunner §288 Anm. | PGmc *sib-iz > i-decl. | orig. s-stem | absorbed into i-stem class (Brunner §263.2) |
+| Campbell §§608–609 | WGmc *sibi (short neut. i-stem) | i-stem neut. | grouped with *spere*, *gedyre*, *orlege* |
+| Kroonen 2013 | (no headword for 'sieve') | — | lists only *\*sebjō-* 'kinship' (p. 429, ja-stem, → OE sibb), *\*sēdla-* 'sieve' (p. 433, → ON sáld, unrelated root) |
+
+**PIE root**: *seib-/*seip- 'to pour, drip, ooze, filter' (Pokorny IEW
+I 889–890, 894). Zero-grade *sib-* gives PGmc *i directly; no *e→*i
+raising issue arises (contrast cwedu §17.14 where e-grade vs i-grade
+was the central question).
+
+### §17.15.4  Why NOT *sibja- (ja-stem neut.)
+
+A reconstruction *sibja- (light-stem ja-stem neuter, parallel to
+*wabja- 'web' → webb, *kunja- 'kin' → cynn) would feed West Germanic
+Consonant Gemination and yield **OE *sibb(e)* — **not** *sife*. This
+is exactly the fate of the homophonous-root lexeme *sibjō- 'kinship,
+peace' → OE sibb (fem. jō-stem, Kroonen 2013:429; Ringe & Taylor
+2014 §3.2.4). The minimal pair OE *sibb* 'kinship' vs OE *sife*
+'sieve' is a diagnostic:
+
+- sibb ← *sibjō- → WGG *sibbjō → *sibbu → sibb  (geminate survives)
+- sife ← *sibi-  (no *j in the cell) → no WGG → intervocalic /b/ >
+  [β]/[v], written ⟨f⟩; *-i > -e after light stem.
+
+OHG evidence reinforces: OHG *sib* (ungeminated, no **sipf*) vs
+OHG *sippa* 'kinship' (geminated). A *sibja- etymon for 'sieve' is
+excluded by the continental WGmc cognate set.
+
+### §17.15.5  Why NOT *sibaz (masc. a-stem, current TSV value)
+
+A masc./neut. a-stem *sibaz would give OE **sif** (nom.sg. zero
+ending after loss of final *-az/*-ą). This is exactly what the FST
+currently produces. But the attested OE form is *sife* with final
+-e, and the Corpus Glossary preserves the older spelling *sibi* with
+the diagnostic *-i* ending of the i-/s-stem class (Campbell §444:
+"Cp. sibi sieve", archaic ⟨b⟩ for the voiced spirant later written
+⟨f⟩).
+
+### §17.15.6  Lautgesetzlich derivation of OE *sife*
+
+| Stage | Form | Rule |
+|---|---|---|
+| PIE | *sib-i-s / *sib-es- | s-stem or i-stem (neut.) |
+| PGmc (NAsg) | *sib-iz | Grimm; n-stem class absorbed into i-decl. (Brunner §288 Anm.) |
+| WGmc | *sibi | final *-z loss (Brunner §182) |
+| pre-OE | *sibi | *-i retained after light stem (Campbell §608) |
+| Early OE (Cp.Gl.) | **sibi** | archaic ⟨b⟩ orthography (Campbell §§444, 11554) |
+| Classical OE | **sife** | ⟨f⟩ for voiced spirant [β]; *-i > -e (Brunner §263.2 Anm. 1) |
+
+All rules are standard and already implemented in our FST (final-*z
+loss, intervocalic spirantization of *b, *-i retention after light
+stem, *-i > -e).
+
+### §17.15.7  FST probe (pre-change)
+
+```
+$ echo 'sibi'  | flookup -i backend/old_english.bin   → sife  ✓
+$ echo 'sibiz' | flookup -i backend/old_english.bin   → sife  ✓
+$ echo 'síbi'  | flookup -i backend/old_english.bin   → sife  ✓
+$ echo 'síbiz' | flookup -i backend/old_english.bin   → sife  ✓
+```
+
+All four candidate inputs (bare/with-*z, bare/acute) yield `sife`
+directly. No rule changes required. The TSV PROTOFORM encoding
+convention (acute on stressed vowel, no final *-z) selects **`*síbi`**
+as the canonical form.
+
+### §17.15.8  TSV change
+
+Row 1003 PROTOFORM: `*síbaz` → **`*síbi`**
+Row 1003 ALIGNMENT: `s ɪ v ( - - )` → `s ɪ v ( - )` (one final slot
+rather than two, matching the *spéru → spere* convention at row 1070
+for the same morphological class).
+
+NOTE extended to cite §17.15.
+
+Cognate-set rows for English/Dutch/German (1002/1001/1004) retain
+their *síbaz encoding under the precedent set by §17.14 (cwedu); the
+OE row is the only one whose PROTOFORM is audited for FST derivation.
+
+### §17.15.9  Expected outcome
+
+33 → 31 mismatches (cwedu §17.14 removed one, sife §17.15 removes
+another). The §17.14-baseline snapshot shows 32 mismatches post-cwedu;
+this change targets one of the 5 weak-noun `final_vowel_missing`
+rows, reducing that bucket from 5 to 4.
+
+### §17.15.10  Citations
+
+- Bosworth-Toller s.v. *āsiftan*: "Āsifte þurh sife, Lch. ii.72,28."
+- Brunner, K. 1965. *Altenglische Grammatik*. §§182, 257 Anm. 1, 263.2, 288 Anm.
+- Campbell, A. 1959. *Old English Grammar*. §§407–409 (WGG), §§444, 608–609, 11554.
+- Clark Hall, J. R. *A Concise A-S Dictionary*, s.v. *hǣr-sife*.
+- Fulk, R. D. 2018. *Comparative Grammar of the Early Germanic Languages*. §5.9.
+- Hogg, R. 1992. *Grammar of Old English*, vol. 1, §§4.18–4.20.
+- Kluge, F. / Seebold, E. *Etymologisches Wörterbuch*, s.v. *Sieb*.
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*, pp. 429 (*sebjō-), 433 (*sēdla-).
+- Orel, V. 2003. *Handbook of Germanic Etymology*, p. 326 (*sibaz).
+- Pokorny, J. *Indogermanisches etymologisches Wörterbuch* I 889–890, 894.
+- Ringe, D. & Taylor, A. 2014. *The Development of Old English*, §3.2.4, pp. 383–384.
