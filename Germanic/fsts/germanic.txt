@@ -802,7 +802,6 @@ define OldEnglishRemoveStars [
     {*ʃ} -> s ċ,
     {*a} -> a,
     {*ā} -> ā,
-    {*ă} -> a,
     {*ą} -> a,
     {*ų} -> u,
     {*ɔ} -> o,
@@ -937,21 +936,14 @@ define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConson
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
 define EnglishWeakTailVowelStar [
-    {*ă} |
     # §17.10.12 Phase 1d-α: plain-a twins mirroring pgrmWeakTailVowel.
     {*a} |
     {*i} |
-    {*ă} {*g} {*ą} |
     {*a} {*g} {*ą} |
-    {*ă} {*l} {*ō} |
     {*a} {*l} {*ō} |
-    {*ă} {*n} |
     {*a} {*n} |
-    {*ă} {*n} {*ą} |
     {*a} {*n} {*ą} |
-    {*ă} {*n} {*ē} |
     {*a} {*n} {*ē} |
-    {*a} {*r} {*ă} {*z} |
     {*a} {*r} {*a} {*z} |
     {*a} {*n} {*a} {*z} |
     {*j} {*a} {*n} {*ą} |
@@ -959,7 +951,6 @@ define EnglishWeakTailVowelStar [
     {*i} {*n} {*a} {*z} |
     {*i} {*j} {*a} {*z} |
     {*u} {*n} {*a} {*z} |
-    {*ă} {*z} |
     {*a} {*z} |
     {*e} {*n} {*a} {*z} |
     {*e} {*r} |
@@ -1110,9 +1101,8 @@ define PWGmcSurvivingBimoricOUnrounding [
     {*ō} -> {*ā} || _ .#.
 ];
 
-define OEFinalSchwaApocope [
-    {*ă} -> 0 || _ .#.
-];
+# §17.13: OEFinalSchwaApocope removed — body was {*ă} -> 0 || _ .#.,
+# vacuous after breve elimination (no {*ă} ever introduced).
 
 # PGmc voiced obstruent allophony (R/T vol.1 §3.2.4, vol.2 p.100):
 # *b had stop [b] word-initially, after nasals, and geminated;
@@ -1294,8 +1284,6 @@ define EnglishWeakTailReductions (
     {*a} -> {*ə} || _ .#.
 ) .o. (
     {*a} -> {*ə} || _ EnglishWeakTailVowel
-) .o. (
-    {*ă} -> {*ə}
 ) .o. (
     {*ą} -> {*ə}
 ) .o. (
@@ -1764,8 +1752,10 @@ define AngloFrisianBrightening [
 # Only genuine back suffixes like nom.pl. *-os trigger restoration (*dagos → dagas).
 #
 # WEAK-TAIL EXCLUSION: Only FULL (stressed) vowels trigger restoration. Weak-tail
-# vowels {*ă} and {*ą} are UNSTRESSED and do NOT trigger restoration, even though
-# they are underlyingly back.
+# unstressed back vowels ({*ą} and the participle/infinitive *-a in inflectional
+# position) do NOT trigger restoration, even though they are underlyingly back.
+# (Prior to §17.13 this was carried by the breve {*ă}; now the distinction is
+# pattern-based via OEARestorationStrongOTail exclusion subtraction.)
 # {*ô} (trimoric *ō) is a back vowel that triggers A-restoration, but is not
 # in PGmcStarBackVowel to avoid regressions in general vowel rules.
 # {*ǭ} (nasalized *ō, from fem. n-stem *-ōn via NWGmcNStemNLoss) is phonetically
@@ -1781,7 +1771,6 @@ define OEARestorationIntervening [
 # even though technically followed by a weak tail vowel). These are subtracted
 # from the weak tail exclusion.
 define OEARestorationStrongOTail [
-    {*ă} {*l} {*ō} |
     {*i} {*l} {*ō} |
     {*i} {*l} {*ō} {*n} |
     {*u} {*w} {*ō} {*n} |
@@ -1790,16 +1779,7 @@ define OEARestorationStrongOTail [
     {*ō} {*n} |
     {*ō} {*n} {*d} {*z} |
     {*ō} {*r} {*e} {*z} |
-    {*ō} {*θ} {*z} |
-    # Infinitive -ăną
-    {*ă} {*n} {*ą} |
-    # Agent/abstract -ăz
-    {*ă} {*z} |
-    # Weak noun -ă + case endings
-    {*ă} |
-    {*ă} {*n} |
-    # -arăz pattern (e.g., *xamarăz -> hamor)
-    {*a} {*r} {*ă} {*z}
+    {*ō} {*θ} {*z}
 ];
 
 define OEARestorationWeakTailVowel [
@@ -2168,18 +2148,25 @@ define OEPrefixAReduction [
 # Unstressed suffix *a → *æ (parallel to stressed AFB, but applies before nasals too).
 # This feeds OEWeakTailReduction3 (*æ → *e), giving the chain: *a → *æ → *e.
 #
-# CRITICAL: Must run BEFORE OEWeakTailReduction1 ({*ă}→{*a}) to preserve the distinction
-# between original *a (e.g., in *-anăz participle suffix) and *ă (e.g., in *-jăną infinitive).
-# - *a (true short a, no breve): undergoes fronting → *æ → *e
-# - *ă (weak/reduced, with breve): skips this rule, becomes *a via Reduction1, stays *a
+# §17.13: Previously the grammar distinguished breve-marked weak *ă from plain
+# *a via OEWeakTailReduction1a ({*ă}→{*a}). The OEUnstressedAFronting rule
+# ran BEFORE Reduction1a so only genuine unstressed *a (e.g. in *-anaz
+# participle suffix) fronted, while transient *ă (e.g. in -janą infinitive
+# before OESecondaryNasalization) was protected. With breve eliminated the
+# stressed/unstressed partition is now carried entirely by:
+#   (a) OESecondaryNasalization protecting coda-nasal *a via *a→*ą before this
+#       rule fires, and
+#   (b) the right-context requirement below restricting fronting to
+#       non-initial medial syllables.
 #
-# This is NOT a separate sound change but an extension of AFB to unstressed pre-nasal
-# positions. AFB (line 1248) explicitly blocks before nasals, which is correct for
-# STRESSED syllables (giving OE mann not *mænn). But in UNSTRESSED syllables, fronting
-# did occur, as shown by participle *-anaz → *-æn → -en.
+# This is NOT a separate sound change but an extension of AFB to unstressed
+# positions. AFB (line 1248) explicitly blocks before nasals, which is
+# correct for STRESSED syllables (giving OE mann not *mænn). But in
+# UNSTRESSED syllables, fronting did occur, as shown by participle
+# *-anaz → *-æn → -en.
 #
-# Example: PGmc *funðanăz → *funðænăz → *funden (via *æ→*e)
-# Counter-example: *liznōjăną → leornian (the *ă skips this rule, stays as -ian)
+# Example: PGmc *funðanaz → *funðænaz → *funden (via *æ→*e)
+# Counter-example: *bakaną → *bakąną (nasalized, protected) → bacan
 
 # SECONDARY NASALIZATION (R/T vol.2 §5.1.2, p.153):
 # "Unstressed *a was nasalized, and therefore not fronted, only if it was
@@ -2197,7 +2184,7 @@ define OEPrefixAReduction [
 #   Infinitive *bakaną: *bak-a-ną → *bak-ą-ną (nasalized) → bacan
 #   Participle *fundanăz: *fund-an-ăz → no match → *fund-æn-ăz → funden
 define OESecondaryNasalization [
-    [{*a} | {*ă}] -> {*ą} || _ {*n} .#.
+    {*a} -> {*ą} || _ {*n} .#.
 ];
 
 define OEUnstressedAFronting [
@@ -2218,14 +2205,12 @@ define OEUnstressedAFronting [
 # R/T vol.2 §5.1.2: unstressed *a before coda nasal was nasalized, blocking fronting.
 # After blocking fronting, the nasalization is lost → plain *a.
 #
-# FOMA BUG WORKAROUND (2026-03-19): The original parallel rule definition
-# [R1, R2, R3] creates identity arcs that block the {*ă} → {*a} conversion.
-# When * and ă are separate symbols in the sigma (from the lexicon), parallel
-# rules compete with identity paths. Sequential composition avoids this.
-define OEWeakTailReduction1a [{*ă} -> {*a}];
+# §17.13: Breve {*ă} eliminated from grammar. OEWeakTailReduction1a
+# ({*ă}→{*a}) was the breve-to-plain-a conversion; now vacuous and
+# deleted. Nasalization branches (1b, 1c) retained.
 define OEWeakTailReduction1b [{*ą} -> {*a} || _ [{*n} | {*m}]];
 define OEWeakTailReduction1c [{*ą} -> {*ɔ̆}];
-define OEWeakTailReduction1 OEWeakTailReduction1a .o. OEWeakTailReduction1b .o. OEWeakTailReduction1c;
+define OEWeakTailReduction1 OEWeakTailReduction1b .o. OEWeakTailReduction1c;
 # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120).
 # Only targets *ĭ (marked unstressed by OEUnstressedIMarking), not stressed *i.
 define OEWeakTailReduction2 [
@@ -2869,7 +2854,6 @@ define EnglishProtoToOE (
     .o. OEHeavySyllableNasalApocope
     # OESecondaryNasalization now simply checks `_ {*n} .#.` — true coda position
     .o. OESecondaryNasalization
-    .o. OEFinalSchwaApocope
     # PWGmc j-gemination moved to PWGmcChanges (2026-03-18). Must run BEFORE
     # PWGmcSyllabicJ so that *natją → *nattją (gemination creates heavy stem).
     # See DEV_NOTES.md "OE nett 'net': ja-stem Gemination Chronology Bug"
@@ -3010,7 +2994,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEBreaking
     .o. OEVelarFricativePalatalization
     .o. OEARestoration
-    .o. OEFinalSchwaApocope
     .o. PGmcBAllophony
     .o. OESkPalatalization
     .o. OEVelarPalatalization
