@@ -28266,3 +28266,124 @@ comments documenting prior builds. None of these feed the FST.
 | E/F   | Final dead-code cleanup | no live code remains (§17.13.8) |
 
 Mismatch count: 33 before §17.13 → 33 after §17.13.
+
+
+## §17.14 — OE `cwedu` 'cud': PROTOFORM correction (2026-04-24)
+
+### §17.14.1 The mismatch
+
+At §17.13-baseline (33 mismatches), the row
+
+| ID | PROTOFORM | FST output | COUNTERPART (target) |
+|----|-----------|------------|----------------------|
+| 1983 | `*kwíθuz` | `cwiþu` | `cwedu` |
+
+showed two surface divergences: *i* vs *e* in the stem vowel, and *þ* vs *d*
+in the medial dental. Both divergences are diagnostic of the PROTOFORM being
+incorrectly reconstructed.
+
+### §17.14.2 Source survey
+
+I consulted Kroonen (2013) *EDPG*, Orel (2003) *Handbook*, Ringe & Taylor
+(2014) *Development of OE* (R/T), Fulk (2018) *Comparative Grammar*,
+Campbell (1959), Hogg (1992) vol.1, Luick (1914-40), Bosworth-Toller, the
+DOE fascicle for C, Pokorny (IEW), Kluge/Seebold, and the Sanskrit cognate
+evidence via de Vaan (2008).
+
+Convergent result:
+
+**PIE** `*gʷet-u-` 'resin', a mobile-accent u-stem. Sanskrit **jatú** 'lac'
+(with root-initial short *a* < PIE *e and oxytone accent on the suffix) is
+the diagnostic IE cognate: Skt *-t-* proves PIE plain voiceless **\*t** (not
+*\*dʰ*, which would give Skt *-dh-*). Pokorny IEW s.v. *gʷet-* 'Harz'.
+
+**PGmc** `*kweðuz` m., u-stem, 'resin'. The voiced dental is **Verner-voiced
+from PIE *t** under post-tonic accent in the weak-case cells of the
+mobile-accent paradigm (*\*gʷt-éu-s* etc.), with paradigmatic levelling of
+the voiced grade throughout. Kroonen (2013:313) lemmatises as **\*kweduz**;
+in Leiden-school PGmc orthography *d* intervocalically denotes **[ð]**
+(Kroonen's IPA gloss `/ˈkwe.ðuz/`). Orel (2003) lists both *\*kweðuz* and
+*\*kwiðuz* (with the *ð* explicit). R/T (2014:323) cite the PWGmc stage as
+**\*kwidu**, presupposing a PGmc *\*kweð-* precursor with the regular
+pre-PWGmc raising *e > i / _Cu* operating on u-stems.
+
+**Direct NGmc evidence for \*ð**: ON **kváða / kvoða** 'resin' preserves the
+voiced fricative unchanged. This is independent of Verner conditioning and
+nails the PGmc dental as *\*ð* (not *\*þ*). OHG **quiti / kuti** (> MHG küt,
+NHG *Kitt*) shows *-t-* via High-German consonant shift of PGmc/PWGmc stop
+*\*d* (< *\*ð* by PWGmc dental hardening); if the PGmc form had been
+*\*kweþ-*, OHG would show *-d-* via HG shift *\*þ → d*, giving †*quidi*,
+which is unattested.
+
+**No Gothic cognate** is attested (Feist/Lehmann have no entry), so the
+etymon is a WGmc + NGmc comparison plus the Skt/PIE anchor.
+
+### §17.14.3 The OE paradigm: how one PGmc *\*kweðuz* yields five attested OE variants
+
+Bosworth-Toller and the DOE group `cwudu, cwidu, cwedu, cweodu, cudu,
+quidu` under a single lemma, treating this as a short-stem masc. u-stem
+(sunu/wudu/medu class). All five OE variants derive by regular rules from
+a single PGmc *\*kweðuz*:
+
+```
+PGmc *kweðuz (u-st.m.)
+  │
+  ├─ *kwedu ────────────────── cwedu  (WS, rare — Leechdoms;
+  │     │                               conservative spelling of
+  │     │                               the nom.sg. e-grade)
+  │     └─ u-umlaut (Angl/Kent) cweodu
+  │
+  └─ paradigm-levelled *kwidu ─ cwidu  (classical EWS: i-grade
+              │                         from oblique *kwiðiwi-)
+              └─ w-rounding ─── cwudu  (Late WS)
+                     └─ kw>k ─── cudu  (Late WS; → ME cud(de) → ModE cud)
+```
+
+Key regularities:
+- The **e-grade** nom.sg. `cwedu` is *inherited unchanged* from the PGmc
+  nom.sg. cell, modulo loss of final *-z (NWGmc) and *ð > d
+  (PWGmcDentalHardening). No extra rules needed.
+- `cwidu` is the paradigm-levelled form (oblique cells had *-iwi- with
+  *e > i / _Cu raising; i-grade generalised to nom.sg. in WGmc, cf. OHG
+  *quiti*). R/T lemmatise at this stage.
+- `cweodu` is Anglian/Kentish **back-umlaut** of *e* before *-u-* across a
+  single consonant (Hogg §5.103ff.). Dialectal, not WS.
+- `cwudu` is **w-rounding** of *i* → *u* after /w/ before back vowel
+  (Campbell §318, Hogg §5.170–5.172; cf. `widu → wudu`, `wicu → wucu`,
+  `cwicu → cwucu`). Classical Late WS.
+- `cudu` is **kw-simplification** before /u(ː)/ (Campbell §465, Hogg §7.80;
+  cf. `cwom → com`, `cwicu → cucu`). Phonetically regular.
+
+### §17.14.4 What the FST does, and why `cwedu` is the right target
+
+The FST's `PWGmcDentalHardening` at line ~1463 converts *\*ð → \*d
+universally; it does not model Verner timing explicitly. The pipeline has
+no rules for back-umlaut (cweodu), w-rounding (cwudu), or kw-simplification
+(cudu) — these would each require dedicated modelling. The pipeline **does**
+carry inputs unchanged through short-stem u-stem weak-tail reduction, so
+*\*kweðuz* surfaces directly as `cwedu`.
+
+Empirical probe on `backend/old_english.bin`:
+```
+$ echo 'kwéðuz' | flookup -i backend/old_english.bin
+kwéðuzcwedu
+```
+
+So the lautgesetzlich FST output for PGmc *\*kweðuz* **is precisely
+`cwedu`**, matching the TSV target. The old PROTOFORM *\*kwíθuz* was
+doubly wrong: *i for *e gives cwi- not cwe-, and *θ for *ð gives cwiþu
+not cwidu/cwedu.
+
+### §17.14.5 TSV change
+
+Row 1983, PROTOFORM: `*kwíθuz` → `*kwéðuz`.
+
+The COUNTERPART (`cwedu`), TOKENS (`c u d u`), PROTO (`*kwéduz`, Kroonen
+citation form), and CONCEPT (`cud`) columns are unchanged. The NOTE is
+extended to reference this §17.14 write-up and to state the Kroonen/Orel
+convergence explicitly.
+
+### §17.14.6 Outcome
+
+Expected: 33 → 32 mismatches (remove one row's divergence, no other row
+affected since PGmc *\*kweðuz* is unique to this TSV row).

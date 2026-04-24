@@ -1,10 +1,10 @@
-Total mismatches: 33
+Total mismatches: 32
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    4
-  Phonology (other buckets):   22
+  Phonology (other buckets):   21
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -38,7 +38,6 @@ Total mismatches: 33
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__length_diff: 1
   cons_mismatch__n_vs_-__word_final: 1
-  cons_mismatch__þ_vs_d__intervocalic: 1
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
@@ -135,9 +134,6 @@ cons_mismatch__length_diff (1):
 
 cons_mismatch__n_vs_-__word_final (1):
   *súndrōjaną -> sundrian (expected sundor-)
-
-cons_mismatch__þ_vs_d__intervocalic (1):
-  *kwíθuz -> cwiþu (expected cwedu)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
