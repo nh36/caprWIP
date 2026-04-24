@@ -73,6 +73,7 @@ STAGES: List[Tuple[str, str]] = [
     ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
     ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
     ("InterStressRaising", "old_english_sandbox_after_inter_stress_raising.bin"),
+    ("StripSecondaryStress", "old_english_sandbox_after_strip_secondary_stress.bin"),
     ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
     ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
     ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),

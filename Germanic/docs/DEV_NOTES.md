@@ -27351,3 +27351,251 @@ line 7169.
 Expected mismatch delta: 34 → 33.
 
 — end §17.10.36-q3-probes
+
+───────────────────────────────────────────────────────────────
+## §16.6 Grave-accent notation for secondary stress — three-agent
+## research audit (2026-04)
+
+§16.4 ("Not yet adopted: grave for secondary stress") is
+re-opened. Following the workflow now documented in
+`WORKFLOW.md` ("Default Research Practice: Three-Agent Source
+Audit"), three parallel `explore` agents were run against
+German-language grammars, English-language grammars, and our
+own modeling / internal docs. This section consolidates their
+findings; §16.6-probes below gives the empirical surface of
+migration in the current FST and TSV.
+
+### §16.6.1 German-language grammars (Luick, Brunner, Bülbring)
+
+**Headline finding:** the grave-accent-for-*Nebenton* proposal
+is not innovation — it **recovers** the philological norm used
+by Luick and Brunner themselves.
+
+**Luick, *Historische Grammatik* §§296, 306, 335–340.**
+Luick systematically distinguishes **Hauptton** (primary),
+**Nebenton** (secondary), and **unbetont** (zero). §306:
+
+> "Dieser Vorgang wiederholte sich in historischer Zeit … wenn
+>  nämlich ein ursprünglicher Nebenton auf offener Mittelsilbe
+>  sich verflüchtigte…"
+
+(medial-vowel loss re-applied "when an original secondary
+stress on an open middle syllable dissipated"). Luick's
+metrical section (p.391) prints secondary-stressed syllables
+with **grave accent** as a scansion-diagnostic: *timbrède*
+(Gen. 2840), *frefrèdest* (Ps. 85,17). §296 grounds the
+three-plus-syllable early *i-apocope rule in syllable-count
+from the primary stress — i.e. the Nebenton-bearing syllable
+counts as a syllable, not a foot-extension.
+
+**Brunner, *Altenglische Grammatik* §§400–405.**
+Brunner's TOC entry "*Die Vokale der minderbetonten und
+unbetonten Silben*" (§§43–44) establishes a **tripartite**
+prosodic grade — primary / reduced / zero — not binary.
+§402/§404: the second element of a nominal compound carries
+*starker Nebenton* (strong secondary stress) which **protects
+vowel length** and blocks medial reductions; §405 traces the
+diachronic weakening to *schwacher Nebenton* and eventually
+*unbetont* across the OE period.
+
+**Bülbring, *Altenglisches Elementarbuch* §§400–404.**
+Parallels Brunner. Marks *starker Nebenton* with grave
+(*bócère*, *scéawère*) where the diacritic signals that the
+medial syllable retains fuller vowel quality precisely because
+it bears secondary stress.
+
+**Ringe & Taylor vol. 2 §6.3.3, p.200–202; p.18.**
+R/T are the most explicit about the **prosodic-trough**
+conditioning: "*a became *u in the first member of compounds
+when directly followed by a stressed syllable"; "when a short
+*a appears in a **trough between primary and secondary
+stress**, it raises to *u". They cite the Gothic parallel
+*áinummḗhun* (Braune–Heidermanns §4 Anm. 2) as the Gmc-wide
+diagnostic. Diagnostic OE reflexes listed: *hlafurd*,
+*furlung*, *weoruld*, *ācumba*.
+
+**Chronology (consensus of the four sources):**
+1. **Pre-OE / early OE:** Nebenton is strong; inter-stress
+   raising *a→*u and compound-medial syncope operate **under**
+   this prosodic conditioning.
+2. **Mid OE:** Nebenton weakens (Brunner §405 *schwacher
+   Nebenton*); medial *u→*o lowering begins.
+3. **Late OE:** fully *unbetont* in most fossilised compounds.
+
+This staging **requires** the FST to order inter-stress raising
+BEFORE `OEMedUnstressedULowering` — already the case after the
+§17.10 R3 decision.
+
+### §16.6.2 English-language grammars (Campbell, Hogg, R/T, Fulk)
+
+**Campbell, *Old English Grammar* §§87–92, §373–374.**
+"Half-stress" is Campbell's term for Nebenton. §87: "A half-stress always fell on the second element of a compound when both the elements retained full semantic force." §§88–92 document the diachronic loss of half-stress in semantically opaque second elements (*hlāfweard* → *hlāford*). §373: medial unstressed *u→*o is **blocked after an accented *u** (the "protected" positions) — i.e. the rule is already stress-sensitive in Campbell's prose. §374: "*u > *o occurs in the second element of compounds of obscured meaning" — i.e. once Nebenton is lost.
+
+**Hogg, *A Grammar of OE* vol. 1 §3.3.2.2.**
+Explicitly identifies OE as "left-strong" with three stress levels (primary / secondary / unstressed). Concedes the evidence is "even more hypothetical than other aspects of OE phonology" because it rests on metrical scansion; nevertheless treats it as the best model.
+
+**Fulk, *Comparative Grammar* §7.31 n.6.**
+(As cited in DEV_NOTES §17.10 R3 research.) Medial *a-raising discussion is distributed across §§7.31, §5.5–5.6. No dedicated grave-accent notation, but the prosodic conditioning is described in the same trough terms as R/T.
+
+**Notational practice (English grammars):** acute is used for primary stress where marked (*ángin*, *stǽfcræft*); **no English-language handbook uses grave accent systematically.** Our grave-accent proposal therefore recovers German practice (Luick/Brunner/Bülbring) rather than English practice — which is exactly correct for a German-philology-derived notation system.
+
+### §16.6.3 Modeling / FST architecture
+
+**Our own prior research (prosodic_tier_research.md §§9–10):**
+the grave-accent proposal was already fully designed in
+`prosodic_tier_research.md §10` with full foma inventory,
+RemoveStars updates, and rule definitions. §10.3.2 already
+drafts the dynamic `InterStressRaising` rule:
+
+```foma
+define InterStressRaising [
+    {*a} -> {*u} || PrimaryStressedV C+ _ C+ SecondaryStressedV
+];
+```
+
+This replaces the current phonological proxy in
+`germanic.txt:1593` (`_ ... [{*u}|{*ū}]`) with a true prosodic
+condition — matching the grammars' own formulation.
+
+**Architectural options (from modeling-practice agent):**
+- **A. Parallel alphabet** — graves coexist with acutes in the
+  segmental string; every stress-sensitive rule must accept
+  both. High rule-duplication cost.
+- **B. Generalised stress-tier classes** — define
+  `EnglishStarStressedShortV = {*á}|{*à}|...` etc., rewrite the
+  ~17 stress-sensitive rules to reference the class. Moderate
+  cost, maintainable.
+- **C. Late-marking / late-stripping** — grave-marked symbols
+  are distinguished in compound-only rules (inter-stress
+  raising, compound syncope) and neutralised to acute (or
+  plain) before general stress-sensitive rules fire. Minimal
+  rule churn.
+
+**Recommendation:** hybrid **B + C**. Introduce the grave symbols
+with a short window where they are phonologically distinct
+(between compound mark-up and the general stress-sensitive
+cascade), then neutralise via a single `OEGraveToAcute` (or
+`OEStripSecondaryStress`) rule before the bulk of breaking,
+i-umlaut, AFB, etc. Stress-tier classes are used only inside
+the narrow compound-prosody window.
+
+### §16.6.4 Scope in our data (OE rows only)
+
+Three hyphenated PROTOFORMs:
+
+| ID | PROTOFORM | COUNTERPART | Status |
+|---|---|---|---|
+| 2148 | `*régnă-bugô` | `reġnboga` | match (via `OECompoundLinkingSyncope`) |
+| 2252 | `*θūs-endi` | `þūsend` | match |
+| 2302 | `*wír-aldu` | `weorold` | match (via transponent *u) |
+
+The scope of TSV migration is three rows. The value is not in
+fixing mismatches (the forms already match) but in replacing
+the `*wír-aldu` transponent and the phonological-proxy in
+`OEInterStressRaising` with a principled Nebenton-conditioned
+rule, so that new compound data added later derives correctly
+rather than requiring case-by-case transponents.
+
+— end §16.6
+
+───────────────────────────────────────────────────────────────
+## §16.6-probes  Empirical migration surface
+
+### Probe 1 — Acute-marker footprint in germanic.txt
+
+`grep -nE '\{\*á\}|\{\*é\}|\{\*í\}|\{\*ó\}|\{\*ú\}'
+Germanic/fsts/germanic.txt` → 53 occurrences across 24 distinct
+`define` blocks. Classification:
+
+**Inventory / class definitions (6 blocks, ~no behavioural change):**
+`pgrmShortVowel`, `EnglishStarShortVowel`, `PGmcStarVowel`,
+`PGmcStarFrontVowel`, `PGmcStarBackVowel`,
+`PGmcStarStressedVowel`. These just enumerate symbols; add
+grave variants here plus new `PGmcSecondaryStressedShortVowel`.
+
+**Orthographic mapping (1 block):** `OldEnglishRemoveStars`
+(line 821 ff.). Add `{*à}→a`, `{*è}→e`, `{*ì}→i`, `{*ò}→o`,
+`{*ù}→u` so graves are stripped before surface output.
+
+**Stress-sensitive phonological rules (17 blocks):**
+`AngloFrisianBrighteningStressed`, `NWGmcILowering`,
+`NWGmcULowering`, `NWGmcNasalSpirantLengthening`,
+`OEAwjGlideFormation`, `OEAwLongDiphthong`, `OEBackMutation`,
+`OEBreakingA`, `OEBreakingE`, `OEBreakingI`,
+`OEDiphthongLeveling`, `OEEwLongDiphthong`, `OEIUmlautFronting`,
+`OERMetathesis`, `OEWsPalatalDiphthongization`,
+`OEWsPalatalGlide`, `PWGmcIjContraction`.
+
+Under architecture (B)+(C) above, these rules do **not** need
+to be edited: graves are stripped to acutes by an
+`OEStripSecondaryStress` rule inserted before the main
+stress-sensitive cascade (but after `OECompoundLinkingSyncope`
+and `OEInterStressRaising`). Secondary-stress-sensitive rules
+(just `OEInterStressRaising` and `OECompoundLinkingSyncope`
+for now) reference the grave symbols directly.
+
+### Probe 2 — Compound rows in TSV (already listed in §16.6.4)
+
+Only 3 hyphenated OE PROTOFORMs. Migration risk is
+correspondingly tiny: any regression can be isolated to those
+rows.
+
+### Probe 3 — Candidate future compounds
+
+R/T §6.3.3 and the diagnostic inventory include additional
+compounds not yet in our TSV: `*xlaibă-warduz` → *hlāford*,
+`*fura-langu` → *furlung*, `*ā-kumbō` → *ācumba*,
+`*sai-walō` → *sāwol* (currently present as non-hyphenated
+`*sáiwalō`). Introducing a real Nebenton-conditioned
+`OEInterStressRaising` rule unlocks straightforward TSV
+addition of these etyma as dynamic compounds rather than
+transponents.
+
+### Probe 4 — Prior-decided implementation design
+
+`prosodic_tier_research.md §10` already contains the full
+symbol inventory (§10.1.1–§10.1.6), vowel-hierarchy class
+definitions (§10.2), prosodic rules with citations (§10.3),
+germanic.txt diff plan (§10.4), rule-ordering plan (§10.5),
+TSV migration strategy (§10.6), test plan (§10.7), and
+rollback plan (§10.8). **Nothing new is needed on design;
+implementation can follow that blueprint with minor
+architectural refinement** (use of late-strip per §16.6.3
+option C, rather than carrying graves through the whole
+cascade).
+
+### Probe 5 — Chronological placement
+
+Per §16.6.1 consensus and §17.10 R3, the rule ordering is:
+
+```
+... (existing pre-compound stages) ...
+OECompoundLinkingSyncope         (existing line 2657, uses ă)
+OEInterStressRaising             (rewritten: σ́ C+ *a C+ σ̀)
+OEStripSecondaryStress           (NEW: grave → plain/acute)
+... (existing stress-sensitive OE cascade: breaking, AFB, i-umlaut) ...
+OEMedUnstressedULowering         (existing, must follow raising)
+```
+
+`OEInterStressRaising` currently sits at line 1593 in
+`germanic.txt` and fires early (Pre-OE layer). Under the new
+design it stays in the same chronological slot but on
+grave-conditioned input; `OEStripSecondaryStress` then removes
+the graves so the rest of the OE cascade sees only acutes and
+plain vowels.
+
+### Conclusion
+
+- Literature strongly supports the grave-accent system: it is
+  the notation of Luick/Brunner/Bülbring (German tradition) and
+  corresponds exactly to the prosodic condition R/T articulate.
+- Migration surface is small (3 TSV rows, 1 new rule, 6 symbol
+  inventories, 1 orthographic map, 1 new strip rule).
+- Existing stress-sensitive rules are untouched under
+  architecture B+C (late strip).
+- Design blueprint already exists in
+  `prosodic_tier_research.md §10`.
+
+Proceed to `plan.md` for the step-by-step implementation plan.
+
+— end §16.6-probes
