@@ -28168,3 +28168,101 @@ documenting the historical state and the refactor.
 
 Mismatches: 33 throughout (Phases A, B, C) and 33 after final
 rebuild from clean commit `c0963b1`.
+
+### §17.13.7 Phase D investigation: rewrite OEUnstressedAFronting on prosodic tiers? — NOT NEEDED
+
+The §17.13 plan included a Phase D asking whether `OEUnstressedAFronting`
+should be rewritten to condition on acute/grave prosodic tiers rather than
+the present word-position context `EnglishStarVocalic [C|Cpal]+ _ [C|Cpal]`.
+This investigation concludes Phase D is unnecessary and should be closed.
+
+**Cascade position.** `OEUnstressedFrontingEarly` fires at line ~2902,
+well after:
+
+- `OEStripSecondaryStress` (line ~2823) — graves `{*à}` have ALREADY been
+  neutralised to plain `{*a}` by this point.
+- `AngloFrisianBrightening` (line ~2838) — stressed *a (acute *á AND former
+  grave *à, now plain *a in compound-secondary position) has already been
+  fronted to *æ.
+- `OESecondaryNasalization` (line ~2856) — coda-nasal *a protected as *ą.
+- `OEEarlyOShortening` (line ~2900) — exposes the *a-from-*ō that is this
+  rule's MAIN target (weak-noun tunge-type, weak-II verb macian-type).
+
+By the time the rule runs, plain `{*a}` appears only in:
+
+1. Truly unstressed suffix/ending positions that AFB already visited (and
+   indeed fronted, cf. participle `*-anaz → *-æn → -en` — but AFB's rule
+   `{*a}→{*æ}` in the OE sandbox actually targets root-stressed *a; the
+   medial unstressed *a survives AFB and is caught here — which is precisely
+   what this rule is for).
+2. Newly-shortened *a from step-1 early-*ō-shortening.
+3. A-restoration outputs in root-initial position (first syllable).
+
+The left-context `EnglishStarVocalic C+ _` excludes (3) by requiring a
+preceding V + at least one C (i.e., non-initial syllable). The right-context
+`_ [C|Cpal]` excludes word-final *a. Together they pick out non-initial,
+non-final syllable nuclei — a genuine phonological condition on syllable
+position, not a diacritic guard.
+
+**Why a prosodic-tier rewrite would be strictly WORSE here.**
+
+To condition on the acute/grave tier, graves would have to SURVIVE past line
+~2902 — i.e., `OEStripSecondaryStress` would have to be moved to fire
+AFTER `OEUnstressedFrontingEarly`. But the intervening ~80 lines of cascade
+(AFB, breaking, velar-fric palatalisation, A-restoration, heavy-syllable
+nasal apocope, secondary nasalization, j-gemination, B-allophony, Sievers'
+syncope, i-umlaut, high-vowel apocope, WS palatal diphthongisation,
+intervocalic-w loss, dental assimilation, pre-consonantal degemination,
+early-*ō shortening) was audited and tuned assuming graves are already gone.
+A re-ordering would require re-auditing every one of those rules for
+trough/grave sensitivity. The §17.11 work deliberately placed
+`OEStripSecondaryStress` early precisely to simplify downstream conditioning.
+
+Moreover, the current word-position condition is arguably MORE honest:
+fronting of unstressed *a is genuinely conditioned on syllable position in
+the historical accounts (Campbell §333 confines it to unaccented syllables,
+which in polysyllabic stems means medial/final — exactly `V C+ _ C`).
+The prosodic tier is an orthogonal encoding of stress that happens to
+correlate with position; invoking it here would add indirection, not
+clarity.
+
+**Empirical check.** Mismatches baseline 33 is stable across A, B, C.
+Target forms that the comment block at line ~2168 cites as test cases
+(`*funðanaz → funden`, `*bakaną → bacan`, `*macōna-/lufōna- → macaþ/lufaþ`)
+all surface correctly in the current grammar. There is no motivating
+regression or inaccuracy that a rewrite would fix.
+
+**Resolution.** Phase D is closed with no code change. The word-position
+condition on `OEUnstressedAFronting` is retained as the cleanest
+implementation of Campbell §333's unaccented-syllable restriction. Any
+future revisit should be prompted by a specific empirical failure (e.g.,
+a compound-second-element mismatch revealing that word-position
+mis-approximates true prosodic unstress), not by architectural tidiness
+alone.
+
+### §17.13.8 Phase E/F cleanup
+
+Post-Phase-C `grep -n '{\*ă}\|\bă\b' Germanic/fsts/germanic.txt` returned
+matches only in §17.13 explanatory comments. No live code uses the breve.
+No further cleanup required.
+
+The `{*ă}` character still appears in `Germanic/docs/DEV_NOTES.md`
+(historical narrative, including §17.13 itself), in a few TSV NOTE/HISTORY
+prose columns (human annotation), and in the sandbox-stage save-stack
+comments documenting prior builds. None of these feed the FST.
+
+### §17.13.9 Status summary
+
+| Phase | Description | Status |
+|-------|-------------|--------|
+| A1–A3 | Sigma shrinks (four vowel-inventory classes) | done (`5cbaf0e`) |
+| B     | Remove breve introducers from `pgrmWeakTailVowel` (18 alts) | done (`a4f7e6e`) |
+| C1    | Remove breve alts from `EnglishWeakTailVowelStar`, `OEARestorationStrongOTail`, `OldEnglishRemoveStars` | done (`c0963b1`) |
+| C2    | Simplify `OESecondaryNasalization` to `{*a}→{*ą}` | done (`c0963b1`) |
+| C3    | Delete `OEFinalSchwaApocope` (rule + two cascade calls + sandbox stage) | done (`c0963b1`) |
+| C4    | Delete `OEWeakTailReduction1a`; rewire `OEWeakTailReduction1 = 1b .o. 1c` | done (`c0963b1`) |
+| C5    | Remove `{*ă}→{*ə}` clause from `EnglishWeakTailReductions` | done (`c0963b1`) |
+| D     | Rewrite `OEUnstressedAFronting` on prosodic tier | not needed (§17.13.7) |
+| E/F   | Final dead-code cleanup | no live code remains (§17.13.8) |
+
+Mismatch count: 33 before §17.13 → 33 after §17.13.
