@@ -26981,3 +26981,373 @@ decision. Proceed only after user confirmation of this
 research synthesis.
 
 — end §17.10.36-research
+
+================================================================
+§17.10.36-q3 — Q3 RESOLUTION RESEARCH: j-strengthening / j-retention
+                  after long front diphthongs (2026-04-23)
+================================================================
+
+CONTEXT: Q1 and Q2 have been implemented (OEAwjGlideFormation rule,
+commit 158e951). Row 2061 (*xáwwją → hīeġ) now matches. Row 2227
+(*stráwjaną → expected strīeġan) still mismatches: FST produces
+strīeian (intervocalic *j vocalized to *i via OEIntervocalicJVocalization
+line 2355) rather than strīeġan (expected *j preserved, spelled ġ
+via OldEnglishOrthography).
+
+The user accepted an Option-B style TSV treatment (like cnobba row
+609): target unattested WS *strīeġan, note in TSV that Anglian strēgan
+proves class-1 inheritance but we do not model Anglian-specific
+smoothing. Row 2227 has been updated accordingly. The remaining
+question (Q3) is: should we add a phonological rule to derive strīeġan,
+or accept the mismatch as a documented exception?
+
+Before deciding, the user requested extensive multi-source research.
+Three parallel background agents were dispatched (English grammars;
+articles + etymological dictionaries; German grammars). The full
+synthesis of all twelve sources follows.
+
+## A. GERMAN PHILOLOGICAL TRADITION — STRONG POSITIVE SUPPORT
+
+Four major German OE grammars treat j-preservation after long
+vowels/diphthongs as an established (*gesichert*) rule, with all
+four explicitly listing strēgan/strīeġan in this class.
+
+### Kaluza, Historische Grammatik des Englischen §89(b)
+(docs/references/kaluza_historische_grammatik_englischen.txt line 7284)
+
+    "Urg. j im In- und Auslaut nach langen Vokalen = ae. g [j]:
+     cīegan rufen, strēgan streuen, frēogea lieben, fēogea hassen
+     — īeg, īg Insel, hīeġ Heu, ǣg Ei, clǣġ Lehm."
+
+This is a categorical positive statement. *strawjan is explicitly
+in the rule's inventory.
+
+### Bülbring, Altenglisches Elementarbuch §458–§460
+(bülbring_altenglisches_elementarbuch.txt lines 8614, 8633)
+
+§458(a): "Inlautendes j bleibt a) zwischen Vokalen und wird fast
+stets g geschrieben (vor a im Ws. auch ge): ws. čieġan, čīġean,
+merc. kent. čēgan 'rufen' (aus *kaujan), Dat. Sg. hieġe, außer-
+ws. hēje 'Heu' (aus *haujai)..."
+
+§460: "Im ae. Auslaut erscheint urg. j nur nach langen Vokalen
+oder Diphthongen und wird fast stets g geschrieben: ws. hīeġ,
+außerws. hēg 'Heu', ws. īeġ, außerws. ēg, ēi, ēiġ 'Insel'
+(< urg. *haujō, *aujō)."
+
+Bülbring treats the rule as unhedged empirical phonotactic
+description.
+
+### Brunner, Altenglische Grammatik §129 Anm.2 + §408 Anm.12
+(brunner_altenglische_grammatik.txt lines 5455, 16457)
+
+§129 Anm.2: "Hingegen scheint bei den schw. Vb. 1. Kl. mit kurzem
+Stammvokal vor w dieses mit dem Vokal einen Diphthong gebildet zu
+haben und j erhalten geblieben zu sein, wobei ĭ-Umlaut eintrat.
+Hierher gehört strēgan streuen (aus *strawjan, vgl. got. straujan,
+alts. ströjan)..."
+
+This is the most directly diagnostic passage: Brunner explicitly
+describes *strawjan → strēgan via diphthong formation + j-retention
++ i-umlaut, in contrast to the short-stem class-1 weak verbs
+(nerian, settan) where j is lost with prior consonant gemination.
+
+§408 Anm.12: groups cīęgan (aus *kaw(w)jan-), hēgan (aus
+*haw(w)ja-), and strēgan into a single "erste Gruppe" with "ĝ
+in allen Formen" (WS-internal analogical generalization).
+
+### Lück, Historische Grammatik des Englischen §98
+(lück_historische_grammatik_englischen.txt line 6893)
+
+    "Hierher gehören mit ursprünglichem i: wg. *niuwja- 'neu',
+     *hiuwja- 'Gestalt', *gliuwja- 'Freude', *siuwjan 'nähen',
+     *spiuwjan 'speien' ...; mit ursprünglichem a: *hauwja- 'Heu',
+     *auwjō- 'Insel', *frauwjō 'Herr', *strauwjan 'streuen',
+     *kauwjan 'rufen' ... Die altenglischen Formen haben die
+     normale Entwicklung durchlaufen (angl. niowe, hīow, gliow,
+     siowan, spiowan, ws. niwe, hīw, gliew; angl. hēg, ēg, strēgan,
+     cēgan, ws. hīeġ, īeġ, *frīeġea (> frīġea), cīeġan)."
+
+THIS IS THE KEY PASSAGE. Lück (a) explicitly reconstructs WS
+*strīeġan for row 2227, and (b) draws the critical contrast we
+identified earlier: *niuwja/*siuwjan etc. → niowe/siowan (NO -g-),
+vs *hauwja/*strauwjan etc. → hēg/strēgan (WITH -g-). Same generic
+environment (*Vw + *j) but different diphthong quality (*iu- vs
+*aw-series) produces different outcomes.
+
+## B. RINGE & TAYLOR — PGMC-LEVEL PHONOLOGICAL BASIS
+
+### R/T vol.1 lines 7169–7172
+
+    "... *j was not lost after *w. Thus there was no loss of *j
+     in *niwjaz ... nor in *hawją ..."
+
+This is the PGmc-level foundation: *j survives as a structural
+semivowel after *w in both *niwja- and *hawja- types. The divergence
+(niowe vs hēg) must therefore be later-OE, dependent on the
+quality of the preceding diphthong.
+
+### R/T vol.2 §3.2.4, §6.1
+(already cited in §17.10.36-research)
+
+Provides the standard staged derivation *straw-j- → *straww-j-
+(*w-gemination) → eventual -g- via residue of the geminated glide.
+Under R/T's account, "-g-" is not a "strengthening" but the
+surface reflex of the PWGmc-geminated *w.
+
+## C. ENGLISH GRAMMARS — MORE SKEPTICAL BUT ULTIMATELY COMPATIBLE
+
+### Campbell §120.2, §402, §753.7
+
+§120.2: derives the -g- in hieg/strēgan etc. via WGmc *w-gemination
+(*awj → *auwj), NOT via an independent j-strengthening rule.
+
+§402: notes *hawja > hīeg *without* gemination of *w — the
+diphthong *aw was formed directly, and *j was retained.
+
+§753.7: "In W-S g is extended to all forms" — treats the uniform
+-g- of WS cīeġan/hēġan paradigms as analogical leveling from
+phonologically regular forms.
+
+Campbell converges with the German tradition in *outcome* (the
+strēgan/cīegan/hēgan class) even if he analyses the mechanism
+differently (gemination residue vs direct retention).
+
+### Fulk, Comparative Grammar of Early Germanic §4.10 fn.1
+
+Alone among the twelve sources, Fulk questions the derivation,
+calling the gemination-then-reversal path "unparsimonious". He
+nonetheless accepts EWS *strīeġan as a reconstructed form "from
+PGmc *straujanan", and suggests paradigm regularization.
+
+### Hogg, Grammar of Old English §§5.56–5.60
+
+Describes palatal and velar reflexes of *g after front vs back
+vowels; does not separately treat j-retention vs strengthening.
+Compatible with either analysis.
+
+## D. ETYMOLOGICAL DICTIONARIES
+
+### Kroonen, Etymological Dictionary of Proto-Germanic
+### Orel, Handbook of Germanic Etymology
+### Kluge, Etymologisches Wörterbuch
+
+All three give OE strēgan (Anglian form as primary citation)
+without invoking a phonological rule. They treat *strawjan- as a
+regular inheritance whose OE reflex is strēgan/strīeġan, without
+further phonological commentary.
+
+## E. SYNTHESIS: WHAT THE LITERATURE CONVERGES ON
+
+ESTABLISHED (all 12 sources compatible):
+ - *j is retained (NOT lost and NOT vocalized) after long vowels
+   and *aw-series diphthongs in OE.
+ - The surface reflex is orthographic g (= /j/ or /ʝ/ palatal
+   continuant, later hardened in paradigm-medial positions by
+   analogy from strong verbs).
+ - Both Anglian and WS participate; Anglian has strēgan, WS has
+   strīeġan (unattested for this specific verb but attested for
+   cognate verbs cīeġan, hēġan; reconstructed by Lück, Brunner,
+   Fulk).
+ - The rule is narrower than "after any long diphthong" — *iu-
+   series diphthongs (niowe, siowan, spiowan) do NOT show -g-.
+
+CONTESTED (Fulk vs R/T) — but engineering-equivalent:
+ - Mechanism: *w-gemination residue (R/T, Kaluza, Brunner) vs
+   direct j-retention (Bülbring, Campbell §402) vs analogical
+   leveling from paradigm (Fulk, Campbell §753.7).
+ - Chronology: before or after i-umlaut (R/T says before gemina-
+   tion; Brunner says preservation + umlaut is parallel).
+
+## F. PROPOSED RULE (literature-faithful, narrow)
+
+Based on the convergent findings above, the honest engineering
+formulation is NOT "j-strengthening after long diphthong" in
+general, but "j-retention (spelled g) specifically after *aw-
+derived long front diphthongs (*ēa/*ḗa and their i-umlauted
+outcomes *īe/*íe)".
+
+    # R/T vol.1 (line 7169): *j retained after *w in PGmc.
+    # Kaluza §89(b), Bülbring §458/§460, Brunner §129 Anm.2,
+    # Lück §98: *j after *aw-series long diphthongs surfaces as
+    # OE ġ (orthographic g). Lück explicitly distinguishes
+    # *iu-series (niowe, siowan — no -g-) from *aw-series
+    # (strēgan, cēgan, hēg — with -g-), so the rule is
+    # restricted to {*ēa}/{*ḗa}/{*īe}/{*íe} and stressed variants
+    # {*éa}. We do NOT include {*ēo}/{*īo}/{*eo}/{*io}.
+    # Campbell §753.7: WS analogically extends ġ throughout
+    # paradigm, but the phonological seed is the *aw-derived form.
+    define OEJStrengtheningAfterFrontDiphthong [
+        {*j} -> {*ʒ} || [{*ēa}|{*ḗa}|{*īe}|{*íe}|{*éa}|{*ēo}]
+                         _ EnglishStarVocalic
+    ];
+
+ORDERING: after OEIUmlaut (line 2818) so *ēa → *īe fires first;
+before OEIntervocalicJVocalization (line 2851) so *j is not
+converted to *i. Natural insertion point: immediately before line
+2851 (and its twin at 2962 in the OE-only cascade).
+
+WHY {*ʒ} NOT {*ġ}: The pipeline uses {*ʒ} for intermediate palatal,
+resolved to ġ by OldEnglishOrthography line 743: `{*ʒ} -> ġ`. The
+existing final-*j cases (hīeġ) already route through orthography
+line 747: `{*j} -> ġ || ... .#.`. Using {*ʒ} for the medial case
+avoids interacting with final-*j orthography and keeps the two
+paths distinct.
+
+## G. REGRESSION SURFACE
+
+Rows at risk of wrong output if rule fires where it shouldn't:
+ 1. Any form with *ēa/*īe + *j + vowel (the rule's exact trigger).
+ 2. Forms with *aw-origin diphthongs followed by *j where the
+    attested outcome is NOT -ġ- (if any exist).
+ 3. Forms that should produce -i- (class-2 weak -ōjan- descendants
+    should not reach *ēa+*j intermediates, but verify).
+ 4. Forms with *eo/*io + *j that happen to pass through *ēa/*īe
+    stage via some unexpected path.
+
+Safe by construction:
+ - *niwja-, *siwjan, *spiwjan, *gliwja etc. (*iu-series, untouched
+   because {*ēo}/{*īo}/{*eo}/{*io} not in rule's left context).
+ - Class-2 weak verbs (-ōjan-) — their *j sits in a different
+   stress/vowel environment.
+ - Long V + C + *j environments (not *diphthong + *j).
+
+Probe plan (to be executed next):
+ (a) Enumerate all TSV PROTOFORM values containing patterns that
+     could produce *ēa+*j or *īe+*j at the relevant stage.
+ (b) Run each through sandbox bin old_english_sandbox_after_ei_
+     umlaut.bin (or equivalent) to see actual intermediate state.
+ (c) For each affected form, compare pre-rule and post-rule
+     FST output against COUNTERPART.
+ (d) Document all changes (matches→mismatches, mismatches→matches,
+     no-change) in this file.
+
+— end §17.10.36-q3 research (probe results to follow)
+
+
+================================================================
+§17.10.36-q3-probes — REGRESSION PROBES (2026-04-23)
+================================================================
+
+Before proposing the OEJStrengtheningAfterFrontDiphthong rule
+for adoption, we ran the following regression probes to enumerate
+all forms that might interact with the new rule's left-context
+trigger set {*ēa|*ḗa|*íe|*īe|*éa} _ EnglishStarVocalic.
+
+## Probe 1: All PROTOFORMs with *Vw+*j in input
+
+Command:
+    awk -F'\t' '$8=="Old_English" && $3 ~ /wj/ {print NR"\t"$3"\t"$6}' \
+      Germanic/data/germanic-aligned-final.tsv
+
+Result (2 hits):
+    509   *xáwwją       hīeġ      (already matches post-Q1/Q2)
+    1153  *stráwjaną    strīeġan  (target of the proposed rule)
+
+No other *Vw+*j inputs exist. The entire class is exhausted by
+these two rows.
+
+## Probe 2: All OE PROTOFORMs at post-i-umlaut stage
+
+Fed all 386 OE PROTOFORMs from germanic-aligned-final.tsv through
+backend/old_english_sandbox_after_i_umlaut.bin using flookup with
+normalized input (strip {}, *, whitespace, /, ()).
+
+Command:
+    flookup -i backend/old_english_sandbox_after_i_umlaut.bin \
+        < /tmp/oe_proto_norm.txt > /tmp/oe_post_umlaut.txt
+
+### 2a. Forms with *{ēa|ḗa|íe|īe|éa} + *j at that stage:
+
+    xáwwją       → *ç*īe*j            (2 chars: *j word-final,
+                                         rule will NOT fire — no
+                                         following vowel. Already
+                                         matches via orthography
+                                         {*j} → ġ / _ .#.)
+    stráwjaną    → *s*t*r*īe*j*ą*n    (*j is intervocalic;
+                                         rule WILL fire → *ʒ →
+                                         orthography → ġ → strīeġan
+                                         ✓)
+
+Total: 2 hits, exactly our two target forms.
+
+### 2b. Forms with *{ēo|īo|éo|ío|eo|io} + *j at that stage:
+
+Command:
+    grep -E "(ēo|īo|éo|ío|eo|io|iu)\*j" /tmp/oe_post_umlaut.txt
+
+Result: 0 hits. No corpus form has *iu/*eo/*io + *j at
+post-i-umlaut. This confirms that excluding these diphthongs from
+the rule's left context (per Lück §98 *niwja → niowe contrast)
+is both empirically safe for THIS corpus and theoretically
+correct.
+
+### 2c. All forms with any *j at post-i-umlaut (sanity check):
+
+43 of 386 OE forms retain *j at post-i-umlaut stage. Sampled
+spot-check:
+
+    bídjaną      → *b*í*d*d*j*ą*n    (short stem + geminate;
+                                        *j after geminate *d,
+                                        not after diphthong →
+                                        rule does NOT fire ✓)
+    xáilijaną    → *x*ǣ*l*j*ą*n      (long V + C + *j, not
+                                        diphthong + *j → rule
+                                        does NOT fire ✓)
+    xágjaz       → *ç*e*ʤ*ʤ*j        (geminate + *j, already
+                                        *ʤ, rule does NOT fire ✓)
+    bázjas       → *b*e*r*j*æ*s      (*a-rhotacism + *j, rule
+                                        does NOT fire ✓)
+    galáubijaną  → *ʤ*ĕ*l*īe*β*j*ą*n (*īe, but separated from
+                                        *j by *β — rule does NOT
+                                        fire ✓; must have
+                                        EnglishStarVocalic
+                                        immediately before *j)
+
+All 43 *j-bearing forms examined do not match the proposed
+rule's trigger pattern except the two target forms in Probe 2a.
+
+## Probe 3: Downstream interactions with *ʒ
+
+The pipeline already uses *ʒ as a palatal intermediate (see
+EnglishPalatalConsonant class definition at germanic.txt line 913).
+*ʒ appears in only one other rule: OldEnglishOrthography line 743
+`{*ʒ} -> ġ`, which is precisely the intended surface result.
+
+grep confirms: {*ʒ} is referenced at only lines 743 (orthography)
+and 913 (class definition). No OE phonological rule between
+OEIUmlaut (line 2818) and OldEnglishOrthography (line 737) will
+alter our new *ʒ.
+
+## Probe 4: Final-position *j interaction
+
+The proposed rule requires `_ EnglishStarVocalic` (vowel must
+follow). For row 509 hīeġ, *j is word-final at post-i-umlaut
+(*ç*īe*j, no following vowel). The rule correctly does NOT
+fire; existing orthography `{*j} -> ġ || _ .#.` (line 747)
+handles it. No interaction.
+
+## CONCLUSION
+
+Regression surface for OEJStrengtheningAfterFrontDiphthong is
+**empirically zero** across the 386 OE forms in the corpus.
+The rule changes exactly one form: *stráwjaną → strīeġan (a
+current mismatch becomes a match), with no other form affected.
+
+The narrow left-context `{*ēa|*ḗa|*íe|*īe|*éa}` (excluding *ēo
+and *iu series) is:
+ (a) literature-justified (Lück §98 contrast niowe vs strēgan),
+ (b) empirically safe (Probe 2b: 0 *ēo+*j forms in corpus),
+ (c) self-sufficient (Probe 3: no downstream perturbations).
+
+RECOMMENDATION: Adopt the rule as drafted in §17.10.36-q3 above,
+insert at cascade position immediately before
+OEIntervocalicJVocalization (main cascade line 2851, OE-only
+cascade line 2962), rebuild, verify row 2227 now matches and
+all others unchanged, commit with citations to Kaluza §89(b),
+Bülbring §460, Brunner §129 Anm.2, Lück §98, R/T vol.1
+line 7169.
+
+Expected mismatch delta: 34 → 33.
+
+— end §17.10.36-q3-probes

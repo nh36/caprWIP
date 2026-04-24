@@ -122,6 +122,7 @@ STAGES: List[Tuple[str, str]] = [
     ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
     ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
     ("FinalGeminateSimplification", "old_english_sandbox_after_final_geminate_simplification.bin"),
+    ("JStrengtheningAfterFrontDiphthong", "old_english_sandbox_after_j_strengthening_after_front_diphthong.bin"),
     ("IntervocalicJVocalization", "old_english_sandbox_after_intervocalic_j_vocalization.bin"),
     ("UnstressedEIContraction", "old_english_sandbox_after_unstressed_ei_contraction.bin"),
     ("WeightCleanup", "old_english_sandbox_after_weight_cleanup.bin"),
