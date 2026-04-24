@@ -870,7 +870,35 @@ define EnglishStarFrontVowel PGmcStarFrontVowel;
 
 define EnglishStarBackVowel PGmcStarBackVowel;
 
-define EnglishStarDiphthong PGmcStarDiphthong;
+# Split diphthongs by weight for apocope/syncope (DEV_NOTES §17.17, Campbell §345).
+# Short diphthongs are the products of back-umlaut of a short vowel in a LIGHT
+# environment (short V + single C + back V). They do NOT trigger heavy-syllable
+# apocope. Short diphthongs from BREAKING always occur in a 2-C environment,
+# which is handled by the independent "short V + 2 C" clause.
+# Long diphthongs (inherited or from lengthening/contraction) and acute-stressed
+# breaking products (which required a cluster environment) count as HEAVY.
+define EnglishStarShortDiphthong [
+    {*ea} | {*eo} | {*io} |
+    {*éa} | {*éo} | {*ío} | {*íe}
+    # Acute-marked short diphthongs are back-umlaut products of acute-stressed
+    # SHORT vowels (*é+r+u → *éo+r+u). The source syllable was light; apocope
+    # should not fire. Breaking-sourced *éa/*éo/*ío occur in 2-C environments,
+    # which already trigger apocope via the "short V + 2 C" clause in that rule,
+    # so no apocope is lost by classing them as short.
+];
+
+define EnglishStarLongDiphthong [
+    {*ai} | {*au} | {*ei} | {*eu} | {*iu} |
+    {*ēa} | {*ēo} | {*īe} | {*īo} |
+    {*ái} | {*áu} | {*éu} | {*íu} |
+    {*ḗa} |
+    {*ie}
+    # Inherited long diphthongs (*ai, *au, *eu, *iu) and their acute counterparts;
+    # {*ḗa} is the lengthened breaking product of long *ā. {*ie} is WS palatal
+    # diphthongization; kept here pending probe.
+];
+
+define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ}];
 
@@ -2607,9 +2635,16 @@ define OEHighVowelApocope [
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     # Disyllabic: diphthong + consonant(s) + final vowel
-    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ .#.,
+    # LONG diphthongs are heavy (any C count). SHORT diphthongs are heavy only
+    # with 2+ consonants; a short diphthong + single C is a LIGHT syllable (from
+    # back-umlaut of a light stem, Campbell §345; DEV_NOTES §17.17).
+    # E.g. *spéru → speoru (LIGHT, retain -u); *xérdō → heord (HEAVY, lose -u).
+    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
@@ -2620,9 +2655,18 @@ define OEHighVowelApocope [
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with short-diphthong first syllable (from back-umlaut of a light
+    # stem): trisyllabic apocope still fires regardless of stress-syllable weight
+    # (Campbell §345). E.g. *xémonų → *xéomonų → heofon.
+    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
     # Pattern: shortV + C + shortV + C+ + final_vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
@@ -2630,7 +2674,13 @@ define OEHighVowelApocope [
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
     # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
-    {*i} -> 0 || EnglishStarLongVowel _ .#.
+    {*i} -> 0 || EnglishStarLongVowel _ .#.,
+    # Campbell §238/§346: final -u lost after /h/ (*x) regardless of weight.
+    # Must fire before intervocalic h-loss would remove the conditioning.
+    # E.g. *féxu → *féoxu → feoh (not feou).
+    {*u} -> 0 || {*x} _ .#.,
+    {*ų} -> 0 || {*x} _ .#.,
+    {*i} -> 0 || {*x} _ .#.
 ];
 
 # Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
@@ -2653,7 +2703,7 @@ define OEWeightCleanup ?*;  # identity — no markers to clean up
 # and sibilants (*xarbistuz → hierfest, not *hierf+st).
 define OEMedialSyncope [
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
-    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
+    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
 ];
 
