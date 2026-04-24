@@ -147,12 +147,11 @@ define pgrmDiphthong [
     {ái}:{*ái} | {áu}:{*áu} | {éu}:{*éu} | {íu}:{*íu}
 ];
 
-# Unstressed diphthong: {*ăi} undergoes NWGmc monophthongization to *ē (not *ā).
-# R/T §6.1.5: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
-# Used in weak-tail endings like fem. ō-stem dat.sg. *-ăi → -e.
-define pgrmUnstressedDiphthong [
-    {ăi}:{*ăi}
-];
+# §17.12: The unstressed-diphthong grammar (formerly pgrmUnstressedDiphthong
+# with breve marker {*ăi}) was eliminated. Word-final *ai is the only unstressed
+# *ai that survives to the monophthongization stage in our TSV, so the rule
+# now conditions on position (word-final) rather than on a diacritic tier.
+# See DEV_NOTES §17.12.
 
 define pgrmCodaSimple [
     m:{*m} | n:{*n} | ŋ:{*ŋ} | s:{*s} | z:{*z} | r:{*r} | l:{*l} |
@@ -329,13 +328,15 @@ define pgrmWeakTailVowel [
     # MUST use *a (not *ă) to undergo unstressed fronting: *a → *æ → *e
     # e.g. *mannas → mannes (geminate medial before -es)
     a:{*a} s:{*s} |
-    # Dat.sg. of fem. ō-stem: PGmc *-ăi → OE -e (Brunner §252)
-    # Uses unstressed diphthong *ăi which monophthongizes to *ē at NWGmc stage
-    # (NWGmcUnstressedAiMonophthongization), then shortens: *ē → *e in unstressed position.
-    # R/T §6.1.5: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
-    # Used for geminate-stem fem. nouns where medial geminate is preserved.
-    # e.g. *spannăi → spanne
-    {ăi}:{*ăi} |
+    # Dat.sg. of fem. ō-stem: PGmc *-ai → OE -e (Brunner §252)
+    # The unstressed word-final *ai monophthongizes to *ē at the PWGmc/NWGmc
+    # stage (R/T §6.1.5 "unstressed *ai was usually monophthongized to *é
+    # throughout the NWGmc"), then shortens: *ē → *e in unstressed position.
+    # The stress/position distinction with root *ai (→ *ā by traditional
+    # WGmc monophthongization) is made phonetically in PWGmcAiMonophthongization
+    # via the word-final right context. See DEV_NOTES §17.12.
+    # e.g. *spannai → spanne
+    {ai}:{*ai} |
     e:{*e} n:{*n} a:{*a} z:{*z} |
     e:{*e} n:{*n} ă:{*ă} z:{*z} |
     e:{*e} r:{*r} |
@@ -527,7 +528,6 @@ define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
 
 define PGmcStarDiphthong [
     {*ai} |
-    {*ăi} |  # Unstressed *ai (R/T §6.1.5: unstressed *ai→*ē)
     {*au} |
     {*ea} |
     {*ēa} |
@@ -1384,10 +1384,16 @@ define EnglishLongVowelRealisation [
 # PWGmc is the common ancestor of OE, OS, OHG, OF - the "West Germanic" stage.
 # These rules model critical PWGmc developments per R/T §3.1.
 
-# Traditional West Germanic monophthongization
+# Traditional West Germanic monophthongization, with word-final split
+# (§17.12): unstressed word-final *ai → *ē (R/T §6.1.5), elsewhere *ai → *ā.
+# The word-final rule fires first so the *ai of the fem. ō-stem dat.sg.
+# (*spannai) is not consumed by the general stressed monophthongization.
 define PWGmcAiMonophthongization [
-    {*ai} -> {*ā},
-    {*ái} -> {*ā}
+    [{*ai} -> {*ē} || _ .#.]
+    .o.
+    [{*ai} -> {*ā}]
+    .o.
+    [{*ái} -> {*ā}]
 ];
 
 # PWGmc: Bimoric *ō → *a before word-final *r (R/T vol.2 §3.1.4, pp.58-59; Fulk §5.3).
@@ -1908,12 +1914,12 @@ define NWGmcILowering [
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
-# NWGmc: Unstressed *ăi → *ē (R/T §6.1.5, lines 2055, 2244-2264).
-# R/T: "unstressed *ai was usually monophthongized to *é throughout the NWGmc"
-# This is chronologically SEPARATE from PWGmc *ai → *ā (stressed).
-# The unstressed *ăi merges with *ē, then follows regular development:
-# *ē → *e (shortening in unstressed position) → OE -e.
-# Used in weak-tail endings like fem. ō-stem dat.sg. *-ăi.
+# §17.12: The former NWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē})
+# has been folded into PWGmcAiMonophthongization (line ~1388) using a
+# word-final right context, eliminating the breve-marked diphthong {*ăi}.
+# This rule is kept as a no-op (empty composition) to preserve cascade
+# insertion points; the actual monophthongization now fires at the
+# PWGmcChanges stage. See DEV_NOTES §17.12.
 define NWGmcUnstressedAiMonophthongization [
     {*ăi} -> {*ē}
 ];

@@ -27927,3 +27927,85 @@ cleanup, 6 TSV row migrations (the 7th — `*spánnăi` — is
 orthogonal).
 
 — end §17.11
+
+## §17.12 — Eliminating the unstressed-diphthong breve {*ăi} (2026-04-24)
+
+### §17.12.1 Motivation
+
+After §17.11 eliminated the compound-linking breve, one
+residual breve marker survived: `{*ăi}`, used for the fem.
+ō-stem dat.sg. ending `*-ăi`. The breve distinguished the
+unstressed ending (→ *ē, R/T §6.1.5) from the stressed root
+diphthong `*ai` (→ *ā, traditional West Germanic
+monophthongization, PWGmcAiMonophthongization line ~1388).
+
+Only one TSV form carries this marker: row 1057 `*spánnăi`
+(OE dat.sg. `spanne`). No other form in the corpus has a
+word-final `*ai` at any point in the cascade.
+
+### §17.12.2 Phonetic equivalence of stress and position
+
+The distinction between stressed `*ai` (→ *ā) and unstressed
+`*ai` (→ *ē) is fundamentally **positional** in Proto-Germanic:
+
+- **Stressed `*ai`** occurs exclusively in **root syllables**,
+  never word-finally. Any root-internal `*ai` bears primary
+  stress by default (PGmc stress is root-initial).
+- **Unstressed `*ai`** occurs exclusively in **inflectional
+  endings** (fem. ō-stem dat.sg. `*-ai`, opt. mood marker
+  `*-ai-`, etc.), which after PWGmc ending-erosion surface
+  **word-finally**.
+
+A survey of the full TSV confirms: the only word-final `*ai`
+anywhere in the corpus is the fem. ō-stem dat.sg. ending on
+`*spannai`. Word-final position is therefore a fully
+equivalent phonetic condition to the unstressed/stressed
+distinction the breve was marking, and is the condition R/T
+effectively appeals to when they describe the NWGmc §6.1.5
+change.
+
+### §17.12.3 Implementation
+
+1. **TSV**: row 1057 `*spánnăi → *spánnai`.
+2. **Grammar** (`germanic.txt`):
+   - Delete `pgrmUnstressedDiphthong` (was `{ăi}:{*ăi}`).
+   - In `pgrmWeakTailVowel`, change `{ăi}:{*ăi}` to
+     `{ai}:{*ai}` for the fem. ō-stem dat.sg. alternative.
+   - Remove `{*ăi}` from `PGmcStarDiphthong`.
+   - Rewrite `PWGmcAiMonophthongization` with an internal
+     word-final split:
+     ```
+     [{*ai} -> {*ē} || _ .#.]
+     .o.
+     [{*ai} -> {*ā}]
+     .o.
+     [{*ái} -> {*ā}]
+     ```
+   - `NWGmcUnstressedAiMonophthongization` kept as a no-op
+     (`{*ăi}` no longer reaches it, so the rule is vacuous
+     but cascade-insertion-point-preserving).
+
+### §17.12.4 Verification
+
+- Mismatch count: 33 (unchanged from baseline).
+- `*spánnai → spanne` ✓ (dat.sg. with medial geminate
+  preserved, unstressed word-final *ai → *ē → *e).
+- No regression on stressed-*ai forms (e.g. `*stainaz`
+  still → `stān` via `*ai → *ā`).
+
+### §17.12.5 Outcome
+
+The pipeline no longer uses the `{*ăi}` symbol anywhere that
+affects surface output. Combined with §17.11, all phonetically
+meaningful stress-sensitive changes (inter-stress raising,
+linking-vowel syncope, unstressed-diphthong monophthongization)
+now read off either (a) the acute/grave prosodic tiers (§16.6,
+§17.11) or (b) word-position conditions (§17.12), never off
+engineering diacritics.
+
+Residual breve usage in the grammar (weak-tail `{*ă}` in
+pgrmWeakTailVowel alternatives like `-ănā`, `-ăz`, etc., and
+`OEWeakTailReduction1a`) is orthogonal — it participates in
+morphological ending-identification rather than conditioning
+sound changes, and belongs to the separate §17 weak-tail
+cleanup programme.
