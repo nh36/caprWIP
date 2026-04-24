@@ -493,7 +493,6 @@ define PGmcStarVowel [
     {*y} |
     {*ȳ} |
     {*æ} |
-    {*ă} |
     {*ø} |
     {*ā} |
     {*ą} |
@@ -895,7 +894,7 @@ define EnglishStarDiphthong PGmcStarDiphthong;
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ}];
 
 define EnglishStarShortVowel [
-    {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ă} | {*ą} |
+    {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
     {*á} | {*é} | {*í} | {*ó} | {*ú} |
     # Secondary-stress (Nebenton) short vowels — §16.6
     {*à} | {*è} | {*ì} | {*ò} | {*ù}
@@ -1183,7 +1182,7 @@ define EnglishGhDeletion [
     {*GH} -> 0 || EnglishStarVocalic _ ({*t} | {*d} | .#.)
 ];
 
-define EnglishRhoticWeakTail [{*ă} | {*ą} | {*ɔ̆}];
+define EnglishRhoticWeakTail [{*ą} | {*ɔ̆}];
 
 define EnglishRhoticBreaking (
     # {*barwōn} (bier): smooth the {*rʋ} cluster into an ME /ɪə/ nucleus so later stages can drop /r/ normally.
@@ -1850,7 +1849,7 @@ define AngloFrisianVelarShortening [
 # R/T: "stressed *u was apparently lowered to *o" (p.27, line 2297)
 # Examples: *wurda → word, *hurnga → horn, *budanaz → boden (all with SHORT o)
 define EnglishStarNonHighVowel [
-    {*a} | {*ā} | {*ă} | {*ą} |
+    {*a} | {*ā} | {*ą} |
     {*e} | {*ē} |
     {*o} | {*ō} | {*ɔ̆} |
     {*ô} |
