@@ -459,8 +459,11 @@ define pgrmSimpleWord [
 # The hyphen is deleted during transduction (maps to 0)
 define pgrmCompoundSep [{-}:0];
 
-# Linking vowel in compounds: typically ă or zero
-define pgrmLinkingVowel [ă:{*ă} | 0];
+# Linking vowel in compounds: plain unstressed stem-class vowel (a/i/u) or zero.
+# Per §17.11, the linking vowel bears no diacritic — it is a plain short vowel
+# whose deletion (OECompoundLinkingSyncope) is phonetically conditioned by the
+# surrounding stress trough (acute primary-stress … _ … grave Nebenton).
+define pgrmLinkingVowel [a:{*a} | 0];
 
 # Compound word: First element is strong syllable + optional linking vowel,
 # second element can have various structures.
@@ -515,6 +518,12 @@ define PGmcStarVowel [
     # See DEV_NOTES §16.6.
     {*à} | {*è} | {*ì} | {*ò} | {*ù}
 ];
+
+# §17.11: acute/grave short-vowel helpers for trough-conditioned changes.
+# Acute = primary stress (Hauptton); Grave = secondary stress (Nebenton).
+# See DEV_NOTES §§16.6, 17.11 for the Luick/Brunner/R-T/Fulk background.
+define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}];
+define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
 
 define PGmcStarDiphthong [
     {*ai} |
@@ -2695,13 +2704,16 @@ define OELAdjacentSyncope [
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
 ];
 
-# Compound linking vowel syncope: R/T §6.7.3 general syncope.
-# The breve-marked *ă in compounds (e.g., *regnă-bugô) syncopates in word-internal
-# position. Word-internal = followed by at least C+V (i.e., another syllable).
-# This targets only *ă (the linking vowel marker), not *a from inflectional endings.
-# Must fire BEFORE OEWeakTailReduction converts *ă → *a.
+# Compound linking vowel syncope (§17.11, Option T — trough-conditioned).
+# The unstressed linking vowel between a primary-stressed first-element syllable
+# (acute) and a Nebenton-bearing second-element syllable (grave) deletes. This
+# is the phonetic stress trough of Luick §§296, 306, 335–340 / Brunner §§400–405
+# / R&T vol.2 §6.3.3 p.200–202 / Fulk §2.2. No morphological marker is needed:
+# the rule reads off the acute/grave prosodic tiers directly.
+#   e.g. *régna-bùgô → *régn-bùgô → reġnboga
 define OECompoundLinkingSyncope [
-    {*ă} -> 0 || OEAnyConsonant _ OEAnyConsonant+ EnglishStarVocalic
+    [{*a}|{*i}|{*u}] -> 0
+        || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
 ];
 
 # Post-syncope dental cluster simplification: *tθ → *t.
@@ -2829,6 +2841,10 @@ define EnglishProtoToOE (
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
     # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
     .o. OEInterStressRaising
+    # §17.11: compound linking-vowel syncope MUST fire before grave-stripping
+    # (trough condition reads acute+grave tiers). Also precedes B-allophony
+    # (line ~2894) so the post-syncope cluster *n_*b blocks *b→*β lenition.
+    .o. OECompoundLinkingSyncope
     # §16.6: neutralise Nebenton graves to plain short vowels
     # immediately after inter-stress raising, before the general
     # stress-sensitive cascade.
@@ -2871,10 +2887,9 @@ define EnglishProtoToOE (
     # PWGmcSyllabicJ so that *natją → *nattją (gemination creates heavy stem).
     # See DEV_NOTES.md "OE nett 'net': ja-stem Gemination Chronology Bug"
     #
-    # Compound linking vowel syncope must precede B-allophony so that
-    # *regnă-bugô → *regn-bugô (syncope) before *b → *β (allophony).
-    # With syncope first, *b follows consonant *n, blocking lenition.
-    .o. OECompoundLinkingSyncope
+    # NOTE: OECompoundLinkingSyncope moved earlier in the cascade (§17.11)
+    # — must run before OEStripSecondaryStress so the trough condition can
+    # see the grave vowel of the Nebenton-bearing second element.
     #
     # PGmc *b allophony (*b → *β after vowels/liquids) placed AFTER j-gemination.
     # R/T vol.2 p.50: j-gemination operates on underlying /b/ (e.g. *habjan- → *habban-).
