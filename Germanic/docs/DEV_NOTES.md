@@ -27599,3 +27599,331 @@ plain vowels.
 Proceed to `plan.md` for the step-by-step implementation plan.
 
 — end §16.6-probes
+
+## §17.11 — Eliminating the last breves: linking-vowel syncope via the stress trough (2026-04-24)
+
+### §17.11.0 Motivation
+
+§17.10 (Plan Y-minimal) retained `{*ă}` exclusively in the
+compound-linking position as a pragmatic concession. After the
+§16.6 migration, only **7 TSV PROTOFORM cells still contain
+breve**, all linking vowels in two compound forms:
+
+- `*regnă-bugô` (3 rows: Dutch, English, German)
+- `*wíră-aldiz` (3 rows: Dutch, English, German)
+- `*spánnăi`    (1 outlier — treat separately)
+
+The OE analogues now use grave-accent Nebenton
+(`*régna-bùgô`, `*wír-àldu`, `*θūs-èndi`; §16.6), and the
+§16.6 migration also dropped the breve from the linking vowel
+of row 2148 (`*régnă-bugô → *régna-bùgô`) on the principle
+that an unaccented `a` is already an unaccented `a` — no
+diacritic adds phonetic content. That edit currently produces
+one mismatch (33 → 34) because `OECompoundLinkingSyncope`
+still keys off `{*ă}` as a symbol rather than off the
+phonological condition that actually licenses the change.
+
+### §17.11.1 Three-agent source audit (2026-04-24)
+
+Following the default three-agent research practice
+(`WORKFLOW.md`), three parallel explore-agents surveyed (a)
+how the reference grammars notate the linking vowel, (b) the
+FST integration surface in our grammar, and (c) whether schwa
+is a defensible PGmc reconstruction symbol. The full findings
+are summarised below; earlier drafts of this section explored
+morphological (hyphen) and ad-hoc (schwa, grave-extension)
+alternatives, but all of those impose **non-phonetic**
+conditioning on a change that the literature treats as a pure
+prosodic phenomenon. Those alternatives are archived here as
+rejected options for completeness; the accepted proposal is
+§17.11.2 below.
+
+#### §17.11.1-A Notational practice in the literature
+
+| Source                           | Linking-vowel notation                            | Terminology           |
+|----------------------------------|---------------------------------------------------|-----------------------|
+| Orel 2003 (Handbook of Germanic) | hyphen + full vowel: `*aina-fōtjaz`              | "Compound of X and Y" |
+| Ringe & Taylor vol. 2            | plain, no hyphen: `*werald(i)`                    | "linking vowel"       |
+| Fulk, *Comparative Grammar*      | plain: `ala-jung`, `alo-waldand`                  | "composition vowel"   |
+| Hogg vol. 1                      | plain                                             | "Fugenelement"        |
+| Campbell                         | plain                                             | "connecting vowel"    |
+| Brunner §167–168                 | plain `-a-`, `-i-`, `-u-` in juncture             | "Kompositionsfuge"    |
+| EWA (Lloyd & Springer)           | plain + German terminology                        | "Kompositionsfuge"    |
+| Kroonen                          | plain (minimal discussion)                        | (Gröger cited)        |
+
+**No source** uses breve `ă` or schwa `ə` to mark the linking
+vowel. The tradition is either plain vowel with no marker at
+all (R/T, Fulk, Brunner, Campbell, Hogg, Kroonen) or plain
+vowel with an explicit hyphen between stems (Orel). The
+hyphen, where used, is a **printing convention**, not a
+morphophonemic symbol with rule-conditioning role.
+
+#### §17.11.1-B What the literature says about the syncope itself
+
+The medial/linking-vowel syncope is **phonetically
+conditioned by weak stress**. Direct citations:
+
+- **Luick §§296, 306, 335–340**: unstressed medial short
+  vowels in the trough between primary and secondary stress
+  undergo weakening and, in the right prosodic environment,
+  loss ("Synkope"). Luick marks the affected syllables with
+  grave accent precisely to foreground the prosodic
+  conditioning.
+
+- **Brunner §§400–405**: tripartite Hauptton / Nebenton /
+  unbetont (primary / secondary / unstressed). The "unbetont"
+  syllable between Hauptton and Nebenton is the trough; it is
+  the locus of syncope and of raising.
+
+- **Bülbring §§400–404**: same tripartite analysis; explicit
+  about the trough as a prosodic unit.
+
+- **Ringe & Taylor vol.2 §6.3.3 p.200–202**: "trough between
+  primary and secondary stress" as the conditioning
+  environment for inter-stress raising and medial syncope.
+  Both changes read off the same prosodic geometry.
+
+- **Fulk, *Comparative Grammar* §2.2 lines 2829–2842**:
+  "Compounds with secondary stress show complete resistance
+  of vowels and diphthongs under the former [primary stress]
+  to be reduced… Go. *árma-haìrts*, OE *éarm-hèort*
+  'merciful'." Fulk explicitly identifies the second-element
+  root syllable as Nebenton-bearing and the linking vowel
+  as extra-metrical (the trough).
+
+The linking-vowel syncope and the secondary-stress raising
+(§16.6) are therefore **two surface effects of the same
+prosodic geometry**: a stressed first-element syllable, a
+weakly-stressed (or completely unstressed) linking syllable,
+and a Nebenton-bearing second-element root. In the grammar
+of Luick/Brunner, these two effects are conditioned by
+exactly the same structure.
+
+#### §17.11.1-C Schwa defensibility — rejected
+
+Agent C surveyed schwa usage in R/T, Ringe vol.1, Fulk,
+Brunner, Campbell, Hogg, Bülbring, and EWA. In PGmc
+reconstruction, `*ə` has two settled functions:
+
+1. **PIE laryngeal reflex** (Ringe vol.1 §3.1.2, Fulk
+   §3.1.2). Already merged into `*a` / lost by PGmc.
+2. **Descriptive marker for Late OE/OS unstressed
+   centralisation** (Fulk lines 2600–2612; Hogg 4390–4410).
+   A 9th–11th c. development, not a PGmc feature.
+
+Ringe–Taylor vol.2 and Brunner §167–168 list PGmc compound-
+linking vowels with **full stem-class quality** (*-a-* for
+a-stems, *-i-* for i-stems, *-u-* for u-stems, *-ō-* for
+ō-stems). Fulk lines 2829–2842 argues they **resist
+reduction** at the PGmc stage because they sit between two
+prosodically heavy syllables.
+
+**Verdict**: `{*ə}` as a PGmc input-level symbol for the
+linking vowel is philologically indefensible. It contradicts
+R/T, Fulk, and Brunner, and overloads a symbol that already
+has two settled functions. Rejected.
+
+#### §17.11.1-D Morphological-marker alternatives — rejected
+
+An earlier draft of this section proposed preserving the
+hyphen (Orel's convention) or the breve as a morphological
+compound-boundary marker that `OECompoundLinkingSyncope`
+could read. On reflection, this is exactly the wrong move.
+The change is not morphological (conditioned on "is this a
+compound?") — it is **phonetic** (conditioned on "is this
+vowel in a stress trough?"). Morphologically conditioning a
+phonetic change inverts the explanatory direction and is not
+what the literature describes. Rejected.
+
+#### §17.11.1-E FST integration surface (Agent B — relevant facts)
+
+- `{*á}|{*é}|{*í}|{*ó}|{*ú}` already exist in
+  `PGmcStarVowel` (line 512) and mark primary-stressed short
+  vowels.
+- `{*à}|{*è}|{*ì}|{*ò}|{*ù}` already exist in
+  `PGmcStarVowel` (line 516) and mark Nebenton short vowels
+  per §16.6.
+- No helper class `PGmcStarAcuteVowel` / `PGmcStarGraveVowel`
+  exists yet; these would be trivial to define.
+- `OECompoundLinkingSyncope` at line 2705 currently fires on
+  `{*ă}` with context `OEAnyConsonant _ OEAnyConsonant+
+  EnglishStarVocalic`. The context is purely segmental — it
+  does not distinguish the trough position.
+- Residual breve footprint: 7 PROTOFORM cells, 1
+  `pgrmLinkingVowel` mapping (`ă:{*ă}`), 1 rule target
+  (`OECompoundLinkingSyncope`), 1 downstream no-op
+  (`OEWeakTailReduction1a` after migration).
+
+### §17.11.2 Proposal — Option T (Trough-conditioned syncope)
+
+The compound-linking syncope is part of the **same prosodic
+phenomenon** as inter-stress raising: both are triggered by
+the trough between primary (acute) and secondary-stress
+(grave) syllables. We encode this directly in the rule
+context.
+
+#### §17.11.2-a Phonological rule
+
+Reformulate `OECompoundLinkingSyncope` as:
+
+```foma
+define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}];
+define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
+
+define OECompoundLinkingSyncope [
+    # Short unstressed linking vowel between a primary-stressed
+    # syllable and a Nebenton-bearing syllable deletes. This is
+    # the phonetic stress trough of Luick §§296, 306, 335-340
+    # / Brunner §§400-405 / R/T vol.2 §6.3.3 p.200-202.
+    [{*a}|{*i}|{*u}] -> 0
+        || PGmcStarAcuteVowel OEAnyConsonant+ _
+           OEAnyConsonant+ PGmcStarGraveVowel
+];
+```
+
+The linking vowel is just a plain short vowel of whatever
+stem-class quality is inherited (`*a` for a-stems, `*i` for
+i-stems, `*u` for u-stems). The rule deletes it only when
+flanked by the acute–grave prosodic pattern that defines the
+trough. No morphological marker, no engineering tag — the
+rule reads off the same prosodic geometry that conditioned
+inter-stress raising in §16.6.
+
+#### §17.11.2-b TSV migration
+
+Seven TSV rows, three forms:
+
+- Row 845 (Du), 846 (En), 848 (Ge) `*regnă-bugô` →
+  `*régna-bùgô` (acute on first-element root, grave on
+  second-element root, plain linking `a`).
+- Row 1442 (Du), 1443 (En), 1445 (Ge) `*wíră-aldiz` →
+  `*wíra-àldiz` (acute on first-element root already present;
+  add grave to second-element root vowel; drop breve on linking
+  `a`).
+- Row 1057 `*spánnăi` — not a true compound; inspect
+  separately and handle under the §17 weak-tail migration
+  programme, not §17.11.
+
+Note: under §16.6 we kept the OE-row variants using graves
+already. The Du/Ge/En rows inherited `*regnă-bugô` / `*wíră-aldiz`
+from earlier (pre-§16.6) state. After §17.11, these will also
+use the acute+grave convention consistent with OE — the same
+prosodic structure is reconstructable across the daughter
+languages and the grave/acute markers are input-level
+notation only (stripped before surface).
+
+For the non-OE pipelines (Dutch / German / English), which do
+not run `OECompoundLinkingSyncope`, the acute and grave
+accents are neutralised by the existing star-removal and
+surface-strip machinery (already extended under §16.6).
+
+#### §17.11.2-c Grammar edits
+
+1. In `pgrmLinkingVowel` (line 463), replace `ă:{*ă}` with
+   `a:{*a}` (and optionally add `i:{*i}` / `u:{*u}` for other
+   stem classes, though the current TSV only needs `a`):
+   ```
+   define pgrmLinkingVowel [a:{*a} | 0];
+   ```
+
+2. Add helper classes near `PGmcStarVowel`:
+   ```
+   define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}];
+   define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
+   ```
+
+3. Rewrite `OECompoundLinkingSyncope` per §17.11.2-a.
+
+4. Remove `{*ă}` from `PGmcStarVowel`, `pgrmShortVowel`,
+   `EnglishStarShortVowel`, `EnglishStarNonHighVowel`, and any
+   other inventory it appears in. (Already absent from most;
+   finish the cleanup.)
+
+5. Remove `OEWeakTailReduction1a` — now a no-op since `{*ă}`
+   no longer appears anywhere in the stream.
+
+6. Remove the belt-and-braces `{*ă}:a` / `{*ă}:{*a}` mapping
+   in `OldEnglishRemoveStars` (line ~821) — no longer needed.
+
+#### §17.11.2-d Expected outcome
+
+- Mismatch count: return to 33 (recover the row-847 regression).
+- `*régna-bùgô → reġnboga`: syncope fires because `a` is
+  flanked by acute `é` (in `rég`) and grave `ù` (in `bùgô`).
+- `*wíra-àldiz → *wírà-aldiz`... wait; need to verify the
+  syncope actually targets the linking `a` (left of hyphen)
+  and not the second-element `a` of `àldiz`. In our planned
+  OE form `*wír-àldu` (row 2302), there is no linking vowel
+  present — the first element ends in `r` directly abutting
+  the hyphen. Rule doesn't fire (vacuous — nothing to delete).
+  For the Du/Ge/En forms `*wíra-àldiz`, the linking `a` sits
+  between `*wír-` and `-àldiz`, in the trough, and would
+  syncopate IF the rule were applied in those pipelines —
+  but it isn't (OE-only rule). So for those languages, the
+  linking `a` remains.
+
+#### §17.11.2-e Alignment with literature
+
+- **Luick § 296, 306, 335–340**: medial syncope conditioned
+  by stress trough. Directly modelled.
+- **Brunner §§400–405**: Hauptton / Nebenton / unbetont
+  tripartition. Directly encoded via acute / grave / plain
+  accent tiers.
+- **R/T vol.2 §6.3.3 p.200–202**: both inter-stress raising
+  and medial syncope read the same prosodic geometry. Unified
+  rule architecture (§16.6 for raising, §17.11 for syncope)
+  reflects this unification.
+- **Fulk §2.2**: secondary stress resists vowel reduction —
+  consistent with us marking the second-element root with
+  grave (stays intact, just neutralised to plain before the
+  general cascade) while deleting the extra-metrical linking
+  vowel.
+
+### §17.11.3 Rejected options (archived)
+
+| Option                  | Mechanism                                              | Rejection reason                                                                 |
+|-------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------|
+| B (keep breve)          | Retain `{*ă}` on linking vowel as engineering tag      | No phonetic content; user-rejected as artificial.                                 |
+| H (hyphen-as-boundary)  | Preserve `-` internally, key syncope off hyphen        | Morphological conditioning of a phonetic change; inverts explanatory direction. |
+| S (schwa marker)        | Use `{*ə}` on linking vowel                            | Overloads two settled schwa uses (laryngeal / late OE/OS centralisation); contradicts R/T, Fulk, Brunner on PGmc linking-vowel quality. |
+| G (grave on linking)    | Write `*regnà-bugô`                                    | Grave is Nebenton (second-element head), not extra-metrical trough; overloads symbol semantics (Fulk §2.2). |
+
+### §17.11.4 Probes (pending)
+
+Before implementation:
+
+1. Verify the context classes `PGmcStarAcuteVowel` and
+   `PGmcStarGraveVowel` compile cleanly in foma and are not
+   already defined under some other name.
+2. Probe that the new `OECompoundLinkingSyncope` fires on
+   `*régna-bùgô` and does not fire on `*régna-bugô` (no
+   grave — syncope should not apply without Nebenton on the
+   second element). This is a good test of the trough-
+   conditioning.
+3. Confirm that stem-internal plain `*a` between two
+   consonants is NOT syncopated even if an acute vowel sits
+   earlier and a grave later in the same word. (This requires
+   at least one cluster `C+` on each side of the target, so
+   a stem-internal position embedded in a CVCVCV sequence
+   without a C-cluster boundary should be safe. Verify with a
+   probe.)
+4. Baseline mismatch count after implementation: 33
+   (restored from current 34).
+5. The 7 TSV rows yield the expected OE surface form for OE
+   rows, and for non-OE rows produce their daughter-language
+   surfaces unchanged.
+
+### §17.11.5 Pending user decision
+
+This section proposes **Option T**: trough-conditioned syncope
+by acute–grave prosodic geometry. No morphological markers, no
+engineering tags. Awaiting approval to implement.
+
+Grammar is currently in a clean `HEAD` state; TSV row 847
+(`*régna-bùgô`) produces no output (1 new mismatch: 33 → 34)
+pending this implementation. On approval, the implementation
+is small: two helper classes, one rule rewrite, inventory
+cleanup, 6 TSV row migrations (the 7th — `*spánnăi` — is
+orthogonal).
+
+— end §17.11
