@@ -1,10 +1,10 @@
-Total mismatches: 27
+Total mismatches: 26
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    4
-  Phonology (other buckets):   16
+  Phonology (other buckets):   15
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -23,7 +23,6 @@ Total mismatches: 27
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
 --- back_expected_front_out sub-buckets ---
-  back_expected_front_out__other: 1
 --- vowel_quality sub-buckets ---
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
@@ -88,12 +87,6 @@ breaking_extra__wrong_form (1):
   >> ISSUE: Breaking difference plus consonant skeleton mismatch
   >> LIKELY: TSV proto/target are different lexemes or form classes
   >> ACTION: Verify TSV alignment; likely needs different proto
-
-back_expected_front_out__other (1):
-  *swéstēr -> swester (expected swustor)
-  >> ISSUE: FST produced front vowel, target has back vowel
-  >> LIKELY: Dialectal/analogical form, or vowel coloring not modeled
-  >> ACTION: Research if target is regular or a variant; may need u-coloring rule
 
 vowel_quality__u_lowering_exception (5):
   *búkkaz -> bocc (expected bucc)
