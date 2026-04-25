@@ -3,8 +3,8 @@ OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
 Total mismatches:         26
-  Tractable (no ledger):  20
-  exception               0
+  Tractable (no ledger):  19
+  exception               1
   open                    0
   parked                  1
   wontfix                 5
@@ -17,7 +17,7 @@ Exception = documented in literature/notes as genuine exception.
 Open      = currently being investigated (transient).
 
 ========================================================================
-TRACTABLE MISMATCHES  (20)
+TRACTABLE MISMATCHES  (19)
 ========================================================================
 These mismatches have no ledger entry and are candidates for the
 mismatch-loop workflow (research dossier → review → implement).
@@ -58,8 +58,7 @@ mismatch-loop workflow (research dossier → review → implement).
   *láimōn            -> lāfe                 (expected lām)
   *wéstanē           -> westene              (expected west)
 
---- other__final_vowel_missing__weak_noun_like (2) ---
-  *fūri              -> fȳr                  (expected fȳre)
+--- other__final_vowel_missing__weak_noun_like (1) ---
   *skúldrō           -> sċoldor              (expected sċuldra)
 
 --- other__front_expected_back_out (1) ---
@@ -107,9 +106,13 @@ WONTFIX  (5)
     added:  2026-04-25
 
 ========================================================================
-EXCEPTION  (0)
+EXCEPTION  (1)
 ========================================================================
-  (none)
+--- analogical_dat_e (1) ---
+  *fūri              -> fȳr                  (expected fȳre)
+    reason: FST correctly produces fȳr (regular nom./acc.sg. outcome of *fūri after i-umlaut + high-vowel apocope); target fȳre has analogically restored dat.sg. -e (four-part analogy with word:worde) — morphological process the FST cannot model
+    refs:   DEV_NOTES.md §6084-6268 (esp. 6189, 6262-6268)
+    added:  2026-04-25
 
 ========================================================================
 OPEN  (0)
