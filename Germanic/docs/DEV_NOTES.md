@@ -30025,3 +30025,816 @@ If a future revision of the dataset switches to a late-WS-prose
 register, Option 2 (full parasiting rule) remains available; the
 research and rule sketch are preserved in §17.18.4.
 
+### §17.19  PGmc 'navel' (*nablô / *nabulō → OE *nafola*) — proto-form choice and the *Cl A-restoration question
+
+**Date**: this session.
+**Status**: research complete; awaiting Option-selection by user.
+**Trigger**: TSV row 2133 mismatch. PROTOFORM `*náblô` (Kroonen) currently
+yields FST output `næfla`; expected OE `nafola`. The two errors visible in
+the surface form are (a) A-fronting fired but A-restoration did not (so the
+root vowel surfaces as `æ`, not `a`); (b) the medial vowel between *b* and
+*l* never appears (so the second-syllable nucleus is missing entirely).
+The TSV NOTE field has flagged this as a known issue: Kroonen's `*nablan-`
+vs. Ringe & Taylor's pre-retraction `*nabulō` are competing reconstructions,
+and the pipeline currently follows Kroonen.
+
+The investigation in §17.10 / §17.10.11 (DEV_NOTES.md lines 21776–21820)
+already noted that the rule `OEARestorationIntervening` (germanic.txt:1799)
+is defined as `EnglishStarConsonantNoR - {*l}`, i.e. *r* and *l* are
+**excluded** from the set of consonants permitted to stand between the
+fronted *æ* and the back-vowel trigger. At the time the exclusion was
+described as a heuristic, not a deeply-motivated boundary. The present
+section investigates whether that exclusion is empirically correct and what
+the right philological encoding for *nafola* is.
+
+---
+
+#### §17.19.1  The reconstructed proto-form
+
+##### Kroonen 2013, *Etymological Dictionary of Proto-Germanic*
+
+Kroonen lemmatizes the word as `*nablan-` (entry on p. 381 of the printed
+edition; reference txt line 22412 of the local copy):
+
+> ***nablan-** m. 'navel' — ON *nafli* m. 'id.', Far. *nalvi* m. 'id.',
+> Elfd. *navel* m. 'id.', OE *nafela* m. 'navel', E *navel*, OFri.
+> *naula* m. 'id.', Du. *navel* c. 'id.', OHG *nabalo, nabulo* m. 'id.',
+> G *Nabel* m. 'id.' > *h₃nobʰ-l-on-* (IE) — Gr. *omphalós* m.
+> 'navel, shield boss' < *h₃mbʰ-l-* ; Lat. *umbilīcus* m. 'navel,
+> center' < *h₃mbʰ-e/ol-* + *-iko-*; OIr. *imbliu* 'navel' <
+> *h₃mbʰ-el-ion-*.
+> The IE word for 'belly-button'. Like the mentioned cognates in the other
+> European languages, the Germanic word was derived from the PIE word for
+> 'nave, hub' (see PGm. ***nabō-***) with an *l*-suffix. See also
+> ***ambna-***.
+
+Two things to note in Kroonen's entry:
+
+1. The lemma is given **without** a medial *-u-* (`*nablan-`), but the
+   OHG cognate is cited in **both** shapes: *nabalo* and *nabulo*. The
+   medial-vowel-bearing OHG form is exactly what R/T reconstruct one
+   stage further back (see immediately below).
+2. The PIE etymon `*h₃nobʰ-l-on-` shows the *l* directly suffixed to the
+   root, with no medial vowel; this is what licenses Kroonen's bare
+   *nabl-* shape. But the Latin and Greek cognates have a vocalic ablaut
+   grade between root and *l* (Lat. *umbil-* < *umb-el/ol-*; Gk.
+   *omphal-* < *mbʰ-l̥-* with the *l̥* syllabified as *al*), so the
+   medial-vowel shape is at least as old as the IE level. Whether one
+   writes it `*-l-` (with later epenthesis) or `*-ul-` (with later
+   syncope) is a notation choice.
+
+A directly parallel Kroonen entry (`*nabō-`, p. 381 / line 22422) makes
+explicit that the *l*-stem and the *o*-stem 'nave, hub' are
+morphologically related — the *l* is a derivational suffix, not part of
+the root.
+
+##### Ringe & Taylor 2014, *The Development of Old English* (= R/T vol. 2)
+
+R/T are entirely explicit and twice cite the word as a textbook
+A-restoration example with the medial vowel **already in the input**.
+
+###### (a) §6.3.1 (printed p. 205–206) — General retraction of *æ
+
+R/T's rule statement (text page 189–190; ref. txt lines 10990ff.):
+
+> After breaking had run its course, those stressed *æ* which were
+> immediately followed by **a single or geminate consonant or sC-cluster**
+> which was in turn followed by a back vowel became *a* (Luick 1914–40:
+> 152–7, Campbell 1962: 60–2, Hogg 1992: 96–100 [2011: 93–9]).
+
+The list of "Nominals with derivational suffixes containing *u* or *ō*"
+(printed p. 206; ref. txt line 11090) includes:
+
+> PNWGmc ***nabulō*** 'navel' (ON *nafli*, OHG *nabalo*) > ***næbula***
+> > OE ***nafola*** (OF *navla*).
+
+The same exemplar list also has *nakud > nacod*, *habukaz > hafoc*,
+*latost > latost*, *sapæsagul > sōpsagol*, *sadulaz > sadol*, *stapulaz
+> stapol*, *stabulaz > stapol*, *wakul > wacol*, *gabulu > gafol*. All
+of these have an inherited (PNWGmc/PWGmc) medial *u* that R/T treat as
+present at the time of A-restoration.
+
+###### (b) §6.7.x (printed p. 270; ref. txt line 15573) — repeated citation
+
+In the discussion of unstressed-vowel reduction R/T gives the same
+derivation a second time:
+
+> PNWGmc ***nabulō*** 'navel' (ON *nafli*) > PWGmc ***nabulō*** (OF
+> *navila*, OHG *nabalo*) > ***næbula*** > OE ***nafola***.
+
+R/T's index (lines 32174 / 33394) lists the form on pp. 191, 270, 336.
+The OE entry in the Word Index (line 37733) reads:
+
+> *nafola ~ -ela*  191, 270, 336.
+
+###### (c) §6.9.5 (printed p. 327ff.) — Epenthesis is a *separate*, *much later* change
+
+R/T's section 6.9.5 (ref. txt line 18709) treats word-final
+CR-cluster epenthesis as the *late* OE process traditionally called
+"parasiting":
+
+> By the PWGmc loss of word-final short low vowels (see 3.1.2) numerous
+> word-final CR-clusters arose; the apocope of short high vowels after
+> heavy stressed syllables (see 6.8.1) created a few more. Early in the
+> attested history of OE short vowels were inserted in some of those
+> consonant clusters; the process is variously referred to as **epenthesis,
+> anaptyxis, syllabification, or 'parasiting'** … epenthesis cannot have
+> begun much before the middle of the 7th century and might have begun
+> within the 8th.
+
+Crucially, **6.9.5 epenthesis applies to** word-final clusters that arose
+by the *loss* of an earlier vowel. It does **not** create the medial *-u-*
+of *nabulō*: that vowel is already present in PNWGmc and PWGmc. The
+medial vowel that R/T cite in *nabulō* is therefore **inherited** — it is
+the derivational suffix vowel of the PGmc *-(u)l-* l-stem suffix,
+visible across the cognate set (OHG *nabalo* / *nabulo*, OFris *navila*,
+Latin *umbil-*, etc.).
+
+This is the chronology question stated explicitly. At the time of
+A-restoration (R/T §6.3, pre-6th c.), the input was **already** *nabulō*
+(with its inherited medial vowel). The *intervocalic* environment fed
+A-restoration without difficulty: stressed *æ* + single consonant *b* +
+back vowel *u*. Late 7th–8th c. epenthesis (§6.9.5) is irrelevant to this
+word; *nabula > nafola* did not need any vowel inserted.
+
+##### Orel 2003, *A Handbook of Germanic Etymology*
+
+Orel reconstructs the lemma with the medial vowel parenthesized, signaling
+its variable status:
+
+> ***nab(u)lōn** sb.m.: ON *nafli* 'navel', OE *nafela* id., OFris *navla*
+> id., MLG *navel* id., OHG *nabalo, nabulo* id. Derived from ***nabō**.
+> Further etymologically connected with and structurally similar to Gk
+> *omphalós* id., Lat *umbilícus* id., OIr *imbliu* id. < *imbilon-*.
+> (T-F 293; H AEEW 231; W-H II 814; P I 314–315; V ANEW 403; Z I 154;
+> F II 391–392; O 604; A Schw. 91; K-S 579.)
+> (Orel 2003: 279, l. 27675ff. of local txt.)
+
+Orel's `*nab(u)lōn-` is the most candid notation: the suffix is *-(u)l-*,
+the medial *u* is inherited but variably realized, and the lemma covers
+both the syncopated and unsyncopated shapes that the cognates show.
+
+##### Lehmann 1986, *A Gothic Etymological Dictionary*
+
+Gothic has no direct reflex of *nablan-*. Lehmann therefore has no
+lemma for the word. (Gothic *naqaþs* 'naked' < *nakwaþaz* in §6.3.1 of
+R/T's list is unrelated; the Goth. word *nadrs* 'adder' on the same R/T
+page is also unrelated despite the similar onset.) The Gothic gap is
+expected — the *-(u)l-* suffix is a North-/West-Germanic preference.
+
+##### Cognates (consolidated)
+
+| Branch | Form | Source |
+|---|---|---|
+| ON | *nafli* | Kroonen 381; Orel 279; R/T p. 191 |
+| Faroese | *nalvi* | Kroonen 381 |
+| Elfdalian | *navel* | Kroonen 381 |
+| OE | *nafela* (~ *nafula* Cp., ~ *nafela ~ *nafula*) | Kroonen 381; Campbell §385 (ref. line 10379–10380); BT |
+| ME / Mod E | *navel* | — |
+| OFris | *naula* (Kroonen) ~ *navla* (R/T) ~ *navila* (R/T 6.7.x) | Kroonen 381; R/T 191, 270 |
+| OS | (not directly attested in R/T list; cf. MLG *navel*) | Orel 279 |
+| MLG | *navel* | Orel 279 |
+| MDu | *navel* | (TSV row 431) |
+| Du | *navel* | (TSV row 431) |
+| OHG | *nabalo* ~ *nabulo* | Kroonen 381; R/T p. 270; Orel 279 |
+| MHG / G | *Nabel* | (TSV row 429) |
+
+The cognate distribution decisively supports the medial-vowel
+reconstruction: OHG *nabalo / nabulo*, OFris *navila*, OE *nafela ~
+nafula*, all show the medial vowel directly. Only ON *nafli* and Faroese
+*nalvi* show the syncopated shape — and in ON the syncope of medial *u*
+after a heavy syllable is regular and well dated (Noreen 1923: §155;
+mid-WGmc/EGmc ≠ ON for this pattern). The syncopated ON form does
+**not** prove that PGmc had no medial vowel; it proves that ON syncopated
+the inherited *-u-* later.
+
+##### Was the medial vowel inherited, PGmc, or PWGmc?
+
+Three possible analyses:
+
+1. **Inherited (PIE *-l̥- > PGmc *-ul-* by syllabification of the
+   sonorant)**. PIE *h₃nobʰ-l̥-on-* would syllabify the *l̥* in pre-PGmc
+   as *ul*, parallel to the way PIE *h₃mbʰ-l̥-* gave Gk *omph-al-*. Under
+   this view the *u* is in the word from before PGmc. (This is the most
+   natural reading of Orel's `*nab(u)lōn-`.)
+
+2. **PGmc-internal**. Some scholars (Streitberg *Urgermanische Grammatik*
+   §60) treat the *-(u)l-* suffix as a productive PGmc derivational shape
+   that is reconstructed with the vowel for PGmc; cognate shapes
+   *sadulaz, stapulaz, habukaz, gabulō, sopsagulaz, wakulaz, magulaz*
+   etc. (R/T's exemplar list, p. 206) are all of this same type. The *u*
+   is then a PGmc fact.
+
+3. **PWGmc anaptyxis**. Kroonen's bare `*nablan-` plus a PWGmc-level
+   syllabification of the *l* (i.e. epenthesis) would let one derive
+   OHG *nabalo* and OE *nafela* by a phonological rule. **R/T explicitly
+   reject this** by placing epenthesis (§6.9.5) in the 7th–8th c., long
+   after retraction (§6.3, pre-6th c.); and by giving the **PNWGmc**
+   reconstruction *nabulō* (with the vowel) on p. 191 and **PWGmc**
+   *nabulō* on p. 270. Under R/T the medial vowel is at the very latest
+   PWGmc, and probably PNWGmc or older.
+
+The handbook consensus (R/T, Orel, Streitberg) is therefore option 1
+or 2: the medial vowel is **inherited or PGmc-level**, not a late
+epenthesis. Kroonen's `*nablan-` lemma is a notational compression — he
+is reconstructing the underlying *root + suffix* without committing to
+the vocalic realization of *-(u)l-*. R/T's `*nabulō` is the
+phonological-input form needed for the OE chronology.
+
+---
+
+#### §17.19.2  The A-restoration rule itself
+
+##### Campbell 1959 §§157–161 (printed p. 60–62)
+
+Campbell's rule statement is in two parts.
+
+###### §157 (the statement of the alternation, ref. line 4698)
+
+> One of the most obvious peculiarities of the OE phonological system is
+> that *æ* and *a* interchange, the former standing in closed syllables,
+> and in open syllables when a front vowel (*e*, in early texts sometimes
+> written *i* or *æ*) follows, the latter in open syllables when a back
+> vowel (*a, o, u*) follows. The paradigm (see §574) *dæg, dæges, dæge,
+> dagas, daga, dagum* illustrates the principle.
+
+###### §158 (the consonant-environment statement — *the* relevant statement, ref. line 4727ff.)
+
+> The restoration of *a* is **common before all single consonants and
+> geminates**, e.g. *faran* go, *calan* be cold, *bacan* bake, *gnagan*
+> gnaw, *grafan* dig, ***stapol*** pillar, ***sadol*** saddle, *latost*
+> latest, *lapode* he invited, *cassoc* rough grass, *hassuc* the same,
+> *mattoc* mattock, *crabba* crab, *hnappian* fall asleep, *racca*
+> cord, *lappa* skirt.
+>
+> *a* is commonly restored also **before groups consisting of *f* or *s*
+> followed by another consonant**, e.g. *waścan* wash, *asce* ash,
+> *flasce* flask (after inflected *ascan, flascan*), *brastlian* crackle,
+> *sæftriende* rheumatic. **Before other groups, *a* is not restored
+> except for a few instances before consonant plus liquid**: W-S
+> *appla, apla* apples, *watrode* he watered, Angl. (Rit., Ru.) *accras,
+> acras* fields, beside *æplas, æcras, weterode*, and always *sægdon,
+> hæfdon, fedras, næglas*, &c. Yet it need not be doubted that *a was
+> originally widely restored before groups, and that it was subsequently
+> removed by the analogy of forms in which a front vowel followed.* This
+> is reflected by some doublets, e.g. *gæfel, gafol* tribute, *hægel,
+> hagol* hail, *fægen, fagen* glad, *wæcer, wacor* awake, which are at
+> least in some cases due to an original distinction s. *hægl*, p.
+> *haglas*, &c.; but cf. §193.c.
+
+###### §159 (chronology, ref. line 4760)
+
+> The restoration of *a* was frequently due to a back vowel which
+> subsequently became a front vowel or was lost, e.g. *gaderian* gather,
+> *stabelian* found (cf. *geador, stapol*), and weak verbs in *-i-*
+> (< *-ōi-*), *lapian, macian, hnappian*, &c.
+
+This is **decisive on three points**:
+
+1. **Single consonants and geminates always trigger restoration.** This
+   covers *bacan, faran*; the textbook nominals **stapol, sadol, hafoc,
+   gafol, latost** (Campbell §158, R/T p. 206); and the relevant target
+   here, *nafola* — which Campbell §385 (ref. line 10379) explicitly
+   cites: *eafera, adesa, **nafela** beside eafora, adosa, **nabula** (Cp.)*.
+   Campbell treats *nafela / nabula* as a normal A-restoration outcome,
+   with the second-syllable variation *e ~ a* due to medial unaccented
+   vowel reduction (§385 vowel harmony).
+
+2. **Cluster contexts: f/s + C is restored; other C+C is normally NOT
+   restored, EXCEPT a few instances before C + liquid.** Campbell's
+   exceptions list is **Cl** clusters specifically: *appla* (acc. pl. of
+   *æppel*), *watrode* (3sg pret. of *wætrian* 'water'), Angl. *accras
+   ~ acras* (acc. pl. of *æcer* 'field'). So restoration before C+l does
+   occur — sporadically, restricted to certain forms — but the *failure*
+   to restore is usually **analogical** removal, not a phonological
+   block: "*a* was originally widely restored before groups, and was
+   subsequently removed by the analogy of forms in which a front vowel
+   followed."
+
+3. **The morphologically unaffected class is intervocalic single
+   consonant** (§158 line 1 list). And this is the class that *nafola*
+   belongs to under R/T's *nabulō* reconstruction, because between the
+   stressed *æ* and the back-vowel trigger *ō* / *u* there is **only a
+   single consonant *b***. The *l* is not "intervening"; it is the
+   *onset* of the third syllable, before the *-ō* tail. This is the key
+   philological point.
+
+##### Hogg 1992, *A Grammar of Old English* vol. 1: Phonology
+
+Hogg discusses Restoration of *a* under §3.3.3.1 (ref. line 5189ff.).
+The rule statement (page 104–105, ref. line 5193):
+
+> [B]y the sound change we are now concerned with /æ/, and to a lesser
+> extent /æː/, were retracted to /a, aː/ when a back vowel was present
+> in the following syllable. This sound change had widespread
+> morphological consequences, for example nouns such as *fæt* 'vessel'
+> would have the plural form *fatu*. The effect of the change would be
+> to harmonise low vowels to a following vowel, so that any low vowel
+> followed by a back vowel would be back itself, and all other low
+> vowels (except nasalised ones) would be front.
+
+Hogg states the rule in vowel-harmony terms — *any low vowel followed by
+a back vowel*. He does **not** spell out a consonant-environment
+restriction in §3.3.3.1 (his rule statement is environment-blind in
+print), and his examples (*fæt ~ fatu*, *faran ~ fōr*, paradigmatic
+alternations) are all single-consonant cases. For the cluster question
+Hogg defers to Campbell and Luick; his explicit example list contains
+no *-Cl-* form.
+
+Hogg is clear on **chronology** (lines 5198–5208 and the relative-order
+discussion in §5.16ff.): restoration follows breaking and precedes back
+mutation (~700). This places it well before the 7th–8th c. parasiting
+(R/T §6.9.5).
+
+##### R/T summary on consonantal context
+
+R/T §6.3.1 (line 10992): **"a single or geminate consonant or sC-cluster
+which was in turn followed by a back vowel"**. R/T's restriction is
+therefore *more conservative* than Campbell's: where Campbell allows
+sporadic restoration before C+l (*appla, watrode, accras*), R/T's rule
+statement does not include C+l at all, and they handle *appla* etc.
+(if at all) as analogical levelings of the *paradigm* rather than as
+sound-change outputs. But R/T's *nabulō* example does **not** require
+C+l restoration: under their reconstruction the *l* is in a different
+syllable from the *b*, so the rule applies in the **intervocalic-singleton**
+case, not in a cluster case.
+
+##### Examples involving a cluster vs. a single consonant — empirical inventory
+
+From Campbell §158, Hogg §3.3.3.1, R/T §6.3.1 examples list (p. 205–207),
+and the OE Word Index of R/T:
+
+| Form | Cluster between root vowel and trigger? | A-restoration outcome |
+|---|---|---|
+| *bacan* (V-k-an) | single | restored: *a* |
+| *faran* (V-r-an) | single | restored: *a* |
+| *grafan* (V-f-an) | single | restored: *a* |
+| *macian* (V-k-i-an) | single | restored: *a* |
+| *stapol* (V-p-ul) | single | restored: *a* |
+| *sadol* (V-d-ul) | single | restored: *a* |
+| *hafoc* (V-f-uk) | single | restored: *a* |
+| *gafol* (V-b-ul) | single | restored: *a* |
+| *nafola* (V-b-ul-V) | **single** (under *nabulō*) | restored: *a* |
+| *flasce* (V-sk-ōn) | sC | restored: *a* |
+| *waxan* / *waścan* (V-sk-an) | sC | restored: *a* |
+| *asce* (V-sk-ōn) | sC | restored: *a* |
+| *crabba* (V-bb-ō) | geminate | restored: *a* |
+| *racca* (V-kk-ō) | geminate | restored: *a* |
+| *appla* (Cl, only with the *-a* pl ending) | C+l | sporadically restored (Campbell §158) |
+| *watrode* (Cr) | C+r | sporadically restored (Campbell §158) |
+| *accras* (Anglian Cr) | C+r | sporadically restored (Campbell §158) |
+| *næglas* 'nails' | C+l | **NOT restored** (Campbell §158) — analogical *æ* from sg. *nægl* |
+| *fedras* 'feathers' | C+r | **NOT restored** — analogical *e* from sg. *feðer* |
+| *sægdon* 'they said' | C+d | **NOT restored** — analogical *æ* from sg. forms |
+| *hæfdon* 'they had' | C+d | **NOT restored** — analogical *æ* from sg. forms |
+
+##### Are there cases where A-restoration *fails before *l specifically*?
+
+- *nægl* (sg.) / *næglas* (pl.) — Campbell §158 names this explicitly as a
+  case of analogical *æ*, not phonological failure of restoration before
+  *l*. Singular *nægl* has no back-vowel trigger (zero ending after late
+  apocope), so *æ* is regular there; the plural *næglas* should
+  phonologically be **\*naglas* but is *næglas* by paradigm leveling.
+  This is **paradigm leveling, not a failure of the sound change**.
+  Compare WS *appla, apla* where the leveling went the other direction.
+- *hægl* / *hagol* — Campbell §158 cites the doublet, which shows that
+  restoration *did* take place before *Cl* in some forms (*hagol*) and
+  was undone by analogy in others (*hægl*).
+- *gafol* / *gæfel*, *fægen / fagen*, *wæcer / wacor* — Campbell §158
+  cites these as further doublets confirming the same picture.
+
+The empirical conclusion is that **the FST's exclusion of *l* from
+`OEARestorationIntervening` is not phonologically motivated**. There is
+no sound law that says A-restoration fails before *Cl*; what appears in
+the surface lexicon is the result of analogical leveling within
+paradigms, where some words level *a* and others level *æ*. Both R/T
+and Campbell are explicit about this; the FST exclusion is at best a
+heuristic that catches the *NomSg* (cluster-final, post-apocope)
+representatives of the paradigm but mishandles intervocalic-singleton
+inputs like *nabulō* whose *l* is **not** in a cluster at all.
+
+---
+
+#### §17.19.3  Chronology
+
+R/T's relative ordering (vol. 2, table of contents and §§6.1–6.9) places
+the relevant changes as follows:
+
+1. **§6.1 Nasalization / lowering of low vowels** (early; PNWGmc-level)
+2. **§6.2 Anglo-Frisian Brightening (A-fronting), §6.2.2 Breaking** —
+   pre-OE; Anglo-Frisian Brightening fronts all stressed PWGmc *a* to
+   *æ*, including the *a* of *nabulō*: > pre-retraction *næbulō*.
+3. **§6.3.1 General retraction of *æ* (= A-restoration)** — pre-6th
+   century. Input: *næbulō*. Output: *nabulō* (front *æ* retracts to
+   back *a* before a single non-nasal consonant *b* + back-vowel
+   trigger *u*). The *l* is the onset of the next syllable and is
+   never relevant to the rule.
+4. **§6.4 Palatalization** — does not affect *nabulō* (no front-vowel
+   palatalizing context for *b* or *l*).
+5. **§6.6 i-umlaut** — N/A (no *i* in any following syllable).
+6. **§6.7 Reduction of medial unstressed vowels / vowel harmony**
+   (Campbell §385): the medial *u* of *nabula* tends to be reduced to
+   *e* or *o* under "vowel harmony"; OE attestations show *nafela* (with
+   reduction to *e*; majority WS form) alongside *nafola* (with reduction
+   to *o* by harmonization to the back tail) and Cp. *nabula* (preserving
+   the original *u*). All three are direct manuscript spellings.
+7. **§6.8 Apocope of unstressed vowels** — does not apply: the relevant
+   tail is *-ō* (long bimoric / trimoric), not subject to apocope.
+8. **NWGmc / OE n-stem ending reduction**: PGmc *-ōn* (n-stem nom.sg.) >
+   PNWGmc *-ǭ* (nasalized) ~ *-ô* (trimoric, masc. n-stem) > final-*n*
+   loss > *-ô* > shortened to *-a* in OE: *nafola* with NomSg *-a*.
+   See germanic.txt:2026–2028 (the trimoric *ô → *a* rule) and
+   DEV_NOTES §17.10.x.
+9. **§6.9.5 Epenthesis / parasiting** — mid-7th to 8th c. **Does not
+   apply to *nabulō*** because the medial *-u-* is already inherited,
+   not generated by epenthesis. The R/T rule of §6.9.5 affects only
+   word-final CR-clusters arising from prior apocope, like *fugl >
+   fugol*, *snotr > snotor*, *wuldr > wuldor*, etc. (R/T p. 327ff.).
+
+The **decisive R/T statement** that the medial vowel is in the input
+to retraction is the derivational arrow on p. 191:
+
+> PNWGmc ***nabulō*** > ***næbula*** > OE ***nafola***.
+
+The *æbu* in the intermediate form is the post-AFB output before
+retraction; the *abu* in the OE form is the post-retraction output. The
+*u* is present **at every stage**, so retraction sees a single *b*
+between *æ* and the back-vowel trigger *u*. There is no possibility,
+under R/T's chronology, that retraction was looking at a cluster *bl*.
+
+The same picture is given a second time on p. 270 (line 15573).
+
+---
+
+#### §17.19.4  Other potentially affected words
+
+The question is whether a fix for *nablô* would affect any other TSV
+rows in similar shape.
+
+##### Words in the TSV with proto *-aCl-* or *-aCr-* before a back-vowel tail
+
+A scan of the OE rows of the TSV (`$8=="Old_English"`) for shapes
+*\*aCl-* or *\*aCr-* yields the following cluster-level inventory:
+
+| Row | PGmc (TSV) | OE | Comment |
+|---|---|---|---|
+| 1935 | *bálluz | — | geminate *ll*, not *Cl* |
+| 1940 | *bárdaz | beard | *rd* cluster, breaking before *r*+C, no A-restoration question |
+| 1975 | *kálbaz | ċealf | breaking before *l*+C |
+| 1980 | *kūi | cȳ | irrelevant |
+| 2002 | *fállaną | feallan | geminate *ll* |
+| 2008 | *fárnaz | fearn | breaking |
+| 2013 | *fūri | fȳre | irrelevant |
+| 2025 | *fálθaną | fealdan | breaking |
+| 2030 | *fúglaz | fugol | *u*-vowel, not A-restoration; handled by `OEGLInsertion` (germanic.txt) |
+| 2046 | *grábaną | grafan | single *b*, A-restoration fires correctly |
+| 2050 | *xáglą | hæġl | *Cl* word-final NomSg, no back-vowel trigger; *æ* expected (cf. Campbell §158: *hægl ~ hagol* doublet — TSV chose the *NomSg* unbroken/*æ*-form) |
+| 2052 | *xállō | heall | geminate *ll* |
+| 2077 | *xáldaną | healdan | breaking |
+| 2110 | *láiθaz | lāþ | irrelevant |
+| 2118 | *máltaz | mealt | breaking |
+| 2130 | *náglaz | næġl | *Cl* word-final NomSg, no back-vowel trigger (cf. *hægl*); regular |
+| **2133** | ***náblô*** | ***nafola*** | **the present row** — *Cl* + tail *-ô*; this is the only TSV row of this exact shape |
+| 2134 | *xnékkô | hnecca | irrelevant |
+| 2162 | *rústō | rust | irrelevant |
+| 2164 | *séglą | seġl | *Cl*, not *aCl*; *e*-grade |
+| 2166 | *sáltą | sealt | breaking |
+| 2167 | *sálbō | sealf | breaking |
+| 2204 | *spárrô | spearra | breaking + geminate *rr* |
+| 2240 | *táppô | tæppa | geminate *pp*, no back-vowel-after-cluster issue (NomSg cluster) |
+| 2250 | *θístilas | þistles | (gen.sg., resolved in §17.18.7) |
+| 2271 | *wárpą | wearp | breaking |
+| 2272 | *wáskaną | wascan | sC cluster, A-restoration fires (Campbell §158, *flasce*-class) |
+| 2289 | *wáldaną | wealdan | breaking |
+| 2297 | *wálθuz | weald | breaking |
+
+The only TSV row that has the **exact shape** *\*[stressed *a*] + obstruent +
+*l* + back-vowel-tail* (with no breaking trigger and no geminate) is the
+present row, **2133 / *náblô / nafola*** itself. Words like *naglaz,
+xáglą, séglą* have the *l* as part of a word-final coda (NomSg) where
+no back-vowel trigger exists; their FST output is correctly *næġl, hæġl,
+seġl*. Words like *fugol* have a different vowel (*u*) and are
+independently handled by `OEGLInsertion`.
+
+##### *aplu / *aplaz → *æppel / *æppla*
+
+The PGmc reconstruction of 'apple' is geminate (*æppel < PGmc *aplaz with
+WGmc *p*-gemination, or directly inherited *appla-*; Kroonen *aplu-*).
+The TSV (if present) does not have this row at *aCl* shape; in any case
+Campbell §158 explicitly cites *appla* as a *Cl* restoration form that
+**did** undergo restoration. So this is consistent with our analysis: a
+*Cl* form with a back-vowel tail does undergo A-restoration in
+attestation.
+
+##### *flaskōn → flasce
+
+R/T p. 192 has *flæskē, flæskōn- > OE flasce, flascan*. This is an *sC*
+cluster, which Campbell §158 explicitly licenses for A-restoration. The
+existing `OEARestorationIntervening` set (= `EnglishStarConsonantNoR -
+{*l}`) already handles *sk*. Note that the rule comment at germanic.txt:
+1794–1796 specifically calls out *flaskōn* as the motivating example for
+adding *ǭ* to the trigger set. ✓ unaffected.
+
+##### *hagla- / *xáglą → hæġl
+
+NomSg has zero ending (post-apocope), so there is no back-vowel trigger
+in the surface form. AFB fronts *a → *æ; A-restoration cannot fire (no
+trigger). Output: *hæġl*. ✓ This is the desired behaviour.
+
+If the proposed change affected anything other than *nafola*, it would
+risk over-applying restoration to *hæġl* — but since *hæġl* has no
+back-vowel-tail input, no change to the rule has any effect on it.
+
+##### *aklan- / acorn / *æcern (Anglian *accras*)
+
+This is a different cluster (*kn*); Campbell §158 also cites it as an
+**Anglian** sporadic restoration site (*accras, acras* alongside
+*æcras*). Not in the TSV at this shape.
+
+##### Survey conclusion
+
+Across the TSV, **the only row of the exact *V-aCl-V*-with-back-tail
+shape is row 2133 itself**. Other apparent *aCl/aCr* matches are either
+breaking environments (root-final *Cl/Cr* → diphthong, by §6.2.2), or
+NomSg cluster-final (no trigger), or geminate, or sC (already licensed).
+A surgical fix for row 2133 will not have unintended ripple effects on
+the rest of the dataset.
+
+---
+
+#### §17.19.5  Recommendation
+
+##### Option A — Change TSV PROTOFORM to *nabulô* (R/T-style pre-syncope reconstruction)
+
+**Pro:**
+- **Lautgesetzlich**: matches R/T's explicit derivation on p. 191 and
+  p. 270 (*nabulō > næbula > nafola*) verbatim. R/T cite this exact form
+  as a textbook A-restoration nominal in the same paragraph as *stapol,
+  sadol, hafoc, gafol*, all of which the FST already handles correctly
+  with `*-ulaz / *-ulō / *-uk-` shapes already in `pgrmWeakTailVowel`.
+- **No FST rule change.** A-restoration applies in its existing form
+  (intervocalic singleton *b*); A-fronting feeds it; the rule
+  `OEARestorationTriggerVowel` already includes *ô*; the existing
+  weak-tail-reduction → *a* on the *-ô* trimoric ending (germanic.txt:
+  2026–2028) will produce the correct NomSg *-a*.
+- **No regression risk.** The cognate set (R/T, Orel, Campbell §385,
+  OHG *nabalo / nabulo*, OE Cp. *nabula*) directly attests the
+  medial vowel.
+- **Consistent with project precedent**: this is the same kind of
+  proto-form refinement done in §17.14 (*\*kwedu* > *\*kweðuz*), §17.16
+  (*\*spéru*), and §17.18.7 (*\*θístilaz* → *\*θístilas*) — pick the
+  proto-form that matches the lautgesetzlich derivation in R/T.
+
+**Con:**
+- Requires a new pattern in `pgrmWeakTailVowel` for `*-ulô` (the masc.
+  n-stem trimoric tail with linking *u*). The existing patterns at
+  germanic.txt:296–432 include `i:{*i} l:{*l} ō:{*ō}` (line 339),
+  `u:{*u} k:{*k} a:{*a} z:{*z}` (line 360), `u:{*u} w:{*w} ō:{*ō}
+  n:{*n}` (line 387), and `ô:{*ô}` standalone (line 407), but **not**
+  `u:{*u} l:{*l} ô:{*ô}`. Adding it is a one-line change exactly
+  parallel to the existing `i:{*i} l:{*l} ō:{*ō}` shape.
+- A *very small* TSV edit: PROTOFORM `*náblô` → `*nábulô`; TOKENS
+  remain `n a f o l a`; the cognate root `*nablô` can be retained in
+  the PROTO field for cross-Germanic alignment if desired (parallel to
+  §17.18.7's split between PROTO and PROTOFORM for *þístilaz/-as*).
+
+##### Option B — Keep TSV as *nablô*, extend `OEARestorationIntervening` to allow *l* in cluster position
+
+**Pro:**
+- No TSV edit.
+- Might fix any latent *aCl* cases not yet surfaced.
+
+**Con:**
+- **Phonologically wrong under R/T's chronology.** The whole point of
+  R/T §6.3.1 + §6.9.5 is that retraction sees the medial vowel; it does
+  *not* see a cluster. Reformulating the rule as "fires across a *bl*
+  cluster" would be a Kroonen-flavored reconstruction with a
+  non-lautgesetzlich rule statement, putting the FST out of step with
+  the handbook derivation.
+- **Would weaken the rule.** Campbell §158's "*a* is not restored
+  except for a few instances before consonant plus liquid" — the
+  *exceptional* cases (*appla, watrode, accras*) are paradigm-internal
+  outcomes, not phonological regularities. Encoding an unconditional
+  *Cl*-permission would over-apply (likely to break *næġl, hæġl,
+  seġl* NomSg outputs unless very carefully scoped, since those are
+  *Cl* clusters in stressed-vowel-followed-by-*Cl#* environments).
+- The §17.10.11 / §17.10 analysis (DEV_NOTES.md:21795) explicitly
+  identified the *l/*r exclusion as a heuristic; the project decided
+  to leave it because the proper fix was to encode the right input
+  (cf. the spirit of §17.13–§17.18). Option B reverses that policy.
+
+##### Option C — Hybrid (allow *l* + change proto)
+
+Belt-and-suspenders. The *l* permission would be vacuous given the
+proto change. Not recommended; introduces an unmotivated rule
+generalization.
+
+##### Option D — Paradigm-cell switch (target an oblique cell)
+
+The OE n-stem oblique cells are: gen.sg. *nafolan*, dat.sg. *nafolan*,
+acc.sg. *nafolan*, nom.pl. *nafolan*, gen.pl. *nafolena*, dat.pl.
+*nafolum*. All preserve the medial *-ol-/-el-* and the back-vowel-
+triggered root *a*. A switch to e.g. dat.pl. *nafolum* (PROTOFORM
+*\*nabulumiz* > *\*nabulum*) would also work, but:
+
+- It does not by itself solve the proto-form question (the medial *u*
+  still needs to be in the input).
+- It complicates the alignment vs. the standard NomSg dictionary lemma.
+- It is more invasive than Option A for no philological gain.
+
+The §17.18.7 paradigm-cell precedent was driven by a *missing*
+phonological rule (parasiting) that the project chose not to add.
+Here the phonological rule (A-restoration) is **already correct** and
+**already fires** on the right input shape. The fix is at the
+input/proto-form level, not the cell level.
+
+##### Recommended option: **Option A**
+
+Option A is the most defensible philologically and the most surgical
+for the FST.
+
+- It exactly tracks R/T §6.3.1 (p. 205–206) and §6.7.x (p. 270), which
+  twice cite *nabulō > næbula > nafola* as the canonical derivation.
+- It tracks Campbell §385 (p. 159, ref. line 10379), which lists *nafela
+  ~ nabula (Cp.)* as a direct medial-vowel-reduction cognate set.
+- It tracks Orel's notation `*nab(u)lōn-` literally.
+- It is consistent with the FST's existing strategy of including the
+  *u* in *-ulaz / -ulō / -uk-* derivational suffix shapes — *stapulaz,
+  sadulaz, habukaz, gabulō, wakulaz, sopsagulaz* are all already
+  treated this way.
+- It changes one TSV row and adds one proto-gate pattern (`u:{*u}
+  l:{*l} ô:{*ô}`); it does not modify any phonological rule.
+- It does not affect any other TSV row (see §17.19.4 inventory).
+
+**Concrete implementation sketch (NOT executed in this dossier, per
+user instruction):**
+
+1. `Germanic/data/germanic-aligned-final.tsv` row 2133:
+   - PROTOFORM: `*náblô` → `*nábulô`
+   - PROTO: keep `*nablô` (Kroonen-style cross-Germanic root)
+     **OR** update to `*nabulô` for internal consistency — see how
+     the other 3 navel rows (Dutch, English, German row 429–431) are
+     handled; they all currently carry `*nablô`. Recommendation: keep
+     `*nablô` in the cross-Germanic PROTO field, change only PROTOFORM,
+     parallel to §17.18.7's split.
+   - TOKENS, COUNTERPART, ALIGNMENT, IPA: unchanged (`n a f o l a`).
+   - NOTE: replace the existing flag with an §17.19 reference.
+
+2. `Germanic/fsts/germanic.txt` add to `pgrmWeakTailVowel` (around line
+   408, parallel to the existing `i:{*i} l:{*l} ō:{*ō}` and
+   `i:{*i} l:{*l} ō:{*ō} n:{*n}` shapes at lines 339–340):
+
+   ```
+   u:{*u} l:{*l} ô:{*ô} |
+   ```
+
+   This is the masc. n-stem trimoric ending with linking *-u-* (R/T
+   p. 191 *nabulō*; Campbell §385).
+
+3. Rebuild bins (`bash Germanic/tools/rebuild_oe_bins.sh`).
+
+4. Verify: `*nábulô → nafola` (correct); spot-check that `*náblô`
+   alone still parses (it should, since the bare `ô:{*ô}` shape at
+   line 407 plus the `b:{*b} l:{*l}` complex coda at line 166 still
+   admit it; it will continue to produce `næfla` as before, but is no
+   longer the active TSV target).
+
+5. Mismatch report should drop one row.
+
+##### A note on doublets
+
+OE attestation shows the variants *nafela* (WS, majority), *nafola*
+(matches R/T's chosen output and the TSV target), and *nabula* (Cp.,
+preserving the original *u*); see Campbell §385 and BT s.v. *nafela*.
+The choice of *nafola* as TSV target is reasonable since it preserves
+the back vowel of the inherited tail (*-ō*); *nafela* is the result of
+the §6.7 / Campbell §385 vowel-harmony reduction *u → e* in the first
+of two unstressed back-vowel slots. Either spelling would be defensible
+as the target; the current TSV target (*nafola*) is the cleanest output
+of the lautgesetzlich derivation R/T endorse.
+
+---
+
+#### §17.19.6  Bibliography
+
+- **Campbell, A.** 1959. *Old English Grammar*. Oxford: Clarendon.
+  - §157 (printed p. 60): the *æ ~ a* alternation (statement of
+    A-restoration as a vowel-harmony principle).
+  - §158 (printed p. 60–61): consonant-environment statement —
+    "common before all single consonants and geminates" /
+    "commonly restored also before groups consisting of *f* or *s* +
+    another consonant" / "Before other groups, *a* is not restored
+    except for a few instances before consonant plus liquid: W-S
+    *appla, apla*, *watrode*, Angl. *accras, acras*". The *crucial*
+    citation for the *Cl*/*Cr* question.
+  - §159 (printed p. 61): chronology — "back vowel which subsequently
+    became a front vowel or was lost".
+  - §385 (printed p. 158–159, ref. line 10379ff.): vowel harmony /
+    medial unaccented vowel reduction; explicit citation of *nafela
+    beside nabula (Cp.)*.
+  - Index entry (line 30945, 30981): "*nabula* see *nafela*" /
+    "*nafela, nabula* §385".
+
+- **Hogg, R. M.** 1992. *A Grammar of Old English*, vol. 1: Phonology.
+  Oxford: Blackwell.
+  - §3.3.3.1 (printed p. 104–106, ref. line 5189ff.): Restoration of
+    *a* — vowel-harmony statement; chronology (between breaking and
+    back mutation, ~ pre-700); no explicit consonant-cluster
+    restriction in the rule body.
+  - §5.16ff. (ref. line 5536ff.): cross-reference to back mutation,
+    confirming Restoration of *a* precedes back mutation.
+  - §5.93 (ref. line 7466): morphology — Class VI verbs vary between
+    *a* / *æ* by Restoration of *a*.
+
+- **Ringe, D. & Taylor, A.** 2014. *The Development of Old English*
+  (= *A Linguistic History of English* vol. 2). Oxford: OUP.
+  - §6.3.1 (printed p. 189–192, ref. line 10988ff.): General retraction
+    of *æ*. Rule statement: "those stressed *æ* which were immediately
+    followed by a single or geminate consonant or sC-cluster which was
+    in turn followed by a back vowel became *a*" (line 10992).
+  - p. 191 (line 11090): canonical derivation — "PNWGmc ***nabulō***
+    'navel' (ON *nafli*, OHG *nabalo*) > ***næbula*** > OE
+    ***nafola*** (OF *navla*)."
+  - p. 192 (line 11140): n-stem nominals — "*flæske, *flæskōn-* > OE
+    *flasce, flascan*"; broader exemplar list.
+  - p. 270 (line 15573): repeated derivation in unstressed-vowel
+    discussion — "PNWGmc ***nabulō*** > PWGmc ***nabulō*** (OF *navila*,
+    OHG *nabalo*) > ***næbula*** > OE ***nafola***."
+  - §6.9.5 (printed p. 327ff., ref. line 18709): Epenthesis /
+    parasiting — chronology (post-mid-7th-c.); rule applies to
+    word-final CR-clusters arising from prior apocope; **does not**
+    create the medial *u* of *nabulō*.
+  - p. 336 (line 19226): "*nafola* 'navel' > *nafela*" cited as evidence
+    of the late vowel-harmony / medial-vowel reduction in early WS and
+    Mercian Ps(A).
+  - Index of PGmc forms (line 32174, 33394): *\*nabulō* on pp. 191, 270.
+  - OE Word Index (line 37733): *nafola ~ -ela* on pp. 191, 270, 336.
+
+- **Kroonen, G.** 2013. *Etymological Dictionary of Proto-Germanic*.
+  Leiden Indo-European Etymological Dictionary Series 11. Leiden: Brill.
+  - s.v. **\*nablan-** (printed p. 381, ref. line 22412): full entry
+    quoted in §17.19.1 above. Cognates: ON *nafli*, Far. *nalvi*, Elfd.
+    *navel*, OE *nafela*, E *navel*, OFri. *naula*, Du. *navel*, OHG
+    *nabalo, nabulo*, G *Nabel*. PIE etymon: *h₃nobʰ-l-on-*.
+  - s.v. **\*nabō-** (printed p. 381, ref. line 22422): the related
+    'nave, hub' lemma; confirms the *l*-suffix is derivational.
+  - s.v. **\*ahsō-** (ref. line 2579): cross-reference to *\*nablan-*
+    as morphologically parallel.
+  - s.v. **\*manla-** (ref. line 21048): "For the suffixation of *l*,
+    compare \*nablan- 'navel'." Confirms the *l*-suffix as the
+    productive derivational pattern.
+
+- **Orel, V.** 2003. *A Handbook of Germanic Etymology*. Leiden: Brill.
+  - p. 279 (ref. line 27675): s.v. **\*nab(u)lōn**: parenthesized *u*,
+    cognates incl. OHG *nabalo, nabulo*. Cross-references: Torp-Falk
+    293, Holthausen AEEW 231, Walde-Hofmann II 814, Pokorny I 314–315,
+    de Vries ANEW 403, Zalizniak I 154, Falk-Torp II 391–392, Onions
+    604, Andersen *Schw.* 91, Kluge-Seebold 579.
+
+- **Lehmann, W. P.** 1986. *A Gothic Etymological Dictionary*. Leiden:
+  Brill. — No lemma for the navel etymon (Gothic has no cognate).
+
+- **Streitberg, W.** 1896. *Urgermanische Grammatik*. Heidelberg:
+  Winter. §60 (productivity of the PGmc *-(u)l-* derivational suffix
+  across nominal classes).
+
+- **Noreen, A.** 1923. *Altisländische und altnorwegische Grammatik*
+  (4th ed.). Halle: Niemeyer. §155 (regular ON syncope of medial *u*
+  after a heavy syllable; explains ON *nafli* < earlier *nabulō* by
+  intra-ON sound change, not by inheritance of the syncopated form).
+
+- **Bosworth, J. & Toller, T. N.** 1898/1921/1972. *An Anglo-Saxon
+  Dictionary*. Online: bosworthtoller.com. s.v. *nafela / nafula /
+  nabula / nafola* — variant attestations.
+
+- **Holthausen, F.** 1934. *Altenglisches etymologisches Wörterbuch*.
+  Heidelberg: Winter. p. 231 s.v. *nafela* (= AEEW reference cited by
+  Orel and Kroonen).
+
+- **Internal cross-references**:
+  - DEV_NOTES.md §17.10.11 (lines 21776–21820): prior identification of
+    `OEARestorationIntervening` *r*/*l* exclusion as a heuristic.
+  - DEV_NOTES.md §17.13 (lines 28014ff.): elimination of breve `{*ă}`,
+    which clarified that the breve was an artefact of `EnglishStarBackVowel`
+    membership rather than a phonological tag — same stylistic
+    precedent for "fix the input, not the rule".
+  - DEV_NOTES.md §17.14 (lines 28271ff.): *\*kweðuz* PROTOFORM
+    correction — same Option A precedent.
+  - DEV_NOTES.md §17.15 / §17.16: *sife*, *spere* PROTOFORM research —
+    same Option A precedent.
+  - DEV_NOTES.md §17.18.7 (lines 29932ff.): *\*θístilas* paradigm-cell
+    fix; sets the convention of splitting PROTOFORM (the input the FST
+    actually consumes) from PROTO (the cross-Germanic etymological
+    citation form).
+  - germanic.txt:296–432: `pgrmWeakTailVowel` shapes — this is the file
+    that needs one new line for `u:{*u} l:{*l} ô:{*ô}`.
+  - germanic.txt:1797: `OEARestorationTriggerVowel [EnglishStarBackVowel
+    | {*ô} | {*ǭ}]` — already includes *ô*, no change needed.
+  - germanic.txt:1799–1801: `OEARestorationIntervening
+    [EnglishStarConsonantNoR - {*l}]` — under Option A, no change
+    needed; the *l* exclusion remains a heuristic but is *not exercised*
+    by *nabulô* because the *l* there is in the third syllable, not in
+    a cluster with *b*.
+  - germanic.txt:2026–2028: trimoric *ô → *a* rule (the rule that
+    delivers final NomSg *-a* in n-stems); applies correctly to
+    *nabulô*.
