@@ -20,5 +20,6 @@
 *_tmp*.bin
 *_prev*.bin
 
-# Locally-generated OCR PDFs (text extracted to .txt; PDFs not pushed)
-docs/references/*_ocr.pdf
+
+# Reference PDFs are not committed (kept local; .txt extracts are committed)
+docs/references/*.pdf
