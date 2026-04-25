@@ -29710,3 +29710,221 @@ This is precisely the cell Option D selects as the FST target.
 - Wright, T. & R. P. Wülcker. *Anglo-Saxon and Old English
   Vocabularies*. (For Cleopatra Glossary *Contos, speoru odde
   spreotas*.)
+
+### §17.18  Word-final obstruent + sonorant clusters: NomSg vs. paradigm-cell strategy
+
+**Date**: this session.
+**Status**: research complete; implementation pending user decision among Options 1–3.
+**Trigger**: mismatch `*θístilaz → þistl (expected þistel)` (epenthetic_vowel_missing,
+the sole remaining bucket member). Investigation revealed it is not an isolated
+TSV anomaly but the visible tip of a 11-word cluster of OE lemmas with
+word-final obstruent + sonorant (`-Cl, -Cr, -Cn, -Cm`).
+
+#### §17.18.1  The lautgesetzlich background (Campbell §§360–363; Hogg §§6.30–6.36; SB §§145–146)
+
+OE inherits, after WGmc/OE syncope, stem-final clusters of the type
+obstruent + sonorant (e.g. \*þistl-, \*tācn-, \*wǣpn-, \*hræfn-,
+\*wuldr-, \*fugl-). In the **NomSg/AccSg** of masc/neut a-stems (zero
+ending) the cluster falls **word-finally**, where late OE develops a
+**parasite vowel** (svarabhakti / Sproßvokal):
+   - *e* after front stressed vowels (and ā): *þistel, wǣpen, tācen, hræfen, seġel*;
+   - *o* after back stressed vowels: *fugol, wuldor, wundor, māþum, bōsom*.
+
+In **oblique** cells with a vocalic ending (gen.sg. *-es*, dat.sg. *-e*,
+nom/acc.pl. *-as/-u*) the same cluster falls **medially**, and parasiting
+**does not apply**: gen.sg. *þistles, tācnes, wǣpnes, hræfnes, fugles,
+wuldres*. Campbell §363 gives the trio *NomSg tācen / GenSg tācnes*,
+*NomSg wǣpen / GenSg wǣpnes*, *NomSg hræfen / GenSg hræfnes* as the
+canonical illustration.
+
+Parasiting is dialectally and chronologically variable:
+   - **Late WS prose (Ælfric, Wulfstan, laws)**: the rule is regular.
+   - **Beowulf and other poetry**: unbroken forms (*hræfn, wǣpn, tācn*)
+     preserved metri causa.
+   - **Anglian (Mercian, early Northumbrian)**: less prominent (Campbell §363).
+   - **Earliest glossaries (Épinal, Erfurt, Corpus)**: largely absent.
+   - **-Cm and -Cn clusters**: rule is least regular; both forms coexist
+     in the same MS.
+   - **-Cr and -Cl**: most regular environments.
+   - **-tm, -fn, -sm**: relatively parasiting-resistant.
+
+#### §17.18.2  Current TSV state (11 candidate words)
+
+The TSV systematically targets **unbroken** NomSg forms across this
+class — except for *þistel*, the lone outlier. Probing the current FST
+on each PROTOFORM:
+
+| # | PGmc | TSV target | FST output | Match? |
+|---|------|------------|------------|--------|
+| 1 | \*θístilaz | **þistel** | þistl | ❌ MISMATCH |
+| 2 | \*bōsmaz | bōsm | bōsm | ✓ |
+| 3 | \*búttmaz | botm | botm | ✓ |
+| 4 | \*xáslaz | hæsl | hæsl | ✓ |
+| 5 | \*nēðlō | nǣdl | nǣdl | ✓ |
+| 6 | \*úfnaz | ofn | ofn | ✓ |
+| 7 | \*xrábnaz | hræfn | hræfn | ✓ |
+| 8 | \*skúflō | sċofl | sċofl | ✓ |
+| 9 | \*stébnō | stefn | stefn | ✓ |
+| 10 | \*táikną | tācn | tācn | ✓ |
+| 11 | \*wēpną | wǣpn | wǣpn | ✓ |
+
+So the FST currently does **no** parasiting for `-Cl/Cn/Cm#` (except a
+hardcoded `OEGLInsertion` for `-gl#` that catches *fugol, seġel, etc.*),
+and the TSV is internally consistent with that — except for *þistel*.
+
+#### §17.18.3  Attestation findings (per agent research, sources cited at end)
+
+Per Bosworth-Toller (BT), Clark Hall (CH), Holthausen, and DOE:
+
+| # | Word | Unbroken NomSg attested? | Broken NomSg attested? | Lemma form |
+|---|------|--------------------------|-----------------------|------------|
+| 1 | þistel | ❌ **only as oblique stem þistl-** | ✅ standard simplex | **þistel** (BT/CH/Hth/DOE) |
+| 2 | bōsm | ✅ standard (Beowulf, Genesis A) | ✅ late (Ælfric) | **bōsm** |
+| 3 | botm | ✅ standard | rare | **botm** |
+| 4 | hæsl | ✅ (mostly compounds) | ✅ (LWS, place-names) | **hæsl** (BT) / *hæsel* (CH) |
+| 5 | nǣdl | ✅ (but f. ō-stem; cluster usually medial) | n/a | **nǣdl** |
+| 6 | ofn | ✅ | ✅ (Lindisfarne *ofen*) | **ofn** |
+| 7 | hræfn | ✅ (Beowulf 1801, 2448, 3024) | ✅ (Cynewulf *Elene* 52) | **hræfn** |
+| 8 | scofl | ✅ (glossaries) | rare | **scofl** |
+| 9 | stefn | ✅ standard | rare | **stefn** |
+| 10 | tācn | ✅ (Beowulf 141) | ✅✅ (LWS prose dominant; Beo 833) | **tācn** (DOE) |
+| 11 | wǣpn | ✅ (mainly compounds, poetic simplex) | ✅✅ standard simplex | **wǣpen** (BT/DOE) |
+
+**Critical findings:**
+
+1. **\*þistl is NOT attested as a simplex NomSg spelling in any OE MS.**
+   It exists only as inflectional stem (gen.sg. *þistles*, nom/acc.pl.
+   *þistlas*) and in compounds (*þistel-twige*, *þistel-mere* — note
+   *þistel-* with parasite restored at composition boundary, never
+   *þistl-*). Direct attestations of broken *þistel* as NomSg simplex:
+   *"se unbráda þistel scolimbos"* (WW i.69.12); *"þúfe þistel"*
+   (Lchdm. ii.312.20); Ælfric glossaries.
+
+2. **\*wǣpn is similarly marginal as a simplex NomSg.** BT and DOE both
+   lemmatize **wǣpen** (broken) as the headword. *wǣpn* survives mainly
+   in compounds (*hildewǣpn-*) and poetic simplex.
+
+3. **The broken NomSg is the late-WS prose norm** for nearly all 11
+   words; the unbroken NomSg is preserved as a poetic / earlier-prose
+   variant. Choosing the unbroken form is a defensible editorial choice
+   reflecting older / poetic / Anglian usage, but it is not the
+   prose-corpus majority spelling.
+
+4. **The GenSg / oblique stem is uniformly unbroken** for all 11 words
+   across all dialects and registers: *þistles, bōsmes, botmes, hæsles,
+   nǣdle, ofnes, hræfnes, scofle, stefnes, tācnes, wǣpnes*. Campbell
+   §363 explicitly invokes this trio as the textbook contrast.
+
+#### §17.18.4  Three options
+
+##### Option 1 — TSV fix only: change *þistel* → *þistl* (NOT VIABLE)
+
+**Originally proposed as path of least resistance, now ruled out.**
+The unbroken simplex NomSg *þistl* is **not attested**. Targeting it
+in the TSV would point the FST at a paper form that does not exist in
+the manuscript record. Compounding the problem, the same is true for
+*\*wǣpn* (lemmatized as *wǣpen* by BT/DOE). Therefore Option 1 is not
+philologically defensible.
+
+##### Option 2 — Generalize FST parasiting + relemmatize TSV to broken NomSg
+
+Add svarabhakti rule covering all `-Cl/Cn/Cm#` (alongside existing `-Cr#`,
+`-gl#`); update all 11 TSV targets to broken forms:
+
+   *þistel, bōsom, botem, hæsel, nǣdel, ofen, hræfen, scofol, stefen,
+   tācen, wǣpen*.
+
+Aligns with late-WS prose norm and with the BT/DOE lemma for *wǣpen*.
+But discards Beowulf-poetry and earlier/Anglian unbroken spellings; for
+*botm, scofl, stefn* the broken forms are rare.
+
+Foma rule sketch (per epenthesis-research agent §5):
+
+```foma
+define EnglishStarObstruent [
+    EnglishStarConsonant - EnglishStarNasal - EnglishStarLiquid - {*j} - {*w}
+];
+
+define OEEpentheticInsertion [
+    {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
+        [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarObstruent _ .#.,
+    {*l} -> {*E} {*l} || ... EnglishStarObstruent _ .#.,
+    {*n} -> {*E} {*n} || ... EnglishStarObstruent _ .#.,
+    {*m} -> {*E} {*m} || ... EnglishStarObstruent _ .#.
+];
+define OEEpentheticBackShift [
+    {*E} -> {*o} || [EnglishStarBackVowel - {*ā}] ... _ EnglishStarSonorant .#.
+];
+define OEEpentheticFront [{*E} -> {*e}];
+```
+
+(Removes the special-case `OEGLInsertion` since the general rule subsumes it.)
+
+##### Option 3 — Paradigm-cell strategy: target GenSg (or other oblique) for the whole class
+
+Change all 11 TSV targets to the **GenSg** (or, for *nǣdl* a f. ō-stem,
+the gen.pl. or dat.sg.) form, where the cluster is medial and unbroken
+across all dialects:
+
+   *þistles, bōsmes, botmes, hæsles, nǣdla*(?), *ofnes, hræfnes, scofle,
+   stefnes, tācnes, wǣpnes*.
+
+**Endorsed by Campbell §363 and Hogg §6.36** as the locus where the
+unbroken cluster is regular and cross-dialectally invariant. The FST
+stays as-is (no parasite-vowel rule needed for these clusters); the
+*þistel ~ wǣpen* anomalies dissolve because we no longer target NomSg
+on this class. Aligns with the project's existing comfort with
+paradigm-cell targeting (§§17.16.14–17.16.20: \*spere/speoru NApl).
+
+Disadvantages: dictionary lookup convention is NomSg; comparative-Gmc
+philology cites NomSg; for *nǣdl* (f. ō-stem) the truly medial cluster
+appears only in gen.pl. *nǣdla* (dat.sg. *nǣdle* has -e ending that
+already separates the cluster phonotactically, but cluster is still
+heterosyllabic and unbroken).
+
+#### §17.18.5  Recommendation
+
+**Option 3 (paradigm-cell / GenSg)** is the lautgesetzlich-cleanest
+solution and is the one we have elsewhere in the project come to prefer
+(spere/speoru NApl, lifian/libban 3sg, etc.). It eliminates the entire
+parasiting question from the FST without doing violence to attested
+forms — every GenSg form listed is well-attested, and the corresponding
+NomSg lemma can be retained for display/lookup outside the TSV→FST
+alignment layer.
+
+**Option 2** is the more "complete grammar" solution: it implements the
+parasiting rule properly per Campbell/Hogg/SB, but at the cost of (a)
+discarding poetic and early/Anglian unbroken spellings, (b) requiring
+TSV churn on 10 entries, (c) committing to a late-WS-prose orientation
+that may not be desired elsewhere in the dataset, and (d) introducing
+genuine variation environments (`-Cm, -Cn`) that are noisily attested.
+
+Option 1 is ruled out (not attested).
+
+#### §17.18.6  Bibliography
+
+- Campbell, A. 1959. *Old English Grammar*. Oxford: Clarendon.
+  §§341–353 (syncope), §§360–363 (parasiting). The
+  *hræfn ~ hræfen / hræfnes*, *tācn ~ tācen / tācnes*,
+  *wǣpn ~ wǣpen / wǣpnes* paradigms are §363.
+- Hogg, R. M. 1992. *A Grammar of Old English, vol. 1: Phonology*.
+  Oxford: Blackwell. §§6.30–6.36.
+- Sievers, E. & Brunner, K. 1965. *Altenglische Grammatik* (3rd ed.).
+  Tübingen: Niemeyer. §§139, 145–146.
+- Brunner, K. 1965. *Altenglische Grammatik*. §§141–147.
+- Ringe, D. & Taylor, A. 2014. *The Development of Old English*.
+  Oxford: OUP. §7.7 (parasiting chronology).
+- Hogg, R. M. & Fulk, R. D. 2011. *A Grammar of Old English, vol. 2:
+  Morphology*. Oxford: Blackwell. (paradigm-cell distribution).
+- Bosworth, J. & Toller, T. N. 1898/1921/1972. *An Anglo-Saxon
+  Dictionary*. bosworthtoller.com. Cited lemmas: *þistel, bōsm, botm,
+  hæsl, nǽdl, ofn, hræfn, scofl, stefn, tácn, wǽpen*.
+- *Dictionary of Old English: A to Le Online* (Toronto, 2018–).
+  Lemmas: *bōsm, botm, hræfn, nǣdl, ofn, scofl, stefn, tācn, wǣpen*.
+- Holthausen, F. 1934. *Altenglisches etymologisches Wörterbuch*.
+  Heidelberg: Winter.
+- Clark Hall, J. R. 1960. *A Concise Anglo-Saxon Dictionary* (4th ed.).
+  Cambridge.
+- Wright, T. & Wülcker, R. P. *Anglo-Saxon and Old English Vocabularies*
+  (þistel attestations: WW i.69.12; Lchdm. ii.312.20).
+
