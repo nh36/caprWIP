@@ -338,6 +338,13 @@ define pgrmWeakTailVowel [
     i:{*i} l:{*l} a:{*a} s:{*s} |
     i:{*i} l:{*l} ō:{*ō} |
     i:{*i} l:{*l} ō:{*ō} n:{*n} |
+    # m. n-stem with inherited medial *u (PGmc *-ulô, NomSg trimoric *ô):
+    # PROTOFORM *nábulô → OE nafola (R/T 2014 p.191, p.270; canonical
+    # derivation PNWGmc *nabulō > *næbula > nafola). The medial *u is
+    # present at A-restoration time (R/T §6.9.5 dates parasiting later
+    # than retraction). Parallel l-stem candidates: *stapulaz, *sadulaz.
+    # See DEV_NOTES §17.19, §17.19.10.
+    u:{*u} l:{*l} ô:{*ô} |
     i:{*i} n:{*n} a:{*a} z:{*z} |
     i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
     i:{*i} z:{*z} |
