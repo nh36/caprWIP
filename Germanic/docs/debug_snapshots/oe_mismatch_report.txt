@@ -1,10 +1,10 @@
-Total mismatches: 30
+Total mismatches: 29
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    4
-  Phonology (other buckets):   19
+  Phonology (other buckets):   18
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -13,7 +13,6 @@ Total mismatches: 30
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
   front_expected_back_out: 1
-  epenthetic_vowel_missing: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_for_a: 1
@@ -62,9 +61,6 @@ final_vowel_extra (2):
 
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
-
-epenthetic_vowel_missing (1):
-  *θístilaz -> þistl (expected þistel)
 
 gemination_extra (2):
   *spénnilō -> spinnlu (expected spindle)

@@ -29928,3 +29928,100 @@ Option 1 is ruled out (not attested).
 - Wright, T. & Wülcker, R. P. *Anglo-Saxon and Old English Vocabularies*
   (þistel attestations: WW i.69.12; Lchdm. ii.312.20).
 
+
+### §17.18.7  Decision and implementation plan
+
+**Date**: this session, after §17.18.5 was reviewed by user.
+**Resolution**: hybrid of Options 2 and 3, narrowed to a single TSV row.
+
+#### §17.18.7.1  Resolved policy
+
+The user ruled as follows:
+
+> "If unbroken versions are attested in Beowulf/poetic and early/Anglian,
+> let's stick with them. Move ONLY thistle to another paradigm cell which
+> is lautgesetzlich and attested."
+
+The dataset's existing unbroken NomSg targets (#2–#11: *bōsm, botm, hæsl,
+nǣdl, ofn, hræfn, scofl, stefn, tācn, wǣpn*) are all directly attested
+manuscript spellings — predominantly in Beowulf and other poetry, in the
+earliest glossaries, and in Anglian, where parasiting was either absent
+or sporadic (Campbell §363; Hogg §6.36). They are therefore retained
+unchanged. The FST's current behavior (no parasiting in `-Cl/Cn/Cm#`,
+plus the special-case `OEGLInsertion` for `-gl#`) is correct for these
+ten lemmas: it produces an unbroken cluster which matches the early /
+poetic / Anglian register chosen by the dataset.
+
+The single exception is **#1 (*þístilaz → þistel*)**, where:
+- the unbroken simplex NomSg (*þistl*) is **not attested** in any OE MS
+  (only as oblique stem *þistl-* and in compounds with restored
+  *þistel-*);
+- the broken NomSg *þistel* is the only attested simplex form, but
+  arises by the late-WS parasiting rule that we have decided not to
+  model in the FST (since it would falsify the unbroken targets in the
+  other ten rows).
+
+The resolution is therefore to **target a different, fully attested,
+fully lautgesetzlich paradigm cell** for *þistilaz: the **gen.sg.**
+*þistles*. In gen.sg. the cluster is medial (no word-final environment),
+parasiting does not apply (Campbell §363, Hogg §6.36), and *þistles* is
+directly attested as an inflectional form throughout the OE corpus.
+This parallels the project's prior paradigm-cell solutions for
+\**spéru* → NApl *speoru* (§§17.16–17.17) and \**libēną* → 3sg *lifeþ*
+(§17.10.x).
+
+#### §17.18.7.2  Implementation steps
+
+1. **Proto-gate extension** (`Germanic/fsts/germanic.txt:333`): add the
+   gen.sg. masc a-stem ending `i:{*i} l:{*l} a:{*a} s:{*s}` parallel to
+   the existing nom.sg. `i:{*i} l:{*l} a:{*a} z:{*z}`. This admits
+   `*θístilas` as a valid PROTOFORM. No other gate changes required;
+   line 319's `a:{*a} s:{*s}` already handles *-as for syncopated heavy
+   stems, so the *-ilas* twin only needs to cover the unsyncopated
+   *-il- shape.
+
+2. **TSV row 2250** (`Germanic/data/germanic-aligned-final.tsv`):
+   - PROTOFORM: `*θístilaz` → `*θístilas` (gen.sg.)
+   - PROTO: retain `*θístilaz` (etymological cognate root)
+   - COUNTERPART: `þistel` → `þistles`
+   - TOKENS: `þ i s t e l` → `þ i s t l e s`
+   - ALIGNMENT, IPA: re-aligned to the new OE form
+   - NOTE: paradigm-cell target rationale + Campbell/Hogg refs
+
+3. **Rebuild bins**: `bash Germanic/tools/rebuild_oe_bins.sh`
+   (foma compile of `germanic.txt` + `old_english_sandbox.txt`).
+
+4. **Verify** (post-rebuild):
+   - `*θístilas → þistles` ✓ (new target match)
+   - `*θístilaz → þistl` (unchanged; still derivable as the
+     unbroken-NomSg variant, but no longer the active TSV target)
+   - All other -Cl/Cn/Cm# rows (2–11) still produce the unbroken form
+     and match the unchanged TSV targets:
+     bōsm, botm, hæsl, nǣdl, ofn, hræfn, sċofl, stefn, tācn, wǣpn.
+   - Spot-check no regressions on -gl# (fugol, seġel) or -Cr#
+     (wuldor, wundor, fæder).
+
+5. **Mismatch report**: expected 30 → 29.
+
+6. **Documentation**: append §17.18.7 (this section) to DEV_NOTES.md
+   recording the decision, before committing.
+
+7. **Commit + push**: single commit covering FST gate, TSV row,
+   DEV_NOTES update, and rebuilt bins.
+
+#### §17.18.7.3  Why not also generalize parasiting as a fallback
+
+Because doing so would produce two outputs for each of the ten retained
+rows (broken + unbroken), and the FST is currently not designed to
+emit alternants — the mismatch report would either need to accept both
+or we would have to choose. Given that the chosen ten targets are
+**deliberately unbroken** (matching Beowulf-poetry / early / Anglian
+registers), the cleaner FST does not parasite at all on these clusters.
+The single hold-out (*þistilaz*) is handled by the cell switch rather
+than by a phonological rule. This keeps the FST's deterministic output
+aligned with a single coherent register choice across the whole class.
+
+If a future revision of the dataset switches to a late-WS-prose
+register, Option 2 (full parasiting rule) remains available; the
+research and rule sketch are preserved in §17.18.4.
+
