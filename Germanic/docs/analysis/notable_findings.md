@@ -16,6 +16,7 @@ discussion in the eventual write-up of the project.
 7. [NWGmc \*i > \*e lowering: consonant-conditioned blocking and rule ordering](#7-nwgmc-i--e-lowering-consonant-conditioned-blocking-and-rule-ordering)
 8. [PGmc \*þistilaz 'thistle': unresolved \*e/\*i reconstruction problem](#8-pgmc-þistilaz-thistle-unresolved-ei-reconstruction-problem)
 9. [OE wīþiġ 'withy': ja-stem vs. -ig suffix problem](#9-oe-wīþiġ-withy-ja-stem-vs--ig-suffix-problem)
+10. [OE rēc 'smoke': the missing WS rīec problem](#10-oe-rēc-smoke-the-missing-ws-rīec-problem)
 
 ---
 
@@ -1458,3 +1459,107 @@ suffix etymology. Sections of the standard etymological literature
 (Wiktionary headword, Kluge-Seebold s.v. Weide¹) that retain the
 `*-ja-` reconstruction for the OE form should be regarded as
 inheriting an unverified analogy.
+
+## 10. OE rēc 'smoke': the missing WS rīec problem
+
+**Date discovered:** Session 148 (mismatch loop, *ráukiz target).
+
+**Background.** PGmc *raukiz (m. i-stem) 'smoke, vapor' (cf. ON reykr,
+OS rōk, OHG rouh, OFris rēk). The OE outcome is universally `rēc`,
+attested across all dialects and all periods (Anglian glosses, early
+WS, late WS, Kentish; 8th–11th c.). The expected West Saxon i-umlaut
+output of *au + i is `īe`: thus *raukiz should yield WS **rīec**.
+Our FST currently produces `rīeċ`. No manuscript attests `rīec` /
+`rīeċ` for the noun, although the morphologically related verb does
+appear as `rīecan` in late WS (cf. Campbell §200, Hogg §5.81). Other
+*au + i lexemes show the WS diphthong regularly: *káusiz → ċīes,
+*láusiz → līes, *fláugiz → flīeġ. Only the noun rēc fails to.
+
+**The philological puzzle.** A systematic search of the standard
+handbooks (Campbell OEG §§134–136, 200–205, 427–429; Hogg Vol. 1
+§§5.79–5.83, 7.20–7.36; Sievers/Brunner AeG §§35–43, 150;
+Bülbring AeE; Luick Hist. Gr. §§108–130; Ringe & Taylor Vol. 2
+§6.6; Fulk Comp. Gr.; Kroonen EDPG s.v. *raukiz; Holthausen AeeW;
+Bosworth–Toller s.v. rēc; Pheifer 1974) turned up **no author who
+flags rēc as a lexical irregularity**. The handbooks state the
+regular *au + i → WS īe rule and either silently use rēc as if it
+were unproblematic or omit it from their illustrative material. This
+silence is itself diagnostic: the philological community appears to
+treat rēc as derivable, but no published account specifies the
+pathway by which the WS diphthong is avoided.
+
+**Comparative evidence.** ON `reykr` (with ey < *au-i) is the only
+cognate that unambiguously requires PGmc *raukiz with i-trigger; ON
+breaking + i-umlaut of *au yields ey regularly. The continental WGmc
+cognates are mixed:
+
+  * OE rēc, OS rēk, OFris rēk — all monophthongal, no diphthong-i-umlaut
+    output visible.
+  * OHG rouh — preserves *au with no i-umlaut at all, suggesting either
+    (a) an OHG i-stem that fails to umlaut (typologically odd), or
+    (b) the OHG noun is not from an i-stem.
+
+Since OHG i-umlaut of *au routinely yields öu / öi where the trigger
+is preserved, the absence of i-umlaut in `rouh` already raises the
+question of whether the WGmc-internal stem class for the noun was
+i-stem at all, despite the ON evidence.
+
+**Hypotheses considered.**
+
+- **H1: Reconstruct PGmc *rōkiz instead of *raukiz.** The FST already
+  produces correct `rēċ` from *rōkiz (regular ō+i → ē by i-umlaut).
+  This is the cleanest fit for the OE/OS/OFris evidence but cannot be
+  reconciled with ON reykr, which requires *au-grade. Workable only as
+  a pre-OE / WGmc-internal input form ('the form that fed the OE
+  pipeline'), not as a PGmc reconstruction. This would invoke the
+  §17.21.11 distinction between the **cognate-set headword** (PGmc
+  *raukiz) and the **specific FST input form** (pre-OE *rōkiz).
+
+- **H2: Verb-noun analogical leveling.** The verb *raukijaną →
+  rīecan retains WS īe regularly. The noun could have been levelled
+  toward a vowel-grade variant in the rest of the paradigm (e.g.,
+  zero-grade or o-grade in the gen./dat. singular or plural). However,
+  i-stem masculines do not typically show ablaut alternations in
+  WGmc, so the source paradigm-cell would need to be identified.
+
+- **H5: WGmc-internal stem-class shift / monophthongization.** OHG
+  rouh suggests the noun became an a-stem in continental WGmc,
+  removing the i-trigger and therefore the i-umlaut diphthong. If the
+  same shift happened in pre-OE, the FST input should be *raukaz, and
+  *au + Ø → ēa would yield OE \*rēac, not rēc. So this hypothesis
+  also requires an additional monophthongization step (ēa → ē),
+  which is not regular for WS.
+
+- **H6: Paradigm-cell leveling within OE.** A non-NomSg cell with a
+  monophthongal vowel could have replaced the inherited NomSg. The
+  most plausible source is a cell whose vowel reflex was not
+  diphthongized in WS (e.g., a form where *au stood before a coda
+  cluster blocking diphthongization). This is consistent with the
+  pan-dialectal monophthongal outcome but requires identifying the
+  specific paradigm cell.
+
+- **(Other variants considered but not pursued):** PGmc *au+i with
+  multiple regular outcomes; back-formation from the verb;
+  early-monophthongization of WS īe in this lexeme; Anglian → WS
+  borrowing. None of these fit the evidence as cleanly as H1, H2,
+  H5, or H6.
+
+**Status.** No fix implemented. The mismatch is parked as a known
+notable item. No published source treats it as a problem requiring
+explanation, so the contribution of this entry is precisely to flag
+that one is needed.
+
+**Tentative recommendation for future work.** The cleanest
+single-step intervention is **H1**: change the TSV PROTOFORM (the
+FST input column) from `*ráukiz` to `*rōkiz`, while retaining
+`*raukiz` in the PROTO column (the cognate headword). This invokes
+the §17.21.11 input/headword distinction and leaves the FST
+unchanged. The status of *rōkiz as a pre-OE reconstruction is
+defensible if H5- or H6-type processes are accepted as having
+operated WGmc- or OE-internally on the inherited *raukiz. If a
+genuine PGmc-level reconstruction is required, then H6 (paradigm-cell
+identification) becomes the priority research target.
+
+**Cross-references.** Full research dossier in DEV_NOTES.md §17.22
+and §17.22.13. Methodological precedent for input/headword distinction
+in §17.21.11.
