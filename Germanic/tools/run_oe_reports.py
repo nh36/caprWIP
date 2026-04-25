@@ -83,6 +83,7 @@ def main() -> None:
 
     full_report = output_dir / f"oe_full_trace_report_{today}{suffix}.txt"
     mismatch_report = output_dir / f"oe_mismatch_report_{today}{suffix}.txt"
+    known_problems_report = output_dir / f"oe_known_problems_report_{today}{suffix}.txt"
 
     env = os.environ.copy()
     flookup_dir = _find_flookup_dir()
@@ -118,9 +119,11 @@ def main() -> None:
 
     run_report(tools_dir / "oe_full_trace_report.py", full_report)
     run_report(tools_dir / "oe_mismatch_report.py", mismatch_report)
+    run_report(tools_dir / "oe_known_problems_report.py", known_problems_report)
 
     print(f"Wrote {full_report}")
     print(f"Wrote {mismatch_report}")
+    print(f"Wrote {known_problems_report}")
 
 
 if __name__ == "__main__":

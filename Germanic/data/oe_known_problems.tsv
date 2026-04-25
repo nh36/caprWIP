@@ -1,0 +1,7 @@
+proto	status	category	reason	refs	added
+*búkkaz	wontfix	u_lowering_near_labial	NWGmc u-lowering near labials non-Neogrammarian: u retained sporadically before labials/velars in lexical items (Luick §105-6)	notable_findings#2;DEV_NOTES.md u-lowering	2026-04-25
+*fúglaz	wontfix	u_lowering_near_labial	Same u-lowering near labials issue (R/T vol.2 §2.3.1 explicit example)	notable_findings#2	2026-04-25
+*wúlfaz	wontfix	u_lowering_near_labial	Same u-lowering near labials issue (R/T vol.2 §2.3.1 explicit example)	notable_findings#2	2026-04-25
+*wúllō	wontfix	u_lowering_near_labial	Same u-lowering near labials issue	notable_findings#2	2026-04-25
+*rústō	wontfix	u_lowering_near_labial	u retention before /st/; also separate metathesis bug (orst output)	notable_findings#2	2026-04-25
+*ráukiz	parked	rec_problem	Universal OE rēc (no WS rīec attested) but no published author treats as irregular; H1 *rōkiz / H2 verb leveling / H5-H6 paradigm leveling all live	notable_findings#10;DEV_NOTES.md §17.22	2026-04-25

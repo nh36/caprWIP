@@ -35686,3 +35686,90 @@ This is a **substantive philological contribution** addressing the user's critiq
 
 *End of §17.22.13 supplement (philological deep-dive). Total addition: ~1060 lines.*
 
+
+---
+
+## §17.23  Known-problems triage report (2026-04-25)
+
+### §17.23.1  Motivation
+
+After 26 remaining mismatches and several rounds of the mismatch-loop
+methodology, a recurring inefficiency emerged: every loop began by
+re-examining mismatches that we had already investigated and either
+parked (e.g., §17.22 *raukiz/rēc) or formally classified as wontfix
+(e.g., the five u-lowering near-labial exceptions documented in
+notable_findings #2). To answer the question "how many remaining
+mismatches are realistic candidates for the loop?", we introduced a
+permanent triage layer alongside the existing mismatch and full-trace
+reports.
+
+### §17.23.2  Design
+
+**Ledger** — `Germanic/data/oe_known_problems.tsv`. One row per
+triaged mismatch, keyed on the literal PROTOFORM string (so it joins
+to the mismatch report without normalization drift). Columns:
+
+  * `proto`     PROTOFORM as it appears in `germanic-aligned-final.tsv`
+  * `status`    one of {parked, wontfix, exception, open}
+  * `category`  short slug grouping related entries (e.g., `u_lowering_near_labial`)
+  * `reason`    one-line summary of why this mismatch is not in scope for the loop
+  * `refs`      semicolon-separated pointers to DEV_NOTES sections / notable_findings entries
+  * `added`     ISO date when the entry was added
+
+Status semantics:
+
+  * `parked`    investigated, recorded as a notable finding, no fix attempted
+  * `wontfix`   known structural issue, deliberately not addressing
+  * `exception` documented in literature/notes as a genuine lexical exception
+  * `open`      currently being investigated (transient — should not survive a session)
+
+**Reporter** — `Germanic/tools/oe_known_problems_report.py`. Reuses
+`oe_mismatch_report.apply_down`, `load_rows`, `base_bucket`,
+`other_subtype` to stay in lock-step with the mismatch detector's
+bucket definitions. Emits
+`Germanic/docs/debug_snapshots/oe_known_problems_report.txt` with
+sections: TRACTABLE, PARKED, WONTFIX, EXCEPTION, OPEN, STALE LEDGER
+ENTRIES (the last flags ledger entries whose proto no longer
+mismatches — useful when a TSV/FST change silently removes a
+mismatch we had ledgered as parked/wontfix).
+
+**Orchestration** — wired into `Germanic/tools/run_oe_reports.py`
+alongside the full-trace and mismatch reports, so a single invocation
+produces all three time-stamped snapshots.
+
+### §17.23.3  Initial seed (2026-04-25)
+
+Six entries seeded the ledger:
+
+  * 5 × `wontfix` / `u_lowering_near_labial`: *búkkaz, *fúglaz,
+    *wúlfaz, *wúllō, *rústō (cf. notable_findings #2; Luick §105–6;
+    R/T vol.2 §2.3.1)
+  * 1 × `parked` / `rec_problem`: *ráukiz (cf. notable_findings #10;
+    DEV_NOTES §17.22)
+
+### §17.23.4  Initial result
+
+Out of 26 mismatches: **20 tractable, 1 parked, 5 wontfix**. The
+tractable list is now the canonical worklist for the mismatch-loop
+methodology; the rest can be ignored by default and revisited only
+when the underlying notable finding evolves.
+
+### §17.23.5  Maintenance protocol
+
+  * When a mismatch loop closes a tractable mismatch via TSV/FST
+    edit, no ledger update is needed (the proto simply disappears
+    from the mismatch report).
+  * When a mismatch loop concludes that a mismatch is unsolvable
+    (parked / wontfix / exception), add a ledger row in the same
+    commit as the notable_findings.md update.
+  * When the STALE LEDGER ENTRIES section grows, audit the listed
+    protos: either their mismatch was silently fixed (remove the
+    ledger row) or the PROTOFORM string has drifted in
+    germanic-aligned-final.tsv (update the ledger row).
+
+### §17.23.6  Files
+
+  * `Germanic/data/oe_known_problems.tsv` — ledger
+  * `Germanic/tools/oe_known_problems_report.py` — reporter
+  * `Germanic/tools/run_oe_reports.py` — orchestrator (extended)
+  * `Germanic/docs/debug_snapshots/oe_known_problems_report.txt` — output

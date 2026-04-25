@@ -1,0 +1,127 @@
+========================================================================
+OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
+========================================================================
+
+Total mismatches:         26
+  Tractable (no ledger):  20
+  exception               0
+  open                    0
+  parked                  1
+  wontfix                 5
+Stale ledger entries:     0
+
+Tractable = candidate for the mismatch-loop methodology.
+Parked    = investigated, recorded as notable finding, no fix.
+Wontfix   = known structural issue, deliberately not addressing.
+Exception = documented in literature/notes as genuine exception.
+Open      = currently being investigated (transient).
+
+========================================================================
+TRACTABLE MISMATCHES  (20)
+========================================================================
+These mismatches have no ledger entry and are candidates for the
+mismatch-loop workflow (research dossier → review → implement).
+
+--- breaking_missing__expected_eo_got_e (1) ---
+  *wéslon            -> weslon               (expected weosule)
+
+--- long_vowel_missing (3) ---
+  *bō                -> bu                   (expected bā]] [[þā)
+  *mízdō             -> meord                (expected mēd)
+  *téxun             -> teoon                (expected tīen)
+
+--- other__breaking_extra__ea_for_a (1) ---
+  *spárēną           -> spearen              (expected sparian)
+
+--- other__breaking_extra__eo_for_high (1) ---
+  *néwun             -> nēowon               (expected nigon)
+
+--- other__breaking_extra__ie_for_i (1) ---
+  *θréjez            -> þrīe                 (expected þrī)
+
+--- other__breaking_extra__wrong_form (1) ---
+  *xláxjaną          -> hliehan              (expected hlæhhan)
+
+--- other__cons_mismatch__c_vs_ċ__cluster (1) ---
+  *strákkijaną       -> strecċan             (expected streċċan)
+
+--- other__cons_mismatch__f_vs_s__cluster (1) ---
+  *wábsaz            -> wæfs                 (expected wæsp)
+
+--- other__cons_mismatch__length_diff (1) ---
+  *skéllinaz         -> sċillen              (expected sċilling)
+
+--- other__cons_mismatch__n_vs_-__word_final (1) ---
+  *súndrōjaną        -> sundrian             (expected sundor-)
+
+--- other__final_vowel_extra (2) ---
+  *láimōn            -> lāfe                 (expected lām)
+  *wéstanē           -> westene              (expected west)
+
+--- other__final_vowel_missing__weak_noun_like (2) ---
+  *fūri              -> fȳr                  (expected fȳre)
+  *skúldrō           -> sċoldor              (expected sċuldra)
+
+--- other__front_expected_back_out (1) ---
+  *táppô             -> tappa                (expected tæppa)
+
+--- other__gemination_extra (2) ---
+  *spénnilō          -> spinnlu              (expected spindle)
+  *tíkkô             -> ticca                (expected ticia)
+
+--- other__vowel_quality__u_o_alternation (1) ---
+  *wíduwōn           -> widowe               (expected widuwe)
+
+========================================================================
+PARKED  (1)
+========================================================================
+--- rec_problem (1) ---
+  *ráukiz            -> rīeċ                 (expected rēc)
+    reason: Universal OE rēc (no WS rīec attested) but no published author treats as irregular; H1 *rōkiz / H2 verb leveling / H5-H6 paradigm leveling all live
+    refs:   notable_findings#10;DEV_NOTES.md §17.22
+    added:  2026-04-25
+
+========================================================================
+WONTFIX  (5)
+========================================================================
+--- u_lowering_near_labial (5) ---
+  *búkkaz            -> bocc                 (expected bucc)
+    reason: NWGmc u-lowering near labials non-Neogrammarian: u retained sporadically before labials/velars in lexical items (Luick §105-6)
+    refs:   notable_findings#2;DEV_NOTES.md u-lowering
+    added:  2026-04-25
+  *fúglaz            -> fogol                (expected fugol)
+    reason: Same u-lowering near labials issue (R/T vol.2 §2.3.1 explicit example)
+    refs:   notable_findings#2
+    added:  2026-04-25
+  *rústō             -> orst                 (expected rust)
+    reason: u retention before /st/; also separate metathesis bug (orst output)
+    refs:   notable_findings#2
+    added:  2026-04-25
+  *wúlfaz            -> wolf                 (expected wulf)
+    reason: Same u-lowering near labials issue (R/T vol.2 §2.3.1 explicit example)
+    refs:   notable_findings#2
+    added:  2026-04-25
+  *wúllō             -> woll                 (expected wull)
+    reason: Same u-lowering near labials issue
+    refs:   notable_findings#2
+    added:  2026-04-25
+
+========================================================================
+EXCEPTION  (0)
+========================================================================
+  (none)
+
+========================================================================
+OPEN  (0)
+========================================================================
+  (none)
+
+========================================================================
+STALE LEDGER ENTRIES  (0)
+========================================================================
+Ledger protos that no longer appear in the mismatch report.
+These may indicate fixed mismatches whose ledger entry should be
+removed, or proto-string drift between TSV and ledger.
+
+  (none)
+
