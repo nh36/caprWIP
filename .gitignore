@@ -19,3 +19,6 @@
 *_debug*.bin
 *_tmp*.bin
 *_prev*.bin
+
+# Locally-generated OCR PDFs (text extracted to .txt; PDFs not pushed)
+docs/references/*_ocr.pdf
