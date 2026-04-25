@@ -31813,3 +31813,305 @@ reference files and may merit further literature:
 
 *Drafted for §17.19.10. Length: c. 750 lines. To be folded back into
 DEV_NOTES.md following user review.*
+
+---
+
+#### §17.19.10.10  Supplement from newly acquired sources (Bammesberger 1990, Kroonen 2011, Beekes 2010, Pokorny 1959)
+
+This supplement folds in four references not consulted in §17.19.10.1–
+§17.19.10.9. None is on the same evidential tier as Ringe vol. 1,
+Kroonen 2013, R/T 2014, or Brunner / Campbell — they are either older
+(Pokorny 1959), narrowly typological (Bammesberger 1990, Kroonen 2011),
+or cognate-language-internal (Beekes 2010). The discussion is therefore
+selective: for each source we ask only (a) what it says about
+*nabulō / *nablan-* directly, (b) what it says about the typology of
+PIE/PGmc *l-suffix nouns in which the medial-vowel question arises, and
+(c) whether it strengthens, weakens, or reshuffles Camps 1–4. The slot
+§17.19.10.7 is already taken; this supplement is appended as
+§17.19.10.10.
+
+##### §17.19.10.10.a  Bammesberger 1990, *Die Morphologie des urgermanischen Nomens*
+
+Bammesberger does **not** discuss *nabulō / *nablan-* under any of
+`nabel | nabal | nabul | nabl | nabhi | umbil-`; the only hit in 11 436
+OCR lines is `Schnabel` at line 3583
+(`bammesberger_1990_morphologie.txt:3583`). What we extract is
+methodological.
+
+(1) **Trimoric vs bimoric NomSg of n-stems** (§7.2.2.1). On the
+feminine n-stem ending: "Urg. *-ō weist auf einen Ausgang idg. *-ōn
+(Dehnstufe der o-Abtönung des Suffixes *-en-) zurück …Unter der
+Annahme, daß ein im Wortauslaut vorkonsonantischer Langvokal, der
+ursprünglich stoßtonig (zweimorig) war, bei Verlust des Konsonanten
+schleiftonig (dreimorig) wurde, kann urg. *-ō auf idg. *-ōn
+zurückgeführt werden" (`bammesberger_1990_morphologie.txt:6549–6557`).
+Bammesberger spells the ending `*-ō` but identifies it explicitly as
+*schleiftonig (dreimorig)*. Compare Ringe's `*ô` (= /ɔ̂ː/, trimoric):
+the two notations refer to the same object. This independently
+confirms §17.19.10.6.b: the FST's *ô* and the philologists' bimoric/
+trimoric *-ōn(n)- after assimilation are the same etymon.
+
+(2) **The *-la- suffix without medial vowel** (§3.5.6). Bammesberger
+reconstructs uniformly **C-l-a-z**, not **C-Vl-a-z**: "*fug-la- > got.
+*fugls* … *set-la- > got. *sitls* … *tag-la- > got. *tagl* … *þwah-la-
+… *web-la- … *mē-la- … *stō-la-" (lines 2904–2935). The medial *u* of
+OE *fugol*, OHG *fogal*, OS *fugal* is **not** part of his PGmc shape;
+he leaves it to the daughter languages. At line 8303 he uses precisely
+the term **Sproßvokal** for an analogous OE outcome — *dōgor* <
+PGmc *dōgazō*, after syncope of medial *-a-* and sonorisation of *-r*
+> *-r̥*: "Sonorisierung von -r > -r̥ und Entwicklung eines Sproßvokals
+ae. *dōgor*" (`bammesberger_1990_morphologie.txt:8303`). This is the
+Brunner §152 mechanism transposed to *r* — typologically Camp 3.
+
+(3) **Inherited *l̥ → *ul.** Independently, Bammesberger does accept
+the Streitberg outcome where it is otherwise required: *wullō- < idg.
+*wl̥ə-nā- with assimilation *-l-n- > -ll-
+(`bammesberger_1990_morphologie.txt:4531–4533`). For the *-la- nouns
+themselves, however, no *l̥* is invoked: the reconstructions assume
+zero-grade root + bare *-lo-*, with any medial vowel later and
+Sproßvokal-style.
+
+##### §17.19.10.10.b  Kroonen 2011, *The Proto-Germanic n-stems*
+
+The 2011 monograph contains **no** entry for *nablan-*: searches on
+`nablan | nabal | nabul | nabhi | h3nebh | onobh | ombh | umbil`
+return zero matches in 20 269 lines. What it supplies is the
+methodological scaffolding for Kroonen's 2013 dictionary entry.
+
+(1) **The *-l- extension on n-stem skeletons.** *himila-*, lines
+7138 ff., is the headline case: "*hemilā-: OS *himil*, OHG *himil* m.
+'sky' …", with Schaffner 1997 quoted at lines 7248–7250: "*Im Gegensatz
+zur l-Erweiterung *himila-* …, die selbst eine Ableitung von *sōwila-,
+sun(n)az* 'Sonne' ist*". The *-i-* between *m* and *l* in *himila-* is
+the *thematic vowel* of the a-stem, not an inherited interconsonantal
+vowel; the l-formant is bare *-l-*. The same analysis underlies *tagla-
+< *dʰₐ₂/₃gʷ-* (`kroonen_2011_n_stems.txt:15252–15259`).
+
+(2) **The methodologically closest parallel: *snabla-*.** Lines
+11579–11588: "MoDu. *snavel* m. 'beak' < *snabla- … going back to
+*snei-bʰ-on-*". Bare *-bʰ-on-* / *-bla-*, no inherited vowel between
+*bʰ* and *l*. The 2013 dictionary's *nablan-* (p. 380) is a direct
+application of this template.
+
+(3) **Syncopation chronology.** Kroonen 2011 does not lay out an
+explicit chronology. The principle — reconstruct only the vowel that
+the cognates actually require — is implicit: *himila-* is reconstructed
+*with* the thematic vowel because OS *himil* / OHG *himil* require it;
+*snabla-* is reconstructed *without* a medial vowel because no
+daughter form demands it. Kroonen 2013's *nablan-* applies the same
+test.
+
+(4) **PIE *l̥ → PGmc *ul.** Kroonen 2011 does not endorse the
+Streitberg-line resolution as a source of medial *u in *-l-an- stems.
+*snabla-, *tagla-, *himila-, *swimena-* all avoid positing *l̥* as a
+derivational step. The *u* of OS *fugal* etc. is, by elimination,
+treated as a daughter-language Sproßvokal.
+
+##### §17.19.10.10.c  Beekes 2010, *Etymological Dictionary of Greek*
+
+Beekes s.v. **ὀμφαλός** (`beekes_edg.txt:35784–35820`) is the most
+substantive new datum. Cleaned of OCR garble:
+
+> "**ὀμφαλός** [m.] 'navel, navel string' (Il.) … ◁ IE *h₃enbh-, *h₃mbh-,
+> *h₃nebh- 'navel'▷ … .ETYM The old word for 'navel' closely
+> corresponds to Lat. *umbilīcus* (probably from *umbilus = ὀμφαλός),
+> OIr. *imbliu* < PCl. *imbilon- < IE *h₃mbh-l-. This originally
+> athematic l-stem (perhaps retained in the Epirotic tribal name
+> Ὀμφάλο-ς …) alternates with an n-stem in Lat. *umbo, -ōnis* 'boss
+> of a shield', probably also in a WGm. word for 'belly, abdomen': OHG
+> *amban*, *-on*, OS *ambon*, PGm. *amban- < QIE *Hombhon-. The
+> variation l : n recalls ἀγκύλη : ἀγκών. In the eastern languages, we
+> find forms with a different ablaut grade, like Skt. *nā́bhi-* [f.]
+> 'navel, nave', OPr. *nabis*, Latv. *naba*, but also Gm. forms like
+> OHG *naba* [f.] 'nave of a wheel', *nabalo* [m.] 'navel' (suffix
+> like in ὀμφαλός, etc.), all from IE *h₃nebh-. The Schwebeablaut
+> *Hombh- / Hnobh- is probably due to the development of the zero
+> grade *h₃nbh- in the western languages, so the original root shape
+> was *h₃nebh-, with ὀμφαλός continuing the zero grade *h₃nbh-l- (with
+> vocalization of the laryngeal according to the so-called Lex Rix)."
+> (`beekes_edg.txt:35784–35820`)
+
+Three points.
+
+(1) **Bare *-l- on a zero-grade root.** Beekes' reconstruction for
+ὀμφαλός is *h₃nbh-l-*: zero-grade root, bare *-l-*, no inherited vowel
+between *bʰ* and *l*. He does **not** posit Italo-Celtic-style
+*-h₃mbh-il-on-* with an inherited interconsonantal vowel. The Latin
+*-i-* of *umbilīcus* and the OIr *-i-* of *imbliu* are derived from a
+separate Schwebeablaut variant *Hombh-l-* + a Celtic *-on-* suffix
+(*PCl. *imbilon-); the *-i-* sits in the **n-suffix syllable**, not in
+an *-Vl- segment. This is the key new datum: the Italo-Celtic forms
+that §17.19.10.1's group A treated as evidence of an inherited *-Vl-
+between *bʰ* and *l* are read by Beekes as **not** containing such a
+vowel at all.
+
+(2) **OHG *nabalo*: "suffix like in ὀμφαλός".** Beekes treats OHG
+*nabalo* as containing the **same** suffix as ὀμφαλός — bare *-l-* on
+a zero-grade *h₃nebh-* root, the *-a-* between *-b-* and *-l-* being
+later (Germanic-internal) Sproßvokal/thematic material, not inherited.
+At the IE level there is **no** vowel between *bʰ* and *l*.
+
+(3) **OE not cited; ὀμφή unrelated.** Beekes mentions OHG *naba* and
+OHG *nabalo*; he does **not** cite OE *nafola*. ὀμφή₁ 'divine voice'
+(`beekes_edg.txt:35800–35808`) goes to IE *songʷh- 'sing' (cf. Go.
+*siggwan*); ὀμφή₂ 'breath' (lines 35808–35814) is "unknown … not
+related to νέφος / νεφέλη". Neither has any etymological connection
+to ὀμφαλός.
+
+##### §17.19.10.10.d  Pokorny 1959, *Indogermanisches etymologisches Wörterbuch*
+
+The headword *(o)nob(h)-, *(o)mb(h)-* 'Nabel' falls at IEW pp. 314–315.
+The OCR directory `pokorny_iew_pages/` does **not** in fact cover that
+range: file `00000050.txt` carries running header "540"; file
+`00000100.txt` "590"; file `00000200.txt` "690"; the lowest non-empty
+header is 505 (file 15). The 700 OCR'd page-text files correspond, in
+effect, to volume 2 of IEW (≈ pp. 491–1190); pp. 1–490 — including
+p. 314 — are not in the OCR. A directory-wide grep for `Nabel | nabhi
+| nabal | umbilic | onobh | ombh` returns only incidental hits in
+compounds like `Schnabel` and `Nabelschnur` (e.g.
+`pokorny_iew_pages/00000547.txt:5`).
+
+We therefore cannot quote Pokorny at first hand here. This is recorded
+as a documentation gap. The standard secondary citations in
+§17.19.10.1 (via Beekes 2010 and Kroonen 2013) confirm that Pokorny
+posited a root-pair *(o)nob(h)-*, *(o)mb(h)-* with bare *l-* and *n-*
+extensions, broadly compatible with Beekes' reconstruction in
+§17.19.10.10.c above but without laryngeal-theoretic refinement.
+Pokorny treats the *-l-* as a suffix, not as syllabic *l̥; on this
+he agrees with Beekes and Kroonen against any *l̥*-resolution at
+the PGmc stage.
+
+##### §17.19.10.10.e  Adjudication: which camp do the new sources favour?
+
+The supplement settles one question and leaves the other open.
+
+**Settled.** The IE input is *h₃nebh-* + bare *-l-* (Beekes), realised
+in Greek as zero-grade *h₃nbh-l-* > ὀμφαλός. This is the same suffixal
+template Kroonen 2011 uses for the PGmc *-l-an-/-l-a-* class generally
+(*snabla-, *tagla-, *himila-) and that Kroonen 2013 applies to
+*nablan-* in particular. Bammesberger's *-la- list (*fugla-, *setla-,
+*tagla-, *þwahla-, *webla-, *mēla-, *stōla-) independently confirms the
+typology: bare *-l-*, no inherited medial vowel between root and *l*.
+Pokorny, to the extent he can be cited from secondary sources, concurs.
+
+The cumulative effect is to **strengthen Camp 2 (Kroonen *nablan-*) at
+the IE → PGmc interface**: there is no inherited vowel between *bʰ*
+and *l* to inherit. This in turn **weakens any version of Camp 1 that
+relies on Italo-Celtic evidence** (group A of §17.19.10.1) for an
+inherited *-Vl- between *bʰ* and *l*: Beekes explicitly reanalyses the
+Italo-Celtic forms as Schwebeablaut *Hombh-l-* + suffix, with the *-i-*
+of *imbilon-* sitting in the *n-suffix syllable*, not between *bʰ*
+and *l*.
+
+**Open.** The supplement does **not** settle how the medial *u arose
+*inside Germanic*. Once *nablan-* is the PGmc input, the question
+whether OS *fugal*, OHG *nabalo*, OE *nafola* show a *Sproßvokal*
+(Camp 3) or a generalisation of the *-ul-an- / -il-an-* pattern from
+inherited syllabic-resonant n-stems (a softened Camp 1 at the
+post-PGmc level) is downstream of the IE reconstruction and not
+addressed by any of the four new sources. Bammesberger's "Sproßvokal"
+treatment of OE *dōgor* (§17.19.10.10.a, point (2)) is at least
+*typologically* consistent with Camp 3 for *nafola*, but he does not
+draw the connection.
+
+**No fifth camp.** None of the four new sources advances a position
+not already on the menu in §17.19.10.2. Beekes and Kroonen 2011 are
+squarely Camp 2 at the IE-input level; Bammesberger is Camp 2
+typologically (his *fugla- list) while accepting Streitberg
+*l̥-resolution* in unrelated cases (*wullō-); Pokorny, on indirect
+evidence, is Camp 2 at the IE level. The camp landscape of §17.19.10.2
+therefore stands, but with Camp 2 strengthened at the IE-input end and
+the Italo-Celtic-medial-vowel strand of Camp 1 (group A) substantially
+weakened.
+
+##### §17.19.10.10.f  Remaining gaps
+
+1. **Mayrhofer, EWAia.** Image-only PDF; no extractable text.
+   Mayrhofer's treatment of Skt. *nā́bhi-* (vol. II, s.v.) would be
+   the natural place to look for an Indo-Aryan-internal opinion on
+   the *l/n-Wechsel*. Reading it would require OCR of the relevant
+   page range (estimated 4–6 pages in vol. II under *nā́bhiḥ*).
+
+2. **Schatz 1907, *Altbairische Grammatik*, §98.** Cited in
+   §17.19.10.2.b (Camp 3) only via EWA. Schatz's primary text would
+   clarify whether the OBav. *nabalo / nabulo* doublet evidence is
+   read as Sproßvokal-driven or as morphological doublet. We have not
+   located a text-mode copy.
+
+3. **Pokorny IEW pp. 314–315 directly.** As §17.19.10.10.d notes, the
+   OCR'd page directory does not cover this page range; the primary
+   entry for *(o)nob(h)-, *(o)mb(h)-* 'Nabel' is therefore only
+   available second-hand through Beekes 2010 and Kroonen 2013.
+
+These three gaps do not affect the adjudication in §17.19.10.10.e but
+should be closed before any final write-up.
+
+---
+
+*End of §17.19.10.10. To be folded into DEV_NOTES.md following user
+review.*
+
+#### §17.19.10.11  Mayrhofer EWAia addendum (s.v. *nā́bhi-*)
+
+The image-only EWAia volumes flagged as a gap in §17.19.10.10.f.1 were
+OCR'd locally with `ocrmypdf -l deu+san+eng+lat+grc` (poppler/Tesseract
+5.5). The relevant pages (vol. II pp. 13–14) are now in
+`docs/references/mayrhofer_ewaia_NH_pp1-80_ocr.{pdf,txt}` and the
+extracted entry in `docs/references/mayrhofer_ewaia_nabhi_entry.txt`.
+OCR quality is good for German+Latin script; diacritics on Skt. forms
+are imperfect but recoverable.
+
+**a. Mayrhofer's lemmata.** EWAia gives two related stems:
+
+- *nábhya-* n. 'wohl: Nabe des Rades' (RV+); *nabhya-stha-* 'in den
+  Naben befindlich' (SB).
+- *nā́bhi-* f. 'Radnabe, Mittelpunkt, Nabel (des Leibes, der Welt),
+  Ursprung, Verwandtschaft, Sippe' (RV+); presupposed *nábha-* in the
+  PN *nā́bhā-nédiṣṭha-* (RV 10,61,18; TS+).
+
+**b. Mayrhofer's PIE reconstruction.** Mayrhofer writes:
+
+> Idg. *\*h₁nebʰ-/\*h₁nobʰ-/\*h₁n̥bʰ-* 'Nabel ~ (Rad-)Nabe', vgl. apreuß.
+> *nabis* Nabe, Nabel, ahd. *naba* = nhd. Nabe, ahd. *nabalo* = nhd.
+> Nabel, gr. ὀμφαλός m. Nabel, Nabelschnur, lat. *umbilicus* m. Nabel,
+> u.a.; Frisk II 391f. (mit Lit.), AnttSchweb 123f., Beekes Dev 44, Rix
+> Gramm 69, Kl. MSS 37 (1978) 100, R.-P. Ritter MSS 42 (1983) 191f.,
+> 195 Anm. 11, Mh. KZ 100 (1987) 104 und Anm. 80 (mit Lit.), D. A.
+> Ringe LarTheor 430f.
+
+The reconstruction is a **bare \*-bʰ-** root with full ablaut grades
+(e/o/zero) and no inherited thematic vowel between root and any
+suffix. The OHG forms *naba* and *nabalo* are listed side by side as
+parallel cognates — i.e. Mayrhofer treats the *-l-* extension as a
+suffix on the bare root, not as a reflex of an inherited *-Vl-*
+sequence.
+
+**c. Laryngeal disagreement.** Mayrhofer assigns *\*h₁-*; Beekes EDG
+(s.v. ὀμφαλός) prefers *\*h₃-*. Both authorities agree on the
+**non-syllabic** *l*; they disagree only on which laryngeal explains
+the o-coloured vowel of Greek ὀμφ-. This intra-Camp-2 disagreement is
+orthogonal to our FST decision (which operates at the PGmc level).
+
+**d. Implications for the camp landscape.** Mayrhofer aligns squarely
+with **Camp 2** (Kroonen *nablan-*, Beekes EDG *h₃nbh-l-*) at the PIE
+level: bare *-l-* suffix, no inherited vowel between root and suffix.
+He does **not** weigh in on the Germanic-internal question of how the
+medial *u* of OHG *nabulo* / OE *nafola* / ON *nafli* arose; like
+Beekes EDG, he simply lists the *-Vl-* forms as cognates without
+adjudication. The medial-*u* question therefore remains a Camp 1
+(Streitberg/Ringe *l̥ → *ul) vs. Camp 3 (EWA/Brunner/Schatz
+*Sproßvokal*) issue, with **R/T's pre-syncope stage-neutral
+*nabulō* (Camp 4)** still the appropriate FST input.
+
+**e. Note on Mayrhofer's bibliography.** EWAia cites Ringe's
+*Laryngeal Theorem* directly for this entry — a pointer worth
+following at some future date if the *h₁/h₃* question becomes relevant
+for our PGmc reconstructions elsewhere.
+
+**f. Net change to §17.19.10.10.f.1.** Gap 1 (Mayrhofer EWAia) is now
+closed at first hand for *nā́bhi-*. Gaps 2 (Schatz 1907) and 3 (Pokorny
+IEW pp. 314–315) remain.
+
+---
+
+*End of §17.19.10.11.*
