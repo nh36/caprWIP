@@ -32730,192 +32730,191 @@ available locally or were too OCR-degraded to use:
    `docs/references/`. Would directly confirm the *tang* (without
    *-e*) attestation in the earliest Anglian glossary.
 
-### §17.20.10  Implementation plan (Option A.1)
 
-This subsection documents the planned changes before any code is
-touched, in the same pattern as §17.18.6 / §17.19.5. Once the user
-approves, each step below is to be executed verbatim.
+### §17.20.10  Implementation plan (Option C — revised)
 
-#### §17.20.10.1  Decision
+This subsection supersedes the earlier draft plan (Option A.1, AccSg
+cell-switch), which has been removed. After user feedback, **Option C
+is adopted**: the TSV target string is changed from `tange` to `tang`,
+keeping PROTOFORM `*tángō` unchanged. Rationale and full plan below.
 
-**Option A.1 chosen.** PROTOFORM is moved from the NomSg cell `*tángō`
-to the AccSg cell, encoded as `*tángōn` in the FST's notation (the
-final `-n` represents the historical `*-m` of the strong fem ō-stem
-AccSg ending `*-ǭm`, which by Campbell §586 yields OE `-e` via
-`*-ǭm > *-ōn > *-en > -e`). Stem class is unchanged; only the
-paradigm cell selected as the FST input changes.
+#### §17.20.10.1  Why we revised away from Option A.1
 
-The TSV target string `tange` and all OE-side fields (TOKENS, IPA,
-ALIGNMENT) remain unchanged. The PROTO column (etymological cognate
-citation form, per the convention established in §17.18.6 and
-re-affirmed in §17.19.5) keeps Kroonen's strong fem ō-stem citation
-form `*tangō`.
+The §17.20 dossier (esp. §17.20.2.1) establishes that:
 
-#### §17.20.10.2  Rationale for the `-n` notation rather than `-ǭ`
+1. The **lautgesetzlich NomSg** of PGmc strong fem ō-stem `*tangō`
+   is OE `tang` (Sievers §584 / Campbell §585: regular apocope of
+   trimoric `*-ō` after a heavy stem).
+2. **`tang` is actually attested** as the NomSg in the earliest
+   securely-dated OE source — the Épinal-Erfurt glossary, c.700,
+   Anglian, gloss for *forceps* (Pheifer 1974, cited in §17.20.2.1).
+3. The form `tange` is later (predominantly late-WS prose and 10th-c.
+   glossaries) and arose by analogical generalization from oblique
+   cells (probably AccSg) as the strong fem ō-stem paradigm
+   collapsed.
 
-The probe `*tángǭ → +?` shows that the proto-gate
-(`pgrmWeakTailVowel` in `Germanic/fsts/germanic.txt`) does not accept
-the trimoric/nasalized `ǭ` symbol on word-final position. Two routes
-were considered:
+Given (1)–(3), there is **no need for the AccSg cell-switch trick**:
+the lautgesetzlich NomSg already gives a form that is genuinely
+attested in early Anglian. The cell-switch precedents
+(§17.18 *þistles*, §17.19 *nabulō*) are reserved for cases where
+*no* lautgesetzlich NomSg outcome matches an attested OE form.
+That condition does not hold here.
 
-- **Route i**: extend the proto-gate to accept word-final `ǭ` and
-  add a denasalization rule `ǭ → ō → e` matching Campbell §586.
-- **Route ii**: write the AccSg input directly in its post-Proto-NWGmc
-  shape `*-ōn`, i.e. with the nasal consonant explicitly present
-  before final-vowel reduction. This is the pre-OE stage at which
-  `*-ǭm` has already lost the final `-m → -n` (Streitberg §148; Ringe
-  vol.1 §3.5.2) but has not yet undergone OE `-en > -e` weakening.
+This is the **§17.16 *spere/speoru* precedent in reverse direction**:
+when an early/Anglian attested form is the regular sound-change
+outcome, we prefer it as the FST target over a late/analogical form
+even if the late form is the conventional dictionary lemma.
 
-**Route ii chosen.** Reasons:
-1. The probe `*tángōn → tange` shows the existing pipeline already
-   handles this input correctly (FST output matches target).
-2. No germanic.txt edit is required. Proto-gate, breaking, apocope,
-   and final-vowel reduction rules all fire correctly as a
-   consequence of the existing cascade.
-3. The `-n` notation is the same convention used elsewhere in the TSV
-   for AccSg of strong fem ō-stems (cf. row inventory at
-   §17.20.10.5).
-4. Consistent with §17.18 precedent, which also uses a
-   morphologically transparent intermediate-stage encoding (GenSg
-   `*-as` rather than reconstructed `*-eso`).
+#### §17.20.10.2  Decision
 
-The TSV NOTE will document the `-n` ↔ `*-ǭm` correspondence so the
-choice is auditable.
+**Option C chosen.** Change the TSV row 2261 COUNTERPART (target)
+field from `tange` to `tang`. PROTOFORM remains `*tángō` (NomSg).
+PROTO column unchanged. TOKENS, IPA, ALIGNMENT need to be checked
+and updated for the shorter target form (no final `-e`).
 
 #### §17.20.10.3  Files to change
 
 **A. `Germanic/data/germanic-aligned-final.tsv`, row 2261 (line 1284)**
 
-Change the PROTOFORM column (4th tab-separated field):
+Current row (tab-separated):
 
-- *Before*: `*tángō`
-- *After*:  `*tángōn`
+```
+2261  t a n g e  *tángō  t ɔ ŋ - ( - z )  tɔŋz  tange  330  Old_English   Source: Wiktionary etymology (Wiktionary etymology (tong entry: {{inh|en|ang|tange}}))   tongs  *tangō  293
+```
 
-Change the NOTE column (12th tab-separated field) from:
+Changes:
 
-> `Source: Wiktionary etymology (Wiktionary etymology (tong entry: {{inh|en|ang|tange}}))`
+- **TOKENS** (col 2): `t a n g e` → `t a n g` (drop final `e`).
+- **PROTOFORM** (col 3): `*tángō` — unchanged.
+- **IPA** (col 4): `t ɔ ŋ - ( - z )` — review whether the trailing
+  `( - z )` (parenthesized -z) should be dropped or kept; this
+  notation may encode the historical `*-ōz` plural / oblique cell.
+  For a NomSg target `tang` it should be `t ɔ ŋ` with no
+  parenthesized addition. **To be confirmed at implementation time
+  by inspecting sibling Ø-final NomSg rows.**
+- **ALIGNMENT** (col 5): `tɔŋz` → `tɔŋ` (or whatever the convention
+  is for Ø-final NomSg ō-stems; check siblings).
+- **COUNTERPART** (col 6): `tange` → `tang`.
+- **NOTE** (col 10): replace with:
+  > `Source: Épinal-Erfurt c.700 (Pheifer 1974) attests Anglian NomSg *tang* as gloss for forceps; *tang* is the lautgesetzlich NomSg of PGmc *tangō (Sievers §584 / Campbell §585: regular apocope of trimoric *-ō after heavy stem). The later/southern form *tange* is analogical, generalized from AccSg as the strong fem ō-stem paradigm collapsed (Brunner §253 Anm. 3; Campbell §592). Wiktionary cites the late lemma; we prefer the early-Anglian lautgesetzlich form. See DEV_NOTES §17.20.`
+- **PROTO** (col 13): `*tangō` — unchanged (etymological citation form).
 
-to (replacing in place; preserve tab structure):
+All other columns unchanged.
 
-> `Source: Wiktionary etymology (tong entry: {{inh|en|ang|tange}}). PROTOFORM is the AccSg cell *tangōn (encoding historical *tangǭm via Campbell §586: *-ǭm > *-ōn > *-en > -e), not the NomSg cell *tangō (which gives lautgesetzlich tang by Campbell §585 apocope of trimoric *-ō after CVCC). Strong fem ō-stem per Kroonen 2013 s.v. *tangō- f. PROTO column retains the lemma citation form. See DEV_NOTES §17.20.`
-
-All other columns (TOKENS, IPA, ALIGNMENT, COUNTERPART, etc.) are
-unchanged.
-
-**B. `Germanic/fsts/germanic.txt`** — **NO CHANGE.** Probe confirms
-the existing proto-gate and cascade already handle `*tángōn → tange`
-correctly.
+**B. `Germanic/fsts/germanic.txt`** — **NO CHANGE.** The existing
+cascade already produces `*tángō → tang` correctly.
 
 **C. Compiled binaries** — rebuild via
 `bash Germanic/tools/rebuild_oe_bins.sh` (~3–5 min, Docker required)
-because the TSV change alters the input the analyzer/cascade is
-tested against. Although germanic.txt did not change, the rebuild
-script is the standard verification step.
+to refresh the analyzer's view of the TSV.
 
 #### §17.20.10.4  Verification probes (post-rebuild)
 
-Run from `~/capr-v3-working`:
+Target probe — should be unchanged (FST already produces this):
 
 ```
-echo "tángōn" | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"
-# Expected: tángōn → tange
+echo "tángō" | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"
+# Expected: tángō → tang
 ```
 
 Regression probes (must remain unchanged):
 
 ```
-echo "nábulô"  | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"   # → nafola (§17.19)
-echo "θístilas" | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"   # → þistles (§17.18)
-echo "bákaną"   | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"   # → bacan
-echo "tángô"    | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"   # → tanga (n-stem control: should be unchanged; not in TSV under this PROTOFORM)
+echo "nábulô"   | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"  # → nafola (§17.19)
+echo "θístilas" | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"  # → þistles (§17.18)
+echo "bákaną"   | docker compose exec -T backend bash -lc "flookup -i /usr/app/old_english.bin"  # → bacan
 ```
 
 Then:
 
 ```
 python3 Germanic/tools/oe_mismatch_report.py
-head -10 Germanic/docs/debug_snapshots/oe_mismatch_report.txt
-# Expected: Total mismatches: 27 (was 28); the *tángō → tang line removed from the
-# `final_vowel_missing__weak_noun_like` bucket.
+head -20 Germanic/docs/debug_snapshots/oe_mismatch_report.txt
+# Expected: Total mismatches: 27 (was 28); the *tángō → tang line
+# removed from the `final_vowel_missing__weak_noun_like` bucket.
 ```
 
-#### §17.20.10.5  Cross-check against other strong fem ō-stems in the TSV
+#### §17.20.10.5  Sibling-row format check
 
-Before committing, audit other rows whose TSV target ends in `-e`
-and whose PROTOFORM ends in `-ō` to see whether any of them are
-silent counterparts to this same AccSg-cell question. Quick check
-list (to be expanded during implementation):
+Before editing, inspect a few other Ø-final NomSg ō-stem rows in
+the TSV to confirm the conventional encoding for TOKENS, IPA, and
+ALIGNMENT columns. Suggested probe:
 
 ```
-grep -P '\t\*[^\t]+ō\t' Germanic/data/germanic-aligned-final.tsv | grep -P '\t[a-zA-Zāǣǽēīōǣþðœūȳ]+e\t' | head
+grep -P '\t\*[a-zŋ]+ō\t' Germanic/data/germanic-aligned-final.tsv | grep -vP '\t[^\t]+e\t' | head -5
 ```
 
-If any such rows exist where the FST gives the bare-Ø (apocopated)
-form but the TSV target has `-e`, they may be candidates for the
-same A.1 treatment. **These are not part of this commit**; they will
-be tracked as follow-up targets in the mismatch loop.
+This should show ō-stem PROTOFORM rows whose target is Ø-final, so
+we can match formatting.
 
 #### §17.20.10.6  Commit message
 
-Single commit, branch `update`. Suggested subject and body:
+Single commit, branch `update`:
 
 ```
-§17.20: PROTOFORM *tángō → *tángōn; tange via AccSg cell (mismatch 28→27)
+§17.20: TSV target tange → tang; lautgesetzlich early-Anglian NomSg (mismatch 28→27)
 
-Switch the *tángō row (row 2261) from the NomSg cell to the AccSg cell of
-the strong fem ō-stem paradigm, encoding the historical *-ǭm as final
-*-ōn (Campbell §586 pathway: *-ǭm > *-ōn > *-en > -e). Stem class
-unchanged. PROTO column retains Kroonen's lemma form *tangō.
+Switch the *tángō row (row 2261) target from late/analogical *tange* to
+the lautgesetzlich NomSg *tang*, attested as the Anglian NomSg in the
+Épinal-Erfurt glossary c.700 (Pheifer 1974, gloss for forceps).
 
-This is a paradigm-cell switch in the §17.18 / §17.19 family, not a
-stem-class change. The NomSg gives lautgesetzlich `tang` (regular
-heavy-stem apocope, Campbell §585), but the attested OE lemma is
-`tange`, generalized from the AccSg under the late-OE fem ō-stem
-paradigm collapse (Campbell §592; Brunner §253 Anm. 3).
+PGmc strong fem ō-stem *tangō* gives lautgesetzlich OE *tang* by
+regular apocope of trimoric *-ō after a heavy stem (Sievers §584 /
+Campbell §585). The late-WS form *tange* is analogical, generalized
+from oblique cells (probably AccSg) under the late-OE collapse of
+the strong fem ō-stem paradigm (Brunner §253 Anm. 3; Campbell §592).
 
-No germanic.txt change; existing proto-gate and cascade already route
-*tángōn → tange correctly.
+This is the §17.16 spere/speoru precedent: when an early/Anglian
+lautgesetzlich form is attested, we target it instead of the
+late/southern analogical form even if the latter is the conventional
+dictionary lemma.
+
+No germanic.txt change. PROTOFORM and PROTO columns unchanged. Only
+TSV target string and supporting columns (TOKENS, IPA, ALIGNMENT,
+NOTE) updated.
 
 Mismatch baseline: 28 → 27. See DEV_NOTES §17.20 for the full
 philological dossier and §17.20.10 for the implementation plan.
 ```
 
-(Plus the usual `Co-authored-by: Copilot` trailer.)
+(Plus `Co-authored-by: Copilot` trailer.)
 
 #### §17.20.10.7  Risk assessment
 
-- **Risk of regression**: low. germanic.txt unchanged. Only one TSV
-  row touched. Cross-check probes in §17.20.10.5 will catch any
-  unintended interaction with other ō-stems.
-- **Risk of philological objection**: low. Option A.1 is squarely in
-  the comparativist mainstream (Kroonen, R/T, Bammesberger,
-  Campbell). The only judgment call is the cell choice (AccSg vs.
-  DatSg vs. NomPl), and §17.20.6 + §17.20.7 lay out the case for
-  AccSg as the standard route in late-OE fem ō-stem leveling.
-- **Risk of TSV-convention objection**: medium-low. Our convention
-  (§17.18.6, §17.19.5) is that PROTOFORM = the cell-/stage-specific
-  PGmc input the FST consumes; PROTO = the etymological cognate
-  citation form. This change is fully consistent with that
-  convention; PROTO retains `*tangō`.
-- **Risk that the "denasalized -n" notation is wrong**: low. This
-  notation is already used elsewhere in the TSV and FST (any AccSg
-  ōn-stem row uses it); it is the standard pre-OE encoding for
-  `*-ōn` < `*-ǭm`.
+- **Phonological risk**: zero. germanic.txt unchanged; the FST
+  already produces `tang` from `*tángō`.
+- **Philological risk**: low. Épinal-Erfurt is the gold standard for
+  early Anglian glossary attestation; Pheifer 1974 is the standard
+  edition. The §17.16 precedent (spere/speoru) directly supports
+  preferring early/Anglian attested forms.
+- **TSV-convention risk**: medium-low. Wiktionary's lemma is *tange*,
+  and we are choosing a different lemma. This needs to be flagged
+  in the NOTE so future TSV reviewers understand the divergence is
+  intentional. (Done in §17.20.10.3.)
+- **Format-encoding risk**: medium. The TOKENS, IPA, and ALIGNMENT
+  fields need to be updated to match Ø-final ō-stem conventions in
+  sibling rows. The §17.20.10.5 sibling check is the mitigation.
 
-#### §17.20.10.8  Open question for the user
+#### §17.20.10.8  Why this is better than Option A.1
 
-Two equally lautgesetzlich choices for the PROTOFORM string:
+The earlier (now-removed) draft proposed Option A.1: switch
+PROTOFORM to `*tángōn` (AccSg) to derive the lemma `tange` via the
+analogical-source cell. That plan was philologically defensible but
+**model-theoretically suspect**: the FST is a sound-change device,
+not an analogy-modeling device, and feeding it the AccSg cell to
+"trick" it into producing an analogically-generalized NomSg is a
+workaround for a problem we don't actually have. The lautgesetzlich
+NomSg `tang` IS attested, so the regular pipeline is already
+correct. Option C is the cleaner choice: we change the TSV target
+to match what the FST correctly produces and what the early Anglian
+record actually attests.
 
-- **Choice α**: `*tángōn` (this plan; the post-Streitberg-§148
-  pre-OE-weakening shape, with `-m` already rhotacized to `-n`).
-- **Choice β**: `*tángǭ` (the strict late-PGmc shape with nasalized
-  `ǭ` from `*-ǭm`). This would require extending the proto-gate
-  (Route i in §17.20.10.2) and a small denasalization rule.
-
-This plan adopts **α**. β is more etymologically transparent
-(matches Bammesberger's notation directly) but requires germanic.txt
-work. If the user prefers β, the plan needs revision in §17.20.10.3
-(germanic.txt edit) and §17.20.10.4 (additional probes).
+The AccSg cell-switch technique remains valid for cases where no
+lautgesetzlich outcome of any cell matches any attested form (cf.
+§17.18 *þistles*, where the NomPl `*þistilōz` would give palatalized
+`þistles`-like forms but the GenSg cell gave the unambiguously
+correct `þistles`); it should not be used as a substitute for
+"target the early/Anglian attested form" when that option exists.
 
 ---
 
