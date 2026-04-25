@@ -1,0 +1,3402 @@
+      MANFRED MAYRHOFER
+
+
+
+
+Etymologisches Wörterbuch
+
+    des Altindoarischen
+
+            IL. Band
+
+
+
+
+            ॐ
+       HEIDELBERG 1996
+
+
+ UNIVERSITÄTSVERLAG C. WINTER
+         Die Deutsche Bibliothek - CIP-Finheitsaufnahme
+
+         Mavrhafer Manired
+
+         Ety mologisches Wörterbuch des Altindorarischen /
+         Mantred Mayrhofer - Heidelberg             Winter
+
+               fIndogermanische Bibliothek Reihe 2. Wörter-
+              buchen
+
+              ISBN 3 8253-4550-4
+
+         ΝΕ     IST
+
+         Bd    2 Lig   20 (1996)
+
+
+
+
+                         ISBN 3-8253-4550-5
+
+
+                          Alle Rechte vorbchalicn
+              Wo bniensitibverliz €. Winter Hosdelbeie GmbH
+11 (111 १,     Wiedengabo nur mit iusdrucklicher Gcachmizung dutch dan Verlag
+                Imprime en Allemagne. Printed in Germany
+         Sur    Klaus Brecht   sar. Bld Grafik    69125 Heidelberg
+          Druck    Strauss Offsctdruck (ΒΗ       69509 Mörlenbach
+                     Inhaltsverzeichnis
+
+
+
+Vorbemerkung.       ..:       2...      20220.            .            VII
+
+Abkurzungsverzeichnis             e.                          ον        IX
+   A Bibliographische Abkürzungen.                .   .           .     IX
+   B.   Sprachen, Texte, Textschichten, Kennzeichnung
+        von Texten . .        .        224       MEM              . XXIX
+   C    Ubrige Abkürzungen .             .       224                  XXXI
+
+Erster Teil: Altere Sprache, Schuß (N—H) . . . . .                       I
+   [N1 P61 PH 199. B204. BH238. M284 Y390 R421
+   L 472. V 485 S 599. ऽ 680. S 682. H 799]
+Nachträge und Berichtigungen.           ..   -    च   -       .        826
+
+Letzte Nachträge.         .        „~    +   ~    ~   -,..             837
+                          Vorbemerkung
+
+
+
+  Mit dem zweiten Band ist der Teil „Ältere Sprache" des En mo-
+logischen Wörterbuches des Altindoarischen abgeschlossen
+   Der dritte Band wird (im Sinne von Bd 1, S. Xf. [§ 2.2]) den
+Wortschatz der „jüngeren Sprache“ enthalten - soweit dieser
+hinreichend etymologisierbar ist oder (was damit nicht zusam-
+menfallen muß) etymologischen Deutungen ausgesetzi war. ~
+Wiewohl ich hoffe, auch für diesen Band Leben und Kraft zu
+behalten, beruhigt es mich, im Jahr meines 70. Geburtstages.
+doch, mit den Bänden [-Π ein vollständiges etymologisches
+Wörterbuch des Vedischen vorzulegen - und damit den wesent-
+lichen Teil dessen, was in meinem Buche für die Indogermani-
+stik relevant sein mag.
+  Die Danksagungen des ersten Bandes bleiben bestehen, alle
+in Bd. I, S. XIIIf und ऽ XV genannten Persönlichkeiten haben
+ihre verschiedenartigen wertvollen Dienste dem Buche weiter-
+hin zugute kommen lassen - mit der tragischen Ausnahme von
+Jochem Schindler, der am Weihnachtsabend des Jahres 1994,
+erst 50 Jahre alt. für immer von uns gegangen ist
+
+
+Wien, Ostern 1996                          Manfred Mayrhofer
+                        Abkürzungsverzeichnis
+
+                                  Band II.
+
+
+
+
+              A. Bibliographische Abkiirzungen
+
+         (Titel von Buchern und Zeitschriften, Autorennamen)
+
+
+
+ABegr                   Aschis für Begriffsgeschichte. Bonn
+AcAnıH                  Acta Antiqua Academiae Scientiarum Hungari-
+                        cae Budapest
+AcArchHung         ॥    Acta Archaeologica Ácademiae Scientiarum Hun-
+                        garicae Budapest
+                   tt
+Acme                    Acme Annali della Facoltà di Filosofia e Lettere
+                        dell'Università degli Studi di Milano Mailand
+AcPraeh                 Acta praehistorica et archaeologica Berlin
+                   od
+Actes Chantraine        La langue et les textes en grec ancien (Actes du
+                        Colloque Pierre Chantraine) Amsterdam 1992
+Aevum                   Aevum Rassegna di scienze storiche, linguistiche
+                        e filologiche Mailand
+AfO                     Archiv für Orientforschung Horn
+AION-SI                 Annali dell'Istituto Universitario Orientale di Na-
+                     poli Sezione slava. Neapel
+AKM                  Abhandlungen für die Kunde des Morgenlandes
+                     Leipzig
+ALB                = The Adyar Library Bulletin. Madras
+AnnBasPot            Annali della Facoltà di Lettere e Filosofia Uni-
+                        versitä degli Studi della Basilicata. Potenza
+AnnlON                  Istituto Universitario Orientale, Annali. Neapel
+                        [Von AION{-L) abzusetzen, o. I, XVII]
+Arctos                  Arctos Acta Philologica Fennica Helsinki
+Arrind                  Arnan, Indica [S WirthHinArrian,u S XXVIIH
+ARW                     Archiv für Religionswissenschaft Leipzig
+ASGM                    Atti del Sodalizio Glottologico Milanese Mailand
+AspAlb                  W   Breu ua. (edd , Aspekte der Albanologie
+                        Akten des Kongresses 'Stand und Aufgaben det
+                        Albanologie heute’ [Balkanologische Veröffent-
+                        lichungen Band 18] Berlin 1991
+X                                 Abkürzungen
+
+
+AtkinsPü                  S D     Atkins, Pusan in the Rig-Veda Princeton
+                          1941
+Auguralia                 Auguralia    Estudios sobre lenguas y literaturas
+                          griegas
+                              y latinas(ed M F Galiano). Madrid 1984
+
+
+Bader,
+    Anagrammes            F   Bader. Anagrammes et Allitérations [Orbis/
+                          Supplementa Tome I} Paris-Louvain 1993.
+BalkE                     Balkansko ezikoznanie / Linguistique balkanique
+                          Sofia
+Baltistica                Baltistica   Vilnius
+BammAbstr             z A. Bammesberger, Abstraktbildungen in den bal-
+                        tischen Sprachen [Erganzungshefte zu KZ Nr.
+                          22} Göttingen 1973
+Beal                      R H Beal, The Organisation of the Hittite Mili-
+                          tary [Texte der Hethiter Heft 20] Heidelberg 1992
+BechertDating |           H Bechert (ed. The Dating of the Historical
+                          Buddha Part | [Symposien zur Buddhismusfor-
+                          schung. IV. 1] Göttingen 1991
+Benedetti-Com-
+    posti                 M   Benedetti, I composti radicali latini   Esame
+                          storico e comparativo. Pisa 1988.
+BenedettiStudi            M Benedetti, Due Studi Vedici Potenza 1990
+Bergren                   AnnL T Bergren, The Etymology and Usage of
+                          Tleipap in karly Greck Poetry [American Classi-
+                          cal Studies N' 2] The American Philotogical As-
+                          sociation 1975
+Bloch, KS                 Recueil d'Articles de Jules Bloch 1906-1955 Paris
+                          1985
+Bolognimpr                Ci Bolognesi. Le fonti dialettali degli imprestiti
+                          iranici in armeno Mailand 1960
+BoppSymp                  Bopp-Symposium 1992 der Humboldt-Universi-
+                          tat zu Berlin Akten der Konferenz   aus Anlaß
+                          von Franz Bopps zweihundertjahrigem Geburts-
+                          tag am 14 9 199] Heidelberg 1994
+Boyce,      HoZor I       M Boyce, A History of Zoroastrianism Vol 1[1]
+                          The Farly Period [100 L/VHI/1/2/2A] I eiden/
+                          Köln 1975,
+BPhW                  ॥   Berliner philologische Wochenschrift Berlin.
+Breloer-Bómer             B Breloer ~ F     Bómer, Fontes historiae religio-
+                          num Indicarum Bonn 1939
+Buhnemann. Puja           G Bühnemann. Püja A Study in Smarta Ritual
+                          [Publications of the De Nobili Research Library
+                          Vol XV] Wien 1988
+                        Abkürzungen                                XI
+
+CalRitSü         W. Caland, Über das rituelle Sütra des Baudhä-
+                 yana. [AKM XII/1]       Leipzig 1903     Nachdruck
+                 Nendein 1966.
+C4IS$S           $änkhäyana-Srautasütra Translated         .by     W,
+                 Caland..    Edited     by.    Lokesh Chandra
+                 Nagpur 1953 Reprint Delhi etc. 1980
+CalTodt          W. Caland, Die altindischen Todten- und Bestat-
+                 tungsgebrauche mit Benutzung handschriftlicher
+                 Quellen dargestellt [VKNA Deel I, No 6] Amster-
+                 dam 1896 [Nachdruck Wiesbaden 1967, Amster-
+                 dam 1983].
+CamaOlCongrPr    K R. Cama Oriental Institute (estd 1916)[.] Inter-
+                 national Congress Proceedings (5th to 9th Janu-
+                 ary, 1989). Bombay 199]
+CampRic          E   Campanile. La Ricostruzione della Cultura
+                 Indoeuropea Pisa 1990
+Catsanicos,
+  Recherches     j Catsanicos, Recherches sur le Vocabulaire de
+                 la Faute. Hitt   was-ml et Gr &(piám Deux Re-
+                 presentants de la Base 1 -Eur. *H;wem- „Faillir“
+                 Paris [Cahiers de    N A.BU 2] 1991
+CHL/IEFU         Comparative-Historical Linguistics       Indo-Euro-
+                 pean and Finno-Ugric Papers in Honor of Oswald
+                 Szemerényi III Amsterdam/Philadelphia 1993
+ir               Corpus Inscriptionum Iranicarum London
+Clackson         J Clackson, The Relationship between Armenian
+                 and Greek. [Publications of the Philological Soci-
+                 ety, 30] Cambridge 1994
+CMCS             Cambridge medieval Celtic studies Leamington
+                 Spa, Warwickshire
+Collinge, Laws   N. E   Collinge. The Laws of        Indo-European
+                 Amsterdam ~ Philadelphia 1985.
+CollMyc          Colloquium Mycenaeum Actes du sixieme col-
+                 loque international sur les textes mycéniens et
+                 égéens Neuchatel - Genéve 1979
+CostaComp        G Costa, 1 composti indoeuropei con *dus- e *su-
+                 Pisa 1990
+CQ               The classical quarterly London
+CRAI             Comptes Rendus [de l'JAcadémie des Inscriptions
+                 & Belles-Lettres. Paris
+(WPL             Copenhagen       Working   Papers   in   Linguistics
+                 Kopenhagen.
+
+
+DamaszMit        Damaszener Mitteilungen Main?
+XII                         Abkurzungen
+
+
+DandPohi         ॥   M A Dandamaev, Persien unter den ersten Acha-
+                     meniden (6 Jahrhundert v Chr ). Übersetzt von
+                     H-D Pohl. Wiesbaden 1976
+Deger-Jalkotzy       S. Deger-Jalkotzy, E-QE-TA Zur Rolle des
+                     Gefoigschaftswesens in der Sozialstrukiur myke-
+                     nischer Reiche. [SbÖAW 344] Wien 1978
+Diachr               Diachronica International Journal for Historical
+                     Linguistics Zuletzt Amsterdam/Philadelphia.
+DiakStar             I M Diakonoff    - S A Starostin, Hurro-Urartian
+                     as an Eastern Caucasian Language [MSS-Beihcfte
+                     NF 12] Munchen 1986
+DravSymp             Symposium on Dravidian Civilization Publ Nr.1
+                     in the Asian Series of the Center for Asian Studies
+                     of the University of Texas at Austin     Austin -
+                     New York 1971
+
+
+EAZ                  Ethnographisch-archaologische Zeitschrift Ber-
+                     lin
+FC                   Ftudes celtiques Paris
+EIF                  Etudes indo-europcennes Lyon.
+FilChunsar           W Eilers, Die Mundart von Chunsar Wiesbaden
+                     1976
+EilNameng            W Filers, Geographische Namengebung in und
+                     um Iran Ein Überblick in Beispielen [SbAkMün-
+                     chen 1982 S| München 1982
+Em-Bur,
+ Borrowings          M B Emenau-    T Burrow, Dravidian Borrowings
+                     from Indo-Aryan University of California Publi-
+                     cations in Linguistics Vol 26 Berkeley - Los
+                     Angeles 1962
+Enclran              Encyclopedia Iranica Edited by F Yarshater
+                     London - New York, zuletzt Costa Mesa (Calif )
+EncRelEth            Encyclopedia of Religion and Fthics        Ed   by
+                     J Hastings Edinburgh 1909
+Lranos               Franos Acta Philologica Suecana Uppsala
+ErdosyIA             G { 4८५४ (ed), The Indo-Arvans in Ancient
+                     South Asia [Indian Philology and South Asian
+                     Studies Vol 1] Berlin - New York 1995.
+FirBenv              Etrennes de linguistique offerts.    à Emile Ben-
+                     veniste Paris 1928.
+Euler, Aor           W Euler. Modale Aoristbildungen und ihre Re-
+                     likte in alteuropaischen Sprachen [IBS-VKS 55]
+                     Innsbruck 1992
+                          Abkurzungen                               XIII
+
+
+Euler, Moduskat    W Euler. Moduskategorien der Perfektoprasen-
+                   tien im Indogermanischen {IBS-VKS 58] Inns-
+                   bruck 1993
+
+
+Fedorova           M   Fedorova, Die Marmantheorie in der klassi-
+                   schen indischen Medizin. Phil      Diss     Munchen
+                   1990
+FestgDtir          Festgabe deutscher Iranisten zur 2500 Jahrfeier
+                   lrans Stuttgart 1971
+Filliozat, Doctr   J Filliozat, La doctrine classique de la médecine
+                   indienne Ses origines et ses paralleles grecs Paris
+                   1949
+1 MSpidg           Fruh-, Mittel-, Spatindogermanisch         Akten der
+                   IX Fachtagung der Indogermanischen Gesell-
+                   schaft . 1992 in Zurich Wiesbaden 1994
+I rauwaliner-
+   PhilosTexte     E Frauwallner, Philosophische Texte des Hindu-
+                   ismus [Nachgelassene Werke Il, SbÓAW 588]
+                   Wien 1992
+[ ribourgOrSS80    Fribourg-Orient,   Mitteilungsblatt      Agyptologie
+                   und hamitosemitische Sprachwissenschaft, all-
+                   gemeine Sprachwissenschaft, Sommersemester
+                   1980 Freiburg (Schweiz) 1980
+Is Andreas         Festschrift Friedrich Carl Andreas dargebracht
+                   von Freunden und Schülern. Leipzig 1916
+Is Behrmann        Wahrnehmungen im Poetischen All Festschrift
+                   fur Alfred Behrmann zum 65. Geburtstag. Heidel-
+                   berg 1993
+1५ Belardi         Miscellanea di studi linguistici in onore di Walter
+                   Belardi per il suo 70° compleanno Rom 1994
+Fs Biezais         Humanitas Religiosa. Festschrift Haralds Bie-
+                   zais Stockholm 1979
+| s Bivar          Iranian Studies in Honor ofA D H Bivar Bulle-
+                   tin of the Asian Institute N S /Vol 7, Bloomfield
+                   Hills, MI, 1993
+Is Coseriu         Logos semantikos: Studia linguistica in honorem
+                   Eugenio Coseriu    5 Bde, Berlin - New          York.
+                   Madrid 1981
+Fs Deleu           Jain Studies in Honour of Jozef Deleu          Tokio
+                   1993
+Is de Saussure     Melanges de linguistique offerts       ak de Saussure
+                   Paris 1908.
+Is Fggermont       India and the Ancient World        [      ] Professor
+                   P H.L. Eggermont Jubilee volume Leuven 1987
+XIV                          Abkurzungen
+
+
+Fs Endzelin          In Honorem Endzelini. Chicago 1960.
+Fs Hamp          ॥   Celtic Language, Celtic Culture A Festschrift
+                     for E. P. Hamp Van Nuys (California) 1990.
+Fs Heesterman        Ritual, State and History in South Asia Essays
+                     in Honour of J. C Heesterman           Leiden - New
+                     York - Köln 1992
+Fs Kakosy            The Intellectual Heritage of Egypt          Studies Pre-
+                     sented to L Käkosy      .   Budapest 1992.
+Fs Kerlouégan        Mélanges Francois Kerlouégan. [Annales de l'Uni-
+                     versité de Besancon] Paris 1994
+Fs Lienhard          Sauhrdyamangalam Studies in Honour of Sicg-
+                     fried Lienhard on his 70th Birthday Stockholm
+                     1995,
+Fs MacKenzie         Corolla Iranica. Papers in honour of.             D   N.
+                     MacKenzie on the occasion of his 65th birthday
+                        Frankfurt am Main ua         1991
+F5 Manessy-
+  Guitton            Nomina Rerum Hommage à J Manessy-Guitton.
+                     L. A M A Centre de Recherches Comparatives
+                     sur les Langues de la Méditerranée Ancienne N"
+                     13. {994 Nizza
+Ps MHattori          Indo-shisoshi Kenkyü (Studies in the History of
+                     Indian Thought), No         6, 1989 = Special Issuc
+                     Dedicated to Professor Masaki Hattori Kyoto
+Fs Mitxelena         Symbolae Louis Mitxelena septuagenario ob-
+                     latae Vitoria 1985
+Fs Müller            Nubia   et   Oriens Christianus        Festschrift    für
+                     C D ὦ Muller          Köln 1988
+I s Nobel            Jfianamuktavali.     Commemoration          Volume    in
+                     Honour of Johannes Nobel On the occasion of his
+                     70th Birthday offered by Pupils and Colleagues
+                     New Delhi 1963
+I s Pellegrini       Seritti linguistici in onore di G       B    Pellegrini
+                     2 Bde Pisa 1983
+ls Polome I1         Perspectives on Indo-European Language, Cul-
+                     ture and Religion Studies in Honor of E C Po-
+                     lome 2 Bde , Mc Lean. Virginia 1991. 1992 {11६९
+                     Monograph 7] (~ Is Polomé [I], ० 1. XXVIIT)
+Fs Purdavud          Miscellanea in Honorem Ibrahim Pürdavud (=
+                     Farhang-e Iran Zamin 21, 1-4, 1976)
+Fs RBraun            Hommage a René Braun          [Publication de la ['a-
+                     culte des Lettres et Sciences Humaines de Nice
+                     N' 56] Tome
+                               I Nizza 1990
+                           Abkurzungen                             XV
+
+
+Fs Rix               Indogermanica et ltalica Festschrift für Helmut
+                     Rox zum 65 Geburtstag Innsbruck 1993
+Ἐς Rohr              Beiträge zur sprachlichen, literarischen und kul-
+                     turellen Vielfalt in den Philologien Festschrift
+                     für R. Rohr Stuttgart 1992
+Fs Rozwadowski       Symbolae Grammaticae in Honorem loannis
+                     Rozwadowski 2 Bde Krakau 1927, 1928
+Es Safarewicz        Studia Indoeuropejskie [Ioanni Safarewicz Sep-
+                     tuagenario    . ] Warschau u a. 1974
+ts Schlerath         s. IdgPferd
+Is Schmitt           Deutscher Wortschatz Lexikologische Studien
+                     Ludwig Erich Schmitt zum 80 Geburtstag
+                     Berlin - New York 1988.
+Fs Schneider         Hinduismus und Buddhismus Festschrift. für
+                     Ulrich Schneider Freiburg 1987
+Ἐς Siddheshwar
+  Varma              Siddha-Bhäratı or The Rosary of Indology Papers
+                         in honour .of Siddheshwar Varma 2 Teile
+                     Hoshiarpur 1950
+fs Streitberg        Streitberg|-]Festgabe. I eipzig 1924
+1५ Strunk            Verba et structurae. Festschrift für Klaus Strunk
+                     zum 65. Geburtstag Innsbruck 1995
+ts Taillardat         "HAIZTON AOTOAEIUNON. Logopédies Me-
+                     langes de Philologie et de Linguistique grecque
+                     offerts à Jean Taillardat Paris 1988
+is Togan             Zeki Velidi Togan'a Armagan |Symbolae in hono-
+                     rem Z V Togan] Istanbul 1950-1955,
+}» Tucci             Gururajamafijarika   Studi in onore di Giuseppe
+                    Tucci Neapel 1974
+is Untermann        Sprachen und Schriften des antiken Mittelmeer-
+                    raumes Festschrift für Jurgen Untermann zum
+                    65 Geburtstag Innsbruck 1993
+1 ५ Vanden Berghe = Archaeologia Iranica et Orientalis[] Miscellanea
+                    in Honorem Louis Vanden Berghe Band I. If,
+                    Gent 1989
+ἐς Wijesekera       Afijali. Papers on Indology and Buddhism A Feli-
+                     citation Volume presented to O [1 de A. Wije-
+                     sekera. Peradeniya 1970.
+ἔς Windisch          Festschrift Frnst Windisch      zum siebzigsten
+                    Geburtstag      .dargebracht    Leipzig 1914
+Is Yarshater         Iranica Varia. Papers in Honor of Professor Ehsan
+                     Yarshater Leiden 1990
+XVI                            Abkürzungen
+
+
+Gaastra                D. Gaastra (Herausg.), Das Gopatha Brähmana
+                       Leiden 1919.
+Gamkriv 1, Tl          T. V. Gamkrelidze - V V. Ivanov, Indo-European
+                       and the Indo-Europeans. A Reconstruction and
+                       Historical Analysis of a Proto-Language and a
+                       Proto-Culture. Part I, HI. Berlin - New York 1995
+GeigerOK               W Geiger, Ostiranische Kultur im Altertum Er-
+                       langen 1882, Neudruck Aalen 1979
+GeMetrik               K. F. Geldner, Uber die Metrik des jungeren
+                       Avesta. Tiibingen 1877.
+GermRel                Germanische Religionsgeschichte[.] Quellen und
+                       Quellenprobleme Herausgegeben von H. Beck,
+                       D Elimers[,] Καὶ Schier. [Erganzungsbande zum
+                       Reallexikorı der Germanischen Altertumskunde
+                       Band 5}. Berlin - New York 1992
+GiovReflPahl           P Di Giovine, I riflesso pahlavico del nome aves-
+                       tico dell’ "eretico" Potenza 1989,
+Gippert, tArml         J Gippert, Iranica Armeno-Iberica Studien zu
+                       den iranischen Lehnwürtern im Armenischen und
+                       Georgischen [SbÓAW 606] 2 Bde., Wien 1993
+Gnoli, ZorTime         G Gnoli, Zoroaster's Time and Homeland. Nea-
+                       pel 1980
+Gonda, Asp             J Gonda, Aspects of Early Visnuism. Utrecht 1954
+                       [Reprint Delhi 1962]
+Gonda,
+  Four Studies         J Gonda, Four Studies in the Language of the
+                       Veda [DispRhT 3] Den Haag 1950.
+Gonda, Loka             J Gonda, Loka World and Heaven in the Veda
+                       [VKNA Deel LXXII/1] Amsterdam 1966
+Gonda. Pusan           J Gonda, Pusan and Sarasvati            [VKNA Deel
+                       127] Amsterdam usw 1985
+Gonda,
+  SelStud VI 1.2       4 Gonda, Selected Studies fo 1. XXXII] Bd VI,
+                       1.2 Leiden 1991.
+Goto, Mat 199]     H    T Goto, Materialien zu einer Liste altindischer
+                       Verbalformen: 4. dogh/duph/doh/duh, 5          sav/su,
+                       6 "sav/su. 7 "(sav'/)si. Bulletin of the National
+                       Museum of Fihnology (o.            1, XXXID 16 (1991
+                       11992) 681-707
+Goto, Mat 1993     ॥   1. Goto, Materialien zu einer Liste altindischer
+                       Verbalformen 8 ard/rd.9 15, 10 uAs, 11. es/is,
+                       {2   es7iv,   13.   ok/oc/ur. 14   kan. 15   vaks/uks.
+                       Bulletin of the National Museum of Ethnology
+                       (0 { XXXID 18 (1993) 119-141
+                                 Abkurzungen                         XVII
+
+Goto? VN                Gotó (0 I, XXXID,72 , uberarbeitete und erganzte
+                        Auflage [Verbesserungen und Nachtrage S 1-7]
+                        Wien 1996.
+GöuMisz                 Göttinger Miszellen Beitrage zur agyptologischen
+                        Diskussion. Göttingen
+Grenfelt-Hunt           B. P Grenfell - A S. Hunt, The Oxyrhynchus
+                        Papyri Part XI {Egypt Exploration Fund Greco-
+                        Roman Branch] London 1915
+Griepentrog, Diss       W. Gnepentrog, Die Wurzelnomina im Germani-
+                        schen. Geisteswiss. Diss Wien 1991 [maschinen-
+                        schr., + Griepentrog, Wn]
+Griepentrog, Wn         W Griepentrog, Die Wurzelnomina des Germa-
+                        nischen und ihre Vorgeschichte [IBS 82] Inns-
+                        bruck 1995
+Gs Cardona              Ethnos, lingua e cultura Scritti in Memoria di
+                        Giorgio Raimondo Cardona. Rom 1993
+Gs De                   S K De Memorial Volume Kalkutta 1972
+Gs Pvangelisti          Studia linguistica amico et magistro oblata Scritti
+                        di amici e allievi dedicati alla memoria di Enzo
+                        Evangelisti. Mailand 1991.
+Gs Gabain               Turfan, Khotan und Dunhuang Vortrage der
+                        Tagung „Annemaric v Gabain und die Turfan-
+                        forschung“, veranstaltet von der Berlin-Branden-
+                        burgischen Akademie der Wissenschaften 9 ~
+                        12. 12. 1994) Berlin 1996
+Gs Herzfeld             Archaeologica Orientalia in Memoriam Ernst
+                        Herzfeld New York 1952
+Gs Klima                iranian and Indo-European Studies Memorial
+                        Volume of Otakar Klima. Prag 1994
+Gs Taraporewala         S K. Sen (ed ) Hanjamana [Gedenkschrifi1 J.5
+                        Taraporewala] Kalkutta o. J [1989]
+Gs Van
+  Windekens             Studia    Etymologica   Indoeuropaea    Memoriae
+                        A. J. Van Windekens      = Dicatae. Leuven 1991
+Gis Wackernagel         Sprachwissenschaft      und   Philologie]    Jacob
+                        Wackernagel und die       Indogermanistik heute
+                        Kolloquium der Indogermanischen Geselischaft
+                        . . 1988 in Basel Wiesbaden 1990
+GvozdNum                J Gvozdanovié (ed }, Indo-European Numerals
+                        Berlin ~ New York 1992
+
+HEN                     Handés amsóreay/Handes Amsorya Zeitschrift
+                        für armenische Philologie Wien
+Hacker, Vrata       ॥   P Hacker, Vrata. [GN 1973 5], Göttingen 1973
+XVIII                          Abkürzungen
+
+
+Hackstein,
+  Unters               Ὁ Hackstein, Untersuchungen zu den sigmati-
+                       schen Präsensstammbildungen des Tocharıschen.
+                       [HS-Erganzungsheft 38]. Göttingen 1995.
+Hale, WackLaw          M Hale, Wackernagel’s Law in the Language of
+                       the Rigveda August 1995 [book manuscript]
+HartmannLa             G Hartmann, Beitrage zur Geschichte der Göttin
+                       Laksmi Leipzig 1933.
+Haudry. Emploi     ॥   J Haudry, L'emploi des cas en védique. Lyon
+                       1977.
+HCACP                  Histoire et Cultes de l'Asie Centrale Préislamique.
+                       Paris (Editions du CNRS) 1991
+Henning. Sogdica       W B. Henning. Sogdica London 1940
+Heth                   Hethitica Louvain-La-Neuve
+HintzeZY               A Hintze, Der Zamyad-Yast Edition, Uberset-
+                       zung, Kommentar [Beitrage zur Iranistik Bd. 15]
+                       Wicsbaden 1994
+Hinz, Airt I           W Hinz, Altiranische Funde und Forschungen
+                       Berlin 1969.
+HL                     Historiographia Linguistica. International Journal
+                       forthe History ofthe Language Sciences Amster-
+                       dam/Philadelphia
+HockStudies            H H Hock (ed), Studies in Sanskrit Syntax
+                       Deihi 1991,
+HoffmA                 K Hoffmann, Aufsätze (ο 1, XXXV), Band IH,
+                       1992
+Hoffm-Forssm           K Hoffmann ~ B. Forssman. Avcstische Laut-
+                       und Formeniehre Innsbruck 1996
+Hofmann,
+  Fuhrwesen             ! Hofmann, Fuhrwesen und Pferdehaltung im
+                       Alten Agypten. Bonn [Phil Diss 1986], Selbstver-
+                       ag, 1989
+Hofstetter             F Hofstetter. Der Herr der Tiere im Alten Indien
+                       Wiesbaden 1980
+Homerica               E Crespo u a (edd ). Homerica Estudios lingüís-
+                       ticos Madrid 1992
+HumbElf Erb            Frbedestän. An Avesta-Pahlavi Text Edited and
+                       Translated by H Humbach in Cooperation with
+                       I. Elfenbein [MSS Beihcft 15 Neuc Folge] Mun-
+                       chen 1990
+
+IdgPferd               Die   Indogermanen und das Pferd. Akten des
+                       Internationalen interdisziplinaren Kolloquiums
+                       Freie Universitat Berlin. 1.-3. Juli 1992 [Fest-
+                       schrift für Bernfried Schlerath] Budapest 1994
+                                 Abkürzungen                            XIX
+
+IEandIEans                Indo-European and Indo-Europeans Papers Pre-
+                          sented at the Third Indo-European Conference
+                          at the University of Pennsylvania. Philadelphia
+                           1970.
+                          Indian Journal of Linguistics Kalkutta
+                  fi fl
+UL
+Iran                      iran. Journal of the British Institute of Persian
+                          Studies. London
+IrAnt                     Iranica Antiqua Leiden
+Isacenko, OpSel   ΠῚ
+                          A Isacenko, Opera selecta Munchen 1976
+
+
+Jacobi, KS        ॥       H Jacobi, Kleine Schriften. [Glasenapp-Stiftung
+                          Bd 4. 1-2] Wiesbaden 1970
+Jacobsohn                 H Jacobsohn, Arier und Ugrofinnen Gottingen
+                          1922. Nachdruck 1980
+Jamison, Hyenas           S W Jamison, The Ravenous Hyenas and the
+                          Wounded Sun. Myth and Ritual in Ancient India
+                          Ithaca - London 1991.
+4} ९110)                  Journal of the Economic and Social History of
+                          the Orient Leiden
+JUS                       The Journal of Hellenic Studies London.
+JIBS                      Journal of Indian and Buddhist Studies Tokio
+JohanssonEtym             K £. Johansson, Etymologisches und Wortge-
+                          schichtliches. Uppsala Universitets ársskrift 1927,
+                          Bd 1 Filosofi, spräkvetenskap och historiske
+                          vetenskaper, No 1. Uppsala 1927
+JOIB                      Journal of the Oriental Institute, M S University
+                          of Baroda. Baroda.
+JPal Soc                  Journal of the Pali Text Society London
+
+Karulis                   K Karulis, Latvic$u etimologijas vardnıca 2 Bde
+                          Riga 1992.
+Keith, AitA               A B. Keith, The Aitareya Aranyaka Edited
+                          translation, notes, indexes and an appendix
+                          [Anecdota Oxoniensia, Aryan Series 1 9] Oxford
+                          1909 Reprinted 1969.
+Keith, AitKauBr   ii      Rigveda Brahmanas: The Aitareya and Kausıtaki
+                          Brähmanas of the Rigveda[.] Translated     by
+                          A. B Keith    Cambridge (Mass) 1920, Reprint
+                          Delhi etc. 1971
+kel, Liste                J. Kellens, Liste du verbe avestique Wiesbaden
+                          1995
+kel-Pir IH                Kellens - Pirart, Les textes    . (0   I. XXXVIID
+                          Voi ΠῚ Commentaire. Wiesbaden 1991
+Klaus, Wasserf            K. Klaus, Die Wasserfahrzeuge im         vedischen
+                          Indien [AAWL 1989, 13] Stuttgart 1989 [1990]
+XX                              Abkurzungen
+
+
+Klein, Particle          1. 5. Klein, The particle z in the Rigveda. A Syn-
+                         chronic and Diachronic Study [Erganzungshefte
+                         zu KZ Nr. 27]. Göttingen 1978.
+Kluge-Seebold?           Kluge-Seebold (o. I, XXXIX), 23 erweiterte Auf-
+                         lage. Berlin - New York 1995
+Knobloch, SprRe!         J. Knobloch, Sprache und Religion. 3 Bde Heidel-
+                         berg 1979, 1983, 1986
+Koch, System             Ch Koch, Das morphologische System des altkir-
+                         chenslavischen Verbums Munchen 1990
+Krahe                    H Krahe, Die Sprache der Illyrier 2 Bde., Wies-
+                         baden 1955, 1964
+Ktemu                    Ktema. Civilisations de l'Onent, de la Gréce et de
+                         Rome antiques. Straßburg.
+KuiAryans                F B    J. Kuiper, Aryans in the Rigveda [LSIE 1].
+                         Amsterdam - Atlanta 1991,
+Kui. Gop                 Gopälakelicandrikä ed. F B J Kuiper [VKNA
+                         Deei 134] Amsterdam - Oxford - New York 1987
+Kui, VaV                 F. B J. Kuiper, Varuna and Vidusaka On the
+                         origin of the Sanskrit drama. [VKNA Deel 100]
+                         Amsterdam u.a     1979.
+KultTradBulg             R Lauer - P Schreiner (edd ), Kulturelle Tradi-
+                         tionen in Bulgarien Góttingen 1989
+Kwella,
+  Flußubersch            P Kwella, FluBuberschreitung im Rıgveda RV
+                         TIL, 33 und Verwandtes Wiesbaden 1973
+
+Laroche, GEH             E Laroche, Glossaire de la langue hourrite Paris
+                         1980
+Laroche, NdH             E Laroche, Les noms des Hittites Paris 1966
+Latidg                   Latein und Indogermanisch        Akten des Kollo-
+                         quiums der Indogermanischen Gesellschaft, Salz-
+                         burg, 23. - 26. September 1986 Innsbruck 1992
+LeS                      Lingua e Stile. Bologna
+Leukart, Nom       pou
+                         A Leukart, Die frühgriechischen Nomina auf -tas
+                         und -ds [SbÖAW 558] Wien 1994
+Liebich. Eint      ॥     B Liebich, Zur Einführung in die indische ein-
+                         heimische Sprachwissenschaft. I-IV [SbAkHei-
+                         delberg 1919, 4, 15, 1920. 10, 13] Heidelberg 1919,
+                         1920
+I ingBalt                Linguistica Baltica. International Journal of Baltic
+                         Linguistics Warschau
+Lingua                   Lingua International Review of Gencral Linguis-
+                         tics Amsterdam
+Lituanus                 Lituanus The Lithuanian Quarterly Chicago
+                            Abkurzungen                            XXI
+
+
+LSIE                Leiden Studies in Indo-European       Amsterdam -
+                    Atlanta.
+Luhr. Expr          R Lühr, Expressivität und Lautgesetz im Ger-
+                    manischen Heidelberg 1988
+
+
+Maher, Papers       J. P. Maher, Papers on Language Theory and
+                    History Hl]. Amsterdam 1977
+Malalasekera        G   P   Malalasekera, Dictionary of Pali Proper
+                    Names 2 Bde London 1937, 1938 Reprinted 1960
+MassonRech          É Masson, Recherches sur les plus anciens em-
+                    prunts sémitiques en grec Etudes et Commen-
+                    taires 67 Paris 1967
+MariulisPKE?        V Madiulis, Prusu kalbos etimologijos Zodynas
+                    Band | (A-H), I] (I-K) Vilnius 1988, 1993
+M-Br, GrSprw        M   Meier-Brügger. Griechische Sprachwissen-
+                    schaft Band I, II Berlin - New York 1992
+McReynolds          P K McReynolds, Before Ymir Primal cosmo-
+                    gony in Indo-European myth. Phil Diss, Univer-
+                    sity of California Los Angeles 1993
+Mecnakshis-
+  undaran           T L. Meenakshisundaran, A history of Tamil lan-
+                    guage Poona 1965
+MelchertAHP         H C Melchert, Anatolian Historical Phonology
+                    Amsterdam - Atlanta 1994
+MelzerSymp          Akten des Melzer-Symposiums 1991 aus Anlaß
+                    der 100-Jahr-Feier indo-iranistischer Forschung
+                    in Graz Graz 1992.
+MAAS                C. Caillat (ed ), Middle Indo-Aryan and Jaina
+                    Studies. Panels of the VIlth World Sanskrit Con-
+                    ference Leiden .    1987, Vol VI Leiden 199]
+Miller, Oss         W Miller, Die Sprache der Osseten Anhang zum
+                    ersten Band von GirPh Straßburg 1903
+Minos               Minos. Rivista de filología egca. Salamanca
+MiscLingGrL         L Isebaert (ed ), Miscellanea Linguistica Graeco-
+                    Latina [Collection d'Etudes Classiques Vol 7]
+                    Namur 1993.
+Mittwede, KS        M   Mittwede, Textkritische Bemerkungen zur
+                    Kajhaka-Samhita    [Alt- und Neuindische       Stu-
+                    dien 37] Stuttgart 1989
+Mnem                Mnemosyne Bibliotheca Classica Batava Leiden
+Museum          ॥   Muscum. Maandblad voor philologie en geschie-
+                    denis Leiden.
+My kenaika          Mykenaika. Actes du IX* Colloque international
+                    sur les textes mycéniens et égéens     .   (Athénes
+XXII                         Abkürzungen
+
+
+                    . . 1990). Bulletin de correspondance hellénique,
+                    Supplément XXV. Paris 1992.
+MyliusRit           K. Mylius, Wörterbuch des Altindischen Rituals.
+                    Wichtrach 1995.
+MyhusWb             K Mylius, Wörterbuch Sanskrit- Deutsch 4 Auf-
+                    lage. Leipzig usw 1992
+
+NagyPind            G Nagy, Pindar's Homer Tho Lyric Possession
+                    of an Epic Past Baltimore/London 1990.
+Narten, KS 1        J. Narten, Kleine Schriften Band I. Wiesbaden
+                    1995
+Neu. Hurrit         E     Neu, Das Hurritische. Eine altorientalische
+                    Sprache in neuem Licht [AAWL 1988: 3]. Stutt-
+                    gart 1988.
+NewSound            T Vennemann (ed.), The New Sound of Indo-
+                    European     Essays in Phonological Reconstruc-
+                    tion [Trends in Linguistics. Studies and Mono-
+                    graphs 41] Berlin - New York 1989
+NOWELFE             North-Western European Language Evolution.
+                    CNOWFLE") Odense
+NyK                 Nyelvtudományi Kózlemények. Budapest
+
+
+Oberlies. AvSt      T Oberlies, Avasyaka-Studien Glossar ausge-
+                    wahlter Wörter zu E. Leumanns „Die Ävasyaka-
+                    Erzahlungen". [Alt- und Neu-Indische Studien
+                    45.2]. Stuttgart 1993.
+Oertel, Dat   fin   H Oertel, Die Dativi finales abstrakter Nomina
+                    und andere Beispiele nominaler Satzfügung in
+                    der vedischen Prosa [SbAkMunchen 1941/1179).
+                    Munchen 1941
+Oertel, KS          H Oertel, Kleine Schriften. 2 Tle. [Glasenapp-
+                    Stiftung Bd 32] Stuttgart 1994
+Oguibénine,
+  Studies           B Oguibenine, Three Studies in Vedic and Indo-
+                    European Religions and Linguistics [Prof. P. D
+                    Gune Memorial Lectures, Fourth Series] Poona
+                    1990
+Orbis               Orhis    Bulletin international! de documentation
+                    linguistique. Louvain.
+OrJTir              Sri   Venkateswara University Oriental    Journal
+                    Tirupati
+
+
+Paid                Paideia Rivista letteraria di informazione biblio-
+                    grafica. Brescia
+                                Abkürzungen                        XXIII
+
+PanainoTi I         ॥   A Panaino, Tistrya[ ] Part I[.] The Avestan Hymn
+                        to Sinus. Rom 1990
+PBB                     Beitráge zur Geschichte der deutschen Sprache
+                        und Literatur. Zuletzt Tubingen
+
+Pedersen. EtLit         H. Pedersen, Études lituaniennes       [KDVS-M
+                        XIX, 3] Kopenhagen 1933
+PedersenKoll            In honorem Holger Pedersen       Kolloquium der
+                        Indogermanischen Gesellschaft.      1993 in Kopen-
+                        hagen Wiesbaden 1994 [erschienen 1995]
+Pers                    Persica Jaarboek voor het Genootschap Neder-
+                        land-Iran Leiden.
+Petersson,
+     Studien            H Petersson, Studien uber die indogermanische
+                        Heteroklisie   [Skrifter utgivna av Vetenskaps-
+                        Societeten i Lund. I]. Lund 1921.
+PI                      Prace filologiczne Warschau.
+PleiferKollWb           Etymologisches Wörterbuch des Deutschen Erar-
+                        beitet von einem Autorenkollektiv des Zentral-
+                        instituts für Sprachwissenschaft unter der Lei-
+                        tung von W. Pfeifer. 3 Bde, Berlin 1989
+Pirart, KY              E. V Pirart, Kayän Yasn (Yasht 10 [korr 19]
+                        9-96). L’origine avestique des dynasties mythiques
+                        d'Iran. [AuOr-Supplementa 2] Barcelona 1992
+Prrart, Nasatya I       É. Pirart, Les Nasatya Volume I |Bibliothéque
+                        de la Faculté de Philosophie et Lettres de l'Uni-
+                        versité de Liege - Fasc. CCLXI] Genf 1995
+Pischel. Gramm          R. Pischel, Grammatik der Präkrit-Sprachen
+                        [Grundri8 der Indo-Arischen Philologie und
+                        Altertumskunde 1 8]. Straßburg 1900
+l'laceArm               M. Leroy ~ F Mawet (edd ), La place de l'armé-
+                        nien dans les langues indo-curopéennes Louvain
+                        1986.
+Polome, Essays          E   C   Polomé, Essays on Germanic Religion
+                        [ΠῈΣ Monograph Nr 6] Washington. D C 1989
+PPPIKNV                 Pis'mennye pamjatniki i problemy istorii kul'tury
+                        narodov vostoka. ΠΧ godién nautn sessija LO
+                        IV AN] Leningrad 1973.
+PPSu                    Papers from the Parasession on Functionalism.
+                        Chicago Linguistic Society. 1975
+PPsNond                 Papers from the Parasession on Non-declaratives
+                        Chicago Linguistic Society. 1982.
+PPsPronAn               Papers from the Parascssion on Pronouns and
+                        Anaphora Chicago Linguistic Society, 1980.
+XXIV                      Abkurzungen
+
+
+Pre-Aryan        S Levi, J Przyluski and 1 Bloch, Pre-Aryan and
+                 Pre-Dravidian in India Translated from French
+                 by P Ch Bagchi Kalkutta 1929
+ProcFEuConf-
+  IrSt I         Proceedings of the First European Conference
+                 of Iranian Studies    Part I(] Old and Middle
+                 Iranian Studies Rom 1990
+PUGrltt          Ὁ Carruba (ed ) Per una Grammatica Ittita
+                 Towards a Hittite Grammar [Studia Mediterra-
+                 nea 7] Pavia 1992
+
+
+QIGChieti        Quaderni dell'Istituto di Glottologia, Universita
+                 degli Studi “G D'Annunzio" di Chieti Facoltà
+                 di Lettere e Filosofia Alessandria
+
+Rau, Pfeilgitt   W Rau, Altindisches Pfeilgift ISbWissGes Frank-
+                 furt XXXII, Nr 2] Stuttgart 1994
+Rau, Töpferei    W Rau. Tópferei und Tongeschirr im vedischen
+                 Indien [AAWL 1972: 10] Wiesbaden 1972
+REGC             Revue des Études Georgiennes ct Caucasiennes
+                 Paris.
+RekRelCh         Rekonstruktion und relative Chronologie Akten
+                 der VIII Fachtagung der Indogermanischen Ge-
+                                  31 August - 4 September 1987.
+                 sellschaft Leiden,
+                 Innsbruck 1992.
+REL              Revue des études latincs Paris
+Renou, BibiVéd   L σπου, Bibliographie Védique Paris 1931.
+Renou, Fc Véd    L Renou. Les écoles védiques et la formation du
+                 Veda. Paris 1947.
+Renou, Pin       I   Renou.la grammaire de Panini 2 Bde Paris
+                 1966
+Renou, Ptol      I   Renou. La Geographie de Ptolémée L'Inde
+                 (VI, 1-4) Paris 1925
+Renou. Rituel    L Renou, Vocabulaire du rituel védique Paris
+                 1954
+Risch. Wortb     E Risch, Wortbildung der homerischen Sprache.
+                 Zweite, völlig uberarbeitete Auflage Berlin - New
+                 York 1974
+Rix. Modussyst   H Rix, Zur Entstehung des urindogermanischen
+                 Modussystems [IBS-V 36] Innsbruck 1986
+RLAss            Reallexikon der Assyriologie und Vorderasiati-
+                 schen Archavlogie Berlin - New York
+Rodhe. Deliver   S Rodhe. Deliver us from evil Studies on the
+                 Vedic ideas of salvation. Lund-Kopenhagen 1946
+                             Abkurzungen                             XXV
+
+Ronnow. Trita         K. Ronnow, Trıta Aptya Eine vedische Gottheit
+                      [Phil. Diss. Uppsala 1927] Uppsala 1927
+Ross Ginger           A S. C. Ross, Ginger. A Loan-Word Study Ox-
+                      ford 1952
+Roth. KS              R v Roth, Kleine Schriften [Glasenapp-Stiftung
+                      Band 36]. Stuttgart 1994.
+RückertColl           Friedrich Rückert Dichter und Sprachgelchrter
+                      in Erlangen       Referate des 9   interdisziplinaren
+                      Colloquiums des Zentralinstituts [SchrZIFrL 29]
+                      Neustadt an der Aisch 1990
+
+
+Saussure, Mem         £. de Saussure, Mémoire sur le systeme primi-
+                      tif’ des voyelles dans les langues indo-européennes
+                      Leipzig 1879 (erschienen 1878), Nachdruck Hil-
+                      desheim 1968.
+Saussure, Rec         Recueil des publications scientifiques de F. de
+                      Saussure Genf 1922, Nachdruck Genf 1970
+SbWissGes-
+  I rankfurt           Sitzungsberichte der Wissenschaftlichen Gesell-
+                      Schaft an der Johann Wolfgang Goethe-Universi-
+                       tàt Frankfurt am Main, Stuttgart.
+SC elt                 Studia Celtica Cardiff
+SchaeterInt           Ch. Schaefer, Das Intensivum im Vedischen. [Er-
+                      ganzungshefte zu HS 37]. Göttingen 1994
+Scheller              M Scheller, Vedisch priyd- und die Wortsippe
+                      frei, freien, Freund Eine bedcutungsgeschicht-
+                      liche Studie. [Erganzungshefte zu KZ 16]. Gót-
+                      tingen 1959,
+Schlerath, Metallg = B Schlerath, Metallgegenstande in vedischer Zeit
+                      In B TerZan et al (ed) ΧΡΌΝΟΣ Beitrage zur
+                      prühistorischen Archaologie zwischen Nord- und
+                      Sudosteuropa (Espelkamp 1997)
+Selm, Bis             R Schmitt, The Bisitun Inscriptions of Darius
+                      the Oreatf] Old Persian Text [Cllr Part I Voll
+                      Texts I] London 1991
+Schmid, Nehr      ॥   W P. Schmid, Nehrungskurisch [AAWL 1989 2]
+                      Stuttgart 1989.
+Schmid. Studien       W. P. Schmid, Studien zum baltischen und indo-
+                      germanischen Verbum. Wiesbaden 1963
+Schmidt. srara        H.-P   Schmidt,     Vedisch   vrard und    awestisch
+                      urvata. [Alt- und Neuindische Studien 9} Ham-
+                      burg 1958
+Schmid,
+  Wort und Zahl       W P    Schmid, Wort und Zahl. Sprachwissen-
+XXVI                                Abkurzungen
+
+
+                            schaftliche Betrachtungen der Kardinalzahlwörter.
+                            [AAWL 1989. 8] Stuttgart 1989.
+Schm, Noten       = R. Schmitt, Epigraphisch-exegetische Noten zu
+                            Dareios’    Bisutün-Inschriften   [SbOAW        561]
+                            Wien 1990
+Schneider,
+  Visnus Aufstieg = U           Schneider, Visnus Aufstieg Aus dem Nach-
+                            laß herausgegeben von K Meisig. [FBI 27] Wies-
+                            baden 1994
+Schrijver, Refi   = P           Schnjver. The Reflexes of the Proto-Indo-
+                            European Laryngeals in Latin [LSIE 2] Amster-
+                            dam - Atlanta 1991
+SchrZIFrL         = Schriften des Zentralinstituts fur fränkische Lan-
+                            deskunde und aligemeine Regionalforschung an
+                            der Universitat Erlangen-Nurnberg Neustadt an
+                            der Aisch
+Schwentner        = E Schwentner, Die primaren Interjektionen in
+                    den indogermanischen Sprachen. Heidelberg
+                            1924.
+Sco               = Studi Classici e Orientali Pisa.
+Secbuld, Halbvok =  E Seebold, Das System der indogermanischen
+                    Halbvokale. Heidelberg 1972
+Semiotica         = Semiotica Journal of the International Associa-
+                    tion for Semiotic Studies Amsterdam - Berlin -
+                            New York.
+Sieg. KS                    F   Sieg, Kleine Schriften     [Glasenapp-Stiftung
+                            Bd. 31] Stuttgart 1991
+SIC               i         Studi italiani di Filologia Classica, (N S.). Flo-
+                            renz
+
+Skj                         P 0 Skjaervo (~ Skjzrvo)
+
+
+                  ॥ ॥ ॥ ॥
+Slavia                      Slavia Casopis pro slovanskou filologii. Prag
+SlavR                       Slavistiöna revija. Laibach.
+Sommer-Pfister              F Sommer, Handbuch der lateinischen Laut- und
+                            Formenichre. Vierte, neubearbeitete Auflage
+                            Band I. Finleitung und Lautlehre von R Pfister
+                            Heidelberg 1977
+Stru, Postulat    =         K Strunk. Zum Postulat vorhersagbaren' Sprach-
+                            wandels bei unregelmäßigen oder komplexen
+                            Flexionsparadigmen       [SbAkMünchen    1991     6]
+                            Munchen 1991
+StudIndMedH       = G           J. Meulenbeld - D Wujastyk (edd ), Studies
+                            on Indian Medical History Papers presented at the
+                            International Workshop on the Studv of Indian
+                            Medicine      September 1985. Groningen 1987.
+                                     Abkurzungen                      XXVII
+
+    StudPalaeohisp   = Studia Palaeohispanica,          Actos del IV coloquio
+                           sobre lenguas y culturas paleohispánicas (= Veleia
+                           2-3). Vitoria
+    SuHymnCycles     = W Sundermann, The Manichaean Hymn cycles
+                           Huyadagman and Angad Rofnan in Parthian and
+                           Sogdian     [Cllr Supplementary Series Vol      II]
+                       London 1990
+    Suvarn           = T N. Dharmadhikari (ed ), Suvarnamahotsava-
+                       grantha Golden Jubilee Volume Poona 1981
+                           (1982)
+    Svennung         ॥     J. Svennung, Anredeformen Uppsala - Wies-
+                           baden 1958.
+    S-W                    N, Sims-Williams
+    s-W/Hamilton     nod
+                           N   Sims-Williams et     J   Hamilton, Documents
+                           turco-sogdiens du IX*-X* sié¢cle de Touen-hou-
+                      ang. [Cllr Part IL, Vol HI/Hi] London 1990
+    S-W. SogdInser If N Sims-Williams, Sogdian and other Iranian
+                      Inscriptions of the Upper Indus II [ला Part II.
+                           Vol HL IH. London 1992,
+५\ ५८. Flora         = R       Syed, Die Flora Altindiens in Literatur und
+                           Kunst     Phil. Diss. Munchen 1990 [Unveránder-
+                           ter Nachdruck 1992]
+    l agare          = G V. Tagare, Historical Grammar of Apabhramsa
+                           Poona 1948
+    Thi, Ged         = Gedichte aus dem Rig-Veda      Ausdem Sanskrit
+                       übertragen und erlautert von P Thieme Stuttgart
+                           1964.
+    Thi. KS [2]      = P Thieme, Kleine Schriften (o. I. LIII) Band 2
+                           [Glasenapp-Stiftung 5.2] Stuttgart 1995
+    Thi, OpMai I     = P. Thieme, Opera Maiora Band I. Kyoto 1995
+    Ihi Up           = P, Thieme, Upanischaden     Ausgewahlte Stücke
+                        Stuttgart 1966
+    Tichy, -tar-     = E Tichy, Die Nomina agentis auf -tar- im Vedi-
+                        schen. Heidelberg 1995
+likkanen             == B. Tikkanen. The Sanskrit Gerund Helsinki 1987
+lischler             =     J. Tischler, Glossar (o I. LIV) Teil I. Lieferung 7
+                           {N}: HI, Lieferung 9 (T, D/2). 10 (T. 0/3) Inns-
+                           bruck 1991, 1993, 1994
+
+1     AJb            =     Ural-Altaische   Jahrbucher. Wiesbaden-Bloom-
+                           ington.
+U otila              = F Uotila, Zur Etymologie von finn sampa Furo-
+                           asiatica (Folia Philologica AION-SI Suppleta II.
+                           Neapel 1973-74) Nr. 4.
+XXVHI                            Abkurzungen
+
+
+Vaillant, Gramm    A Vaillant, Grammaire Comparée des Langues
+                   Slaves. 5 Bande. Paris 1950-1977.
+Van Buitenen. KS = J A B. van Buitenen, Studies in Indian Literature
+                   and Philosophy. Collected Articles. Dethi 1988.
+VerstÜbernDeut       N   P Neukam (ed ), Verstehen, Übernehmen, Deu-
+                         ten = Dialog Schule und Wissenschaft. Klassi-
+                         sche Sprachen und Literaturen Bd. 26 (Munchen
+                         1992)
+Vine, Diss               B H Vine, Indo-European Verbal Formations in
+                         *d- Phil. Diss. Harvard University 1981
+Vine, Studies            B Vine, Studies in Archaic Latin Inscriptions
+                         Innsbruck 1993
+Vast 3                   Vostokovedenie 3, filologiteskie issledovanija
+                         Leningrad 1977
+VostFil                  Vostotnaja Filologija Tiflis.
+VWartburg                W von Wartburg, Französisches Etymologisches
+                         Wörterbuch Bonn 1928f. (zuletzt Basel 1988 ff.)
+VWind. Lex               A J. Van Windckens, Lexique étymologique des
+                         dialectes tokhariens Louvain 1941
+
+Wack, Beitr              1 Wackernagel, Beitrage zur Lehre vom griechi-
+                         schen Akzenı Programm zur Rektoratsfeier der
+                         Universität Base! 1893
+Wack, Brahm              J Wackernagel, Ueber den Ursprung des Brah-
+                         manismus. [Vortrag, gehalten zu Basel am 17 No-
+                         vember 1876} Basel 1877
+Weber, OPPT              D Weber, Ostraca, Papyri und Pergamenıef.] Text-
+                         band [Clr Part HL Vol IV, V]. London 1992.
+Wheeler                  B I! Wheeler, Der griechische Nominalaccent
+                         Strassburg 1885
+Winternitz,
+  Hochzeitsrituctl       M   Winternitz, Das altindische Hochzeitsrituell
+                         nach dem Äpastambıya-Gphyasütra und einigen
+                         anderen verwandten Werken Mit Vergleichen
+                         der Hochzeitsgebrauche bei den ubrigen indo-
+                         germanischen Völkern Wien 1892
+WirthHinArrian           Arrian. Der Alexanderzug] | Indische Geschichte
+                         Herausgegeben und übersetzt von G Wirth und
+                         O v Hinuber Munchen-Zurich 1985
+WissAlt                  C-R Schwinge (Herausg }. Die Wissenschaften
+                         vom Altertum am Ende des2 Jahrtausendsn Chr
+                         Stutizart und Leipzig 1995
+Wolff, Avesta            V Wolff, Avestal| Die heiligen Bücher der Par-
+                         seni] Übersetzt auf der Grundlage von Chr.
+                              Abkürzungen                       XXIX
+
+                       Bartholomae's Altiranischem Wörterhuch StraB-
+                       burg 1910 [Nachdruck Berlin 1960]
+                       Ch H Werba.
+                 ॥ ॥
+Wrb
+WrightNCSL             3. C. Wright, Non-Classical Sanskrit Literature
+                       Inaugural Lecture, delivered on 24 November
+                       1965. London (School of Oriental and African
+                       Studies) 1966
+WS               ॥     Wiener Studien Zeitschrift für klassische Philo-
+                       logie und Patristik. Wien.
+WV 9                   Wiener Slavistisches Jahrbuch Wien
+MW ust, Rudra
+                 yog   W. Wust. Rudrd- m n pr (Wortkundliche Bei-
+                       trage zur arischen [indo-iranischen] Kulturge-
+                       schichte und Welt-Anschauung IH) München
+                       1955
+
+
+71)MG-Suppt VI = Zeitschrift der Deutschen Morgenländischen Ge-
+                 sellschaft Supplement Vi: XXII. Deutscher Orien-
+                       talistentag  , 1983 in Tubingen    Ausgewählte
+                       Vortrage Stuttgart 1985.
+/DMOG-Suppl Vil = Zeitschrift der Deutschen Morgenländischen Ge-
+                  sellschaft Supplement VIE     XXIII. Deutscher
+                  Orientalistentag . 1985 in Würzburg Ausge-
+                  wahlte Vorträge Stuttgart 1989
+/DMG-Suppl VII = Zeitschrift der Deutschen Morgenländischen Ge-
+                  sellschaft Supplement VIH : XXIV. Deutscher
+                  Orientalistentag . 1988 in Köln. Ausgewählte
+                       Vorirage Stuttgart 1990.
+/wgler, Ogam    = S. Ziegler, Die Sprache der altirischen Ogam-
+                  Inschriften [Erganzungshefte zu HS 36] Gót-
+                  tingen 1994
+पाछा, Urspr     = S Zimmer, Ursprache, Urvolk und Indogermani-
+                  sierung [IBS~VKS 46] Innsbruck 1990
+ZONE            = Zeitschrift fur Ortsnamenforschung. München-
+                  Berlin
+
+
+
+
+            B. Sprachen, Texte, Textschichten,
+                Kennzeichnung von Texten
+
+\dbhBr           Pd
+                       Adbhuta-Brahmana.
+ArthS                  Arthasastra.
+                 ॥ ॥
+ICH                    Asvalayana-Grhyasutra.
+XXX               Abkurzungen
+
+
+4६५५5       ASvalayana-Srautasutra
+AV Paris    Atharvaveda-Parisista
+
+
+Bal         Baliéi (Baloéi), Balutschisch
+BauDh       Baudhayana-Dharmasastra.
+Bg          Bengali
+
+
+DNa (b)     Dureios, Nak$-i Rustam a (b)
+Drav        Dravidisch
+
+
+Ganap       Ganapatha
+GopBr       Gopatha-Brahmana
+
+
+HiSS        Hiram ukesi-Srautasutra
+HParis      Hemacandra, Parisistaparvan
+
+
+Jin         Jinistisch
+
+
+KapS        Kapila, Sarnkhvapravacana
+Katha       Katha-Samhita. Asvamedhagrantha
+KathBr      Kathaka-Brahmana
+KathGirSu   Kathaka-Grhyasutra
+KathUp      Katha-Upanisad
+Katy        Katyayana
+KatySS      Katyayana-Srautasutta
+Ko          Konkan.
+Ks          Kasmiri (Kasmirn
+
+
+La          Lahnda
+Lats        Latyavana-Srautäsulrfa
+
+
+ManB        Mantrabrahmana
+Me          Mittelenglisch
+MnGrS       Manava-Cirhyasutra
+Mnid        Mittelniederlandisch
+MnSrSu      Manava-Srautasutra
+
+
+Nep         Nepalt
+Nirang      Nirangistan
+NWokt       Nordwest-Prakrit (~ Gandhari, im Dharmapada
+            ed   J Brough, Oxford 1968)
+
+
+Or          Oriya (Oria)
+                       Abkurzungen                   XXXI
+
+Padap          Padapatha.
+Pat            Patafijali
+Pj             Panjabi (Pafijabi)
+
+
+RV-Anukr       Reveda-Anukramani
+
+
+SamavBr        Samavidhana-Brahmana.
+Sarngs         Samgadhara-Samhita.
+SSrSu          Sankhayana-Srautasutra
+
+VaDhSu         Vasistha-Dharmasutra
+VaikhDhs       Vaikhanasa-Dharmasutra
+VarBrS         Varahamihira, Brhatsarnhita
+\r             Visprat
+\SK            Vätasaneyi-Samhita, Kanva-Rezension
+
+
+XP             Xerxes, Persepolis |
+
+
+
+
+              C. Ubrige Abkiirzangen
+
+ Abs           Absolutivum.
+AM             Aktiv
+App            Appellativum
+IW             Tremdwort
+GenDatAkkDu    Genetiv-Dativ-Akkusativ Dual
+mdekl.         indeklinabel
+that           Jahrhundert
+kompar         Komparativ
+1 ocAbs        Locativus absolutus
+Obl            Obliquus
+ON             Ortsname
+ppp            Participium perfecti passivi
+Prit           Priteritum
+Subj           Subjunktiv
+Superi         Superlativ
+ut             varia lectio
+                                 na!                                      1
+
+                                  N
+
+na! nicht (RV +); selten na? ‘nicht-’ in Kompp. wie AV na-mura-
+  ‘das Nichtsterben’, MS + nd-pumsaka- m. ‘Hermaphrodit,
+  Kastrat' (< *nd-stri-pums° ‘weder Frau noch Mann’, vgl. TB
+  nastripuman, SB nd ... stri nd piiman; Wack[-Deb], KZ 67
+  [1942] 164f. = KS 380f., AiGr H 1? Nachtr 9,24), ep. + na-
+  cira- nicht langdauernd, u.a. (AıGr Il 1770), hingegen üblich
+  und ererbt a(n)? ‘nicht-’ (idg.   ~ *ne; oben 1 35); MS + na-
+  tamam, Br na-taram nicht im geringsten (s. Hoffm, KZ 79
+  [1965] 179 = HoffmA 170; Thi, KZ 79 [1965] 246 = KS 227);
+  vielfach in alten Zusammenrückungen wie ned (sicher) nicht
+  (RV +; nd! + id, o. I 190), ned eva (RV 10,51,4), na u, nó
+  und nicht (RV +), zd-kih nullus (RV, AV; o. 1 347), na và
+  oder nicht (RV +), nd νάϊ überhaupt nicht (RV u.a.), na hi
+  denn nicht, na nd sicher nicht, nimmer (RV +; s. AiGr I?
+  Nachtr 168), nasti existiert nicht (+ Up + nästi-ka- ungläubig,
+  AiGr II 2,534), u.a. - Mi., nu., ni., pa. na nicht, no sicher
+  nicht, natthi ist nicht, natthika- Nihilist, usw. (Tu 6906, mit
+  Verweisen; TuAdd 6906, 7035, 7091). - lir., jav. na-uua oder
+  nicht (Vd 5,26; = ved. nd va), na-uua durchaus nicht, keines-
+  falls (~ ved. nd vdi), aav. jav. nóit, aav. naé^ (Narten, YH
+  91f.), ap. naiy, nai? nicht (= ved. ned; aav. nóit aéuud = RV
+  ned eva, oben 1 270, mit Lit.), aav. jav. nae-cis keiner, u.a. (s.
+  Kui, IIJ 30 [1987] 209ff., Kel-Pir II 276f.); khot. na, ne nicht.
+  mp né, parth. ny, np. na, oss. ne nicht, ni-cy/ne-ci niemand,
+  usw   (Abaev Il 164, 179, Bielmeier, Unters 200, Bai, Dict
+  172a). ~ Idg. "ne, lat. ne(-sció) (weiß) nicht, re-quis nicht einer
+  (ved. nd-kih), neve, neu oder nicht (~ ved. nd và) [usw.]. got.
+  ni, lit. né, aksl. ne nicht, etc.; WP I 319f., Pok 756f., Bee,
+  Dev 104f., Forssman, Pindar 148 und Anm. 5,6, Fraenkel
+  488bff., Lehmann 266a. - S. na”.
+    Eine alte Zusammenruckung auch in idg. *ne h,esti (ved πᾶς).
+  aksl nésto u.a. (AiGr P Nachtr 178, Vasmer II 215. Gonda, ΟἹ 151
+  Anm 8,G E. Dunkel, Gs Cowgill 18 und Anm 44). - RV 10.34.8
+  na steht für na à, repräsentiert also nicht idg. "ne (Pok 757, u a, 5
+  KFWA IL 120) - Kein Anlaß besteht fur einen Ansatz *Hne, s.0.     135
+2                              na’ - náki-
+
+ná! wie, gleich wie (RV, u.a., zu Belegen, Metrik und Sandhi-
+    Verhalten s. B. Vine, HJ 20 [1978] ΣΤῊ, 181 [mit reicher
+    Lit] G. Pinault, BSL 80 [1985] 103ff), - Wohl (wie auch
+    lit. ne ‘wie’ u.dgl.) ursprungsgleich mit nd’.
+      Vgl. die Lit   in DelbrSynt 543, KEWA 11 121, Fraenkel 489b,
+    bes   Vine,   aa O,, Pinault, aaO   (Hinweis auf das Stilmittel der
+    „comparaisons négatives" in bait und slav Dichtung) - Nicht vor-
+    zuziehen ein idg ‘we? ‘wie’ (z B. Bur, Skr 20,283). - Mittelindi-
+    sches wie pà nam bleibt fem (HinMi 164), wohl auch apabhr nam
+    (s. AiGr, IG 98 Anm 405), gegen a(n)” ‘wie’ AiGr II 1? Nachtr 26
+
+
+námsa-, s. NAS'.
+
+
+nakulá- m. Ichneumon, Viverra ichneumon (AV +), ~. das
+    Weibchen des n^ (Br +). - Mi, dard., ni. pa. nakula- m., ks.
+    nul m. 'mongoose', u.a. (Tu 6908). - Hr.? Chwaresm. nköyk
+    “weasel, ichneumon’ setzt nach W. Henning, Fs Togan 435 =
+    SelP [ 499 iir *nakuóa- fort. [Nach S-W (briefl.) kann jedoch
+    nkóyk aus nakula- entlehnt sein (vgl. sogd. pry ὃ « *patigdla-
+    ‘cup’, M. Schwartz, ZDMG 120 [1970] 292 Anm. 12). - Un-
+    klar, Fremdwort?
+
+      Mehrfach zusammengestellt mit indoar und dravid. Wörtern für
+    ‘mongoose’ (aia maggusa-/madgusa-.s KEWA H 545, pkt mam-
+    gusa-, hi. mägus u a. [Tu 9702]. kan munguli, murigisi u.a [KEWA
+    U 122. mit Lit}. Ved n^ soll nach Bur, BSOAS 11 (1944) 334 alte-
+    res dravid.(-ural ) *n" wiedergeben, H. Berger (in KEWA II 122, s
+    auch WZKS 3 [19591 68) denkt an letzten Ursprung in einer austro-
+    asiatischen prafigierenden Sprache (doch s KEWA 1I 545). ~ Tucci,
+    Report 95 leitet n" von einem Himalayan word for the marmot
+    (mistaken for a mongoose), na or nak“, her (s auch pipila-)
+      Bai, ALB 50 (1986) 24790. deutet n° als *narkula- und vergleicht
+    funsicheres) mp narkmar 'killer/destroyer of snakes’ [9]. - An ein
+    altes Farbadjektiv nak-uld- {TS 7,3,18,1, ua; = ,ichneumon[-col-
+    oured]*, Keith, TS 598), mit *nak-ra- (s nakra- 'Krokodil) und
+    dessen Caland-Kompositionsform *nac-i- (in ndciketas-) zusam-
+    mengehórig (?), denkt AiGr II 1,59, H 2,489.
+
+
+nákt- t. Nacht     (RV [7,71.1 πάρ jihitel, RV + [AkkSg ndktam bei
+    Nacht, NomAkkDu (*)nakta]; frühe Umformungen wie RV
+                               nakra- - NAKS                                3
+
+
+   ndktih AkkPl (nach rätrih], naktdbhih InstrPl [s.u.], InstrSg
+  naktaya: AiGr ΠῚ 233f., Schulze, KS [Nachtr] 794 und Anm.
+  4,5). - Mi., pa. nattam nachts, pkt. nakkam-cara- in der Nacht
+  wandelnd (Schulze, a.a.O. 799 und Anm. 2). - Iir., jav. upa.-
+  naxtar- an die Nacht angrenzend (LokP! °naxturusu für
+  v'torasu Vd 7,79, Bthi, Wb. 391), waxi nayd Nacht (s. Schulze,
+  a.a.0 800, MorglIFL II 531a, M. Witzel, MSS 30 [1972] 185
+  Anm. 26). - Idg. *nók"t-s NomSg — *nék"t-s GenSg ‘Nacht’,
+  vielleicht aus *ne/og"-t^ assimiliert (~ heth. (ne-ku-[uz]-zi)
+  ‘wird Abend’ < "*nég"    + -#/); heth. nekuz GenSg ‘des Abends‘,
+  gr. νύξ (vöxt-), lat. nox (noct-), got. nahts, lit. nakris, aksl. nostb
+  (fur alten Kons.-Stamm, lit. GenPl nakt-u) usw. ‘Nacht’.
+  Fraenkel 481aff. (mit reicher Lit), Frisk II 327f., III 157.
+  Lehmann 262af., Kluge-Seebold 497a; Em, Lg 34 (1958) 415,
+  Schi, KZ 81 (1967) 290ff, Oett 209f, Mh, LI 108f, Bee,
+  Origins 176, Rasmussen, Morphophon 2510, 305.
+     Dazu vielleicht ndksatra- und möglicherweise ein Teil der
+  Belege von aktü- (0. 1 40, Lehmann 375a), kaum aber akta- -
+  RV 7.104,18 naktabhih ist trotz des abweichenden Akzents nach
+  ähabhih gebildet (s. auch Schulze, 2.2.0. 794 Anm 5); die Akzent-
+  stelle vielleicht aus Asapabhih (— ved. ksapabhir ahabhisca)? Gegen
+  Benv, Orig 10 beruht naktabhih schwerlich auf *naktán- (- -r-/-n-
+  Stamm, jav. *"naxtara", gr. voxtwp nachts, lat. nocturnus nächtlich
+  [s Frisk H 328], dagegen Szem, Glo 38 [1960] 1121   ScrMin 1146f ).
+     7u wertlosen weiteren Analysen der Wurzel s. die Lit. bei WH
+  11183, Lehmann 262b, Tischler 11 306f, ferner 1. Crepajac, Ling 20
+  (1986) 670. 751         .
+    S auch u nísitá-. ~ Über RV 10,93.5 naktam s u. nápat-. 1112.
+
+
+nakra- m. Krokodil (Gopatha-Br, Pin, Mn, ep. +); nákrá- m.
+  cin Wassertier, wahrscheinlich Krokodil (YV). - Mi., ni,
+  pä nakka- m. Krokodil, u.a. (Tu 7038). - Nicht geklärt.
+
+    Annahme dravid. Ursprungs bei Bur, TPS 1946, 9 [zuletzt DED?
+  333a];    ein   dravid.   Lautwandel   soll   fernere   Zugehörigkeit   von
+  rıdkara- erklären (Bur, a.2.0. Anm 2; weitere Lit             in KEWA II
+  123)     - Zur Erklärung als Farbadjektiv *mak-rd- (~ Caland-Form
+  naci^) s.u. nakula-, mit Lit.
+
+
+NAKS, s. ΝΑ δ],
+4                          ndksatra- - nakhá-
+
+náksatra- n. Gestirn (Sterne, Sonne), Mondhaus (RV +; Krick
+  Off.); naksatriya- auf die Sterne bezüglich (AV +). - Mi., ni.,
+  pä. nakkhatta- n. Sternbild, Konstellation, u.a. (Tu[Add]
+    6913). - Nicht einmütig erklärt.
+
+       Wenn ‘Stern, Nacht-Gestirn' primär ist (Übertragung auf‘Sonne’),
+    dann wohl *nakt-ksatra- ‘Herrschaft über die Nacht habend’ (—
+    nákt-, ksatrá-), AiGr III 233, mit Lit. (s. ferner Minard, Trois
+    énigmes II 177, KEWA II 123f). - Mit naks 'erreichen, erlangen’
+    (s. NAS') wegen RV-Stellen wie 7,58,1 ndksante nákam u.a. ver-
+    bunden (vgl. die Lit. bei Minard, a.2.0., KEWA II 124); s. auch
+    Benv, OLZ 55 (1960) 10, Bur, Skr 138. - Für Zusammenhang mit
+    näka- (s. ΚΕΙ͂ΝΑ Il 124, 149) Bai, BSOAS 21 (1958) 45.
+      Nicht hierher der jav. Name tirö.nakaößa- (Mh, AirN 1/80, mit
+    Lit.).
+
+
+
+nakhá- m. n. Nagel, Fingernagel, Zehennagel, Kralle, Klaue
+    (RV +); nakhäni kar Nägel schneiden (Kau$ +), nakha-nikrn-
+    tana- m. oder n. Nagelschere ( JB +), nakhará- krallenförmig,
+    wie eine Kralle gestaltet (SB +; AiGr 11 2,858), nakhin- mit
+    Krallen versehen (SB). - Mi., nu.-dard., ni., pa. nakha- m.
+    Nagel, Klaue, nep. nahar Nügelschneider, bg. narun (< *nakha-
+    kara[na]-, s.o. nakhani kar, Tu 6915£.), dameli nawur Klaue,
+    Kralle (*nakhura- ~~ ved. nakhara-?), u.a. (Tu 6914 [mit Ver-
+    weisen], TuAdd 6914, 6916). ~ Iir., vgl. khot. adhune ‘nails’,
+    mp. np. naxun Fingernagel, baluci näkun, oss. nyx/nix Nagel,
+    usw. (Gersh, Hymn 277, Abaev II 218, Bai, Dict 181b). -
+    lir. *nak*- ist von idg. *hEng"/*hynEg" ‘Nagel, Kralle’ (~ lat.
+    unguis, lit. ndgas Nagel u.a., o. I 49) nicht zu trennen.
+
+      Aufklärungsbedurftig bleibt ir. *mdk"- statt *mág'- (s auch
+    AnttSchweb 124), das als Entsprechung der Sippe von lat. unguis
+    usw. - dazu reiche Lit bei Frisk II 399, III 162 - zu erwarten wäre.
+    Ältere Erklürungsversuche referiert KEWA H 124; der Verlust des
+    Stimmtons ist wohl im Zusammenhang mit weiteren Tenues aspi-
+    ratae in Kórperteilbezeichnungen (wie angustha-, kulpha-, Saphá-
+    u.a., Hoffm, IJ 4 [1960] 114 = HoffmA 141) zu sehen. Vielleicht
+    nakha- (iran. *nax?^) Kontamination von ülterem *naghá- (— nagha-
+    märd- [??]) usw mit einer solchen Bildung, vgl. TuAdd 6914 zu
+    konkani nankuta "Nagel < nakhá- X angusthä-, u.dgl.?
+                               ndga- - nagnd-                             5
+
+
+ndga- m. Berg (AV +; Mn, ep. + auch 'Baum?). - Pa. naga-,
+  pkt. naga- Berg. - Unklar.
+     Nach der Tradition na-ga- „*nicht-gehend“; danach Pan a-ga-,
+  ep. a-gama- ‘Berg, Baum’, Lex. a-gaccha- ‘Baum’ (AiGr II 1,37,78,
+  s. ferner ep. + acala- 'unbeweglich; Berg"). Ob das Etymon wirklich
+  in seltenem na^ 'nicht-" (s. nd!) + "ga- 'gehend' (o. I 466) liegt, bleibt
+  aber trotz sthävara- ‘unbeweglich’ (Kath +; Up + von Baumen und
+  Pflanzen) ~ sthävara- m. 'Berg' (BhG u.a.) unsicher. - Noch wesent-
+  lich weniger wahrscheinlich ist Gleichsetzung mit ahd. nahho, nhd
+  Nachen usw. (WP ἢ 340 [mit Lit.], Pok 770), die von ,,*Einbaum*
+  > „Baum“ (erst nachved.!) > „Berg“ ausgehen müßte; s. auch KEWA
+  il 125f., Lindeman, Introd 96f.
+
+nágara- n. etwa: Wohnung, Haus; Stadt (Br, Ar +; zur Bedeu-
+  tung in den ältesten Belegen s. Rau, pur 50); nagarin- m. N. pr.
+  (Br; „Städter“ [oder „Häusler“}, AiGr II 2,335). - Mi., nu., ni.,
+  pa. nagara- n. Festung, befestigte Stadt, kho. noyór Feste,
+  Burg, guj. Gir-ndr ON, usw. (Tu 6924, mit Verweisen). ~ Wohl
+  dravidisch, vgl. ta. nakar Haus, Wohnung, Palast, Tempel,
+  Stadt, ma. nakar Stadt, telugu παραγ Palast, u.a.; Bur, TPS
+  1945, 107£., DED? 314a.
+     Gegen indoar. Herkunft der dravid. Wortsippe sprechen Beleg-
+  alter und Semantik von ta. nakar, vielleicht auch etymologische
+  Verankerung im Dravid. (P. Meile, BSL 45 [1949] IV); s. noch Ross,
+  Ginger 22. KEWA ἢ 125 - Nicht vorzuziehen Ted, Word 3 (1947)
+  80 (< *np-gard- 'Mánner-Ansammlung', zur Sippe von gr ἀγορά
+  usw.; vgl. auch o. I 159, 459, 508; widerraten durch kho. noyar, s.
+  KEWA ΠῚ 742 [a.a.O. und in KEWA II 125 weitere Lit.]).
+      Vgl. JüS s.v. nágara-.
+
+
+nagná- Adj. nackt, bloß (RV +), nagndtd- f. Nacktheit (RV
+  [10,33,2] u.a.); nagnikä- f. noch nicht mannbares Mädchen
+  (Sü +; dazu Thi, KZ 78 [1963] 170ff. = KS 435ff., ferner
+  M    M. Patkar, Vàk 3 [1953] 37ff., V. Pisani, MSS 25 [1969]
+  95). - Mi., nu., ni., pa. nagga- nackt, usw. (Tu 6926, mit Ver-
+  weisen; TuAdd 6926). - lir. (s.u.), vgl. jav. mayna- nackt,
+  ferner iran. *bagna(ka)- in khot. bznaa-, buddh. sogd. flyn'k,
+  oss. begneeg nackt, usw. (Abaev I 247, Gersh, Gramm 54
+  $362, Bai, Dict 297a). - Idg. *neg"-nó- (ved. n^ = heth. *ne-
+6                         nagnähu- - naghamárá-
+
+    kuna-, dissimiliert zu *nekuma- in nekumant- 'nackt', Schi,
+    KZ 81 [1967] 295 Anm. 5, mit Lit.); vielfach durch Dissimila-
+    tion (und tabuistische Umgestaltung?) veründert, vgl. iir.
+    *nagná- > iran. *magna- = *bagna- (s.0.), arm. merk (vgl.
+    Frisk I 333), gr. γυμνός ~ λυμνός (s. Frisk, a.a.0., Lehmann
+    263a, mit Lit), an. nakinn (für germ. *nak*-na-, nach den
+    Partizipen auf [an.] -inn), lit. niogas, aksl. nags nackt (balt.-
+    slav. *nog-na- [- apreuß. nognan 'Leder'], Rasmussen, Mor-
+    phophon 1922); daneben mit -d*-/--Formantien lat. nüdus
+    (*nog*-e/o-d*o-?), air. nocht, nhd. nackt usw. - WP II 339,
+    WH II 185 (mit Lit.), Pok 769, AiGr II 2,735, Fraenkel 202b,
+    512a, Mh, Li 108, Lehmann, a.a.0., G. Bonfante, AGI 66
+    (1981) 89. Tischler IJ 307ff.
+      S. noch u. agní- (o. 1 45), nágd-. ~ Ptolemaios VII 2,18 Nayya-
+    λόγαι, ὃ σημαΐνει γυμνῶν κόσμος (Renou, Ptol 54) gibt "nagna-
+    loka- (bzw mi. *nagga-loga-) wieder.
+
+
+
+nagnáhu- m. Gárungsstoff, Hefe (YV +; s. Renou, Rituel 82). -
+    Wohl mit iran. *nagna- ‘Brot’ (christi. sogd. nyny, baluci nagan,
+    pasto nayan, mp. np. nän, u.a.; J. Harmatta, AcOHung 3
+    [1953] 2451T., Bai, Dict 179b [mit Lit.], J. Elfenbein, CompLI
+    358) zu verbinden.
+
+      Da *nagna- ‘Brot’ wahrscheinlich auf das Iran. beschränkt, ja
+    vielleicht erst inner-iran. aus einer älteren Form hervorgegangen
+    ist (s. Harmatta, a.a.O. 259, 261, Bai, a.a.0.), wäre in nagnahu- ein
+    iran. LW anzunehmen (KEWA II 126); ?*hu- entstand vielleicht
+    durch Metanalysis aus entlehntem "nagna-hvá? < iran. *"nagna-
+    x'ada- ('Brot-Würze' [Hüb, PersStud 57], np. nànx'áh, nayl[alnx’äd,
+    nay|a]nx'alán 'Anis[samen]', Eil in KEWA, 220).
+
+
+
+naghamärd-, naghárisd- m.: im AV Namen der kustha-Pflanze
+    (o. 1 381; WhiLanm 477, ZyskHealing 155f.). - Unklar.
+
+      Diverse   Vermutungen - darunter die Annahme von nagha’
+    .*Kratze^ < *nogha- "Nagel, *kratzender' (s. nakha-), Grassm
+    705 (??) - in AiGr P? Nachtr 5, प्र 1,85,327, KEWA II 127, Zysk, a.a.O.,
+    T Krisch, HS 103 (1990) 123. - Zum Verhältnis nagha" ~ nagha*
+    AiGr Il 1,131.
+                          ndciketas- - nada-                        7
+
+
+náciketas- m. N. pr. (TB +); näciketa- zu n° in Beziehung ste-
+  hend (TB +). - Nicht sicher erklärt.
+    GewiB ein aia. Kompositum, naci^ wirkt wie die Kompositions-
+  form eines *nak-rá- (doch sind dafür nur die Tiernamen nakra-
+  und nakula- herangezogen worden, s.d.), ^ketas- könnte an keta-
+  Trachten’, cétas- "Einsicht" angeschlossen werden (o. I 399, 549,
+  jeweils mit Lit) Dazu und zu anderen Deutungen (wie nd-cik"
+  ‘un-besonnen’) Minard, Trois énigmes Il 266 ($742a), H. W Bode-
+  witz, WZKS 29 (1985) 13 Anm. 32; s. ferner Dand, VedBibi III 805
+  (79.543), IV 1030 (79.630).
+
+
+nadá- (nalá-) m. Schilfrohr, Rohr (RV +), nadaka- n. Rohr des
+  Knochens (SrSü); nadvala- f. Róhricht (AVP, VS, TB; nad-
+  vant-, nadvala- schilfbewachsen, Pan; zur Genese von nad-v?
+  s. Schi, Wn 29); nala- m. Rohrschilf, Rohr (Sü +); nádi- f.
+  Pfeife, Röhre, Flöte, Ader (RV +; AiGr II 2,384,394), nadika-
+  f. Luftróhre (AV), näla- n. hohler Stengel, Röhre (ep. +). -
+  Mi. nu., dard., ni, pa. nala- m. Rohr, hi. nalä m. hohles
+  Rohr, Luftröhre, Schienbeinknochen (~ ved. nadaka-), nari
+  f. Röhre, Ader (~ ved. nddika-), usw. (Tu 6936, mit Verwei-
+  sen; TuAdd 7047). - Nicht zu trennen von RV nadá- 'Schilf-
+  rohr" (1,32,8; vielleicht auch in 2,34,3 ‘Rohr[peitsche]’; weitere
+  Vorschläge bei R. Pischel, VedStud I 183ff. [s.u. NAD]), das
+  nach Ausweis des Nu. (aSkun no ‘Rohr’ u.a. « "nada-, Tu
+  6941) und des Iran. (parth. nd Flöte, mp. (10) = /náy/, np.
+  nay I uftróhre, nay Flóte, Rohr, u.a.; Bai, TPS 1952, 61f., Joki
+  289, Nyb, ManP II 135a, Bai, Dict 175b) iir. *nadd- fortsetzt;
+  dieses ist idg. Alters (heth. nata-, nati- Schilfrohr, Trinkrohr,
+  Pfeil, luw. natatta ‘like reeds’, arm. net [GenSg net-i] Pfeil;
+  s. die Lit. in ΚΕΙ͂ΝΑ II 128, II 742; Watk, Spr 32 [1986(88)]
+  328ff.; Tischler II 283£.).
+
+    Das Etymon von idg. *ne/od-o-/-i- ‘Rohr’ war vielleicht ,*rau-
+  schend" (s. NAD); anders Fraenkel 493b. - Ved. nada- usw        ist
+  irgendwie aus dem Erbwort nada- entstanden (vgl. Watk, aaO.
+  328, 331 zu RV nadám ... bhinnam — AV nadyau ... bhinadmi,
+  nadam . . bhindántiy; kontextfrei -d- für -d- (Bur, Skr 98)? Mehr-
+  fach wurde angenommen, nadd- sei der Kreuzung eines nicht-idg.
+  Wortes mit iir *nadd- zu verdanken (s die Lit. in KEWA II 128, 129
+8                                 NAD
+
+    und bei Mh, IF 70 {1965(66)] 255 Anm. 56). - Überholt ist Herleitung
+    von nadd- aus *narda- (mit np. nal ‘Rohrstengel’, das jedoch LW
+    aus sogd. "nad ist, W. B. Henning, BSOAS 10 [1939] 98f. und 99
+    Anm. 1 = SelP 1 644f. und 645 Anm. 1; pato nara ‘Stengel einer
+    Pflanze', wohl aus ni. Quelle, Morg, Voc 53), das man mit dem gr.
+    Pflanzennamen vápün£ verbinden wollte (vgl. Frisk II 290); s.u.
+    nálada-.
+      Der Eigenname nadá- (N pr. eines Fürsten mit dem Beinamen
+    naisidhá-, SB) gehört wohl zu n° 'Rohr' (vgl. venti- m. ‘Rohr [RV +]
+    ^ N. pr. (SG +)); davon nicht zu trennen ep. + nala- m. 'Künig
+    Nala’ mit dem Beinamen naisadha- (abwegige Abtrennung von nala-
+    N. pr., das aus dravid. *nal- ‘gut, schön’ stamme, zuletzt in DED?
+    319a; s. Mh, Krat 6 [1961] 157 = AKS 184, mit Lit.), pá. nala- m.
+    N. pr. ~ Vielleicht auch iran. *nada- N. pr., s. die Lit. bei Hinz,
+    NU 170.
+
+NAD dröhnen, brüllen, schreien, rauschen (AV + [nddant-,
+    ánadatà u.a.]); Kaus. nadáy? erdröhnen machen (RV; s. dazu
+    die Lit. bei GiovStudio I 49 Anm. 86); Intens. nànad" laut
+    brüllen, laut rauschen, erdróhnen (RV +); nadd- m. Brüller,
+    Stier, Bulle (RV [1,179,4; 10,11,2; u.a.] +; daneben nada- m.
+    “Rohr”, s.u. nadá-), nadathu- m. Gebrüll, Lärm (Up), nadand-
+    m. Getóse, Schlachtgeschrei (RV 8,21,14), nadanumant- lär-
+    mend (RV 6,18,2), nddd- m. Brüllen, Rauschen (RV +); u.a.
+    (s. auch u.). ~ Mi, ni, pa. nadati brüllt, lärmt, siha-náda-
+    nadana- n. Lärm eines Lówengebrülls, usw. (s. Tu S. 399a, s.v.
+    NAD; TuAdd 11764). ~ lir., aav. nadant-, wenn etwa 'schrei-
+    end’ (Y 33,4; Hoffm, Fs Pagliaro ΠῚ 29 = HoffmA 270; doch
+    s.u.), khot. panäy- tönen, lármen (*pati-ndday’; Emm, SGS
+    70, Bai, Dict 179b, 180a, 210b). - Idg. "ned (Schallwurzel, s.
+    NARD?), wenn nadi- und die mit ihm verglichenen Gewäs-
+    sernamen zu NAD gehören; vgl. Pok 759 (mit Lit.), Frisk II
+    296.
+      Zu *ned 'dróhnen, rauschen’ auch das Erbwort für 'Schilf" (s.u.
+    nadá-)? ~ Fraglich ist Zugehörigkeit von AV 5,23,8 nadanima
+    (^mán-?); s. Wennerberg I 104, mit Lit.    - RV 5,742 nadınam be-
+    zieht sich nicht auf *nadr- ‘Rufer’, sondern gehört zu nadi- ‘Fluß'
+    (GeRV 11 79, Renou, EVP 16 [1967] 39).
+      RV 3,1,6 dnadant- wird von S. W. Jamison, IESt 4 (1981) 501 =
+    JAOS 101 (1981) 351ff glaubhaft als d-nadant- (nicht án-ad") erklärt,
+                            nadd- - nana-                              9
+
+   etwa ‘nicht falsch sprechend (bzw. handeind)’; aav. nadant- (s.0.) sei
+   “falsch sprechend’; zu einer Sonderwurzel NAD?? Oder sollte in
+  NAD ‘falsch sprechen‘ doch eine Slang-Nebenbedeutung von NAD
+   ‘dröhnen etc.’ vorliegen? [S. auch u NED', II 55].
+
+nadá- (‘Rohr — 'Brüller), s. nada- bzw. NAD.
+
+
+nadi- f. Fluß (RV +; vrki-Flexion, AkkSg nadiyam, GenSg,
+  NomAkkPi nadiyah, LokSg nadi [AiGr III 172, 179], AV 3,24,3
+  wohl NomSg nadih [~ nadi, AiGr ΠῚ 174, 179], u.a.); nad(i)yd-
+  dem Fluß entstammend (RV 2,35,1, TS + [s. AiGr II 2,396,
+  824]), nädeya- dss. (YV +). - Mi., nu., ni., pa. nadi- f. Fluß, pj.
+  nai f. dss. aSkun nédi u.a. (*nandi-, Tu 6943), etc. (Tu 6408
+  und a.a.O.; TuAdd 6943). ~ lir.? Vielleicht enthält jav. anaidim
+  (Vd 6,40) jav. *naiói- "Wasser, Fluß’ (s. die Lit. in KEWA II
+   130 [auch zu Vd 6,1 anaióiia]). - Wohl als „rauschend, brül-
+  lend* zu NAD (— AV 3,13,1); vgl. FluBnamen wie Néda
+  (Arkadien), N&öwv (Messenien), nhd. Nette, Netze, u.a. -
+  Pok 759, AiGr If 2,383,384, KEWA II 130, Frisk II 296, III
+  155 (jeweils mit Lit.).
+
+
+naddhá-, naddhi-, s. NAH.
+
+
+nádbhyas, s.u. napat-.
+
+
+NADH, s. NAH.
+
+
+nana- f. Mutter, Mütterchen, Mama (RV 9,112,3). - Lallwort;
+  Vergleichbares im Mi., Nu., Dard., Ni, s. bes. kho. nan
+  ‘Mutter’ (= tat ‘Vater’, vgl. RV, 8.8.0. ratdh ... nana; o. I
+  616 [mit Lit.], Tu 7059f., 14661, TuAdd 7059), im Iran. (np.
+  nana, Sughni nan, waxi nan ‘Mutter’ [~ tat "Vater, u.a.;
+  HomNeupEt 234, W. Schulze, SbAkBerlin 1916, 16 = KS 238,
+  Bai, Dict 179b, Morg, Shughni 49b) und in anderen idg.
+  Sprachen (z.B. serbokroat. nana, nena 'Mutter'; WH Il 175,
+  KEWA II 131, Frisk II 304, Tischler II 271). - S. das Folgende.
+10                         ndnandar- - NAND
+
+nanandar- f. Schwester des Gatten, Schwägerin (RV 10,85,46
+     *dari, AV 14,1,44 “dur; s. G.-J. Pinault, DialLitindA 47ff.,
+     mit Lit.; Lex. nanandar-). - Mi., dard., ni., pa. nanandar”,
+     pi. nanán, nanad f. Schwester des Gatten, usw. (Tu 6946,
+     mit Verweisen; TuAdd 6947, H. C. Patyal, 113 27 [1984] 126f.). -
+     lir, vgl. pasto nandrör, ndrór usw. ‘Schwester des Gatten’
+     (*nandr- < nanandr- + -ór, Motg, Voc 532). - Beruht wohl auf
+     einer Lall- oder Koseform des Typus nana-.
+
+        Vielleicht ist von *ndnàn?^ auszugehen, das nach einem asso-
+     ziierten Verwandtschaftswort umgeformt sein kann: nach svásar-
+     "Schwester (*ndnànr- > °ndr-, AiGr II 2,501, mit Lit; KEWA II
+     131) oder nach yátar- ‘Frau des Bruders des Gatten’ (*nanan-tar-,
+     8  Pinault, a.a.O. 508). Aus idg. “nene-Ayn-r- (~ 'nen-ho- > gr.
+     vevvog ‘Oheim’) leitet F Bader, LarTheor 31,42f. n? her
+       Entlehnung aus dravid. oder gar ural. Quelle (s. die Lit. in KEWA
+     1 131, 111 743) ist - trotz DED? 322a, Bee, MSS 34 (1976) 16 ~ nicht
+     ernsthaft zu erwägen.
+       NAND hat wohl nicht auf die Entstehung von n^ eingewirkt;
+     späteren Assoziationen sind Umformungen wie nandd-, nandini- f.
+     "Schwester des Gatten' (Lex.) zuzuschreiben.
+
+
+
+NAND sich freuen, Freude empfinden, beglückt sein (RV, AV +
+     [ndándati]; s. 1. Gonda, AcOr 21 [1953] 819. = SelStud U
+     310ff., Gotó 192), Kaus. nanday® (Up +); d-nanda- m. Freude,
+     Vergnügen, Wonne, Seligkeit (RV +), nánda- m. Glückselig-
+     keit, Freude (AV +: ep. + N. pr.), nandáthu- etwa: Erfreuer
+     (TS 5,7,19,1), d-nandin- wonnig, glückselig (AV +), prati-
+     nándana- n. Begrüßung, freundliche Aufnahme (AV), nändi-
+     f. (yám, ^yé) Freude, Befriedigung (RV +), nándaná- n. Ort
+     der Freude, Paradies, Lustgarten (SV +; AiGr II 2,133). -
+     Indoar. *nanda- m. N. pr in der persepolitanischen NU
+     (Schm, HS 101 [1988] 85). - Mi, ni., pa. ananda- m. Freude,
+     Segen, N. pr., nanda- m., nanda- f. N. pr., nandi- f. Freude,
+     pkr. nandana- n. Lustgarten Indras, nanda- m., nanda- f. N.
+     pr.; usw. (Tu S. 399b, s.v. NAND). - Nicht sicher erklärt.
+
+         Nach Leumann, Neuerungen 35 — 107 Anm. 2 aus MAND ent-
+     wickelt (vgl. RV 10,71,10 nandanti ... sákhya ~ 1,26,5 mandasva
+     sakhyasya, „wohl   . lautliche Fernwirkung als kombinierte As- und
+                                 ndpat-                                   11
+
+  Dissimilation nach emem Praeverb mit Labial“, AV abhi-nand ~
+  RV abhi-mand, Leamann, a.2.0.). Dagegen Gotó, a.a.O. - Sicher
+   nicht zu NAD (vgl. die Lit. in KEWA 1I 132; Kui, Nas 140f.). -
+  Eine unglaubhafte dravid. Deutung (Bur, TPS 1946, 9) ist von ihrem
+  Urheber offenbar zurückgezogen worden (Bur, BSOAS 38 [1975] 67
+          < idg. *nondi- {2}
+   ved nandi-
+
+
+näpät- m. Abkómmling, Enkel (RV +; NomSg näpät, AkkSg
+  napatam, NomPi napätas, u.a.; *napt- [s.u.] in RV 10,60,6
+  nádbhyas für die Enkel’ < *nápt-bh^, Schi, Wn 29: daneben
+  jüngeres náptar- [nach den Verwandtschaftswörtern auf ^tar-],
+  RV náptr-à, náptr-e, ndptur, naptr-bhis, Kath [TS] ndptar-am,
+  Br naptfn, usw. [AiGr III 198]; pra-napát- m. Urenkel (RV
+  8,17,13 VokSg pránapát); napti- f. Tochter, Enkelin (RV +
+  vrki-Flexion, AiGr HI 170, 183), napti- f. (AV), auch naptri-
+  (> naptar-,s.0.; AVP +, AiGr II 2,694£); von napti- der
+  AkkSg naptiyam RV 3,31,1 (anderes in AiGr III 834 bzw. bei
+  R. Normier, IF 85 [1980(81)]        51 Anm. 31 [napt-iva- ‘zur Nach-
+ kommenschaft gehörig, Sohn’])? Umformung von (*)naptiva-
+ nach naptar- in Br apo-naptnya-, MS + apo-naptriya-, Kath
+ apäm-naptriya- ‘den apam napät- {s.u.] betreffend". - Mi
+ nu., ni., vgl. Fortsetzer von ndpät- (a&kun nawd Enkel, usw
+ Tu 6954), ndptar- (pa. nattar?^ Enkel, usw.; AiGr III 198
+ Tu[Add] 6955b), napti- (°tri-) f. (pkt. natti-, a&kun not Enkelin
+ u a.; Tu 6955a) und "pranapt? "Urenkel(iny (Tu 8522f.). -
+ lir, aav. nafsu bei den Enkeln (Y 46,12; *napt-su, s.o. RV
+ *nápt-bhyas), jav. apqm napät-/naptar- "Enkel der Wasser’,
+ Name einer Wassergottheit (= ved. apam napat; dazu E. B
+ Findly, Numen 26 [1979] 164ff.,          mit reicher Lit ), NomSg
+ napa, napasa (t^), AKkSg napätam, naptdram GenSg
+                                                  najaörö
+ ua.     (s. AiGr HI 233, mit Lit), ap. napá m NomSg Enkel
+ mp.     nab,   np.   nawa, nawäda,   nawäsa Enkel,     u.a   (s.   Hüb
+ PersStud 102f., Gersh, Gramm 139, Bai, Dict 173a); jav.
+                                                         napti
+ f. NomSg Enkelin (Mh, Fs Leroy 149, mit Lit.); aav. naptiia-
+ etwa:    zur Nachkommenschaft gehórig (Y 46,12;
+                                                          Humb,      Ga
+ II 71, Kel-Pir I 5, II 174), jav. nauua. naptiia- n.
+                                                        'the kinsmen
+of the nine degrees of kinship of a family’ (Humb
+                                                  EIfSkj,
+12                         ndpumsaka- - NABH
+
+     Gà II 184f.), naptiia- m. N. pr. (Mh, AirN 1/64; s.o. zu RV
+     naptiyam [?}). - Idg. *népót-/*nept- ‘Enkel’ (s.u.), *nept-ih;- f.
+     ‘Enkelin’ (s. Mh, Fs Leroy 149; Szem, Fs Mitxelena 270 und
+     Anm. 33 = ScrMin 1073 und Anm. 33), *neptiHo- ‘zur Nach-
+     kommenschaft gehörig’ (Normier, a.a.0.; Pet, Lar 136 Anm.
+     87); lat. nepós, nepót- m. Enkel(kind), Nachkomme (spát
+     Neffe’), lit. (alt) nepuotis (GenPi nepociy) Enkel, Neffe, ae.
+     nefa Enkel, Neffe, lat. neptis f. Enkelin (spät Nichte’), air. recht
+     ‘neptis’, ahd. nift(a) Nichte; gr. ἀνεψιός m. Vetter, serb.-ksl.
+     ποία)! Neffe (Frisk 1 106, III 32, Pet, a.a.0.); u.a. - WP ἢ
+     329f. (mit Lit.), Pok 764.
+       Zum Etymon von *népót- usw. s. die Lit. bei Feist 377a, WH II
+     162, AiGr II 2,47,269. Über die semantische Seite (in mehreren Spra-
+     chen 'Neffe' ~ "Enkel') vgl. Szem, Var 77,48ff. (mit weiterer Lit.),
+     C. Scott Littleton, JIES 1 (1973) 425 Anm. 3, Bee, JIES 4 (1976)
+     43ff., S. O'Bnen, JHES 4 (1976) 308 Anm 1; s noch VWind, Fs
+     Szemerényi 923f., Kluge-Seebold S00bf. (mit Lit.); F. Bader, JIES 14
+     (1986) 75ff. (1C 32b, Nr. 88 ~ 625).
+       Hierher(?) RV 10,93,5 ndktam (apám), wenn „verlesen oder miß-
+     verstanden für [*]náptam [‘den Apam Napat(?)’} ... unregelmaBiger
+     Akk. von ... πάρι" (GeRV HI 294fa], zur Stelle; s. auch Renou,
+     EVP 4 [1958] 127, KEWA HI 742) - Andere (wie OldNot II 300)
+     finden in dieser „fast unverständlichen“ Strophe (Ge, a.a O. 293[b])
+     nur einen weiteren Beleg von adktam ‘bei Nacht’ (o. II 2).
+
+
+
+napumsaka-, s.u. ná', pümárüs-.
+
+NABH bersten, zerspringen, entzweigehen (RV [ndbhantam],
+     AV [prá nabhasva, nabhatäm)); Kaus. nabhay" (Br), nambhay"
+     (AVP, YV +) bersten machen. - Ein Maithili-Fortsetzer von
+     un-näbha- ,,*tearing open“ (kL N. pr), Tu 2106? - Alles Wei-
+     tere ist unsicher.
+
+       Vereinzelte ved. Nomina sind auf NABH bezogen worden, so die
+     Wurzelbildungen RV      nabh-   (Zerbrechung' oder "Wolke,      MS
+     näbhräj-, s. die Lit. bei Schi, Wn 29f.) und nábh- ("Öffnung’, nach
+     anderen ‘Wolke’, *Nabel u.a, s. Schi, a.a.O 30); da die Kontexte
+     keine Entscheidung zulassen, kann also auch Zugehöngkeit dieser
+     Wörter zu iir *nab* 'befeuchten' (s. ndbhas-) oder zu ndbhya-
+     etc. vorliegen Zu ersterem wohl RV nabhanü- m., ’nü- f, wenn
+                           ndbhas- - näbhya-                         13
+
+  ‘Quellwasser, Wildwasser ' (GeRV I 444, 11 67; bei Renou, EVP 10
+  [1962] 93 Erwägung von ‘crevasse’ [NABH)]}, zu NABH am ehesten
+  RV nabhanya-, etwa ‘hervorbrechend, hervorstürzend, davonstür-
+  mend’ - Schwerlich hierher dbhri-, 5.0. I 94.
+        Die Erwägung glottogonischer Zusammenhänge von NABH 'ber-
+  sten‘ mit nábhas- ‘Wolke’ oder nabhya- ‘Nabe’, nabhi- ‘Nabe, Nabe!’
+  (Lit in KEWA II 134) ist müßig.
+    Glaubhafte außer-indoar. Anschlüsse an NABH scheinen nicht
+  vorzuliegen; s die Lit. in WP 11 330, KEWA II 134, III 743
+
+näbhas- n. Feuchtigkeit, Wolke, Gewölk, Nebel (RV +), nabhasi
+  Du Himmel und Erde (AV; Mn, ep. + nabhas- ‘Himmel’,
+  AiGr, IG 65); nabhasmäya- (RV), nabhasvant- (RV +) wasser-
+  reich, feucht, dunstig, nabhasyd- neblig, dunstig, m. Name
+  eines Monats der Regenzeit (RV-Kh +), u.a. - Mi., nu., dard,
+  singh., pa. nabha(s)- n. Nebel, Wolke, Himmel, aSkun nai
+  Wolke, usw. (*nabhalikà-, s.u. idg. *neb*-el-2); Tu 6955c,d. -
+  lir.. aav. nabah- n. Wolke (Y 44,4 nabás-éà AkkP! ‘und das
+  Wolkengebüude'). - Idg. *méb'-es- n. "Feuchtigkeit, Wolke,
+  Nebel’ (woraus vereinzelt [s. auch o. in AV, Mn +, Pä.] 'Him-
+  mel’), gr. νέφος n. Wolke, Gewölk, heth. /nepis-/ n. Himmel,
+  aksl. nebo, nebes-e Himmel; zu *neb^ 'befeuchten' (αν. nab- in
+  napta- feucht [s.o. I 70], aißi.naptim befeuchtend, vgl. auch
+  Bai, Dict 18b; aber gr. συν-νένοφεν ‘hat sich umwölkt? ist,
+  gegen AiGr II 2,228, kein Fortsetzer des alten Verbs, sondern
+  innergriechische Rückbildung: Frisk H 309), wozu eine andere
+  Ableitung, *neb*-el- (s.o. *nabhal" in Nu.-Dard.?), vgl. gr.
+  νεφέλη f. Wolke, lat. nebula f., ahd. nebul m. Nebel, u.a.
+      Vgl Frisk II 313, ΠῚ 156, mit weiterer Lit.; Schi, Wn 30, Nowicki
+  o6f, Tischler Η 3138. ~ Fraglich bleibt die Zugehörigkeit weiterer
+  ved Wörter, wie nábh-/nábh-, wenn "Wolke' (7), nabhani-, "ni-; s u.
+  *     ABH. - Sicher hierher hingegen schwundstufiges *nb*- in abhtrá-
+  in I 94), ferner die nicht alte Hochstufenbildung dmbhas-? (I 101);
+  «gl    AnttSchweb 143f., mit Lit.
+
+
+nabhaka- N. pr., s.u. nábhya- उ 14).
+
+
+nabhya- n. wohl: Nabe des Rades (RV +; zum Sachlichen s.
+  »parreboomChar 123, mit Lit), nabhya-stha- etwa: in den
+14                          nübhráj- - NAM
+
+     Naben befindlich (SB; Sparreboom, a.a.0.); nabhi- f. Raa
+     nabe, Mittelpunkt, Nabel (des Leibes, der Welt), Ursprung,
+     Verwandtschaft, Sippe (RV +); *nabhd- “Nabel, Verwandt-
+     schaft’, vorausgesetzt durch den Mannesnamen näbhä-
+     nedistha- (RV {10.61.18}, TS +; su. Tir). - Mi, nu.-dard,,
+     ni., pa. näbhi-, *bhi- f. Radnabe, Nabel, usw.; Tu 69556, 7062
+     (mit Verweisen), TuAdd 7062. - Er., vgl. jav. nabänazdista-
+     nächstverwandt    (=   ved.   "mabhä-nedistha-,   vorausgesetzt
+     durch näbhäned? N. pr.; Bthl, Wb. 1040, AiGr II 1,235, Hoffm,
+     Airan 8 = HoffmA 65), ndfa- m. Nabel, Ursprung, Blutsver-
+     wandtschaft, mp. náfag, np. näfla) Nabel, parth. n'p, mp. ndf
+     Familie, oss. digor na/(f)e Nabel, usw. (Abaev II 149, mit
+     Lit., Bai, Dict 181a, Bielmeier, Unters 199; Bthl, GIrPh 1 1,10,
+     Hoffim, a.a.0. und KZ 79 [1965] 238 = HoffmA 338, Bee, I)
+     14 {1972} 73 Anm. 4). - Idg. *hneb"/*h;nob"/*h,nb^- "Nabel
+     ~ (Rad-)Nabe’, vgl. apreuß. nabis Nabe, Nabel, ahd. naba =
+     nhd. Nabe, ahd. nabalo = nhd. Nabel, gr. ὀμφαλός m. Nabel,
+     Nabelschnur, lat. umbilicus m. Nabel, u.a.; Frisk II 391f.
+     (mit Lit), AnttSchweb 123£, Bee, Dev 44, Rix, Gramm 69,
+     Kl, MSS 37 (1978) 100, R.-P. Ritter, MSS 42 (1983) 19101,
+     195 Anm. 11, Mh, KZ 100 (1987) 104 und Anm. 80 (mit Lit.),
+     D. A. Ringe, LarTheor 430f.
+
+       Nicht sicher ndbh- Nabel (7) in RV 9,74,6 (Hoffm bei Schi, Wn
+     30); s.u. NABH.                                    .
+       Von *nabha- (= jav. nabá^) ~ vgl. o. den Namen nabhd-nédistha-
+     (~ iran. *naba-brzána- N. pr, Mh, OnP 210, Hinz, NU 1707) - ist
+     vielleicht der Eigenname nabháka- (RV 8,40,45 nabhákavdt ‘wie
+     n", 841,2 {u.a} nábhákd- "Nachkomme des n°, AiGr Il 2,266)
+     abgeleitet.
+
+
+nabhraj-, s.u. NABH, o. 11 12.
+
+
+NAM sich neigen,sich beugen, etwas neigen, beugen (RV [nama,
+     namanti, ánamat, námate, namante u.a] +; zu den Belegen
+     und zur Bedeutung [primär intransitiv] Goto 1931T., mit Lit.);
+     Perf. nanäma beugt sich, neigt sich, neme hat sich gebeugt
+     (RV); Aor. anán (Kath), anamsata (Br), anamsit (VdhSü),
+                              NAM                                  15
+
+
+Konj. narisai, namsante (RV; Narten, Aor 158f., 188); Fut.
+namsyati (Br); än-ä-nata- ungebeugt, unbeugsam (RV), dpa-
+nota- auswärts gebogen (Br), ndntva- zu beugen (RV), ni-
+nám-e niederzubeugen (RV); Int. ndmnamiti neigt sich (RV +),
+námnate beugt sich (RV 1,140,6; s. HoffmA 571 Anm. [6]),
+nánnamat sich (mit den Zungen auf- und nieder-)beugend
+(RV 8,43,8), ku-nannamá- f. wohl Name einer Dämonin, etwa
+‘die schlimm Beugende’ (RV 10,1367; s. AiGr 11 2,84, Hoffm,
+IF 60 (1952] 262 = HoffmA 43), Kaus. namdy^ niederbeugen
+(RV, AV), namayisnu- beugend, sich beugen machend (RV
+820,1), ninamas du beugtest weg (RV 8,24,27 [s.u.]; Jamison,
+4ha- 155£); sam-nám- f. Zuneigung, Gunst (AV), sam-nati-
+f Achtung, Wohlmeinen (AV +), d-námin- unbeugsam (RV),
+ua, uber namrá- s. bes. - Mi, dard., ni., pa. namati beugt,
+usw, (Tu S. 400a, s.v. NAM; TuAdd 788, 6956, 7068). ~ lir.,
+vgl jav. fra ... namante sie fliehen, vi... nàmaiieinti sie trei-
+hen auseinander, khot. ha-nam- ‘to bend, bow down’, mp.
+fra-ndm-/°naftan ‘to lead, conduct, promote’, usw. (s. Emm,
+SGS 146, Kel, NR 180, Verbe 115, Bai, Dict 173af.). ~ Idg.
+"nem, vgl. toch. AB nám- sich neigen (VWindTokh I 313,
+mit Lit.).
+    Weitere Anschlüsse an idg *nem ‘beugen’ (z.B. Wörter für ‘Tal’.
+५   KEWA ἢ 129, 136) sind unsicher. Von *nem 'zuteilen' (vgl.
+ndmas-) ist *nem 'beugen' in der Argumentation getrennt zu hal-
+ten, jedoch ist ursprüngliche Identitát der beiden Wurzeln als Denk-
+möglichkeit nicht auszuschließen (s die Lit bei Frisk II 302, 303f.,
+111 156. Schmeja, Interpr 18 Anm. 6).
+    Belege von NAM (dnamam, nanámas, namäy’, ninamas) mit
+vidhar-, vadhasnd- 'Mordwaffe' (RV 1,165,6; 1,174,8; 7,6,5; 8,24,27,
+43,97.15) werden gemeinhin als 'parieren, abwenden < wegbeugen’,
+Kaus "weichen machen < wegbiegen' u. ühnl aufgefaBt (s GeRV
+1 239, 253, 11 187, 333, HI 96, Renou, EVP 10 [1962] 55,115,13 [1964]
+57), W. P. Schmid, IF 64 (1959) 113ff. nimmt hier ein nam? ‘schlagen’
+in, das mit Iranischem (v.a. oss. nmamyn/namun 'schlagen'; Schmid,
+4aO0 117, Abaev II 169f,, Bielmeier, Unters 201, Kel, NR 180) ver-
+hindbar sei (Zweifel bei Gotó 194 Anm. 364).
+  Nicht sicher übersetzbar RV 3,39,6(b) ndme LokSg (vgl. GeRV
+I 382. zur Stelle); für etymologische Schlüsse (s. KEWA II 136
+Aum *, Schierath ἢ 162b) ist च" ungeeignet.
+16                            námas- - námi-
+
+námas- n. Verehrung, Ehrerweisung, verehrungsvolle Begrü-
+     Bung (RV +); namasänd- huldigend (AV); namasyd^ Vereh-
+     rung bezeugen (RV +), namasya- f. Verehrung, Huldigung
+     (RV +), namasyü- verehrend (RV; s. AiGr II 2,244, 0. Car-
+     dona, SH 5/6 [1980] 438); namasyd- verehrungswürdig
+     (RV +); námasvant-, namasvin- ehrfurchtsvoll (RV; s. AiGr
+     II 2,918). - Mi., ni., pà. nama(s)- n. Verehrung, namassati
+     verehrt, u.a. (Tu 6958fF.). - lir., aav. jav. namah- n. Verehrung,
+     Huldigung, Ehrfurchtsbezeugung, jav. namah- n. Darlehen
+     (s.u.), aav. namaxiiamahi wir erweisen Verehrung (jav. ^mahi,
+     s. Narten, YH 229; < iir. *namas-id^, ved. namasyd^, Hoffm-
+     Narten 53), aav. namax"aiti- f. mit Verehrung versehen (ved.
+     namasvant-; zum Lautl. s. Hoffm-Narten 79), mp. np. namäz
+     Verehrung, Gebet, parth. nm'c, man. sogd. nm’c Verehrung,
+     u.a. (vgl. Morg, Voc 52, Gersh, Gramm 152, Nyb, ManP II
+     135b); s.u. - Idg. *némes- n. ‘Zuteilung’ (— av. namah- “Ver-
+     ehrung, Huidigung' und ‘Darlehen’), gr. νέμος n., lat. nemus
+     n. heiliger Hain ('*Zuteilung' an die Gottheit); zu idg. "nem
+     "zuteilen' (gr. νέμωλ.
+
+       Hoffm in KEWA Ul 743 und bei Kel, NR 180 Anm. 3, E. Tichy,
+     Glo 54 (1976) 74 Anm. 4; s. auch LambAdi 215 Anm. 6. Iir. *'námas-
+     ist nicht „*Verneigung“, zu *nem-: NA M (s.d.); die tir. Gebetshaliung
+     war aufrecht. Vgl noch namrá-. - Älteres in AiGr 112,934, KEWA
+     If 136f., III 743, Nowicki 67f.
+        Tir. *námas- erscheint in diversen dichtersprachlichen Textfiguren.
+     so in uttandhasta- námasa (o. 1213), rtám ... námasá (o. 1 255).
+     in ved. namas te = av. namaso,tói, °sa.té (Schlerath II 160a, Hoffm.
+     Inj 170 Anm. 121), ved. ndmas- bhar = jav. namó bar (Schm in
+     KEWA ΠῚ 743), ved ndmasá miyédhah — aav. miiazdam ... namanhä
+     (Schlerath II 154b); vgl. ferner Schierath TI 157a, 158b, Benv, Gs
+     Renou 75
+
+
+
+námi- τὰ. Name eines sagenhaften Königs, eines Verbündeten
+     Indras im Kampf gegen ndmuci- (RV, Br NomSg "i, RV AkkSg
+     ^m, InstrSg "yd; AiGr H 2,407). - Nicht klar.
+
+       Nach AıGr ἢ 2,405 primär ein Abstraktum (neben namrá-).
+     vgl sdci- : sakra-.
+                            námuci- - NAY!                          17
+
+
+namuci- m. Name eines von Indra und den Asvin bekämpften
+  Dàmons (RV +). - Pà. namuci- m. ein Name des Mära. - Nicht
+                  hi
+
+  klar.
+      Nach der Tradition ná-muci- (berechtigte Zweifel in AiGr II 1,78,
+   IL 2,296, mit Lit.). - Beziehung von nám-uci- auf NAM (s. AiGr II
+  2,547) ist leere Möglichkeit.
+
+namurá-, s. ná|, o. Il 1.
+
+namrá- Adj. untertan, ergeben, demütig, unterwürfig (RV [10,
+  49,5] +). ~ ML, ni; s. Tu 6964, 7331. ~ ir., jav. namra.vac-
+  ehrerbietige Worte sprechend, dazu jav. ngmiigsu- mit zarten
+  Asu-Pflanzen (o. I 37), aav. nqmista- am besten verehrend
+  (Y 36,2; Narten, YH 147 Anm. 49), mp. np. narm sanft, de-
+  mütig, parth. nmr sanft, man. sogd. nımr- demütig, sanft; u.a.
+  (Henning, BBB 97 = SelP I 511, Gersh, Gramm 77, Bai, Dict
+  192b).
+     lir. *namrá-, gemeinhin als '*biegsam' zu NAM gestellt (Narten,
+  à a O.), gehört eher mit dem davon zu trennenden ndmas- zusam-
+  men ( namrd- = djas- : ugrá- etc., AiGr I1 2,852; s. auch die Caland-
+  Komp.-Form jav ngmii?, Superl. aav. nqmista- [zu -g- Narien, a.a.0.,
+  terner Flattery-Schwartz, Haoma 114], vel Y 362 namistahiia
+  namanhä).
+
+
+MAY’ führen, lenken, leiten (RV [ndyati, ánayat, dnayatd usw.)
+ +), Perf. nindya (RV +), ninithds, Opt. niniyät (RV; Joachim
+  102 mit Anm. 260); Aor. anaisam (MS), nais (MS, TA),
+  anait (AV +), naista, anesata (RV; u.a., Narten, Aor 162f.),
+  Konj     nesat, nesati, nesatha (RV), Imp. nesi (RV +, AV +
+  nesa; Narten, Aor 163), nethá, dnitam (RV; Narten, Aor
+  164, Joachim 102f.); Fut. nesyati (AV +); nita- geführt (RV +),
+  nesani zu führen (RV); Pass. nivdte (RV +), Int. neniyd?
+  (RV +), Desid. ninis? (RV +); °ni- führend, Anführer (z.B.
+  RV + sena-ni- m. Heerführer, RV + grama-ni- m. Heer-
+  bannführer fo. 1 507], RV rza-ni- [-ni-, AiGr HI 187] das Rta
+  führend; u.a., AiGr II 2,39), pra-ni- f. etwa: Förderung (RV
+  [3.38,2]; m. Führer, AVP +), nayistha- am besten führend
+18                                NAY!
+
+     (RV), sam-nayd- zusammenführend (RV), sam-nayana- n. das
+     Zusammenführen (SrSü), náyá- m. Führer (RV; s. auch Bai,
+     BSOAS 21 [1958] 534, KEWA III 745 und Anm. ἢ), (?)niti-
+     f. Führung (st-niti-, su-niti- gut führend, RV +; rju-niti- f.
+     rechte Führung, RV; sahásra-niti- tausend Wege habend,
+     RV; u.a.), nithd- n. Führung, Handlungsweise, Weise, Lied
+     (RV), nithä- f. Mittel, Kunstgriff (RV), netár- m. Führer, Len-
+     ker (RV +), netrá- n. Führung, Leitung (AV [s.u.]), nemann-is-
+     etwa: die Führung suchend (RV 1,562; Wennerberg I 1070);
+     u.a, (s. auch unten). ~ IAV *?nr-, s.u.? - Mi, nu., dard., ni.,
+     pa. nayati, neti führt, d-neti bringt, holt, waigali ana Imp.
+     (~ ved. d nay), $umaßti ni- führen, hi. parni f. Braut (~ ep.
+     pari-nita- geheiratet), usw. usw.; Tu S. 425a (s.v. NJ’), TuAdd
+     1174, 6966, 7544, 7828, 8526, 8532, 11767. ~ τι, aav. naesat
+     wird führen (Y 31,20 — ved. nésat; s. Narten, Aor 162, 163
+     und Anm. 448), jav. naiieiti führt weg, u.a, (s. Kel, Verbe
+     120), aißi.niti- f. das Herzuführen, ratu-naiia- m. Laie (‘unter
+     der Leitung des 7^ stehend’, Bthl, Wb. 1505; unsicher jav.
+     ?ni- 'zuführend', Kel, NR 323), ap. anaya er führte, brachte,
+     anayatä er wurde gebracht, mp. nay-, nidan führen, kurd
+     a-nin bringen, zuführen, u.a. (Benv, Hel 37, Bai, Dict 18b). -
+     Idg. *neiH, vgl. heth. nai-, ne- führen (Akt. 2. Sg. (na-it-t),
+     3. Plur. (ne-ja-an-z), (ne-e-an-zi), Stativ 3. Sg. (ne-e-a-rD usw.,
+     idg. *neiH-e/o- = ved. ndy-a-); Benv, a.a.0. 33ff., Oett 460f.,
+     Eich, Hethldg 50 Anm. 16, F. O. Lindeman, Hethldg 153f.,
+     Gotö 197, Tischler IL 255ff. (mit weiterer Lit.), Catsanicos,
+     Recherches 80 Anm. 8.
+        RV 1141,12 nésatamaih ‘mit den besten Führern' ist Augen-
+     blicksbildung nach dem Aor.-Konj. nésat; AiGr, IG 6, II 2,598, -
+     RV nithá-, ntthä- sind wohl wie ?niti- ‘Weg’ nur auf NAY'/ni zu
+     beziehen; ein Einfließen von *ni-i° 'hineingelangen' erwágt Renou
+     EVP 2 (1956) 28 Anm. [4] (vgl auch KEWA II 172). - S. ferner nemi-
+       Für netrá- n. ‘Führung’ (AV) erscheint seit Kaus, Up, Mn die
+     Bedeutung ‘Auge’ (vgl. auch ep. + nayana- n. 'Leiten, Führen’ und
+     ‘Auge’); pa. netta- ‘Auge’ usw. (Tu 7587). Wahrscheinlich ist dies
+     eine Sonderentwicklung aus "Führung? (vgl. Szem, Fs Pagliaro III
+     238 = ScrMin 1369, mit Lit,     Hinweis auf heth. IGIP! ^ थ nai-
+      turn one's eyes“ und auf pkt. niai ‘sieht’; EiIMeth 8 Anm. [4]) und
+                                 nar-                                 19
+
+
+  keine Bildung zu einem nay". ‘scheinen, leuchten’ (s. die Lit. bei
+  Szem, 8.8.0. 238 Anm, 3 = 1369 Anm. 3). Zu beachten bleibt die
+  iran. Reimbildung jav. ἀσίθγα- n. ‘Auge’ (o. 1 777, s.v. DHA y?).-
+  Uber "παν/ni- 'buitern' s.u. návanita-.
+     lir. Alters ist ved. dsvam ... nay? ‘das RoB führen’ (einschließlich
+  RV 1,173,3 dsvo nayamänah, s. Goto 197) — jav. aspa ... naii"
+  (vgl. Gersh, Hymn 195f., Kel, Verbe I7£) ~ ap. asam fränayam;
+  im IAV vielleicht *asva-ni- ‘vom Roß geführt’ (mit passiver Bedeu-
+  tung von °ni-, AiGr II 2,8), s. Benv, 2.2.0. 36 Anm. 3, Mh, Mythos
+  33 Anm. 106 = AKS 70 Anm. 106 (mit Lit.) - Ved baddhdm nay’
+  "jemanden gefesselt abführen' ~ jav. bastam naii" ~ ap. basta anayata
+  (Gato 197 Anm. 376; Schm, Noten 74).
+
+
+ndr- m. Mann, Mensch, Held, Krieger (RV + [AkkSg naram,
+  DatSg ndre, NomPi náras, AkkPl πῆι, GenPl naram (~ *ndram
+  in adrasdnisa-), nmám, LokPl nrsu u.a.]; der NomSg "πᾶ
+  fehlt in der AS, sofern nicht in nänä erhalten; AiGr III
+  23.211, 320, E. Pirart, AuOr 7 [1989] 235), jünger ndra-
+  m (AVP +; durch Umdeutung des AkkSg ndr-am als ndra-m,
+  AiGr Il 211, 212); nári- f. Frau, Ehefrau (RV + [auch "ri-,
+  AiGr III 184]; AiGr II 2,416,935, Szem, Var 77,73); nar(i)ya-
+  mannhaft, männlich (RV +); nrmnd- n. Mannhaftigkeit,
+  Manneskraft, Mannestat (RV +; s. Schm, Di 107f., 0. 1 753);
+  vgl. auch unten. ~ Mi, nu., ni, pa. nara- m. Mann, näri- f.
+  Frau, usw. (Tu 6970 [mit Verweisen]. ~ lir., aav. jav. nar- m.
+  Mann (aav. NomSg πᾶ, AkkSg narém, DatSg narói, GenSg
+  nora’, NomPl naró, GenPl nargm-£ä, jav. VokSg nara, usw.;
+  Jav auch narö NomSg, nara VokSg, s. AVP + nára-), aav. jav.
+  nairi- f. Frau, Ehefrau, jav. nairiia- männlich, mp. np. nar
+ Mann, männlich, mp. närig Frau, Ehefrau, nerög, np. néró
+ Kraft, khot. ndrd Ehefrau, parth. nr mannhaft, heldisch, baludi
+ nar männlich, oss. nei männlich, u.v.a. (Abaev II 166f.,
+ Kel, NR 386ff., Bielmeier, Unters 200f., Bai, Dict 177af.,
+  180b, Narten, YH 276ff.). - Idg. *innér- ‘Mann’ (ür. *Hnár-,
+ gl.    *V-Hnar" = παν, aav. kamnänar- ‘mit wenigen Män-
+ nem’, αν. usmänara- m. N. pr., s. auch u. visvänara-,
+  sundra-, Mh, AirN 1/85, Ll 134 und Anm. 153, Krat 33 [1988]
+  10 Anm. 60), gr. ἀνήρ, arm. ayr, neuphryg. avap, osk. ner-
+20                           naráka- ~ nárásdmsa-
+
+(GenPl         ner-um) Mann, kymr ner Held, ४.१; WP II 332f,
+     Pok 765, D. Q. Adams, Gio 65 (1987) 172ff., mit Lit.
+       ldg. *h;nér- ‘Mann’ wohl von einer Verbalwurzel *h,ner ‘stark
+     sein, Lebenskraft besitzen’, die im lir. noch in visyanara-, sündra-
+     nachweisbar sein soll, ferner in parati nar- ‘fahig sein’, u.a.; s. die
+     Lit. in KEWA ἢ 149, III 227, 493, Bee, Dev 75, Fraenkel 50791,
+     Bai, Dict 172b, 174af. (vgl. auch NART, narmá-). - Fern bleibt
+     indra-, 5.0. 1 193.
+       Nahestehend vird-; mitunter im Austausch mit ndr- (A1Gr III
+     211) Vgl. Camp in CampMat 34ff., mit Lit.
+       Häufige Verwendung von adr- in idg./ür          dichtersprachlichen
+     Kontexten’
+        nr-pátár- m. Beschützer der Männer (RV), nr-pa- m. König,
+     “Hüter der Menschen’ (Si +) ~ gr Ποίμανδρος m. N. pr. (s. Schm,
+     Di 283, £. Bader, RPh 36 [1989] 40, Pirart, a.a.0. 243);
+        nr-münas- mit der Mutkraft eines Helden (RV) ~ jav. naire.manah-,
+     gr. μένος ἀνδρῶν, Ἀνδρομένης m. N. pr. (Lit. bei Mh, AirN I/64f.,
+     LambAdj 789 und Anm. 2);
+       Srdvo ... nrnam Ruhm der Manner (RV) ~ gr. χλέα ἀνδρῶν usw
+     (Schm, Di 29,96,101, mit Lit..);
+       nr-hán- Männer tótend (RV) ~ aav. jänar-, gr. ἀνδροφόνος (Schm,
+     Di 123ff., Mh, AirN 1/54f., LambAdj 326 Anm. 7);
+       tvdvato arn, s.o. 1 682 (s.v. tva-');
+        r-médha- m. N. pr. (RV, TS +) ~ jav. naram mazdram (Schm bei
+     Schlerath II 164a; s. anderes bei Mh, AirN 1/65). ~ RV nr-sác- dem
+     Helden folgend (RV) vergleicht Schlerath H 164a mit jav. haxsüne
+     narom, Vd 19,26 (?).
+       Über näräyand- s. bes.
+
+naráka-, s. naraka-.
+
+narämdhisa-, s.u. dhisanä-, o. 1 792.
+
+
+naraci- f. eine bestimmte Pflanze(?) [AV 5,31,4]. - Unklar.
+       Ein Hi.-Fortsetzer des nicht eindeutig übersetzbaren Wortes bei
+     Tu 6972(?), Zusammenhang mit ep. + näraca- erwägt Tu, a.a.O. (??)
+     - Vgl. AiGr II 2,155.
+
+
+ndraSamsa-m. Beiwort des Agni, auch des Püsan (RV +; Tmesis
+     nara ... Sdmsam [AiGr U 1,30]; nr-sámsa- RV 9,81,5); nära-
+     Samsa- zu n° gehörig (RV, AV; s. Schm, Di 98 und Anm
+                          naristö- - NART                         21
+
+
+   594, 596). Zusammenfügung aus *nárám GenP\ (mit alterem
+   Akzent, 5.0. nár-) + Sdmsa-, vgl. RV naram ... samsa-
+   ‘Preis der Manner’, sdmso naram, sámsa|h] ... nrnàm. - lir.
+   vgl. jav. nairiio.sagha- m. (auch nairiiehe ... sayhahe GenSg,
+  nairim ... sagham AkkSg) Name einer Gottheit, des Gótter-
+  boten, Benennung des vergóttlichten Feuers (— ved. Agni),
+   in elam. NÜ *narya-sanha- Gottesname (Lit. bei Hinz, NÜ
+   174), dazu der Mannesname mp. narseh usw. (s. Mh, OnP
+  211. 303, Gignoux, NPS 11/134, mit Lit.); der iran. Gótter-
+  name ist wohl Umbildung einer Entsprechung von ved. náras?
+  mit Hilfe des Adj. nairiia- (s. schon RV 1,185,9 samsä náryà). -
+  Reiche Lit. bei Schm, Di 30,97ff; M. Durante, Fs Bolelli
+  1320. E. Pirart, AuOr 7 (1989) 237
+    Uber den verfebiten Versuch, eine Verbindung von *A,ner- und
+  *Kens (SAMS) auch im Gr. nachzuweisen, s. die Lit. bei Schm,
+  Di 100, Frisk ΠῚ 123, KEWA TT 285; vgl. 0.1556, J. L. Gatcía-Ramón,
+  Spr 34 (1990 [1992]) 29,56.
+
+
+maristà-, s u. narmá-.
+
+
+naruna- ein Beiname(?) des Püsan (TA). ~ Unklar; s. AiGr I
+  2.485.
+
+
+AART tanzen, sich rhythmisch oder mimisch bewegen, etwas
+  ( Tanz, Mimus, Tatenschilderungen) aufführen (RV [nftyanr-],
+  AV +); Perf. nrtur (RV 5,52,12, wohl für *nanrtur; s. Narten,
+  Aor 166 Anm. 460, Hoffm, Inj 219 Anm. 208); Aor. anartisur
+  (RV +), anartit ( JB; Narten, Aor 166), wohl auch nrtámána-
+  (RV 5,33,6; AiGr ἢ 2,773; s.u.); nrttd- n. Tanz, Aufführung
+  (AV +), nartitum zu tanzen (Br +); Kaus. nartdy” tanzen
+  lassen, drehen (RV [1,51,3] +; Jamison, -dya- 141); nrt- f.
+  Tanz (AV[PE; Schi, Wn 31), arté f. Tanz, Aufführung, Auf-
+  treten (RV), nrti- m. Tänzer, Vortänzer, Mime (RV), nrtu-
+  ! Tänzerin (RV 1,92,4), nartaka- m. Tänzer (Si. +), u.a. - Mi.,
+  nu, dard., ni, pa. matati, naccati tanzt, aSkun nat, hi. nat
+  Tanz, usw. (Tu S. 427a, s.v. NRT; TuAdd 6977£., 75827;
+22                            NARD - nala-
+
+
+     vel. JüS, s.v. NAT). - Die Herkunft von indoar. NART ist
+     ungesichert.
+       Vielleicht als *nar-t (“Kraft manifestieren, die Kraft in rhythmi-
+     scher Bewegung offenbaren‘, s. RV 5,33,6 nrmnáni ... nrtámáno
+     ámartah '(wenn) der Unsterbliche seine Mannestaten aufführt')
+     zu "hner- ‘Lebenskraft ~ Mann’ (s. när-; Lit. in KEWA II 177,
+     Renou, EVP 3 [1957] 35). - Schwerlich pnmür mit narmdá- zusam-
+     mengehórig (s. d.).
+       Für RV artü- ist mit “Tänzer, Mime’ auszukommen (z.B. RV
+     6,29,3, s. GeRV ἢ 128); auf einer Interpretation als ‘Held’ fuBen
+     unglaubhafte Verbindungen von nr-tü- mit ndr- (unter Trennung
+     von NART, z B. Pok 765 — 975), s. die Lit. in KEWA II 177, vgl
+     auch Bai, Dict 174b.
+
+
+NARD brummen [beim Sáman-Singen], brüllen [von Tier,
+     Mensch, Wolke] (Br + ['nardati, *^nardant- u.a.]; Gotó 197f,
+     GiovStudio I 58); Kaus. ni-narday? brummen lassen (Br),
+     ni-narda- m. das Brummen (Br, 5750), vi-nardin- brummend,
+     den Sámaveda in brummender Weise singend (Up). - Mi,
+     ni., pkt. naddia- n. Lärm, Geräusch, hi. nadnd brüllen, don-
+     nern, u.a. (Tu S. 401a, s.v. NARD). ~ lir., buddh. sogd. nrö-
+     klagen, chwaresm. nró- jammern, mp. np. näl- klagen, stóh-
+     nen, pasto naro! brüllen, aufschreien (Hüb, PersStud 103,
+     Morg, Voc 53, Samadi 132). ~ lir. *nard ist vielleicht (wie
+     auch NAD?) eine Schallwurzel (Uhl 144a).
+
+
+narmá- m. etwa: Scherz, Spaß, Kurzweil (VS +); zu verbinden
+     mit AV narısıä-, VS + naristhá- £. Scherz, Geplauder (s. dazu
+     AiGr Il 2,365,366, Hiersche, Asp 49). ~ Weiteres ist unsicher
+       Direkte Verknupfung mit NART (und nr-ti- [besser nrr-i-) ‘Tanz’,
+     AiGr 11 2,626) ist nicht wahrscheinlich, die Möglichkeit, nar-ma-
+     und NAR-T an *h,ner- ‘Kraft (s. nár-) anzuschließen, erörtert Kui.
+     IJ 4 (1960) 274f. - Überkühne Weiterungen verzeichnet Pok 975ff
+     (vgl auch Wennerberg1 105); s. andererseits KEWA II 140.
+        Ep. + narman- n. 'Scherz' und Lex. narmafha- m. "Spaß(macher)'
+     sind für sprachgeschichtliche Folgerungen (gegen Bur, Skr 150) nicht
+     geeignet,   s KEWA If 139
+
+
+nala-, s. nadá-
+                           nálada- - NAV                             23
+
+ndlada- n. Narde, Nardostachys jatamansi DC. (AV +; s. E.
+  Brucker, AsS 29 [1975] 131ff). - Pa. narada- n. Narde. -
+  Nicht zu trennen von gr. νάρδος "indische Narde' und seiner
+  semit. Quelle (Frisk II 289, MassonRech 56); alles Weitere
+  bleibt unklar.
+     Referat der vielfältigen Bemühungen, die semit. ‘Narde’-Wort-
+  sippe aus nálada- herzuleiten und dieses mit nadd- zu verbinden (?),
+  in KEWA II 140£., III 744, s. auch Frisk, a.a.O., Lehmann 263b, fer-
+  ner Bai, Dict 175b € khot. naladä ‘nard [eil]‘. ,Onginally Iranian
+  from nar- ‘be fat ?*; dagegen richtig [Emm]Sk H 65).
+    Hierher naladi- f Name einer Apsaras (AV 4,37,3)? Vgl. Zimmer-
+  AiL 69 („.  offenbar nach der Narde benannt"), MK 1 437
+
+NAV (~ NAV], s.u.) brüllen, schreien (RV [ndvamahe, návanta,
+  navante, ánavanta] +; RV ndvant-, nuvánt-, anävan, s. zu let2-
+  teren Gotö 198f., mit Lit.; Br pra nauti [Gotó 199 Anm. 387);
+  Aor. ámisata (RV +; vgl. Narten, Aor 164£), anavista (RV
+  9.71.7, Narten, Aor 1651); Int. anonavur, návinot, nónuvat-,
+  πόπανα, nónuvur, ánünot, minot (RV; s. GiovStudio I 58f.,
+  mit Εἰ: nävd- m. Jubelruf, Preislied (RV; vgl. AiGr 11 2,101,
+  Schi, Fs Knobloch 354). - Dard., Ni.? Verweise auf Unsicheres
+  bei Tu S. 426b (s.v. ΝΟ; s.u. - lir., vgl. np. nawidan klagen,
+  oss niwyn/newun heulen, Sughni ndw- weinen; usw. (Abaev
+  il 185, mit reicher Lit.; Morg, Shughni 50b: Bai, Dict 190a;
+  GiovStudio I 59 und Anm. 116-117). - Idg. *neu(H?), viel-
+  leicht Schallwurzel (s. Narten, Aor 165 Anm. 453); vgl. air.
+  nuall Schrei, Lärm, toch. AB nu- brüllen, u.a. (WP II 323,
+  Pok 142, VWindTokh 1 320f).
+    Ob anit- oder set-Wurzel vorliegt (s. die Lit. bei Narten, Aor
+  164 Anm 452), ist nicht zu entscheiden (vgl. Narten, a.a.O. 165;
+  Goto 198 und Anm. 381)
+    Hierher AV 2.5,2 navyd- ‘preiswiirdig’ (WhiLanm 44); pa. naviya-,
+  wenn ‘praiseworthy’ (PTSDict 348b). - Für navya- im RV ist hin-
+  gegen nicht ‘preiswürdig’ anzusetzen; man kann mit 'aufs neue,
+  neu’ (— náva-) auskommen {z.B 1,141,10; 6,1,7; 10,39,5), s. Renou,
+  1 VP 13 (1964) 120, 15 (1966) 49.
+    Fin NAV? ‘sich bewegen’ wird im RV wohl zu Unrecht angesetzt:
+  an den betreffenden Steffen ist mit 'brüllen, schreien, rauschen' aus-
+  zukommen (RV 9,86,27; 9,88,2; 9,100,1, 10,22,9; 10,120.2), s Gotö
+24                                  μάνα
+
+     199 Doch ist die im Homonymenkampf mit NAV ‘brillen’ weit-
+     gehend unterlegene Entsprechung von iran. *nav ‘sich bewegen’
+     (parth. nw- ‘sich bewegen’, man. sogd. n w- 'schütteln', u.a.; Emm,
+     SGS 118, AM 16 [1971] 67f., Morg, Shughni 84b, Bai, Dict 375a)
+     vereinzelt bewahrt geblieben, so in TS 6,3,4,4 dti-ndvayet (Keith,
+     TS 519 Anm. 1, Goto 199 Anm 388; + dard., Tu 7079%). - Zu
+     außer-iir. AnschluBvorschlágen s. Pok 767 (mit Lit);      J. Schnetz,
+     Flussnamen des bayerischen Schwabens (Augsburg 1950) 1117
+
+
+
+náva neun (RV + [NomAkk ?va; ab RV 1 ~ 10 sekundäre Plur.-
+     Flexion, GenPl *vanám, InstrPl ®vabhih, YV + DatPl ’vabhyah),;
+     navama- der neunte, "ám zum neunten Mal (RV [5,27,3] +),
+     navatt- f. neunzig (RV +). ~ IAV *nava? (in na-a-ua-ar-ta-an-
+     na, na-ua-ar-ta-an-ni "Neuner-Wendung' [Kikkuli-Traktat],
+     für *rava-va°; reiche Lit. bei Tischler I] 2924). - Mi., nu.,
+     dard., ni, pa. mava, aSkun no, hi. nau neun, pa. navama-
+     neunter, navuti- f. neunzig, usw. (Tu 6984 [mit Verweisen].
+     TuAdd 6984, 6995, 7006f.). ~ Tir., jav. nauua neun (Vd 22,20
+     GenPl nauuangm), naoma-, näuma- neunter (*nauuama-, Kel,
+     CompLI 40), nauuaiti- f. neunzig, ap. navama- neunter, kbot.
+     nau, sogd. nw’, mp. nö neun, khot. nauma-, sogd. nwm'y, mp.
+     nohom neunter, sogd. nw, mp. np. nawad neunzig, usw
+     (Abaev II 173, mit Lit.; Bai, Dict 192b). - Idg. *(hj)néun 'neun'
+     (s.u.), "(hi)neun-ó- ‘neunter’ (ür. *vavand-, nach saptamd-,
+     astama-, dasamd- zu *navamd- umgeformt),               *th,)neun-ti-
+     'Neunzahl (> iir. ‘neunzig’, AiGr ΠῚ 369f), arm. inn, gr.
+     ἐννέα (s u.), lat. novem neun, nönus neunter, got. ahd. níun
+     neun, an. niund Neunzahl; usw.
+
+       WP 1 128, Pok 318f., Fraenkel 92b, Frisk 1 519, HI 88, Lehmann
+     268bf. (jeweils mit Lit.) - Zur Grundform s. noch bes. Szem, Num
+     1117, Einführung? 236,237 Anm. 15,241f. Idg. "neun mit *h,-An-
+     laut geht aus arm. inn, gr Evv&a nicht ohne Weiteres hervor (s. Eich,
+     Spr 24 [1978] 152 Anm. 35; Rıx, Gramm 172, Bee, Dev 45f., LarTheor
+     76; AnttSchweb 144, mit Lit.; Mh, LI 126 Anm 115, Rasmussen,
+     Morphophon 125), ist aber letztlich anzusetzen (Pet, ZPSK 44 [1991]
+     3010, mit reicher Lit: s. auch u.)
+       Idg. 'neun' wird zu ‘neu’ gestellt (s. adva-); vielleicht begann
+     nach ‘acht’ (Zählung der Finger beider Hände ohne die Daumen.
+     doch 5.0, I 142) ein neuer Zähl-Abschnitt (vgl. AiGr III 360 [mit
+                            ndva- - návanita-                           25
+
+
+   Parallelen], Szem, Num 173 und Anm 60 fmit Lit.; auch zu anderen
+   Etymologie-Vorschlägen], ΚΕΙ͂ΝΑ II 142, Kluge-Seebold 503a). Der
+   formale Unterschied zwischen *h,neun 'neun' und *neuo- ‘neu’
+   spricht nicht unbedingt gegen diese Verbindung, da **néun ‘neun’
+   den Anlaut *h,- von einem assoziierten Zahlwort, etwa 'acht' (wenn
+   *h,okr’), bezogen haben könnte (Pet, mündi ).
+       Zu ved. ndva-gva- 5.0. I 478. - lir. Alters ist die additive Verbin-
+   dung YV + náva-dasa neunzehn (mi., nu., dard , Tu 6998), navadasd-
+   aus neunzehn bestehend — jav. nauua.dasa- der neunzehnte, oss
+   nudes/newdes neunzehn, u.a. (Bthi, Wb. 1045; Abaev II 192, mit
+  Li)
+
+
+
+nava- Adj. neu, frisch, jung (RV +), nava? kürzlich, neulich
+  (RV nava-sü- f. Kuh, die kürzlich gekalbt hat [AiGr U 1
+  Nachtr 21]); ndvyas-, naviyas- neu, neuer, neust [in Kasus “aufs
+  neue'] (RV), návatara- neuer, jünger (Br +), ndvistha- neust,
+   jungst (RV); ndvya- neu, frisch, jung (RV +; s. auch o. II 23,
+  sv NAV). ~ Mi., nu., dard., ni., pa. nava-, pkt. navva-, navia-
+  neu, usw. (Tu 6983 [mit Verweisen], TuAdd 6983 [mit Ver-
+  weisen, u.a. auf *mava-jf-a-, o. I 568}, 7012f., 7025). ~ Iir.,
+  iav. nauua- neu, frisch, vgl. mp. nog, np. naw neu, frisch,
+  parth "wg, oss. na weg neu; usw. (Abaev II 175, Bielmeier,
+  Unters 2017). ~ Idg. *néuo- ‘neu, jung’ (s. W. Porzig, Fs De-
+  brunner 3437), *néuio- dss. (s.u.); heth. neua-, gr. νέος (myk.
+  nes 0, kypr. veró-ocaroc), lat. novus, aksl. nove, toch. A fu,
+  B mme, bzw. got. niujis neu, jung, lit. naítjas neu (s. Fraenkel
+  4884, Frisk IT 306f., mit weiterer Lit.).
+
+       lug "méyo- ist wohl ,Vrddhi" zu *mu jetzt’ (s. mi), AiGr I 92,
+  Darms 392ff. (a.a 0. 395 zur Genese von *néuio- [s. auch AiGr II
+  28V Zu ‘neu? vielleicht auch idg ‘neun’, s.u. ndva. - Vgl. ferner
+  KE WA II 144, 145, III 744; Tischler 1 322f.
+
+
+
+navanita- n. frische Butter (Kath +); nira-misra- noch nicht
+  volistándig zu Butter geschlagen (TB +), nita- n. frische Butter
+  CADSS), netra- n. Strick, durch den der Butterstößel in Bewe-
+  gung gesetzt wird (Br +). - Mi., nu., dard., ni., pa. navanita-,
+  nonta- n. frische Butter, hi. nonif. dss., kati niwd Buttermilch,
+  Pj   nefra m. ‘cord of churning stick’, usw. (Tu 7002f., 7545,
+26                             NA¥! - πάνγα-
+
+     7588, 13674, TuAdd 7003, 7545, R. L. Turner, BSOAS 42
+     [1979] 547). - Hr., Sughni nay- : nid ‘to churn’, nim-dorg ‘churn-
+     staff’, khot. niyaka- frische Butter, usw. (Morg, Shughni 49b,
+     52a, Abaev II 150f., Bai, Dict 184b fältere Lit. in KEWA I
+     143, HI 744]. - lir. *najH/*niH, etwa “buttern’, hat eine idg.
+     oder teil-idg./dialektale Vorstufe, vgl. lett. sviestu nit Butter
+     schlagen, pa-nijas, pa-ninas Buttermilch, u.a.
+       W. Wüst, Ῥῆμα 2 (1956) 248, mit reicher Lit.; ferner V. Cvetko,
+     Ling 19 (1979) 2797, s. auch IC 32a, Nr. 201.1. - Ein aia. Verbum
+     nay’, das zu (°)nita- ‘Butter’ gehört, möglicherweise in YV + sam-
+     nay’ ‘to mix together, mingle, mix (esp. with sweet or sour milk)’,
+     auch(?) d-nay' 'eingieBen' (wenn nicht aus RV + d-, sam-nay' 'her-
+     bei-führen', "zusammen-führen', s. NAY’, o. II 17£; von diesem
+     ist die 'milchwirtschaftliche Wurzel’ getrennt zu behandeln [doch
+     s. Wüst, ४.8 0. 28)
+
+
+
+NAV', s. NAV.
+
+
+návisti-, nur RV 8,2,17 au. - Nicht aufklärbar.
+
+       Für das Hapax gibt es mehrere Übersetzungsvorschlüge (z.B
+     *Neuheit', GeRV IH 283; etwa ‘neue Bemühung', OldNot 1177; 'Lob-
+     gesang’ PW; s. Liebert 31 und Anm. 58), Deutungsversuche gehen
+     daher ~ zumal auch *ndva-visti- zugrundeliegen kann ~ von NAV
+     oder náva- aus (noch anders Renou, EVP 13 [1964] 98 [dpaso
+     "nd *vistdul). - Vgl. AiGr P Nachtr 162, 181, II 2,627, A. Minard,
+     BSL 61 (1966) c.-r. 19.
+
+
+
+návedas-: rigved. Epitheton, das dem semantischen Bereich
+     von védas-! ‘Kenntnis, Wissen’ angehört (einmal [in RV
+     1,165,13 NomPi "dáh] °veda-). - Durch eine Wortgrenzen-
+     verschiebung *bhütana + vedasah "werdet Kenner’ > *bhüta
+     + navedasah entstanden; Schi, Fs Knobloch 351ff., 3547
+       Damit sind die Versuche gegenstandslos geworden, in nd" ein
+     ererbtes Kompositionsglied zu sehen (s. die Lit. in AiGr I? Nachtr
+     162, 11 1,78,129, KEWA II 145 und bei Schi, a.a.O. 35311).
+
+
+
+ndávya-, 5. náva-.
+                              NAS!                              27
+
+NAS" erreichen, erlangen (RV [asnóti usw.] +; RV asay? [10,40,6
+  nasáy"] erreichen, einholen, s. Joachim 100f., Renou, EVP
+   16 [1967] 72); Perf. ändmso, änäsa, anasür, asäte, asur (RV [+],
+  s. G. Schmidt, Orbis 26 [1977] 112£., Bee, MSS 38 [1979] 18};
+  Aor. ἄξια, äsata (RV), äksata (TB; Narten, Aor 159), abhi nat,
+  prä nak, ánat (RV [+]; Hoffm, MSS 2? [1957] 1210. = HoffmA
+  35811), Aor. Konj. näsate, nasanti u.a. (RV; Hoffm, a.a.O.
+  122f. = 359f., Joachim 98, M-Br, KonjOpt 52, Gotö 82),
+  Opt. asyám, asimáhi (~ nasimahi, s. Hoffm, MSS 22 [1967]
+  27 Anm. 3 = HoffmA 483 Anm. 3), u.a. (RV +; zu NAKS s.u.);
+  a-sam-agta^ unerreicht (RV), dstave zu erreichen (RV +);
+  Desid. /mak$" zu erreichen suchen, erstreben (RV), älter
+  naks? nach etwas verlangen, bekommen wollen (RV, VS),
+  ivaksii- zu erreichen suchend (RV 10,4,1; *Hi-Hnk-s° {nicht,
+  oder nur teilweise, zu YAJ}; A. Minard, BSL 51 [1955] c.-r.
+  38, Bur, ArchLing 7 [1955] 153, s. GeRV II 342, ad RV 8,31,
+  15lc]; dsti- £ Erreichung (AV +; RV jarád?, 0.1575), abhy-
+  asam Adv. in der Nähe (Br +; vgl. RV 1,154,5 abhi... asyà
+  ich mochte räumlich hingelangen, u.a.), námsa- m. Erlangung
+  (RV 1.122,5.12), svapna-námsana- (RV 10.86.21, wenn °n- =
+  'erlangend'; s. pw VII 234c, Old, Not II 293, anders GeRV
+  IIl 277, dazu Renou, EVP 16 [1957] 148), dü-nasa-, °näsa-
+  kaum zu erreichen, schwer erreichbar (RV). - Mi., viell. auch
+  dard., ni.; vgl. pkt. abbhása- nahe, Nähe (~ ved. abhy?), s. Tu
+  S 40a (s.v. 4S"), 403a (NAS?). - lir, aav. frgstà erlangt
+  (Y 43,14; dazu Gotó 91 Anm. 7), frösiiät möge erlangen
+  (Y 46,8; /fra asjät/, Bee, Gramm 33), ngsat erreicht (Y 51,16,
+  wl Kel, Verbe 355, Stru, LarTheor 573£, mit Lit), asta-
+  angegangen (Y 51,12, s. Humb, Ga U 89), azdiidi zu erreichen
+  tY 51.17; Humb, Ga 1 64), násij bei Erreichungen (Y 38,5;
+  Narten, YH 247f., mit Lit., Kel-Pir II 276), jav. auua.asnaoiti
+  erreicht, trifft, aißinasgstsma- der am meisten erlangt (*aifii.
+  nasant"), frasti- f. Erreichen, Treffen (s. Liebert 97, doch
+
+  „uch Bthi, Wb. 1025), vahista.násem das Beste zu erlangen,
+  ud, 500. "s-, chwaresm. y’s/m’s- ‘to take’ (*d-asa-, S-W,
+  BSOAS 52 [1989] 2578: s. auch Bai, Dict 178b); zu Weiterem
+28                                   NAS?
+
+     s.u. ~ Idg. *Hnek ‘erreichen’ (s.u.), vgl. lat. nancire, nancisci,
+     na(n)ctus erlangen, erreichen, air. ro-icc erreicht, ro-dnaic
+     hat erreicht, gr. ποδ-ηνεκῆς bis auf die Füße reichend, διηνεκής,
+     att. διανεκῆς durchgehend, fortlaufend.
+       WP I 128f., Pok 316ff. (mit Lit.), Fraenkel 497bf., Frisk I 512f,
+     K. Kamioka, 85 24 (1976) 19228, Lehmann 71a. - Der Laryngal
+     in *Hnek (vgl. Aor. anat < *e-Hnek-0) wird von einem Teil der For.
+     schung als ἴω: bestimmt (wegen air. "änaic = dndmsa < “he
+     hzno[n)K-e [anders G. Schmidt, Orbis 26 (1977) 114f.], att. διανεχής
+     {anders M-Br, Spr 33 (1987[89]) 102ff., 107]; zu heth. /hénk-/ s.u.),
+     von einem anderen als *A,- (so Stru, LarTheor 571ff. [dazu Pet,
+     Spr 33 (1987[89]) 278}; s. die Lit. bei Mh, Fs Neumann 191 Anm. 51,
+     M-Br, KZ 100 (1987) 319 Anm. 16, Lindeman, Introd 77f. Zudem
+     wird von einigen Autoren ein Teil des üblicherweise beigezogenen
+     Materials von *Hnek ‘erlangen’ getrennt: vgl. Bee, MSS 38 (1979)
+     18f. (gr. ἐνεγκεῖν 'herbeischaffen, davontragen' als *h,nek "tragen'
+     [lit. nésti, aksl. nesti] verschieden von *h,nek ‘erreichen’ [doch s. Kel,
+     Verbe 368}; AnttSchweb 125, Oett 1258, E. Seebold, LarTheor
+     517 (heth. /hénk/ 'zuteilen' nur zu dmsa-, das [gegen o. I 36] von
+     NAS! zu trennen sei, oder zu einem mit NAS nicht verwandten
+     "h»enk [s.0. I 53]; andere betrachten /hénk-/ ~ NAS! als Zeugnis
+     für "h;énk-ti ~ *h,ne, s. Schi, Krat 15 [1970(72)] 152, Pet, Spr 21
+     [1975] 41 und bei Mh, a.a.O. [dort für einheitliches *h,nek,'herbei-
+     bringen ~ erreichen — zuteilen'], dagegen F. 0. Lindeman, Hethldg
+     153 Anm. 6; vgl. auch Rasmussen, Morphophon 146f. Anm. 1,160
+     [und Catsanicos, Recherches 53]).
+       Über Augenblicksbildungen, die einer „Wurzel“ AKS ‘erreichen’
+     zugeschrieben werden, s.o. I 41, mit Lit. - Nicht als -sa-Aoriste
+     von NAS', sondern als Formen einer alten Wurzelerweiterung
+     (aoristischen Ursprungs?) von NAS', NAKS, sind RV + ndksati,
+     näksate, ndksamana- usw. ‘erreichen’ aufzufassen, s. Narten, Aor
+     160, Joachim 99 und Anm. 244 (mit Lit.; zu fraglichen ni. Fortsetzern
+     vgl. Tu[Add] 6912). Dazu jav. näsomna- ( ved. naksamäna-), s. aav
+     Aor. Konj. näsämä, Inf. "nàse, αν. Opt. näsima; vgl. Humb, Ga Hl
+     57, Narten, a.a.O., Kel, Verbe 355, 368f. (mit Lit), Kel-Pir II 275.
+     Bee, Gramm 183, 184.
+
+
+
+
+NAS? umkommen, zugrundegehen, verschwinden (RV + [nds-
+     γα); Perf. nanasa (RV [10,17,1] +), nesur (Br +; GiovStudio
+     1303 und Anm. 787); Aor. nesat verschwindet (RV), dnesan
+                            NAS?                               29
+
+sind zugrundegegangen (YV), (vw) anasat soll verlorengehen
+(spätved.; vgl. Hoffm, Inj 58f. und Anm. 62, 64f., 98, HofimA
+$68; s. auch die Lit. bei Joachim 98 Anm. 238, Stru, LarTheor
+580ff.); Fut. nasisyati (AV +); nasta- verloren (RV +), nasta-
+vant- verloren habend (SrSü; Hoffm bei Sha 167); Kaus.
+näsay’ verschwinden lassen, zerstören (RV + [mit Aor.
+aninasat], Jamison, -dya- 141); jiva-näs- Lebendes umkom-
+men lassend (MS; s. AiGr II 2,7,14; fraglich RV 10,61,6 mand-
+nak [°nds-?], s. Old, Not II 265, GeRV III 228, ad 6c, Renou,
+EVP 16 [1967] 137), näsa- m. Verschwinden, Verlust (AVP +),
+násana- vertreibend, vernichtend (AV [ksetrya’ (o. I 436)
+u a], VS +), násayitár- (f. "tri-) vertreibend (VS), näsuka-
+verschwindend, vergehend (TS; Kath u.a. namsuka-, AiGr II
+2.480,T. Oberlies, MSS 51 [1990] 149), nästrä- f. Verderben,
+Unhold (AV +; AiGr 112,708 [auch über JB narstr^)), a-para-
+namsa- das Nicht-Hinwegschwinden (Kath, Oberlies, a.a.O.).
+~ Mi. nu., dard., ni, pa. nassati/nattha- verschwinden, hi.
+nasnd verlorengehen, fliehen, nasith m. schlechtes Omen
+(X “nasistha- = αν. nasista- [Tu 70261?), usw. (Tu S. 403a,
+sv NAS!; TuAdd 7025aff., 7084). - Hr., aav. nasiiant- von
+etwas abkommend (Y 32,4), ngsat verläßt, angsat ist ver-
+schwunden (Y 53,6.7; Humb, Ga II 96, Hoffm, Inj 64, Kel,
+Sur 4 [1975] 156 Anm. 24), vi.nánásá ist dem Untergang ge-
+weiht (Y 32,15), ngsuuah- von etwas abgekommen (Y 51,13),
+jav. nasüeiti weicht von etwas, nasta- verfehlt habend, apa-
+nasta- verschwunden, nasista- der am besten zugrunderichtet
+(5.0.), ap. vindBayatiy schädigt, vinasta- Schaden (vgl. Jamison,
+-ava- 141f. Anm. 76, mit Lit., Schm, Noten 47), khot. panas-
+sare sie schwinden, buddh. sogd. n's ‘ruin’, nst- ‘ruined’, mp.
+nınähidan ‘to spoil, damage, destroy’, winastag ‘spoilt’; usw.
+
+(Emm, SGS 70, Nyb, ManP II 213a, Bai, Dict 210a, Samadi
+22). - Idg. *nek, vgl. lat. nec- f. Mord, Tod, necare töten, ver-
+nichten, nocere schaden, schädigen, gr. νεκρός m. Leiche,
+Toter, toch. AB nák- zugrunderichten, Med. zugrundegehen,
+ua; WP II 326, Pok 762, Frisk II 300, GiovStudio I 302f.,
+M. Benedetti, SSL 29 (1989) 77ff.
+30                             NAS - nás-
+
+NAS sich glücklich (zu Hause) vereinen (RV [ndsate u.a.]; Gotö
+     200); Aor. Opt. nasimahi (RV 2,16,8; für *asi^, Hoffm, MSS
+     22 [1967] 27 Anm. 3 = HoffmA 483 Anm. 3). Dazu dsta-,
+     NIMS; s. ferner násatya-, svasti-. - Mi., ni., pkt. attha-
+     usw. (o. I 150). - Iir., jav. asta- (o. 1 150). - Idg. *nes "glück.
+     lich (unversehrt) nach Hause kommen’, gr. νέομαι kehre
+     heim, komme glücklich an, komme davon, νόστος m. Heim.
+     kehr, got. ga-nisan gerettet werden, nasjan retten, nhd. gene-
+     sen, u.a.; Frisk II 305f. (mit Lit.), Lehmann 146b, Gotó 200.
+     M. Benedetti, SSL 29 (1989) 28f.
+
+       Zur Semantik von idg. *nes etwas anders F Bader, Fs Risch 484
+     Anm. 59.
+
+
+nas (enklit.) AkkGenDatPl, ‘uns, unser’ (RV +; AiGr             70). -
+     Mi, dard., pa. no AkkGenDatiInstrPl, Sumasti ^ne '-our' (s
+     Tu 7030; HinMi 159f.). - Tir., aav. nó GenDatPt, vgl. na AkkPI
+     (s.u.), jav. nö AkkGenDatP!, khot. πᾶ (u.a.) uns, unser, oss
+     na uns, unser, von uns, u.a. (Abaev H 1641, Bai, Dict 181b). -
+     Idg. *nos, alb. na wir, heth. /-nas/ enklit. DatAkkPi uns, vgl
+     lat. nós wir, got. uns uns, u.a.
+
+       Im aia. Paradigma ist nas mit dem etymologisch verwandten
+     asmd- (< *ns^, o. 1152) sowie heteroklitisch mit vaydm verbunden.
+     s. auch die Dualform nau - Die Kasusvielfalt von ved. nas beruht
+     nach Ausweis des Aav. auf Formvereinfachung: es ist von *nás =
+     aay. nd AkkPl (~ lat. nös, alb. ne GenDatPl < *nós, u.a) auszugehen,
+     dem nas nur als GenDatPl gegenüberstand (= aav. n5, alb. na< "πος.
+     gr. νόσφι ‘fern von’, wenn “*von uns [*nos] weg’, E. Risch, Spr 32
+     [1986] 76 Anm. 39, M-Br, MSS 48 [1987] 179). S. zum außer-iir
+     Material noch WP I} 320f., Pok 758, KEWA II 148, Schmidt, Pers
+     177€, Lehmann 378a, Tischler II 2770, mit Lit.
+
+
+nás- f. Nase (RV + GenDu nas-ds, AV InstrSg nas-à, YV LokSg
+     nas-1 [TS + nasy-otá- an der Nase gefaßt], Kath + nas-tás aus
+     der Nase; RV 2,39,6 nasa NomDu, daraus AV + nása- f
+     Nase; seit RV 10,163,1 das später gewöhnliche ndsika- f., s
+     AiGr III 248f.); násya- in der Nase befindlich (YV +), nasvánt-
+     ‘nosed’ (AV); in Kompp. -:nas(-a)-, vgl. RV günas- (*yju-:nas-).
+     o. 1253; RV 10,14,12 uranasd- "mit breiter (uni-) Nase’; AV
+                            naskujani- - NAH                          3]
+
+      pavinasá- ‘mit einer Nase wie ein Metallreifen’ (pavi-, Schi,
+      Fs Risch 399); u.a. (AiGr II 1,91£., 109). - Mi, nu., dard.,
+      ni., pa. násá- f., waigali nds, hi. nák Nase, usw. (Tu S. 403b
+      [s.v nás-!], bes. Tu[Add] 6909, 7031, 7089). ~ lir., jav. nagha
+      (und ndh-? Kel, NR 370), ap. näh-am AkkSg Nase, buddh.
+      sogd. nns Nase, nyc Nüstern, Sughni ndj Nase, usw. (Gersh,
+      Gramm 39,139, Morg, Shughni 48b, Bai, Dict 210b). - Idg.
+      H)nas- (s.u.), lat. näris f., Plur. náres, GenPi "^r[i]um Nase
+      (tur *nas, WH Hi 143), lit. nösis Nase (urspr. Wz.-Nomen,
+      Fraenkel 508b), ahd. nasa, russ.-ksl. noss Nase, u.a.
+        Idg ablautendes Wurzelnomen *Hnás-/ *Hnas-' (anders Rasmus-
+      ven, Morphophon 260); s. WP II 318, Pok 755, Fraenkel, a a.O., mit
+      Lu - *H-Anlaut wegen "V-nas- (frünas- πῶς u.a., S.0.); anders
+      (εἰν mologisch) begründet bei Szem, Gs Kronasser 233 (,*hná-s"
+  neben .*hana-“ = AN! ‘atmen’ fo. 1 72]). ~ Abweichende Ansätze
+      hei Thi, Fs Tovar 3698 (*nos-, dazu νόσφι '*mit der Nase’ [worüber
+      anders o. Il 30, s.v. nas] u.dgl.) und Kortl, Baltistica 21 (1985)
+      119, A Lubotsky, NewSound 60 (*nels/*nh,sos).
+        Nicht hierher ands- [trotz S. H. Levitt, AnnBhl 70 (1990) 47ff.],
+  ५ 0 1182 ~ Vgl. noch u. gonasi- (1 499), dáfonasi- (1 710) und (?)
+  Jamunas- (] 699).
+
+
+
+naskujani-, s. laspüjani-.
+
+
+NAH Knupfen, binden (RV [ndhyanti, nahyamana- u.a.] +); dazu
+  unaha RV 8,48,5 (s. die Lit. oben I 153 [wo für „EVP 1“ recte
+  M]. sdm-naddha- zusammengebunden (RV +), naddhd-
+  gebunden (AV +); aksänah- etwa: Achsenband (RV 10,53,
+                                                     7;
+  SparreboomChar 129), upándh- f. Schuh, Sandale (YV +; Sa
+      nat NomSg, "natka-, SB 44०, AiGr I 175, 250, Π 1,103),
+  parinah- f Umfassung, Umhüllung (RV +; Br + ^nát NomSg,
+      \iGr P Nachtr 138), adhana- n. Band (RV +), barsa-naddhi-
+  !     Binden eines Knotens (AitB), nindhd- m. Gurt (AV),
+  pranaha- m. Verband, Bindemittel (AV), sam-näha- m. Pan-
+  /erhemd, Rüstung (Br +). - Mi., nu., ni., pa. naddha- gebun-
+  den, hi. nahna binden, pa. pänadhi- f. Schuh, Sandale, u.a.
+  (tur *fu]pánadh?, s. Tu[Add] 2302), sannáha- m. Rüstung, usw.
+32                                 náhus-
+
+
+     (Tu S. 404a [s.v. NAH]. - lir.? S. die alte Deutung der jav
+     Bezeichnung einer Textsammlung, naska-, als *"nad-ska.
+     Bündel’ (vgl. Bthi, Wb. 1060, WP II 328, Pok 759), ferner
+     jav. nada- wohl ‘eine Kopfbedeckung’ (~ NAH, Waag 137°)
+     sowie Morg, Voc 59 (iran. *nad- ‘to tie’? Dazu Bai, Dict
+     179b). ~ Der Anschluß von indoar. (iir.?) *Hnad^ (s.u.) an lat
+     nódus m. Knoten, Schlinge, Band, nectere knüpfen, binden
+     (für *ned" nach pectere, WH II 155f.?) ist ansprechend; seine
+     Begründung bleibt schwierig.
+
+       Sie ist dadurch erschwert, daß mehrfach Einflüsse bedeutungs
+     verwandter Verben stattgefunden haben (s.o        zu lat. nectere; im
+     Indoar. Kontamination mit GRANTH' [Tu 7034] und bes. mu
+     BANDH [Wack, GN 1906, 165f. Anm. l= KS 166f. Anm. 1, Tu 6044,
+     6945, 7034]). Nach Wack, a.a.O. und AiGr 1 250, I? Nachtr 139 ent
+     stammen die Formen mit -dh- (naddhd-, °naddhi-, ?nat, pa. "nadhi)
+     dem Einfluß von BANDH / baddha- usw., während náhya" (statı
+     *nddhya’), aksändh- (statt ""ndid]h-) auf *naz*-ia°, *aksünddh
+     (= “τοῖς lat. nectere [7]) hinführten Wenn (?) trotz ndhya’ von iir
+     *(H)nad" ausgegangen werden darf, kónnte dieses einer Kontamina
+     tion aus idg. *(H)ned (lat. nódus usw., an. nót ‘Netz’ [s. Lehmann
+     263bf., mit Lit.]) und *b*end" (+ *1H]ned^) zugeschrieben werden -
+     Idg./iir. "g* wird durch entlehntes (?) finn.-mordwin. *niba/d- (finn
+     nito- u.a.) "binden, heften’ nicht sicher erwiesen; 8. KoivEvidenz
+     49f (mit Lit), vgl. ferner Kortl, MSS 50 (1989) 80.
+       Wurzel-Anlaut *H- wird durch ved. upd”, pari", ni”, prä’ aus *upa
+     usw. vor *-(Hi)nd(d)h-, *-(H)nd(d)há- nahegelegt (s. Mh, Fs Neu
+     mann 190 Anm. 45, mit Lit.).
+       Aufzugeben "nádh- ‘Verwandter in RV nädbhyas (s. vielmehr
+     o IL 115; Schi, Wn 29, mit Lit
+
+
+
+náhus-, náhusa- m. : wohl Bezeichnung eines Stammes (RV; s
+     ZimmerAiL 128, GeRV 135 [zu RV 1,31,Habl, MK I 438f.
+     L. Renou, BSOAS 20 [1957] 4780); nahusyá-, nahusa- von m
+     stammend, zu n° gehörig (RV); náhustara- ein größerer n
+     (ndhuso ‘als n^, von Indra: RV 10,49,8).
+
+       Fur den Stammes- oder Mannesnamen (— Mn + nahusa- m. N
+     pr.) ist schwerlich ein Etymon zu finden. Übersetzung von n? als
+     ‘Freund, Nachbar, Mitmensch' (~ NAH”) ist exegetisch nicht be
+     gründbar; abwegige Verknüpfungen referiert KEWA II 147
+                                náka- - NATH                              33
+
+pöke- m. Himmelsgewölbe, Himmeiskuppe, Himmel, Firma-
+  ment (RV +). - Pkt. ndga-; auch dard.? Vgl. Tu 7036. - lir.?
+   Vermutungen über jav. *ndka- in Eigennamen bei Mh, AırN
+   1/80 (Nr. 306) und 1/85 (Nr. 326). ~ Nicht klar.
+           4m ehesten eine Bildung des Typus dpaka- (o. | 85), updka-
+   (o 1219) zu "πᾶ (= aksl. na ‘auf, an’); Thi, ZDMG 101 (1951) 412
+   Anm 4=KS 647 Anm. 4. Ähnliches bereits in einer „note étymolo-
+   gique inedite" F. de Saussures (vgl. CFS 42 [1988] 227). - Damit
+   welleicht vermittelbar nhd. nah usw. (~ aksl. vez-naks 'zurück-
+   geneigt’ na) s die Lit. bei Kluge-Seebold 498a, KEWA II] 745.
+     Schwerlich mit náksarra- zu verbinden (o. II 4). - Altere
+   Vorsehlage referiert KEWA II 145.
+
+
+nükra-. ५ nakra-.
+
+mága- m Elefant (AitB +), Schlange (SB +). - Mi., nu., ni., pa.
+   »aui- m. Schlange, Schlangendámon, Elefant, u.a. (Tu 7039;
+   G. Fussman, JA 265 [1977] 36). - Wohl in beiden Bedeu-
+   tungen „das haarlose, nackte Tier* (^ nagnd-), Fraenkel
+   ९] ९4. Thi, KZ 78 (1963) 178, 79 (1965) 68 = KS 443, 513,
+  Gonda, OI 204, G. Bonfante, AGI 66 (1981) 90 Anm. 2.
+       Formgleich dann mit lit. ndogas, aksl, nag» (also vielleicht aus
+  १०५. 0 1 69). ~ Das Belegalter empfiehlt nicht, n? ‘Elefant’
+  «kundír aus 2" ‘Schlange’ entstanden sein zu lassen (< *nága-
+   ‘ata       ~ lat angui-manus, Wack[-Deb], KZ 67 [1942] 165 = KS 381);
+  x    [hi ΚΖ 78 (1963) 178 Anm. 1 = KS 443 Anm. 1.
+       Damit wird auch die Herleitung von n° ‘Schlange’ aus einem
+      ἐκ    Tier-Erbwort (^ engl. snake usw.) unglaubhaft; vgl. KEWA I
+  it         tdort Referat weiterer, sicher verfehlter Deutungsversuche),
+  M.       Schwartz, Fs Beeler 462.
+
+
+
+aadı-. nadıka-, s.u. nadd-.
+
+
+NATH Zuflucht suchen (bei jmnd. Indthasva, anäthata u.a.
+
+  ‘hath, MS [Prosa] +, s. Gotó 201; nachved. wohl ‘bitten’)),
+  vathua- in Not          geraten. (RV [7,33,5;    10,34,3]   u.a.;   s.u.);
+  3 utha- n. Schutziosigkeit (RV 10,10,11), náthá- n. Schutz,
+
+  Mite, /uflucht (AV +). - Mi, ni, pa. a$. a-nätha- hilflos,
+34                            NADH - nana
+
+     arm, hi. ndh(à) m. Beschützer, u.a. (Tu S. 405a [s.v. NATH,
+     TuAdd 7051). - Vielleicht von ( Jadthd- ausgehend (nd-tha
+     ~ gr. ὀνίνημι, ὀνήσω, ὀνῆσαι 'nützen, helfen’, s. Frisk II 39:
+     mit Lit.?); NADH, mit dem NATH nicht verwandt ist, ha
+     2.T. auf dieses eingewirkt.
+
+       So ist schon RV nathitá- im Sinne von nadhitd- verwendet (Hoffm
+     Fs Pagliaro IH 31 = HoffmA 272); weitere Fälle des Wechsels (wr
+     SB nathai= $BK nádhai) bei Gotó, a.a.0 - S. bereits AiGr 1 12;
+     altere Vermutungen in KEWA II 152, vgl. auch Lehmann 267b
+
+
+NADH sich in Not befinden, in Bedrängnis sein (RV + [na
+  dhamäna-], SBK [nádhai]); nádhitá- in Not geraten, bedring
+     (RV; náthitd- und andere Formen des nicht verwandter
+     NATH (s.d.] sind sekundär in die NADH-Sippe einbezoger
+     worden); nádhas- n. Bedrängnis (RV 10,65,5; Nowicki 69, mr
+     Lit.). - lir., aav. näidiiah- armseliger, schwächer (Kompara
+     tiv zu adra- = ádhrá-), jav. naddtaé-ca wird in Not seır
+     (Hoffm, Fs Pagliaro III 217 = HoffmA 2620). - Idg. *neHd
+     (~ *nHd*-ro- > ädhra-, 5.9. 1 165f.); vielleicht *nehjd" (wenr
+     adhra- = gr. ४८०१०6९ ‘matt, träge’ < *zh3d"rd-), Gotö 202 (m
+     Lit.).
+
+       Pà nadhati (PTSDict) existiert nicht; an der einzigen Belegstelle
+     Jätaka 5,90,11*, „lesen C* nävati, so auch die älteste datierte Pal
+     Handschrift aus Thailand .. Daher ist nädhati eine birmanisch.
+     Korrektur eines nicht verstandenen Verbums, das allerdings auc~
+     von der Saddaniti als Variante zu nathati anerkannt wird
+     O v. Hinüber, briefl. (18 5. 1991).
+
+
+nana Adv. auf verschiedene Weise, von verschiedenen Seiten
+     da und dort, jeder für sich (RV +); nänd-käma- m. Pl. ver
+     schiedene Wünsche (SB), nánd-dharman- von verschiedener
+     Sitten (AV), nana-dhi- verschiedene Kenntnis habend (RV!
+     nana-manas- verschiedenen Sinnes (YV), nana-rathäm au'
+     verschiedenen Wagen (RV), nana-visyd- aus mehr als einer
+     Dorf bestehend (MS; s. AiGr H 1,107), nana-vrks(i)ya- vor
+     verschiedenen Bäumen stammend (SrSü; s. AiGr II 2,114
+     nänä-sürya- von verschiedenen Sonnen beschienen (RV
+                          näpitd- - náman-                          35
+
+  u ἃ: Adnatva- n. Verschiedenheit (Br +); nandtyaya- verschie-
+  denartig (Up; zum Bildungsprozeß s. Hoffm, MSS 41 [1982]
+  7sf). nánásas je in anderer Richtung auseinander weg (JB;
+  Hoffm. IIJ 4 [1960] 18f. = HoffmA 94f.), nanandm verschie-
+  den (RV, AiGr II 2,735, Hoffm, MSS 1? [1956] 43 = HoffmA
+  340). - Mi, singh., pa. nánd Adv. verschieden, as. näna-
+  pasamdesu in verschiedenen Sekten, u.a.; Tu 7053. - lir.,
+  aav παπᾶ an verschiedenen Stellen (Y 48,4 n" ayhat ~ RV
+  10.67.10 nänd sántah, Humb, Ga II 77), jav. nana auf ver-
+  sıhiedene Weise, nana-rästi- m. N. pr. (Mh, AirN 1/63). -
+  Die. wahrscheinlichste Deutung geht von ‘nd nä „*Mann
+  fur Mann“ oder „*ein Mann (hier) - ein Mann (dort)“ aus,
+  mut dem wegen seines kleinen Wortkörpers alleinstehend
+  vermiedenen NomSg *nd (~ när-); vgl. Y 30,2 naram naram
+  ‘ernen Mann nach dem anderen’. Thi, Unt 51; Ted, JAOS
+  &ft (1960) 360b, G. Cardona, JOIB 12 (1963) 2381
+      Altere Deutungen referiert KEWA II 152.
+
+
+näpita- m Barbier, Bartscherer (SB +). - Mi., ni., pd. nahäpita-
+  m, mth. n(d)hàvi m. Barbier, usw. (Tu[Add] 13792; s.u.). -
+  Von SNA (Kaus. sndpdy°) ‘baden’ nicht zu trennen.
+
+      Wohl für mi.   *mhdpeta(r)- (vgl. mi. ni. Shad’) < *snapayitar-
+   Rader’, vielleicht mit Suffix-Ersatz in °i1d-, nach Bur, Skr 168 ist
+  "nupıutd- ein Fall von aktiver Bedeutung des -4d-Suffixes. - Vgl.
+  ५ Gr 1265, 11 2,327, IN 324, KEWA Il 1521, HinMi 116, 117.
+
+
+
+nähhänedistha-, näbhi-, s.u. nábhya-, o. 1 14.
+
+
+näman- n Name, Benennung, Kennzeichen, Wesen, Eigen-
+  tumlichkeit (RV +); ndma namens, mit Namen (RV +),
+  rumatha namentlich (AV). - Mi., nu., dard., ni., pa. naman-
+  n   Name, nama namens, aSkun nam, guj. nam Name, usw.
+
+  ‘Tu 7067 [mit Verweisen], TuAdd 7064f., 7333). - Iir., aav. jav.
+  raman- n. Name, jav. ngma namens, mit Namen, ap. nama,
+  ‘uma namens, mit Namen (s. die Lit. in ApH 134; Schm,
+
+  ५ ompLI 74 Anm. 43, 81), khot. nàma, sogd. n'm, mp. np.
+36                                naman-
+
+     nam, oss. nom Name, usw. (Abaev ἢ 187f., Bai, Dict 17५01.
+     Bielmeier, Unters 202); iran. *nmän-am AkkSg (< “Hnh,-
+     mon-m, s.u. Idg.) in sogd. parth. °nmän, np. “man (sogd
+     t'nm’n, parth. 'w'nm’n, np. bahman ‘so-and-so’, S-W, JRAS
+     1990, 10ff.). - Idg. *Hnéh,-men- (s.u.; im paradigmatischen
+     Ablaut *Hnh;-mn-, *Hnhymon? [^ iran. *nmän’, s. Tir], u.a),
+     gr. ὄνομα n. Name (dor. ἐνυμα- in Eigennamen, hom. vàvv.
+     μίν]ος namenlos), arm. anown, lat. nomen, got. namo, air
+     ainm n-, aksl. ime, heth. J@man- ((a-a-ma-an? u.a., < *naman-)
+     toch. B fem, A fom u.a. ‘Name’.
+
+       Reiches Vergleichsmaterial bei Fnsk 11 396f. (mit Lit.). s. auch
+     Ul 162; Lehmann 262bf.; Tischler If 27f - Für die Grundform
+     ist (neben laryngallosem “dma [Lit bei Lindeman, Introd 82, vgl
+     auch HS 102 (1989[90]) 289, 2911) *hynéh,-men- (s. die Lit. bei Mh
+     LI 126 mit Anm. 114, 116, 117, J. E. Rasmussen, Colllnd I 104, त
+     Pinault, EIE 3 [1982] 15ff., B. A Olsen, REArm 19 [1985] 10 und
+     Anm. 12, J. A. Hardarson, MSS 48 [1987] 92, J. H. Jasanoff, Lar
+     Theor 227f., H. C. Melchert, Spr 33 [1987(89)] 27) bzw. (wohl vor
+     zuziehendes) *h,neh,-men- angesetzt worden (s. Schm, Di 91 Anm
+     562, LarTheor 489ff, Kortl, MSS 50 [1989] 80, Bee, Spr 33 [1987(89)}
+     Iff, jeweils mit reicher Lit. und Besprechung der Fortsetzerfor
+     men). ~ S noch V. V. Bibichin, Jazykovaja praktika i teorija jazyka |
+     (Moskau 1974) 48ff., Euler, Gemeinsamkeiten 187f., SprwInnsbruci
+     65 Anm. 6, Wennerberg 1 286ff., L       A. Conolly, Word 34 (1983)
+     119f.,   R Stempel, IF 95 (1990) 48 Anm. 20
+       Zum Etymon von idg. 'Name' (zu gr ὄνο-μαι ‘schelte’, ide
+     *hyenh; (Schm, LarTheor 491, mit Lit ]?) s WH HI 174, E. Pulgram
+     BzN 5 (1954) 174; W. Laur, Der Name (BNF ΝΕ Beiheft 28
+     Heidelberg 1989) 31ff - Beachtenswert ist ein anklingendes Wort für
+     'Name' im Ural. (finn. nimi/nime- usw.; Joki 291, Rédei, Sprachk 4!
+     Kortl, a.a O.), als „altes Kulturwort . . auch in den paläosibirischen
+     Sprachen verbreitet“ (Rédei, a.a.0 ). Nach Katz, Habilschr 186f. (s
+     auch 370) erweist finn. nimi usw. idg *h,nehymp (s. auch Rasmussen
+     aa.0.)
+        Idg. Alters sind einige Textfiguren mit naman-: vgl. o. 1 786 zu
+     nama dha, ved. Puru-naman- ‘vielnamig’ ~ gr. πολυώνυμος (Schm
+     Di 183f); ved priyd- nàman- — ae frea nama 'surname, cognomen
+     (Schm, Di 59, 185, mit Lit.); ved. srüra- naman- ~ gr. ὄνομα κλυτόν
+     toch A Hom-klyu, B nem-kálywe Ruhm (Schm, Di 55f., 920). - lir
+     RV 3,56.4 ahve . näma — Yt 15,49 nqma zbaiiaesa (B. Schlerath
+     MSS 44 [1985] 194), s. auch TB ndmahutama- (Sha 167); RV 10,54 1
+                          nambd- - narada-                          37
+
+  asunani náma ~ Y 31,3 Ghuinia nàmóni. . yazamaidé (~ Y 51,22
+  ja:ai x'aii námàni$ — RV 5,52,10 mahyam namabhir yajnam [s.
+  Schlerath II 160a, Humb, 084 26), Narten, YH 178f. [dazu Humb-
+  FIfSkj, Ga 11 236], AV su-naman- einen guten Namen führend (ep. +
+  N pr) = iran. *hu-naman- N. pr. (Hinz, NU 126, mit Lit.)
+
+námbá- m. eine Getreideart (MS, SB); námba- (f. *i-) aus n
+                                                                        9
+
+
+
+
+  bestehend (SrSü). - Vgl. ambá- (o. I 171, mit Lit.).
+       Die Verteilung dieser Formen auf die Texte ist ungewöhnlich:
+  {५ SB na? gegenüber Kath, TS, SBK 4*. Gemeinhin stimmen
+  Kath und MS gegen TS überein (Renou, EcVéd 144, 157; Hinweis
+  Kur ~ Eine Erklärung für 4" - 0° (Sandhi-Variation? Nichtidg.
+  Quelle?) steht aus
+
+
+näraka- m Hölle, Unterwelt (AV; YV náraká-y; naraka- m.
+  ५५५ (RV-Kh, TA [^dka-], u.a.). ~ Pa. naraka- Abgrund, Spalte
+  (€ harp, MO 26 [1932] 121ff, Bur, ArchLing 16 [1965] 76). -
+  Nacht geklart.
+
+     ihe Belegsituation erfordert nicht (gegen L. Renou, Fs Chatterji
+  131 nar. als primar, nar” als Ruckbildung dazu anzusetzen, auch ist
+  Renous Deutung (2.2.0 : πάν aus नुव, Viddhi zu *nir" — nirrti-)
+   utlich nicht einfach (s. jedoch o. I 366). Es ist wohl besser von
+  „nmarem nar’, dazu Vrddhi naraka-/náraká- (oft mit lokd-), aus-
+  nugehen (AiGr 11 2.124); nar^ zu gr. vepdev, Evepdev ‘von unten’,
+  ii pot, véptepot ‘die Unterirdischen’ (s. Frisk 1 515, AiGr II 2,150,
+  KE WA HH 138 [mit Weiterem], Fraenkel 495b, Abaev II 156 [~ iran.
+  * araka- “dunn, eng, schmal”), Bielmeier, Unters 199, M      Witzel,
+  MSS 10 [1972] 188 Anm. 35, £. Bader, JIES 14 [1986] 50f. [s. auch
+  K    Wb, Nr 88 ~ 625}
+
+
+narada- (naradá-) m. Name eines Rsi (AV +); náradavant- m.
+  * pr (AVP). ~ Pa. nárada- m. N. pr. (Malalasekera II 510),
+  pkt narada- (°ya-) m. N. pr. (Mehta-Chandra-Malvania 321). -
+  Nicht klar
+      Wohl   da- = 'gebend'; das Vorderglied ist vermutlich der Sippe
+  ‚on mar zuzuordnen (*mára- = ‘die narische Macht ..., wie sie
+  7 M der oberste Nara- = Visnu besitzt’, Hauschild II 250b). Oder
+      ne Ableitung von ndiada- (- Apsaras-Name naladi-, o II 23)? -
+  i nbrauchbar ist (gegen Hauschild, 2.3.0) Mn
+                                               + nära- m         plur
+  Wasser‘, das offenbar zur Erklärung des Namens naräyand- erfun-
+  itn worden ist (s. die Lit. in KEWA II 154} HI 745).
+38                          naräyand- - návájá-
+
+näräyand- m. Gottesname; oft mit Visgu identifiziert (MS,
+     Br +; °na-vahana- RV-Kh, s. Sha 168). - Pa. náráyana- m
+     N. pr., Name des Visnu (Malalasekera ἢ 54), pkt. narayana-
+     rn. Name eines Vasudeva (Mehta-Chandra-Malvania 3210).
+     in Kumaont (dial.) vielleicht Fortsetzer eines Gottesnamens
+     *müla-náráyana- (Tu 10252). - Auf nár- beruhend.
+       Nach Thi, MSS 44 (1985) 249 aus *narayana- n. "Zuflucht der
+     Männer’, der Gottesname nara- ist daraus abstrahiert (s. auch unter
+     närada-). Anders S. Sen, Bulletin of the Philological Society o!
+     Calcutta 2 (1961) 2f, त. Knck, WZKS 21 (1977) 100£. und 101 Anm
+     113
+
+
+
+nári-, s. nár-.
+
+
+nürmará- m. Name eines Damons (RV 2,13,8; in einer „Islonst
+     unbekannte[n] Sage“, GeRV I 292, z.St.); narmini- f. Name
+     (oder Beiwort) einer pur- (s.d.; RV 1,149,3). - Nicht sicher
+     erklärt.
+
+       Nach AiGr II 2,394 bzw. 857 sind beide Namen auf narmd- zu
+     beziehen. ~ Anders Grassm 725 [u a] (आक aus "nr-mara- "Männer
+     totend’, πάν ‘nicht trümmerhaft (na? ΠῚ 1] und drma-, worüber
+     jedoch o 1 120 [s ferner MK 1447)
+
+
+ £              4
+ndv-, S. NAU-.
+
+
+
+
+näväja- m. Schiffer, Bootsmann (SB). - lir, jav. nauudza- m.
+     Schiffer (Yt 5,61 u a. [s.u.]], δορά. me'z, parth. ndwáz, arm
+     (X iran.) nawaz Schiffer (Hib, Gr 201, Gersh, Gramm 17, Bai.
+     Dict 192a, Kel, CompLI 35, Hoffm-Narten 78). - ‘Das Boot
+     vorwärts bewegend', aus náv- (náu-) und "ajd- (AJ); AiGr
+     11 2,68.
+
+       Vgl. noch AiGr U 1,63, U 1? Nachtr 21. - Nach Thi, Gs Nyberg
+     ΠῚ 348f. (s. auch Mh, AirN 1/69} bleibt Yt 5,61 nauuaza- vielleicht
+     als 'schiffbrüchig' (*nau-vaza-, gr vxvayóc) fern - Bildungsverwand!
+     mit ved. πᾶν" usw. *náv-ag(o)- als Grundlage von lat. nävigäre 'schif-
+     fen, fahren, segeln’, WH II 148.
+                             nävyd- - násatya-                          39
+
+násyà- Adj. mit einem Boot zu überqueren (AV +; zur Bedeu-
+      tung s. Klaus, Wasserf 17,32 Anm. 61, Schm, Spr 34 [1988-90
+      (91)] 418, Bis 55 [ad 86]); navya- f. Bezeichnung der Ströme
+      (Rv [I. Mandala], Kath +; s. WaP. Schmid, Fs Pagliaro ΠῚ
+      219f 1 - Mi., nu. und dard. (?); s. Tu 7083. -lir., jav. nauuaiia-
+      Bezeichnung der Wasser (für nauuiia-; so noch in einem Teil
+      der Handschriften, Hoffm-Narten 47 Anm. 41), ap. naviya f.
+      Adi ‘nur mittels Boot passierbar, nicht zu durchwaten' (Schm,
+      Δα}. man. sogd. n ywg Beiwort des Wassers (u.a.; s. Schmid,
+      440 218f, mit Lit.) - lir. *naHu-ia- ist Ableitung von
+      Mur
+
+
+        S dort zu Weiterem, idg. Alter der Ableitung (^ gr. νήϊος ‘zum
+      S [र gehöng‘, AiGr H 2,808?) erweist vielleicht toch. A new- 'Flut
+      (wenn nicht iran LW), s K. T. Schmidt, TIES 1 (1987) 164f.
+
+
+nästrä- s NAS?.
+
+navatya~ m. Du. Bezeichnung der beiden Asvin (RV +; DatSg
+      una RV 4,3,6, vgl. AiGr II 2,136, GeRV I 420 [ad 6c], Thi,
+      JAOS 80 [1960] 315b = KS 410b, Renou, EVP 13 [1964]
+  «3. Hoffm bei Schi, Wn 15, W. Wüst, Spr 20 [1974] 155
+  und Anm. 112). - IAV, s, DINSIR MES ng. sc ortiig.an-na im
+  Mittani- Vertrag (KammArier 149; Lit. bei Zeller, Zwillings-
+  vótter 81ff.). - lir., jav. nághai&iia- m. Name eines Daéuua
+  (Vd 10,9 [indram ... naghaidim da&um ~ RV mdra-násatyá,
+  deva nasatyä, Schlerath II 163bf.]; 19,43). - lir. *násatja- ge-
+  hort zu NAS, wohl als Vrddhibildung zu *nas-ati- (Typus
+  ved. ras-ati- "Behausung’; s.u.).
+
+       Vel die Lit   in AiGr II 2,939, KEWA ἢ 156, Zeller, a.a.O. 5f.;
+  t    Bader, Fs Risch 483 und Anm. 58,485 und Anm. 62, 486, Nagy-
+ GrMy 93 Anm 46, 249 Anm. 80 (mit Lit.); etwas abweichend Szem,
+ ८१९ Ny berg IL319, P. H. Hollifieid, Spr 26 (1980) 21,176,30 (1985) 79. -
+ 1 Goto, JIBS 39 (1991) 97711. erweist asvin-à (o. I 141) und πὸ
+ ils eiliptische Duale, ‘Morgenstern und Abendstern’ (s auch AiGr
+ H 1.152); asvin- = der Morgenstern, der das Pferd am Wagen der
+ Sonne zieht, nasatya- = der Abendstern, der die unversehrte Heim-
+ hc hr (C*rras-ati-) verwaltet.
+40                              násá- - ni
+
+
+       Nicht vorzuziehen ist Bezug auf nds- Nase’ (Referat in KEWA ||
+     156f., Zeller, 9.3.0. 5 und Anm. 19f, s. ferner V. Pisani, AGI 66
+     [1981] 16ff.; bei Zeiler, 2.2.0. 5f. zu einer abwegigen Deutung von
+     n^ aus dem Munda).
+       Entlehnung des jav. Namens aus dem „Protoindoar* (Gnol
+     ZorTime 80 Anm [124], 5.9  1 192) ist unglaubhaft (s, vielmeh:
+     Thi, a.a.0.)
+
+
+näsä-, nasika-, s. nds-, o. Π 30.
+
+nàstiká-, s.u. κά ὃ.
+
+ni Adv. niederwärts, hinunter, hinab, rückwärts (in nominale:
+     und verbalen Komposita, z.B. ni-dhana- n. Aufenthaltsor
+     [AV +; o. 1 772], ni-dhä- f. Fanggarn, Netz [RV +; AiGr Il
+     2,23], ni-dhána- n Behältnis [RV +], ni-dhruvi- beständig
+     [RV; o. 1 798], ni-pádá- m. Niederung [RV], ni-manyu- dessen
+     Groll niedergegangen ist, sich gelegt hat [AV], bzw. ni-kar
+     niedermachen, besiegen [RV +], ni-rodh fernhalten, abweh-
+     ren [RV +], ni-sad sich niedersetzen, sich [auf ein Weib]
+     niederlassen [RV +], usw. usw.; s. AiGr II 1,237,259,283
+     JohanssonEtym 6ff., Thi, GrammKat 535). - Mi., nu., ni., pa
+     ni’, a$kun ni? usw. (z. B. Tu 7464-7467); Tu S. 409aff., TuAdd
+     S. 59bff. - Hr, aav. nr (2.8. Y 32,14 ni... dadat sie legen hin
+     ein), αν. ni-däiti- f. Niederlegen, ni-Sasti- f. Begatten (~ ἈΝ
+     ni-sad),   nii-àpom stromabwarts, ap. ni-padiy hinterdrein,
+     ni-pista- niedergeschrieben, niy-a-Sddayam ich setzte wieder
+     ein, führte zurück, khot. ni”, na’ u.a. (Emm, SGS 54ff., 234)
+     chwaresm. n-ps-, sogd. n-pys- niederschreiben, baktr. vo-fhyto
+     geschrieben, mp. np. ni-Sastan sitzen, parth. nsstn dss.; usw
+     (Gersh, Gramm 105f., Abaev II 180, Bai, Dict 186af., Davan.
+     Baktr 238). ~ Idg. "πὶ (s.u.), arm. n-stim setze mich, sitze
+     (~ ved. ni-sad) u.a. (C. de Lamberterie, PlaceArm 48ff)
+     ahd. nidar nieder (~ niraram), aksl. nize hinab, hinunter
+     u.a.; S.u. nimnd-, nipa-, nyüfic-.
+
+       ldg.   *ni ‘nieder’ ist von möglichen Schwundstufenformen zu
+     “πὶ ‘in’ (ved. dni’, o. 1 73) zu trennen, AiGr II 1,73, W. Schulze
+     KZ 40 (1907) 415 Anm. [3] = KS 71 Anm. 3, s ferner Frisk II 298
+                                NIMS - nigut-                               41
+
+  mit Lit, Bur, ALB 44-45 (1980-81) 439. Vgl. nijd-, ninya-, nitya-,
+   nida-.
+
+
+NIMS etwa: aufsuchen (RV [3. PL nimsate, nimsate, Part. nim-
+  sana-. RV 10,742 nims-a-ta 3. Sg. Inj.]; zur Semantik s. Gotó
+  2001). netra-nimsin- Beiwort des Schlafes (etwa ‘die Augen
+  heimsuchend’, kl), pari-nimsaka- schmeckend, kostend
+  thi) - Redupliziertes Präsens (*ni-ns) zu NAS.
+       Die Bildung ist viell. idg. Alters, vgl. gr. vicout ‘gehe, schreite,
+  hehre zuruck'; s. Frisk      H305f (mit Lit.), Gotó 201 und Anm. 392, 393.
+
+nikorhaka- m. Name eines Lehrers (Br). - Nicht klar.
+       Nach Whi, Roots 19 der einzige ved. Beleg von KUTH 'stinken'
+   ESL
+
+
+NIAS durchbohren (AV [niksa, anu-niksanti]), vi-nikse um auf-
+  zuspießen (RV 5,2,9), néksana- n. etwa: spitzer Stab, Spieß,
+  Gabel (AV +; über RV niks? s.u.). - lir.? Vgl. np. nés Spitze,
+  Stachel, nestar Lanzette, arm. (< iran.) nstir Lanzette, ferner
+  "i naeza- n. Spitze der Nadel, mp. nézag, np. néza Lanze, u.a.
+  iP Horn, GlrPh 1 2,88,112, Hüb, KZ 36 [1900] 164, Scheft,
+  71L 2 {1923} 274, Bai, Dict 193a). ~ Weiteres ist nicht ermittelt
+       Die iran. Formen, wenn zugehörig, weisen auf *nejg/? ~ *nejg'"s
+  १५    auch Bai,    a.a.0.). Unglaubhafte Anschlüsse bei Scheft,       a.a.O
+       t Lit,   s KEWA H 158); schwerlich ist N/KS ein altes Desidera-
+  1 vum zu NAS? (Whi, Roots
+                          90; H. Güntert, IF 30 [1912] 1030)
+       Hierher RV 1.162,13 niksane-, etwa 'Prüfstábchen, spitzes Holz
+  ' m Prufen des kochenden Fleisches’ (~ SrSii pra-niks ‘aufspieBen’);
+      u:   s Old, Not 1155 bzw Renou, EVP 13 (1964) 106.
+       Sunıh-
+
+
+
+muyut- nur RV 9,97,54 (und ebenda 53 naigutá-), 10,128,6: Inter-
+  pretation ungesichert.
+
+       Wenn als "Feind' auffaBbar (PW, Grassm), wohl zu GAV; ni-gü-t-
+  ‘dre     dann     „*nieder-rufend,   schmähend“   (im   „verbal   contest“).
+  Anders GeRV HII 101 („Schwätzer [9% nai? N. pr.; 8.8.0. [ad 53-54]
+        Anspielung auf ein ... Ereignis, das... fur uns dunkel bleibt") -
+  *    AGr | 2.42, KEWA II 159, Renou, EVP 9 (1961) 110.
+42                           nighfsva- - ninyd-
+
+
+nighfsva-, s.u. ghrsu-, 0.1517.
+
+
+nicumpuná-, RV 8,93,22 °nah; in zwei Mantras schwanken die
+     Texte zwischen °cumpund-, °curtkund- und ?carikuna (VokSg),
+     AiGr II 2,483. - Ohne gesicherte Interpretation.
+       Die Bedeutung liegt vielleicht(?) im Bereich von „Schwall, Guß,
+     sprudeind* (onomatopoet., AiGr I 1537), AiGr H 2,483 verweist auf
+     $rSü (Mantra) cuknar-e (DatSg; „von unbekannter Bed.“, pw; s. auch
+     AıGr I 153). ~ Weitere Lit. in KEWA 11 160 [Nach Ch. H. Werba
+     (WZKS 36 [1992]) für mi. "micimpuna- < aia. *nityamprná- ‘stetig
+     füllend' (~ RV 5,44,12 sadaprna-)|
+
+
+nicerü-, s. céru-, 9. 1 550.
+
+
+NY, s. NEJ.
+
+
+nijd- Adj. eingeboren, im Hause geboren, eigen, beständig
+   (AV +). ~ Mi., dard., ni., pa. nija-, nıya- eigen, u.a. (Geiger, Pa
+   55, Tu 7181£). ~ Zum Iran. s.u. - Zusammen mit nitya- zu
+     beurteilen.
+       Nach Hoffm, MSS 41 (1982) 88f. ist nijd- {~ JAN’) ~ ebenso
+     wie jav. ni-zanta- 'eingeboren, im Hause geboren’ - Neubildung
+     für iir. *nítía- ‘drinnen (im Haus) befindlich' (nítya-).
+
+
+ninik, s.u. ninyá-.
+
+
+ninyá- ("niyá-) Adj. wohl: innerlich, verborgen, geheim (RV), n
+   Geheimnis, Verborgenes (RV; zu den semantischen Proble-
+   men s. Kwella, FluBübersch 86ff. Anm. 2, W. Wüst, AnnBhl
+     58-59 [1978] 4191). ~ Fragliches aus dem Nu., Dard., Ni. bei
+     Tu 7187. - Umstritten.
+       Wenn “innerlich, verborgen’ als Ausgangsbedeutung feststeht,
+     ist vielleicht an ri? ‘in, innen’ (s. nitya-) zu denken, mit „kontext-
+     freiem“ bzw. mittelindischem -r- (Mh, Gs Renou $11 und Anm. 5 =
+     AKS 109 und Anm. 5, mit Lit ; Bai, Dict 183b), *ninya- auf *nina-
+     © paäto nana ‘inner, inside’, Skj, CompL1 399) aufbauend? - Anders
+     Wiist, 4.4.0. 4188, der für n° von „rührig, kräftig, männlich“ aus-
+     geht und es als *nr-a-yá-> mi. *nin®} zu nár- (*ur-n^ [Typus vis-n-ya-)
+                             nitatni- - NIND                            43
+
+
+   ^ sabin. Ner-on-) stellt; eine weitere Erwägung (— *nir-ni- "Weg-
+   führung‘) bei Kwella, 8.8.0. - Über ältere Lit. s. das ausführliche
+   Referat bei Wüst, aa.O.              .             Αἱ                 .
+     Zu n° wohl auch RV 10,5,1 ninyóh < *yayoh;            AiGr III 99, mit
+
+                                 wahrscheinlich ‘geheimgehalten’
+   ] therher RV 4,5,8 ninik, daVermittlung
+     t
+
+
+   oder Geheimnis’; zur formalen           mit n^ s. KEWA II 161,
+   Renou, EVP 13 (1964) 97; vgl. Wüst, a.a.O. 420.
+
+nitatni-, “πῆς s.u. TAN’, o. 1619.
+
+nitarám Adv. niederwärts, nach unten, in tiefem Ton (Br [in JüS
+   ‘ganz, völlig, besonders]. - Ni. (und dard.)? S. Tu 7189. -
+   Frstarrte Kasusform eines Komparativs ni-tara- (vgl. AiGr II
+   1.4. KEWA II 162), zu ni (~ ahd. ni-dar); vgl. Superl. iir.
+   *ni-tama- Gav. nitama- ‘der unterste’).
+   Ü ber einen fraglichen iran. Superl. *ni-ista- in mp. *nist „*under-
+  mast’ s Nyb, ManP If 141bf., AiGr II 2,458.
+
+
+nitänd-, s.u. TAN, 0.1619.
+
+nitya- Adj. eigen, heimisch, stetig, dauernd (RV +; W. Schulze,
+   KZ 40 1907] 414f. = KS 71£., M. Hara, JAOS 79 [1959] 90). -
+  Mi , ni, pa. nicca- stetig, u.a. (Tu 7190, KEWA II 162). - Idg.
+   "m tio- „*drinnen befindlich, heimisch, eigen“ (zu "ni “in,
+  unnnen’, das von *ni ‘nieder’ abzusetzen ist, o. II 40f.), got.
+  apis m. Verwandter, gall. Nitio-broges (~ Allo-broges, ved.
+  urana- [ved. Gegensatz zu nitya-, o. I 107, mit Lit); vgl.
+  nıd-, ninyd-.
+
+    Weitere reiche Lit. in AiGr IT 2,698, KEWA II 162f., Hoffm,
+  MSS 23 (1968) 32ff. = HoffmA 497ff, Lehmann 267b.
+
+
+
+MD s NED?: nid-, nidänd-, s. NED".
+
+nidra-.s DRA?, 0. 1 758.
+
+
+AIND.s NED’.
+44                            nipá- - nimba-
+
+nipd-, s.u. aké, o. 1 158.
+
+
+nipddá-, s. ni, padá-.
+
+
+nipépi, s.u. PEC.
+
+
+nimitta- n. Ursache, Grund, Ziel (Up +); naimittika- aus einer
+     Ursache entstehend (ऽप +). - Mi, singh., pa. nimitta- n
+     Ursache, Grund, Zeichen, u.a. (Tu 7241). - Nicht sicher
+     gedeutet.
+
+        Zu älteren Versuchen s. die Lit. in AiGr I 2,586,937, KEWA I
+     1651. ~ Bur, Abhinandana-Bhárati (Professor Krishna Kanta Handi-
+     qui Felicitation Volume, Gauhati 1982) 51ff. stellt a° zu der von ihm
+     angesetzten indoar. Sippe MA ‘to ascertain’ (— TB cáksur-nimita
+     ‘estimated by the eye’, zur Form [mi. *nimitta-?] 3.3.0. 53); s.u. MA
+        Non vidi: Dand, VedBibl IV 969 (Nr 79.175).
+
+
+nimis-, s. MES.
+
+
+nímrgra-, s.u. MARJ.
+
+
+nimná- Adj. abwärts gehend, abwärts gerichtet, n. Vertiefung.
+     Tiefe, Niederung (RV +; B. Forssman, KZ 79 [1964] 150 -
+     Mi. (und hi?) pa. ninna- vertieft, tiefliegend (Forssman.
+     3.3.0. 16, Tu 7244). ~ Ableitung von n/ (Bildung wie gr
+     πρυ-μνό-ς, πρό-μνο-ς hervorkommend, vorn seiend, heth
+     /sarä-mna-/ oben befindlich [Forssman, a.a.O. 20ff., Zucha
+     Stem Types 162], u.a.).
+       Vgl. Forssman, 2.4.0. 11f£, 158. 18ff, Frisk TI 606; gr. λίμνν
+     *Marschland, Sumpf viell. dissimiliert aus *víuvn (~ nimnd-), Forss
+     man, 2.2.0. 17f., Frisk ΠῚ 145. - S. ferner Bur, ALB 44-45 (1980-81
+     439, H. C. Melchert, Spr 29 (1983) 1 und Anm. 2.
+
+
+nimba- m. Azadirachta Indica (SrSü +). - Mi., ni, pa. mimba-
+     m., hi. nib, nim dss. („the Neemb tree“, Tu[Add] 7245f.). -
+     Nicht klar.
+
+       Deutungsvorschläge (als Fremdwort, bzw. als *ny-amra- [- amra-
+     amla-, o. 1 171] in KEWA II 166.
+                           niydta- - niryásá-                           45
+
+
+ niyüta-, S. YA y!
+
+wirssta-.s. AKS (+ Nachtr), o. 141, 804.
+
+wiräha-. «ἃ AH’, o. 1153.
+
+airrti- f Untergang, Verderben, Auflösung, Todesgöttin, Göttin
+   des Untergangs (RV +; L. Renou, Fs Chatterji 110), nairrtá-
+   zur Göttin n gehörig (AV +); nirrtha- m. Verderben, Zer-
+   storung (RV +). - Ved. nir-r? ist wohl „*ent-fügen, *ausein-
+   „nder-ordnen“, zu nis- und idg. *h,er fügen’ in ard-, dram,
+   ride. rri- u.a., 0. I 107, 109, 255, 257; Renou, 4.8.0. 11 und
+   Anm 1.
+     So auch in RV 1,119,7 nir-rta- ‘zerfallen’? Doch s. Renou, 2.2.0.
+   anm I und EVP 16 (1967) 21; Trennung von AR! (*nir-r^ „*ausein-
+   inder-bringen“, SB nir arpay’, Renou [EVP], a.a.0.) ist auch für
+   rirrti-, nirrthá- nicht sicher zu behaupten. Zu beachten nir-rthd-~ jav.
+   kam-arada- m. "Gegner! (,*[feindliches] Zusammentreffen“, ΒΊΗΙ,
+   Wh 1776, AiGr II 2,719) sowie o. I 107 zu sam-ar.
+     Die fautliche Problematik von nir? (s. AiGr I 12, I? Nachtr 20,
+   190) soll nach Renou, Fs Chatterji 15 zur Vereinfachung Mn, ep. +
+  ५८८व~ (pa. niraya-) ‘Hölle’ geführt haben (wenn nicht direkt nir-
+  wa Aus-Gang', s. auch ΚΕΙ͂ΝΑ II 167); von nir° wurde ferner das
+   ved. "Hótle'-Wort. náraka-/naráka- abgeleitet (doch 5.0. II 37, mit
+  [uti
+
+
+
+níralpa-. s.u. JALP, o. 1 580.
+
+
+nirnij-. su. NEJ.
+
+
+nirmaj- ("maja-?), nur RV 8,4,20 °jäm. - Nicht klar.
+
+    Die Interpretationen schwanken zwischen 'Schwemme', ‘flecken-
+  ‘as, fehlerlos’, ‘flink’, mit entsprechenden etymologischen Anschlüs-
+  wn. s die Lit. in KEWA II 549, 551, III 746.
+
+
+
+
+wınasä-s YAS.
+46                          nilimpd- - nisita-
+
+nilimpá- m. Bezeichnung gewisser Genien (AV +), einer Gruppe
+     von Maruts (TA). - Zu ni, LEP (AV ai limpámi ‘ich mache
+     verschwinden’, RV 1,191,1 ni-Jip-, vgl. Renou, EVP 16 [1967
+     95); AiGr II 1,182, KEWA II 168.
+
+
+Rivát- f. Streben nach unten (RV +, Thi, GrammKat 534; Gegen.
+     satz ud-vat-, o. 1 215), nivdtà abwärts (RV, AV). - Zu ni.
+
+       Das Hinterglied ?vdz- wird von Thi, 2.2.0. auf μήτε ‘Streben
+     (: VAN [~ VAN’ ‘erstreben’) zurückgeführt; δὰ    Ὁ. 534f. gegen die
+     suffixale Auffassung von "vát- (AiGr YI 2,871) und "vand- (AiGr 11
+     2,906) in mivand-, nur RV 10,40,9 “μά (Thi, 2.2.0. 535: 'steil' <
+     "baumios, waldlos', n! + vdna-).
+
+
+
+nivaná-, s. nivdt-.
+
+
+nivätd-, s. väta-.
+
+
+nisita- f. Nacht (TS), RV + d-nisita- rastlos, nicht ruhend, RV
+     10,89,4 ánisita-sarga- rastlos sich ergieBend; mSa-/nis-f. Nacht
+     (RV-Kh, AVP +; zur Verteilung der Stimme [AkkSg °am/
+     LokSg ^i] vgl. Schi, Wn 30£.; s.u.); nisitha- m. Mitternacht,
+     Teil der Nacht (ApM +). - Mi., ni., pa. nisä- f. Nacht, nisitha-
+     m. Mitternacht, u.a. (Schulze, KS [Nachtr] 801f., Tu 7428f.
+     7436).   - Nach Ausweis von RV + d-n? ein Wort für ‘Rast,
+     Ruhe’, offenbar *ni-KiH^ (mit Laryngalschwund in der Kom-
+     position, Bee, Dev 242; Wiederherstellung von si- im jün-
+     geren nisitha- [anders Olsen, Suffix 42], zu n£ und SAY! ($0).
+     auf eine Nebenform der Wurzel, πα < *KeH (~ gr. κῶμα
+     ‘Tiefschlaf”), ist wohl misa(C)-/nis(V)- zu beziehen, s. Schi.
+     2.2.0.
+
+       Vgl. AiGr II 2,40,616, Renou, EVP 15 (1966) 19, Schulze, 3.3.0
+     802 Anm. 1, Ins, Spr 20 (1974) 123f. - Allenfalls wäre auch nisi
+     auf “Sa beziehbar (ApM + nisitha- Angleichung an Si ‘liegen’).
+       Ved. n° „*Rast“ ist wohl Ersatzwort für ndki- (Lit. in ΚΕΙ͂ΝΑ I
+  168; s. Ins, a.a.O. 124); über eine frühere Zusammenstellung von
+  nak NomSg / nis(ä)- s. die Lit. in AiGr 1 18.228} III 234.
+                            nis- - nisadá-                            47
+
+nis- (nih-, nir-, nis’, nis°) hinaus, aus, weg von, darüber hinaus,
+   ent-, un-, nicht- (RV +; in nominaler und verbaler Kompo-
+   sition [vereinzelt alleinstehend, AV], z.B. nis-päd- f. Aus-
+   wurf, Exkrement [RV +; AiGr II 2,16], nis-kevalya- jemandem
+   ausschließlich zukommend [RV-Kh +], nih-sáranavant- aus-
+   fließend [SB], nir-avd- ohne Schutz [RV], nir-rti- [o. II 45],
+   nir-dasa- über zehn hinausgehend, über zehn Tage alt [AitB
+   +], nir-mala- ohne Flecken, sauber [Up +], mir-máya- ohne
+   Wunderkraft [RV +], nır-hasta- handlos [AV], nisvará- lautlos
+   [*nis-s°, RV], bzw. nis-kart herausbrechen [RV +], nir-nay'
+   wegführen [AV +], nis-car' herausgehen [RV +], usw. usw.;
+   s AiGr II 1,237,257,260,283f., III 398). - Mi., nu., dard., ni,
+  rB pa. nim-mala- sauber, aSkun nimala- die Kleidung wech-
+  sein, singh. nimala rein, fleckenlos (usw.; Tu S. 407bff.,
+  414aff., 421af., 4228, TuAdd S. 59b, 60aff.). - Iir., aav. nis
+  (Y 44,13 nif ... näsämä wir sollen hinausschaffen), jav. nis-
+  ura- der äußerste, niz-baraiti- f. das Wegtragen, niz-dara.-
+  dairiiat er risse heraus, ap. (njj-) = /niZ-/ in qifaynv = /niZ-
+  ayam/ ich ging weg (HoffmA 628, Schm, CompLI 68 Anm.
+  27) - Idg. *nis hinaus, weg’? Vgl. präslav. *nis-tio- (— nistya-)
+  in aksl. niste ‘arm’ (Vasmer II 2221, mit Lit.).
+     Aber gr. &vic ‘ohne’ ist unverwandt fältere Lit. in AiGr I 77,
+  11 1.73); s. die Lit. in WH II 543, KEWA II 171.
+     Über ,nirvafic-* (KB) s vielmehr AiGr II 2,153.
+
+nisangin-, a-nisangd-, nisangadhi- ("gáthi-), s.u. SANJ.
+
+nisädd- m. Pl. Name einer aus den däsd- hervorgegangenen
+  Bevölkerungsgruppe, die nicht dem arisch-brahmanischen
+  Gesellschaftsverband angeschlossen war; als Räuber bzw.
+  Jager geschildert (Kath +, Mylius; jünger gleichgesetzt mit
+  den bhilla- "Bheel’); nisada-sthapati- m. Oberhaupt der n°
+  (MS, AiGr II 1,265). - Pkt. nisada-/nisaya-. - Wohl ein vor-
+  arischer Stammesname.
+
+    H Berger, WZKS 3 (1959) 45f. verbindet n° mit dem Volks- und
+  ! andesnamen ep. nisadha-/naisadha- (— nala-), SB naisidhá- (~
+  nadd-, 9 118), pkt. nisadha-. - Schwerlich ist n^ einfach „the settled
+  abongines“ (ni + SAD, nach A. Weber; MK I 454).
+48                          niskd- - nistrimsin-
+
+niskd- m. ein silberner oder goldener Halsreif; auch als Wäh-
+   rungseinheit dienend (RV +; RauMetalle 52f., vgl. H. W
+   Bodewitz, WZKS 29 [1985] 15 [~ Brustschmuck], F. M. Smith,
+     WZKS 32 [1988] 70); niska-kantha- (AVP, Br +), niskd-griva-
+     (RV, AV), niskin- (SB) einen n? am Halse tragend. - Mi,
+     singh., pà. nikkha-, nekkha- m. n. goldener Halsschmuck,
+     Golidmiinze; u.a. (Tu 7470). - Nicht klar.
+
+       Zur Annahme eines Fremdwortes s. die Lit. in KEWA II 169,
+     ΠῚ 747, Dand, VedBibi H 265 (Nr. 4626). ~ lir. *nais ‘to bind up’
+     (= nis-kd-) gewinnt Bai, BSOAS 23 (1960) 23, Dict 185a aus der
+     Glossierung zu TA ^istyà, nisti- = ,grivabandha-“, und Nu.-Wörtern
+     wie kati niste ‘Gürtel’ (s. auch Tu 7500); unklar bleibt RV 10,101,12
+     nistigri- £. Name der Mutter Indyas.
+       Uber eine ältere idg. Deutung von niskd- s. KEWA TI 169, mit Lit. -
+     [Ved. niská- für *ni-ig-d- (— ni, SANJ) „das sich abwärts (An)
+     Gehángte*. T Oberlies, HS 105 (1992) 98}.
+
+
+niskásá- (kàsá-), s. KAS (o. I 331).
+
+
+nistákvari-, s.u. TAK, 0.1610.
+
+
+nistarkyá-, s. TARK.
+
+
+nistigri- : Unklar (s.u. niskd-).
+
+nistya- (tiya-) Adj. auswärtig, fremd (RV +). - Ableitung von
+   nig- (= nrtya- "ni, o. 11 43), AiGr II 2,698; urverwandt
+     wohl aks}. nists ‘arm’, wenn präslav. *nis-tío- (s.u. nis-, o. ἢ
+     41).
+
+       Hierher nistyd- € Name eines naksatra-; der Stern Arcturus (=
+     Alpha Bootis), ursprünglich aber wohl Kappa Virginis (Kath +,
+     Mylius)? Vgl. MK 1455, Scherer, Gestirnnamen 156f. - Über TA
+     nistya (~ nisti- ,grivabandha-*?) s,u niska-.
+
+
+nissapin-, s.u. SAP.
+
+
+nistrimsin- Adj. ein Schwert führend (SrSü); nistrimsa- m.
+     Schwert (ep. +). - Nicht klar.
+                             nih- ~ nidd-                              49
+
+     Liegt das Etymon einfach in nis-trintsa- ‘mehr als dreißig’ (Vartt
+   zu Pan, AiGr IH 398), weil das Schwert “über dreißig Daumen-
+   breiten’ hatte (s. PW IV 259, Hauschild I 253b)? - Sanskritgemäße
+   und etymologisierende Rückbildung eines mi. "mitthinha- < aia.
+   ss-tiksna- "überaus scharf" erwägt KEWA If 170.
+
+aih-, nur AV 2,6,5, VS 27,6, AVP 3,33,6 : Bedeutung und Her-
+   Aunft nicht gesichert.
+    Fin negativer Begriff; „Durchbohrung“ wäre möglich, vgl. Schi,
+   Wn 31 (~ NIKS, jav. naéza-, o. 11 41). Doch könnte (neben sridh-
+   न ehlschlag! stehend) nih- auch etwa Niedergestrecktsein’ bedeuten
+   und s-lose Nebenform zu TA snih- sein (~ SNEH; s. L Renou,
+   Fs Turner 121 und das Folgende). - Bei Schi, 2.2.0. richtig gegen
+   die Annahme, nih- sei aus aid- entstellt.
+
+
+nihaka- f., nur RV 10,97,13 “Κανᾶ, TS 7,5,11,1 (= Käth 5,5,2)
+   hayai: übersetzbar als ‘Schneesturm, Schneegestóber' (L.
+   Renou, Fs Turner I 20f.).
+     Im Falle dieser Übersetzung Ableitung von *(s)nih- ‘Schnee’
+  (= gr. vip-, lat. niv-, s. auch Frisk II 299), zu idg. *sneig"" ‘kleben,
+  kleben bleiben, (niedergestreckt) liegen bleiben’ (vgl míh-7) ~
+   schneien, Schnee’ (pkt. sineha- ‘Schnee’), s.u. SNEH. ~ Renou,
+  44 O , altere Lit. in KEWA II 170. S. nihärd-.
+
+
+M. ९ NAY?
+
+niksana- (pra-niks), s. NIKS, o. II 41.
+
+mica (cat, ^cáih), nicina-, s.u. nyáfic-.
+
+πιάά- (nild-) m.n. Nest, Lager, Vogelnest (RV +); nidi- m. Nest-
+  genosse (RV 10,92,6; AiGr II 2,304); niday’ ‘to place in a
+  nest’ (RV 6,35,2; Jamison, -dya- 84f., mit Lit.). - Mi.,      nu., ks.,
+  pa nila-, nidda- m. Nest, u.a. (Tu 7541; HinMi 74, mit Lit.). -
+  ldg *nisdó- (s.u., lat. nidus m. Vogelnest, Wohnsitz, mir. net,
+  ahd ae. usw. nest ‘Nest’.
+     S die Lit. bei Fraenkel 383a, KEWA II 171f. - Idg. */ni-sd-ó-/
+  i*[nizdó-]) ist offenbar aus πὶ (nicht notwendig ‘ni ‘in’, s. die Lit.
+50                              nita- - nira-
+
+     in AsGr II 1? Nachtr 22, ad 70,19} und *sd’ ‘sitzen’ (SAD, vgl. mp
+     nigém [(n$dm)] < *ni-sad-man- ‘Vogeinest’, Nyb, ManP II 142b) kom.
+     poniert; s. arm. nstim ‘setze mich’ (o. 1 40), wovon nist ‘Lage
+     Sitzen, Residenz’ gebildet wurde (das nicht ‘[VogelJNest’ bedeute:
+     und somit keine urverwandte Entsprechung von nidd- usw. ist, «
+     bereits Hüb, Gr 478).
+
+
+nita-, nitamisrd-, s. návanita-, o. Il 25f.
+
+
+ninaha-, s. NAH.
+
+
+nipa- Adj. tiefliegend, tief (Kath); nipya- in der Tiefe befindlich
+     (VS +). - Ni, s. Tu 7548. - Aus *"ni-hyp-o-, etwa ‘zum Wasser
+     hinab’, s. ai, dp- (~ anüpd-, dvipá- usw., 0.175, 769, AiGr
+     1103, IT 1,100); vgl. jav. nii-àpam (o. II 40).
+
+
+nira- n. Wasser (Up, Naigh, ep. +; der Sprache des SB ange-
+   hórig, wenn der Flufname sadänıra- [SB +] 'stets Wasser
+     habend' bedeutete [AiGr II 1,287,299, Frisk, Nom 38 Anm.
+     1j. ~ Mi., nu. (?), ni, pkt. nira- n., la. nir m. "Wasser', u.a,
+     viell. auch aSkun ail f. ‘See’ u.a. (Tu 7552). ~ Den nicht der
+     ältesten Sprache angehörigen indoar.           Wörtern steht ein
+     gemeindravid. Wort für ‘Wasser’ gegenüber (ta., kan., ma
+     usw. nir, brahui dir ‘Wasser’), das in das grammatische System
+     des Dravid. eingefügt zu sein scheint (— ta. nir-pp-, nir-tt-
+     ‘waBrig werden’) und Nebenformen als Folgen alter lautlicher
+     Prozesse erkennen läßt (ta. ir Feuchtigkeit’ u.a.); Entlehnung
+     des ~ die alten Erbwörter für ‘Wasser’ (wie dp-, uddn-, vàr-)
+     ablósenden - nira- aus dravid. *nir ist wahrscheinlicher als das
+     Gegenteil.
+
+        Vgl. die Lit. in KEWA U 172, Meenakshisundaran 159f., DED
+     328af, Mh, VJa 1989/2,12. - Iran Entsprechungen sind nicht zu
+     sichern. Jav. ,nira-* (Yt 8,38, Justi, Hb 173a) existiert nicht (Bthl
+     Wh. 184); khot. nira- "Wasser' stammt wohl aus dem Indoar. (anders
+     Bai,   BSOAS 23 [1960] 22f [mit Zurückziehung von Alterem, 23
+     Anm. 1], Dict 185a). Die vorgeschlagenen iir. (— idg.) Deutungen sind
+     Wurzel-Etymologien, z. B. ni-ra- (Naigh "rá-) — nay! "lFeuchten' (? -
+     5.0. Il 18£), zusammen mit nıla-; für Thi, ZDMG 111 (1961) 106 =
+
