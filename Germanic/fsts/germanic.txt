@@ -331,6 +331,11 @@ define pgrmWeakTailVowel [
     e:{*e} r:{*r} a:{*a} z:{*z} |
     e:{*e} z:{*z} |
     i:{*i} l:{*l} a:{*a} z:{*z} |
+    # Gen.sg. of *-ila- a-stem masc.: PGmc *-ilas → OE -les (paradigm-cell
+    # target for *þístilas → þistles; see DEV_NOTES §17.18). Parallel to
+    # *-ilaz nom.sg. but with gen.sg. *-as ending — cluster is medial,
+    # so no parasiting (Campbell §363, Hogg §6.36).
+    i:{*i} l:{*l} a:{*a} s:{*s} |
     i:{*i} l:{*l} ō:{*ō} |
     i:{*i} l:{*l} ō:{*ō} n:{*n} |
     i:{*i} n:{*n} a:{*a} z:{*z} |
