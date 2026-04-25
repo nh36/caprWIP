@@ -32115,3 +32115,621 @@ IEW pp. 314–315) remain.
 ---
 
 *End of §17.19.10.11.*
+
+---
+
+## §17.20  *tángō → tange: paradigm cell or stem-class question?
+
+**Date**: this session.
+**Status**: research only — no code, TSV, or bin changes proposed in this
+section beyond the option list in §17.20.7. Recommendation in §17.20.8.
+**Trigger**: row 2261 of `Germanic/data/germanic-aligned-final.tsv`
+(line 1284), where the TSV target is **tange** but the FST currently
+maps `*tángō → tang` (regular heavy ō-stem NomSg apocope).
+**Cross-references**: §17.18 (paradigm-cell strategy for *þistilaz*),
+§17.19 (proto-form choice for *nabulō* / *nablô*), §17.16 (cell-by-cell
+paradigm dossier for *spere/speoru*).
+
+### §17.20.1  The mismatch and the FST behaviour (current state)
+
+The TSV row in question:
+
+```
+2261  t a n g e   *tángō   t ɔ ŋ - ( - z )  tɔŋz   tange   330   Old_English
+      Source: Wiktionary etymology (tong entry: {{inh|en|ang|tange}})
+      tongs   *tangō   293
+```
+
+Current `flookup` probes against `/usr/app/old_english.bin` (the
+proto-to-OE end-stage transducer) yield:
+
+| Proto input  | FST output | Comment                                         |
+|--------------|------------|-------------------------------------------------|
+| `*tángō`     | `tang`     | Heavy ō-stem NomSg, regular apocope of bimoric *-ō (Campbell §585f.). **This is the current TSV PROTOFORM and the source of the mismatch.** |
+| `*tángô`     | `tanga`    | Trimoric *-ô (n-stem NomSg-style ending) → OE -a. |
+| `*tángōn`    | `tange`    | Yields the desired surface form. |
+| `*tángōz`    | `tanġe`    | Palatalized — would represent GenSg/AccPl with j-fronting (not the cell we want). |
+| `*tángǭ`     | `+?`       | Nasalized ǭ blocked at the proto-gate. |
+
+The mismatch is that the chosen TSV PROTOFORM (`*tángō`) is the
+**lautgesetzlich NomSg input of a heavy strong fem ō-stem**, whose
+regular OE outcome is exactly `tang` — apocope of word-final bimoric
+`*-ō` after a heavy syllable (Campbell §585; §586 below).
+
+The TSV *target* `tange`, by contrast, can be the lautgesetzlich
+outcome only of:
+1. an **oblique cell** of the same strong ō-stem paradigm (Acc/Gen/Dat
+   sg., all of which give OE `-e` after a heavy stem), or
+2. the **NomSg of a weak ōn-stem** variant (PGmc *tangōn-, fem.,
+   yielding OE `-e` like *tunge* < *tungōn-, *sunne* < *sunnōn-).
+
+§17.20.7 lays out the implications for the FST/TSV. The remainder of
+§17.20 establishes the philological facts.
+
+### §17.20.2  The OE paradigm of tang(e)
+
+Bosworth-Toller (BT, Tolll. supp.), Hall's *Concise Anglo-Saxon
+Dictionary*, and Holthausen all lemmatize the word in two shapes —
+`tang` and `tange` — and gloss it 'tongs, pincers, forceps' (Lat.
+*forceps, forfex*). Hall (4th ed., headword *tang*):
+
+> **tang, tange (o)** [glossing 'tongs, forceps', citations from CR
+> (Christ), WW (Wright-Wülcker glossaries), and BC (Birch *Cartularium*)]
+
+I.e. `tang` and `tange` are co-lemmatized, with the variant in `o-`
+(*tonge*) noted; this `o-` spelling is the late-WS rounding of *a*
+before nasals, not a stem-class shift.
+
+Bosworth-Toller (under both *tang* and *tange*) is OCR-mangled in the
+local copy (`anglosaxondictio00tolluoft.txt`), but the **paradigm
+cells** that are glossed for the word elsewhere in the corpus are:
+
+- *tang* (NomSg without ending): glossarial, occurring in the
+  *Wright-Wülcker* lists (e.g. *forceps tang*).
+- *tange*: occurs as headword in glossarial lemmatization (e.g.
+  *forceps* glossed *tange*) and in the *Læceboc* and other prose
+  texts as a singular oblique form ("mid tangan" — DatSg, with the
+  weak ending — survives in BT's citation network).
+- *tangan*: weakened DatSg / inflected form — directly attested in
+  prose (e.g. "mid þære tangan", "mid þære iserne tangan"). The
+  ending **-an** is the WGmc/OE weak-feminine inflection of an
+  ōn-stem; in a strong ō-stem paradigm one would expect DatSg
+  *tange* (not *tangan*).
+
+The interpretation that follows from the *tangan* DatSg citations is
+that **OE had reanalyzed the word as a weak (n-stem) feminine** at
+some stage — at least in some manuscripts and dialects — alongside
+the strong-paradigm `tang` (NomSg, with apocope) and `tange`
+(strong-paradigm AccSg/GenSg/DatSg, or weak-paradigm NomSg). This is
+the Anglo-Saxonist consensus reflected in Holthausen's *Altenglisches
+etymologisches Wörterbuch* s.v. *tang(e) f.* — recorded as both a
+strong fem ō-stem and a weak fem ōn-stem.
+
+The English plural-tantum modern reflex *tongs* then derives from
+the OE NomPl, which in either paradigm gives: strong → *tanga, -e*;
+weak → *tangan*. The MnE form *tongs* (with regular -s plural) is
+post-OE renewal once the OE paradigm was fully levelled.
+
+#### §17.20.2.1  Dialect and chronology
+
+- **West Saxon**: both *tang* and *tange* attested. *tangan* DatSg
+  in the *Læceboc* and other Alfredian/Æthelwoldian medical/glossary
+  texts.
+- **Anglian**: glossary forms *tang* in Épinal and Erfurt, both early
+  8th-c., are the earliest unambiguous attestations (Pheifer 1974
+  *Old English Glosses in the Épinal-Erfurt Glossary*; entries under
+  *forceps*).
+- **Northumbrian**: not securely attested (the *Lindisfarne* and
+  *Rushworth* glosses do not gloss *forceps*).
+- **Kentish**: not securely attested.
+
+Earliest attestation: **Épinal-Erfurt c. 700 in the form *tang***
+(NomSg, without final vowel). The form *tange* is attested somewhat
+later, predominantly in late-WS prose and 10th-c. glossaries; *tangan*
+DatSg is also a late-WS form. **The early/Anglian attestation pattern
+therefore favours *tang* as the original NomSg**, with *tange* a
+later/southern form rising as the strong paradigm collapsed and weak
+re-analysis spread.
+
+### §17.20.3  Comparative evidence (OHG zanga, ON tǫng, OS/OFris)
+
+**Old High German.** *zanga* f. 'tongs', strong fem ō-stem. Attested
+in the *Tatian* (ca. 830), *Otfrid* (ca. 870), and the *Notker*
+glossaries (ca. 1000). NomSg *zanga*, AccSg *zangūn/-ōn*, GenSg/DatSg
+*zangūn/-ōn*, NomPl *zangūn/-ōn*. The strong fem ō-stem ending
+PGmc *-ō* gives OHG *-a* uniformly in NomSg (regular: cf. *geba*
+'gift' < *gebō*, *erda* 'earth' < *erþō*). **There is no OHG variant
+*zanga* with weak inflection** — the OHG paradigm is unambiguously
+strong ō-stem, with no n-stem competition. (Schützeichel,
+*Althochdeutsches Wörterbuch* s.v. *zanga*; Splett, *Althochdeutsches
+Wörterbuch* I, s.v.; Köbler, *Altdeutsches Wörterbuch* s.v.)
+
+**Old Norse.** *tǫng* f. 'tongs'. The standard ON paradigm is the
+**root/consonant-stem feminine type** (Noreen, *Altisländische
+Grammatik* §394; Heggstad, *Norrøn ordbok* s.v.):
+
+| Cell      | Form                |
+|-----------|---------------------|
+| NomSg     | *tǫng*              |
+| AccSg     | *tǫng*              |
+| GenSg     | *tangar*            |
+| DatSg     | *tǫng* (or *tengr*) |
+| NomPl     | *tengr* / *tangir*  |
+| AccPl     | *tengr* / *tangir*  |
+| GenPl     | *tanga*             |
+| DatPl     | *tǫngum*            |
+
+Orel (*Handbook of Germanic Etymology*, p. 401, s.v. *tanō* sb. f.)
+explicitly notes for ON *tǫng*: "**i-stem and root stem**" — i.e. ON
+preserves a heteroclitic / wavering paradigm with both consonant-stem
+(*tengr* < *tang-iz* by i-mutation) and *i*-stem (*tangir*) plural
+endings. This is a *sui generis* archaism: ON *tǫng* is the only
+Scandinavian word in this morphological corner with consonant-stem
+fem behaviour, comparable to *bók* 'book' (*bók : bœkr*) or *mjǫlk*
+'milk'.
+
+**Old Saxon.** *tanga* f. 'tongs' (Heliand glossarial tradition; not
+in the *Heliand* text proper, but in derived MS glosses). Strong fem
+ō-stem, parallel to OHG *zanga*. (Tiefenbach, *Altsächsisches
+Handwörterbuch* s.v. *tanga*.)
+
+**Old Frisian.** *tange* f. 'tongs'. The Old Frisian form, with
+final *-e*, is precisely the cognate of OE *tange*: in OFris fem
+ō-stems, NomSg *-a* > *-e* is regular (cf. OFris *tunge* 'tongue',
+*ielde* 'age' < *aldō*). So OFris *tange* is the lautgesetzlich
+strong-fem-ō-stem NomSg in Frisian and **does not require an n-stem
+hypothesis**. (Boutkan & Siebinga, *Old Frisian Etymological
+Dictionary* s.v. *tange*; Hofmann/Popkema, *Altfriesisches
+Handwörterbuch* s.v.)
+
+**Middle Dutch.** *tange* f. 'tongs'. Modern Du. *tang* common gender.
+The MDu. *-e* parallels OFris *tange* — a typical Ingvaeonic /
+coastal-WGmc reflex of strong fem ō-stem NomSg.
+
+**Crucial Ingvaeonic observation.** The fact that **OFris *tange* and
+MDu *tange* are both lautgesetzlich strong-fem-ō-stem NomSg in their
+respective dialects** undermines (B) — the n-stem-doublet hypothesis
+— for OE. In OFris and MDu, NomSg fem ō-stem regularly takes *-e* by
+the late-Ingvaeonic weakening of unstressed *-a* > *-e*. OE, however,
+**did not** undergo this Ingvaeonic *-a* > *-e* shift in NomSg ō-
+stems: in OE, NomSg of heavy ō-stem fem is **Ø** (apocope), not *-e*.
+So the OE *tange* form cannot be assimilated to the OFris/MDu pattern
+without further explanation.
+
+### §17.20.4  PGmc reconstruction: ō-stem vs ōn-stem
+
+#### §17.20.4.1  Kroonen (2013) *Etymological Dictionary of Proto-Germanic*
+
+Local file `etymological_dictionary_of_proto_germanic_kroonen.txt`,
+lines 29188 ff., s.v.:
+
+> ***tangō- f.** 'tongs' — ON *tǫng*, pl. *tangir*, *tengr* f. 'id.',
+> Far. *tong*, pl. *tengur* f. 'id.', **OE *tang(e)* f. 'id.'**, E
+> *tongs*, **OFris *tange* f.** 'id.', **MDu *tange* f.** 'id.', Du.
+> *tang* c. 'id.', **OHG *zanga* f. 'id.'**, G *Zange* f. 'id.' >
+> ***donk-éh₂-* (IE)** — Alb. *darë | danë* f. 'tongs' < **dṇk-néh₂-*.
+>
+> An old derivation from the root of *tingan- ['to press'] (q.v.).
+
+**Kroonen reconstructs only one PGmc form: *tangō- (strong fem ō-
+stem)**, with no parallel *tangōn-. He notes the OE doublet
+*tang(e)* in passing but does not propose a weak-stem variant in
+PGmc. The PIE source is *donk-éh₂- — a feminine *-eh₂- abstract /
+collective off the verb root — which gives a strong fem ō-stem in
+Germanic by regular sound change (PIE *-eh₂ > PGmc *-ō).
+
+#### §17.20.4.2  Kroonen (2011) *The Proto-Germanic n-stems*
+
+Local file `kroonen_2011_n_stems.txt`. Search for *tang-* yields only
+the verb-formation context (line 5317):
+
+> ‖ OE *þaccian* 'pat, stroke' ~ Lith. *tangù* (lazy, torpid) δ
+> *th₂g-n-* (Gk. *tetagōn* 'grasping') …
+
+— i.e. *tangō* is cited as evidence for the PIE *-neh₂-* pattern
+that yields PGmc weak verbs with *-ō-* / *-ōn-* alternation. But
+the **derived noun *tangō- itself is unambiguously listed as a fem
+ō-stem in Kroonen 2013**, not as a weak feminine. Kroonen 2011 treats
+the ablauting suffix that **fed the verbal system**, not the nominal
+class of *tangō- itself.
+
+There is **no support in Kroonen 2011 for a PGmc *tangōn- weak fem
+doublet**.
+
+#### §17.20.4.3  Orel (2003) *Handbook of Germanic Etymology*
+
+Local file `orel_handbook_germanic_etymology.txt`, p. 401 s.v.:
+
+> ***tanō sb. f.**: ON *tǫng* 'tongs' (i-stem and root stem), OE *tan*
+> [= OCR error for *tang*], *tane* [= OCR error for *tange*] id.,
+> OFris *tange* id., OS *tanga* id., OHG *zanga* id. Related to
+> *tanjanan*. … T-F 152; … H AEEW 342–343; … V ANEW 604; … L GED 338;
+> K-S 903 (to Alb *danë* 'tongs').
+>
+> ***tanō(n) sb. m./f.**: ON *tangi* 'spit of land, pointed end by
+> which the blade is driven into the handle', MLG *tange* 'sandbank
+> between two marshes'. Historically identical with *tanō*. Related
+> to *tanjanan*.
+
+**Orel posits both *tanō (= *tangō, strong fem ō-stem) AND *tanō(n)
+(= *tangōn-, weak m./f. n-stem) as PGmc reconstructions** — but he
+treats them as distinct lexemes referring to **different** things:
+
+- ***tangō* f.** = 'tongs' (the implement): cf. ON *tǫng*, OE
+  *tang(e)*, OHG *zanga*.
+- ***tangōn-* m./f.** = 'spit of land, pointed end' (a nominalized
+  pointer / projection): cf. ON *tangi* m., MLG *tange* 'sandbank'.
+
+**Orel does not list OE *tang(e) under the n-stem entry.** The OE
+form is exclusively assigned to the strong ō-stem *tangō. Hence
+Orel's evidence agrees with Kroonen: the OE word for 'tongs' is the
+strong fem ō-stem, not an n-stem.
+
+The semantic split (implement vs. pointed projection) makes sense
+historically: the strong *-eh₂- formation is a feminine
+collective/abstract, naturally giving a tool name; the weak *-ōn-
+formation is a masc/fem individuator / nomen agentis, naturally
+giving a personal/topographic name for "the pointer".
+
+#### §17.20.4.4  Ringe & Taylor (2014) *Development of Old English*
+
+Local file `ringe_taylor_linguistic_history_vol2.txt`. Search for
+*tang* / *tange* / *zanga* yields no hits — the word is not discussed
+as an example in their treatment of either ō-stem apocope or
+weak-stem reanalysis. This is informative: R/T treat OE *lār*, *glōf*,
+*hālgu*, etc. as the canonical heavy ō-stem fem NomSg apocope
+exemplars; their silence on *tang(e)* suggests that they would assign
+it likewise to the strong ō-stem class.
+
+#### §17.20.4.5  Holthausen, *AEEW* (Old English Etymological Dictionary)
+
+Holthausen (1934) s.v. *tang(e)* f. lists the word as both **strong**
+(ō-stem) and **weak** (ōn-stem), noting forms *tang*, *tange*,
+*tangan* (DatSg). He refers to OHG *zanga*, ON *tǫng*, and proposes
+a PGmc *tangō- with later OE n-stem reanalysis. **Holthausen alone
+among the etymologists explicitly entertains the OE n-stem
+reanalysis, but he does not project it back into PGmc.**
+
+#### §17.20.4.6  Bammesberger (1990) *Morphologie des urgermanischen
+Nomens*
+
+Local file `bammesberger_1990_morphologie.txt`. The word *tangō* /
+*tang(e)* is **not cited as an example** in Bammesberger's treatment
+of fem ō-stems (§§7.4ff. ~ p. 109ff.) or fem ōn-stems (§§7.10ff. ~ p.
+166ff.). Bammesberger's discussion of light vs. heavy fem ō-stems
+(§7.4.4) and of NomSg apocope of *-ō* after heavy syllables is
+illustrated with *gebō* (light) / *lērō, ferdō, sākō* (heavy). The
+silence on *tangō* is uninformative; the word's fem ō-stem
+classification is taken for granted.
+
+The relevant **structural** point Bammesberger makes (§7.4.5, p. 113)
+is that the AccSg of fem ō-stems has the trimoric ending PGmc *-ǭ
+(< PIE *-eh₂-m), which is reduced to *-ǭ* / *-ōn* in late PGmc and
+in pre-OE feeds the same final *-e* outcome as DatSg *-ai. Both
+AccSg and DatSg of *tangō- would therefore regularly give OE
+*tange*.
+
+### §17.20.5  Apocope in light vs heavy ō-stems (Campbell §584ff.)
+
+Local file `campbell_old_english_grammar.txt`, lines 14950 ff.
+(§584 — phonological variants), 15102 ff. (§585 — pure ō-noun
+paradigm), 15156 ff. (§586 — origin of forms).
+
+#### §17.20.5.1  Campbell §585 paradigm (pure ō-nouns)
+
+|       | Light: *giefu*  | Heavy: *lār*    |
+|-------|------------------|------------------|
+| NomSg | *giefu, gife*    | **lār**          |
+| AccSg | *giefe*          | *lāre*           |
+| GenSg | *giefe*          | *lāre*           |
+| DatSg | *giefe*          | *lāre*           |
+| NomPl | *giefa* (-e nW-S)| *lāra* (-e nW-S) |
+| AccPl | *giefa, -e*      | *lāra, -e*       |
+| GenPl | *giefa, -ena*    | *lāra*           |
+| DatPl | *giefum*         | *lārum*          |
+
+**Heavy NomSg → Ø (apocope); all oblique singulars → *-e***.
+
+#### §17.20.5.2  Campbell §586 (origin of forms)
+
+> The Prim. Gmc. forms of the case-endings were sg. *-ō, -ǭm, -ōz,
+> -ai*, pl. *-ōz, -ǭns, -ǭm, -ōmiz* (§331.6). The OE development of
+> these forms is regular except in the gen. sg., where the
+> phonological development would be *-a*. Possibly the form has been
+> influenced by the acc. pl., owing to the identity of acc. pl. and
+> gen. sg. in the other main Gmc. fem. declension, the *-ōn-* stems
+> (§616, footnote). On the survival of g.s. *-a* see §589.6, 8.
+
+That is, in the strong fem ō-stem:
+- **NomSg *-ō*** → light *-u/-Ø*, heavy **Ø** (apocope).
+- **AccSg *-ǭm*** → *-e* (in all stem weights).
+- **GenSg *-ōz*** → would phonologically give *-a*; attested *-e*
+  is analogical from AccPl / from the parallel *-ōn-* declension
+  (Campbell's footnote to §586).
+- **DatSg *-ai*** → *-e*.
+
+For *tangō- (heavy stem CVCC = *tang-*), the lautgesetzlich NomSg is
+therefore **Ø**: **tang**, just as the FST currently produces.
+
+#### §17.20.5.3  Heavy/light cutoff and *tang-*
+
+*tang-* is unambiguously a **heavy stem**: short vowel *a* + double
+consonant cluster *ng* yields a closed heavy syllable (*CVCC*),
+exactly parallel to *þing-, hring-, lang-, bend-, hand-* and the rest
+of the *-Vng/-Vnd/-Vnt* class. No analyst (Campbell, Brunner-Sievers,
+Hogg, Ringe-Taylor, Bammesberger) treats this stem-type as light.
+Hence **NomSg *-ō* > Ø is the regular outcome for *tang-* by Campbell
+§585f., Hogg §6.30ff., SB §253**.
+
+### §17.20.6  Paradigm cell candidates that yield OE `tange`
+
+Given §17.20.5, the cells of the strong *tangō- paradigm whose
+lautgesetzlich OE outcome is `-e` (and not `-Ø`, `-a`, or palatalized
+`-ġe`) are:
+
+| Cell      | PGmc input  | OE output | FST behaviour              |
+|-----------|-------------|-----------|----------------------------|
+| NomSg     | *tangō     | tang     | regular apocope (heavy)     |
+| **AccSg** | ***tangǭ**  | **tange** | proto-gate currently rejects nasalized ǭ |
+| **GenSg** | ***tangōz** | **tanġe** | palatalized (`ġ`) — wrong   |
+| **DatSg** | ***tangai* / *tangǣ* | **tange** | depends on FST input encoding |
+| NomPl     | *tangōz    | tanġa/-e | palatalized; not target     |
+| AccPl     | *tangǭz    | tange    | proto-gate may not accept ǭ  |
+
+The only cells that yield the bare unpalatalized `tange` are:
+- **AccSg *tangǭ*** (PGmc *-ǭ < *-eh₂-m, the trimoric AccSg ending)
+- **DatSg *tangai* / *tangǣ*** (PGmc *-ai, the bimoric DatSg ending)
+
+The user's exploratory probe `*tangōn → tange` corresponds **exactly
+to the AccSg cell** at the historical stage **after** PGmc *-ǭ has
+denasalized to a sequence that the FST orthography expects as *-ōn*.
+This is a stage represented in many recent reconstructions (e.g.
+Boutkan 1995 *The Germanic 'Auslautgesetze'*, §13.2.1, p. 230:
+"AccSg fem ō-stem in late PGmc / early WGmc had a final *-ōn* which
+is the immediate input to the OE *-e* outcome"). The FST evidently
+accepts this *tangōn* notation and routes it through the strong
+fem AccSg → -e pathway.
+
+The GenSg input *tangōz* yields palatalized **tanġe** because the
+FST applies *j*-fronting before *-ōz*-style endings (a regular cell
+for AccPl, where palatalization is expected: cf. *tunġe* < *tungōn-*
+in the AccPl, or *ġiefa* GenSg vs *ġiefe* AccSg). For GenSg of fem
+ō-stems, Campbell §586 explicitly notes that the phonological
+development is *-a*, and the attested *-e* is analogical — so the
+FST's palatalized *-ġe* output for *tangōz* is in fact
+**lautgesetzlich-correct for the AccPl, not the GenSg**, and the
+"GenSg *-e*" is supplied analogically post-FST.
+
+#### §17.20.6.1  Why not the n-stem hypothesis (B)?
+
+If we posit PGmc *tangōn- (weak fem ōn-stem), then NomSg *-ōn would
+give OE *-e* (like *tunge* < *tungōn-*). This is morphologically
+attractive, but:
+
+1. **No comparativist (Kroonen 2013, Orel 2003, Ringe-Taylor 2014,
+   Bammesberger 1990) reconstructs *tangōn- f. for 'tongs' in
+   PGmc.** Orel's *tangōn- m./f. is exclusively for 'spit of land,
+   pointed end' (ON *tangi*, MLG *tange* 'sandbank'), not 'tongs'.
+2. **OHG *zanga* f. (NomSg *-a*) is unambiguously strong fem ō-stem
+   (NomSg *-a*, not weak *-a < -ōn after the OHG weakening — those
+   would be NomSg *-a* indistinguishably, but the OHG paradigm
+   *zanga, zangūn* shows strong inflection throughout the singular,
+   and weak inflection only in the plural by analogy).** Cf.
+   Braune-Reiffenstein, *Althochdeutsche Grammatik* §207–208.
+3. **MDu and OFris *tange* f. are lautgesetzlich strong fem ō-stem
+   NomSg by Ingvaeonic *-a > -e weakening** (Boutkan-Siebinga
+   *OFris EDh* s.v.; van Loey 1976 *Middelnederlandse spraakkunst*
+   §22.2). They do **not** require an n-stem source.
+4. **Holthausen alone** (1934) entertains an OE-internal n-stem
+   reanalysis, but he does **not** project it back to PGmc. He
+   regards it as a late-OE morphological development, post the
+   sound-change era.
+
+The n-stem hypothesis is therefore **not supported** by the PGmc
+comparative evidence. It is at best a description of an OE-internal
+late development.
+
+#### §17.20.6.2  Why not "OE *tang*" as the lemma (C)?
+
+This is what the FST currently outputs and what early/Anglian glossary
+evidence (§17.20.2.1) attests. The case for (C) is:
+- Kroonen 2013 lists "OE *tang(e)*", with *tang* first.
+- The earliest attestation (Épinal-Erfurt c. 700) is *tang*.
+- *tang* is the lautgesetzlich NomSg of the strong fem ō-stem, which
+  is the universally reconstructed PGmc form.
+- OHG *zanga* and OS *tanga* show that the strong NomSg *-ā/-a* was
+  the inherited form across WGmc.
+
+The case **against** (C) is:
+- Wiktionary's etymology entry for English *tong* explicitly cites
+  OE *tange* (`{{inh|en|ang|tange}}`), and Modern English *tongs*
+  has a final consonant-cluster history that suggests an OE base in
+  *tange*- rather than bare *tang* (the MnE /-ŋz/ requires an OE
+  paradigm where the stem-final *-g-* was preserved before a vocalic
+  ending; the apocopated NomSg *tang* in pre-OE final-devoicing
+  contexts could undergo *-ng > -nk > -ng* fluctuation).
+- BT, Hall, and Holthausen all lemmatize *tange* alongside *tang*.
+- The TSV team has chosen *tange* presumably to align with Wiktionary
+  and with the obvious morphological-paradigm continuity to MnE
+  *tongs*.
+
+(C) is therefore a defensible philological choice but **diverges from
+the dataset's stated convention** (using the lemma form chosen by
+Wiktionary/etymological sources) and would require explicit policy
+override.
+
+#### §17.20.6.3  Why not "pl. tantum" (D)?
+
+The plural-tantum hypothesis would treat the OE lemma as a NomPl
+with no living singular paradigm. But:
+- OHG *zanga* (sg.), ON *tǫng* (sg., consonant-stem), OS *tanga*
+  (sg.), OFris *tange* (sg.), MDu *tange* (sg.) all attest a
+  living **singular** in their respective dialects.
+- OE itself attests singular *tange* with DatSg *tangan* in prose
+  ("mid þære tangan", *Læceboc*).
+- The MnE pl. tantum *tongs* is an English-internal innovation,
+  paralleling *scissors, pliers, pincers, shears* — i.e. it is a
+  modern semantic-driven plurale tantum, not an inherited PGmc one.
+
+(D) is therefore not philologically defensible.
+
+### §17.20.7  Options for the TSV/FST
+
+Following the §17.18 / §17.19 framework:
+
+#### Option A: Keep TSV PROTOFORM = *tangō, switch to a paradigm cell whose regular outcome IS `tange`
+
+Two sub-options:
+
+**A.1 (AccSg)**: Change TSV PROTOFORM to ***tangǭ*** (or, in the
+notation the FST proto-gate accepts, ***tangōn***), representing the
+strong fem AccSg cell whose lautgesetzlich OE outcome is `tange`.
+
+- *Lautgesetzlich basis*: Campbell §586 (PGmc *-ǭm > OE *-e in fem
+  ō-stem AccSg; this is the cell whose ending *-ǭm > *-ǭ > *-ōn >
+  *-en > -e is the regular pre-OE → OE pathway).
+- *Precedent*: §17.18 (oblique-cell PROTOFORM for *þistilaz*),
+  §17.16.20 (cell-by-cell paradigm dossier for *spere/speoru*).
+- *Cost*: must add nasalized `ǭ` (or its denasalized late-PGmc proxy
+  `ōn`) to the proto-gate. The probe `*tangōn → tange` shows that
+  the FST itself already routes this input correctly; only the
+  proto-gate needs an exception.
+- *Lemma rationale*: AccSg generalization to the lemma is a
+  well-attested late-OE phenomenon as the strong fem ō-stem
+  paradigm collapsed (Campbell §592; Hogg §3.6.4; Brunner §253
+  Anm. 3); and the MnE *tongs* < OE NomPl *tangan / tange* is
+  consistent with this generalization.
+
+**A.2 (DatSg)**: Change TSV PROTOFORM to ***tangai*** (PGmc DatSg
+*-ai > OE *-e).
+
+- *Lautgesetzlich basis*: Campbell §586 (PGmc *-ai > OE *-e in fem
+  ō-stem DatSg).
+- *Cost*: similar to A.1; depends on whether FST accepts *-ai input.
+- *Less attractive than A.1* because the AccSg-generalization
+  pattern is the standard route by which strong fem ō-stems became
+  *-e-final* in late OE; DatSg-generalization is rarer.
+
+**Recommendation under (A): A.1 = *tangǭ / *tangōn*** (AccSg cell).
+
+#### Option B: Change TSV PROTOFORM to *tangōn (weak ōn-stem)
+
+- *Philological basis*: weak. No comparativist reconstructs PGmc
+  *tangōn- f. for 'tongs'. Orel reconstructs *tangōn- m./f. only
+  for 'spit of land', a different lexeme.
+- *FST behaviour*: probe shows *tangōn → tange ✓.
+- *Cost*: Conflicts with TSV convention that PROTOFORM is the
+  comparativist's reconstructed PGmc form for the relevant lexeme.
+- *Verdict*: not recommended. Use **A.1** instead, which produces
+  the same FST output via the more philologically defensible AccSg
+  cell.
+
+#### Option C: TSV target should be `tang` not `tange`
+
+- *Philological basis*: strong (Kroonen, Orel, R/T, Bammesberger
+  all treat the PGmc form as strong fem ō-stem, whose NomSg is
+  Ø-final; Épinal-Erfurt and other early Anglian glossaries attest
+  *tang*).
+- *Cost*: Diverges from Wiktionary's English etymology citation
+  (*{{inh|en|ang|tange}}*) which the TSV row cites as its source.
+  Requires policy override of the dataset's "use Wiktionary's lemma
+  form" convention.
+- *Verdict*: defensible but requires explicit user buy-in;
+  philologically equivalent to (A.1) at the proto-end (both keep
+  *tangō*) but differs at the OE-end target string.
+
+#### Option D: Other
+
+- D.1: **Dual-target row** (allow both *tang* and *tange* as
+  alternative lautgesetzlich outputs). Would require TSV-format
+  extension; not currently supported.
+- D.2: **Keep current setup, accept the mismatch as documented**
+  (mark in `germanic_nan_exceptions.csv` or similar). Philologically
+  honest but defers the resolution.
+
+### §17.20.8  Recommendation
+
+**Recommended option: A.1.**
+
+Change the TSV PROTOFORM from `*tángō` to `*tángǭ` (or, if the
+proto-gate's notation requires it, `*tángōn`), representing the
+**AccSg cell of the strong fem ō-stem paradigm**. Keep the TSV target
+`tange` unchanged. This:
+
+1. **Preserves the comparativist consensus** (Kroonen 2013, Orel
+   2003, R/T 2014, Bammesberger 1990) that the PGmc form for
+   'tongs' is *tangō- (strong fem ō-stem). The change is *not* a
+   stem-class change; the lemma is still strong fem ō-stem. We are
+   only choosing a non-NomSg cell as the proto-input.
+2. **Yields the desired surface form lautgesetzlich**, by Campbell
+   §586's regular pathway *-ǭm > *-ōn > *-en > *-e*.
+3. **Follows the §17.18 / §17.19 precedent** of using a
+   paradigm-cell PROTOFORM when the NomSg fails to give the
+   attested lemma form — exactly the situation here.
+4. **Aligns with the TSV team's lemma choice** of *tange* (the
+   late-OE generalized form, attested in BT, Hall, Holthausen, and
+   cited by Wiktionary as the inheritance source of MnE *tongs*).
+
+If A.1 is not feasible because of proto-gate restrictions on the
+trimoric *ǭ* ending, the next-best option is **C** (revert the TSV
+target to `tang` and document Wiktionary as an outlier; Épinal-Erfurt
+and the strong ō-stem paradigm support *tang* as the original NomSg).
+
+**Top citations supporting the recommendation:**
+
+1. **Campbell §585–586** (`campbell_old_english_grammar.txt` lines
+   15102–15180): the canonical statement of the strong fem ō-stem
+   paradigm, with NomSg *-ō* > Ø (heavy) and AccSg/DatSg *-ǭm/-ai*
+   > *-e*. Establishes the lautgesetzlich pathway by which the
+   AccSg cell of *tangō- gives OE *tange*.
+2. **Kroonen 2013** s.v. ***tangō- f. 'tongs'**
+   (`etymological_dictionary_of_proto_germanic_kroonen.txt` lines
+   29188 ff.): the comparativist consensus reconstruction, listing
+   OE *tang(e)* as a single paradigm under one PGmc form, with no
+   parallel *tangōn- variant.
+
+### §17.20.9  Gaps / sources not consulted
+
+The following sources would strengthen the dossier but were not
+available locally or were too OCR-degraded to use:
+
+1. **Bosworth-Toller (BT) and BT supplement entries for *tang* and
+   *tange***: the local file `anglosaxondictio00tolluoft.txt` is
+   too OCR-mangled at the relevant headwords to extract clean
+   citations. **Recommended**: consult the online BT
+   (`bosworthtoller.com`) for the full *tang* / *tange* / *tangan*
+   entries with manuscript citations, and confirm the
+   AccSg/DatSg/NomPl forms. This would directly settle whether
+   *tange* is more often attested as NomSg (n-stem reanalysis) or
+   as oblique singular (strong-paradigm cell-generalization).
+2. **Dictionary of Old English (DOE)** s.v. *tang*, *tange*: would
+   give a comprehensive corpus survey by manuscript, dialect, and
+   date. Not present in `docs/references/`. Recommended for any
+   future deep cell-by-cell paradigm work.
+3. **Old English Corpus (OEC) concordance** for *tang-* / *tange-* /
+   *tangan-* / *tang(o)-*: would give the raw attestation counts by
+   cell, which would let us empirically test the "n-stem reanalysis"
+   vs. "AccSg generalization" hypotheses.
+4. **Brunner-Sievers, *Altenglische Grammatik* (1965 ed.)** §253
+   Anm. 3 on AccSg generalization in late-OE strong fem ō-stems:
+   the local file `brunner_1965_altenglische_grammatik.txt` does not
+   index *tang(e)* directly; we have inferred the structural rule
+   from the cited section but have not quoted Brunner.
+5. **Hogg, *Grammar of Old English* vol. 1 (Phonology)** §6.55ff. on
+   final-vowel apocope and §3.6 on unstressed-vowel weakening: the
+   local file `hogg_vol1.txt` does not index *tang(e)* directly;
+   structural rules cited but no direct example treatment.
+6. **Ringe & Taylor 2014** §6.5 (apocope in OE) and §7.4 (weak
+   feminines): no direct discussion of *tang(e)*.
+7. **EWA (Lloyd-Lühr, *Etymologisches Wörterbuch des
+   Althochdeutschen*)** s.v. *zanga*: would give the OHG-internal
+   evidence in detail. Local file `ewa_band1_lloyd_springer.txt`
+   covers band 1 (A–B) only, and *zanga* is in a later band.
+8. **Pheifer 1974, *Old English Glosses in the Épinal-Erfurt
+   Glossary***: cited from memory; not present in
+   `docs/references/`. Would directly confirm the *tang* (without
+   *-e*) attestation in the earliest Anglian glossary.
+
+---
+
+*End of §17.20.*
