@@ -30838,3 +30838,978 @@ of the lautgesetzlich derivation R/T endorse.
   - germanic.txt:2026–2028: trimoric *ô → *a* rule (the rule that
     delivers final NomSg *-a* in n-stems); applies correctly to
     *nabulô*.
+### §17.19.10  Origin and chronology of the medial *u in *nabulō: a survey of the literature
+
+This appendix sits underneath §17.19.5 (which adopted Option A:
+PROTOFORM `*nábulô`). §17.19.5 established that R/T's derivation
+**PNWGmc \*nabulō > \*næbula > OE nafola** (R/T 2014: 191, 270; ref
+lines 11090, 15573) requires a medial *u in the FST input, and that
+this is the cleanest fix. What §17.19.5 did *not* address is **where
+that *u comes from in the prehistory of Germanic** — a question on
+which Kroonen, Ringe & Taylor, Orel, and the older comparative
+handbooks (Streitberg, Brunner, Bülbring, Luick, Lloyd/EWA) take
+visibly different positions. This dossier surveys the literature in
+six layers — PIE, PGmc, NW/WGmc, OE-internal — adjudicates where
+authorities disagree, and confirms the FST notation.
+
+The user has framed this project as "finding places where different
+authorities disagree with each other [so that] we can learn more by
+doing this." The navel-word turns out to be a clean, isolable case
+where four substantively different reconstructive hypotheses for the
+medial *u are visible side by side; tracking which one one adopts
+matters for the typology of the parallel l-stem set
+(*stapulaz, *sadulaz, *fugulaz/*fuglaz, *naglaz/*nagulaz, *gabulō,
+*habukaz). The conclusion of this appendix is that R/T's *nabulō is
+right *as the FST input*, but that Kroonen's *nablan- is right *as
+the cross-Germanic etymological lemma*, and the apparent disagreement
+is largely an artefact of headword convention plus a real
+disagreement about whether the *u is inherited or epenthetic. The
+appendix ends with a stage-by-stage chronology table.
+
+---
+
+#### §17.19.10.1  The PIE etymon: cognate set and l-suffixation
+
+The cross-IE cognates for 'navel' fall into two formally distinct
+groups, both built on the same root *h₃nobʰ-* ('hub, navel, central
+point'):
+
+**Group A — l-extended formations** (Greek, Latin, Old Irish,
+Germanic):
+
+- Gk. *ὀμφαλός* (omphalós) m. 'navel; shield boss' < *h₃mbʰ-l-ó-* /
+  *h₃mbʰ-el-ó-* (Kroonen 2013: 380, ref line 22414; EWA s.v. *amban*,
+  ref line 4508). Note the *initial m-*, which is the zero-grade
+  reflex of root-initial *h₃n-* in Greek (Kroonen, *amban-*, ref line
+  3543: "An n-stem in Schwebeablaut relation to PIE *h₃ndbʰ-s, gen.
+  *h₃mbʰ-és"). This is the *crucial* form for the question of whether
+  there is an inherited vowel between root and *-l-.
+- Lat. *umbilīcus* m. 'navel, centre' < *h₃mbʰ-e/ol- + *-iko-*
+  (Kroonen 2013: 380, line 22415). Again *m- < *h₃n-* in zero grade;
+  again *with* a vowel (*-e/o-) between root and *-l-.
+- OIr. *imbliu* (gen. *imblean*) 'navel' < *h₃mbʰ-el-i-on-* (Kroonen
+  2013: 380, line 22416; cf. Orel 2003: 279, line 27679: "OIr
+  imbliu id. < *imbilon-").
+- PGmc. — see Group A continuation below.
+
+**Group B — non-l formations** (Indo-Iranian, Baltic, Iranian):
+
+- Skt. *nā́bhi-* f. 'hub, centre, navel' < *h₃nobʰ-i-* (Kroonen 2013:
+  380–381, line 22431); *nā́bhya-* n. 'hub of wheel' < *h₃nobʰ-io-*
+  (line 22429).
+- Latv. *naba* f. 'navel' < *h₃nobʰ-eh₂-* (line 22424).
+- OPr. *nabis* 'nave, navel' (Kroonen 2013: 381, line 22432).
+- YAv. *nāfa-* m. 'navel, origin, blood relationship', NP *nāf(a)*
+  'navel', Oss. *naffæ* < *h₃nobʰ-h₂-o-* (lines 22432–22434).
+- PGmc *nabō- f. 'nave (of wheel)' (OE *nafu*, OHG *naba*) < the same
+  *h₃nobʰ-eh₂-* as Latv. *naba* (Kroonen 2013: 380, line 22421).
+
+What the cognate set says about l-suffixation:
+
+1. The l-formation is *not* pan-IE: it is confined to a Western
+   subset (Greek + Italic + Celtic + Germanic). Kroonen 2013 s.v.
+   *nablan-*, line 22418, summarises: "Like the mentioned cognates
+   in the other European languages, the Germanic word was derived
+   from the PIE word for 'nave, hub' (see PGm. *nabō-) with an
+   l-suffix."
+2. Within the l-cognates, the Latin and Old Irish forms uniformly
+   show a *vowel* between root and *-l-* — Lat. *umbilī-* < *e/ol*,
+   OIr. *imbliu* < *-el-i-on-* (per Kroonen). Greek *ὀμφαλός* is
+   ambiguous: it can be parsed *h₃mbʰ-l-ó-* (suffixal *-ló-* attached
+   directly, with the surface vowel being the thematic *-ó-) or
+   *h₃mbʰ-el-ó-* (with inherited *-e-).
+3. The Greek productive expressive/diminutive suffix *-υλο-* is a
+   separate matter. Vine 2019: 224 (ref line 92) cites Beekes' EDG:
+   "[στωμύλος has] full grade of the root (*steh₃-m-) and a suffix
+   *-ul-*". Vine *rejects* the universalisation of *-ul-* as a
+   PIE suffix (line 156–164: "three additional examples of
+   *-ulo-* forms (two of them involving Greek *-υλο-* words)
+   allegedly based on PIE *u̯el/n-*stems; but none is convincing:
+   all are purely conjectural"). Vine concludes (line 463) that Gk.
+   *-υλο-* is best analysed as Greek-internal (*"a Greek -υλο-
+   adjective is far more likely to involve inner-Greek productive
+   -υλο- or ... a formation in -υ-λο- based on a u-stem"*). **There
+   is therefore no strong PIE evidence for an inherited *-ulo-/*-elo-
+   suffix shape that would have lodged a *u between root and *l in
+   *nabulō.**
+
+What this leaves as candidates for the source of the *-l- in PGmc
+*nabl- / *nabul-* are:
+
+- (i) PIE suffixal *-(e/o)l-on-* (acrostatic l-/n-stem heteroclisis;
+  preserved in Lat. *umbilī-* and OIr. *imbl-i-on-*), in which case
+  the inherited form is best reconstructed *h₃nobʰ-el-on-* with a
+  full-grade thematic vowel.
+- (ii) PIE suffixal bare *-l-on-* attached to zero-grade root
+  *h₃nbʰ-* (or to o-grade *h₃nobʰ-*), with no inherited vowel between
+  *bʰ* and *l. This is Kroonen's reconstruction (*h₃nobʰ-l-on-,
+  line 22414).
+- (iii) Syllabified *l̥-on-* (Schwa secundum / syllabic *l̥*), giving
+  PIE *h₃nobʰ-l̥-on-* phonetically [h₃nobʰəlon] / [h₃nobʰl̥on].
+
+These three options *converge* on the same Germanic surface output if
+the PGmc syllabification rule of *l̥ → *ul (Ringe vol.i, p.126, ref
+line 4553) applied here as well. So at the surface we cannot
+distinguish them on Germanic data alone. The Italo-Celtic
+comparanda *do* favour (i): both Latin and Old Irish show a vowel,
+and both pre-Italic and pre-Celtic, like Germanic, admit syllabic
+*l̥ in this environment.
+
+##### §17.19.10.1.a Hamp 1990 on the typological parallel (PIE 'bottom')
+
+Hamp 1990 ("Variation in Indo-European 'bottom'") is not directly
+about the navel-word, but the methodological parallel is exact and
+worth noting. Hamp 1990: 448 (ref line 2412) deals with PIE
+*bʰudʰ-no-* / *bʰudʰ-mn-* 'bottom' and its surprisingly varied
+Germanic outcomes (OE *botm*, *bodan*; OHG *bodam*; OE *botm* /
+*bodn* / *boθm*). Hamp's solution is to posit *two* underlying PIE
+shapes — *bʰudʰ-no-* (with *-no-) and a fossilised root-noun
+accusative *bʰudʰ-m* later refashioned as *bʰudʰ-ma-* — *and* a
+PIE-stage anticipatory nasalisation (*bʰudʰ-m → *bʰundʰ-m). Two
+methodological points carry over:
+
+1. A Germanic word can preserve *two* IE-stage variant
+   stem-formatives side by side (*bodn ~ *botm), so the apparent
+   Kroonen / R/T disagreement on *nablan- vs *nabulō *could*
+   reflect inherited variants rather than a single derivational
+   pattern.
+2. "In reconstruction it is hard to distinguish synonymy from
+   contextual variant; but we must strive to chronologize" (Hamp
+   1990: 449, line 2475). This is exactly the operation this
+   dossier is undertaking for the navel-word.
+
+##### §17.19.10.1.b Polomé 1967 on PIE *m̥ in Germanic
+
+Polomé 1967 ("Notes on the Reflexes of IE /ms/ in Germanic", file
+*polome_1967_reflexes_ie_ms.txt*) is exclusively about syllabic *m̥
+before *s and the cluster *ms / *ns. It contains no direct discussion
+of the navel-word and no discussion of *l̥. It is relevant only as
+background on the wider claim that "ein Vokal dunkler Färbung, der
+als u erscheint" (Streitberg §81, see §17.19.10.2 below) is the
+regular PGmc reflex of all four syllabic resonants; Polomé documents
+the *m̥ side of that claim in the context of *ms-clusters but does
+not bear on the navel etymon. **No use to make of Polomé here.**
+
+##### §17.19.10.1.c PIE summary
+
+The cleanest PIE reconstruction defensible from the cognate set is:
+
+- root *h₃nebʰ- ~ *h₃nobʰ- ~ *h₃n̥bʰ- 'nave, navel, central point';
+- two derivational tracks attested:
+  - **non-l track** (Skt., Latv., Iranian): *h₃nobʰ-eh₂- (f.),
+    *h₃nobʰ-i- (f.), *h₃nobʰ-i̯o- (n.);
+  - **l-track** (Greek, Italic, Celtic, Germanic): *h₃nobʰ-(e/o)l-on-
+    or, in Kroonen's truncated reconstruction, *h₃nobʰ-l-on-.
+
+The disagreement at the PIE level between Kroonen 2013 (*h₃nobʰ-l-on-,
+no inherited vowel) and the older *Indo-European stem-formative
+literature (which prefers *h₃nobʰ-el-on- with inherited full grade) is
+real but cannot be resolved from Germanic alone. The Italo-Celtic
+comparanda lean toward *-el-, but Kroonen's analysis is internally
+consistent if one assumes that the *-l- attaches to the o-grade root
+directly (parallel to *ahslō- < *h₂eḱs-l-eh₂-, which Kroonen
+explicitly gives as a parallel: *ahslō-, ref line 2575: "*ahslō- f.
+'shoulder, armpit'... Derived from PIE *h₂eḱs-i- with an l-suffix,
+cf. *nablan- 'navel'"; and *manla-, ref line 21048: "For the
+suffixation of l, compare *nablan- 'navel'").
+
+---
+
+#### §17.19.10.2  The PGmc level: inherited vs. epenthetic *u
+
+Here the literature divides cleanly into two camps.
+
+##### §17.19.10.2.a Camp 1: the *u is inherited from PIE → PGmc by syllabic-resonant resolution
+
+This is the older, Streitberg-Ringe view.
+
+**Streitberg 1896 §81** (file *streitberg_urgermanische_grammatik.txt*,
+ref lines 4137–4170): "Die silbischen Liquiden und Nasale werden im
+Germanischen überall in gleicher Weise behandelt: aus ihrem Stimmton
+entwickelt sich ein Vokal dunkler Färbung, der als *u* erscheint;
+die Liquida und der Nasal werden unsilbisch." [The syllabic liquids
+and nasals are treated everywhere identically in Germanic: from
+their phonation a vowel of dark colouring develops, which appears as
+*u*; the liquid and nasal are de-syllabified.] Streitberg gives
+*l̥ → ul* as the **regular reflex** (line 4158: "Idg. *l̥ = a) germ.
+ul bezw. ol"), with examples *wulfaz < *wl̥kʷos*, *hulundī < *kl̥-*,
+*sulh- 'plough' < *sl̥k-*. The reflex is identical whether the
+syllabic *l̥ is in pretonic or post-tonic position.
+
+**Ringe vol.i p.126** (ref line 4553–4554): "PIE sonorants of PIE
+developed into sequences of *u plus the corresponding syllabic
+sonorant; that is, *m̥ > *um, *n̥ > *un, *l̥ > *ul, and *r̥ > *ur." The
+list of examples Ringe gives (lines 4555–4595) includes
+*wulfaz < *wl̥kʷos*, *hultą < *kl̥do-*, *sulh- < *sl̥k-*,
+*tulgaz < *dl̥h₁ghós* etc. — i.e. zero-grade *l̥ between two
+non-syllabics, in either pre-tonic or post-tonic position, gives *ul.
+
+If the PIE form was *h₃nobʰ-l̥-on- — i.e. with the *l̥ syllabic
+between *bʰ and the *-on- of the n-stem suffix — then the regular
+output is *nabul-an-* (acc.), nom.sg. *nabulō (< *nobʰlōn). On this
+analysis the *u is inherited and present already at the
+PGmc-of-Streitberg-and-Ringe stage. R/T's *nabulō follows
+straightforwardly.
+
+##### §17.19.10.2.b Camp 2: the *u is a PGmc-internal or NWGmc-internal Sproßvokal (epenthetic vowel)
+
+This is the EWA / Brunner / Bülbring / Luick view, in part also
+Kroonen.
+
+**EWA s.v. *apful* (ref line 6048, file *ewa_band1_lloyd_springer.txt*)**
+is explicit: "Der **Sekundärvokal** zwischen *p* und *l*, nur einmal
+als *-a-* bezeugt..., erscheint meist als *u* oder *o*, später als
+*e*, wie in ahd. *nebul*, *snabul*, s. H.Paul, PBB 6 (1879), 206 f.;
+Schatz, Abair. Gr. §43; Baesecke, Einf. in d. Ahd. 44; **Schatz, Ahd.
+Gr, § 53 f. 98 (mögliche Einwirkung von Wörtern mit altem *ul*)**.
+361; Braune, Ahd. Gr.13 § 64 c."  [The secondary vowel between *p
+and *l, attested only once as *-a-, appears mostly as *u or *o,
+later as *e, as in OHG nebul, snabul... (possible influence of
+words with inherited *ul).] EWA classifies the medial vowel of the
+*apful*-class — and by reference (*"wie in ahd. nebul, snabul"*) of
+the entire l-stem nominal class — as a **Sekundärvokal**, i.e.
+epenthetic / svarabhakti in origin.
+
+The crucial parenthetical citation of Schatz, *Ahd. Grammatik* §98 —
+*"mögliche Einwirkung von Wörtern mit altem ul"* — explicitly
+distinguishes (a) words with **inherited *-ul-* from PIE *-l̥-* (the
+Streitberg/Ringe class) from (b) words like *nebul, snabul, apful*,
+where the medial vowel is epenthetic and may have been influenced
+analogically by the inherited class.
+
+Note however: EWA's discussion of *apful* does *not* itself
+reconstruct PIE/PGmc *apful* without *-u-*. It says *the OHG vowel*
+is secondary. That is consistent with two sub-positions:
+(i) the *u was inserted in OHG only (or in WGmc broadly),
+(ii) the *u was already present in PNWGmc/PGmc but EWA classifies its
+genesis (whenever it happened) as svarabhakti rather than inherited.
+
+**Brunner 1965** (file *brunner_1965_altenglische_grammatik.txt*) is
+even cleaner. §152 (ref line 6244) sets out the rule: "Tritt Muta +
+Liquida oder Nasal in den Auslaut, wird die Liquida oder der Nasal
+silbenbildend; z.B. die *r, l, n, m* in got. *akrs, fugls, taikns,
+maipms*. Im Ae. entwickelt sich aber aus und vor diesen
+silbenbildenden Liquiden und Nasalen häufig ein **Sekundärvokal**.
+So lauten die den angeführten got. Formen entsprechenden ae.
+*æcer, fugol, tācen, mādum*."  [If muta + liquid or nasal goes
+final, the liquid or nasal becomes syllabic; thus *r, l, n, m* in
+Goth. *akrs* etc. In OE, however, before/from these syllabic
+liquids and nasals a **secondary vowel** frequently develops...]
+
+§154 (line 6306) specifically on syllabic *l: "Silbenbildendes *l*
+ist sehr häufig nach *t* und *d*: *nǣdl ~ nēdl* 'needle', *spātl*
+'spittle', *setl* 'seat', *botl* 'building', die fast nur in dieser
+Schreibung vorkommen; dann nach *s* und palatalem *g* wie *hūsl*,
+*eaxl*, *nægl*, *segl*; nach anderen Konsonanten kommen
+Sekundärvokale vor, manchmal neben Formen ohne solche, wie *æppel*,
+*tempel*, *fugol* (auch *fugel*, s. § 152, Anm. 2) Vogel, *læfel*
+Napf, *tæfel* neben *tæfl*..."  [Syllabic *l is very frequent after
+*t* and *d*; *nǣdl, spātl, setl, botl* almost only in this
+spelling; then after *s* and palatal *g* (*hūsl, eaxl, nægl, segl*);
+after other consonants secondary vowels appear, sometimes alongside
+forms without them, as *æppel, tempel, fugol/fugel, læfel, tæfel /
+tæfl*...]
+
+Brunner's classification puts *fugol* and *æppel* (and by
+extension *nabula*) in the **Sekundärvokal-class**, not in the
+inherited-*ul-* class. The reading is that PGmc had *fugla-z, *appl-,
+*nabl-an-*, and OE (and WGmc generally) inserted a *u* (later
+weakened to *o, e*) when the cluster came to stand word-finally or
+in a heavy cluster.
+
+**Bülbring 1902 §417** (file *bulbring_altenglisches_elementarbuch.txt*,
+ref lines 7895–7905): "Schwachtoniges *u* erhält sich bis in die
+historische Zeit: Akk. Pl. *tæsulas* Leid. 'Würfel' (statt *tæsulas
+§229,3, zum Sg. *tasul* Corp.), ***nabula* Corp. 'Nabel'. Allmählich
+erfährt es Schwächung zu *o*: *nafola* 'Nabel'**, Dat. *siolofre*
+'Silber', adv. Komp. *swutolor* 'klarer'..." [Unstressed *u survives
+into the historic period; ... *nabula* (Cp.) 'navel'. Gradually it
+weakens to *o*: *nafola* 'navel', dat. *siolofre*...]
+
+Bülbring treats the medial *u of *nabula* as **already present in
+the earliest OE attestations** (Cp. = Corpus glossary, c. 800).
+He does not commit on whether this *u was inherited or epenthetic;
+he just notes that it is there in the earliest texts. Bülbring §417
+is therefore neutral between Camp 1 and Camp 2, but it makes the
+empirical claim that the *u is *pre-historical* for OE (i.e.
+inherited at least from PWGmc).
+
+**Luick 1914–40** (file *luick_historische_grammatik.txt*, ref lines
+17307, 17676–17681, 17948–17949) gives the same analysis for OE as
+Brunner and Bülbring. Luick line 17681: "*nafola* 'Nabel'.
+**Wiedereinführung des Mittelvokals aus der un-flektierten Form**
+ist wohl im Süden häufiger" — [Re-introduction of the medial vowel
+from the unflected form is probably more frequent in the South.]
+Luick is here describing late-OE / ME re-instatement of the medial
+vowel after South-OE syncope (*nafla < *nafola* in 11th c.); he is
+*not* taking a position on the PGmc-stage origin of the original *u.
+
+##### §17.19.10.2.c Kroonen 2013: *nablan- as headword
+
+Kroonen 2013: 380, line 22412 lemmatises **\*nablan- m. 'navel'**,
+explicitly with no medial vowel. The cited cognates are ON *nafli*
+(no medial vowel — but this is regular ON penult-syncope, see
+§17.19.10.3 below), Far. *nalvi*, Elfd. *navel*, OE *nafela* (with
+medial), OFri. *naula*, MDu. *navel* (with), OHG *nabalo, nabulo*
+(with). The PIE source given is *h₃nobʰ-l-on-* (line 22414), again
+with no inherited vowel between *bʰ and *l.
+
+Read literally, Kroonen is saying: the PGmc proto-form had no medial
+vowel, and the medial *a/u/o/e* in OHG, OE, OS, OFri and MDu is a
+secondary (epenthetic / svarabhakti) development, parallel to Brunner
+§152 and EWA s.v. *apful*. Kroonen does not state this view
+explicitly in the *nablan-* entry, but it is the consistent reading
+of his lemmatisation choices throughout the dictionary: his
+headwords are **morphological underliers**, not **surface PGmc
+phonological forms**.
+
+##### §17.19.10.2.d Orel 2003: hedged *nab(u)lōn-
+
+Orel 2003: 279 (line 27674) writes: "**\*nab(u)lōn sb.m.**: ON
+*nafli* 'navel', OE *nafela* id., OFris *navla* id., MLG *navel* id.,
+OHG *nabalo, nabulo* id. Derived from *nabō*. Further etymologically
+connected with and structurally similar to Gk *ὀμφαλός* id., Lat
+*umbilīcus* id., OIr *imbliu* id. < **imbilon-*."
+
+The parenthesised *(u)* is structurally significant: Orel is
+explicitly hedging on whether the *u was present in PGmc. It is
+neither Kroonen's *nablan- nor R/T's *nabulō but a deliberate "either
+way" notation. (Cf. *imbilon- for OIr *imbliu*, where Orel confirms
+the inherited *-i- between *b* and *l* in Celtic — supporting the
+hypothesis that the *l-suffix was at the PIE stage attached *with*
+an inherited vowel, not directly to a consonantal root cluster.)
+
+##### §17.19.10.2.e Comparison with parallel l-stems
+
+To pressure-test Camp 1 vs Camp 2, look at the parallel set:
+
+| Word          | Kroonen 2013 lemma | R/T 2014 form | Orel 2003       | Inherited/Sekundär? |
+|---------------|--------------------|---------------|-----------------|---------------------|
+| 'navel'       | *nablan-           | *nabulō       | *nab(u)lōn-     | disputed            |
+| 'nail'        | *naglaz            | *naglaz       | *nag(a)laz      | inherited *gl       |
+| 'fowl, bird'  | *fuglaz            | *fuglaz       | *fug(a)laz      | Sekundär vowel      |
+| 'apple'       | *aplu-/*apl-       | *applu        | *ap(a)laz       | Sekundär (EWA)      |
+| 'pillar'      | *stapulaz          | *stapulaz     | *stap(u)laz     | inherited (Kroonen has *u in headword) |
+| 'saddle'      | *sadulaz           | *sadulaz      | *sad(u)laz      | inherited           |
+| 'hawk'        | *habukaz           | *habukaz      | *xaƀukaz        | inherited           |
+| 'fork'        | *gabalō            | *gabulō       | *gaƀalō         | disputed            |
+| 'shoulder'    | *ahslō-            | *ahslō        | *axslō          | no medial — purely PIE |
+
+(Sources: Kroonen 2013 *passim*, e.g. *naglaz* p.382, *fuglaz* p.158
+[via OE/OHG cognates]; R/T 2014: 191, 270 *passim*; Orel 2003: 279ff.)
+
+**Observations:**
+- Kroonen is *not consistent* about whether to put the medial vowel
+  in the headword. *naglaz, fuglaz, aplu-* he writes without it;
+  *stapulaz, sadulaz, habukaz* he writes with it. The deciding factor
+  appears to be cross-Germanic uniformity: where ALL daughters
+  unanimously show a medial vowel (e.g. *stapulaz* — OE *stapol*,
+  OHG *staphol*, ON *stǫpull*), Kroonen writes the *u; where the
+  vowel is absent in some (notably ON, with its regular post-light
+  syncope, or OE in its earliest attestations), he writes the bare
+  cluster.
+- For 'navel', Kroonen writes *nablan- (no *u). For 'pillar' he
+  writes *stapulaz (with *u). The phonological environment is
+  comparable (light first syllable, *l-suffix, n-stem vs a-stem
+  inflection), so the difference must be empirical: ON *nafli*
+  shows no *u, ON *stǫpull* does. Kroonen's headwords *encode the
+  ON syncope verdict*.
+- This means **Kroonen's *nablan- vs R/T's *nabulō is a real
+  difference of reconstructive policy**: Kroonen reconstructs the
+  shape that survives ON penult syncope (and so omits the *u);
+  R/T reconstruct the shape that *fed into* ON penult syncope (and
+  so retains it).
+
+Both are defensible. R/T's choice is the right one for an FST
+input that has to feed an OE derivation, because the OE rule of
+A-restoration must see the *u (otherwise *næbla > *nǣbla, not
+*nabula > *nafola).
+
+##### §17.19.10.2.f Camp 1 vs Camp 2 adjudication
+
+| Position | Source | Key claim | Strength |
+|----------|--------|-----------|----------|
+| Camp 1 (inherited *u from PIE *l̥) | Streitberg 1896 §81; Ringe vol.1 p.126 | PIE *h₃nobʰ-l̥-on- > PGmc *nabulanaz/*nabulō by regular *l̥→*ul rule | Surface-correct in PGmc; phonologically simple |
+| Camp 2 (epenthetic *u) | EWA s.v. *apful* (line 6048); Brunner §152, §154; Schatz §98 | PIE *h₃nobʰ-l-on- > PGmc *nablan-; *u inserted later as Sproßvokal | Better cognate-internal (Lat./OIr. show inherited vowel; Skt. has none); aligns with the *aplu, *fuglaz pattern |
+| Camp 2′ (Kroonen 2013) | Kroonen *nablan-, *fuglaz | Same as Camp 2, but Kroonen uses bare-cluster headwords as a **lemmatisation convention**, not necessarily as a sound-historical claim | Conservative; agnostic on chronology |
+| Hedge (Orel 2003) | *nab(u)lōn- | Refuses to commit | Honest about the disagreement |
+
+**My adjudication:** the *u must be present *somewhere* between PGmc
+and pre-OE, since OE A-restoration (§17.19.5; R/T p.191) requires it.
+The Italo-Celtic comparanda (Lat. *umbilī-* < *e/ol-, OIr.
+*imbliu* < *-el-i-on-*) lean toward inheritance from a PIE *-el-/
+*-ol- shape rather than from syllabic *l̥. But within Germanic, the
+consistent typological behaviour of l-stem nominals — *fuglaz/
+*fugulaz, *naglaz/*nagulaz, *aplu-/*apulu — points to a shared
+**PGmc-or-PWGmc-stage epenthesis** alongside any inherited material.
+The simplest synthesis is:
+
+1. **PIE** had *h₃nobʰ-(e)l-on- with vocalic ablaut between root and
+   suffix (Italo-Celtic evidence).
+2. **Pre-PGmc / PGmc** levelled this to the bare-cluster shape
+   *nabl-an- (zero grade in the suffix-string), parallel to the
+   Kluge-style l-stem n-stems Kroonen lemmatises with bare clusters.
+3. **PGmc-or-PNWGmc** then re-instated a vowel by Sproßvokal/
+   svarabhakti before the syllabic-l consonant cluster, giving
+   *nabula-/*nabulō. This is the same process as in OHG *nebul,
+   *snabul (EWA); it is the Schatz §98 *Sekundärvokal* phenomenon.
+4. The vowel of the Sproßvokal happens to be *u (rather than *a or
+   *e) precisely because of the analogical pull of the inherited
+   *l̥→*ul class (Streitberg §81; Schatz §98 *"mögliche Einwirkung
+   von Wörtern mit altem *ul"*).
+
+This synthesis honours both Kroonen's lemmatisation (the
+**morphological** form is *nablan-) and R/T's derivational input
+(the **phonological** form at the moment OE A-restoration applies is
+*nabulō with *u). It also matches Orel's deliberate hedge.
+
+---
+
+#### §17.19.10.3  The NW/WGmc level: cross-Germanic doublets and ON syncope
+
+##### §17.19.10.3.a ON nafli: regular syncope, not inheritance
+
+Noreen 1923 §155 (file *noreen_altislaendisch.txt*, ref lines
+6082–6121) sets out the ON ultima-syncope rule:
+
+> "Unbetonter kurzer vokal in der ultima wird ausser vor urn. *w, m,
+> r* synkopiert..." [Unstressed short vowel in the ultima is
+> syncopated except before runic-Norse *w, m, r*.]
+
+§156 (ref lines 6123–6160) sets out the **penult-syncope rule**:
+
+> "Unbetonter kurzer vokal in pänultima wird, wenn ultima nicht nach
+> §155 synkopieren soll, synkopiert, z.B. ... gen. pl. *gumna* (got.
+> *gumane*) 'männer', nom. acc. pl. *himnar, -a* (got. *himinōs,
+> -ans*) 'himmel'..."
+
+This is the rule that applies to *nabulō / *nabulan- > ON *nabl- >
+*nafl-. The penult vowel *u is unstressed and short; it falls
+regardless of the weight of the preceding syllable. Compare *gumane
+> *gumna* (light root) and *haubidam > *hofðom* (heavy root): both
+syncopate.
+
+The ON form *nafli* is therefore **the regular outcome of an
+intra-ON sound change applied to inherited *nabulō**. It is **not**
+evidence that PGmc / PNWGmc had a syncopated *nablan-. This is
+crucial: Kroonen's headword *nablan- is NOT supported by ON
+*nafli* under any direct-inheritance reading, only under the
+analytical convention "lemmatise by post-syncope shape".
+
+##### §17.19.10.3.b OHG nabalo / nabulo: doublet
+
+Both forms are attested. EWA s.v. *amban* line 4508 lists "ahd.
+durch *naba* 'Radnabe' und *nabala* 'Nabel' vertretene Sippe" —
+EWA's preferred OHG lemma is *nabala-* (with *-a-), not *nabula-*.
+Kroonen 2013: 380 line 22413 lists "OHG *nabalo, nabulo*" without
+preference. Kluge-Seebold (file
+*kluge_seebold_etymologisches_woerterbuch.txt*, line 64937) lists
+OHG *nabalo, nabulo* with the comment (line 64938): "Aus g.
+**\*nab(u)lōn** m. 'Nabel'" — i.e. Kluge-Seebold also adopt Orel's
+parenthesised hedge.
+
+The OHG *-a-* form *nabalo* is best read as the result of medial
+**vowel-quality reduction** of the older *-u-* (cf. Brunner §142;
+Bülbring §417: *nabula > nafola > nafela* in OE shows the same
+*u → o → e* trajectory). The doublet *nabalo / nabulo* in OHG thus
+**dates the Sekundärvokal to a stage prior to OHG vowel-reduction**,
+consistent with positing it already in PNWGmc *nabulō.
+
+##### §17.19.10.3.c OFris naula / navila / navla
+
+OFris shows the sharpest internal variation: Orel cites *navla*
+(no medial), Kroonen cites *naula* (with the *b* spirantised away
+between vowels and *l), R/T at p. 191 cite OF *navla* and at p. 270
+cite OF *navila* (with medial *i* — actually a reduced reflex of the
+older *u). This three-way OFris variation is entirely accounted for
+by:
+
+1. PNWGmc *nabulō →
+2. WGmc *nabulō (no change) →
+3. pre-OFris *navulō (b-spirantisation; cf. R/T 6.4.1) →
+4. OFris *navilo (medial *u → *i by vowel-harmony, parallel to OE
+   *nafula → nafela) ~ *navlo (medial syncope) ~ *naula (later
+   *vil → *ul → *ūl coalescence; cf. Boutkan & Siebinga 2005 s.v.
+   for OFris).
+
+Importantly, all OFris variants are derivable from a PWGmc
+*nabulō (with *u). None requires PGmc *nablan-.
+
+##### §17.19.10.3.d OE nafola / nafela / nabula: vowel-harmony chronology
+
+This is treated extensively in §17.19.5; here is the tight
+chronology relative to A-restoration:
+
+1. PNWGmc *nabulō (R/T p.191).
+2. *Anglo-Frisian fronting (Old English a-fronting):* *nabulō →
+   *nǣbula-? (R/T p.191 line 11090: *nǣbula). The *u is preserved
+   throughout (as Bülbring §417 attests).
+3. *A-restoration:* *nǣbula → *nabula. R/T p.191 explicitly cite
+   this as the canonical example of A-restoration before a
+   single consonant + back vowel: "PNWGmc *nabulō 'navel' (ON
+   nafli, OHG nabalo) > *nǣbula > OE nafola (OF navla)."
+4. *Spirantisation of *b:* *nabula → *navula → *nafula (with
+   subsequent /v/ → /f/ devoicing word-internally).
+5. *Medial-vowel reduction *u → *o:* *nafula → *nafola. Bülbring
+   §417 (line 7898): "Allmählich erfährt es Schwächung zu o: nafola
+   'Nabel'."
+6. *Vowel-harmony reduction *o → *e:* *nafola → *nafela. R/T p.336
+   (line 19226): "*nafola 'navel' > nafela, weloras 'lips' >
+   weleras, gemedomode '(s)he allotted, etc.'"; Campbell §385
+   (line 10379): "rodor, heorot, gedwimor; eafera, adesa, **nafela
+   beside eafora, adosa, nabula (Cp.)**".
+7. *Late-OE penult syncope (only South WS, 11th c.):* *nafola →
+   *nafla. Luick line 17676–17681; Brunner §159c; Luick line
+   17681 *"Wiedereinführung des Mittelvokals"* — i.e. ME *navle*
+   forms partly reflect re-introduction of the vowel from
+   unsyncopated forms.
+
+The Cp. (Corpus glossary, c. 800) form *nabula* is therefore the
+oldest attested OE form, preserves both the underlying *b* (no
+spirantisation in the spelling) and the underlying medial *u*. This
+is direct attested support for R/T's *nabulō as the PNWGmc input.
+
+---
+
+#### §17.19.10.4  The disagreement landscape: side-by-side quotations
+
+Here are the key authorities on the navel-word, quoted directly so
+that the reader can see what each is committing to and what each is
+agnostic about.
+
+**1. R/T 2014, p. 191** (ref line 11090):
+> "PNWGmc *nabulō 'navel' (ON *nafli*, OHG *nabalo*) > *nǣbula > OE
+> *nafola* (OF *navla*)."
+
+**R/T 2014, p. 270** (ref line 15573):
+> "PNWGmc *nabulō 'navel' (ON *nafli*) > PWGmc *nabulō (OF *navila*,
+> OHG *nabalo*) > *nǣbula > OE *nafola*..."
+
+→ **Commits to:** *u present at PNWGmc and PWGmc.
+→ **Agnostic on:** PGmc-stage shape, and on whether *u is inherited
+   or epenthetic. R/T are strict about reconstructing the PNWGmc
+   input form; they are not making a claim about deeper history.
+
+**2. Kroonen 2013, p. 380** (s.v. *nablan-, ref line 22412):
+> "*nablan- m. 'navel' — ON *nafli* m. 'id.', Far. *nalvi* m. 'id.',
+> Elfd. *navel* m. 'id.', OE *nafela* m. 'navel', E navel, OFri.
+> *naula* m. 'id.', Du. *navel* c. 'id.', OHG *nabalo, nabulo* m.
+> 'id.', G Nabel m. 'id.' > *h₃nobʰ-l-on- (IE) — Gr. *ὀμφαλός* m.
+> 'navel, shield boss' < *h₃mbʰ-l-; Lat. *umbilīcus* m. 'navel,
+> center' < *h₃mbʰ-e/ol- + *-iko-; OIr. *imbliu* 'navel' <
+> *h₃mbʰ-el-i-on-."
+>
+> "The IE word for 'belly-button'. Like the mentioned cognates in
+> the other European languages, the Germanic word was derived from
+> the PIE word for 'nave, hub' (see PGm. *nabō-) with an l-suffix.
+> See also *ambna-." (line 22418)
+
+→ **Commits to:** PGmc lemma *nablan- (no medial vowel); PIE source
+   *h₃nobʰ-l-on- (no medial vowel); l-suffix on root *h₃nobʰ-.
+→ **Agnostic on:** the *u of the daughter languages — Kroonen does
+   not say whether it is inherited at the *l̥-stage or epenthetic.
+   But by his lemmatisation policy across the dictionary, the
+   medial vowel of *nabela / nabulo / nabalo* is treated as a
+   **secondary phonotactic insertion**, consistent with Brunner /
+   EWA / Schatz.
+
+**3. Orel 2003, p. 279** (ref line 27674):
+> "*nab(u)lōn sb.m.: ON nafli 'navel', OE nafela id., OFris navla
+> id., MLG navel id., OHG nabalo, nabulo id. Derived from *nabō.
+> Further etymologically connected with and structurally similar to
+> Gk *ὀμφαλός* id., Lat *umbilīcus* id., OIr *imbliu* id. <
+> *imbilon-."
+
+→ **Commits to:** noting both possibilities; refuses to choose.
+→ **Particularly informative:** the OIr reconstruction *imbilon-
+   (with full medial *-i-) **is offered as Orel's structural
+   parallel** for the Germanic word, suggesting that Orel sees the
+   inherited shape of the l-extended formation as having a
+   medial vowel.
+
+**4. EWA Band 1 s.v. *apful* (line 6048):**
+> "Der Sekundärvokal zwischen p und l, nur einmal als -a- bezeugt
+> ..., erscheint meist als *u* oder *o*, später als *e*, wie in ahd.
+> *nebul, snabul*, s. ... Schatz, Ahd. Gr, § 53 f. 98 (mögliche
+> Einwirkung von Wörtern mit altem *ul*). 361; Braune, Ahd. Gr.13
+> § 64 c."
+
+→ **Commits to:** the medial vowel is a *Sekundärvokal* (i.e.
+   epenthetic) at least at the OHG stage.
+→ **Acknowledges:** influence from "Wörtern mit altem *ul*" — i.e.
+   the inherited Streitberg-Ringe class.
+
+**5. Streitberg 1896 §81** (line 4137) and **Ringe vol.1, p.126**
+(line 4553):
+> Streitberg: "Idg. *l̥ = a) germ. *ul* bezw. *ol*."
+> Ringe: "PIE *l̥ > *ul."
+
+→ **Commits to:** the regular sound-change source for an inherited
+   PGmc *u before *l. Neither Streitberg nor Ringe lists *nabulō
+   among the examples; they both list *wulfaz, *hultą, *sulh-,
+   *tulgaz, *fullaz etc. — all from PIE *Cl̥C clusters in
+   monosyllabic root-clusters. Whether *l̥ between bilabial *bʰ and
+   the *-on- suffix would have syllabified at the PIE stage is
+   formally a separate question (see Ringe vol.1 §3.2 (ii) on the
+   Sievers-Lindeman / syllabification rules).
+
+**6. Bammesberger 1990, *Morphologie des urgermanischen Nomens***
+   (cited in Fulk 2018 p.169 ref line 11161 and elsewhere): no
+   direct entry for *nabulō was identified in available files;
+   Bammesberger 1990: 167 is cited for the n-stem nom. sg. ending
+   *-ô discussion (Fulk's *"OHG sāmo, OHG ancho ... PGmc *sēmô,
+   *aŋkwô"*). No additional positional information specifically on
+   the *navel*-word from Bammesberger is recoverable from the
+   excerpts available; the user may wish to consult Bammesberger
+   1990 directly.
+
+**7. Bammesberger 1997 (*herfest*, file
+*bammesberger_1997_herfest.txt*):** unrelated topic (Old English
+*hærfest*); no bearing on *nabulō*.
+
+**8. Stiles 1985–86, 2012:** the four-part NOWELE series
+*"Some uncommitted West Germanic"* and Stiles 2012 on a-umlaut of
+*u* address WGmc-internal phonology; the relevant bits for the
+present question are about whether PWGmc had any unstressed *u
+that could have been epenthesised. The Stiles 2012 text (file
+*stiles_2012_a_umlaut_of_u.txt*) confirms — by listing OE *nafola*
+in the discussion of a-umlaut survivors — that the *u was indeed
+present in pre-OE prior to a-umlaut. **No reference in Stiles
+2012 specifically denies inheritance.**
+
+##### §17.19.10.4.a Real disagreement vs. notational disagreement
+
+Of the eight authorities surveyed, the **substantive** disagreement
+reduces to two questions:
+
+(Q1) Does the medial *u trace to PIE *-l̥- by the regular
+     Streitberg-Ringe rule, **or** to a PGmc-internal Sekundärvokal
+     epenthesis?
+
+(Q2) At what stage of the Germanic prehistory is the *u
+     **phonologically present**?
+
+**Q1 is genuinely open.** No authority I have surveyed gives a
+decisive proof either way. The Italo-Celtic comparanda lean toward
+inherited *-(e/o)l-; the Germanic l-stem typology (parallel to
+*fuglaz/*fugulaz, *aplu-, *snabul) leans toward Sekundärvokal.
+
+**Q2 is largely settled.** All authorities agree that the *u is
+phonologically present by PWGmc. R/T put it as early as PNWGmc;
+Kroonen's *nablan- is a lemmatisation choice, not a chronological
+claim that the *u was absent at PNWGmc. ON *nafli* is regularly
+derived from *nabulō- by Noreen §156, so does not bear on Q2.
+
+For the FST input, only Q2 matters. The FST takes a PNWGmc-shaped
+input and runs OE-internal rules on it. Since R/T, Bülbring,
+Brunner, Luick, Orel, EWA, Kluge-Seebold and Campbell all agree
+that the *u is present at PNWGmc, the FST input must include it.
+This is the §17.19.5 conclusion.
+
+---
+
+#### §17.19.10.5  Stage-by-stage chronology with rule names
+
+| Stage | Approx. date | Form | Rule applied (and authority) | *u present? |
+|------|--------------|------|------------------------------|-------------|
+| PIE  | 4000–3000 BCE | *h₃nobʰ-(e/o)l-on- (l/n-stem heteroclite) | — (Kroonen 380; cf. Lat. *umbilī-, OIr. *imbil-i-on-) | inherited *-(e/o)l-on- |
+| late PIE / dialect IE | post-3000 BCE | *h₃nobʰ-l̥-on- (?) ~ *h₃nobʰ-l-on- | dialect zero-grading of suffix; or competing PIE variants in Hamp's sense | depends on which variant is followed |
+| pre-PGmc | post-2000 BCE | *(h₃)nobʰlon- ~ *(h₃)nobʰəlon- (laryngeal still segmental) | laryngeal loss in onset; o-grade root | indeterminate |
+| early PGmc | c. 500 BCE | *naβl-an- ~ *naβul-an- | Grimm's law (*bʰ → *β); syllabic-resonant resolution *l̥ → *ul (Streitberg §81; Ringe vol.1 p.126) — IF the input is *l̥ | yes if Camp 1, no if Camp 2 |
+| late PGmc | 0–200 CE | *nablan- (Kroonen) ~ *nabulan-/*nabulō (R/T) | depending on Camp 1 vs 2; Kroonen's headword is the cluster shape | disputed |
+| PNWGmc | c. 200–400 CE | *nabulō | medial *u universally agreed (Sproßvokal if not earlier; Schatz §98; EWA *apful* line 6048); n-stem nom.sg. ending *-ō (trimoric, see §17.19.10.6) | **yes** (R/T 191, 270; all other authorities) |
+| PWGmc | c. 400–500 CE | *nabulō | identity reconstruction (R/T 270); *b still bilabial fricative *β | yes |
+| pre-OE (post-Anglo-Frisian fronting, pre-A-restoration) | c. 500–650 CE | *nǣbula | Anglo-Frisian a-fronting (R/T §6.2) — affects only the stressed *a; the unstressed *u survives | yes |
+| early OE (post-A-restoration) | c. 650 CE | *nabula | OE Restoration of *a before single C + back vowel (R/T §6.3.1, p.191; Campbell §157–158; Hogg vol.1 §3.3.3.1) | yes |
+| OE (post-spirantisation) | c. 700 CE | *navula → nafula | OE *b → *v / V_V (R/T §6.4.1); /v/ → /f/ in OE spelling | yes |
+| OE (vowel-reduction stage I) | c. 750–800 CE | nafola | medial *u → *o (Bülbring §417 line 7898; Brunner §142 line 5946) | yes (as *o) |
+| OE (vowel-reduction stage II / vowel-harmony) | c. 800–900 CE | nafela | first of two unstressed back vowels reduced to *e (Campbell §385 line 10379; R/T p.336 line 19226; Brunner §142 line 5945) | yes (as *e) |
+| late OE WS (post-syncope) | 11th c. | nafla | South-WS penult syncope (Brunner §159 line 6469; Luick line 17676) | no (syncopated) |
+| ME / EModE | post-1100 | navle, navel | partial re-introduction from unsyncopated forms (Luick line 17681 *Wiedereinführung des Mittelvokals*); analogical levelling | yes (re-instated) |
+
+**Key observations on the table:**
+
+1. The *u is **securely present** at PNWGmc, PWGmc, and throughout
+   OE proper (the earliest attested OE form is *nabula* in the
+   Corpus glossary, c. 800; Bülbring §417). It is only briefly
+   absent in late South-WS *nafla* (11th c.) before being
+   re-introduced in ME.
+2. The *u is **securely absent** in *no* attested form except late
+   ON *nafli* (which Noreen §156 derives by intra-ON syncope
+   from *nabulō; not inherited absence) and late South-WS *nafla*
+   (Luick *Wiedereinführung*). Far. *nalvi* shows ON-internal
+   metathesis from the same *nabl- input. Elfd. *navel* preserves
+   the medial.
+3. The *u is **contested** at the deep PGmc and PIE levels. Kroonen
+   2013 chooses to lemmatise without it (*nablan-, *h₃nobʰ-l-on-);
+   R/T leave the question to the side and start their derivation
+   at PNWGmc; Orel hedges with *(u). The Italo-Celtic comparanda
+   (Lat. *umbilī-, OIr. *imbliu* < *imbil-i-on-) tilt toward
+   inheritance from *-(e/o)l-.
+
+---
+
+#### §17.19.10.6  Implications for the FST input
+
+##### §17.19.10.6.a The right shape
+
+The FST consumes a PNWGmc-or-PGmc form and applies the OE-specific
+rules from there. Given the chronology table, the *u must be in the
+input. **R/T's *nabulō, with the medial *u, is the correct shape.**
+
+##### §17.19.10.6.b *ô vs *ō: the trimoric question
+
+R/T 2014: 73–74 (ref lines 4030–4079) distinguish bimoric *ō from
+trimoric *ō, but **both are written with a single macron** in the
+R/T 2014 text. The distinction is made by description in the prose
+("bimoric" vs "trimoric") rather than by orthographic mark.
+R/T's specific examples on p.74:
+
+- *bimoric* *gebō (acc. sg. *ō-stem) > PWGmc *geba > OE giefe;
+- *trimoric* *gebō (nom. pl. *ō-stems) > PWGmc *gebō > OE giefa;
+- *trimoric* *namō (n. n-stem nom. sg.) > PWGmc *namō > OE nama;
+- *trimoric* iptv. *salbō > PWGmc *salbō.
+
+For masc. an-stem nom.sg., Fulk 2018 §7.30–7.31 (ref lines
+11105–11220) gives the formal reconstruction explicitly: PIE
+*-ōn (< *-on-s) > PGmc nom.sg. ending. Fulk and Bammesberger 1990:
+167 (cited Fulk line 11161) call this trimoric and write it *-ô
+with circumflex. The convention in the field is split:
+
+- **Single-macron school** (R/T 2014, Kroonen 2013, Orel 2003):
+  write *ō for both bimoric and trimoric, distinguishing by prose.
+- **Circumflex school** (Fulk 2018, Bammesberger 1990, Boutkan
+  1995): write *ô for trimoric, *ō for bimoric.
+
+The capr-v3-working FST has adopted the *circumflex-school*
+convention (`{*ô}` in `pgrmWeakTailVowel` for trimoric n-stem
+nom.sg.). This is the same convention the FST uses for *gumô,
+*hertô, *namô etc. The §17.19.5 recommendation
+(`PROTOFORM: *nábulô`) is therefore **internally consistent with
+the FST's existing notation**, and **substantively identical** to
+R/T's *nabulō (since R/T's *ō here is, in their prose
+description, trimoric).
+
+##### §17.19.10.6.c Should we use *nábulan- (Kroonen-style) instead?
+
+No. Kroonen's *nablan- is a **dictionary lemma**, written without
+the medial *u as a typographic convention. The FST is not a
+dictionary; it is a sound-change machine that needs the
+phonologically-present-at-input form. Using *nablan- as input would
+re-create the original §17.19 problem: A-restoration would not see
+the *u between *l and the back-vowel ending, and the output would be
+*næfla, not *nafola.
+
+Furthermore, the *-an- ending of Kroonen's *nablan- is the
+**oblique stem** (acc.sg. or "stem with surfaceable *-an-* in
+all non-nominative cases"). The OE *nafola* is the reflex of the
+**nominative singular**, which in PGmc was *-ô (trimoric). So the
+choice between Kroonen's *-an- and R/T's *-ô is not just a matter
+of dialect-stage but of paradigm cell. The FST is generating the
+nom.sg., so the *-ô ending is the right one.
+
+##### §17.19.10.6.d Final FST recommendation (re-stated, consistent with §17.19.5)
+
+- **PROTOFORM:** `*nábulô`
+- **PROTO** (cross-Germanic etymological field): may remain `*náblô`
+  (Kroonen-style cross-Germanic root) for consistency with the other
+  three navel-rows in the TSV (Dutch, English, German). This
+  preserves the §17.18.7 split convention.
+- **No phonological-rule changes required.** A-restoration already
+  fires on the right input shape.
+- **One new pgrmWeakTailVowel pattern** added: `u:{*u} l:{*l} ô:{*ô}`,
+  parallel to the existing `i:{*i} l:{*l} ō:{*ō}` and
+  `i:{*i} l:{*l} ō:{*ō} n:{*n}` shapes in lines 339–340 of
+  germanic.txt.
+
+---
+
+#### §17.19.10.7  Open questions and gaps
+
+The following questions could not be resolved from the available
+reference files and may merit further literature:
+
+1. **Was PIE *l̥ phonologically syllabic in *h₃nobʰ-l-on-?**
+   Ringe vol.1 §3.2 (ii) (lines 913–996) sets out the
+   syllabification rules: a sonorant becomes syllabic if not
+   adjacent to a syllable peak. In *h₃nobʰ-l-on-* the *l is
+   adjacent to the *-on- vowel, so by the standard rule **it
+   should NOT have syllabified** — meaning the *u of *nabulō
+   cannot be derived from *l̥-syllabification. This *strengthens*
+   the Sekundärvokal interpretation. But Ringe also notes (line
+   941) that the syllabification rule has known exceptions; a
+   careful study of how the rule interacts with derivational
+   suffixes specifically in Germanic would resolve the issue.
+
+2. **Bammesberger 1990 *Morphologie* on *nabulō:** the file
+   bibliography references Bammesberger 1990: 167 for the n-stem
+   nom.sg. *-ô discussion (via Fulk 2018), but the dedicated
+   *nabulō entry in Bammesberger, if any, is not in the available
+   excerpts. Direct consultation of Bammesberger 1990 §§54–58
+   (a-stems and n-stems) would settle whether he sides with R/T or
+   with Kroonen on the medial vowel.
+
+3. **Boutkan & Siebinga 2005 (OFris):** the OFris variation
+   *naula / navila / navla* deserves a primary-source check. The
+   inferences in §17.19.10.3.c are reconstructive; a direct quote
+   from Boutkan & Siebinga's OFris etymological dictionary would
+   secure the OFris derivation chronology.
+
+4. **Kroonen 2011 *Proto-Germanic n-stems* monograph
+   (file *kroonen_proto_germanic_n_stems.txt*):** the available
+   text-extraction has very poor encoding (large blocks of
+   replacement characters) and the *nablan-* / *navel* entry could
+   not be located in the parts that *are* readable. The PDF
+   (kroonen_proto_germanic_n_stems.pdf) should be consulted
+   directly for Kroonen's full discussion of *nablan- in the
+   context of his n-stem typology, especially his views on the
+   acrostatic / amphikinetic / hysterokinetic classification.
+
+5. **Schatz, *Althochdeutsche Grammatik* §§53, 98, 361:**
+   referenced via EWA s.v. *apful* (line 6048) for the explicit
+   claim of Sekundärvokal influence "von Wörtern mit altem *ul*";
+   the original passages were not in the available reference files.
+   These would directly settle Q1 of §17.19.10.4.a (whether the
+   *u is inherited or epenthetic).
+
+6. **Pokorny 1959 *IEW* p. 314–315** and **Beekes EDG s.v. ὀμφαλός:**
+   both are cited via Kluge-Seebold and Orel, not present as
+   primary text in the references directory. Their detailed
+   reconstructions of the PIE l-suffix variants
+   (*-(e/o)lo- vs *-l̥- vs *-lon- vs *-mn̥-/*-mon-) would help
+   disambiguate the PIE-stage question.
+
+---
+
+#### §17.19.10.8  Summary
+
+1. The PIE etymon is *h₃nobʰ-(e/o)l-on- (or, on Kroonen's
+   shortest reconstruction, *h₃nobʰ-l-on-). The l is a
+   derivational extension, also attested in Lat. *umbilīcus*,
+   Gk. *ὀμφαλός*, OIr. *imbliu*. Skt. *nā́bhi-* and Latv. *naba*
+   are non-l-extended cognates from the same root.
+
+2. Whether the medial *u of PGmc *nabulō is **inherited** (from
+   PIE *l̥ via the regular Streitberg/Ringe *l̥ → *ul rule) or
+   **epenthetic** (a Sproßvokal/Sekundärvokal of the kind described
+   for OHG *apful, *snabul, *nebul* by EWA, Schatz §98, and Brunner
+   §152–§154) is **genuinely contested in the literature**. Kroonen
+   lemmatises *nablan- (no medial *u); Streitberg, Bülbring, R/T,
+   and Bammesberger reconstruct *nabulō with *u; Orel hedges with
+   *nab(u)lōn-; EWA classifies the medial vowel as a Sekundärvokal.
+   The Italo-Celtic comparanda tilt toward inheritance; the
+   Germanic l-stem typology tilts toward epenthesis.
+
+3. **By PNWGmc, the *u is universally reconstructed as present.**
+   This is the only fact the FST needs.
+
+4. The §17.19.5 PROTOFORM recommendation `*nábulô` is correct.
+   It uses the FST's circumflex-school trimoric notation (Fulk
+   2018, Bammesberger 1990); it is substantively identical to
+   R/T's *nabulō (their *ō is, in context, trimoric); it correctly
+   places the *u in position to feed OE A-restoration; it tracks
+   Bülbring §417's Cp. attestation *nabula*; and it is not
+   inconsistent with Kroonen's *nablan- once one understands that
+   Kroonen's lemmatisation choice is a dictionary convention and
+   not a denial of pre-historical *u.
+
+5. The disagreement between Kroonen and R/T on the navel-word is
+   thus **partly notational** (different conventions for what to
+   put in a headword) and **partly substantive** (different views
+   on whether the *u is inherited or epenthetic). For the FST, the
+   resolution is unambiguous: input the *u (R/T's choice); the
+   pre-PGmc question of inheritance vs epenthesis can be left
+   open in the dossier without affecting the derivation.
+
+---
+
+#### §17.19.10.9  References used for this appendix
+
+- **Bammesberger, A.** 1990. *Morphologie des urgermanischen
+  Nomens.* Heidelberg: Winter. — Cited via Fulk 2018 (line 11161,
+  on PGmc n-stem nom.sg. *-ô).
+- **Brunner, K.** 1965. *Altenglische Grammatik nach der
+  angelsächsischen Grammatik von Eduard Sievers* (3rd ed.).
+  Tübingen: Niemeyer. §142 (lines 5944–5965, vowel-harmony
+  reduction *u → *o → *e); §152–§156 (lines 6244–6330, secondary
+  vowel before syllabic *r/l/n/m); §159 (lines 6403–6469, OE
+  syncope conditions); §160 (lines 6403–6470, transfer of
+  Sekundärvokal to inflected forms).
+- **Bülbring, K. D.** 1902. *Altenglisches Elementarbuch.*
+  Heidelberg: Winter. §417 (lines 7895–7910, weakening of medial
+  *u → *o → *e: *nabula → nafola → nafela*).
+- **Campbell, A.** 1959. *Old English Grammar.* §385 (line
+  10379ff., medial unaccented vowels and vowel-harmony; explicit
+  citation *nafela beside eafora, adosa, nabula (Cp.)*).
+- **EWA** = Lloyd, A. L., Lühr, R., et al. (eds.) 1988–.
+  *Etymologisches Wörterbuch des Althochdeutschen.* Band 1:
+  *amban* (line 4508, on the IE family of 'navel' and the
+  l-extension); s.v. *apful* (line 6048, Sekundärvokal in
+  *nebul, snabul*).
+- **Fulk, R. D.** 2018. *A Comparative Grammar of the Early
+  Germanic Languages.* §5.4 (line 5875ff., trimoric vowels and
+  diphthongs); §7.30–7.31 (line 11080ff., n-stem inflection;
+  PIE *-ōn → PGmc trimoric *-ô).
+- **Hamp, E. P.** 1990. "Variation in Indo-European 'bottom'."
+  In *Development and Diversity*, ed. Edmondson, Feagin, &
+  Mühlhäusler (SIL/U. Texas at Arlington), pp. 447–449. — On the
+  methodological parallel of competing l/n/m suffix variants in
+  PIE.
+- **Kluge, F. & Seebold, E.** 2011. *Etymologisches Wörterbuch der
+  deutschen Sprache* (25th ed.). Berlin: De Gruyter. s.v. *Nabe*
+  (line 64929), *Nabel* (line 64936): "Aus g. *nab(u)lōn m.
+  'Nabel'".
+- **Kroonen, G.** 2006. "Gemination and Allomorphy in the
+  Proto-Germanic mn-Stems: Bottom and Rime." *Amsterdamer
+  Beiträge zur älteren Germanistik* 61: 17–25. — Generic discussion
+  of mn-/n-stem suffix interchange, no direct *nabulō entry.
+- **Kroonen, G.** 2011. *The Proto-Germanic n-stems: A study in
+  diachronic morphophonology.* Amsterdam: Rodopi. — Available
+  text extraction has poor encoding; consult PDF directly for
+  *nablan-* discussion.
+- **Kroonen, G.** 2013. *Etymological Dictionary of Proto-Germanic.*
+  s.v. *nablan-* (p.380, line 22412); s.v. *nabō-* (p.381, line
+  22421); s.v. *ahslō-* (line 2575, parallel l-suffix); s.v.
+  *manla-* (line 21048, parallel l-suffix); s.v. *amban-* (line
+  3543, Schwebeablaut relation).
+- **Luick, K.** 1914–40. *Historische Grammatik der englischen
+  Sprache.* §§17307, 17676–81, 17948–49 — OE chronology of medial
+  *u-syncope and re-introduction (*Wiedereinführung*).
+- **Noreen, A.** 1923. *Altisländische und altnorwegische
+  Grammatik* (4th ed.). §155 (line 6082, ultima syncope rule);
+  §156 (line 6123, penult syncope rule — derives ON *nafli* from
+  *nabulō).
+- **Orel, V.** 2003. *A Handbook of Germanic Etymology.* p.279
+  (line 27674), s.v. *nab(u)lōn-.
+- **Polomé, E. C.** 1967. "Notes on the Reflexes of IE /ms/ in
+  Germanic." *RBPH* 45: 800–826. — Background on syllabic-resonant
+  reflexes; no direct *nabulō entry.
+- **Ringe, D.** 2017 [2nd ed.]. *From Proto-Indo-European to
+  Proto-Germanic.* §3.2 (i)–(ii) (line 913ff., PIE syllabification);
+  p.126 (line 4553, PIE *l̥ → PGmc *ul).
+- **Ringe, D. & Taylor, A.** 2014. *The Development of Old
+  English.* p.74 (line 4036, bimoric vs trimoric *ō); p.191
+  (line 11090, canonical derivation **PNWGmc *nabulō > *nǣbula >
+  OE nafola**); p.270 (line 15573, repeat); p.336 (line 19226,
+  vowel-harmony *nafola > nafela).
+- **Schatz, J.** 1907. *Althochdeutsche Grammatik.* §§53, 98, 361.
+  — Cited via EWA s.v. *apful* for the explicit claim of analogical
+  influence "von Wörtern mit altem *ul*" on the Sekundärvokal class.
+- **Streitberg, W.** 1896. *Urgermanische Grammatik.* §47–48 (line
+  2740ff., zero-grade syllabification); §60 (productivity of the
+  PGmc *-(u)l- derivational suffix); §81 (line 4137, syllabic
+  liquids → PGmc *u + L); citation of *nabel* family at lines 3069
+  and 6747 ("ai. nābhis 'Nabel, Nabe' ... aisl. nafle 'Nabel', ae.
+  nafela, ahd. nabalo").
+- **Stiles, P. V.** 2012. "The Pan-West-Germanic Isoglosses and the
+  Subrelationships of West Germanic to Other Branches." *NOWELE*
+  series. — Contextual reference; no direct *nabulō claim.
+- **Vine, B.** 2019. "Greek στωμύλος 'chatty': An anomalous ō-grade
+  (and some anomalous o-grades)." *IEUL* 7: 222–240. — On the
+  status of putative PIE *-ulo-/*-ulos suffix; conclusion: not a
+  productive PIE category.
+
+---
+
+*Drafted for §17.19.10. Length: c. 750 lines. To be folded back into
+DEV_NOTES.md following user review.*
