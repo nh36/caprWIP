@@ -37002,3 +37002,117 @@ PROTOFORM (`*márōn`) and PROTO (`*márōn`) stay as-is.
 2. `python3 Germanic/tools/oe_mismatch_report.py` → expect 26 → 25.
 3. Confirm no other rows shift.
 4. Commit + push.
+
+## §17.29 — *súndrōjaną → sundrian (target was `sundor-`, wrong lexeme)
+
+### .1 Context
+
+Mismatch-loop entry (post-§17.28). Row 2232:
+
+| col | value |
+|---|---|
+| PROTOFORM | `*súndrōjaną` |
+| PROTO     | `*sundrōjaną` |
+| COUNTERPART | `sundor-` |
+| FST output | `sundrian` |
+| Cogset | `sunder` (parallel rows: NL `afzonderen`, E `sunder`, G `sondern`) |
+| Bucket | `cons_mismatch__n_vs_-__word_final` |
+
+The bucket is misleading: this is not a phonological mismatch but a TSV
+target slotted from the wrong lexeme.
+
+### .2 Three distinct PGmc lexemes (Orel, *Handbook of Germanic Etymology*
+pp. 386-7, lines 38011-38040 of `orel_handbook_germanic_etymology.txt`)
+
+Orel cleanly separates three derivatives of PIE *sm-tero- (or related):
+
+1. **`*sunþraz` adj./adv.** — Goth adv. `sundro`, ON `sundr`,
+   **OE `sundor`** 'alone, apart', OFris prep. `sunder`, OS `sundar`,
+   OHG `suntar` 'remote, separate'. Continues a comparative
+   *-ter- formation (cf. Skt sanutár-, Gk áter, W hanner).
+2. **`*sunþrjanan` wk.vb. (cl.I, j-suffix)** — Swed `söndra`,
+   **OE `syndrian`** 'to sunder, separate' (i-umlaut visible). T-F 444.
+3. **`*sunþrōjanan` wk.vb. (cl.II, ō-suffix)** — ON `sundra` 'to break
+   asunder', **OE `sundrian`** 'to sunder, separate', MLG `sonderen`,
+   OHG `suntarōn`. T-F 444; H AEEW 330; KS 771.
+
+The ð/þ vs d alternation in TSV vs Orel is purely orthographic: between
+sonorants in PGmc the fricative had already gone to a stop in the
+relevant environments (Verner-affected geminate / post-nasal clusters),
+so *sundr- ≈ *sunþr- is fine.
+
+### .3 What the cogset actually wants
+
+The "sunder" cogset's other rows are unambiguously verbal class-II
+reflexes:
+
+- NL `afzonderen` (cl.II weak)
+- E `sunder` (< OE `sundrian`/`āsundrian`)
+- G `sondern` (< OHG `suntarōn`)
+
+These all map cleanly to **lexeme #3, `*sunþrōjanan`**. The OE counterpart
+in the same cogset must therefore be `sundrian`, not the unrelated adverb
+`sundor` (lexeme #1).
+
+Cross-check: Kluge-Seebold s.v. *sondern* (lines 86060-86080 of
+`kluge_seebold_etymologisches_woerterbuch.txt`) explicitly: "Wie ae.
+gesundrian, anord. sundra … aus *sundarōn-". Hall lists `sundrian` and
+`sundor` as separate headwords. Bosworth-Toller: `(ā-)sundrian` 'to
+separate, sunder' is well attested (charters, glosses, Beowulf 2422).
+
+### .4 Why FST output `sundrian` is correct
+
+`*súndrōjaną` is a class II weak verb infinitive. The FST chain:
+
+- A-restoration: *u stays *u (no fronting before back ō)
+- Syncope of medial -ō- in trisyllabic class II: *súndr-ōj-aną → sundrian
+- Class II infinitive ending -ian (from *-ōjan)
+- No i-umlaut (ō-suffix, not j-suffix)
+
+Result `sundrian` matches Orel's OE reflex letter-for-letter.
+
+### .5 Why the TSV target `sundor-` is wrong
+
+Three converging signals that this was a data-entry slip, not a defended
+choice:
+
+1. **The trailing hyphen.** `sundor-` with a hyphen is a bound element used
+   in compounds (`sundorhālig`, `sundormǣlum`, `sundor-cræft`). Free
+   counterparts in this column elsewhere are bare lemmas. The hyphen is
+   the tell-tale of a prefix/adverb being slotted into a verb row.
+2. **NOTE provenance.** The NOTE column reads
+   `Source: Wiktionary etymology (template:der)`. Wiktionary's *sunder*
+   etymology page lists multiple OE descendants (the adverb `sundor`, the
+   verbs `sundrian`/`syndrian`); a `template:der` extraction can pick up
+   the wrong one without semantic checking.
+3. **No source treats `sundor` as the OE reflex of `*sundrōjaną`.** Orel,
+   Hall, KS, BT all keep the adverb (←*sunþraz) and verb (←*sunþrōjanan)
+   separate.
+
+### .6 Proposed change
+
+Single TSV edit, row 2232:
+
+| field | before | after |
+|---|---|---|
+| COUNTERPART | `sundor-` | `sundrian` |
+| NOTE | `Source: Wiktionary etymology (template:der) \| Source: Wiktionary etymology (template:der)` | NOTE rewrite citing Orel pp. 386-7 and the lexeme separation; mark earlier `sundor-` as Wiktionary-extraction error. |
+
+No FST change. PROTOFORM/PROTO unchanged.
+
+### .7 Predicted side-effects
+
+- Row 2232 mismatch resolves: `sundrian == sundrian`. Mismatch count
+  25 → 24.
+- Bucket `cons_mismatch__n_vs_-__word_final` drops to 0.
+- No other row references this proto, so isolated change.
+- Should not trigger any new mismatches (FST output is unchanged).
+
+### .8 Verification plan
+
+1. Edit row 2232 (COUNTERPART, NOTE).
+2. `python3 Germanic/tools/oe_mismatch_report.py` → expect 25 → 24.
+3. `python3 Germanic/tools/oe_known_problems_report.py` → tractable
+   17 → 16; triaged unchanged.
+4. Confirm no spurious new mismatches appeared.
+5. Commit + push.
