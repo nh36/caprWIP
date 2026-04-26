@@ -37605,3 +37605,47 @@ Do not implement either rule yet. Discuss with user:
 - **Lexical exception list**: instead of either rule, hardcode
   `bū, cū, hū, tū` as lexical entries. Smallest footprint; doesn't
   improve the FST's grasp of OE phonology.
+
+### §17.31.11 — Implementation outcome (2026-…)
+
+Adopted **Fix A + B** per §17.31.8.
+
+**FST changes** (`Germanic/fsts/germanic.txt`):
+
+1. New rule `NWGmcStressedMonosyllableORaising`:
+   `{*ō} -> {*ū} || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ .#.`
+   Implements Campbell §122 / Fulk §4.11 / R/T 2.1.1+3.1.4: in a
+   stressed monosyllable, final *-ō is raised to long *-ū (not
+   shortened). Yields OE `bū`, `cū`, `tū`, `hū`.
+
+2. Guarded `NWGmcFinalLongORaising` ({\*ō} → {\*u}) with a
+   "preceded by another nucleus" left context, mirroring the
+   pattern used by `OEUnstressedLongVowelShortening1-8`. Per
+   the unanimous source consensus surveyed in §17.31.4-7,
+   apocope/shortening rules require a preceding nucleus.
+
+3. Defensively guarded `PWGmcSurvivingBimoricOUnrounding`
+   ({\*ō} → {\*ā}) the same way (belt-and-braces — the
+   monosyllable rule already raises *ō to *ū upstream).
+
+4. Wired `NWGmcStressedMonosyllableORaising` into both pipeline
+   cascades (`OldEnglishCore` and the trace `EnglishAfterProtoToOEWeakTail`)
+   immediately before `NWGmcFinalLongORaising`.
+
+**Probe results** (post-rebuild):
+
+| input | output | expected | status |
+|---|---|---|---|
+| bō | bū | bū | ✓ (was: bu) |
+| kō | cū | cū | ✓ (was: cu) |
+| twō | twū | tū | ⟂ (initial *tw- not collapsed; lexicon-coverage matter, separate from this fix) |
+| bū | bū | bū | ✓ (no regression) |
+| xūs | hūs | hūs | ✓ (no regression) |
+| sōkjaną | sēċan | sēċan | ✓ (no regression) |
+| gumô | guma | guma | ✓ (no regression; trimoric *ô untouched) |
+
+**Mismatch count**: 24 → 23. Tractable 16 → 15.
+
+**Status**: row 1958 (*bō → bū) now passes. The *kō row, if present
+in the corpus, is also now correct. The fix is general — any future
+stressed-monosyllabic *-ō entry will derive *-ū automatically.

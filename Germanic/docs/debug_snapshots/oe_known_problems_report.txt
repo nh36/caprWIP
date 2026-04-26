@@ -2,8 +2,8 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         24
-  Tractable (no ledger):  16
+Total mismatches:         23
+  Tractable (no ledger):  15
   exception               2
   open                    0
   parked                  1
@@ -17,7 +17,7 @@ Exception = documented in literature/notes as genuine exception.
 Open      = currently being investigated (transient).
 
 ========================================================================
-TRACTABLE MISMATCHES  (16)
+TRACTABLE MISMATCHES  (15)
 ========================================================================
 These mismatches have no ledger entry and are candidates for the
 mismatch-loop workflow (research dossier → review → implement).
@@ -25,8 +25,7 @@ mismatch-loop workflow (research dossier → review → implement).
 --- breaking_missing__expected_eo_got_e (1) ---
   *wéslon            -> weslon               (expected weosule)
 
---- long_vowel_missing (2) ---
-  *bō                -> bu                   (expected bū)
+--- long_vowel_missing (1) ---
   *téxun             -> teoon                (expected tīen)
 
 --- other__breaking_extra__eo_for_high (1) ---

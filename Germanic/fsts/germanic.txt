@@ -1151,8 +1151,13 @@ define PWGmcFinalBareALoss [
 # *-u by NWGmcFinalLongORaising, and nasalized *-ǭ is a distinct symbol.
 # So the only *-ō reaching this rule is the z-loss-exposed "surviving"
 # one. See DEV_NOTES §17.10.23 for the full chronology and audit.
+#
+# §17.31: defensive "preceded by another nucleus" guard added in parallel
+# with NWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
+# by NWGmcStressedMonosyllableORaising upstream and so does not reach
+# this rule; the guard belt-and-braces against any future re-ordering.
 define PWGmcSurvivingBimoricOUnrounding [
-    {*ō} -> {*ā} || _ .#.
+    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 
 # §17.13: OEFinalSchwaApocope removed — body was {*ă} -> 0 || _ .#.,
@@ -1963,12 +1968,37 @@ define NWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];
 
+# Campbell §122 / Fulk §4.11 / R/T 2.1.1 + 3.1.4 (PWGmc lengthening of
+# final vowels in stressed monosyllables): final *ō in a stressed
+# monosyllable is raised to *ū, not shortened. Yields OE cū (cow), tū
+# (two), bū (both n.dual), hū (how, with §173 *w*-loss). See DEV_NOTES
+# §17.31 for the cross-source dossier.
+#
+# Must fire BEFORE NWGmcFinalLongORaising and PWGmcSurvivingBimoricOUnrounding
+# so that monosyllabic *ō never reaches the (polysyllable-only) shortening
+# or unrounding rules.
+#
+# The structural description "monosyllable" = "no preceding nucleus" =
+# `.#. C* _ .#.`. By Germanic root-stress, the only stressed syllable
+# is the first; a word with no preceding vowel is by definition a
+# stressed monosyllable.
+define NWGmcStressedMonosyllableORaising [
+    {*ō} -> {*ū} || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ .#.
+];
+
 # R/T vol.2 p.267: "word-final bimoric non-nasalized long *-ō became
 # short *-u in unstressed syllables in PNWGmc."
 # Examples: PGmc *gebō > PNWGmc *gebu, PGmc *feþrō > PNWGmc *feþru.
 # This does NOT apply to: nasalized *ǭ (fem. n-stem), trimoric *ô (masc. n-stem).
+#
+# §17.31: explicit "preceded by another nucleus" guard added so the
+# rule does not fire on monosyllables (`*bō`, `*kō`, `*twō`, ...). Per
+# unanimous source consensus (Campbell §331(5), R/T 2.1.1, Fulk §5.2,
+# Brunner §§143-149), apocope/shortening rules require a preceding
+# (un)stressed nucleus. Stressed monosyllables are handled by
+# NWGmcStressedMonosyllableORaising above.
 define NWGmcFinalLongORaising [
-    {*ō} -> {*u} || _ .#.
+    {*ō} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 
 # NWGmc: Unstressed *o → *u raising before following *u (Fulk §7.31).
@@ -2871,6 +2901,11 @@ define EnglishProtoToOE (
     # to see the original non-high *-ō suffix on forms like *núsō
     # → *nósō → *nósu — and BEFORE PGmcFinalZDeletion, so gen.sg.
     # *-ōz is sheltered by its -z from raising. See DEV_NOTES §17.10.24.
+    #
+    # §17.31: stressed-monosyllable raising (Campbell §122) fires
+    # FIRST so monosyllabic *bō, *kō, *twō → *bū, *kū, *twū are
+    # exempt from the polysyllable shortening.
+    .o. NWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising
     # PWGmc z-loss (R/T §3.3.1 p.98, §6.8.3 pp.299-300 step 3). Placed
     # immediately after raising — still R/T step 3, but tight to step 2
@@ -3054,6 +3089,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEWsPalatalGlide
     .o. NWGmcULowering
     # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
+    # §17.31: stressed monosyllable rule fires first.
+    .o. NWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. PGmcFinalZDeletion
