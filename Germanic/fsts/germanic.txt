@@ -2633,7 +2633,10 @@ define OEVelarPalatalization [
     # Rule 4: *k after *i/*ī at word boundary
     {*k} -> {*ʧ} || [{*i} | {*ī}] _ .#.,
     # *k before *j
-    {*k} -> {*ʧ} || _ {*j}
+    {*k} -> {*ʧ} || _ {*j},
+    # *kk before *j: geminate palatalization (parallel to *gg below).
+    # See DEV_NOTES.md §17.34.
+    {*k} {*k} -> {*ʧ} {*ʧ} || _ {*j}
 ] .o. [
     # *g — broader conditions per R/T §6.4.1:
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,

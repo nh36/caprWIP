@@ -1,10 +1,10 @@
-Total mismatches: 22
+Total mismatches: 21
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    2
-  Phonology (other buckets):   13
+  Phonology (other buckets):   12
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -30,7 +30,6 @@ Total mismatches: 22
 --- final_n_missing sub-buckets ---
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
-  cons_mismatch__c_vs_ċ__cluster: 1
   cons_mismatch__f_vs_s__cluster: 1
   cons_mismatch__length_diff: 1
 --- suffix_form sub-buckets ---
@@ -100,9 +99,6 @@ final_vowel_missing__weak_noun_like (2):
   >> ISSUE: Target ends in -e/-a (weak noun), FST has bare stem
   >> LIKELY: Proto is strong form, target is weak; or apocope over-applied
   >> ACTION: Check morphological class alignment in TSV
-
-cons_mismatch__c_vs_ċ__cluster (1):
-  *strákkijaną -> strecċan (expected streċċan)
 
 cons_mismatch__f_vs_s__cluster (1):
   *wábsaz -> wæfs (expected wæsp)

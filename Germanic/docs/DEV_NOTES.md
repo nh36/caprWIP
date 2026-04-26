@@ -37877,3 +37877,83 @@ to fit. The cognate-set siblings (Du. *rook*, Eng. *reek*, Ger.
 (rēc moves from tractable to triaged; previously parked under
 *ráukiz it was already triaged but under a different rationale). The
 known-problems report is now the canonical place to read about *rēc*.
+
+## §17.34 — *strákkijaną / streċċan (row 2226): *kk geminate palatalization before *j
+
+**Mismatch.** FST `*strákkijaną → strecċan` vs. attested `streċċan`. The
+geminate cluster surfaces as orthographic `cċ` (single `c` + palatalized
+`ċ`) where the standard editions (Campbell, Bosworth–Toller, Clark Hall)
+have `ċċ` (both palatalized). The same pattern shows in synthetic probes
+of the parallel j-gemination class III weak verbs:
+
+```
+*lúkkijaną → lycċan   (Bosworth–Toller: lyċċan)
+*wákkijaną → wecċan   (BT: weċċan)
+*θákkijaną → þecċan   (BT: þeċċan)
+*lákkijaną → lecċan   (BT: leċċan)
+```
+
+So the issue is general to the *kk + *j palatalization context, not
+peculiar to *strákkijaną.
+
+**Diagnosis.** `Germanic/fsts/germanic.txt` rule `OEVelarPalatalization`
+(line 2625) palatalizes *k under five clauses (R/T §6.4.1 rules 1–4 plus
+*k before *j). None of them matches a geminate as a unit; rule 5
+(`{*k} -> {*ʧ} || _ {*j}`) only applies to the second *k of `*kk j`,
+because only that *k has *j as its right context. The first *k of the
+geminate sees the second *k as its right context, so it is never
+palatalized. The rule block for *g, by contrast, already includes a
+dedicated geminate clause (line 2642):
+
+```
+{*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
+```
+
+The asymmetry between *k and *g is unmotivated: in West Germanic
+j-gemination plus palatalization, both halves of the geminate behave
+phonetically as a single long palatal affricate. Campbell §65 and §428
+spell the outcome `cċċ`-type "/tʃː/" with both halves palatal, and so
+does R/T §6.4.1 (treating geminate /tʃː/ < *kkj as a unit).
+
+**Fix.** Add a geminate clause to the *k block, parallel to the *g
+clause already present:
+
+```
+{*k} {*k} -> {*ʧ} {*ʧ} || _ {*j}
+```
+
+This goes inside `OEVelarPalatalization` between the existing rule 5
+(`{*k} -> {*ʧ} || _ {*j}`) and the start of the `.o. [ ... *g ... ]`
+block. Rule ordering inside the parenthesized definition does not matter
+(foma composes them), but writing the geminate clause last in the *k
+sub-block keeps the structure parallel to the *g sub-block.
+
+**Regression surface.** The only context in which this rule fires is
+`*kk` immediately followed by *j, which is created exclusively by
+PWGmcJGemination from inputs of shape `*Vk(k)jV` (R/T §3.2.2). Surveying
+the TSV for OE rows whose PROTOFORM contains `kkij` or `kkj` returned
+exactly one row: 2226 (*strákkijaną). Synthetic probes of the four
+type-equivalent class-III j-stem verbs above currently produce the same
+buggy `cċ` pattern; they have no TSV rows but would be cleaned up
+identically. There are no rows where the rule's input matches and the
+target deliberately retains `cc` (no palatalization), so no regression
+is possible.
+
+**Why scoping the new clause to `_ *j` (not also `_ *i/*ī`) is right.**
+*k is palatalized before *i/*ī (rule 2) and at word-final after *i/*ī
+(rule 4), but a *kk geminate only ever arises from j-gemination — by the
+time other *i/*ī contexts apply, the j has already collapsed or the
+syllabic structure differs. There is no attested OE form where geminate
+*kk both immediately precedes *i/*ī (post-j-gemination, post-syncope)
+and would need palatalization on both halves. So the geminate clause
+only needs the *j context, matching the *g geminate clause exactly.
+
+**Files to be changed.**
+
+- `Germanic/fsts/germanic.txt`: add one line inside `OEVelarPalatalization`.
+- `Germanic/docs/debug_snapshots/oe_full_trace_report.txt` and
+  `oe_mismatch_report.txt`: regenerated after rebuild.
+- (Optional) `notable_findings.md`: not required — this is a standard
+  rule-symmetry fix, not a notable finding.
+
+**Expected post-fix:** `*strákkijaną → streċċan`. Mismatches 22 → 21.
