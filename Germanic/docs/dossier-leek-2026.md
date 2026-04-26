@@ -21,48 +21,26 @@ recommendation. §7 lists open questions.
 ### §1.1  TSV row
 
 `Germanic/data/germanic-aligned-final.tsv` line 646 (concept ID 215, COGID 147):
-
-```
-2097	l ē a c	*láukaz	l iː k ( - - )	liːk	lēac	215	Old_English   …  leek	*láukaz	147
-```
-
-**Current PROTOFORM:** `*láukaz` (a-stem, accented).
-**Current OE target token:** `l ē a c` = *lēac* (WS diphthongal form).
-**Counterpart IPA `liːk`:** the ModE/ME pronunciation, monophthongal velar.
-
-Sibling rows in the same cog-set (147):
-
-| ID  | Doc      | TOKENS    | PROTOFORM   |
-|-----|----------|-----------|-------------|
-| 644 | Dutch    | l uː k    | *láukaz     |
-| 645 | English  | l iː k    | *láukaz     |
-| 646 | OE       | l ē a c   | *láukaz     |
-| 647 | German   | l au x    | *láukaz     |
-
-This is **already aligned** on `*láukaz` (a-stem) — no `*laukiz` i-stem
-ambiguity in the TSV. Contrast row 2151 for *rēc*, which had `*ráukiz` i-stem
-and required the §17.22.13 / dossier-reek-2026 rewrite.
+`2097  l ē a c  *láukaz  l iː k (- -)  liːk  lēac  Old_English … *láukaz  147`.
+PROTOFORM `*láukaz` (a-stem). Target token `l ē a c` = *lēac*. Counterpart
+IPA `liːk` is the ModE pronunciation. Sibling rows in cog-set 147: 644 Du.
+`l uː k`, 645 Eng. `l iː k`, 647 Ger. `l au x`, all on `*láukaz`. **Already
+aligned on a-stem proto** — no `*laukiz` i-stem ambiguity. Contrast row 2151
+for *rēc*, which had `*ráukiz` and required rewriting per dossier-reek-2026.
 
 ### §1.2  FST probe
 
 ```
-$ docker compose exec -T backend bash -lc \
-    'echo laukaz | flookup -i /usr/app/old_english.bin'
-laukaz   lēac
+$ docker compose exec -T backend bash -lc 'echo laukaz | flookup -i /usr/app/old_english.bin'
 laukaz   lēac
 
-$ … 'echo laukiz | …'
-laukiz   līeċ
-laukiz   līeċ
-
-$ … 'echo lauk | …'
-lauk     lēac
-lauk     lēac
+$ … 'echo laukiz | …'      → līeċ
+$ … 'echo lauk | …'        → lēac
 ```
 
-**The FST already produces *lēac* from `*laukaz`** — agreeing exactly with the
-TSV target. So at the surface-comparison level, **this row is not currently a
-mismatch**: the FST and TSV already agree on WS *lēac*.
+**The FST already produces *lēac* from `*laukaz`** — agreeing exactly with
+the TSV target. So at the surface-comparison level, **this row is not
+currently a mismatch**.
 
 ### §1.3  Where the ModE constraint pinches
 
@@ -162,23 +140,18 @@ place — otherwise we have *līeċ*-type palatal output, which is wrong.
 > "From what has now been said, we can suggest the following chronological
 > order as probable for the sound-changes discussed in the present chapter:
 >   1. Anglo-Frisian development of nasal ā; and of ǣ/ē from West Gmc. ā.
->   2. West Gmc. ai > ā.
->   3. Fronting of West Gmc. a to æ.
+>   2. West Gmc. ai > ā.  3. Fronting of West Gmc. a to æ.
 >   4. Breaking and the related processes of retraction.
 >   5. Restoration of ā before back vowels.
 >   6. Second fronting (mainly VP). **Palatal diphthongization of front
->      vowels, and early diphthongizations of back vowels** (mainly W-S and
->      North.).
->   7. **i-Mutation.**
->   8. Back Mutation.
->   9. **Smoothing.**
+>      vowels, and early diphthongizations of back vowels.**
+>   7. **i-Mutation.**  8. Back Mutation.  9. **Smoothing.**
 >   10. Contraction of vowels, compensatory lengthening."  — Campbell §255
 >      (1959, p. 109)
 
-So Campbell ranks **smoothing as #9, AFTER both palatal influence (#6) and
+Campbell ranks **smoothing as #9, AFTER both palatal influence (#6) and
 i-mutation (#7)**. This is the opposite order from the one floated in
-dossier-reek-2026 §3.ε (which speculated smoothing might *bleed* palatalisation
-of the following *k). On Campbell's chronology, **smoothing cannot bleed
+dossier-reek-2026 §3.ε. On Campbell's chronology, **smoothing cannot bleed
 palatalisation**; palatalisation has already either fired or not by the time
 smoothing runs.
 
@@ -197,31 +170,21 @@ the early manuscript record**, well after palatalisation and i-mutation
 
 ### §3.3  Brunner §119 Anm. 1 — what was the trigger consonant?
 
-Brunner is uncommonly explicit on the **phonetic identity** of the
-post-vocalic c/g/h that triggers smoothing:
-
 > "Die Bezeichnung 'Ebnung' für diese Erscheinung wurde als Übersetzung des
 > von H. Sweet dafür gebrauchten engl. 'smoothing' … in die deutsche
 > grammatische Literatur eingeführt … Die frühere Bezeichnung als
 > 'Palatalumlaut' ist sachlich unrichtig, **weil c, 3, h in diesen Fällen
-> velar und nicht palatal waren**. Daher nennt sie schon Sievers, Ags.
-> Grammatik³, 'sogenannter Palatalumlaut'. Ihre Erklärung als Lautwandel
-> bereitet aber Schwierigkeiten, denn man müßte eine Absorption der durch
-> Brechung entstandenen Gleitelaute bzw. des zweiten Bestandteils der alten
-> Diphthonge vor den velaren Konsonanten annehmen."  — Brunner §119 Anm. 1
+> velar und nicht palatal waren**."  — Brunner §119 Anm. 1
 
-And Anm. 6 (line 5373):
-
-> "**Anzeichen dafür, daß die Gaumenlaute bei 'Ebnung' im Laufe der ae. Zeit
-> nicht mehr rein velar gesprochen wurden, fehlen demnach.** Nur vor hs
-> (geschrieben x) scheint sich eine palatalere Aussprache durchgesetzt zu
-> haben…"  — Brunner §119 Anm. 6
+And Anm. 6: "**Anzeichen dafür, daß die Gaumenlaute bei 'Ebnung' im Laufe der
+ae. Zeit nicht mehr rein velar gesprochen wurden, fehlen demnach.** Nur vor
+hs (geschrieben x) scheint sich eine palatalere Aussprache durchgesetzt zu
+haben…"
 
 **Brunner's explicit position: the c/g/h that conditions smoothing was velar,
-not palatal, throughout the OE period.** This is decisive for the chronology
-question, but in a way different from the dossier-reek formulation: **the
-trigger c was velar all along, so palatalisation never had any reason to fire
-in the smoothing environment**.
+not palatal, throughout the OE period.** Decisive: **the trigger c was velar
+all along, so palatalisation never had any reason to fire in the smoothing
+environment**.
 
 ### §3.4  Fulk 2018 — disputed phonetics, but same chronology
 
@@ -230,14 +193,11 @@ Fulk takes the opposite phonetic view from Brunner:
 > "At about the time of the earliest manuscript records, in a process referred
 > to as smoothing, the diphthongs ĕa, ĕo, io were monophthongized to æ, ě, Ĭ
 > in the Anglian dialects before c, g, h, **which were thus presumably
-> palatal** (see Hogg 1992: §5.93 for discussion). Subsequently, æ as the
-> result of smoothing developed to ē, and before r or l plus a back consonant
-> æ became e."  — Fulk 2018, §4.13 (p. 91 of vision OCR ≈ line 4690)
+> palatal** (see Hogg 1992: §5.93 for discussion)."  — Fulk 2018, §4.13
 
 But Fulk concurs that smoothing is **manuscript-period, not prehistoric** —
-i.e. post-palatalisation, post-i-mutation in absolute chronology. The
-phonetic-identity dispute (Brunner: velar; Fulk: palatal-by-then) does not
-move the relative ordering.
+post-palatalisation, post-i-mutation in absolute chronology. The phonetic-
+identity dispute does not move the relative ordering.
 
 ### §3.5  Resolving the chronology paradox for *laukaz → lēc*
 
@@ -353,15 +313,15 @@ Campbell, Hogg simply lists it under the smoothing inventory.
 
 ### §4.5  Verdict on Q3
 
-Paradigm contamination **reinforces** the velar [k] outcome but is not by
-itself the proximal cause: the proximal cause is that **palatalisation never
-fires in the a-stem paradigm of *laukaz at all** (back-offglide in NomSg,
-back-vowel suffixes in NomPl/AccPl/GenPl/DatPl, no *i-trigger anywhere). The
-Campbell §437–438 / Luick §690 mechanism would matter only if there were a
-front-vowel cell that could plausibly have palatalised; for the i-stem
-*laukiz it does, and Norse *laukr* even shows i-stem confirmation. For OE,
-WGmc had already shifted to a-stem (cf. OHG *louh* without umlaut), so the
-question is moot for the OE-internal derivation.
+Paradigm contamination **reinforces** the velar [k] outcome but is not the
+proximal cause: the proximal cause is that **palatalisation never fires in
+the a-stem paradigm of *laukaz at all** (back-offglide in NomSg, back-vowel
+suffixes in oblique cells, no *i-trigger). The Campbell §437–438 / Luick
+§690 mechanism would matter only if there were a front-vowel cell that could
+plausibly have palatalised; for the i-stem *laukiz it does, and Norse
+*laukr* even shows i-stem confirmation. For OE, WGmc had already shifted to
+a-stem (cf. OHG *louh* without umlaut), so the question is moot for the
+OE-internal derivation.
 
 ---
 
@@ -369,28 +329,22 @@ question is moot for the OE-internal derivation.
 
 ### §5.1  The parallel summarised
 
-| Feature                                  | *raukaz* → rēc   | *laukaz* → lēc/lēac   |
-|------------------------------------------|------------------|------------------------|
-| PGmc starting point (proposed)           | *raukaz (a-stem) | *laukaz (a-stem; **TSV already has this**) |
-| OHG without umlaut                        | *rouh*           | *louh*                |
-| ON with i-stem                           | *reykr* (i-stem) | *laukr* (a-stem in ON, no umlaut) |
-| OE WS form                               | rēc (only)       | **lēac** (parallel to *bēacen*) |
-| OE Anglian/smoothed form                 | rēc              | **lēc**                |
-| ModE                                     | reek /iːk/       | leek /iːk/             |
-| FST current behaviour from `*laukaz`     | (currently rēac for raukaz; mismatch) | **lēac (matches TSV target!)** |
+| Feature                           | *raukaz* → rēc   | *laukaz* → lēc/lēac    |
+|-----------------------------------|------------------|------------------------|
+| PGmc proto (proposed)             | *raukaz a-stem   | *laukaz a-stem (**TSV already**) |
+| OHG without umlaut                | *rouh*           | *louh*                 |
+| ON                                | *reykr* i-stem   | *laukr* a-stem (no umlaut) |
+| OE WS form                        | rēc only         | **lēac**               |
+| OE Anglian/smoothed               | rēc              | **lēc**                |
+| ModE                              | reek /iːk/       | leek /iːk/             |
+| FST current behaviour from a-stem | (mismatch)       | **lēac (matches TSV!)**|
 
 ### §5.2  The critical difference
 
-For *raukaz*, the **OE attestation is universally *rēc***, never *rēac* in
-any dialect (per dossier-reek-2026 §17.22.13.2). That makes the OE row a
-forced choice: target = rēc, FST must produce rēc, hence smoothing must be
-added.
-
-For *laukaz*, **both *lēac* (WS) and *lēc* (Anglian, late-WS Ælfric) are
-attested**. The TSV row 2097 already targets *lēac*, the WS form, and the FST
-already produces *lēac*. The model is **not under empirical strain** here at
-all: the WS-form choice in the TSV is well-attested and the FST derives it
-correctly without any cascade modification.
+For *raukaz*, the OE attestation is universally *rēc*, never *rēac* — forcing
+a target shift. For *laukaz*, **both *lēac* (WS) and *lēc* (Anglian, late-WS
+Ælfric) are attested**. The TSV row 2097 already targets *lēac*, the FST
+already produces *lēac*. The model is **not under empirical strain** here.
 
 ### §5.3  Where the *raukaz* model would extend identically
 
