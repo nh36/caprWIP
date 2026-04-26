@@ -36700,3 +36700,135 @@ separately.
 
 The §17.26 (class III/II for sparian) and the three target-side
 issues above are the candidate topics for the next loop iterations.
+
+## §17.26 — *fáraną / faran (row 2003): TSV target correction (færan → faran)
+
+### §17.26.0 Why did we have the wrong target? (methodological note)
+
+The TSV target for row 2003 was `færan` and a hand-wavy explanatory
+note ("OE target: fær→færan (inf. of str.v. class VI 'to fare, go')")
+asserted internally inconsistent things. The most likely explanation
+is the **target-tuned-to-buggy-FST anti-pattern**:
+
+Before §17.25, the FST's `OEARestorationIntervening` set excluded
+single `*r` and `*l` (`EnglishStarConsonantNoR - {*l}`). For the input
+`*fáraną` this meant:
+
+1. A-fronting fired: `*a → *æ` in the root (`*fáraną → *fǽraną`).
+2. A-restoration was *blocked* by the buggy rule (single intervening
+   `*r` was wrongly excluded), so the root vowel did not revert.
+3. Surface output: `færan`.
+
+If a contributor set the COUNTERPART column to the FST's output rather
+than to the actually attested OE form, the row would *appear* to
+match the FST and never be flagged by `oe_mismatch_report.py`. A
+post-hoc note papering over the inconsistency could then be added.
+The §17.25 fix exposed this row precisely because the FST output
+*moved* to the philologically correct `faran`, no longer agreeing
+with the (already-wrong) target.
+
+The smoking gun is that the prior buggy FST output *exactly* equals
+the wrong target — which is not what one would expect from a copy
+error from a lexicon, an OCR error, or a confusion with the weak
+causative `færan` 'to terrify' (those would produce sporadic, not
+systematic, agreement with the FST's specific bug).
+
+**Implications for the corpus, not just this row:**
+
+- Other TSV rows may be silently "matching" because the FST and the
+  target are wrong in the same way. They are invisible to the
+  mismatch report.
+- After every rule fix, it is worth running a delta on the
+  oe_mismatch_report (which rows just appeared / changed output) to
+  catch this class of issue. The §17.25 fix flushed three out
+  (rows 2003, 2141, and *táppô); future rule fixes may flush more.
+- New TSV entries should set targets from attested OE forms in
+  Bosworth-Toller / DOE / Campbell / Brunner, not from current FST
+  output. (This is implicit in the "be lautgesetzlich" skill but
+  worth elevating as an explicit anti-pattern.)
+
+A general note has been added to `skills/mismatch-loop.md`
+("Anti-patterns" section) so this hazard is part of the workflow
+discipline going forward.
+
+### §17.26.1 Diagnosis
+
+After the §17.25 A-restoration conditioning fix, the FST correctly
+produces `*fáraną → faran`. The TSV row 2003 lists the OE COUNTERPART
+as `færan`, creating a (now exposed) mismatch:
+
+```
+2003 | TOKENS: f æ r a n | PROTOFORM: *fáraną | COUNTERPART: færan
+NOTE: "OE target: fær→færan (inf. of str.v. class VI 'to fare, go')"
+```
+
+The note is internally inconsistent: it identifies the verb as the
+class VI strong verb 'to fare, go', whose infinitive is unambiguously
+`faran`, not `færan`. The likely conflations are with:
+
+- **`fær(e)þ` / `færest`** — 2/3sg present indicative of `faran`,
+  where i-umlaut applies analogically (Brunner §392, §3698: "2. 3. Sg.
+  Ind. Präs. von faran fahren fseres(t), -ed aus urae. *jaris");
+- **`færan`** — a *separate* lexeme, weak class I causative 'to
+  terrify, frighten' (< pre-OE *fōrjaną).
+
+But on the §17.26.0 hypothesis, neither of these was the genuine
+*source* of the wrong target — the source was the buggy FST output.
+
+### §17.26.2 Reconstruction (consensus across literature)
+
+PGmc → OE evolution is uncontroversial and lautgesetzlich at every
+stage:
+
+- **Orel (Handbook of Germanic Etymology, s.v. *faranan)**: "str.vb.:
+  Goth faran 'to pass over, to drive, to wander', OE faran id., OFris
+  fara id., OS faran id., OHG faran id." — perfect cognate set, no
+  language-internal anomalies.
+- **Kroonen (s.v. *faran-)**: PGmc strong class VI, derived from PIE
+  *per- 'to bring across'; nasal-suffixed infinitive *faraną is the
+  inherited shape.
+- **Ringe & Taylor vol.2 (class VI ablaut)**: standard A-grade
+  infinitive *faraną → OE faran with regular A-restoration before
+  single *r in the next syllable's *a vowel (cf. §17.25).
+- **Campbell §158**: explicitly cites `faran` as the textbook example
+  of A-restoration before a single consonant + back vowel.
+- **Brunner §368, §392**: `faran` is THE model paradigm for the entire
+  strong-VI class throughout Altenglische Grammatik.
+- **Hogg vol.1 (passim)**: `faran` cited as the canonical class-VI
+  strong verb without exception.
+
+There is no Proto-Northwest-Germanic, Proto-West-Germanic, or pre-OE
+analogical or phonological development that yields `færan` as the
+*infinitive*. Within the paradigm, i-umlaut (PGmc → pre-OE) on
+2sg/3sg present indicatives produces `færest/færeþ`, but never the
+infinitive (which lacks the conditioning *-i- of -is/-iþ).
+
+The weak verb `færan` 'to frighten' is from a *different* PGmc base:
+*fōrjaną (causative *-(i)janą from a strong-verb root), which the FST
+in this project does not currently treat for this row.
+
+### §17.26.3 Proposed TSV change (row 2003)
+
+| Column | Current | New |
+|--------|---------|-----|
+| TOKENS | `f æ r a n` | `f a r a n` |
+| COUNTERPART | `færan` | `faran` |
+| NOTE | `OE target: fær→færan (inf. of str.v. class VI 'to fare, go')` | `OE target faran (inf. of str.v. class VI 'to fare, go'). Earlier note conflated this with i-umlauted 2/3sg pres fær(e)þ or with weak causative færan 'to frighten' (< *fōrjaną); on the §17.26.0 hypothesis the wrong target was set to match the pre-§17.25 buggy FST output. Corrected per §17.26.` |
+
+ALIGNMENT (`f ɛə r - - ( - - )`) and IPA (`fɛə`) reflect the *modern
+English* reflex 'fare' (the convention for these columns in OE rows
+across the TSV) and stay as-is. PROTOFORM (`*fáraną`) and PROTO
+(`*fáraną`) stay as-is — the protoform is correct.
+
+### §17.26.4 Predicted side-effects
+
+- Mismatch count: −1 (row 2003 transitions from mismatch to match).
+- No FST changes required.
+- No regressions possible (TSV-only edit, isolated to one row).
+
+### §17.26.5 Verification plan
+
+1. Edit row 2003.
+2. `python3 Germanic/tools/oe_mismatch_report.py` → expect 27 → 26.
+3. Confirm no other rows shift.
+4. Commit + push.

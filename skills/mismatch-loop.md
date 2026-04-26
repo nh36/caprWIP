@@ -436,6 +436,19 @@ the current state.
   stipulation". Sonnet has confabulated primary sources in this
   project (compound attestations, dictionary quotations, handbook
   pages). Use Opus or GPT-5.4 for any research-style sub-agent task.
+- **Target-tuned-to-buggy-FST**: setting a TSV COUNTERPART (target)
+  to whatever the current FST happens to output, instead of to an
+  attested OE form from Bosworth-Toller / DOE / Campbell / Brunner.
+  Such a row will *appear* to match and never be flagged by the
+  mismatch report — until a rule fix changes the FST output, at
+  which point the row pops as a "regression" that is actually the
+  rule fix being correct. Documented diagnosis at DEV_NOTES §17.26.0
+  (row 2003 *fáraną → faran/færan), where the pre-§17.25 buggy
+  A-restoration produced exactly the wrong target. **After every
+  rule fix, run a diff on the mismatch report and triage any newly-
+  appearing rows as potentially being this anti-pattern, not as
+  regressions of your fix.** New TSV entries must source the target
+  from attested OE, not from FST output.
 
 ---
 

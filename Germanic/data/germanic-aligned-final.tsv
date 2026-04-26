@@ -279,7 +279,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 248	f a l ə n	*fállaną	f a l ə n ( - - )	falən	fallen	69	German					fall	*fállaną	65
 205	v aː r ə	*fáraną	v aː r ə - ( - - )	vaːrə	varen	57	Dutch					fare	*fáraną	66
 204	f ɛə	*fáraną	f ɛə r - - ( - - )	fɛə	fare	57	English					fare	*fáraną	66
-2003	f æ r a n	*fáraną	f ɛə r - - ( - - )	fɛə	færan	57	Old_English	OE target: fær→færan (inf. of str.v. class VI 'to fare, go')				fare	*fáraną	66
+2003	f a r a n	*fáraną	f ɛə r - - ( - - )	fɛə	faran	57	Old_English	OE target faran (inf. of str.v. class VI 'to fare, go'). Earlier note had færan, conflated with i-umlauted 2/3sg pres fær(e)þ or with weak causative færan 'to frighten' (< *fōrjaną); on the §17.26.0 hypothesis the wrong target was set to match the pre-§17.25 buggy FST output. Corrected per DEV_NOTES §17.26.				fare	*fáraną	66
 203	f aː r ə n	*fáraną	f aː r ə n ( - - )	faːrən	fahren	57	German					fare	*fáraną	66
 1317	v ɑ s t ə	*fastēną	v ɑ s t ə - ( - - )	vɑstə	vasten	361	Dutch					fast	*fastēną	67
 1316	f ɑː s t	*fastēną	f ɑː s t - - ( - - )	fɑːst	fast	361	English					fast	*fastēną	67
