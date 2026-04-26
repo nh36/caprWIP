@@ -1,0 +1,759 @@
+2020                                    LINGUA POSNANIENSIS                                      LXII (2)
+
+                                    DOI: 10.2478/linpo-2020-0010
+
+
+
+
+        The Dziedzice inscription and West Germanic rhotacism
+
+                                            Bernard Mees
+
+                                         University of Tasmania
+                                        bernardmees@icloud.com
+
+Abstract: Bernard Mees, The Dziedzice inscription and West Germanic rhotacism. The Poznań Society for
+the Advancement of Arts and Sciences, PL ISSN 0079-4740, pp. 47-63
+
+The inscription discovered in 1931 on the remains of a cinerary urn near Sedschütz, Upper Silesia, was at
+first proposed to be runic. Later analysed as a Germanic text written in Roman characters, the long-obscure
+Iron Age inscription has only recently been republished after being moved from the museum where it was
+originally conserved. Presumably executed by a member of the Buri, the early Germano-Roman text is only
+partially preserved and appears to feature key evidence for the early dialectal development of Germanic.
+Contemporary with the period of the Marcomannic Wars, its single interpretable lexical element seems to
+contain the earliest evidence for West Germanic rhotacism.
+
+Keywords: inscriptions, Przeworsk culture, Germanic languages, rhotacism
+
+    In the first edition of his corpus of the older runic inscriptions, Wolfgang Krause
+(1937: no. 30) included a find uncovered in 1931 at Servitut (Serwitut), a hamlet near
+the Upper Silesian village then officially known as Sedschütz (cf. Krause 1934). First
+published in 1933 by the archaeologist Georg Raschke, the Sedschütz find was later
+declared by Helmut Arntz (1938: 45-46 and in Arntz & Zeiss 1939: 97-105) to be a Ger-
+manic inscription executed in Roman characters. It has generally been overlooked since
+that date by runologists, not appearing in the second edition of Krause’s corpus from
+1966 or any of the post-war runic grammars. This paper presents the first linguistic as-
+sessment of the Sedschütz inscription to have appeared since the 1930s, contextualising
+it in terms of other proximate continental finds.
+    The Sedschütz inscription is preserved on the fragments of a locally manufactured
+Przeworsk ceramic vessel (figure 1) excavated on the property of Anna Lazar by the
+museum preparator Otto Hanske (Raschke 1933: 344-48; 1934). The fragments were
+unearthed by Hanske from a cremation grave found three meters away from the site of
+a hoard of about 140 Roman denarii that had been discovered on Lazar’s farm six months
+earlier. The coins were found in a ceramic pot and the most recent date to the reigns of
+Marcus Aurelius, Faustina the Younger and Lucius Verus – suggesting a date of deposi-
+tion of c. AD 180 (Raschke 1932; Godłowski 1973: 324, Hellfeier 2014: 37-38). The
+grave that the inscribed fragments were found in included the remains of another ceramic
+
+© 2020 Mees B. This is an open access article licensed under the Creative Commons Attribution-NonCommercial-
+NoDerivs License (http://creativecommons.org/licenses/by-nc-nd/3.0/).
+48                                    Bernard Mees                            LP LXII (2)
+
+vessel, two spearheads, a dagger, a shield buckle and grip, two awls, a fire steel, a belt
+buckle, a strap end and a fibula, and the find was originally conserved in the prehistor-
+ical collection of the Ratibor Museum (Muzeum w Raciborzu).
+    Upper Silesia (Górny Śląsk) is now part of Poland and Sedschütz is officially called
+Dziedzice in Polish today. The urn inscription has also been republished recently in
+a survey of archaeological finds from Upper Silesia (Rodzińska-Nowak 2005) and by
+Robert Hellfeier (2014: 42-44) in his history of the neighbouring village of Smolarnia
+(Pechhütte) which Serwitut is associated with administratively now. Upper Silesia had
+been partitioned into German and Polish sections after a plebiscite in 1921 and the Ger-
+man part of Upper Silesia was subjected to Polonisation after it was annexed by Poland
+at the end of the Second World War (Linek 2001). Much of the surviving collection of
+the former state archaeological service in Ratibor was subsequently relocated to the Muze-
+um Śląska Opolskiego in Opole (Oppeln) and later to the Muzeum Górnośląskie in By-
+tom (Beuthen) which is where the Dziedzice urn fragments are now conserved (invento-
+ry number B.591/3844:58). Kazimierz Godłowski (1973: 324), Judyta Rodzińska-Nowak
+(2005) and Hellfeier (2014: 42-44) follow Krause in describing the Dziedzice inscription
+as runic, unaware that Arntz had explained the text as Germano-Roman.
+    Both Dziedzice and Smolarnia are villages in the Polish administrative district of
+Strzeleczki (Klein Strehlitz) in the province of Opole. They lie near the upper reaches
+of the Oder (Odra), to the north of the Moravian Gate, the site of one of the main Iron
+Age trade routes (the ‘Amber Road’) from the Mediterranean region into Northern Europe
+(Błażejewski 2011). The Dziedzice inscription is also remarkable as the warrior grave it
+was found in has been dated by the form of its fibula (Almgren type A 158) to the C1a
+period (c. AD 150/60-210/20), a similar date to the coin hoard (Godłowski 1973: 324;
+1977: 38; Rodzińska-Nowak 2005). The Dziedzice find seems to stem from the same
+period as the earliest runic bog deposits and the pronounced militarisation of Northern
+society that occurred during the time of Marcus Aurelius’s Marcomannic Wars of
+AD ­167-80.
+    In the 1930s, the Dziedzice text was presumed to be a Vandalic manufacture. The
+Przeworsk archaeological culture of central and southern Poland is often identified with
+the Vandals and thought to have been linguistically East Germanic (Pohl 2004: 32-33).
+Silesia has traditionally been claimed to have been named after the Siling Vandals and
+during the 1930s German nationalists politicised this ancient identity (Korta 1986). But
+Polish archaeologists have long debated the ethnic identity of the bearers of Przeworsk
+culture (Andrzejowski 2010; Tomczak 2013; Domański 2017). Lower Silesia evidences
+a concentration of Jastorf culture finds in the late centuries BC and both Lower and
+Upper Silesia show so much late La Tène material influence they appear to have wit-
+nessed ethnically Celtic enclaves in the late pre-Roman period (Bochnak 2013). Indeed
+Dziedzice lies just north of the Głubczyce Plateau, the site of the La Tène settlement
+of Nowa Cerekwia (Rudnicki 2014). A last-century BC depopulation of the western part
+of the Przeworsk area is linked by Artur Błażejewski (2008: 146) with the invasion of
+Gaul by Ariovistus’s (West Germanic) Suebi and evidence of influence from the Jastorf
+culture can be seen in most parts of the Przeworsk horizon (Grygiel 2015; Domański
+2017). Błażejewski (2017) similarly details the evidence for growing Suebian (Marco-
+LP LXII (2)            The Dziedzice inscription and West Germanic rhotacism              49
+
+
+
+
+                 Figure 1. Photograph of the Dziedzice (Serwitut) inscription
+                     (Witalis Szołtys, Muzeum Górno­śląskie w Bytomiu)
+
+
+mannic or Quadic) material influence in Lower Silesia in the first and second centuries
+AD, and in his close study of the Iron Age sites in the south eastern Opole Plain, Błaże-
+jewski (2015) argues that the part of Upper Silesia east of Dziedzice only seems to have
+been settled by bearers of the Przeworsk culture at the time of the Marcomannic wars
+when iron deposits and the manufacture of weaponry became of particular importance.
+Other than the lost Rozwadów inscription, however, the closest comparisons to the
+­Dziedzice text are another inscription on a ceramic shard found in the 1980s some
+ 175 km away further east at Jakuszowice, in the district of Kazimierza Wielka (Rodziń­
+ ska-Nowak 1992), and a third Przeworsk text excavated a further 82 km northeast at
+ Rudki in the district of Nowa Słupia (Czernek 2006).
+     The inscribed ceramic shard from Jakuszowice is one of c. 30,000 ceramic artefacts
+ found at the Iron Age settlement. The settlement is associated with a Hunnic princely
+ grave from the early fifth century, but many of the finds from Jakuszowice date back
+ several centuries earlier (Rodzińska-Nowak 2016). The inscribed piece of greyware has
+ been dated to the fourth century and its inscription is interpreted as the first two letters
+ of a Roman abecedarium by Rodzińska-Nowak (1992). As can be seen from the illustra-
+ tion that accompanies her article (figure 2), however, the inscription must be held to run
+ from right to left if it is to be transcribed as ab[. The letterforms also look to be inver­
+ ted if read in this manner with the rounding of the counter making it look as if the
+ engraver started at the bottom of the second character. The internal arm of the first
+50                                      Bernard Mees                            LP LXII (2)
+
+character is also quite irregular, starting much higher on the left stem than is regular for
+Latin letterforms. A more likely reading of the Jakuszowice inscription is ub[ or perhaps
+even ur[, presumably the first syllable of the name of the potter.
+    A third inscribed Przeworsk find was uncovered in 1933-34 at Rudki, near Kielce, by
+a team of Polish archaeologists led by Stefan Krukowski, but it was not published until
+2006. A fragment of a ceramic vessel that seems to have been made locally bears an
+inscription of five characters, not all of which are clearly legible. The inscription is read
+very doubtfully by Daniel Czernek (2006) as featuring a runic text ạạ?iẓ with the unex-
+pected central character looking like the later star-like form of the j-rune (figure 3). The
+Rudki site is the remains of a prehistoric iron mine, with several Iron Age mining shafts
+clearly identified by the excavators. Among the finds of mining tools and wooden rein-
+forcements, a fibula, a whetstone, animal bones and ceramic shards all dating to the B2
+and C1 periods were recovered. The inscribed shard is conservatively dated by Czarnek
+to c. AD 200.
+    Czernek’s interpretation of the Rudki inscription as runic is plausible – it is clearly
+not written in Roman letterforms and appears unlikely to represent mere decoration. But
+the final character read by Czernek as ẓ appears to represent the expected nominative
+ending -z inherited from Proto-Germanic, not the reflex -s attested in Gothic. Vandalic
+names show clearly East Germanic features (Onesti 2013), but the difficult sequence ạạ?iẓ
+does not at first look to be East Germanic. Derolez (1987) explained the star-like form
+of the j-rune as having arisen from a ligature of g and i after the palatalisation of /g/ (to
+[j]) before /i/ occurred in West Germanic and early Danish. Yet *agiz ‘fear’ does not
+seem as plausible an interpretation of an inscription found in an ancient mine as is *ajiz
+‘bronze, ore’, a term that is reflected in Gothic by aiz ‘money’ where the West Germa­nic
+reflexes such as Old English ār ‘ore, brass, copper’ and Old High German ēr ‘ore’ ­feature
+rhotacism of z > r. The final -z in Gothic aiz is unexpected, one of the exceptions to the
+general tendency in Gothic for final sibilants to lose their voicing in this position, but
+voicing is also recorded in the Gothic compound aizasmiþa ‘coppersmith’ and is clearly
+retained because it is part of the suffix of the Proto-Germanic neuter substantive *ajiza
+‘bronze, copper, ore’, a remade s-stem inherited from Indo-European (cf. Sanskrit áyas-
+‘metal, copper’ and Latin aes ‘ore’).
+    Other inscriptions of Iron Age date found in Poland include the text on a sword dis-
+covered in 1888 at Grabice (Reichersdorf), Lower Silesia (Jentsch 1889: 344-50). Grabi-
+ce lies near the German border, on the right bank of the Oder, and the inscription is
+clearly Latin, a manufacturer’s stamp: Natalis m(anu) ‘Natalis’s h(andiwork)’ (CIL XIII
+10036.84, Dąbrowski & Kolendo 1972: 64-65). The Grabice sword was buried bent in
+half and was found in a cremation grave along with a silver-plated scabbard mount de­
+corated with a palmette, a shield boss, a spearhead, an axe-head, a pair of spurs, two
+belt buckles, three fibulas, a comb and some other personal effects. The third-century
+burial stems from the region of the Luboszyce culture that is traditionally associated with
+the Burgundians (Domański 1970). The sword and its inscription were clearly imported,
+however, unlike the Dziedzice urn.
+    A more famous import is the four-footed bronze folding altar found in 1886 in
+a princely grave at Sackrau, Lower Silesia (now Zakrzów in the northeast of Wrocław)
+LP LXII (2)            The Dziedzice inscription and West Germanic rhotacism              51
+
+
+
+
+                       Figure 2. Sketch of the Jakuszowice inscription
+                               (Rodzińska-Nowak 1992: 211)
+
+
+
+(Grempler 1887; Quast 2014). The altar dates from the late third century AD and although
+it was discovered broken up in one of the three chamber graves uncovered at the site, it
+has since been reassembled so that its rear legs stand 107.5 cm high. The altar is richly
+decorated, with its front legs featuring busts of maenads at the top, then satyrs, panthers,
+floral decoration and panther’s paws at the bottom. The front legs feature the inscription
+Num(en) Aug(usti), a dedication to the ‘imperial godhead’, twice (once below the maenad
+busts, a second time below the panthers), and the altar also features a name Avitus,
+clearly the signature of the craftsman who made the piece, stamped on the back hook at
+the top of one of the rear legs (CIL XIII 10036.90). Other finds from the Zakrzów grave
+included a silver vessel, a gold and silver fibula, a torc, armrings, belt buckles, ceramics,
+a bronze patera and a silver skyphos or two-handled drinking cup.
+    Further east, the oldest datable Latin inscription found in Poland was unearthed in
+1962 from a male cremation grave in an Iron Age cemetery at Wesółki, near Kielce
+(Dąbrowski & Dąbrowski 1967). It is stamped into a sword that appears to have been
+buried sometime between c. 25/20 BC and AD 15/20. The text reads Allius Pa(…) and
+preserves an Italic family name Allius along with an abbreviated cognomen Paetus, Pae­
+tinus, Pansa, Patricus or the like (Dąbrowski 1970; Dąbrowski & Kolendo 1972: 62-64).
+The grave (number 20) held the charred remains of a man in his 30s or early 40s and
+the 82.5 cm long sword is clearly of Italian or provincial Roman origin. Lubomira Tysz-
+52                                     Bernard Mees                            LP LXII (2)
+
+ler (2016: 48) suggests that the Wesółki sword may have been made in Noricum as it is
+best paralleled otherwise only by Celtic imports.
+    Inscriptions are also found on the many coins that were circulating in the Przeworsk
+region at the time. The earliest inscription appears on a bronze coin of Philip II of Mace-
+don discovered at the La Tène settlement of Nowa Cerekwa that features the minter’s
+monogram AV on its reverse (Rudnicki 2014: 49). A fragment of an imitation of a tetra­
+drachm of Philip II of Macedon also discovered at Nowa Cerekwa preserves the last two
+letters of [ΦIΛIΠΠ]OY ‘Phillip’s’ (Rudnicki 2014: 48) and is an early Celtic or Getic
+imitation of Lower Danubian origin that was probably minted at the end of the fourth
+or in the first half of the third century BC (Preda 1973: 29-47). Other inscribed coins
+found in Upper Silesia dating more surely from the third century BC include a coin
+minted at Croton, Italy, that records the name of the river god AIΣAPOΣ and KROTΩNI-
+ATAN on its reverse, a coin of Hiero II of Sicily with its inscription IEPONOΣ and
+a coin of the Mamertines of Messana that bears the legend ΜΑΜΕΡΤΙΝΩΝ (Rudnicki
+2014: 48). Roman coins begin to appear in Przeworsk contexts from the second century
+AD, however, and these even include imitation denarii that, unlike earlier copies of ­Boiian
+coins found in the area, sometimes preserve Latin numismatic inscriptions more or less
+faithfully (Czernek 2013). The earliest imitations date to the late or end of the second
+century and include examples such as a coin from a hoard found at Malkowice in Less-
+er Poland where the imperial style Antoninus Aug(ustus) Pius is written Antoninus Au.ins
+(Czerneck 2013: 147). Similar errors are found in other Przeworsk imitations of Roman
+coins, including a denarius imitation from Olchowiec, near Lublin, that renders Aurelius
+Caesar Aug(usti) Pii F(ilius) as Aurelius Aufsra Pii F (Czerneck 2013: 147-48). Compa-
+rable denarius imitations are also known from Gotland and Ukraine, a distribution that
+suggests they are Gothic manufactures (Lind 2018). But there are also some examples
+of higher-value coins that feature what seem likely to be linguistically Gothic texts. Two
+coins held by the Ossolineum in Wrocław (both of unclear provenance) feature East
+Germanic inscriptions, one (on an aureus of the Emperor Postumus) scratched in Greek
+letters, the other (on an imitation of an aureus of the Emperor Septimius Severus) in
+runes (Bursche 2013, Degler 2015; 2017; Mees 2018). Reading γουνθ/ιου ‘Gunthios’’
+(or perhaps ‘Guttios’’) and [h]rustis ‘ornament’ respectively, these texts seem most like-
+ly to have been executed in the late third century AD in Wielbark or Chernyakiv culture
+contexts.
+    Finally, there is the Rozwadów inscription, found in 1932 on an Iron Age spearhead
+unearthed in a suburb of the Polish industrial city of Stalowa Wola. Another funerary
+find, the Rozwadów spearhead was discovered in a cremation grave and has been dated
+most recently to the c. AD 150/160-210/220 period (Kaczanowski 1988). Silver-inlaid
+and preserved on a barbed type of spearhead, its text was rather fragmentary, but what
+could be made out by Marcjan Śmiszko (1936) of its dextroverse inscription was accept-
+ed by Krause (in Krause and Jankuhn 1966: no. 35) to be a runic text [---]krlụs. The
+rune-inscribed spearhead has been missing since the Second World War, but two other
+spearheads were unearthed at Rozwadów along with the inscribed find as well as a belt
+buckle, spurs and the fragments of an urn (Paluch 2015). The somewhat corroded 24 cm
+long rune-inscribed piece also features several tamgas inlaid with silver (although much
+LP LXII (2)           The Dziedzice inscription and West Germanic rhotacism            53
+
+
+
+
+        Figure 3. Photographs and sketch of the Rudki inscription (Czernek 2006: 96)
+
+
+
+of the silver was destroyed by the incineration). The ending in s rather than -z is also
+typical of Gothic substantives and as Piotr Garbacz (2016) has most recently argued, the
+sequence looks much like a scrambled form of the common early runic sequence [e]k
+erilaz. What the Rozwadów sequence represents precisely, however, remains unclear.
+    The catalogue card in the Muzeum Górnośląskie indicates that the urn fragments from
+Dziedzice have been held in its archaeological department in Bytom since 1974. Much
+of the collection formerly conserved in Ratibor was evidently destroyed during the Se­
+cond World War, yet Hellfeier’s (2014: 42-44) transcription of the Dziedzice inscription
+is much the same as that produced by Krause, and separates the early Germanic text into
+eight 8-10 cm high letterforms. The inscription was applied before the urn was fired and
+the originally reddish yellow (now brown) local fabrication was evidently 33 cm in dia­
+meter before it fractured (Rodzińska-Nowak 2005). Almost a third of the cinerary urn
+was rescued and a total of six graves were eventually excavated from the Serwitut site.
+Godłowski (1973: 323) describes a series of additional finds not published by Raschke
+in the 1930s and Hellfeier (2014: 41, 45) reports that other discoveries made in the area
+during the 1940s and 50s remain unpublished.
+    The Dziedzice text clearly reads from left to right and preserves a series of often
+clearly rounded letterforms that can mostly be taken as runic or Roman. It had original-
+54                                       Bernard Mees                              LP LXII (2)
+
+ly been taken as an older runic inscription by Krause (1934; 1937: no. 30) who translite­
+rated the Sedschütz text as rl͡ þ·b·hkbuḷ, but Arntz later interpreted the inscription as
+Germano-Roman after his archaeological collaborator Hans Zeiss had sought out August
+Oxé’s opinion. Oxé was an expert on Roman pottery and read the Dziedzice inscription
+(working from an illustration) as R (or B) D.B.HVR (or B) DΛ (Arntz & Zeiss 1939:
+102). Oxé took the fifth character of the Dziedzice inscription to be a Roman V (where
+Krause had implausibly read a k of the younger-runic type) and the second and seventh
+characters to be Roman D’s. Krause had interpreted the second letterform as an irregular
+ligature of an l-rune with a þ-rune, but the lower part of the presumed ligature is sepa-
+rated from the upper by a crack and it is not at all clear that the two graphemes share
+a stem. Krause’s ligature might better be taken as two separate characters: one ending
+an otherwise lost upper line of text (more lightly incised than the lower one) and the
+second more prominent character being part of a better-preserved lower line. Using the
+editorial conventions employed for Roman inscriptions, the best transcription of the
+­Dziedzice text is: ]+ / ]rd·b·hurd+[.
+     Oxé’s reading of the Dziedzice text is clearly more regular than Krause’s interpretation
+ of the inscription as an older runic find. The final letter is very doubtful (only a stem
+ can be made out on the urn fragments today), but Arntz identified hurd- as an early
+cognate of Gothic haurds ‘(lattice) door’, Old Norse hurð ‘door’, Old Saxon hurth ‘hur-
+ dle, wickerwork’ and Old High German hurt ‘hurdle, grate, railing’ (< *hurdiz ‘wicker-
+work door’; cf. Latin cratis ‘wickerwork construction, hurdle’), and proposed that the
+term was originally written twice, separated by a preposition. He interpreted the Dziedzice
+inscription as [hu]rd b(i) hurda[i] ‘braid by braid’, a quite remarkable expression to find
+on an ancient cinerary urn. Arntz suggested that the (putative) reference to a braid could
+reflect an attempt to bind the deceased to the grave in line with the grave-magic theories
+of Arthur Nordén (1934) that were also championed by Krause (Arntz & Zeiss 1939:
+104-5).
+     A key problem with Arntz’s interpretation is his treatment of the punctuated third
+character, clearly a Roman or runic b. The missing vowel of bi ‘by (means of)’ was
+ included by Arntz in his transcription as b(i), with the apparent syncopation explained as
+ being due to weak accentuation of the preposition. Yet if the presumed syncopation is
+ not merely orthographic (i.e. due to abbreviation or error), how weak stress could explain
+ the single letterform is not clear – vowels are not simply omitted when they appear in
+ weakly stressed prepositions in either runic or Roman epigraphy. A more plausible ex-
+ planation would be that the third character represents an abbreviation. Roman inscriptions
+ often abbreviate the military title beneficiarius ‘soldier seconded for special duties’ in this
+ manner (e.g. M(arcus) Var(ius) Sroerus b(eneficiarius) co(n)s(ularis), RIB 235), and (un-
+ like references to binding) onomastic texts are relatively common finds on cinerary urns.
+     If ·b· represents an abbreviation, then the Dziedzice text could be Latin. The sequence
+ hurd- is not obviously Latin and no clear grammatical endings are apparent (otherwise)
+ in what remains of the inscription, but the name of the cremated was sometimes etched
+ into cinerary urns in Roman times. The Latin indication b(eneficiarius) is commonly (but
+not always) specified by a further indication such as co(n)s(ularis) ‘of the governor’,
+however, and given the widespread abbreviation of names in Roman epigraphy, the b on
+LP LXII (2)            The Dziedzice inscription and West Germanic rhotacism           55
+
+the Dziedzice urn could well stand for another, one-off abbreviation such as a name
+beginning with b. Family names (gentilicia) and nicknames (cognomina) can have their
+nominative endings omitted in Roman inscriptions (e.g. Var[ius]), but it is usually only
+Latin given names (praenomina) that are fully abbreviated (e.g. M[arcus]) and there is
+no evidence that there ever was a Latin praenomen that began with B-. But a text com-
+parable to a Roman cinerary inscription may have been intended and Latin funerary texts
+are often widely abbreviated.
+    Typically, inscribed Roman cinerary urns bear simple two-part texts, including both
+the name of the deceased and that of the commissioner of the urn. Several thousand
+columbarium texts are recorded in the sixth volume of the Corpus Inscriptionum Lati-
+narum and as Borbonus (2014) indicates many of them date to the period of the ‘epi-
+graphic revolution’ of the first and second centuries AD when funerary epigraphy became
+particularly popular with the Roman middle classes. In columbaria, the inscriptions were
+often left on separate plaques (tituli), but their texts are of the same basic form as is
+found on cinerary urns. Longer inscriptions on Roman cinerary urns can include the
+initial sequence Dis Manibus ‘for the shades of the dead’ (often abbreviated just to D·M)
+and additional information can also be supplied, indicating, for example, how long the
+deceased had lived or preserving an explanation of what the relationship between the
+dead and the commissioner was. A relatively simple funerary inscription found in 1879
+on an urn in a columbarium near the Porta Tiburtina in Rome, for example, reads (CIL
+VI 13414):
+
+   M(arcus) Antonius Diognet(us)
+   vix(it) ann(os) L
+   Aurunceia Hedone
+
+   Marcus Antonius Diognetus
+   lived 50 years
+   Aurunceia Hedone
+
+   When a title such as beneficarius is expressed, it comes after the name of the officer.
+A funerary inscription from Lambaesis, Algeria, for example, reads (CIL VIII 2870):
+
+   D(is) M(anibus)
+   T(itus) Flavius
+   Domi-
+   tianus
+   b(eneficiarius) Iuliae
+   Quaet(a)e
+   matri
+   fec(it) v(ixit)
+   ann(os) LXV
+   h(ic) s(ita) e(st)
+56                                     Bernard Mees                         LP LXII (2)
+
+     For the shades of the dead,
+     Titus Flavius
+     Domi-
+     tianus,
+     a beneficiarius, for Iulia
+     Quaeta,
+     (his) mother,
+     made (this). She lived
+     65 years.
+     She lies here.
+
+   Rarely, gentilicia can also be fully abbreviated, such as in the following, slightly
+fragmentary funerary text from Sagunto, Spain (CIL II 588):
+
+     Fab(iae) Ursae an(norum) […]
+     et B(aebio) Pyramo a[n(norum) […]
+     L(ucius) B(aebius) Artemas [uxori(?)]
+     et l(iberto) bene mere[ntibus]
+
+     For Fabia Ursa … years
+     and Baebius Pyramus … years
+     Lucius Baebius Artemas, [for (his) wife]
+     and freedman, (both) well deserving.
+
+    Roman urns such as those collected by Sinn (1987) are typically much more elaborate
+constructions than is the Dziedzice find, made of marble and highly decorated. But less
+elaborate forms of funerary inscriptions are often found in the provinces and it seems
+likely that the same basic onomastic features of a Roman memorial text are reflected on
+what remains of the Dziedzice find.
+    There is no Roman name or Latin word that begins with hurd-, however, although
+from a Roman epigraphic perspective, the Dziedzice inscription looks as if it features
+a memorial text made by or for a beneficiarius whose cognomen ended in -rd(us) by or
+for another man whose gentilicium began with Hurd-. There is a Latin gentilicium Hor-
+dionius (and cf. Latin hordeum ‘barley’), but Hurd- could only be understood to be
+Latin if it were a misspelling or a Germanisation. Yet there are no examples of German-
+ised Latin names of such a type attested in other inscriptions and, as haurds ‘(lattice)
+door’ shows, Gothic regularly lowered (or diphthongised) *u before r in contrast to West
+Germanic where inherited *u is reflected before r unchanged, for example in the Tungrian
+name Hurmius from Housesteads (RIB 1619).
+    Nonetheless medieval names such as Hordolf, Hortbert and Horthari suggest that the
+Dziedzice sequence hurd- may be Germanic. Given that the Dziedzice inscription was
+found in a Germanic burial, its sequence hurd- seems best understood as representing
+a name beginning with the Germanic onomastic element Hurd-. In light of the kinds of
+texts found in comparable Roman cinerary inscriptions, hurd- seems most likely to re­
+LP LXII (2)           The Dziedzice inscription and West Germanic rhotacism             57
+
+present the first element of the name of the commissioner of the urn or that of the
+warrior buried in the cremation grave. The vast majority of Roman-letter texts preserved
+on ceramics represent names – either those of the maker or the owner of the find – and
+there seems little reason to expect that the Dziedzice inscription would represent anything
+other than an onomastic text.
+    The main problem with an onomastic interpretation of the Dziedzice inscription is
+that the Germanic naming element Hord-, Hort- is usually linked etymologically with
+Gothic huzd, Old Norse hodd, Old English hord, Old Saxon hord and Old High German
+hort ‘treasure, hoard’ (Förstemann 1901: 866), forms which since Brugmann (1896) have
+typically been connected by etymologists with Greek keuthō ‘hide’, Latin custos ‘guar­
+dian’ and hence a Proto-Germanic *huzdą (Rix 2001: 358-59, Kroonen 2013:260); cf. the
+Gothic names Hosdas and Hosbut (Haubrichs 2014:22). Vandalic is usually accepted to
+be an East Germanic language, featuring retention of the sibilant pronunciation of inher-
+ited *-z- in names such as that of the great fifth-century king Gaisericus < *Gaiza-rīkaz
+(Schönfeld 1911: 99-101), where contemporary West Germanic forms such as the epi-
+graphically preserved Suebian name Hildiger (AE 1975: 894, Africa proconsularis) show
+rhotacism (Onesti 2013: 179-95). The name of the Vandal Hasdingi is distinguished from
+the Old Norse Haddingjar and the Old English Heardingas by this very feature, with
+Old Norse haddr ‘hair’ < *hazdaz ‘flax’. If it is taken to be Germanic, the Dziedzice
+inscription seems to preserve early evidence for a characteristically West Germanic de-
+velopment, rhotacism of *z > r, already appearing in an epigraphic find from the archaeo­
+logical C1a period. The spelling hurd- does not show a-umlaut (i.e. hord-), but the date
+of the phonemicisation of a-umlaut is unclear.
+    If Hurd- is linguistically West Germanic, the Dziedzice inscription cannot be a Van-
+dalic manufacture and might be better linked with one of the other Germanic tribes
+mentioned in the area at the time such as the Buri. According to Tacitus (Germ. 43), the
+Marsigni and Buri lived ‘close in the rear’ of the Marcomanni and Quadi (terga Marco-
+manorum Quadorumque claudunt), and ‘in their language and manner of life resemble
+the Suebi’ (sermone cultuque Suebos referunt). Ptolemy (Geographia 2, 11, 10) links the
+Buri with the Lugi (as Lugi Buri) and they are recorded as one of the members of the
+Marcomannic confederation by Cassius Dio (Historia Romana 72-73). Archaeological
+evidence for Suebian influence in (at least Lower) Silesia at the time is also clear. The
+Buri do not seem to have been defeated by the Romans until the early reign of Com-
+modus when an expeditio Burica was undertaken in either AD 181 or 182 (Kovács 2009:
+260-61). The Dziedzice hoard appears to date to the reign of Marcus Aurelius and the
+presumably contemporary urn inscription looks as if it may support Tacitus’ record of
+West Germanic speakers present in Upper Silesia in the early centuries AD.
+    Yet the late second century is a much earlier period for the appearance of West Ger-
+manic features than is usually assumed. A comparatively early date for rhotacism in West
+Germanic contrasts with the much later North Germanic development where evidence for
+the merger of reflexes of inherited *z with those of *r dates from the transitional-runic
+period of the seventh-eighth centuries (Antonsen 1975: 17, Ringe and Taylor 2014: 82).
+But Ringe and Taylor (2004: 82-87) date West Germanic rhotacism to after a split with-
+in West Germanic of the northern from the southern dialects on the grounds of variations
+58                                          Bernard Mees                                 LP LXII (2)
+
+in monosyllabic forms such as the Old English adverb mā ‘more’ and Old High German
+mēr ‘more’ (< *maiz). The variation between Old English meord and mēd ‘reward, meed’
+(< *mizdō) similarly suggests a West Germanic dialectal connection between *z-loss and
+rhotacism (Crist 2001: 101-5). West Germanic gemination has also typically been dated
+to after rhotacism because it only fails to affect both *z and *r – incipient rhotacism (if
+not full merger of the reflexes of *z and *r) seems likely to have predated this sound
+change (Ringe & Taylor 2014: 50-53).
+    The first clear evidence of West Germanic gemination is the runic spelling kunni ‘kin’
+on a bone from Sandstedt, on the Lower Weser, whose epigraphic authenticity was
+demonstrated by Pieper (1989) and that has been dated to c. AD 355-410 by carbon-14
+and amino-acid analysis (Antonsen 2002: 315-28). This date seems to vitiate Wagner’s
+(1993) attempt to date gemination in Frankish to the sixth century or later by its failure
+to appear in the name of the Salii and underlines the importance of runic evidence. Da-
+tive plural epithets from the Rhineland such as Gabiabus and Teniavehis that seem to
+date to the second or third century similarly fail to exhibit gemination (Mees 2006: 23-24,
+34), but variations in the spellings of more clearly Germanic personal names such as
+Freiania and Friannius (CIL XIII 8396 and 8536) show how unreliable apparent geminate
+spellings (or the lack thereof) can be in provincial Roman epigraphy. It is the earliest
+evidence for a sound change rather than later counter-examples that is most probative,
+however – as Barnes (2005: 179) observes, sound changes do not occur uniformly at all
+points in a speech area initially, but instead tend to spread out from an innovative place
+or group, with competition for older and newer pronunciations lasting for some time
+until one becomes predominate at the expense of the other.
+    Recently, García Losquiño (2015) has reiterated Antonsen’s (1975: 26-28, 2002: 17-36)
+argument that West Germanic features can be isolated among the archaeological C1a
+period texts in the early runic corpus and Nedoma and Düwel (in Schmidt, Nedoma and
+Düwel 2010/11) have similarly argued that the c. AD 300 runic inscription from Frien-
+stedt evidences West Germanic loss of *-z. Schuhmann (2014: 400-401) contends that
+the Frienstedt description kaba may just represent a weak masculine like Old High
+German kambō ‘comb’, however, and a similar analysis may be applied to the early
+runic forms such as laguþewa focussed on by García Losquiño (2015: 54-79). Schwarz
+(1951: 256) pointed to Tacitus’ spelling of the names Chariovalda and Catualda as evi-
+dence that *-z had already been lost in the first century, but these forms may also feature
+weak or even Latinate endings (Wagner 1983) and as Schwartz (1951: 257) acknowledged
+a reflection of final -z seems to be retained in the second or third-century Germanic
+dative plurals Aflims and Vatvims from the Rhineland (Mees 2006: 16).
+    Various attempts to date rhotacism in ancient West Germanic names have also been
+proposed over the years. The name of the early-fourth-century Frankish king Merogaisus
+(with gaisus presumably representing *gaiza- ‘spear’) is only known from a corrupt
+passage in the Panegyrici Latini restored as Ascarici Merogaisique by Zeuss (1837: 339)1.
+But as Wagner (1985:254-55) points out, the name Ariogaisus, borne by a king of the
+
+     Zeuss (1837: 339, n.) gives the attested manuscript forms as Ascari cinere gaisique, Ascari cumero
+     1
+
+geasique, Assaccari cynero craisique and Asacari cynero gaisique.
+LP LXII (2)           The Dziedzice inscription and West Germanic rhotacism             59
+
+Quadi in the time of the Marcomannic Wars, features a similar onomastic element -gai-
+sus and the Quadi are accorded a Suebian tribe by Tacitus. There is also a late-fourth-cen-
+tury name Laniogaisus attested by Ammianius Marcellinus that is typically thought to be
+Frankish (Schönfeld 1911: 152). Yet Wagner (1985) argues that the late-fourth-century
+general Arintheus also recorded by Ammianus bears a Frankish name featuring rhotacism
+(with Arin- < *azina- ‘fireplace’). As Ködderitzsch (1986: 200-210) admits, Ariogaisus
+looks to be a Celtic spelling with the first element comparable to those found in Ario-
+manus, Ariovistus and Ariobindus, and Wagner (1985: 254) also claims that Laniogaisus
+is Celtic. The two fourth-century Alemannic figures called Hortarius that have tradition-
+ally been seen to bear a name featuring West Germanic rhotacism (whether reflecting
+*huzda- ‘hoard’ or *uzda- ‘sharp point’) are explained by Wagner (1990) as Latin (cf.
+Latin hortus ‘garden’). It is important to note, however, that intervocalic *z is not the
+same phonological environment as *z before *d and that the West Germanic rhotacism
+of inherited *z before *d may well predate the similar intervocalic development. As Ringe
+and Taylor (2014: 84-86) note, there is also evidence that rhotacism of *z occurred ear-
+lier in the Suebian/Alemannic dialects than it did in the rest of West Germanic, both in
+terms of Old English and Frisian forms that evidence late retention of *z (such as North
+Frisian lāsk ‘lark’ < *laiwazikā) and Old High German monosyllabic terms (e.g. mēr
+‘more’ < *maiz) that preserve final -r where *z is typically lost altogether from other
+West Germanic dialects. The developments *hurda- < *huzda- and *mair < *maiz rep-
+resent instances of rhotacism before a consonant or at the end of a word respectively
+while *gaira- < *gaiza- displays the same sound change occurring intervocalically – and
+the Dziedzice inscription’s hurd- may well represent evidence that rhotacism of West
+Germanic *z first occurred before *d before it spread to other environments. As Denton
+(2003: 13-14) argues, the rhotacism of /z/ was probably facilitated by the emergence of
+a coronal fricative allophone of Germanic /r/. The medial voiced dental fricative allophone
+[ð] of Germanic /d/ may well have provided the phonological environment that encour-
+aged the identification of an allophone of /r/ with /z/ which presumably served as the
+catalyst for West Germanic rhotacism.
+    The Dziedzice inscription has long been obscure, its fate since the end of the Second
+World War unclear. But it seems to be best taken as preserving the initial element of
+a name that exhibits a West Germanic phonological development. An archaeological C1a
+or c. AD 150/60-210/20 date for this rhotacism accords with Antonsen’s (1975: 27; 2002:
+33) c. AD 200 date for the emergence of West Germanic which is accepted by Schulte
+(2018: 19); cf. Grønvik (1998; 2010) who argued for a first-century separation from North
+Germanic, Malášková and Blažek (2012: 10) who contend that the divergence probably
+occurred in c. AD 150, and Euler (2013) who prefers a third-century date. West German-
+ic rhotacism appears to be a sound change that predates most of the earliest runic evidence
+and seems to have begun at the same time (rather than be anterior) to z-deletion. As
+Ringe and Taylor (2014: 84-86) observe ‘a substantial number of [early West Germanic]
+innovations … either diffused from one dialect to another or were independent but para­
+llel’ and both sound changes represent a lenition of *z and seem to have been position-
+al, with *z-deletion (rather than just rhotacism) even occurring medially before *d in
+some instances. The differing treatment of inherited *z before *d in West Germanic forms
+60                                            Bernard Mees                                   LP LXII (2)
+
+such as Old English meord and mēd ‘reward, meed’ also suggests that the retention of
+sibilantic pronunciations preserved intervocalically in onomastic elements such as -gaisus
+is only relevant to the final stage of West Germanic rhotacism – i.e. that the rhotacism
+of *z before *d was an earlier development in Suebian/Alemannic than its rhotacism (or
+deletion) in other environments. West Germanic rhotacism and *z-deletion are two of the
+most characteristic early sound changes in West Germanic, but where Kuhn (1955) dated
+the final separation between North and West Germanic to the period of the Anglo-Saxon
+migrations, the earlier evidence for both West Germanic rhotacism and gemination sug-
+gests that a fifth-century demarcation is far too late. Names of figures from late antiqui-
+ty evidence typically West Germanic sound changes and such testimony is supported by
+a West Germanic interpretation of the onomastic element hurd- attested in the Dziedzice
+inscription.
+
+
+                                              References
+AE = L’Année épigraphique. Paris: Leroux, 1889ff.
+Andrzejowski, Jacek. 2010. The Przeworsk culture. A brief story (for the foreigners). In Lund Hansen, Ulla
+    & Bitner-Wróblewska, Anna (ed.). Worlds Apart: Contacts Across the Baltic Sea During the Iron Age.
+    1-52. Nordiske fortidsminder: Serie C 7. Copenhagen: Det Kongelige Nordiske Oldskriftselskab.
+Antonsen, Elmer H. 1975. A Concise Grammar of the Older Runic Inscriptions. Sprachstrukturen, Reihe A:
+    Historische Sprachstrukturen 3. Tübingen: Niemeyer.
+Antonsen, Elmer H. 2002. Runes and Germanic Linguistics. Trends in Linguistics: Studies and Monographs
+    140. Berlin: De Gruyter.
+Arntz, Helmut. 1938. Die Runenschrift: Ihre Geschichte und ihre Denkmäler. Handbücherei zur Deutschkunde
+    2. Halle a.S.: Niemeyer.
+Arntz, Helmut & Zeiss, Hans. 1939. Die einheimischen Runendenkmäler des Festlandes. Gesamtausgabe der
+    älteren Runendenkmäler 1. Leipzig: Harrassowitz.
+Barnes, Michael. 2005. Language. In McTurk, Rory (ed.). A Companion to Old Norse-Icelandic Literature
+    and Culture. 173-189. Malden, MA: Wiley.
+Błażejewski, Artur. 2008. Die Frage der elbgermanischen Besiedlung in Schlesien in der römischen Kaiserzeit.
+    In Błażejewski, Artur (ed.). Labor et patienta: Studia archaeologica Stanislao Pazda dedicata. 139-149.
+    Wrocław: Instytut Archeologii Uniwersytetu Wrocławskiego.
+Błażejewski, Artur. 2011. The Amber Road in Poland. State of research and perspectives. Archaeologia Litu-
+    ana 12. 57-63.
+Błażejewski, Artur. 2015. Kultura przeworska w dorzeczu Jemielnicy na Górnym Śląsku. Studium osadnicze.
+    In Michałowski, Andrzej & Teska, Milena & Żółkiewski, Marek (eds.). Viator per devia scientiae itinera:
+    Studia nad problematyką okresów przedrzymskiego, rzymskiego, wędrówek ludów i wczesnego średnio-
+    wiecza. 217-227. Seria Archeologia 53. Poznań: Adam Mickiewicz University Press.
+Błażejewski, Artur. 2017. Kultura przeworska a nadłabski krąg kulturowy w okresie rzymskim. Przegląd
+    problematyki. In Bohr, Marcin & Teska, Milena (eds.). Extra limites. 17-34. Poznań: Instytut Archeologii
+    Uniwersytetu im. Adama Mickiewicza w Poznaniu.
+Bochnak, Tomasz. 2013. The Eastern Celts in the North. In Guštin, Mitja & Jevtić, Miloš (eds.). The Eastern
+    Celts: The Communities between the Alps and the Black Sea. 13-17. Annales Mediterranei. Koper: Uni-
+    verza na Primoerskem.
+Borbonus, Dorian. 2014. Columbarium Tombs and Collective Identity in Augustan Rome. Cambridge: Cam-
+    bridge University Press.
+Brugmann, Karl. 1896. Die Verbindung dentaler Verschlusslaut + s + t im Lateinischen und im Germanischen.
+    Indogermanische Forschungen 6. 102-104.
+Bursche, Aleksander. 2013. The Battle of Abritus, the imperial treasury and aurei in Barbaricum. The Numis-
+    matic Chronicle 173. 151-171.
+LP LXII (2)                The Dziedzice inscription and West Germanic rhotacism                         61
+
+CIL = Corpus Inscriptionum Latinarum. Mommsen, Theodor et al. (ed.) /Academia litterarum regiae Borus-
+    sica (and successor bodies). 17 vols. Berlin: Reimer/De Gruyter, 1863ff.
+Crist, Sean J. 2001. Conspiracy in Historical Phonology. Dissertation, University of Pennsylvania.
+Czernek, Daniel. 2006. Starożytna kopalnia rud żelaza w Rudkach (Sosnówce), stanowisko 2/16, w świetle
+    badań archeologicznych Stefana Krukowskiego, przeprowadzonych w latach 1933-1934. In Orzechowski,
+    Szymon & Suliga, Ireneusz (eds.). 50 lat badań nad starożytnym hutnictwem świętokrzyskim: Archeologia
+    – Metalurgia – Edukacja. 91-102. Kielce: Kieleckie Towarzystwo Naukowe.
+Czernek, Daniel. 2013. A barbarous imitation of a Roman denarius from Skowronno Dolne, gmina Pińczów,
+    Świętokrzyskie Voivodeship. Notae Numismaticae 8. 143-154.
+Dąbrowska, Iwona & Dąbrowski, Krzysztof. 1967. Cmentarzysko z okresów późnolateńskiego i wpływów
+    rzymskich w Wesółkach, pow. Kalisz. Polskie Badania Archeologiczne 15. Wrocław: Instytut Historii Kul-
+    tury Materialnej Polskiej Akademii Nauk.
+Dąbrowski, Krzysztof. 1970. A Roman sword with the maker’s stamp from Wesółki near Kalisz, Poland. In
+    Filip, Jan (ed.). Actes du VIIe Congres International des Sciences Préhistoriques et Protohistoriques,
+    Prague, 21-27 Août 1966. 930-934. Prague: Academia.
+Dąbrowski, Krzysztof & Kolendo, Jerzy. 1972. Les épées romaines découvertes en Europe centrale et septen-
+    trionale. Archaeologia Polonia 13. 59-109.
+Degler, Adam. 2015. East Germanic imitation of an aureus of Severus Alexander with runic legend the new-
+    est acquisition to the collection of ancient coins in the Ossolineum. Wiadmości Numizmatyczne 59. 47-62.
+Degler, Adam. 2017. Aureus of Postumus with the owner’s graffito (Gounthiou). In Caccamo Caltabiano,
+    Maria (ed.). XV International Numismatic Congress Taormina 2015 Proceedings, I, 723-726. Rome: Arbor
+    sapientiae.
+Denton, Jeanette Marshall. 2003. Reconstructing the articulation of Early Germanic *r. Diachronica 20. 11-43.
+Derolez, René. 1987. Some new runes and the problem of runic unity. In Runor och runinskrifter: Föredrag
+    vid Riksantikvarieämbetets och Vitterhetsakademiens symposium 8-11 september 1985, 55-66. KVHAA
+    Konferenser 15. Stockholm: Almqvist & Wiksell.
+Domański, Grzegorz. 1970. Settlement complex from a late La Tene and Roman period at Luboszyce, Lubsko
+    District. Archaeologia Polona 12. 321-334.
+Domański, Grzegorz. 2017. The history of research on the Jastorf culture in Poland. In Michałowski, Andrzej
+    & Teska Milena & Niedzielski, Przemysław & Żółkiewski, Marek (eds.). Settlements Pottery of the Pre-Ro-
+    man Iron Age in Central European Barbaricum – New Research Perspectives. 11-30. Poznań: Instytut
+    Archeologii Uniwersytetu im. Adama Mickiewicza w Poznaniu.
+Euler, Wolfram. 2013. Das Westgermanische – von der Herausbildung im 3. bis zur Aufgliederung im 7.
+    Jahrhundert: Analyse und Rekonstruktion. London: Inspiration Un Limited.
+Förstemann, Ernst. 1900. Altdeutsches Namenbuch I: Personennamen. 2nd ed. Bonn: Hanstein.
+Garbacz, Piotr. 2016. Inskrypcja na grocie rozwadowskiej włóczni (KJ35): ik eruls czy ik erlas? LingVaria
+    21. 13-20.
+García Losquiño, Irene. 2015. The Early Runic Inscriptions: Their Western Features. Berkeley Insights in
+    Linguistics and Semiotics 92. New York: Lang.
+Godłowski, Kazimierz. 1973. Materiały do poznania kultury przeworskiej na Górnym Śląsku – część I. Ma-
+    teriały Starożytne i Wczesnośredniowieczne 2. 255-382.
+Godłowski, Kazimierz. 1977. Materiały do poznania kultury przeworskiej na Górnym Śląsku – część II. Ma-
+    teriały Starożytne i Wczesnośredniowieczne 4. 7-237.
+Grempler, Wilhelm. 1887. Der Fund von Sackrau. Brandenburg a.d.H.: Lunitz.
+Grønvik, Ottar. 1998. Untersuchungen zur älteren nordischen und germanischen Sprachgeschichte. Osloer
+    Beiträge zur Germanistik 18. Frankfurt a.M.: Lang
+Grønvik, Ottar. 2010. Nordische Merkmale in der Sprache der älteren Runeninschriften. In Ole Askedal, John
+    & Bjorvand, Harald & Knirk, James E. & Erlend, Otto (eds.). Zentrale Probleme bei der Erforschung der
+    älteren Runen. 107-125. Osloer Beiträge zur Germanistik 41. Frankfurt a.M.: Lang.
+Grygiel, Michał. 2015. Kultura jastorfska na Niżu Polskim. Próba określenia chronologii, zasięgu i powiązań.
+    Wiadomości Archeologiczne 66. 127-181.
+Haubrichs, Wolfgang. 2014. Personennamen sprachlich ostgermanischer Provenienz. Studia Anthroponymica
+    Scandinavica 32. 5-35.
+Hellfeier, Robert. 2014. Smolarnia – 350 lat historii. Strzeleczki: Gmina Strzeleczki.
+62                                            Bernard Mees                                   LP LXII (2)
+
+Jentsch, Hugo. 1889. Gräberfunde aus der Zeit des späteren provinzial-römischen Einflusses bei Reichersdorf,
+    Kr. Guben. Verhandlungen der Berliner Gesellschaft für Anthropologie, Ethnologie und Urgeschichte 1889.
+    343-352.
+Kaczanowski, Piotr. 1988. Chronologia inkrustowanych grotów broni drzewcowej z okresu wpływów rzyms-
+    kich z obszaru europejskiego Barbaricum. In Gedl, Marek (ed.). Scripta archaeologica. 51-77. Uniwersytet
+    Jagielloński Varia 231. Warsaw: Państwowe Wydawnictwo Naukowe.
+Ködderitzsch, Rolf. 1986. Keltoide Namen mit germanischen Namenträgern. Zeitschrift für celtische Philolo-
+    gie 41. 188-213
+Korta, Wacław. 1986. Badania nad średniowiecznym Śląskiem w polskiej historiografii w latach 1945-1980.
+    Śląski kwartalnik historyczny Sobótka 43. 157-86.
+Kovács, Péter. 2009. Marcus Aurelius’ Rain Miracle and the Marcomannic Wars. Mnemosyne supplement 308.
+    Leiden: Brill.
+Krause, Wolfgang. 1934. Die Runeninschrift von Sedschütz. Altschlesien 5. 382-386.
+Krause, Wolfgang. 1937. Runeninschriften in älteren Futhark. Schriften der Königsberger Gelehrten Ge-
+    sellschaft, Geisteswissenschaftliche Klasse 13. 4. Halle a.S.: Niemeyer.
+Krause, Wolfgang & Jankuhn, Herbert. 1966. Die Runeninschriften in älteren Futhark. Abhandlungen der
+    Akademie der Wissenschaften in Göttingen, Philologisch-Historische Klasse, Dritte Folge, Nr. 66. Göttin-
+    gen: Vandenhoeck & Ruprecht.
+Kroonen, Guus. 2013. Etymological Dictionary of Proto-Germanic. Leiden Indo-European Etymological Dic-
+    tionary Series 11. Leiden: Brill.
+Kuhn, Hans. 1955. Zur Gliederung der germanischen Sprachen. Zeitschrift für deutsches Altertum und deutsche
+    Literatur 85. 1-47.
+Lind, Lennart. 2018. Imitation Roman denarii. Roman Denarii, Hoards and Stray Finds in Sweden 1. 1-36
+Linek, Bernard. 2001. “De-Germanization” and “re-Polonization” in Upper Silesia, 1945-1950. In Ther, Philipp
+    & Siljak, Ana (eds.). Redrawing Nations: Ethnic Cleansing in East-Central Europe, 1944-1948. 121-134.
+    Lanham, MD: Rowman & Littlefield.
+Malášková, Zuzana & Blažek, Václav. 2012 [2016]. On the position of Frisian within the West Germanic
+    continuum. Philologia Fenno-Ugrica et Indoeuropaea 18. 1-23.
+Mees, Bernard. 2006. Early Rhineland Germanic. NOWELE 49. 13-49.
+Mees, Bernard. 2018. Early Gothic numismatic [h]rustis and γουνθ/ιου. Beiträge zur Geschichte der deutschen
+    Sprache und Literatur 140. 449-57.
+Nordén, Arthur. 1934. Från Kivik till Eggjum II: Runristningar med gengångarbesvärjelse. Fornvännen 29.
+    97-117.
+Onesti, Nicoletta Francovich. 2013. Goti e Vandali: Dieci saggi di lingua e cultura medievali. Proteo 73.
+    Rome: Artemide.
+Paluch, Janusz M. 2015. Przyczynek do historii badań archeologicznych w Rozwadowie i okolicach. In Gar-
+    bacz, Anna (ed.). Z przeszłości miasta Rozwadowa. 37-57. Stalowa Wola: Muzeum Regionalne.
+Pieper, Peter. 1989. Die Weser-Runenknochen, Neue Untersuchungen zur Problematik: Original oder Falschung.
+    Archäologische Mitteilungen aus NW Deutschland, Beiheft 2. Oldenburg: Isensee.
+Pohl, Walter. 2004. The Vandals: fragments of a narrative. In Merrills, Andrew H. (ed.). Vandals, Romans and
+    Berbers: New Perspectives on Late Antique North Africa. 31-48. Aldershot: Ashgate.
+Preda, Constantin. 1973. Monedele Geto-Dacilor. Biblioteca de arheologie 19. Bucharest: Academiei Republicii
+    Socialiste România.
+Quast, Dieter. 2014. Die Steinkammergräber aus Wrocław-Zakrzów. In Abegg-Wigg, Angelika & Lau Nina
+    (eds.). Kammergräber im Barbaricum: Zu Einflüssen und Übergangsphänomenen von der vorrömischen
+    Eisenzeit bis in die Völkerwanderungszeit. 323-342. Schriften des Archäologischen Landesmuseums Ergän-
+    zungsreihe 9. Neumünster: Wachholtz.
+Raschke, Georg. 1932. Zwei römische Münzfunde in Oberschlesien. Germania 16. 146-147.
+Raschke, Georg. 1933. Heilszeichen auf wandalischen altertümer Oberschlesien. Der Oberschlesier 15. 337-348.
+Raschke, Georg. 1934. Ein Runentopf in dem wandalischen Männergrabe von Sedschütz Kr. Neustadt OS.
+    Altschlesien 5. 376-381.
+RIB = The Roman Inscriptions of Britain, Collingwood, Robin G. et al. (ed.) 2 vols. Oxford: Clarendon,
+    1965-1991.
+Ringe, Don & Taylor, Ann. 2014. The Development of Old English. A Linguistic History of English 2. Oxford:
+    Oxford University Press.
+LP LXII (2)                The Dziedzice inscription and West Germanic rhotacism                           63
+
+Rix, Helmut. 2001. Lexikon der indogermanischen Verben. 2nd edn. Wiesbaden: Reichert.
+Rodzińska-Nowak, Judyta. 1992. Fragment eines spätkaiserzeitlichen Gefässes mit Inschrift aus der Siedlung
+    in Jakuszowice, Gm. Kazimierza Wielka. Ein Deutungsversuch. In Godłowski, Kazimierz & Madyda-Le-
+    gutko, Renata (eds.). Probleme der relativen und absoluten Chronologie ab Latenezeit bis zum Frühmit-
+    telalter. Materialien des III. Internationalen Symposiums: Grundprobleme der frühgeschichtlichen Entwick-
+    lung im nördlichen Mitteldonaugebiet, Kraków-Karniowice 3.-7. December 1990. 207-212. Kraków:
+    Secesja.
+Rodzińska-Nowak, Judyta 2005. Dziedzice. In Tomczak, Eugeniusz (ed.). Skarby ziemi wydarte: Górny Śląsk
+    i pogranicze. 82. Katowice: Śląskie Centrum Dziedzictwa Kulturowego w Katowicach.
+Rodzińska-Nowak, Judyta. 2016. Das Fundspektrum römischer Sachgüter der Siedlung Jakuszowice, Gde.
+    Kazimierza Wielka, woj. świętokrzyskie. In Voß, Hans-Ulrich & Müller-Scheeßel, Nils (eds.). Archäologie
+    zwischen Römern und Barbaren: Zur Datierung und Verbreitung römischer Metallarbeiten des 2. und
+    3. Jahrhunderts n. Chr. im Reich und im Barbaricum – ausgewählte Beispiele (Gefäße, Fibeln, Bestandteile
+    militärischer Ausrüstung, Kleingerät, Münzen). 807-815. Kolloquien zur Vor- und Frühgeschichte 22.2.
+    Bonn: Habelt.
+Rudnicki, Marcin. 2014. Nowa Cerekwia. A Celtic centre for craft and commerce of interregional importance
+    north of the Carpathians. In Berecki, Sándor (ed.). Iron Age Craft and Craftsmen in the Carpathian Basin:
+    Proceedings of the International Colloquium from Târgu Mureş, 10-13 October 2013. 33-70. Bibliotheca
+    Mvsei Marisiensis, Series Archaeologica 7. Târgu Mureş: Editura MEGA.
+Schmidt, Christoph G. & Nedoma, Robert & Düwel Klaus. 2010/2011. Die Runeninschrift auf dem Kamm
+    von Frienstedt, Stadt Erfurt. Die Sprache 47. 123-186.
+Schönfeld, Moritz. 1911. Wörterbuch der altgermanischen Personen- und Völkernamen. Heidelberg: Winter.
+Schuhmann, Rudolf. 2014. Zur Endung runisch-altfriesisches -u und zur Entwicklung der Endung nom.sg.m.
+    a-St. urgermanisches *-az. Amsterdamer Beiträge zur älteren Germanistik 73. 397-419.
+Schwarz, Ernst. 1951. Goten, Nordgermanen, Angelsachsen: Studien zur Ausgliederung der germanischen
+    Sprachen. Bibliotheca germanica 2. Berne: Francke.
+Schulte, Michael. 2018. Urnordisch: Eine Einführung. Wiener Studien zur Skandinavistik 26. Vienna: Praesens.
+Śmiszko, Marcjan. 1936. Grot dzirytu z runicznym napisem z Rozwadowa nad Sanem. Wiadomości Archeo-
+    logiczne 14. 140-46.
+Sinn, Frederike. 1987. Stadtrömische Marmorurnen. Beiträge zur Erschliessung hellenistischer und kaiserzeitli-
+    cher Skulptur und Architektur 8. Mainz: Von Zabern.
+Tomczak, Eugeniusz. 2013. Zarys archeologii do 1944 roku. In Tomczak, Eugeniusz (ed.). Archeologia: Górny
+    Śląsk. 243-300. Katowice: Śląskie Centrum Dziedzictwa Kulturowego w Katowicach.
+Tyszler, Lubomira. 2016. Celtyckie militaria w kulturze przeworskiej z obszaru Wielkopolski wschodniej i Pol-
+    ski środkowej. Rocznik Wieluński 16. 29-52.
+Wagner, Norbert. 1983. Zum -a von Chariovalda und Catvalda. Sprachwissenschaft 8. 429-436.
+Wagner, Norbert. 1985. Arintheus, die n-Deklination und der Rhotazismus. Beiträge zur Namenforschung
+    ns 20. 245-56.
+Wagner, Norbert. 1990. Der Alemannenname Hortarius. Historische Sprachforschung 103. 108-12.
+Wagner, Norbert. 1993. Der Stammesname der Salier und die “westgermanische” Konsonantengermination.
+    Zeitschrift für deutsches Altertum und deutsche Literatur 118. 34-42.
+Zeuss, Johann Kaspar. 1837. Die Deutschen und die Nachbarstämme. Munich: Lentner.
+

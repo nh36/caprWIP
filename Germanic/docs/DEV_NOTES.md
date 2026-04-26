@@ -35773,3 +35773,568 @@ when the underlying notable finding evolves.
   * `Germanic/tools/oe_known_problems_report.py` — reporter
   * `Germanic/tools/run_oe_reports.py` — orchestrator (extended)
   * `Germanic/docs/debug_snapshots/oe_known_problems_report.txt` — output
+
+## §17.24 — *mizdō / mēd / meord: in-session research notes (pre-decision)
+
+These notes record findings from the §17.22.13 supplement follow-up investigation. They are
+provisional — written before the user sent additional Kroonen material — and are kept here as
+a paper trail for the eventual notable-finding entry.
+
+### §17.24.1 Verified Kroonen citation (EDPG 2013, p. 376)
+
+The repo has the full text at
+`Germanic/docs/references/etymological_dictionary_of_proto_germanic_kroonen.txt` (line 21890).
+Verbatim:
+
+> *mizdō(n)- f. 'reward' — Go. mizdō f. 'id.', OE méd, meord f. 'id.', E meed, OFri. méde,
+> OS méda, MDu. miede, OHG miata, G Miete 'rent' > *misdʰ-eh₂- (IE) — Skt. mīḍhá- n.
+> 'battle, booty, prize, profit', Av. miždà- n. 'reward, prize', NP muzd, Oss. myzd | mizd
+> 'reward', Gr. μισθός m. 'hire, pay, wages, reward, daily wages', OCS mъzda, Ru. obs. mzda,
+> SCr. màzda < PIE *misdʰ-o/eh₂-.
+>
+> An IE compound of the root *mi(s)- 'to exchange (gifts)' and *dʰh₁- 'to put'. The PGm. form
+> *mizdō- developed into WGm. *mīdō- (*mēdō-) due to **(sporadic) loss of z before dentals**,
+> which is the source of the r-less forms OS méda, mieda, OFri. méde, mide, OHG miata. **The
+> dialectal distribution of z-loss is rather patchy**, however, cf. OS linon 'to learn' vs.
+> OHG lernōn < *liznōn-, and Old English **preserved a (dialectally dependent?) doublet
+> méd : meord**.
+
+Key points:
+
+1. Kroonen explicitly posits a sound change *z-loss before dentals*, characterised as
+   **sporadic** and **dialectally patchy**.
+2. He cross-references the OS *linon* / OHG *lernōn* split (< *liznōn-) as the parallel
+   z-loss/z-retention behaviour.
+3. He treats OE as preserving a **doublet** méd : meord, possibly dialectally distributed.
+4. The pre-OE pathway he proposes is essentially `*mizd → *mīd → *mēd` (z-loss with
+   compensatory lengthening, then lowering of long *ī to ē), independent of breaking +
+   smoothing.
+
+### §17.24.2 The "single dental" quote was not in Kroonen
+
+The earlier supplement (`mismatch_dossier_mizdo_supplement.md` §3.2) reproduced a "Kroonen"
+quote attributed to web search:
+
+> "breaking does not take place because *i precedes a single dental"
+
+No such formulation appears in the EDPG entry on `*mizdō-`. The closest material in Kroonen
+is the verbatim quote in §17.24.1, which talks about z-loss before dentals — not breaking.
+Treat the "single dental" wording as **agent confabulation** (likely conflated with R/T
+2014 p. 285 paraphrase) until a real source surfaces. Any future use of that quote needs
+a primary citation.
+
+### §17.24.3 *meord-gifa is a ghost compound
+
+> ⚠️ **Correction note (§17.24.7)** — The framing here is partly wrong. The
+> *compound* *meord-gifa is indeed a ghost (no attestation anywhere). But the
+> simplex **meord** 'reward' is genuinely attested as a dialectal variant of *mēd*
+> in BT Supplement (OE Bede 4.17), Bright's Reader (Phoenix-tradition poem,
+> glossed "(dial.)"), and Hall's Concise. The closing sentence below — that
+> "'meord reward' is a handbook entry without surviving primary attestation" — is
+> **wrong**, and the conclusion that compound_archaism_inventory.md Case 1 should
+> be "retracted" is replaced by a recasting (see §17.24.7 (c)).
+
+Traced the origin of the "*meord-gifa" claim that propagated through three documents:
+
+| Document | Status |
+|---|---|
+| `mismatch_dossier_mizdo.md` (lines 76, 97, 249, 591, 676) | First introduction. **No citation.** Stated as "attested in early texts" — agent confabulation. |
+| `compound_archaism_inventory.md` (Case 1, lines 42, 47, 268, 284, 292) | Echoed the first dossier as if attested. Contaminated. |
+| `mismatch_dossier_mizdo_supplement.md` (line 80, §2.2–2.3) | Verified against BT: no `*meord-` compounds exist. Only `mēd-gyfa`, `mēd-sceatt`, etc. |
+
+The supplement is correct: BT contains no `*meord-` first-element compounds. The only
+attested *meord* simplex is the homonym **meord₁ 'dung'** (Épinal/Erfurt glossaries).
+"meord 'reward'" is a handbook entry without surviving primary attestation traceable from
+the dictionaries we have on hand.
+
+`compound_archaism_inventory.md` Case 1 should be retracted.
+
+### §17.24.4 The nest parallel (user's hypothesis confirmed)
+
+Kroonen p. 22966 (in repo, verbatim):
+
+> *nista- n. 'nest' — OE nest, E nest, Du. nest, OHG nest, G Nest = **\*ni-zd-o- (IE)**
+
+So Kroonen reconstructs:
+
+- PIE `*ni-zd-o-` → PGmc `*nista-` → OE **nest** (regular)
+- PIE `*mi-zdʰ-eh₂-` → PGmc `*mizdō-` → WGmc `*mīdō-/*mēdō-` (sporadic) → OE **mēd**
+
+Both etyma have the IE cluster *-zd-* followed by a dental obstruent. The difference is
+**chronological depth of z-loss**:
+
+| Item | z-loss timing | Outcome | Vowel result |
+|---|---|---|---|
+| `*nizd-` 'nest' | Pre-PGmc (complete; PGmc reconstructed as `*nista-`) | No comp. lengthening | Short /i/ → /e/ via regular a-mutation before /a/ in next syllable |
+| `*mizd-` 'reward' | WGmc-internal (sporadic, patchy) | Comp. lengthening *iz → *iː | Long /iː/ lowered to /eː/ (R/T 2014 p. 285: "always *i, sometimes lowered when lengthened") |
+
+The user's instinct is correct: **nest is the structural twin of mēd**, with z-loss-before-
+dental at a different chronological depth giving different vowel-length consequences.
+
+FST probe (current state):
+
+```
+nestaz       → nest        (FST handles nest correctly because the input is already *nesta-)
+nezdaz       → neord       (FST applies breaking before -rd; gives the meord-style outcome)
+```
+
+The FST does **not** model z-loss before dentals at all. It accepts post-z-loss inputs
+(*nestaz*) but cannot derive nest from a true *nizd-* input. Treating mēd via z-loss would
+require either:
+- A new pre-OE rule for z-loss before dentals, or
+- An input-level adjustment (*mizdō → *mēdō pre-FST), parallel to how we handle other
+  WGmc-internal sporadic changes.
+
+### §17.24.5 The wider homonym/collision field
+
+> ⚠️ **Correction note (§17.24.7)** — The "circular citation hazard" framing in
+> this subsection is **withdrawn**. Direct repository checks (BT Supplement,
+> Bright, Hall) found genuine primary attestations of *meord* 'reward'. The
+> handbook agreement (Kroonen, Orel, Campbell, Brunner, Bammesberger, Streitberg,
+> Pokorny, Ringe/Taylor) reflects shared real evidence transmitted through BT
+> and Bright, **not** lexicographic recycling of a ghost. The dung-homonym
+> (meord₁) and the *medʰu-* (mead) collision points are still factually correct
+> but they are not the source of the méd/meord lexicographic tradition.
+
+The lexicographic confusion around "meord/mēd" is deeper than even the supplement found:
+
+1. **mēd** (reward, < *mizdō-, *misdʰ-o/eh₂-)
+2. **meord** (dung; Épinal/Erfurt) — separate etymon, well attested
+3. **meodu** (mead, < *medʰu-, PIE *medʰu- 'honey, mead') — different OE word, but Kroonen
+   p. 21386 notes Russian *méd* 'honey, mead', so cross-Slavic attestations of the *medʰu-
+   reflex collide on the surface form *méd* with the *mizdō- reflex.
+
+A handbook compiler scanning indexes for "OE méd" or "OE meord" risks picking up:
+- the dung gloss as evidence for "reward",
+- Slavic *méd* 'honey/mead' as evidence for *mizdō-,
+- or simply propagating earlier lexicographers' méd/meord doublet without re-verifying
+  primary attestation.
+
+This is the **circular-citation hazard** the notable finding will document.
+
+### §17.24.6 Open questions before deciding classification
+
+Held for user input:
+
+1. **Additional Kroonen source**: User said they would send the article they recalled.
+   Verify any quotes against that.
+2. **Real meord attestation**: Kroonen claims OE has a "doublet méd : meord". Either:
+   (a) Kroonen is propagating a ghost; we should look one more time for any primary citation
+   (DOE corpus search, Toller addenda, glossary indices), or
+   (b) There *is* an attestation we missed — e.g. in glosses or charters not in BT.
+3. **Notable-finding entry**: Once the above are resolved, draft entry #11 in
+   `notable_findings.md` covering the circular-citation hazard, dung/reward/mead homonym
+   field, Kroonen's z-loss-before-dentals analysis, and the nest structural parallel.
+   *(See §17.24.7: revised to centre on dialectal doublets preserving pre- and post-
+   z-loss outcomes, with a note that the circular-citation hypothesis was withdrawn.)*
+4. **Compound archaism inventory correction**: Strike Case 1 (meord) and replace with a
+   "rejected" annotation citing this section. *(See §17.24.7: replaced by recasting
+   the inventory itself — broaden scope from "compounds" to "where archaisms are
+   preserved", and re-list the meord case correctly as a dialectal doublet, not a
+   compound preservation.)*
+5. **Pathway B implementation**: If the user accepts that the regular outcome is mēd via
+   z-loss + comp. lengthening + i-lowering, we need to decide whether to model this in the
+   FST or treat *mizdō- as a TSV-level input adjustment.
+
+No TSV/FST changes pending; investigation only until user gives further direction.
+
+
+### §17.24.7 Correction: meord IS attested, but no *meord-gifa exists
+
+After the user pushed back on whether the supplement could be trusted, I checked both
+questions directly against repo materials.
+
+#### (a) Other Kroonen works on *mizdō-?
+
+Repo has three Kroonen items besides the EDPG:
+- `kroonen_2011_n_stems.txt` (Brill 2011, *The Proto-Germanic n-stems*)
+- `kroonen_proto_germanic_n_stems.txt` (same work, alternate OCR)
+- `kroonen_2006_mn_stems_bottom_rime.txt` (paper on *bottom*/*rime*; irrelevant)
+
+The 2011 n-stems book mentions *mizdō- only in passing under §9.3 (*a* ~ *u* ablaut) and
+in an index. The OCR is heavily corrupted, but no extended sound-change discussion appears.
+The substantive entry remains EDPG p. 376. A web search for additional Kroonen treatments
+returned only LLM-generated summaries citing the EDPG. **Conclusion: there is no separate
+Kroonen article that would change the picture. The "single dental" quote was confabulated
+by the earlier agent.**
+
+#### (b) Is meord 'reward' actually attested? Is *meord-gifa real?
+
+**meord 'reward' IS attested** — the supplement was wrong on this point. Three independent
+witnesses in repo references:
+
+1. **Bosworth–Toller Supplement** (`anglosaxondictio00tolluoft.txt:56810,56915`):
+   The Supplement has a dedicated headword **meord** with the citation
+   *"Bde 4. 17. 317 Sch. 549, 7"* — i.e. the Old English translation of Bede,
+   *Historia Ecclesiastica* 4.17, p. 317 (Schipper's edition p. 549 line 7).
+   The Bede gloss has *meorde* (dative singular).
+
+2. **Bright, *Anglo-Saxon Reader*** (`bright_anglo_saxon_reader.txt:12498` and glossary at
+   line 23006): Reading text contains
+   > *mærða tilgaþ þæs him **meorde** wile / ... ece ælmihtig eadge forgyldan*
+   ('they strive for glories so that for them the eternal almighty will graciously repay
+   reward'). Glossary entry: *"meorde (dial.) 181, meord, see med."* — Bright explicitly
+   marks it as dialectal. The poetic context is religious (likely *The Phoenix* or a
+   nearby Exeter-Book poem in his selection).
+
+3. **Hall, *Concise Anglo-Saxon Dictionary*** (`aconciseanglosa01hallgoog.txt:14793`):
+   *"meard=(1) meord, méd"* — Hall lists meord as a real headword with cross-reference
+   to *méd*.
+
+The OE Bede translation and *The Phoenix* are both **Anglian-leaning** texts. Kroonen's
+"dialectally dependent? doublet *méd : meord*" is therefore not a circular citation — it
+reflects genuine primary attestation. **meord is the Anglian form; mēd is the West Saxon
+form.**
+
+**No *meord-* compound exists**, however. Comprehensive search across BT, BT Supplement,
+Hall, Bright, and all other repo references returns zero hits for *meord-gifa*, *meord-sceatt*,
+or any other meord-prefixed compound. The standard compounds are uniformly *mēd-* (e.g.
+*mēd-gyfa*, *mēd-sceatt*). The first dossier's *meord-gifa is confirmed confabulation.
+
+#### (c) Implications for the analysis
+
+This substantially changes the picture from §17.24.4–§17.24.6:
+
+1. The FST output **meord** is a **genuinely attested OE form** — not a phantom. The
+   mismatch arises only because the TSV target is the West Saxon doublet member (mēd).
+2. The dialectal split méd/meord is **real and documented**, exactly as Kroonen describes.
+3. There is **no ghost-word problem** in handbook coverage. The "circular citation"
+   hypothesis (§17.24.5) is **withdrawn**. Handbooks (Kroonen, Orel, Ringe/Taylor, Campbell,
+   Brunner, Bammesberger, Streitberg, Pokorny) all cite the same real attestations
+   transmitted through BT and Bright; the agreement reflects shared primary evidence,
+   not lexicographic recycling.
+4. The dung-homonym (meord₁ 'dung', Épinal/Erfurt) is still a separate issue worth noting,
+   but it is **not** the source of the lexicographic tradition for meord 'reward'.
+5. The compound-archaism inventory's Case 1 is still wrong about *meord-gifa, but for a
+   different reason: the simplex meord is attested, just not in compounds. The Watkins
+   "archaism in compound" framing does not apply here at all.
+6. The classification options for the TSV change accordingly. This is now a **dialectal
+   doublet** case (parallel to swester/swustor §17.21, Anglian-relic targets). Likely
+   options:
+   - Accept FST output meord as the Anglian form, change TSV target meord (paradigm-cell
+     style: pick the Anglian doublet member as target).
+   - Or model both forms via z-loss (Pathway B) plus i-lowering and treat as variants.
+   - Or leave as a documented-exception (analogous to fūri ledger entry).
+
+The notable-finding entry, if any, would now centre on **dialectal doublets in OE preserving
+both pre- and post-z-loss outcomes** (with parallel cases in OS *linon* / OHG *lernōn*),
+rather than on circular citation. The honey/mead surface collision remains a tangential
+note but not the main story.
+
+#### (d) Status
+
+Awaiting user direction. No TSV/FST changes pending. The compound-archaism inventory still
+needs Case 1 retracted regardless of which path forward is chosen.
+
+
+### §17.24.8 The dialect / smoothing question: why *meord* (with diphthong) is the Anglian-attested form
+
+A reasonable objection: the standard Anglian-vs-WS contrast for diphthongs is
+that **Anglian monophthongizes** (smoothing) and **WS preserves** the
+diphthong. Under that framing, *mēd* (monophthong) would naively look
+Anglian and *meord* (diphthong) would look WS. The actual attestation runs
+the opposite way (meord in OE Bede, an Anglian text; mēd dominant in WS).
+This is not a contradiction — it falls out of the precise environment for
+Anglian smoothing.
+
+**Anglian smoothing applies only before velars and velar clusters**
+(c, g, h, x — and groups like rh, lh, hs in some accounts). It does **not**
+apply before dentals or dental clusters. This is unambiguous in the standard
+handbooks; the relevant citations are already collected in DEV_NOTES §15
+(swustor / swester) and reproduced here for convenience:
+
+- **Hogg** (CGOE) — smoothing rule: "diphthongs are monophthongized before
+  velars (c, g, h, x), either directly or with r/l intervening." Examples
+  given: *éac → éc, éage → ége, héah → héh, leoht → léht.*
+- **Brunner** §119 ("Ebnung"): "Vor c, 3, h stehen in den anglischen Mundarten
+  für die aus germ. au, eu, iu entstandenen ea, eo, io … *einfache Vokale*."
+  No mention of dentals or dental clusters.
+- **Campbell** §222: "The back consonants c, 3, x would no longer tolerate
+  diphthongs of the usual OE type … before them." Velar conditioning, not
+  dental.
+
+The diphthong in *meord* is before **-rd-** (r + dental). That environment is
+**outside the smoothing rule**, so *meord* is not smoothed in either
+Anglian or WS. Both dialects retain *eo* before -rd. (Cf. WS *heord* 'herd',
+Anglian *heord* / *hiord* — both keep the diphthong; smoothing affects
+*sēoc → sēc 'sick'* before /k/, not /-rd/.)
+
+So the *mēd / meord* doublet is not produced by smoothing. It is produced by
+**two different sound-change pathways** operating on the *zd cluster
+(see §17.24.1, §17.24.5, and notable findings #11):
+
+- Pathway A (rhotacism + breaking): *mizdō → *mird- → *meord-. Output has
+  -rd and a diphthong. Attested in OE Bede (Anglian) and the Phoenix
+  poetic tradition (with Bright marking *meorde* "(dial.)").
+- Pathway B (sporadic z-loss + comp. lengthening + lowering): *mizdō →
+  *mīd- → *mēd-. Output has -d and a long monophthong. Attested broadly,
+  including dominant WS prose use.
+
+The dialectal distribution is "rather patchy" (Kroonen EDPG p. 376 verbatim):
+both forms appear in both broad dialect groups, with mēd being the more
+common form overall and meord surviving as a doublet. The patchiness is
+expected because Pathway B is a **sporadic** WGmc change — it does not
+have a clean dialectal isogloss. Kroonen's parallel is OS *linon* 'to learn'
+vs. OHG *lernōn* (< *liznōn-) — same z-loss-before-dentals rule, but
+different lexical distribution across WGmc.
+
+**Bottom line.** The *meord ~ mēd* split has nothing to do with the
+smoothing axis. It is an entirely different phonological event whose
+distribution happens to leave one form (meord) more common in some
+Anglian-leaning texts and the other (mēd) dominant in WS. The "Anglian
+smooths, WS preserves" generalization holds only for velar environments.
+
+### §17.24.9 The nest parallel: same surface phenomenon, different chronological inputs
+
+The user asked whether *mēd* and *nest* could be **the same change** rather
+than independent applications of "z-loss before dentals". Direct evidence
+from Kroonen EDPG shows they cannot be the same change. The two etyma
+have different PIE inputs, and PGmc applies different rules to those
+inputs, with different timing and different results.
+
+**Kroonen's two reconstructions (verbatim from EDPG):**
+
+1. ***nista- 'nest'** (EDPG p. ~388, repo line 22966):
+   > "*nista- n. 'nest' — OE nest n. 'id.', E nest, Du. nest n. 'id.', OHG
+   > nest n. 'id.', G Nest n. 'id.' = ***ni-zd-o-** (IE) — Skt. nīḍá-
+   > m./n. 'nest, lair, bird's nest', … Lat. nīdus m. 'nest', MIr. net,
+   > W nyth … Lith. lìzdas, OCS gnězdo …"
+
+2. ***mizdō(n)- 'reward'** (EDPG p. 376, repo line 21890):
+   > "*mizdō(n)- f. 'reward' — Go. mizdō f. 'id.', OE mēd, meord f. 'id.', E
+   > meed, OFri. mēde f. 'id.', OS mēda f. 'id.', MDu. miede f. 'id.',
+   > OHG miata f. 'id.', G Miete f. 'rent' = ***misdʰ-eh₂-** (IE) — Skt.
+   > mīḍhá- n. 'battle, booty, prize, profit', Av. mīžda- n. 'reward',
+   > … Gr. μισθός m. 'hire, pay' … OCS mъzda f. 'payment' < PIE
+   > ***misdʰ-o/eh₂-**."
+
+**The PIE inputs are different clusters.** Note Kroonen's reconstructions:
+
+- *nista-* < PIE ***ni-zd-o-*** (cluster *zd* — voiced sibilant + plain
+  voiced dental).
+- *mizdō-* < PIE ***misdʰ-eh₂-*** (cluster *sdʰ* — voiceless sibilant +
+  voiced **aspirated** dental, surfacing as PGmc *zd via Verner's law +
+  *dʰ → d).
+
+These two PIE clusters had **different histories** in PGmc:
+
+- PIE *zd* (in *ni-zd-o-) was **assimilated to PGmc *st** (devoicing of
+  the cluster). Result: PGmc *nista-* with **short e** and **-st-** —
+  no compensatory lengthening. This is consistent with Kroonen's PGmc
+  reconstruction, which does not show any vowel lengthening.
+- PIE *sdʰ* (in *misdʰ-eh₂-) was **preserved as PGmc *zd** (voiced
+  cluster, with the voicing carried through from the aspirate). Result:
+  PGmc *mizdō- with **short i** and **-zd-** preserved into the daughter
+  languages.
+
+The Indo-European cognates of *nista-* directly attest the
+non-lengthening outcome alongside lengthening outcomes in other branches:
+
+- Latin *nīdus*, Skt *nīḍá-* — branches that DID lose z with comp.
+  lengthening.
+- Welsh *nyth*, OE *nest*, OHG *Nest* — Germanic and Celtic branches
+  that DID NOT have lengthening; instead they assimilated the cluster
+  to *st*.
+- Lith. *lìzdas*, OCS *gnězdo* — Balto-Slavic preserved *zd*.
+
+So at the PIE → PGmc transition, the nest cluster (*zd plain) goes to
+*st without lengthening, whereas the mizdō cluster (*zdʰ → *zd in PGmc)
+remains intact. This is **not the same change** — different inputs,
+different outputs, different timing.
+
+**The post-PGmc z-loss in WGmc is a separate, later event.** This is the
+change Kroonen ascribes to "(sporadic) loss of z before dentals" in WGmc
+(EDPG p. 376), affecting *mizdō → *mīdō → *mēdō. By the time this change
+operates, *nista-* has already had its cluster simplified to *st* for
+centuries — there is no z left in nest to lose. The two changes are
+separated by both **input** (*zd preserved vs. *st already simplified)
+and **chronology** (PIE→PGmc vs. post-PGmc WGmc).
+
+**Direct citation evidence that they are different:**
+
+1. Kroonen reconstructs PGmc *nista-* (with -st-, short vowel) directly
+   from PIE *ni-zd-o-, with no comment about a doublet, no remark about
+   z-loss with lengthening. He treats PIE *zd → PGmc *st as regular
+   and complete already in PGmc.
+2. For *mizdō-, Kroonen reconstructs PGmc *mizdō- (with -zd-, short
+   vowel) preserved into Gothic, and ascribes the WGmc *mēdō- variant
+   explicitly to a **post-PGmc** sporadic change ("WGm. *mīdō-
+   (*mēdō-) due to (sporadic) loss of z before dentals").
+3. Gothic mizdō shows that *zd was still present in late PGmc (Gothic
+   diverges before WGmc). Gothic has no *mēdō. There is no Gothic
+   *nizd- form — already *nist-.
+4. The PIE source clusters are different: plain *zd in *ni-zd-o-,
+   aspirate-derived *zdʰ in *misdʰ-eh₂-. Kroonen's reconstructions
+   make this explicit. They cannot be conflated as "the same cluster".
+
+**Why the two outcomes look superficially similar.** Both involve "a *zd
+cluster losing its z somehow", and that surface similarity is what
+prompted the user's question. But the mechanism is different:
+
+- *ni-zd-o- → *nista-: cluster **assimilation** (zd → st, devoicing the
+  voiced sibilant to match the obstruent — but actually the standard
+  account is that PIE *zd → *st reflects regressive devoicing). No
+  lengthening. Short vowel preserved.
+- *mizdō → *mīdō: **z-loss with compensatory lengthening** (z drops,
+  preceding short vowel becomes long). The voiced -d- is preserved.
+
+The outputs are not just chronologically separated — they are also
+**phonologically distinct rules**. One devoices and assimilates; the other
+deletes and lengthens. Confounding them would predict either
+**nest with long vowel** (which is unattested in any Germanic branch) or
+**mēd with -t** (also unattested). The actual attestations confirm two
+distinct rules.
+
+**Summary statement for the dossier.** *nest* and *mēd* are NOT the same
+sound change applied at different times. They are:
+
+- different PIE input clusters (*zd vs. *zdʰ),
+- handled by different PGmc rules (assimilation-to-*st vs. preservation
+  as *zd),
+- with the *mizdō- form additionally undergoing a post-PGmc, WGmc-
+  internal sporadic change (z-loss + comp. lengthening) that simply
+  does not apply to *nista- because there is no z left in it to lose.
+
+The structural parallel ("both involve *zd at some level, both end up
+with simpler clusters") is real but superficial. The principled distinction
+above is what the literature supports.
+
+### §17.24.10 Attestation verification: meord vs. meorde — what the primary texts actually contain
+
+User asked (correctly) whether the FST + TSV pair must produce an
+**actually attested** OE form. This section verifies what is and is not
+attested for the *mizdō- 'reward' word in OE.
+
+**Result.** The form *meord* (bare nom.sg.) does **not appear** in any
+primary OE text identified in the in-repo references. The directly
+attested OE forms are oblique cases:
+
+| Form        | Case      | Source                                      | Repo line                                      |
+|-------------|-----------|---------------------------------------------|------------------------------------------------|
+| meorde      | dat.sg.   | OE Bede 4.17 (Schipper p.549, l.7), MS var. | `anglosaxondictio00tolluoft.txt:56915`         |
+| meorde      | dat.sg.   | Phoenix poem, line 17 (Bright p.181)        | `bright_anglo_saxon_reader.txt:12498,23006`    |
+| meorde      | dat.sg.   | Gregory's Dialogues 227.16, MS var.         | `anglosaxondictio00tolluoft.txt:56920` (OCR: "meotée")  |
+| meorda      | gen.pl.   | Gregory's Dialogues 312.14, MS var.         | `anglosaxondictio00tolluoft.txt:56921` (OCR: "meotda")  |
+
+The OCR-obscured strings "meotée" and "meotda" in BT-Suppl are best read
+as *meorde* and *meorda* (the OCR consistently misreads "rd" as "te"/"td"
+in this column — verifiable by inspecting adjacent words on the same
+page).
+
+**Lexicographers and handbooks reconstruct nom.sg. *meord* uniformly** as
+a strong f. ō-stem, on the basis of these oblique forms:
+
+- **BT Supplement** s.v. *meord* (headword form, repo line 56810,915).
+  Citations are all oblique.
+- **Hall's Concise** s.v. *meard*: "= (1) **meord**, **méd**" — gives
+  *meord* as a lemma alongside *méd* (repo line 14793).
+- **Bright's Reader** glossary, s.v. *med (meord), f., meed, reward*:
+  citations include "meorde (dial.) 181, 17" (repo line 23006). The
+  headword pair *med (meord)* is the lexicographer's reconstruction;
+  the cited *meorde* is the actual attestation.
+- **Campbell §123** uses *meord* as the example of i-lowering before *z
+  ("The OE forms exhibiting these changes are *meord* reward (cf. Gr.
+  μισθός, Goth. mizdō)..."). Campbell's footnote 2 adds the chronology
+  "the eo of meord, leornian is from e by a later change (see § 146)".
+- **Campbell §35** parallels *méd* with PGmc *ē as in *Wéland*, *cén*,
+  *léf*, *hér* — ascribing it to PGmc *iz with comp. lengthening.
+- **Kroonen EDPG p. 376**: "doublet *méd : meord*" — cites *meord* as
+  one OE simplex without commenting on attestation pattern.
+- **Orel HGE p. ~272**: "OE meord id., méd 'meed, reward'" — cites both
+  as standard simplex forms. Notably, Orel reconstructs the doublet at
+  the **PGmc level** as ***miz¶ò(n) ~ *mè2¶ò** (= *mizdō ~ *mēdō),
+  attributing the *ē variant to compensatory lengthening following *z-
+  loss already in PGmc, citing **Hirt, *Urgermanisch* I, p. 33**:
+  "(-è2- compensates the loss of *-z-)".
+
+**Implications for the TSV.**
+
+1. If TSV row 752 is interpreted as a **lemma** (nom.sg.) target, then
+   the lemma *meord* is the reconstructed lexicographer's form, not a
+   direct text attestation. This is standard practice for OE forms
+   whose nom.sg. is unattested (cf. many mascular u-stems and weak
+   nouns in BT and Hall whose nom.sg. is restored).
+2. If TSV row 752 is interpreted as **the form the FST must reproduce**,
+   then the lautgesetzlich derivation should arrive at a form whose
+   inflected paradigm contains the attested obliques. The FST currently
+   produces *meord* (from input *mizdō, treated as nom.sg.). The
+   inflected oblique *meorde* would derive from PGmc dat.sg. *mizdōi
+   (or *mizdai), which the FST has not been probed against. A
+   future verification step should run the dat.sg. input through the
+   FST and confirm it produces *meorde* by regular development.
+3. Either way, *méd* (the alternative TSV target) has the same status:
+   *méd* nom.sg. is broadly attested in WS prose; oblique *méde*
+   (dat.sg.) is also attested. The doublet is real at both lemma and
+   inflected levels.
+
+**Recommendation (for later decision).** Whichever target is adopted
+for row 752 (mēd or meord), the TSV note should record that the
+attested oblique evidence anchors the form, and the FST input should
+ideally be a paradigm cell whose attested OE outcome exists in
+primary sources. This is the same paradigm-cell-targeting principle
+used in §17.16 (spere/speoru) and §17.21 (swustor/swester).
+
+**Cross-reference**: Orel's PGmc-level doublet reconstruction
+*mizdō ~ *mēdō (citing Hirt) is a substantive alternative to
+Kroonen's "post-PGmc sporadic z-loss" account. Under Orel/Hirt, both
+forms are inherited from PGmc as parallel variants — which fits the
+user's preferred analytical framing (avoiding "sporadic" sound
+changes). This avenue should be pursued in the specialist-literature
+search (see todo `mizdo-paradigm-split-hypothesis`).
+
+### §17.24.11 FST probe: *mizdai → meorde is lautgesetzlich
+
+Per the attestation verification in §17.24.10, the directly-attested OE
+form is *meorde* (dat.sg.), not bare *meord*. This section probes the
+already-compiled FST cascade to determine whether *meorde* arises by
+regular sound change from a defensible PGmc input.
+
+**Probe** (using `flookup -i backend/old_english.bin`):
+
+| PGmc input         | FST output | Interpretation                           |
+|--------------------|------------|------------------------------------------|
+| `mizdō`            | meord      | nom.sg. (lemma-restored, lexicographer's headword) |
+| `mizdai`           | **meorde** | **dat.sg. — matches Bede 4.17, Phoenix 17, GD 227.16** |
+| `mizdōz`           | **meorde** | gen.sg. (or nom.pl.) — also produces the attested string |
+| `mizdōn`           | meorde     | acc.sg. (matches *-ōnu / *-ǭ → unstressed *e) |
+| `mizdą`            | meord      | acc.sg. variant input |
+| `mizdōi`, `mizdōiz`, `mizdǭ`, `mizdōnz` | +? | rejected by tokenisation/grammar |
+
+**Verdict.** The FST already produces the actually-attested *meorde*
+lautgesetzlich from PGmc dat.sg. *mizdai, by exactly the same rule
+chain that produces *ġiefe* from *gebai (a-umlaut blocking ↔
+breaking before *r+C ↔ AFB on the unstressed *-ai → *-e ↔ regular
+suffix shortening). No FST change is required.
+
+**Comparison with attested ō-stem paradigm (control)**:
+
+| Input         | FST output | Attested OE form |
+|---------------|------------|-------------------|
+| `gebō` (nom.sg.) | ġief       | (gefu / ġiefu by paradigm extension; ġief by apocope after heavy stem) |
+| `gebai` (dat.sg.)| ġiefe      | ġiefe ✓ |
+| `gebōz` (gen.sg.)| ġiefe      | ġiefe ✓ |
+
+The *mizdō paradigm behaves exactly as the *gebō paradigm under the
+FST. The dat.sg. and gen.sg. *both* converge on *meorde, matching the
+fact that the actual OE attestations of this word are dat.sg. *meorde*
+(plus a putative gen.pl. *meorda* at GD 312.14, which is a different
+ending and would require *mizdǭ* / *mizdōn* — currently not handled
+by the cascade).
+
+**Implications.**
+
+1. The FST is **already correct** for the dat.sg. attestation —
+   *meorde* falls out by regular development from *mizdai.
+2. The TSV row 752 currently has PROTOFORM = *mizdō (nom.sg.) and
+   target = *mēd*, producing a mismatch (FST output *meord*).
+   The cleanest paradigm-cell-targeting fix, parallel to §17.16
+   (spere/speoru) and §17.21 (swustor/swester), is to switch
+   PROTOFORM to *mizdai* (dat.sg.) and target to *meorde*. Both
+   are then directly attested and lautgesetzlich.
+3. The §17.24.4 / Orel/Hirt PGmc-level-doublet question
+   (*mizdō ~ *mēdō from inception) is still open and is the subject
+   of the planned specialist-literature review (todo
+   `meord-med-chronological-report`). The paradigm-cell switch in
+   point 2 is independent of and not foreclosed by that review —
+   it is a "lowest-disturbance" fix that uses the existing FST
+   without taking a position on the *mēd reconstruction.

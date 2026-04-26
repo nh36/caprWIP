@@ -1,0 +1,559 @@
+                       An Analysis of *z loss in West Germanic
+                                                    Sean Crist
+                                                Swarthmore College
+                               scrist1@swarthmore.edu or kurisuto@unagi.cis.upenn.edu
+                                         LSA Annual Meeting 4 January 2002
+
+1. Proposal: a regular sound change in the Ingvaeonic dialects of West Germanic (OE, OFris, OS):
+
+                 *z > ∅ / {*i,*e} $ with compensatory lengthening of preceding vowel
+
+To my knowledge, this sound change has not been previously identified as a regular sound change (cf. e.g.
+Brugmann 1897, Campbell 1959).
+
+While earlier accounts were obliged to assume that the rule of *z-deletion applied sporadically, the rule
+proposed here appears to have applied regularly. I claim that there is a reasonable explanation for each of
+the apparent exceptions.
+
+2. A subset of the relevant data (a more extensive collection of data are in the appendix):
+
+PGmc           Goth         ON           OHG                        OE         OFris       OS
+*miz           mis          mēr         mir                        mē                    mı̄       “me (dat.)”
+*wı̄z          weis         vēr         wı̄˘r                      wē                    wı̄, we   “we”
+*maiz          mais         meir         mēr                       mā        mē(r)      mē(r)    “more (adv.)”
+
+*mizdō        mizdon                    mēta/                     mēd/      mēde/      mēda/    “reward, payment”
+                                         miata/                     meord      mı̄de/      mieda
+                                         mieta                                 meide
+*hezdōn                                                            heorde     hēde                 “flax fiber”
+*twiznaz                    tvennr/      (zwirn)                    twı̄n                            “twine; twofold”
+                            tvinnr
+*liznōn                                 lernēn/                   leornian   lernēn/    lı̄nōn   “learn”
+                                         lirnēn                               lirnēn
+
+
+
+*razdō        razda        ro dd        rarta                      reord                            “language, speech”
+*huzda         huzd         hodd         hort                       hord                   hord      “treasure”
+*bruzdaz                    broddr       brort                      brord                            “edge”
+
+*hraznō                    hro nn                                  hræn                             “wave”
+                                                                    hærn
+*gazdaz        gazds                     gart                       (gierd)                gard      “rod, prickle”
+
+*uzdaz                      oddr         ort                        ord        ord                   “(spear)point, place”
+*mazgaz                     mergr        marc                       mearg      marg        merg      “marrow”
+
+
+This presentation expands on a point from a longer discussion of the trend in WGmc toward the elimination of the PGmc voiced
+fricatives (Crist, 2001). This trend is modeled formally in Optimality Theory as the rise in relative ranking of a *VOICED-FRIC
+constraint. The present discussion, however, is pretheoretic.
+Thanks to Don Ringe and to Jay Jasanoff for discussion. Any errors are of course my own.
+
+
+                                                                1
+The form zwirn is attested in MHG but not in OHG. The OE form gierd is said to be derived from a form
+*gazdi.
+
+3. The standardly accepted Germanic phylogeny, for reference:
+                                                   PGmc
+
+
+
+                                         NWGmc               EGmc
+                                                            (Gothic)
+
+
+                                 WGmc            NGmc
+
+
+
+
+                   Ingvaeonic           OHG
+
+              (OE, OFries, OS)
+
+
+Defining the problem
+4. Distribution of PGmc *z
+
+Because of the history of *z (arising either *s either by Verner’s Law or by assimilation to a following voiced
+obstruent), the segment has a somewhat lopsided distribution: it is found only in syllable codas and in
+word-medial onsets; never in word-initial onsets (Campbell 1959 p. 163-4).
+
+5. The first WGmc *z-deletion (old news)
+
+Throughout WGmc, PGmc *z deletes word-finally in unstressed syllables; this is already understood (e.g.
+Campbell p. 166). I assume here that this pan-WGmc rule predates and is separate from the Ingvaeonic
+rule of *z-deletion proposed here.
+
+The earlier WGmc sound change applies across the board, and has major consequences for WGmc morphol-
+ogy, since *-z was very common among PGmc inflectional suffixes.
+
+After this Proto-West-Germanic sound change, *z exists only word-medially in syllable onsets, and in the
+codas of stressed syllables (whether in stressed monosyllables or in the stressed initial syllable of polysyllabic
+words).
+
+6. Rhotacism
+
+*z never survives as such into the historical WGmc languages. In all cases where it survives the WGmc
+deletion and the Ingv. deletion, it rhotacizes to r, merging with original PGmc *r (Campbell 1959 p. 166;
+Steblin-Kamenskij 1963).
+
+It might be tempting to suppose that rhotacism precedes the two z-deletions, since the deletion of /r/ in
+codas is attested in other languages, e.g. modern English. However, this cannot be the case; original *r
+never deletes in the relevant environments (*miz, *wı̄z > *mez, *wēz > OE mē, wē “me, we”, but *hēr >
+OE her “here”). The deletion of *z is clearly sensitive to the original *r/*z contrast.
+
+Although *z > r also occurs in NGmc, it can be shown that this is a parallel rather than shared innovation.
+There are sound changes unique both to NGmc and to WGmc which depend on the contrast between *z and
+*r; hence the two branches must have developed separately for a while before both underwent the merger
+between original *r and *z. In NGmc, the sound change in question is *ai > a: / {*h, *r}(but not before
+
+                                                        2
+*z; OIcel *sair > sár “wound”, but *maizan > meiri “more”; Noreen, 1904, p. 75). In WGmc, the sound
+changes are the two deletions of *z themselves.
+
+(I deliberately overlook the second person pronouns which appear in Gothic as izwis, izwara; for discussion
+of the special WGmc development *zw > *ww, see Stiles 1986, p. 92-3.)
+
+7. Distinguishing the two deletions
+The deletion of *z has been thought of as a single sound change. Previous accounts of the deletions of *z do
+not distinguish what I am treating here as two separate sound changes. For example:
+
+             “Between a vowel and consonant r usually remains, e.g. hord, reord ... but it
+             is lost with compensatory lengthening in OE hād- hair (cf. ON haddr), mēd
+             reward (beside meord), twı̄n linen (cf. Ger. zwirn), cf. OS lı̄non learn, MD
+             hede hards of flax (beside OE leornian, heordan ...). ... z is lost in West Gmc.
+             finally in unaccented syllables, e.g. many n.s. and n.p. inflexions, the unaccented
+             pronominal words OE we, ġe, he me, e, hwa.”
+
+(Campbell 1959 p. 166)
+
+So far as I know, Brugman (1897) comes the closest to solving the problem; he recognizes that there appears
+to be some kind of connection with preceding front vowels, but says:
+
+             Bei vorausgehendem palatalen Vocal erscheint im Westgerm. auch Wegfall des z.
+             So as. lı̄nōn : ahd. lirnēn; ags. twı́n : mhd. zwirn ... Eine allseiting befriedigende
+             Erklärung ist für diese Erscheinung ... noch nicht gefunden.
+
+8. Some observations
+
+a. Non-final *z-deletion never occurs after back vowels in any WGmc language; not even one exception.
+
+b. Non-final *z-deletion never occurs outside OE, OFris, OS, with the sole exception of OHG mēde, etc.
+“reward, payment”.
+
+9. Problematic forms:
+
+      OHG mēta/miata/mieta (Secondary *z-deletion doesn’t otherwise occur in OHG)
+      OFris, OS mē(r) (*z should have been deleted completely, but it is variably present as r)
+      OE meord, heorde (Deletion of *z unexpectedly fails)
+      OE leornian, OFris lernēn/lirnēn (same)
+
+In the case of OHG mēta, I claim that this is simply a loan-word from Ingvaeonic into OHG. It would hardly
+be remarkable for the word for “payment” to be borrowed in a trade situation.
+
+The variable presence of r in OFris, OS mē(r) can be explained straightforwardly in terms of analogical
+restoration of r (*z) on the model of the comparative and superlative adjectives *maizan, *maistra, and
+perhaps on the analogy of the general comparative adjectives as well. In the case of OE, this restoration has
+not yet occurred in the earliest written records, but it later happens in the full light of history.
+
+In the cases of OE meord, heorde, I notice that the failure of secondary *z-deletion is found in both the cases
+where *d follows (so far as I know, these are the only cases of this kind). Continental Pre-OE was originally
+spoken in Jutland at the northern periphery of the Ingvaeonic continuum; so perhaps the application of
+the rule in polysyllabic words did not spread this far north. The existence of OE mēd beside meord is not
+surprising if Old English is the product of some degree of dialect mixture, as is generally assumed.
+
+                                                        3
+As for OE leornian, OFris lernēn/lirnēn, there are at least two possible explanations. One possibility is to
+extend the explanation above so that in northernmost Ingvaeonic, secondary *z-deletion fails not only before
+*d but also before *z as well, in which case OE twı̄n must hail from a closely related dialect further south.
+
+There is a second possibility: namely, that the the *z was originally deleted throughout Ingvaeonic in *liznōn,
+but was later restored by analogy with the related causative verb *laizijanã “to teach” (Goth. laisjan, OHG
+lēren, etc.) This restoration could have happened either together or separately in OE and OFris; it could
+also have happened only in OE and have been reintroduced into OFris as a loan by Christian missionaries
+from England.
+
+10. Possible problems
+
+Torp (1909) lists the following:
+      PGmc.         *waida (*waizda) n. “woad”             PGmc.      *kizna m. n. “resinous wood”
+        OE.         wâd n. (engl. woad)                     OE.      cên m. “pine, fir, spruce”
+       OFris.       wêd                                    MLG.      kên
+       MLG.         wêt, wêde                             OHG.      chien, kien, kên
+  OHG. MHG.         weit m.                                MHG.       kien m. n. “fir, spruce; splinter or torch
+       NHG.         Waid                                              (of such wood)”
+
+If these reconstructions of *z are correct, then the High German forms are problematic, since *z-deletion
+would seem to have occurred here, contrary to prediction. One loan word (mēta) is not very bad, but the
+argument becomes weak if loans must be posited for these two words as well.
+
+How secure is the reconstruction of *z for these two forms? In the case of *kizna, the word is not attested
+in any Germanic languages outside WGmc. It has been proposed to connect this word with Russian sosná
+(in glaring violation of Grimm’s Law, since *k > *h in Germanic; see Ringe 1984 for critical discussion) and
+with OIr. giús “fir” (where the consonants at least fit; but I am told that the vowel in the OIr. form reflects
+an original long vowel). I follow Ringe (1984) in simply considering this a WGmc word of unknown origin
+which happens to contain an apparent WGmc *ē2 .
+
+In the case of *waizda, the argument for the existence of *z is that there is a medieval Latin word waisdo
+(among other spellings); Feist 1909 and Torp 1909 suggest that this could be a loan from an unattested
+Gothic word *wizdila, with zero-grade ablaut. This is not impossible, but it would be a stretch to base
+any strong conclusions on such a supposition. Feist (1939) revises his earlier view and suggests that this
+is simply a Wanderwort; we might not be able to tell which are the donor and recipient languages. Kluge
+(1999) remarks “Die Vermutung, daß alle diese Wörter aus ein unbekannten Sprache entlehnt sind, liegt
+nahe.”
+
+It should be noted in this connection that Webster’s 1913 Unabridged Dictionary (Gutenberg online version)
+lists the cognates Dan. vaid, veid, Sw. veide. If these words are real, they would presumably argue against
+reconstructing *z for this word since geminate dd would be predicted as the NGmc outcome for *zd, unless
+there is some degemination in later NGmc which I am not aware of. However, I have not been able to
+confirm these words in any of the several dictionaries of Danish or Swedish I have consulted, nor in any
+other etymological discussions of this word; so the entire sub-argument is probably moot. Rejecting *z in
+this reconstruction can still be argued solely on the argument above.
+
+10. Relative chronology
+
+*z > ∅ / {*i,*e} $ must follow the Ingvaeonic lowering *i > *e /       *z.
+
+*z > ∅ / {*i,*e} $ must precede the Ingvaeonic chain vowel shift which included the change *ai > *a:, since
+the *i element of the diphthong triggers secondary z-deletion.
+
+*z > ∅ / {*i,*e} $ must precede rhotacism, since original *r does not delete in this environment, as noted.
+
+
+                                                       4
+Appendix: PGmc words with *z in stressed codas
+The      following     words  were   collected   from      the    online    version     of    Torp     (1909)
+(http://www.ling.upenn.edu/˜kurisuto/germanic/pgmc torp about.html) by searching for “z” in the first
+or second word of each entry. Since the online version is only partially corrected, it is possible that there
+might be a form or two not caught by this search; it is also possible that a new cognate set or two might
+have been discovered since 1909. Excluded are a few words which do not survive into WGmc. Otherwise,
+this list is fairly complete.
+
+Instances of *z in unstressed (non-initial) syllables are not included, since these were uniformly deleted
+throughout WGmc and are not candidates for the second *z-deletion under discussion here.
+
+The following is essentially a translation of the relevant entries from Torp, with various revisions of my own.
+
+*z preceded by a front vowel
+          PGmc. *wı̄z “we”, nom. plur.
+           Goth. weis
+             ON. vēr (OSwed. vı̄(r))
+             OS. wi, we, ps. auch wir
+         OFries. wi
+             OE. wē
+          ModE. we
+           OHG. wir, wir
+           NHG. wir
+Ig. vei-s. Cf. skr. vay-im wir.
+
+
+     PGmc.         *liznōn “to learn”
+       OS.         lı̄nōn
+    OFries.        lirna, lerna
+       OE.         leornian
+     ModE.         learn
+      OHG.         lirnēn, lernēn, lernōn
+ MHG. NHG.         lernen
+
+Torp includes an alternate PGmc form *lı̄znōn to account for the long vowel in the OS form. However, this
+can be explained as the regular compensatory lengthening from *z-deletion.
+
+
+       PGmc. *laizijanã “to teach”
+         Goth. laisjan
+            OS. lērian
+       OFries. lēra
+            OE. lǣran
+         OHG. lērran, lēran
+        MHG. lēren
+         NHG. lehren
+ON. læra is a loan from OE. Causativ zu lı̄san.
+
+Included here as the possible source for the analogical restoration of *z in OE leornian (see main text).
+
+
+        PGmc. maiz adv. comp. “more”
+
+                                                      5
+           Goth. mais “more”
+             ON. meir
+              OS. mē, mēr
+         OFries. mā(r), mē(r)
+              OE. mā;
+          OHG. mēr
+          NHG. mehr
+Comparative and superlative of the adjectival forms:
+         PGmc. maizan “greater, more” sup. maista.
+           Goth. maiza, maists größer, größt
+             ON. meiri, mestr
+              OS. mēro, mēst
+  OFries. OE. māra, māst
+         ModE. more, most
+          OHG. mēro, mēst
+          NHG. mehr, meist
+German. ma-is, ma-is-ta, formell comp. und sup. zu mēria, der Bedeutung nach zu mekila. Vgl. ir. máo,
+móo größer.
+
+Torp lists an OHG form mē alongside mēr. This would be problematic for the sound change proposed here,
+but as far as I can determine, OHG mē is a ghost word. I can find no reference to it in Schützeichel (1969),
+Braune/Ebbinghaus (1969), or Wright (1888).
+
+Torp also lists an alternative PGmc form *mais. I see no need for this; the devoicing of the *z in Gothic is
+regular.
+
+
+         PGmc. *tvizna “to each (je zwei)”
+             ON. tvennr, tvinnr “twofold”
+              OE. twı̄n n. “Leinwand (canvas, screen)”
+         ModE. twine
+          MLG. twern “doubly spun twine”
+          MHG. zwirn m. “doubly spun twine”
+          NHG. Zwirn
+Cf. lat. bı̄ni (aus dvisno-).
+
+
+        PGmc.      *tviznōn, -ēn “to twine”
+          ON.      tvinna “to double, duplicate”
+        ModE.      twine (verb)
+         MLG.      twernen
+         OHG.      zwirnēn, zwirnōn
+        MHG.       zwirnen “twist together twice, twine”
+
+
+         PGmc. * rizna “threefold, the three (je drei)
+             ON.     rennr, rinnr “threefold”, pl. “the three”
+Cf. lat. terni dass.
+
+This wouldn’t even be relevant, except that Clark Hall (1962) lists OE forms rinna and rinen “three-fold”.
+He doesn’t show the vowel on the second one as long. A recoinage in OE?
+
+
+        PGmc. *mizdō(n) f. “reward, payment, fee”
+
+                                                      6
+           Goth. mizdō f. “reward”
+            OS. mēda, mieda f. “payment”
+         OFries. mēde, mı̄de f. “reward, rental, payment, gift”
+            OE. mēd und meord f. “reward, payment”
+         ModE. meed
+           OHG. miata, mēta
+          MHG. miete f. “payment, reward, bribe”
+          NHG. Miete
+Germanic mēdō from mēizdhā. Cf. OSl. mı̆zda “reward”. — Gr.   m. “reward, payment (of a
+soldier)”. — Skr. mı̄d.há n. “reward from a battle, competition”, Av. mı̄zhda n. “reward”.
+
+Torp of course assumes the old view that the long vowel in the WGmc forms arises from PIE *mēizdhā >
+PGmc *mēzdō(n). However, Ringe (1984) refutes the long-standing notion that there was an *ē 2 in PGmc.
+In this case, the apparent *ē2 is simply the product of the regular compensatory lengthening.
+
+
+         PGmc. *hezdon f. “coarse flax or hemp fiber, oakum”
+OFries. MLG. hēde f.
+             OE. heorde f.
+         ModE. hards (=coarse refuse of flax or similar fiber)
+Cf. lat. caesaries “head-hair”, skr. késara m. “hair, mane”. Uncertain. OE. heorde könnte auch germ.
+hezdōn sein; Wz. hes = ig. kes kratzen, kämmen, s. hes 3.
+
+Torp lists an additional PGmc form *haizdon giving rise to the long vowel in the OFries, MLG forms. Once
+again, this can simply be the regular compensatory lengthening. Torp reconstructs *i as the vowel, but I am
+told that this is inconsistent with the Gk cognate.
+
+
+         PGmc. *kizna m. n. “resinous wood”
+             OE. cēn m. “pine, fir, spruce”
+          MLG. kēn
+          OHG. chien, kien, kēn
+          MHG. kien m. n. “fir, spruce; splinter or torch (of such wood)”
+Cf. Ir. gius (< *gisosto) “fir, spruce”
+
+See main text for comment.
+
+
+         PGmc. vaida (vaizda) n. “woad”
+             OE. wād n. (engl. woad)
+          OFris. wēd
+          MLG. wēt, wēde
+ OHG. MHG. weit m.
+          NHG. Waid.
+Daneben german. vaizda (woraus mundartl. vaida?), vgl. mlat. vaizda und got. (ablautend) vizdila. Das
+Verhältnis zu lat. vitrum und gr.  ist unklar.
+
+See main text for comment.
+
+
+*z preceded by a back vowel
+        PGmc. *uzdaz m. “point, ‘place’”
+          ON. oddr gen. odds m. “point, place”
+
+                                                    7
+           OS. ord m. “point, edge (blade)”
+           OE. ord m. “point, spearpoint”
+ OHG. MHG. ort m. n. “point, corner, edge (part, piece, small coin).”
+Perhaps PIE. ud-dho > uzdho, from ud (s. ūt) and the root dhē “to set”.
+
+
+         PGmc. *hazdaz m. “head-hair”
+              ON. haddr m. “long hair (of a woman)”
+Ablauting form *hezda in
+              OE. wunden-heord “having curled hair (?)”
+Cf. asl. kosa “hair”, kosmŭ “head-hair”, nsl. kosem “bundle of flax (Flachsbund)”. — ir. cass (i.e. *kasto-)
+“curl, tress”.
+            From this could also be drawn OE. heordan pl. (engl. hards of flax), MDut. herde “flax fiber”.
+Cf. gr.        Werg.
+
+It isn’t clear to me how OE. heordan could arise from *kasto- without a high front vocoid to first umlaut the
+vowel before the Breaking.
+
+
+        PGmc. *huzda n. “hidden treasure”
+         Goth. huzd n. “treasure”
+          ON. hodd
+           OS. hord, hor , horth n. “treasure, closed or hidden interior”
+           OE. hord m. n. “treasure, amassed wealth”
+        ModE. hoard
+ OHG. MHG. hort n.
+Cf. Gr.      m. cavity, vulva; Lat. custos “a guard”.
+
+
+        PGmc.      *hraznō f. “source”
+            ON.    hro nn f. “wave”
+            OE.    hræn, hærn f. “wave, sea”
+Ablauting
+        MHG.       rünne f. “storm surge?”
+Cf. gr.    
+
+Lexer (1986) does in fact list rünne “Sturmwoge, Sturm”; the word is real. Torp includes the question mark,
+perhaps indicating that the cognation is uncertain (and I agree that it is uncertain). If I am understanding,
+Torp is implicitly assuming that the MHG form reflects an original zero grade.
+
+The PGmc gloss “source” (“Quelle”) does not make a great deal of sense; perhaps Torp mistakenly wrote
+“Quelle” for “Welle”.
+
+
+         PGmc. *gazdaz m. “prickle, point; rod”
+           Goth. gazds m. “prickle”
+            ON. gaddr m. “prickle”
+             OS. gard “staff, rod”
+          OHG. gart, cart
+          MHG. gart m. “prickle, stick for driving (animals)”
+Cf. OSl. žrudŭ “flimsy pole”). Basic meaning: “rod, pole”. Cf. Ir. gat (d. i. *gazdo-) “rod” and gas f. (d.
+i. *gasta) “sapling, sprout, shoot”. — lat. hasta “rod, shaft, spear”.
+
+English“goad” isn’t connected; it is simply a separate word.
+
+
+                                                      8
+         PGmc. *bruzdaz m. “blade, edge”, *brazda, *brezda m. “edge”
+            ON. broddr m. “point, sprout”
+            OE. brord m. dass.
+          OHG. brort, prort m. “skewer, projectile, edge, rim (Bord), forepart of a ship”
+         MHG. brort
+Norw. vernac. bradd m. “shore, edge”
+            OE. breord. brerd m. dass.
+          OHG. brart m. “edge, forepart of a ship”
+(Possibly connected are Germ. barda and burda “edge, seam”, from *barzda, *burzda? See ber 3). Cf. Ir.
+brot m. “prickle”, cymr. brathu “to prick, bite”.
+
+
+        PGmc. *nazjan “to heal, rescue, sustain”
+         Goth. (ga)nasjan “to make healthy, heal, rescue”
+            OS. nerian “to save”
+        OFries. nera “to nurture”
+            OE. nerian “to save, protect”
+         OHG. nerjan, nerren, neren
+        MHG. nerigen, neren, nern “heal, sustain the life of, save, protect, nourish”
+         NHG. nähren “nurture, nourish”
+Causative to *ganesan. Cf.
+           ON. nara (= Germ. nazēn) “to live”, aldr-nari (= nazan) m. “life-sustainer (=fire)”
+            OS. lı̄fnara f. “food, nourishment”
+            OE. ealdor-neru f. “saving of a life”
+         OHG. nara
+        MHG. nare f. “salvation, rescue, nourishment, sustenance”
+
+
+        PGmc. *mazgaz m. “marrow”
+            ON. mergr g. mergjar m. “marrow in a bone”
+            OS. marg n.
+        OFries. merch, merg m. n.
+            OE. mearg m. n.
+        ModE. marrow
+         OHG. marg, marag, marc, marac g. marges, marages
+        MHG. marc g. marges n.
+         NHG. Mark n.
+Cf. OSl. mozgŭ “brain”. — Skr. majján m., majjâ´ f. “marrow”. Perhaps also ir. medg (aus mezghā) f.
+“whey”, cf. russ. mozga “blood”; and OSl. mězga “sap, juice”, nsl.: “(tree) sap”, klruss. mjazok “marrow”,
+mjazka “(tree) sap”.
+
+
+          PGmc. *razna n. “house”
+           Goth. razn n. “house”
+             ON. rann n. “house”
+              OE. ærn n. “house”; cf. ræsn n. “plank, ceiling”
+          OFries. ransa
+Cf. Ir. árus “dwelling”.
+
+
+        PGmc.     *razdō f. “voice, sound”
+         Goth.    razda f. “voice, pronunciation, speech”
+          ON.     ro dd f. “sound, voice, vowel”
+          OE.     reord f. “voice, sound, speech”
+
+                                                    9
+         OHG. rarta f. “voice, modulation”
+
+
+
+        PGmc. *razdō f. “food, meal”
+           OE. reord f., gereord n. “meal, feast, food”, gereordian “feed, entertain, feast”
+           ON. greddir “feeder, satisfier” (from a verb. *gredda = *ga-razdian),
+                  grenna “to feed” (derived from a noun *gro nn).
+Perhaps from the basic root ras (s. ras 3), cf. the double meaning of Germ. vesan.
+
+
+
+        PGmc.     *uz-laga m. n. “fate”
+          ON.     or-lo g n. pl. “fate”
+          OS.     orlag and orlagi
+          OE.     orlæg n. “fate”
+         OHG.     orlac m., urlaga f. (?) dass.
+
+
+
+        PGmc. *vala-kuzjōn f. “valkyrie”
+          ON. valkyrja f. “valkyrie”
+          OE. wælcyrige “erinys (one of the Furies), sorceress”
+
+
+
+References
+Brugmann, Karl. 1897. Vergleichende Laut-, Stammbildungs- und Flexionslehre der Indogermanischen
+        Sprachen, zweite Bearbeitung. Strassburg: Karl J. Trübner.
+Braune, Wilheln (revised by Ernst A. Ebbinghaus). 1969. Althochdeutsches Lesebuch. Tübingen: Max
+        Niemeyer Verlag.
+Campbell, A. 1959. Old English Grammar. Oxford at the Clarendon Press.
+Clark Hall, John and Herbert Merritt. 1962. A Concise Anglo-Saxon Dictionary. Cambridge University
+        Press.
+Crist, Sean. 2001. Conspiracy in Historical Phonology Unpub. diss., University of Pennsylvania.
+Feist, Sigmund. 1909. Etymologisches Wörterbuch der gotischen Sprache. Max Niemeyer Verlag.
+Feist, Sigmund. 1939. Vergleichendes Wörterbuch der gotischen Sprache mit Einschluss des Krimgotischen
+        und sonstiger zerstreuter Überreste des Gotischen. Leiden: E. J. Brill
+Kluge, Friedrich (revised by Elmar Seebold). 1999. Etymologisches Wörterbuch der deutschen Sprache.
+        Berlin: Walter de Gruyter.
+Lexer, Matthias. rev. 1986. Mittelhochdeutsches Taschenwörterbuch.
+Noreen, Adolf. 1904. Altschwedische Grammatik. Halle: Max Niemeyer.
+Ringe, Donald. 1984. Germanic *ē2 and *r. Die Sprache 30:138-155.
+Schützeichel, R. 1969. Althochdeutsches Wörterbuch. Tübingen: Max Niemeyer Verlag.
+Stiles, Patrick V. 1986. The fate of the numeral ‘4’ in Germanic. Northwestern European Language Evolution
+        (NOWELE) 7:81-104.
+Steblin-Kamenskij, M. I. 1963. The Scandinavian Rhotacism and Laws Governing the Change of Distinctive
+        Features. Philologica Pragensia 6:362-367.
+Torp, Alf (based on work by August Fick and Hjalmar Falk). 1909. Wörterbuch der Indogermanischen
+        Sprachen: Dritter Teil: Wortschatz der Germanischen Spracheinheit. Göttingen: Vandenhoeck und
+        Ruprecht.
+Wright, Joseph. 1888. An Old High German Primer. Oxford at the Clarendon Press.
+
+                                                    10
+

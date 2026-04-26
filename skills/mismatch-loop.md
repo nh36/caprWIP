@@ -221,6 +221,35 @@ The discipline:
   (not just hand-wave). If the sources don't say "analogical", default
   to phonological treatment.
 
+### ⛔ Model stipulation for delegated research agents
+
+When delegating source-consultation, etymological research, or any
+philological investigation to a sub-agent (via the `task` tool), you
+**must** override the default model to either **Opus** (`claude-opus-4.7`)
+or **GPT-5.4** (`gpt-5.4`). **Do not use Sonnet** (the default for
+`general-purpose`) for research delegation in this project.
+
+Reason: Sonnet has been observed to confabulate primary-source
+material in this project's research delegations — inventing compound
+attestations, fabricating dictionary quotations, and misciting
+handbook pages. Such hallucinations propagate into DEV_NOTES, the
+notable_findings index, and dossiers, and are expensive to correct
+because the corrected document still has to coexist with the original
+flawed reasoning. (Concrete history: §17.24 *mizdō / meord-gifa* and
+the Kroonen "single dental" quote — both confabulations from Sonnet
+research agents that required full correction trails. See DEV_NOTES
+§17.24.7.) Opus and GPT-5.4 have not shown this failure mode in this
+project.
+
+Apply this stipulation to **all** research-style delegations: literature
+review, primary-source scanning, etymology, manuscript citation,
+attestation verification. If the task is purely mechanical (running a
+script, applying a known edit, summarising existing in-repo files
+verbatim) the default model is acceptable.
+
+Use the `model` parameter on the `task` tool, e.g.
+`model: "claude-opus-4.7"` or `model: "gpt-5.4"`.
+
 ---
 
 ## 5. Write up DEV_NOTES first (before any code change)
@@ -403,6 +432,10 @@ the current state.
 - **Reordering rules to fix one form**: high regression risk. If
   reordering really is the answer, it deserves its own multi-iteration
   research arc, not a quick mismatch-loop pass.
+- **Delegating philological research to Sonnet**: see §4 "Model
+  stipulation". Sonnet has confabulated primary sources in this
+  project (compound attestations, dictionary quotations, handbook
+  pages). Use Opus or GPT-5.4 for any research-style sub-agent task.
 
 ---
 

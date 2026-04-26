@@ -1,14 +1,14 @@
-Total mismatches: 26
+Total mismatches: 25
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    4
+  Phonology (core buckets):    3
   Phonology (other buckets):   15
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
-  long_vowel_missing: 3
+  long_vowel_missing: 2
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
@@ -45,10 +45,12 @@ breaking_missing__expected_eo_got_e (1):
   >> LIKELY: Breaking rule missing this context or ordered wrong
   >> ACTION: Check *e before r/l/h in breaking environments
 
-long_vowel_missing (3):
+long_vowel_missing (2):
   *bō -> bu (expected bā]] [[þā)
-  *mízdō -> meord (expected mēd)
   *téxun -> teoon (expected tīen)
+  >> ISSUE: Long vowel expected but short produced
+  >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
+  >> ACTION: Check if proto should have long vowel; check lengthening rules
 
 final_vowel_extra (2):
   *láimōn -> lāfe (expected lām)

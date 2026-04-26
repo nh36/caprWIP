@@ -1,0 +1,636 @@
+                           I. REZENSIONSAUFSÄTZE
+
+    Ringe, Don: A Linguistic History of English. Volume I. From Proto-Indo-
+European to Proto-Germanic. Oxford/New York, Oxford University Press, 2006,
+gr.-8°, x, 355 S. Geb. 75 £.
+
+    Das zu besprechende Buch1 des amerikanischen Indogermanisten und Tocha-
+rologen Don Ringe ist der erste Band einer geplanten mehrbändigen Sprachge-
+schichte des Englischen, wobei sein erster Entwurf auf den Handouts eines im
+akademischen Jahr 2002/03 an der University of Pennsylvania vom Autor abge-
+haltenen Kurses basiert. Das Werk ist gemäß der allgemeinen Einleitung („Gene-
+ral Introduction“, 1) weder ein Handbuch, in welchem „the focus is always on at-
+tested languages“, noch primär für traditionelle „philologists“ gedacht, sondern
+ein Versuch, dem interessierten, linguistisch ausgebildeten Studenten ohne ver-
+tiefte Kenntnisse auf dem Gebiet der historisch-vergleichenden germanischen und
+indogermanischen Sprachwissenschaft eine kohärente Beschreibung von verschie-
+denen Sprachstufen der Vorgeschichte des Englischen und den zwischen diesen
+Stufen eingetretenen Veränderungen zu geben.
+    Auf die Einleitung (1. Kapitel, 1–3) folgt das der synchronen Grammatik der
+indogermanischen Grundsprache gewidmete 2. Kapitel („Proto-Indo-European“,
+4–66), in dem R. eine persönliche, dem heutigen Stand der Forschung in vieler
+Hinsicht Rechnung tragende Rekonstruktion des Stammbaums (4–6) der idg. Ein-
+zelsprachen sowie der Phonologie (6–22), der Flexionsmorphologie (22–58), der
+Wortbildung (58–64), der Syntax (64–65) und des Lexikons (65–66) des Urindo-
+germanischen darbietet.
+    Nach R.s „probable cladistic tree“ hätte sich die idg. Grundsprache zuerst in
+Anatolisch und „Nordindogermanisch“ aufgespalten; Letzteres hätte sich seiner-
+seits in Tocharisch und „Westindogermanisch“ verzweigt, aus dem sich dann Italo-
+keltisch und „Zentralindogermanisch“ herausgebildet hätten. Die im Buch näher
+behandelte Sprachgruppe (Germanisch) gehöre mit Indoiranisch, Griechisch, Bal-
+toslavisch, Armenisch usw. zum „Zentralindogermanischen“.
+
+   1
+      Folgende bisher erschienene Besprechungen und Anzeigen über das Buch sind mir
+bekannt: Michael Schulte in JIES 35, 3/4 (2007), 399–410, Robert Nedoma in Germani-
+stik 48 (2007), 590, Marc Pierce in Folia Linguistica Historica 28, 1–2 (2007), 279–283,
+Lisi Oliver in Indo-European Studies Bulletin 12/2 (2008), 23–26 und David Stifter in
+Linguist List Issue 19.952 (2008).
+2                   S. NERI: Ringe, A Linguistic History of English I
+
+    Das Phonemsystem des Idg. wird gemäß Mayrhofers Lautlehre (1986) rekon-
+struiert; abweichend sind, soweit ich sehe, nur der Ansatz von auslautendem *-d
+für *-t außer nach Obstruent (20; z. B. *gwemd : *bhuh2t)2 und die Lösung des
+„Thorn“-Problems nach mündlicher Mitteilung von Jochem Schindler (18–20),
+dem zufolge – gemäß der Wiedergabe von R. – in einem Cluster *TK (= dentaler
++ dorsaler Okklusiv) zuerst ein /s/-Einschub stattgefunden hätte (*TsK), auf den
+eine Metathese gefolgt wäre (*KTs).3
+    Der Abschnitt 2.3 über die idg. Flexionsmorphologie setzt mit der Darstellung
+der nominalen Kategorien an (u. a. wird unter Vorbehalt ein neunter Kasus Allativ
+aufgrund des Kasus Direktiv im Althethitischen für die Grundsprache rekonstru-
+iert), auf die die Beschreibung der verbalen Kategorien folgt. In den sukzessiven
+Abschnitten wird aber die umgekehrte Reihenfolge (Rekonstruktion der verbalen
+Stammbildungen und Endungen, ausführliche Darstellung verbaler Paradigmen,
+Rekonstruktion der nominalen Kasusendungen, Ablauttypen, Nominalparadigmen)
+eingehalten. Dieser Teil endet mit der Besprechung der Flexion der Zahlwörter
+und der Pronomina unter besonderer Berücksichtigung der Ansätze der noch un-
+veröffentlichten Dissertation von Joshua Katz (1998).
+    Das umfangreiche 3. Kapitel („The Development of Proto-Germanic“, 67–212)
+bildet den Kern des Buches. Die Entwicklung des Sprachsystems vom Uridg. zum
+Urgerm. umfaßte nach R. eine Zeitspanne von 3500 Jahren (von ca. 4000 bis 500
+v. Chr.), in der vor allem phonologische und morphologische, aber kaum syntakti-
+sche Veränderungen stattgefunden haben sollen (67). Der Autor zeigt, wie nach
+regulärem Lautwandel die idg. Laryngale in allen Positionen systematisch besei-
+tigt wurden, mit schwerwiegenden Folgen für das Vokalsystem und den Ablaut
+(68–81). Die Obstruenten (idg. *s und Okklusive) werden gesondert im Abschnitt
+3.2.3 („Changes affecting obstruents“, 87–93) behandelt; man hätte allerdings den
+Abschnitt 3.2.1 über die (von Natur aus wohl obstruent gewesenen) Laryngale
+ebenfalls unter diesem Titel subsumieren sollen. Die germanische Verschiebung
+der ererbten Okklusive zu homorganen Okklusiven und Frikativen (Lex Grimm)
+und das Vernersche Gesetz werden anhand vieler Beispiele nach traditioneller
+Auffassung dargestellt und erörtert (93–116). Danach werden u. a. die Apokope
+unbetonter nicht-hoher Vokale, die Lex Sievers, die Hebung von idg. *e zu germ.
+*i in bestimmten Umgebungen, der Wandel von unbetontem *e zu *a, der
+Schwund von intervokalischem * sowie von durch Laryngalvokalisierung ent-
+standenem urgerm. *ə und weitere Lautwandelphänomene beschrieben (116–151).
+Auf S. 152 werden die behandelten Erscheinungen nochmals nach ihrer relativen
+Chronologie überblicksartig (obgleich unübersichtlich) dargestellt.
+
+    2
+      Ich gebe die Rekonstrukte von R. in folgender Notation wieder: in Kursivschrift statt
+Recte, <  > und <  > für uridg. und urgerm. Halbvokale, < n > für Nasalierung, Länge-
+balken <  > für zweimorige, Zirkumflex < ^ > für dreimorige Vokallänge.
+    3
+      In diesem Zusammenhang müßte noch auf Melchert 2003, 154–155, mit Verweis auf
+Merlingen 1957, 51, hingewiesen werden. Zum „Thorn“-Problem grundlegend Lipp 2009.
+                   S. NERI: Ringe, A Linguistic History of English I                 3
+
+    Der zweite Teil des 3. Kapitels behandelt den morphologischen Wandel: Zu-
+erst wird die Neustrukturierung des ererbten Verbalsystems besprochen (151–
+169: Entwicklung des Perfekts zum Vergangenheitstempus, Verlust des Aoristes,
+der Kategorie Aspekt und des Konjunktivs, Grammatikalisierung des passiven
+Partizips Perfekt, die Entwicklung des schwachen Präteritums und des Passivs),
+dann die Entstehung der schwachen Adjektivflexion (169–170). Der Wandel der
+Fleksionskategorien wird in größerem Detail im Abschnitt 3.4 (170–211) disku-
+tiert: Die Vereinfachung von nominalen Kategorien, z. B. dem Dual;4 der Wandel
+des formalen Ausdrucks von Flexionskategorien des Nomens sowie des Verbs, z.
+B. die Entstehung der 4. Klasse der schwachen Verben aus alten n-Infix-
+Präsentien zu auf Laryngal auslautenden Wurzeln; die Entwicklung und Systema-
+tisierung der verschiedenen Verbalklassen; die Veränderungen in der Nominal-
+und Pronominaldeklination. Der sehr knappe Abschnitt 3.5 (211–212) ist hinge-
+gen den Veränderungen anderer Komponenten der Grammatik (Wortbildung,
+Lexikon) gewidmet.
+    Das 4. Kapitel („Proto-Germanic“, 213–297) enthält eine synchrone Gramma-
+tik des Urgermanischen. In der Einleitung (213–214) wird das Stammbaummo-
+dell nach der nordwestgermanischen Hypothese dargestellt, das nach R. „relative-
+ly uncontroversial“ sein soll. Diese wichtige Frage wird aber in keiner Weise
+erörtert, noch wird auch nur ein Bruchteil der umfangreichen Literatur über das
+Thema erwähnt.5 Es wäre wünschenswert, daß diese Frage im geplanten nächsten
+Band nochmals aufgegriffen und vertieft wird. Im darauffolgenden Abschnitt 4.2
+(214–233) wird das rekonstruierte Laut- und Ablautsystem der germ. Grundspra-
+che beschrieben und diskutiert. Das Thema des Abschnitts 4.3 (233–291) ist dann
+die Flexionsmorphologie des Germanischen; nach einer knappen Beschreibung
+der Flexionskategorien wird die Verbalmorphologie (starke und schwache Ver-
+balklassen) sehr ausführlich diskutiert und anhand rekonstruierter Paradigmen
+dargestellt. Die Behandlung der Substantive, Adjektive, Zahlwörter und Prono-
+mina ist ebenfalls sehr gründlich. Der Abschnitt 4.4 (291–295) ist der Wortbil-
+dung, der Abschnitt 4.5 (295) der Syntax und der Abschnitt 4.6 (295–297) dem
+Lexikon des Urgermanischen gewidmet. Eine Literaturliste („References“, 298–
+306) und ein sehr nützlicher Wortindex („Index“, 307–355) schließen den Band
+ab.
+    Das Buch von R. beinhaltet eine große Fülle an interessanten Diskussionen
+und rekonstruierten Formen, weniger berücksichtigt wurde hingegen das einzel-
+sprachliche Material. Die Darstellungsweise ist sehr diskursiv und ausführlich,
+
+   4
+      Interessant in diesem Zusammenhang ist R.s Beobachtung, daß die Kongruenzregel,
+wonach das Genus eines Adjektivs im Plural neben zwei Nomina verschiedener Genera
+neutrum war, auf den formalen Zusammenfall von Nom.-Akk. Neutrum Plural und Nom.-
+Akk. Maskulinum Dual im Urgerm. zurückzuführen sei, d. h. uridg. *-eh2, *-oh1 > urgerm.
+*-ō.
+    5
+      Vgl. dazu Markey 1976, Ramat 1986, 21–25 oder Nielsen 2000.
+4                   S. NERI: Ringe, A Linguistic History of English I
+
+manchmal vielleicht weitschweifig, wodurch eine durchgehende Lektüre des Bu-
+ches erschwert wird. Das Werk hat auf alle Fälle den unzweifelhaften Verdienst,
+eine neue Gesamtdarstellung des Germanischen nach modernen indogermanisti-
+schen Ansätzen zu bieten, wofür die Fachleute nur dankbar sein können. Gebüh-
+rend berücksichtigt werden dabei die Laryngaltheorie sowie die verschiedenen
+Ablauttypen in der Nominal- und Verbalflexion. Das 1. Kapitel kann als allge-
+meine Einführung in die Rekonstruktion der idg. Grundsprache für Studenten
+auch außergermanischer Einzelsprachen fungieren (und zur Lektüre von Ringe
+1996 gewinnbringend einleiten). Allerdings ist das Buch auch mit einigen
+schwerwiegenden Problemen behaftet, die seine Nützlichkeit für Anfänger und
+Nicht-Spezialisten indogermanischer Sprachen leider etwas einschränken. Im
+Folgenden sei es mir erlaubt, einige Beobachtungen darzulegen und ein paar
+Problemfälle zu diskutieren.
+    1) Zur Organisation des Buches: Die Besprechung von einigen Fragen ist
+manchmal in voneinander sehr entfernten Abschnitten verstreut, so daß die
+schnelle Suche nach der Meinung von R. zu bestimmten Themen schwierig sein
+kann (vgl. z. B. die Behandlung der 3. Klasse der schwachen Verben des Germ.:
+138–139, 164, 175, 179–180, 183, 256–259). Ein Sachregister oder eine detail-
+liertere Paragraphierung hätten das Buch benutzerfreundlicher gemacht.
+    2) Die Abschnitte über die uridg. (64–65) und urgerm. Syntax (295) sind viel
+zu kurz gekommen – der Letztgenannte besteht sogar aus nur acht Zeilen. Gerade
+dieses typische Manko der älteren Literatur wird hier leider nicht ausgemerzt. Das
+geht erstaunlicherweise gegen die heutige Tendenz, der historischen Syntax im-
+mer mehr Aufmerksamkeit zu widmen (vgl. z. B. Hettrich 2002, Schrodt 2004
+usw.). Zur germanischen Syntax stehen außerdem schon seit langem mehrere spe-
+zielle Studien und Monographien zur Verfügung (z. B. Behaghel 1923–1932, Hirt
+1934, Streitberg 1981 usw.), auf die der Autor hätte verweisen können.
+    3) Wichtige wissenschaftliche Literatur wird bisweilen nicht zur Kenntnis ge-
+nommen (um nur wenige Beispiele zu nennen, fehlen Bammesberger 1986 und
+1990, Boutkan 1995, Braune/Heidermanns 2004, 6 Harðarson 2001, Hill 2003,
+Krahe 1969 und 1969a, Klingenschmitt 1982, Kluge 1926, Kluge/Seebold 2002,
+Lloyd et al. 1988–1998, Lühr 1988, Ramat 1986 – auch in der 1981 erschienenen
+deutschen Übersetzung verfügbar –, Schmidt 1962, Syrett 1994, van Coetsem/
+Kufner 1972 usw. usf. – vgl. auch die Bibliographie in Ramat 1986, 265–272,
+275–296)7 oder, auch wenn in der Bibliographie angegeben, wird ein Titel dann
+nicht immer an der betreffenden Stelle erwähnt (z. B. Schaffner 2001 bei der Dis-
+kussion des Vernerschen Gesetzes in Nominalparadigmen auf S. 218, 269–276
+
+    6
+     Stattdessen wird im Literaturverzeichnis die überholte 18. Auflage von Braune / Eb-
+binghaus (1973) zitiert.
+   7
+     R. zitiert hingegen auch schwer zugängliche oder unveröffentlichte Arbeiten, ohne
+Näheres über ihren Inhalt zu berichten, z. B. Jasanoff 1996, Kim 2000 oder Bernharðsson
+2001.
+                     S. NERI: Ringe, A Linguistic History of English I                     5
+
+oder LIV 2001 bei der Behandlung bestimmter idg. Wurzeln, z. B. auf. S. 227 zu
+*sek, S. 231 zu *slak-, S. 242 zu *selH-, S. 244 zu *stel-, *elH-, *gwelH-
+u.v.a.). Für ein Einführungswerk ist diese Knappheit an weiterführender Literatur
+bedenklich. Das führt außerdem unglücklicherweise auch dazu, daß R. manche
+Ideen als eigene erklärt, die eigentlich anderswo schon längst geäußert wurden,
+wie z.B. die Erklärung der Herkunft des schwachen Präteritums (166–169) aus
+der Zusammenrückung einer periphrastischen Konstruktion aus dem passiven
+Partizip Perfekt mit Dentalsuffix und der reduplizierten Imperfekt- (bzw. Injunk-
+tiv-) Form der idg. Wurzel *dheh1- ‚setzen, legen; (jmd./etwas zu etwas) machen‘
+mit anschließender Haplologie: *salbōdan dēdun ‚sie machten (jmd./etwas) ge-
+salbt‘ > got. salbodedun ‚sie salbten (jmd./etwas)‘.8 Diese sehr plausible Erklä-
+rung (etwa vergleichbar der Herkunft des oskisch-umbrischen „schwachen Präte-
+ritums“ aus einem -to-Partizip, z. B. osk. dunatted ‚gab‘ ← *dōnātom fefaked,
+vgl. auch lat. missum facere ‚befreien‘, dazu Rix 1992, 238–239) wurde schon
+von Rasmussen 1999a, 597–602 vertreten. Ein weiteres Beispiel ist die Herlei-
+tung des Suffixallomorphs urgerm. *-a- der schwachen Kasus des Singulars der
+u-Stämme aus einem unbetonten tautosyllabischen urgerm. *-e- (125–126), wie
+auch bereits J. E. Rasmussen dargelegt hat, vgl. Rasmussen 1999, 88 Fn. 10, 95
+(referiert in Neri 2003, 132).9
+    4) R. benutzt kaum die Evidenz der Sprache der Runeninschriften, wie ein ra-
+scher Blick ins Wortregister bestätigt (unter den wenigen Formen: -ika, -eka auf
+S. 137, talgidai S. 158 Fn. 6, unnamz S. 118, wraita S. 118, -wulafa S. 86). Über
+die Probleme, die daraus entstehen, z. B. bei der Besprechung des Nom. Sg. der
+geschlechtigen n-Stämme, hat schon M. Schulte in seiner Rezension von R.s
+Buch10 auf S. 405–406 (allerdings ohne Erwähnung von Harðarson 2005, 225–
+231) zu Recht hingewiesen. Da alles dafür spricht, daß die Endung -e, -i des
+Nom. Sg. Mask. der n-Stämme im Altnordischen die der hysterokinetischen Fle-
+xion zugehörige Endung *-ēn fortsetzt, dürfte somit die von R. neubelebte Theo-
+rie, der zufolge uridg. *-ēn durch urgerm. *-ōn lautgesetzlich fortgesetzt sei (148–
+149), falsch sein. Seine sich darauf stützenden Herleitungen der Endung der
+1. Singular des schwachen Präteritums11 sowie des Gen. Pl. got. -e (nach R. hy-
+
+
+
+
+   8
+       Dazu ausführlich Ringe 2006, 179–192.
+   9
+       Wie man sieht, läßt sich die folgende Aussage Stifters (Rez. in Linguist List) nicht
+ganz aufrecht erhalten: „The book not only condenses established wisdom, it also presents
+new suggestions, like the development of unstressed (that is, after the stress had shifted to
+initial syllables) *ew > *ow > Pr-Germ. *aw (pp. 125–126)“.
+     10
+        S. Fn. 1 der vorliegenden Besprechung.
+     11
+        Die Vokalalternation im Singular *-(de)dōn / *-(de)dēz / *-(de)dēt (statt durchge-
+führtem *-(de)dō- < *dhedhoh1-) ist eher als Analogie nach dem thematischen Imperfekt,
+das im Vorurgermanischen die Sg.-Endungen *-om / *-es / *-ed aufwies, zu erklären, vgl.
+etwa Lühr 1984, 46–49, 72–73 Anm. 124, mit Literatur.
+6                    S. NERI: Ringe, A Linguistic History of English I
+
+perkorrekt für dreimoriges *-ôn)12 sind daher hinfällig.13
+   5) Zwei sehr wichtige urgermanische Lautgesetze werden nicht ausführlich
+besprochen: a) die Resonantengemination durch Laryngal („Verschärfung“ oder
+„Lex Holtzmann“, vgl. Collinge 1985, 93–101, mit reicher Literatur), d. h. CVUHV
+> CVUUV und CVRHV > CVRRV, gemäß Kluge 1913, 75 nur nach betontem kur-
+zem Vokal wirkend,14 vgl. z. B. uridg. Gen. Du. *dóh1-ē/ōs → urgerm. *taôn
+> anord. tveggja, got. twaddje (falls die These von Lühr 1976, 78, daß uridg. *h3ri-
+n-H-enti15 urgerm. *rinnand(i) ergab, zutrifft, müßte man die Fortsetzung der im
+indogermanischen Hauptsatz unbetonten Verbalform annehmen und Kluges Be-
+dingung für die „Verschärfung“ eher als nicht unmittelbar vor betontem Vokal re-
+formulieren): nach R. (241) bleibt die etymologische Quelle von urgerm. * un-
+klar; für „questionable or indefensible“ geminierte Reflexe von uridg. *H wird
+ausschließlich auf den völlig veralteten Aufsatz von Lehmann 1965 verwiesen; b)
+die sog. „Lex Kluge“, VKNV > VCCV und VRKNV > VRC(C)V (mit K = beliebi-
+ger Okklusiv, C = stimmloser Okklusiv), die R. (115) ablehnt, ohne die wichtigen
+Ergebnisse von Lühr 1988 zu diskutieren; die Gültigkeit des Lautgesetzes für das
+Urgermanische (und nicht nur für Nord- und Westgermanisch) wird z. B. durch
+got. skatts ‚Geld‘ < *(s)kod(h2)-no- oder þairko ‚Loch‘ < *terh2k-n° erwiesen
+(Lühr 1988, 190; Casaretto 2004, 68, 237).16
+    Weitere Bemerkungen (in Auswahl): 10: es gab im Uridg. keine Wurzel *pa- ‚wenig‘
+„with underlying */a/“, vgl. Janda 1997, 111–114 (Wurzel *peh2- wegen heth.-luw.
+paḫḫurša/i- ‚nachgeordnet‘); urgerm. *faa- setzt m. E. eine -eo-Bildung mit schwundstu-
+figer Wurzel fort, d. h. < *ph2-eo-, vgl. lat. salvus, osk. salavs < *sh2-eo-, gr. σάος <
+*tuh2-eo- oder gr. ταναός < *th2-eo-; 12, 46: der Akzent des Rekonstruktes *h2ĺh1neh2-
+‚Wolle‘ (wohl basierend auf ai. rṇā-, dessen Betonung aber sekundär sein könnte) steht im
+Widerspruch zu lat. lāna < *h2h1néh2- (auch *h3- ist übrigens möglich, vgl. Peters 1987,
+115 mit Fn. 6); 17: im Uridg. war auch ein Anlaut auf mn- möglich, vgl. die Wurzel *mneh2-
+
+    12
+       Die Endung got. -e war übrigens entgegen R. (282) nicht auf das Maskulinum/Neu-
+trum beschränkt, vgl. z. B. got. baurge ‚der Städte‘, Femininum (zur Flexion der gotischen
+Wurzelnomina vgl. Braune / Heidermanns 2004, 109).
+    13
+       Ebenfalls bei der Behandlung der nominalen u-Stämme (272–273) verkennt R. die
+Tatsache, daß das Urgermanische Stammallomorphe aus verschiedenen Ablauttypen be-
+wahrt hat: Entgegen R. muß man für den geschlechtigen Nominativ Plural neben urgerm.
+*-iiz auch eine Endung *-aiz (> ae. -a) rekonstruieren, die den amphikinetischen ge-
+schlechtigen Nom. Pl. uridg. *-oes lautgesetzlich fortsetzt (Neri 2003, 145–147); Spuren
+dieser Flexion sind wohl auch im Gotischen bewahrt (vgl. die Varianten Nom. Sg. -aus,
+Gen. Sg. -us und Akk. Sg. -au neben üblichen -us, -aus, -u), vgl. die Diskussion in Neri
+2003, 122–124, 133, 134 und 178, mit Literatur.
+    14
+       So jetzt auch Müller 2007, 88.
+    15
+       So auch LIV 2001, 305–306. Der direkte Vergleich von R. (242) zwischen got. rinnan
+‚laufen‘ und ai. ṇóti ‚setzt in Bewegung‘ (statt riṇti ‚läßt wirbeln‘) ist unökonomisch,
+weil er die Einführung einer neuen e-Stufe in die Wurzel des germ. Verbs erforderlich
+macht.
+    16
+       R. verliert außerdem kein Wort über weitere Erscheinungen wie die Lex Dybo (Neri
+2005, 231–232, mit Literatur) oder die „Wetter“-Regel (Peters 1999).
+                     S. NERI: Ringe, A Linguistic History of English I                       7
+
+‚denken an‘ (LIV 2001, 447); 33: im Endungssatz des Perfekts gab es neben 3. Pl. *-ēr auch
+eine ursprünglich unbetonte Variante *- (+ s), vgl. ai. -ur; 37: in Anbetracht des urgerm.
+Präsensstamms *dedō- ist die Rekonstruktion eines uridg. Präsensstamms „*dhedheh1mi“17
+(statt *dhedhoh1-, vgl. Lühr 1984, 39 und LIV 2001, 136–137) verfehlt; 45: R.s Rekonstruk-
+tion eines primären amphikinetischen Paradigmas mit o-stufiger Wurzel im starken Kasus
+und nullstufiger im schwachen, uridg. „*póntoh2- ~ *pth2- ‚path‘“, widerspricht allem, was
+wir über diesen Flexionstyp wissen; aufgrund ai. pánthā- / path(í)- ist eher ein geschlechtiges
+amphikinetisches (individuatives) Substantiv uridg. *pént-oh2- / *pt-h2- ‚Einzelweg‘ anzu-
+setzen, das m. E. aus einem proterokinetischen Kollektiv *pént-h2 / *pt-éh2- ‚Wegenetz‘
+intern deriviert wurde; das Kollektiv wurde seinerseits von dem akrostatischen Wur-
+zelnomen *pónt- / *pént- (→ *pt-) ‚Weg; Ort, der betreten wird‘18 (> lat. pōns usw.) abge-
+leitet; 47–52: die dargebotene Rekonstruktion des Ablauts oder des Akzents des Vokativs (z.
+B. uridg. *ménti, *géstu, *nisdé usw.) ist z. T. falsch: Der idg. Vokativ war – unabhängig
+vom Ablauttyp – durch systematische Betonung des am weitesten links befindlichen akzen-
+tuierbaren Segmentes (= Satzbetonung) und im Singular bei abgeleiteten Nomina immer
+durch unreduzierten, d. h. e-stufigen, Suffixvokalismus gekennzeichnet (vgl. ai. agní-, Vok.
+Sg. ágne / agne, aav. jav. ratuš, jav. Vok. Sg. ratuuō < uriran. *-a, got. sunus, Vok. Sg.
+sunau, lit. sūnùs, Vok. Sg. sūnaũ, aksl. gostь, Vok. Sg. gosti, gr. πόσις, Vok. Sg. verbaut im
+gr. hom. GN Ποσειδάων sowie den immer e-stufigen Themavokal; dazu vgl. Neri 2003,
+131–132); 52–53: das Allomorph des Instr. Sg. der proterokinetischen ih2-Stämme ist richtig
+nach Jochem Schindler apud Jasanoff 2003, 102, als *-ih2-eh1 und nicht gemäß R. als *-eh2-
+(e)h1 anzusetzen – das gilt mutatis mutandis auch für den Instr. Sg. der proterokinetischen i-,
+u- und men-Stämme, der entgegen R. (48) mit nullstufigem Suffix und vollstufiger Endung
+zu rekonstruieren ist, d.h. uridg. *m-t-éh1, *gus-t-éh1, *sh1-mn-éh1; was das Paradigma
+des Femininums von ‚eins‘ betrifft, lassen sich in den Einzelsprachen vielmehr nur ein
+*smih2 (/ *sih2) und ein *s(i)eh2- (→ gr. ἴα) aus älterem *smeh2- (mit unsilbischem -m-)
+nachweisen, vgl. Gippert 2004 und Hackstein 2005, 179; 95: bei der Rekonstruktion von
+urgerm. *fimf ‚fünf‘ bemerkt R. erstaunlicherweise, daß „the word final labial is puzzling“;
+das Phänomen des assimilatorischen Wandels eines Labiovelars zu einem einfachen Labial
+in der Nähe labialer Konsonanten im Germanischen (vgl. das berühmte Beispiel urgerm.
+*ulfa- ‚Wolf‘ < *kwo-) ist aber recht gut bekannt, vgl. z. B. Schaffner 2001, 62 („artikula-
+torische[r] Sprung“; vorsichtig dazu R., 116); eine sporadische Fernassimilation p_ kw > p_ p
+wäre bei Numeralien jedenfalls nichts Verblüffendes; 96, 125: uridg. *anteros ‚anderer‘ ist
+eher als *h2entero- ‚gegenüber befindlich‘ (zu *h2en-t- ‚Vorderseite‘) anzusetzen; 98: R.s
+Annahme, daß „PGmc *attô ‚dad‘ presumably escaped Grimm’s Law because of the Obliga-
+tory Contour Principle (since the second *t could not undergo the change)“, impliziert für
+
+   17
+       Die hier wie beinahe im ganzen Buch systematische Vermeidung jeglicher Mor-
+phemgrenzen innerhalb der Rekonstrukte (Ausnahmen: 9, 13–16, 28–31, 34, 41, 63–64,
+76, 112, 117, 139–140, 142, 149, 156, 165, 172, 177, 185–187, 194–195, 205, 237–239,
+251, 255–256, 273, 276, 284, 291) ist übrigens für ein Einführungswerk kaum nachvoll-
+ziehbar.
+    18
+       Die Bedeutung der Wurzel war eher ‚stoßen, treiben‘ oder ‚stampfen, betreten‘, und
+nicht ‚(einen Weg) finden‘ (entgegen LIV 2001, 471), vgl. gr. πατέω ‚betreten‘; die Be-
+deutung von urgerm. *fenþa- ‚finden‘ kann aus ‚auf jmd./etwas stoßen‘ entstanden sein,
+vgl. urgerm. *funs(s)a- ‚bereit, willig, gespannt‘ (ahd. funs usw.) < *pt-tó- ‚getrieben, ge-
+stoßen‘.
+8                     S. NERI: Ringe, A Linguistic History of English I
+
+das urgerm. Wort eine lautgesetzliche Fortsetzung von uridg. *atta-; das ist aber ausge-
+schlossen, da sich eine solche Form regelrecht zu urgerm. *assa- hätte entwickeln müssen;
+es handelt sich dabei vielmehr um ein einzelspr. Lallwort; 98: uridg. *h2ebō ‚Fluß‘ ist ent-
+gegen R. auch im Germanischen, und zwar in der Toponomastik, reichlich vertreten, vgl. z.
+B. den Flußnamen dt. Aschaff (zur Stammbildung vgl. den Ortsnamen Aschaffenburg, mit -
+affen- ← urgerm. *-ap-an- ‚Fluß‘, dazu Reitzenstein 1986, 40–41, mit Literatur); 119: gr.
+ἐναντίος muß nicht uridg. *h2entío- (mit betontem /i/) fortsetzen, da aufgrund eines innergr.
+Akzentverlagerungsgesetzes bei daktylischen Wortformen („Wheeler’s Law“, vgl. Probert
+2006, 91–96) auch eine Vorform *h2entió- (die ebenfalls urgerm. *andia- erklären würde)
+vorliegen könnte; 121: uridg. „*néios“ ist kein „derivative of *néos“, sondern eine Va-
+riante mit Suffixtausch *-o- → *-io-, die auf dem Nebeneinander von synonymen thema-
+tischen Hypostasen *-o- ~ *-io- zu endungslosen und i-Lokativen beruht; 127: der Wandel
+*e > *ī ist möglicherweise nicht urgermanisch, vgl. die zwischen der ersten Hälfte des 5. Jh.
+und etwa 100 v. Chr. datierbare,19 sicher in einer germanischen Sprache verfaßte Inschrift
+auf dem Helm B von Negau harigasti teiva mit sehr wahrscheinlich erhaltenem Diphthong
+/e/ (< uridg. *deó-), vgl. Nedoma 1995, 20, 25, 46; 129: es ist nicht notwendig, eine ad
+hoc-Regel „əjV > *jV“ aufzustellen, denn die Allomorphie des Suffixes der 3. Klasse der
+schwachen Verben mit stativer Bedeutung urgerm. *-a- / *-a- ist auf die Wirkung der Lex
+Saussure / Hirt (uridg. *-h1e- > urgerm. *-ai- > *-a-, uridg. *-h1o- > *-o- > urgerm. *-a-,
+vgl. Neri 2003, 264–265 Fn. 870) zurückführbar; da ein Laryngal nach Resonant im Germa-
+nischen nicht vokalisiert wurde, konnte die Suffixalternante *-h1e- nur nach auf Obstruenten
+auslautenden Wurzeln erhalten bleiben, vgl. die Liste der Deverbativa auf S. 257, wo das
+einzige Verb mit nicht auf urspr. Obstruent ausgehender Wurzel urgerm. *silana- ‚schwei-
+gen‘ als späte Umbildung eines Denominativs *sh1ile-h1e/o- (vgl. lat. sileō, -ēre ‚schwei-
+gen‘, zu uridg. *sh1ilo- ‚nachlassend, ruhig‘, Wurzel *sh1e- ‚nachlassen‘) erklärt werden
+muß; 147: lat. sōl kann aufgrund seines Genus Maskulinum nicht direkt mit uridg. *sóh2
+(oder eher proterokinetischem *séh2) n. verglichen werden, sondern muß eine geschlechti-
+ge Zugehörigkeitsbildung *seh2ōl → *sh2ōl ‚der Sonnige, Gott der Sonne‘ (Neri 2003,
+232) fortsetzen; 171: eine weitere Spur des alten Duals ist wohl im i-stämmigen Vorderglied
+des Kompositums ahd. auuizoracht ‚augenscheinlich‘ (Belege in Gröger 1911, 21) <
+*h3okwi-dktó- noch erhalten (zu *h3okwi(h1) ‚(beide) Augen‘); 206: urgerm. *tegu- war kein
+Derivativ, sondern ein Allomorph von *tehun (vgl. die Literatur in Neri 2003, 181–182 Fn.
+521); der Stamm *ghesl(i)o- ‚tausend‘ ist nicht nur auf das Griechische und Indoiranische
+beschränkt, vgl. lat. mīlle < *smih2 gh(e)sli(h2); urgerm. *þūsundī ‚tausend‘ ist keine Ablei-
+tung von *hundan ‚hundert‘, sondern geht wie seine baltoslavischen Comparanda m. E. auf
+ein sekundäres Adjektiv *tuh2-s-ont- ‚groß, angeschwollen‘ (zu *teh2-s- ‚Schwellung‘)
+zurück, vgl. dt. dial. (thür.) Dausling ‚Dickdarm‘, aisl. þústr ‚Zorn‘ (zu den sekundären -ont-
+Bildungen vgl. z. B. uridg. *m(e)g-éh2-ont- → ai. mahnt-); 209: der Wandel *e-do zu
+got. wit muß nicht auf Apokope von -o, sondern kann zuerst durch Ferndissimilation auf
+*e-do (mit Übertragung auf *u-do) zurückgehen (vgl. etwa Eichner 1982, 77, 85 Anm. 20);
+ebenfalls ist für den Wandel *unse > *uns (statt *unsu) kein lautgesetzlicher Prozeß, son-
+dern Analogie nach *unkwe > *unke > *unk anzunehmen; 211: bei der Diskussion von ur-
+germ. Akk. Sg. *mek, þek, sek hätte man auch venet. mego ‚mich‘ erwähnen sollen (dazu
+Lejeune 1974, 101); 214: das Problem der Existenz von germ. *ē2 wird bei der Behandlung
+
+    19
+     Nach Rix 1992a, 434, ist die Anbringung der Inschrift zwischen dem Ende des 2.
+und der Mitte des 1. Jh.s v. Chr. zu datieren.
+                     S. NERI: Ringe, A Linguistic History of English I                       9
+
+des urgerm. Vokalsystems seltsamerweise nie erörtert; 214–216: R. rekonstruiert keine
+phonematischen Nasalvokale für das Urgermanische, schreibt aber, daß „nasalization of
+vowels was surface-contrastive“; außerdem, aufgrund der Vernerschen Variante /ng/ und
+/ngw/, vor /h/ und /hw/ „the nasal apparently remained easy for language learners to ‚reco-
+ver‘“; wieso es aber keine Nasalvokale im Urgermanischen gegeben haben kann, wird nicht
+erklärt (zur Problematik s. Kluge 1913, 68–69); R. schließt das Thema mit den Worten „In
+any case the situation must have been stable, as the nasalization persisted down into the
+separate history of the Anglo-Frisian dialect group“, was aber eine unvollständige Informati-
+on darstellt: Wie der anonyme Autor der auf Altisländisch verfaßten sog. „Ersten grammati-
+schen Abhandlung“ betont, kannte das Isländische im 12. Jh. noch phonematisch kontrastie-
+rende lange Nasalvokale (vgl. Benediktsson 1972, 128–137, 216–219); 219: die Bezeich-
+nung des Typs gr. τομή als Kollektiv ist unkorrekt, da es sich bei den Vertretern dieser Kate-
+gorie eigentlich um Verbalabstrakta handelte; 220: daß der i-Umlaut von *e zu *i schon als
+urgermanisch zu datieren ist, ist zweifelhaft, vgl. dazu Harðarson 2001, 95–107; 223: in
+alemannischen Denkmälern ist auch Gemination von *r zu *rr() belegt, vgl. nerren vs.
+normal-ahd. nerian (Braune / Reiffenstein 2004, 99, 115); 227 Fn. 1: die uridg. Wurzel von
+lat. sūgere kann nicht (entgegen R.) idg. *gh oder *gh enthalten, denn diese hätten intervoka-
+lisch regelmäßig lat. h ergeben (vgl. lat. uehō < *égh-e/o-); 236: neben dem Suffix des
+passiven Partizips Perfekt urgerm. *-ana- existierte auch eine Variante *-ina-, vgl. z. B. run.
+slaginaR, got. fulgins, as. forsekenun (mit i-Umlaut), kumina, afries. fendsen, hwendsen (mit
+Palatalisierung) usw., vgl. Harðarson 2001, 69–74; 242: urgerm. *sella- ‚schwellen‘ hat
+entgegen R. doch „clear outside cognates“, vgl. LIV 2001, 609–610 (dazu Melchert 2005,
+90–97), so daß „the source of its *ll“ nicht „obscure“, sondern offensichtlich *lH ist (<
+*selH-e/o-); 253: intensiv-iterative und kausative Verben des Typs CoC-ée/o- waren wohl
+nicht nur „identical in form“, sondern tatsächlich eine einzige morphologische Kategorie, die
+ursprünglich dem Ausdruck „verbaler Pluralität“ diente (vgl. ausführlich Kölligan 2004,
+234–241); 271: „*ansa- ~ *anza- ‚beam‘ [...]: etymology obscure“ (vgl. auch Schaffner
+2001, 117–118: „Fehlen einer plausiblen Etymologie“) – m. E. zu uridg. *h1onh3-s-o- ‚der
+Tragende‘, zu *h1enh3- ‚tragen‘ (vgl. lat. onus, oneris ‚Last‘, ai. anas- ‚Lastwagen‘, gr. ὄνος
+‚Esel‘ < *‚Lasttier‘, Ἐνοσίχθων ‚Erderschütterer‘ usw. – zum Wurzelansatz vgl. (mit etwas
+abweichender Bedeutung) Janda 1999, 202 –, gebildet wie dt. Hals < uridg. *kwólh1-s-o-
+‚Drehung Habender‘ oder mitteldt. Banse(n) ‚Seitenraum in der Scheune‘ < *bhóndh-s-o-
+‚Futtertrog‘ < ‚Gebundenes, Bindung Habendes‘; 272, 283: auch uridg. *felu ist ein ur-
+sprüngliches neutrales Substantiv, wie die Konstruktion mit dem partitivischen Gen. Pl. (vgl.
+ahd. filu manno) sowie der Gen. Sg. got. filaus beweisen, vgl. Neri 2003, 208–209; 272: die
+Endung des Gen. Sg. der i-Stämme anord. -ar setzt entgegen R. kein urgerm. *-az (vgl.
+anord. 2. Sg. Konj. Präs. -er, -ir < *-ēR < *-az sowie den gleichförmigen Ausgang der 2. Sg.
+Ind. Präs. anord. -er, -ir < *-ēR < *-az < *-aiz(i) bei den schwachen Verben der 3. Klasse)
+fort, sondern ist bei den Mask. von den u-Stämmen (J. A. Harðarson, unpubl. Vortrag, Jena
+2002) und bei den Fem. von den ō-Stämmen übernommen worden (vgl. Noreen 1923, 265,
+270, 363); 275–276: bei *askōn- vs. *azgōn- handelt es sich entgegen R. nicht um ein „bi-
+zarre example“ der Wirkung des Vernerschen Gesetzes „apparently [...] extended to an
+obstruent cluster“; besagtes Gesetz betraf nämlich nur zwischen Sonoranten befindliche
+nicht unmittelbar nachtonige stimmlose Frikative, aber nie Okklusive; *azgōn- ‚Asche‘ <
+*‚Äschernes‘ ist m. E. vielmehr eine ostgermanische Neuerung, die auf Suffixwechsel *-ka-
+→ *-ga- beruht (das unbelegte urgerm. *ōs- / *as- ‚Asche‘ kannte eine weitere Ableitung
+*as-ō- ‚Geäsche‘ > dt. Esse); 276: wie der Wurzelablaut von heth. wātar / witenaš zeigt,
+10                   S. NERI: Ringe, A Linguistic History of English I
+
+flektierte uridg. *ód- ‚Wasser‘ akrostatisch, nicht „proterokinetic“; das Allomorph *udén
+stammt ausschließlich aus dem Lok. Sg.; 285: urgerm. *alda- neben *alþia- ‚alt‘ erinnert an
+uridg. *neo- neben *neio-; es wäre aus semantischen Gründen denkbar, daß *alþia-
+analogisch nach urgerm. *nea- umgestaltet wurde; 286: das urgerm. nasalhaltige Superla-
+tivsuffix muß als *-uma-n-, nicht als *-ma-n-, rekonstruiert werden; urgerm. *ta ‚zwei‘
+setzt keine „uninflected form“ fort, sondern die durch Laryngalschwund in Pausa („Lex
+Kuiper“) entstandene Variante *d(u)o von Nom.-Akk. Du. m. uridg. *d(u)o-h1; 293: zum
+Abstraktsuffix *-assu- vgl. eher Hill 2002; 295: bezüglich des urgerm. Lexikons wäre eine
+Behandlung der Onomastik (vor allem der Personennamen) wünschenswert gewesen; Tipp-
+fehler: 128, Z. 18 und 134, Z. 24 lies „Þórhallsdóttir“; 156, Z. 37 „gwegwóme“; 188, Z. 9
+„laryngeal“; 198, Z. 32 „PGmc.“; 300, Z. 18 „Sprachforschung“; 303, Z. 13 „fascicle“; 305,
+Z. 2 „gh“.
+    Diese Kritik soll nicht den Wert des Buches mindern. In einem so komplexen
+Werk mit reichem Material und tiefgreifenden Diskussionen sind Meinungsver-
+schiedenheiten zwischen Forschern unvermeidlich. R. ist es gelungen, mit dieser
+nach modernen Standards durchgeführten Behandlung des Urgermanischen ein
+lang bestehendes Desiderat zu erfüllen und ein für Anglisten, Germanisten und
+Indogermanisten wichtiges Handbuch vorzulegen. Es ist zu hoffen, daß die Fort-
+setzung dieser Sprachgeschichte des Englischen die gleiche hohe Qualität des er-
+sten Bandes erreichen wird.
+
+                                         Literatur
+Bammesberger, Alfred 1986: Der Aufbau des germanischen Verbalsystems, Heidelberg.
+Bammesberger, Alfred 1990: Die Morphologie des urgermanischen Nomens, Heidelberg.
+Behaghel, Otto 1923–1932: Deutsche Syntax. 4 Bde., Heidelberg.
+Benediktsson, Hreinn 1972: The First Grammatical Treatise. Ed. by Hreinn Benediktsson,
+   Reykjavík.
+Bernharðsson, Haraldur 2001: Verner’s Law in Gothic, Ph.D. Dissertation, Cornell Uni-
+   versity.
+Boutkan, Dirk 1995: The Germanic ‘Auslautgesetze’, Amsterdam / Atlanta.
+Braune, Wilhelm / Frank Heidermanns 2004: Gotische Grammatik. Mit Lesestücken und
+   Wörterverzeichnis. 20. Auflage, Tübingen.
+Braune, Wilhelm / Ingo Reiffenstein 2004: Althochdeutsche Grammatik I. 15. Auflage,
+   Tübingen.
+Casaretto, Antje 2004: Nominale Wortbildung der gotischen Sprache. Die Derivation der
+   Substantive, Heidelberg.
+Collinge, Neville Edgar 1985: The Laws of Indo-European, Amsterdam / Philadelphia
+   (Neudruck 1996).
+Eichner, Heiner 1982: Studien zu den indogermanischen Numeralia. Rekonstruktion des
+   urindogermanischen Formensystems und Dokumentation seiner einzelsprachlichen
+   Vertretung bei den niederen Kardinalia ‘zwei’ bis ‘fünf’, Habilitationsschrift, Regens-
+   burg.
+Gippert, Jost 2004: ‚Ein Problem der indogermanischen Pronominalflexion‘, in: Per aspera
+   ad asteriscos. Studia Indogermanica in honorem Jens Elmegård Rasmussen sexagenarii
+   Idibus Martiis anno MMIV. Ediderunt Adam Hyllested, Anders Richardt Jørgensen,
+   Jenny Helena Larsson et Thomas Olander, Innsbruck, 155–165.
+                    S. NERI: Ringe, A Linguistic History of English I                11
+
+Gröger, Otto 1911: Die althochdeutsche und altsächsische Kompositionsfuge. Mit Ver-
+    zeichnis der althochdeutschen und altsächsischen Composita, Zürich.
+Hackstein, Olav 2005: ‚Archaismus oder historischer Sprachkontakt. Zur Frage westindo-
+    germanisch-tocharischer Konvergenzen‘, in: Sprachkontakt und Sprachwandel. Akten
+    der XI. Fachtagung der Indogermanischen Gesellschaft, 17.–23. September 2000, Halle
+    an der Saale. Hrsgg. von Gerhard Meiser und Olav Hackstein, Wiesbaden, 169–184.
+Harðarson, Jón Axel 2001: Das Präteritum der schwachen Verba auf -ýia im Altisländi-
+    schen und verwandte Probleme der altnordischen und germanischen Sprachwissen-
+    schaft, Innsbruck.
+Harðarson, Jón Axel 2005: ‚Der geschlechtige Nom. Sg. und der neutrale Nom.-Akk. Pl.
+    der n-Stämme im Urindogermanischen und Germanischen‘, in: Sprachkontakt und
+    Sprachwandel. Akten der XI. Fachtagung der Indogermanischen Gesellschaft, 17.–23.
+    September 2000, Halle an der Saale. Hrsgg. von Gerhard Meiser und Olav Hackstein,
+    Wiesbaden, 215–236.
+Hettrich, Heinrich 2002: Indogermanische Syntax. Fragen und Perspektiven. Hrsgg. von
+    Heinrich Hettrich. Unter Mitarbeit von Jeong-Soo Kim, Wiesbaden.
+Hill, Eugen 2002: ‚Ein germanisch-keltisches Suffix für Nominalabstrakta‘, MSS 62, 39–
+    70.
+Hill, Eugen 2003: Untersuchungen zum inneren Sandhi des Indogermanischen. Der Zu-
+    sammenstoß von Dentalplosiven im Indoiranischen, Germanischen, Italischen und
+    Keltischen, Bremen.
+Hirt, Hermann 1934: Handbuch des Urgermanischen. Teil III: Abriss der Syntax, Heidel-
+    berg.
+Janda, Michael 1997: ‚Hethitisch-luwisch paḫḫurša/i- ‚nachgeordnet‘ und der Streit um
+    die Thronfolge‘, Die Sprache 39/1, 105–114.
+Janda, Michael 1999: ‚Ἐνοσίχθων „Erderschütterer“‘, in: Compositiones Indogermanicae
+    in memoriam Jochem Schindler. Hrsgg. von Heiner Eichner und Hans Christian Lu-
+    schützky unter redaktioneller Mitwirkung von Velizar Sadovski, Praha, 183–203.
+Jasanoff, Jay 1996: ‚A Boy’s Guide to Balto-Slavic Accentuation (version 2.1)‘, manu-
+    script.
+Jasanoff, Jay 2003: Hittite and the Indo-European Verb, Oxford / New York.
+Katz, Joshua 1998: Topics in Indo-European Personal Pronouns, Ph.D. Dissertation, Har-
+    vard.
+Kim, Ronald 2000: Topics in the Reconstruction and Development of Indo-European Ac-
+    cent, Ph.D. Dissertation, University of Pennsylvania.
+Klingenschmitt, Gert 1982: Das altarmenische Verbum, Wiesbaden.
+Kluge, Friedrich 1913: Urgermanisch. Vorgeschichte der altgermanischen Dialekte. 3.
+    Auflage, Straßburg.
+Kluge, Friedrich 1926: Nominale Stammbildungslehre der altgermanischen Dialekte. 3.
+    Auflage, Halle an der Saale.
+Kluge, Friedrich / Elmar Seebold 2002: Etymologisches Wörterbuch der deutschen Spra-
+    che [...]. 24., durchgesehene und erweiterte Auflage, Berlin / New York.
+Kölligan, Daniel 2004: ‚Wenn zwei dasselbe tun: Iterativa und Kausativa‘, in: Indogerma-
+    nistik – Germanistik – Linguistik. Akten der Arbeitstagung der Indogermanischen Ge-
+    sellschaft, Jena 18.–20.09.2002. Hrsgg. von Maria Kozianka, Rosemarie Lühr und Su-
+    sanne Zeilfelder, Hamburg, 193–247.
+Krahe, Hans 1969: Germanische Sprachwissenschaft. Band 1: Einleitung und Lautlehre.
+    Fünfte, überarbeitete Auflage, Berlin.
+Krahe, Hans 1969a: Germanische Sprachwissenschaft. Band 2: Formenlehre. Sechste Auf-
+    lage, Berlin.
+12                  S. NERI: Ringe, A Linguistic History of English I
+
+Lehmann, Winfred P. 1965: ‚Germanic Evidence‘, in: Evidence for Laryngeals. Ed. by
+   Werner Winter, London / The Hague / Paris, 212–223.
+Lejeune, Michel 1974: Manuel de la langue vénète, Heidelberg.
+Lipp, Reiner 2009: Die indogermanischen und einzelsprachlichen Palatale im Indoirani-
+   schen. Bd. II: Thorn-Problem, indoiranische Laryngalvokalisation, Heidelberg.
+LIV 2001: Lexikon der indogermanischen Verben. Die Wurzeln und ihre Primärstamm-
+   bildungen. Unter Leitung von Helmut Rix und der Mitarbeit vieler anderer bearbeitet
+   von Martin Kümmel, Thomas Zehnder, Reiner Lipp, Brigitte Schirmer. Zweite, er-
+   weiterte und verbesserte Auflage [...], Wiesbaden.
+Lloyd et al. 1988–1998: Etymologisches Wörterbuch des Althochdeutschen. Band I: -a –
+   bezzisto. Von Albert L. Lloyd und Otto Springer, Göttingen / Zürich 1988; Band II: bî
+   – ezzo. Von Albert L. Lloyd, Rosemarie Lühr und Otto Springer† unter Mitwirkung
+   von Karen K. Purdy, Göttingen / Zürich 1998.
+Lühr, Rosemarie 1976: ‚Germanische Resonantengemination durch Laryngal‘, MSS 35,
+   73–92.
+Lühr, Rosemarie 1984: ‚Reste der athematischen Deklination in den germanischen Spra-
+   chen‘, in: Das Germanische und die Rekonstruktion der indogermanischen Grundspra-
+   che. Akten des Freiburger Kolloquiums der Indogermanischen Gesellschaft, Freiburg,
+   26.–27. Februar 1981. Hrsgg. von Jürgen Untermann & Bela Brogyanyi, Amsterdam /
+   Philadelphia, 25–90.
+Lühr, Rosemarie 1988: Expressivität und Lautgesetz im Germanischen, Heidelberg.
+Markey, Thomas L. 1976: Germanic Dialect Grouping and the Position of Ingvæonic,
+   Innsbruck.
+Mayrhofer, Manfred 1986: ‚Lautlehre (segmentale Phonologie des Indogermanischen)‘,
+   in: Warren Cowgill / Manfred Mayrhofer, Indogermanische Grammatik, Vol. 1, Hei-
+   delberg, 73–216.
+Melchert, H. Craig 2003: ‚PIE “thorn” in Cuneiform Luvian?‘, in: Proceedings of the 14th
+   Annual UCLA Indo-European Conference. Ed. by K. Jones-Bley et al., 154–155.
+Melchert, H. Craig 2005: ‚Latin īnsolēscō, Hittite šulle(šš)- and PIE Statives in -ē-‘, in:
+   Hd Mánasā. Studies presented to Professor Leonard G. Herzenberg on the occasion
+   of his 70-birthday. Ed. by Nikolai N. Kazansky [...], Saint Petersburg, 90–98.
+Merlingen, Weriand 1957: ‚Idg. „þ“ und Verwandtes‘, in: ΜΝΗΜΗΣ ΧΑΡΙΝ. Gedenk-
+   schrift Paul Kretschmer […]. Hrsgg. von Heinz Kronasser, Bd. 2, Wien, 49–61.
+Müller, Stefan 2007: Zum Germanischen aus laryngaltheoretischer Sicht. Mit einer Ein-
+   führung in die Grundlagen der Laryngaltheorie, Berlin / New York.
+Nedoma, Robert 1995: Die Inschrift auf dem Helm B von Negau. Möglichkeiten und
+   Grenzen der Deutung norditalischer epigraphischer Denkmäler, Wien.
+Neri, Sergio 2003: I sostantivi in -u del gotico. Morfologia e preistoria, Innsbruck.
+Neri, Sergio 2005: ‚Riflessioni sull’apofonia radicale di proto-germanico *namōn ‘nome’‘,
+   HS 118, 201–250.
+Nielsen, Hans Frede 2000: The Early Runic Language of Scandinavia. Studies in Germa-
+   nic Dialect Geography, Heidelberg.
+Noreen, Adolf 1923: Altnordische Grammatik I: Altisländische und altnorwegische Gram-
+   matik (Laut- und Flexionslehre). Unter Berücksichtigung des Urnordischen. Vierte,
+   vollständig umgearbeitete Auflage, Halle an der Saale.
+Peters, Martin 1987: ‚λῆνος aus *h2/3h1náh2-‘, Die Sprache 33, 114–115.
+Peters, Martin 1999: ‚Ein tiefes Problem‘, in: Compositiones Indogermanicae in memo-
+   riam Jochem Schindler. Hrsgg. von Heiner Eichner und Hans Christian Luschützky
+   unter redaktioneller Mitwirkung von Velizar Sadovski, Praha, 447–456.
+Probert, Philomen 2006: Ancient Greek Accentuation. Synchronic Patterns, Frequency
+   Effects, and Prehistory, Oxford / New York.
+              J.A. HARÐARSON: Casaretto, Nom. Wortbildung d. got. Sprache            13
+
+Ramat, Paolo 1986: Introduzione alla linguistica germanica. 2. edizione rivista, Bologna
+    (deutsche Übersetzung der 1. Auflage: Einführung in das Germanische, Tübingen 1981).
+Rasmussen, Jens Elmegård 1999: ‚Two Phonological Issues in Germanic‘, in: Selected Pa-
+    pers on Indo-European Linguistics. With a Selection on Comparative Eskimo Lingui-
+    stics. Part 1, Copenhagen, 82–99 (Erstdruck in: Acta Linguistica Hafniensia 18 (1983
+    [1984]), 201–219).
+Rasmussen, Jens Elmegård 1999a: ‚On the Origin of the Germanic Weak Preterite‘, in:
+    Selected Papers on Indo-European Linguistics. With a Selection on Comparative Eskimo
+    Linguistics. Part 2, Copenhagen, 597–603 (Erstdruck in: Copenhagen Working Papers in
+    Linguistics 4 (1996), 161–168).
+Reitzenstein, Wolf-Armin Freiherr von 1986: Lexikon bayerischer Ortsnamen. Herkunft
+    und Bedeutung, München.
+Ringe, Don 1996: On the Chronology of Sound Changes in Tocharian. Vol. 1., New Haven.
+Ringe, Don 2006: ‚A sociolinguistically informed solution to an old historical problem:
+    the Gothic genitive plural‘, TPS 104/2, 167–206.
+Rix, Helmut 1992: ‚Zur Entstehung des lateinischen Perfektparadigmas‘, in: Latein und
+    Indogermanisch. Akten des Kolloquiums der Indogermanischen Gesellschaft, Salz-
+    burg, 23.–26. September 1986. Hrsgg. von Oswald Panagl und Thomas Krisch, Inns-
+    bruck, 221–240 (= Kleine Schriften, Bremen 2001, 209–228).
+Rix, Helmut 1992a: ‚Thesen zum Ursprung der Runen‘, in: Etrusker nördlich von Etru-
+    rien. Hrsgg. von Luciana Aigner-Foresti, Wien, 411–441 (= Kleine Schriften, Bremen
+    2001, 360–390).
+Schaffner, Stefan 2001: Das Vernersche Gesetz und der innerparadigmatische gramma-
+    tische Wechsel des Urgermanischen im Nominalbereich, Innsbruck.
+Schmidt, Gernot 1962: Studien zum germanischen Adverb, Inaugural-Dissertation, Berlin.
+Schrodt, Richard 2004: Althochdeutsche Grammatik II. Syntax, Tübingen.
+Streitberg, Wilhelm 1981: Gotische Syntax. Nachdruck des Syntaxteils der fünften und
+    sechsten Auflage des Gotischen Elementarbuchs. Hrsgg. von Hugo Stopp, Heidelberg.
+Syrett, Martin 1994: The Unaccented Vowels of Proto-Norse, Odense.
+van Coetsem, Frans / Herbert L. Kufner 1972: Toward a Grammar of Proto-Germanic,
+    Tübingen.
+
+
+   Lehrstuhl für Indogermanistik
+   der Friedrich-Schiller-Universität Jena
+   Zwätzengasse 12
+   D-07743 Jena                                                        Sergio Neri
+
+
+
+   Casaretto, Antje: Nominale Wortbildung der gotischen Sprache. Die Derivation
+der Substantive. Heidelberg, Universitätsverlag Winter, 2004, 8°, 718 S. (Indoger-
+manische Bibliothek, 3.) Geb. 78 €.
+
+   Das vorliegende Buch stellt die überarbeitete Fassung einer im Jahre 2002 von
+der Philosophischen Fakultät der Universität Köln angenommenen Dissertation dar.
+Es gliedert sich in folgende Hauptabschnitte: 1. Einleitung (21–34), 2. Materialteil
+

@@ -17,6 +17,7 @@ discussion in the eventual write-up of the project.
 8. [PGmc \*þistilaz 'thistle': unresolved \*e/\*i reconstruction problem](#8-pgmc-þistilaz-thistle-unresolved-ei-reconstruction-problem)
 9. [OE wīþiġ 'withy': ja-stem vs. -ig suffix problem](#9-oe-wīþiġ-withy-ja-stem-vs--ig-suffix-problem)
 10. [OE rēc 'smoke': the missing WS rīec problem](#10-oe-rēc-smoke-the-missing-ws-rīec-problem)
+11. [PGmc \*mizdō 'reward': the méd / meord dialectal doublet and z-loss before dentals](#11-pgmc-mizdō-reward-the-méd--meord-dialectal-doublet-and-z-loss-before-dentals)
 
 ---
 
@@ -1563,3 +1564,131 @@ identification) becomes the priority research target.
 **Cross-references.** Full research dossier in DEV_NOTES.md §17.22
 and §17.22.13. Methodological precedent for input/headword distinction
 in §17.21.11.
+
+---
+
+## 11. PGmc \*mizdō 'reward': the méd / meord dialectal doublet and z-loss before dentals
+
+**Date discovered**: 2026-04-26 (current session)
+
+**Background.** OE has *two* attested simplex outcomes of PGmc *mizdō- 'reward':
+
+- **mēd** — the universally cited form, dominant in WS, late OE, and modern
+  English *meed*.
+- **meord** — a less frequent dialectal variant, attested in BT Supplement
+  s.v. *meord* (citing OE Bede 4.17, Schipper 549.7; form *meorde* dat.sg.),
+  in Bright's *Anglo-Saxon Reader* (in a poetic line, glossed "(dial.)"), and
+  listed by Hall's *Concise Anglo-Saxon Dictionary*. Both witnesses are
+  Anglian-leaning.
+
+The two forms are not free variants. They reflect **two different sound-change
+pathways** operating on the same etymon — and the dialectal distribution
+preserves both pathways as a doublet, exactly as Kroonen, EDPG p. 376
+describes ("a (dialectally dependent?) doublet *méd : meord*").
+
+### The two pathways
+
+**Pathway A — rhotacism + breaking (yields *meord*).**
+- *mizdō → *mizd*- (final-syllable apocope)
+- z-rhotacism: *mizd → *mird
+- Breaking: *i → *eo / _r+C, giving *meord
+- This is the regular sequence assumed by Campbell §123 fn.2 and Ringe/Taylor
+  vol.2 p.84, p.285.
+
+**Pathway B — sporadic z-loss before dentals + compensatory lengthening (yields *mēd*).**
+- *mizdō: z-loss before the following dental, with compensatory lengthening:
+  *mizd → *mīd
+- Lowering of long *ī to *ē (the "always *i, sometimes lowered when lengthened"
+  pattern noted by R/T vol.2 p.285)
+- Apocope: *mīdō / *mēdō → mēd
+- Kroonen EDPG p.376 describes this explicitly as "(sporadic) loss of z before
+  dentals", calls the dialectal distribution "rather patchy", and adduces the
+  parallel of OS *linon* 'to learn' vs. OHG *lernōn* < *liznōn-* — an exactly
+  analogous Inland-WGmc / High-German split for z-loss before dentals.
+
+### Contribution
+
+Three observations going beyond the standard literature:
+
+1. **Both pathways can be modelled as regular** (each with its own dialectal
+   distribution), rather than one being "regular" and the other "analogical".
+   The standard handbook treatments (Campbell, Brunner, Bammesberger,
+   Streitberg, Pokorny) present *mēd* as smoothing of *meord*, but this
+   requires a smoothing rule that does not match other -eord/-ord forms.
+   Pathway B (Kroonen's analysis) is internally more consistent and explains
+   the WGmc-wide distribution without requiring lexically-specific smoothing.
+
+2. **The nest etymology is a structural twin at a different chronological
+   depth.** Kroonen reconstructs PIE *ni-zd-o-* → PGmc *nista-* → OE *nest*.
+   PIE *zd-* underwent z-loss to give PGmc *st-* directly, with no
+   compensatory lengthening (because the z-loss was complete before PGmc).
+   For *mizdō-* the z-loss happens later (WGmc-internal, sporadic), so it
+   produces compensatory lengthening (*īz → *īː → *ēː). Both etyma show the
+   same elimination of the *zd cluster, but the timing of the change determines
+   whether long or short vowels result.
+
+3. **Honey/mead is a tangential homonym field worth flagging** but is not
+   relevant to the *mizdō-* problem itself. PIE *medʰu-* 'honey, mead' (OE
+   *meodu*, Russ. *méd*) is etymologically separate from *mizdō-* but the
+   surface forms collide in some Slavic and other languages, which can
+   complicate index-based handbook compilation.
+
+### Methodological precedents and consequences
+
+- **For OE FST design**: The CAPR FST currently produces *meord* (Pathway A)
+  from input *mizdō. This is the correct lautgesetzlich Anglian outcome. The
+  WS form *mēd* requires Pathway B. We can either (i) accept *meord* as the
+  TSV target (parallel to §17.21 swester), (ii) model Pathway B as a
+  pre-OE/sporadic rule, or (iii) treat the case as a documented dialectal
+  doublet without changing the FST. This decision is held for user direction
+  (§17.24).
+
+- **For methodology generally**: The *mizdō* case prompted a recasting of the
+  "Watkins-principle compound archaism" framework into a broader
+  *archaism preservation* framework. Compound first-elements are one locus
+  of preservation, but dialectal doublets, oblique paradigm cells, plurals,
+  and glossary lemmata are equally valid loci. The broader framework prevents
+  over-readings (such as the original mistake of assuming a *\*meord-gifa*
+  compound, which does not exist).
+
+### What is *not* claimed (correction trail)
+
+During this investigation, two false claims were generated by research agents
+and propagated through documents before being corrected:
+
+1. **"\*meord-gifa is an attested compound"** — confabulated. No *meord-*
+   prefixed compound is attested in BT, BT Supplement, DOE, Hall, Bright, or
+   any other surviving OE source. All compounds are uniformly *mēd-*.
+
+2. **"meord 'reward' is unattested in OE; the handbook tradition is
+   circular citation"** — also confabulated, in the opposite direction. *meord*
+   IS attested as a dialectal-doublet simplex (BT Suppl., Bright, Hall).
+   Kroonen's reference to a "doublet *méd : meord*" reflects genuine primary
+   evidence, not circular handbook recycling.
+
+The correction trail is documented in DEV_NOTES.md §17.24.7 and in correction
+banners on `mismatch_dossier_mizdo.md`, `mismatch_dossier_mizdo_supplement.md`,
+and `compound_archaism_inventory.md`.
+
+### Status
+
+**No FST or TSV changes implemented.** The mismatch is held for user direction.
+The dialectal-doublet framing makes this case a clean parallel to §17.21
+(swester / swustor) and a candidate for the same paradigm-cell-target /
+dialect-relic-target treatment.
+
+### References
+
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*. Brill, p. 376
+  (in repo at `docs/references/etymological_dictionary_of_proto_germanic_kroonen.txt:21890`).
+- Ringe, D. & Taylor, A. 2014. *The Development of Old English*. Vol. 2,
+  pp. 84, 285.
+- Campbell, A. 1959. *Old English Grammar*. §§123 fn.2, 146.
+- Bosworth, J. & Toller, T. N. *Anglo-Saxon Dictionary, Supplement*. s.v. *meord*
+  (in repo at `docs/references/anglosaxondictio00tolluoft.txt:56810,56915`).
+- Bright, J. W. *Anglo-Saxon Reader* (Hulbert revision). Glossary s.v. *meord*
+  (in repo at `docs/references/bright_anglo_saxon_reader.txt:12498,23006`).
+- Hall, J. R. C. *Concise Anglo-Saxon Dictionary*. s.v. *meard* / *meord*
+  (in repo at `docs/references/aconciseanglosa01hallgoog.txt:14793`).
+- DEV_NOTES.md §17.24 (full investigation), §17.24.7 (correction trail).
+

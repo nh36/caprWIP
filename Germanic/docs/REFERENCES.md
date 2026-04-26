@@ -70,6 +70,19 @@ list below.
 - `docs/references/van_helten_1905_zahlwort.{pdf,txt}` — van Helten on a numeral
 - `docs/references/vine_2019_greek_stomylos.txt` — Vine on Greek stomylos
 - `docs/references/luehr_article.{pdf,txt}` — Lühr article
+- `docs/references/kilday_2024_crists_law_smiths_law_wizen.{pdf,txt}` — Kilday 2024 (draft), "Crist's Law, Smith's Law, and English *wizen*" — z-loss and *mizdō / *mēd
+
+### z-loss in West Germanic (Crist's Law) and related
+
+- `docs/references/crist_2001_conspiracy_in_historical_phonology.{pdf,txt}` — Crist 2001 PhD diss. (U Penn), *Conspiracy in Historical Phonology*
+- `docs/references/crist_2002_z_loss_west_germanic.{pdf,txt}` — Crist 2002 LSA handout, "An Analysis of *z loss in West Germanic" (the locus classicus for "Crist's Law")
+- `docs/references/kilday_2024_crists_law_smiths_law_wizen.{pdf,txt}` — Kilday 2024 (draft), critical reassessment of Crist's Law
+
+### Older Runic / early-Germanic inscriptional evidence
+
+- `docs/references/mees_2020_dziedzice_inscription_wgmc_rhotacism.{pdf,txt}` — Mees 2020, *Lingua Posnaniensis* 62(2), Dziedzice/Sedschütz inscription as early evidence of WGmc rhotacism
+- `docs/references/stiles_2017_opedal_swestar_runic.{pdf,txt}` — Stiles 2017, "On the Interpretation of Older Runic *swestar* on the Opedal Stone"
+- `docs/references/neri_review_ringe_pie_to_pgmc.{pdf,txt}` — Neri, review article of Ringe vol. 1 (PIE → PGmc), in German
 
 ### Stiles four-part series (NOWELE)
 

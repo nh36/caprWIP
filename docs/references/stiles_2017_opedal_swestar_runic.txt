@@ -1,0 +1,1607 @@
+                                                                     Opedal swestar April 12, 2017/1
+
+
+[Slightly revised and updated. Main additions and corrections in blue.]
+
+     On the Interpretation of Older Runic swestar on the
+                         Opedal Stone
+Summary
+
+The form swestar is one of the most problematic in the Older Runic language. Though it is
+obviously an instance of the word for “sister”, the ending -ar has defied a satisfactory analysis
+ever since the inscription was unearthed in 1890. A systematic consideration of the various
+sounds the rune transliterated as a could represent, and their further development to Old Norse,
+reveals that none of the previous interpretations of the form can be correct. Instead, a new
+solution is suggested, reading the ending as -ar (not -ār), and identifying the form as a vocative
+singular. An appendix reviews the survival of the Indo-European vocative case in Germanic and
+examines the other alleged vocative forms of Older Runic.
+
+1. The Inscription. Aim of the Current Article
+
+                           *
+1.1. The Opedal Stone was found in 1890 on the farm on the Sørfjord (an offshoot
+of the Hardangerfjord) in Hordaland, West Norway, from which it takes it name. It
+is now in the Historisk Museum, Bergen1. The standard edition is that of Krause-
+Jankuhn 1966: I No. 76, cf. also Marstrander’s important article 1929b, and
+Andersen 1960 (note also Antonsen 1972); there are photographs of the inscription
+in Marstrander 1929b: Plate V, and Krause-Jankuhn 1966: II Tafel 36. The general
+
+*
+  Conventions. Transliterations of runes are in bold type; transcriptions (which necessarily imply a
+degree of interpretation) are in italics. * precedes reconstructed forms; † precedes forms predicted by
+a certain hypothesis, but which do not occur; †* precedes reconstructed forms posited for the sake of
+argument, but which I do not believe existed. ‹ › specifies that spellings are under consideration, [ ]
+sounds (phones), / / phonemes; italics are used when none of these aspects is being specifically
+referred to (as in runic transcriptions, above). Laryngeals are dentoed by x.
+1
+  Historisk Museum, Postboks 25, N-5014 Bergen–Universitetet, Norway.
+        I should like to thank the staff of the museum for their kind assistance when I examined the
+stone in May 1981. On that occasion I was able to satisfy myself that Antonsen’s (1972, 1975: 40)
+reading leÇubu, with eÇu as a bind-rune Γu, has nothing to recommend it. There is a ‘knot’ in the
+stone between the heads of the shafts of i and u (written right to left), which causes a shadow,
+producing the superficial appearance of a horizontal stroke. The ‘knot’ is plainly visible on
+Marstrander’s photograph (1929b); the shadow particularly strong on Krause’s. I could see no
+incision at this point. Furthermore, a form †leubu would contradict the rules for the treatment of
+PGmc. *eu in Older Runic, cf. Krause 1971: §43.
+                                                                    Opedal swestar April 12, 2017/2
+
+
+scholarly opinion is that it was originally a gravestone of some sort. As it was not
+found in any archeological context2, it is difficult to date by external means;
+however, the language and (for the most part3) the rune-forms appear to be
+‘classical’ Older Runic4. The inscription is written right to left and is disposed in
+two parts and, in transliteration and ordered left to right, reads:
+
+       A birgŋguboro swestar minu B liubu meR wage
+         |   |    |     |     |      |     |
+         1 5     10    15    20      25    30
+
+(I leave undivided the difficult beginning of part A; on parts A and B, cf. also
+footnote 19.)
+
+1.2. The present article does NOT offer a complete interpretation of this difficult
+inscription, but has the limited objective of clarifying the FORMAL analysis of the
+single word swestar, which occurs in that part which is relatively clear5. It is not to
+be excluded, however, that our findings may turn out to have a bearing on the
+reading of the stone.
+
+2. Preliminary Statement of the Problem
+
+2. Opedal swestar is one of the most problematic forms in the Older Runic
+language. Ultimately, this is because, if it (and corresponding forms to be discussed
+
+2
+  The stone was found during earth-moving operations, cf. Marstrander 1929b: 159-160, also
+Krause-Jankuhn 1966: I 174.
+3
+  The second rune transliterated as b (8), and the two runes here transliterated as o (9,11) have a
+unique form, found in no other inscription in the Older Futhark. See the discussion in Marstrander
+1929b: 162-179, also 1965: 249-250 (with idiosyncratic conclusions). The transliterations given
+above are those accepted by the majority of scholars today, cf. Krause–Jankuhn 1966: I.175-176;
+Antonsen 1972: 47; 1975: 9-10. The precise reading of these particular runes has no direct bearing
+on the subject of this article, however (cf. §1.2).
+4
+  On the periodization of the Scandinavian runic inscriptions on a linguistic basis, cf. Grønvik 1976:
+135-147, especially 143-147; 1998: 13–23. I use the term ‘Older Runic’ to designate the inscriptions
+and their language from the earliest examples, c. 200, up to c.500 A.D. (‘klassisk urnordisk’);
+Grønvik’s ‘overgangstrinnet’ of the sixth century, I refer to as ‘The Transitional Period’; the
+language and inscriptions of the period c. 600–c.800 A.D., I call ‘Younger Runic’ (‘yngre nordisk’).
+5
+  Cf. Marstrander 1929b: 160: ‘Opedalstenen har voldt runologene meget hodebrudd. Innskriften
+teller 34 runer og så klar den synes å være i alle detaljer fra 12. av, så gåtefull er den i sin
+begynnelse.’ Also 168: ‘Helt klar er i denne innskrift ordene swestar minu og liubu meR’.
+                                                                     Opedal swestar April 12, 2017/3
+
+
+below, cf. §3.2.0) were not attested, nothing would stand in the way of the
+following line of reasoning.
+
+       On the basis of such an excellent correspondence as that between PIE nom.
+sg. *pxtēr, Younger Runic nom. sg. faþiR6 (Rök Stone), and ON nom.sg. faðer, -ir,
+it seems correct to conclude that — as far as final syllables are concerned —
+straightforward shortening to e and merger with unstressed i constitutes the sum
+total of the development PIE long *ē has undergone before showing up in Younger
+Runic denoted by the rune i (transliterated i), and in literary Old Norse written ‹e,
+i›, representing the phoneme /I/. (The unstressed vowel-system of Old Norse is
+composed of three members, /I/ /a/ /u/, cf. Krause 1948: §47: ‘Die Vokaldreiheit a,
+e(i), o(u)’; the spelling fluctuations ‹e› ~ ‹i› and ‹o› ~ ‹u› in representing the two
+high phonemes are fully discussed by Benediktsson 1962, cf. 1965: 72- 73.)
+
+       Use of the rune a (transliterated a) in the desinence of swestar, where the
+reflex of PIE *ē is expected (see further, below), is at odds with the development
+just outlined. Thus, it has long been a desideratum in Germanic linguistic studies to
+provide an adequate interpretation of this runic form in particular, and the fate of
+PIE, PGmc. long *ē in North Germanic final syllables in general.7
+
+3. Earlier Proposals and Clarification of the Problem
+
+3.0. Opedal swestar has prompted a number of interpretations.
+
+3.1.1. In the view of Wilhelm Streitberg (1892: 108; also 1894: 363; 1896: §§160,
+179), the desinence -ar causes no difficulties concerning the development of PGmc.
+long *ē in North Germanic, and indeed has no bearing on the matter. For Streitberg
+interprets the -ar as -ar, a shortening of the original *-ōr ending of PIE *suésōr,
+and not a development of PGmc. *-ēr at all. This analysis was accepted by Hirt
+1894: 275; Bethge 1900: §370; Brugmann 1906: §245; also Prokosch 1939: 255;
+6
+  The ending -iR is from earlier -ir, as in aftiR (Rök, etc.) < *aftir (< *aftiri), cf. Brøndum-Nielsen
+1928-1973: §279, Steblin-Kamenskij 1963: 367, Grønvik 1981: 217-218.
+7
+  The development of vowels in medial syllables is not our concern here. I will just say that I do not
+think the Older Runic material attests any examples of (a reflex of) long *ē in medial syllables. The
+-a- of Tune witanda (= witanda), sometimes mentioned in this connection (e.g. in Krause 1971:
+§14.1), and which certainly represents short -a-, is in my view an analogical replacement of PGmc.
+*-ja- (cf. Dishington 1978: 311).
+                                                                 Opedal swestar April 12, 2017/4
+
+
+and Andersen 1960: 409–10. If it could be accepted, swestar would no longer be a
+problematic form.
+
+3.1.2. Unfortunately, the proposal must be rejected. With the sole exception of
+absolute final *-ō#, which is shortened to -u at the North West Germanic stage, PIE
+(PGmc.) long vowels retain their length in Older Runic. Even if, for the sake of
+argument, we were to accept a shortening of *-ōr to -ar, the latter would not yield
+Viking Age Runic -iR (sustiR = [systiR] Tryggevælde, Jacobsen and Moltke 1942:
+No. 230), literary Old Norse /-ir/ (cf. §3.4.2.2). We would have to explain these
+forms as the result of analogy from the other r-stems. However, the evidence of the
+other Germanic languages clearly indicates that the word for “sister” had already
+gone over to the -ter-stem pattern by the time of Proto-Germanic. Streitberg’s
+proposal was rejected on this ground by Bugge as early as 1898 (in Bugge-Olsen
+1891–1924: I 304). Most scholars have recognized this fact and framed their
+hypotheses accordingly.
+
+3.2.0. The problem as originally stated remains. This seems an appropriate point,
+therefore, at which to specify its nature in more detail and to bring in the additional
+data mentioned above (§2).
+
+       The difficulty arises because the rune a is otherwise used for the reflex of
+PGmc. short *a (in all positions); hence its transliteration as a. Already in the
+earliest inscriptions, this rune is also used to represent the sound developed from
+PGmc. long *ē in accented syllables, which is spelled ‹a› in the manuscript
+tradition8. This graphemic evidence is supported by that of Sami (Lapp) loanwords,
+which indicates the early acquisition in North Germanic of an approximate value
+[a:] by PGmc. *ē in accented syllables, cf. Lid 1952: 238. Moreover, the rune e (e),
+which is used for the reflex of PGmc. short *e (accented syllables) and of PGmc.
+
+
+
+
+8
+  The original value of ‹a› was as might be expected, approximately [a:]; it was later rounded in
+accented syllables in all the Scandinavian languages.
+                                                                     Opedal swestar April 12, 2017/5
+
+
+*ai in unstressed syllables9, is nowhere attested in a category for which PIE long *ē
+is reconstructed10.
+
+       The categories for which PIE long *ē is traditionally reconstructed, and in
+which the reflex of this vowel is supposedly denoted by the rune a in Older Runic,
+are the following:
+
+r-stem nominative singular in PIE *-ēr, represented in swestar,
+n-stem nominative singular in PIE *-ē(n), as harja, gudija.
+
+See Hollifield 1980:145. Hollifield tentatively adds ana, which he derives from PIE
+*anē, remarking: ‘OIc. á descends from another form of the preposition’.
+
+      A number of theories have been put forward attempting to account for this
+material as an ensemble.
+
+3.2.1. Sophus Bugge suggested that the rune ‹a› in these categories represents a
+short ‘palatal’ [æ] sound, supposedly an intermediate stage between *ē and ‹e, i› (in
+Bugge-Olsen 1891–1924: I 65-66 [1891]. 304 [1898]; also 1892: 19); this was
+accepted by Kock 1898: 489, 519; Hirt 1902: 373, and considered possible by
+Heusler 1932: §237 and Brøndum-Nielsen 1928–73: §471.1.
+
+3.2.2. This view is also to be rejected on the ground that a Proto-Germanic long
+vowel (with the sole exception of *-ō#, which was shortened to -u in North West
+Germanic) would not already have shortened in Older Runic (cf. §3.1.2); on the
+supposed quality, cf. below §3.3.2.
+
+
+
+9
+   Both whether genuine ‹-ai› spellings occur and, if they do, their interpretation, are controversial.
+Cf. Antonsen 1975: 5, Hollifield 1980: 150, and Grønvik 1981: 201; Stoklund 1991: 95–99;
+Schuhmann 2016, with references; and footnote 12.
+        The ‹-e-› in Tune after is puzzling, as -a- would be expected (*aftar < *after, beside *aftiri <
+*afteri). As the Tune form is the forerunner of later afatR (AfatR Istaby) and aft (cf. Grønvik 1981:
+217–18), the ‹e› may represent a much-reduced schwa-like vowel soon to be lost.
+10
+   One of the few things that is agreed about the dental preterite is that it is a Germanic innovation,
+so, for methodological reasons, it seems advisable to exclude it from our discussion. See, however,
+§3.4.1.2, with footnote 11.
+                                                            Opedal swestar April 12, 2017/6
+
+
+3.3.1. The suggestion that ‹a› represents a long ‘palatal’ [æ:] vowel, is generally
+(though erroneously, cf. above §3.2.1) attributed to Bugge, but actually came from
+Alois Walde (1900: 62–64).
+
+      For a long time this was the standard view, cf., for example, Michels 1902:
+119; Janko 1903–04: 265, 266; 1905: 64; Kock 1906–29: IV 15 (cf. II 154 fn1, III
+9); Noreen 1913: §§34, 198.1; Boer 1920: §142.A; Noreen 1923: §138; Brøndum-
+Nielsen 1928–73: §§119.1, 471.1, 480.1; Heusler 1932: §§102.5. 106, 237; Harding
+1932: §§7, 90-92, Marstrander 1939: 311–15. It has been consistently advocated by
+Krause, cf. Krause 1948: §§53.9; 102, Krause-Jankuhn 1966: I 176; Krause 1968a:
+120; 1971: §58.12.
+
+3.3.2. The sound-value [æ(:)] posited by this and the preceding theory is patently a
+compromise: a phonetic interpolation into the sequence (PIE) PGmc. *-ē > ... YRu.
+i > ON ‹e, i›, motivated solely as a concession to the orthographic fact that —
+although the rune e with the value [e(:)] was available — the symbol employed, ‹a›,
+was also used to represent a low, back/central vowel, the reflex of PGmc. short *a
+(cf. §3.2.0, above). This ‘concession’ amounts to no more than the fact that the
+vowel [æ(:)] is traditionally regarded as a (high) type of front ‘a-vowel’, rather than
+a (low) type of ‘e-vowel’.
+
+        The assumption of such multiple values for a single graph as those proposed
+for the rune ‹a› cannot easily be reconciled with modern graphological and
+phonological theory. It is a common feature of European alphabets (including the
+Older Futhark) that a single graph is used for two phonemes that differ as regards
+length, but otherwise share relevant distinctive features. This would allow use of ‹a›
+to denote both short [a] and long [a:]; any other values assigned to the graph would
+be allophones of either the phoneme short /a/ or the phoneme long /a:/ (cf. also
+Steblin-Kamenskij 1962: 3). This makes nonsense of the development in the terms
+proposed: (PIE) PGmc. long *ē in final syllables joins the Older Runic phoneme
+/a:/ (as a special allophone [æ:]) and then unconditionally splits off, duly appearing
+as ON /i/ (while ORu. /a:/ presumably continues on its way to ON /a/?). For
+criticism of the assumption of the value [æ:] for the graph ‹a›, cf. also Antonsen
+1970: 313–15 and Barnes 1973: 360–61. (Mutatis mutandis for a supposed [æ]
+allophone of /a/.)
+                                                            Opedal swestar April 12, 2017/7
+
+
+3.4.1.1. It is to be considered a distinct advantage of the teaching that superseded
+the [æ(:)] theories, therefore, that it regards the rune ‹a› as having the same ‘a-
+quality’ in those categories that interest us as it has elsewhere.
+
+        This taking the a-rune at its face-value was the ‘original’ interpretation, cf.
+Kock 1892: 19–20 (with literature), but was subsequently given up — no doubt on
+grounds of phonetic implausibility (see below) — in favour of the [æ(:)] theories
+(though it seems to have been still adhered to by Jóhannesson 1923: §49). When the
+[æ(:)] theories were in their turn discarded (on graphological grounds), the older
+view was resurrected or ‘rediscovered’. As far as I know, this was done by Bazell
+(1937: 1); this view is also held by Steblin-Kamenskij 1955: §16.2; Ranke-
+Hofmann 1967: §26 (though in §14.4, Walde’s reading as [æ:] is given with a
+question-mark); Haugen 1976: 151–152; and Hollifield 1980: 35, 38, 145, 160.
+According to these scholars, PGmc. long *ē underwent the same development to a
+long [a:] vowel in final syllables as it did in root syllables. That is to say, PGmc.
+*/e:/ in final syllables shows up in the unstressed vowel phoneme ORu. /a:/, and the
+further change to YRu. ‹i›, literary Norse /i/ is the regular development of this
+phoneme.
+
+     This is essentially a restatement of the preceding theory (§3.3.) in terms of
+phoneme theory.
+
+3.4.1.2. The value of such a restatement is that it clearly reveals the inconsistency
+and inadequacy of the theory it replaced. Should the second and third person
+singular endings of the dental preterite have contained a PGmc. long *ē, as is
+usually thought, then it is inexplicable why this vowel should not be reflected by
+‹a›-spellings in Older Runic, instead of the ‹e›-spellings that actually occur (cf.
+Krause 1971: §104 for a list of attested forms). Nonetheless, proponents of both the
+[æ(:)]-reading and the [a:]-reading seem either not to have noticed this fact or not to
+                                                                     Opedal swestar April 12, 2017/8
+
+
+have been bothered by it, cf., for example, the presentations in Jóhannesson 1923:
+§49 and Krause 1971: §58.11, 12, 13.11
+
+       This basic contradiction is resolved by Hollifield alone. If the change of
+PGmc. *-ē > *-ā is espoused, then the dental preterite cannot reflect PGmc.*ē, but
+presumably can only come from PGmc. *ai as Hollifield suggests (1980: 149, 150,
+160).12 Unless this position is adopted, the long-*ē-becomes-long-*ā-theory is
+untenable.
+
+3.4.2.0. In that it is, in a sense, a more explicit version of the preceding theory, the
+analysis reported in §3.4.1.1 is open to the same objections regarding the
+implausibility of the proposed sequence of development [e:] > [a:] > [I]. Such a
+sequence of changes does seem prima facie unlikely from a phonetic point of view
+(cf. Barnes’ misgivings on the [e:] > [æ:] > [I] development necessitated by Walde’s
+theory, 1973: 361). This alone does not consitute a valid counter-argument,
+however, for, as is well known, the most implausible-looking phonetic
+
+11
+   Professor Bazell tells me (personal communication) that he had Etelhem wrta in mind — though
+he does not mention it in his 1937 article — when he suggested the development of PGmc. *-ē >
+ORu. -a (cf. Walde 1900: 101–03), but that he later retracted this view in a Turkish journal (1944:
+157), accepting Moltke’s analysis of Etelhem (1936: 257 fn1).
+        Etelhem (Krause-Jankuhn 1966: I No. 14) reads mkmrlawrtax. Krause, following the
+traditional line, expands to read m(i)k m(e)r(i)la w(o)rta “mich stellte Merila her”, explaining
+w(o)rta by the fact that ‘auf Gotland in den ersten Jahrhunderten n. Chr. noch eine dem Gotischen
+nah verwandte Mundart gesprochen wurde’. Marstrander at one time (1929a: 81–82) regarded it as
+‘fullkommen gotisk’, remarking, however: ‘Derimot stemmer w(o)rta som 3. sing. pret. ikke med
+den urnordiske form ... Det er nok tenkelig at man i 5. årh. i norden stavet worahta, sml. n-stammens
+nom. sing. på -a, senere -e. Men formen er nu engang ikke konstatert og dernest er parallellismen
+med n-stammene slettes ikke fullstendig, da det dreier sig om to artikulatorisk og oprinnelig også
+kvantitativt forskjellige ē’ (the quotation is from 1929a: 82). Largely on the ground that the
+formulaic type (with the object speaking in the first person) is otherwise unknown in Older Runic,
+but for other telling reasons as well, Moltke suggested (loc. cit.) that it was the result of the smith
+miscopying his model, which Moltke reconstructs as *ek erilaR wurto. Similarly Kock 1887: 108–
+10. Cf. Marstrander 1952b: 164, however, and, for another view, Grønvik 1981: 218–19.
+        It seems clear to me that we cannot base our soundlaws on an inscription that is probably
+suspect and certainly problematic. Against wrta we can set Tjurkö wurte and Garbølle tawide.
+12
+   Nøvling talgidai (Krause-Jankuhn 1966: I No.13a), which Hollifield regards as a correctly
+transmitted third singular form (1980: 150. 160), appears to be a powerful support for his view.
+Compare, however, footnote 9 (with references) and Moltke 1963: 39–40, who suggests that the
+final -ai (ai) is a copying error for -e (e). Note, however, the objection of Stoklund 1991: 96 that at
+this early stage only a flat-topped e-rune is attested.
+                                                                 Opedal swestar April 12, 2017/9
+
+
+developments are perfectly possible and frequently documented. It is more
+important to try and ascertain the PHONOLOGICAL plausibility of this sequence of
+changes in the specific context of the evolution of the system of unstressed vowels
+from Proto-North Germanic down into literary Old Norse.
+
+3.4.2.1. It is possible to cite a counter-case to the proposed development of ORu.
+/a:/ to ON /i/ in final syllables. Unfortunately, this counter-case is provided by the
+development of an ending whose Older Runic shape has to be established by
+theoretical arguments, as an absolutely certain attestation of it is (so far) lacking. As
+might be expected in a situation of this kind, the reconstruction of the Proto-Norse
+form of this ending has been the subject of some controversy.
+
+      The desinence in question is the genitive singular of the i-stems. This
+category constitutes the only possible exponent of long /a:/ in final syllables in the
+Older Runic language that would not be a reflex of PGmc. *ē by the hypothesis
+under discussion.
+
+     That the parent-form is PGmc. *-aiz (cf. Go. -ais, e.g. qēnais Mk 6/17) is
+beyond dispute13; what is not agreed, however, is whether ON -ar, as in vinar,
+nauðar is the regular reflex of this pre-form or not.
+
+      The problem arises because the correspondences between the three categories
+for which Proto-Norse *-aiR can be posited are not one-to-one. We are presented
+with two apparent reflexes: -er/-ir and -ar:
+
+a) adjectival nom. pl. masc. ending: blinder/-ir (cf. þeir)
+b) verbal (pres.) optv. 2sg. ending: hjalper/-ir
+c) nominal i-stem gen. sg. ending: vinar, nauðar
+
+Purely numerically, the development to -er/-ir would seem to be the ‘regular’ one.
+
+
+
+
+13
+   In Gothic, the inherited genitive singular ending is retained by the feminines only, as the
+masculines have gone over to the a-stems in the singular (Krause 1968b: §133). On the development
+of this ending in Germanic, cf. also Grønvik 1981: 63-65, 205-206.
+                                                          Opedal swestar April 12, 2017/10
+
+
+      The first example should be excluded from the outset, however. As
+comparison with Gothic shows (blindai, þai), the -r (< -R) is secondary and can
+quite easily have been added after the ending *-ai had undergone the normal
+development to *-ē, thus: *-ai > *-ē ® -ēR, asijōstēR (Tune Stone).
+
+      The second example can be readily and convincingly explained analogically
+as the result of levelling from all the other forms in the paradigm except the first
+singular.
+
+       Likewise, on formal grounds, it is possible to find an analogical source for
+the i-stem genitive singular ending -ar. In the feminines, -ar would come from the
+ō-stems (ORu. *-ōR < PGmc. *-ôz), and in the masculines, the -ar would come
+from the u-stems (ORu. *-ōR < PGmc. *-auz).
+
+       Given this state of affairs, it would be convenient if the form -winaR on the
+Årstad Stone could be regarded as deciding the issue. This form has been
+attractively explained as the gen. sg. wināR (> ON vinar) to nom. sg. *winiR (> ON
+vinr), so Krause–Jankuhn 1966: I 131; Hollifield 1980: 159; cf. already von
+Grienberger 1906: 112. If correct, this would rule out any regular development of
+*-aiR > *-ēR (> ON -er/-ir); neither could it be taken as representing a development
+from analogical *-ōR, as Arstad is an Older Runic inscription, to judge by the rune-
+forms and hiwigaR nom. sg. However, as -winaR does not stand in any satisfactorily
+interpreted context, this identification cannot be considered conclusive. Note the
+dissenting voice of Høst, who sees an a-stem nominative singular winnar (1987:
+158–59).
+
+      It appears, therefore, that we must fall back on theoretical arguments.
+
+      The adjectival ending -er/-ir is certainly secondary, and the second singular
+(present) optative can be convincingly explained as a remodelling, but, though the
+analogical explanation of the i-stem genitive singular seems to work in purely
+formal, mechanical terms, it is very difficult to motivate.
+
+       First, we would have to assume that the Old Norse state of affairs, with both
+masculine and feminine i-stems having the same ending -ar, is not in fact a
+straightforward reflection of the Proto-Germanic state of affairs, where both had the
+                                                                    Opedal swestar April 12, 2017/11
+
+
+ending *-aiz. On the contrary, this situation arose in the following way: for some
+reason, the regular reflex, uniform †*-ēR (or †*-iR/-ir) underwent an analogical
+replacement, independently in both genders, mysteriously resulting in a uniform
+ending *-āR (or -aR/ -ar). An analogical change is presumably the result of some
+functional motivation (for example, simplification, or the maintenance of an
+important opposition); one that creates an output that is functionally identical to its
+input is unusual. In the present instance, it would seem more sensible to assume that
+the identical correspondents to identical parent forms are the result of regular
+phonological developments (and a morphological archaism, cf. Grønvik 1981: 63–
+65, 205–06).
+
+       Further, as has been powerfully argued by Harald Bjorvand (1972: esp. 213–
+14), the suggested analogies are completely at odds with the ‘analogical drift’ of the
+language, which was towards the formal differentiation of masculine and feminine.
+This can clearly be seen in the (relatively late) tendency for masculine i-stems to
+adopt the endings of the a-stems, just as happened independently in Gothic and
+West Germanic. (A series of developments whereby the ‘regular’ ending †*-ēR, or
+†*-iR/-ir, is replaced first by that of the masculine u-stems and then by that of the a-
+stems seems a bit much to have to swallow.) On the other hand, maintenance of the
+inherited genitive singular ending by the feminines was supported by its
+coincidence with that of the ō-stems (which had far-reaching repercussions, cf.
+Heusler 1932: §§217a, 218).
+
+      In my view, these theoretical considerations are overwhelming, and the i-
+stem genitive singular can accordingly be reconstructed as ORu. */-a:R/.14 This in
+turn must constitute a valid parallel to the supposed ORu. †/-a:r/, as the later
+development of */-a:R/ to ON /-ar/ clearly shows that the regular outcome of ORu.
+long /a:/ plus non-nasal consonant is ON short /a/ plus reflex of the consonant. A
+development ORu. †/a:r/ > ON /-ir/ is thus seen to be impossible.
+
+
+14
+   Presumably, the sequence *-aiz underwent an early phonetic development to [a:R], and the vowel
+[a:] achieved phonemic status once *ai had become -ē elsewhere in unaccented syllables. After this
+latter change, the vowel in *-āR will no longer have been referrable to its parent phoneme */ai/. If *ē
+had developed to ā in final syllables, then it must needs have belonged to the same /a:/-phoneme as
+did the vowel in *-āR (cf. §3.3.2). — Indeed, it appears that, in unaccented syllables, the phoneme
+/a:/ occurred only in the desinence *-āR.
+                                                                  Opedal swestar April 12, 2017/12
+
+
+3.4.2.2. But, aside from this straight parallel between two individual sequences
+(and some may regard the Older Runic i-stem gen. sg. */-a:R/ argued for above as
+too uncertain to be used for this purpose), a development ORu. /a:/ > /I/ is out of
+place among the changes which affected the system of vowels in final syllables
+from the end of the Older Runic period until the earliest literary period.
+
+       If, for the time being, we leave out of account the question of the fate
+undergone by a putative long /a:/ phoneme, we can make the following
+observations on the basis of the remaining uncontroversial developments. Vowels
+in final syllables are subject to loss, if short (unless nasalized or followed by m, n, l,
+or r), shortening, if long. Short vowels were lost at the end of the Older Runic
+period, long vowels shortened at the end of the Transitional Period (cf. further
+footnote 4). In the course of these quantitative changes, there is a general movement
+towards the three extremes of the vowel-triangle. As Haugen puts it for the high
+vowels (1949: 386); ‘all the long and protected short vowels fell together into i if
+they were palatal, u if they were velar’. It is to be noted that in the process of
+shortening, TP /o:/ was unrounded, yielding ON /a/, whereas nasalized TP /õ:/ (<
+ORu. -ōn) was raised, yielding ON /u/. (On the distinction between /o:/ and /õ:/ and
+the development of /õ:/ to ON /u/, cf. Grønvik 1976:144 [but delete *augōn and
+augo, -u gen. dat. sg. as examples], 146; also fn 16 [on the ō-verbs] and fn 26 [on
+derivative -ōni-nouns of the type skipun.)
+
+      Returning to the development of /a:/, it is illuminating to compare Haugen’s
+1976 presentation (151–52) and accompanying diagram (reproduced below).
+
+     Unstressed Vowels
+     (a) Contraction: ai au iu > ē ō ī (kurnai > kurnē corn dat. sg.; sunauR > sonōR gen. sg.;
+     magiu > magī son dat. sg.)
+     (b) Elison: all short vowels diappear unless protected by final m n r or secondary stress
+     (horna > horn horn; dagaR > dagR day nom. sg.; dagan > daga days acc. pl.; katilaR >
+     katilR > kettle; katilōR > katlaR > kettles).
+     (c) Shortening: long V > short V (kurnē > kurne corn dat. sg., magī > magi son dat. sg.)
+     (d) Merger: shortened ā > e while ō (when not nasalized) > a, after which front vowels >
+     i and back vowels > u (probably with lowered qualities, ab. [I U]).
+                                                           Opedal swestar April 12, 2017/13
+
+
+             ī      ®     i             iu                  ū      ®     u
+                          ­                                              ­
+             ē      ®     e                                 ō      ®     o
+             ­                ↖                      ↙      ­
+             ai                    ā           a            au
+
+
+A shortening of /a:/ > ON /i/ stands out in clear contradiction to his own schema,
+despite the sleight-of-hand in dividing the diagram into two parts, with ā > e on one
+side and ō > a on the other, and the skilful manipulation of the text: ‘(c) Shortening:
+long V > short V ... (d) Merger: shortened ā > e while ō (when not nasalized) > a,
+after which front vowels > i and back vowels > u’. But what on earth can ‘shortened
+ā’ reasonably have been but a?! The fundamental problem remains.
+
+       In any attempt to support a development ORu. /a:/ > ON /i/, one would have
+to argue that the change of ō > a threatened a merger with the shortening product of
+ā, and that ā therefore shortened to e in order to avoid this merger — we would thus
+have a ‘pushchain’ phenomenon. Aside from any reservations one might have about
+pushchains in general and pushchains in North Germanic unstressed syllables in
+particular, one needs a very strong functional motivation to account for why this
+should have happened, rather than the expected merger with ă. The proponents of
+the change ORu. /a:/ > ON /i/ have one, but it is, so to speak, ‘extralinguistic’: their
+own assumption that PGmc. long */e:/ became long /a:/ in North Germanic final
+syllables. They have to get this to /i/ in order to square with the data of Younger
+Runic and Old Norse.
+
+       If, on the other hand, PGmc. long */e:/ retained its quality in North Germanic
+final syllables, as I believe to be the case, what we would expect (cf. Haugen 1949:
+386, cited above) is for it to develop to ON /i/ like the other palatal vowels (cf. also
+§2). On this analysis, the earlier long mid vowels, /e:/, /o:/, /õ:/, develop in a
+principled way; after shortening, they all lose their status as mid-vowel phonemes,
+merging with /i/, /a/, /u/ respectively. As expected, /a:/ (i-stem gen. sg. -āR, cf.
+§3.4.2.1) > ON /a/ (-ar). Compare the following diagram:
+                                                                     Opedal swestar April 12, 2017/14
+
+                               iu
+                               ¯
+               ī       ®       i                                     u       ¬        ū
+                               ­                                     ­
+               ē       ®       e                                     o       ¬       ōn
+
+               ­                                      a               ¬              ō
+                                                      ­                              ­
+               ai (aiz)               ®               (āR)                           au
+
+Again, for an earlier low vowel phoneme, as /a:/, to fetch up as ON /i/ runs counter
+to the whole trend of development.15
+
+4. The Rune a Represents a Short Vowel in the Categories in Question
+
+4.0. If it be accepted that a development of PGmc. */e:/ > ORu. /a:/ > ON /i/ is not
+possible, how then are we to explain the data cited in §3.2.0, and in a manner that is
+consistent with both the graphological and phonological facts?
+
+       I would propose that all the alleged reflexes of PGmc. */e:/ as ORu. /a:/ rest
+on false analyses, and that in each case the rune a represents short a.
+
+4.1. Regarding ana, as Hollifield (1980: 148) points out, it is not always possible to
+determine what the pre-forms of adverbs were. (In addition, it is by no means
+inconceivable that they might replace their endings analogically.) ORu. ana, which
+Hollifield gives as an example of PGmc. *-ē > ORu. -ā (reading it as anā, 1980:
+145), seems to me insufficiently established textually to be used with confidence,
+cf. Krause 1971: Nos. 61, 67, 115. Hollifield cites Gk. anō to motivate his pre-form
+*anē, but a reflex of such a pre-form is nowhere certainly attested (cf. Pokorny
+1959: 39–40). Indeed, if we follow Laroche (1970: 46–47) in identifying Gk. anō as
+an old directive (rather than an old instrumental with *-ē/*-ō [*-ex1/*-ox1] ablaut; a
+semantically less attractive comparison), e-grade is excluded, for Hitt. -a, Gk. -ō
+indicate a non-alternating *-ō for this ending. Krause, on the other hand, compares
+15
+  It is perhaps significant that proponents of the *-ē > ā > i-theory are for the most part silent on the
+topic of the i-stem genitive singular. Haugen, however, does cite -winaR (1976: 126), which he
+appears to regard as the pre-form of ON vinar, as he does not specifically mention any analogical
+developments which would account for it not turning up as the †viner, -ir his rules would lead us to
+expect.
+                                                         Opedal swestar April 12, 2017/15
+
+
+Gk. aná (1971: §32.2), which would enable us to interpret ORu. ana — if it exists
+at all — as ana with ‘adverbialer Auslautkonservatismus’ (on the term and
+phenomenon, cf. Schmidt 1962: 214–15; also van Helten 1903: 553; Grønvik 1981:
+202–03, 217–18), this form having left no reflex in Old Norse; ON á comes from
+the Older Runic by-form an (an), from the same pre-form but with apocope,
+attested on the Tjurkö Bracteate (Krause-Jankuhn 1966: I No. 136), cf. Noreen
+1923: §§122, 229.5.
+
+4.2. As now seems to be widely accepted, the -a ending found in the nominative
+singular of masculine n-stems in Older Runic is not the result of regular
+phonological change at all, but has an analogical origin. The key references are Lid
+1952, Szemerényi 1960: 157–64, Antonsen 1970: 313–315, and Grønvik 1981: 5–
+67, 206–207.
+
+      (1) North Germanic inherited a feminine n-stem paradigm with a nominative
+singular ending from PGmc. *-ōn, and a non- ablauting-ōn- suffix in the oblique
+cases. The masculines inherited a nominative singular from PGmc. *-ô; in the
+oblique cases, the suffix-form -an- was generalized throughout the singular at a
+very early date (cf. ORu. gen. sg. wiwilan Veblungsnes [Marstrander 1952a: 19;
+Andersen 1973], dat. sg. -halaiban Tune). The invariant -ōn- of the feminines will
+doubtless have acted as a model for this levelling, as will the parallelism with the
+opposition between a- and ō-stems referred to under (2) below.
+
+       (2) The two nominative singular endings regularly developed to -ō in Proto-
+North Germanic. This merger provided the motivation for a renewal of one of the
+two endings so as to re-establish the gender distinction in this category. In the
+event, it was the masculine that innovated. There was in all the oblique case-forms
+(except dative plural) a distinction between masculine and feminine n-stems marked
+by the opposition -an- versus -ōn-, similar to that between the masculine a-stems
+and the feminine ō-stems; the nominative singular was brought into line by a further
+extension of the vowel a, producing the ending -a, corresponding to the -ō of the
+feminine n-stems. The creation of the masculine nominative singular desinence -a is
+thus to be seen against the background of the functional trend to create and maintain
+gender distinction in the n-stems. The rebuilding of the masculines antedates the
+earliest runic inscriptions (cf. the data in §3.2.0, and under (1) above).
+                                                                 Opedal swestar April 12, 2017/16
+
+
+        (3) The Younger Runic -i and the literary Norse masculine ending -i came
+about as follows. The Older Runic ending -a underwent regular loss in the
+syncope/apocope period, producing an endingless form. This was re-characterized
+by means of the morphological assimilation of the an-stems to the ijan-stems, (a
+sub-group of the highly productive jan-stems). The two had come to be identical,
+except in the nominative singular, by regular soundchange. In the an-stems, ORu.
+-a, -an yielded Transitional Period -Ø, -an; in the ijan-stems, ORu. -ija, -ijan > ‘TP’
+-ī, -an.
+
+REMARK 1. Short -a is generally lost, but in the position before m, n, (l,) r, and when nasalized
+— -an < ORu. -an# — it is retained, as are the long vowels, and -ij- suffers loss instead, cf.
+§3.4.2.2. Note PNGmc. *hirdijaR, *hirdijōR > ON hirðir, hirðar (Krause 1948: §55 A.1, Grønvik
+1976: 142).
+
+
+REMARK 2. The ‘TP’ *-ī(C)# < ORu. *-ija(C)# must have been long, otherwise it would have
+been lost at the end of the Younger Runic period (Grønvik 1976: 144–45).
+
+
+       An endingless nominative singular of the type *han will doubtless have been
+felt to be anomalous; there will have been no other uncharacterized masculine
+nominative singular in the language at this time. In a situation where the two types
+*han : *hanan and *wrainī : *wrainan co-existed, with no synchronic rule
+governing which lexemes had a nominative singular in *-Ø and which in *-ī,
+merger of the two types under the characterized form of the ending seems the
+obvious solution. (Compare Kurylowicz’s first ‘law’ of analogy (1945–49: 20): ‘Un
+morphème bipartite tend à s’assimiler un morphème isofonctionnel consistant
+uniquement en un des deux éléments, c.-à-d. le morphème composé remplace le
+morphème simple.’ In the present instance, the morphemes for n-stem nominative
+singular masculine could be analysed as -Ø and †-ī, respectively.)
+
+      As Antonsen (1970: 314) observes: ‘If the Old Norse forms do not reflect the
+regular development of the original an-stem formant, then, of course, there is no
+longer any basis for assuming that the a-rune represented /ǣ/ in these [nominative
+singular] forms’ (my insertion — PVS).
+
+4.3.0. We are thus left with the awkward residue of Opedal swestar, and are, so to
+speak, back to square one (cf. §2).
+                                                                      Opedal swestar April 12, 2017/17
+
+
+
+       The above shows — it is hoped — that on phonological as well as
+graphological grounds, we cannot read swestār, with a long vowel in the ending,
+and regard the form as the precursor of the literary Old Norse nom. sg. syster, -ir;
+its reflex would be †systar. (We are concerned here only with the form of the
+ending, not that of the stem, which in Old Norse reflects an allomorph in *swist-,
+presumably levelled from the dative singular and nominative/accusative plural.) It
+is clear that there would be no other possible morphological interpretation of a form
+swestār than as a development of PGmc. *swestēr (nom. sg.).16
+
+      We must investigate, therefore, what morphological classification we can
+give the form if we read it as swestar, with a short a — the only other possibility
+from a graphemic/phonemic viewpoint.
+
+
+
+
+16
+   A further possibility was suggested to me by Gunnel Clark after the presentation of an oral version
+of this paper at University College, London on the 18th of December 1981. — According to this
+view, the spelling ‹swestar› (read as a nominative singular) would represent [swesta:r], which was
+nonetheless phonemically /sweste:r/, the phoneme /e:/ (which allegedly had a lot of phonological
+space in Older Runic, as in Proto-Germanic) having an open allophone [a:] before the following [r].
+This allophone [a:] underwent the further development to ON /i/, however, like the [e:] allophone of
+the phoneme /e:/. — Despite its ingenuity, this theory seems to me too much like trying to have your
+cake and eat it. I cannot but think that, if /e:/ had had an allophone before [r] which was so open that
+the inscriber of the Opedal inscription denoted it by the rune A, then his having done so is indication
+that, for him, it belonged to a phoneme /a:/, whose subsequent development, presumably to ON /a/, it
+would have shared. We may note that, if, as argued above (§3.4.2.1), the phoneme /a:/ did exist in
+the genitive singular of the i-stems (ORu. /-a: R /), then, in general terms, /e:/ will not have had so
+much phonological space in Older Runic (/-e:R/ ≠ /-a: R /) as it did in Proto-Germanic (cf. Steblin-
+Kamenskij 1962: 4-5). It is to be remembered that the Older Runic language consistently
+distinguishes between the two vowel QUALITIES e and a in unstressed syllables (cf. §3.3.2, but see
+also footnote 9): āsijōstēR/wōdurīdē versus wiwaR/staina. I addition, [r] is more likely to have had a
+significant lowering effect on a SHORT vowel than on a long vowel. All in all, this interpretation,
+starting from the preconception that Opedal swestar must be a nominative singular, is reminiscent of
+the analysis of the n-stem nominative singular ending, ORu. -a, as [æ:], because it is reflected by ON
+/i/ (cf. §§3.3, 4.1.2). The reader may judge the relative merits of this analysis and that to be presented
+below.
+          In his last contribution on the Opedal inscription, Marstrander speaks — without further
+amplification — of ‘den reduserte sluttvokal i swestar’ (1965: 251); he does not indicate what case-
+form he sees here.
+                                                             Opedal swestar April 12, 2017/18
+
+
+4.3.1. Two scholars have read swestar with a short vowel and interpreted it as a
+remodelled nominative singular, explaining the short vowel as the result of levelling
+from the oblique cases.
+
+       According to van Helten (1910: 492), it arose ‘durch anlehnung an die
+pluralform’, which — despite Tune dohtriR “daughters” — he reconstructs as
+†*swestarez. But, aside from this and the unlikely nature of the proposed analogy,
+the nominative singular forms of Younger Runic, -iR (cf. footnote 6), and of literary
+Norse, -er/-ir, show quite clearly that this suggestion is incorrect. Even granted that
+a new nominative singular had been created in the way claimed by van Helten, the
+original nominative form will hardly have been put into cold storage, only to be
+resuscitated in time to appear in later texts.
+
+       In the view of Antonsen (1970: 314 fn2; 1972: 51; 1975: 16, 21, 40; 1980:
+11–12), the short vowel was introduced from the accusative singular, a
+development supposedly parallel to that which took place in the n-stems (cf.
+§4.2(2), above): ‘the consonant stems, including the n- and r-stems, underwent
+leveling of the thematic [sic — PVS] vowel in Northwest Germanic’ (1980: 11).17 I
+find this most unlikely. The r- and n-stems show no disposition to develop in
+parallel in North (or West) Germanic (and even if they did, we would expect a
+FEMININE r-stem to mirror not the MASCULINE n-stems, but, presumably, the
+FEMININE n-stems). According to Antonsen, the i in the ending of the Younger
+Runic nominative forms is epenthetic (presumably consequent on syncope of the
+vowel in ORu. -ar), and the Younger Runic nominative singulars ‘derive from
+underlying ... [/ — PVS] faþr, mōþr, brōþr, systr, dǿttr .../ and can be transcribed as
+faþer, mōþer, brōþer, syster, dǿtter ...’ (1980: 11). (Younger Runic aftiR, also cited
+by Antonsen, does not belong here, see footnote 6). To correct a strange lapse on
+Antonsen’s part, I must point out that “daughter” does not have i-umlaut in the
+nominative singular (and even if it did, the umlaut is left unexplained in Antonsen's
+account). This aside, I reject this analysis: a) the sequence -Vr does not syncopate in
+North Germanic, cf. gen. sg. fǫður; b) the assumption of epenthetic vowels would
+be gratuitous and anachronistic, anyway; moreover, we might very well want to
+
+17
+  I reject the hypothesis according to which the runic inscriptions in the Older Futhark from
+Scandinavia are written in a language which is a common pre-stage of both the North and West
+Germanic languages. Cf. chapter 3 of Grønvik 1981, esp. §3.8.
+                                                          Opedal swestar April 12, 2017/19
+
+
+know why the nominative and accusative plural forms did not develop epenthetic
+vowels as well(!); c) Antonsen’s claim that ‘PIE */ē/ > PGmc. */ǣ/, which could
+not develop into a Nordic /i/’ (1980: 11) is without foundation. (Moreover, there
+was no such phoneme as PGmc. */æ:/; the symbol æ is merely a convention for
+distinguishing the outcome of PIE long *ē, Gmc. *ē1, from the later creation of
+North and West Germanic, *ē2, which had a closer quality — on *ē2, cf. Grønvik
+1981: 59–60, 202–03; Ringe 1984).
+
+        Obviously, an alternative explanation, that Opedal nom. sg. swestar is a
+North Germanic dialectal development in a type of language not reflected in any
+later texts, should be eschewed unless absolutely unavoidable.
+
+4.3.2. Another possibility would be to regard swestar as a regular reflex of the
+accusative singular, developed from PGmc. *swestarun by loss of *-u in words of
+three or more syllables.
+
+       The Old Norse r-stem accusative singular ending -or/-ur itself, however,
+presupposes an Older Runic pre-form *-aru (NOT -ar), from which the attested
+ending derives by the operation of labial mutation and u-apocope. Older Runic
+*-aru cannot be phonologically regular, but must be the result of analogy on the
+model of monosyllabic root nouns (such as *fōtu, *nahtu > ON fót, nótt), which
+regularly retained the *-u in a second syllable (after both heavy and light syllables)
+until the end of the Older Runic period. (The analogical *-u of the r-stem accusative
+singular then underwent apocope at the same time as it did in *fōtu, *nahtu, etc.)
+
+       On an accusative reading, swestar would have to represent the stage between
+regular loss and analogical restitution of the ending *-u. This seems extremely
+unlikely, for this stage — if it existed at all — will presumably have been short-
+lived.
+
+      But the crucial objection to taking swestar as an accusative is that it would
+create grave syntactic problems, for it stands adjacent to a feminine nominative
+possessive adjective, mīnu.
+                                                                 Opedal swestar April 12, 2017/20
+
+
+4.3.3.1. Unless we are to dismiss it as a defective form, unusable for philological
+purposes (a position to be adopted only if all else fails), what we must look for is a
+reading of swestar that accounts for all of the following facts:
+
+1) the spelling and form of the ending -ar;
+2) the absence of a reflex in literary Norse;
+3) the fact that the form is construed with the nominative(s) mīnu (liubu).
+
+4.3.3.2. Interpretation as a vocative fulfils all these requirements.
+
+1) -ar is the phonologically regular reflex of Proto-Germanic *-er in North
+Germanic (cf. e.g. hvaþarr : Gk póteros, and Heusler 1932: §113).18
+2) Elimination of the vocative is the general trend in Germanic, indeed Indo-
+European (cf. Wackernagel 1926: 306), As is well known, Old Norse has no formal
+vocative case.
+3) mīnu (liubu) can bear a vocative interpretation as readily as a nominative one, as
+adjectives did not have special vocative endings in Germanic.
+
+4.4. It is interesting to note that the present conclusion — the result of purely
+formal considerations — fits in well with most readings of the Opedal inscription,
+according to which the phrase swestar minu (liubu) constitutes some sort of appeal
+to the dead sister by the brother who presumably incised the runes (cf. Marstrander
+1929b: 168: ‘ordene swestar minu og liubu meR ... viser med full sikkerhet at
+
+
+
+
+18
+  As mentioned above (§3.1.2), “sister” was assimilated to the ter-stems already in Proto-Germanic.
+We must therefore reckon with a Proto-Germanic vocative pre-form *swester (cf. Gk. páter), which
+replaced the continuant of PIE *suésor (OInd. svásar).
+        I hope to give a full discussion of the development of PIE *-er(-) in Germanic unaccented
+syllables on another occasion.
+                                                                    Opedal swestar April 12, 2017/21
+
+
+stenen er reist eller runene ristet av en bror over den døde kvinne graven
+gjemmer’).19
+
+5. Implications of a Vocative Interpretation
+
+5. Positing a vocative form for Older Runic requires additional support. Moreover,
+if the words swestar mīnu liubu are to be read as one syntagm, further clarification
+of liubu is needed, for, once more on the analogy of Gothic, we might expect this
+adjective to be in the weak form. Compare especially 1Cor 15/58: brōþrjus meinai
+liubans [“my dear brethren”], Gk. ἀδελφοί μου ἀγαπητοί.
+
+REMARK. For the word-order swestar mīnu liubu, we may compare, in addition to Gothic (cf.
+the above example, and Streitberg 1920: §279), Runic Danish faþur sin kuþan, (Jacobsen and
+Moltke 1942: No.390), and possible bruþur sin kuþan, (ibid. No. 394), and Old Norse meþ
+fǫþor sinn gamlan (quoted by Heusler 1932: §516) and ó lafarðr mínn godi (quoted by Nygaard
+1905: 53).
+
+
+       Both these questions, the admissibility of positing vocative forms for Older
+Runic and the strong form of the adjective liubu, will be discussed in the Appendix
+to this article.
+
+6. Conclusions
+
+1) On graphological grounds, the rune a (a) can only represent [a] or [a:].
+
+2) If we apply these values to the desinence of Opedal swestar, we find that the
+ending of ON nom. sg. syster, -ir can have developed from neither [-ar] nor [-a:r].
+
+
+19
+  Antonsen arrives at a very different interpretation (1972: esp. 49-50, 1975: 40). In his opinion, ‘the
+entire inscription consists of one line, to which wage was added later’ (1975: 40), which he reads in
+the order B then A (cf. §1.1), and translates as: ‘Dear to me, Birgung (and to Wag), [is] Boro my
+sister’ (1972: 50).
+         I make no pretence of understanding why the inscription is disposed on the stone as it is. But,
+given this fact, the view that the section liubu meR wage is the second part of it seems the only
+reasonable one. It seems impossible to believe that anyone would carve B BEFORE A. The whole
+aspect of B is against wage being a later addition to a single left-to-right line of runes. Cf. also
+Marstrander 1929b: 168.
+                                                         Opedal swestar April 12, 2017/22
+
+
+3) From this it follows that swestar cannot be the pre-form of ON syster, -ir, but
+must represent another case-form.
+
+4) The only interpretation of the form that makes morphological sense is as a
+vocative singular, with -ar < PGmc. *-er. (Alternatively, we must dismiss it as a
+mistake of some kind.)
+
+5) All the forms that have been taken as evidence for a development of PGmc. long
+*ē to Older Runic ā in final syllables (cf. §3.2.0) have been misinterpreted. In each
+of them, the rune a in fact denotes a short a. None of the forms in question has a
+direct reflex in Old Norse.
+
+6) There is thus no counter-evidence to the view that PGmc. long *ē maintained its
+quality in North Germanic final syllables until after shortening (cf. §2). We would
+expect the nominative singular of the word for “sister” to appear in Older Runic as
+swester* (swestēr*). Consequently, so far as the evidence of North Germanic is
+concerned, the dental preterite can just as well reflect PGmc. *ē as *ai (cf.
+§3.4.1.2).
+
+7. Appendix: The Vocative in Germanic Nouns and Adjectives
+
+7.1.1. One of the valuable archaisms of the Gothic language is its preservation of
+formal traces of the Indo-European vocative case in the singular of substantives.
+
+       The vocative does not have its own distinctive ending in Gothic, but is
+identifiable on distributional grounds. In inflectional classes with a sigmatic
+nominative, the vocative form is that of the nominative, minus the -s (and thus
+identical in form with the accusative), otherwise it has the same form as the
+nominative. The only exception is provided by the u-stems (on which, see Watkins
+1966: 113–14, and Szemerényi 1980: 161, with note (1)).
+
+       This rule produces forms different from the nominative in the a-stems, ja-
+stems, i-stems, u-stems, and nd-stems (no vocatives are attested to ‘root nouns’,
+which should belong here, as they have sigmatic nominatives). The synchronic
+relevance of the rule is demonstrated by the nd-stems: the voc. talzjand, to nom.
+talzjands, is analogical; the phonologically regular form would be †talzjan from
+                                                           Opedal swestar April 12, 2017/23
+
+
+ePGmc. *talzjand. (Incidentally, we may note that the nominative talzjands is itself
+analogical, as pre-Gmc. *-onts should yield †-ans.) For attestations of Gothic
+vocative forms, see the relevant sections of Streitberg 1920 and Jellinek 1926.
+
+7.1.2. In addition to this morphological marking in the noun, it is generally held
+that the vocative is also marked syntactically in Gothic, in so far as vocative
+adjectives take the weak inflection, see Behaghel 1923: 176, who lists a single
+exception: Lk 1/28 faginō, anstai audahafta (fem. sg.) “rejoice, O one lucky in
+grace”, Gk. χαῖρε, κεχαριτωμένη (here and elsewhere following Streitberg’s
+text, 1919 etc.). This state of affairs is regarded as another archaism of Gothic: ‘Das
+im Vokativ stehende Adjektiv zeigte zweifellos ursprünglich die schwache Flexion,
+ein Zustand, der im Gotischen noch fast rein bewahrt ist.’ (Behaghel 1923: 175). As
+for the origin of this use of the weak inflection, in Behaghel’s opinion, ‘Die
+einfachste Erklärung für die schwache Flexion des Vokativs ist die, daß diese von
+den [n-stämmigen — PVS] Koseformen der Personennamen übernommen ist’
+(178).
+
+       However this may be, ‘Im Ags., As., Ahd. erscheint mehrfach im Sgl. die
+unflektierte Form’ (176). This is also true of Old Norse, cf. Heusler 1932: §386,
+Wessén 1970: §31. The modern Scandinavian standard languages have come to
+generalize the use of the weak form in vocative function, though the strong form is
+also found in Modern Icelandic (Stefán Einarsson 1945: 118), Faroese (Lockwood
+1955: 112), and in Norwegian dialects. German, on the other hand, has eliminated
+the weak form at the expense of the strong, cf. Behaghel 1923: 176-178. In fact,
+there is more than one example of strong adjective inflection in Gothic, cf. also
+
+Mk 9/25 þu ahma, þu unrōdjands jah bauþs “thou spirit, thou dumb and deaf
+(one)”, Gk. τὸ πνεῦμα τὸ ἄλαλον καὶ κωφὸν, and
+
+Mt 11/23 þu Kafarna [           ]min ushauhida, beside
+Lk 10/15 þu Kafarnaum, þu und himin ushauhidō
+“thou Capernaum, thou one exalted to heaven”,
+Gk. σὺ, καφερναούμ, ἡ ἕως οὐρανοῦ ὑψωθεῖσα,
+an example brought to my notice by Warren Cowgill. (Compare also Sturtevant 1945:
+62.)
+                                                          Opedal swestar April 12, 2017/24
+
+
+       According to Behaghel, ‘Wenn im weiteren Verlauf der Entwicklung auch
+die starke und die unflektierte Form im Vokativ auftritt, so ist das eine Einwirkung
+des Nominativs, dem der Vokativ ja sehr nahe steht’ (1923: 178). I take this as
+meaning no more than that the nominative form came to usurp the function of the
+vocative also in the adjectives, with the result that the alleged rule that the weak
+form was used in the vocative was lost — more of a description than an
+explanation. In the light of the evidence given above, it would appear that
+Behaghel’s theory does not fit the facts very well anyway. (Compare the much
+better textual support in all the dialects for the rule that adjectives take the weak
+form in the comparative.)
+
+       Curme (1911:368-370) and Sturtevant (1928), on the other hand, present an
+explanation of the Gothic material which has the virtue of being tailored to the data.
+They see a semantic distinction between the strong and weak forms of the adjective
+in a vocative function: ‘The weak form is more commonly used in direct address, as
+the usual object here is merely to make clear and definite the individual to whom
+reference is made. The strong form of the adjective is, however, sometimes used
+here to call attention to the [sic, ‘some’ intended? — PVS] quality in the individual
+rather than merely to point out an individual, and hence the strong form adds the
+idea of a predication to the statement.’ (Curme 1911: 369). (This latter nuance
+would fit swestar mīnu liubu on the Opedal Stone tolerably well, cf. §4.4)
+
+       Whatever interpretation we put on the synchronic Gothic situation, I do not
+think we have enough evidence to maintain that adjectives ‘originally’ took the
+weak form when in a vocative function in Germanic. (Indeed, in so far as the weak
+adjective inflection is a Germanic innovation, the ‘original’ situation must have
+been that there was only one form, the ‘strong’ one.) The evidence of, on the one
+hand, the Scandinavian languages, which we can see extending the use of the weak
+form in the course of their recorded history, and, on the other, German, which has
+done the reverse, shows that the Gothic situation (whatever it may be) need not
+reflect ‘Proto-Germanic’ conditions anyway. (Compare further the remarks of
+Gonda 1956: 95-96, also 101-102, on the the usage with vocatives, and Szemerényi
+1960a: 16-18, on the sphere of the weak form in Germanic.)
+
+      From the point of view of the Opedal inscription, this evidence suggests that,
+should we wish to take the words swestar mīnu liubu as one syntagm (cf. §5), it
+                                                                 Opedal swestar April 12, 2017/25
+
+
+would not be a serious objection that liubu was in the strong form. And, even if it
+were to be upheld that use of the weak form of the adjective in a vocative function
+was the ‘original’ Germanic rule, it could be countered that we should not be
+surprised if Older Runic shows some signs of development towards the situation
+found in Old Norse. Besides, the usage of weak and strong forms in Older Runic is
+particularly erratic (cf. Krause 1971: §112). (It is to be remembered also, that we do
+not HAVE to take swestar minu liubu as one syntagm, cf. §1.1 and note 19.)
+
+7.2. It would appear to be the standard view that Gothic is the only Germanic
+language to preserve formal traces of the Indo- European vocative in substantives.
+Compare Streitberg 1896: §172, Bethge 1900: §316 (cf. §329), Boer 1924: §174,
+Hirt 1932: §26, Prokosch 1939: 236. Krahe-Meid 1969: 7 (etc.) are unclear on this
+point (they do not regularly discuss Older Runic in their grammar).
+
+REMARK. The valiant attempt by Bülbring (1896) to identify vocative forms in Old English was
+promptly refuted by Kluge (1896). Bülbring’s view was accepted by Streitberg 1896: §182
+(despite §172, referred to above!), but this was probably before Kluge’s refutation appeared
+(especially as the foreword to Streitberg’s grammar is dated ‘10. Okt. 1895’). Presumably,
+Streitberg was the source of Wackernagel’s statement (1926: 306) that ‘unter den andern
+germanischen Sprachen scheint bloss das Altenglische kleine Reste [des Vokativs — PVS]
+bewahrt zu haben’. We may note however, that in a number of instances a vocative differing from
+the nominative could have been phonologically preserved down into West Germanic until the
+time of the loss of word-final *-z# (i- and u-stems), and *-a# (a-stems). Strong feminines could
+have kept a distinction longer, but the above sound changes will have presumably completed the
+process of syncretism, were it not already complete earlier.
+
+7.3.0. Among the authors of recent handbooks, only Krause dissents from the view
+that the vocative is confined to Gothic. In his Handbuch des Gotischen, we read:
+‘Davon [viz., of the Proto-Germanic cases — PVS] ... ist der Vokativ nur im
+Gotischen (und im Urnordischen) bewahrt’ (1968b: §113). In his Die Sprache der
+urnordischen Runeninschriften, he cites three supposed vocative forms: Alawīd (a-
+stem) and Alawin (i-stem) on the Skodborg Bracteate, and, probably, Alugōd (a-
+                                                              Opedal swestar April 12, 2017/26
+
+
+stem) on the Værløse Fibula (1971: §27).20 (We may note that Hollifield 1980: 33
+accepts these vocative forms for Older Runic.)
+
+       Before examining these supposed exponents of the category, I would like to
+point out that, as far as I can see, there is no valid reason, a priori, why the Older
+Runic language should not have preserved vocative case-forms. It is the earliest
+attestation of any Germanic language, the oldest texts pre-dating Wulfila, and in
+several respects presents a more archaic form of language than does Bible Gothic.
+The retention of short stem vowels after both heavy and light syllables in particular,
+means that Older Runic will have had a clearer formal basis than Gothic for
+preserving distinct vocative forms. Thus, if Gothic has vocative forms, Older Runic
+may well have them too, though this is not, of course, to say that it follows that it
+must have had them. (Further, even granted that Older Runic did have a formal
+vocative, it does not necessarily follow that Krause, and I, have succeeded in
+correctly identifying instances of it.) The choice seems plain, however: in these
+instances, we either have corrupt inscriptions or we have vocative forms.
+
+       I cannot forbear remarking, that it seems to me that some scholars are so
+averse to the idea of having vocative forms in Older Runic (though they never give
+substance to their objections), that they would far rather pronounce the relevant
+inscriptions corrupt than accept a vocative reading.
+
+7.3.1. The Værløse Fibula (Krause-Jankuhn 1966: I No. 11, cf. also Marstrander
+1952b: 79–83) comes from the grave of a woman and is dated to approximately 200
+A.D. The inscription on it consists solely of the runes alugod, and interpretation is
+made difficult by the absence of any linguistic or material context. Thus, for
+example, we do not know whether the clasp had belonged to the deceased in life
+and had already borne the inscription then, or was only inscribed for the burial;
+alternatively, it might only have been ‘donated’ to the deceased at the burial and
+may, or may not, have borne the inscription prior to that.
+
+
+
+20
+   A vocative interpretation of the Skodborg Bracteate was already proposed by von Grienberger
+1903: 708, Krause 1937: 53, cf. 241. 242; of alawin by Bugge-Olsen 1891–1924: I 249. II 601.
+(Indeed, Bugge 1905: 289 suggested a whole series of vocative interpretations of Older Runic
+forms.)
+                                                           Opedal swestar April 12, 2017/27
+
+
+        The sequence alugod can be interpreted as the vocative of an a-stem
+masculine personal name, with loss of the pre-Germanic ending *-e# already in
+Proto-Germanic (a possibility mentioned by Krause, loc. cit.). But, as Krause notes:
+1) it is not clear why a man’s name should be found in a woman’s grave; 2) ‘Gegen
+die Auffassung von alugod als Personenname spricht der Umstand, daB es im
+germanischen Namenschatz das Namenwort gōda- “edel, gut” als zweites
+Kompositionsglied nicht gibt’, though he mentions godagas on the Valsfjord cliff
+inscription, where the element apparently forms the first element of a compound
+name.
+
+      We could surmount the first difficulty by interpreting alugod as the vocative
+of an ō-stem feminine personal name in pre-Germanic *-a#, again, with Proto-
+Germanic loss of the vowel. I am not sure that we know enough about early
+Germanic onomastics to regard the second objection as crucial, though it could be
+met by reading the sequence alugod as two words alu gōd!, producing a syntagm
+comparable to auja alawin! (see below). On this interpretation, the simplex god
+would have the same formal analysis as above: either an a- or an ō-stem vocative.
+
+       An alternative view regards the inscription as being incomplete and adduces
+the fact that the last three runes are somewhat squeezed together as a support. I
+would point out that there is room available after the swastika (see Krause-
+Jankuhn’s photograph 1966: II Tafel 7), should the inscriber have wished to use it.
+One might also argue that it would make more sense if the inscriber had
+deliberately compressed the last three runes specifically in order to fit in all that he
+wanted to. I think, therefore, that we should accept the inscription as being
+complete as it stands (cf. the similar conclusion of Marstrander 1952b: 80). The
+possibility does remain, however, that we have the work of a, not only illiterate but
+also incompetent, metal-smith, who failed to copy his model correctly. This is the
+position of Moltke (cf. 1976: 97–98). Though this may seem rather a large
+assumption, there is no denying the fact that just this seems to have occurred in a
+number of instances (e.g. the Femø and Asum bracteates, cf. Moltke 1976: 91, and
+the Etelhem and Nøvling fibulas, cf. footnotes 11 and 12; compare also Moltke’s
+1976: 85–104, to my mind, somewhat extreme, views on the general unreliability of
+inscriptions on bracteates, fibulas and other ornaments). The problem lies in trying
+to draw the line and decide whether such an explanation can reasonably be applied
+to a particular troublesome inscription. In the present instance, when so much is
+                                                             Opedal swestar April 12, 2017/28
+
+
+uncertain, I would certainly take the view that we could not posit retention of the
+vocative on the strength of this inscription alone.
+
+      This much is clear, however. As (North Germanic) apocope is unthinkable at
+such an early date, (-)god must be either a name in the vocative singular — be the
+name masculine or feminine, a- stem or ō-stem — or incorrect. There is no third
+possibility. (This fact was recognized by Marstrander 1952b: 82.)
+
+7.3.2.1. As it was found on a bracteate, the Skodborg inscription (Krause-Jankuhn
+1966: I No. 105) is difficult to date with certainty. Linguistically, we can classify it
+as an Older Runic inscription, however, on the basis of the retained stem-vowel in
+the word auja nt. nom. sg. (< PGmc. *-an). In this connection, it is significant to
+note the earlier dating of the bracteates, to c. 400–550/575, that has been adopted by
+Danish archeologists, see Nielsen 1969, especially 28, 36. Thus, we can date the
+Skodborg inscription to some time before c. 500 (cf. footnote 4). Fully in keeping
+with this dating is the absence of final devoicing of spirants in alawīd (cf. Moulton
+1954: 10; Ralph 1980: 4, arbitrarily denies that the form has any relevance).
+
+      With von Grienberger (1903: 708–09) and others, I read the inscription as
+follows:
+
+     auja alawin, auja alawin, auja alawin jaÇalawīd
+
+regarding the j after the third alawin as belonging to the particle ja ‘and’ (Go. jah,
+OE ge, OS ja/gia, OHG joh, ja [Braune-Eggers 1975: §25A.1c)])21, with the final -a
+of ja and the initial a- of alawīd being written only once. This is standard runic
+orthography, especially when one of the words concerned is clitic (in which case,
+the two phonemes will presumably actually have been realized as one in speech),
+cf. isÇslaginaR (Möjbro, Krause-Jankuhn 1966: I No. 99, cf. Grønvik 1981: 165,
+with note 92), arbijaÇāsijōstēR (Tune).
+
+
+
+
+21
+  To read the j as a Begriffsrune, jāra “gutes Jahr”, or as a fourth auja (cf. Krause-Jankuhn
+1966:I.242) is in my view quite unwarranted.
+                                                              Opedal swestar April 12, 2017/29
+
+
+      The existence of the Old High German personal names Alawit and Allowin,
+Alwini (Förstemann 1856:41. 42) makes it attractive to interpret alawid and alawin
+as cognate personal names.
+
+      On the word auja, cf. Andersen 1970: 188–200. (Marstrander, 1929a: 121–
+22, has shown that the Indo-European root *x1eu- belonged to the religious
+vocabulary.)
+
+7.3.2.2. In the view of Marstrander 1929a: 119–21, the Skodborg Bracteate is
+Gothic, because: 1) the co-ordinating particle ja(h) is found only in Gothic and
+West Germanic, and, 2) the names cannot be West Germanic forms22. ‘Vokativtesen
+må opgis, innskriften er gotisk, personnavnene ... står i akkusativ som objekt for
+auja, 1. pers. sing. av et j-verbum aujan: “jeg verner Alawin og Alawid.”
+Brakteaten eller guden — hvad der kommer ut på det samme — tenkes talende.’ On
+this interpretation, neither the first person pronoun nor the name of the ‘speaker’ are
+expressed; such an omission is irregular (in the Sjælland Bracteate 2 inscription,
+gibu auja is the second sentence, in the first the ‘speaker’ is named). This furnishes
+an argument against Marstrander’s interpretation that is not connected with the
+question of dialect.
+
+      I reject Marstrander’s Gothic classification of Skodborg.
+
+       Even if, for the sake of argument, we were to accept Marstrander’s view that
+there were Goths in the North at the relevant time, it by no means follows that
+Skodborg is Gothic. As the bracteates are basically a phenomenon of Southern
+Scandinavia and present-day Denmark, and as Marstrander himself regards the bulk
+of them as linguistically North Germanic, I would suggest that, if a North Germanic
+classification is possible, it should be adopted. And, of course, if some of the data
+which a theory was set up to account for can be explained without it, then the
+theory itself is undermined. (I might also add, that I find it somewhat surprising that
+these putative ‘Goths’ should be using a form of language that agrees so closely
+with Wulfila’s Bible Gothic.)
+
+
+22
+ Antonsen (1975: 76-77) does classify it as a West Germanic inscription, however. Cf. below on
+Marstrander’s Gothic hypothesis, and also footnote 17.
+                                                                     Opedal swestar April 12, 2017/30
+
+
+       For, Marstrander, it was ja which ruled out the possibility of a North
+Germanic attribution. But the particle *jah “and” must be posited for Proto-
+Germanic, because it is found in Gothic and West Germanic; its presence in West
+Germanic implies its presence at the North–West Germanic stage23. As it doesn’t
+occur in literary Old Norse, it has evidently been lost in the intervening period. But
+the issue is really only one of chronology, and I can see no overriding objection to
+reading it on the Skodborg Bracteate.24
+
+       A concrete support for the existence of ja(h) in early North Germanic, and
+thus for reading it on the Skodborg Bracteate, can be found in Uralic loan-material,
+namely that in Sami (Lapp). The relevant forms have certainly been borrowed from
+a Germanic language, but, though it is usually maintained that the word was an
+indirect loan from Gothic via Finnish, it can just as readily, and somewhat more
+plausibly, be explained as a direct loan from North Germanic. (I owe the following
+information, which I have edited slightly, to the kindness of Professor Knut
+Bergsland in a letter of the 1st of September 1981.)
+
+       Germanic *jah ‘and’ occurs as a loan word in both Baltic-Finnic and Sami.
+Baltic-Finnic ja occurs in this form in Finnish, Karelian, Lude, Votian, Estonian
+
+23
+   The Old High German variants joh and ja indicate that the conjunction PGmc. *jah developed a
+by-form *ja (presumably originally a — pre-vocalic? — sandhi-variant) some time after the
+departure of the Goths. (The ‘rare’ Gothic ja mentioned by Carr 1933: 488fn1 and Feist 1939: 300
+has an extremely tenuous existence in two examples: ia above a Go. jah IN THE OLD HIGH GERMAN
+TRANSCRIPTION/TRANSLATION in the material of the Codex Vindobonensis 795, the ‘Salzburg-
+Vienna Alcuin Manuscript’ — Braune-Ebbinghaus 1981: §2 A.3, alongside ther above Go. þairh
+and ʒah transcribing Go. jah in the section dealing with pronunciation; and ia in the ‘Gothic
+Epigram’ in a Latin text — Streitberg 1920: 37!)
+        I do not agree with Carr (1933: 488–89), that Go. jah OHG joh, and ‘Go. ja’ OHG ja, are two
+different formations. PGmc. *jah either (1) comes from the Proto-Indo-European ‘relative stem’
+*yo- plus the enclitic connective *-kwe (cf. Dunkel 1982–83: 183), in which case there never was an
+independent ‘conjunction’ PIE †*yo-, PGmc. †*ja, from which PGmc. *jah was formed, or (2) is the
+result of a Proto-Germanic combination of *ja *“indeed, yes” + enclitic *-(u)h “and”, to give *“and
+indeed”, with later semantic weakening to “and”. In either case there was no PGmc. †*ja meaning
+*”and”. — Obviously, we have the variant without -h (pre-vocalically) on the Skodborg Bracteate.
+(Final *-h was not lost until after the final devoicing, which has not yet occurred, §7.3.2.1, cf.
+Moulton 1954: 10.)
+24
+   ja(h) has been read in other inscriptions from time to time (e.g. Varnum Stone, Kragehul Lance),
+but these readings are now rejected. It is to be admitted that one would like to have at least one other,
+securely established, reading of this word in Older Runic inscriptions.
+                                                           Opedal swestar April 12, 2017/31
+
+
+and Livonian, with a variant jah in Votian and in Finnish dialects (in the latter, it is
+probably of secondary expressive origin, as an old final -h would disappear in most
+Finnish dialects).
+
+       In Sami, the word is attested as ja, with a short vowel, from Kola in the North
+East to Arjeplog in the South West, in Arjeplog also as jah, which is the form found
+further South. In Southern Sami jih also occurs, apparently a reduced form of jah.
+As an original final -h is preserved only in the southern dialects, the northern ja
+most probably reflects an earlier ‘Proto-Sami’ *jah.
+
+       If the Sami word were an old cognate of Finnish ja, one would expect †juoh,
+so the two must stand in some sort of loan relationship, either one being loaned
+from the other, or both from a third language. Though Finnish scholars regard the
+Sami word as a borrowing from Finnish, Prof. Bergsland tells me that he can see
+‘no cogent reason for excluding the possibility of a Scandinavian origin’. In fact,
+one has the choice between regarding the actual Sami ja(h) as borrowed from
+Finnish, or as an independent borrowing from Germanic (viz. North Germanic) —
+or possibly both: the northeastern ja could conceivably have been borrowed from
+Finnish, the southwestern jah directly from (North) Germanic. We may further
+note, that the short vowel of Sami ja(h) does not correspond directly with Fi. ja in
+terms of a loan relationship either; we would expect long á (at least in stressed
+syllables). Though the Sami short a may readily be explained as shortened before
+the h (or in unstressed position), the fact remains that the hypothesis of a loan from
+Finnish requires this additional postulate.
+
+       Prof. Bergsland points out a parallel for the early loan of a grammatical word
+from North Germanic into Sami: ‘Southern Sami hawkh, Olaus St. Graan 1669
+haug(e), Lule tauk, Olaus Sirma 1716 tauga, from *þauh (possibly + Sami
+particle), not through Finnish, which has no initial dental spirant, and so hardly
+from Gothic.’ (*þauh yields þó in North Germanic prehistorically.)
+
+       The Uralic material thus provides some support for the interpretation of
+Skodborg ja as a North Germanic example of PGmc. *jah ‘and’ (on the form ja, cf.
+footnote 23), and thus for the North Germanic classification of this inscription that
+all the other evidence indicates.
+                                                              Opedal swestar April 12, 2017/32
+
+
+       Granted then, that the inscription is North Germanic — unless it is some kind
+of magical mumbo-jumbo — the names must be vocatives (as Marstrander
+conceded 1929a: 120). alawid would be regularly developed from an early Proto-
+Germanic vocative *alawīde (to a nominative *alawīdaz), and alawin, with loss of
+-i# in words of three or more syllables, from an early Proto-Germanic vocative
+*alawini (to a nominative *alawiniz). Moltke 1976: 93 arbitrarily denies the
+possibility of vocatives (‘Antagelsen af tiltaleformen er kun en nødløsning og
+usandsynlig i amuletsproget’), preferring the assumption that the inscription is
+corrupt.
+
+7.3.3. Though I would not set too much store by Værløse alugod, there seems to be
+a reasonable probability that the names on the Skodborg Bracteate are instances of
+the vocative in Older Runic. It must be conceded, however, that the possibility
+cannot be excluded in the case of either of these inscriptions that the relevant words
+have been left incomplete due to the incompetence of the metal-smith.
+
+       In the case of swestar on the Opedal Stone, on the other hand, there is no
+question of the omission of runes. The form cannot be explained away without the
+(more or less gratuitous) assumption of the crassest incompetence on the part of the
+inscriber — although he wrote the sequence birgŋguboro, which moreover
+contains three unparalleled rune-forms, cf. footnote 3. To my mind, it would be
+perverse to make this assumption when the alternative reading as a vocative is
+available. However, if I have achieved nothing else in this article, I hope to have
+established that these are the only two reasonable interpretations of the form.25
+
+                                            Patrick V. Stiles, University of Manchester
+
+REFERENCES
+
+Andersen, Harry (1960) ‘Opedalstenen’. NTS 19: 393–417.
+
+
+
+25
+  I am grateful to the following scholars for suggesting improvements: Harry Andersen, Michael
+Barnes, C.E. Bazell, Hreinn Benediktsson, Paul Bibire, Harald Bjorvand, Warren Cowgill, Ottar
+Grønvik, T.F. Hoad, R.M. Hogg, and Trygve Skomedal. Responsibility for remaining errors is my
+own.
+                                                         Opedal swestar April 12, 2017/33
+
+
+Andersen, Harry (1970) ‘Runeindskriften på Sjællandsbrakteaten 2’. ANF 85: 180–
+     205.
+
+Andersen, Harry (1973) ‘Runeindskriften på Veblungsnes fjeldvæg’. NTS 27. 141–
+     57.
+
+Antonsen, Elmer H. (1970) ‘Toward a New Runic Grammar’, in: The Nordic
+     Languages and Modern Linguistics, Proceedings of the [First] International
+     Conference of Nordic and General Linguistics, ed. H. Benediktsson. 313–21.
+     Reykjavík.
+
+Antonsen, Elmer H. (1972) ‘The runic inscription from Opedal’, in: Studies for
+     Einar Haugen, ed. E.S. Firchow et al. 46–53. The Hague.
+
+Antonsen, Elmer H. (1975) A Concise Grammar of the Older Runic Inscriptions.
+     Tübingen.
+
+Antonsen, Elmer H. (1980) ‘Linguistics and politics in the 19th century: the case of
+     the 15th rune’. MGS 6: 1–16.
+
+[Arntz, H. and H. Zeiss (1939) Die einheimischen Runendenkmäler des Festlandes.
+      Leipzig. ]
+
+Barnes, Michael (1973) Review of Krause 1971. Saga-Book 18/4: 354–74.
+
+Bazell, C.E. (1937) ‘IE Final Unaccented ē in Germanic’. JEGP 36: 1–9.
+
+Bazell, C.E. (1944) ‘On the prehistory of the Old English declensions’. Ingiliz
+      Edebiyati Tarihi Zumresi, Dergi 1 (= Section d’histoire de la littérature
+      anglaise, recueil 1) 150–61. Istanbul Universitesi Yayinlarindan 237.
+
+Behaghel, Otto (1923) Deutsche Syntax I. Heidelberg.
+
+Benediktsson, Hreinn (1962) ‘The Unstressed and the Non-Syllabic Vowels of Old
+     Icelandic’. ANF 77: 7–31.
+
+Benediktsson, Hreinn (1965) Early Icelandic Script (Íslenzk Handrit. Series in
+     Folio 2). Reykjavík.
+                                                        Opedal swestar April 12, 2017/34
+
+
+Bethge, R. (1900) Contributions to: Ferdinand Dieter, Laut- und Formenlehre der
+     altgermanischen Dialekte. Leipzig.
+
+Bjorvand, Harald (1972) ‘Zu den altwestnordischen Pluralendungen -ar, -ir und -r
+      bei femininen Substantiva’. NTS 26: 195–215.
+
+Boer, R.C. (1920) Oudnoorsch Handboek. (Oudgermaansche Handboeken 2).
+      Haarlem.
+
+Boer, R.C. (1924) Oergermaansch Handboek. (Oudgermaansche Handboeken 1).
+      2e druk. Haarlem.
+
+Braune, Wilhelm and Hans Eggers (1975) Althochdeutsche Grammatik. 13.
+     Auflage. Tübingen.
+
+Brøndum-Nielsen, Johs. (1928–1973) Gammeldansk grammatik i sproghistorisk
+     fremstilling. 8 vols. København.
+
+Brugmann, Karl (1906) Grundriss der vergleichenden Grammatik der
+     indogermanischen Sprachen. Zweite Bearbeitung. II/1. Strassburg.
+
+Bugge, Sophus (1892) ‘Runesteinen fra Opedal i Hardanger’. ANF 8: 1–33
+
+Bugge, Sophus (1905) ‘Bidrag til Tolkning af danske og tildels svenske Indskrifter
+     med den længere Rækkes Runer, navnlig paa Guldbrakteater’. ÅNO 141–
+     328.
+
+Bugge, Sophus and Magnus Olsen (1891–1924) Norges Indskrifter med de ældre
+     Runer. Inledning and 3 vols. Christiania.
+
+Bülbring, K.D. (1896) ‘Vokativformen im Altenglischen’. IF 6: 140.
+
+Carr, Charles T. (1933) ‘Some Old High German Conjunctions’. JEGP 32: 488–
+      503.
+
+Curme, George (1911) ‘Is the Gothic Bible Gothic?’. JEGP 10: 151–90, 335–77.
+
+Dishington, James (1978) ‘Arguments for an ai/ja-Paradigm in the 3rd Weak Class
+      of Proto-Germanic’. IF 83: 301–23.
+                                                       Opedal swestar April 12, 2017/35
+
+
+Dunkel, George. 1982–1983. ‘IE conjunctions: pleonasm, ablaut, suppletion’. KZ
+     96: 178–99.
+
+Einarsson, Stefán (1945) Icelandic. Baltimore.
+
+Feist, Sigmund (1939) Vergleichendes Wörterbuch der gotischen Sprache. 3.
+       Auflage. Leiden.
+
+Förstemann, Ernst (1856) Altdeutsches Namenbuch. I Personennamen. Nordhafen.
+
+Gonda, Jan. (1956) ‘On nominatives joining or “replacing” vocatives’. Lingua 6:
+     89–104.
+
+Grienberger, Theodor von (1903) Review of Ludwig Wimmer, Sønderjyllands
+      runemindesmærker (København 1901). GGA 165: 705–15.
+
+Grienberger, Theodor von (1906) Review of Bugge–Olsen (1896–1924) vols. I,
+      II/1, Inledning/1. GGA 168: 89–163.
+
+Grønvik, Ottar (1976) ‘Runeinnskriften fra Eikeland på Jæren’. NTS 30: 133–90.
+
+Grønvik, Ottar (1981) Runene på Tunesteinen. Oslo.
+
+Grønvik, Ottar (1998) Untersuchungen zur älteren nordischen und germanischen
+     Sprachgeschichte. (Osloer Beiträge zur Germanistik 18). Frankfurt am Main–
+     Berlin: Peter Lang.
+
+Harding, Erik (1932) Urnordisk Grammatik. Lund.
+
+Haugen, Einar (1949) ‘The unstressed vowels of Old Icelandic’. NTS 15: 384–88.
+
+Haugen, Einar (1976) The Scandinavian Languages. London.
+
+Helten, W.L. van (1903) ‘Grammatisches 63: Zur entwickelung einiger altgerm.
+      partikeln’. PBB 28: 552–69.
+
+Helten, W.L. van (1910) ‘Grammatisches 86: Zur altgerm. declination der -r-
+      stämme’. PBB 36: 490–95.
+
+Heusler, Andreas (1932) Altisländisches Elementarbuch. 3. Auflage. Heidelberg.
+                                                        Opedal swestar April 12, 2017/36
+
+
+
+Hirt, Hermann (1894) ‘Grammatische Miscellen. (A. Die germanischen
+       kürzungsgesetze)’. PBB 18: 274–83.
+
+Hirt, Hermann (1902) Review of Walde 1900. ANF 18: 369–76.
+
+Hirt, Hermann (1932) Urgermanisches Handbuch. Bd. II. Heidelberg.
+
+Høst Heyerdahl, Gerd (1987) ‘Die Årstad-Inschrift — eine Neuwertung’, in: Runor
+      och runinskrifter. Kungl. Vitterhets Historie och Antikvitets Akademien.
+      (Konferenser 15). Stockholm: Almqvist & Wiksell. 155–61. (Reprinted in:
+      Gerd Høst Heyerdahl. Vom altgermanischen Kulturerbe. Ausgewählte
+      Schriften zur Runologie und Altgermanistik. Frankfurt am Main: Peter Lang.
+      2006. 163–69.)
+
+Hollifield, Patrick Henry (1980) ‘The Phonological Development of Final Syllables
+       in Germanic’. Die Sprache 26: 19–53, 145–78.
+
+Janko, J. (1903–04) ‘Soustava dlouchých slabik koncových v staré germanštině (=
+      System der langen Endsilben im Altgermanischen) [Selbstanzeige]’. IFA 15:
+      246–71.
+
+Janko, J. (1905) Review of Walde 1900. IFA 17: 55–75.
+
+Jellinek, Max Hermann (1926) Geschichte der gotischen Sprache. Berlin.
+
+Jóhannesson, Alexander (1923) Grammatik der urnordischen Runeninschriften.
+     Heidelberg.
+
+Kluge, Friedrich (1896) ‘Vokativformen im Altenglischen?’. IF 6: 341.
+
+Kock, Axel (1887) Undersökningar i svensk språkhistoria. Lund: Gleerup.
+
+Kock, Axel (1892) ‘Untersuchungen zur ost- und westnordischen Grammatik (I.
+      Zur Frage über den Nom. Sg. auf -a in maskul. n-Stämmen)’.
+      Skandinavisches Arkiv 1: 1–20.
+
+Kock, Axel (1898) ‘Der a-umlaut und der wechsel der endvocale a:i (e) in den
+      altnordischen sprachen’. PBB 23: 484–554.
+                                                          Opedal swestar April 12, 2017/37
+
+
+Kock, Axel (1906–29) Svensk ljudhistoria. 5 vols. Lund.
+
+Krahe, Hans and Wolfgang Meid (1969) Germanische Sprachwissenschaft. II
+      Formenlehre. Berlin.
+
+Krahe, Hans and Elmar Seebold (1967) Historische Laut- und Formenlehre des
+      Gotischen. Heidelberg.
+
+Krause, Wolfgang (1937) Runeninschriften im älteren Futhark. Halle/Saale.
+
+Krause, Wolfgang (1948) Abriss der altwestnordischen Grammatik. Halle/Saale.
+
+Krause, Wolfgang (1968a) ‘Die Sprache der ältesten Runen inschriften’. [Review
+     article] GGA 220: 109–32.
+
+Krause, Wolfgang (1968b) Handbuch des Gotischen. 3. Auflage. München.
+
+Krause, Wolfgang (1971) Die Sprache der urnordischen Runen inschriften.
+     Heidelberg.
+
+Krause, Wolfgang and Herbert Jankuhn (1966) Die Runeninschriften im älteren
+     Futhark. 2 vols. Göttingen.
+
+Kuryłowicz, Jerzy (1945–49) ‘La nature des procès dits analogiques’. Acta
+     Linguistica [Hafniensia] 5: 15–37. (Reprinted in Readings in Linguistics II,
+     ed. Eric P. Hamp, Fred W. Householder and Robert Austerlitz, Chicago–
+     London: University of Chicago Press, 1966: 158–74; and in Jerzy
+     Kuryłowicz, Esquisses linguistiques I, 1960, Second edition 1973).
+
+Laroche, E. (1970) ‘Etudes de linguistique anatolienne III (9. Le directif)’. RHA 28:
+     22–49.
+
+Lid, Nils (1952) ‘Den nordiske nominativ singularis av maskuline an-stammer’.
+      NTS 16: 237–40.
+
+Lockwood, W.B. (1955) An Introduction to Modern Faroese. Copenhagen.
+     (Reprinted Tórshavn 1977).
+
+Marstrander, C.J.S. (1929a) ‘De gotiske runeminnesmerker’. NTS 3: 25–157.
+                                                         Opedal swestar April 12, 2017/38
+
+
+Marstrander, C.J.S. (1929b) ‘Opedalstenen’. NTS 3: 158–96.
+
+[Marstrander, C.J.S. (1939) Review of Arntz–Zeiss, Die einheimischen
+      Runendenkmäler des Festlandes (Leipzig 1939). NTS 11: 280–339. ]
+
+Marstrander, C.J.S. (1952a) ‘Rosselandssteinen’. Universitetet i Bergen, Årbok,
+      Historisk-antikvarisk rekke nr.3: 3–44.
+
+Marstrander, C.J.S. (1952b) ‘De nordiske runeinnskrifter i eldre alfabet. Skrift og
+      språk i folkevandringstiden. I. Danske og svenske innskrifter.’ Viking 16: 1–
+      277. (Also separately, Oslo).
+
+Marstrander, C.J.S. (1965) ‘Runica (1. Opedal-Innskriften)’. NTS 20: 249–51.
+
+Michels, Viktor (1902) Review of Walde 1900. ZDP 34: 114–26.
+
+Moltke, Erik (1936) ‘Runologiske Meddelelser. (IV. Rister- og mesterformler)’.
+     ÅNO 250–59.
+
+Moltke, Erik (1963) ‘Runeindskriften på rosetfibulen fra Nøvling’. Kuml, Årbog
+     for jysk arkæologisk selskap 37–41.
+
+Moltke, Erik (1976) Runerne i Danmark og deres oprindelse. København.
+
+Moulton, W.G. (1954) ‘The stops and spirants of early Germanic’. Lg. 30: 1–42.
+
+Nielsen, Karl Martin (1969) ‘Om dateringen af de senurnordiske runeindskrifter,
+      synkopen og 16-tegns futharken’. ÅNO 5–51.
+
+Noreen, Adolf (1913) Geschichte der nordischen Sprachen besonders in
+     altnordischer Zeit. 3. Auflage. Strassburg.
+
+Noreen, Adolf (1923) Altnordische Grammatik. I Altisländische und
+     altnorwegische Grammatik. 4. Auflage. Halle/Saale.
+
+Nygaard, M. (1905) Norrøn Syntax. Kristiania.
+
+Pokorny, Julius (1959) Indogermanisches etymologisches Wörterbuch. Vol. I. Bern.
+
+Prokosch, E. (1939) A Comparative Germanic Grammar. Philadelphia.
+                                                       Opedal swestar April 12, 2017/39
+
+
+
+Ralph, Bo (1980) ‘Urnordisk slutljudsskärpning’. ANF 95: 1–24.
+
+Ranke, Friedrich and Dietrich Hofmann (1967) Altnordisches Elementarbuch.
+     Berlin.
+
+Ringe, Donald R. (1984) ‘Germanic ‘ē2’ and *r’. Die Sprache 30: 138–155.
+
+Schuhmann, Roland (2016) ‘Zur Endung der 3.Sg.Ind.Prät. der schwachen Verben
+     in den Runeninschriften im älteren Futhark’, in: »dat ih dir it nu bi huldi
+     gibu«. Linguistische, germanistische und indogermanistische Studien
+     Rosemarie Lühr gewidmet, herausgegeben von Sergio Neri, Roland
+     Schuhmann und Susanne Zeilfelder unter Mitarbeit von Satoko Hisatsugi.
+     Wiesbaden: Dr. Ludwig Reichert Verlag. 407–18.
+
+Schmidt, Gernot (1962) Studien zum germanischen Adverb. Berlin.
+
+Steblin-Kamenskij, M.I. (1955) Drevneislandskij Jazyk. Moskva.
+
+Steblin-Kamenskij, M.I. (1962) ‘Noen fonologiske betraktinger over de eldre
+      runer’. ANF 77: 1–6.
+
+Steblin-Kamenskij, M.I. (1963) ‘The Scandinavian Rhotacism and Laws Governing
+      the Change of Distinctive Features’. Philologica Pragensia 6 (Casopis pro
+      moderní filologii 45): 362–67.
+
+Stoklund, Marie (1991) ‘Die Runeninschrift auf der Rosettenfibel von von Udby:
+      Eine neue Diskussionsgrundlage’, in: Festskrift til Ottar Grønvik på 75
+      årsdagen den 21. oktober 1991, ed. John Ole Askedal, Harald Bjorvand and
+      Eyvind Fjeld Halvorsen. Oslo: Universitetsforlaget. 88–101.
+
+Streitberg, Wilhelm (1892) Zur germanischen Sprachgeschichte. Strassburg.
+
+Streitberg, Wilhelm (1894) ‘Die Entstehung der Dehnstufe’. IF 3: 305–416.
+
+Streitberg, Wilhelm (1896) Urgermanische Grammatik. Heidelberg.
+
+Streitberg, Wilhelm (1919) Die Gotische Bibel. Heidelberg. (Several subsequent
+       editions.)
+                                                        Opedal swestar April 12, 2017/40
+
+
+Streitberg, Wilhelm (1920) Gotisches Elementarbuch. 5. und 6. neubearbeitete
+       Auflage. Heidelberg.
+
+Sturtevant, Albert Morey (1928) ‘The Use of the Weak Inflection of the Gothic
+      Adjective in a Vocative Function’. PQ 7: 199–201.
+
+Sturtevant, Albert Morey (1945) ‘Notes on the text of the Gothic Bible’. JEGPh 44:
+      62–65.
+
+Szemerényi, O.J.L. (1960a) Studies in the Indo-European System of Numerals.
+     Heidelberg.
+
+Szemerényi, O.J.L. (1960b) ‘Gothic auhuma and the so-called comparatives in
+     -uma’. PBB(T) 82: 1–30.
+
+Szemerényi, O.J.L. (1980) Einführung in die vergleichende Sprachwissenschaft.
+     Darmstadt.
+
+Wackernagel, Jakob (1926) Vorlesungen über Syntax. Erste Reihe. 2. Auflage.
+     Basel.
+
+Walde, Alois (1900) Die germanischen Auslautgesetze. Halle/Saale.
+
+Watkins, Calvert (1966) ‘The Indo-European word for “day” in Celtic and related
+     topics’. Trivium 1: 102–20.
+
+Wessén, Elias (1970) Schwedische Sprachgeschichte. Band III: Grundriss einer
+     historischen Syntax. Berlin.
+

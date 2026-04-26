@@ -1,0 +1,566 @@
+Crist’s Law, Smith’s Law, and English wizen
+Douglas G. Kilday
+Independent Researcher
+dgkilday57@yahoo.com
+
+(Draft Version of 20 June 2024)
+
+ABSTRACT: Investigation shows that Crist’s Law *-(e/i)z(d/n)- > *-(ē/ī)(d/n)- operated in
+Old Saxon and Old Frisian, but not directly in Old English, so it should not be ascribed to the
+Ingvaeonic stage. Apparent failure of Verner’s Law in the OE weak verb wisnian and strong
+participles -risen (from two distinct verbs), miþen, wriþen, and -broþen is explained by
+Smith’s accent-retraction in Proto-Indo-European and Kortlandt’s metathesis of laryngeal
+residues in Proto-Germanic. This further allows the OE homonyms wisnian and weornian
+to be analyzed as zero-grade outcomes of PIE *u̯ ei̯- ‘allow to ripen’ vel sim. extended as
+*u̯ ei̯-h₁-s- and *u̯ ei̯-s-.
+
+
+At a linguistic conference in 2002, Sean Crist proposed that *z-deletion in
+West Germanic, which had been described as sporadic by earlier authors, was
+in fact the result of regular processes.1 In addition to the well-known West
+Germanic loss of Proto-Germanic word-final *z in unstressed syllables, Crist
+recognized two environments for deletion of *z in the Ingvaeonic languages
+(Old English, Old Saxon, and Old Frisian) prior to its rhotacism and merger
+with original *r. One is word-final position in stressed monosyllables, namely
+the PGmc pronouns *miz ‘me’ and *wīz ‘we’, and the adverb *maiz ‘more’.
+Gothic simply devoices final *z in these words (mis, weis, mais), while Old
+Norse (mēr, vēr, meir) and Old High German (mir, wī ̆r, mēr) rhotacize it. Old
+English (mē, wē, mā) deletes it, as does Old Saxon in the pronouns (mī; wī, we),
+which are apparently not recorded in Old Frisian. For the adverb ‘more’, Old
+Saxon and Old Frisian attest both mē and mēr, the latter easily explained by
+analogical restoration. A parallel restoration underlies the Modern English
+adverb more.
+
+
+1 S. Crist, An Analysis of *z loss in West Germanic, LSA Annual Meeting (4 Jan. 2002), p. 3
+
+(http://www.sean-crist.com/professional/publications/crist_z_loss.pdf), accessed 27 May
+2024.
+                                                                                2
+
+
+   Crist’s other environment for *z-deletion is the position following a short
+stressed high vowel (*e, *i) and preceding another consonant (*d, *n), which
+results in compensative lengthening. He wrote the rule semi-algebraically:
+
+   *z > ∅ {*i, *e} _ $ with compensatory lengthening of preceding vowel.
+
+Complications immediately arise with the word for ‘reward, payment’. The
+usual West Saxon form of this word is mēd, and poetic Modern English meed
+suggests that mēd was also the Mercian form. However meord (once written
+by error meorð) and meard are more common in Northumbrian, whose
+scribes typically confused -eo- and -ea-. Other West Germanic languages agree
+with mēd in deleting the *z with compensative lengthening (against Gothic
+mizdō, and locally with *-izd- > *-ezd- first): Old Frisian mēde, mīde, meide; Old
+Saxon mēda, mieda; Old High German mēta, miata, mieta. Since there are no
+comparable examples of secondary *z-deletion in OHG, Crist considered mēta
+to be a loanword from Ingvaeonic, arguing that the borrowing of a word for
+‘payment’ would be unremarkable in a trade situation. His explanation for OE
+meord beside mēd is as follows: “Continental Pre-OE was originally spoken in
+Jutland at the northern periphery of the Ingvaeonic continuum; so perhaps the
+application of the rule in polysyllabic words did not spread this far north. The
+existence of OE mēd beside meord is not surprising if Old English is the
+product of some degree of dialect mixture, as is generally assumed.” In other
+words, Crist was compelled to invent a new protolanguage, Peripheral
+Northern Ingvaeonic, spoken at the very tip of Jutland, which escaped his rule,
+and from which OE meord was, in effect, borrowed. The same would apply to
+heordan ‘hards of flax’, the other OE word which he recognizes with a high
+vowel before *-zd- in the protoform. I have been unable to find any
+publication by Sean Crist which updates his conference paper, or any review
+of it, so I will attempt a brief review here.
+    Firstly, if OHG mēta can be an unremarkable loanword from Ingvaeonic
+(presumably Old Saxon mēda, borrowed into northwestern Old German
+before the High German consonant-shift reached it, and then regularly shifted
+to mēta), then so can Proto-OE *mēda > OE mēd be a loanword from the
+Saxon-Frisian area, with meord the regular OE outcome of inherited PGmc
+                                                                                            3
+
+
+*mizdō-.2 That is, Crist’s “rule”, which is actually a “soundlaw”, deleted *z
+between a high vowel and a dental with compensative lengthening only in
+Saxono-Frisia (or part of it), after the opportunistic band of Angles, Saxons,
+and Jutes (or most of them) had already settled in Britain. In this view the
+soundlaw was not pan-Ingvaeonic (with the exclusion of the tip of Jutland),
+but restricted to a smaller part of Ingvaeonia, and could have operated around
+the year 500. The OE doublet meord/mēd is comparable to the one in Early
+Modern Dutch involving ‘hards of flax’, he(e)rde (Kiliaen) against hēde
+(Hexham), the latter obviously borrowed from East Frisian. The distribution
+of mēd against meord/meard follows from Wessex (and Mercia) trading on a
+greater scale with the Saxons and Frisians than Northumbria did.
+    Beside OFris hēde Crist cited OE heorde, though this word is generally
+found in the plural heordan, in the Corpus Glossary ‘stuppa’ i.e. ‘tow, oakum,
+hurds, hards of flax’. He reconstructed PGmc *hezdōn- on the basis of an
+alleged connection with Greek κέσκεον ‘tow’ (Herodian), which has been
+analyzed as a reduplicated formation *κέσκεσον from PIE *kes- ‘comb, card’.
+Robert Beekes however remarked that PIE *kes-kes- would be an improbable
+structure, and preferred to regard the word (questionably) as Pre-Greek.3
+PGmc *hezdōn-, based on *hezda-, would also require an unusual PIE
+protoform *kes-dʱ(h₁)o-. It seems better to connect heordan with Sanskrit
+késara- n. ‘hair, mane’ and Latin caesariēs ‘profuse head-hair’, which Julius
+Pokorny referred to a root *kais- ‘Haar’.4 I prefer to avoid phonemic */a/ in
+PIE reconstructions and operate with four laryngeals, recognizing that *h₂
+does not aspirate preceding tenues in Indo-Iranic, but *h₁ and *h₄ do.5 Then
+
+2 That the earliest Old English spoken in Britain retained final short vowels after heavy
+
+syllables is indicated by the lenition in Welsh bwrdd ‘table, board’ < *burda beside the later
+borrowing bord (OE bord n.) and Siob ‘Cheapside’ < *Cēapa (OE cēap m. ‘sale, cattle, goods’).
+3 R. Beekes, Etymological Dictionary of Greek, Leiden/Boston 2010, p. 682.
+4 J. Pokorny, Indogermanisches etymologisches Wörterbuch, Bern 1959, p. 520. The failure
+
+of -s- to become -ṣ- in késara- has been explained (first by J. Wackernagel, Altindische
+Grammatik, Band I, Göttingen 1896, p. 232) through a modification of inherited *késra-.
+This in turn can be understood as a deverbal noun *kh₂éi̯s-ro- parallel to *déh₃-ro- ‘gift’.
+5 Jerzy Kuryłowicz found it necessary to introduce the fourth laryngeal in order to explain
+
+Indo-Iranic aspiration and Hittite zero corresponding to [a]-coloration elsewhere, a very
+good idea which trilaryngealists have summarily rejected (Quelques problèmes métriques
+du Rigvéda, Rocznik Orientalistyczny 4:196-218, 1928, esp. pp. 215-16; Études
+                                                                                             4
+
+
+*kais- can be replaced by *kh₂ei̯s-, with *h₂ coloring adjacent */e/ to *[a] and
+blocking secondary palatalization in Indo-Iranic. PGmc *mizdō-, Greek μισθός,
+and their cognates are referred to PIE *mis-dʱh₁ó-, where the second element
+involves *dʱeh₁- ‘put, place’ and the first is the zero grade of a sigmatic neuter
+(originally mobile) *méi̯os, *mi̯és- ‘an exchange’ from *mei̯- ‘exchange’. This
+zero grade *mis- can be understood as the syncopated form of the unsuffixed
+locative *mi̯és ‘in exchange’, which lost its accent when univerbated with
+*dʱh₁ó- ‘placed’, itself from *dʱeh₁-ó- before the syncope of pretonic */e/
+wherever the result of syncope was phonotactically allowed. The adjective
+*misdʱh₁ó- ‘placed in exchange’ was nominalized as ‘payment, reward’ and the
+like independently in the daughter languages, so the noun does not have a
+uniform gender. It is feminine in Germanic and Slavic, masculine in Greek, and
+neuter in Indo-Iranic.
+    Now if *kh₂ei̯s- is analyzed as an extended root, like *peh₂-s- ‘feed and
+protect one’s own (flocks)’, *kh₂ei̯-s- ‘comb one’s own (hair)’ implies a simplex
+*kh₂ei̯- ‘comb, card’ with a sigmatic neuter *kh₂éi̯os, *kh₂i̯és- ‘combing, carding’
+and compound adjective *kh₂is-dʱh₁ó- ‘placed in carding’ i.e. ‘discarded’ in
+processing flax, leading to PGmc *hizda- and the weak feminine *hizdōn-
+‘material discarded from flax, tow, oakum, hurds’.
+    Crist also had a problem with the behavior of PGmc *-izn-. On his theory
+OE twīn < *twizna- is regular, but not leornian ‘to learn’ < *liznō(ja)n-, along
+with OFris lirna/lerna, against OS līnōn.6 He suggested two explanations. One
+is that *z was not deleted before *n in his newly discovered Northernmost
+Ingvaeonic, so that leornian has the same source as meord, but twīn “must hail
+from a closely related dialect further south” (like mēd, presumably). His other
+proposal is that PGmc *liznō(ja)n- underwent *z-deletion throughout
+Ingvaeonic, but the *z was restored by analogy with the related causative ‘to
+
+Indoeuropéennes, vol. I, Kraków 1935, pp. 75, 254-55). But he wrongly concluded that *h₄
+also colored PIE */o/ to *[a], seeing this as the explanation of apparent lack of ablaut in the
+fem. sg. stem -ā-. Greek ὄγμος < PIE *h₄óǵmo- shows that this is not the case. The root
+must be *h₄eǵ- to account for Luwian katta aka- ‘drive under, subjugate’.
+6 In Crist’s paper the OHG forms lernēn/lirnēn have been wrongly copied into the OFris slot
+
+in the table (p. 1), and this error is maintained in the listing of “problematic forms” (p. 3)
+and subsequent discussion (p. 4), where *z is wrongly written for *n. The correct OFris
+forms are cited in the appendix (p. 5).
+                                                                                 5
+
+
+teach’, which he cites as *laizijanã. “The restoration could have happened
+either together or separately in OE and OFris; it could also have happened
+only in OE and have been reintroduced into OFris as a loan by Christian
+missionaries from England.”
+    The missionary hypothesis for OFris lirna/lerna from OE is quite plausible,
+given that the related causative, OE lǣran ‘to teach’, was borrowed into Old
+Norse as lǣra. But as with meord, I find it more economical to assume that the
+deletion *-izn- > *-īn-, like *-izd- (> *-ezd-) > *-ēd-, operated only in Old Saxon
+and Old Frisian after the separation of Old English, which was effectively
+complete by the year 500. If this restriction of Crist’s Law to Saxono-Frisian is
+accepted, OE twīn for expected *tweorn cannot be a native word, which is
+plausible enough since it means ‘linen’, a traded commodity. Middle English
+twīn, twyne ‘twine’ also refers to a traded commodity, as shown by the Dutch
+doublet tweern/twijn, the first native, the second borrowed from Frisian.
+Evidently part of Saxono-Frisia was the site of flax processing on such a large
+scale as to make exports profitable. The aberrant meaning of OE twīn ‘linen’
+against ‘twisted thread, twine’ elsewhere (including Middle High German
+zwirn, Low German twern, dialectal Swedish tvinne) is explicable if OE actually
+borrowed the adjective twīnen ‘made of twisted (flaxen) thread’ from
+OS/OFris *twīnan in connection with imported linen, whence the OE gloss
+twínen ‘bissina’ i.e. ‘of linen’. This would lead to the back-formation of twín
+‘byssus’ i.e. ‘linen’. But in Late OE twīn ‘linen’ was supplanted by līnen, a
+nominalization of the adjective ‘flaxen’, from līn ‘flax’. That cleared the way
+for the direct borrowing of twīn (in Late OE or Early ME) from Saxono-Frisia
+in its original sense of ‘twisted (flaxen) thread’.
+    I do not know why Crist cites PGmc *laizijanã ‘to teach’ beside *liznōn ‘to
+learn’, which is a glaring formal anachronism. The original *-é-, later posttonic
+*-i-, of causatives must have been syncopated very soon after the shift from
+inherited to prototonic accent, and is reflected in no attested language, so the
+usual way of citing this one is *laizjan-. OE leornian does not continue *liznōn
+directly, but the extended form *liznōjan-, like other Class II weak verbs. An
+analogical restoration to *liznōjan- would have had to act on Proto-OE
+*līnōjan- from the associated causative *lāzjan-, which seems rather
+implausible. One may also note OE (for)weornian ‘marcescere, tabescere,
+                                                                                             6
+
+
+senescere, arescere’, i.e. ‘to decay, wither, waste away, dry up’, evidently from
+*wiznō(ja)n-, reflecting a PIE root *u̯ ei̯s-, since *u̯ ei̯r- would be structurally
+aberrant. I am not aware of any OE causative *wǣran < *wāzjan- < *waizjan-
+which might, even theoretically, have restored *z to an expected *wīnō(ja)n-.
+    There is however another Class II weak verb overlapping in meaning, OE
+(for)wisnian, continued as Middle English wisenen ‘to shrivel up, to wizen’, and
+cognate with ON visna ‘to wither’. This verb presents a riddle of its own, since
+Class II weak stems are referred to the PIE shape *R(z)-néh₂-, and root-final *s
+(outside of Gothic) is expected to undergo Verner’s voicing to PGmc *z, as in
+*liznōn- < *lis-néh₂- from the root *lei̯s-. I believe the riddle can be solved by
+the application of two soundlaws already proposed. The first of these is
+Smith’s accent-retraction. In developing a laryngeal-based pretonic theory of
+the Germanic Verschärfung, Henry Lee Smith Jr. encountered the apparent
+double development of pretonic PIE *ruHw-, which he wrote as Indo-Hittite
+*ruAw-, the zero grade of an IH root *réwAw-.7 According to his theory, labial
+Verschärfung (Gothic and North Germanic *-ggw-, West Germanic *-ww-)
+should be the regular outcome of the pretonic zero grade, IH *ruAw-´ > IE
+*ruhw-´ > PGmc *ruγw-´ > Swedish rugg ‘shaggy hair’, dialectal Norwegian
+rugga ‘carpet of shaggy hair, rug’. But Old Norse rȳja ‘to pluck wool’ implied
+PGmc *rūw-, which Smith found baffling, for his theoretical framework did not
+admit a zero grade originating under the accent. One possibility he proposed
+was an accent-shift “in certain classes of words” retracting the accent to the
+zero-grade root vowel before the absorption of the following laryngeal.8
+
+7 H.L. Smith Jr., The Verschärfung in Germanic, Language 17:93-98, 1941.       Simple pretonic
+theories of the Verschärfung which ignore laryngeals (F. Bechtel, V.A. Dybo, G. Kroonen) fail
+to explain why Gothic þiwi ‘female servant’ (among other examples) has no Verschärfung.
+8 Smith understood ON rȳja as the outcome of PGmc *rūwjan- with absorption of the *w.
+
+Nowadays the root is considered to be *reu̯ H- ‘aufreißen’, and if ‘rug’ is to be explained, it
+must involve an oxytone suffix, NGmc *ruggwa- < PIE *ruH-u̯ ó-. Smith’s Law is still
+necessary to explain ON rȳja < Latest PIE *rúH-i̯e-, because an oxytone *ruH-i̯é- should have
+yielded ON *ryggja by parallelism with *ruH-u̯ ó-. Since *ruH-u̯ ó- ‘rug’ did not undergo
+Cowgill’s fortition (discussed below), the laryngeal cannot be *h₂ or *h₃, and Tocharian
+rwā- speaks against *h₁ (H. Rix et al., Lexicon indogermanischen Verben, 2nd ed., Wiesbaden
+2001, p. 510), so this root should be written as *reu̯ h₄-. The /o/-grade counterpart to ‘rug’,
+NGmc *raggwa- > ON rǫgg(r) ‘long coarse wool’, in my view continues not *rou̯ Ho-, but
+*roHu̯ ó- from earlier *rou̯ Hu̯ ó- by Gerasimov’s dissimilation in Late PIE (I. Gerasimov, On
+                                                                                           7
+
+
+     Vedic jī ́vati ‘lives’ against jīvá- ‘alive’ and jā́ yate ‘is born’ against jātá- ‘born’
+provide extra-Germanic evidence for a grade-dependent accent-shifting law
+corresponding to Smith’s proposal. This law, apparently of Late PIE date,
+retracted the accent from *CṚHC-é- to *CṚ́ HC-e- but left *CṚHC-ó- unchanged.
+Thus PIE *gʷih₃u̯ éti and *ǵṇh₁i̯étoi̯ regularly became *gʷíh₃u̯ eti and *ǵṇ́ h₁i̯etoi̯,
+but *gʷih₃u̯ ó- and *ǵṇh₁tó- remained oxytones. Finite verbal forms to *CṚHC-
+roots with endings *-ómi, *-óH, and the like would have their accent retracted
+by Systemzwang after those in *-eti < *-éti, *-etoi̯ < *-étoi̯, etc. The law has
+been undone for transparent Vedic passives like jñāyáte ‘is known’ and tāyáte
+‘is stretched’, to which the usual accentuation of -yáte has been restored. But
+tā́ yate ‘spreads out, goes forward’ (Dhātup.) retains the effect of Smith’s Law,
+*tṇ́ h₁i̯etoi̯ from *tṇh₁i̯étoi̯. The same applies to rīý ate ‘runs, flows’ below.
+     Combined with Northwestern pretonic shortening and Cowgill’s fortition,
+Smith’s Law helps to explain the discrepancy between East Gmc. *kwiwa-
+‘alive’ in Gothic qiwa-, qius and Northwest Gmc. *kwikwa- in OE cwic(u), ON
+kvik(k)r, etc. Pretonic shortening involves laryngeal deletion after a PIE high
+vowel (*i, *u) and before a resonant (*r, *l, *m, *n, *i̯, *u̯ ) followed by an
+accented vowel in Proto-Northwest Indo-European, whose daughters include
+Italic, Celtic, and Germanic. The best-known examples are PIE *u̯ iHró- ‘man’ >
+PNWIE *u̯ iró- and *suHnú- ‘son’ > *sunú-. This shortening is sometimes called
+Dybo’s Law, but it is quite different from what Vladimir A. Dybo proposed to
+account for the shortening he observed in Celtic and Italic (but not Germanic)
+by backdating Balto-Slavic accentual mobility to PIE. Some authors use it
+indiscriminately, as though it were a sporadic process, and if justification for
+irregularity is required, they appeal to counter-examples, none of which is
+probative. Latin fūmus and pūrus are commonly referred to *dʱuH-mó- and
+*puH-ró- to illustrate failure of pretonic shortening. But fūmus need not be
+cognate with Greek θῡμός and the like; it can continue Old Latin *fusmos <
+*dʱus-mó- from the recognized root *dʱu̯ es-. The ritual term pūrus could easily
+have been extracted from its antonym impūrus < *ṇ́ -puH-ro-, whose laryngeal
+
+Alternation Type Ved. gā́ yati - gītá-, Historische Sprachforschung 119:153-67, 2006). This
+covers both *ruggwa- and *raggwa- without positing “closely allied roots” as Smith did, or
+invoking the spread of Verschärfung from one form to a related form, as Edgar H.
+Sturtevant did (The Indo-Hittite Laryngeals, Baltimore 1942, pp. 80-83).
+                                                                                    8
+
+
+was not pretonic. Umbrian ueiropequo ‘men and cattle’, with -ei- apparently
+written for /ī/, is sometimes cited to claim that Italic used *u̯ iro- and *u̯ īro-
+indiscriminately, but this formation is clearly a plural dvandva expressing a
+pair of groups, like Vedic ajāváyaḥ m. pl. ‘goats and sheep’, and was
+presumably inherited by PNWIE with a single accent on its second member,
+*u̯ iHro-péḱu̯ o-, so that again the laryngeal was not (immediately) pretonic.
+     Unlike pretonic shortening, Cowgill’s fortition is confined to Germanic.
+Sophus Bugge gave some examples of PGmc *-k- apparently arising from PIE
+*-u̯ -, including the first-person dual pronominal stem *unka- (extracted from
+Go. acc. ugk, dat. ugkis) against Ved. āvá-; OE tācor, OHG zeihhur ‘husband’s
+brother’ against Ved. devár- etc.; and ON skeika ‘to swerve’ against Lat.
+scaevus, Grk. σκαι(ϝ)ός ‘on the left’. He noted Go. qius, qiwa- ‘living’ with Ved.
+jīvá- against ON kvikr, kvik(k)va-, OE cwicu, OHG quec, but failed to comment
+on the vowel-length discrepancy or the second labiovelar in kvik(k)va-. For
+this phenomenon he proposed that PGmc *-k- had arisen from *-u̯ -
+immediately preceded by pretonic PIE *ṇ, *ai, or *oi, though he admitted
+difficulties with the soundlaw.9 William M. Austin, who supported Smith’s
+view of accent-dependent Verschärfung of laryngeal-glide sequences,
+proposed that the development of PGmc *-k- described by Bugge was a
+complementary phenomenon, occurring when *-Hw-, or less commonly *-Hj-,
+immediately followed the PIE accent. In order to explain long vowels before
+simple glides, as in Go. hāwi ‘hay’ and OHG tāju ‘I suck’, Austin had to posit a
+rather cumbersome device from Indo-Hittite theory, an additional phoneme
+*ь which prevented the sounds on either side from interacting with each
+other.10 Attempting to unclutter the issue, Warren Cowgill credited Austin
+with hypothesizing that at least one laryngeal became k in Germanic before w.
+It appeared to Cowgill that the laryngeal was occluded first as *ǥ, which only
+later was shifted to k. His examples were all pretonic: *kwikwaz ‘alive’ from
+PIE *gʷiOwós (i.e. *gʷih₃u̯ ós), and the dual (dative) pronouns *unkiz and
+*inkwiz, which he considered “probably” from *ṇH-wé and *uH-wé with
+“considerable morphological remodeling”, where *H is an undetermined
+
+9 S. Bugge, Zur altgermanischen Sprachgeschichte. Germanisch ug aus uw, (Paul und
+Braune’s) Beiträge zur Geschichte der deutschen Sprache und Literatur 13:504-15, 1888.
+10 W.M. Austin, A Corollary to the Germanic Verschärfung, Lg. 22:109-11, 1946.
+                                                                                      9
+
+
+laryngeal.11 Against Bugge and Austin, Cowgill presumed that the *u̯ in this
+environment, following the PIE laryngeal, was maintained as PGmc *w.
+    Cowgill’s first example is technically incorrect but easily remediated.
+Proto-Northwest IE would have inherited *gʷíh₃u̯ eti ‘lives’ and *gʷih₃u̯ ó-
+‘alive’ just as Indo-Iranic did. Pretonic shortening could operate only on the
+adjective, yielding *gʷiu̯ ó-, reflected as Celtic *biwo- (Old Irish béo, Middle
+Welsh byw, etc.) and Gothic qiwa-. But daughter languages could individually
+contaminate the adjective with the verb-stem. Latin vīvit is regular from
+*gʷíh₃u̯ eti, but vīvus owes its long vowel to contamination. At an early stage of
+PGmc, Cowgill’s fortition *h₃u̯ > *gw made the verb *gwígweti; at a late stage,
+following the Lautverschiebung, this became *kwikwiþ. NWGmc *kwikwa- is
+thus parallel to vīvus; the adjective has been contaminated by the verb, which
+is unattested as such but implied by ON kvik(v)endi n. ‘living thing’ and the
+causative kveikja, kveykva, etc. ‘to bring to life; to kindle (a fire)’.
+    If *ṇHu̯ é was the 1du. acc. pronoun ‘us two’, it needs no remodeling to
+produce *unkwe > *unke (by regular dissimilation) > Go. ugk. Greek νω̑ε ‘id.’
+(Antimachus, Corinna) requires only accent-retraction from *νω(ϝ)έ < *ṇh₃u̯ é.
+The Vedic nom. āvám and acc. (later also nom.) āvā́ m have obviously been
+remodeled, with inherited *āvá serving as the base. But I do not see how any
+amount of remodeling could produce a 2du. dat. *inkwiz (Go. igqis, ON ykkr)
+out of *uHu̯ é, which would have been reduced to *uu̯ é already in PNWIE. The
+remodeling must have consisted of preposing the deictic stem *h₁i- to *ṇh₃u̯ é,
+so that *h₁inh₃u̯ é became *inkwe immediately after the Lautverschiebung. The
+Latin demonstrative iste shows that *h₁i- could carry second-person force.
+    Cowgill’s three examples all involve *h₃, but Bugge’s tācor and skeika have
+extra-Germanic cognates with /a/-vocalism, suggesting that either *h₂u̯ or
+*h₄u̯ , provisionally *hₐu̯ , was similarly fortited. The difficulty now is that the
+PIE protoforms *dehₐiu̯ ér- ‘husband’s brother’ and *skehₐiu̯ ó- ‘on the left’ do
+not have *hₐ immediately preceding *u̯ . Winfred P. Lehmann, who operated
+with reduced grade in PIE, offered a rather complex solution. He wrote the
+protoform of ‘husband’s brother’ as *deXywer-, and assumed that *y was lost
+
+
+11 W. Cowgill, Evidence from Greek, in W. Winter ed., Evidence for Laryngeals, The Hague
+
+1965, pp. 142-80, esp. p. 144 with note 1, p. 169 w/n. 58, p. 178 w/n. 72.
+                                                                                       10
+
+
+from the normal-grade form in PGmc, yielding *-eXyw- > *-aXw- > *-ak-. His
+reduced-grade sequence produced *-ₑXyw- > *-aiw-. Lehmann then proposed
+that PGmc had conflated the two results into a single paradigm with vocalism
+*-ai- and consonantism *-k-, namely *taiker-. A similarly convoluted process
+was invoked to get PGmc *skaika- out of *skeXyw-, with ON skeika continuing
+*skaikjan-.12
+    Frederik Kortlandt, using Austin’s examples to argue that Proto-Germanic
+had a glottal stop of laryngeal origin which was oralized to yield k before w,
+posited metathesis of the laryngeal residue in some of the examples.13 In all
+such cases a laryngeal residue adjacent to two resonants underwent
+metathesis into their midst, to wit:
+
+   OE cwic ‘alive’ < *gʷiHw- < *gʷHiw-
+   ON skeika ‘swerve’ < *skaiHw- < *skaHiw-
+   OHG speichaltra ‘spit’ < *speiHw- < *speHiw-
+   OE spic ‘fat’ < *spiHw- < *spHiw-
+   OE tācor ‘brother-in-law’ < *daiHw- < *daHiw-
+
+   The first example is unnecessary, since the laryngeal was originally
+between the resonants in PIE *gʷih₃u̯ ó-, and the complications in Northwest
+IE have already been discussed. The third and fourth involve assumptions
+which are beyond the scope of this study. The second and fifth are Bugge’s
+examples of fortition which Cowgill did not address, and Kortlandt’s
+metathesis is much simpler than Lehmann’s scenario: ON skeika < PGmc
+*skaikwjan- < *skaikwa- < *skaigwa- < *skai̯hₐu̯ ó- < *skahₐiu̯ ó-, i.e. PIE
+*skehₐiu̯ ó- (Grk. σκαι(ϝ)ός, Lat. scaevus ‘on the left’ < ‘deviating, skew’); OE
+tācor < *taikura-, remodeled from PGmc *taikwer- < *daigwér- < *dai̯hₐu̯ ér- <
+*dahₐiu̯ ér-, i.e. PIE *dehₐiu̯ ér-.
+   In the paper cited, Kortlandt did not distinguish among Proto-Germanic
+residues of different PIE laryngeals, and this led him to what I consider a
+
+12 W.P. Lehmann, Proto-Indo-European Phonology, Austin 1952, pp. 50-51.
+13 F. Kortlandt, Vestjysk stød, Icelandic preaspiration, and Proto-Indo-European glottalic
+
+stops, in M.A. Jazayery and W. Winter eds., Languages and Cultures. Studies in Honor of
+Edgar C. Polomé, Berlin 1988, pp. 353-57.
+                                                                                  11
+
+
+faulty conclusion. He argued from OHG tāju that there is no evidence for a
+parallel fortition before j, where the laryngeal simply lengthened the vowel.
+But here the laryngeal was *h₁, the verb being *dʱh₁eh₁- ‘suck’ < ‘be placed (at
+the breast)’. If *h₂i̯ was fortited to PGmc *tj, it provides a very good
+explanation of the factitive suffix *-atjan- in terms of PIE *-éh₂i̯e/o- (e.g. Latin
+novāre ‘to renew’ < *neu̯ -éh₂i̯e/o-, with *h₂ verified by Hittite ne-wa-aḫ-ḫu-un
+‘I renewed’). For tetralaryngealists, it corroborates that *h₂ and *h₃ are the
+laryngeals involved in Cowgill’s fortition before glides, while *h₁ and *h₄
+under appropriate conditions (which I intend to elucidate in a subsequent
+study) create Verschärfung of adjacent glides. If this distinction is not
+recognized, there can be no explanation of Gothic hāwi.
+     Now if OE wisnian and ON visna are cognate with Lith. výsti, Latv. vīst ‘to
+wither, fade’, the PIE root *u̯ ei̯Hs- (extended from *u̯ ei̯H-) would produce
+*u̯ iHs-néh₂-, satisfying the condition for accent-retraction to *u̯ íHs-neh₂-,
+which PGmc inherited as *u̯ íHsnah₂-. Kortlandt’s metathesis would then
+produce *u̯ Hísnah₂-, and Verner’s Law would not operate on the resulting
+*wísnā-, leading to PGmc *wisnōn- > *wisnōjan- > OE wisnian.
+     Smith’s retraction and Kortlandt’s metathesis can also explain the failure of
+rhotacism in the OE participle -risen (ā-risen ‘arisen’, ge-risen ‘befitting’; cf. ON
+gest-risinn ‘hospitable’) to the present -rīsan < PGmc *rīsan-. This is not a
+matter of the existing *r blocking the shift of *s through preventive
+dissimilation, since no such thing happened with OE froren ‘frozen’, droren
+‘fallen’, or hroren ‘fallen’. If the original root was *(H)rei̯Hs-, the zero-grade
+deverbative *(H)riHs-éno- (the type generalized as a participle in NGmc and
+OE) would undergo Late PIE accent-retraction to *(H)ríHseno-, and Early
+PGmc metathesis of *ríHseno- to *rHíseno-, leading to PGmc *risena-, whence
+OE -risen, ON -risinn. But the /o/-grade causative *(H)roi̯Hs-éi̯eti had neither
+*CṚHC- for the retraction, nor *H adjacent to two resonants for the metathesis,
+so it became (just after the Lautverschiebung) *raiHzíjiþi, still later with
+prototonic accent, syncope, and laryngeal deletion PGmc *raizjiþ, *raizjan-,
+whence OE rǣran ‘to cause to rise, to rear’. ON visinn ‘withered, dried out’ <
+*u̯ Híseno- < *u̯ íHseno- < *u̯ iHs-éno- is parallel to -risinn, OE -risen.
+     Further identification of *(H)rei̯Hs- is challenging. Its Germanic reflexes
+mean both ‘rise’ and ‘fall’ (secondarily ‘fall to one’s lot, befit’), so Alf Torp
+                                                                                          12
+
+
+explained it (his PGmc zero-grade *ris-) as ‘sich senkrecht (aufwärts oder
+niederwärts) bewegen’. He understood *ris- as an extended form of PGmc *ri-
+‘rinnen’, inherited from (zero-grade) PIE *ri- reflected in Vedic riṇā́ ti ‘streams,
+releases’, rīý ate ‘runs, flows’, rītí- ‘stream(ing), movement’. He identified *ri-
+itself as an extension of PIE *er- ‘bewegen’ reflected in Greek ὀρίνω ‘I excite,
+arouse’.14 Jan de Vries similarly regarded ON rīsa ‘to rise’ as an /s/-extension
+of PIE *(e)rei-, itself an extension of *er-.15 Helmut Rix et al. recognized the
+seṭ-basis underlying Ved. riṇā́ ti and Grk. ὀριν́ ω, assigning them to PIE *h₃rei̯H-
+‘wallen, wirbeln’. But the Germanic verbs under study, Gothic ur-reisan ‘to
+raise’ etc., are ascribed questionably to a desiderative *h₁rei̯s- listed under
+*h₁rei̯- ‘sich erheben’, where the possibility of *Hrei̯H- is mentioned. The
+semantic difficulty is acknowledged only for OHG: “Im Ahd. dagegen mit
+Umkehrung der Bewegungsrichtung ‘niederfallen’.”16 This is unsatisfactory,
+since Torp noted Middle Low German rīsen ‘sich erheben, auch fallen’ and the
+Bavarian causative rēren ‘fallen oder rinnen lassen’, further pointing out that
+‘fallen’ can develop into ‘ziemen’, i.e. ‘zusammenfallen mit’, which is the sense
+attested by OE gerīsan, OS girīsan, and OHG garīsan.
+    It seems best to infer that the PGmc reflex of the *(H)rei̯Hs- under study
+meant roughly ‘rinnen’, i.e. ‘flow, run, move as liquid does spontaneously’. The
+archetypal liquid, water, can rise from a spring or fall as rain, and the level of a
+body of water can rise or fall due to a net influx or efflux. In this view there is
+no “Umkehrung der Bewegungsrichtung” involved, and Torp was correct to
+connect the Gmc. verbs with Ved. riṇā́ ti, since the underlying idea is flowing,
+not rising. The extended root thus belongs with *h₃rei̯H-, itself a double
+extension of PIE *h₃er- ‘set oneself in motion’. The force of the *-s- is no more
+“desiderative” than it is in *peh₂-s- ‘feed and protect one’s own (livestock)’ and
+*kh₂ei̯-s- ‘comb one’s own (hair)’. In *h₃rei̯H-s- it referred originally to water
+(or liquid in general) seeking its own level.
+    The OE transitive rīsan ‘to seize’ (glossed gerísaþ ‘rapiunt’, rísende ‘rapax’,
+gerisen ‘rapta’) is apparently a different verb of the shape *(H)rei̯Hs-. As the
+intransitive verb *h₃rei̯Hs- is a triple extension of *h₃er- ‘start moving’, this
+
+14 A. Torp, Wortschatz der germanischen Spracheinheit, Göttingen 1909, pp. 345-46, 341.
+15 J. de Vries, Altnordisches etymologisches Wörterbuch, 3rd ed., Leiden 1977, p. 447.
+16 LIV² 305-06, 252.
+                                                                                          13
+
+
+transitive can be considered a parallel triple extension of *h₂er- ‘to seize, take’.
+Incidentally, PIE *h₂ŕ tḱo- ‘bear’ can be analyzed as an early nominalization
+(with accent-retraction) of *h₂ṛ-tḱó- ‘born into seizing’, parallel to *mis-dʱh₁ó-
+‘placed in exchange’ discussed above. As an apex predator, the bear by nature
+seizes whatever he wants, including honey from bees. I infer an archaic root-
+noun *h₂ór ‘seizing’ with locative *h₂ér. When this locative was preposed and
+collocated with *tḱó- (earlier *teḱó-) ‘begotten, born’, it lost its own accent,
+and *h₂er-tḱó- was syncopated to *h₂ṛ-tḱó-.
+     Verner’s shift similarly fails in the OE participles miþen ‘concealed,
+avoided’ and wriþen ‘twisted’ to the Class I strong verbs mīþan and wrīþan,
+and ābroþen ‘frustrated, unsettled, ruined’ to Class II ā-brēoþan. I reconstruct
+PIE extended roots *mei̯Ht-, *u̯ rei̯Ht-, and *bʱreu̯ Ht-, with the same zero-grade
+deverbative development as *(H)rei̯Hs- above. A root *mei̯H- is implied by the
+Vedic nasal present minā́ ti ‘exchanges, deceives, damages, lessens’. With an
+additional /t/-extension, *mei̯Ht- would yield *miHténo- > *míHteno- >
+*mHíteno- > PGmc *miþena-. For wrīþan, Vedic does not attest a nasal present
+*vrināti, but there is vlināti ‘presses down, compresses’. Semantically
+however the Vedic verb goes much better with Greek εἰλέω ‘I press together,
+draw together, fence in’ from PIE *u̯ el- ‘press together’, the extended root
+being *u̯ lei̯H-.17 I suspect that a parallel extension *u̯ rei̯H- existed to *u̯ er-
+‘turn, bend, twist’, and with a further extension *u̯ rei̯Ht- yielded *u̯ riHténo- >
+*u̯ ríHteno- > *u̯ rHíteno- > PGmc *wriþena-.18 For ā-brēoþan, a root *bʱreu̯ H-
+‘aufbrechen’ is already recognized, extended as *bʱreu̯ Hd- in OE brēotan, ON
+brjōta ‘to break, to destroy’.19 So I see no difficulty in regarding *bʱreu̯ Ht- as a
+parallel extension yielding *bʱruHténo- > *bʱrúHteno- > *bʱrHúteno- > PGmc
+*bruþena-.
+     The foregoing mechanism obviously does not apply to the Class V
+participles ge-nesen ‘recovered’ and lesen ‘collected’, whose PIE roots were
+
+17  M. Mayrhofer, Kurzgefaßtes etymologisches Wörterbuch des Altindischen, Band III,
+Heidelberg 1976, p. 283; EDG 383-84; IEW 1138.
+18 The root is *u̯ er- ‘drehen, biegen’, which can take many extensions (IEW 1152-60).
+
+Pokorny referred OE wrīþan to *u̯ rei̯t- (IEW 1159-60), but that would have yielded *wriden
+as a participle. Rix et al., less enthusiastic about extensions than Pokorny, assigned wrīþan
+to a questionable independent root ?*u̯ rei̯t- ‘drehen, winden’ (LIV² 700).
+19 LIV² 96.
+                                                                                      14
+
+
+simply *nes- and *les-. Regular development of *ṇs-éno- and *ḷs-éno- to PGmc
+*unzena-, *ulzena- presumably led to new participles *nesena-, *lesena-
+following the most transparent Class V model. In Class IV, such participles
+and other deverbatives had to be remodeled across the board with a seṭ-
+extension. For example, PGmc *beran- ‘to bear’ < PIE *bʱer- would have
+directly involved zero-grade *brena- < *bʱr-éno-, creating a discrepancy in the
+number of syllables against other strong classes. This was resolved by using
+*burena- < *bʱṛHéno- from the seṭ-root *bʱerH-. Similarly *buri- ‘son’ < *bʱṛHí-
+involves the seṭ-root. One may compare Lith. bérnas ‘son’, apparently a
+concretized abstract ‘birth’ < PIE *bʱérH-no-. I suspect that the seṭ-extension
+was *-h₁-, imparting telic force to the verb. Deverbatives of this sort, as well
+as past participles, refer to the result of the verb.
+     The concordance in meaning between OE wisnian and weornian was tight
+enough to produce a cross-form for-weosnian. Presumably PGmc *wisnōn and
+*wiznōn were also very close in meaning, and the deduced roots *u̯ ei̯H-s- and
+*u̯ ei̯s- are likely extensions of a simple root *u̯ ei̯-. Latin viēscere ‘to wither,
+become shriveled’ presupposes a stative present *viēre ‘to be withered,
+shriveled’ < PIE *u̯ i(H)éh₁-. If the laryngeal was in the stative, it must have
+been *h₁ due to lack of coloration. One may conjecture a basic PIE root *u̯ ei̯-
+‘make to grow, allow to ripen’, inherently progressive, with a collateral sense
+‘allow (some outcome) to develop, choose (some outcome), desire, wish’
+reflected in Lat. vīs < *u̯ éi̯-si. With a telic *h₁-extension this would become
+*u̯ ei̯h₁- ‘allow to ripen fully, bring to maturity’, inherently aoristic, possibly
+reflected in Lat. invītus ‘unwilling’ < *ṇ́ -u̯ ih₁-to- ‘not allowed to ripen fully’ i.e.
+‘not allowed to pursue one’s own inclination’. With the *s-extension discussed
+above on p. 4, one would have *u̯ ei̯s- ‘allow one’s own to ripen’. With *-s-
+applied to external property, this could mean ‘allow one’s own (crops) to
+ripen, grow (crops), work one’s land’, the agricultural counterpart to *peh₂s-,
+reflected with a generalized force in Vedic viveṣṭi ‘works’, viṣṭá- ‘worked’, víṣ- f.
+‘work’. Latin virēre ‘to be green’ could continue the stative present *u̯ is-éh₁-
+‘be ripe’. With *-s- referring to inalienable property, *u̯ ei̯s- could mean ‘allow
+one’s own (body) to ripen, mature, get older’. If *-s- were applied to *u̯ ei̯h₁-
+with this force, *u̯ ei̯h₁s- would mean ‘mature completely, reach old age’, with
+such secondary senses as ‘fade, wither, shrivel up, dry out’. As a root-aorist, it
+                                                                                15
+
+
+could form a zero-grade present *u̯ íh₁s-eti with regularly retracted accent,
+reflected in Lith. výsti, Latv. vīst already mentioned.
+    The simple PIE root *lei̯s- ‘trace, track, follow a trail’ is found in Germanic
+only as the unreduplicated perfect expressing the resulting state, Gothic lais
+‘he knows’ (attested once) < *lói̯s-e. The PGmc causative *laizjan- ‘to make to
+know, to teach’ < *loi̯s-éi̯e- and resultive-inceptive *liznōn- ‘to come to know,
+to learn’ < *lis-néh₂- have already been mentioned. Based on *u̯ ei̯s- ‘ripen,
+mature’ and *u̯ ei̯h₁s- ‘reach old age, wither’, one would expect PGmc *wiznōn-
+‘to come to maturity, to mature’ and *wisnōn- ‘to come to old age, to reach the
+withering phase’, each scarcely differing in meaning from its obsolete basic
+verb. The fact that OE weornian and wisnian are practically synonymous, both
+meaning ‘to wither’ and the like, probably results from euphemism and its
+reaction. One may compare the periodical Modern Maturity, published by an
+American retirement association, which would more accurately be labeled
+Modern Old Age. Using ‘maturity’ as a euphemism for ‘old age’ eventually
+leads to ‘maturity’ being understood as ‘old age’. I suspect that PGmc *wiznōn
+was used as a euphemism for *wisnōn, and gradually took over the force of
+*wisnōn. But when OE weornian became fully synonymous with wisnian, it
+also became superfluous, and only the latter has survived into Modern English
+as wizen.
+
