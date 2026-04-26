@@ -37301,3 +37301,307 @@ this single row is disproportionate. Reverted: PROTOFORM stays `*bō`,
 COUNTERPART becomes `bū`. The FST work in §17.31 is therefore framed as
 a monosyllable guard on the existing weak-tail / apocope rule — no new
 inventory.
+
+## §17.31 — Cross-source dossier on monosyllable apocope (research, no FST changes yet)
+
+Compiled with Opus subagent across `docs/references/`. Question: how do
+the major OE/PGmc authorities formulate the weak-tail / apocope / final-
+shortening rules, and do their structural descriptions admit a stressed
+monosyllabic final long vowel as a target?
+
+### .1 Inventory of relevant rules across sources
+
+#### .1.a Campbell (1959)
+
+| § | Phenomenon | Environment |
+|---|---|---|
+| §122 | "A change of final accented ō to ū" | Final, **accented** ō, in WGmc precursor of OE (`campbell_old_english_grammar.txt:4029-4035`) |
+| §125 | Lengthening of final open vowels under full accent | Final open vowel **under full accent** (`:4085-4089`) |
+| §331(1) | Loss of IE *a, *o, *e in absolute finality (PGmc) | "in Gmc. in absolute finality, i.e. when no consonant had followed them" (`:9192-9197`) |
+| §331(4) | Loss of *a in *final unaccented* syllables | "In **final unaccented** syllables, a (< a or o) was lost even when a consonant followed" (`:9232-9234`) |
+| §331(5) | Shortening of long vowels in final unaccented syllables | "In **final unaccented** -syllables long vowels with the normal intonation were shortened" (`:9270-9273`) |
+
+#### .1.b Ringe & Taylor (2014)
+
+| § | Phenomenon | Environment |
+|---|---|---|
+| 2.1.1 (PNWGmc) | "word-final long high vowels were shortened in **unstressed** syllables" | Explicit unstressed conditioning (`ringe_taylor_linguistic_history_vol2.txt:1735-1742`) |
+| 3.1.4 (PWGmc) | Loss of word-final short *-i, *-u | "**not lost in fully stressed disyllables**"; lost only in third-or-later syllables (`:3870-3893`) |
+| 3.1.4 ¶ on monosyllables | **Lengthening** of word-final vowels in stressed monosyllables | "It seems clear that word-final vowels in stressed monosyllables were lengthened in PWGmc" (`:4365-4377`) |
+| 6.8.1 (OE) | Apocope of short high vowels | "after a heavy syllable" / "after an unstressed syllable preceded by a stressed light syllable" (`:16349-16353`). Both presuppose ≥2 syllables. |
+| 6.8.3 (OE) | Shortening of *unstressed* long vowels | "word-final **unstressed** long vowels were shortened" (`:17118-17125`) |
+
+#### .1.c Fulk (2018)
+
+| § | Phenomenon | Environment |
+|---|---|---|
+| §4.11 | "final stressed *-wō yields -ū" — explains OE *cū, hū, tū, bū* | "OE neut. tū … OE cū, OFris. kū … OE neut. bū can be explained as analogical to tū" (`fulk_comparative_grammar_early_germanic.txt:4989-4994`) |
+| §5.2 | PGmc final-vowel facts | "Monosyllabic words of lesser stress retained a final short vowel regardless of its height" (`:5658`) |
+| §5.6 | OE syncope/apocope | Conditioned on syllable weight of preceding stem; discussion is exclusively about polysyllabic stems (`:6428-6500`) |
+| Pre-§4.11 | Lengthening of final vowel in stressed monosyllables | "OIcel. þú, OE þū, OS thū" (`:3057`) |
+
+#### .1.d Brunner (1965)
+
+| § | Phenomenon | Environment |
+|---|---|---|
+| §69 | WGmc ō → OE ū in *bū, cū, hū, tū* | Listed among regular OE reflexes of stressed WGmc ō; not framed as apocope (`brunner_1965_altenglische_grammatik.vision.txt:2813-2820`) |
+| §143 | PGmc-period apocope of *a, *o | "im Auslaut **unbetonter Silben**" (`:6539-6545`) |
+| §145 + Anm. 2 | Common-Gmc loss of final *-i, *-u "**nach schwachtoniger Silbe**" | (`:6555-6580`) |
+| §146 | OE-period apocope of *-i, *-u | "In ursprünglich **zweisilbigen Wörtern** … nach langer Wurzelsilbe" (`:6584-6605`) |
+| §149 | OE *-u from germ. ō only operative in originally **3+-syllable** words | "in **ursprünglich drei- und mehrsilbigen Wörtern** (also nach schwachtoniger Silbe)" (`:6680-6700`) |
+
+#### .1.e CHEL vol. I (Hogg ed.) — the misnamed `hogg_vol1.txt`
+
+(NB: `hogg_vol1.txt` in the corpus is **not** Hogg's *Grammar of OE
+Phonology* (1992); it is *The Cambridge History of the English
+Language*, vol. I, edited by Hogg.)
+
+Apocope formulated on high vowels with a preceding-syllable-weight
+condition (`hogg_vol1.txt:5907-5915`); no formulation that could even
+in principle target a monosyllable. No discussion of long final vowels,
+no monosyllable mention.
+
+### .2 Does each source give an explicit monosyllable exemption?
+
+The phrasing differs from source to source, but **every authority that
+formulates the rule does so in terms of a stress/accent condition**, not
+by enumerating syllable counts. A monosyllable's lone vowel is by
+definition stressed, so it falls outside the scope of the rule
+automatically. None of the sources adds an *additional* explicit "but
+monosyllables are exempt" clause, because none is needed.
+
+**Verdict:** every source frames apocope/shortening as conditioned on
+(a) the target vowel being **unstressed**, or (b) the existence of a
+**preceding stressed syllable**. None gives an "exception clause" for
+monosyllables, because the rule's environment never picks them up in
+the first place. **A FST that *does* pick them up has implemented the
+rule too broadly.**
+
+### .3 Campbell §122 in detail
+
+Full text (`campbell_old_english_grammar.txt:4029-4035`):
+
+> "§ 122. A change of final accented ō to ū appears to have taken place
+> in the form of West Gmc. from which OE was derived: OE cū *cow*, hū
+> *how*, tū *two*, bā *both*. It is, however, possible that cū, which
+> has ū in ON and OFris. also, is an I-E variant, and that the West
+> Gmc. change of ō > ū only occurred after w, which was then lost. OS,
+> OFris. hū (in both languages beside huō) suggests that the change
+> could occur after w in all the 'Ingvaeonic' area."
+
+Forms adduced: `cū`, `hū`, `tū`, `bū` (Campbell prints "bā" in the OCR,
+but the WGmc raising target is `bū`; Fulk and Brunner agree on `bū`).
+
+Campbell presents this as a **positive raising/change**, not as the
+residue of a more general final-shortening rule. Located in his "WEST
+GERMANIC INNOVATIONS" chapter (`:4060-4061`). Followed by a *separate*
+positive lengthening rule for stressed final vowels (§125).
+
+So §122 is **a raising rule, not just a preservation**. To handle the
+four lexical items it covers, the FST needs a rewrite somewhere.
+Independently, §331(5) is evidence that the *general* shortening rule
+should be guarded so that it does not eat the input long vowels in the
+first place.
+
+### .4 R&T on apocope and weak-tail
+
+Three decisive passages (full quotations in subagent dossier; key
+clauses here):
+
+1. **PNWGmc shortening of word-final long high vowels** — explicit
+   unstressed condition (`:1735-1742`): "word-final *-ō > *-ū; word-final
+   long high vowels were shortened **in unstressed syllables**." This
+   is exactly the chronology our FST should mirror.
+2. **PWGmc loss of word-final short *-i, *-u** (`:3870-3893`): the
+   rule's structural description "lost in **third and later syllables**"
+   *cannot* be satisfied by a monosyllable.
+3. **PWGmc lengthening in stressed monosyllables** (`:4365-4377`):
+   "word-final vowels in stressed monosyllables were lengthened in
+   PWGmc". Examples: PGmc *nu > PWGmc *nū > OE nū; PGmc *swa >
+   PWGmc *swā > OE swā.
+
+R&T 6.8.3's worked examples for shortening are without exception
+polysyllabic inflectional endings (gen.pl. -a < -ǭ, dat.sg. -e < -ai,
+ō-stem nom.pl. -a < -ōz, etc.). None is a monosyllable.
+
+### .5 Fulk
+
+§4.11 (`fulk_comparative_grammar_early_germanic.txt:4989-4994`):
+> "At least in some instances, **final stressed *-wō yields -ū**, as in
+> OE OFris. OS hū 'how' (beside OFris. OS huō) and OE neut. tū 'two'.
+> The same change probably results in OE cū, OFris. kū 'cow' (also
+> OIcel. kýr, dat. & acc. kú, but OS cō, OHG kuo), since this derives
+> from PGmc. *kwō- … and OE neut. bū 'both' can be explained as
+> analogical to tū."
+
+Fulk (a) restricts the raising to a stressed *-wō* environment, (b)
+treats `bū` as analogical to `tū`, and (c) calls the change facultative
+across NSGmc.
+
+§5.2 (`:5658`) on stressed-vs-unstressed monosyllables: "Monosyllabic
+words of lesser stress retained a final short vowel regardless of its
+height" — examples PGmc *ni, *sa.
+
+§5.6 (`:6420-6500`) discusses syncope/apocope entirely in terms of
+polysyllabic inflectional/derivational endings. No monosyllable comes
+into the discussion.
+
+### .6 Brunner
+
+§143 (`brunner_1965_altenglische_grammatik.vision.txt:6539-6545`):
+> "Indogerm. a, o (= germ. a) schwanden sowohl im unmittelbaren Auslaut
+> wie vor germ. z … das im Auslaut **unbetonter Silben** westgerm.
+> gefallen ist."
+
+§145 Anm. 2 (`:6577-6580`): "altes kurzes -u **nach schwachtoniger
+Silbe** im hist. Ae. nirgends erhalten."
+
+§146 (`:6595-6605`): "In **ursprünglich zweisilbigen Wörtern** schwindet
+nämlich nachtoniges, unbetontes -i und -u nach langer Wurzelsilbe…"
+
+§149 (`:6680-6685`): "Aus germ. ō … entstandenes auslautendes ae. -u …
+ist in **ursprünglich drei- und mehrsilbigen Wörtern** (also nach
+schwachtoniger Silbe) teilweise erhalten."
+
+§69 — Brunner's actual treatment of *bū, cū, hū, tū* (`:2813-2820`):
+> "Auslautendes ō erscheint als û in bū beide, cu Kuh und mit Ausfall
+> eines vorangehenden w (§ 173) in hū wie, tū zwei."
+
+For Brunner this is an outcome of the ordinary stressed-vowel ō, not
+anything to do with apocope. Discussed in his stressed-vowel chapter
+(§§64-70), not in his apocope chapter (§§143-150).
+
+**Verdict on Brunner:** every apocope/final-reduction rule in §§143-150
+is structurally formulated so that its environment cannot be satisfied
+by a monosyllable. The structural description always names a preceding
+"(schwach)tonige Silbe" or specifies a minimum number of original
+syllables.
+
+### .7 Synthesis
+
+There is a **consensus across all four major authorities** (Campbell,
+R&T, Fulk, Brunner) and CHEL:
+
+1. The rules that "shorten" or "apocopate" a final long vowel are
+   formulated either (a) in terms of an explicit *unstressed* qualifier,
+   or (b) in terms of a structural description that requires a
+   *preceding* (un)stressed nucleus. **In every formulation, the rule's
+   environment cannot be satisfied by a stressed monosyllable.**
+2. There is a *separate* set of rules that act positively on
+   stressed-final monosyllables: PWGmc lengthening of final vowels in
+   stressed monosyllables (R&T 2.1.1; Fulk §5.2 / *þū, nū, swā*); and
+   the Campbell §122 raising of stressed final *-ō to *-ū (for
+   *cū, hū, tū, bū*).
+
+### .8 Recommended FST treatment
+
+**Option (iii) — both halves, but with one of them doing nearly all
+the work:**
+
+(1) **Guard the existing weak-tail / apocope / final-shortening rule**
+so that its structural description requires the preceding nucleus to
+exist (or, equivalently, requires the target vowel not to be the only
+nucleus of the word). This is the principal fix and the one the
+literature most directly authorizes. Concretely: the rule must be
+`V[+long, -stress] → V[-long] / _ #`, *not* `V[+long] → V[-long] / _ #`.
+
+In a stress-less inventory (which we have), the guard can be phrased
+structurally: **"the word contains another vowel before this one"**.
+By Germanic root-stress, the only stressed syllable is always the
+first; so "preceded by another nucleus" = "in an unstressed syllable".
+
+(2) **Add a focused raising rule** for the §122 / Fulk §4.11 facts:
+`*ō → *ū / [stressed monosyllable] _ #`. Without this, even with the
+guard, `*kō`/`*hwō`/`*twō`/`*bō` will fail, because the input still has
+*ō and the output requires *ū. Optionally, narrow per Fulk to *-wō* and
+treat `bū` as a lexical exception (analogical to `tū`).
+
+The guard alone fixes nothing for `*kō`/`*hwō`/`*twō`/`*bō` (input has
+*ō, target has ū). But the guard *is* still necessary: it is what the
+literature actually formulates, and without it any future input shape
+that has long-vowel monosyllabic structure (whether direct or
+morphologically derived) is at risk.
+
+### .9 Regression risk
+
+| Class | Etymon | OE | Rule that must still fire |
+|---|---|---|---|
+| ō-stem fem. nom. sg. (light) | *gebō | ġiefu | Final *ō → -u and then apocope |
+| ō-stem fem. nom. sg. (heavy) | *xalbō | healf | Apocope of *-u after heavy root |
+| n-stem masc. nom. sg. | *gumô | guma | Final *-ō → -a (R&T 6.8.3 ex.) |
+| ō-stem gen. pl. | *gebǫ̂ | -a | Final *-ǭ → -a |
+| a-stem dat. sg. | *blōdai | blōde | Final *-ai → -e |
+
+Every one of these is **polysyllabic** in the relevant sense — the
+target final long vowel is preceded by a stem nucleus that bears word
+stress. So a guard formulated as "do not fire if this is the only
+nucleus" leaves all of them untouched. **This is exactly the condition
+the literature gives.**
+
+Items to test post-fix:
+- `*gebō → ġiefu` (light ō-stem): -u must persist
+- `*halbō → healf` (heavy ō-stem): apocope must still fire
+- `*gumô → guma`: final ō → a must still fire
+- `*sōkjan → sēċan`, `*dōmjan → dēman`: not affected (internal ō)
+- `*xūs → hūs`, `*bū → bū`: already pass, must still pass
+- `*kō → cū`, `*twō → tū`, `*hwō → hū`, `*bō → bū`: must now pass (new outcome)
+
+### .10 Open questions
+
+1. **Are *kō, *hwō, *twō, *bō* the right PGmc input shapes?** Fulk
+   reconstructs PGmc *kwō- (with *w*); Campbell §122 footnote
+   (`:4032-4033`) suggests the change "only occurred after w, which was
+   then lost"; Brunner §69 mentions "Ausfall eines vorangehenden w" for
+   `hū, tū`. If the FST input is *kō (without *w*), the cogset is
+   already simplifying. *bū* "both" Fulk treats as analogical to *tū*
+   anyway, so even etymologically pristine input shapes wouldn't make
+   it derivable directly. The FST may want to flag *bū* as analogical
+   or accept it as a lexical exception.
+2. **Actual shape of the existing FST shortening rule.** Without
+   inspecting it, one cannot say whether the bug is a missing
+   `[-stress]` condition, or whether stress is not represented at all
+   and the rule uses some other proxy. The user has rejected adding
+   stressed-long-vowel inventory; the guard can be phrased structurally
+   ("the word contains another vowel before this one").
+3. **Sources missing.** Hogg's standalone *Grammar of OE Phonology*
+   (1992) is the modern reference cited by R&T 6.8.3 (`:17122`: "Hogg
+   1992: 232-5"). Not in corpus; on Vision-OCR priority list. Lass
+   1994 and Anderson likewise absent. None likely to overturn the
+   consensus, but Hogg 1992 §6 would let us nail the precise modern
+   formulation.
+4. **Cross-source contradictions.** None significant. The only wrinkle
+   is whether *ō → *ū raising should be restricted to *-wō (Campbell
+   §122 footnote / Fulk §4.11) or general for all stressed final ō
+   (Brunner §69). For FST purposes a general rule with `bū` as either
+   lexical or analogical is operationally easiest and consistent with
+   all the data.
+
+### .11 TL;DR
+
+- Bug: existing weak-tail / apocope / final-shortening rule lacks the
+  stress (or "preceding-nucleus exists") condition that **every
+  authority builds into the rule's structural description**.
+- Adding that guard is philologically conservative and will not regress
+  any polysyllabic ō-stem, n-stem, or weak-verb pattern, because in
+  those forms the target final long vowel is by hypothesis preceded by
+  a stressed root syllable.
+- Independently, a small lexically-scoped raising rule
+  `*ō → *ū / [stressed monosyllable] _ #` (Campbell §122 / Fulk §4.11)
+  is needed to derive `cū, hū, tū, bū` from PGmc inputs with `ō`.
+
+### .12 Decision pending
+
+Do not implement either rule yet. Discuss with user:
+
+- **Fix A (guard only)**: phrase the existing weak-tail/apocope rule to
+  require a preceding nucleus. Resolves the "FST eats final long vowels
+  it shouldn't" framing; does NOT resolve `*kō`/`*twō`/`*hwō`/`*bō` →
+  ū because input/output mismatch in vowel quality.
+- **Fix B (raising only)**: add `*ō → *ū / # C* _ #` rewrite for stressed
+  final ō. Resolves the four lexical items; leaves the underlying
+  weak-tail rule overbroad (latent bug).
+- **Fix A + B**: full implementation per §17.31.8. Most thorough; most
+  regression-test surface to verify (see §17.31.9).
+- **Lexical exception list**: instead of either rule, hardcode
+  `bū, cū, hū, tū` as lexical entries. Smallest footprint; doesn't
+  improve the FST's grasp of OE phonology.
