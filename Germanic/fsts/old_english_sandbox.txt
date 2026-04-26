@@ -30,11 +30,15 @@ define OESandboxAfterOEWsPalatalGlide OESandboxAfterNWGmcILowering
 define OESandboxAfterNWGmcULowering OESandboxAfterOEWsPalatalGlide
     .o. NWGmcULowering;
 # MAIN-PIPELINE ORDER (germanic.txt lines 2688-2697):
-# NWGmcULowering → NWGmcFinalLongORaising → PGmcFinalZDeletion
-#   → NWGmcUnstressedORaising → NWGmcMnDissimilation → NWGmcNStemNLoss
+# NWGmcULowering → NWGmcStressedMonosyllableORaising → NWGmcFinalLongORaising
+#   → PGmcFinalZDeletion → NWGmcUnstressedORaising → NWGmcMnDissimilation → NWGmcNStemNLoss
+# StressedMonosyllableORaising must precede FinalLongORaising so that
+# monosyllabic *bō → *bū before the polysyllable shortening can fire (§17.31).
 # FinalLongORaising must precede z-loss (ō/ōz distinction), and z-loss
 # must precede ORaising/MnDissim/NStemNLoss so those see a z-free form.
-define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcULowering
+define OESandboxAfterNWGmcStressedMonosyllableORaising OESandboxAfterNWGmcULowering
+    .o. NWGmcStressedMonosyllableORaising;
+define OESandboxAfterNWGmcFinalLongORaising OESandboxAfterNWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising;
 define OESandboxAfterPGmcFinalZDeletion OESandboxAfterNWGmcFinalLongORaising
     .o. PGmcFinalZDeletion;
@@ -283,7 +287,11 @@ clear stack
 regex OESandboxAfterNWGmcULowering;
 save stack old_english_sandbox_after_nwgmc_u_lowering.bin
 
-# Main-pipeline order: FinalLongORaising → PGmcFinalZDeletion → UnstressedORaising
+# Main-pipeline order: StressedMonosyllableORaising → FinalLongORaising → PGmcFinalZDeletion → UnstressedORaising
+clear stack
+regex OESandboxAfterNWGmcStressedMonosyllableORaising;
+save stack old_english_sandbox_after_nwgmc_stressed_monosyllable_o_raising.bin
+
 clear stack
 regex OESandboxAfterNWGmcFinalLongORaising;
 save stack old_english_sandbox_after_nwgmc_final_long_o_raising.bin

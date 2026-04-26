@@ -53,6 +53,7 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
     ("WsPalatalGlide", "old_english_sandbox_after_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
+    ("NWGmcStressedMonosyllableORaising", "old_english_sandbox_after_nwgmc_stressed_monosyllable_o_raising.bin"),
     ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
     ("PGmcFinalZDeletion", "old_english_sandbox_after_pgmc_final_z_deletion.bin"),
     ("NWGmcUnstressedORaising", "old_english_sandbox_after_nwgmc_unstressed_o_raising.bin"),
