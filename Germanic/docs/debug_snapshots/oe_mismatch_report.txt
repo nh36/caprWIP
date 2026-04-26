@@ -1,21 +1,22 @@
-Total mismatches: 25
+Total mismatches: 27
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
-  Phonology (core buckets):    3
-  Phonology (other buckets):   15
+  Phonology (core buckets):    4
+  Phonology (other buckets):   16
 
 === CORE BUCKETS ===
+  fronting_missing__afb: 1
   breaking_missing__expected_eo_got_e: 1
   long_vowel_missing: 2
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
-  front_expected_back_out: 1
+  front_expected_back_out: 2
+  epenthetic_vowel_missing: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
-  breaking_extra__ea_for_a: 1
   breaking_extra__eo_for_high: 1
   breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
@@ -39,6 +40,12 @@ Total mismatches: 25
 
 === DETAILED EXAMPLES ===
 
+fronting_missing__afb (1):
+  *fáraną -> faran (expected færan)
+  >> ISSUE: A-fronting before nasals/consonants not applied
+  >> LIKELY: Often TSV issue — proto is one form class (verb), target is another (noun)
+  >> ACTION: Check paradigm cell alignment; may need different proto form
+
 breaking_missing__expected_eo_got_e (1):
   *wéslon -> weslon (expected weosule)
   >> ISSUE: Expected ēo but got e/ē
@@ -59,8 +66,12 @@ final_vowel_extra (2):
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
 
-front_expected_back_out (1):
+front_expected_back_out (2):
+  *márōn -> mare (expected mære)
   *táppô -> tappa (expected tæppa)
+
+epenthetic_vowel_missing (1):
+  *spárēną -> sparen (expected sparian)
 
 gemination_extra (2):
   *spénnilō -> spinnlu (expected spindle)
@@ -68,9 +79,6 @@ gemination_extra (2):
   >> ISSUE: FST geminated where target has single consonant
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
   >> ACTION: Research actual OE form; may be borrowing or irregular
-
-breaking_extra__ea_for_a (1):
-  *spárēną -> spearen (expected sparian)
 
 breaking_extra__eo_for_high (1):
   *néwun -> nēowon (expected nigon)
@@ -121,5 +129,6 @@ cons_mismatch__n_vs_-__word_final (1):
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---
+*fáraną -> faran (expected færan)
 
 --- fronting_missing__also_wrong_form ---

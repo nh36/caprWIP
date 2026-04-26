@@ -948,6 +948,20 @@ define EnglishStarConsonantNoR [EnglishStarConsonant - {*r}];
 
 define EnglishStarConsonantNoLabial [EnglishStarConsonant - EnglishStarLabial];
 
+# Geminate consonants admitted by A-restoration as "intervening" segments
+# (Campbell §158: hnappian, racca, crabba, mattuc; Luick §161.2). See
+# DEV_NOTES §17.25 for the literature-grounded cluster taxonomy.
+# NB: in this grammar geminates are TWO consecutive single-segment
+# symbols (e.g. {*p} {*p}), not a single multi-character symbol {*pp}.
+# See DEV_NOTES §17.25.7 (Bug A) for diagnosis.
+define EnglishStarGeminate [
+      {*p} {*p} | {*t} {*t} | {*k} {*k}
+    | {*b} {*b} | {*d} {*d} | {*g} {*g}
+    | {*f} {*f} | {*s} {*s} | {*θ} {*θ}
+    | {*m} {*m} | {*n} {*n} | {*l} {*l}
+    | {*r} {*r} | {*w} {*w}
+];
+
 # Velar consonants (block i-lowering per Howell & Salmons 1997).
 define EnglishStarVelar [{*k} | {*g} | {*ŋ} | {*x} | {*ɣ}];
 
@@ -1803,8 +1817,24 @@ define AngloFrisianBrightening [
 # instead of flasce: AFB fronts *a→*æ, then SkPalatalization palatalizes after *æ.
 define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
 
+# Per Campbell §158 and Ringe/Taylor vol. II §6.3.1: the intervening
+# segments across which A-restoration applies are exactly:
+#   1. a single consonant (any quality, including *r and *l: cf.
+#      faran, sparian, warian, talian, sadol, nafola, gafol, hara, mara);
+#   2. a geminate (e.g. hnappian, racca, crabba, mattuc — Luick §161.2);
+#   3. an sC-cluster (e.g. wascan, ascan, flascan, brastlian);
+#   4. an fC-cluster (e.g. sæftriende — Campbell §158).
+# Other clusters (Cr, Cl, Cn, Cm, Ct, Cb, Cp, hC, etc.) BLOCK retraction
+# (Campbell §158: "Before other groups, a is not restored except for
+# a few instances before consonant plus liquid"; Luick §161 Anm. 1).
+# See DEV_NOTES §17.25 for the full literature dossier; the
+# pre-2026-04-26 form `EnglishStarConsonantNoR - {*l}` excluded *r and *l
+# wholesale and was an over-correction that blocked class-II weak verbs.
 define OEARestorationIntervening [
-    EnglishStarConsonantNoR - {*l}
+      EnglishStarConsonant
+    | {*s} EnglishStarConsonant
+    | {*f} EnglishStarConsonant
+    | EnglishStarGeminate
 ];
 
 # Weak tail patterns that still allow A-restoration (i.e., restoration applies
@@ -1815,6 +1845,7 @@ define OEARestorationStrongOTail [
     {*i} {*l} {*ō} {*n} |
     {*u} {*w} {*ō} {*n} |
     {*ō} |
+    {*ô} |
     {*ō} {*j} {*a} {*n} {*ą} |
     {*ō} {*n} |
     {*ō} {*n} {*d} {*z} |
@@ -1831,8 +1862,8 @@ define OEARestorationWeakTailVowel [
 # The context here MUST be required, not optional.
 define OEARestoration (
     {*æ} -> {*a} || _
-        [OEARestorationIntervening]* OEARestorationTriggerVowel
-        - [OEARestorationIntervening]* OEARestorationWeakTailVowel
+        OEARestorationIntervening OEARestorationTriggerVowel
+        - OEARestorationIntervening OEARestorationWeakTailVowel
 );
 
 # NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no

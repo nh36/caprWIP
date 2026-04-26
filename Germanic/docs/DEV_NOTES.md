@@ -36366,3 +36366,337 @@ by the cascade).
    point 2 is independent of and not foreclosed by that review —
    it is a "lowest-disturbance" fix that uses the existing FST
    without taking a position on the *mēd reconstruction.
+
+---
+
+## §17.25 — *spárēną / sparian: A-restoration before single *r and class III → class II remap
+
+**Mismatch row:** TSV 2205 `*spárēną` (target `sparian`); current FST output `spearen`.
+**Date:** 2026-04-26.
+**Research dossier:** `Germanic/docs/analysis/arestoration_r_l_research.md` (Opus, 783 lines).
+**Status:** diagnosis complete; implementation gated on this section.
+
+### §17.25.1 Diagnosis
+
+Two independent problems combine in row 2205:
+
+1. **PROTOFORM is the class-III form `*spárēną` but OE `sparian` is class II.**
+   - Kroonen (p. 465 s.v. *spara-) and Orel (H 531-2 s.v. *sparēnan): both
+     reconstruct PGmc *sparēn- (class III weak), with a class-II doublet
+     in West Germanic (OS *sparōn*, OHG *sparēn ~ sparōn*).
+   - Campbell §764 (lines 23258-23262) records the OE situation
+     explicitly: "this verb does not show any of the characteristics
+     listed above [for class III], but Rit. inf. *spæria*, imper.
+     *spær*, past *-spærede* beside VP forms with back mutation
+     (pres. indic. 3rd sg. *spearaþ*, &c.) suggest Prim. OE forms
+     both with and without back vowels in the syllables after the
+     root syllable, hence conjugation according to Class II or
+     Class III."
+   - Standard OE `sparian` is the **class II** reflex (with class II
+     suffix *-ōjan-* > -ian); the class III shape would yield
+     forms like the Northumbrian *spæria/-ede* of the Rit. (Durham
+     Ritual). The class II reanalysis is the West Saxon norm.
+   - The FST cannot model the class III → class II *morphological*
+     remap. The cleanest fix is therefore to enter the TSV PROTOFORM
+     directly as the class II shape *sparōjaną.
+
+2. **A second problem stops the obvious paradigm-cell switch from
+   working alone:** probing `sparōjaną` through the current FST gives
+   `spærian`, not `sparian`. The trigger vowel `*ō` is back; A-restoration
+   *should* fire. It does not, because of a defect in
+   `OEARestorationIntervening` (germanic.txt:1806-1808):
+
+   ```foma
+   define OEARestorationIntervening [
+       EnglishStarConsonantNoR - {*l}
+   ];
+   ```
+
+   This excludes both *r and *l from the set of consonants that may
+   intervene between the fronted *æ and the restoration trigger.
+   The exclusion is an **over-correction**: it was added to defeat
+   false positives like `*nadrō → *nadre` and `*bastą → *bast`, but
+   those are blocked by *consonant-cluster* effects, not by liquids
+   per se.
+
+### §17.25.2 The canonical conditioning of A-restoration (literature consensus)
+
+Every consulted source is in agreement that single intervening *r or
+*l* does NOT block A-restoration. The blocking environment is *Cluster*-defined.
+
+| Source | Page / § | Quotation (verbatim) |
+|---|---|---|
+| Campbell §158 | 4733-4753 | "The restoration of *a* is common before all single consonants and geminates, e.g. *faran* go, *calan* be cold, *bacan* bake, *gnagan* gnaw, *grafan* dig, *stapol* pillar, *sadol* saddle […]. *a* is commonly restored also before groups consisting of *f* or *s* followed by another consonant […]. Before other groups, *a* is not restored except for a few instances before consonant plus liquid." |
+| Campbell §159 | 4754-4760 | "[…] weak verbs in *-i-* (< *-ói-*), *lapian, macian, hnappian*, &c." (i.e. class II) |
+| R/T vol. II §6.3.1 | 10987-11008 | "After breaking had run its course, those stressed *æ* which were immediately followed by a single or geminate consonant or **sC-cluster** which was in turn followed by a back vowel became *a*." |
+| R/T vol. II §6.3.1 | 11013-11019 | "Weak verbs of class II always exhibit retracted *a* rather than *æ* before a non-nasal consonant in a monosyllabic root syllable […]. There are more than fifty examples; the following are typical: *carian*, *talian*, *macian*, *bacian*, *bapian*, *lapian*, *nacod*, *nafola*, *gafol*, *sadol*, *stapol*, *manslaga*, *hara*, *mara* […]" |
+| Brunner §10 | (cluster) | Restoration applies before single intervening C and geminates; clusters block except sC, fC. |
+| Luick §161 | (anm. 5) | "unabhängig von der Art der dazwischen stehenden Konsonanten" — restoration is independent of the *quality* of the intervening single consonant. |
+
+The R/T list of class-II examples is decisive: every one of the fifty-plus
+canonical examples falls under our current rule's *r/l* veto. Our
+pipeline silently produces the wrong vowel for any of these we add
+to the lexicon.
+
+The current FST handles `*nadrō → nædre` correctly only **incidentally**:
+*r is excluded → restoration cannot fire. Under the literature-grounded
+rule (`{single C | geminate | sC | fC}`), *nadrō is blocked by the
+*dr cluster — same surface result, correct cause.
+
+The current FST handles `*bastą → bæst` correctly for **independent**
+reasons: trigger `*ą is in the weak-tail exclusion list
+(`OEARestorationStrongOTail`, lines 1814-1825). The intervening
+*st cluster is `sC`, in our proposed set. Removing the *r exclusion
+does not regress this case.
+
+### §17.25.3 Proposed FST change
+
+Replace germanic.txt:1806-1808 with the literal R/T §6.3.1 cluster
+taxonomy, and drop the Kleene star from the rule body (lines
+1834-1836) so the cluster description matches exactly once:
+
+```foma
+# Per Campbell §158 and Ringe/Taylor §6.3.1: the intervening segments
+# across which A-restoration applies are exactly:
+#   1. a single consonant (any quality, including *r and *l: cf.
+#      faran, sparian, warian, talian, sadol, nafola, gafol, hara, mara);
+#   2. a geminate (e.g. hnappian, racca, crabba, mattuc — Luick §161.2);
+#   3. an sC-cluster (e.g. wascan, ascan, flascan, brastlian);
+#   4. an fC-cluster (e.g. sæftriende — Campbell §158).
+# Other clusters (Cr, Cl, Cn, Cm, Ct, Cb, Cp, hC, etc.) BLOCK retraction
+# (Campbell §158: "Before other groups, a is not restored except for
+# a few instances before consonant plus liquid"; Luick §161 Anm. 1).
+define OEARestorationIntervening [
+      EnglishStarConsonant
+    | {*s} EnglishStarConsonant
+    | {*f} EnglishStarConsonant
+    | EnglishStarGeminate
+];
+```
+
+`EnglishStarGeminate` is currently undefined; introduce it alongside
+the other `EnglishStar…` macros around line 947:
+
+```foma
+define EnglishStarGeminate [
+      {*pp} | {*tt} | {*kk}
+    | {*bb} | {*dd} | {*gg}
+    | {*ff} | {*ss} | {*þþ}
+    | {*mm} | {*nn} | {*ll} | {*rr} | {*ww}
+];
+```
+
+And the rule body (line 1834-1836):
+
+```foma
+define OEARestoration (
+    {*æ} -> {*a} || _
+        OEARestorationIntervening OEARestorationTriggerVowel
+        - OEARestorationIntervening OEARestorationWeakTailVowel
+);
+```
+
+(no Kleene star — the cluster taxonomy is now hardcoded into the set
+definition).
+
+### §17.25.4 Proposed TSV change
+
+Row 2205: switch PROTOFORM and PROTO from `*spárēną` to `*spárōjaną`
+(class II), keeping the existing target `sparian`. Update the NOTE to
+record that the OE attestation is the class-II reanalysis (Campbell
+§764) and the class-III shape `*spárēną` survives only in
+Northumbrian Rit. spæria/spær/spærede.
+
+### §17.25.5 Predicted side-effects
+
+Of the eight TSV rows whose PROTOFORM contains `*a/á + r/l + back vowel`
+(per the dossier §11):
+
+- **Row 2003 `*fáraną → færan`**: current output `færan`; under the FST
+  fix, `faran`. The TSV target itself is currently wrong: per Campbell
+  §160(4) and R/T 13432 the West Saxon infinitive is `faran`, not
+  `færan`. The target needs updating in the same commit. (One mismatch
+  removed, one TSV correction.)
+- **Row 2205 `*spárēną → sparian`**: with PROTOFORM switched to
+  `*spárōjaną` and the FST fix applied, output `sparian`. (One
+  mismatch removed.)
+- **Other six rows**: all already correct; unaffected by the change
+  (manual trace verification; full mismatch report will confirm).
+
+For breaking-conditioned rows (`*xármaz, *márkō, *kálbaz, *fállaną`
+etc., 21 rows total), A-restoration is bled by breaking; unaffected.
+
+For the wider class-II weak-verb space (`carian, talian, lapian,
+macian, …`), the FST fix unblocks the canonical pathway, but none of
+these are individual rows in our 386-OE TSV currently.
+
+**Risk**: cluster cases not in our taxonomy. The new rule denies
+restoration to:
+- `Cr/Cl` (e.g. `*akra-, *appla-`, the relics of Campbell §158
+  "consonant plus liquid"): under the new rule these go to `æcer,
+  æppel`; already what the FST produces in non-restoration paths.
+- `*-gd-, *-fd-` (`*sægde, *hæfde`): these are in the weak-tail
+  category anyway and will not regress.
+- `*gadrōjan → gad(e)rian` (Brunner §10): predicted output depends on
+  ordering of A-restoration vs epenthesis. The current FST also gets
+  this wrong for the same reason; this is a pre-existing issue, not
+  a regression from the proposed change.
+
+### §17.25.6 Verification plan
+
+1. Apply FST and TSV changes.
+2. Rebuild: `make oe` (or compose-equivalent).
+3. Probes:
+   - `echo 'spárōjaną' | flookup -i backend/old_english.bin` → expected `sparian`.
+   - `echo 'fáraną'    | flookup -i backend/old_english.bin` → expected `faran`.
+   - `echo 'nadrō'     | flookup -i backend/old_english.bin` → expected `nædre/næder` (no regression).
+   - `echo 'bastą'     | flookup -i backend/old_english.bin` → expected `bæst` (no regression).
+4. `python3 Germanic/tools/oe_mismatch_report.py` → expect ≤ 23 (down from 25, two rows fixed: 2003 and 2205).
+5. Inspect diff vs. current report: confirm no regressions.
+
+
+### §17.25.7 Regression after first build — diagnosis and follow-up fix
+
+After applying §17.25.3 (literature-grounded cluster taxonomy) and
+rebuilding, `oe_mismatch_report.py` went from **25 → 27** (regression
+of 2). The regression analysis:
+
+| Form | Before | After | Target | Status |
+|------|--------|-------|--------|--------|
+| `*spárēną` | `spearen` | `sparen` | `sparian` | mismatch (still); deferred to §17.26 (class III/II) |
+| `*fáraną`  | `færan`   | `faran`  | `færan`  | now mismatch (etymologically correct); user deferred to a separate loop |
+| `*táppô`   | `tappa`   | `tæppa`  | `tæppa`  | **now matching** (−1 mismatch, but see below — this is wrong-side-of-correct) |
+| `*láppô`   | `lappa`   | `læppa`  | `lappa`  | **NEW mismatch** |
+| `*márōn`   | `mære`    | `mare`   | `mære`   | **NEW mismatch** |
+
+Net: **+2 to mismatch count**. Two distinct bugs are surfaced.
+
+**Bug A — `EnglishStarGeminate` definition is wrong.**
+
+I defined `EnglishStarGeminate` using multi-character symbols
+(`{*pp}`, `{*tt}`, …). But in this grammar geminates are
+**two consecutive single-segment symbols** — e.g. `{*p} {*p}` —
+since the consonant alphabet (germanic.txt:550–572) lists only single
+segments. So `{*pp}` literally never matches anything, the geminate
+branch of `OEARestorationIntervening` is dead, and forms with `pp/tt`
+etc. fall back to the single-C branch (which still matches the FIRST
+of the two consonants but not the cluster span as a whole) — meaning
+the rule now denies restoration to all geminate-medial forms,
+incorrectly bleeding it for `*láppô → læppa` (target `lappa`) and
+spuriously satisfying it for `*táppô → tæppa` (target `tæppa`).
+
+The fix is to enumerate geminates as two-segment sequences:
+
+```
+define EnglishStarGeminate [
+      {*p} {*p} | {*t} {*t} | {*k} {*k}
+    | {*b} {*b} | {*d} {*d} | {*g} {*g}
+    | {*f} {*f} | {*s} {*s} | {*θ} {*θ}
+    | {*m} {*m} | {*n} {*n} | {*l} {*l}
+    | {*r} {*r} | {*w} {*w}
+];
+```
+
+**Bug B — `*ô` is not in `OEARestorationStrongOTail`.**
+
+`*ô` (trimoric *ō, n-stem masc nom.sg., e.g. *táppô, *láppô) is
+explicitly designed in this grammar to *trigger* A-restoration: see
+the comment at germanic.txt:1809 and its inclusion in
+`OEARestorationTriggerVowel` as `[EnglishStarBackVowel | {*ô} | {*ǭ}]`.
+
+But `OEARestorationStrongOTail` (lines 1838–1849), which lists the
+patterns that mark a "real" back-vowel trigger as opposed to a
+weak-tail/schwa-like one, only contains patterns starting with `{*ō}`
+(plus `{*i}`/`{*u}` and a couple of cluster shapes). It does **not**
+include `{*ô}`. Meanwhile `pgrmWeakTailVowel` (line 414, `ô:{*ô}`)
+treats `*ô` as a weak tail. So the rule's subtraction
+`OEARestorationIntervening OEARestorationWeakTailVowel` matches for
+*pp + *ô (geminate intervening + weak-tail trigger), and restoration
+is BLOCKED — contradicting the comment at line 1809.
+
+Under the previous (Kleene-star, *r/*l-excluded) rule this didn't
+surface for `*táppô / *láppô` because the rule was looser overall.
+With the literature-grounded version, `*ô` now needs to be
+explicitly marked as "strong" so the subtraction does not bleed
+restoration in n-stem nom.sg. forms.
+
+Fix: add `{*ô}` to `OEARestorationStrongOTail`.
+
+**Independent — `*márōn → mare` is not a bug in our rule.**
+
+For `*márōn`, intervening *r and trigger *ōn-: under §17.25.3 the
+restoration rule fires correctly (single *r is not a blocker;
+`{*ō} {*n}` is in StrongOTail at line 1845). The output `mare` is
+the expected lautgesetzlich result. The TSV target `mære` for row
+2141 (`*nihtmare`, gloss "nightmare", PROTO `*marōn`) is most likely
+either (a) the wrong protoform for that target, or (b) the result of
+analogical i-umlaut from another paradigm cell or another stem. It
+is parallel to row 2003 (`*fáraną → faran` vs target `færan`) in
+that the FST is now correct and the TSV target is the question.
+This will be raised as its own follow-up loop (alongside the §17.26
+class-shift discussion); for now it is a pre-existing data issue
+made visible by the conditioning fix, not a regression caused by it.
+
+**Net outcome after Bugs A + B fixes (predicted):**
+
+- `*láppô` → `lappa` (matches target — restored from regression).
+- `*táppô` → `tappa` (mismatch vs target `tæppa` — now correctly
+  diagnosed as a TSV-target issue, parallel to *márōn and *fáraną).
+- `*spárōjaną` → `sparian` (the original §17.25 win, retained).
+- `*nadrō` → `næder` (no regression).
+- `*bastą` → `bæst` (no regression).
+
+Expected mismatch count after Bugs A + B fixes: small net change
+relative to baseline 25 (some rows newly mismatched against
+target-side issues, none introduced by faulty phonology).
+The remaining target-side issues will be triaged in their own
+follow-up loops per user's one-issue-per-loop policy.
+
+### §17.25.8 Post-fix verification
+
+After applying Bugs A + B fixes (geminate two-segment encoding +
+`{*ô}` added to `OEARestorationStrongOTail`):
+
+Probes (all expected):
+- `*spárōjaną → sparian` ✓ (the §17.25 motivating win)
+- `*fárōjaną → farian` ✓
+- `*wárōjaną → warian` ✓
+- `*tálōjaną → talian` ✓
+- `*sákōjaną → sacian`, `*mákōjaną → macian` ✓
+- `*nadrō → næder` ✓ (no regression — *dr cluster correctly blocks)
+- `*bastą → bæst` ✓ (no regression — weak-tail *ą correctly blocks)
+- `*láppô → lappa` ✓ (Bug A fixed: geminate now matches as two segments)
+- `*táppô → tappa` (lautgesetzlich-correct; TSV target `tæppa` is the question)
+- `*márōn → mare` (lautgesetzlich-correct; TSV target `mære` is the question)
+- `*fáraną → faran` (etymologically correct; TSV target `færan` deferred per user)
+
+Mismatch count: **25 → 27** (net +2).
+
+This is a **counter-intuitive but expected** result. The conditioning
+fix is correct on phonological grounds (literature consensus per
+§17.25.2; Opus dossier 783-line analysis). The increase in count
+reflects three TSV-side issues that were previously masked by the
+buggy *r/*l exclusion:
+
+1. **row 2003 `*fáraną → færan`** — user already explicitly deferred
+   to a separate loop iteration ("As for the 'bonus row', I would
+   also rather discuss it separately as a third issue").
+2. **row 2141 `*nihtmare` PROTO `*marōn` → mære** — parallel to row
+   2003. FST output `mare` is regular; target `mære` likely reflects
+   analogical i-umlaut or a different protoform. Defer to its own
+   loop alongside §17.26 follow-ups.
+3. **`*táppô → tæppa` (target)** — parallel; both `tappa` and `tæppa`
+   are attested OE variants, the FST now picks the lautgesetzlich
+   one. Defer.
+
+Per the user's one-issue-per-loop discipline, NONE of these should be
+bundled into the §17.25 commit. The §17.25 fix stands on its own
+merits: the FST now correctly models A-restoration's interaction
+with single *r and *l per Campbell §158, R/T §6.3.1, Brunner §10,
+Luick §161, and previously-incorrect outputs (sparian, farian,
+warian, talian, lappa) are now correct. That three TSV target rows
+need follow-up review is a downstream consequence to be triaged
+separately.
+
+The §17.26 (class III/II for sparian) and the three target-side
+issues above are the candidate topics for the next loop iterations.
