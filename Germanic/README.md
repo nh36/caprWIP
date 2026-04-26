@@ -4,7 +4,7 @@ This directory contains the active FST development for modeling sound changes fr
 
 ## Current Status
 
-**42 mismatches** out of ~386 OE lexemes (89% accuracy)
+**25 mismatches** out of ~386 OE lexemes (94% accuracy)
 
 ## Directory Structure
 

@@ -11,7 +11,7 @@ This repository contains **three parallel research pipelines** sharing common in
 
 | Component | Description | Status |
 |-----------|-------------|--------|
-| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Active development (62 of 1057 rows mismatched) |
+| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Active development (25 of 386 OE rows mismatched) |
 | **[Burmish/](Burmish/)** | Proto-Burmish reconstruction | Maintenance mode |
 | **[Celtic/](Celtic/)** | Proto-Celtic → daughter languages (Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, Celtiberian) | Early development |
 
@@ -65,7 +65,7 @@ capr-v3-working/
 
 The active focus is modeling Proto-Germanic → Old English sound changes via FST rules.
 
-**Current status:** 62 mismatches out of 1057 lexemes (94% accuracy)
+**Current status:** 25 mismatches out of ~386 OE lexemes (94% accuracy)
 
 Key files:
 - `Germanic/fsts/germanic.txt` — Main FST with all sound change rules

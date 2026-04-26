@@ -10316,6 +10316,30 @@ This script reads PROTOFORM (paradigm-cell-specific form), not PROTO (cognate he
 | 2026-04-09 | 43 | 0 | 1bce789 | PWGmc *dw→*ww (partial fēower fix) |
 | 2026-04-10 | 42 | -1 | a4e6559 | PWGmc *ō→*a before final *r (fēower complete) |
 | 2026-04-11 | 41 | -1 | ae80654 | OECompoundLinkingSyncope: *regnă-bugô→reġnboga |
+| 2026-04-11 | 40 | -1 | 33db8425 | weorold: *wer-uldu transponent (PIE *u̯iH-ro- root) |
+| 2026-04-12 | 39 | -1 | 3d35cd57 | ġeoguþ: u-lowering vowel-harmony exception |
+| 2026-04-15 | 38 | -1 | 6acac2a2 | weak class II 3sg: two-stage *ō shortening (§15.8) |
+| 2026-04-21 | 37 | -1 | dab140a9 | §17 refactor baseline confirmed post-prosodic-tier merge |
+| 2026-04-23 | 36 | -1 | aa241224 | findan: PP target switch → fundene (§17.10.31, Case 4 Path α) |
+| 2026-04-23 | 35 | -1 | 5e733bb3 | wīþiġ: PROTOFORM *wīθijaz → *wīθagą (§17.10.35, Campbell -ag- suffix) |
+| 2026-04-23 | 34 | -1 | 29f4e924 | hīeġ: OEAwjGlideFormation *aw(w)+*j → *au+*j (§17.10.36 stages 1–2) |
+| 2026-04-24 | 33 | -1 | 0c6ab468 | strīeġan: OEJStrengtheningAfterFrontDiphthong (§17.10.36-q3) |
+| 2026-04-24 | 32 | -1 | 6a2bbda2 | cwedu: PROTOFORM *kwíθuz → *kwéðuz (§17.14) |
+| 2026-04-24 | 31 | -1 | 5fa587ab | sife: PROTOFORM *síbaz → *síbi (§17.15) |
+| 2026-04-24 | 30 | -1 | 75b8da0d | speoru: short-diphthong weight refactor; *spéru NApl (§17.17) |
+| 2026-04-25 | 29 | -1 | 9ccbe617 | þistles: paradigm-cell switch *þístilaz → GenSg (§17.18) |
+| 2026-04-25 | 28 | -1 | d5d8acc1 | nafola: PROTOFORM *náblô → *nábulô (R/T pre-syncope, §17.19) |
+| 2026-04-25 | 27 | -1 | 3355ec68 | tang: TSV target tange → tang, early-Anglian NomSg (§17.20) |
+| 2026-04-25 | 26 | -1 | 11360b2a | swustor: target switch to Anglian swester (§17.21) |
+| 2026-04-26 | 25 | -1 | 51c6de41 | meorde: paradigm-cell switch *mízdō → *mízdai (§17.24, Crist/Kilday) |
+
+**Note on 2026-04-13 to 2026-04-21 prosodic-tier work.** A `prosodic-tier-exploration`
+branch was developed off-trunk during this period, exploring stressed-vowel
+markers in PROTOFORMs. Mismatch counts during the branch were unreliable due
+to a stdout-corruption bug in `oe_mismatch_report.py` (fixed in 61912c54),
+and the branch traversed several large regressions (worst point: ~98) before
+being merged back. By 2026-04-21 the trunk baseline was 37; by 2026-04-23
+the merge had completed. Only stable trunk counts are entered above.
 
 **Note on April 10 methodology correction:** Earlier entries in this log used ad-hoc
 counting with the wrong column (PROTO instead of PROTOFORM), giving inflated numbers.
@@ -10329,8 +10353,12 @@ if precise historical counts are needed.
 (Campbell §201). Also fixed a broken symlink in the container that was preventing 
 `old_english.bin` from being updated.
 
-Current verified count: **41 mismatches** (339 matches, 6 skipped, 386 total OE rows)
-as of 2026-04-11, verified with `python3 tools/oe_mismatch_report.py`.
+Current verified count: **25 mismatches** as of 2026-04-26, verified with
+`python3 Germanic/tools/oe_mismatch_report.py`. Of these, 7 are in the
+intractable ledger (`Germanic/data/oe_known_problems.tsv`: 5 wontfix,
+1 parked, 1 exception); the remaining 18 are tractable and candidates
+for the mismatch-loop. See `Germanic/docs/debug_snapshots/oe_known_problems_report.txt`
+for the up-to-date triage.
 
 ### How to verify mismatch count
 
