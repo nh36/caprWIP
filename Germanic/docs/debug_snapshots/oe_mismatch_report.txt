@@ -15,8 +15,8 @@ Total mismatches: 22
   front_expected_back_out: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
+  breaking_extra__ea_other: 1
   breaking_extra__eo_for_high: 1
-  breaking_extra__ie_for_e: 1
   breaking_extra__ie_for_i: 1
   breaking_extra__wrong_form: 1
 --- palatal_extra sub-buckets ---
@@ -66,14 +66,14 @@ gemination_extra (2):
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
   >> ACTION: Research actual OE form; may be borrowing or irregular
 
+breaking_extra__ea_other (1):
+  *ráukaz -> rēac (expected rēc)
+
 breaking_extra__eo_for_high (1):
   *néwun -> nēowon (expected nigon)
   >> ISSUE: FST broke to eo where target has high vowel (ū/ī)
   >> LIKELY: Breaking applied where it shouldn't; may be TSV proto issue
   >> ACTION: Check if proto vowel is correct (*eu vs *ū)
-
-breaking_extra__ie_for_e (1):
-  *ráukiz -> rīeċ (expected rēc)
 
 breaking_extra__ie_for_i (1):
   *θréjez -> þrīe (expected þrī)

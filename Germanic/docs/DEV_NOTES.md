@@ -37822,3 +37822,58 @@ Row 2205 (`Germanic/data/germanic-aligned-final.tsv` line 1066):
   dossiers.
 
 ALIGNMENT, COUNTERPART, IPA, gloss unchanged.
+
+## §17.33 — *rēc closure (row 859/ID 2151): triaged as intractable (Anglian smoothing relic)
+
+**Status:** *rēc* (smoke) is moved to the known-problems ledger as `wontfix`
+under category `smoothing_anglian_relic`. The earlier §17.22.13.7
+recommendation (`*rōkiz`) is **withdrawn** — see dossier-reek-2026.md.
+
+**Diagnostic.** Modern English *reek* /riːk/ (not */riːtʃ/, cf. *speech*
+< OE *sprǣc*) shows OE *rēc* had velar [k]. Verb *rēcan* preterite
+*rēhte* (< /rēk-de/) is independent witness. So any proto input that
+yields palatal [ċ] is wrong on the merits, regardless of ledger bucket.
+
+**Etymon.** Following Kroonen (p.c.), PROTOFORM is switched from i-stem
+`*ráukiz` to a-stem `*ráukaz` (analogical replacement; cf. German *Rauch*,
+Dutch *rook* are a-stems already; the i-stem is preserved only by OE/ON
+formations and is itself probably late). This is documented inline in
+the TSV NOTE.
+
+**Why no FST fix.** `*ráukaz → rēac` is the regular FST output. To
+derive *rēc* lautgesetzlich requires Anglian smoothing
+(`ēa → ē / _velar`) inserted between `OEDiphthongLeveling` and
+`OEVelarPalatalization` in `Germanic/fsts/germanic.txt`. As an
+unconditional cascade rule this would regress at minimum *bēacen*,
+*hēah*, *ēage*, *sēah*, *tēah* — all WS forms that retain the
+diphthong. Smoothing is dialectally restricted (Anglian) and only
+lexically diffused into WS for a small set (lēac/lēc, rēc, -lēc).
+Lexical gating is more invasive than the problem is worth, and would
+require a list of "loaned-from-Anglian-into-WS" lexemes that is
+itself an editorial judgement.
+
+**Treatment.** *rēc* is treated as an Anglian relic loaned into WS,
+parallel to the §17.20 (tang) and §17.21 (swester) precedents where
+the WS form is unattested or problematic and the FST is not stretched
+to fit. The cognate-set siblings (Du. *rook*, Eng. *reek*, Ger.
+*Rauch*) keep their own etyma per row.
+
+**Files changed (row 2151, line 859):**
+
+- `Germanic/data/germanic-aligned-final.tsv`: PROTOFORM `*ráukiz` →
+  `*ráukaz`; PROTO `*ráukiz` → `*ráukaz`; NOTE rewritten with
+  intractability rationale and ledger pointer.
+- `Germanic/data/oe_known_problems.tsv`: ledger entry rekeyed
+  `*ráukiz` (parked) → `*ráukaz` (wontfix), category
+  `smoothing_anglian_relic`, reason and refs updated.
+- `Germanic/docs/dossier-reek-2026.md`: research dossier (398 lines,
+  agent-authored) supersedes §17.22.13's *rōkiz line.
+- `Germanic/docs/debug_snapshots/oe_mismatch_report.txt` and
+  `oe_known_problems_report.txt`: regenerated; mismatch surfaces in
+  bucket `breaking_extra__ea_other` (mismatch report) and
+  `smoothing_anglian_relic` (known-problems report).
+
+**Total mismatches unchanged at 22**; tractable count drops by 1
+(rēc moves from tractable to triaged; previously parked under
+*ráukiz it was already triaged but under a different rationale). The
+known-problems report is now the canonical place to read about *rēc*.

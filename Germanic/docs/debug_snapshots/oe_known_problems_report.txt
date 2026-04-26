@@ -2,12 +2,12 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         23
-  Tractable (no ledger):  15
+Total mismatches:         22
+  Tractable (no ledger):  14
   exception               2
   open                    0
-  parked                  1
-  wontfix                 5
+  parked                  0
+  wontfix                 6
 Stale ledger entries:     0
 
 Tractable = candidate for the mismatch-loop methodology.
@@ -17,7 +17,7 @@ Exception = documented in literature/notes as genuine exception.
 Open      = currently being investigated (transient).
 
 ========================================================================
-TRACTABLE MISMATCHES  (15)
+TRACTABLE MISMATCHES  (14)
 ========================================================================
 These mismatches have no ledger entry and are candidates for the
 mismatch-loop workflow (research dossier → review → implement).
@@ -46,9 +46,6 @@ mismatch-loop workflow (research dossier → review → implement).
 --- other__cons_mismatch__length_diff (1) ---
   *skéllinaz         -> sċillen              (expected sċilling)
 
---- other__epenthetic_vowel_missing (1) ---
-  *spárēną           -> sparen               (expected sparian)
-
 --- other__final_vowel_extra (2) ---
   *láimōn            -> lāfe                 (expected lām)
   *wéstanē           -> westene              (expected west)
@@ -64,17 +61,19 @@ mismatch-loop workflow (research dossier → review → implement).
   *wíduwōn           -> widowe               (expected widuwe)
 
 ========================================================================
-PARKED  (1)
+PARKED  (0)
 ========================================================================
---- rec_problem (1) ---
-  *ráukiz            -> rīeċ                 (expected rēc)
-    reason: Universal OE rēc (no WS rīec attested) but no published author treats as irregular; H1 *rōkiz / H2 verb leveling / H5-H6 paradigm leveling all live
-    refs:   notable_findings#10;DEV_NOTES.md §17.22
-    added:  2026-04-25
+  (none)
 
 ========================================================================
-WONTFIX  (5)
+WONTFIX  (6)
 ========================================================================
+--- smoothing_anglian_relic (1) ---
+  *ráukaz            -> rēac                 (expected rēc)
+    reason: OE rēc has velar [k] (per ModE reek /riːk/, not /iːtʃ/). Etymon switched from i-stem *ráukiz to a-stem *ráukaz (Kroonen, p.c.; analogical replacement; cf. Ger. Rauch). FST output rēac is regular; rēc requires Anglian smoothing (ēa→ē / _velar) which is dialectally restricted — adding it as a cascade rule would regress WS bēacen, hēah, ēage, sēah, tēah. Treated as Anglian relic loaned into WS, no FST fix.
+    refs:   notable_findings#10;DEV_NOTES.md §17.22;dossier-reek-2026.md
+    added:  2026-04-26
+
 --- u_lowering_near_labial (5) ---
   *búkkaz            -> bocc                 (expected bucc)
     reason: NWGmc u-lowering near labials non-Neogrammarian: u retained sporadically before labials/velars in lexical items (Luick §105-6)
