@@ -37649,3 +37649,176 @@ Adopted **Fix A + B** per §17.31.8.
 **Status**: row 1958 (*bō → bū) now passes. The *kō row, if present
 in the corpus, is also now correct. The fix is general — any future
 stressed-monosyllabic *-ō entry will derive *-ū automatically.
+
+## §17.32 — *spárēną / sparian closure (row 2205): TSV PROTOFORM switch to class-II *spárōjaną
+
+**Mismatch row:** TSV 2205 `*spárēną` → `sparian`; pre-fix FST output `sparen`.
+**Date:** 2026-04-26.
+**Status:** TSV-only closure (Plan A), gated on §17.25 phonology fix.
+**Dossiers:** `Germanic/docs/dossier-spar-2025.md`, `Germanic/docs/dossier-spar-apocope-2025.md`.
+
+### §17.32.1 Context — what §17.25 established and what was deferred
+
+§17.25 was a single loop that fixed two related problems:
+
+1. **Phonology fix (delivered):** `OEARestorationIntervening` no longer
+   excludes single `*r`/`*l` from the set of consonants across which
+   A-restoration can apply. Per Campbell §158, R/T §6.3.1, Brunner §10,
+   Luick §161, single intervening `*r` and `*l` do **not** block
+   restoration; only Cr/Cl/Cn/Cm/etc. clusters do. The literature-grounded
+   cluster taxonomy `[ C | sC | fC | geminate ]` is now in the FST
+   (germanic.txt:1808-1813). All canonical class-II forms (`farian`,
+   `warian`, `talian`, `macian`, `lapian`, `bacian`, `nafola`, `sadol`,
+   `stapol`, `hara`, `mara` …) and the geminate class
+   (`hnappian`, `lappa`) now derive correctly.
+
+2. **TSV fix for row 2205 (deferred):** `*spárēną` is the **class-III**
+   reconstruction. OE `sparian` is the **class-II** reanalysis (Campbell
+   §764, lines 23258-23262: "this verb does not show any of the
+   characteristics … listed above [for class III], but Rit. inf.
+   *spæria*, imper. *spær*, past *-spærede* … suggest Prim. OE forms
+   both with and without back vowels … hence conjugation according to
+   Class II or Class III"). Standard West Saxon `sparian` is the class-II
+   reflex; the class-III shape survives only in Northumbrian Ritual.
+   The FST cannot model the class-III → class-II morphological remap
+   internally; the cleanest treatment is to enter the TSV PROTOFORM as
+   the class-II shape `*spárōjaną` directly (§17.25.4).
+
+   §17.25.7 deferred this change to a follow-up loop ("spárēną … still
+   mismatch (still); deferred to §17.26 (class III/II)"), but §17.26
+   ended up addressing `*fáraną` instead, and the spárēną TSV switch
+   was never executed. This section closes the residual loop.
+
+### §17.32.2 Verification (pre-fix probes)
+
+Probes on the current pipeline (`old_english.bin`):
+
+| input | output | notes |
+|---|---|---|
+| `*spárēną` | `sparen` | class-III input, no `-ian` morphology — current mismatch |
+| `*spárōną` | `sparen` | non-extended class-II *sparōn-, also doesn't yield -ian |
+| `*spárōjaną` | `sparian` | **canonical class-II shape: derives `sparian` correctly** |
+
+The third probe demonstrates the FST is already correct end-to-end;
+the only thing missing is the TSV PROTOFORM switch.
+
+### §17.32.3 Authority survey for the *spar- verb
+
+| Source | Reconstruction | Page / § |
+|---|---|---|
+| Kroonen, *Etymological Dictionary of Proto-Germanic* | `*sparōn-` ~ `*sparēn-`, weak class II ~ III | p. 465 s.v. *spara- |
+| Orel, *Handbook of Germanic Etymology* | `*sparēnan` (class III) with WGmc doublet `*sparōnan` | H 531-2 |
+| Campbell, *Old English Grammar* | OE `sparian` is class II in WS; Rit. *spæria/spær/spærede* shows class III relics | §764 lines 23258-23262 |
+| R/T, *Linguistic History* vol. II §6.3.1 | Class-II weak verbs always exhibit retracted *a*; lists `carian, talian, lapian, bacian, nafola, sadol, hara, mara…` as canonical examples | lines 11013-11019 |
+| Brunner, *Altenglische Grammatik* | Class-II `-ian` reflex from `-ōjan-`; -j-deletion + tail reduction | §§411-415 |
+
+The verb is *one of* Kroonen's class-II/III doublets. WGmc went both
+ways; OE chose the class-II remodelling (with sporadic class-III
+relics in Northumbrian only). The PGmc shape we feed the FST should
+be the class-II *sparōjaną so the FST sees the morphological input
+that actually underlies the attested OE form.
+
+### §17.32.4 TSV change
+
+Row 2205 (`Germanic/data/germanic-aligned-final.tsv` line 1066):
+
+- **PROTOFORM** `*spárēną` → `*spárōjaną`
+- **PROTO** `*sparēną` → `*sparōjaną`
+- **NOTE** rewritten to record the class-III/class-II doublet (Kroonen,
+  Orel, Campbell §764, R/T §6.3.1) and that the PROTOFORM enters as
+  class-II so the FST derives the canonical WS form. References both
+  §17.25 (the phonology fix that unblocked the class-II pathway) and
+  this section.
+
+ALIGNMENT, COUNTERPART, IPA, and gloss are unchanged: the target OE
+form `sparian` is already correct.
+
+### §17.32.5 Predicted outcome
+
+- Row 2205 mismatch resolved: probe `*spárōjaną → sparian` matches the
+  COUNTERPART column.
+- Mismatch count: 23 → 22.
+- Tractable count: 15 → 14.
+- No FST changes — pure data correction, gated on the §17.25 phonology
+  fix already in place.
+- No regressions possible from a TSV-only change; full mismatch report
+  will confirm.
+
+### §17.32.6 Plan-A rationale — why no Anglian relic is admissible
+
+After §17.32.3 the question was reopened (user, 2026-04-26): does any
+*attested* Anglian relic give a cleaner lautgesetzlich pathway than the
+WS infinitive? Two deep-research dossiers were prepared:
+
+- `dossier-spar-2025.md` — paradigm-cell survey (Kroonen p. 465, Orel
+  p. 363, R/T p. 162, p. 191, Kluge–Seebold p. 859, Campbell §764,
+  Brunner §415).
+- `dossier-spar-apocope-2025.md` — OE final-vowel apocope literature
+  (Brunner §150, Campbell §766, R/T §6.5–6.6, Fulk §3.20, Hogg-CHEL).
+
+Then both directions of the FST were probed for every attested Anglian
+form (apply-down on candidate PGmc cells, apply-up on the OE relics
+themselves). Results:
+
+| Anglian relic | Lautgesetzlich source? | Verdict |
+|---|---|---|
+| `spæria` (Rit. inf.) | none — apply-up returns only "compound prefix" garbage | **hybrid** (cl-III stem + cl-II inf. ending; Campbell §764 explicit) |
+| `spær` (Rit. imper.sg) | apply-up gives `*sparaz` | **analogical** to homophonous adj. `spær` < *sparaz (R/T p. 162); not a verb cell |
+| `spærede` (Rit. past) | none — pgrmWord has no class-III past slot, and no coherent input is reconstructable | **hybrid past**, levelling |
+| `spearad` (VP 3sg) | none — back mutation is not in the cascade for class-II 3sg; apply-up demands pre-broken `*spea-` input | not derivable without new machinery |
+| `spæreþ` (cl-III 3sg, Anglian *type* per Campbell §766) | `*spárēθi → spæreþ` ✓ via existing pgrmWeakTailVowel cell (line 435) | **lautgesetzlich but `spæreþ` is unattested** for *spar-* |
+| `spære` (cl-III imper.sg) | `*spárē → spære` ✓ | **lautgesetzlich but `spære` is unattested** (verified against Bosworth-Toller, Clark Hall, Brunner paradigm tables) |
+
+The decisive negative finding (dossier-spar-apocope §1) is **Brunner
+§150**: "Ein Abfall anderer Endsilbenvokale … findet im Ae. nicht
+statt … insbesondere bleiben erhalten: auslautende -e (für älteres -i
+oder -æ)". Final -e from PGmc *-ē/*-ai is **not** further apocopated in
+OE. Campbell §766 corroborates: the same Anglian dialect that yields
+`spær` (imper.) also yields `hæfe`, `sæġe` (imper.) with -e retained
+from structurally identical inputs. So `spær` cannot be from a sound
+change applying to `*spárē`; it must be analogical to the adjective.
+
+### §17.32.7 The choice: very-early vs very-late analogy
+
+Both available routes require analogy somewhere; only the **timing**
+differs:
+
+- **Very-early analogy (Plan A, taken):** the class-III → class-II
+  refashioning happens at the (West-)Germanic → pre-OE stage. The TSV
+  PROTOFORM `*spárōjaną` is a **transponent** in the strict sense — it
+  encodes the class-II shape that the *attested* OE paradigm
+  presupposes, even though comparative evidence (Go. *sparan*, OHG
+  *sparēn*, ON *spara*, plus the Northumbrian Rit. relics) shows the
+  inherited cognate set is class-III. The FST then produces `sparian`
+  by regular sound change from this shape, exactly as it does for the
+  other class-III→II refashioned verbs already in the TSV
+  (`búrōjaną → borian`, `líznōjaną → liornian`, `xándlōjaną → handlian`,
+  `súndrōjaną → sundrian`, etc.).
+
+- **Very-late analogy (Plan B family, rejected):** keep a class-III
+  PROTOFORM (`*spárēną` or a paradigm cell like `*spárē`) and
+  postulate intra-OE levelling/apocope to bridge to the attested form.
+  This requires either (a) a target form that is not actually attested
+  (`spære`, `spæreþ`) or (b) a non-Lautgesetz rule (final-e apocope
+  after light stem, contradicting Brunner §150). Both fail under the
+  project's ethos ("longest possible lautgesetzlich span from a
+  genuinely reconstructable PGmc form to an actually attested OE
+  form").
+
+Plan A is therefore the only admissible route. The TSV NOTE on row
+2205 is updated to record (i) the transponent status, (ii) the
+existence of class-III evidence (Rit. relics), (iii) the analogical
+contamination of those relics, and (iv) the very-early/very-late
+trade-off resolved in favour of the former.
+
+### §17.32.8 TSV change actually applied
+
+Row 2205 (`Germanic/data/germanic-aligned-final.tsv` line 1066):
+
+- **PROTOFORM** `*spárēną` → `*spárōjaną`
+- **PROTO** `*sparēną` → `*spárōjaną`
+- **NOTE** rewritten per §17.32.7; cites Campbell §764, R/T p. 162,
+  Brunner §150, the apply-up screen of all Anglian relics, and both
+  dossiers.
+
+ALIGNMENT, COUNTERPART, IPA, gloss unchanged.

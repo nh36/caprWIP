@@ -1063,7 +1063,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1230	ʃ p a r ə n	*sparrô	ʃ p a r ə n	ʃparən	Sparren	338	German					spar	*sparrô	242
 835	s p aː r ə	*sparēną	s p aː r ə - ( - - )	spaːrə	sparen	229	Dutch					spare	*sparēną	243
 834	s p ɛə	*sparēną	s p ɛə r - - ( - - )	spɛə	spare	229	English					spare	*sparēną	243
-2205	s p a r i a n	*spárēną	s p ɛə r - - ( - - )	spɛə	sparian	229	Old_English	R/T: PGmc *sparēną > OE sparian (to spare); not adj spær				spare	*sparēną	243
+2205	s p a r i a n	*spárōjaną	s p ɛə r - - ( - - )	spɛə	sparian	229	Old_English	Transponent: cognate set is class-III *spárēną (Go. sparan, OHG sparēn, ON spara), but OE has only the refashioned class-II *spárōjaną → sparian. Anglian Rit. relics spæria (hybrid: cl-III stem + cl-II ending, Campbell §764), spær (analogical to homophonous adj. spær < *sparaz, R/T p.162), spærede (hybrid past), VP spearad (cl-II 3sg with back mutation) all show analogical interference; no cell yields an attested OE form lautgesetzlich from class-III input (FST: *spárēθi → unattested *spæreþ, *spárē → unattested *spære; Brunner §150 negates further -e apocope). Choice is therefore very-early analogy (PWGmc-level cl-III→II refashioning, taken here) vs very-late analogy (intra-OE levelling); we take the former. Same convention as other class-III→II refashioned -ian verbs in this TSV (búrōjaną, líznōjaną, etc.). See DEV_NOTES §17.32; dossiers dossier-spar-2025.md, dossier-spar-apocope-2025.md.				spare	*spárōjaną	243
 833	ʃ p aː r ə n	*sparēną	ʃ p aː r ə n ( - - )	ʃpaːrən	sparen	229	German					spare	*sparēną	243
 367	s p eː r	*spéru	s p eː r ( - )	speːr	speer	101	Dutch					spear	*spéru	244
 366	s p ɪə	*spéru	s p ɪə r ( - )	spɪə	spear	101	English					spear	*spéru	244
