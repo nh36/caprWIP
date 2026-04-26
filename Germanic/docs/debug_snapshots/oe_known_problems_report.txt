@@ -2,9 +2,9 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         25
+Total mismatches:         26
   Tractable (no ledger):  18
-  exception               1
+  exception               2
   open                    0
   parked                  1
   wontfix                 5
@@ -29,9 +29,6 @@ mismatch-loop workflow (research dossier → review → implement).
   *bō                -> bu                   (expected bā]] [[þā)
   *téxun             -> teoon                (expected tīen)
 
---- other__breaking_extra__ea_for_a (1) ---
-  *spárēną           -> spearen              (expected sparian)
-
 --- other__breaking_extra__eo_for_high (1) ---
   *néwun             -> nēowon               (expected nigon)
 
@@ -53,6 +50,9 @@ mismatch-loop workflow (research dossier → review → implement).
 --- other__cons_mismatch__n_vs_-__word_final (1) ---
   *súndrōjaną        -> sundrian             (expected sundor-)
 
+--- other__epenthetic_vowel_missing (1) ---
+  *spárēną           -> sparen               (expected sparian)
+
 --- other__final_vowel_extra (2) ---
   *láimōn            -> lāfe                 (expected lām)
   *wéstanē           -> westene              (expected west)
@@ -61,7 +61,7 @@ mismatch-loop workflow (research dossier → review → implement).
   *skúldrō           -> sċoldor              (expected sċuldra)
 
 --- other__front_expected_back_out (1) ---
-  *táppô             -> tappa                (expected tæppa)
+  *márōn             -> mare                 (expected mære)
 
 --- other__gemination_extra (2) ---
   *spénnilō          -> spinnlu              (expected spindle)
@@ -105,13 +105,19 @@ WONTFIX  (5)
     added:  2026-04-25
 
 ========================================================================
-EXCEPTION  (1)
+EXCEPTION  (2)
 ========================================================================
 --- analogical_dat_e (1) ---
   *fūri              -> fȳr                  (expected fȳre)
     reason: FST correctly produces fȳr (regular nom./acc.sg. outcome of *fūri after i-umlaut + high-vowel apocope); target fȳre has analogically restored dat.sg. -e (four-part analogy with word:worde) — morphological process the FST cannot model
     refs:   DEV_NOTES.md §6084-6268 (esp. 6189, 6262-6268)
     added:  2026-04-25
+
+--- analogical_n_stem_levelling (1) ---
+  *táppô             -> tappa                (expected tæppa)
+    reason: FST correctly produces tappa (lautgesetzlich nom.sg. of n-stem masc *táppô with A-restoration before back *-ô; cf. crabba, racca, maþa per R/T p.207); attested tæppa has analogical æ — every paradigm cell traps into either A-restoration → tappa/tappan or i-umlaut → teppan, so no PGmc input yields lautgesetzlich tæpp- (Fulk §12.19 n.6 stæppan parallel; plausibly levelled from co-radical j-stems)
+    refs:   DEV_NOTES.md §3097, §14077, §17.10.16a-c, §17.27
+    added:  2026-04-26
 
 ========================================================================
 OPEN  (0)

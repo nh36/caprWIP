@@ -36832,3 +36832,55 @@ across the TSV) and stay as-is. PROTOFORM (`*fáraną`) and PROTO
 2. `python3 Germanic/tools/oe_mismatch_report.py` → expect 27 → 26.
 3. Confirm no other rows shift.
 4. Commit + push.
+
+## §17.27 Closure: *táppô triaged to known-problems ledger (analogical)
+
+After §17.25 (A-restoration before single *r/*l fix), the FST now produces
+the lautgesetzlich form `tappa` from PGmc *táppô (n-stem masc), validating
+the earlier analyses in §3097 ff., §14077 ff. (parallel *lappô) and the
+revised proposal in §17.10.16a–c. The attested OE `tæppa` cannot be derived
+by regular sound change from any reconstructable PGmc input:
+
+- A-restoration before back *-ô gives `tappa` (parallel: crabba, racca,
+  maþa per R/T p.207).
+- A pre-form with *-i- (which would block A-restoration) feeds i-umlaut
+  to `teppan`, not `tæppan`.
+- No paradigm cell of *táppô yields lautgesetzlich `tæpp-`. The `æ` is
+  analogical, plausibly levelled from co-radical j-stems
+  (Fulk §12.19 n.6 cites *stæppan* as a parallel analogical case).
+
+Per the policy chosen in §17.10.16c (option ii: separate-bucket), this row
+is now formally classified as a documented analogical exception in the
+known-problems ledger (`Germanic/data/oe_known_problems.tsv`), parallel to
+the *fūri* / fȳre treatment (cf. §6084 ff.). The headline mismatch report
+still surfaces it (the main report does not consult the ledger), but the
+triage report (`oe_known_problems_report.py`) now classifies it with
+`status=exception, category=analogical_n_stem_levelling`, removing it from
+the pool of *actionable* mismatches.
+
+This is the worked example of §17.10.16c option (ii) and the second
+ledger-triaged analogical case after fȳre.
+
+### §17.27.1 Ledger entry
+
+```
+*táppô  exception  analogical_n_stem_levelling  FST correctly produces
+tappa (lautgesetzlich nom.sg. of n-stem masc *táppô with A-restoration
+before back *-ô; cf. crabba, racca, maþa per R/T p.207); attested tæppa
+has analogical æ — every paradigm cell traps into either A-restoration →
+tappa/tappan or i-umlaut → teppan, so no PGmc input yields lautgesetzlich
+tæpp- (Fulk §12.19 n.6 stæppan parallel; plausibly levelled from
+co-radical j-stems)  DEV_NOTES.md §3097, §14077, §17.10.16a-c, §17.27
+2026-04-26
+```
+
+### §17.27.2 Outstanding §17.25-exposed issue
+
+Of the three TSV-target issues exposed when §17.25 unblocked A-restoration
+before single *r/*l, two are now resolved:
+- row 2003 *fáraną → faran (TSV correction, §17.26)
+- *táppô (ledger triage, this section, §17.27)
+
+One remains for a future loop:
+- row 2141 *márōn / *nihtmare → mare (target mære) — substantive
+  reconstruction question, deferred.
