@@ -1545,25 +1545,55 @@ i-stem at all, despite the ON evidence.
   borrowing. None of these fit the evidence as cleanly as H1, H2,
   H5, or H6.
 
-**Status.** No fix implemented. The mismatch is parked as a known
-notable item. No published source treats it as a problem requiring
-explanation, so the contribution of this entry is precisely to flag
-that one is needed.
+**Status (closed 2026-04-26).** Triaged as intractable and logged in
+`Germanic/data/oe_known_problems.tsv` (status `wontfix`, category
+`smoothing_anglian_relic`). The earlier H1 recommendation (*rōkiz) is
+**withdrawn**.
 
-**Tentative recommendation for future work.** The cleanest
-single-step intervention is **H1**: change the TSV PROTOFORM (the
-FST input column) from `*ráukiz` to `*rōkiz`, while retaining
-`*raukiz` in the PROTO column (the cognate headword). This invokes
-the §17.21.11 input/headword distinction and leaves the FST
-unchanged. The status of *rōkiz as a pre-OE reconstruction is
-defensible if H5- or H6-type processes are accepted as having
-operated WGmc- or OE-internally on the inherited *raukiz. If a
-genuine PGmc-level reconstruction is required, then H6 (paradigm-cell
-identification) becomes the priority research target.
+**The diagnostic that breaks H1.** Modern English *reek* /riːk/ has
+velar /k/, not the affricate /tʃ/ that would be expected from a
+palatalized OE [ċ] (cf. *speech* < OE *sprǣc*; *ditch* < OE *dīċ*
+vs. *dike* < OE pl. *dīcas*). H1's *rōkiz feeds OE i-umlaut and
+yields palatal `rēċ`, which would have given ME *reech / reach,
+not *reek*. The independent verb *rēcan* preterite *rēhte* (< /rēk-de/,
+which only forms cleanly from a velar) corroborates the velar
+reading. So whatever the right input is, it cannot be one that
+triggers OEVelarPalatalization on the final *k.
 
-**Cross-references.** Full research dossier in DEV_NOTES.md §17.22
-and §17.22.13. Methodological precedent for input/headword distinction
-in §17.21.11.
+**Resolution adopted.** Following Kroonen (p.c.), the PROTOFORM is
+switched from i-stem `*ráukiz` to a-stem `*ráukaz` (analogical
+replacement of the i-stem; the continental WGmc cognates Du. *rook*
+and Ger. *Rauch* are already a-stems). The FST output of *ráukaz is
+the regular `rēac`. To derive the attested *rēc* lautgesetzlich
+requires Anglian smoothing (`ēa → ē / _velar`) inserted between
+`OEDiphthongLeveling` and `OEVelarPalatalization`. Adding that
+rule to the cascade unconditionally would regress at minimum
+*bēacen*, *hēah*, *ēage*, *sēah*, *tēah* — all WS forms that
+retain the diphthong. Smoothing is dialectally restricted (Anglian)
+and only lexically diffused into WS for a small set (lēac/lēc, rēc,
+-lēc). Lexical gating is more invasive than the problem warrants.
+
+**Treatment.** *rēc* is treated as an Anglian relic loaned into WS,
+parallel to the §17.20 (tang) and §17.21 (swester) precedents.
+The cognate-set siblings keep their own etyma per row (Du. rook,
+Eng. reek, Ger. Rauch all share the cognate headword *ráukaz).
+
+**Why this is a contribution.** No published source we surveyed
+flags rēc as a lexical irregularity, despite its non-derivability
+under any single set of regular rules from the Kroonen-style
+i-stem reconstruction. The handbooks silently use rēc as if it
+were unproblematic. The FST cascade forces the question by failing
+to derive the form, and the ModE /riːk/ velar diagnostic — which
+is independent of any handbook — settles it: the OE form had [k],
+not [ċ], and therefore the i-stem reconstruction is wrong (or, more
+charitably, was already replaced by an a-stem in pre-OE). This is
+the kind of finding the FST is uniquely positioned to surface.
+
+**Cross-references.** Research dossier in
+`Germanic/docs/dossier-reek-2026.md` (398 lines). Earlier dossier
+material in DEV_NOTES.md §17.22; closure subsection §17.33.
+Methodological precedent for input/headword distinction in
+§17.21.11.
 
 ---
 
