@@ -8,8 +8,7 @@ Total mismatches: 24
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
-  long_vowel_missing: 1
-  no_output: 1
+  long_vowel_missing: 2
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
@@ -45,17 +44,12 @@ breaking_missing__expected_eo_got_e (1):
   >> LIKELY: Breaking rule missing this context or ordered wrong
   >> ACTION: Check *e before r/l/h in breaking environments
 
-long_vowel_missing (1):
+long_vowel_missing (2):
+  *bō -> bu (expected bū)
   *téxun -> teoon (expected tīen)
   >> ISSUE: Long vowel expected but short produced
   >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
   >> ACTION: Check if proto should have long vowel; check lengthening rules
-
-no_output (1):
-  *bṓ -> +? (expected bū)
-  >> ISSUE: FST produces no output (grammar rejection)
-  >> LIKELY: Compound separator (-), unusual cluster, or grammar gap
-  >> ACTION: Check if proto contains unsupported sequences; may need grammar extension
 
 final_vowel_extra (2):
   *láimōn -> lāfe (expected lām)

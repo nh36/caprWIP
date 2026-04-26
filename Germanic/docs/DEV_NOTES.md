@@ -37223,12 +37223,22 @@ Two distinct issues exposed:
    rules in this loop.
 2. The cleanest target for the OE row in cogset "both" is **`bū`**
    (Campbell §122; same change as `tū` / `cū` / `hū` / `þū`).
-3. The TSV fix (rename target to `bū`, mark PROTOFORM with stress) can be
-   done immediately and in isolation. **Mismatches will not drop yet**
-   because the FST still gives short `bu` not long `bū`.
-4. The FST fix (final-accented-ō → ū) needs separate research across
-   Brunner / Hogg / Ringe-Taylor before implementation. Parked as a
-   prospective §17.31 loop.
+3. The TSV fix (rename target to `bū`) can be done immediately and in
+   isolation. **Mismatches will not drop yet** because the FST still
+   gives short `bu` not long `bū`.
+4. **No new stressed-long-vowel inventory.** An earlier draft proposed
+   marking the proto as `*bṓ`; rejected because (a) the system carries
+   no other stressed long vowels and we do not want to add inventory
+   for one row, and (b) a monosyllable is inherently stressed — no
+   marking needed. The PROTOFORM stays `*bō`.
+5. The FST fix is therefore not "add a stressed-long-vowel rule" but
+   **"guard the weak-tail / apocope rule against firing on the only
+   vowel of a monosyllable"**. Campbell §122 ("final accented ō → ū …
+   cū, hū, tū, bū") is descriptively the change; mechanically the
+   *current* FST is over-applying weak-tail shortening to a vowel that
+   has nowhere to be weak-tailed *from*. Parked as a prospective §17.31
+   loop, pending cross-source verification (Brunner / Hogg / Ringe-
+   Taylor / Fulk).
 
 ### .3 TSV change (this loop only — no FST changes yet)
 
@@ -37236,7 +37246,8 @@ Row 1958, OE row in cogset "both":
 
 | field | before | after |
 |---|---|---|
-| PROTOFORM | `*bō` | `*bṓ` (stress-marked, paradigm cell = neut. nom./acc. dual) |
+| PROTOFORM | `*bō` | `*bō` (unchanged; no stressed-long-vowel inventory) |
+| ALIGNMENT | `b ā ] ] [ [ þ ā` | `b ū` |
 | COUNTERPART | `bā]] [[þā` (Wiktionary template:inh extraction garbage; intended `[[bā]] [[þā]]`) | `bū` |
 | NOTE | `Source: Wiktionary etymology (template:inh) \| Source: Wiktionary etymology (template:inh)` | rewrite citing Brunner §324 Anm.2, Campbell §683, Fulk §10.1, Kroonen 4681; note that ModE `both` is ON-loan-reinforced and not a direct OE descendant; lemma choice `bū` (n., directly attested) because `bēġen` is partly analogical (Kroonen 2013: 47) and `bā` (f.) exposes a separate FST issue. |
 
@@ -37247,29 +37258,28 @@ NL/G/E-via-Norse) deferred.
 ### .4 Predicted side-effects
 
 - Row 1958 still mismatches (FST gives short `bu` ≠ target `bū`) until
-  the Campbell §122 rule is added in a future loop.
+  the §17.31 monosyllable-guard fix lands.
 - Mismatch count unchanged at 24; tractable list moves this row to a
-  different bucket (likely `long_vowel_missing`).
-- `*kō → cu` (cow) row will likely also be exposed as a long-vowel issue
-  by the §17.31 FST work.
+  clearer `long_vowel_missing` bucket.
+- `*kō → cu` (cow) row will likely also be resolved by the same
+  §17.31 monosyllable-guard.
 - No regression risk from this commit (the only change is a TSV target
-  fix and a stress-mark addition).
+  fix).
 
 ### .5 Verification plan (this loop)
 
-1. Edit row 1958 (PROTOFORM, COUNTERPART, NOTE).
-2. Run reports; expect mismatch count unchanged at 24, but row's bucket
-   changes from `long_vowel_missing` (target `bā]] [[þā`) to a clearer
-   `long_vowel_missing` or `cons_mismatch` (target `bū`).
+1. Edit row 1958 (ALIGNMENT, COUNTERPART, NOTE; PROTOFORM unchanged).
+2. Run reports; expect mismatch count unchanged at 24.
 3. Commit DEV_NOTES + TSV.
-4. Park §17.31 (Campbell §122 final-accented-ō → ū rule) for separate
-   discussion + cross-source verification (Brunner, Hogg, Ringe-Taylor)
-   before implementation.
+4. Park §17.31 (monosyllable guard on weak-tail/apocope) for separate
+   discussion + cross-source verification (Brunner, Hogg, Ringe-Taylor,
+   Fulk) before implementation.
 
 ### .6 Authorities still to consult before §17.31 (FST work)
 
 - **Brunner**: where does he treat final-accented-ō → ū? (Likely §43 or
-  thereabouts; needs targeted look.)
+  thereabouts; needs targeted look.) More importantly: does he formulate
+  weak-tail reduction with an explicit monosyllable exemption?
 - **Hogg** (the actual phonology grammar, not the CHEL volume currently in
   the corpus — file `hogg_vol1.txt` here is the CHEL vol. 1, NOT Hogg's
   *Grammar of OE Phonology*). The latter is on the Vision-OCR priority
@@ -37281,3 +37291,13 @@ NL/G/E-via-Norse) deferred.
   conventional name beyond "Campbell §122"?
 
 Before implementing the FST rule, gather all five and confirm consensus.
+
+### .7 Update — stressed-long-vowel approach rejected (user, this loop)
+
+An earlier draft of this section proposed adding `{*ṓ}` to the inventory
+and marking the row's PROTOFORM as `*bṓ`. User pushed back: the system
+carries no stressed long vowels at all, and adding one purely to fix
+this single row is disproportionate. Reverted: PROTOFORM stays `*bō`,
+COUNTERPART becomes `bū`. The FST work in §17.31 is therefore framed as
+a monosyllable guard on the existing weak-tail / apocope rule — no new
+inventory.

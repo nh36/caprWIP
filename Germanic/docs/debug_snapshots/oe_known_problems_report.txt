@@ -25,11 +25,9 @@ mismatch-loop workflow (research dossier → review → implement).
 --- breaking_missing__expected_eo_got_e (1) ---
   *wéslon            -> weslon               (expected weosule)
 
---- long_vowel_missing (1) ---
+--- long_vowel_missing (2) ---
+  *bō                -> bu                   (expected bū)
   *téxun             -> teoon                (expected tīen)
-
---- no_output (1) ---
-  *bṓ                -> +?                   (expected bū)
 
 --- other__breaking_extra__eo_for_high (1) ---
   *néwun             -> nēowon               (expected nigon)
