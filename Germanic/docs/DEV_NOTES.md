@@ -36884,3 +36884,121 @@ before single *r/*l, two are now resolved:
 One remains for a future loop:
 - row 2141 *márōn / *nihtmare → mare (target mære) — substantive
   reconstruction question, deferred.
+
+## §17.28 *márōn / *nihtmare row 2141: TSV target correction (mære → mare)
+
+### §17.28.1 Context
+
+The third TSV-target issue exposed when §17.25 unblocked A-restoration
+before single *r/*l. Prior summary in the §17.27.2 outstanding-list:
+"row 2141 *márōn / *nihtmare → mare (target mære) — substantive
+reconstruction question, deferred."
+
+Earlier flag in the same DEV_NOTES (line 36625-36631 of an earlier
+revision):
+> **Independent — `*márōn → mare` is not a bug in our rule.**
+> For `*márōn`, intervening *r and trigger *ōn-: under §17.25.3 the
+> output `mare` is the expected lautgesetzlich result. The TSV target
+> `mære` for row 2141 (`*nihtmare`, gloss "nightmare", PROTO `*marōn`)
+> is most likely a TSV-target issue parallel to *fáraną.
+
+### §17.28.2 The reconstruction is uncontroversial
+
+PGmc / PNWGmc *marōn- 'nightmare' (n-stem fem.) is the standard
+reconstruction. Cognates:
+
+- ON  `mara` 'nightmare, ogress' (n-stem fem.)
+- OHG `mara` (n-stem fem.)
+- MLG `mare`
+- OE  ?  (the question this section addresses)
+
+Sources:
+- **Orel, *A Handbook of Germanic Etymology* p. 261**, lemma `*marōn
+  sb.f.`: "ON mara 'nightmare, ogress', OE *mære* 'nightmare', MLG
+  mare, OHG mara". Orel cites OE `mære` *but* gives no philological
+  evidence for a long-front-vowel form.
+- **Ringe & Taylor, *Development of Old English* (vol. 2) p. 192**,
+  in the canonical paradigm-list of *PWGmc *-ō / *-ōn-* n-stems
+  illustrating the A-restoration alternation:
+    > PNWGmc *maron- 'nightmare' (ON mara) > PWGmc *mara, *marōn-
+    > (OHG mara) > *mærǣ, *meron- >— **OE mare, maran, and mere**;
+  This is the same passage that gives `crabba` (with A-restoration),
+  `racca`, `maþa`, `flasce/flascan`, `hara`, `apa`, `maga`, `naca`
+  etc. — the canonical illustration list for §17.25.
+
+So Ringe-Taylor explicitly attest **`mare` (nom.sg.), `maran`
+(oblique), and a variant `mere`**, with no `mære` anywhere in the
+paradigm.
+
+### §17.28.3 Why the FST output `mare` is correct
+
+The FST input `*márōn` (= PROTOFORM, paradigm-cell-specific) follows
+the canonical n-stem fem. nom.sg. trajectory of the §17.25 cluster
+taxonomy:
+
+- short PGmc *a in pre-OE
+- intervening single *r (so neither geminate nor sC/fC cluster
+  triggers)
+- final back *-ō → -e in OE after high-vowel apocope and weak-tail
+  reduction
+- A-restoration applies before the back *-ō (cf. §17.25.3 and the
+  parallel rows tappa/crabba/hara/maga/naca: same exact rule, same
+  output shape)
+
+→ output: **`mare`** ✓ (matches RT vol. 2 p. 192 attested form).
+
+The FST output coincides with the reconstructed *PWGmc *mara* form
+that RT identify as the OE input — i.e., everything is regular.
+
+### §17.28.4 Why the TSV target `mære` is wrong
+
+Two plausible sources of the mistaken target:
+
+1. **Wiktionary contamination**: the TSV NOTE for row 2141 explicitly
+   says "Source: Wiktionary etymology (template:inh)". Wiktionary's OE
+   entry for the nightmare word lists a long-vowel headword `mǣre`,
+   but with no philological footing — apparently inheriting from
+   Orel's lemma without checking the actual attestations.
+2. **Conflation with the OE adjective `mǣre` 'famous, renowned'**
+   (jō/jā-stem, < PGmc *mēriz). This is the only `mǣre` Brunner's
+   *Altenglische Grammatik* lists (§4157, §10858, §26082); it is a
+   completely different word, with long *ē* and i-umlaut conditioner.
+3. **Target-tuned-to-buggy-FST hazard (§17.26.0)**: cannot be ruled
+   out — pre-§17.25 the FST may have been producing `mære` for some
+   inputs, in which case the target was set to silence the mismatch.
+   But unlike *fáraną, the pre-§17.25 output for *marōn was already
+   `mare` per the row-2141 trace, so this hypothesis is weaker here.
+
+The single-glossary form `mera m. incubus` (Hall, citing Goetz
+*Corpus Glossariorum* 838) is the variant `mere` that RT mention,
+spelt with Mercian/Anglian post-umlaut /e/ from /æ/. It is *not*
+evidence for `mære`.
+
+### §17.28.5 Proposed TSV change (row 2141)
+
+| Column | Current | New |
+|--------|---------|-----|
+| TOKENS | `* n i h t m a r e` | `* n i h t m a r e` (unchanged — already 'mare') |
+| COUNTERPART | `mære` | `mare` |
+| NOTE | `Unattested OE; reconstructed *nihtmare. \| OE mære is attested and cognate with -mare; compound not attested in OE.` | `Unattested OE compound *nihtmare; second element is OE mare 'nightmare' (n-stem fem., < PWGmc *mara, *marōn-, cf. ON mara, OHG mara). Per Ringe & Taylor *Development of Old English* vol. 2 p. 192 the attested OE forms are mare (nom.sg.), maran (obl.), and the variant mere. Earlier target mære reflected Wiktionary headword (Orel-style spelling) and was conflated with the unrelated OE adjective mǣre 'famous' (< PGmc *mēriz, jō/jā-stem); corrected per §17.28.` |
+
+ALIGNMENT (`( n aɪ - t ) m ɛə r ( - - )`) and IPA (`naɪtmɛə`) reflect
+the **modern English** reflex 'nightmare' — the standard convention
+for these columns in OE rows across the TSV — and stay as-is.
+PROTOFORM (`*márōn`) and PROTO (`*márōn`) stay as-is.
+
+### §17.28.6 Predicted side-effects
+
+- Mismatch count: −1 (row 2141 transitions from mismatch to match).
+- No FST changes required.
+- No regressions possible (TSV-only edit, isolated to one row).
+- All three §17.25-exposed TSV-target issues now resolved
+  (row 2003 *fáraną → faran §17.26; *táppô triaged §17.27;
+  row 2141 *márōn → mare here).
+
+### §17.28.7 Verification plan
+
+1. Edit row 2141 (COUNTERPART, NOTE).
+2. `python3 Germanic/tools/oe_mismatch_report.py` → expect 26 → 25.
+3. Confirm no other rows shift.
+4. Commit + push.

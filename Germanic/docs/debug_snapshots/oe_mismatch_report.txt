@@ -1,10 +1,10 @@
-Total mismatches: 26
+Total mismatches: 25
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      2
   Documented exceptions:       5
   Phonology (core buckets):    3
-  Phonology (other buckets):   16
+  Phonology (other buckets):   15
 
 === CORE BUCKETS ===
   breaking_missing__expected_eo_got_e: 1
@@ -12,7 +12,7 @@ Total mismatches: 26
 
 === OTHER SUB-BUCKETS ===
   final_vowel_extra: 2
-  front_expected_back_out: 2
+  front_expected_back_out: 1
   epenthetic_vowel_missing: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
@@ -59,8 +59,7 @@ final_vowel_extra (2):
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
 
-front_expected_back_out (2):
-  *márōn -> mare (expected mære)
+front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
 
 epenthetic_vowel_missing (1):

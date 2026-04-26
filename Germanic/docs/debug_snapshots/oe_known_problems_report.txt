@@ -2,8 +2,8 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         26
-  Tractable (no ledger):  18
+Total mismatches:         25
+  Tractable (no ledger):  17
   exception               2
   open                    0
   parked                  1
@@ -17,7 +17,7 @@ Exception = documented in literature/notes as genuine exception.
 Open      = currently being investigated (transient).
 
 ========================================================================
-TRACTABLE MISMATCHES  (18)
+TRACTABLE MISMATCHES  (17)
 ========================================================================
 These mismatches have no ledger entry and are candidates for the
 mismatch-loop workflow (research dossier → review → implement).
@@ -59,9 +59,6 @@ mismatch-loop workflow (research dossier → review → implement).
 
 --- other__final_vowel_missing__weak_noun_like (1) ---
   *skúldrō           -> sċoldor              (expected sċuldra)
-
---- other__front_expected_back_out (1) ---
-  *márōn             -> mare                 (expected mære)
 
 --- other__gemination_extra (2) ---
   *spénnilō          -> spinnlu              (expected spindle)
