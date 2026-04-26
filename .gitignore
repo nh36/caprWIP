@@ -1,25 +1,23 @@
+
+.DS_Store
+*_debug*.bin
+*_prev*.bin
+*_sandbox*.bin
+*_tmp*.bin
 /__pycache__
+/*.bin
 /*/__pycache__
 /*/*/__pycache__
-/refishing
-
-# FST compiled binaries (regenerated from .txt sources)
-# Only Germanic/fsts/*.bin should be tracked (mounted by Docker)
-/*.bin
+/backend/*.bin
 /build/
 /build/*.bin
-/backend/*.bin
 /Germanic/*.bin
+/refishing
 /server/german_after_*.bin
 /server/german_pre_surface.bin
 /server/german_surface_prep.bin
-
-# Temporary/sandbox files
-*_sandbox*.bin
-*_debug*.bin
-*_tmp*.bin
-*_prev*.bin
-
-
+# FST compiled binaries (regenerated from .txt sources)
+# Only Germanic/fsts/*.bin should be tracked (mounted by Docker)
 # Reference PDFs are not committed (kept local; .txt extracts are committed)
+# Temporary/sandbox files
 docs/references/*.pdf
