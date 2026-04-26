@@ -37116,3 +37116,168 @@ No FST change. PROTOFORM/PROTO unchanged.
    17 → 16; triaged unchanged.
 4. Confirm no spurious new mismatches appeared.
 5. Commit + push.
+
+## §17.30 — *bō ('both') row 1958: target was Wiktionary garbage; OE has no clean reflex
+
+### .1 Research dossier (OE 'both': `bēġen / bā / bū`)
+
+Compiled with Opus subagent across `docs/references/` (line numbers are
+in the corresponding files).
+
+#### .1.a Attestation (Brunner §324 Anm.2 = `brunner_1965_altenglische_grammatik.vision.txt:13207-13217`; Campbell §683 = `campbell_old_english_grammar.txt:18919-18953`; Fulk §10.1 = `fulk_comparative_grammar_early_germanic.txt:15632-15638)
+
+| | masc. | fem. | neut. |
+|---|---|---|---|
+| N/A | **bēġen** | **bā** | **bā, bū** |
+| Gen. | bēġra, bēġ(e)a | bēġra, bēġ(e)a | bēġra, bēġ(e)a |
+| Dat. | bǣm | bǣm | bǣm |
+
+Compound dual-numeral construction `bā twā` (m./f.), `bū tū` (n.),
+`bām twām` (dat.), often written together (`bū-twū`, `bū-tā`).
+
+Dialectal:
+- Anglian / Northumbrian (R², L, Rit.): masc. **bōēġe**, also `bōēġo /
+  bōezo` (L); gen. `bōēġera` (Rit.). The `oe` digraph = unrounded ø̄
+  (i-umlaut of ō).
+- Mercian R¹: `bēġen, bū` (WS-like ē).
+- Vesp.Ps.: lemma unattested.
+- Kentish (9th-c.): gen. `bēġa` ~ `bōēġa`; dat. `bǣm` ~ `bōēm`.
+- Ruthwell Cross: neut. `bā`.
+- Late OE: `beġġen` with shortened ē (Brunner 13216-7).
+
+#### .1.b Reconstruction state of the art
+
+Five distinct positions:
+
+| Source | OE bēġen ← |
+|---|---|
+| Sievers Beitr. 18, 407 → Holthausen → **Brunner §324 Anm.2** → **Orel** (`orel:6294-6295`) | **\*bōjenō** (compound `*bō- + jenō`); sound-law derivation |
+| **Fulk** §10.1 (`fulk:15584-15596, 15662-15667`) | accepts `*bō-jen-` cautiously; flags Seebold's objection |
+| **Seebold 1968: 418-21** (cited in Fulk 15662-7) | rejects `*bō-jen-`; favours `*bō-þ-` (article-stem), parallel to ON báðir, OHG bēde |
+| **Kroonen 2013** s.v. *ba- (`kroonen:4678-4694`, esp. 4681) | OE bēġen = **analogical** (`-en` from `twēġen`, lit. 'both two'); inherited PGmc paradigm is bare `*bai, *bōz, *bō`; no `*bōjenō` |
+| **Ringe-Taylor vol. 2** | silent on this lemma |
+
+Fulk explicitly notes (15598-15600) that the umlaut in `bēġen`/`twēġen`
+"can only be the umlaut of ō" (Anglian `oe` digraph evidence), so
+whatever input fed bēġen had a long ō.
+
+#### .1.c Sound-change pathway from `*bōjenō` (the Sievers/Brunner/Orel pathway)
+
+Standard chronology:
+
+1. WGmc apocope of *-ō → `*bōjen` (or stem `*bōjen-`)
+2. Long-vowel i-umlaut: ō + j-trigger in next syllable → ø̄ (Anglian `oe`)
+   = **canonical rule** (Campbell §198 = `campbell:5709-5727`); same as
+   `*sōkjan → sēċan`, `*dōmjan → dēman`, `*fōdjan → fēdan`, `*kōpjan → cēpan`.
+3. WS / late Mercian unrounding ø̄ → ē → `*bējen-`
+4. Orthographic palatal-g convention: medial [j] between front vowels = `ġ`
+   → surface `bēġen` (variant `bēien`).
+
+**The pathway uses no rule that isn't already standard; the input
+`*bōjenō` itself is the only contested element.**
+
+#### .1.d Modern English `both`
+
+Modern E `both` does **not** descend from `bēġen`. The OE compound `bā þā`
+('the both [those-fem./neut.]') is the structural ancestor of ME `bothe`,
+but the actual surface form is reinforced by, or directly borrowed from,
+**ON báðir / báða / bæði** (= PGmc `*bai-þaiz`, the same `-þ-`
+article-extension stem that gives G `beide`, NL `beide`, OFris `bēthe`).
+OED s.v. *both*; MED s.v. *bōth(e*. Kroonen 4682 lists "E both" under the
+same headword as ON `báðir`, OE `bā`, with no separate lemma.
+
+So:
+- Modern E `both` is etymologically Norse-loan-reinforced syntactic phrase,
+  cognate with G `beide` *via* PGmc `*bai-þ-`.
+- OE `bēġen` died out without survival in ModE.
+- The cogset header `*bō` is awkward: it fits OE `bū`/`bā` (un-extended
+  stem) but not the German/Dutch/MnE forms (which need *bai-þ-).
+
+#### .1.e FST gap assessment
+
+Current behaviour:
+- `*bṓjenō` → `+?` (rejected; pgrmWord shape coverage gap)
+- `*bōjenaz` (no stress) → `bēien` — short /e/, no length, j retained as i
+- `*bō` → `bu` (stressed monosyllable; SHOULD be long `bū` per Campbell
+  §122 "final accented ō → ū … OE cū, hū, **tū**, **bū** both")
+- `*kō` → `cu` (same bug; should be `cū`)
+- `*bū` → `bū` ✓ (input passes through)
+- `*xūs` → `hūs` ✓ (long ū preserved when input has ū)
+- `*bai` → `bē` (should be `bā` per Campbell §134 ai-monophthongization
+  — separate issue, parked for later)
+
+Two distinct issues exposed:
+1. **Stressed-monosyllabic *ō → ū length+raising rule** (Campbell §122)
+   appears to be missing or over-ridden by a weak-tail reduction rule.
+   This is a *real* FST gap, but a delicate one — needs cross-source
+   verification (Brunner, Hogg, Ringe-Taylor) before implementation.
+2. **bēġen derivation** would require either (a) lexical entry for
+   `*bōjenō` plus verification that long-vowel i-umlaut fires across the
+   `ō.j` syllable boundary, or (b) lexical-irregular treatment per
+   Kroonen.
+
+### .2 Recommendation
+
+1. `bēġen` is at minimum partly analogical (Kroonen, Fulk's caveat); we
+   should NOT try to derive it from a PGmc starred form via productive
+   rules in this loop.
+2. The cleanest target for the OE row in cogset "both" is **`bū`**
+   (Campbell §122; same change as `tū` / `cū` / `hū` / `þū`).
+3. The TSV fix (rename target to `bū`, mark PROTOFORM with stress) can be
+   done immediately and in isolation. **Mismatches will not drop yet**
+   because the FST still gives short `bu` not long `bū`.
+4. The FST fix (final-accented-ō → ū) needs separate research across
+   Brunner / Hogg / Ringe-Taylor before implementation. Parked as a
+   prospective §17.31 loop.
+
+### .3 TSV change (this loop only — no FST changes yet)
+
+Row 1958, OE row in cogset "both":
+
+| field | before | after |
+|---|---|---|
+| PROTOFORM | `*bō` | `*bṓ` (stress-marked, paradigm cell = neut. nom./acc. dual) |
+| COUNTERPART | `bā]] [[þā` (Wiktionary template:inh extraction garbage; intended `[[bā]] [[þā]]`) | `bū` |
+| NOTE | `Source: Wiktionary etymology (template:inh) \| Source: Wiktionary etymology (template:inh)` | rewrite citing Brunner §324 Anm.2, Campbell §683, Fulk §10.1, Kroonen 4681; note that ModE `both` is ON-loan-reinforced and not a direct OE descendant; lemma choice `bū` (n., directly attested) because `bēġen` is partly analogical (Kroonen 2013: 47) and `bā` (f.) exposes a separate FST issue. |
+
+Cogset PROTO column 14 left at `*bō` for now; broader question of
+splitting the cogset (`*bō` un-extended for OE; `*baiþaiz` extended for
+NL/G/E-via-Norse) deferred.
+
+### .4 Predicted side-effects
+
+- Row 1958 still mismatches (FST gives short `bu` ≠ target `bū`) until
+  the Campbell §122 rule is added in a future loop.
+- Mismatch count unchanged at 24; tractable list moves this row to a
+  different bucket (likely `long_vowel_missing`).
+- `*kō → cu` (cow) row will likely also be exposed as a long-vowel issue
+  by the §17.31 FST work.
+- No regression risk from this commit (the only change is a TSV target
+  fix and a stress-mark addition).
+
+### .5 Verification plan (this loop)
+
+1. Edit row 1958 (PROTOFORM, COUNTERPART, NOTE).
+2. Run reports; expect mismatch count unchanged at 24, but row's bucket
+   changes from `long_vowel_missing` (target `bā]] [[þā`) to a clearer
+   `long_vowel_missing` or `cons_mismatch` (target `bū`).
+3. Commit DEV_NOTES + TSV.
+4. Park §17.31 (Campbell §122 final-accented-ō → ū rule) for separate
+   discussion + cross-source verification (Brunner, Hogg, Ringe-Taylor)
+   before implementation.
+
+### .6 Authorities still to consult before §17.31 (FST work)
+
+- **Brunner**: where does he treat final-accented-ō → ū? (Likely §43 or
+  thereabouts; needs targeted look.)
+- **Hogg** (the actual phonology grammar, not the CHEL volume currently in
+  the corpus — file `hogg_vol1.txt` here is the CHEL vol. 1, NOT Hogg's
+  *Grammar of OE Phonology*). The latter is on the Vision-OCR priority
+  list; cf. `~/Desktop/capr_files_needing_vision_ocr.txt`.
+- **Ringe-Taylor vol. 2** (already in corpus): does ch. on apocope /
+  weak-tail reduction explicitly distinguish stressed monosyllables?
+- **Fulk** (already in corpus): does §11 or §12 cover this?
+- **Lass / Anderson, *Old English Phonology***: does the rule have a
+  conventional name beyond "Campbell §122"?
+
+Before implementing the FST rule, gather all five and confirm consensus.

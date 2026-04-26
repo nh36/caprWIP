@@ -21,3 +21,6 @@
 # Reference PDFs are not committed (kept local; .txt extracts are committed)
 # Temporary/sandbox files
 docs/references/*.pdf
+
+# OCR cache
+.cache/
