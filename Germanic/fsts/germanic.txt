@@ -2234,7 +2234,13 @@ define OEUnstressedIMarking OEUnstressedIMarking2 .o. OEUnstressedIMarking1 .o. 
 # protected by EnglishPalatalConsonant context handling elsewhere.)
 # See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
 define OEMedUnstressedILowering [
-    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant],
+    # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120). Folded
+    # in here from the legacy OEWeakTailReduction2 site as part of the
+    # *ĭ-cleanup refactor (Step 1; see DEV_NOTES §17.36 and
+    # dossier-ibreve-cleanup-2026.md). OEWeakTailReduction2 still runs
+    # downstream but is now a no-op (no surviving *ĭ at that point).
+    {*ĭ} -> {*e} || _ .#.
 ] .o. [
     # Restore *e → *i before the *ng cluster: derivational suffixes
     # *-ing-, *-ung- preserve their unstressed vowel uniformly across OE

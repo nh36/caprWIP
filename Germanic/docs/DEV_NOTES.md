@@ -38229,3 +38229,53 @@ future passes:
 - `Germanic/docs/DEV_NOTES.md`: §17.35 (this section).
 - `Germanic/docs/debug_snapshots/oe_mismatch_report.txt`: regenerated.
 - `Germanic/fsts/old_english.bin`, `backend/old_english.bin`: rebuilt.
+
+## §17.36 *ĭ (i-breve) cleanup — incremental dismantling
+
+The `*ĭ` auxiliary marker created by `OEUnstressedIMarking` is a hold-over
+from an earlier era when foma rules could not condition on the
+left-vowel + consonant structure that defines "non-initial syllable"
+position. The analogous unstressed *u* lowering (`OEMedUnstressedULowering`,
+`germanic.txt:2165-2167`) does the same job in a single rule with direct
+left-context conditioning and **no auxiliary symbol**. The *ĭ* system
+should reach the same shape.
+
+This section logs the incremental dismantling pass. **Each step is a
+single tiny change** with a rebuild + sentinel probe + mismatch-report
+verification. The dossier is `Germanic/docs/dossier-ibreve-cleanup-2026.md`.
+
+Sentinel test set (must remain stable through every step):
+
+| Input            | Expected   | Notes |
+| ---------------- | ---------- | ----- |
+| `*kúningaz`      | `cyning`   | *-ing- suffix preservation |
+| `*skíllingaz`    | `sċilling` | *-ing- suffix preservation |
+| `*wíkingaz`      | `wiċing`   | *-ing- suffix preservation |
+| `*bigínnaną`     | `beġinnan` | bi-/ni- prefix root preservation |
+| `*xárbistuz`     | `hierfest` | medial *i lowering (the canonical case) |
+| `*brínganą`      | `bringan`  | *brengan blocking, suffix-an protection |
+| `*strángiz`      | `strenġ`   | *e + *ng + palatal (no restoration) |
+| `*lángijaną`     | `lenġan`   | i-umlaut + palatal *ġ (no restoration) |
+| `*sángiz`        | `senġ`     | *e + *ng + palatal (no restoration) |
+| `*fúllijaną`     | `fyllan`   | doubling/gemination unaffected |
+| `*líbēθi`        | `lifeþ`    | 3sg pres. (lifian paradigm) |
+
+Baseline mismatch count entering this pass: **20**.
+
+### §17.36.1 Step 1 — fold word-final lowering into OEMedUnstressedILowering
+
+`OEWeakTailReduction2` (`germanic.txt:2341-2343`) lowered word-final `*ĭ`
+to `*e` in a separate rule, downstream of `OEMedUnstressedILowering`. The
+two are equivalent in effect — both consume `*ĭ`, only differ in
+right-context — and merging them is a precondition for collapsing the
+marking system.
+
+Change: added a second sub-rule `{*ĭ} -> {*e} || _ .#.` to the parallel
+block of `OEMedUnstressedILowering` (`germanic.txt:2236-2247`). The
+downstream `OEWeakTailReduction2` still runs but is now a no-op (no
+surviving `*ĭ` at that point); it will be removed in Step 1b.
+
+Verification:
+- All 11 sentinels produce expected outputs (probed via
+  `flookup -i /usr/app/old_english.bin`).
+- Mismatch count: 20 → 20 (no regression).
