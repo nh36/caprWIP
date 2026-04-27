@@ -2219,7 +2219,9 @@ define OEUnstressedIMarking3 [
 # Combine the marking steps
 # IMPORTANT: Step 2 must run BEFORE Step 1, because after Step 1 marks the
 # root *i as *ĭ, Step 2's pattern won't match (*ĭ not in EnglishStarVocalic).
-define OEUnstressedIMarking OEUnstressedIMarking2 .o. OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
+# §17.36.3: Step 2 (bi-/ni- prefix marking) removed from composition; the
+# work is done by OEPrefixIReduction (which fires later, on plain *i).
+define OEUnstressedIMarking OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
 
 # Step 4: Lower unstressed *ĭ to *e
 # Blocked phonetically before the *ng cluster: derivational suffixes

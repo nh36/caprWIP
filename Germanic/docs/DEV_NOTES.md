@@ -38291,3 +38291,29 @@ leaving only a §17.36.2 comment marker at each site for searchability.
 Verification:
 - All 11 sentinels produce expected outputs unchanged.
 - Mismatch count: 20 → 20.
+
+### §17.36.3 Step 2 — drop OEUnstressedIMarking2 from the composition
+
+`OEUnstressedIMarking2` was the bi-/ni- prefix-marking step that
+converted prefix `*i` → `*ĭ` so that a downstream restoration subrule
+in `OEUnstressedIMarking3` could put the root `*ĭ` back to `*i`. The
+rule body is left in place but is no longer composed into
+`OEUnstressedIMarking`.
+
+Justification: the bi-/ni- prefix vowel is independently handled by
+`OEPrefixIReduction` (germanic.txt:2260), which fires later in the
+cascade and converts the prefix `*i` → `*ĕ` to protect it from
+stressed-vowel rules (e.g. palatal diphthongisation). The earlier
+`*ĭ` marking was therefore doing redundant work; removing it lets
+`OEPrefixIReduction` perform the protection on its own.
+
+The bi-/ni- restoration subrule of `OEUnstressedIMarking3` (line
+2212) becomes vacuous — it requires `*ĭ` in prefix position which is
+no longer produced. Left in place for now; it will be cleaned up in
+a later step alongside the rest of the *ĭ machinery.
+
+Verification:
+- All 12 sentinels produce expected outputs unchanged
+  (`*bigínnaną → beġinnan` confirms the prefix protection still works
+  via `OEPrefixIReduction`).
+- Mismatch count: 20 → 20.
