@@ -2167,94 +2167,44 @@ define OEMedUnstressedULowering [
 ];
 
 # ===========================================================================
-# UNSTRESSED *i MARKING AND LOWERING
+# UNSTRESSED *i LOWERING (§17.36)
 # ===========================================================================
 # Hogg (1992) p.120: "by about 700 all unstressed front vowels had become /e/"
 # Campbell §369: "æ, e, and i fell together in a sound written e in unaccented syllables"
 # R/T §6.9.6: "The same merger occurred in various derivational suffixes; thus
 #   ærist 'first' > ærest, dryhtin 'lord' > dryhten"
 #
-# The challenge: we must distinguish STRESSED *i (which stays *i) from UNSTRESSED
-# *i (which lowers to *e). OE stress falls on:
-#   - First syllable (default Germanic stress), OR
-#   - Second syllable (if first syllable is an unstressed prefix: bi-, ga-, fra-, etc.)
+# We lower plain *i in non-initial syllables to *e. The TSV proto already
+# encodes stress in the vowel symbol (acute/macron = stressed; plain = unstressed),
+# so a context restricted to "after V+C+" is enough — no auxiliary marking needed.
 #
-# Strategy:
-#   Step 1: Mark ALL *i after the first vowel as *ĭ (tentatively unstressed)
-#   Step 2: For bi-/ni- prefix words, also mark the prefix *i as *ĭ
-#   Step 3: For prefix words, RESTORE the second-syllable *ĭ back to *i (stressed)
-#   Step 4: Lower remaining *ĭ to *e
+# History (see DEV_NOTES §17.36): an earlier design used an intermediate *ĭ symbol
+# produced by OEUnstressedIMarking{1,2,3} and consumed by OEMedUnstressedILowering.
+# That auxiliary tier was dismantled in §17.36.1–§17.36.6:
+#   §17.36.3: dropped IMarking2 (bi-/ni- prefix marking; OEPrefixIReduction
+#             handles the prefix vowel directly).
+#   §17.36.4: dropped vacuous bi-/ni- subrule of IMarking3.
+#   §17.36.5: folded IMarking1 into a direct *i → *e rewrite.
+#   §17.36.6: removed dead IMarking2/3/wrapper definitions and *ĭ clauses
+#             from OEMedUnstressedILowering, renamed surviving rule to
+#             OEMedUnstressedILowering1.
 # ===========================================================================
 
-# Step 1: Mark non-first-syllable *i as unstressed and lower directly to *e.
-# §17.36.5: previously this step produced an intermediate *ĭ symbol that
-# was lowered to *e by OEMedUnstressedILowering. Folded into a single
-# rewrite — the *ĭ intermediate is no longer needed since (a) IMarking2
-# was dropped in §17.36.3 and (b) the *e → *i restoration before *ng
-# (still in OEMedUnstressedILowering) recovers cyning-type forms from
-# the directly-produced *e.
-# Example: *harbistaz → *harbestaz (the *i in -ist- is after *a + *rb)
-define OEUnstressedIMarking1 [
+define OEMedUnstressedILowering1 [
     {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 
-# Step 2: For bi-/ni- prefix words, mark the prefix *i as unstressed
-# Pattern: word-initial *b/*n followed by *i followed by C+V (proving it's a prefix)
-# Example: *biginnăną → *b*ĭginnăną
-define OEUnstressedIMarking2 [
-    {*i} -> {*ĭ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
-];
-
-# Step 3: For prefix words, restore the stressed root *ĭ back to *i
-# After an unstressed prefix, the SECOND vowel is stressed.
-# Prefixes to handle:
-#   - bi-, ni- (subrule REMOVED in §17.36.4: vacuous after IMarking2 was
-#     dropped from the composition in §17.36.3 — no *ĭ in prefix position
-#     is produced anymore)
-#   - ga- (prefix vowel is *a)
-#   - fra- (prefix vowel is *a after *fr)
-define OEUnstressedIMarking3 [
-    # ga- prefix: restore *ĭ after *ga + consonant(s)
-    {*ĭ} -> {*i} || .#. {*g} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
-    # fra- prefix: restore *ĭ after *fra + consonant(s)
-    {*ĭ} -> {*i} || .#. {*f} {*r} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _
-];
-
-# Combine the marking steps
-# IMPORTANT: Step 2 must run BEFORE Step 1, because after Step 1 marks the
-# root *i as *ĭ, Step 2's pattern won't match (*ĭ not in EnglishStarVocalic).
-# §17.36.3: Step 2 (bi-/ni- prefix marking) removed from composition; the
-# work is done by OEPrefixIReduction (which fires later, on plain *i).
-define OEUnstressedIMarking OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
-
-# Step 4: Lower unstressed *ĭ to *e
-# Blocked phonetically before the *ng cluster: derivational suffixes
-# *-ing-, *-ung- preserve their unstressed vowel uniformly across OE
-# (Campbell §380, R/T vol.2 §6.9.6, Hogg 1992 p.120). The exemption is
-# stated as a phonetic right-context restriction (block before *n*g)
-# rather than a morpho-lexical suffix list, since FST rules cannot see
-# morphological boundaries; the *ng cluster is the diagnostic.
+# Restore *e → *i before *ng: derivational suffixes *-ing-, *-ung-
+# preserve their unstressed vowel uniformly across OE (Campbell §380,
+# R/T vol.2 §6.9.6, Hogg 1992 p.120). Implemented as a phonetic context
+# restoration since FST rules cannot see morphological boundaries; the
+# *ng cluster is the diagnostic.
 # Examples: *kuningaz → cyning (not †cyneng), *skíllingaz → sċilling,
 # *wīkingaz → wīcing.
 # (The *-ig, *-isc, *-iht suffixes mentioned in older comments are
 # protected by EnglishPalatalConsonant context handling elsewhere.)
 # See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
 define OEMedUnstressedILowering [
-    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant],
-    # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120). Folded
-    # in here from the legacy OEWeakTailReduction2 site as part of the
-    # *ĭ-cleanup refactor (Steps 1+1b; see DEV_NOTES §17.36 and
-    # dossier-ibreve-cleanup-2026.md). OEWeakTailReduction2 has now been
-    # removed (Step 1b).
-    {*ĭ} -> {*e} || _ .#.
-] .o. [
-    # Restore *e → *i before the *ng cluster: derivational suffixes
-    # *-ing-, *-ung- preserve their unstressed vowel uniformly across OE
-    # (Campbell §380, R/T vol.2 §6.9.6, Hogg 1992 p.120). Implemented as
-    # a phonetic context restoration since FST rules cannot see morphological
-    # boundaries; the *ng cluster is the diagnostic.
-    # Examples: *kuningaz → cyning (not †cyneng), *skíllingaz → sċilling.
-    # See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
     {*e} -> {*i} || _ {*n} {*g}
 ];
 
@@ -3072,7 +3022,7 @@ define EnglishProtoToOE (
     .o. OEUnstressedLongVowelShortening
     # 5. Merger: *æ → *e (unstressed vowel merger, §369)
     .o. OEUnstressedAEMerger
-    .o. OEUnstressedIMarking
+    .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
     .o. OEPrefixAReduction
@@ -3187,7 +3137,7 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEUnstressedLongVowelShortening
     .o. OEUnstressedAEMerger
     # NOTE: OEMedUnstressedULowering runs after NasalSpirantLoss (see §14.13)
-    .o. OEUnstressedIMarking
+    .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
     .o. OEPrefixAReduction

@@ -194,7 +194,7 @@ define OESandboxAfterUnstressedLongVowShort OESandboxAfterLateOShortening
 define OESandboxAfterUnstressedAEMerger OESandboxAfterUnstressedLongVowShort
     .o. OEUnstressedAEMerger;
 define OESandboxAfterUnstressedIMarking OESandboxAfterUnstressedAEMerger
-    .o. OEUnstressedIMarking;
+    .o. OEMedUnstressedILowering1;
 define OESandboxAfterMedUnstressedILowering OESandboxAfterUnstressedIMarking
     .o. OEMedUnstressedILowering;
 define OESandboxAfterPrefixIReduction OESandboxAfterMedUnstressedILowering

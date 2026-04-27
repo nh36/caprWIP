@@ -38330,3 +38330,72 @@ prefixes) remain in place.
 Verification:
 - All 12 sentinels stable.
 - Mismatch count: 20 → 20.
+
+### §17.36.5 Step 4 — fold IMarking1 into a direct *i → *e lowering
+
+`OEUnstressedIMarking1` previously produced an intermediate `*ĭ`
+symbol that was lowered to `*e` by `OEMedUnstressedILowering`. The
+intermediate is no longer useful — there is no other rule between
+the marking and the lowering, and the only consumer of the marking
+distinction (the bi-/ni- restoration subrule of IMarking3) was
+already removed in §17.36.4. Changed IMarking1's RHS from `{*ĭ}`
+to `{*e}`, folding the marking and lowering into a single rewrite.
+The `*e → *i` restoration before `*ng` (still in
+`OEMedUnstressedILowering`) recovers `cyning`-type forms.
+
+Note on a failed alternative approach: I first tried adding the
+plain-`*i → *e` rewrites as additional parallel clauses inside
+`OEMedUnstressedILowering` (alongside the `*ĭ` clauses), expecting
+them to be no-ops while IMarking1 still produced `*ĭ`. That
+introduced 12 new mismatches (e.g. `*máxtiz → meht` not `miht`),
+even though the plain-`*i` clauses theoretically could not match
+positions where IMarking1 had already produced `*ĭ`. The likely
+cause is foma's parallel-rule semantics interacting with the
+overlapping right contexts — adding parallel rewrites on a
+different LHS still alters the compiled FST in ways that affect
+upstream alphabet handling. Rolled back; the working approach is
+to put the rewrite directly in IMarking1 (a single-rule definition
+with no parallel partners) and leave `OEMedUnstressedILowering` to
+handle just `*ĭ` (now vacuous) and the `*ng` restoration.
+
+Verification:
+- All 12 sentinels stable.
+- Two formerly-passing forms used as extra checks:
+  `*déliz → dile`, `*máxtiz → miht` (both still produced).
+- Mismatch count: 20 → 20.
+
+### §17.36.6 Step 5 — remove dead *ĭ machinery (cosmetic cleanup)
+
+After §17.36.5 the cascade no longer produces `*ĭ` anywhere. This
+step removes the now-dead supporting code without any semantic
+change.
+
+Changes in `germanic.txt`:
+
+- Replaced the legacy 4-step strategy header comment (Step 1: mark
+  all *i, Step 2: mark prefix *i, Step 3: restore root *ĭ, Step 4:
+  lower) with a streamlined header that summarises the §17.36
+  history and points back to this DEV_NOTES section.
+- Renamed `OEUnstressedIMarking1` → `OEMedUnstressedILowering1` to
+  reflect what the rule actually does (it lowers; it no longer
+  marks). Body unchanged: `{*i} → {*e}` after V+C+.
+- Removed the dead definitions of `OEUnstressedIMarking2`,
+  `OEUnstressedIMarking3`, and the `OEUnstressedIMarking` wrapper.
+- Simplified `OEMedUnstressedILowering` to just the `{*e} → {*i}`
+  restoration before `*ng` (the two `*ĭ` clauses had no input).
+- In the main and sandbox cascades, replaced
+  `.o. OEUnstressedIMarking` with `.o. OEMedUnstressedILowering1`
+  immediately before `.o. OEMedUnstressedILowering`. The sandbox
+  stage label `OESandboxAfterUnstressedIMarking` was kept as-is so
+  the trace tool's stage list does not shift; only the rule it
+  composes onto changed.
+
+Verification:
+- All 14 sentinels (12 standard + `*déliz → dile`, `*máxtiz → miht`)
+  still produce expected forms.
+- Mismatch count: 20 → 20.
+
+The `*ĭ` cleanup is now complete: `*ĭ` appears nowhere in the
+grammar, in any form. The auxiliary marking tier has been retired
+in favour of relying on the stress information already encoded in
+the TSV proto symbols (acute/macron stressed; plain unstressed).
