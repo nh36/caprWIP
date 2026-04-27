@@ -2203,13 +2203,12 @@ define OEUnstressedIMarking2 [
 # Step 3: For prefix words, restore the stressed root *ĭ back to *i
 # After an unstressed prefix, the SECOND vowel is stressed.
 # Prefixes to handle:
-#   - bi-, ni- (prefix vowel is now *ĭ from step 2)
+#   - bi-, ni- (subrule REMOVED in §17.36.4: vacuous after IMarking2 was
+#     dropped from the composition in §17.36.3 — no *ĭ in prefix position
+#     is produced anymore)
 #   - ga- (prefix vowel is *a)
 #   - fra- (prefix vowel is *a after *fr)
-# Example: *b*ĭg*ĭnnăną → *b*ĭg*innăną (restore second *ĭ)
 define OEUnstressedIMarking3 [
-    # bi-, ni- prefixes: restore *ĭ after prefix *ĭ + consonant(s)
-    {*ĭ} -> {*i} || .#. [{*b} | {*n}] {*ĭ} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
     # ga- prefix: restore *ĭ after *ga + consonant(s)
     {*ĭ} -> {*i} || .#. {*g} {*a} [EnglishStarConsonant | EnglishPalatalConsonant]+ _ ,
     # fra- prefix: restore *ĭ after *fra + consonant(s)
