@@ -346,6 +346,13 @@ define pgrmWeakTailVowel [
     # See DEV_NOTES §17.19, §17.19.10.
     u:{*u} l:{*l} ô:{*ô} |
     i:{*i} n:{*n} a:{*a} z:{*z} |
+    # Derivational suffix *-ingaz (a-stem masc): patronymic / affiliative /
+    # diminutive nouns. Cognates: OE cyning, sċilling, æþeling, wīcing;
+    # ON skillingr; OS skilling; OHG scilling. The *-i- triggers i-umlaut
+    # on the stressed vowel (e.g. *kuningaz → cyning). Medial *ng is the
+    # standard *n + *g cluster (cf. *brínganą, *fíngraz, *kuningaz);
+    # phonetically [ŋg], orthographically ng. See DEV_NOTES §17.35.
+    i:{*i} n:{*n} g:{*g} a:{*a} z:{*z} |
     i:{*i} s:{*s} t:{*t} u:{*u} z:{*z} |
     i:{*i} z:{*z} |
     i:{*i} j:{*j} a:{*a} z:{*z} |
@@ -2215,11 +2222,28 @@ define OEUnstressedIMarking3 [
 define OEUnstressedIMarking OEUnstressedIMarking2 .o. OEUnstressedIMarking1 .o. OEUnstressedIMarking3;
 
 # Step 4: Lower unstressed *ĭ to *e
-# Only *ĭ (marked as unstressed) gets lowered; stressed *i is preserved.
-# Exception: *i preserved before palatals (-ig, -ing, -isc, -iht) — but those
-# involve palatal consonants which aren't matched by our consonant class here.
+# Blocked phonetically before the *ng cluster: derivational suffixes
+# *-ing-, *-ung- preserve their unstressed vowel uniformly across OE
+# (Campbell §380, R/T vol.2 §6.9.6, Hogg 1992 p.120). The exemption is
+# stated as a phonetic right-context restriction (block before *n*g)
+# rather than a morpho-lexical suffix list, since FST rules cannot see
+# morphological boundaries; the *ng cluster is the diagnostic.
+# Examples: *kuningaz → cyning (not †cyneng), *skíllingaz → sċilling,
+# *wīkingaz → wīcing.
+# (The *-ig, *-isc, *-iht suffixes mentioned in older comments are
+# protected by EnglishPalatalConsonant context handling elsewhere.)
+# See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
 define OEMedUnstressedILowering [
     {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+] .o. [
+    # Restore *e → *i before the *ng cluster: derivational suffixes
+    # *-ing-, *-ung- preserve their unstressed vowel uniformly across OE
+    # (Campbell §380, R/T vol.2 §6.9.6, Hogg 1992 p.120). Implemented as
+    # a phonetic context restoration since FST rules cannot see morphological
+    # boundaries; the *ng cluster is the diagnostic.
+    # Examples: *kuningaz → cyning (not †cyneng), *skíllingaz → sċilling.
+    # See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
+    {*e} -> {*i} || _ {*n} {*g}
 ];
 
 # R/T vol.2 p.303: "So also bi- > be-, ni 'not' > ne."

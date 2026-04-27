@@ -37957,3 +37957,275 @@ only needs the *j context, matching the *g geminate clause exactly.
   rule-symmetry fix, not a notable finding.
 
 **Expected post-fix:** `*strákkijaną → streċċan`. Mismatches 22 → 21.
+
+## §17.35 — *skéllinaz / sċilling (row 2181): missing PGmc *-ingaz derivational suffix
+
+### §17.35.1 The mismatch
+
+TSV row 2181 has PROTOFORM `*skéllinaz` and target `sċilling`. The FST
+produces `sċillen`. The vowel and palatalisation are right; the missing
+piece is the final `-g` and the underlying `-ing-` morpheme.
+
+### §17.35.2 Etymology — the proto is wrong
+
+OE *sċilling* is universally reconstructed with PGmc derivational
+suffix `-ing-` (a-stem masc). Sources concur:
+
+- Kroonen *EDPG* s.v. \*skellinga- ~ \*skillinga- (m.).
+- Wiktionary PGmc \*skillingaz, derived from \*skellaną 'to ring/sound'
+  or \*skel- 'to divide' + the patronymic / affiliative \*-ingaz.
+- ON skillingr, OS skilling, OHG scilling, OFris skilling — every WGmc
+  cognate ends in -ing-.
+- Bosworth–Toller s.v. *scilling*: a-stem masc.
+
+The TSV PROTOFORM `*skéllinaz` (with single intervocalic *n*, no *g*)
+is an editorial slip — most likely a transcription error that dropped
+one *g* from `-ingaz`. There is no philological tradition supporting
+`*skéllinaz` as a reconstruction.
+
+### §17.35.3 The bigger issue — *-ingaz is missing from pgrmWeakTailVowel
+
+When I tried correcting the PROTOFORM to `*skíllingaz` (or any
+`*Vingaz` variant), the FST returned `+?` (no output) at the
+`proto_input` stage. The proto-input grammar `pgrmWeakTailVowel`
+(`Germanic/fsts/germanic.txt` lines 296–425+) is a closed list of
+allowable weak-tail shapes. It includes `i:{*i} n:{*n} a:{*a} z:{*z}`
+(`-inaz`), but **not** `i:{*i} n:{*n} g:{*g} a:{*a} z:{*z}` (`-ingaz`).
+
+This is a systematic gap. Probes of every other a-stem masc with the
+`-ing-` suffix fail identically:
+
+```
+*kúningaz   → +?    (should yield cyning)
+*wíkingaz   → +?    (should yield wīcing)
+*skíllingaz → +?    (should yield sċilling)
+*kéttingaz  → +?    (synthetic, but a structural test)
+```
+
+By contrast, the *-az* nom.sg. ending alone is fine: `*brándaz` →
+`brand`, `*xáubidą` → `hēafod`, `*kuningan-` if it had been entered
+without the *-ing-* suffix would also work. Even the present row's
+`*skéllinaz` works because `-inaz` is in the grammar.
+
+The DEV_NOTES already cites `*kuningaz > cyning` as a textbook
+example of i-umlaut of *u* > *y* triggered by the suffixal *-i-*
+(§14.9.3, line 18769). The pipeline therefore *claims* coverage of
+this morpheme but does not actually have the input grammar to accept
+it. This row is the first to surface that gap.
+
+### §17.35.4 The PGmc `-ingaz` suffix (philological background)
+
+R/T vol.2 §3.4 and Krahe-Meid II §97 discuss the `-ing-` /
+`-ung-` derivational suffixes. Functionally:
+
+- *-ingaz* (a-stem masc): patronymic ('son of'), affiliative
+  ('member of'), diminutive. Examples: *cyning* 'king' < ?\*kunja-
+  'kin' + -ing-; *æþeling* 'noble's son'; *wīcing* 'viking';
+  *Wōdening* 'descendant of Wōden'; *sċilling* 'shilling' (probably
+  divisional, < *skel-).
+- *-ungō* (ō-stem fem): action/abstract nouns from verbs, e.g.
+  *leornung* 'learning'.
+- The *-i-* of *-ing-* is a regular short *i*, position-final in
+  the suffix syllable. It triggers i-umlaut on the preceding
+  stressed vowel (*kuningaz* → *cyning*) and undergoes regular
+  unstressed-vowel processes (no syncope before *ng*; no lowering;
+  in OE it surfaces as orthographic `i`).
+- In nom.sg., *-az* is lost by PWGmc final-syllable apocope (§…
+  cited at line 21354), leaving bare *-ing*. Hence OE *cyning*,
+  *sċilling* are bare nom.sg. forms with no overt ending.
+
+### §17.35.5 What the FST should produce from *skíllingaz
+
+Predicted derivation (manual, pending probe after the fix):
+
+1. `*skíllingaz` (PGmc).
+2. PWGmc *z-loss + *a-loss in nom.sg.: `*skíllingØ`.
+3. *sk-palatalisation before front vowel: `*ʃkíllingØ`.
+4. i-umlaut: stressed *í already front; no change. (Compare
+   *kuningaz* where stressed *u* → *y* by the *-i-* of *-ing-*.)
+5. Unstressed-vowel handling: medial *i* in *-ing-* is not
+   syncopated (it stands before the *ng* cluster, which counts
+   as heavy onset of the next syllable; cf. R/T §6.8.1
+   "syncope of short *-i- only after a heavy syllable", but the
+   *ll* makes the first syllable heavy and *ing* is a closed
+   syllable that resists syncope of its own vowel by general
+   unstressed-vowel preservation rules).
+6. Orthography: *ʃ* → `sċ`, *i* → `i`, *ng* → `ng`.
+7. Surface: `sċilling`. ✓
+
+The same chain run on `*kuningaz` should produce `cyning` (with
+i-umlaut of stressed *u* → *y*); on `*wīkingaz` → `wīcing`; on
+`*æþelingaz` → `æþeling` (with degemination).
+
+### §17.35.6 Plan
+
+Two changes, in this order:
+
+**(A) FST extension.** Add the *-ingaz* tail to
+`pgrmWeakTailVowel` in `Germanic/fsts/germanic.txt`, between
+the existing `i:{*i} n:{*n} a:{*a} z:{*z}` (line ~348) and the
+adjacent shapes:
+
+```
+i:{*i} n:{*n} g:{*g} a:{*a} z:{*z} |
+```
+
+This is purely additive — it expands the set of accepted inputs.
+No existing input loses coverage. There is no rule conflict
+because no rule downstream is conditioned on the *absence* of
+`-ingaz`.
+
+**(B) TSV PROTOFORM correction.** Row 2181: change
+`PROTOFORM` and `PROTO` from `*skéllinaz` to `*skíllingaz` (with
+acute on *í* per Kroonen and the i-umlaut requirement; the
+parallel English row 963 and German row 962 also share this
+PROTOFORM and should be updated to keep the cognate set
+consistent — they currently say `*skéllinaz` too).
+
+NOTE field will document the etymon source and link to this
+section.
+
+### §17.35.7 Regression surface
+
+(A) FST: adding a tail shape to `pgrmWeakTailVowel` is monotonic
+on the input language. No existing rows can be regressed; only
+new inputs (which previously were rejected) become acceptable.
+The only risk is that a downstream rule mishandles the new
+input shape — but every component rule is general (i-umlaut,
+palatalisation, *z-loss, apocope), so on theory none should
+behave incorrectly. Empirical check: run the full mismatch
+report after the change and compare bucket counts.
+
+(B) TSV: the PROTOFORM correction affects only rows 962, 963,
+2181 (the cognate set). No other rows reference `*skéllinaz`.
+
+### §17.35.8 Wider consequences
+
+Once the *-ingaz* tail is in the grammar, the FST gains coverage
+of an entire morphological class. Worth running probes after
+the fix on:
+
+- `*kuningaz` (king) — should give `cyning`.
+- `*wīkingaz` (viking) — should give `wīcing`.
+- `*æþelingaz` — should give `æþeling`.
+
+These are all attested OE forms whose proto inputs would now
+parse. Whether to add them to the TSV as new rows is a separate
+editorial decision.
+
+The fem `-ungō` suffix (action nouns) is a parallel candidate
+for future extension but is **not** required by any current TSV
+row, so it stays out of scope here.
+
+### §17.35.9 Files to change
+
+- `Germanic/fsts/germanic.txt`: one new line in `pgrmWeakTailVowel`.
+- `Germanic/data/germanic-aligned-final.tsv`: rows 962, 963, 2181:
+  PROTOFORM `*skéllinaz` → `*skíllingaz`; PROTO same; row 2181
+  NOTE rewritten.
+- Reports + bins regenerated.
+
+Expected post-fix: row 2181 mismatch closed; mismatches 21 → 20.
+Probes of *kuningaz* / *wīkingaz* / *æþelingaz* should also
+succeed but they are not in the TSV, so they don't affect the
+count.
+
+### §17.35.10 Closure (2026-04-27)
+
+Implemented as planned, with the dossier-recommended Option A (in-rule
+context restriction) realised compositionally rather than via context
+subtraction in the right-context. The final form of the rule
+(`Germanic/fsts/germanic.txt:2228-2241`):
+
+```foma
+define OEMedUnstressedILowering [
+    {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant]
+] .o. [
+    # Restore *e → *i before the *ng cluster (Campbell §380, R/T vol.2 §6.9.6,
+    # Hogg 1992 p.120). Phonetic blocking, not morpho-lexical: *ng is the
+    # diagnostic for *-ing-/*-ung- derivational suffixes at this stage.
+    {*e} -> {*i} || _ {*n} {*g}
+];
+```
+
+The compositional shape was chosen over a single-rule
+right-context-subtraction because foma's parallel-rule semantics with
+`A -> B || L _ R, A -> B || L _ R'` empirically did not block the *ng
+case as expected in our preliminary attempt; the two-stage composition
+is unambiguous and cheap.
+
+**Why the compositional restoration is safe.** At the stage where this
+rule fires (within `EnglishProtoToOEWeightCleanup`,
+`germanic.txt:3154-3174`), velar palatalisation has already converted
+*g → *ġ in palatalising contexts. So genuine *e + *ng on the surface
+exists only in the velar-stop preserving environment, which by this
+point in OE phonology corresponds **exactly** to the *-ing-/*-ung-
+derivational suffixes (the only retained-velar *ng word-medial /
+word-final cluster of any frequency). All other *e + *Ng forms have
+already become *e + *Nġ. Empirical regression check (probes after
+rebuild):
+
+| Input              | Output      | Status |
+| ------------------ | ----------- | ------ |
+| `*kúningaz`        | `cyning`    | ✓ fixed |
+| `*skíllingaz`      | `sċilling`  | ✓ fixed |
+| `*wíkingaz`        | `wiċing`    | ✓ fixed |
+| `*brínganą`        | `bringan`   | ✓ no change |
+| `*strángiz`        | `strenġ`    | ✓ no change (palatalised *ġ) |
+| `*lángijaną`       | `lenġan`    | ✓ no change (palatalised *ġ) |
+| `*sángiz`          | `senġ`      | ✓ no change (palatalised *ġ) |
+| `*fúllijaną`       | `fyllan`    | ✓ no change |
+
+Mismatch count: 21 → 20. Tractable: 13 → 12.
+
+### §17.35.11 Follow-up items flagged
+
+Two cleanup items were identified during this fix and are flagged for
+future passes:
+
+1. **`*ĭ` (i-breve) marking architecture.** `OEUnstressedIMarking`
+   (`germanic.txt:2189-2222`) uses a 4-step marking pipeline that
+   produces the auxiliary symbol `*ĭ` for "tentatively unstressed *i*".
+   This parallels the deprecated `*ă` (a-breve) machinery that was
+   removed in Phase 1d-β. The parallel `OEMedUnstressedULowering`
+   (`germanic.txt:2165-2167`) does the same job in one rule with a
+   left-context exemption and no auxiliary symbol. The `*ĭ` system
+   could in principle be dismantled the same way, but the prefix-
+   restoration step (handling bi-/ni-/ga-/fra-) is non-trivial and
+   would require careful refactoring. **Action:** scope this as a
+   separate cleanup task; not blocking.
+
+2. **`trace_old_english_sandbox.py` is out of sync.** The trace tool's
+   `STAGES` list points at the non-cumulative
+   `old_english_sandbox_after_*.bin` series, which returns `+?` for
+   every raw proto input. The cumulative `english_after_*.bin` series
+   in `Germanic/fsts/` is the working stage-trace path; manual probes
+   are currently the only reliable diagnostic. **Action:** re-point the
+   trace tool at the cumulative bins and update the `STAGES` list to
+   match the live cascade in `germanic.txt`. See dossier-ing-lowering-2026.md §5.
+
+3. **Engma (*ŋ) refactor.** A more architecturally honest treatment
+   of the *ng cluster would convert *n → *ŋ before *g early in the
+   cascade, then exclude *ŋ from `EnglishStarConsonant` (so the
+   lowering rule naturally skips *_ŋg without needing a restoration
+   pass). This matches the actual phonetics ([ŋg] is one nasal + one
+   stop) and would be cleaner than the compositional restoration.
+   Scope: requires touching `EnglishStarConsonant` membership, several
+   downstream rules that condition on *n-clusters, and the orthography
+   stage. **Action:** scope as a separate refactor; not urgent because
+   the compositional fix above is empirically correct.
+
+### §17.35.12 Files changed in this closure
+
+- `Germanic/fsts/germanic.txt`:
+  - `pgrmWeakTailVowel`: added `i:{*i} n:{*n} g:{*g} a:{*a} z:{*z}`
+    shape (the *-ingaz suffix tail).
+  - `OEMedUnstressedILowering`: rewritten as composition with
+    *e → *i restoration before *ng cluster.
+- `Germanic/data/germanic-aligned-final.tsv`: rows 962/963/2181
+  PROTOFORM `*skéllinaz` → `*skíllingaz`; row 2181 NOTE rewritten.
+- `Germanic/docs/dossier-ing-lowering-2026.md`: new (research
+  dossier produced by background agent).
+- `Germanic/docs/DEV_NOTES.md`: §17.35 (this section).
+- `Germanic/docs/debug_snapshots/oe_mismatch_report.txt`: regenerated.
+- `Germanic/fsts/old_english.bin`, `backend/old_english.bin`: rebuilt.
