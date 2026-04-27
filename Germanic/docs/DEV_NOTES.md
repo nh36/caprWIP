@@ -38317,3 +38317,16 @@ Verification:
   (`*bigínnaną → beġinnan` confirms the prefix protection still works
   via `OEPrefixIReduction`).
 - Mismatch count: 20 → 20.
+
+### §17.36.4 Step 3 — drop vacuous bi-/ni- subrule of IMarking3
+
+The bi-/ni- restoration subrule
+`{*ĭ} -> {*i} || .#. [{*b}|{*n}] {*ĭ} C+ _`
+required `*ĭ` in prefix position, which is no longer produced after
+§17.36.3 dropped IMarking2 from the composition. Removed the subrule.
+The ga- and fra- restoration subrules (which act on plain `*a`
+prefixes) remain in place.
+
+Verification:
+- All 12 sentinels stable.
+- Mismatch count: 20 → 20.

@@ -2186,11 +2186,16 @@ define OEMedUnstressedULowering [
 #   Step 4: Lower remaining *ĭ to *e
 # ===========================================================================
 
-# Step 1: Mark non-first-syllable *i as unstressed (*ĭ)
-# Any *i preceded by a vowel + one or more consonants is in a non-first syllable.
-# Example: *harbistaz → *harb*ĭstaz (the *i in -ist- is after *a + *rb)
+# Step 1: Mark non-first-syllable *i as unstressed and lower directly to *e.
+# §17.36.5: previously this step produced an intermediate *ĭ symbol that
+# was lowered to *e by OEMedUnstressedILowering. Folded into a single
+# rewrite — the *ĭ intermediate is no longer needed since (a) IMarking2
+# was dropped in §17.36.3 and (b) the *e → *i restoration before *ng
+# (still in OEMedUnstressedILowering) recovers cyning-type forms from
+# the directly-produced *e.
+# Example: *harbistaz → *harbestaz (the *i in -ist- is after *a + *rb)
 define OEUnstressedIMarking1 [
-    {*i} -> {*ĭ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
 
 # Step 2: For bi-/ni- prefix words, mark the prefix *i as unstressed
