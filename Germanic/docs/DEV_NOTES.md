@@ -38279,3 +38279,15 @@ Verification:
 - All 11 sentinels produce expected outputs (probed via
   `flookup -i /usr/app/old_english.bin`).
 - Mismatch count: 20 → 20 (no regression).
+
+### §17.36.2 Step 1b — remove now-dead OEWeakTailReduction2
+
+After Step 1 made `OEMedUnstressedILowering` consume word-final `*ĭ`,
+the downstream `OEWeakTailReduction2` could no longer match anything.
+Removed both the rule definition (was `germanic.txt:2347-2349`) and
+its inclusion in the `OEWeakTailReduction` composition (was line 2376),
+leaving only a §17.36.2 comment marker at each site for searchability.
+
+Verification:
+- All 11 sentinels produce expected outputs unchanged.
+- Mismatch count: 20 → 20.

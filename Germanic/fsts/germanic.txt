@@ -2237,9 +2237,9 @@ define OEMedUnstressedILowering [
     {*ĭ} -> {*e} || _ [EnglishStarConsonant | EnglishPalatalConsonant],
     # Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120). Folded
     # in here from the legacy OEWeakTailReduction2 site as part of the
-    # *ĭ-cleanup refactor (Step 1; see DEV_NOTES §17.36 and
-    # dossier-ibreve-cleanup-2026.md). OEWeakTailReduction2 still runs
-    # downstream but is now a no-op (no surviving *ĭ at that point).
+    # *ĭ-cleanup refactor (Steps 1+1b; see DEV_NOTES §17.36 and
+    # dossier-ibreve-cleanup-2026.md). OEWeakTailReduction2 has now been
+    # removed (Step 1b).
     {*ĭ} -> {*e} || _ .#.
 ] .o. [
     # Restore *e → *i before the *ng cluster: derivational suffixes
@@ -2342,11 +2342,9 @@ define OEUnstressedAFronting [
 define OEWeakTailReduction1b [{*ą} -> {*a} || _ [{*n} | {*m}]];
 define OEWeakTailReduction1c [{*ą} -> {*ɔ̆}];
 define OEWeakTailReduction1 OEWeakTailReduction1b .o. OEWeakTailReduction1c;
-# Word-final unstressed *ĭ → *e (Campbell §369, Hogg p.120).
-# Only targets *ĭ (marked unstressed by OEUnstressedIMarking), not stressed *i.
-define OEWeakTailReduction2 [
-    {*ĭ} -> {*e} || _ .#.
-];
+# §17.36.2: OEWeakTailReduction2 (word-final *ĭ → *e) removed; its work is
+# now done by OEMedUnstressedILowering (germanic.txt:2236-2247) which fires
+# upstream and consumes all *ĭ before this point. See dossier-ibreve-cleanup-2026.md.
 # R/T vol.2 §6.9.6: unstressed *æ merged with *e in inflectional syllables.
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
 define OEWeakTailReduction3 [
@@ -2372,8 +2370,9 @@ define OEUnstressedFrontingEarly OEUnstressedAFronting;
 # Campbell §369: "æ, e, and i fell together in a sound written e"
 define OEUnstressedAEMerger OEWeakTailReduction3;
 
-# Remaining weak tail reductions (runs after merger)
-define OEWeakTailReduction OEWeakTailReduction1 .o. OEWeakTailReduction2;
+# Remaining weak tail reductions (runs after merger).
+# §17.36.2: OEWeakTailReduction2 removed (folded into OEMedUnstressedILowering).
+define OEWeakTailReduction OEWeakTailReduction1;
 
 define OEEpentheticInsertion [
     {*r} -> {*E} {*r} || (EnglishStarFrontVowel | EnglishStarBackVowel)
