@@ -1,7 +1,7 @@
-Total mismatches: 17
+Total mismatches: 16
 
 === INTERVENTION SUMMARY ===
-  TSV/data fixes needed:      1
+  TSV/data fixes needed:      0
   Documented exceptions:       5
   Phonology (core buckets):    1
   Phonology (other buckets):   10
@@ -16,7 +16,6 @@ Total mismatches: 17
   breaking_extra__ea_other: 1
   breaking_extra__eo_for_high: 1
   breaking_extra__ie_for_i: 1
-  breaking_extra__wrong_form: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
 --- back_expected_front_out sub-buckets ---
@@ -60,12 +59,6 @@ breaking_extra__eo_for_high (1):
 
 breaking_extra__ie_for_i (1):
   *θréjez -> þrīe (expected þrī)
-
-breaking_extra__wrong_form (1):
-  *xláxjaną -> hliehan (expected hlæhhan)
-  >> ISSUE: Breaking difference plus consonant skeleton mismatch
-  >> LIKELY: TSV proto/target are different lexemes or form classes
-  >> ACTION: Verify TSV alignment; likely needs different proto
 
 vowel_quality__u_lowering_exception (5):
   *búkkaz -> bocc (expected bucc)

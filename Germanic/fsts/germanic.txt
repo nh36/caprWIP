@@ -1560,7 +1560,8 @@ define PWGmcJGemination [
     {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
     {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
     {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
-    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j}
+    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j},
+    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j}
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
@@ -2582,13 +2583,19 @@ define NWGmcNasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarVoicelessFricative
 ];
 
-# NWGmc Preconsonantal *x Loss (Campbell §417, R/T pp.156-158)
-# *x → ∅ before two or more consonants.
-# Examples: *funxstiz → fūstiz → fȳst, *wahstmaz → wæstm, *sehsto → sesta
-# This is a NWGmc change shared with OS (e.g. OS wastum).
-# Must follow NSL (which creates the *xCC cluster) and precede breaking/i-umlaut.
+# NWGmc Preconsonantal *x Loss (Campbell §417, Brunner §221, Bülbring §527)
+# *x → ∅ specifically in the cluster *xs + C (i.e. when followed by *s plus another consonant).
+# This is the conditioning that the handbooks describe with their canonical examples:
+#   *funxstiz → fūstiz → fȳst, *wahstmaz → wæstm, *sehsto → sesta, *niuxsjan → nēosian
+# Brunner §221: "Wenn auf hs andere Konsonanten (auch j) folgen, ist h ausgefallen."
+# The rule must NOT fire on *xx + C clusters (geminate *x); Campbell §464 is explicit
+# that geminate *xx survives into OE as <hh> in every environment, including before *j
+# (e.g. *xláxjaną → *xláxxjaną → hliehhan, NOT †hliehan). Earlier formulations using
+# the broader `*x → 0 / _ CC` schema overgenerated, deleting the first *x of a *xx*j
+# geminate. See DEV_NOTES §17.40 for the dossier.
+# Must follow NSL (which creates the *xst cluster) and precede breaking/i-umlaut.
 define NWGmcPreconsonantalXLoss [
-    {*x} -> 0 || _ EnglishStarConsonant EnglishStarConsonant
+    {*x} -> 0 || _ {*s} EnglishStarConsonant
 ];
 
 define OESkPalatalization [

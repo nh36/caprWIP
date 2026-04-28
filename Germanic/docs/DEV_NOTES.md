@@ -38736,3 +38736,520 @@ one row that currently triggers it.
 
 Drafted; awaiting green light to apply the TSV edit and rebuild.
 
+
+
+## §17.40 *xláxjaną → hliehan (expected hlæhhan): missing *x gemination + WS/Anglian target choice
+
+### Mismatch as observed
+
+`oe_mismatch_report.txt` (post-§17.39, baseline 17):
+
+```
+*xláxjaną -> hliehan (expected hlæhhan)
+>> ISSUE: Breaking difference plus consonant skeleton mismatch
+```
+
+Two things are off:
+
+1. The medial /h/ is single (`hliehan`), not geminate (`hliehhan` /
+   `hlæhhan`). WGmc j-gemination did not fire on *x.
+2. The vowel diphthong is `ie` (West Saxon i-umlaut of `ea` from
+   breaking) rather than `æ` (Anglian/Northumbrian). The two forms
+   are dialectal variants in the literature, not allographs.
+
+### Trace (post-§17.39)
+
+```
+ProtoInput:               *x*l*á*x*j*a*n*ą
+… (no rule fires up to FinalSchwaApocope)
+FinalSchwaApocope:        *x*l*ea*ç*j*ą*n   ← breaking á→ea, palatalisation x→ç before j
+… (carry through OE composite stages)
+ProtoToOE [resume]:       *x*l*ie*ç*a*n     ← i-umlaut ea→ie, j-loss, ą→a
+Orthography:              hliehan
+```
+
+The gap: between `*xláxjaną` and the first stage that shows it
+(FinalSchwaApocope), the cascade has applied breaking and
+x-palatalisation but **not** WGmc j-gemination. The geminate /xx/
+required for both the WS `hliehhan` and the Anglian `hlæhhan` is
+missing.
+
+### Source audit
+
+**Fulk §6.15** (general statement of WGmc j-gemination):
+
+> Before *j* the change regularly applies to **any consonant other
+> than *r*** (including *r* < *z*) after a short vowel.
+
+So *x is unambiguously expected to geminate before *j.
+
+**Brunner Altenglische Grammatik §392, 4** (and §95 Anm. 7):
+
+> Urspr. hj erscheint so als hh in ws. hliehhan lachen … nordh.
+> hlæhha … angl. hlæhhan; ws. hliehhan, aber nordh. hlæhhan nach
+> dem Subst.
+
+(Original *hj appears as *hh in WS hliehhan; Anglian/Northumbrian
+hlæhhan; the dialect split is well-known.)
+
+**Brunner §391, 3 / §511** (paradigm) lists `hlæhhan stv. s. hliehhan`
+— the Anglian form is cross-referenced to the WS lemma `hliehhan`.
+
+**Bright Anglo-Saxon Reader p.597:**
+
+> hliehhan (<*hleahjan, 9 <*hlæhjan; Goth. hlahjan), to laugh.
+
+**Bosworth-Toller** s.v. *hlihhan*: "Take here hlehhan in Dict.,
+and add: I. to laugh"; lists `hlehhan, hlihhan, hlæhhan, hlyhhan`
+as variants. WS lemma is `hliehhan`.
+
+**Ringe-Taylor vol.2** (cited in the row note): PGmc *hlahjanan >
+OE hlæhhan/hliehhan — both forms attested.
+
+### Diagnosis
+
+Two coupled problems:
+
+1. **Phonology bug.** PWGmcJGemination
+   (germanic.txt:1551) enumerates p, b, t, d, k, g, f, s, m, n, l,
+   ŋ but **omits *x**. Per Fulk §6.15 *x* is regular — the omission
+   is an oversight, not a deliberate exception. Fixing this is a
+   one-line addition to the rule and well-supported by every
+   handbook.
+
+2. **TSV target.** The cascade applies WS-style breaking and
+   i-umlaut by default (cf. §17.37 *wéslōn, §17.38 *wéstanē, etc.),
+   so the lawful surface output of `*xláxjaną` after the gemination
+   fix should be the WS form `hliehhan`, not the Anglian `hlæhhan`.
+   The TSV row has the Anglian target. Per project precedent
+   (WS-default for OE counterparts unless specifically motivated),
+   retarget to `hliehhan`.
+
+### FST probe matrix (current bins, before fix)
+
+```
+*xláxjaną → hliehan   ✗  (current; missing *x gemination → single h;
+                          breaking + i-umlaut applied → ie)
+```
+
+Predicted post-fix (gemination rule extended):
+
+```
+*xláxjaną → hliehhan  ✓  (with *x gemination: breaking → hleahh,
+                          i-umlaut → hliehh, j-loss → hliehhan)
+```
+
+(Will verify by rebuild.)
+
+### Plan
+
+1. **germanic.txt PWGmcJGemination (line 1551–1564):** add
+   ```
+       {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j},
+   ```
+   alongside the existing twelve consonant clauses. Add a brief
+   comment citing Fulk §6.15.
+
+2. **TSV row 2092 (Old_English / laugh):** change COUNTERPART
+   `hlæhhan` → `hliehhan`. IPA segment column updated `h l æ h h a n`
+   → `h l i e h h a n`. Note: "§17.40 — WS form (Bright; Brunner
+   §392,4); Anglian hlæhhan retained as variant in lit but cascade
+   defaults to WS."
+
+3. Rebuild bins; verify mismatch count drops 17 → 16; check no
+   regressions in other rows. The grep for `*xj` returned only
+   this row, so the gemination rule extension cannot directly
+   affect any other TSV row.
+
+### Risk assessment
+
+Low. The phonology rule extension covers exactly one row (the only
+*xj row in the corpus); the rule itself is well-attested. Risk of
+ripple: if any rule downstream reads `{*x}{*x}` cluster differently
+from `{*x}`, those reads are exclusively fed by this rule — i.e.
+no other source of `*xx` exists. Verify by rebuilding and full
+mismatch report.
+
+### Status
+
+Drafted; ready to implement.
+
+### Iteration 1 outcome: gemination fired, but immediately undone downstream
+
+After adding `{*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j}` to
+`PWGmcJGemination` and rebuilding, the FST output **did not change**:
+
+```
+*xláxjaną → hliehan   ✗  (still single h)
+```
+
+Trace shows that gemination DID fire (`WestGermanic: *x*l*á*x*x*j*a*n*ą`),
+but inside the OE-side `proto_to_oe` composite the geminate is collapsed
+back to a single segment that then palatalises to a single `*ç`. Apparent
+culprit: `NWGmcPreconsonantalXLoss` (germanic.txt:2591–2593), whose
+right-context `EnglishStarConsonant EnglishStarConsonant` matches the
+newly created `*xx*j` cluster — the first `*x` of the geminate sees
+`*x*j` to its right and is deleted.
+
+Because this exposes a previously latent over-application that depends on
+the chronological relationship of WGmc gemination, NWGmc preconsonantal
+*x-loss, breaking, and i-umlaut, it warrants proper philological
+investigation before any further code change. Research dossier follows.
+
+### §17.40 research dossier — *x preconsonantal loss vs. j-gemination
+
+#### 1. Consensus on conditioning of preconsonantal *x-loss
+
+The handbooks describe this rule narrowly. The conditioning is **not**
+"any *x before any CC"; the canonical examples are all *x as the first
+member of a sibilant cluster *xs followed by a further consonant, or *x
+in *xt — and the rule (where it deletes) targets *xs+C. Stops and
+clusters arising from gemination are not mentioned.
+
+- **Campbell §417** (`campbell_old_english_grammar.txt:11025–11036`) is
+  the locus classicus:
+
+  > "When a consonant follows, xs > s in OE, e.g. wæstm fruit, -wæsma
+  > growth … North. sesta sixth … wrixlan exchange (from gewrixl, where
+  > l is vocalic), þixl axle beside þisl … This change is found in all
+  > West Gmc. languages, and in North Gmc., e.g. ON ísl axle; OS uueslon
+  > exchange, uuastum fruit; ON nysa, OS niustan, OHG niusen visit."
+
+  i.e. the rule is `*xs → s / _ C`, with the cluster being a
+  **three-consonant *xsC** group, and only the *x (= h) is lost.
+
+- **Campbell §464** (`campbell_old_english_grammar.txt:12049–12061`)
+  explicitly preserves *x in *xt and treats geminate *xx as fully
+  retained:
+
+  > "x remained finally in OE (written h) … Internally, since xs > ks
+  > (§ 416), the only group in which x was followed by a voiceless
+  > consonant in Prim. OE was xt, and this group remained, e.g.
+  > feohtan fight, gefeoht … miht might, niht night … The gemination
+  > of x remains (written hh) in OE whether due to doubling before j,
+  > e.g. hliehhan, before l and r, e.g. hweohhol, North. æhher,
+  > tæhher, or to other causes, e.g. geneahhe enough, crohha pot,
+  > pohha pocket, tiohhian consider."
+
+- **Brunner §221**
+  (`brunner_1965_altenglische_grammatik.vision.txt:9395–9400`) — the
+  most precise statement of the conditioning:
+
+  > "Wenn auf hs andere Konsonanten (auch j) folgen, ist h ausgefallen,
+  > so in nēos(i)an heimsuchen (got. *niuhsjan, alts. niusôn), ðísl,
+  > ðisle Deichsel (neben altem dixl …; ahd. dîhsila), wasma Kraft
+  > (ahd. wahsamo), wæstm Wuchs (zu weaxan), nordh. sesta, seista …
+  > der sechste …; jedoch bleibt x erhalten in wrixlan."
+
+  Translation: "When other consonants (also *j*) follow *hs*, *h* has
+  dropped out." Conditioning is overtly **`hs + C` (incl. *j*)** —
+  i.e. the structural input contains a sibilant. Note `wrixlan` is
+  the lone retention.
+
+- **Ringe-Taylor vol. 2 pp.157-158**
+  (`ringe_taylor_linguistic_history_vol2.txt:9221–9262`) frame it more
+  permissively but still in the same example set:
+
+  > "*h was variably lost when followed by two nonsyllabics. … PGmc
+  > *sehstō 'sixth' … > North. OE sesta … (post-)PWGmc *wahstm 'growth'
+  > (cf. OHG wahst, wahsamo) > *wastm > OE wæstm, OS wastum. … the
+  > fact that þixl is in competition with þisl in early Mercian OE
+  > suggests that *h survived in some form … the best we can do is to
+  > conclude that *h was lost, possibly variably, possibly only in
+  > some dialects, when followed by two or more consonants at a time
+  > before breaking occurred in OE."
+
+  R-T calls the change **variable** and notes counter-examples
+  (`eaxl < *ahslu`, `þixl`). Their relative-chronology summary at
+  p.305 (`ringe_taylor_linguistic_history_vol2.txt:16678`) likewise
+  lists "**variable loss of *h before two nonsyllabics**" as step (2).
+
+- **Bülbring §527** (`bulbring_altenglisches_elementarbuch.txt:14324`,
+  with referent at `:10070–10071`) gives the same canonical *xs+C
+  examples: `nordh. sesta 'sechste'` (ws. *syxta* by analogy),
+  `ġiniosia` < Goth *niuhsjan*.
+
+**Synopsis:** all four primary handbooks describe the change with
+examples drawn exclusively from clusters whose first member is *x*
+and whose second member is *s* (i.e. **`*xs + C`**, including `*xsj`
+in *niuhsjan). Campbell §417 and Brunner §221 in fact restrict the
+conditioning to that environment in their wording. Only Ringe-Taylor
+generalise to "*h before two nonsyllabics," and they explicitly call
+the rule variable.
+
+#### 2. Geminate *xx vs. heterorganic *xCC
+
+**Literature silent on *xxj specifically.** No handbook found discusses
+what happens to a geminate *xx that has been newly created by WGmc
+j-gemination and is therefore inherently followed by *j (i.e. *xx + j).
+
+What *is* found:
+
+- **Campbell §464** (cited above,
+  `campbell_old_english_grammar.txt:12057–12061`) is unequivocal that
+  **the geminate *xx is preserved**, written `hh`, in *all* its sources:
+  WGmc gemination before *j* (`hliehhan`), gemination before *l*/*r*
+  (`hweohhol`, North. `æhher`, `tæhher`), and other sources
+  (`geneahhe`, `crohha`, `pohha`, `tiohhian`). The geminate is **not**
+  subject to *x-loss.
+
+- **Brunner §227**
+  (`brunner_1965_altenglische_grammatik.vision.txt:9515–9532`)
+  explicitly derives the *xx outcome from gemination:
+
+  > "Westgermanische Gemination vor j: Alle einfachen Konsonanten außer
+  > r werden nach kurzem Vokal vor folgendem j in den westgermanischen
+  > Sprachen geminiert. … Urspr. hj erscheint so als hh in ws. hliehhan
+  > lachen …"
+
+  Brunner is treating original *hj* → *hh* as a regular outcome that
+  survives into OE — the geminate *xx is not subsequently lost.
+
+- **Bülbring §540**
+  (`bulbring_altenglisches_elementarbuch.txt:10255–10267`) lists
+  `hliehhan / angl. hlæhha(n) / kent. hlehhan 'lachen' got. hlahjan`
+  among the canonical examples of WGmc gemination before *j*; the *hh*
+  is treated as the preserved output.
+
+- **Fulk §6.15** (the rule citation already in `germanic.txt:1539`)
+  covers the gemination side, with `Olcel. geyja 'bark'`-type examples
+  and explicit *x in `Go. hlahjan ‘laugh' (ON hlæja, OE hlihhan <
+  *hliehhan)` (`fulk_comparative_grammar_early_germanic.vision.txt:16597`).
+
+- **Hogg vol.1** (`hogg_vol1.txt:4595, 5067, 17136 ff.`) cites
+  `hliehhan` repeatedly as an example of preserved gemination plus
+  i-umlaut and treats `/x/ /x/` (= `hh`) as a stable phoneme cluster.
+
+**Conclusion:** No handbook found discusses geminate *xx being lost or
+simplified by a preconsonantal-x-loss rule. The whole tradition
+(Campbell §464; Brunner §227; Bülbring §540; Fulk §6.15) shows the
+geminate *xx surviving into OE as `hh`. Loss of *x specifically before
+a geminate or before *j is not attested in the philological literature;
+the rule in the handbooks targets *xs + C only (or, per R-T, "two
+nonsyllabics" with explicit caveats and counter-examples).
+
+#### 3. Chronology of relevant rules
+
+| Order | Rule | Source |
+|---|---|---|
+| 1 | WGmc consonant gemination before *j (any C except *r after a short vowel) | Fulk §6.15; Brunner §227; Bülbring §540. PWGmc / shared WGmc innovation. |
+| 2 | NWGmc nasal-spirant loss with compensatory lengthening (`*funxstiz → *fūstiz`) | R-T vol.2 §5.1.1; Brunner §186; Campbell §121. |
+| 3 | NWGmc/pre-OE preconsonantal *h-loss in **`*hs + C`** (variable; only some dialects) | Campbell §417; Brunner §221; R-T vol.2 pp.157-158; R-T relative chronology p.305 step (2). |
+| 4 | OE breaking of front vowels before *h, *r+C, *l+C | Hogg vol.1 §3.4; Campbell §§139–146; R-T p.305 step (3). |
+| 5 | OE i-umlaut | Brunner §95; Campbell §§190 ff.; R-T §6.4.2. |
+| 6 | OE palatalisation of velars / *x before front vowels & *j | Campbell §§427 ff.; R-T §6.4.1. |
+| 7 | OE high-vowel apocope / *j-loss after heavy syllable | Brunner §177; Fulk §6.15 n. 8. |
+
+R-T's explicit ordered list at
+`ringe_taylor_linguistic_history_vol2.txt:16674–16683`:
+
+> "(1) syncope of *i in the unstressed sequence *-CijV- (only); (2)
+> variable loss of *h before two nonsyllabics; (3) breaking; (4) loss
+> of *w before fully unstressed *i (but not *j); (5) general syncope
+> of short high vowels in unstressed open syllables."
+
+WGmc gemination is uncontroversially earlier than all of these. **No
+handbook places preconsonantal *h-loss before WGmc gemination.** Both
+belong to the pre-OE / NWGmc layer, but every comparativist treats
+gemination as the older, fully WGmc innovation, and *h-loss (where it
+applies) as a NWGmc / pre-OE shared change.
+
+#### 4. Derivation of *hliehhan* / *hlæhhan* in the handbooks
+
+Per-handbook segmentation of WS *hliehhan* (consensus):
+
+| Stage | Form | Source |
+|---|---|---|
+| PGmc | *hlahjanan* / *xlaxjanan* | Orel `:20248`, Kroonen `:12820` |
+| WGmc gemination before *j (Fulk §6.15) | *hlahhjan* (geminate *xx preserved) | Brunner §227; Bülbring §540; Campbell §464 |
+| AFB (*a → *æ before non-back) | *hlæhhjan* | Bright `:598`; Campbell §128 |
+| Breaking (*æ → *ea before *h) | *hleahhjan* | Bright `:598`; Hogg `:5062–5085` |
+| i-umlaut (*ea → *ie) | *hliehhjan* | Brunner §95; Campbell §190 |
+| j-loss after heavy + apocope | *hliehhan* | Brunner §177; Fulk §6.15 n. 8 |
+
+Anglian *hlæhhan* either skips breaking/i-umlaut (Anglian smoothing or
+analogy from *hleahtor* per Brunner §95 Anm. 7) and retains *hh*.
+**Every step shows the geminate *hh surviving.**
+
+#### 5. Bug interpretation & fix options
+
+Three fix options consistent with the philological evidence:
+
+##### Option (a) — restrict the loss rule to *xs (or, more generally, to non-*x first member)
+
+**Description:** Tighten the rule's right context so that the first
+following consonant is not *x, or — more conservatively still —
+restrict it to the canonical *xs context: `{*x} → 0 / _ {*s}
+EnglishStarConsonant`. A weaker version: `{*x} → 0 / _
+[EnglishStarConsonant - {*x}] EnglishStarConsonant`.
+
+**Philological evidence:** Campbell §417 and Brunner §221 state the
+rule in *xs+C terms exclusively. Campbell §464 explicitly preserves
+*xx in *all* environments. The narrowest version (`*x → 0 / _ *s C`)
+is the directly attested conditioning; the broader version
+(`_ [non-*x] C`) follows R-T's "two nonsyllabics" but excludes the
+geminate.
+
+**Risk:** The broader version is safer for any not-yet-attested *xC₁C₂
+derivation in the corpus where C₁ is a sonorant; the narrower version
+(`*xs + C` only) might fail to delete *x in any *xt + C derivation
+if such a row appears. None of the current TSV rows require non-*xs
+*x-loss, so both narrowings are safe for the current corpus.
+
+##### Option (b) — reorder so x-loss precedes j-gemination
+
+**Description:** Move `NWGmcPreconsonantalXLoss` into `PWGmcChanges`
+before `PWGmcJGemination`.
+
+**Philological evidence:** **Weak / contradicts the literature.**
+Every comparativist (Fulk §6.15, Brunner §227, Bülbring §540, R-T
+p.305) treats WGmc gemination as the older PWGmc-level change and
+*h-loss as a NWGmc/pre-OE change. R-T explicitly group *h-loss with
+breaking-era changes. OS (which underwent *h-loss, cf. *wastum*)
+clearly geminated first too. Reordering would be empirically wrong
+even if it produces the right surface output for this row.
+
+**Risk:** Even if it patches *hláxjaną, it may misorder against any
+future row where gemination feeds the input to a later NWGmc rule.
+Also creates a chronology inconsistency that violates documented R-T
+relative chronology.
+
+##### Option (c) — tighten right-context to obstruents only (excluding *j and other glides)
+
+**Description:** Define `EnglishStarConsonant` for this rule as
+obstruents only, excluding `{*j}`/`{*w}`. Concretely: `{*x} → 0 / _
+EnglishStarConsonant [EnglishStarConsonant - {*j}]`, or restrict the
+second slot to obstruents.
+
+**Philological evidence:** Brunner §221 explicitly treats *hsj (in
+*niuhsjan) as a target of the loss, so excluding *j wholesale
+**contradicts** that one piece of evidence. However, Brunner's
+*niuhsjan example crucially has *xs (a sibilant cluster) as input,
+not a geminate *xx. Excluding *j *only* in a *xx + j environment, or
+— equivalently — disallowing *x as the first member, recovers
+Brunner §221 + Campbell §417 + Campbell §464 together.
+
+**Risk:** A blanket exclusion of *j misses the *niuhsjan-type case
+if/when a row needs it. A narrower exclusion (*j only after *x)
+reduces to option (a).
+
+#### 6. Corpus rows that depend on the current loss rule
+
+OE rows in `Germanic/data/germanic-aligned-final.tsv` whose PROTOFORM
+contains a *xC pattern (medial), grouped by cluster type:
+
+**`*xs` (mostly preserved as `x` orthographically, no loss):**
+- 2017 `*fláxsą` → `fleax`
+- 2031 `*fúxsaz` → `fox`
+- 2146 `*úxsô` → `oxa`
+- 2194 `*séxs` → `six`
+- 2275 `*wáxsą` → `weax`
+- 2276 `*wáxsaną` → `weaxan`
+
+These do not require the loss rule. Per Campbell §416, *xs survives
+as `x` (= ks) when no further consonant follows; the loss rule should
+not fire here (and currently doesn't, since right context demands two
+consonants).
+
+**`*xt` (preserved per Campbell §464):**
+- 2010 `*féxtaną` → `feohtan`
+- 2086 `*knéxtaz` → `cniht`
+- 2102 `*léuxtijaną` → `līehtan`
+- 2125 `*máxtiz` → `miht`
+- 2140 `*náxti` → `niht`
+- 2291 `*wéxtiz` → `wiht`
+
+These have *x followed by a single *t plus a vowel — the rule's
+two-consonant right context is not satisfied, so loss does not fire
+(correctly).
+
+**`*rxt` (loss should NOT fire — *r is the first C, not *x):**
+- 2034 `*fúrxtiθō` → `fyrhtu`. Here *x is followed by *t plus *i —
+  only one following C, so loss does not fire (correctly).
+
+**`*nxst` (loss DOES fire after NSL produces *xst):**
+- 2015 `*fúnxstiz` → `fȳst`. Pipeline: NSL + nasal-loss → `*fūxstiz`;
+  preconsonantal x-loss → `*fūstiz`; i-umlaut → `fȳst`. **This is the
+  canonical and only currently-active consumer of
+  `NWGmcPreconsonantalXLoss`** in the OE corpus, and it is exactly
+  the *xs+C case Campbell §417 / Brunner §221 describe.
+
+**`*xj` (the bug case):**
+- 2092 `*xláxjaną` → `hliehhan` (expected). After gemination →
+  `*xláxxjaną`; current rule deletes the first `*x` because the right
+  context `*x*j` matches `CC`. This is the only *xj row in the
+  corpus.
+
+**No other *x_CC patterns** appear in the OE corpus. The narrowing
+options (a) and (c), if restricted carefully, leave row 2015
+(`*fúnxstiz → fȳst`) intact — that is the single row depending on
+the rule firing — while sparing row 2092.
+
+#### 7. Recommendation summary
+
+The literature is consistent and narrow: preconsonantal *x-loss in
+pre-OE (Campbell §417, Brunner §221, Bülbring §527, R-T pp.157-158)
+is described with *xs + C examples almost exclusively; Campbell §464
+and Brunner §227 explicitly preserve geminate *xx (`hh`) into OE in
+*every* environment, including before *j (`hliehhan`). **No handbook
+found describes loss of *x out of a *xx + j cluster**, and reordering
+loss before gemination contradicts the agreed relative chronology
+(Fulk §6.15 + R-T p.305 + Brunner §§221/227). The corpus has exactly
+one row that requires the loss rule to fire (*fúnxstiz → fȳst*, an
+*xs+C case) and exactly one row where the rule mis-fires after the
+recent gemination fix (*xláxjaną → hliehhan*); all other *xC rows
+are inert with respect to this rule. Three fix options have been
+laid out without a recommendation: (a) narrow the right context to
+exclude *x as the first C (or further to *xs+C only), (b) reorder
+loss before gemination (philologically unsupported), (c) exclude *j
+from the right context (partially contradicted by Brunner's
+*niuhsjan example unless restricted to *xx+j). Residual uncertainties:
+(i) R-T's "two nonsyllabics" formulation is broader than
+Campbell/Brunner and would in principle license *xx + C loss, though
+R-T themselves call the rule variable and dialect-restricted; (ii) no
+handbook examined directly addresses a *xx that arose from
+j-gemination subsequently meeting the *h-loss environment, so any
+chosen fix is mildly extrapolative — but the philological null
+hypothesis (Campbell §464: gemination preserved as `hh`) is
+unambiguous on the surface outcome.
+
+### Status
+
+Iteration 1 (gemination clause for *x) is committed-pending-revert; the
+TSV target retargeting (hlæhhan → hliehhan) is committed-pending-revert.
+The downstream-bleed bug into NWGmcPreconsonantalXLoss has been
+diagnosed and a research dossier is in place. **Awaiting decision on
+fix option (a/b/c) before proceeding with iteration 2.**
+
+### Iteration 2 — fix implemented
+
+Adopted **option (a) in its tightest form**: narrowed the right context
+of `NWGmcPreconsonantalXLoss` from the broad `_ CC` schema to the
+specific `_ {*s} C` cluster — i.e. *x is lost only when followed by
+*s + another consonant. This is the conditioning that Campbell §417,
+Brunner §221, and Bülbring §527 all describe with their canonical
+examples (*funxstiz, *wahstmaz, *sehsto, *niuxsjan), and it leaves
+geminate *xx untouched in every environment, in line with Campbell
+§464 and Brunner §227 (Urspr. *hj → *hh).
+
+Rule now reads:
+
+```
+define NWGmcPreconsonantalXLoss [
+    {*x} -> 0 || _ {*s} EnglishStarConsonant
+];
+```
+
+Verification:
+- `*xláxjaną` → `hliehhan` ✓ (was: hliehan)
+- `*fúnxstiz` → `fȳst` ✓ (the only corpus row depending on the loss
+  rule firing; preserved because *s is the first non-*x consonant)
+- Mismatch report: 17 → 16, no regressions.
+
+The slight philological cost is that the `_ {*s} C` schema does not
+itself license the broader R-T "two nonsyllabics" generalization or
+Brunner's brief mention of *h-loss before non-*s clusters; but no
+such cluster appears in the corpus, and the Campbell/Brunner *xs+C
+formulation is the consensus statement of the conditioning. If a
+non-*s cluster row enters the corpus later, this rule can be
+relaxed at that point.
