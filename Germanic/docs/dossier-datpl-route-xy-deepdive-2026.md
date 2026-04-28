@@ -778,3 +778,45 @@ Listed in §Q8; in summary, **highest priority** is Boutkan 1995, then
 Schulte 1998 + Schulte 2007, then Nielsen 2000.
 
 — end of dossier —
+
+---
+
+## Addendum (2026-04-28): user revision — *-amiz over *-amaz
+
+After review, user opted for **\*-amiz** (inst.pl. branch of the
+dat./inst. merger) as the encoded PROTOFORM for nominal a-stems,
+not *-amaz (dat.pl. proper) as this dossier originally recommended.
+
+Reasoning (user, accepted):
+
+1. **Dat. and inst. plural fall together completely in Germanic
+   morphology.** RT vol.2 §6.8.1 (l. 4015–4022): "complete syncretism
+   of dat. pl. and inst. pl." The OE -um ending serves both functions.
+   Choosing one branch over the other for the cascade input is a
+   matter of convenience, not phonology.
+
+2. **The handbook tradition derives OE -um from inst.pl. *-omis /
+   *-amiz directly.** Campbell §331(6); Brunner §44; Fulk §5.5.
+   This makes *-amiz the more etymologically explicit input.
+
+3. **Direct runic attestation** (Polomé 1967 p. 808; Fulk §5.1):
+   Stentoften borumʀ (c. 675), matrona inscriptions (Aflims,
+   Vatvims, Saithamims), and the absence of †dagim in Goth. (only
+   dagam) all attest the *-amiz / *-umiz chain. The *-amaz dat.
+   ending is not directly attested in any runic form.
+
+Architectural consequence: with *-amiz input, the cascade must
+have **R2 (early *-i loss in third syllables)** in place. This
+is consensus (Polomé 1967 p. 808; Fulk §5.1; RT §3.1.1 l.
+3367–70 explicitly concedes the third-syllable case) and has to
+be in the cascade anyway for the broader probe family (P7
+*winimiz, P8 *gastimiz, P9 *sunumiz). So the *-amiz choice
+exercises one more existing rule rather than adding a new one.
+
+The morphological-partition resolution of Route X vs Y stands
+unchanged for **pronominal/numeric forms** (twǣm, þǣm), which
+remain on the inst.pl. *-(C)V̄-mi route with the heavy-monosyllable
+carve-out from R2.
+
+The probe list (P1–P12) above has been updated to reflect *-amiz
+as the standard nominal a-stem input.

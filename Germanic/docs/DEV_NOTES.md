@@ -39396,27 +39396,43 @@ or analogical restoration of `-um`; classical OE inflectional
    (cascade output `sċuldrum` matches modulo the palatal-sċ
    diacritic per Hogg §3.50).
 
-   **Encoding decision (2026-04-28, revised):** PROTOFORM is the
-   **PGmc-proper form `*skúldramaz`** (dat.pl. with thematic *-a-
-   and the *-amaz dat. ending, before NWGmc *a→*u/_m raising).
-   This decision is grounded in the follow-up dossier
-   `dossier-datpl-route-xy-deepdive-2026.md`, which resolves the
-   competing chronologies for *-i loss (Route X / Ringe-Taylor)
-   vs. *-z loss (Route Y / Polomé-Fulk) by **morphological
-   partition** rather than by phonological commitment:
+   **Encoding decision (2026-04-28, revised twice):** PROTOFORM is
+   the **PGmc-proper form `*skúldramiz`** — the **inst.pl.** branch
+   of the dat./inst. merger, with thematic *-a- and the *-amiz
+   inst. ending, before NWGmc *a→*u/_m raising.
 
-   * **Nominal a-stem dat.pl.** input = **\*-amaz** (the dat.pl.
-     proper, with thematic *-a-). No *-i to manage; the cascade
-     handles this with a clean sequence of NWGmc *a→*u/_m, *-z
-     loss in unstressed finals, and *-a apocope.
-   * **Pronominal / numeric inst.pl.** input = **\*-(C)V̄-mi**
-     (heavy monosyllable + inst.pl. *-mi, where *-i is preserved
-     late enough to feed i-umlaut → twǣm, þǣm). Separate handling.
+   The choice of inst.pl. *-amiz over dat.pl. *-amaz is grounded in:
 
-   This partition is exactly what RT vol.2 §6.8.1 (l. 4015–4022)
-   articulate descriptively without naming as a "decision": the
-   nominal paradigm took its dat.pl. ending from the dat. *-amaz
-   (no *-i), while pronominal forms preserved the inst. *-mi.
+   (i) **Dat./inst. complete syncretism in Germanic.** RT vol.2
+       §6.8.1 (l. 4015–4022): "complete syncretism of dat. pl. and
+       inst. pl." Both endings converge on OE -um.
+   (ii) **Most handbooks reconstruct -um from inst.pl. *-omis /
+        *-amiz directly** — Campbell §331(6) "Goth. stainam <
+        I-E -omis"; Brunner §44 "Dat. Pl. ae. -um aus idg. -omis";
+        Fulk §5.5 "PIE *-omis to PGmc. *-o-m(i)z". This is the
+        *historical* descent of OE -um for nominal a-stems, even
+        though the dat.pl. *-amaz route was also available.
+   (iii) **Direct runic attestation of the *-am(i)z chain**
+        (Polomé 1967 p. 808; Fulk §5.1): Stentoften borumʀ
+        (c. 675), matrona inscriptions Aflims/Vatvims/Saithamims
+        (Roman period), Goth. dagam (no †dagim, showing early *-i
+        loss). All of these attest the *-amiz / *-umiz branch,
+        not the *-amaz branch.
+
+   Architectural consequence: with *-amiz input, we must also
+   have **R2 (early *-i loss in third syllables)** in the cascade,
+   before any rule that would umlaut or front via *-i. R2 is
+   consensus (Polomé 1967 p. 808; Fulk §5.1; RT §3.1.1 l. 3367–70
+   explicitly concedes third-syllable early loss). This is a real
+   architectural commitment but not a controversial one — and R2
+   has to be in the cascade anyway for the broader probe family
+   (P7 *winimiz, P8 *gastimiz, P9 *sunumiz all depend on it).
+
+   For pronominal/numeric forms (twǣm, þǣm), the input remains the
+   inst.pl. *-(C)V̄-mi but with the heavy-monosyllable carve-out
+   that exempts *-i from R2's third-syllable scope (it's a
+   second-syllable *-i, governed by R6 instead of R2). This is
+   the same morphological partition RT vol.2 §6.8.1 describe.
 
 ### Cascade architecture for the *-amaz / *-amiz family
 
@@ -39432,8 +39448,12 @@ Required rule sequence (per `dossier-datpl-route-xy-deepdive-2026.md`
 | R5 | i-umlaut (pre-OE) | Hogg vol.1 §3.3.4; Cercignani 1980 |
 | R6 | High-vowel apocope, Stage II: *-i# → ∅ after heavy syll. (post-umlaut) | RT §6.8.1; Campbell §§331–345 |
 
-For nominal a-stems (input *-amaz): R1 raises *-am- → *-um-,
-R3 drops *-z, R4 drops *-a, yielding *-um.
+For nominal a-stems (input *-amiz): R2 drops *-i (third syllable),
+R3 drops *-z (now word-final), R1 raises *-am- → *-um-, yielding
+*-um. (Or, equivalently, R1 first then R2 then R3 — orderings
+commute for this form.) The **\*-amiz input** is the inst.pl.
+branch of the dat./inst. merger; see encoding decision above for
+why we chose it over *-amaz.
 
 For pronominal/numeric (input *-(C)V̄-mi): R1 doesn't apply
 (no *a); R2's third-syllable scope spares the heavy
@@ -39474,7 +39494,8 @@ the fronting rule, and is fixed by literature consensus.
    forms); should already exist in `PGmcFinalZDeletion`.
 4. Verify *-a apocope (R4) finishes *-uma → *-um.
 5. Extend `pgrmWeakTailVowel` to admit the input tail
-   `a:{*a} m:{*m} a:{*a} z:{*z}` for nominal a-stem dat.pl.
+   `a:{*a} m:{*m} i:{*i} z:{*z}` for nominal a-stem dat./inst.pl.
+   (the *-amiz inst.pl. branch of the dat./inst. merger).
 6. (Future, if needed) Encode the pronominal *-(C)V̄-mi input
    route separately for twǣm / þǣm.
 
@@ -39484,18 +39505,18 @@ Per `dossier-datpl-route-xy-deepdive-2026.md` §Q7 / §"Probe list":
 
 | ID | Cell | PGmc input | Expected OE |
 |---|---|---|---|
-| P1 | a-stem light dat.pl. | `*dagamaz` | `dagum` |
-| P2 | a-stem heavy dat.pl. | `*stainamaz` | `stānum` |
-| P3 | a-stem heavy dat.pl. (shoulder) | `*skuldramaz` | `sċuldrum` |
+| P1 | a-stem light dat./inst.pl. | `*dagamiz` | `dagum` |
+| P2 | a-stem heavy dat./inst.pl. | `*stainamiz` | `stānum` |
+| P3 | a-stem heavy dat./inst.pl. (shoulder) | `*skuldramiz` | `sċuldrum` |
 | P4 | numeric inst.pl. | `*twaimiz` | `twǣm` |
 | P5 | pron. inst.pl. | `*þaimiz` | `þǣm` |
-| P6 | ō-stem dat.pl. | `*gebōmaz` | `giefum` |
-| P7 | i-stem dat.pl. (light) | `*winimiz` | `winum` |
-| P8 | i-stem dat.pl. (heavy) | `*gastimiz` | `ġiestum` |
-| P9 | u-stem dat.pl. | `*sunumiz` | `sunum` |
-| P10 | n-stem dat.pl. | `*gumanmiz` | `gumum` |
-| P11 | cons.-stem dat.pl. | `*fōtumiz` (analogical) | `fōtum` |
-| P12 | 1pl pres. ind. | `*beramaz` | `beraþ` (and OHG `berumes`) |
+| P6 | ō-stem dat./inst.pl. | `*gebōmiz` | `giefum` |
+| P7 | i-stem dat./inst.pl. (light) | `*winimiz` | `winum` |
+| P8 | i-stem dat./inst.pl. (heavy) | `*gastimiz` | `ġiestum` |
+| P9 | u-stem dat./inst.pl. | `*sunumiz` | `sunum` |
+| P10 | n-stem dat./inst.pl. | `*gumanmiz` | `gumum` |
+| P11 | cons.-stem dat./inst.pl. | `*fōtumiz` (analogical) | `fōtum` |
+| P12 | 1pl pres. ind. | `*beramiz` (or *-amaz, dialect-split) | `beraþ` (and OHG `berumes`) |
 
 These probes capture all the *-um(iz) endings discussed in
 the literature and serve as a regression suite. NOT all of
