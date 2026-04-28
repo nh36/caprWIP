@@ -2941,16 +2941,22 @@ define OEContraction [
 # So we restrict to s+t cluster (most productive environment), NOT nd, ng, etc.
 # This is variable historically but modeled here for regular cases.
 # Timing: after breaking (WS) per R/T p.341.
+# Restrict to non-initial *r: require a tautosyllabic consonant
+# before *r. Campbell §459's pattern is CrVsC → CVrsC (worked
+# examples *brestaną → berstan, *frustą → forst); word-initial *r
+# as in *rústō → rust is NOT subject to metathesis. Without the
+# left-context, *róst was being mis-derived to *órst (→ orst).
+# See DEV_NOTES §17.42.
 define OERMetathesis [
-    {*r} {*e} -> {*e} {*r} || _ {*s} {*t},
-    {*r} {*u} -> {*u} {*r} || _ {*s} {*t},
-    {*r} {*i} -> {*i} {*r} || _ {*s} {*t},
-    {*r} {*o} -> {*o} {*r} || _ {*s} {*t},
-    {*r} {*a} -> {*a} {*r} || _ {*s} {*t},
+    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s} {*t},
     # Stressed variants (stress preserved):
-    {*r} {*é} -> {*é} {*r} || _ {*s} {*t},
-    {*r} {*ó} -> {*ó} {*r} || _ {*s} {*t},
-    {*r} {*á} -> {*á} {*r} || _ {*s} {*t}
+    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s} {*t},
+    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s} {*t}
 ];
 
 # Proto-Germanic → Old English pipeline.

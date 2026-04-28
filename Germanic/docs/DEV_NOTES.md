@@ -39844,3 +39844,67 @@ west (§17.38): switch the per-row PROTOFORM to the paradigm cell
 that yields the attested OE form by regular sound change, leaving
 the cognate-set headword intact for cross-Gmc inheritance.
 
+
+## §17.42 *rústō → orst (expected `rust`): word-initial *r escapes OERMetathesis
+
+### Diagnosis
+
+`*rústō` is misderived to `orst` rather than `rust`. The trace shows
+the surface form has the *r and the stressed vowel swapped, i.e. an
+unwanted application of OERMetathesis: *róstō (post u-lowering) →
+*órst (post-apocope) → orthographic `orst`.
+
+The relevant rule (`Germanic/fsts/germanic.txt` line ~2944):
+
+    define OERMetathesis [
+        {*r} {*e} -> {*e} {*r} || _ {*s} {*t},
+        {*r} {*u} -> {*u} {*r} || _ {*s} {*t},
+        ...
+
+has **no left-context restriction**, so it metathesizes any `*r V *s
+*t` sequence — including word-initial *r as in *rust*.
+
+### Literature
+
+Campbell §459(1): "When [the cluster] *sk*, *sp* or *st* preceded
+by a short vowel followed *r* in the same syllable, the *r* and the
+short vowel were transposed." The rule's own header comment correctly
+quotes this (`CrVsC → CVrsC`) and gives the worked examples
+*brestaną → berstan*, *frustą → forst* — both of which crucially
+have a **consonant before the metathesizing *r**. Word-initial *r in
+*rust never undergoes the metathesis (Campbell §459's worked list
+does not contain a single word-initial *r* example, nor does Hogg
+1992 §7.93–7.96).
+
+### Proposed fix
+
+Add the missing left-context to all eight clauses of `OERMetathesis`:
+
+    {*r} {*X} -> {*X} {*r} || EnglishStarConsonant _ {*s} {*t}
+
+`EnglishStarConsonant` is already defined (line 950) and is the same
+class used elsewhere for "consonant" left-contexts. This restricts
+the rule to word-medial *r preceded by a tautosyllabic consonant —
+the actual environment of Campbell §459.
+
+### Consumers in TSV
+
+`grep -n "frust\|brest\|berst\|forst" germanic-aligned-final.tsv`
+returns two rows that depend on this rule firing:
+
+  - row 167 / 480: *bréstaną → berstan (b is consonant — still fires ✓)
+  - row 407 / 125: *frústą  → forst   (f is consonant — still fires ✓)
+
+Both have a consonant before the *r, so both will continue to fire
+under the restricted rule. No regression risk for existing TSV consumers.
+
+### Probes to run after rebuild
+
+  - *rústō → rust         (the target row, currently `orst`)
+  - *bréstaną → berstan   (regression check, must still fire)
+  - *frústą → forst       (regression check, must still fire)
+
+### Verification expectation
+
+Mismatch count: 15 → 14 (rust gets fixed; no others should change).
+

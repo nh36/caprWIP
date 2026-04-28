@@ -63,7 +63,7 @@ breaking_extra__ie_for_i (1):
 vowel_quality__u_lowering_exception (5):
   *búkkaz -> bocc (expected bucc)
   *fúglaz -> fogol (expected fugol)
-  *rústō -> orst (expected rust)
+  *rústō -> rost (expected rust)
   *wúlfaz -> wolf (expected wulf)
   *wúllō -> woll (expected wull)
 
