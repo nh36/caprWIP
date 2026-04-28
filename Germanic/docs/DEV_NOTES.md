@@ -38521,3 +38521,80 @@ touched.
 
 Drafted; awaiting green light to apply the TSV edits and rebuild.
 
+
+## §17.38 *wéstanē → westene (expected west): TSV proto/target mismatch
+
+### Mismatch as observed
+
+`oe_mismatch_report.txt` (post-§17.37, baseline 19) lists:
+
+```
+*wéstanē → westene  (expected: west)   bucket: final_vowel_extra
+```
+
+### Source audit — two distinct PGmc lexemes
+
+**Orel HGE p.459** treats these as separate entries:
+
+- `*westan sb.n.`: **OE adv. west** 'westwards', OFris *west*,
+  MLG *west*, OHG adv. *nord-west*. (HGE 50544)
+- `*westanē adv.`: ON *vestan* 'from the West', **OE westan** id.,
+  OS *westan, westana*, OHG sbst. *westan* 'West'. Derived from
+  `*westan`. (HGE 50560)
+
+**Clark Hall (s.vv.):**
+
+- `west adv.` 'westwards, west, in a westerly direction' (AO).
+- `westan, westane adv.` 'from the west' (AO).
+
+So the directional adverb 'westwards' is `west` (from PGmc `*westan`,
+a short n-stem neuter or stem-form fossil), while the ablative
+'from-the-west' adverb is `westan(e)` (from PGmc `*westanē`, with
+the long ē directional-adverb suffix).
+
+### FST probe
+
+```
+*wéstan  → west     ✓ matches OE 'west' adverb (Orel *westan)
+*wéstanē → westene  ✓ matches OE 'westan(e)' adverb (Orel *westanē;
+                       FST output westene reflects regular medial-
+                       syllable a→e reduction of attested westane)
+```
+
+The cascade is correct on both sides. The TSV row pairs the
+`*westanē` proto with the `west` target — these are different
+lexemes per Orel.
+
+### Diagnosis
+
+TSV alignment issue, exactly analogous to §17.37 (`*wéslon`/`weosule`):
+the PGmc proto and the OE counterpart belong to different lexical
+entries. The proto produces a perfectly valid OE form (`westene` ≈
+`westan(e)`), just not the form labelled in the COUNTERPART column.
+
+### Plan (decided)
+
+TSV row 2282 (Old_English / west):
+- PROTOFORM stays `*wéstanē` (the directional-adverb proto Orel
+  pairs with OE `westan(e)` 'from the west').
+- COUNTERPART `west` → `westene` (the form actually derived by the
+  cascade from `*wéstanē`; equivalent to Clark Hall's attested
+  `westane` modulo regular medial-syllable a→e reduction).
+
+This keeps the proto/OE pair lautgesetzlich rather than retreating
+to the bare-stem `*wéstan → west` mapping. The cognate set as a
+whole still reflects the directional-adverb suffixed form: Dutch
+`westen` and German `Westen` are the same formation with the
+nasal preserved; English `west` is from the bare-stem variant.
+
+### Risk assessment
+
+Tiny. Single-row TSV edit (change one column, plus the IPA segment
+column to match). No FST change. The form `*wéstanē → westene`
+already passes through the cascade unchanged from before this
+edit; the mismatch report simply scores it correct now.
+
+### Status
+
+Decided 2026-04-28: keep proto, change target to `westene`.
+

@@ -1,16 +1,16 @@
-Total mismatches: 19
+Total mismatches: 18
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      1
   Documented exceptions:       5
   Phonology (core buckets):    1
-  Phonology (other buckets):   12
+  Phonology (other buckets):   11
 
 === CORE BUCKETS ===
   long_vowel_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 2
+  final_vowel_extra: 1
   front_expected_back_out: 1
   gemination_extra: 2
 --- breaking_extra sub-buckets ---
@@ -40,9 +40,8 @@ long_vowel_missing (1):
   >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
   >> ACTION: Check if proto should have long vowel; check lengthening rules
 
-final_vowel_extra (2):
+final_vowel_extra (1):
   *láimōn -> lāfe (expected lām)
-  *wéstanē -> westene (expected west)
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
