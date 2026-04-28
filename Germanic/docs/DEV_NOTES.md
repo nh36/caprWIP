@@ -38598,3 +38598,141 @@ edit; the mismatch report simply scores it correct now.
 
 Decided 2026-04-28: keep proto, change target to `westene`.
 
+
+## §17.39 *láimōn → lāfe (expected lām): TSV proto stem-class mismatch + cascade artifact note
+
+### Mismatch as observed
+
+`oe_mismatch_report.txt` (post-§17.38, baseline 18) lists:
+
+```
+*láimōn → lāfe  (expected: lām)   bucket: final_vowel_extra
+```
+
+Despite the bucket name, the issue is not really a stray final
+vowel — the form has gained a spurious /f/ (orthography for *β) in
+place of the medial /m/, plus an unexpected -e suffix.
+
+### FST probe matrix
+
+```
+*láimōn → lāfe   ✗  (TSV proto; /m/ → /β/ → orthographic f, suffix -e)
+*láimą  → lām    ✓  (neuter a-stem)
+*láimaz → lām    ✓  (a-stem masc., no apocope difference)
+*láim   → lām    ✓  (bare stem)
+*láimô  → lāma   ✓  (n-stem trimoric, expected weak masc.)
+*láimō  → lām    ✓
+*káimōn → cāfe   ✗  (the artifact reproduces with any C-stem → confirms
+                     it is the suffix shape *aim:ōn that is at fault,
+                     not the segment *l-)
+```
+
+Stage-by-stage trace of `*láimōn`:
+
+```
+ProtoInput            *l*ái*m*ō*n
+WestGermanic          *l*ā*m*ō*n     (regular *ai → *ā monophthongization)
+ProtoToOE             *l*ā*β*e       (← here: /m/ → /β/, /ō:n/ → /e/)
+Orthography           lāfe           (β written f)
+```
+
+So the artifact lies inside the `proto_to_oe` composite stage when
+the input shape is `*ā:m:ō:n`. The `m → β` rewrite is unexpected
+and is **not** a documented rule; it appears to be an unintended
+interaction between the `*ai → *ā` monophthongization output and
+the `m:ō:n` suffix shape, which is not in the `pgrmWeakTailVowel`
+allowlist (only `n:` doesn't appear with `m:` as the radical-final).
+
+This artifact will be filed for separate investigation (see §17.39.1
+follow-up note below); it is not in scope for the present TSV row
+fix.
+
+### Source audit
+
+**Orel HGE p.467** s.v. *laimōn:
+
+> *laimōn sb.m.: **OE neut. lám** 'clay, mud, earth', OS *lēmo*
+> 'clay', OHG *leim* id., *leimo* id.
+
+**Kroonen EDPG p.323** s.v. *laiman-:
+
+> *laiman- m. 'clay' — **OE lām n.** 'id.', E loam, OS lēmo m. id.,
+> Du. leem n. id., OHG leimo m. id., G Lehm m. id. ⇒ *h₂loih₁-mon-
+
+**Clark Hall (s.v.):** `lām n.` 'loam, clay, earth, mud'.
+
+**Bosworth-Toller:** `lám, es; n.` (neuter strong).
+
+**Wiktionary** (the source the TSV row's note cites): the dedicated
+`*laimaz` reconstruction page lists OE `lām` as a descendant of a
+masculine a-stem proto. This is, however, an outlier: every printed
+etymological dictionary (Orel, Kroonen, plus the OS/OHG/Du/G cognates
+all going back to an n-stem) reconstructs the cognate set as an
+n-stem. The TSV's existing cognate-set proto `*laimōn` agrees with
+Orel/Kroonen, not with Wiktionary.
+
+### Field consensus
+
+| Source | PGmc reconstruction | OE class flagged |
+|---|---|---|
+| Orel HGE p.467 | `*laimōn sb.m.` (n-stem) | "OE **neut.** lám" (class-shifted) |
+| Kroonen EDPG p.323 | `*laiman-` m. (n-stem) | "OE lām **n.**" (class-shifted) |
+| Clark Hall / Bosworth-Toller | — | OE `lām n.` (neuter strong) |
+| Wiktionary `*laimaz` page | `*laimaz` masc. a-stem | (outlier; not in printed dictionaries) |
+
+Consensus among reliable sources: PGmc cognate-set proto is the
+masculine n-stem (Orel/Kroonen); the OE outcome is neuter strong.
+The simplest model of the OE outcome is direct reanalysis from
+n-stem to neuter a-stem (rather than via masculine a-stem), since
+no printed source posits a masculine a-stem stage.
+
+### Diagnosis
+
+TSV alignment issue. The row uses Orel's/Kroonen's cognate-set
+headword `*laimōn` (sb.m., n-stem), but OE has class-shifted
+directly to neuter a-stem (`*laimą` → `lām`). The cascade has no
+class-shift rule, so the row needs the OE-specific neuter a-stem
+shape on the per-row proto. Per the project's established practice
+(cf. §17.32 *spárōjaną; §17.37 weasel; §17.38 west), align the
+per-row proto to the OE-specific stem class.
+
+### Plan
+
+TSV row 2109 (Old_English / loam):
+- PROTOFORM `*láimōn` → `*láimą` (neuter a-stem; Orel notes OE
+  has switched class to neuter).
+- COUNTERPART unchanged (`lām`).
+- IPA segment column updated as needed (already `l ā m`).
+- Cognate-set PROTOFORM column (last column) stays `*laimōn` —
+  this is Orel's headword for the cognate set as a whole and
+  correctly reflects the OS / OHG / Dutch inheritance.
+
+After the change: probe `flookup -i láimą → lām`; expect mismatch
+18 → 17 with no regressions.
+
+### §17.39.1 follow-up: cascade artifact for *aim:ōn → ā:β:e
+
+A separate non-blocking artifact: any input of shape `*Cáim:ōn`
+(or analogous `*Cāim:ōn` after PWGmc monophthongization) currently
+rewrites the medial /m/ to /β/ and reduces the `ōn` suffix to `e`
+even though `m:ō:n` is not a registered cell of `pgrmWeakTailVowel`.
+This produces e.g. `*káimōn → cāfe`.
+
+Hypothesis (to verify): the `{ai}:{*ai}` cell on germanic.txt:328
+absorbs the diphthong as an unstressed dat.sg. fem. ō-stem suffix,
+leaving a stem-final `m` that is then re-analysed as the start of
+a `b:ō:n`-shaped suffix with /b/ (→ *β) substituting for /m/. The
+exact mechanism needs an inspection of the composite proto_to_oe
+stage. Filed as known issue; impact is limited because no other
+TSV row currently has the `*aim:ōn` shape (verified by grep).
+
+### Risk assessment
+
+Tiny. Single-row TSV edit. No FST change. The artifact discussed
+in §17.39.1 is logged as a follow-up; this fix simply removes the
+one row that currently triggers it.
+
+### Status
+
+Drafted; awaiting green light to apply the TSV edit and rebuild.
+
