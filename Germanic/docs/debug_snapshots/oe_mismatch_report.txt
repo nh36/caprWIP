@@ -1,13 +1,12 @@
-Total mismatches: 20
+Total mismatches: 19
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      1
   Documented exceptions:       5
-  Phonology (core buckets):    2
+  Phonology (core buckets):    1
   Phonology (other buckets):   12
 
 === CORE BUCKETS ===
-  breaking_missing__expected_eo_got_e: 1
   long_vowel_missing: 1
 
 === OTHER SUB-BUCKETS ===
@@ -34,12 +33,6 @@ Total mismatches: 20
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
-
-breaking_missing__expected_eo_got_e (1):
-  *wéslon -> weslon (expected weosule)
-  >> ISSUE: Expected ēo but got e/ē
-  >> LIKELY: Breaking rule missing this context or ordered wrong
-  >> ACTION: Check *e before r/l/h in breaking environments
 
 long_vowel_missing (1):
   *téxun -> teoon (expected tīen)

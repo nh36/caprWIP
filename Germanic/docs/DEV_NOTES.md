@@ -38399,3 +38399,125 @@ The `*ĭ` cleanup is now complete: `*ĭ` appears nowhere in the
 grammar, in any form. The auxiliary marking tier has been retired
 in favour of relying on the stress information already encoded in
 the TSV proto symbols (acute/macron stressed; plain unstressed).
+
+## §17.37 *wéslon → weslon (expected weosule): triage as TSV target/proto issue
+
+### Mismatch as observed
+
+`oe_mismatch_report.txt` (post-§17.36, baseline 20 mismatches) lists:
+
+```
+*wéslon → weslon  (expected: weosule)   bucket: breaking_missing__expected_eo_got_e
+```
+
+The bucket label is misleading — this is not a breaking case but a
+back-mutation (u-umlaut) case.
+
+### Trace
+
+`flookup -i wéslon` produces `weslon` (form unchanged through every
+stage: no rule fires). Two reasons:
+
+1. The TSV proto `*wéslon` lacks medial *u, so there is no /u/ in the
+   second syllable to trigger u-umlaut.
+2. The suffix `-on` (short o) is not registered in
+   `pgrmWeakTailVowel`; only `-ōn` (long ō) is. So even if the rest
+   of the word evolved correctly, the final `on` would survive
+   instead of reducing to `e`. Probe confirms: `wéslōn → wesle` ✓
+   while `wéslon → weslon` ✗.
+
+### Source audit
+
+**Orel (HGE p.456):** `*wes(u)lōn sb.f.` → ON *hreysi-vísla*, **OE wesle**,
+MLG *wesele*, OHG *wisula*. Orel's Old English form is `wesle`, not
+`weosule`. The medial *u is parenthesised, signalling syncope is regular.
+
+**Clark Hall (s.v. weasel):** `wesle, weosule (GL) f. 'weasel.'`
+The bare lemma is `wesle`; `weosule` is parenthetically annotated
+*(GL)* — i.e. attested in the glossaries (Corpus, Épinal-Erfurt).
+
+**Bülbring §229.4** (the source the original TSV row appears to have
+followed): explicitly cites `uueosule 'Wiesel'` from the **Corpus
+Glossar** as a stage-4 example of u/å-umlaut realised as the short
+diphthong eo. Bülbring §229.1 also notes generally that "die Dentale
+und Nasale" tend to inhibit u-umlaut, while labials and liquids
+favour it — i.e. /s/ is normally a hemmend consonant.
+
+**Campbell §205** (definitive on dialect distribution):
+
+> "In W-S these changes take place only when the consonant
+> intervening between the vowel affected, and the back vowel which
+> causes the change, is a labial or liquid (f, p, w, m, l, r). In
+> Anglian they take place before all consonants except perhaps the
+> back ones (c, g). … In Kentish they could take place before any
+> consonant."
+
+The OE FST cascade rule `OEBackMutation` (germanic.txt:2529–2534)
+implements exactly the WS pattern: trigger across `[Labial | Liquid]`
+only. This is correct for WS.
+
+### Diagnosis
+
+`weosule` is the **Anglian / Corpus-Glossar** form. The **regular
+West Saxon outcome is `wesle`** (Orel; Clark Hall headword;
+Campbell §205). Our `OEBackMutation` rule is correctly WS-shaped and
+should not fire across /s/.
+
+The cascade is doing the right thing; the TSV is targeting the wrong
+register. This is directly analogous to the `wuduwe` (WS) /
+`widwe` (Mercian) / `widua` (Northumbrian) decision documented
+earlier in DEV_NOTES, where the project explicitly chose the regular
+WS form as target.
+
+### FST probe matrix
+
+```
+*wéslōn → wesle          ✓  (long ō, ō-stem feminine, current pgrmWeakTailVowel cell)
+*wéslōz → wesle          ✓  (alternative ō-stem suffix; same outcome)
+*wéslon → weslon         ✗  (current TSV proto: short o, not in suffix allowlist)
+*wésulōn → +?            ✗  (suffix shape u:l:ō:n absent from pgrmWeakTailVowel)
+*xébulô → heofola        ✓  (back mutation across /b/)
+*wéfulô → weofola        ✓  (across /f/)
+*wélulô → weolola        ✓  (across /l/)
+*wérulô → weorola        ✓  (across /r/)
+*wésulô → wesola         ✗  (across /s/ — confirms WS rule excludes /s/)
+```
+
+### Plan (pending user confirmation)
+
+**Recommended (matches WS-target precedent):**
+
+1. TSV row 2279 (Old_English / weasel) — change PROTOFORM
+   `*wéslon` → `*wéslōn` (long ō; ō-stem feminine).
+2. TSV row 2279 — change COUNTERPART `weosule` → `wesle` (regular
+   WS form per Orel and Clark Hall headword).
+3. No FST changes. No `OEBackMutation` extension.
+
+After the change: probe `flookup -i wéslōn → wesle`; expect
+mismatch 20 → 19 with no regressions.
+
+**Alternative (if the project decides to model Anglian here):**
+keep `weosule` as the target and add a dialect-marked Anglian variant
+of `OEBackMutation` that fires across all non-velar consonants.
+This is not recommended at this time:
+
+- Conflicts with established WS-target policy (DEV_NOTES on `wuduwe`
+  and elsewhere).
+- Adding `/s/` (and other dentals) to back mutation would risk
+  silent regressions on every non-WS-shaped row currently passing.
+- The Anglian rule could not be applied selectively without
+  introducing dialect tags to every TSV row.
+
+### Risk assessment for the recommended fix
+
+Tiny. Both changes are confined to one TSV row. The proto change
+moves from a shape rejected by the suffix allowlist (`-on`) to a
+shape that is already in the allowlist (`-ōn`). The counterpart
+change replaces an Anglian-glossary form with the form Orel and
+Clark Hall present as the headword. No FST source files are
+touched.
+
+### Status
+
+Drafted; awaiting green light to apply the TSV edits and rebuild.
+
