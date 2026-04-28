@@ -4605,7 +4605,20 @@ This allows *fulgjăną → fylġan (with *u → y by i-umlaut, not lowered to *
 | 2026-03-09d | 92 | 288 | 380 | 75.8% |
 | 2026-03-09e | 90 | 289 | 386 | 74.9% |
 | 2026-03-09f | 87 | 292 | 386 | 75.6% |
-| 2026-03-09g | 85 | 294 | 386 | **76.2%** |
+| 2026-03-09g | 85 | 294 | 386 | 76.2% |
+| 2026-03-12 | 78 | 308 | 386 | 79.8% |
+| 2026-03-14 | 65 | 321 | 386 | 83.2% |
+| 2026-03-19 | 57 | 329 | 386 | 85.2% |
+| 2026-04-08 | 45 | 341 | 386 | 88.3% |
+| 2026-04-11 | 40 | 346 | 386 | 89.6% |
+| 2026-04-21 | 37 | 349 | 386 | 90.4% |
+| 2026-04-23 | 34 | 352 | 386 | 91.2% |
+| 2026-04-25 | 27 | 359 | 386 | 93.0% |
+| 2026-04-26 | 25 | 361 | 386 | 93.5% |
+| 2026-04-27 | 18 | 368 | 386 | 95.3% |
+| 2026-04-28 | 14 | 372 | 386 | **96.4%** |
+
+(Detailed per-commit log: see "Mismatch Progress Log" section below.)
 
 
 ---
@@ -10332,6 +10345,18 @@ This script reads PROTOFORM (paradigm-cell-specific form), not PROTO (cognate he
 | 2026-04-25 | 27 | -1 | 3355ec68 | tang: TSV target tange → tang, early-Anglian NomSg (§17.20) |
 | 2026-04-25 | 26 | -1 | 11360b2a | swustor: target switch to Anglian swester (§17.21) |
 | 2026-04-26 | 25 | -1 | 51c6de41 | meorde: paradigm-cell switch *mízdō → *mízdai (§17.24, Crist/Kilday) |
+| 2026-04-26 | 24 | -1 | 5c1bf80c | A-restoration before single *r/*l (§17.25) |
+| 2026-04-26 | 23 | -1 | 1b9a44f1 | faran: TSV target færan → faran (§17.26) |
+| 2026-04-26 | 22 | -1 | 37031f31 | mare: TSV target mære → mare (§17.28) |
+| 2026-04-26 | 21 | -1 | 8bb2ecef | sundrian: target sundor- → sundrian (§17.29) |
+| 2026-04-26 | 20 | -1 | 871ec6ab | bēġen: TSV revert + monosyllable apocope guard (§17.30/31) |
+| 2026-04-26 | 19 | -1 | dc035fda | streċċan: OEVelarPalatalization *kk before *j (§17.34) |
+| 2026-04-27 | 18 | -1 | 56586a61 | *skíllingaz: pgrm grammar + *i lowering (§17.35/36 cleanup) |
+| 2026-04-28 | 17 | -1 | 8917de42 | weasel: target retarget Anglian weosule → WS wesle (§17.37) |
+| 2026-04-28 | 16 | -1 | 7f8a289b | westene: target alignment with *wéstanē (§17.38) |
+| 2026-04-28 | 15 | -1 | 14565e33 | sċuldrum: DatPl *-amiz cascade (§17.41) |
+| 2026-04-28 | 15 | 0 | 97aab23e | OERMetathesis word-initial guard (rust → ledger; §17.42) |
+| 2026-04-28 | 14 | -1 | 400e41c8 | þrīe: TSV retarget þrī → þrīe early-WS (§17.43) |
 
 **Note on 2026-04-13 to 2026-04-21 prosodic-tier work.** A `prosodic-tier-exploration`
 branch was developed off-trunk during this period, exploring stressed-vowel
@@ -10353,12 +10378,16 @@ if precise historical counts are needed.
 (Campbell §201). Also fixed a broken symlink in the container that was preventing 
 `old_english.bin` from being updated.
 
-Current verified count: **25 mismatches** as of 2026-04-26, verified with
-`python3 Germanic/tools/oe_mismatch_report.py`. Of these, 7 are in the
-intractable ledger (`Germanic/data/oe_known_problems.tsv`: 5 wontfix,
-1 parked, 1 exception); the remaining 18 are tractable and candidates
-for the mismatch-loop. See `Germanic/docs/debug_snapshots/oe_known_problems_report.txt`
-for the up-to-date triage.
+Current verified count: **14 mismatches** as of 2026-04-28, verified with
+`python3 Germanic/tools/oe_mismatch_report.py`. Of these, **8 are in the
+intractable ledger** (`Germanic/data/oe_known_problems.tsv`: 6 wontfix,
+2 exception); the remaining 6 are tractable and candidates for the
+mismatch-loop. As of 2026-04-28 the report script
+(`tools/oe_mismatch_report.py`) is ledger-aware: any mismatch whose
+PROTO appears in `oe_known_problems.tsv` is now classified as a
+documented exception regardless of its mechanistic bucket, and the
+report includes a dedicated "DOCUMENTED EXCEPTIONS" section listing
+each ledger entry with its `[status: category]` tag.
 
 ### How to verify mismatch count
 

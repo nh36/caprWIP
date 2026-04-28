@@ -2,9 +2,19 @@ Total mismatches: 14
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
-  Documented exceptions:       5
+  Documented exceptions:       8
   Phonology (core buckets):    1
-  Phonology (other buckets):   8
+  Phonology (other buckets):   5
+
+=== DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
+  *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
+  *fūri -> fȳr (expected fȳre)  [exception: analogical_dat_e]
+  *fúglaz -> fogol (expected fugol)  [wontfix: u_lowering_near_labial]
+  *ráukaz -> rēac (expected rēc)  [wontfix: smoothing_anglian_relic]
+  *rústō -> rost (expected rust)  [wontfix: u_lowering_near_labial]
+  *táppô -> tappa (expected tæppa)  [exception: analogical_n_stem_levelling]
+  *wúlfaz -> wolf (expected wulf)  [wontfix: u_lowering_near_labial]
+  *wúllō -> woll (expected wull)  [wontfix: u_lowering_near_labial]
 
 === CORE BUCKETS ===
   long_vowel_missing: 1

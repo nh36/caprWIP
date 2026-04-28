@@ -210,6 +210,35 @@ def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
     return rows
 
 
+def load_known_problems(ledger_path: Path) -> Dict[str, Dict[str, str]]:
+    """Load `oe_known_problems.tsv` as a dict keyed by normalized proto.
+
+    Each entry has the original ledger fields (proto, status, category,
+    reason, refs, added). Used by the intervention summary to count
+    "Documented exceptions" properly: any mismatch whose proto appears
+    in this ledger is documented and won't be counted as open phonology
+    work, regardless of its mechanistic sub-bucket.
+    """
+    out: Dict[str, Dict[str, str]] = {}
+    if not ledger_path.exists():
+        return out
+    with ledger_path.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        for row in reader:
+            proto = (row.get("proto") or "").strip()
+            if not proto:
+                continue
+            out[normalize_proto(proto)] = {
+                "proto": proto,
+                "status": (row.get("status") or "").strip(),
+                "category": (row.get("category") or "").strip(),
+                "reason": (row.get("reason") or "").strip(),
+                "refs": (row.get("refs") or "").strip(),
+                "added": (row.get("added") or "").strip(),
+            }
+    return out
+
+
 def apply_down(bin_path: Path, form: str) -> List[str]:
     proc = subprocess.run(
         ["flookup", "-i", str(bin_path)],
@@ -899,7 +928,10 @@ def write_report(
     other_subs: Dict[str, List[Tuple[str, str, str]]],
     output_path: Path,
     max_examples: int,
+    known_problems: Dict[str, Dict[str, str]] = None,
 ) -> None:
+    if known_problems is None:
+        known_problems = {}
     # Core buckets (from base_bucket) — include breaking sub-buckets
     core_keys = [
         "i_umlaut_missing_true",
@@ -997,11 +1029,38 @@ def write_report(
     phonology_keys_core = set(core_keys)
     all_other_keys_with_counts = {k: len(v) for k, v in other_subs.items() if v}
 
-    tsv_count = sum(all_other_keys_with_counts.get(k, 0) for k in tsv_fixable_keys)
-    documented_count = sum(all_other_keys_with_counts.get(k, 0) for k in documented_keys)
-    phonology_core = sum(len(buckets.get(k, [])) for k in core_keys)
-    phonology_other = sum(v for k, v in all_other_keys_with_counts.items()
-                         if k not in tsv_fixable_keys and k not in documented_keys)
+    # Helper: count items in a bucket that are NOT in the known-problems ledger.
+    def _open(items: List[Tuple[str, str, str]]) -> int:
+        return sum(1 for proto, _, _ in items if normalize_proto(proto) not in known_problems)
+
+    # Ledger-aware documented count: every mismatch whose PROTO is in the
+    # known-problems ledger counts as documented, regardless of bucket.
+    # Plus the historical bucket-key fallback for clusters explicitly tagged.
+    documented_protos_seen = set()
+    for items in buckets.values():
+        for proto, _, _ in items:
+            if normalize_proto(proto) in known_problems:
+                documented_protos_seen.add(normalize_proto(proto))
+    for items in other_subs.values():
+        for proto, _, _ in items:
+            if normalize_proto(proto) in known_problems:
+                documented_protos_seen.add(normalize_proto(proto))
+
+    tsv_count = sum(_open(other_subs.get(k, [])) for k in tsv_fixable_keys)
+    # Documented = every mismatch whose PROTO is in the known-problems ledger,
+    # regardless of mechanistic bucket. Plus any items remaining in
+    # `documented_keys` buckets whose proto is NOT in the ledger (rare).
+    documented_count = len(documented_protos_seen) + sum(
+        _open(other_subs.get(k, [])) for k in documented_keys
+    )
+    phonology_core = sum(
+        _open(buckets.get(k, [])) for k in core_keys
+    )
+    phonology_other = sum(
+        _open(other_subs.get(k, []))
+        for k in all_other_keys_with_counts
+        if k not in tsv_fixable_keys and k not in documented_keys
+    )
 
     lines.append("=== INTERVENTION SUMMARY ===")
     lines.append(f"  TSV/data fixes needed:      {tsv_count}")
@@ -1009,6 +1068,28 @@ def write_report(
     lines.append(f"  Phonology (core buckets):    {phonology_core}")
     lines.append(f"  Phonology (other buckets):   {phonology_other}")
     lines.append("")
+
+    # Ledger summary: list every documented-exception mismatch so the user
+    # can see at a glance what's known-issue vs open.
+    if documented_protos_seen:
+        lines.append("=== DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===")
+        # Collect (proto, out, expected, ledger_status, ledger_category) tuples
+        seen: List[Tuple[str, str, str, str, str]] = []
+        for items in list(buckets.values()) + list(other_subs.values()):
+            for proto, out, expected in items:
+                norm = normalize_proto(proto)
+                if norm in known_problems:
+                    entry = known_problems[norm]
+                    seen.append((proto, out, expected, entry["status"], entry["category"]))
+        # Deduplicate by proto+out+expected (a single proto might appear once)
+        seen_keys = set()
+        for proto, out, expected, status, category in seen:
+            k = (proto, out, expected)
+            if k in seen_keys:
+                continue
+            seen_keys.add(k)
+            lines.append(f"  {proto} -> {out} (expected {expected})  [{status}: {category}]")
+        lines.append("")
 
     # Summary counts
     lines.append("=== CORE BUCKETS ===")
@@ -1095,6 +1176,11 @@ def main() -> None:
         help="Report output path (default: %(default)s)",
     )
     parser.add_argument(
+        "--known-problems",
+        default=str(germanic_dir / "data" / "oe_known_problems.tsv"),
+        help="Known-problems ledger TSV (default: %(default)s)",
+    )
+    parser.add_argument(
         "--examples",
         type=int,
         default=5,
@@ -1108,8 +1194,9 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows = load_rows(tsv_path)
+    known_problems = load_known_problems(Path(args.known_problems).expanduser().resolve())
     buckets, other_subs = build_report(rows, bin_path)
-    write_report(buckets, other_subs, output_path, args.examples)
+    write_report(buckets, other_subs, output_path, args.examples, known_problems=known_problems)
     print(f"Wrote {output_path}", file=sys.stderr)
 
 
