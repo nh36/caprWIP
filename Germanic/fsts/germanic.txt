@@ -1529,7 +1529,20 @@ define NWGmcAToUBeforeM [
 # PGmcFinalZDeletion (later in the pipeline). See DEV_NOTES §17.41
 # and dossier-datpl-route-xy-deepdive-2026.md.
 define PGmcStarStressedVowel [
-    {*á} | {*é} | {*í} | {*ó} | {*ú}
+    {*á} | {*é} | {*í} | {*ó} | {*ú} |
+    # Long vowels in root position (stressed by default in PGmc roots).
+    # Needed for forms where PWGmcAiMonophthongization has produced
+    # {*ā} (e.g. *stáinamiz → *stānumiz), and similarly for inherited
+    # long-V roots that later appear in 3-syllable forms with R2.
+    # Long vowels CAN be unstressed in PGmc (e.g. *fedwōr's final *ō,
+    # *xáubudą's medial *u), but in those cases they appear in the
+    # RIGHT context of R2's pattern, not the left. See DEV_NOTES
+    # §17.41 implementation log task 7.
+    {*ā} | {*ē} | {*ī} | {*ō} | {*ū} |
+    # Stressed diphthongs (the *ái diphthong is monophthongized by
+    # PWGmcAiMonophthongization before R2 fires, so it is not
+    # included here; *áu, *éu, *íu may still be present).
+    {*áu} | {*éu} | {*íu}
 ];
 define PWGmcEarlyIApocope [
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,

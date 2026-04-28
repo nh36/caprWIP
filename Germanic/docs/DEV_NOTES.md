@@ -39482,21 +39482,85 @@ With the new architecture starting from *-amaz (rather than
 to reduce. Problem (a) still requires the *m-exclusion in
 the fronting rule, and is fixed by literature consensus.
 
+### Implementation log (2026-04-28)
+
+The R1+R2 cascade was implemented with three coordinated FST
+edits in `Germanic/fsts/germanic.txt`:
+
+1. **`pgrmWeakTailVowel`**: admitted `a:{*a} m:{*m} i:{*i} z:{*z}`
+   as a new dat./inst.pl. tail alongside the existing post-apocope
+   shortcut `u:{*u} m:{*m}`. Both routes are kept for backward
+   compatibility.
+
+2. **New rule `NWGmcAToUBeforeM` (R1)**: `{*a} → {*u} || V C+ _ {*m}
+   ({*i})? ({*z})? .#.` — the V C+ left-context restricts the rule
+   to non-initial (post-stress) syllables, avoiding catching
+   stem-internal *am sequences. Inserted in `PWGmcChanges` after
+   `PWGmcAiMonophthongization` and before `PWGmcEarlyIApocope`,
+   so *ai (which would block R2 by virtue of *i being a vowel,
+   not a consonant) is already monophthongized to *ā at R1 time.
+   Cited: Campbell §331(6); Brunner §44; Fulk §5.5.
+
+3. **`PWGmcEarlyIApocope` (R2) extension**: the original rule
+   required the target *i to be word-final (`_ .#.`). For *-amiz /
+   *-umiz endings the *i is followed by *z, so the original rule
+   never fired in this position. The literature description is
+   that the *i drops with *z still present (Polomé 1967 p. 808's
+   chain *daγa-miz → *daγa-mz; Fulk §5.1; Stentoften runic
+   borumʀ shows *-um-ʀ). Added a parallel branch with *z right-
+   context: `{*i} → 0 || ... _ {*z} .#.` — *z drops separately
+   later via `PGmcFinalZDeletion`.
+
+3a. **`PGmcStarStressedVowel` extension** (2026-04-28, follow-up).
+    The local definition of "stressed vowel" for the R2 left-
+    context was originally restricted to short stressed
+    `{*á} | {*é} | {*í} | {*ó} | {*ú}`. This caused R2 to fail
+    for inputs where the stressed root vowel is long, e.g.
+    *stáinamiz → (after PWGmcAiMonophthongization) → *stānumiz,
+    where the stressed nucleus is now {*ā} not {*á}.
+
+    The extension adds long stressed vowels {*ā}|{*ē}|{*ī}|{*ō}|{*ū}
+    and surviving stressed diphthongs {*áu}|{*éu}|{*íu} (the *ái
+    diphthong has already been monophthongized by R2 time, so it
+    is not added). Long vowels CAN be unstressed in PGmc (e.g.
+    *fedwōr's final *ō, *xáubudą's medial *u, derivational suffix
+    *-īn, etc.) but in those cases they appear in the RIGHT context
+    of R2's pattern (post-stress syllables) — the left-context
+    requirement of "first vowel of the form" still selects only
+    the genuinely stressed root vowel.
+
+    This is a definitional refinement, not a sound change, and
+    has no effect on any rule other than R2.
+
+Verification: `*skúldramiz → sċuldrum` ✓ (P3 passes); other probes
+in progress.
+
 ### Cascade-implementation tasks (in order)
 
-1. Add NWGmc *a → *u / _m rule (R1) at the appropriate point
-   in the cascade (early, pre-WGmc layer).
+1. ~~Add NWGmc *a → *u / _m rule (R1) at the appropriate point
+   in the cascade (early, pre-WGmc layer).~~ **Done 2026-04-28
+   (commit 14565e33).**
 2. Add the *m-exclusion to the unstressed *u fronting rule
    (parallel to what we did for OEMedUnstressedULowering;
-   Campbell §373).
+   Campbell §373). **Status: not yet needed empirically — the
+   shoulder probe passes without it because the *u of *-um- is
+   already protected by the *m-exclusion in
+   `OEMedUnstressedULowering` and there is no separate
+   *u-fronting rule in the cascade. Re-investigate if a probe
+   shows *u → *y/*e in this position.**
 3. Verify *-z loss in unstressed finals (R3) operates as
-   expected for *-amaz (dropping *z in *-az-final unstressed
-   forms); should already exist in `PGmcFinalZDeletion`.
-4. Verify *-a apocope (R4) finishes *-uma → *-um.
-5. Extend `pgrmWeakTailVowel` to admit the input tail
-   `a:{*a} m:{*m} i:{*i} z:{*z}` for nominal a-stem dat./inst.pl.
-   (the *-amiz inst.pl. branch of the dat./inst. merger).
-6. (Future, if needed) Encode the pronominal *-(C)V̄-mi input
+   expected; should already exist in `PGmcFinalZDeletion`.
+   **Done — verified by probe trace.**
+4. Verify *-a apocope (R4) finishes *-uma → *-um. **N/A under
+   the *-amiz route: there is no final *-a after R1+R2+R3.**
+5. ~~Extend `pgrmWeakTailVowel` to admit the input tail
+   `a:{*a} m:{*m} i:{*i} z:{*z}` for nominal a-stem dat./inst.pl.~~
+   **Done 2026-04-28 (commit 14565e33).**
+6. Extend `PWGmcEarlyIApocope` (R2) to allow optional *z in
+   right-context. **Done 2026-04-28 (commit 14565e33).**
+7. Extend `PGmcStarStressedVowel` to include long stressed vowels
+   so R2 fires for *stainamiz / *stānumiz. **In progress.**
+8. (Future, if needed) Encode the pronominal *-(C)V̄-mi input
    route separately for twǣm / þǣm.
 
 ### Probe / regression test list

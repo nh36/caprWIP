@@ -1,10 +1,10 @@
-Total mismatches: 16
+Total mismatches: 15
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       5
   Phonology (core buckets):    1
-  Phonology (other buckets):   10
+  Phonology (other buckets):   9
 
 === CORE BUCKETS ===
   long_vowel_missing: 1
@@ -23,7 +23,7 @@ Total mismatches: 16
   vowel_quality__u_lowering_exception: 5
   vowel_quality__u_o_alternation: 1
 --- final_vowel_missing sub-buckets ---
-  final_vowel_missing__weak_noun_like: 2
+  final_vowel_missing__weak_noun_like: 1
 --- final_n_missing sub-buckets ---
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
@@ -70,9 +70,8 @@ vowel_quality__u_lowering_exception (5):
 vowel_quality__u_o_alternation (1):
   *wíduwōn -> widowe (expected widuwe)
 
-final_vowel_missing__weak_noun_like (2):
+final_vowel_missing__weak_noun_like (1):
   *fūri -> fȳr (expected fȳre)
-  *skúldrō -> sċoldor (expected sċuldra)
   >> ISSUE: Target ends in -e/-a (weak noun), FST has bare stem
   >> LIKELY: Proto is strong form, target is weak; or apocope over-applied
   >> ACTION: Check morphological class alignment in TSV
