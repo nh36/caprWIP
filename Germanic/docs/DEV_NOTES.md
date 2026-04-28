@@ -39908,3 +39908,103 @@ under the restricted rule. No regression risk for existing TSV consumers.
 
 Mismatch count: 15 → 14 (rust gets fixed; no others should change).
 
+
+## §17.43 *θréjez → þrīe (expected `þrī`, but `þrīe` is the regular early-WS form)
+
+### Mismatch as observed
+
+```
+*θréjez -> þrīe (expected þrī)
+>> ISSUE: ie-diphthong instead of expected high vowel
+```
+
+(The mismatch script's auto-comment is misleading here; this is not
+a breaking-extra problem — *éje contracts regularly to *īe.)
+
+### Trace (relevant excerpts)
+
+```
+ProtoInput:           *θ*r*é*j*e*z
+... (most stages unchanged)
+FinalSchwaApocope     [resume]:   *θ*r*é*j*e   ← *z dropped earlier; final *e is the inflectional ending
+... (carry through)
+ProtoToOE:            *θ*r*ī*e   ← *éje → *īe by regular vowel-coalescence/contraction
+Surface:              þrīe
+```
+
+The contraction `*éje → *īe` is the standard PGmc → OE development of
+nom/acc.pl. m. of i-stem-like declension and the cardinal 'three'
+(see Campbell §120 on Gmc. *iz/*īz contractions, §683 on the numeral
+'three' specifically).
+
+### Source audit
+
+**Campbell §683 — paradigm of 'three' (numeral):**
+
+> Masc. nom/acc. **þrīe**, fem. and neut. nom/acc. **þrēo**, gen.
+> **þrēora**, dat. **þrim**.
+>
+> "eW-S has frequently -io- for -éo-; **lW-S has þry, þri for
+> þrīe**."
+
+That is, the inherited masc. nom/acc. form is `þrīe` in early West
+Saxon (and Anglian); `þrī` and `þrȳ` are late West Saxon reduced
+variants of `þrīe` produced by post-classical apocope of the final
+unstressed *-e* with concomitant variation in the stressed nucleus.
+
+**Campbell §120(c)** (cited via the trace context): *iz* contractions
+in the prehistory of OE produce final *-īe* in forms like `þrīe`,
+`fēnd` < `*finhija-`, `frēond`, `frīo` etc. The contraction is a
+regular PGmc → OE sound change.
+
+**Wiktionary** (the TSV target source) lists `þrī` as the headword
+because lemma selection on Wiktionary follows late-WS / "standard"
+attestations rather than the conservative early-WS form. This is the
+same lemma-vs-paradigm-cell pitfall flagged repeatedly in the loop
+(cf. §17.25 *spárēną, §17.26 *fáraną, §17.39 *láimōn, §17.41
+*skúldrō): the headword is not the same thing as the lautgesetzlich
+target.
+
+### Diagnosis
+
+The FST is correct. `*θréjez → þrīe` is the regular early-WS m.nom/
+acc. The TSV target `þrī` is a late-WS reduction variant; treating it
+as the canonical target makes the FST appear to mismatch when in fact
+it is producing the inherited form. This is a clear instance of the
+*target-tuned-to-attested-but-non-lautgesetzlich-form* problem
+(closely related to but not identical with the anti-pattern of
+§17.26.0; here the target is attested and well-known, but corresponds
+to a later development the cascade does not — and should not — model).
+
+### Plan
+
+TSV-only retarget. Row 1257 (ID 2254):
+
+  - **COUNTERPART** `þrī` → `þrīe`
+  - **TOKENS** `þ r ī` → `þ r ī e`
+  - Add a NOTE pointing to Campbell §683 and DEV_NOTES §17.43
+    explaining that `þrī` is the late-WS apocopated variant.
+
+No FST change. Other Germanic rows (Dutch `drie`, German `drei`,
+English `three`) for cognate-set 287 are not affected.
+
+### Risk assessment
+
+- The retargeted form `þrīe` is well attested (Beowulf, eWS, and
+  every paradigm Campbell prints). Risk of "fabricated target":
+  **none**.
+- Risk of regression in mismatch report: zero — only this one OE row
+  changes, and the FST already produces the new target string.
+- Risk of follow-on cascade work: none expected.
+
+### Verification
+
+After the TSV edit:
+
+  - `python3 Germanic/tools/oe_mismatch_report.py` →
+    expected mismatch count 15 → 14.
+  - The `breaking_extra__ie_for_i` sub-bucket should drop to 0
+    (this was the only entry).
+  - Trace `*θréjez` should still surface `þrīe` (no FST rebuild
+    needed since no FST change).
+
