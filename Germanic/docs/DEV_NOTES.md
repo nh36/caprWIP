@@ -39256,20 +39256,19 @@ relaxed at that point.
 
 ---
 
-## §17.41 *skúldrō → sċoldor (expected sċuldra 'shoulder'): under investigation
+## §17.41 *skúldrō → sċoldor (expected sċuldra 'shoulder'): proposed fix
 
-> **STATUS (2026-04-28): OPEN.** The cross-cell recommendation
-> from `dossier-shoulder-cellchoice-2026.md` and
-> `dossier-shoulder-lautgesetz-2026.md` was retracted (see
-> retraction notices at the head of each). A draft "wontfix"
-> conclusion was also retracted as premature. Currently
-> investigating whether **any** cell-consistent reconstruction
-> in **any** paradigm cell of `*skuldra-` (across stem classes,
-> numbers, and cases — including obscure cells such as DatPl,
-> InstrSg, dual cells where reconstructable) yields an
-> attested OE form lautgesetzlich. See
-> `Germanic/docs/dossier-shoulder-paradigm-survey-2026.md`
-> (in progress).
+> **STATUS (2026-04-28): PROPOSED FIX, AUTHORISED IN PRINCIPLE BY LITERATURE — awaiting user green-light to apply.** The
+> paradigm survey (`dossier-shoulder-paradigm-survey-2026.md`)
+> identified **masc. a-stem DatPl `*skúldrumiz` ↔ `sċuldrum`**
+> as the unique cell-consistent lautgesetzlich match. Implementing
+> it requires (a) extending the FST proto-input alphabet to admit
+> a DatPl tail and (b) a narrowly-scoped sound-rule fix to
+> `OEMedUnstressedULowering` documented below. **The narrowing
+> (excluding *m from right-context) is the explicit consensus of
+> Campbell §373/§378, Brunner §44 Anm. 7, and Hogg §3.3.1.3 —
+> not a novel proposal.** See
+> `dossier-medial-u-lowering-conditioning-2026.md`.
 
 ### What's been established (still valid)
 
@@ -39277,32 +39276,164 @@ relaxed at that point.
 * `sċuldra` (current COUNTERPART) is innovative late-WS via
   paradigm-class transfer (Hogg §5.4.5.2); categorically
   unmodellable. See `dossier-shoulder-2026.md` §11.
-* `NWGmcFinalLongORaising` (PNWGmc *-ō > *-u shortening) is in
-  the cascade but cannot be reordered before u-lowering without
-  regressing `*nosu / sorg / sċofl`. See dossier §10.
-* Empirical probe of NSg cells (2026-04-28): `*skúldrō`,
-  `*skúldraz`, `*skúldrą` all u-lower → `sċoldor`. *wúndrą's
-  escape is via nasal+C blocker (Campbell §§115–118), absent
-  in shoulder.
+* All NSg cells of shoulder (`*skúldrō` fem ō-stem, `*skúldraz`
+  masc a-stem, `*skúldrą` neut a-stem) u-lower → `sċoldor`;
+  `*wúndrą`'s escape is via the nasal+C blocker (Campbell
+  §§115–118), absent in shoulder.
 * `*skúldru` (NApl) → `sċuldor` lautgesetzlich, but cross-cell
   (PNWGmc plural → OE singular) violates project cell-
-  consistency convention (every existing non-NSg row in the
-  TSV is cell-consistent: `*xámaras` GenSg → `hameres` GenSg,
-  `*spéru` NApl → `speoru` NApl, `*wúndrą` NSg → `wundor` NSg).
+  consistency convention; retracted (see Q3/Q4 dossiers).
+* The DatPl is the only surviving cell-consistent path: high *u
+  in `*-umiz` blocks `NWGmcULowering`, preserving root /u/.
+  See paradigm-survey dossier §3.8.
 
-### What's being investigated next
+### Empirical probe results (2026-04-28)
 
-Exhaustive paradigm survey: enumerate **every** reconstructable
-PGmc/PWGmc cell of `*skuldra-` across stem classes (masc a-stem
-per Kroonen, fem ō-stem per R/T's plural, hypothetical neut
-a-stem, weak fem if anywhere reconstructable), trace each
-through the cascade, and check whether the resulting OE form
-matches any attested cell of OE `sculdor`. The question is:
-**is there any cell-consistent cell pairing — however obscure —
-that yields a lautgesetzlich match?**
+Encoded the DatPl as a post-apocope tail `*-um` in
+`pgrmWeakTailVowel` (paralleling existing patterns like `*-onų`,
+`*-unþ` that pre-encode forms past their apocope step):
 
-Only after that survey returns negative will wontfix be the
-correct answer.
+* `*skúldrum` → `sċuldrom` ❌ (suffix *u → *o)
+
+Diagnosis: `OEMedUnstressedULowering` (germanic.txt:2176) fires
+on the suffix *u even though the preceding stressed vowel is
+*ú. The rule excludes `{*u}|{*ū}` from its left-context
+vowel-harmony check but NOT `{*ú}` (acute = primary stress),
+so the harmony principle the rule cites (Campbell §373: "u is
+always well preserved after accented u") is only half-
+implemented. Adding `{*ú}` to the universal exclusion is too
+broad — it regresses `*búgun → bugon` and `*skúbun → sċufon`
+(strong-verb past plurals, which DO show medial-u lowering even
+after stressed *ú; cf. Campbell §378). The narrower correct
+generalisation, supported by the OE record, is:
+
+> Medial unstressed *u lowers to *o in OE before /n d t s/ etc.,
+> but is **preserved before /m/**. This is precisely the
+> empirical contrast between past-plural `-on` (< *-un) and
+> DatPl `-um` (< *-umiz). Both have unstressed *u after a
+> stressed root, both are followed by a single nasal — the
+> conditioning difference is the place of articulation of
+> that nasal.
+
+This is consistent with the dossier's reading of the literature
+(`dossier-datpl-um-vs-om-2026.md`): no handbook (R/T 2014, Hogg
+1992, Campbell 1959, Brunner 1965) posits a `*-om` intermediate
+or analogical restoration of `-um`; classical OE inflectional
+`-um` is the direct lautgesetzlich descendant of `*-umiz`.
+
+### Proposed fix (two parts)
+
+1. **Proto-input alphabet extension** in `pgrmWeakTailVowel`:
+   add a DatPl tail `u:{*u} m:{*m}` (encoded post-apocope, like
+   the existing *-onų / *-unþ patterns).
+
+2. **Sound-rule narrowing** of `OEMedUnstressedULowering`
+   (germanic.txt:2176): exclude `{*m}` from the right-context
+   consonant slot. **This is not a novel proposal** — it is the
+   explicit consensus of Campbell, Brunner, and Hogg. Per
+   `dossier-medial-u-lowering-conditioning-2026.md`:
+
+   * **Campbell §373**: "*u* is always well preserved … before
+     *m*, e.g. *māþum*, d.p. *-um*, *-sum* as suffix; in the
+     suffix *-ung*; in the suffix *-uc* …"
+   * **Brunner §44 Anm. 7**: "Im Inlaut vor anderen Konsonanten
+     außer *-m* und *-ng* ist *-o-* im Ws. schon früh durchwegs
+     durchgeführt." (Medially before consonants other than -m
+     and -ng, -o- has been carried through early in WS.)
+   * **Hogg 1992 §3.3.1.3**: "before /m/, as in the dative
+     plural inflexion *-um* … the ⟨u⟩ was normally preserved."
+   * **Campbell §378**: When late-WS `*m > *n` (in unstressed
+     position), the protected *u immediately lowers to *o/*a
+     — confirming the protection is **segmental, not
+     morphological**.
+
+   Brunner additionally excludes **-ng**, which is parallel to
+   our existing `OEMedUnstressedILowering` (line 2218: *e → *i
+   before *ng for `cyning`, `sċilling`, etc.). Adding *ng
+   exclusion to the *u rule would be consistent with both
+   Brunner and our existing *i treatment, but is not currently
+   driven by a mismatch — defer pending need.
+
+   Concrete change:
+
+   ```
+   define OEMedUnstressedULowering [
+       {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]]
+                       [EnglishStarConsonant | EnglishPalatalConsonant]+
+                       _
+                       [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
+   ];
+   ```
+
+   Behavioural predictions:
+   * `*xáubudą → hēafod`: *u before *d, still lowers ✓
+   * `*búgun → bugon`: *u before *n, still lowers ✓
+   * `*jugunθ → ġeoguþ`: protected by NSL→*ū (separate mechanism) ✓
+   * `*skúldrum → sċuldrum`: *u before *m, no longer lowers ✓
+   * No existing TSV row has medial unstressed *u before *m
+     (DatPl morphology was not previously in the alphabet), so
+     this should be a strict expansion of correct behaviour with
+     no regressions on currently-working rows.
+
+3. **TSV row 2183 edit**: PROTOFORM `*skúldrō → *skúldrumiz`,
+   COUNTERPART `sċuldra → sċuldrum`. Documents this as masc.
+   a-stem DatPl, cell-consistent.
+
+   **Attestation of the OE target `sculdrum`** (verified in
+   `dossier-shoulder-2026.md` §3 and `dossier-shoulder-paradigm-survey-2026.md`
+   §3.7):
+
+   * **Bosworth-Toller** s.v. *sculdor*: DatPl `sculdrum`
+     attested in *Pastoral Care* 29.17 (et al.).
+   * **Brunner** *Altenglische Grammatik* §92,2,a (index entry,
+     line 27480): "sculdor, sceoldor (D. Pl. scyldrum)" —
+     registers both the conservative `sculdrum` and the
+     i-mutated late-WS variant `scyldrum`.
+   * **Hall** *Concise Anglo-Saxon Dictionary* s.v. *sculdor*:
+     DatPl `sculdrum` listed under headword.
+
+   The conservative non-i-mutated form `sculdrum` is the target
+   (cascade output `sċuldrum` matches modulo the palatal-sċ
+   diacritic per Hogg §3.50).
+
+   **Encoding decision (2026-04-28):** PROTOFORM is the **full
+   PGmc form `*skúldrumiz`**, not the post-apocope abbreviation
+   `*skúldrum`. This is etymologically transparent and consistent
+   with the rest of the TSV's PROTOFORM convention, but it forces
+   us to confront the cascade's handling of the full *-umiz tail
+   (currently mishandled: see §17.41-cascade-issues below).
+
+### Cascade complications introduced by full `*-umiz` encoding
+
+The earlier probe (see `dossier-shoulder-paradigm-survey-2026.md`
+§3.8) showed that `*skúldrumiz` driven through the cascade as-is
+yields `sċuldreme`, not `sċuldrum`, because:
+
+(a) **Suffix *u fronting**: the *u of *-um- is treated as
+    unstressed and gets fronted by the same rules that handle
+    *-iz, *-i-, etc.
+(b) **Final *-iz reduction**: the cascade's apocope/weak-tail
+    pipeline reduces *-iz wrongly in this position.
+
+Both (a) and (b) are issues with the PGmc → PWGmc → OE input
+gating in `pgrmWord` / `pgrmWeakTailVowel`, not with the
+sound-change rules themselves. They need to be resolved as part
+of this iteration. Provisional plan: extend `pgrmWeakTailVowel`
+with a full `u:{*u} m:{*m} i:{*i} z:{*z}` tail that maps
+correctly through PGmcFinalZDeletion → apocope, instead of
+short-circuiting at the post-apocope `u:{*u} m:{*m}`. (The
+existing post-apocope tail can stay in place for any future
+PWGmc-input rows but is no longer the route for this row.)
+
+### Verification probes (after rebuild)
+
+* Trace `*skúldrum` → expect `sċuldrum`.
+* Trace `*búgun` → expect `bugon` (regression check).
+* Trace `*súnuz` → expect `sunu` (regression check).
+* Mismatch report: expect 16 → 15 (shoulder fixed, no new regressions).
+
+If verification fails, revert and document; do not iterate on the
+sound rule further without a fresh dossier.
 
 ---
 

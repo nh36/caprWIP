@@ -401,6 +401,16 @@ define pgrmWeakTailVowel [
     u:{*u} w:{*w} ō:{*ō} n:{*n} |
     w:{*w} ō:{*ō} n:{*n} |
     u:{*u} z:{*z} |
+    # Dat.pl. of a-stem masc./neut.: PGmc *-umiz → PWGmc *-um → OE -um
+    # (Ringe-Taylor §6.6, Brunner §237). The high *u in this suffix blocks
+    # NWGmcULowering (Campbell §§115-118), so the root *u is preserved through
+    # to OE -u-. Encoded as the post-apocope form *-um (paralleling the
+    # *-onų / *-unþ patterns above) because the cascade's apocope and
+    # weak-tail-reduction rules were built for NSg/AccSg morphology and
+    # mishandle full *-umiz (unstressed-u fronting + final *-iz reduction
+    # both fire incorrectly). See DEV_NOTES §17.41 and
+    # dossier-shoulder-paradigm-survey-2026.md.
+    u:{*u} m:{*m} |
     ą:{*ą} |
     # ja-stem neuter nom/acc sg (2026-03-18): *-ją, e.g. *natją 'net'
     j:{*j} ą:{*ą} |
@@ -2163,8 +2173,17 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # misunderstood: duguþ preserves u NOT because of harmony with stressed u,
 # but because compensatory lengthening made the medial vowel LONG *ū.
 #
+# Right-context excludes {*m}: *u is preserved before /m/ per consensus
+# (Campbell §373, Brunner §44 Anm. 7, Hogg §3.3.1.3). The protection is
+# segmental, not morphological — Campbell §378 shows that when late-WS
+# *m > *n the *u immediately lowers. This is what allows DatPl *-um to
+# surface as -um (e.g. *skúldrum → sċuldrum). Brunner additionally
+# excludes *ng (cf. our parallel OEMedUnstressedILowering for *e→*i / _ *ng);
+# not implemented here pending need. See DEV_NOTES §17.41 and
+# dossier-medial-u-lowering-conditioning-2026.md.
+#
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
 ];
 
 # ===========================================================================
