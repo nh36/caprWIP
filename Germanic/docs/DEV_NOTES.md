@@ -39396,34 +39396,131 @@ or analogical restoration of `-um`; classical OE inflectional
    (cascade output `sċuldrum` matches modulo the palatal-sċ
    diacritic per Hogg §3.50).
 
-   **Encoding decision (2026-04-28):** PROTOFORM is the **full
-   PGmc form `*skúldrumiz`**, not the post-apocope abbreviation
-   `*skúldrum`. This is etymologically transparent and consistent
-   with the rest of the TSV's PROTOFORM convention, but it forces
-   us to confront the cascade's handling of the full *-umiz tail
-   (currently mishandled: see §17.41-cascade-issues below).
+   **Encoding decision (2026-04-28, revised):** PROTOFORM is the
+   **PGmc-proper form `*skúldramaz`** (dat.pl. with thematic *-a-
+   and the *-amaz dat. ending, before NWGmc *a→*u/_m raising).
+   This decision is grounded in the follow-up dossier
+   `dossier-datpl-route-xy-deepdive-2026.md`, which resolves the
+   competing chronologies for *-i loss (Route X / Ringe-Taylor)
+   vs. *-z loss (Route Y / Polomé-Fulk) by **morphological
+   partition** rather than by phonological commitment:
 
-### Cascade complications introduced by full `*-umiz` encoding
+   * **Nominal a-stem dat.pl.** input = **\*-amaz** (the dat.pl.
+     proper, with thematic *-a-). No *-i to manage; the cascade
+     handles this with a clean sequence of NWGmc *a→*u/_m, *-z
+     loss in unstressed finals, and *-a apocope.
+   * **Pronominal / numeric inst.pl.** input = **\*-(C)V̄-mi**
+     (heavy monosyllable + inst.pl. *-mi, where *-i is preserved
+     late enough to feed i-umlaut → twǣm, þǣm). Separate handling.
 
-The earlier probe (see `dossier-shoulder-paradigm-survey-2026.md`
-§3.8) showed that `*skúldrumiz` driven through the cascade as-is
-yields `sċuldreme`, not `sċuldrum`, because:
+   This partition is exactly what RT vol.2 §6.8.1 (l. 4015–4022)
+   articulate descriptively without naming as a "decision": the
+   nominal paradigm took its dat.pl. ending from the dat. *-amaz
+   (no *-i), while pronominal forms preserved the inst. *-mi.
 
-(a) **Suffix *u fronting**: the *u of *-um- is treated as
-    unstressed and gets fronted by the same rules that handle
-    *-iz, *-i-, etc.
-(b) **Final *-iz reduction**: the cascade's apocope/weak-tail
-    pipeline reduces *-iz wrongly in this position.
+### Cascade architecture for the *-amaz / *-amiz family
 
-Both (a) and (b) are issues with the PGmc → PWGmc → OE input
-gating in `pgrmWord` / `pgrmWeakTailVowel`, not with the
-sound-change rules themselves. They need to be resolved as part
-of this iteration. Provisional plan: extend `pgrmWeakTailVowel`
-with a full `u:{*u} m:{*m} i:{*i} z:{*z}` tail that maps
-correctly through PGmcFinalZDeletion → apocope, instead of
-short-circuiting at the post-apocope `u:{*u} m:{*m}`. (The
-existing post-apocope tail can stay in place for any future
-PWGmc-input rows but is no longer the route for this row.)
+Required rule sequence (per `dossier-datpl-route-xy-deepdive-2026.md`
+§Q6, §"Concrete cascade rule list"):
+
+| # | Rule | Citation |
+|---|---|---|
+| R1 | NWGmc *a → *u / _m (unstressed) | RT §2.1.2 l. 1789–92; Campbell §331(6); Fulk §5.5 |
+| R2 | High-vowel apocope, Stage I (PGmc / pre-PNWGmc): *-i# → ∅ in **third / fourth** syllables; spares heavy monosyllabic *-mi (twāmi, þāmi) | Polomé 1967 p. 808; RT §3.1.1 l. 3367–70; Fulk §5.1 |
+| R3 | Pan-WGmc loss of word-final *-z in unstressed syllables | Crist 2002 §5; RT §3.1.1 l. 3253–67; Campbell §366 |
+| R4 | Word-final low-vowel apocope (PWGmc): *-a# → ∅ | RT §3.1.2; Campbell §§331–345 |
+| R5 | i-umlaut (pre-OE) | Hogg vol.1 §3.3.4; Cercignani 1980 |
+| R6 | High-vowel apocope, Stage II: *-i# → ∅ after heavy syll. (post-umlaut) | RT §6.8.1; Campbell §§331–345 |
+
+For nominal a-stems (input *-amaz): R1 raises *-am- → *-um-,
+R3 drops *-z, R4 drops *-a, yielding *-um.
+
+For pronominal/numeric (input *-(C)V̄-mi): R1 doesn't apply
+(no *a); R2's third-syllable scope spares the heavy
+monosyllabic *-mi; R3 doesn't apply (no *-z because *-mi has
+no final *-z that survived; or because *-z drop precedes *-i
+loss in this branch); R5 i-umlaut fires through the surviving
+*-i; R6 apocopates the now-spent *-i. Result: twǣm, þǣm.
+
+### Cascade complications already documented (still relevant)
+
+Earlier probes with the post-NWGmc-raising form `*skúldrumiz`
+showed `sċuldreme` instead of `sċuldrum`, due to:
+
+(a) **Suffix *u fronting** in `ProtoToOEWeakTail` / English
+    layer applying to the *u of *-um- (because the rule does
+    not exclude *m). This is the **fronting** counterpart to
+    the *m-exclusion we just added to `OEMedUnstressedULowering`,
+    and per Campbell §373 must also be added to the fronting
+    rule.
+(b) **Final *-iz reduction** producing *e (suitable for NomSg
+    *-iz → -e) instead of silent loss (suitable for *-amiz /
+    *-umiz polysyllabic tails).
+
+With the new architecture starting from *-amaz (rather than
+*-umiz), problem (b) is sidestepped — there is no *-iz tail
+to reduce. Problem (a) still requires the *m-exclusion in
+the fronting rule, and is fixed by literature consensus.
+
+### Cascade-implementation tasks (in order)
+
+1. Add NWGmc *a → *u / _m rule (R1) at the appropriate point
+   in the cascade (early, pre-WGmc layer).
+2. Add the *m-exclusion to the unstressed *u fronting rule
+   (parallel to what we did for OEMedUnstressedULowering;
+   Campbell §373).
+3. Verify *-z loss in unstressed finals (R3) operates as
+   expected for *-amaz (dropping *z in *-az-final unstressed
+   forms); should already exist in `PGmcFinalZDeletion`.
+4. Verify *-a apocope (R4) finishes *-uma → *-um.
+5. Extend `pgrmWeakTailVowel` to admit the input tail
+   `a:{*a} m:{*m} a:{*a} z:{*z}` for nominal a-stem dat.pl.
+6. (Future, if needed) Encode the pronominal *-(C)V̄-mi input
+   route separately for twǣm / þǣm.
+
+### Probe / regression test list
+
+Per `dossier-datpl-route-xy-deepdive-2026.md` §Q7 / §"Probe list":
+
+| ID | Cell | PGmc input | Expected OE |
+|---|---|---|---|
+| P1 | a-stem light dat.pl. | `*dagamaz` | `dagum` |
+| P2 | a-stem heavy dat.pl. | `*stainamaz` | `stānum` |
+| P3 | a-stem heavy dat.pl. (shoulder) | `*skuldramaz` | `sċuldrum` |
+| P4 | numeric inst.pl. | `*twaimiz` | `twǣm` |
+| P5 | pron. inst.pl. | `*þaimiz` | `þǣm` |
+| P6 | ō-stem dat.pl. | `*gebōmaz` | `giefum` |
+| P7 | i-stem dat.pl. (light) | `*winimiz` | `winum` |
+| P8 | i-stem dat.pl. (heavy) | `*gastimiz` | `ġiestum` |
+| P9 | u-stem dat.pl. | `*sunumiz` | `sunum` |
+| P10 | n-stem dat.pl. | `*gumanmiz` | `gumum` |
+| P11 | cons.-stem dat.pl. | `*fōtumiz` (analogical) | `fōtum` |
+| P12 | 1pl pres. ind. | `*beramaz` | `beraþ` (and OHG `berumes`) |
+
+These probes capture all the *-um(iz) endings discussed in
+the literature and serve as a regression suite. NOT all of
+these are in the current TSV — the architecture must be
+correct for all of them, even if no current row exercises a
+given branch.
+
+### Open resource gaps (literature we don't have)
+
+Per `dossier-datpl-route-xy-deepdive-2026.md` §Q8, in priority
+order:
+
+1. **Boutkan 1995, *The Germanic Auslautgesetze*** (Amsterdam /
+   Atlanta) — the standard modern monograph on Germanic
+   word-final outcomes; would be definitive on *-z loss
+   and *-i apocope chronology. Cited explicitly by Neri
+   (review of Ringe vol.1) as a key reference Ringe should
+   have engaged with.
+2. **Schulte, M. 1998 / 2007** — runic re-readings (esp.
+   Stentoften `niu ha[n]gestum`); cited by Fulk §4.7 fn. 4.
+3. **Nielsen, H. F. 2000, *The Early Runic Language of
+   Scandinavia*** (Heidelberg) — would clarify which runic
+   forms attest *-um vs. *-umʀ vs. *-umaz at which dates.
+4. **Harðarson 2005** — cited in Neri footnote, on
+   n-stem ending reconstruction.
 
 ### Verification probes (after rebuild)
 
