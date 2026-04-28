@@ -39253,3 +39253,281 @@ such cluster appears in the corpus, and the Campbell/Brunner *xs+C
 formulation is the consensus statement of the conditioning. If a
 non-*s cluster row enters the corpus later, this rule can be
 relaxed at that point.
+
+---
+
+## §17.41 *skúldrō → sċoldor (expected sċuldra 'shoulder'): under investigation
+
+> **STATUS (2026-04-28): OPEN.** The cross-cell recommendation
+> from `dossier-shoulder-cellchoice-2026.md` and
+> `dossier-shoulder-lautgesetz-2026.md` was retracted (see
+> retraction notices at the head of each). A draft "wontfix"
+> conclusion was also retracted as premature. Currently
+> investigating whether **any** cell-consistent reconstruction
+> in **any** paradigm cell of `*skuldra-` (across stem classes,
+> numbers, and cases — including obscure cells such as DatPl,
+> InstrSg, dual cells where reconstructable) yields an
+> attested OE form lautgesetzlich. See
+> `Germanic/docs/dossier-shoulder-paradigm-survey-2026.md`
+> (in progress).
+
+### What's been established (still valid)
+
+* `*skúldrō` (current PROTOFORM) → `sċoldor` (u-lowered): mismatch.
+* `sċuldra` (current COUNTERPART) is innovative late-WS via
+  paradigm-class transfer (Hogg §5.4.5.2); categorically
+  unmodellable. See `dossier-shoulder-2026.md` §11.
+* `NWGmcFinalLongORaising` (PNWGmc *-ō > *-u shortening) is in
+  the cascade but cannot be reordered before u-lowering without
+  regressing `*nosu / sorg / sċofl`. See dossier §10.
+* Empirical probe of NSg cells (2026-04-28): `*skúldrō`,
+  `*skúldraz`, `*skúldrą` all u-lower → `sċoldor`. *wúndrą's
+  escape is via nasal+C blocker (Campbell §§115–118), absent
+  in shoulder.
+* `*skúldru` (NApl) → `sċuldor` lautgesetzlich, but cross-cell
+  (PNWGmc plural → OE singular) violates project cell-
+  consistency convention (every existing non-NSg row in the
+  TSV is cell-consistent: `*xámaras` GenSg → `hameres` GenSg,
+  `*spéru` NApl → `speoru` NApl, `*wúndrą` NSg → `wundor` NSg).
+
+### What's being investigated next
+
+Exhaustive paradigm survey: enumerate **every** reconstructable
+PGmc/PWGmc cell of `*skuldra-` across stem classes (masc a-stem
+per Kroonen, fem ō-stem per R/T's plural, hypothetical neut
+a-stem, weak fem if anywhere reconstructable), trace each
+through the cascade, and check whether the resulting OE form
+matches any attested cell of OE `sculdor`. The question is:
+**is there any cell-consistent cell pairing — however obscure —
+that yields a lautgesetzlich match?**
+
+Only after that survey returns negative will wontfix be the
+correct answer.
+
+---
+
+## §17.41-historical: original (retracted) cell-switch draft
+
+### Dossier inventory
+
+* **`Germanic/docs/dossier-shoulder-2026.md`** (1147 lines, two
+  Opus passes). Initial 9-section dossier on attestation,
+  etymology, u-lowering conditioning, project precedent, the
+  /uRCr/ pattern, four fix options, corpus impact, and residual
+  uncertainties. Followed by §10 (Q1: is the PNWGmc *-ō > *-u
+  shortening already in the cascade? Yes, as
+  `NWGmcFinalLongORaising` at `germanic.txt:2008`; reordering
+  before u-lowering would regress *nosu, sorg, sċofl*) and §11
+  (Q2: is `sċuldra` archaic Anglian or innovative late-WS?
+  Innovative — single late-WS attestation in *De Consuetudine
+  Monachorum* via paradigm-class transfer per Hogg §5.4.5.2;
+  categorically unmodellable).
+* **`Germanic/docs/dossier-shoulder-cellchoice-2026.md`**
+  (775 lines). Q3: should we target `sċuldor` (nom.sg.) or
+  `sċuldru` (neut. NApl)?
+* **`Germanic/docs/dossier-shoulder-lautgesetz-2026.md`**
+  (902 lines). Q4: is `*skúldrō → *skúldru` a Neogrammarian
+  sound law, a sound law the FST cannot reproduce because of
+  rule-ordering conflicts, a morphological/analogical change,
+  or an unformalized regular rule (e.g. Luick §247 /uRCr/
+  Dehnung)? Belongs in the wool/wolf/fugol wontfix bin?
+
+### Q3 finding — cell choice (target nom.sg., not plural)
+
+The cell-choice dossier confirms NH's stated convention: the
+project's prior plural-cell switches (*speoru §17.16) required
+**both** (a) the nom.sg. is unmodellable (analogical) AND
+(b) the plural is historically prior. For shoulder only (b)
+holds — Luick §247 and R/T p. 142 do treat NApl `sculdru` as
+the etymologically prior cell of the heavy /uRCr/ class with
+NSg as a back-formation, but the back-formation pathway
+(heavy-stem apocope of *-u → `*skúldr` → epenthesis →
+`sċuldor`) is itself a Neogrammarian outcome the FST already
+implements. The NSg `sculdor` is therefore the regular
+sound-law output, not an analogical one, and remains the
+correct COUNTERPART. Targeting `sċuldru` would additionally
+require either a Luick-§247-shaped apocope-blocker rule (with
+regression risk on `*nosu / sorg / sċofl`) or an uncited macron
+input `*skúldrū`. Recommendation: **COUNTERPART = `sċuldor`**.
+
+### Q4 finding — lautgesetz status (cell-switch, not wontfix)
+
+The lautgesetz dossier classifies `*skúldrō → *skúldru` as a
+**morphological / analogical** change (paradigm-cell shift to
+the neut. NApl whose suffix `-u` is the regular post-PNWGmc-
+shortening reflex of *-ō*), not as a sound law our FST should
+reproduce starting from the NSg PROTOFORM. The relevant
+findings:
+
+* **Cascade order is fixed by other rows.** Reordering
+  `NWGmcFinalLongORaising` before `NWGmcULowering` would
+  regress TSV rows 2143 (*núsō → nosu*), 2200 (*súrgō → sorg*),
+  2185 (*skúflō → sċofl*) — all attest the lowered + apocopated
+  outcome. So Option Z (add/reorder a rule) is blocked by the
+  data the project must already cover.
+* **Not in R/T §2.3.1 wontfix bin.** R/T's labial-adjacency
+  exception cluster lists only `*fullaz, *wulfaz, *fuglaz,
+  *tulga-, ofer/ufan`. `*skuldrō` is not there; the reason
+  u-lowering "fails" in `sculdor` is not labial adjacency but
+  the historically prior plural cell having had a high-vowel
+  suffix and the singular being a back-formation post-dating
+  the sound laws.
+* **Adjacent class but not a Neogrammarian rule.** Luick §247's
+  /uRCr/ Dehnung group (`sculdru, wundru, cildru, gyrdlas,
+  fyrðran, hundred`) is a real lexical cluster, but no source
+  (Campbell §§115–118; Hogg §§5.10–5.16; Brunner §29ff;
+  Ringe-Taylor vol. 2) promotes it to a sound law. So Option Z
+  would be inventing a rule the literature does not support.
+* **Project precedent already does this.** TSV row 2299
+  (*wundor*) declares PROTOFORM `*wúndrą` (i.e., a non-NSg cell
+  with high-vowel suffix), exactly parallel to the move
+  recommended here. DEV_NOTES §17.10.34 (labial-adjacency)
+  uses cell-switching for 4 of 5 wool/wolf/fugol-class entries
+  rather than wontfixing them.
+
+The dossier therefore rejects Option X (wontfix) and Option Z
+(add a rule) and recommends **Option Y (cell-switch)**:
+PROTOFORM `*skúldrō → *skúldru`, COUNTERPART `sċuldor`. The
+cell-switch is a TSV-only edit declaring that the historically
+prior plural-cell input is the correct FST input for this
+lexeme; it is consistent with our policy that a per-row
+PROTOFORM names a paradigm cell rather than necessarily the
+NSg, and the NSg `sculdor` is then derived lautgesetzlich.
+
+### Open questions for NH discussion
+
+The three dossiers converge on a single concrete plan
+(PROTOFORM `*skúldru`, COUNTERPART `sċuldor`), but NH has flagged
+that further discussion is needed before applying the edit.
+Likely topics:
+
+* Whether the morphological-cell-switch policy needs to be
+  written up explicitly (it is currently only implicit in the
+  precedent set §17.16 / §17.37 / §17.39 / §17.10.34 / row 2299).
+* Whether the Luick §247 /uRCr/ class is large enough across the
+  TSV that a single dedicated rule would in fact be cleaner than
+  N per-row cell-switches, and whether the regression on
+  *nosu / sorg / sċofl* could be averted with sufficiently narrow
+  conditioning.
+* Whether the boundary between "cell-switch" and "give up"
+  (wool/wolf/fugol bin) is articulated clearly enough; this row
+  is genuinely close to that boundary and the choice may signal
+  a broader policy.
+
+### Mismatch as observed
+
+### Mismatch as observed
+
+```
+*skúldrō -> sċoldor (expected sċuldra)
+>> bucket: final_vowel_missing__weak_noun_like
+```
+
+Two disjoint defects:
+
+* **(A)** `NWGmcULowering` fires (*ú → *ó), but every attested OE
+  form preserves *u* (`sculdor / sculdru / sculdra / scyldru`). Late-WS
+  `sceoldor` is post-`sc-` glide-spelling per Brunner §92,2,a, *not*
+  u-lowering.
+* **(B)** Heavy-syllable apocope plus -dr- epenthesis yields -dor;
+  the TSV target ends in -a (weak n-stem fem nom.sg.), a different
+  paradigm cell.
+
+### Trace (FST as of §17.40)
+
+```
+ProtoInput        *s*k*ú*l*d*r*ō
+NWGmcULowering    *s*k*ó*l*d*r*ō     ← u → o (a-mutation; *ō non-high)
+[carry...]
+ProtoToOE         *ʃ*ó*l*d*r          ← final ō apocopated
+Epenthesis        *ʃ*ó*l*d*o*r        ← sonority repair
+Surface           sċoldor
+```
+
+### Source audit
+
+(Full dossiers: `Germanic/docs/dossier-shoulder-2026.md`,
+`dossier-shoulder-cellchoice-2026.md`,
+`dossier-shoulder-lautgesetz-2026.md`.)
+
+* **Bosworth-Toller** lemmatises **`sculdor` m., n.a.p. -dru, -dra**
+  (BT p. 845). The weak fem. **sculdra, an** appears only in
+  BT-Supplement (single Anglian attestation, *Angl. xiii.406.588*).
+* **Hall** has only **`sculdor` m.** as the headword.
+* **Brunner §92,2,a** explains late-WS *sceoldor* as post-`sc-`
+  glide-spelling, *not* u-lowering.
+* **Ringe-Taylor vol. 2 p. 142** explicitly reconstruct PWGmc
+  **`*skuldru`** (with high *-u* suffix from the PNWGmc *-ō > *-u
+  shortening, p. 267) as the input to OE *sculdor*. R/T do **not**
+  list *sculdor* in their §2.3.1 (pp. 32–33) labial-adjacency
+  exception cluster (*fullaz, wulfaz, fuglaz, tulga-*).
+* **Luick §247** groups `sculdru pl., wundru pl., cildru, gyrdlas,
+  englas, hundred, fyrðran` together as a /uRCr/ class where the
+  high vowel survives in the plural cell and the back-formed sg.
+  emerges by epenthesis.
+* **Campbell §§115–118** lists u-lowering blockers as nasal+C, single
+  *m*, single *n* — **no /lCr/ blocker**.
+* **Kroonen** EDPG p. 478: `*skuldra-` m. (a-stem); OHG variant
+  `*skuldrjōn-`; cross-Gmc evidence consistent with stem-class
+  instability.
+
+### Diagnosis
+
+The R/T reconstruction `*skuldru` (high-vowel suffix) starves
+`NWGmcULowering` of its trigger, so *u* is preserved correctly. The
+heavy-stem `HighVowelApocope` then deletes *-u*, leaving `*skúldr`,
+which `Epenthesis` repairs to `sċuldor` — exactly BT's and Hall's
+main headword. Both defects (A) and (B) are resolved by a single
+PROTOFORM/COUNTERPART edit; **no FST rule change is required**.
+
+The current TSV target `sċuldra` (weak fem.) is the philologically
+marginal form (one BT-Supp Anglian attestation) and cannot be
+derived lautgesetzlich from any reconstructable PGmc cell, since
+every n-stem cell has a non-high suffix and would feed u-lowering
+(see dossier §5 paradigm-cell table). Retargeting to `sċuldor` aligns
+the row with the primary lemma in both BT and Hall.
+
+### Verification probe (paradigm-cell-switch sub-gate)
+
+```
+$ python3 Germanic/tools/trace_old_english_sandbox.py --lexeme '*skúldru' --bin-dir /usr/app
+ProtoInput        *s*k*ú*l*d*r*u
+[carry through u-lowering — no trigger]
+ProtoToOE         *ʃ*ú*l*d*r
+Epenthesis        *ʃ*ú*l*d*o*r
+Surface           sċuldor   ✓
+```
+
+The cell switch is lautgesetzlich; the FST already does the right
+thing once given the right input.
+
+### Plan
+
+* Edit TSV row 2183:
+  - PROTOFORM `*skúldrō` → `*skúldru` (per R/T vol. 2 p. 142)
+  - COUNTERPART `sċuldra` → `sċuldor` (BT/Hall main headword)
+  - Leave the cognate-set PROTO column as `*skuldrō` (the
+    cognate-set headword inherited by Du/G/E rows is unchanged)
+  - Note the change citing R/T p. 142, BT p. 845, Hall, Luick §247,
+    and the §17.16/§17.39 precedents.
+* No FST changes.
+* Rebuild bins; expect mismatch count 16 → 15 with no regressions.
+
+### Risk assessment
+
+Zero FST regression risk (no rule changes). The cognate-set proto
+on Dutch / German / Modern English rows is untouched. The only
+downstream consideration is whether the project loses the weak-fem
+inflectional example in this lexeme — but BT itself treats `sculdra`
+as a marginal supplement entry, and the project has multiple other
+weak-fem rows.
+
+### Project precedent
+
+This is the same move applied for *durą → *duruz* (DEV_NOTES line
+908ff.), *spéru → speoru* (§17.16), *fūri → fȳre* dat.sg. (line
+1715), *xámaras → hameres* gen.sg., loam (§17.39), weasel (§17.37),
+west (§17.38): switch the per-row PROTOFORM to the paradigm cell
+that yields the attested OE form by regular sound change, leaving
+the cognate-set headword intact for cross-Gmc inheritance.
+
