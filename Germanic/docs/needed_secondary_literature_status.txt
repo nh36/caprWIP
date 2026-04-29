@@ -1,0 +1,146 @@
+NEEDED SECONDARY LITERATURE FOR *i > *e LOWERING RESEARCH
+==========================================================
+
+Current working directory: ~/capr-v3-working
+Project: FST pipeline modeling PGmc → OE sound changes
+Topic: High vowel lowering (*i > *e and *u > *o) before non-high vowels
+
+Last updated: 2026-04-29
+
+
+REFERENCES WE HAVE (committed to project under docs/references/):
+-----------------------------------------------------------------
+
+Already in project before this batch:
+
+1. Lloyd, Albert L. 1966. "Is There an a-Umlaut of i in Germanic?"
+   Language 42.4: 738–745.
+   File: docs/references/lloyd_1966_a_umlaut_of_i.txt
+
+2. Cercignani, Fausto. 1980. "Early 'Umlaut' Phenomena in the Germanic Languages."
+   Language 56.1: 126–136.
+   File: docs/references/cercignani_1980_early_umlaut.txt
+
+3. Cercignani, Fausto. 1979. "PGmc *i and *e Revisited." (Indogermanische
+   Forschungen)
+   File: docs/references/cercignani_1979_pgmc_i_and_e_revisited.txt
+
+4. Howell, Robert B. & Joseph C. Salmons. 1997. "Umlautless Residues in Germanic."
+   American Journal of Germanic Linguistics & Literatures 9.1: 83–111.
+   File: docs/references/howell_salmons_1988_lowering_of_i.txt (mislabeled)
+
+5. Fulk, R.D. 2018. A Comparative Grammar of the Early Germanic Languages.
+   §4.3, §4.4 (lowering / raising of short mid and high vowels).
+   File: docs/references/fulk_comparative_grammar_early_germanic.vision.txt
+
+6. Streitberg, Wilhelm. 1896. Urgermanische Grammatik. Heidelberg: Winter.
+   File: docs/references/streitberg_urgermanische_grammatik.vision.txt
+
+7. Noreen, Adolf. 1923 (4th ed.). Altnordische Grammatik I: Altisländische
+   und altnorwegische Grammatik. Halle: Niemeyer.
+   File: docs/references/noreen_altislaendisch.vision.txt
+
+8. Stiles, Patrick V. 2012. "Older Runic evidence for North-West Germanic
+   a-umlaut of u." In Laws and Rules in Indo-European, ed. Probert & Willi.
+   File: docs/references/stiles_2012_a_umlaut_of_u.{pdf,txt}
+
+ADDED IN THIS BATCH (Google Vision OCR, 2026-04-29):
+
+9.  Hirt, Hermann. 1931–1934. Handbuch des Urgermanischen, Teile I–III.
+    Heidelberg: Winter. (622 pp., one combined PDF.)
+    File: docs/references/hirt_handbuch_des_urgermanischen.vision.txt
+    Use: §34.1 (vol. I) PGmc vowel system; cited in Fulk §4.3 n.6 for
+    PGmc dating of *i > *e. Streitberg-style reference grammar of PGmc.
+
+10. Gutenbrunner, Siegfried. 1951. Historische Laut- und Formenlehre
+    des Altisländischen. Heidelberg: Winter. (192 pp.)
+    File: docs/references/gutenbrunner_1951_altislaendisch.vision.txt
+    Use: §26.1.2 cited by Cercignani for OIc. velar blocking of *i > *e.
+
+11. Kock, Axel. 1901 (imprint; sometimes cited as 1898 series-date).
+    Die alt- und neuschwedische Accentuierung unter Berücksichtigung
+    der andern nordischen Sprachen.
+    Quellen und Forschungen 87 (LXXXVII). Strassburg: Trübner.
+    File: docs/references/kock_1901_schwedische_accentuierung.vision.txt
+    (318 pp., reconstituted from per-page OCR txt files.)
+    Use: Fulk §4.3 nn.3, 6 — velar blocking of i-lowering in North
+    Germanic; PGmc dating of the change.
+    Note on date: Fulk and others cite "1898" because the QF series
+    accepted the volume that year. The Strasbourg imprint shows 1901.
+
+12. Ringe, Don. 1984. "Proto-Germanic 'e₂' and *r." In: Festschrift for
+    Henry Hoenigswald (or similar volume), pp. 138–151.
+    File: docs/references/ringe_1984_germanic_e2_and_r.{pdf,vision.txt}
+    Use: argues *hir 'here' is the only PGmc *e₂ word, with full
+    discussion of OHG *ir > er; relevant to our *i / *e analysis.
+
+
+REFERENCES STILL OUTSTANDING:
+-----------------------------
+
+The following items from the original list are NOT in this batch and
+remain to be sourced:
+
+A. Beeler, Madison S. 1966. "Proto-Germanic [i] and [e]: One Phoneme
+   or Two?" Language 42(2): 473–474.
+
+B. Kylstra, A.D. 1983. "Zum Alter des 'älteren' Umlauts im Germanischen."
+   Amsterdamer Beiträge zur älteren Germanistik 19: 1–6.
+
+C. Polomé, Edgar C. 1988. "Are There Traces of Laryngeals in Germanic?"
+   In Bammesberger, ed., Die Laryngaltheorie und die Rekonstruktion
+   des indogermanischen Laut- und Formensystems, 383–414. Heidelberg:
+   Carl Winter.
+
+D. Polomé, Edgar C. 1994. "Proto-Germanic and the Reconstruction of
+   Proto-Indo-European." NOWELE 23: 3–40.
+
+E. Rice, Keren. 1994. "Peripheral in Consonants." Canadian Journal of
+   Linguistics 39(3): 191–216.
+
+F. Krahe, Hans & Wolfgang Meid. 1969. Germanische Sprachwissenschaft.
+   3 vols. 7th ed. Berlin: de Gruyter. (Vol. I §36.)
+
+G. Beeler, Madison S. 1966. "The Interrelationships within
+   'Baltic-Slavic'." (Reference incomplete; cited in Fulk §4.3.)
+
+H. Polomé, Edgar C. 1987–88. "Some Aspects of Proto-Germanic Phonology."
+   (Journal unknown.)
+
+I. Kylstra, A.D. (date?) "On the Status of German e < i before r."
+   (Journal unknown — cited in Fulk §4.3 n.5; may be the same as B.)
+
+
+SCORECARD
+---------
+
+  In project before this batch:        8
+  Added in this batch:                  4   (Hirt, Gutenbrunner, Kock, Ringe-1984)
+  ----------------------------------------
+  Total integrated:                    12
+  Still outstanding:                    9
+
+
+QUESTIONS TO INVESTIGATE (carry-over):
+--------------------------------------
+
+1. Does Fulk's formulation (*i > *e before non-high vowels with coronal
+   intervening consonants) make testable predictions?
+
+2. What other scholars propose REGULAR (not sporadic) solutions?
+   - Lloyd: systemic analogy (not regular sound change)
+   - Cercignani: merger avoidance (explains resistance, not change)
+   - Howell & Salmons: place feature hierarchy (explains blocking)
+   - Fulk: genuine Neogrammarian rule
+
+3. Can we identify ALL words in our corpus that fall under Fulk's
+   environment? *i followed by coronal consonant(s) followed by
+   non-high vowel — check which show lowering and which retain *i.
+
+4. Is onset-velar blocking (our novel hypothesis) supported by any
+   source? Cercignani says OIc. only, NOT WGmc; our implementation
+   assumes it applies to OE.
+
+5. How does *i > *e interact with *u > *o chronologically?
+   Our implementation: i-lowering BEFORE u-lowering.
+   Is this order attested in the literature?

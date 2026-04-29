@@ -1,0 +1,646 @@
+=== page 001 ===
+
+Germanic ',' and **
+obscure origin. After reviewing earlier theories concerning the origin of e₂, I suggest
+Traditional reconstructions of Proto-Germanic include a rare vowel 'e' of
+that the only Proto-Germanic word containing e, was her 'here', and that this
+word was phonemically */hir/. The form *hir arose by analogical addition of the
+locative adverbial ending *-r to an old instrumental singular *hi 'with this'. Most
+other examples of ear occur only in Old High German, where Proto-Germanic *ir
+regularly became er; I show that all counterexamples to this sound change are of
+doubtful origin. Examples of e, not before r are also briefly discussed.*
+1. Introduction
+The origin of Germanic 'e' has been debated for over a century, but no
+one view has been generally accepted'; in this paper I shall try to establish
+the origin of some examples of this perplexing vowel. The problem can be
+stated briefly as follows. Of the late Proto-Indo-European long vowels and
+diphthongs, *, *, *ō, *ai, and *au remained in Proto-Germanic; *ā
+merged with *ō; *oi and *ou merged with *ai and *au respectively; by the
+process called i-umlaut, *ei merged with *, while *eu was split (subphone-
+mically) into *eu and *iu; and *ē appeared as *ē, which remained in Gothic
+but was lowered and backed to *ā in North and West Germanic. Long
+diphthongs (*oi, *ou, etc.) seem to have merged either with the correspond-
+ing short diphthongs or with long vowels, except in word-final position;
+their Proto-Germanic reflexes in that environment need not concern us
+here. However, straightforward reconstruction of Proto-Germanic also
+yields another long vowel, usually designated '2', which remained ē in all
+the Germanic languages and was not shifted to a². Few reconstructable
+lexemes exhibit this vowel; its Proto-Indo-European sources remain a
+matter of doubt.
+* An earlier version of this paper was presented at the 1980 General Meeting
+of the LSA. I would like to thank Warren Cowgill for much helpful discussion
+and criticism of several earlier drafts, and especially for discussion of relevant
+forms outside Germanic; naturally he does not agree with me on every point.
+would also like to thank Martin Peters for pointing out several relevant refer-
+ences. All remaining errors and infelicities are my own. Note that I write, and her
+without asterisks as shorthand symbols for the phonological correspondence and
+the cognate set in question.
+In addition to the bibliography herein, see especially Janko 1906: 229
+and Hirt 1931: 33.
+2 Within the history of Old High German this ē was 'broken' to ea, which later
+became ia or ie (depending on the dialect and the date of the document), just as
+ō > oa > ua or uo.
+
+=== page 002 ===
+
+Germanic '' and *r
+139
+Lists of cognate sets exhibiting 2 can be found in Noreen 1894: 30-2,
+Franck 1896: 53-5, and Knapp 1974: 209-10. The relatively certain
+examples are listed in the accompanying table on p. 152.
+In North and West Germanic many class VII strong preterites also
+seem to exhibit 2; thus to Gothic (Go.) haihait 'he called', a reduplicated
+preterite, correspond Old Norse (ON) hét (and heit), Old English (OE) het
+(and heht), Old Saxon (OS) het, and Old High German (OHG) hiaz. I accept
+the view that these e's arose by contraction (see Flasdieck 1936: 241 ff.);
+I shall not deal with them in this study. Nor will I consider cases in which
+a long e-vowel has obviously arisen from relatively late sound changes, viz.
+the Old English and Old Saxon pronouns he 'he' (*hiz, cf. Lithuanian šis
+'this'), me 'to me' (*miz, cf. Go. mis), etc., and examples like Go. mizdo, OE
+mēd, OS mēda, OHG miata 'reward'. Loanwords such as Go. Kreks, OE
+Crec, OHG Criach 'Greek' will also be left out of account.
+2. Earlier theories
+It would be pointless to review here all earlier theories concerning the
+origin of e2; I shall summarize the six most important ones briefly, pointing
+out the major objections that can be raised against each.
+The simplest theory is also the one best supported by evidence outside
+Germanic; it attempts to explain only the 2 of her 'here'. Since other
+Indo-European locative adverbs in -r usually exhibit short stem vowels
+(e.g. Albanian kur, Lithuanian kur 'where'; Lith. kitur 'elsewhere'; within
+Germanic, Go. and ON par 'there', and Go. har, ON hvar 'where'), we
+expect a Proto-Germanic form *hir 'here'; Old Frisian (OF) hir and OS hir
+(/her) could contain short vowels, and thus can represent survivals of such
+a form. In some areas *hir can have become *her, which can have been
+lengthened under the accent to *her, just as Proto-Germanic (PG) *þar
+'there' and *hwar 'where' were lengthened to *pār and *hwar in West
+Germanic. Warren Cowgill (personal communication) has suggested such
+a line of development; a similar theory was proposed by Johannes Schmidt
+(1875: 414-5, 422 ff.) and extended by several scholars of the late nine-
+teenth century (cf. Möller 1879: 511 and 1899: 116), though Schmidt and
+his followers failed to state the conditions under which lengthening oc-
+curred. I find this theory implausible for the following reason. PG *þar and
+*hwar were lengthened under the accent only in West Germanic; yet the
+theory under discussion maintains that *her was lengthened under the
+accent in all branches of Germanic. Unless a good reason for this discrepan-
+cy can be found, it seems preferable to suppose that the vowel of her was
+originally long.
+
+=== page 003 ===
+
+140
+Donald A. Ringe, Jr.
+of earlier *hear from still earlier *hiar; though his attempt to derive this
+Georg Mahlow (1888: 163) suggested that her represents a contraction
+form from a stem *hja- is implausible, he also considers the possibility that
+Phonologically this is unobjectionable (pace Jellinek 1891: 298, whose
+the *ar of PG *par and *hwar was analogically added to the stem *hi-.
+however, an analogy with *bar and *hwar should result in *hir, not *hiar
+Gothic counterexample unbiarja 'wild beasts' has no known etymology);
+(e.g. *pammai: *hwammai: *himmai :: *par: *hwar: X, X = *hir), and
+suggests that PG *hear could reflect pre-Germanic *keor, a form composed
+there is no other source for an element *-ar. Calvert Watkins (1973: 205-6)
+suffix *r. This is possible, but such a form would be unparalleled in
+of a deictic prefix *ke-, the pronominal stem *o-, and the locative adverbial
+Germanic; the prefix *ke- and the pronominal stem *o- do not appear in
+other Germanic forms. One might therefore expect the formation to be an
+archaism, but unfortunately it has no close parallels in other branches of
+Indo-European. Consequently I am inclined to reject Watkins' suggestion.
+Cowgill (personal communication) suggests deriving Proto-West Germanic
+(PWG) *par and *hwar from pre-Germanic *toyor and *koyor, which
+would at least make them parallel in formation to her (< *hiar <
+*ki(y)or); but this separates the West Germanic forms from the Gothic and
+Old Norse forms exhibiting short vowels, which is implausible, and the
+source of *-yor remains completely obscure. The attempts of Mahlow (loc.
+cit.) and Schrader (1889: 131-3) to extend Mahlow's theory to handle other
+cases of 2 cause severe etymological difficulties.
+Perhaps the most widely accepted theory is still that of Jellinek (1891),
+who suggested that Proto-Indo-European (PIE) *ei gave rise to PG *2.
+Jellinek himself pointed out some of the disadvantages of this theory, and
+van Coetsem (1957: 25-6) has noted others: we are forced to posit a
+morphologically inexplicable lengthened grade *ēi in several protoforms; a
+special development of PIE *ei, but not of other long diphthongs, in
+nonfinal position in Germanic is very unlikely; and there is some evidence
+that nonfinal *ēi had already become *ē in late Proto-Indo-European
+(Meringer 1888: 128-36; Schindler 1969: 165, 1973: 156). Lehmann (1952:
+66-73) has attempted to meet the first of these objections by suggesting
+that PG *2 is the reflex not of the PIE lengthened-grade diphthong *ei,
+but only of the (full-grade) sequence *exi, where *X is some
+(surely only *, is possible?); but this solution posits laryngeals in roots
+where there is no other evidence that they existed (e. g. in *steigh- 'step'),
+and it does not address the question of why this sequence (but not other
+similar sequences, e. g. *oXi) received special treatment.
+laryngeal
+The theory of van Coetsem (1957: 22-46) is also widely accepted today.
+Van Coetsem suggests that PIE *ei survived as a separate entity in
+Proto-Germanic (instead of being merged with *), but then became * in
+
+=== page 004 ===
+
+Germanic '' and *r
+141
+i-umlaut environments and *2 in a-umlaut environments. The principal
+objections to this theory are that the number of actually occurring e2's is
+very small, whereas a-umlaut environments occur frequently; that *
+occurs beside or instead of 2 even in isolated a-stem nouns (e. g. in PG
+*Tiwaz, the name of the war-god, obviously from PIE *deiwós 'god'),
+where it is difficult to see how * could have arisen either by i-umlaut or
+by analogy; and that if i-umlaut was originally a phonetic process, as seems
+practically certain, then the *i of the diphthong *ei should have umlauted
+the immediately preceding *e, giving first *ii and then *. Knapp (1974)
+attempts to save van Coetsem's theory by suggesting that *ei was lowered
+all the way to *2 only before *r, perhaps only before certain (particularly
+final) *r's in certain areas (see especially Knapp 1974: 226-31, and cf.
+Franck 1896: 53; Kluge 1897: 411; Hirt 1931: 34-5). This hypothesis is too
+vague to be of any use, though as we shall see below Knapp is quite correct
+in recognizing PG *r as a factor relevant to the problem.
+Kuryłowicz (1952) adopted an entirely different approach. Only two
+cognate sets, those represented in Gothic by her 'here' and fera 'side',
+exhibit forms containing 2 outside of West Germanic; Kuryłowicz there-
+fore proposed to treat the rest as special West Germanic phenomena rather
+than project their e2's back into Proto-Germanic. Moreover, Go. fera and
+OHG fiara 'side' have no clear connections with any other words, either
+within or outside Germanic; the word could easily have been borrowed
+from Gothic into Old High German or from some unknown source into
+both. Thus the only apparent Proto-Germanic example of e2 is her 'here'.
+Kuryłowicz thought that this word originally contained *₁ (the reflex of
+PIE *), but that when *, became *ā in North and West Germanic, *her
+was prevented from shifting to *har by its morphological connections with
+words containing short *i or *e, e. g. the ancestors of OHG hina 'hence' and
+hera 'hither'. By failing to undergo this shift *her automatically became
+her. This strikes me as implausible for two reasons. In the first place, West
+Germanic shows lengthening of PG *par 'there' and *hwar 'where' to *pār
+and *hwar; a shift of *her to *har would have created a perfect rhyming
+triplet, and it seems unlikely that the influence of morphologically related
+forms with short vowels would have been strong enough to prevent this.
+Secondly, in some Old High German dialects hera 'hither' has been remo-
+delled to hara on the analogy of dara 'thither' and wara 'whither'; this
+suggests that analogical influences among these locative adverbs are more
+likely to have operated between forms containing the same suffix than
+between forms containing the same stem.
+Finally, mention should be made of a theory advanced by Feuillet
+(1976: 92-4), who believes that PG *ir became *er provided that the *r
+'n'était pas suivi d'un élément fermant comme /i/, /j/, ou /s/' (p. 93). Thus
+in Gothic we find her 'here' and fera 'side', but skeirs 'clear' with a derived
+
+=== page 005 ===
+
+142
+Donald A. Ringe, Jr.
+'explanation'. Only Gothic, says Feuillet, preserves the original distribu-
+factitive verb ga-skeirjan 'explain' and a deverbal nomen actionis skeireins
+tion of * and *e, before *r; thus one finds * in OE tir 'glory'
+even
+though
+with this theory is completely unacceptable (e. g. his derivation of OE mēd
+even though an i does follow. Much of what Feuillet says in conjunction
+no i, j, or *s ever followed the *r, and *2 in OHG skēri 'sharpsighted'
+that he is quite correct in seeing PG * before *r as a source of e. His
+'reward' from *mizd- through an intermediate *mird-); however, I believe
+distributional rules for i and e₂ can be made to work quite well for Gothic
+by deleting s from his list of 'éléments fermants', since skeirs is an i-stem
+his rules, faíhugeiro 'avarice' (of which he is apparently unaware), is
+(cf. skeirs wisandei in Skeireins IVb); the only Gothic counterexample to
+probably a false reading, as I shall try to show below. On the other hand,
+to say that only Gothic preserves the original distribution of vowels
+without attempting to explain how the distribution was altered in the
+other languages leaves a major problem unsolved, and Feuillet's theory
+cannot be accepted as it stands³.
+3. A new theory
+I should like to propose a new theory to account for the occurrence of
+2 before PG *r. I believe (with Kuryłowicz) that the only example of 2
+which must be accounted for in a reconstruction of Proto-Germanic is
+hear 'here'; I hold (with Feuillet) that the vowel of this word in Proto-
+Germanic was phonemically */; and I follow Feuillet, Knapp, Hirt,
+Kluge, and Franck in considering the *r following this vowel partly respon-
+sible for the vowel's peculiarity.
+I propose, then, that the Proto-Germanic word for 'here' was phonemi-
+cally */hir/. If that is true, then it was the only word in the language in
+which the sequence */ir/ occurred within a syllable. All other cases of */ir/
+were followed by vowels, including that in the ancestor of Go. ga-skeirjan
+'explain', which must have been PG *ga-skīrijaną by Sievers' Law. Conse-
+quently *hir was the only word affected by a regular Proto-Germanic
+phonological rule which lowered * before tautosyllabic *r:
+->
+ī→ [-high]/
+r$
+3 I did not become aware of Feuillet's work until I had written several
+drafts of this paper and submitted it to be read at the 1980 General Meeting of
+the LSA; Feuillet and I have thus concluded independently that PG *r is a
+source of er.
+
+=== page 006 ===
+
+Germanic ',' and *r
+143
+(where $ represents a syllable boundary). The new allophone of */i/
+created by this rule did not fall together with */ē/ in Proto-Germanic;
+apparently the latter was somewhat lower. In Gothic the two did eventu-
+ally merge, but elsewhere a more complex development occurred.
+In North and West Germanic, PG *ē became *a in the latter half of the
+second century after Christ (Krause 1971: 24-5). Subsequently *ai devel-
+oped an allophone *[e] in final position; in North Germanic this may have
+happened shortly after the lowering of old * and had certainly occurred
+by about 400 (Krause 1971: 89, § 58.13; p. 151, no. 42; p. 158, no. 69; p. 169,
+no. 105). An American structuralist analysis would assign this new allo-
+phone of *ai and the lowered allophone of * to a new phoneme */ē/ on
+grounds of phonetic similarity; thus the monophthongization of final *ai
+caused the lowered * of *hir to become phonemically */e/. On the other
+hand, a phonological analysis tolerating partial overlapping of phonemes
+would date the phonemicization of */her/ differently: the lowered allo-
+phone of old * would become */e/ either upon the loss of *a in final
+syllables (which would cause the sequence *[er] to contrast with *[ir] in
+final position) or upon the creation of a new */e/ by contraction in the class
+VII strong preterites (to which */e/ the vowel of *[her] would be assigned
+on grounds of phonetic similarity), whichever occurred first. Since no
+examples of class VII strong preterites occur in the runic inscriptions
+(Krause 1971: 68, 122), we cannot determine the relative chronology of
+these latter changes.
+* In fact, a sequence *Vr$ can only have existed in word-final position in
+Proto-Germanic; Osthoff's Law had removed all word-internal examples. I am
+grateful to Jochem Schindler for pointing this out. Martin Peters notes a
+similar rule in Attic Greek (ir > er, distinct from er; cf. Wackernagel 1909:
+326-8).
+5 Several scholars have insisted that ē, must have been an open vowel, partly
+on the grounds that PG *e is occasionally written ei in our Gothic manuscripts,
+whereas ē never is, and partly because of e2's development in Old High German
+and the behavior of loanwords in that language (cf. e. g. Möller 1879: 510,
+1899: 115; van Helten 1896: 438-43, 1908: 93-8; Franck 1896: 51-2). But
+Hirt (1896, 1897) has shown that e, is so rare in Gothic that its failure to
+appear as ei is not significant; furthermore, an original close pronunciation of ē, and
+a more open pronunciation in Old High German some centuries later are not
+incompatible.
+⚫ Of course the development need not have been the same over the whole North
+and West Germanic area. Luick (1914-21: 321) dates the loss of *a in final
+syllables in Anglo-Frisian to the second or third century; this is probably too early,
+as he seems to assume that this loss occurred simultaneously in all branches of
+Germanic and before the West Germanic loss of final *z (which is improbable).
+According to Noreen (1913: 82-7, 1923: 132-4), loss of *a in final syllables
+begins to appear in Early Norse around 550, but is first attested after a fully
+stressed heavy syllable around 700.
+
+=== page 007 ===
+
+144
+Donald A. Ringe, Jr.
+It is not certain that the allophonic lowering of * in PG *hir occurred
+survivals of an unshifted form, although later dialectal development of *ē
+over the whole Germanic area; OF hir and OS hir (her) can represent
+to i is also possible (cf. von Richthofen 1840 s. v. hir; Heuser 1903: 8;
+Franck 1896: 53 fn.)".
+dank
+Of course PG *hir is phonotactically unique, and the question of its
+pre-Germanic source is a difficult one. As noted above, the expected
+locative adverb in *-r to the Proto-Indo-European deictic stem *ki- would
+*Keir, the other phonologically thinkable source for PG *hir, cannot have
+be *ir (giving PG *hir); a form *kir would be completely unparalleled, and
+existed in Proto-Indo-European (only *keyr, which would give a PG
+tactics). The only solution to this problem is to recognize the *-r of PG *hir
+*hijur, would have conformed to the laws of Proto-Indo-European phono-
+as an analogical addition on the model of *bar 'there' and *hwar 'where',
+a possibility hinted at by Johannes Schmidt (1885: 303), clearly stated by
+Kögel (1894: 286), and favored by Hirt (1931: 35). In that case the pre-
+Proto-Germanic word for 'here' was *hi, and we must explain the existence
+of such a form.
+It is tempting to equate *hi with Greek Exeч 'there', which looks like an
+exact cognate (modulo the prothetic vowel); however, the comparison will
+not stand closer scrutiny. Exet occurs only in the Attic-Ionic dialect group,
+and is absent from the Homeric poems; Homer uses èxed and xedi.
+Comparison of the latter with Aeolic xd permits us to reconstruct a
+Proto-Greek *kéethi; the relation of exe to this protoform is not clear.
+*Kéethi contains a locative suffix -thi; the stem *kee-, to which other
+suffixes are also appended, could reflect an earlier *keye- connected with
+the Proto-Indo-European deictic *ki-, but the second *-e- of the pre-Proto-
+Greek form is puzzling. In short, the further one traces the Greek forms
+back toward Proto-Indo-European, the less they look like pre-PG *hi.
+Furthermore, no word in any other Indo-European language looks like an
+exact cognate of *hi7a.
+7 The occurrence of hir, with the vowel unmarked for length, twice in Tatian
+(sect. 91.2) remains a puzzle.
+7. Watkins (1973: 202-4) has shown that the existence of a form *kei
+here' anywhere in Indo-European is doubtful. The cé of Old Irish (OI) (in) bith cé
+'this world' probably does not reflect *kei (pace Watkins p. 203); one would
+expect PIE *kei to give OI *cía, homonymous with cía 'who?' < PIE *kwéi. Nor
+can OI é 'he (emphatic)' (cf. PIE masc. nom. sg. *éi 'this') be cited in support of
+a development *kkei > cé; é need not be a phonologically regular reflex of PIE *éi,
+but can reflect an analogically remodelled preform *es (cf. Latin is, with *i- rather
+than *e- generalized; the Old Irish form probably has *e-, since *i is lengthened to
+fashion cé probably reflects *kes (either nom. sg. agreeing with *bitus, cf. Lithuani-
+í in the monosyllable brí 'hill', as Cowgill has pointed out to me). In a similar
+
+=== page 008 ===
+
+Germanic ',' and *r
+145
+Since pre-PG *hi was clearly formed to the deictic stem *hi- (PIE *ki-),
+it is worth asking whether it can be a fossilized case form of that deictic.
+On semantic grounds we expect a locative, but that
+the Proto-Indo-European locative was clearly *késmi, which must have
+out of the question;
+become PG *himmi if it survived unaltered. (A slightly remodelled dative
+or locative, PG *himmai, does survive in Go. himma, e. g. in the phrase
+himma daga 'on this day'.) We must therefore abandon the suggestion of
+Johannes Schmidt (1885: 303) that the ultimate source of our word is a
+locative singular in *-ē (in modern terms, *-ei), the ending proper to i-stem
+nouns and adjectives; Germanic tends to extend the use of pronominal
+endings, not to eliminate them.
+On the other hand, the Proto-Indo-European instrumental singular *ki
+is a phonologically possible ancestor of pre-PG *hi. That Proto-Germanic
+i-stem pronouns had instrumentals in *- is clear from the existence of ON
+hví 'for what; why'; a form *hi is therefore no surprise. The semantic fit
+between an instrumental case form and a locative adverb is far from ideal,
+but the change in meaning involved does not seem impossible. I think,
+then, that PIE *k with this' is the protoform of pre-PG *hi, PG *hir
+'here'.
+Evidence within Germanic provides further support for this theory,
+though indirectly: several other instances of 2 can be accounted for by a
+less restricted version of the sound law I have posited to account for the
+vowel of her. I shall now present this evidence in detail.
+4. Extension of the theory
+As Kuryłowicz has pointed out, Go. fera and OHG fiara 'side' are
+unetymologizable and perhaps represent a case of lexical borrowing. If we
+eliminate this pair from consideration, there are only three other Germanic
+words in which 2 is followed by r: OHG wiara 'filigree', ziari 'beautiful'
+(with its derivatives), and skēri 'sharpsighted' (with its Old High German
+kin). Cognates of these words in other Germanic languages regularly
+contain a sequence ir, not e₂r. This suggests that we should posit an Old
+High German sound change:
+ī >ē r.
+This is clearly a generalization of the phonological rule I have posited
+for Proto-Germanic: the lowering of * before *r is general in Old High
+German, not restricted to tautosyllabic cases. The fact that a number of
+Latin loanwords in Old High German contain a sequence ir is not counter-
+an sis 'this' and PG *hiz 'this, he', or else an adverb similar in formation to Latin
+cis 'on this side').
+
+=== page 009 ===
+
+146
+Donald A. Ringe, Jr.
+evidence to my proposed sound change, since they can have been borrowed
+after the change had ceased to operate. But there are also three native Old
+High German words that contain a sequence ir, and we must somehow
+account for these.
+The least troublesome case is spirboum 'serviceberry tree'. The only
+connected text in which this word occurs is a boundary description from
+Würzburg (cf. Schützeichel 1969 s. v.); inspection of the text (Steinmeyer
+1916: 116) reveals no reason to assume that the first vowel is long. Exam-
+ples of spirboum in the glosses were collected by Björkman (1902: 218); the
+first syllable sometimes exhibits i and sometimes e, but there is never any
+indication of vowel length. (The name of the fruit appears once with ie; cf.
+also Graff 1829: 146, which gives a gloss 'sirlus, spier', cited in Graff 1842
+col. 359 as 'spier, sireus (sorbus?)'.) On the basis of the i/e alternation,
+Björkman concluded that the vowel was probably short; however, the
+Modern High German word Speierling 'serviceberry (fruit)' seems to pre-
+suppose an earlier *spir-. Björkman thought that this latter must be due
+to the influence of an unattested OHG *spir, cognate with Middle Low
+German (MLG) spir 'small point, esp. of grass or grain', OE spir 'tapering
+shoot of a reed', etc.; this is obviously mere guesswork. In any case the
+word spirboum (sperboum) has no known etymology; therefore it cannot
+constitute a solid counterexample to my proposed sound change even if it
+does contain i, because we cannot be sure that it existed in Old High
+German when the sound change occurred.
+For the same reason, OHG gir 'vulture' poses only minimal problems for
+my theory. It definitely contains the sequence ir, but it is an isolated word
+with no obvious cognates; a connection with OHG girheit 'greed' and thus
+with a widespread family of words whose fundamental meaning is 'yawn'
+or 'gape' has been suggested (Pokorny 1959 s. v. 2. ghe-), but this is not
+compelling. Like spirboum, gir is a word of obscure origin that may not
+even have been in the language when my putative sound change occurred.
+By contrast, the three Old High German words in which *r seems to have
+become er have clear and well-established etymological connections.
+The case of OHG girheit 'greed' is much more complex. Descriptively
+the first half of this compound belongs to a series of Old High German
+stems denoting 'desire' which begin with a sequence gVr-, where V is some
+front vowel. The quantity of the front vowels in these stems is not always
+clear. The adjectives ger, gero, and gern, all meaning 'desirous', definitely
+contain short vowels, as do their numerous derivatives (e. g. girig 'desi-
+rous'; giri and girida 'desire'; giren, geron, and geren 'to desire'); girheit
+8 The suggestion of Schrader (1929: 421) that this word is connected with
+OHG spero 'spear' is unconvincing.
+
+=== page 010 ===
+
+Germanic '' and *r
+147
+'greed', which occurs only in the works of Notker, just as clearly contains
+a long vowel. Pokorny (1959 s. v. 2. ghe-) also lists an adjective giri
+'desirous'; but there seems to be no evidence for a long vowel in this word,
+and both Schützeichel (1969 s. v.) and the glossary to Braune's reader
+(Braune and Ebbinghaus 1969: 202) list it as giri. Graff (1838 col. 225)
+recorded a form gire 'eager (pl.)' from Tatian sect. 106; but inspection of
+the text (Sievers 1892: 153, sect. 106.7) reveals that the form is written
+gire, which tells us nothing about the length of the vowel. Schützeichel
+(1969) lists a noun gira 'desire' from a late Bavarian confession (Stein-
+meyer 1916: 315), but again there is no evidence in the text that the vowel
+long. Girheit 'greed' is thus the only word of this group that certainly
+contains a long vowel.
+Notker's works contain two other words exhibiting the sequence ir that
+have sometimes been included in the group denoting 'desire'; however,
+these words are probably compounds of gir 'vulture' instead. That is
+certainly true of the masculine plural hóuegira that occurs once in Notker's
+Boethius (pace Graff 1838 col. 225; cf. Kelle 1885: 282), since the phrase tie
+hóuegira translates palatini canes ('palace dogs') of the Latin original and
+can hardly mean anything but 'Hofgeier', i. e. 'court buzzards, rapacious
+courtiers' (Lindahl 1916: 39 with fn. 2; Dolch 1950: 210). Uuérltkîren,
+found once in Notker's Psalms, has been little discussed. Kelle (1889: 146)
+listed the form with no mark on the second syllable, classing it as an
+adjective in the dative plural and evidently interpreting it as 'greedy for
+worldly things'. Sehrt and Legner (1955: 586) write --, taking the form as
+the dative plural of a masculine noun related to hóuegira; in that case it
+must mean 'buzzards of this world', i. e. 'those greedy for the things of this
+world'. The latter interpretation seems to be correct⁹.
+Girheit 'greed' is thus the only word of the 'desire' group that poses
+problems for my theory. It seems very unlikely that it is related to the
+words in the group containing short vowels, and such a relationship is not
+generally assumed. The short-vowelled words are commonly referred to a
+Proto-Indo-European root *gher- 'desire, be glad', the source of Vedic
+háryati 'accepts gladly', Greek xaipei 'rejoice', etc. (Pokorny 1959 s. v.
+gher-); this is unobjectionable. The etymology of girheit is much less clear.
+Pokorny refers it to a root *ghe- 'yawn', just as he does gir 'vulture' (see
+above); like much else in Pokorny's dictionary, this is doubtful. In any
+case, girheit does seem to be connected with other Germanic words: Go.
+faíhugeiro 'avarice' (Feist 1939: 136-7), Modern Icelandic girugur 'greedy'
+(Sigurðsson 1975: 252, Jóhannesson 1956: 302; not in Cleasby and Vigfus-
+⚫ Unfortunately uuérltkiren occurs not in the text of the Psalms, but in a part
+of the commentary for which there is no Latin parallel. Cf. Sehrt and Legner
+1955: 586, Piper 1883: 243, and Henrici 1878: 172-5.
+
+=== page 011 ===
+
+148
+Donald A. Ringe, Jr.
+1919: 154, spelled gir) 10. All these words support a reconstruction of PG
+son 1957 or de Vries 1961), Nynorsk gir 'desire' (Haugen 1965: 153; Torp
+*gir- 'desire' or the like; OHG girheit thus appears to be a solid counter-
+example to my sound change.
+died in
+However, the connection of girheit with these other words is not beyond
+of considerable doubt. Wilhelm Braune thought he could see an r quite
+question. In the first place, the very existence of Go. faíhugeiro is a matter
+clearly in three of the four manuscript attestations of this word (Streitberg
+1919: 386-7, 429), but Uppström had earlier read g in the same
+position in
+all four instances (Uppström 1864-8: 38, 46, 79, 90 with notes pp. 111,
+115). Von Friesen reported that g, not r, was quite clear in one instance,
+though in at least two others nothing was clear at all (von Friesen 1927:
+19-20). Some indirect support for a reading faíhugeigo is provided by the
+class III weak verb faíhugeigan 'be avaricious', which can only be derived
+from a compound nominal very similar in shape to faíhugeigo; by contrast,
+faíhugeiro, if it exists, has no obvious relatives in Gothic. Under the
+circumstances it seems ill-advised to use faíhugeiro as support for any-
+thing.
+The West Scandinavian words beginning with *gir- definitely do exist,
+though they are unfortunately attested only from modern times, and
+within North Germanic they cause no problems. But it is not clear that
+OHG girheit is related to them; it occurs only in the works of Notker and
+has no demonstrable Old High German kin. Notker is manifestly fond of
+metaphorical buzzards; the word might be a coinage of his own, meaning
+literally 'buzzardliness', i. e. 'rapacity, avarice'. This is no final solution to
+the problem of girheit, but I hope I have succeeded in showing that it is at
+best a weak counterexample to the sound change I have proposed for Old
+High German.
+Other Old High German examples of ir, insofar as they are not in
+obvious loanwords, are the results of late sound changes or scribal errors.
+A late change of ier to ir (Braune 1967: 35) has left us a handful of
+examples; loss of h in wi(h)rouh 'incense' and compounding in hireisara
+'matchmaker' furnish a couple more. Notker's gezirten 'adorned', occurring
+once beside more than twenty examples of this verb with -ver- (Sehrt and
+Legner 1955: 630-1), is clearly the result of a scribal error (so Kelle 1885:
+257 fn. 9). Among dozens of examples of the root zer- (ziar-, etc.), Graff
+found five spelled with -ir- (Graff 1840 col. 701); all but one or two can be
+accounted for by the late change of ier to ir, and the overwhelming
+10 Middle High German gire 'desirous' is not probative, since it can have
+developed dialectally from an earlier *giere, which in turn could be related to the
+Scandinavian forms by the sound law I
+propose.
+
+=== page 012 ===
+
+Germanic '' and *r
+149
+preponderance of forms with ē (ia, etc.) justifies us in considering a couple
+of early forms with i errors or aberrant spellings"
+In sum, there are three well established examples of the sound change
+*ir> er in Old High German; all counterexamples are doubtful, unetymo-
+logizable, or obvious loanwords. It seems reasonable to regard this sound
+change as established for Old High German.
+5. Cases of 2 not covered by the theory
+I have not accounted for examples of 2 not followed by r; however, I
+believe that these constitute far less of a problem than is usually supposed
+(so also Knapp 1974: 210), and a few remarks on the subject may not be
+out of place.
+All the forms in question are West Germanic; the most important are
+OE cen, OHG ken 'torch' and OE lef, OS lef 'weak', since these are the only
+two that occur outside of High German.
+OE cen is a rare word, apparently occurring only as the name of the
+sixth rune in copies of the Old English runic alphabet (Bosworth and Toller
+1898 s. v., no additions in Toller 1921; Kemble 1840: 338-9 with plates
+xv-xvi; Schneider 1956: 11-4). The rune itself occurs in connected non-
+runic text four times in the Old English poetic corpus (Krapp 1932: 54,
+101, 123-4; Krapp and Dobbie 1936: 25, 133), always as part of the runic
+'signature' Cynewulf; in all four instances the rune, like its neighbors,
+probably stands for some full word to be read as part of the text, though
+in none of these instances does a reading cen 'torch' make particularly good
+sense (Krapp 1932: 125, 150-1; Krapp and Dobbie 1936: 254, 287). How-
+ever, the Old English runic poem (Kemble 1840: 340) makes it clear that
+the name of the rune was cēn and that it meant 'torch'. OHG ken (kien,
+etc.) 'torch' is fairly well attested in the glosses (Graff 1838 col. 451) and
+is obviously related to the Old English word. But the further etymological
+connections of this pair are far from clear. Hirt (1931: 33) posits a preform
+*kezn-, which he wishes to relate to Gallo-Romance *cassanus 'oak' (the
+source of French chêne) and Russian sosná 'pine'; but neither of these
+relations is phonologically regular, and there is no other support for *kezn-.
+On the other hand, the generally accepted connection with the family of
+Go. uskeinan 'sprout' (cf. Knapp 1974: 209 and esp. 213-4) is much worse
+semantically, and if we reject it, as I think we should, OE cen and OHG
+"One also finds occasional Middle Low German spellings with e for expected
+; cf. Schiller and Lübben 1878 s. vv. tere, tire 'Art und Weise'; schere, schir
+bald, schnell'. Apparently i was also lowered before r dialectally in Middle Low
+German; I cannot detect any connection with the Old High German developments.
+
+=== page 013 ===
+
+150
+Donald A. Ringe, Jr.
+ken have no connections outside of West Germanic. We must simply accept
+PWG *ken(a?)- as a word of unknown origin 12.
+OS lef 'weak' is at least equally problematic. This word and its com-
+pound lefhed 'weakness' together occur eight times in the Old Saxon
+corpus; in all eight instances the Cotton Manuscript has the words written
+with e, though it tends to exhibit ie for PWG *ē (Sehrt 1966: 329 lists the
+occurring forms) 13. It is thus possible that lef contains a reflex not of e, but
+of PG *ai-in which case it is a reasonable cognate for Lithuanian láibas
+'tender, thin', with which it is often compared (cf. e. g. Knapp 1974: 209),
+but hard to reconcile with OE lef 'weak, sick'. The latter is quite well
+attested, but we do not know the quantity of its vowel (cf. Bosworth and
+Toller 1898 s. v.). If both words do contain reflexes of PWG *ē, we can
+reconstruct a PWG *leba- 'weak' (cf. lebun in Heliand 2224), but further
+connections are again lacking 14.
+The remaining examples of 2 occur only in High German. Three of
+them exhibit a g following the 2: OHG stiega 'ladder' (with its derivative
+stiagil 'step') and chreg 'stubbornness', and Middle High German (MHG)
+wiege 'cradle'; moreover, stiega bears the same phonological relation to
+OHG stīga 'path' that chrēg bears to MLG krich 'strife'. It looks as though
+an ē has developed in these three words within High German under similar
+conditions, whatever those were exactly (although wiege is unusually
+difficult; cf. Jellinek 1891: 299, Knapp 1974: 211-2). The problem is
+obviously internal to High German; there is no reason to treat it in a wider
+context (cf. Knapp 1974: 210-2).
+MHG schief, schiec 'crooked', apparently borrowed from Low German
+(so Kluge 1963 s. v. schief), is the greatest puzzle. Its apparent cognates all
+exhibit reflexes of PG *ai; Knapp notes apparently native forms with ei
+(PG *ai) even in High German (Knapp 1974: 210). It is not at all clear why
+thee of MLG schef (PG *skaif-) should have been borrowed into Middle
+High German as ie, which usually corresponds to MLG (PWG *ē), but
+irregularities in loanwords should not cause excessive concern.
+A final objection remains to be met. Several of the points I have tried
+to make in this article have depended on denying etymological connec-
+tions, some of them fairly widely accepted; one might reasonably ask
+whether this is methodologically sound. The answer will depend on what
+12 The attempt of Schneider (1956: 76-80) to connect these words with ON
+kaun 'abscess' (Schneider 'torch'!) strikes me as extremely speculative, and I
+13 I am grateful to Warren Cowgill for pointing this out and suggesting its
+cannot accept it.
+implications.
+14 Whether all the forms listed and cross-referenced under lef and its com-
+pounds in Bosworth and Toller (1898) and in Toller's Supplement (1921; cf.
+esp. ālēfan, gelēfed) are really related is yet another question.
+
+=== page 014 ===
+
+Germanic '' and *r
+151
+151
+one thinks historical linguists do. If we wish to indulge in the pointless
+antiquarian game of finding a source (any source, no matter how im-
+probable) for every attested word, then it is obviously counterproductive
+to reject one etymology without suggesting an alternative. On the other
+hand, if we are trying to reconstruct earlier stages of languages, we must
+reject, or at least forbear to use, shaky etymologies: why project back into
+a protolanguage something that probably was not part of it? Surely the
+second procedure conforms more closely to the Saussurean principles on
+which all modern linguistics is based. An eagerness to reconstruct is no
+asset.
+6. Conclusion
+The results of this investigation can be summarized as follows. The
+pre-Proto-Germanic word for 'here' was *hi, a direct reflex of the Proto-
+Indo-European instrumental singular * 'with this'. The final *r of PG
+*par 'there' and *hwar 'where' was analogically added to *hi, giving PG
+*hir 'here'. The * of this word was lowered subphonemically to *[e] before
+the following tautosyllabic *r within Proto-Germanic; this lowered allo-
+phone merged with PG */e/ in Gothic but became part of a new */ē/
+phoneme in North and West Germanic (PG */e/ having there become */ā/).
+In Old High German the Proto-Germanic rule lowering * before tautosyl-
+labic *r was generalized to affect all cases of the sequence *ir; apparent
+exceptions are later loans, late developments, or words of unknown or
+doubtful origin. Of the examples of e₂ not accounted for by this theory, one
+is a word of obscure origin found only in Gothic and Old High German, two
+are West Germanic words of obscure origin, and the rest developed within
+High German by processes not well understood.
+It is therefore not necessary to posit a phoneme *2 or a sequence *ei for
+Proto-Germanic.
+Yale University
+New Haven, Connecticut 06520
+U.S. A.
+Donald A. Ringe, Jr.
+
