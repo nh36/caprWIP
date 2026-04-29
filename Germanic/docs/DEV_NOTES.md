@@ -41248,3 +41248,91 @@ i-umlaut.
 * Awaiting user approval before any FST or TSV edit.
 * On approval: implement, rebuild, verify, commit as
   "§17.45 step 3: NWGmcInStemNLoss + retarget fyrhtu → fyrhte".
+
+## §17.45.3d — Widening the proto-gate to true PGmc obl. forms: probe report
+
+§17.45.3c implemented `NWGmcInStemNLoss` and PROTOFORM `*fúrxtīn`,
+which is technically the *post*-PWGmc-apocope shape, not a true
+PGmc surface oblique form. Per the user's "absolutely rock solid"
+criterion, the gate was widened to accept full PGmc inflectional
+tails so the cascade derives `fyrhte` from each true PGmc obl.
+form by regular sound change.
+
+### A. Gate patterns added (line ~428 of germanic.txt)
+
+```foma
+ī:{*ī} n:{*n} a:{*a} z:{*z} |   # gsg. *-īnaz (Goth. -eins)
+ī:{*ī} n:{*n} i:{*i} |          # dsg. *-īni
+ī:{*ī} n:{*n} u:{*u} n:{*n} |   # asg. *-īnun (Kroonen 2011: 37)
+ī:{*ī} n:{*n} i:{*i} z:{*z} |   # npl. *-īniz
+```
+
+### B. Probe results (current cascade, post-widen, before chronology fix)
+
+| Input (PGmc) | Cell | Output | Verdict |
+|---|---|---|---|
+| `*fúrxtīnaz` | gsg. | `fyrhten` | ✗ wrong (kept *-n) |
+| `*fúrxtīni` | dsg. | `fyrhte` | ✓ |
+| `*fúrxtīnun` | asg. | `fyrhtenon` | ✗ wrong |
+| `*fúrxtīniz` | npl. | `fyrhte` | ✓ |
+| `*fúrxtīn` | (post-apocope) | `fyrhte` | ✓ |
+| `*fúrxtī` | (post-n-loss) | `+?` | rejected by gate (no bare *-ī tail) |
+
+### C. Diagnosis of the failures
+
+**Gsg. `*fúrxtīnaz` → `fyrhten`:** The cascade's chronology has
+`NWGmcInStemNLoss` (line 3023) firing *before* `PWGmcFinalBareALoss`
+(line 3078). When n-loss is reached, z-deletion has produced
+`*fúrxtīna` but the *-a is still present, so the *-n is not
+word-final and the rule's `{*ī} _ .#.` context fails. Bare-a-loss
+then strips *-a too late, leaving `*fúrxtīn` → `*fúrxtin` →
+`fyrhten` (i-umlaut + V-shortening + final *-n surviving as -n).
+
+This is a relative-chronology bug in my §17.45.3c rule placement.
+The fix is to move `NWGmcInStemNLoss` to fire *after*
+`PWGmcFinalBareALoss`. This is also the chronologically correct
+order per R/T: §3.1 (PWGmc apocope, including bare-a-loss)
+precedes §3.3.1 (post-PWGmc *-n-after-*ī loss).
+
+**Asg. `*fúrxtīnun` → `fyrhtenon`:** Two problems.
+1. The chronology bug above: same cause — when n-loss fires, the
+   *-un suffix is still present, so *-īn is not word-final.
+2. The PGmc asg. form is more accurately `*-īnų` (nasalized *-u,
+   from earlier *-īnõ ← PIE *-iH-on-m), parallel to the cascade's
+   existing an-stem asg. pattern `o:{*o} n:{*n} ų:{*ų}` for
+   *-onų. Kroonen 2011: 37 writes *-īnun by analogy with the
+   on-stem table, but the morphologically real PGmc shape is
+   *-īnų, which the cascade can already partially handle through
+   the *-onų machinery. With *-īnų encoding, after *-ų reduction
+   the form should reach *-īn, then n-loss, then *-ī → -e.
+
+### D. Proposed fixes (PENDING USER APPROVAL — no edits made)
+
+**Fix 1 — Re-order cascade.** Move `NWGmcInStemNLoss` from line
+3023 (between `NWGmcNStemNLoss` and `NWGmcLongELowering`) to
+immediately after line 3078 (`PWGmcFinalBareALoss`). Same change
+in the second cascade composition (line ~3204). Update the rule's
+docstring comment to reflect the correct chronology
+(post-PWGmc-apocope, per R/T §3.3.1).
+
+**Fix 2 — Asg. tail.** Replace `ī:{*ī} n:{*n} u:{*u} n:{*n}` with
+`ī:{*ī} n:{*n} ų:{*ų}` to encode the PGmc asg. as nasalized *-ų
+(parallel to existing on-stem pattern). This matches Kroonen 2011
+fn. 25 ("the original plural ending *-ōn... it replaced the
+expected outcome *-un from PIE *-n").
+
+### E. Expected behaviour after fixes
+
+| Input | Path | Expected output |
+|---|---|---|
+| `*fúrxtīnaz` | z-loss → *-īna → bare-a-loss → *-īn → n-loss → *-ī → V-short → *-i → umlaut → -e | `fyrhte` |
+| `*fúrxtīni` | i-apocope → *-īn → n-loss → *-ī → ... | `fyrhte` |
+| `*fúrxtīnų` | (nasal-ų reduction) → *-īn → n-loss → *-ī → ... | `fyrhte` |
+| `*fúrxtīniz` | z-loss → *-īni → i-apocope → *-īn → n-loss → ... | `fyrhte` |
+| `*fúrxtīn` | (already post-apocope) → n-loss → *-ī → ... | `fyrhte` |
+
+### F. Status
+
+* Probe: **done** (this dossier).
+* Diagnosis: **done** (chronology bug + asg. tail shape).
+* Awaiting user approval before applying Fix 1 and Fix 2.
