@@ -141,9 +141,9 @@ define pgrmNasalVowel [
 define pgrmLongVowel [
     ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū} | ô:{*ô} |
     # §17.46 stressed long-vowel tier (acute over macron). Currently
-    # only *ī́ is plumbed in; other long vowels (ā́ ḗ ṓ ū́ ǣ́ ȳ́) will
+    # only *īˊ is plumbed in; other long vowels (āˊ ḗ ṓ ūˊ ǣˊ ȳˊ) will
     # follow on a separate branch.
-    {ī́}:{*ī́}
+    {īˊ}:{*īˊ}
 ];
 
 define pgrmDiphthong [
@@ -550,8 +550,8 @@ define PGmcStarVowel [
     {*ʊ} |
     {*ǣ} |
     {*á} | {*é} | {*í} | {*ó} | {*ú} |
-    # §17.46 stressed long-vowel tier — currently only *ī́
-    {*ī́} |
+    # §17.46 stressed long-vowel tier — currently only *īˊ
+    {*īˊ} |
     # Secondary-stress (Nebenton) short vowels — compound second-element
     # root vowels marked with grave per Luick/Brunner/Bülbring convention.
     # See DEV_NOTES §16.6.
@@ -561,7 +561,7 @@ define PGmcStarVowel [
 # §17.11: acute/grave short-vowel helpers for trough-conditioned changes.
 # Acute = primary stress (Hauptton); Grave = secondary stress (Nebenton).
 # See DEV_NOTES §§16.6, 17.11 for the Luick/Brunner/R-T/Fulk background.
-define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}|{*ī́}];
+define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}|{*īˊ}];
 define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
 
 define PGmcStarDiphthong [
@@ -957,7 +957,7 @@ define EnglishStarLongDiphthong [
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ī́}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*īˊ}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
