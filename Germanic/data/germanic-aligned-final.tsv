@@ -1032,7 +1032,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1666	ʃ l aː f ə n	*slēpaną	ʃ l aː f ə n ( - - )	ʃlaːfən	schlafen	457	German					sleep	*slēpaną	235
 1912	s l ɛɪ m	*slīmą	s l ɛɪ m ( - - )	slɛɪm	slijm	524	Dutch					slime	*slīmą	236
 1911	s l aɪ m	*slīmą	s l aɪ m ( - - )	slaɪm	slime	524	English					slime	*slīmą	236
-2197	s l ī m	*slīmą	s l aɪ m ( - - )	slaɪm	slīm	524	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slime	*slīmą	236
+2197	s l ī m	*slḯmą	s l aɪ m ( - - )	slaɪm	slīm	524	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slime	*slḯmą	236
 1910	ʃ l ai m	*slīmą	ʃ l ai m ( - - )	ʃlaim	Schleim	524	German					slime	*slīmą	236
 1815	s m eː r ə	*smérwijaną	s m eː r - - ə - ( - - )	smeːrə	smeren	497	Dutch					smear	*smérwijaną	237
 1814	s m ɪə	*smérwijaną	s m ɪə r - - - - ( - - )	smɪə	smear	497	English					smear	*smérwijaną	237
@@ -1266,7 +1266,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 979	ts ɛ k ə	*tikkô	ts ɛ k ( ə - )	t͡sɛkə	Zecke	269	German					tick	*tikkô	289
 960	t ɛɪ t	*tīdiz	t ɛɪ t ( - - )	tɛɪt	tijd	263	Dutch					tide	*tīdiz	290
 959	t aɪ d	*tīdiz	t aɪ d ( - - )	taɪd	tide	263	English					tide	*tīdiz	290
-2257	t ī d	*tīdiz	t aɪ d ( - - )	taɪd	tīd	263	Old_English	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'				tide	*tīdiz	290
+2257	t ī d	*tḯdiz	t aɪ d ( - - )	taɪd	tīd	263	Old_English	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'				tide	*tḯdiz	290
 958	ts ai t	*tīdiz	ts ai t ( - - )	t͡sait	Zeit	263	German					tide	*tīdiz	290
 814	t ɪ m b ə	*tímrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	English					timber	*tímrą	363
 2258	t i m b e r	*tímbrą	t ɪ m b ə r ( - - )	tɪmbə	timber	223	Old_English	Kroonen *timbra- with *b; OE timber.	Source: Wiktionary etymology (template:der) | Source: Wiktionary etymology (template:der) | TSV fix: proto *timrą → *timbrą.			timber	*tímbrą	363
@@ -1376,7 +1376,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 411	v aː l	*wálaz	v aː l ( - - )	vaːl	Wal	113	German					whale	*wálaz	313
 1787	ʋ ɛɪ l	*xwīlō	ʋ ɛɪ l ( - )	ʋɛɪl	wijl	489	Dutch					while	*xwīlō	314
 1786	ʋ aɪ l	*xwīlō	ʋ aɪ l ( - )	ʋaɪl	while	489	English					while	*xwīlō	314
-2285	h w ī l	*xwīlō	ʋ aɪ l ( - )	ʋaɪl	hwīl	489	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			while	*xwīlō	314
+2285	h w ī l	*xwḯlō	ʋ aɪ l ( - )	ʋaɪl	hwīl	489	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			while	*xwḯlō	314
 1785	v ai l ə	*xwīlō	v ai l ( ə )	vailə	Weile	489	German					while	*xwīlō	314
 689	ʋ aɪ n	*wainōjaną	ʋ aɪ n - - - - - -	ʋaɪn	whine	189	English					whine	*wainōjaną	365
 2286	x w ī n a n	*xwīnaną	ʋ aɪ n - - - ( - - )	ʋaɪn	hwīnan	189	Old_English		Proto corrected: OE hwīnan (str. I) 'to whine, hiss' < PGmc *hwīnăną (Kroonen 2013 s.v. *hwīnan-, PIE *ḱwey- 'to hiss, whistle'). Not cognate with German weinen < PGmc *wainōjan- (→ OE wānian 'to lament'); cognate linkage is spurious.			whine	*xwīnaną	365
