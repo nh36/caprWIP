@@ -40778,3 +40778,257 @@ fix from Step 3 lands cleanly.
   apocope broadening for *spénnilō), pending user approval.
 * Awaiting user green light before touching `germanic.txt` or
   the TSV.
+
+
+## §17.45.3b — Corpus-attestation deep dive: archaic forms of `*furxtīn-` in OE
+
+Following the §17.45.3a TSV restoration of PGmc *fúrxtīn-* (commit
+1e696c3c), the next question is paradigm-cell-aware: does the
+attested OE corpus preserve any case-form of this in-stem feminine
+abstract noun that derives Lautgesetzlich (by regular sound change)
+from *fúrxtīn-, without the analogical -u that produces the
+dictionary lemma fyrhtu?
+
+This dossier surveys the entire attested paradigm in
+Bosworth–Toller (BT), Clark Hall (CH), Brunner (Br), and Campbell
+(Cp) to identify any conservative cell that could serve as the
+FST target.
+
+### A. The expected Lautgesetzlich paradigm
+
+Per Brunner §280 (lines 11556–11583), Campbell §589.7 (line
+15277ff.), and R/T vol. 2 §6.8.3 / pp.380–381, the inherited
+PGmc *in*-stem feminine abstract paradigm yields the following
+**regular phonological outcomes** in Pre-OE → OE for *fúrxtīn-:
+
+```
+              PGmc           PWGmc          OE (regular)   OE (analogical)
+Nom. sg.      *furxtī(n)     *furxti        fyrhte         fyrhtu / fyrhto
+Acc. sg.      *furxtīn(am)   *furxti        fyrhte         fyrhtu / fyrhto
+Gen. sg.      *furxtīniz     *furxtinis     fyrhte         fyrhtu / fyrhto
+Dat. sg.      *furxtīni      *furxtini      fyrhte         fyrhtu / fyrhto
+Nom-Acc. pl.  *furxtīniz     *furxtini      fyrhte         fyrhtu / fyrhto
+Gen. pl.      *furxtīnǭ(n)   *furxtinō      fyrhta         (–)
+Dat. pl.      *furxtīnumiz   *furxtinum     fyrhtum        (–)
+```
+
+(Brunner gives the canonical paradigm of *strengu* in §280:
+N strengu, -o; G/D/A strenge — analogical -u, -o; pl. N/A strenge,
+-a — analogical -u, -o; G strenga; D strengum. The -e in the
+oblique sg. is the regular reflex of PWGmc *-i.)
+
+The crucial observation: the *regular phonological outcome* of
+**every singular case** of *fúrxtīn- is **`fyrhte`** (with i-umlaut
+of *u → y, regular palatalization-relevant before *-i, and final
+-i lowered to -e per Campbell §369). The form `fyrhtu` is
+**morphologically analogical** in the nom.sg., copied from the
+ō-stem nom.sg. ending *-u, then progressively spread through the
+paradigm (Brunner §280: "doch dringt auch in diesen -u, -o ein
+wie bei den Stämmen auf -ipa").
+
+### B. What is actually attested in the corpus?
+
+Searching BT (45000+ lines, vision OCR), CH (~17900 lines), and
+Brunner cross-references for forms of the fear-noun:
+
+#### B.1. The analogical nom.sg. (`fyrhtu`, `fyrhto`)
+
+Overwhelmingly the most common — both in early Mercian (Ps(A))
+and WS. Hogg vol.1 line 16554 records 25 attestations of
+`fyrhto` in his lemma table. R/T pp.380–381 explicitly use
+`fyrhtu` as the example of the analogical-u replacement.
+
+#### B.2. The Lautgesetzlich oblique singular (`fyrhte`)
+
+**Yes — abundantly attested as the OBLIQUE noun**, exactly as
+predicted by the regular paradigm:
+
+* `mid mycelre fyrhte was geslegen` 'was struck with great fear'
+  — Guthlac 88, 18. Dat.sg. with feminine adj. agreement
+  (`mycelre`). [BT line 45481]
+* `Mid fyrhte fornumene` 'seized with fear' — Hml. S. 2, 105 etc.
+  Dat./instr.sg. [BT line 41039]
+* `Hi swyde mid þære fyrhte wæron geslegene` 'they were struck
+  with that fear' — Guthlac 92, 1. Dat.sg. with definite article
+  `þære` (fem.). [BT line 67265]
+* `oppe on fyrhte` 'or in fear' — Ll. Th. i. 378, 22. Dat.sg.
+  [BT line 89003]
+* `mid fyrhte geegsa(n)` 'terrify with fear' — geegsian entry
+  [BT line 52579]
+* `þære fyrhte` Bl. H. 57, 20 (cited in BT s.v. forhtnys at
+  line 40438).
+
+These are unambiguous noun-uses of the in-stem in oblique cases,
+with the regular -e ending preserving the inherited *-i. They are
+the **conservative paradigm cell** the user asked us to find.
+
+#### B.3. The bare-stem nom.sg. (`fyrht` as noun)
+
+**Not attested as a noun.** Clark Hall (line 17870) lists `fyrht`
+under three senses:
+> fyrht  I. afraid, timid. [forht]   II. = freht
+
+Sense I is the adjective (i-umlauted variant of forht "afraid",
+arising from compounds like *godfyrht* 'God-fearing' beside
+*godforht*). Sense II is a homonym = `freht` 'augury, divination'
+(unrelated etymology). Bosworth–Toller (line 45462) confirms:
+"fyrht divination. v. friht" — only the divination homonym.
+
+Campbell §589.7 (line 15309–10) lists nominal in-stems that DO
+have an unsuffixed nom.sg. byform:
+> "From several of these nouns nom. sg. occurs without ending,
+> e.g. **fyll, hǣl, ield, leng**."
+
+Fyrht is **not** in this list. Brunner §280 Anm.1 makes the same
+point: "Der Nom. Akk. Sg. ist manchmal auch endungslos nach den
+langsilbigen i-Stämmen (§ 269) z. B. ws. yld Alter" — yld but not
+fyrht.
+
+The reason `fyrht` failed to develop as a bare-stem noun is
+likely the homonymy clash: bare *fyrht* would collide with both
+the adjective fyrht 'afraid' (already present beside forht) and
+with fyrht/freht 'divination'. So the noun retained an inflected
+or analogical-u form to stay morphologically distinct.
+
+#### B.4. Northumbrian metathesized variants (`fryht-`)
+
+Per Campbell §459.3 (line 11885ff.), late Northumbrian and IW-S
+have sporadic r-metathesis:
+* `fryhto` (= fyrhto with metathesis) — well-attested in N texts
+* `fryhte` (oblique sg., as in BT line 61903: `fryhte gættana
+  decclesiam tuam ab infernorum eruis terrore`)
+* `fryhtnes` (CH 17874)
+* `froht`, `frohto`, `frohtiga` — Northumbrian un-umlauted
+  metathesized variants (BT 28127, 40393, 40398; the verb
+  "frohtian/frohtende/forhtende")
+
+These don't change the analysis but confirm the in-stem paradigm
+across dialects.
+
+#### B.5. Compounds and derivatives confirming `fyrht-` as productive
+
+* `wǣter-fyrhtness` 'fear of water, hydrophobia' — Hogg line 17450
+* `god-fyrht` adj. 'God-fearing' — Goth. *guda-faurhts*, OE
+  godfyrht (Orel line 17151ff.). Note this is the ADJ compound,
+  parallel to godforht.
+* `leas-fyrht` (BT 98047) — derivative, adj./noun.
+* `for-fyrht` (BT 124314 in compound `forht-afongen`) — verb
+  participle.
+* `un-forht` — un-fyrht, with un- prefix.
+
+Derivatives confirm `fyrht-` (or un-mutated `forht-`) is the
+productive root. The inflectional paradigm (§B.1, B.2) confirms
+`fyrhte` (oblique) is the conservative inflected form.
+
+### C. Summary of the attested paradigm
+
+| Cell                | Attested form        | Status            |
+|---------------------|----------------------|-------------------|
+| Nom.sg.             | fyrhtu / fyrhto      | analogical -u     |
+| Acc.sg.             | fyrhte (also fyrhtu) | regular (also analog.)  |
+| Gen.sg.             | fyrhte (also fyrhtu) | regular (also analog.)  |
+| Dat.sg.             | fyrhte (also fyrhtu) | regular (also analog.)  |
+| Nom-Acc.pl.         | (rare; fyrhte/-a)    | regular           |
+| Gen.pl.             | (presumably fyrhta)  | regular (unattested) |
+| Dat.pl.             | fyrhtum (presumed)   | regular           |
+| Bare-stem nom.sg.   | (unattested as noun) | blocked by homonymy |
+
+### D. Decision space (revised, paradigm-cell-aware)
+
+#### D.1. Option α' — Retarget to `fyrhte` (oblique paradigm cell)
+
+* Set TSV row 2034 COUNTERPART/TARGET = **`fyrhte`**.
+* PROTOFORM stays *fúrxtīn-* (in-stem fem. abstract).
+* The FST cascade then needs to derive *fúrxtīn → fyrhte by
+  regular sound change: *furxtīn → *furxti (loss of word-final
+  *-n with shortening of *-īn → *-i; cf. R/T 6.8.3 / pp.345-346)
+  → fyrhti (i-umlaut) → fyrhte (final -i → -e by Campbell §369
+  / OEFinalIToE).
+* Apocope rule's heavy-by-cluster gap can be closed (resolving
+  *spénnilō → spinl) — fyrhte does not lose -e because final
+  short -e from *-i is no longer an apocope target at this stage
+  (only -u, -i are).
+* Justification: this is the conservative inflected cell, attested
+  multiple times in the corpus (Guthlac, Hml. S., Bl. H., Ll. Th.),
+  and it is the regular phonological outcome of every singular
+  case of the in-stem paradigm. It is exactly parallel to how
+  §17.45 chose `spinl` over the dictionary lemma `spinel`.
+
+**Caveat**: `fyrhte` is the OBLIQUE cell, not the dictionary
+nom.sg. headword. Some users may regard the dictionary lemma as
+the "natural" target. But per the user's framing in §17.45 and
+in earlier mismatch-loop discussions, the principle of choosing
+"the paradigm cell that yields by regular sound change" trumps
+"match the dictionary headword."
+
+#### D.2. Option α'' — Retarget to bare `fyrht` (uninflected nom.sg.)
+
+* Set TSV target = `fyrht` (bare stem, parallel to Campbell §589.7's
+  fyll, hǣl, ield, leng byforms).
+* Justification: closest parallel to §17.45's `spinl` (also a
+  bare-stem nom.sg.).
+* **Strong objection**: `fyrht` as a NOUN is not attested. CH and
+  BT list it only as adjective (= forht with i-umlaut) and as the
+  unrelated divination homonym. Choosing this would invent a
+  non-existent surface form.
+* **Reject** in favour of α'.
+
+#### D.3. Option β — Keep `fyrhtu` target, model §353 explicitly
+
+Same as §17.45.3a Option β (DEV_NOTES line ~40670). Preserves
+the dictionary lemma as target but requires substantial FST
+rule-engineering to model Campbell §353 (medial-loss-preferred-
+over-final-loss in trisyllabics) explicitly. With proto now
+*fúrxtīn-* (not *fúrxtiθō*), this option is even harder: the
+proto is disyllabic *fúrxtīn, not trisyllabic, so §353 cannot
+directly apply without first deriving an intermediate trisyllabic
+*fúrxti(n)u (which would itself be analogical, not phonological).
+
+#### D.4. Option γ — Treat as transponent
+
+Add `fyrhtu` as a TSV-level transponent: keep target `fyrhtu`
+but mark the row with a flag (e.g. `MORPHOLOGICAL=true`) so the
+mismatch-report tool considers it a documented exception rather
+than a phonological mismatch. This punts the problem to
+documentation rather than solving it.
+
+### E. Recommendation
+
+**Option α'** (retarget to `fyrhte`):
+
+1. Most philologically defensible — `fyrhte` is the regular
+   phonological outcome of every singular case of *fúrxtīn-,
+   abundantly attested in BT (Guth. 88,18; 92,1; Hml. S.;
+   Bl. H. 57,20; Ll. Th. 378,22; etc.).
+2. Cleanly parallel to §17.45's `spinl` decision (paradigm-cell
+   matching over dictionary-lemma matching).
+3. Makes the §17.45 Step 3 apocope-broadening fix land cleanly
+   (since fyrhte has -e, not -u, no apocope conflict arises).
+4. Cheapest implementation: TSV-only edit on row 2034
+   (counterpart/target field) + FST verification.
+
+### F. Implementation outline (post-approval)
+
+1. Edit TSV row 2034: set COUNTERPART = `fyrhte`, IPA = `fyrxte`,
+   SEGMENTS = `f y r h t e`. Update note.
+2. Apply the §17.45 Step 3 apocope broadening (extend
+   `OEHighVowelApocope` to cover ShortV + 2+C trisyllabics).
+3. Rebuild bins.
+4. Verify:
+   * `*spénnilō → spinl` ✓
+   * `*spinilō → spinl` ✓
+   * `*fúrxtīn → fyrhte` ✓ (no apocope, -e from *-i)
+   * `*wíntruz → winter` ✓ (no regression)
+   * `*buttmaz → botm` ✓ (no regression)
+   * Total mismatches: 13 → ≤ 12.
+5. Update trajectory tables (DEV_NOTES.md ~4619 summary, ~10372
+   detail).
+6. Commit: "TSV §17.45.3b: retarget fyrhtu → fyrhte (oblique
+   paradigm cell, regular phonology) + close OE apocope gap".
+
+### G. Status
+
+* Research: **done** (this dossier).
+* Awaiting user approval of Option α' before implementation.
+* If user prefers β (keep fyrhtu, engineer §353), implementation
+  outline differs substantially — flagged for separate planning.
