@@ -2888,13 +2888,23 @@ define OEDentalAssimilation [
 ];
 
 # R/T §6.8.1: geminate consonants were degeminated next to another consonant.
-# E.g. *buttm- → *botm- (Kroonen: OE botm < *buttma-)
+# General formulation: any geminate CC before a following consonant simplifies
+# to single C. We apply this case-by-case as evidence demands, since over-
+# broad application risks regressing intervocalic geminates that are correctly
+# preserved up to OEFinalGeminateSimplification.
+#   *tt → *t /  _ sonorant   e.g. *buttma- → *butma- → botm   (Kroonen)
+#   *nn → *n /  _ sonorant   e.g. *spinnilō → *spinilō → spinl (R/T §6.8.1;
+#                              cf. Kluge–Seebold s.v. Spindel; DEV_NOTES §17.45)
 # RESTRICTED: Only apply before sonorants (m, n, l, r), NOT before *j (which
 # triggers j-gemination and should preserve the geminate).
 define OESonorant [{*m}|{*n}|{*l}|{*r}];
-define OEPreconsonantalDegemination [
+define OEPreconsonantalDegemTT [
     {*t} -> 0 || {*t} _ OESonorant
 ];
+define OEPreconsonantalDegemNN [
+    {*n} -> 0 || {*n} _ OESonorant
+];
+define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;
 
 # R/T §6.4.2: *w lost after non-initial velars (after palatalization).
 # In *ngw clusters, *g is a stop: *w is lost (*singwan → singan).

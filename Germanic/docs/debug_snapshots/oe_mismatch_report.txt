@@ -48,7 +48,7 @@ long_vowel_missing (1):
   >> ACTION: Check if proto should have long vowel; check lengthening rules
 
 final_vowel_extra (1):
-  *spénnilō -> spinnlu (expected spinl)
+  *spénnilō -> spinlu (expected spinl)
   >> ISSUE: FST has final vowel, target is vowelless
   >> LIKELY: Apocope not applied, or TSV target is reduced form
   >> ACTION: Check apocope rules; may be morphology mismatch
