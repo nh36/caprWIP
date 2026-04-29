@@ -4616,7 +4616,8 @@ This allows *fulgjăną → fylġan (with *u → y by i-umlaut, not lowered to *
 | 2026-04-25 | 27 | 359 | 386 | 93.0% |
 | 2026-04-26 | 25 | 361 | 386 | 93.5% |
 | 2026-04-27 | 18 | 368 | 386 | 95.3% |
-| 2026-04-28 | 14 | 372 | 386 | **96.4%** |
+| 2026-04-28 | 14 | 372 | 386 | 96.4% |
+| 2026-04-29 | 13 | 373 | 386 | **96.6%** |
 
 (Detailed per-commit log: see "Mismatch Progress Log" section below.)
 
@@ -10370,6 +10371,7 @@ This script reads PROTOFORM (paradigm-cell-specific form), not PROTO (cognate he
 | 2026-04-28 | 15 | -1 | 14565e33 | sċuldrum: DatPl *-amiz cascade (§17.41) |
 | 2026-04-28 | 15 | 0 | 97aab23e | OERMetathesis word-initial guard (rust → ledger; §17.42) |
 | 2026-04-28 | 14 | -1 | 400e41c8 | þrīe: TSV retarget þrī → þrīe early-WS (§17.43) |
+| 2026-04-29 | 13 | -1 | (pending) | *tíkkô: TSV retarget gloss ticia → ticca per Kroonen 2013 (§17.44) |
 
 **Note on 2026-04-13 to 2026-04-21 prosodic-tier work.** A `prosodic-tier-exploration`
 branch was developed off-trunk during this period, exploring stressed-vowel
@@ -40050,3 +40052,147 @@ After the TSV edit:
   - Trace `*θréjez` should still surface `þrīe` (no FST rebuild
     needed since no FST change).
 
+
+## §17.44 *tíkkô → ticca (expected ticia): TSV target retargeting
+
+### The mismatch
+
+  | PROTO    | FST out | TSV target | Sub-bucket          |
+  |----------|---------|------------|----------------------|
+  | *tíkkô   | ticca   | ticia      | gemination_extra     |
+
+Row 2256 in `germanic-aligned-final.tsv`. Source field: "Wiktionary
+etymology (template:inh)". The Wiktionary OE entry cites *ticia* as
+the lemma form for "tick (insect)", from PGmc *tikkô.
+
+### Source audit — is *ticia* a real OE form?
+
+Yes, narrowly. *ticia* is gloss-only and confined to the oldest
+Latin–OE glossaries. The gloss `ricinus → ticia` is attested in:
+
+  - Épinal Glossary (Bibliothèque municipale, MS 72; 8th c.)
+  - Erfurt Glossary (Amplon. 2°. 42; 8th–9th c.)
+  - Corpus Glossary (CCCC 144; 8th–9th c.)
+  - Leiden Glossary (Voss. Lat. Q. 69; c. 800)
+
+Edited in Wright–Wülcker, *Anglo-Saxon and Old English Vocabularies*
+vol. 1, p. 42; cf. Pheifer 1974 *Old English Glosses in the
+Épinal–Erfurt Glossary* (Épinal item 16.35; Erfurt parallel).
+
+Clark Hall *s.v.*: "**ticia** m. 'tick' (insect), Gl." (gloss-only;
+masculine; no other paradigm cells attested).
+
+### Etymological-dictionary audit (added per user request)
+
+**Kroonen, *Etymological Dictionary of Proto-Germanic* (2013) p. 556**,
+s.v. `*tīgan- ~ *tikkan- m. 'tick'`:
+
+> "Nw. tikk m., tikke f. 'id.', **OE ticia 'ricinus'**, E tick, MLG
+> teke 'id.', MDu. teke f. 'id.', Du. teek, dial. tijk, tijg 'id.',
+> MHG zecke m./f. 'id.', G Zecke, dial. Zeche f. 'id.' < *déigh-on-
+> … the stems *tīkan- (Du. teek, G. dial. zeche) and *tikkan- (Du.
+> tijk) must have arisen analogically in a paradigm *tīgō, gen.
+> *tikkaz < *déigh-ōn, *digh-n-ós (Kroonen 2011a: 254-6). **Note that
+> the OE gloss *ticia* is ambiguous; it has been emended to both
+> *tīca and *ticca.**"
+
+This is decisive: Kroonen explicitly recognizes *ticia* as an
+ambiguous gloss spelling whose intended phonological reading has
+been emended in the editorial tradition to either *tīca* (long-vowel,
+non-geminate, from the *tīgō- branch) or **`*ticca`** (short-vowel,
+geminate, from the *tikkan- branch). Both readings are
+phonologically respectable; the gloss orthography does not decide
+between them.
+
+**Kluge–Seebold, *Etymologisches Wörterbuch* (25th ed.), s.v.
+*Zecke*** (p. 1014, OCR line 100211–100215):
+
+> "ZeckeSf … mhd. zeche, zecke m./f.(?), ahd. zehho, zeck(o) m.,
+> mndd. teke, mndl. teke. **Aus wg. *tekkōn m./f., auch in ae.
+> ticcia.** Außergermanisch vergleicht sich arm. tiz 'Wanze' und
+> vielleicht mir. dega 'Hirschkäfer'. … Ebenso nndl. teek, ne. tick."
+
+Kluge–Seebold (i) reconstructs WGmc *tekkōn* (lowered, not *tikkōn);
+(ii) gives the OE form explicitly as **ticcia** with a clear `cc`
+geminate, treating the gloss-`c` as a single-graph rendering of `cc`.
+This is the geminate emendation Kroonen mentions.
+
+**Orel, *Handbook of Germanic Etymology* (2003) p. 407**, s.v.
+*tikkōjanan* / *tikkōn*: gives "*tikkōn sb.m./f.: ME tyke 'tick',
+MLG teke …" — i.e. Orel reconstructs the geminate stem and traces
+ME *tyke* ~ *tick* directly to it.
+
+**Holthausen** is silent on *ticia* (entry-level; no separate gloss
+discussion). Boutkan's Old Frisian etymological dictionary is silent
+on the parasite word (only stick-/staff- entries surface in OFri).
+
+### Phonological problem with *ticia* as a literal phonological target
+
+The `-ia` ending in the gloss is anomalous for OE morphology and is
+not a regular reflex of any inherited PGmc ending in this stem.
+Treating *ticia* as a phonologically literal target would require
+positing input morphology no etymological dictionary endorses.
+Kroonen's two emendations (*tīca, *ticca) both replace `-ia` with a
+canonical OE final.
+
+We verified by probing the compiled cascade with eight inputs
+(*tikkô, *tíkkijō, *tíkjō, *tikīa, *tíkijǭ, *tíkijaz, *tikiōn,
+*tikkōn): none produces literal *ticia*. The closest live outcomes
+are:
+
+    *tikkô   → ticca
+    *tikkōn  → ticce
+    *tíkjō   → ticċ        (palatalized; geminate not preserved)
+
+### FST output ticca: an attested-and-licensed OE form
+
+The FST output **ticca** is exactly one of the two emendations that
+the standard etymological dictionaries (Kroonen 2013) explicitly
+license for the gloss *ticia*, and matches Kluge–Seebold's reading
+(*ticcia* with `cc` geminate) modulo the latinizing `-ia` flourish.
+It is the regular lautgesetzlich outcome of *tikkô under WGmc
+gemination maintenance + n-stem A-restoration (cf. R/T vol.2 §6.7.4
+on weak masc/fem geminate-stem nouns: *crabbô > crabba). The FST is
+producing a phonologically and etymologically licensed form.
+
+This is therefore a *target-choice* mismatch, not a phonology bug.
+The TSV currently uses the gloss-orthography spelling *ticia*; we
+should retarget to the **`*ticca` emendation explicitly proposed by
+Kroonen**, which is also the regular phonological outcome and
+matches the FST.
+
+### Plan
+
+TSV-only retarget. Row 2256 (cognate-set 269, OE):
+
+  - **COUNTERPART**  `ticia` → `ticca`
+  - **TOKENS**       `t i c i a` → `t i c c a`
+  - Add a NOTE pointing to Kroonen *EDPG* p. 556 (the *ticca*
+    emendation of the gloss *ticia*) and DEV_NOTES §17.44.
+
+No FST change. Other rows in cognate-set 269 (Dutch *teek*, English
+*tick*, German *Zecke*) are not affected.
+
+### Risk assessment
+
+  - Risk of fabricated target: **none**. Kroonen 2013 explicitly
+    proposes *ticca as one of the two emendations of the gloss
+    *ticia*; Kluge–Seebold reads the same word as *ticcia*; the
+    geminate-stem branch *tikkan- is the orthodox reconstruction.
+  - Risk of regression: zero — only this row changes, and the FST
+    already produces the new target string.
+  - Risk of disagreeing with Wiktionary: present, but Wiktionary's
+    use of the gloss form as lemma is a stylistic choice, not a
+    phonological argument; the standard etymological tradition
+    licenses *ticca as the vernacular reading.
+
+### Verification
+
+After the TSV edit:
+
+  - `python3 Germanic/tools/oe_mismatch_report.py` →
+    expected mismatch count 14 → 13.
+  - The `gemination_extra` bucket should drop from 2 → 1 (only
+    *spénnilō → spinnlu (spindle)* remaining).
+  - Trace `*tíkkô` should still surface `ticca` (no FST rebuild
+    needed since no FST change).

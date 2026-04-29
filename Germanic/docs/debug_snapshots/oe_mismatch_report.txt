@@ -1,10 +1,10 @@
-Total mismatches: 14
+Total mismatches: 13
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
   Phonology (core buckets):    1
-  Phonology (other buckets):   5
+  Phonology (other buckets):   4
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
@@ -21,7 +21,7 @@ Total mismatches: 14
 
 === OTHER SUB-BUCKETS ===
   front_expected_back_out: 1
-  gemination_extra: 2
+  gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_other: 1
   breaking_extra__eo_for_high: 1
@@ -50,9 +50,8 @@ long_vowel_missing (1):
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
 
-gemination_extra (2):
+gemination_extra (1):
   *spénnilō -> spinnlu (expected spindle)
-  *tíkkô -> ticca (expected ticia)
   >> ISSUE: FST geminated where target has single consonant
   >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
   >> ACTION: Research actual OE form; may be borrowing or irregular
