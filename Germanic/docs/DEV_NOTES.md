@@ -40573,3 +40573,208 @@ This will be investigated in a separate sub-loop §17.45.3a; for now
 Step 3 is **paused at baseline** with the apocope rule unmodified.
 The §17.45 row remains in the mismatch report.
 
+
+
+## §17.45.3a — Deep philological dive on `*fúrxtiθō → fyrhtu`
+
+The first-attempt fix for §17.45 Step 3 (broadening trisyllabic
+apocope to cover ShortV + 2+C clusters) regressed `*fúrxtiθō →
+fyrhtu` to `fyrht`. This dossier digs into the primary sources to
+decide whether the regression is a phonological problem to be
+worked around, or a sign that the proto in our TSV row is
+philologically misframed.
+
+### A. What the sources actually say about OE `fyrhtu`
+
+#### A.1. Orel — `*furxtīn-`, NOT `*furxtiθō-`
+
+Orel 2003: 120, *Handbook of Germanic Etymology* (entry quoted
+from `docs/references/orel_handbook_germanic_etymology.vision.txt`
+lines 14554–14556):
+
+> `*furxtīn` sb.f.: Goth faurhtei 'fright, fear', OE fyrhtu id.
+> Cf. also OHG forahta id. Derived from *furxtaz.
+
+Orel reconstructs the noun unambiguously as a PGmc *-īn-* feminine
+abstract (the *managei*-class), not as a *-iþō-* abstract. The
+cognate Goth. *faurhtei* (n.s.) and oblique *faurhtein-* show this
+directly: an *in*-stem (PGmc *-īn-*, gen. *-īniz*).
+
+#### A.2. Ringe & Taylor (R/T) vol. 2 §6.8.3 / pp. 380–381
+
+R/T treat OE `fyrhtu` explicitly as an *in*-stem whose nom.sg.
+ending **-u is analogical, not phonological** (lines 21540–21583):
+
+> The ending of all those forms became *-i (see 6.8.3) > -e by
+> regular sound changes. But at some point after i-umlaut had
+> occurred (Hogg and Fulk 2011: 54-5) native learners began to
+> replace *-i in the nom. sg. by *-u, the fem. ō-stem nom. sg.
+> ending. Once the variation *-i ~ *-u had become entrenched in
+> the nom. sg., it spread to the rest of the sg. and the nom.-acc.
+> pl. … In the early Mercian of Ps(A) the change has almost gone
+> to completion. For instance, we find … **fyrhtu 'fear'**, hetu
+> 'heat', strengu 'strength', etc.
+
+And the diagnostic anti-claim a page later (line 21582):
+
+> This distribution of endings strongly suggests that the *in-stems
+> do not owe their ending -u to the *iþō-stems (as is often
+> asserted); the reverse is much more likely.
+
+So per R/T:
+
+* `fyrhtu` is *not* a *-iþō noun. Its ending is morphological
+  (analogical -u replacing original *-i in the nom.sg.), not the
+  phonological retention of an inherited *-u after §353 medial
+  syncope.
+* The regular phonological outcome of PGmc *furxtīn-* in nom.sg.
+  is *fyrhti* > **fyrht** (final -i lost by §345 after the heavy
+  first syllable). The dictionary lemma `fyrhtu` is a later
+  morphological reformation.
+
+#### A.3. Campbell §589.7
+
+Campbell §589.7 (lines 15277–15310) confirms the in-stem analysis
+and the analogical-u path:
+
+> In OE fem. abstract nouns of the in-declension (cf. Gothic
+> managei multitude, acc. managein) would normally have -e <ī
+> < in (§ 473) in the acc., gen., and dat. sg. and in the nom.
+> and acc. pl. **But their declension was early associated with
+> that of nouns in -iþō, so that their nom. sg. received the
+> ending -u (-o)**, and this was often extended to the whole sg.
+> (so already VP), and to the nom. and acc. pl. Examples are
+> bieldu boldness, brǣdu breadth, … **fyllu fullness**, hǣlu
+> health, hǣtu heat, hyldu homage, ieldu age, lengu length,
+> menigu multitude, ofermédu pride, snyttru wisdom, **strengu
+> strength**, þéostru darkness …
+
+`fyrhtu` is implicitly in this class (cf. Goth. *faurhtei* exactly
+as the type-example *managei*).
+
+#### A.4. Campbell §459.3 — the metathesized variant `fryhto`
+
+Campbell §459.3 (line 11885ff): the variant `fryhto`, `frohtiga`,
+`froht` with r-metathesis is a *late Northumbrian / late WS*
+sporadic development. Standard OE has un-metathesized `fyrhtu` /
+`forht`. Our TSV target `fyrhtu` is therefore the standard,
+non-metathesized form, which is correct.
+
+#### A.5. Hogg vol. 2
+
+Hogg's lemma table (line 16554 of `hogg_vol1.txt`, the unified
+file) records `fyrhto 25` attestations alongside `oga 37`,
+`broga 2`, `egesa 2`, `ege 71`, `gryre 1` as words for "terror,
+fright". `fyrhto` (= early WS) and `fyrhtu` (= late WS / Mercian)
+are the two attested spellings of the in-stem nom.sg.
+
+### B. Diagnosis
+
+The TSV row 2034 currently reconstructs the proto as **`*fúrxtiθō`
+(a *-iþō* abstract)**. Per §A above, that is **philologically
+incorrect**: the cognate evidence (Goth. *faurhtei*, OHG *forahta*)
+and Orel/R/T/Campbell all converge on **PGmc *furxtīn-* (in-stem)**.
+
+The TSV note on row 2034 already concedes that this was a "TSV
+fix": *fúrxtīn* was rewritten to *fúrxtiθō* to make the cascade
+produce `fyrhtu`. That worked because the pre-§17.45 cascade had
+no apocope clause for ShortV + 2+C trisyllabic structures, so
+the medial-syncope rule fired before any apocope, leaving final
+`-u` intact — accidentally reproducing Campbell §353 (medial loss
+preferred over final loss when both are in conditions for loss).
+
+The §17.45 Step 3 first attempt closed that gap (added the
+ShortV + 2+C clause to apocope) so that `*spénnilō → spinl`
+would derive correctly — and that exposed the *fúrxtiθō hack:
+with apocope now firing on the heavy-by-cluster trisyllabic, -u
+was lost before medial syncope could apply, giving `fyrht`.
+
+### C. The decision space (revised, paradigm-cell aware)
+
+Following the pattern of §17.45 itself (option B, the "honest"
+phonology: take the regular phonological cell as the target, and
+treat lemma-form re-formations as outside the FST), the options
+are:
+
+#### C.1. Option α — TSV fix: retarget to `fyrht`, proto `*furxtīn`
+
+* Change row 2034 PROTOFORM/PROTO from `*fúrxtiθō` to `*fúrxtīn`
+  (in-stem, philologically correct per Orel, R/T, Campbell).
+* Change COUNTERPART/TARGET from `fyrhtu` to `fyrht` (the
+  regularly-derived nom.sg. of an in-stem, i.e. the conservative
+  phonological cell — exactly parallel to §17.45's `spinl`).
+* Document `fyrhtu` as a morphological re-formation outside the
+  scope of the FST (R/T pp.380–381 explicitly characterise it as
+  analogical replacement of *-i by *-u).
+* Then close the apocope gap as proposed in §17.45 Step 3 (add
+  ShortV + 2+C trisyllabic clause), with no regression.
+
+This is the most philologically defensible option and matches
+the user's preference (§17.45 step decisions) for "honest"
+phonological targets over lemma-form transponents.
+
+#### C.2. Option β — Keep `fyrhtu` as target, model §353 explicitly
+
+* Keep TSV row 2034 as-is (or reinstate `*fúrxtīn` proto with
+  `fyrhtu` target, treating the -u as a transponent for the
+  analogical morphology).
+* In the FST, model Campbell §353 explicitly: when a trisyllabic
+  form has BOTH medial AND final high vowels eligible for loss,
+  delete the medial preferentially and **block** the final
+  apocope. Then it doesn't matter whether the apocope rule's
+  context broadens; §353 protects -u.
+* Additionally close the apocope gap for the *spénnilō case so
+  that disyllabic apocope fires *after* medial syncope and
+  preconsonantal degemination collapse the trisyllabic
+  *spennilu into disyllabic *spenlu / *spinlu.
+
+This requires more rule-engineering (an explicit §353 clause)
+and re-orders cascade timing, but keeps the dictionary lemma
+`fyrhtu` as the FST target.
+
+#### C.3. Option γ — Surgical: sonorant-geminate-only apocope
+
+(My original first-attempt fix proposal, before research.) Add a
+new apocope clause that fires **only** on ShortV + sonorant-
+geminate + ShortV + C+ + _ + #, leaving heterorganic clusters
+alone. This is phonologically ad hoc (no source supports a
+sonorant-geminate / heterorganic split conditioning apocope) and
+should be rejected in favour of α or β.
+
+### D. Recommendation
+
+**Option α**, on the same logic as §17.45 itself: the
+philologically honest reconstruction is *furxtīn-, the regular
+phonological outcome is `fyrht`, and `fyrhtu` is a morphological
+re-formation that the FST is not in the business of generating.
+
+This is *also* the cheapest implementation: a TSV-only edit on
+row 2034 (proto + target + note), then the apocope-broadening
+fix from Step 3 lands cleanly.
+
+### E. Citations
+
+* Orel 2003: 120, s.v. *furxtīn-, *furxtaz, *furxtjanan; *guda-
+  furxtaz (line 17151).
+* Ringe & Taylor 2014, *Linguistic History of English* vol. 2,
+  pp. 380–381 (§6.8.3); also p. 345 on *spinnilu apocope route.
+* Campbell 1959, *OE Grammar* §§345 (final -u/-i loss), 353
+  (medial-vs-final loss in trisyllabic), 459.3 (r-metathesis
+  fryhto/froht), 588 (giefu vs. lar declensions), 589.5 (spinel
+  type, "trisyllabic nouns reject -u in nom.sg."), 589.6 (-iþō
+  abstracts retain -u phonologically), 589.7 (in-stems get -u
+  by analogy with -iþō stems; explicit list including bieldu,
+  hǣlu, hǣtu, ieldu, strengu, etc.).
+* Hogg 1992, *Grammar of Old English* vol. 1, lemma table at
+  line 16554 (`fyrhto 25`).
+* Kluge & Seebold s.v. *Furcht* (German *Furcht* < OHG *forhta*
+  < PGmc *furxtō-* fem., variant ō-stem reformation; cf. Orel's
+  note that OHG *forahta* is also an *in*-stem).
+
+### F. Status
+
+* Research: **done** (this dossier).
+* Proposed implementation: Option α (TSV-only edit on row 2034 +
+  apocope broadening for *spénnilō), pending user approval.
+* Awaiting user green light before touching `germanic.txt` or
+  the TSV.
