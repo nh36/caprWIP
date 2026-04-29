@@ -101,6 +101,17 @@ ADDED IN BATCH 2 (Google Vision OCR, 2026-04-29 morning):
     *i > *e list, but directly relevant to early-Northumbrian phonology
     and our archaic-3sg / Anglian-relic discussions (cf. §17 dossiers).
 
+ADDED IN BATCH 3 (Google Vision OCR, 2026-04-29 mid-morning):
+
+16. Rice, Keren. 1994. "Peripheral in Consonants." Canadian Journal of
+    Linguistics / Revue canadienne de linguistique 39(3): 191–216.
+    doi:10.1017/S000841310001522X.
+    File: docs/references/rice_1994_peripheral_in_consonants.{pdf,vision.txt}
+    Use: feature-geometry account of peripherality (labial + dorsal vs.
+    coronal); cited in Howell & Salmons 1997 framework for blocking of
+    *i > *e by following peripheral consonants. Theoretical underpinning
+    for our place-feature-based blocking analysis.
+
 
 REFERENCES STILL OUTSTANDING:
 -----------------------------
@@ -120,6 +131,7 @@ C. Polomé, Edgar C. 1988. "Are There Traces of Laryngeals in Germanic?"
 E. Rice, Keren. 1994. "Peripheral in Consonants." Canadian Journal of
    Linguistics / Revue canadienne de linguistique 39(3): 191–216.
    doi:10.1017/S000841310001522X.
+   ✅ INTEGRATED in batch 3 (2026-04-29).
 
 F. Krahe, Hans & Wolfgang Meid. 1969. Germanische Sprachwissenschaft.
    3 vols. 7th ed. Berlin: de Gruyter. (Vol. I §36.)
@@ -150,10 +162,11 @@ SCORECARD
   Added in batch 1 (early 2026-04-29): 4   (Hirt, Gutenbrunner, Kock, Ringe-1984)
   Added in batch 2 (later 2026-04-29): 3   (Kylstra-1983, Polomé-1994 NOWELE 23,
                                             Cædmon's Hymn ms — bonus)
+  Added in batch 3 (mid-AM 2026-04-29):1   (Rice-1994)
   ----------------------------------------
-  Total integrated:                   15
-  Still outstanding:                   7  (of which Cædmon's Hymn was a bonus,
-                                            so 6 from the original list remain)
+  Total integrated:                   16
+  Still outstanding:                   6  (of which Cædmon's Hymn was a bonus,
+                                            so 5 from the original list remain)
 
 
 QUESTIONS TO INVESTIGATE (carry-over):

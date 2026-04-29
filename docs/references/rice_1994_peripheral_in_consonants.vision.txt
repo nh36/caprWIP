@@ -1,0 +1,1368 @@
+=== page 001 ===
+
+Canadian Journal of Linguistics/Revue canadienne de linguistique 39(3):191–216 Sept./sep. 1994
+Peripheral in Consonants
+KEREN RICE
+University of Toronto
+In recent work in feature geometry, the internal structure of the Place node
+has been the subject of attention. In the earliest work, the place features
+[anterior], [coronal], [high], [low], [back], and [round] proposed by Chomsky
+and Halle (1968) were arrayed under the Place node (Clements 1985). In
+later work it was argued that such an arrangement did not capture the
+classes required for operations involving place of articulation, and it was
+proposed that unary articulator features Labial, Coronal, and Dorsal be
+used, with [anterior], [high], [low], [back], and [round] being dependents
+of these major articulators (Sagey 1986; McCarthy 1988). This structure,
+which I will call the "flat structure", is diagrammed in (1).
+(1) Flat structure:
+Place
+Labial Coronal Dorsal
+In this paper¹ I would like to pursue an alternative proposal for the
+structure of the Place node, a proposal suggested by but not developed
+in Avery and Rice (1989), based on earlier work by Jakobson, Fant, and
+Halle (1952) and Hyman (1973); see also Collinder (1965) and Lass (1976).
+In particular, I argue that the Place node does not have the flat structure
+proposed in (1), but rather is hierarchically organized, with labials and
+dorsals grouped together as a subconstituent of Place, as in (2). I will call
+this structure the hierarchical or Peripheral structure.
+¹I am very grateful to the three anonymous reviewers for comments which
+have greatly improved the paper. Funding for this research was provided by
+Canada Council Killam Award 7000-92-0105 and Social Sciences and Humanities
+Research Council of Canada grant 410-92-0885.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 002 ===
+
+192
+(2) Peripheral structure:
+CJL/RCL 39(3), 1994
+Place
+Peripheral
+(Coronal)
+Dorsal
+(Labial)
+In (2), parentheses indicate unmarked features. The major places of artic-
+ulation are represented as in (3):
+(3) coronal
+Place
+labial
+dorsal
+Place
+Place
+Peripheral Peripheral
+Dorsal
+In this paper, I will concentrate on the need for a Peripheral con-
+stituent, being more concerned with evidence for Peripheral as a constituent
+organizing Labial and Dorsal than with markedness relationships within the
+constituent. The major focus of this paper is thus that features marking
+place of articulation do not occur in a flat structure, but rather exhibit an
+internal hierarchical organization.
+The paper is organized as follows. In Section 1, I set out assumptions
+and compare predictions made by the flat and hierarchical structures, look-
+ing specifically at predictions for possible assimilation processes and shifts
+of place of articulation under each hypothesis. The predictions are tested
+in Section 2, where it is shown that the flat structure hypothesis does not
+predict the actually occurring assimilations and shifts while the Peripheral
+structure hypothesis makes correct predictions. In Section 3, I consider
+an alternative structure proposed by Clements and Hume (1994). This
+proposal shares with the hierarchical structure the claim that the struc-
+ture beneath Place is not flat; it differs from the Peripheral structure in
+the constituency that is advanced: under their proposal the tongue body
+features Coronal and Dorsal form a Lingual constituent, as in (4):
+(4) Lingual structure:
+Place
+Labial
+Lingual
+Coronal
+Dorsal
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 003 ===
+
+KEREN RICE
+193
+1. Background
+A common argument for features being organized into constituents is that
+constituency accounts for why certain features pattern together to the ex-
+clusion of others; this observation forms the basis for Clements' (1985)
+original claim that segments have an internal hierarchical representation.
+The flat structure in (1) and the Peripheral structure in (2) make different
+predictions as to the relationship of the articulators, and these are discussed
+in this section.
+1.1. Assumptions
+Representations of the major places of articulation under each structure
+are shown in (5):
+(5)
+coronal
+labial
+dorsal
+Flat structure
+Place
+Place
+Place
+Labial
+Dorsal
+Peripheral structure Place
+Place
+Place
+Peripheral Peripheral
+Dorsal
+Several assumptions underlie these representations. The first set of as-
+sumptions concerns specification and markedness relationships. I assume
+under both structures the general absence of the feature Coronal (see the
+papers in Paradis and Prunet 1991, for example, for discussion and ref-
+erences). Under the Peripheral structure, I further assume the absence of
+the feature Labial under Peripheral (see Avery and Rice 1989; Section 2.1).
+These are unmarked features at their nodes (Place for Coronal, Peripheral
+for Labial); their relative lack of markedness is captured by their absence
+at the relevant node. Markedness relations are thus reflected directly in
+the segment structure. A corollary to this assumption is that default spec-
+ification is highly constrained: in (5) only Coronal is available as a default
+feature at Place and only Labial at Peripheral (see Avery and Rice 1989;
+Paradis and Prunet 1994, for discussion).
+The second set of assumptions concerns the nature of assimilation rules.
+I will assume under both hypotheses that assimilation rules are subject to
+the following conditions (see Mascaró 1987; Avery and Rice 1989; Cho and
+Inkelas 1993, for discussion):
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 004 ===
+
+194
+(6) Conditions on spreading:
+CJL/RCL 39(3), 1994
+a. A feature can spread only to an empty position.
+b. Spreading can occur only if a structural target is present.
+These conditions disallow structure changing assimilations and node gen-
+eration.
+To illustrate, the conditions allow for the spreading of Y to X in the
+structure in (7a) but not in those in (7b) and (7c):
+(7) a. spreading conditions met:
+X X
+b. target is not empty; spreading of Y to X not allowed by (6a):
+✗
+✗
+Z
+Y
+c. no target present; spreading of Y to X not allowed by (6b):
+✗ ✗
+Z
+Y
+In (7a), Y can spread to X since X has no structure below it and X is an
+immediate superordinate of Y. In (7b), Y fails to spread to X because X is
+not empty: it dominates Z. In (7c), Y also fails to spread to X, this time
+because Y is a dependent of Z, and in order for Y to spread, a node Z
+would have to be generated.
+1.2. Predictions
+1.2.1.
+Assimilation
+I now consider the predictions for assimilation, beginning with the flat.
+structure. Under this structure, coronals will assimilate to labials and
+dorsals since the conditions for spreading in (6) are met. No other assimi-
+lations will be found, since the conditions on empty targets will be violated.
+These predictions are summarized in (8), where I illustrate assimilations
+with coronal and labial targets; dorsal targets, like labial targets, are not
+possible:
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 005 ===
+
+KEREN RICE
+(8) Possible assimilations Flat structure:
+-
+coronal target
+labial trigger
+dorsal trigger
+Place Place Place Place
+Labial
+Dorsal
+labial target
+dorsal trigger
+coronal trigger
+Place Place Place Place
+Labial Dorsal Labial
+195
+Summary: Coronals assimilate to labials and to dorsals.
+The asymmetry between labials and dorsals under the Peripheral struc-
+ture predicts an additional kind of assimilation: not only can coronals
+assimilate to labials and dorsals by the spreading of Peripheral, but labi-
+als are also able to assimilate to dorsals by the spreading of Dorsal alone.
+Spreading to a dorsal target is not possible since dorsal consonants have
+the most structure. These predictions are illustrated in the table in (9):
+(9) Possible assimilations - Peripheral structure:
+coronal target
+labial trigger
+labial target
+dorsal trigger
+dorsal trigger
+coronal trigger
+Place
+Place
+Place
+Place Place
+Place Place Place
+J
+Peripheral
+Peripheral Peripheral Peripheral Peripheral
+Dorsal
+Dorsal
+Summary: Coronals assimilate to labials and to dorsals;
+labials assimilate to dorsals.
+1.2.2. Shifts in place of articulation
+The two hypotheses also make different predictions concerning shifts in
+place of articulation, or delinkings. First consider the flat structure. Labial
+could delink on its own, creating a coronal; Dorsal could delink on its own;
+or both Labial and Dorsal could delink. Thus, it is possible for a labial
+alone to neutralize to a coronal, for a dorsal alone to so neutralize, and for
+both labials and dorsals to become coronals. The Peripheral hypothesis, on
+the other hand, does not allow a labial alone or a dorsal alone to neutralize
+to a coronal; if one does, both must. This is because both have a Peripheral
+node, so that delinking of this node results in labials and dorsals patterning
+as a class. On the other hand, this hypothesis does allow for a dorsal to
+shift to a labial through the delinking of Dorsal. The predictions of these
+two hypotheses are compared in the table in (10). I use the symbols "pt k"
+to represent a prototypical labial, coronal, and dorsal, respectively:
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 006 ===
+
+196
+CJL/RCL 39(3), 1994
+(10) Possible shifts of places of articulation:
+Flat
+segment representations
+structure
+coronal
+labial
+dorsal
+Place
+Place
+Place
+Labial
+Dorsal
+process
+result
+summary
+1. Delink Labialt k
+2. Delink Dorsalt p
+3. Delink Labial t
+and Dorsal
+labials and coronals merge,
+dorsals distinct
+dorsals and coronals merge,
+labials distinct
+labials, dorsals, and coronals
+merge
+Peripheral
+segment representations
+structure coronal
+labial
+dorsal
+Place
+Place
+Place
+Peripheral Peripheral
+Dorsal
+process
+result summary
+1. Delink Dorsal
+tp
+labials and dorsals merge,
+coronals distinct
+2. Delink Peripheral t
+labials, dorsals, and coronals
+merge
+In the following section I present evidence for deciding between these two
+hypotheses.
+2. Testing the hypotheses
+2.1. Evidence from assimilation
+I begin by reviewing the assimilation evidence that led Avery and Rice
+(1989) to conclude that features marking place of articulation are hierar-
+chically structured. As is discussed in the coronals literature (e.g., Avery
+and Rice 1989; Cho 1988, 1990, 1991) an important reason that coronal
+consonants are considered to have unmarked status is that they can serve
+as targets for assimilation but not as triggers. Avery and Rice, Cho, and
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 007 ===
+
+KEREN RICE
+197
+others argue that the unmarked status of coronals is captured through the
+absence of a Place dependent. Coronals can serve as targets because they
+lack a Place dependent; they fail to serve as triggers because they have
+nothing to spread. Labials and dorsals, being specified for place of artic-
+ulation, are assimilation triggers. If place is organized in a flat way, then
+labials and dorsals are not predicted to exhibit asymmetric patterning with
+respect to each other since both are equally specified, as in (5). However,
+Avery and Rice (1989) argue that this is not the case, drawing on assimila-
+tion facts in Korean. In Korean not only do coronals assimilate to labials
+and dorsals, as shown in (11a), but labials also assimilate to dorsals, as
+in (11b). The reverse assimilations are not found: a coronal is never an
+assimilation trigger (11c), nor can dorsals assimilate to labials (11d). Data
+is taken from Cho (1988:44) and Iverson and Kim (1987:186):
+(11) a. coronals assimilate to labials and dorsals:
+koppalo
+'straight'
+'to receive'
+kotpalo
+pat + ko →> pakko
+b. labials assimilate to dorsals:
+ap + ko
+kam + ki
+ǝ[kk]o
+ka[ŋk]i
+'carry (person) on the back and ...
+'a cold'
+c. labials and dorsals do not assimilate to coronals:
+p-t
+k-t →
+[pt], *[tt]
+[kt], *[tt]
+d. dorsals do not assimilate to labials:
+kukmul
+k-p
+ku[ŋm]ul, *ku[mm]ul ‘liquid part of soup' 2
+[kp], *[pp]
+'
+If labials and dorsals have the structures required by the flat structure
+hypothesis in (5), there is no reason to expect this kind of assimilation:
+labials and dorsals are equally specified, as in (12), and the presence of
+assimilation of labials to dorsals but not of dorsals to labials is unexpected:
+(12) labial dorsal
+dorsal labial
+Place Place
+Place
+Place
+Labial Dorsal
+Dorsal
+Labial
+The Peripheral structure, on the other hand, captures the asymmetry
+between dorsals and labials. Since these places of articulation are not sym-
+metrically organized, but dorsals have more structure, labials are a target
+2 The /k/ assimilates to the nasality of the adjacent labial, but not to its place
+of articulation.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 008 ===
+
+198
+CJL/RCL 39(3), 1994
+for assimilation from dorsals. Dorsals are not a target for assimilation be-
+cause they have more structure than any other segment. The assimilations
+that are found have the structure in (13a); those that are absent have the
+structure in (13b):
+(13) a.
+labial
+dorsal
+b.
+dorsal
+labial
+Place
+Place
+Place
+Place
+Peripheral Peripheral
+Peripheral Peripheral
+Dorsal
+Dorsal
+The right predictions follow from the Peripheral structure: coronals assim-
+ilate to both other major places of articulation since coronals are the least
+specified; labials assimilate to dorsals since labials are less specified than
+dorsals; and dorsals serve only as triggers, never as targets, for assimilation
+since they have the greatest degree of structure.
+The facts of Korean are borne out in other languages. As Avery and
+Rice report, in English fast speech, not only does /n/ assimilate to a fol-
+lowing place of articulation (14a), but /m/ may also assimilate to following
+dorsals (14b); /ŋ/ does not assimilate (14c):
+(14) a. coronals assimilate to labials and dorsals:
+in Brussels
+in Kingston
+i[m B]russels
+i[ŋ K]ingston
+b. labials assimilate to dorsals; labials do not assimilate to coronals:
+from Kingston → fro[m Kingston, fro[ŋ Kingston
+from Toronto → fro[m Toronto, *fro[n T]oronto
+c. dorsals do not assimilate to labials or to coronals:
+along Bloor alo[ŋ B]loor, *alo[m B]loor
+along Thomas → alo[ŋ T]homas; * alo[n T]homas
+Trigger/target asymmetries, so often noted between coronals and the
+other places of articulation, are thus supplemented by asymmetries between
+labials and dorsals. The asymmetries are summarized in (15), where rows
+show assimilation targets and columns assimilation triggers:
+(15)
+coronal
+Assimilation Trigger
+labial
+dorsal
+attested
+not applicable attested
+unattested
+not applicable
+Assimilation coronal not applicable attested
+Target
+labial unattested
+dorsal unattested
+Coronals assimilate to everything because they share a level of structure
+with all places of articulation. Under the Peripheral structure, labials
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 009 ===
+
+KEREN RICE
+199
+assimilate to dorsals because they share an organizing node, Peripheral,
+and have an internal markedness relationship between them. Without this
+shared structure for labials and dorsals, we have no particular account of
+why the assimilation facts are as they are: coronals would provide a target.
+for structural reasons, but labials would have to provide a target for some
+other reason.
+2.2. Evidence from shifts in place of articulation
+A type of change sometimes found in the historical development of lan-
+guages involves shifts in place of articulation. Given the flat structure,
+shifts from labial to coronal, from dorsal to coronal, and from both labial
+and dorsal to coronal are predicted (see 10). The Peripheral structure pre-
+dicts a different set of shifts: labials and dorsals may merge, or all three
+places of articulation may neutralize. In this section I examine shifts in
+place of articulation and show that they lend support to the Peripheral
+structure.
+2.2.1. Shifts between labials and dorsals
+I begin by showing that shifts in place of articulation from one Peripheral
+consonant to another are found. These shifts are important in demonstrat-
+ing that the labials and dorsals form a natural class. A first example comes
+from the historical development of Romanian. Where Latin has dorsal-
+coronal sequences, labial-coronal sequences result in Romanian. This is
+illustrated in (16); forms are taken from Sala (1976) and Nandris (1963):
+(16) Latin
+Romanian
+la[k]tem
+la[p]te
+‘milk' (Sala)
+no[k]tem
+noa[p]te
+'night' (Sala)
+pe[k]tus pie[p]t
+'chest' (Sala)
+li[n]num li[m]n
+'wood' (Nandris)
+Under the flat structure hypothesis, labials and dorsals do not enter
+into a privileged relationship, and there is no reason to expect this shift.
+The shift would involve the loss of Dorsal and the subsequent addition of
+Labial to those consonants that were underlyingly dorsal, as illustrated
+in (17):
+(17)
+Place Place
+Place Place → Place Place
+Dorsal
+Delink Dorsal
+Labial
+Insert Labial
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 010 ===
+
+200
+CJL/RCL 39(3), 1994
+This hypothesis requires the weakening of the claim that only Coronal is
+available as a default feature for a bare Place node: in Romanian, Labial
+would be available as well.
+The Peripheral structure hypothesis, on the other hand, provides an
+account of this shift: the process involves the places of articulation domi-
+nated by the Peripheral node. The process is expressed formally as in (18):
+(18) Place
+Peripheral
++
+Dorsal
+Place
+The Dorsal node delinks, resulting in a labial consonant. Thus, the Periph-
+eral hypothesis accounts for the shift with a simple delinking.
+Arapaho, an Algonquian language, also exhibits a historical interac-
+tion between labial and dorsal places of articulation. In Arapaho, Proto-
+Algonquian *p shifted to /k/, along with a general loss of *k, leading to a
+loss of contrast between labial and dorsal voiceless stops. Some examples
+from Goddard (1974:107, 111) are given in (19):
+(19) Proto-Algonquian
+*[p]aši[p]ahw
+*ke?ta:[p]iči
+Arapaho
+[k]oxu[k]ohy 'stab'
+éétóó[k]ú0 'big tooth, canine tooth'
+Similar shifts are found in the Algonquian languages of Atsina and Yurok
+(Haas 1969, cited in Campbell 1974), with *p shifting to /k/. In order to
+express this process under the flat structure, it is necessary to both delink
+Labial and insert Dorsal, similar to the Romanian example in (17). Under
+the Peripheral hypothesis, this process, like that in the development of
+Romanian, can be seen as involving a shift between peripheral consonants.
+It differs from Romanian in that it reverses the direction of the shift, with
+a labial shifting to a dorsal. The processes required in the development of
+Arapaho are illustrated in (20):
+(20) Loss of dorsals:
+Root
+±
+Place
+Peripheral
+Dorsal
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 011 ===
+
+KEREN RICE
+201
+Shift of labials:³
+Root
+Root
+Place
+Place
+Peripheral
+Peripheral
+Dorsal
+3 The Arapaho shift of a labial to a dorsal is problematic under the assumptions
+that (i) dorsals are universally more complex than labials and (ii) Labial is the
+only possible default feature for a consonant with a bare Peripheral node. A
+solution to this problem is beyond the scope of this paper, but I would like to
+briefly discuss two possibilities.
+First, one approach is to question the universality of the claim that dorsals
+are more complex than labials. Hamilton (1993), following Dixon (1980), argues
+that in languages of Australia the markedness hierarchy required is, from least
+marked to most marked, coronal-dorsal-labial. In this case, assuming a structure
+similar to that in (2) but with Labial replacing Dorsal, the default rule for a
+bare Peripheral node would be to insert Dorsal. If the hierarchy in Arapaho
+is that proposed for the Australian languages, the labial to dorsal shift would
+simply involve the loss of Labial. No account is available for the original loss
+of the dorsal *k; see Section 2.2.3.2 for a possible account under the Peripheral
+structure in (3).
+The second way of handling the Arapaho problem appeals to the role of con-
+trast in a system. It has been argued that in the absence of a contrast between
+two similar sounds in a system, a single phoneme can take on a range of phonetic
+realizations. For example, in languages of the type discussed in this paper, where
+there is only a single type of coronal stop, that stop may be realized phonetically
+as alveolar in some languages and as dental in others. Even within a particular
+language, the single coronal stop may range between alveolar and dental. In lan-
+guages where alveolar and dental stops are in contrast with one another, these
+places of articulation are kept distinct (see Avery and Rice 1989). Thus in the
+absence of a contrast, a coronal stop may exhibit a great degree of freedom in its
+place of articulation; in the presence of contrasts between coronal subplaces of
+articulation, the freedom of place of articulation of each subplace is limited (see
+Avery and Rice 1989 for fuller discussion).
+Consider the notion of contrast with respect to peripherals. In a language like
+Korean, with a/p t k/ system, a representation with a bare Peripheral node can
+be realized only as a labial since the /p/ must be kept distinct from the /k/. A
+language like Arapaho has only a single Peripheral consonant, lacking a contrast
+between /p/ and /k/, as shown in (i):
+(i) Place
+Place
+Peripheral
+The consonant with just a Place node will be a coronal and that with a Peripheral
+node will be a peripheral. Since there are no contrasts within the peripheral
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 012 ===
+
+202
+CJL/RCL 39(3), 1994
+A final example comes from the Athapaskan language Ingalik. Here
+*m shifted to ŋ, merging with *ŋ, while *n remained as /n/ (Krauss and
+Leer 1981:77):
+(21) Proto-Athapaskan Ingalik
+*n
+/n/
+*m
+*ŋ
+/n/
+/ŋ/
+As in Arapaho, the process involves a shifting of the peripheral places of
+articulation.
+The Peripheral structure offers a straightforward account of cases in-
+volving labials and dorsals: only peripherals are involved. If the flat
+structure is adopted, the theory of default rules must be enriched to al-
+low any feature to appear as a default feature. This is contrary to much
+evidence in the phonology literature that only the feature Coronal functions
+as a default (see the papers in Paradis and Prunet 1991; Paradis and Prunet
+1994; Rice 1993, amongst others, for discussion). In the next section, I will
+provide additional support for the Peripheral hypothesis by showing that
+the other shifts in place of articulation that are found in languages are
+those predicted by the Peripheral rather than the flat structure.
+2.2.2. Other shifts in place of articulation
+We have already seen that one prediction of the Peripheral hypothesis but.
+not of the flat hypothesis is borne out: the labial/dorsal relationship illus-
+trated in Section 2.2.1 is predicted only under the Peripheral hypothesis. In
+this section I examine further predictions from shifts in place of articulation
+of consonants.
+Some shifts in place of articulation are expected under both structures.
+One is the neutralization of both labials and dorsals to coronals. Historical
+developments in some Athapaskan languages provide support for the claim
+that dorsals and labials can pattern as a class: if one becomes coronal, both
+do. This is shown in (22) (see Krauss and Leer 1981:77 for details):
+consonants, the realization of the consonant is unimportant phonologically, so
+long as it is within the peripheral, or non-coronal, range. This consonant could
+thus be pronounced either as a dorsal or as a labial since these are not contrastive
+sounds within the language. In Arapaho it is realized as a dorsal.
+A model that incorporates contrast in this way is developed in Rice and Avery
+(1994). Also see Dyck (1994) for evidence from vowel height and Rice (1994) for
+evidence from place of articulation in vowels that the phonological representa-
+tion of a segment may underdetermine the phonetic implementation just in case
+contrasts are lacking.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 013 ===
+
+KEREN RICE
+203
+(22) Proto-Athapaskan
+*
+Ahtna
+Sekani
+m
+n
+n
+d/n
+d/n
+*ŋ
+n
+d/n
+Under the Peripheral structure, these results are achieved by the loss of
+the Peripheral node; under the flat structure they are achieved through the
+loss of specified Place dependents. The workings of the two hypotheses are
+compared in the table in (23):
+(23)
+representation
+process
+result
+Flat
+m
+n
+structure
+Place Place
+ŋ
+Place
+Delink Labial
+Delink Dorsal
+Place
+Labial
+Dorsal
+Peripheral
+structure
+Place Place
+Place
+Delink Peripheral Place
+Peripheral
+Peripheral
+Dorsal
+The table in (24) provides full information regarding the kinds of shifts
+in place of articulation that are/are not found in languages.
+(24)
+shifter
+target
+shift in-
+stantiated? languages
+example
+predicted
+by
+coronal
+labial
+✗
+N
+coronal
+dorsal
+✗
+N
+labial
+coronal
+X
+F
+labial
+dorsal
+✓
+Arapaho, Ingalik
+P
+dorsal
+coronal
+**
+F
+dorsal
+labial
+Romanian
+P
+coronal, labial
+dorsal
+X
+N
+coronal, dorsal labial
+X
+N
+labial, dorsal
+coronal
+Ahtna, Sekani
+F, P
+*See Section 2.2.3 for discussion.
+The inventories under consideration have (or had) sounds at the labial,
+coronal, and dorsal places of articulation. The first column shows the shifter
+and the second the target. For instance, a language that exhibited a coronal
+to labial shift would have historically or underlyingly a/p t k/ system; the
+resulting system would be /p k/, with the /t/ having merged with the
+/p/. The third column indicates whether the shift under consideration
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 014 ===
+
+204
+CJL/RCL 39(3), 1994
+is actually found, the fourth lists sample languages, and the final column
+indicates which hypothesis/hypotheses predict the shift. An 'x' in the third
+column means that such a shift is not found, while a check mark indicates
+that this shift is found; in the final column F = flat, P = Peripheral, N =
+neither.
+As the table indicates, only a limited number of the potential shifts in
+place of articulation occur. The Peripheral structure predicts exactly these
+shifts: labials and dorsals shift to each other by manipulation at the level of
+the Peripheral node; labials and dorsals both become coronals through the
+loss of Peripheral; classes of sounds including a coronal and one peripheral
+consonant are not found. The flat structure, too, allows a limited set of
+changes but, through operations on a single node, it predicts the existence
+of the non-occurring patterns as well. Specifically, while the presence of
+shifts involving both labials and dorsals can be accounted for, the structure
+has nothing to say about why a single specified place of articulation cannot
+become a coronal; thus the absence of shifts from a labial to a coronal, with
+dorsals remaining, or from a dorsal to a coronal, with labials remaining, is
+not accounted for.
+The argument based on shifts provides support for the claim that labi-
+als and dorsals form a natural class which excludes coronals, and thus for
+the Peripheral hypothesis.
+2.2.3. Some apparent counterexamples
+The table in (24) indicates that only a small number of shifts in place of
+articulation is possible. However, some apparent counterexamples exist,
+namely those marked by an * in (24); these are repeated in (25):
+(25) coronal to dorsal
+dorsal to coronal/glottal
+If these shifts are actually found, two of the basic claims of the Periph-
+eral structure are counterexemplified: first, if coronals shift to dorsals, the
+restricted theory of default rules must be abandoned, as Dorsal would be
+allowed as a default feature for a bare Place node (while Labial would not
+be); second, if dorsals switch to coronals, labials should shift as well (see
+example 10). In this section, I examine each of these types of shifts, argu-
+ing that they are not true counterexamples to the claims of the Peripheral
+hypothesis.
+2.2.3.1. Coronal to dorsal shifts
+Many languages have what appear to be shifts in place of articulation from
+the coronal to the dorsal place of articulation. In this section, I will look at
+two such languages and argue that in fact the shifts found in these languages
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 015 ===
+
+KEREN RICE
+205
+are not truly to a dorsal (see Rice 1993 for more extensive development of
+the claims presented here).
+In Dakota, coronal consonants are realized as dorsals under certain con-
+ditions. When reduplication creates a sequence of two coronal consonants,
+the first dissimilates to a dorsal (26a). With dorsal-dorsal and labial-labial
+sequences, on the other hand, degemination is found instead (26b) (Shaw
+1980:339, 1985:184):
+(26) Dakota reduplication:
+dissimilation in coronal clusters:
+a.
+/žat+žat/
+→ [žakžáta]
+'be forked'
+/sut+sut/
+→ [suksúta]
+'to be strong'
+/nin+nin/
+→ [nignina]
+'very'
+b. degemination in other homorganic clusters:
+/khok+khok/ → [khokhóka] 'to sound like wood'
+The stem-final coronal is replaced by a dorsal in reduplication (26a), while
+other stem-final consonants degeminate (26b); Shaw provides no examples
+of labial sequences, but implies in her description that both labials and
+dorsals degeminate.
+As a second example, in the historical development of South Vietnam-
+ese, syllable-final coronal consonants underwent a shift from the coronal
+place of articulation to the dorsal place of articulation, merging with the
+original dorsals. In (27), the North Vietnamese data are representative of
+the historical forms, while the South Vietnamese data show the more recent
+developments. As these forms illustrate, coronals and dorsals merged, while
+labials remained (Thompson 1965:83–85):
+(27)
+North Vietnamese South Vietnamese
+(Hanoi)
+(Hue)
+coronals merge with dorsals:
+a.
+ŋo[n]
+ŋo[ŋ]
+'be tasty'
+xwâ[t]
+xuâ[k]
+'to exit'
+b.
+labials remain:
+buô[m]
+buậ[m]
+'ship's sail'
+tiê[p]
+tii[p]
+'continue'
+C.
+dorsals remain:
+tiên]
+nuo[k]
+tiâ[p]
+nuâ[k]
+‘noise, sound, language'
+'water'
+Distributional evidence from South Vietnamese indicates that syllable-final
+coronals did not always neutralize to dorsals, and that coronals and dorsals
+in this position are in complementary distribution. In South Vietnamese,
+coronal consonants are found following front vowels and dorsal consonants
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 016 ===
+
+206
+CJL/RCL 39(3), 1994
+after non-front vowels. The forms in (27) show dorsals after non-front
+vowels; those in (28) show coronals after front vowels (Thompson 1965:82):
+(28) it
+dên
+‘be a small amount'
+'arrive'
+Assuming that front vowels are coronal (see Clements 1976, 1991; Clements
+and Hume 1994; Hume 1992; Pulleyblank 1989; Rose 1993; Walker 1993),
+the complementary distribution of final coronals and dorsals can be ac-
+counted for if both are underlyingly “coronal”, i.e., placeless, with repre-
+sentations as in (29). The absence of a place feature for the vowel in (29b)
+simply indicates a non-front vowel:
+(29) a. following a front vowel b.
+following a non-front vowel
+V
+V
+C
+C
+Place
+Place
+Place
+Place
+Coronal
+The final consonant receives its coronality from the preceding vowel (29a).
+The dorsality of the consonant following a non-front vowel (29b) remains
+to be accounted for.
+The coronal-dorsal relationship exemplified by Dakota and South Viet-
+namese has been discussed in the recent literature (see Trigo 1988; Paradis
+and Prunet 1994; Rice 1993), and it has been argued that dorsals resulting
+from shifts do not have the same phonological structure as dorsals under
+either the flat or Peripheral structures. These consonants instead have
+the underlying structure of the coronals, without a Place dependent. Ex-
+ample (30) compares the representations of a true dorsal consonant (30a)
+and of the syllable-final “dorsal" consonants (30b) in Dakota and South
+Vietnamese under the Peripheral hypothesis.
+(30) a.
+true dorsal b. syllable-final "dorsals" (Dakota,
+Place
+Place
+South Vietnamese)
+Peripheral
+Dorsal
+The syllable-final dorsals, which I will call "velars" in the following discus-
+sion, differ from the true dorsals in that they have the same representation
+as coronals. Just how this class of coronals/velars achieves its surface velar
+place of articulation has been a point of controversy. Trigo (1988) argues
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 017 ===
+
+KEREN RICE
+207
+that the velars have a placeless representation phonologically and that a
+default rule supplies the feature Dorsal as the unmarked option in syllable-
+final position. This alternative requires that both Coronal and Dorsal can
+serve as default features for a bare Place node, while Labial never does,
+without explanation. Under the assumptions that a default rule inserting
+Dorsal is in principle impossible, and that only Coronal can be supplied to
+a consonant unspecified for place, Paradis and Prunet (1994) propose that
+the surface velars receive the feature Dorsal by the spreading of this fea-
+ture from the preceding vowel. Rice (1993) argues the coronals are achieved
+through the insertion of the default feature Coronal while the velars are
+phonetically placeless consonants; they at no stage have the representation
+of the true dorsals in (30a) (see Durand 1988 and Yip 1991 for a similar
+position). Whether the velars result from the spreading of Dorsal from the
+vowel or are phonetically placeless is the topic of other work (see Rice 1993.
+for discussion). What I hope this brief discussion has shown is that while
+these forms appear to illustrate a shift from coronal to dorsal, a change not
+predicted by the Peripheral structure, this shift is likely not of the type
+observed so far: the consonants in question do not become independent
+dorsals, but either share structure with the preceding vowel or have no
+Place dependent.
+Under the assumption that Coronal is the only possible default feature
+for a bare Place node, a coronal to dorsal shift is problematic for the flat.
+structure as well (see 24). If this assumption is maintained, the flat struc-
+ture hypothesis will require the same sort of elaboration as is suggested
+here for the Peripheral hypothesis. If the assumption that Coronal is the
+only default feature available for a bare Place node is abandoned, one is
+left with no account for why Labial never serves as a default feature. The
+existence of coronal to dorsal shifts is thus neutral with respect to the two
+hypotheses under the current assumptions, and the Peripheral structure
+continues to receive support.
+2.2.3.2. Dorsals to coronals or laryngeals
+The second type of unexpected shift is that of dorsals to coronals or la-
+ryngeals without the concomitant shift of labials. In other words, labials
+remain labials while dorsals shift. Such shifts can be seen in the examples
+from Hawaiian (Elbert and Pukui 1979:11-12, 24) and Hupa (Krauss and
+Leer 1981:77):
+(31)
+Hawaiian
+Hupa (Athapaskan)
+historical synchronic
+☐☐
+Ptk
+m
+n
+m n
+k P
+historical
+synchronic
+m nŋ m
+n
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 018 ===
+
+208
+CJL/RCL 39(3), 1994
+Labials remain while dorsals shift to coronals (Hawaiian nasals, Hupa
+nasals) or to a glottal stop (Hawaiian stops).
+Dorsal consonants are particularly vulnerable to deletion as well. For
+instance, in the Arapaho example (19 above), the dorsal stop was lost, while
+the coronal and labial (which shifted to a dorsal) remained. In Turkish, the
+voiced velar fricative was lost, while the labial and coronal voiced fricatives
+remained (Clements and Keyser 1983).
+The existence of dorsal to coronal/glottal shifts appears to provide
+damaging evidence to the Peripheral structure and evidence in favour of
+the flat structure, as this hypothesis allows for a dorsal to shift to a coronal
+without a labial also shifting. However, the acceptance of the flat struc-
+ture to account for these facts creates several complications. The absence
+of independent labial to coronal shifts would remain a mystery if the flat
+structure were adopted, as would the assimilation facts discussed in Sec-
+tion 2.1 and the labial/dorsal shifts in Section 2.2.1. Likewise, the existence
+of languages in which dorsals are lost to the exclusion of labials, as illus-
+trated by Turkish and Arapaho (although the labials shifted in Arapaho),
+but not of languages in which labials are lost to the exclusion of dorsals, is
+without explanation. Thus, it is worthwhile to seek an alternative account
+for why dorsal to coronal/glottal shifts are found.
+It appears that something rather different is going on in these cases
+where dorsals shift to coronals/glottals or delete. Under the Peripheral hy-
+pothesis, the dorsal is distinguished from the labial by amount of structure,
+with the dorsal having more structure, or being more marked. Rice (1993)
+hypothesizes that the reason shifts of dorsals to coronals/glottal stops are
+found has to do with a move to decrease complexity; dorsals are the most
+complex of the places of articulation in that they have not only a Periph-
+eral node but also a Dorsal node; labials, on the other hand, have just a
+Peripheral node. If the degree of complexity of dorsals is not tolerated in
+some systems, they will simplify. This could be accomplished in two ways:
+the Dorsal dependent could be lost, creating a labial, as in Romanian, or
+the entire structure below Place could be lost under conditions of complex-
+ity, as in the Hawaiian and Hupa nasals, the Hawaiian and Arapaho stops,
+and the Turkish voiced fricatives. If this is correct, there is a reason for
+such shifts that is independent of arguments for constituency: dorsals may
+simplify because of their complexity of place. In a sense, the shift of dor-
+sals without a shift of labials provides indirect evidence for the hierarchical
+over the flat structure: under the flat structure, no reason exists for dorsals
+but not labials shifting; under the hierarchical structure, the complexity of
+dorsals provides some reason for why they alone shift.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 019 ===
+
+KEREN RICE
+209
+2.3. Metathesis
+Further evidence for the Peripheral constituent is found in Mokilese (Har-
+rison 1976:46). Harrison reports that /p-k/ sequences may metathesize to
+[k-p], yielding alternants as in (32):
+(32) apkas
+kapkihla
+akpas 'now'
+kakpihla 'to droop'
+Mokilese does not otherwise exhibit constraints on sequencing of adjacent
+places of articulation; the Mokilese dictionary (Harrison and Salich 1977)
+shows that all possible sequences of pairs of coronal, labial, and dorsal are
+found in clusters.
+The Peripheral hypothesis allows the Mokilese metathesis to be de-
+scribed as a switch of places of articulation within the Peripheral con-
+stituent; coronals do not participate in metathesis because the process is
+restricted to Peripherals:
+(33) Place
+Place
+Place
+Place
+Peripheral Peripheral
+Peripheral Peripheral
+Dorsal
+Dorsal
+Although the flat structure could account for the Mokilese facts by switch-
+ing around the Dorsal and Labial place dependents, as in (34), it does not
+account for why metathesis is limited to labials and dorsals, to the exclusion
+of coronals:
+(34) Place Place
+Place
+Place
+Labial Dorsal
+Dorsal Labial
+The class of consonants involved could be captured through reference to
+specified dependents of Place, requiring a mechanism in addition to con-
+stituency to capture features that group together.
+2.4. Phonotactics
+Another source of evidence for a Peripheral constituent comes from the
+phonotactics of several Australian languages. For instance, in the language
+Margany-Gunya, there is a six-way place of articulation distinction, as
+in (35) (Breen 1981:293):
+(35) labial laminal- laminal- apical-
+p b m
+dental
+d
+palatal
+domal
+apical-
+alveolar
+dorsal
+n
+t ḍ n
+t ḍ n
+tdn
+kg ŋ
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 020 ===
+
+210
+CJL/RCL 39(3), 1994
+However, in the position C _ V, only labial and dorsal voiceless stops and
+nasals are permitted in heterorganic clusters, to the exclusion of coronals,
+both laminal and apical (see Hamilton 1993 for discussion). If Labial and
+Dorsal form a constituent, Peripheral, this phonotactic pattern receives an
+explanation: only peripherals are allowed in this position.
+This argument initially appears to be weak: under the flat structure,
+one can claim that only specified places of articulation occur in this po-
+sition. However, Margany-Gunya differs in a fundamental way from the
+languages discussed so far. As argued by Hamilton (1993), the facts of
+Margany-Gunya (and languages with similar inventories) lead to the con-
+clusion that coronal consonants are specified for place (unlike the coronals
+of the other languages discussed in this paper). If all consonants are spec-
+ified for place, it is not possible to capture the natural class of labials and
+dorsals structurally by reference to specified places. The places of articu-
+lation that appear in the given position are the non-coronals, or, in other
+words, the peripherals.
+2.5.
+Summary
+In this section I have presented evidence from several processes involving.
+place of articulation, arguing that the Peripheral structure provides a more
+adequate account of the facts than does the flat structure. The two types of
+counterexamples to this hypothesis, involving unexpected shifts of coronal
+to dorsal and dorsal to coronal or glottal stop, receive alternative accounts.
+If the Peripheral structure is abandoned in favour of the flat structure
+in order to account for the aberrant dorsal to coronal/glottal stop shifts,
+then other existing shifts, namely those involving peripheral consonants,
+remain unexplained, as do the assimilations of labials to dorsals. Overall
+then, the Peripheral structure makes the more restricted and accurate set
+of predictions, while the flat structure both makes wrong predictions and
+fails to make correct predictions.4
+3. An alternative hypothesis-the Lingual node
+Clements and Hume (1994) propose that the Place node does not have a
+flat structure. Rather than the organization argued for here, they argue
+that the Coronal and Dorsal nodes group together as a Lingual constituent,
+with Labial set apart, as in (36). The individual places of articulation are
+represented as in (37).
+4 An anonymous reviewer points out that the Peripheral node also figures in
+a cluster simplification process in Korean. A peripherality condition is required.
+to determine whether the first or second consonant of a cluster is realized in
+syllable-final position (see Iverson and Lee 1994 for discussion).
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 021 ===
+
+(36)
+Labial
+Place
+Coronal
+KEREN RICE
+211
+Lingual
+Dorsal
+(37) coronal labial dorsal
+Place Place Place
+Lingual Labial
+Coronal
+Lingual
+Dorsal
+Clements and Hume provide several arguments for this proposal. Since
+this paper deals with consonants, I consider only their arguments from
+consonantal classes here (see Rice 1994 for the other cases, which concern
+the representation of vowels). The one argument that Clements and Hume
+provide for the Lingual constituent based on consonants alone comes from
+historical developments in Mandarin Chinese. Mandarin has six consonan-
+tal places of articulation on the surface: labial, dental, alveolar, retroflex,
+palatal, and velar. High front vowels (i, ü) have a limited distribution,
+appearing only following labials, dentals, and palatals; following alveo-
+lars, retroflexes, and velars high front vowels are systematically absent.
+Clements and Hume argue that the limited distribution of the high front
+vowel can be captured by using a Lingual node the high front vowels
+cannot follow linguals. This hypothesis faces a problem. The dentals, alve-
+olars, and retroflexes are all clearly coronal consonants, and the palatals.
+may be. If the natural class of coronals and dorsals is captured with a
+Lingual node, all the coronals and dorsals should pattern together in terms
+of co-occurrence restrictions with the high front vowels. The class of con-
+sonants that are lingual is, however, larger than the class of consonants
+which fails to appear before high front vowels. Within the linguals, I know
+of no feature that can distinguish the class of dentals and palatals from
+the alveolars, retroflexes, and velars. Wu (1994) argues that the absence of
+high front vowels following alveolars/retroflexes and their absence following
+velars result from two distinct sources, and that these distributional facts
+provide no evidence for a Lingual constituent.
+-
+While the Lingual hypothesis accounts for the coronal/dorsal interac-
+tions noted in Section 2.2.3-apparent counterexamples to the Peripheral
+hypothesis it lends no insight into the assimilations and shifts discussed
+in Section 2: one would expect to find coronals and dorsals patterning to-
+gether to the exclusion of labials, but commonly labials and dorsals pattern
+together to the exclusion of coronals.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 022 ===
+
+212
+4. Conclusions
+CJL/RCL 39(3), 1994
+I have proposed, within a feature geometry framework, that the features
+marking the major places of articulation are not organized in the flat struc-
+ture in (1); rather they are hierarchically organized as in (2), with labials
+and dorsals forming a constituent. In these concluding comments I would
+like to discuss two points, first the phonetic basis of the feature geometry
+system and second the assumption that markedness relations are encoded
+directly in segmental representation.
+Feature geometry has taken as its basis articulatory facts. Sagey
+(1986), in her ground-breaking discussion of place of articulation, argues
+that the place dependents Labial, Coronal, and Dorsal represent articu-
+lators, a theme taken up by McCarthy (1988) and others. However, the
+feature Peripheral, like its precursor [grave] (Jakobson, Fant, and Halle
+1952; Hyman 1973), is arguably an acoustic or perceptual feature rather
+than an articulatory feature. The proposal that I have made in this paper
+is simply that a kind of feature organization that is not generally assumed.
+in the feature geometry literature is required. In recent years, increasing
+evidence has been amassed that acoustic features play an important role
+in phonology; see, for instance, the papers in the forthcoming Laboratory
+Phonology IV. It may well be the case that the hierarchical aspects of the
+feature geometry proposal should be preserved, but that the articulatory
+basis of the Place node (at least) should be abandoned and replaced with
+acoustic underpinnings. Alternatively, Peripheral may perhaps be thought.
+of in an articulatory way, involving the non-central articulators. The argu-
+ments favouring a particular type of constituency are logically independent
+of the phonetic basis of that constituency; the arguments that I have pro-
+vided for Peripheral again raise the question of just what that basis is.
+An important assumption of this paper has been that markedness re-
+lations are encoded directly in segmental representations. Thus, in the
+structures in (2), the coronal consonant, which is generally agreed to be
+the least marked consonant, has less structure than the labial, which in
+turn has less structure than the dorsal. The representations thus provide
+information about both the nature of the sound and about its markedness
+with respect to other sounds in the system. I have adopted a theory of
+feature geometry, and built the markedness hierarchy into the geometry,
+following earlier work by Rice and Avery (1993). In recent work in phonol-
+ogy, it has been argued that all features can be fully specified so long as
+markedness hierarchies are allowed (e.g., Prince and Smolensky 1993; Ste-
+riade 1994). Even if it is assumed that all place features are fully specified,
+the point of this paper remains: the relationship of labials and dorsals to
+each other is a special one. While coronals are the least marked of the
+places of articulation, they are relatively unmarked with respect to labials
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 023 ===
+
+KEREN RICE
+213
+and dorsals as a class and not to each on its own. The labials and dorsals
+themselves enter into a hierarchical arrangement; the evidence provided in
+this paper suggests that labials are less marked than dorsals. The major
+point that I hope to have made then, is that empirical evidence provides
+support for a hierarchical hypothesis over a flat one, requiring that labials
+and dorsals be ranked with respect to each other and not be equally ranked
+with respect to coronals.
+REFERENCES
+Avery, Peter and Keren Rice
+1989 Segment Structure and Coronal Underspecification. Phonology 6:
+179-200.
+Breen, J.G
+1981
+Margany and Gunya. Pp. 275-393 in Handbook of Australian Lan-
+guages, vol. 2. Robert M.W. Dixon and Barry J. Blake, eds. Can-
+berra: Australian National University Press.
+Campbell, Lyle
+1974 Phonological Features: Problems and Proposals. Language 50:52–65.
+Cho, Young-mee Yu
+1988 Korean Assimilation. Pp. 41-52 in Proceedings of the Seventh West
+Coast Conference on Formal Linguistics. Hagit Borer, ed. Stanford:
+Stanford Linguistic Association and the Center for the Study of Lan-
+guage and Information.
+1990 Parameters of Consonantal Assimilation. PhD thesis, Stanford Uni-
+versity.
+1991 On the Universality of the Coronal Articulator. Pp. 159-179 in The
+Special Status of Coronals. Internal and External Evidence. Phonet-
+ics and Phonology 2. Carole Paradis and Jean-François Prunet, eds.
+San Diego: Academic Press.
+Cho, Young-mee Yu, and Sharon Inkelas
+1993 Inalterability as Prespecification. Language 69:529-574.
+Chomsky, Noam, and Morris Halle
+1968 The Sound Pattern of English. New York: Harper and Row.
+Clements, George N.
+1976 Palatalization: Linking or Assimilation? Pp. 96-109 in Papers from
+the Twelfth Regional Meeting. Salikoko Mufwene, Carol Walker, and
+Sanford Steever, eds. Chicago: Chicago Linguistic Society.
+Clements, George N.
+1985 The Geometry of Phonological Features. Phonology Yearbook 2:223–
+252.
+https://doi.org/10.1017/S000841310001522X Published onlinė by Cambridge University Press
+
+=== page 024 ===
+
+214
+CJL/RCL 39(3), 1994
+1991 Place of Articulation in Consonants and Vowels: A Unified Theory.
+Working Papers of the Cornell Phonetics Laboratory 5:77–123.
+Clements, George N., and Elizabeth Hume
+1994 The Internal Organization of Segments. In Handbook of Phonological
+Theory. John Goldsmith, ed. Oxford: Blackwell. [Forthcoming.]
+Clements, George N., and Samuel J. Keyser
+1983 CV Phonology: A Generative Theory of the Syllable. Cambridge,
+Mass.: MIT Press.
+Collinder, Bjorn
+1965 An Introduction to the Uralic Languages. Berkeley: University of
+California Press.
+Dixon, Robert M.W.
+1980 The Languages of Australia. Cambridge: Cambridge University Press.
+Durand, Jacques
+1988 Les phénomènes de nasalité en français du Midi: Phonologie de dépen-
+dance et sous-spécification. Recherches Linguistiques de Vincennes:
+Nouvelles Phonologies 17:29-54.
+Dyck, Carrie
+1994 Constraining the Phonology-Phonetics Interface. PhD thesis, Uni-
+versity of Toronto.
+Elbert, Samuel H., and Mary K. Pukui
+1979 Hawaiian Grammar. Honolulu: University Press of Hawaii.
+Goddard, Ives
+1974 An Outline of the Historical Phonology of Arapaho and Atsina. Inter-
+national Journal of American Linguistics 40:102–116.
+Haas, Mary R.
+1969
+The Prehistory of Language. The Hague: Mouton.
+Hamilton, Philip
+1993 Intrinsic Markedness Relations in Segment Structure. Toronto Work-
+ing Papers in Linguistics 12(2):79–96.
+Harrison, Sheldon P.
+1976 Mokilese Reference Grammar. Honolulu: University of Hawaii Press.
+Harrison, Sheldon P., and Albert Salich
+1977 Mokilese-English Dictionary. PALI Language Texts: Micronesia.
+Honolulu: University of Hawaii Press.
+Hume, Elizabeth
+1992
+Front Vowels, Coronal Consonants, and Their Interaction In Nonlin-
+ear Phonology. PhD thesis, Cornell University.
+Hyman, Larry
+1973 The Feature [grave] in Phonological Theory. Journal of Phonetics
+1:329–337.
+Iverson, Greg, and K.-H. Kim
+1987 Underspecification and Hierarchical Feature Representation in Ko-
+rean Consonantal Phonology. Chicago Linguistic Society 23:182–198.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 025 ===
+
+Iverson, Greg, and S.-S. Lee
+KEREN RICE
+215
+1994 Variation and Optimality in Korean Consonantal Phonology. In Pro-
+ceedings of the 1994 Eastern States Conference on Linguistics. Ithaca:
+Cornell University Working Papers. [Forthcoming.]
+Jakobson, Roman, Gunnar Fant, and Morris Halle
+1963 Preliminaries to Speech Analysis. Cambridge, Mass.: MIT Press.
+[1952.]
+Krauss, Michael, and Jeff Leer
+1981 Athabaskan, Eyak, and Tlingit Sonorants. Alaska Native Language
+Center Research Papers 5. Fairbanks: Alaska Native Language Cen-
+Lass, Roger
+ter.
+1976 English Phonology and Phonological Theory. Cambridge: Cambridge
+University Press.
+Mascaró, Joan
+1987 A Reduction and Spreading Theory of Voicing and Other Sound Ef-
+fects. Ms.
+McCarthy, John
+1988 Feature Geometry and Dependency. Phonetica 43:84-108.
+Nandris, Octave
+1963 Phonétique historique du roumain. Paris: Klincksieck.
+Paradis, Carole, and Jean-François Prunet, eds.
+1991 The Special Status of Coronals. Internal and External Evidence.
+Phonetics and Phonology 2. San Diego: Academic Press.
+Paradis, Carole, and Jean-François Prunet
+1994 A Reanalysis of Velar Transparency Cases. The Linguistic Review
+11:101-140.
+Prince, Alan, and Paul Smolensky
+1993
+Optimality Theory: Constraint Interaction in Generative Grammar.
+Cambridge, Mass.: MIT Press. [To appear.]
+Pulleyblank, Edwin
+1989 The Role of Coronal in Articulator Based Features. Chicago Linguis-
+tic Society 25:375–393.
+Rice, Keren
+1993
+Default Variability: The Coronal-Velar Relationship. Toronto Work-
+ing Papers in Linguistics 12(2):97–130.
+1994 On the Organization and Specification of Vowel Place Features. Pa-
+per read at colloquia at Ohio State University and at MIT.
+Rice, Keren, and Peter Avery
+1993 Segmental Complexity and the Structure of Inventories. Toronto
+Working Papers in Linguistics 12(2):131–153.
+1994 Variability in a Deterministic Model of Language Acquisition: A
+Theory of Segmental Elaboration. In Phonological Acquisition and
+Phonological Theory. John Archibald, ed. Hillsdale, New Jersey:
+Lawrence Erlbaum. [Forthcoming.]
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
+=== page 026 ===
+
+216
+Rose, Sharon
+CJL/RCL 39(3), 1994
+1993 Coronality and Vocalic Underspecification. Toronto Working Papers
+in Linguistics 12(2):155–177.
+Sagey, Elizabeth
+1986 The Representation of Features and Relations in Nonlinear Phonol-
+ogy. PhD thesis, MIT.
+Sala, Marius
+1976
+Contributions à la phonétique historique du roumain. Paris: Éditions
+Klincksieck.
+Shaw, Patricia
+1980
+Theoretical Issues in Dakota Phonology and Morphology. New York:
+Garland.
+Steriade, Donca
+1994 Underspecification and Markedness. In Handbook of Phonology. John
+Goldsmith, ed. Oxford: Blackwell. [Forthcoming.]
+Thompson, Lawrence C.
+1965 A Vietnamese Grammar. Seattle: University of Washington Press.
+Trigo, R. Loren
+1988 On the Phonological Derivation and Behavior of Nasal Glides. PhD
+thesis, MIT.
+Walker, Rachel
+1993
+Wu, Yuwen
+A Vowel Feature Hierarchy for Contrastive Specification. Toronto
+Working Papers in Linguistics 12(2):179–197.
+1994 Mandarin Segmental Phonology. PhD thesis, University of Toronto.
+Yip, Moira
+1991 Coronals, Clusters, and the Coda Condition. Pp. 61-78 in The Spe-
+cial Status of Coronals. Internal and External Evidence. Phonetics
+and Phonology 2. Carole Paradis and Jean-François Prunet, eds. San
+Diego: Academic Press.
+https://doi.org/10.1017/S000841310001522X Published online by Cambridge University Press
+
