@@ -40402,3 +40402,174 @@ After the TSV edit:
   - The `gemination_extra` bucket should empty (was 1 after §17.44).
   - Trace `*spenilō` should surface `spinl`:
         echo 'spenilō' | flookup -i Germanic/old_english.bin
+
+---
+
+### §17.45 Step 3: Residual *spinlu → spinl gap (chronology research)
+
+**Status**: After Step 1 (TSV retarget to `spinl`) and Step 2 (extending
+`OEPreconsonantalDegemination` to `*nn → *n / _ sonorant`), the cascade
+produces `*spénnilō → spinlu` rather than the target `spinl`. The final
+*-u survives and `OEHighVowelApocope` is failing to apocopate it. This
+section diagnoses why, and proposes the cleanest fix.
+
+#### Empirical isolation
+
+| input         | OE bin output | target | apocope behaviour    |
+|---------------|---------------|--------|----------------------|
+| `*spinilō`    | `spinl`       | spinl  | trisyllabic apocope **fires** |
+| `*spennilō`   | `spinlu`      | spinl  | trisyllabic apocope **does not fire** |
+| `*spinnilō`   | `spinlu`      | spinl  | trisyllabic apocope **does not fire** |
+
+The only relevant difference is the first-syllable weight: light (`*spi.ni-`,
+single coda `*n`) vs. heavy (`*spin.ni-`, closed cluster `*nn`). After
+i-umlaut (which precedes apocope at germanic.txt:3096) both forms have
+`*i` as the stressed vowel; the contrast is purely syllable-weight.
+
+#### Diagnosis: missing trisyllabic clause
+
+`OEHighVowelApocope` (germanic.txt:2774–2826) currently has these
+trisyllabic clauses (Campbell §345 trisyllabic apocope):
+
+| pattern                                                      | covers                  |
+|--------------------------------------------------------------|-------------------------|
+| `LongV + C+ + ShortV + C+ + _`                               | long-V heavy first      |
+| `LongDiphthong + C+ + ShortV + C+ + _`                       | long-diphthong heavy    |
+| `ShortDiphthong + C + C+ + ShortV + C+ + _`                  | short-diphthong + 2C    |
+| `ShortDiphthong + C + ShortV + C+ + _`                       | short-diphthong + 1C    |
+| `ShortV + **exactly 1 C** + ShortV + C+ + _` (line 2814–16)  | short-V LIGHT first     |
+
+There is **no clause for `ShortV + 2+C + ShortV + C+ + _`** — i.e. a
+heavy first syllable produced by a short vowel plus a closed cluster.
+This is exactly the *spennilō / *spinnilō shape after i-umlaut: stressed
+`*i` + geminate `*nn` + medial `*i` + `*l` + `*u`. None of the existing
+clauses match, so apocope silently fails, leaving `*u` to surface.
+
+For `*spinilō` (light first syll, single `*n`), the rule on line 2814–16
+matches: `*i + *n + *i + *l + *u` → drops `*u` → `*spinil` → medial
+syncope → `*spinl` ✓.
+
+For `*spinnilō` (heavy first syll), no clause matches → `*u` survives →
+medial syncope still bleeds the medial `*i` (`*spinnilu → *spinnlu`) →
+preconsonantal degemination (Step 2) drops one `*n` (`→ *spinlu`) →
+surface `spinlu`. The geminate degeminates correctly, but the missed
+apocope means `-u` never goes away.
+
+#### Philological cross-check: should the rule fire?
+
+Yes. Two converging arguments:
+
+1. **Empirical**: Kluge–Seebold s.v. *Spindel* gives PWGmc `*spennilō`
+   and OE *spinel* (Clark Hall A, Cp). For OE *spinel* to surface from
+   *spennilō*, trisyllabic apocope must apply over a heavy short-V
+   first syllable.
+
+2. **Theoretical (Campbell §345)**: "When a final short vowel followed
+   a syllable other than the heavy stressed one, e.g. when there were
+   three syllables of which the medial was short, the final vowel was
+   lost." Campbell does not condition on first-syllable weight here —
+   the diagnostic is the *medial* syllable being short. R/T §6.8.1
+   agrees: trisyllabic apocope is licensed by the *medial* short
+   syllable, regardless of how the first syllable's weight was
+   constituted.
+
+So the missing clause is a real lacuna, not a deliberate restriction.
+The other "C+ first syllable" rules (long-V, long-diphthong) already
+encode this: they all use `+` to allow any consonant count after the
+first nucleus. The short-V clause is the odd one out.
+
+#### Proposed fix
+
+Change the first-syllable consonant count in the trisyllabic short-V
+clause from exactly 1 (`OEAnyConsonant`) to 1+ (`OEAnyConsonant+`):
+
+```
+{*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+{*u} -> 0 || EnglishStarShortVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+{*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+```
+
+This is a one-token edit (`OEAnyConsonant` → `OEAnyConsonant+`)
+applied to each of the three short-V trisyllabic clauses. It harmonises
+the short-V case with the long-V / long-diphthong cases, which already
+use `OEAnyConsonant+`.
+
+#### Risk assessment
+
+- **Over-application risk**: low. Cases newly captured are exactly the
+  shape `ShortV + 2+C + ShortV + 1+C + _ + #`. This is the canonical
+  trisyllabic-with-heavy-first shape. Most such etyma in our TSV
+  already produce the right output via medial syncope + final apocope
+  acting separately; the only forms that would change behaviour are
+  those where syncope alone is not enough to feed final apocope —
+  exactly the case we want to fix.
+- **Regression risk**: medium-low. Need to scan the mismatch report
+  before/after the change to verify no other rows flip. Forms with a
+  short-V heavy first syll, a short medial vowel, and a final high
+  vowel are not numerous; those that exist either should apocopate
+  (the Campbell §345 case) or are weak nouns where the final vowel
+  belongs to the inflectional class and would need TSV-level handling
+  anyway.
+- **Theoretical risk**: very low. Campbell §345 and R/T §6.8.1 both
+  endorse the broader rule.
+
+#### Verification plan
+
+1. Apply the one-token edit, rebuild bins.
+2. Re-run `oe_mismatch_report.py`. Expected: total 13 → 12 (the
+   `*spennilō` row now matches; no new mismatches introduced).
+3. Spot-check probes:
+     - `*spennilō → spinl` ✓ (target)
+     - `*spinilō → spinl` ✓ (no change — already worked)
+     - `*wíntruz → winter` ✓ (no regression — Step 2 baseline)
+     - `*buttmaz → botm` ✓ (no regression — original *tt case)
+4. If any row flips negative, drop the broadening and instead add a
+   targeted clause:
+     `ShortV + OEAnyConsonant OEAnyConsonant+ + ShortV + OEAnyConsonant+ + _ + #`
+   which matches *only* the heavy-first shape.
+
+#### Chronology summary (answering the original question)
+
+The user's hypothesis was relative chronology. The actual structure
+of the bug is mostly missing-rule rather than ordering — but it does
+have a chronology component: at apocope time the form is still
+`*spinnilu` (degemination is later), so the rule must see the geminate.
+Reordering degemination earlier would *not* help, because at
+degemination time (after i-umlaut, before syncope) the geminate is
+still flanked by vowels (`*i*n*n*i*l*u`) and our preconsonantal-only
+degemination wouldn't fire. The medial syncope (which puts `*nn` next
+to `*l`) is correctly downstream of apocope. So the sequence
+apocope → syncope → degemination is the right one; the apocope step
+just needs a complete set of trisyllabic clauses to do its job.
+
+
+#### Step 3 first-attempt postscript (failed)
+
+The "single-token broadening" fix proposed above was implemented and
+verified empirically. It successfully fixes `*spennilō → spinl`, but
+**introduces a regression**: `*fúrxtiθō → fyrht` (expected `fyrhtu`).
+
+Net mismatch count: 13 → 13 (one bug traded for another).
+
+The diagnosis above understated the protective role of the narrow
+trisyllabic clause. With `OEAnyConsonant` (exactly 1) in the first-
+syllable slot, etyma like `*fúrxtiθu` (3-C cluster *r*x*t in first
+syll) silently escaped trisyllabic apocope, then medial syncope plus
+dental assimilation made the form disyllabic (*furxtu = fyrhtu) — but
+by that time apocope was past, so the -u of the abstract -þu/-tu
+suffix was preserved. This protection is what Campbell §588 / R/T
+calls the "abstract noun in -þu" retention, and it's currently
+implemented (implicitly) by the narrow trisyllabic apocope clause.
+
+Broadening the clause to `OEAnyConsonant+` removes that implicit
+protection and breaks the -þu retention.
+
+A more surgical fix is needed: ideally one that licenses trisyllabic
+apocope only when the first-syllable heaviness comes from a
+**sonorant geminate that will degeminate later** (the *spennilō
+shape), not from a heterorganic cluster (the *furxtiθō shape).
+
+This will be investigated in a separate sub-loop §17.45.3a; for now
+Step 3 is **paused at baseline** with the apocope rule unmodified.
+The §17.45 row remains in the mismatch report.
+
