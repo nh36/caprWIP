@@ -78,12 +78,14 @@ ADDED IN BATCH 2 (Google Vision OCR, 2026-04-29 morning):
 
 13. Kylstra, A.D. 1983. "Zum Alter des 'älteren' Umlauts im Germanischen."
     Amsterdamer Beiträge zur älteren Germanistik 19: 1–6.
+    doi:10.1163/18756719-019-01-90000002.
     File: docs/references/kylstra_1983_aelteren_umlauts_abag19.{pdf,vision.txt}
     Use: dating of older umlaut in Germanic; cross-reference for *i > *e
     and a-umlaut chronology.
 
 14. Polomé, Edgar C. 1994. "Proto-Germanic and the Reconstruction of
     Proto-Indo-European." NOWELE 23: 3–40.
+    doi:10.1075/nowele.23.01pol.
     File: docs/references/polome_1994_nowele23_proto_germanic.{pdf,vision.txt}
     Use: PGmc vowel-system reconstruction; comparative-method
     methodology relevant to our *e₂ / *i / *u inventory choices.
@@ -103,30 +105,42 @@ ADDED IN BATCH 2 (Google Vision OCR, 2026-04-29 morning):
 REFERENCES STILL OUTSTANDING:
 -----------------------------
 
-The following items from the original list are NOT yet in the project:
+The following items from the original list are NOT yet in the project.
+Full bibliographic data supplied by user 2026-04-29:
 
 A. Beeler, Madison S. 1966. "Proto-Germanic [i] and [e]: One Phoneme
    or Two?" Language 42(2): 473–474.
+   doi:10.2307/411701.
 
 C. Polomé, Edgar C. 1988. "Are There Traces of Laryngeals in Germanic?"
-   In Bammesberger, ed., Die Laryngaltheorie und die Rekonstruktion
-   des indogermanischen Laut- und Formensystems, 383–414. Heidelberg:
-   Carl Winter.
+   In Alfred Bammesberger, ed., Die Laryngaltheorie und die
+   Rekonstruktion des indogermanischen Laut- und Formensystems,
+   383–414. Heidelberg: Carl Winter.
 
 E. Rice, Keren. 1994. "Peripheral in Consonants." Canadian Journal of
-   Linguistics 39(3): 191–216.
+   Linguistics / Revue canadienne de linguistique 39(3): 191–216.
+   doi:10.1017/S000841310001522X.
 
 F. Krahe, Hans & Wolfgang Meid. 1969. Germanische Sprachwissenschaft.
    3 vols. 7th ed. Berlin: de Gruyter. (Vol. I §36.)
 
 G. Beeler, Madison S. 1966. "The Interrelationships within
-   'Baltic-Slavic'." (Reference incomplete; cited in Fulk §4.3.)
+   'Baltic-Slavic'." (Reference incomplete; cited in Fulk §4.3.
+   May actually be a misremembered cite of A above — both are Beeler
+   1966 in Language 42; only the [i]/[e] paper has been confirmed.)
 
 H. Polomé, Edgar C. 1987–88. "Some Aspects of Proto-Germanic Phonology."
-   (Journal unknown.)
+   (Journal unknown — full reference still needed.)
 
 I. Kylstra, A.D. (date?) "On the Status of German e < i before r."
-   (Journal unknown — cited in Fulk §4.3 n.5; may be the same as B.)
+   (Journal unknown — cited in Fulk §4.3 n.5. Likely distinct from
+   the Kylstra 1983 ABäG 19 paper now in batch 2; full reference
+   still needed.)
+
+   NOTE: Items A, C, E above now have full bibliographic data with
+   DOIs and can be requested directly. F is a multi-volume reference
+   grammar (physical/library acquisition). G, H, I still need
+   bibliographic detective work before they can be sourced.
 
 
 SCORECARD
