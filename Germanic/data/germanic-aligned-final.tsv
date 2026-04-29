@@ -1191,7 +1191,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 983	ʃ v ɪ m ə n	*swímmaną	ʃ v ɪ m ə n ( - - )	ʃvɪmən	schwimmen	270	German					swim	*swímmaną	271
 1078	z ʋ ɛɪ n	*swīną	z ʋ ɛɪ n ( - - )	zʋɛɪn	zwijn	295	Dutch					swine	*swīną	272
 1077	s ʋ aɪ n	*swīną	s ʋ aɪ n ( - - )	sʋaɪn	swine	295	English					swine	*swīną	272
-2238	s w ī n	*swīną	s ʋ aɪ n ( - - )	sʋaɪn	swīn	295	Old_English	Proto: oblique *swīnăn→*swīną (n. a-stem nom.sg.; Kroonen)				swine	*swīną	272
+2238	s w ī n	*swḯną	s ʋ aɪ n ( - - )	sʋaɪn	swīn	295	Old_English	Proto: oblique *swīnăn→*swīną (n. a-stem nom.sg.; Kroonen) §17.46 Phase 2: PROTOFORM accented (ḯ = stressed long *ī, U+1E2F) so NWGmcInStemNLoss does not fire on the root *ī.				swine	*swīną	272
 1076	ʃ v ai n	*swīną	ʃ v ai n ( - - )	ʃvain	Schwein	295	German					swine	*swīną	272
 209	z ʋ aː r t	*swérdą	z ʋ aː r t ( - - )	zʋaːrt	zwaard	58	Dutch					sword	*swérdą	273
 208	s ɔː d	*swérdą	s - ɔː - d ( - - )	sɔːd	sword	58	English					sword	*swérdą	273

@@ -870,6 +870,11 @@ define OldEnglishRemoveStars [
     {*ē} -> ē,
     {*i} -> i,
     {*ī} -> ī,
+    # §17.46 stressed long *ḯ collapses to plain ī at the orthography
+    # boundary — OE does not orthographically distinguish stressed-root
+    # from unstressed-suffix long *ī. The distinction served only to
+    # keep NWGmcInStemNLoss from firing on stem-internal *ī.
+    {*ḯ} -> ī,
     {*o} -> o,
     {*ō} -> ō,
     {*u} -> u,
