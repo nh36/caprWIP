@@ -988,7 +988,7 @@ define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*x}];
 # Voiceless fricatives only - for NSL (Fulk §4.11: *mf, *ns, *nþ)
 define EnglishStarVoicelessFricative [{*f} | {*s} | {*θ} | {*x}];
 
-define EnglishIUmlautTrigger [{*i} | {*ī} | {*j}];
+define EnglishIUmlautTrigger [{*i} | {*ī} | {*ḯ} | {*j}];
 
 define EnglishBackMutationTrigger [EnglishStarBackVowel | {*w}];
 
@@ -2736,10 +2736,13 @@ define OEVelarPalatalization [
     {*k} -> {*ʧ} || .#. _ EnglishStarFrontVowel,
     # Rule 2: non-initial *k before *i or *ī only
     {*k} -> {*ʧ} || _ [{*i} | {*ī}],
+    {*k} -> {*ʧ} || _ {*ḯ},
     # Rule 3: *k after *i/*ī before any front vowel (intervocalic)
     {*k} -> {*ʧ} || [{*i} | {*ī}] _ EnglishStarFrontVowel,
+    {*k} -> {*ʧ} || {*ḯ} _ EnglishStarFrontVowel,
     # Rule 4: *k after *i/*ī at word boundary
     {*k} -> {*ʧ} || [{*i} | {*ī}] _ .#.,
+    {*k} -> {*ʧ} || {*ḯ} _ .#.,
     # *k before *j
     {*k} -> {*ʧ} || _ {*j},
     # *kk before *j: geminate palatalization (parallel to *gg below).
@@ -2979,6 +2982,8 @@ define OEContraction [
     {*ē} {*e} -> {*ē},
     {*ī} {*a} -> {*ī},
     {*ī} {*e} -> {*ī},
+    {*ḯ} {*a} -> {*ḯ},
+    {*ḯ} {*e} -> {*ḯ},
     {*ō} {*a} -> {*ō},
     {*ō} {*e} -> {*ō},
     {*ū} {*a} -> {*ū},
