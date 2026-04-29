@@ -1,0 +1,922 @@
+=== page 001 ===
+
+Early Medieval England and its Neighbours (2026), 52, e9, 1–18
+doi:10.1017/ean.2025.10012
+CAMBRIDGE
+UNIVERSITY PRESS
+RESEARCH ARTICLE
+A New Early-Ninth-Century Manuscript of
+Cadmon's Hymn: Rome, Biblioteca Nazionale
+Centrale, Vitt. Em. 1452, 122v
+Elisabetta Magnanti and Mark Faulkner
+School of English, Trinity College Dublin, Ireland
+Corresponding author: Elisabetta Magnanti; Email: magnante@tcd.ie
+(Received 15 August 2025; revised 05 December 2025; accepted 08 December 2025)
+Abstract
+This article describes Rome, Biblioteca Nazionale Centrale, Vitt. Em. 1452 + Durham (North
+Carolina), Duke University, David M. Rubenstein Rare Book & Manuscript Library, Lat.
+140, a copy of Bede's Historia ecclesiastica gentis Anglorum made at Nonantola, north-central
+Italy, in the first third of the ninth century. The manuscript's complex provenance history
+has meant its existence has only fleetingly been acknowledged in scholarship on the
+Historia ecclesiastica, which has failed to recognise it contains a copy of the Old English
+version of Cædmon's Hymn, the third oldest, after those in the Moore and Leningrad Bedes,
+and the earliest surviving text of the Northumbrian eordu recension. The article presents a
+diplomatic transcription of this new text of the Hymn, as well as a new critical edition,
+stemma, and history of the eordu recension. We also discuss its likely punctuation, which,
+uniquely for Old English, seems to have consisted in interword interpuncts.
+Keywords: Old English Poetry; Caedmon's Hymn; Bede; Historia ecclesiastica gentis
+Anglorum; England and the Continent; Punctuation
+'There is no such manuscript.'
+(K. W. Humphreys and A. S. C. Ross, 'Further Manuscripts of Bede's “Historia
+Ecclesiastica”, of the “Epistola Cuthberti de Obitu Bedae”, and Further Anglo-Saxon
+Texts of "Cadmon's Hymn” and “Bede's Death Song", N&Q 22.2 (1975), 50–5, at 53.)
+1. Introduction
+Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II', Vitt. Em. 1452 +
+Durham (North Carolina), Duke University, David M. Rubenstein Rare Book &
+Manuscript Library, Lat. 140 is a copy of Bede's Historia ecclesiastica gentis
+© The Author(s), 2026. Published by Cambridge University Press. This is an Open Access article, distributed under
+the terms of the Creative Commons Attribution licence (http://creativecommons.org/licenses/by/4.0), which
+permits unrestricted re-use, distribution and reproduction, provided the original article is properly cited.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 002 ===
+
+2
+Elisabetta Magnanti and Mark Faulkner
+Anglorum, the Pseudo-Augustinian Sermo 160, and Jerome's Epistula ad Evangelum
+Presbyterum de Melchisedech (Ep. 73), produced at Nonantola, in north-central Italy,
+in the first third of the ninth century. While the manuscript was mentioned
+(twice, as both doubtful and untraced) in Laistner and King's Hand-List of Bede
+Manuscripts (1943),¹ and its whereabouts were known to Colgrave and Mynors
+in 19692 (only for the Director of the Library which subsequently acquired it in 1972
+to categorically deny its existence to Humphreys and Ross in 1975), its complex
+provenance history, elucidated below, means it has never been recognised that it
+contains a copy of the Old English version of Cædmon's Hymn (fig. 1).³
+The manuscript is important as one of the earliest surviving texts of Bede's
+Historia ecclesiastica, written within a century of his completion of it in 731, and
+offering further evidence of its early Continental transmission. Its principal interest
+here is as: (i) the third earliest vernacular text of Cædmon's Hymn, after those in the
+Moore and Leningrad Bedes; (ii) the earliest witness to the Northumbrian eordu
+recension, of which it offers a much higher quality text than any of the three other
+known witnesses; and (iii) the earliest copy of the Hymn to be embedded directly in
+Bede's Latin. Additionally, it contains the second earliest copy of the so-called
+'Moore Annals', a set of four annals covering the years 731-734 named after the
+Moore Bede, in which they were entered by the main scribe after the explicit of the
+Historia ecclesiastica (Cambridge, University Library, Kk. 5. 16, 128r).5
+In what follows, we discuss first the history of the manuscript and its rediscovery
+(§2), as well as details of its production at Nonantola (§3). We then provide a
+diplomatic version of its text of Cædmon's Hymn (§4.1), a new edition of the
+Northumbrian eordu recension that takes the evidence of this new manuscript into
+account (§4.2), and a philological commentary (§4.3), along with an account of the
+unique punctuation of this witness and, putatively, of the eordu recension (§4.4).
+2. The History of the Manuscript
+As we discuss in §3, the manuscript with which this article is concerned was
+copied in the first third of the ninth century at the Benedictine Abbey of St
+1
+M. L. W. Laistner and H. H. King, A Hand-List of Bede Manuscripts (New York, 1943),
+p. 103.
+2 Bede's Ecclesiastical History of the English People, ed. and trans. B. Colgrave and R. A. B. Mynors
+(Oxford, 1969), pp. lxix-xx (hereafter HE).
+3
+Hence the manuscript is not mentioned by P. Wuest, ‘Zwei neue Handschriften von Caedmons
+Hymnus', ZDA 48 (1906), 205–26; E. V. K. Dobbie, The Manuscripts of Cædmon's Hymn and Bede's Death
+Song: with a Critical Text of the Epistola Cuthberti de obitu Bedæ, Columbia Univ. Stud. in Eng. and
+Comparative Lit. 128 (New York, 1937); D. P. O'Donnell, ‘A Northumbrian Version of "Cadmon's
+Hymn" (eordu recension) in Brussels, Bibliothèque Royale MS 8245-57 ff. 62r2-v1: Identification,
+Edition and Filiation', Beda Venerabilis: Historian, Monk and Northumbrian, eds. L. A. J. R. Houwen and
+A. A. MacDonald, Mediaevalia Groningana 19 (Groningen, 1996), 139–65; P. Cavill, ‘The Manuscripts of
+Caedmon's Hymn', Anglia 118.4 (2001): 499–530; D. P. O'Donnell, Cædmon's Hymn: a Multimedia Study,
+Archive and Edition, SEENET A.8 (Cambridge, 2005).
+4
+For a transcription see Venerabilis Baedae Opera Historica, ed. C. Plummer, 2 vols. (Oxford, 1896) I,
+361 and Colgrave and Mynors, HE, p. 572.
+5
+As such, it is one of at least eleven unnoticed manuscripts of these annals, evidence Magnanti will
+survey in a forthcoming publication.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 003 ===
+
+Early Medieval England and its Neighbours
+ta
+Commun
+adfuam
+& compunhone compofitis infua ident anglopi linguap fer pee, Cauf
+car minib: multo fumſe pe animi adcontemptu ſety sapperrifum
+unde celeftyr incents, Erquideal poſtillingene anglo que féligiofa poeme
+facere &præbam-fednullus eumequipa safe potum. Haq spienion
+Hæq
+abominis. neq; phominem inity ruruf canendi &ftem didiar-redoumi
+tus adureuf gaf canendi doni accepit; Undembilumqua fiule, & ſup
+vacun poemans facese porur, ſedea tanúmedo que adfeligionem
+punem jeligora euslingua decebant, Siquidem in abriu feculan
+ufq; adiempos ppulttions says conftitutus milcar muni aliquan
+do dediceper: Unde nonnumque inconuiuio cueffer leue caufa
+deceu romspordine cantare deben lleuad ppinquae
+fibi chafu cerneboot furgebat comediacena vezjeffer
+demumpe pedabar. quodd umée pope quod à faccept. expeditadoms
+ezſeſfuſés adnabula sumento fú.quoſigcuſtodiano de
+laer delegaan. 11 competen, membredediſſeſopoy adigen
+es quidá prommu. eu que saliens actus appellant nomine, cædmon
+inquid camu milu aliquid. Allesesponder. nefco inquidexmex
+je. Nacevideo decomumuno egreffus.hucfucceff quacana ſe poſe:
+Rur fille quicé coloquebatur. at tamen are mil canta haber.
+quid inquid debes contoope, &ille inquid-camppncipicture
+pú que accepto ſeſponſs. Axxispiecept ca ma je mlecudendi con
+Denfuerfos quofniqué andresen quopisteen ſenſus nupue.
+caulun. hefze. he funn ca & puard meudaes meechy, and his
+modgedanes puere puldur. foeder fine he pundre gyer
+ecidisch an or afralde. he sent scoop for dubear nu hefeme
+hps fe haliz sappend da middu gear amoncinner peard ic
+duchem atfer na de-fifu enfoldu.fje. all mech
+hora
+Hunc laudare debemus audoje je celefty pottenacitacent
+3
+Figure 1. Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II', Vitt. Em. 1452, 122v. Courtesy of
+Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II'.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 004 ===
+
+4 Elisabetta Magnanti and Mark Faulkner
+Silvester in Nonantola, in north-central Italy. It is evident it remained there until
+the late fifteenth century, as the abbey's medieval catalogues show, listing it as
+no. 60 in the 1166 catalogue; 6 no. 96 in the 1331 catalogue; no. 83 in the 1464.
+catalogue; and no. 136 in that of 1464-90. By 1650, the codex had passed to the
+Cistercian monastery of Santa Croce in Gerusalemme, Rome, located on the site
+of the Basilica Sessoriana in the Palatium Sessorianum, the former imperial
+complex that had housed the residence of Empress Helena, mother to Constan-
+tine. At Santa Croce, Abbot Ilarione Rancati (1594-1663) established the original
+nucleus of the Biblioteca Sessoriana, assembling a total of 171 codices from
+various monastic sites, principally Nonantola. 10 The manuscript was recorded as
+item number 5 in the catalogue of Santa Croce compiled in 1664 by Abbot Franco
+Ferrari (c. 1635–1711):11 this was the first systematic inventory of the monaste-
+ry's holdings, commissioned by Pope Alexander VII following the death of
+Rancati, with the explicit intention - in Ferrari's words - 'to distinctly determine
+whether any were singular, rare, or had never been printed ... amidst the
+obscurity of so many ancient manuscripts'.12 The manuscript remained in the
+monastery until the late eighteenth century, figuring as item number 107 in the
+inventory compiled around 1742 by Cardinal Gioacchino Besozzi (1679-1755)13
+6 'Istoria Anglorum Beda; volumen uno' (Rome, Biblioteca Nazionale Centrale, Sess. 31, 63v). See
+G. Gullotta, Gli antichi cataloghi e i codici della abbazia di Nonantola, Studi e testi 182 (Vatican City, 1955),
+35 and 65–6; J. Ruysschaert, Les manuscrits de l'abbaye de Nonantola, Studi e testi 182bis (Vatican City,
+1955), 27 (B. 60).
+7
+'Item Ystoria Anglorum, et inc.: «Gloriosissimo Regi» et finit: «corpori valetudini»>' (Nonantola,
+Archivio Storico Abbaziale, Inventari, 1331, 7r). See Gullotta, Gli antichi cataloghi, pp. 82 and 159;
+Ruysschaert, Les manuscrits, p. 34 (C. 96).
+8
+'Item unus liber, qui intitulatur: Ystoria Angelorum [sic], qui inc.: «Gloriosissimo regi Coliulfo» et
+finit, in penultima carta: «partem accepisse pontificis»' (Nonantola, Archivio Storico Abbaziale,
+Pergamene, Extra 2, 5, col. 3a). See Gullotta, Gli antichi cataloghi, pp. 255 and 293; Ruysschaert, Les
+manuscrits, p. 46 (D. 83).
+9
+‘Item unus liber Bede de Gestis Anglorum seu Istoria, copertus de corio albo. Prima carta inc.:
+<<Gloriosissimo» et finit: «extiterit»; ultima inc.: «pontificis» et finit: «valitudini»' (Nonantola,
+Archivio Storico Abbaziale, Inventari, 1464–90, 8r). See Gullotta, Gli antichi cataloghi, pp. 369 and
+447; Ruysschaert, Les manuscrits, p. 55 (E. 136).
+10
+M. Palma, Sessoriana: materiali per la storia dei manoscritti appartenuti alla biblioteca romana di
+S. Croce Gerusalemme, Sussidi Eruditi 32 (Rome, 1980), ixx and xxvi; V. Jemolo and M. Palma, Sessoriani
+dispersi: contributo all'identificazione di codici provenienti dalla Biblioteca Romana di S. Croce in Gerusalemme,
+Sussidi Eruditi 39 (Rome, 1984), 10.
+11 'In folio parvo perg. Bedae libri quinque Historiae gentis Anglorum, ut in impressis. In hoc
+codice quilibet liber praemittit etiam indicem capitulorum et unus vel alter etiam prologum, quod in
+impressis non fit. Anno 1166 fuit monasterii Nonantulae. Habet fol. 205' (Vatican City, Biblioteca
+Apostolica Vaticana, Chig.R.II.64, 12r-71v). This is Ferrari's autograph, presented to Pope Alexander
+VII. See Palma, Sessoriana, p. 5.
+12
+‘L'intention del papa fu di sapere distintamente le varie materie contenute in questi codici, e fra
+esse se ve n'erano de singolari, rare e che non fossero mai state stampate, onde nell'oscurità di tanti
+volumi antichi manuscritti ...' (Milan, Biblioteca Ambrosiana, B 256 suss., 195v-196r). See Palma,
+Sessoriana, p. xxvi. This and all subsequent translations are ours, unless otherwise stated.
+13
+G. Besozzi, Notae centum quadraginta duo in Sessorianos Codices (Rome, Biblioteca Nazionale
+Centrale, Sess. 488, 1r-203v, at 140v-142r). Palma, Sessoriana, p. xx, n. 8.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 005 ===
+
+Early Medieval England and its Neighbours 5
+and as number 103 in an anonymous index prepared in the late eighteenth
+century, under the heading codices antiquiores et pretiosiores. 14
+In 1810, amid the upheavals of the Napoleonic Wars, a collection of 440 manu-
+scripts was transferred from Santa Croce in Gerusalemme to the Vatican Library for
+safekeeping. The codices remained there for seven years, until 8 March 1817, when
+they were returned to the Cistercians and temporarily relocated to the monastery
+of San Bernardo alle Terme, which had been repurposed as a hospice under the
+French occupation.15 It was presumably from San Bernardo alle Terme that the
+manuscript vanished sometime before 1821, along with many other Sessoriani
+codices, abstracted and sold into private hands.16 Of the 'countless and outstanding
+books' that were stolen, 17 Alberico Amatori (1811-75), custodian of the library at
+Santa Croce between 1834 and 1849, was able to identify thirty-five deperditi
+manuscripts, among which ours is listed as number 24.18
+The manuscript resurfaced a few years later, in 1827, as number 2701 in the
+collection of Sir Thomas Phillipps, 19 who likely acquired it from the London
+antiquarians Payne and Foss, known to have purchased several Nonantolan
+codices from the Roman bookseller Giovan Battista Petrucci, 20 some others of
+which eventually also passed into Phillipps's ownership. 21 Already in possession
+of another copy of Bede's Historia ecclesiastica, dating to the final third of the ninth
+14
+‘Ejusdem [Bedę] Libri 5 Historia Anglicana 103' (Rome, Biblioteca Nazionale Centrale, Sess.
+490, 174r), and 'Codex CIII: membranaceus in folio parvo. Seculi IX charactere Langobardico. Exaratus
+vide 15 E' (Rome, Biblioteca Nazionale Centrale, Sess. 490, 211r-214v, at 212v). Palma, Sessoriana, p. xx,
+n. 10; Jemolo and Palma, Sessoriani dispersi, p. 12.
+15
+16
+Palma, Sessoriana, pp. xx-xxii.
+G. Bottino, De Bibliotheca Sessoriana Synopsis Historica, edited in Palma, Sessoriana, p. 105. On the
+theft from San Bernardo alle Terme, see Palma, Sessoriana, pp. xxx-xxxii and 115-8; Jemolo and
+Palma, Sessoriani dispersi, p. 14.
+17
+p. 105.
+18
+‘Libri enim pene innumeri et praestantiores ...', G. Bottino, Synopsis Historica in Palma, Sessoriana,
+‘24. Nº. 107. Historia Gentis Anglorum S. Bedae Presbyteri Venerabilij 2º. Epistula S. Hieronymi
+ad Evagium [sic]. Saeculi IX' (Rome, Biblioteca Nazionale Centrale, Sess. 534, pp. 565-9, at 568). The
+number 107 refers to Besozzi's catalogue.
+19 'Beda de Gestis Anglorum. vel. saec. xiv [sic]'. See Catalogus Librorum Manuscriptorum in Bibliotheca
+D. Thomæ Phillipps Bart. (Middle Hill, 1837), p. 31.
+20
+Although it might later have been erroneously recorded by Phillipps himself as an acquisition
+from Thomas Thorpe. See A. L. N. Munby, The Formation of the Phillipps Library up to the Year 1840,
+Phillipps Studies 3 (Cambridge, 1954), 43–6 and 149; Palma, Sessoriana, p. xxii, n. 18.
+21
+Other Nonantola manuscripts acquired by Phillipps from Payne and Foss, currently in the
+National Central Library of Rome, include: Rome, Biblioteca Nazionale Centrale, Sess. 590 (Phillipps
+12263, E. A. Lowe, Codices Latini Antiquiores, 12 vols. (Oxford, 1934–71) IV, no. 427, I. Giorgi, Catalogo dei
+manoscritti Sessoriani II, 529–30); Vitt. Em. 1006 (Phillipps 12260, CLA IV, no. 428, Biblioteca nazionale
+centrale, Roma, Catalogo dei manoscritti Vittorio Emanuele II, 332–3); Vitt. Em. 1190 (Phillipps 8400,
+Catalogo Vittorio Emanuele III, 35–50); Vitt. Em. 1347 (Phillipps 12262, Catalogo Vittorio Emanuele III,
+250–1); Vitt. Em. 1325 (Phillipps 12266, Catalogo Vittorio Emanuele III, 219–22); Vitt. Em. 1326 (Phillipps
+12275, Catalogo Vittorio Emanuele III, 222–3); Vitt. Em. 1347 (Phillipps 12262, Catalogo Vittorio Emanuele
+III, 250–1); Vitt. Em. 1348 (Phillipps 6546, Catalogo Vittorio Emanuele III, 251–3); Vitt. Em. 1357 (Phillipps
+12264, Catalogo Vittorio Emanuele III, 256-9); Vitt. Em. 1408 (Phillipps 12298, Catalogo Vittorio Emanuele
+III, 278–80); Vitt. Em. 1443 (Phillipps 12265, Catalogo Vittorio Emanuele III, 326–30); Vitt. Em. 1472
+(Phillipps 12268, Catalogo Vittorio Emanuele IV, 34-6). For a complete list of Nonantola manuscripts in
+Phillipps's collection, see Palma, Sessoriana, p. 126.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 006 ===
+
+6
+Elisabetta Magnanti and Mark Faulkner
+century (Berlin, Staatsbibliothek zu Berlin-Preußischer Kulturbesitz, Phill.
+1873), 22 Phillipps undertook a collation of the two manuscripts, noting in pencil
+in the margins of the Berlin copy beside the Latin of Cædmon's Hymn: 'In codice
+Langobardico, ... linguae Saxonicae' (81r). Further evidence that this note was
+referring to our copy is provided by Phillipps's transcription of the Rome text of
+the Moore Annals in the margins of the relevant folios of the Berlin codex (113v-
+114r). The manuscript, along with almost all of Phillipps's collection, was
+acquired after his death by William H. Robinson Ltd. in 1872, and in due course
+sold in London in 1948 as 'A Supremely Important Manuscript of Bede's History....
+One of the very few almost contemporary manuscripts now remaining to us',
+thus entering the collection of Martin Bodmer in Cologny, Switzerland.23
+It was likely during its passage through successive hands that a fragment of a
+detached leaf containing a portion of the Recapitulatio (V.xxiv), already loose.
+during its time in Phillipps's possession - as evidenced by his pencil inscriptions,
+'Part of Bede's Gesta Anglorum' on the leaf itself (fig. 2) and 'caret uno folio' on
+the Rome volume (164r) - became separated from the manuscript. The fragment
+was auctioned at Sotheby's, London, in 1976, 24 where it was acquired by the
+London dealer Winifred Myers on behalf of Duke University. 25
+Tranport
+a funt annod xxxvi
+chhofeptima ufque adre..
+our faceta enkel sulu &æppe me
+ofcdimidia abho na samo.nl vinda
+znaje cepit aquose zachs nor danym bpfum præpia
+3non
+aan & &cu annus msno pmanft dnno
+Figure 2. Durham (North Carolina), Duke University, David M. Rubenstein Rare Book & Manuscript
+Library, Lat. 140, recto. Courtesy of David M. Rubenstein Rare Book & Manuscript Library, Duke
+University.
+22
+B. Bischoff, Katalog der festländischen Handschriften des neunten Jahrhunderts: mit Ausnahme der
+wisigotischen, 4 vols. (Wiesbaden, 1998–2014) I, 93, no. 440.
+23 W. H. Robinson, Catalogue 77: a Selection of Extremely Rare and Important Printed Books and Ancient
+Manuscripts for sale by William H. Robinson Ltd. (London, 1948), pp. 98–9, at 98. Lot no. 93.
+24
+Sotheby & Co., Catalogue of Manuscripts of Papyrus Vellum and Paper of the 7th Century to the 18th
+Century, Bibliotheca Phillippica: Med. Manuscripts ns 11 (London, 1976), 4. Lot no. 853.
+25
+Personal communication from J. Andrew Armacost, Curator of Collections & Head, Collection
+Development Department, Duke University, 13 August 2025.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 007 ===
+
+Early Medieval England and its Neighbours
+7
+Hardy was not aware of these ownership transfers when, in 1862, compiling a
+list of manuscripts of the Historia ecclesiastica for his Descriptive Catalogue of
+Materials Relating to the History of Great Britain and Ireland, he classified the codex
+as “MS. Bibl. S. Crucis in Jerusalem, Romæ, 5", relying on Ferrari's 1664 catalogue,
+despite it having been in Phillipps's possession for about thirty-five years by that
+time. 26 Nor were Laistner and King when, in 1949, they identified it as 'a doubtful
+copy' of Bede's Historia ecclesiastica, supposedly housed in the Sessoriana collection
+at the National Central Library in Rome, when it had entered Bodmer's collection
+the year before; also separately listing the codex Phillipps 2701 as 'untraced'.27
+Our manuscript (but not its copies of Cædmon's Hymn or the Moore Annals) was
+known to Colgrave and Mynors to be part of Bodmer's collection,28 where it
+remained until 1970, when it was purchased by the Austrian-born book dealer
+H. P. Kraus, by then based in New York.29 From Kraus, the manuscript was
+acquired two years later by the Italian Ministry of Public Education and was
+subsequently gifted by the Italian Government to the National Central Library of
+Rome in 1972, 30 where it is currently housed under the shelfmark Vittorio
+Emanuele 1452.31 Nevertheless, when in 1975, as part of their research into
+further copies of Cadmon's Hymn - which ultimately led to the discovery of four
+additional copies 32 - Humphreys and Ross contacted the National Central Library
+to verify Laistner's report of a doubtful copy of Bede's Historia ecclesiastica in its
+holdings, the library's head at the time categorically denied that any such
+manuscript existed. 33 Following our enquiry in February 2025, the National
+Central Library of Rome digitized the manuscript in full and made its catalogue
+description available online in May of the same year.³4
+3. The Manuscript
+The Rome manuscript consists of Bede's Historia ecclesiastica (1r-28r10,
+29v23-165v12),
+Pseudo-Augustine's
+(28r11-29v20)
+with
+Sermo 160
+26
+T. D. Hardy, Descriptive Catalogue of Materials Relating to the History of Great Britain and Ireland to the
+End of the Reign of Henry VII, 3 vols. (London, 1862–71) I pt. 1, 441.
+27 Laistner and King, A Hand-List, p. 103. Cf. also p. 93, where Laistner states: 'The codex reputed to
+be in the library of Santa Croce in Gerusalemme in Rome should be among the other codices Sessoriani
+in the Biblioteca nazionale Vittorio Emanuele, but I have been unable to ascertain whether it still
+exists.' In 1955, Gullotta, unaware that the manuscript had entered Bodmer's collection a few years
+earlier, regarded it as lost: 'Il cod., ora perduto ...', see Gullotta, Gli antichi cataloghi, p. 447.
+28
+Colgrave and Mynors, HE, pp. lxix-xx.
+29 H. P. Kraus, A Rare Book Saga: the Autobiography of H. P. Kraus (New York, 1978), pp. 282–4.
+30 Catalogo Vittorio Emanuele IV, 18-20, at 20.
+31 Bischoff, Katalog der festländischen Handschriften des neunten Jahrhunderts III, 279, no. 5346.
+32 Brussels, Bibliothèque Royale, 8245–57, 62r2-62v1 (dated 1489); San Marino, Huntingdon
+Library, HM 35300, 82r (s. xv med); †Tournai, Bibliothèque Municipale, 134, 78v (s. xii); London,
+College of Arms, M.6, 86v (s. xii). See Humphreys and Ross, 'Further Manuscripts', p. 53.
+33
+Humphreys and Ross, ‘Further Manuscripts', p. 53 and n. 16.
+34 ManusOnline, ‘Rome, Biblioteca Nazionale Centrale ‘Vittorio Emanuele II', Vitt.Em.1452',
+https://manus.iccu.sbn.it/cnmd/0000068990, accessed 30 March 2026.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 008 ===
+
+8 Elisabetta Magnanti and Mark Faulkner
+intercalated between the end of Book I and the Capitula of Book II, 35 followed
+by Jerome's Epistula ad Evangelum Presbyterum de Melchisedech (Ep. 73) (165v13–
+168v).36 According to the library's catalogue, the leaves measure approxi-
+mately 285 × 195 mm, with a written space of about 230 × 150–60 mm. The text,
+written in long lines and ruled with a hard point, is arranged in twenty-eight
+lines per page, occasionally fewer. The current binding dates to 1828, shortly
+after Phillipps acquired it, and is the work of Charles Lewis (1786–1836), a
+bookbinder active in London in the early nineteenth century, as recorded by a
+pencil inscription on the front pastedown. The codex consists of twenty-three
+quires: eight quaternions, six ternions, six quinternions, and two quires of
+four, arranged as follows: 16 (fols. 1-6), II-VII³ (fols. 7–54), VIII-IX¹º (fols. 55–74), x
+(fols. 75-80), x18 (fols. 81-8), xII (fols. 89-94), XIII¹0 (fols. 95-104), xiv (fols. 105-8),
+xv10 (fols. 109–18), xvi³ (fols. 119–26), xvII¹º (fols. 127–36), xvIII (fols. 137–42), xix
+(fols. 143-52), xx-xx16 (fols. 153-64), xxII (fols. 165–8).37
+4
+10
+10
+6
+10
+6
+10
+The manuscript constitutes 'a remarkable example of the pre-Caroline Non-
+antolan style of the first third of the ninth century'.38 Copied by numerous
+scribes, with occasional additions and corrections by contemporary hands, it is
+characterised by a very strong ductus, pronounced long r-ligatures with
+upturned shoulder-stroke, ct and st ligatures, consistent use of oc-shaped a with
+uncial a used as a capital to mark the beginning of paragraphs; alternate use of
+uncial d and straight-backed d; and capital q with the right-hand curve
+extended below the baseline and terminating in a horizonal flourish.39 The
+number four is indicated by Roman numerals arranged in the form of a cross,
+following Nonantolan use (95v, 102v, 109v, 132r, 151v and 164v).4º Initials are
+occasionally outlined by red dots (16r, 18r, 23v, 27r, 28r, 30v, 40r, 42r, 51v, 53r,
+54r, 56r, 59r, 61r: see fig. 3), ‘a decorative motif borrowed from the insular
+tradition', 41 and are touched with yellow, blue, green and orange; more rarely,
+the manuscript has initials characterised by interlacing foliage (2r and 132r).
+The currency of possible Insular affiliations at Nonantola has been tentatively
+attributed by Bischoff to the presence of scribes or exemplars that the centre
+received from Bobbio in the decades immediately following the monastery's
+foundation, in the second half of the eighth century, 42 which may have led to
+35 Augustine, Sermones, ed. J.-P. Migne, PL 39 (Paris, 1865), col. 2059–62; D. Ozimic, Der pseudo-
+augustinische Sermo CLX (Graz, 1979),
+pp. 19–35.
+36 Jerome, Epistolae, ed. J.-P. Migne, PL 22 (Paris, 1845), col. 676–81; Sancti Eusebii Hieronymi Epistulae
+Pars II: Epistulae LXXI-CXX, ed. I. Hilberg, CSEL 55 (Vienna, 1912), 13–23.
+37 M. Morelli and P. Palma, ‘Indagine su alcuni aspetti materiali della produzione libraria a
+Nonantola nel secolo IX', Scrittura e civiltà 6 (1982), 23–98, at 49–50.
+38
+B. Bischoff, 'Manoscritti Nonantolani dispersi dell'epoca Carolingia', Bibliofilia 85.2 (1983), 99–
+124, at 100.
+39
+G. Cencetti, 'Scriptoria e scritture nel monachesimo benedettino', Il monachesimo nell'alto
+medioevo e la formazione della civiltà occidentale, ed. G. Ermini, SettSpol 4 (Spoleto, 1957), 187–220, at
+201-8; Bischoff, ‘Manoscritti Nonantolani', pp. 99–100; M. Branchi, Lo scriptorium e la biblioteca di
+Nonantola (Modena, 2011), p. 30.
+,
+Branchi, Lo scriptorium e la biblioteca di Nonantola, pp. 160–3, at 161.
+40
+41
+Bischoff, 'Manoscritti Nonantolani', p. 105.
+42 Bischoff, 'Manoscritti Nonantolani', pp. 103–4.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 009 ===
+
+Early Medieval England and its Neighbours 9
+1111
+gitur accepte fecedunur.cu'cuntur, fut nomlibur reple
+beper plurima den er lauacfu ce reginepraonis; Anno
+jeg fun indecimo. Quiet anmurdommet Incarnations
+ue
+excemenmo. ungermoseptimo, bantu neto anglopu
+Inbferxma.connorarener conemmur oduczenmur
+Hapaizarurent au ebufaici de roparche proche du æpp
+Lum.Inecla rei per apoftoli qua ibidem pre deligno
+cu ca the fetur. adq; ad perapiendum baptifma Imbu
+efetur. Caro opere conffurn; Inqua & ad curse.
+doctors. atq; anime to paulino. redem sprrcopatur do
+nauit, moxau bæpurma confecuturest. cufecun docen
+re eoden paulmo. malofen pro mloco exauguftiofem dela
+pide-faby care banilicam Incurmedio.pquod prur
+fecepat operon Include/ecur; Preparar ergo funda
+mems Inlngyt promotor perquadra cepro edifi
+cafe banilicam, sed prunquam al mundo perieur efter,
+consummata. pipe.Impia nece ocature; opuride"
+fucceffor fuo.orualdo perpaiendo feliquid, Paulinur
+au&to compost. Sheamus connur.ideturq;adfinen
+impern ferillur uerbudi annuent.æc faueme. ip
+relnéa proinncia predicabar; Cfedebeen; erbaptiza
+bamur. quotquot spam preordinamad ured it enam.
+Inquibur esam. offpd. breadfrid. plufegir edumi. qui
+combo & &crul nati fum; Dequo, enburga. plia cear life
+Fr mercofu bapuzant au compose requent.er
+alu liber eurden.edilberga fegina prosenta elhun
+1
+Figure 3. Rome, Biblioteca Nazionale Centrale ‘Vittorio Emanuele II', Vitt. Em. 1452, 51v. Courtesy of
+Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II'.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 010 ===
+
+10
+Elisabetta Magnanti and Mark Faulkner
+the adoption, among other features, of 'the Anglo-Saxon style of initials in the
+pre-Caroline period' and its combination 'with native traditions'.43
+The version of the Historia ecclesiastica surviving in the Rome manuscript is
+almost complete: the text is acephalous (with the Preface starting at 'diligenter a
+fratribus monasterii, quod ab ipsis conditum') and lacunose at two points due to
+the loss of leaves. The first lacuna occurs in Book I, likely resulting from the
+loss of a single folio between fols. 6 and 7, and encompasses the text following
+Book I.VII (quem lateribus longe lateque deductum' ...) as far as Book I.ix (... 'atque
+in Italiam transire meditantem'). Of the leaf that contained the text between
+Book V.XXII ('octogesimo quinto, dominicae autem incarnationis anno DCCXXXI' ...)
+and the Recapitulatio in Book V.xxiv (... 'Theodoro, utillima x capitulorum') only
+the triangular Duke fragment survives (115 × 200 mm), with annals from the
+Recapitulatio covering the period 449 to 565 on the recto and 633 to 673 on the
+verso. The remaining part of this leaf must have been missing since at least the
+first decade of the nineteenth century, as indicated by the supplementation of
+the text in the hand of Leandro De Corrieri (163v-164r), librarian of Santa Croce
+from 1801 to 1834.
+In consideration of the five criteria which Plummer identified to distin-
+guish m- and c-type manuscripts of the Historia ecclesiastica, the Rome Bede
+can be asserted to belong to the former, as corroborated by its agreement
+with all five readings distinctive of the m-recension.44 Strikingly, however,
+with regard to the additional discrepancy mentioned by Plummer, where the
+c-class refers at the end of Book IV.XXVIII to a single miracle of St Cuthbert
+rather than more than one (unum quod in the c-redaction in lieu of quaedam quae
+in the m-redaction), our manuscript follows the c-type reading (130r7).45 Of the
+three additional criteria identified by Lapidge as distinctive of the two redac-
+tions, our manuscript once again conforms in its entirety to the readings of the
+Incenfuerfor. queſnique audieper quopisteen remus nupul.
+ſaulun. heßza hefunn cas puserd meudaer mecechy and hir
+modgedanes puerc puldur. fordur fine he pundra ghar
+ecidrychain or alcalde. he sent scoop cor dubear nu hefeme
+hip fe haliz sappend. Ja middu gear amonemner plase ac
+da
+enchan atfer na de-fifu on foldu.fjen. all meching;
+Hanelrendfor labemus
+Figure 4: Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II', Vitt. Em. 1452, 122v22-27
+(detail). Courtesy of Rome, Biblioteca Nazionale Centrale 'Vittorio Emanuele II'.
+43
+B. Bischoff, Manuscripts and Libraries in the Age of Charlemagne, transl. M. Gorman (Cambridge,
+1994), 49. See also G. L. Micheli, L'enluminure du haut Moyen Âge et les influences irlandaises (Brussels,
+1939), p. 105; L. Schiaparelli, Influenze straniere nella scrittura italiana dei secoli VIII e IX, Studi e Testi
+49 (Vatican City, 1957), 15–23.
+44
+45
+Plummer, Venerabilis Baedae Opera Historica I, xciv-v; Colgrave and Mynors, HE, p. xli.
+Plummer, Venerabilis Baedae Opera Historica I, xcvii.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 011 ===
+
+Early Medieval England and its Neighbours 11
+m-type.46 Its status within the m-class appears therefore consistent, notwith-
+standing this isolated agreement with the c-class. 47
+4. The Text of Cædmon's Hymn
+Cædmon's Hymn is found on 122v22-27 of the Rome manuscript (fig. 4), as part
+of Book IV.XXII of the Historia ecclesiastica, inserted between Bede's introduction
+to his Latin paraphrase of the Hymn 'quorum iste est sensus' and that paraphrase,
+beginning ‘nunc laudare debemus'. There is no indication that the scribe per-
+ceived it to be a linguistically or textually alien insertion in the text.
+4.1. The Text of Rm
+We begin by offering a diplomatic transcription of Rome's text of Cædmon's
+Hymn. Word division, capitalization, and punctuation have been preserved, and a
+forward slash is used to indicate manuscript line breaks:
+5
+Nupue.sciulun. herga. hefunricaes. puard.
+metudaes. maechti. and his. / mod geðanc.
+puerc. puldur. fadur. suæ hepundra gih[ ]aes 48 /
+ecidrichtin or astalde.
+he aeristscoop eor dubearnū
+hefento / hrofe halig. sceppend.
+ða. middū. geard. moncinnes peard
+eci/drichtin. aefter. tia de.
+.49
+firū. on foldu. frea. allmechtig.;4
+Some unusual word division and the erroneous use of <p> for <p> apart, this is
+clearly a very good text of Cædmon's Hymn, even though the Nonantolan scribe
+does not seem to have been familiar with English orthography. The reading ‘eor
+du' in 5b means Rm's text is part of the eordu recension, hitherto believed to be
+attested in just three manuscripts: Dijon, Bibliothèque Municipale, 574, 59v col.
+2 [Di] (s. xii³/4, Cîteaux); 50 Paris, Bibliothèque nationale de France, Lat. 5237, 72v
+[Pa] (c. 1430, Cologne); 51 and Brussels, Bibliothèque Royale, 8245-57, 62rv
+46 Beda, Storia Degli Inglesi, ed. M. Lapidge, transl. P. Chiesa, 2 vols. (Milan, 2008) I, xcv.
+47
+We are currently investigating the textual affiliations of the text of the Historia ecclesiastica of
+the Rome Bede.
+48
+49
+( ) represent an erased letter.
+There is an additional stroke below the line after the first point, but the ink is significantly
+lighter than that of the preceding words.
+50
+N. R. Ker, Catalogue of Manuscripts Containing Anglo-Saxon (Oxford, 1957), Appendix, no. 8;
+Catalogue général des manuscrits des bibliothèques publiques de France, Départments (Paris, 1889) V,
+142; Dobbie, The Manuscripts of Cadmon's 'Hymn', pp. 17–19; Wuest, ‘Zwei neue Handschriften',
+pp. 206–12.
+51
+Catalogus Codicum MSS Bibliothecae Regiae IV pt. (Paris, 1754), 57; Wuest, ‘Zwei neue Hands-
+chriften', pp. 212–5; Dobbie, The Manuscripts of Cadmon's Hymn, pp. 19–22.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 012 ===
+
+12
+Elisabetta Magnanti and Mark Faulkner
+[Br] (dated 1489, Priory of Corsendonk).52 The stemmata of Cavill and O'Donnell
+for the eordu group are accordingly based on just these three manuscripts.53
+Wuest and Dobbie did not take account of Br, which was only discovered by
+Humphreys and Ross in 1975.54
+4.2. A New Edition and Stemma of the Eordu Recension
+Accordingly, we now present a new edition of the eordu recension, based on Rm,
+with variants from Di, Pa and Br, using the punctuation from the most recent
+critical edition, by O'Donnell:
+5
+[1]
+Nu pue¹¹] sciulun[2]
+metudaes [6]
+[9]
+herga [3] hefunricaes [4] puard, [5]
+maechti,[7] and his modgeðanc,[8]
+puerc⁹ puldurfadur[10]
+eci drichtin, or astalde!
+[14]
+[11]
+suæ
+he[12]
+pundra gihuaes, [13]
+He aerist scoop eordu bearnum [15]
+hefen [16]
+[17]
+to hrofe, halig sceppend;
+ða middumgeard, [18]
+ecj[20]
+moncinnes [19]
+drichtin, [21], aefter[22] tiade[23]
+firum on[24] foldu, frea[25] allmechtig.
+peard,
+[1]
+pue] puc Pa Br
+[2]
+sciulun] sciulin Pa, scinlun Br
+[3] herga] horga Br
+[4] hefunricaes] hesimruicaes Pa, hesunruicaes Br
+[5]
+puard] pueard Di Pa Br
+[6] metudaes] metundaes Pa Br
+[7]
+maechti] mechti Di Pa Br
+[8] modgeðanc] modgedeanc Di Pa, modgedanc Br
+[9] puerc] puere Pa Br
+[10]
+[11]
+[puldurfadur] puldurfudur Di, puldur Pa Br
+suce] suae Di Pa Br
+[12] he] hae Di
+[13] gihuaes] gihnaes Br
+aerist] aerst Di, raeirst Pa
+[14]
+[15]
+bearnum] pearnum Pa Br
+[16] hefen] efen Di Pa
+[17]
+ða] da Di, dā Pa
+[18] geard] gaerd Br
+[19]
+moncinnes] moneinnes Br
+52
+J. van den Gheyn, Catalogue des manuscrits de la Bibliothèque Royale de Belgique (Bruxelles 1906), V,
+40–2; Cavill, ‘The Manuscripts of Caedmon's Hymn', pp. 512–15.
+53
+§4.11.
+54
+Cavill, 'The Manuscripts of Caedmon's Hymn', pp. 514 and 518–22; O'Donnell, Cædmon's Hymn,
+Wuest, 'Zwei neue Handschriften', p. 225; Dobbie, The Manuscripts of Cadmon's Hymn, p. 48;
+Humphreys and Ross, ‘Further Manuscripts', pp. 52–3.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 013 ===
+
+Early Medieval England and its Neighbours
+13
+[20] eci] eei Pa Br
+[21] drichtin] drintinc Di, drichtim Pa
+[22] aefter] efter Di
+[23] tiade] ciade Br
+[24] on] ol Pa Br
+[25] frea] fre Br
+These variant readings suggest the stemma in fig. 5.
+Di
+*B
+Rm
+Pa
+Br
+Figure 5: New stemma of the eordu recension.
+Starting at the base of the stemma, Pa and Br share numerous (mis)
+readings (e.g. ‘puc' for ‘pue' (1a), ‘s' for ‘f' in ‘hefunricaes' (1b), the intrusive
+'n' in 'metundaes' (2b)), and are clearly closely related. Both, however, also
+contain independent errors, Pa reading ‘raerist' for ‘aerist' (5a) and ‘drich-
+tim' for 'drichtin' (8a), and Br inter alia ‘horga' for 'herga' (1a), ‘gihnaes' for
+'gihuaes' (3b), and ‘fre' for 'frea' (9b). This suggests both derive directly or
+indirectly from the same exemplar (here labelled *8, following Cavill). Di,
+nonetheless, contains several independent readings, including ‘hae' for ‘he’
+(3b), 'aerst' for ‘aerist' (5a), and 'drintinc' for 'drichtin' (8a), suggesting it did
+not derive from *8.
+Di, Pa, and Br do, however, share readings not in Rm, including ‘pueard' for
+'puard' (1b), 'mechti' for 'maechti' (2a), and 'modgedanc' for 'modgeðanc' (2b).
+This suggests that Di, Pa and Br shared a common ancestor distinct from Rm
+(here labelled *Y, following Wuest). The <ea> they share in 'pueard' is unlikely to
+have been a chance mistake and seems to indicate breaking: as such, it is a variant
+much more likely to have arisen in an English-speaking area than on the Continent.
+This seems to suggest that *Y was produced in England after the creation of Rm's
+exemplar.55 Accordingly, *Y is represented lower on the stemma than Rm. Placing
+*Y and Rm in separate branches of the stemma requires that Rm and *Y's
+descendants independently substituted <p> for <p>, since *Y itself (being putatively
+55 O'Donnell suggests *Y was insular: see his ‘A Northumbrian Version of Cædmon's Hymn', p. 155.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 014 ===
+
+14
+Elisabetta Magnanti and Mark Faulkner
+written in England) is unlikely to have contained such an error. However, it is not so
+improbable that two Continental scribes, unfamiliar with the conventions for
+writing English, confronted with <p>, both transcribed it as <p>.
+Rm is presumably not the archetype of the eordu recension, since the variant
+'eordu' (for 'ælda', the reading of the Moore and Leningrad copies of the Hymn) is
+semantically meaningful and the scribe of the version of Cædmon's Hymn in Rm
+seems not to have understood English. Accordingly, we place *ẞ (chosen to
+denote the archetype of the eordu recension to respect the conventional use of
+*a to represent the overall archetype of the Hymn) at the top of the stemma, with
+both Rm and *Y descending (directly or indirectly) from it. However, there seems
+nothing to disqualify Rm from having been copied directly from *B.
+While this stemma accounts for the variants in the text of the Hymn, it is
+somewhat complicated by broader considerations. Rm, Pa, and Br all contain the
+Moore Annals, 56 suggesting it is likely *Y (and *B) also included them. Yet Di does
+not.57 Two possible explanations suggest themselves for this: first, Di (or its
+immediate exemplar) chose to omit the Moore Annals; second, Di (directly or
+indirectly) took the text of the Hymn from a different exemplar, having copied
+the bulk of the Historia ecclesiastica from a manuscript that did not have the
+Annals. The first option seems unlikely, since in each of Rm, Pa and Br, the Moore
+Annals are embedded directly in the Recapitulatio in Book V.XXIIII, and the scribe of
+Di (or its exemplar) presumably had no indication they were otherwise different
+from the other annals. It therefore seems likely that Di (or its exemplar) might be
+underpinned by exemplars from different textual traditions, a hypothesis which
+may be supported by the crosses that demark the beginning and end of text of the
+Hymn in Di.58
+To allow for the copying of Rm, *ẞ, or a copy of it, must have reached Northern
+Italy by the early ninth century. As argued above, the reading 'pueard' suggest *Y
+originated in England a little later than this. *Y, or a copy of it, had reached
+Cîteaux by the mid-twelfth century to serve as the exemplar of Di. When
+precisely it migrated to France is unknown, but it is conceivable its acquisition
+was arranged by Stephen Harding, English by birth and initially a monk of
+Sherborne, who became abbot of Cîteaux in 1109.59 We discuss the linguistic
+evidence for the possible date and origin of *B (or Rm's direct exemplar) in the
+section that follows.
+56
+On the presence of the Moore Annals in Pa and Br see J. A. Westgard, 'Dissemination and
+Reception of Bede's Historia Ecclesiastica gentis Anglorum in Germany, c. 731–1500: The Manuscript
+Evidence' (unpubl. PhD diss., Univ. of North Carolina at Chapel Hill, 2005), pp. 40–2.
+57
+In addition, as Wuest noted, in the Latin paraphrase of the Hymn Pa and Br share the
+transposition of ‘miraculorum' between 'primo' and 'filiis', reading ‘omnium auctor extitit, qui primo
+miraculorum filiis hominum...' in lieu of ‘omnium miraculorum auctor extitit, qui primo filiis
+hominum...'. However, Di omits the word ‘miraculorum' altogether. Rm agrees with Pa and Br. See
+Wuest, 'Zwei neue Handschriften', pp. 218–19 and O'Donnell, ‘A Northumbrian Version of Cædmon's
+Hymn', pp. 152-3.
+58
+59
+Wuest, 'Zwei neue Handschriften', p. 212.
+As suggested by Wuest, ‘Zwei neue Handschriften', pp. 222-3 and Dobbie, The Manuscripts of
+Cadmon's Hymn, p. 18.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 015 ===
+
+Early Medieval England and its Neighbours 15
+4.3. The Language of Rm and the Origin of the Eordu Recension
+Even though it was copied on the Continent, the Rome Bede faithfully preserves
+many features of early Northumbrian. Many of these features are also found in
+Pa, Br and Di, suggesting *B, and thus the eordu recension, may itself also have
+been of such an origin. There are also some hints that the origins of Rm (and *B)
+were somewhat more southerly than Northumbria, perhaps North Mercian.
+Citations in this section refer to the new edition of the eordu recension offered
+in §4.2 and based on Rm, with – where relevant - variant readings from Di, Pa and
+Br noted in parenthesis.
+Orthographical indicators of the earliness of this text of Cædmon's Hymn
+include the frequency with which /æ(:)/ is spelled <ae>, for instance in ‘maechti’
+(2a: ‘mechti' Di Pa Br), ‘aerist' (5a), ‘aefter' (8b: ‘efter' Di), with <æ>, the graphy
+that according to Hogg had prevailed by c. 800, only found in ‘suæ' (3b: ‘suae' Di Pa
+Br, perhaps the reading of *B). 60 The spelling <ch> for [x], found in ‘maechti'
+(2a) and 'drichtin' (8a: ‘drintinc' Di) is another early feature, not preserved in
+either the Moore or Leningrad versions of the Hymn, which have ‘maecti' and
+'mehti' respectively for the former.61 The representation of [3] as <d>, seen in
+‘eordu' (5b), is also common in early texts,62 as are geminate spellings for long
+vowels, like the <oo> in ‘scoop' (5a).63 The spelling of /w/ as <pu> (presumably in
+error for <pu>), for instance in ‘pue' (1a), is generally seen as 'late Northumbrian',
+but this version of the Hymn with its terminus ante quem of c. 830 may suggest its
+earlier currency.
+64
+Phonological features also point to an early date. 'Hefunricaes' (1b) is lacking
+in back umlaut, a sound change already found in the earliest Northumbrian
+texts.65 In unstressed positions, /æ/, /u/ and /i/ are on occasion preserved,
+hence 'eci' (4a), 'hefun' (1b: 'hesim' Pa, beside 'hefen' (6a)) and 'suæ' (3). For Hogg,
+the merger of /æ/ with /a/, the earliest of these changes, was completed before
+the end of the eighth century.66
+Somewhat later features are, however, on occasion apparent: 'sciulun'
+(1a) shows back umlaut, absent from both the Moore and Leningrad copies,
+and from the very earliest Mercian and Northumbrian texts.67 Our copy also
+lacks archaic forms like the Moore Bede's 'heben', with <b> for /v/. All these
+features seem consistent with the Rome manuscript preserving a very early text
+of Cædmon's Hymn (in its <ch> spellings, preserving at least one feature more
+60
+R. M. Hogg, A Grammar of Old English, I: Phonology (Oxford, 1992), §2.12, n. 1. The scribe uses <æ> in
+Latin (e.g. in 'hæc', fol. 122r21), so <ae> in Cædmon's Hymn presumably reflects the usage of the
+exemplar.
+61
+Hogg, Grammar, §2.60, n. 1: 'The spelling <ch>, simplified to <c> most often before <t> but
+occasionally elsewhere, is found in very early mss., especially [the Moore] Bede ... and persists in L
+[iber] V[itae] D[unelmensis]'. The <ch> spellings in the Rome manuscript may suggest we should also
+reconstruct <ch> for the archetype.
+62 Ibid. §2.59.
+63 Ibid. §2.4.
+64
+Ibid. §2.77, n. 3.
+65 Ibid. §5.105 (3).
+66 Ibid. §6.49 (and, on /i/ and /u/, §6.53, 6.56 respectively).
+67 Ibid. §5.104 (3) (alongside §5.68).
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 016 ===
+
+16
+Elisabetta Magnanti and Mark Faulkner
+archaic than the Moore and Leningrad versions), but also in some ways updated
+to reflect developments from the second half of the eighth century.
+A more southerly, potentially North Mercian, phase in the transmission
+history of this version of the Hymn is suggested by several spellings. [ã] is spelled
+<a> not <o> in 'and' and 'modgeðanc' (both 2b: 'modgedeanc' Di Pa, beside
+'moncinnes' (8b)). While <a> and <o> are both found in early texts, Anglian texts
+(including those in late Northumbrian) primarily used <o>, but the dialect of the
+portions of the gloss to the Rushworth Gospels written by Farman (Ru1), which
+may represent North Mercian, had <a>.68 The <i> in the second element of
+'moncinnes' (8b), though only bearing secondary stress, may also suggest a more
+southerly phase in the copying, since while <i> for /y/ is not found in early
+Northumbrian, it is evident in Mercian. 69 'Sceppend' (6b) may show Mercian
+second fronting of an /æ/ unaffected by palatal diphthongisation.70 Collectively,
+these hints suggest the version of Cædmon's Hymn in the Rome manuscript may
+have come from further south than Wearmouth-Jarrow, conceivably southern
+Northumbria or northern Mercia.
+Since the majority of the forms cited in the preceding paragraphs are preserved
+in all four eordu recension manuscripts - Rm, Di, Pa, and Br - the likelihood is that
+they indicate the origin of not just the exemplar of Rm, but also *ẞ. Instances where
+Di, Pa and Br have different readings are few, and mostly explicable through other
+considerations: 'mechti' (Di Pa Br) and ‘efter' (Di) may reflect the general replace-
+ment of <æ, ae, e> with <e> in the writing of Latin in the twelfth century, while it is
+difficult to be sure how Di's confused 'drintinc' originated. Beyond 'pueard' (1b),
+already offered as evidence for the development of *Y in England after Rm's
+exemplar went to Nonantola, none of the readings Di, Pa and Br share against
+Rm suggest *Y had a linguistic stratum distinct to *ẞ. It thus seems likely that *B, and
+putatively the eordu recension, originated in South Northumbria or North Mercia
+before c. 830 at the absolute latest (the terminus ante quem provided by Rm's
+copying), if not earlier. The rediscovery of Rm is thus key to rebutting recent
+doubts about the earliness of the eordu recension.71
+4.4 The Punctuation of Rm
+One other feature of Rm's text of Cædmon's Hymn that requires comment is the use
+of pointing and spacing to separate words. This is most evident at the beginning and
+end of the Hymn, where in the first three lines of the poem (as now lineated) we have
+punctūs after ‘pue', ‘sciulun', ‘herga', ‘hefunricaes', 'puard', ‘metudaes', 'maechti’,
+‘his”, ‘modgeðanc”, ‘puerc', 'puldur' and 'fadur', and in the last one and a half after
+‘aefter”, ‘tiade”, ‘firum”, ‘foldum”, ‘frea' and ‘allmechtig'. There is thus a punctus after
+almost all letter sequences we would now consider words (the unpunctuated
+exceptions are 'Nu pue', 'and his' and ‘on foldum', suggesting that the separation
+68 Ibid. §5.5 notes <a> and <o> vary in early texts, but Anglian texts (including those in late
+Northumbrian) primarily use <o>, though the dialect of Ru1, which may represent North Mercian, has <a>.
+69 Ibid. §5.174.
+70
+71
+As implied by Hogg, Grammar, §5.50, n. 2 (see also §5.90 on the geography of the change).
+Cavill, 'The Manuscripts of Caedmon's Hymn', p. 521. O'Donnell, ‘A Northumbrian Version of
+Cadmon's Hymn', pp. 145–7.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 017 ===
+
+Early Medieval England and its Neighbours 17
+of adverbs and conjunctions from personal pronouns and prepositions from the
+nouns they govern was not necessarily yet fully felt). On one occasion, what we
+would now regard as a compound, 'middum. geard' (7a), is interpuncted.
+No other surviving text of Cædmon's Hymn is punctuated in this way. Of the
+eordu group manuscripts, Pa has no punctūs, Br just one (at the end of the Hymn),
+and Di five: one at the end of the Hymn, and the remaining four after 'pueard' (1b),
+'maechti' (2a), 'da' (7a) and 'firum' (9a), all words followed by punctūs in
+Rm. While the first two of the points in Di occur at the end of a half-line, the
+last two are half-line internal. This suggests Di's punctuation is not metrical and
+may be a residue of an exemplar with the kind of interpuncting found in Rm. This
+means that, if our stemma is correct, *B (putatively the origin of the eordu
+recension) was punctuated with interpuncts.
+This punctuation sharply distinguishes *ẞ from the two earlier copies of
+Cadmon's Hymn. The Leningrad Bede contains only a single punctus at the end
+of the Hymn, while the Moore Bede also has only a single punctus, but this is
+located after 'scepen' (5b), and thus at the end of a verse line (and, perhaps more
+importantly, at the end of the first of the two sense units that comprise the
+Hymn). If the Moore and Leningrad Bedes represent the original punctuation of
+the Hymn, then *ẞ's punctuation looks to be an innovation of the second half of
+the eighth or early ninth century.
+Word division by interpuncting, such as we can posit for *B, is unknown in
+manuscripts containing Old English.72 It is, moreover, very rare in Latin manu-
+scripts. Parkes suggested its use by Roman scribes ceased in the first century of
+the Christian Era, giving way to the use of scriptio continua undivided into words.73
+He does, however, note later uses of interpuncting in teaching books produced in
+Egypt in the fourth century. 74 Exactly what model *ẞ had for the use of inter-
+puncts and spaces to divide Old English words is unclear, but worthy of further
+investigation. One possibility might be inscriptions incised on stone, which
+continued to use interpuncts much longer than manuscripts.
+5. Conclusion
+The discovery of this manuscript of Bede's Historia ecclesiastica pushes back the
+terminus ante quem for the emergence of the eordu recension of Cædmon's Hymn
+over three centuries, since to this point the earliest known manuscript was Di,
+from the third quarter of the twelfth century. The discovery of such an early copy
+of the eordu recension suggests it is possible the original reading of line 5b of the
+Hymn was not 'aelda barnum' but ‘eordu bearnum', as O'Donnell suggested.75 It
+also pushes back the terminus ante quem for the incorporation of the text of the
+Hymn in the text of manuscripts of the Historia ecclesiastica by two centuries,
+from the eleventh century, when Cambridge, Trinity College, R. 5. 22 was copied,
+72
+73
+Ker, Catalogue, pp. xxxiii-v.
+M. B. Parkes, Pause and Effect: an Introduction to the History of Punctuation in the West (Aldershot,
+1992), p. 10. See also E. O. Wingo, Latin Punctuation in the Classical Age (The Hague, 1972), pp. 14–17.
+74 Parkes, Pause and Effect, p. 12.
+75 O'Donnell, Cædmon's Hymn, §§ 5.22–32.
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+
+=== page 018 ===
+
+18
+Elisabetta Magnanti and Mark Faulkner
+to the first third of the ninth, thus providing a possible model for its inclusion in
+the main text of the Old English Bede. The unparalleled punctuation of the text
+in the Rome manuscript, which appears to be the residue of an exemplar that
+included interword interpuncts, a practice otherwise unattested in Old English, is
+a powerful reminder that surviving Old English manuscripts are not necessarily
+representative of the entire population of such books produced in the Middle.
+Ages: new discoveries are thus well worth pursuing because they have the
+potential to enrich the picture of the earliest phases of writing English in
+surprising ways.
+Acknowledgements. We are grateful to Andrea Cappa and Valentina Longo from the National
+Central Library of Rome for the digitisation of the manuscript and related materials, as well as for
+their helpful advice; to J. Andrew Armacost and Neal Z. Shipe from Duke University for supplying
+images of the Duke fragment and answering our queries; and to Canon Riccardo Fangarezzi from the
+Abbey Archive of Nonantola for confirming the shelfmarks of the ancient Nonantola catalogues.
+Cite this article: Magnanti, Elisabetta, and Mark Faulkner. 2026. ‘A New Early-Ninth-Century
+Manuscript of Cædmon's Hymn: Rome, Biblioteca Nazionale Centrale, Vitt. Em. 1452, 122v.' Early
+Medieval England and its Neighbours 52, e9, 1-18. https://doi.org/10.1017/ean.2025.10012
+https://doi.org/10.1017/ean.2025.10012 Published online by Cambridge University Press
+

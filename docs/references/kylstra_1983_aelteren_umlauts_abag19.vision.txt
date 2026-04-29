@@ -1,0 +1,285 @@
+=== page 001 ===
+
+ZUM ALTER DES "ÄLTEREN” UMLAUTS
+IM GERMANISCHEN
+von A.D.Kylstra
+-
+Groningen
+Das Germanische unterscheidet sich von anderen indo-
+germanischen Sprachen nicht nur durch die Lautverschie-
+bung und die Festlegung des Akzentes auf der Wurzelsil-
+be, Erscheinungen, die allgemein als wesentlich gelten, son-
+dern auch durch den Umlaut. Mit in den einzelnen Spra-
+chen unterschiedlicher Intensität und mit wechselnden Er-
+gebnissen werden Vokale der ersten Silbe durch ein voka-
+lisches Segment in der zweiten Silbe umgefärbt. Diese Um-
+färbung ist nicht weniger wesentlich, handelt es sich doch
+um ein neues Prinzip in der Wortstruktur, und zwar um
+eine Abhängigkeit der ersten von der zweiten Silbe, die
+an die Stelle der indogermanischen Autonomie der Silbe
+getreten ist.
+Der Umlaut kommt, außer im Gotischen, in allen ger-
+manischen Sprachen vor. Wenn das Fehlen des Umlauts im
+Gotischen auf befriedigende Weise erklärt werden kann,
+liegt die Vermutung nahe, daß er in eine gemeinsame
+Zeit zurückreicht, für die es mehrere, nicht identische,
+nicht genau umrissene und nicht von jedem Forscher in
+gleicher Weise gebrauchte Bezeichnungen gibt: Protogerma-
+nisch, Gemeingermanisch, Urgermanisch (noch präzisiert als
+Früh- und Späturgermanisch), Grundsprache. In dieser Zeit
+finden sich nach manchem Forscher tatsächlich die ersten
+Spuren des Umlauts. Bekannte Beispiele sind u.a. urgerm.
+*nizda- Nest, urgerm. *juka- Joch, urgerm. *esti >
+ist.
+Das Beispiel *nizda-> Nest geht Hand in Hand mit
+*fiskaz > Fisch mit in allen germanischen Sprachen er-
+haltenem i. Dieses Gegenbeispiel führt mit dem umlauts-
+losen Gotisch sowie mit der Beschränkung des u-Umlauts
+von /e/ zu i/ auf das Altsächsische und das Althochdeut-
+sche, mitten in die umstrittene Frage nach dem Alter
+des Umlauts.
+Neulich hat Fausto Cercignani¹ Stellung genommen ge-
+1. Fausto Cercignani, Early ‘umlaut' phenomena in the Germanic
+languages, in: Language 56 (1980) 126-136.
+
+=== page 002 ===
+
+2
+gen die Auffassung, daß der sog. "ältere" Umlaut eine
+"Proto-Germanic" Erscheinung wäre. Es gebe keine Um-
+lautsallophone im Protogermanischen und nicht einmal im
+Nordwestgermanischen. Seine Argumentierung beruht auf
+bekanntem, aber poly-interpretiertem Material. Das Fehlen
+des Umlauts im Gotischen sowie die unterschiedlichen Er-
+gebnisse im Nord- und Westgermanischen zwängen dazu,
+den Umlaut in die Vorgeschichte der einzelnen germani-
+schen Sprachen zu verlegen. Die Seltenheit der Formen
+mit /e/ durch a-Umlaut von */i/ wird dadurch erklärt, daß
+der assimilierende Einfluß von *[-a] auf */i/ "was widely
+resisted" (126), um Zusammenfall von */i/ mit */e/ zu
+vermeiden. Man müßte Hypothesen "to the highest degree"
+multiplizieren, um zu einem protogermanischen Umlaut
+oder auch zu einem allophonischen Stadium zu gelangen.
+Es wäre äußerst schwierig, Umlautsallophone im Protoger-
+manischen aufzuspüren, denn weder die Umlautsergebnis-
+se noch die Grundtendenzen seien in allen Fällen "the
+same". (127)
+Was das erste Argument, die Ungleichheit der Ergeb-
+nisse, betrifft, so könnte man schon vor der Prüfung der
+von Cercignani vorgebrachten Argumente erwidern, daß es
+verwunderlich wäre, wenn ein in einer gemeinsamen Grund-
+sprache entstandener Prozeß in den Einzelsprachen in allen
+einschlägigen Fällen zu denselben Ergebnissen geführt hätte.
+Es ist vielmehr zu erwarten, daß in Sprachen, die sich im-
+mer weiter voneinander entfernen, ein gleicher oder ähnli-
+cher in gemeinsamer Zeit wurzelnder Prozeß sich in ver-
+schiedener Weise auswirkt.
+Als Beispiel für die unterschiedlichen Ergebnisse führt
+Cercignani den u-Umlaut an, der Folgendes bewirkt hat:
+1. Erhöhung im Altsächsischen und Althochdeutschen von
+/e/: *felu > filu ‘viel',
+2. Rundung im Altisländischen von */i e a/ unter den
+Kurzvokalen: *miklu > myklo 'viel',
+3. Diphthongierung von */i e æ/ im Altenglischen: *medu
+> meodu 'Met',
+4. Diphthongierung von */i/ im Altfriesischen: nigun >
+niugun 'neun'.
+Es sei gern zugegeben, daß der u-Umlaut Unterschied-
+liches bewirkt hat, das von Cercignani nicht erwähnte Ge-
+meinsame ist jedoch, daß in allen Fällen der Vokal der
+zweiten Silbe den Vokal der ersten Silbe beeinflußt hat.
+Dies ist vor dem Hintergrund der indogermanischen Auto-
+nomie das Wesentliche. Identische Ergebnisse wären jeder
+Erwartung zuwider gewesen.
+Das zweite Argument betrifft die "basic tendencies",
+
+=== page 003 ===
+
+3
+die ebensowenig wie die Ergebnisse in allen Fällen die
+gleichen wären. Die Pluralform wird gebraucht, man könn-
+te aber auch von einer Tendenz im Singular sprechen,
+nämlich von der erwähnten Tendenz zur Abhängigkeit der
+ersten von der zweiten Silbe. Die Auffassung, daß diese
+Tendenz im Protogermanischen angefangen hat, in dieser
+Sprachform wurzelt, ihren Ursprung findet, ist nach den
+Ausführungen Cercignanis nicht widerlegt.
+Das dritte Argument, der Widerstand gegen den a-Um-
+laut von */i/, impliziert die Wirkung der Umlautstendenz.
+Ohne diese umfärbende Tendenz hätte es keinen Wider-
+stand dagegen geben können.
+Das Fehlen des Umlauts im Gotischen, für Cercignani
+ein wichtiges Argument gegen das "Proto-Germanic" Alter
+des "älteren" Umlauts, ist auf für manche Forscher befrie-
+digende Weise anders erklärt worden als durch die Annah-
+me, daß es sich um eine einzelsprachliche Erscheinung
+handele.
+Im weiteren Verlauf des Aufsatzes zeigt sich Wider-
+spruchsvolles. Auf S.129 ist die Rede von “remarkable
+similarities in both trends and results". Allerdings ist "be-
+merkenswert ähnlich" nicht dasselbe wie "gleich "("the
+same"), aber diese Formulierung bedeutet doch eine Schwä-
+chung. Weder die Grundtendenzen noch die Ergebnisse
+sind dieselben, aber sie zeigen wohl auffallende Ähnlich-
+keiten. Es heißt jetzt nicht mehr: Es könne im Protoger-
+manischen keine Umlautsphänomene geben, weil Tenden-
+zen und Ergebnisse nicht die gleichen sind, sondern: ob-
+wohl Tendenzen und Ergebnisse auffallende Ähnlichkeiten
+aufweisen, könne es im Protogermanischen trotzdem keine
+Umlautsphänomene geben. Dieses "trotzdem" wird nicht
+auf befriedigende Weise begründet.
+Der Übergang */e/ > */i/ in betonter Silbe vollzog
+sich vor [-i in zweiter Silbe in allen Dialekten, in eini-
+gen aber auch vor *[-u]. Gegen den Einwand, */e/ > */i/
+vor *[-u] sei eine späte Neuerung im Altsächsischen und
+Althochdeutschen, bemerkt Cercignani, es sei ganz gut
+möglich, ("the truth may well be") (129), daß es nur ei-
+nen einzigen Erhöhungsprozeß in der Vorgeschichte jedes
+einzelnen Dialektes, in zum Teil verschiedener Umgebung
+gegeben habe. Das bedeutet, es sei eine Möglichkeit, die
+eine andere nicht ausschließt. "The truth may well be",
+daß schon im Protogermanischen, d.h. in der gemeinsa-
+men Grundsprache, ein Erhöhungsprozeß eingesetzt hat.
+Die Allophone des "älteren" Umlauts "may well have
+developed" (129) zu verschiedenen Zeiten und unter ver-
+
+=== page 004 ===
+
+4
+schiedenen Bedingungen in den nord- und westgermani-
+schen Sprachen. Das wieder gebrauchte zurückhaltende
+"may" entspricht nicht dem apodiktischen "Thus neither
+the 'earlier umlauts' nor the 'later umlauts' should be a-
+scribed to 'Proto-Germanic' - or, for that matter, to North-
+west Germanic' " (132) Nach dieser Schlußfolgerung wird
+aber sofort zugegeben, daß die Aufhebung der Autonomie
+der indogermanischen Silbe eine notwendige Vorbedingung
+für alle Umlautserscheinungen ist, obwohl sie nicht die di-
+rekte Ursache zu sein braucht. Die allmähliche Verstärkung
+des germanischen Akzentes war ohne Zweifel ein entschei
+dender Faktor, dessen Effekt eine Assimilation betonter
+Vokale (also in erster Silbe) an den Vokalismus der fol-
+genden Silbe war, oder, genauer: eine Antizipierung in der
+Artikulation betonter Vokale von zumindest einem Merk-
+mal des Vokals oder Halbvokals der Folgesilbe. (132)
+Ich verstehe die Argumentierung Cercignanis folgender-
+maßen: Die Fixierung des Akzentes auf der Wurzelsilbe
+hatte die Aufhebung der Autonomie der Silbe zur Folge.
+Diese Aufhebung war eine Vorbedingung für alle Umlauts-
+erscheinungen, brauchte aber nicht ihre direkte Ursache zu
+sein. Die frühesten phonetischen Umlautsphasen müssen
+der Vorgeschichte der einzelnen Sprachen zugeschrieben wer-
+den. Sie sind einzelsprachlich. Die Übereinstimmung in "ge-
+wissen" Trends und Ergebnissen müssen aus der Entwick-
+lung ähnlicher prosodischer Merkmale in Sprachen mit ähn-
+lichen paradigmatischen und syntagmatischen Strukturen er-
+klärt werden. Ein entscheidender Faktor dieser einzelsprach-
+lichen Entwicklungen war die voreinzelsprachliche Verstär-
+kung des Initialakzentes, die zu einer Antizipierung des Vo-
+kals der Folgesilbe führte. (132)
+Dies alles bedeutet m.E., daß nach der Akzentfixierung
+die Aufhebung der Autonomie der Silbe folgt, aber auch
+dies noch im Protogermanischen. Die auf die Fixierung fol-
+gende Akzentverstärkung führte, ebenfalls noch in voreinzel-
+sprachlicher Zeit, zur Antizipierung. Erst nachdem die ver-
+schiedenen germanischen Sprachen ihr Eigenleben angefan-
+gen hätten, wären in der Vorgeschichte dieser verschiede-
+nen Sprachen die frühesten Umlautsallophone entstanden.
+Die Antizipierung hätte somit in gemeinsamer Zeit ein-
+gesetzt, aber noch keine Allophonisierung zur Folge gehabt.
+Cercignani sagt eindeutig: es ist "extremely difficult to as-
+sume a single allophonic stage traceable to Proto-Germanic
+(127) Das Germanische wäre infolgedessen zwar zur
+Antizipierung vorgeschritten, aber zu einer Antizipierung,
+die nicht im geringsten die Umfärbung des Vokals der er-
+sten durch den Vokal der zweiten Silbe, d.h. Allophoni-
+"
+
+=== page 005 ===
+
+5
+sierung, bewirkt hätte. Die Antizipierung wäre sozusagen
+nur eine Vorallophonisierung gewesen, ein neuer Terminus,
+der sich wohl kaum einbürgern wird.
+Es kommt mir vor, daß nach den Ausführungen Cer-
+cignanis die Auffassung, der "ältere" Umlaut müßte in der
+gemeinsamen Periode angesetzt werden, ihre Gültigkeit nicht
+verloren hat. Es scheint mir aber auch, daß mancherlei Wi-
+derspruch eher scheinbar als tatsächlich ist und durch un-
+genaue Formulierung oder nicht scharf umrissene Termini
+verursacht wird.
+Die scharfe Trennung zwischen Germanisch und den an-
+deren indogermanischen Sprachen besteht aus der Lautver-
+schiebung und der Fixierung des Akzentes. Als dritte eben-
+so einschneidende Änderung müßte der Verlust der Autono-
+mie der Silbe bezeichnet werden, der nach manchen For-
+schern zwar mit der Akzentfixierung zusammenhängt, aber
+nicht oder zum Teil dadurch verursacht wurde. Dieses Phä-
+nomen einer Veränderung des Silbenverhältnisses erscheint
+als nicht weniger wesentlich. Der Verlust impliziert den
+Umlaut, der im Keim, als Ansatz, schon in der gemeinsa-
+men Grundsprache vorhanden ist und sich in den Einzel-
+sprachen, zum Teil in mehreren Phasen, offenbart.
+Keim und Entfaltung, (latente) Tendenz und Auswir-
+kung, “drift”, (inhärente) Prädisposition, es sind alles Be-
+zeichnungen, deren Inhalt zu vage ist. Wenn diese Bezeich-
+nungen außerdem im Zusammenhang mit einer Zeit ge-
+braucht werden, für die Namen zur Verfügung stehen, die
+von den Forschern nicht immer in gleicher Weise gebraucht
+werden und somit an demselben Übel der Ungenauigkeit
+leiden, entsteht scheinbarer Widerspruch oder scheinbare
+Einstimmigkeit. So erscheint auch der Aufsatz Cercignanis
+präzisierungsbedürftig.
+Van Coetsem³ hält es für möglich, daß “bestimmte
+für die zweite Periode kennzeichnende, assimilatorische Er-
+scheinungen in ihrer phonetischen Phase bereits vor der
+zweiten Periode aufgetreten sind; die Phoneme konnten
+also schon zu jener Zeit vom Umlaut bedingte Positions-
+varianten aufweisen". (45f) An anderer Stelle heißt es:
+66
+es gibt spezifische, assimilatorische Prozesse (z.B. Um-
+laut), deren erste Erscheinungen schon in dieser Periode
+(= in der zweiten Period e, der jüngeren,
+2. Cercignani versteht unter "Proto-Germanic" offensichtlich die
+ganze voreinzelsprachliche Periode des Germanischen.
+3. Frans van Coetsem, Zur Entwicklung der germanischen Grund-
+sprache, in: Kurzer Grundriß der germanischen Philologie bis 1500,
+I, Berlin 1970, 1-93.
+
+=== page 006 ===
+
+die man
+6
+gem e in germanisch,
+spät -
+germanisch, auch urger man is h
+genannt hat") zu erkennen sind..." (15f), oder vorsich-
+tig: "Die heutige Analyse scheint jedenfalls auf einen allge-
+mein germanischen Ursprung dieser Umlautser-
+scheinungen und auf ihre Gleichzeitigkeit hinzuweisen
+(40); mit weniger Zurückhaltung: daß der Umlaut "nicht
+als einzelsprachlich zu werten" ist. (48)
+"
+Eine Zitatensammlung ist allerdings keine Argumentie-
+rung. Ich habe diese Äußerungen van Coetsems angeführt,
+weil ich nach wie vor auf seinem Standpunkt stehe. Ich
+möchte daran festhalten, daß die (akzentbedingte) Aufhe-
+bung der Autonomie der Silbe und die regressive vokali-
+sche Fernassimilation in einer frühen Phase der germani-
+schen Grundsprache, in einer voreinzelsprachlichen Phase,
+angesetzt werden müssen.
+Es ist verlockend, das neue Prinzip der Abhängigkeit
+der ersten von der zweiten Silbe im ältesten Germanisch
+in einen größeren Rahmen hineinzustellen. Im ältesten
+Lappisch, einer bekanntlich nichtindogermanischen Nach-
+barsprache, hat sich nämlich ebenfalls ein neues Silben-
+verhältnis entwickelt. An die Stelle der Vokalharmonie,
+der Dominanz der ersten Silbe, trat in der ersten Phase
+des Urlappischen die Abhängigkeit der ersten von der zwei-
+ten Silbe mit ebenfalls regressiver Fernassimilation, einer
+vertikalen Angleichung des Vokals der ersten Silbe an den
+der zweiten Silbe. Hierauf gehe ich ausführlicher ein in
+meinem Beitrag zum Symposium im Dezember 1983 in
+Helsinki anläßlich der hundertsten Jahresfeier der Finnisch-
+Ugrischen Gesellschaft.
+

@@ -44,7 +44,7 @@ Already in project before this batch:
    a-umlaut of u." In Laws and Rules in Indo-European, ed. Probert & Willi.
    File: docs/references/stiles_2012_a_umlaut_of_u.{pdf,txt}
 
-ADDED IN THIS BATCH (Google Vision OCR, 2026-04-29):
+ADDED IN BATCH 1 (Google Vision OCR, 2026-04-29 morning):
 
 9.  Hirt, Hermann. 1931–1934. Handbuch des Urgermanischen, Teile I–III.
     Heidelberg: Winter. (622 pp., one combined PDF.)
@@ -74,26 +74,44 @@ ADDED IN THIS BATCH (Google Vision OCR, 2026-04-29):
     Use: argues *hir 'here' is the only PGmc *e₂ word, with full
     discussion of OHG *ir > er; relevant to our *i / *e analysis.
 
+ADDED IN BATCH 2 (Google Vision OCR, 2026-04-29 morning):
+
+13. Kylstra, A.D. 1983. "Zum Alter des 'älteren' Umlauts im Germanischen."
+    Amsterdamer Beiträge zur älteren Germanistik 19: 1–6.
+    File: docs/references/kylstra_1983_aelteren_umlauts_abag19.{pdf,vision.txt}
+    Use: dating of older umlaut in Germanic; cross-reference for *i > *e
+    and a-umlaut chronology.
+
+14. Polomé, Edgar C. 1994. "Proto-Germanic and the Reconstruction of
+    Proto-Indo-European." NOWELE 23: 3–40.
+    File: docs/references/polome_1994_nowele23_proto_germanic.{pdf,vision.txt}
+    Use: PGmc vowel-system reconstruction; comparative-method
+    methodology relevant to our *e₂ / *i / *u inventory choices.
+
+15. Magnanti, E. & Faulkner, M. 2026. "A New Early-Ninth-Century
+    Manuscript of Cædmon's Hymn: Rome, Biblioteca Nazionale Centrale,
+    Vitt. Em. 1452, 122v." Early Medieval England and its Neighbours
+    52, e9 (Cambridge UP), 1–18.
+    File: docs/references/caedmons_hymn_rome_ms_vitt_em_1452.{pdf,vision.txt}
+    Use: NEW primary witness to the Northumbrian *eordu* recension of
+    Cædmon's Hymn (third-oldest copy, after Moore and Leningrad Bedes);
+    diplomatic + critical edition. Bonus reference, not on the original
+    *i > *e list, but directly relevant to early-Northumbrian phonology
+    and our archaic-3sg / Anglian-relic discussions (cf. §17 dossiers).
+
 
 REFERENCES STILL OUTSTANDING:
 -----------------------------
 
-The following items from the original list are NOT in this batch and
-remain to be sourced:
+The following items from the original list are NOT yet in the project:
 
 A. Beeler, Madison S. 1966. "Proto-Germanic [i] and [e]: One Phoneme
    or Two?" Language 42(2): 473–474.
-
-B. Kylstra, A.D. 1983. "Zum Alter des 'älteren' Umlauts im Germanischen."
-   Amsterdamer Beiträge zur älteren Germanistik 19: 1–6.
 
 C. Polomé, Edgar C. 1988. "Are There Traces of Laryngeals in Germanic?"
    In Bammesberger, ed., Die Laryngaltheorie und die Rekonstruktion
    des indogermanischen Laut- und Formensystems, 383–414. Heidelberg:
    Carl Winter.
-
-D. Polomé, Edgar C. 1994. "Proto-Germanic and the Reconstruction of
-   Proto-Indo-European." NOWELE 23: 3–40.
 
 E. Rice, Keren. 1994. "Peripheral in Consonants." Canadian Journal of
    Linguistics 39(3): 191–216.
@@ -114,11 +132,14 @@ I. Kylstra, A.D. (date?) "On the Status of German e < i before r."
 SCORECARD
 ---------
 
-  In project before this batch:        8
-  Added in this batch:                  4   (Hirt, Gutenbrunner, Kock, Ringe-1984)
+  In project before any batch:         8
+  Added in batch 1 (early 2026-04-29): 4   (Hirt, Gutenbrunner, Kock, Ringe-1984)
+  Added in batch 2 (later 2026-04-29): 3   (Kylstra-1983, Polomé-1994 NOWELE 23,
+                                            Cædmon's Hymn ms — bonus)
   ----------------------------------------
-  Total integrated:                    12
-  Still outstanding:                    9
+  Total integrated:                   15
+  Still outstanding:                   7  (of which Cædmon's Hymn was a bonus,
+                                            so 6 from the original list remain)
 
 
 QUESTIONS TO INVESTIGATE (carry-over):

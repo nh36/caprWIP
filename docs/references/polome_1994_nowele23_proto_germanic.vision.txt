@@ -1,0 +1,1724 @@
+=== page 001 ===
+
+Edgar C. Polomé
+PROTO-GERMANIC AND THE RECONSTRUCTION OF
+PROTO-INDO-EUROPEAN
+In Honor of Hans Bekker-Nielsen
+-
+Dealing with Germanic for the purpose of comparison with the other
+Indo-European languages implies, as in the case of the other north-
+ern and western ancient European languages such as Slavic, Baltic
+or Celtic, the prior reconstruction of the Proto-Germanic prototypes
+of the historically documented linguistic forms. This entails a num-
+ber of problems connected with the type of evidence available for the
+oldest period: even if the earliest samples of runic inscriptions can
+be dated back to the first centuries of the Christian era, no text of
+any sizable length is preserved before Ulfila's translation of the
+Bible into Gothic in the IVth century A.D. Thus, the actual docu-
+mentation on the earliest stage of Germanic consists almost exclu-
+sively of terms quoted by classical authors and of proper names
+anthroponyms, ethnic names, toponyms and other elements of the
+ancient geographical nomenclature. Such material offers many obvi-
+ous drawbacks: apart from the conflicting graphic representations in
+the later manuscript tradition, ancient authors often disagree on the
+form of definite Germanic names. Confronted with alternate forms
+like Inguaeones in Pliny and Ingaevones in Tacitus, Germanists will
+determine which form is to be considered as the original one on the
+basis of an etymologically oriented analysis linking Ingu- with OE
+Ing in the Old English Runic Poem, ON Ingunar-Freyr, Yngvi, etc.,
+with an underlying form *Ingw(az). Even more complex is the case
+of Germanic names appearing in early sources, prior to the close
+contacts of the Mediterranean world with the Germanic territory
+proper, e.g., in descriptions of the penetration of the Cimbri and the
+Teutons into southern Gaul and northern Italy towards the end of
+the second century B.C. Thus, the leader of the Teutons was called
+Teutoboduus, obviously a Celto-Latin adaptation of the Germanic
+3
+North-Western Language Evolution 23 (1994), 3–40. DOI 10.1075/nowele.23.01pol
+ISSN 0108-8416/E-ISSN 2212-9715 © John Benjamins Publishing Company
+
+=== page 002 ===
+
+EDGAR C. POLOMÉ
+compound *Þeuðaðaðwaz in which the Celtic stops have been substi-
+tuted for the Germanic fricatives and the ending has been
+Latinized.¹
+Sound substitution is a common feature in the transmission of
+foreign words through non-native intermediaries, and it should be
+kept in mind that the Romans especially, in their early contacts
+with the Germanic world, worked through Celtic interpreters. Just
+as the Arabs substituted [j] for the [g] of the Persian plural suffix in
+bardegan, plural of bardeh (older bardah) 'slave' when they took
+over the term under the form bardaj, or just as the name of the
+American Indo-Europeanist Eric Hamp appears as <Gamp> in Rus-
+sian, Germanic names appear in their Celto-Latin interpretation or
+transliteration in ancient literature, and one wonders how much one
+can rely on such evidence to document or date any specific phono-
+logical process within Germanic. Thus, since Caesar writes alces for
+Gmc. *alhiz 'elk', it is assumed that Alcis which designates the
+Dioscuri in Tacitus represents Gmc. *alhez which is related either to
+Go. alhs, OE ealh, OS alah 'temple', or to OE ealgian 'protect', if the
+Germanic twin deities are not to be conceived as 'Elkriders'.² Unfor-
+tunately, except for the name of a tribune, Balchobaudes, in Ammi-
+anus Marcellinus, there is no other evidence of Gmc. -lh- in early
+sources, so that it is difficult to establish if the Graecized spelling
+with <ch> which prevails for initial Germanic /h/ in Tacitus, e.g., in
+Chariovalda, Chasuarii, Chatti, Cherusci, might also apply in this
+context. On other hand, it is worth noticing that Caesar uses
+Cherusci (= [Strabo] Xnpoñoкot), but Harudes (versus [Ptolemy]
+Xapoudɛç). This might well allow us to assume that the contrast
+between lenis [h] and fortis [x] articulation already prevailed at that
+time as far as initial Germanic /h/ versus postconsonantal internal
+/h/ is concerned.
+Keeping these considerations in mind, let us briefly review what
+ancient sources enable us to conclude as regards the status of the
+phonological system of early Germanic:
+(a) Vowel system: (1) short vowels:
+The main problems we encounter here are the maintenance of IE
+*-o- at the morpheme boundary in unstressed internal position, and
+4
+
+=== page 003 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+the preservation of IE *-e- before nasal clusters and in the presence
+of an Umlautsfactor. As far as the data are concerned we can point
+out that names attested in the first century B.C., like Ariovistus or
+Marcomanni, would suggest that IE *o was lowered to [a] in
+stressed position, but maintained in unstressed position at the junc-
+ture of the two constituents of a compound. Such a situation appears
+to be maintained at the end of the first century A.D. when Tacitus
+writes Chariovalda and Langobardi in which the first component
+reflects respectively PIE *kóryo- and *(d)lóŋgo-. The usage of -o- as
+connecting vowel seems to have been maintained until the Migra-
+tion Age, especially before some second constituents like -baudes or
+-marius. Similarly, Mero-, e.g., in the Frankish name Merobaudes,
+will survive even longer in Meroveus. However, these may be just
+traditional graphic forms versus inscriptional Merabaudus (377
+A.D.), with -a- like hlewagastiR in the runic inscription on the horn
+of Gallehus (IVth c. A.D.). The river-names Maas (Meuse) and Mo-
+selle provide an interesting clue: apparently, the Germanic tribes
+reached the Mosa before o > a, but settled the Mosella area after-
+wards. However, this relative chronology does not help much in
+dating the change nor does the fact that the Moenus (Tacitus,
+Pliny) became Main!
+-
+The ethnic name Cimbri appears constantly with [i] from its very
+first attestations in the first century B.C., but its -i- might very well
+reflect the vocalic allophone [i] of a PIE */y/.3 If this is the case, one
+might assume that [e] was still preserved before nasal clusters in
+Caesar's days (mid first century B.C.), as Tencteri shows, whereas it
+had been raised to [i] about a century later, as Inguaeones in Pliny's
+Historia Naturalis seems to indicate.4 However, the appearance of
+Tulingi in Caesar suggests that the raising occurred at an earlier
+date in unstressed position (in suffixes). On the other hand, the
+scanty evidence on suffixal -e- before the geminate nasal -nn- in the
+feminine divine Baduhenna in Tacitus and the inscriptional Neha-
+lennia on the island of Walcheren in the second half of the second
+century A.D., besides Fimmilene on the votive inscription of the
+cives Tuihanti along Hadrian's wall in Great Britain in the first half
+of the third century A.D., tends to show the reverse situation versus
+-i- in the stressed syllable in the etymologically obscure Brinno, cho-
+5
+
+=== page 004 ===
+
+EDGAR C. POLOMÉ
+sen leader of the Cannenefates (in Dutch Kennemerland) according
+to Tacitus. However, conclusions based on one or two examples re-
+main extremely tenuous: all one could say is that by the time of the
+direct contacts with Rome in northern Gaul, the process of raising
+the Germanic short middle-front vowel to the high level in specific
+nasal environments was in progress or tending towards completion.
+The situation is even more indefinite with PIE *-e- in environ-
+ments where i-Umlaut would be expected: reference is often made to
+the Cheruscan names Segestes, Segimerus, Segimundus whose first
+component corresponds to Sigis- in later Germanic names such as
+Sigisbertus (Frankish king, VIth c.). The early names indeed seem to
+reflect the same alternation between the Germanic s-stem as at-
+tested by Go. sigis, OE sizor 'victory' and the OHG anthroponym
+Sigurmar and the (younger) vocalic stem appearing in OHG sigu
+'victory'.5 However, while Segestes is found once under the form
+Zɛɛoη in Strabo in the first century B.C. and quoted later in its
+Latin form by Velleius Paterculus (first half of first century B.C.)
+and Tacitus (end of first century B.C.), Segimerus and Segimundus
+appear for the first time in Tacitus: *Σɛyíµŋpoç and *Σεучoûντo are
+merely conjectures in Strabo (ms. Aixчµńpov(ç), Σεµyoûvtoç), and
+Velleius Paterculus has Sigimerus about half a century before
+Tacitus' Segimerus. If we look at the Germanic names of deities
+appearing in third century A.D. Latin inscriptions, we still find <e>
+before [i] or [j] in the following syllable under the main word stress,
+e.g., in matronae Teniavehae, as well as in the suffix -nehiae, e.g., in
+matronae Ahinehiae. It appears, therefore, that the raising of */e/ to
+[i] through distant regressive assimilation to a high front vowel or
+non-vocalic resonant was not completed until the later Roman impe-
+rial period. Similarly, the preservation of original PIE */e/ in contact
+with */y/ is documented by the name of a third-century deity from
+Xanten, Alateiviae.6
+(2) Long vowels and diphthongs:
+As regards the long vowels, the main issue is the date of the raising
+of inherited */a:/ to [:]: in this context, reference is often made to
+the fact that Caesar calls the beech forest area near Fulda, later
+known as Boconia (OHG Buohhunna), silva Bācenis - a derivation
+6
+
+=== page 005 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+from the Germanic reflex of PIE *bagos 'beech'. It has been as-
+sumed that the spelling with -ā- might be merely a Celto-Latin ren-
+dering of the Germanic [:], but the raising of [a:] must have oc-
+curred after Germanic tribes reached the Upper Danube in the sec-
+ond century B.C., when its Celtic name *Danowyos (Latinized
+Dānuvius [Caesar]) was taken over in Germanic to appear later on
+in Gothic as *Dōnawi and in Old High German as Tuonouwa."
+The question of whether the inherited long mid-front vowel */e:/
+was pronounced [æ:] or had already been lowered to [a:] in the first
+century A.D. can hardly be answered: the lowering to [a:] presum-
+ably postdates the raising of /a:/ to [ɔ:] or, at any rate, the [a:]
+allophones of /e:/ do not become part of the phoneme /a:/ before it is
+raised to the mid level, i.e., the rules: (A) *ē→ā and (B) *ā → ō are
+not in a 'feeding' order. The lowering process has been assumed to
+have originated in the Elbe-Germanic territory: Latin Suēbi (versus
+OHG Swāba) is documented since the first century B.C. and does
+not appear with <a> until the fifth century A.D. However, a Suevian
+tribe called the Quadi is known since the first century A.D.: their
+name has been associated either with Du. kwaad 'bad', which im-
+plies an original Germanic nominal stem *kweo-, or with Go. qipan
+'say' (3rd pret. plur. qēþun), unqēps 'unpronounceable'. Runic in-
+scriptions seem to indicate that *ē was not preserved any later than
+250 A.D. in the north - a fact perhaps confirmed by Finnish loans.
+like miekka 'sword' (: Go. mēki, versus Run. makija [Vimose chape,
+250-300 A.D.; cf. the verb marida(i) = Go. mērida < mērjan 'pro-
+claim', in the same inscription]). Further south, ā appears in the
+Ingwæonic territory (Slesvig) on the Thorsberg chape as early as 200
+A.D. in măriz 'reputation' (cf. Go. waila-mērā). Latin ē in later loans
+in the west is reflected in Germanic by [e:] which does not become
+part of the inherited * /e:/ to be lowered to [a:], i.e., it appears as part
+of a new Germanic phoneme: *ē, e.g., Lat. thēca > OHG ziecha
+'pillow case', Lat. pē(n)sile (Lat. -n- was not pronounced after long
+vowel before dental, as Cicero indicates and the Romance reflexes
+show) > OHG phiesal 'hot room (with hypocaust)'.
+Inherited diphthongs seem to be maintained in the earliest pe-
+riod: as already indicated, */ey/ has not yet been monophthongized
+to [i]; */ew/ is well attested in ancient sources, e.g., Eudoses (Cae-
+7
+
+=== page 006 ===
+
+EDGAR C. POLOMÉ
+sar), Reudigni (Tacitus) Teupioxaчμα (Ptolemy) [in which the first
+component represents the original Celtic inhabitants of the area (=
+Thuringia)]. Forms with <eo>, <iu> (conditioned by the vowel of the
+following syllable) appear essentially in the Migration Age, mainly
+as alternates to the traditional <eu> spelling. */ay/ occurs in the
+name of the Cimbrian king Caesorix which is presumably a Celto-
+Latin rendition of a Germanic *Gaizɔrikaz, Latinized to Gaisaricus
+in the name of the fifth-century king of the Vandals (better known
+as Genseric), corresponding to OHG Gērrih; - in the ethnic name
+Baчμoι, Bαivоxαчμai (Ptolemy), designating the Germanic tribe occu-
+pying the former homeland of the Celtic Boii in Bohemia (OHG
+Biheima < Gmc. *Baihaimoz); - in the tribal names Xaidivoí (= ON
+Heiðnir), Xaîµαi, Xaitovapoi (Ptolemy), etc. A problem is created by
+the alleged Germanic loan sapo 'hair-dying shampoo' in Latin (since
+Pliny, who, however, credits its invention to Gaul, while stressing
+its extensive use among the Germanic peoples): it corresponds to
+OHG seifa, OE sape (> E soap), which reflect a Gmc. *saipō (whence
+also Lappish saipo, besides *saipjan- reflected by Finnish saip(p)io).
+The -p- in sapo and the derivation of the term from PIE *seyb/p-
+'drip' excludes a Celtic origin (PIE *seyb - yields Celtic *seb-, possi-
+bly borrowed in Latin sebum 'suet, tallow'). The monophthongization
+of */ay/ to [a:] is, however, a late Ingwæonic process which postdates
+the major changes affecting original *ā and *ē,8 so that direct bor-
+rowing of Latin sapō from Germanic is improbable; therefore, the
+term fails to provide any plausible clue as to the early development
+of Germanic diphthongs. */aw/ appears as <au>, e.g., in the tribal
+name Chauci (Pliny, Tacitus), and is preserved until the Migration
+Age and even later, e.g., in the Frankish names Bauto, Maudio,
+Merobaudes (Ammianus Marcellinus).
+The earliest retrievable Germanic vowel system seems accord-
+ingly to correspond by and large to what linguists like Frans van
+Coetsem designate as the e-a-period in the development of Proto-
+Germanic phonology." It is roughly a system in which [i] and [u]
+appear as vocalic allophones of the phonemes /y/ and /w/, whereas /e/
+and /a/ have phonemic status, the latter presumably as a kind of ä.
+The long vowel system would show a rectangular pattern:
+8
+
+=== page 007 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+/i:/
+/u:/
+/ɛ:/ /ɔ:/
+this stage, nasal environments and Umlautsfactors do not seem
+_ affect the vowels: /e/ is preserved before -nn- in Fenni in Tacitus
+(end first century A.D.), but raised to [i] in Ptolemy (second century
+A.D.) Divvot; the raising seems to have occurred somewhat earlier
+before-ng- as Inguaeones (Pliny) versus Tencteri (Caesar) shows; the
+redistribution of the allophones of */e/ and */i/ which characterizes
+the later dialects has not yet taken place, and there is no clear
+evidence that the so-called a-Umlaut of *i in terms like *nestaz <
+PIE *nizdos (cf. Lat. nīdus 'nest'), consisting of the prefix ni- + the
+zero grade of the root *sed- 'sit' (Go. sitjan), 10 had already taken
+place. If it did, one could perhaps speculate that it reflects a process
+of vowel harmony on the mid level already operative before the shift
+of unstressed *o to [a], and affecting *u as well as *i, e.g., Pre-Ger-
+manic *yugom (Lat. iugum 'yoke') > ON ok, OHG joh. However, as
+the two rules are not in a 'feeding' relation, the lowering of [u] to [o]
+obviously postdates the merger of inherited stressed *o with *a.
+Unfortunately, there is no early onomastic evidence illustrating the
+change: it is not clear whether Gomoarius in Ammianus Marcellinus
+(fourth century), whose first component presumably corresponds to
+Go. guma 'man', is a western or eastern Germanic name (there is a
+W.Goth Gomarigus; in the seventh century, alternate forms like
+Gudomarus: Godemarus, the name of a Burgundian king, contain-
+ing Gmc. *guða- 'god' < PIE *ĝutó- 'invoked', are found, but the oc-
+currence of the divine name Hludana in dedicatory inscriptions of
+the end of the second and the beginning of the third century A.D.
+indicates that [u] was maintained until that date under the condi-
+tion of the -a-umlaut." It appears consequently safe to assert that
+no -a-umlaut was operative as regards the high back vowel in the e-
+a-period of Germanic, and to leave the matter open for the high front
+vowel.12
+(b) Consonant system:
+The major problem with the graphic representation of the Germanic
+consonants in ancient sources is the transliteration of Germanic
+fricatives: although Greek had Q, v, x available for Germanic f, þ, h,
+9
+
+=== page 008 ===
+
+-
+EDGAR C. POLOMÉ
+clusters like /ft/, /ht/ or /hs/ are not rendered by ot, XT, Xσ but by ït,
+кt, to which correspond Latin pt, ct, x; for the dental and velar
+voiceless fricatives, Latin and Greek show either t, k / T, к or th, ch /
+d, x, although the choice of spelling is conditioned by chronological
+and other factors. The voiced fricatives b, d, g are reflected in Latin
+and Greek by the corresponding stops b, d, g | ẞ, 8, y through sound
+substitution, but after Latin (non-vocalic) u [w] had become [v]
+(third century A.D.), Gmc. b occurs as <v> at the initial of the second
+component of newly-formed Germanic onomastic compounds. Ac-
+cordingly, when we find -kt- for Gmc. -ht- in a name like BpovкtεPOL
+(Strabo), Bructeri (Velleius Paterculus, Tacitus), we obviously deal
+with sound substitution – perhaps originally through Celtic inter-
+preters? - as in Tencteri, another tribe from the Rhineland, whose
+name is documented since the first century B.C. It is striking, how-
+ever, that the same sources regularly use respectively <Ch> or <X>
+to render initial prevocalic Gmc. h- in ethnic names like Chamavi
+(Tacitus, versus Kaμavoí, Kauaẞoí in Ptolemy [second century
+A.D.]), Charini (Pliny), Chasuari(i) (Tacitus), Xάtto (Strabo) =
+Chatti (Pliny, Tacitus), Xattovápio (Strabo), Chauci (Pliny,
+Tacitus, versus Cauchi [Velleius Paterculus], Kauxo [Ptolemy]), etc.
+On the other hand, <H-> is not uncommon either, e.g., Harudes
+(Caesar), Harii (Tacitus), Hellusii (Tacitus), Hilleviones (Pliny), for
+which there do not seem to be any alternate forms with <Ch-> in the
+manuscript tradition, except for the form Charydes (Greek XáλvẞES
+for *Xapoudɛç) in the Monumentum Ancyranum (13 A.D.). In view of
+the lability of their own initial h- (cf. hircus: ircus, holus: olus, etc.),
+the Germanic /h/ with its lenis and fortis allophones must have
+given the Romans trouble: hypercorrect initial h- appears appar-
+ently to render a strong vocalic onset, e.g., in the ethnic name
+Herminones (Pomponius Mela, Pliny, Tacitus), derived from Gmc.
+*ermena- 'exalted, lofty', also in Hermunduri (Pliny, Tacitus), which
+is assumed to appear without prothetic h- in Strabo: *EpμóvSopol
+(ms. Evμóvбopot). Omission of the initial h- in the Latin spelling of
+Germanic terms with h-anlaut is found only in the third century
+A.D. and later, e.g., Asdingi, 'Aσyyo (Dio Cassius), for the royal dy-
+nasty of the Vandals (Hasdingi = ON Haddingjar, OE Heardingas);
+Ulmerugi (Jordanes, sixth century A.D.), the 'insular Rugii' (= ON
+10
+
+=== page 009 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+Holmrygir). More significant is the fact that Caesar uses Vacalus to
+designate the Waal, whereas Tacitus calls this branch of the Lower
+Rhine Vahalis about a century and a half later. It has been argued
+on the basis of this contrast between <c> and <h> in the Latin-
+ization of the hydronym that the shift from Pre-Germanic /k/ to
+Germanic /h/ was not yet completed in that part of the Germania at
+the time of Caesar's arrival in northern Gaul. It would correspond to
+the maintenance of the initial /k/ <c> in the name of the Cimbri who
+wandered down to the Roman world towards the end of the second
+century B.C. from their Danish homeland Himmerland (MDan.
+Himbersyssæl), whereas the shift would already be documented half
+a century after Caesar in Charydes (Monumentum Ancyranum). It
+would then seem that contact with Rome and the turmoil it brought
+into Germany would not only account for sweeping social changes,
+but also for important linguistic developments. But all this remains
+extremely conjectural as one always has to keep 'sound substitution'
+in the Roman transcription of alien terms in mind. Moreover, the
+term Cimbri itself apparently goes back to fourth century B.C.
+sources (Schönfeld 1965:63), i.e., to a time when whatever little
+knowledge about the Germanic world was available to Mediterra-
+nean cultures had essentially reached them though the Celts,
+from whom they could hardly differentiate the Germanic peoples.
+This also accounts for the 'Celticization' of early Germanic names
+such as the names of Cimbrian leaders, e.g., the already discussed
+Caesorix. 13
+The gist of this discussion is that the ancient sources do not
+provide us with any unambiguous clue as to the date and sequence
+of the processes of the Germanic consonant shift. But then, how are
+we to consider this change in the pattern of the inherited obstruent
+system in the light of the new theories?
+The most commonly accepted approach to the Pre-Germanic sys-
+tem is to reconstruct three sets of consonants:
+(a) voiced aspirates: /bh dh gh gwh/, e.g.:
+*bheyd (: OInd. bhinádmi 'split') > Go. beitan, OE bitan 'bite';
+*lewb (: OInd. lúbhyati 'desires') > Go. liuba (<b> = -b-), OE
+lufu 'love';
+11
+
+=== page 010 ===
+
+EDGAR C. POLOMÉ
+*dhur- (: Grk. vúpa )> Go. daur, OE dor 'door';
+*ghostis (Lat. hostis, archaic fostis 'alien, foe') > Go. gasts, ON
+gestr, OE giest 'guest';
+*steygh- (OInd. stighnoti 'steps, mounts') > Go. steigan, OE
+stīgan 'climb';
+sengwh- (: Grk. ŏµo̟é̟ < *songwhā) > Go. siggwan, OE singan 'sing';
+*gwhen- ( Hitt. kwanzi 'kills' [3rd plur. kunanzi], OInd. hánti
+'hits, kills' [3rd plur. ghnanti) > ON guðr, gunnr, OE gūþ
+'battle' < *gunþjō;
+*gwhormos (: OInd. gharmáḥ 'ardor') > Go. warmjan, OHG warm
+'warm'; etc.
+(b) voiced stops: /b dg g"/, e.g.:
+*dhewb- (: Lith. dubùs 'deep') > Go. diups, OE deop 'deep';
+*dem- (: Grk. Séµw 'construct [a wall]') > Go. timrjan 'build,' ON
+timbr(a) 'timber' (= construction material);
+*pěd- ~ pod- (: OInd. pat [gen. padáh], Grk. лоúç [gen. лodóç]) >
+Go. fotus, OE fōt 'foot';
+*gel- (: Lat. gelū 'cold, frost') > Go. kalds, OS kald 'cold';
+*gwem- (OInd. gámati 'goes', Toch. A kum- 'come') > Go. qiman,
+OE cuman 'come';
+*(H)regos (: Grk. Epɛẞoç 'darkness [of the underworld]', Arm.
+erek 'evening') > Go. rigis 'darkness'; etc.
+(c) voiceless stops: /p tk kw/, e.g.:
+*patér (: Grk. лaτnp) > Go. fadar (<d> -ð-), On faðir 'father,'
+OE fæder;
+*klep- (: Grk. kλéñtw, Lat. clepo) > Go. hlifan 'steal';
+*treyes (: OInd. tráyah, Grk. τpɛiç) > Go. þreis, ON þrír, OE prie
+'three';
+*wert- (: OInd. vártate 'turns', Lat. vertere 'turn') > Go. wairban,
+OE weorpan 'become';
+*weyk- (: OIr. fichim 'fight,' Lat. vinco 'conquer') > Go. weihan
+'dispute,' OHG wihan 'fight';
+*k"od (pronominal form = lat. quod) > Go. ha, OE hwæt;
+*leyk"- (: Lat. linquo 'leave') > Go. leihvan 'lend'; etc.
+12
+
+=== page 011 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+This implies that Germanic had reorganized a system of contrasts of
+aspiration and voice into a system of contrasts of continuance and
+voice, i.e.:
++aspirate -aspirate
++continuant -continuant
++voice
+-voice
+bh
+b
+b
+p
+f
+p
+Leaving aside the complex problem of the typological inadequacy of
+the Pre-Germanic system thus reconstructed, 14 the development as-
+sumed involved several successive phases: 15
+I.
+C
+-vce
+[+aspir]
+-aspir
+or, if we substitute the feature 'tense' for the controversial 'aspirate':
+C
+-vce
+[+tense] e.g.: *p
+ph
+-tense
+This change would be connected with the introduction of the dy-
+namic accent in Germanic:
+*p [stressed vowel] ph.
+→
+The reason why /p/ was affected is illustrated by the feature matrix
+of Pre-Germanic:
+*p
+*bh
+*6
+voice
++
+tense
+(-)
++
+where /p/ shows [- tense] as a redundant feature, as it contrasts with
+both /b/ and /b/ in voicelessness. The new distribution resulting
+from I is:
+13
+
+=== page 012 ===
+
+EDGAR C. POLOMÉ
+[+vce]
+[-vce]
+*bh
+*b
+*ph
+[+aspir]
+[-aspir]
+-
+- or [+tns]
+[-tns]
+II.
+[[raspir]]
+or [+tns]
+[+cont]
+J. Fourquet (1948) claimed simultaneous development:
+[ph th kh]
+bh dh gh/
+/bd g/
+[fex] <fph>
+[BY] ([bd g])
+[b dg] (= lenition). 16
+It is safer to assume simply a shift to continuance instead of aspira-
+tion or tenseness as the distinctive feature, i.e.:
+[+vce]
+[+cont]
+*b
+[-cont]
+*b
+[-vce]
+*f
+The center of the system is ₺ contrasting with f in voice and with b
+in continuance. The feature [voice] is redundant for *b; this makes it
+easy to account for the shift of /b/ to /p/ which completes the conso-
+nant shift and establishes a new system:
+/f/
+/p/
+/b/
++
+(+)
+[+cont] [-cont]
+III. [+vce] b
+[-vce] f
+p
+-or- [vce]
+[cont]
+-
++
+Now the 'continuance' feature has become redundant for Gmc. *b;
+hence, the occurrence of variants with [b] at an early stage of Ger-
+manic, in particular in initial and postnasal position." The new /b/
+phoneme, thus established in Germanic, contrasts in voice with the
+Germanic phonemes /f/ and /p/.
+14
+
+=== page 013 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+In the early seventies a revision of the traditional views on the
+pre-Germanic obstruent system was proposed independently, but
+almost simultaneously, by P. Hopper in the U.S.A. and by T.
+Gamkrelidze and V.V. Ivanov in the U.S.S.R. 18 It can be schematized
+as follows:
+Traditional system
+Gamkrelidze-Ivanov
+voiced aspirates
+Hopper
+'murmured' stops
+bh dh gh
+bdg
+voiced aspirates
+bh/bdh gh/g
+voiced stops
+glottalized stops
+ejectives
+bdg
+(ejectives) p' t'k'
+p't'k'
+voiceless
+voiceless stops
+voiceless aspirates
+ptk
+ptk
+ph/pth/t kh/k
+The new system which actually occurs in the form proposed by the
+Soviet linguists in modern eastern Armenian dialects, has appar-
+ently several advantages over the system reconstructed by the Neo-
+Grammarians:
+(1) the reinterpretation of the voiced stops as original ejectives ac-
+counts for the rarity of pre-Germanic *b since the labial ejective p'is
+characterized by its low frequency of occurrence; 19
+(2) co-occurrence constraints of consonants such as the exclusion of a
+traditional pre-Germanic sequence /d - g/, i.e.:
+C
+V (R)
++vce
+-cont
+-aspir
+C
++vce
+-cont
+-aspir
+receive a better explanation: in this case, the exclusion is due to co-
+occurrence restrictions on glottalics – no two ejectives can appear at
+the beginning and the end of a root!
+-
+(3) the consonant shift of Germanic is no longer an aberrant phe-
+nomenon, but rather an archaic feature preserved in this language:
+the glottalized stops /p' t'k' apparently undergo merely a straight-
+forward deglottalization, 20 and the non-glottalized stops /p(") t(^) k(h)
+b(h) d(¹) g(h) / become continuants.
+15
+
+=== page 014 ===
+
+EDGAR C. POLOMÉ
+Within the system elaborated by the Soviet linguists the shift
+from [-continuant] to [+ continuant] has obviously been favored by
+the subphonemic aspiration of the reconstructed Indo-European
+phonemes. They posit, indeed, that the latter are basically aspirated
+stops with positionally conditioned unaspirated allophones. This en-
+ables them to account for the voiceless stops after fricatives in Ger-
+manic in cases like Go. hafts 'married' versus Lat. captus 'captured'
+or Go. skadus 'shadow' versus Grk. σкóτoç 'darkness': while the as-
+pirated allophones of Indo-European non-glottalized voiceless stops
+are reflected by voiceless spirants in Germanic, their unaspirated
+allophones appear after /s/ or voiceless stop, being reallocated to the
+Germanic phonemes /p t k/ reflecting the 'deglottalized' original /p' t'
+k. On the other hand, Gamkrelidze and Ivanov believe that the
+voiced stops lose the continuance feature as phonemes, with their
+aspirated and unaspirated allophones, and that the resulting Ger-
+manic voiced spirants are subsequently reflected as voiced stops
+word-initially and voiced fricatives medially, but they also contem-
+plate the possibility that this distribution might reflect the old dis-
+tribution of the aspirated and unaspirated allophones of the Indo-
+European stops. Such an assumption is most improbable in view of
+the complex dialectally and positionally conditioned occurrence of
+the occlusive and fricative allophones of the Germanic voiced ob-
+struents, even in initial position as far as g ~g is concerned.21
+Taking into consideration the far-reaching consequences the revi-
+sion of the views on the Proto-Indo-European consonant system en-
+tails, it is necessary to assess the conflicting views on its validity.
+Traditionalists have insisted on the fact that what is gained in
+simplifying the system of Germanic is lost by creating additional
+complexity in other languages: this argument is rather weak as the
+developments assumed are (a) phonologically plausible and 'normal';
+(b) compatible with the diachronic/areal development of the Indo-
+European speech community, as the monumental study by Thomas
+Gamkrelidze and Vyacheslav V. Ivanov (1984) has shown. The ad-
+ded argument that some defenders of the new approach assume a
+system without voicing22 is hardly cogent since the system actually
+operates with (1) voiced (aspirated) stops; (2) ejectives; (3) voiceless
+(aspirated) stops.
+16
+
+=== page 015 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+More serious is the objection that the system rests almost exclu-
+sively on typology and fails to apply the established methods of
+historical linguistics. In response to this argument, the defenders of
+the new approach have rightly pointed out that it has already
+proved productive in offering new solutions to old problems such as
+vowel lengthening with acute intonation in Balto-Slavic ('Winter's
+Law'), Lachmann's Law and Bartholomae's Law. 23 Surveying recent
+developments in Indo-European linguistics, Oswald Szemerényi
+stressed that a number of objections could still be made to the 'glot-
+talic theory, and that some of its explanations are not as convincing
+as they would seem at first sight. 24 What appears from this discus-
+sion is that a number of issues remain unsatisfactorily solved under
+the reformulation of the old pattern of the pre-Germanic consonan-
+tal system, but the need to reevaluate long-accepted conclusions is
+clearly illustrated by the sweeping reinterpretation of the Germanic
+consonant shift the new approach entails - especially if one follows
+Theo Vennemann in ascribing the second ('German') consonant shift
+to the continuity of the 'glottalic' pattern in Germanic. 25
+Whichever view prevails, it has to cope with Verner's Law and its
+relative chronology. To account for Gmc. *faðer (Go. fadar, ON faðer,
+OE fæder) < pre-Gmc. *pǝtér, or Gmc. *swegur 'mother-in-law' (OE
+sweger, OHG swigar) < pre-Gmc. *swekrú the following rules are
+posited in the traditional interpretation:
+(1)
+(2)
+*p*t *k
+f p h [x]
+f þ h;
+b d g [y]
+the second rule being formulated as follows:
++obstr
++cont
+[+vce]
++vce
+-accent
+[+vce],
+i.e., the fricatives are voiced in a voiced environment if the preceding
+segment is unstressed. This process is linked with the assumed
+survival in the earliest period of Germanic of the variable pitch
+accent of Proto-Indo-European whose position depended on morpho-
+logical and rhythmical factors. At the end of the Proto-Germanic
+period the nature of Germanic accentuation changed with its shift to
+a stress type and its fixation on the root syllable.
+17
+
+=== page 016 ===
+
+EDGAR C. POLOMÉ
+-
+This dynamic accent is usually made responsible for the strengthen-
+ing of articulation by which *p- → *ph, which then develops into the
+f, with which b would alternate under the conditions of Verner's
+Law. Since the latter depends on the survival of the so-called 'free
+Indo-European musical accent' in Proto-Germanic, it should how-
+ever precede the sequence *p → *ph →f postulated in connection
+with the development of the Germanic root-stress. Therefore, one
+would have to posit: *p → *b, and to assume that the voiced frica-
+tives thus developed under Verner's Law merged with those result-
+ing from the Indo-European 'voiced aspirates', to show the same
+continuant and non-continuant allophones (* ~ b). The whole pro-
+cess could then be summarized in one rule:
+-
++cons
++obstr
+-cont
++cont
++cons
+-> avce
++vce
+[+vce]
++cont
+aaccent
++strid
+-vce
+i.e., ptk kw sf þ h h [X] s ~ bdg [y] y z - depending on the pre-
+Germanic accent inside the word. 26 The sequence of the processes of
+the Germanic consonant shift would then be schematized as follows,
+with Ramat (1981:40):
+(1)
++obstr
+-sonor
++cont
++vce
++vce
+-vce
+-accent]
+ent]
+[+vce]
+= Verner's Law
+(2)
+C
+-vce
+→>
+[+aspir]
+-aspir
+"his rule would already have been bled by (1): *´p → ´ph,
+but in /V - V/: *p² → b² → b.
+18
+
+=== page 017 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+(3)
++aspir
+-cont
+→
+[+cont]
+PIE *6 → b, and PGmc. *p" [from rule (2)] →f;
+b [from rule (1)] merges with b [from rule (3)]; there is no
+merger with IE *6.
+(4)
+-cont
++vce
+]
+→>
+[-vce]
+IE *b p.
+The fact that a shift to * has to be assumed at the very beginning of
+the sequence can be considered to be a weakness of this pattern, but
+is required as a mere voicing of IE *p would produce a Proto-Ger-
+manic *b which would feed into rule (4) and yield p again! It is obvi-
+ously problems of this kind that make the 'glottalic' interpretation of
+the development of the Germanic consonants more attractive.
+Whether we consider the pre-Germanic system as consisting of
+voiced aspirated stops, and voiced and voiceless unaspirated stops,
+or of voiced and voiceless aspirated stops, and ejectives, they are
+reflected by the following set of predialectal obstruents:
+(a) voiceless stops: p t k k";
+(b) voiceless fricatives: fþ h [x] h [x"];
+(c) voiced 'lenes' (with occlusive and fricative allophones): b - b, d -
+đ, g − g [y], in which series the reflexes of labiovelar (Proto-Ger-
+manic) [y] offer special problems.
+The voiceless labiovelar stop kw was preserved in prevocalic initial
+position in the Germanic dialects, e.g., Gmc. *kwernu-, kwernō 'mill-
+stone, handmill' > Go. asiluqairnus 'donkey-mill', ON kvern, OE
+cweorn, OFri., OS quern, OHG quirn, chwirna; internally, we find it
+in Gothic riqis 'darkness', and ON røkkr 'darkness' reflects Proto-
+Nordic *rekwaR (cf. also ON røkkva 'get dark'). The voiceless labio-
+velar fricative was originally maintained in prevocalic initial posi-
+tion, e.g., in Go. hairban 'live, walk', ON hverfa, OE hweorfan, OFri.
+19
+
+=== page 018 ===
+
+EDGAR C. POLOMÉ
+hwerva, OS hwerban, OHG (h)werfan 'turn about', but underwent a
+progressive weakening from [x] to [hw], and ultimately [w] in the
+southern dialects; internally, it appears intervocalically in Gothic in
+verbs like leihan 'lend', saihan 'see', but only [h] remains in Old
+Saxon and Old High German lihan, sehan, whereas it has been lost
+in Old Norse (ljá, sjá) and Old English ([on]leon, seon). When *-*-
+appeared as a result of Verner's Law, various reflexes could occur,
+e.g., intervocalically -w- in Germanic *pewaz <PIE *tek"-o- 'runner'
+(Go. pius [gen. plur. piwe], Run. þewaR, OE peo(w); feminine: OS
+thiwi 'slave, girl') - a development that indicates that *-y"- from Pre-
+Gmc. *k merged with the cluster -gw in Germanic (cf. *magwi
+'child, girl' versus *magu- 'child, boy' as reflected by Gothic mawi:
+magus and Old Norse mær < PNord. *mawiR): mogr; before non-syl-
+labic /y/, *-y"- lost its labial element and the velar fricative later
+became a non-continuant obstruent in 'gemination' before Germanic
+-j-, e.g., in *say"jaz < Pre-Gmc. *sok"yós (= Lat. socius 'partner'), re-
+flected by ON seggr 'man, warrior', OE sec3 'man, companion'.
+While there is little dispute as to the reflexes of Indo-European
+*gwh in internal position, 27 there has recently been renewed contro-
+versy about its treatment at the word-initial: the main issue in the
+discussion is whether initial pre-Germanic *gh is represented by b-,
+g-, or w- in Germanic. The whole matter hinges on etymologies:
+Elmar Seebold has tried to demonstrate on the basis of the deriva-
+tion of ON bani, OE, OHG bana 'killer' from IE *gwhen- 'hit, slay';
+- of Go. brinnan, ON brinna, OE beorna, OHG brinnan 'burn' from
+IE *ger 'burn' (-nu-present!); - of Go. bidjan, ON biðja, OE
+biddan, OHG bitten 'ask, entreat, demand' from IE *ghed¹- 'ask, de-
+mand', etc., that initial pre-Germanic *guh was reflected in Ger-
+manic by b-.28 None of these etymologies have received much sup-
+port, because the alleged parallel labialization processes affecting
+pre-Germanic *kw are due to secondary developments such as as-
+similation, analogical leveling, or tabuization. 29 Before /u/, delabial-
+ization is evidenced by ON guðr, gunnr, OS gūđea, OE gūþ 'combat',
+OHG gundfano 'battle-flag' < Gmc. *gunþ- < pre-Gmc. gwnt- (: OInd.
+hatyā 'beating'), but the treatment of *gh- before pre-Germanic *-o-
+remains unsatisfactorily established: while old etymologies like the
+derivation of ON geð 'wits, disposition' from IE *gwhod¹yom (: Grk.
+20
+
+=== page 019 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+лódos 'longing') is now mostly abandoned, 30 there are no sure paral-
+lels to back up the derivation of Gmc. *warmaz 'warm' (ON varmr,
+OE wearm, OS, OHG warm) from PIE *guhormos (: Lat. formus
+'warm', OPruss. gorme 'heat', Avest. garǝmo 'warm', etc.), while it
+can be easily linked with a root *wer- 'burn, cook' (: Hitt. war-nu-
+'kindle', OCS varɩ 'boiling water', Lith. vìrti 'cook, boil', etc.). Accord-
+ingly, for a number of environments, the treatment of *gwh - remains
+a moot question.
+Insofar as Proto-Indo-European laryngeals have been adduced to
+account for specifically Germanic developments, their reflexes are
+assumed to have been found essentially in Gmc. e, and the so-called
+-r- preterits, as well as in the Verschärfung ('Holtzmann's Law') and
+the correlated forms with -k-. Basic in this regard are the views pre-
+sented by W.P. Lehmann (1952), who ascribes the reflexes to the
+particularly conservative treatment of laryngeals contiguous to
+resonants in Germanic. Thus, he considers that e, reflects an inter-
+consonantal sequence /-eXy-/ [in which X represents any laryngeal]
+in Germanic (Lehmann 1952:66-73) - a view that he backs up with a
+series of etymologies of varying validity, such as OHG ziari 'orna-
+ment' in which the laryngeal assumed to account for the -i- of OInd.
+ádidet dídeti 'shines, is bright' would also be responsible for Gmc.
+ē, in the Old High German derivation from PIE /dey-X-/ with a -r-
+suffix - or OHG skeri, skiaro 'clear, perspicacious', derived from PIE
+(s)keXy- on the basis of the occurrence of the Verschäfung in Olcel.
+skeggia 'ax', and of the underlying -ē- in MIr. scían 'knife'. 31 Further-
+more, Lehmann looks for additional evidence for his view on the
+origin of ē, in the strong verbs of the seventh class, e.g., OE lēt, OHG
+liaz, in which the 3rd person singular preterit *let is supposed to
+reflect PIE *leXyd- on account of Lith. léidziu 'let', under the as-
+sumption of a double treatment of PIE /-eXy-/:
+-
+,
+(a) → *ēi → *ē in open syllable, before the vocalic endings of the
+present, e.g., *lēi-dō → *lēdō (Go. lētan);
+(b) → *ēi → *ē, in closed syllable, before the consonantal endings of
+the preterit, e.g., *leid-me (1st plur.) → OHG liazum - implying an
+21
+
+=== page 020 ===
+
+EDGAR C. POLOMÉ
+-e-grade 'aoristic' stem versus the reduplicating-ablautend perfect-
+form lailōt in Gothic. When the expected zero-grade stem appears
+instead of this full-grade stem, PIE /yX/ [ix] is apparently reflected
+by -r- in the Old High German preterit scrirun of scrian 'cry'. How-
+ever, such -r-preterits usually appear in the seventh class of strong
+verbs where Lehmann accounts for the -r-form through the 'regular'
+development of the full-grade sequence /-eXw-/. A closer look at the
+data suggests, however, that these sporadically attested -r-forms
+can be better explained otherwise, e.g., by Lüdtke's anticipation
+theory (1957:162-168) which makes it possible to account for Old
+High German (Alemannic, early ninth century) anasteroz. impin-
+gebat (from stōzan 'push') and pleruzzun. adolerent (from bluozan
+'offer, sacrifice') as follows:
+(a) *beblot → *blelot → *blerot (with dissimilation of ... l> l ... r);
+pleruzzun shows the Alemannic reflexes of the second consonant
+shift (initial p- < b- and internal -zz- < -t-); the 'stem'-vowel -u- in
+the preterit plural as well as the third singular optative
+capleruzzi. immolaret, follows analogically the pattern of the
+strong verbs with -u-reflexes of the underlying Pre-Germanic
+'zero-grade' vocalism of the preterit (= Proto-Indo-European per-
+fect) plural form;
+(b) *stestaut *stesot → *stezot (voicing of intervocalic /s/ presum-
+ably ascribable to the prolonged maintenance of the stress of
+the 'stem'-syllable) →steroz (rhotacism and second consonant
+shift.32
+As for e, itself, Lehmann fails to account for the fact that its geo-
+graphic distribution as well as its appearance at a definite time in
+the loanwords from Latin apparently points to an innovative pattern
+initiated in Southern Germanic: Old High German has indeed by far
+the largest number of reflexes of e, in nominal forms, and a thorough
+examination of the material confirms that ē, is a relatively late de-
+velopment in the diachronic evolution of the Germanic phonological
+system. Actually, it appears to result from the convergence of differ-
+ent phonetic changes with different areas of diffusion, namely:
+22
+
+=== page 021 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+(a) vowel contraction as a result of the reduction of the reduplica-
+tion in the strong verbs of class VII, e.g., *hěhait(a) > *hěhět >
+*hĕět > hēti (OE het [versus Anglian hěht], OHG hiaz, cf. Lüdt-
+ke 1967:163);
+(b) lowering of the -i-off-glide in the Germanic diphthong *ei under
+specific environmental conditions, e.g., in OHG chrēg 'obstinacy'
+< Gmc. kreiga-;33
+(c) compensatory lengthening for the loss of -z- before a dental stop,
+e.g., in OE mēd versus meord 'reward' (= Go. mizdo, Grk. μodós
+'recompense'), OHG mieta 'recompense, gift' (Lehmann 1986:
+259);
+(d) borrowing of Latin words with ē in a limited period of the con-
+tacts between the Germanic world and the neighboring Ro-
+manized territories (Lüdtke 1967:169-173), e.g., OHG biaza <
+Lat. bēta 'beet';
+(e) (as yet) unexplained origin in pronominal forms, e.g., Go. hēr
+'here', OHG hiar (cf. Lehmann 1952:72; 1986:182).
+e
+As for Gmc. -k- from laryngeals, several terms in which the velar is
+alleged to reflect a Proto-Indo-European cluster of laryngeal + w, ac-
+tually show cognates with IE *-g-, e.g., Gmc. *spik(k)a- 'bacon':
+Vedic sphigi- 'buttock, hip'. Where laryngeals can be posited, the
+reconstructions are complex and often seem rather ad hoc, as in the
+case of OE tacor, OHG zeichur 'brother-in-law', where Lehmann
+(1952:50-51) must assume an ablaut alternation * Xyw- ~*exyw- in
+the inflectional paradigm of PIE *deXywer to account for the Ger-
+manic alternate forms in *-aiw-~-ak- he has to postulate to ascribe
+*-aik- to paradigmatical leveling! The difficulties become even
+greater when one follows Martinet's suggestion 34 that the so-called
+'labiovelar laryngeal' A" 'hardens' into *-k- before the athematic
+nominative ending -s, e.g., in *giA"s 'alive' > *gwik-, which would
+account for ON kuikr, OE cwic(u), OHG quec versus Gothic qiwa-
+'alive' and Greek Bios 'life' < *gwiAwos: as Martinet postulates this
+development for predialectal Indo-European, one wonders why the
+resulting *k did not undergo the Germanic consonant shift?
+23
+
+=== page 022 ===
+
+EDGAR C. POLOMÉ
+If there is, accordingly, no compelling evidence to ascribe the
+development of Gmc. -k- to the presence of a laryngeal in the vicinity
+of w, the irrelevance of the laryngeal theory to account for the
+Germanic Verschärfung is even more obvious: apart from the many
+apparent exceptions to 'Holtzmann's Law' which indicate that it did
+not apply universally in Old Norse, it represents a rather common
+development of 'lengthened intervocalic /w/ and /j/", which is even
+evidenced in Scandinavian at a later date by Faroese. The problem
+is whether the Proto-Indo-European laryngeal triggered the length-
+ening of contiguous /w/ or /y/ in Proto-Germanic, as Lehmann postu-
+lates (1952:63-64) or whether the lengthening of intervocalic /w/ and
+/j/ is only a matter of syllable structure in early Germanic, as Frans
+van Coetsem suggested as early as 1949.35 In etymologically clear
+cases, it would appear that Gmc. *-ww- reflects an earlier non-gemi-
+nate *-w- preceded by -u- or a -u-diphthong, and that Gmc. *-jj-
+similarly derives from an earlier *-j- after -i- or an -i-diphthong. This
+would imply that in a sequence like *-ewX- the laryngeal would be
+lost 'without directly causing gemination in Germanic'. 36 Therefore,
+recent theories on syllabification³7 will presumably provide a better
+explanation for the Verschärfung, more consistent with the histori-
+cal data, than the somewhat unwarranted projection of the length-
+ening of Germanic -w- and -j- into a distant prehistory.
+In conclusion, there is apparently no cogent evidence to assume
+that Proto-Indo-European laryngeals are directly responsible for any
+specifically Germanic phonological development, and it is therefore
+probable that they were no longer part of the phonological system of
+the western Indo-European dialect from which Germanic emerged.38
+Postscript
+Since the completion of this paper, Joseph B. Voyles' Early Germanic
+Grammar, covering the phonology and the morphology of the 'pre-, proto-
+and post-Germanic languages', has appeared (San Diego/London: Aca-
+demic Press, 1992), and made it advisable to briefly compare the issues
+raised here with Voyles' views on the same topics (a more extensive review
+of Voyles' book will appear in The Journal of Indo-European Studies, vol.
+21 [1993], No. 3-4). While I would tend to share his reticence to provide
+24
+
+=== page 023 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+2
+'laryngeal solutions for a number of problems of early Germanic such as
+the Verschärfung or the occurrence of unexpected -k-forms, I find his ex-
+planation of Gmc. *ē, particularly disappointing in the light of Jörundur
+Hilmarsson's development of the hypothesis I presented in the 1988
+Laryngaltheorie volume ('On è̟ in Germanic', in Acta Linguistica Haf-
+nensia, vol. 23 [1991], pp. 33-47). Also regrettable is his summary dis-
+missal of the 'glottalic' theory, on which one should now consult the excel-
+lent monograph by J.Salmons, The Glottalic Theory: Survey and Synthesis
+(McLean, VA: The Institute for the Study of Man, 1993). On the 'Change to
+Germanic Word Stress' (Voyles 1992:41-44), cf. J. Salmons, Accentual
+Change and Language Contact. Comparative Survey and a Case Study of
+Early Northern Europe (Stanford: Stanford University Press, 1992). As for
+Voyles' chronology (1992:76-79), it is certainly open for revision as regards
+the date of the completion of the first sound shift and the operation of the
+so-called 'first Umlaut' if one considers the tribal name Tencteri and the
+Germanic name of the elk in Caesar (see also Polomé, 'Zur Chronologie des
+Germanischen', in: R. Beekes et al. [eds.], Rekonstruktion und relative
+Chronologie. Akten der VIII. Fachtagung der Indogermanischen Gesell-
+schaft Leiden 1987, pp. 55-73 [Innsbruck 1992]).
+Another recent work on the 'earliest Germanic languages' - Orrin W.
+Robinson, Old English and its closest relatives (Stanford: Stanford Univer-
+sity Press, 1992) - does not provide any specific clue as regards the earlist
+development of Germanic, limiting itself (for obvious pedagogical reasons)
+to listing the 'sounds' of Germanic, and failing to introduce an adequate
+diachronic perspective in the linguistic development of early Germanic up
+to its dialectal diversification.
+Work in progress in correlation with recent developments in phonologi-
+cal theory is likely to lead to further revision of the diachrony of early
+Germanic and of its derivation from the parent language. I think in par-
+ticular of the study of the Matronennamen by Vennemann in correlation
+with his bifurcation theory (see his paper at the meeting of the Indo-
+germanische Gesellschaft in Zürich [October 1992]) and of the constructive
+criticism of Seichi Suzuki's interpretation of the Verschärfung in The
+Journal of Indo-European Studies, vol. 19 [1990], pp. 163-190, by Garry
+Davis and Gregory Iverson (see their paper on 'The Verschärfung as Fea-
+ture Spread' at the IVth Annual Michigan-Berkeley Germanic Linguistics
+Round Table [April 1993]).
+Department of Germanic Languages and Literatures
+University of Texas
+Austin, Texas 78712
+25
+
+=== page 024 ===
+
+EDGAR C. POLOMÉ
+Notes
+1. On this name, cf. A. Scherer (1955:202-203), K.H. Schmidt (1957:152,
+277), D.E. Evans (1967:151, 266-267). Germanic origin can reasonably
+be assumed since both components are well attested in Germanic,
+although *badwo occurs only in Old Norse (bo̟ð, gen. bo̟ðvar) and Old
+English (beadu). Moreover, the argument of Scherer (1955:202) that a
+feminine noun would not have been used as the second element of
+masculine names, remains unconvincing as eastern Germanic onomas-
+tics in the Migration Age abundantly document the use of names in
+-badus, from *-badwo, for warrior-like leaders such as the Gepidae
+Asbadus and Usdibadus, the Burgundian Gundibadus, the Vandal
+Marivadus (in whose name the <v> reflects the preservation of the
+Gmc. -5-), and the Goths Fridibadus, Hildibadus, Marabadus, and
+Wisibadus.
+2. Cf. R. Much, (1967:481-482); on the Dioscuzi in general, see especially
+D. Ward (1968).
+3. The name has been compared with Du. kim 'horizon', MDu. kimme
+'edge (of a barrel)', E. chime, chimb 'projecting rim (of a cask)', etc. (see
+Onions, 1966:170, de Vries, 1971:320, about these terms whose area of
+occurrence corresponds to the original Ingwæonic territory). This
+would imply a derivation from the PIE root *gey- 'turn, curve', also
+found in Norw. [dial.] kime 'turn, twist, wag, rock' (Torp 1919:267;
+Pokorny 1959:354). However, because the ethnic name appears to sur-
+vive in the medieval designation of the Cimbri's original homeland
+Himbersysæl in northern Jutland (nowadays: Himmerland), it stands
+to reason that this explanation is not adequate; therefore, E. Schwarz
+(1956:60) suggested anew the etymological link with ON himbrin 'em-
+ber-goose' (=northern diver or loon), already proposed in 1920 by A.
+Noreen (cf. de Vries 1961:227). The constant occurrence of initial <C->
+in the ancient sources makes this assumption disputable, as alternate
+forms with <Ch-> or <H-> would at least be expected (Schönfeld 1965:
+64) unless one accepts, with Schwarz, the possibility of an inter-
+pretatio celtica of the tribal name *Himbrōz by the Helvetian Tigurini
+who accompanied the Cimbri on their forays through Roman territory!
+Considering the lay of the land in the origin home of Cimbri, one might
+then also consider the possibility that they owe their name to the
+features of the landscape and derive it from an adjective *him(b)ra-,
+formed like OHG timbar 'dark' (versus OInd. tamrá- 'darkening') from
+a PIE root *kem- 'press together, restrain' (Pokorny 1959:555) appear-
+ing in such Germanic terms as OE hamm (enclosed) plot of pasture or
+meadow land' (still surviving in English dialects), MLG ham, MDu.
+26
+
+=== page 025 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+ham(me) '(enclosed) piece of land', ablautend OFri. hemme 'enclosed
+land', OE hem (in Elfric's Glossary) 'hem' (Onions 1966:425, 436; de
+Vries 1971:233). In this case, however, the -i- would result from the
+raising of *-e- before nasal + consonant.
+4. None of the various etymologies advanced for the divine name *Ingwa-
+(cf. de Vries 1977:678-679; E. Polomé 1985:9-10) assumes an original
+PIE *[i] allophone of/y/.
+5. Segestes is derived from the -s-stem in the same way as Remistus is
+derived from Gmc. *remes- (= Go. rimis 'rest'; Schönfeld 1965:187,
+201); Cheruscan (end of first century B.C./beginning of first century
+A.D.) Segimerus, Segimundus can hardly reflect a southern Germanic
+loss of -s- as has been assumed for OHG Sigimunt versus MLat. Sigis-
+mundus (Burgundian king, VIth c. A.D.; cf. W. Braune 1967:204).
+6. The assumption of a Celtic origin of the term (Schönfeld 1965:11) is
+unfounded: it is parallel to the Germanic divine names Alaferhviae,
+Alagabiae and its second component is an adjective derived from IE
+*deywos 'divine' (J. de Vries 1957:318). The often assumed Germanic
+theophoric anthroponym *teiwa- in the Harigasti-inscription on the
+helmet of Negau (allegedly worn by a Germanic auxiliary fighting with
+the Roman troops in the Pannonian campaign of 6-9 A.D. [cf. E.
+Polomé 1956:232-233]) is based on an incorrect reading of the inscrip-
+tion, which definitely designates the owner of the helmet as a soldier
+with a Latinized Germanic name: Harigast(us) Tei (filius), belonging
+to a detachment (vexillatio) of auxiliaries (alarum) stationed in the
+Illyrian province (cf. R. Egger 1960:84-86). Further study of the move-
+ment of the Roman legions and the recruitment of auxiliary troops in
+the first century A.D. make it plausible that Harigastus came from the
+Rhineland (cf. H. Callies - K. Düwel, [1967:57-68], who see a Latinized
+reflex of Gmc. *pewaz [= Got. pius] in the [patronym] Teus). Cf. further
+on this problem, F. de Tollenaere (1967).
+7. For a discussion of these terms, cf. R. Much (1967:40-42); G. Neumann
+(1973:572); W.P. Schmid - with an explanation of the name Donau
+within this author's 'Alteuropa'-hypothesis (1985:14-16). In Gothic, the
+raising process went a step further as [):] became [o:] while [o:] from
+other sources was raised to [u:], e.g., in Rūmoneis from Latin Romani.
+A similar raising of the Latin mid level front long vowel also occurs in
+early loans with -ē-, e.g., Vulg. Lat. pēnāre (vs. Class. Lat. pœnāre) >
+OHG phinon (cf. the parallel raising of East Gothic [e:] to [i:] evidenced
+by the <i> spellings for <e> in Luke).
+8. In addition to our earlier discussion of the fate of Pre-Germanic *ā and
+*ē in Germanic, it should be pointed out that Ingwæonic raises [a:]
+from *ē to [ɔ:] before nasals, e.g., Go. mēna 'moon'; OHG mano: OE/
+27
+
+=== page 026 ===
+
+EDGAR C. POLOMÉ
+OFri. mona. This [:] remains unaffected by the subsequent lowering
+and fronting of [a:] in Ingwæonic, e.g. Go. slēps 'sleep': OHG slaf: OE
+(W. Sax.) slæp [æ:], (Kent., Angl.), OFri. slēp [&:]. It cannot be assumed
+that this [e:] represents the direct continuation of the Proto-Germanic
+mid level front vowel since the loanwords from Latin with -ā- undergo
+the same raising and fronting, e.g., Lat. (via) strata: OE (W.Sax.) stræt,
+(Kent., Angl.) strēt. Tentatively the diachronic sequence of the changes
+can, accordingly, be set up as follows (as none of the rules 'feeds' into
+the others):
+(1) a→ō (about 1st c. B.C./1st c. A.D.);
+(2) è → à (Ingwæonic →ō- NASAL (ca. 1st-2nd c. A.D.);
+(3) ale (Ingwæonic fronting and raising; Migration Age);
+(4) aia (Ingwæonic monophthongization, after the Vth c. A.D.,
+versus Franconian ai →ē in the absence of Umlautsfactor).
+9. Van Coetsem (1970:1-93, esp. 12-17, 39-58; cf. Ramat 1981:7-12, 19-25.
+Distinguishing three stages in the development of Proto-Germanic,
+these authors would consider the shift from the (musical) pitch accent
+to the dynamic initial stress as the characteristic feature of the first
+period (approximately from the third until the first century B.C.). If
+this accent shift is ascribable to language contact in the Germano-
+Celtic symbiosis of the second half of the first millennium before the
+Christian era, as J. Salmons has indicated in his University of Texas
+Ph.D. dissertation (1985), the beginning of this period could be dated
+back to about 500 B.C. (cf. also E. Polomé [1989]). The second period
+(the so-called 'e-a-period') would start around the end of the second
+century B.C. or the beginning of the first century B.C., at about the
+time the Germanic tribes reached the Upper Danube, and be charac-
+terized by the phonological changes affecting *o and *ā as well as *e in
+definite environments: it would cover the early Roman period, until
+about the second century A.D., when the third period starts. At this
+stage, the phonological system is progressively restructured as a result
+of a number of changes which also introduce regional diversification.
+10. Cf. Lloyd 1966:738-745. W.F. Twaddell (1948) separated 'pre-Gothic'
+from the rest of predialectal Germanic, assuming that the original
+Germanic phonemes */i/ and */e/ have merged into /i/ in pre-Gothic, but
+that they never coalesced in the northern and southern Germanic
+dialects, though their allophones were redistributed. J. Marchand
+(1957) tried to show that Gmc. short *i and *e merged into one pho-
+neme/i/, but M. Beeler showed on the basis of Old Norse evidence that
+// and /u/ remained distinct. The matter hinges on the treatment of *e
+under the conditions of u-Umlaut: while -i- appears everywhere in the
+28
+
+=== page 027 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+reflexes of Gmc. *sedu-, assumed to represent IE *s(w)edu-/-o- (cf.
+(Gk. Edoç), e.g. Go. sidus, ON siðr, OE sidu, OFri. side, OS sidu, OHG
+situ, the situation is not as clear with OHG swehur (G Schwäher), OE
+swehor (glossed vitellus) < Gmc. *swehura- 'father-in-law'. This term
+does not show -i-, which appears, however, in OHG swigar (G Schwie-
+ger, dialectal for Schwiegermuttter 'mother-in-law') versus OE sweger
+(glossed socrus) < PGmc. *swegru. Moreover, in ON friðr, OHG fridu
+versus OFri. fretho 'peace', from Gmc. *friþuz < IE *prítus (related
+with *frija- 'free': OInd. priyá- 'dear'), <e> appears besides <i> from
+original perhaps initially in a morphological conditioned environ-
+ment, with subsequent paradigmatic leveling? Whatever the case may
+be, this state of things makes it rather difficult to accept, with van
+Coetsem (1970:51), that already in the e-a period of Germanic the vo-
+calic allophones of /y/ and the allophones of /e/ are in complementary
+distribution and belong to one and the same phoneme:
+-
+[i] before nasal + consonant;
+[e] under the conditions of a-Umlaut;
+[i] under the conditions of i-Umlaut;
+[i] under the conditions of u-Umlaut.
+A further objection to this would be (as Ramat [1981:22] points out)
+that there were presumably minimal pairs like the 2nd singular im-
+perative forms *weg 'move!': *wig 'fight!'.
+11. That it is often difficult to establish whether the conditions for a-Um-
+laut were actually present in proper names from the Migration Age
+and the following period is illustrated, e.g., by the careful analysis of
+the first component of the name of the Frankish king Chlodovechus by
+N. Wagner (1986), which shows that Chlodo- actually reflects a Rom-
+anization of Gmc. *hlupu- > OHG Hludu-.
+12. The Germanic divine name Vihansa does not provide conclusive evi-
+dence as its <i> might be long. Its first component has been compared
+to Go. weihan, OHG wihan 'consecrate', but might better be connected
+with Go. weihan 'fight', OHG wigan 'battle' as the term appears to des-
+ignate a war-goddess of Germanic troops serving in the Roman army
+in Atuatuca Tungrorum (Gallia Belgica) - now Tongeren, Belgium. In
+this case, the <i> might represent the short [i] of the zero grade of IE
+*weyk- (Porkorny 1959:1128-1129) as in OHG wiha-dinc 'judicial duel'.
+Other divine names occurring on inscriptions found in the same area,
+e.g., (dea) [Vir]adecd[is] (or Virodact[h]is), (dea) Ricagambeda, are ei-
+ther of obscure origin or Celtic (cf. Gaul. *rica 'furrow' as first element
+of Rica-gambeda, comparable with OE Erce [= Mother Earth] < insular
+Celtic *rece [with metathesis]).
+29
+
+=== page 028 ===
+
+EDGAR C. POLOMÉ
+13. It should be remembered that these names are not actually docu-
+mented until the fifth century A.D. in Orosius' epitome of earlier
+sources. It is therefore difficult to assess why both Gmc. g- (in Caesorix
+< Gmc. *Gaizɔrikaz) and h- (in Claodicus [also Claudicus] < Gmc.
+*Hluŏikaz) are represented by <c> in the Latin transcription. [As re-
+gards <ao>, cf. also <oa> in Kloadάpios (Procopius): Xλwdápios,
+Chlotharius].
+In Lugius, Gmc. intervocalic -g- appears as <g> (rather than Celtic,
+this name is presumably identical to the tribal name Lugii, which has
+been associated with Go. liugan 'marry', OIr. lu(i)ge 'oath', but could
+also be related to Celtic Aoúyɛov 'marsh' [Strabo], which is abundantly
+represented in the toponymy of northwestern Europe; cf. D.E. Evans
+1967:220).
+14. Concerns about the pre-Germanic phonological system as it was recon-
+structed, e.g., by W.P. Lehmann (1952), were expressed by André Mar-
+tinet (1955a:115) who points out that voiced aspirates occur only in
+languages that have also voiceless aspirates: therefore, the system
+reconstructed for Indo-European can only be a 'transitory' system. The
+same remark was made by Roman Jakobson at the 1957 International
+Congress of Linguists in Oslo (cf. Jakobson 1958:23) and in his 'posi-
+tion article' on Indo-European and typology, Oswald Szemerényi
+(1967:65-99) claimed that voiceless aspirates should be reinstated as
+part of the Proto-Indo-European consonant system. Szemerényi's pres-
+entation, however, ignored the fact that the voiceless aspirates were
+not phonemic in Indo-European: some appear in purely onomatopoeic
+roots such as OInd. kákhati: Lat. cachinnō: Gk. кaxάw; some are
+strictly Indo-Aryan innovations, e.g., OInd. sthagayati 'covers, hides':
+Gk. σtéyw 'cover, protect'; some, as Saussure already showed in a paper
+read in 1891 before the Société de Linguistique de Paris, are the re-
+flexes of clusters of a stop + a laryngeal, e.g., Avest. [nom.sing.] panta
+'path' < *pent-eH-s: [gen.sing.] pa vō (= OInd. patháḥ) < *pntHós (cf. E.
+Polomé 1972).
+15. I follow here essentially the scheme of development proposed by P.
+Ramat (1981:30-40), with due regard to the discussion of recent views
+in R. Schrodt (1976).
+16. J. Fourquet (1948:50) assumed a sequence of processes of weakening
+and strengthening of articulation which he tabulates as follows:
+IE
+Aspiration
+and devoicing
+Spirantization | Verner's Law
+Later shifts
+(strengthening)
+p
+ph}
+ph
+f-b
+f-b
+b
+b
+b
+bh
+bh
+b
+000
+b
+p
+b
+30
+
+=== page 029 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+This approach has received support from A. Martinet who described
+(1950:26-41, 1955a:328-349) a similar sequence of weakening and
+strengthening of articulation in the assumed development of the Proto-
+Italic consonant system. Fourquet tries to assign relative dates to
+these phases in the development of the Germanic obstruents on the
+basis of early loanwords, but none of these provides conclusive evi-
+dence. Thus, Lith. Gudai (name given by the Lithuanians to the Poles
+and White-Russians) is assumed to have been borrowed from Ger-
+manic perhaps as early as 400 B.C., and is equated with the name of
+the Goths (cf. Pol. Gdansk < Gothiscandza): it would indicate that the
+shift of [d] to the fortis [t] had not yet taken place at the time the
+Goths settled on the other side of the Baltic. But the term itself is
+ambiguous: Lith. Gudai could be related to Lith. gùdras 'smart, sly,
+cunning', or to OPruss. *gudān- 'forest-dweller' (Pruss. gudde 'forest
+area' also survives in the place-name Gdynia).
+17. The conditions for R. King's (1967:167) rule changing the voiced frica-
+tives into stops:
+[+obstruent]
+[+voice]
+[-continuant]
+[-strident]
+have been specified as follows by P. Ramat:
+#
+[+nasal]
+[+obstruent]
+[+voiced]
+[-strident]
+so as to include gemination. Its operation is confirmed by the absence
+of alternation between 6 and b, d and ð, etc. in terms like Go. bindan,
+gaggan, etc., contrasting with giban: gaf, hlaifs 'bread': [gen.sing.]
+hlaibis, in which <b> represents b. However, as it is obvious from the
+careful analysis of the dialectal differences in the treatment of the
+voiced fricatives by W.G. Moulton (1972), the rule does not apply for
+initial g- in Old Frisian and Old Saxon, just as in Modern Dutch,
+where /g/ still appears as [y].
+18. Cf. P.J. Hopper (1973); T.V. Gamkrelidze-V.V. Ivanov (1973 [=Ger-
+man version of a paper read in Moscow in mid-December 1972 at a
+conference on Indo-European comparative-historical linguistics]). For
+a further elaboration of these views, cf. P.J. Hopper (1982:121-139);
+T.V. Gamkrelidze-V.V. Ivanov (1984:5-80).
+19. The limited occurrence of *b in the Proto-Indo-European material has
+bothered Indo-Europeanists for a long time, and there has been little
+response to the tentative assumption of Holger Pedersen (1951) that
+31
+
+=== page 030 ===
+
+EDGAR C. POLOMÉ
+this situation might be ascribable to a pre-Indo-European shift flip-
+flopping the stops: [+ vce] → [-vce] and [-vce] → [+vce], so that the
+original phonologically weak member of the labial series *p would ap-
+pear as *b.
+In fact, most of the roots listed under B in Pokorny (1959:91-103)
+are of onomatopoeic origin, the remainder being either doubtful recon-
+structions or terms of presumably non-Indo-European origin (e.g. Lat.
+badius 'chestnut-brown', OIr. buide 'yellow'). Similarly, most of the
+Germanic words with initial *p- appear to be 'regional terms' with cog-
+nates only in the neighboring languages such as Celtic, Baltic or Slavic
+or in languages of northwestern Indo-European tribes such as the
+Italic groups which migrated south from the area where the ancestors
+of the Germanic people were located, unless they are Wanderwörter
+like Go. paida 'tunic, shirt'.
+20. Gamkrelidze - Ivanov (1984:35, fn. 1) actually suggest tracing back
+the (glottal stop) articulation of the Danish and West Jutlandic stød
+and similar phenomena to the shift of the glottalization feature to a
+suprasegmental characterizing the whole syllable, e.g., Pre-Gmc.
+*wot'-n-> Scandinavian [va'tn]. Whether such dialectally documented
+occurrences of glottal stops can be assigned such a remote origin re-
+mains, however, a most debatable issue.
+21. Efforts to redefine the 'voiced aspirates' are not new: E. Prokosch
+(1939:39-41) tried to define them as 'voiceless lenes spirants' (repre-
+senting them by o 9 ×). In a paper 'On the Methods of Internal Recon-
+struction', read at the Boston International Congress of Linguists in
+1962, Jerzy Kurylowicz (1964) similarly tried to show that the 'voiced
+aspirates' were not phonemically voiced, but his view ran afoul of the
+evidence of the Indo-European 'daughter languages'. Louis Hammerich
+(1967) advanced the idea that the 'voiced aspirates' might be empha-
+tics, but in the Semitic languages the emphatics are either uvularized
+or pharyngalized, and the adjacent vowels are always backed, which is
+definitely not the case with the Indo-European 'voiced aspirates'. Their
+reflexes are either voiced stops or developments of the same, except in
+Latin, Greek, Armenian and Indic:
+/bd g/
+Avestan, Old Church Slavonic, Lithuanian, Albanian
+(+ palatalized [j] [ž] [z])
+→ Old Irish; Germanic (₺ ~ b, ð ~ d, g ~ g)
+→ [pt k] (with palatalized forms) in Hittite (<z> [t³]);
+Tocharian p, t (c, ts), k (ç)
+→ voiced aspirates in Old Indic and Armenian
+→ voiceless aspirates in Greek (o & x) and Italic
+(p">f ~b; th>f ~ d; k¹ > h ~ g ~ f).
+32
+
+=== page 031 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+Thus, one could posit PIE voiced stops /b d g/ with P.J. Hopper and
+assume that their development to bh dh gh is a regional innovation in-
+volving the ancestors of Italic, Hellenic, Armenian and Indo-Iranian,
+with subsequent devoicing in Italic and Greek.
+22. E.g., F. Kortlandt (1978a), where he posits lenis aspirata [d] <d/dh>,
+glottalized lenis <t'>, and plain fortis <t> instead of the traditional *dh
+dt as components of the Proto-Indo-European triangular system of
+obstruents.
+23. On 'Winter's Law', cf. Winter (1978), with the comment of F. Kortlandt
+(1978b). Kortlandt (1978a) considers Lachmann's Law as a corollary of
+Winter's Law: in Balto-Slavic the glottalic feature characterized the
+initial part of the occlusive, triggering the acute intonation and the
+vowel lengthening; in Latin, 'when voicedness became phonemic, the
+aspiration in the cluster *-ght- was simply lost' (hence: vectus), 'but the
+glottalic articulation in *-gt- was preserved as a feature of the preced-
+ing vowel' (hence: rectus). As for Indo-Aryan, Kortlandt accounts for
+Bartholomae's law as follows: the aspiration characterized the final
+part of the consonant - hence, it weakened the following fortis and
+voiced the whole sequence in a voiced environment, e.g., OInd.
+dugdháḥ 'milked' < *d¹ugħ -tó-, but glottalization in the second conso-
+nant of a cluster would weaken a preceding fortis stop, voicing the
+whole sequence in a voiced environment, e.g., in the zero grade of PIE
+*pet' (traditionally: *ped-) in OInd. upabdáḥ 'trampling'. Cf. also T.V.
+Gamkrelidze - V.V. Ivanov (1984:32-35,70-71).
+24. Cf. O. Szemerényi (1985:12-15). Some of the reasons adduced to doubt
+the validity of the 'glottalic' theory are not as convincing as its critics
+assume. Thus, if the assertion of Hopper (1982:132) that 'voicing in the
+mediae proceeded by way of laryngalization of original ejective stops' is
+not supported by uncontroversial diachronic evidence, Szemerényi's
+(1985:13) objection that 'ejectives are by nature voiceless sounds' is not
+justified either, since there are voiced egressive pharynx air stops
+relatively rare as they might be! On the other hand, the argument
+drawn from the virtual absence of initial b- in Indo-European by deriv-
+ing it from the uncommon 'glottalic' /p'/ cannot apply as readily to the
+better documented medial -b-.
+25. Cf. Theo Vennemann (1984) who posits as the earliest Germanic sys-
+tem: voiceless aspirates (ph th kh kwh), fortes (= the 'glottalic' p't' k' kw³),
+and lenes (b d g g"); he then describes the sequence of the changes af-
+fecting them as follows:
+(1) Verner's Law causes the lenition of the aspirates medially, ex-
+cept immediately after the accent, causing them to merge with
+the original lenes;
+33
+
+=== page 032 ===
+
+EDGAR C. POLOMÉ
+(2) The voiceless aspirates become mellow fricatives, i.e. Proto-
+Germanic changes *th into p;
+(3) The fortes are reanalyzed, their glottalic element developing
+into affrication in High Germanic (Old High German and
+Langobardic) and into aspiration in Low Germanic (all other
+SGermanic dialects):
+/t/ becomes *th in Low Germanic and *ts in High Germanic.
+26. There are apparently no reflexes of the action of Verner's Law in
+Anlaut, except for the controversial Gmc. prefix ga- (= Lat. co-).
+As Ramat (1981:39) points out, Verner's Law is a process of 'leni-
+tion' and 'sonorization' for which parallels can easily be adduced, e.g.,
+in the Romance languages, where Vlg.Lat. *focu> Span. fuego 'fire';
+Vlg. Lat. *patre > OFr. pathre [ð] > Fr. père 'father'; Vlg.Lat. *potere >
+Ital. podere. That the accent determines the change has long been
+recognized by phoneticians like Otto Jespersen (1928:199-208); who
+points to alternations like [ks]: [gz] in E exhibition versus exhibit, [kſ]:
+[g3] in E luxury versus luxurious, [tf]: [d3] in E which versus Green-
+wich, etc. Cf. Dieth (1950:301-304).
+Phonologically, intervocalic consonants are unmarked as to voiced-
+ness in a voiced environment: voicing being a natural feature in such a
+context, Verner's Law is essentially an assimilation of voice in a [+vce]
+environment. This also accounts for Gmc. ga- versus Lat. co-, if we ac-
+cept W.H. Bennett's view (1968) that voicing takes place in proclitic
+position, as in E the man [ðǝ'mæn], he's a man [izǝ'mæn]: similarly,
+*kom(m)oínis Lat. communis: Go. gamains, G gemein.
+27. Originally preserved after nasal as indicated by Gmc. *saŋgwaz (: Grk.
+ŏµ¢ń < *soŋgª³à) in Go. saggws and ON songr (with ọ from a through
+-w-Umlaut), Gmc. -y"- in postvocalic position before a resonant other
+than /y/ apparently loses its velar component and its labial element
+combines into a diphthong with the preceding vowel, e.g., in Gmc.
+*neuran > OHG nioro 'kidney' (: Grk. vɛopóç 'kidney' < *negwhros; cf.
+also the Italic dialect terms: Lanuvian nebrundines 'kidneys', Prae-
+nestine nefrones [Latinized nefrendes 'testicles']). Postnasal *-- before
+resonant seems, however, to lose its labial element OHG lungar
+'rapid,' OE lungre 'swiftly,' if they reflect IE *(H,) Ingros like Grk.
+Eλappós 'light, fast' (cf., however, P. Chantraine 1970:333). Inter-
+vocally, the rule seems to be that -y"- becomes -w-, e.g., in the 3rd per-
+son singular present OHG sniwit, OE sniweð 'snows' < pre-Gmc.
+*sneygh-e-ti (: Avest. snaēža'ti), or the genitive singular Go. snaiwis,
+OHG snewes 'of the snow' < pre-Gmc. *snoygw-eso. It appears, how-
+ever, that before a back vowel, the pre-Germanic labiovelar *gwh may
+have been delabialized like *k" in *kwolsos > Lat. collus, Go., ON, OHG
+34
+
+=== page 033 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+hals, OE heals (Lehmann 1986:175) or *golb¹- [according to the
+'glottalic' theory: *kolbh-] if Gmc. *kalbon-> Go. kalbo, OHG chalba
+'female calf' derives from this root (: Avest. gǝrǝbuš 'young animal'; cf.,
+however, Lehmann 1986:214): this would account for OHG versnigan
+'snowed under' < pre-Gmc. *snigwono-, and explain the alternation be-
+tween -w- in Go. hneiwan 'decline' and -g- in ON hnīga, OE, OS, OHG
+hnigan 'bow' as paradigmatic leveling, e.g., in the present where the
+pre-Germanic 3rd pers. sing. *k()neygwheti would be reflected in late
+pre-dialectal Germanic by *hniwiò(i) (: Go. hneiwip) and the 1st pers.
+sing. *k()neygwhō by *hnigō (: OHG hnigu) - cf. also the 3rd pers. plur.
+pret. OHG hnigun < *k(")nigwhnt.
+28. Cf. E. Seebold (1967, 1980; also 1970:93,138). For a detailed discussion
+of the problem, cf. E.C. Polomé (1987).
+-
+29. See, e.g., Lehmann (1986) s.v. banja (p. 61), bidjan (p. 68), brinnan (p.
+80). As regards the 'labialization' of *k" the most commonly quoted
+examples are the Germanic numerals for 'four' and 'five' and the name
+of the 'wolf', but Go. fimf '5' is obviously a reflex of pre-Germanic
+*pempe, resulting from a progressive assimilation in *penke, whereas
+fidwor '4' would reflect a pre-Germanic *petwor- instead of *k"etwor-
+through analogical leveling of its Anlaut to that of the following nu-
+meral *penke (cf. Lehmann 1986:214, 217). As for Go. wulfs, the par-
+allel of Lat. lupus 'wolf' suggests that IE *wlkos (metathesized
+*lukos) was somehow blended with the root wlp- of Lat. volpes 'fox',
+Lith. vilpišys 'wildcat', perhaps through tabuization (cf. G. Lane 1984).
+30. Cf. de Vries (1961:159), E. Seebold (1980:459-460); Lehmann (1986:67,
+s.v. bida).
+31. See J. Vendryès (1974:[S-]42-43), where an underlying *ske-en- (de-
+rived from the root *sek-'cut') is assumed. For a more detailed discus-
+sion of Lehmann's material, cf. Polomé (1988), where the related views
+of Leo A. Connolly are also examined.
+32. Cf. further, E.C. Polomé (1959:398-401); W. Meid (1971:91-103); R.
+Sacks (1977).
+33. The meaning 'war' of Mod.G Krieg derives from the concept of 'conflict'
+already documented by the OHG gloss widarkriegi. controversia,
+linked with the adjective widarkrigilin. obstinatus. The Gmc. *ei re-
+flects IE *ey in an 'enlarged theme II' *g"r-ey-H- (in the zero grade:
+*gri- in Latvian grins 'harsh, hard-hearted', versus *gwryǝ in Greek
+Bpiapós 'strong'); Gmc. *ei > *ěě under the conditions of -a-Umlaut > ē,,
+as assumed by Frans van Coetsem (1956; summarized in 1970:55-58).
+Cf. further about this view, Ramat (1981:24).
+34. Cf. Martinet (1955b, 1956 [for comments see Polomé 1959:392-394],
+1986:154-159).
+35
+
+=== page 034 ===
+
+EDGAR C. POLOMÉ
+35. Van Coetsem (1949; 1970:73-74).
+36. Cf. J. Jasanoff (1978:87). For E. Haugen (1976:109), Holtzmann's law
+is presumably also a later development in Old Norse.
+37. For a re-examination of the evidence for the Verschärfung in this con-
+text, see the forthcoming study of Seiichi Suzuki on the topic.
+38. In the elaboration of this paper I profited very much from the compe-
+tent comments and useful hints of Professor Klaus Düwel (Göttingen),
+for which I want to express my deepest gratitude.
+Bibliography
+Beeler, Madison S. 1966. 'Proto-Germanic [i] and [e]: one phoneme or
+two?'. Language 42:473-474.
+Bennett, William H. 1968. 'The operation and relative chronology of Ver-
+ner's Law'. Language 44:219-223.
+Braune, Wilhelm. 1967. Althochdeutsche Grammatik¹2 (Tübingen: Nie-
+meyer).
+Callies, H.-Klaus Düwel. 1967. 'Zur Datierung und Deutung der Harigast-
+Inschrift'. In: Festschrift für Otto Höfler zum 65. Geburtstag, 57-68.
+Chantraine, Pierre. 1970. Dictionnaire étymologique de la langue grecque 2
+(Paris: Klincksieck).
+de Tollenaere, Felicien. 1967. De Harigasti-inskriptie op helm B van
+Negau. Haar betekenis voor de Oergermaanse klankleer (Mededelingen
+der Koninklijke Nederlandse Akademie van Wetenschappen, Afd.
+Letterkunde, N.R. 30.11) (Amsterdam: Noord-Hollandse Uitgevers-
+mij.).
+de Vries, Jan. 1957. Altgermanische Religionsgeschichte 22 (Berlin: de
+Gruyter).
+de Vries, Jan. 1971. Nederlands etymologisch woordenboek (Leiden: Brill).
+de Vries, Jan. 1977. Altnordisches etymologisches Wörterbuch² (Leiden:
+Brill).
+Dieth, Eugen. 1950. Vademekum der Phonetik (Bern: Francke).
+Egger, R. 1960. 'Die Inschrift des Harigastihelmes'. Anzeiger der Öster-
+reichischen Akademie der Wissenschaften, Phil.-hist. Klasse 96.1959.5:
+79-91.
+Evans, D. Ellis. 1967. Gaulish personal names. A study of some Continen-
+tal Celtic formations (Oxford: Clarendon).
+Fourquet, Jean. 1948. Les mutations consonantiques du germanique (Pub-
+lications, Faculté des Lettres, Université de Strasbourg, 111) (Paris).
+Gamkrelidze, Tamaz V. - Vjačeslav V. Ivanov. 1973. 'Sprachtypologie und
+36
+
+=== page 035 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+die Rekonstruktion der gemeinindogermanischen Verschlüsse'. Pho-
+netica 27:150-156.
+Gamkrelidze, Tamaz V. - Vjačeslav V. Ivanov. 1984. Indoevropejskij jazyk
+i indoevropejcy 1-2 (Tbilisi: Izdatel'stvo Tbilisskogo Universiteta).
+Hammerich, Louis L. 1967. 'Ketzereien eines alten Indogermanisten'. In:
+To honor Roman Jakobson. Essays on the occasion of his seventieth
+birthday (The Hague - Paris: Mouton), 2:839-849.
+Haugen, Einar. 1976. The Scandinavian languages. An introduction to
+their history (Cambridge, Mass.: Harvard University Press).
+Hopper, Paul J. 1973. 'Glottalized and murmured occlusives in Indo-Euro-
+pean'. Glossa 7:141-166.
+Hopper, Paul J. 1982. 'Areal typology and the Early Indo-European conso-
+nant system'. In: Edgar C. Polomé (ed.), 121-139.
+Jakobson, Roman. 1958. 'Typological studies and their contribution to his-
+torical comparative linguistics'. In: Eva Sivertsen (ed.), Proceedings of
+the Eighth International Congress of Linguists (Oslo: Oslo University
+Press), 17-25.
+Jasanoff, Jay. 1978. 'Observations on the Germanic Verschärfung'. Mün-
+chener Studien zur Sprachwissenschaft 37:77-90.
+Jespersen, Otto. 1928. A Modern English grammar on historical principles
+1: Sounds and spellings (Heidelberg: Winter).
+King, Robert D. 1969. Historical linguistics and generative grammar
+(Englewood Cliffs, N.J.: Prentice-Hall).
+Kortlandt, Frederik. 1978a. 'Proto-Indo-European obstruents'. Indogerma-
+nische Forschungen 83:107-118.
+Kortlandt, Frederik. 1978b. 'Comment on W. Winter's paper'. In: Jacek
+Fisiak (ed.), Recent developments in historical phonology (The Hague –
+Paris New York: Mouton), 447.
+-
+Kuryłowicz, Jerzy. 1964. 'On the methods of internal reconstruction'. In:
+Horace G. Lunt (ed.), Proceedings of the Ninth International Congress
+of Linguists, Cambridge, Mass., August 27-31, 1962 (London: The
+Hague Paris: Mouton), 10-36.
+-
+Lane, George S. 1939. 'Pure labials from labiovelars in Germanic'. Journal
+of English and Germanic Philology 38:184-200.
+Lehmann, Winfred P. 1952. Proto-Indo-European phonology (Austin: Uni-
+versity of Texas Press).
+Lehmann, Winfred P. 1986. A Gothic etymological dictionary (Leiden:
+Brill).
+Lloyd, Albert L. 1966. 'Is there an a-umlaut of i in Germanic?'. Language
+42:738-745.
+Lüdtke, Helmut. 1957. 'Der Ursprung des germanischen e, und die Re-
+duplikationspräterita'. Phonetica 1:157-183.
+37
+
+=== page 036 ===
+
+EDGAR C. POLOMÉ
+Marchand, James W. 1957. 'Germanic short *i and *e: Two phonemes or
+one?'. Language 33:346-354.
+Martinet, André. 1950. 'Some problems of Italian consonantism'. Word
+6:26-41.
+Martinet, André. 1955a. Economie des changements phonétiques (Bern:
+Francke).
+Martinet, André. 1955b. 'Le couple senes - senatus et le "suffixe" -k-'. Bul-
+-
+letin de la Société de Linguistique de Paris 51:47-56.
+Martinet, André. 1956. 'Some cases of -k-/-w- alternation in Indo-Euro-
+pean'. Word 12:1-6.
+Martinet, André. 1986. Des steppes aux océans. L'indo-européen et les Indo-
+Européens (Paris: Payot).
+Mayrhofer, Manfred et al. 1980. Lautgeschichte und Etymologie. Akten der
+VI. Fachtagung der Indogermanischen Gesellschaft, Wien 1978 (Wies-
+baden: Reichert).
+Meid, Wolfgang. 1971. Das germanische Praeteritum. Indogermanische
+Grundlagen und Ausbreitung im Germanischen (Innsbrucker Beiträge
+zur Sprachwissenschaft, 8) (Innsbruck: Institut für Sprachwissen-
+schaft).
+Moulton, William G. 1972. 'The Proto-Germanic non-syllabics (conso-
+nants)'. In: Frans van Coetsem - Herbert L. Kufner (eds.), Towards a
+grammar of Proto-Germanic (Tübingen: Niemeyer), 141-173.
+Much, Rudolf. 1967. Die Germania des Tacitus erläutert³ (rev.: Herbert
+Jankuhn - Wolfgang Lange) (Heidelberg: Winter).
+Neumann, Günter. 1967. 'Bācenis'. In: H. Beck et al. (eds.), Reallexikon der
+germanischen Altertumskunde 1 (Berlin - New York: de Gruyter), 572.
+Onions, Charles T. 1966. The Oxford dictionary of English etymoloy (Ox-
+ford: Clarendon).
+Pedersen, Holger. 1951. Die gemeinindoeuropäischen und die vorindoeuro-
+päischen Verschlußlaute (Det Kongelige Danske Videnskabernes Sel-
+skab, Historisk-filologiske Meddelelser 32.5) (København: Munks-
+gaard).
+Pokorny, Julius. 1959. Indogermanisches etymologisches Wörterbuch 1
+(Bern: Francke).
+Polomé, Edgar C. 1956. 'Les casques de Negau et les Germains des Alpes'.
+Revue Belge de Philologie et d'Histoire 34:232-233.
+Polomé, Edgar C. 1959. 'Théorie "laryngale" et germanique'. In: Mélanges
+de linguistique et de philologie. Fernand Mossé in memoriam (Paris:
+Didier), 392-394.
+Polomé, Edgar C. 1972. 'Reflexes of laryngeals in Indo-Iranian, with spe-
+cial reference to the problem of voiceless aspirates'. In: John Wein-
+stock (ed.), Saga og språk (Austin, Texas: Pemberton), 233-251.
+38
+
+=== page 037 ===
+
+GERMANIC AND RECONSTRUCTION PIE
+Polomé, Edgar C. 1985. 'Problems in Germanic etymology'. Comments on
+Etymology 15.3-4:6-13.
+-
+Polomé, Edgar C. 1987. 'Initial PIE *gh- in Germanic'. In: George
+Cardona Norman H. Zide, Festschrift for Henry Hoenigswald on the
+occasion of his seventieth birthday (Tübingen: Narr), 303-313.
+Polomé, Edgar C. 1988. 'Are there traces of laryngeals in Germanic?'. in:
+Alfred Bammesberger (ed.), Die Laryngaltheorie und die Rekonstruk-
+tion des indogermanischen Laut- und Formensystems (Heidelberg:
+Winter), 383-414.
+Polomé, Edgar C. 1989. 'Who were the Germanic people?'. In: Susan
+Skomal Edgar C. Polomé (eds.), Festschrift Marija Gimbutas (Wash-
+ington: The Institute for the Study of Man), 216-244.
+-
+Polomé, Edgar C. (ed.) 1982. The Indo-Europeans in the fourth and third
+millennia (Ann Arbor: Karoma).
+Prokosch, Eduard. 1939. A comparative Germanic grammar (Philadelphia,
+Lingustic Society of America. University of Pennsylvania.
+Ramat, Paolo. 1981. Einführung in das Germanische (Tübingen: Nie-
+meyer).
+Sacks, Richard. 1977. 'Germanic seventh class strong verbs'. In: Calvert
+Watkins (ed.), Indo-European studies 3 (Cambridge, Mass.: Harvard
+University, Department of Linguistics), 240-247.
+Scherer, Anton. 1955. 'Die keltisch-germanischen Namengleichungen'. In:
+Corolla Linguistica. Festschrift Ferdinand Sommer (Wiesbaden: Har-
+rassowitz), 199-210.
+Schmid, Wolfgang P. 1985. 'Die Namen der Donau'. In: Reallexikon der
+germanischen Altertumskunde 6 (Berlin - New York: de Gruyter), 14-
+16.
+Schmidt, Karl Horst. 1957. 'Die Komposition in gallischen Personen-
+namen. Zeitschrift für celtische Philologie 26:33-301.
+Schmitt, Ludwig Erich (ed.). 1970. Kurzer Grundriß der germanischen
+Philologie bis 1500. 1: Sprachgeschichte (Berlin: de Gruyter).
+Schönfeld, M. 1965. Wörterbuch der altgermanischen Personen- und Völ-
+kernamen nach der Überliefung des klassischen Altertums bearbeitet.
+2. unveränderte Auflage (Heidelberg: Winter).
+Schrodt, R. 1976. Die germanische Lautverschiebung und ihre Stellung im
+Kreise der indogermanischen Sprachen² (Wien: Halosar).
+Schwarz, Ernst. 1956. Germanische Stammeskunde (Heidelberg: Winter).
+Seebold, Elmar. 1970. Vergleichendes etymologisches Wörterbuch der ger-
+manischen Verben (The Hague-Paris: Mouton).
+Seebold, Elmar. 1967. 'Die Vertretung von idg. g*h im Germanischen'.
+Zeitschrift für vergleichende Sprachforschung 81:104-133.
+39
+
+=== page 038 ===
+
+EDGAR C. POLOMÉ
+Seebold, Elmar. 1980. 'Etymologie und Lautgesetz'. In: Manfred Mayr-
+hofer et al. (eds.), 440-484.
+Szemerényi, Oswald. 1967. 'The new look of Indo-European. Reconstruc-
+tion and typology'. Phonetica 17:65-99.
+Szemerényi, Oswald. 1985. 'Recent development in Indo-European linguis-
+tics'. Transactions of the Philological Society 1985:1-71.
+Torp, Alf. 1919. Nynorsk etymologisk ordbok (Kristiania: Aschehoug).
+Twaddell, W. Freeman. 1948. 'The prehistoric Germanic short syllables'.
+Language 24:139-151.
+van Coetsem, Frans. 1949. 'Le renforcement des semi-voyelles intervoca-
+liques en germanique (j/jj>jj>gotique ddj etc.). Leuvense Bijdragen
+39:41-78.
+van Coetsem, Frans. 1956. Das System der starken Verba und die Periodi-
+sierung im älteren Germanischen (Mededelingen van de Koninklijke
+Nederlandse Akademie van Wetenschapen, Afd. Letteren, N.R., 19.13)
+(Amsterdam: Noord-Holland).
+van Coetsem, Frans. 1970. 'Zur Entwicklung der germanischen Grund-
+sprache'. In: Ludwig Erich Schmitt (ed.), 1-93.
+Vendryès, Joseph. 1974. Lexique étymologique de l'irlandais ancien: R-S
+(Dublin: Institute for Advanced Studies / Paris: Centre National de la
+Recherche Scientifique).
+Vennemann, Theo. 1984. 'Hochgermanisch und Niedergermanisch: Die
+Verzweigungstheorie der germanisch-deutschen Lautverschiebungen'.
+Beiträge zur Geschichte der deutschen Sprache und Literatur 106:1-45.
+Wagner, Norbert. 1986. 'Das Erstglied von Lud-wig'. Beiträge zur Namen-
+forschung N.F. 21:78-84.
+Ward, D. 1968. The Divine Twins. An Indo-European myth in Germanic
+tradition (Folklore Studies, 19) (Berkeley - Los Angeles: University of
+California Press).
+Winter, Werner. 1978. 'The distribution of short and long vowels in stems
+of the type Lith. ésti : vésti : mèsti and OCS jasti : vesti : mesti in Baltic
+and Slavic languages'. In: Jacek Fisiak (ed.), Recent developments in
+historical phonology (The Hague - Paris - New York: Mouton).
+40
+
