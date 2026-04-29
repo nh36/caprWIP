@@ -5635,6 +5635,19 @@ Gutenbrunner §26.1.2. However, he explicitly denies this for OHG. Our extension
 to OE is indeed our own hypothesis—not stated anywhere in Cercignani—based on the
 empirical success of the rule (+2 matches, no regressions).
 
+**Direct-source verification (2026-04-29):** Gutenbrunner 1951 (now in
+`docs/references/gutenbrunner_1951_altislaendisch.vision.txt`) is now first-hand
+checkable. §26.1.2 (p. 34, our OCR line 1853) reads verbatim:
+> "i zu e, nur in kurzer Stammsilbe **und nicht nach k, g**: aisl. verr 'Mann',
+> lat. vir, aber skip 'Schiff', gil 'Schlucht', fiskr 'Fisch'."
+
+This confirms Cercignani's chain of citation is faithful: Gutenbrunner does
+explicitly state onset-velar blocking of \*i > \*e for Old Icelandic. Kock 1898
+(now also in `docs/references/kock_1901_schwedische_accentuierung.vision.txt`,
+imprint 1901) and Hirt 1931–4 (`hirt_handbuch_des_urgermanischen.vision.txt`)
+are likewise available locally for further verification when needed. The
+extension to OE remains our own novel claim; the OIc. premise is now solid.
+
 #### Refined hypothesis (potentially novel)
 
 Based on this evidence, we propose the following hypothesis for Old English.
