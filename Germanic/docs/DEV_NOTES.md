@@ -41809,3 +41809,182 @@ also condition on a preceding long-V + consonant context).
   unstressed-suffix *ī: **done** (R/T, Campbell, Brunner, Fulk all
   explicit).
 * Awaiting user approval for Fix 3.
+
+## §17.46 Stressed long-ī tier (`*ḯ`) — principled fix for the *swīn regression
+
+Branch `stressed-long-i` (off `update@783dbe58`). Closes the regression
+opened in §17.45.3g (`*swīną → swī` after `NWGmcInStemNLoss` was relaxed
+to drop the consonant-context restriction so it could fire on the
+in-stem suffix).
+
+### A. Why a tier and not a context restriction
+
+§17.45.3g shipped Fix 3, a context restriction on `NWGmcInStemNLoss`
+(`{*n} -> 0 || EnglishStarVocalic EnglishStarConsonant+ {*ī} _ .#.`).
+That fix bled the rule on monosyllabic stems by requiring an extra
+`V C+` to the left of the `*ī`. It worked for the small TSV but is
+not principled:
+
+* The change is **conditioned by stress**, not by syllable count. R/T
+  vol. 2 §6.7 and Campbell §471 both describe the loss as restricted
+  to the **unstressed** in-stem suffix `*-īn`. A monosyllabic *root*
+  `*swīn` keeps its `-n` because the `*ī` is the **stressed** root
+  vowel, not because the word is short.
+* Words like `*tīdiz` or `*lībą` happen to satisfy the V+C+ context
+  by accident of having an inflectional ending; the principle is
+  unrelated.
+* The `[V][C+]` left context is brittle — any future stem shape that
+  doesn't match it would silently regress.
+
+The principled fix is to encode the stress-bearing property directly
+on the proto-vowel, then condition `NWGmcInStemNLoss` on the
+**unstressed** long ī alone (which we already write as `*ī`).
+
+### B. Notation
+
+We had to choose a single Unicode codepoint for the stressed long *ī
+because foma's input tokeniser does not reliably accept combining
+marks (U+0301 combining acute) on input — even when the FST compiles
+with the combined symbol in its sigma. See Phase 1.5 / 1.6 commits.
+
+Tested in turn:
+
+* `ī\u0301` (combining acute, U+0301) — compiles, prints correctly via
+  `print upper-words`, but `apply down ī́ → ???` regardless of NFC/NFD.
+* `īˊ` (U+02CA modifier letter acute) — works, but two codepoints.
+* `ḯ` (U+1E2F LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE) — works,
+  single codepoint. **Adopted.**
+
+The diaeresis is purely notational. Semantically `*ḯ` = stressed
+long *ī. Other long vowels (`*ā *ē *ō *ū *ǣ *ȳ`) are deferred to a
+follow-up branch — this branch only introduces stressed `*ḯ`.
+
+### C. Pipeline plumbing
+
+Added the new symbol at four sigma touchpoints:
+
+| Location | Definition | Purpose |
+|---|---|---|
+| `pgrmLongVowel` (~line 144) | `ḯ:{*ḯ}` | gate input mapping |
+| `PGmcStarVowel` (line ~553) | `\| {*ḯ}` | super-class membership |
+| `PGmcStarAcuteVowel` (line ~564) | `\| {*ḯ}` | acute (stressed) sub-class |
+| `EnglishStarLongVowel` (line ~960) | `\| {*ḯ}` | long-V class |
+| `OldEnglishRemoveStars` (~line 872) | `{*ḯ} -> ī,` | surface stripping |
+
+The surface mapping `{*ḯ} -> ī` is correct: OE orthography does **not**
+distinguish stressed-root from unstressed-suffix long ī. The tier
+exists only to gate one rule (`NWGmcInStemNLoss`); from the moment
+that rule fires (or doesn't), the two collapse for orthography.
+
+### D. Rule audit (49 `{*ī}` occurrences scanned)
+
+Rules grouped by which tier they should apply to. **Discipline**: per
+user preference, propagation to `*ḯ` is implemented as a **separate
+rule line concatenated with the existing `*ī` rule**, not as a unioned
+`[{*ī} | {*ḯ}]` rule context. The one exception is the
+`EnglishIUmlautTrigger` class definition, which already enumerated
+`{*i} | {*ī} | {*j}`; adding `{*ḯ}` to that class respects existing
+style and was approved explicitly.
+
+Rules updated (apply equally to `*ī` and `*ḯ`):
+
+| File line | Rule | Update style |
+|---|---|---|
+| 991 | `EnglishIUmlautTrigger` | class member added |
+| 2738/2740/2742 | `OEVelarPalatalization` rules 2-4 | parallel `{*ḯ}` rules concatenated |
+| 2980/2981 | `OEContraction` h-loss V-absorption | parallel `{*ḯ}{*a/*e}->{*ḯ}` rules |
+
+Rules deliberately left as `*ī`-only (the keystone):
+
+| File line | Rule | Why |
+|---|---|---|
+| 2084 | `NWGmcInStemNLoss` | by design — *only* fires on unstressed suffix |
+
+Rules creating `*ī` from `*i`/`*í` (outputs are unstressed long *ī
+even when the source was stressed-short `*í`, which is correct in
+all attested instances; if a stressed-long-ī source ever needs to
+arise from lengthening, revisit):
+
+| File line | Rule |
+|---|---|
+| 1681 | `{*i} -> {*ī}` open-syllable lengthening |
+| 2686 | `{*i} -> {*ī}` before nasal+voiceless fricative |
+| 2693 | `{*í} -> {*ī}` before nasal+voiceless fricative |
+
+ModE-stage rules (post-OE realisation, breaking, shortening,
+rhotic) — **not yet propagated** because no `*ḯ` form is exercised
+in `english.bin` at this branch. To revisit when a stressed-long-ī
+form is added to the ModE pipeline:
+
+| File line | Rule |
+|---|---|
+| 1282 | rhotic fronting `{*ɔː}{*r}{*d}({*i}\|{*ī})` |
+| 1448 | `EnglishLongVowelRealisation` `{*ī} -> {iː}` |
+| 1565 | `R2` long-V context set |
+| 2171 | `OEUnstressedLongVowelShortening3` |
+
+### E. TSV migration (Phase 4)
+
+Inventory:
+
+* 16 OE rows have `*ī` in PROTOFORM.
+* **15** are stressed-root *ī (in the first syllable, no preceding
+  vowel) — migrated to `*ḯ`.
+* **1** is the unstressed feminine in-stem suffix in
+  `*fúrxtīn → fyrhte` — kept as `*ī` (this is the form
+  `NWGmcInStemNLoss` is supposed to consume).
+
+Migrated rows (5 batches of 3, each rebuilt + probed + mismatch-
+checked + committed):
+
+| Batch | IDs | Forms |
+|---|---|---|
+| 1 | 1998, 2047, 2101 | drīfan, grīpan, līf |
+| 2 | 2103, 2105, 2106 | līm, līne, līste |
+| 3 | 2153, 2182, 2188 | rīdan, **sċīnan** (palatalization on *ḯ ✓), sīde |
+| 4 | 2197, 2257, 2285 | slīm, **tīd** (i-umlaut trigger w/ *ḯ no-op ✓), hwīl |
+| 5 | 2286, 2290, 2296 | hwīnan, wīf, wīþiġ |
+
+Plus the seed migration of `*swīną → *swḯną` (id 1076, OE row 1194)
+in Phase 2 that originally cleared the regression.
+
+### F. Verification
+
+Probes after each batch (representative selection):
+
+```
+swīną   → swī       (unstressed-suffix *ī, NWGmcInStemNLoss FIRES ✓)
+swḯną   → swīn      (stressed-root *ḯ, rule BLEEDS ✓)
+fúrxtīn → fyrhte    (preserved — the form motivating the rule)
+skḯnaną → sċīnan    (palatalization on *ḯ context ✓)
+tḯdiz   → tīd       (i-umlaut trigger present, *ḯ output ✓)
+```
+
+Mismatch-report total over the branch:
+
+| Stage | Total |
+|---|---|
+| Pre-branch baseline (`update`) | 14 |
+| Phase 1 (sigma plumbing) | 14 (no behavioural change) |
+| Phase 2 (swīn migrated) | 13 ✓ regression cleared |
+| Phase 3 (rule audit) | 13 |
+| Phase 4 batches 1–5 | 13 (held throughout) |
+
+### G. Remaining unsticky bits / next-steps
+
+* **Other long vowels** (`*ā *ē *ō *ū *ǣ *ȳ`): no analogous
+  regression has been identified that needs the tier yet, but if one
+  appears the same approach generalises. Follow-up branch when needed.
+* **ModE-stage rule audit** (1282, 1448, 1565, 2171): defer until a
+  `*ḯ` form is exercised in `english.bin`.
+* **Gate input clauses** at lines 382, 432, 442–445, 1077, 1084 —
+  these emit `{*ī}` for finite-form gate paths (e.g. *Vundīnd,
+  *Vīnaz) and currently have no `*ḯ` parallel. Today no migrated
+  TSV form needs them; if a stressed-root form starts using a finite
+  gate path the gate will need a parallel `ḯ:{*ḯ}` arm.
+* **`NWGmcInStemNLoss`** is now back to the principled formulation
+  `{*n} -> 0 || {*ī} _ .#.` — no V+C+ context hack — because the
+  only way `*ī#` survives that point in the cascade is as the
+  unstressed in-stem suffix. The §17.45.3g context restriction can
+  be removed; verify on a clean build that the bare rule is in fact
+  what's running and update if there's stale context.
