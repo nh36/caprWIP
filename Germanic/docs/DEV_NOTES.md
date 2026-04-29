@@ -41336,3 +41336,116 @@ expected outcome *-un from PIE *-n").
 * Probe: **done** (this dossier).
 * Diagnosis: **done** (chronology bug + asg. tail shape).
 * Awaiting user approval before applying Fix 1 and Fix 2.
+
+## §17.45.3e — Post-Fix probe: chronology refinement (Round 2)
+
+### A. Context
+
+§17.45.3d proposed two fixes:
+* Fix 1: move `NWGmcInStemNLoss` from immediately after `NWGmcNStemNLoss`
+  to immediately after `PWGmcFinalBareALoss` (so gsg. `*-īna → *-īn` is
+  visible to the `{*ī}_.#.` context).
+* Fix 2: change asg. gate pattern from `ī n u n` to `ī n ų`.
+
+Both were applied. Bins rebuilt.
+
+### B. Probe results (Round 2)
+
+| Input | Output | Verdict |
+|---|---|---|
+| `*fúrxtīnaz` (gsg) | `fyrhte` | ✓ |
+| `*fúrxtīni`  (dsg) | `fyrhten` | ✗ |
+| `*fúrxtīnų`  (asg) | `fyrhten` | ✗ |
+| `*fúrxtīniz` (npl) | `fyrhten` | ✗ |
+| `*fúrxtīn`   (post-apocope) | `fyrhte` | ✓ |
+
+The chronology fix solved gsg but broke the previously-working dsg/npl
+(and the new asg). Why?
+
+### C. Diagnosis
+
+`PWGmcFinalBareALoss` only strips bare unstressed `*-a`. It does not
+touch `*-i`, `*-iz`, or `*-ų`. So at the point where
+`NWGmcInStemNLoss` now fires (line ~3082 of `germanic.txt`):
+
+* gsg. input `*fúrxtīna` → `*fúrxtīn` (bare-a-loss) → n-loss applies → `*fúrxtī` ✓
+* dsg. input `*fúrxtīni` → still `*fúrxtīni` (bare-a-loss skips *-i) → n-loss context fails ✗
+* asg. input `*fúrxtīnų` → still `*fúrxtīnų` → n-loss context fails ✗
+* npl. input `*fúrxtīniz` → z-loss → `*fúrxtīni` → still `*-i` final → n-loss fails ✗
+
+The final high vowels `*-i`, `*-ų` are stripped by `OEHighVowelApocope`
+(definition at line ~2805, composed at line ~3141) — long after
+`PWGmcFinalBareALoss` (line ~3077). So the rule needs to fire AFTER
+`OEHighVowelApocope`, not after `PWGmcFinalBareALoss`.
+
+### D. Why didn't the original placement (after `NWGmcNStemNLoss`,
+~line 3036) have this same problem for dsg/npl?
+
+Round 1 (§17.45.3d) reported dsg `*fúrxtīni → fyrhte` ✓ and npl
+`*fúrxtīniz → fyrhte` ✓ at the original placement. That can only mean
+that at line 3036 the surface was already `*fúrxtīn` (i.e. some earlier
+rule had stripped the final high V). Candidates between the gate and
+line 3036 include `PWGmcEarlyIApocope` (line 1655) which fires only in
+3rd-/4th-syllable position and so would NOT strip a 2nd-syllable *-i in
+`*fúrxtīni`. The actual mechanism for the Round 1 dsg/npl success was
+likely different — possibly the gate parsing was ambiguous and the
+working path went through a different morphological alternative. This
+deserves a sandbox trace before any further movement, but the
+diagnostic conclusion stands either way: the only stage in the cascade
+where ALL FIVE inputs are guaranteed to have `*-n` exposed word-finally
+is **after `OEHighVowelApocope`**.
+
+### E. Verification path
+
+The `*-ī` long vowel must:
+1. survive long enough to act as i-umlaut trigger (`OEIUmlaut` line ~3132),
+2. survive `OEHighVowelApocope` (line ~3141 — strips only `*i`, `*u`, `*ų`, not `*ī`),
+3. then have its `*n` peeled off by `NWGmcInStemNLoss`,
+4. then be shortened to `*-i` by `OEUnstressedLongVowelShortening` (line ~3155),
+5. then surface as `-e` via `OEUnstressedAEMerger` (line ~3157).
+
+So the correct insertion point is between `OEHighVowelApocope`
+(line ~3141) and `OEUnstressedLongVowelShortening` (line ~3155).
+Specifically: immediately after `OEHighVowelApocope`, before any
+subsequent rule that consumes `*-ī`.
+
+For all five inputs, the i-umlaut trigger (`*ī` or `*i`) is present at
+line ~3132, so umlaut succeeds in every case. After umlaut + apocope:
+
+| Input | Surface at line ~3141 (post-HighVowelApocope) |
+|---|---|
+| `*fúrxtīnaz` | `*fýrxtīn` (z-loss → bare-a-loss done earlier) |
+| `*fúrxtīni`  | `*fýrxtīn` (HighVowelApocope strips *-i) |
+| `*fúrxtīnų`  | `*fýrxtīn` (HighVowelApocope strips *-ų) |
+| `*fúrxtīniz` | `*fýrxtīn` (z-loss → HighVowelApocope strips *-i) |
+| `*fúrxtīn`   | `*fýrxtīn` (already post-apocope) |
+
+All five paths converge to `*fýrxtīn` at line ~3141. Then n-loss →
+`*fýrxtī`, V-shortening → `*fýrxti`, AE-merger → `*fýrxte` →
+surface `fyrhte`.
+
+### F. Chronology cite (R/T)
+
+R/T vol.1 §3.3.1 places "post-PWGmc *-n loss after unstressed *ī" in
+the post-PWGmc / pre-OE bracket — i.e. AFTER all PWGmc apocope and
+final-V losses, including the early-i-apocope (R/T §3.1) and the
+heavy-syllable high-V loss that becomes `OEHighVowelApocope`. So the
+new placement (immediately after OEHighVowelApocope, before the
+unstressed-V-shortening rules) is chronologically correct.
+
+### G. Proposed Fix 1' (revision of Fix 1)
+
+Move `.o. NWGmcInStemNLoss`:
+* FROM: line ~3082 (immediately after `PWGmcFinalBareALoss`).
+* TO:   immediately after `.o. OEHighVowelApocope` at line ~3141.
+* Mirror the same move in the second cascade (line ~3242 → after
+  `OEHighVowelApocope` in the `EnglishAfterProtoToOEApocope` chain at
+  line ~3266; place identically inside the equivalent stage).
+
+The asg. gate fix (`ī n ų`) from §17.45.3d Fix 2 stays as is.
+
+### H. Status
+
+* Round 2 probe: **done** (this dossier).
+* Diagnosis: **done** (final-V-loss chronology, not bare-a-loss).
+* Awaiting user approval before applying Fix 1'.
