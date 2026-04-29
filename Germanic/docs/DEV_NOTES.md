@@ -41032,3 +41032,219 @@ documentation rather than solving it.
 * Awaiting user approval of Option α' before implementation.
 * If user prefers β (keep fyrhtu, engineer §353), implementation
   outline differs substantially — flagged for separate planning.
+
+## §17.45.3c — Fem. *-īn obl. n-loss: extended cross-source dossier and FST plan
+
+After §17.45.3b retargeted PROTOFORM to `*fúrxtīn-` (fem. in-stem),
+the FST cascade was probed and found to lack the post-PWGmc rule
+that strips word-final *-n after unstressed *-ī. Probe: input
+`*fúrxtīn` currently surfaces as `fyrhten` (cascade treats *-īn
+like masc. n-stem *-in, e.g. *tikkin → ticken). To make Plan α
+(`fyrhte`) work lautgesetzlich we need (a) confirmation that the
+n-loss is genuine sound change and (b) a clean FST insertion
+point. This sub-section assembles the multi-source evidence and
+specifies the implementation.
+
+### A. The Proto-Germanic in-stem paradigm
+
+The reconstructed in-stem paradigm (fem. abstract / weak adjective
+inflection) is established for PGmc with full obl.sg. *-īn-
+exponents. Kroonen (2011: 37, table reproduced below) gives the
+canonical inventory, with Goth. `bairandei` 'carrying [fem.]' as
+the model:
+
+| Case   | PGmc       | Goth.        |
+|--------|------------|--------------|
+| nsg.   | *-ī        | bairandei    |
+| gsg.   | *-īnaz     | bairandeins  |
+| dsg.   | *-īni      | bairandein   |
+| asg.   | *-īnun     | bairandein   |
+| npl.   | *-īniz     | bairandeins  |
+| gpl.   | *-īnan     | bairandeino  |
+| dpl.   | *-īmmiz    | bairandeim   |
+| apl.   | *-īnuns    | bairandeins  |
+
+Sources concur:
+* Bammesberger 1990 *Morphologie* §7.3.4 (lines 7080-7112): in-stem
+  type `*manag-īn-` 'multitude' (Goth. *managei*, ON *mengi*, OE
+  *menigu*, OFris. *menie*, OS/OHG *menigi*) is "produktiv" in all
+  early Germanic; the suffix is from PIE *-ih₂- enlarged with
+  *-en-/-on-.
+* Fulk *Comp.Gr.* §7.34 (lines 10427-10497): full paradigm tables;
+  cites Bammesberger 1975 and Ringe 2002:149 n.42 as having
+  refuted the older notion that *-īn- arose by analogy from *-iþō-
+  abstracts (the analogy direction is reversed: the *-īn- type was
+  the donor, *-iþō- the recipient).
+* Kroonen 2011: 37 fn.24: the *-īn- enlargement spread "in the
+  weak adjectives, where a weak ending had to be created to
+  contrast with the strong endings."
+* R/T vol.2 §7.2.2 pp.380-381 (lines 21537-21583): Germanic-wide
+  treatment with explicit relative chronology.
+
+### B. PGmc → PWGmc shrinkage to bare *-īn
+
+After PGmc, two phonological changes collapse the obl.sg. cells:
+
+1. **Final *-z deletion** (R/T §3.1.3, our `PGmcFinalZDeletion`,
+   germanic.txt line 1143). Removes the *-z of gsg. *-īnaz, npl.
+   *-īniz, apl. *-īnuns. Yields gsg. *-īna(z)→*-īna, dsg. *-īni
+   (unaffected), asg. *-īnu(n)→*-īnu (after final-N loss too),
+   npl. *-īni, apl. *-īnu.
+2. **Third-syllable short-high-vowel apocope** (R/T §3.1.4, lines
+   ≈4500-4600 of vol.2): unstressed *-i, *-u in the third syllable
+   of polysyllables drops, reducing all the above to bare *-īn.
+
+By the end of PWGmc, the obl.sg. (g/d/asg.) and unmarked plurals
+have all converged to a single shape *-īn. R/T §7.2.2 21560:
+"By regular sound changes the obl. sg. of in-stems became *-īn."
+
+### C. The post-PWGmc *-n loss after unstressed *-ī
+
+This is the rule we are missing in the cascade. The unanimous
+source consensus, with explicit chronology:
+
+* **R/T vol.2 §3.3.1 pp.87-88 (lines 5514-5545)**: "The starting
+  point for these developments was clearly a sound change by which
+  word-final *-n was lost after unstressed *ī... Thus the loss of
+  *-n after unstressed *ī must be a post-PWGmc change that spread
+  through a diversifying dialect continuum."  Most thorough in
+  OE/OS/OFri; partial in OHG (Isidor and Monsee Fragments retain
+  *-in, e.g. *managin* dat.sg.). Cites Boutkan 1995 §6.2 as the
+  authoritative treatment.
+* **Campbell §473 (line 12208)**: "Loss of final -n extended further
+  after *ī than after other vowels... [it] explains oblique cases
+  of abstract fem. nouns, e.g. strenge a.s. strength, cf. Goth.
+  managein (§ 589.7). So pyle pillow < *pylwin, Lat. pulvīnus."
+  Note Campbell explicitly cites a non-paradigmatic Latin loanword
+  (*pylwin → pyle*) as showing the same Lautgesetz, confirming
+  it is general phonology, not morphological levelling.
+* **Campbell §589.7 (line 15277)**: "fem. abstract nouns of the
+  in-declension... would normally have **-e < -i < -in** in the
+  acc., gen., and dat. sg. and in the nom. and acc. pl." This is
+  the textbook formulation of the chronology we need to model:
+  three steps, *-īn → *-i → -e.
+* **Brunner §280 (already cited in §17.45.3b)**: Same chronology,
+  with full paradigm of *strengu/strenge*.
+* **Fulk §7.34 (line 10487)**, citing Boutkan 1995b: 292-3:
+  confirms OHG retention of *-in is dialectally limited (Isidor,
+  Monsee), establishing the geographic diffusion R/T describes.
+
+The rule is therefore a regular sound change, post-PWGmc, of the
+form `*-īn → *-ī` word-finally. After this rule fires, the obl.sg.
+cells of *-īn-stems collapse from *-īn to bare *-ī, identical with
+the inherited nsg. *-ī.
+
+### D. The continuation: *-ī → *-i → -e
+
+R/T §6.8.3 (lines 17118+): "long final unstressed vowels were
+shortened in PNWGmc/early OE." This is already present in the
+cascade as `OEUnstressedLongVowelShortening` (germanic.txt line
+2173, composing 8 sub-rules). Once *-īn → *-ī fires, this rule
+turns *-ī into *-i. Surface realization rules then map *-i → -e
+(cf. R/T 17172 on past subjunctive 2/3sg. -e < *-i; Campbell
+§589.7 "-e < -i").
+
+The final-front-vowel also triggers i-umlaut on the root, raising
+*u → *y (giving fyrht-). I-umlaut already fires upstream from a
+final *-ī or *-i; no separate rule needed.
+
+### E. Why this is sound change, not analogy
+
+Several sources address whether the *-īn → *-ī collapse could be
+morphological (paradigm levelling from nsg. *-ī to obl.sg.):
+
+* R/T explicitly typologizes it as Lautgesetz (post-PWGmc sound
+  change diffusing through the dialect continuum).
+* Campbell §473 cites the Lat. loanword *pulvīnus → pyle*: a word
+  with no inherited paradigmatic *-ī cell to level from. The
+  *-īn → -e* outcome must therefore be phonological.
+* Fulk §7.34 (citing Bammesberger 1975 and Ringe 2002:149 n.42):
+  the older "analogy from *-iþō-" hypothesis has been refuted; the
+  *-īn-stem is the donor, not the recipient, of any cross-class
+  influence.
+* OHG dialectal retention (Isidor *managin*, Monsee Fragments
+  *salbidha-managin*) shows the change has clear geographic
+  isoglosses, characteristic of sound change rather than
+  morphological reanalysis.
+
+### F. Scope check on the proto-gate
+
+Inputs to the cascade containing the *-īn sequence:
+* Cognate set #338 (`*furxtīn-`): TSV row 2034 (OE *fyrhtu/fyrhte*),
+  rows 1481 (German *Furcht*), 1482 (English *fright*).
+* No other PROTOFORM in `Germanic/data/germanic-aligned-final.tsv`
+  ends in `*-īn` or contains medial `*-īn-`.
+* Search confirms `*swīną` (acc.sg. neut. n-stem 'swine') has *-n-ą
+  (with short *a) not *-īn, so is unaffected.
+
+The new rule will therefore fire on exactly one cognate set
+(#338, three TSV rows), all of which we want it to affect.
+The risk of regression in other rows is zero by inspection.
+
+### G. PGmc obl.sg. trajectory for *furxtīn- through the cascade
+
+| Stage | Rule | Output (asg./dsg.) |
+|-------|------|--------------------|
+| PGmc input | (cascade entry) | `*fúrxtīn` |
+| (already post-PGmc apocope; gate accepts the bare *-īn obl.sg. shape) | | `*fúrxtīn` |
+| **NEW: NWGmcInStemNLoss** | `{*n} -> 0 \|\| {*ī} _ .#.` | `*fúrxtī` |
+| OEUnstressedLongVowelShortening | `*ī → *i` (post-NWGmc shortening) | `*fúrxti` |
+| OEIUmlaut | `*u → *y / _ ... i-trigger` | `*fýrxti` |
+| OldEnglishRemoveStars + surface | `*y → y, *i → e` | `fyrhte` ✓ |
+
+Expected end-to-end: `*fúrxtīn → fyrhte`. Matches BT-attested
+`fyrhte` (Guth. 88,18; 92,1; Bl.H. 57,20; Hml.S.; Ll.Th. 378,22;
+all the obl.sg. and pl. cells of the in-paradigm).
+
+### H. FST implementation plan
+
+**New rule:**
+```foma
+# Post-PWGmc *-n loss after unstressed *ī (R/T §3.3.1 pp.87-88;
+# Campbell §473; Brunner §280; Fulk §7.34 / Boutkan 1995b: 292-3).
+# Fem. in-stem oblique-singular and unmarked-plural cells, after
+# 3rd-syllable apocope has reduced gsg. *-īnaz / dsg. *-īni /
+# asg. *-īnun / npl. *-īniz to bare *-īn, lose the final *-n in a
+# post-PWGmc change that diffuses through the NWGmc dialect
+# continuum. Yields the *-ī shape that surfaces, after subsequent
+# unstressed-long-V shortening, as OE -e (Campbell §589.7
+# "-e < -i < -in").
+#
+# Parallel to NWGmcNStemNLoss (fem. ōn-stems, *-ōn → *-ǭ) above.
+# Kept as a separate rule because the ōn-stem rule nasalizes
+# rather than deleting; the in-stem rule simply deletes (no
+# nasalization survives, per all sources).
+define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+```
+
+**Insertion point:** Immediately after `NWGmcNStemNLoss`
+(germanic.txt line 2040-2042) and after `PGmcFinalZDeletion`
+(line 1143). Composed into `OldEnglishCore` cascade in the same
+position (~line 3004 area), so it fires BEFORE
+`OEUnstressedLongVowelShortening` (line 2173) and well before
+i-umlaut.
+
+**TSV change:** Row 2034 only:
+* COUNTERPART: `fyrhtu` → `fyrhte`
+* IPA: `fyrxtu` → `fyrxte`
+* SEGMENTS: `f y r h t u` → `f y r h t e`
+* Add note: "obl.sg./pl. paradigm-cell target; bare-stem nsg.
+  *fyrht* is unattested due to homonymy with adj. *forht* per
+  §17.45.3b dossier; -e < *-i < *-īn per Campbell §589.7."
+
+**Verification:**
+1. `*fúrxtīn` → `fyrhte` ✓
+2. Mismatch report: 13 → ≤ 12 (cognate set #338 should resolve).
+3. No other rows affected (scope check §F above).
+4. German row 1481 (`*furxtīn` → `Furcht`) and English row 1482
+   (`*furxtīn` → `fright`) — these traverse a different cascade
+   (Burmish-style merged or via separate orthography rules); the
+   new rule should fire identically and produce the expected
+   continuant. To be verified at rebuild time.
+
+### I. Status
+
+* Research: **done** (this dossier).
+* Awaiting user approval before any FST or TSV edit.
+* On approval: implement, rebuild, verify, commit as
+  "§17.45 step 3: NWGmcInStemNLoss + retarget fyrhtu → fyrhte".
