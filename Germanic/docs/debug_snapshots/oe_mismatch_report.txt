@@ -20,8 +20,8 @@ Total mismatches: 13
   long_vowel_missing: 1
 
 === OTHER SUB-BUCKETS ===
+  final_vowel_extra: 1
   front_expected_back_out: 1
-  gemination_extra: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_other: 1
   breaking_extra__eo_for_high: 1
@@ -47,14 +47,14 @@ long_vowel_missing (1):
   >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
   >> ACTION: Check if proto should have long vowel; check lengthening rules
 
+final_vowel_extra (1):
+  *spénnilō -> spinnlu (expected spinl)
+  >> ISSUE: FST has final vowel, target is vowelless
+  >> LIKELY: Apocope not applied, or TSV target is reduced form
+  >> ACTION: Check apocope rules; may be morphology mismatch
+
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
-
-gemination_extra (1):
-  *spénnilō -> spinnlu (expected spindle)
-  >> ISSUE: FST geminated where target has single consonant
-  >> LIKELY: West Germanic gemination applied incorrectly, or TSV target is unusual
-  >> ACTION: Research actual OE form; may be borrowing or irregular
 
 breaking_extra__ea_other (1):
   *ráukaz -> rēac (expected rēc)

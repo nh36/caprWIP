@@ -40196,3 +40196,209 @@ After the TSV edit:
     *spénnilō → spinnlu (spindle)* remaining).
   - Trace `*tíkkô` should still surface `ticca` (no FST rebuild
     needed since no FST change).
+
+
+## §17.45 *spénnilō → spinnlu (expected spindle): TSV target wrong, plus a phonology question
+
+### The mismatch
+
+  | PROTO     | FST out | TSV target | Sub-bucket          |
+  |-----------|---------|------------|----------------------|
+  | *spénnilō | spinnlu | spindle    | gemination_extra     |
+
+Row 2208 in `germanic-aligned-final.tsv`. Source: "Wiktionary
+etymology (template:inh)". Cognate-set 51 (spindle) also has Dutch
+*spil*, English *spindle*, German *Spindel*.
+
+### Source audit — what is the actual OE form?
+
+**Clark Hall** *s.v.* (concise dictionary):
+
+> "**spinel** f., gs. spinle 'spindle,' A, Cp."
+
+with cross-references "**spinl, spinil = spinel**". The attested OE
+form is **spinel** (and its syncopated variant **spinl**). Compounds
+are widely attested: `eár-spinl` 'ear-ring' (BT), `wealc-spinl`
+'crisping-pin' (OEG, WW), `prǽwel-spinl` 'crisping-pin'.
+
+**BT (addenda)**: "Spinil stilium…" — confirms the form *spinil* in
+glossaries.
+
+The TSV target `spindle` is **NOT an OE form**. The -d- is a glide
+consonant introduced between -n- and -l- in HG / OFri / ME / MnE, but
+not in OE itself.
+
+### Source audit — what is the proto?
+
+**Kluge–Seebold** *s.v.* Spindel (OCR p. 87018ff):
+
+> "ahd. spinnil(a), spindel, as. spinnila. Aus **wg. *spennilō** f.
+> 'Spindel', auch in **ae. spinel**, afr. spindel; Instrumentalbildung
+> zu spinnen, das -d- ist ein Gleitlaut [zwischen -n- und -l-]"
+
+**Orel** *Handbook* p. 364:
+
+> "*spennilō(n) sb.f.: OSwed spinnil 'spider', **OE spinel 'spindle'**,
+> OS spinnila id., OHG spinnila, spinnil id. Derived from *spennanan."
+
+Both authorities reconstruct WGmc **`*spennilō`** with geminate -nn-
+(parenthetical (n) in Orel signals optional weak n-stem inflection).
+Both give the OE outcome as **`spinel`** with single -n-.
+
+The OE single -n- vs Continental -nn- split is asymmetric: OHG and OS
+preserve the geminate (spinnila), OE simplifies. Two interpretations
+in the literature:
+
+  (i) WGmc *spennilō was the common proto, and OE has an OE-specific
+      degemination (R/T §6.8.1: "geminate consonants were degeminated
+      next to another consonant").
+  (ii) OE inherits a non-geminate variant *spenilō from a paradigm
+       where the geminate was confined to certain ablaut/inflectional
+       cells; OHG/OS generalised the geminated variant, OE the
+       non-geminated.
+
+Both interpretations are defensible.
+
+### FST behaviour (probe)
+
+Probed `*spennilō` and four near-relatives through the compiled
+cascade:
+
+    *spennilō  → spinnlu   (current FST output; mismatch)
+    *spinilō   → spinl     (✓ matches attested OE syncopated variant!)
+    *spennil   → +?        (rejected; needs -ō for weak-tail handling)
+    *spinilu   → +?        (rejected; weak-tail must be canonical -ō)
+    *spennilu  → +?        (rejected; same)
+
+Two facts to note:
+
+  - With **single-n** input `*spinilō`, the FST already produces
+    **spinl** — exactly the attested OE syncopated form (Clark Hall
+    *spinl=spinel*). Clean lautgesetzlich derivation.
+  - With **geminate** input `*spennilō`, the FST produces *spinnlu*
+    (preserves -nn-, fails to syncopate to bare consonantal -l, and
+    leaves -u from weak-tail ō). Two gaps: (a) no degemination of
+    -nn- before -l-, (b) syllabic-l does not surface as -el.
+
+### Existing rule that's almost — but not quite — right
+
+`Germanic/fsts/germanic.txt:2890–2897` already declares
+`OEPreconsonantalDegemination`, citing R/T §6.8.1, but it is
+RESTRICTED to `*t → 0 / *t _ sonorant` (just to derive *botm <
+*buttma-). The rule is correctly motivated but underapplied: R/T's
+formulation is general (any geminate before any consonant), and
+extending it to other geminates would be philologically respectable.
+
+### Three options
+
+**Option A — Pre-OE input adjustment (TSV-only, simplest)**
+
+  - Change PROTOFORM/PROTO from `*spénnilō` / `*spennilō` to
+    `*spenilō` (single -n-).
+  - Change COUNTERPART/TOKENS from `spindle` / `s p i n d l e` to
+    `spinl` / `s p i n l`.
+  - Justification (interpretation ii above): OE inherits the
+    non-geminate variant; the geminate is a Continental-WGmc
+    development confined to OHG/OS/MD. Cognate-set 51 stays intact;
+    the German/Dutch/English rows keep their own protos.
+  - Cost: contradicts Kluge–Seebold/Orel orthodoxy (which tags
+    *spennilō as the WGmc-wide proto). But the "Pre-OE input form"
+    used in the FST has always been distinct from the cognate-set
+    headword in this project (there are several other rows where the
+    OE-row PROTOFORM differs from the German/Dutch headword for
+    exactly this reason — see §17.10 cluster). FST output `spinl`
+    matches `spinl=spinel` (Clark Hall) cleanly.
+  - Mismatch count: 13 → 12.
+
+**Option B — Phonology fix (extend OEPreconsonantalDegemination)**
+
+  - Keep PROTO `*spénnilō`.
+  - Retarget TSV `spindle` → `spinl` (since the actual OE form is
+    spinel/spinl regardless).
+  - Extend `OEPreconsonantalDegemination` to cover other geminates
+    before sonorants:
+        {*n} -> 0 || {*n} _ OESonorant
+    (and possibly {*p}{*p}, {*k}{*k}, {*l}{*l}, {*r}{*r}, {*s}{*s}
+    similarly, if R/T §6.8.1's general formulation is taken
+    seriously).
+  - But: even with degemination, current pipeline would give *spinlu*,
+    not *spinl*. The remaining gap is in apocope/weak-tail handling
+    of -ō after a now-singleton consonant. So Option B alone is NOT
+    enough — would also require a tweak to weak-tail vowel deletion
+    after CC (degeminated to C) before -l.
+  - Mismatch count: 13 → 12 IF both phonology pieces work.
+  - Risk: extending OEPreconsonantalDegemination could regress other
+    forms; would need a regression sweep across the full TSV
+    (especially -nn-, -ll-, -kk- words).
+
+**Option C — Documented exception**
+
+  - Keep PROTO `*spénnilō`.
+  - Retarget TSV `spindle` → `spinel` (or `spinl`); accept that FST
+    output `spinnlu` doesn't match.
+  - Add to `oe_known_problems.tsv` as
+    `wg_geminate_degemination_before_l` exception, citing R/T §6.8.1
+    as the rule we're not implementing.
+  - Cost: another item in the exception ledger; mismatch reported as
+    "documented exception" rather than counted as live.
+  - Mismatch count: 13 → 12 (moved out of live bucket).
+
+### Recommendation
+
+**Option A** (TSV-only, change proto to *spenilō and target to spinl).
+Reasons:
+
+  1. The FST already produces the right answer `spinl` from
+     `*spinilō`, with no rule change. This is the be-lautgesetzlich
+     ideal: no new rule, no exception, the cascade derives an
+     attested OE form.
+  2. The "Pre-OE input form ≠ cognate-set headword" convention is
+     well-established in this project (see §17.10 cluster).
+     Documenting that OE took the non-geminate variant of an
+     ablaut-variable n-stem is a respectable philological move.
+  3. Option B requires *two* coordinated phonology changes
+     (degemination + apocope-handling), each with regression risk.
+     Option C is the easy way out but accumulates exception-ledger
+     debt for a word whose phonology is actually derivable cleanly.
+
+If the user prefers tighter philological alignment with the standard
+WGmc reconstruction, Option C is acceptable as a fallback. Option B
+is the maximally lautgesetzlich answer but should only be undertaken
+with a full regression sweep.
+
+### Plan (recommended: Option A)
+
+TSV-only edit. Row 2208 (cognate-set 51, OE):
+
+  - **PROTOFORM** `*spénnilō` → `*spenilō`
+  - **PROTO**     `*spennilō` → `*spenilō`
+  - **TOKENS**    `s p i n d l e` → `s p i n l`
+  - **COUNTERPART** `spindle` → `spinl`
+  - **NOTE** — record that OE inherits non-geminate *spenilō
+    (vs. WGmc *spennilō reconstructed from OHG spinnila, OS spinnila,
+    MHG spinnel/spindel; cf. Kluge–Seebold s.v. Spindel, Orel HGE
+    p. 364). Reference DEV_NOTES §17.45.
+
+No FST change. Cognate-set headword PROTOFORM in the German/Dutch/
+English rows stays `*spennilō`.
+
+### Risk assessment
+
+  - Risk of fabricated target: **none**. *spinl* is in Clark Hall
+    explicitly (`spinl=spinel`); the gloss form is *spinil* (BT).
+  - Risk of regression: zero — TSV-only, single row, FST already
+    derives the new target string from the new proto.
+  - Risk of inconsistency with the cognate-set headword: minor — we
+    preserve the cognate-set link via COGIDS=51 and the German/Dutch
+    rows keep `*spennilō`. The OE row's proto is the Pre-OE input,
+    which is what this project tracks.
+
+### Verification
+
+After the TSV edit:
+
+  - `python3 Germanic/tools/oe_mismatch_report.py` →
+    expected mismatch count 13 → 12.
+  - The `gemination_extra` bucket should empty (was 1 after §17.44).
+  - Trace `*spenilō` should surface `spinl`:
+        echo 'spenilō' | flookup -i Germanic/old_english.bin
