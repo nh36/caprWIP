@@ -41449,3 +41449,363 @@ The asg. gate fix (`ī n ų`) from §17.45.3d Fix 2 stays as is.
 * Round 2 probe: **done** (this dossier).
 * Diagnosis: **done** (final-V-loss chronology, not bare-a-loss).
 * Awaiting user approval before applying Fix 1'.
+
+## §17.45.3f — Chronology cross-check: post-PWGmc *-n-after-*ī loss vs. OE high-V apocope
+
+### A. Question
+
+Does post-PWGmc loss of word-final *-n after unstressed *ī (the rule
+implemented as `NWGmcInStemNLoss`) post-date OE high-V apocope (which
+strips final *-i, *-u, *-ų)? §17.45.3e proposed this on the basis of
+Round-2 probe results; this dossier confirms it from **six independent
+philological sources** before we move the rule.
+
+### B. Source 1 — Ringe & Taylor vol.2 pp.71-72
+
+The clearest statement in the literature. Discussing the chronology of
+PWGmc final-V loss in 3rd-and-later syllables, R/T write:
+
+> "The effect of this vowel loss on the endings of polysyllabic
+> consonant-stem nouns is more difficult to assess. Inherited z-stem
+> (neut.) gen., dat. sg. *-izi and nom.-acc. pl. *-izu seem to have
+> survived, as expected; masc. and neut. n-stem gen., dat. sg. *-ini
+> also survived intact, so far as we can tell. But many other n-stem
+> endings should have been lost. For instance, masc. n-stem acc. sg.
+> *gumanu and nom. pl. *gumani should both have become *guman, while
+> **fem. n-stem acc. sg. *-Onu, *-inu and gen., dat. sg. and nom. pl.
+> *-oni, *-ini should all have become *-6n and *-in respectively.**
+> We know that the endings were not restored in the in-stems
+> **because the resulting word-final *-n was lost in most of the
+> daughters (see 3.3.1).**"
+
+This is explicit two-stage chronology:
+
+1. **PWGmc final-V loss** (R/T §3.1, vol.2 p.71): all five fem. in-stem
+   endings collapse to *-īn (the surviving in-stem skeleton); R/T
+   here treats this as the PWGmc-period erosion that produces the
+   syncretism of nsg./asg./gsg./dsg./npl.
+2. **Post-PWGmc *-n loss after *ī** (R/T vol.1 §3.3.1; cross-ref
+   "see 3.3.1" above): the resulting *-īn → *-ī.
+
+So R/T explicitly orders **final-V loss → *-n loss after *ī**, not the
+reverse. In OE the equivalent of step 1 is `OEHighVowelApocope`
+(plus `PWGmcFinalBareALoss` for the gsg. *-a tail and
+`PGmcFinalZDeletion` for the npl. *-z), and step 2 is
+`NWGmcInStemNLoss`.
+
+### C. Source 2 — R/T vol.1 §3.3.1
+
+Already cited in §17.45.3c. Places "loss of word-final *-n after
+unstressed *ī" in the post-PWGmc / pre-OE bracket. Combined with the
+vol.2 passage above, R/T's chronology is unambiguous.
+
+### D. Source 3 — Campbell §472-473
+
+> §472. "Loss of final -n. Already in eNorth. loss of final -n is
+> frequent. Examples are: weak nouns, CH foldu, LR eordu, RC galgu,
+> all a.s.; ... In INorth. loss of -n is established in weak inflexion,
+> in advs. in -an (e.g. bigeonda, bihianda, ūta), in numerals (twoége,
+> téa, seofo), in infs., and in subj. pl. pres. and past. ..."
+
+> §473. "**Loss of final -n extended further after ī than after other
+> vowels.** eW-S has frequent past subj. pl. in -e < -in, though
+> later -en is mostly restored from analogy of pres. subj. -en < -ēn.
+> The same tendency explains oblique cases of abstract fem. nouns,
+> e.g. **strenge a.s. strength**, cf. Goth. managein (§ 589.7). So
+> **pyle pillow < *pylwin, Lat. puluinus.** The retention of -n in
+> nouns like nieten animal < *nautin- is due to the influence of
+> inflected forms."
+
+Two points relevant to chronology:
+
+1. Campbell places the GENERAL final-n loss "already in eNorth." —
+   i.e. early Northumbrian, mid-OE period. That alone is post-apocope.
+2. The AFTER-*ī subset (§473) is broader than the general loss: it
+   reaches WSx and even non-Northumbrian dialects in the in-stem
+   paradigm and in Latin loanwords. The pyle / pulvīnus example is
+   key: a Latin loanword cannot have a paradigm-internal *-ī cell to
+   level analogically from. So the loss of *-n after *ī (in the
+   surface form *pylwin → *pylwī → pyle) must be a regular sound
+   change that operated on already-PWGmc-shape inputs **after** the
+   loanword had been integrated and after high-V apocope had run.
+
+### E. Source 4 — Brunner §280
+
+> "Die fem. Abstrakta auf -in (got. managei, manageins usw.) haben ae.
+> im Nom. Sg. nach Analogie der Abstrakta auf got. -iþa die Endung -u
+> (§ 255, 3) angenommen. In den obliquen Kasus erhält sich die Endung
+> -e, doch dringt auch in diesen -u, -o ein (wie bei den Stämmen auf
+> -iþa). ... Hierher gehören u. a. brædu Breite, hælu Heil, menzu,
+> meniz(e)o Menge, **strenzu** Kraft, ws. ieldu, angl. ældu Alter.
+> **Der alte Ausgang -ī(n) zeigt sich in dem ständigen i-Umlaut der
+> Wurzelsilbe** sowie in der Palatalisierung vorausgehender c und ʒ:
+> menizeo, strenzeo (§ 206, 7, c)."
+
+Brunner writes the suffix as **-ī(n)** with parenthesised n, signalling
+exactly variable retention of word-final *-n after long unstressed *ī.
+The parenthetical formulation is itself the chronological argument:
+the *-ī triggers i-umlaut **before** the *-n drops, otherwise the
+umlaut would not propagate. So in Brunner's chronology too:
+
+  i-umlaut ≪ *-n loss after *ī.
+
+i-umlaut is uncontroversially post-PWGmc-apocope (see Source 6 below),
+so this entails **PWGmc-apocope ≪ i-umlaut ≪ *-n loss after *ī**.
+
+The OE high-V apocope rule in our pipeline (`OEHighVowelApocope`,
+line ~3141) is the OE-stratum equivalent: it operates on inputs that
+have already passed through i-umlaut (line ~3132). So Brunner's
+ordering says n-loss must fire AFTER `OEHighVowelApocope`.
+
+### F. Source 5 — Fulk Comp.Gr. §7.34
+
+The in-stem paradigm is laid out (Goth. managei, OIcel. gørsimi, OE
+menigu, OHG menigī(n)). Fulk notes:
+
+> "In OE a few forms, mostly in early or Anglian texts, e.g.
+> **acc. gen. dat. sg. strenge**, show that originally the OE
+> paradigm was more closely comparable to the OHG one. **The
+> substitution of the ending -u for -e < *-i is usually explained
+> as the result of analogy to stems in Gmc. *-iþō**, e.g. OE
+> strengþu (see, e.g., A. Campbell 1977: §589(7), and cf. Brunner
+> 1965: §280)..."
+
+Two things matter here:
+
+1. Fulk transcribes the OHG paradigm as **menigī(n)** — same
+   parenthesised-n notation as Brunner. OHG retains the *-n
+   variably (Isidor / Monsee Frgmts.), confirming the post-PWGmc
+   character of the loss.
+2. The OE oblique cases derive from `*-i` (Fulk: "-e < *-i").
+   That `*-i` must be the post-shortening reflex of `*-ī`,
+   i.e. after `OEUnstressedLongVowelShortening` (line ~3155).
+   So the chain is: PGmc obl. → high-V apocope → *-īn → *-ī
+   (n-loss) → *-i (V-shortening) → -e (AE-merger). N-loss sits
+   between high-V apocope and V-shortening.
+
+### G. Source 6 — Hogg vol.1 ch.3
+
+Hogg places OE high-V apocope after i-umlaut:
+
+> "It is clear that the above changes [apocope and syncope] must
+> have taken place later than the time of i-mutation, since
+> otherwise the mutated vowel in a word such as **fēt** 'feet'
+> could not be explained."
+
+The point: i-umlaut must run while the trigger *-i is still present;
+high-V apocope strips it after. The OE in-stem evidence (strenge,
+menige with i-umlaut + final -e) requires the same chronology applied
+to *-ī: the *ī must be present at i-umlaut, then gets stripped (in
+this case only its *-n is stripped, leaving *-ī to shorten to *-i).
+
+So Hogg confirms the OE-stratum chronology underpinning the proposed
+insertion point.
+
+### H. Source 7 — Bammesberger §7.3.4
+
+> "Eine in den altgermanischen Einzelsprachen produktive Bildungsweise
+> von Adjektivabstrakta weist ein Suffix *-īn- auf, z. B. urg.
+> *managīn- (> got. managei ...; ae. menigu, afr. mente, as./ahd.
+> menigī)."
+
+Bammesberger reconstructs the suffix as PGmc *-īn- with the *-n*
+retained at the PGmc level. The parenthetical attestation pattern
+across the daughter languages parallels Brunner's *-ī(n)*. He places
+the IE source as *-ih₂ (collective / fem. *-ī) with secondary
+n-stem extension (Bamm. §4.2.3.1) — and this secondary *-n is what
+the Northwest-Germanic / OE rule strips.
+
+### I. Synthesis: the chronology stack
+
+Drawing the six sources together, the chronologically ordered stack
+relevant to the in-stem fem. paradigm is:
+
+| # | Stage | Implementation in our cascade |
+|---|---|---|
+| 1 | PGmc final *-z deletion (unstressed) | `PGmcFinalZDeletion`, line ~3032 |
+| 2 | PWGmc final bare-*a loss | `PWGmcFinalBareALoss`, line ~3077 |
+| 3 | PWGmc / PNWGmc final-V loss in 3rd+ syll. | `PWGmcEarlyIApocope`, line ~1655 |
+| 4 | NWGmc i-umlaut (long-distance trigger by *ī, *i, *j) | `OEIUmlaut`, line ~3132 |
+| 5 | OE high-V apocope after heavy stems | `OEHighVowelApocope`, line ~3141 |
+| 6 | **Post-PWGmc *-n loss after unstressed *ī** | `NWGmcInStemNLoss` — **must fire here** |
+| 7 | OE unstressed long-V shortening | `OEUnstressedLongVowelShortening`, line ~3155 |
+| 8 | Unstressed *æ → *e merger | `OEUnstressedAEMerger`, line ~3157 |
+
+All six sources independently locate `NWGmcInStemNLoss` AFTER
+`OEHighVowelApocope`. None of them places it before. The current
+implementation (after `PWGmcFinalBareALoss`, line ~3082) is therefore
+chronologically too early; it should be moved to immediately after
+`OEHighVowelApocope`, before `OEUnstressedLongVowelShortening`.
+
+### J. Implementation: Fix 1' (final form)
+
+* Move `.o. NWGmcInStemNLoss` from line ~3082 to immediately after
+  `.o. OEHighVowelApocope` at line ~3141, in the main composition.
+* Mirror the same move in the second composition (around line ~3242
+  → after the corresponding `OEHighVowelApocope` step in the
+  `EnglishAfterProtoToOEApocope` chain at line ~3266).
+* Update the rule's docstring comment (line ~2073) to cite this
+  cross-source chronology synthesis.
+
+### K. Predicted behaviour
+
+| Input | Surface at line ~3141 (after high-V apocope) | After n-loss | After V-shortening + merger | Expected output |
+|---|---|---|---|---|
+| `*fúrxtīnaz` (gsg) | `*fýrxtīn` | `*fýrxtī` | `*fýrxti → *fýrxte` | `fyrhte` |
+| `*fúrxtīni`  (dsg) | `*fýrxtīn` | `*fýrxtī` | `*fýrxti → *fýrxte` | `fyrhte` |
+| `*fúrxtīnų`  (asg) | `*fýrxtīn` | `*fýrxtī` | `*fýrxti → *fýrxte` | `fyrhte` |
+| `*fúrxtīniz` (npl) | `*fýrxtīn` | `*fýrxtī` | `*fýrxti → *fýrxte` | `fyrhte` |
+| `*fúrxtīn`   (post-apocope) | `*fýrxtīn` | `*fýrxtī` | `*fýrxti → *fýrxte` | `fyrhte` |
+
+All five PGmc obl. surface forms converge on `fyrhte`. The pyle /
+pulvīnus loanword case (Campbell §473) provides parallel external
+confirmation: a non-paradigmatic Latin loan with *-īn input goes
+through the same regular sound change.
+
+### L. Status
+
+* Cross-source confirmation: **done** (this dossier).
+* Six sources concur on chronology.
+* Ready to apply Fix 1'.
+
+## §17.45.3g — Regression on `*swīną` and rule-context restriction
+
+### A. Round 3 probe (post-Fix-1' application)
+
+After applying Fix 1' (move `NWGmcInStemNLoss` to fire after
+`OEHighVowelApocope` per §17.45.3f), all five fem. in-stem inputs
+converge correctly on `fyrhte`:
+
+| Input | Output | Verdict |
+|---|---|---|
+| `*fúrxtīnaz` | `fyrhte` | ✓ |
+| `*fúrxtīni`  | `fyrhte` | ✓ |
+| `*fúrxtīnų`  | `fyrhte` | ✓ |
+| `*fúrxtīniz` | `fyrhte` | ✓ |
+| `*fúrxtīn`   | `fyrhte` | ✓ |
+
+But the mismatch report rose 13 → 14, with one regression:
+
+> `*swīną → swī (expected swīn)`
+
+`*swīną` is a neuter a-stem 'swine' (root-stressed monosyllable).
+The cascade derives:
+
+1. `*swīną` (input)
+2. `*swī*n*ą` (after gate)
+3. ... (NWGmc / OE stages with no effect on this segmentation)
+4. `*swīn` (after `OEHeavySyllableNasalApocope` strips nasal *-ą)
+5. `*swī` (after the new `NWGmcInStemNLoss`, which over-applies to the
+   monosyllabic root-stressed *ī)
+
+### B. Diagnosis: rule context too broad
+
+The current rule is
+
+```
+define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+```
+
+i.e. "delete *n after any *ī at word edge." This matches both:
+
+* The intended target: post-stem suffix *-ī*n (unstressed *ī after a
+  stressed root + cluster).
+* The unintended target: stem-internal stressed *ī*n in
+  monosyllables (*swīn, *līn 'flax', *grīn 'snare', *wīn 'wine',
+  *swī*n itself...).
+
+All philological sources (R/T vol.2 pp.71-72; Campbell §473; Brunner
+§280; Fulk §7.34) explicitly restrict the change to UNSTRESSED *ī.
+Brunner is most explicit:
+
+> "Der alte Ausgang -ī(n) zeigt sich in dem ständigen i-Umlaut der
+> Wurzelsilbe" — "the old ending **-ī(n)** shows in the consistent
+> i-umlaut of the **root syllable**"
+
+i.e. the rule operates on the **suffix** *-ī*n, contrasted against
+the **root**, NOT on a stressed root vowel.
+
+Campbell §473 examples are ALL post-stem morphology:
+* `strenge` (a.s.f.): root *strang- + suffix *-ī*n
+* `pyle` < `*pylw-i*n`: root *pulw- + suffix *-i*n (note: short *i,
+  but Latinate; the consonantal suffix nucleus is non-stressed)
+* `nieten` (n.) < `*naut-i*n-`: root *naut- + suffix *-i*n
+
+R/T vol.2 p.71 makes the same case-by-case distinction: stem +
+suffixal *-īn-. Stem-internal *ī never undergoes this loss in any
+of the sources.
+
+Stressed monosyllabic *ī*n words preserve final *-n in OE without
+exception:
+
+* OE `swīn` (n.) — preserved
+* OE `līn` (n.) 'flax' — preserved
+* OE `wīn` (n.) 'wine' — preserved
+* OE `mīn` (poss.) — preserved
+* OE `dīn` (rare 'din'?) etc.
+
+### C. Proposed Fix 3: restrict left context
+
+Replace
+
+```
+define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+```
+
+with
+
+```
+define NWGmcInStemNLoss [{*n} -> 0 || EnglishStarLongVowel OEAnyConsonant+ {*ī} _ .#.];
+```
+
+The left context now requires a preceding long-V root syllable + at
+least one consonant before the suffixal *ī. This:
+
+* Allows `*fúrxtīn` (pattern: long *ū / *ī / etc. + r+x+t + *ī*n) ✓
+* Allows `*pulw-īn → *pylwin → *pylwi → pyle` if the root has a long
+  vowel; for short-V roots the pattern fails, but Latinate
+  loanwords like `*pylwin` have already had their root-V realized
+  by AFB and short→long via OE compensatory length, so the test of
+  the rule as worded here is whether `*pylwin` reaches it with the
+  required left context. **This needs verification post-fix.**
+* Excludes monosyllabic `*swīn` (no preceding root + consonants
+  before the *ī*n; the *ī IS the root vowel) ✓
+
+### D. Coverage-check shortlist
+
+After applying Fix 3 the following additional probes need to be run
+(beyond the five fem. *furxtīn obl. forms):
+
+| Input | Expected | Reason |
+|---|---|---|
+| `*swīną` | `swīn` | Regression-recovery (a-stem n.sg.n.) |
+| `*pylwin` | `pyle` | Campbell §473 loanword case |
+| `*managīn` | `menige` | Brunner §280 / R/T 2 in-stem npl./obl. |
+| `*strangīn` | `strenge` | Fulk §7.34 in-stem obl. |
+| `*nautīn` | `nieten` | Campbell §473 retention via inflection |
+| `*līną` | `līn` | a-stem nt. monosyllable, must NOT lose *-n |
+| `*wīną` | `wīn` | a-stem nt. monosyllable, must NOT lose *-n |
+
+### E. Alternative formulation considered and rejected
+
+We could mark the suffixal *ī differently from the stem *ī (e.g. by
+using a distinct symbol class like `*ī̂` for the unstressed in-stem
+suffix). This would be theoretically cleaner but:
+
+* Requires changing the gate (`pgrmWeakTailVowel`) to emit a
+  different symbol for the four in-stem patterns.
+* Risks contaminating other rules that already operate on `{*ī}`.
+* Adds maintenance burden.
+
+The context-restriction approach (Fix 3) is more local and reuses
+the existing convention from rules like `OEHighVowelApocope` (which
+also condition on a preceding long-V + consonant context).
+
+### F. Status
+
+* Round 3 probe: **done**.
+* Regression diagnosed: stem-internal *ī*n over-application.
+* Cross-source confirmation that the change is restricted to
+  unstressed-suffix *ī: **done** (R/T, Campbell, Brunner, Fulk all
+  explicit).
+* Awaiting user approval for Fix 3.

@@ -3075,11 +3075,6 @@ define EnglishProtoToOE (
     # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
     # See DEV_NOTES §17.10.14 for the cross-source survey.
     .o. PWGmcFinalBareALoss
-    # NWGmcInStemNLoss runs AFTER PWGmcFinalBareALoss so gsg. *fúrxtīna →
-    # *fúrxtīn (post-bare-a-loss) is visible to the {*ī}_.#. context.
-    # Chronology: R/T §3.1 PWGmc apocope precedes §3.3.1 post-PWGmc *-n loss
-    # after unstressed *ī. See DEV_NOTES §17.45.3d.
-    .o. NWGmcInStemNLoss
     # R/T §3.1 pp.58-59: "surviving" bimoric *-ō (z-loss-exposed) unrounds.
     # Output kept LONG (*-ā) so length is preserved through AFB; shortening
     # happens at R/T's dated OE stage (§6.8.3). See DEV_NOTES §17.10.23.
@@ -3139,6 +3134,14 @@ define EnglishProtoToOE (
     .o. OEWeakTailNasalLoss
     .o. OEWeightMarkers
     .o. OEHighVowelApocope
+    # NWGmcInStemNLoss runs AFTER OEHighVowelApocope so dsg./asg./npl. tails
+    # *-īni / *-īnų / *-īniz lose their final high V first; *-n is then
+    # word-final and the rule applies (gsg. *-īn already exposed by
+    # PWGmcFinalBareALoss). Cross-source chronology (R/T vol.2 pp.71-72,
+    # vol.1 §3.3.1; Campbell §472-473; Brunner §280; Fulk §7.34; Hogg vol.1
+    # ch.3; Bammesberger §7.3.4) all place *-n-after-*ī loss after PWGmc
+    # final-V loss / OE high-V apocope. See DEV_NOTES §17.45.3f.
+    .o. NWGmcInStemNLoss
     # OEHeavySyllableNasalApocope moved earlier — now at line ~2039 before nasalization
     .o. OEMedialSyncope
     .o. OELAdjacentSyncope
@@ -3238,8 +3241,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # §17.10.19 (R3). Mirrors main-stack ordering.
     .o. OEMedUnstressedULowering
     .o. PWGmcFinalBareALoss
-    # NWGmcInStemNLoss after bare-a-loss: see main-pipeline comment + §17.45.3d.
-    .o. NWGmcInStemNLoss
     # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
     # See DEV_NOTES §17.10.23.
     .o. PWGmcSurvivingBimoricOUnrounding
@@ -3263,7 +3264,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # NSL moved earlier in pipeline (NWGmc stage)
     .o. OEWeakTailNasalLoss;
 define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
-define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. OEHeavySyllableNasalApocope;
+define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. NWGmcInStemNLoss .o. OEHeavySyllableNasalApocope;
 define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     # TWO-STAGE *ō SHORTENING (§15.8):
     .o. OEEarlyOShortening
