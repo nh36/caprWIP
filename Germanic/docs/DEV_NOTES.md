@@ -43448,9 +43448,30 @@ PROTOFORM stays `*wíduwōn` — i.e. the strict PGmc reconstruction in
 which all etymological cognates (Du. *weduwe*, Ger. *Witwe*) agree —
 and the cascade derives WS *wuduwe* by regular sound change.
 
-#### Source basis (already canvassed at §17.51.6 and in the dossier)
+#### Source basis
 
-**Bülbring §264** (verbatim, OCR'd local copy
+The OE-handbook canvass for the rule itself is in
+`Germanic/docs/dossiers/widuwe-u-preservation.md` Appendix B (six OE
+handbooks: Bülbring §264, Campbell §218, Brunner §114b–c, Luick §221,
+Hogg vol. 1, Ringe-Taylor §6.9.6 — verbatim quotations and conditioning
+table on disk). The PGmc/PIE-level canvass at Appendix C verifies the
+genetic depth: **Ringe vol. 1, Kroonen, Orel, Bammesberger 1990,
+Streitberg, Hirt, Pokorny IEW, Mayrhofer EWAia, Kluge–Seebold, Beekes
+EDG, and Fulk** are unanimous in reconstructing PGmc *widuwōn- with
+initial *i (and PGmc *widu- 'wood' with initial *i). Cross-branch
+evidence: Goth *widuwo*, ON *viðr*, OHG *wituwa* / *witu*, OS *widowa*
+/ *widu*, OFris *widwe*, MDu *weduwe* — all initial *i. Within OE,
+Anglian *widwe*, Northumbrian *widua*, Mercian *widwe* also preserve
+*i. **Only OE (and within OE, only WS robustly) innovates *u**, which
+licenses placement of the rule in `EnglishProtoToOE` (not in any
+shared NWGmc / Ingvaeonic / PGmc stage). Fulk's *Comparative Grammar*
+§4.8 is the only handbook that explicitly gives the rule a name —
+"combinative back mutation when it follows *w*" — and dates it to OE
+ca. 700, agreeing with Bülbring §264 and confirming OE-internal scope.
+
+Key verbatim citations (full text in dossier Appendix B):
+
+**Bülbring §264** (OCR'd local copy
 `docs/references/bulbring_altenglisches_elementarbuch.txt:5399–5419`):
 
 > Ums Jahr 700 (bereits im Epin. Gloss.) wird das durch u/ā-Umlaut
@@ -43481,47 +43502,74 @@ chronology into a **single direct rule** *í → *ú after initial *w-
 when followed by C + u/o, which gives the same surface output for
 every attested example without introducing a transient *iu stage.
 
-#### Conditioning
+#### Conditioning — handbook canvass and final scope
 
-| | Bülbring example | initial *w_? | next C(C) | back V trigger | rule fires? |
-|---|---|---|---|---|---|
-| ✓ | wudu < *widu | yes | *d | *u | yes |
-| ✓ | wuduwe < *widuwō- | yes | *d | *u | yes |
-| ✓ | wucu < *wikō- | yes | *k | *u | yes |
-| ✓ | swustur < *swistur | yes (*sw_) | *st | *u | yes |
-| ✓ | swugian | yes (*sw_) | *g | *i (semivowel)→*a | yes (literature) |
+The Appendix B canvass (six handbooks) is unanimous on three points:
 
-The cogset has only one OE row that satisfies both conditions
-("*w" word-initial + stressed "*í" + single non-nasal C + back
-vowel *u/*o in next syllable):
+1. **No consonant restriction in WS.** Bülbring §264 explicitly
+   states "Folgender Velar stört im Ws. diese Entwicklung *nicht*",
+   gives examples with following dental (*wudu*, *wuduwe*), velar
+   (*wucu*, *swugian*, *(ġe)cwucian*), labial+dental cluster (*swutol*),
+   and *st cluster (*swustur*). Campbell §218 says "the change seems
+   not to be limited, like u-umlaut, to positions before liquids and
+   labials". Brunner §114b–c, Luick §221, R&T §6.9.6 all concur. The
+   draft's earlier nasal/liquid exclusion was therefore overly narrow
+   and is **dropped** in the final formulation.
+2. **Trigger is {*u, *o} only — not *a.** The handbooks describe a
+   distinct "combinative *a-umlaut" (Campbell §219) that yields the
+   *wuton*, *wuta*, *gewuta* forms, but Brunner §114c localises it
+   to Northumbrian + WS sub-dialects only, and notes WS standard does
+   not generalise it. Including *a as a trigger here would
+   incorrectly fire on *wíndaną → **wundan* (attested form is
+   *windan*). We therefore keep the WS-conservative trigger set
+   {*u, *o}.
+3. **Initial *sw-/*kw- as alternative left-context.** Bülbring's
+   *swustur*, *swutol*, *swugian*, and Campbell's *cwucu*, *cwudu*,
+   *twuwa* show the rule also fires after *sw-/*kw-/*tw-. The
+   cogset has no such entries currently, so we keep the left-context
+   bare *w- for now. A future cogset entry of that shape will need
+   the rule extended; this is flagged in the rule comment.
 
-| OE row | shape | C right-context | back-V right-context | matches? |
+#### Cogset regression check (final rule, narrow C, broader-than-draft)
+
+| OE row | shape | scan: single C after *í, then *u/*o? | fires? | attested |
 |---|---|---|---|---|
-| *wíduwōn → wuduwe | w í d u w… | *d (single, non-nasal) | *u | **yes** ✓ |
-| *wíθrą → weþer | w í θ r ą | *θ (then *r) | *ą (back, but not *u/*o) | no — wrong V |
-| *wíndaną → windan | w í n d a… | *n (nasal) | — | no — nasal C |
-| *wíntruz → winter | w í n t r u z | *n (nasal); *u behind cluster | — | no — nasal C, cluster |
-| *wír-àldu → weorold | w í r à l d u | *r (liquid) | — | no — liquid C |
+| *wíduwōn | w í d u w ō n | *d + *u → yes | **yes** ✓ | wuduwe |
+| *wíθrą | w í θ r ą | *θ + *r (not *u/*o) | no | weþer |
+| *wíndaną | w í n d a n ą | *n + *d (not *u/*o) | no | windan |
+| *wíntruz | w í n t r u z | *n + *t (not *u/*o) | no | winter |
+| *wír-àldu | w í r à l d u | *r + *à (not *u/*o) | no | weorold |
 
-So the rule fires precisely on the target lemma with no other
-ripple effects on any other OE cogset entry.
+Single-C scan + {*u, *o}-only trigger gives correct firing on
+*wíduwōn alone; *wíntruz is excluded both because its *u sits behind
+a 3-C cluster (*ntr) and because the single-C scan stops at *n+*t.
+Bülbring's *swustur* < *swistur (single *s + single *t before *u)
+shows the rule fires through *st cluster, but our cogset has no *wí-
++ cluster + *u/*o form, so single-C is sufficient and safest here.
 
 #### Rule formulation
 
 ```foma
-# OE combinative u-umlaut (w-effect on *í), Bülbring §264 / Campbell §218.
-# Word-initial *w + stressed *í + single non-nasal/non-liquid C
-# + *u or *o in next syllable → *w + *ú + … . Models the WS prehistoric
-# *wi → *wiu → *wu development (Bülbring's two-step chronology) as a
-# single direct change. Fires before OEMedUnstressedULowering so that
-# the medial *u remains visible in the right context, and so that
-# u-lowering's existing stressed-*u left-context exclusion
+# OE combinative u-umlaut on *í (w-effect).
+# Sources: Bülbring §264; Campbell §218; Brunner §114b; Luick §221;
+# Hogg vol.1; R&T §6.9.6; Fulk Comp.Gram. §4.8 (the only handbook
+# to name the rule explicitly and date it ca. 700).
+# Word-initial *w + stressed *í + single C + *u/*o in next syllable
+# → *w + *ú + … . Models the OE *wi → *wiu → *wu development
+# (Bülbring's two-step chronology) as a single direct change.
+# Conditioning notes (per handbook canvass, dossier Appendix B):
+#   * No consonant restriction (nasals/liquids/velars all permitted).
+#   * Trigger restricted to *u/*o (excluding *a) to keep WS-conservative
+#     scope and avoid over-firing on *wíndaną.
+#   * Left-context bare *w-; future *sw-/*kw-/*tw- cogset entries
+#     would need the bracket extended to ({*s}|{*k}|{*t}) {*w}.
+# Ordering: fires before OEMedUnstressedULowering so the medial *u
+# remains visible in the right context, and so that u-lowering's
+# existing stressed-*u left-context exclusion
 # ([EnglishStarVocalic - [{*u}|{*ū}]]) preserves the medial *u
 # under the now-stressed *ú.
 define OEWICombinativeUUmlaut [
-    {*í} -> {*ú} || .#. {*w} _ [EnglishStarConsonant
-                                  - [EnglishStarNasal | EnglishStarLiquid]]
-                                ({*u} | {*o})
+    {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant ({*u} | {*o})
 ];
 ```
 
