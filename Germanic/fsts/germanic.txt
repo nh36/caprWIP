@@ -3559,7 +3559,7 @@ define GermanFinalDevoicing [
 
 ### k-spirantisation and shielding
 define GermanStopShiftBackVowel [{*a} | {*ā} | {*ą} | {*o} | {*ō} | {*u} | {*ū} | {*au}];
-define GermanStopShiftFrontVowel [{*e} | {*ē} | {*ę} | {*i} | {*ī} | {*y} | {*ai} | {*ei} | {*iu} | {*eu}];
+define GermanStopShiftFrontVowel [{*e} | {*ē} | {*ḗ} | {*ę} | {*i} | {*ī} | {*y} | {*ai} | {*ei} | {*iu} | {*eu}];
 define GermanStopShiftLiquid [{*l} | {*r}];
 define GermanStopShiftBackLeft [
     GermanStopShiftBackVowel |
