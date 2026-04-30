@@ -1207,7 +1207,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1387	ts au m	*táugmaz	ts au - m ( - - )	t͡saum	Zaum	380	German					team	*táugmaz	275
 863	t iː n	*téxun	t iː - - n	tiːn	tien	237	Dutch					ten	*téxun	276
 862	t ɛ n	*téxun	t ɛ - - n	tɛn	ten	237	English					ten	*téxun	276
-2242	t ī e n	*téxun	t ɛ - - n	tɛn	tīen	237	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*téxun	276
+2242	t ē o n	*téxun	t ɛ - - n	tɛn	tēon	237	Old_English	Retargeted from WS tīen to (Anglian/Northumbrian/early-WS) tēon, the regular lautgesetzlich outcome of *tehun via intervocalic *h-loss + contraction (Brunner §129.2, §234, §325; Bülbring §557e; Kaluza; Hirt; Ringe-Taylor 2014). WS tien is secondary, levelled out of i-umlauted inflected i-stem cells (Stiles 1985-6, NOWELE 7). The un-umlauted stem tēon- is preserved in the ordinal tēoða and the compound -tēontig (hundtēontig '100'). See DEV_NOTES §17.48 and §17.48.1.	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			ten	*téxun	276
 861	ts eː n	*téxun	ts eː - - n	t͡seːn	zehn	237	German					ten	*téxun	276
 1804	θ eɪ n	*θégnaz	θ eɪ - - n ( - - )	θeɪn	thane	494	English					thane	*θégnaz	362
 2243	þ e ġ n	*θégnaz	θ eɪ - - n ( - - )	θeɪn	þeġn	494	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | TSV fix: target þæġn → þeġn (R/T reconstruct *θegnaz with *e and give OE þegn, matching pipeline output).			thane	*θégnaz	362

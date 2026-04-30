@@ -583,6 +583,7 @@ define PGmcStarDiphthong [
     {*éa} |  # Breaking of stressed *á
     {*ḗa} |  # Breaking of stressed *á before x+weak tail (lengthened)
     {*éo} |  # Breaking of stressed *é
+    {*ḗo} |  # Long stressed *éo from contraction (e.g. *téxun → tēon)
     {*ío} |  # Breaking of stressed *í
     {*íe}    # Stressed ie from palatal diphthongization
 ];
@@ -854,6 +855,7 @@ define OldEnglishRemoveStars [
     {*éa} -> e a,
     {*ḗa} -> ē a,
     {*éo} -> e o,
+    {*ḗo} -> ē o,
     {*ío} -> i o,
     {*íe} -> i e,
     {*ʃ} -> s ċ,
@@ -954,6 +956,7 @@ define EnglishStarLongDiphthong [
     {*ēa} | {*ēo} | {*īe} | {*īo} |
     {*ái} | {*áu} | {*éu} | {*íu} |
     {*ḗa} |
+    {*ḗo} |
     {*ie}
     # Inherited long diphthongs (*ai, *au, *eu, *iu) and their acute counterparts;
     # {*ḗa} is the lengthened breaking product of long *ā. {*ie} is WS palatal
@@ -2980,6 +2983,14 @@ define OEContraction [
     {*ēa} {*a} -> {*ēa},
     {*eo} {*a} -> {*ēo},
     {*ēo} {*a} -> {*ēo},
+    # Brunner §129.2: *eh + back-V (after intervocalic h-loss + breaking)
+    # contracts to long *ēo with velar second element.  Examples grouped
+    # there: *tehun → tēon, *tehunþō → tēoða, *tehuntiz → -tēontiz
+    # (in hundtēontig '100').  See DEV_NOTES §17.48 / §17.48.1.
+    {*eo} {*o} -> {*ēo},
+    {*ēo} {*o} -> {*ēo},
+    {*éo} {*o} -> {*ḗo},
+    {*ḗo} {*o} -> {*ḗo},
     # R/T §6.6.1: long vowel absorbs following unstressed short vowel
     # after intervocalic h-loss (e.g. *tāhe → tā, *rāha → rā, *slāhe → slā)
     {*ā} {*a} -> {*ā},

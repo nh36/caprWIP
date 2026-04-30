@@ -1,9 +1,9 @@
-Total mismatches: 11
+Total mismatches: 10
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
-  Phonology (core buckets):    1
+  Phonology (core buckets):    0
   Phonology (other buckets):   2
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
@@ -17,7 +17,6 @@ Total mismatches: 11
   *wúllō -> woll (expected wull)  [wontfix: u_lowering_near_labial]
 
 === CORE BUCKETS ===
-  long_vowel_missing: 1
 
 === OTHER SUB-BUCKETS ===
   front_expected_back_out: 1
@@ -38,12 +37,6 @@ Total mismatches: 11
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
-
-long_vowel_missing (1):
-  *téxun -> teoon (expected tīen)
-  >> ISSUE: Long vowel expected but short produced
-  >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
-  >> ACTION: Check if proto should have long vowel; check lengthening rules
 
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
