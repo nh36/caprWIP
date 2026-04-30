@@ -966,7 +966,7 @@ define EnglishStarLongDiphthong [
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
@@ -1989,7 +1989,7 @@ define AngloFrisianVelarShortening [
 # Examples: *wurda → word, *hurnga → horn, *budanaz → boden (all with SHORT o)
 define EnglishStarNonHighVowel [
     {*a} | {*ā} | {*ą} |
-    {*e} | {*ē} |
+    {*e} | {*ē} | {*ḗ} |
     {*o} | {*ō} | {*ɔ̆} |
     {*ô} |
     # DEV_NOTES §16.6: Nebenton-graves count as their plain counterparts
