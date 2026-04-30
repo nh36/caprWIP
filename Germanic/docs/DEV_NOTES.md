@@ -43045,3 +43045,88 @@ set.**
 - Versloot 2014/2017 on Frisian numeral phonology.
 - Goblirsch 2018 *Gemination, Lenition, and Vowel Lengthening* (CUP).
 - Iverson & Salmons in *Handbook of Germanic Linguistics*.
+
+### §17.50.3 — Implementation result and a follow-on finding: *g palatalisation before back vowels
+
+**Implementation done.** TSV PROTOFORM/PROTO updated for cogset 90 rows
+821–824 from `*néwun` → `*nígun` (with stress mark on the *í*; the
+unstressed `*nigun` triggered medial-i lowering and produced spurious
+*neġon*). Cascade rebuild OK; mismatch count stable at 10.
+
+**But the previous "breaking_extra" mismatch has been replaced by a
+new, smaller-tier mismatch:**
+
+```
+palatal_extra__orth_normalization (1):
+  *nígun -> niġon (expected nigon)
+```
+
+The cascade derives the form correctly except for the final
+orthographic palatalisation marker. Trace:
+
+```
+FinalSchwaApocope [resume]: *n*í*g*o*n
+… all rules carry …
+ProtoToOE [resume]: *n*í*ʤ*o*n
+Orthography:        niġon
+```
+
+The umbrella `ProtoToOE` bin palatalises the medial *g* even though no
+individual snapshot bin in the cascade does. The responsible rule is
+**OEVelarPalatalization** (`Germanic/fsts/germanic.txt` ~line 2772):
+
+```
+{*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+{*g} -> {*ʤ} || EnglishStarFrontVowel _,     ← too greedy
+{*g} -> {*ʤ} || _ {*j},
+{*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
+```
+
+Specifically the second clause palatalises *g* unconditionally after
+any front vowel. **This is wrong before a back vowel.** Campbell §429
+is explicit: "Velar consonants … remained when there was a back vowel
+… either before or after them, e.g. *wicu* week, *brecan* break,
+*aces* g.s. oak, *séoce* n.p.m. sick, *wegas* ways, ***nigon*** nine,
+*þinga* g.p. things." The right context for "after front vowel"
+palatalisation should be **word-final or before another front vowel
+(or *j*)**, exactly parallel to how the *k* rules above already
+formulate Rule 3 and Rule 4 of R/T §6.4.1. The current *g* clause
+overgenerates.
+
+**Empirical scope of the bug.** A grep of the TSV for OE rows with
+V[front]-g-V[back] internal structure returns three lemmas:
+
+- `*dáigaz → dāg` 'dough' — a long-vowel root; *g* is in coda after a
+  diphthong, behaviour governed by other rules.
+- `*wégaz → weġ` 'way' — but here *-g* is word-final after weak-tail
+  apocope, so palatalisation is **correct** (Campbell: dæġ, weġ).
+- `*nígun → nigon` 'nine' — the form under repair, where *g* is
+  intervocalic with a back vowel right context and **must remain
+  velar**.
+
+So the fix is well-scoped: only `nígun` exposes the over-application.
+Fix: tighten the second clause from
+`{*g} -> {*ʤ} || EnglishStarFrontVowel _,`
+to two clauses parallel to the *k* rules:
+```
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
+```
+
+**Why the change is safe.** The OE rule for *k* (lines 2754–2768)
+already encodes the same conditioning split (rules 3 and 4 of R/T
+§6.4.1 are word-medial-before-front-V and word-final respectively).
+The *g* clause was simply less carefully scoped at the time it was
+written. Tightening it brings *g* into line with *k* and with the
+descriptive consensus (Campbell §429, R/T §6.4.1).
+
+**Risk to other forms.** The *k* parallel rules already pass; the
+empirical risk is therefore confined to lemmas where the OE form
+should currently have palatal *ġ* in a non-final, non-pre-front-V
+position. Searching the TSV finds none. The fix is therefore expected
+to drop the mismatch count from 10 to 9 with no regressions.
+
+**Files to change** (in a follow-up commit, NOT in the
+TSV-PROTOFORM commit): `Germanic/fsts/germanic.txt` —
+`OEVelarPalatalization` *g* clause, ~line 2772. Then rebuild and
+re-run the mismatch report.
