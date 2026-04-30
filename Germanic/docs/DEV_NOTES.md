@@ -43130,3 +43130,163 @@ to drop the mismatch count from 10 to 9 with no regressions.
 TSV-PROTOFORM commit): `Germanic/fsts/germanic.txt` —
 `OEVelarPalatalization` *g* clause, ~line 2772. Then rebuild and
 re-run the mismatch report.
+
+### §17.50.4 — Scholarly conditioning of the OE *g palatalisation: source canvass
+
+Before editing the `OEVelarPalatalization` *g clause, the conditioning
+environment was canvassed against the locally-held handbook tradition.
+The full dossier (with verbatim quotations, line ranges in the OCR'd
+copies under `docs/references/`, and a regression watchlist) lives at
+`Germanic/docs/dossiers/g-palatalisation-conditioning.md`. The summary
+below records the consensus and — importantly — **retracts the
+over-narrow rule fix proposed in §17.50.3**.
+
+#### §17.50.4.1 The handbook consensus
+
+All four traditions consulted state the same conditioning, modulo
+phrasing:
+
+- **Campbell (1959) §§426–430.** § 428 (final): velar /g/ palatalises
+  word-finally after any front V (*weġ, dæġ, mǣġ*); remains velar
+  after a back V or after a back element of a diphthong (*bóc, séoc,
+  pléh, lang, burg*). § 429 (medial): "between any two front vowels,
+  between front vowel and syllabic consonant, and always after a vowel
+  which has suffered i-umlaut." Type-examples for palatal: *æcer,
+  cwice, brece, dæges, sige, nægl, fægr, wegn, regn, segl, finces,
+  þinges, finger*. Type-examples for velar: "Velar consonants,
+  however, remained when there was a back vowel (or back element of a
+  diphthong) either before or after them, e.g. *wicu* week, *brecan*
+  break, *aces* g.s. oak, *séoce* n.p.m. sick, ***wegas*** ways,
+  ***nigon*** nine, ***þinga*** g.p. things." Note the explicit
+  i-umlaut override: "an umlauted vowel is followed by a palatal
+  consonant, even if a back vowel followed, e.g. *fēġan, drenċan,
+  streċċan, liċġan*."
+
+- **Ringe & Taylor (2014) § 6.4.1, rule 4** (verbatim): "preconsonantal
+  and word-final *g were palatalized by any preceding front vowel,
+  but word-final *k was palatalized only by a preceding *i or *j, and
+  it cannot be demonstrated that preconsonantal *k was palatalized at
+  all." Rule 3 (intervocalic): "intervocalic *g was palatalized
+  between any two front vowels, but *k was palatalized in that
+  position only if the preceding vowel was *i or *j." R/T also note
+  no Northumbrian failure of palatalisation (citing Gevenich 1918).
+
+- **Hogg (1992) ch. 7.** Tautosyllabic formulation: velar palatalises
+  iff in the same syllable as a front vowel. Derives the *weġ ~ wegas*
+  alternation by syllabification: in *we.gas* the *g* is the onset of
+  *-gas*, i.e. tautosyllabic with *a*, hence velar; in *weġ#* the *g*
+  is in the coda with *e*, hence palatal.
+
+- **Sievers / Brunner (1965) § 206.** German-tradition formulation
+  with the explicit "NOT when only one side has a front vowel and the
+  other a back vowel" disclaimer that gives the *wegas* / *nigon*
+  exception.
+
+- **Bülbring (1902) §§ 491–495.** § 494 explicitly extends the
+  word-final palatalisation environment to *Silbenauslaut*
+  (preconsonantal): cited examples *bregdan, sægde, regnes, wægnes*
+  — precisely the R/T rule-4 environment.
+
+The minimal pair *nigon* (front-V _ back-V, **velar**) ~ a hypothetical
+*niġan* (front-V _ front-V, palatal) is cited in every source.
+
+#### §17.50.4.2 Right-context conditioning, abstracted
+
+Combining the four formulations, palatalisation of inherited *g*
+after a front vowel happens IFF the right context is **anything except
+a back vowel**:
+
+| Right context        | Outcome   | Type-examples                    |
+|----------------------|-----------|----------------------------------|
+| `_ #` (word-final)   | palatal   | *weġ, dæġ, mǣġ*                  |
+| `_ front-V`          | palatal   | *sige, dæġes, weġes*             |
+| `_ Consonant`        | palatal   | *nægl, segl, regn, wegn, sægde*  |
+| `_ *j`               | palatal   | (handled by separate clause)     |
+| `_ back-V`           | **velar** | *wegas, nigon, þinga, daga*      |
+| umlauted-V _ back-V  | palatal   | *fēġan, drenċan* (umlaut wins)   |
+
+The bottom row — i-umlaut overriding the back-V right context — does
+not concern the *after-front-V _ back-V* slot in our cascade for two
+reasons: (a) by the time `OEVelarPalatalization` fires, i-umlauted
+vowels are already in `EnglishStarFrontVowel`; (b) i-umlaut targets
+in our TSV are all triggered by *j (or *i in C+j clusters), and *g
+before *j is palatalised by an independent existing clause earlier in
+the rule.
+
+#### §17.50.4.3 Retraction of the §17.50.3 proposal
+
+§17.50.3 proposed a two-clause narrowing:
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
+```
+
+This is **too narrow**. It captures word-final and intervocalic-front-V
+palatalisation (Campbell § 428 and the front-V half of § 429), but it
+**loses the preconsonantal case** licensed by R/T § 6.4.1 rule 4 and
+Bülbring § 494 (cited above). In the project's TSV this would break
+at minimum:
+
+- `*náglaz → nail`  (cogset 1579) — front-V _ /l/, expected palatal
+- `*séglą  → sail`  (cogset 940)  — front-V _ /l/, expected palatal
+
+The §17.50.3 risk audit was therefore wrong: it searched only for
+V[front]-g-V[back] internal structure, missing V[front]-g-C cases.
+
+#### §17.50.4.4 Revised proposal
+
+The simplest formulation faithful to the consensus replaces the single
+overgreedy clause with a single explicit-negation clause:
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ \EnglishStarBackVowel,
+```
+
+i.e. "after a front V, palatalise *g unless followed by a back V."
+`EnglishStarBackVowel` is already defined at `germanic.txt:940` and
+covers *a, *o, *u and their length / stress variants (`*ā *ō *ū *ɑ *ɔ
+*ʊ *á *ó *ú *à *ò *ù`). The complement `\EnglishStarBackVowel`
+therefore matches: word boundary, any consonant, *j*, any front V —
+exactly the union of the four palatal environments above.
+
+An equivalent four-clause enumeration, which is more verbose but
+easier to audit against the handbook tradition:
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,                   # Campbell §428
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel, # Campbell §429 (interV)
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarConsonant,  # R/T §6.4.1 rule 4 / Bülbring §494
+# (the existing _ {*j} clause is preserved separately)
+```
+
+Either form is acceptable; the negation form is more compact, the
+enumeration is more transparent.
+
+#### §17.50.4.5 Regression watchlist
+
+Lemmas to verify after the rule change (positive: must palatalise;
+negative: must remain velar):
+
+| ID    | Protoform     | Expected OE | Environment        | Outcome |
+|-------|---------------|-------------|--------------------|---------|
+| 782   | *dágaz        | dæġ         | front-V _ #        | palatal |
+| 1882  | *wégaz        | weġ         | front-V _ #        | palatal |
+| 1579  | *náglaz       | næġl        | front-V _ /l/      | palatal |
+| 940   | *séglą        | seġl        | front-V _ /l/      | palatal |
+| —     | *nígun        | nigon       | front-V _ back-V   | velar   |
+
+Method: full mismatch report after rebuild; spot-check the listed
+lemmas with `flookup`. Expected mismatch count drop: 10 → 9 (the
+*nígun → niġon* orthographic dot resolves; no other change).
+
+#### §17.50.4.6 Sources used vs not used
+
+Used (with verbatim quotations and line ranges in the dossier):
+Campbell (1959), Ringe & Taylor (2014), Hogg (1992), Sievers / Brunner
+(1965), Bülbring (1902), Luick (1914-40, chronology only).
+
+Deliberately not cited because no verifiable copy is available
+locally: Minkova (2014), Lass (1994), Penzl 1947, Wright & Wright
+(1925), Kaluza. Listed openly in the dossier so its coverage is
+honest; the consensus is robust without them.
