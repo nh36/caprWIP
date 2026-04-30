@@ -2703,9 +2703,11 @@ define NWGmcNasalSpirantLengthening [
     {*o} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    # Stressed variants (stress absorbed into length):
+    # Stressed variants:
+    # *á → *ō: stress absorbed into length (no *ṓ this branch).
+    # *é → *ḗ: stress preserved on long-vowel tier per §17.46.
     {*á} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*é} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
+    {*é} -> {*ḗ} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*í} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*ó} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative
