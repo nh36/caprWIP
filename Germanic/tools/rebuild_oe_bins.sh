@@ -10,6 +10,12 @@ run_in_container() {
   "${COMPOSE_CMD[@]}" exec backend bash -lc "$1"
 }
 
+# Clean stale sandbox bins before compiling so that any rules removed/renamed
+# in old_english_sandbox.txt do not leave orphaned bin files lying around in
+# backend/ (the host-side bind-mount of /usr/app/). The fresh compile below
+# will recreate exactly the bins defined in the current sandbox source.
+run_in_container "cd /usr/app && rm -f old_english_sandbox_after_*.bin"
+
 # Build FSTs (writes to /usr/app/*.bin)
 run_in_container "cd /usr/app && foma -f fsts/germanic.txt"
 run_in_container "cd /usr/app && foma -f fsts/old_english_sandbox.txt"
