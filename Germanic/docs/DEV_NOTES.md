@@ -43437,3 +43437,122 @@ Handbooks consulted: Campbell (§§218, 365, 373, 374, 378),
 Brunner (§§44 Anm. 7, 114b), Hogg vol. 1 (§3.3.1.3),
 Ringe-Taylor (2014: 270, 322; §6.9.6), Bülbring (§264),
 Luick (§§221, 221 Anm. 1, 221 Anm. 3, 224 Anm. 2).
+
+### §17.51.A1 Implementation — OE w-effect on *í before back vowel
+
+Following Option A of §17.51.4 (target widuwe → wuduwe, committed in
+TSV at dcc9b59e), this section implements the **A1 sub-option**:
+encode the OE-internal *wi → *wu development as a phonological rule
+in the cascade, rather than presupposing it on the PROTOFORM. The
+PROTOFORM stays `*wíduwōn` — i.e. the strict PGmc reconstruction in
+which all etymological cognates (Du. *weduwe*, Ger. *Witwe*) agree —
+and the cascade derives WS *wuduwe* by regular sound change.
+
+#### Source basis (already canvassed at §17.51.6 and in the dossier)
+
+**Bülbring §264** (verbatim, OCR'd local copy
+`docs/references/bulbring_altenglisches_elementarbuch.txt:5399–5419`):
+
+> Ums Jahr 700 (bereits im Epin. Gloss.) wird das durch u/ā-Umlaut
+> entstehende _iu_ … in allen Dialekten außer dem Kentischen durch
+> Einfluß eines vorangehenden _w_ zu _u_: **wudu** 'Holz' aus *wiudu
+> (<*widu, ahd. witu), ws. **wuduwe** 'Witwe' (angl. widwe und bei
+> Aelfric widewe ohne u-Umlaut), wuluc 'Purpurschnecke', swutol
+> 'klar', wuton 'wohlan', ws. swustur swuster Ru.¹ swuster
+> 'Schwester' (aus *swistur); ebenso mit w-Umlaut … Folgender Velar
+> stört im Ws. diese Entwicklung nicht: **wucu** 'Woche', ġecwucian
+> 'beleben', swugian 'schweigen'
+
+**Campbell §218** (`docs/references/campbell_old_english_grammar.txt:6582–6586`):
+
+> In W-S many forms have combinative u-umlaut of _i_, and the change
+> seems not to be limited, like u-umlaut, to positions before liquids
+> and labials, e.g. **wudu** wood, **wuduwe** widow, **wucu** week,
+> swutol evident, cwoudu cud, swugian be silent, (w)uton let us
+
+Bülbring's *wiudu* intermediate is faithful to the relative chronology
+(u-back-umlaut of *i → *iu, then w-effect on *iu → *u). The cascade
+does not currently model *i back-umlaut to *iu as a discrete stage
+(`OEBackMutation` at germanic.txt:2662 covers only *e and *æ), and
+adding it would have wide knock-on effects across forms with
+following *u (week / wood / wether / etc.) that would all then need
+the w-effect step too. We therefore collapse the two-step Bülbring
+chronology into a **single direct rule** *í → *ú after initial *w-
+when followed by C + u/o, which gives the same surface output for
+every attested example without introducing a transient *iu stage.
+
+#### Conditioning
+
+| | Bülbring example | initial *w_? | next C(C) | back V trigger | rule fires? |
+|---|---|---|---|---|---|
+| ✓ | wudu < *widu | yes | *d | *u | yes |
+| ✓ | wuduwe < *widuwō- | yes | *d | *u | yes |
+| ✓ | wucu < *wikō- | yes | *k | *u | yes |
+| ✓ | swustur < *swistur | yes (*sw_) | *st | *u | yes |
+| ✓ | swugian | yes (*sw_) | *g | *i (semivowel)→*a | yes (literature) |
+
+The cogset has only one OE row that satisfies both conditions
+("*w" word-initial + stressed "*í" + single non-nasal C + back
+vowel *u/*o in next syllable):
+
+| OE row | shape | C right-context | back-V right-context | matches? |
+|---|---|---|---|---|
+| *wíduwōn → wuduwe | w í d u w… | *d (single, non-nasal) | *u | **yes** ✓ |
+| *wíθrą → weþer | w í θ r ą | *θ (then *r) | *ą (back, but not *u/*o) | no — wrong V |
+| *wíndaną → windan | w í n d a… | *n (nasal) | — | no — nasal C |
+| *wíntruz → winter | w í n t r u z | *n (nasal); *u behind cluster | — | no — nasal C, cluster |
+| *wír-àldu → weorold | w í r à l d u | *r (liquid) | — | no — liquid C |
+
+So the rule fires precisely on the target lemma with no other
+ripple effects on any other OE cogset entry.
+
+#### Rule formulation
+
+```foma
+# OE combinative u-umlaut (w-effect on *í), Bülbring §264 / Campbell §218.
+# Word-initial *w + stressed *í + single non-nasal/non-liquid C
+# + *u or *o in next syllable → *w + *ú + … . Models the WS prehistoric
+# *wi → *wiu → *wu development (Bülbring's two-step chronology) as a
+# single direct change. Fires before OEMedUnstressedULowering so that
+# the medial *u remains visible in the right context, and so that
+# u-lowering's existing stressed-*u left-context exclusion
+# ([EnglishStarVocalic - [{*u}|{*ū}]]) preserves the medial *u
+# under the now-stressed *ú.
+define OEWICombinativeUUmlaut [
+    {*í} -> {*ú} || .#. {*w} _ [EnglishStarConsonant
+                                  - [EnglishStarNasal | EnglishStarLiquid]]
+                                ({*u} | {*o})
+];
+```
+
+(Stress-mark is preserved: input *í, output *ú, both with acute.)
+
+#### Cascade insertion
+
+Insert in `EnglishProtoToOE` (germanic.txt:3071–3245) immediately
+before `OEMedUnstressedULowering` (line 3138). Mirror in the trace
+composite (line 3306).
+
+#### Risk assessment
+
+- **Other-language pathways (Dutch, German, English).** The rule is
+  defined inside `EnglishProtoToOE`, not in any pan-Germanic stage,
+  so Dutch *weduwe* and German *Witwe* are untouched.
+- **Other OE *wí- forms.** All four other OE rows starting *wí- in
+  the cogset are excluded by the conditioning (table above).
+- **Unstressed *wi-.** Conditioning requires the acute-marked *í, so
+  prefix *wi-/*wī- without primary stress (none in cogset) would not
+  fire even if introduced.
+- **Documented exceptions / known problems.** None of the entries in
+  `oe_known_problems.tsv` start with *w + *i, so this rule does not
+  re-open any closed exception.
+
+#### Verification plan
+
+1. Rebuild bins: `bash Germanic/tools/rebuild_oe_bins.sh`
+2. Trace target: `python3 Germanic/tools/oe_full_trace_report.py` and
+   confirm *wíduwōn → … → wuduwe with the new rule firing at the
+   `OEWICombinativeUUmlaut` stage and the medial *u surviving u-lowering.
+3. Run mismatch report: expect count 9 → 8.
+4. Diff before/after report; confirm no new mismatches in unrelated
+   rows (especially other OE rows starting *w-).
