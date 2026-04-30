@@ -43780,3 +43780,74 @@ Once research-points 1–3 are settled with verbatim citations in
 Appendix D, the FST change implied by the consensus can be
 implemented and the widow row should fall out without the
 secondary regressions.
+
+#### §17.51.A1.3 — Research outcome and resolution
+
+The research queue in §17.51.A1.2 has been worked through in three
+dossier appendices, with the following resolved verdicts.
+
+**(a) Appendix D of `widuwe-u-preservation.md` — u-harmony research.**
+All canvassed handbooks (Campbell §373; Brunner §44 Anm. 7; Bülbring
+§264; Hogg §3.3.1.3; Luick §326; R&T) frame `wuduwe`/`munuc`/`duguþ`
+as **progressive stem-*u harmony**, NOT as an open-syllable Lautgesetz.
+Brunner §44 Anm. 7 and Luick §326.2 give the conditioning explicitly:
+unstressed `*u` lowering is blocked when the preceding stem syllable
+contains `*u` and intervenes only a single consonant. This is what
+the FST already encodes via the `OEMedUnstressedULowering` left-context
+exclusion `[EnglishStarVocalic - [{*u}|{*ū}|{*ú}]]` (germanic.txt:2298,
+re-applied in commit `c017ae97`). With that exclusion in place,
+`wuduwe` falls out correctly.
+
+**(b) Dossier `un-to-on-chronology.md` — the `-un > -on` change.**
+The change is **Lautgesetzlich in WS but with the same phonological
+blocking environment** that produces `wuduwe`. Strictly applied, the
+rule predicts `bug-un`, `sċuf-un` (stem-`u` + single C + `-un`) — exactly
+parallel to `wuduwe`. Cross-Germanic confirms preservation: OS robustly
+shows `budun`, `dribun`, `wurdun`. The earliest OE strata (Ép./VP)
+also show `-un` for class-II strong verbs. The attested lWS `bugon`
+and `sċufon` are therefore **analogical levelling** on the dominant
+`-on` ending of the other strong-verb classes (`ridon`, `drifon`,
+`bundon`, `wǣron`), not a competing Lautgesetz. No handbook labels
+the change `Analogie` in those words, but the cross-Germanic +
+chronological evidence forces that reading.
+
+**(c) Dossier `bugun-scufun-attestation.md` — corpus check.**
+Neither `bugun` nor `sċufun` is directly attested in the surviving OE
+corpus for *būgan* or *sċūfan*. Every locatable 3pl pret. token of
+*būgan*/*ābūgan*/*onbūgan*/*gebūgan* is `-on` (Chronicle, Ælfric,
+Wulfstan, *Maldon*, Gregory's *Dialogues*); every locatable 3pl pret.
+of *sċūfan*/*bescūfan*/*āscūfan* is `-on` (*Beowulf* 215, Ælfric, Cockayne's
+*Shrine*, even Northumbrian Durham Ritual `scyufon`). The early
+Anglian/Mercian texts (Épinal, Corpus, VP, Ru.1) where `-un` is
+dominant for *other* class-II verbs simply do not preserve a finite
+3pl pret. of either lexeme. So `bugun` and `sċufun` are
+**paradigm-regular projections that are type-unattested**.
+
+**Resolution.** The combined picture: usually `-un > -on` is a regular
+Lautgesetzlich change driven by unstressed weakening, but it is
+phonologically blocked by a preceding stem `*u` + single C (the same
+environment that protects `wuduwe`). The two specific lexemes
+*būgan* and *sċūfan* therefore *should* phonologically retain `-un`
+in the pret.pl., as the FST now correctly outputs. The reason the
+attested forms show `-on` is **analogical pressure from the same
+grammatical cell in other strong-verb classes** (`ridon`, `bundon`,
+…), where the `-on` outcome was regular. Because attestation of
+these two lexemes in pret.pl. begins late enough, and the analogical
+levelling appears to have been early and complete, no `-un`-form is
+preserved for either verb. The FST output `bugun`/`sċufun` is the
+philologically correct early-OE / Mercian Lautgesetz form; the lWS
+attestation is an analogical overlay.
+
+**FST policy.** Leave the cascade as it stands (Strategy 3 of
+Appendix D, committed in `c017ae97`). Do not patch around `-un > -on`
+in these two cells. Log `bugon` and `sċufon` in
+`Germanic/data/oe_known_problems.tsv` as analogical-overlay
+exceptions, citing both new dossiers and Appendix D.
+
+**Open question (deferred to §17.51.A1.4).** The cogset originally
+chose `*búgun` and `*skúbun` (3pl pret.) precisely to be
+Lautgesetzlich. Given the attestation gap surfaced here, that
+choice is worth re-examining: is there another paradigm cell of
+either verb that *is* attested **and** Lautgesetzlich, so the cogset
+row could be retargeted onto a cell whose surface form is both
+genuine and regular? See §17.51.A1.4.
