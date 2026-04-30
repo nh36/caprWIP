@@ -28,9 +28,12 @@ ALLOWED = {
 
 def strip_acute(s: str) -> str:
     """Drop COMBINING ACUTE ACCENT (and leading *) so stress-marked PROTOFORM
-    can be compared with un-stressed PROTO when they encode the same form."""
+    can be compared with un-stressed PROTO when they encode the same form.
+    Also treat COMBINING DIAERESIS as equivalent to COMBINING MACRON, since
+    PROTOFORM uses i+diaeresis (ḯ) for FST technical reasons whereas PROTO
+    uses i+macron — they encode the same long-stressed *ī in this project."""
     s = s.lstrip("*").strip()
-    decomp = unicodedata.normalize("NFD", s)
+    decomp = unicodedata.normalize("NFD", s).replace("\u0308", "\u0304")
     no_acute = "".join(c for c in decomp if c != "\u0301")
     return unicodedata.normalize("NFC", no_acute)
 
@@ -65,13 +68,17 @@ LATE_ANALOGY_MARKERS = (
     "gen.pl.", "gen. pl.", "gen pl",
     "dat.pl.", "dat. pl.", "dat pl",
     "acc.pl.", "acc. pl.", "acc pl",
+    # compact CamelCase variants used in some NOTEs (lowercased to match note_l)
+    "gensg", "datsg", "accsg", "nomsg", "instsg",
+    "genpl", "datpl", "accpl", "nompl", "instpl",
 )
 
 LEXEME_RETARGET_MARKERS = (
-    "retarget", "wrong cognate", "wrong etymon",
+    "wrong cognate", "wrong etymon",
     "switched from", "switched to", "etymon switched",
     "different etymon", "different lexeme",
-    "lexeme retarget", "wrong lemma", "different lemma",
+    "lexeme retarget", "lexeme-retarget",
+    "wrong lemma", "different lemma",
     "wrong source extraction", "source extraction was wrong",
     "wrong cognate assignment",
 )
@@ -80,11 +87,14 @@ ATTESTED_VARIANT_MARKERS = (
     "dialectal", "dialect ", "anglian", "mercian", "northumbrian",
     "kentish", "west saxon variant", "wessex variant",
     "glossary", "early gloss", "epinal", "erfurt", "corpus glossary",
+    "épinal-corpus", "epinal-corpus", "ép.corp", "ep.corp",
     "conservative form", "conservative variant",
     "alternate attestation", "alternate spelling", "variant spelling",
     "early form", "archaic form", "archaic variant",
+    "earliest attested", "earliest oe form", "earliest-attested",
     "attested as", "attested variant",
     "early attestation",
+    "late-ws reduction", "late-ws doublet",
 )
 
 
@@ -121,30 +131,54 @@ def classify(row: dict[str, str], known: dict[str, str]) -> str:
     if any(m in note_l for m in reconstructed_markers):
         return "reconstructed_oe"
 
-    # 2. Explicit retargeting markers in NOTE override the PF=P comparison.
-    #    These trigger when the cogset has been *edited* so PROTO matches the
-    #    retargeted PROTOFORM, but the row is morphologically retargeted.
-    strong_late_markers = (
-        "retarget",                     # Retargeted, retargeting, retarget
+    # 1c. High-precedence attested_variant shortcut: NOTE markers that
+    #     unambiguously identify the COUNTERPART as a dialectal / glossary /
+    #     conservative attested variant.  These are checked BEFORE the generic
+    #     "retarget" routing so that "retargeted to <earliest-attested form>"
+    #     doesn't fall through to late_analogy.  Markers chosen so they don't
+    #     occur incidentally in genuine paradigm-cell rows.
+    strong_attested_markers = (
+        "earliest attested oe form",
+        "earliest-attested",
+        "epinal-corpus glossary",
+        "ép.corp.", "ep.corp.",
+        "late-ws reduction", "late-ws doublet",
+        "early-ws m.nom",  # 2254 þrīe etc.
+    )
+    if any(m in note_l for m in strong_attested_markers):
+        return "attested_variant"
+
+    # 2. Explicit retargeting markers in NOTE.  Generic "retarget" alone is
+    #    ambiguous: it may be a paradigm-cell retarget (late_analogy), a
+    #    dialect/glossary/conservative-variant retarget (attested_variant),
+    #    or a lexeme switch (lexeme_retarget).  Check the more specific
+    #    discriminators first; "retarget" alone falls through to NOTE-marker
+    #    classification in step 4.
+    paradigm_cell_strong = (
         "paradigm-cell",                # NOTE often opens "Paradigm-cell …"
         "1/3 sg pret.", "1/3sg pret.",
         "1/3 sg. pret.",
         "obl.sg./pl. paradigm cell",
     )
-    if any(m in note_l for m in strong_late_markers):
+    if any(m in note_l for m in paradigm_cell_strong):
         return "late_analogy"
 
-    strong_early_markers = ("transponent",)  # explicit stem-class transpose
-    is_strong_early = any(m in note_l for m in strong_early_markers)
+    has_retarget = "retarget" in note_l
 
-    # 3. Compare PROTOFORM and PROTO modulo stress accent
+    # "transponent" used to force early-analogy regardless of PF=P; but
+    # in practice the one transponent row in the corpus (sparian) needs
+    # NOTE-marker fall-through, and other early_analogy rows are already
+    # caught by PF≠P.  Keeping this as a no-op tag for clarity.
+
+    # 3. Compare PROTOFORM and PROTO modulo stress accent (and diaeresis↔macron)
     pf_n = strip_acute(proto_form)
     p_n = strip_acute(proto)
-    if pf_n == p_n and not is_strong_early:
+    if pf_n == p_n and not has_retarget:
         return "regular"
 
-    # 4. They differ (or transponent forced us through) — read NOTE for a
-    #    discriminator.
+    # 4. PF/P differ (or "retarget" forced us through) — read NOTE for a
+    #    discriminator.  LATE first, then LEXEME, then ATTESTED, then default
+    #    early_analogy.
     if any(m in note_l for m in LATE_ANALOGY_MARKERS):
         return "late_analogy"
     if any(m in note_l for m in LEXEME_RETARGET_MARKERS):
