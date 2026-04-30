@@ -43290,3 +43290,53 @@ Deliberately not cited because no verifiable copy is available
 locally: Minkova (2014), Lass (1994), Penzl 1947, Wright & Wright
 (1925), Kaluza. Listed openly in the dossier so its coverage is
 honest; the consensus is robust without them.
+
+#### §17.50.4.7 Foma-syntax pitfall: `\X` does not match word boundary
+
+The recommended rule from §17.50.4.4 was first written as
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ \EnglishStarBackVowel ;
+```
+
+This is **incorrect**. In foma/xfst, term complement `\X` matches "any
+single symbol from sigma except those in X" — but `.#.` (the word
+boundary anchor) is not a sigma symbol, it is a context anchor. So the
+right context `\EnglishStarBackVowel` requires *some* sigma symbol to
+follow the *g* and is therefore **vacuous at word boundary**. Under
+this rule, *weġ* and *dæġ* would silently fail to palatalise.
+
+Verified empirically with a minimal foma test (`/tmp/test_neg2.foma`):
+
+| Input  | Left ctx | Right ctx     | `\BackV`  | `[\BackV \| .#.]` |
+|--------|----------|---------------|-----------|-------------------|
+| nig    | front    | #             | **nig** ✗ | **niG** ✓         |
+| weg    | front    | #             | **weg** ✗ | **weG** ✓         |
+| sigl   | front    | C             | siGl ✓    | siGl ✓            |
+| sige   | front    | front-V       | siGe ✓    | siGe ✓            |
+| nigon  | front    | back-V        | nigon ✓   | nigon ✓           |
+| wegas  | front    | back-V        | wegas ✓   | wegas ✓           |
+
+The correct formulation must therefore include `.#.` explicitly as an
+alternative right-context:
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ [\EnglishStarBackVowel | .#.] ;
+```
+
+Equivalent four-clause enumeration (using only positive contexts, no
+term complement) — preferred for auditability against handbook rules:
+
+```foma
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,                    # Campbell §428
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,  # Campbell §429 (interV)
+{*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarConsonant,   # R/T §6.4.1 rule 4 / Bülbring §494
+# (existing _ {*j} clause is preserved separately above)
+```
+
+For the actual cascade we adopt the **four-clause enumeration** rather
+than the `\` negation, on the grounds that (a) it parallels the
+existing four-rule statement of *k palatalisation already in
+`OEVelarPalatalization` (which does not use term complement either),
+and (b) it makes the handbook-rule provenance of each clause directly
+auditable from the source.
