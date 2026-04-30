@@ -42106,3 +42106,165 @@ context-restricted variant of B).
     → *spinnl         (OELAdjacentSyncope)
     → *spinl          (OEPreconsonantalDegemNN: *nn → *n / _ *l)
     → spinl           (surface)
+
+
+## §17.47 *wábsaz → wæfs (expected wæsp): TSV target is the late-WS doublet, not the lautgesetzlich form
+
+### The mismatch
+
+  | PROTO    | FST out | TSV target | Sub-bucket               |
+  |----------|---------|------------|--------------------------|
+  | *wábsaz  | wæfs    | wæsp       | cons_mismatch__f_vs_s__cluster |
+
+Row 2273 in `germanic-aligned-final.tsv`. Cognate-set "wasp".
+
+### FST trace (excerpt)
+
+The proto sits as `*w*á*b*s*a*z` through the early stages; AngloFrisian
+brightening produces `*wæbs` (after final-V losses and z-loss); then
+`PGmcBAllophony` makes `*b → *β` between vowel and consonant, and the
+surface stage devoices `*β → f` before voiceless `*s`:
+
+```
+... [carry]:                   *w*á*b*s*a*z
+AngloFrisianBrightening …:     (*a → *æ in stressed syll.)
+... PWGmcFinalBareALoss/…:     *w*æ*b*s
+PGmcBAllophony (proto_to_oe):  *w*æ*β*s
+Surface:                       wæfs
+```
+
+This is fully lautgesetzlich. R/T vol.1 §3.2.4 + Fulk §6.5: PGmc *b
+remained a stop word-finally and after a nasal but spirantised between
+voiced segments, surfacing as f when later devoiced before a voiceless
+obstruent. Grimm's-law failure for *bs / *ps clusters (Fulk §6.5):
+"OE wæfs (also wæsp, wæps) 'wasp' (PIE *uobhs-; cf. Lith. vapsvà
+'wasp', Avestan vawžaka- 'scorpion')."
+
+### Source audit — what is the actual attested OE form?
+
+Multiple OE forms coexist; the chronology is well-documented:
+
+**Bülbring §484 Anm.3** (Elementarbuch p.213):
+
+> "Ebenso entsteht spät-ws. *wasp* aus *wæps* 'Wespe' (<*waefs* Corp.)."
+
+— i.e. late-WS `wasp` ← `wæps` ← `wæfs`, with `wæfs` being the form
+attested in the Corpus glossary (the earliest direct attestation).
+
+**Brunner §193,3** (1965 Altenglische Grammatik):
+
+> "fs (mit stimmlosem s, § 203, Anm.) geht in *ps* über, so in *wæps*
+> Wespe (ahd. *wefsa*), *ræpsan* tadeln (ahd. *refsan*), doch finden
+> sich in den ältesten Denkmälern noch Schreibungen mit *fs* (Ep.
+> Corp. *waefs* und Part. prät. *raebsid*, *raefsed*)."
+
+— so the metathesis fs → ps is restricted to a handful of words
+(`wæps`, `ræpsan` 'reprove', plus a couple of others) and the
+"ältesten Denkmäler" (Épinal-Corpus glossaries) have unmetathesised
+`waefs`.
+
+**Brunner §204,3**:
+
+> "Die Gruppe *sp* wird im späteren Westsächsischen zu *ps*
+> metathesiert, z. B. *æps* für *æsp(e)* Espe, *cops* für *cosp*
+> Fessel, *wlips* für *wlisp* stammelnd, *cirpsian* kräuseln, dazu
+> *cyrps* kraus (Ælfric). Umgekehrt wird *ps* zu *sp* in *wasp* aus
+> *wæps* (§ 193, 3) Wespe."
+
+— and §204,3 Anm. 1: "Da die Metathese auf ein kleines Mundartgebiet
+beschränkt ist, gehen die me. und ne. Formen teils auf die Formen mit
+Metathesis, teils auf solche ohne diese zurück (z. B. ne. *wasp* aber
+*asp*)." So: ps→sp metathesis to give `wasp` is restricted to a small
+late-WS dialect area.
+
+**Clark Hall**:
+
+> "wæps m. 'wasp,' Æ. [L. vespa]"
+
+with cross-references "wæfs wæps" and "wæsp = wæps". Hall's primary
+lemma is `wæps`; both `wæfs` and `wæsp` redirect to it.
+
+**Fulk §6.5**: lists `wæfs` first among the three forms.
+
+**Bülbring p.14957**: "wæps, -fs, -sp 484 An." — explicitly enumerates
+all three variants under the same lemma, citing his §484 Anm.
+
+### Three competing OE forms, three chronological layers
+
+  | Form  | Stage         | How derived                         | Source     |
+  |-------|---------------|-------------------------------------|------------|
+  | wæfs  | earliest OE   | regular sound change from *wabsa-   | Ep./Corp. glossaries |
+  | wæps  | mid OE        | wæfs > wæps via fs→ps metathesis    | Brunner §193,3 |
+  | wasp  | late WS       | wæps > wasp via ps→sp metathesis    | Brunner §204,3 |
+  | wæsp  | (uncommon)    | dictionary-form spelling variant    | Hall xref |
+
+Both fs→ps and ps→sp are **lexically and dialectally restricted**.
+Neither is general OE phonology; each affects a small wordlist
+(Brunner names the words explicitly in each section).
+
+### Current TSV target
+
+The TSV currently has `wæsp` as COUNTERPART. This:
+
+  - is not the form Hall lemmatises (Hall's lemma is `wæps`, with
+    `wæsp = wæps` as a cross-reference);
+  - is the spelling that requires BOTH metatheses to have applied
+    (fs→ps→sp, but with the final step incompletely / stopped at sp
+    rather than continuing to ModE wasp);
+  - is not what the lautgesetzlich cascade produces (`wæfs`).
+
+### Three options
+
+**Option A — Retarget TSV `wæsp → wæfs` (recommended)**
+
+  - Change COUNTERPART from `wæsp` to `wæfs`; TOKENS from `w æ s p`
+    to `w æ f s`.
+  - Justification: `wæfs` is the directly attested earliest OE form
+    (Épinal–Corpus glossaries; Bülbring §484 Anm.3, Fulk §6.5,
+    Brunner §193,3 — all citing this exact form).
+  - The FST already produces `wæfs`; mismatch closes immediately.
+  - Add a NOTE explaining the chronology: `wæfs > wæps > (late-WS)
+    wasp` are successive doublets; we target the earliest.
+  - Same playbook as §17.45 (`spindle → spinl`): when the modern
+    headword reflects a late-OE/post-OE form, retarget to the
+    lautgesetzlich early-OE form.
+
+**Option B — Add fs→ps and ps→sp metathesis rules**
+
+  - Implement `OEFsPsMetathesis` (`{*f}{*s} → {*p}{*s}`) and
+    `OEPsSpMetathesis` (`{*p}{*s} → {*s}{*p}`), each restricted by
+    lexical context (small wordlist).
+  - Risk of regression: high. fs→ps would also affect `*drīfst`-type
+    inflected forms unless explicitly blocked (Brunner §193,3 Anm.2:
+    "Der Übergang ist in Verbalformen wie *drīfst* … nicht
+    eingetreten, jedenfalls unter dem Zwang der übrigen Flexions-
+    formen"). ps→sp would interact with `*cosp/cops`, `*æsp/æps`,
+    and other minimally-attested word-pairs.
+  - Two metatheses for one TSV row is poor cost-benefit when the
+    intermediate (`wæfs`) is itself a perfectly valid OE attestation.
+
+**Option C — Documented exception**
+
+  - Add to `oe_known_problems.tsv` with rationale "late-WS double
+    metathesis (fs→ps→sp), lexically restricted; no general rule."
+  - Less honest than Option A: we have a clean lautgesetzlich
+    derivation that ends at an attested OE form. There's nothing
+    to "except".
+
+### Recommendation
+
+**Option A**. Same logic as §17.45 (spindle → spinl) and §17.46
+(swīną for the bare paradigm cell): target the form that is
+(a) directly attested, (b) lautgesetzlich-derivable, and
+(c) chronologically earliest. The late-WS metathesis doublets
+`wæps`/`wasp`/`wæsp` are real OE forms but require lexically-
+restricted late rules whose implementation cost vastly exceeds
+the value of capturing them via the cascade.
+
+### Verification plan
+
+1. Edit row 2273: TOKENS `w æ f s`, COUNTERPART `wæfs`, append NOTE
+   citing Bülbring §484 Anm.3 + Brunner §193,3 + Fulk §6.5.
+2. (No FST change needed.)
+3. `python3 Germanic/tools/oe_mismatch_report.py` → expect 12 → 11.
+4. The `cons_mismatch__f_vs_s__cluster` bucket should be empty.
