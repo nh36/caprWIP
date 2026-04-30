@@ -2147,13 +2147,20 @@ define NWGmcMnDissimilation [
 # conflating with *ā < *ai monophthongization (which was NOT fronted; R/T §6.1.2:
 # "fronting of *ā must have preceded monophthongization of *ai").
 define NWGmcLongELowering [
-    {*ē} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal]
+    {*ē} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal],
+    # §17.46: stressed long *ḗ undergoes the same lowering. Stress is dropped
+    # on output since we are not plumbing *ǣ́ this branch (no downstream rule
+    # consumes stress on long *ǣ).
+    {*ḗ} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal]
 ];
 
 # R/T vol.2 §5.1.2: Before nasals, *ē₁ → *ā → nasalized/rounded *ō.
 # *mēnōθ- → *mānōθ- → mōnaþ; *spēnuz → *spānuz → spōn.
 define NWGmcLongENasalRounding [
-    {*ē} -> {*ō} || _ EnglishStarNasal
+    {*ē} -> {*ō} || _ EnglishStarNasal,
+    # §17.46: stressed long *ḗ rounds before nasals identically. Stress is
+    # dropped on output (no *ṓ this branch).
+    {*ḗ} -> {*ō} || _ EnglishStarNasal
 ];
 
 define OEWeakTailNasalLoss [
