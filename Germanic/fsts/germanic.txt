@@ -1566,7 +1566,7 @@ define PGmcStarStressedVowel [
     # *xáubudą's medial *u), but in those cases they appear in the
     # RIGHT context of R2's pattern, not the left. See DEV_NOTES
     # §17.41 implementation log task 7.
-    {*ā} | {*ē} | {*ī} | {*ō} | {*ū} |
+    {*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ū} |
     # Stressed diphthongs (the *ái diphthong is monophthongized by
     # PWGmcAiMonophthongization before R2 fires, so it is not
     # included here; *áu, *éu, *íu may still be present).
