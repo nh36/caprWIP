@@ -1,10 +1,10 @@
-Total mismatches: 10
+Total mismatches: 8
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
   Phonology (core buckets):    0
-  Phonology (other buckets):   2
+  Phonology (other buckets):   0
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
@@ -30,7 +30,6 @@ Total mismatches: 10
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 1
 --- final_n_missing sub-buckets ---
-  final_n_missing__expected_on: 2
 --- inflectional_suffix_extra sub-buckets ---
 --- consonant_mismatch sub-buckets ---
 --- suffix_form sub-buckets ---
@@ -55,10 +54,6 @@ final_vowel_missing__weak_noun_like (1):
   >> ISSUE: Target ends in -e/-a (weak noun), FST has bare stem
   >> LIKELY: Proto is strong form, target is weak; or apocope over-applied
   >> ACTION: Check morphological class alignment in TSV
-
-final_n_missing__expected_on (2):
-  *báug -> bēag (expected bugon)
-  *skáub -> sċēaf (expected sċufon)
 
 === A-FRONTING AUDIT ===
 --- fronting_missing__afb ---

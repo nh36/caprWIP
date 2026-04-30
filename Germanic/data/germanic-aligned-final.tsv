@@ -116,7 +116,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1297	b əʊ	*báugijaną	b əʊ - - - - ( - - )	bəʊ	bow	356	English					bow	*báugijaną	27
 1961	b ī e ġ a n	*báugijaną	b əʊ - - - - ( - - )	bəʊ	bīeġan	356	Old_English	Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-				bow	*báugijaną	27
 929	b əʊ	*béuganą	b əʊ - - - ( - - )	bəʊ	bow	255	English					bow	*béuganą	27
-1962	b u g o n	*báug	b əʊ - - - ( - - )	bəʊ	bugon	255	Old_English	Past 3pl. Infinitive būgan has analogical ū (Campbell §740); past 3pl bugon is lautgesetzlich from *bugun.				bow	*báug	27
+1962	b ē a g	*báug	b əʊ - - - ( - - )	bəʊ	bēag	255	Old_English	1/3 sg pret. of *būgan 'to bow, bend' (class II strong). Retargeted from 3pl pret. *búgun → bugon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossiers/bugan-scufan-paradigm-cell-review.md: 1/3 sg pret. is genuinely Lautgesetzlich (single rule *au > ēa, Campbell §136) and universally attested (Beowulf 2567, 2569, 2629; Genesis B; Ælfric). Note that the present infinitive būgan has analogical ū back-formed from this very sg.-pret. stem (Campbell §740).				bow	*báug	27
 1419	b əʊ	*bugô	b əʊ - - -	bəʊ	bow	388	English					bow	*bugô	27
 1963	b o g a	*búgô	b əʊ - - -	bəʊ	boga	388	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bow	*bugô	27
 1296	b ɔy ɡ ə n	*báugijaną	b ɔy ɡ - ə n ( - - )	bɔyɡən	beugen	356	German			C V c - v c		bow	*báugijaną	27
@@ -982,7 +982,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 589	ʃ ʊ l t ə r	*skuldrō	ʃ - ʊ l t ə r ( - )	ʃʊltər	Schulter	162	German					shoulder	*skuldrō	224
 1442	s x œy v ə	*skéubaną	s x œy v ə - ( - - )	sxœyvə	schuiven	394	Dutch					shove	*skéubaną	225
 1441	ʃ ʌ v	*skéubaną	ʃ - ʌ v - - ( - - )	ʃʌv	shove	394	English					shove	*skéubaną	225
-2184	s ċ u f o n	*skáub	ʃ - ʌ v - - ( - - )	ʃʌv	sċufon	394	Old_English	Past 3pl. Infinitive sċūfan has analogical ū (Campbell §740); past 3pl sċufon is lautgesetzlich from *skubun.				shove	*skáub	225
+2184	s ċ ē a f	*skáub	ʃ - ʌ v - - ( - - )	ʃʌv	sċēaf	394	Old_English	1/3 sg pret. of *sċūfan 'to shove, push' (class II strong). Retargeted from 3pl pret. *skúbun → sċufon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossiers/bugan-scufan-paradigm-cell-review.md: 1/3 sg pret. is genuinely Lautgesetzlich (rules *au > ēa, *sk- > sċ-, *-b- final devoicing > -f) and corpus-attested (Bosworth-Toller s.v. sċūfan; Ælfric Catholic Homilies). The present infinitive sċūfan has analogical ū back-formed from this sg.-pret. stem (Campbell §740).				shove	*skáub	225
 1440	ʃ iː b ə n	*skéubaną	ʃ - iː b ə n ( - - )	ʃiːbən	schieben	394	German					shove	*skéubaną	225
 723	s x ɔ f ə l	*skuflō	s x ɔ f ə l ( - )	sxɔfəl	schoffel	198	Dutch					shovel	*skuflō	226
 722	ʃ ʌ v ə l	*skuflō	ʃ - ʌ v ə l ( - )	ʃʌvḷ	shovel	198	English					shovel	*skuflō	226
