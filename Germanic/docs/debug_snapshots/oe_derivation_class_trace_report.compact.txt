@@ -12,6 +12,8 @@ ProtoInput: *nḗdrōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -40,8 +42,12 @@ ProtoInput: *bákaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -68,8 +74,12 @@ ProtoInput: *bérgą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -93,8 +103,12 @@ ProtoInput: *bástą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -118,8 +132,12 @@ ProtoInput: *báθą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -144,6 +162,8 @@ OUTPUTS: beard
 ProtoInput: *bárdaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -171,6 +191,8 @@ OUTPUTS: befer
 ProtoInput: *bébruz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -200,6 +222,8 @@ ProtoInput: *bōkō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -226,8 +250,12 @@ ProtoInput: *bigínnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -256,8 +284,12 @@ ProtoInput: *galáubijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -292,6 +324,8 @@ ProtoInput: *bálgiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -324,6 +358,8 @@ ProtoInput: *bḗrō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -350,8 +386,12 @@ ProtoInput: *bíndaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -376,6 +416,8 @@ NOTE: Kroonen *burdi- f. > OE (ġe)byrd; using simplex without ge-
 ProtoInput: *búrdiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -403,8 +445,12 @@ ProtoInput: *blōdą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -426,6 +472,8 @@ OUTPUTS: bord
 ProtoInput: *búrdą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -457,6 +505,8 @@ PWGmcAiMonophthongization: *bāną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -478,12 +528,16 @@ ProtoInput: *bōkz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
 PGmcFinalZDeletion: *bōk
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -501,6 +555,8 @@ OUTPUTS: borian
 ProtoInput: *búrōjaną
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -533,6 +589,8 @@ ProtoInput: *bōsmaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -559,12 +617,16 @@ ProtoInput: *bō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
 NWGmcStressedMonosyllableORaising: *bū
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -582,6 +644,8 @@ OUTPUTS: bōg
 ProtoInput: *bōguz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -609,8 +673,12 @@ ProtoInput: *báugijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -643,6 +711,8 @@ ProtoInput: *búgô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -668,8 +738,12 @@ ProtoInput: *būrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -692,8 +766,12 @@ ProtoInput: *bráudą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -718,8 +796,12 @@ ProtoInput: *brékaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -744,6 +826,8 @@ NOTE: Proto: *brekăną→brōkiz (Kroonen *brōk- f. 'breeches', nom.pl.; i-uml
 ProtoInput: *brōkiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -774,6 +858,8 @@ ProtoInput: *brūdiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -800,8 +886,12 @@ ProtoInput: *brínganą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -826,8 +916,12 @@ ProtoInput: *brūkaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -852,8 +946,12 @@ ProtoInput: *bréstaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -879,6 +977,8 @@ NOTE: WS palatalized initial (R/T §6.4.1 rule 1: k before front vowel)
 ProtoInput: *kálbaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -911,8 +1011,12 @@ ProtoInput: *kéwwaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -942,8 +1046,12 @@ ProtoInput: *klímbaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -968,6 +1076,8 @@ NOTE: Garment word: OE rocc 'tunic' (brēostrocc, pistolrocc etc.), from PGmc *r
 ProtoInput: *rúkkaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -995,6 +1105,8 @@ ProtoInput: *kámbaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1021,6 +1133,8 @@ ProtoInput: *kúrną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1045,6 +1159,8 @@ OUTPUTS: cropp
 ProtoInput: *krúppaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1072,6 +1188,8 @@ ProtoInput: *dálaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1097,6 +1215,8 @@ OUTPUTS: dæġ
 ProtoInput: *dágaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1155,6 +1275,8 @@ ProtoInput: *dḗdiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1182,8 +1304,12 @@ Rhotacism: *déurą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1206,6 +1332,8 @@ OUTPUTS: dēaw
 ProtoInput: *dáwwō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1234,8 +1362,12 @@ ProtoInput: *dōną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1258,6 +1390,8 @@ NOTE: OE has two reflexes: neut. a-stem *dor* (< *durą, regular u-lowering) and
 ProtoInput: *dúrą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1311,6 +1445,8 @@ GmSimplification: *dráumaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1337,6 +1473,8 @@ OUTPUTS: drenċ
 ProtoInput: *dránkiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1367,8 +1505,12 @@ ProtoInput: *drínkaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1393,8 +1535,12 @@ ProtoInput: *drḯbaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1419,6 +1565,8 @@ OUTPUTS: eorþe
 ProtoInput: *érθōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1449,8 +1597,12 @@ ProtoInput: *étaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1474,6 +1626,8 @@ OUTPUTS: ǣl
 ProtoInput: *ḗlaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1501,8 +1655,12 @@ ProtoInput: *fállaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1530,8 +1688,12 @@ ProtoInput: *fáraną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1557,6 +1719,8 @@ OUTPUTS: fæder
 ProtoInput: *fádēr
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1585,8 +1749,12 @@ ProtoInput: *féxu
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1613,8 +1781,12 @@ ProtoInput: *féllą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1637,6 +1809,8 @@ NOTE: Proto: oblique *farnăn→farnăz (m. a-stem nom.sg.; Kroonen)
 ProtoInput: *fárnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1692,8 +1866,12 @@ ProtoInput: *féxtaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1721,6 +1899,8 @@ ProtoInput: *fíngraz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1746,6 +1926,8 @@ OUTPUTS: fisċ
 ProtoInput: *fískaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1773,6 +1955,8 @@ OUTPUTS: fȳst
 ProtoInput: *fúnxstiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1803,8 +1987,12 @@ ProtoInput: *fláxsą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1829,6 +2017,8 @@ OUTPUTS: flēah
 ProtoInput: *fláuxz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1858,8 +2048,12 @@ ProtoInput: *fléuxaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1916,6 +2110,8 @@ ProtoInput: *flōduz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -1942,8 +2138,12 @@ ProtoInput: *fléuganą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -1968,6 +2168,8 @@ OUTPUTS: fola
 ProtoInput: *fúlô
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -1994,8 +2196,12 @@ ProtoInput: *fōdrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2023,6 +2229,8 @@ PWGmcLThVoicing: *fáldaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -2047,6 +2255,8 @@ OUTPUTS: folc
 ProtoInput: *fúlką
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2074,8 +2284,12 @@ ProtoInput: *léusaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2106,6 +2320,8 @@ PWGmcCoronalWAssimilation: *féwwar
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -2129,6 +2345,8 @@ OUTPUTS: fox
 ProtoInput: *fúxsaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2157,8 +2375,12 @@ ProtoInput: *fréusaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2210,6 +2432,8 @@ ProtoInput: *frústą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -2236,11 +2460,17 @@ ProtoInput: *fúrx
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -2261,6 +2491,8 @@ NOTE: PGmc *gangaz is a-stem noun > OE gang; cf. Dutch gang, German Gang
 ProtoInput: *gángaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2313,6 +2545,8 @@ ProtoInput: *géftiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -2343,8 +2577,12 @@ ProtoInput: *gébaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2373,6 +2611,8 @@ OUTPUTS: god
 ProtoInput: *gúdą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2426,6 +2666,8 @@ ProtoInput: *gánsz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -2434,6 +2676,8 @@ NWGmcNasalSpirantLengthening: *gōns
 NWGmcNasalSpirantLoss: *gōs
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -2452,8 +2696,12 @@ ProtoInput: *grásą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2478,8 +2726,12 @@ ProtoInput: *grábaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2507,8 +2759,12 @@ ProtoInput: *grḯpaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2532,6 +2788,8 @@ OUTPUTS: grund
 ProtoInput: *grúnduz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2558,6 +2816,8 @@ NOTE: R/T vol.2 3857: PGmc *gastiz > WS OE giest
 ProtoInput: *gástiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2590,8 +2850,12 @@ ProtoInput: *xáglą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2620,6 +2884,8 @@ ProtoInput: *xḗrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -2647,6 +2913,8 @@ OUTPUTS: heall
 ProtoInput: *xállō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2678,6 +2946,8 @@ ProtoInput: *xánduz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -2706,8 +2976,12 @@ ProtoInput: *xándlōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2737,6 +3011,8 @@ OUTPUTS: hearm
 ProtoInput: *xármaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2768,6 +3044,8 @@ NOTE: R/T 14594-14603: hærfest is Anglian loan (Bammesberger 1997); WS hierfest
 ProtoInput: *xárbistuz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2802,8 +3080,12 @@ ProtoInput: *xágô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2830,6 +3112,8 @@ OUTPUTS: hafoc
 ProtoInput: *xábukaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2863,8 +3147,12 @@ ProtoInput: *xáwwją
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2893,6 +3181,8 @@ OUTPUTS: hæsl
 ProtoInput: *xáslaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -2923,8 +3213,12 @@ ProtoInput: *xáubudą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -2958,6 +3252,8 @@ PWGmcAiMonophthongization: *xālijaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -2985,6 +3281,8 @@ OUTPUTS: heorte
 ProtoInput: *xértōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3015,6 +3313,8 @@ OUTPUTS: heorþ
 ProtoInput: *xérθaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3109,6 +3409,8 @@ ProtoInput: *xélmaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -3138,8 +3440,12 @@ ProtoInput: *xélpaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3166,6 +3472,8 @@ OUTPUTS: help
 ProtoInput: *xélpō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3194,6 +3502,8 @@ OUTPUTS: heord
 ProtoInput: *xérdō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3224,8 +3534,12 @@ ProtoInput: *xáwwaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3255,6 +3569,8 @@ NOTE: Kroonen *hindō- f. 'hind (deer)' → OE hind f.; hindan 'from behind' is 
 ProtoInput: *xéndjō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3287,6 +3603,8 @@ Rhotacism: *xúrdą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -3315,8 +3633,12 @@ ProtoInput: *xáldaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3374,8 +3696,12 @@ ProtoInput: *xúnagą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3404,6 +3730,8 @@ ProtoInput: *xōdaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -3430,6 +3758,8 @@ OUTPUTS: hōf
 ProtoInput: *xōfaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3459,6 +3789,8 @@ ProtoInput: *xúrną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -3485,6 +3817,8 @@ OUTPUTS: hund
 ProtoInput: *xúndaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3513,8 +3847,12 @@ ProtoInput: *knédaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3539,8 +3877,12 @@ ProtoInput: *knéwą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3564,8 +3906,12 @@ ProtoInput: *lándą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3591,6 +3937,8 @@ ProtoInput: *láistijaną
 PWGmcAiMonophthongization: *lāstijaną
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3623,6 +3971,8 @@ PWGmcAiMonophthongization: *lādijaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -3649,8 +3999,12 @@ ProtoInput: *láubą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3678,8 +4032,12 @@ Rhotacism: *lírnōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3709,8 +4067,12 @@ ProtoInput: *léθrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3735,6 +4097,8 @@ OUTPUTS: lēac
 ProtoInput: *láukaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3763,6 +4127,8 @@ ProtoInput: *lḗtaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -3790,8 +4156,12 @@ ProtoInput: *líkkōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3821,8 +4191,12 @@ ProtoInput: *xlídą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3847,8 +4221,12 @@ ProtoInput: *lḯbą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3873,8 +4251,12 @@ ProtoInput: *léuxtijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3905,8 +4287,12 @@ ProtoInput: *lḯmą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -3929,6 +4315,8 @@ NOTE: Kroonen *lindō- f. 'linden/lime tree' → OE lind f.; linden is not stand
 ProtoInput: *líndō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3954,6 +4342,8 @@ OUTPUTS: līne
 ProtoInput: *lḯnōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -3981,6 +4371,8 @@ ProtoInput: *lḯstōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4006,6 +4398,8 @@ OUTPUTS: lifer
 ProtoInput: *líbrō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4062,6 +4456,8 @@ ProtoInput: *lúką
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4086,6 +4482,8 @@ OUTPUTS: locc
 ProtoInput: *lúkkaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4113,12 +4511,16 @@ ProtoInput: *lūsz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
 PGmcFinalZDeletion: *lūs
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -4136,6 +4538,8 @@ OUTPUTS: lust
 ProtoInput: *lústuz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4161,6 +4565,8 @@ OUTPUTS: lēag
 ProtoInput: *láugō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4189,8 +4595,12 @@ ProtoInput: *mákōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4221,6 +4631,8 @@ ProtoInput: *máltaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4249,6 +4661,8 @@ ProtoInput: *márkō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4276,6 +4690,8 @@ ProtoInput: *mástaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4301,6 +4717,8 @@ OUTPUTS: mǣl
 ProtoInput: *mḗlą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4331,6 +4749,8 @@ PWGmcAiMonophthongization: *mānijaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -4356,6 +4776,8 @@ OUTPUTS: miht
 ProtoInput: *máxtiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4389,6 +4811,8 @@ ProtoInput: *mélukz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4414,6 +4838,8 @@ OUTPUTS: mōnaþ
 ProtoInput: *mḗnōθz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4443,6 +4869,8 @@ ProtoInput: *mōdaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4469,6 +4897,8 @@ ProtoInput: *mōdēr
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4494,6 +4924,8 @@ OUTPUTS: næġl
 ProtoInput: *náglaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4524,8 +4956,12 @@ ProtoInput: *námô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4547,6 +4983,8 @@ OUTPUTS: nafu
 ProtoInput: *nábō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4575,6 +5013,8 @@ ProtoInput: *náudiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4602,6 +5042,8 @@ OUTPUTS: nest
 ProtoInput: *nístą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4633,6 +5075,8 @@ PWGmcJGemination: *náttją
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -4656,6 +5100,8 @@ OUTPUTS: netle
 ProtoInput: *nátilōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4687,6 +5133,8 @@ ProtoInput: *márōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4715,8 +5163,12 @@ ProtoInput: *nígun
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4765,6 +5217,8 @@ ProtoInput: *úfnaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4790,6 +5244,8 @@ OUTPUTS: oxa
 ProtoInput: *úxsô
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4817,8 +5273,12 @@ ProtoInput: *régną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4844,8 +5304,12 @@ ProtoInput: *régnabùgô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4873,6 +5337,8 @@ OUTPUTS: hræfn
 ProtoInput: *xrábnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4903,6 +5369,8 @@ ProtoInput: *rḗdaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -4930,8 +5398,12 @@ ProtoInput: *rḯdaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -4955,6 +5427,8 @@ OUTPUTS: rind
 ProtoInput: *ríndō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -4981,6 +5455,8 @@ ProtoInput: *rōdō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5006,8 +5482,12 @@ ProtoInput: *rūmą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5034,6 +5514,8 @@ PWGmcAiMonophthongization: *rāpą
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -5054,6 +5536,8 @@ OUTPUTS: rōþor
 ProtoInput: *rōθraz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5083,8 +5567,12 @@ ProtoInput: *rínnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5108,6 +5596,8 @@ OUTPUTS: ryġe
 ProtoInput: *rúgiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5138,8 +5628,12 @@ ProtoInput: *séglą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5164,6 +5658,8 @@ OUTPUTS: sacu
 ProtoInput: *sákō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5191,8 +5687,12 @@ ProtoInput: *sáltą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5216,6 +5716,8 @@ OUTPUTS: sealf
 ProtoInput: *sálbō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5245,6 +5747,8 @@ ProtoInput: *sáumaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5272,8 +5776,12 @@ ProtoInput: *sōkijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5304,8 +5812,12 @@ ProtoInput: *sándijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5337,6 +5849,8 @@ PWGmcJGemination: *sáttjaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -5363,8 +5877,12 @@ ProtoInput: *sébun
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5389,8 +5907,12 @@ ProtoInput: *skáftą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5416,6 +5938,8 @@ OUTPUTS: sċamu
 ProtoInput: *skámō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5443,8 +5967,12 @@ ProtoInput: *skéraną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5504,6 +6032,8 @@ ProtoInput: *skḗpą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5531,6 +6061,8 @@ OUTPUTS: sċield
 ProtoInput: *skélduz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5561,6 +6093,8 @@ ProtoInput: *skíllingaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5590,8 +6124,12 @@ ProtoInput: *skḯnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5617,6 +6155,8 @@ OUTPUTS: sċofl
 ProtoInput: *skúflō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5647,8 +6187,12 @@ ProtoInput: *skáwōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5680,6 +6224,8 @@ ProtoInput: *skūrō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5707,6 +6253,8 @@ ProtoInput: *sḯdōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5733,8 +6281,12 @@ ProtoInput: *síngwaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5760,8 +6312,12 @@ ProtoInput: *sángijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5791,6 +6347,8 @@ OUTPUTS: swester
 ProtoInput: *swéstēr
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -5822,6 +6380,8 @@ PWGmcJGemination: *séttjaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -5847,8 +6407,12 @@ ProtoInput: *séxs
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5873,8 +6437,12 @@ ProtoInput: *sláxaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5904,6 +6472,8 @@ ProtoInput: *slḗpaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -5931,8 +6501,12 @@ ProtoInput: *slḯmą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -5956,8 +6530,12 @@ ProtoInput: *smérwijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6011,6 +6589,8 @@ OUTPUTS: sorg
 ProtoInput: *súrgō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6067,8 +6647,12 @@ ProtoInput: *spánnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6094,8 +6678,12 @@ ProtoInput: *spárrô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6120,8 +6708,12 @@ ProtoInput: *spéru
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6144,8 +6736,12 @@ ProtoInput: *spínnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6169,6 +6765,8 @@ OUTPUTS: spinl
 ProtoInput: *spénnilō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6197,6 +6795,8 @@ OUTPUTS: spōn
 ProtoInput: *spḗnuz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6228,6 +6828,8 @@ PWGmcAiMonophthongization: *sprādijaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -6254,6 +6856,8 @@ ProtoInput: *spúrô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6279,8 +6883,12 @@ ProtoInput: *stúrtijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6308,8 +6916,12 @@ ProtoInput: *stérbaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6336,8 +6948,12 @@ ProtoInput: *stélaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6363,8 +6979,12 @@ ProtoInput: *stéllijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6391,6 +7011,8 @@ OUTPUTS: stocc
 ProtoInput: *stúkkaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6444,6 +7066,8 @@ ProtoInput: *stōlaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6468,6 +7092,8 @@ OUTPUTS: storc
 ProtoInput: *stúrkaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6495,6 +7121,8 @@ ProtoInput: *stúrmaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6521,8 +7149,12 @@ ProtoInput: *stráwą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6545,6 +7177,8 @@ OUTPUTS: strēam
 ProtoInput: *stráumaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6573,8 +7207,12 @@ ProtoInput: *strákkijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6606,6 +7244,8 @@ ProtoInput: *strángiz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6635,8 +7275,12 @@ ProtoInput: *stōdą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6659,6 +7303,8 @@ NOTE: Note: proto corrected *sumerăz→sumarăz (Kroonen *sumara-, R/T *sumaraz
 ProtoInput: *súmaraz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6687,6 +7333,8 @@ ProtoInput: *súnnōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6714,8 +7362,12 @@ ProtoInput: *súndrōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6744,8 +7396,12 @@ ProtoInput: *sūpaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6770,6 +7426,8 @@ NOTE: Kroonen *swalwōn- f. 'swallow (bird)' → OE swealwe f.; swelgan is the v
 ProtoInput: *swálwōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6799,8 +7457,12 @@ ProtoInput: *swéllaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6825,8 +7487,12 @@ ProtoInput: *swímmaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6852,8 +7518,12 @@ ProtoInput: *swḯną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6876,8 +7546,12 @@ ProtoInput: *swérdą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -6901,6 +7575,8 @@ ProtoInput: *táugmaz
 GmSimplification: *táumaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6928,6 +7604,8 @@ OUTPUTS: þeġn
 ProtoInput: *θégnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -6957,6 +7635,8 @@ ProtoInput: *θánkaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -6984,8 +7664,12 @@ ProtoInput: *θáką
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7010,6 +7694,8 @@ OUTPUTS: þēof
 ProtoInput: *θéubaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7040,8 +7726,12 @@ ProtoInput: *θíngą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7067,8 +7757,12 @@ ProtoInput: *θánkijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7099,6 +7793,8 @@ ProtoInput: *θúrstuz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -7126,6 +7822,8 @@ NOTE: Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurn
 ProtoInput: *θúrnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7155,8 +7853,12 @@ ProtoInput: *θréskaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7183,6 +7885,8 @@ OUTPUTS: þunor
 ProtoInput: *θúnraz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7212,8 +7916,12 @@ ProtoInput: *tíkkô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7236,6 +7944,8 @@ NOTE: Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 
 ProtoInput: *tḯdiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7296,6 +8006,8 @@ PWGmcAiMonophthongization: *tākną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -7316,6 +8028,8 @@ OUTPUTS: tang
 ProtoInput: *tángō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7341,6 +8055,8 @@ OUTPUTS: tunge
 ProtoInput: *túngōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7369,8 +8085,12 @@ ProtoInput: *tūną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7393,8 +8113,12 @@ ProtoInput: *trédaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7418,6 +8142,8 @@ OUTPUTS: trog
 ProtoInput: *trúgą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7445,8 +8171,12 @@ ProtoInput: *wádaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7472,6 +8202,8 @@ OUTPUTS: wæġn
 ProtoInput: *wágnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7502,8 +8234,12 @@ ProtoInput: *wárpą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7529,8 +8265,12 @@ ProtoInput: *wérpaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7555,6 +8295,8 @@ OUTPUTS: wearte
 ProtoInput: *wártōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7585,8 +8327,12 @@ ProtoInput: *wáskaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7613,8 +8359,12 @@ ProtoInput: *wáxsą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7641,8 +8391,12 @@ ProtoInput: *wáxsaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7670,6 +8424,8 @@ NOTE: Kroonen *wega- m. 'way, road' → OE weġ m.; wē is not attested as OE 'w
 ProtoInput: *wégaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7700,6 +8456,8 @@ ProtoInput: *wḗpną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -7724,6 +8482,8 @@ OUTPUTS: wesle
 ProtoInput: *wéslōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7751,8 +8511,12 @@ ProtoInput: *wédrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7776,8 +8540,12 @@ ProtoInput: *wébaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7803,8 +8571,12 @@ ProtoInput: *wéstanē
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7828,6 +8600,8 @@ OUTPUTS: weþer
 ProtoInput: *wíθrą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7857,6 +8631,8 @@ ProtoInput: *xwḯlō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -7883,6 +8659,8 @@ OUTPUTS: hōre
 ProtoInput: *xōrōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -7912,6 +8690,8 @@ ProtoInput: *wíduwōn
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -7939,8 +8719,12 @@ ProtoInput: *wáldaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7967,8 +8751,12 @@ ProtoInput: *wḯbą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -7991,6 +8779,8 @@ OUTPUTS: wiht
 ProtoInput: *wéxtiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8026,6 +8816,8 @@ PWGmcJGemination: *wélljaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -8056,6 +8848,8 @@ PWGmcJGemination: *wélljô
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -8080,8 +8874,12 @@ ProtoInput: *wíndaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8105,6 +8903,8 @@ OUTPUTS: winter
 ProtoInput: *wíntruz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8161,8 +8961,12 @@ ProtoInput: *wúndrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8185,6 +8989,8 @@ OUTPUTS: word
 ProtoInput: *wúrdą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8210,6 +9016,8 @@ OUTPUTS: wyrm
 ProtoInput: *wúrmiz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8237,8 +9045,12 @@ ProtoInput: *wrínganą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8264,8 +9076,12 @@ ProtoInput: *gárną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8292,6 +9108,8 @@ OUTPUTS: ġēar
 ProtoInput: *jḗrą
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8320,6 +9138,8 @@ OUTPUTS: ġeoc
 ProtoInput: *júką
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8353,6 +9173,8 @@ ProtoInput: *búttmaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -8380,8 +9202,12 @@ ProtoInput: *brándas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8405,8 +9231,12 @@ ProtoInput: *bréustą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8430,6 +9260,8 @@ NOTE: Kroonen: *kraftu- m. 'strength' (u-stem); Orel: *kraftiz ~ *kraftuz. OE cr
 ProtoInput: *kráftaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8458,6 +9290,8 @@ ProtoInput: *déliz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -8485,8 +9319,12 @@ ProtoInput: *fástijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8514,6 +9352,8 @@ OUTPUTS: flasce
 ProtoInput: *fláskōn
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8544,8 +9384,12 @@ ProtoInput: *fúlgijaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8576,8 +9420,12 @@ ProtoInput: *gállô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8605,6 +9453,8 @@ NOTE: Proto corrected to *knextăz per R/T vol.2 p.127, Orel p.220, Kluge-Seebol
 ProtoInput: *knéxtaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -8640,6 +9490,8 @@ PWGmcDentalHardening: *xládaną
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -8667,8 +9519,12 @@ ProtoInput: *láppô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8697,6 +9553,8 @@ ProtoInput: *xláxjaną
 PWGmcJGemination: *xláxxjaną
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8731,6 +9589,8 @@ ProtoInput: *láimą
 PWGmcAiMonophthongization: *lāmą
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8784,8 +9644,12 @@ ProtoInput: *nábulô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8812,8 +9676,12 @@ ProtoInput: *xnékkô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8866,6 +9734,8 @@ ProtoInput: *núsō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -8873,6 +9743,8 @@ NWGmcULowering: *nósō
 NWGmcFinalLongORaising: *nósu
 
 ## Section 4: Old English
+
+[no change]
 
 
 ## Section 5: Orthography & surface
@@ -8892,8 +9764,12 @@ ProtoInput: *sápą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8946,8 +9822,12 @@ ProtoInput: *síbi
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -8972,8 +9852,12 @@ ProtoInput: *spárōjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9005,6 +9889,8 @@ ProtoInput: *stábaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -9033,6 +9919,8 @@ ProtoInput: *stébnō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -9059,8 +9947,12 @@ ProtoInput: *swánas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9089,6 +9981,8 @@ PWGmcEarlyIApocope: *θūsènd
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9113,8 +10007,12 @@ ProtoInput: *tímbrą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9139,8 +10037,12 @@ ProtoInput: *wákaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9172,6 +10074,8 @@ PWGmcFinalOrLowering: *wátar
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9194,6 +10098,8 @@ NOTE: Kroonen *hwalaz with initial *hw-; OE hwæl.
 ProtoInput: *xwálaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -9223,8 +10129,12 @@ ProtoInput: *xwḯnaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9252,8 +10162,12 @@ ProtoInput: *wḯθagą
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9283,6 +10197,8 @@ ProtoInput: *wíràldu
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -9311,6 +10227,8 @@ NOTE: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows f
 ProtoInput: *júgunθ
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -9346,8 +10264,12 @@ ProtoInput: *bánnas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9373,8 +10295,12 @@ Rhotacism: *bárjas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9431,6 +10357,8 @@ ProtoInput: *búrô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -9457,8 +10385,12 @@ ProtoInput: *báug
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9483,8 +10415,12 @@ ProtoInput: *kūi
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9513,6 +10449,8 @@ PWGmcDentalHardening: *fúndanǭ
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9536,6 +10474,8 @@ NOTE: §17.45.3c: target retargeted to obl.sg./pl. paradigm cell fyrhte (BT: Gut
 ProtoInput: *fúrxtīnaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -9569,8 +10509,12 @@ ProtoInput: *xámaras
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9630,6 +10574,8 @@ ProtoInput: *xémonų
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -9667,6 +10613,8 @@ PWGmcEarlyIApocope: *lírnōθ
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9693,8 +10641,12 @@ Rhotacism: *lírnô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9723,6 +10675,8 @@ PWGmcEarlyIApocope: *líkkōθ
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9747,8 +10701,12 @@ ProtoInput: *líkkô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9807,6 +10765,8 @@ PWGmcEarlyIApocope: *mákōθ
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -9833,8 +10793,12 @@ ProtoInput: *mákô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9860,8 +10824,12 @@ ProtoInput: *mánnas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9915,8 +10883,12 @@ ProtoInput: *náxti
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -9945,6 +10917,8 @@ NOTE: Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not un
 ProtoInput: *rástōz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -10004,8 +10978,12 @@ ProtoInput: *skáub
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10037,6 +11015,8 @@ PWGmcEarlyIApocope: *skáwōθ
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -10063,8 +11043,12 @@ ProtoInput: *skáwô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10095,6 +11079,8 @@ PWGmcAiMonophthongization: *spánnē
 
 ## Section 3: Northwest Germanic developments
 
+[no change]
+
 
 ## Section 4: Old English
 
@@ -10117,8 +11103,12 @@ ProtoInput: *θístilas
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10157,6 +11147,8 @@ PGmcFinalZDeletion: *kwédu
 
 ## Section 4: Old English
 
+[no change]
+
 
 ## Section 5: Orthography & surface
 
@@ -10175,8 +11167,12 @@ ProtoInput: *téxun
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10202,6 +11198,8 @@ NOTE: Target retargeted from þrī (late-WS reduction) to þrīe (regular early-
 ProtoInput: *θréjez
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -10232,6 +11230,8 @@ NOTE: Retargeted from late-WS doublet 'wæsp' to the earliest attested OE form '
 ProtoInput: *wábsaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -10264,6 +11264,8 @@ ProtoInput: *knúbbô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -10289,6 +11291,8 @@ NOTE: Retargeted 2026-04-30 from attested Anglian rēc (smoothing relic) to reco
 ProtoInput: *ráukaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -10318,8 +11322,12 @@ ProtoInput: *stráwjaną
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10355,8 +11363,12 @@ ProtoInput: *fūri
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10381,8 +11393,12 @@ ProtoInput: *táppô
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
+
+[no change]
 
 
 ## Section 4: Old English
@@ -10411,6 +11427,8 @@ ProtoInput: *búkkaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -10437,6 +11455,8 @@ NOTE: DOCUMENTED EXCEPTION (per §17.10.34): Campbell §115 names fugol as excep
 ProtoInput: *fúglaz
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments
@@ -10466,6 +11486,8 @@ ProtoInput: *rústō
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -10493,6 +11515,8 @@ ProtoInput: *wúlfaz
 
 ## Section 2: Proto-West Germanic developments
 
+[no change]
+
 
 ## Section 3: Northwest Germanic developments
 
@@ -10519,6 +11543,8 @@ NOTE: DOCUMENTED EXCEPTION (per §17.10.34): regular sound change from *wúllō 
 ProtoInput: *wúllō
 
 ## Section 2: Proto-West Germanic developments
+
+[no change]
 
 
 ## Section 3: Northwest Germanic developments

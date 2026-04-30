@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import re
 from pathlib import Path
+from typing import List
 
 # Match a starred form: a leading `*`, followed by one or more star-segmented
 # characters (each an optional `*` plus exactly one printable non-space char).
@@ -32,13 +33,35 @@ def compact_line(line: str) -> str:
 
 
 def compact_report(text: str) -> str:
-    out_lines = []
+    filtered = []
     for line in text.splitlines():
-        # Drop stage lines marked [no-change]. Header/summary lines never
-        # carry that tag, so this is safe.
         if "[no-change]" in line:
             continue
-        out_lines.append(compact_line(line))
+        filtered.append(compact_line(line))
+
+    # If a section header has no stage lines beneath it (all were dropped),
+    # insert "[no change]" so empty sections are visible.
+    out_lines: List[str] = []
+    i = 0
+    while i < len(filtered):
+        line = filtered[i]
+        out_lines.append(line)
+        if line.startswith("## "):
+            # Look ahead past blank lines to see if any content follows before
+            # the next section/lexeme/bucket boundary.
+            j = i + 1
+            while j < len(filtered) and filtered[j] == "":
+                j += 1
+            terminates = (
+                j >= len(filtered)
+                or filtered[j].startswith("## ")
+                or filtered[j].startswith("--- ")
+                or filtered[j].startswith("=== ")
+            )
+            if terminates:
+                out_lines.append("")
+                out_lines.append("[no change]")
+        i += 1
     return "\n".join(out_lines) + "\n"
 
 
