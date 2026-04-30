@@ -2767,10 +2767,20 @@ define OEVelarPalatalization [
     # See DEV_NOTES.md §17.34.
     {*k} {*k} -> {*ʧ} {*ʧ} || _ {*j}
 ] .o. [
-    # *g — broader conditions per R/T §6.4.1:
+    # *g — R/T §6.4.1 rules 1-4, narrowed per DEV_NOTES §17.50.4:
+    # Rule 1+3 (left): any front V on the right palatalises *g
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
-    {*g} -> {*ʤ} || EnglishStarFrontVowel _,
+    # Rule 4a: *g word-final after a front V (Campbell §428: weġ, dæġ)
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
+    # Rule 3 (right) / Campbell §429: *g intervocalic between two front Vs
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
+    # Rule 4b: *g preconsonantal after a front V (R/T §6.4.1 rule 4;
+    # Bülbring §494: bregdan, sægde, regnes, wægnes; Campbell §429:
+    # nægl, segl, regn, wegn). Excludes *g {*j} which is the next clause.
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],
+    # *g before *j
     {*g} -> {*ʤ} || _ {*j},
+    # *gg before *j: geminate palatalization (parallel to *kk above).
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ];
 

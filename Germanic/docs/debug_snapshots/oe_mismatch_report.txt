@@ -1,10 +1,10 @@
-Total mismatches: 10
+Total mismatches: 9
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
   Phonology (core buckets):    0
-  Phonology (other buckets):   2
+  Phonology (other buckets):   1
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
@@ -22,7 +22,6 @@ Total mismatches: 10
   front_expected_back_out: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_other: 1
-  breaking_extra__eo_for_high: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
 --- back_expected_front_out sub-buckets ---
@@ -43,12 +42,6 @@ front_expected_back_out (1):
 
 breaking_extra__ea_other (1):
   *ráukaz -> rēac (expected rēc)
-
-breaking_extra__eo_for_high (1):
-  *néwun -> nēowon (expected nigon)
-  >> ISSUE: FST broke to eo where target has high vowel (ū/ī)
-  >> LIKELY: Breaking applied where it shouldn't; may be TSV proto issue
-  >> ACTION: Check if proto vowel is correct (*eu vs *ū)
 
 vowel_quality__u_lowering_exception (5):
   *búkkaz -> bocc (expected bucc)
