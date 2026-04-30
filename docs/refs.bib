@@ -1,0 +1,646 @@
+% =====================================================================
+% refs.bib — master bibliography for the CAPR project
+%
+% This file is the single source of truth for citations across all
+% project markdown (DEV_NOTES.md, dossiers, README sections) and the
+% forthcoming LaTeX write-up. Cite from Markdown using pandoc-style
+% keys: [@Hogg1992], [@Hogg1992, §4.5], [-@Ringe2006] (suppress author).
+% Pandoc converts these directly to biblatex \autocite{} commands.
+%
+% Conventions
+% -----------
+% * Citekey format: <FirstAuthorSurname><Year>[<disambig>]
+%   - Single author:        Campbell1959
+%   - Joint authorship:     RingeTaylor2014, KlugeSeebold2011
+%   - Multiple a year:      Stiles1986a, Stiles1986b
+%   - Posthumous editions:  use the year of the cited edition
+%     (e.g. SieversBrunner1965 for Sievers/Brunner 3rd ed.).
+% * Prefer @book / @article / @incollection / @phdthesis etc. as
+%   appropriate. Use @misc only when nothing else fits.
+% * Fields marked "% TODO:" need verification before final
+%   publication; the entry is usable in draft prose meanwhile.
+% * Local file pointer: include  file = {docs/references/<stem>.pdf}
+%   so editors / readers can resolve the PDF.
+% =====================================================================
+
+% =====================================================================
+% Primary handbooks (PGmc → OE phonology and morphology)
+% =====================================================================
+
+@book{Hogg1992,
+  author    = {Hogg, Richard M.},
+  title     = {A Grammar of Old English. Volume 1: Phonology},
+  year      = {1992},
+  publisher = {Blackwell},
+  address   = {Oxford},
+  file      = {docs/references/hogg_vol1.txt}
+}
+
+@book{Ringe2006,
+  author    = {Ringe, Don},
+  title     = {From {Proto-Indo-European} to {Proto-Germanic}},
+  series    = {A Linguistic History of English},
+  volume    = {1},
+  edition   = {1},
+  year      = {2006},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  file      = {docs/references/ringe_vol1_pie_to_pgmc.pdf}
+}
+
+@book{Ringe2017,
+  author    = {Ringe, Don},
+  title     = {From {Proto-Indo-European} to {Proto-Germanic}},
+  series    = {A Linguistic History of English},
+  volume    = {1},
+  edition   = {2},
+  year      = {2017},
+  publisher = {Oxford University Press},
+  address   = {Oxford}
+}
+
+@book{RingeTaylor2014,
+  author    = {Ringe, Don and Taylor, Ann},
+  title     = {The Development of {Old English}},
+  series    = {A Linguistic History of English},
+  volume    = {2},
+  year      = {2014},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  file      = {docs/references/ringe_taylor_linguistic_history_vol2.txt}
+}
+
+@book{Campbell1959,
+  author    = {Campbell, Alistair},
+  title     = {Old {English} Grammar},
+  year      = {1959},
+  publisher = {Clarendon Press},
+  address   = {Oxford},
+  note      = {Reprinted with corrections 1962, 1964 etc.},
+  file      = {docs/references/campbell_old_english_grammar.txt}
+}
+
+@book{SieversBrunner1965,
+  author    = {Sievers, Eduard},
+  editor    = {Brunner, Karl},
+  title     = {Altenglische Grammatik},
+  edition   = {3},
+  year      = {1965},
+  publisher = {Niemeyer},
+  address   = {T{\"u}bingen},
+  note      = {3rd ed. revised by Karl Brunner; commonly cited as ``Brunner 1965''.},
+  file      = {docs/references/brunner_1965_altenglische_grammatik.pdf}
+}
+
+@book{Luick1914,
+  author    = {Luick, Karl},
+  title     = {Historische Grammatik der englischen Sprache},
+  year      = {1914--1940},
+  publisher = {Tauchnitz},
+  address   = {Leipzig},
+  note      = {Issued in fascicles 1914--1940; reprint Blackwell/Stuttgart 1964.},
+  file      = {docs/references/luick_historische_grammatik.txt}
+}
+
+@book{Bulbring1902,
+  author    = {B{\"u}lbring, Karl D.},
+  title     = {Altenglisches Elementarbuch},
+  year      = {1902},
+  publisher = {Winter},
+  address   = {Heidelberg},
+  file      = {docs/references/bulbring_altenglisches_elementarbuch.txt}
+}
+
+@book{Kaluza1906,
+  author    = {Kaluza, Max},
+  title     = {Historische Grammatik der englischen Sprache},
+  year      = {1906--1907},
+  publisher = {Felber},
+  address   = {Berlin},
+  % TODO: confirm publisher/edition; some printings list Tauchnitz / 2 vols.
+  file      = {docs/references/kaluza_historische_grammatik_englisch.txt}
+}
+
+@book{Wright1925,
+  author    = {Wright, Joseph and Wright, Elizabeth Mary},
+  title     = {Old {English} Grammar},
+  edition   = {3},
+  year      = {1925},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  file      = {docs/references/anglosaxonoldeng00wrig.txt}
+}
+
+@book{Sweet1953,
+  author    = {Sweet, Henry},
+  title     = {An {Anglo-Saxon} Primer},
+  edition   = {9},
+  year      = {1953},
+  publisher = {Clarendon Press},
+  address   = {Oxford},
+  note      = {Revised by Norman Davis.},
+  file      = {docs/references/sweet_anglo_saxon_primer.pdf}
+}
+
+@book{BrightCassidyRingler1971,
+  author    = {Bright, James W.},
+  editor    = {Cassidy, Frederic G. and Ringler, Richard N.},
+  title     = {Bright's {Old English} Grammar and Reader},
+  edition   = {3},
+  year      = {1971},
+  publisher = {Holt, Rinehart and Winston},
+  address   = {New York},
+  file      = {docs/references/bright_anglo_saxon_reader.pdf}
+}
+
+% =====================================================================
+% Old English dictionaries
+% =====================================================================
+
+@book{BosworthToller1898,
+  author    = {Bosworth, Joseph and Toller, T. Northcote},
+  title     = {An {Anglo-Saxon} Dictionary},
+  year      = {1898},
+  publisher = {Clarendon Press},
+  address   = {Oxford},
+  note      = {Supplement by T. N. Toller, 1921; Enlarged Addenda and Corrigenda by Alistair Campbell, 1972.},
+  file      = {docs/references/bosworth_toller_anglo_saxon_dictionary.pdf}
+}
+
+@book{ClarkHall1960,
+  author    = {Clark Hall, J. R.},
+  title     = {A Concise {Anglo-Saxon} Dictionary},
+  edition   = {4},
+  year      = {1960},
+  publisher = {University of Toronto Press},
+  address   = {Toronto},
+  note      = {With a supplement by Herbert D. Meritt.},
+  file      = {docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf}
+}
+
+% =====================================================================
+% Proto-Germanic / Germanic comparative grammar and etymology
+% =====================================================================
+
+@book{Fulk2018,
+  author    = {Fulk, R. D.},
+  title     = {A Comparative Grammar of the Early {Germanic} Languages},
+  series    = {Studies in Germanic Linguistics},
+  volume    = {3},
+  year      = {2018},
+  publisher = {John Benjamins},
+  address   = {Amsterdam and Philadelphia},
+  file      = {docs/references/fulk_comparative_grammar_early_germanic.pdf}
+}
+
+@book{Streitberg1896,
+  author    = {Streitberg, Wilhelm},
+  title     = {Urgermanische Grammatik},
+  year      = {1896},
+  publisher = {Carl Winter},
+  address   = {Heidelberg},
+  file      = {docs/references/streitberg_urgermanische_grammatik.pdf}
+}
+
+@book{Orel2003,
+  author    = {Orel, Vladimir},
+  title     = {A Handbook of {Germanic} Etymology},
+  year      = {2003},
+  publisher = {Brill},
+  address   = {Leiden and Boston},
+  file      = {docs/references/orel_handbook_germanic_etymology.pdf}
+}
+
+@book{Kroonen2013,
+  author    = {Kroonen, Guus},
+  title     = {Etymological Dictionary of {Proto-Germanic}},
+  series    = {Leiden Indo-European Etymological Dictionary Series},
+  volume    = {11},
+  year      = {2013},
+  publisher = {Brill},
+  address   = {Leiden and Boston},
+  file      = {docs/references/kroonen_etymological_dictionary_pgmc.pdf}
+}
+
+@book{Seebold1970,
+  author    = {Seebold, Elmar},
+  title     = {Vergleichendes und etymologisches W{\"o}rterbuch der germanischen starken Verben},
+  year      = {1970},
+  publisher = {Mouton},
+  address   = {The Hague and Paris},
+  file      = {docs/references/seebold_vergleichendes_woerterbuch.pdf}
+}
+
+@book{KlugeSeebold2011,
+  author    = {Kluge, Friedrich},
+  editor    = {Seebold, Elmar},
+  title     = {Etymologisches W{\"o}rterbuch der deutschen Sprache},
+  edition   = {25},
+  year      = {2011},
+  publisher = {de Gruyter},
+  address   = {Berlin and Boston},
+  file      = {docs/references/kluge_seebold_etymologisches_woerterbuch.txt}
+}
+
+@book{LloydSpringer1988,
+  author    = {Lloyd, Albert L. and Springer, Otto},
+  title     = {Etymologisches W{\"o}rterbuch des Althochdeutschen. Band {I}: {-a -- bezzisto}},
+  year      = {1988},
+  publisher = {Vandenhoeck \& Ruprecht},
+  address   = {G{\"o}ttingen},
+  file      = {docs/references/ewa_band1_lloyd_springer.txt}
+}
+
+@book{Noreen1923,
+  author    = {Noreen, Adolf},
+  title     = {Altisl{\"a}ndische und altnorwegische Grammatik (Laut- und Flexionslehre)},
+  edition   = {4},
+  year      = {1923},
+  publisher = {Niemeyer},
+  address   = {Halle},
+  file      = {docs/references/noreen_altislaendisch.pdf}
+}
+
+@book{Hirt1931,
+  author    = {Hirt, Hermann},
+  title     = {Handbuch des {Urgermanischen}},
+  year      = {1931--1934},
+  publisher = {Carl Winter},
+  address   = {Heidelberg},
+  note      = {Three parts: I. Laut- und Akzentlehre (1931), II. Stammbildungs- und Flexionslehre (1932), III. Abriss der Syntax (1934).},
+  file      = {docs/references/hirt_handbuch_des_urgermanischen.pdf}
+}
+
+@book{Bammesberger1990,
+  author    = {Bammesberger, Alfred},
+  title     = {Die Morphologie des urgermanischen Nomens},
+  series    = {Untersuchungen zur vergleichenden Grammatik der germanischen Sprachen},
+  volume    = {2},
+  year      = {1990},
+  publisher = {Carl Winter},
+  address   = {Heidelberg},
+  file      = {docs/references/bammesberger_1990_morphologie.pdf}
+}
+
+% =====================================================================
+% IE comparative reference works
+% =====================================================================
+
+@book{Pokorny1959,
+  author    = {Pokorny, Julius},
+  title     = {Indogermanisches etymologisches W{\"o}rterbuch},
+  year      = {1959},
+  publisher = {Francke},
+  address   = {Bern and M{\"u}nchen},
+  file      = {docs/references/pokorny_iew_pages}
+}
+
+@book{Mayrhofer1992,
+  author    = {Mayrhofer, Manfred},
+  title     = {Etymologisches W{\"o}rterbuch des Altindoarischen},
+  year      = {1992--2001},
+  publisher = {Carl Winter},
+  address   = {Heidelberg},
+  note      = {3 vols., 1992--2001 (EWAia).},
+  file      = {docs/references/mayrhofer_ewaia_A-DH.pdf}
+}
+
+@book{Beekes2010,
+  author    = {Beekes, Robert},
+  title     = {Etymological Dictionary of {Greek}},
+  series    = {Leiden Indo-European Etymological Dictionary Series},
+  volume    = {10},
+  year      = {2010},
+  publisher = {Brill},
+  address   = {Leiden and Boston},
+  note      = {With the assistance of Lucien van Beek.},
+  file      = {docs/references/beekes_edg.pdf}
+}
+
+% =====================================================================
+% Specialist articles — n-stems / Sievers' Law / morphological prosody
+% =====================================================================
+
+@article{Adamczyk2001,
+  author  = {Adamczyk, El{\.z}bieta},
+  title   = {Reflexes of {Sievers'} Law in {Old English}},
+  year    = {2001},
+  % TODO: journal, volume, pages
+  file    = {docs/references/adamczyk_2001_oe_reflexes_sievers.txt}
+}
+
+@article{Erdmann1972,
+  author  = {Erdmann, Peter},
+  title   = {Suffixal *{j} in {Germanic}},
+  year    = {1972},
+  % TODO: journal, volume, pages
+  file    = {docs/references/erdmann_1972_suffixal_j_germanic.txt}
+}
+
+@article{Pierce1999,
+  author  = {Pierce, Marc},
+  title   = {Review of {Barrack} on {Sievers'} Law},
+  year    = {1999},
+  % TODO: journal, volume, pages
+  file    = {docs/references/pierce_1999_review_barrack_sievers.txt}
+}
+
+@article{Pierce2003,
+  author  = {Pierce, Marc},
+  title   = {Prosody and {Sievers'} Law in {Gothic}},
+  year    = {2003},
+  % TODO: journal, volume, pages
+  file    = {docs/references/pierce_2003_prosody_sievers_gothic.txt}
+}
+
+@article{Pierce2006,
+  author  = {Pierce, Marc},
+  title   = {Syllable Structure and {Sievers'} Law in {Gothic}},
+  year    = {2006},
+  % TODO: journal, volume, pages
+  file    = {docs/references/pierce_2006_syllable_sievers_gothic.txt}
+}
+
+@incollection{Kroonen2011,
+  author    = {Kroonen, Guus},
+  title     = {The {Proto-Germanic} n-stems: A Study in Diachronic Morphophonology},
+  booktitle = {The {Proto-Germanic} n-stems: A Study in Diachronic Morphophonology},
+  series    = {Leiden Studies in Indo-European},
+  volume    = {18},
+  year      = {2011},
+  publisher = {Rodopi},
+  address   = {Amsterdam and New York},
+  file      = {docs/references/kroonen_2011_n_stems.pdf}
+}
+
+@article{Kroonen2006,
+  author  = {Kroonen, Guus},
+  title   = {On the m/n-stems and the bottom rime in {Germanic}},
+  year    = {2006},
+  % TODO: full bibliographic data; possibly NOWELE or Amsterdamer Beitr{\"a}ge
+  file    = {docs/references/kroonen_2006_mn_stems_bottom_rime.pdf}
+}
+
+% =====================================================================
+% Specialist articles — vowel changes (umlaut, lowering, breaking)
+% =====================================================================
+
+@article{Cercignani1979,
+  author  = {Cercignani, Fausto},
+  title   = {{Proto-Germanic} *{i} and *{e} Revisited},
+  journal = {Journal of English and Germanic Philology},
+  year    = {1979},
+  volume  = {78},
+  number  = {1},
+  pages   = {72--82},
+  file    = {docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf}
+}
+
+@article{Cercignani1980,
+  author  = {Cercignani, Fausto},
+  title   = {Early ``Umlaut'' Phenomena in the {Germanic} Languages},
+  journal = {Language},
+  year    = {1980},
+  volume  = {56},
+  number  = {1},
+  pages   = {126--136},
+  file    = {docs/references/cercignani_1980_early_umlaut.pdf}
+}
+
+@article{HowellSalmons1988,
+  author  = {Howell, Robert B. and Salmons, Joseph C.},
+  title   = {The Lowering of *{i} in {Germanic}},
+  year    = {1988},
+  % TODO: confirm journal (probably NOWELE or American Journal of Germanic Linguistics)
+  file    = {docs/references/howell_salmons_1988_lowering_of_i.pdf}
+}
+
+@article{Lloyd1966,
+  author  = {Lloyd, Albert L.},
+  title   = {The {a-}umlaut of *{i} in {Germanic}},
+  year    = {1966},
+  % TODO: confirm journal/volume/pages
+  file    = {docs/references/lloyd_1966_a_umlaut_of_i.pdf}
+}
+
+@article{Stiles2012,
+  author  = {Stiles, Patrick V.},
+  title   = {The {a-}umlaut of *{u} in {Germanic}},
+  year    = {2012},
+  % TODO: confirm full citation
+  file    = {docs/references/stiles_2012_a_umlaut_of_u.pdf}
+}
+
+@article{Polome1967,
+  author  = {Polom{\'e}, Edgar C.},
+  title   = {The Reflexes of {IE} {*m{\=e}}-},
+  year    = {1967},
+  % TODO: confirm
+  file    = {docs/references/polome_1967_reflexes_ie_ms.txt}
+}
+
+@article{Polome1994,
+  author  = {Polom{\'e}, Edgar C.},
+  title   = {{Proto-Germanic} and the Reconstruction of {PIE}},
+  journal = {NOWELE},
+  year    = {1994},
+  volume  = {23},
+  % TODO: pages
+  file    = {docs/references/polome_1994_nowele23_proto_germanic.pdf}
+}
+
+@article{Kylstra1983,
+  author  = {Kylstra, A. D.},
+  title   = {Die {\"a}lteren {Umlaute} im {Germanischen}},
+  journal = {Amsterdamer Beitr{\"a}ge zur {\"a}lteren Germanistik},
+  year    = {1983},
+  volume  = {19},
+  % TODO: pages
+  file    = {docs/references/kylstra_1983_aelteren_umlauts_abag19.pdf}
+}
+
+% =====================================================================
+% Specialist articles — specific etyma / lexical studies
+% =====================================================================
+
+@article{Bammesberger1997,
+  author  = {Bammesberger, Alfred},
+  title   = {{Old English} \emph{h{\ae}rfest} and its {Germanic} cognates},
+  year    = {1997},
+  % TODO: journal/volume/pages
+  file    = {docs/references/bammesberger_1997_herfest.pdf}
+}
+
+@article{Hamp1990,
+  author  = {Hamp, Eric P.},
+  title   = {{PIE} *{bhudh-mn-} ``bottom''},
+  year    = {1990},
+  % TODO: journal/volume/pages
+  file    = {docs/references/hamp_1990_pie_bottom.pdf}
+}
+
+@article{vanHelten1905,
+  author  = {van Helten, Willem L.},
+  title   = {Zur Etymologie eines germanischen Zahlworts},
+  year    = {1905},
+  % TODO: journal (probably PBB or Beitr{\"a}ge)
+  file    = {docs/references/van_helten_1905_zahlwort.pdf}
+}
+
+@article{Vine2019,
+  author  = {Vine, Brent},
+  title   = {{Greek} {$\sigma\tau\acute{\omicron}\mu\upsilon\lambda\omicron\varsigma$} and Related Forms},
+  year    = {2019},
+  % TODO: confirm
+  file    = {docs/references/vine_2019_greek_stomylos.txt}
+}
+
+@unpublished{Kilday2024,
+  author = {Kilday, Douglas G.},
+  title  = {{Crist's} Law, {Smith's} Law, and {English} \emph{wizen}},
+  year   = {2024},
+  note   = {Unpublished draft.},
+  file   = {docs/references/kilday_2024_crists_law_smiths_law_wizen.pdf}
+}
+
+% =====================================================================
+% z-loss in West Germanic (Crist's Law) and related
+% =====================================================================
+
+@phdthesis{Crist2001,
+  author       = {Crist, Sean J.},
+  title        = {Conspiracy in Historical Phonology},
+  school       = {University of Pennsylvania},
+  year         = {2001},
+  type         = {Ph.{D}. dissertation},
+  file         = {docs/references/crist_2001_conspiracy_in_historical_phonology.pdf}
+}
+
+@unpublished{Crist2002,
+  author = {Crist, Sean J.},
+  title  = {An Analysis of *{z} Loss in {West Germanic}},
+  year   = {2002},
+  note   = {Handout, Linguistic Society of America Annual Meeting.},
+  file   = {docs/references/crist_2002_z_loss_west_germanic.pdf}
+}
+
+% =====================================================================
+% Older Runic / early-Germanic inscriptional evidence
+% =====================================================================
+
+@article{Mees2020,
+  author  = {Mees, Bernard},
+  title   = {The {Dziedzice/Sedsch{\"u}tz} inscription as early evidence of {West Germanic} rhotacism},
+  journal = {Lingua Posnaniensis},
+  year    = {2020},
+  volume  = {62},
+  number  = {2},
+  % TODO: pages
+  file    = {docs/references/mees_2020_dziedzice_inscription_wgmc_rhotacism.pdf}
+}
+
+@article{Stiles2017,
+  author  = {Stiles, Patrick V.},
+  title   = {On the Interpretation of Older Runic \emph{swestar} on the {Opedal} Stone},
+  year    = {2017},
+  % TODO: confirm journal/volume/pages
+  file    = {docs/references/stiles_2017_opedal_swestar_runic.pdf}
+}
+
+@article{NeriRingeReview,
+  author = {Neri, Sergio},
+  title  = {Review article of {Ringe}, \emph{From {PIE} to {Proto-Germanic}}},
+  year   = {2009},
+  % TODO: full citation; review appeared in German
+  file   = {docs/references/neri_review_ringe_pie_to_pgmc.pdf}
+}
+
+% =====================================================================
+% Stiles four-part series (NOWELE)
+% =====================================================================
+
+@article{Stiles1985,
+  author  = {Stiles, Patrick V.},
+  title   = {The {fate} of the numeral ``four'' in {Germanic}, {part} 1},
+  journal = {NOWELE: North-Western European Language Evolution},
+  year    = {1985},
+  volume  = {6},
+  % TODO: pages and confirm exact title of the four-part series
+  file    = {docs/references/stiles_1985_four_part1_nowele6.pdf}
+}
+
+@article{Stiles1986a,
+  author  = {Stiles, Patrick V.},
+  title   = {The {fate} of the numeral ``four'' in {Germanic}, {part} 2},
+  journal = {NOWELE: North-Western European Language Evolution},
+  year    = {1986},
+  volume  = {7},
+  % TODO: pages
+  file    = {docs/references/stiles_1986_four_part2_nowele7.pdf}
+}
+
+@article{Stiles1986b,
+  author  = {Stiles, Patrick V.},
+  title   = {The {fate} of the numeral ``four'' in {Germanic}, {part} 3},
+  journal = {NOWELE: North-Western European Language Evolution},
+  year    = {1986},
+  volume  = {8},
+  % TODO: pages
+  file    = {docs/references/stiles_1986_four_part3_nowele8.pdf}
+}
+
+% =====================================================================
+% Misc. articles
+% =====================================================================
+
+@article{Ringe1984,
+  author  = {Ringe, Don},
+  title   = {{Germanic} *{\^e}\textsubscript{2} and *{r}},
+  year    = {1984},
+  % TODO: journal/volume/pages
+  file    = {docs/references/ringe_1984_germanic_e2_and_r.pdf}
+}
+
+@article{Rice1994,
+  author  = {Rice, Keren},
+  title   = {Peripheral in Consonants},
+  journal = {Canadian Journal of Linguistics},
+  year    = {1994},
+  % TODO: volume/pages
+  file    = {docs/references/rice_1994_peripheral_in_consonants.pdf}
+}
+
+@misc{GermanicSlavicBaltic2025,
+  title  = {{Germanic}, {Slavic}, and {Baltic} ``thousand''},
+  year   = {2025},
+  % TODO: author and venue
+  note   = {Working paper.},
+  file   = {docs/references/2025_Germanic_Slavic_and_Baltic_thousand.pdf}
+}
+
+% =====================================================================
+% Personal communications and project-internal sources
+% =====================================================================
+
+@misc{KnobEmail2026,
+  author       = {Knob, R.},
+  title        = {Personal communication ({email})},
+  year         = {2026},
+  month        = jan,
+  howpublished = {Email correspondence, 22 January 2026},
+  note         = {Cited with permission.},
+  file         = {docs/references/knob_email_2026-01-22.txt}
+}
+
+% =====================================================================
+% Primary OE textual editions cited
+% =====================================================================
+
+@misc{CaedmonsHymnVitt1452,
+  title        = {Caedmon's Hymn, {MS} {Vatican}, {Bibl.} {Apost.}, {Vitt.} {em.} 1452},
+  howpublished = {Manuscript},
+  note         = {Manuscript witness; vision OCR in repo.},
+  file         = {docs/references/caedmons_hymn_rome_ms_vitt_em_1452.pdf}
+}
+
+% End of file.
