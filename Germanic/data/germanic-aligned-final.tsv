@@ -850,10 +850,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 184	r æ v ə n	*xrábnaz	- r æ v ə n ( - - )	rævṇ	raven	52	English					raven	*xrábnaz	196
 2149	h r æ f n	*xrábnaz	- r æ v ə n ( - - )	rævṇ	hræfn	52	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			raven	*xrábnaz	196
 183	r aː b ə	*xrábnaz	- r aː b ə - ( - - )	raːbə	Rabe	52	German					raven	*xrábnaz	196
-1648	r aː d ɛ n	*rēdaną	r aː d ɛ n ( - - )	raːdɛn	raden	452	Dutch					read	*rēdaną	197
-1647	r iː d	*rēdaną	r iː d - - ( - - )	riːd	read	452	English					read	*rēdaną	197
-2150	r ǣ d a n	*rēdaną	r iː d - - ( - - )	riːd	rǣdan	452	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			read	*rēdaną	197
-1646	r aː t ə n	*rēdaną	r aː t ə n ( - - )	raːtən	raten	452	German					read	*rēdaną	197
+1648	r aː d ɛ n	*rḗdaną	r aː d ɛ n ( - - )	raːdɛn	raden	452	Dutch					read	*rḗdaną	197
+1647	r iː d	*rḗdaną	r iː d - - ( - - )	riːd	read	452	English					read	*rḗdaną	197
+2150	r ǣ d a n	*rḗdaną	r iː d - - ( - - )	riːd	rǣdan	452	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			read	*rḗdaną	197
+1646	r aː t ə n	*rḗdaną	r aː t ə n ( - - )	raːtən	raten	452	German					read	*rḗdaną	197
 708	r oː k	*ráukiz	r oː k ( - - )	roːk	rook	194	Dutch					reek	*ráukiz	198
 707	r iː k	*ráukiz	r iː k ( - - )	riːk	reek	194	English					reek	*ráukiz	198
 2151	r ē c	*ráukaz	r iː k ( - - )	riːk	rēc	194	Old_English	Intractable: ModE reek /riːk/ shows OE rēc had velar [k], not palatal [ċ]. Switched to a-stem *ráukaz (Kroonen, p.c., as analogical replacement of i-stem *ráukiz; cf. Ger. Rauch). FST output rēac is regular for *ráukaz; OE rēc requires Anglian smoothing (ēa→ē / _velar) which is dialectally restricted and would regress WS bēacen, hēah, ēage, sēah, tēah. Treated as Anglian relic loaned into WS; logged in oe_known_problems.tsv. See DEV_NOTES.md §17.22 (closure) and dossier-reek-2026.md.	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			reek	*ráukaz	198
@@ -961,10 +961,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1116	ʃ iː θ	*skáiθiz	ʃ - iː θ - ( - )	ʃiːθ	sheath	306	English					sheath	*skáiθiz	220
 2178	s ċ ē a þ	*skáiθiz	ʃ - iː θ - ( - )	ʃiːθ	sċēaþ	306	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			sheath	*skáiθiz	220
 1115	ʃ ai d ə	*skáiθiz	ʃ - ai d ə ( - )	ʃaidə	Scheide	306	German					sheath	*skáiθiz	220
-1371	s x aː p	*skēpą	s x aː p ( - - )	sxaːp	schaap	375	Dutch					sheep	*skēpą	221
-1370	ʃ iː p	*skēpą	ʃ - iː p ( - - )	ʃiːp	sheep	375	English					sheep	*skēpą	221
-2179	s ċ ē a p	*skēpą	ʃ - iː p ( - - )	ʃiːp	sċēap	375	Old_English	R/T vol.2 12522: PWGmc *skap > OE scéap (WS)				sheep	*skēpą	221
-1369	ʃ aː f	*skēpą	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German					sheep	*skēpą	221
+1371	s x aː p	*skḗpą	s x aː p ( - - )	sxaːp	schaap	375	Dutch					sheep	*skḗpą	221
+1370	ʃ iː p	*skḗpą	ʃ - iː p ( - - )	ʃiːp	sheep	375	English					sheep	*skḗpą	221
+2179	s ċ ē a p	*skḗpą	ʃ - iː p ( - - )	ʃiːp	sċēap	375	Old_English	R/T vol.2 12522: PWGmc *skap > OE scéap (WS)				sheep	*skḗpą	221
+1369	ʃ aː f	*skḗpą	ʃ - aː f ( - - )	ʃaːf	Schaf	375	German					sheep	*skḗpą	221
 310	s x ɪ l t	*skélduz	s x ɪ l t ( - - )	sxɪlt	schild	86	Dutch					shield	*skélduz	222
 309	ʃ iː l d	*skélduz	ʃ - iː l d ( - - )	ʃiːld	shield	86	English					shield	*skélduz	222
 2180	s c i e l d	*skélduz	ʃ - iː l d ( - - )	ʃiːld	sċield	86	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			shield	*skélduz	222
@@ -1026,10 +1026,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1145	s l eɪ	*sláxaną	s l eɪ - - - ( - - )	sleɪ	slay	314	English					slay	*sláxaną	234
 2195	s l ē a n	*sláxaną	s l eɪ - - - ( - - )	sleɪ	slēan	314	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slay	*sláxaną	234
 1144	ʃ l aː ɡ ə n	*sláxaną	ʃ l aː ɡ ə n ( - - )	ʃlaːɡən	schlagen	314	German					slay	*sláxaną	234
-1668	s l aː p ə	*slēpaną	s l aː p ə - ( - - )	slaːpə	slapen	457	Dutch					sleep	*slēpaną	235
-1667	s l iː p	*slēpaną	s l iː p - - ( - - )	sliːp	sleep	457	English					sleep	*slēpaną	235
-2196	s l ǣ p a n	*slēpaną	s l iː p - - ( - - )	sliːp	slǣpan	457	Old_English	OE target: slǣp→slǣpan (inf. of str.v. class VII 'to sleep')				sleep	*slēpaną	235
-1666	ʃ l aː f ə n	*slēpaną	ʃ l aː f ə n ( - - )	ʃlaːfən	schlafen	457	German					sleep	*slēpaną	235
+1668	s l aː p ə	*slḗpaną	s l aː p ə - ( - - )	slaːpə	slapen	457	Dutch					sleep	*slḗpaną	235
+1667	s l iː p	*slḗpaną	s l iː p - - ( - - )	sliːp	sleep	457	English					sleep	*slḗpaną	235
+2196	s l ǣ p a n	*slḗpaną	s l iː p - - ( - - )	sliːp	slǣpan	457	Old_English	OE target: slǣp→slǣpan (inf. of str.v. class VII 'to sleep')				sleep	*slḗpaną	235
+1666	ʃ l aː f ə n	*slḗpaną	ʃ l aː f ə n ( - - )	ʃlaːfən	schlafen	457	German					sleep	*slḗpaną	235
 1912	s l ɛɪ m	*slīmą	s l ɛɪ m ( - - )	slɛɪm	slijm	524	Dutch					slime	*slīmą	236
 1911	s l aɪ m	*slīmą	s l aɪ m ( - - )	slaɪm	slime	524	English					slime	*slīmą	236
 2197	s l ī m	*slḯmą	s l aɪ m ( - - )	slaɪm	slīm	524	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			slime	*slḯmą	236
