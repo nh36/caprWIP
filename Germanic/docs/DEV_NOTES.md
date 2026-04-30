@@ -42674,3 +42674,374 @@ as needed.
 `Germanic/data/germanic-aligned-final.tsv`. Generated: all *.bin in
 `Germanic/fsts/`, `backend/`, repo root.
 
+
+---
+
+## §17.50 — *néwun → nigon* mismatch dossier (2026-04-XX)
+
+**Mismatch as observed.** The TSV PROTOFORM is `*néwun` (per Kroonen
+EDPG headword); the FST cascade produces `nēowon` (regular reflex via
+EwLongDiphthong + medial u-lowering); the attested OE form is `nigon`.
+Trace shows nothing remarkable until late: `*n*é*w*u*n` carries through
+all early stages, then receives breaking `*éw → *ēow` and medial
+`*u → *o` to yield `nēowon`.
+
+The discrepancy is not a stress or paradigm-cell issue but a
+**consonantal innovation**: OE has medial /-g-/ where the cascade
+inputs /-w-/. This is shared with OS *nigun*, OFris *nigun ~ niugun*
+against Goth./ON/OHG *niun*, i.e. it is a North Sea Germanic /
+Ingvaeonic isogloss.
+
+A full philological dossier was canvassed before any code change. It is
+preserved verbatim in §17.50.1 below; a follow-up audit of the
+controversy surrounding "Bugge's velarization" is preserved in §17.50.2.
+The summary recommendation, after both rounds of research, is **Option
+A** (TSV-only): change PROTOFORM from PGmc *`*néwun`* (PIE-stage) to
+NSGmc/Ingvaeonic *`*nigun`* (post-velarization stage). Rationale:
+
+1. ***nigun* is explicitly reconstructed** by Ringe-Taylor 2014
+   ("northern WGmc *nigun"), Bülbring §202, Sievers-Brunner §111, and
+   van Helten 1905:103. It is not a speculative form.
+2. **Lautgesetzlich derivation through the existing cascade**: `*nigun
+   → nigon` by medial u-lowering only. Zero new rules.
+3. **Adding Bugge's velarization as a productive cascade rule (Option
+   B) would be a minority hypothesis.** Ringe-Taylor 2014 and Fulk 2018
+   both explicitly reject a regular-sound-law account; Kroonen is
+   essentially the only modern handbook voice asserting it. Adopting it
+   would risk over-application and would be indefensible as a strict
+   Neogrammarian Lautgesetz given the current state of the field
+   (§17.50.2).
+4. **Precedent**: this matches the project's existing practice (cf.
+   *ḯ*, *ḗ* tier markers, §17.46 / §17.49) of encoding stage-appropriate
+   input forms when an innovation pre-dates the OE-proper portion of
+   the cascade. The PIE-stage entry remains *(h₁)néwn̥; only the
+   immediate input to the OE cascade changes.
+
+**Files affected.** TSV rows 821–824 (cogset 326/325/2142/324):
+PROTOFORM and PROTO `*néwun → *nigun`. No rule changes. Rebuild and
+verify mismatch count drops.
+
+
+### §17.50.1 — Source canvass dossier (verbatim)
+
+# Philological Dossier: PGmc *néwun → OE *nigon*
+
+**Question:** Why does the FST cascade produce *nēowon* (regular reflex of PGmc *néwun*) when the attested OE form is *nigon* — with medial ‹g› and root-vowel /i/, not ‹w› and /eːo̯/?
+
+---
+
+## 1. Source-by-source reconstructions and attestations
+
+| Source | PGmc form | OE form | Discussion of *-g-* |
+|---|---|---|---|
+| **Kroonen, EDPG** (s.v. *newun-, *ju(w)unþi-) | ***newun-*** (headword); **but** secondary ***niwun*** posited for WGmc | *nigon* | Explicit: "**The velarization of the \*w in West Germanic (cf. e.g. \*sū- ~ \*suw- 'sow') points to a secondary form \*niwun with a raised vowel, as velarization only occurred between two high vowels of which one was rounded (Kroonen 2011b).**" Under *ju(w)unþi-*: "regular velarization of the *w (cf. *su- 'sow' and *newun '9') between two high vowels (one of them being rounded)." |
+| **Orel, HGE** | ***newun*** | *niʒon* | No mechanism given; refers to Ross-Berns 1992: 589–90. |
+| **Ringe, *From PIE to PGmc* (vol. 1)** | PIE *(h₁)néwn̥ → *néwun → *néwunt → PGmc ***ne(w)un*** | *nigon* | "OE *nigon* reflects a northern WGmc ***nigun* whose origin is unclear**." |
+| **Ringe & Taylor, vol. 2** (§ on Anglo-Frisian / NSGmc isoglosses) | northern WGmc ***nigun*** | *nigon* | "But in northern WGmc we find forms with medial **\*-g-**: northern WGmc ***nigun* 'nine' > OE *nigon*, OF *niugen*, OS *nigun* ~ *nigon*** … **No convincing explanation for the shape of 'nine' has been advanced.**" Treats it as an Ingvaeonic isogloss alongside *tegaþa* 'tenth' (with voiced Verner alternant). |
+| **Fulk, *Comparative Grammar of the Early Germanic Languages*** (§4.4 n. 2; §10.2; §6.11) | PGmc ***niwun-*** (preferred) ~ *ne(w)un | *nigon* | §6.11: "PGmc. *w* was lost (and *kʷ* delabialized…) before *u*, as in Go. *niun* '9' < ***niwun* < PIE *néun**." §10.2 n. 9: "PGmc. \**niwun-* should have lost *w* (§6.11), with raising of *e* before *u* and subsequent vowel contraction in WGmc. OHG *niun* thus appears to be etymological, whereas **an inorganic ʒ replaced the lost *w* in NSGmc., probably to maintain parallelism with disyllabic NSGmc. \*texan 'ten'**; cf. OHG *niwan* '9' (1×) … At all events, **it is inadvisable to reconstruct Proto-WGmc. \*newun**." §4.4 n. 2: "Possibly also OE *nigon* '9' < PGmc. \**ne(w)un(-)* (**with intrusive ʒ, §10.2**), though Ross & Berns (1992: 589) explain the raising as originating in the i-inflected stem \**niwuni-*." |
+| **Sievers-Brunner, *Altenglische Grammatik*** §111, §325.9, §326.90 | implicit pre-OE *nigun | *niʒon, niʒen, niʒun, nyʒon, -an*; kent. *neoʒon*; Nbr. infl. *nione, niʒona, -e*; Lindisfarne 90 *hundnéontiʒ ~ -néantiʒ* | §111 lists *nizon, stizol, stician* together as words where back umlaut of *i* fails before a velar. Kent. *neozon* shows back umlaut having applied. Northumbrian *nione* < *niʒone* shows loss of velar between *i* and back vowel. Treats *-g-* as etymologically present at every stage of OE prehistory. |
+| **Bülbring, *Altenglisches Elementarbuch*** §202, §235 | implicit pre-OE *nigun | *nigon* | §202: "Ebenso wird das durch u/a-Umlaut aus *i* entstehende *iu* (§ 226 und 235) vor *c* und *g* wieder zu *i* geebnet: **stigol** *Zaunstieg* < *sti(u)ʒul < *stigul, **nigon** 'neun', **wicu** 'Woche', **cwician**…" §235 reiterates: stigol, nigon, sicor, sicol, stician treated as a single class — *iu* (back-umlaut diphthong of *i*) is leveled back to *i* before a velar consonant. The reconstruction presupposes a pre-OE *nigun* with already-developed velar. |
+| **Campbell, *OE Grammar*** §429, §682.9, §686.90 | (no explicit pre-OE form, but implicit *nigun*) | *nigon*; Nbr. only inflected *ni(g)one, -a*; Li. 90 *hundnéontig, -néantig* | §429: "Velar consonants, however, remained when there was a back vowel … either before or after them, e.g. *wicu* week, *brecan* break, *aces* g.s. oak, *séoce* n.p.m. sick, *wegas* ways, **\*nigon\* nine**, *þinga* g.p. things." — uses *nigon* as type-example for retention of velar /g/ between *i* and back vowel. §686 (90): Lindisfarne *hundnéontig, -néantig* are explicitly described as "**a phonological variant (< \*niy-)**" — i.e. Campbell derives the Northumbrian forms from \**niʒ-* (palatal /j/) with breaking. |
+| **Luick, *Historische Grammatik*** §93 (line 6966) | wg. *niun* (treats as parallel to OHG) | (not directly discussed for OE) | Discusses only the WGmc/OHG branch where *u* drops before *u*: "wg. ahd. niun 'neun'." Implicitly OE *nigon* falls under §102's Ingv. branch; not foregrounded. |
+| **Kluge-Seebold, *EWb*** s.v. *neun* | g. ***newun*** | *nigon* | "Aus g. *newun 'neun', auch in gt. niun (zweisilbig!), anord. níu, **ae. nigon, afr. nigun, niugun, niogen**, as. nigun." No phonological mechanism for *-g-*. |
+| **Hirt, *Handbuch des Urgermanischen*** §70 (d) | implicit *neʒun ← *newun | as. *nigun*; cites ae. *nigon* via index | Lists in the section "Bugges Erörterungen" — intervocalic *w* > *ʒ* between high vowels: "ahd. *jugund*, as. *juguth* … *bru*-bridge … as. *nigun* 'neun'." Explicitly groups nine with *jugund, brycg/bryggja, sugu*. |
+| **van Helten, "Zum germanischen Zahlwort"** (IF 18, 1905), pp. 102–104 | **\*neʒunē / \*neʒunþ-** (post-Bugge) → northern *nigun*; original PGmc *néwune / *néwunþ- | *niʒon* etc. | The most extensive philological discussion. Reconstruction p. 103: "*nĕ(ʒ)un* oder nach *sebune* … neugebildetes \**nĕ(ʒ)une* (= aid. *náva*) und \**neʒunþ-* (für \**newunþ-*) anzusetzen." On the *i* of OE *nigon*: "ob der Vokal mit Sievers nach §105,3 durch Nichtentwicklung der u-Brechung oder mit Bülbring nach §202 durch Ebnung von *iu* vor *ʒ* zu *i* zu erklären ist, lasse ich hier unentschieden." Rejects Holthausen's analogical-with-*teʒunþ-* explanation because Dutch *negen-/-de* shows no parallel *teg-/-de*. |
+| **Streitberg, *Urgermanische Grammatik*** | got. *niun*, aisl. *nío*, ae. *niʒon*, as. *nigun*, ahd. *niun* | *niʒon* | Tabulated only. |
+| **Bosworth-Toller** | — | *nigon, niʒon, nyʒon, niʒan, nigene* | Headword *nigon*; standard variants: *niʒan, nigan, nigon, nyʒon*. |
+| **Clark Hall** | — | *nigon* | Cross-references "**nig- = niw-**; *nigan = nigon*; *nige- = nigo-*" — implicitly equates *nig-* and *niw-* in compound forms (telling). |
+| **Kaluza, *Hist. Gr. d. Engl.*** | implicit *nigon-þa | *nigon, nigoda, nigeda* | Ordinal *nigoda, nigeda* < pre-OE \**nigon-þa*. ME *nyne* (with palatal /j/, then /aɪ/). |
+| **Howell & Salmons (1988)** | — | OS *nigun*, OF *niugun* | Treat OS *nigun* / OFris *niugun* as Gmc. *-igu-* showing dorsal-place feature harmony / "u-umlaut blocking." Presupposes pre-OS/-OF *nigun*. |
+| **Cercignani (1980, "Early Umlaut")** | — | OF *niugun* | Cites OFris *nigun > niugun* explicitly as evidence of u-umlaut diphthongisation acting on /i/ — i.e. pre-OFris *nigun* with already-velar /g/. |
+| **Sweet, Bright, Wright** | — | *nigon* | Standard reader/grammar paradigms. |
+
+**Contradictions:** The major fault-line is between
+(α) the "Bugge / van Helten / Bülbring / Hirt / Kroonen" line, treating intervocalic \*w → \*ʒ between two high vowels (esp. with one rounded) as a **regular sound law** of WGmc / NSGmc; and
+(β) the "Ringe / Fulk" line, treating the -g- as **inorganic / intrusive** — an *ad hoc* numeral-system replacement for lost \*w to maintain parallelism with disyllabic *texan* '10'. Ringe-Taylor outright say "no convincing explanation … has been advanced."
+
+Note that Kroonen 2011b (cited in EDPG s.v. *newun-) is the most recent rigorous formulation of (α): "velarization only occurred between two high vowels of which one was rounded." Fulk is aware of (α) but does not endorse it.
+
+---
+
+## 2. The intervocalic *-w- → *-g-* question
+
+### (a) Is it a regular sound change in some defined environment?
+
+**Yes, according to Bugge–van Helten–Bülbring–Hirt–Kroonen.** The conditioning factor (most precisely formulated by Kroonen 2011b) is:
+
+> **\*w → \*ʒ between two high vowels, at least one of which is rounded** (i.e. environments *u_u, i_u, u_i*).
+
+Verbatim Kroonen, EDPG s.v. *ju(w)unþi-* 'youth':
+
+> "The West Germanic material points to a form \**juwunþi-* with regular velarization of the \**w* (cf. \**su-* 'sow' and \**newun* '9') between two high vowels (one of them being rounded). The \*w probably arose in hiatus position of a proto-form \**juunþi-*. Go. *junds*, on the other hand, seems simply to have lost the hiatus."
+
+And s.v. *newun-*:
+
+> "The velarization of the *w in West Germanic (cf. e.g. *sū- ~ *suw- 'sow') points to a secondary form \**niwun* with a raised vowel, as velarization only occurred between two high vowels of which one was rounded (Kroonen 2011b)."
+
+Hirt §70 (d) lists in the same paragraph as a unified phonological process: ahd. *jugund*, as. *juguth*, ae. *geoguð* (← \**iuwunþi-*); ae. *brycg*, ahd. *brukka*, an. *bryggja* (← \**bru(w)jō*); as. *nigun*. 
+
+Van Helten attributes the law to Sophus Bugge (PBrB 13.504ff., 1888): "**nach u stehendes, hochtonige Silbe anlautendes u zu ʒ**" — "an *u* opening a stressed syllable after another *u* becomes /ʒ/."
+
+### (b) Is it a spelling variant only?
+
+**Mostly no, but with a wrinkle.** The OE digraph ‹g› here represents an **etymological consonant**, not a hiatus-glide spelling. Campbell §429 explicitly classifies *nigon* among words where /g/ is **velar** (because of the back vowel /o/ following): "*wegas* ways, **nigon nine**, *þinga* g.p. things" — all with velar /ɣ/ ~ [g] medially. However, the Lindisfarne Northumbrian doublet *hundnéontig* / *-néantig* (Campbell §686) is explained as "a phonological variant **< *niy-**" — i.e. with a palatal /j/ pronunciation that subsequently triggered breaking (*niy- → *nē(o)-*). So in some Northumbrian environments the ‹g› was already palatalized to /j/ and could vocalize, but in WS *nigon* it is genuinely velar /ɣ/. Hall's cross-reference "nig- = niw-" indicates synchronic alternation in some compounds (e.g. *niwe* 'new' ~ *nig-*), supporting the view that OE speakers/scribes felt /ɣ/ ~ /w/ as exchangeable in the right environments.
+
+### (c) Paradigm-cell phenomenon?
+
+**Largely no for *nigon* itself** — it is not a verb, has no Verner alternation, and the cardinal/ordinal pair (*nigon* / *nigoþa*) both show /g/. The hypothesis that the *i*-vowel arose in an i-inflected stem **\*niwuni-** (Ross & Berns 1992, accepted by Fulk §4.4 n. 2) is paradigm-cell-like: i-stem inflection is reconstructed for the numerals 5–10 (Stiles 1985–6; cf. Fulk §10.2 generally), so the form fed into Bugge's law could indeed have been the i-stem \**niwuni-* > \**niʒun-i* with i-raising of *e* > *i* before *u*.
+
+### (d) Pre-OE / WGmc development?
+
+**Definitively pre-OE.** Specifically **northern-WGmc / Ingvaeonic / NSGmc**, as the isogloss is OE + OS + OF *with* /g/, against OHG *niun* and ON *níu* / Goth. *niun* *without*. R-T explicitly treat it as one of a small bundle of NSGmc innovations:
+
+> "But in northern WGmc we find forms with medial \*-g-: northern WGmc \**nigun* 'nine' > OE *nigon*, OF *niugen*, OS *nigun ~ nigon*; northern WGmc \**tegaþa* (?) 'tenth' > OE (Merc.?) *teogoþa* … OS *tegotho*."
+
+The OF spelling variation *niugun ~ niogen ~ nigun* shows post-Ingv. u-umlaut acting on a base *nigun* (Cercignani 1980; Howell & Salmons 1988); cf. van Helten p. 103: "*siugun, *niugun … durch Brechung aus alten *sigun, *nigun." So the velarization is ancestral to all three NSGmc daughters.
+
+---
+
+## 3. Parallel forms in OE (and northern WGmc)
+
+Words showing the **same \*VwV → \*VgV (Bugge-velarization)** pattern, all with high vowels flanking:
+
+| PGmc | OE / OS / OFris | Other Gmc |
+|---|---|---|
+| **\*juwunþi-** ‘youth’ (← \*h₂iu-Hn̥-ti-) | **OE *geoguð*, OS *juguth*, OFris *iugethe*, OHG *jugund*** | (Goth. *junds* with hiatus loss instead) |
+| **\*suwō-** ‘sow’ | OE *sugu*, *sū* | ON *sýr* |
+| **\*bruwjō-** ‘bridge’ | OE *brycg*, OS *bruggia*, OHG *brucka*, ON *bryggja* | (geminate) |
+| **\*muwjō-** ‘midge’ | OE *mycg(e)*, OS *muggia*, OHG *mucka* | (geminate) |
+| **\*newun- / *niwun-** ‘nine’ | **OE *nigon*, OS *nigun*, OFris *nigun ~ niugun ~ niogen*** | Goth. *niun*, ON *níu*, OHG *niun* (no /g/) |
+| (\*sugil-/\*suwil-) ‘sun-jewel’ | OE *syʒel* | Goth. *sugil* |
+| (\*trugila-/\*truwila-) tree-name | OHG *trugil*, MHG *trugel* | — |
+| ON-only \*hruʒan- ‘heap’ | — | ON *hrúga* |
+
+Key evidence is the cluster of forms reconstructing with *u_u* or *i_u* (the rounded-high environment) consistently showing /g/ in WGmc/NSGmc and either gemination (\*bruwjō → bryggja/brycg via West Germanic gemination of \*j) or simple velarization (\*juwunþi → jugund). Of these, **\*juwunþi- → geoguð** is the closest typological parallel to **\*niwun- → nigon**: same *iu_u* environment, same outcome /g/.
+
+Counter-evidence: \**niwjaz* 'new' → OE *nīwe, nēowe* with /w/ retained — but here the second vowel is *a* (\*niwjaz < *néwjaz*), not high, so the conditioning is not met. Likewise *trēow* < \**triwwa-* < \*trewwa-, *cnēo(w)* < \*kniwa-, *frēa* < \*frawan-/*frauja-: the second flanking vowel is non-high, /w/ is retained (or vocalizes to part of the diphthong). This is the right distribution: **velarization is high-high only**.
+
+OE doublets that may show synchronic /w/~/g/ alternation (cf. Hall: "nig- = niw-"):
+- *niwian / nigan* 'to bow, incline' (Holthausen treats as one verb)
+- *nēowol / nigol* 'prone' — though here *nēowol* is the standard form
+- *frēa-* compounds vs. occasional *frīga-* in proper names (Frīgedæg 'Friday' < \*Frijjō; different etymon, but illustrative)
+
+---
+
+## 4. The regular phonological story
+
+Going through the candidates:
+
+| Proto-form | FST cascade output (regular) | Match? |
+|---|---|---|
+| \**newun* (Kroonen headword, Ringe) | **nēowon** (via EwLongDiphthong + medial u-lowering) | ✗ — current TSV |
+| \**niwun* (Kroonen secondary; Fulk §6.11 starting form) | **\*nīwon** or **\*nīon** (with regular WGmc loss of \*w before \*u and contraction) — would give monosyllabic *nīon* like Goth. *niun* | ✗ |
+| \**nigun* / \**niʒun* (post-Bugge; van Helten, Ringe-Taylor explicit) | **nigon** trivially (i unchanged before velar /g/, *u* > *o* by medial u-lowering, no breaking, no *-w-*) | **✓ regular** |
+| \**niwuni-* (i-stem; Ross-Berns 1992, accepted by Fulk §4.4 n. 2) | i-mutation/raising fed into Bugge → *niʒuni* → *niʒun* → **nigon** ✓ | ✓ but circuitous |
+| paradigm-cell variant | n/a — no inflectional motivation, all OE cells show /g/ | — |
+
+**Reconstructions in the literature that explicitly give a /g/-bearing proto-form:**
+
+- **van Helten 1905:103** *neʒun(e), neʒunþ-* (post-Bugge) → northern *niʒun*
+- **Bülbring §202**: pre-OE *nigun*, leveled from *niugun* (u-umlaut diphthong)
+- **Ringe-Taylor 2014**: "northern WGmc ***nigun***" (verbatim)
+- **Sievers-Brunner §111**: (implicit) pre-OE *nigun*
+- **Hirt §70(d)**: as. *nigun* listed under intervocalic *w → ʒ
+- **Kroonen 2013** s.v. *newun-*: "secondary form \***niwun**" feeding velarization
+
+**The lautgesetzliche derivation under (α)** (Bugge–Kroonen):
+
+1. PIE *(h₁)néwn̥* → PGmc \**néwun(t)*
+2. WGmc raising of *e* > *i* before *u* (regular: cf. \**sebun → siƀun*; \**herut → hirut* in OS/OHG paradigms): \**néwun* → \***níwun**
+3. Bugge's law (NSGmc/Ingv): \*w > \*ʒ between high vowels, one rounded: \***níwun** → \***níʒun**
+4. PreOE → OE: medial *u* > *o* (medial u-lowering): \***níʒun** → ***nigon*** ✓
+
+**Under (β)** (Ringe / Fulk): step 2 yields *niwun*, then \**w* is lost regularly (Fulk §6.11, "PGmc. *w* was lost … before *u*"), giving NWGmc \**niun*. The numeral system inserts an **inorganic** /g/ to restore disyllabic shape parallel to *texan* 'ten'. This is essentially analogical, not a regular sound change.
+
+---
+
+## 5. Cognate evidence: Ingvaeonic / North Sea Germanic isogloss
+
+The presence of /-g-/ is exactly the **OE + OS + OF** ("Ingvaeonic") cluster, against OHG *niun* and Goth. *niun* / ON *níu*:
+
+- OE: *nigon, nigun, nigan, nyʒon* (WS, Mercian); Nbr. infl. *nione, ni(g)ona, niʒone*; Lindisfarne 90 *hundnéontig ~ -néantig* (with palatalized /j/-development).
+- OS: *nigun, nigon, nigen* (Heliand, Essen Heberolle, Freckenhorst Heberolle).
+- OF: *nigun, niugun, niogen, niögen, niügun*, Rüstringer *niügun, sigun* (with analogical /g/ from *nigun*); Wangerooge *niügn*.
+- OHG: *niun* (and once *niwan* in Otfrid 2.4.3, where /w/ is interpreted by van Helten p. 103 as a hiatus glide between i and u, not the original *w).
+- Goth.: *niun* (disyllabic).
+- ON: *níu*.
+
+Ringe & Taylor explicitly present this as a **shared northern-WGmc innovation** (paired with *tegaþa* 'tenth' showing the voiced Verner alternant in OE/OS), but admit "no convincing explanation … has been advanced." Fulk likewise identifies it as a **NSGmc** innovation. Kroonen's dating: post-WGmc *e > *i raising before *u, but pre-individual-language; therefore squarely Ingvaeonic.
+
+This is strong evidence that the OE proto-form should be reconstructed at the **Ingvaeonic/NSGmc** stage as **\*nigun**, with the velarization having already occurred in the common ancestor of OE/OS/OF.
+
+---
+
+## 6. Recommended fix
+
+The FST is faithfully producing the regular reflex of \**newun*, namely **nēowon**. To match attested **nigon**, one of the following is needed.
+
+### Option A — Change the TSV proto-form to NSGmc/Ingvaeonic ***nigun***
+
+- **Citation support:** ★★★★★ — explicitly reconstructed by Ringe-Taylor 2014 ("northern WGmc \**nigun*"), Bülbring §202, Sievers-Brunner §111, van Helten 1905:103 (\**neʒun(e)* → \**niʒun*), and presupposed by every philologist who treats OE *nigon* as showing "back-umlaut blocked by intervening velar."
+- **Lautgesetzlichkeit:** ✓ Trivial. \**nigun* → *nigon* by regular medial *u*-lowering only; no breaking (because no \*ew), no \*w-vocalization, no surprises.
+- **Risk to the cascade:** **Negligible.** No new rules. The TSV row becomes self-contained: the velarization step is encoded in the proto-form, which is appropriate since it pre-dates OE and is shared with OS/OFris.
+- **Comparison to §17.46 / §17.48 stress-tier markers:** This is the cleanest analogue. Just as we adopted \**ḯ* / \**ḗ* to encode paradigm-cell precision that the cascade cannot otherwise capture, we should adopt the NSGmc-stage proto-form \**nigun* to encode an Ingvaeonic innovation that pre-dates the proper-OE part of the cascade. **No new diacritic needed** — the bare segment \**nigun* suffices. (Optional: annotate the TSV with a "stage: NSGmc" or "post-velarization" note for documentation, but the surface form does not need a tier marker.)
+- **Etymology faithfulness:** The DEV_NOTES recommendation already floats this option ("change TSV proto from *newun to *nigun if that form is reconstructable"). The dossier confirms it is **explicitly reconstructed by R-T 2014, Bülbring, Sievers-Brunner, and van Helten** — i.e. it is solidly reconstructable, not speculative. (The PIE-level entry remains \**(h₁)néwn̥*; only the *immediate input* to the OE cascade changes to the NSGmc form.)
+
+### Option B — Add a new cascade rule encoding Bugge's law
+
+Implement: in the WGmc/Ingvaeonic tier, **\*VwV → \*VgV** when both flanking vowels are [+high] and at least one is [+round, +high].
+
+- **Citation support:** ★★★★ — Kroonen 2011b, 2013 (EDPG, headwords *newun-* and *ju(w)unþi-*); Hirt §70(d); van Helten 1905:103; Bugge PBrB 13:504.
+- **Lautgesetzlichkeit:** ✓ Strongest if you also add the prior \**e > \*i before *u* raising rule (which is independently needed for \**sebun → siƀun, \*herut* → *hirut* etc. in OS/OHG-style raising; OE \**sebun* did **not** raise, so this rule must be NSGmc-conditioned or precede the OE branch).
+- **Risk to the cascade:** **Moderate.** The rule must be tightly scoped to high-high environments (ideally with the rounded-vowel restriction per Kroonen) to avoid over-application to *niwjaz* (→ *nīwe*, where second vowel is non-high), *strawjan* (non-high), *kniwa-* (non-high), *frawjō* (non-high). Fortunately the rounded-high condition seems to do the right work: \**iwa, *iwō, *ewa* are all spared. But you would also need to make sure it captures the parallel \**juwunþi-* → *geoguð* and ideally \**suwō-* → *sugu* — which is a desirable side-effect, not a problem.
+- **Comparison to §17.46 / §17.48:** This is a more invasive change than the stress-tier markers, because it adds a phonological *rule* rather than a lexical diacritic. But it is **lautgesetzlich** in the strict sense (Kroonen formulates it as a regular sound law), so it is in principle the most "honest" solution.
+- **Pre-condition:** Requires a prior NSGmc raising step \**newun → *niwun* — without which Bugge's law would not feed (it requires both flanking vowels to be high). This raising is independently attested for \**sebun*-type forms in OS/OHG (Fulk §4.4) but **not** in OE *seofon*; so the raising rule, like Bugge's law itself, must be tier-restricted to a NSGmc/lexically-marked subset.
+
+### Option C — Lexical exception in the TSV (status-quo workaround)
+
+Mark *nigon* as an analogical/irregular outcome, accept the FST mismatch.
+
+- **Citation support:** ★★ — Ringe ("origin unclear"), Fulk ("inorganic ʒ … to maintain parallelism with disyllabic NSGmc *texan* 10"). This is a respectable position in the literature.
+- **Lautgesetzlichkeit:** ✗ Treats the *-g-* as analogical, not phonological.
+- **Risk to the cascade:** None.
+- **Loss:** Surrenders predictive power for an entire well-attested NSGmc isogloss. Loses the parallel with *jugund/geoguð* and *sugu*.
+
+### Option D — Use \**niwun-* as proto-form and add WGmc \*w-loss + numeral-specific *g*-insertion
+
+This mirrors Fulk §6.11 + §10.2's analytical line.
+
+- **Citation support:** ★★★ — Fulk explicitly endorses; Ross & Berns 1992; Kroonen mentions \**niwun* as the secondary form feeding velarization.
+- **Lautgesetzlichkeit:** Mixed. The \*w-loss is regular (Fulk §6.11); the *g*-insertion is analogical/lexical.
+- **Risk:** Adding a numeral-specific *g*-insertion rule is unattractive. Effectively a worse Option A.
+
+---
+
+### Summary recommendation
+
+**Adopt Option A.** Change the TSV proto-form from PGmc \**newun* (PIE-stage reconstruction) to NSGmc/Ingvaeonic \***nigun*** (post-velarization stage, explicitly reconstructed by Ringe-Taylor 2014, Bülbring, Sievers-Brunner, and van Helten 1905). This is the cleanest, most surgical fix: zero new rules, perfect lautgesetzlich derivation through the existing cascade, and consistent with the precedent of using a stage-appropriate input form when an Ingvaeonic innovation pre-dates the OE-proper portion of the cascade.
+
+**If the project later wants to model the Bugge–Kroonen velarization as a productive rule** (which would also automatically produce *geoguð* from \**juwunþi-*, *sugu* from \**suwō-*, etc., rather than relying on TSV-level encoding), implement **Option B as a future enhancement**, scoped tightly to high+high environments with a rounded-vowel constraint per Kroonen 2011b.
+
+Either way: the *nigon* case is **not** a paradigm-leveling exception comparable to *būgan, sċūfan*. It is a **shared NSGmc sound-change innovation** with explicit philological pedigree, and should be modelled as such, not flagged as an exception.
+
+### §17.50.2 — Bugge's-law controversy report (verbatim)
+
+# Bugge's Velarization (intervocalic *w → *ʒ / [+high] _ [+high,+round]): Status Report
+
+## (a) Status in current scholarship
+
+The rule has a long pedigree (Bugge 1888 *PBB* 13.504ff; van Helten 1905;
+Hirt *Handbuch* §70; Bülbring §202; Sievers–Brunner §111) but its status
+in the **modern** literature is decidedly **mixed-to-skeptical**. There
+is no consensus that it is a regular Lautgesetz.
+
+**Endorsed as regular** (cascadable):
+- **Kroonen 2013, EDPG**: clearest formulation. Under *newun-*: "velarization
+  only occurred between two high vowels of which one was rounded
+  (Kroonen 2011b)"; under *ju(w)unþi-*: "regular velarization of the *w
+  … between two high vowels (one of them being rounded)."
+- **Kroonen 2011** (*Proto-Germanic n-stems*, p. 158) treats the law as
+  live but **narrow and tentative**.
+- Older Junggrammatiker tradition (Bugge, van Helten, Hirt, Bülbring,
+  Sievers–Brunner). But **Hirt himself** is already cautious: §70 says
+  "**Sicher scheint nur** ahd. jugund, as. juguth, ae. geogud" — only
+  one example is "secure"; for *sugu*, *trugil*, *hrúga*, *muggia* he
+  prefers a "Determinativ" (suffix) explanation.
+
+**Rejected / treated as inorganic or analogical**:
+- **Ringe & Taylor 2014** (*Development of Old English*, p. 166): "**No
+  convincing explanation for the shape of 'nine' has been advanced**."
+- **Fulk 2018** (*Comparative Grammar of the Early Germanic Languages*,
+  p. 227 §10.2): "PGmc. *niwun- should have lost w … OHG niun thus
+  appears to be etymological, whereas an **inorganic ʒ replaced the
+  lost w in NSGmc., probably to maintain parallelism with disyllabic
+  NSGmc. *texan 'ten'**." Explicitly **non-phonological**.
+- **Ross & Berns 1992**: derive raised *i* of *nigon* from a parallel
+  **i-stem *niwuni-**, not from any velarization rule.
+- **Howell & Salmons 1988** / **Howell 1991**: treat *niugun*-type forms
+  in terms of place-feature spread / back-umlaut, **not** Bugge fortition.
+- Campbell §242, Hogg, Brunner: list *nigon* descriptively without invoking
+  a regular *w > ʒ rule.
+
+In handbook-grade contemporary scholarship (Ringe-Taylor, Fulk, Hogg,
+Campbell, Howell-Salmons), Bugge's velarization is either **rejected
+outright, ignored, or replaced** by morphological / analogical
+explanations. **Kroonen is essentially the only major modern voice**
+asserting it as a regular conditioned change, and even he restricts it
+to a tiny, narrowly-defined set.
+
+## (b) Strength of the conditioning environment
+
+**Fuzzy.** Even among proponents the formulation has wandered:
+- Bugge 1888 / Hirt: "intervocalic *w > g", no tight environment.
+- Kroonen 2013 EDPG: V[+high] _ V[+high], **at least one [+round]**.
+- Kroonen 2011b: "**two** surrounding labial/rounded vowels".
+- Bülbring §202 / Sievers–Brunner §111: stated as a sporadic byproduct
+  of OE/WGmc back-umlaut and *iu*-monophthongization, not a PGmc/NSGmc
+  rule per se.
+
+The "core" lexical set is small and shaky: *nigon* (where *e > i raising
+itself is contested), *geoguð / jugund* (the only one **Hirt** considers
+secure), *sugu* (Hirt assigns to suffix *-gō*), and a scatter of doubtful
+items. **The probative lexicon shrinks to essentially two words**
+(*nigon*, *geoguð*) once items with competing morphological explanations
+are removed.
+
+Gothic *niun*, *junds* show the law cannot be PGmc; OHG *niun* (vs.
+OE/OS/OFris *nigun/nigon*) means it cannot even be Pan-WGmc. It is at
+best a **NSGmc / Ingvaeonic** innovation. Kroonen's "West Germanic"
+label is already too broad on the OHG evidence.
+
+## (c) Risk of over-application
+
+**Substantial.** The rule's empirical base is so thin (~2 secure items)
+that any cascade producing it productively will, by Neogrammarian
+standards, generate forms not actually attested. That is precisely why
+Fulk calls the *ʒ "inorganic" and Ringe–Taylor decline to give a
+phonological account.
+
+Counter-cases the cascade would have to navigate: ***niwjaz* 'new'**
+(safe under Kroonen's V[+high]_V[+high] only if *wj* is firewall);
+***kniwa-*, *trewwa-*, *frawjō*** (safe if both flanks must be high);
+***siwun- (*sebun)*** (no *w; safe by accident); ***triwwiz*** (geminate;
+safe). Each requires careful encoding. Probative cases drop further
+once Ross–Berns's i-stem *niwuni- is accepted as the etymon for *nigon.
+
+## (d) Recommendation
+
+**Do not implement Bugge's velarization as a productive cascade rule.**
+Doing so would adopt a **minority, controversial position** (essentially
+Kroonen alone among modern handbook authors) over the consensus of the
+two leading current handbooks of OE / Early Germanic historical phonology
+(Ringe–Taylor 2014; Fulk 2018), both of which **explicitly reject a
+regular-sound-law account**. It is **not** a defensible Lautgesetzlich
+move under the current state of the field.
+
+Recommended alternatives (in order of mainstream support):
+1. **Lexical / morphological route (Fulk-style)**: treat *nigon, *geoguð,
+   *sugu as items where the *-g- is morphologically-introduced or
+   analogical. In our cascade this means: encode the post-velarization
+   form in the TSV PROTOFORM and let the cascade derive only the
+   regular OE-internal residue. ↔ This is Option A from the main dossier.
+2. **Ross–Berns route**: posit i-stem *niwuni- as the actual etymon for
+   *nigon (also explains *i without need for *e > i / _Cu). Indirect
+   support for Option A's *nigun reconstruction.
+3. **Kroonen route**: only defensible if flagged as a **minority
+   hypothesis**, scoped to NSGmc/Ingvaeonic, and gated lexically. In
+   practice indistinguishable from the lexical-listing approach in (1).
+
+The cleanest engineering choice is therefore: **do not add a productive
+cascade rule; insert *-g- by lexical specification on the small attested
+set.**
+
+## (e) Further sources worth consulting (not yet in repo)
+
+- Kroonen 2011b (the EDPG cross-reference; check *Amsterdamer Beiträge*
+  or *NOWELE*).
+- Ross & Berns 1992 in Gvozdanović (ed.), *Indo-European Numerals*.
+- Stiles 1985–86 *NOWELE* (numeral-specific morphological accounts).
+- Boutkan 1995 *Germanic 'Auslautgesetze'*; Boutkan & Siebinga 2005
+  *OFri Etymological Dictionary*.
+- Versloot 2014/2017 on Frisian numeral phonology.
+- Goblirsch 2018 *Gemination, Lenition, and Vowel Lengthening* (CUP).
+- Iverson & Salmons in *Handbook of Germanic Linguistics*.
