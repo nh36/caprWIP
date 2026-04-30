@@ -26,32 +26,41 @@ OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
-# STAGES must mirror the save order in Germanic/fsts/old_english_sandbox.txt
-# exactly — each entry corresponds one-to-one to a `regex OESandboxAfterX;
-# save stack ... .bin` pair there. If the sandbox order changes, update both.
+# STAGES mirrors Germanic/fsts/old_english_sandbox.txt exactly: one entry per
+# `save stack old_english_sandbox_after_<slug>.bin` line, in cascade order.
+# Each stage is one rule from OldEnglishReflexes — no bundles, no Modern
+# English contamination. If the sandbox changes, regenerate this list.
 #
-# Key non-obvious points:
-#   - NWGmcFinalLongORaising fires EARLY (right after NWGmcULowering), and
-#     PGmcFinalZDeletion fires right after it — before NWGmcUnstressedORaising.
-#   - OEMedUnstressedULowering fires AFTER OEInterStressRaising (not with the
-#     other NWGmc rules). Historically tricky — it operates on unstressed *u.
-#   - PWGmcFinalBareALoss and PWGmcSurvivingBimoricOUnrounding sit between
-#     MedUnstressedULowering and AngloFrisianBrightening.
-#   - Two-stage *ō shortening (§15.8): EarlyOShortening → UnstressedFrontingEarly →
-#     LateOShortening → UnstressedLongVowelShortening → UnstressedAEMerger
-#     (Campbell §§333, 355, 369).
+# STAGE_HEADERS marks chronological section breakpoints for the trace report.
+# These are typographical (markdown) headers — they do NOT change the cascade
+# order or rule application. The five sections track historical phases:
+#   1. Proto-Germanic consonant inheritance
+#   2. Proto-West Germanic developments (PWGmcChanges bundle, individuated)
+#   3. Northwest Germanic developments (PNWGmc-era vowel/nasal changes)
+#   4. Old English (Anglo-Frisian + AF→OE rules)
+#   5. Orthography & surface
+#
+# Some PGmc/PWGmc rules (PGmcBAllophony, PWGmcFinalBareALoss,
+# NWGmcInStemNLoss, etc.) appear in the OE section because the cascade
+# applies them late for chronological-interaction reasons — they are kept in
+# their cascade position rather than re-grouped by historical phase.
 STAGES: List[Tuple[str, str]] = [
-    # Stage 1: Proto Input
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
-    ("InitialKn", "old_english_sandbox_after_initial_kn.bin"),
-    ("Palatalisation", "old_english_sandbox_after_palatalisation.bin"),
-    ("ConsonantRules", "old_english_sandbox_after_consonant_rules.bin"),
-    # Stage 2: PWGmc Changes
-    ("WestGermanic", "old_english_sandbox_after_west_germanic.bin"),
-    # Stage 3: NWGmc Vowel Changes (early)
-    ("NWGmcUnstressedAiMonoph", "old_english_sandbox_after_nwgmc_unstressed_ai_monoph.bin"),
+    ("GmSimplification", "old_english_sandbox_after_gm_simplification.bin"),
+    ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
+    ("PWGmcAiMonophthongization", "old_english_sandbox_after_pwgmc_ai_monophthongization.bin"),
+    ("NWGmcAToUBeforeM", "old_english_sandbox_after_nwgmc_a_to_u_before_m.bin"),
+    ("PWGmcEarlyIApocope", "old_english_sandbox_after_pwgmc_early_i_apocope.bin"),
+    ("PWGmcFinalOrLowering", "old_english_sandbox_after_pwgmc_final_or_lowering.bin"),
+    ("PWGmcCoronalWAssimilation", "old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin"),
+    ("PWGmcIjContraction", "old_english_sandbox_after_pwgmc_ij_contraction.bin"),
+    ("PWGmcJGemination", "old_english_sandbox_after_pwgmc_j_gemination.bin"),
+    ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
+    ("PWGmcLThVoicing", "old_english_sandbox_after_pwgmc_l_th_voicing.bin"),
+    ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
+    ("NWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_nwgmc_unstressed_ai_monophthongization.bin"),
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
-    ("WsPalatalGlide", "old_english_sandbox_after_ws_palatal_glide.bin"),
+    ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
     ("NWGmcStressedMonosyllableORaising", "old_english_sandbox_after_nwgmc_stressed_monosyllable_o_raising.bin"),
     ("NWGmcFinalLongORaising", "old_english_sandbox_after_nwgmc_final_long_o_raising.bin"),
@@ -61,85 +70,87 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcNStemNLoss", "old_english_sandbox_after_nwgmc_n_stem_n_loss.bin"),
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
-    # Stage 4: Nasal-Spirant Changes
-    ("NasalSpirantLengthening", "old_english_sandbox_after_nasal_spirant_lengthening.bin"),
-    ("NasalSpirantLoss", "old_english_sandbox_after_nasal_spirant_loss.bin"),
+    ("NWGmcNasalSpirantLengthening", "old_english_sandbox_after_nwgmc_nasal_spirant_lengthening.bin"),
+    ("NWGmcNasalSpirantLoss", "old_english_sandbox_after_nwgmc_nasal_spirant_loss.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
-    # Stage 5: Anglo-Frisian and Early OE Vowel Changes
-    ("AwjGlideFormation", "old_english_sandbox_after_awj_glide_formation.bin"),
-    ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
-    ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
-    ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),
-    ("EwLongDiphthong", "old_english_sandbox_after_ew_long_diphthong.bin"),
-    ("AwLongDiphthong", "old_english_sandbox_after_aw_long_diphthong.bin"),
-    ("PrefixAReductionEarly", "old_english_sandbox_after_prefix_a_reduction_early.bin"),
-    ("InterStressRaising", "old_english_sandbox_after_inter_stress_raising.bin"),
-    ("StripSecondaryStress", "old_english_sandbox_after_strip_secondary_stress.bin"),
-    ("MedUnstressedULowering", "old_english_sandbox_after_med_unstressed_u_lowering.bin"),
+    ("OEAwjGlideFormation", "old_english_sandbox_after_oe_awj_glide_formation.bin"),
+    ("OEAuFronting", "old_english_sandbox_after_oe_au_fronting.bin"),
+    ("OEWWSimplification", "old_english_sandbox_after_oe_ww_simplification.bin"),
+    ("OEDiphthongLeveling", "old_english_sandbox_after_oe_diphthong_leveling.bin"),
+    ("OEEwLongDiphthong", "old_english_sandbox_after_oe_ew_long_diphthong.bin"),
+    ("OEAwLongDiphthong", "old_english_sandbox_after_oe_aw_long_diphthong.bin"),
+    ("OEPrefixAReductionEarly", "old_english_sandbox_after_oe_prefix_a_reduction_early.bin"),
+    ("OEInterStressRaising", "old_english_sandbox_after_oe_inter_stress_raising.bin"),
+    ("OECompoundLinkingSyncope", "old_english_sandbox_after_oe_compound_linking_syncope.bin"),
+    ("OEStripSecondaryStress", "old_english_sandbox_after_oe_strip_secondary_stress.bin"),
+    ("OEWICombinativeUUmlaut", "old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin"),
+    ("OEMedUnstressedULowering", "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin"),
     ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
     ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
     ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
-    ("Breaking", "old_english_sandbox_after_breaking.bin"),
-    ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
-    ("ARestoration", "old_english_sandbox_after_a_restoration.bin"),
-    # Stage 6: Apocope and Nasalization
-    ("HeavySyllableNasalApocope", "old_english_sandbox_after_heavy_syllable_nasal_apocope.bin"),
-    ("SecondaryNasalization", "old_english_sandbox_after_secondary_nasalization.bin"),
-    ("FinalSchwaApocope", "old_english_sandbox_after_final_schwa_apocope.bin"),
-    # Stage 7: Gemination and Allophony
-    ("CompoundLinkingSyncope", "old_english_sandbox_after_compound_linking_syncope.bin"),
-    ("BAllophony", "old_english_sandbox_after_b_allophony.bin"),
+    ("OEBreaking", "old_english_sandbox_after_oe_breaking.bin"),
+    ("OEVelarFricativePalatalization", "old_english_sandbox_after_oe_velar_fricative_palatalization.bin"),
+    ("OEARestoration", "old_english_sandbox_after_oe_a_restoration.bin"),
+    ("OEHeavySyllableNasalApocope", "old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin"),
+    ("OESecondaryNasalization", "old_english_sandbox_after_oe_secondary_nasalization.bin"),
+    ("PGmcBAllophony", "old_english_sandbox_after_pgmc_b_allophony.bin"),
     ("SieversLawSyncope", "old_english_sandbox_after_sievers_law_syncope.bin"),
-    # Stage 8: Palatalization
-    ("SkPalatalization", "old_english_sandbox_after_sk_palatalization.bin"),
-    ("VelarPalatalization", "old_english_sandbox_after_velar_palatalization.bin"),
-    ("PostVelarWLoss", "old_english_sandbox_after_post_velar_w_loss.bin"),
-    ("WLossBeforeI", "old_english_sandbox_after_w_loss_before_i.bin"),
-    # Stage 9: Umlaut and Mutation
-    ("IUmlaut", "old_english_sandbox_after_i_umlaut.bin"),
-    ("WsPalatalDiphthongization", "old_english_sandbox_after_ws_palatal_diphthongization.bin"),
-    ("JClusterCoalescence", "old_english_sandbox_after_j_cluster_coalescence.bin"),
-    ("NasalDissimilation", "old_english_sandbox_after_nasal_dissimilation.bin"),
-    ("BackMutation", "old_english_sandbox_after_back_mutation.bin"),
-    ("WsPalatalUmlaut", "old_english_sandbox_after_ws_palatal_umlaut.bin"),
-    # Stage 10: Late Sound Changes
-    ("WeakTailNasalLoss", "old_english_sandbox_after_weak_tail_nasal_loss.bin"),
-    ("WeightMarkers", "old_english_sandbox_after_weight_markers.bin"),
-    ("HighVowelApocope", "old_english_sandbox_after_high_vowel_apocope.bin"),
-    ("MedialSyncope", "old_english_sandbox_after_medial_syncope.bin"),
-    ("LAdjacentSyncope", "old_english_sandbox_after_l_adjacent_syncope.bin"),
-    ("DentalAssimilation", "old_english_sandbox_after_dental_assimilation.bin"),
-    ("PreconsonantalDegemination", "old_english_sandbox_after_preconsonantal_degemination.bin"),
-    # Stage 11: Two-stage *ō shortening (§15.8) wrapped around fronting + unstressed merger
-    ("EarlyOShortening", "old_english_sandbox_after_early_o_shortening.bin"),
-    ("UnstressedFrontingEarly", "old_english_sandbox_after_unstressed_fronting_early.bin"),
-    ("LateOShortening", "old_english_sandbox_after_late_o_shortening.bin"),
-    ("UnstressedLongVowelShortening", "old_english_sandbox_after_unstressed_long_vowel_shortening.bin"),
-    ("UnstressedAEMerger", "old_english_sandbox_after_unstressed_ae_merger.bin"),
-    ("UnstressedIMarking", "old_english_sandbox_after_unstressed_i_marking.bin"),
-    ("MedUnstressedILowering", "old_english_sandbox_after_med_unstressed_i_lowering.bin"),
-    ("PrefixIReduction", "old_english_sandbox_after_prefix_i_reduction.bin"),
-    ("PrefixAReductionLate", "old_english_sandbox_after_prefix_a_reduction_late.bin"),
-    # Stage 12: Final Cleanup
-    ("WeakTailReduction", "old_english_sandbox_after_weak_tail_reduction.bin"),
-    ("JLossAfterHeavy", "old_english_sandbox_after_j_loss_after_heavy.bin"),
-    ("FinalGeminateSimplification", "old_english_sandbox_after_final_geminate_simplification.bin"),
-    ("JStrengtheningAfterFrontDiphthong", "old_english_sandbox_after_j_strengthening_after_front_diphthong.bin"),
-    ("IntervocalicJVocalization", "old_english_sandbox_after_intervocalic_j_vocalization.bin"),
-    ("UnstressedEIContraction", "old_english_sandbox_after_unstressed_ei_contraction.bin"),
-    ("WeightCleanup", "old_english_sandbox_after_weight_cleanup.bin"),
-    ("HLoss", "old_english_sandbox_after_h_loss.bin"),
-    ("Contraction", "old_english_sandbox_after_contraction.bin"),
-    ("RMetathesis", "old_english_sandbox_after_r_metathesis.bin"),
-    # Stage 13: Surface / orthography
-    ("ProtoToOE", "old_english_sandbox_after_proto_to_oe.bin"),
-    ("WGlide", "old_english_sandbox_after_w_glide.bin"),
-    ("GhMarker", "old_english_sandbox_after_gh_marker.bin"),
-    ("GlideDeletion", "old_english_sandbox_after_glide_deletion.bin"),
-    ("Epenthesis", "old_english_sandbox_after_epenthesis.bin"),
-    ("Orthography", "old_english_sandbox_after_orthography.bin"),
-    ("Surface", "old_english_sandbox_after_surface.bin"),
+    ("OESkPalatalization", "old_english_sandbox_after_oe_sk_palatalization.bin"),
+    ("OEVelarPalatalization", "old_english_sandbox_after_oe_velar_palatalization.bin"),
+    ("OEPostVelarWLoss", "old_english_sandbox_after_oe_post_velar_w_loss.bin"),
+    ("OEWLossBeforeI", "old_english_sandbox_after_oe_w_loss_before_i.bin"),
+    ("OEIUmlaut", "old_english_sandbox_after_oe_i_umlaut.bin"),
+    ("OEWsPalatalDiphthongization", "old_english_sandbox_after_oe_ws_palatal_diphthongization.bin"),
+    ("OEJClusterCoalescence", "old_english_sandbox_after_oe_j_cluster_coalescence.bin"),
+    ("OENasalDissimilation", "old_english_sandbox_after_oe_nasal_dissimilation.bin"),
+    ("OEBackMutation", "old_english_sandbox_after_oe_back_mutation.bin"),
+    ("OEWsPalatalUmlaut", "old_english_sandbox_after_oe_ws_palatal_umlaut.bin"),
+    ("OEWeakTailNasalLoss", "old_english_sandbox_after_oe_weak_tail_nasal_loss.bin"),
+    ("OEWeightMarkers", "old_english_sandbox_after_oe_weight_markers.bin"),
+    ("OEHighVowelApocope", "old_english_sandbox_after_oe_high_vowel_apocope.bin"),
+    ("NWGmcInStemNLoss", "old_english_sandbox_after_nwgmc_in_stem_n_loss.bin"),
+    ("OEMedialSyncope", "old_english_sandbox_after_oe_medial_syncope.bin"),
+    ("OELAdjacentSyncope", "old_english_sandbox_after_oe_l_adjacent_syncope.bin"),
+    ("OEDentalAssimilation", "old_english_sandbox_after_oe_dental_assimilation.bin"),
+    ("OEPreconsonantalDegemination", "old_english_sandbox_after_oe_preconsonantal_degemination.bin"),
+    ("OEEarlyOShortening", "old_english_sandbox_after_oe_early_o_shortening.bin"),
+    ("OEUnstressedFrontingEarly", "old_english_sandbox_after_oe_unstressed_fronting_early.bin"),
+    ("OELateOShortening", "old_english_sandbox_after_oe_late_o_shortening.bin"),
+    ("OEUnstressedLongVowelShortening", "old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin"),
+    ("OEUnstressedAEMerger", "old_english_sandbox_after_oe_unstressed_ae_merger.bin"),
+    ("OEMedUnstressedILowering1", "old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin"),
+    ("OEMedUnstressedILowering", "old_english_sandbox_after_oe_med_unstressed_i_lowering.bin"),
+    ("OEPrefixIReduction", "old_english_sandbox_after_oe_prefix_i_reduction.bin"),
+    ("OEPrefixAReductionLate", "old_english_sandbox_after_oe_prefix_a_reduction_late.bin"),
+    ("OEWeakTailReduction", "old_english_sandbox_after_oe_weak_tail_reduction.bin"),
+    ("OEJLossAfterHeavy", "old_english_sandbox_after_oe_j_loss_after_heavy.bin"),
+    ("OEFinalGeminateSimplification", "old_english_sandbox_after_oe_final_geminate_simplification.bin"),
+    ("OEJStrengtheningAfterFrontDiphthong", "old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin"),
+    ("OEIntervocalicJVocalization", "old_english_sandbox_after_oe_intervocalic_j_vocalization.bin"),
+    ("OEUnstressedEIContraction", "old_english_sandbox_after_oe_unstressed_ei_contraction.bin"),
+    ("OEWeightCleanup", "old_english_sandbox_after_oe_weight_cleanup.bin"),
+    ("OEHLoss", "old_english_sandbox_after_oe_h_loss.bin"),
+    ("OEContraction", "old_english_sandbox_after_oe_contraction.bin"),
+    ("OERMetathesis", "old_english_sandbox_after_oe_r_metathesis.bin"),
+    ("OEEpentheticVowel", "old_english_sandbox_after_oe_epenthetic_vowel.bin"),
+    ("OELateUnstressedAgSuffix", "old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin"),
+    ("OECjCleanup", "old_english_sandbox_after_oe_cj_cleanup.bin"),
+    ("OEXsMerge", "old_english_sandbox_after_oe_xs_merge.bin"),
+    ("OldEnglishOrthography", "old_english_sandbox_after_old_english_orthography.bin"),
+    ("OEGlideUToEo", "old_english_sandbox_after_oe_glide_u_to_eo.bin"),
+    ("OldEnglishRemoveStars", "old_english_sandbox_after_old_english_remove_stars.bin"),
+    ("OldEnglishSurface", "old_english_sandbox_after_old_english_surface.bin"),
 ]
+
+# Markdown section headers injected before the named stage in the trace
+# output. Section dividers only — they do not alter the cascade.
+STAGE_HEADERS: Dict[str, str] = {
+    "ProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
+    "PWGmcAiMonophthongization": "## Section 2: Proto-West Germanic developments",
+    "NWGmcUnstressedAiMonophthongization": "## Section 3: Northwest Germanic developments",
+    "OEAwjGlideFormation": "## Section 4: Old English",
+    "OldEnglishOrthography": "## Section 5: Orthography & surface",
+}
 
 
 def normalize_proto(raw: str) -> str:
@@ -476,7 +487,7 @@ def write_report(
     stage_fires: Dict[str, List[str]] = defaultdict(list)
     fronted_rows: List[str] = []; unfronted_rows: List[str] = []; fronting_correct: List[str] = []; fronting_unfronting_correct: List[str] = []; fronting_unfronting_incorrect: List[str] = []
     for row in rows:
-        afb = run_stage(bin_dir, "old_english_sandbox_after_anglo_frisian_brightening.bin", row["proto_norm"]); ar = run_stage(bin_dir, "old_english_sandbox_after_a_restoration.bin", row["proto_norm"])
+        afb = run_stage(bin_dir, "old_english_sandbox_after_anglo_frisian_brightening.bin", row["proto_norm"]); ar = run_stage(bin_dir, "old_english_sandbox_after_oe_a_restoration.bin", row["proto_norm"])
         afb_out = next((o for o in afb if o != "+?"), ""); ar_out = next((o for o in ar if o != "+?"), "")
         fronted = is_a_fronting_context(row["proto_norm"]) and oe_first_is_front(afb_out); unfronted = fronted and oe_first_is_back(ar_out)
         outputs = apply_down(bin_path, row["proto_norm"])
@@ -551,6 +562,11 @@ def write_report(
             lexeme_label = f"{row['concept']} :: {row['proto']}"
             for label, outputs in trace_lexeme(row["proto_norm"], bin_dir):
                 base_label = label.split(" [", 1)[0]
+                header = STAGE_HEADERS.get(base_label)
+                if header is not None:
+                    lines.append("")
+                    lines.append(header)
+                    lines.append("")
                 if prev_outputs is not None and outputs != prev_outputs:
                     stage_fires[base_label].append(lexeme_label)
                 prev_outputs = outputs
