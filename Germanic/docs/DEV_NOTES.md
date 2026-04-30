@@ -42594,3 +42594,83 @@ universally attested with the un-umlauted form, demonstrating that
 filling a recognised gap in the cascade by encoding a rule that all
 major handbooks describe explicitly.  The rule is supported, not
 merely tolerated, by every source consulted.
+
+
+## §17.49 Stressed long-ē tier (`*ḗ`) — extending the §17.46 stress-tier convention
+
+**Branch:** `refactor-stressed-long-e` (14 commits).
+
+**Motivation.** §17.48 introduced the long stressed diphthong `*ḗo` for
+the contraction product *téxun → *tḗun → *tēun → tēon* (and parallel
+ordinal/compound forms).  The introduction of `*ḗo` and the older
+`*ḗa` (lengthened breaking, §17.46) created an inconsistency: the
+stressed long monophthong `*ḗ` was not represented even though the
+TSV has ~16 lemmas with phonetically stressed root-syllable long *ē*
+(*dēdiz*, *lētaną*, *rēdaną*, *mēnōθz*, *nēdrōn*, *spēnuz*, etc.).
+Per the principle established in §17.46 ("if we mark stress on long
+*ī, we must mark it on long *ē too"), this branch retrofits `*ḗ`
+throughout the cascade.
+
+**Codepoint.** `ḗ` is U+1E17 LATIN SMALL LETTER E WITH MACRON AND
+ACUTE — a single precomposed NFC codepoint (parallel to `ḯ` U+1E2F).
+Verified: TSV and `germanic.txt` are NFC-normalized; no decomposed
+e+macron+acute sequences exist in the codebase.
+
+**Approach (parallel symbol, collapse at orthography).**
+
+1. **Phase 1** — alphabet/class definitions (5 sub-commits):
+   - `pgrmLongVowel` accepts `{ḗ}:{*ḗ}` on input.
+   - `PGmcStarVowel`, `PGmcStarAcuteVowel`, `PGmcStarFrontVowel`,
+     `PGmcStarStressedVowel` include `{*ḗ}`.
+   - `EnglishStarLongVowel`, `EnglishStarNonHighVowel`,
+     `GermanStopShiftFrontVowel` include `{*ḗ}`.
+
+2. **Phase 2** — orthography demarking (1 commit):
+   - `OldEnglishRemoveStars`: `{*ḗ} -> ē`
+   - `GermanRemoveStars`: `{*ḗ} -> ē`
+   - `EnglishLongVowelRealisation`: `{*ḗ} -> {iː}`
+
+3. **Phase 3** — rule-by-rule parallel plumbing (3 sub-commits):
+   - `NWGmcLongELowering`: add `{*ḗ} -> {*ǣ}` (stress dropped: no *ǣ́ this branch).
+   - `NWGmcLongENasalRounding`: add `{*ḗ} -> {*ō}` (stress dropped: no *ṓ).
+   - `NWGmcNasalSpirantLengthening`: change `{*é} -> {*ē}` to
+     `{*é} -> {*ḗ}` (stress preserved per §17.46 convention).
+   - `OEWsPalatalDiphthongization`: add `{*ḗ} -> {*īe}`.
+   - `OEContraction`: add `{*ḗ}{*a} -> {*ḗ}` and `{*ḗ}{*e} -> {*ḗ}`.
+   - `GermanLongVowelRules`: add `{*ḗ} -> {*ā}` before `*r` and `*l`.
+
+4. **Phase 4** — audit only: `pgrmWeakTailVowel` and
+   `EnglishWeakTailVowelStar` deliberately do **not** contain `{*ḗ}`;
+   they recognize unstressed-tail vowels by definition (this is the
+   whole point of the stress-tier distinction — see §17.46).
+
+5. **Phase 5** — TSV root-syllable promotion (5 batches of ~3 lemmas):
+   16 lemmas promoted from `*ē` to `*ḗ` in PROTOFORM and PROTO columns.
+   Suffix-`*ē` forms (`*fastēną`, `*fadēr`, `*mōdēr`, `*swestēr`,
+   `*xabēną`/`*líbēθi`/`*xábēθi`, `*sparēną`, `*wakēną`, `*fulgēną`,
+   `*westanē`/`*wéstanē`, `*libēną`) deliberately untouched: the *ē*
+   in those positions is genuinely unstressed (class III weak
+   thematic, r-stem suffix, adverb-final).
+
+**Verification.** Mismatch report stable at **10 mismatches**
+throughout all 14 commits. Probe outputs invariant across the
+refactor (sample: *dḗdiz → dǣd*, *lḗtaną → lǣtan*, *rḗdaną → rǣdan*,
+*mḗnōθz → mōnaþ*, *spḗnuz → spōn*, *jḗrą → ġēar*, *téxun → tēon*,
+*sláxaną → slēan*, *féxu → feoh*).
+
+**Stress-on-output convention (where to drop, where to preserve).**
+The general rule: stress is preserved only where the receiving
+long-vowel tier exists. Since this branch plumbs only `*ḗ` (not
+`*ǣ́`/`*ṓ`/`*ā́`/etc.), rules whose output is `*ǣ`, `*ō`, or `*ā` drop
+stress on the long-vowel side. This is acceptable because no
+downstream rule consumes stress on those vowels — stress information
+is only used to differentiate `*ē` (unstressed) from `*ḗ` (stressed)
+for the purpose of `OEUnstressedLongVowelShortening2` (which must
+fire on suffix `*ē` but not on root `*ḗ`). Future branches may extend
+the stress tier to other long vowels (`*ā́`, `*ī́`, `*ṓ`, `*ǣ́`, `*ȳ́`)
+as needed.
+
+**Files changed.** Source: `Germanic/fsts/germanic.txt`,
+`Germanic/data/germanic-aligned-final.tsv`. Generated: all *.bin in
+`Germanic/fsts/`, `backend/`, repo root.
+
