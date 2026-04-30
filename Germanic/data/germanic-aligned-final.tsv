@@ -1,8 +1,8 @@
 ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUCTURE	BORROWING	CONCEPT	PROTO	GLOSSID
-510	ɑ d ə r	*nēdrōn	ɑ d ə r ( - - )	ɑdər	adder	139	Dutch					adder	*nēdrōn	1
-509	æ d ə	*nēdrōn	æ d ə r ( - - )	ædə	adder	139	English					adder	*nēdrōn	1
-1933	n ǣ d r e	*nēdrōn	æ d ə r ( - - )	ædə	nǣdre	139	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			adder	*nēdrōn	1
-508	ɔ t ə r	*nēdrōn	ɔ t ə r ( - - )	ɔtər	Otter	139	German					adder	*nēdrōn	1
+510	ɑ d ə r	*nḗdrōn	ɑ d ə r ( - - )	ɑdər	adder	139	Dutch					adder	*nḗdrōn	1
+509	æ d ə	*nḗdrōn	æ d ə r ( - - )	ædə	adder	139	English					adder	*nḗdrōn	1
+1933	n ǣ d r e	*nḗdrōn	æ d ə r ( - - )	ædə	nǣdre	139	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			adder	*nḗdrōn	1
+508	ɔ t ə r	*nḗdrōn	ɔ t ə r ( - - )	ɔtər	Otter	139	German					adder	*nḗdrōn	1
 1431	b ɑ k ə	*bákaną	b ɑ k ə - ( - - )	bɑkə	bakken	391	Dutch					bake	*bákaną	2
 1430	b eɪ k	*bákaną	b eɪ k - - ( - - )	beɪk	bake	391	English					bake	*bákaną	2
 1934	b a c a n	*bákaną	b eɪ k - - ( - - )	beɪk	bacan	391	Old_English	Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			bake	*bákaną	2
@@ -65,7 +65,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1451	b ɪ t ə n	*bídjaną	b ɪ t - ə n ( - - )	bɪtən	bitten	397	German					bid	*bídjaną	15
 472	b aː r	*barwōn	b aː r ( - - - )	baːr	baar	129	Dutch					bier	*barwōn	16
 471	b ɪə	*barwōn	b ɪə r ( - - - )	bɪə	bier	129	English					bier	*barwōn	16
-1949	b ǣ r	*bērō	b ɪə r ( - - - )	bɪə	bǣr	129	Old_English	Wiktionary: PGmc *bērō > OE bēr/bǣr (bier); *barwōn is wrong lexeme				bier	*bērō	16
+1949	b ǣ r	*bḗrō	b ɪə r ( - - - )	bɪə	bǣr	129	Old_English	Wiktionary: PGmc *bērō > OE bēr/bǣr (bier); *barwōn is wrong lexeme				bier	*bḗrō	16
 470	b aː r ə	*barwōn	b aː r ( - ə - )	baːrə	Bahre	129	German			C V C		bier	*barwōn	16
 584	b ɪ n d ə	*bíndaną	b ɪ n d ə - ( - - )	bɪndə	binden	160	Dutch					bind	*bíndaną	17
 583	b aɪ n d	*bíndaną	b aɪ n d - - ( - - )	baɪnd	bind	160	English					bind	*bíndaną	17
@@ -214,10 +214,10 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	STRUC
 1084	d iː l	*dáiliz	d iː l ( - - )	diːl	deal	297	English					deal	*dáiliz	50
 1986	d ǣ l	*dáiliz	d iː l ( - - )	diːl	dǣl	297	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			deal	*dáiliz	50
 1083	t ai l	*dáiliz	t ai l ( - - )	tail	Teil	297	German					deal	*dáiliz	50
-580	d aː t	*dēdiz	d aː t ( - - )	daːt	daad	159	Dutch					deed	*dēdiz	51
-579	d iː d	*dēdiz	d iː d ( - - )	diːd	deed	159	English					deed	*dēdiz	51
-1987	d ǣ d	*dēdiz	d iː d ( - - )	diːd	dǣd	159	Old_English	R/T vol.2 13823: PGmc *dēdiz > WS OE dǣd (not Anglian dēd)				deed	*dēdiz	51
-578	t aː t	*dēdiz	t aː t ( - - )	taːt	Tat	159	German					deed	*dēdiz	51
+580	d aː t	*dḗdiz	d aː t ( - - )	daːt	daad	159	Dutch					deed	*dḗdiz	51
+579	d iː d	*dḗdiz	d iː d ( - - )	diːd	deed	159	English					deed	*dḗdiz	51
+1987	d ǣ d	*dḗdiz	d iː d ( - - )	diːd	dǣd	159	Old_English	R/T vol.2 13823: PGmc *dēdiz > WS OE dǣd (not Anglian dēd)				deed	*dḗdiz	51
+578	t aː t	*dḗdiz	t aː t ( - - )	taːt	Tat	159	German					deed	*dḗdiz	51
 409	d iː r	*déuzą	d iː r ( - - )	diːr	dier	112	Dutch					deer	*déuzą	52
 408	d ɪə	*déuzą	d ɪə r ( - - )	dɪə	deer	112	English					deer	*déuzą	52
 1988	d ē o r	*déuzą	d ɪə r ( - - )	dɪə	dēor	112	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)			deer	*déuzą	52
