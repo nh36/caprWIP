@@ -2787,7 +2787,10 @@ define OEWsPalatalDiphthongization [
     {*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     # Stressed variant (stress preserved):
-    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
+    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
+    # §17.46 stressed long *ḗ — same diphthongization, stress dropped on output
+    # (no *ī́e this branch).
+    {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
 ];
 
 define OEVelarFricativePalatalization [
@@ -3012,6 +3015,9 @@ define OEContraction [
     {*ā} {*e} -> {*ā},
     {*ē} {*a} -> {*ē},
     {*ē} {*e} -> {*ē},
+    # §17.46 stressed long *ḗ absorbs following short the same way (kept stressed)
+    {*ḗ} {*a} -> {*ḗ},
+    {*ḗ} {*e} -> {*ḗ},
     {*ī} {*a} -> {*ī},
     {*ī} {*e} -> {*ī},
     {*ḯ} {*a} -> {*ḯ},
@@ -3620,6 +3626,9 @@ define GermanAuMonophth [ {*au} -> {*ō} || _ GermanAuMonophthContext ];
 define GermanLongVowelRules [
     {*ē} -> {*ā} || _ {*r},
     {*ē} -> {*ā} || _ {*l},
+    # §17.46 stressed long *ḗ — same lowering before r/l (stress dropped)
+    {*ḗ} -> {*ā} || _ {*r},
+    {*ḗ} -> {*ā} || _ {*l},
     {*ō} {*w} -> {*ū},
     {*ō} -> {*ū} || {*d} _ {*n},
     {*ō} -> {*ū} || _ ({*k} | {*g} | {*d} | {*θ} | {*t} | {*s} | {*z} | {*f} | {*l} | {*r} | {*w})
