@@ -1414,24 +1414,29 @@ to *iu before *ō. Different mechanisms, different environments, different outco
 ## Project Status (as of 2026-04-30) — research phase complete
 
 **Pipeline:** PGmc → OE FST builds clean; ordered cascade of sound-change stages.
-**Coverage:** 378/386 OE matches (**97.9%**), **8 mismatches**, **0 no-output**.
-**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (Mar 8) → 78 (Mar 10) → 14 (start of stress-tier branch) → 13 (Phase 2 of *ḗ tier) → 11 → 10 → 9 → **8 (2026-04-30)**.
+**Coverage:** 379/386 OE matches (**98.2%**), **7 mismatches**, **0 no-output**.
+**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (Mar 8) → 78 (Mar 10) → 14 (start of stress-tier branch) → 13 (Phase 2 of *ḗ tier) → 11 → 10 → 9 → 8 (2026-04-30) → **7 (2026-04-30, after rēc → \*rēac retarget)**.
 
 **Intervention summary at close of research phase:**
 * TSV/data fixes needed: **0**
-* Documented exceptions (`oe_known_problems.tsv`): **8**
+* Documented exceptions (`oe_known_problems.tsv`): **7**
 * Phonology (core buckets): **0**
 * Phonology (other buckets): **0**
 
-The 8 remaining are all documented exceptions:
+The 7 remaining are all documented exceptions:
 * `*búkkaz → bocc` (expected `bucc`) — `wontfix: u_lowering_near_labial`
 * `*fūri → fȳr` (expected `fȳre`) — `exception: analogical_dat_e`
 * `*fúglaz → fogol` (expected `fugol`) — `wontfix: u_lowering_near_labial`
-* `*ráukaz → rēac` (expected `rēc`) — `wontfix: smoothing_anglian_relic`
 * `*rústō → rost` (expected `rust`) — `wontfix: u_lowering_near_labial`
 * `*táppô → tappa` (expected `tæppa`) — `exception: analogical_n_stem_levelling`
 * `*wúlfaz → wolf` (expected `wulf`) — `wontfix: u_lowering_near_labial`
 * `*wúllō → woll` (expected `wull`) — `wontfix: u_lowering_near_labial`
+
+(Previously listed `*ráukaz → rēac` mismatched against attested Anglian
+`rēc`; on 2026-04-30 the cogset was retargeted to reconstructed-WS
+`*rēac`, which the FST already produces by regular development. The
+row is now a match in the new `reconstructed_oe` `DERIVATION_CLASS`.
+See §17.22 closure and `dossier-reek-2026.md`.)
 
 **The research phase is closed.** Each remaining mismatch has a fully
 documented philological justification (analogical levelling, dialect

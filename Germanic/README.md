@@ -6,7 +6,7 @@ This directory contains the active FST development for modeling sound changes fr
 
 **Research phase complete (2026-04-30).**
 
-**8 mismatches** out of 386 OE lexemes (**97.9% accuracy**, **0 actionable phonology**). All 8 remaining mismatches are documented exceptions in `data/oe_known_problems.tsv` (analogical levellings, dialect relics, lexical *u-preservation near labials).
+**7 mismatches** out of 386 OE lexemes (**98.2% accuracy**, **0 actionable phonology**). All 7 remaining mismatches are documented exceptions in `data/oe_known_problems.tsv` (analogical levellings, lexical *u-preservation near labials).
 
 ## Directory Structure
 

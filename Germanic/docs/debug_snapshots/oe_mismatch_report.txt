@@ -1,8 +1,8 @@
-Total mismatches: 8
+Total mismatches: 7
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
-  Documented exceptions:       8
+  Documented exceptions:       7
   Phonology (core buckets):    0
   Phonology (other buckets):   0
 
@@ -10,7 +10,6 @@ Total mismatches: 8
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
   *fūri -> fȳr (expected fȳre)  [exception: analogical_dat_e]
   *fúglaz -> fogol (expected fugol)  [wontfix: u_lowering_near_labial]
-  *ráukaz -> rēac (expected rēc)  [wontfix: smoothing_anglian_relic]
   *rústō -> rost (expected rust)  [wontfix: u_lowering_near_labial]
   *táppô -> tappa (expected tæppa)  [exception: analogical_n_stem_levelling]
   *wúlfaz -> wolf (expected wulf)  [wontfix: u_lowering_near_labial]
@@ -21,7 +20,6 @@ Total mismatches: 8
 === OTHER SUB-BUCKETS ===
   front_expected_back_out: 1
 --- breaking_extra sub-buckets ---
-  breaking_extra__ea_other: 1
 --- palatal_extra sub-buckets ---
 --- a_restoration sub-buckets ---
 --- back_expected_front_out sub-buckets ---
@@ -38,9 +36,6 @@ Total mismatches: 8
 
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
-
-breaking_extra__ea_other (1):
-  *ráukaz -> rēac (expected rēc)
 
 vowel_quality__u_lowering_exception (5):
   *búkkaz -> bocc (expected bucc)

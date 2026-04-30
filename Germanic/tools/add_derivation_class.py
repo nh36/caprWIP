@@ -5,6 +5,7 @@ before STRUCTURE) and classify every Old_English row with a real COUNTERPART.
 Allowed values (per project spec, 2026-04-30):
   regular | early_analogy | late_analogy | attested_variant
   | known_unmodelled | unexplained_unmodelled | lexeme_retarget
+  | reconstructed_oe
 """
 from __future__ import annotations
 
@@ -20,6 +21,7 @@ KNOWN = REPO / "Germanic/data/oe_known_problems.tsv"
 ALLOWED = {
     "regular", "early_analogy", "late_analogy", "attested_variant",
     "known_unmodelled", "unexplained_unmodelled", "lexeme_retarget",
+    "reconstructed_oe",
 }
 
 # ---------- normalisation ----------
@@ -104,6 +106,20 @@ def classify(row: dict[str, str], known: dict[str, str]) -> str:
         if cat == "u_lowering_near_labial":
             return "unexplained_unmodelled"
         return "known_unmodelled"
+
+    # 1b. Reconstructed (unattested) OE counterpart. Triggered by explicit
+    #     NOTE markers — too risky to infer heuristically. Includes both
+    #     genuinely unattested forms (cnobba, *rēac) and Anglian-only-attested
+    #     forms whose WS reflex is reconstructed (strīeġan).
+    reconstructed_markers = (
+        "unattested old english cognate",
+        "unattested west saxon cognate",
+        "reconstructed west saxon",
+        "reconstructed *",
+        "retargeted 2026-04-30 from attested anglian",
+    )
+    if any(m in note_l for m in reconstructed_markers):
+        return "reconstructed_oe"
 
     # 2. Explicit retargeting markers in NOTE override the PF=P comparison.
     #    These trigger when the cogset has been *edited* so PROTO matches the

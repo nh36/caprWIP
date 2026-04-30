@@ -11,7 +11,7 @@ This repository contains **three parallel research pipelines** sharing common in
 
 | Component | Description | Status |
 |-----------|-------------|--------|
-| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Research phase complete — 8 of 386 OE rows mismatched (all 8 documented exceptions; 0 actionable phonology) |
+| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Research phase complete — 7 of 386 OE rows mismatched (all 7 documented exceptions; 0 actionable phonology) |
 | **[Burmish/](Burmish/)** | Proto-Burmish reconstruction | Maintenance mode |
 | **[Celtic/](Celtic/)** | Proto-Celtic → daughter languages (Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, Celtiberian) | Early development |
 
