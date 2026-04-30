@@ -43569,7 +43569,7 @@ shows the rule fires through *st cluster, but our cogset has no *wí-
 # ([EnglishStarVocalic - [{*u}|{*ū}]]) preserves the medial *u
 # under the now-stressed *ú.
 define OEWICombinativeUUmlaut [
-    {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant ({*u} | {*o})
+    {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant [{*u} | {*o}]
 ];
 ```
 
@@ -43604,3 +43604,179 @@ composite (line 3306).
 3. Run mismatch report: expect count 9 → 8.
 4. Diff before/after report; confirm no new mismatches in unrelated
    rows (especially other OE rows starting *w-).
+
+#### §17.51.A1.1 — Implementation status and open question (medial *u survival)
+
+**Status (as built):** the `OEWICombinativeUUmlaut` rule is in place
+(`germanic.txt:2680–2690`) and inserted in both cascades (main at
+`:3163`, trace at `:3357`). Foma syntax pitfall caught in the first
+build: `(...)` in a foma right-context is **optional**, so an earlier
+draft `EnglishStarConsonant ({*u}|{*o})` over-fired (omitting the back
+vowel altogether) and caused two false-positive lowerings to *ú. Fixed
+by switching to `[{*u}|{*o}]` (square brackets = required). With the
+rule alone, build is clean and the rule fires precisely on *wíduwōn
+in the cogset (no other *wí- entry matches the conditioning).
+
+**The second-order problem.** With only the new rule, `*wíduwōn`
+becomes `*wúduwōn` at the new stage but the cascade then surfaces
+`wudowe`, not `wuduwe`. Cause: `OEMedUnstressedULowering`
+(`germanic.txt:2298`) lowers the medial unstressed `*u` because the
+left-context exclusion is `[EnglishStarVocalic - [{*u}|{*ū}]]` — i.e.,
+the rule is **not** blocked by a preceding stressed `*ú`. After the
+new rule fires we have `… *ú d *u w …`, which fits the lowering
+template (stressed-V + single-C + *u + non-*m-C) and lowers the
+medial `*u` to `*o`.
+
+**Tried:** extending the exclusion to `[{*u}|{*ū}|{*ú}]` (so a
+preceding stressed `*ú` also blocks lowering). This produces the
+target `wuduwe` ✓, but introduces two new mismatches elsewhere:
+
+| Row | Before | After (with *ú in exclusion) | Expected | Verdict |
+|---|---|---|---|---|
+| *búgun (str. vb. pret. pl.) | bugon | bug**u**n | bugon | regression |
+| *skúbun (str. vb. pret. pl.) | sċufon | sċuf**u**n | sċufon | regression |
+
+These are strong-verb preterite plurals where the unstressed ending
+`-un` (PGmc *-un) is historically lowered to OE `-on` even though
+the preceding stressed root vowel is `*ú` (e.g. *bugun → bugon
+'they bowed', *skubun → sċufon 'they shoved'). Excluding `*ú` from
+the lowering template therefore over-blocks: it correctly protects
+the medial `*u` of *wúduwōn, but incorrectly preserves the ending
+of strong-verb pret. pl. forms in `*ú-Cun`.
+
+The root issue is that `OEMedUnstressedULowering` does not currently
+distinguish between the two structural environments:
+
+1. **stressed root + medial open-syllable *u + V** (target: protect)
+   — only example in cogset: `*wúduwōn → wuduwe`
+2. **stressed root + closed-syllable suffix *u + n#** (target: lower)
+   — `*búgun, *skúbun`, plus general weak class III pret. forms.
+
+The original rule's exclusion `[{*u}|{*ū}]` was, in practice, written
+to avoid trivially same-vowel mergers, not as a stress-harmony
+device, so it was insufficient to begin with. Extending it to `*ú`
+treats stress as the discriminator, but stress alone does not
+separate the two environments above.
+
+**Mismatch report numbers** (so the picture is on disk):
+
+* Baseline before any FST work, after TSV target retarget: **9**
+  (8 documented exceptions + `*wíduwōn → wudowe`).
+* With OEWICombinativeUUmlaut only, lowering rule unchanged: **9**
+  (`*wíduwōn → wudowe` still wrong; rule fires but lowering then
+  bleeds the medial *u).
+* With OEWICombinativeUUmlaut + `*ú` added to lowering exclusion:
+  **10** (widow row fixed; `*búgun` and `*skúbun` now wrong).
+
+**Open question.** What is the correct discriminator?
+Candidates worth scholarly canvass before changing anything further:
+
+a. **Open vs. closed syllable of the unstressed *u.** In *wuduwe
+   the medial *u is in an open syllable (followed by *w + *V).
+   In *bugon, *sċufon the *u is in a closed syllable (followed by
+   *n#). Some accounts of OE unstressed-vowel reduction
+   (Campbell §369, R&T §6.9.6) draw exactly this distinction: open
+   syllables retain the high vowel longer than closed.
+b. **Trisyllabicity / syllabic count.** *wuduwe is trisyllabic;
+   the strong pret. pl. is bisyllabic. A right-context "_C V"
+   (open) vs "_C #" (closed) split would cleanly separate them.
+c. **Specific lexical-class restriction.** Treat *búgun/*skúbun as
+   morphologically privileged (strong pret. pl. ending always
+   `-on`) and let the lowering rule continue to fire on closed
+   *-uC#, while exempting open medial *u after a stressed vowel.
+d. **Re-examine whether *búgun/*skúbun are real regressions.** Both
+   `-un` and `-on` are attested as variants of the strong-verb
+   pret. pl. ending in OE (PGmc *-un > -un / -on; Campbell §735;
+   R&T §3.2.10 for the chronology). The mismatch report flags
+   `bugun` against `bugon` because the TSV target is the
+   late-WS spelling; if `bugun` is also legitimate, it is not a
+   true philological regression but a TSV-target choice.
+
+**Recommendation.** Park the lowering-rule change for separate
+research, NOT a quick fix. Two paths from here:
+
+* **Path 1 (conservative):** keep the new `OEWICombinativeUUmlaut`
+  rule in place but **revert** the `*ú` addition to
+  `OEMedUnstressedULowering`. This holds widow at `wudowe` (still a
+  mismatch) but introduces no regressions. Net mismatch count
+  stays at 9. Then research path (a)/(b) above and design a
+  proper open/closed-syllable discriminator.
+* **Path 2 (paired commit, with new known-problems entries):**
+  keep both the new rule and the *ú-exclusion extension. Widow is
+  fixed; document `*búgun`/`*skúbun` in `oe_known_problems.tsv` as
+  WS *-un* variants (with citation evidence that *-un* is also
+  attested). Net mismatch count drops to 8 with two new tagged
+  exceptions instead of one untagged one.
+
+**Decision (taken):** Path 1. The `*ú` addition to
+`OEMedUnstressedULowering` has been reverted (`germanic.txt:2298`
+back to original `[{*u}|{*ū}]`). The new `OEWICombinativeUUmlaut`
+rule is retained in both cascades. Mismatch count is back to 9
+(widow row remains as `*wíduwōn → wudowe`, expected `wuduwe`).
+No regressions in any other row.
+
+The remaining work is research, not coding, and is queued separately
+under §17.51.A1.2 below.
+
+#### §17.51.A1.2 — Research queue (medial *u survival, open/closed syllable)
+
+Before any further FST change to lower-or-protect the medial `*u`
+of `*wúduwōn` (and to clarify whether `*búgun → bugon` vs `bugun`
+is a real regression or a TSV-target variant), the following
+needs to be properly canvassed:
+
+1. **Conditioning of OE unstressed *u lowering — open vs. closed syllable.**
+   Verbatim primary and handbook evidence on whether the rule
+   distinguishes between unstressed *u in an open syllable
+   (followed by a vowel: *wuduwe-type) and unstressed *u in a
+   closed syllable (followed by a consonant cluster or word-final
+   *n: *bugun-type). Relevant works on disk and to canvass:
+   * Campbell §369, §49 (already cited at germanic.txt:3134–3136
+     for this rule's ordering).
+   * R&T vol. 1 §6.9.6 and §3.2.10 (the latter for the *-Vn#*
+     pret. pl. ending chronology).
+   * Hogg vol. 1 (chapter on unstressed-vowel reduction).
+   * Brunner §44 (unstressed vowels in OE).
+   * Luick §§315–325 (Schwächung der Tonsilben) and §385–395
+     (unbetonte Vokale).
+   * Bülbring §§386–410.
+   * Sievers/Brunner OE Grammar (older edition; on shelf).
+   * Fulk *Comparative Grammar* §§4.30–4.40 area.
+   The dossier section
+   `Germanic/docs/dossiers/widuwe-u-preservation.md` should be
+   extended with an Appendix D on this specifically.
+
+2. **Variant *-un / *-on in the strong-verb pret. pl.**
+   Whether `bugun` and `sċufun` are themselves attested OE forms
+   alongside `bugon` / `sċufon`, and at what date / dialect /
+   register. If `-un` is robustly attested in early WS and
+   Anglian, the "regression" may not be a regression at all.
+   Sources: Campbell §735; R&T §3.2.10; Hogg §6.49; Brunner §357;
+   Sievers-Brunner §§366–369; the *Toronto Corpus* / *DOE Web
+   Corpus* hit counts for the specific verbs (bēogan,
+   sċūfan).
+
+3. **Stress as a discriminator for u-lowering blocking.**
+   Whether any handbook explicitly claims that a preceding
+   *stressed* high vowel (especially a stressed `*ú`) blocks
+   unstressed-*u lowering, or whether the historical pattern is
+   instead about syllable structure and vowel quality
+   (harmonisation). The Campbell quote at germanic.txt:3134
+   ("Campbell §373 / §49 place unstressed u → o late") is a
+   start; the actual conditioning needs verbatim quotation.
+
+4. **Whether OEWICombinativeUUmlaut should also harmonise the
+   medial *u in its own definition.** I.e., should the rule
+   itself rewrite both `*í → *ú` AND `*u → *ú` (or some
+   protected marker) in the trigger window, removing the
+   medial *u entirely from u-lowering's purview without
+   touching the lowering rule. This is an FST-engineering
+   question that becomes answerable once point 1 is settled —
+   if the literature supports treating *wuduwe as a single
+   harmonised form (both vowels rounded together), this
+   approach would have direct philological backing.
+
+Once research-points 1–3 are settled with verbatim citations in
+Appendix D, the FST change implied by the consensus can be
+implemented and the widow row should fall out without the
+secondary regressions.

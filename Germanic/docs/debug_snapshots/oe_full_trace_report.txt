@@ -1,4 +1,4 @@
-=== BUCKET: exact_match (370) ===
+=== BUCKET: exact_match (371) ===
 
 --- adder ---
 PROTO: *nḗdrōn
@@ -1010,6 +1010,11 @@ PROTO: *márōn
 EXPECTED: mare
 OUTPUTS: mare
 
+--- nine ---
+PROTO: *nígun
+EXPECTED: nigon
+OUTPUTS: nigon
+
 --- nose ---
 PROTO: *núsō
 EXPECTED: nosu
@@ -1408,7 +1413,7 @@ OUTPUTS: strēam
 --- stretch ---
 PROTO: *strákkijaną
 EXPECTED: streċċan
-OUTPUTS: strecċan, streċċan
+OUTPUTS: streċċan, strecċan
 
 --- strew ---
 PROTO: *stráwjaną
@@ -2133,100 +2138,6 @@ Orthography: rēac
 Surface: rēac
 
 
-=== BUCKET: palatal_extra_other (1) ===
-
---- nine ---
-PROTO: *nígun
-EXPECTED: nigon
-OUTPUTS: niġon
-
-ProtoInput: *n*í*g*u*n
-InitialKn: *n*í*g*u*n
-Palatalisation: *n*í*g*u*n
-ConsonantRules: *n*í*g*u*n
-WestGermanic: *n*í*g*u*n
-NWGmcUnstressedAiMonoph: *n*í*g*u*n
-NWGmcILowering: *n*í*g*u*n
-WsPalatalGlide: *n*í*g*u*n
-NWGmcULowering: *n*í*g*u*n
-NWGmcStressedMonosyllableORaising [carry]: *n*í*g*u*n
-NWGmcFinalLongORaising [carry]: *n*í*g*u*n
-PGmcFinalZDeletion [carry]: *n*í*g*u*n
-NWGmcUnstressedORaising [carry]: *n*í*g*u*n
-NWGmcMnDissimilation [carry]: *n*í*g*u*n
-NWGmcNStemNLoss [carry]: *n*í*g*u*n
-NWGmcLongELowering [carry]: *n*í*g*u*n
-NWGmcLongENasalRounding [carry]: *n*í*g*u*n
-NasalSpirantLengthening [carry]: *n*í*g*u*n
-NasalSpirantLoss [carry]: *n*í*g*u*n
-NWGmcPreconsonantalXLoss [carry]: *n*í*g*u*n
-AwjGlideFormation [carry]: *n*í*g*u*n
-AuFronting [carry]: *n*í*g*u*n
-WWSimplification [carry]: *n*í*g*u*n
-DiphthongLeveling [carry]: *n*í*g*u*n
-EwLongDiphthong [carry]: *n*í*g*u*n
-AwLongDiphthong [carry]: *n*í*g*u*n
-PrefixAReductionEarly [carry]: *n*í*g*u*n
-InterStressRaising [carry]: *n*í*g*u*n
-StripSecondaryStress [carry]: *n*í*g*u*n
-MedUnstressedULowering [carry]: *n*í*g*u*n
-PWGmcFinalBareALoss [carry]: *n*í*g*u*n
-PWGmcSurvivingBimoricOUnrounding [carry]: *n*í*g*u*n
-AngloFrisianBrightening [carry]: *n*í*g*u*n
-Breaking [carry]: *n*í*g*u*n
-VelarFricPal [carry]: *n*í*g*u*n
-ARestoration [carry]: *n*í*g*u*n
-HeavySyllableNasalApocope [carry]: *n*í*g*u*n
-SecondaryNasalization [carry]: *n*í*g*u*n
-FinalSchwaApocope [resume]: *n*í*g*o*n
-CompoundLinkingSyncope [carry]: *n*í*g*o*n
-BAllophony [carry]: *n*í*g*o*n
-SieversLawSyncope [carry]: *n*í*g*o*n
-SkPalatalization [carry]: *n*í*g*o*n
-VelarPalatalization [carry]: *n*í*g*o*n
-PostVelarWLoss [carry]: *n*í*g*o*n
-WLossBeforeI [carry]: *n*í*g*o*n
-IUmlaut [carry]: *n*í*g*o*n
-WsPalatalDiphthongization [carry]: *n*í*g*o*n
-JClusterCoalescence [carry]: *n*í*g*o*n
-NasalDissimilation [carry]: *n*í*g*o*n
-BackMutation [carry]: *n*í*g*o*n
-WsPalatalUmlaut [carry]: *n*í*g*o*n
-WeakTailNasalLoss [carry]: *n*í*g*o*n
-WeightMarkers [carry]: *n*í*g*o*n
-HighVowelApocope [carry]: *n*í*g*o*n
-MedialSyncope [carry]: *n*í*g*o*n
-LAdjacentSyncope [carry]: *n*í*g*o*n
-DentalAssimilation [carry]: *n*í*g*o*n
-PreconsonantalDegemination [carry]: *n*í*g*o*n
-EarlyOShortening [carry]: *n*í*g*o*n
-UnstressedFrontingEarly [carry]: *n*í*g*o*n
-LateOShortening [carry]: *n*í*g*o*n
-UnstressedLongVowelShortening [carry]: *n*í*g*o*n
-UnstressedAEMerger [carry]: *n*í*g*o*n
-UnstressedIMarking [carry]: *n*í*g*o*n
-MedUnstressedILowering [carry]: *n*í*g*o*n
-PrefixIReduction [carry]: *n*í*g*o*n
-PrefixAReductionLate [carry]: *n*í*g*o*n
-WeakTailReduction [carry]: *n*í*g*o*n
-JLossAfterHeavy [carry]: *n*í*g*o*n
-FinalGeminateSimplification [carry]: *n*í*g*o*n
-JStrengtheningAfterFrontDiphthong [carry]: *n*í*g*o*n
-IntervocalicJVocalization [carry]: *n*í*g*o*n
-UnstressedEIContraction [carry]: *n*í*g*o*n
-WeightCleanup [carry]: *n*í*g*o*n
-HLoss [carry]: *n*í*g*o*n
-Contraction [carry]: *n*í*g*o*n
-RMetathesis [carry]: *n*í*g*o*n
-ProtoToOE [resume]: *n*í*ʤ*o*n
-WGlide: *n*í*ʤ*o*n
-GhMarker: *n*í*ʤ*o*n
-GlideDeletion: *n*í*ʤ*o*n
-Epenthesis: *n*í*ʤ*o*n
-Orthography: niġon, ni*ġon
-Surface: niġon
-
-
 === BUCKET: vowel_quality_other (6) ===
 
 --- buck ---
@@ -2857,8 +2768,8 @@ HeavySyllableNasalApocope: 0
 
 SecondaryNasalization: 0
 
-FinalSchwaApocope: 9
-tap :: *táppô, reek :: *ráukaz, nine :: *nígun, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
+FinalSchwaApocope: 8
+tap :: *táppô, reek :: *ráukaz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
 
 CompoundLinkingSyncope: 0
 
@@ -2938,8 +2849,8 @@ Contraction: 0
 
 RMetathesis: 0
 
-ProtoToOE: 6
-tap :: *táppô, fire :: *fūri, nine :: *nígun, rust :: *rústō, widow :: *wíduwōn, wool :: *wúllō
+ProtoToOE: 5
+tap :: *táppô, fire :: *fūri, rust :: *rústō, widow :: *wíduwōn, wool :: *wúllō
 
 WGlide: 3
 widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
@@ -2952,8 +2863,7 @@ widow :: *wíduwōn
 Epenthesis: 4
 fowl :: *fúglaz, widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
 
-Orthography: 10
-tap :: *táppô, fire :: *fūri, reek :: *ráukaz, nine :: *nígun, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
+Orthography: 9
+tap :: *táppô, fire :: *fūri, reek :: *ráukaz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, widow :: *wíduwōn, wolf :: *wúlfaz, wool :: *wúllō
 
-Surface: 1
-nine :: *nígun
+Surface: 0

@@ -2666,6 +2666,28 @@ define OEBackMutation [
     {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
 ];
 
+# §17.51.A1: OE combinative u-umlaut on *í (the "w-effect").
+# Sources: Bülbring §264; Campbell §218; Brunner §114b; Luick §221;
+# Hogg vol.1; R&T §6.9.6; Fulk Comparative Grammar §4.8 (only handbook
+# to name the rule explicitly and date it ca. 700).
+# Word-initial *w + stressed *í + single C + *u/*o in next syllable
+# → *w + *ú + … . Models the OE *wi → *wiu → *wu development
+# (Bülbring's two-step chronology) as a single direct change.
+# Conditioning notes (per dossier Appendix B):
+#   * No consonant restriction in WS (nasals/liquids/velars all permitted).
+#   * Trigger restricted to *u/*o (excluding *a, which would over-fire on
+#     *wíndaną; combinative *a-umlaut is dialectally restricted per
+#     Brunner §114c).
+#   * Left-context bare *w- only here; future *sw-/*kw-/*tw- cogset
+#     entries would need ({*s}|{*k}|{*t}) {*w} bracket extension.
+# Ordering: fires before OEMedUnstressedULowering so the medial *u
+# remains visible in the right context, and so that u-lowering's
+# stressed-*u left-context exclusion preserves the medial *u under
+# the now-stressed *ú.
+define OEWICombinativeUUmlaut [
+    {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant [{*u} | {*o}]
+];
+
 # R/T vol.2 §6.9.7: WS palatal umlaut.
 # Short diphthongs eo, io, ie → i before ht, hp, hs when word-final
 # or followed by a front vowel.
@@ -3135,6 +3157,11 @@ define EnglishProtoToOE (
     # Campbell §373 / §49 place unstressed u → o late; R/T §6.3.3 places
     # inter-stress raising in pre-OE — so lowering-after-raising is the
     # chronologically correct order.
+    # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
+    # Must precede OEMedUnstressedULowering so that the medial *u trigger
+    # is still visible. Output *ú (stressed) is then preserved through
+    # u-lowering by the existing stressed-vowel left-context exclusion.
+    .o. OEWICombinativeUUmlaut
     .o. OEMedUnstressedULowering
     # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
     # See DEV_NOTES §17.10.14 for the cross-source survey.
@@ -3303,6 +3330,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEStripSecondaryStress
     # Medial unstressed u-lowering moved AFTER InterStressRaising per
     # §17.10.19 (R3). Mirrors main-stack ordering.
+    # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
+    .o. OEWICombinativeUUmlaut
     .o. OEMedUnstressedULowering
     .o. PWGmcFinalBareALoss
     # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
