@@ -1657,3 +1657,312 @@ Campbell, Brunner, Luick, Hogg, R&T) and the comparative-Germanic / IE
 tradition (Ringe, Kroonen, Orel, Bammesberger, Streitberg, Hirt, Pokorny,
 Mayrhofer, Kluge–Seebold, Beekes, Fulk) **agree completely**: the change
 is OE-internal, not PGmc, NWGmc, PWGmc, or Ingvaeonic.
+
+---
+
+## Appendix D — Conditioning of OE medial unstressed *u (open vs. closed; -un/-on; harmonisation)
+
+This appendix addresses three open philological questions raised in
+`docs/DEV_NOTES.md` §17.51.A1.1–A1.2 and recommends an FST design among
+the four strategies enumerated there. The question is, in essence:
+**why is medial unstressed *u preserved in `wuduwe`, `munuc`, `duguþ` but
+lowered to *o in `heafod`, `nacod`, `hamor`, `tungol`, etc.?** Three
+candidate discriminators are canvassed against seven handbooks
+(Campbell, Hogg, Ringe & Taylor, Brunner, Luick, Bülbring, Fulk):
+
+1. **Syllable shape** (open vs. closed final/medial),
+2. **Strong-verb pret. pl. ending** (`*-un` ~ `*-on`),
+3. **Stress / harmony** with a preceding stem-syllable *u.
+
+### D.1 Open vs. closed syllable conditioning
+
+Verbatim canvass, with each handbook's verdict on whether OE u-lowering
+(*u > *o in unstressed syllables) is conditioned by syllable shape.
+
+**Campbell** — `docs/references/campbell_old_english_grammar.txt`,
+§49 (line 2273):
+
+> "Also o is written for unaccented u with increasing frequency,
+> **especially before a consonant** (e.g. past pl. in -on, older -un)."
+
+Verdict: tendency, not Lautgesetz. Campbell mentions the "before a
+consonant" environment as the *typical* locus of o-spellings, but
+treats it as a graphic/phonetic tendency that intensifies through OE,
+not as a categorical rule. He does not contrast medial open and closed
+syllables.
+
+**Hogg** — `docs/references/hogg_vol1.txt`, §3.3.3.2 (line ≈5878):
+
+> "/u/ … had a strong tendency to lower, **especially when a consonant
+> followed**… if /u/ is in absolute finality… it more usually remained."
+
+Verdict: confirms Campbell's tendency. Pre-consonantal /u/ lowers more
+readily than absolute-final /u/ — i.e., *closed* > *open final* in
+lowering propensity. But again presented as tendency, with substantial
+preservation classes (§3.3.1.3, line ≈4380 ff., on `sunu`, `-um`, `-uc`,
+`-ung`, plus the "after another /u/" class).
+
+**Ringe & Taylor** — `docs/references/ringe_taylor_linguistic_history_vol2.txt`,
+§6.9.6 (line 19211):
+
+> "by 900 the contrast between the unstressed back vowels was breaking
+> down in **closed final syllables** in Kentish and in all positions,
+> except word-finally, in WS."
+
+Verdict: this is the strongest open-vs-closed statement in the
+literature, but R&T are describing a *late* (≈900) collapse of the
+unstressed back-vowel system, not the original early-OE *u/*o
+phonologisation. By their dating the merger affects closed final
+syllables first in Kent, then all non-final positions in WS. This
+post-dates the lowering rule that produces `heafod` from `*hēafud`.
+
+**Brunner** — `docs/references/brunner_1965_altenglische_grammatik.vision.txt`,
+§44 Anm. 7 (line ≈2092):
+
+> "Im Inlaut vor anderen Konsonanten außer -m und -ng ist -o- im Ws.
+> schon früh durchwegs durchgeführt, **nur nach einem u der Stammsilbe
+> steht vor einfachem Konsonanten -u-**."
+
+Verdict: Brunner explicitly *rejects* a pure open/closed split. He says
+that medially before any single consonant (other than `m`, `ng`) WS
+lowers `*u > o` — *unless* the stem syllable contains a stressed `u`,
+in which case `-u-` is preserved before *single* consonant. This is
+**stress-harmony**, not syllable shape: `munuc`, `duguþ`, `iuguþ` keep
+medial -u-; `heafod`, `nacod`, `tungol` do not (the latter despite
+having stem-syllable nuclei other than `u`).
+
+**Luick** — `docs/references/luick_historische_grammatik.txt`, §326
+(line 17291–17320):
+
+> "§326. Eine entsprechende Bewegung ergriff um dieselbe Zeit auch
+> das u, wofern es nicht vor m oder ŋ … stand; doch reicht dieser
+> Wandel weniger weit als der eben besprochene.
+> 1. Im Auslaut hat u wohl nur eine geringe Senkung erfahren … **Durch
+> ein u der Tonsilbe ist es überhaupt bewahrt worden**: die Schreibung
+> weist in solchen Fällen fast ständiges u auf. So: me(o)du, sunu,
+> wudu …
+> 2. Im Inlaut scheint im Westsächsischen die Stufe o erreicht worden
+> zu sein; **doch wirkt auch hier ein u der Stammsilbe (vor einfachen
+> Konsonanten) bewahrend**. So: … nacod, hēafod, heofon, hamor, ridon,
+> wǣron, hafoc, nafola, afora; sāwol, wundor, tungol; huntoð, geogoð,
+> locod, locode, leofost, leofosta; **aber munuc 'Mönch', duguð
+> 'Tugend', iuguð 'Jugend'**.
+> In den anglischen Dialekten war dagegen die Senkung geringer: in der
+> Schreibung erscheint hier u viel häufiger, im Psalter sogar
+> vorwiegend: heafud, heofun, wērun, wuldur, leofuste usw."
+
+Verdict: Luick is the most explicit. The rule that survives criticism
+is *not* "open vs. closed" but: **(i) lowering happens in inlaut before
+any single consonant except `m`/`ŋ`; (ii) it is blocked when the stem
+syllable contains `u`; (iii) Anglian (especially the Vespasian Psalter)
+shows much less lowering, with `-u-` retained even where WS has `-o-`.**
+Luick does not at any point invoke open/closed final or medial
+syllable shape as a discriminator.
+
+**Bülbring** — `docs/references/bulbring_altenglisches_elementarbuch.txt`,
+§364 (line 7164):
+
+> "budun, budon, budan 'they boded' …"
+
+Verdict: Bülbring documents three coexisting variants of the strong
+pret. pl. ending in inlaut (`-un`, `-on`, `-an`) without invoking
+syllable shape as the discriminator; chronology and dialect select
+between them.
+
+**Fulk** — `docs/references/fulk_comparative_grammar_early_germanic.vision.txt`,
+§4.5 (line 3907):
+
+> "PGmc. u appears as u in Gothic, but as aú (/ɔ/) before r, h, ƕ … as
+> in pret. 3 pl. -budun 'offered' (OE budon, OS budun) …"
+
+Verdict: Fulk treats the OE pret. pl. ending as `-on` for citation
+purposes, but the parallel adduction of OS `-un` and his consistent
+PGmc reconstruction `*-un` (§§4.3, 5.6, etc.) make plain that `-on` is
+a late OE outcome of an earlier `-un`, not a primary form. Fulk
+nowhere conditions the OE `*u > *o` lowering on syllable shape.
+
+**Conclusion (D.1).** No handbook treats *open vs. closed final/medial
+syllable* as a categorical discriminator for OE unstressed `*u`-lowering
+in the early period. Campbell §49 and Hogg §3.3.3.2 mention
+"especially before a consonant" as a *graphic tendency* (closed >
+open-final in propensity to write `o`); R&T §6.9.6 dates this to a
+late (c. 900) phonemic collapse, well after the lowering process that
+produces `heafod`. Brunner and Luick make the operative discriminator
+explicit and it is not syllable shape: it is **the presence vs.
+absence of a stem-syllable `u`** (i.e., progressive vowel harmony).
+Strategy 1 of DEV_NOTES §17.51.A1.2 (open/closed split in the FST) is
+therefore **not the philologically correct discriminator**, although
+it would coincidentally match many forms because most "preserved" -u-
+lexemes (`wuduwe`, `munuc`, `duguþ`, `iuguþ`, `heofun`-type Anglian
+spellings) happen to be in open medial syllable.
+
+### D.2 The strong-verb pret. pl. ending: are `bugun`, `sċufun` regressions?
+
+DEV_NOTES §17.51.A1.1 flags that adding `*ú` to the unstressed-`*u`-
+lowering rule's stress-stem context preserves `wuduwe`, but also leaves
+`bugun`, `sċufun` (cogset targets `bugon`, `sċufon`) un-lowered.
+
+**Campbell** — `docs/references/campbell_old_english_grammar.txt`,
+§735(e) (line 20229):
+
+> "The pl. of the past indic. has -un in the earliest texts, and this
+> remains in Cp. and VP beside -on … Ru.1 has usually -un, beside
+> frequent -on."
+
+**Brunner** — `docs/references/brunner_1965_altenglische_grammatik.vision.txt`,
+§364.2 + Anm. 4 (line ≈14580):
+
+> "Die älteste Endung des Ind. Plur. Prät. ist -un …"
+
+Brunner adds: Épinal has only `-un`; Corpus has `-un` alongside
+incipient `-on`; early WS has `-on` with rare `-un`; the Mercian
+Vespasian Psalter and Rushworth-1 have `-un` dominantly.
+
+**Bülbring** — `docs/references/bulbring_altenglisches_elementarbuch.txt`,
+§364: documents `budun ~ budon ~ budan` as concurrent inlaut variants.
+
+**Luick** — §326 (line 17312):
+
+> "In den anglischen Dialekten war dagegen die Senkung geringer … im
+> Psalter sogar vorwiegend: heafud, heofun, **wērun** …"
+
+Luick further notes (§326 Anm. 2, line 17339):
+
+> "Im zehnten Jahrhundert wurde vielfach die Endung -um des Dativplurals
+> durch analogische Einflüsse zu -un umgestaltet und dieses zu -on
+> gewandelt: ēagon, dagon."
+
+i.e. the WS lowering `*-un > -on` in inlaut is a continuing process,
+operative on analogically generated as well as inherited `-un`.
+
+**Fulk** — §4.5 (line 3907):
+
+> "pret. 3 pl. -budun 'offered' (OE budon, OS budun) …"
+
+PGmc `*-un` is the inherited form; OE `-on` (Fulk's citation form) is
+an OE-internal lowering. R&T 6.9.4 (line 18383) likewise gives
+"PGmc `*dribun` 'they drove' … North. for-driofon ~ for-drifon, WS
+(fully levelled) drifon" — `-on` is an OE outcome.
+
+**Conclusion (D.2).** `bugun`, `sċufun` are **the philologically
+correct earliest-attested forms**. Épinal, Corpus, Vespasian Psalter,
+and Rushworth-1 either have only `-un` or have `-un` dominantly. The
+target `bugon`, `sċufon` (with `-on`) is the *late West Saxon*
+outcome of OE-internal `*-un > -on` lowering — a Lautgesetz that, on
+Brunner's and Luick's explicit formulation, is **blocked when a stem
+`u` precedes a single consonant** (e.g. `munuc`, `duguþ`, `wuduwe`).
+On the strict Lautgesetz, then, `bugun` (stem `u` + single `g` +
+unstressed `u` + `n`) is exactly parallel to `wuduwe` and *should*
+preserve. The lWS attestation `bugon` is therefore best understood as
+**analogical levelling** of the dominant `-on` ending across the pret.
+pl. paradigm (cf. R&T's "WS (fully levelled) drifon"), parallel to the
+`-um > -un > -on` process Luick describes for the dat. pl.
+
+### D.3 Stressed *ú as blocker, or harmonisation?
+
+The DEV_NOTES strategies 1 and 2 treat the conditioning differently.
+Strategy 1 frames it as "stressed *ú prevents lowering"; Strategy 2 as
+progressive vowel harmony. The handbook tradition speaks unambiguously
+for the **harmonisation** framing.
+
+**Campbell** §373 (line 10223):
+
+> "u is always well preserved after accented u, e.g. sunu, wudu,
+> dugup."
+
+**Brunner** §44 Anm. 7 (line 2092):
+
+> "**nach einem -u der Tonsilbe bleibt es überhaupt in der Regel
+> bewahrt** … nur nach einem u der Stammsilbe steht vor einfachem
+> Konsonanten -u-."
+
+**Hogg** §3.3.1.3 (line ≈4380): /u/ preserved word-finally after
+another /u/ (`sunu`); preserved before `m`, in `-uc`, `-ung`, etc.
+
+**Luick** §326.1–2 (lines 17298, 17304):
+
+> "Durch ein u der Tonsilbe ist es überhaupt bewahrt worden … doch
+> wirkt auch hier ein u der Stammsilbe (vor einfachen Konsonanten)
+> bewahrend."
+
+**Luick** §221 Anm. 1 (line 12779), on the genesis of `widuwe`
+specifically:
+
+> "widuwe nach widwe …"
+
+i.e., `widuwe` is the analogical re-introduction of `i` from the
+syncopated oblique stem `widw-` into a `wuduwe` form whose medial -u-
+is *itself* a product of the same `wi > wu` velar-rounding (Luick
+§221.1) that produces `wudu`. The form `wuduwe` (early WS, Cp.)
+satisfies the harmony condition `u_u`; the form `widuwe` (later
+attestation) preserves the medial -u- by the **same harmony**, but in
+a form whose root vowel was secondarily restored from oblique `widw-`.
+
+**Conclusion (D.3).** The literature is unanimous: the discriminator
+is **progressive harmony** — preservation of unstressed medial *u
+when the preceding stem syllable contains *u (or `ú`). Stress alone is
+not the operative factor (every stem syllable in OE simplexes is
+stressed), and "open vs. closed" is not the operative factor either.
+Strategy 2 (DEV_NOTES) is the right *theoretical framing*; but in the
+FST the harmony condition can equivalently be implemented as an
+exclusion in the lowering rule (Strategy 3), since the resulting
+input/output relation is identical.
+
+### D.4 Synthesis and FST recommendation
+
+Summary verdicts on the four strategies in DEV_NOTES §17.51.A1.2:
+
+| Strategy | Description | Philological support | Verdict |
+| -- | -- | -- | -- |
+| 1 | Open vs. closed split in the lowering rule | Tendential (Campbell §49, Hogg §3.3.3.2) but contradicted by Brunner §44 Anm. 7 and Luick §326 as the operative early discriminator | **Reject** |
+| 2 | Encode harmonisation in `OEWICombinativeUUmlaut` | Theoretically correct but too narrow: only fixes `wuduwe`-type forms reachable through `wi > wu`; does not cover `munuc`, `duguþ`, `iuguþ`, `bugun` | **Insufficient** |
+| 3 | Add `*u`/`*ú` to the lowering rule's exclusion (i.e. block lowering after a stem-syllable *u) | Strongly supported by Campbell §373, Brunner §44 Anm. 7, Hogg §3.3.1.3, Luick §326 | **Recommended** |
+| 4 | Status quo + lexical exception list | Last resort if Strategy 3 has unacceptable cogset-wide collateral | Fallback |
+
+**Recommendation:** **Strategy 3 (revised).**
+
+Concretely:
+
+1. In the OE medial-unstressed-*u-lowering rule, add to the *blocking
+   left context* the case "preceding stem-syllable nucleus contains
+   `*u` or `*ú` (short or long), provided only a single consonant
+   intervenes." This implements Brunner's "vor einfachem Konsonanten"
+   restriction faithfully and matches Luick §326 exactly.
+
+2. Document in `oe_known_problems.tsv` the cogset entries
+   `bugon`/`sċufon` (and any other strong-verb pret. pl. forms with
+   stem `*u`) as **lWS analogical -on for regular `-un`**. The FST's
+   output `bugun`, `sċufun` is, by Campbell §735(e), Brunner §364.2
+   Anm. 4, and Luick §326 Anm. 2, the philologically correct earliest
+   form (Ép., Cp., VP, Ru.1); `-on` is a later levelling, not a
+   Lautgesetz target.
+
+3. *Do not* implement Strategy 1 (open/closed) in addition. The
+   handbook tradition explicitly rejects it as the *operative* early-OE
+   conditioning environment. Closed-syllable lowering tendencies
+   (Campbell §49, Hogg) are subsumed under the same lowering rule
+   restricted by Strategy-3 harmony exclusion; the closed/open
+   asymmetry in attested spellings emerges *epiphenomenally* because
+   most stem-`u` simplexes happen to be open-medial.
+
+4. Cogset audit: enumerate all entries matching the pattern
+   `[stem-syllable nucleus *u/*ú] [single consonant] *u`. Expected
+   matches: `wuduwe`, `munuc`, `duguþ`, `iuguþ`, `bugun`, `sċufun`,
+   `wundor`, `wuldor` (cf. Anglian `wuldur`), `lufu`, `sunu`, `wudu`,
+   plus class-II strong pret. pls. with stem `u` (`bugun`, `lugun`
+   'lied', `sċufun`, `flugun`, etc.). Each cogset target should be
+   compared with its FST output; mismatches that arise solely from the
+   harmony-blocking change should be retargeted to the `-un` form (or
+   added to `oe_known_problems.tsv` if the cogset insists on lWS
+   `-on`).
+
+**Surprising finding worth flagging.** The proposed change is *not*
+"making the FST tolerate widow at the cost of breaking strong verbs."
+It is "making the FST output the philologically correct early-OE
+forms, including `bugun ~ sċufun` (Ép./Cp./VP/Ru.1), and treating the
+lWS `bugon ~ sċufon` as a separate (analogical) layer." In other
+words, what looked like a regression in the original report is in fact
+the FST converging on the right Lautgesetz; it is the cogset *target*
+that needs to be tagged as a later analogical form, not the FST that
+needs to be patched away from it.
+
