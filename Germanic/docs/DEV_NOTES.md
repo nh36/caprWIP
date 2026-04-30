@@ -42268,3 +42268,156 @@ the value of capturing them via the cascade.
 2. (No FST change needed.)
 3. `python3 Germanic/tools/oe_mismatch_report.py` → expect 12 → 11.
 4. The `cons_mismatch__f_vs_s__cluster` bucket should be empty.
+
+## §17.48 — *téxun → tēon (ten): paradigm-cell-matching dossier
+
+### Problem
+
+- TSV row 1210 (Old_English): PROTOFORM `*téxun`, COUNTERPART `tīen`.
+- FST output (current): `teoon` (no contraction; intervocalic h has
+  been lost but `*éo` + `*o` does not coalesce).
+- Mismatch bucket: `long_vowel_missing`. Total: 11 → fix → expected 10.
+
+### Source audit
+
+- **Fulk, *Comparative Grammar of the Early Germanic Languages*
+  §10.2** (lines 14357–14370 of the vision-OCR text):
+  > "PIE *dékm̥t … corresponds to Go. taíhun, OIcel. tíu, OE tien,
+  > OS tehan, OHG zehan, since it accounts for the retention of the
+  > final nasal consonant. … **OE tien must show umlaut originating
+  > in the inflected forms (with i-stem inflections, as elsewhere
+  > in Gmc.; so Brunner 1965: §129 Anm. 6); the Mercian equivalent
+  > is thus correctly tēn. The uninflected form without umlaut is
+  > reflected in *hund-tēon-tig* '100'**" (§10.5).
+- **Campbell §682** (line 18870):
+  > "tien; nW-S tēn, lNorth. also tēo, tēa."
+  i.e. WS *tien*, non-WS (Mercian/Anglian) **tēn**, late
+  Northumbrian also **tēo / tēa**.
+- **Campbell §238.2** (lines 7206–7240): contraction of front V +
+  back V after intervocalic *x-loss yields a long diphthong: e.g.
+  *flēhan → *flēan → flēan; *slehan → *sleahan → *slean → slēan.
+  > "VP, North. éa water (< *ǣxō), tēar tear (< *txyur)"
+- **Brunner §129 Anm. 6**: *tien* shows i-umlaut from the inflected
+  i-stem cells (cf. *seofontiene*, *nigontiene*, where -tiene is the
+  inflected combining form with the umlauted *ie*). The bare numeral
+  cardinal in nW-S retains the un-umlauted form **tēn**.
+
+### Current FST trace (*téxun)
+
+```
+ProtoInput          *t*é*x*u*n
+... (no change through PWGmc / NWGmc stages — *é stays short *é) ...
+AngloFrisianBrightening: *t*é*x*u*n      (AFB targets *a, not *é)
+Breaking            *t*éo*x*u*n          (OEBreakingE: *é → *éo / _ {*x})
+WeakTailReduction   *t*éo*x*o*n          (*u → *o in weak tail)
+HLoss               *t*éo*o*n            (intervocalic *x → 0)
+Contraction         *t*éo*o*n            (no rule for *éo + *o → *ḗo)
+Orthography         teoon
+```
+
+The cascade gets within one step of the regular outcome: *éo + *o
+should contract to *ḗo (long ēo), giving surface **tēon**.
+
+### Existing OEContraction (lines 2973–2997)
+
+```foma
+define OEContraction [
+    {*a} {*a} -> {*ā},
+    {*e} {*e} -> {*ē},
+    {*i} {*i} -> {*ī},
+    {*o} {*o} -> {*ō},
+    {*u} {*u} -> {*ū},
+    {*ea} {*a} -> {*ēa},
+    {*ēa} {*a} -> {*ēa},
+    {*eo} {*a} -> {*ēo},
+    {*ēo} {*a} -> {*ēo},
+    # absorption (R/T §6.6.1) ...
+    {*ā}{*a}, {*ā}{*e}, {*ē}{*a}, {*ē}{*e}, ...
+];
+```
+
+Missing: `*eo` / `*éo` followed by back vowel **other than *a**.
+The diphthong-final-V cells handle `*ea/*eo + *a` but not the
+`*eo + *o` pattern that arises from *V-x-u → breaking → weak-tail.
+
+### Paradigm-cell candidates for *téxun
+
+| Candidate | Cell | Lautgesetzlich? | Citation |
+|---|---|---|---|
+| **tien / tīen** | WS uninflected | NO — requires i-umlaut from i-stem inflection | Fulk §10.2; Brunner §129 Anm.6 |
+| **tēon** | WGmc/early-WS uninflected, preserved in compound `hund-tēon-tig` | YES — *téxun → breaking → *téoxun → h-loss + contraction → *tḗon | Fulk §10.2; Campbell §238.2 |
+| **tēn** | Mercian/Anglian uninflected | YES via Anglian smoothing path | Campbell §682; Fulk §10.2 |
+| **tēo** | Late Northumbrian (final *n loss) | YES via further -n loss | Campbell §682 |
+
+### Options
+
+#### Option A — retarget to **tēon** + add contraction clauses (RECOMMENDED)
+
+1. TSV row 1210: COUNTERPART `tīen → tēon`. NOTE: cite Fulk §10.2,
+   Campbell §238.2 + §682, Brunner §129 Anm. 6; explain that WS
+   *tien* requires i-umlaut from inflected i-stem cells, while the
+   uninflected base `tēon` is preserved in *hund-tēon-tig* and is
+   the regular lautgesetzlich descendant of `*téxun`.
+2. FST `OEContraction` (germanic.txt ~line 2973): add four clauses
+   parallel to the existing `*ea/*eo + *a` ones:
+   ```
+   {*eo} {*o} -> {*ēo},
+   {*ēo} {*o} -> {*ēo},
+   {*éo} {*o} -> {*ḗo},
+   {*ḗo} {*o} -> {*ḗo},
+   ```
+
+**Risk audit**: searched TSV for all `*[eé]x` patterns followed by
+back vowel (`feoh, feohtan, six, wiht, cniht, ten`). Of these only
+*téxun has `*x` followed by a non-apocopating back vowel. (`*féxu`
+loses its *u to high-vowel apocope before h-loss; `*séxs/*féxtaną/
+*wéxtiz/*knéxtaz` have *x followed by a consonant.) So the new
+contraction clauses fire on *téxun alone in the current lexicon.
+
+Expected derivation after fix:
+```
+*téxun → breaking → *téoxun → weak-tail → *téoxon
+  → h-loss → *téoon → contraction → *tḗon → orth. tēon ✓
+```
+
+This is the **same paradigm-cell-matching playbook** as §17.45
+(spindle → spinl), §17.46 (fyrhte: oblique cell), §17.47
+(wasp: earliest attested wæfs).
+
+#### Option B — retarget to **tēn** (Anglian)
+
+Would require modeling Anglian smoothing of *éo before n, OR
+suppressing breaking before intervocalic *x in some way. There is
+no precedent in our cascade for either; the smoothing rule we have
+(implicit) only operates pre-velar. Not recommended this round.
+
+#### Option C — retarget to **tēo** (Late Northumbrian)
+
+As Option A but with additional final-*n-loss clause. Would also
+clear the mismatch but introduces a Northumbrian-specific phonology
+into the cascade for one form. Not recommended.
+
+#### Option D — leave as documented exception
+
+Add to `oe_known_problems.tsv` with note "WS *tīen* requires i-umlaut
+from inflectional i-stem; cascade lacks an i-trigger." Cleanest from
+an FST hygiene angle but defers the structurally easy contraction
+fix in Option A.
+
+### Recommendation
+
+**Option A.** Same playbook as §17.45–§17.47. The contraction clauses
+are well-motivated by Campbell §238.2 (independent of the *texun
+case), are phonologically natural (long diphthong from V + back V
+contraction), and based on the lexicon audit fire only on *téxun.
+
+### Implementation plan
+
+Step 1. Commit this dossier (STOP gate).
+Step 2. Add four `*eo/*éo + *o` clauses to OEContraction.
+Step 3. TSV row 1210: COUNTERPART `tīen → tēon`; append NOTE.
+Step 4. Rebuild bins; verify `*téxun → tēon`; verify no regression
+        on `*féxu/*féxtaną/*sláxaną` (which already work).
+Step 5. Mismatch report → expect 11 → 10. `long_vowel_missing` bucket
+        should be empty.
+Step 6. Commit + push.
