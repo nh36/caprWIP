@@ -43851,3 +43851,68 @@ choice is worth re-examining: is there another paradigm cell of
 either verb that *is* attested **and** Lautgesetzlich, so the cogset
 row could be retargeted onto a cell whose surface form is both
 genuine and regular? See §17.51.A1.4.
+
+#### §17.51.A1.4 — Paradigm-cell review and retargeting (būgan, sċūfan)
+
+Following the open question raised at the end of §17.51.A1.3, a
+paradigm-cell review was carried out for *būgan* 'to bow, bend' and
+*sċūfan* 'to shove, push'. The full investigation is recorded in
+`Germanic/docs/dossiers/bugan-scufan-paradigm-cell-review.md`
+(605 lines, commit `a3f2d0b3`).
+
+**Origin of the 3pl pret. choice.** The cogset's choice of
+`*búgun → bugon` (row 1962) and `*skúbun → sċufon` (row 2184) was
+made in checkpoint 065 (April 2026) by FST inversion: the infinitive
+was known to be analogical (Campbell §736(b): the long *ū* in
+*būgan/sċūfan* is an OE innovation, NOT from PGmc *eu, which would
+regularly give OE *ēo* — cf. *béuganą → bēogan* attested in early
+Anglian), and the 3pl pret. was the first paradigm cell that mapped
+regularly through the FST as it stood at the time. There was no
+explicit "use a finite cell" policy; the widow precedent invoked
+elsewhere in the dossier was a different problem (an OE-internal
+*wi → wu* rule). The 3pl pret. choice was epistemically correct for
+the April-2026 FST but is invalidated by §17.51.A1's stem-*u harmony
+block (commit `c017ae97`): once that block is in place, `*búgun`
+correctly produces `bugun`, not `bugon`, because `-un > -on` is
+phonologically blocked by stem-*u harmony for these specific stems
+(Brunner §44 Anm. 7, Luick §326.2).
+
+**Cell-by-cell survey.** The dossier walks both paradigms cell by
+cell and finds **two cells unambiguously both Lautgesetzlich and
+universally attested** for both verbs:
+
+* **1/3 sg. pret.** — `*báug → bēag`, `*skáub → sċēaf`. Single rule
+  *au > ēa* (the canonical class II strong-verb sg. preterite),
+  plus PGmc *sk- > OE sċ- for *sċūfan*. No analogical baggage.
+  Dictionary citation forms (Clark Hall, Sweet, Bright); attested in
+  *Beowulf*, Cynewulfian poetry, Ælfric.
+* **Past ptcp.** — `*búganaz → bogen`, `*skúbanaz → sċofen`. Gmc
+  *u > *o by a-mutation. Also clean and attested.
+
+The 1/3 sg. pret. is preferred over the past ptcp. because it is the
+morphological pivot on which the analogical *ū-present is itself
+built (Campbell §740: the pres. *ū is a back-formation from the
+sg. pret. stem `*báug`/`*skáub`), it requires the fewest cascade
+rules, and it appears in canonical poetic loci where the past ptcp.
+does not.
+
+**Decision.** Retarget both cogset rows from 3pl pret. to 1/3 sg.
+pret.
+
+* row 1962: `*búgun → bugon`  →  `*báug → bēag`
+* row 2184: `*skúbun → sċufon`  →  `*skáub → sċēaf`
+
+This is implemented in two commits: first the PROTOFORM/PROTO
+columns, then the TOKENS/COUNTERPART columns and removal of the
+now-orphaned `oe_known_problems.tsv` entries. The retargeting
+upgrades the rows from "paradigm-regular projection (analogical
+exception logged)" to "genuinely Lautgesetzlich + corpus-attested".
+FST verified: `báug → bēag`, `skáub → sċēaf` (apply-down via
+`flookup`); no protogate widening needed.
+
+**Closure.** With this retargeting, §17.51.A1 (the widow
+'wúduwōn → wuduwe' problem) is fully closed: the OE *wi → wu rule
+is in place, the medial-*u harmony exclusion is in place, and the
+two transient regressions exposed by the second of those changes
+have been resolved by retargeting to a cell where the FST's
+Lautgesetzlich output and the OE corpus form coincide.
