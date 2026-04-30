@@ -140,10 +140,10 @@ define pgrmNasalVowel [
 
 define pgrmLongVowel [
     ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū} | ô:{*ô} |
-    # §17.46 stressed long-vowel tier (acute over macron). Currently
-    # only *ḯ is plumbed in; other long vowels (āˊ ḗ ṓ ūˊ ǣˊ ȳˊ) will
-    # follow on a separate branch.
-    {ḯ}:{*ḯ}
+    # §17.46 stressed long-vowel tier (acute over macron). *ḯ and *ḗ
+    # are plumbed in; other long vowels (āˊ ṓ ūˊ ǣˊ ȳˊ) will follow on
+    # a separate branch.
+    {ḯ}:{*ḯ} | {ḗ}:{*ḗ}
 ];
 
 define pgrmDiphthong [
