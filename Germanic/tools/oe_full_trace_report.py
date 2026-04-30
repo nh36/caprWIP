@@ -454,24 +454,20 @@ def bucket_entry(proto_norm: str, out: str, expected: str) -> str:
 
 def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     trace: List[Tuple[str, List[str]]] = []
-    last_outputs = [proto_norm]
-    carrying = False
+    last_outputs: List[str] | None = None
     for label, bin_name in STAGES:
         outputs = run_stage(bin_dir, bin_name, proto_norm)
         usable = [out for out in outputs if out != "+?"]
-        carried = False
         if not usable:
-            outputs = last_outputs
-            carried = True
+            # Stage rejected the input: keep showing the previous stage's form
+            # and flag as no-change so the trace still reads continuously.
+            outputs = last_outputs if last_outputs is not None else [proto_norm]
+            label = f"{label} [no-change]"
         else:
             outputs = usable
+            if last_outputs is not None and outputs == last_outputs:
+                label = f"{label} [no-change]"
         last_outputs = outputs
-        if carried:
-            label = f"{label} [carry]"
-            carrying = True
-        elif carrying:
-            label = f"{label} [resume]"
-            carrying = False
         trace.append((label, outputs))
     return trace
 
@@ -548,16 +544,12 @@ def write_report(
             continue
         lines.append(f"=== BUCKET: {bucket} ({len(items)}) ===")
         lines.append("")
-        # Skip detailed tracing for exact_match unless --all is specified
-        skip_trace = (bucket == "exact_match" and not trace_all)
         for row in items:
             lines.append(f"--- {row['concept']} ---")
             lines.append(f"PROTO: {row['proto']}")
             lines.append(f"EXPECTED: {row['counterpart']}")
             lines.append(f"OUTPUTS: {row['outputs']}")
             lines.append("")
-            if skip_trace:
-                continue
             prev_outputs: List[str] | None = None
             lexeme_label = f"{row['concept']} :: {row['proto']}"
             for label, outputs in trace_lexeme(row["proto_norm"], bin_dir):
