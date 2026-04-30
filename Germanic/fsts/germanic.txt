@@ -871,6 +871,10 @@ define OldEnglishRemoveStars [
     {*e} -> e,
     {*ĕ} -> e,
     {*ē} -> ē,
+    # §17.46 stressed long *ḗ collapses to plain ē at the orthography
+    # boundary, parallel to *ḯ → ī. OE does not orthographically
+    # distinguish stressed-root from unstressed-suffix long *ē.
+    {*ḗ} -> ē,
     {*i} -> i,
     {*ī} -> ī,
     # §17.46 stressed long *ḯ collapses to plain ī at the orthography
@@ -1449,6 +1453,7 @@ define EnglishOrthography [
 define EnglishLongVowelRealisation [
     {*ā} -> {ɑː},
     {*ē} -> {iː},
+    {*ḗ} -> {iː},
     {*ī} -> {iː},
     {*ō} -> {oː},
     {*ū} -> {uː},
@@ -3619,6 +3624,7 @@ define GermanRemoveStars [
     {*e} -> e,
     {*ĕ} -> e,
     {*ē} -> ē,
+    {*ḗ} -> ē,
     {*i} -> i,
     {*ī} -> ī,
     {*o} -> o,
