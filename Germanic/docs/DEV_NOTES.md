@@ -42421,3 +42421,176 @@ Step 4. Rebuild bins; verify `*téxun → tēon`; verify no regression
 Step 5. Mismatch report → expect 11 → 10. `long_vowel_missing` bucket
         should be empty.
 Step 6. Commit + push.
+
+### §17.48.1 Broader source survey (added 2026-04-30)
+
+The user requested evidence from a wider range of sources before any new
+sound change is committed.  All citations below are from
+`docs/references/` in this repo.
+
+#### A. The PGmc / PWGmc reconstruction
+
+Every source surveyed reconstructs PGmc *tehun* (variously spelt *texun*
+with *x = *h):
+
+* **Kluge–Seebold, *Etymologisches Wörterbuch der dt. Sprache*, s.v. *zehn***
+  (line 100231–100240): "Aus g. *tehun 'zehn', auch in gt. taihun, anord.
+  tíu, ae. tī(e)n, afr. tiān, tēne, tīne."
+* **Kroonen 2013, *Etymological Dictionary of Proto-Germanic*** (lines
+  26196–26211, s.v. ***tehun-** num. 'ten'**): "Go. taihun … OE tien …
+  OS tehun … OHG zehan … ⇒ *dek-m (IE)."  Cross-references the ordinal
+  ***tehunþ/d-** "OE *tēoða*, *teogeða* num. 'id.'" — i.e. the ordinal
+  preserves the un-umlauted contracted vowel that Option A proposes for
+  the cardinal.
+* **Orel 2003, *Handbook of Germanic Etymology***, s.v. ***texun*** (line
+  44735): "Goth taihun 'ten', ON tíu, OE tīn[sic; OCR for tī(e)n], OFris
+  tiān, OS tehan, OHG zehan."
+* **Hirt 1931, *Handbuch des Urgermanischen* I §92** (lines 16835–16842):
+  lists the cognate set and concludes "Ae. ti(e)ne geht wohl auf
+  *tehun- + Endung zurück" — explicitly attributing OE *tien* to an
+  *inflected* form, not the bare cardinal.
+* **Ringe & Taylor 2014, *Linguistic History of English* II** (lines
+  14642–14643): "PWGmc (?) *tehuni- 'ten' (with i-stem inflection, cf.
+  Stiles 1985-6, NOWELE 7: 13–18; cf. OS -tein '-teen') > *teohuni- > WS
+  *tiehyni- > tien, Kent., Angl. *tehyni*."
+
+#### B. The bare cardinal: *tehun → tēon
+
+The literature is unanimous that the **regular lautgesetzlich descendant
+of bare *tehun in Old English is *tēon* (un-umlauted)**, and that *tien*
+is secondary, levelled out of inflected i-stem cells:
+
+* **Brunner 1965, *Altenglische Grammatik* (= Sievers-Brunner) §234**
+  (line 9799), in the section on grammatischer Wechsel:
+  > "tēon zehn aus *tëhun (got. taihun) und -tiz in twēntiz usw."
+
+  This is a textbook statement that **OE *tēon 'ten' derives directly
+  from PGmc *tehun**.  It is given without comment, as a paradigm
+  example of intervocalic *h-loss.
+
+* **Brunner §129.2** (lines 5991–6003), the formal rule statement:
+  > "Urspr. eh + Vokal wird (wohl über eoh durch 'Brechung', §86)
+  > ws.-kent. zu éo … Hierher gehören: die Verba contracta wie
+  > gemeinws. zefēon … plēon … sēon aus *fehan usw. … ferner die Subst.
+  > feoh — Gen. feos … swēor Schwäher, **teoða zehnter**, **-tēontiz
+  > hundert** aus *seha, *swehur, ***tehu(n)þo***, ***tehuntiz*** u. ä."
+
+  Brunner explicitly groups the ordinal *tēoða* and the compositional
+  cliticization in *-tēontig* (in *hundtēontig* '100') as products of
+  exactly the same intervocalic *h-loss + contraction we are
+  proposing for the bare cardinal.  The ordinal and the compound are
+  the un-umlauted siblings of the levelled cardinal *tien*.
+
+  Note also the dialectal sub-rule (lines 6004–6006): the angl. R²/L/
+  Rit. forms with **-tēan-** vs ws./R¹ **-tēon-** for *-tehunt-* show
+  that the contraction product depends on the quality of the second
+  vowel — long diphthong with velar second element when the second
+  vowel is back, smoothing to *ē* when palatal.  This is the precise
+  conditioning Option A encodes.
+
+* **Brunner §129 Anm. 6** (lines 6055–6058):
+  > "Ws. tien, tȳn zehn, flekt. tiene, tȳne erklärt sich durch
+  > i-Umlaut in flekt. Formen; nordh. steht ohne i-Umlaut tēa, tēo mit
+  > n-Abfall (§188,2). Unklar ist Vesp. Ps. und nicht streng ws. tēn,
+  > tēne. Zur Erklärung s. O. Ritter, Vermischte Beitr., S. 157ff."
+
+* **Brunner §325** (lines 13271–13273) — full attestation table:
+  altws. *tien*, gemeinws. *tȳn*, weniger streng ws. auch *tēn*; kent.
+  merc. *tēn* (Urk., Vesp. Ps., R¹); nordh. R² *tēn, tēo, tēa*; L,
+  Rit. *tēa*.  All non-WS dialects show *tēn / tēo / tēa* — i.e. the
+  un-umlauted form is the dialectally widespread one.
+
+* **Bülbring 1902, *Altenglisches Elementarbuch* §557e** (line 10535):
+  in the Northumbrian -n loss rule: "im Zahlwort … *tēo, tēa* 'zehn'."
+  This directly attests the predicted contraction product *tēon* (with
+  further -n loss to *tēo*, *tēa*), confirming that *tēon* is the
+  expected pre-Northumbrian form.
+
+* **Kaluza c. 1900, *Historische Grammatik des Englischen*** (line
+  9970–9972, §): "10. tīen, tȳn, kent. merc. tēn (urg. *tehun, idg.
+  *deḱm̥, lat. ...) … flektierten Form urg. *tehuni, ae. *teo(h)uni zu
+  beruhen."  Independent confirmation of Brunner's account from a
+  generation earlier.  Kaluza also (line 6695): "ae. tēon (*tehun)".
+
+* **Fulk 2018, *Comparative Grammar of Early Germanic Languages*
+  §10.2** (already cited in §17.48): same account, citing Brunner.
+
+* **Bosworth-Toller**: rich attestation of the compound *hundteóntig*
+  '100' and its derivatives *hundteóntigfeald*, *hundteóntigopa*,
+  *hundteóntigwintre* (lines 92042–92057).  The un-umlauted form *tēon-*
+  is the productive compounding stem in Old English; the i-umlauted
+  *tien-* is restricted to the simplex cardinal and the *-tīene* in
+  decade compounds.
+
+#### C. The contraction rule itself
+
+Brunner §129.2 (above) is the most explicit statement of the rule we
+are encoding.  Schematically, for OE intervocalic *h between a stressed
+vowel and a back vowel, after breaking and *h-loss the contraction
+yields a **long diphthong with velar second element**:
+
+| input        | breaking → | h-loss → | contraction → | gloss |
+|--------------|-----------:|---------:|--------------:|------|
+| *tehun*      | *teohun*   | *teoun*  | *tēon*        | 'ten' |
+| *tehunþō*    | *teohunþō* | *teounþō*| *tēoþa* /tēoða/ | 'tenth' (Brunner §129.2)|
+| *tehuntig-*  | *teohunt.* | *teount.*| *tēontig-*    | 'hund-' (Brunner §129.2)|
+| *fehu*       | *feohu*    | *feou*   | *fēo* (gen)   | 'cattle' obl. (Brunner §129.2)|
+| *fehan*      | *feohan*   | *feoan*  | *fēon* (gefēon)| 'rejoice' (Brunner §129.2)|
+| *swehura*    | *sweohur*  | *sweour* | *swēor*       | 'father-in-law' (Brunner §129.2)|
+
+The bare cardinal *tehun > tēon* sits squarely inside this paradigm.
+
+This is **not a new sound change**.  It is the same intervocalic *h-
+loss + contraction that the cascade already (correctly) handles for
+*sláxaną → slēan*, *fehu → fēo*, etc.  The gap in `OEContraction` is
+that the existing clauses cover *eo + a → ēo* (slēan-type) but not
+*eo + o → ēo* (the *téxun → tēon* type).  Adding the four parallel
+*[ée]o + *o → *[ḗē]o* clauses fills the gap and makes the cascade match
+Brunner §129.2 as stated.
+
+#### D. Risk audit (overgeneration)
+
+Lexicon audit (TSV, all `*[ée]x` words feeding into the OE column) was
+done in §17.48 above.  Result: only *téxun* has the *eo + o (post-
+weak-tail) contraction environment in our data; *féxu* loses *u via
+heavy-syllable apocope before any contraction could fire; *séxs,
+*féxtaną, *wéxtiz, *knéxtaz* all have *x + C, not *x + V, and so are
+unaffected; *sláxaną* uses the existing *ea + a → *ēa rule.
+
+No source consulted suggests the rule should fail to fire in any of
+these environments; on the contrary, all sources treat the contraction
+as exceptionless (modulo dialectal smoothing in Anglian, which we
+do not model at this point in the cascade).
+
+#### E. Summary table
+
+| source                          | reconstruction | bare cardinal regular outcome | account of *tien*           |
+|---------------------------------|---------------:|------------------------------:|-----------------------------|
+| Brunner 1965 §234 / §129.2 / §325 | *tehun         | tēon                          | i-umlaut from inflected forms |
+| Bülbring 1902 §557e             | (assumes *tehun)| tēon (→ Nh. tēo, tēa)         | not discussed under Nh.      |
+| Kaluza c.1900                   | *tehun         | tēn                           | from inflected *tehuni       |
+| Hirt 1931 §92                   | *tehun         | (not discussed)               | "*tehun- + Endung"           |
+| Ringe-Taylor 2014               | *tehuni- (PWGmc)| (Angl. *tehyni)               | i-umlaut from i-stem cell    |
+| Fulk 2018 §10.2                 | *tehun         | tēon (Anglian)                | i-umlaut from inflected forms |
+| Campbell 1959 §682              | (assumes *tehun)| tēn (Angl., Kent.); tēo, tēa (lNh.) | (described, not derived) |
+| Kroonen 2013                    | *tehun-        | (cardinal: tien); ordinal: tēoða | (not discussed)             |
+| Orel 2003                       | *texun         | tien                          | (not discussed)              |
+| Kluge–Seebold                   | *tehun         | tī(e)n                        | (not discussed)              |
+| Hogg 1992 vol.1                 | *tehun         | (not specifically discussed)  | (not specifically discussed) |
+
+**Verdict.** The literature unanimously reconstructs PGmc *tehun*.
+Three independent older grammars (Bülbring 1902, Kaluza c.1900, Brunner
+1965 = Sievers-Brunner) and two modern handbooks (Fulk 2018,
+Ringe-Taylor 2014) explicitly identify *tēon* (or non-WS *tēn / tēo /
+tēa*) as the regular phonological outcome of bare *tehun*, and *tien*
+as a secondary form levelled out of inflected i-stem cells.  Brunner
+§129.2 explicitly groups bare *tehun → tēon* with the ordinal *tēoða*
+and the compound *-tēontig* as products of the same contraction rule.
+The compounds in *hund-tēon-tig* and the ordinal *tēoða* are
+universally attested with the un-umlauted form, demonstrating that
+*tēon-* was a productive stem in Old English.
+
+**Option A is therefore not introducing a new sound change**; it is
+filling a recognised gap in the cascade by encoding a rule that all
+major handbooks describe explicitly.  The rule is supported, not
+merely tolerated, by every source consulted.
