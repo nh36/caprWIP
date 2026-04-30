@@ -2296,7 +2296,7 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # dossier-medial-u-lowering-conditioning-2026.md.
 #
 define OEMedUnstressedULowering [
-    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
 ];
 
 # ===========================================================================

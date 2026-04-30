@@ -1,10 +1,10 @@
-Total mismatches: 9
+Total mismatches: 10
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
   Phonology (core buckets):    0
-  Phonology (other buckets):   1
+  Phonology (other buckets):   2
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
@@ -27,7 +27,7 @@ Total mismatches: 9
 --- back_expected_front_out sub-buckets ---
 --- vowel_quality sub-buckets ---
   vowel_quality__u_lowering_exception: 5
-  vowel_quality__u_o_alternation: 1
+  vowel_quality__u_o_alternation: 2
 --- final_vowel_missing sub-buckets ---
   final_vowel_missing__weak_noun_like: 1
 --- final_n_missing sub-buckets ---
@@ -50,8 +50,9 @@ vowel_quality__u_lowering_exception (5):
   *wúlfaz -> wolf (expected wulf)
   *wúllō -> woll (expected wull)
 
-vowel_quality__u_o_alternation (1):
-  *wíduwōn -> wudowe (expected wuduwe)
+vowel_quality__u_o_alternation (2):
+  *búgun -> bugun (expected bugon)
+  *skúbun -> sċufun (expected sċufon)
 
 final_vowel_missing__weak_noun_like (1):
   *fūri -> fȳr (expected fȳre)
