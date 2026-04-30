@@ -30,6 +30,7 @@
 - [CVVC Stems: *baug- vs *straw- Distinction](#cvvc-stems-and-sievers-law-the-baug--vs-straw--distinction)
 
 ### Project status and archived work
+- [Project Status (as of 2026-04-30) — research phase complete](#project-status-as-of-2026-04-30--research-phase-complete)
 - [Project Status (as of 2026-03-10)](#project-status-as-of-2026-03-10)
 - [Consonant Mismatch Bucket Refinement (2026-02-07)](#consonant-mismatch-bucket-refinement-2026-02-07)
 - [A-Restoration Fix (2026-02-06)](#a-restoration-fix-2026-02-06)
@@ -1407,6 +1408,58 @@ to *iu before *ō. Different mechanisms, different environments, different outco
 1. Should *ijō → *iu be treated as a regular sound change or a lexical irregularity?
 2. Is the parallel *Vwu → *Vu change (knee, few) the same mechanism?
 3. Are there other PGmc *ijV sequences we should look for in the lexicon?
+
+---
+
+## Project Status (as of 2026-04-30) — research phase complete
+
+**Pipeline:** PGmc → OE FST builds clean; ordered cascade of sound-change stages.
+**Coverage:** 378/386 OE matches (**97.9%**), **8 mismatches**, **0 no-output**.
+**Mismatch trajectory:** ~300 (Oct 2025) → 291 (Jan 2026) → 256 (Feb 7) → 103 (Mar 8) → 78 (Mar 10) → 14 (start of stress-tier branch) → 13 (Phase 2 of *ḗ tier) → 11 → 10 → 9 → **8 (2026-04-30)**.
+
+**Intervention summary at close of research phase:**
+* TSV/data fixes needed: **0**
+* Documented exceptions (`oe_known_problems.tsv`): **8**
+* Phonology (core buckets): **0**
+* Phonology (other buckets): **0**
+
+The 8 remaining are all documented exceptions:
+* `*búkkaz → bocc` (expected `bucc`) — `wontfix: u_lowering_near_labial`
+* `*fūri → fȳr` (expected `fȳre`) — `exception: analogical_dat_e`
+* `*fúglaz → fogol` (expected `fugol`) — `wontfix: u_lowering_near_labial`
+* `*ráukaz → rēac` (expected `rēc`) — `wontfix: smoothing_anglian_relic`
+* `*rústō → rost` (expected `rust`) — `wontfix: u_lowering_near_labial`
+* `*táppô → tappa` (expected `tæppa`) — `exception: analogical_n_stem_levelling`
+* `*wúlfaz → wolf` (expected `wulf`) — `wontfix: u_lowering_near_labial`
+* `*wúllō → woll` (expected `wull`) — `wontfix: u_lowering_near_labial`
+
+**The research phase is closed.** Each remaining mismatch has a fully
+documented philological justification (analogical levelling, dialect
+relic, or lexical *u-preservation near labials — all standard handbook
+phenomena, see Brunner §44 Anm. 7, Campbell §218, Luick §326). No
+further FST cascade work is anticipated within scope.
+
+**Closing-phase highlights (Apr 2026):**
+* `*ḗ` long-vowel stress tier (§17.49) — 5-phase refactor that landed
+  cleanly without behavioural regression and unblocked subsequent work.
+* `*téxun → tēon` (§17.48) ten-paradigm-cell research and dossier.
+* `*néwun → nigon` (§17.50) — NSGmc/Ingvaeonic *nigun adopted at TSV
+  level after a thorough Bugge's-velarization controversy review.
+* `*g`-palatalisation conditioning audit (§17.50.4) — handbook-supported
+  refinement of the right-context conditioning.
+* `*wíduwōn → wuduwe` (§17.51 / §17.51.A1.1–4) — the closing thread:
+  encoded the OE-internal *wi → wu combinative u-umlaut as a new rule,
+  extended `OEMedUnstressedULowering`'s harmony block to include
+  stressed *ú, surfaced and resolved a transient `bugun`/`sċufun`
+  question through three parallel research dossiers
+  (`widuwe-u-preservation.md` Appendix D, `un-to-on-chronology.md`,
+  `bugun-scufun-attestation.md`, `bugan-scufan-paradigm-cell-review.md`),
+  and retargeted the bow/shove cogset rows from 3pl pret. (analogical
+  overlay) to 1/3 sg pret. (genuinely Lautgesetzlich + universally
+  attested: `*báug → bēag`, `*skáub → sċēaf`).
+
+**Next phase: presentation.** Research is complete; project moves into
+write-up / publication-preparation mode.
 
 ---
 
