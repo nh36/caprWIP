@@ -2859,6 +2859,12 @@ define OEHighVowelApocope [
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with heavy-by-position first syllable (short V + 2+C) +
+    # light second syllable + final high V (Campbell §345; DEV_NOTES §17.45.4).
+    # E.g. *spénnilō → *spinnilu → *spinnil (then OELAdjacentSyncope + nn-degem → spinl).
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
     # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.,

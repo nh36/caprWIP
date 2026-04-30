@@ -41988,3 +41988,121 @@ Mismatch-report total over the branch:
   unstressed in-stem suffix. The §17.45.3g context restriction can
   be removed; verify on a clean build that the bare rule is in fact
   what's running and update if there's stale context.
+
+
+## §17.45.4 — Step 3 finally addressed: residual `spinlu → spinl` (final-*u apocope gap)
+
+### Recap of the §17.45 thread
+
+Step 1 (`72313271`) retargeted TSV row 2208 from `spindle` to **`spinl`** (the
+attested OE syncopated variant per Clark Hall *s.v.* `spinel` / `spinl, spinil
+= spinel`). Step 2 (`79e4a2fe`) added `*nn → *n / _ sonorant` to
+`OEPreconsonantalDegemination`, taking the FST output from `spinnlu → spinlu`.
+
+Step 3 was originally framed as "research the residual `spinlu → spinl`
+gap (apocope/syllabic-l)". It was diverted into the §17.45.3a–g fyrht-
+chronology sequence and then into the §17.46 stressed-ī tier. The
+residual `-u` was never resolved. **This section finally addresses it.**
+
+### The diagnosis: a missing apocope environment
+
+Trace `*spénnilō` through the cascade:
+
+  | Stage                          | Form          |
+  |--------------------------------|---------------|
+  | post weak-tail / *ō → *u       | `*spinnilu`   |
+  | OEHighVowelApocope             | `*spinnilu`  *(no rule fires!)* |
+  | OEMedialSyncope                | `*spinnilu`   |
+  | OELAdjacentSyncope             | `*spinnlu`    |
+  | OEPreconsonantalDegemNN        | `*spinlu`     |
+  | surface                        | `spinlu`      |
+
+The bug is at OEHighVowelApocope. The current rule body (germanic.txt
+line 2819) covers, for trisyllables, four shape classes for the FIRST
+syllable:
+
+  - long V + any C       (`EnglishStarLongVowel + OEAnyConsonant+`)
+  - long diphthong + any C
+  - short diphthong + 2+ C
+  - short V + single C   (= LIGHT first syllable, line 2859)
+
+**Missing**: the fifth shape — short V + 2+ C (heavy-BY-POSITION
+first syllable) + light second syllable + final high V. That is
+exactly the shape of `*spinnilu` (`*s*p*i*n*n*i*l*u`).
+
+Disyllabic apocope handles `shortV + 2+C + finalV` correctly (line
+2836); that's how `*búttmaz → botm` works. But the trisyllabic
+extension of the same first-syllable shape is absent.
+
+Per Campbell §345 / R/T §6.8.1, heavy-by-position first syllables
+count as heavy for apocope regardless of how many syllables follow.
+The fix is to add the missing pattern.
+
+### Two viable fixes
+
+**Fix B — extend OEHighVowelApocope (recommended)**
+
+Add three lines (one each for *i, *u, *ų finals) parallel to the
+existing trisyllabic clauses:
+
+    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+
+                    EnglishStarShortVowel OEAnyConsonant+ _ .#.
+    {*u} -> 0 || ... (same)
+    {*ų} -> 0 || ... (same)
+
+  - Pure pattern extension; no chronology shuffle.
+  - Independently motivated by Campbell §345.
+  - Predicted derivation:
+      *spinnilu → *spinnil (new apocope clause fires)
+                → *spinnl  (OELAdjacentSyncope: *i → 0 / V+C+ _ *l)
+                → *spinl   (OEPreconsonantalDegemNN)
+  - Risk: any trisyllabic word with `shortV + 2+C + shortV + C+ +
+    final-high-V` now loses its final V. The `OEAnyConsonant+`
+    glob is greedy, so the rule can in principle fire whenever
+    the structural description holds.
+
+**Fix A — reorder degemination before apocope**
+
+Move `OEPreconsonantalDegemNN` (and possibly TT) ahead of
+`OEHighVowelApocope` in the cascade. Then at apocope time
+`*spinnilu → *spinilu` (single -n-), which matches the existing
+trisyllabic-light pattern (line 2859) and apocope fires.
+
+  - Captures the historical intuition that geminate simplification
+    feeds weight-sensitive apocope.
+  - Smaller diff (one cascade-line move).
+  - Risk: changes the relative chronology globally; any other
+    word that depended on the old ordering could regress.
+  - The current ordering was set deliberately when degemination
+    was introduced for *botm only; it has not been re-examined.
+
+### Recommendation
+
+Try Fix B first. It is local, philologically transparent, and only
+extends an existing rule with a pattern Campbell already licenses.
+If Fix B causes any regression, fall back to Fix A (or a narrower
+context-restricted variant of B).
+
+### Verification plan
+
+1. Edit `OEHighVowelApocope`: add three clauses for the missing
+   trisyllabic short-heavy-by-position + light + final-high-V
+   pattern.
+2. `bash Germanic/tools/rebuild_oe_bins.sh`.
+3. Probe `*spénnilō` → expect `spinl`.
+4. Spot-probe regression candidates with shape `V̆CC + V̆C + V`:
+   `*búttmaz → botm` (control), `*nátilō → netl`, `*fátilō → fetl`,
+   `*fásilō → fesl` — all should be unchanged.
+5. `python3 Germanic/tools/oe_mismatch_report.py` — expect
+   13 → 12, with `final_vowel_extra` bucket losing the spinl entry.
+6. Single commit on `update`, push.
+
+### Expected post-fix `*spénnilō` derivation
+
+  *spénnilō (input)
+    → *spennilu       (weak-tail *ō → *u)
+    → *spinnilu       (raising, etc.)
+    → *spinnil        (NEW: trisyllabic heavy-by-position apocope)
+    → *spinnl         (OELAdjacentSyncope)
+    → *spinl          (OEPreconsonantalDegemNN: *nn → *n / _ *l)
+    → spinl           (surface)

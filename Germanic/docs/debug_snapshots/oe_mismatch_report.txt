@@ -1,10 +1,10 @@
-Total mismatches: 13
+Total mismatches: 12
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       8
   Phonology (core buckets):    1
-  Phonology (other buckets):   4
+  Phonology (other buckets):   3
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
   *búkkaz -> bocc (expected bucc)  [wontfix: u_lowering_near_labial]
@@ -20,7 +20,6 @@ Total mismatches: 13
   long_vowel_missing: 1
 
 === OTHER SUB-BUCKETS ===
-  final_vowel_extra: 1
   front_expected_back_out: 1
 --- breaking_extra sub-buckets ---
   breaking_extra__ea_other: 1
@@ -46,12 +45,6 @@ long_vowel_missing (1):
   >> ISSUE: Long vowel expected but short produced
   >> LIKELY: Compensatory lengthening, contraction, or TSV proto issue
   >> ACTION: Check if proto should have long vowel; check lengthening rules
-
-final_vowel_extra (1):
-  *spénnilō -> spinlu (expected spinl)
-  >> ISSUE: FST has final vowel, target is vowelless
-  >> LIKELY: Apocope not applied, or TSV target is reduced form
-  >> ACTION: Check apocope rules; may be morphology mismatch
 
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
