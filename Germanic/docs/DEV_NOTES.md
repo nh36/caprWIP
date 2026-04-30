@@ -43340,3 +43340,100 @@ existing four-rule statement of *k palatalisation already in
 `OEVelarPalatalization` (which does not use term complement either),
 and (b) it makes the handbook-rule provenance of each clause directly
 auditable from the source.
+
+## §17.51 — 'widow' mismatch: source canvass and decision options
+
+### §17.51.1 The mismatch
+
+Cascade: `*wíduwōn → widowe`. TSV target: `widuwe`. The rule
+responsible is `OEMedUnstressedULowering` (`germanic.txt:2298–2300`),
+which lowers medial unstressed *u → *o under all C-right contexts
+except *m. In *wíduwōn the medial *u is between *d and *w, so the
+rule fires (*w ∈ EnglishStarConsonant), giving *wídowe → widowe.
+
+### §17.51.2 Hypothesis and refutation
+
+The natural hypothesis is that *w should join *m as a blocker — either
+because *w is phonetically a labial like /m/, or because the OE
+`-uwe` sequence is somehow special. **This hypothesis is wrong.** Per
+the dossier in `Germanic/docs/dossiers/widuwe-u-preservation.md`:
+
+- **Campbell §365** explicitly treats `-uwe → -owe` as covered by
+  §373 lowering: "By §§ 373, 385, *u* often appears as *o* and *e*,
+  e.g. *beadowe*, *swalewan*" (verbatim, line 10014–10033 of
+  `docs/references/campbell_old_english_grammar.txt`). So *beaduwe →
+  *beadowe* is regular before *w*. *w does not block.
+- **Campbell §373** preservation list: `_u`, `_m`, `-uc`, `-ung`. No
+  *w, no labials as a class.
+- **Hogg §3.3.1.3** (vol. 1, 1992, line 4413ff): same list, no *w.
+- **Brunner §44 Anm. 7**: excludes *m, *ng. No *w.
+- **Bülbring §264**: gives Aelfric's `widewe` (medial *u lowered/raised
+  to *e* before *w*) — direct counterevidence for any *w-blocker.
+
+Six handbooks; zero list *w as a preserver. Adding *w to the rule's
+exclusion would over-generate and break `beaduwe → beadowe`,
+`swaluwan → swalewan`, `widewe`, etc. — even though those forms are
+not currently in our TSV, the rule must remain Lautgesetzlich for
+future expansion.
+
+### §17.51.3 What is widuwe, then?
+
+`widuwe` is **analogical**, on explicit testimony of two handbooks:
+
+- **Brunner §114b** (verbatim, `brunner_1965_altenglische_grammatik.txt:4671–4675`):
+  > "Angl. **widwe** … neben ws. **wuduwe** Witwe ist durch frühe
+  > Synkope zu erklären. Durch Ausgleich zwischen synkopierten und
+  > nicht synkopierten Formen ist spätws. **widuwe**, **wyduwe** …
+  > und **weodowe** … zu erklären."
+
+- **Luick §221 Anm. 1** (verbatim, `luick_historische_grammatik.txt:12779`):
+  > "widuwe nach widwe"
+
+The paradigm-internal compromise is between Anglian *widwe* (early
+syncope) and West-Saxon *wuduwe* (combinative u-umlaut applied
+prehistorically; cf. Bülbring §264, Luick §221 Anm. 3). Late-WS
+`widuwe` is an analogical hybrid.
+
+The other regular Lautgesetz pathway from *widuwōn — without
+combinative u-umlaut — is in fact what our cascade produces: `widowe`,
+matching attested late-WS `weodowe` after Bülbring's "gewöhnlicher
+Velarumlaut" applies (Brunner §114b).
+
+### §17.51.4 Decision options
+
+**Option A — change TSV PROTOFORM and TARGET to the WS norm.**
+Set PROTOFORM to `*wúduwōn` (combinative u-umlaut *wi → *wu treated as
+prehistoric, per Bülbring §264 / Luick §221 Anm. 3) and TARGET to
+`wuduwe` (Campbell §218: WS norm; Brunner §114b "ws. wuduwe"). The
+existing stressed-*u left-context exclusion in `OEMedUnstressedULowering`
+([EnglishStarVocalic - [{*u}|{*ū}]]) already preserves the medial *u
+when the preceding stressed vowel is *u — so the cascade should yield
+*wúduwōn → wuduwe Lautgesetzlich, dropping the mismatch from 9 to 8.
+
+**Option B — mark as documented exception.**
+Keep PROTOFORM `*wíduwōn` and TARGET `widuwe`; add to
+`oe_known_problems.tsv` with category `analogical_paradigm_levelling`,
+citing Brunner §114b and Luick §221 Anm. 1. Parallels existing entries
+*fūri (analogical_dat_e) and *táppô (analogical_n_stem_levelling).
+Mismatch count drops from 9 to 8 by reclassification.
+
+**No FST change in either option.** Both options keep
+`OEMedUnstressedULowering` as it stands. *w is not a blocker.
+
+### §17.51.5 Recommendation
+
+Option A is the more Lautgesetzlich move: it picks the conservative
+WS form *wuduwe* that has a clean phonological derivation, rather
+than recording an analogical form as an exception. Option B is the
+safer move: it preserves the TSV target as the Wiktionary headword
+(*widuwe) and keeps the lemma count stable. The user's preference
+governs.
+
+### §17.51.6 Sources
+
+Full dossier with verbatim quotations, line ranges, and a regression
+watchlist: `Germanic/docs/dossiers/widuwe-u-preservation.md`.
+Handbooks consulted: Campbell (§§218, 365, 373, 374, 378),
+Brunner (§§44 Anm. 7, 114b), Hogg vol. 1 (§3.3.1.3),
+Ringe-Taylor (2014: 270, 322; §6.9.6), Bülbring (§264),
+Luick (§§221, 221 Anm. 1, 221 Anm. 3, 224 Anm. 2).
