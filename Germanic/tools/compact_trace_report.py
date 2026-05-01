@@ -25,6 +25,15 @@ STARRED_FORM_RE = re.compile(r"\*(?:\*?[^\s*,])+")
 SECTION_PREFIX_RE = re.compile(r"^(#{1,6})\s+Section\s+\d+:\s*")
 # "--- beech ---" -> lemma marker
 LEMMA_RE = re.compile(r"^---\s+(.*?)\s+---$")
+# Stage line label: "OEMedUnstressedULowering: ..."
+STAGE_LABEL_RE = re.compile(r"^([A-Za-z][A-Za-z0-9]*):")
+
+
+def split_camel(name: str) -> str:
+    # "PGmcFinalZDeletion" -> "PGmc Final Z Deletion"
+    name = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
+    name = re.sub(r"([A-Z])([A-Z][a-z])", r"\1 \2", name)
+    return name
 
 
 def collapse_stars(token: str) -> str:
@@ -40,6 +49,14 @@ def compact_line(line: str) -> str:
     lemma = LEMMA_RE.match(line)
     if lemma:
         line = f"# {lemma.group(1)}"
+    stage = STAGE_LABEL_RE.match(line)
+    if stage:
+        label = stage.group(1)
+        # Skip a hard-coded set of single-word labels we don't want split.
+        if label not in {"PROTO", "EXPECTED", "OUTPUTS", "NOTE", "Outcome"}:
+            spaced = split_camel(label)
+            if spaced != label:
+                line = spaced + line[len(label):]
     return line
 
 
