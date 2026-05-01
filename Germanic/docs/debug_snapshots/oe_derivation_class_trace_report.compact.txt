@@ -53,7 +53,7 @@ Proto Input: *bákaną
 ### Old English
 
 Anglo Frisian Brightening: *bækaną
-OEA Restoration: *bakaną
+OE A Restoration: *bakaną
 OE Heavy Syllable Nasal Apocope: *bakan
 OE Secondary Nasalization: *bakąn
 OE Weak Tail Reduction: *bakan
@@ -302,9 +302,9 @@ OE Secondary Nasalization: *gĕlēabijąn
 PGmc B Allophony: *gĕlēaβijąn
 Sievers Law Syncope: *gĕlēaβjąn
 OE Velar Palatalization: *ʤĕlēaβjąn
-OEI Umlaut: *ʤĕlīeβjąn
+OE I Umlaut: *ʤĕlīeβjąn
 OE Weak Tail Reduction: *ʤĕlīeβjan
-OEJ Loss After Heavy: *ʤĕlīeβan
+OE J Loss After Heavy: *ʤĕlīeβan
 
 ### Orthography & surface
 
@@ -336,7 +336,7 @@ PGmc Final Z Deletion: *bálgi
 Anglo Frisian Brightening: *bælgi
 OE Breaking: *bealgi
 OE Velar Palatalization: *bealʤi
-OEI Umlaut: *bielʤi
+OE I Umlaut: *bielʤi
 OE High Vowel Apocope: *bielʤ
 
 ### Orthography & surface
@@ -426,7 +426,7 @@ PGmc Final Z Deletion: *búrdi
 
 ### Old English
 
-OEI Umlaut: *byrdi
+OE I Umlaut: *byrdi
 OE High Vowel Apocope: *byrd
 
 ### Orthography & surface
@@ -567,7 +567,7 @@ NWGmc U Lowering: *bórōjaną
 
 OE Heavy Syllable Nasal Apocope: *bórōjan
 OE Secondary Nasalization: *bórōjąn
-OEI Umlaut: *bórējąn
+OE I Umlaut: *bórējąn
 OE Unstressed Long Vowel Shortening: *bórejąn
 OE Weak Tail Reduction: *bórejan
 OE Intervocalic J Vocalization: *bóreian
@@ -689,9 +689,9 @@ OE Heavy Syllable Nasal Apocope: *bēagijan
 OE Secondary Nasalization: *bēagijąn
 Sievers Law Syncope: *bēagjąn
 OE Velar Palatalization: *bēaʤjąn
-OEI Umlaut: *bīeʤjąn
+OE I Umlaut: *bīeʤjąn
 OE Weak Tail Reduction: *bīeʤjan
-OEJ Loss After Heavy: *bīeʤan
+OE J Loss After Heavy: *bīeʤan
 
 ### Orthography & surface
 
@@ -837,7 +837,7 @@ PGmc Final Z Deletion: *brōki
 ### Old English
 
 OE Velar Palatalization: *brōʧi
-OEI Umlaut: *brēʧi
+OE I Umlaut: *brēʧi
 OE High Vowel Apocope: *brēʧ
 
 ### Orthography & surface
@@ -867,7 +867,7 @@ PGmc Final Z Deletion: *brūdi
 
 ### Old English
 
-OEI Umlaut: *brȳdi
+OE I Umlaut: *brȳdi
 OE High Vowel Apocope: *brȳd
 
 ### Orthography & surface
@@ -959,7 +959,7 @@ Proto Input: *bréstaną
 OE Heavy Syllable Nasal Apocope: *bréstan
 OE Secondary Nasalization: *bréstąn
 OE Weak Tail Reduction: *bréstan
-OER Metathesis: *bérstan
+OE R Metathesis: *bérstan
 
 ### Orthography & surface
 
@@ -1021,7 +1021,7 @@ Proto Input: *kéwwaną
 
 ### Old English
 
-OEWW Simplification: *kéwaną
+OE WW Simplification: *kéwaną
 OE Ew Long Diphthong: *kēowaną
 OE Heavy Syllable Nasal Apocope: *kēowan
 OE Secondary Nasalization: *kēowąn
@@ -1255,7 +1255,7 @@ PGmc Final Z Deletion: *dāli
 
 ### Old English
 
-OEI Umlaut: *dǣli
+OE I Umlaut: *dǣli
 OE High Vowel Apocope: *dǣl
 
 ### Orthography & surface
@@ -1342,7 +1342,7 @@ NWGmc Final Long O Raising: *dáwwu
 
 ### Old English
 
-OEWW Simplification: *dáwu
+OE WW Simplification: *dáwu
 OE Aw Long Diphthong: *dḗawu
 OE High Vowel Apocope: *dḗaw
 
@@ -1484,7 +1484,7 @@ PGmc Final Z Deletion: *dránki
 ### Old English
 
 OE Velar Palatalization: *dránʧi
-OEI Umlaut: *drenʧi
+OE I Umlaut: *drenʧi
 OE High Vowel Apocope: *drenʧ
 
 ### Orthography & surface
@@ -1699,7 +1699,7 @@ Proto Input: *fáraną
 ### Old English
 
 Anglo Frisian Brightening: *færaną
-OEA Restoration: *faraną
+OE A Restoration: *faraną
 OE Heavy Syllable Nasal Apocope: *faran
 OE Secondary Nasalization: *farąn
 OE Weak Tail Reduction: *faran
@@ -1968,7 +1968,7 @@ NWGmc Preconsonantal X Loss: *fūsti
 
 ### Old English
 
-OEI Umlaut: *fȳsti
+OE I Umlaut: *fȳsti
 OE High Vowel Apocope: *fȳst
 
 ### Orthography & surface
@@ -2062,7 +2062,7 @@ OE Diphthong Leveling: *flēoxaną
 OE Heavy Syllable Nasal Apocope: *flēoxan
 OE Secondary Nasalization: *flēoxąn
 OE Weak Tail Reduction: *flēoxan
-OEH Loss: *flēoan
+OE H Loss: *flēoan
 OE Contraction: *flēon
 
 ### Orthography & surface
@@ -2090,7 +2090,7 @@ PGmc Final Z Deletion: *flāski
 ### Old English
 
 OE Sk Palatalization: *flāʃi
-OEI Umlaut: *flǣʃi
+OE I Umlaut: *flǣʃi
 OE High Vowel Apocope: *flǣʃ
 
 ### Orthography & surface
@@ -2325,7 +2325,7 @@ PWGmc Coronal W Assimilation: *féwwar
 
 ### Old English
 
-OEWW Simplification: *féwar
+OE WW Simplification: *féwar
 OE Ew Long Diphthong: *fēowar
 Anglo Frisian Brightening: *fēowær
 OE Unstressed AE Merger: *fēower
@@ -2442,7 +2442,7 @@ NWGmc U Lowering: *fróstą
 ### Old English
 
 OE Heavy Syllable Nasal Apocope: *fróst
-OER Metathesis: *fórst
+OE R Metathesis: *fórst
 
 ### Orthography & surface
 
@@ -2555,7 +2555,7 @@ PGmc Final Z Deletion: *géfti
 ### Old English
 
 OE Velar Palatalization: *ʤéfti
-OEI Umlaut: *ʤifti
+OE I Umlaut: *ʤifti
 OE High Vowel Apocope: *ʤift
 
 ### Orthography & surface
@@ -2737,7 +2737,7 @@ Proto Input: *grábaną
 ### Old English
 
 Anglo Frisian Brightening: *græbaną
-OEA Restoration: *grabaną
+OE A Restoration: *grabaną
 OE Heavy Syllable Nasal Apocope: *graban
 OE Secondary Nasalization: *grabąn
 PGmc B Allophony: *graβąn
@@ -2828,7 +2828,7 @@ PGmc Final Z Deletion: *gásti
 
 Anglo Frisian Brightening: *gæsti
 OE Velar Palatalization: *ʤæsti
-OEI Umlaut: *ʤesti
+OE I Umlaut: *ʤesti
 OE Ws Palatal Diphthongization: *ʤiesti
 OE High Vowel Apocope: *ʤiest
 
@@ -2988,7 +2988,7 @@ Proto Input: *xándlōjaną
 
 OE Heavy Syllable Nasal Apocope: *xándlōjan
 OE Secondary Nasalization: *xándlōjąn
-OEI Umlaut: *xándlējąn
+OE I Umlaut: *xándlējąn
 OE Unstressed Long Vowel Shortening: *xándlejąn
 OE Weak Tail Reduction: *xándlejan
 OE Intervocalic J Vocalization: *xándleian
@@ -3058,7 +3058,7 @@ Anglo Frisian Brightening: *xærbistu
 OE Breaking: *xearbistu
 OE Velar Fricative Palatalization: *çearbistu
 PGmc B Allophony: *çearβistu
-OEI Umlaut: *çierβistu
+OE I Umlaut: *çierβistu
 OE High Vowel Apocope: *çierβist
 OE Med Unstressed I Lowering1: *çierβest
 
@@ -3092,7 +3092,7 @@ Proto Input: *xágô
 
 Anglo Frisian Brightening: *xægô
 OE Velar Fricative Palatalization: *çægô
-OEA Restoration: *çagô
+OE A Restoration: *çagô
 OE Unstressed Long Vowel Shortening: *çaga
 
 ### Orthography & surface
@@ -3126,7 +3126,7 @@ OE Med Unstressed U Lowering: *xáboka
 PWGmc Final Bare A Loss: *xábok
 Anglo Frisian Brightening: *xæbok
 OE Velar Fricative Palatalization: *çæbok
-OEA Restoration: *çabok
+OE A Restoration: *çabok
 PGmc B Allophony: *çaβok
 
 ### Orthography & surface
@@ -3162,7 +3162,7 @@ OE Au Fronting: *xáeują
 OE Diphthong Leveling: *xēają
 OE Velar Fricative Palatalization: *çēają
 OE Heavy Syllable Nasal Apocope: *çēaj
-OEI Umlaut: *çīej
+OE I Umlaut: *çīej
 
 ### Orthography & surface
 
@@ -3260,9 +3260,9 @@ PWGmc Ai Monophthongization: *xālijaną
 OE Heavy Syllable Nasal Apocope: *xālijan
 OE Secondary Nasalization: *xālijąn
 Sievers Law Syncope: *xāljąn
-OEI Umlaut: *xǣljąn
+OE I Umlaut: *xǣljąn
 OE Weak Tail Reduction: *xǣljan
-OEJ Loss After Heavy: *xǣlan
+OE J Loss After Heavy: *xǣlan
 
 ### Orthography & surface
 
@@ -3353,7 +3353,7 @@ PGmc Final Z Deletion: *xāθi
 
 ### Old English
 
-OEI Umlaut: *xǣθi
+OE I Umlaut: *xǣθi
 OE High Vowel Apocope: *xǣθ
 
 ### Orthography & surface
@@ -3387,8 +3387,8 @@ PWGmc Final Bare A Loss: *xággj
 Anglo Frisian Brightening: *xæggj
 OE Velar Fricative Palatalization: *çæggj
 OE Velar Palatalization: *çæʤʤj
-OEI Umlaut: *çeʤʤj
-OEJ Loss After Heavy: *çeʤʤ
+OE I Umlaut: *çeʤʤj
+OE J Loss After Heavy: *çeʤʤ
 
 ### Orthography & surface
 
@@ -3544,7 +3544,7 @@ Proto Input: *xáwwaną
 
 ### Old English
 
-OEWW Simplification: *xáwaną
+OE WW Simplification: *xáwaną
 OE Aw Long Diphthong: *xḗawaną
 OE Velar Fricative Palatalization: *çḗawaną
 OE Heavy Syllable Nasal Apocope: *çḗawan
@@ -3580,9 +3580,9 @@ NWGmc Final Long O Raising: *xéndju
 ### Old English
 
 OE Velar Fricative Palatalization: *çéndju
-OEI Umlaut: *çindju
+OE I Umlaut: *çindju
 OE High Vowel Apocope: *çindj
-OEJ Loss After Heavy: *çind
+OE J Loss After Heavy: *çind
 
 ### Orthography & surface
 
@@ -3946,9 +3946,9 @@ PWGmc Ai Monophthongization: *lāstijaną
 OE Heavy Syllable Nasal Apocope: *lāstijan
 OE Secondary Nasalization: *lāstijąn
 Sievers Law Syncope: *lāstjąn
-OEI Umlaut: *lǣstjąn
+OE I Umlaut: *lǣstjąn
 OE Weak Tail Reduction: *lǣstjan
-OEJ Loss After Heavy: *lǣstan
+OE J Loss After Heavy: *lǣstan
 
 ### Orthography & surface
 
@@ -3979,9 +3979,9 @@ PWGmc Ai Monophthongization: *lādijaną
 OE Heavy Syllable Nasal Apocope: *lādijan
 OE Secondary Nasalization: *lādijąn
 Sievers Law Syncope: *lādjąn
-OEI Umlaut: *lǣdjąn
+OE I Umlaut: *lǣdjąn
 OE Weak Tail Reduction: *lǣdjan
-OEJ Loss After Heavy: *lǣdan
+OE J Loss After Heavy: *lǣdan
 
 ### Orthography & surface
 
@@ -4045,7 +4045,7 @@ Rhotacism: *lírnōjaną
 OE Breaking: *líornōjaną
 OE Heavy Syllable Nasal Apocope: *líornōjan
 OE Secondary Nasalization: *líornōjąn
-OEI Umlaut: *líornējąn
+OE I Umlaut: *líornējąn
 OE Unstressed Long Vowel Shortening: *líornejąn
 OE Weak Tail Reduction: *líornejan
 OE Intervocalic J Vocalization: *líorneian
@@ -4168,7 +4168,7 @@ Proto Input: *líkkōjaną
 
 OE Heavy Syllable Nasal Apocope: *líkkōjan
 OE Secondary Nasalization: *líkkōjąn
-OEI Umlaut: *líkkējąn
+OE I Umlaut: *líkkējąn
 OE Unstressed Long Vowel Shortening: *líkkejąn
 OE Weak Tail Reduction: *líkkejan
 OE Intervocalic J Vocalization: *líkkeian
@@ -4265,9 +4265,9 @@ OE Diphthong Leveling: *lēoxtijaną
 OE Heavy Syllable Nasal Apocope: *lēoxtijan
 OE Secondary Nasalization: *lēoxtijąn
 Sievers Law Syncope: *lēoxtjąn
-OEI Umlaut: *līextjąn
+OE I Umlaut: *līextjąn
 OE Weak Tail Reduction: *līextjan
-OEJ Loss After Heavy: *līextan
+OE J Loss After Heavy: *līextan
 
 ### Orthography & surface
 
@@ -4606,10 +4606,10 @@ Proto Input: *mákōjaną
 ### Old English
 
 Anglo Frisian Brightening: *mækōjaną
-OEA Restoration: *makōjaną
+OE A Restoration: *makōjaną
 OE Heavy Syllable Nasal Apocope: *makōjan
 OE Secondary Nasalization: *makōjąn
-OEI Umlaut: *makējąn
+OE I Umlaut: *makējąn
 OE Unstressed Long Vowel Shortening: *makejąn
 OE Weak Tail Reduction: *makejan
 OE Intervocalic J Vocalization: *makeian
@@ -4757,9 +4757,9 @@ PWGmc Ai Monophthongization: *mānijaną
 OE Heavy Syllable Nasal Apocope: *mānijan
 OE Secondary Nasalization: *mānijąn
 Sievers Law Syncope: *mānjąn
-OEI Umlaut: *mǣnjąn
+OE I Umlaut: *mǣnjąn
 OE Weak Tail Reduction: *mǣnjan
-OEJ Loss After Heavy: *mǣnan
+OE J Loss After Heavy: *mǣnan
 
 ### Orthography & surface
 
@@ -4788,7 +4788,7 @@ PGmc Final Z Deletion: *máxti
 
 Anglo Frisian Brightening: *mæxti
 OE Breaking: *meaxti
-OEI Umlaut: *miexti
+OE I Umlaut: *miexti
 OE Ws Palatal Umlaut: *mixti
 OE High Vowel Apocope: *mixt
 
@@ -4994,7 +4994,7 @@ NWGmc Final Long O Raising: *nábu
 ### Old English
 
 Anglo Frisian Brightening: *næbu
-OEA Restoration: *nabu
+OE A Restoration: *nabu
 PGmc B Allophony: *naβu
 
 ### Orthography & surface
@@ -5024,7 +5024,7 @@ PGmc Final Z Deletion: *náudi
 
 OE Au Fronting: *náeudi
 OE Diphthong Leveling: *nēadi
-OEI Umlaut: *nīedi
+OE I Umlaut: *nīedi
 OE High Vowel Apocope: *nīed
 
 ### Orthography & surface
@@ -5082,8 +5082,8 @@ PWGmc J Gemination: *náttją
 
 Anglo Frisian Brightening: *nættją
 OE Heavy Syllable Nasal Apocope: *nættj
-OEI Umlaut: *nettj
-OEJ Loss After Heavy: *nett
+OE I Umlaut: *nettj
+OE J Loss After Heavy: *nett
 
 ### Orthography & surface
 
@@ -5111,8 +5111,8 @@ NWGmc N Stem N Loss: *nátilǭ
 ### Old English
 
 Anglo Frisian Brightening: *nætilǭ
-OEI Umlaut: *netilǭ
-OEL Adjacent Syncope: *netlǭ
+OE I Umlaut: *netilǭ
+OE L Adjacent Syncope: *netlǭ
 OE Unstressed Long Vowel Shortening: *netlæ
 OE Unstressed AE Merger: *netle
 
@@ -5143,7 +5143,7 @@ NWGmc N Stem N Loss: *márǭ
 ### Old English
 
 Anglo Frisian Brightening: *mærǭ
-OEA Restoration: *marǭ
+OE A Restoration: *marǭ
 OE Unstressed Long Vowel Shortening: *maræ
 OE Unstressed AE Merger: *mare
 
@@ -5607,7 +5607,7 @@ PGmc Final Z Deletion: *rúgi
 ### Old English
 
 OE Velar Palatalization: *rúʤi
-OEI Umlaut: *ryʤi
+OE I Umlaut: *ryʤi
 OE Med Unstressed I Lowering1: *ryʤe
 
 ### Orthography & surface
@@ -5669,7 +5669,7 @@ NWGmc Final Long O Raising: *sáku
 ### Old English
 
 Anglo Frisian Brightening: *sæku
-OEA Restoration: *saku
+OE A Restoration: *saku
 
 ### Orthography & surface
 
@@ -5790,9 +5790,9 @@ OE Heavy Syllable Nasal Apocope: *sōkijan
 OE Secondary Nasalization: *sōkijąn
 Sievers Law Syncope: *sōkjąn
 OE Velar Palatalization: *sōʧjąn
-OEI Umlaut: *sēʧjąn
+OE I Umlaut: *sēʧjąn
 OE Weak Tail Reduction: *sēʧjan
-OEJ Loss After Heavy: *sēʧan
+OE J Loss After Heavy: *sēʧan
 
 ### Orthography & surface
 
@@ -5825,9 +5825,9 @@ Proto Input: *sándijaną
 OE Heavy Syllable Nasal Apocope: *sándijan
 OE Secondary Nasalization: *sándijąn
 Sievers Law Syncope: *sándjąn
-OEI Umlaut: *sendjąn
+OE I Umlaut: *sendjąn
 OE Weak Tail Reduction: *sendjan
-OEJ Loss After Heavy: *sendan
+OE J Loss After Heavy: *sendan
 
 ### Orthography & surface
 
@@ -5857,9 +5857,9 @@ PWGmc J Gemination: *sáttjaną
 Anglo Frisian Brightening: *sættjaną
 OE Heavy Syllable Nasal Apocope: *sættjan
 OE Secondary Nasalization: *sættjąn
-OEI Umlaut: *settjąn
+OE I Umlaut: *settjąn
 OE Weak Tail Reduction: *settjan
-OEJ Loss After Heavy: *settan
+OE J Loss After Heavy: *settan
 
 ### Orthography & surface
 
@@ -6009,7 +6009,7 @@ PGmc Final Z Deletion: *skāθi
 ### Old English
 
 OE Sk Palatalization: *ʃāθi
-OEI Umlaut: *ʃǣθi
+OE I Umlaut: *ʃǣθi
 OE Ws Palatal Diphthongization: *ʃēaθi
 OE High Vowel Apocope: *ʃēaθ
 
@@ -6201,7 +6201,7 @@ OE Aw Long Diphthong: *skḗawōjaną
 OE Heavy Syllable Nasal Apocope: *skḗawōjan
 OE Secondary Nasalization: *skḗawōjąn
 OE Sk Palatalization: *ʃḗawōjąn
-OEI Umlaut: *ʃḗawējąn
+OE I Umlaut: *ʃḗawējąn
 OE Unstressed Long Vowel Shortening: *ʃḗawejąn
 OE Weak Tail Reduction: *ʃḗawejan
 OE Intervocalic J Vocalization: *ʃḗaweian
@@ -6326,9 +6326,9 @@ OE Heavy Syllable Nasal Apocope: *sángijan
 OE Secondary Nasalization: *sángijąn
 Sievers Law Syncope: *sángjąn
 OE Velar Palatalization: *sánʤjąn
-OEI Umlaut: *senʤjąn
+OE I Umlaut: *senʤjąn
 OE Weak Tail Reduction: *senʤjan
-OEJ Loss After Heavy: *senʤan
+OE J Loss After Heavy: *senʤan
 
 ### Orthography & surface
 
@@ -6387,9 +6387,9 @@ PWGmc J Gemination: *séttjaną
 
 OE Heavy Syllable Nasal Apocope: *séttjan
 OE Secondary Nasalization: *séttjąn
-OEI Umlaut: *sittjąn
+OE I Umlaut: *sittjąn
 OE Weak Tail Reduction: *sittjan
-OEJ Loss After Heavy: *sittan
+OE J Loss After Heavy: *sittan
 
 ### Orthography & surface
 
@@ -6452,7 +6452,7 @@ OE Breaking: *sleaxaną
 OE Heavy Syllable Nasal Apocope: *sleaxan
 OE Secondary Nasalization: *sleaxąn
 OE Weak Tail Reduction: *sleaxan
-OEH Loss: *sleaan
+OE H Loss: *sleaan
 OE Contraction: *slēan
 
 ### Orthography & surface
@@ -6544,9 +6544,9 @@ OE Breaking: *sméorwijaną
 OE Heavy Syllable Nasal Apocope: *sméorwijan
 OE Secondary Nasalization: *sméorwijąn
 Sievers Law Syncope: *sméorwjąn
-OEI Umlaut: *smíerwjąn
+OE I Umlaut: *smíerwjąn
 OE Weak Tail Reduction: *smíerwjan
-OEJ Loss After Heavy: *smíerwan
+OE J Loss After Heavy: *smíerwan
 
 ### Orthography & surface
 
@@ -6775,9 +6775,9 @@ NWGmc Final Long O Raising: *spénnilu
 
 ### Old English
 
-OEI Umlaut: *spinnilu
+OE I Umlaut: *spinnilu
 OE High Vowel Apocope: *spinnil
-OEL Adjacent Syncope: *spinnl
+OE L Adjacent Syncope: *spinnl
 OE Preconsonantal Degemination: *spinl
 
 ### Orthography & surface
@@ -6836,9 +6836,9 @@ PWGmc Ai Monophthongization: *sprādijaną
 OE Heavy Syllable Nasal Apocope: *sprādijan
 OE Secondary Nasalization: *sprādijąn
 Sievers Law Syncope: *sprādjąn
-OEI Umlaut: *sprǣdjąn
+OE I Umlaut: *sprǣdjąn
 OE Weak Tail Reduction: *sprǣdjan
-OEJ Loss After Heavy: *sprǣdan
+OE J Loss After Heavy: *sprǣdan
 
 ### Orthography & surface
 
@@ -6896,9 +6896,9 @@ Proto Input: *stúrtijaną
 OE Heavy Syllable Nasal Apocope: *stúrtijan
 OE Secondary Nasalization: *stúrtijąn
 Sievers Law Syncope: *stúrtjąn
-OEI Umlaut: *styrtjąn
+OE I Umlaut: *styrtjąn
 OE Weak Tail Reduction: *styrtjan
-OEJ Loss After Heavy: *styrtan
+OE J Loss After Heavy: *styrtan
 
 ### Orthography & surface
 
@@ -6992,9 +6992,9 @@ Proto Input: *stéllijaną
 OE Heavy Syllable Nasal Apocope: *stéllijan
 OE Secondary Nasalization: *stéllijąn
 Sievers Law Syncope: *stélljąn
-OEI Umlaut: *stilljąn
+OE I Umlaut: *stilljąn
 OE Weak Tail Reduction: *stilljan
-OEJ Loss After Heavy: *stillan
+OE J Loss After Heavy: *stillan
 
 ### Orthography & surface
 
@@ -7222,9 +7222,9 @@ OE Heavy Syllable Nasal Apocope: *strækkijan
 OE Secondary Nasalization: *strækkijąn
 Sievers Law Syncope: *strækkjąn
 OE Velar Palatalization: *strækʧjąn, *stræʧʧjąn
-OEI Umlaut: *strekʧjąn, *streʧʧjąn
+OE I Umlaut: *strekʧjąn, *streʧʧjąn
 OE Weak Tail Reduction: *strekʧjan, *streʧʧjan
-OEJ Loss After Heavy: *strekʧan, *streʧʧan
+OE J Loss After Heavy: *strekʧan, *streʧʧan
 
 ### Orthography & surface
 
@@ -7254,7 +7254,7 @@ PGmc Final Z Deletion: *strángi
 ### Old English
 
 OE Velar Palatalization: *stránʤi
-OEI Umlaut: *strenʤi
+OE I Umlaut: *strenʤi
 OE High Vowel Apocope: *strenʤ
 
 ### Orthography & surface
@@ -7374,7 +7374,7 @@ Proto Input: *súndrōjaną
 
 OE Heavy Syllable Nasal Apocope: *súndrōjan
 OE Secondary Nasalization: *súndrōjąn
-OEI Umlaut: *súndrējąn
+OE I Umlaut: *súndrējąn
 OE Unstressed Long Vowel Shortening: *súndrejąn
 OE Weak Tail Reduction: *súndrejan
 OE Intervocalic J Vocalization: *súndreian
@@ -7771,9 +7771,9 @@ OE Heavy Syllable Nasal Apocope: *θánkijan
 OE Secondary Nasalization: *θánkijąn
 Sievers Law Syncope: *θánkjąn
 OE Velar Palatalization: *θánʧjąn
-OEI Umlaut: *θenʧjąn
+OE I Umlaut: *θenʧjąn
 OE Weak Tail Reduction: *θenʧjan
-OEJ Loss After Heavy: *θenʧan
+OE J Loss After Heavy: *θenʧan
 
 ### Orthography & surface
 
@@ -7982,7 +7982,7 @@ NWGmc N Stem N Loss: *tāxǭ
 
 OE Unstressed Long Vowel Shortening: *tāxæ
 OE Unstressed AE Merger: *tāxe
-OEH Loss: *tāe
+OE H Loss: *tāe
 OE Contraction: *tā
 
 ### Orthography & surface
@@ -8182,7 +8182,7 @@ Proto Input: *wádaną
 ### Old English
 
 Anglo Frisian Brightening: *wædaną
-OEA Restoration: *wadaną
+OE A Restoration: *wadaną
 OE Heavy Syllable Nasal Apocope: *wadan
 OE Secondary Nasalization: *wadąn
 OE Weak Tail Reduction: *wadan
@@ -8338,7 +8338,7 @@ Proto Input: *wáskaną
 ### Old English
 
 Anglo Frisian Brightening: *wæskaną
-OEA Restoration: *waskaną
+OE A Restoration: *waskaną
 OE Heavy Syllable Nasal Apocope: *waskan
 OE Secondary Nasalization: *waskąn
 OE Weak Tail Reduction: *waskan
@@ -8699,7 +8699,7 @@ NWGmc N Stem N Loss: *wíduwǭ
 
 ### Old English
 
-OEWI Combinative U Umlaut: *wúduwǭ
+OE WI Combinative U Umlaut: *wúduwǭ
 OE Unstressed Long Vowel Shortening: *wúduwæ
 OE Unstressed AE Merger: *wúduwe
 
@@ -8790,7 +8790,7 @@ PGmc Final Z Deletion: *wéxti
 ### Old English
 
 OE Breaking: *wéoxti
-OEI Umlaut: *wíexti
+OE I Umlaut: *wíexti
 OE Ws Palatal Umlaut: *wixti
 OE High Vowel Apocope: *wixt
 
@@ -8823,9 +8823,9 @@ PWGmc J Gemination: *wélljaną
 
 OE Heavy Syllable Nasal Apocope: *wélljan
 OE Secondary Nasalization: *wélljąn
-OEI Umlaut: *willjąn
+OE I Umlaut: *willjąn
 OE Weak Tail Reduction: *willjan
-OEJ Loss After Heavy: *willan
+OE J Loss After Heavy: *willan
 
 ### Orthography & surface
 
@@ -8853,9 +8853,9 @@ PWGmc J Gemination: *wélljô
 
 ### Old English
 
-OEI Umlaut: *willjô
+OE I Umlaut: *willjô
 OE Unstressed Long Vowel Shortening: *willja
-OEJ Loss After Heavy: *willa
+OE J Loss After Heavy: *willa
 
 ### Orthography & surface
 
@@ -9026,7 +9026,7 @@ PGmc Final Z Deletion: *wúrmi
 
 ### Old English
 
-OEI Umlaut: *wyrmi
+OE I Umlaut: *wyrmi
 OE High Vowel Apocope: *wyrm
 
 ### Orthography & surface
@@ -9299,7 +9299,7 @@ PGmc Final Z Deletion: *déli
 
 ### Old English
 
-OEI Umlaut: *dili
+OE I Umlaut: *dili
 OE Med Unstressed I Lowering1: *dile
 
 ### Orthography & surface
@@ -9333,9 +9333,9 @@ Anglo Frisian Brightening: *fæstijaną
 OE Heavy Syllable Nasal Apocope: *fæstijan
 OE Secondary Nasalization: *fæstijąn
 Sievers Law Syncope: *fæstjąn
-OEI Umlaut: *festjąn
+OE I Umlaut: *festjąn
 OE Weak Tail Reduction: *festjan
-OEJ Loss After Heavy: *festan
+OE J Loss After Heavy: *festan
 
 ### Orthography & surface
 
@@ -9363,7 +9363,7 @@ NWGmc N Stem N Loss: *fláskǭ
 ### Old English
 
 Anglo Frisian Brightening: *flæskǭ
-OEA Restoration: *flaskǭ
+OE A Restoration: *flaskǭ
 OE Unstressed Long Vowel Shortening: *flaskæ
 OE Unstressed AE Merger: *flaske
 
@@ -9398,9 +9398,9 @@ OE Heavy Syllable Nasal Apocope: *fúlgijan
 OE Secondary Nasalization: *fúlgijąn
 Sievers Law Syncope: *fúlgjąn
 OE Velar Palatalization: *fúlʤjąn
-OEI Umlaut: *fylʤjąn
+OE I Umlaut: *fylʤjąn
 OE Weak Tail Reduction: *fylʤjan
-OEJ Loss After Heavy: *fylʤan
+OE J Loss After Heavy: *fylʤan
 
 ### Orthography & surface
 
@@ -9496,7 +9496,7 @@ PWGmc Dental Hardening: *xládaną
 ### Old English
 
 Anglo Frisian Brightening: *xlædaną
-OEA Restoration: *xladaną
+OE A Restoration: *xladaną
 OE Heavy Syllable Nasal Apocope: *xladan
 OE Secondary Nasalization: *xladąn
 OE Weak Tail Reduction: *xladan
@@ -9530,7 +9530,7 @@ Proto Input: *láppô
 ### Old English
 
 Anglo Frisian Brightening: *læppô
-OEA Restoration: *lappô
+OE A Restoration: *lappô
 OE Unstressed Long Vowel Shortening: *lappa
 
 ### Orthography & surface
@@ -9564,9 +9564,9 @@ OE Breaking: *xleaxxjaną
 OE Velar Fricative Palatalization: *xleaxçjaną
 OE Heavy Syllable Nasal Apocope: *xleaxçjan
 OE Secondary Nasalization: *xleaxçjąn
-OEI Umlaut: *xliexçjąn
+OE I Umlaut: *xliexçjąn
 OE Weak Tail Reduction: *xliexçjan
-OEJ Loss After Heavy: *xliexçan
+OE J Loss After Heavy: *xliexçan
 
 ### Orthography & surface
 
@@ -9622,9 +9622,9 @@ NWGmc Final Long O Raising: *lúngannju
 
 ### Old English
 
-OEI Umlaut: *lúngennju
+OE I Umlaut: *lúngennju
 OE High Vowel Apocope: *lúngennj
-OEJ Loss After Heavy: *lúngenn
+OE J Loss After Heavy: *lúngenn
 OE Final Geminate Simplification: *lúngen
 
 ### Orthography & surface
@@ -9656,7 +9656,7 @@ Proto Input: *nábulô
 
 OE Med Unstressed U Lowering: *nábolô
 Anglo Frisian Brightening: *næbolô
-OEA Restoration: *nabolô
+OE A Restoration: *nabolô
 PGmc B Allophony: *naβolô
 OE Unstressed Long Vowel Shortening: *naβola
 
@@ -9802,8 +9802,8 @@ PGmc Final Z Deletion: *sāwi
 
 ### Old English
 
-OEW Loss Before I: *sāi
-OEI Umlaut: *sǣi
+OE W Loss Before I: *sāi
+OE I Umlaut: *sǣi
 OE High Vowel Apocope: *sǣ
 
 ### Orthography & surface
@@ -9863,10 +9863,10 @@ Proto Input: *spárōjaną
 ### Old English
 
 Anglo Frisian Brightening: *spærōjaną
-OEA Restoration: *sparōjaną
+OE A Restoration: *sparōjaną
 OE Heavy Syllable Nasal Apocope: *sparōjan
 OE Secondary Nasalization: *sparōjąn
-OEI Umlaut: *sparējąn
+OE I Umlaut: *sparējąn
 OE Unstressed Long Vowel Shortening: *sparejąn
 OE Weak Tail Reduction: *sparejan
 OE Intervocalic J Vocalization: *spareian
@@ -10048,7 +10048,7 @@ Proto Input: *wákaną
 ### Old English
 
 Anglo Frisian Brightening: *wækaną
-OEA Restoration: *wakaną
+OE A Restoration: *wakaną
 OE Heavy Syllable Nasal Apocope: *wakan
 OE Secondary Nasalization: *wakąn
 OE Weak Tail Reduction: *wakan
@@ -10306,7 +10306,7 @@ Rhotacism: *bárjas
 ### Old English
 
 Anglo Frisian Brightening: *bærjæs
-OEI Umlaut: *berjæs
+OE I Umlaut: *berjæs
 OE Unstressed AE Merger: *berjes
 
 ### Orthography & surface
@@ -10425,7 +10425,7 @@ Proto Input: *kūi
 
 ### Old English
 
-OEI Umlaut: *kȳi
+OE I Umlaut: *kȳi
 OE High Vowel Apocope: *kȳ
 
 ### Orthography & surface
@@ -10485,7 +10485,7 @@ PGmc Final Z Deletion: *fúrxtīna
 ### Old English
 
 PWGmc Final Bare A Loss: *fúrxtīn
-OEI Umlaut: *fyrxtīn
+OE I Umlaut: *fyrxtīn
 NWGmc In Stem N Loss: *fyrxtī
 OE Unstressed Long Vowel Shortening: *fyrxti
 OE Med Unstressed I Lowering1: *fyrxte
@@ -10771,7 +10771,7 @@ PWGmc Early I Apocope: *mákōθ
 ### Old English
 
 Anglo Frisian Brightening: *mækōθ
-OEA Restoration: *makōθ
+OE A Restoration: *makōθ
 OE Late O Shortening: *makaθ
 
 ### Orthography & surface
@@ -10804,7 +10804,7 @@ Proto Input: *mákô
 ### Old English
 
 Anglo Frisian Brightening: *mækô
-OEA Restoration: *makô
+OE A Restoration: *makô
 OE Unstressed Long Vowel Shortening: *maka
 
 ### Orthography & surface
@@ -10895,7 +10895,7 @@ Proto Input: *náxti
 
 Anglo Frisian Brightening: *næxti
 OE Breaking: *neaxti
-OEI Umlaut: *niexti
+OE I Umlaut: *niexti
 OE Ws Palatal Umlaut: *nixti
 OE High Vowel Apocope: *nixt
 
@@ -11114,7 +11114,7 @@ Proto Input: *θístilas
 ### Old English
 
 Anglo Frisian Brightening: *θístilæs
-OEL Adjacent Syncope: *θístlæs
+OE L Adjacent Syncope: *θístlæs
 OE Unstressed AE Merger: *θístles
 
 ### Orthography & surface
@@ -11179,7 +11179,7 @@ Proto Input: *téxun
 
 OE Med Unstressed U Lowering: *téxon
 OE Breaking: *téoxon
-OEH Loss: *téoon
+OE H Loss: *téoon
 OE Contraction: *tḗon
 
 ### Orthography & surface
@@ -11208,7 +11208,7 @@ PGmc Final Z Deletion: *θréje
 
 ### Old English
 
-OEI Umlaut: *θrije
+OE I Umlaut: *θrije
 OE Intervocalic J Vocalization: *θriie
 OE Contraction: *θrīe
 
@@ -11337,9 +11337,9 @@ OE Au Fronting: *stráeujaną
 OE Diphthong Leveling: *strēajaną
 OE Heavy Syllable Nasal Apocope: *strēajan
 OE Secondary Nasalization: *strēająn
-OEI Umlaut: *strīejąn
+OE I Umlaut: *strīejąn
 OE Weak Tail Reduction: *strīejan
-OEJ Strengthening After Front Diphthong: *strīeʒan
+OE J Strengthening After Front Diphthong: *strīeʒan
 
 ### Orthography & surface
 
@@ -11373,7 +11373,7 @@ Proto Input: *fūri
 
 ### Old English
 
-OEI Umlaut: *fȳri
+OE I Umlaut: *fȳri
 OE High Vowel Apocope: *fȳr
 
 ### Orthography & surface
@@ -11404,7 +11404,7 @@ Proto Input: *táppô
 ### Old English
 
 Anglo Frisian Brightening: *tæppô
-OEA Restoration: *tappô
+OE A Restoration: *tappô
 OE Unstressed Long Vowel Shortening: *tappa
 
 ### Orthography & surface

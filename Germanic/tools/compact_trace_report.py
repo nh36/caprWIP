@@ -31,6 +31,9 @@ STAGE_LABEL_RE = re.compile(r"^([A-Za-z][A-Za-z0-9]*):")
 
 def split_camel(name: str) -> str:
     # "PGmcFinalZDeletion" -> "PGmc Final Z Deletion"
+    # Split "OE" prefix when followed by another capital (handles OEJ/OEI runs
+    # where the camel-case heuristics below otherwise can't see a boundary).
+    name = re.sub(r"^OE([A-Z])", r"OE \1", name)
     name = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
     name = re.sub(r"([A-Z])([A-Z][a-z])", r"\1 \2", name)
     # Re-merge well-known prefix tokens that the rules above split.
