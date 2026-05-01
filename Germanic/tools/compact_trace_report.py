@@ -33,6 +33,10 @@ def split_camel(name: str) -> str:
     # "PGmcFinalZDeletion" -> "PGmc Final Z Deletion"
     name = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
     name = re.sub(r"([A-Z])([A-Z][a-z])", r"\1 \2", name)
+    # Re-merge well-known prefix tokens that the rules above split.
+    name = name.replace("NW Gmc", "NWGmc")
+    name = name.replace("PW Gmc", "PWGmc")
+    name = name.replace("P Gmc", "PGmc")
     return name
 
 

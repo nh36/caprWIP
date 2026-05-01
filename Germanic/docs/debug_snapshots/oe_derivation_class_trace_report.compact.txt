@@ -17,8 +17,8 @@ Proto Input: *nḗdrōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *nḗdrǭ
-NW Gmc Long E Lowering: *nǣdrǭ
+NWGmc N Stem N Loss: *nḗdrǭ
+NWGmc Long E Lowering: *nǣdrǭ
 
 ### Old English
 
@@ -168,11 +168,11 @@ Proto Input: *bárdaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bárda
+PGmc Final Z Deletion: *bárda
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *bárd
+PWGmc Final Bare A Loss: *bárd
 Anglo Frisian Brightening: *bærd
 OE Breaking: *beard
 
@@ -197,11 +197,11 @@ Proto Input: *bébruz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bébru
+PGmc Final Z Deletion: *bébru
 
 ### Old English
 
-P Gmc B Allophony: *béβru
+PGmc B Allophony: *béβru
 OE High Vowel Apocope: *béβr
 OE Epenthetic Vowel: *béβer
 
@@ -227,7 +227,7 @@ Proto Input: *bōkō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *bōku
+NWGmc Final Long O Raising: *bōku
 
 ### Old English
 
@@ -299,7 +299,7 @@ OE Diphthong Leveling: *galēabijaną
 OE Prefix A Reduction Early: *gĕlēabijaną
 OE Heavy Syllable Nasal Apocope: *gĕlēabijan
 OE Secondary Nasalization: *gĕlēabijąn
-P Gmc B Allophony: *gĕlēaβijąn
+PGmc B Allophony: *gĕlēaβijąn
 Sievers Law Syncope: *gĕlēaβjąn
 OE Velar Palatalization: *ʤĕlēaβjąn
 OEI Umlaut: *ʤĕlīeβjąn
@@ -329,7 +329,7 @@ Proto Input: *bálgiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bálgi
+PGmc Final Z Deletion: *bálgi
 
 ### Old English
 
@@ -363,8 +363,8 @@ Proto Input: *bḗrō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *bḗru
-NW Gmc Long E Lowering: *bǣru
+NWGmc Final Long O Raising: *bḗru
+NWGmc Long E Lowering: *bǣru
 
 ### Old English
 
@@ -422,7 +422,7 @@ Proto Input: *búrdiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *búrdi
+PGmc Final Z Deletion: *búrdi
 
 ### Old English
 
@@ -478,7 +478,7 @@ Proto Input: *búrdą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bórdą
+NWGmc U Lowering: *bórdą
 
 ### Old English
 
@@ -501,7 +501,7 @@ Proto Input: *báiną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *bāną
+PWGmc Ai Monophthongization: *bāną
 
 ### Northwest Germanic developments
 
@@ -533,7 +533,7 @@ Proto Input: *bōkz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bōk
+PGmc Final Z Deletion: *bōk
 
 ### Old English
 
@@ -561,7 +561,7 @@ Proto Input: *búrōjaną
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bórōjaną
+NWGmc U Lowering: *bórōjaną
 
 ### Old English
 
@@ -594,11 +594,11 @@ Proto Input: *bōsmaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bōsma
+PGmc Final Z Deletion: *bōsma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *bōsm
+PWGmc Final Bare A Loss: *bōsm
 
 ### Orthography & surface
 
@@ -622,7 +622,7 @@ Proto Input: *bō
 
 ### Northwest Germanic developments
 
-NW Gmc Stressed Monosyllable O Raising: *bū
+NWGmc Stressed Monosyllable O Raising: *bū
 
 ### Old English
 
@@ -650,7 +650,7 @@ Proto Input: *bōguz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *bōgu
+PGmc Final Z Deletion: *bōgu
 
 ### Old English
 
@@ -716,7 +716,7 @@ Proto Input: *búgô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bógô
+NWGmc U Lowering: *bógô
 
 ### Old English
 
@@ -832,7 +832,7 @@ Proto Input: *brōkiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *brōki
+PGmc Final Z Deletion: *brōki
 
 ### Old English
 
@@ -863,7 +863,7 @@ Proto Input: *brūdiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *brūdi
+PGmc Final Z Deletion: *brūdi
 
 ### Old English
 
@@ -983,14 +983,14 @@ Proto Input: *kálbaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *kálba
+PGmc Final Z Deletion: *kálba
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *kálb
+PWGmc Final Bare A Loss: *kálb
 Anglo Frisian Brightening: *kælb
 OE Breaking: *kealb
-P Gmc B Allophony: *kealβ
+PGmc B Allophony: *kealβ
 OE Velar Palatalization: *ʧealβ
 
 ### Orthography & surface
@@ -1082,12 +1082,12 @@ Proto Input: *rúkkaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *rókkaz
-P Gmc Final Z Deletion: *rókka
+NWGmc U Lowering: *rókkaz
+PGmc Final Z Deletion: *rókka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *rókk
+PWGmc Final Bare A Loss: *rókk
 
 ### Orthography & surface
 
@@ -1110,11 +1110,11 @@ Proto Input: *kámbaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *kámba
+PGmc Final Z Deletion: *kámba
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *kámb
+PWGmc Final Bare A Loss: *kámb
 
 ### Orthography & surface
 
@@ -1138,7 +1138,7 @@ Proto Input: *kúrną
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *kórną
+NWGmc U Lowering: *kórną
 
 ### Old English
 
@@ -1165,12 +1165,12 @@ Proto Input: *krúppaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *króppaz
-P Gmc Final Z Deletion: *króppa
+NWGmc U Lowering: *króppaz
+PGmc Final Z Deletion: *króppa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *krópp
+PWGmc Final Bare A Loss: *krópp
 
 ### Orthography & surface
 
@@ -1193,11 +1193,11 @@ Proto Input: *dálaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dála
+PGmc Final Z Deletion: *dála
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *dál
+PWGmc Final Bare A Loss: *dál
 Anglo Frisian Brightening: *dæl
 
 ### Orthography & surface
@@ -1221,11 +1221,11 @@ Proto Input: *dágaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dága
+PGmc Final Z Deletion: *dága
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *dág
+PWGmc Final Bare A Loss: *dág
 Anglo Frisian Brightening: *dæg
 OE Velar Palatalization: *dæʤ
 
@@ -1247,11 +1247,11 @@ Proto Input: *dáiliz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *dāliz
+PWGmc Ai Monophthongization: *dāliz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dāli
+PGmc Final Z Deletion: *dāli
 
 ### Old English
 
@@ -1280,8 +1280,8 @@ Proto Input: *dḗdiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dḗdi
-NW Gmc Long E Lowering: *dǣdi
+PGmc Final Z Deletion: *dḗdi
+NWGmc Long E Lowering: *dǣdi
 
 ### Old English
 
@@ -1338,7 +1338,7 @@ Proto Input: *dáwwō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *dáwwu
+NWGmc Final Long O Raising: *dáwwu
 
 ### Old English
 
@@ -1396,7 +1396,7 @@ Proto Input: *dúrą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *dórą
+NWGmc U Lowering: *dórą
 
 ### Old English
 
@@ -1418,15 +1418,15 @@ Proto Input: *dáigaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *dāgaz
+PWGmc Ai Monophthongization: *dāgaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dāga
+PGmc Final Z Deletion: *dāga
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *dāg
+PWGmc Final Bare A Loss: *dāg
 
 ### Orthography & surface
 
@@ -1450,13 +1450,13 @@ Gm Simplification: *dráumaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dráuma
+PGmc Final Z Deletion: *dráuma
 
 ### Old English
 
 OE Au Fronting: *dráeuma
 OE Diphthong Leveling: *drēama
-PW Gmc Final Bare A Loss: *drēam
+PWGmc Final Bare A Loss: *drēam
 
 ### Orthography & surface
 
@@ -1479,7 +1479,7 @@ Proto Input: *dránkiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *dránki
+PGmc Final Z Deletion: *dránki
 
 ### Old English
 
@@ -1547,7 +1547,7 @@ Proto Input: *drḯbaną
 
 OE Heavy Syllable Nasal Apocope: *drḯban
 OE Secondary Nasalization: *drḯbąn
-P Gmc B Allophony: *drḯβąn
+PGmc B Allophony: *drḯβąn
 OE Weak Tail Reduction: *drḯβan
 
 ### Orthography & surface
@@ -1571,7 +1571,7 @@ Proto Input: *érθōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *érθǭ
+NWGmc N Stem N Loss: *érθǭ
 
 ### Old English
 
@@ -1632,12 +1632,12 @@ Proto Input: *ḗlaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *ḗla
-NW Gmc Long E Lowering: *ǣla
+PGmc Final Z Deletion: *ḗla
+NWGmc Long E Lowering: *ǣla
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *ǣl
+PWGmc Final Bare A Loss: *ǣl
 
 ### Orthography & surface
 
@@ -1725,7 +1725,7 @@ Proto Input: *fádēr
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *fádǣr
+NWGmc Long E Lowering: *fádǣr
 
 ### Old English
 
@@ -1815,11 +1815,11 @@ Proto Input: *fárnaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fárna
+PGmc Final Z Deletion: *fárna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *fárn
+PWGmc Final Bare A Loss: *fárn
 Anglo Frisian Brightening: *færn
 OE Breaking: *fearn
 
@@ -1840,11 +1840,11 @@ Proto Input: *félθuz
 
 ### Proto-West Germanic developments
 
-PW Gmc L Th Voicing: *félduz
+PWGmc L Th Voicing: *félduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *féldu
+PGmc Final Z Deletion: *féldu
 
 ### Old English
 
@@ -1904,11 +1904,11 @@ Proto Input: *fíngraz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fíngra
+PGmc Final Z Deletion: *fíngra
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *fíngr
+PWGmc Final Bare A Loss: *fíngr
 OE Epenthetic Vowel: *fínger
 
 ### Orthography & surface
@@ -1932,11 +1932,11 @@ Proto Input: *fískaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *físka
+PGmc Final Z Deletion: *físka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *físk
+PWGmc Final Bare A Loss: *físk
 OE Sk Palatalization: *fíʃ
 
 ### Orthography & surface
@@ -1961,10 +1961,10 @@ Proto Input: *fúnxstiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fúnxsti
-NW Gmc Nasal Spirant Lengthening: *fūnxsti
-NW Gmc Nasal Spirant Loss: *fūxsti
-NW Gmc Preconsonantal X Loss: *fūsti
+PGmc Final Z Deletion: *fúnxsti
+NWGmc Nasal Spirant Lengthening: *fūnxsti
+NWGmc Nasal Spirant Loss: *fūxsti
+NWGmc Preconsonantal X Loss: *fūsti
 
 ### Old English
 
@@ -2023,7 +2023,7 @@ Proto Input: *fláuxz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fláux
+PGmc Final Z Deletion: *fláux
 
 ### Old English
 
@@ -2081,11 +2081,11 @@ Proto Input: *fláiskiz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *flāskiz
+PWGmc Ai Monophthongization: *flāskiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *flāski
+PGmc Final Z Deletion: *flāski
 
 ### Old English
 
@@ -2115,7 +2115,7 @@ Proto Input: *flōduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *flōdu
+PGmc Final Z Deletion: *flōdu
 
 ### Old English
 
@@ -2174,7 +2174,7 @@ Proto Input: *fúlô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *fólô
+NWGmc U Lowering: *fólô
 
 ### Old English
 
@@ -2225,7 +2225,7 @@ Proto Input: *fálθaną
 
 ### Proto-West Germanic developments
 
-PW Gmc L Th Voicing: *fáldaną
+PWGmc L Th Voicing: *fáldaną
 
 ### Northwest Germanic developments
 
@@ -2261,7 +2261,7 @@ Proto Input: *fúlką
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *fólką
+NWGmc U Lowering: *fólką
 
 ### Old English
 
@@ -2315,8 +2315,8 @@ Proto Input: *fédwōr
 
 ### Proto-West Germanic developments
 
-PW Gmc Final Or Lowering: *fédwar
-PW Gmc Coronal W Assimilation: *féwwar
+PWGmc Final Or Lowering: *fédwar
+PWGmc Coronal W Assimilation: *féwwar
 
 ### Northwest Germanic developments
 
@@ -2351,12 +2351,12 @@ Proto Input: *fúxsaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *fóxsaz
-P Gmc Final Z Deletion: *fóxsa
+NWGmc U Lowering: *fóxsaz
+PGmc Final Z Deletion: *fóxsa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *fóxs
+PWGmc Final Bare A Loss: *fóxs
 OE Xs Merge: *fóXS
 
 ### Orthography & surface
@@ -2406,11 +2406,11 @@ Proto Input: *fríjōndz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ij Contraction: *fríundz
+PWGmc Ij Contraction: *fríundz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fríund
+PGmc Final Z Deletion: *fríund
 
 ### Old English
 
@@ -2437,7 +2437,7 @@ Proto Input: *frústą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *fróstą
+NWGmc U Lowering: *fróstą
 
 ### Old English
 
@@ -2497,11 +2497,11 @@ Proto Input: *gángaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *gánga
+PGmc Final Z Deletion: *gánga
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *gáng
+PWGmc Final Bare A Loss: *gáng
 
 ### Orthography & surface
 
@@ -2519,15 +2519,15 @@ Proto Input: *gáistaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *gāstaz
+PWGmc Ai Monophthongization: *gāstaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *gāsta
+PGmc Final Z Deletion: *gāsta
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *gāst
+PWGmc Final Bare A Loss: *gāst
 
 ### Orthography & surface
 
@@ -2550,7 +2550,7 @@ Proto Input: *géftiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *géfti
+PGmc Final Z Deletion: *géfti
 
 ### Old English
 
@@ -2589,7 +2589,7 @@ Proto Input: *gébaną
 
 OE Heavy Syllable Nasal Apocope: *géban
 OE Secondary Nasalization: *gébąn
-P Gmc B Allophony: *géβąn
+PGmc B Allophony: *géβąn
 OE Velar Palatalization: *ʤéβąn
 OE Ws Palatal Diphthongization: *ʤíeβąn
 OE Weak Tail Reduction: *ʤíeβan
@@ -2617,7 +2617,7 @@ Proto Input: *gúdą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *gódą
+NWGmc U Lowering: *gódą
 
 ### Old English
 
@@ -2640,11 +2640,11 @@ Proto Input: *gúlθą
 
 ### Proto-West Germanic developments
 
-PW Gmc L Th Voicing: *gúldą
+PWGmc L Th Voicing: *gúldą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *góldą
+NWGmc U Lowering: *góldą
 
 ### Old English
 
@@ -2671,9 +2671,9 @@ Proto Input: *gánsz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *gáns
-NW Gmc Nasal Spirant Lengthening: *gōns
-NW Gmc Nasal Spirant Loss: *gōs
+PGmc Final Z Deletion: *gáns
+NWGmc Nasal Spirant Lengthening: *gōns
+NWGmc Nasal Spirant Loss: *gōs
 
 ### Old English
 
@@ -2740,7 +2740,7 @@ Anglo Frisian Brightening: *græbaną
 OEA Restoration: *grabaną
 OE Heavy Syllable Nasal Apocope: *graban
 OE Secondary Nasalization: *grabąn
-P Gmc B Allophony: *graβąn
+PGmc B Allophony: *graβąn
 OE Weak Tail Reduction: *graβan
 
 ### Orthography & surface
@@ -2794,7 +2794,7 @@ Proto Input: *grúnduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *grúndu
+PGmc Final Z Deletion: *grúndu
 
 ### Old English
 
@@ -2822,7 +2822,7 @@ Proto Input: *gástiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *gásti
+PGmc Final Z Deletion: *gásti
 
 ### Old English
 
@@ -2889,7 +2889,7 @@ Proto Input: *xḗrą
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *xǣrą
+NWGmc Long E Lowering: *xǣrą
 
 ### Old English
 
@@ -2919,7 +2919,7 @@ Proto Input: *xállō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *xállu
+NWGmc Final Long O Raising: *xállu
 
 ### Old English
 
@@ -2951,7 +2951,7 @@ Proto Input: *xánduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xándu
+PGmc Final Z Deletion: *xándu
 
 ### Old English
 
@@ -3017,11 +3017,11 @@ Proto Input: *xármaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xárma
+PGmc Final Z Deletion: *xárma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xárm
+PWGmc Final Bare A Loss: *xárm
 Anglo Frisian Brightening: *xærm
 OE Breaking: *xearm
 OE Velar Fricative Palatalization: *çearm
@@ -3050,14 +3050,14 @@ Proto Input: *xárbistuz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xárbistu
+PGmc Final Z Deletion: *xárbistu
 
 ### Old English
 
 Anglo Frisian Brightening: *xærbistu
 OE Breaking: *xearbistu
 OE Velar Fricative Palatalization: *çearbistu
-P Gmc B Allophony: *çearβistu
+PGmc B Allophony: *çearβistu
 OEI Umlaut: *çierβistu
 OE High Vowel Apocope: *çierβist
 OE Med Unstressed I Lowering1: *çierβest
@@ -3118,16 +3118,16 @@ Proto Input: *xábukaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xábuka
+PGmc Final Z Deletion: *xábuka
 
 ### Old English
 
 OE Med Unstressed U Lowering: *xáboka
-PW Gmc Final Bare A Loss: *xábok
+PWGmc Final Bare A Loss: *xábok
 Anglo Frisian Brightening: *xæbok
 OE Velar Fricative Palatalization: *çæbok
 OEA Restoration: *çabok
-P Gmc B Allophony: *çaβok
+PGmc B Allophony: *çaβok
 
 ### Orthography & surface
 
@@ -3187,11 +3187,11 @@ Proto Input: *xáslaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xásla
+PGmc Final Z Deletion: *xásla
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xásl
+PWGmc Final Bare A Loss: *xásl
 Anglo Frisian Brightening: *xæsl
 OE Velar Fricative Palatalization: *çæsl
 
@@ -3228,7 +3228,7 @@ OE Diphthong Leveling: *xēabudą
 OE Med Unstressed U Lowering: *xēabodą
 OE Velar Fricative Palatalization: *çēabodą
 OE Heavy Syllable Nasal Apocope: *çēabod
-P Gmc B Allophony: *çēaβod
+PGmc B Allophony: *çēaβod
 
 ### Orthography & surface
 
@@ -3248,7 +3248,7 @@ Proto Input: *xáilijaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *xālijaną
+PWGmc Ai Monophthongization: *xālijaną
 
 ### Northwest Germanic developments
 
@@ -3287,7 +3287,7 @@ Proto Input: *xértōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *xértǭ
+NWGmc N Stem N Loss: *xértǭ
 
 ### Old English
 
@@ -3319,11 +3319,11 @@ Proto Input: *xérθaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xérθa
+PGmc Final Z Deletion: *xérθa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xérθ
+PWGmc Final Bare A Loss: *xérθ
 OE Breaking: *xéorθ
 OE Velar Fricative Palatalization: *çéorθ
 
@@ -3345,11 +3345,11 @@ Proto Input: *xáiθiz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *xāθiz
+PWGmc Ai Monophthongization: *xāθiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xāθi
+PGmc Final Z Deletion: *xāθi
 
 ### Old English
 
@@ -3375,15 +3375,15 @@ Proto Input: *xágjaz
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *xággjaz
+PWGmc J Gemination: *xággjaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xággja
+PGmc Final Z Deletion: *xággja
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xággj
+PWGmc Final Bare A Loss: *xággj
 Anglo Frisian Brightening: *xæggj
 OE Velar Fricative Palatalization: *çæggj
 OE Velar Palatalization: *çæʤʤj
@@ -3414,11 +3414,11 @@ Proto Input: *xélmaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xélma
+PGmc Final Z Deletion: *xélma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xélm
+PWGmc Final Bare A Loss: *xélm
 OE Velar Fricative Palatalization: *çélm
 
 ### Orthography & surface
@@ -3478,7 +3478,7 @@ Proto Input: *xélpō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *xélpu
+NWGmc Final Long O Raising: *xélpu
 
 ### Old English
 
@@ -3508,7 +3508,7 @@ Proto Input: *xérdō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *xérdu
+NWGmc Final Long O Raising: *xérdu
 
 ### Old English
 
@@ -3575,7 +3575,7 @@ Proto Input: *xéndjō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *xéndju
+NWGmc Final Long O Raising: *xéndju
 
 ### Old English
 
@@ -3608,7 +3608,7 @@ Rhotacism: *xúrdą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *xórdą
+NWGmc U Lowering: *xórdą
 
 ### Old English
 
@@ -3668,15 +3668,15 @@ Proto Input: *xáimaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *xāmaz
+PWGmc Ai Monophthongization: *xāmaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xāma
+PGmc Final Z Deletion: *xāma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xām
+PWGmc Final Bare A Loss: *xām
 
 ### Orthography & surface
 
@@ -3735,11 +3735,11 @@ Proto Input: *xōdaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xōda
+PGmc Final Z Deletion: *xōda
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xōd
+PWGmc Final Bare A Loss: *xōd
 
 ### Orthography & surface
 
@@ -3764,11 +3764,11 @@ Proto Input: *xōfaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xōfa
+PGmc Final Z Deletion: *xōfa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xōf
+PWGmc Final Bare A Loss: *xōf
 
 ### Orthography & surface
 
@@ -3794,7 +3794,7 @@ Proto Input: *xúrną
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *xórną
+NWGmc U Lowering: *xórną
 
 ### Old English
 
@@ -3823,11 +3823,11 @@ Proto Input: *xúndaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xúnda
+PGmc Final Z Deletion: *xúnda
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xúnd
+PWGmc Final Bare A Loss: *xúnd
 
 ### Orthography & surface
 
@@ -3934,7 +3934,7 @@ Proto Input: *láistijaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *lāstijaną
+PWGmc Ai Monophthongization: *lāstijaną
 
 ### Northwest Germanic developments
 
@@ -3967,7 +3967,7 @@ Proto Input: *láidijaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *lādijaną
+PWGmc Ai Monophthongization: *lādijaną
 
 ### Northwest Germanic developments
 
@@ -4012,7 +4012,7 @@ Proto Input: *láubą
 OE Au Fronting: *láeubą
 OE Diphthong Leveling: *lēabą
 OE Heavy Syllable Nasal Apocope: *lēab
-P Gmc B Allophony: *lēaβ
+PGmc B Allophony: *lēaβ
 
 ### Orthography & surface
 
@@ -4103,13 +4103,13 @@ Proto Input: *láukaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *láuka
+PGmc Final Z Deletion: *láuka
 
 ### Old English
 
 OE Au Fronting: *láeuka
 OE Diphthong Leveling: *lēaka
-PW Gmc Final Bare A Loss: *lēak
+PWGmc Final Bare A Loss: *lēak
 
 ### Orthography & surface
 
@@ -4132,7 +4132,7 @@ Proto Input: *lḗtaną
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *lǣtaną
+NWGmc Long E Lowering: *lǣtaną
 
 ### Old English
 
@@ -4232,7 +4232,7 @@ Proto Input: *lḯbą
 ### Old English
 
 OE Heavy Syllable Nasal Apocope: *lḯb
-P Gmc B Allophony: *lḯβ
+PGmc B Allophony: *lḯβ
 
 ### Orthography & surface
 
@@ -4321,7 +4321,7 @@ Proto Input: *líndō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *líndu
+NWGmc Final Long O Raising: *líndu
 
 ### Old English
 
@@ -4348,7 +4348,7 @@ Proto Input: *lḯnōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *lḯnǭ
+NWGmc N Stem N Loss: *lḯnǭ
 
 ### Old English
 
@@ -4376,7 +4376,7 @@ Proto Input: *lḯstōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *lḯstǭ
+NWGmc N Stem N Loss: *lḯstǭ
 
 ### Old English
 
@@ -4404,11 +4404,11 @@ Proto Input: *líbrō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *líbru
+NWGmc Final Long O Raising: *líbru
 
 ### Old English
 
-P Gmc B Allophony: *líβru
+PGmc B Allophony: *líβru
 OE High Vowel Apocope: *líβr
 OE Epenthetic Vowel: *líβer
 
@@ -4428,15 +4428,15 @@ Proto Input: *láiθaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *lāθaz
+PWGmc Ai Monophthongization: *lāθaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *lāθa
+PGmc Final Z Deletion: *lāθa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *lāθ
+PWGmc Final Bare A Loss: *lāθ
 
 ### Orthography & surface
 
@@ -4461,7 +4461,7 @@ Proto Input: *lúką
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *lóką
+NWGmc U Lowering: *lóką
 
 ### Old English
 
@@ -4488,12 +4488,12 @@ Proto Input: *lúkkaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *lókkaz
-P Gmc Final Z Deletion: *lókka
+NWGmc U Lowering: *lókkaz
+PGmc Final Z Deletion: *lókka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *lókk
+PWGmc Final Bare A Loss: *lókk
 
 ### Orthography & surface
 
@@ -4516,7 +4516,7 @@ Proto Input: *lūsz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *lūs
+PGmc Final Z Deletion: *lūs
 
 ### Old English
 
@@ -4544,7 +4544,7 @@ Proto Input: *lústuz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *lústu
+PGmc Final Z Deletion: *lústu
 
 ### Old English
 
@@ -4571,7 +4571,7 @@ Proto Input: *láugō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *láugu
+NWGmc Final Long O Raising: *láugu
 
 ### Old English
 
@@ -4636,11 +4636,11 @@ Proto Input: *máltaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *málta
+PGmc Final Z Deletion: *málta
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *mált
+PWGmc Final Bare A Loss: *mált
 Anglo Frisian Brightening: *mælt
 OE Breaking: *mealt
 
@@ -4666,7 +4666,7 @@ Proto Input: *márkō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *márku
+NWGmc Final Long O Raising: *márku
 
 ### Old English
 
@@ -4695,11 +4695,11 @@ Proto Input: *mástaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *másta
+PGmc Final Z Deletion: *másta
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *mást
+PWGmc Final Bare A Loss: *mást
 Anglo Frisian Brightening: *mæst
 
 ### Orthography & surface
@@ -4723,7 +4723,7 @@ Proto Input: *mḗlą
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *mǣlą
+NWGmc Long E Lowering: *mǣlą
 
 ### Old English
 
@@ -4745,7 +4745,7 @@ Proto Input: *máinijaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *mānijaną
+PWGmc Ai Monophthongization: *mānijaną
 
 ### Northwest Germanic developments
 
@@ -4782,7 +4782,7 @@ Proto Input: *máxtiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *máxti
+PGmc Final Z Deletion: *máxti
 
 ### Old English
 
@@ -4816,7 +4816,7 @@ Proto Input: *mélukz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *méluk
+PGmc Final Z Deletion: *méluk
 
 ### Old English
 
@@ -4844,8 +4844,8 @@ Proto Input: *mḗnōθz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *mḗnōθ
-NW Gmc Long E Nasal Rounding: *mōnōθ
+PGmc Final Z Deletion: *mḗnōθ
+NWGmc Long E Nasal Rounding: *mōnōθ
 
 ### Old English
 
@@ -4874,11 +4874,11 @@ Proto Input: *mōdaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *mōda
+PGmc Final Z Deletion: *mōda
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *mōd
+PWGmc Final Bare A Loss: *mōd
 
 ### Orthography & surface
 
@@ -4902,7 +4902,7 @@ Proto Input: *mōdēr
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *mōdǣr
+NWGmc Long E Lowering: *mōdǣr
 
 ### Old English
 
@@ -4930,11 +4930,11 @@ Proto Input: *náglaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *nágla
+PGmc Final Z Deletion: *nágla
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *nágl
+PWGmc Final Bare A Loss: *nágl
 Anglo Frisian Brightening: *nægl
 OE Velar Palatalization: *næʤl
 
@@ -4989,13 +4989,13 @@ Proto Input: *nábō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *nábu
+NWGmc Final Long O Raising: *nábu
 
 ### Old English
 
 Anglo Frisian Brightening: *næbu
 OEA Restoration: *nabu
-P Gmc B Allophony: *naβu
+PGmc B Allophony: *naβu
 
 ### Orthography & surface
 
@@ -5018,7 +5018,7 @@ Proto Input: *náudiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *náudi
+PGmc Final Z Deletion: *náudi
 
 ### Old English
 
@@ -5048,7 +5048,7 @@ Proto Input: *nístą
 
 ### Northwest Germanic developments
 
-NW Gmc I Lowering: *néstą
+NWGmc I Lowering: *néstą
 
 ### Old English
 
@@ -5071,7 +5071,7 @@ Proto Input: *nátją
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *náttją
+PWGmc J Gemination: *náttją
 
 ### Northwest Germanic developments
 
@@ -5106,7 +5106,7 @@ Proto Input: *nátilōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *nátilǭ
+NWGmc N Stem N Loss: *nátilǭ
 
 ### Old English
 
@@ -5138,7 +5138,7 @@ Proto Input: *márōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *márǭ
+NWGmc N Stem N Loss: *márǭ
 
 ### Old English
 
@@ -5191,15 +5191,15 @@ Proto Input: *áinaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *ānaz
+PWGmc Ai Monophthongization: *ānaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *āna
+PGmc Final Z Deletion: *āna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *ān
+PWGmc Final Bare A Loss: *ān
 
 ### Orthography & surface
 
@@ -5222,12 +5222,12 @@ Proto Input: *úfnaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *ófnaz
-P Gmc Final Z Deletion: *ófna
+NWGmc U Lowering: *ófnaz
+PGmc Final Z Deletion: *ófna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *ófn
+PWGmc Final Bare A Loss: *ófn
 
 ### Orthography & surface
 
@@ -5250,7 +5250,7 @@ Proto Input: *úxsô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *óxsô
+NWGmc U Lowering: *óxsô
 
 ### Old English
 
@@ -5343,13 +5343,13 @@ Proto Input: *xrábnaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xrábna
+PGmc Final Z Deletion: *xrábna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xrábn
+PWGmc Final Bare A Loss: *xrábn
 Anglo Frisian Brightening: *xræbn
-P Gmc B Allophony: *xræβn
+PGmc B Allophony: *xræβn
 
 ### Orthography & surface
 
@@ -5374,7 +5374,7 @@ Proto Input: *rḗdaną
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *rǣdaną
+NWGmc Long E Lowering: *rǣdaną
 
 ### Old English
 
@@ -5433,7 +5433,7 @@ Proto Input: *ríndō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *ríndu
+NWGmc Final Long O Raising: *ríndu
 
 ### Old English
 
@@ -5460,7 +5460,7 @@ Proto Input: *rōdō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *rōdu
+NWGmc Final Long O Raising: *rōdu
 
 ### Old English
 
@@ -5510,7 +5510,7 @@ Proto Input: *ráipą
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *rāpą
+PWGmc Ai Monophthongization: *rāpą
 
 ### Northwest Germanic developments
 
@@ -5542,11 +5542,11 @@ Proto Input: *rōθraz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *rōθra
+PGmc Final Z Deletion: *rōθra
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *rōθr
+PWGmc Final Bare A Loss: *rōθr
 OE Epenthetic Vowel: *rōθor
 
 ### Orthography & surface
@@ -5602,7 +5602,7 @@ Proto Input: *rúgiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *rúgi
+PGmc Final Z Deletion: *rúgi
 
 ### Old English
 
@@ -5664,7 +5664,7 @@ Proto Input: *sákō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *sáku
+NWGmc Final Long O Raising: *sáku
 
 ### Old English
 
@@ -5722,13 +5722,13 @@ Proto Input: *sálbō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *sálbu
+NWGmc Final Long O Raising: *sálbu
 
 ### Old English
 
 Anglo Frisian Brightening: *sælbu
 OE Breaking: *sealbu
-P Gmc B Allophony: *sealβu
+PGmc B Allophony: *sealβu
 OE High Vowel Apocope: *sealβ
 
 ### Orthography & surface
@@ -5752,13 +5752,13 @@ Proto Input: *sáumaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *sáuma
+PGmc Final Z Deletion: *sáuma
 
 ### Old English
 
 OE Au Fronting: *sáeuma
 OE Diphthong Leveling: *sēama
-PW Gmc Final Bare A Loss: *sēam
+PWGmc Final Bare A Loss: *sēam
 
 ### Orthography & surface
 
@@ -5845,7 +5845,7 @@ Proto Input: *sátjaną
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *sáttjaną
+PWGmc J Gemination: *sáttjaną
 
 ### Northwest Germanic developments
 
@@ -5888,7 +5888,7 @@ Proto Input: *sébun
 ### Old English
 
 OE Med Unstressed U Lowering: *sébon
-P Gmc B Allophony: *séβon
+PGmc B Allophony: *séβon
 OE Back Mutation: *séoβon
 
 ### Orthography & surface
@@ -5944,7 +5944,7 @@ Proto Input: *skámō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *skámu
+NWGmc Final Long O Raising: *skámu
 
 ### Old English
 
@@ -6000,11 +6000,11 @@ Proto Input: *skáiθiz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *skāθiz
+PWGmc Ai Monophthongization: *skāθiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *skāθi
+PGmc Final Z Deletion: *skāθi
 
 ### Old English
 
@@ -6037,7 +6037,7 @@ Proto Input: *skḗpą
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *skǣpą
+NWGmc Long E Lowering: *skǣpą
 
 ### Old English
 
@@ -6067,7 +6067,7 @@ Proto Input: *skélduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *skéldu
+PGmc Final Z Deletion: *skéldu
 
 ### Old English
 
@@ -6098,11 +6098,11 @@ Proto Input: *skíllingaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *skíllinga
+PGmc Final Z Deletion: *skíllinga
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *skílling
+PWGmc Final Bare A Loss: *skílling
 OE Sk Palatalization: *ʃílling
 OE Med Unstressed I Lowering1: *ʃílleng
 OE Med Unstressed I Lowering: *ʃílling
@@ -6161,8 +6161,8 @@ Proto Input: *skúflō
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *skóflō
-NW Gmc Final Long O Raising: *skóflu
+NWGmc U Lowering: *skóflō
+NWGmc Final Long O Raising: *skóflu
 
 ### Old English
 
@@ -6229,7 +6229,7 @@ Proto Input: *skūrō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *skūru
+NWGmc Final Long O Raising: *skūru
 
 ### Old English
 
@@ -6258,7 +6258,7 @@ Proto Input: *sḯdōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *sḯdǭ
+NWGmc N Stem N Loss: *sḯdǭ
 
 ### Old English
 
@@ -6353,7 +6353,7 @@ Proto Input: *swéstēr
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *swéstǣr
+NWGmc Long E Lowering: *swéstǣr
 
 ### Old English
 
@@ -6376,7 +6376,7 @@ Proto Input: *sétjaną
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *séttjaną
+PWGmc J Gemination: *séttjaną
 
 ### Northwest Germanic developments
 
@@ -6477,7 +6477,7 @@ Proto Input: *slḗpaną
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *slǣpaną
+NWGmc Long E Lowering: *slǣpaną
 
 ### Old English
 
@@ -6564,15 +6564,15 @@ Proto Input: *snáiwaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *snāwaz
+PWGmc Ai Monophthongization: *snāwaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *snāwa
+PGmc Final Z Deletion: *snāwa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *snāw
+PWGmc Final Bare A Loss: *snāw
 
 ### Orthography & surface
 
@@ -6595,8 +6595,8 @@ Proto Input: *súrgō
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *sórgō
-NW Gmc Final Long O Raising: *sórgu
+NWGmc U Lowering: *sórgō
+NWGmc Final Long O Raising: *sórgu
 
 ### Old English
 
@@ -6618,11 +6618,11 @@ Proto Input: *sáiwalō
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *sāwalō
+PWGmc Ai Monophthongization: *sāwalō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *sāwalu
+NWGmc Final Long O Raising: *sāwalu
 
 ### Old English
 
@@ -6771,7 +6771,7 @@ Proto Input: *spénnilō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *spénnilu
+NWGmc Final Long O Raising: *spénnilu
 
 ### Old English
 
@@ -6801,8 +6801,8 @@ Proto Input: *spḗnuz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *spḗnu
-NW Gmc Long E Nasal Rounding: *spōnu
+PGmc Final Z Deletion: *spḗnu
+NWGmc Long E Nasal Rounding: *spōnu
 
 ### Old English
 
@@ -6824,7 +6824,7 @@ Proto Input: *spráidijaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *sprādijaną
+PWGmc Ai Monophthongization: *sprādijaną
 
 ### Northwest Germanic developments
 
@@ -6861,7 +6861,7 @@ Proto Input: *spúrô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *spórô
+NWGmc U Lowering: *spórô
 
 ### Old English
 
@@ -6929,7 +6929,7 @@ Proto Input: *stérbaną
 OE Breaking: *stéorbaną
 OE Heavy Syllable Nasal Apocope: *stéorban
 OE Secondary Nasalization: *stéorbąn
-P Gmc B Allophony: *stéorβąn
+PGmc B Allophony: *stéorβąn
 OE Weak Tail Reduction: *stéorβan
 
 ### Orthography & surface
@@ -7017,12 +7017,12 @@ Proto Input: *stúkkaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *stókkaz
-P Gmc Final Z Deletion: *stókka
+NWGmc U Lowering: *stókkaz
+PGmc Final Z Deletion: *stókka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stókk
+PWGmc Final Bare A Loss: *stókk
 
 ### Orthography & surface
 
@@ -7040,15 +7040,15 @@ Proto Input: *stáinaz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *stānaz
+PWGmc Ai Monophthongization: *stānaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *stāna
+PGmc Final Z Deletion: *stāna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stān
+PWGmc Final Bare A Loss: *stān
 
 ### Orthography & surface
 
@@ -7071,11 +7071,11 @@ Proto Input: *stōlaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *stōla
+PGmc Final Z Deletion: *stōla
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stōl
+PWGmc Final Bare A Loss: *stōl
 
 ### Orthography & surface
 
@@ -7098,12 +7098,12 @@ Proto Input: *stúrkaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *stórkaz
-P Gmc Final Z Deletion: *stórka
+NWGmc U Lowering: *stórkaz
+PGmc Final Z Deletion: *stórka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stórk
+PWGmc Final Bare A Loss: *stórk
 
 ### Orthography & surface
 
@@ -7126,12 +7126,12 @@ Proto Input: *stúrmaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *stórmaz
-P Gmc Final Z Deletion: *stórma
+NWGmc U Lowering: *stórmaz
+PGmc Final Z Deletion: *stórma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stórm
+PWGmc Final Bare A Loss: *stórm
 
 ### Orthography & surface
 
@@ -7183,13 +7183,13 @@ Proto Input: *stráumaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *stráuma
+PGmc Final Z Deletion: *stráuma
 
 ### Old English
 
 OE Au Fronting: *stráeuma
 OE Diphthong Leveling: *strēama
-PW Gmc Final Bare A Loss: *strēam
+PWGmc Final Bare A Loss: *strēam
 
 ### Orthography & surface
 
@@ -7249,7 +7249,7 @@ Proto Input: *strángiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *strángi
+PGmc Final Z Deletion: *strángi
 
 ### Old English
 
@@ -7309,11 +7309,11 @@ Proto Input: *súmaraz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *súmara
+PGmc Final Z Deletion: *súmara
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *súmar
+PWGmc Final Bare A Loss: *súmar
 Anglo Frisian Brightening: *súmær
 OE Unstressed AE Merger: *súmer
 
@@ -7338,7 +7338,7 @@ Proto Input: *súnnōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *súnnǭ
+NWGmc N Stem N Loss: *súnnǭ
 
 ### Old English
 
@@ -7432,7 +7432,7 @@ Proto Input: *swálwōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *swálwǭ
+NWGmc N Stem N Loss: *swálwǭ
 
 ### Old English
 
@@ -7581,13 +7581,13 @@ Gm Simplification: *táumaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *táuma
+PGmc Final Z Deletion: *táuma
 
 ### Old English
 
 OE Au Fronting: *táeuma
 OE Diphthong Leveling: *tēama
-PW Gmc Final Bare A Loss: *tēam
+PWGmc Final Bare A Loss: *tēam
 
 ### Orthography & surface
 
@@ -7610,11 +7610,11 @@ Proto Input: *θégnaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θégna
+PGmc Final Z Deletion: *θégna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *θégn
+PWGmc Final Bare A Loss: *θégn
 OE Velar Palatalization: *θéʤn
 
 ### Orthography & surface
@@ -7640,11 +7640,11 @@ Proto Input: *θánkaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θánka
+PGmc Final Z Deletion: *θánka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *θánk
+PWGmc Final Bare A Loss: *θánk
 
 ### Orthography & surface
 
@@ -7700,13 +7700,13 @@ Proto Input: *θéubaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θéuba
+PGmc Final Z Deletion: *θéuba
 
 ### Old English
 
 OE Diphthong Leveling: *θēoba
-PW Gmc Final Bare A Loss: *θēob
-P Gmc B Allophony: *θēoβ
+PWGmc Final Bare A Loss: *θēob
+PGmc B Allophony: *θēoβ
 
 ### Orthography & surface
 
@@ -7798,7 +7798,7 @@ Proto Input: *θúrstuz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θúrstu
+PGmc Final Z Deletion: *θúrstu
 
 ### Old English
 
@@ -7828,12 +7828,12 @@ Proto Input: *θúrnaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *θórnaz
-P Gmc Final Z Deletion: *θórna
+NWGmc U Lowering: *θórnaz
+PGmc Final Z Deletion: *θórna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *θórn
+PWGmc Final Bare A Loss: *θórn
 
 ### Orthography & surface
 
@@ -7891,11 +7891,11 @@ Proto Input: *θúnraz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θúnra
+PGmc Final Z Deletion: *θúnra
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *θúnr
+PWGmc Final Bare A Loss: *θúnr
 OE Epenthetic Vowel: *θúnor
 
 ### Orthography & surface
@@ -7950,7 +7950,7 @@ Proto Input: *tḯdiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *tḯdi
+PGmc Final Z Deletion: *tḯdi
 
 ### Old English
 
@@ -7972,11 +7972,11 @@ Proto Input: *táixōn
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *tāxōn
+PWGmc Ai Monophthongization: *tāxōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *tāxǭ
+NWGmc N Stem N Loss: *tāxǭ
 
 ### Old English
 
@@ -8002,7 +8002,7 @@ Proto Input: *táikną
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *tākną
+PWGmc Ai Monophthongization: *tākną
 
 ### Northwest Germanic developments
 
@@ -8034,7 +8034,7 @@ Proto Input: *tángō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *tángu
+NWGmc Final Long O Raising: *tángu
 
 ### Old English
 
@@ -8061,7 +8061,7 @@ Proto Input: *túngōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *túngǭ
+NWGmc N Stem N Loss: *túngǭ
 
 ### Old English
 
@@ -8148,7 +8148,7 @@ Proto Input: *trúgą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *trógą
+NWGmc U Lowering: *trógą
 
 ### Old English
 
@@ -8208,11 +8208,11 @@ Proto Input: *wágnaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wágna
+PGmc Final Z Deletion: *wágna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *wágn
+PWGmc Final Bare A Loss: *wágn
 Anglo Frisian Brightening: *wægn
 OE Velar Palatalization: *wæʤn
 
@@ -8301,7 +8301,7 @@ Proto Input: *wártōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *wártǭ
+NWGmc N Stem N Loss: *wártǭ
 
 ### Old English
 
@@ -8430,11 +8430,11 @@ Proto Input: *wégaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wéga
+PGmc Final Z Deletion: *wéga
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *wég
+PWGmc Final Bare A Loss: *wég
 OE Velar Palatalization: *wéʤ
 
 ### Orthography & surface
@@ -8461,7 +8461,7 @@ Proto Input: *wḗpną
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *wǣpną
+NWGmc Long E Lowering: *wǣpną
 
 ### Old English
 
@@ -8488,7 +8488,7 @@ Proto Input: *wéslōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *wéslǭ
+NWGmc N Stem N Loss: *wéslǭ
 
 ### Old English
 
@@ -8552,7 +8552,7 @@ Proto Input: *wébaną
 
 OE Heavy Syllable Nasal Apocope: *wéban
 OE Secondary Nasalization: *wébąn
-P Gmc B Allophony: *wéβąn
+PGmc B Allophony: *wéβąn
 OE Weak Tail Reduction: *wéβan
 
 ### Orthography & surface
@@ -8606,7 +8606,7 @@ Proto Input: *wíθrą
 
 ### Northwest Germanic developments
 
-NW Gmc I Lowering: *wéθrą
+NWGmc I Lowering: *wéθrą
 
 ### Old English
 
@@ -8636,7 +8636,7 @@ Proto Input: *xwḯlō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *xwḯlu
+NWGmc Final Long O Raising: *xwḯlu
 
 ### Old English
 
@@ -8665,7 +8665,7 @@ Proto Input: *xōrōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *xōrǭ
+NWGmc N Stem N Loss: *xōrǭ
 
 ### Old English
 
@@ -8695,7 +8695,7 @@ Proto Input: *wíduwōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *wíduwǭ
+NWGmc N Stem N Loss: *wíduwǭ
 
 ### Old English
 
@@ -8762,7 +8762,7 @@ Proto Input: *wḯbą
 ### Old English
 
 OE Heavy Syllable Nasal Apocope: *wḯb
-P Gmc B Allophony: *wḯβ
+PGmc B Allophony: *wḯβ
 
 ### Orthography & surface
 
@@ -8785,7 +8785,7 @@ Proto Input: *wéxtiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wéxti
+PGmc Final Z Deletion: *wéxti
 
 ### Old English
 
@@ -8812,7 +8812,7 @@ Proto Input: *wéljaną
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *wélljaną
+PWGmc J Gemination: *wélljaną
 
 ### Northwest Germanic developments
 
@@ -8844,7 +8844,7 @@ Proto Input: *wéljô
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *wélljô
+PWGmc J Gemination: *wélljô
 
 ### Northwest Germanic developments
 
@@ -8909,7 +8909,7 @@ Proto Input: *wíntruz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wíntru
+PGmc Final Z Deletion: *wíntru
 
 ### Old English
 
@@ -8933,11 +8933,11 @@ Proto Input: *wálθuz
 
 ### Proto-West Germanic developments
 
-PW Gmc L Th Voicing: *wálduz
+PWGmc L Th Voicing: *wálduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wáldu
+PGmc Final Z Deletion: *wáldu
 
 ### Old English
 
@@ -8995,7 +8995,7 @@ Proto Input: *wúrdą
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *wórdą
+NWGmc U Lowering: *wórdą
 
 ### Old English
 
@@ -9022,7 +9022,7 @@ Proto Input: *wúrmiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wúrmi
+PGmc Final Z Deletion: *wúrmi
 
 ### Old English
 
@@ -9114,7 +9114,7 @@ Proto Input: *jḗrą
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *jǣrą
+NWGmc Long E Lowering: *jǣrą
 
 ### Old English
 
@@ -9178,12 +9178,12 @@ Proto Input: *búttmaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bóttmaz
-P Gmc Final Z Deletion: *bóttma
+NWGmc U Lowering: *bóttmaz
+PGmc Final Z Deletion: *bóttma
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *bóttm
+PWGmc Final Bare A Loss: *bóttm
 OE Preconsonantal Degemination: *bótm
 
 ### Orthography & surface
@@ -9266,11 +9266,11 @@ Proto Input: *kráftaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *kráfta
+PGmc Final Z Deletion: *kráfta
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *kráft
+PWGmc Final Bare A Loss: *kráft
 Anglo Frisian Brightening: *kræft
 
 ### Orthography & surface
@@ -9295,7 +9295,7 @@ Proto Input: *déliz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *déli
+PGmc Final Z Deletion: *déli
 
 ### Old English
 
@@ -9358,7 +9358,7 @@ Proto Input: *fláskōn
 
 ### Northwest Germanic developments
 
-NW Gmc N Stem N Loss: *fláskǭ
+NWGmc N Stem N Loss: *fláskǭ
 
 ### Old English
 
@@ -9459,11 +9459,11 @@ Proto Input: *knéxtaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *knéxta
+PGmc Final Z Deletion: *knéxta
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *knéxt
+PWGmc Final Bare A Loss: *knéxt
 OE Breaking: *knéoxt
 OE Ws Palatal Umlaut: *knixt
 
@@ -9486,7 +9486,7 @@ Proto Input: *xláðaną
 
 ### Proto-West Germanic developments
 
-PW Gmc Dental Hardening: *xládaną
+PWGmc Dental Hardening: *xládaną
 
 ### Northwest Germanic developments
 
@@ -9550,7 +9550,7 @@ Proto Input: *xláxjaną
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *xláxxjaną
+PWGmc J Gemination: *xláxxjaną
 
 ### Northwest Germanic developments
 
@@ -9586,7 +9586,7 @@ Proto Input: *láimą
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *lāmą
+PWGmc Ai Monophthongization: *lāmą
 
 ### Northwest Germanic developments
 
@@ -9614,11 +9614,11 @@ Proto Input: *lúnganjō
 
 ### Proto-West Germanic developments
 
-PW Gmc J Gemination: *lúngannjō
+PWGmc J Gemination: *lúngannjō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *lúngannju
+NWGmc Final Long O Raising: *lúngannju
 
 ### Old English
 
@@ -9657,7 +9657,7 @@ Proto Input: *nábulô
 OE Med Unstressed U Lowering: *nábolô
 Anglo Frisian Brightening: *næbolô
 OEA Restoration: *nabolô
-P Gmc B Allophony: *naβolô
+PGmc B Allophony: *naβolô
 OE Unstressed Long Vowel Shortening: *naβola
 
 ### Orthography & surface
@@ -9707,12 +9707,12 @@ Proto Input: *nḗðlō
 
 ### Proto-West Germanic developments
 
-PW Gmc Dental Hardening: *nḗdlō
+PWGmc Dental Hardening: *nḗdlō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *nḗdlu
-NW Gmc Long E Lowering: *nǣdlu
+NWGmc Final Long O Raising: *nḗdlu
+NWGmc Long E Lowering: *nǣdlu
 
 ### Old English
 
@@ -9739,8 +9739,8 @@ Proto Input: *núsō
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *nósō
-NW Gmc Final Long O Raising: *nósu
+NWGmc U Lowering: *nósō
+NWGmc Final Long O Raising: *nósu
 
 ### Old English
 
@@ -9794,11 +9794,11 @@ Proto Input: *sáiwiz
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *sāwiz
+PWGmc Ai Monophthongization: *sāwiz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *sāwi
+PGmc Final Z Deletion: *sāwi
 
 ### Old English
 
@@ -9832,7 +9832,7 @@ Proto Input: *síbi
 
 ### Old English
 
-P Gmc B Allophony: *síβi
+PGmc B Allophony: *síβi
 OE Med Unstressed I Lowering1: *síβe
 
 ### Orthography & surface
@@ -9894,13 +9894,13 @@ Proto Input: *stábaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *stába
+PGmc Final Z Deletion: *stába
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *stáb
+PWGmc Final Bare A Loss: *stáb
 Anglo Frisian Brightening: *stæb
-P Gmc B Allophony: *stæβ
+PGmc B Allophony: *stæβ
 
 ### Orthography & surface
 
@@ -9924,11 +9924,11 @@ Proto Input: *stébnō
 
 ### Northwest Germanic developments
 
-NW Gmc Final Long O Raising: *stébnu
+NWGmc Final Long O Raising: *stébnu
 
 ### Old English
 
-P Gmc B Allophony: *stéβnu
+PGmc B Allophony: *stéβnu
 OE High Vowel Apocope: *stéβn
 
 ### Orthography & surface
@@ -9977,7 +9977,7 @@ Proto Input: *θūsèndi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *θūsènd
+PWGmc Early I Apocope: *θūsènd
 
 ### Northwest Germanic developments
 
@@ -10070,7 +10070,7 @@ Proto Input: *wátōr
 
 ### Proto-West Germanic developments
 
-PW Gmc Final Or Lowering: *wátar
+PWGmc Final Or Lowering: *wátar
 
 ### Northwest Germanic developments
 
@@ -10104,11 +10104,11 @@ Proto Input: *xwálaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *xwála
+PGmc Final Z Deletion: *xwála
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *xwál
+PWGmc Final Bare A Loss: *xwál
 Anglo Frisian Brightening: *xwæl
 
 ### Orthography & surface
@@ -10202,7 +10202,7 @@ Proto Input: *wíràldu
 
 ### Northwest Germanic developments
 
-NW Gmc I Lowering: *wéràldu
+NWGmc I Lowering: *wéràldu
 
 ### Old English
 
@@ -10234,8 +10234,8 @@ Proto Input: *júgunθ
 ### Northwest Germanic developments
 
 OE Ws Palatal Glide: *jéugunθ
-NW Gmc Nasal Spirant Lengthening: *jéugūnθ
-NW Gmc Nasal Spirant Loss: *jéugūθ
+NWGmc Nasal Spirant Lengthening: *jéugūnθ
+NWGmc Nasal Spirant Loss: *jéugūθ
 
 ### Old English
 
@@ -10328,11 +10328,11 @@ Proto Input: *búrōθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *búrōθ
+PWGmc Early I Apocope: *búrōθ
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bórōθ
+NWGmc U Lowering: *bórōθ
 
 ### Old English
 
@@ -10362,7 +10362,7 @@ Proto Input: *búrô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bórô
+NWGmc U Lowering: *bórô
 
 ### Old English
 
@@ -10445,7 +10445,7 @@ Proto Input: *fúnðanǭ
 
 ### Proto-West Germanic developments
 
-PW Gmc Dental Hardening: *fúndanǭ
+PWGmc Dental Hardening: *fúndanǭ
 
 ### Northwest Germanic developments
 
@@ -10480,13 +10480,13 @@ Proto Input: *fúrxtīnaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *fúrxtīna
+PGmc Final Z Deletion: *fúrxtīna
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *fúrxtīn
+PWGmc Final Bare A Loss: *fúrxtīn
 OEI Umlaut: *fyrxtīn
-NW Gmc In Stem N Loss: *fyrxtī
+NWGmc In Stem N Loss: *fyrxtī
 OE Unstressed Long Vowel Shortening: *fyrxti
 OE Med Unstressed I Lowering1: *fyrxte
 
@@ -10541,17 +10541,17 @@ Proto Input: *xábēθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *xábēθ
+PWGmc Early I Apocope: *xábēθ
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *xábǣθ
+NWGmc Long E Lowering: *xábǣθ
 
 ### Old English
 
 Anglo Frisian Brightening: *xæbǣθ
 OE Velar Fricative Palatalization: *çæbǣθ
-P Gmc B Allophony: *çæβǣθ
+PGmc B Allophony: *çæβǣθ
 OE Unstressed Long Vowel Shortening: *çæβæθ
 OE Unstressed AE Merger: *çæβeθ
 
@@ -10579,8 +10579,8 @@ Proto Input: *xémonų
 
 ### Northwest Germanic developments
 
-NW Gmc Unstressed O Raising: *xémunų
-NW Gmc Mn Dissimilation: *xéβunų
+NWGmc Unstressed O Raising: *xémunų
+NWGmc Mn Dissimilation: *xéβunų
 
 ### Old English
 
@@ -10609,7 +10609,7 @@ Rhotacism: *lírnōθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *lírnōθ
+PWGmc Early I Apocope: *lírnōθ
 
 ### Northwest Germanic developments
 
@@ -10671,7 +10671,7 @@ Proto Input: *líkkōθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *líkkōθ
+PWGmc Early I Apocope: *líkkōθ
 
 ### Northwest Germanic developments
 
@@ -10730,15 +10730,15 @@ Proto Input: *líbēθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *líbēθ
+PWGmc Early I Apocope: *líbēθ
 
 ### Northwest Germanic developments
 
-NW Gmc Long E Lowering: *líbǣθ
+NWGmc Long E Lowering: *líbǣθ
 
 ### Old English
 
-P Gmc B Allophony: *líβǣθ
+PGmc B Allophony: *líβǣθ
 OE Unstressed Long Vowel Shortening: *líβæθ
 OE Unstressed AE Merger: *líβeθ
 
@@ -10761,7 +10761,7 @@ Proto Input: *mákōθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *mákōθ
+PWGmc Early I Apocope: *mákōθ
 
 ### Northwest Germanic developments
 
@@ -10855,11 +10855,11 @@ Rhotacism: *mírdai
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *mírdē
+PWGmc Ai Monophthongization: *mírdē
 
 ### Northwest Germanic developments
 
-NW Gmc I Lowering: *mérdē
+NWGmc I Lowering: *mérdē
 
 ### Old English
 
@@ -10923,11 +10923,11 @@ Proto Input: *rástōz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *rástō
+PGmc Final Z Deletion: *rástō
 
 ### Old English
 
-PW Gmc Surviving Bimoric O Unrounding: *rástā
+PWGmc Surviving Bimoric O Unrounding: *rástā
 Anglo Frisian Brightening: *ræstǣ
 OE Unstressed Long Vowel Shortening: *ræstæ
 OE Unstressed AE Merger: *ræste
@@ -10949,12 +10949,12 @@ Proto Input: *skúldramiz
 
 ### Proto-West Germanic developments
 
-NW Gmc A To U Before M: *skúldrumiz
-PW Gmc Early I Apocope: *skúldrumz
+NWGmc A To U Before M: *skúldrumiz
+PWGmc Early I Apocope: *skúldrumz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *skúldrum
+PGmc Final Z Deletion: *skúldrum
 
 ### Old English
 
@@ -10990,7 +10990,7 @@ Proto Input: *skáub
 
 OE Au Fronting: *skáeub
 OE Diphthong Leveling: *skēab
-P Gmc B Allophony: *skēaβ
+PGmc B Allophony: *skēaβ
 OE Sk Palatalization: *ʃēaβ
 
 ### Orthography & surface
@@ -11011,7 +11011,7 @@ Proto Input: *skáwōθi
 
 ### Proto-West Germanic developments
 
-PW Gmc Early I Apocope: *skáwōθ
+PWGmc Early I Apocope: *skáwōθ
 
 ### Northwest Germanic developments
 
@@ -11075,7 +11075,7 @@ Proto Input: *spánnai
 
 ### Proto-West Germanic developments
 
-PW Gmc Ai Monophthongization: *spánnē
+PWGmc Ai Monophthongization: *spánnē
 
 ### Northwest Germanic developments
 
@@ -11139,11 +11139,11 @@ Proto Input: *kwéðuz
 
 ### Proto-West Germanic developments
 
-PW Gmc Dental Hardening: *kwéduz
+PWGmc Dental Hardening: *kwéduz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *kwédu
+PGmc Final Z Deletion: *kwédu
 
 ### Old English
 
@@ -11204,7 +11204,7 @@ Proto Input: *θréjez
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *θréje
+PGmc Final Z Deletion: *θréje
 
 ### Old English
 
@@ -11236,13 +11236,13 @@ Proto Input: *wábsaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *wábsa
+PGmc Final Z Deletion: *wábsa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *wábs
+PWGmc Final Bare A Loss: *wábs
 Anglo Frisian Brightening: *wæbs
-P Gmc B Allophony: *wæβs
+PGmc B Allophony: *wæβs
 
 ### Orthography & surface
 
@@ -11269,7 +11269,7 @@ Proto Input: *knúbbô
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *knóbbô
+NWGmc U Lowering: *knóbbô
 
 ### Old English
 
@@ -11297,13 +11297,13 @@ Proto Input: *ráukaz
 
 ### Northwest Germanic developments
 
-P Gmc Final Z Deletion: *ráuka
+PGmc Final Z Deletion: *ráuka
 
 ### Old English
 
 OE Au Fronting: *ráeuka
 OE Diphthong Leveling: *rēaka
-PW Gmc Final Bare A Loss: *rēak
+PWGmc Final Bare A Loss: *rēak
 
 ### Orthography & surface
 
@@ -11432,12 +11432,12 @@ Proto Input: *búkkaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *bókkaz
-P Gmc Final Z Deletion: *bókka
+NWGmc U Lowering: *bókkaz
+PGmc Final Z Deletion: *bókka
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *bókk
+PWGmc Final Bare A Loss: *bókk
 
 ### Orthography & surface
 
@@ -11461,12 +11461,12 @@ Proto Input: *fúglaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *fóglaz
-P Gmc Final Z Deletion: *fógla
+NWGmc U Lowering: *fóglaz
+PGmc Final Z Deletion: *fógla
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *fógl
+PWGmc Final Bare A Loss: *fógl
 OE Epenthetic Vowel: *fógol
 
 ### Orthography & surface
@@ -11491,8 +11491,8 @@ Proto Input: *rústō
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *róstō
-NW Gmc Final Long O Raising: *róstu
+NWGmc U Lowering: *róstō
+NWGmc Final Long O Raising: *róstu
 
 ### Old English
 
@@ -11520,12 +11520,12 @@ Proto Input: *wúlfaz
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *wólfaz
-P Gmc Final Z Deletion: *wólfa
+NWGmc U Lowering: *wólfaz
+PGmc Final Z Deletion: *wólfa
 
 ### Old English
 
-PW Gmc Final Bare A Loss: *wólf
+PWGmc Final Bare A Loss: *wólf
 
 ### Orthography & surface
 
@@ -11549,8 +11549,8 @@ Proto Input: *wúllō
 
 ### Northwest Germanic developments
 
-NW Gmc U Lowering: *wóllō
-NW Gmc Final Long O Raising: *wóllu
+NWGmc U Lowering: *wóllō
+NWGmc Final Long O Raising: *wóllu
 
 ### Old English
 
