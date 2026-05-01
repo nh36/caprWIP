@@ -21,6 +21,10 @@ from typing import List
 # characters (each an optional `*` plus exactly one printable non-space char).
 # Internal `*`s between characters are collapsed; the leading `*` is kept.
 STARRED_FORM_RE = re.compile(r"\*(?:\*?[^\s*,])+")
+# "## Section 4: Old English" -> "## Old English"
+SECTION_PREFIX_RE = re.compile(r"^(#{1,6})\s+Section\s+\d+:\s*")
+# "--- beech ---" -> lemma marker
+LEMMA_RE = re.compile(r"^---\s+(.*?)\s+---$")
 
 
 def collapse_stars(token: str) -> str:
@@ -29,7 +33,14 @@ def collapse_stars(token: str) -> str:
 
 
 def compact_line(line: str) -> str:
-    return STARRED_FORM_RE.sub(lambda m: collapse_stars(m.group(0)), line)
+    line = STARRED_FORM_RE.sub(lambda m: collapse_stars(m.group(0)), line)
+    line = SECTION_PREFIX_RE.sub(lambda m: m.group(1) + " ", line)
+    if line.startswith("OldEnglishRemoveStars:"):
+        line = "Outcome:" + line[len("OldEnglishRemoveStars:") :]
+    lemma = LEMMA_RE.match(line)
+    if lemma:
+        line = f"# {lemma.group(1)}"
+    return line
 
 
 def compact_report(text: str) -> str:
@@ -39,6 +50,12 @@ def compact_report(text: str) -> str:
             continue
         filtered.append(compact_line(line))
 
+    # Promote section headers from `##` to `###` so lemma `#` is more prominent.
+    filtered = [
+        ("### " + line[len("## "):]) if line.startswith("## ") else line
+        for line in filtered
+    ]
+
     # If a section header has no stage lines beneath it (all were dropped),
     # insert "[no change]" so empty sections are visible.
     out_lines: List[str] = []
@@ -46,7 +63,7 @@ def compact_report(text: str) -> str:
     while i < len(filtered):
         line = filtered[i]
         out_lines.append(line)
-        if line.startswith("## "):
+        if line.startswith("### "):
             # Look ahead past blank lines to see if any content follows before
             # the next section/lexeme/bucket boundary.
             j = i + 1
@@ -54,8 +71,8 @@ def compact_report(text: str) -> str:
                 j += 1
             terminates = (
                 j >= len(filtered)
-                or filtered[j].startswith("## ")
-                or filtered[j].startswith("--- ")
+                or filtered[j].startswith("### ")
+                or filtered[j].startswith("# ")
                 or filtered[j].startswith("=== ")
             )
             if terminates:
