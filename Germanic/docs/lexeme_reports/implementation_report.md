@@ -7,11 +7,18 @@ The lexeme-report pilot infrastructure now consists of:
 - `Germanic/docs/lexeme_reports/missing_bibliography_keys.md`
 - repo-local skill files under `Germanic/docs/agent_skills/`
 - `Germanic/tools/oe_paradigm_probe.py`
+- `Germanic/tools/oe_lexeme_report_coverage.py`
 - pilot lexeme reports under `Germanic/docs/lexeme_reports/pilot/`
 
 ### What changed
 
 The source inventory and schema files establish the evidence hierarchy, citation style, and per-entry markdown structure for the future `### Lexeme report` section. The new `oe_paradigm_probe.py` provides a repeatable way to compare small hand-specified sets of paradigm cells against the current OE FST and emit a Markdown table suitable for direct inclusion in pilot lexeme reports.
+
+The infrastructure now also adopts a **selective-report policy**: the generated
+report should include `### Lexeme report` only for OE rows with a non-empty
+`NOTE`, a non-`regular` `DERIVATION_CLASS`, or an existing manual pilot/full
+report. Ordinary `regular` rows with empty `NOTE` do not require generated
+lexeme-report prose.
 
 ### Pilot entries completed
 
@@ -40,6 +47,11 @@ The pilot reports were written from repo-local sources first:
 - `docs/refs.bib`
 
 Where the row notes already cited handbook or dictionary sources, the pilot reports use the repo's actual pandoc-style bibliography keys from `docs/refs.bib`, especially `[@Kroonen2013]`, `[@Orel2003]`, `[@RingeTaylor2014]`, `[@Campbell1959]`, `[@Hogg1992]`, `[@SieversBrunner1965]`, `[@Fulk2018]`, `[@Stiles2012]`, `[@KlugeSeebold2011]`, `[@ClarkHall1960]`, and `[@Pokorny1959]`.
+
+The selective-coverage side is audited by `Germanic/tools/oe_lexeme_report_coverage.py`,
+which reads the live OE TSV and reports which rows require lexeme reports,
+which required rows are already covered by manual pilot/full reports, and which
+rows are intentionally outside coverage.
 
 ### What remains uncertain
 

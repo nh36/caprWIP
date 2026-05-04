@@ -7,6 +7,9 @@ derivation report infrastructure. It records which files are authoritative for
 which kind of evidence, where bibliography keys live, and which source classes
 need extra care when transformed into generated Markdown.
 
+It also records the **selective-report policy**: not every Old English row
+needs a generated `### Lexeme report`.
+
 ## Citation system
 
 - **Bibliography database:** `docs/refs.bib`
@@ -54,6 +57,19 @@ For Old English rows with a real `COUNTERPART`:
 - `reconstructed_oe`: 3
 - `known_unmodelled`: 2
 
+Under the selective-report policy, a generated `### Lexeme report` is required
+only when:
+
+1. the row has a non-empty TSV `NOTE`;
+2. `DERIVATION_CLASS` is not `regular`;
+3. or a manual pilot/full report already exists for that row under
+   `Germanic/docs/lexeme_reports/`.
+
+Ordinary `regular` rows with an empty `NOTE` and no manual pilot/full report do
+not need generated lexeme-report prose. Exact coverage counts should be taken
+from `Germanic/tools/oe_lexeme_report_coverage.py`, which audits the live TSV
+and report directory state.
+
 ## How to treat key source files
 
 ### `Germanic/data/germanic-aligned-final.tsv`
@@ -78,6 +94,10 @@ But it should **not** treat `NOTE` as publishable prose. `NOTE` mixes:
 
 `HISTORY` is even less presentation-ready. In many rows it is provenance log
 material (often repeated Wiktionary-template notes), not report prose.
+
+`NOTE` also serves as one of the triggers for the selective-report policy: a
+non-empty OE `NOTE` means that a lexeme report or placeholder is required even
+for a `regular` row.
 
 ### `Germanic/data/oe_known_problems.tsv`
 
@@ -109,6 +129,19 @@ This is the most important internal prose source. It contains:
 It should be treated as the main bridge between TSV source material and the
 more polished lexeme-report prose.
 
+### `Germanic/docs/lexeme_reports/`
+
+This directory now has two distinct roles:
+
+1. **policy/infrastructure documents** at top level (`report_schema.md`,
+   `source_inventory.md`, `implementation_report.md`,
+   `missing_bibliography_keys.md`);
+2. **manual pilot/full report files** in report subdirectories such as
+   `pilot/`.
+
+Only the manual pilot/full report files count as row-level report coverage for
+the selective-report policy.
+
 ### `docs/references/` and `docs/refs.bib`
 
 These are the authoritative local bibliography store. The bibliography keys
@@ -136,7 +169,8 @@ live in `docs/refs.bib`; the readable file index lives in
 
 - No separate Germanic-specific `.bib` file exists; `docs/refs.bib` is the
   master bibliography.
-- No existing lexeme-report store exists yet under `Germanic/docs/lexeme_reports/`.
+- No mass coverage store exists yet; current row-level coverage is limited to
+  the pilot reports under `Germanic/docs/lexeme_reports/pilot/`.
 - There is no ready-made morphology generator for Proto-Germanic paradigm-cell
   probes. That must be bootstrapped from minimal hand-specified templates.
 
@@ -150,4 +184,3 @@ When building pilot lexeme reports, use evidence in this order:
 4. specific analysis/dossier files
 5. local handbooks/dictionaries in `docs/references/`
 6. `old_english_wiktionary.tsv` / `old_english_swadesh.tsv` as supplementary
-

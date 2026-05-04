@@ -8,9 +8,22 @@ flat `NOTE:` line in the generated Old English derivation report.
 The TSV `NOTE` and `HISTORY` fields remain source material. They are not the
 final prose.
 
+## Selective-report policy
+
+The generated derivation report should include `### Lexeme report` **only** for
+rows that satisfy at least one of these conditions:
+
+1. the Old English TSV row has a non-empty `NOTE`;
+2. `DERIVATION_CLASS` is not `regular`;
+3. the row already has a manually supplied pilot/full lexeme report under
+   `Germanic/docs/lexeme_reports/`.
+
+Ordinary `regular` rows with an empty TSV `NOTE` and no manual pilot/full
+report should **not** receive a generated `### Lexeme report`.
+
 ## Entry structure inside the generated derivation report
 
-Each generated OE entry should eventually follow this structure:
+Rows that satisfy the selective-report policy should follow this structure:
 
 ```md
 # concept
@@ -52,6 +65,9 @@ DERIVATION_CLASS: ...
 
 `#### Paradigm probe` is included only when relevant, especially for
 `late_analogy` and analogical `known_unmodelled` cases.
+
+Rows outside the selective-report policy keep the ordinary derivation entry
+without any `### Lexeme report` section.
 
 ## Citation convention
 
@@ -201,8 +217,8 @@ Each probe should record:
 
 ## Placeholder policy before full integration
 
-Before every row has a finished lexeme report, entries without a completed
-report should receive:
+Before every **required** row has a finished lexeme report, entries without a
+completed report should receive:
 
 ```md
 ### Lexeme report
@@ -213,21 +229,26 @@ Original TSV note: ...
 ```
 
 The original `NOTE` content must be preserved here. Do not silently drop it.
+Do **not** generate this placeholder for ordinary `regular` rows with an empty
+`NOTE` and no manual report.
 
 ## Validation rules
 
 The generation workflow should enforce:
 
-1. Every OE row with a non-empty TSV `NOTE` has either a full lexeme report or
-   a placeholder preserving the note.
-2. Every `late_analogy` row has either a paradigm probe or an explicit reason
+1. Every OE row requiring a lexeme report under the selective-report policy has
+   either a full lexeme report or a placeholder preserving the source note when
+   applicable.
+2. Ordinary `regular` rows with an empty TSV `NOTE` and no manual report do
+   **not** receive a generated `### Lexeme report`.
+3. Every `late_analogy` row has either a paradigm probe or an explicit reason
    why no probe was generated.
-3. Every `known_unmodelled` and `unexplained_unmodelled` row cites
+4. Every `known_unmodelled` and `unexplained_unmodelled` row cites
    `oe_known_problems.tsv` or a corresponding DEV_NOTES / analysis source.
-4. Every citation key used in report prose exists in `docs/refs.bib`.
-5. Generated output contains no unresolved placeholders such as `TODO`,
+5. Every citation key used in report prose exists in `docs/refs.bib`.
+6. Generated output contains no unresolved placeholders such as `TODO`,
    `FIXME`, `citation needed`, or `???`, except in a separate audit report.
-6. The generated lexeme report must not alter `PROTO`, `EXPECTED`, `OUTPUTS`,
+7. The generated lexeme report must not alter `PROTO`, `EXPECTED`, `OUTPUTS`,
    or the derivation trace/table itself.
 
 ## LaTeX-friendly Markdown rules
@@ -241,4 +262,3 @@ The generation workflow should enforce:
 - Do not place citations inside code blocks.
 - Prefer normal prose paragraphs and short bullet lists over prose embedded in
   tables.
-

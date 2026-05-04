@@ -5,9 +5,21 @@
 Use this skill when drafting a lexeme-level OE research report that will slot
 under `### Lexeme report` in the generated derivation report.
 
+## When to use this skill
+
+Draft or revise `### Lexeme report` content only when at least one of these is
+true:
+
+1. the Old English TSV row has a non-empty `NOTE`;
+2. `DERIVATION_CLASS` is not `regular`;
+3. the row already has a manually supplied pilot/full lexeme report.
+
+If a row is `regular`, has an empty `NOTE`, and has no manual pilot/full
+report, do **not** generate a `### Lexeme report` for it.
+
 ## Required structure
 
-Always use these headings:
+When a lexeme report is required, use these headings:
 
 - `### Lexeme report`
 - `#### Reconstruction and early-stage alternatives`
@@ -26,6 +38,11 @@ Always use these headings:
    source support.
 5. Use bibliography keys from `docs/refs.bib` in pandoc style, e.g.
    `[@Kroonen2013]`.
+6. For a required row that does not yet have a full report, preserve the source
+   note with a short placeholder rather than dropping it.
+7. Do not add a gratuitous report to an ordinary `regular` row with empty
+   `NOTE` unless the row is intentionally being covered by a manual pilot/full
+   report.
 
 ## Source search order
 
@@ -55,4 +72,3 @@ Avoid:
 - inventing bibliography keys;
 - calling a form attested because it “looks standard”;
 - flattening early analogy, late analogy, and unresolved cases into one pattern.
-
