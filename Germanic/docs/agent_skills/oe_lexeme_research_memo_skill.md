@@ -40,6 +40,90 @@ reasoning pass.
    - the Old English target form actually represented by the row.
 5. End with recommendations, not final prose.
 
+## Research memo index
+
+Track memo progress in:
+
+- `Germanic/docs/lexeme_reports/research_memo_index.tsv`
+
+Use these columns:
+
+- `ID`
+- `CONCEPT`
+- `COUNTERPART`
+- `DERIVATION_CLASS`
+- `PACKET_PATH`
+- `MEMO_PATH`
+- `STATUS`
+- `NEEDS_PARADIGM_PROBE`
+- `DATA_CHANGE_RECOMMENDED`
+- `DATA_CHANGE_KIND`
+- `READY_FOR_FINAL_REPORT`
+- `NOTES`
+
+For `DATA_CHANGE_KIND`, use only:
+
+- `none`
+- `tsv_note`
+- `tsv_protoform`
+- `tsv_counterpart`
+- `derivation_class`
+- `known_problems_refs`
+- `dev_notes_cleanup`
+- `dossier_cleanup`
+- `multiple`
+
+## Four-agent round workflow
+
+The memo workflow runs in **four-agent rounds**, with at most four memos in a
+round. Do not begin a new round until the previous round has been reviewed.
+
+Use these lanes as a preference order:
+
+1. **Lane 1: unresolved/unmodelled**
+   - `unexplained_unmodelled`
+   - `known_unmodelled`
+2. **Lane 2: philological special cases**
+   - `reconstructed_oe`
+   - `attested_variant`
+3. **Lane 3: paradigm-cell cases**
+   - `late_analogy`
+4. **Lane 4: lighter but still note-bearing**
+   - `regular` rows with non-empty `NOTE`
+   - `early_analogy`
+
+Selection rule for each round:
+
+1. First try to choose one row from each lane.
+2. If one or more lanes are exhausted, refill the empty slots from the
+   remaining required memo backlog.
+3. When refilling, prefer higher-risk categories first:
+   - unmodelled rows;
+   - reconstructed or attested-variant rows;
+   - late-analogy rows;
+   - early-analogy rows;
+   - regular rows with `NOTE`.
+4. Avoid assigning four rows of the same narrow type in a single round unless
+   the backlog has become mostly that type.
+5. If the backlog is mostly one type, it is acceptable for a round to contain
+   mostly or entirely that type, but the batch summary should say so explicitly.
+
+For each memo in a round:
+
+1. Start from the evidence packet.
+2. Do additional repo research beyond the packet.
+3. Distinguish current evidence from stale project history.
+4. Identify whether a paradigm probe is required.
+5. Make explicit data-change recommendations.
+6. Update `research_memo_index.tsv`.
+
+Before launching delegated memo agents for a round, generate or refresh the
+starting evidence packets for the selected rows. Agents should begin from live
+packet files, not from stale packet snapshots or from TSV-only context.
+
+After each four-memo round, stop and write a batch summary under
+`Germanic/docs/lexeme_reports/research_memos/` before any later round begins.
+
 ## Required memo structure
 
 Use exactly these headings:
