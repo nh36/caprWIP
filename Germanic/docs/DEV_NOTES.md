@@ -37998,37 +37998,53 @@ of the parallel j-gemination class III weak verbs:
 So the issue is general to the *kk + *j palatalization context, not
 peculiar to *strákkijaną.
 
-**Diagnosis.** `Germanic/fsts/germanic.txt` rule `OEVelarPalatalization`
-(line 2625) palatalizes *k under five clauses (R/T §6.4.1 rules 1–4 plus
-*k before *j). None of them matches a geminate as a unit; rule 5
-(`{*k} -> {*ʧ} || _ {*j}`) only applies to the second *k of `*kk j`,
-because only that *k has *j as its right context. The first *k of the
-geminate sees the second *k as its right context, so it is never
-palatalized. The rule block for *g, by contrast, already includes a
-dedicated geminate clause (line 2642):
-
-```
-{*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
-```
-
-The asymmetry between *k and *g is unmotivated: in West Germanic
-j-gemination plus palatalization, both halves of the geminate behave
-phonetically as a single long palatal affricate. Campbell §65 and §428
-spell the outcome `cċċ`-type "/tʃː/" with both halves palatal, and so
-does R/T §6.4.1 (treating geminate /tʃː/ < *kkj as a unit).
-
-**Fix.** Add a geminate clause to the *k block, parallel to the *g
-clause already present:
+**Diagnosis.** The original bug was correctly identified as a *kk + *j
+palatalization problem, and the cascade now does include the dedicated
+geminate clause:
 
 ```
 {*k} {*k} -> {*ʧ} {*ʧ} || _ {*j}
 ```
 
-This goes inside `OEVelarPalatalization` between the existing rule 5
-(`{*k} -> {*ʧ} || _ {*j}`) and the start of the `.o. [ ... *g ... ]`
-block. Rule ordering inside the parenthesized definition does not matter
-(foma composes them), but writing the geminate clause last in the *k
-sub-block keeps the structure parallel to the *g sub-block.
+However, a 2026-05-04 trace audit showed that this did **not** make the
+path deterministic. `OEVelarPalatalization` still contained the general
+singleton rule
+
+```
+{*k} -> {*ʧ} || _ {*j}
+```
+
+in the same replacement block. For input `*strákkijaną`, the stage
+therefore admitted **two analyses**:
+
+- `*s*t*r*æ*k*ʧ*j*ą*n` — the singleton rule applies only to the second
+  *k*
+- `*s*t*r*æ*ʧ*ʧ*j*ą*n` — the geminate rule applies to the full *kk
+
+The mismatch report treated the row as solved because the good output
+(`streċċan`) was among the final candidates, but the bad output
+(`strecċan`) still survived all the way to `OldEnglishSurface`.
+
+So the real bug is not "missing geminate clause" but **overlap between
+the geminate and singleton *k-before-*j clauses inside the same
+palatalization block**. The same theoretical overlap exists on the *g
+side (`*g -> *ʤ || _ *j` vs. `*gg -> *ʤʤ || _ *j`), even though no live
+OE TSV row currently exposes it.
+
+**Fix.** Make the *j-triggered palatalization deterministic by
+**sequencing** the geminate clause before the singleton clause, instead
+of leaving them as overlapping alternatives in one bracketed rewrite.
+Concretely:
+
+1. Keep the front-vowel / word-final *k rules together.
+2. Apply `*kk -> *ʧʧ || _ *j`.
+3. Then apply `*k -> *ʧ || _ *j`.
+4. Mirror the same ordering on the *g side (`*gg` before singleton
+   `*g / _ *j`) so the overlap cannot recur there later.
+
+This preserves the intended historical generalization — both halves of
+the geminate palatalize before *j — while removing the spurious
+alternative path.
 
 **Regression surface.** The only context in which this rule fires is
 `*kk` immediately followed by *j, which is created exclusively by
@@ -38052,13 +38068,19 @@ only needs the *j context, matching the *g geminate clause exactly.
 
 **Files to be changed.**
 
-- `Germanic/fsts/germanic.txt`: add one line inside `OEVelarPalatalization`.
+- `Germanic/fsts/germanic.txt`: refactor `OEVelarPalatalization` so the
+  geminate-before-*j clauses feed the singleton-before-*j clauses
+  deterministically.
 - `Germanic/docs/debug_snapshots/oe_full_trace_report.txt` and
   `oe_mismatch_report.txt`: regenerated after rebuild.
 - (Optional) `notable_findings.md`: not required — this is a standard
   rule-symmetry fix, not a notable finding.
 
-**Expected post-fix:** `*strákkijaną → streċċan`. Mismatches 22 → 21.
+**Expected post-fix:** `*strákkijaną` should have a **single**
+lautgesetzlich path to `streċċan`; the stray `strecċan` branch should
+disappear. In the current mature pipeline this should preserve the
+overall OE score at 373 exact / 7 mismatches while removing the hidden
+overgeneration that the mismatch report currently masks.
 
 ## §17.35 — *skéllinaz / sċilling (row 2181): missing PGmc *-ingaz derivational suffix
 
