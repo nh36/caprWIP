@@ -2,12 +2,13 @@
 
 - Total OE rows with real counterpart: 380
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 149
-- Required rows with manifest-backed reports: 12
+- Rows requiring lexeme report: 148
+- Required rows with manifest-backed reports: 11
 - Required rows with only fuzzy-matched reports: 0
 - Required rows with no report: 137
 - Regular rows with empty NOTE and no report required: 231
 - Regular rows with empty NOTE but manual report present: 1
+- Rows with STATUS=format_test reports: 1
 - Regular rows with NOTE (report required): 71
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
@@ -20,25 +21,24 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 0 | 24 |
 | reconstructed_oe | 3 | 3 | 1 | 0 | 2 |
-| regular | 303 | 72 | 1 | 0 | 71 |
+| regular | 303 | 71 | 0 | 0 | 71 |
 | unexplained_unmodelled | 5 | 5 | 1 | 0 | 4 |
 
 ## Required rows with manifest-backed reports
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage source | Report status | Report path(s) | Requirement basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1933 | adder | nǣdre | regular | no | manifest | pilot | pilot/adder.md | manual_report |
-| 1936 | ban | bannes | late_analogy | yes | manifest | pilot | pilot/ban.md | NOTE, DERIVATION_CLASS=late_analogy, manual_report |
-| 1946 | berry | berġes | late_analogy | yes | manifest | pilot | pilot/berry.md | NOTE, DERIVATION_CLASS=late_analogy, manual_report |
-| 1959 | bottom | botm | early_analogy | yes | manifest | pilot | pilot/bottom.md | NOTE, DERIVATION_CLASS=early_analogy, manual_report |
-| 1973 | buck | bucc | unexplained_unmodelled | yes | manifest | pilot | pilot/buck.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, manual_report |
-| 1981 | craft | cræft | early_analogy | yes | manifest | pilot | pilot/craft.md | NOTE, DERIVATION_CLASS=early_analogy, manual_report |
-| 1983 | cud | cwedu | attested_variant | yes | manifest | pilot | pilot/cud.md | NOTE, DERIVATION_CLASS=attested_variant, manual_report |
-| 2013 | fire | fȳre | known_unmodelled | yes | manifest | pilot | pilot/fire.md | NOTE, DERIVATION_CLASS=known_unmodelled, manual_report |
-| 2151 | reek | rēac | reconstructed_oe | yes | manifest | pilot | pilot/reek.md | NOTE, DERIVATION_CLASS=reconstructed_oe, manual_report |
-| 2203 | span | spanne | late_analogy | yes | manifest | pilot | pilot/span.md | NOTE, DERIVATION_CLASS=late_analogy, manual_report |
-| 2240 | tap | tæppa | known_unmodelled | yes | manifest | pilot | pilot/tap.md | NOTE, DERIVATION_CLASS=known_unmodelled, manual_report |
-| 2250 | thistle | þistles | late_analogy | yes | manifest | pilot | pilot/thistle.md | NOTE, DERIVATION_CLASS=late_analogy, manual_report |
+| 1936 | ban | bannes | late_analogy | yes | manifest | pilot | pilot/ban.md | NOTE, DERIVATION_CLASS=late_analogy, production_report |
+| 1946 | berry | berġes | late_analogy | yes | manifest | pilot | pilot/berry.md | NOTE, DERIVATION_CLASS=late_analogy, production_report |
+| 1959 | bottom | botm | early_analogy | yes | manifest | pilot | pilot/bottom.md | NOTE, DERIVATION_CLASS=early_analogy, production_report |
+| 1973 | buck | bucc | unexplained_unmodelled | yes | manifest | pilot | pilot/buck.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, production_report |
+| 1981 | craft | cræft | early_analogy | yes | manifest | pilot | pilot/craft.md | NOTE, DERIVATION_CLASS=early_analogy, production_report |
+| 1983 | cud | cwedu | attested_variant | yes | manifest | pilot | pilot/cud.md | NOTE, DERIVATION_CLASS=attested_variant, production_report |
+| 2013 | fire | fȳre | known_unmodelled | yes | manifest | pilot | pilot/fire.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report |
+| 2151 | reek | rēac | reconstructed_oe | yes | manifest | pilot | pilot/reek.md | NOTE, DERIVATION_CLASS=reconstructed_oe, production_report |
+| 2203 | span | spanne | late_analogy | yes | manifest | pilot | pilot/span.md | NOTE, DERIVATION_CLASS=late_analogy, production_report |
+| 2240 | tap | tæppa | known_unmodelled | yes | manifest | pilot | pilot/tap.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report |
+| 2250 | thistle | þistles | late_analogy | yes | manifest | pilot | pilot/thistle.md | NOTE, DERIVATION_CLASS=late_analogy, production_report |
 
 ## Required rows with only fuzzy-matched reports
 
@@ -426,7 +426,13 @@ _None_
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage source | Report status | Report path(s) | Requirement basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1933 | adder | nǣdre | regular | no | manifest | pilot | pilot/adder.md | manual_report |
+| 1933 | adder | nǣdre | regular | no | manifest_format_test | format_test | pilot/adder.md | none |
+
+## Rows with STATUS=format_test reports
+
+| ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage source | Report status | Report path(s) | Requirement basis |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1933 | adder | nǣdre | regular | no | manifest_format_test | format_test | pilot/adder.md | none |
 
 ## Ambiguous report files
 

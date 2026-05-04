@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Audit selective lexeme-report coverage for Old English rows.
 
-Policy:
-1. A lexeme report is required when the OE row has a non-empty NOTE.
-2. A lexeme report is required when DERIVATION_CLASS is not regular.
-3. A lexeme report is required when a manual pilot/full report already exists.
+Production policy:
+1. A production lexeme report is required when the OE row has a non-empty NOTE.
+2. A production lexeme report is required when DERIVATION_CLASS is not regular.
+3. A production lexeme report is required when a manifest-backed report has
+   STATUS=pilot or STATUS=full.
 
-Ordinary regular rows with an empty NOTE and no manual report do not require a
-generated lexeme report.
+STATUS=format_test is tracked separately and does not make an otherwise ordinary
+regular empty-NOTE row count as requiring a production lexeme report.
 
 Coverage mapping policy:
 - The manifest in Germanic/docs/lexeme_reports/report_manifest.tsv is the
@@ -34,6 +35,8 @@ EXCLUDED_REPORT_FILES = {
     "report_schema.md",
     "source_inventory.md",
 }
+PRODUCTION_REPORT_STATUSES = {"pilot", "full"}
+FORMAT_TEST_REPORT_STATUS = "format_test"
 
 
 @dataclass
@@ -63,16 +66,24 @@ class OERow:
         return bool(self.manifest_report_paths)
 
     @property
+    def has_production_manifest_report(self) -> bool:
+        return any(status in PRODUCTION_REPORT_STATUSES for status in self.manifest_statuses)
+
+    @property
+    def has_format_test_manifest_report(self) -> bool:
+        return FORMAT_TEST_REPORT_STATUS in self.manifest_statuses
+
+    @property
     def has_fuzzy_report(self) -> bool:
         return bool(self.fuzzy_report_paths)
 
     @property
-    def has_manual_report(self) -> bool:
+    def has_any_manual_report(self) -> bool:
         return self.has_manifest_report or self.has_fuzzy_report
 
     @property
     def requires_report(self) -> bool:
-        return self.has_note or self.is_nonregular or self.has_manual_report
+        return self.has_note or self.is_nonregular or self.has_production_manifest_report
 
     @property
     def requirement_basis(self) -> str:
@@ -81,14 +92,16 @@ class OERow:
             reasons.append("NOTE")
         if self.is_nonregular:
             reasons.append(f"DERIVATION_CLASS={self.derivation_class}")
-        if self.has_manual_report:
-            reasons.append("manual_report")
+        if self.has_production_manifest_report:
+            reasons.append("production_report")
         return ", ".join(reasons) if reasons else "none"
 
     @property
     def coverage_source(self) -> str:
-        if self.has_manifest_report:
+        if self.has_production_manifest_report:
             return "manifest"
+        if self.has_format_test_manifest_report:
+            return "manifest_format_test"
         if self.has_fuzzy_report:
             return "fuzzy"
         return "-"
@@ -360,17 +373,23 @@ def render_class_count_table(rows: list[OERow]) -> list[str]:
     total = class_count_rows(rows)
     required = class_count_rows([row for row in rows if row.requires_report])
     manifest = class_count_rows(
-        [row for row in rows if row.requires_report and row.has_manifest_report]
+        [row for row in rows if row.requires_report and row.has_production_manifest_report]
     )
     fuzzy_only = class_count_rows(
         [
             row
             for row in rows
-            if row.requires_report and not row.has_manifest_report and row.has_fuzzy_report
+            if row.requires_report and not row.has_production_manifest_report and row.has_fuzzy_report
         ]
     )
     no_report = class_count_rows(
-        [row for row in rows if row.requires_report and not row.has_manual_report]
+        [
+            row
+            for row in rows
+            if row.requires_report
+            and not row.has_production_manifest_report
+            and not row.has_fuzzy_report
+        ]
     )
 
     classes = sorted(total)
@@ -434,26 +453,33 @@ def build_report(
 ) -> str:
     required_rows = [row for row in rows if row.requires_report]
     manifest_backed_required = [
-        row for row in required_rows if row.has_manifest_report
+        row for row in required_rows if row.has_production_manifest_report
     ]
     fuzzy_only_required = [
         row
         for row in required_rows
-        if not row.has_manifest_report and row.has_fuzzy_report
+        if not row.has_production_manifest_report and row.has_fuzzy_report
     ]
     no_report_required = [
-        row for row in required_rows if not row.has_manual_report
+        row
+        for row in required_rows
+        if not row.has_production_manifest_report and not row.has_fuzzy_report
     ]
     regular_empty_note_no_report_required = [
         row
         for row in rows
-        if row.derivation_class == "regular" and not row.has_note and not row.has_manual_report
+        if row.derivation_class == "regular"
+        and not row.has_note
+        and not row.has_any_manual_report
     ]
     regular_empty_note_manual_present = [
         row
         for row in rows
-        if row.derivation_class == "regular" and not row.has_note and row.has_manual_report
+        if row.derivation_class == "regular"
+        and not row.has_note
+        and row.has_any_manual_report
     ]
+    format_test_rows = [row for row in rows if row.has_format_test_manifest_report]
     regular_note_required = [
         row for row in rows if row.derivation_class == "regular" and row.has_note
     ]
@@ -476,6 +502,7 @@ def build_report(
             + str(len(regular_empty_note_no_report_required)),
             "- Regular rows with empty NOTE but manual report present: "
             + str(len(regular_empty_note_manual_present)),
+            "- Rows with STATUS=format_test reports: " + str(len(format_test_rows)),
             "- Regular rows with NOTE (report required): "
             + str(len(regular_note_required)),
             "- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): "
@@ -511,6 +538,7 @@ def build_report(
             regular_empty_note_manual_present,
         )
     )
+    lines.extend(render_section("Rows with STATUS=format_test reports", format_test_rows))
 
     if manifest_diagnostics:
         lines.append("## Manifest diagnostics")
