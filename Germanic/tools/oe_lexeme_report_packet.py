@@ -70,6 +70,15 @@ DIAGNOSTIC_PATH_MARKERS = (
     "english_sandbox",
     "english-sandbox",
 )
+ROW_ID_LABEL_RE_TEMPLATE = r"(?<!\w)(?:row|id|row_id)\s*[:=#-]?\s*{row_id}(?!\w)"
+FORM_BOUNDARY_RE = r"[\w\u0300-\u036f]"
+TARGET_MENTION_RE = re.compile(
+    r"\b(?:expected|target)\b"
+    r"(?:\s+(?:oe|current|surface|form|outcome))*"
+    r"(?:\s*(?:=|:|->|→|is|was))?"
+    r"\s*[`\"'“”‘’]?(?P<form>[^\s,;:()<>`\[\]\{\}\"'“”‘’]+)",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -112,6 +121,7 @@ class TextHit:
     path: str
     line_number: int
     heading: str
+    matched_line: str
     snippet: str
 
 
@@ -226,33 +236,79 @@ def exact_match_line(line: str, query: str) -> bool:
     return query.casefold() in line.casefold()
 
 
+def form_match_line(line: str, form: str) -> bool:
+    return (
+        re.search(
+            rf"(?<!{FORM_BOUNDARY_RE}){re.escape(form)}(?!{FORM_BOUNDARY_RE})",
+            line,
+            re.IGNORECASE,
+        )
+        is not None
+    )
+
+
 def concept_match_line(line: str, concept: str) -> bool:
     if not concept:
         return False
     return re.search(rf"\b{re.escape(concept)}\b", line, re.IGNORECASE) is not None
 
 
-def row_id_match_line(line: str, row_id: str) -> bool:
+def explicit_row_id_match_text(text: str, row_id: str) -> bool:
     return (
-        re.search(rf"\brow\s+{re.escape(row_id)}\b", line, re.IGNORECASE) is not None
-        or f"| {row_id} |" in line
-        or re.search(rf"^\s*{re.escape(row_id)}\b", line) is not None
+        re.search(
+            ROW_ID_LABEL_RE_TEMPLATE.format(row_id=re.escape(row_id)),
+            text,
+            re.IGNORECASE,
+        )
+        is not None
     )
+
+
+def markdown_row_id_cell_match(lines: Sequence[str], line_number: int, row_id: str) -> bool:
+    line = lines[line_number - 1].strip()
+    if not (line.startswith("|") and line.endswith("|")):
+        return False
+    cells = [cell.strip() for cell in line.strip("|").split("|")]
+    if row_id not in cells:
+        return False
+
+    for index in range(max(0, line_number - 4), line_number - 1):
+        candidate = lines[index].strip()
+        if not (candidate.startswith("|") and candidate.endswith("|")):
+            continue
+        header_cells = [cell.strip().casefold() for cell in candidate.strip("|").split("|")]
+        if all(set(cell) <= {":", "-"} for cell in header_cells):
+            continue
+        if any(
+            cell in {"row", "id", "row id", "tsv row id", "row_id"}
+            or ("row" in cell and "id" in cell)
+            or ("tsv" in cell and "id" in cell)
+            for cell in header_cells
+        ):
+            return True
+    return False
+
+
+def row_id_match_line(lines: Sequence[str], line_number: int, row_id: str) -> bool:
+    line = lines[line_number - 1]
+    return explicit_row_id_match_text(line, row_id) or markdown_row_id_cell_match(lines, line_number, row_id)
 
 
 def pair_match_line(line: str, pair: tuple[str, str]) -> bool:
     protoform, counterpart = pair
-    lowered = line.casefold()
-    return protoform.casefold() in lowered and counterpart.casefold() in lowered
+    return form_match_line(line, protoform) and form_match_line(line, counterpart)
 
 
-def match_query(line: str, query_value: Any, query_kind: str) -> bool:
+def match_query(lines: Sequence[str], line_number: int, query_value: Any, query_kind: str) -> bool:
+    line = lines[line_number - 1]
     if query_kind == "exact":
         return exact_match_line(line, query_value)
+    if query_kind == "form":
+        return form_match_line(line, query_value)
     if query_kind == "concept":
         return concept_match_line(line, query_value)
     if query_kind == "row_id":
-        return row_id_match_line(line, query_value)
+        return row_id_match_line(lines, line_number, query_value)
     if query_kind == "pair":
         return pair_match_line(line, query_value)
     raise ValueError(f"Unsupported query kind: {query_kind}")
@@ -270,7 +326,7 @@ def collect_text_hits(
     for query_label, query_value, query_kind in queries:
         count = 0
         for line_number, line in enumerate(lines, start=1):
-            if not match_query(line, query_value, query_kind):
+            if not match_query(lines, line_number, query_value, query_kind):
                 continue
             key = (query_label, line_number)
             if key in seen:
@@ -282,6 +338,7 @@ def collect_text_hits(
                     path=str(path),
                     line_number=line_number,
                     heading=nearest_heading(lines, line_number),
+                    matched_line=line,
                     snippet=make_snippet(lines, line_number),
                 )
             )
@@ -331,7 +388,7 @@ def collect_directory_hits(
             file_hits = 0
             for query_label, query_value, query_kind in queries:
                 for line_number, line in enumerate(lines, start=1):
-                    if not match_query(line, query_value, query_kind):
+                    if not match_query(lines, line_number, query_value, query_kind):
                         continue
                     hits.append(
                         TextHit(
@@ -339,6 +396,7 @@ def collect_directory_hits(
                             path=str(path),
                             line_number=line_number,
                             heading=nearest_heading(lines, line_number),
+                            matched_line=line,
                             snippet=make_snippet(lines, line_number, context=1),
                         )
                     )
@@ -533,14 +591,25 @@ def hit_combined_text(hit: TextHit) -> str:
     return f"{hit.heading}\n{hit.snippet}".casefold()
 
 
+def normalize_target_form(form: str) -> str:
+    return form.strip("`\"'“”‘’.,;:()[]{}<>").casefold()
+
+
+def superseded_target_forms(text: str) -> List[str]:
+    return [normalize_target_form(match.group("form")) for match in TARGET_MENTION_RE.finditer(text)]
+
+
 def mentions_exact_pair(hit: TextHit, row: AlignedRow) -> bool:
-    text = hit_combined_text(hit)
-    return row.protoform.casefold() in text and row.counterpart.casefold() in text
+    text = f"{hit.heading}\n{hit.snippet}"
+    return form_match_line(text, row.protoform) and form_match_line(text, row.counterpart)
 
 
 def mentions_row_id(hit: TextHit, row: AlignedRow) -> bool:
-    text = hit_combined_text(hit)
-    return row_id_match_line(text, row.row_id)
+    return (
+        hit.query_label == "row ID"
+        or explicit_row_id_match_text(hit.heading, row.row_id)
+        or explicit_row_id_match_text(hit.matched_line, row.row_id)
+    )
 
 
 def stale_diagnostic_hit(hit: TextHit, row: AlignedRow) -> bool:
@@ -550,18 +619,21 @@ def stale_diagnostic_hit(hit: TextHit, row: AlignedRow) -> bool:
         return True
     if hit.query_label == "concept name":
         return True
-    if "expected " in text and row.counterpart.casefold() not in text:
-        return True
+    if form_match_line(text, row.protoform):
+        current = normalize_target_form(row.counterpart)
+        targets = [target for target in superseded_target_forms(text) if target]
+        if any(target != current for target in targets):
+            return True
     if "former expected" in text or "old target" in text or "previous target" in text:
         return True
     return False
 
 
 def classify_dev_hit(hit: TextHit, row: AlignedRow) -> str:
-    if mentions_row_id(hit, row) or mentions_exact_pair(hit, row):
-        return "high"
     if stale_diagnostic_hit(hit, row):
         return "diagnostic"
+    if mentions_row_id(hit, row) or mentions_exact_pair(hit, row):
+        return "high"
     if hit.query_label in {"exact PROTOFORM", "exact COUNTERPART"} or hit.query_label.startswith("note keyword:"):
         return "supporting"
     return "diagnostic"
@@ -569,12 +641,12 @@ def classify_dev_hit(hit: TextHit, row: AlignedRow) -> str:
 
 def classify_analysis_hit(hit: TextHit, row: AlignedRow, referenced_files: set[str]) -> str:
     basename = Path(hit.path).name
+    if stale_diagnostic_hit(hit, row):
+        return "diagnostic"
     if mentions_row_id(hit, row):
         return "high"
     if basename in referenced_files:
         return "high"
-    if stale_diagnostic_hit(hit, row):
-        return "diagnostic"
     if hit.query_label in {"exact PROTOFORM", "exact COUNTERPART"} or hit.query_label.startswith("note keyword:"):
         return "supporting"
     return "diagnostic"
@@ -724,8 +796,8 @@ def build_packet(
     queries: List[tuple[str, Any, str]] = [
         ("row ID", row.row_id, "row_id"),
         ("exact pair", (row.protoform, row.counterpart), "pair"),
-        ("exact PROTOFORM", row.protoform, "exact"),
-        ("exact COUNTERPART", row.counterpart, "exact"),
+        ("exact PROTOFORM", row.protoform, "form"),
+        ("exact COUNTERPART", row.counterpart, "form"),
         ("concept name", row.concept, "concept"),
         *note_keyword_queries(row.note or ""),
     ]

@@ -73,15 +73,7 @@ _None_
 
 ### Analysis and dossier hits
 
-#### Germanic/docs/analysis/mismatch_dossier_mizdo_supplement.md:428 (row ID)
-
-- Nearby heading: ### 3.12 Summary of source-by-source findings
-
-```text
-427: | Brunner | 1965 | ? | ? | ? | ? |
-428: | Holthausen (AeEW) | 1934 | ? | ✓ | ? | ? |
-429: | Mayrhofer | 2001 | ✗ (Germanic only) | ✗ | — | — |
-```
+_None_
 
 ## Supporting/background evidence
 
@@ -171,18 +163,6 @@ _None_
 1722: - Candidate next actions:
 ```
 
-#### Germanic/docs/DEV_NOTES.md:2427 (exact COUNTERPART)
-
-- Nearby heading: ### PGmc→OE TODOs (consolidated)
-
-```text
-2425: - **Proto gate coverage:** `xw/hw` clusters already pass `EnglishProtoInput`; remaining ProtoInput failures are elsewhere (e.g., `*xabukăz`, `*xemenăz`, `*xnakkăz`, `*regna-bugōn`, `*sumerăz`). Focus on missing onset/weak‑tail clusters, not `xw/hw`.
-2426: - **High‑vowel apocope expansion:** broaden final `*i/*u` deletion beyond the current “long/diphthong + C” and “two light syllables” conditions; target observed `-i/-u` outputs (e.g., `ballu/bebru/balgi/bugu/crafti/fehu/felþu`) while staying phonetic.
-2427: - **Weak‑tail cleanup (`-ana` → `-an`):** reshape or drop weak‑tail `ă/ą` endings in verbs so outputs like `bacana/gennana/brecana/brengana/brūcana` converge on attested `-an`.
-2428: - **OE consonant innovations:** add the missing PGmc→OE consonant changes (palatalisation in OE contexts, rhotic prep, targeted lexical replacements) so stage outputs align with `COUNTERPART` without using ME/RP rules.
-2429:   - Early final‑ă apocope (post‑z deletion) now in place; `*dagăz` yields `dæġ`. See potential side‑effects list at `docs/debug_snapshots/oe_final_a_apocope_side_effects_2025-12-23.txt`.
-```
-
 #### Germanic/docs/DEV_NOTES.md:2478 (exact COUNTERPART)
 
 - Nearby heading: ### OE evaluator snapshot (old_english.bin)
@@ -193,18 +173,6 @@ _None_
 2478: - Sample mismatches: `*bakăną -> bacana` vs `bacan`, `*bōkō -> bucō` vs `bēċe`, `*balgiz -> balgi` vs `bielġ`.
 2479: - Common issue bucket still dominated by `-ana` outputs and lingering final high vowels.
 2480: 
-```
-
-#### Germanic/docs/DEV_NOTES.md:2485 (exact COUNTERPART)
-
-- Nearby heading: ### Ending diagnostics (old_english.bin)
-
-```text
-2483: - Final high vowels: `i` 22, `u` 20; most common contexts `ti/di` for `-i`, `þu/du/tu` for `-u`.
-2484: - Sample `-i/-u` outputs: `ballu` (ball), `bebru` (beaver), `balgi` (belly), `crafti` (craft), `bugu` (bough).
-2485: - Sample `-ana` outputs where target is `-an`: `bacana` (bake), `gennana` (begin), `brecana` (break), `brengana` (bring), `brūcana` (brook).
-2486: 
-2487: ### OE diagnostics refresh (2025-12-21)
 ```
 
 #### Germanic/docs/DEV_NOTES.md:3151 (exact COUNTERPART)
@@ -229,6 +197,30 @@ _None_
 9188: - Expected: `*bakaną` → `bacan` (correct per R/T)
 9189: 
 9190: The `-an-` in strong verb infinitives is being fronted to `-en-`.
+```
+
+#### Germanic/docs/DEV_NOTES.md:9201 (exact COUNTERPART)
+
+- Nearby heading: ### Tracing the Rules
+
+```text
+9199:    - Result: `{*a}` → `{*æ}`
+9200: 4. `OEWeakTailReduction3` converts `{*æ}` → `{*e}` in unstressed position
+9201: 5. Final output: `bacen` instead of `bacan`
+9202: 
+9203: ### What R/T Says
+```
+
+#### Germanic/docs/DEV_NOTES.md:9206 (exact COUNTERPART)
+
+- Nearby heading: ### What R/T Says
+
+```text
+9204: 
+9205: R/T vol.2 shows:
+9206: - `*bakan → OE bacan` (infinitive preserves `-an`)
+9207: - Participle `*funðanăz → *funden` (participle fronts to `-en`)
+9208: 
 ```
 
 ### Analysis and dossier hits
@@ -390,6 +382,18 @@ _None_
 1791: - **Back/round proto rhotics earlier.** Expand `EnglishSandboxProtoRhoticFronting` to push `{*e, *i, *o}` toward `{æ, ɪ, ɔ}` before `{*r}` so `*bergą/*bardăz/*barwōn/*burdiz` feed the ME vowel system with the right backness, unlocking `barrow/beard/bier/birth` reflexes.
 ```
 
+#### Germanic/docs/DEV_NOTES.md:2485 (concept name)
+
+- Nearby heading: ### Ending diagnostics (old_english.bin)
+
+```text
+2483: - Final high vowels: `i` 22, `u` 20; most common contexts `ti/di` for `-i`, `þu/du/tu` for `-u`.
+2484: - Sample `-i/-u` outputs: `ballu` (ball), `bebru` (beaver), `balgi` (belly), `crafti` (craft), `bugu` (bough).
+2485: - Sample `-ana` outputs where target is `-an`: `bacana` (bake), `gennana` (begin), `brecana` (break), `brengana` (bring), `brūcana` (brook).
+2486: 
+2487: ### OE diagnostics refresh (2025-12-21)
+```
+
 #### Germanic/docs/DEV_NOTES.md:9538 (concept name)
 
 - Nearby heading: ### Empirical Validation (Dry Run 2026-03-13)
@@ -437,7 +441,6 @@ _None_
 | Key | Why it was selected |
 | :--- | :--- |
 | Campbell1959 | single available key for Campbell |
-| Mayrhofer1992 | single available key for Mayrhofer |
 
 ### Low-confidence candidates
 

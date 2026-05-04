@@ -47,17 +47,7 @@ _None_
 
 ### DEV_NOTES hits
 
-#### Germanic/docs/DEV_NOTES.md:1718 (exact pair)
-
-- Nearby heading: ## A-Restoration Fix (2026-02-06)
-
-```text
-1716:   - **Fronting undone by A‑restoration**: *nadrō (adder) fronting yields `*æ`, but `OldEnglishARestoration` flips it back due to a back vowel in the next syllable; output `nadrō` vs expected `nǣdre`. Consistent across `fronting_missing_no_trigger`.
-1717:   - **Breaking gaps**: *brustz (breast) shows no u‑breaking; output `brust` vs expected `brēost`. *dawwō (dew) passes A‑F brightening (`*æw`) but `EnglishBreakingA` lacks a `w` context; output `dawō` vs expected `dēaw`.
-1718:   - **Palatalization missing**: *bōkō (beech) never triggers `VelarPalatalization`; output `bōcō` vs expected `bēċe`. In the trace there is no fronting stage that would supply the trigger, so this is likely a rule/chronology or etymon/expected mismatch.
-1719: - Measured ARestoration intervening segments (2026-02-05, OE sandbox):
-1720:   - True positives (31 items): top intervening segments `n, k, w, d, j` (e.g., *bakăną -> bacan, inter=`k`; *xanduz -> hand, inter=`nd`).
-```
+_None_
 
 ### Analysis and dossier hits
 
@@ -135,6 +125,18 @@ _None_
 ## Possibly stale or diagnostic evidence
 
 ### DEV_NOTES hits
+
+#### Germanic/docs/DEV_NOTES.md:1718 (exact PROTOFORM)
+
+- Nearby heading: ## A-Restoration Fix (2026-02-06)
+
+```text
+1716:   - **Fronting undone by A‑restoration**: *nadrō (adder) fronting yields `*æ`, but `OldEnglishARestoration` flips it back due to a back vowel in the next syllable; output `nadrō` vs expected `nǣdre`. Consistent across `fronting_missing_no_trigger`.
+1717:   - **Breaking gaps**: *brustz (breast) shows no u‑breaking; output `brust` vs expected `brēost`. *dawwō (dew) passes A‑F brightening (`*æw`) but `EnglishBreakingA` lacks a `w` context; output `dawō` vs expected `dēaw`.
+1718:   - **Palatalization missing**: *bōkō (beech) never triggers `VelarPalatalization`; output `bōcō` vs expected `bēċe`. In the trace there is no fronting stage that would supply the trigger, so this is likely a rule/chronology or etymon/expected mismatch.
+1719: - Measured ARestoration intervening segments (2026-02-05, OE sandbox):
+1720:   - True positives (31 items): top intervening segments `n, k, w, d, j` (e.g., *bakăną -> bacan, inter=`k`; *xanduz -> hand, inter=`nd`).
+```
 
 #### Germanic/docs/DEV_NOTES.md:1725 (exact PROTOFORM)
 

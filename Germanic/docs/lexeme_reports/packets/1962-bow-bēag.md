@@ -47,18 +47,6 @@ _None_
 
 ### DEV_NOTES hits
 
-#### Germanic/docs/DEV_NOTES.md:1462 (concept name)
-
-- Nearby heading: ## Project Status (as of 2026-04-30) — research phase complete
-
-```text
-1460:   (`widuwe-u-preservation.md` Appendix D, `un-to-on-chronology.md`,
-1461:   `bugun-scufun-attestation.md`, `bugan-scufan-paradigm-cell-review.md`),
-1462:   and retargeted the bow/shove cogset rows from 3pl pret. (analogical
-1463:   overlay) to 1/3 sg pret. (genuinely Lautgesetzlich + universally
-1464:   attested: `*báug → bēag`, `*skáub → sċēaf`).
-```
-
 #### Germanic/docs/DEV_NOTES.md:1463 (note keyword: 1/3 sg pret.)
 
 - Nearby heading: ## Project Status (as of 2026-04-30) — research phase complete
@@ -211,6 +199,18 @@ _None_
 
 ### DEV_NOTES hits
 
+#### Germanic/docs/DEV_NOTES.md:1462 (concept name)
+
+- Nearby heading: ## Project Status (as of 2026-04-30) — research phase complete
+
+```text
+1460:   (`widuwe-u-preservation.md` Appendix D, `un-to-on-chronology.md`,
+1461:   `bugun-scufun-attestation.md`, `bugan-scufan-paradigm-cell-review.md`),
+1462:   and retargeted the bow/shove cogset rows from 3pl pret. (analogical
+1463:   overlay) to 1/3 sg pret. (genuinely Lautgesetzlich + universally
+1464:   attested: `*báug → bēag`, `*skáub → sċēaf`).
+```
+
 #### Germanic/docs/DEV_NOTES.md:14363 (concept name)
 
 - Nearby heading: ### The Problem
@@ -245,42 +245,6 @@ _None_
 14489: > "*beugan- ~ *būgan- s.v. 'to bow, bend'"
 14490: 
 14491: Kroonen lists both variants, showing that `*būgan-` (with long `ū`) coexisted 
-```
-
-#### Germanic/docs/DEV_NOTES.md:26621 (exact PROTOFORM)
-
-- Nearby heading: ### §17.10.35 *wīθijaz → wīþ (expected wīþiġ): wrong suffix etymology
-
-```text
-26619:   Row  PROTOFORM         Current FST    Target           Status
-26620:   ──── ───────────────── ─────────────  ─────────────── ─────────────
-26621:   1961 *báugijaną        bīeġan         bīeġan          ✓ already correct
-26622:                                                           (via existing *gj→ʤ)
-26623:   1976 *kéwwaną          ċēowan         ċēowan          ✓ no *j present
-```
-
-#### Germanic/docs/DEV_NOTES.md:26648 (exact PROTOFORM)
-
-- Nearby heading: ### §17.10.35 *wīθijaz → wīþ (expected wīþiġ): wrong suffix etymology
-
-```text
-26646:     *aww-, *eww- verbs and *Vw- nouns), or *ō intervenes between *w
-26647:     and *j (Class II *-ōjan-), or the form is already handled by an
-26648:     existing rule (*gj→ʤ for *báugijaną).
-26649: 
-26650: Rule scope
-```
-
-#### Germanic/docs/DEV_NOTES.md:26682 (exact PROTOFORM)
-
-- Nearby heading: ### §17.10.35 *wīθijaz → wīþ (expected wīþiġ): wrong suffix etymology
-
-```text
-26680:   Class II verbs  *skáwōjaną (row 2186) — *ō between        VERY LOW
-26681:                   *w and *j blocks rule                     (rule won't fire)
-26682:   Class I *gj/*kj *báugijaną (row 1961) — already handled   NONE (different
-26683:                   by existing *gj→ʤ; rule is *aw+j only      input shape)
-26684:   Class VII       *kéwwaną, *xáwwaną — no *j present         NONE
 ```
 
 #### Germanic/docs/DEV_NOTES.md:42903 (concept name)
