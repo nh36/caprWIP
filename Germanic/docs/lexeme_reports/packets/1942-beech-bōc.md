@@ -69,30 +69,6 @@ _None_
 1768:   - Bucket taxonomy update (2026-01-03): the report now splits the former `uncategorized` bucket into `palatal_marker_variant`, `epenthetic_vowel_missing`, `vowel_quality_other`, `gemination_extra`, and `consonant_mismatch_other`.
 ```
 
-#### Germanic/docs/DEV_NOTES.md:2478 (exact PROTOFORM)
-
-- Nearby heading: ### OE evaluator snapshot (old_english.bin)
-
-```text
-2476: - No output: 21
-2477: - Mismatches: 353
-2478: - Sample mismatches: `*bakăną -> bacana` vs `bacan`, `*bōkō -> bucō` vs `bēċe`, `*balgiz -> balgi` vs `bielġ`.
-2479: - Common issue bucket still dominated by `-ana` outputs and lingering final high vowels.
-2480: 
-```
-
-#### Germanic/docs/DEV_NOTES.md:2593 (exact PROTOFORM)
-
-- Nearby heading: ### OE palatalization vs fronting/umlaut split (2025-12-23)
-
-```text
-2591: - **True i‑umlaut misses (strict trigger):** only 1 case (`*rugiz → ryġe` expected, output `rūġ`).  
-2592:   The bulk of the “i‑umlaut/fronting missing” bucket is actually **fronting missing with no i/j trigger** (143 cases).
-2593: - **Next actions:** prioritize fronting/breaking changes that create front‑vowel contexts (esp. for *bōkō, *θankăz, *dranką, *fleugăną, *xunăgą), then re‑check palatalization buckets.
-2594: 
-2595: ### OE i‑umlaut/fronting bucket diagnostics (2026-01-01)
-```
-
 #### Germanic/docs/DEV_NOTES.md:20578 (exact PROTOFORM)
 
 - Nearby heading: ### §16.1 Inventory
@@ -160,6 +136,30 @@ _None_
 1795: - **Add the missing palatalisation pass.** Insert a dedicated `EnglishSandboxPalatalisation` stage (after West Germanic or glide deletion) that maps `{*bj→v}`, `{*gj→dʒ}`, `{*kj→tʃ}`, `{*sk→ʃ}` before front vowels. This captures the well-known West Saxon/Midlands changes needed for `believe/beech/chew/shield/ship` and collapses a large swath of remaining errors.
 1796: - Once these three TODOs land, rerun `tools/english_apply_down_stats.py` to confirm the “exactly one correct output” count climbs beyond the current ~20/376.
 1797: 
+```
+
+#### Germanic/docs/DEV_NOTES.md:2478 (exact PROTOFORM)
+
+- Nearby heading: ### OE evaluator snapshot (old_english.bin)
+
+```text
+2476: - No output: 21
+2477: - Mismatches: 353
+2478: - Sample mismatches: `*bakăną -> bacana` vs `bacan`, `*bōkō -> bucō` vs `bēċe`, `*balgiz -> balgi` vs `bielġ`.
+2479: - Common issue bucket still dominated by `-ana` outputs and lingering final high vowels.
+2480: 
+```
+
+#### Germanic/docs/DEV_NOTES.md:2593 (exact PROTOFORM)
+
+- Nearby heading: ### OE palatalization vs fronting/umlaut split (2025-12-23)
+
+```text
+2591: - **True i‑umlaut misses (strict trigger):** only 1 case (`*rugiz → ryġe` expected, output `rūġ`).  
+2592:   The bulk of the “i‑umlaut/fronting missing” bucket is actually **fronting missing with no i/j trigger** (143 cases).
+2593: - **Next actions:** prioritize fronting/breaking changes that create front‑vowel contexts (esp. for *bōkō, *θankăz, *dranką, *fleugăną, *xunăgą), then re‑check palatalization buckets.
+2594: 
+2595: ### OE i‑umlaut/fronting bucket diagnostics (2026-01-01)
 ```
 
 #### Germanic/docs/DEV_NOTES.md:2605 (exact PROTOFORM)

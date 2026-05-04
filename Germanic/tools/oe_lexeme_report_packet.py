@@ -73,10 +73,17 @@ DIAGNOSTIC_PATH_MARKERS = (
 ROW_ID_LABEL_RE_TEMPLATE = r"(?<!\w)(?:row|id|row_id)\s*[:=#-]?\s*{row_id}(?!\w)"
 FORM_BOUNDARY_RE = r"[\w\u0300-\u036f]"
 TARGET_MENTION_RE = re.compile(
-    r"\b(?:expected|target)\b"
-    r"(?:\s+(?:oe|current|surface|form|outcome))*"
+    r"(?:"
+    r"\b(?:expected|vs\.?|versus|instead\s+of)\b"
+    r"|"
+    r"\btarget\b(?:\s+(?:oe|current|surface|current-output|output|form|outcome))*"
+    r")"
     r"(?:\s*(?:=|:|->|→|is|was))?"
     r"\s*[`\"'“”‘’]?(?P<form>[^\s,;:()<>`\[\]\{\}\"'“”‘’]+)",
+    re.IGNORECASE,
+)
+SUPERSEDED_PROJECT_HISTORY_RE = re.compile(
+    r"\b(?:updated|changed|retargeted|switched|revised)\b.*\b(?:tsv|row|target|protoform|counterpart|use)\b",
     re.IGNORECASE,
 )
 
@@ -599,9 +606,29 @@ def superseded_target_forms(text: str) -> List[str]:
     return [normalize_target_form(match.group("form")) for match in TARGET_MENTION_RE.finditer(text)]
 
 
+def mentions_current_pair(text: str, row: AlignedRow) -> bool:
+    return form_match_line(text, row.protoform) and form_match_line(text, row.counterpart)
+
+
+def superseded_target_hit(hit: TextHit, row: AlignedRow) -> bool:
+    texts = [hit.matched_line, hit_combined_text(hit)]
+    current = normalize_target_form(row.counterpart)
+    for text in texts:
+        lowered = text.casefold()
+        if not (form_match_line(text, row.protoform) or explicit_row_id_match_text(text, row.row_id)):
+            continue
+        targets = [target for target in superseded_target_forms(text) if target]
+        if any(target != current for target in targets):
+            return True
+        if explicit_row_id_match_text(text, row.row_id):
+            if SUPERSEDED_PROJECT_HISTORY_RE.search(lowered) and not mentions_current_pair(text, row):
+                return True
+    return False
+
+
 def mentions_exact_pair(hit: TextHit, row: AlignedRow) -> bool:
     text = f"{hit.heading}\n{hit.snippet}"
-    return form_match_line(text, row.protoform) and form_match_line(text, row.counterpart)
+    return mentions_current_pair(text, row)
 
 
 def mentions_row_id(hit: TextHit, row: AlignedRow) -> bool:
@@ -619,11 +646,8 @@ def stale_diagnostic_hit(hit: TextHit, row: AlignedRow) -> bool:
         return True
     if hit.query_label == "concept name":
         return True
-    if form_match_line(text, row.protoform):
-        current = normalize_target_form(row.counterpart)
-        targets = [target for target in superseded_target_forms(text) if target]
-        if any(target != current for target in targets):
-            return True
+    if superseded_target_hit(hit, row):
+        return True
     if "former expected" in text or "old target" in text or "previous target" in text:
         return True
     return False

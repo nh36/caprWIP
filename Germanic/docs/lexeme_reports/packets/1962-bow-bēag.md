@@ -71,18 +71,6 @@ _None_
 1466: **Next phase: presentation.** Research is complete; project moves into
 ```
 
-#### Germanic/docs/DEV_NOTES.md:14508 (row ID)
-
-- Nearby heading: #### Resolution (2026-04-07)
-
-```text
-14506: 
-14507: **Updated TSV to use past 3pl forms instead of infinitives:**
-14508: - Row 1962: `*beugăną` → `*bugun`, target `būgan` → `bugon`
-14509: - Row 2184: `*skeubăną` → `*skubun`, target `sċūfan` → `scufon`
-14510: 
-```
-
 #### Germanic/docs/DEV_NOTES.md:43944 (row ID)
 
 - Nearby heading: #### §17.51.A1.4 — Paradigm-cell review and retargeting (būgan, sċūfan)
@@ -245,6 +233,18 @@ _None_
 14489: > "*beugan- ~ *būgan- s.v. 'to bow, bend'"
 14490: 
 14491: Kroonen lists both variants, showing that `*būgan-` (with long `ū`) coexisted 
+```
+
+#### Germanic/docs/DEV_NOTES.md:14508 (row ID)
+
+- Nearby heading: #### Resolution (2026-04-07)
+
+```text
+14506: 
+14507: **Updated TSV to use past 3pl forms instead of infinitives:**
+14508: - Row 1962: `*beugăną` → `*bugun`, target `būgan` → `bugon`
+14509: - Row 2184: `*skeubăną` → `*skubun`, target `sċūfan` → `scufon`
+14510: 
 ```
 
 #### Germanic/docs/DEV_NOTES.md:42903 (concept name)
