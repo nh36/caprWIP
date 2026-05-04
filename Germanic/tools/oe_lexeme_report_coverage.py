@@ -8,6 +8,12 @@ Policy:
 
 Ordinary regular rows with an empty NOTE and no manual report do not require a
 generated lexeme report.
+
+Coverage mapping policy:
+- The manifest in Germanic/docs/lexeme_reports/report_manifest.tsv is the
+  primary source of truth for row-to-report linkage.
+- Fuzzy matching is diagnostic only, and is run only for existing report files
+  that are not listed in the manifest.
 """
 
 from __future__ import annotations
@@ -22,6 +28,7 @@ from typing import Iterable
 
 
 EXCLUDED_REPORT_FILES = {
+    "coverage_audit.md",
     "implementation_report.md",
     "missing_bibliography_keys.md",
     "report_schema.md",
@@ -39,7 +46,9 @@ class OERow:
     derivation_class: str
     note: str
     history: str
-    report_paths: list[str] = field(default_factory=list)
+    manifest_report_paths: list[str] = field(default_factory=list)
+    manifest_statuses: list[str] = field(default_factory=list)
+    fuzzy_report_paths: list[str] = field(default_factory=list)
 
     @property
     def has_note(self) -> bool:
@@ -50,8 +59,16 @@ class OERow:
         return self.derivation_class != "regular"
 
     @property
+    def has_manifest_report(self) -> bool:
+        return bool(self.manifest_report_paths)
+
+    @property
+    def has_fuzzy_report(self) -> bool:
+        return bool(self.fuzzy_report_paths)
+
+    @property
     def has_manual_report(self) -> bool:
-        return bool(self.report_paths)
+        return self.has_manifest_report or self.has_fuzzy_report
 
     @property
     def requires_report(self) -> bool:
@@ -67,6 +84,39 @@ class OERow:
         if self.has_manual_report:
             reasons.append("manual_report")
         return ", ".join(reasons) if reasons else "none"
+
+    @property
+    def coverage_source(self) -> str:
+        if self.has_manifest_report:
+            return "manifest"
+        if self.has_fuzzy_report:
+            return "fuzzy"
+        return "-"
+
+    @property
+    def report_paths(self) -> list[str]:
+        if self.has_manifest_report:
+            return self.manifest_report_paths
+        if self.has_fuzzy_report:
+            return self.fuzzy_report_paths
+        return []
+
+    @property
+    def report_status(self) -> str:
+        if self.has_manifest_report:
+            return ", ".join(self.manifest_statuses)
+        return "-"
+
+
+@dataclass(frozen=True)
+class ManifestEntry:
+    row_id: str
+    concept: str
+    counterpart: str
+    protoform: str
+    derivation_class: str
+    report_path: str
+    status: str
 
 
 def slugify(text: str) -> str:
@@ -106,7 +156,112 @@ def load_report_files(reports_root: Path) -> list[Path]:
     )
 
 
-def occurrence_score(text: str, needle: str, *, code_weight: int, plain_weight: int) -> int:
+def load_manifest(manifest_path: Path) -> list[ManifestEntry]:
+    with manifest_path.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        expected = [
+            "ID",
+            "CONCEPT",
+            "COUNTERPART",
+            "PROTOFORM",
+            "DERIVATION_CLASS",
+            "REPORT_PATH",
+            "STATUS",
+        ]
+        if reader.fieldnames != expected:
+            raise SystemExit(
+                "Manifest header mismatch. Expected: " + "\t".join(expected)
+            )
+        entries: list[ManifestEntry] = []
+        for row in reader:
+            entries.append(
+                ManifestEntry(
+                    row_id=(row.get("ID") or "").strip(),
+                    concept=(row.get("CONCEPT") or "").strip(),
+                    counterpart=(row.get("COUNTERPART") or "").strip(),
+                    protoform=(row.get("PROTOFORM") or "").strip(),
+                    derivation_class=(row.get("DERIVATION_CLASS") or "").strip(),
+                    report_path=(row.get("REPORT_PATH") or "").strip(),
+                    status=(row.get("STATUS") or "").strip(),
+                )
+            )
+        return entries
+
+
+def apply_manifest(
+    rows: list[OERow],
+    manifest_entries: list[ManifestEntry],
+    reports_root: Path,
+    report_files: list[Path],
+) -> tuple[list[str], set[str]]:
+    rows_by_id = {row.row_id: row for row in rows}
+    existing_relpaths = {
+        path.relative_to(reports_root).as_posix(): path for path in report_files
+    }
+    seen_paths: set[str] = set()
+    diagnostics: list[str] = []
+    listed_paths: set[str] = set()
+
+    for entry in manifest_entries:
+        if not entry.row_id:
+            diagnostics.append(
+                f"Manifest entry with report path {entry.report_path or '[empty]'} has empty ID."
+            )
+            continue
+        row = rows_by_id.get(entry.row_id)
+        if row is None:
+            diagnostics.append(
+                f"Manifest row ID {entry.row_id} not found in OE TSV ({entry.report_path})."
+            )
+            continue
+
+        mismatches = []
+        if entry.concept != row.concept:
+            mismatches.append(f"CONCEPT manifest={entry.concept} tsv={row.concept}")
+        if entry.counterpart != row.counterpart:
+            mismatches.append(
+                f"COUNTERPART manifest={entry.counterpart} tsv={row.counterpart}"
+            )
+        if entry.protoform != row.protoform:
+            mismatches.append(
+                f"PROTOFORM manifest={entry.protoform} tsv={row.protoform}"
+            )
+        if entry.derivation_class != row.derivation_class:
+            mismatches.append(
+                "DERIVATION_CLASS "
+                f"manifest={entry.derivation_class} tsv={row.derivation_class}"
+            )
+        if mismatches:
+            diagnostics.append(
+                f"{entry.report_path} -> row {entry.row_id} metadata mismatch: "
+                + "; ".join(mismatches)
+            )
+            continue
+
+        if not entry.report_path:
+            diagnostics.append(f"Manifest row {entry.row_id} has empty REPORT_PATH.")
+            continue
+        if entry.report_path in seen_paths:
+            diagnostics.append(f"Manifest REPORT_PATH duplicated: {entry.report_path}")
+            continue
+        seen_paths.add(entry.report_path)
+        listed_paths.add(entry.report_path)
+
+        if entry.report_path not in existing_relpaths:
+            diagnostics.append(
+                f"Manifest report path not found on disk: {entry.report_path} (row {entry.row_id})"
+            )
+            continue
+
+        row.manifest_report_paths.append(entry.report_path)
+        row.manifest_statuses.append(entry.status or "-")
+
+    return diagnostics, listed_paths
+
+
+def occurrence_score(
+    text: str, needle: str, *, code_weight: int, plain_weight: int
+) -> int:
     if not needle:
         return 0
     lowered = needle.casefold()
@@ -134,7 +289,9 @@ def row_match_score(path: Path, text: str, row: OERow) -> int:
     return score
 
 
-def assign_reports(rows: list[OERow], report_files: Iterable[Path], reports_root: Path) -> tuple[list[str], list[str]]:
+def assign_fuzzy_diagnostics(
+    rows: list[OERow], report_files: Iterable[Path], reports_root: Path
+) -> tuple[list[str], list[str]]:
     ambiguous: list[str] = []
     unmatched: list[str] = []
 
@@ -142,15 +299,15 @@ def assign_reports(rows: list[OERow], report_files: Iterable[Path], reports_root
         text = path.read_text(encoding="utf-8").casefold()
         scored = [(row_match_score(path, text, row), row) for row in rows]
         scored = [(score, row) for score, row in scored if score > 0]
+        relpath = path.relative_to(reports_root).as_posix()
 
         if not scored:
-            unmatched.append(path.relative_to(reports_root).as_posix())
+            unmatched.append(relpath)
             continue
 
         scored.sort(key=lambda item: item[0], reverse=True)
         best_score = scored[0][0]
         best_rows = [row for score, row in scored if score == best_score]
-        relpath = path.relative_to(reports_root).as_posix()
 
         if len(best_rows) != 1:
             ambiguous.append(
@@ -159,7 +316,7 @@ def assign_reports(rows: list[OERow], report_files: Iterable[Path], reports_root
             )
             continue
 
-        best_rows[0].report_paths.append(relpath)
+        best_rows[0].fuzzy_report_paths.append(relpath)
 
     return ambiguous, unmatched
 
@@ -185,9 +342,10 @@ def row_summary(row: OERow) -> list[str]:
         row.counterpart,
         row.derivation_class,
         "yes" if row.has_note else "no",
-        "yes" if row.has_manual_report else "no",
-        row.requirement_basis,
+        row.coverage_source,
+        row.report_status,
         ", ".join(row.report_paths) if row.report_paths else "-",
+        row.requirement_basis,
     ]
 
 
@@ -201,8 +359,19 @@ def class_count_rows(rows: Iterable[OERow]) -> Counter[str]:
 def render_class_count_table(rows: list[OERow]) -> list[str]:
     total = class_count_rows(rows)
     required = class_count_rows([row for row in rows if row.requires_report])
-    covered = class_count_rows([row for row in rows if row.requires_report and row.has_manual_report])
-    missing = class_count_rows([row for row in rows if row.requires_report and not row.has_manual_report])
+    manifest = class_count_rows(
+        [row for row in rows if row.requires_report and row.has_manifest_report]
+    )
+    fuzzy_only = class_count_rows(
+        [
+            row
+            for row in rows
+            if row.requires_report and not row.has_manifest_report and row.has_fuzzy_report
+        ]
+    )
+    no_report = class_count_rows(
+        [row for row in rows if row.requires_report and not row.has_manual_report]
+    )
 
     classes = sorted(total)
     table_rows = []
@@ -212,12 +381,20 @@ def render_class_count_table(rows: list[OERow]) -> list[str]:
                 derivation_class,
                 total[derivation_class],
                 required[derivation_class],
-                covered[derivation_class],
-                missing[derivation_class],
+                manifest[derivation_class],
+                fuzzy_only[derivation_class],
+                no_report[derivation_class],
             ]
         )
     return render_table(
-        ["DERIVATION_CLASS", "Total rows", "Required", "Covered", "Missing"],
+        [
+            "DERIVATION_CLASS",
+            "Total rows",
+            "Required",
+            "Manifest-backed",
+            "Fuzzy-only",
+            "No report",
+        ],
         table_rows,
     )
 
@@ -236,9 +413,10 @@ def render_section(title: str, rows: list[OERow]) -> list[str]:
                 "Counterpart",
                 "DERIVATION_CLASS",
                 "NOTE?",
-                "Manual report?",
-                "Requirement basis",
+                "Coverage source",
+                "Report status",
                 "Report path(s)",
+                "Requirement basis",
             ],
             [row_summary(row) for row in rows],
         )
@@ -247,44 +425,61 @@ def render_section(title: str, rows: list[OERow]) -> list[str]:
     return lines
 
 
-def build_report(rows: list[OERow], ambiguous: list[str], unmatched: list[str]) -> str:
+def build_report(
+    rows: list[OERow],
+    manifest_entries: list[ManifestEntry],
+    manifest_diagnostics: list[str],
+    ambiguous: list[str],
+    unmatched: list[str],
+) -> str:
     required_rows = [row for row in rows if row.requires_report]
-    covered_required = [row for row in required_rows if row.has_manual_report]
-    missing_required = [row for row in required_rows if not row.has_manual_report]
-    regular_no_note_no_report = [
+    manifest_backed_required = [
+        row for row in required_rows if row.has_manifest_report
+    ]
+    fuzzy_only_required = [
+        row
+        for row in required_rows
+        if not row.has_manifest_report and row.has_fuzzy_report
+    ]
+    no_report_required = [
+        row for row in required_rows if not row.has_manual_report
+    ]
+    regular_empty_note_no_report_required = [
         row
         for row in rows
         if row.derivation_class == "regular" and not row.has_note and not row.has_manual_report
     ]
-    regular_note_required = [
-        row for row in rows if row.derivation_class == "regular" and row.has_note
-    ]
-    nonregular_no_note_required = [
-        row for row in rows if row.derivation_class != "regular" and not row.has_note
-    ]
-    manual_only_required = [
+    regular_empty_note_manual_present = [
         row
         for row in rows
         if row.derivation_class == "regular" and not row.has_note and row.has_manual_report
+    ]
+    regular_note_required = [
+        row for row in rows if row.derivation_class == "regular" and row.has_note
+    ]
+    nonregular_empty_note_required = [
+        row for row in rows if row.derivation_class != "regular" and not row.has_note
     ]
 
     lines = ["# Old English lexeme-report coverage audit", ""]
     lines.extend(
         [
             "- Total OE rows with real counterpart: " + str(len(rows)),
+            "- Manifest entries loaded: " + str(len(manifest_entries)),
             "- Rows requiring lexeme report: " + str(len(required_rows)),
-            "- Required rows already covered by manual pilot/full report: "
-            + str(len(covered_required)),
-            "- Required rows still missing manual pilot/full report: "
-            + str(len(missing_required)),
-            "- Regular rows with empty NOTE and no manual report (no report required): "
-            + str(len(regular_no_note_no_report)),
-            "- Regular rows with NOTE (short report required): "
+            "- Required rows with manifest-backed reports: "
+            + str(len(manifest_backed_required)),
+            "- Required rows with only fuzzy-matched reports: "
+            + str(len(fuzzy_only_required)),
+            "- Required rows with no report: " + str(len(no_report_required)),
+            "- Regular rows with empty NOTE and no report required: "
+            + str(len(regular_empty_note_no_report_required)),
+            "- Regular rows with empty NOTE but manual report present: "
+            + str(len(regular_empty_note_manual_present)),
+            "- Regular rows with NOTE (report required): "
             + str(len(regular_note_required)),
             "- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): "
-            + str(len(nonregular_no_note_required)),
-            "- Manual-only required rows (regular + empty NOTE + manual report): "
-            + str(len(manual_only_required)),
+            + str(len(nonregular_empty_note_required)),
             "",
             "## Counts by DERIVATION_CLASS",
             "",
@@ -293,49 +488,54 @@ def build_report(rows: list[OERow], ambiguous: list[str], unmatched: list[str]) 
     lines.extend(render_class_count_table(rows))
     lines.append("")
 
-    lines.extend(render_section("All rows requiring a lexeme report", required_rows))
-    lines.extend(render_section("Required rows already covered by pilot/full report", covered_required))
-    lines.extend(render_section("Required rows still missing a pilot/full report", missing_required))
     lines.extend(
         render_section(
-            "Regular rows with empty NOTE and no manual report (no report required)",
-            regular_no_note_no_report,
+            "Required rows with manifest-backed reports", manifest_backed_required
         )
     )
     lines.extend(
         render_section(
-            "Regular rows with NOTE (short report required)",
-            regular_note_required,
+            "Required rows with only fuzzy-matched reports", fuzzy_only_required
+        )
+    )
+    lines.extend(render_section("Required rows with no report", no_report_required))
+    lines.extend(
+        render_section(
+            "Regular rows with empty NOTE and no report required",
+            regular_empty_note_no_report_required,
         )
     )
     lines.extend(
         render_section(
-            "Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS)",
-            nonregular_no_note_required,
+            "Regular rows with empty NOTE but manual report present",
+            regular_empty_note_manual_present,
         )
     )
 
-    if manual_only_required:
-        lines.extend(
-            render_section(
-                "Manual-only required rows (regular, empty NOTE, manual report present)",
-                manual_only_required,
-            )
-        )
-
-    if ambiguous:
-        lines.append("## Ambiguous report-file matches")
+    if manifest_diagnostics:
+        lines.append("## Manifest diagnostics")
         lines.append("")
+        for item in manifest_diagnostics:
+            lines.append(f"- {item}")
+        lines.append("")
+
+    lines.append("## Ambiguous report files")
+    lines.append("")
+    if ambiguous:
         for item in ambiguous:
             lines.append(f"- {item}")
-        lines.append("")
+    else:
+        lines.append("_None_")
+    lines.append("")
 
+    lines.append("## Unmatched report files")
+    lines.append("")
     if unmatched:
-        lines.append("## Unmatched report files")
-        lines.append("")
         for item in unmatched:
             lines.append(f"- {item}")
-        lines.append("")
+    else:
+        lines.append("_None_")
+    lines.append("")
 
     return "\n".join(lines)
 
@@ -356,6 +556,16 @@ def main() -> None:
         help="Lexeme reports root (default: %(default)s)",
     )
     parser.add_argument(
+        "--manifest",
+        type=Path,
+        default=repo_root
+        / "Germanic"
+        / "docs"
+        / "lexeme_reports"
+        / "report_manifest.tsv",
+        help="Manifest TSV mapping report files to OE rows (default: %(default)s)",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         help="Optional output path. Defaults to stdout.",
@@ -365,8 +575,22 @@ def main() -> None:
     rows = load_oe_rows(args.tsv.expanduser().resolve())
     reports_root = args.reports_root.expanduser().resolve()
     report_files = load_report_files(reports_root)
-    ambiguous, unmatched = assign_reports(rows, report_files, reports_root)
-    report = build_report(rows, ambiguous, unmatched)
+    manifest_entries = load_manifest(args.manifest.expanduser().resolve())
+    manifest_diagnostics, listed_paths = apply_manifest(
+        rows, manifest_entries, reports_root, report_files
+    )
+
+    fuzzy_candidate_files = [
+        path
+        for path in report_files
+        if path.relative_to(reports_root).as_posix() not in listed_paths
+    ]
+    ambiguous, unmatched = assign_fuzzy_diagnostics(
+        rows, fuzzy_candidate_files, reports_root
+    )
+    report = build_report(
+        rows, manifest_entries, manifest_diagnostics, ambiguous, unmatched
+    )
 
     if args.output:
         output_path = args.output.expanduser().resolve()
