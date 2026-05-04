@@ -576,10 +576,10 @@ OEXsMerge [no-change]: *b*æ*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*æþ, *b*æ*þ
-OEGlideUToEo [no-change]: *b*æþ, *b*æ*þ
-OldEnglishRemoveStars: bæ*þ, bæþ
-OldEnglishSurface: bæþ
+OldEnglishOrthography: *b*æþ
+OEGlideUToEo [no-change]: *b*æþ
+OldEnglishRemoveStars: bæþ
+OldEnglishSurface [no-change]: bæþ
 
 --- beard ---
 PROTO: *bárdaz
@@ -1042,10 +1042,10 @@ OEXsMerge [no-change]: *b*ĕ*ʤ*í*n*n*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*ĕġ*í*n*n*a*n, *b*ĕ*ġ*í*n*n*a*n
-OEGlideUToEo [no-change]: *b*ĕġ*í*n*n*a*n, *b*ĕ*ġ*í*n*n*a*n
-OldEnglishRemoveStars: beġinnan, be*ġinnan
-OldEnglishSurface: beġinnan
+OldEnglishOrthography: *b*ĕġ*í*n*n*a*n
+OEGlideUToEo [no-change]: *b*ĕġ*í*n*n*a*n
+OldEnglishRemoveStars: beġinnan
+OldEnglishSurface [no-change]: beġinnan
 
 --- believe ---
 PROTO: *galáubijaną
@@ -1158,10 +1158,10 @@ OEXsMerge [no-change]: *ʤ*ĕ*l*īe*β*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*ĕ*l*īe*β*a*n, *ġ*ĕ*l*īe*β*a*n
-OEGlideUToEo [no-change]: ġ*ĕ*l*īe*β*a*n, *ġ*ĕ*l*īe*β*a*n
-OldEnglishRemoveStars: ġelīefan, *ġelīefan
-OldEnglishSurface: ġelīefan
+OldEnglishOrthography: ġ*ĕ*l*īe*β*a*n
+OEGlideUToEo [no-change]: ġ*ĕ*l*īe*β*a*n
+OldEnglishRemoveStars: ġelīefan
+OldEnglishSurface [no-change]: ġelīefan
 
 --- belly ---
 PROTO: *bálgiz
@@ -1274,10 +1274,10 @@ OEXsMerge [no-change]: *b*ie*l*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*ie*lġ, *b*ie*l*ġ
-OEGlideUToEo [no-change]: *b*ie*lġ, *b*ie*l*ġ
-OldEnglishRemoveStars: biel*ġ, bielġ
-OldEnglishSurface: bielġ
+OldEnglishOrthography: *b*ie*lġ
+OEGlideUToEo [no-change]: *b*ie*lġ
+OldEnglishRemoveStars: bielġ
+OldEnglishSurface [no-change]: bielġ
 
 --- bier ---
 PROTO: *bḗrō
@@ -2671,10 +2671,10 @@ OEXsMerge [no-change]: *b*īe*ʤ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*īeġ*a*n, *b*īe*ġ*a*n
-OEGlideUToEo [no-change]: *b*īeġ*a*n, *b*īe*ġ*a*n
-OldEnglishRemoveStars: bīeġan, bīe*ġan
-OldEnglishSurface: bīeġan
+OldEnglishOrthography: *b*īeġ*a*n
+OEGlideUToEo [no-change]: *b*īeġ*a*n
+OldEnglishRemoveStars: bīeġan
+OldEnglishSurface [no-change]: bīeġan
 
 --- bow ---
 PROTO: *búgô
@@ -3252,10 +3252,10 @@ OEXsMerge [no-change]: *b*r*ē*ʧ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*r*ē*ċ, *b*r*ēċ
-OEGlideUToEo [no-change]: *b*r*ē*ċ, *b*r*ēċ
-OldEnglishRemoveStars: brēċ, brē*ċ
-OldEnglishSurface: brēċ
+OldEnglishOrthography: *b*r*ēċ
+OEGlideUToEo [no-change]: *b*r*ēċ
+OldEnglishRemoveStars: brēċ
+OldEnglishSurface [no-change]: brēċ
 
 --- bride ---
 PROTO: *brūdiz
@@ -3833,10 +3833,10 @@ OEXsMerge [no-change]: *ʧ*ea*l*β
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *ċ*ea*l*β, ċ*ea*l*β
-OEGlideUToEo [no-change]: *ċ*ea*l*β, ċ*ea*l*β
-OldEnglishRemoveStars: ċealf, *ċealf
-OldEnglishSurface: ċealf
+OldEnglishOrthography: ċ*ea*l*β
+OEGlideUToEo [no-change]: ċ*ea*l*β
+OldEnglishRemoveStars: ċealf
+OldEnglishSurface [no-change]: ċealf
 
 --- chew ---
 PROTO: *kéwwaną
@@ -3949,10 +3949,10 @@ OEXsMerge [no-change]: *ʧ*ēo*w*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *ċ*ēo*w*a*n, ċ*ēo*w*a*n
-OEGlideUToEo [no-change]: *ċ*ēo*w*a*n, ċ*ēo*w*a*n
-OldEnglishRemoveStars: ċēowan, *ċēowan
-OldEnglishSurface: ċēowan
+OldEnglishOrthography: ċ*ēo*w*a*n
+OEGlideUToEo [no-change]: ċ*ēo*w*a*n
+OldEnglishRemoveStars: ċēowan
+OldEnglishSurface [no-change]: ċēowan
 
 --- climb ---
 PROTO: *klímbaną
@@ -4763,10 +4763,10 @@ OEXsMerge [no-change]: *d*æ*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *d*æġ, *d*æ*ġ
-OEGlideUToEo [no-change]: *d*æġ, *d*æ*ġ
-OldEnglishRemoveStars: dæġ, dæ*ġ
-OldEnglishSurface: dæġ
+OldEnglishOrthography: *d*æġ
+OEGlideUToEo [no-change]: *d*æġ
+OldEnglishRemoveStars: dæġ
+OldEnglishSurface [no-change]: dæġ
 
 --- deal ---
 PROTO: *dáiliz
@@ -5809,10 +5809,10 @@ OEXsMerge [no-change]: *d*r*e*n*ʧ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *d*r*e*n*ċ, *d*r*e*nċ
-OEGlideUToEo [no-change]: *d*r*e*n*ċ, *d*r*e*nċ
-OldEnglishRemoveStars: drenċ, dren*ċ
-OldEnglishSurface: drenċ
+OldEnglishOrthography: *d*r*e*nċ
+OEGlideUToEo [no-change]: *d*r*e*nċ
+OldEnglishRemoveStars: drenċ
+OldEnglishSurface [no-change]: drenċ
 
 --- drink ---
 PROTO: *drínkaną
@@ -6157,10 +6157,10 @@ OEXsMerge [no-change]: *éo*r*θ*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *éo*rþ*e, *éo*r*þ*e
-OEGlideUToEo [no-change]: *éo*rþ*e, *éo*r*þ*e
-OldEnglishRemoveStars: eor*þe, eorþe
-OldEnglishSurface: eorþe
+OldEnglishOrthography: *éo*rþ*e
+OEGlideUToEo [no-change]: *éo*rþ*e
+OldEnglishRemoveStars: eorþe
+OldEnglishSurface [no-change]: eorþe
 
 --- eat ---
 PROTO: *étaną
@@ -6854,10 +6854,10 @@ OEXsMerge [no-change]: *f*éo*x
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*éoh, *f*éo*h
-OEGlideUToEo [no-change]: *f*éoh, *f*éo*h
-OldEnglishRemoveStars: feo*h, feoh
-OldEnglishSurface: feoh
+OldEnglishOrthography: *f*éoh
+OEGlideUToEo [no-change]: *f*éoh
+OldEnglishRemoveStars: feoh
+OldEnglishSurface [no-change]: feoh
 
 --- fell ---
 PROTO: *féllą
@@ -7321,10 +7321,10 @@ OEXsMerge [no-change]: *f*éo*x*t*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*éoh*t*a*n, *f*éo*h*t*a*n
-OEGlideUToEo [no-change]: *f*éoh*t*a*n, *f*éo*h*t*a*n
-OldEnglishRemoveStars: feo*htan, feohtan
-OldEnglishSurface: feohtan
+OldEnglishOrthography: *f*éoh*t*a*n
+OEGlideUToEo [no-change]: *f*éoh*t*a*n
+OldEnglishRemoveStars: feohtan
+OldEnglishSurface [no-change]: feohtan
 
 --- finger ---
 PROTO: *fíngraz
@@ -7553,8 +7553,8 @@ OEXsMerge [no-change]: *f*í*ʃ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*í*sċ
-OEGlideUToEo [no-change]: *f*í*sċ
+OldEnglishOrthography: *f*ísċ
+OEGlideUToEo [no-change]: *f*ísċ
 OldEnglishRemoveStars: fisċ
 OldEnglishSurface [no-change]: fisċ
 
@@ -7901,10 +7901,10 @@ OEXsMerge [no-change]: *f*l*ēa*x
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*l*ēah, *f*l*ēa*h
-OEGlideUToEo [no-change]: *f*l*ēah, *f*l*ēa*h
-OldEnglishRemoveStars: flēah, flēa*h
-OldEnglishSurface: flēah
+OldEnglishOrthography: *f*l*ēah
+OEGlideUToEo [no-change]: *f*l*ēah
+OldEnglishRemoveStars: flēah
+OldEnglishSurface [no-change]: flēah
 
 --- flee ---
 PROTO: *fléuxaną
@@ -8133,8 +8133,8 @@ OEXsMerge [no-change]: *f*l*ǣ*ʃ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*l*ǣ*sċ
-OEGlideUToEo [no-change]: *f*l*ǣ*sċ
+OldEnglishOrthography: *f*l*ǣsċ
+OEGlideUToEo [no-change]: *f*l*ǣsċ
 OldEnglishRemoveStars: flǣsċ
 OldEnglishSurface [no-change]: flǣsċ
 
@@ -9643,10 +9643,10 @@ OEXsMerge [no-change]: *f*ú*r*x
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*ú*rh, *f*ú*r*h
-OEGlideUToEo [no-change]: *f*ú*rh, *f*ú*r*h
-OldEnglishRemoveStars: furh, fur*h
-OldEnglishSurface: furh
+OldEnglishOrthography: *f*ú*rh
+OEGlideUToEo [no-change]: *f*ú*rh
+OldEnglishRemoveStars: furh
+OldEnglishSurface [no-change]: furh
 
 --- gang ---
 PROTO: *gángaz
@@ -9992,10 +9992,10 @@ OEXsMerge [no-change]: *ʤ*i*f*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*i*f*t, *ġ*i*f*t
-OEGlideUToEo [no-change]: ġ*i*f*t, *ġ*i*f*t
-OldEnglishRemoveStars: ġift, *ġift
-OldEnglishSurface: ġift
+OldEnglishOrthography: ġ*i*f*t
+OEGlideUToEo [no-change]: ġ*i*f*t
+OldEnglishRemoveStars: ġift
+OldEnglishSurface [no-change]: ġift
 
 --- give ---
 PROTO: *gébaną
@@ -10109,10 +10109,10 @@ OEXsMerge [no-change]: *ʤ*íe*β*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*íe*β*a*n, *ġ*íe*β*a*n
-OEGlideUToEo [no-change]: ġ*íe*β*a*n, *ġ*íe*β*a*n
-OldEnglishRemoveStars: ġiefan, *ġiefan
-OldEnglishSurface: ġiefan
+OldEnglishOrthography: ġ*íe*β*a*n
+OEGlideUToEo [no-change]: ġ*íe*β*a*n
+OldEnglishRemoveStars: ġiefan
+OldEnglishSurface [no-change]: ġiefan
 
 --- god ---
 PROTO: *gúdą
@@ -11040,10 +11040,10 @@ OEXsMerge [no-change]: *ʤ*ie*s*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*ie*s*t, *ġ*ie*s*t
-OEGlideUToEo [no-change]: ġ*ie*s*t, *ġ*ie*s*t
-OldEnglishRemoveStars: ġiest, *ġiest
-OldEnglishSurface: ġiest
+OldEnglishOrthography: ġ*ie*s*t
+OEGlideUToEo [no-change]: ġ*ie*s*t
+OldEnglishRemoveStars: ġiest
+OldEnglishSurface [no-change]: ġiest
 
 --- hail ---
 PROTO: *xáglą
@@ -11156,10 +11156,10 @@ OEXsMerge [no-change]: *ç*æ*ʤ*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*æġ*l, *h*æ*ġ*l, h*æġ*l, h*æ*ġ*l
-OEGlideUToEo [no-change]: *h*æġ*l, *h*æ*ġ*l, h*æġ*l, h*æ*ġ*l
-OldEnglishRemoveStars: *hæġl, *hæ*ġl, hæġl, hæ*ġl
-OldEnglishSurface: hæġl
+OldEnglishOrthography: h*æġ*l
+OEGlideUToEo [no-change]: h*æġ*l
+OldEnglishRemoveStars: hæġl
+OldEnglishSurface [no-change]: hæġl
 
 --- hair ---
 PROTO: *xḗrą
@@ -11273,10 +11273,10 @@ OEXsMerge [no-change]: *ç*ǣ*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ǣ*r, h*ǣ*r
-OEGlideUToEo [no-change]: *h*ǣ*r, h*ǣ*r
-OldEnglishRemoveStars: *hǣr, hǣr
-OldEnglishSurface: hǣr
+OldEnglishOrthography: h*ǣ*r
+OEGlideUToEo [no-change]: h*ǣ*r
+OldEnglishRemoveStars: hǣr
+OldEnglishSurface [no-change]: hǣr
 
 --- hall ---
 PROTO: *xállō
@@ -11389,10 +11389,10 @@ OEXsMerge [no-change]: *ç*ea*l*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ea*l*l, h*ea*l*l
-OEGlideUToEo [no-change]: *h*ea*l*l, h*ea*l*l
-OldEnglishRemoveStars: *heall, heall
-OldEnglishSurface: heall
+OldEnglishOrthography: h*ea*l*l
+OEGlideUToEo [no-change]: h*ea*l*l
+OldEnglishRemoveStars: heall
+OldEnglishSurface [no-change]: heall
 
 --- hand ---
 PROTO: *xánduz
@@ -11505,10 +11505,10 @@ OEXsMerge [no-change]: *x*á*n*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*á*n*d, h*á*n*d
-OEGlideUToEo [no-change]: *h*á*n*d, h*á*n*d
-OldEnglishRemoveStars: *hand, hand
-OldEnglishSurface: hand
+OldEnglishOrthography: h*á*n*d
+OEGlideUToEo [no-change]: h*á*n*d
+OldEnglishRemoveStars: hand
+OldEnglishSurface [no-change]: hand
 
 --- handle ---
 PROTO: *xándlōjaną
@@ -11622,10 +11622,10 @@ OEXsMerge [no-change]: *x*á*n*d*l*i*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*á*n*d*l*i*a*n, h*á*n*d*l*i*a*n
-OEGlideUToEo [no-change]: *h*á*n*d*l*i*a*n, h*á*n*d*l*i*a*n
-OldEnglishRemoveStars: *handlian, handlian
-OldEnglishSurface: handlian
+OldEnglishOrthography: h*á*n*d*l*i*a*n
+OEGlideUToEo [no-change]: h*á*n*d*l*i*a*n
+OldEnglishRemoveStars: handlian
+OldEnglishSurface [no-change]: handlian
 
 --- harm ---
 PROTO: *xármaz
@@ -11738,10 +11738,10 @@ OEXsMerge [no-change]: *ç*ea*r*m
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ea*r*m, h*ea*r*m
-OEGlideUToEo [no-change]: *h*ea*r*m, h*ea*r*m
-OldEnglishRemoveStars: *hearm, hearm
-OldEnglishSurface: hearm
+OldEnglishOrthography: h*ea*r*m
+OEGlideUToEo [no-change]: h*ea*r*m
+OldEnglishRemoveStars: hearm
+OldEnglishSurface [no-change]: hearm
 
 --- harvest ---
 PROTO: *xárbistuz
@@ -11855,10 +11855,10 @@ OEXsMerge [no-change]: *ç*ie*r*β*e*s*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ie*r*β*e*s*t, h*ie*r*β*e*s*t
-OEGlideUToEo [no-change]: *h*ie*r*β*e*s*t, h*ie*r*β*e*s*t
-OldEnglishRemoveStars: *hierfest, hierfest
-OldEnglishSurface: hierfest
+OldEnglishOrthography: h*ie*r*β*e*s*t
+OEGlideUToEo [no-change]: h*ie*r*β*e*s*t
+OldEnglishRemoveStars: hierfest
+OldEnglishSurface [no-change]: hierfest
 
 --- haw ---
 PROTO: *xágô
@@ -11971,10 +11971,10 @@ OEXsMerge [no-change]: *ç*a*g*a
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*a*g*a, h*a*g*a
-OEGlideUToEo [no-change]: *h*a*g*a, h*a*g*a
-OldEnglishRemoveStars: *haga, haga
-OldEnglishSurface: haga
+OldEnglishOrthography: h*a*g*a
+OEGlideUToEo [no-change]: h*a*g*a
+OldEnglishRemoveStars: haga
+OldEnglishSurface [no-change]: haga
 
 --- hawk ---
 PROTO: *xábukaz
@@ -12087,10 +12087,10 @@ OEXsMerge [no-change]: *ç*a*β*o*k
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*a*β*o*k, h*a*β*o*k
-OEGlideUToEo [no-change]: *h*a*β*o*k, h*a*β*o*k
-OldEnglishRemoveStars: *hafoc, hafoc
-OldEnglishSurface: hafoc
+OldEnglishOrthography: h*a*β*o*k
+OEGlideUToEo [no-change]: h*a*β*o*k
+OldEnglishRemoveStars: hafoc
+OldEnglishSurface [no-change]: hafoc
 
 --- hay ---
 PROTO: *xáwwją
@@ -12203,10 +12203,10 @@ OEXsMerge [no-change]: *ç*īe*j
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*īeġ, *h*īe*ġ, h*īeġ, h*īe*ġ
-OEGlideUToEo [no-change]: *h*īeġ, *h*īe*ġ, h*īeġ, h*īe*ġ
-OldEnglishRemoveStars: *hīeġ, *hīe*ġ, hīeġ, hīe*ġ
-OldEnglishSurface: hīeġ
+OldEnglishOrthography: h*īeġ
+OEGlideUToEo [no-change]: h*īeġ
+OldEnglishRemoveStars: hīeġ
+OldEnglishSurface [no-change]: hīeġ
 
 --- hazel ---
 PROTO: *xáslaz
@@ -12319,10 +12319,10 @@ OEXsMerge [no-change]: *ç*æ*s*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*æ*s*l, h*æ*s*l
-OEGlideUToEo [no-change]: *h*æ*s*l, h*æ*s*l
-OldEnglishRemoveStars: *hæsl, hæsl
-OldEnglishSurface: hæsl
+OldEnglishOrthography: h*æ*s*l
+OEGlideUToEo [no-change]: h*æ*s*l
+OldEnglishRemoveStars: hæsl
+OldEnglishSurface [no-change]: hæsl
 
 --- head ---
 PROTO: *xáubudą
@@ -12435,10 +12435,10 @@ OEXsMerge [no-change]: *ç*ēa*β*o*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ēa*β*o*d, h*ēa*β*o*d
-OEGlideUToEo [no-change]: *h*ēa*β*o*d, h*ēa*β*o*d
-OldEnglishRemoveStars: *hēafod, hēafod
-OldEnglishSurface: hēafod
+OldEnglishOrthography: h*ēa*β*o*d
+OEGlideUToEo [no-change]: h*ēa*β*o*d
+OldEnglishRemoveStars: hēafod
+OldEnglishSurface [no-change]: hēafod
 
 --- heal ---
 PROTO: *xáilijaną
@@ -12551,10 +12551,10 @@ OEXsMerge [no-change]: *x*ǣ*l*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ǣ*l*a*n, h*ǣ*l*a*n
-OEGlideUToEo [no-change]: *h*ǣ*l*a*n, h*ǣ*l*a*n
-OldEnglishRemoveStars: *hǣlan, hǣlan
-OldEnglishSurface: hǣlan
+OldEnglishOrthography: h*ǣ*l*a*n
+OEGlideUToEo [no-change]: h*ǣ*l*a*n
+OldEnglishRemoveStars: hǣlan
+OldEnglishSurface [no-change]: hǣlan
 
 --- heart ---
 PROTO: *xértōn
@@ -12667,10 +12667,10 @@ OEXsMerge [no-change]: *ç*éo*r*t*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*éo*r*t*e, h*éo*r*t*e
-OEGlideUToEo [no-change]: *h*éo*r*t*e, h*éo*r*t*e
-OldEnglishRemoveStars: *heorte, heorte
-OldEnglishSurface: heorte
+OldEnglishOrthography: h*éo*r*t*e
+OEGlideUToEo [no-change]: h*éo*r*t*e
+OldEnglishRemoveStars: heorte
+OldEnglishSurface [no-change]: heorte
 
 --- hearth ---
 PROTO: *xérθaz
@@ -12783,10 +12783,10 @@ OEXsMerge [no-change]: *ç*éo*r*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*éo*rþ, *h*éo*r*þ, h*éo*rþ, h*éo*r*þ
-OEGlideUToEo [no-change]: *h*éo*rþ, *h*éo*r*þ, h*éo*rþ, h*éo*r*þ
-OldEnglishRemoveStars: *heor*þ, *heorþ, heor*þ, heorþ
-OldEnglishSurface: heorþ
+OldEnglishOrthography: h*éo*rþ
+OEGlideUToEo [no-change]: h*éo*rþ
+OldEnglishRemoveStars: heorþ
+OldEnglishSurface [no-change]: heorþ
 
 --- heath ---
 PROTO: *xáiθiz
@@ -12899,10 +12899,10 @@ OEXsMerge [no-change]: *x*ǣ*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ǣ*þ, *h*ǣþ, h*ǣ*þ, h*ǣþ
-OEGlideUToEo [no-change]: *h*ǣ*þ, *h*ǣþ, h*ǣ*þ, h*ǣþ
-OldEnglishRemoveStars: *hǣþ, *hǣ*þ, hǣþ, hǣ*þ
-OldEnglishSurface: hǣþ
+OldEnglishOrthography: h*ǣþ
+OEGlideUToEo [no-change]: h*ǣþ
+OldEnglishRemoveStars: hǣþ
+OldEnglishSurface [no-change]: hǣþ
 
 --- hedge ---
 PROTO: *xágjaz
@@ -13016,10 +13016,10 @@ OEXsMerge [no-change]: *ç*e*ʤ*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*eġ*ġ, *h*eġġ, *h*e*ġ*ġ, *h*e*ġġ, h*eġ*ġ, h*eġġ, h*e*ġ*ġ, h*e*ġġ
-OEGlideUToEo [no-change]: *h*eġ*ġ, *h*eġġ, *h*e*ġ*ġ, *h*e*ġġ, h*eġ*ġ, h*eġġ, h*e*ġ*ġ, h*e*ġġ
-OldEnglishRemoveStars: *heġ*ġ, *heġġ, *he*ġ*ġ, *he*ġġ, heġ*ġ, heġġ, he*ġ*ġ, he*ġġ
-OldEnglishSurface: heġġ
+OldEnglishOrthography: h*eġġ
+OEGlideUToEo [no-change]: h*eġġ
+OldEnglishRemoveStars: heġġ
+OldEnglishSurface [no-change]: heġġ
 
 --- helm ---
 PROTO: *xélmaz
@@ -13133,10 +13133,10 @@ OEXsMerge [no-change]: *ç*é*l*m
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*é*l*m, h*é*l*m
-OEGlideUToEo [no-change]: *h*é*l*m, h*é*l*m
-OldEnglishRemoveStars: *helm, helm
-OldEnglishSurface: helm
+OldEnglishOrthography: h*é*l*m
+OEGlideUToEo [no-change]: h*é*l*m
+OldEnglishRemoveStars: helm
+OldEnglishSurface [no-change]: helm
 
 --- help ---
 PROTO: *xélpaną
@@ -13250,10 +13250,10 @@ OEXsMerge [no-change]: *ç*é*l*p*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*é*l*p*a*n, h*é*l*p*a*n
-OEGlideUToEo [no-change]: *h*é*l*p*a*n, h*é*l*p*a*n
-OldEnglishRemoveStars: *helpan, helpan
-OldEnglishSurface: helpan
+OldEnglishOrthography: h*é*l*p*a*n
+OEGlideUToEo [no-change]: h*é*l*p*a*n
+OldEnglishRemoveStars: helpan
+OldEnglishSurface [no-change]: helpan
 
 --- help ---
 PROTO: *xélpō
@@ -13366,10 +13366,10 @@ OEXsMerge [no-change]: *ç*é*l*p
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*é*l*p, h*é*l*p
-OEGlideUToEo [no-change]: *h*é*l*p, h*é*l*p
-OldEnglishRemoveStars: *help, help
-OldEnglishSurface: help
+OldEnglishOrthography: h*é*l*p
+OEGlideUToEo [no-change]: h*é*l*p
+OldEnglishRemoveStars: help
+OldEnglishSurface [no-change]: help
 
 --- herd ---
 PROTO: *xérdō
@@ -13482,10 +13482,10 @@ OEXsMerge [no-change]: *ç*éo*r*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*éo*r*d, h*éo*r*d
-OEGlideUToEo [no-change]: *h*éo*r*d, h*éo*r*d
-OldEnglishRemoveStars: *heord, heord
-OldEnglishSurface: heord
+OldEnglishOrthography: h*éo*r*d
+OEGlideUToEo [no-change]: h*éo*r*d
+OldEnglishRemoveStars: heord
+OldEnglishSurface [no-change]: heord
 
 --- hew ---
 PROTO: *xáwwaną
@@ -13598,10 +13598,10 @@ OEXsMerge [no-change]: *ç*ḗa*w*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ḗa*w*a*n, h*ḗa*w*a*n
-OEGlideUToEo [no-change]: *h*ḗa*w*a*n, h*ḗa*w*a*n
-OldEnglishRemoveStars: *hēawan, hēawan
-OldEnglishSurface: hēawan
+OldEnglishOrthography: h*ḗa*w*a*n
+OEGlideUToEo [no-change]: h*ḗa*w*a*n
+OldEnglishRemoveStars: hēawan
+OldEnglishSurface [no-change]: hēawan
 
 --- hind ---
 PROTO: *xéndjō
@@ -13715,10 +13715,10 @@ OEXsMerge [no-change]: *ç*i*n*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*i*n*d, h*i*n*d
-OEGlideUToEo [no-change]: *h*i*n*d, h*i*n*d
-OldEnglishRemoveStars: *hind, hind
-OldEnglishSurface: hind
+OldEnglishOrthography: h*i*n*d
+OEGlideUToEo [no-change]: h*i*n*d
+OldEnglishRemoveStars: hind
+OldEnglishSurface [no-change]: hind
 
 --- hoard ---
 PROTO: *xúzdą
@@ -13831,10 +13831,10 @@ OEXsMerge [no-change]: *x*ó*r*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ó*r*d, h*ó*r*d
-OEGlideUToEo [no-change]: *h*ó*r*d, h*ó*r*d
-OldEnglishRemoveStars: *hord, hord
-OldEnglishSurface: hord
+OldEnglishOrthography: h*ó*r*d
+OEGlideUToEo [no-change]: h*ó*r*d
+OldEnglishRemoveStars: hord
+OldEnglishSurface [no-change]: hord
 
 --- hold ---
 PROTO: *xáldaną
@@ -13948,10 +13948,10 @@ OEXsMerge [no-change]: *ç*ea*l*d*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ea*l*d*a*n, h*ea*l*d*a*n
-OEGlideUToEo [no-change]: *h*ea*l*d*a*n, h*ea*l*d*a*n
-OldEnglishRemoveStars: *healdan, healdan
-OldEnglishSurface: healdan
+OldEnglishOrthography: h*ea*l*d*a*n
+OEGlideUToEo [no-change]: h*ea*l*d*a*n
+OldEnglishRemoveStars: healdan
+OldEnglishSurface [no-change]: healdan
 
 --- home ---
 PROTO: *xáimaz
@@ -14064,10 +14064,10 @@ OEXsMerge [no-change]: *x*ā*m
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ā*m, h*ā*m
-OEGlideUToEo [no-change]: *h*ā*m, h*ā*m
-OldEnglishRemoveStars: *hām, hām
-OldEnglishSurface: hām
+OldEnglishOrthography: h*ā*m
+OEGlideUToEo [no-change]: h*ā*m
+OldEnglishRemoveStars: hām
+OldEnglishSurface [no-change]: hām
 
 --- honey ---
 PROTO: *xúnagą
@@ -14180,10 +14180,10 @@ OEXsMerge [no-change]: *x*ú*n*i*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ú*n*iġ, *h*ú*n*i*ġ, h*ú*n*iġ, h*ú*n*i*ġ
-OEGlideUToEo [no-change]: *h*ú*n*iġ, *h*ú*n*i*ġ, h*ú*n*iġ, h*ú*n*i*ġ
-OldEnglishRemoveStars: *huniġ, *huni*ġ, huniġ, huni*ġ
-OldEnglishSurface: huniġ
+OldEnglishOrthography: h*ú*n*iġ
+OEGlideUToEo [no-change]: h*ú*n*iġ
+OldEnglishRemoveStars: huniġ
+OldEnglishSurface [no-change]: huniġ
 
 --- hood ---
 PROTO: *xōdaz
@@ -14296,10 +14296,10 @@ OEXsMerge [no-change]: *x*ō*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ō*d, h*ō*d
-OEGlideUToEo [no-change]: *h*ō*d, h*ō*d
-OldEnglishRemoveStars: *hōd, hōd
-OldEnglishSurface: hōd
+OldEnglishOrthography: h*ō*d
+OEGlideUToEo [no-change]: h*ō*d
+OldEnglishRemoveStars: hōd
+OldEnglishSurface [no-change]: hōd
 
 --- hoof ---
 PROTO: *xōfaz
@@ -14412,10 +14412,10 @@ OEXsMerge [no-change]: *x*ō*f
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ō*f, h*ō*f
-OEGlideUToEo [no-change]: *h*ō*f, h*ō*f
-OldEnglishRemoveStars: *hōf, hōf
-OldEnglishSurface: hōf
+OldEnglishOrthography: h*ō*f
+OEGlideUToEo [no-change]: h*ō*f
+OldEnglishRemoveStars: hōf
+OldEnglishSurface [no-change]: hōf
 
 --- horn ---
 PROTO: *xúrną
@@ -14529,10 +14529,10 @@ OEXsMerge [no-change]: *x*ó*r*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ó*r*n, h*ó*r*n
-OEGlideUToEo [no-change]: *h*ó*r*n, h*ó*r*n
-OldEnglishRemoveStars: *horn, horn
-OldEnglishSurface: horn
+OldEnglishOrthography: h*ó*r*n
+OEGlideUToEo [no-change]: h*ó*r*n
+OldEnglishRemoveStars: horn
+OldEnglishSurface [no-change]: horn
 
 --- hound ---
 PROTO: *xúndaz
@@ -14645,10 +14645,10 @@ OEXsMerge [no-change]: *x*ú*n*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ú*n*d, h*ú*n*d
-OEGlideUToEo [no-change]: *h*ú*n*d, h*ú*n*d
-OldEnglishRemoveStars: *hund, hund
-OldEnglishSurface: hund
+OldEnglishOrthography: h*ú*n*d
+OEGlideUToEo [no-change]: h*ú*n*d
+OldEnglishRemoveStars: hund
+OldEnglishSurface [no-change]: hund
 
 --- knead ---
 PROTO: *knédaną
@@ -15575,10 +15575,10 @@ OEXsMerge [no-change]: *l*é*θ*e*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*é*þ*e*r, *l*éþ*e*r
-OEGlideUToEo [no-change]: *l*é*þ*e*r, *l*éþ*e*r
-OldEnglishRemoveStars: le*þer, leþer
-OldEnglishSurface: leþer
+OldEnglishOrthography: *l*éþ*e*r
+OEGlideUToEo [no-change]: *l*éþ*e*r
+OldEnglishRemoveStars: leþer
+OldEnglishSurface [no-change]: leþer
 
 --- leek ---
 PROTO: *láukaz
@@ -16040,10 +16040,10 @@ OEXsMerge [no-change]: *x*l*í*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*l*í*d, h*l*í*d
-OEGlideUToEo [no-change]: *h*l*í*d, h*l*í*d
-OldEnglishRemoveStars: *hlid, hlid
-OldEnglishSurface: hlid
+OldEnglishOrthography: h*l*í*d
+OEGlideUToEo [no-change]: h*l*í*d
+OldEnglishRemoveStars: hlid
+OldEnglishSurface [no-change]: hlid
 
 --- life ---
 PROTO: *lḯbą
@@ -16273,10 +16273,10 @@ OEXsMerge [no-change]: *l*īe*x*t*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*īe*h*t*a*n, *l*īeh*t*a*n
-OEGlideUToEo [no-change]: *l*īe*h*t*a*n, *l*īeh*t*a*n
-OldEnglishRemoveStars: līe*htan, līehtan
-OldEnglishSurface: līehtan
+OldEnglishOrthography: *l*īeh*t*a*n
+OEGlideUToEo [no-change]: *l*īeh*t*a*n
+OldEnglishRemoveStars: līehtan
+OldEnglishSurface [no-change]: līehtan
 
 --- lime ---
 PROTO: *lḯmą
@@ -16970,10 +16970,10 @@ OEXsMerge [no-change]: *l*ā*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*āþ, *l*ā*þ
-OEGlideUToEo [no-change]: *l*āþ, *l*ā*þ
-OldEnglishRemoveStars: lā*þ, lāþ
-OldEnglishSurface: lāþ
+OldEnglishOrthography: *l*āþ
+OEGlideUToEo [no-change]: *l*āþ
+OldEnglishRemoveStars: lāþ
+OldEnglishSurface [no-change]: lāþ
 
 --- lock ---
 PROTO: *lúką
@@ -18363,10 +18363,10 @@ OEXsMerge [no-change]: *m*i*x*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *m*ih*t, *m*i*h*t
-OEGlideUToEo [no-change]: *m*ih*t, *m*i*h*t
-OldEnglishRemoveStars: miht, mi*ht
-OldEnglishSurface: miht
+OldEnglishOrthography: *m*ih*t
+OEGlideUToEo [no-change]: *m*ih*t
+OldEnglishRemoveStars: miht
+OldEnglishSurface [no-change]: miht
 
 --- milk ---
 PROTO: *mélukz
@@ -18596,10 +18596,10 @@ OEXsMerge [no-change]: *m*ō*n*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *m*ō*n*aþ, *m*ō*n*a*þ
-OEGlideUToEo [no-change]: *m*ō*n*aþ, *m*ō*n*a*þ
-OldEnglishRemoveStars: mōnaþ, mōna*þ
-OldEnglishSurface: mōnaþ
+OldEnglishOrthography: *m*ō*n*aþ
+OEGlideUToEo [no-change]: *m*ō*n*aþ
+OldEnglishRemoveStars: mōnaþ
+OldEnglishSurface [no-change]: mōnaþ
 
 --- mood ---
 PROTO: *mōdaz
@@ -18945,10 +18945,10 @@ OEXsMerge [no-change]: *n*æ*ʤ*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *n*æġ*l, *n*æ*ġ*l
-OEGlideUToEo [no-change]: *n*æġ*l, *n*æ*ġ*l
-OldEnglishRemoveStars: næġl, næ*ġl
-OldEnglishSurface: næġl
+OldEnglishOrthography: *n*æġ*l
+OEGlideUToEo [no-change]: *n*æġ*l
+OldEnglishRemoveStars: næġl
+OldEnglishSurface [no-change]: næġl
 
 --- name ---
 PROTO: *námô
@@ -20339,10 +20339,10 @@ OEXsMerge [no-change]: *r*é*ʤ*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *r*éġ*n, *r*é*ġ*n
-OEGlideUToEo [no-change]: *r*éġ*n, *r*é*ġ*n
-OldEnglishRemoveStars: re*ġn, reġn
-OldEnglishSurface: reġn
+OldEnglishOrthography: *r*éġ*n
+OEGlideUToEo [no-change]: *r*éġ*n
+OldEnglishRemoveStars: reġn
+OldEnglishSurface [no-change]: reġn
 
 --- rainbow ---
 PROTO: *régna-bùgô
@@ -20455,10 +20455,10 @@ OEXsMerge [no-change]: *r*é*ʤ*n*b*o*g*a
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *r*éġ*n*b*o*g*a, *r*é*ġ*n*b*o*g*a
-OEGlideUToEo [no-change]: *r*éġ*n*b*o*g*a, *r*é*ġ*n*b*o*g*a
-OldEnglishRemoveStars: re*ġnboga, reġnboga
-OldEnglishSurface: reġnboga
+OldEnglishOrthography: *r*éġ*n*b*o*g*a
+OEGlideUToEo [no-change]: *r*éġ*n*b*o*g*a
+OldEnglishRemoveStars: reġnboga
+OldEnglishSurface [no-change]: reġnboga
 
 --- raven ---
 PROTO: *xrábnaz
@@ -20571,10 +20571,10 @@ OEXsMerge [no-change]: *x*r*æ*β*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*r*æ*β*n, h*r*æ*β*n
-OEGlideUToEo [no-change]: *h*r*æ*β*n, h*r*æ*β*n
-OldEnglishRemoveStars: *hræfn, hræfn
-OldEnglishSurface: hræfn
+OldEnglishOrthography: h*r*æ*β*n
+OEGlideUToEo [no-change]: h*r*æ*β*n
+OldEnglishRemoveStars: hræfn
+OldEnglishSurface [no-change]: hræfn
 
 --- read ---
 PROTO: *rḗdaną
@@ -21383,10 +21383,10 @@ OEXsMerge [no-change]: *r*ō*θ*o*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *r*ōþ*o*r, *r*ō*þ*o*r
-OEGlideUToEo [no-change]: *r*ōþ*o*r, *r*ō*þ*o*r
-OldEnglishRemoveStars: rō*þor, rōþor
-OldEnglishSurface: rōþor
+OldEnglishOrthography: *r*ōþ*o*r
+OEGlideUToEo [no-change]: *r*ōþ*o*r
+OldEnglishRemoveStars: rōþor
+OldEnglishSurface [no-change]: rōþor
 
 --- run ---
 PROTO: *rínnaną
@@ -21615,10 +21615,10 @@ OEXsMerge [no-change]: *r*y*ʤ*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *r*yġ*e, *r*y*ġ*e
-OEGlideUToEo [no-change]: *r*yġ*e, *r*y*ġ*e
-OldEnglishRemoveStars: ryġe, ry*ġe
-OldEnglishSurface: ryġe
+OldEnglishOrthography: *r*yġ*e
+OEGlideUToEo [no-change]: *r*yġ*e
+OldEnglishRemoveStars: ryġe
+OldEnglishSurface [no-change]: ryġe
 
 --- sail ---
 PROTO: *séglą
@@ -21731,10 +21731,10 @@ OEXsMerge [no-change]: *s*é*ʤ*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*éġ*l, *s*é*ġ*l
-OEGlideUToEo [no-change]: *s*éġ*l, *s*é*ġ*l
-OldEnglishRemoveStars: se*ġl, seġl
-OldEnglishSurface: seġl
+OldEnglishOrthography: *s*éġ*l
+OEGlideUToEo [no-change]: *s*éġ*l
+OldEnglishRemoveStars: seġl
+OldEnglishSurface [no-change]: seġl
 
 --- sake ---
 PROTO: *sákō
@@ -22311,10 +22311,10 @@ OEXsMerge [no-change]: *s*ē*ʧ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*ē*ċ*a*n, *s*ēċ*a*n
-OEGlideUToEo [no-change]: *s*ē*ċ*a*n, *s*ēċ*a*n
-OldEnglishRemoveStars: sēċan, sē*ċan
-OldEnglishSurface: sēċan
+OldEnglishOrthography: *s*ēċ*a*n
+OEGlideUToEo [no-change]: *s*ēċ*a*n
+OldEnglishRemoveStars: sēċan
+OldEnglishSurface [no-change]: sēċan
 
 --- send ---
 PROTO: *sándijaną
@@ -22775,8 +22775,8 @@ OEXsMerge [no-change]: *ʃ*ea*f*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ea*f*t
-OEGlideUToEo [no-change]: *sċ*ea*f*t
+OldEnglishOrthography: sċ*ea*f*t
+OEGlideUToEo [no-change]: sċ*ea*f*t
 OldEnglishRemoveStars: sċeaft
 OldEnglishSurface [no-change]: sċeaft
 
@@ -22891,8 +22891,8 @@ OEXsMerge [no-change]: *ʃ*á*m*u
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*á*m*u
-OEGlideUToEo [no-change]: *sċ*á*m*u
+OldEnglishOrthography: sċ*á*m*u
+OEGlideUToEo [no-change]: sċ*á*m*u
 OldEnglishRemoveStars: sċamu
 OldEnglishSurface [no-change]: sċamu
 
@@ -23007,8 +23007,8 @@ OEXsMerge [no-change]: *ʃ*íe*r*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*íe*r*a*n
-OEGlideUToEo [no-change]: *sċ*íe*r*a*n
+OldEnglishOrthography: sċ*íe*r*a*n
+OEGlideUToEo [no-change]: sċ*íe*r*a*n
 OldEnglishRemoveStars: sċieran
 OldEnglishSurface [no-change]: sċieran
 
@@ -23123,10 +23123,10 @@ OEXsMerge [no-change]: *ʃ*ēa*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ēaþ, *sċ*ēa*þ
-OEGlideUToEo [no-change]: *sċ*ēaþ, *sċ*ēa*þ
-OldEnglishRemoveStars: sċēa*þ, sċēaþ
-OldEnglishSurface: sċēaþ
+OldEnglishOrthography: sċ*ēaþ
+OEGlideUToEo [no-change]: sċ*ēaþ
+OldEnglishRemoveStars: sċēaþ
+OldEnglishSurface [no-change]: sċēaþ
 
 --- sheep ---
 PROTO: *skḗpą
@@ -23240,8 +23240,8 @@ OEXsMerge [no-change]: *ʃ*ēa*p
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ēa*p
-OEGlideUToEo [no-change]: *sċ*ēa*p
+OldEnglishOrthography: sċ*ēa*p
+OEGlideUToEo [no-change]: sċ*ēa*p
 OldEnglishRemoveStars: sċēap
 OldEnglishSurface [no-change]: sċēap
 
@@ -23356,8 +23356,8 @@ OEXsMerge [no-change]: *ʃ*íe*l*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*íe*l*d
-OEGlideUToEo [no-change]: *sċ*íe*l*d
+OldEnglishOrthography: sċ*íe*l*d
+OEGlideUToEo [no-change]: sċ*íe*l*d
 OldEnglishRemoveStars: sċield
 OldEnglishSurface [no-change]: sċield
 
@@ -23473,8 +23473,8 @@ OEXsMerge [no-change]: *ʃ*í*l*l*i*n*g
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*í*l*l*i*n*g
-OEGlideUToEo [no-change]: *sċ*í*l*l*i*n*g
+OldEnglishOrthography: sċ*í*l*l*i*n*g
+OEGlideUToEo [no-change]: sċ*í*l*l*i*n*g
 OldEnglishRemoveStars: sċilling
 OldEnglishSurface [no-change]: sċilling
 
@@ -23589,8 +23589,8 @@ OEXsMerge [no-change]: *ʃ*ḯ*n*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ḯ*n*a*n
-OEGlideUToEo [no-change]: *sċ*ḯ*n*a*n
+OldEnglishOrthography: sċ*ḯ*n*a*n
+OEGlideUToEo [no-change]: sċ*ḯ*n*a*n
 OldEnglishRemoveStars: sċīnan
 OldEnglishSurface [no-change]: sċīnan
 
@@ -23705,8 +23705,8 @@ OEXsMerge [no-change]: *ʃ*ó*f*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ó*f*l
-OEGlideUToEo [no-change]: *sċ*ó*f*l
+OldEnglishOrthography: sċ*ó*f*l
+OEGlideUToEo [no-change]: sċ*ó*f*l
 OldEnglishRemoveStars: sċofl
 OldEnglishSurface [no-change]: sċofl
 
@@ -23822,8 +23822,8 @@ OEXsMerge [no-change]: *ʃ*ḗa*w*i*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ḗa*w*i*a*n
-OEGlideUToEo [no-change]: *sċ*ḗa*w*i*a*n
+OldEnglishOrthography: sċ*ḗa*w*i*a*n
+OEGlideUToEo [no-change]: sċ*ḗa*w*i*a*n
 OldEnglishRemoveStars: sċēawian
 OldEnglishSurface [no-change]: sċēawian
 
@@ -23938,8 +23938,8 @@ OEXsMerge [no-change]: *ʃ*ū*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ū*r
-OEGlideUToEo [no-change]: *sċ*ū*r
+OldEnglishOrthography: sċ*ū*r
+OEGlideUToEo [no-change]: sċ*ū*r
 OldEnglishRemoveStars: sċūr
 OldEnglishSurface [no-change]: sċūr
 
@@ -24286,10 +24286,10 @@ OEXsMerge [no-change]: *s*e*n*ʤ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*e*nġ*a*n, *s*e*n*ġ*a*n
-OEGlideUToEo [no-change]: *s*e*nġ*a*n, *s*e*n*ġ*a*n
-OldEnglishRemoveStars: sen*ġan, senġan
-OldEnglishSurface: senġan
+OldEnglishOrthography: *s*e*nġ*a*n
+OEGlideUToEo [no-change]: *s*e*nġ*a*n
+OldEnglishRemoveStars: senġan
+OldEnglishSurface [no-change]: senġan
 
 --- sister ---
 PROTO: *swéstēr
@@ -27663,7 +27663,7 @@ OldEnglishSurface [no-change]: strēam
 --- stretch ---
 PROTO: *strákkijaną
 EXPECTED: streċċan
-OUTPUTS: streċċan, strecċan
+OUTPUTS: streċċan
 
 
 ## Section 1: Proto-Germanic consonant inheritance
@@ -27728,53 +27728,53 @@ OESecondaryNasalization: *s*t*r*æ*k*k*i*j*ą*n
 PGmcBAllophony [no-change]: *s*t*r*æ*k*k*i*j*ą*n
 SieversLawSyncope: *s*t*r*æ*k*k*j*ą*n
 OESkPalatalization [no-change]: *s*t*r*æ*k*k*j*ą*n
-OEVelarPalatalization: *s*t*r*æ*k*ʧ*j*ą*n, *s*t*r*æ*ʧ*ʧ*j*ą*n
-OEPostVelarWLoss [no-change]: *s*t*r*æ*k*ʧ*j*ą*n, *s*t*r*æ*ʧ*ʧ*j*ą*n
-OEWLossBeforeI [no-change]: *s*t*r*æ*k*ʧ*j*ą*n, *s*t*r*æ*ʧ*ʧ*j*ą*n
-OEIUmlaut: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEWsPalatalDiphthongization [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEJClusterCoalescence [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OENasalDissimilation [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEBackMutation [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEWsPalatalUmlaut [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEWeakTailNasalLoss [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEWeightMarkers [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEHighVowelApocope [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-NWGmcInStemNLoss [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEMedialSyncope [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OELAdjacentSyncope [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEDentalAssimilation [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEPreconsonantalDegemination [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEEarlyOShortening [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEUnstressedFrontingEarly [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OELateOShortening [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEUnstressedLongVowelShortening [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEUnstressedAEMerger [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEMedUnstressedILowering1 [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEMedUnstressedILowering [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEPrefixIReduction [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*r*e*k*ʧ*j*ą*n, *s*t*r*e*ʧ*ʧ*j*ą*n
-OEWeakTailReduction: *s*t*r*e*k*ʧ*j*a*n, *s*t*r*e*ʧ*ʧ*j*a*n
-OEJLossAfterHeavy: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEFinalGeminateSimplification [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEJStrengtheningAfterFrontDiphthong [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEIntervocalicJVocalization [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEUnstressedEIContraction [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEWeightCleanup [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEHLoss [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEContraction [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OERMetathesis [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEEpentheticVowel [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OELateUnstressedAgSuffix [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OECjCleanup [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
-OEXsMerge [no-change]: *s*t*r*e*k*ʧ*a*n, *s*t*r*e*ʧ*ʧ*a*n
+OEVelarPalatalization: *s*t*r*æ*ʧ*ʧ*j*ą*n
+OEPostVelarWLoss [no-change]: *s*t*r*æ*ʧ*ʧ*j*ą*n
+OEWLossBeforeI [no-change]: *s*t*r*æ*ʧ*ʧ*j*ą*n
+OEIUmlaut: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEWsPalatalDiphthongization [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEJClusterCoalescence [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OENasalDissimilation [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEBackMutation [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEWsPalatalUmlaut [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEWeakTailNasalLoss [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEWeightMarkers [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEHighVowelApocope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+NWGmcInStemNLoss [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEMedialSyncope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OELAdjacentSyncope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEDentalAssimilation [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEPreconsonantalDegemination [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEEarlyOShortening [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEUnstressedFrontingEarly [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OELateOShortening [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEUnstressedLongVowelShortening [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEUnstressedAEMerger [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEMedUnstressedILowering1 [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEMedUnstressedILowering [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEPrefixIReduction [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEPrefixAReductionLate [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEWeakTailReduction: *s*t*r*e*ʧ*ʧ*j*a*n
+OEJLossAfterHeavy: *s*t*r*e*ʧ*ʧ*a*n
+OEFinalGeminateSimplification [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEJStrengtheningAfterFrontDiphthong [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEIntervocalicJVocalization [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEUnstressedEIContraction [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEWeightCleanup [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEHLoss [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEContraction [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OERMetathesis [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEEpentheticVowel [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OELateUnstressedAgSuffix [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OECjCleanup [no-change]: *s*t*r*e*ʧ*ʧ*a*n
+OEXsMerge [no-change]: *s*t*r*e*ʧ*ʧ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*t*r*eċċ*a*n, *s*t*r*eċ*ċ*a*n, *s*t*r*e*kċ*a*n, *s*t*r*e*k*ċ*a*n, *s*t*r*e*ċċ*a*n, *s*t*r*e*ċ*ċ*a*n
-OEGlideUToEo [no-change]: *s*t*r*eċċ*a*n, *s*t*r*eċ*ċ*a*n, *s*t*r*e*kċ*a*n, *s*t*r*e*k*ċ*a*n, *s*t*r*e*ċċ*a*n, *s*t*r*e*ċ*ċ*a*n
-OldEnglishRemoveStars: streċċan, streċ*ċan, stre*ċċan, stre*ċ*ċan, strecċan, strec*ċan
-OldEnglishSurface: streċċan, strecċan
+OldEnglishOrthography: *s*t*r*eċċ*a*n
+OEGlideUToEo [no-change]: *s*t*r*eċċ*a*n
+OldEnglishRemoveStars: streċċan
+OldEnglishSurface [no-change]: streċċan
 
 --- string ---
 PROTO: *strángiz
@@ -27887,10 +27887,10 @@ OEXsMerge [no-change]: *s*t*r*e*n*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*t*r*e*nġ, *s*t*r*e*n*ġ
-OEGlideUToEo [no-change]: *s*t*r*e*nġ, *s*t*r*e*n*ġ
-OldEnglishRemoveStars: stren*ġ, strenġ
-OldEnglishSurface: strenġ
+OldEnglishOrthography: *s*t*r*e*nġ
+OEGlideUToEo [no-change]: *s*t*r*e*nġ
+OldEnglishRemoveStars: strenġ
+OldEnglishSurface [no-change]: strenġ
 
 --- stud ---
 PROTO: *stōdą
@@ -29283,10 +29283,10 @@ OEXsMerge [no-change]: *θ*é*ʤ*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*éġ*n, *þ*é*ġ*n, þ*éġ*n, þ*é*ġ*n
-OEGlideUToEo [no-change]: *þ*éġ*n, *þ*é*ġ*n, þ*éġ*n, þ*é*ġ*n
-OldEnglishRemoveStars: þe*ġn, þeġn, *þe*ġn, *þeġn
-OldEnglishSurface: þeġn
+OldEnglishOrthography: þ*éġ*n
+OEGlideUToEo [no-change]: þ*éġ*n
+OldEnglishRemoveStars: þeġn
+OldEnglishSurface [no-change]: þeġn
 
 --- thanks ---
 PROTO: *θánkaz
@@ -29399,10 +29399,10 @@ OEXsMerge [no-change]: *θ*á*n*k
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*á*n*k, þ*á*n*k
-OEGlideUToEo [no-change]: *þ*á*n*k, þ*á*n*k
-OldEnglishRemoveStars: þanc, *þanc
-OldEnglishSurface: þanc
+OldEnglishOrthography: þ*á*n*k
+OEGlideUToEo [no-change]: þ*á*n*k
+OldEnglishRemoveStars: þanc
+OldEnglishSurface [no-change]: þanc
 
 --- thatch ---
 PROTO: *θáką
@@ -29515,10 +29515,10 @@ OEXsMerge [no-change]: *θ*æ*k
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*æ*k, þ*æ*k
-OEGlideUToEo [no-change]: *þ*æ*k, þ*æ*k
-OldEnglishRemoveStars: þæc, *þæc
-OldEnglishSurface: þæc
+OldEnglishOrthography: þ*æ*k
+OEGlideUToEo [no-change]: þ*æ*k
+OldEnglishRemoveStars: þæc
+OldEnglishSurface [no-change]: þæc
 
 --- thief ---
 PROTO: *θéubaz
@@ -29631,10 +29631,10 @@ OEXsMerge [no-change]: *θ*ēo*β
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*ēo*β, þ*ēo*β
-OEGlideUToEo [no-change]: *þ*ēo*β, þ*ēo*β
-OldEnglishRemoveStars: þēof, *þēof
-OldEnglishSurface: þēof
+OldEnglishOrthography: þ*ēo*β
+OEGlideUToEo [no-change]: þ*ēo*β
+OldEnglishRemoveStars: þēof
+OldEnglishSurface [no-change]: þēof
 
 --- thing ---
 PROTO: *θíngą
@@ -29747,10 +29747,10 @@ OEXsMerge [no-change]: *θ*í*n*g
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*í*n*g, þ*í*n*g
-OEGlideUToEo [no-change]: *þ*í*n*g, þ*í*n*g
-OldEnglishRemoveStars: þing, *þing
-OldEnglishSurface: þing
+OldEnglishOrthography: þ*í*n*g
+OEGlideUToEo [no-change]: þ*í*n*g
+OldEnglishRemoveStars: þing
+OldEnglishSurface [no-change]: þing
 
 --- think ---
 PROTO: *θánkijaną
@@ -29864,10 +29864,10 @@ OEXsMerge [no-change]: *θ*e*n*ʧ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*e*n*ċ*a*n, *þ*e*nċ*a*n, þ*e*n*ċ*a*n, þ*e*nċ*a*n
-OEGlideUToEo [no-change]: *þ*e*n*ċ*a*n, *þ*e*nċ*a*n, þ*e*n*ċ*a*n, þ*e*nċ*a*n
-OldEnglishRemoveStars: þenċan, þen*ċan, *þenċan, *þen*ċan
-OldEnglishSurface: þenċan
+OldEnglishOrthography: þ*e*nċ*a*n
+OEGlideUToEo [no-change]: þ*e*nċ*a*n
+OldEnglishRemoveStars: þenċan
+OldEnglishSurface [no-change]: þenċan
 
 --- thirst ---
 PROTO: *θúrstuz
@@ -29980,10 +29980,10 @@ OEXsMerge [no-change]: *θ*ú*r*s*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*ú*r*s*t, þ*ú*r*s*t
-OEGlideUToEo [no-change]: *þ*ú*r*s*t, þ*ú*r*s*t
-OldEnglishRemoveStars: þurst, *þurst
-OldEnglishSurface: þurst
+OldEnglishOrthography: þ*ú*r*s*t
+OEGlideUToEo [no-change]: þ*ú*r*s*t
+OldEnglishRemoveStars: þurst
+OldEnglishSurface [no-change]: þurst
 
 --- thorn ---
 PROTO: *θúrnaz
@@ -30097,10 +30097,10 @@ OEXsMerge [no-change]: *θ*ó*r*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*ó*r*n, þ*ó*r*n
-OEGlideUToEo [no-change]: *þ*ó*r*n, þ*ó*r*n
-OldEnglishRemoveStars: þorn, *þorn
-OldEnglishSurface: þorn
+OldEnglishOrthography: þ*ó*r*n
+OEGlideUToEo [no-change]: þ*ó*r*n
+OldEnglishRemoveStars: þorn
+OldEnglishSurface [no-change]: þorn
 
 --- thrash ---
 PROTO: *θréskaną
@@ -30213,10 +30213,10 @@ OEXsMerge [no-change]: *θ*r*é*ʃ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*r*é*sċ*a*n, þ*r*é*sċ*a*n
-OEGlideUToEo [no-change]: *þ*r*é*sċ*a*n, þ*r*é*sċ*a*n
-OldEnglishRemoveStars: þresċan, *þresċan
-OldEnglishSurface: þresċan
+OldEnglishOrthography: þ*r*ésċ*a*n
+OEGlideUToEo [no-change]: þ*r*ésċ*a*n
+OldEnglishRemoveStars: þresċan
+OldEnglishSurface [no-change]: þresċan
 
 --- thunder ---
 PROTO: *θúnraz
@@ -30329,10 +30329,10 @@ OEXsMerge [no-change]: *θ*ú*n*o*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*ú*n*o*r, þ*ú*n*o*r
-OEGlideUToEo [no-change]: *þ*ú*n*o*r, þ*ú*n*o*r
-OldEnglishRemoveStars: þunor, *þunor
-OldEnglishSurface: þunor
+OldEnglishOrthography: þ*ú*n*o*r
+OEGlideUToEo [no-change]: þ*ú*n*o*r
+OldEnglishRemoveStars: þunor
+OldEnglishSurface [no-change]: þunor
 
 --- tick ---
 PROTO: *tíkkô
@@ -31609,10 +31609,10 @@ OEXsMerge [no-change]: *w*æ*ʤ*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *w*æġ*n, *w*æ*ġ*n
-OEGlideUToEo [no-change]: *w*æġ*n, *w*æ*ġ*n
-OldEnglishRemoveStars: wæġn, wæ*ġn
-OldEnglishSurface: wæġn
+OldEnglishOrthography: *w*æġ*n
+OEGlideUToEo [no-change]: *w*æġ*n
+OldEnglishRemoveStars: wæġn
+OldEnglishSurface [no-change]: wæġn
 
 --- warp ---
 PROTO: *wárpą
@@ -32425,10 +32425,10 @@ OEXsMerge [no-change]: *w*é*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *w*éġ, *w*é*ġ
-OEGlideUToEo [no-change]: *w*éġ, *w*é*ġ
-OldEnglishRemoveStars: we*ġ, weġ
-OldEnglishSurface: weġ
+OldEnglishOrthography: *w*éġ
+OEGlideUToEo [no-change]: *w*éġ
+OldEnglishRemoveStars: weġ
+OldEnglishSurface [no-change]: weġ
 
 --- weapon ---
 PROTO: *wḗpną
@@ -33122,10 +33122,10 @@ OEXsMerge [no-change]: *w*é*θ*e*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *w*éþ*e*r, *w*é*þ*e*r
-OEGlideUToEo [no-change]: *w*éþ*e*r, *w*é*þ*e*r
-OldEnglishRemoveStars: we*þer, weþer
-OldEnglishSurface: weþer
+OldEnglishOrthography: *w*éþ*e*r
+OEGlideUToEo [no-change]: *w*éþ*e*r
+OldEnglishRemoveStars: weþer
+OldEnglishSurface [no-change]: weþer
 
 --- while ---
 PROTO: *xwḯlō
@@ -33238,10 +33238,10 @@ OEXsMerge [no-change]: *x*w*ḯ*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*w*ḯ*l, h*w*ḯ*l
-OEGlideUToEo [no-change]: *h*w*ḯ*l, h*w*ḯ*l
-OldEnglishRemoveStars: *hwīl, hwīl
-OldEnglishSurface: hwīl
+OldEnglishOrthography: h*w*ḯ*l
+OEGlideUToEo [no-change]: h*w*ḯ*l
+OldEnglishRemoveStars: hwīl
+OldEnglishSurface [no-change]: hwīl
 
 --- whore ---
 PROTO: *xōrōn
@@ -33354,10 +33354,10 @@ OEXsMerge [no-change]: *x*ō*r*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*ō*r*e, h*ō*r*e
-OEGlideUToEo [no-change]: *h*ō*r*e, h*ō*r*e
-OldEnglishRemoveStars: *hōre, hōre
-OldEnglishSurface: hōre
+OldEnglishOrthography: h*ō*r*e
+OEGlideUToEo [no-change]: h*ō*r*e
+OldEnglishRemoveStars: hōre
+OldEnglishSurface [no-change]: hōre
 
 --- widow ---
 PROTO: *wíduwōn
@@ -33818,10 +33818,10 @@ OEXsMerge [no-change]: *w*i*x*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *w*ih*t, *w*i*h*t
-OEGlideUToEo [no-change]: *w*ih*t, *w*i*h*t
-OldEnglishRemoveStars: wi*ht, wiht
-OldEnglishSurface: wiht
+OldEnglishOrthography: *w*ih*t
+OEGlideUToEo [no-change]: *w*ih*t
+OldEnglishRemoveStars: wiht
+OldEnglishSurface [no-change]: wiht
 
 --- will ---
 PROTO: *wéljaną
@@ -34982,10 +34982,10 @@ OEXsMerge [no-change]: *ʤ*ea*r*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*ea*r*n, *ġ*ea*r*n
-OEGlideUToEo [no-change]: ġ*ea*r*n, *ġ*ea*r*n
-OldEnglishRemoveStars: ġearn, *ġearn
-OldEnglishSurface: ġearn
+OldEnglishOrthography: ġ*ea*r*n
+OEGlideUToEo [no-change]: ġ*ea*r*n
+OldEnglishRemoveStars: ġearn
+OldEnglishSurface [no-change]: ġearn
 
 --- year ---
 PROTO: *jḗrą
@@ -35098,10 +35098,10 @@ OEXsMerge [no-change]: *j*ēa*r
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *ġ*ēa*r, ġ*ēa*r
-OEGlideUToEo [no-change]: *ġ*ēa*r, ġ*ēa*r
-OldEnglishRemoveStars: *ġēar, ġēar
-OldEnglishSurface: ġēar
+OldEnglishOrthography: ġ*ēa*r
+OEGlideUToEo [no-change]: ġ*ēa*r
+OldEnglishRemoveStars: ġēar
+OldEnglishSurface [no-change]: ġēar
 
 --- yoke ---
 PROTO: *júką
@@ -35214,10 +35214,10 @@ OEXsMerge [no-change]: *j*éo*k
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *ġ*éo*k, ġ*éo*k
-OEGlideUToEo [no-change]: *ġ*éo*k, ġ*éo*k
-OldEnglishRemoveStars: *ġeoc, ġeoc
-OldEnglishSurface: ġeoc
+OldEnglishOrthography: ġ*éo*k
+OEGlideUToEo [no-change]: ġ*éo*k
+OldEnglishRemoveStars: ġeoc
+OldEnglishSurface [no-change]: ġeoc
 
 
 === DERIVATION_CLASS: early_analogy (35) ===
@@ -36150,10 +36150,10 @@ OEXsMerge [no-change]: *f*y*l*ʤ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*y*lġ*a*n, *f*y*l*ġ*a*n
-OEGlideUToEo [no-change]: *f*y*lġ*a*n, *f*y*l*ġ*a*n
-OldEnglishRemoveStars: fylġan, fyl*ġan
-OldEnglishSurface: fylġan
+OldEnglishOrthography: *f*y*lġ*a*n
+OEGlideUToEo [no-change]: *f*y*lġ*a*n
+OldEnglishRemoveStars: fylġan
+OldEnglishSurface [no-change]: fylġan
 
 --- gall ---
 PROTO: *gállô
@@ -36266,10 +36266,10 @@ OEXsMerge [no-change]: *ʤ*ea*l*l*a
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: ġ*ea*l*l*a, *ġ*ea*l*l*a
-OEGlideUToEo [no-change]: ġ*ea*l*l*a, *ġ*ea*l*l*a
-OldEnglishRemoveStars: ġealla, *ġealla
-OldEnglishSurface: ġealla
+OldEnglishOrthography: ġ*ea*l*l*a
+OEGlideUToEo [no-change]: ġ*ea*l*l*a
+OldEnglishRemoveStars: ġealla
+OldEnglishSurface [no-change]: ġealla
 
 --- knight ---
 PROTO: *knéxtaz
@@ -36383,10 +36383,10 @@ OEXsMerge [no-change]: *k*n*i*x*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *k*n*ih*t, *k*n*i*h*t
-OEGlideUToEo [no-change]: *k*n*ih*t, *k*n*i*h*t
-OldEnglishRemoveStars: cni*ht, cniht
-OldEnglishSurface: cniht
+OldEnglishOrthography: *k*n*ih*t
+OEGlideUToEo [no-change]: *k*n*ih*t
+OldEnglishRemoveStars: cniht
+OldEnglishSurface [no-change]: cniht
 
 --- lade ---
 PROTO: *xláðaną
@@ -36500,10 +36500,10 @@ OEXsMerge [no-change]: *x*l*a*d*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*l*a*d*a*n, h*l*a*d*a*n
-OEGlideUToEo [no-change]: *h*l*a*d*a*n, h*l*a*d*a*n
-OldEnglishRemoveStars: *hladan, hladan
-OldEnglishSurface: hladan
+OldEnglishOrthography: h*l*a*d*a*n
+OEGlideUToEo [no-change]: h*l*a*d*a*n
+OldEnglishRemoveStars: hladan
+OldEnglishSurface [no-change]: hladan
 
 --- lap ---
 PROTO: *láppô
@@ -36733,10 +36733,10 @@ OEXsMerge [no-change]: *x*l*ie*x*ç*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*l*iehh*a*n, *h*l*ieh*h*a*n, *h*l*ie*hh*a*n, *h*l*ie*h*h*a*n, h*l*iehh*a*n, h*l*ieh*h*a*n, h*l*ie*hh*a*n, h*l*ie*h*h*a*n
-OEGlideUToEo [no-change]: *h*l*iehh*a*n, *h*l*ieh*h*a*n, *h*l*ie*hh*a*n, *h*l*ie*h*h*a*n, h*l*iehh*a*n, h*l*ieh*h*a*n, h*l*ie*hh*a*n, h*l*ie*h*h*a*n
-OldEnglishRemoveStars: *hlieh*han, *hliehhan, *hlie*h*han, *hlie*hhan, hlieh*han, hliehhan, hlie*h*han, hlie*hhan
-OldEnglishSurface: hliehhan
+OldEnglishOrthography: h*l*iehh*a*n
+OEGlideUToEo [no-change]: h*l*iehh*a*n
+OldEnglishRemoveStars: hliehhan
+OldEnglishSurface [no-change]: hliehhan
 
 --- loam ---
 PROTO: *láimą
@@ -37199,10 +37199,10 @@ OEXsMerge [no-change]: *x*n*é*k*k*a
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*n*é*k*k*a, h*n*é*k*k*a
-OEGlideUToEo [no-change]: *h*n*é*k*k*a, h*n*é*k*k*a
-OldEnglishRemoveStars: *hnecca, hnecca
-OldEnglishSurface: hnecca
+OldEnglishOrthography: h*n*é*k*k*a
+OEGlideUToEo [no-change]: h*n*é*k*k*a
+OldEnglishRemoveStars: hnecca
+OldEnglishSurface [no-change]: hnecca
 
 --- needle ---
 PROTO: *nḗðlō
@@ -38366,10 +38366,10 @@ OEXsMerge [no-change]: *θ*ū*s*e*n*d
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*ū*s*e*n*d, þ*ū*s*e*n*d
-OEGlideUToEo [no-change]: *þ*ū*s*e*n*d, þ*ū*s*e*n*d
-OldEnglishRemoveStars: þūsend, *þūsend
-OldEnglishSurface: þūsend
+OldEnglishOrthography: þ*ū*s*e*n*d
+OEGlideUToEo [no-change]: þ*ū*s*e*n*d
+OldEnglishRemoveStars: þūsend
+OldEnglishSurface [no-change]: þūsend
 
 --- timber ---
 PROTO: *tímbrą
@@ -38834,10 +38834,10 @@ OEXsMerge [no-change]: *x*w*æ*l
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*w*æ*l, h*w*æ*l
-OEGlideUToEo [no-change]: *h*w*æ*l, h*w*æ*l
-OldEnglishRemoveStars: *hwæl, hwæl
-OldEnglishSurface: hwæl
+OldEnglishOrthography: h*w*æ*l
+OEGlideUToEo [no-change]: h*w*æ*l
+OldEnglishRemoveStars: hwæl
+OldEnglishSurface [no-change]: hwæl
 
 --- whine ---
 PROTO: *xwḯnaną
@@ -38950,10 +38950,10 @@ OEXsMerge [no-change]: *x*w*ḯ*n*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*w*ḯ*n*a*n, h*w*ḯ*n*a*n
-OEGlideUToEo [no-change]: *h*w*ḯ*n*a*n, h*w*ḯ*n*a*n
-OldEnglishRemoveStars: *hwīnan, hwīnan
-OldEnglishSurface: hwīnan
+OldEnglishOrthography: h*w*ḯ*n*a*n
+OEGlideUToEo [no-change]: h*w*ḯ*n*a*n
+OldEnglishRemoveStars: hwīnan
+OldEnglishSurface [no-change]: hwīnan
 
 --- withy ---
 PROTO: *wḯθagą
@@ -39067,10 +39067,10 @@ OEXsMerge [no-change]: *w*ḯ*θ*i*ʤ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *w*ḯþ*iġ, *w*ḯþ*i*ġ, *w*ḯ*þ*iġ, *w*ḯ*þ*i*ġ
-OEGlideUToEo [no-change]: *w*ḯþ*iġ, *w*ḯþ*i*ġ, *w*ḯ*þ*iġ, *w*ḯ*þ*i*ġ
-OldEnglishRemoveStars: wīþiġ, wīþi*ġ, wī*þiġ, wī*þi*ġ
-OldEnglishSurface: wīþiġ
+OldEnglishOrthography: *w*ḯþ*iġ
+OEGlideUToEo [no-change]: *w*ḯþ*iġ
+OldEnglishRemoveStars: wīþiġ
+OldEnglishSurface [no-change]: wīþiġ
 
 --- world ---
 PROTO: *wír-àldu
@@ -39301,10 +39301,10 @@ OEXsMerge [no-change]: *j*éo*g*u*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *ġ*éo*g*uþ, *ġ*éo*g*u*þ, ġ*éo*g*uþ, ġ*éo*g*u*þ
-OEGlideUToEo [no-change]: *ġ*éo*g*uþ, *ġ*éo*g*u*þ, ġ*éo*g*uþ, ġ*éo*g*u*þ
-OldEnglishRemoveStars: *ġeoguþ, *ġeogu*þ, ġeoguþ, ġeogu*þ
-OldEnglishSurface: ġeoguþ
+OldEnglishOrthography: ġ*éo*g*uþ
+OEGlideUToEo [no-change]: ġ*éo*g*uþ
+OldEnglishRemoveStars: ġeoguþ
+OldEnglishSurface [no-change]: ġeoguþ
 
 
 === DERIVATION_CLASS: late_analogy (28) ===
@@ -39538,10 +39538,10 @@ OEXsMerge [no-change]: *b*e*r*j*e*s
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*e*rġ*e*s, *b*e*r*ġ*e*s
-OEGlideUToEo [no-change]: *b*e*rġ*e*s, *b*e*r*ġ*e*s
-OldEnglishRemoveStars: berġes, ber*ġes
-OldEnglishSurface: berġes
+OldEnglishOrthography: *b*e*rġ*e*s
+OEGlideUToEo [no-change]: *b*e*rġ*e*s
+OldEnglishRemoveStars: berġes
+OldEnglishSurface [no-change]: berġes
 
 --- bore (3sg) ---
 PROTO: *búrōθi
@@ -39655,10 +39655,10 @@ OEXsMerge [no-change]: *b*ó*r*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *b*ó*r*aþ, *b*ó*r*a*þ
-OEGlideUToEo [no-change]: *b*ó*r*aþ, *b*ó*r*a*þ
-OldEnglishRemoveStars: boraþ, bora*þ
-OldEnglishSurface: boraþ
+OldEnglishOrthography: *b*ó*r*aþ
+OEGlideUToEo [no-change]: *b*ó*r*aþ
+OldEnglishRemoveStars: boraþ
+OldEnglishSurface [no-change]: boraþ
 
 --- bore (iptv.2sg) ---
 PROTO: *búrô
@@ -40240,10 +40240,10 @@ OEXsMerge [no-change]: *f*y*r*x*t*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *f*y*r*h*t*e, *f*y*rh*t*e
-OEGlideUToEo [no-change]: *f*y*r*h*t*e, *f*y*rh*t*e
-OldEnglishRemoveStars: fyr*hte, fyrhte
-OldEnglishSurface: fyrhte
+OldEnglishOrthography: *f*y*rh*t*e
+OEGlideUToEo [no-change]: *f*y*rh*t*e
+OldEnglishRemoveStars: fyrhte
+OldEnglishSurface [no-change]: fyrhte
 
 --- hammer ---
 PROTO: *xámaras
@@ -40357,10 +40357,10 @@ OEXsMerge [no-change]: *x*á*m*e*r*e*s
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*á*m*e*r*e*s, h*á*m*e*r*e*s
-OEGlideUToEo [no-change]: *h*á*m*e*r*e*s, h*á*m*e*r*e*s
-OldEnglishRemoveStars: *hameres, hameres
-OldEnglishSurface: hameres
+OldEnglishOrthography: h*á*m*e*r*e*s
+OEGlideUToEo [no-change]: h*á*m*e*r*e*s
+OldEnglishRemoveStars: hameres
+OldEnglishSurface [no-change]: hameres
 
 --- have ---
 PROTO: *xábēθi
@@ -40474,10 +40474,10 @@ OEXsMerge [no-change]: *ç*æ*β*e*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*æ*β*eþ, *h*æ*β*e*þ, h*æ*β*eþ, h*æ*β*e*þ
-OEGlideUToEo [no-change]: *h*æ*β*eþ, *h*æ*β*e*þ, h*æ*β*eþ, h*æ*β*e*þ
-OldEnglishRemoveStars: *hæfeþ, *hæfe*þ, hæfeþ, hæfe*þ
-OldEnglishSurface: hæfeþ
+OldEnglishOrthography: h*æ*β*eþ
+OEGlideUToEo [no-change]: h*æ*β*eþ
+OldEnglishRemoveStars: hæfeþ
+OldEnglishSurface [no-change]: hæfeþ
 
 --- heaven ---
 PROTO: *xémonų
@@ -40591,10 +40591,10 @@ OEXsMerge [no-change]: *ç*éo*β*o*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *h*éo*β*o*n, h*éo*β*o*n
-OEGlideUToEo [no-change]: *h*éo*β*o*n, h*éo*β*o*n
-OldEnglishRemoveStars: *heofon, heofon
-OldEnglishSurface: heofon
+OldEnglishOrthography: h*éo*β*o*n
+OEGlideUToEo [no-change]: h*éo*β*o*n
+OldEnglishRemoveStars: heofon
+OldEnglishSurface [no-change]: heofon
 
 --- learn (3sg) ---
 PROTO: *líznōθi
@@ -40708,10 +40708,10 @@ OEXsMerge [no-change]: *l*ío*r*n*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*ío*r*n*aþ, *l*ío*r*n*a*þ
-OEGlideUToEo [no-change]: *l*ío*r*n*aþ, *l*ío*r*n*a*þ
-OldEnglishRemoveStars: liornaþ, liorna*þ
-OldEnglishSurface: liornaþ
+OldEnglishOrthography: *l*ío*r*n*aþ
+OEGlideUToEo [no-change]: *l*ío*r*n*aþ
+OldEnglishRemoveStars: liornaþ
+OldEnglishSurface [no-change]: liornaþ
 
 --- learn (iptv.2sg) ---
 PROTO: *líznô
@@ -40942,10 +40942,10 @@ OEXsMerge [no-change]: *l*í*k*k*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*í*k*k*aþ, *l*í*k*k*a*þ
-OEGlideUToEo [no-change]: *l*í*k*k*aþ, *l*í*k*k*a*þ
-OldEnglishRemoveStars: liccaþ, licca*þ
-OldEnglishSurface: liccaþ
+OldEnglishOrthography: *l*í*k*k*aþ
+OEGlideUToEo [no-change]: *l*í*k*k*aþ
+OldEnglishRemoveStars: liccaþ
+OldEnglishSurface [no-change]: liccaþ
 
 --- lick (iptv.2sg) ---
 PROTO: *líkkô
@@ -41176,10 +41176,10 @@ OEXsMerge [no-change]: *l*í*β*e*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *l*í*β*eþ, *l*í*β*e*þ
-OEGlideUToEo [no-change]: *l*í*β*eþ, *l*í*β*e*þ
-OldEnglishRemoveStars: lifeþ, life*þ
-OldEnglishSurface: lifeþ
+OldEnglishOrthography: *l*í*β*eþ
+OEGlideUToEo [no-change]: *l*í*β*eþ
+OldEnglishRemoveStars: lifeþ
+OldEnglishSurface [no-change]: lifeþ
 
 --- make (3sg) ---
 PROTO: *mákōθi
@@ -41293,10 +41293,10 @@ OEXsMerge [no-change]: *m*a*k*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *m*a*k*aþ, *m*a*k*a*þ
-OEGlideUToEo [no-change]: *m*a*k*aþ, *m*a*k*a*þ
-OldEnglishRemoveStars: macaþ, maca*þ
-OldEnglishSurface: macaþ
+OldEnglishOrthography: *m*a*k*aþ
+OEGlideUToEo [no-change]: *m*a*k*aþ
+OldEnglishRemoveStars: macaþ
+OldEnglishSurface [no-change]: macaþ
 
 --- make (iptv.2sg) ---
 PROTO: *mákô
@@ -41761,10 +41761,10 @@ OEXsMerge [no-change]: *n*i*x*t
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *n*ih*t, *n*i*h*t
-OEGlideUToEo [no-change]: *n*ih*t, *n*i*h*t
-OldEnglishRemoveStars: niht, ni*ht
-OldEnglishSurface: niht
+OldEnglishOrthography: *n*ih*t
+OEGlideUToEo [no-change]: *n*ih*t
+OldEnglishRemoveStars: niht
+OldEnglishSurface [no-change]: niht
 
 --- rest ---
 PROTO: *rástōz
@@ -41995,8 +41995,8 @@ OEXsMerge [no-change]: *ʃ*ú*l*d*r*u*m
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ú*l*d*r*u*m
-OEGlideUToEo [no-change]: *sċ*ú*l*d*r*u*m
+OldEnglishOrthography: sċ*ú*l*d*r*u*m
+OEGlideUToEo [no-change]: sċ*ú*l*d*r*u*m
 OldEnglishRemoveStars: sċuldrum
 OldEnglishSurface [no-change]: sċuldrum
 
@@ -42112,8 +42112,8 @@ OEXsMerge [no-change]: *ʃ*ēa*β
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ēa*β
-OEGlideUToEo [no-change]: *sċ*ēa*β
+OldEnglishOrthography: sċ*ēa*β
+OEGlideUToEo [no-change]: sċ*ēa*β
 OldEnglishRemoveStars: sċēaf
 OldEnglishSurface [no-change]: sċēaf
 
@@ -42229,10 +42229,10 @@ OEXsMerge [no-change]: *ʃ*ḗa*w*a*θ
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ḗa*w*aþ, *sċ*ḗa*w*a*þ
-OEGlideUToEo [no-change]: *sċ*ḗa*w*aþ, *sċ*ḗa*w*a*þ
-OldEnglishRemoveStars: sċēawaþ, sċēawa*þ
-OldEnglishSurface: sċēawaþ
+OldEnglishOrthography: sċ*ḗa*w*aþ
+OEGlideUToEo [no-change]: sċ*ḗa*w*aþ
+OldEnglishRemoveStars: sċēawaþ
+OldEnglishSurface [no-change]: sċēawaþ
 
 --- show (iptv.2sg) ---
 PROTO: *skáwô
@@ -42346,8 +42346,8 @@ OEXsMerge [no-change]: *ʃ*ḗa*w*a
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *sċ*ḗa*w*a
-OEGlideUToEo [no-change]: *sċ*ḗa*w*a
+OldEnglishOrthography: sċ*ḗa*w*a
+OEGlideUToEo [no-change]: sċ*ḗa*w*a
 OldEnglishRemoveStars: sċēawa
 OldEnglishSurface [no-change]: sċēawa
 
@@ -42580,10 +42580,10 @@ OEXsMerge [no-change]: *θ*í*s*t*l*e*s
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*í*s*t*l*e*s, þ*í*s*t*l*e*s
-OEGlideUToEo [no-change]: *þ*í*s*t*l*e*s, þ*í*s*t*l*e*s
-OldEnglishRemoveStars: þistles, *þistles
-OldEnglishSurface: þistles
+OldEnglishOrthography: þ*í*s*t*l*e*s
+OEGlideUToEo [no-change]: þ*í*s*t*l*e*s
+OldEnglishRemoveStars: þistles
+OldEnglishSurface [no-change]: þistles
 
 
 === DERIVATION_CLASS: attested_variant (4) ===
@@ -42934,10 +42934,10 @@ OEXsMerge [no-change]: *θ*r*ī*e
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *þ*r*ī*e, þ*r*ī*e
-OEGlideUToEo [no-change]: *þ*r*ī*e, þ*r*ī*e
-OldEnglishRemoveStars: þrīe, *þrīe
-OldEnglishSurface: þrīe
+OldEnglishOrthography: þ*r*ī*e
+OEGlideUToEo [no-change]: þ*r*ī*e
+OldEnglishRemoveStars: þrīe
+OldEnglishSurface [no-change]: þrīe
 
 --- wasp ---
 PROTO: *wábsaz
@@ -43405,10 +43405,10 @@ OEXsMerge [no-change]: *s*t*r*īe*ʒ*a*n
 
 ## Section 5: Orthography & surface
 
-OldEnglishOrthography: *s*t*r*īeġ*a*n, *s*t*r*īe*ġ*a*n
-OEGlideUToEo [no-change]: *s*t*r*īeġ*a*n, *s*t*r*īe*ġ*a*n
-OldEnglishRemoveStars: strīeġan, strīe*ġan
-OldEnglishSurface: strīeġan
+OldEnglishOrthography: *s*t*r*īeġ*a*n
+OEGlideUToEo [no-change]: *s*t*r*īeġ*a*n
+OldEnglishRemoveStars: strīeġan
+OldEnglishSurface [no-change]: strīeġan
 
 
 === DERIVATION_CLASS: known_unmodelled (2) ===

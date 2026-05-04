@@ -115,9 +115,8 @@ Proto Input: *báθą
 
 ### Orthography & surface
 
-Old English Orthography: *bæþ, *bæþ
-Outcome: bæ*þ, bæþ
-Old English Surface: bæþ
+Old English Orthography: *bæþ
+Outcome: bæþ
 
 
 
@@ -211,9 +210,8 @@ Proto Input: *bigínnaną
 
 ### Orthography & surface
 
-Old English Orthography: *bĕġínnan, *bĕġínnan
-Outcome: beġinnan, be*ġinnan
-Old English Surface: beġinnan
+Old English Orthography: *bĕġínnan
+Outcome: beġinnan
 
 NOTE: Palatalization of *g between *i and *i is regular per R/T §6.4.1 Rule 1. OE beġinnan confirmed (Wiktionary, BT).
 
@@ -238,9 +236,8 @@ Proto Input: *galáubijaną
 
 ### Orthography & surface
 
-Old English Orthography: ġ*ĕlīeβan, *ġĕlīeβan
-Outcome: ġelīefan, *ġelīefan
-Old English Surface: ġelīefan
+Old English Orthography: ġ*ĕlīeβan
+Outcome: ġelīefan
 
 
 
@@ -263,9 +260,8 @@ Proto Input: *bálgiz
 
 ### Orthography & surface
 
-Old English Orthography: *bielġ, *bielġ
-Outcome: biel*ġ, bielġ
-Old English Surface: bielġ
+Old English Orthography: *bielġ
+Outcome: bielġ
 
 
 
@@ -549,9 +545,8 @@ Proto Input: *báugijaną
 
 ### Orthography & surface
 
-Old English Orthography: *bīeġan, *bīeġan
-Outcome: bīeġan, bīe*ġan
-Old English Surface: bīeġan
+Old English Orthography: *bīeġan
+Outcome: bīeġan
 
 NOTE: Kroonen *baugjan- wv. 'to (make) bend' → OE bīeġan; boga is the noun *bugan-
 
@@ -668,9 +663,8 @@ Proto Input: *brōkiz
 
 ### Orthography & surface
 
-Old English Orthography: *brēċ, *brēċ
-Outcome: brēċ, brē*ċ
-Old English Surface: brēċ
+Old English Orthography: *brēċ
+Outcome: brēċ
 
 NOTE: Proto: *brekăną→brōkiz (Kroonen *brōk- f. 'breeches', nom.pl.; i-umlaut ō→ē)
 
@@ -787,9 +781,8 @@ Proto Input: *kálbaz
 
 ### Orthography & surface
 
-Old English Orthography: *ċealβ, ċ*ealβ
-Outcome: ċealf, *ċealf
-Old English Surface: ċealf
+Old English Orthography: ċ*ealβ
+Outcome: ċealf
 
 NOTE: WS palatalized initial (R/T §6.4.1 rule 1: k before front vowel)
 
@@ -814,9 +807,8 @@ Proto Input: *kéwwaną
 
 ### Orthography & surface
 
-Old English Orthography: *ċēowan, ċ*ēowan
-Outcome: ċēowan, *ċēowan
-Old English Surface: ċēowan
+Old English Orthography: ċ*ēowan
+Outcome: ċēowan
 
 
 
@@ -981,9 +973,8 @@ Proto Input: *dágaz
 
 ### Orthography & surface
 
-Old English Orthography: *dæġ, *dæġ
-Outcome: dæġ, dæ*ġ
-Old English Surface: dæġ
+Old English Orthography: *dæġ
+Outcome: dæġ
 
 
 
@@ -1196,9 +1187,8 @@ Proto Input: *dránkiz
 
 ### Orthography & surface
 
-Old English Orthography: *drenċ, *drenċ
-Outcome: drenċ, dren*ċ
-Old English Surface: drenċ
+Old English Orthography: *drenċ
+Outcome: drenċ
 
 
 
@@ -1267,9 +1257,8 @@ Proto Input: *érθōn
 
 ### Orthography & surface
 
-Old English Orthography: *éorþe, *éorþe
-Outcome: eor*þe, eorþe
-Old English Surface: eorþe
+Old English Orthography: *éorþe
+Outcome: eorþe
 
 
 
@@ -1409,9 +1398,8 @@ Proto Input: *féxu
 
 ### Orthography & surface
 
-Old English Orthography: *féoh, *féoh
-Outcome: feo*h, feoh
-Old English Surface: feoh
+Old English Orthography: *féoh
+Outcome: feoh
 
 
 
@@ -1509,9 +1497,8 @@ Proto Input: *féxtaną
 
 ### Orthography & surface
 
-Old English Orthography: *féohtan, *féohtan
-Outcome: feo*htan, feohtan
-Old English Surface: feohtan
+Old English Orthography: *féohtan
+Outcome: feohtan
 
 
 
@@ -1627,9 +1614,8 @@ Proto Input: *fláuxz
 
 ### Orthography & surface
 
-Old English Orthography: *flēah, *flēah
-Outcome: flēah, flēa*h
-Old English Surface: flēah
+Old English Orthography: *flēah
+Outcome: flēah
 
 
 
@@ -1979,9 +1965,8 @@ Proto Input: *fúrx
 
 ### Orthography & surface
 
-Old English Orthography: *fúrh, *fúrh
-Outcome: furh, fur*h
-Old English Surface: furh
+Old English Orthography: *fúrh
+Outcome: furh
 
 
 
@@ -2052,9 +2037,8 @@ Proto Input: *géftiz
 
 ### Orthography & surface
 
-Old English Orthography: ġ*ift, *ġift
-Outcome: ġift, *ġift
-Old English Surface: ġift
+Old English Orthography: ġ*ift
+Outcome: ġift
 
 
 
@@ -2077,9 +2061,8 @@ Proto Input: *gébaną
 
 ### Orthography & surface
 
-Old English Orthography: ġ*íeβan, *ġíeβan
-Outcome: ġiefan, *ġiefan
-Old English Surface: ġiefan
+Old English Orthography: ġ*íeβan
+Outcome: ġiefan
 
 NOTE: WS palatalized initial (R/T §6.4.1 rule 1: g before front vowel)
 
@@ -2269,9 +2252,8 @@ Proto Input: *gástiz
 
 ### Orthography & surface
 
-Old English Orthography: ġ*iest, *ġiest
-Outcome: ġiest, *ġiest
-Old English Surface: ġiest
+Old English Orthography: ġ*iest
+Outcome: ġiest
 
 NOTE: R/T vol.2 3857: PGmc *gastiz > WS OE giest
 
@@ -2296,9 +2278,8 @@ Proto Input: *xáglą
 
 ### Orthography & surface
 
-Old English Orthography: *hæġl, *hæġl, h*æġl, h*æġl
-Outcome: *hæġl, *hæġl, hæġl, hæ*ġl
-Old English Surface: hæġl
+Old English Orthography: h*æġl
+Outcome: hæġl
 
 
 
@@ -2321,9 +2302,8 @@ Proto Input: *xḗrą
 
 ### Orthography & surface
 
-Old English Orthography: *hǣr, h*ǣr
-Outcome: *hǣr, hǣr
-Old English Surface: hǣr
+Old English Orthography: h*ǣr
+Outcome: hǣr
 
 NOTE: Wiktionary: PGmc *hērą > OE hǣr; *xazwăz 'grey' is wrong lexeme
 
@@ -2348,9 +2328,8 @@ Proto Input: *xállō
 
 ### Orthography & surface
 
-Old English Orthography: *heall, h*eall
-Outcome: *heall, heall
-Old English Surface: heall
+Old English Orthography: h*eall
+Outcome: heall
 
 
 
@@ -2373,9 +2352,8 @@ Proto Input: *xánduz
 
 ### Orthography & surface
 
-Old English Orthography: *hánd, h*ánd
-Outcome: *hand, hand
-Old English Surface: hand
+Old English Orthography: h*ánd
+Outcome: hand
 
 
 
@@ -2398,9 +2376,8 @@ Proto Input: *xándlōjaną
 
 ### Orthography & surface
 
-Old English Orthography: *hándlian, h*ándlian
-Outcome: *handlian, handlian
-Old English Surface: handlian
+Old English Orthography: h*ándlian
+Outcome: handlian
 
 NOTE: Du handelen / G handeln are the verb.
 
@@ -2425,9 +2402,8 @@ Proto Input: *xármaz
 
 ### Orthography & surface
 
-Old English Orthography: *hearm, h*earm
-Outcome: *hearm, hearm
-Old English Surface: hearm
+Old English Orthography: h*earm
+Outcome: hearm
 
 
 
@@ -2450,9 +2426,8 @@ Proto Input: *xárbistuz
 
 ### Orthography & surface
 
-Old English Orthography: *hierβest, h*ierβest
-Outcome: *hierfest, hierfest
-Old English Surface: hierfest
+Old English Orthography: h*ierβest
+Outcome: hierfest
 
 NOTE: R/T 14594-14603: hærfest is Anglian loan (Bammesberger 1997); WS hierfest attested (Toller); regular PGmc *harbistuz > WS hierfest via AFB+breaking+i-umlaut
 
@@ -2477,9 +2452,8 @@ Proto Input: *xágô
 
 ### Orthography & surface
 
-Old English Orthography: *haga, h*aga
-Outcome: *haga, haga
-Old English Surface: haga
+Old English Orthography: h*aga
+Outcome: haga
 
 
 
@@ -2502,9 +2476,8 @@ Proto Input: *xábukaz
 
 ### Orthography & surface
 
-Old English Orthography: *haβok, h*aβok
-Outcome: *hafoc, hafoc
-Old English Surface: hafoc
+Old English Orthography: h*aβok
+Outcome: hafoc
 
 
 
@@ -2527,9 +2500,8 @@ Proto Input: *xáwwją
 
 ### Orthography & surface
 
-Old English Orthography: *hīeġ, *hīeġ, h*īeġ, h*īeġ
-Outcome: *hīeġ, *hīeġ, hīeġ, hīe*ġ
-Old English Surface: hīeġ
+Old English Orthography: h*īeġ
+Outcome: hīeġ
 
 
 
@@ -2552,9 +2524,8 @@ Proto Input: *xáslaz
 
 ### Orthography & surface
 
-Old English Orthography: *hæsl, h*æsl
-Outcome: *hæsl, hæsl
-Old English Surface: hæsl
+Old English Orthography: h*æsl
+Outcome: hæsl
 
 
 
@@ -2577,9 +2548,8 @@ Proto Input: *xáubudą
 
 ### Orthography & surface
 
-Old English Orthography: *hēaβod, h*ēaβod
-Outcome: *hēafod, hēafod
-Old English Surface: hēafod
+Old English Orthography: h*ēaβod
+Outcome: hēafod
 
 
 
@@ -2602,9 +2572,8 @@ Proto Input: *xáilijaną
 
 ### Orthography & surface
 
-Old English Orthography: *hǣlan, h*ǣlan
-Outcome: *hǣlan, hǣlan
-Old English Surface: hǣlan
+Old English Orthography: h*ǣlan
+Outcome: hǣlan
 
 
 
@@ -2627,9 +2596,8 @@ Proto Input: *xértōn
 
 ### Orthography & surface
 
-Old English Orthography: *héorte, h*éorte
-Outcome: *heorte, heorte
-Old English Surface: heorte
+Old English Orthography: h*éorte
+Outcome: heorte
 
 
 
@@ -2652,9 +2620,8 @@ Proto Input: *xérθaz
 
 ### Orthography & surface
 
-Old English Orthography: *héorþ, *héorþ, h*éorþ, h*éorþ
-Outcome: *heorþ, *heorþ, heor*þ, heorþ
-Old English Surface: heorþ
+Old English Orthography: h*éorþ
+Outcome: heorþ
 
 
 
@@ -2677,9 +2644,8 @@ Proto Input: *xáiθiz
 
 ### Orthography & surface
 
-Old English Orthography: *hǣþ, *hǣþ, h*ǣþ, h*ǣþ
-Outcome: *hǣþ, *hǣþ, hǣþ, hǣ*þ
-Old English Surface: hǣþ
+Old English Orthography: h*ǣþ
+Outcome: hǣþ
 
 
 
@@ -2702,9 +2668,8 @@ Proto Input: *xágjaz
 
 ### Orthography & surface
 
-Old English Orthography: *heġġ, *heġġ, *heġġ, *heġġ, h*eġġ, h*eġġ, h*eġġ, h*eġġ
-Outcome: *heġġ, *heġġ, *heġġ, *heġġ, heġ*ġ, heġġ, he*ġġ, he*ġġ
-Old English Surface: heġġ
+Old English Orthography: h*eġġ
+Outcome: heġġ
 
 NOTE: Note: heċġ is the more standard spelling; using heġġ here
 
@@ -2729,9 +2694,8 @@ Proto Input: *xélmaz
 
 ### Orthography & surface
 
-Old English Orthography: *hélm, h*élm
-Outcome: *helm, helm
-Old English Surface: helm
+Old English Orthography: h*élm
+Outcome: helm
 
 NOTE: Kroonen *helma- m. 'helmet' → OE helm m.; helma is not nom.sg.
 
@@ -2756,9 +2720,8 @@ Proto Input: *xélpaną
 
 ### Orthography & surface
 
-Old English Orthography: *hélpan, h*élpan
-Outcome: *helpan, helpan
-Old English Surface: helpan
+Old English Orthography: h*élpan
+Outcome: helpan
 
 NOTE: OE target: help→helpan (inf. of str.v. class III; noun 'help' is in *xelpō row)
 
@@ -2783,9 +2746,8 @@ Proto Input: *xélpō
 
 ### Orthography & surface
 
-Old English Orthography: *hélp, h*élp
-Outcome: *help, help
-Old English Surface: help
+Old English Orthography: h*élp
+Outcome: help
 
 
 
@@ -2808,9 +2770,8 @@ Proto Input: *xérdō
 
 ### Orthography & surface
 
-Old English Orthography: *héord, h*éord
-Outcome: *heord, heord
-Old English Surface: heord
+Old English Orthography: h*éord
+Outcome: heord
 
 
 
@@ -2833,9 +2794,8 @@ Proto Input: *xáwwaną
 
 ### Orthography & surface
 
-Old English Orthography: *hḗawan, h*ḗawan
-Outcome: *hēawan, hēawan
-Old English Surface: hēawan
+Old English Orthography: h*ḗawan
+Outcome: hēawan
 
 
 
@@ -2858,9 +2818,8 @@ Proto Input: *xéndjō
 
 ### Orthography & surface
 
-Old English Orthography: *hind, h*ind
-Outcome: *hind, hind
-Old English Surface: hind
+Old English Orthography: h*ind
+Outcome: hind
 
 NOTE: Kroonen *hindō- f. 'hind (deer)' → OE hind f.; hindan 'from behind' is wrong lexeme
 
@@ -2886,9 +2845,8 @@ Rhotacism: *xúrdą
 
 ### Orthography & surface
 
-Old English Orthography: *hórd, h*órd
-Outcome: *hord, hord
-Old English Surface: hord
+Old English Orthography: h*órd
+Outcome: hord
 
 
 
@@ -2911,9 +2869,8 @@ Proto Input: *xáldaną
 
 ### Orthography & surface
 
-Old English Orthography: *healdan, h*ealdan
-Outcome: *healdan, healdan
-Old English Surface: healdan
+Old English Orthography: h*ealdan
+Outcome: healdan
 
 NOTE: R/T vol.2 10729: PGmc *haldaną > WS OE healdan (with breaking)
 
@@ -2938,9 +2895,8 @@ Proto Input: *xáimaz
 
 ### Orthography & surface
 
-Old English Orthography: *hām, h*ām
-Outcome: *hām, hām
-Old English Surface: hām
+Old English Orthography: h*ām
+Outcome: hām
 
 
 
@@ -2963,9 +2919,8 @@ Proto Input: *xúnagą
 
 ### Orthography & surface
 
-Old English Orthography: *húniġ, *húniġ, h*úniġ, h*úniġ
-Outcome: *huniġ, *huniġ, huniġ, huni*ġ
-Old English Surface: huniġ
+Old English Orthography: h*úniġ
+Outcome: huniġ
 
 
 
@@ -2988,9 +2943,8 @@ Proto Input: *xōdaz
 
 ### Orthography & surface
 
-Old English Orthography: *hōd, h*ōd
-Outcome: *hōd, hōd
-Old English Surface: hōd
+Old English Orthography: h*ōd
+Outcome: hōd
 
 
 
@@ -3013,9 +2967,8 @@ Proto Input: *xōfaz
 
 ### Orthography & surface
 
-Old English Orthography: *hōf, h*ōf
-Outcome: *hōf, hōf
-Old English Surface: hōf
+Old English Orthography: h*ōf
+Outcome: hōf
 
 
 
@@ -3038,9 +2991,8 @@ Proto Input: *xúrną
 
 ### Orthography & surface
 
-Old English Orthography: *hórn, h*órn
-Outcome: *horn, horn
-Old English Surface: horn
+Old English Orthography: h*órn
+Outcome: horn
 
 NOTE: Proto: oblique *xurnăn→xurną (n. a-stem nom.sg.; Kroonen)
 
@@ -3065,9 +3017,8 @@ Proto Input: *xúndaz
 
 ### Orthography & surface
 
-Old English Orthography: *húnd, h*únd
-Outcome: *hund, hund
-Old English Surface: hund
+Old English Orthography: h*únd
+Outcome: hund
 
 
 
@@ -3256,9 +3207,8 @@ Proto Input: *léθrą
 
 ### Orthography & surface
 
-Old English Orthography: *léþer, *léþer
-Outcome: le*þer, leþer
-Old English Surface: leþer
+Old English Orthography: *léþer
+Outcome: leþer
 
 
 
@@ -3350,9 +3300,8 @@ Proto Input: *xlídą
 
 ### Orthography & surface
 
-Old English Orthography: *hlíd, h*líd
-Outcome: *hlid, hlid
-Old English Surface: hlid
+Old English Orthography: h*líd
+Outcome: hlid
 
 NOTE: Proto: *liθuz → *xlidą (Wiktionary *hlidą 'lid, cover')
 
@@ -3400,9 +3349,8 @@ Proto Input: *léuxtijaną
 
 ### Orthography & surface
 
-Old English Orthography: *līehtan, *līehtan
-Outcome: līe*htan, līehtan
-Old English Surface: līehtan
+Old English Orthography: *līehtan
+Outcome: līehtan
 
 NOTE: OE target: lēoht→līehtan (wk.v. I 'to light', matching verb proto *leuxtijăną; noun 'lēoht' from *leuxtą)
 
@@ -3544,9 +3492,8 @@ Proto Input: *láiθaz
 
 ### Orthography & surface
 
-Old English Orthography: *lāþ, *lāþ
-Outcome: lā*þ, lāþ
-Old English Surface: lāþ
+Old English Orthography: *lāþ
+Outcome: lāþ
 
 
 
@@ -3824,9 +3771,8 @@ Proto Input: *máxtiz
 
 ### Orthography & surface
 
-Old English Orthography: *miht, *miht
-Outcome: miht, mi*ht
-Old English Surface: miht
+Old English Orthography: *miht
+Outcome: miht
 
 
 
@@ -3874,9 +3820,8 @@ Proto Input: *mḗnōθz
 
 ### Orthography & surface
 
-Old English Orthography: *mōnaþ, *mōnaþ
-Outcome: mōnaþ, mōna*þ
-Old English Surface: mōnaþ
+Old English Orthography: *mōnaþ
+Outcome: mōnaþ
 
 
 
@@ -3947,9 +3892,8 @@ Proto Input: *náglaz
 
 ### Orthography & surface
 
-Old English Orthography: *næġl, *næġl
-Outcome: næġl, næ*ġl
-Old English Surface: næġl
+Old English Orthography: *næġl
+Outcome: næġl
 
 
 
@@ -4229,9 +4173,8 @@ Proto Input: *régną
 
 ### Orthography & surface
 
-Old English Orthography: *réġn, *réġn
-Outcome: re*ġn, reġn
-Old English Surface: reġn
+Old English Orthography: *réġn
+Outcome: reġn
 
 
 
@@ -4254,9 +4197,8 @@ Proto Input: *régnabùgô
 
 ### Orthography & surface
 
-Old English Orthography: *réġnboga, *réġnboga
-Outcome: re*ġnboga, reġnboga
-Old English Surface: reġnboga
+Old English Orthography: *réġnboga
+Outcome: reġnboga
 
 
 
@@ -4279,9 +4221,8 @@ Proto Input: *xrábnaz
 
 ### Orthography & surface
 
-Old English Orthography: *hræβn, h*ræβn
-Outcome: *hræfn, hræfn
-Old English Surface: hræfn
+Old English Orthography: h*ræβn
+Outcome: hræfn
 
 
 
@@ -4442,9 +4383,8 @@ Proto Input: *rōθraz
 
 ### Orthography & surface
 
-Old English Orthography: *rōþor, *rōþor
-Outcome: rō*þor, rōþor
-Old English Surface: rōþor
+Old English Orthography: *rōþor
+Outcome: rōþor
 
 
 
@@ -4490,9 +4430,8 @@ Proto Input: *rúgiz
 
 ### Orthography & surface
 
-Old English Orthography: *ryġe, *ryġe
-Outcome: ryġe, ry*ġe
-Old English Surface: ryġe
+Old English Orthography: *ryġe
+Outcome: ryġe
 
 
 
@@ -4515,9 +4454,8 @@ Proto Input: *séglą
 
 ### Orthography & surface
 
-Old English Orthography: *séġl, *séġl
-Outcome: se*ġl, seġl
-Old English Surface: seġl
+Old English Orthography: *séġl
+Outcome: seġl
 
 
 
@@ -4632,9 +4570,8 @@ Proto Input: *sōkijaną
 
 ### Orthography & surface
 
-Old English Orthography: *sēċan, *sēċan
-Outcome: sēċan, sē*ċan
-Old English Surface: sēċan
+Old English Orthography: *sēċan
+Outcome: sēċan
 
 
 
@@ -4726,7 +4663,7 @@ Proto Input: *skáftą
 
 ### Orthography & surface
 
-Old English Orthography: *sċeaft
+Old English Orthography: sċ*eaft
 Outcome: sċeaft
 
 
@@ -4750,7 +4687,7 @@ Proto Input: *skámō
 
 ### Orthography & surface
 
-Old English Orthography: *sċámu
+Old English Orthography: sċ*ámu
 Outcome: sċamu
 
 
@@ -4774,7 +4711,7 @@ Proto Input: *skéraną
 
 ### Orthography & surface
 
-Old English Orthography: *sċíeran
+Old English Orthography: sċ*íeran
 Outcome: sċieran
 
 
@@ -4798,9 +4735,8 @@ Proto Input: *skáiθiz
 
 ### Orthography & surface
 
-Old English Orthography: *sċēaþ, *sċēaþ
-Outcome: sċēa*þ, sċēaþ
-Old English Surface: sċēaþ
+Old English Orthography: sċ*ēaþ
+Outcome: sċēaþ
 
 
 
@@ -4823,7 +4759,7 @@ Proto Input: *skḗpą
 
 ### Orthography & surface
 
-Old English Orthography: *sċēap
+Old English Orthography: sċ*ēap
 Outcome: sċēap
 
 NOTE: R/T vol.2 12522: PWGmc *skap > OE scéap (WS)
@@ -4849,7 +4785,7 @@ Proto Input: *skélduz
 
 ### Orthography & surface
 
-Old English Orthography: *sċíeld
+Old English Orthography: sċ*íeld
 Outcome: sċield
 
 
@@ -4873,7 +4809,7 @@ Proto Input: *skíllingaz
 
 ### Orthography & surface
 
-Old English Orthography: *sċílling
+Old English Orthography: sċ*ílling
 Outcome: sċilling
 
 NOTE: Kroonen EDPG s.v. *skellinga- ~ *skillinga- (m.); WGmc cognates (OS skilling, OHG scilling, OFris skilling) and ON skillingr all confirm *-ing- derivational suffix. PROTOFORM corrected from *skéllinaz to *skíllingaz 2026-04-27. Required new pgrmWeakTailVowel shape *-ingaz and an *_ng exemption in OEMedUnstressedILowering. See DEV_NOTES §17.35 and dossier-ing-lowering-2026.md.
@@ -4899,7 +4835,7 @@ Proto Input: *skḯnaną
 
 ### Orthography & surface
 
-Old English Orthography: *sċḯnan
+Old English Orthography: sċ*ḯnan
 Outcome: sċīnan
 
 
@@ -4923,7 +4859,7 @@ Proto Input: *skúflō
 
 ### Orthography & surface
 
-Old English Orthography: *sċófl
+Old English Orthography: sċ*ófl
 Outcome: sċofl
 
 
@@ -4947,7 +4883,7 @@ Proto Input: *skáwōjaną
 
 ### Orthography & surface
 
-Old English Orthography: *sċḗawian
+Old English Orthography: sċ*ḗawian
 Outcome: sċēawian
 
 NOTE: Normalized sċ: initial sc always [ʃ] in OE (Campbell §440).
@@ -4973,7 +4909,7 @@ Proto Input: *skūrō
 
 ### Orthography & surface
 
-Old English Orthography: *sċūr
+Old English Orthography: sċ*ūr
 Outcome: sċūr
 
 
@@ -5043,9 +4979,8 @@ Proto Input: *sángijaną
 
 ### Orthography & surface
 
-Old English Orthography: *senġan, *senġan
-Outcome: sen*ġan, senġan
-Old English Surface: senġan
+Old English Orthography: *senġan
+Outcome: senġan
 
 
 
@@ -5729,7 +5664,7 @@ Outcome: strēam
 # stretch
 PROTO: *strákkijaną
 EXPECTED: streċċan
-OUTPUTS: streċċan, strecċan
+OUTPUTS: streċċan
 
 
 
@@ -5739,15 +5674,14 @@ Proto Input: *strákkijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Proto-West Germanic**<br>[no change]<br><br>**Northwest Germanic**<br>[no change] | **Old English**<br>Anglo Frisian Brightening: *strækkijaną<br>OE Heavy Syllable Nasal Apocope: *strækkijan<br>OE Secondary Nasalization: *strækkijąn<br>Sievers Law Syncope: *strækkjąn<br>OE Velar Palatalization: *strækʧjąn, *stræʧʧjąn<br>OE I Umlaut: *strekʧjąn, *streʧʧjąn<br>OE Weak Tail Reduction: *strekʧjan, *streʧʧjan<br>OE J Loss After Heavy: *strekʧan, *streʧʧan |
+| **Proto-West Germanic**<br>[no change]<br><br>**Northwest Germanic**<br>[no change] | **Old English**<br>Anglo Frisian Brightening: *strækkijaną<br>OE Heavy Syllable Nasal Apocope: *strækkijan<br>OE Secondary Nasalization: *strækkijąn<br>Sievers Law Syncope: *strækkjąn<br>OE Velar Palatalization: *stræʧʧjąn<br>OE I Umlaut: *streʧʧjąn<br>OE Weak Tail Reduction: *streʧʧjan<br>OE J Loss After Heavy: *streʧʧan |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: *streċċan, *streċċan, *strekċan, *strekċan, *streċċan, *streċċan
-Outcome: streċċan, streċ*ċan, stre*ċċan, stre*ċċan, strecċan, strec*ċan
-Old English Surface: streċċan, strecċan
+Old English Orthography: *streċċan
+Outcome: streċċan
 
 
 
@@ -5770,9 +5704,8 @@ Proto Input: *strángiz
 
 ### Orthography & surface
 
-Old English Orthography: *strenġ, *strenġ
-Outcome: stren*ġ, strenġ
-Old English Surface: strenġ
+Old English Orthography: *strenġ
+Outcome: strenġ
 
 
 
@@ -6057,9 +5990,8 @@ Proto Input: *θégnaz
 
 ### Orthography & surface
 
-Old English Orthography: *þéġn, *þéġn, þ*éġn, þ*éġn
-Outcome: þe*ġn, þeġn, *þeġn, *þeġn
-Old English Surface: þeġn
+Old English Orthography: þ*éġn
+Outcome: þeġn
 
 
 
@@ -6082,9 +6014,8 @@ Proto Input: *θánkaz
 
 ### Orthography & surface
 
-Old English Orthography: *þánk, þ*ánk
-Outcome: þanc, *þanc
-Old English Surface: þanc
+Old English Orthography: þ*ánk
+Outcome: þanc
 
 
 
@@ -6107,9 +6038,8 @@ Proto Input: *θáką
 
 ### Orthography & surface
 
-Old English Orthography: *þæk, þ*æk
-Outcome: þæc, *þæc
-Old English Surface: þæc
+Old English Orthography: þ*æk
+Outcome: þæc
 
 
 
@@ -6132,9 +6062,8 @@ Proto Input: *θéubaz
 
 ### Orthography & surface
 
-Old English Orthography: *þēoβ, þ*ēoβ
-Outcome: þēof, *þēof
-Old English Surface: þēof
+Old English Orthography: þ*ēoβ
+Outcome: þēof
 
 
 
@@ -6157,9 +6086,8 @@ Proto Input: *θíngą
 
 ### Orthography & surface
 
-Old English Orthography: *þíng, þ*íng
-Outcome: þing, *þing
-Old English Surface: þing
+Old English Orthography: þ*íng
+Outcome: þing
 
 
 
@@ -6182,9 +6110,8 @@ Proto Input: *θánkijaną
 
 ### Orthography & surface
 
-Old English Orthography: *þenċan, *þenċan, þ*enċan, þ*enċan
-Outcome: þenċan, þen*ċan, *þenċan, *þenċan
-Old English Surface: þenċan
+Old English Orthography: þ*enċan
+Outcome: þenċan
 
 NOTE: Proto: *θankăz → *θankijăną (Kroonen *θankjan- 'to think'); OE þenċan (wk.v.)
 
@@ -6209,9 +6136,8 @@ Proto Input: *θúrstuz
 
 ### Orthography & surface
 
-Old English Orthography: *þúrst, þ*úrst
-Outcome: þurst, *þurst
-Old English Surface: þurst
+Old English Orthography: þ*úrst
+Outcome: þurst
 
 
 
@@ -6234,9 +6160,8 @@ Proto Input: *θúrnaz
 
 ### Orthography & surface
 
-Old English Orthography: *þórn, þ*órn
-Outcome: þorn, *þorn
-Old English Surface: þorn
+Old English Orthography: þ*órn
+Outcome: þorn
 
 NOTE: Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurnuz is reflected in Gothic þaurnus (u-stem), and Old Norse also shows an ija-stem variant þyrnir 'thorn' (alongside þorn).
 
@@ -6261,9 +6186,8 @@ Proto Input: *θréskaną
 
 ### Orthography & surface
 
-Old English Orthography: *þrésċan, þ*résċan
-Outcome: þresċan, *þresċan
-Old English Surface: þresċan
+Old English Orthography: þ*résċan
+Outcome: þresċan
 
 
 
@@ -6286,9 +6210,8 @@ Proto Input: *θúnraz
 
 ### Orthography & surface
 
-Old English Orthography: *þúnor, þ*únor
-Outcome: þunor, *þunor
-Old English Surface: þunor
+Old English Orthography: þ*únor
+Outcome: þunor
 
 
 
@@ -6549,9 +6472,8 @@ Proto Input: *wágnaz
 
 ### Orthography & surface
 
-Old English Orthography: *wæġn, *wæġn
-Outcome: wæġn, wæ*ġn
-Old English Surface: wæġn
+Old English Orthography: *wæġn
+Outcome: wæġn
 
 
 
@@ -6718,9 +6640,8 @@ Proto Input: *wégaz
 
 ### Orthography & surface
 
-Old English Orthography: *wéġ, *wéġ
-Outcome: we*ġ, weġ
-Old English Surface: weġ
+Old English Orthography: *wéġ
+Outcome: weġ
 
 NOTE: Kroonen *wega- m. 'way, road' → OE weġ m.; wē is not attested as OE 'way'
 
@@ -6862,9 +6783,8 @@ Proto Input: *wíθrą
 
 ### Orthography & surface
 
-Old English Orthography: *wéþer, *wéþer
-Outcome: we*þer, weþer
-Old English Surface: weþer
+Old English Orthography: *wéþer
+Outcome: weþer
 
 
 
@@ -6887,9 +6807,8 @@ Proto Input: *xwḯlō
 
 ### Orthography & surface
 
-Old English Orthography: *hwḯl, h*wḯl
-Outcome: *hwīl, hwīl
-Old English Surface: hwīl
+Old English Orthography: h*wḯl
+Outcome: hwīl
 
 
 
@@ -6912,9 +6831,8 @@ Proto Input: *xōrōn
 
 ### Orthography & surface
 
-Old English Orthography: *hōre, h*ōre
-Outcome: *hōre, hōre
-Old English Surface: hōre
+Old English Orthography: h*ōre
+Outcome: hōre
 
 
 
@@ -7006,9 +6924,8 @@ Proto Input: *wéxtiz
 
 ### Orthography & surface
 
-Old English Orthography: *wiht, *wiht
-Outcome: wi*ht, wiht
-Old English Surface: wiht
+Old English Orthography: *wiht
+Outcome: wiht
 
 
 
@@ -7244,9 +7161,8 @@ Proto Input: *gárną
 
 ### Orthography & surface
 
-Old English Orthography: ġ*earn, *ġearn
-Outcome: ġearn, *ġearn
-Old English Surface: ġearn
+Old English Orthography: ġ*earn
+Outcome: ġearn
 
 NOTE: Proto: oblique *garnăn→garną (n. a-stem nom.sg.; Kroonen)
 
@@ -7271,9 +7187,8 @@ Proto Input: *jḗrą
 
 ### Orthography & surface
 
-Old English Orthography: *ġēar, ġ*ēar
-Outcome: *ġēar, ġēar
-Old English Surface: ġēar
+Old English Orthography: ġ*ēar
+Outcome: ġēar
 
 
 
@@ -7296,9 +7211,8 @@ Proto Input: *júką
 
 ### Orthography & surface
 
-Old English Orthography: *ġéok, ġ*éok
-Outcome: *ġeoc, ġeoc
-Old English Surface: ġeoc
+Old English Orthography: ġ*éok
+Outcome: ġeoc
 
 
 
@@ -7494,9 +7408,8 @@ Proto Input: *fúlgijaną
 
 ### Orthography & surface
 
-Old English Orthography: *fylġan, *fylġan
-Outcome: fylġan, fyl*ġan
-Old English Surface: fylġan
+Old English Orthography: *fylġan
+Outcome: fylġan
 
 NOTE: Kroonen s.v. *fulgēn-: "OE fylg(e)an continue *fulgjan-"; R/T §2.3.1: "class I weak OE fylgan". WS folgian is Class II from *fulgēn-.
 
@@ -7521,9 +7434,8 @@ Proto Input: *gállô
 
 ### Orthography & surface
 
-Old English Orthography: ġ*ealla, *ġealla
-Outcome: ġealla, *ġealla
-Old English Surface: ġealla
+Old English Orthography: ġ*ealla
+Outcome: ġealla
 
 
 
@@ -7546,9 +7458,8 @@ Proto Input: *knéxtaz
 
 ### Orthography & surface
 
-Old English Orthography: *kniht, *kniht
-Outcome: cni*ht, cniht
-Old English Surface: cniht
+Old English Orthography: *kniht
+Outcome: cniht
 
 NOTE: Proto corrected to *knextăz per R/T vol.2 p.127, Orel p.220, Kluge-Seebold
 
@@ -7573,9 +7484,8 @@ Proto Input: *xláðaną
 
 ### Orthography & surface
 
-Old English Orthography: *hladan, h*ladan
-Outcome: *hladan, hladan
-Old English Surface: hladan
+Old English Orthography: h*ladan
+Outcome: hladan
 
 NOTE: Wiktionary: PGmc *hlaðaną (Verner) > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1
 
@@ -7623,9 +7533,8 @@ Proto Input: *xláxjaną
 
 ### Orthography & surface
 
-Old English Orthography: *hliehhan, *hliehhan, *hliehhan, *hliehhan, h*liehhan, h*liehhan, h*liehhan, h*liehhan
-Outcome: *hliehhan, *hliehhan, *hliehhan, *hliehhan, hlieh*han, hliehhan, hlie*hhan, hlie*hhan
-Old English Surface: hliehhan
+Old English Orthography: h*liehhan
+Outcome: hliehhan
 
 NOTE: §17.40: target hlæhhan → hliehhan (WS form per Bright p.597, Brunner §392,4; Anglian hlæhhan attested as variant — cascade defaults to WS). Added *x to PWGmcJGemination per Fulk §6.15. | R/T: PGmc *hlahjanan > OE hlæhhan/hliehhan
 
@@ -7723,9 +7632,8 @@ Proto Input: *xnékkô
 
 ### Orthography & surface
 
-Old English Orthography: *hnékka, h*nékka
-Outcome: *hnecca, hnecca
-Old English Surface: hnecca
+Old English Orthography: h*nékka
+Outcome: hnecca
 
 
 
@@ -7967,9 +7875,8 @@ Proto Input: *θūsèndi
 
 ### Orthography & surface
 
-Old English Orthography: *þūsend, þ*ūsend
-Outcome: þūsend, *þūsend
-Old English Surface: þūsend
+Old English Orthography: þ*ūsend
+Outcome: þūsend
 
 NOTE: Kroonen *θūsundī- f. 'thousand' → OE þūsend; medial -e- is analogical (Vorbild: ærende < *arundiiu); preserved ū (not ȳ) proves -ī lost before i-umlaut (double umlaut would give *þȳsend); OS/OHG retain -u-
 
@@ -8069,9 +7976,8 @@ Proto Input: *xwálaz
 
 ### Orthography & surface
 
-Old English Orthography: *hwæl, h*wæl
-Outcome: *hwæl, hwæl
-Old English Surface: hwæl
+Old English Orthography: h*wæl
+Outcome: hwæl
 
 NOTE: Kroonen *hwalaz with initial *hw-; OE hwæl.
 
@@ -8096,9 +8002,8 @@ Proto Input: *xwḯnaną
 
 ### Orthography & surface
 
-Old English Orthography: *hwḯnan, h*wḯnan
-Outcome: *hwīnan, hwīnan
-Old English Surface: hwīnan
+Old English Orthography: h*wḯnan
+Outcome: hwīnan
 
 
 
@@ -8121,9 +8026,8 @@ Proto Input: *wḯθagą
 
 ### Orthography & surface
 
-Old English Orthography: *wḯþiġ, *wḯþiġ, *wḯþiġ, *wḯþiġ
-Outcome: wīþiġ, wīþi*ġ, wī*þiġ, wī*þiġ
-Old English Surface: wīþiġ
+Old English Orthography: *wḯþiġ
+Outcome: wīþiġ
 
 NOTE: Campbell §275(7), §376: OE -ig < PGmc *-ag- (cf. *xúnagą → huniġ); see DEV_NOTES §17.10.35 and notable_findings §9. Wiktionary/Kluge *wīþja- cannot derive -ig (heavy ja-stem yields -e/-Ø).
 
@@ -8173,9 +8077,8 @@ Proto Input: *júgunθ
 
 ### Orthography & surface
 
-Old English Orthography: *ġéoguþ, *ġéoguþ, ġ*éoguþ, ġ*éoguþ
-Outcome: *ġeoguþ, *ġeoguþ, ġeoguþ, ġeogu*þ
-Old English Surface: ġeoguþ
+Old English Orthography: ġ*éoguþ
+Outcome: ġeoguþ
 
 NOTE: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows final *-i lost after heavy syllable BEFORE i-umlaut. R/T vol.2 p.141: "*jugunþi > *juguþ". Campbell §332: "duguþ < *dugunþ-, and so geoguþ". (2) Medial u preserved: Campbell §373 "u always well preserved after accented u" (vowel harmony). Contrast *xaubudą > hēafod (au, not u, so u→o). See DEV_NOTES.md §14.9 for full documentation.
 
@@ -8230,9 +8133,8 @@ Rhotacism: *bárjas
 
 ### Orthography & surface
 
-Old English Orthography: *berġes, *berġes
-Outcome: berġes, ber*ġes
-Old English Surface: berġes
+Old English Orthography: *berġes
+Outcome: berġes
 
 NOTE: Note: using gen.sg. *bazjas (> berġes); R/T vol.2 §6.8.2: *rj did not geminate in PWGmc
 
@@ -8257,9 +8159,8 @@ Proto Input: *búrōθi
 
 ### Orthography & surface
 
-Old English Orthography: *bóraþ, *bóraþ
-Outcome: boraþ, bora*þ
-Old English Surface: boraþ
+Old English Orthography: *bóraþ
+Outcome: boraþ
 
 NOTE: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal.
 
@@ -8384,9 +8285,8 @@ Proto Input: *fúrxtīnaz
 
 ### Orthography & surface
 
-Old English Orthography: *fyrhte, *fyrhte
-Outcome: fyr*hte, fyrhte
-Old English Surface: fyrhte
+Old English Orthography: *fyrhte
+Outcome: fyrhte
 
 NOTE: §17.45.3c: target retargeted to obl.sg./pl. paradigm cell fyrhte (BT: Guth. 88,18; 92,1; Bl.H. 57,20; Hml.S.; Ll.Th. 378,22; etc.). Bare-stem nom.sg. *fyrht is unattested due to homonymy with adj. forht (§17.45.3b). Lautgesetzlich derivation: *fúrxtīn → *fúrxtī (NWGmcInStemNLoss, post-PWGmc *-n loss after unstressed *ī, R/T §3.3.1) → *fúrxti (long-V shortening) → *fýrxti (i-umlaut) → fyrhte (Campbell §589.7: -e < -i < -in). §17.46: PROTOFORM updated from *fúrxtīn (which was technically the post-PWGmc-apocope shape, not a true PGmc surface form) to the PGmc gen.sg. *fúrxtīnaz. Choosing gen.sg. as the lemma representative is deliberately strange — the dat.sg. *fúrxtīni, acc.sg. *fúrxtīnų, nom.pl. *fúrxtīniz, and the bare-stem post-apocope *fúrxtīn all derive fyrhte equally well in the current cascade (probed 2026-04-30, all five → fyrhte). Gen.sg. was selected specifically to exercise the longest oblique tail (-naz, requiring NWGmcZLoss, PWGmcFinalBareALoss, NWGmcInStemNLoss, OE long-V shortening, i-umlaut, all in correct relative chronology) and to test that the §17.45 chronology fix and §17.46 stressed-long-ī tier together produce a robust derivation regardless of which oblique cell is chosen as input.
 
@@ -8411,9 +8311,8 @@ Proto Input: *xámaras
 
 ### Orthography & surface
 
-Old English Orthography: *hámeres, h*ámeres
-Outcome: *hameres, hameres
-Old English Surface: hameres
+Old English Orthography: h*ámeres
+Outcome: hameres
 
 NOTE: Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).
 
@@ -8438,9 +8337,8 @@ Proto Input: *xábēθi
 
 ### Orthography & surface
 
-Old English Orthography: *hæβeþ, *hæβeþ, h*æβeþ, h*æβeþ
-Outcome: *hæfeþ, *hæfeþ, hæfeþ, hæfe*þ
-Old English Surface: hæfeþ
+Old English Orthography: h*æβeþ
+Outcome: hæfeþ
 
 NOTE: 3sg pres. indic. (lautgesetzlich); inf. habban is analogical (umlaut leveled, Fulk §12.47)
 
@@ -8465,9 +8363,8 @@ Proto Input: *xémonų
 
 ### Orthography & surface
 
-Old English Orthography: *héoβon, h*éoβon
-Outcome: *heofon, heofon
-Old English Surface: heofon
+Old English Orthography: h*éoβon
+Outcome: heofon
 
 NOTE: PGmc mn-stem acc.sg. *xemonų (Kroonen p.220, Fulk §6.14). Derives via: o-raising (*o→u before *ų), mn-dissimilation (*m→β), back umlaut (*e→eo), trisyllabic apocope (*ų→Ø).
 
@@ -8493,9 +8390,8 @@ Rhotacism: *lírnōθi
 
 ### Orthography & surface
 
-Old English Orthography: *líornaþ, *líornaþ
-Outcome: liornaþ, liorna*þ
-Old English Surface: liornaþ
+Old English Orthography: *líornaþ
+Outcome: liornaþ
 
 NOTE: Class II weak 3sg. Regular: *-ōθi → -aþ. Root has io from breaking before rn. No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757).
 
@@ -8546,9 +8442,8 @@ Proto Input: *líkkōθi
 
 ### Orthography & surface
 
-Old English Orthography: *líkkaþ, *líkkaþ
-Outcome: liccaþ, licca*þ
-Old English Surface: liccaþ
+Old English Orthography: *líkkaþ
+Outcome: liccaþ
 
 NOTE: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Root has cc from WGmc gemination.
 
@@ -8598,9 +8493,8 @@ Proto Input: *líbēθi
 
 ### Orthography & surface
 
-Old English Orthography: *líβeþ, *líβeþ
-Outcome: lifeþ, life*þ
-Old English Surface: lifeþ
+Old English Orthography: *líβeþ
+Outcome: lifeþ
 
 NOTE: 3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem
 
@@ -8625,9 +8519,8 @@ Proto Input: *mákōθi
 
 ### Orthography & surface
 
-Old English Orthography: *makaþ, *makaþ
-Outcome: macaþ, maca*þ
-Old English Surface: macaþ
+Old English Orthography: *makaþ
+Outcome: macaþ
 
 NOTE: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4, R/T vol.2 p.80). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757).
 
@@ -8728,9 +8621,8 @@ Proto Input: *náxti
 
 ### Orthography & surface
 
-Old English Orthography: *niht, *niht
-Outcome: niht, ni*ht
-Old English Surface: niht
+Old English Orthography: *niht
+Outcome: niht
 
 NOTE: R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht
 
@@ -8780,7 +8672,7 @@ Proto Input: *skúldramiz
 
 ### Orthography & surface
 
-Old English Orthography: *sċúldrum
+Old English Orthography: sċ*úldrum
 Outcome: sċuldrum
 
 NOTE: DatPl encoding: PROTOFORM is PGmc-proper *-amiz (inst.pl. branch of dat./inst. merger). See DEV_NOTES §17.41.
@@ -8806,7 +8698,7 @@ Proto Input: *skáub
 
 ### Orthography & surface
 
-Old English Orthography: *sċēaβ
+Old English Orthography: sċ*ēaβ
 Outcome: sċēaf
 
 NOTE: 1/3 sg pret. of *sċūfan 'to shove, push' (class II strong). Retargeted from 3pl pret. *skúbun → sċufon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossiers/bugan-scufan-paradigm-cell-review.md: 1/3 sg pret. is genuinely Lautgesetzlich (rules *au > ēa, *sk- > sċ-, *-b- final devoicing > -f) and corpus-attested (Bosworth-Toller s.v. sċūfan; Ælfric Catholic Homilies). The present infinitive sċūfan has analogical ū back-formed from this sg.-pret. stem (Campbell §740).
@@ -8832,9 +8724,8 @@ Proto Input: *skáwōθi
 
 ### Orthography & surface
 
-Old English Orthography: *sċḗawaþ, *sċḗawaþ
-Outcome: sċēawaþ, sċēawa*þ
-Old English Surface: sċēawaþ
+Old English Orthography: sċ*ḗawaþ
+Outcome: sċēawaþ
 
 NOTE: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.
 
@@ -8859,7 +8750,7 @@ Proto Input: *skáwô
 
 ### Orthography & surface
 
-Old English Orthography: *sċḗawa
+Old English Orthography: sċ*ḗawa
 Outcome: sċēawa
 
 NOTE: Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.
@@ -8910,9 +8801,8 @@ Proto Input: *θístilas
 
 ### Orthography & surface
 
-Old English Orthography: *þístles, þ*ístles
-Outcome: þistles, *þistles
-Old English Surface: þistles
+Old English Orthography: þ*ístles
+Outcome: þistles
 
 NOTE: Paradigm-cell target: GenSg þistles (masc. a-stem). NomSg simplex *þistl is unattested in OE manuscripts; the only attested simplex NomSg is broken þistel (via late-WS svarabhakti, Campbell §§360–363, Hogg §§6.30–6.36), which is not modeled in this FST since the other ten -Cl/Cn/Cm# rows (bōsm, botm, hæsl, nǣdl, ofn, hræfn, scofl, stefn, tācn, wǣpn) deliberately target unbroken Beowulf-poetic / early / Anglian forms. GenSg þistles is fully attested as the inflectional stem and lautgesetzlich (medial cluster, no parasiting; Campbell §363 textbook trio). See DEV_NOTES §17.18.
 
@@ -8991,9 +8881,8 @@ Proto Input: *θréjez
 
 ### Orthography & surface
 
-Old English Orthography: *þrīe, þ*rīe
-Outcome: þrīe, *þrīe
-Old English Surface: þrīe
+Old English Orthography: þ*rīe
+Outcome: þrīe
 
 NOTE: Target retargeted from þrī (late-WS reduction) to þrīe (regular early-WS m.nom/acc., Campbell §683); see DEV_NOTES §17.43.
 
@@ -9097,9 +8986,8 @@ Proto Input: *stráwjaną
 
 ### Orthography & surface
 
-Old English Orthography: *strīeġan, *strīeġan
-Outcome: strīeġan, strīe*ġan
-Old English Surface: strīeġan
+Old English Orthography: *strīeġan
+Outcome: strīeġan
 
 NOTE: Unattested West Saxon cognate; reconstructed *strīeġan per regular WS development of PGmc *straujan-. Attested Anglian strēgan (cf. Ringe & Taylor vol.2 §6.1) proves the class 1 weak verb was inherited into English; the WS form was remodelled as class 2 strewian. We target the predicted WS reflex and deliberately do not model the Anglian-specific smoothing *ēa → *ē / _ġ. See DEV_NOTES §17.10.36.
 
