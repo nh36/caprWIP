@@ -20,6 +20,11 @@ report should include `### Lexeme report` only for OE rows with a non-empty
 report. Ordinary `regular` rows with empty `NOTE` do not require generated
 lexeme-report prose.
 
+For delegated drafting work, the project now also requires **GPT-5.4**
+(`gpt-5.4`) for Old English lexeme research memos and lexeme reports. The
+packet-to-memo and memo-to-report stages are not considered suitable for
+cheap/fallback agent models.
+
 ### Pilot entries completed
 
 The following pilot report files have been drafted:

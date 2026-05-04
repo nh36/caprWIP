@@ -17,6 +17,13 @@ true:
 If a row is `regular`, has an empty `NOTE`, and has no manual pilot/full
 report, do **not** generate a `### Lexeme report` for it.
 
+## Model requirement
+
+For substantive lexeme-report drafting or revision, delegated agents must use
+**GPT-5.4** (`gpt-5.4`), matching the supervising session model. Do not use a
+cheaper or faster fallback model for this stage; final lexeme-report prose is a
+high-judgment task.
+
 ## Required structure
 
 When a lexeme report is required, use these headings:
