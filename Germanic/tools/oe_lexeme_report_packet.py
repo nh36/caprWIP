@@ -8,10 +8,19 @@ import csv
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence
+from typing import Any, Dict, Iterable, List, Sequence
 
-from oe_derivation_report_with_lexeme_reports import BUCKET_PREFIX, extract_field, parse_bucket_name
-from oe_lexeme_report_coverage import apply_manifest, load_manifest, load_oe_rows, load_report_files
+from oe_derivation_report_with_lexeme_reports import (
+    BUCKET_PREFIX,
+    extract_field,
+    parse_bucket_name,
+)
+from oe_lexeme_report_coverage import (
+    apply_manifest,
+    load_manifest,
+    load_oe_rows,
+    load_report_files,
+)
 from oe_paradigm_probe import pilot_specs, render_markdown
 
 
@@ -24,8 +33,43 @@ PARADIGM_KEYWORD_RE = re.compile(
     r")\b",
     re.IGNORECASE,
 )
+EXPLICIT_PARADIGM_DEPENDENCE_RE = re.compile(
+    r"paradigm[- ]cell|using\s+(?:gen|dat|nom|acc)\.?\s*sg\.?|"
+    r"every\s+paradigm\s+cell|no\s+.*paradigm\s+cell|"
+    r"1/3\s*sg\.?\s*pret\.?|3pl\s*pret\.?|retargeted\s+from",
+    re.IGNORECASE,
+)
+PHILOLOGICAL_FORM_NOTE_RE = re.compile(
+    r"\b(?:nom\.?\s*sg\.?|oblique|oblique form|gen\.?\s*sg\.?|dat\.?\s*sg\.?)\b",
+    re.IGNORECASE,
+)
 HEADING_RE = re.compile(r"^#{1,6}\s+")
 REF_KEY_RE = re.compile(r"@\w+\{([^,]+),")
+YEAR_RE = re.compile(r"\b(1[0-9]{3}|20[0-9]{2})\b")
+FILENAME_REF_RE = re.compile(r"([\w-]+\.md)")
+SURNAME_YEAR_RE_TEMPLATE = r"\b{surname}\b(?:[^0-9]{{0,16}})(?P<year>1[0-9]{{3}}|20[0-9]{{2}})"
+TECHNICAL_NOTE_KEYWORDS = [
+    "A-restoration",
+    "a-umlaut",
+    "i-umlaut",
+    "u-lowering",
+    "palatalization",
+    "breaking",
+    "smoothing",
+    "Anglian",
+    "West Saxon",
+    "dat.sg.",
+    "gen.sg.",
+    "1/3 sg pret.",
+]
+DIAGNOSTIC_PATH_MARKERS = (
+    "mismatch",
+    "todo",
+    "snapshot",
+    "sandbox",
+    "english_sandbox",
+    "english-sandbox",
+)
 
 
 @dataclass(frozen=True)
@@ -69,6 +113,23 @@ class TextHit:
     line_number: int
     heading: str
     snippet: str
+
+
+@dataclass(frozen=True)
+class BibEntry:
+    key: str
+    authors: tuple[str, ...]
+    year: str
+
+
+QUERY_PRIORITY = {
+    "row ID": 0,
+    "exact pair": 1,
+    "exact PROTOFORM": 2,
+    "exact COUNTERPART": 3,
+    "note keyword": 4,
+    "concept name": 5,
+}
 
 
 def trim_blank_edges(lines: List[str]) -> List[str]:
@@ -171,9 +232,35 @@ def concept_match_line(line: str, concept: str) -> bool:
     return re.search(rf"\b{re.escape(concept)}\b", line, re.IGNORECASE) is not None
 
 
+def row_id_match_line(line: str, row_id: str) -> bool:
+    return (
+        re.search(rf"\brow\s+{re.escape(row_id)}\b", line, re.IGNORECASE) is not None
+        or f"| {row_id} |" in line
+        or re.search(rf"^\s*{re.escape(row_id)}\b", line) is not None
+    )
+
+
+def pair_match_line(line: str, pair: tuple[str, str]) -> bool:
+    protoform, counterpart = pair
+    lowered = line.casefold()
+    return protoform.casefold() in lowered and counterpart.casefold() in lowered
+
+
+def match_query(line: str, query_value: Any, query_kind: str) -> bool:
+    if query_kind == "exact":
+        return exact_match_line(line, query_value)
+    if query_kind == "concept":
+        return concept_match_line(line, query_value)
+    if query_kind == "row_id":
+        return row_id_match_line(line, query_value)
+    if query_kind == "pair":
+        return pair_match_line(line, query_value)
+    raise ValueError(f"Unsupported query kind: {query_kind}")
+
+
 def collect_text_hits(
     path: Path,
-    queries: Sequence[tuple[str, str, str]],
+    queries: Sequence[tuple[str, Any, str]],
     *,
     max_hits_per_query: int = 5,
 ) -> List[TextHit]:
@@ -183,12 +270,7 @@ def collect_text_hits(
     for query_label, query_value, query_kind in queries:
         count = 0
         for line_number, line in enumerate(lines, start=1):
-            matched = (
-                exact_match_line(line, query_value)
-                if query_kind == "exact"
-                else concept_match_line(line, query_value)
-            )
-            if not matched:
+            if not match_query(line, query_value, query_kind):
                 continue
             key = (query_label, line_number)
             if key in seen:
@@ -209,12 +291,29 @@ def collect_text_hits(
     return hits
 
 
+def query_priority(label: str) -> int:
+    for prefix, priority in QUERY_PRIORITY.items():
+        if label == prefix or label.startswith(prefix + ":"):
+            return priority
+    return 99
+
+
+def dedupe_hits(hits: Sequence[TextHit]) -> List[TextHit]:
+    best: Dict[tuple[str, int], TextHit] = {}
+    for hit in hits:
+        key = (hit.path, hit.line_number)
+        current = best.get(key)
+        if current is None or query_priority(hit.query_label) < query_priority(current.query_label):
+            best[key] = hit
+    return sorted(best.values(), key=lambda item: (item.path, item.line_number, item.query_label))
+
+
 def collect_directory_hits(
     directories: Iterable[Path],
-    queries: Sequence[tuple[str, str, str]],
+    queries: Sequence[tuple[str, Any, str]],
     *,
-    max_hits_per_file: int = 2,
-    max_files: int = 16,
+    max_hits_per_file: int = 3,
+    max_files: int = 24,
 ) -> List[TextHit]:
     hits: List[TextHit] = []
     files_seen = 0
@@ -232,12 +331,7 @@ def collect_directory_hits(
             file_hits = 0
             for query_label, query_value, query_kind in queries:
                 for line_number, line in enumerate(lines, start=1):
-                    matched = (
-                        exact_match_line(line, query_value)
-                        if query_kind == "exact"
-                        else concept_match_line(line, query_value)
-                    )
-                    if not matched:
+                    if not match_query(line, query_value, query_kind):
                         continue
                     hits.append(
                         TextHit(
@@ -291,60 +385,244 @@ def matching_lexical_rows(path: Path, row: AlignedRow, *, table_kind: str) -> Li
         return matches
 
 
-def parse_bibliography_candidates(path: Path, evidence_text: str) -> List[tuple[str, str]]:
+def parse_bibliography_entries(path: Path) -> List[BibEntry]:
     lines = path.read_text(encoding="utf-8").splitlines()
-    entries: List[tuple[str, List[str]]] = []
+    entries: List[BibEntry] = []
     current_key: str | None = None
     current_authors: List[str] = []
+    current_year = ""
     for line in lines:
         key_match = REF_KEY_RE.search(line)
         if key_match:
             if current_key is not None:
-                entries.append((current_key, current_authors))
+                entries.append(
+                    BibEntry(
+                        key=current_key,
+                        authors=tuple(current_authors),
+                        year=current_year,
+                    )
+                )
             current_key = key_match.group(1)
             current_authors = []
+            current_year = ""
             continue
         if current_key and "author" in line and "{" in line and "}" in line:
             author_text = line.split("{", 1)[1].rsplit("}", 1)[0]
             for author in author_text.split(" and "):
                 author = author.strip()
-                if "," in author:
-                    surname = author.split(",", 1)[0].strip()
-                else:
-                    surname = author.split()[-1]
+                surname = author.split(",", 1)[0].strip() if "," in author else author.split()[-1]
                 if surname:
                     current_authors.append(surname)
+        if current_key and line.strip().startswith("year") and "{" in line and "}" in line:
+            current_year = line.split("{", 1)[1].rsplit("}", 1)[0].strip()
     if current_key is not None:
-        entries.append((current_key, current_authors))
+        entries.append(BibEntry(key=current_key, authors=tuple(current_authors), year=current_year))
+    return entries
 
+
+def rank_bibliography_candidates(path: Path, evidence_text: str) -> tuple[List[tuple[str, str]], List[tuple[str, str]]]:
+    entries = parse_bibliography_entries(path)
     lowered_evidence = evidence_text.casefold()
-    candidates: List[tuple[str, str]] = []
-    seen: set[str] = set()
-    for key, authors in entries:
-        reasons = []
-        if key.casefold() in lowered_evidence:
-            reasons.append("explicit key mention")
-        for surname in authors:
-            if re.search(rf"\b{re.escape(surname.casefold())}\b", lowered_evidence):
-                reasons.append(f"author mention: {surname}")
-                break
-        if reasons and key not in seen:
-            seen.add(key)
-            candidates.append((key, "; ".join(reasons)))
-    return candidates
+    explicit_years = set(YEAR_RE.findall(evidence_text))
+    authors_to_entries: Dict[str, List[BibEntry]] = {}
+    for entry in entries:
+        for surname in entry.authors:
+            authors_to_entries.setdefault(surname, []).append(entry)
 
+    scored: Dict[str, tuple[int, str]] = {}
+    low_confidence: List[tuple[str, str]] = []
 
-def should_run_probe(row: AlignedRow) -> bool:
-    return (
-        row.derivation_class in {"late_analogy", "known_unmodelled"}
-        or PARADIGM_KEYWORD_RE.search(row.note or "") is not None
+    for surname, surname_entries in authors_to_entries.items():
+        surname_match = re.search(rf"\b{re.escape(surname.casefold())}\b", lowered_evidence)
+        if not surname_match:
+            continue
+
+        year_match = re.search(
+            SURNAME_YEAR_RE_TEMPLATE.format(surname=re.escape(surname.casefold())),
+            lowered_evidence,
+        )
+        preferred_key: str | None = None
+
+        for entry in surname_entries:
+            reasons: List[str] = []
+            score = 0
+            if entry.key.casefold() in lowered_evidence:
+                score += 100
+                reasons.append("explicit key mention")
+            if year_match and entry.year and year_match.group("year") == entry.year:
+                score += 90
+                reasons.append(f"author + year mention ({surname} {entry.year})")
+            elif entry.year and entry.year in explicit_years and surname.casefold() in lowered_evidence:
+                score += 60
+                reasons.append(f"explicit year mention ({entry.year})")
+            elif surname.casefold() in lowered_evidence:
+                if surname == "Kroonen" and entry.key == "Kroonen2013":
+                    score += 80
+                    reasons.append("default Proto-Germanic etymology key for Kroonen")
+                elif len(surname_entries) == 1:
+                    score += 70
+                    reasons.append(f"single available key for {surname}")
+                else:
+                    score += 20
+                    reasons.append(f"surname mention only: {surname}")
+            if score > 0:
+                scored[entry.key] = (score, "; ".join(reasons))
+
+        if surname == "Kroonen" and "Kroonen2013" in scored:
+            preferred_key = "Kroonen2013"
+        elif year_match:
+            for entry in surname_entries:
+                if entry.year == year_match.group("year") and entry.key in scored:
+                    preferred_key = entry.key
+                    break
+        else:
+            ranked = sorted(
+                [entry for entry in surname_entries if entry.key in scored],
+                key=lambda entry: scored[entry.key][0],
+                reverse=True,
+            )
+            if len(ranked) == 1:
+                preferred_key = ranked[0].key
+            elif ranked and scored[ranked[0].key][0] >= 100:
+                preferred_key = ranked[0].key
+
+        for entry in surname_entries:
+            if entry.key not in scored:
+                continue
+            score, reason = scored[entry.key]
+            if preferred_key == entry.key:
+                continue
+            if len(surname_entries) > 1 or score < 70:
+                low_confidence.append((entry.key, reason))
+
+    preferred = sorted(
+        [
+            (key, reason)
+            for key, (score, reason) in scored.items()
+            if all(key != low_key for low_key, _ in low_confidence)
+        ],
+        key=lambda item: scored[item[0]][0],
+        reverse=True,
     )
+
+    seen_low: set[str] = set()
+    filtered_low: List[tuple[str, str]] = []
+    for key, reason in low_confidence:
+        if key in seen_low or any(key == pref_key for pref_key, _ in preferred):
+            continue
+        seen_low.add(key)
+        filtered_low.append((key, reason))
+
+    return preferred, filtered_low
+
+
+def note_keyword_queries(note: str) -> List[tuple[str, Any, str]]:
+    lowered = note.casefold()
+    queries: List[tuple[str, Any, str]] = []
+    for phrase in TECHNICAL_NOTE_KEYWORDS:
+        if phrase.casefold() in lowered:
+            queries.append((f"note keyword: {phrase}", phrase, "exact"))
+    return queries
+
+
+def referenced_markdown_files(text: str) -> set[str]:
+    return {match.group(1) for match in FILENAME_REF_RE.finditer(text)}
+
+
+def hit_combined_text(hit: TextHit) -> str:
+    return f"{hit.heading}\n{hit.snippet}".casefold()
+
+
+def mentions_exact_pair(hit: TextHit, row: AlignedRow) -> bool:
+    text = hit_combined_text(hit)
+    return row.protoform.casefold() in text and row.counterpart.casefold() in text
+
+
+def mentions_row_id(hit: TextHit, row: AlignedRow) -> bool:
+    text = hit_combined_text(hit)
+    return row_id_match_line(text, row.row_id)
+
+
+def stale_diagnostic_hit(hit: TextHit, row: AlignedRow) -> bool:
+    path_lower = hit.path.casefold()
+    text = hit_combined_text(hit)
+    if any(marker in path_lower for marker in DIAGNOSTIC_PATH_MARKERS):
+        return True
+    if hit.query_label == "concept name":
+        return True
+    if "expected " in text and row.counterpart.casefold() not in text:
+        return True
+    if "former expected" in text or "old target" in text or "previous target" in text:
+        return True
+    return False
+
+
+def classify_dev_hit(hit: TextHit, row: AlignedRow) -> str:
+    if mentions_row_id(hit, row) or mentions_exact_pair(hit, row):
+        return "high"
+    if stale_diagnostic_hit(hit, row):
+        return "diagnostic"
+    if hit.query_label in {"exact PROTOFORM", "exact COUNTERPART"} or hit.query_label.startswith("note keyword:"):
+        return "supporting"
+    return "diagnostic"
+
+
+def classify_analysis_hit(hit: TextHit, row: AlignedRow, referenced_files: set[str]) -> str:
+    basename = Path(hit.path).name
+    if mentions_row_id(hit, row):
+        return "high"
+    if basename in referenced_files:
+        return "high"
+    if stale_diagnostic_hit(hit, row):
+        return "diagnostic"
+    if hit.query_label in {"exact PROTOFORM", "exact COUNTERPART"} or hit.query_label.startswith("note keyword:"):
+        return "supporting"
+    return "diagnostic"
+
+
+def split_hits(
+    hits: Sequence[TextHit],
+    classifier,
+) -> tuple[List[TextHit], List[TextHit], List[TextHit]]:
+    high: List[TextHit] = []
+    supporting: List[TextHit] = []
+    diagnostic: List[TextHit] = []
+    for hit in hits:
+        bucket = classifier(hit)
+        if bucket == "high":
+            high.append(hit)
+        elif bucket == "supporting":
+            supporting.append(hit)
+        else:
+            diagnostic.append(hit)
+    return high, supporting, diagnostic
+
+
+def should_probe_row(row: AlignedRow) -> str | None:
+    if row.derivation_class in {"late_analogy", "known_unmodelled"}:
+        return "required"
+    if EXPLICIT_PARADIGM_DEPENDENCE_RE.search(row.note or ""):
+        return "required"
+    if row.derivation_class == "regular" and PHILOLOGICAL_FORM_NOTE_RE.search(row.note or ""):
+        return "philological_note"
+    return None
 
 
 def generate_probe_section(row: AlignedRow, repo_root: Path) -> List[str]:
-    if not should_run_probe(row):
+    reason = should_probe_row(row)
+    if reason is None:
         return []
+
     lines = ["## Paradigm probe", ""]
+    if reason == "philological_note":
+        lines.append(
+            "Philological note; no paradigm probe required for this row under the current "
+            "classification. The note mentions paradigm forms, but it does not yet depend on "
+            "a paradigm-cell solution."
+        )
+        lines.append("")
+        return lines
+
     probe_row = {
         "CONCEPT": row.concept,
         "COUNTERPART": row.counterpart,
@@ -356,12 +634,13 @@ def generate_probe_section(row: AlignedRow, repo_root: Path) -> List[str]:
     spec_map = pilot_specs(probe_row)
     if key not in spec_map:
         lines.append(
-            "No built-in `oe_paradigm_probe.py` specification exists yet for this row, "
-            "but the packet flagged it for future probe work because the derivation class "
-            "or TSV note points to paradigm-cell reasoning."
+            "Paradigm probe required for this row, but no built-in "
+            "`oe_paradigm_probe.py` specification exists yet. This packet should be "
+            "used to draft the probe configuration before prose drafting."
         )
         lines.append("")
         return lines
+
     lines.extend(
         render_markdown(
             row=probe_row,
@@ -400,6 +679,25 @@ def packet_path_for(row: AlignedRow, packets_dir: Path) -> Path:
     return packets_dir / filename
 
 
+def render_hits_section(title: str, hits: Sequence[TextHit], repo_root: Path) -> List[str]:
+    lines = [f"### {title}", ""]
+    if not hits:
+        lines.append("_None_")
+        lines.append("")
+        return lines
+    for hit in hits:
+        relpath = str(Path(hit.path).relative_to(repo_root))
+        lines.append(f"#### {relpath}:{hit.line_number} ({hit.query_label})")
+        lines.append("")
+        lines.append(f"- Nearby heading: {hit.heading}")
+        lines.append("")
+        lines.append("```text")
+        lines.extend(hit.snippet.splitlines())
+        lines.append("```")
+        lines.append("")
+    return lines
+
+
 def build_packet(
     row: AlignedRow,
     *,
@@ -423,13 +721,33 @@ def build_packet(
             f"{row.row_id} / {row.concept} / {row.counterpart}."
         )
 
-    queries = [
+    queries: List[tuple[str, Any, str]] = [
+        ("row ID", row.row_id, "row_id"),
+        ("exact pair", (row.protoform, row.counterpart), "pair"),
         ("exact PROTOFORM", row.protoform, "exact"),
         ("exact COUNTERPART", row.counterpart, "exact"),
         ("concept name", row.concept, "concept"),
+        *note_keyword_queries(row.note or ""),
     ]
     dev_hits = collect_text_hits(dev_notes_path, queries, max_hits_per_query=6)
-    analysis_hits = collect_directory_hits(analysis_dirs, queries, max_hits_per_file=3, max_files=24)
+    dev_hits = dedupe_hits(dev_hits)
+    analysis_hits = collect_directory_hits(
+        analysis_dirs,
+        queries,
+        max_hits_per_file=3,
+        max_files=32,
+    )
+    analysis_hits = dedupe_hits(analysis_hits)
+    referenced_files = referenced_markdown_files("\n".join([row.note, row.history]))
+    dev_high, dev_supporting, dev_diagnostic = split_hits(
+        dev_hits,
+        lambda hit: classify_dev_hit(hit, row),
+    )
+    analysis_high, analysis_supporting, analysis_diagnostic = split_hits(
+        analysis_hits,
+        lambda hit: classify_analysis_hit(hit, row, referenced_files),
+    )
+
     problem_hits = matching_known_problems(row, known_problems)
     wiktionary_hits = matching_lexical_rows(wiktionary_path, row, table_kind="wiktionary")
     swadesh_hits = matching_lexical_rows(swadesh_path, row, table_kind="swadesh")
@@ -438,14 +756,18 @@ def build_packet(
         [
             row.note,
             row.history,
-            *[hit.snippet for hit in dev_hits],
-            *[hit.snippet for hit in analysis_hits],
+            *[hit.snippet for hit in dev_high],
+            *[hit.snippet for hit in dev_supporting],
+            *[hit.snippet for hit in analysis_high],
+            *[hit.snippet for hit in analysis_supporting],
         ]
     )
-    bib_candidates = parse_bibliography_candidates(refs_path, evidence_text)
+    preferred_bib, low_conf_bib = rank_bibliography_candidates(refs_path, evidence_text)
 
     lines: List[str] = [
         f"# Evidence packet — {row.row_id} {row.concept} / {row.counterpart}",
+        "",
+        "> This packet is evidence for drafting. Do not treat all hits as equally authoritative; prefer high-confidence evidence.",
         "",
         "## TSV row data",
         "",
@@ -490,14 +812,16 @@ def build_packet(
             )
         )
 
-    lines.append("## Compact derivation trace entry")
+    lines.append("## High-confidence evidence")
+    lines.append("")
+    lines.append("### Compact derivation trace entry")
     lines.append("")
     lines.append("```md")
     lines.extend(compact_entry)
     lines.append("```")
     lines.append("")
 
-    lines.append("## Matching oe_known_problems.tsv entries")
+    lines.append("### Matching oe_known_problems.tsv entries")
     lines.append("")
     if not problem_hits:
         lines.append("_None_")
@@ -520,44 +844,17 @@ def build_packet(
             )
         )
 
-    lines.append("## DEV_NOTES hits")
-    lines.append("")
-    if not dev_hits:
-        lines.append("_None_")
-        lines.append("")
-    else:
-        for hit in dev_hits:
-            lines.append(
-                f"### {hit.query_label} — {Path(hit.path).name}:{hit.line_number}"
-            )
-            lines.append("")
-            lines.append(f"- Nearby heading: {hit.heading}")
-            lines.append("")
-            lines.append("```text")
-            lines.extend(hit.snippet.splitlines())
-            lines.append("```")
-            lines.append("")
+    lines.extend(render_hits_section("DEV_NOTES hits", dev_high, repo_root))
+    lines.extend(render_hits_section("Analysis and dossier hits", analysis_high, repo_root))
 
-    lines.append("## Analysis and dossier hits")
+    lines.append("## Supporting/background evidence")
     lines.append("")
-    if not analysis_hits:
-        lines.append("_None_")
-        lines.append("")
-    else:
-        for hit in analysis_hits:
-            relpath = str(Path(hit.path).relative_to(repo_root))
-            lines.append(f"### {relpath}:{hit.line_number} ({hit.query_label})")
-            lines.append("")
-            lines.append(f"- Nearby heading: {hit.heading}")
-            lines.append("")
-            lines.append("```text")
-            lines.extend(hit.snippet.splitlines())
-            lines.append("```")
-            lines.append("")
+    lines.extend(render_hits_section("DEV_NOTES hits", dev_supporting, repo_root))
+    lines.extend(render_hits_section("Analysis and dossier hits", analysis_supporting, repo_root))
 
-    lines.append("## Local lexical-table hits")
+    lines.append("### Local lexical-table hits")
     lines.append("")
-    lines.append("### old_english_wiktionary.tsv")
+    lines.append("#### old_english_wiktionary.tsv")
     lines.append("")
     lines.extend(
         markdown_table(
@@ -574,7 +871,7 @@ def build_packet(
             ],
         )
     )
-    lines.append("### old_english_swadesh.tsv")
+    lines.append("#### old_english_swadesh.tsv")
     lines.append("")
     lines.extend(
         markdown_table(
@@ -591,14 +888,19 @@ def build_packet(
         )
     )
 
+    lines.append("## Possibly stale or diagnostic evidence")
+    lines.append("")
+    lines.extend(render_hits_section("DEV_NOTES hits", dev_diagnostic, repo_root))
+    lines.extend(render_hits_section("Analysis and dossier hits", analysis_diagnostic, repo_root))
+
     lines.append("## Bibliography-key candidates")
     lines.append("")
-    lines.extend(
-        markdown_table(
-            ["Key", "Why it was selected"],
-            [[key, reason] for key, reason in bib_candidates],
-        )
-    )
+    lines.append("### Preferred candidates")
+    lines.append("")
+    lines.extend(markdown_table(["Key", "Why it was selected"], preferred_bib))
+    lines.append("### Low-confidence candidates")
+    lines.append("")
+    lines.extend(markdown_table(["Key", "Why it was selected"], low_conf_bib))
 
     lines.extend(generate_probe_section(row, repo_root))
     return "\n".join(lines) + "\n"
@@ -750,11 +1052,11 @@ def main() -> None:
         germanic_dir / "docs" / "dossiers",
     ]
 
-    if args.id:
-        row = rows_by_id.get(str(args.id))
+    def write(row_id: str) -> Path:
+        row = rows_by_id.get(row_id)
         if row is None:
-            raise SystemExit(f"No Old English TSV row found for ID {args.id}.")
-        out_path = write_packet_for_row(
+            raise SystemExit(f"No Old English TSV row found for ID {row_id}.")
+        return write_packet_for_row(
             row,
             packets_dir=packets_dir,
             manifest_entries=manifest_entries,
@@ -767,34 +1069,17 @@ def main() -> None:
             refs_path=args.refs.expanduser().resolve(),
             repo_root=repo_root,
         )
+
+    if args.id:
+        out_path = write(str(args.id))
         print(f"Wrote {out_path}")
         return
 
     missing_ids = parse_missing_ids(args.missing_report_audit.expanduser().resolve())
     if args.limit is not None:
         missing_ids = missing_ids[: args.limit]
-    written: List[Path] = []
     for row_id in missing_ids:
-        row = rows_by_id.get(row_id)
-        if row is None:
-            raise SystemExit(f"Missing-report audit referenced unknown row ID {row_id}.")
-        written.append(
-            write_packet_for_row(
-                row,
-                packets_dir=packets_dir,
-                manifest_entries=manifest_entries,
-                compact_entry_map=compact_entry_map,
-                known_problems=known_problems,
-                dev_notes_path=args.dev_notes.expanduser().resolve(),
-                analysis_dirs=analysis_dirs,
-                wiktionary_path=args.wiktionary.expanduser().resolve(),
-                swadesh_path=args.swadesh.expanduser().resolve(),
-                refs_path=args.refs.expanduser().resolve(),
-                repo_root=repo_root,
-            )
-        )
-    for path in written:
-        print(f"Wrote {path}")
+        print(f"Wrote {write(row_id)}")
 
 
 if __name__ == "__main__":
