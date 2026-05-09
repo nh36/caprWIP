@@ -52,6 +52,16 @@ These historical figures were not rewritten. They remain as traceability records
 - `Germanic/docs/germanic_transducer_report.md` now has a top-of-file historical-status warning.
 - `Germanic/docs/CANONICAL_STATE.md` now freezes the authoritative project state and source hierarchy for the writing phase.
 
+## Terminology addendum after freeze
+
+After the initial freeze pass, the coverage-audit terminology was refined so that non-manifest files are no longer described as reports.
+
+- **Manifest-backed production reports** remain the only production-report layer.
+- Packets, dev-note slices, research memos, and similar non-manifest files are now described as **source material available**.
+- Rows with neither a manifest-backed production report nor matched supporting files are now described as **no source material found**.
+
+This change was terminology-only. It did not promote any row into `report_manifest.tsv`, create new production reports, or change any research conclusions.
+
 ## Scripts run successfully
 
 ### Coverage audit regeneration
@@ -83,9 +93,9 @@ Local count checks were run against `Germanic/data/germanic-aligned-final.tsv` a
 1. The repository still uses two different denominators for two different purposes:
    - **386 OE lexemes/rows** for pipeline-status reporting
    - **380 OE rows with real counterpart** for lexeme-report coverage
-2. The regenerated coverage audit now treats many non-manifest files as **fuzzy-only** matches. This is consistent with the current tool’s policy, but it means the real production backlog should be read as:
-   - rows with **no report**, plus
-   - rows with only **fuzzy-matched** scaffolding and no manifest-backed production report.
+2. The regenerated coverage audit now treats many non-manifest files as **source material available** rather than production reports. This is consistent with the current tool’s policy, but it means the real production backlog should be read as:
+   - rows with **no source material found**, plus
+   - rows with **source material available** but no manifest-backed production report.
 3. `Germanic/docs/DEV_NOTES.md` contains the authoritative April 2026 closure note, but it also retains many older status totals by design. Future agents should rely on `CANONICAL_STATE.md` before treating any status line as current.
 
 ## Next recommended production step
@@ -98,6 +108,6 @@ python3 Germanic/tools/oe_lexeme_report_coverage.py --output Germanic/docs/lexem
 
 Then work down:
 
-1. `Required rows with no report`
-2. `Required rows with only fuzzy-matched reports`
+1. `Required rows with no source material found`
+2. `Required rows with source material available but no manifest-backed production report`
 3. rows that already have packets/dev-note slices but no manifest-backed production report

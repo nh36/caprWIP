@@ -8,6 +8,15 @@ flat `NOTE:` line in the generated Old English derivation report.
 The TSV `NOTE` and `HISTORY` fields remain source material. They are not the
 final prose.
 
+## Production reports vs source material
+
+- A **production lexeme report** is a report file linked in
+  `Germanic/docs/lexeme_reports/report_manifest.tsv` with status `pilot` or
+  `full`.
+- Packets, dev-note slices, research memos, batch summaries, and similar files
+  are **source material for drafting**, not production-report prose unless they
+  are explicitly promoted into the manifest.
+
 ## Selective-report policy
 
 The generated derivation report should include `### Lexeme report` **only** for

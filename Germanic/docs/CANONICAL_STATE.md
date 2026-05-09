@@ -70,6 +70,8 @@ Generate or polish lexeme reports from:
 
 Do **not** treat older debug snapshots as the basis for current lexeme-report prose or current mismatch counts. They may preserve useful historical diagnostics, but many contain superseded totals, superseded targets, or superseded implementation states.
 
+Only **manifest-backed** entries in `Germanic/docs/lexeme_reports/report_manifest.tsv` with status `pilot` or `full` count as current **production lexeme reports**. Packets, dev-note slices, research memos, batch summaries, and other non-manifest matches are **supporting source material**, not production-report prose.
+
 ## Current assembled outputs
 
 - `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.with_lexeme_reports.publish.md` is the current assembled publish-mode derivation report.
@@ -88,16 +90,16 @@ These are useful reading views, but the authoritative input for new report work 
 - The regenerated audit currently reports:
   - 380 OE rows with real counterpart
   - 148 rows requiring lexeme reports
-  - 11 manifest-backed reports
-  - 136 required rows with only fuzzy-matched report files
-  - 1 required row with no report file match
+  - 11 manifest-backed production reports
+  - 136 required rows with source material available but no manifest-backed production report
+  - 1 required row with no source material found
 
-Because the coverage tool distinguishes **manifest-backed production reports** from **fuzzy-only matches**, the production backlog is not limited to the final “no report” row. Treat both **“Required rows with only fuzzy-matched reports”** and **“Required rows with no report”** as active write-up backlog, with manifest-backed rows being the only authoritative production-report layer.
+Because the coverage tool now distinguishes **manifest-backed production reports** from **supporting source material**, the production backlog is not limited to the final row with no matched files. Treat both **“source material available but no manifest-backed production report”** and **“no source material found”** as active write-up backlog categories.
 
 ## Next production step
 
 Use `Germanic/docs/lexeme_reports/coverage_audit.md` as the backlog for missing lexeme reports, prioritizing:
 
-1. rows with **no report**;
-2. rows with only **fuzzy-matched** scaffolding and no manifest-backed production report;
+1. rows with **no source material found**;
+2. rows with **source material available** but no manifest-backed production report;
 3. rows already represented by packets/dev-note slices but not yet promoted into manifest-backed report files.

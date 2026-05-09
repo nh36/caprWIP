@@ -13,8 +13,9 @@ regular empty-NOTE row count as requiring a production lexeme report.
 Coverage mapping policy:
 - The manifest in Germanic/docs/lexeme_reports/report_manifest.tsv is the
   primary source of truth for row-to-report linkage.
-- Fuzzy matching is diagnostic only, and is run only for existing report files
-  that are not listed in the manifest.
+- Non-manifest file matching is diagnostic only. It identifies supporting
+  source material (packets, dev-note slices, research memos, batch summaries,
+  etc.) for rows that do not yet have a manifest-backed production report.
 """
 
 from __future__ import annotations
@@ -51,7 +52,7 @@ class OERow:
     history: str
     manifest_report_paths: list[str] = field(default_factory=list)
     manifest_statuses: list[str] = field(default_factory=list)
-    fuzzy_report_paths: list[str] = field(default_factory=list)
+    source_material_paths: list[str] = field(default_factory=list)
 
     @property
     def has_note(self) -> bool:
@@ -74,12 +75,12 @@ class OERow:
         return FORMAT_TEST_REPORT_STATUS in self.manifest_statuses
 
     @property
-    def has_fuzzy_report(self) -> bool:
-        return bool(self.fuzzy_report_paths)
+    def has_source_material(self) -> bool:
+        return bool(self.source_material_paths)
 
     @property
-    def has_any_manual_report(self) -> bool:
-        return self.has_manifest_report or self.has_fuzzy_report
+    def has_any_supporting_material(self) -> bool:
+        return self.has_manifest_report or self.has_source_material
 
     @property
     def requires_report(self) -> bool:
@@ -102,20 +103,20 @@ class OERow:
             return "manifest"
         if self.has_format_test_manifest_report:
             return "manifest_format_test"
-        if self.has_fuzzy_report:
-            return "fuzzy"
-        return "-"
+        if self.has_source_material:
+            return "source_material"
+        return "none"
 
     @property
-    def report_paths(self) -> list[str]:
+    def linked_paths(self) -> list[str]:
         if self.has_manifest_report:
             return self.manifest_report_paths
-        if self.has_fuzzy_report:
-            return self.fuzzy_report_paths
+        if self.has_source_material:
+            return self.source_material_paths
         return []
 
     @property
-    def report_status(self) -> str:
+    def production_status(self) -> str:
         if self.has_manifest_report:
             return ", ".join(self.manifest_statuses)
         return "-"
@@ -302,7 +303,7 @@ def row_match_score(path: Path, text: str, row: OERow) -> int:
     return score
 
 
-def assign_fuzzy_diagnostics(
+def assign_source_material_diagnostics(
     rows: list[OERow], report_files: Iterable[Path], reports_root: Path
 ) -> tuple[list[str], list[str]]:
     ambiguous: list[str] = []
@@ -329,7 +330,7 @@ def assign_fuzzy_diagnostics(
             )
             continue
 
-        best_rows[0].fuzzy_report_paths.append(relpath)
+        best_rows[0].source_material_paths.append(relpath)
 
     return ambiguous, unmatched
 
@@ -356,8 +357,8 @@ def row_summary(row: OERow) -> list[str]:
         row.derivation_class,
         "yes" if row.has_note else "no",
         row.coverage_source,
-        row.report_status,
-        ", ".join(row.report_paths) if row.report_paths else "-",
+        row.production_status,
+        ", ".join(row.linked_paths) if row.linked_paths else "-",
         row.requirement_basis,
     ]
 
@@ -375,20 +376,22 @@ def render_class_count_table(rows: list[OERow]) -> list[str]:
     manifest = class_count_rows(
         [row for row in rows if row.requires_report and row.has_production_manifest_report]
     )
-    fuzzy_only = class_count_rows(
-        [
-            row
-            for row in rows
-            if row.requires_report and not row.has_production_manifest_report and row.has_fuzzy_report
-        ]
-    )
-    no_report = class_count_rows(
+    source_material_only = class_count_rows(
         [
             row
             for row in rows
             if row.requires_report
             and not row.has_production_manifest_report
-            and not row.has_fuzzy_report
+            and row.has_source_material
+        ]
+    )
+    no_source_material = class_count_rows(
+        [
+            row
+            for row in rows
+            if row.requires_report
+            and not row.has_production_manifest_report
+            and not row.has_source_material
         ]
     )
 
@@ -401,8 +404,8 @@ def render_class_count_table(rows: list[OERow]) -> list[str]:
                 total[derivation_class],
                 required[derivation_class],
                 manifest[derivation_class],
-                fuzzy_only[derivation_class],
-                no_report[derivation_class],
+                source_material_only[derivation_class],
+                no_source_material[derivation_class],
             ]
         )
     return render_table(
@@ -410,9 +413,9 @@ def render_class_count_table(rows: list[OERow]) -> list[str]:
             "DERIVATION_CLASS",
             "Total rows",
             "Required",
-            "Manifest-backed",
-            "Fuzzy-only",
-            "No report",
+            "Manifest-backed production reports",
+            "Source material available",
+            "No source material found",
         ],
         table_rows,
     )
@@ -432,9 +435,9 @@ def render_section(title: str, rows: list[OERow]) -> list[str]:
                 "Counterpart",
                 "DERIVATION_CLASS",
                 "NOTE?",
-                "Coverage source",
-                "Report status",
-                "Report path(s)",
+                "Coverage category",
+                "Production status",
+                "Production report / source-material path(s)",
                 "Requirement basis",
             ],
             [row_summary(row) for row in rows],
@@ -455,29 +458,29 @@ def build_report(
     manifest_backed_required = [
         row for row in required_rows if row.has_production_manifest_report
     ]
-    fuzzy_only_required = [
+    source_material_required = [
         row
         for row in required_rows
-        if not row.has_production_manifest_report and row.has_fuzzy_report
+        if not row.has_production_manifest_report and row.has_source_material
     ]
-    no_report_required = [
+    no_source_material_required = [
         row
         for row in required_rows
-        if not row.has_production_manifest_report and not row.has_fuzzy_report
+        if not row.has_production_manifest_report and not row.has_source_material
     ]
     regular_empty_note_no_report_required = [
         row
         for row in rows
         if row.derivation_class == "regular"
         and not row.has_note
-        and not row.has_any_manual_report
+        and not row.has_any_supporting_material
     ]
-    regular_empty_note_manual_present = [
+    regular_empty_note_supporting_material_present = [
         row
         for row in rows
         if row.derivation_class == "regular"
         and not row.has_note
-        and row.has_any_manual_report
+        and row.has_any_supporting_material
     ]
     format_test_rows = [row for row in rows if row.has_format_test_manifest_report]
     regular_note_required = [
@@ -493,16 +496,17 @@ def build_report(
             "- Total OE rows with real counterpart: " + str(len(rows)),
             "- Manifest entries loaded: " + str(len(manifest_entries)),
             "- Rows requiring lexeme report: " + str(len(required_rows)),
-            "- Required rows with manifest-backed reports: "
+            "- Required rows with manifest-backed production reports: "
             + str(len(manifest_backed_required)),
-            "- Required rows with only fuzzy-matched reports: "
-            + str(len(fuzzy_only_required)),
-            "- Required rows with no report: " + str(len(no_report_required)),
+            "- Required rows with source material available but no manifest-backed production report: "
+            + str(len(source_material_required)),
+            "- Required rows with no source material found: "
+            + str(len(no_source_material_required)),
             "- Regular rows with empty NOTE and no report required: "
             + str(len(regular_empty_note_no_report_required)),
-            "- Regular rows with empty NOTE but manual report present: "
-            + str(len(regular_empty_note_manual_present)),
-            "- Rows with STATUS=format_test reports: " + str(len(format_test_rows)),
+            "- Regular rows with empty NOTE but supporting material present: "
+            + str(len(regular_empty_note_supporting_material_present)),
+            "- Rows with STATUS=format_test manifest entries: " + str(len(format_test_rows)),
             "- Regular rows with NOTE (report required): "
             + str(len(regular_note_required)),
             "- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): "
@@ -517,15 +521,22 @@ def build_report(
 
     lines.extend(
         render_section(
-            "Required rows with manifest-backed reports", manifest_backed_required
+            "Required rows with manifest-backed production reports",
+            manifest_backed_required,
         )
     )
     lines.extend(
         render_section(
-            "Required rows with only fuzzy-matched reports", fuzzy_only_required
+            "Required rows with source material available but no manifest-backed production report",
+            source_material_required,
         )
     )
-    lines.extend(render_section("Required rows with no report", no_report_required))
+    lines.extend(
+        render_section(
+            "Required rows with no source material found",
+            no_source_material_required,
+        )
+    )
     lines.extend(
         render_section(
             "Regular rows with empty NOTE and no report required",
@@ -534,11 +545,16 @@ def build_report(
     )
     lines.extend(
         render_section(
-            "Regular rows with empty NOTE but manual report present",
-            regular_empty_note_manual_present,
+            "Regular rows with empty NOTE but supporting material present",
+            regular_empty_note_supporting_material_present,
         )
     )
-    lines.extend(render_section("Rows with STATUS=format_test reports", format_test_rows))
+    lines.extend(
+        render_section(
+            "Rows with STATUS=format_test manifest entries",
+            format_test_rows,
+        )
+    )
 
     if manifest_diagnostics:
         lines.append("## Manifest diagnostics")
@@ -547,7 +563,7 @@ def build_report(
             lines.append(f"- {item}")
         lines.append("")
 
-    lines.append("## Ambiguous report files")
+    lines.append("## Ambiguous source-material file matches")
     lines.append("")
     if ambiguous:
         for item in ambiguous:
@@ -556,7 +572,7 @@ def build_report(
         lines.append("_None_")
     lines.append("")
 
-    lines.append("## Unmatched report files")
+    lines.append("## Unmatched source-material files")
     lines.append("")
     if unmatched:
         for item in unmatched:
@@ -608,13 +624,13 @@ def main() -> None:
         rows, manifest_entries, reports_root, report_files
     )
 
-    fuzzy_candidate_files = [
+    source_material_candidate_files = [
         path
         for path in report_files
         if path.relative_to(reports_root).as_posix() not in listed_paths
     ]
-    ambiguous, unmatched = assign_fuzzy_diagnostics(
-        rows, fuzzy_candidate_files, reports_root
+    ambiguous, unmatched = assign_source_material_diagnostics(
+        rows, source_material_candidate_files, reports_root
     )
     report = build_report(
         rows, manifest_entries, manifest_diagnostics, ambiguous, unmatched
