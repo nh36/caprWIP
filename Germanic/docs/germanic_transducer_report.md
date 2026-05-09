@@ -1,3 +1,5 @@
+> **Historical status note (freeze 2026-05-09):** This file is a retained research-era tracing and transducer-status log, not the authoritative current state of the Germanic/OE project. Its mismatch counts and coverage snapshots are historical. For the canonical current status, see `Germanic/README.md` and `Germanic/docs/CANONICAL_STATE.md`.
+
 ### Tracing status (2025-11-30 update)
 
 - Tightened the proto gate so vowel-initial weak tails now require a heavy syllable (diphthong, long vowel, or short vowel + coda) before attaching. `pgrmStrongPlain` is split into light/heavy variants and only the heavy branch can precede the vowel-headed tails.

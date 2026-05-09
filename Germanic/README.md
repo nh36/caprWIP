@@ -8,6 +8,8 @@ This directory contains the active FST development for modeling sound changes fr
 
 **7 mismatches** out of 386 OE lexemes (**98.2% accuracy**, **0 actionable phonology**). All 7 remaining mismatches are documented exceptions in `data/oe_known_problems.tsv` (analogical levellings, lexical *u-preservation near labials).
 
+**Current phase:** lexical write-up and publication preparation, not further sound-change debugging. For the authoritative writing-phase source hierarchy, see `docs/CANONICAL_STATE.md`.
+
 ## Directory Structure
 
 ```
@@ -29,7 +31,9 @@ Germanic/
     └── analysis/                     # Investigation notes
 ```
 
-## Development Workflow
+## Sound-change workflow (for historical reference or if phonology is reopened)
+
+The default current workflow is **write-up**, not mismatch fixing. Use `docs/CANONICAL_STATE.md`, `docs/lexeme_reports/report_schema.md`, `docs/lexeme_reports/report_manifest.tsv`, `docs/lexeme_reports/coverage_audit.md`, and the current compact derivation report when producing or polishing lexeme reports.
 
 ### 1. Compile FST
 ```bash

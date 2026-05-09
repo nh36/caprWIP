@@ -1,6 +1,8 @@
 # Germanic (OE) Working Procedures
 
-**READ THIS FIRST** when resuming work on the Old English pipeline.
+**Current default phase (freeze 2026-05-09): lexical write-up and publication preparation.** Read `Germanic/docs/CANONICAL_STATE.md` first for authoritative current status and source hierarchy.
+
+This file now primarily documents how to reopen or verify **sound-change / FST debugging** work if phonology needs to be revisited later.
 
 ## Default Research Practice: Three-Agent Source Audit
 

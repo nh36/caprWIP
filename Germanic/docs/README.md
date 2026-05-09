@@ -4,13 +4,14 @@ This directory contains all documentation specific to the Proto-Germanic → Old
 
 ## Primary Documentation
 
+- **[CANONICAL_STATE.md](CANONICAL_STATE.md)** — Authoritative current project state and writing-phase source hierarchy
 - **[DEV_NOTES.md](DEV_NOTES.md)** — Main research log with dated entries, phonological decisions, and source citations. Start here for context on any decision.
 
 ## Reports & Analysis
 
-- **[debug_snapshots/](debug_snapshots/)** — Timestamped mismatch and trace reports
+- **[debug_snapshots/](debug_snapshots/)** — Current compact/publish derivation reports plus historical mismatch and trace snapshots
 - **[analysis/](analysis/)** — Deep-dive investigations on specific phenomena
-- **[germanic_transducer_report.md](germanic_transducer_report.md)** — FST coverage summary
+- **[germanic_transducer_report.md](germanic_transducer_report.md)** — Historical pre-freeze FST status summary (not the canonical current OE status page)
 
 ## Reference Materials
 

@@ -65,7 +65,7 @@ capr-v3-working/
 
 The active focus is modeling Proto-Germanic → Old English sound changes via FST rules.
 
-**Current status:** 25 mismatches out of ~386 OE lexemes (94% accuracy)
+**Current status:** research phase complete — **7 mismatches out of 386 OE lexemes** (**98.2% accuracy**), all 7 remaining mismatches documented exceptions, with **0 actionable phonology**. `Germanic/README.md` is the authoritative high-level status page, and `Germanic/docs/CANONICAL_STATE.md` defines the writing-phase source hierarchy.
 
 Key files:
 - `Germanic/fsts/germanic.txt` — Main FST with all sound change rules
