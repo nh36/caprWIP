@@ -1,5 +1,14 @@
 # Model entry implementation report — 2183 shoulder / sċuldrum
 
+## Style-and-claims tightening pass
+
+- This pass revised the model entry lightly rather than reopening the research.
+- The `Conclusion` section was removed.
+- Rhetorical negation was reduced, especially in the comparative and paradigm-comparison prose.
+- Project-facing language was reduced outside the metadata section.
+- Paradigm-comparison certainty was tightened so that probe outputs and trace outputs are labeled as such.
+- Only the model entry and this implementation report were changed in this pass.
+
 ## Files inspected
 
 - `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md`
@@ -30,7 +39,6 @@
   - `Old English evidence`
   - `Development to Old English`
   - `Paradigm comparison`
-  - `Conclusion`
 
 ## Genre corrections applied
 
@@ -72,4 +80,4 @@ The source ledger also records `Fulk2018` as locally available for the `*-o-m(i)
 - No FST files were changed.
 - No manifest files were changed.
 - No packet, dev-note slice, research memo, bibliography file, derivation trace, or existing pilot report was changed.
-- This pass only created the source ledger, replaced the failed model-entry prose, and updated the implementation report.
+- The current style-and-claims pass changed only the model entry and this implementation report.
