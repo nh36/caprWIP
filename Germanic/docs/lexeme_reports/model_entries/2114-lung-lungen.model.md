@@ -1,0 +1,55 @@
+# lung — OE lungen
+
+PROTO: *lungō
+PROTOFORM: *lúnganjō
+COUNTERPART: lungen
+DERIVATION_CLASS: early_analogy
+
+### Transducer input and output
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | lung |
+| citation reconstruction / lexeme label | *lungō |
+| selected input form | *lúnganjō |
+| Old English target | lungen |
+| classification | early_analogy |
+| documented output | *lúnganjō -> lungen |
+
+### Reconstruction and comparative evidence
+
+Kroonen treats the basic noun as `*lungōn-` and also cites an OE-facing
+derivative `*lungunjō-`, continued by Old English `lungen` and close West
+Germanic cognates [@Kroonen2013]. The selected input `*lúnganjō` models that
+derived feminine formation rather than the base noun shown in the metadata.
+
+The difference between the citation label and the selected input is therefore
+derivational. Old English `lungen` is not a direct reflex of the bare base noun
+`*lungō`; it belongs to an expanded feminine formation.
+
+### Old English evidence
+
+Old English dictionaries record the noun as `lungen`, with inflected forms such
+as `lungenne` and `lungena` [@BosworthToller1898]. Clark Hall also preserves a
+small family of compounds such as `lungenādl`, `lungensealf`, and `lungenwyrt`
+[@ClarkHall1960].
+
+The target is an attested Old English lexeme with its own paradigm, not a
+rescued inflectional cell.
+
+### Development to Old English
+
+From the selected derived input, the model passes through the expected
+derivational consonant and vowel adjustments and reaches `lungen`. The live
+derivation is regular once the expanded feminine formation is chosen.
+
+### Formation comparison
+
+The comparison below is manual. It separates the base noun from the derived
+feminine formation reflected in Old English.
+
+| Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| base noun | *lungō | base-noun outcome without the OE derivative suffix | broader family context | useful headword, but not the direct source of `lungen` |
+| derived OE-facing formation | *lúnganjō | compact-trace output: `lungen` | lungen | exact match between selected formation and attested OE noun |
+| Kroonen's cited derivative | `*lungunjō-` | comparative support for the same OE-facing formation | lungen and cognate set | source-level support for the derived formation, though not identical in notation to the live input |

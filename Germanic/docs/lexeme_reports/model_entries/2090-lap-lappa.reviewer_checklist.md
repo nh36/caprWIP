@@ -1,0 +1,53 @@
+# Reviewer checklist result — 2090 lap / lappa
+
+**Overall result:** pass with caveat.
+
+## Genre and scope
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Book-style entry about the word | yes | The prose centers on the weak noun and its OE vowel history. |
+| Avoids project autobiography | yes | Local files appear only in support documents. |
+| Linguistic rather than repository history | yes | The entry is about comparative evidence, OE forms, and development. |
+| Length fits the case | yes | The entry stays compact for a stem-class correction case. |
+
+## Evidence and forms
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Gives actual source forms | yes | `*láppô`, `*lappōn`, `lappa`, `læppa`, and `leappan` are named directly. |
+| Avoids vague disagreement claims | yes | The entry states the conflict between the weak-noun evidence and the stale row label. |
+| Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE forms are separated from the reconstructed PGmc inputs and the row label. |
+| Establishes OE evidence before comparison | yes | `Old English evidence` precedes `Stem comparison`. |
+| Reconstructed OE target flagged if needed | n/a | The target is an attested OE noun. |
+
+## Citations
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Citation keys present in `docs/refs.bib` | yes | `BosworthToller1898`, `Campbell1959`, `ClarkHall1960`, `KlugeSeebold2011`, `Kroonen2013`, `Orel2003`, `SieversBrunner1965`. |
+| Sources cited in prose | yes | No local file names appear in the model entry. |
+| Missing-key issues recorded outside final prose | yes | No missing-key source is cited in the model entry. |
+
+## Claims and certainty
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Documented vs inferred outputs distinguished | yes | The table distinguishes the documented trace output from the stale row label. |
+| Manual comparison labeled | yes | `Stem comparison` is identified as manual. |
+| Avoids overstating certainty | yes | The entry keeps the metadata tension explicit. |
+| Avoids invented forms or probes | yes | No automatic probe is claimed. |
+
+## Style and process
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| No conclusion section | yes | The entry ends on the comparison table. |
+| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Implementation report records checks and scope | yes | Covered in the paired implementation report. |
+
+## Remaining human-review points
+
+1. This entry should not be scaled from mechanically without human review,
+   because the row's `PROTO` label still lags behind the comparative evidence
+   and the selected OE-facing derivation.
