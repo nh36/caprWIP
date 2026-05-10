@@ -222,6 +222,16 @@ Selected entries:
 - The batch avoids the repeated batch-01 `decisive point` / `decisive
   comparison` ending style.
 
+## Post-review correction pass
+
+- The visible OCR/encoding artifact in `2169 sea / sǣ` was paraphrased away in
+  the final prose.
+- The sea entry still preserves the abbreviated-headword vs fuller-i-stem
+  distinction.
+- No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing
+  model entry outside the correction scope, writing-skill file, or pilot report
+  was changed.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing
