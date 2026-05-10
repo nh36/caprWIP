@@ -1,0 +1,66 @@
+# withy — OE wīþiġ
+
+PROTO: *wáiθiz
+PROTOFORM: *wḯθagą
+COUNTERPART: wīþiġ
+DERIVATION_CLASS: early_analogy
+
+### Transducer input and output
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | withy |
+| citation reconstruction / lexeme label | *wáiθiz |
+| selected input form | *wḯθagą |
+| Old English target | wīþiġ |
+| classification | early_analogy |
+| documented output | *wḯθagą -> wīþiġ |
+
+### Reconstruction and comparative evidence
+
+The comparative evidence groups the word with Germanic forms of the
+`*wīþja/ō-` or `*wiþ-` type [@KlugeSeebold2011; @Orel2003]. That material is
+useful for the cognate set, but it does not by itself explain the Old English
+suffix of `wīþiġ`.
+
+For Old English, the decisive point is the suffix history. Campbell treats OE
+`-ig` as the outcome of a derivational `*-ag-` sequence, not of the heavy
+ja-stem suffix `*-ij-` [@Campbell1959, §§275, 376]. A `*wīþja-`-type analysis
+would therefore predict a heavy ja-stem outcome of `-e` or zero type rather
+than `-iġ`, a point reinforced by Adamczyk's treatment of heavy ja-stems
+[@Adamczyk2001]. The selected input `*wḯθagą` is thus a formation choice rather
+than a respelling of the comparative headword.
+
+### Old English evidence
+
+Clark Hall records the noun as `wiðig`, with related inflected forms of the
+same lexical base [@ClarkHall1960]. The form used here, **`wīþiġ`**, is a
+normalized Old English spelling with macrons and palatal `<ġ>`.
+
+The relevant comparison form is therefore not a reconstructed dictionary
+convenience but an established Old English noun. What requires explanation is
+why the selected Proto-Germanic input is `*wḯθagą` rather than a comparative
+`*wīþja-`-type headword.
+
+### Development to Old English
+
+From `*wḯθagą`, Anglo-Frisian brightening gives a fronted vowel in the suffixal
+syllable, and the later Old English development of `*-ag-` yields `-iġ`
+[@Campbell1959, §§275, 376]. Palatalization supplies the final `ġ`, and the
+full development reaches `wīþiġ`.
+
+This derivation is regular for the selected formation. The central claim of the
+entry is therefore morphological: Old English `wīþiġ` belongs with an
+`*-ag-` derivative, whereas the comparative `*wīþja-` label belongs to a
+different way of presenting the cognate family.
+
+### Formation comparison
+
+The comparison below is manual. It distinguishes the comparative headword from
+the Old English-facing formation that actually yields the attested noun.
+
+| Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of `wīþiġ` |
+| heavy ja-stem analysis | `*wīþja-` type | heavy ja-stem `-e` / zero outcome | `wīþiġ` | fails to account for the OE suffix |
+| selected `*-ag-` derivative | *wḯθagą | compact-trace output: `wīþiġ` | wīþiġ | exact match between formation and target |

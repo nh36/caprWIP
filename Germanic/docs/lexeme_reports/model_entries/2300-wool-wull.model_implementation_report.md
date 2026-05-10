@@ -1,0 +1,53 @@
+# Model entry implementation report — 2300 wool / wull
+
+## Files inspected
+
+- `Germanic/docs/lexeme_reports/packets/2300-wool-wull.md`
+- `Germanic/docs/lexeme_reports/dev_notes_slices/2300-wool-wull.md`
+- `Germanic/docs/lexeme_reports/research_memos/2300-wool-wull.md`
+- `Germanic/data/germanic-aligned-final.tsv`
+- `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md`
+- `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md`
+- `Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md`
+- `Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md`
+- `Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md`
+- `Germanic/docs/lexeme_reports/writing_skill/README.md`
+- `Germanic/docs/lexeme_reports/writing_skill/book_entry_template.md`
+- `Germanic/docs/lexeme_reports/writing_skill/reviewer_checklist.md`
+- `docs/refs.bib`
+- local reference files for Campbell, Bülbring, Luick, and Ringe & Taylor
+
+## Files created
+
+- `Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.source_ledger.md`
+- `Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md`
+- `Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.reviewer_checklist.md`
+- `Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model_implementation_report.md`
+
+## Notes on this pass
+
+- Treated the row as `unexplained_unmodelled`, not as a covert repair problem.
+- Kept the regular trace output `woll` explicit and separated from the attested
+  exception `wull / wulle`.
+- Used a manual final comparison; no automatic paradigm probe was run.
+
+## Citation-key check
+
+Checked against `docs/refs.bib`:
+
+- `Bulbring1902`
+- `Campbell1959`
+- `Luick1914`
+- `RingeTaylor2014`
+
+## Unresolved points
+
+- The exception remains unexplained in the literature and in the repo.
+- The normalized row target `wull` and handbook `wulle` both need to stay in
+  view as philologically connected forms of the same lexeme.
+
+## Scope confirmation
+
+- No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
+  file, derivation trace, writing-skill file, or existing model entry was
+  changed.
