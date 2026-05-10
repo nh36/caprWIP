@@ -50,7 +50,9 @@ Checked against `docs/refs.bib`:
 
 - Google Vision text was consulted for Kroonen, Orel, Clark Hall, Seebold, and
   Sievers-Brunner.
-- No source-transcription problem required emendation in the final prose.
+- The local Ringe-Taylor transcription `*h“inana` appears to contain an
+  OCR/encoding problem, and the final prose now paraphrases the claim instead of
+  reproducing that string.
 - Kluge-Seebold's descendant list was checked only as evidence of secondary
   conflation and was kept out of the model entry itself.
 

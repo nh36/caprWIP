@@ -43,7 +43,7 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends with the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | The prose remains lexical and philological, and the suspicious Ringe-Taylor form no longer appears in final prose. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points
@@ -54,3 +54,6 @@
 2. Seebold's note that only a present-tense attestation survives should remain
    visible in review so the entry does not imply a richer attested paradigm than
    the sources support.
+3. The suspicious Ringe-Taylor reconstruction string was checked against the
+   cleanest available local source trail and removed from final prose; the
+   strong-verb versus weak-lament-family distinction remains unchanged.

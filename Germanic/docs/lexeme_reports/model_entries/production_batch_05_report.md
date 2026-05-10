@@ -253,6 +253,15 @@ Selected entries:
 - The batch avoids the repeated batch-01 `decisive point` / `decisive
   comparison` ending style.
 
+## Post-review correction pass
+
+- The suspicious OCR/encoding form in `2286 whine / hwīnan` was corrected by
+  removing the corrupt Ringe-Taylor string from final prose.
+- The source ledger now records the issue appropriately.
+- No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing
+  model entry outside the correction scope, writing-skill file, or pilot report
+  was changed.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing

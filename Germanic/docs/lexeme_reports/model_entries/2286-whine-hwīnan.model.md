@@ -22,8 +22,8 @@ The citation reconstruction preserved in the header belongs to the lament-family
 verb seen in German `weinen` and Old English `wānian`. Kroonen instead separates
 Old English `hwīnan` under `*hwinan-`, and Orel likewise distinguishes strong
 `*xwinanan` from weak `*wainōjanan` [@Kroonen2013; @Orel2003]. Ringe and
-Taylor make the same split at the Northwest Germanic level with `*h“inana`
-behind Old Norse `hvina` and Old English `hwinan` [@RingeTaylor2014].
+Taylor make the same split at the Northwest Germanic level, linking Old Norse
+`hvina` and Old English `hwinan` to the same strong verb [@RingeTaylor2014].
 
 The difference affects both phonology and morphology. The lament family has
 initial `w-`, diphthongal `ai`, and weak-II morphology, whereas the verb behind
@@ -50,9 +50,9 @@ straightforward. The compact trace shows heavy-syllable nasal apocope,
 secondary nasalization, and weak-tail reduction, after which the form surfaces
 as `hwīnan`.
 
-No special paradigm maneuver is needed for this verb. The decisive issue is the
-choice between two different Germanic verb families, and the Old English form
-belongs with the strong verb `*hwīnan-`, not with the weak lament verb.
+No special paradigm maneuver is needed for this verb. The comparison is between
+two different Germanic verb families: the Old English form belongs with the
+strong verb `*hwīnan-`, not with the weak lament verb.
 
 ### Verb-family comparison
 
@@ -63,4 +63,4 @@ that stand behind the inherited Old English forms.
 | :--- | :--- | :--- | :--- | :--- |
 | lament-family weak verb | `*wainōjaną` | comparative continuation in OE `wānian` | wānian | competing citation reconstruction, but not the source of `hwīnan` |
 | selected strong verb | `*xwḯnaną` | compact-trace output: `hwīnan` | hwīnan | exact match between selected input and OE verb |
-| comparative North Germanic cognate | PNWGmc `*h“inana` | ON `hvina` / OE `hwinan` | hwīnan | supports the strong-verb identification |
+| comparative North Germanic cognate | Northwest Germanic strong verb behind ON `hvina` / OE `hwinan` | ON `hvina` / OE `hwinan` | hwīnan | supports the strong-verb identification |
