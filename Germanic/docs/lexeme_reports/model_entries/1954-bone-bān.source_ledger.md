@@ -1,0 +1,13 @@
+# Source extraction ledger — bone / bān
+
+This ledger records the compact evidence used for the regular-with-note entry.
+
+| Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TSV row 1954 | live row | `PROTO *báiną`; target `bān`; note on oblique `*bainăn` | neuter a-stem noun | `bān` | The row already uses nominative-accusative singular `*báiną` as the derivational input. | no | `Germanic/data/germanic-aligned-final.tsv:88` | high |
+| Compact derivation trace | current trace | `*báiną -> bān` | regular noun derivation | `bān` | Confirms that the selected `PROTOFORM` produces the target directly. | no | `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:387-390` | high |
+| Kroonen | comparative etymology | `*baina-`; OE `bān` | neuter headword | `bān` | Supplies the comparative lemma-style reconstruction behind the noun. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`; cited in memo | high |
+| Orel | comparative etymology | `*bainan`; OE `bán` | neuter headword | `bán` | Confirms a second comparative headword convention for the same noun. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt`; cited in memo | medium |
+| Clark Hall / Bosworth-Toller | OE lexicographic evidence | `bān` | dictionary headword | `bān` | Confirms the ordinary Old English citation noun. | yes — `ClarkHall1960`; `BosworthToller1898` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt`; `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt` | high |
+| Bright | reader glossary | `bān`; dat.sg. `bāne` | citation form and oblique paradigm evidence | `bān`; `bāne` | Keeps the nominative/accusative citation form separate from oblique singular evidence. | yes — `BrightCassidyRingler1971` | `docs/references/bright_anglo_saxon_reader.vision.txt`; cited in memo | high |
+| DEV_NOTES slice / research memo | current synthesis | `*báiną`; older `*bainăn -> bānan`; stressed `*ai` verification | live nominative input versus stale oblique debugging path | `bān`; `bānan` | Clarifies that `*bainăn` belongs to superseded debugging history, while `*báiną -> bān` is the live comparison. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1954-bone-bān.md`; `Germanic/docs/lexeme_reports/research_memos/1954-bone-bān.md` | high; keep stale `bānan` out of final prose |

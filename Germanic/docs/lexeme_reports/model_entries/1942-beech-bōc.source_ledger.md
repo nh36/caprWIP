@@ -1,0 +1,12 @@
+# Source extraction ledger — beech / bōc
+
+This ledger records the compact evidence used for the regular-with-note entry.
+
+| Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TSV row 1942 | live row | `PROTO *bōkō`; target `bōc`; note on `*bōk(j)ō-` and `bēċe` | feminine noun; nominative target with oblique background | `bōc`; `bēċe` | The row explicitly treats `bōc` as nominative and `bēċe` as related oblique material. | no | `Germanic/data/germanic-aligned-final.tsv:40` | high |
+| Compact derivation trace | current trace | `*bōkō -> bōc` | regular noun derivation from nominative input | `bōc` | Confirms that the selected `PROTOFORM` produces the target directly. | no | `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:169-172` | high |
+| Kroonen | comparative etymology | `*bōk(j)ō-`; OE `boc, bēce` | lexeme headword with paradigm evidence | `boc`; `bēce` | Supplies the comparative citation form and the nominative / oblique distinction used in the final prose. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`; cited in packet/memo/slice | high |
+| old_english_wiktionary.tsv | supplementary lexical table | `beech -> bēċe` | lexicographic headword / oblique-style background | `bēċe` | Shows why oblique `bēċe` remains relevant background, even though it is not the selected comparator. | no | `Germanic/docs/lexeme_reports/packets/1942-beech-bōc.md` | medium; supplementary evidence only |
+| DEV_NOTES slice | current synthesis plus older mismatch history | `*bōkō`; `bōc`; older expected `bēċe` | nominative target versus superseded oblique expectation | `bōc`; `bēċe` | Clarifies that the live entry should stay with nominative `bōc` and treat older `bēċe` expectations as superseded background. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1942-beech-bōc.md` | high; keep project history out of final prose |
+| Research memo | current synthesis | `*bōkō`; `*bōk(j)ō-`; `bōc`; `bēċe` | selected nominative form versus broader lexeme-family material | `bōc`; `bēċe` | Distinguishes comparative headword, modeled input, and related oblique form for the final entry. | no | `Germanic/docs/lexeme_reports/research_memos/1942-beech-bōc.md` | high |
