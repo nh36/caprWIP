@@ -1,0 +1,14 @@
+# Source extraction ledger — thousand / þūsend
+
+This ledger records the source forms and working distinctions gathered before the
+book-style entry was drafted.
+
+| Source | Date / position | Form(s) given | Morphology / formation | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| TSV row 2252 | live row | `PROTO *θūs-undī`; `PROTOFORM *θūs-èndi`; `þūsend` | comparative headword vs OE-oriented transponent | `þūsend` | The row distinguishes etymological PGmc reconstruction from the OE-facing modelling input. | no | `Germanic/data/germanic-aligned-final.tsv` | high |
+| Compact trace | current trace | `*θūs-èndi -> þūsend` | trace-supported OE-oriented transponent | `þūsend` | Confirms that the current transponent produces the citation form directly. | no | `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md` | high |
+| Kroonen | comparative reconstruction | `*þūsundī-`; OE `þūsend` | comparative PGmc numeral/noun | `þūsend` | Supplies the standard etymological reconstruction behind the row's `PROTO`. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt` | high |
+| Campbell | OE phonology + morphology | double umlaut rule; neuter noun `þūsend` | umlaut chronology and OE lexical status | `þūsend` | Shows that a surviving final `-ī` would predict a different umlaut outcome and confirms `þūsend` as an OE noun. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt` | high |
+| Luick | analogical comparison | `ærende`; later `thousand ... (ae. pūsend, ærende)` | reshaped second-member vowel on an `ærende`-type pattern | `þūsend` | Supplies the classic analogical explanation for medial `-e-`. | yes — `Luick1914` | `docs/references/luick_historische_grammatik.txt` | high |
+| Viredaz | later caution | `OE þūsend`; `OE e in this position could spell ə` | alternative explanation of medial `e` as schwa spelling | `þūsend` | Prevents the analogical account from being stated too categorically. | yes — `GermanicSlavicBaltic2025` | `docs/references/2025_Germanic_Slavic_and_Baltic_thousand.txt` | high; main caveat is explanatory nuance |
+| Local memo / slice synthesis | current project analysis | `*θūs-undī`; `*θūs-èndi`; `þūsend`; `*þȳsend` | etymological headword, OE-oriented transponent, excluded regular double-umlaut result | `þūsend` | The support stack consistently argues that preserved `ū` excludes a simple surviving-`-ī` path while leaving the exact cause of medial `e` somewhat open. | no | `Germanic/docs/lexeme_reports/research_memos/2252-thousand-þūsend.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2252-thousand-þūsend.md`; `Germanic/docs/lexeme_reports/packets/2252-thousand-þūsend.md` | high |
