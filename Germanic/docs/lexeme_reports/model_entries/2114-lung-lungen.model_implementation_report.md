@@ -31,10 +31,17 @@
 
 - Drafted the entry as an `early_analogy` derivational-selection case centered
   on the attested OE feminine noun.
-- Kept the source-level tension between the live `PROTOFORM` and Kroonen's
-  cited derivative visible in the final package.
+- Kept the source-level tension between the normalized input used here and
+  Kroonen's cited derivative visible in the final package.
 - Used a manual `Formation comparison`; no automatic paradigm probe was run in
   this pass.
+
+## Post-review polish
+
+- Recast the `*lungunjō-` / `*lúnganjō` difference as a source-notation and
+  normalization issue rather than repository state.
+- Reduced the emphasis on the notation difference in the model entry while
+  keeping the substantive caveat in this report and the checklist.
 
 ## Citation-key check
 
@@ -46,8 +53,9 @@ Checked against `docs/refs.bib`:
 
 ## Unresolved points
 
-- The main review point is the relation between live `*lúnganjō` and Kroonen's
-  cited `*lungunjō-`; the entry keeps that tension visible rather than flattening it.
+- The main review point is the relation between normalized `*lúnganjō` and
+  Kroonen's cited `*lungunjō-`; the entry keeps that tension visible rather than
+  flattening it.
 
 ## Scope confirmation
 

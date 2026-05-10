@@ -33,7 +33,7 @@
 
 | Item | Result | Note |
 | :--- | :--- | :--- |
-| Documented vs inferred outputs distinguished | yes | The table distinguishes normalized `lifeþ` / attested `lifed` from the later remodeled line. |
+| Documented vs inferred outputs distinguished | yes | Post-review polish tightened the table wording so attested `lifed` and normalized `lifeþ` remain distinct. |
 | Manual comparison labeled | yes | `Paradigm comparison` is identified as manual. |
 | Avoids overstating certainty | yes | The entry limits the strong claim to the archaic finite cell. |
 | Avoids invented forms or probes | yes | No automatic probe is claimed. |
@@ -43,7 +43,7 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends on the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | The prose remains lexical and philological, and the normalization wording was tightened in the polish pass. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points

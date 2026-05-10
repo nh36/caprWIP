@@ -21,7 +21,9 @@ DERIVATION_CLASS: early_analogy
 Kroonen treats the basic noun as `*lungōn-` and also cites an OE-facing
 derivative `*lungunjō-`, continued by Old English `lungen` and close West
 Germanic cognates [@Kroonen2013]. The selected input `*lúnganjō` models that
-derived feminine formation rather than the base noun shown in the metadata.
+derived feminine formation rather than the base noun. The notation differs
+slightly from Kroonen's `*lungunjō-`, but both point to the same derived
+feminine line.
 
 The difference between the citation label and the selected input is therefore
 derivational. Old English `lungen` is not a direct reflex of the bare base noun
@@ -39,9 +41,9 @@ rescued inflectional cell.
 
 ### Development to Old English
 
-From the selected derived input, the model passes through the expected
-derivational consonant and vowel adjustments and reaches `lungen`. The live
-derivation is regular once the expanded feminine formation is chosen.
+From the selected derived input, the expected derivational consonant and vowel
+adjustments lead to `lungen`. Once the expanded feminine formation is chosen,
+the Old English outcome is regular.
 
 ### Formation comparison
 
@@ -52,4 +54,4 @@ feminine formation reflected in Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | base noun | *lungō | base-noun outcome without the OE derivative suffix | broader family context | useful headword, but not the direct source of `lungen` |
 | derived OE-facing formation | *lúnganjō | compact-trace output: `lungen` | lungen | exact match between selected formation and attested OE noun |
-| Kroonen's cited derivative | `*lungunjō-` | comparative support for the same OE-facing formation | lungen and cognate set | source-level support for the derived formation, though not identical in notation to the live input |
+| Kroonen's cited derivative | `*lungunjō-` | comparative support for the same OE-facing formation | lungen and cognate set | supports the derived feminine formation, with notation differing from the normalized input form used here |

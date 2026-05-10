@@ -16,8 +16,8 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | Gives actual source forms | yes | `*knéxtaz`, `*knextaz`, `*knehta-`, `cniht`, and `cneohtas` are named directly. |
-| Avoids vague disagreement claims | yes | The entry states the specific conflict between the row label and the comparative sources. |
-| Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE noun is separated from the reconstructed PGmc inputs and the stale row label. |
+| Avoids vague disagreement claims | yes | The entry states the specific conflict between the competing citation reconstruction and the comparative sources followed here. |
+| Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE noun is separated from the reconstructed PGmc inputs and the competing citation reconstruction. |
 | Establishes OE evidence before comparison | yes | `Old English evidence` precedes `Stem comparison`. |
 | Reconstructed OE target flagged if needed | n/a | The target is an attested OE noun. |
 
@@ -33,7 +33,7 @@
 
 | Item | Result | Note |
 | :--- | :--- | :--- |
-| Documented vs inferred outputs distinguished | yes | The table distinguishes the metadata label from the documented trace output. |
+| Documented vs inferred outputs distinguished | yes | The table distinguishes the competing citation reconstruction from the documented trace output. |
 | Manual comparison labeled | yes | `Stem comparison` is identified as manual. |
 | Avoids overstating certainty | yes | The entry does not claim that the row-level metadata issue is philological consensus. |
 | Avoids invented forms or probes | yes | No automatic probe is claimed. |
@@ -43,11 +43,11 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends on the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | Post-review genre polish removed metadata-facing language from the body prose and comparison table. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points
 
 1. This entry should not be scaled from blindly without human review, because
-   the row metadata still preserves a stale citation label and classification
-   beside the corrected derivational input.
+   the top-level citation label and classification remain out of step with the
+   source-supported reconstruction used in the prose.

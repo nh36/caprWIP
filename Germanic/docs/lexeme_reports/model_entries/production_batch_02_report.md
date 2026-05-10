@@ -142,6 +142,18 @@ Selected entries:
   `2114`; those entries need careful review so the explanation stays lexical
   rather than editorial.
 
+## Post-review polish pass
+
+- Metadata-facing language was removed from `2086 knight / cniht` and
+  `2090 lap / lappa`.
+- Normalization wording was checked and tightened in `2107 live / lifeþ`.
+- Derivative-notation wording was checked and tightened in `2114 lung / lungen`.
+- `2068 heaven / heofon` received a light clarity edit in the development
+  paragraph.
+- No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing
+  model entry outside batch 02, writing-skill file, or pilot report was
+  changed.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

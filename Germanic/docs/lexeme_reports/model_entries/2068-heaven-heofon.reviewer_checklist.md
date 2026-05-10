@@ -43,7 +43,7 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends on the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | The prose remains lexical and philological; the development paragraph was lightly clarified in the polish pass. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points

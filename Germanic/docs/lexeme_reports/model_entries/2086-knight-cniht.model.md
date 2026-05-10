@@ -10,7 +10,7 @@ DERIVATION_CLASS: early_analogy
 | Item | Value |
 | :--- | :--- |
 | lexical item | knight |
-| citation reconstruction / lexeme label | *kníxtaz (row label) |
+| citation reconstruction / lexeme label | *kníxtaz |
 | selected input form | *knéxtaz |
 | Old English target | cniht |
 | classification | early_analogy |
@@ -24,9 +24,9 @@ likewise points to `*knehta-` [@RingeTaylor2014; @Orel2003;
 @KlugeSeebold2011]. The selected input `*knéxtaz` follows that comparative
 evidence.
 
-The row label shown above preserves `*kníxtaz`, but that is not the form
-supported by the handbooks used for the entry. The active derivation is carried
-by `*knéxtaz`.
+A competing citation reconstruction `*kníxtaz` remains possible as a label for
+the word family, but it is not the reconstruction followed here. The Old
+English development discussed below is based on `*knéxtaz`.
 
 ### Old English evidence
 
@@ -48,10 +48,10 @@ is straightforward.
 ### Stem comparison
 
 The comparison below is manual. It separates the handbook-supported `e`-grade
-input from the stale row label preserved in the metadata.
+input from a competing citation reconstruction.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| row citation label | *kníxtaz | label only; not supported by the cited handbooks | row metadata background | retained in metadata, but not followed in the derivation |
+| competing citation reconstruction | *kníxtaz | not the reconstruction followed here | broader citation tradition | useful as a competing label, but not the source-based choice used for the OE derivation |
 | handbook-supported reconstruction | *knéxtaz | compact-trace output: `cniht` | cniht | exact match between comparative reconstruction and attested OE noun |
 | related plural evidence | same stem family | plural `cneohtas` type background | cneohtas | supports the vowel environment, but not the selected target cell |

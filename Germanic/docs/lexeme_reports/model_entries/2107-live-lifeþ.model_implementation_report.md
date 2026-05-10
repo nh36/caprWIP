@@ -36,6 +36,14 @@
 - Used a manual `Paradigm comparison`; no automatic paradigm probe was run in
   this pass.
 
+## Post-review polish
+
+- Tightened the normalization wording so attested `lifed` remains explicit in
+  the Old English evidence and comparison table.
+- Kept the substantive caveat unchanged: the selected target is normalized from
+  an attested archaic finite form rather than drawn from the ordinary lemma
+  tradition.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

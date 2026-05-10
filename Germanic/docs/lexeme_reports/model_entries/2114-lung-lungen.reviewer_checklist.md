@@ -16,7 +16,7 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | Gives actual source forms | yes | `*lungō`, `*lúnganjō`, `*lungunjō-`, `lungen`, `lungenne`, and `lungena` are named directly. |
-| Avoids vague disagreement claims | yes | The entry states the precise difference between the live input and Kroonen's cited derivative. |
+| Avoids vague disagreement claims | yes | The entry states the precise difference between the normalized input used here and Kroonen's cited derivative. |
 | Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE noun is separated from the reconstructed base and derived PGmc forms. |
 | Establishes OE evidence before comparison | yes | `Old English evidence` precedes `Formation comparison`. |
 | Reconstructed OE target flagged if needed | n/a | The target is an attested OE noun. |
@@ -43,11 +43,11 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends on the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | Post-review genre polish recast the notation issue as a source-and-normalization question rather than a repository one. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points
 
 1. This entry should not be scaled from automatically without human review,
-   because the live `PROTOFORM` and Kroonen's cited derivative are close but not
-   identical in notation.
+   because the normalized input used here and Kroonen's cited derivative are
+   close but not identical in notation.

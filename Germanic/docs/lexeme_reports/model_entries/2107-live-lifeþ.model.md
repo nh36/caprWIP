@@ -12,7 +12,7 @@ DERIVATION_CLASS: late_analogy
 | lexical item | live |
 | citation reconstruction / lexeme label | *libēną |
 | selected input form | *líbēθi |
-| Old English target | lifeþ |
+| Old English target | lifeþ (normalized from attested `lifed`) |
 | classification | late_analogy |
 | documented output | *líbēθi -> lifeþ |
 
@@ -54,5 +54,5 @@ ordinary infinitival and later remodeled lemma lines.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive line | *libēną | OE `libban` headword tradition | libban | establishes the lexeme, but not the selected target |
-| selected 3sg present | *líbēθi | compact-trace output: `lifeþ`; attested `lifed` | lifeþ / lifed | exact match for the archaic finite cell |
+| selected 3sg present | *líbēθi | compact-trace output: `lifeþ`; attested `lifed` | lifed, normalized here as lifeþ | selected archaic finite cell |
 | later remodeled present tradition | later class-II-type forms | `lifian` and related finite remodeling | lifian | genuine OE development, but secondary to the selected cell |

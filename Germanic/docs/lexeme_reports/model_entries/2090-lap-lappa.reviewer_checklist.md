@@ -16,8 +16,8 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | Gives actual source forms | yes | `*láppô`, `*lappōn`, `lappa`, `læppa`, and `leappan` are named directly. |
-| Avoids vague disagreement claims | yes | The entry states the conflict between the weak-noun evidence and the stale row label. |
-| Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE forms are separated from the reconstructed PGmc inputs and the row label. |
+| Avoids vague disagreement claims | yes | The entry states the conflict between the weak-noun evidence and the competing voiced comparative label. |
+| Distinguishes attested / normalized / reconstructed / selected forms | yes | The attested OE forms are separated from the reconstructed PGmc inputs and the competing comparative label. |
 | Establishes OE evidence before comparison | yes | `Old English evidence` precedes `Stem comparison`. |
 | Reconstructed OE target flagged if needed | n/a | The target is an attested OE noun. |
 
@@ -33,7 +33,7 @@
 
 | Item | Result | Note |
 | :--- | :--- | :--- |
-| Documented vs inferred outputs distinguished | yes | The table distinguishes the documented trace output from the stale row label. |
+| Documented vs inferred outputs distinguished | yes | The table distinguishes the documented trace output from the competing comparative label. |
 | Manual comparison labeled | yes | `Stem comparison` is identified as manual. |
 | Avoids overstating certainty | yes | The entry keeps the metadata tension explicit. |
 | Avoids invented forms or probes | yes | No automatic probe is claimed. |
@@ -43,11 +43,11 @@
 | Item | Result | Note |
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends on the comparison table. |
-| Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
+| Avoids project-facing language after metadata | yes | Post-review genre polish removed metadata-facing language from the body prose and comparison table. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points
 
 1. This entry should not be scaled from mechanically without human review,
-   because the row's `PROTO` label still lags behind the comparative evidence
-   and the selected OE-facing derivation.
+   because the preserved citation label is weaker than the comparative evidence
+   and the selected OE-facing weak-noun derivation.

@@ -42,10 +42,9 @@ line.
 ### Development to Old English
 
 From `*xémonų`, the relevant pathway includes early `o`-raising before `u`,
-dissimilation in the m/n cluster, later lowering of unstressed `u`, and then
-back mutation before the labial plus back vowel sequence that yields `heo-`
-[@Fulk2018; @Campbell1959]. After the loss of the final high vowel, the surface
-form is `heofon`.
+dissimilation in the m/n cluster, and later lowering of unstressed `u`
+[@Fulk2018; @Campbell1959]. Back mutation then yields `heo-` before the labial
+plus back-vowel sequence, and loss of the final high vowel gives `heofon`.
 
 The front-vocalic nominative line remains important as background because it
 explains the dialectal `hefen` type. West Saxon `heofon` reflects the oblique

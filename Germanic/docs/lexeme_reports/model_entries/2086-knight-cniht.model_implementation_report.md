@@ -37,6 +37,14 @@
 - Used a manual `Stem comparison`; no automatic paradigm probe was run in this
   pass.
 
+## Post-review polish
+
+- Removed metadata-facing phrasing from the body prose and comparison table.
+- Reframed `*kníxtaz` as a competing citation reconstruction rather than as a
+  repository label.
+- Preserved the substantive caveat that the top-level label and classification
+  remain out of step with the source-supported reconstruction used in the entry.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -52,7 +60,7 @@ Checked against `docs/refs.bib`:
 ## Unresolved points
 
 - The main review point is row policy: the corrected derivational input is clear,
-  but the row's `PROTO` and `DERIVATION_CLASS` metadata lag behind it.
+  but the top-level `PROTO` and `DERIVATION_CLASS` metadata still lag behind it.
 
 ## Scope confirmation
 

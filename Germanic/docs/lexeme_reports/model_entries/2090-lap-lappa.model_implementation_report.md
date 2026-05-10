@@ -36,6 +36,14 @@
 - Used a manual `Stem comparison`; no automatic paradigm probe was run in this
   pass.
 
+## Post-review polish
+
+- Removed metadata-facing phrasing from the body prose and comparison table.
+- Reframed `*lábbaz` as a competing comparative label rather than as repository
+  bookkeeping.
+- Preserved the substantive caveat that the weak-noun analysis is stronger than
+  the preserved citation label.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -51,8 +59,8 @@ Checked against `docs/refs.bib`:
 ## Unresolved points
 
 - The main review point is row policy: the selected weak masculine input is
-  well-supported, but the row metadata still preserves the older `*lábbaz`
-  label.
+  well-supported, but the preserved citation label still follows the older
+  `*lábbaz` line.
 
 ## Scope confirmation
 

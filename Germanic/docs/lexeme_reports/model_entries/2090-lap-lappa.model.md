@@ -10,7 +10,7 @@ DERIVATION_CLASS: early_analogy
 | Item | Value |
 | :--- | :--- |
 | lexical item | lap |
-| citation reconstruction / lexeme label | *lábbaz (row label) |
+| citation reconstruction / lexeme label | *lábbaz |
 | selected input form | *láppô |
 | Old English target | lappa |
 | classification | early_analogy |
@@ -24,9 +24,10 @@ West Germanic `lappa` forms alongside Old English `læppa`
 [@Orel2003; @Kroonen2013; @KlugeSeebold2011]. The selected input `*láppô`
 follows that evidence.
 
-The row label shown above preserves `*lábbaz`, but the cited handbooks do not
-make that form the direct source of the Old English noun. The active derivation
-is carried by the weak masculine input `*láppô`.
+A competing comparative label `*lábbaz` has also circulated for the word
+family, but the cited handbooks do not make it the direct source of the Old
+English weak noun. The form relevant to the OE development is the weak
+masculine input `*láppô`.
 
 ### Old English evidence
 
@@ -50,10 +51,10 @@ OE development is regular.
 ### Stem comparison
 
 The comparison below is manual. It separates the weak masculine formation from
-the stale row label preserved in the metadata.
+a competing voiced comparative label.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| row citation label | *lábbaz | label only; does not control the live OE derivation | metadata background | retained in metadata, but not followed in the analysis |
+| competing voiced comparative label | *lábbaz | not the form followed for the OE weak-noun derivation | broader comparative background | useful as a competing label, but not the source-based choice used here |
 | selected weak masculine noun | *láppô | compact-trace output: `lappa` | lappa | exact match between formation and attested OE noun |
 | attested OE variant line | same noun family | `læppa`, `leappan` | læppa / leappan | useful control forms within the same OE tradition |

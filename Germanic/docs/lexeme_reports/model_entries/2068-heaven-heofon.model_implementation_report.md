@@ -38,6 +38,11 @@
 - Used a manual `Paradigm comparison`; no automatic paradigm probe was run in
   this pass.
 
+## Post-review polish
+
+- Broke the densest development sentence into two shorter sentences for clarity.
+- Left the analysis unchanged.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
