@@ -35,7 +35,7 @@
 | :--- | :--- | :--- |
 | Documented vs inferred outputs distinguished | yes | The table labels the compact-trace output explicitly. |
 | Manual comparison labeled | yes | `Formation comparison` is identified as manual. |
-| Avoids overstating certainty | yes | Root-vowel and comparative-family issues are not overclaimed. |
+| Avoids overstating certainty | yes | The suffix argument now presents the `*-ag- > -iġ` line as the Campbell-based analysis adopted here, rather than as a broader certainty claim. |
 | Avoids invented forms or probes | yes | No automatic probe is claimed. |
 
 ## Style and process

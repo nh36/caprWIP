@@ -23,13 +23,14 @@ The comparative evidence groups the word with Germanic forms of the
 useful for the cognate set, but it does not by itself explain the Old English
 suffix of `wīþiġ`.
 
-For Old English, the decisive point is the suffix history. Campbell treats OE
-`-ig` as the outcome of a derivational `*-ag-` sequence, not of the heavy
-ja-stem suffix `*-ij-` [@Campbell1959, §§275, 376]. A `*wīþja-`-type analysis
-would therefore predict a heavy ja-stem outcome of `-e` or zero type rather
-than `-iġ`, a point reinforced by Adamczyk's treatment of heavy ja-stems
-[@Adamczyk2001]. The selected input `*wḯθagą` is thus a formation choice rather
-than a respelling of the comparative headword.
+For Old English, the decisive point is the suffix history. Campbell's account
+of OE `-ig`, including forms such as `hunig`, supports an analysis in which the
+`-iġ` of `wīþiġ` continues a derivational `*-ag-` sequence rather than a heavy
+ja-stem `*-ij-` [@Campbell1959, §§275, 376]. The earlier ja-stem pathway
+remains useful as a comparative possibility, but the Campbell-Adamczyk line on
+heavy ja-stems points instead toward `-e` or zero type outcomes
+[@Campbell1959; @Adamczyk2001]. The selected input `*wḯθagą` is thus a
+formation choice rather than a mere respelling of the comparative headword.
 
 ### Old English evidence
 
@@ -45,9 +46,10 @@ why the selected Proto-Germanic input is `*wḯθagą` rather than a comparative
 ### Development to Old English
 
 From `*wḯθagą`, Anglo-Frisian brightening gives a fronted vowel in the suffixal
-syllable, and the later Old English development of `*-ag-` yields `-iġ`
-[@Campbell1959, §§275, 376]. Palatalization supplies the final `ġ`, and the
-full development reaches `wīþiġ`.
+syllable, and, on the Campbell analysis adopted here, the later Old English
+development of `*-ag-` yields `-iġ` [@Campbell1959, §§275, 376].
+Palatalization supplies the final `ġ`, and the full development reaches
+`wīþiġ`.
 
 This derivation is regular for the selected formation. The central claim of the
 entry is therefore morphological: Old English `wīþiġ` belongs with an
@@ -62,5 +64,5 @@ the Old English-facing formation that actually yields the attested noun.
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of `wīþiġ` |
-| heavy ja-stem analysis | `*wīþja-` type | heavy ja-stem `-e` / zero outcome | `wīþiġ` | fails to account for the OE suffix |
+| heavy ja-stem analysis | `*wīþja-` type | Campbell/Adamczyk-style heavy ja-stem `-e` / zero outcome | `wīþiġ` | does not account cleanly for the OE suffix |
 | selected `*-ag-` derivative | *wḯθagą | compact-trace output: `wīþiġ` | wīþiġ | exact match between formation and target |

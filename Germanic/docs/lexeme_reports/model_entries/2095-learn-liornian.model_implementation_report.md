@@ -32,6 +32,15 @@
   the better-known West Saxon `leornian`.
 - Used a manual `Form comparison`; no automatic paradigm probe was run.
 
+## Revision-pass corrections
+
+- Expanded the development section slightly so the `liornian` / `leornian`
+  distinction is tied more explicitly to Campbell's statement that Northumbrian
+  preserves `io` where original `eo` and `io` remain distinct.
+- Reworded the comparison table so `*líznōjaną -> liornian` is labeled as a
+  computed regular output and attested Northumbrian comparison form, rather than
+  as an over-broadly “documented” derivation.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

@@ -33,6 +33,17 @@
 - Used a manual `Reconstruction status` section; no automatic paradigm or class
   probe was run.
 
+## Revision-pass corrections
+
+- Corrected the Old English development statement so that Proto-Germanic `kn-`
+  is described as corresponding to OE `cn-`, rather than as losing the initial
+  velar.
+- Sharpened the prose to state that `cnobba` is reconstructed, not directly
+  attested, and that the choice of `cnobba` over attested `cnoppa` is a
+  modeling/comparative decision rather than settled OE philology.
+- Updated the checklist wording so the entry no longer passes without caveat:
+  the comparator decision remains the main human-review issue in the batch.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -44,8 +55,8 @@ Checked against `docs/refs.bib`:
 ## Unresolved points
 
 - The main unresolved issue is row policy rather than prose quality: whether the
-  better attested OE comparator should outweigh the currently selected
-  reconstructed form in a later review.
+  better attested OE comparator `cnoppa` should outweigh the currently selected
+  reconstructed form `cnobba` in a later review.
 - The local expert note supports the voiced-branch analysis but was not relied
   on in the final prose except as background.
 

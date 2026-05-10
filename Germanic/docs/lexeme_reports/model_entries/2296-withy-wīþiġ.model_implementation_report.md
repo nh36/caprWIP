@@ -33,6 +33,14 @@
 - Used a manual `Formation comparison`; no automatic paradigm or class probe was
   run in this pass.
 
+## Revision-pass corrections
+
+- Softened the suffix wording so Campbell's `*-ag- > -ig` account is presented
+  as the analysis adopted here, rather than as a broader claim than the ledger
+  supports.
+- Reworded the ja-stem comparison so the comparative `*wīþja-` line remains a
+  live comparative background label rather than a straw-man target.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

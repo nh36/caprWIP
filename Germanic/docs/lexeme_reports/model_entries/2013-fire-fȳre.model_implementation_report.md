@@ -33,10 +33,18 @@
   oblique input `*fūri`, and attested analogical target `fȳre`.
 - Used a manual `Paradigm comparison`; no new automatic paradigm probe was run.
 
+## Revision-pass corrections
+
+- Added direct OE evidence anchoring from Bosworth-Toller for `fyr` and `fyre`
+  in the model entry and source ledger.
+- Reduced the remaining rhetorical-negation phrasing in the OE evidence section
+  so the prose states the inherited and analogical forms positively.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
 
+- `BosworthToller1898`
 - `Campbell1959`
 - `Hogg1992`
 - `Kroonen2013`

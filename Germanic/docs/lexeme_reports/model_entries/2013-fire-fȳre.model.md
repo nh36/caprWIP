@@ -24,21 +24,20 @@ the front-mutated West Germanic forms from an oblique form of the
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
-That distinction matters because the Old English target is not just `fȳr`, the
-regular inherited output, but `fȳre`, an attested form with later analogical
-`-e`.
+That distinction matters because the Old English target combines a regular
+inherited form `fȳr` with an attested analogical surface form `fȳre`.
 
 ### Old English evidence
 
-The Old English evidence distinguishes the ordinary inherited form **`fȳr`**
-from the attested oblique form **`fȳre`**. The first is the regular result of
-the inherited phonology; the second shows the later restoration of a final `-e`
-within the paradigm.
+Bosworth-Toller records **`fyr`** as the noun 'fire' and also preserves oblique
+**`fyre`** in the Old English record [@BosworthToller1898]. The first is the
+regular inherited outcome of the phonological development from the selected
+input; the second shows the later restoration of a final `-e` within the
+paradigm.
 
-The form modeled here is therefore not chosen because a different cell was
-needed to rescue an otherwise failing citation form. Rather, the entry is about the
-relation between a regular inherited oblique input and an attested Old English
-surface form that has undergone later morphological remodeling.
+The entry therefore concerns the relation between a regular inherited oblique
+input and an attested Old English surface form that has undergone later
+morphological remodeling.
 
 ### Development to Old English
 

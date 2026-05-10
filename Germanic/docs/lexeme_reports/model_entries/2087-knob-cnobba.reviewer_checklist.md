@@ -1,6 +1,6 @@
 # Reviewer checklist result — 2087 knob / cnobba
 
-**Overall result:** pass, with one significant human-review point.
+**Overall result:** pass after correction, but a major human-review point remains.
 
 ## Genre and scope
 
@@ -35,7 +35,7 @@
 | :--- | :--- | :--- |
 | Documented vs inferred outputs distinguished | yes | The table labels the selected form as reconstructed and trace-supported. |
 | Manual comparison labeled | yes | `Reconstruction status` is explicitly described as manual. |
-| Avoids overstating certainty | yes | The entry does not present `cnobba` as directly attested. |
+| Avoids overstating certainty | yes | The entry does not present `cnobba` as directly attested and treats the comparator choice as review-sensitive. |
 | Avoids invented forms or probes | yes | No unattested form is presented as attested, and no automatic probe is claimed. |
 
 ## Style and process
@@ -48,7 +48,7 @@
 
 ## Remaining human-review points
 
-1. The main open review issue is conceptual rather than stylistic: whether the
-   row should continue to prioritize reconstructed `cnobba` for the voiced
-   branch or whether attested `cnoppa` is the stronger OE comparator for future
-   row policy.
+1. Pass after correction, but a major human-review point remains: row policy
+   must decide whether reconstructed `cnobba` should remain the comparator for
+   the voiced branch or whether attested `cnoppa` is the preferable OE
+   comparator.

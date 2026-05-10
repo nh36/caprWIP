@@ -39,13 +39,15 @@ family.
 The target **`cnobba`** is different in status. It is a **reconstructed Old
 English form**, not a directly attested one. The point of using it here is to
 give the voiced branch an explicit OE-stage representation instead of allowing
-the attested `cnoppa` branch to stand in for a different prehistory.
+the attested `cnoppa` branch to stand in for a different prehistory. The choice
+of `cnobba` is therefore a modeling and comparative decision rather than a
+settled point of Old English philology.
 
 ### Development to Old English
 
 From the selected weak-noun input `*knúbbô`, the regular Old English outcome is
-`cnobba`, with the ordinary loss of the initial velar in the `kn-` cluster and
-the expected weak-noun ending.
+`cnobba`, with Proto-Germanic `kn-` represented in Old English as `cn-` and
+with the expected weak-noun ending.
 
 The entry therefore does not claim that `cnobba` is attested. Its claim is
 different: if the voiced weak-noun branch is the one to be represented, then
@@ -61,3 +63,7 @@ better-attested neighboring forms.
 | `*knúbbô -> cnobba` | reconstructed OE form; trace-supported | selected target |
 | `cnopp / cnoppa` | attested OE branch | important control form, but belongs to the voiceless branch |
 | `cnæp` | attested OE form from another family | not part of the present lexeme line |
+
+This remains the most review-sensitive item in the present pilot batch, because
+the choice between reconstructed `cnobba` and attested `cnoppa` is still a
+comparator-policy question rather than a settled point of OE attestation.

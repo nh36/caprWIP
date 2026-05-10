@@ -33,7 +33,7 @@
 
 | Item | Result | Note |
 | :--- | :--- | :--- |
-| Documented vs inferred outputs distinguished | yes | The regular derivation is identified as documented. |
+| Documented vs inferred outputs distinguished | yes | The form comparison now labels `liornian` as a computed regular output rather than overstating the evidence. |
 | Manual comparison labeled | yes | `Form comparison` is explicitly described as manual. |
 | Avoids overstating certainty | yes | The entry does not overclaim the status of West Saxon `leornian`. |
 | Avoids invented forms or probes | yes | No automatic probe is claimed. |
@@ -49,5 +49,5 @@
 ## Remaining human-review points
 
 1. The final prose should continue to distinguish Northumbrian `liornian` from
-   the dictionary dominance of West Saxon `leornian` without treating the latter
-   as inauthentic.
+   the dictionary dominance of `leornian` without treating the latter as
+   inauthentic.
