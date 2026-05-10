@@ -1,0 +1,44 @@
+# lick (iptv.2sg) — OE licca
+
+PROTO: *likkōną
+PROTOFORM: *líkkô
+COUNTERPART: licca
+DERIVATION_CLASS: late_analogy
+
+### Transducer input and output
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | lick (iptv.2sg) |
+| finite-stem label | *likkōną |
+| lexeme-level citation form | *líkkōjaną |
+| selected input form | *líkkô |
+| Old English target | licca |
+| classification | late_analogy |
+| documented output | *líkkô -> licca |
+
+### Reconstruction and comparative evidence
+
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc `*li/ekkōn` continuing as Old English `liccian`, Old Saxon `likkon`, and Old High German `lecchon` [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction `*likkōjanan` with the same Old English continuation [@Orel2003].
+
+The form treated here is not that remodeled infinitive but a finite cell in bare trimoric `*-ō`. Campbell's weak class-II discussion and Ringe and Taylor's account of the paradigm both distinguish those finite singular cells from the ordinary `*-ōja-` citation formation [@Campbell1959; @RingeTaylor2014].
+
+### Old English evidence
+
+Bosworth-Toller lemmatizes the verb as `liccian`, and Campbell and Brunner likewise cite `liccian` with preserved geminate `cc` [@BosworthToller1898; @Campbell1959; @SieversBrunner1965]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
+
+The selected target in this entry is the imperative singular `licca`. It is a paradigm form chosen beside the headword `liccian` and the related present `liccaþ`, not a separately lemmatized citation word.
+
+### Development to Old English
+
+With the stem `licc-` established, the remaining development is brief. Trimoric `*-ô` shortens late to `-a` in this finite class-II cell, so `*líkkô` yields `*líkka` and then `licca` [@Campbell1959; @RingeTaylor2014]. The same stem consonantism that appears in `liccian` is preserved here, giving `cc` throughout the finite form.
+
+### Paradigm comparison
+
+The comparison below is manual.
+
+| PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| lexeme-level infinitive | `*líkkōjaną` | manual probe output `liccian` | liccian | ordinary dictionary headword of the verb, but not the selected finite cell |
+| selected imperative singular | `*líkkô` | manual probe output `licca` | licca | exact match between the chosen input and the selected target |
+| present third singular companion | `*líkkōθi` | manual probe output `liccaþ` | liccaþ | useful family control, but not the target of this entry |
