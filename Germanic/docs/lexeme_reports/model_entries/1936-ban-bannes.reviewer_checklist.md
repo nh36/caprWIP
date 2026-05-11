@@ -1,0 +1,49 @@
+# Reviewer checklist result — 1936 ban / bannes
+
+**Overall result:** pass with caveat.
+
+## Genre and scope
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Book-style entry about the word | yes | The entry reads as a lexical note, not a repository report. |
+| Avoids project autobiography | yes | Pilot and packet history are kept out of final prose. |
+| Length fits the case | yes | The paradigm comparison stays compact. |
+
+## Evidence and forms
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Gives actual source forms | yes | `*bánną`, `*bánnas`, `+bann`, `ge-bann`, and `gebanne` are named directly. |
+| Distinguishes reconstructed and attested forms | yes | Lexeme label, selected cell, noun headword, and inferred gen.sg. target are separated. |
+| Avoids vague disagreement claims | yes | The attestation caution for exact `bannes` is stated explicitly. |
+| Reconstructed OE target flagged if needed | yes | `bannes` is identified as the selected regular gen.sg. comparison form rather than as a headword citation. |
+
+## Citations
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Citation keys present in `docs/refs.bib` | yes | `BosworthToller1898`, `Campbell1959`, `ClarkHall1960`, `Orel2003`, `Seebold1970`. |
+| Sources cited in prose | yes | Final prose uses bibliography keys only. |
+| Missing-key issues recorded outside final prose | yes | No missing-key issue affects the entry. |
+
+## Claims and certainty
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| Documented vs inferred outputs distinguished | yes | The trace output and the headword evidence are kept separate. |
+| Manual comparison labeled | yes | The paradigm comparison is explicitly described as manual. |
+| Avoids overstating certainty | yes | Exact `bannes` attestation is not overstated. |
+
+## Style and process
+
+| Item | Result | Note |
+| :--- | :--- | :--- |
+| No conclusion section | yes | The entry ends with the paradigm comparison. |
+| Avoids project-facing language after metadata | yes | The prose remains philological. |
+| Implementation report records checks and scope | yes | Covered in the paired implementation report. |
+
+## Remaining human-review points
+
+1. Keep the noun distinct from the unrelated verb `bannan`.
+2. Keep `bannes` framed as the selected regular genitive singular comparison form, not as a directly cited headword.

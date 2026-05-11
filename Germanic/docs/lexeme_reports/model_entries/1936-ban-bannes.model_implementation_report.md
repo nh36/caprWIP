@@ -1,0 +1,50 @@
+# Model entry implementation report — 1936 ban / bannes
+
+## Files inspected
+
+- `Germanic/docs/lexeme_reports/pilot/ban.md`
+- `Germanic/docs/lexeme_reports/research_memos/1936-ban-bannes.md`
+- `Germanic/data/germanic-aligned-final.tsv`
+- `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md`
+- `docs/refs.bib`
+- local reference files for `BosworthToller1898`, `Campbell1959`, `ClarkHall1960`, `Orel2003`, `Seebold1970`
+
+## Files created
+
+- `Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.source_ledger.md`
+- `Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md`
+- `Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.reviewer_checklist.md`
+- `Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model_implementation_report.md`
+
+## Outcome for this row
+
+- **Upgrade now.** The pilot analysis was substantively sound and mainly needed current-format presentation plus an attestation caution.
+
+## Notes on this pass
+
+- Kept the noun lexeme distinct from older repo material that treated the row as verbal.
+- Made the gen.sg. cell explicit in both the transducer table and the paradigm comparison.
+- Softened the OE evidence line so the entry does not overclaim direct citation for exact `bannes`.
+
+## Citation-key check
+
+Checked against `docs/refs.bib`:
+
+- `BosworthToller1898`
+- `Campbell1959`
+- `ClarkHall1960`
+- `Orel2003`
+- `Seebold1970`
+
+## Unresolved points
+
+- A stronger direct citation for exact unprefixed `bannes` would still improve the row, but current evidence is sufficient for a careful model entry.
+
+## OCR and source-transcription checks
+
+- Existing local vision-backed reference files were sufficient.
+- No unresolved OCR or encoding issue was reproduced in final prose.
+
+## Scope confirmation
+
+- No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.
