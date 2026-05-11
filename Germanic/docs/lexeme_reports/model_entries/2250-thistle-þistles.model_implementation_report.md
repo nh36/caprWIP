@@ -28,6 +28,7 @@
 - Kept the simplex headword tradition `þistel/ðistel` in the OE evidence section rather than trying to suppress it.
 - Used Campbell for the phonological contrast between broken simplex forms and unbroken oblique cluster forms.
 - Did not let the final prose drift into pilot-report, manifest, or row-history language.
+- Post-review source cleanup: corrected the suspicious Campbell example `tdcn` to `tacn` after rechecking the local Campbell file, which gives `tacn token` clearly at line 14506 and cross-references `tdcn` as the same word elsewhere.
 
 ## Citation-key check
 
@@ -45,7 +46,8 @@ Checked against `docs/refs.bib`:
 
 ## OCR and source-transcription checks
 
-- Existing local vision-backed reference files were sufficient.
+- No Campbell Google Vision-backed file was available locally.
+- The local Campbell file was rechecked for the suspicious `tdcn`; a clearer internal occurrence gives `tacn token`, so the final prose and ledger now use `tacn`.
 - No unresolved OCR or encoding issue was reproduced in final prose.
 
 ## Scope confirmation

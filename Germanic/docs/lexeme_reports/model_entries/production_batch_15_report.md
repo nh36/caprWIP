@@ -127,6 +127,15 @@ parasiting.
   project-facing explanation of why the row changed. The completed entry keeps
   the discussion source-facing and philological instead.
 
+## Post-review source-cleanup pass
+
+- The suspicious Campbell example `tdcn` in `2250 thistle / þistles` was
+  checked against the local Campbell file.
+- It was corrected to `tacn` in the final model entry and source ledger.
+- The substantive analysis and the record that P3 is exhausted were not changed.
+- No TSV, FST, manifest, pilot, packet, memo, bibliography, derivation trace,
+  existing model entry outside `2250`, or writing-skill file was changed.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing

@@ -10,10 +10,10 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 | Orel | `*þe(x)stilaz`; OE `þistel` | Supplies the comparative `*e`-grade headword background. | yes — `Orel2003` | `docs/references/legacy/orel_handbook_germanic_etymology.txt`; memo | high |
 | Kluge-Seebold | `*þistila-`; daughter-language `i` forms | Supplies the competing `*i`-grade comparative tradition behind the selected input. | yes — `KlugeSeebold2011` | `docs/references/kluge_seebold_etymologisches_woerterbuch.txt`; memo | high |
 | Clark Hall | `ðistel` | Confirms the simplex Old English headword tradition. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt` | high |
-| Campbell | `hrefn`, `tdcn`, `wépn`, `botm`; parasite-vowel discussion | Supplies the phonological contrast between broken simplex forms and unbroken cluster forms in comparable nouns. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt`; memo | high |
+| Campbell | `hrefn`, `tacn`, `wépn`, `botm`; parasite-vowel discussion | Supplies the phonological contrast between broken simplex forms and unbroken cluster forms in comparable nouns. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt`; memo | high; local file prints `tdcn` once at line 9975, but gives `tacn token` clearly at line 14506 and cross-references `tdcn` as the same word |
 
 ## Notes
 
 - The local reference files checked here support simplex `þistel/ðistel` more directly than the exact gen.sg. `þistles`; the exact inflected target is better documented in the row-local memo, packet, and DEV_NOTES material than in the compact dictionaries.
-- Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
+- No Campbell Google Vision-backed file was available locally; the correction from `tdcn` to `tacn` rests on the clearer internal Campbell occurrence `tacn token` and the file's own cross-reference to `tdcn`.
 - No unresolved OCR or encoding artifact was reproduced in final prose.

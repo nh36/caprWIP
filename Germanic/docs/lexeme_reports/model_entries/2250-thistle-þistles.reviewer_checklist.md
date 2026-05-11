@@ -26,6 +26,7 @@
 | Citation keys present in `docs/refs.bib` | yes | `Campbell1959`, `ClarkHall1960`, `KlugeSeebold2011`, `Orel2003`. |
 | Sources cited in prose | yes | Final prose uses bibliography keys only. |
 | Missing-key issues recorded outside final prose | yes | The direct lexicographic support for exact `þistles` is thinner than for simplex `þistel`, and that issue is kept out of final prose. |
+| Suspicious Campbell example checked | yes | The local Campbell file's `tdcn` was checked against clearer internal occurrences and corrected to `tacn` in the model entry and ledger. |
 
 ## Claims and certainty
 

@@ -35,7 +35,7 @@ oblique form where the cluster is medial.
 Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
 while comparable medial clusters remain unbroken; his examples include `hrefn`,
-`tdcn`, `wépn`, and `botm` beside forms with parasitic vowels elsewhere in the
+`tacn`, `wépn`, and `botm` beside forms with parasitic vowels elsewhere in the
 same lexical class [@Campbell1959]. The selected genitive singular `*θístilas`
 therefore supplies the conservative comparison form: the cluster is medial and
 the regular development yields `þistles`, while the simplex nominative belongs
