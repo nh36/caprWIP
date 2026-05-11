@@ -21,23 +21,22 @@ DERIVATION_CLASS: unexplained_unmodelled
 Kroonen and Orel both reconstruct the word with a geminate stop, `*bukkaz`, and
 both also preserve parallel n-stem material behind Old English `bucca`
 [@Kroonen2013; @Orel2003]. The selected input therefore remains identical with
-the lexeme label: the entry is not solved by switching to a different inherited
-cell.
+the lexeme label: no alternative inherited cell accounts for the form.
 
 ### Old English evidence
 
 Old English preserves a mixed lexical picture. Campbell cites `bucca` in the
 exception set for this phonological environment, while Clark Hall and
 Bosworth-Toller show that Old English has both `bucca` and `bucc`
-[@Campbell1959; @ClarkHall1960; @BosworthToller1898]. The present entry targets
-the a-stem citation form `bucc`, with `bucca` kept as genuine philological
+[@Campbell1959; @ClarkHall1960; @BosworthToller1898]. The a-stem citation form
+`bucc` is the target treated here, with `bucca` kept as genuine philological
 background from the same lexical family.
 
 ### Development to Old English
 
-From `*búkkaz`, the regular inherited path gives `bocc` in the current trace
-output. That is the form expected under the ordinary lowering pattern in this
-environment. `bucc` therefore remains outside the deterministic phonology.
+From `*búkkaz`, the regular inherited path gives `bocc`. That is the form
+expected under the ordinary lowering pattern in this environment. `bucc`
+therefore remains outside the deterministic phonology.
 
 No accepted inherited cell repairs the mismatch. A high-vowel alternative would
 introduce i-umlaut and produce a `byċċ`-type form rather than the target.
@@ -49,5 +48,5 @@ paradigm-cell survival.
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
 | regular inherited noun path | *búkkaz | compact-trace output: `bocc` | regular output, but not the target |
-| attested OE target | — | `bucc` | genuine target form, but unexplained in the current model |
+| attested OE target | — | `bucc` | genuine target form, but unexplained in the present classification |
 | parallel OE lexical background | — | `bucca` | related n-stem form, not the present target |

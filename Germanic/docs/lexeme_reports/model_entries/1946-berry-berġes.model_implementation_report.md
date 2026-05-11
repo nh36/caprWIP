@@ -26,6 +26,7 @@
 - Kept lexeme-level `*bázją` separate from selected gen.sg. `*bázjas`.
 - Used Campbell for the citation-form side and Ringe-Taylor for the `here/herges` parallel.
 - Softened the OE evidence line so the entry does not overclaim direct citation for exact `berġes`.
+- Post-review genre polish replaced `The row note matters` / `The row is therefore solved` with source-facing wording about non-geminating `*rj` and the genitive comparison.
 
 ## Citation-key check
 

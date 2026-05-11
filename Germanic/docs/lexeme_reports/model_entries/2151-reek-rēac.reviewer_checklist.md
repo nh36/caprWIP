@@ -41,6 +41,7 @@
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends with a short form note. |
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
+| Genre-polish correction applied | yes | Removed row-facing target language while keeping the reconstructed-versus-attested distinction unchanged. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points

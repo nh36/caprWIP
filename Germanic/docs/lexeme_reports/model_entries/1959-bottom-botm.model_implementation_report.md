@@ -25,6 +25,7 @@
 - Kept the three-way distinction between lexeme label, selected input, and OE target explicit.
 - Treated the analogical step as pre-OE stem formation rather than as a later cell-based repair.
 - Left the separate medial-`u` dossier implications out of final prose.
+- Post-review genre polish replaced `The row's PROTO` wording with source-facing phrasing about the comparative label `*búdmaz` and selected pre-Old-English `*búttmaz`.
 
 ## Citation-key check
 

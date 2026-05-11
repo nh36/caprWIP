@@ -41,6 +41,7 @@
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends after the development section. |
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
+| Genre-polish correction applied | yes | Recast row-facing proto wording without changing the stem-level analysis. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points

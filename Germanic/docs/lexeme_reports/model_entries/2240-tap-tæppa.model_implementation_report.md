@@ -26,6 +26,7 @@
 - Kept `tappa` as the regular inherited noun output and `tæppa` as the attested target.
 - Mentioned the related j-verb only as a short background comparison.
 - Did not preserve the old noun-oblique or j-verb rescues as live analysis.
+- Post-review genre polish replaced `current model` / `current analysis` wording with source-facing exception language.
 
 ## Citation-key check
 

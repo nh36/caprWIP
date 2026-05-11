@@ -26,16 +26,15 @@ cell of the feminine ō-stem paradigm [@SieversBrunner1965].
 ### Old English evidence
 
 The reviewed lexicographic evidence more directly supports the citation noun
-`spann` than the exact form `spanne`. Clark Hall gives `spann`, and the present
-entry accordingly treats `spanne` as the selected regular dative singular
-comparison form rather than as a dictionary headword [@ClarkHall1960].
+`spann` than the exact form `spanne`. Clark Hall gives `spann`, and `spanne` is
+accordingly treated as the selected regular dative singular comparison form
+rather than as a dictionary headword [@ClarkHall1960].
 
 ### Development to Old English
 
-Citation `*spannō` yields `span` in the current trace output. The selected
-dative singular `*spánnai`, however, preserves the medial geminate and ends in
-`spanne`. The row is therefore solved by choosing the oblique cell where the
-regular development reaches the target.
+Citation `*spannō` yields `span`. The oblique cell `*spánnai` therefore
+supplies the conservative comparison form: it preserves the medial geminate and
+yields `spanne`, while citation `*spannō` gives the nominative background form.
 
 ### Paradigm comparison
 

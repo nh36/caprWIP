@@ -20,8 +20,9 @@ DERIVATION_CLASS: early_analogy
 
 Comparative sources disagree about the older stem class. Kroonen gives a u-stem
 `*kraftu-`, while Orel prints `*kraftiz *kraftuz` [@Kroonen2013; @Orel2003].
-The row therefore keeps `*kráftiz` as the lexeme-level comparative label, but
-uses `*kráftaz` as the pre-Old-English modelling input.
+The comparative label `*kráftiz` remains in view as a lexeme-level shorthand,
+while `*kráftaz` is the pre-Old-English form used for the Old English
+derivation.
 
 ### Old English evidence
 
@@ -30,13 +31,14 @@ The Old English noun itself is secure. Clark Hall and Bosworth-Toller both give
 
 ### Development to Old English
 
-The decisive comparison is between possible pre-Old-English inputs. In the live
-comparator run, `*kráftiz` yields `creft`, `*kráftuz` yields `craft`, and only
-`*kráftaz` yields `cræft`. The selected input therefore does not claim that the
-comparative dictionaries were wrong in every respect. It states the narrower
-point that the Old English derivation requires a pre-Old-English form without
-the i-umlaut trigger of `*-iz` and without the back-vowel outcome associated
-with the u-stem comparator.
+The comparison is between possible pre-Old-English inputs. The i-stem
+comparator `*kráftiz` gives `creft`, while the u-stem comparator `*kráftuz`
+gives `craft`. The a-stem-shaped input `*kráftaz` yields `cræft` and is
+therefore the form used for the Old English derivation. This does not require
+treating the comparative dictionaries as identical; it shows the narrower point
+that the Old English derivation needs a pre-Old-English form without the
+i-umlaut trigger of `*-iz` and without the back-vowel outcome associated with
+the u-stem comparator.
 
 ### Form comparison
 

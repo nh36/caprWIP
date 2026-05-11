@@ -25,6 +25,7 @@
 - Kept the row as an early-analogy stem-selection case.
 - Used the live three-way comparator run as the main control.
 - Did not rewrite `PROTO` in prose as though the comparative dispute had disappeared.
+- Post-review genre polish removed `The row`, `decisive comparison`, and `live comparator run` phrasing from final prose and recast the paragraph as a source-facing form comparison.
 
 ## Citation-key check
 

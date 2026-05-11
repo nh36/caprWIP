@@ -25,6 +25,7 @@
 - Kept lexeme-level `*spannō` separate from selected dat.sg. `*spánnai`.
 - Used the dative-singular morphology note only to support the selected cell, not to inflate the entry.
 - Softened the OE evidence line so the entry does not overclaim direct citation for exact `spanne`.
+- Post-review genre polish removed `present entry`, `current trace output`, and `row is therefore solved` phrasing from final prose and recast the development paragraph around the oblique-cell comparison.
 
 ## Citation-key check
 

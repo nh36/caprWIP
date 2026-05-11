@@ -32,9 +32,8 @@ form, not a reconstructed convenience spelling.
 
 ### Development to Old English
 
-From `*táppô`, the regular inherited noun path in the current model gives
-`tappa`. The attested target `tæppa` therefore stands outside that regular
-phonological development.
+From `*táppô`, the regular inherited noun path gives `tappa`. The attested
+target `tæppa` therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
 inherited input. A related j-verb pathway would give `teppan`, not the noun
@@ -45,5 +44,5 @@ target `tæppa`. The entry accordingly remains `known_unmodelled`.
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
 | regular inherited noun path | *táppô | compact-trace output: `tappa` | regular output, but not the target |
-| attested OE target | — | `tæppa` | genuine target form, but analogically remodelled in the current analysis |
+| attested OE target | — | `tæppa` | genuine target form, but analogically remodelled in the present classification |
 | related j-verb background | *táppjaną | `teppan` | related formation, but not the noun target |

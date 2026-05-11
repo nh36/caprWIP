@@ -25,6 +25,7 @@
 - Kept the three-way distinction between cognate-set proto, selected OE input, and reconstructed noun target.
 - Marked attested `rēc` as background rather than as the row target.
 - Kept attested verbal `rēac` out of the noun argument except as a contrastive note.
+- Post-review genre polish replaced `present target` / `represented by this row` wording with source-facing reconstructed-versus-attested language.
 
 ## Citation-key check
 

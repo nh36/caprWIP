@@ -25,6 +25,7 @@
 - Kept `cwedu` as the selected attested conservative variant.
 - Used the wider variant set to frame the row without turning it into a dossier.
 - Left the stale live `PROTO = *kwíθuz` metadata untouched and documented it here instead.
+- Post-review genre polish replaced `present entry` / `represented by this row` phrasing with source-facing variant language.
 
 ## Citation-key check
 

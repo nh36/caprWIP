@@ -29,8 +29,8 @@ variant `cwedu`.
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss `cwidu > cwudu > cudu` and also
 note late West Saxon `cweodu`; Clark Hall gives `cwudu`, `cweodu`, and `cudu`
-[@RingeTaylor2014; @ClarkHall1960]. The present entry selects attested `cwedu`
-as the conservative variant represented here.
+[@RingeTaylor2014; @ClarkHall1960]. Attested `cwedu` is treated here as the
+conservative variant within that set.
 
 ### Development to Old English
 
@@ -44,7 +44,7 @@ input.
 
 | Variant type | Old English form | Comment |
 | :--- | :--- | :--- |
-| conservative target | `cwedu` | selected attested variant represented by this row |
+| conservative target | `cwedu` | selected attested variant represented here |
 | leveled i-grade form | `cwidu` | common lexical variant in the same family |
 | back-umlauted forms | `cweodu`, `cwudu` | later developments within the same OE tradition |
 | reduced form | `cudu` | further reduced member of the same variant set |

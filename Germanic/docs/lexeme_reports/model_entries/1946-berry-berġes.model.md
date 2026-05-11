@@ -22,7 +22,7 @@ Kroonen reconstructs the berry noun as `*basja- ~ *bazja-` [@Kroonen2013]. The
 selected input `*bázjas` is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 
-The row note matters because `*rj` did not geminate in Proto-West Germanic.
+The relevant point is that `*rj` did not geminate in Proto-West Germanic.
 Ringe and Taylor's `here, herges` comparison shows the same `rj` environment in
 an Old English paradigm without any hidden gemination repair [@RingeTaylor2014].
 
@@ -36,11 +36,10 @@ dictionary headword.
 
 ### Development to Old English
 
-Citation `*bázją` does not produce the selected target in the current cascade.
-The genitive singular `*bázjas`, however, gives `berġes`, with medial `-rġ-`
-preserved in the same way that Ringe and Taylor cite `herges` beside `here`
-[@RingeTaylor2014]. The row is therefore solved by paradigm choice, not by an
-extra phonological rule.
+Citation `*bázją` gives `bere`, not the selected target. The genitive singular
+`*bázjas`, however, gives `berġes`, with medial `-rġ-` preserved in the same
+way that Ringe and Taylor cite `herges` beside `here` [@RingeTaylor2014]. This
+points to paradigm choice rather than to an extra phonological rule.
 
 ### Paradigm comparison
 

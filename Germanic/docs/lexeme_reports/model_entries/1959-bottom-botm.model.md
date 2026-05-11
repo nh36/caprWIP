@@ -20,9 +20,9 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs the word as a stem complex `*budmō, gen. *buttaz`,
 summarized as `*budman- ~ *buttman-`, and gives Old English `botm` as the reflex
-[@Kroonen2013]. The row's `PROTO` therefore serves as the lexeme-level label,
-while the selected input `*búttmaz` represents the pre-Old-English form with
-oblique `*butt-` generalized into the nominative formation.
+[@Kroonen2013]. The comparative label `*búdmaz` names the lexeme-level stem
+complex, while the selected input `*búttmaz` represents the pre-Old-English
+form with oblique `*butt-` generalized into the nominative formation.
 
 Orel likewise preserves both sides of the comparison under `*budmaz *butmaz`
 [@Orel2003]. The selected input is thus a historical stem choice, not an

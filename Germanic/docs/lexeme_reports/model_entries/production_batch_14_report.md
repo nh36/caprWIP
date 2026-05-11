@@ -256,6 +256,15 @@ target, or regular output and documented exception. `1933 adder / nǣdre` and
 - No final `.model.md` entry was allowed to drift back into pilot-report or
   dossier prose.
 
+## Post-review genre-polish pass
+
+- Final-prose references to rows, live comparator runs, and
+  decisive-comparison phrasing were removed from the relevant batch-14 model
+  entries.
+- The substantive analyses, citations, tables, and caveats were not changed.
+- No TSV, FST, manifest, pilot, packet, memo, bibliography, derivation trace,
+  existing model entry outside batch 14, or writing-skill file was changed.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography, derivation trace, existing

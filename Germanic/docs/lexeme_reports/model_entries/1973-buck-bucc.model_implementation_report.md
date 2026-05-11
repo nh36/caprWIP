@@ -26,6 +26,7 @@
 - Kept `bucc` as a documented exception to the regular `bocc` output.
 - Kept `bucca` as philological background only.
 - Did not preserve the withdrawn `*búkkis -> bucces` proposal in final prose.
+- Post-review genre polish removed `present entry`, `current trace output`, and `current model` phrasing from final prose while keeping the exception analysis unchanged.
 
 ## Citation-key check
 

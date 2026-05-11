@@ -41,6 +41,7 @@
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends with the form comparison. |
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
+| Genre-polish correction applied | yes | Removed project-facing exception wording without changing the known-unmodelled analysis. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points

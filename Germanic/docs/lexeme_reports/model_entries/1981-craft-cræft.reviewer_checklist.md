@@ -41,6 +41,7 @@
 | :--- | :--- | :--- |
 | No conclusion section | yes | The entry ends with the comparison table. |
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
+| Genre-polish correction applied | yes | Removed row-facing and live-comparator phrasing while keeping the form comparison unchanged. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
 ## Remaining human-review points
