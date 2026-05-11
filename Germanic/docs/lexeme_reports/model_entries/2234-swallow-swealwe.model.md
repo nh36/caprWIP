@@ -1,0 +1,33 @@
+# swallow — OE swealwe
+
+PROTO: *swálwōn
+PROTOFORM: *swálwōn
+COUNTERPART: swealwe
+DERIVATION_CLASS: regular
+
+### Transducer input and output
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | swallow |
+| citation reconstruction / lexeme label | `*swalwōn-` |
+| selected input form | `*swálwōn` |
+| Old English target | `swealwe` |
+| classification | regular |
+| documented output | `*swálwōn -> swealwe` |
+
+### Reconstruction and comparative evidence
+
+Kroonen gives the bird name as `*swalwōn-`, and Ringe and Taylor cite the later West Germanic stage `*swalwa`, from which West Saxon `swealwe` and Mercian `swalwe` develop [@Kroonen2013; @RingeTaylor2014]. The row therefore belongs to the swallow-bird etymology, not to the verb `swelgan`.
+
+### Old English evidence
+
+Clark Hall records `swealwe (a, o)` as the noun headword [@ClarkHall1960]. Campbell and Brunner also preserve later or oblique-family forms such as `swaluwe`, `swalewan`, and `swealuwe`, but those belong to wider variation around the noun rather than to the citation form represented here [@Campbell1959; @SieversBrunner1965].
+
+### Development to Old English
+
+From `*swálwōn`, brightening yields `*swælw-`, and breaking before `lw` gives `*swealw-`. The later noun ending develops regularly to `swealwe`. The row's note matters because the bird name has no inherited `*g`: that consonant belongs to the separate verb `swelgan` [@RingeTaylor2014; @Kroonen2013].
+
+### Form note
+
+The final prose keeps the citation form `swealwe` separate from two different kinds of background material: the unrelated verb `swelgan`, and later or oblique spellings such as `swaluwe` or `swalewan` [@ClarkHall1960; @Campbell1959].
