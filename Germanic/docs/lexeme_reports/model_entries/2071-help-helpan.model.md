@@ -1,0 +1,33 @@
+# help — OE helpan
+
+PROTO: *xélpaną
+PROTOFORM: *xélpaną
+COUNTERPART: helpan
+DERIVATION_CLASS: regular
+
+### Transducer input and output
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | help |
+| citation reconstruction / lexeme label | *xélpaną |
+| selected input form | *xélpaną |
+| Old English target | helpan |
+| classification | regular |
+| documented output | *xélpaną -> helpan |
+
+### Reconstruction and comparative evidence
+
+The entry treats the strong verb itself rather than the separate noun `help`. Bright's principal parts `helpan, healp, hulpon, holpen` show the ordinary Old English strong-verb family continued by this input [@BrightCassidyRingler1971].
+
+### Old English evidence
+
+Clark Hall and Bosworth-Toller record `helpan` as the verbal headword 'to help' [@ClarkHall1960; @BosworthToller1898]. The target is therefore the attested infinitive citation form.
+
+### Development to Old English
+
+From `*xélpaną`, no special repair is needed beyond the ordinary reduction of the infinitive ending. The derivation therefore reaches `helpan` directly.
+
+### Form note
+
+Noun `help` belongs to a separate lexical line and should not replace verbal `helpan` as the target here [@ClarkHall1960; @BosworthToller1898].
