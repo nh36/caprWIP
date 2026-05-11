@@ -30,4 +30,4 @@ From `*skíllingaz`, loss of final `-az` yields `*skílling`. Old English palata
 
 ### Form note
 
-Kroonen's `*skellinga- ~ *skillinga-` and his internal analysis `*skeld-linga-` belong to the etymological background of the cognate set. The row's input `*skíllingaz` is the specific form selected for the derivation represented here [@Kroonen2013].
+Kroonen's `*skellinga- ~ *skillinga-` and his internal analysis `*skeld-linga-` belong to the etymological background of the cognate set. The selected input `*skíllingaz` is the specific form used for the derivation represented here [@Kroonen2013].

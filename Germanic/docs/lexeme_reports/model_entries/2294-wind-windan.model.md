@@ -22,7 +22,7 @@ Kroonen distinguishes noun `*winda-` from verb `*windan-`, and the present row b
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `windan` as the verb headword [@ClarkHall1960; @BosworthToller1898]. The row therefore targets the ordinary infinitive of the strong verb.
+Clark Hall and Bosworth-Toller record `windan` as the verb headword [@ClarkHall1960; @BosworthToller1898]. The selected target is the ordinary infinitive of the strong verb.
 
 ### Development to Old English
 
@@ -31,4 +31,3 @@ The selected input `*wíndaną` yields the regular infinitive `windan` by ordina
 ### Lexical note
 
 The note matters because English *wind* also names the noun. This row targets the class-III verb, not the noun [@Kroonen2013; @ClarkHall1960].
-

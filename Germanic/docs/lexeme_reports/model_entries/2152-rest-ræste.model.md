@@ -23,7 +23,7 @@ Kroonen treats the noun as a feminine ō-stem `*rastō-`, continued by Old Engli
 the lexeme-level headword. It identifies one oblique singular cell on the side of
 the paradigm that yields `ræste`.
 
-The row's current source tradition labels that cell specifically as genitive
+The source tradition used here labels that cell specifically as genitive
 singular, but the broader local synthesis of the ō-stem paradigm shows that the
 oblique singulars converge on the same front-vocalic `ræste` side, in contrast
 to a nominative singular that would remain `rast`.

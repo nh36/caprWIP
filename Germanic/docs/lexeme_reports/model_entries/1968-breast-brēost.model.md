@@ -58,5 +58,5 @@ from the thematic formation actually continued in Old English.
 | broader root-noun family | *brústz | root-noun type outcomes outside OE | non-OE comparanda | useful family label, but not the direct source of `brēost` |
 | selected thematic formation | *bréustą | compact-trace output: `brēost` | brēost | exact match between formation and attested OE noun |
 
-The decisive point is the formation split. `brēost` is the regular Old English
+The relevant point is the formation split. `brēost` is the regular Old English
 outcome of the thematic `*breusta-` branch, not of the root noun `*brust-`.

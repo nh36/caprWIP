@@ -46,6 +46,12 @@
 | Avoids project-facing language after metadata | yes | The prose remains lexical and philological. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Cleanup note
+
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the paired model entry without changing the analysis, citations, selected
+  input, target form, classification, or comparison tables.
+
 ## Remaining human-review points
 
 1. Review should keep the broader comparative label `*gállą` distinct from the

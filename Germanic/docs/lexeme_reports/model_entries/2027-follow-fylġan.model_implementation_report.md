@@ -35,6 +35,10 @@
 - kept the accepted shoulder and cow models unchanged;
 - kept the writing-skill files unchanged.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Citation keys used in the follow model entry were checked against `docs/refs.bib`:

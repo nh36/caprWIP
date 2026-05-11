@@ -22,6 +22,10 @@
 - Treated `sundor` and `syndrian` as comparators only, not rival row targets.
 - Kept the final prose especially short because the live row note already captures the essential point.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

@@ -34,6 +34,10 @@
 - Preserved the `*felþu- ~ *feldu-` issue only as explanatory background for medial `-ld-`.
 - Omitted a paradigm comparison because the row does not depend on any contested OE cell choice.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

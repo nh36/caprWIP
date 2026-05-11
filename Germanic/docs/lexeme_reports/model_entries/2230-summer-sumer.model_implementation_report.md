@@ -22,6 +22,10 @@
 - Used Clark Hall and Bright for the OE-side split and oblique `sumeres/sumere` support.
 - Contained the proto-vocalism discussion to one sentence in the reconstruction section.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

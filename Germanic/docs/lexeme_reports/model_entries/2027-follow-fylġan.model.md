@@ -70,6 +70,6 @@ no full automatic class probe is presented here.
 | parallel class-II branch | PNWGmc *fulgai- | Ringe-Taylor: OE `folgian` | folgian | documents the separate class-II branch, but not the target of this entry |
 | selected class-I formation | *fúlgijaną | compact-trace output: `fylġan` | fylġan / fylgan | exact match between input, output, and class |
 
-The decisive point is the class split. `fylġan` is the regular Old English
+The relevant point is the class split. `fylġan` is the regular Old English
 outcome of the class-I `*fulgija- / *fulgjan-` formation, whereas `folgian`
 belongs to the parallel class-II branch.

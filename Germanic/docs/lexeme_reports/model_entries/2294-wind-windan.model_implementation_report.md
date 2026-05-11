@@ -23,6 +23,10 @@
 - Treated the row as a clean verb entry and kept the note on lexical disambiguation only.
 - Used Fulk and Ringe and Taylor only to prevent drift back toward a Verner-style reading.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -45,4 +49,3 @@ Checked against `docs/refs.bib`:
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.
-

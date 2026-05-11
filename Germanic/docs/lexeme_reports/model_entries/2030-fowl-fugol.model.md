@@ -20,7 +20,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 The noun is the ordinary Germanic a-stem `*fúglaz`, continued by forms such as
 Old Norse `fugl` and Old High German `fogal` [@Kroonen2013; @Orel2003]. There
-is no stem-class or paradigm-cell dispute behind the row. The comparative
+is no stem-class or paradigm-cell dispute behind this entry. The comparative
 headword and the selected input are the same.
 
 The difficulty lies instead in the stressed root vowel. Under the regular West

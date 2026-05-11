@@ -23,6 +23,10 @@
 - Kept the entry on the noun and let the note explain the stem/input distinction.
 - Used Ringe and Taylor for the clearest intermediate chain and dictionary sources for OE attestation.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -44,4 +48,3 @@ Checked against `docs/refs.bib`:
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.
-

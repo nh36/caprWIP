@@ -62,6 +62,6 @@ headword from the class-I formation actually reflected in Old English.
 | selected class-I weak verb | *fástijaną | compact-trace output: `festan` | festan | exact match between formation and attested OE verb |
 | later analogical reshaping | adjective-driven `fæst` influence | `fæstan` / `fǣstan` type spellings | fæstan-type evidence | genuine later OE reshaping, but secondary to the selected target |
 
-The decisive point is the class split. `festan` is the regular Old English
+The relevant point is the class split. `festan` is the regular Old English
 outcome of the class-I formation, while the better-known `æ`-forms belong to a
 later analogical layer.

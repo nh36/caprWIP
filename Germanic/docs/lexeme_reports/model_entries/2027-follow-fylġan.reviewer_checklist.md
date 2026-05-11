@@ -62,6 +62,12 @@
 | Does the implementation report state what was not checked, when relevant? | yes | It states that no automatic class probe was run and notes unresolved uncertainties. |
 | Does the implementation report confirm that no TSV, FST, manifest, packet, memo, bibliography, derivation trace, or pilot report was changed? | yes | Scope confirmation is explicit. |
 
+## Cleanup note
+
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the paired model entry without changing the analysis, citations, selected
+  input, target form, classification, or comparison tables.
+
 ## Remaining human-review points
 
 1. The strongest evidence supports the class split more securely than a narrow

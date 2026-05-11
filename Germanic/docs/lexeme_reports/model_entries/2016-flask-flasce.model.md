@@ -58,5 +58,5 @@ from the weak feminine formation actually reflected in Old English.
 | broader comparative headword | *flaskō | broader family label | wider family context | useful lexeme label, but not the cleanest OE-facing derivation |
 | selected weak feminine formation | *fláskōn | compact-trace output: `flasce` | flasce | exact match between formation and attested OE noun |
 
-The weak feminine suffix is the decisive point. It aligns the inherited form
+The weak feminine suffix is the relevant point. It aligns the inherited form
 with attested `flasce` and its supporting paradigm forms.

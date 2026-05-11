@@ -26,9 +26,8 @@ Campbell and Bright contrast broken nominative `wǣpen/wapen` with unbroken obli
 
 ### Development to Old English
 
-Northwest Germanic lowering gives `wǣpn`, and loss of the final nasal vowel leaves the unbroken cluster word-finally. The row therefore models the attested unbroken form `wǣpn`.
+Northwest Germanic lowering gives `wǣpn`, and loss of the final nasal vowel leaves the unbroken cluster word-finally. The selected target is the attested unbroken form `wǣpn`.
 
 ### Form note
 
 The ordinary late West Saxon simplex headword is `wǣpen`, but older, poetic, and compound evidence preserves unbroken `wǣpn`. `wǣpnes` remains the regular unbroken oblique comparator [@Campbell1959; @BrightCassidyRingler1971; @ClarkHall1960].
-

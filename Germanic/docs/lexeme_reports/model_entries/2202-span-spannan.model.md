@@ -22,7 +22,7 @@ Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` among the ref
 
 ### Old English evidence
 
-Clark Hall keeps noun `spann` and verb `spannan` separate, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. The row therefore represents the strong-verb infinitive, not the separate noun.
+Clark Hall keeps noun `spann` and verb `spannan` separate, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. This entry treats the strong-verb infinitive, not the separate noun.
 
 ### Development to Old English
 

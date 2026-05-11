@@ -31,6 +31,10 @@
 - Did not introduce any paradigm-cell or analogical rescue argument unsupported
   by the source material.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

@@ -23,6 +23,10 @@
 - Made the prose explicit that Kroonen's etymological stem notation and the row's selected input are related but not identical levels.
 - Centered the note on preservation of suffixal `-ing` with `i`.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

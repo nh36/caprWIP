@@ -22,6 +22,10 @@
 - Used Ringe & Taylor for the WS versus Mercian framing and Campbell or Brunner for later variant forms.
 - Kept the citation form separate from oblique or variant `swaluwe`-type material.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:

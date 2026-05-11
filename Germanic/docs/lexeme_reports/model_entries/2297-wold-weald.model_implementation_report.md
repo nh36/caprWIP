@@ -23,6 +23,10 @@
 - Kept the entry on normalized `weald` and let the note handle `wald/wold` as variant background.
 - The backlog row under-reported the packet path, but `packets/2297-wold-weald.md` was present on disk and used for drafting.
 
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the model entry without changing the analysis, citations, selected input,
+  target form, classification, or comparison tables.
+
 ## Citation-key check
 
 Checked against `docs/refs.bib`:
@@ -43,4 +47,3 @@ Checked against `docs/refs.bib`:
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.
-

@@ -62,6 +62,6 @@ later remodeled nominative line.
 | remodeled nominative line | nominative in-stem forms | `fyrhtu` / `fyrhto` type lemma forms | fyrhtu / fyrhto | genuine OE evidence, but later remodeled |
 | selected oblique singular | *fúrxtīnaz | compact-trace output: `fyrhte` | fyrhte | exact match between input, output, and attested cell |
 
-The decisive comparison is the oblique in-stem form. It yields attested
+The oblique in-stem form is the relevant comparison form. It yields attested
 `fyrhte` directly, while the more familiar nominative forms belong to a later
 analogical layer.

@@ -36,7 +36,7 @@ Old English dictionaries record the plant name as `dile`, alongside the variant
 `dili` [@BosworthToller1898; @ClarkHall1960]. The form discussed here is
 therefore an attested Old English noun with single `l`.
 
-The Old English evidence is the decisive point. Whatever broader comparative
+The Old English evidence is the relevant point. Whatever broader comparative
 headword is chosen for the family, the inherited form reflected in OE is the
 i-stem type **`dile`**, not a geminated `dill` outcome.
 

@@ -26,7 +26,7 @@ Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses
 
 ### Development to Old English
 
-From `*gárną`, brightening and breaking before `rn` yield `gearn`; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn`. The row is therefore a regular noun derivation.
+From `*gárną`, brightening and breaking before `rn` yield `gearn`; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn`. The derivation is regular.
 
 ### Form note
 

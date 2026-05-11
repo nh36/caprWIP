@@ -45,8 +45,13 @@
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Cleanup note
+
+- Post-audit cleanup pass 01 recast the flagged formulaic final-prose wording in
+  the paired model entry without changing the analysis, citations, selected
+  input, target form, classification, or comparison tables.
+
 ## Remaining human-review points
 
 1. Keep noun `willa` distinct from verb `willan`.
 2. Keep dictionary headwords `*weljan- 2/*weljōn` subordinate to selected input `*wéljô`.
-

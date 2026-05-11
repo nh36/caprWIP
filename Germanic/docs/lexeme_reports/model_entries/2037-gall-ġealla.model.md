@@ -60,6 +60,6 @@ from the weak noun formation actually reflected in Old English.
 | selected weak noun | *gállô | compact-trace output: `ġealla` | ġealla | exact match between formation and attested OE noun |
 | dialectal Anglian continuation | weak noun branch | Anglian `galla` type | galla | genuine OE variant, but not the selected West Saxon target |
 
-The weak-noun stem class is the decisive point. It gives a direct route to
+The weak-noun stem class is the relevant point. It gives a direct route to
 attested `ġealla`, while the broader comparative label serves only as a family
 heading.

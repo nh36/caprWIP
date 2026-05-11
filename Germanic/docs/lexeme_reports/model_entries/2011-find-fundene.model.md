@@ -62,6 +62,6 @@ participle from the more familiar but analogically leveled participial forms.
 | nominative participial line | *fúnðanaz | later leveled `funden` type | funden | important paradigm background, but not the cleanest regular cell |
 | selected oblique participle | *fúnðanǭ | compact-trace output: `fundene` | fundene | exact match between input, output, and attested cell |
 
-The decisive comparison is the oblique participle. It preserves the inherited
+The oblique participle is the relevant comparison form. It preserves the inherited
 development most directly, while the nominative participial headword belongs to
 a later analogical leveling within the paradigm.

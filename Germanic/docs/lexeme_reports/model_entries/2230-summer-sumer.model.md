@@ -26,7 +26,7 @@ Clark Hall gives `sumor m., gs. sumeres, ds. sumera, sumere`, and Bright likewis
 
 ### Development to Old English
 
-From `*súmaraz`, loss of final `-az` is followed by fronting and merger in the unstressed second syllable, yielding `sumer`. The row therefore represents the regularized `e`-form, while the common citation form `sumor` remains part of the attested OE tradition [@RingeTaylor2014].
+From `*súmaraz`, loss of final `-az` is followed by fronting and merger in the unstressed second syllable, yielding `sumer`. The selected form is the regularized `e`-form, while the common citation form `sumor` remains part of the attested OE tradition [@RingeTaylor2014].
 
 ### Form note
 

@@ -64,6 +64,6 @@ preterite from the more familiar infinitival citation form.
 | singular preterite | *báug | compact-trace output: `bēag` | bēag | exact match between input, output, and attested cell |
 | past participial branch | participial `*bugan-` type | later participial outcomes | bogen-type evidence | relevant to the paradigm, but not the clearest match for this entry |
 
-The decisive comparison is the singular preterite. It gives a direct
+The singular preterite is the relevant comparison form. It gives a direct
 lautgesetzlich path to attested `bēag`, while the citation form `būgan`
 belongs to a paradigm whose present stem has already undergone later leveling.

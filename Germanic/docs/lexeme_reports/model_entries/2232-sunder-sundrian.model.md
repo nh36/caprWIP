@@ -30,4 +30,4 @@ From `*súndrōjaną`, the Class II weak-verb suffix yields regular OE `-ian`, p
 
 ### Form note
 
-The earlier confusion was lexical, not phonological: `sundor` is the separate adverb, and `syndrian` is a related but different verb. The row represented here is the Class II verb `sundrian` [@Orel2003; @ClarkHall1960].
+The earlier confusion was lexical, not phonological: `sundor` is the separate adverb, and `syndrian` is a related but different verb. The verb treated here is the Class II verb `sundrian` [@Orel2003; @ClarkHall1960].

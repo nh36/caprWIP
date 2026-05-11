@@ -211,3 +211,17 @@ The production-phase closeout instead points to a two-part next step:
    `.model.md` files into a single long-form report or book-style export,
    ideally with one final targeted prose-hygiene pass against the 25 files named
    above before publication-facing output.
+
+## Post-audit cleanup pass 01
+
+- A targeted final-prose hygiene pass was run on the 25 files listed in this
+  audit.
+- The `2183 shoulder / sċuldrum` reviewer-checklist gap was closed by creating a
+  retrospective checklist.
+- The `2120 march / mearc` exception was documented in
+  `2120-march-mearc.production_exception.md`.
+- `production_model_entry_index.tsv` was intentionally skipped in this pass so
+  the work could stay tightly scoped to hygiene and exception documentation.
+- No source data, model entries outside the listed cleanup set, pilot files,
+  manifest files, FST files, packets, memos, bibliography files, derivation
+  traces, or writing-skill files were changed.
