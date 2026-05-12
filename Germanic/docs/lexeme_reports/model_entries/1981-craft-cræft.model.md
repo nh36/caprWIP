@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Comparative sources disagree about the older stem class. Kroonen gives a u-stem
-`*kraftu-`, while Orel prints `*kraftiz *kraftuz` [@Kroonen2013, 340; @Orel2003,
+`*kraftu-`, while Orel prints `*kraftiz ~ *kraftuz` [@Kroonen2013, 340; @Orel2003,
 259].
 The comparative label `*kráftiz` remains in view as a lexeme-level shorthand,
 while `*kráftaz` is the pre-Old-English form used for the Old English

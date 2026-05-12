@@ -26,6 +26,7 @@
 - Used the live three-way comparator run as the main control.
 - Did not rewrite `PROTO` in prose as though the comparative dispute had disappeared.
 - Post-review genre polish removed `The row`, `decisive comparison`, and `live comparator run` phrasing from final prose and recast the paragraph as a source-facing form comparison.
+- Assembly pilot 08 corrected Orel's paired-form notation to `*kraftiz ~ *kraftuz` in the model entry and source ledger to match the memo and TSV note.
 
 ## Citation-key check
 

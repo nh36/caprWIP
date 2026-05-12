@@ -201,7 +201,7 @@ Outcome: _cræft_
 ### Reconstruction and comparative evidence
 
 Comparative sources disagree about the older stem class. Kroonen gives a u-stem
-_\*kraftu-_, while Orel prints _\*kraftiz \*kraftuz_ [@Kroonen2013, 340; @Orel2003,
+_\*kraftu-_, while Orel prints _\*kraftiz ~ \*kraftuz_ [@Kroonen2013, 340; @Orel2003,
 259].
 The comparative label _\*kráftiz_ remains in view as a lexeme-level shorthand,
 while _\*kráftaz_ is the pre-Old-English form used for the Old English

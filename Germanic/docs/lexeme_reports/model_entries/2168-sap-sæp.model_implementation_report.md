@@ -37,6 +37,7 @@
 - Kept the comparative n-stem and i-stem notations visible without treating
   either one as the direct OE-facing input.
 - Used a manual `Stem comparison`; no paradigm probe was needed for this pass.
+- Assembly pilot 08 normalized Orel's paired-form notation to `*sapōn ~ *sapan` in the model entry and source ledger to match the memo and packeted quotation.
 
 ## Citation-key check
 
