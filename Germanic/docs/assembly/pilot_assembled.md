@@ -1,15 +1,15 @@
-# Germanic Lexeme Report Assembly Pilot 01
-
 This pilot assembles a small representative subset of the current Germanic model entries for publication-format testing. It preserves entry prose, Pandoc citations, and tables from the source `.model.md` files while normalizing heading levels only in this assembled copy.
 
 The included entries are listed in `pilot_manifest.tsv` and appear here in stable manifest order. Implementation reports, reviewer checklists, source ledgers, packets, and research notes are intentionally excluded from the assembled body.
 
 ## bake — OE bacan
 
-PROTO: *bákaną
-PROTOFORM: *bákaną
-COUNTERPART: bacan
-DERIVATION_CLASS: regular
+| Field | Value |
+| :--- | :--- |
+| PROTO | *bákaną |
+| PROTOFORM | *bákaną |
+| COUNTERPART | bacan |
+| DERIVATION_CLASS | regular |
 
 ### Transducer input and output
 
@@ -36,10 +36,12 @@ From `*bákaną`, Anglo-Frisian brightening first gives `*bækaną`. A-restorati
 
 ## bow — OE bēag
 
-PROTO: *béuganą
-PROTOFORM: *báug
-COUNTERPART: bēag
-DERIVATION_CLASS: late_analogy
+| Field | Value |
+| :--- | :--- |
+| PROTO | *béuganą |
+| PROTOFORM | *báug |
+| COUNTERPART | bēag |
+| DERIVATION_CLASS | late_analogy |
 
 ### Transducer input and output
 
@@ -107,10 +109,12 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 ## craft — OE cræft
 
-PROTO: *kráftiz
-PROTOFORM: *kráftaz
-COUNTERPART: cræft
-DERIVATION_CLASS: early_analogy
+| Field | Value |
+| :--- | :--- |
+| PROTO | *kráftiz |
+| PROTOFORM | *kráftaz |
+| COUNTERPART | cræft |
+| DERIVATION_CLASS | early_analogy |
 
 ### Transducer input and output
 
@@ -158,10 +162,12 @@ the u-stem comparator.
 
 ## fowl — OE fugol
 
-PROTO: *fúglaz
-PROTOFORM: *fúglaz
-COUNTERPART: fugol
-DERIVATION_CLASS: unexplained_unmodelled
+| Field | Value |
+| :--- | :--- |
+| PROTO | *fúglaz |
+| PROTOFORM | *fúglaz |
+| COUNTERPART | fugol |
+| DERIVATION_CLASS | unexplained_unmodelled |
 
 ### Transducer input and output
 
@@ -229,10 +235,12 @@ attested `fugol`.
 
 ## thistle — OE þistles
 
-PROTO: *θéstilaz
-PROTOFORM: *θístilas
-COUNTERPART: þistles
-DERIVATION_CLASS: late_analogy
+| Field | Value |
+| :--- | :--- |
+| PROTO | *θéstilaz |
+| PROTOFORM | *θístilas |
+| COUNTERPART | þistles |
+| DERIVATION_CLASS | late_analogy |
 
 ### Transducer input and output
 
@@ -282,10 +290,12 @@ and the selected genitive singular cell.
 
 ## weapon — OE wǣpn
 
-PROTO: *wḗpną
-PROTOFORM: *wḗpną
-COUNTERPART: wǣpn
-DERIVATION_CLASS: regular
+| Field | Value |
+| :--- | :--- |
+| PROTO | *wḗpną |
+| PROTOFORM | *wḗpną |
+| COUNTERPART | wǣpn |
+| DERIVATION_CLASS | regular |
 
 ### Transducer input and output
 
@@ -325,10 +335,12 @@ remains the regular unbroken oblique comparator
 
 ## will — OE willa
 
-PROTO: *wéljô
-PROTOFORM: *wéljô
-COUNTERPART: willa
-DERIVATION_CLASS: regular
+| Field | Value |
+| :--- | :--- |
+| PROTO | *wéljô |
+| PROTOFORM | *wéljô |
+| COUNTERPART | willa |
+| DERIVATION_CLASS | regular |
 
 ### Transducer input and output
 
@@ -359,10 +371,12 @@ The target here is the noun `willa` 'will, wish'. Related verb `willan` belongs 
 
 ## youth — OE ġeoguþ
 
-PROTO: *júgunθiz
-PROTOFORM: *júgunθ
-COUNTERPART: ġeoguþ
-DERIVATION_CLASS: early_analogy
+| Field | Value |
+| :--- | :--- |
+| PROTO | *júgunθiz |
+| PROTOFORM | *júgunθ |
+| COUNTERPART | ġeoguþ |
+| DERIVATION_CLASS | early_analogy |
 
 ### Transducer input and output
 

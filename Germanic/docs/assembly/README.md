@@ -25,6 +25,15 @@ bash Germanic/docs/assembly/build_pilot.sh
 
 The script is path-stable and can also be run from other working directories.
 
+If local `pandoc` / LaTeX tools are unavailable but Docker is available, use:
+
+```bash
+bash Germanic/docs/assembly/build_pilot_docker.sh
+```
+
+That wrapper regenerates `pilot_assembled.md` locally, then renders `.tex` and
+`.pdf` inside a `pandoc/latex` container.
+
 ## Expected outputs
 
 - `pilot_assembled.md` — assembled Markdown with normalized heading levels
@@ -33,16 +42,29 @@ The script is path-stable and can also be run from other working directories.
 
 ## Current local result
 
-In the current local environment used for this pilot:
+In the current local host environment used for pilot 01:
 
 - assembled Markdown generation was exercised successfully;
 - `pandoc` was **not installed**, so `.tex` generation did not complete;
 - no PDF engine stage was reached.
 
-See `assembly_pilot_01_report.md` for the exact build result and blockers.
+Pilot 02 adds and validates a Docker-backed render path because Docker is
+available even where the host lacks local `pandoc`.
+
+In the validated Docker-backed pilot-02 path:
+
+- `pilot_assembled.md` regenerates on the host;
+- `pilot_assembled.tex` renders successfully in `pandoc/latex`;
+- `pilot_assembled.pdf` renders successfully with `xelatex`;
+- `Noto Serif` / `Noto Sans Mono` are used in the container to preserve the Old
+  English and reconstruction characters that the default Latin Modern fonts
+  dropped.
+
+See `assembly_pilot_01_report.md` and `assembly_pilot_02_report.md` for the
+exact build results and blockers.
 
 ## Known blockers before full assembly
 
-1. Install `pandoc` to enable Markdown-to-LaTeX conversion.
-2. Install `xelatex` or `lualatex` to enable Unicode-safe PDF generation.
-3. After toolchain installation, rerun the pilot and inspect table and bibliography rendering before scaling to the full corpus.
+1. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or use the Docker wrapper.
+2. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` / `Noto Sans Mono` are used in the Docker-backed pilot).
+3. After any toolchain change, rerun the pilot and inspect table and bibliography rendering before scaling to the full corpus.

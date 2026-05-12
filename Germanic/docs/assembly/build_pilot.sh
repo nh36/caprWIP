@@ -45,14 +45,50 @@ def normalize_headings(text: str) -> str:
     return "\n".join(lines).strip()
 
 
+def rewrite_entry(text: str) -> str:
+    lines = normalize_headings(text).splitlines()
+    if not lines:
+        return ""
+
+    out: list[str] = [lines[0]]
+    i = 1
+
+    while i < len(lines) and lines[i].strip() == "":
+        i += 1
+
+    metadata_rows: list[tuple[str, str]] = []
+    while i < len(lines):
+        line = lines[i]
+        match = re.match(r"^([A-Z_]+):\s*(.*)$", line)
+        if not match:
+            break
+        metadata_rows.append((match.group(1), match.group(2)))
+        i += 1
+
+    if metadata_rows:
+        out.extend(
+            [
+                "",
+                "| Field | Value |",
+                "| :--- | :--- |",
+            ]
+        )
+        for field, value in metadata_rows:
+            out.append(f"| {field} | {value} |")
+
+    remaining = "\n".join(lines[i:]).strip()
+    if remaining:
+        out.extend(["", remaining])
+
+    return "\n".join(out).strip()
+
+
 rows = []
 with manifest_path.open(encoding="utf-8", newline="") as handle:
     reader = csv.DictReader(handle, delimiter="\t")
     rows = list(reader)
 
 parts = [
-    "# Germanic Lexeme Report Assembly Pilot 01",
-    "",
     "This pilot assembles a small representative subset of the current Germanic model entries for publication-format testing. It preserves entry prose, Pandoc citations, and tables from the source `.model.md` files while normalizing heading levels only in this assembled copy.",
     "",
     "The included entries are listed in `pilot_manifest.tsv` and appear here in stable manifest order. Implementation reports, reviewer checklists, source ledgers, packets, and research notes are intentionally excluded from the assembled body.",
@@ -61,15 +97,15 @@ parts = [
 for row in rows:
     entry_path = repo_root / row["entry_path"]
     entry_text = entry_path.read_text(encoding="utf-8")
-    parts.extend(["", normalize_headings(entry_text)])
+    parts.extend(["", rewrite_entry(entry_text)])
 
 output_path.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
 print(f"Generated {output_path}")
 PY
 
 if ! command -v pandoc >/dev/null 2>&1; then
-  echo "pandoc not found; unable to build ${assembled_tex##*/} or ${assembled_pdf##*/}." >&2
-  exit 127
+  echo "pandoc not found; regenerated ${assembled_md##*/} only. Skipping ${assembled_tex##*/} and ${assembled_pdf##*/}." >&2
+  exit 0
 fi
 
 pandoc "${assembled_md}" \
