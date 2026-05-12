@@ -7,18 +7,21 @@ placeholder and revised later without reopening entry-level prose.
 Current manifest counts from the live `.model.md` corpus:
 
 - regular: **70**
+- attested variant: **4**
 - early analogy: **35**
 - late analogy: **28**
+- reconstructed Old English comparator: **3**
+- known unmodelled remodelling: **2**
 - unexplained / deliberately unmodelled: **5**
-- review bucket with non-canonical class labels: **9**
 
 ## Introduction to the lexical catalogue
 
 The lexical catalogue is organized by derivation class rather than as a single
 undifferentiated list. This makes the interpretive burden of each entry
 explicit. Regular derivations establish the baseline relation between selected
-input and Old English target under the current cascade. The analogy and
-exception classes then show where that baseline is not sufficient on its own.
+input and Old English target under the current cascade. The variant, analogy,
+reconstructed-comparator, and exception classes then show where that baseline is
+not sufficient on its own.
 
 ## Regular derivations
 
@@ -26,6 +29,13 @@ Regular derivations are entries where the selected transducer input and the Old
 English target stand in a straightforward relation under the current cascade.
 These entries form the baseline against which the analogy and exception classes
 are interpreted.
+
+## Attested variants and selected comparison forms
+
+These entries treat the selected Old English target as one member of an attested
+or historically documented variant set. The target is therefore anchored in the
+record, but the lexical comparison must account for variation rather than for a
+single unproblematic citation form.
 
 ## Early analogy and pre-Old-English input selection
 
@@ -41,18 +51,23 @@ citation reconstruction remains relevant to the lexeme, but the selected target
 is best explained through a particular inflectional or analogical form rather
 than through the citation form alone.
 
+## Reconstructed Old English comparators
+
+These entries use an explicitly reconstructed Old English-stage comparator for
+the branch being modelled. The relevant comparison is therefore later than the
+Proto-Germanic citation form but still belongs to the lexical derivation layer.
+
+## Known but unmodelled remodellings
+
+These entries preserve cases where the historical remodelling is broadly
+understood, but the current deterministic transducer does not model that later
+reshaping directly.
+
 ## Unexplained or deliberately unmodelled exceptions
 
 These entries preserve a mismatch between the regular transducer output and the
 selected Old English target. They are retained as documented lexical exceptions
 rather than treated as evidence for further sound-change repair.
-
-## Editorial note on non-canonical class labels
-
-The current corpus also contains a small review bucket with non-canonical class
-labels such as `attested_variant`, `known_unmodelled`, and `reconstructed_oe`.
-Those entries should not be dropped, but they should be reviewed explicitly
-before they are folded into the four-part book architecture.
 
 ## Note on the later sound-change volume / report
 

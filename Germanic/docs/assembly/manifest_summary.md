@@ -11,8 +11,11 @@
 | Derivation class | Count |
 | :--- | ---: |
 | `regular` (Regular derivations) | 70 |
+| `attested_variant` (Attested variants and selected comparison forms) | 4 |
 | `early_analogy` (Early analogy and pre-Old-English input selection) | 35 |
 | `late_analogy` (Late analogy and paradigm-cell selection) | 28 |
+| `reconstructed_oe` (Reconstructed Old English comparators) | 3 |
+| `known_unmodelled` (Known but unmodelled remodellings) | 2 |
 | `unexplained_unmodelled` (Unexplained or deliberately unmodelled exceptions) | 5 |
 
 ## Trace-match status
@@ -26,17 +29,7 @@
 
 ## Unknown or unexpected derivation classes
 
-| Row ID | File | Raw class | Notes |
-| :--- | :--- | :--- | :--- |
-| 1983 | `1983-cud-cwedu.model.md` | `attested_variant` | unknown derivation class: attested_variant |
-| 2013 | `2013-fire-fȳre.model.md` | `known_unmodelled` | unknown derivation class: known_unmodelled |
-| 2087 | `2087-knob-cnobba.model.md` | `reconstructed_oe` | unknown derivation class: reconstructed_oe |
-| 2151 | `2151-reek-rēac.model.md` | `reconstructed_oe` | unknown derivation class: reconstructed_oe |
-| 2227 | `2227-strew-strīeġan.model.md` | `reconstructed_oe` | unknown derivation class: reconstructed_oe |
-| 2240 | `2240-tap-tæppa.model.md` | `known_unmodelled` | unknown derivation class: known_unmodelled |
-| 2242 | `2242-ten-tēon.model.md` | `attested_variant` | unknown derivation class: attested_variant |
-| 2254 | `2254-three-þrīe.model.md` | `attested_variant` | unknown derivation class: attested_variant |
-| 2273 | `2273-wasp-wæfs.model.md` | `attested_variant` | unknown derivation class: attested_variant |
+- None.
 
 ## Incomplete metadata
 
@@ -48,14 +41,4 @@
 
 ## Entries needing special handling before full assembly
 
-| Row ID | File | Trigger |
-| :--- | :--- | :--- |
-| 1983 | `1983-cud-cwedu.model.md` | unknown derivation class: attested_variant |
-| 2013 | `2013-fire-fȳre.model.md` | unknown derivation class: known_unmodelled |
-| 2087 | `2087-knob-cnobba.model.md` | unknown derivation class: reconstructed_oe |
-| 2151 | `2151-reek-rēac.model.md` | unknown derivation class: reconstructed_oe |
-| 2227 | `2227-strew-strīeġan.model.md` | unknown derivation class: reconstructed_oe |
-| 2240 | `2240-tap-tæppa.model.md` | unknown derivation class: known_unmodelled |
-| 2242 | `2242-ten-tēon.model.md` | unknown derivation class: attested_variant |
-| 2254 | `2254-three-þrīe.model.md` | unknown derivation class: attested_variant |
-| 2273 | `2273-wasp-wæfs.model.md` | unknown derivation class: attested_variant |
+- None.

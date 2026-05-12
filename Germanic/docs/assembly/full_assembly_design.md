@@ -14,8 +14,11 @@ The future full assembly should draw from the following sources:
 1. `manifest_all_by_class.tsv`
 2. class manifests:
    - `manifest_regular.tsv`
+   - `manifest_attested_variant.tsv`
    - `manifest_early_analogy.tsv`
    - `manifest_late_analogy.tsv`
+   - `manifest_reconstructed_oe.tsv`
+   - `manifest_known_unmodelled.tsv`
    - `manifest_unexplained.tsv`
 3. `build_class_manifests.py`
 4. current `.model.md` files under
@@ -51,20 +54,24 @@ Recommended preflight checks:
 1. fail or warn on unknown derivation classes
 2. fail or warn on incomplete top metadata
 3. fail or warn on non-confident trace matching
-4. record whether any entries are intentionally excluded from the alpha because
-   they remain in the review bucket
+4. record whether any future entries fall into a review bucket because their
+   class labels are not yet recognized
 
 ## Class order
 
 The future full lexical volume should be ordered in this sequence:
 
 1. regular
-2. early analogy
-3. late analogy
-4. unexplained / deliberately unmodelled
+2. attested_variant
+3. early_analogy
+4. late_analogy
+5. reconstructed_oe
+6. known_unmodelled
+7. unexplained_unmodelled
 
-Entries with unknown class labels should not be silently folded into one of
-those sections. They should be either:
+The current known labels are therefore all first-class book sections. Unknown
+future labels should still not be silently folded into one of those sections.
+They should be either:
 
 - remapped explicitly before assembly, or
 - excluded from the first alpha and listed in an editorial review note

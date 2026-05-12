@@ -96,8 +96,11 @@ The current design layer for full lexical assembly includes:
 - `build_class_manifests.py` — helper that scans current `.model.md` entries and
   writes class-based manifests
 - `manifest_regular.tsv`
+- `manifest_attested_variant.tsv`
 - `manifest_early_analogy.tsv`
 - `manifest_late_analogy.tsv`
+- `manifest_reconstructed_oe.tsv`
+- `manifest_known_unmodelled.tsv`
 - `manifest_unexplained.tsv`
 - `manifest_all_by_class.tsv`
 - `manifest_summary.md`
@@ -105,23 +108,32 @@ The current design layer for full lexical assembly includes:
 These files are design and scaffolding artifacts only. They do **not** generate
 the full 147-entry lexical PDF in this phase.
 
+The class architecture now follows all **seven** current TSV
+`DERIVATION_CLASS` values as first-class book sections:
+
+1. `regular`
+2. `attested_variant`
+3. `early_analogy`
+4. `late_analogy`
+5. `reconstructed_oe`
+6. `known_unmodelled`
+7. `unexplained_unmodelled`
+
 ## Next planned step
 
 After review of the architecture and manifests, the next planned step is a
 **full lexical assembly alpha by class**. That later pass should:
 
 1. use the class manifests as the ordering source;
-2. insert section-introduction scaffolding above each class part;
+2. insert section-introduction scaffolding above each of the seven class parts;
 3. preserve the current per-entry summary + boxed-trace layout; and
 4. continue to keep the later sound-change volume or report separate.
 
 ## Known blockers before full assembly
 
-1. Decide how to handle the small review bucket of entries with non-canonical
-   derivation-class labels before the first full lexical alpha.
-2. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or
+1. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or
    use the Docker wrapper.
-3. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` /
+2. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` /
    `Noto Sans Mono` are used in the Docker-backed pilot).
-4. After any toolchain change, rerun the pilot and inspect trace boxes,
+3. After any toolchain change, rerun the pilot and inspect trace boxes,
    bibliography rendering, and citation links before scaling to the full corpus.

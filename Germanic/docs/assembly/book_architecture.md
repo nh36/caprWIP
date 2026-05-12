@@ -95,13 +95,16 @@ Purpose:
 Planned class chapters:
 
 1. **Regular**
-2. **Early analogy / pre-Old-English input selection**
-3. **Late analogy / paradigm-cell selection**
-4. **Unexplained or deliberately unmodelled exceptions**
+2. **Attested variants and selected comparison forms**
+3. **Early analogy / pre-Old-English input selection**
+4. **Late analogy / paradigm-cell selection**
+5. **Reconstructed Old English comparators**
+6. **Known but unmodelled remodellings**
+7. **Unexplained or deliberately unmodelled exceptions**
 
 ## Main lexical catalogue
 
-The main catalogue should be divided into four parts in this order:
+The main catalogue should be divided into seven parts in this order:
 
 ### Part I. Regular derivations
 
@@ -109,37 +112,42 @@ These entries form the baseline of the lexical volume. The selected input and
 selected Old English target stand in a straightforward relation under the
 current cascade.
 
-### Part II. Early analogy and pre-Old-English input selection
+### Part II. Attested variants and selected comparison forms
+
+These entries treat the chosen Old English target as one member of an attested
+or historically documented variant set. The lexical problem is not that the
+target is arbitrary, but that the comparison must be framed against a documented
+variant network rather than against a single isolated citation form.
+
+### Part III. Early analogy and pre-Old-English input selection
 
 These entries require a distinction between the lexeme-level reconstruction and
 the pre-Old-English form selected as input to the derivation. The special step
 is upstream of Old English.
 
-### Part III. Late analogy and paradigm-cell selection
+### Part IV. Late analogy and paradigm-cell selection
 
 These entries are best explained through a conservative finite form, an
 inflectional cell, or another later analogical comparison rather than through
 the citation form alone.
 
-### Part IV. Unexplained or deliberately unmodelled exceptions
+### Part V. Reconstructed Old English comparators
+
+These entries use an explicitly reconstructed Old English-stage comparator for
+the branch being modelled. The relevant comparison is therefore later than the
+Proto-Germanic citation form but still belongs to the lexical derivation layer.
+
+### Part VI. Known but unmodelled remodellings
+
+These entries preserve cases where the historical remodelling is understood, but
+the current deterministic transducer does not model the later reshaping that
+produced the selected Old English target.
+
+### Part VII. Unexplained or deliberately unmodelled exceptions
 
 These entries retain a mismatch between regular transducer output and selected
 Old English target and should be carried as documented exceptions rather than as
 evidence for further rule repair in the lexical volume.
-
-## Editorial review bucket
-
-The current corpus scan also finds a small set of entries using non-canonical
-derivation-class labels such as `attested_variant`, `known_unmodelled`, and
-`reconstructed_oe`.
-
-These should **not** be silently discarded. For the first full lexical assembly
-alpha, they should either:
-
-1. be mapped explicitly into one of the four main parts after review, or
-2. be kept out of the assembled alpha and listed in an editorial review note.
-
-The main four-part architecture remains the intended book structure.
 
 ## Ordering principles
 
@@ -147,9 +155,12 @@ The main four-part architecture remains the intended book structure.
 
 - order the main parts by derivation class:
   1. regular
-  2. early analogy
-  3. late analogy
-  4. unexplained / unmodelled
+  2. attested variant
+  3. early analogy
+  4. late analogy
+  5. reconstructed Old English comparator
+  6. known but unmodelled remodelling
+  7. unexplained / unmodelled
 - order entries within each part by numeric row ID
 - break ties lexicographically by filename if needed
 
@@ -208,6 +219,6 @@ The later sound-change volume or report should remain **rule-centered**:
 ## Architectural recommendation
 
 The volume architecture is ready for a first full lexical assembly alpha **by
-class**, provided that the review-bucket entries with non-canonical
-derivation-class labels are handled explicitly rather than silently folded into
-the four main sections.
+class**, with all seven current TSV derivation classes treated as first-class
+book sections. Unknown future labels should still be surfaced explicitly rather
+than silently folded into one of the seven sections.

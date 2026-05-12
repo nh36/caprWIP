@@ -15,12 +15,15 @@ TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_tr
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
 CLASS_CONFIG = {
     "regular": ("regular", "Regular derivations", 1),
-    "early_analogy": ("early_analogy", "Early analogy and pre-Old-English input selection", 2),
-    "late_analogy": ("late_analogy", "Late analogy and paradigm-cell selection", 3),
+    "attested_variant": ("attested_variant", "Attested variants and selected comparison forms", 2),
+    "early_analogy": ("early_analogy", "Early analogy and pre-Old-English input selection", 3),
+    "late_analogy": ("late_analogy", "Late analogy and paradigm-cell selection", 4),
+    "reconstructed_oe": ("reconstructed_oe", "Reconstructed Old English comparators", 5),
+    "known_unmodelled": ("known_unmodelled", "Known but unmodelled remodellings", 6),
     "unexplained_unmodelled": (
         "unexplained_unmodelled",
         "Unexplained or deliberately unmodelled exceptions",
-        4,
+        7,
     ),
 }
 MANIFEST_COLUMNS = [
@@ -41,8 +44,11 @@ MANIFEST_COLUMNS = [
 ]
 CLASS_MANIFESTS = {
     "regular": ASSEMBLY_DIR / "manifest_regular.tsv",
+    "attested_variant": ASSEMBLY_DIR / "manifest_attested_variant.tsv",
     "early_analogy": ASSEMBLY_DIR / "manifest_early_analogy.tsv",
     "late_analogy": ASSEMBLY_DIR / "manifest_late_analogy.tsv",
+    "reconstructed_oe": ASSEMBLY_DIR / "manifest_reconstructed_oe.tsv",
+    "known_unmodelled": ASSEMBLY_DIR / "manifest_known_unmodelled.tsv",
     "unexplained_unmodelled": ASSEMBLY_DIR / "manifest_unexplained.tsv",
 }
 
@@ -195,8 +201,11 @@ def write_manifest(path: Path, rows: list[dict[str, object]]) -> None:
 def format_count_table(counts: Counter[str]) -> list[str]:
     rows = [
         ("regular", "Regular derivations"),
+        ("attested_variant", "Attested variants and selected comparison forms"),
         ("early_analogy", "Early analogy and pre-Old-English input selection"),
         ("late_analogy", "Late analogy and paradigm-cell selection"),
+        ("reconstructed_oe", "Reconstructed Old English comparators"),
+        ("known_unmodelled", "Known but unmodelled remodellings"),
         ("unexplained_unmodelled", "Unexplained or deliberately unmodelled exceptions"),
     ]
     lines = ["| Derivation class | Count |", "| :--- | ---: |"]

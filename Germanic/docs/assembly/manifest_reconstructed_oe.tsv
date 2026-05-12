@@ -1,0 +1,4 @@
+global_order	class_order	row_id	lexical_item	counterpart	proto	protoform	derivation_class	class_bucket	section_title	model_entry_path	trace_match_status	trace_match_basis	notes
+138	1	2087	knob	cnobba	*knúppaz	*knúbbô	reconstructed_oe	reconstructed_oe	Reconstructed Old English comparators	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	confident	lexical item + PROTOFORM + EXPECTED + OUTPUTS	
+139	2	2151	reek	rēac	*ráukiz	*ráukaz	reconstructed_oe	reconstructed_oe	Reconstructed Old English comparators	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md	confident	lexical item + PROTOFORM + EXPECTED + OUTPUTS	
+140	3	2227	strew	strīeġan	*stráwjaną	*stráwjaną	reconstructed_oe	reconstructed_oe	Reconstructed Old English comparators	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
