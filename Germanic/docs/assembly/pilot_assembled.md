@@ -4,14 +4,7 @@ The included entries are listed in `pilot_manifest.tsv` and appear here in stabl
 
 ## bake — OE bacan
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | bake |
-| citation reconstruction | _\*bákaną_ |
-| selected transducer input | _\*bákaną_ |
-| Old English target | _bacan_ |
-| derivation class | regular |
-| transducer output | _\*bákaną -> bacan_ |
+Derivation: _\*bákaną_ $\rightarrow$ _bacan_ (regular).
 
 ### Derivation trace
 
@@ -40,9 +33,6 @@ Proto input: _\*bákaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bækaną} \\
 OE A Restoration & \emph{*bakaną} \\
@@ -71,14 +61,7 @@ From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restora
 
 ## bow — OE bēag
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | bow |
-| citation reconstruction | _\*béuganą_ |
-| selected transducer input | _\*báug_ |
-| Old English target | _bēag_ |
-| derivation class | late_analogy |
-| transducer output | _\*báug -> bēag_ |
+Derivation: citation reconstruction _\*béuganą_; selected input _\*báug_ $\rightarrow$ _bēag_ (late analogy).
 
 ### Derivation trace
 
@@ -107,9 +90,6 @@ Proto input: _\*báug_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 OE Au Fronting & \emph{*báeug} \\
 OE Diphthong Leveling & \emph{*bēag} \\
@@ -176,14 +156,7 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 ## craft — OE cræft
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | craft |
-| citation reconstruction | _\*kráftiz_ |
-| selected transducer input | _\*kráftaz_ |
-| Old English target | _cræft_ |
-| derivation class | early_analogy |
-| transducer output | _\*kráftaz -> cræft_ |
+Derivation: citation reconstruction _\*kráftiz_; selected input _\*kráftaz_ $\rightarrow$ _cræft_ (early analogy).
 
 ### Derivation trace
 
@@ -214,9 +187,6 @@ PGmc Final Z Deletion & \emph{*kráfta} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*kráft} \\
 Anglo Frisian Brightening & \emph{*kræft} \\
@@ -263,14 +233,7 @@ the u-stem comparator.
 
 ## fowl — OE fugol
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | fowl |
-| citation reconstruction | _\*fúglaz_ |
-| selected transducer input | _\*fúglaz_ |
-| Old English target | _fugol_ |
-| derivation class | unexplained_unmodelled |
-| transducer output | _\*fúglaz -> fogol_ |
+Derivation: _\*fúglaz_ yields regular _fogol_; the selected target is _fugol_ (unexplained exception).
 
 ### Derivation trace
 
@@ -302,9 +265,6 @@ PGmc Final Z Deletion & \emph{*fógla} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fógl} \\
 OE Epenthetic Vowel & \emph{*fógol} \\
@@ -373,14 +333,7 @@ attested _fugol_.
 
 ## thistle — OE þistles
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | thistle |
-| citation reconstruction | _\*θéstilaz_ |
-| selected transducer input | _\*θístilas_ |
-| Old English target | _þistles_ |
-| derivation class | late_analogy |
-| transducer output | _\*θístilas -> þistles_ |
+Derivation: citation reconstruction _\*θéstilaz_; selected input _\*θístilas_ $\rightarrow$ _þistles_ (late analogy).
 
 ### Derivation trace
 
@@ -409,9 +362,6 @@ Proto input: _\*θístilas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*θístilæs} \\
 OE L Adjacent Syncope & \emph{*θístlæs} \\
@@ -461,14 +411,7 @@ and the selected genitive singular cell.
 
 ## weapon — OE wǣpn
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | weapon |
-| citation reconstruction | _\*wḗpną_ |
-| selected transducer input | _\*wḗpną_ |
-| Old English target | _wǣpn_ |
-| derivation class | regular |
-| transducer output | _\*wḗpną -> wǣpn_ |
+Derivation: _\*wḗpną_ $\rightarrow$ _wǣpn_ (regular).
 
 ### Derivation trace
 
@@ -499,9 +442,6 @@ NWGmc Long E Lowering & \emph{*wǣpną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
 \end{tabularx}
@@ -539,14 +479,7 @@ remains the regular unbroken oblique comparator
 
 ## will — OE willa
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | will |
-| citation reconstruction | _\*wéljô_ |
-| selected transducer input | _\*wéljô_ |
-| Old English target | _willa_ |
-| derivation class | regular |
-| transducer output | _\*wéljô -> willa_ |
+Derivation: _\*wéljô_ $\rightarrow$ _willa_ (regular).
 
 ### Derivation trace
 
@@ -577,9 +510,6 @@ PWGmc J Gemination & \emph{*wélljô} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 OE I Umlaut & \emph{*willjô} \\
 OE Unstressed Long Vowel Shortening & \emph{*willja} \\
@@ -610,14 +540,7 @@ The target here is the noun _willa_ 'will, wish'. Related verb _willan_ belongs 
 
 ## youth — OE ġeoguþ
 
-| Item | Value |
-| :--- | :--- |
-| lexical item | youth |
-| citation reconstruction | _\*júgunθiz_ |
-| selected transducer input | _\*júgunθ_ |
-| Old English target | _ġeoguþ_ |
-| derivation class | early_analogy |
-| transducer output | _\*júgunθ -> ġeoguþ_ |
+Derivation: citation reconstruction _\*júgunθiz_; selected input _\*júgunθ_ $\rightarrow$ _ġeoguþ_ (early analogy).
 
 ### Derivation trace
 
@@ -650,9 +573,6 @@ NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Old English}\par
-\raggedright
-\vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
 OE Diphthong Leveling & \emph{*jéogūθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*jéoguθ} \\

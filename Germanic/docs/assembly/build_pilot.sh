@@ -197,20 +197,70 @@ def latex_form(text: str) -> str:
     return rf"\emph{{{latex_escape(text)}}}"
 
 
-def render_trace_panel(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> list[str]:
+def humanize_derivation_class(label: str) -> str:
+    mapping = {
+        "regular": "regular",
+        "early_analogy": "early analogy",
+        "late_analogy": "late analogy",
+        "unexplained_unmodelled": "unexplained exception",
+    }
+    return mapping.get(label, label.replace("_", " "))
+
+
+def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
+    metadata = model["metadata"]
+    citation = metadata.get("PROTO", "")
+    selected = metadata.get("PROTOFORM", "")
+    target = metadata.get("COUNTERPART", "")
+    label = humanize_derivation_class(metadata.get("DERIVATION_CLASS", ""))
+    arrow = r"$\rightarrow$"
+
+    if trace_entry is None:
+        return (
+            f"Derivation: selected input {italicize_form(selected)} and target {italicize_form(target)}; "
+            "no compact trace was confidently matched in this assembly pass."
+        )
+
+    output = trace_entry["outcome"]
+    if citation == selected and output == target:
+        return f"Derivation: {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+    if citation != selected and output == target:
+        return (
+            f"Derivation: citation reconstruction {italicize_form(citation)}; "
+            f"selected input {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+        )
+    if citation == selected and output != target:
+        return (
+            f"Derivation: {italicize_form(selected)} yields regular {italicize_form(output)}; "
+            f"the selected target is {italicize_form(target)} ({label})."
+        )
+    return (
+        f"Derivation: citation reconstruction {italicize_form(citation)}; "
+        f"selected input {italicize_form(selected)} yields {italicize_form(output)}; "
+        f"the selected target is {italicize_form(target)} ({label})."
+    )
+
+
+def render_trace_panel(
+    stage_blocks: list[tuple[str, list[tuple[str, str]]]],
+    *,
+    suppress_old_english_stage: bool = False,
+) -> list[str]:
     lines = [r"\raggedright"]
 
     for index, (stage, items) in enumerate(stage_blocks):
+        show_stage_header = not (suppress_old_english_stage and stage == "Old English")
         if index:
             lines.append(r"\vspace{0.6em}")
 
-        lines.extend(
-            [
-                rf"\centering\textbf{{{latex_escape(stage)}}}\par",
-                r"\raggedright",
-                r"\vspace{0.2em}",
-            ]
-        )
+        if show_stage_header:
+            lines.extend(
+                [
+                    rf"\centering\textbf{{{latex_escape(stage)}}}\par",
+                    r"\raggedright",
+                    r"\vspace{0.2em}",
+                ]
+            )
 
         if not items:
             lines.append(r"\raggedright [no change]\par")
@@ -245,7 +295,7 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         return [trace_entry["table"]]
 
     left_panel = render_trace_panel(parse_trace_cell(row_parts[0]))
-    right_panel = render_trace_panel(parse_trace_cell(row_parts[1]))
+    right_panel = render_trace_panel(parse_trace_cell(row_parts[1]), suppress_old_english_stage=True)
 
     return [
         r"\begingroup",
@@ -345,37 +395,8 @@ def match_trace_entry(model: dict[str, object], trace_entries: list[dict[str, st
     return top_entry, " + ".join(basis), confident
 
 
-def metadata_table(model: dict[str, object], trace_entry: dict[str, str] | None) -> list[str]:
-    metadata = model["metadata"]
-    output_value = ""
-    if trace_entry is not None:
-        output_value = f"{trace_entry['proto_input']} -> {trace_entry['outputs']}"
-
-    rows = [
-        ("lexical item", model["lexical_item"]),
-        ("citation reconstruction", metadata.get("PROTO", "")),
-        ("selected transducer input", metadata.get("PROTOFORM", "")),
-        ("Old English target", metadata.get("COUNTERPART", "")),
-        ("derivation class", metadata.get("DERIVATION_CLASS", "")),
-    ]
-    if output_value:
-        rows.append(("transducer output", output_value))
-
-    rendered = [
-        "| Item | Value |",
-        "| :--- | :--- |",
-    ]
-    for key, value in rows:
-        if key in {"lexical item", "derivation class"}:
-            rendered.append(f"| {key} | {value.replace('|', r'\\|')} |")
-        else:
-            rendered.append(f"| {key} | {italicize_form(value)} |")
-    return rendered
-
-
 def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
-    out: list[str] = [model["title"], ""]
-    out.extend(metadata_table(model, trace_entry))
+    out: list[str] = [model["title"], "", derivation_summary(model, trace_entry)]
 
     if trace_entry is not None:
         out.extend(
