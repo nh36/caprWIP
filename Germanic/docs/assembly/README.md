@@ -1,6 +1,28 @@
-# Germanic assembly pilot
+# Germanic assembly pilot and lexical-volume design
 
-This directory contains **assembly pilot 01**, a small publication-format test that assembles a representative subset of current Germanic `.model.md` entries into one Markdown document and, when the toolchain is available, converts that document to LaTeX and PDF.
+This directory now contains two connected layers of work:
+
+1. the validated **pilot assembly** used to settle entry layout, trace display,
+   and citation behavior; and
+2. the **book-architecture and class-manifest design** for a future full lexical
+   derivation volume.
+
+The pilot is deliberately small. The book-design layer is where the full
+corpus-ordering logic now lives.
+
+## Pilot status
+
+The pilot format is now stable enough to serve as the basis for a full lexical
+assembly alpha:
+
+- generated derivation summary under each headword
+- boxed derivation trace
+- model-entry prose below the trace
+- live internal citation links in PDF output
+- Unicode-safe Docker-backed PDF rendering
+
+See `assembly_pilot_01_report.md` through `assembly_pilot_08_report.md` for the
+incremental pilot passes.
 
 ## Pilot contents
 
@@ -60,11 +82,46 @@ In the validated Docker-backed pilot-02 path:
   English and reconstruction characters that the default Latin Modern fonts
   dropped.
 
-See `assembly_pilot_01_report.md` and `assembly_pilot_02_report.md` for the
-exact build results and blockers.
+See the pilot reports for the exact build results and the layout decisions that
+landed during those passes.
+
+## Book architecture and class manifests
+
+The current design layer for full lexical assembly includes:
+
+- `book_architecture.md` — proposed structure of the lexical derivation volume
+- `book_architecture_01_report.md` — summary report for the architecture pass
+- `full_assembly_design.md` — design note for a future full assembly script
+- `section_introductions_draft.md` — placeholder section-opening prose
+- `build_class_manifests.py` — helper that scans current `.model.md` entries and
+  writes class-based manifests
+- `manifest_regular.tsv`
+- `manifest_early_analogy.tsv`
+- `manifest_late_analogy.tsv`
+- `manifest_unexplained.tsv`
+- `manifest_all_by_class.tsv`
+- `manifest_summary.md`
+
+These files are design and scaffolding artifacts only. They do **not** generate
+the full 147-entry lexical PDF in this phase.
+
+## Next planned step
+
+After review of the architecture and manifests, the next planned step is a
+**full lexical assembly alpha by class**. That later pass should:
+
+1. use the class manifests as the ordering source;
+2. insert section-introduction scaffolding above each class part;
+3. preserve the current per-entry summary + boxed-trace layout; and
+4. continue to keep the later sound-change volume or report separate.
 
 ## Known blockers before full assembly
 
-1. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or use the Docker wrapper.
-2. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` / `Noto Sans Mono` are used in the Docker-backed pilot).
-3. After any toolchain change, rerun the pilot and inspect table and bibliography rendering before scaling to the full corpus.
+1. Decide how to handle the small review bucket of entries with non-canonical
+   derivation-class labels before the first full lexical alpha.
+2. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or
+   use the Docker wrapper.
+3. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` /
+   `Noto Sans Mono` are used in the Docker-backed pilot).
+4. After any toolchain change, rerun the pilot and inspect trace boxes,
+   bibliography rendering, and citation links before scaling to the full corpus.
