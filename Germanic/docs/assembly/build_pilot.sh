@@ -17,6 +17,7 @@ from __future__ import annotations
 import csv
 import re
 import sys
+import textwrap
 from pathlib import Path
 
 repo_root = Path(sys.argv[1])
@@ -129,7 +130,13 @@ def escape_table_cell(text: str) -> str:
     return text.replace("|", r"\|")
 
 
-def parse_trace_cell(cell: str) -> list[tuple[str, str]]:
+def display_stage_name(stage: str) -> str:
+    if stage == "Proto-West Germanic":
+        return "West Germanic"
+    return stage
+
+
+def parse_trace_cell(cell: str) -> list[tuple[str, list[tuple[str, str]]]]:
     pieces = [piece.strip() for piece in re.split(r"<br\s*/?>", cell) if piece.strip()]
     if not pieces:
         return []
@@ -151,17 +158,13 @@ def parse_trace_cell(cell: str) -> list[tuple[str, str]]:
     if current_stage or current_items:
         stages.append((current_stage, current_items))
 
-    rows: list[tuple[str, str]] = []
+    parsed_stages: list[tuple[str, list[tuple[str, str]]]] = []
     for stage, items in stages:
-        if not items:
-            rows.append((stage, ""))
-            continue
+        parsed_items: list[tuple[str, str]] = []
 
-        first_change = True
         for item in items:
             if item == "[no change]":
-                rows.append((stage, item))
-                first_change = False
+                parsed_items.append((item, ""))
                 continue
 
             if ":" in item:
@@ -172,12 +175,51 @@ def parse_trace_cell(cell: str) -> list[tuple[str, str]]:
                 change = item.strip()
                 form = ""
 
-            if stage and first_change:
-                change = f"{stage}: {change}"
-            rows.append((change, form))
-            first_change = False
+            parsed_items.append((change, form))
 
-    return rows
+        parsed_stages.append((display_stage_name(stage), parsed_items))
+
+    return parsed_stages
+
+
+def render_trace_stage_block(stage: str, items: list[tuple[str, str]]) -> list[str]:
+    lines = [f"**{stage}**"]
+
+    if not items:
+        lines.append("[no change]")
+    else:
+        for change, form in items:
+            if change == "[no change]":
+                lines.append("[no change]")
+            elif form:
+                lines.append(f"{change}: {italicize_form(form)}")
+            else:
+                lines.append(change)
+
+    return [escape_table_cell(line) for line in lines]
+
+
+def wrap_grid_cell(lines: list[str], width: int) -> list[str]:
+    wrapped: list[str] = []
+
+    for line in lines:
+        if not line:
+            wrapped.append("")
+            continue
+
+        segments = textwrap.wrap(
+            line,
+            width=width,
+            break_long_words=False,
+            break_on_hyphens=False,
+        )
+        wrapped.extend(segments or [""])
+
+    return wrapped or [""]
+
+
+def render_grid_row(left: str, right: str, width: int) -> str:
+    return f"| {left.ljust(width)} | {right.ljust(width)} |"
 
 
 def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
@@ -189,32 +231,34 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     if len(row_parts) != 2:
         return [trace_entry["table"]]
 
-    left_rows = parse_trace_cell(row_parts[0])
-    right_rows = parse_trace_cell(row_parts[1])
-    row_count = max(len(left_rows), len(right_rows))
+    def build_cell_lines(cell: str) -> list[str]:
+        lines: list[str] = []
+        for stage, items in parse_trace_cell(cell):
+            lines.extend(render_trace_stage_block(stage, items))
+        return lines
+
+    width = 48
+    left_lines = wrap_grid_cell(build_cell_lines(row_parts[0]), width)
+    right_lines = wrap_grid_cell(build_cell_lines(row_parts[1]), width)
+    row_count = max(len(left_lines), len(right_lines))
+    border = "+" + "-" * (width + 2) + "+" + "-" * (width + 2) + "+"
+    header_border = "+" + "=" * (width + 2) + "+" + "=" * (width + 2) + "+"
 
     rendered = [
-        "| Earlier Germanic change | Form | Old English change | Form |",
-        "| :--- | :--- | :--- | :--- |",
+        border,
+        render_grid_row("Earlier Germanic changes", "Old English changes", width),
+        header_border,
     ]
 
     for index in range(row_count):
-        left_change, left_form = left_rows[index] if index < len(left_rows) else ("", "")
-        right_change, right_form = right_rows[index] if index < len(right_rows) else ("", "")
-
         rendered.append(
-            "| "
-            + " | ".join(
-                [
-                    escape_table_cell(left_change),
-                    "[no change]" if left_form == "[no change]" else italicize_form(left_form) if left_form else "",
-                    escape_table_cell(right_change),
-                    "[no change]" if right_form == "[no change]" else italicize_form(right_form) if right_form else "",
-                ]
+            render_grid_row(
+                left_lines[index] if index < len(left_lines) else "",
+                right_lines[index] if index < len(right_lines) else "",
+                width,
             )
-            + " |"
         )
-
+        rendered.append(border)
     return rendered
 
 
