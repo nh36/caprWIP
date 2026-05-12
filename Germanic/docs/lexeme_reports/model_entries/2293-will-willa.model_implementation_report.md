@@ -8,7 +8,7 @@
 - `Germanic/data/germanic-aligned-final.tsv`
 - `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md`
 - nearby shared `DEV_NOTES` passages for row 2292 only as contrastive background
-- local reference files for `ClarkHall1960`, `Kluge2002`, `Kroonen2013`, `Orel2003`
+- local reference files for `ClarkHall1960`, `KlugeSeebold2011`, `Kroonen2013`, `Orel2003`
 - `docs/refs.bib`
 
 ## Files created
@@ -32,7 +32,7 @@
 Checked against `docs/refs.bib`:
 
 - `ClarkHall1960`
-- `Kluge2002`
+- `KlugeSeebold2011`
 - `Kroonen2013`
 - `Orel2003`
 

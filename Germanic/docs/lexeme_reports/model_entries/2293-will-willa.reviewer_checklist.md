@@ -24,7 +24,7 @@
 
 | Item | Result | Note |
 | :--- | :--- | :--- |
-| Citation keys present in `docs/refs.bib` | yes | `ClarkHall1960`, `Kluge2002`, `Kroonen2013`, `Orel2003`. |
+| Citation keys present in `docs/refs.bib` | yes | `ClarkHall1960`, `KlugeSeebold2011`, `Kroonen2013`, `Orel2003`. |
 | Sources cited in prose | yes | No local file names appear in the model entry. |
 | Missing-key issues recorded outside final prose | yes | No missing-key issue affects the entry. |
 

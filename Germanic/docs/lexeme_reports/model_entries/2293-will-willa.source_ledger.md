@@ -5,7 +5,7 @@
 | TSV row 2293 | live row | `PROTO *wéljô`; target `willa` | noun row distinct from verb row 2292 | `willa` | Establishes the selected input and OE noun target. | no | `Germanic/data/germanic-aligned-final.tsv`; packet | high |
 | Compact derivation trace | current trace | `*wéljô -> willa` | regular noun derivation | `willa` | Confirms the exact current output. | no | packet; debug snapshot | high |
 | Kroonen | comparative etymology | `*weljan- 1`; `*weljan- 2`; OE `willan`; OE `willa` | verb entry vs noun entry | `willan`; `willa` | Supplies the noun/verb split needed for the row note. | yes — `Kroonen2013` | local Kroonen reference file; memo | high |
-| Orel; Kluge | comparative noun headwords | `*weljōn`; `*weljOn`; OE `willa`; G `Wille` | noun family headwords | `willa` | Confirm the noun-side cognate set behind selected `*wéljô`. | yes — `Orel2003`; `Kluge2002` | local reference files; memo | high |
+| Orel; Kluge | comparative noun headwords | `*weljōn`; `*weljOn`; OE `willa`; G `Wille` | noun family headwords | `willa` | Confirm the noun-side cognate set behind selected `*wéljô`. | yes — `Orel2003`; `KlugeSeebold2011` | local reference files; memo | high |
 | Clark Hall | OE lexicography | `willa m.`; `willan` | noun headword distinct from verb headword | `willa`; `willan` | Confirms that the OE noun and verb are separate lexical entries. | yes — `ClarkHall1960` | local dictionary file; memo | high |
 
 ## Citation-locator full-corpus high-confidence pass
