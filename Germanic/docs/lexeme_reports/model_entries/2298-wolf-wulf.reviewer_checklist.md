@@ -53,3 +53,9 @@
 2. A human reader should confirm how prominently the `wulfe < wulfi` discussion
    should stand in any later promotion pass, since it is important as a negative
    control but not as a solution.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Luick1914, 148`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

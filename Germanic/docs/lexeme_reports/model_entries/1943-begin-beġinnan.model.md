@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-The verb is modeled here as inherited `*bigínnaną`. Ringe and Taylor state that intervocalic `*g` is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists `ginnan` among familiar examples of palatal `g` in this verb family [@Campbell1959].
+The verb is modeled here as inherited `*bigínnaną`. Ringe and Taylor state that intervocalic `*g` is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists `ginnan` among familiar examples of palatal `g` in this verb family [@Campbell1959, 174].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall lemmatize the verb as `be-ginnan` / `beginnan` [@BosworthToller1898; @ClarkHall1960]. Those plain-`g` dictionary spellings support the same verb that appears here in normalized form as `beġinnan`.
+Bosworth-Toller and Clark Hall lemmatize the verb as `be-ginnan` / `beginnan` [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-`g` dictionary spellings support the same verb that appears here in normalized form as `beġinnan`.
 
 ### Development note
 

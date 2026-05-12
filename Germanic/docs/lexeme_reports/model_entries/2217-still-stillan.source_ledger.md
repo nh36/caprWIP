@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Clark Hall | OE lexicography | `stillan`; `stille` | verb versus adjective | `stillan`, `stille` | Confirms that the row targets the verb, not the adjective. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt`; memo | high |
 | Bosworth-Toller | OE lexicography | prefixed verbal family such as `ge-stillan` | verbal evidence | `gestillan` family | Reinforces the verbal side of the OE family. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt`; memo | high |
 | Kluge-Seebold | West Germanic comparison | adjective `still`; verb `stillen` | adjective-plus-verb family | `stille`, `stillan` | Supports the wider WGmc family while keeping adjective and verb distinct. | yes — `KlugeSeebold2011` | `docs/references/kluge_seebold_etymologisches_woerterbuch.txt`; memo | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 724`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

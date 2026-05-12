@@ -12,3 +12,9 @@ This ledger records the evidence gathered for the compact regular-with-note entr
 | Clark Hall | OE lexicographic evidence | `biegan (ē, i, y)` | dictionary headword for the weak verb | `biegan` | Establishes the ordinary Old English verb headword. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:6521-6523`; `Germanic/docs/lexeme_reports/research_memos/1961-bow-bīeġan.md:21-22` | high |
 | Bosworth-Toller | OE lexicographic evidence | `bigan`; examples `Ic bēge ...`, `Se ord bīgde ...` | attested weak-verb forms | `bigan`; `bēge`; `bīgde` | Confirms attested verbal usage and guards against confusion with the noun. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:14741-14750`; `Germanic/docs/lexeme_reports/research_memos/1961-bow-bīeġan.md:21-22` | high |
 | DEV_NOTES slice synthesis | current local synthesis | `*báugijaną`; `bīeġan`; noun `boga`; strong row `bēag` | row-level lexeme disambiguation | `bīeġan` | The note-bearing issue is lexeme disambiguation within the bow family, not a live derivational failure. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1961-bow-bīeġan.md:18-42,94-124` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 102`; `Campbell1959, 80`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -51,3 +51,9 @@
 1. Major review point remains: the noun itself derives regularly as `brand`, so
    human review should confirm whether the inferred oblique `brandes` should
    remain the preferred comparison form for this row.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 116`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

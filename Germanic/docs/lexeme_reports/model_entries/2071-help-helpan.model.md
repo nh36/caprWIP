@@ -22,7 +22,7 @@ The entry treats the strong verb itself rather than the separate noun `help`. Br
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `helpan` as the verbal headword 'to help' [@ClarkHall1960; @BosworthToller1898]. The target is therefore the attested infinitive citation form.
+Clark Hall and Bosworth-Toller record `helpan` as the verbal headword 'to help' [@ClarkHall1960; @BosworthToller1898, 542]. The target is therefore the attested infinitive citation form.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From `*xélpaną`, no special repair is needed beyond the ordinary reduction of 
 
 ### Form note
 
-Noun `help` belongs to a separate lexical line and should not replace verbal `helpan` as the target here [@ClarkHall1960; @BosworthToller1898].
+Noun `help` belongs to a separate lexical line and should not replace verbal `helpan` as the target here [@ClarkHall1960; @BosworthToller1898, 542].

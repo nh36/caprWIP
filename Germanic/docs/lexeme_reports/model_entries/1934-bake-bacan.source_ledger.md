@@ -12,3 +12,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Bosworth-Toller | OE lexicographic evidence | `bacan`; finite and participial examples | dictionary headword and attested forms | `bacan` | Establishes `bacan` as the ordinary Old English headword. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:9740-9744` | high |
 | Clark Hall | OE lexicographic evidence | `bacan to bake`; `becst` 2sg; `beces` 3sg | dictionary headword and finite comparators | `bacan`; `becst`; `beces` | Confirms that the target is the infinitive headword and helps distinguish it from finite forms. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:4617-4617`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:5087-5087`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:5124-5124` | high |
 | DEV_NOTES slice | current local synthesis | `*bákaną`; `bacan`; older `bacen` and `bacana` debugging states | regular row with superseded implementation history | `bacan` | Confirms that the current row is stable and that earlier `bacen` / `-ăną` states are only project history. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1934-bake-bacan.md:28-39,75-117` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Campbell1959, 61`; `BosworthToller1898, 72`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

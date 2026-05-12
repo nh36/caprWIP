@@ -53,3 +53,9 @@
 2. A human reader should confirm how prominently the competing citation
    reconstruction `*rustaz` should stand beside the preserved header form
    `*rústō` in any later promotion pass.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 677`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

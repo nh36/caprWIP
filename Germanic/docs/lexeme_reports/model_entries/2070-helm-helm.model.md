@@ -22,7 +22,7 @@ Kroonen cites the helmet noun as `*helma-` and separately distinguishes a differ
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `helm` as the ordinary Old English noun for 'helmet', while `helma` belongs to a separate rudder lexeme [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller record `helm` as the ordinary Old English noun for 'helmet', while `helma` belongs to a separate rudder lexeme [@ClarkHall1960; @BosworthToller1898, 542].
 
 ### Development to Old English
 

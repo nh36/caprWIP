@@ -31,7 +31,7 @@ related but distinct histories.
 Clark Hall keeps **`wacan`** and **`wacian`** as separate headwords
 [@ClarkHall1960]. Bosworth-Toller adds an important caution under
 **`wacan`**: the simplex infinitive itself does not occur, its place seeming to
-be taken by **`wæcnan`** [@BosworthToller1898].
+be taken by **`wæcnan`** [@BosworthToller1898, 226].
 
 The target **`wacan`** is therefore best understood as a normalized strong
 headword for the verb family, not as a directly quoted simplex infinitive. It

@@ -30,7 +30,7 @@ strong-noun headword does not align as closely with the attested OE noun.
 ### Old English evidence
 
 Old English dictionaries record the noun as `gealla`, and Bright also gives the
-dative `geallan`, confirming a weak-noun paradigm [@BosworthToller1898;
+dative `geallan`, confirming a weak-noun paradigm [@BosworthToller1898, 297;
 @ClarkHall1960, 145; @BrightCassidyRingler1971, 372]. The form used here, **`ġealla`**, is
 a normalized spelling with macrons omitted and palatal `<ġ>` made explicit.
 

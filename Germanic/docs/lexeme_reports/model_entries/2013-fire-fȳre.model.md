@@ -30,7 +30,7 @@ inherited form `fȳr` with an attested analogical surface form `fȳre`.
 ### Old English evidence
 
 Bosworth-Toller records **`fyr`** as the noun 'fire' and also preserves oblique
-**`fyre`** in the Old English record [@BosworthToller1898]. The first is the
+**`fyre`** in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final `-e` within the
 paradigm.

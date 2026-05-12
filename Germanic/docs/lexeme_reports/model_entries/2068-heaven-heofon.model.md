@@ -32,7 +32,7 @@ front-vocalic stem yields Anglian or Mercian `hefen` / `heofen`
 
 Old English dictionaries record the standard West Saxon noun as **`heofon`**,
 alongside Anglian or Mercian `hefen` material [@ClarkHall1960;
-@BosworthToller1898]. Campbell also cites an earlier stage `hefzen` in the
+@BosworthToller1898, 43]. Campbell also cites an earlier stage `hefzen` in the
 history of the word [@Campbell1959].
 
 The target of this entry is the West Saxon citation form `heofon`. Its vowel

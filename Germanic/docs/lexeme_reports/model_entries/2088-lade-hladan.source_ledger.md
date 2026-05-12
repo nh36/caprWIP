@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Orel | comparative headword | weak comparative `*laθōjaną` style label | wider cognate family | broader family context | Useful for the wider family heading, but not for the selected OE input. | yes — `Orel2003` | cited in packet/memo/slice | medium |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `hladan` and paradigm material | OE strong verb | `hladan` | Confirms the attested OE infinitive. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | weak headword rejected as direct OE source; voiced strong form accepted | formation choice | `hladan` | The main issue is early stem selection, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2088-lade-hladan.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2088-lade-hladan.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 559`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

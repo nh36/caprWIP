@@ -8,3 +8,8 @@
 | Fulk; Ringe & Taylor | historical phonology | PIE `*wendh-`; original `*d` | non-Verner `*nd` verb | `windan` | Show that the dental is original and the verb is not a `*nþ/*nð` case. | yes — `Fulk2018`; `RingeTaylor2014` | local grammar files; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicography | `windan` | verb headword | `windan` | Confirm the attested infinitive headword. | yes — `ClarkHall1960`; `BosworthToller1898` | local dictionary files; memo | high |
 
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 101`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

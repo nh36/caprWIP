@@ -28,7 +28,7 @@ the lexeme label: no alternative inherited cell accounts for the form.
 Old English preserves a mixed lexical picture. Campbell cites `bucca` in the
 exception set for this phonological environment, while Clark Hall and
 Bosworth-Toller show that Old English has both `bucca` and `bucc`
-[@Campbell1959; @ClarkHall1960; @BosworthToller1898]. The a-stem citation form
+[@Campbell1959; @ClarkHall1960; @BosworthToller1898, 122]. The a-stem citation form
 `bucc` is the target treated here, with `bucca` kept as genuine philological
 background from the same lexical family.
 

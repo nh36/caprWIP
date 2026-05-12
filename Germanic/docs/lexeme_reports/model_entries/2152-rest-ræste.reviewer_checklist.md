@@ -59,3 +59,9 @@
 2. A human reader should confirm that the present wording gives the right weight
    to the specifically genitive label preserved in the current source stack,
    since the broader oblique singular also converges on `ræste`.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 121`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

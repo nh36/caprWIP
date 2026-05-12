@@ -52,3 +52,9 @@
    g-bearing comparative label visibly distinct.
 2. Later review should preserve the stem-`u` harmony explanation and not slip
    back into the older open/closed-syllable heuristic.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Luick1914, 397`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

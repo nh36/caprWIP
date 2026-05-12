@@ -12,3 +12,9 @@ book-style entry was drafted.
 | Orel | background comparative headword | `*xnakkaz *xnakkōn` | a-grade comparative family | ON/MLG/OHG neck forms | Useful background for the broader family, but weaker than Kroonen for the OE branch. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt` | medium |
 | Clark Hall / Bosworth-Toller | OE dictionary evidence | `hnecca`; `occipitium`; `cervix, posteriora colli` | weak masculine headword | `hnecca` | Confirms that the target is an attested OE citation form. | yes — `ClarkHall1960`; `BosworthToller1898` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt`; `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt` | high |
 | Local memo / slice synthesis | current project analysis | `*xnakkăz`; `*xnakkô`; `*xnékkô` | class and grade correction | `hnecca`; rejected `hnacca` type | The core issue is early stem-grade selection, not an OE-side sound-law repair. | no | `Germanic/docs/lexeme_reports/research_memos/2134-neck-hnecca.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2134-neck-hnecca.md` | high; comparative label remains review-sensitive |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 567`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

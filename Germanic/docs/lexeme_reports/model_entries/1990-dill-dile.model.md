@@ -33,7 +33,7 @@ the i-stems provides the relevant morphological background for the OE side
 ### Old English evidence
 
 Old English dictionaries record the plant name as `dile`, alongside the variant
-`dili` [@BosworthToller1898; @ClarkHall1960]. The form discussed here is
+`dili` [@BosworthToller1898, 164; @ClarkHall1960]. The form discussed here is
 therefore an attested Old English noun with single `l`.
 
 The Old English evidence is the relevant point. Whatever broader comparative

@@ -48,3 +48,9 @@
 
 1. Keep `bucc` distinct from the parallel OE form `bucca`.
 2. Do not let the withdrawn cell-switch rescue re-enter later scaling work as live analysis.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 122`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -49,7 +49,7 @@ regular outcome is therefore **`woll`**.
 That regular derivation is not the attested Old English form. Luick rejects a
 simple phonological rule that would protect this word alone, and Ringe and
 Taylor state the larger problem plainly: we do not really know why `*u` failed
-to lower in forms of this sort [@Luick1914; @RingeTaylor2014, §2.3.1].
+to lower in forms of this sort [@Luick1914, 148; @RingeTaylor2014, §2.3.1].
 
 ### What remains unexplained
 

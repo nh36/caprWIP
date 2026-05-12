@@ -12,3 +12,9 @@ entry was drafted.
 | Luick | OE grammar | rejection of a simple phonological conditioning for the exception cluster | unresolved explanatory status | `wull` family | Supports keeping the exception unresolved rather than inventing a rule. | yes — `Luick1914` | cited in packet/memo/slice | medium |
 | Ringe & Taylor | comparative grammar | explicit uncertainty about why `*u` failed to lower in this cluster | unresolved historical explanation | exception cluster including wool | Provides the clearest modern handbook statement that the cause remains unknown. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | no high-vowel escape cell in the feminine ō-stem paradigm | negative paradigm result | `wull` | Distinguishes wool from other members of the exception cluster that permit paradigm-cell retargeting. | no | `Germanic/docs/lexeme_reports/research_memos/2300-wool-wull.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2300-wool-wull.md` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Luick1914, 148`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

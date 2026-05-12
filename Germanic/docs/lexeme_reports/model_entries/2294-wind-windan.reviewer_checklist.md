@@ -55,3 +55,9 @@
 
 1. Keep the verb distinct from noun `wind`.
 2. Keep older Verner-style exploratory history out of the final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 101`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

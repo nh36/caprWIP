@@ -50,3 +50,9 @@
 
 1. Keep the entry compact; it should stay shorter than the late-analogy finite-form reports.
 2. Do not let superseded `bacen` or `-ăną` debugging history drift back into the final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Campbell1959, 61`; `BosworthToller1898, 72`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -22,7 +22,7 @@ Kroonen cites the noun under stem-level `*burdi-` and gives Old English `(ge-)by
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller both attest simplex `byrd` as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898]. The prefixed form `gebyrd` is also well established in the tradition: Kroonen lists `(ge-)byrd`, Bosworth-Toller has a separate `ge-byrd` entry, and Campbell cites `gebyrd` and `gebyrdu` in his grammatical discussion [@Kroonen2013; @BosworthToller1898; @Campbell1959].
+Clark Hall and Bosworth-Toller both attest simplex `byrd` as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form `gebyrd` is also well established in the tradition: Kroonen lists `(ge-)byrd`, Bosworth-Toller has a separate `ge-byrd` entry, and Campbell cites `gebyrd` and `gebyrdu` in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
 
 ### Form note
 

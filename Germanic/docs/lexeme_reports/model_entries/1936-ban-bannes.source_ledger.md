@@ -15,3 +15,9 @@ This ledger records the evidence used for the P3 pilot upgrade.
 - The OE noun is well supported, but the exact unprefixed gen.sg. `bannes` is best treated as the row's selected regular comparison form rather than as the reviewed dictionaries' headword spelling.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
 - No OCR or encoding artifact was reproduced in final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 303`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

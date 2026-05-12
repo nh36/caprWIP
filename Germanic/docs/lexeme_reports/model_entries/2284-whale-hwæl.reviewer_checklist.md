@@ -52,3 +52,9 @@
    dictionary spelling **`hwal`**.
 2. Comparative notation remains divided between Orel's **`*xwalaz`** and
    Kroonen's **`*hwali-`**.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 326`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

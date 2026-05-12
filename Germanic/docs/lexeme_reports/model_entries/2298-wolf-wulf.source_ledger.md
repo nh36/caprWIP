@@ -15,3 +15,9 @@ entry was drafted.
 | Kroonen | 2013 etymological dictionary | `*wulfa-` | masculine a-stem lexeme | comparative family only | Supports the ordinary a-stem reconstruction and therefore rules out rescue by reassigning the noun to a u-stem. | yes — `Kroonen2013` | `Germanic/docs/lexeme_reports/dev_notes_slices/2298-wolf-wulf.md:62-63`; `Germanic/docs/lexeme_reports/research_memos/2298-wolf-wulf.md:34-37` | medium |
 | Stiles | 2012 article | environment split for lowering of `*u` | descriptive environment classification | exception cluster background | Useful for the environment taxonomy behind the rejected paradigm-cell repair, but not a solution for `wulf`. | yes — `Stiles2012` | `Germanic/docs/lexeme_reports/dev_notes_slices/2298-wolf-wulf.md:60-63`; `Germanic/docs/lexeme_reports/research_memos/2298-wolf-wulf.md:34-37` | medium |
 | DEV_NOTES rollback and probe | current local synthesis | `echo wúlfi | flookup -i old_english.bin` → `wylf` | high-vowel control probe | `wylf` as rejected control output | The decisive local test shows that high-vowel oblique inputs preserve `u` only by triggering i-umlaut, so they cannot yield bare `wulf`. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/2298-wolf-wulf.md:82-95`; `Germanic/docs/DEV_NOTES.md:26126-26197` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Luick1914, 148`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

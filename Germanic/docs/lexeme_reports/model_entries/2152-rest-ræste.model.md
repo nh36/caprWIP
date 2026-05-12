@@ -32,7 +32,7 @@ to a nominative singular that would remain `rast`.
 
 The ordinary Old English citation form is `ræst` [@Kroonen2013; @ClarkHall1960].
 Bosworth-Toller also preserves oblique uses of `ræste`, including prepositional
-examples such as `on ræste` and `tó ræste` [@BosworthToller1898].
+examples such as `on ræste` and `tó ræste` [@BosworthToller1898, 121].
 
 The comparison form used here is therefore an attested oblique `ræste`, not a
 reconstructed surrogate. The dictionary headword `ræst` remains an equally real

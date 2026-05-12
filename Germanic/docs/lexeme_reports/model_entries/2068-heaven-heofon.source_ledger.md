@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Ringe-Taylor | WGmc and OE comparison | northern WGmc `*hebun` > WS `heofon`, Mercian `heofen` | dialectal distribution | `heofon`; `heofen` | Reinforces the contrast between back-vocalic and front-vocalic stems. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
 | Clark Hall / Bosworth-Toller | OE dictionary evidence | `heofon`; variant `hefen` material | OE noun | `heofon`; `hefen` | Confirms the standard Old English citation form and its dialectal background. | yes — `ClarkHall1960`; `BosworthToller1898` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | nom.sg. path gives `hefen`; oblique path gives `heofon` | paradigm-cell choice | `heofon`; `hefen` | The key issue is analogical spread of an oblique stem to nominative position in West Saxon. | no | `Germanic/docs/lexeme_reports/research_memos/2068-heaven-heofon.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2068-heaven-heofon.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/deferred_sound_change_material.md`; `Germanic/docs/lexeme_reports/research_memos/batch_07_summary.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 43`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -28,7 +28,7 @@ The older literature often notices that the exceptional words cluster near
 labials. Bülbring lists `full`, `wulle`, and `wulf` together, but he also says
 that the ordinary rule still gives `o` in comparable forms such as `folc` and
 `bolt` [@Bulbring1902]. Luick rejects a categorical labial blocker on the same
-grounds and prefers a lexical or analogical account instead [@Luick1914].
+grounds and prefers a lexical or analogical account instead [@Luick1914, 148].
 
 ### Old English evidence
 

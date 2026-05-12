@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Kroonen | comparative etymology | `*lindō-` | stem-style headword | `lind` | Gives the comparative reconstruction and OE reflex. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicographic evidence | noun `lind`; adjective `linden` | noun vs adjective distinction | `lind`; `linden` | Establish that the noun target is `lind` and that `linden` is a separate adjectival form. | yes — `ClarkHall1960`; `BosworthToller1898` | local Hall and BT files; memo | high |
 | Packet source audit | packet background | Wiktionary `linden` hit | low-authority lexical table | `linden` | Useful only as a warning about a misleading modern-gloss match. | no | packet; memo | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 630`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -32,7 +32,7 @@ derivational. Old English `lungen` is not a direct reflex of the bare base noun
 ### Old English evidence
 
 Old English dictionaries record the noun as `lungen`, with inflected forms such
-as `lungenne` and `lungena` [@BosworthToller1898]. Clark Hall also preserves a
+as `lungenne` and `lungena` [@BosworthToller1898, 634]. Clark Hall also preserves a
 small family of compounds such as `lungenādl`, `lungensealf`, and `lungenwyrt`
 [@ClarkHall1960].
 

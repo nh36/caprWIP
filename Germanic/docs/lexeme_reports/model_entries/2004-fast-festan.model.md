@@ -32,7 +32,7 @@ belongs to the broader comparative presentation of the lexeme.
 ### Old English evidence
 
 Old English dictionaries record forms such as `festan`, alongside related
-`fæstan` / `fǣstan` spellings and meanings [@BosworthToller1898;
+`fæstan` / `fǣstan` spellings and meanings [@BosworthToller1898, 213;
 @ClarkHall1960]. The form selected here is **`festan`**, which fits the regular
 class-I phonological development.
 

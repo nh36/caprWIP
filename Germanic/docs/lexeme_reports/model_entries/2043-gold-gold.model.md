@@ -22,7 +22,7 @@ Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the sa
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record `gold` as the ordinary Old English neuter noun [@BosworthToller1898; @ClarkHall1960, 152]. The target is therefore the attested citation form itself.
+Bosworth-Toller and Clark Hall both record `gold` as the ordinary Old English neuter noun [@BosworthToller1898, 121; @ClarkHall1960, 152]. The target is therefore the attested citation form itself.
 
 ### Development note
 

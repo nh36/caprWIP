@@ -29,7 +29,7 @@ than to Kroonen's citation form.
 ### Old English evidence
 
 Clark Hall lemmatizes the noun as **`hwal`**, and Bosworth-Toller preserves the
-plural **`hwalas`** [@ClarkHall1960; @BosworthToller1898]. The comparison form
+plural **`hwalas`** [@ClarkHall1960; @BosworthToller1898, 326]. The comparison form
 is normalized here as **`hwæl`** for the singular citation form with Anglo-
 Frisian fronting.
 

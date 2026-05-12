@@ -50,3 +50,9 @@
 
 1. Keep noun `græf` and verb `grafan` separate if the entry is later expanded.
 2. Keep `græfð` and `græfen` subordinate to infinitive `grafan` rather than letting them reshape the citation target.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Campbell1959, 61`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

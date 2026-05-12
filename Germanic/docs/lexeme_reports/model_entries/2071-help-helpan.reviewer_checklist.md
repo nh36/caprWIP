@@ -50,3 +50,9 @@
 
 1. Keep verbal `helpan` and noun `help` separate if the entry is later expanded.
 2. Keep probe-only spellings such as `*xélpăną` out of any later prose expansion unless they are clearly labeled.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 542`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -31,7 +31,7 @@ English development discussed below is based on `*knéxtaz`.
 ### Old English evidence
 
 Old English dictionaries record the noun as `cniht` [@ClarkHall1960;
-@BosworthToller1898]. Campbell's discussion of related forms such as plural
+@BosworthToller1898, 71]. Campbell's discussion of related forms such as plural
 `cneohtas` helps show the same vowel environment from another point in the
 paradigm [@Campbell1959].
 

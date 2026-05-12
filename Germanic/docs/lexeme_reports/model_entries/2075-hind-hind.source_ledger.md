@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Kroonen | comparative etymology | `*hindō-` f. | deer noun | `hind` | Supplies the comparative headword behind the lexical item. | yes — `Kroonen2013` | cited in `Germanic/docs/lexeme_reports/research_memos/2075-hind-hind.md:22-23,31-37` | high |
 | Bosworth-Toller and Clark Hall | OE lexicographic evidence | `hind`; separate `hindan` | noun versus adverb/preposition | `hind`; `hindan` | Confirms that `hindan` belongs to another lexeme. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in `Germanic/docs/lexeme_reports/research_memos/2075-hind-hind.md:23-24,41-45` | high |
 | Research memo | current synthesis | `*xéndjō`; `*hindō-`; `hind`; `hindan` | selected input distinguished from comparative headword and wrong OE lexeme | `hind`; `hindan` | Explains why the final entry must keep the noun and adverb apart. | no | `Germanic/docs/lexeme_reports/research_memos/2075-hind-hind.md:29-59` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 554`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

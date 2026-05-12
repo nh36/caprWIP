@@ -11,3 +11,9 @@ book-style entry was drafted.
 | Ringe-Taylor | OE-specific analysis | OE verb 'to fast' described as originally class I weak, later semantically associated with the stative family | class-I formation vs class-III comparative label | `festan`; `fæstan` / `fǣstan` | Supplies the decisive argument for the OE-facing `*fástijaną` input and the analogical status of `æ`-forms. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `festan`; related `fæstan` / `fǣstan` material | OE weak verb | `festan`; `fæstan` | Confirms the OE forms that must be distinguished in the entry. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | class-III path rejected; class-I `*fástijaną` accepted | formation choice | `festan` | The decisive issue is verb class and lexical history, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2004-fast-festan.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2004-fast-festan.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 213`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

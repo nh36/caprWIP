@@ -54,7 +54,7 @@ fronting yields `*jéugunθ`; nasal-spirant lengthening and loss give
 surfaces as `ġeoguþ`. Medial `u` remains preserved because the handbooks treat
 this environment as one of stem-`u` harmony after stressed `u`, citing forms
 such as `munuc`, `duguþ`, and `iuguþ` [@Campbell1959; @SieversBrunner1965;
-@Luick1914].
+@Luick1914, 397].
 
 ### Stage comparison
 

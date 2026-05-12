@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Bright | OE reader and glossary | `helpan, healp, hulpon, holpen` | strong verb paradigm | `helpan` | Supplies the ordinary Old English strong-verb family for the entry. | yes — `BrightCassidyRingler1971` | cited in `Germanic/docs/lexeme_reports/research_memos/2071-help-helpan.md:31-32,50-53` | high |
 | Bosworth-Toller and Clark Hall | OE lexicographic evidence | `helpan`; separate noun `help` | verb versus noun | `helpan`; `help` | Confirms that the selected target is the verb, not the noun. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in `Germanic/docs/lexeme_reports/research_memos/2071-help-helpan.md:31-33,48-53` | high |
 | Research memo | current synthesis | `*xélpaną`; `helpan`; noun `help`; probe `*xélpăną` | citation form distinguished from noun and probe spellings | `helpan`; `help` | Explains why the entry stays with verbal `helpan` and leaves noun `help` to the separate lexical line. | no | `Germanic/docs/lexeme_reports/research_memos/2071-help-helpan.md:36-45,55-73` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 542`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -22,7 +22,7 @@ Kroonen cites the ordinary Proto-Germanic hair word as `*hēra-` [@Kroonen2013].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `hær` / `hǣr` as the ordinary Old English noun 'hair' [@ClarkHall1960, 158; @BosworthToller1898]. The target is therefore the attested headword itself.
+Clark Hall and Bosworth-Toller record `hær` / `hǣr` as the ordinary Old English noun 'hair' [@ClarkHall1960, 158; @BosworthToller1898, 510]. The target is therefore the attested headword itself.
 
 ### Development to Old English
 

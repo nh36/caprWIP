@@ -22,7 +22,7 @@ Kroonen cites the noun as masculine `*farna-` and gives Old English `fearn, fern
 
 ### Old English evidence
 
-Clark Hall gives `fearn` as an Old English noun, and Bosworth-Toller records `fearn` with inflected forms such as `fearnes`, `fearna`, and `fearne` [@ClarkHall1960; @BosworthToller1898]. Kroonen's additional `fern` remains useful comparative background, but the best-supported citation target in the local lexical sources is `fearn` [@Kroonen2013].
+Clark Hall gives `fearn` as an Old English noun, and Bosworth-Toller records `fearn` with inflected forms such as `fearnes`, `fearna`, and `fearne` [@ClarkHall1960; @BosworthToller1898, 219]. Kroonen's additional `fern` remains useful comparative background, but the best-supported citation target in the local lexical sources is `fearn` [@Kroonen2013].
 
 ### Development to Old English
 

@@ -57,3 +57,9 @@
 1. The wider ablaut history sketched by Kroonen should remain backgrounded; the
    core drafting claim is the OE i-stem diagnosis, not a full reconstruction of
    the prehistoric paradigm.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 164`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

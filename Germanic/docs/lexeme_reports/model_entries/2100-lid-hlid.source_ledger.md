@@ -10,3 +10,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Orel | comparative etymology | `*xliđan` | neuter lexeme | `hlid` | Gives the comparative headword behind the selected input. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt`; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicographic evidence | `hlid` | noun headword | `hlid` | Establish the attested OE noun and its senses. | yes — `ClarkHall1960`; `BosworthToller1898` | local Hall and BT reference files; memo | high |
 | DEV_NOTES / packet background | current project note | `hled` > `hlid` repair; cautious onset-velar discussion | implementation history | `hlid` | Useful only to explain the resolved vowel question; do not overstate it as a textbook rule. | no | `Germanic/docs/DEV_NOTES.md`; packet; memo | medium |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 563`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

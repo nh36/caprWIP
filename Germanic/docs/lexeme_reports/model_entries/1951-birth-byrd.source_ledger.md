@@ -11,3 +11,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Campbell | OE grammar | `gebyrd`; `gebyrdu` | grammatical discussion of the noun family | `gebyrd`; `gebyrdu` | Shows that prefixed forms are established in the grammatical tradition even though the selected comparator is simplex `byrd`. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt`; cited in memo | high |
 | Hogg | OE morphology | `byrd` among deverbal feminines | deverbal feminine noun | `byrd` | Provides broader morphological background for the simplex noun. | yes — `Hogg1992` | `docs/references/hogg_vol1.txt`; cited in memo | medium |
 | DEV_NOTES slice / research memo | current synthesis | `*búrdiz`; `byrd`; older `byrde` bug; prefixed `gebyrd` | simplex target versus prefixed family evidence | `byrd`; `gebyrd`; `byrde` | Clarifies that archived `byrde` is stale debugging history and that the compact entry should keep simplex `byrd` as the comparator. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1951-birth-byrd.md`; `Germanic/docs/lexeme_reports/research_memos/1951-birth-byrd.md` | high; keep stale `byrde` out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 125`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

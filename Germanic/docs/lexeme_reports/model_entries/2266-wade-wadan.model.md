@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes `wadan` among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914].
+Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes `wadan` among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914, 239].
 
 ### Old English evidence
 

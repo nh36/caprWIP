@@ -12,3 +12,9 @@ book-style entry was drafted.
 | Bosworth-Toller | OE dictionary evidence | `brand`, with inflectional forms such as `brandas`, `branda`, `brandum` | OE masculine a-stem noun | `brand`; oblique forms | Confirms the noun and its paradigm, while leaving `brandes` as the expected gen.sg. rather than a directly cited headword. | yes — `BosworthToller1898` | cited in packet/memo/slice | high; the exact gen.sg. remains review-sensitive |
 | Clark Hall | OE dictionary evidence | `brand` | OE masculine noun | `brand` | Confirms the citation lemma in Old English. | yes — `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | nominative `brand` derives regularly; row keeps oblique `brandes` | cell-choice issue | `brand`; `brandes` | The main uncertainty lies in whether the oblique comparator should remain the preferred target. | no | `Germanic/docs/lexeme_reports/research_memos/1965-brand-brandes.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/1965-brand-brandes.md` | high; keep row-policy discussion out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 116`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

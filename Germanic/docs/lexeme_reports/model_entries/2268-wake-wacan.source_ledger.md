@@ -11,3 +11,9 @@ This ledger records the source forms and class distinctions gathered before the 
 | Clark Hall | OE dictionary | `wacan`; `wacian` | separate dictionary headwords | `wacan`; `wacian` | Confirms that the strong and weak verbs remain distinct in Old English lexicography. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:46409-46418` | high; Google Vision file preferred |
 | Bosworth-Toller | OE dictionary | `wacan ... This infinitive form does not occur`; `wæcnan`; `wacian` | headword caution for the strong verb | `wacan`; `wæcnan`; `wacian` | Shows that `wacan` is a normalized strong headword rather than a directly quoted simplex infinitive. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:119992-120001` | high; Google Vision file checked directly |
 | Local memo / slice synthesis | current project analysis | `*wakēną`; `*wákaną`; `wacan`; `wacian` | class split and headword normalization | `wacan`; `wacian` | The decisive issue is lexeme and class selection, not an OE paradigm-cell problem. | no | `Germanic/docs/lexeme_reports/research_memos/2268-wake-wacan.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2268-wake-wacan.md` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 226`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

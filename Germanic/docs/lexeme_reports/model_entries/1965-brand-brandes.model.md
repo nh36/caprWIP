@@ -31,8 +31,8 @@ making the oblique ending explicit.
 ### Old English evidence
 
 Old English dictionaries lemmatize the noun as `brand` [@ClarkHall1960;
-@BosworthToller1898]. Bosworth-Toller also records inflectional forms such as
-`brandas`, `branda`, and `brandum` under the same entry [@BosworthToller1898].
+@BosworthToller1898, 116]. Bosworth-Toller also records inflectional forms such as
+`brandas`, `branda`, and `brandum` under the same entry [@BosworthToller1898, 116].
 
 The specific comparison form in this entry, **`brandes`**, is the expected
 genitive singular of that a-stem noun. It is therefore an inferred Old English

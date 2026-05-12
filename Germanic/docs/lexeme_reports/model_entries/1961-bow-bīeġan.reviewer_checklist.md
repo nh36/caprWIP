@@ -65,3 +65,9 @@
 ## Remaining human-review points
 
 1. Keep the weak-causative `bīeġan` distinct from the strong verb and noun elsewhere in the bow family when the entry is later promoted or indexed.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 102`; `Campbell1959, 80`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Campbell / Sievers-Brunner | OE evidence and A-restoration | `lappa` as restored form; variant `læppa`; plural/oblique `leappan` | weak noun and vowel history | `lappa`; `læppa`; `leappan` | Supports the OE weak-noun interpretation and the restored `a`. | yes — `Campbell1959`; `SieversBrunner1965` | cited in packet/memo/slice | high |
 | Clark Hall / Bosworth-Toller | OE dictionary evidence | `læppa` and related material | OE noun | `læppa`; `lappa` | Confirms the attested OE forms and variant tradition. | yes — `ClarkHall1960`; `BosworthToller1898` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | strong `*lábbaz` label rejected as OE-facing source; weak `*láppô` accepted | stem-class correction | `lappa` | The main issue is early stem-class selection, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2090-lap-lappa.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2090-lap-lappa.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 613`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

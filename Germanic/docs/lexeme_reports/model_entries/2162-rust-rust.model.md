@@ -32,7 +32,7 @@ points toward `rost`, not toward the attested Old English noun.
 
 The Old English noun is attested, not reconstructed. Clark Hall gives `rūst m.`
 [@ClarkHall1960], and Bosworth-Toller records `rúst (? and rust)`
-[@BosworthToller1898]. The form is normalized here as `rust` from that attested
+[@BosworthToller1898, 677]. The form is normalized here as `rust` from that attested
 record.
 
 Those dictionary entries also matter morphologically. They support a masculine

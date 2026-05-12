@@ -12,3 +12,9 @@ This ledger records the comparative and Old English evidence gathered before the
 | Bosworth-Toller | OE dictionary | `hwal`; plural `hwalas` | singular headword plus plural citation | `hwal`; `hwalas` | Confirms the singular noun and preserves plural `hwalas` as control evidence for the open-syllable branch. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:92628-92631` | high; Google Vision file checked directly |
 | Bright plain OCR check | reader text | `Se hwsel ... o^re hwalas` | plain OCR with odd symbols | `hwsel`; `hwalas` | Checked only as supporting context; the odd transcription was not quoted in the final entry. | yes — `BrightCassidyRingler1971` | `docs/references/bright_anglo_saxon_reader.txt:5764` | medium; preferred cleaner dictionary and Google Vision sources |
 | Local memo / slice synthesis | current project analysis | `*wálaz`; `*xwálaz`; `*hwali-`; `hwæl`; `hwalas` | comparative-source divergence plus normalized singular | `hwæl`; `hwalas` | The decisive issue is comparative stem notation, not whether the Old English noun exists. | no | `Germanic/docs/lexeme_reports/research_memos/2284-whale-hwæl.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2284-whale-hwæl.md` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 326`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

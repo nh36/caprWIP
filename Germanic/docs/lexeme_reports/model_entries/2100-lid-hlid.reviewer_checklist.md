@@ -49,3 +49,9 @@
 
 1. Keep earlier `*liþuz` background clearly subordinate to the selected input `*xlídą`.
 2. Do not let any later expansion present the vowel explanation as a settled textbook Old English rule.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 563`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

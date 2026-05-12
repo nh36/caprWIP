@@ -22,7 +22,7 @@ Kroonen cites the noun as `*kurna-`, and Orel gives the citation form `*kurnan`,
 
 ### Old English evidence
 
-Clark Hall gives `corn n. 'corn,' grain`, Bright's glossary lists `corn, n.` with genitive singular `cornes`, and Bosworth-Toller treats `corn` as an ordinary noun headword [@ClarkHall1960; @BrightCassidyRingler1971, 347; @BosworthToller1898]. The target is therefore an attested citation form, while forms such as `cornes` simply provide paradigm background.
+Clark Hall gives `corn n. 'corn,' grain`, Bright's glossary lists `corn, n.` with genitive singular `cornes`, and Bosworth-Toller treats `corn` as an ordinary noun headword [@ClarkHall1960; @BrightCassidyRingler1971, 347; @BosworthToller1898, 144]. The target is therefore an attested citation form, while forms such as `cornes` simply provide paradigm background.
 
 ### Development to Old English
 

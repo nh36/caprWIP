@@ -12,3 +12,9 @@ book-style entry was drafted.
 | Orel | etymological headword | ja-stem style headword | comparative family label | broader family context | Useful for the comparative lexeme label, but not decisive for OE single-`l`. | yes — `Orel2003` | cited in packet/memo/slice | medium |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `dile`; `dili`; cross-reference to `dill` | OE herb name | `dile`; `dili` | Confirms that the OE evidence preserves the single-`l` form. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | ja-stem `*-lj-` path would yield `dill`; i-stem path yields `dile` | stem-class decision | `dile` | The decisive issue is stem class, not a missing OE sound law. | no | `Germanic/docs/lexeme_reports/research_memos/1990-dill-dile.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/1990-dill-dile.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 164`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

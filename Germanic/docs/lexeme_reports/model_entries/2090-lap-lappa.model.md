@@ -34,7 +34,7 @@ masculine input `*láppô`.
 Campbell cites `lappa` as a case of restored `a`, while Sievers-Brunner records
 `lappa`, variant `læppa`, and plural or oblique `leappan`
 [@Campbell1959; @SieversBrunner1965]. The dictionary tradition also preserves
-`læppa` [@ClarkHall1960; @BosworthToller1898].
+`læppa` [@ClarkHall1960; @BosworthToller1898, 613].
 
 The target of this entry is the restored singular `lappa`. The variant `læppa`
 and the oblique or plural `leappan` remain part of the Old English record and

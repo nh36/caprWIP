@@ -31,7 +31,7 @@ gemination.
 
 Old English lexicographic evidence securely supports the noun itself. Clark Hall
 gives `+bann`, and Bosworth-Toller records `ge-bann` with oblique usage such as
-`gebanne` [@ClarkHall1960; @BosworthToller1898]. The exact unprefixed genitive
+`gebanne` [@ClarkHall1960; @BosworthToller1898, 303]. The exact unprefixed genitive
 `bannes` is less directly cited in the reviewed material, so it is best treated
 here as the selected regular genitive comparison form rather than as a
 dictionary headword.

@@ -22,7 +22,7 @@ Orel cites a neuter lexeme of the `*xliđ-` type with Old English `hlid`, and Ll
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `hlid` as the noun 'lid, cover, door, gate' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller record `hlid` as the noun 'lid, cover, door, gate' [@ClarkHall1960; @BosworthToller1898, 563].
 
 ### Development to Old English
 

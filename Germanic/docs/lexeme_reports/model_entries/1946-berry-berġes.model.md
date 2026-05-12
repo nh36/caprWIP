@@ -29,7 +29,7 @@ an Old English paradigm without any hidden gemination repair [@RingeTaylor2014].
 ### Old English evidence
 
 Campbell cites feminine `berige` 'berry' and notes that `-j-` is retained after
-`r` in this type [@Campbell1959]. The reviewed evidence therefore supports the
+`r` in this type [@Campbell1959, 250]. The reviewed evidence therefore supports the
 citation form more directly than the exact genitive `berġes`, which is best read
 here as the selected regular genitive comparison form rather than as a
 dictionary headword.

@@ -15,3 +15,9 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 - The final entry deliberately does **not** preserve the withdrawn `*búkkis -> bucces` rescue as live analysis.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
 - No OCR or encoding artifact was reproduced in final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 122`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

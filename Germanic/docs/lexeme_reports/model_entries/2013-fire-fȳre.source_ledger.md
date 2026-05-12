@@ -13,3 +13,9 @@ without altering the existing pilot report.
 | Ringe & Taylor | OE phonology and morphology | i-umlaut from `*u` before `*i`; apocope of final high vowels; caution on dat.sg. evidence | sound-law basis | `fȳr`, `fȳre` | Supports the regular derivation `*fūri -> fȳr` and the caution about direct attestation of endingless dat.sg. `fȳr`. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
 | Hogg / Campbell | OE morphology | apocope and restored oblique `-e` patterns in Old English | analogical background | `fȳre` type | Supports the historical plausibility of analogically restored final `-e`. | yes — `Hogg1992`; `Campbell1959` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | three-way distinction among lexeme-level etymon, selected input, and attested target | paradigm-cell known_unmodelled | `fȳr`, `fȳre` | The entry must explain why `*fūri` is the chosen input even though the target is `fȳre`. | no | `Germanic/docs/lexeme_reports/research_memos/2013-fire-fȳre.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2013-fire-fȳre.md` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 288`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

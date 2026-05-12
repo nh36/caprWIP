@@ -22,11 +22,11 @@ Kroonen reconstructs the noun as `*bērō-` f. 'bier' and cites Old English `bar
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as `bær`, and Kroonen also records `bar` beside it [@ClarkHall1960; @BosworthToller1898; @Kroonen2013, 717]. The target `bǣr` is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as `bær`, and Kroonen also records `bar` beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target `bǣr` is therefore a normalized long-vowel spelling of the same noun.
 
 ### Source note
 
-Lexicographic spellings vary between `bær` and `bar`. The normalized target `bǣr` simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898; @Kroonen2013, 717].
+Lexicographic spellings vary between `bær` and `bar`. The normalized target `bǣr` simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 ### Development to Old English
 

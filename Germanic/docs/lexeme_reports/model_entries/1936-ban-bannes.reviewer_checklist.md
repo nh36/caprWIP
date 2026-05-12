@@ -47,3 +47,9 @@
 
 1. Keep the noun distinct from the unrelated verb `bannan`.
 2. Keep `bannes` framed as the selected regular genitive singular comparison form, not as a directly cited headword.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 303`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

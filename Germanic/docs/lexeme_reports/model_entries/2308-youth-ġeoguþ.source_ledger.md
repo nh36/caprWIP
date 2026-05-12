@@ -15,3 +15,9 @@ book-style entry was drafted.
 | Fulk | 2018 comparative grammar | lexical background for the `*ju(w)unþi-` family | comparative etymological framing | comparative family only | Useful background for the earlier headword behind the later g-bearing project form. | yes — `Fulk2018` | `Germanic/docs/lexeme_reports/research_memos/2308-youth-ġeoguþ.md:58-63` | medium |
 | Campbell spelling note | 1959 OE grammar | `iuguþ`, `gioguð`, `geoguð` | OE orthographic variation after initial `j` | `iuguþ`, `gioguð`, `geoguð` | Supports normalizing the selected OE form as `ġeoguþ` while acknowledging the attested spelling set. | yes — `Campbell1959` | `Germanic/docs/lexeme_reports/research_memos/2308-youth-ġeoguþ.md:70-74`; `Germanic/docs/DEV_NOTES.md:15729-15734` | medium |
 | DEV_NOTES lexical-specification note | current local synthesis | `*nigon, *geoguð, *sugu` | lexical specification of g-bearing forms rather than productive Bugge rule | `ġeoguþ` | The local policy for the small g-bearing set is to preserve the later comparative stage in the row input rather than to derive `g` productively. | no | `Germanic/docs/lexeme_reports/research_memos/2308-youth-ġeoguþ.md:79-88`; `Germanic/docs/DEV_NOTES.md:43092-43115` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Luick1914, 397`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

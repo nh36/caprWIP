@@ -22,7 +22,7 @@ Kroonen cites `*lindō-` 'lime tree' and gives Old English `lind` as the relevan
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller both record `lind` as the noun 'lime-tree, linden' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller both record `lind` as the noun 'lime-tree, linden' [@ClarkHall1960; @BosworthToller1898, 630].
 
 ### Development to Old English
 

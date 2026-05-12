@@ -18,3 +18,9 @@ book-style entry was drafted.
 - Added page-specific locators for `BrightCassidyRingler1971, 372`; `ClarkHall1960, 145`.
 - This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
 - Existing citations to conditional or unresolved locator sources were left unchanged.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 297`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

@@ -15,3 +15,9 @@ This ledger records the evidence used for the P3 pilot upgrade.
 - The reviewed source base supports citation-form `berige/berġe` more directly than exact `berġes`; the model entry therefore treats `berġes` as the selected regular gen.sg. comparison form.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
 - No OCR or encoding artifact was reproduced in final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Campbell1959, 250`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

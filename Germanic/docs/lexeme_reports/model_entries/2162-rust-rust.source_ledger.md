@@ -14,3 +14,9 @@ before the book-style prose was drafted.
 | Bosworth-Toller | 1898 dictionary | `rúst (? and rust)` | attested masculine noun | `rust`; `rúst` | The dictionary record confirms attested OE `rust` and supports masculine noun status. | yes — `BosworthToller1898` | `Germanic/docs/lexeme_reports/dev_notes_slices/2162-rust-rust.md:31-38`; `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:111743-111745` | high |
 | Compact derivation trace | current local trace | `PROTO: *rústō`; `OUTPUTS: rost` | current selected input run through the implemented cascade | `rost` | The present modeled citation-form output is regular `rost`, not attested `rust`. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2162-rust-rust.md:17-41` | high |
 | Manual comparator set | current local memo | `*rústaz -> rost`; `*rústas -> rostes`; `*rústai -> roste`; `*rústi -> ryst`; `*rústu -> rust` | citation-form, oblique, and high-vowel control cells | `rust`; `rost`; `ryst` | No defensible citation-form or ordinary oblique cell yields attested `rust`; only the instrumental-type `*rústu` produces it regularly. | no — local comparator only | `Germanic/docs/lexeme_reports/research_memos/2162-rust-rust.md:96-113` | high — useful as a negative control, not as a solution |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 677`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

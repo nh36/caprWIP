@@ -49,3 +49,9 @@
 
 1. Keep lexical `nett` distinct from merely graphic simplification in `net`.
 2. Do not let stale non-geminate target history re-enter the final prose.
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `BosworthToller1898, 29`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

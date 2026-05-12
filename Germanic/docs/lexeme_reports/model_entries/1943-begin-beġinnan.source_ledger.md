@@ -11,3 +11,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Bosworth-Toller / Clark Hall | OE lexicographic evidence | `be-ginnan`; `beginnan` | dictionary headword spellings | `be-ginnan`; `beginnan` | Confirms the verb as an attested Old English lemma, with plain `g` dictionary spelling. | yes — `BosworthToller1898`; `ClarkHall1960` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt` | high |
 | DEV_NOTES slice | current synthesis | `beġinnan`; older `beġennan` detour; prefix `bi- > be-` | palatalization plus separate prefix reduction | `beġinnan` | Clarifies that the prefix reduction is separate from any broader medial `*i > e` discussion. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/1943-begin-beġinnan.md` | high; keep debugging history out of final prose |
 | Research memo | current synthesis | `*bigínnaną`; `beġinnan`; dictionary `beginnan` | prefixed infinitive with normalized palatal spelling | `beġinnan`; `beginnan` | Distinguishes normalized `beġinnan` from plain-`g` dictionary spellings and keeps the entry compact. | no | `Germanic/docs/lexeme_reports/research_memos/1943-begin-beġinnan.md` | high |
+
+## Citation-locator conditional-source pass
+
+- Added page-specific locators for `Campbell1959, 174`; `BosworthToller1898, 84`.
+- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
+- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

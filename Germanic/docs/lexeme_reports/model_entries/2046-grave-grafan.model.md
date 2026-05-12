@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell gives `grafan` among the standard examples of Old English a-restoration before a single consonant and a following back vowel, and Ringe and Taylor describe the same development for Class VI infinitives [@Campbell1959; @RingeTaylor2014].
+Campbell gives `grafan` among the standard examples of Old English a-restoration before a single consonant and a following back vowel, and Ringe and Taylor describe the same development for Class VI infinitives [@Campbell1959, 61; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall records `grafan` as the verb 'to dig, grave' and separately records n
 
 ### Development to Old English
 
-From `*grábaną`, Anglo-Frisian brightening first gives a fronted stem vowel. A-restoration then returns `a` before single `b` plus the back-vocalic infinitive ending, and later apocope and weak-tail reduction yield `grafan` [@Campbell1959; @RingeTaylor2014].
+From `*grábaną`, Anglo-Frisian brightening first gives a fronted stem vowel. A-restoration then returns `a` before single `b` plus the back-vocalic infinitive ending, and later apocope and weak-tail reduction yield `grafan` [@Campbell1959, 61; @RingeTaylor2014].
 
 ### Form note
 

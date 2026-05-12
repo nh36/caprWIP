@@ -22,7 +22,7 @@ Orel gives `*natjan` with Old English `nett`, and Fulk's account of West Germani
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `nett` as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898; @Campbell1959].
+Clark Hall and Bosworth-Toller record `nett` as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959].
 
 ### Development to Old English
 
