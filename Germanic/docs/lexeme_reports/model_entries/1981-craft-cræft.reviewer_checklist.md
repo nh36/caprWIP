@@ -51,6 +51,12 @@
 - `BosworthToller1898` was checked but left broad because the exact headword
   page was not isolated confidently from the available local file.
 
+## Citation-locator rescue pilot 02 note
+
+- Rescue pilot 02 recovered `BosworthToller1898, 145` for the `cræft` headword.
+- The paired model entry now has page-specific locators for every citation in
+  the file.
+
 ## Remaining human-review points
 
 1. Keep comparative stem-class disagreement distinct from the selected pre-OE modelling input.

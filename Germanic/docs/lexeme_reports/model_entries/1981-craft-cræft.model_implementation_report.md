@@ -52,6 +52,11 @@ Checked against `docs/refs.bib`:
 - Left `BosworthToller1898` broad in this pilot because the exact headword page
   was not isolated confidently from the available local file.
 
+## Citation-locator rescue pilot 02
+
+- Recovered `[@BosworthToller1898, 145]` for the `cræft` supplement entry.
+- Updated the paired model entry and source ledger accordingly.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.

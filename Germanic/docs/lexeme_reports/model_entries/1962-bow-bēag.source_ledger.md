@@ -20,3 +20,12 @@ book-style entry was drafted.
 - `Campbell1959` and `BosworthToller1898` were checked but left broad in this
   pilot because the exact page-to-claim mapping for the cited strong-verb and
   preterite statements was not confirmed from the available local files.
+
+## Citation-locator rescue pilot 02 note
+
+- Rechecked the broad citations with layered searches (`Class II`, preterite
+  terminology, `bugan`, `bēag`, and OCR-normalized variants).
+- Recovered `Campbell1959, 53` for the class-II singular-preterite `au > ēa`
+  discussion and `BosworthToller1898, 122` for `bēag` under `bugan`.
+- The paired model entry now carries page-specific locators for both formerly
+  broad citations.

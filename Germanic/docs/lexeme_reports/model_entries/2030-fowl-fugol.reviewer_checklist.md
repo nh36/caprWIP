@@ -60,6 +60,15 @@
   were checked but left broad because the exact page-to-claim mapping was not
   recovered with enough confidence from the local files in this pass.
 
+## Citation-locator rescue pilot 02 note
+
+- Rescue pilot 02 recovered page-specific locators for every formerly broad
+  citation in this file:
+  `RingeTaylor2014, 42–43`, `345`, and `47`; `Campbell1959, 43` and `150`;
+  `BosworthToller1898, 282`; `Luick1914, 148`.
+- The paired model entry now localizes each claim to the relevant passage
+  instead of citing those sources broadly.
+
 ## Remaining human-review points
 
 1. This entry should not be treated as a scaling model for phonological repair,

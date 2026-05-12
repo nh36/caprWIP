@@ -59,6 +59,12 @@ Checked against `docs/refs.bib`:
   exact page-to-claim mapping for the cited statements was not confirmed from
   the available local files.
 
+## Citation-locator rescue pilot 02
+
+- Recovered `[@Campbell1959, 53]` for the class-II singular-preterite
+  discussion and `[@BosworthToller1898, 122]` for `bēag` under `bugan`.
+- Updated the paired model entry and source ledger accordingly.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

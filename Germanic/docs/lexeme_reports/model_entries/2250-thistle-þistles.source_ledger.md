@@ -20,6 +20,15 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
   entry without a reliable nearby page marker, so the model entry keeps that
   citation broad in this pilot.
 
+## Citation-locator rescue pilot 02 note
+
+- Rechecked `KlugeSeebold2011` with layered searches over `Distel`, `distil`,
+  `distila`, `thistil`, and `*þist` variants.
+- The `Distel` entry was isolated again, but the local text still preserves only
+  a form-feed boundary, not a reliable numeric page label near the passage.
+- The paired model entry therefore keeps `KlugeSeebold2011` broad in rescue
+  pilot 02 as well.
+
 ## Notes
 
 - The local reference files checked here support simplex `þistel/ðistel` more directly than the exact gen.sg. `þistles`; the exact inflected target is better documented in the row-local memo, packet, and DEV_NOTES material than in the compact dictionaries.

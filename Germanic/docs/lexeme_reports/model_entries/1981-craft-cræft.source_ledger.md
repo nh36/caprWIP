@@ -16,6 +16,15 @@ This ledger records the evidence used for the P3 pilot upgrade.
 - `BosworthToller1898` was checked but left broad in this pilot because the exact
   headword page was not isolated confidently from the available local file.
 
+## Citation-locator rescue pilot 02 note
+
+- Rechecked the broad Bosworth-Toller citation by searching the supplement entry
+  block directly for the headword `cræft` and then mapping it to the nearest
+  explicit page marker.
+- Recovered `BosworthToller1898, 145` for the `cræft` entry.
+- The paired model entry now carries a page-specific locator for the formerly
+  broad Bosworth-Toller citation.
+
 ## Notes
 
 - The row-local evidence is strong enough to keep `PROTO` as comparative background while presenting `PROTOFORM = *kráftaz` as the selected pre-OE input.

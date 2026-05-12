@@ -54,6 +54,13 @@ Checked against `docs/refs.bib`:
   relevant cluster-noun behavior more confidently than the exact
   nominative/oblique wording cited in the model entry.
 
+## Citation-locator rescue pilot 02
+
+- Recovered `[@Campbell1959, 150]` and `[@Campbell1959, 226–227]` for the
+  cluster-noun behavior that the local file actually supports.
+- Narrowed the paired model-entry wording accordingly and updated the source
+  ledger.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.

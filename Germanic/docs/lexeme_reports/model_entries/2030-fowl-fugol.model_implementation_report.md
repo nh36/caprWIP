@@ -61,6 +61,16 @@ Checked against `docs/refs.bib`:
   broad in this pilot because the exact page-to-claim mapping was not recovered
   with enough confidence from the local files.
 
+## Citation-locator rescue pilot 02
+
+- Recovered `[@RingeTaylor2014, 42–43]` for the general NWGmc lowering rule,
+  `[@RingeTaylor2014, 345]` for the epenthetic `*fugl / *fogl` pathway, and
+  `[@RingeTaylor2014, 47]` for the later-handbook treatment of inherited
+  unlowered `u`.
+- Recovered `[@Campbell1959, 43]` and `[@Campbell1959, 150]`,
+  `[@BosworthToller1898, 282]`, and `[@Luick1914, 148]`.
+- Updated the paired model entry and source ledger accordingly.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

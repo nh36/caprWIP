@@ -25,7 +25,8 @@ is the singular preterite cell, whereas the citation form `*béuganą` is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
-preterite `au > ēa` development as regular in this environment [@Campbell1959].
+preterite `au > ēa` development as regular in this environment
+[@Campbell1959, 53].
 That is the phonological path relevant for `bēag`, whereas the analogical `ū`
 of the present stem belongs to the separate history behind `būgan`
 [@RingeTaylor2014, 55].
@@ -33,7 +34,7 @@ of the present stem belongs to the separate history behind `būgan`
 ### Old English evidence
 
 Bosworth-Toller and Clark Hall both record `bēag` as a preterite form of
-`būgan` [@BosworthToller1898; @ClarkHall1960, 45]. The form discussed here is
+`būgan` [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
@@ -44,7 +45,7 @@ cell in which the inherited `*au` grade is preserved most directly.
 ### Development to Old English
 
 From `*báug`, Anglo-Frisian fronting and the later leveling of the diphthong
-produce `bēag` [@Campbell1959]. No special analogical repair is needed for that
+produce `bēag` [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 

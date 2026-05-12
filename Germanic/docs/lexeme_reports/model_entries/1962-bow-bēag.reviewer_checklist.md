@@ -60,6 +60,13 @@
   the exact page-to-claim mapping for the cited statements was not confirmed
   from the available local files in this pass.
 
+## Citation-locator rescue pilot 02 note
+
+- Rescue pilot 02 recovered `Campbell1959, 53` and `BosworthToller1898, 122`
+  for the formerly broad citations.
+- The paired model entry now has page-specific locators for every citation in
+  the file.
+
 ## Remaining human-review points
 
 1. The entry should keep the verbal `bēag` distinct from the unrelated noun

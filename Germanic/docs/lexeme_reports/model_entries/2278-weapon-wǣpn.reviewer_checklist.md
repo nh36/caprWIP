@@ -59,6 +59,13 @@
   relevant cluster-noun behavior more confidently than the exact
   nominative/oblique wording cited in the model entry.
 
+## Citation-locator rescue pilot 02 note
+
+- Rescue pilot 02 narrowed the Campbell-backed claim to the cluster-noun
+  behavior actually shown in the local file and recovered
+  `Campbell1959, 150` and `Campbell1959, 226–227`.
+- Bright and Clark Hall continue to support the nominative/oblique contrast.
+
 ## Remaining human-review points
 
 1. Keep unbroken `wǣpn` distinct from dictionary and late WS `wǣpen`.

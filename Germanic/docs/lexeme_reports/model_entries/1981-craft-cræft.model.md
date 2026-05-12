@@ -28,7 +28,7 @@ derivation.
 ### Old English evidence
 
 The Old English noun itself is secure. Clark Hall and Bosworth-Toller both give
-`cræft` as the headword [@ClarkHall1960, 19; @BosworthToller1898].
+`cræft` as the headword [@ClarkHall1960, 19; @BosworthToller1898, 145].
 
 ### Development to Old English
 
