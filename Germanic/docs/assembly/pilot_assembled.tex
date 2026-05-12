@@ -100,6 +100,8 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{array}
+\usepackage{tabularx}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -158,28 +160,43 @@ transducer output & \emph{*bákaną -\textgreater{} bacan} \\
 
 Proto input: \emph{*bákaną}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & Anglo Frisian Brightening: \emph{*bækaną} \\
-\textbf{Northwest Germanic} & OE A Restoration: \emph{*bakaną} \\
-{[}no change{]} & OE Heavy Syllable Nasal Apocope: \emph{*bakan} \\
-& OE Secondary Nasalization: \emph{*bakąn} \\
-& OE Weak Tail Reduction: \emph{*bakan} \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+Anglo Frisian Brightening & \emph{*bækaną} \\
+OE A Restoration & \emph{*bakaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
+OE Secondary Nasalization & \emph{*bakąn} \\
+OE Weak Tail Reduction & \emph{*bakan} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{bacan}
 
@@ -233,26 +250,40 @@ transducer output & \emph{*báug -\textgreater{} bēag} \\
 
 Proto input: \emph{*báug}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & OE Au Fronting: \emph{*báeug} \\
-\textbf{Northwest Germanic} & OE Diphthong Leveling: \emph{*bēag} \\
-{[}no change{]} & \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Au Fronting & \emph{*báeug} \\
+OE Diphthong Leveling & \emph{*bēag} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{bēag}
 
@@ -364,27 +395,42 @@ transducer output & \emph{*kráftaz -\textgreater{} cræft} \\
 
 Proto input: \emph{*kráftaz}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & PWGmc Final Bare A Loss: \emph{*kráft} \\
-\textbf{Northwest Germanic} & Anglo Frisian Brightening:
-\emph{*kræft} \\
-PGmc Final Z Deletion: \emph{*kráfta} & \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PGmc Final Z Deletion & \emph{*kráfta} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc Final Bare A Loss & \emph{*kráft} \\
+Anglo Frisian Brightening & \emph{*kræft} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{cræft}
 
@@ -456,27 +502,43 @@ transducer output & \emph{*fúglaz -\textgreater{} fogol} \\
 
 Proto input: \emph{*fúglaz}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & PWGmc Final Bare A Loss: \emph{*fógl} \\
-\textbf{Northwest Germanic} & OE Epenthetic Vowel: \emph{*fógol} \\
-NWGmc U Lowering: \emph{*fóglaz} & \\
-PGmc Final Z Deletion: \emph{*fógla} & \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+NWGmc U Lowering & \emph{*fóglaz} \\
+PGmc Final Z Deletion & \emph{*fógla} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc Final Bare A Loss & \emph{*fógl} \\
+OE Epenthetic Vowel & \emph{*fógol} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Transducer outcome: \emph{fogol}
 
@@ -583,26 +645,41 @@ transducer output & \emph{*θístilas -\textgreater{} þistles} \\
 
 Proto input: \emph{*θístilas}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & Anglo Frisian Brightening: \emph{*θístilæs} \\
-\textbf{Northwest Germanic} & OE L Adjacent Syncope: \emph{*θístlæs} \\
-{[}no change{]} & OE Unstressed AE Merger: \emph{*θístles} \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+Anglo Frisian Brightening & \emph{*θístilæs} \\
+OE L Adjacent Syncope & \emph{*θístlæs} \\
+OE Unstressed AE Merger & \emph{*θístles} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{þistles}
 
@@ -696,26 +773,41 @@ transducer output & \emph{*wḗpną -\textgreater{} wǣpn} \\
 
 Proto input: \emph{*wḗpną}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & OE Heavy Syllable Nasal Apocope: \emph{*wǣpn} \\
-\textbf{Northwest Germanic} & \\
-NWGmc Long E Lowering: \emph{*wǣpną} & \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+NWGmc Long E Lowering & \emph{*wǣpną} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{wǣpn}
 
@@ -774,27 +866,43 @@ transducer output & \emph{*wéljô -\textgreater{} willa} \\
 
 Proto input: \emph{*wéljô}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-PWGmc J Gemination: \emph{*wélljô} & OE I Umlaut: \emph{*willjô} \\
-\textbf{Northwest Germanic} & OE Unstressed Long Vowel Shortening:
-\emph{*willja} \\
-{[}no change{]} & OE J Loss After Heavy: \emph{*willa} \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc J Gemination & \emph{*wélljô} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE I Umlaut & \emph{*willjô} \\
+OE Unstressed Long Vowel Shortening & \emph{*willja} \\
+OE J Loss After Heavy & \emph{*willa} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{willa}
 
@@ -849,29 +957,44 @@ transducer output & \emph{*júgunθ -\textgreater{} ġeoguþ} \\
 
 Proto input: \emph{*júgunθ}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Earlier Germanic changes
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Old English changes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\textbf{West Germanic} & \textbf{Old English} \\
-{[}no change{]} & OE Diphthong Leveling: \emph{*jéogūθ} \\
-\textbf{Northwest Germanic} & OE Unstressed Long Vowel Shortening:
-\emph{*jéoguθ} \\
-OE Ws Palatal Glide: \emph{*jéugunθ} & \\
-NWGmc Nasal Spirant Lengthening: \emph{*jéugūnθ} & \\
-NWGmc Nasal Spirant Loss: \emph{*jéugūθ} & \\
-\end{longtable}
-}
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Ws Palatal Glide & \emph{*jéugunθ} \\
+NWGmc Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
+NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Diphthong Leveling & \emph{*jéogūθ} \\
+OE Unstressed Long Vowel Shortening & \emph{*jéoguθ} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+} \endgroup
 
 Outcome: \emph{ġeoguþ}
 

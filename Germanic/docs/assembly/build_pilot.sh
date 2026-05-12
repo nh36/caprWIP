@@ -17,7 +17,6 @@ from __future__ import annotations
 import csv
 import re
 import sys
-import textwrap
 from pathlib import Path
 
 repo_root = Path(sys.argv[1])
@@ -126,10 +125,6 @@ def tidy_prose(text: str) -> str:
     return convert_inline_code(demote_bold_forms(text))
 
 
-def escape_table_cell(text: str) -> str:
-    return text.replace("|", r"\|")
-
-
 def display_stage_name(stage: str) -> str:
     if stage == "Proto-West Germanic":
         return "West Germanic"
@@ -182,44 +177,62 @@ def parse_trace_cell(cell: str) -> list[tuple[str, list[tuple[str, str]]]]:
     return parsed_stages
 
 
-def render_trace_stage_block(stage: str, items: list[tuple[str, str]]) -> list[str]:
-    lines = [f"**{stage}**"]
+def latex_escape(text: str) -> str:
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+        "{": r"\{",
+        "}": r"\}",
+        "~": r"\textasciitilde{}",
+        "^": r"\textasciicircum{}",
+    }
+    return "".join(replacements.get(char, char) for char in text)
 
-    if not items:
-        lines.append("[no change]")
-    else:
-        for change, form in items:
-            if change == "[no change]":
-                lines.append("[no change]")
-            elif form:
-                lines.append(f"{change}: {italicize_form(form)}")
-            else:
-                lines.append(change)
 
-    return [escape_table_cell(line) for line in lines]
+def latex_form(text: str) -> str:
+    return rf"\emph{{{latex_escape(text)}}}"
 
 
-def wrap_grid_cell(lines: list[str], width: int) -> list[str]:
-    wrapped: list[str] = []
+def render_trace_panel(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> list[str]:
+    lines = [r"\raggedright"]
 
-    for line in lines:
-        if not line:
-            wrapped.append("")
+    for index, (stage, items) in enumerate(stage_blocks):
+        if index:
+            lines.append(r"\vspace{0.6em}")
+
+        lines.extend(
+            [
+                rf"\centering\textbf{{{latex_escape(stage)}}}\par",
+                r"\raggedright",
+                r"\vspace{0.2em}",
+            ]
+        )
+
+        if not items:
+            lines.append(r"\raggedright [no change]\par")
             continue
 
-        segments = textwrap.wrap(
-            line,
-            width=width,
-            break_long_words=False,
-            break_on_hyphens=False,
+        if all(change == "[no change]" and not form for change, form in items):
+            lines.append(r"\raggedright [no change]\par")
+            continue
+
+        lines.append(
+            r"\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}"
         )
-        wrapped.extend(segments or [""])
+        for change, form in items:
+            if change == "[no change]" and not form:
+                lines.append(r"\multicolumn{2}{@{}l@{}}{[no change]} \\")
+            elif form:
+                lines.append(rf"{latex_escape(change)} & {latex_form(form)} \\")
+            else:
+                lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{latex_escape(change)}}} \\")
+        lines.append(r"\end{tabularx}")
 
-    return wrapped or [""]
-
-
-def render_grid_row(left: str, right: str, width: int) -> str:
-    return f"| {left.ljust(width)} | {right.ljust(width)} |"
+    return lines
 
 
 def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
@@ -231,35 +244,29 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     if len(row_parts) != 2:
         return [trace_entry["table"]]
 
-    def build_cell_lines(cell: str) -> list[str]:
-        lines: list[str] = []
-        for stage, items in parse_trace_cell(cell):
-            lines.extend(render_trace_stage_block(stage, items))
-        return lines
+    left_panel = render_trace_panel(parse_trace_cell(row_parts[0]))
+    right_panel = render_trace_panel(parse_trace_cell(row_parts[1]))
 
-    width = 48
-    left_lines = wrap_grid_cell(build_cell_lines(row_parts[0]), width)
-    right_lines = wrap_grid_cell(build_cell_lines(row_parts[1]), width)
-    row_count = max(len(left_lines), len(right_lines))
-    border = "+" + "-" * (width + 2) + "+" + "-" * (width + 2) + "+"
-    header_border = "+" + "=" * (width + 2) + "+" + "=" * (width + 2) + "+"
-
-    rendered = [
-        border,
-        render_grid_row("Earlier Germanic changes", "Old English changes", width),
-        header_border,
+    return [
+        r"\begingroup",
+        r"\setlength{\fboxsep}{6pt}",
+        r"\noindent\fbox{%",
+        r"\begin{minipage}{0.97\linewidth}",
+        r"\small",
+        r"\begin{minipage}[t]{0.485\linewidth}",
+        r"\centering\textbf{Earlier Germanic changes}\par",
+        r"\vspace{0.35em}",
+        *left_panel,
+        r"\end{minipage}\hfill",
+        r"\begin{minipage}[t]{0.485\linewidth}",
+        r"\centering\textbf{Old English changes}\par",
+        r"\vspace{0.35em}",
+        *right_panel,
+        r"\end{minipage}",
+        r"\end{minipage}%",
+        r"}",
+        r"\endgroup",
     ]
-
-    for index in range(row_count):
-        rendered.append(
-            render_grid_row(
-                left_lines[index] if index < len(left_lines) else "",
-                right_lines[index] if index < len(right_lines) else "",
-                width,
-            )
-        )
-        rendered.append(border)
-    return rendered
 
 
 def parse_model_entry(path: Path) -> dict[str, object]:
@@ -438,7 +445,7 @@ fi
 
 pandoc "${assembled_md}" \
   --standalone \
-  --from=markdown+citations \
+  --from=markdown+raw_tex+citations \
   --to=latex \
   --metadata-file="${metadata}" \
   --bibliography="${refs_bib}" \
@@ -457,7 +464,7 @@ fi
 if [[ -n "${pdf_engine}" ]]; then
   pandoc "${assembled_md}" \
     --standalone \
-    --from=markdown+citations \
+    --from=markdown+raw_tex+citations \
     --metadata-file="${metadata}" \
     --bibliography="${refs_bib}" \
     --citeproc \

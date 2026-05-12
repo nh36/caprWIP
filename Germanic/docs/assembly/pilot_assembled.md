@@ -17,21 +17,43 @@ The included entries are listed in `pilot_manifest.tsv` and appear here in stabl
 
 Proto input: _\*bákaną_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | Anglo Frisian Brightening: _\*bækaną_            |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE A Restoration: _\*bakaną_                     |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE Heavy Syllable Nasal Apocope: _\*bakan_       |
-+--------------------------------------------------+--------------------------------------------------+
-|                                                  | OE Secondary Nasalization: _\*bakąn_             |
-+--------------------------------------------------+--------------------------------------------------+
-|                                                  | OE Weak Tail Reduction: _\*bakan_                |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+Anglo Frisian Brightening & \emph{*bækaną} \\
+OE A Restoration & \emph{*bakaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
+OE Secondary Nasalization & \emph{*bakąn} \\
+OE Weak Tail Reduction & \emph{*bakan} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _bacan_
 
@@ -62,17 +84,40 @@ From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restora
 
 Proto input: _\*báug_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE Au Fronting: _\*báeug_                        |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE Diphthong Leveling: _\*bēag_                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Au Fronting & \emph{*báeug} \\
+OE Diphthong Leveling & \emph{*bēag} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _bēag_
 
@@ -144,17 +189,42 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 Proto input: _\*kráftaz_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | PWGmc Final Bare A Loss: _\*kráft_               |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | Anglo Frisian Brightening: _\*kræft_             |
-+--------------------------------------------------+--------------------------------------------------+
-| PGmc Final Z Deletion: _\*kráfta_                |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PGmc Final Z Deletion & \emph{*kráfta} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc Final Bare A Loss & \emph{*kráft} \\
+Anglo Frisian Brightening & \emph{*kræft} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _cræft_
 
@@ -206,19 +276,43 @@ the u-stem comparator.
 
 Proto input: _\*fúglaz_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | PWGmc Final Bare A Loss: _\*fógl_                |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE Epenthetic Vowel: _\*fógol_                   |
-+--------------------------------------------------+--------------------------------------------------+
-| NWGmc U Lowering: _\*fóglaz_                     |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| PGmc Final Z Deletion: _\*fógla_                 |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+NWGmc U Lowering & \emph{*fóglaz} \\
+PGmc Final Z Deletion & \emph{*fógla} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc Final Bare A Loss & \emph{*fógl} \\
+OE Epenthetic Vowel & \emph{*fógol} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Transducer outcome: _fogol_
 
@@ -292,17 +386,41 @@ attested _fugol_.
 
 Proto input: _\*θístilas_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | Anglo Frisian Brightening: _\*θístilæs_          |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE L Adjacent Syncope: _\*θístlæs_               |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE Unstressed AE Merger: _\*θístles_             |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+Anglo Frisian Brightening & \emph{*θístilæs} \\
+OE L Adjacent Syncope & \emph{*θístlæs} \\
+OE Unstressed AE Merger & \emph{*θístles} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _þistles_
 
@@ -356,17 +474,41 @@ and the selected genitive singular cell.
 
 Proto input: _\*wḗpną_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE Heavy Syllable Nasal Apocope: _\*wǣpn_        |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| NWGmc Long E Lowering: _\*wǣpną_                 |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+NWGmc Long E Lowering & \emph{*wǣpną} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _wǣpn_
 
@@ -410,17 +552,43 @@ remains the regular unbroken oblique comparator
 
 Proto input: _\*wéljô_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| PWGmc J Gemination: _\*wélljô_                   | OE I Umlaut: _\*willjô_                          |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE Unstressed Long Vowel Shortening: _\*willja_  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE J Loss After Heavy: _\*willa_                 |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+PWGmc J Gemination & \emph{*wélljô} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE I Umlaut & \emph{*willjô} \\
+OE Unstressed Long Vowel Shortening & \emph{*willja} \\
+OE J Loss After Heavy & \emph{*willa} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _willa_
 
@@ -455,21 +623,44 @@ The target here is the noun _willa_ 'will, wish'. Related verb _willan_ belongs 
 
 Proto input: _\*júgunθ_
 
-+--------------------------------------------------+--------------------------------------------------+
-| Earlier Germanic changes                         | Old English changes                              |
-+==================================================+==================================================+
-| **West Germanic**                                | **Old English**                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| [no change]                                      | OE Diphthong Leveling: _\*jéogūθ_                |
-+--------------------------------------------------+--------------------------------------------------+
-| **Northwest Germanic**                           | OE Unstressed Long Vowel Shortening: _\*jéoguθ_  |
-+--------------------------------------------------+--------------------------------------------------+
-| OE Ws Palatal Glide: _\*jéugunθ_                 |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| NWGmc Nasal Spirant Lengthening: _\*jéugūnθ_     |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
-| NWGmc Nasal Spirant Loss: _\*jéugūθ_             |                                                  |
-+--------------------------------------------------+--------------------------------------------------+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Ws Palatal Glide & \emph{*jéugunθ} \\
+NWGmc Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
+NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Old English}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}
+OE Diphthong Leveling & \emph{*jéogūθ} \\
+OE Unstressed Long Vowel Shortening & \emph{*jéoguθ} \\
+\end{tabularx}
+\end{minipage}
+\end{minipage}%
+}
+\endgroup
 
 Outcome: _ġeoguþ_
 

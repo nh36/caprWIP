@@ -27,7 +27,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     apk add --no-cache ${font_package} >/dev/null
     pandoc Germanic/docs/assembly/pilot_assembled.md \
       --standalone \
-      --from=markdown+citations \
+      --from=markdown+raw_tex+citations \
       --to=latex \
       --metadata-file=Germanic/docs/assembly/pilot_metadata.yaml \
       --bibliography=docs/refs.bib \
@@ -35,7 +35,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       -o Germanic/docs/assembly/pilot_assembled.tex
     pandoc Germanic/docs/assembly/pilot_assembled.md \
       --standalone \
-      --from=markdown+citations \
+      --from=markdown+raw_tex+citations \
       --metadata-file=Germanic/docs/assembly/pilot_metadata.yaml \
       --bibliography=docs/refs.bib \
       --citeproc \
