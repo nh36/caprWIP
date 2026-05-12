@@ -17,9 +17,13 @@ The included entries are listed in `pilot_manifest.tsv` and appear here in stabl
 
 Proto input: _\*bákaną_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: [no change] | **Old English**: Anglo Frisian Brightening: \*bækaną ; OE A Restoration: \*bakaną ; OE Heavy Syllable Nasal Apocope: \*bakan ; OE Secondary Nasalization: \*bakąn ; OE Weak Tail Reduction: \*bakan |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: Anglo Frisian Brightening | _\*bækaną_ |
+| Northwest Germanic | [no change] | OE A Restoration | _\*bakaną_ |
+|  |  | OE Heavy Syllable Nasal Apocope | _\*bakan_ |
+|  |  | OE Secondary Nasalization | _\*bakąn_ |
+|  |  | OE Weak Tail Reduction | _\*bakan_ |
 
 Outcome: _bacan_
 
@@ -50,9 +54,10 @@ From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restora
 
 Proto input: _\*báug_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: [no change] | **Old English**: OE Au Fronting: \*báeug ; OE Diphthong Leveling: \*bēag |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: OE Au Fronting | _\*báeug_ |
+| Northwest Germanic | [no change] | OE Diphthong Leveling | _\*bēag_ |
 
 Outcome: _bēag_
 
@@ -124,9 +129,10 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 Proto input: _\*kráftaz_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: PGmc Final Z Deletion: \*kráfta | **Old English**: PWGmc Final Bare A Loss: \*kráft ; Anglo Frisian Brightening: \*kræft |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: PWGmc Final Bare A Loss | _\*kráft_ |
+| Northwest Germanic: PGmc Final Z Deletion | _\*kráfta_ | Anglo Frisian Brightening | _\*kræft_ |
 
 Outcome: _cræft_
 
@@ -178,9 +184,11 @@ the u-stem comparator.
 
 Proto input: _\*fúglaz_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: NWGmc U Lowering: \*fóglaz ; PGmc Final Z Deletion: \*fógla | **Old English**: PWGmc Final Bare A Loss: \*fógl ; OE Epenthetic Vowel: \*fógol |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: PWGmc Final Bare A Loss | _\*fógl_ |
+| Northwest Germanic: NWGmc U Lowering | _\*fóglaz_ | OE Epenthetic Vowel | _\*fógol_ |
+| PGmc Final Z Deletion | _\*fógla_ |  |  |
 
 Transducer outcome: _fogol_
 
@@ -254,9 +262,11 @@ attested _fugol_.
 
 Proto input: _\*θístilas_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: [no change] | **Old English**: Anglo Frisian Brightening: \*θístilæs ; OE L Adjacent Syncope: \*θístlæs ; OE Unstressed AE Merger: \*θístles |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: Anglo Frisian Brightening | _\*θístilæs_ |
+| Northwest Germanic | [no change] | OE L Adjacent Syncope | _\*θístlæs_ |
+|  |  | OE Unstressed AE Merger | _\*θístles_ |
 
 Outcome: _þistles_
 
@@ -310,9 +320,10 @@ and the selected genitive singular cell.
 
 Proto input: _\*wḗpną_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: NWGmc Long E Lowering: \*wǣpną | **Old English**: OE Heavy Syllable Nasal Apocope: \*wǣpn |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: OE Heavy Syllable Nasal Apocope | _\*wǣpn_ |
+| Northwest Germanic: NWGmc Long E Lowering | _\*wǣpną_ |  |  |
 
 Outcome: _wǣpn_
 
@@ -356,9 +367,11 @@ remains the regular unbroken oblique comparator
 
 Proto input: _\*wéljô_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: PWGmc J Gemination: \*wélljô ; **Northwest Germanic**: [no change] | **Old English**: OE I Umlaut: \*willjô ; OE Unstressed Long Vowel Shortening: \*willja ; OE J Loss After Heavy: \*willa |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic: PWGmc J Gemination | _\*wélljô_ | Old English: OE I Umlaut | _\*willjô_ |
+| Northwest Germanic | [no change] | OE Unstressed Long Vowel Shortening | _\*willja_ |
+|  |  | OE J Loss After Heavy | _\*willa_ |
 
 Outcome: _willa_
 
@@ -393,9 +406,12 @@ The target here is the noun _willa_ 'will, wish'. Related verb _willan_ belongs 
 
 Proto input: _\*júgunθ_
 
-| Earlier Germanic developments | Old English developments |
-| :--- | :--- |
-| **Proto-West Germanic**: [no change] ; **Northwest Germanic**: OE Ws Palatal Glide: \*jéugunθ ; NWGmc Nasal Spirant Lengthening: \*jéugūnθ ; NWGmc Nasal Spirant Loss: \*jéugūθ | **Old English**: OE Diphthong Leveling: \*jéogūθ ; OE Unstressed Long Vowel Shortening: \*jéoguθ |
+| Earlier Germanic change | Form | Old English change | Form |
+| :--- | :--- | :--- | :--- |
+| Proto-West Germanic | [no change] | Old English: OE Diphthong Leveling | _\*jéogūθ_ |
+| Northwest Germanic: OE Ws Palatal Glide | _\*jéugunθ_ | OE Unstressed Long Vowel Shortening | _\*jéoguθ_ |
+| NWGmc Nasal Spirant Lengthening | _\*jéugūnθ_ |  |  |
+| NWGmc Nasal Spirant Loss | _\*jéugūθ_ |  |  |
 
 Outcome: _ġeoguþ_
 

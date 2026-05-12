@@ -95,10 +95,6 @@ def italicize_form(text: str) -> str:
     return f"_{escaped}_"
 
 
-def escape_proto_stars(text: str) -> str:
-    return re.sub(r"(?<!\*)\*(?!\*)", r"\\*", text)
-
-
 def keep_as_code(text: str) -> bool:
     return bool(
         re.search(r"(?:\.md\b|\.txt\b|\.pdf\b|\.py\b|\.sh\b|\.tsv\b|^@|^https?://|docs/|Germanic/|--\w)", text)
@@ -129,35 +125,97 @@ def tidy_prose(text: str) -> str:
     return convert_inline_code(demote_bold_forms(text))
 
 
+def escape_table_cell(text: str) -> str:
+    return text.replace("|", r"\|")
+
+
+def parse_trace_cell(cell: str) -> list[tuple[str, str]]:
+    pieces = [piece.strip() for piece in re.split(r"<br\s*/?>", cell) if piece.strip()]
+    if not pieces:
+        return []
+
+    stages: list[tuple[str, list[str]]] = []
+    current_stage = ""
+    current_items: list[str] = []
+
+    for piece in pieces:
+        stage_match = re.fullmatch(r"\*\*([^*]+)\*\*", piece)
+        if stage_match:
+            if current_stage or current_items:
+                stages.append((current_stage, current_items))
+            current_stage = stage_match.group(1).strip()
+            current_items = []
+            continue
+        current_items.append(piece)
+
+    if current_stage or current_items:
+        stages.append((current_stage, current_items))
+
+    rows: list[tuple[str, str]] = []
+    for stage, items in stages:
+        if not items:
+            rows.append((stage, ""))
+            continue
+
+        first_change = True
+        for item in items:
+            if item == "[no change]":
+                rows.append((stage, item))
+                first_change = False
+                continue
+
+            if ":" in item:
+                change, form = item.split(":", 1)
+                change = change.strip()
+                form = form.strip()
+            else:
+                change = item.strip()
+                form = ""
+
+            if stage and first_change:
+                change = f"{stage}: {change}"
+            rows.append((change, form))
+            first_change = False
+
+    return rows
+
+
 def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     table_lines = trace_entry["table"].splitlines()
     if len(table_lines) < 3:
         return [trace_entry["table"]]
 
     row_parts = [part.strip() for part in table_lines[2].strip().strip("|").split("|")]
-    if len(row_parts) < 2:
+    if len(row_parts) != 2:
         return [trace_entry["table"]]
 
-    def render_cell(cell: str) -> str:
-        pieces = [piece.strip() for piece in re.split(r"<br\s*/?>", cell) if piece.strip()]
-        rendered: list[str] = []
-        i = 0
-        while i < len(pieces):
-            piece = escape_proto_stars(pieces[i])
-            if re.fullmatch(r"\*\*[^*]+\*\*", piece):
-                if i + 1 < len(pieces) and not re.fullmatch(r"\*\*[^*]+\*\*", pieces[i + 1].strip()):
-                    rendered.append(f"{piece}: {escape_proto_stars(pieces[i + 1].strip())}")
-                    i += 2
-                    continue
-            rendered.append(piece)
-            i += 1
-        return " ; ".join(rendered).replace("|", r"\|")
+    left_rows = parse_trace_cell(row_parts[0])
+    right_rows = parse_trace_cell(row_parts[1])
+    row_count = max(len(left_rows), len(right_rows))
 
-    return [
-        "| Earlier Germanic developments | Old English developments |",
-        "| :--- | :--- |",
-        f"| {render_cell(row_parts[0])} | {render_cell(row_parts[1])} |",
+    rendered = [
+        "| Earlier Germanic change | Form | Old English change | Form |",
+        "| :--- | :--- | :--- | :--- |",
     ]
+
+    for index in range(row_count):
+        left_change, left_form = left_rows[index] if index < len(left_rows) else ("", "")
+        right_change, right_form = right_rows[index] if index < len(right_rows) else ("", "")
+
+        rendered.append(
+            "| "
+            + " | ".join(
+                [
+                    escape_table_cell(left_change),
+                    "[no change]" if left_form == "[no change]" else italicize_form(left_form) if left_form else "",
+                    escape_table_cell(right_change),
+                    "[no change]" if right_form == "[no change]" else italicize_form(right_form) if right_form else "",
+                ]
+            )
+            + " |"
+        )
+
+    return rendered
 
 
 def parse_model_entry(path: Path) -> dict[str, object]:
