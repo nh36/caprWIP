@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Clark Hall | OE dictionary evidence | `hamor` with `hamer` variant | OE citation tradition | `hamor`; `hamer` | Confirms that the citation form already shows vowel variation. | yes — `ClarkHall1960` | cited in packet/memo/slice | high |
 | Sievers-Brunner | OE paradigm evidence | `hamor — hamores` | competing oblique tradition | `hamores` | Shows that the oblique tradition is not uniform and helps explain the cell choice. | yes — `SieversBrunner1965` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | nominative cells derive regularly, but the oblique is cleaner as comparator | paradigm-cell choice | `hameres`; `hamor`; `hamer` | The main issue is unstable citation-form tradition, not failure of the sound laws. | no | `Germanic/docs/lexeme_reports/research_memos/2053-hammer-hameres.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2053-hammer-hameres.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 160`; `Orel2003, 197`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -22,7 +22,7 @@ Kroonen gives `*tīdi-` 'time', and Orel's `*tīđiz` points to the same feminin
 
 ### Old English evidence
 
-Bright records `tīd` with singular `tīde` and plural `tīda`, and Clark Hall treats `tīd` as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971; @ClarkHall1960].
+Bright records `tīd` with singular `tīde` and plural `tīda`, and Clark Hall treats `tīd` as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971; @ClarkHall1960, 309].
 
 ### Development to Old English
 

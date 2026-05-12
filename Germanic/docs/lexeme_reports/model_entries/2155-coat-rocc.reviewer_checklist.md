@@ -49,3 +49,9 @@
 
 1. Keep garment `rocc` distinct from the separate stone word in `stānrocc`.
 2. Preserve the Orel/Kroonen split as a compact source note rather than letting it swell into a full exception dossier.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 290`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

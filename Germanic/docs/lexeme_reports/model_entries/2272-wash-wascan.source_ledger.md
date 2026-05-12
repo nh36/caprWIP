@@ -9,3 +9,9 @@
 | Kroonen; Orel; Ringe & Taylor | comparative etymology and grammar | `*waskan-`; `*waskanan`; `*waskan` | verbal family | OE `wæscan`; `wascan` | Establish the comparative background and show the range of OE-side citation practice. | yes — `Kroonen2013`; `Orel2003`; `RingeTaylor2014` | local comparative reference files; memo | high |
 | Clark Hall; Sievers-Brunner | OE lexicography and morphology | `wascan`; `wæscan` | citation form and variant spelling | `wascan`; `wæscan` | Confirm the conservative lemma while preserving variant background. | yes — `ClarkHall1960`; `SieversBrunner1965` | local dictionary and grammar files; memo | high |
 | Campbell | OE phonology | `wascan`; `asce`; `flasce` | A-restoration before `sC`; medial `sc` before back vowel | `wascan` | Supplies the two phonological points that define the selected target. | yes — `Campbell1959` | local Campbell file; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 489`; `RingeTaylor2014, 142`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

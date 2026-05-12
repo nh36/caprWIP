@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel cite lemma-style Proto-Germanic headwords of the `*hurna- / *xurnan` type for this noun [@Kroonen2013; @Orel2003]. The selected input `*xúrną` is the nominative-style form used in the derivation here.
+Kroonen and Orel cite lemma-style Proto-Germanic headwords of the `*hurna- / *xurnan` type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input `*xúrną` is the nominative-style form used in the derivation here.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ From `*xúrną`, Northwest Germanic u-lowering gives `*xórną`, and later loss 
 
 ### Form note
 
-The note's oblique `*xurnăn` belongs to comparative stem background only. It does not replace the selected input `*xúrną` as the derivational form used here [@Kroonen2013; @Orel2003].
+The note's oblique `*xurnăn` belongs to comparative stem background only. It does not replace the selected input `*xúrną` as the derivational form used here [@Kroonen2013; @Orel2003, 234].

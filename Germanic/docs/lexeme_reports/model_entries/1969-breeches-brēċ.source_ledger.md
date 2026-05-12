@@ -12,3 +12,9 @@ This ledger records the evidence gathered for the compact regular-with-note entr
 | Clark Hall | OE lexicographic evidence | `brēc fp. breeches`; `broc I. f. (? only in pl. brēc)` | plural headword plus singular background | `brēc`; `broc` | Establishes attested plural `brēc` and keeps singular `brōc` as lexicographic background. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:7407-7408,7702`; `Germanic/docs/lexeme_reports/research_memos/1969-breeches-brēċ.md:34-36,52-60` | high |
 | Orel | comparative etymology | `*brōkz` | citation-form noun | `OE bróc` | Supplies a citation-form noun beside Kroonen's stem-level headword. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt:7953-7957`; `Germanic/docs/lexeme_reports/research_memos/1969-breeches-brēċ.md:31-33` | medium — useful comparative background, but the row itself targets the plural |
 | Research memo synthesis | current local inference | `*brekăną`; `*brōk-`; `*brōkiz` | deeper etymology vs row input | `brēċ` | The note-bearing issue is keeping the verbal background distinct from the plural noun input. | no | `Germanic/docs/lexeme_reports/research_memos/1969-breeches-brēċ.md:40-50,62-89` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 64`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

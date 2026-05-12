@@ -49,3 +49,9 @@
 
 1. Keep the unrelated noun `lēad` out of any later expansion of this verbal entry.
 2. Do not let superseded `*laidjăną` notation drift back into the final prose.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 363`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

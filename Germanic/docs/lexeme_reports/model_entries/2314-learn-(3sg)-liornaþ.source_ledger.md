@@ -13,3 +13,9 @@ This ledger records the finite-cell evidence and learn-family background used be
 | Brunner | 1965 OE grammar | `liornia(n) ... neben leornia(n)`; Northumbrian 3sg `liornes`; `liorna` | Northumbrian finite-form evidence | `liornes`; `liorna`; `leornian` | Shows that the Northumbrian finite stem `liorn-` is directly supported even where the present entry normalizes the 3sg ending as `-aþ`. | yes — `SieversBrunner1965` | `docs/references/brunner_1965_altenglische_grammatik.vision.txt:18335-18338; 17471-17472` | high; plain-text OCR was noisy, so the vision file was used for confirmation |
 | Clark Hall | 1960 dictionary | `leornian` | dictionary headword | `leornian` | Shows that dictionary practice still privileges the West-Saxon-looking headword. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:25949-25954` | high |
 | Research memo synthesis | current local analysis | `liornaþ` as normalized 3sg beside attested `liorna` / `liornes` and lemma `leornian` | selected paradigm form | `liornaþ` | The local evidence supports the `liorn-` stem directly, but the exact 3sg `liornaþ` remains a normalized comparison form. | no | `Germanic/docs/lexeme_reports/research_memos/2314-learn-(3sg)-liornaþ.md:65-75; 111-123` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 380`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

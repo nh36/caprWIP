@@ -10,3 +10,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Kroonen | comparative etymology | `*hrukka-`; continental-loan caution for OE `roc` | stem-style headword | `roc` | Confirms that comparative sources are not fully identical and must be stated carefully. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicographic evidence | `rocc`; garment compounds | garment noun and compounds | `rocc`, `bisceoprocc`, `breóstrocc` | Establish the intended OE garment lexeme. | yes — `ClarkHall1960`; `BosworthToller1898` | local Hall and BT files; memo | high |
 | DEV_NOTES / packet audit | current project repair history | garment vs stone vs `Ruck/ruk` | lexical disambiguation | garment `rocc` only | Useful only to document the older conflation that must stay excluded from final prose. | no | `Germanic/docs/DEV_NOTES.md`; packet; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 290`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

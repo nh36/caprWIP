@@ -21,8 +21,8 @@ DERIVATION_CLASS: early_analogy
 The word family shows two related but distinct Proto-Germanic formations. The
 root noun `*brust-` lies behind forms such as Gothic `brusts`, whereas Old
 English `brēost` belongs to a thematic formation `*breusta-`, alongside Old
-Norse `brjóst` and Old Saxon `briost` [@Kroonen2013; @Orel2003;
-@RingeTaylor2014].
+Norse `brjóst` and Old Saxon `briost` [@Kroonen2013; @Orel2003, 95;
+@RingeTaylor2014, 43].
 
 The selected input `*bréustą` therefore differs from the citation label
 `*brústz` because Old English reflects the thematic branch rather than the root
@@ -32,7 +32,7 @@ themselves.
 ### Old English evidence
 
 Old English dictionaries record the noun as `brēost` / `breóst`
-[@BosworthToller1898; @ClarkHall1960]. The form is an established Old English
+[@BosworthToller1898; @ClarkHall1960, 65]. The form is an established Old English
 lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation

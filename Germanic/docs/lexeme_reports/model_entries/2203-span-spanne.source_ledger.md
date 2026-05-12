@@ -15,3 +15,9 @@ This ledger records the evidence used for the P3 pilot upgrade.
 - The reviewed source base supports citation-form `spann` more directly than exact `spanne`; the model entry therefore treats `spanne` as the selected regular dat.sg. comparison form.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
 - No OCR or encoding artifact was reproduced in final prose.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Seebold1970, 450`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the verb as `*wahs(j)an-`, Orel as `*waxsanan`, and Ringe and Taylor discuss the prehistory of Old English `weaxan` within the same verbal family [@Kroonen2013; @Orel2003; @RingeTaylor2014].
+Kroonen cites the verb as `*wahs(j)an-`, Orel as `*waxsanan`, and Ringe and Taylor discuss the prehistory of Old English `weaxan` within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014].
 
 ### Old English evidence
 

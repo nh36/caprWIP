@@ -31,7 +31,7 @@ forms `flascan` support that analysis [@RingeTaylor2014].
 
 Old English dictionaries record the noun as `flasce`, with inflectional support
 from forms such as `flascan`; a later West Saxon `flaxe` is also noted as a
-secondary variant [@BosworthToller1898; @ClarkHall1960].
+secondary variant [@BosworthToller1898; @ClarkHall1960, 121].
 
 The relevant comparison form is therefore the weak feminine noun **`flasce`**.
 The plural and oblique evidence matters because it helps explain why the vowel

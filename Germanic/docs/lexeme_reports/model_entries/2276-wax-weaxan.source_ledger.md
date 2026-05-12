@@ -9,3 +9,9 @@
 | Kroonen; Orel; Ringe & Taylor | comparative etymology and grammar | `*wahs(j)an-`; `*waxsanan`; `*wahsijana` | verbal family and historical staging | OE `weaxan` | Establish the comparative background behind the selected input. | yes — `Kroonen2013`; `Orel2003`; `RingeTaylor2014` | local comparative reference files; memo | high |
 | Clark Hall; Bright | OE lexicography and paradigm evidence | `weaxan`; `wax`; `wēox` | infinitive headword beside preterite material | `weaxan`; `wax`; `wēox` | Confirm that the target here is the infinitive rather than noun or preterite material. | yes — `ClarkHall1960`; `BrightCassidyRingler1971` | local dictionary and reader files; memo | high |
 | Campbell; Sievers-Brunner | OE phonology | `weaxan`; `wæstm` | `xs` preserved in the infinitive but lost before another consonant | `weaxan` | Supplies the conditioning that keeps the infinitive in the preserved-`x` class. | yes — `Campbell1959`; `SieversBrunner1965` | local grammar files; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 478`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

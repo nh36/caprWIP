@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor derive Old English `lǣdan` from Proto-Germanic `*laidijaną`, and Kroonen likewise cites a weak verb of the `*laidjan-` type for 'lead' [@RingeTaylor2014; @Kroonen2013].
+Ringe and Taylor derive Old English `lǣdan` from Proto-Germanic `*laidijaną`, and Kroonen likewise cites a weak verb of the `*laidjan-` type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363].
 
 ### Old English evidence
 

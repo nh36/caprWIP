@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The inherited comparative noun is given as `*laimōn` or `*laiman-`, and both
 Orel and Kroonen identify Old English `lām` as a neuter reflex of that family
-[@Orel2003; @Kroonen2013]. The selected input `*láimą` differs from the
+[@Orel2003; @Kroonen2013, 363]. The selected input `*láimą` differs from the
 comparative headword because it represents the stem class that matches the Old
 English noun most directly.
 
@@ -30,7 +30,7 @@ than a dispute about the OE target itself.
 ### Old English evidence
 
 Old English dictionaries record the noun as `lām`, a neuter word for 'loam,
-clay, mud' [@BosworthToller1898; @ClarkHall1960]. The target is an attested
+clay, mud' [@BosworthToller1898; @ClarkHall1960, 196]. The target is an attested
 citation form rather than a reconstructed comparator.
 
 The relevant question is not whether `lām` is Old English, but which inherited

@@ -22,13 +22,13 @@ The word is the old compound 'age of men'. Comparative sources preserve two
 slightly different views of its first element. Orel and the `*wira-` tradition
 keep the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
 `*weraldiz` and its pre-Old-English chain `*weraldu > *weruld`
-[@Orel2003; @RingeTaylor2014]. Kluge-Seebold preserves both tendencies by
+[@Orel2003; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
 giving compound `*wira-aldō` beside simplex `*wera-` [@KlugeSeebold2011].
 
 The selected input `*wír-àldu` therefore differs from the citation label in two
 ways. It keeps the older `*wir-` vowel of the comparative headword, but it also
 presupposes the early shift of the compound into the ō-stems that Ringe and
-Taylor note for this lexeme [@RingeTaylor2014]. The early analogical step lies
+Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
 regularly.
 
@@ -36,9 +36,9 @@ regularly.
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
 Saxon `weorold ~ worold`, Mercian `weoruld`, Northumbrian `woruld`, and Kentish
-`wiarald` [@RingeTaylor2014]. Sievers-Brunner and Bright present the same wider
+`wiarald` [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated `world` and later rounded `wurold`
-[@SieversBrunner1965; @BrightCassidyRingler1971].
+[@SieversBrunner1965; @BrightCassidyRingler1971, 465].
 
 The selected target here is the West Saxon form `weorold`. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
@@ -54,7 +54,7 @@ back mutation yields `*wéor-oldu`; final high-vowel apocope then gives
 
 This sequence matches the comparative background in Ringe and Taylor's
 `*weraldiz > *weraldu > *weruld` chain while preserving the `*wir-` notation of
-the selected comparative label [@RingeTaylor2014]. The modeled Old English form
+the selected comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 

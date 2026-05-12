@@ -49,3 +49,9 @@
 
 1. Keep simplex `mare` distinct from unattested `*nihtmare`.
 2. Preserve `mere / mera` as variant tradition without letting `mære` back into final prose as the preferred target.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 213`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

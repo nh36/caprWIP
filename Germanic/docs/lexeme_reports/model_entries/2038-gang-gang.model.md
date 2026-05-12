@@ -22,7 +22,7 @@ Orel reconstructs the noun as `*gangaz` and cites Old English `gang` beside Old 
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller both record `gang` as the noun 'going, journey, way', and Bright's glossary gives `gong (gang), m., path, course` [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. The target is therefore the attested noun headword itself.
+Clark Hall and Bosworth-Toller both record `gang` as the noun 'going, journey, way', and Bright's glossary gives `gong (gang), m., path, course` [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971, 392]. The target is therefore the attested noun headword itself.
 
 ### Form note
 

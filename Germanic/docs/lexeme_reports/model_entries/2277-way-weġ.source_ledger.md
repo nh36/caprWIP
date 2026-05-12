@@ -7,3 +7,8 @@
 | Kroonen | comparative etymology | `*wega- m. 'way, road'`; OE `weg m.` | stem citation for the noun family | `weg` | Supplies the cognate-set headword behind selected `*wégaz`. | yes — `Kroonen2013` | local Kroonen reference file; memo | high |
 | Campbell; Hogg; Ringe & Taylor | OE phonology and morphology | `weġ`; `wegas`; `wegum` | singular vs plural/oblique contrast | `weġ`; `wegas`; `wegum` | Show that singular `weġ` is palatal while back-vowel inflection keeps `weg-` velar. | yes — `Campbell1959`; `Hogg1992`; `RingeTaylor2014` | local grammar files; memo | high |
 
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `RingeTaylor2014, 341`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Kroonen; Fulk | comparative etymology and grammar | `*slēpan-`; root `*slēb-` | inherited sleep-verb | `slæpan` | Establish the comparative lexeme behind the row. | yes — `Kroonen2013`; `Fulk2018` | local comparative reference files; memo | high |
 | Clark Hall; Bright | OE lexicography and reader | `slæpan`; pret. `slēp, slēap`; `slēpon`, `slēpen` | infinitive plus strong-verb paradigm | `slæpan`, `slēp`, `slēap` | Show that the row targets the infinitive, not the preterite or noun-shaped lookup hit. | yes — `ClarkHall1960`; `BrightCassidyRingler1971` | local reference files; memo | high |
 | Brunner; Bülbring | OE grammar | WS `slāpan/slæpan`; Angl./Kent. `slēpan` | dialect and analogical background | `slæpan`, `slēpan` | Supports the normalized infinitive while keeping dialectal variation visible. | yes — `SieversBrunner1965`; `Bulbring1902` | local grammar files; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `BrightCassidyRingler1971, 435`; `Fulk2018, 120`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

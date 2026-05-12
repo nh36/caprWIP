@@ -19,8 +19,8 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem `*xámaraz`, reflected in Old English
-citation forms such as `hamor` and `hamer` [@Kroonen2013; @Orel2003;
-@ClarkHall1960]. The selected input `*xámaras` is the genitive singular of that
+citation forms such as `hamor` and `hamer` [@Kroonen2013; @Orel2003, 197;
+@ClarkHall1960, 160]. The selected input `*xámaras` is the genitive singular of that
 same noun rather than a different lexeme.
 
 The genitive matters because the citation tradition is already mixed in its
@@ -32,7 +32,7 @@ This is a cell choice within one paradigm, not a change of stem class.
 Bosworth-Toller directly records **`hameres`** in an Old English genitival
 phrase [@BosworthToller1898]. The same dictionary tradition and Clark Hall also
 preserve the simplex headword as `hamor` or `hamer`
-[@BosworthToller1898; @ClarkHall1960].
+[@BosworthToller1898; @ClarkHall1960, 160].
 
 Sievers-Brunner gives a paradigm line `hamor — hamores`, which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965]. The

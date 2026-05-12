@@ -18,15 +18,15 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*wega-` 'way, road', while the selected derivational form here is nominative-singular `*wégaz` [@Kroonen2013]. Campbell, Hogg, and Ringe and Taylor use the same word as the standard contrast between singular palatal `weġ` and inflected `wegas/wegum` [@Campbell1959; @Hogg1992; @RingeTaylor2014].
+Kroonen cites the noun as `*wega-` 'way, road', while the selected derivational form here is nominative-singular `*wégaz` [@Kroonen2013]. Campbell, Hogg, and Ringe and Taylor use the same word as the standard contrast between singular palatal `weġ` and inflected `wegas/wegum` [@Campbell1959; @Hogg1992; @RingeTaylor2014, 341].
 
 ### Old English evidence
 
-The Old English singular is the ordinary noun `weg`, here normalized as `weġ` to show the palatal final. The contrasting plural and oblique forms `wegas, wegum` keep a velar stop before the following back vowel [@Campbell1959; @RingeTaylor2014].
+The Old English singular is the ordinary noun `weg`, here normalized as `weġ` to show the palatal final. The contrasting plural and oblique forms `wegas, wegum` keep a velar stop before the following back vowel [@Campbell1959; @RingeTaylor2014, 341].
 
 ### Development to Old English
 
-From `*wégaz`, final `*z` is lost and the weak tail apocopates, leaving word-final `*g` after a front vowel. In that environment Old English palatalization yields `weġ`, whereas `wegas` remains velar because the following `a` blocks the same outcome [@Campbell1959; @Hogg1992; @RingeTaylor2014].
+From `*wégaz`, final `*z` is lost and the weak tail apocopates, leaving word-final `*g` after a front vowel. In that environment Old English palatalization yields `weġ`, whereas `wegas` remains velar because the following `a` blocks the same outcome [@Campbell1959; @Hogg1992; @RingeTaylor2014, 341].
 
 ### Form note
 

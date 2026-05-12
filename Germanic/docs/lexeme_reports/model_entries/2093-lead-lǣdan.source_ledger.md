@@ -10,3 +10,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Kroonen | comparative etymology | `*laidjan-` | weak verb headword notation | `lǣdan` | Confirms the same lexeme in dictionary-style stem notation. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicographic evidence | `lædan / lǣdan` | ordinary verbal headword | `lǣdan` | Establishes the Old English target as an attested verb lemma. | yes — `ClarkHall1960`; `BosworthToller1898` | local Hall and BT reference files; memo | high |
 | Packet source audit | packet background | `lead -> lēad` | unrelated noun | `lēad` | False positive only; must not be used against the verbal row. | no | `Germanic/docs/lexeme_reports/packets/2093-lead-lǣdan.md` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 363`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -12,3 +12,9 @@ book-style entry was drafted.
 | Campbell | OE paradigm evidence | occasional unsyncopated 3sg forms and class-III discussion | finite-form evidence | `hafað`; `hæfeþ` type evidence | Supports the normalized unsyncopated target form. | yes — `Campbell1959` | cited in packet/memo/slice | high |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `habban` and related present forms | OE verb paradigm | `habban`; `hæfþ`; related forms | Confirms the ordinary citation form and its paradigm background. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | 3sg path regular; infinitive shows analogical leveling | paradigm-cell choice | `hæfeþ`; `habban` | The main issue is a regular finite cell versus a remodeled citation form. | no | `Germanic/docs/lexeme_reports/research_memos/2058-have-hæfeþ.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2058-have-hæfeþ.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 157`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

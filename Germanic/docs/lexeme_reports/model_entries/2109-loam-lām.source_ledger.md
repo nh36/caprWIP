@@ -11,3 +11,9 @@ book-style entry was drafted.
 | Orel | etymological headword | `*laimōn` with OE neuter `lām` | inherited comparative noun | OE `lām` | Reinforces the n-stem comparative reconstruction and OE neuter outcome. | yes — `Orel2003` | cited in packet/memo/slice | high |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `lām` as neuter noun | OE noun class | `lām` | Confirms the attested OE target and its neuter status. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | inherited n-stem fails as direct OE input; selected a-stem-like input gives the OE neuter | early class-shift solution | `lām` | The main issue is early stem-class realignment within the English branch. | no | `Germanic/docs/lexeme_reports/research_memos/2109-loam-lām.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2109-loam-lām.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 196`; `Kroonen2013, 363`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

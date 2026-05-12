@@ -13,3 +13,9 @@ This ledger records the evidence gathered for the compact regular-with-note entr
 | Bosworth-Toller | OE lexicographic evidence | `Caelf`; `Cealf`; `calfur`; `cealfru`; `cealfas` | attested singular and plural forms | `cealf`; `calfur`; `cealfru` | Confirms the headword and inherited `-r-` plural material. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:19506-19510`; `Germanic/docs/lexeme_reports/research_memos/1975-calf-ċealf.md:72-79` | high |
 | Campbell and Fulk | OE grammar / comparative grammar | `cealf, cealfes, cealfe`; `cealfru, cealfra, cealfrum` | singular a-stem inflection with `-r-` plural residue | `cealf`; `cealfru`; `cealfra`; `cealfrum` | Shows that the noun is singular citation-form straightforwardly, with inherited plural background. | yes — `Campbell1959`; `Fulk2018` | `docs/references/campbell_old_english_grammar.txt:16869-16884`; `docs/references/fulk_comparative_grammar_early_germanic.vision.txt:10699-10701`; `Germanic/docs/lexeme_reports/research_memos/1975-calf-ċealf.md:74-78` | high |
 | Packet / memo diagnostic note | reviewed local metadata | `calf -> ọmọ` in `old_english_wiktionary.tsv` | bad lexical-table extraction | — | The Wiktionary table entry is unusable and should stay out of final prose. | no | `Germanic/docs/lexeme_reports/packets/1975-calf-ċealf.md:95-102`; `Germanic/docs/lexeme_reports/research_memos/1975-calf-ċealf.md:27-35` | high as process history; not usable as philology |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Fulk2018, 193`; `Orel2003, 248`; `RingeTaylor2014, 220`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

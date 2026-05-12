@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type, and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@RingeTaylor2014; @Kroonen2013]. The selected input **`*líznōθi`** is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type, and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@RingeTaylor2014; @Kroonen2013, 380]. The selected input **`*líznōθi`** is the finite 3sg cell of that family, not the citation form of the verb.
 
 For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the class-II 2sg and 3sg make the non-`j` 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
 

@@ -33,7 +33,7 @@ cleaner comparator here [@Fulk2018].
 ### Old English evidence
 
 The ordinary Old English headword is `habban`, while the present paradigm also
-shows forms of the `hæf-` type [@BosworthToller1898; @ClarkHall1960]. Campbell
+shows forms of the `hæf-` type [@BosworthToller1898; @ClarkHall1960, 157]. Campbell
 notes occasional unsyncopated forms that support the normalized target
 **`hæfeþ`** [@Campbell1959].
 

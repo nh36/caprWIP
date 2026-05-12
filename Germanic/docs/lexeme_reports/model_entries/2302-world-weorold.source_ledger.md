@@ -15,3 +15,9 @@ book-style entry was drafted.
 | Clark Hall | 1960 dictionary | `weoruld = woruld`; `wiarald, wiaruld (K) = woruld` | lexicographic variant grouping | `weoruld`, `woruld`, `wiarald` | The dictionary tradition groups the selected WS form with the wider OE set rather than isolating one form as exclusive. | yes — `ClarkHall1960` | `Germanic/docs/lexeme_reports/research_memos/2302-world-weorold.md:70-81`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:47854-48160` | medium |
 | Bright | 1971 reader/grammar | `weorold, worold, woruld, world` | textbook variant set after `w` | `weorold`, `worold`, `woruld`, `world` | Useful support for the ordinary textbook presentation of the OE variant cluster. | yes — `BrightCassidyRingler1971` | `Germanic/docs/lexeme_reports/research_memos/2302-world-weorold.md:70-81`; `docs/references/bright_anglo_saxon_reader.txt:956-957` | medium |
 | Luick | 1914 historical grammar | `werold`, `weorold`, `worold` discussion after `w` | historical account of variable rounding/darkening | `weorold`, `worold` | Helpful for the source-facing explanation of variant `weorold / worold` after initial `w`. | yes — `Luick1914` | `Germanic/docs/lexeme_reports/dev_notes_slices/2302-world-weorold.md:121-129`; `Germanic/docs/dossiers/widuwe-u-preservation.md:876-878` | medium |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `BrightCassidyRingler1971, 465`; `RingeTaylor2014, 341`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

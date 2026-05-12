@@ -14,3 +14,9 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 - The final entry keeps the rejected noun-oblique and j-verb rescues out of the main analysis, except for one compact background comparison.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.
 - No OCR or encoding artifact was reproduced in final prose.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 305`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

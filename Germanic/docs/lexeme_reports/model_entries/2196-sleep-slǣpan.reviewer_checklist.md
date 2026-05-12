@@ -49,3 +49,9 @@
 
 1. Keep the verbal infinitive `slǣpan` distinct from noun `slǣp` and from preterite `slēp/slēap`.
 2. Preserve the compact note shape; this row does not need a full paradigm dossier.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `BrightCassidyRingler1971, 435`; `Fulk2018, 120`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

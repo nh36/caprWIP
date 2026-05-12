@@ -50,3 +50,9 @@
 
 1. Keep diagnostic `*gúldą` clearly subordinate to the selected input `*gúlθą`.
 2. Preserve the ambiguity between inherited alternation and regular `*lþ > ld` rather than forcing one prehistoric explanation.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 152`; `RingeTaylor2014, 42`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

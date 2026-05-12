@@ -48,3 +48,9 @@
 
 1. Keep `tæppa` as the attested noun target and `tappa` as the regular inherited output.
 2. Do not let the rejected noun-oblique or j-verb rescues re-enter later scaling work as live analysis.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 305`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

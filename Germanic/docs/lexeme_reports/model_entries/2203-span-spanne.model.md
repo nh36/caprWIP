@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Orel reconstructs the noun as `*spannō`, and Seebold likewise gives Old English
-`spann` under the same noun family [@Orel2003; @Seebold1970]. The selected input
+`spann` under the same noun family [@Orel2003; @Seebold1970, 450]. The selected input
 `*spánnai` is therefore not a rival headword, but a specific dative singular
 cell of the feminine ō-stem paradigm [@SieversBrunner1965].
 

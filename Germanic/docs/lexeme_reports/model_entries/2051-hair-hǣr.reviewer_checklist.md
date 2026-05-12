@@ -50,3 +50,9 @@
 
 1. Keep the corrected hair lexeme distinct from stale `*xazwăz` history.
 2. Keep the separate `haddr / heordan / hād-` material out of any later expansion of this compact entry.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 158`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

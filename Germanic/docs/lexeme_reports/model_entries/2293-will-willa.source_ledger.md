@@ -8,3 +8,8 @@
 | Orel; Kluge | comparative noun headwords | `*weljōn`; `*weljOn`; OE `willa`; G `Wille` | noun family headwords | `willa` | Confirm the noun-side cognate set behind selected `*wéljô`. | yes — `Orel2003`; `Kluge2002` | local reference files; memo | high |
 | Clark Hall | OE lexicography | `willa m.`; `willan` | noun headword distinct from verb headword | `willa`; `willan` | Confirms that the OE noun and verb are separate lexical entries. | yes — `ClarkHall1960` | local dictionary file; memo | high |
 
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 368`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

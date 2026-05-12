@@ -27,7 +27,7 @@ inherited noun cell.
 
 The Old English noun family is well attested. Orel gives `tæppa`, and Clark
 Hall records `tæppa` together with derivatives `tæppere` and `tæppestre`
-[@Orel2003; @ClarkHall1960]. The target is therefore a real Old English noun
+[@Orel2003; @ClarkHall1960, 305]. The target is therefore a real Old English noun
 form, not a reconstructed convenience spelling.
 
 ### Development to Old English

@@ -57,3 +57,9 @@
 1. Review should confirm that the metadata presentation continues to distinguish
    the broader comparative label `*flaskō` from the OE-facing weak feminine
    `*fláskōn` clearly enough for future scaling.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 121`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

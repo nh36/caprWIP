@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Kroonen; Ringe & Taylor; Orel | comparative etymology and grammar | `*sumara-`; `*sumaraz`; alternate `*sumeraz` | comparative headwords | `sumer`, `sumor` | Establish the comparative background and the live row's `*a` vocalism choice. | yes — `Kroonen2013`; `RingeTaylor2014`; `Orel2003` | local comparative reference files; memo | high |
 | Clark Hall; Bright | OE lexicography and reader | `sumor (sumer)`; `gs. sumeres`; `ds. sumera, sumere` | citation form plus oblique paradigm | `sumor`, `sumer`, `sumeres`, `sumera`, `sumere` | Show that the tradition preserves both `sumor` and `sumer`, with oblique `-e-` support. | yes — `ClarkHall1960`; `BrightCassidyRingler1971` | local reference files; memo | high |
 | Campbell | OE grammar | `sumor` for root `u` before single `m` | root-vowel evidence | `sumor` | Useful for the first syllable only, not decisive for medial `-e-/-o-`. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt`; memo | medium |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `BrightCassidyRingler1971, 440`; `Orel2003, 425`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

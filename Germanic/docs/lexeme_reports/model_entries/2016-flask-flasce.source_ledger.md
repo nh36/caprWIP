@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Campbell | OE phonology | restoration and related vowel history before clusters | OE phonological support | `flasce` | Supports the OE development once the weak feminine formation is chosen. | yes — `Campbell1959` | cited in packet/memo/slice | medium |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `flasce`, with oblique / plural `flascan`; later `flaxe` variant | OE weak feminine noun | `flasce`; `flascan`; `flaxe` | Confirms the OE noun and the supporting inflectional evidence. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | strong feminine label rejected for OE derivation; weak feminine `*fláskōn` accepted | formation choice | `flasce` | The decisive issue is stem class and suffixal support, not a missing OE sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2016-flask-flasce.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2016-flask-flasce.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 121`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

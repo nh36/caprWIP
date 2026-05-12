@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain `*garna > *geern > *gearn > OE gearn` [@Kroonen2013; @RingeTaylor2014]. The selected input `*gárną` is the nominal citation form used here, while oblique `*garnăn` belongs only to comparative background.
+Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain `*garna > *geern > *gearn > OE gearn` [@Kroonen2013; @RingeTaylor2014, 220]. The selected input `*gárną` is the nominal citation form used here, while oblique `*garnăn` belongs only to comparative background.
 
 ### Old English evidence
 

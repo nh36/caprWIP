@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel cites a masculine `*rukkaz` for the garment word, while Kroonen gives `*hrukka-`. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003; @Kroonen2013].
+Orel cites a masculine `*rukkaz` for the garment word, while Kroonen gives `*hrukka-`. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003; @Kroonen2013, 290].
 
 ### Old English evidence
 

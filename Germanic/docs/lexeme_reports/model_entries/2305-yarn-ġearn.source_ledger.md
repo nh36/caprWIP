@@ -8,3 +8,8 @@
 | Ringe & Taylor | historical staging | `*garna > *geern > *gearn > OE gearn` | OE prehistory of the noun | `gearn` | Supplies the clearest intermediate chain for the OE outcome. | yes — `RingeTaylor2014` | local Ringe and Taylor file; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicography | `gearn (e) n.`; `Filatum, gearn` | noun headword and glossarial evidence | `gearn` | Confirm the noun attestation behind normalized `ġearn`. | yes — `ClarkHall1960`; `BosworthToller1898` | local dictionary files; memo | high |
 
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `RingeTaylor2014, 220`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

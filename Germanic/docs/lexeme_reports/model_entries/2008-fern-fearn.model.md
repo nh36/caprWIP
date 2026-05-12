@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as masculine `*farna-` and gives Old English `fearn, fern`, while Orel gives the same lexeme as neuter `*farnan` with Old English `fearn` [@Kroonen2013; @Orel2003]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style `*fárnaz`.
+Kroonen cites the noun as masculine `*farna-` and gives Old English `fearn, fern`, while Orel gives the same lexeme as neuter `*farnan` with Old English `fearn` [@Kroonen2013; @Orel2003, 133]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style `*fárnaz`.
 
 ### Old English evidence
 

@@ -20,7 +20,7 @@ DERIVATION_CLASS: late_analogy
 
 The lexeme-level reconstruction is not uniform. Kroonen cites `*mannan-`, Orel
 has `*mannz`, and Ringe and Taylor summarize the inherited noun as `*mann-`
-[@Kroonen2013; @Orel2003; @RingeTaylor2014]. The selected input `*mánnas`
+[@Kroonen2013; @Orel2003, 299; @RingeTaylor2014]. The selected input `*mánnas`
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 

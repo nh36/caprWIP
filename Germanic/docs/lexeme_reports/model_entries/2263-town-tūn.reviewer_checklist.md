@@ -49,3 +49,9 @@
 
 1. Keep `*tūną` distinct from comparative headwords `*tūna-` and `*tūnan ~ *tūnaz`.
 2. Do not attribute oblique `*tūnăn` to Kroonen in the final prose.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 452`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

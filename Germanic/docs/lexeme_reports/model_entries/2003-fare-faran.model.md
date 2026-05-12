@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the inherited strong verb as `*faran-`, and Orel gives the same lexeme as `*faranan`, both with Old English `faran` among the reflexes [@Kroonen2013; @Orel2003]. Campbell also uses `faran` as a standard example of Old English A-restoration [@Campbell1959].
+Kroonen gives the inherited strong verb as `*faran-`, and Orel gives the same lexeme as `*faranan`, both with Old English `faran` among the reflexes [@Kroonen2013; @Orel2003, 132]. Campbell also uses `faran` as a standard example of Old English A-restoration [@Campbell1959].
 
 ### Old English evidence
 

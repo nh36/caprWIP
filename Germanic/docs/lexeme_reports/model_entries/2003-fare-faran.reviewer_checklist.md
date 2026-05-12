@@ -50,3 +50,9 @@
 
 1. Keep infinitive `faran` distinct from present-tense `fære`, `færst`, and `færð` if the entry is later expanded.
 2. Do not let weak `færan` 'to frighten' drift back into the strong-verb entry.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 132`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

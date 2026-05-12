@@ -13,3 +13,9 @@ book-style entry was drafted.
 | Campbell | OE vowel development | `eu > ēo` type development | regular OE vowel history | `brēost` | Supports the regular development from `*bréustą` to `brēost`. | yes — `Campbell1959` | cited in packet/memo/slice | high |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `brēost` / `breóst` | OE neuter noun | `brēost` | Confirms that the target is an established Old English lexeme. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | earlier root-noun input rejected; thematic input accepted | formation choice | `brēost` | The decisive issue is inherited formation, not a missing OE breaking rule. | no | `Germanic/docs/lexeme_reports/research_memos/1968-breast-brēost.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/1968-breast-brēost.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 65`; `Orel2003, 95`; `RingeTaylor2014, 43`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

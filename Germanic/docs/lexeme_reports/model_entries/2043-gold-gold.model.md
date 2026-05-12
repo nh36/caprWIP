@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the same pair [@RingeTaylor2014; @Kroonen2013]. The selected input `*gúlθą` preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
+Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the same pair [@RingeTaylor2014, 42; @Kroonen2013]. The selected input `*gúlθą` preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record `gold` as the ordinary Old English neuter noun [@BosworthToller1898; @ClarkHall1960]. The target is therefore the attested citation form itself.
+Bosworth-Toller and Clark Hall both record `gold` as the ordinary Old English neuter noun [@BosworthToller1898; @ClarkHall1960, 152]. The target is therefore the attested citation form itself.
 
 ### Development note
 
-Ringe and Taylor note that the medial stop can be understood either as alternation `*gulþa- / *gulda-` or as the ordinary West Germanic change `*lþ > ld`; both routes lead to the same Old English consonantism [@RingeTaylor2014].
+Ringe and Taylor note that the medial stop can be understood either as alternation `*gulþa- / *gulda-` or as the ordinary West Germanic change `*lþ > ld`; both routes lead to the same Old English consonantism [@RingeTaylor2014, 42].
 
 ### Development to Old English
 
-From `*gúlθą`, the regular consonant development gives `*gúldą`; Northwest Germanic / Old English lowering then yields `*góldą`, and apocope gives `gold` [@Campbell1959; @RingeTaylor2014].
+From `*gúlθą`, the regular consonant development gives `*gúldą`; Northwest Germanic / Old English lowering then yields `*góldą`, and apocope gives `gold` [@Campbell1959; @RingeTaylor2014, 42].

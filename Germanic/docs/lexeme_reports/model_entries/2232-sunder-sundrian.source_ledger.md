@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular model entry rewrit
 | Orel | comparative etymology | `*sunþraz`; `*sunþrjanan`; `*sunþrōjanan` | adverb, Class I verb, Class II verb | `sundor`, `syndrian`, `sundrian` | Supplies the crucial three-way lexeme split. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt`; memo | high |
 | Kluge-Seebold | West Germanic comparison | German `sondern`; OE `gesundrian`; ON `sundra` | Class II verbal family | `gesundrian` | Confirms that the cognate set is verbal rather than adverbial. | yes — `KlugeSeebold2011` | `docs/references/kluge_seebold_etymologisches_woerterbuch.txt`; memo | high |
 | Clark Hall; Bosworth-Toller | OE lexicography | `sundrian`; `syndrian`; `sundor`; prefixed `ā-sundrian` | verb-versus-adverb distinction | `sundrian`, `sundor`, `syndrian` | Show that the OE tradition keeps these lexemes distinct. | yes — `ClarkHall1960`; `BosworthToller1898` | local reference files; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 296`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -9,3 +9,9 @@
 | Kroonen; Orel | comparative etymology | `*tīdi-`; `*tīđiz` | feminine noun | OE `tīd`; separate verb `tīdan` | Establish the noun family and keep the verb separate. | yes — `Kroonen2013`; `Orel2003` | local comparative reference files; memo | high |
 | Bright; Clark Hall | OE lexicography and paradigm evidence | `tīd`; `tīde`; `tīda` | noun citation and inflected forms | `tīd` | Confirm the citation noun and its paradigm support. | yes — `BrightCassidyRingler1971`; `ClarkHall1960` | local reader and dictionary files; memo | high |
 | Research memo / migration note | current repo analysis | `*tī́diz`; `*tḯdiz` | comparative versus selected derivational notation | `tīd` | Explains the notation split without turning it into a separate lexical stage. | no | memo; dev-note slice | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `ClarkHall1960, 309`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

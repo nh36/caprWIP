@@ -9,3 +9,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Kroonen and Orel | comparative etymology | `*hurna-`; `*xurnan`; oblique `*xurnăn` background | Proto-Germanic noun headword | `horn` | Supplies the comparative morphology behind the note without displacing the selected input. | yes — `Kroonen2013`; `Orel2003` | cited in `Germanic/docs/lexeme_reports/research_memos/2082-horn-horn.md:31-34,42-49` | high |
 | Bosworth-Toller, Clark Hall, and Bright | OE lexicographic evidence | `horn` | ordinary noun headword | `horn` | Confirms the attested citation form on the Old English side. | yes — `BosworthToller1898`; `ClarkHall1960`; `BrightCassidyRingler1971` | cited in `Germanic/docs/lexeme_reports/research_memos/2082-horn-horn.md:31-34,50-56` | high |
 | Research memo | current synthesis | `*xúrną`; `*xurnăn`; `horn`; `horna` | selected input distinguished from comparative oblique and chronology examples | `horn` | Explains why the final entry should treat `*xurnăn` as background only. | no | `Germanic/docs/lexeme_reports/research_memos/2082-horn-horn.md:40-72` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 234`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

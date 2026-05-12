@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel and Kroonen cite a Class II verb of the type `*skawōjan-`, with OE `scēawian` among the reflexes [@Orel2003; @Kroonen2013]. Brunner likewise records the Old English family as `scēawian, scāwian`, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
+Orel and Kroonen cite a Class II verb of the type `*skawōjan-`, with OE `scēawian` among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as `scēawian, scāwian`, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
 
 ### Old English evidence
 

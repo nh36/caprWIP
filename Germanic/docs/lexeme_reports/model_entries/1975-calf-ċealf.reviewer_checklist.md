@@ -65,3 +65,9 @@
 ## Remaining human-review points
 
 1. Keep the normalized spelling `ċealf` tied explicitly to attested dictionary `cealf` when the entry is later promoted or indexed.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Fulk2018, 193`; `Orel2003, 248`; `RingeTaylor2014, 220`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

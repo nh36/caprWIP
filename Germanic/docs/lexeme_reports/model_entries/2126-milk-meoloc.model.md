@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel reconstruct the noun as `*meluk- / *melukz`, and the nominative-style input used here is `*mélukz` [@Kroonen2013; @Orel2003].
+Kroonen and Orel reconstruct the noun as `*meluk- / *melukz`, and the nominative-style input used here is `*mélukz` [@Kroonen2013; @Orel2003, 306].
 
 ### Old English evidence
 

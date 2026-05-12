@@ -11,3 +11,9 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Orel | comparative etymology | `*farnan sb.n.`; OE `fearn` | neuter comparative headword | `fearn` | Supplies the alternative comparative stem/gender labeling. | yes — `Orel2003` | `docs/references/legacy/orel_handbook_germanic_etymology.txt:10070-10072`; `Germanic/docs/lexeme_reports/research_memos/2008-fern-fearn.md:45,55-56,69-70` | high |
 | Clark Hall and Bosworth-Toller | OE lexicographic evidence | `fearn n.`; `fearnes`; `fearna`; `fearne` | attested headword plus inflected cells | `fearn`; `fearnes`; `fearna`; `fearne` | Confirms that the selected target is the attested OE citation form best supported in the local lexical sources. | yes — `ClarkHall1960`; `BosworthToller1898` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:14144-14145`; `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:34247-34250`; `Germanic/docs/lexeme_reports/research_memos/2008-fern-fearn.md:46-47,63-69` | high |
 | Campbell and Ringe & Taylor | OE phonology background | breaking before `r` plus consonant | regular `ea` outcome | `fearn` | Supplies the general phonological background for the regular development to `fearn`. | yes — `Campbell1959`; `RingeTaylor2014` | `Germanic/docs/lexeme_reports/dev_notes_slices/2008-fern-fearn.md:28-34`; `Germanic/docs/lexeme_reports/research_memos/2008-fern-fearn.md:48-49,59-60` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 133`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

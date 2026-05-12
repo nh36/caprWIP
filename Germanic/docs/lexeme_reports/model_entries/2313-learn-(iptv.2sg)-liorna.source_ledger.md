@@ -12,3 +12,9 @@ This ledger records the finite-cell evidence and learn-family background used be
 | Campbell | 1959 OE grammar | `Beside leornian, forms with io are found in North.` | Northumbrian vs West Saxon vowel distribution | `liornian`; `leornian` | Provides the dialectal basis for treating `liorn-` as the regular Northumbrian side of the family. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt:4091-4095; 5930-5931; 8568-8570` | high |
 | Brunner | 1965 OE grammar | `leornian, nordh. auch liorna`; `liornia(n) ... neben leornia(n)` | Northumbrian finite-form evidence | `liorna`; `liornian`; `leornian` | Gives direct grammatical support for the Northumbrian finite form `liorna`. | yes — `SieversBrunner1965` | `docs/references/brunner_1965_altenglische_grammatik.vision.txt:17471-17472; 18335-18336` | high; plain-text OCR was noisy, so the vision file was used for confirmation |
 | Clark Hall | 1960 dictionary | `leornian` | dictionary headword | `leornian` | Shows that dictionary practice still privileges the West-Saxon-looking headword. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:25949-25954` | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Kroonen2013, 380`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

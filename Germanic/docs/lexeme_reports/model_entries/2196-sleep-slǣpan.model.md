@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same family under root `*slēb-` [@Kroonen2013; @Fulk2018]. The selected input `*slḗpaną` is the infinitive-style form used here for that inherited sleep-verb.
+Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same family under root `*slēb-` [@Kroonen2013; @Fulk2018, 120]. The selected input `*slḗpaną` is the infinitive-style form used here for that inherited sleep-verb.
 
 ### Old English evidence
 
-Clark Hall gives `slæpan` with preterite `slēp, slēap`, and Bright likewise lists `slæpan (slāpan), slēp slēpon slēpen` [@ClarkHall1960; @BrightCassidyRingler1971]. The target represented here is therefore the normalized infinitive `slǣpan`, not the preterite forms and not the separate noun `slǣp`.
+Clark Hall gives `slæpan` with preterite `slēp, slēap`, and Bright likewise lists `slæpan (slāpan), slēp slēpon slēpen` [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive `slǣpan`, not the preterite forms and not the separate noun `slǣp`.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From `*slḗpaną`, Northwest Germanic lowering gives `*slǣpaną`. The later OE
 
 ### Form note
 
-The note concerns lemma type rather than a special derivational problem: this row represents the verb `slǣpan`, whereas `slǣp` belongs to noun or lookup background and `slēp/slēap` are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971].
+The note concerns lemma type rather than a special derivational problem: this row represents the verb `slǣpan`, whereas `slǣp` belongs to noun or lookup background and `slēp/slēap` are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].

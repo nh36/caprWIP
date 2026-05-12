@@ -22,7 +22,7 @@ Kroonen separates noun `*weljan- 2` 'will, wish' from verb `*weljan- 1` 'to want
 
 ### Old English evidence
 
-Clark Hall lemmatizes noun `willa m.` separately from verb `willan` [@ClarkHall1960]. The selected target is the noun citation form, not the related verb.
+Clark Hall lemmatizes noun `willa m.` separately from verb `willan` [@ClarkHall1960, 368]. The selected target is the noun citation form, not the related verb.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From `*wéljô`, j-gemination yields a heavy stem, i-umlaut gives `will-`, and l
 
 ### Lexical note
 
-The target here is the noun `willa` 'will, wish'. Related verb `willan` belongs to a separate lexeme and should not be substituted for the noun row [@Kroonen2013; @ClarkHall1960].
+The target here is the noun `willa` 'will, wish'. Related verb `willan` belongs to a separate lexeme and should not be substituted for the noun row [@Kroonen2013; @ClarkHall1960, 368].

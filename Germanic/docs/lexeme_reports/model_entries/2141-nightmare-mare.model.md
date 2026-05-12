@@ -22,7 +22,7 @@ Ringe and Taylor treat the lexeme as Proto-Germanic / Proto-Northwest-Germanic `
 
 ### Old English evidence
 
-Clark Hall records `mare` 'nightmare, monster' and also preserves related variant forms `mera / mere` [@ClarkHall1960].
+Clark Hall records `mare` 'nightmare, monster' and also preserves related variant forms `mera / mere` [@ClarkHall1960, 213].
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ The selected simplex input `*márōn` regularly gives `mare` after brightening, 
 
 ### Form note
 
-The concept corresponds to an unattested compound `*nihtmare`, but the Old English lexical evidence is for simplex `mare`, with oblique `maran` and variant `mere / mera` [@RingeTaylor2014; @ClarkHall1960].
+The concept corresponds to an unattested compound `*nihtmare`, but the Old English lexical evidence is for simplex `mare`, with oblique `maran` and variant `mere / mera` [@RingeTaylor2014; @ClarkHall1960, 213].

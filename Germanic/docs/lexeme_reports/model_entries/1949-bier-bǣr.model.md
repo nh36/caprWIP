@@ -18,15 +18,15 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as `*bērō-` f. 'bier' and cites Old English `bar, bær` among the reflexes [@Kroonen2013]. The selected input `*bḗrō` is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as `*bērō-` f. 'bier' and cites Old English `bar, bær` among the reflexes [@Kroonen2013, 717]. The selected input `*bḗrō` is the same lexeme in the accent notation used here.
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as `bær`, and Kroonen also records `bar` beside it [@ClarkHall1960; @BosworthToller1898; @Kroonen2013]. The target `bǣr` is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as `bær`, and Kroonen also records `bar` beside it [@ClarkHall1960; @BosworthToller1898; @Kroonen2013, 717]. The target `bǣr` is therefore a normalized long-vowel spelling of the same noun.
 
 ### Source note
 
-Lexicographic spellings vary between `bær` and `bar`. The normalized target `bǣr` simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898; @Kroonen2013].
+Lexicographic spellings vary between `bær` and `bar`. The normalized target `bǣr` simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898; @Kroonen2013, 717].
 
 ### Development to Old English
 

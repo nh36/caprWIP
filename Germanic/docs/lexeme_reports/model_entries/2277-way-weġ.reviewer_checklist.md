@@ -50,3 +50,8 @@
 1. Keep normalized `weġ` distinct from undotted dictionary `weg`.
 2. Keep `wegas/wegum` as inflectional background only.
 
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `RingeTaylor2014, 341`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

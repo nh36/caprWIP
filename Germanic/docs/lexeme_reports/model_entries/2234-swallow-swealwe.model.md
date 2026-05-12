@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the bird name as `*swalwōn-`, and Ringe and Taylor cite the later West Germanic stage `*swalwa`, from which West Saxon `swealwe` and Mercian `swalwe` develop [@Kroonen2013; @RingeTaylor2014]. The selected etymological comparison belongs to the swallow-bird family, not to the verb `swelgan`.
+Kroonen gives the bird name as `*swalwōn-`, and Ringe and Taylor cite the later West Germanic stage `*swalwa`, from which West Saxon `swealwe` and Mercian `swalwe` develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb `swelgan`.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall records `swealwe (a, o)` as the noun headword [@ClarkHall1960]. Campb
 
 ### Development to Old English
 
-From `*swálwōn`, brightening yields `*swælw-`, and breaking before `lw` gives `*swealw-`. The later noun ending develops regularly to `swealwe`. The relevant point is that the bird name has no inherited `*g`: that consonant belongs to the separate verb `swelgan` [@RingeTaylor2014; @Kroonen2013].
+From `*swálwōn`, brightening yields `*swælw-`, and breaking before `lw` gives `*swealw-`. The later noun ending develops regularly to `swealwe`. The relevant point is that the bird name has no inherited `*g`: that consonant belongs to the separate verb `swelgan` [@RingeTaylor2014, 200; @Kroonen2013, 535].
 
 ### Form note
 

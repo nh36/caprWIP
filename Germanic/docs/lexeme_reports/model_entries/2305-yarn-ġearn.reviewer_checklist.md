@@ -55,3 +55,9 @@
 
 1. Keep dictionary `gearn` and normalized `ġearn` aligned as the same noun.
 2. Keep comparative `*garna-` and oblique `*garnăn` subordinate to selected input `*gárną`.
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `RingeTaylor2014, 220`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

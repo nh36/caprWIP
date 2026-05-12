@@ -22,7 +22,7 @@ Orel distinguishes three related formations: adverbial `*sunþraz > sundor`, Cla
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller keep `sundrian` and `syndrian` separate from adverbial `sundor`, and both preserve the prefixed verbal family `ā-sundrian` [@ClarkHall1960; @BosworthToller1898]. The target represented here is therefore the weak verb `sundrian`.
+Clark Hall and Bosworth-Toller keep `sundrian` and `syndrian` separate from adverbial `sundor`, and both preserve the prefixed verbal family `ā-sundrian` [@ClarkHall1960, 296; @BosworthToller1898]. The target represented here is therefore the weak verb `sundrian`.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From `*súndrōjaną`, the Class II weak-verb suffix yields regular OE `-ian`, p
 
 ### Form note
 
-The earlier confusion was lexical, not phonological: `sundor` is the separate adverb, and `syndrian` is a related but different verb. The verb treated here is the Class II verb `sundrian` [@Orel2003; @ClarkHall1960].
+The earlier confusion was lexical, not phonological: `sundor` is the separate adverb, and `syndrian` is a related but different verb. The verb treated here is the Class II verb `sundrian` [@Orel2003; @ClarkHall1960, 296].

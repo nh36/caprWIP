@@ -9,3 +9,9 @@
 | Kroonen; Orel | comparative etymology | `*taikna-`; `*taiknan` | noun headword conventions | OE `tācn` | Establish the PGmc noun family behind the selected input. | yes — `Kroonen2013`; `Orel2003` | local comparative reference files; memo | high |
 | Campbell; Sievers-Brunner | OE grammar | `tācn`; `tācen`; `tācnes` | unbroken citation form, broken competitor, unbroken oblique | `tācn`; `tācen`; `tācnes` | Show why the entry keeps attested unbroken `tācn` while acknowledging the later competitor `tācen`. | yes — `Campbell1959`; `SieversBrunner1965` | local grammar files; memo | high |
 | Clark Hall | OE lexicography | `tācen` and related spellings | dictionary normalization | `tācen` | Records the lexicographic pull toward the broken form without overriding the selected unbroken target. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt`; memo | high |
+
+## Citation-locator full-corpus high-confidence pass
+
+- Added page-specific locators for `Orel2003, 438`.
+- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
+- Existing citations to conditional or unresolved locator sources were left unchanged.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites `*taikna-` and Orel `*taiknan` for the noun 'sign, token' [@Kroonen2013; @Orel2003]. The selected input `*táikną` is the simple citation-form noun used for the derivation.
+Kroonen cites `*taikna-` and Orel `*taiknan` for the noun 'sign, token' [@Kroonen2013; @Orel2003, 438]. The selected input `*táikną` is the simple citation-form noun used for the derivation.
 
 ### Old English evidence
 
