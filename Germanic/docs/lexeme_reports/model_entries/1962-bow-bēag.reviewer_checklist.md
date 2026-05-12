@@ -52,6 +52,14 @@
   the paired model entry without changing the analysis, citations, selected
   input, target form, classification, or comparison tables.
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `RingeTaylor2014` (55) and
+  `ClarkHall1960` (45).
+- `Campbell1959` and `BosworthToller1898` were checked but left broad because
+  the exact page-to-claim mapping for the cited statements was not confirmed
+  from the available local files in this pass.
+
 ## Remaining human-review points
 
 1. The entry should keep the verbal `bēag` distinct from the unrelated noun

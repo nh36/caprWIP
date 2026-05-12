@@ -44,6 +44,11 @@
 | Genre-polish correction applied | yes | Removed entry-facing phrasing while keeping the variant analysis unchanged. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (355),
+  `Orel2003` (266), `RingeTaylor2014` (338), and `ClarkHall1960` (84).
+
 ## Remaining human-review points
 
 1. Keep `cwedu` distinct from the wider lexical set `cwidu`, `cweodu`, `cwudu`, `cudu`.

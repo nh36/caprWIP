@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` among its reflexes [@Kroonen2013]. The selected input `*wḗpną` represents the unbroken citation-form noun rather than the later broken simplex.
+Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` among its reflexes [@Kroonen2013, 617]. The selected input `*wḗpną` represents the unbroken citation-form noun rather than the later broken simplex.
 
 ### Old English evidence
 
-Campbell and Bright contrast broken nominative `wǣpen/wapen` with unbroken oblique `wǣpnes`, while Clark Hall lemmatizes the noun under `wapen` and also preserves unbroken forms in compounds and related spellings [@Campbell1959; @BrightCassidyRingler1971; @ClarkHall1960].
+Campbell and Bright contrast broken nominative `wǣpen/wapen` with unbroken oblique `wǣpnes`, while Clark Hall lemmatizes the noun under `wapen` and also preserves unbroken forms in compounds and related spellings [@Campbell1959; @BrightCassidyRingler1971, 29; @ClarkHall1960, 355].
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ Northwest Germanic lowering gives `wǣpn`, and loss of the final nasal vowel lea
 
 ### Form note
 
-The ordinary late West Saxon simplex headword is `wǣpen`, but older, poetic, and compound evidence preserves unbroken `wǣpn`. `wǣpnes` remains the regular unbroken oblique comparator [@Campbell1959; @BrightCassidyRingler1971; @ClarkHall1960].
+The ordinary late West Saxon simplex headword is `wǣpen`, but older, poetic, and compound evidence preserves unbroken `wǣpn`. `wǣpnes` remains the regular unbroken oblique comparator [@Campbell1959; @BrightCassidyRingler1971, 29; @ClarkHall1960, 355].

@@ -51,6 +51,14 @@
   the paired model entry without changing the analysis, citations, selected
   input, target form, classification, or comparison tables.
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (617),
+  `BrightCassidyRingler1971` (29), and `ClarkHall1960` (355).
+- `Campbell1959` was checked but left broad because the local file supports the
+  relevant cluster-noun behavior more confidently than the exact
+  nominative/oblique wording cited in the model entry.
+
 ## Remaining human-review points
 
 1. Keep unbroken `wǣpn` distinct from dictionary and late WS `wǣpen`.

@@ -45,6 +45,15 @@ Checked against `docs/refs.bib`:
 - Existing local vision-backed reference files were sufficient; no extra Google Vision rescue beyond those files was needed.
 - No unresolved OCR or encoding issue was reproduced in final prose.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@Kroonen2013, 617]`, `[@BrightCassidyRingler1971, 29]`, and
+  `[@ClarkHall1960, 355]`.
+- Left `Campbell1959` broad in this pilot because the local file supports the
+  relevant cluster-noun behavior more confidently than the exact
+  nominative/oblique wording cited in the model entry.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.

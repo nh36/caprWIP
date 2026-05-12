@@ -44,6 +44,11 @@
 | Genre-polish correction applied | yes | Removed row-facing target language while keeping the reconstructed-versus-attested distinction unchanged. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (446),
+  `Orel2003` (338), `ClarkHall1960` (254-255), and `Seebold1970` (380).
+
 ## Remaining human-review points
 
 1. Keep attested noun `rēc` distinct from reconstructed noun `rēac`.

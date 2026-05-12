@@ -10,6 +10,14 @@ This ledger records the evidence used for the P3 pilot upgrade.
 | Orel | `*budmaz *butmaz`; OE `bodan`, `botm` | Confirms the comparative background and the Old English reflex family. | yes — `Orel2003` | local vision-backed comparative dictionary file; memo | high |
 | Clark Hall; Bosworth-Toller | `botm`; `bodan = botm` | Confirm the attested OE lemma and wider lexical family. | yes — `ClarkHall1960`; `BosworthToller1898` | local dictionary files; memo | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 120),
+  `Orel2003` (p. 100), `ClarkHall1960` (p. 63), and `BosworthToller1898`
+  (p. 112).
+- Updated the paired model entry to use page-specific Pandoc locators for those
+  source-specific claims.
+
 ## Notes
 
 - The row-local memo rightly treats `botm` as a secure OE lemma and the analogical issue as prehistory, not as a paradigm-cell problem.

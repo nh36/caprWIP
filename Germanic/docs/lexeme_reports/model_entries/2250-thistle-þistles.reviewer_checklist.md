@@ -44,6 +44,13 @@
 | Avoids project-facing language after metadata | yes | The prose remains source-facing and philological. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Orel2003` (458),
+  `ClarkHall1960` (326), and `Campbell1959` (151).
+- `KlugeSeebold2011` was checked but left broad because the local text file
+  preserves the `Distel` entry without a reliable nearby page marker.
+
 ## Remaining human-review points
 
 1. Keep simplex `þistel` distinct from the selected genitive singular `þistles`.

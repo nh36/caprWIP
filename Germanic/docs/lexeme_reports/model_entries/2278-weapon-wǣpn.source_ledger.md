@@ -8,3 +8,10 @@
 | Campbell; Bright | OE grammar and paradigm evidence | `wǣpen`; `wǣpnes`; `wapen`; `wæpnes` | broken nominative beside unbroken oblique | `wǣpen`; `wǣpnes` | Show the ordinary late WS headword and the oblique control form. | yes — `Campbell1959`; `BrightCassidyRingler1971` | local grammar and reader files; memo | high |
 | Clark Hall | OE lexicography | `wapen`; `wapn`; `wēpn` | dictionary headword plus unbroken variants | `wapen`; `wapn`; `wēpn` | Confirms that the noun family preserves both broken and unbroken forms in local evidence. | yes — `ClarkHall1960` | local dictionary file; memo | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 617),
+  `BrightCassidyRingler1971` (p. 29), and `ClarkHall1960` (p. 355).
+- `Campbell1959` was checked but left broad in this pilot because the local file
+  supports the relevant cluster-noun behavior more confidently than the exact
+  nominative/oblique wording cited in the model entry.

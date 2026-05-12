@@ -19,7 +19,8 @@ DERIVATION_CLASS: unexplained_unmodelled
 ### Reconstruction and comparative evidence
 
 The noun is the ordinary Germanic a-stem `*fúglaz`, continued by forms such as
-Old Norse `fugl` and Old High German `fogal` [@Kroonen2013; @Orel2003]. There
+Old Norse `fugl` and Old High German `fogal` [@Kroonen2013, 197; @Orel2003,
+155]. There
 is no stem-class or paradigm-cell dispute behind this entry. The comparative
 headword and the selected input are the same.
 
@@ -30,7 +31,7 @@ non-high vowel, yielding an `o`-vocalism [@RingeTaylor2014; @Campbell1959].
 ### Old English evidence
 
 Old English dictionaries record the noun as `fugol`, with variant spelling
-`fugel` [@BosworthToller1898; @ClarkHall1960]. The target is therefore an
+`fugel` [@BosworthToller1898; @ClarkHall1960, 138]. The target is therefore an
 attested ordinary Old English noun, not a reconstructed or selectively chosen
 paradigm form.
 

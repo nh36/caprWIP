@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited verb belongs to the class-II strong-verb family `*béuganą`
-[@RingeTaylor2014]. Within that paradigm, however, the infinitive and the
+[@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
 singular preterite continue different ablaut grades. The selected input `*báug`
 is the singular preterite cell, whereas the citation form `*béuganą` is the
 infinitive.
@@ -28,12 +28,12 @@ Campbell's account of Old English class-II strong verbs treats the singular
 preterite `au > ēa` development as regular in this environment [@Campbell1959].
 That is the phonological path relevant for `bēag`, whereas the analogical `ū`
 of the present stem belongs to the separate history behind `būgan`
-[@RingeTaylor2014].
+[@RingeTaylor2014, 55].
 
 ### Old English evidence
 
 Bosworth-Toller and Clark Hall both record `bēag` as a preterite form of
-`būgan` [@BosworthToller1898; @ClarkHall1960]. The form discussed here is
+`būgan` [@BosworthToller1898; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 

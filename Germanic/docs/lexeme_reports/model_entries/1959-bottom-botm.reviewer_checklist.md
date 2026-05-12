@@ -44,6 +44,11 @@
 | Genre-polish correction applied | yes | Recast row-facing proto wording without changing the stem-level analysis. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (120),
+  `Orel2003` (100), `ClarkHall1960` (63), and `BosworthToller1898` (112).
+
 ## Remaining human-review points
 
 1. Keep lexeme-level `*búdmaz` distinct from derivational `*búttmaz`.

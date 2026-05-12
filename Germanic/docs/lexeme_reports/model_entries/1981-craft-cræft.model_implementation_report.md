@@ -45,6 +45,13 @@ Checked against `docs/refs.bib`:
 - Existing local vision-backed reference files were sufficient.
 - No unresolved OCR or encoding issue was reproduced in final prose.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@Kroonen2013, 340]`, `[@Orel2003, 259]`, and `[@ClarkHall1960, 19]`.
+- Left `BosworthToller1898` broad in this pilot because the exact headword page
+  was not isolated confidently from the available local file.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.

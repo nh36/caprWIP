@@ -19,8 +19,9 @@ DERIVATION_CLASS: attested_variant
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the resin word as `*kwedu-2` and gives Old English
-variants `cwidu`, `cweodu`, and `c(w)udu` [@Kroonen2013]. Orel likewise lists
-`cwidu` under the cognate set [@Orel2003]. The selected input `*kwéðuz`
+variants `cwidu`, `cweodu`, and `c(w)udu` [@Kroonen2013, 355]. Orel likewise
+lists `cwidu` under the cognate set [@Orel2003, 266]. The selected input
+`*kwéðuz`
 therefore represents the older e-grade, voiced-dental form behind the chosen
 variant `cwedu`.
 
@@ -29,7 +30,8 @@ variant `cwedu`.
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss `cwidu > cwudu > cudu` and also
 note late West Saxon `cweodu`; Clark Hall gives `cwudu`, `cweodu`, and `cudu`
-[@RingeTaylor2014; @ClarkHall1960]. Attested `cwedu` is treated here as the
+[@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` is treated here
+as the
 conservative variant within that set.
 
 ### Development to Old English

@@ -52,6 +52,11 @@
   the paired model entry without changing the analysis, citations, selected
   input, target form, classification, or comparison tables.
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `RingeTaylor2014` (170),
+  `Campbell1959` (169), and `ClarkHall1960` (114).
+
 ## Remaining human-review points
 
 1. Keep the historical `*felþu- ~ *feldu-` ambiguity clearly subordinate to the stable attested target `feld`.

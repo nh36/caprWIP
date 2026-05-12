@@ -10,6 +10,13 @@ This ledger records the evidence used for the P3 pilot upgrade.
 | Kroonen; Orel | `*nēdrōn-`; `*nadra-`; OE `nǣdre, næddre` | Supply the comparative split between masculine `*nadra-` and feminine `*nēdrōn-`. | yes — `Kroonen2013`; `Orel2003` | local vision-backed comparative dictionary files; DEV_NOTES slice | high |
 | Clark Hall; Fulk | `nædre`; `næddre` | Show the OE form and the secondary doubled-consonant variant. | yes — `ClarkHall1960`; `Fulk2018` | local dictionary and grammar files | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 426),
+  `Orel2003` (p. 325), `ClarkHall1960` (p. 225), and `Fulk2018` (p. 149).
+- Updated the paired model entry to use page-specific Pandoc locators for those
+  source-specific claims.
+
 ## Notes
 
 - No row-local packet or research memo exists on disk for `1933`; the slice and pilot were the row-local project materials inspected.

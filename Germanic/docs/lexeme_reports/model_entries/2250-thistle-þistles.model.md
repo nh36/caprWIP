@@ -19,14 +19,14 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The comparative tradition is divided. Orel prints `*þe(x)stilaz`, while
-Kluge-Seebold gives `*þistila-` [@Orel2003; @KlugeSeebold2011]. The comparative
+Kluge-Seebold gives `*þistila-` [@Orel2003, 458; @KlugeSeebold2011]. The comparative
 label `*θéstilaz` therefore remains in view as the lexeme-level headword, while
 the selected input `*θístilas` is a specific genitive singular cell.
 
 ### Old English evidence
 
 The ordinary simplex headword tradition is broken `þistel` / `ðistel`. Clark
-Hall gives `ðistel` as the noun headword [@ClarkHall1960]. The selected target
+Hall gives `ðistel` as the noun headword [@ClarkHall1960, 326]. The selected target
 here is the genitive singular `þistles`, which preserves the same stem in an
 oblique form where the cluster is medial.
 
@@ -36,7 +36,7 @@ Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
 while comparable medial clusters remain unbroken; his examples include `hrefn`,
 `tacn`, `wépn`, and `botm` beside forms with parasitic vowels elsewhere in the
-same lexical class [@Campbell1959]. The selected genitive singular `*θístilas`
+same lexical class [@Campbell1959, 151]. The selected genitive singular `*θístilas`
 therefore supplies the conservative comparison form: the cluster is medial and
 the regular development yields `þistles`, while the simplex nominative belongs
 to the broken headword tradition `þistel`.

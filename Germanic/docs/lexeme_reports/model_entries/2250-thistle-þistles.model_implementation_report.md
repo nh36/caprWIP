@@ -50,6 +50,13 @@ Checked against `docs/refs.bib`:
 - The local Campbell file was rechecked for the suspicious `tdcn`; a clearer internal occurrence gives `tacn token`, so the final prose and ledger now use `tacn`.
 - No unresolved OCR or encoding issue was reproduced in final prose.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@Orel2003, 458]`, `[@ClarkHall1960, 326]`, and `[@Campbell1959, 151]`.
+- Left `KlugeSeebold2011` broad in this pilot because the local text file
+  preserves the `Distel` entry without a reliable nearby page marker.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.

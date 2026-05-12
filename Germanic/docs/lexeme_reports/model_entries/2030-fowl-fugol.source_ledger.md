@@ -12,3 +12,12 @@ book-style entry was drafted.
 | Ringe-Taylor | explicit example | `*fúglaz` cited as yielding regular `fogol` in the modeled pathway | regular comparative outcome | `fogol` vs `fugol` | Supplies a clear handbook baseline for the expected form. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `fugol`, `fugel` | OE noun | `fugol`; `fugel` | Confirms the attested OE target and its spelling variation. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | oblique-cell rescue attempts rejected; row retained as documented exception | no regular paradigm-cell solution | `fugol` | The decisive issue is unexplained `u` retention in the root vowel. | no | `Germanic/docs/lexeme_reports/research_memos/2030-fowl-fugol.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2030-fowl-fugol.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 197),
+  `Orel2003` (p. 155), and `ClarkHall1960` (p. 138).
+- `RingeTaylor2014`, `Campbell1959`, `BosworthToller1898`, and `Luick1914`
+  were checked but left broad in this pilot because the exact page-to-claim
+  mapping for the cited statements was not recovered with the same confidence
+  from the local files.

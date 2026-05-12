@@ -43,6 +43,11 @@
 | Avoids project-facing language after metadata | yes | The prose remains philological. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (426),
+  `Orel2003` (325), `ClarkHall1960` (225), and `Fulk2018` (149).
+
 ## Remaining human-review points
 
 1. Keep the feminine e-grade `*nēdrōn-` distinct from the masculine `*nadra-`.

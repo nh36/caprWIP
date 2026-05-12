@@ -44,6 +44,13 @@
 | Genre-polish correction applied | yes | Removed row-facing and live-comparator phrasing while keeping the form comparison unchanged. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (340),
+  `Orel2003` (259), and `ClarkHall1960` (19).
+- `BosworthToller1898` was checked but left broad because the exact headword
+  page was not isolated confidently from the available local file.
+
 ## Remaining human-review points
 
 1. Keep comparative stem-class disagreement distinct from the selected pre-OE modelling input.

@@ -11,3 +11,10 @@ This ledger records the compact evidence used for the regular-with-note entry.
 | Ringe & Taylor | comparative grammar | `feld`, early OE `-felth`, and `*felþu- ~ *feldu-` | ambiguity between inherited alternation and regular `*lþ > ld` | `feld`; `-felth` | Supplies the handbook statement behind the row note. | yes — `RingeTaylor2014` | `docs/references/ringe_taylor_linguistic_history_vol2.txt:9123-9125`; `Germanic/docs/lexeme_reports/research_memos/2009-field-feld.md:39-41,53-59` | medium — OCR line is noisy, so final prose paraphrases it |
 | Campbell | OE grammar | `feld`; early `-felth` spellings | attested OE noun with older dental spelling background | `feld`; `-felth` | Confirms the regular OE headword and the historical spelling evidence. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt:10981-10984`; `Germanic/docs/lexeme_reports/research_memos/2009-field-feld.md:41-42,61-68` | high |
 | Clark Hall and Bosworth-Toller | OE lexicographic evidence | `feld`; `felda`; `felde`; rare `felða` | attested headword plus oblique evidence | `feld`; `felda`; `felde`; `felða` | Confirms that the row targets the attested citation noun rather than a reconstructed pre-standard form. | yes — `ClarkHall1960`; `BosworthToller1898` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:14251-14254`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:14323-14324`; `Germanic/docs/lexeme_reports/research_memos/2009-field-feld.md:41-42,63-67` | high |
+
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `RingeTaylor2014`
+  (p. 170), `Campbell1959` (p. 169), and `ClarkHall1960` (p. 114).
+- Updated the paired model entry to use page-specific Pandoc locators for the
+  Ringe-Taylor, Campbell, and Clark Hall claims.

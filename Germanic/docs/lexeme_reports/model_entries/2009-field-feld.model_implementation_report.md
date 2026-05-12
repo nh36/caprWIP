@@ -56,6 +56,12 @@ Checked against `docs/refs.bib`:
 - Campbell and Clark Hall were legible in the local files.
 - No Google Vision fallback beyond the ordinary local reference files was needed.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@RingeTaylor2014, 170]`, `[@Campbell1959, 169]`, and
+  `[@ClarkHall1960, 114]`.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.

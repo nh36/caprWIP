@@ -44,6 +44,12 @@ Checked against `docs/refs.bib`:
 - Existing local vision-backed reference files were sufficient.
 - No unresolved OCR or encoding issue was reproduced in final prose.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@Kroonen2013, 426]`, `[@Orel2003, 325]`, and
+  `[@ClarkHall1960, 225; @Fulk2018, 149]`.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.

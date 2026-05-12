@@ -51,6 +51,14 @@ Checked against `docs/refs.bib`:
 - The verbal `bēag` must remain clearly distinguished from the noun `bēag` in
   any later editorial pass.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@RingeTaylor2014, 55]` and `[@ClarkHall1960, 45]`.
+- Left `Campbell1959` and `BosworthToller1898` broad in this pilot because the
+  exact page-to-claim mapping for the cited statements was not confirmed from
+  the available local files.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

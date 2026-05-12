@@ -53,6 +53,14 @@ Checked against `docs/refs.bib`:
 - This entry should remain a cautionary model for how to document an exception,
   not for how to regularize one.
 
+## Citation-locator pilot 01
+
+- Added page-specific Pandoc locators to the paired model entry for
+  `[@Kroonen2013, 197]`, `[@Orel2003, 155]`, and `[@ClarkHall1960, 138]`.
+- Left `RingeTaylor2014`, `Campbell1959`, `BosworthToller1898`, and `Luick1914`
+  broad in this pilot because the exact page-to-claim mapping was not recovered
+  with enough confidence from the local files.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

@@ -18,12 +18,12 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor treat Old English `feld` as one of the cases where earlier `*felþu- ~ *feldu-` may reflect either inherited `*þ ~ *d` alternation or the regular West Germanic development `*lþ > ld` [@RingeTaylor2014]. The broader proto label `*félθuz` can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
+Ringe and Taylor treat Old English `feld` as one of the cases where earlier `*felþu- ~ *feldu-` may reflect either inherited `*þ ~ *d` alternation or the regular West Germanic development `*lþ > ld` [@RingeTaylor2014, 170]. The broader proto label `*félθuz` can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
 
 ### Old English evidence
 
-Clark Hall records `feld` with oblique forms such as `felda` and `felde`, and Campbell notes early place-name spellings in `-felth` beside the later standard form [@ClarkHall1960; @Campbell1959]. The selected target is therefore the attested citation noun `feld`, with the older `-felth` spellings as historical support rather than as rival targets.
+Clark Hall records `feld` with oblique forms such as `felda` and `felde`, and Campbell notes early place-name spellings in `-felth` beside the later standard form [@ClarkHall1960, 114; @Campbell1959, 169]. The selected target is therefore the attested citation noun `feld`, with the older `-felth` spellings as historical support rather than as rival targets.
 
 ### Development to Old English
 
-In the modeled pathway, medial `*lþ` becomes `ld`, final `-z` is lost, and high-vowel apocope then yields `feld`. Whether the voiced dental ultimately reflects inherited alternation or the regular `*lþ > ld` development, both accounts converge on the same Old English form [@RingeTaylor2014].
+In the modeled pathway, medial `*lþ` becomes `ld`, final `-z` is lost, and high-vowel apocope then yields `feld`. Whether the voiced dental ultimately reflects inherited alternation or the regular `*lþ > ld` development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].

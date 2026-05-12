@@ -20,19 +20,20 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs the word as a stem complex `*budmō, gen. *buttaz`,
 summarized as `*budman- ~ *buttman-`, and gives Old English `botm` as the reflex
-[@Kroonen2013]. The comparative label `*búdmaz` names the lexeme-level stem
+[@Kroonen2013, 120]. The comparative label `*búdmaz` names the lexeme-level stem
 complex, while the selected input `*búttmaz` represents the pre-Old-English
 form with oblique `*butt-` generalized into the nominative formation.
 
 Orel likewise preserves both sides of the comparison under `*budmaz *butmaz`
-[@Orel2003]. The selected input is thus a historical stem choice, not an
+[@Orel2003, 100]. The selected input is thus a historical stem choice, not an
 arbitrary respelling.
 
 ### Old English evidence
 
-The Old English noun itself is secure. Clark Hall gives `botm`, and
-Bosworth-Toller cross-references `bodan` to `botm`, showing the wider reflex
-family without weakening the attested lemma [@ClarkHall1960; @BosworthToller1898].
+The Old English noun itself is secure. Clark Hall gives `botm`
+[@ClarkHall1960, 63]. Bosworth-Toller cross-references `bodan` to `botm`,
+showing the wider reflex family without weakening the attested lemma
+[@BosworthToller1898, 112].
 
 ### Development to Old English
 

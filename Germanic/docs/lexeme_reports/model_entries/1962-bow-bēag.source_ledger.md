@@ -12,3 +12,11 @@ book-style entry was drafted.
 | Bosworth-Toller | OE dictionary evidence | preterite `bēag` under `būgan` | strong-verb paradigm evidence | `bēag`; `būgan` | Confirms that `bēag` is an attested verbal form rather than a reconstruction. | yes — `BosworthToller1898` | cited in packet/memo/slice | high |
 | Clark Hall | OE dictionary evidence | `būgan` with preterite `bēag` | strong-verb paradigm evidence | `bēag`; `būgan` | Reinforces the verbal interpretation of the OE form. | yes — `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | selected preterite `*báug` preferred over plural preterite and participial alternatives | paradigm-cell choice | `bēag` | The decisive issue is paradigm-cell matching, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/1962-bow-bēag.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/1962-bow-bēag.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `RingeTaylor2014`
+  (p. 55) and `ClarkHall1960` (p. 45).
+- `Campbell1959` and `BosworthToller1898` were checked but left broad in this
+  pilot because the exact page-to-claim mapping for the cited strong-verb and
+  preterite statements was not confirmed from the available local files.

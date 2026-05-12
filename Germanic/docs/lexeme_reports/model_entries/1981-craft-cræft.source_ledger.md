@@ -9,6 +9,13 @@ This ledger records the evidence used for the P3 pilot upgrade.
 | Kroonen; Orel | `*kraftu-`; `*kraftiz *kraftuz`; OE `cræft` / `craft` | Supply the comparative stem-class disagreement behind the row. | yes — `Kroonen2013`; `Orel2003` | local vision-backed comparative dictionary files; memo | high |
 | Clark Hall; Bosworth-Toller | `cræft` | Confirm the attested OE headword. | yes — `ClarkHall1960`; `BosworthToller1898` | local dictionary files; memo | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 340),
+  `Orel2003` (p. 259), and `ClarkHall1960` (p. 19).
+- `BosworthToller1898` was checked but left broad in this pilot because the exact
+  headword page was not isolated confidently from the available local file.
+
 ## Notes
 
 - The row-local evidence is strong enough to keep `PROTO` as comparative background while presenting `PROTOFORM = *kráftaz` as the selected pre-OE input.

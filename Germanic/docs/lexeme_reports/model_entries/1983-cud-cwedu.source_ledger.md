@@ -10,6 +10,14 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 | Ringe and Taylor | `cwidu`; `cwudu`; `cudu`; `cweodu`; `cwidwes` | Supplies the variant chain and u-stem support. | yes — `RingeTaylor2014` | local grammar file; memo | high |
 | Clark Hall | `cwudu`; `cweodu`; `cudu` | Confirms the Old English lexical family in dictionary form. | yes — `ClarkHall1960` | local dictionary file; memo | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 355),
+  `Orel2003` (p. 266), `RingeTaylor2014` (p. 338), and `ClarkHall1960`
+  (p. 84).
+- Updated the paired model entry to use page-specific Pandoc locators for those
+  source-specific claims.
+
 ## Notes
 
 - The live TSV `PROTO` field is stale (`*kwíθuz`) relative to the current analysis, but the user explicitly asked for review-or-upgrade work without TSV edits; the stale metadata is therefore recorded here and in the implementation report, not corrected in this pass.

@@ -12,6 +12,14 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 | Clark Hall | `ðistel` | Confirms the simplex Old English headword tradition. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt` | high |
 | Campbell | `hrefn`, `tacn`, `wépn`, `botm`; parasite-vowel discussion | Supplies the phonological contrast between broken simplex forms and unbroken cluster forms in comparable nouns. | yes — `Campbell1959` | `docs/references/campbell_old_english_grammar.txt`; memo | high; local file prints `tdcn` once at line 9975, but gives `tacn token` clearly at line 14506 and cross-references `tdcn` as the same word |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Orel2003` (p. 458),
+  `ClarkHall1960` (p. 326), and `Campbell1959` (p. 151).
+- `KlugeSeebold2011` was checked, but the local text file preserves the `Distel`
+  entry without a reliable nearby page marker, so the model entry keeps that
+  citation broad in this pilot.
+
 ## Notes
 
 - The local reference files checked here support simplex `þistel/ðistel` more directly than the exact gen.sg. `þistles`; the exact inflected target is better documented in the row-local memo, packet, and DEV_NOTES material than in the compact dictionaries.

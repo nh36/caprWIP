@@ -52,6 +52,14 @@
   the paired model entry without changing the analysis, citations, selected
   input, target form, classification, or comparison tables.
 
+## Citation-locator note
+
+- Pilot 01 added page-specific locators for `Kroonen2013` (197),
+  `Orel2003` (155), and `ClarkHall1960` (138).
+- `RingeTaylor2014`, `Campbell1959`, `BosworthToller1898`, and `Luick1914`
+  were checked but left broad because the exact page-to-claim mapping was not
+  recovered with enough confidence from the local files in this pass.
+
 ## Remaining human-review points
 
 1. This entry should not be treated as a scaling model for phonological repair,

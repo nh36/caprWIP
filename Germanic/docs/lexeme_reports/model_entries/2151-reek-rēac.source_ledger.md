@@ -9,6 +9,14 @@ This ledger records the evidence used for the P3 pilot upgrade.
 | Kroonen; Orel | `*rauki-`; `*raukiz`; OE `rēc` | Supply the comparative noun family and the attested OE headword. | yes — `Kroonen2013`; `Orel2003` | local vision-backed comparative dictionary files; memo | high |
 | Clark Hall; Seebold | `rēc`; `rēac` (verb preterite); `rēocan` | Confirm the attested noun `rēc` and keep attested verbal `rēac` distinct from the reconstructed noun target. | yes — `ClarkHall1960`; `Seebold1970` | local dictionary and comparative files; memo | high |
 
+## Citation-locator pilot 01 note
+
+- Verified page locators in the local reference files for `Kroonen2013` (p. 446),
+  `Orel2003` (p. 338), `ClarkHall1960` (pp. 254-255), and `Seebold1970`
+  (p. 380).
+- Updated the paired model entry to use page-specific Pandoc locators for those
+  source-specific claims.
+
 ## Notes
 
 - The final entry explicitly marks `rēac` as reconstructed rather than attested.
