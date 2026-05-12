@@ -22,6 +22,7 @@ from pathlib import Path
 repo_root = Path(sys.argv[1])
 manifest_path = Path(sys.argv[2])
 output_path = Path(sys.argv[3])
+trace_report_path = repo_root / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
 
 
 def normalize_headings(text: str) -> str:
@@ -45,40 +46,254 @@ def normalize_headings(text: str) -> str:
     return "\n".join(lines).strip()
 
 
-def rewrite_entry(text: str) -> str:
-    lines = normalize_headings(text).splitlines()
+def parse_trace_entries(text: str) -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    chunks: list[list[str]] = []
+    current: list[str] = []
+
+    for line in text.splitlines():
+        if line.startswith("# "):
+            if current:
+                chunks.append(current)
+            current = [line]
+        elif current:
+            current.append(line)
+    if current:
+        chunks.append(current)
+
+    for chunk in chunks:
+        block = "\n".join(chunk).strip()
+        lines = block.splitlines()
+        table_lines: list[str] = []
+        in_table = False
+        for line in lines:
+            if line.startswith("| Earlier Germanic developments | Old English developments |"):
+                in_table = True
+            if in_table and line.startswith("|"):
+                table_lines.append(line)
+                continue
+            if in_table and not line.startswith("|"):
+                break
+
+        entries.append(
+            {
+                "title": lines[0][2:].strip(),
+                "proto": re.search(r"^PROTO:\s*(.*)$", block, re.M).group(1).strip(),
+                "expected": re.search(r"^EXPECTED:\s*(.*)$", block, re.M).group(1).strip(),
+                "outputs": re.search(r"^OUTPUTS:\s*(.*)$", block, re.M).group(1).strip(),
+                "proto_input": re.search(r"^Proto Input:\s*(.*)$", block, re.M).group(1).strip(),
+                "outcome": re.search(r"^Outcome:\s*(.*)$", block, re.M).group(1).strip(),
+                "table": "\n".join(table_lines).strip(),
+            }
+        )
+
+    return entries
+
+
+def italicize_form(text: str) -> str:
+    escaped = text.replace("\\", "\\\\").replace("*", r"\*").replace("|", r"\|")
+    return f"_{escaped}_"
+
+
+def escape_proto_stars(text: str) -> str:
+    return re.sub(r"(?<!\*)\*(?!\*)", r"\\*", text)
+
+
+def keep_as_code(text: str) -> bool:
+    return bool(
+        re.search(r"(?:\.md\b|\.txt\b|\.pdf\b|\.py\b|\.sh\b|\.tsv\b|^@|^https?://|docs/|Germanic/|--\w)", text)
+    )
+
+
+def convert_inline_code(text: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        return match.group(0) if keep_as_code(inner) else italicize_form(inner)
+
+    return re.sub(r"`([^`]+)`", repl, text)
+
+
+def demote_bold_forms(text: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        if "\n" in inner:
+            return match.group(0)
+        if len(inner.split()) <= 3 and not re.search(r"[.!?;:]", inner):
+            return inner if "`" in inner else italicize_form(inner)
+        return inner
+
+    return re.sub(r"\*\*([^*]+)\*\*", repl, text)
+
+
+def tidy_prose(text: str) -> str:
+    return convert_inline_code(demote_bold_forms(text))
+
+
+def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
+    table_lines = trace_entry["table"].splitlines()
+    if len(table_lines) < 3:
+        return [trace_entry["table"]]
+
+    row_parts = [part.strip() for part in table_lines[2].strip().strip("|").split("|")]
+    if len(row_parts) < 2:
+        return [trace_entry["table"]]
+
+    def render_cell(cell: str) -> str:
+        pieces = [piece.strip() for piece in re.split(r"<br\s*/?>", cell) if piece.strip()]
+        rendered: list[str] = []
+        i = 0
+        while i < len(pieces):
+            piece = escape_proto_stars(pieces[i])
+            if re.fullmatch(r"\*\*[^*]+\*\*", piece):
+                if i + 1 < len(pieces) and not re.fullmatch(r"\*\*[^*]+\*\*", pieces[i + 1].strip()):
+                    rendered.append(f"{piece}: {escape_proto_stars(pieces[i + 1].strip())}")
+                    i += 2
+                    continue
+            rendered.append(piece)
+            i += 1
+        return " ; ".join(rendered).replace("|", r"\|")
+
+    return [
+        "| Earlier Germanic developments | Old English developments |",
+        "| :--- | :--- |",
+        f"| {render_cell(row_parts[0])} | {render_cell(row_parts[1])} |",
+    ]
+
+
+def parse_model_entry(path: Path) -> dict[str, object]:
+    lines = normalize_headings(path.read_text(encoding="utf-8")).splitlines()
     if not lines:
-        return ""
+        raise ValueError(f"empty model entry: {path}")
 
-    out: list[str] = [lines[0]]
+    title = lines[0].strip()
     i = 1
-
     while i < len(lines) and lines[i].strip() == "":
         i += 1
 
-    metadata_rows: list[tuple[str, str]] = []
+    metadata: dict[str, str] = {}
     while i < len(lines):
-        line = lines[i]
-        match = re.match(r"^([A-Z_]+):\s*(.*)$", line)
+        match = re.match(r"^([A-Z_]+):\s*(.*)$", lines[i])
         if not match:
             break
-        metadata_rows.append((match.group(1), match.group(2)))
+        metadata[match.group(1)] = match.group(2).strip()
         i += 1
 
-    if metadata_rows:
+    sections: list[tuple[str, str]] = []
+    current_heading: str | None = None
+    current_lines: list[str] = []
+    for line in lines[i:]:
+        if line.startswith("### "):
+            if current_heading is not None:
+                sections.append((current_heading, "\n".join(current_lines).strip()))
+            current_heading = line.strip()
+            current_lines = []
+        else:
+            current_lines.append(line)
+    if current_heading is not None:
+        sections.append((current_heading, "\n".join(current_lines).strip()))
+
+    lexical_item = title.removeprefix("## ").split(" — OE ", 1)[0].strip()
+    return {
+        "title": title,
+        "lexical_item": lexical_item,
+        "metadata": metadata,
+        "sections": sections,
+    }
+
+
+def match_trace_entry(model: dict[str, object], trace_entries: list[dict[str, str]]) -> tuple[dict[str, str] | None, str, bool]:
+    metadata = model["metadata"]
+    lexical_item = model["lexical_item"]
+    proto = metadata.get("PROTO", "")
+    protoform = metadata.get("PROTOFORM", "")
+    counterpart = metadata.get("COUNTERPART", "")
+
+    candidates = [entry for entry in trace_entries if entry["title"] == lexical_item]
+    scored: list[tuple[int, dict[str, str], list[str]]] = []
+    for entry in candidates:
+        score = 0
+        basis: list[str] = ["lexical item"]
+        if entry["proto"] == protoform:
+            score += 10
+            basis.append("PROTOFORM")
+        if entry["proto"] == proto and proto:
+            score += 4
+            basis.append("PROTO")
+        if entry["expected"] == counterpart and counterpart:
+            score += 6
+            basis.append("EXPECTED")
+        if entry["outputs"] == counterpart and counterpart:
+            score += 6
+            basis.append("OUTPUTS")
+        scored.append((score, entry, basis))
+
+    if not scored:
+        return None, "no lexical-item match", False
+
+    scored.sort(key=lambda item: item[0], reverse=True)
+    top_score, top_entry, basis = scored[0]
+    confident = top_score >= 16 and (len(scored) == 1 or top_score > scored[1][0])
+    return top_entry, " + ".join(basis), confident
+
+
+def metadata_table(model: dict[str, object], trace_entry: dict[str, str] | None) -> list[str]:
+    metadata = model["metadata"]
+    output_value = ""
+    if trace_entry is not None:
+        output_value = f"{trace_entry['proto_input']} -> {trace_entry['outputs']}"
+
+    rows = [
+        ("lexical item", model["lexical_item"]),
+        ("citation reconstruction", metadata.get("PROTO", "")),
+        ("selected transducer input", metadata.get("PROTOFORM", "")),
+        ("Old English target", metadata.get("COUNTERPART", "")),
+        ("derivation class", metadata.get("DERIVATION_CLASS", "")),
+    ]
+    if output_value:
+        rows.append(("transducer output", output_value))
+
+    rendered = [
+        "| Item | Value |",
+        "| :--- | :--- |",
+    ]
+    for key, value in rows:
+        if key in {"lexical item", "derivation class"}:
+            rendered.append(f"| {key} | {value.replace('|', r'\\|')} |")
+        else:
+            rendered.append(f"| {key} | {italicize_form(value)} |")
+    return rendered
+
+
+def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
+    out: list[str] = [model["title"], ""]
+    out.extend(metadata_table(model, trace_entry))
+
+    if trace_entry is not None:
         out.extend(
             [
                 "",
-                "| Field | Value |",
-                "| :--- | :--- |",
+                "### Derivation trace",
+                "",
+                f"Proto input: {italicize_form(trace_entry['proto_input'])}",
+                "",
+                *render_trace_table(trace_entry),
+                "",
             ]
         )
-        for field, value in metadata_rows:
-            out.append(f"| {field} | {value} |")
+        if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
+            out.append(f"Outcome: {italicize_form(trace_entry['outcome'])}")
+        else:
+            out.append(f"Transducer outcome: {italicize_form(trace_entry['outcome'])}")
+            out.append("")
+            out.append(f"Selected target: {italicize_form(model['metadata'].get('COUNTERPART', ''))}")
 
-    remaining = "\n".join(lines[i:]).strip()
-    if remaining:
-        out.extend(["", remaining])
+    for heading, body in model["sections"]:
+        if heading == "### Transducer input and output":
+            continue
+        cleaned_body = tidy_prose(body)
+        out.extend(["", heading, ""])
+        if cleaned_body:
+            out.append(cleaned_body)
 
     return "\n".join(out).strip()
 
@@ -88,16 +303,27 @@ with manifest_path.open(encoding="utf-8", newline="") as handle:
     reader = csv.DictReader(handle, delimiter="\t")
     rows = list(reader)
 
+trace_entries = parse_trace_entries(trace_report_path.read_text(encoding="utf-8"))
+
 parts = [
-    "This pilot assembles a small representative subset of the current Germanic model entries for publication-format testing. It preserves entry prose, Pandoc citations, and tables from the source `.model.md` files while normalizing heading levels only in this assembled copy.",
+    "This pilot assembles a small representative subset of the current Germanic model entries for publication-format testing. Each entry combines the compact transducer trace with the current lexeme-report prose, while leaving the source `.model.md` files unchanged.",
     "",
-    "The included entries are listed in `pilot_manifest.tsv` and appear here in stable manifest order. Implementation reports, reviewer checklists, source ledgers, packets, and research notes are intentionally excluded from the assembled body.",
+    "The included entries are listed in `pilot_manifest.tsv` and appear here in stable manifest order. Compact trace blocks come from `oe_derivation_class_trace_report.compact.md`; philological and literature discussion comes from the current model-entry prose. Implementation reports, reviewer checklists, source ledgers, packets, and research notes are intentionally excluded from the assembled body.",
 ]
 
 for row in rows:
     entry_path = repo_root / row["entry_path"]
-    entry_text = entry_path.read_text(encoding="utf-8")
-    parts.extend(["", rewrite_entry(entry_text)])
+    model = parse_model_entry(entry_path)
+    trace_entry, basis, confident = match_trace_entry(model, trace_entries)
+    if trace_entry is None or not confident:
+        print(f"WARNING: trace match unresolved for {entry_path.name} ({basis})", file=sys.stderr)
+        trace_entry = None
+    else:
+        print(
+            f"Matched {entry_path.name} -> {trace_entry['title']} / {trace_entry['proto']} / {trace_entry['outputs']} ({basis})",
+            file=sys.stderr,
+        )
+    parts.extend(["", rewrite_entry(model, trace_entry)])
 
 output_path.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
 print(f"Generated {output_path}")
