@@ -6,6 +6,7 @@ repo_root="$(cd -- "${script_dir}/../../.." && pwd)"
 image="${ASSEMBLY_DOCKER_IMAGE:-pandoc/latex:latest}"
 platform="${ASSEMBLY_DOCKER_PLATFORM:-linux/amd64}"
 font_package="${ASSEMBLY_DOCKER_FONT_PACKAGE:-font-noto}"
+build_log="${script_dir}/lexical_volume_alpha_01_build.log"
 
 cd "${repo_root}"
 
@@ -41,7 +42,8 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --citeproc \
       --pdf-engine=xelatex \
       -o Germanic/docs/assembly/lexical_volume_alpha_01.pdf
-  "
+  " 2>&1 | tee "${build_log}"
 
 echo "Generated ${script_dir}/lexical_volume_alpha_01.tex"
 echo "Generated ${script_dir}/lexical_volume_alpha_01.pdf"
+echo "Generated ${build_log}"

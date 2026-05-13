@@ -36,6 +36,9 @@ STAGE_LABELS = {
     "Northwest Germanic",
 }
 INLINE_SEPARATOR_CHARS = ">,~/;:"
+LONG_TRACE_FORM_LENGTH = 9
+VERY_LONG_TRACE_FORM_LENGTH = 10
+DENSE_TRACE_PANEL_ROWS = 6
 LONG_TRACE_LABELS = {
     "OE High Vowel Apocope",
     "OE Unstressed Long Vowel Shortening",
@@ -416,9 +419,13 @@ def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> d
     total_change_length = 0
     max_change_length = 0
     long_label_count = 0
+    form_count = 0
+    total_form_length = 0
+    max_form_length = 0
+    long_form_count = 0
 
     for _, items in stage_blocks:
-        for change, _ in items:
+        for change, form in items:
             if change == "[no change]":
                 continue
             row_count += 1
@@ -427,12 +434,23 @@ def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> d
             max_change_length = max(max_change_length, change_length)
             if change in LONG_TRACE_LABELS:
                 long_label_count += 1
+            if form:
+                form_count += 1
+                form_length = len(form)
+                total_form_length += form_length
+                max_form_length = max(max_form_length, form_length)
+                if form_length >= LONG_TRACE_FORM_LENGTH:
+                    long_form_count += 1
 
     return {
         "rows": row_count,
         "total_change_length": total_change_length,
         "max_change_length": max_change_length,
         "long_label_count": long_label_count,
+        "form_count": form_count,
+        "total_form_length": total_form_length,
+        "max_form_length": max_form_length,
+        "long_form_count": long_form_count,
     }
 
 
@@ -443,33 +461,97 @@ def choose_trace_widths(
     left = panel_complexity(left_blocks)
     right = panel_complexity(right_blocks)
 
+    if (
+        left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+        and right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+    ):
+        return 0.47, 0.47
     if left["long_label_count"] > 0 and right["long_label_count"] > 0:
         return 0.46, 0.46
-    if left["rows"] <= 1 and (right["long_label_count"] > 0 or right["max_change_length"] >= 24):
-        return 0.32, 0.50
-    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 30:
-        return 0.34, 0.48
-    if right["rows"] <= 1 and (left["long_label_count"] > 0 or left["max_change_length"] >= 24):
-        return 0.50, 0.32
-    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 30:
-        return 0.48, 0.34
+    if left["rows"] <= 1 and (
+        right["long_label_count"] > 0
+        or right["max_change_length"] >= 24
+        or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+    ):
+        if right["rows"] >= DENSE_TRACE_PANEL_ROWS or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
+            return 0.28, 0.56
+        return 0.30, 0.54
+    if left["rows"] <= 2 and (
+        right["total_change_length"] >= left["total_change_length"] + 30
+        or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+    ):
+        return 0.32, 0.52
+    if right["rows"] <= 1 and (
+        left["long_label_count"] > 0
+        or left["max_change_length"] >= 24
+        or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+    ):
+        if left["rows"] >= DENSE_TRACE_PANEL_ROWS or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
+            return 0.56, 0.28
+        return 0.54, 0.30
+    if right["rows"] <= 2 and (
+        left["total_change_length"] >= right["total_change_length"] + 30
+        or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
+    ):
+        return 0.52, 0.32
     return 0.44, 0.44
 
 
 def choose_panel_column_widths(panel_width: float, stats: dict[str, int]) -> tuple[float, float]:
+    usable_width = 0.90
+    min_label_width = 0.56 if panel_width > 0.36 else 0.52
+
     if stats["rows"] == 0:
         return 0.68, 0.18
+
+    form_width = 0.16
+    if stats["max_form_length"] >= 11:
+        form_width = 0.26
+    elif stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
+        form_width = 0.24
+    elif stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
+        form_width = 0.22
+    elif stats["max_form_length"] >= 8:
+        form_width = 0.20
+
+    if stats["rows"] >= DENSE_TRACE_PANEL_ROWS and stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
+        form_width = min(form_width + 0.02, 0.28)
+    elif stats["rows"] >= 4 and stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
+        form_width = min(form_width + 0.02, 0.28)
+
+    desired_label_width = 0.68
     if stats["long_label_count"] > 0:
-        if stats["max_change_length"] >= 30:
-            return 0.78, 0.14
-        return 0.76, 0.16
-    if stats["max_change_length"] >= 28:
-        return 0.76, 0.16
-    if stats["max_change_length"] >= 22:
-        return 0.72, 0.18
-    if panel_width <= 0.36 and stats["rows"] <= 1:
-        return 0.64, 0.18
-    return 0.68, 0.20
+        desired_label_width = 0.76 if stats["max_change_length"] >= 30 else 0.74
+    elif stats["max_change_length"] >= 28:
+        desired_label_width = 0.74
+    elif stats["max_change_length"] >= 22:
+        desired_label_width = 0.70
+    elif panel_width <= 0.36 and stats["rows"] <= 1:
+        desired_label_width = 0.64
+
+    if stats["long_form_count"] > 0:
+        desired_label_width -= 0.04
+    if stats["rows"] >= DENSE_TRACE_PANEL_ROWS and stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
+        desired_label_width -= 0.06
+    elif stats["rows"] >= 4 and stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
+        desired_label_width -= 0.04
+
+    label_width = min(desired_label_width, usable_width - form_width)
+    label_width = max(min_label_width, label_width)
+    if label_width + form_width > usable_width:
+        label_width = usable_width - form_width
+
+    return label_width, form_width
+
+
+def dense_long_form_panel(stats: dict[str, int]) -> bool:
+    return stats["rows"] >= DENSE_TRACE_PANEL_ROWS and stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH
+
+
+def choose_trace_font_size(left_stats: dict[str, int], right_stats: dict[str, int]) -> str:
+    if dense_long_form_panel(left_stats) or dense_long_form_panel(right_stats):
+        return r"\footnotesize"
+    return r"\small"
 
 
 def format_trace_change_label(change: str) -> str:
@@ -511,7 +593,7 @@ def render_trace_panel(
             continue
 
         lines.append(
-            rf"\begin{{tabular}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{label_column_width:.2f}\linewidth}}@{{\hspace{{0.65em}}}}>{{\raggedleft\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{}}}}"
+            rf"\begin{{tabular}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{label_column_width:.2f}\linewidth}}@{{\hspace{{0.55em}}}}>{{\raggedright\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{\hspace{{0.25em}}}}}}"
         )
         for change, form in items:
             if change == "[no change]" and not form:
@@ -541,6 +623,7 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     right_stats = panel_complexity(right_blocks)
     left_label_width, left_form_width = choose_panel_column_widths(left_width, left_stats)
     right_label_width, right_form_width = choose_panel_column_widths(right_width, right_stats)
+    trace_font_size = choose_trace_font_size(left_stats, right_stats)
     left_panel = render_trace_panel(
         left_blocks,
         label_column_width=left_label_width,
@@ -558,7 +641,7 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         r"\setlength{\fboxsep}{6pt}",
         r"\noindent\fbox{%",
         r"\begin{minipage}{0.97\linewidth}",
-        r"\small",
+        trace_font_size,
         rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{left_width:.3f}\linewidth}}>{{\centering\arraybackslash}}X>{{\raggedright\arraybackslash}}p{{{right_width:.3f}\linewidth}}@{{}}}}",
         r"\begin{minipage}[t]{\linewidth}",
         r"\centering\textbf{Earlier Germanic changes}\par",
