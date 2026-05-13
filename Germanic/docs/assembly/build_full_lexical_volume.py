@@ -18,6 +18,24 @@ INLINE_CODE_RE = re.compile(r"`([^`]+)`")
 BOLD_SPAN_RE = re.compile(r"\*\*(.+?)\*\*")
 ITALIC_SPAN_RE = re.compile(r"_(?:\\.|[^_\n])+_")
 FORM_CONNECTOR_WORDS = {"and", "or", "written", "spelled", "vs", "with", "plus"}
+INLINE_CONNECTOR_WORDS = FORM_CONNECTOR_WORDS | {"from", "to", "through", "beside", "via"}
+STAGE_LABELS = {
+    "PGmc",
+    "PWGmc",
+    "PNWGmc",
+    "NWGmc",
+    "WGmc",
+    "OE",
+    "WS",
+    "LWS",
+    "Anglian",
+    "West Saxon",
+    "Old English",
+    "Proto-Germanic",
+    "West Germanic",
+    "Northwest Germanic",
+}
+INLINE_SEPARATOR_CHARS = ">,~/;:"
 LONG_TRACE_LABELS = {
     "OE High Vowel Apocope",
     "OE Unstressed Long Vowel Shortening",
@@ -25,6 +43,8 @@ LONG_TRACE_LABELS = {
     "NWGmc Final Long O Raising",
     "NWGmc Long E Lowering",
     "NWGmc Stressed Monosyllable O Raising",
+    "PGmc Final Z Deletion",
+    "NWGmc U Lowering",
 }
 
 SECTION_ORDER = [
@@ -104,10 +124,108 @@ def normalize_inline_code_content(text: str) -> str:
     return re.sub(r"\s*\n\s*", " ", text).strip()
 
 
+def is_token_boundary(text: str, index: int) -> bool:
+    return index >= len(text) or text[index].isspace() or text[index] in INLINE_SEPARATOR_CHARS
+
+
+def tokenize_linguistic_span(text: str) -> list[tuple[str, str]]:
+    tokens: list[tuple[str, str]] = []
+    labels = sorted(STAGE_LABELS, key=len, reverse=True)
+    i = 0
+
+    while i < len(text):
+        if text[i].isspace():
+            j = i
+            while j < len(text) and text[j].isspace():
+                j += 1
+            tokens.append(("sep", text[i:j]))
+            i = j
+            continue
+
+        matched_label = None
+        for label in labels:
+            if text.startswith(label, i) and is_token_boundary(text, i + len(label)):
+                matched_label = label
+                break
+        if matched_label is not None:
+            tokens.append(("label", matched_label))
+            i += len(matched_label)
+            continue
+
+        if text[i] in INLINE_SEPARATOR_CHARS:
+            j = i
+            while j < len(text) and text[j] in INLINE_SEPARATOR_CHARS:
+                j += 1
+            tokens.append(("sep", text[i:j]))
+            i = j
+            continue
+
+        j = i
+        while j < len(text) and not text[j].isspace() and text[j] not in INLINE_SEPARATOR_CHARS:
+            j += 1
+        tokens.append(("word", text[i:j]))
+        i = j
+
+    return tokens
+
+
+def next_meaningful_token(tokens: list[tuple[str, str]], start: int) -> tuple[str, str] | None:
+    for token in tokens[start:]:
+        if token[0] != "sep":
+            return token
+    return None
+
+
+def is_form_token(token: str, previous: tuple[str, str] | None, following: tuple[str, str] | None) -> bool:
+    if token in STAGE_LABELS:
+        return False
+    if token.lower() in INLINE_CONNECTOR_WORDS:
+        return False
+    if token.startswith("*"):
+        return True
+    if re.search(r"[ǣæþðġċĀāĒēĪīŌōŪūȲȳÁÉÍÓÚáéíóúḗǭĕăβʤ]", token):
+        return True
+    if re.fullmatch(r"[a-z]+(?:[-'][a-z]+)*", token):
+        if previous is not None and previous[0] == "label":
+            return True
+        if previous is not None and previous[1] in {">", "~", "/"}:
+            return True
+        if following is not None and following[1] in {">", "~", "/"}:
+            return True
+    return False
+
+
+def format_linguistic_inline_code(text: str) -> str:
+    tokens = tokenize_linguistic_span(text)
+    rendered: list[str] = []
+    saw_form = False
+
+    for index, token in enumerate(tokens):
+        kind, value = token
+        if kind == "sep":
+            rendered.append(value)
+            continue
+        if kind == "label":
+            rendered.append(value)
+            continue
+
+        previous = next((tokens[j] for j in range(index - 1, -1, -1) if tokens[j][0] != "sep"), None)
+        following = next_meaningful_token(tokens, index + 1)
+        if is_form_token(value, previous, following):
+            rendered.append(italicize_form(value))
+            saw_form = True
+        else:
+            rendered.append(value)
+
+    if not saw_form:
+        return italicize_form(text)
+    return "".join(rendered)
+
+
 def convert_inline_code(text: str) -> str:
     def repl(match: re.Match[str]) -> str:
         inner = normalize_inline_code_content(match.group(1))
-        return match.group(0) if keep_as_code(inner) else italicize_form(inner)
+        return match.group(0) if keep_as_code(inner) else format_linguistic_inline_code(inner)
 
     return INLINE_CODE_RE.sub(repl, text)
 
@@ -325,29 +443,40 @@ def choose_trace_widths(
     left = panel_complexity(left_blocks)
     right = panel_complexity(right_blocks)
 
+    if left["long_label_count"] > 0 and right["long_label_count"] > 0:
+        return 0.46, 0.46
     if left["rows"] <= 1 and (right["long_label_count"] > 0 or right["max_change_length"] >= 24):
-        return 0.30, 0.50
-    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 36:
-        return 0.32, 0.48
+        return 0.32, 0.50
+    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 30:
+        return 0.34, 0.48
     if right["rows"] <= 1 and (left["long_label_count"] > 0 or left["max_change_length"] >= 24):
-        return 0.50, 0.30
-    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 36:
-        return 0.48, 0.32
-    return 0.41, 0.41
+        return 0.50, 0.32
+    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 30:
+        return 0.48, 0.34
+    return 0.44, 0.44
 
 
 def choose_panel_column_widths(panel_width: float, stats: dict[str, int]) -> tuple[float, float]:
     if stats["rows"] == 0:
-        return 0.64, 0.22
+        return 0.68, 0.18
     if stats["long_label_count"] > 0:
-        return 0.68, 0.22
+        if stats["max_change_length"] >= 30:
+            return 0.78, 0.14
+        return 0.76, 0.16
     if stats["max_change_length"] >= 28:
-        return 0.70, 0.20
+        return 0.76, 0.16
     if stats["max_change_length"] >= 22:
-        return 0.66, 0.22
-    if panel_width <= 0.32 and stats["rows"] <= 1:
-        return 0.58, 0.22
-    return 0.62, 0.24
+        return 0.72, 0.18
+    if panel_width <= 0.36 and stats["rows"] <= 1:
+        return 0.64, 0.18
+    return 0.68, 0.20
+
+
+def format_trace_change_label(change: str) -> str:
+    escaped = latex_escape(change)
+    if change in LONG_TRACE_LABELS and len(change) <= 28:
+        return rf"\mbox{{{escaped}}}"
+    return escaped
 
 
 def render_trace_panel(
@@ -388,9 +517,9 @@ def render_trace_panel(
             if change == "[no change]" and not form:
                 lines.append(r"\multicolumn{2}{@{}l@{}}{[no change]} \\")
             elif form:
-                lines.append(rf"{latex_escape(change)} & {latex_form(form)} \\")
+                lines.append(rf"{format_trace_change_label(change)} & {latex_form(form)} \\")
             else:
-                lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{latex_escape(change)}}} \\")
+                lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{format_trace_change_label(change)}}} \\")
         lines.append(r"\end{tabular}")
 
     return lines

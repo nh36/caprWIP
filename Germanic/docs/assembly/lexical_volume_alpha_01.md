@@ -61,7 +61,7 @@ Proto input: _\*nḗdrōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -74,9 +74,9 @@ Proto input: _\*nḗdrōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*nḗdrǭ} \\
-NWGmc Long E Lowering & \emph{*nǣdrǭ} \\
+\mbox{NWGmc Long E Lowering} & \emph{*nǣdrǭ} \\
 \end{tabular}
 \end{minipage}
 &
@@ -85,7 +85,7 @@ NWGmc Long E Lowering & \emph{*nǣdrǭ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*nǣdræ} \\
 OE Unstressed AE Merger & \emph{*nǣdre} \\
 \end{tabular}
@@ -101,9 +101,9 @@ Outcome: _nǣdre_
 #### Reconstruction and comparative evidence
 
 Kroonen distinguishes the masculine snake word _\*nadra-_ from a feminine
-ablauting formation _\*nēdrōn-_, and gives Old English _nǣdre, næddre_ under the
+ablauting formation _\*nēdrōn-_, and gives Old English _nǣdre_, _næddre_ under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
-feminine _\*nēdrōn ~ \*nadrōn_ type [@Orel2003, 325].
+feminine _\*nēdrōn_ ~ _\*nadrōn_ type [@Orel2003, 325].
 
 The selected input therefore is not a reshaped convenience form. It is the
 comparative reconstruction that specifically underlies the Old English noun.
@@ -134,7 +134,7 @@ Proto input: _\*bákaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -155,7 +155,7 @@ Proto input: _\*bákaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bækaną} \\
 OE A Restoration & \emph{*bakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
@@ -181,7 +181,7 @@ Bosworth-Toller and Clark Hall both record _bacan_ as the ordinary Old English v
 
 #### Development to Old English
 
-From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield _bacan_ [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: _\*bákaną > bacan_.
+From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield _bacan_ [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: _\*bákaną_ > bacan.
 
 ### beech — OE bōc
 
@@ -196,7 +196,7 @@ Proto input: _\*bōkō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -209,8 +209,8 @@ Proto input: _\*bōkō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*bōku} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bōku} \\
 \end{tabular}
 \end{minipage}
 &
@@ -219,8 +219,8 @@ NWGmc Final Long O Raising & \emph{*bōku} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*bōk} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*bōk} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -233,7 +233,7 @@ Outcome: _bōc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English _boc, bēce_ among its reflexes [@Kroonen2013]. The selected input _\*bōkō_ is the nominative-singular shape of that family, which is the relevant comparison form here.
+Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English boc, _bēce_ among its reflexes [@Kroonen2013]. The selected input _\*bōkō_ is the nominative-singular shape of that family, which is the relevant comparison form here.
 
 #### Old English evidence
 
@@ -241,7 +241,7 @@ Kroonen's Old English evidence already separates the paradigm material: _boc_ as
 
 #### Development to Old English
 
-With nominative input _\*bōkō_, the development is compact. Northwest Germanic final long _ō_ raises to _u_, and later high-vowel apocope leaves _bōc_. The regular comparison is therefore _\*bōkō > bōc_.
+With nominative input _\*bōkō_, the development is compact. Northwest Germanic final long _ō_ raises to _u_, and later high-vowel apocope leaves _bōc_. The regular comparison is therefore _\*bōkō_ > _bōc_.
 
 ### begin — OE beġinnan
 
@@ -256,7 +256,7 @@ Proto input: _\*bigínnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -277,7 +277,7 @@ Proto input: _\*bigínnaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*bigínnan} \\
 OE Secondary Nasalization & \emph{*bigínnąn} \\
 OE Velar Palatalization & \emph{*biʤínnąn} \\
@@ -322,7 +322,7 @@ Proto input: _\*bḗrō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -335,9 +335,9 @@ Proto input: _\*bḗrō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*bḗru} \\
-NWGmc Long E Lowering & \emph{*bǣru} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bḗru} \\
+\mbox{NWGmc Long E Lowering} & \emph{*bǣru} \\
 \end{tabular}
 \end{minipage}
 &
@@ -346,8 +346,8 @@ NWGmc Long E Lowering & \emph{*bǣru} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*bǣr} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*bǣr} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -360,7 +360,7 @@ Outcome: _bǣr_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English _bar, bær_ among the reflexes [@Kroonen2013, 717]. The selected input _\*bḗrō_ is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English bar, _bær_ among the reflexes [@Kroonen2013, 717]. The selected input _\*bḗrō_ is the same lexeme in the accent notation used here.
 
 #### Old English evidence
 
@@ -387,7 +387,7 @@ Proto input: _\*búrdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -400,8 +400,8 @@ Proto input: _\*búrdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*búrdi} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*búrdi} \\
 \end{tabular}
 \end{minipage}
 &
@@ -410,9 +410,9 @@ PGmc Final Z Deletion & \emph{*búrdi} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE I Umlaut & \emph{*byrdi} \\
-OE High Vowel Apocope & \emph{*byrd} \\
+\mbox{OE High Vowel Apocope} & \emph{*byrd} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -452,7 +452,7 @@ Proto input: _\*báiną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -460,7 +460,7 @@ Proto input: _\*báiną_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*bāną} \\
 \end{tabular}
 \vspace{0.6em}
@@ -475,7 +475,7 @@ PWGmc Ai Monophthongization & \emph{*bāną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*bān} \\
 \end{tabular}
 \end{minipage}
@@ -516,7 +516,7 @@ Proto input: _\*bō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -529,7 +529,7 @@ Proto input: _\*bō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
 \end{tabular}
 \end{minipage}
@@ -552,25 +552,25 @@ Outcome: _bū_
 #### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under _\*ba-_ and gives the inherited
-paradigm _\*bai, \*bans, \*bōz/\*bōns, \*bō_, with Old English _bēġen_, _bā_, and
+paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English _bēġen_, _bā_, and
 neuter _bū_ [@Kroonen2013, p. 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual _\*bō_.
 
 The older explanation of _bēġen_ derives it from _\*bō-jen-_, and Orel still
-gives _OE bezen (< \*bō-jenō)_ beside _ON báðir_, _OFris bēthe_, _OS be-thia_,
-and _OHG bēde, beide_ [@Orel2003, p. 65]. Fulk reports that explanation
+gives OE _bezen_ (< _\*bō-jenō)_ beside ON _báðir_, OFris _bēthe_, _OS be-thia_,
+and OHG _bēde_, beide [@Orel2003, p. 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a _\*bō-þ-_ analysis instead
 [@Fulk2018, §10.1]. That debate matters for _bēġen_ and for the extended forms
 behind Modern English _both_, German _beide_, and Dutch _beide_; it does not
-displace the inherited neuter _\*bō > bū_ treated here.
+displace the inherited neuter _\*bō_ > _bū_ treated here.
 
 #### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
 _bēġen_, feminine _bā_, and neuter _bū_ beside _bā_, with compounds such as
-_bā twā_, _bū tū_, and _bām twām_ [@SieversBrunner1965, §324 Anm. 2].
+_bā_ _twā_, _bū_ _tū_, and _bām_ _twām_ [@SieversBrunner1965, §324 Anm. 2].
 Campbell and Fulk present the same basic pattern: masculine _bēġen_, feminine
-_bā_, neuter _bā, bū_, genitive _bēġra, bēġ(e)a_, and dative _bǣm_
+_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative _bǣm_
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
 _bū_ is therefore an attested neuter dual form, not a reconstruction. It is the
@@ -582,12 +582,12 @@ comparison.
 #### Development to Old English
 
 _\*bō_ is a stressed monosyllabic form. Campbell cites _cū_, _hū_, _tū_, and
-_bū_ as examples of final accented _ō > ū_ in the West Germanic stage leading
+_bū_ as examples of final accented _ō_ > _ū_ in the West Germanic stage leading
 to Old English [@Campbell1959, §122]. Brunner states the same development more
-directly: _Auslautendes ō erscheint als û in bū ... cu ... hū, tū_
+directly: Auslautendes _ō_ erscheint als û in _bū_ ... cu ... _hū_, _tū_
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: _\*bō > bū_.
+The development is therefore straightforward: _\*bō_ > _bū_.
 
 #### Form comparison
 
@@ -596,7 +596,7 @@ other forms that belong to the same broader lexical history.
 
 | Form | Source / stage | Status | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| _\*bō > bū_ | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
+| _\*bō_ > _bū_ | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
 | _bēġen_ | OE masculine dual | attested, but historically contested and at least partly analogical in Kroonen | real OE evidence, not the selected target |
 | _bā_ | OE feminine dual; also neuter variant | attested partner form | part of the OE paradigm, but not the chosen monosyllabic comparator |
 | _báðir_, _beide_, _both_ | Norse, continental West Germanic, Modern English extended forms | related but different formation | useful background, not the direct continuation of OE _bū_ |
@@ -614,7 +614,7 @@ Proto input: _\*báugijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -635,7 +635,7 @@ Proto input: _\*báugijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Au Fronting & \emph{*báeugijaną} \\
 OE Diphthong Leveling & \emph{*bēagijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*bēagijan} \\
@@ -657,15 +657,15 @@ Outcome: _bīeġan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the weak verb as _\*baugjan-_ 'to (make) bend' and cites Old English _biegan_ among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic and West Saxon development more fully as _PNWGmce \*baugijana > \*béagjan > WS OE biegan_ [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
+Kroonen reconstructs the weak verb as _\*baugjan-_ 'to (make) bend' and cites Old English _biegan_ among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic and West Saxon development more fully as PNWGmce _\*baugijana_ > _\*béagjan_ > WS OE _biegan_ [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
 
 #### Old English evidence
 
-Clark Hall lemmatizes _biegan_, and Bosworth-Toller records _bigan_ with examples such as _Ic bēge mīne cneówa_ and _Se ord bīgde upp tō þām hiltum_ [@ClarkHall1960; @BosworthToller1898, 102]. The form _bīeġan_ used here is a normalized spelling of that attested Old English weak verb.
+Clark Hall lemmatizes _biegan_, and Bosworth-Toller records _bigan_ with examples such as Ic _bēge_ _mīne_ _cneówa_ and Se ord _bīgde_ upp _tō_ _þām_ hiltum [@ClarkHall1960; @BosworthToller1898, 102]. The form _bīeġan_ used here is a normalized spelling of that attested Old English weak verb.
 
 #### Development to Old English
 
-From _\*báugijaną_, the stem reaches pre-Old-English _\*bēagjan_, after which palatalization of _\*gj_ and i-umlaut yield West Saxon _biegan_; Campbell lists _biegan_ among the regular _ie_ outcomes of _\*éa_ under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: _\*báugijaną > bīeġan_.
+From _\*báugijaną_, the stem reaches pre-Old-English _\*bēagjan_, after which palatalization of _\*gj_ and i-umlaut yield West Saxon _biegan_; Campbell lists _biegan_ among the regular _ie_ outcomes of _\*éa_ under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: _\*báugijaną_ > _bīeġan_.
 
 ### breeches — OE brēċ
 
@@ -680,7 +680,7 @@ Proto input: _\*brōkiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -693,8 +693,8 @@ Proto input: _\*brōkiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*brōki} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*brōki} \\
 \end{tabular}
 \end{minipage}
 &
@@ -703,10 +703,10 @@ PGmc Final Z Deletion & \emph{*brōki} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE Velar Palatalization & \emph{*brōʧi} \\
 OE I Umlaut & \emph{*brēʧi} \\
-OE High Vowel Apocope & \emph{*brēʧ} \\
+\mbox{OE High Vowel Apocope} & \emph{*brēʧ} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -719,15 +719,15 @@ Outcome: _brēċ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as _PNWGmce \*brokiz > \*breeci > OE bréc_ [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the selected input here is the plural noun form _\*brōkiz_.
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmce _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the selected input here is the plural noun form _\*brōkiz_.
 
 #### Old English evidence
 
-Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _brēc fp. breeches_ while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. The spelling _brēċ_ used here makes the long vowel and palatal consonant explicit; the Old English evidence itself is the attested plural _brēc_.
+Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _brēc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. The spelling _brēċ_ used here makes the long vowel and palatal consonant explicit; the Old English evidence itself is the attested plural _brēc_.
 
 #### Development to Old English
 
-After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014]. The development is therefore regular: _\*brōkiz > brēċ_.
+After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014]. The development is therefore regular: _\*brōkiz_ > _brēċ_.
 
 ### calf — OE ċealf
 
@@ -742,7 +742,7 @@ Proto input: _\*kálbaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -755,8 +755,8 @@ Proto input: _\*kálbaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*kálba} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*kálba} \\
 \end{tabular}
 \end{minipage}
 &
@@ -765,7 +765,7 @@ PGmc Final Z Deletion & \emph{*kálba} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*kálb} \\
 Anglo Frisian Brightening & \emph{*kælb} \\
 OE Breaking & \emph{*kealb} \\
@@ -783,11 +783,11 @@ Outcome: _ċealf_
 
 #### Reconstruction and comparative evidence
 
-Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem _\*kalbaz, pl. \*kalbizō_, while Orel cites _\*kalbaz_ as the citation form and Ringe and Taylor derive West Saxon _Cealf_ from _\*kalbaz, \*kalbiz-_ [@Kroonen2013; @Orel2003, 248; @RingeTaylor2014, 220]. The selected input here is the singular _\*kálbaz_, since the entry concerns the citation-form noun.
+Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem _\*kalbaz_, pl. _\*kalbizō_, while Orel cites _\*kalbaz_ as the citation form and Ringe and Taylor derive West Saxon _Cealf_ from _\*kalbaz_, _\*kalbiz-_ [@Kroonen2013; @Orel2003, 248; @RingeTaylor2014, 220]. The selected input here is the singular _\*kálbaz_, since the entry concerns the citation-form noun.
 
 #### Old English evidence
 
-Clark Hall gives _cealf I. (æ, e) nm. (nap. cealfru)_, and Bosworth-Toller likewise records _Caelf_ / _Cealf_ beside plural forms such as _calfur_ and _cealfru_ [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. The spelling _ċealf_ used here makes the palatalized initial explicit; the ordinary attested dictionary headword is _cealf_.
+Clark Hall gives cealf I. _(æ_, e) nm. (nap. cealfru), and Bosworth-Toller likewise records _Caelf_ / _Cealf_ beside plural forms such as _calfur_ and _cealfru_ [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. The spelling _ċealf_ used here makes the palatalized initial explicit; the ordinary attested dictionary headword is _cealf_.
 
 #### Development to Old English
 
@@ -806,7 +806,7 @@ Proto input: _\*kúrną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -819,8 +819,8 @@ Proto input: _\*kúrną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*kórną} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*kórną} \\
 \end{tabular}
 \end{minipage}
 &
@@ -829,7 +829,7 @@ NWGmc U Lowering & \emph{*kórną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*kórn} \\
 \end{tabular}
 \end{minipage}
@@ -866,7 +866,7 @@ Proto input: _\*dḗdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -879,9 +879,9 @@ Proto input: _\*dḗdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*dḗdi} \\
-NWGmc Long E Lowering & \emph{*dǣdi} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*dḗdi} \\
+\mbox{NWGmc Long E Lowering} & \emph{*dǣdi} \\
 \end{tabular}
 \end{minipage}
 &
@@ -890,8 +890,8 @@ NWGmc Long E Lowering & \emph{*dǣdi} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*dǣd} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*dǣd} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -927,7 +927,7 @@ Proto input: _\*dúrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -940,8 +940,8 @@ Proto input: _\*dúrą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*dórą} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*dórą} \\
 \end{tabular}
 \end{minipage}
 &
@@ -950,7 +950,7 @@ NWGmc U Lowering & \emph{*dórą} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*dór} \\
 \end{tabular}
 \end{minipage}
@@ -972,7 +972,7 @@ Clark Hall records _dor_ as a neuter noun and separately records feminine _duru_
 
 #### Development to Old English
 
-From _\*dúrą_, Northwest Germanic u-lowering gives _\*dórą_, and heavy-syllable nasal apocope then yields _dor_. The regular development treated in this entry is therefore _\*dúrą > dor_; the feminine _duru_ belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].
+From _\*dúrą_, Northwest Germanic u-lowering gives _\*dórą_, and heavy-syllable nasal apocope then yields _dor_. The regular development treated in this entry is therefore _\*dúrą_ > dor; the feminine _duru_ belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].
 
 ### fare — OE faran
 
@@ -987,7 +987,7 @@ Proto input: _\*fáraną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1008,7 +1008,7 @@ Proto input: _\*fáraną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*færaną} \\
 OE A Restoration & \emph{*faraną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
@@ -1034,7 +1034,7 @@ Clark Hall lemmatizes the strong verb as _faran_ and separately records weak _f�
 
 #### Development to Old English
 
-From _\*fáraną_, Anglo-Frisian brightening first gives _\*færaną_, but A-restoration before single _r_ returns _\*faraną_; later apocope and weak-tail reduction yield _faran_ [@Campbell1959, 61]. Fulk's contrast with participial _faren- < \*faræn- < \*faran-_ shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].
+From _\*fáraną_, Anglo-Frisian brightening first gives _\*færaną_, but A-restoration before single _r_ returns _\*faraną_; later apocope and weak-tail reduction yield _faran_ [@Campbell1959, 61]. Fulk's contrast with participial faren- < _\*faræn-_ < _\*faran-_ shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].
 
 ### fell — OE fell
 
@@ -1049,7 +1049,7 @@ Proto input: _\*féllą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1070,7 +1070,7 @@ Proto input: _\*féllą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*féll} \\
 \end{tabular}
 \end{minipage}
@@ -1092,7 +1092,7 @@ Clark Hall records _fell_ as the noun 'fell, skin, hide', and Bright's glossary 
 
 #### Development to Old English
 
-With _\*féllą_, no special earlier reshaping is needed: heavy-syllable nasal apocope yields _\*féll_, surfacing as _fell_. The regular development treated here is therefore _\*féllą > fell_.
+With _\*féllą_, no special earlier reshaping is needed: heavy-syllable nasal apocope yields _\*féll_, surfacing as _fell_. The regular development treated here is therefore _\*féllą_ > fell.
 
 ### fern — OE fearn
 
@@ -1107,7 +1107,7 @@ Proto input: _\*fárnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1120,8 +1120,8 @@ Proto input: _\*fárnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*fárna} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*fárna} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1130,7 +1130,7 @@ PGmc Final Z Deletion & \emph{*fárna} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fárn} \\
 Anglo Frisian Brightening & \emph{*færn} \\
 OE Breaking & \emph{*fearn} \\
@@ -1169,7 +1169,7 @@ Proto input: _\*félθuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1177,15 +1177,15 @@ Proto input: _\*félθuz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*félduz} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*féldu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*féldu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1194,8 +1194,8 @@ PGmc Final Z Deletion & \emph{*féldu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*féld} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*féld} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -1208,7 +1208,7 @@ Outcome: _feld_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor treat Old English _feld_ as one of the cases where earlier _\*felþu- ~ \*feldu-_ may reflect either inherited _\*þ ~ \*d_ alternation or the regular West Germanic development _\*lþ > ld_ [@RingeTaylor2014, 170]. The broader proto label _\*félθuz_ can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
+Ringe and Taylor treat Old English _feld_ as one of the cases where earlier _\*felþu-_ ~ _\*feldu-_ may reflect either inherited _\*þ_ ~ _\*d_ alternation or the regular West Germanic development _\*lþ_ > ld [@RingeTaylor2014, 170]. The broader proto label _\*félθuz_ can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
 
 #### Old English evidence
 
@@ -1216,7 +1216,7 @@ Clark Hall records _feld_ with oblique forms such as _felda_ and _felde_, and Ca
 
 #### Development to Old English
 
-In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and high-vowel apocope then yields _feld_. Whether the voiced dental ultimately reflects inherited alternation or the regular _\*lþ > ld_ development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].
+In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and high-vowel apocope then yields _feld_. Whether the voiced dental ultimately reflects inherited alternation or the regular _\*lþ_ > ld development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].
 
 ### fly — OE flēogan
 
@@ -1231,7 +1231,7 @@ Proto input: _\*fléuganą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1252,7 +1252,7 @@ Proto input: _\*fléuganą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Diphthong Leveling & \emph{*flēoganą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*flēogan} \\
 OE Secondary Nasalization & \emph{*flēogąn} \\
@@ -1269,19 +1269,19 @@ Outcome: _flēogan_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor derive the verb as _\*fleugana > OE fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge / flége_ [@RingeTaylor2014]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here.
+Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag, flugon, flogen_ with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. The target in this entry is therefore the attested verbal infinitive itself.
+Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. The target in this entry is therefore the attested verbal infinitive itself.
 
 #### Form note
 
-Ringe and Taylor also list related _fléoge / flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014].
+Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014].
 
 #### Development to Old English
 
-From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014]. The development is therefore regular: _\*fléuganą > flēogan_.
+From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014]. The development is therefore regular: _\*fléuganą_ > _flēogan_.
 
 ### forlorn — OE lēosan
 
@@ -1296,7 +1296,7 @@ Proto input: _\*léusaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1317,7 +1317,7 @@ Proto input: _\*léusaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Diphthong Leveling & \emph{*lēosaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*lēosan} \\
 OE Secondary Nasalization & \emph{*lēosąn} \\
@@ -1342,7 +1342,7 @@ The direct Old English evidence behind English _forlorn_ lies in the prefixed ve
 
 #### Form note
 
-As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan / forloren_ [@RingeTaylor2014].
+As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014].
 
 #### Development to Old English
 
@@ -1361,7 +1361,7 @@ Proto input: _\*gángaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1374,8 +1374,8 @@ Proto input: _\*gángaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*gánga} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*gánga} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1384,7 +1384,7 @@ PGmc Final Z Deletion & \emph{*gánga} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*gáng} \\
 \end{tabular}
 \end{minipage}
@@ -1410,7 +1410,7 @@ This entry concerns the noun _gang_, not the separate verb _gangan_ [@ClarkHall1
 
 #### Development to Old English
 
-From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_. The development is therefore regular: _\*gángaz > gang_.
+From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_. The development is therefore regular: _\*gángaz_ > gang.
 
 ### give — OE ġiefan
 
@@ -1425,7 +1425,7 @@ Proto input: _\*gébaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1446,7 +1446,7 @@ Proto input: _\*gébaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*géban} \\
 OE Secondary Nasalization & \emph{*gébąn} \\
 PGmc B Allophony & \emph{*géβąn} \\
@@ -1492,7 +1492,7 @@ Proto input: _\*gúlθą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1500,15 +1500,15 @@ Proto input: _\*gúlθą_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*gúldą} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*góldą} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*góldą} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1517,7 +1517,7 @@ NWGmc U Lowering & \emph{*góldą} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*góld} \\
 \end{tabular}
 \end{minipage}
@@ -1531,7 +1531,7 @@ Outcome: _gold_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor cite the noun as _\*gulþa- / \*gulda-_, and Kroonen gives the same pair [@RingeTaylor2014, 42; @Kroonen2013]. The selected input _\*gúlθą_ preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
+Ringe and Taylor cite the noun as _\*gulþa-_ / _\*gulda-_, and Kroonen gives the same pair [@RingeTaylor2014, 42; @Kroonen2013]. The selected input _\*gúlθą_ preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
 
 #### Old English evidence
 
@@ -1539,7 +1539,7 @@ Bosworth-Toller and Clark Hall both record _gold_ as the ordinary Old English ne
 
 #### Development note
 
-Ringe and Taylor note that the medial stop can be understood either as alternation _\*gulþa- / \*gulda-_ or as the ordinary West Germanic change _\*lþ > ld_; both routes lead to the same Old English consonantism [@RingeTaylor2014, 42].
+Ringe and Taylor note that the medial stop can be understood either as alternation _\*gulþa-_ / _\*gulda-_ or as the ordinary West Germanic change _\*lþ_ > ld; both routes lead to the same Old English consonantism [@RingeTaylor2014, 42].
 
 #### Development to Old English
 
@@ -1558,7 +1558,7 @@ Proto input: _\*grábaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1579,7 +1579,7 @@ Proto input: _\*grábaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*græbaną} \\
 OE A Restoration & \emph{*grabaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*graban} \\
@@ -1625,7 +1625,7 @@ Proto input: _\*gástiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1638,8 +1638,8 @@ Proto input: _\*gástiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*gásti} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*gásti} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1648,12 +1648,12 @@ PGmc Final Z Deletion & \emph{*gásti} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gæsti} \\
 OE Velar Palatalization & \emph{*ʤæsti} \\
 OE I Umlaut & \emph{*ʤesti} \\
 OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
-OE High Vowel Apocope & \emph{*ʤiest} \\
+\mbox{OE High Vowel Apocope} & \emph{*ʤiest} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -1693,7 +1693,7 @@ Proto input: _\*xḗrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1706,8 +1706,8 @@ Proto input: _\*xḗrą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*xǣrą} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*xǣrą} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1716,7 +1716,7 @@ NWGmc Long E Lowering & \emph{*xǣrą} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çǣrą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çǣr} \\
 \end{tabular}
@@ -1743,7 +1743,7 @@ From _\*xḗrą_, Northwest Germanic lowering gives a long front vowel, and late
 
 #### Form note
 
-Older references to _\*xazwăz_ belong to a different lexeme, and the separate _haddr / heordan / hād-_ material does not displace the ordinary simplex _hǣr_ treated here [@Kroonen2013; @ClarkHall1960, 158].
+Older references to _\*xazwăz_ belong to a different lexeme, and the separate haddr / heordan / _hād-_ material does not displace the ordinary simplex _hǣr_ treated here [@Kroonen2013; @ClarkHall1960, 158].
 
 ### harvest — OE hierfest
 
@@ -1758,7 +1758,7 @@ Proto input: _\*xárbistuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1771,8 +1771,8 @@ Proto input: _\*xárbistuz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*xárbistu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*xárbistu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1781,13 +1781,13 @@ PGmc Final Z Deletion & \emph{*xárbistu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xærbistu} \\
 OE Breaking & \emph{*xearbistu} \\
 OE Velar Fricative Palatalization & \emph{*çearbistu} \\
 PGmc B Allophony & \emph{*çearβistu} \\
 OE I Umlaut & \emph{*çierβistu} \\
-OE High Vowel Apocope & \emph{*çierβist} \\
+\mbox{OE High Vowel Apocope} & \emph{*çierβist} \\
 OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 \end{tabular}
 \end{minipage}
@@ -1813,7 +1813,7 @@ From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce
 
 #### Source note
 
-The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest / herfest_, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
+The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
 
 ### hedge — OE heġġ
 
@@ -1828,7 +1828,7 @@ Proto input: _\*xágjaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1836,15 +1836,15 @@ Proto input: _\*xágjaz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc J Gemination & \emph{*xággjaz} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*xággja} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*xággja} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1853,7 +1853,7 @@ PGmc Final Z Deletion & \emph{*xággja} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xággj} \\
 Anglo Frisian Brightening & \emph{*xæggj} \\
 OE Velar Fricative Palatalization & \emph{*çæggj} \\
@@ -1899,7 +1899,7 @@ Proto input: _\*xélmaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1912,8 +1912,8 @@ Proto input: _\*xélmaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*xélma} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*xélma} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1922,7 +1922,7 @@ PGmc Final Z Deletion & \emph{*xélma} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xélm} \\
 OE Velar Fricative Palatalization & \emph{*çélm} \\
 \end{tabular}
@@ -1964,7 +1964,7 @@ Proto input: _\*xélpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1985,7 +1985,7 @@ Proto input: _\*xélpaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çélpaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çélpan} \\
 OE Secondary Nasalization & \emph{*çélpąn} \\
@@ -2029,7 +2029,7 @@ Proto input: _\*xéndjō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2042,8 +2042,8 @@ Proto input: _\*xéndjō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*xéndju} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*xéndju} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2052,10 +2052,10 @@ NWGmc Final Long O Raising & \emph{*xéndju} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çéndju} \\
 OE I Umlaut & \emph{*çindju} \\
-OE High Vowel Apocope & \emph{*çindj} \\
+\mbox{OE High Vowel Apocope} & \emph{*çindj} \\
 OE J Loss After Heavy & \emph{*çind} \\
 \end{tabular}
 \end{minipage}
@@ -2096,7 +2096,7 @@ Proto input: _\*xáldaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2117,7 +2117,7 @@ Proto input: _\*xáldaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xældaną} \\
 OE Breaking & \emph{*xealdaną} \\
 OE Velar Fricative Palatalization & \emph{*çealdaną} \\
@@ -2136,7 +2136,7 @@ Outcome: _healdan_
 
 #### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular _\*a + lC_ breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -2163,7 +2163,7 @@ Proto input: _\*xúrną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2176,8 +2176,8 @@ Proto input: _\*xúrną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*xórną} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*xórną} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2186,7 +2186,7 @@ NWGmc U Lowering & \emph{*xórną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xórn} \\
 \end{tabular}
 \end{minipage}
@@ -2200,7 +2200,7 @@ Outcome: _horn_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel cite lemma-style Proto-Germanic headwords of the _\*hurna- / \*xurnan_ type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input _\*xúrną_ is the nominative-style form used in the derivation here.
+Kroonen and Orel cite lemma-style Proto-Germanic headwords of the _\*hurna-_ / _\*xurnan_ type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input _\*xúrną_ is the nominative-style form used in the derivation here.
 
 #### Old English evidence
 
@@ -2227,7 +2227,7 @@ Proto input: _\*láidijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2235,7 +2235,7 @@ Proto input: _\*láidijaną_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*lādijaną} \\
 \end{tabular}
 \vspace{0.6em}
@@ -2250,7 +2250,7 @@ PWGmc Ai Monophthongization & \emph{*lādijaną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*lādijan} \\
 OE Secondary Nasalization & \emph{*lādijąn} \\
 Sievers Law Syncope & \emph{*lādjąn} \\
@@ -2292,7 +2292,7 @@ Proto input: _\*líznōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2313,7 +2313,7 @@ Proto input: _\*líznōjaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Breaking & \emph{*líornōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
 OE Secondary Nasalization & \emph{*líornōjąn} \\
@@ -2375,7 +2375,7 @@ modeled here from the better-known West Saxon headword.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*líznōjaną -> liornian_ | computed regular output; attested Northumbrian comparison form | selected comparison |
+| _\*líznōjaną_ -> liornian | computed regular output; attested Northumbrian comparison form | selected comparison |
 | _leornian_ | attested later _eo_ form and dictionary headword | useful control, but not the target of this entry |
 
 ### lid — OE hlid
@@ -2391,7 +2391,7 @@ Proto input: _\*xlídą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2412,7 +2412,7 @@ Proto input: _\*xlídą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xlíd} \\
 \end{tabular}
 \end{minipage}
@@ -2438,7 +2438,7 @@ The selected input already represents the later Germanic _hliđ-_ stage used for
 
 #### Form note
 
-An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą > hlid_ line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
 
 ### light — OE līehtan
 
@@ -2453,7 +2453,7 @@ Proto input: _\*léuxtijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2474,7 +2474,7 @@ Proto input: _\*léuxtijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Diphthong Leveling & \emph{*lēoxtijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*lēoxtijan} \\
 OE Secondary Nasalization & \emph{*lēoxtijąn} \\
@@ -2521,7 +2521,7 @@ Proto input: _\*líndō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2534,8 +2534,8 @@ Proto input: _\*líndō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*líndu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*líndu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2544,8 +2544,8 @@ NWGmc Final Long O Raising & \emph{*líndu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*línd} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*línd} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -2585,7 +2585,7 @@ Proto input: _\*mélukz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2598,8 +2598,8 @@ Proto input: _\*mélukz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*méluk} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*méluk} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2608,7 +2608,7 @@ PGmc Final Z Deletion & \emph{*méluk} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*mélok} \\
 OE Back Mutation & \emph{*méolok} \\
 \end{tabular}
@@ -2623,11 +2623,11 @@ Outcome: _meoloc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel reconstruct the noun as _\*meluk- / \*melukz_, and the nominative-style input used here is _\*mélukz_ [@Kroonen2013; @Orel2003, 306].
+Kroonen and Orel reconstruct the noun as _\*meluk-_ / _\*melukz_, and the nominative-style input used here is _\*mélukz_ [@Kroonen2013; @Orel2003, 306].
 
 #### Old English evidence
 
-Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon _meolc < meoluc < \*meluk_, Campbell likewise discusses _meoluc_ and _meoloc_, and Anglian shows _milc_ [@RingeTaylor2014; @Campbell1959].
+Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon meolc < meoluc < _\*meluk_, Campbell likewise discusses _meoluc_ and _meoloc_, and Anglian shows _milc_ [@RingeTaylor2014; @Campbell1959].
 
 #### Development to Old English
 
@@ -2650,7 +2650,7 @@ Proto input: _\*mōdēr_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2663,8 +2663,8 @@ Proto input: _\*mōdēr_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*mōdǣr} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*mōdǣr} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2673,7 +2673,7 @@ NWGmc Long E Lowering & \emph{*mōdǣr} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*mōdær} \\
 OE Unstressed AE Merger & \emph{*mōder} \\
 \end{tabular}
@@ -2688,11 +2688,11 @@ Outcome: _mōder_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as _\*mōder- / \*mōdēr_ [@Kroonen2013; @Orel2003].
+Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as _\*mōder-_ / _\*mōdēr_ [@Kroonen2013; @Orel2003].
 
 #### Old English evidence
 
-The transmitted Old English headword tradition is _mōdor / modor_, with oblique _mēder_ in the paradigm. Clark Hall, Campbell, and Ringe and Taylor all preserve that contrast [@ClarkHall1960; @Campbell1959; @RingeTaylor2014].
+The transmitted Old English headword tradition is _mōdor_ / modor, with oblique _mēder_ in the paradigm. Clark Hall, Campbell, and Ringe and Taylor all preserve that contrast [@ClarkHall1960; @Campbell1959; @RingeTaylor2014].
 
 #### Development to Old English
 
@@ -2700,7 +2700,7 @@ From _\*mōdēr_, the regular suffixal development yields _mōder_. That regular
 
 #### Form comparison
 
-The note therefore concerns inherited vocalism rather than a different lexeme: _mōder_ is the regularized nominative represented here, but dictionaries usually print _mōdor / modor_, and the oblique evidence survives in _mēder_ [@ClarkHall1960; @RingeTaylor2014].
+The note therefore concerns inherited vocalism rather than a different lexeme: _mōder_ is the regularized nominative represented here, but dictionaries usually print _mōdor_ / modor, and the oblique evidence survives in _mēder_ [@ClarkHall1960; @RingeTaylor2014].
 
 ### net — OE nett
 
@@ -2715,7 +2715,7 @@ Proto input: _\*nátją_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2723,7 +2723,7 @@ Proto input: _\*nátją_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc J Gemination & \emph{*náttją} \\
 \end{tabular}
 \vspace{0.6em}
@@ -2738,7 +2738,7 @@ PWGmc J Gemination & \emph{*náttją} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*nættją} \\
 OE Heavy Syllable Nasal Apocope & \emph{*nættj} \\
 OE I Umlaut & \emph{*nettj} \\
@@ -2782,7 +2782,7 @@ Proto input: _\*márōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2795,7 +2795,7 @@ Proto input: _\*márōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*márǭ} \\
 \end{tabular}
 \end{minipage}
@@ -2805,7 +2805,7 @@ NWGmc N Stem N Loss & \emph{*márǭ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mærǭ} \\
 OE A Restoration & \emph{*marǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
@@ -2849,7 +2849,7 @@ Proto input: _\*rúkkaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2862,9 +2862,9 @@ Proto input: _\*rúkkaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*rókkaz} \\
-PGmc Final Z Deletion & \emph{*rókka} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*rókkaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*rókka} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2873,7 +2873,7 @@ PGmc Final Z Deletion & \emph{*rókka} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*rókk} \\
 \end{tabular}
 \end{minipage}
@@ -2914,7 +2914,7 @@ Proto input: _\*skḗpą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2927,8 +2927,8 @@ Proto input: _\*skḗpą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*skǣpą} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*skǣpą} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2937,7 +2937,7 @@ NWGmc Long E Lowering & \emph{*skǣpą} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*skǣp} \\
 OE Sk Palatalization & \emph{*ʃǣp} \\
 OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
@@ -2953,7 +2953,7 @@ Outcome: _sċēap_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor cite a later West Germanic _\*skap > WS scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003].
+Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003].
 
 #### Old English evidence
 
@@ -2980,7 +2980,7 @@ Proto input: _\*skíllingaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -2993,8 +2993,8 @@ Proto input: _\*skíllingaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*skíllinga} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*skíllinga} \\
 \end{tabular}
 \end{minipage}
 &
@@ -3003,7 +3003,7 @@ PGmc Final Z Deletion & \emph{*skíllinga} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*skílling} \\
 OE Sk Palatalization & \emph{*ʃílling} \\
 OE Med Unstressed I Lowering1 & \emph{*ʃílleng} \\
@@ -3020,7 +3020,7 @@ Outcome: _sċilling_
 
 #### Reconstruction and comparative evidence
 
-Kroonen treats the cognate set under _\*skellinga- ~ \*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative.
+Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative.
 
 #### Old English evidence
 
@@ -3032,7 +3032,7 @@ From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_. Old English pala
 
 #### Form note
 
-Kroonen's _\*skellinga- ~ \*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here [@Kroonen2013].
+Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here [@Kroonen2013].
 
 ### show — OE sċēawian
 
@@ -3047,7 +3047,7 @@ Proto input: _\*skáwōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3068,7 +3068,7 @@ Proto input: _\*skáwōjaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
 OE Secondary Nasalization & \emph{*skḗawōjąn} \\
@@ -3090,11 +3090,11 @@ Outcome: _sċēawian_
 
 #### Reconstruction and comparative evidence
 
-Orel and Kroonen cite a Class II verb of the type _\*skawōjan-_, with OE _scēawian_ among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as _scēawian, scāwian_, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
+Orel and Kroonen cite a Class II verb of the type _\*skawōjan-_, with OE _scēawian_ among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as _scēawian_, _scāwian_, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
 
 #### Old English evidence
 
-Bright lists _scēawian (W. II.)_ and also the related form _scēawa_ [@BrightCassidyRingler1971]. The source tradition therefore uses _scēawian_, while the target represented here is the normalized project spelling _sċēawian_.
+Bright lists _scēawian_ (W. II.) and also the related form _scēawa_ [@BrightCassidyRingler1971]. The source tradition therefore uses _scēawian_, while the target represented here is the normalized project spelling _sċēawian_.
 
 #### Development to Old English
 
@@ -3117,7 +3117,7 @@ Proto input: _\*slḗpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3130,8 +3130,8 @@ Proto input: _\*slḗpaną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*slǣpaną} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*slǣpaną} \\
 \end{tabular}
 \end{minipage}
 &
@@ -3140,7 +3140,7 @@ NWGmc Long E Lowering & \emph{*slǣpaną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*slǣpan} \\
 OE Secondary Nasalization & \emph{*slǣpąn} \\
 OE Weak Tail Reduction & \emph{*slǣpan} \\
@@ -3160,15 +3160,15 @@ Kroonen preserves the comparative verb as _\*slēpan-_, and Fulk cites the same 
 
 #### Old English evidence
 
-Clark Hall gives _slæpan_ with preterite _slēp, slēap_, and Bright likewise lists _slæpan (slāpan), slēp slēpon slēpen_ [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive _slǣpan_, not the preterite forms and not the separate noun _slǣp_.
+Clark Hall gives _slæpan_ with preterite _slēp_, _slēap_, and Bright likewise lists _slæpan_ _(slāpan)_, _slēp_ _slēpon_ _slēpen_ [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive _slǣpan_, not the preterite forms and not the separate noun _slǣp_.
 
 #### Development to Old English
 
-From _\*slḗpaną_, Northwest Germanic lowering gives _\*slǣpaną_. The later OE tail developments then yield _slǣpan_ regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon _slāpan/slæpan_ and Anglian or Kentish _slēpan_, but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
+From _\*slḗpaną_, Northwest Germanic lowering gives _\*slǣpaną_. The later OE tail developments then yield _slǣpan_ regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon _slāpan_/_slæpan_ and Anglian or Kentish _slēpan_, but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
 
 #### Form note
 
-The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_, whereas _slǣp_ belongs to noun or lookup background and _slēp/slēap_ are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
+The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_, whereas _slǣp_ belongs to noun or lookup background and _slēp_/_slēap_ are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
 
 ### smear — OE smierwan
 
@@ -3183,7 +3183,7 @@ Proto input: _\*smérwijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3204,7 +3204,7 @@ Proto input: _\*smérwijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Breaking & \emph{*sméorwijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sméorwijan} \\
 OE Secondary Nasalization & \emph{*sméorwijąn} \\
@@ -3251,7 +3251,7 @@ Proto input: _\*spánnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3272,7 +3272,7 @@ Proto input: _\*spánnaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*spánnan} \\
 OE Secondary Nasalization & \emph{*spánnąn} \\
 OE Weak Tail Reduction & \emph{*spánnan} \\
@@ -3315,7 +3315,7 @@ Proto input: _\*spárrô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3336,7 +3336,7 @@ Proto input: _\*spárrô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*spærrô} \\
 OE Breaking & \emph{*spearrô} \\
 OE Unstressed Long Vowel Shortening & \emph{*spearra} \\
@@ -3379,7 +3379,7 @@ Proto input: _\*stéllijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3400,7 +3400,7 @@ Proto input: _\*stéllijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*stéllijan} \\
 OE Secondary Nasalization & \emph{*stéllijąn} \\
 Sievers Law Syncope & \emph{*stélljąn} \\
@@ -3446,7 +3446,7 @@ Proto input: _\*súmaraz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3459,8 +3459,8 @@ Proto input: _\*súmaraz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*súmara} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*súmara} \\
 \end{tabular}
 \end{minipage}
 &
@@ -3469,7 +3469,7 @@ PGmc Final Z Deletion & \emph{*súmara} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*súmar} \\
 Anglo Frisian Brightening & \emph{*súmær} \\
 OE Unstressed AE Merger & \emph{*súmer} \\
@@ -3512,7 +3512,7 @@ Proto input: _\*súndrōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3533,7 +3533,7 @@ Proto input: _\*súndrōjaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*súndrōjan} \\
 OE Secondary Nasalization & \emph{*súndrōjąn} \\
 OE I Umlaut & \emph{*súndrējąn} \\
@@ -3553,7 +3553,7 @@ Outcome: _sundrian_
 
 #### Reconstruction and comparative evidence
 
-Orel distinguishes three related formations: adverbial _\*sunþraz > sundor_, Class I verbal _\*sunþrjanan > syndrian_, and Class II verbal _\*sunþrōjanan > sundrian_ [@Orel2003]. Kluge-Seebold aligns the cognate set with German _sondern_ and OE _gesundrian_, so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
+Orel distinguishes three related formations: adverbial _\*sunþraz_ > sundor, Class I verbal _\*sunþrjanan_ > syndrian, and Class II verbal _\*sunþrōjanan_ > sundrian [@Orel2003]. Kluge-Seebold aligns the cognate set with German _sondern_ and OE _gesundrian_, so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
 
 #### Old English evidence
 
@@ -3580,7 +3580,7 @@ Proto input: _\*swálwōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3593,7 +3593,7 @@ Proto input: _\*swálwōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*swálwǭ} \\
 \end{tabular}
 \end{minipage}
@@ -3603,7 +3603,7 @@ NWGmc N Stem N Loss & \emph{*swálwǭ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*swælwǭ} \\
 OE Breaking & \emph{*swealwǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*swealwæ} \\
@@ -3647,7 +3647,7 @@ Proto input: _\*swḯną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3668,7 +3668,7 @@ Proto input: _\*swḯną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*swḯn} \\
 \end{tabular}
 \end{minipage}
@@ -3709,7 +3709,7 @@ Proto input: _\*θánkijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3730,7 +3730,7 @@ Proto input: _\*θánkijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*θánkijan} \\
 OE Secondary Nasalization & \emph{*θánkijąn} \\
 Sievers Law Syncope & \emph{*θánkjąn} \\
@@ -3754,7 +3754,7 @@ Kroonen gives the verb as _\*þankjan-_ 'to think', and Ringe and Taylor cite fu
 
 #### Old English evidence
 
-Bosworth-Toller preserves the verb under _þencan/geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898].
+Bosworth-Toller preserves the verb under _þencan_/_geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898].
 
 #### Development to Old English
 
@@ -3777,7 +3777,7 @@ Proto input: _\*θúrnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3790,9 +3790,9 @@ Proto input: _\*θúrnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*θórnaz} \\
-PGmc Final Z Deletion & \emph{*θórna} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*θórnaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*θórna} \\
 \end{tabular}
 \end{minipage}
 &
@@ -3801,7 +3801,7 @@ PGmc Final Z Deletion & \emph{*θórna} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*θórn} \\
 \end{tabular}
 \end{minipage}
@@ -3815,11 +3815,11 @@ Outcome: _þorn_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz ~ \*þurnaz_ [@Kroonen2013; @Orel2003]. The selected input _\*θúrnaz_ belongs to that same comparative family.
+Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz_ ~ _\*þurnaz_ [@Kroonen2013; @Orel2003]. The selected input _\*θúrnaz_ belongs to that same comparative family.
 
 #### Old English evidence
 
-Bright lists _þorn, m._, and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
+Bright lists _þorn_, m., and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
 
 #### Development to Old English
 
@@ -3842,7 +3842,7 @@ Proto input: _\*tḯdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3855,8 +3855,8 @@ Proto input: _\*tḯdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*tḯdi} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*tḯdi} \\
 \end{tabular}
 \end{minipage}
 &
@@ -3865,8 +3865,8 @@ PGmc Final Z Deletion & \emph{*tḯdi} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*tḯd} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*tḯd} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -3906,7 +3906,7 @@ Proto input: _\*táikną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3914,7 +3914,7 @@ Proto input: _\*táikną_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*tākną} \\
 \end{tabular}
 \vspace{0.6em}
@@ -3929,7 +3929,7 @@ PWGmc Ai Monophthongization & \emph{*tākną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tākn} \\
 \end{tabular}
 \end{minipage}
@@ -3970,7 +3970,7 @@ Proto input: _\*tūną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3991,7 +3991,7 @@ Proto input: _\*tūną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tūn} \\
 \end{tabular}
 \end{minipage}
@@ -4005,7 +4005,7 @@ Outcome: _tūn_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites _\*tūna-_ 'fenced area', while Orel gives _\*tūnan ~ \*tūnaz_ [@Kroonen2013; @Orel2003, 452]. The selected input _\*tūną_ is the simple citation-form noun used in the derivation.
+Kroonen cites _\*tūna-_ 'fenced area', while Orel gives _\*tūnan_ ~ _\*tūnaz_ [@Kroonen2013; @Orel2003, 452]. The selected input _\*tūną_ is the simple citation-form noun used in the derivation.
 
 #### Old English evidence
 
@@ -4032,7 +4032,7 @@ Proto input: _\*wádaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4053,7 +4053,7 @@ Proto input: _\*wádaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wædaną} \\
 OE A Restoration & \emph{*wadaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wadan} \\
@@ -4098,7 +4098,7 @@ Proto input: _\*wérpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4119,7 +4119,7 @@ Proto input: _\*wérpaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Breaking & \emph{*wéorpaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wéorpan} \\
 OE Secondary Nasalization & \emph{*wéorpąn} \\
@@ -4163,7 +4163,7 @@ Proto input: _\*wáskaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4184,7 +4184,7 @@ Proto input: _\*wáskaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wæskaną} \\
 OE A Restoration & \emph{*waskaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*waskan} \\
@@ -4229,7 +4229,7 @@ Proto input: _\*wáxsaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4250,7 +4250,7 @@ Proto input: _\*wáxsaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wæxsaną} \\
 OE Breaking & \emph{*weaxsaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*weaxsan} \\
@@ -4281,7 +4281,7 @@ From _\*wáxsaną_, brightening and breaking yield _weax-_, and the infinitive d
 
 #### Lexical note
 
-The target here is the infinitive _weaxan_. Noun _weax_ and preterite _wax/wēox_ belong to different lexical or paradigm slots.
+The target here is the infinitive _weaxan_. Noun _weax_ and preterite wax/_wēox_ belong to different lexical or paradigm slots.
 
 ### way — OE weġ
 
@@ -4296,7 +4296,7 @@ Proto input: _\*wégaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4309,8 +4309,8 @@ Proto input: _\*wégaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*wéga} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*wéga} \\
 \end{tabular}
 \end{minipage}
 &
@@ -4319,7 +4319,7 @@ PGmc Final Z Deletion & \emph{*wéga} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wég} \\
 OE Velar Palatalization & \emph{*wéʤ} \\
 \end{tabular}
@@ -4361,7 +4361,7 @@ Proto input: _\*wḗpną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4374,8 +4374,8 @@ Proto input: _\*wḗpną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*wǣpną} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*wǣpną} \\
 \end{tabular}
 \end{minipage}
 &
@@ -4384,7 +4384,7 @@ NWGmc Long E Lowering & \emph{*wǣpną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
 \end{tabular}
 \end{minipage}
@@ -4398,13 +4398,13 @@ Outcome: _wǣpn_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a double-stem noun _\*wēbna- ~ \*wēpna-_ and cites OE _wæpn_ among its reflexes [@Kroonen2013, 617]. The selected input _\*wḗpną_ represents the unbroken citation-form noun rather than the later broken simplex.
+Kroonen reconstructs a double-stem noun _\*wēbna-_ ~ _\*wēpna-_ and cites OE _wæpn_ among its reflexes [@Kroonen2013, 617]. The selected input _\*wḗpną_ represents the unbroken citation-form noun rather than the later broken simplex.
 
 #### Old English evidence
 
 Campbell's cluster-noun discussion preserves unbroken _wépn_ beside broken
 _wépen_-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. Bright
-contrasts broken nominative _wǣpen/wapen_ with unbroken oblique _wǣpnes_,
+contrasts broken nominative _wǣpen_/wapen with unbroken oblique _wǣpnes_,
 while Clark Hall lemmatizes the noun under _wapen_ and also preserves unbroken
 forms in compounds and related spellings
 [@BrightCassidyRingler1971, 29; @ClarkHall1960, 355].
@@ -4434,7 +4434,7 @@ Proto input: _\*wéljô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4442,7 +4442,7 @@ Proto input: _\*wéljô_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc J Gemination & \emph{*wélljô} \\
 \end{tabular}
 \vspace{0.6em}
@@ -4457,7 +4457,7 @@ PWGmc J Gemination & \emph{*wélljô} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE I Umlaut & \emph{*willjô} \\
 OE Unstressed Long Vowel Shortening & \emph{*willja} \\
 OE J Loss After Heavy & \emph{*willa} \\
@@ -4473,7 +4473,7 @@ Outcome: _willa_
 
 #### Reconstruction and comparative evidence
 
-Kroonen separates noun _\*weljan- 2_ 'will, wish' from verb _\*weljan- 1_ 'to want', while Orel and Kluge represent the noun as _\*weljōn/\*weljOn_ [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form _\*wéljô_ is the noun-side input used for this row.
+Kroonen separates noun _\*weljan-_ 2 'will, wish' from verb _\*weljan-_ 1 'to want', while Orel and Kluge represent the noun as _\*weljōn_/_\*weljOn_ [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form _\*wéljô_ is the noun-side input used for this row.
 
 #### Old English evidence
 
@@ -4500,7 +4500,7 @@ Proto input: _\*wíndaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4521,7 +4521,7 @@ Proto input: _\*wíndaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*wíndan} \\
 OE Secondary Nasalization & \emph{*wíndąn} \\
 OE Weak Tail Reduction & \emph{*wíndan} \\
@@ -4564,7 +4564,7 @@ Proto input: _\*wálθuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4572,15 +4572,15 @@ Proto input: _\*wálθuz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*wálduz} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*wáldu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*wáldu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -4589,10 +4589,10 @@ PGmc Final Z Deletion & \emph{*wáldu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wældu} \\
 OE Breaking & \emph{*wealdu} \\
-OE High Vowel Apocope & \emph{*weald} \\
+\mbox{OE High Vowel Apocope} & \emph{*weald} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -4632,7 +4632,7 @@ Proto input: _\*gárną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4653,7 +4653,7 @@ Proto input: _\*gárną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gærną} \\
 OE Breaking & \emph{*gearną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*gearn} \\
@@ -4670,7 +4670,7 @@ Outcome: _ġearn_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain _\*garna > \*geern > \*gearn > OE gearn_ [@Kroonen2013; @RingeTaylor2014, 220]. The selected input _\*gárną_ is the nominal citation form used here, while oblique _\*garnăn_ belongs only to comparative background.
+Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain _\*garna_ > _\*geern_ > _\*gearn_ > OE _gearn_ [@Kroonen2013; @RingeTaylor2014, 220]. The selected input _\*gárną_ is the nominal citation form used here, while oblique _\*garnăn_ belongs only to comparative background.
 
 #### Old English evidence
 
@@ -4706,7 +4706,7 @@ Proto input: _\*kwéðuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.480\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4714,15 +4714,15 @@ Proto input: _\*kwéðuz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*kwéduz} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*kwédu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*kwédu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -4789,7 +4789,7 @@ Proto input: _\*téxun_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4810,7 +4810,7 @@ Proto input: _\*téxun_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*téxon} \\
 OE Breaking & \emph{*téoxon} \\
 OE H Loss & \emph{*téoon} \\
@@ -4830,7 +4830,7 @@ Outcome: _tēon_
 Fulk states that Old English _tien_ shows umlaut from the inflected forms,
 whereas the uninflected form without umlaut is reflected in
 _hund-tēon-tig_ [@Fulk2018, §10.2]. Brunner gives the same contrast more
-broadly: _tēon_ develops from _\*tëhun_, while West Saxon _tien, tȳn_ belong to
+broadly: _tēon_ develops from _\*tëhun_, while West Saxon tien, _tȳn_ belong to
 a different, umlauted branch of the numeral history [@SieversBrunner1965,
 §§129.2, 129 Anm. 6, 234].
 
@@ -4840,9 +4840,9 @@ un-umlauted line, not the later umlauted simplex tradition.
 #### Old English evidence
 
 The attested simplex forms are varied. Campbell gives _tien_, north-western
-West Saxon _tēn_, and late Northumbrian _tēo, tēa_
-[@Campbell1959, §682]. Brunner likewise lists West Saxon _tien, tȳn_ beside
-_tēn, tēo, tēa_ in other dialects [@SieversBrunner1965, §325].
+West Saxon _tēn_, and late Northumbrian _tēo_, _tēa_
+[@Campbell1959, §682]. Brunner likewise lists West Saxon tien, _tȳn_ beside
+_tēn_, _tēo_, _tēa_ in other dialects [@SieversBrunner1965, §325].
 
 Exact simplex _tēon_ is weaker as a directly cited headword than those
 spellings. The un-umlauted stem is, however, explicit in _tēoða_ and
@@ -4856,7 +4856,7 @@ breaking gives _\*téoxon_, loss of intervocalic _h/x_ yields _\*téoon_,
 and contraction produces _\*tḗon_, written _tēon_. This is the regular
 bare-cardinal path.
 
-The umlauted forms _tien / tīen_ belong to a different branch, created when
+The umlauted forms tien / _tīen_ belong to a different branch, created when
 the numeral was levelled from inflected forms with a front-vocalic trigger
 [@Fulk2018, §10.2; @SieversBrunner1965, §129 Anm. 6].
 
@@ -4868,8 +4868,8 @@ from the attested simplex variants.
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
 | _tēon_ | normalized un-umlauted comparison form; trace-supported | selected target |
-| _tien / tīen_ | attested West Saxon umlauted simplex forms | genuine OE variants, but not the bare-cardinal line modeled here |
-| _tēn / tēo / tēa_ | attested un-umlauted simplex variants in other dialects | support the same branch as the selected comparison form |
+| tien / _tīen_ | attested West Saxon umlauted simplex forms | genuine OE variants, but not the bare-cardinal line modeled here |
+| _tēn_ / _tēo_ / _tēa_ | attested un-umlauted simplex variants in other dialects | support the same branch as the selected comparison form |
 
 ### three — OE þrīe
 
@@ -4884,7 +4884,7 @@ Proto input: _\*θréjez_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4897,8 +4897,8 @@ Proto input: _\*θréjez_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*θréje} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*θréje} \\
 \end{tabular}
 \end{minipage}
 &
@@ -4907,7 +4907,7 @@ PGmc Final Z Deletion & \emph{*θréje} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE I Umlaut & \emph{*θrije} \\
 OE Intervocalic J Vocalization & \emph{*θriie} \\
 OE Contraction & \emph{*θrīe} \\
@@ -4937,7 +4937,7 @@ the masculine form.
 
 Campbell gives masculine nominative-accusative _þrīe_, feminine and neuter
 nominative-accusative _þrēo_, genitive _þrēora_, and dative
-_þrim_, adding that late West Saxon has _þry, þri_ for _þrīe_
+_þrim_, adding that late West Saxon has _þry_, _þri_ for _þrīe_
 [@Campbell1959, §683]. Fulk presents the same masculine _þrīe_ beside the
 wider numeral paradigm [@Fulk2018, §10.1].
 
@@ -4950,7 +4950,7 @@ the conservative masculine nominative-accusative form.
 From _\*θréjez_, loss of final _-z_ leaves a form of the _\*θréje_
 type. The following _j_ fronts the stem vowel, then vocalizes between
 vowels, and contraction yields _þrīe_. The compact trace records the same
-sequence as _\*θrije > \*θriie > þrīe_.
+sequence as _\*θrije_ > _\*θriie_ > _þrīe_.
 
 #### Variant comparison
 
@@ -4960,7 +4960,7 @@ the later reduced form and from the rest of the numeral paradigm.
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
 | _þrīe_ | attested masculine nom./acc.; trace output | selected target |
-| _þrī / þry_ | later reduced masculine variant | genuine OE variant, but not the conservative comparison form |
+| _þrī_ / _þry_ | later reduced masculine variant | genuine OE variant, but not the conservative comparison form |
 | _þrēo_ | attested feminine-neuter nom./acc. | same numeral, different paradigm cell |
 | _þrēora_, _þrim_ | attested genitive and dative forms | confirm the wider paradigm, not the selected cell |
 
@@ -4977,7 +4977,7 @@ Proto input: _\*wábsaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4990,8 +4990,8 @@ Proto input: _\*wábsaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*wábsa} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*wábsa} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5000,7 +5000,7 @@ PGmc Final Z Deletion & \emph{*wábsa} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wábs} \\
 Anglo Frisian Brightening & \emph{*wæbs} \\
 PGmc B Allophony & \emph{*wæβs} \\
@@ -5024,7 +5024,7 @@ form.
 Fulk presents the Old English forms together as _wæfs_ with variants _wæsp_ and
 _wæps_ [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
 explicit by deriving later _wæps_ and late West Saxon _wasp_ from earlier
-_waefs / wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
+waefs / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
 #### Old English evidence
@@ -5032,7 +5032,7 @@ _waefs / wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 The earliest directly cited Old English form is _wæfs_, written _waefs_ in
 the Épinal-Corpus material discussed by Bülbring and Brunner
 [@Bulbring1902, §484 Anm. 3; @SieversBrunner1965, §193]. Later Old English also
-shows _wæps_ and _wæsp / wasp_, and dictionary practice often favors
+shows _wæps_ and _wæsp_ / wasp, and dictionary practice often favors
 _wæps_ or later spellings as headwords [@ClarkHall1960].
 
 This entry therefore distinguishes chronological priority from headword habit.
@@ -5045,7 +5045,7 @@ From _\*wábsaz_, the regular Old English path passes through loss of final _z_,
 Anglo-Frisian fronting, and the allophonic development of _b_ to a fricative
 before _s_, yielding _wæfs_.
 
-The later forms _wæps_ and _wæsp / wasp_ belong to subsequent, lexically
+The later forms _wæps_ and _wæsp_ / wasp belong to subsequent, lexically
 restricted metatheses. They are genuine Old English forms, but they are later
 within the variant history.
 
@@ -5058,7 +5058,7 @@ form from the later metathesized doublets.
 | :--- | :--- | :--- |
 | _wæfs_ | earliest attested OE form; regular trace output | selected target |
 | _wæps_ | later attested metathesized variant | genuine OE doublet, but secondary |
-| _wæsp / wasp_ | later West Saxon metathesized variant | genuine OE doublet, but not the selected form |
+| _wæsp_ / wasp | later West Saxon metathesized variant | genuine OE doublet, but not the selected form |
 
 \clearpage
 
@@ -5082,7 +5082,7 @@ Proto input: _\*búttmaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5095,9 +5095,9 @@ Proto input: _\*búttmaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*bóttmaz} \\
-PGmc Final Z Deletion & \emph{*bóttma} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*bóttmaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*bóttma} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5106,7 +5106,7 @@ PGmc Final Z Deletion & \emph{*bóttma} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*bóttm} \\
 OE Preconsonantal Degemination & \emph{*bótm} \\
 \end{tabular}
@@ -5121,13 +5121,13 @@ Outcome: _botm_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the word as a stem complex _\*budmō, gen. \*buttaz_,
-summarized as _\*budman- ~ \*buttman-_, and gives Old English _botm_ as the reflex
+Kroonen reconstructs the word as a stem complex _\*budmō_, gen. _\*buttaz_,
+summarized as _\*budman-_ ~ _\*buttman-_, and gives Old English _botm_ as the reflex
 [@Kroonen2013, 120]. The comparative label _\*búdmaz_ names the lexeme-level stem
 complex, while the selected input _\*búttmaz_ represents the pre-Old-English
 form with oblique _\*butt-_ generalized into the nominative formation.
 
-Orel likewise preserves both sides of the comparison under _\*budmaz \*butmaz_
+Orel likewise preserves both sides of the comparison under _\*budmaz_ _\*butmaz_
 [@Orel2003, 100]. The selected input is thus a historical stem choice, not an
 arbitrary respelling.
 
@@ -5158,7 +5158,7 @@ Proto input: _\*brándas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5179,7 +5179,7 @@ Proto input: _\*brándas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*brándæs} \\
 OE Unstressed AE Merger & \emph{*brándes} \\
 \end{tabular}
@@ -5252,7 +5252,7 @@ Proto input: _\*bréustą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5273,7 +5273,7 @@ Proto input: _\*bréustą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Diphthong Leveling & \emph{*brēostą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*brēost} \\
 \end{tabular}
@@ -5312,7 +5312,7 @@ comparison form is therefore the thematic Old English noun _brēost_.
 #### Development to Old English
 
 From _\*bréustą_, the regular Old English development gives _brēost_, with the
-expected _eu > ēo_ vowel history [@Campbell1959]. No special repair is needed
+expected eu > _ēo_ vowel history [@Campbell1959]. No special repair is needed
 once the correct thematic formation is chosen.
 
 The earlier mismatch arose only if the word was forced into the root-noun line.
@@ -5344,7 +5344,7 @@ Proto input: _\*kráftaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5357,8 +5357,8 @@ Proto input: _\*kráftaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*kráfta} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*kráfta} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5367,7 +5367,7 @@ PGmc Final Z Deletion & \emph{*kráfta} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*kráft} \\
 Anglo Frisian Brightening & \emph{*kræft} \\
 \end{tabular}
@@ -5383,7 +5383,7 @@ Outcome: _cræft_
 #### Reconstruction and comparative evidence
 
 Comparative sources disagree about the older stem class. Kroonen gives a u-stem
-_\*kraftu-_, while Orel prints _\*kraftiz ~ \*kraftuz_ [@Kroonen2013, 340; @Orel2003,
+_\*kraftu-_, while Orel prints _\*kraftiz_ ~ _\*kraftuz_ [@Kroonen2013, 340; @Orel2003,
 259].
 The comparative label _\*kráftiz_ remains in view as a lexeme-level shorthand,
 while _\*kráftaz_ is the pre-Old-English form used for the Old English
@@ -5426,7 +5426,7 @@ Proto input: _\*déliz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5439,8 +5439,8 @@ Proto input: _\*déliz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*déli} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*déli} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5449,7 +5449,7 @@ PGmc Final Z Deletion & \emph{*déli} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE I Umlaut & \emph{*dili} \\
 OE Med Unstressed I Lowering1 & \emph{*dile} \\
 \end{tabular}
@@ -5521,7 +5521,7 @@ Proto input: _\*fástijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5542,7 +5542,7 @@ Proto input: _\*fástijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*fæstijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*fæstijan} \\
 OE Secondary Nasalization & \emph{*fæstijąn} \\
@@ -5623,7 +5623,7 @@ Proto input: _\*fláskōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5636,7 +5636,7 @@ Proto input: _\*fláskōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*fláskǭ} \\
 \end{tabular}
 \end{minipage}
@@ -5646,7 +5646,7 @@ NWGmc N Stem N Loss & \emph{*fláskǭ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*flæskǭ} \\
 OE A Restoration & \emph{*flaskǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
@@ -5719,7 +5719,7 @@ Proto input: _\*fúlgijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5740,7 +5740,7 @@ Proto input: _\*fúlgijaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*fúlgijan} \\
 OE Secondary Nasalization & \emph{*fúlgijąn} \\
 Sievers Law Syncope & \emph{*fúlgjąn} \\
@@ -5765,10 +5765,10 @@ adding that Old Norse _fylgja_ and Old English _fylg(e)an_ continue a formation
 _\*fulgjan-_ [@Kroonen2013]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
-Ringe and Taylor make the split explicit as _PNWGmc \*fulgija- ~ \*fulgai- > OE fylgan ~ folgian_ and describe it as a dual formation that probably reflects an
+Ringe and Taylor make the split explicit as PNWGmc _\*fulgija-_ ~ _\*fulgai-_ > OE _fylgan_ ~ folgian and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, pp. 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
-_\*fúlgijaną_ belongs to the class-I _\*fulgija- / \*fulgjan-_ branch; the citation
+_\*fúlgijaną_ belongs to the class-I _\*fulgija-_ / _\*fulgjan-_ branch; the citation
 form _\*fulgēną_ belongs to the parallel class-II history behind _folgian_.
 
 #### Old English evidence
@@ -5782,7 +5782,7 @@ Bright treats _fylg(e)an_ as a survival of the older conjugation and contrasts
 it with forms that have conformed to the Second Conjugation, _folgian, folgode_
 [@BrightCassidyRingler1971]. The relevant comparison form in this entry is
 therefore the class-I verb _fylgan / fylgean_, here normalized as _fylġan_.
-The spelling with _<ġ>_ represents the palatalized velar before a front-vocalic
+The spelling with _<ġ_> represents the palatalized velar before a front-vocalic
 environment.
 
 #### Development to Old English
@@ -5796,7 +5796,7 @@ The same front-vocalic environment then triggers i-umlaut, so _u_ becomes _y_
 The subsequent Old English developments are palatalization of the velar,
 weak-tail reduction, and loss of _j_ after a heavy syllable, yielding
 _fylġan_. This is the regular outcome of the class-I formation. The class-II
-form _folgian_ belongs to the parallel _\*-ē- / \*-ai-_ branch and is not the
+form _folgian_ belongs to the parallel _\*-ē-_ / _\*-ai-_ branch and is not the
 form modeled here.
 
 #### Class comparison
@@ -5812,7 +5812,7 @@ no full automatic class probe is presented here.
 | selected class-I formation | *fúlgijaną | compact-trace output: _fylġan_ | fylġan / fylgan | exact match between input, output, and class |
 
 The relevant point is the class split. _fylġan_ is the regular Old English
-outcome of the class-I _\*fulgija- / \*fulgjan-_ formation, whereas _folgian_
+outcome of the class-I _\*fulgija-_ / _\*fulgjan-_ formation, whereas _folgian_
 belongs to the parallel class-II branch.
 
 ### gall — OE ġealla
@@ -5828,7 +5828,7 @@ Proto input: _\*gállô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5849,7 +5849,7 @@ Proto input: _\*gállô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gællô} \\
 OE Breaking & \emph{*geallô} \\
 OE Velar Palatalization & \emph{*ʤeallô} \\
@@ -5880,7 +5880,7 @@ strong-noun headword does not align as closely with the attested OE noun.
 Old English dictionaries record the noun as _gealla_, and Bright also gives the
 dative _geallan_, confirming a weak-noun paradigm [@BosworthToller1898, 297;
 @ClarkHall1960, 145; @BrightCassidyRingler1971, 372]. The form used here, _ġealla_, is
-a normalized spelling with macrons omitted and palatal _<ġ>_ made explicit.
+a normalized spelling with macrons omitted and palatal _<ġ_> made explicit.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
 _gealla_ with Anglian _galla_ [@Campbell1959]. The target of this entry is the
@@ -5925,7 +5925,7 @@ Proto input: _\*knéxtaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5938,8 +5938,8 @@ Proto input: _\*knéxtaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*knéxta} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*knéxta} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5948,7 +5948,7 @@ PGmc Final Z Deletion & \emph{*knéxta} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*knéxt} \\
 OE Breaking & \emph{*knéoxt} \\
 OE Ws Palatal Umlaut & \emph{*knixt} \\
@@ -6015,7 +6015,7 @@ Proto input: _\*xláðaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6023,7 +6023,7 @@ Proto input: _\*xláðaną_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*xládaną} \\
 \end{tabular}
 \vspace{0.6em}
@@ -6038,7 +6038,7 @@ PWGmc Dental Hardening & \emph{*xládaną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xlædaną} \\
 OE A Restoration & \emph{*xladaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*xladan} \\
@@ -6105,7 +6105,7 @@ Proto input: _\*láppô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6126,7 +6126,7 @@ Proto input: _\*láppô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*læppô} \\
 OE A Restoration & \emph{*lappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*lappa} \\
@@ -6196,7 +6196,7 @@ Proto input: _\*xláxjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6204,7 +6204,7 @@ Proto input: _\*xláxjaną_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc J Gemination & \emph{*xláxxjaną} \\
 \end{tabular}
 \vspace{0.6em}
@@ -6219,7 +6219,7 @@ PWGmc J Gemination & \emph{*xláxxjaną} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xlæxxjaną} \\
 OE Breaking & \emph{*xleaxxjaną} \\
 OE Velar Fricative Palatalization & \emph{*xleaxçjaną} \\
@@ -6291,7 +6291,7 @@ Proto input: _\*láimą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6299,7 +6299,7 @@ Proto input: _\*láimą_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*lāmą} \\
 \end{tabular}
 \vspace{0.6em}
@@ -6314,7 +6314,7 @@ PWGmc Ai Monophthongization & \emph{*lāmą} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*lām} \\
 \end{tabular}
 \end{minipage}
@@ -6375,7 +6375,7 @@ Proto input: _\*lúnganjō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6383,15 +6383,15 @@ Proto input: _\*lúnganjō_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc J Gemination & \emph{*lúngannjō} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*lúngannju} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*lúngannju} \\
 \end{tabular}
 \end{minipage}
 &
@@ -6400,9 +6400,9 @@ NWGmc Final Long O Raising & \emph{*lúngannju} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE I Umlaut & \emph{*lúngennju} \\
-OE High Vowel Apocope & \emph{*lúngennj} \\
+\mbox{OE High Vowel Apocope} & \emph{*lúngennj} \\
 OE J Loss After Heavy & \emph{*lúngenn} \\
 OE Final Geminate Simplification & \emph{*lúngen} \\
 \end{tabular}
@@ -6468,7 +6468,7 @@ Proto input: _\*nábulô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6489,7 +6489,7 @@ Proto input: _\*nábulô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*nábolô} \\
 Anglo Frisian Brightening & \emph{*næbolô} \\
 OE A Restoration & \emph{*nabolô} \\
@@ -6508,7 +6508,7 @@ Outcome: _nafola_
 #### Reconstruction and comparative evidence
 
 Kroonen lemmatizes the word with a syncopated comparative headword _\*nablô_,
-while Ringe and Taylor give the derivational pathway _\*nabulō > \*næbula > nafola_ [@Kroonen2013; @RingeTaylor2014]. The difference is one of stage and
+while Ringe and Taylor give the derivational pathway _\*nabulō_ > _\*næbula_ > nafola [@Kroonen2013; @RingeTaylor2014]. The difference is one of stage and
 notation rather than of lexeme identity: the selected input _\*nábulô_ is the
 pre-syncope form needed for the Old English development.
 
@@ -6562,7 +6562,7 @@ Proto input: _\*xnékkô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6583,7 +6583,7 @@ Proto input: _\*xnékkô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*xnékka} \\
 \end{tabular}
 \end{minipage}
@@ -6650,7 +6650,7 @@ Proto input: _\*nḗðlō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6658,16 +6658,16 @@ Proto input: _\*nḗðlō_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*nḗdlō} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*nḗdlu} \\
-NWGmc Long E Lowering & \emph{*nǣdlu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*nḗdlu} \\
+\mbox{NWGmc Long E Lowering} & \emph{*nǣdlu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -6676,8 +6676,8 @@ NWGmc Long E Lowering & \emph{*nǣdlu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*nǣdl} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*nǣdl} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -6691,7 +6691,7 @@ Outcome: _nǣdl_
 #### Reconstruction and comparative evidence
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, and Ringe also
-cites the pair _\*nēþlō- ~ \*nēdlō-_ [@RingeTaylor2014; @Ringe2006]. The selected
+cites the pair _\*nēþlō-_ ~ _\*nēdlō-_ [@RingeTaylor2014; @Ringe2006]. The selected
 input _\*nḗðlō_ is the voiced Verner-grade form used for the Old English
 comparison, while the citation form _\*nḗθlō_ remains the broader lexeme label.
 
@@ -6741,7 +6741,7 @@ Proto input: _\*núsō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6754,9 +6754,9 @@ Proto input: _\*núsō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*nósō} \\
-NWGmc Final Long O Raising & \emph{*nósu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*nósō} \\
+\mbox{NWGmc Final Long O Raising} & \emph{*nósu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -6777,14 +6777,14 @@ Outcome: _nosu_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a Germanic ablaut pair _\*nasō- ~ \*nusō-_ and adds that the
+Kroonen reconstructs a Germanic ablaut pair _\*nasō-_ ~ _\*nusō-_ and adds that the
 root _\*nus-_ is likely to have arisen as a secondary zero grade after a
 remodeling of the older paradigm [@Kroonen2013]. Campbell is more specific for
-Old English, citing _nosu < \*nusō_ [@Campbell1959].
+Old English, citing nosu < _\*nusō_ [@Campbell1959].
 
 The citation reconstruction _\*nasō_ is therefore best treated as the full-grade
 comparative headword, while the selected input _\*núsō_ represents the remodeled
-zero-grade line continued by the Old English form discussed here. Orel's _\*nasō ... OE nasu_ preserves the competing full-grade notation and shows that the two
+zero-grade line continued by the Old English form discussed here. Orel's _\*nasō_ ... OE _nasu_ preserves the competing full-grade notation and shows that the two
 lines should not be collapsed without comment [@Orel2003].
 
 #### Old English evidence
@@ -6801,7 +6801,7 @@ a parallel notation belonging to the full-grade side of the tradition.
 #### Development to Old English
 
 From _\*núsō_, the regular path is the one documented by the current trace:
-_\*núsō > \*nósō > \*nósu > nosu_. The early special step lies in the choice of the
+_\*núsō_ > _\*nósō_ > _\*nósu_ > nosu. The early special step lies in the choice of the
 zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
@@ -6830,7 +6830,7 @@ Proto input: _\*sápą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6851,7 +6851,7 @@ Proto input: _\*sápą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*sæpą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sæp} \\
 \end{tabular}
@@ -6868,9 +6868,9 @@ Outcome: _sæp_
 
 The comparative sources do not give one uniform inherited stem. Kroonen derives
 the word family from material pointing to dialectal dissolution of a primary
-n-stem _\*safō, gen. \*sappaz_ [@Kroonen2013]. Orel preserves the comparative
-notation _\*sapōn ~ \*sapan_ [@Orel2003], while Kluge-Seebold instead gives West
-Germanic _\*sapi-_ and still cites Old English _sæp n._ [@KlugeSeebold2011].
+n-stem _\*safō_, gen. _\*sappaz_ [@Kroonen2013]. Orel preserves the comparative
+notation _\*sapōn_ ~ _\*sapan_ [@Orel2003], while Kluge-Seebold instead gives West
+Germanic _\*sapi-_ and still cites Old English _sæp_ n. [@KlugeSeebold2011].
 
 The selected input _\*sápą_ therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated
@@ -6878,8 +6878,8 @@ here.
 
 #### Old English evidence
 
-Clark Hall records _sæp (e) n._ [@ClarkHall1960], and Kluge-Seebold likewise
-cites _ae. sæp n._ [@KlugeSeebold2011]. The target is therefore an attested
+Clark Hall records _sæp_ (e) n. [@ClarkHall1960], and Kluge-Seebold likewise
+cites ae. _sæp_ n. [@KlugeSeebold2011]. The target is therefore an attested
 neuter Old English noun. Orel's plain _sap_ notation belongs to comparative
 normalization, not to the spelling adopted here for the Old English form
 [@Orel2003].
@@ -6920,7 +6920,7 @@ Proto input: _\*sáiwiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6928,15 +6928,15 @@ Proto input: _\*sáiwiz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*sāwiz} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*sāwi} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*sāwi} \\
 \end{tabular}
 \end{minipage}
 &
@@ -6945,10 +6945,10 @@ PGmc Final Z Deletion & \emph{*sāwi} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE W Loss Before I & \emph{*sāi} \\
 OE I Umlaut & \emph{*sǣi} \\
-OE High Vowel Apocope & \emph{*sǣ} \\
+\mbox{OE High Vowel Apocope} & \emph{*sǣ} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -6963,7 +6963,7 @@ Outcome: _sǣ_
 
 Kroonen gives the noun in stem notation as _\*saiwi-_, an i-stem whose English
 reflex is cited as OE _sæ_ [@Kroonen2013]. Ringe and Taylor write the fuller
-form _\*saiwiz_ and derive it through _\*sawi > \*sei > OE sǣ_
+form _\*saiwiz_ and derive it through _\*sawi_ > _\*sei_ > OE _sǣ_
 [@RingeTaylor2014, §6.7.1]. The comparative headword is therefore shorter than
 the form required for the English history: _\*sái_ names the lexeme, but
 _\*sáiwiz_ preserves the medial _\*w_ and the final high vowel that control the
@@ -6973,16 +6973,16 @@ later development.
 
 The Old English noun is the ordinary word for ‘sea’. Kroonen cites it as _sæ_;
 the normalized form here is _sǣ_ [@Kroonen2013]. Campbell likewise treats
-_sea_ as continuing the same _\*saiui- > \*sǣi_ history, with loss of _u/w_
+_sea_ as continuing the same _\*saiui-_ > _\*sǣi_ history, with loss of _u/w_
 before _i_ [@Campbell1959, §406].
 
 #### Development to Old English
 
 Once the fuller i-stem input is chosen, the development is regular. After
-Proto-West-Germanic monophthongization _\*sáiwiz > \*sāwiz_ and final _\*-z_ loss
-_\*sāwiz > \*sāwi_, the non-initial _\*w_ disappears before unstressed _\*i_, and
+Proto-West-Germanic monophthongization _\*sáiwiz_ > _\*sāwiz_ and final _\*-z_ loss
+_\*sāwiz_ > _\*sāwi_, the non-initial _\*w_ disappears before unstressed _\*i_, and
 the following high vowel fronts the root vowel before final apocope. The
-documented chain is _\*sáiwiz > \*sāwiz > \*sāwi > \*sāi > \*sǣi > sǣ_
+documented chain is _\*sáiwiz_ > _\*sāwiz_ > _\*sāwi_ > _\*sāi_ > _\*sǣi_ > _sǣ_
 [@RingeTaylor2014, §6.7.1; @Campbell1959, §406].
 
 #### Stem and stage comparison
@@ -6992,7 +6992,7 @@ headword from the fuller i-stem input that yields the Old English form.
 
 | Formation / label | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| abbreviated comparative headword | *sái | too short to preserve the _\*w ... \*i_ environment needed for the documented chronology | sǣ | useful comparative label, but not the selected OE-facing input |
+| abbreviated comparative headword | *sái | too short to preserve the _\*w_ ... _\*i_ environment needed for the documented chronology | sǣ | useful comparative label, but not the selected OE-facing input |
 | selected i-stem input | *sáiwiz | documented trace output: _sǣ_ | sǣ | exact match between selected input and Old English target |
 
 ### sieve — OE sife
@@ -7008,7 +7008,7 @@ Proto input: _\*síbi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7029,7 +7029,7 @@ Proto input: _\*síbi_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PGmc B Allophony & \emph{*síβi} \\
 OE Med Unstressed I Lowering1 & \emph{*síβe} \\
 \end{tabular}
@@ -7044,13 +7044,13 @@ Outcome: _sife_
 
 #### Reconstruction and comparative evidence
 
-Kluge-Seebold gives _wg. \*sibi- n. ... ae. sife_, and Campbell groups _sife_
+Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. sife, and Campbell groups _sife_
 with short neuter i-stems such as _spere_ [@KlugeSeebold2011;
 @Campbell1959, §609]. The older morphological background is the s-stem
 _\*sib-iz_, but the selected input is the normalized i-stem form _\*síbi_.
 
 Kroonen's relevant nearby entry is not ‘sieve’ but _\*sebjō-_ ‘kinship’, the
-source of Old English _sibb_ [@Kroonen2013]. Orel's _\*sibaz ... OE sife_
+source of Old English _sibb_ [@Kroonen2013]. Orel's _\*sibaz_ ... OE _sife_
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003].
 
@@ -7064,7 +7064,7 @@ spelling rather than a separate lexeme.
 
 #### Development to Old English
 
-From _\*síbi_, the documented trace gives _\*síβi > \*síβe > sife_. Medial _b_
+From _\*síbi_, the documented trace gives _\*síβi_ > _\*síβe_ > sife. Medial _b_
 is realized as a spirant and later written _f_, while the final unstressed _i_
 lowers to _e_. The older s-stem background _\*sib-iz_ explains the morphology,
 but the selected input _\*síbi_ is the immediate pre-Old-English form.
@@ -7093,7 +7093,7 @@ Proto input: _\*spárōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7114,7 +7114,7 @@ Proto input: _\*spárōjaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*spærōjaną} \\
 OE A Restoration & \emph{*sparōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sparōjan} \\
@@ -7136,8 +7136,8 @@ Outcome: _sparian_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel keep the inherited verb under class-III _\*sparēn- / \*sparēnan_ [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
-_\*sparai- ~ \*sparja-_ for the English branch and derive the citation verb from a
+Kroonen and Orel keep the inherited verb under class-III _\*sparēn-_ / _\*sparēnan_ [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
+_\*sparai-_ ~ _\*sparja-_ for the English branch and derive the citation verb from a
 class-II line [@RingeTaylor2014, pp. 162, 191]. The selected input
 _\*spárōjaną_ therefore represents the refashioned class-II formation behind Old
 English _sparian_, while the citation reconstruction _\*sparēną_ remains the
@@ -7188,7 +7188,7 @@ Proto input: _\*stábaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7201,8 +7201,8 @@ Proto input: _\*stábaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*stába} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*stába} \\
 \end{tabular}
 \end{minipage}
 &
@@ -7211,7 +7211,7 @@ PGmc Final Z Deletion & \emph{*stába} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*stáb} \\
 Anglo Frisian Brightening & \emph{*stæb} \\
 PGmc B Allophony & \emph{*stæβ} \\
@@ -7228,7 +7228,7 @@ Outcome: _stæf_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem _\*staba-_ [@Kroonen2013], Orel writes _\*stabiz ~ \*stabaz_ [@Orel2003], and Kluge-Seebold explicitly marks _g. \*stabi-/a-_
+reconstructs an a-stem _\*staba-_ [@Kroonen2013], Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003], and Kluge-Seebold explicitly marks g. _\*stabi-_/a-
 [@KlugeSeebold2011]. That disagreement matters because a direct i-stem input in
 _\*-iz_ would predict i-mutation in Old English, whereas the attested noun keeps
 _æ_.
@@ -7246,7 +7246,7 @@ belongs to a later stage of the word's history.
 With the selected a-stem input, the development is regular. Final _\*-z_
 disappears, bare final _-a_ is lost, Anglo-Frisian brightening gives _æ_ in the
 closed monosyllable, and medial _b_ surfaces as a fricative written _f_. The
-documented chain is _\*stábaz > \*stába > \*stáb > \*stæb > stæf_. A direct
+documented chain is _\*stábaz_ > _\*stába_ > _\*stáb_ > _\*stæb_ > _stæf_. A direct
 continuation of _\*stábiz_, by contrast, would produce i-mutated _stefe_ rather
 than the attested singular.
 
@@ -7258,7 +7258,7 @@ selected a-stem input.
 | Formation / label | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative i-stem line | *stábiz | expected _stefe_ after i-mutation | stæf | wrong vowel for the attested singular |
-| mixed comparative notation | Orel _\*stabiz ~ \*stabaz_; Kluge _\*stabi-/a-_ | source-level stem-class uncertainty | stæf | useful comparative background, but not a single OE-facing input |
+| mixed comparative notation | Orel _\*stabiz_ ~ _\*stabaz_; Kluge _\*stabi-_/a- | source-level stem-class uncertainty | stæf | useful comparative background, but not a single OE-facing input |
 | selected a-stem input | *stábaz | documented trace output: _stæf_ | stæf | exact match between selected input and Old English target |
 
 ### stem — OE stefn
@@ -7274,7 +7274,7 @@ Proto input: _\*stébnō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7287,8 +7287,8 @@ Proto input: _\*stébnō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Final Long O Raising & \emph{*stébnu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Final Long O Raising} & \emph{*stébnu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -7297,9 +7297,9 @@ NWGmc Final Long O Raising & \emph{*stébnu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PGmc B Allophony & \emph{*stéβnu} \\
-OE High Vowel Apocope & \emph{*stéβn} \\
+\mbox{OE High Vowel Apocope} & \emph{*stéβn} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -7315,7 +7315,7 @@ Outcome: _stefn_
 The source tradition behind _stefn_ is not the same as the comparative label
 _\*stámnaz_. Ringe and Taylor cite _\*stebnō_ for the noun continued by
 Gothic _stibna_ and Old English _stebn > stefn > stemn_ [@RingeTaylor2014, p.
-330]. Orel likewise gives _\*stebnō ~ \*stemnō_, whereas Kroonen prefers
+330]. Orel likewise gives _\*stebnō_ ~ _\*stemnō_, whereas Kroonen prefers
 _\*stimnō-_, and Fulk describes the etymology of _stefn, stemn_ as insecure
 [@Orel2003, p. 374; @Kroonen2013, p. 480; @Fulk2018, §6.11 n. 6].
 
@@ -7368,7 +7368,7 @@ Proto input: _\*swánas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7389,7 +7389,7 @@ Proto input: _\*swánas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*swánæs} \\
 OE Unstressed AE Merger & \emph{*swánes} \\
 \end{tabular}
@@ -7409,15 +7409,15 @@ The Germanic noun is ordinarily cited as the masculine a-stem _\*swanaz_
 lexeme reconstruction. It is the **genitive singular** of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains _\*swanaz > swan_; the selected comparison form is the
-genitive singular _\*swánas > swanes_.
+The citation form remains _\*swanaz_ > swan; the selected comparison form is the
+genitive singular _\*swánas_ > swanes.
 
 #### Old English evidence
 
 Old English dictionaries give the ordinary headword as _swan_
 [@ClarkHall1960]. Bright's glossary, however, also records the exact inflected
 form _swanes_, glossing _swan, m., swan: gs. swanes_ and citing the phrase
-_swanes feðre_ [@BrightCassidyRingler1971].
+swanes _feðre_ [@BrightCassidyRingler1971].
 
 The target is therefore an **attested Old English genitive singular**, not a
 reconstruction. It is also not the ordinary citation lemma. The entry must keep
@@ -7453,7 +7453,7 @@ Proto input: _\*θūsèndi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7461,7 +7461,7 @@ Proto input: _\*θūsèndi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*θūsènd} \\
 \end{tabular}
 \vspace{0.6em}
@@ -7476,7 +7476,7 @@ PWGmc Early I Apocope & \emph{*θūsènd} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 OE Strip Secondary Stress & \emph{*θūsend} \\
 \end{tabular}
 \end{minipage}
@@ -7549,7 +7549,7 @@ Proto input: _\*tímbrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7570,7 +7570,7 @@ Proto input: _\*tímbrą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tímbr} \\
 OE Epenthetic Vowel & \emph{*tímber} \\
 \end{tabular}
@@ -7587,7 +7587,7 @@ Outcome: _timber_
 
 Kroonen reconstructs the noun as _\*timbra-_ and cites Old English
 _timber_ among its continuations [@Kroonen2013]. Ringe and Taylor instead
-state the history from _PGmc \*timra_ through West Germanic _\*timbr_ to
+state the history from PGmc _\*timra_ through West Germanic _\*timbr_ to
 Old English _timber_ [@RingeTaylor2014].
 
 The difference is therefore not over the Old English noun itself. It concerns
@@ -7605,7 +7605,7 @@ citation noun, not a selected oblique cell or a reconstructed convenience form.
 With the consonantal frame _timbr-_ in place, the rest of the development is
 straightforward. Loss of final _-ą_ leaves _\*tímbr_, and epenthetic
 _e_ in the final cluster yields _timber_. Ringe and Taylor's
-_\*timra > \*timbr > OE timber_ and the handbook treatment of this epenthetic
+_\*timra_ > _\*timbr_ > OE _timber_ and the handbook treatment of this epenthetic
 vowel point to the same Old English result [@RingeTaylor2014; @Campbell1959,
 §§463-464].
 
@@ -7617,7 +7617,7 @@ OE-facing consonantal input.
 | Formation or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
 | Kroonen's comparative citation | _\*timbra-_ | already matches the consonantal frame of OE _timber_ | closest comparative support for the selected input |
-| Ringe-Taylor citation line | _\*timra > \*timbr_ | reaches the same OE noun through early cluster expansion | compatible comparative background |
+| Ringe-Taylor citation line | _\*timra_ > _\*timbr_ | reaches the same OE noun through early cluster expansion | compatible comparative background |
 | modeled input | _\*tímbrą_ | trace output: _timber_ | selected OE-facing input |
 
 ### wake — OE wacan
@@ -7633,7 +7633,7 @@ Proto input: _\*wákaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7654,7 +7654,7 @@ Proto input: _\*wákaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wækaną} \\
 OE A Restoration & \emph{*wakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wakan} \\
@@ -7674,7 +7674,7 @@ Outcome: _wacan_
 
 Kroonen gives the strong verb as _\*wakan-_ with Old English
 _wacan_ [@Kroonen2013]. Ringe and Taylor separately derive Old English
-_wacian_ from weak _\*wakai- ~ \*wakja-_ [@RingeTaylor2014, §3.3.2].
+_wacian_ from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
 _wacan_ 'wake up, arise' and weak _wacian_ 'be awake, watch' belong to
@@ -7704,7 +7704,7 @@ The comparison below is manual. It separates the strong and weak verb lines.
 
 | Formation / class | Candidate input | OE outcome or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| weak class-III / class-II branch | _\*wakēną_, _\*wakai- ~ \*wakja-_ | OE _wacian_ and related weak forms | related lexeme, but not the target of this entry |
+| weak class-III / class-II branch | _\*wakēną_, _\*wakai-_ ~ _\*wakja-_ | OE _wacian_ and related weak forms | related lexeme, but not the target of this entry |
 | strong class-VI branch | _\*wákaną_ | trace output: _wacan_ | selected OE-facing input |
 | strong normalized headword | _wacan_ | dictionary comparison form beside attested strong-family forms | correct Old English comparator, though not a directly quoted simplex infinitive |
 
@@ -7721,7 +7721,7 @@ Proto input: _\*wátōr_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7729,7 +7729,7 @@ Proto input: _\*wátōr_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Or Lowering & \emph{*wátar} \\
 \end{tabular}
 \vspace{0.6em}
@@ -7744,7 +7744,7 @@ PWGmc Final Or Lowering & \emph{*wátar} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wætær} \\
 OE Unstressed AE Merger & \emph{*wæter} \\
 \end{tabular}
@@ -7759,8 +7759,8 @@ Outcome: _wæter_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a heteroclitic noun _\*watar-~\*watan-_ and states that
-the Proto-Germanic material points to _\*watōr, \*watenaz_
+Kroonen reconstructs a heteroclitic noun _\*watar-_~_\*watan-_ and states that
+the Proto-Germanic material points to _\*watōr_, _\*watenaz_
 [@Kroonen2013, p. 616]. Ringe and Taylor likewise start from singular
 _\*wator_ before the Old English branch [@RingeTaylor2014, §3.1.4].
 
@@ -7771,7 +7771,7 @@ comparator is the inherited nominative-accusative singular _\*wátōr_.
 #### Old English evidence
 
 Bright gives the noun as _wæter_ with the regular paradigm
-_wæteres, wætere, wæter(u), wætera, wæterum_
+_wæteres_, _wætere_, _wæter(u)_, _wætera_, _wæterum_
 [@BrightCassidyRingler1971]. Ringe and Taylor add the dialectal contrast
 between West Saxon _weeter_ and Mercian _weter_
 [@RingeTaylor2014, §6.5.2].
@@ -7784,7 +7784,7 @@ Old English attestation.
 
 From _\*wátōr_, pre-final _\*ō_ becomes _a_ before final _r_,
 yielding _\*watar_ [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then
-gives _\*wætær_, and merger of unstressed _æ/e_ yields _wæter_.
+gives _\*wætær_, and merger of unstressed _æ_/e yields _wæter_.
 
 #### Stage comparison
 
@@ -7794,7 +7794,7 @@ the singular input that matches the Old English citation form.
 | Stage or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
 | generalized comparative label | _\*wátną_ | broader lexeme shorthand, not the singular that corresponds directly to _wæter_ | useful background only |
-| heteroclitic stem notation | _\*watar-~\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
+| heteroclitic stem notation | _\*watar-_~_\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
 | inherited singular input | _\*wátōr_ | trace output: _wæter_ | selected OE-facing input |
 
 ### whale — OE hwæl
@@ -7810,7 +7810,7 @@ Proto input: _\*xwálaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7823,8 +7823,8 @@ Proto input: _\*xwálaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*xwála} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*xwála} \\
 \end{tabular}
 \end{minipage}
 &
@@ -7833,7 +7833,7 @@ PGmc Final Z Deletion & \emph{*xwála} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xwál} \\
 Anglo Frisian Brightening & \emph{*xwæl} \\
 \end{tabular}
@@ -7898,7 +7898,7 @@ Proto input: _\*xwḯnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -7919,7 +7919,7 @@ Proto input: _\*xwḯnaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xwḯnan} \\
 OE Secondary Nasalization & \emph{*xwḯnąn} \\
 OE Weak Tail Reduction & \emph{*xwḯnan} \\
@@ -7995,7 +7995,7 @@ Proto input: _\*wḯθagą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8016,7 +8016,7 @@ Proto input: _\*wḯθagą_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wḯθægą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wḯθæg} \\
 OE Velar Palatalization & \emph{*wḯθæʤ} \\
@@ -8035,7 +8035,7 @@ Outcome: _wīþiġ_
 #### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-_\*wīþja/ō-_ or _\*wiþ-_ type [@KlugeSeebold2011; @Orel2003]. That material is
+_\*wīþja_/_ō-_ or _\*wiþ-_ type [@KlugeSeebold2011; @Orel2003]. That material is
 useful for the cognate set, but it does not by itself explain the Old English
 suffix of _wīþiġ_.
 
@@ -8052,7 +8052,7 @@ formation choice rather than a mere respelling of the comparative headword.
 
 Clark Hall records the noun as _wiðig_, with related inflected forms of the
 same lexical base [@ClarkHall1960]. The form used here, _wīþiġ_, is a
-normalized Old English spelling with macrons and palatal _<ġ>_.
+normalized Old English spelling with macrons and palatal _<ġ_>.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
@@ -8096,7 +8096,7 @@ Proto input: _\*wíràldu_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8109,7 +8109,7 @@ Proto input: _\*wíràldu_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc I Lowering & \emph{*wéràldu} \\
 \end{tabular}
 \end{minipage}
@@ -8119,11 +8119,11 @@ NWGmc I Lowering & \emph{*wéràldu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE Inter Stress Raising & \emph{*wéruldu} \\
 OE Med Unstressed U Lowering & \emph{*wéroldu} \\
 OE Back Mutation & \emph{*wéoroldu} \\
-OE High Vowel Apocope & \emph{*wéorold} \\
+\mbox{OE High Vowel Apocope} & \emph{*wéorold} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -8139,7 +8139,7 @@ Outcome: _weorold_
 The word is the old compound 'age of men'. Comparative sources preserve two
 slightly different views of its first element. Orel and the _\*wira-_ tradition
 keep the older _i_-vocalism, while Ringe and Taylor discuss the lowered form
-_\*weraldiz_ and its pre-Old-English chain _\*weraldu > \*weruld_
+_\*weraldiz_ and its pre-Old-English chain _\*weraldu_ > _\*weruld_
 [@Orel2003; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
 giving compound _\*wira-aldō_ beside simplex _\*wera-_ [@KlugeSeebold2011].
 
@@ -8171,7 +8171,7 @@ back mutation yields _\*wéor-oldu_; final high-vowel apocope then gives
 _weorold_.
 
 This sequence matches the comparative background in Ringe and Taylor's
-_\*weraldiz > \*weraldu > \*weruld_ chain while preserving the _\*wir-_ notation of
+_\*weraldiz_ > _\*weraldu_ > _\*weruld_ chain while preserving the _\*wir-_ notation of
 the selected comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
@@ -8184,7 +8184,7 @@ OE-facing stage chosen for the derivation.
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | _\*wíra-àldiz_ | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | _\*weraldiz > \*weraldu > \*weruld_ | Ringe-Taylor background chain to OE _weorold ~ worold_ | explains the older comparative literature cited for the word |
+| literature-stage lowered compound after early stem-class shift | _\*weraldiz_ > _\*weraldu_ > _\*weruld_ | Ringe-Taylor background chain to OE _weorold ~ worold_ | explains the older comparative literature cited for the word |
 | selected OE-facing input | _\*wír-àldu_ | compact-trace output: _weorold_ | exact match for the selected West Saxon target |
 | broader OE variant cluster | — | _worold_, _weoruld_, _woruld_, _wiarald_, _world_ | real attested comparanda that remain outside the selected target line |
 
@@ -8201,7 +8201,7 @@ Proto input: _\*júgunθ_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8214,7 +8214,7 @@ Proto input: _\*júgunθ_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE Ws Palatal Glide & \emph{*jéugunθ} \\
 NWGmc Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
 NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
@@ -8226,7 +8226,7 @@ NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Diphthong Leveling & \emph{*jéogūθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*jéoguθ} \\
 \end{tabular}
@@ -8248,8 +8248,8 @@ input _\*júgunθ_ is later again: it represents the form after final _-i_ has b
 lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
-_\*jugunþi > \*juguþ > OE geoguþ ~ iuguþ_ [@RingeTaylor2014]. Campbell makes the
-same point with the parallel _duguþ < \*dugunþ-_, adding _geoguþ_ to the same
+_\*jugunþi_ > _\*juguþ_ > OE _geoguþ_ ~ _iuguþ_ [@RingeTaylor2014]. Campbell makes the
+same point with the parallel _duguþ_ < _\*dugunþ-_, adding _geoguþ_ to the same
 history [@Campbell1959]. The selected input therefore differs from the broader
 comparative headword because the Old English development must begin after early
 loss of final _-i_.
@@ -8257,8 +8257,8 @@ loss of final _-i_.
 #### Old English evidence
 
 The Old English noun is attested with varying spellings. Campbell records forms
-of the _iuguþ / gioguð / geoguð_ type, and Ringe and Taylor likewise cite
-_geoguþ ~ iuguþ_ [@Campbell1959; @RingeTaylor2014]. The form is normalized here
+of the _iuguþ_ / _gioguð_ / _geoguð_ type, and Ringe and Taylor likewise cite
+_geoguþ_ ~ _iuguþ_ [@Campbell1959; @RingeTaylor2014]. The form is normalized here
 as _ġeoguþ_: the initial palatal is written with _ġ_, and the attested spelling
 variation is treated as orthographic rather than lexical.
 
@@ -8313,7 +8313,7 @@ Proto input: _\*bánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8334,7 +8334,7 @@ Proto input: _\*bánnas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bánnæs} \\
 OE Unstressed AE Merger & \emph{*bánnes} \\
 \end{tabular}
@@ -8397,7 +8397,7 @@ Proto input: _\*bázjas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8418,7 +8418,7 @@ Proto input: _\*bázjas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bærjæs} \\
 OE I Umlaut & \emph{*berjæs} \\
 OE Unstressed AE Merger & \emph{*berjes} \\
@@ -8434,7 +8434,7 @@ Outcome: _berġes_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the berry noun as _\*basja- ~ \*bazja-_ [@Kroonen2013]. The
+Kroonen reconstructs the berry noun as _\*basja-_ ~ _\*bazja-_ [@Kroonen2013]. The
 selected input _\*bázjas_ is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 
@@ -8480,7 +8480,7 @@ Proto input: _\*báug_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8501,7 +8501,7 @@ Proto input: _\*báug_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Au Fronting & \emph{*báeug} \\
 OE Diphthong Leveling & \emph{*bēag} \\
 \end{tabular}
@@ -8523,7 +8523,7 @@ is the singular preterite cell, whereas the citation form _\*béuganą_ is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
-preterite _au > ēa_ development as regular in this environment
+preterite au > _ēa_ development as regular in this environment
 [@Campbell1959, 53].
 That is the phonological path relevant for _bēag_, whereas the analogical _ū_
 of the present stem belongs to the separate history behind _būgan_
@@ -8580,7 +8580,7 @@ Proto input: _\*kūi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8601,9 +8601,9 @@ Proto input: _\*kūi_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE I Umlaut & \emph{*kȳi} \\
-OE High Vowel Apocope & \emph{*kȳ} \\
+\mbox{OE High Vowel Apocope} & \emph{*kȳ} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -8617,21 +8617,21 @@ Outcome: _cȳ_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs a root noun with the inherited alternation
-_\*kō- ~ \*ku-_, explicitly _nom. \*kōz, obl. \*kū-_ [@Kroonen2013, p. 299].
+_\*kō-_ ~ _\*ku-_, explicitly nom. _\*kōz_, obl. _\*kū-_ [@Kroonen2013, p. 299].
 The citation form therefore belongs to the nominative singular, whereas the
 selected input _\*kūi_ belongs to the oblique stem.
 
-Ringe and Taylor also posit a later PNWGmc nominative _\*kūaz > \*kūz_ behind Old
+Ringe and Taylor also posit a later PNWGmc nominative _\*kūaz_ > _\*kūz_ behind Old
 English _cū_ [@RingeTaylor2014, §3.1.3]. That nominative history matters for
 the headword, but the form _cȳ_ depends on the oblique _\*kū-_ stem and a
 following _\*i_.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the noun under _cū_ and records gen.sg. _cū(e), cȳ, cūs_,
+Clark Hall lemmatizes the noun under _cū_ and records gen.sg. _cū(e)_, _cȳ_, _cūs_,
 dat.sg. _cȳ_, nom.-acc.pl. _cȳ_, and dat.pl. _cūm_ [@ClarkHall1960]. Ringe and
 Taylor likewise state that the root-noun _cū_ exhibits dat.sg., nom.-acc.pl.
-_cȳ < \*cūi_, dat.pl. _cūm < \*cūm_, and apparently gen.sg. _cā < \*cūiz_
+_cȳ_ < _\*cūi_, dat.pl. _cūm_ < _\*cūm_, and apparently gen.sg. _cā_ < _\*cūiz_
 [@RingeTaylor2014, §6.6.1].
 
 The dictionary headword is therefore _cū_, but _cȳ_ is an established Old
@@ -8644,7 +8644,7 @@ the local source record.
 
 _\*kūi_ is the dative singular of the oblique _\*kū-_ stem. The following _\*i_
 triggers i-umlaut, so _ū_ becomes _ȳ_, and loss of the final high vowel leaves
-_cȳ_. The development is _\*kūi > \*kȳi > \*kȳ > cȳ_.
+_cȳ_. The development is _\*kūi_ > _\*kȳi_ > _\*kȳ_ > _cȳ_.
 
 This is the regular oblique-cell path recognized by Ringe and Taylor's paradigm
 statement [@RingeTaylor2014, §6.6.1]. It also explains why _cȳ_ is the cleanest
@@ -8662,7 +8662,7 @@ is manual; no full automatic paradigm-generation run is presented here.
 | citation nominative singular | *kōz | OE headword _cū_ belongs to the nominative history of the lexeme | cū | useful background, but not the chosen comparison for _cȳ_ |
 | later generalized nominative | PNWGmc *kūaz > *kūz | inferred nominative _cū_ | cū | explains the leveled headword, not the oblique target |
 | dative singular oblique | *kūi | compact-trace output: _cȳ_ | cȳ | exact match between input, output, and paradigm cell |
-| genitive singular oblique | *kūiz | Ringe-Taylor: apparently _cā_; Hall: _cū(e), cȳ, cūs_ | gen.sg. variable | too unstable to control the entry |
+| genitive singular oblique | *kūiz | Ringe-Taylor: apparently _cā_; Hall: _cū(e)_, _cȳ_, _cūs_ | gen.sg. variable | too unstable to control the entry |
 
 The dative singular is the relevant comparison form. It gives a regular path to
 attested _cȳ_, while the broader Old English paradigm shows how far the oblique
@@ -8681,7 +8681,7 @@ Proto input: _\*fúnðanǭ_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8689,7 +8689,7 @@ Proto input: _\*fúnðanǭ_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*fúndanǭ} \\
 \end{tabular}
 \vspace{0.6em}
@@ -8704,7 +8704,7 @@ PWGmc Dental Hardening & \emph{*fúndanǭ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Fronting Early & \emph{*fúndænǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fúndænæ} \\
 OE Unstressed AE Merger & \emph{*fúndene} \\
@@ -8781,7 +8781,7 @@ Proto input: _\*fúrxtīnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8794,8 +8794,8 @@ Proto input: _\*fúrxtīnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*fúrxtīna} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*fúrxtīna} \\
 \end{tabular}
 \end{minipage}
 &
@@ -8804,7 +8804,7 @@ PGmc Final Z Deletion & \emph{*fúrxtīna} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fúrxtīn} \\
 OE I Umlaut & \emph{*fyrxtīn} \\
 NWGmc In Stem N Loss & \emph{*fyrxtī} \\
@@ -8883,7 +8883,7 @@ Proto input: _\*xámaras_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8904,7 +8904,7 @@ Proto input: _\*xámaras_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xámæræs} \\
 OE Unstressed AE Merger & \emph{*xámeres} \\
 \end{tabular}
@@ -8973,7 +8973,7 @@ Proto input: _\*xábēθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -8981,15 +8981,15 @@ Proto input: _\*xábēθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*xábēθ} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*xábǣθ} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*xábǣθ} \\
 \end{tabular}
 \end{minipage}
 &
@@ -8998,7 +8998,7 @@ NWGmc Long E Lowering & \emph{*xábǣθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xæbǣθ} \\
 OE Velar Fricative Palatalization & \emph{*çæbǣθ} \\
 PGmc B Allophony & \emph{*çæβǣθ} \\
@@ -9020,7 +9020,7 @@ The verb belongs to the inherited class-III weak paradigm usually cited under
 _\*xabēną_ and Old English _habban_ [@Kroonen2013; @RingeTaylor2014]. Within that
 paradigm, however, the infinitive and the singular present indicative do not
 continue the same stem. Ringe and Taylor distinguish a _-ja-_ stem in the
-infinitive from a non-geminating _-ai- / -ē-_ stem in the 2sg and 3sg present
+infinitive from a non-geminating -ai- / _-ē-_ stem in the 2sg and 3sg present
 forms [@RingeTaylor2014].
 
 The selected input _\*xábēθi_ is therefore the 3sg present cell rather than a
@@ -9074,7 +9074,7 @@ Proto input: _\*xémonų_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9087,7 +9087,7 @@ Proto input: _\*xémonų_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc Unstressed O Raising & \emph{*xémunų} \\
 NWGmc Mn Dissimilation & \emph{*xéβunų} \\
 \end{tabular}
@@ -9098,11 +9098,11 @@ NWGmc Mn Dissimilation & \emph{*xéβunų} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*xéβonų} \\
 OE Velar Fricative Palatalization & \emph{*çéβonų} \\
 OE Back Mutation & \emph{*çéoβonų} \\
-OE High Vowel Apocope & \emph{*çéoβon} \\
+\mbox{OE High Vowel Apocope} & \emph{*çéoβon} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -9116,7 +9116,7 @@ Outcome: _heofon_
 #### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-_\*hemina-\* ~ \*hemna-\*_ [@Kroonen2013]. The selected input _\*xémonų_ is an
+_\*hemina-\*_ ~ _\*hemna-\*_ [@Kroonen2013]. The selected input _\*xémonų_ is an
 oblique singular form within that paradigm rather than the lexeme-level
 citation form _\*xémenaz_.
 
@@ -9171,7 +9171,7 @@ Proto input: _\*líbēθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9179,15 +9179,15 @@ Proto input: _\*líbēθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*líbēθ} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc Long E Lowering & \emph{*líbǣθ} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc Long E Lowering} & \emph{*líbǣθ} \\
 \end{tabular}
 \end{minipage}
 &
@@ -9196,7 +9196,7 @@ NWGmc Long E Lowering & \emph{*líbǣθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 PGmc B Allophony & \emph{*líβǣθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*líβæθ} \\
 OE Unstressed AE Merger & \emph{*líβeθ} \\
@@ -9264,7 +9264,7 @@ Proto input: _\*mánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9285,7 +9285,7 @@ Proto input: _\*mánnas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mánnæs} \\
 OE Unstressed AE Merger & \emph{*mánnes} \\
 \end{tabular}
@@ -9354,7 +9354,7 @@ Proto input: _\*mízdai_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9362,14 +9362,14 @@ Proto input: _\*mízdai_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*mírdē} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 NWGmc I Lowering & \emph{*mérdē} \\
 \end{tabular}
 \end{minipage}
@@ -9379,7 +9379,7 @@ NWGmc I Lowering & \emph{*mérdē} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Breaking & \emph{*méordē} \\
 OE Unstressed Long Vowel Shortening & \emph{*méorde} \\
 \end{tabular}
@@ -9453,7 +9453,7 @@ Proto input: _\*náxti_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9474,12 +9474,12 @@ Proto input: _\*náxti_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*næxti} \\
 OE Breaking & \emph{*neaxti} \\
 OE I Umlaut & \emph{*niexti} \\
 OE Ws Palatal Umlaut & \emph{*nixti} \\
-OE High Vowel Apocope & \emph{*nixt} \\
+\mbox{OE High Vowel Apocope} & \emph{*nixt} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -9493,18 +9493,18 @@ Outcome: _niht_
 #### Reconstruction and comparative evidence
 
 Ringe and Taylor distinguish the high-vowel oblique and plural side of the word
-from the nominative citation form: they cite _gen.sg. \*nahtiz_, _dat.sg. \*nahti_, and _nom.pl. \*nahtiz_, and derive West Saxon _niht_ from that side of
+from the nominative citation form: they cite gen.sg. _\*nahtiz_, dat.sg. _\*nahti_, and nom.pl. _\*nahtiz_, and derive West Saxon _niht_ from that side of
 the paradigm [@RingeTaylor2014]. The citation reconstruction _\*náxtz_ therefore
 belongs to the nominative-like headword, while the selected input _\*náxti_
 represents the dative-singular cell.
 
 That distinction matters because the word later became the model for endingless
 datives. Ringe and Taylor explicitly explain forms such as _dæg_ by analogy with
-_dat. sg. niht < \*nahti_ [@RingeTaylor2014].
+dat. sg. niht < _\*nahti_ [@RingeTaylor2014].
 
 #### Old English evidence
 
-Clark Hall lemmatizes _niht_ and records the spelling range _æ, e, ea, ie, y_,
+Clark Hall lemmatizes _niht_ and records the spelling range _æ_, e, ea, ie, y,
 while cross-referencing forms such as _neaht_, _neht_, and _nieht_
 [@ClarkHall1960]. Campbell likewise preserves the fluctuation between _neaht_
 and _niht_, giving genitive _nihte, nihtes_, dative _niht, nihte_, nominative
@@ -9523,7 +9523,7 @@ _ht_ yields _niht_, whereas plural forms with a following back vowel preserve th
 non-umlauted _neahtas_ type [@RingeTaylor2014; @Campbell1959;
 @SieversBrunner1965].
 
-The modeled path is therefore _\*náxti > \*næxti > \*neaxti > \*niexti > \*nixti > niht_.
+The modeled path is therefore _\*náxti_ > _\*næxti_ > _\*neaxti_ > _\*niexti_ > _\*nixti_ > niht.
 
 #### Paradigm comparison
 
@@ -9548,7 +9548,7 @@ Proto input: _\*rástōz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9561,8 +9561,8 @@ Proto input: _\*rástōz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*rástō} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*rástō} \\
 \end{tabular}
 \end{minipage}
 &
@@ -9571,7 +9571,7 @@ PGmc Final Z Deletion & \emph{*rástō} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 PWGmc Surviving Bimoric O Unrounding & \emph{*rástā} \\
 Anglo Frisian Brightening & \emph{*ræstǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
@@ -9602,7 +9602,7 @@ to a nominative singular that would remain _rast_.
 
 The ordinary Old English citation form is _ræst_ [@Kroonen2013; @ClarkHall1960].
 Bosworth-Toller also preserves oblique uses of _ræste_, including prepositional
-examples such as _on ræste_ and _tó ræste_ [@BosworthToller1898, 121].
+examples such as on _ræste_ and _tó_ _ræste_ [@BosworthToller1898, 121].
 
 The comparison form used here is therefore an attested oblique _ræste_, not a
 reconstructed surrogate. The dictionary headword _ræst_ remains an equally real
@@ -9642,7 +9642,7 @@ Proto input: _\*skúldramiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.480\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9650,7 +9650,7 @@ Proto input: _\*skúldramiz_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 NWGmc A To U Before M & \emph{*skúldrumiz} \\
 PWGmc Early I Apocope & \emph{*skúldrumz} \\
 \end{tabular}
@@ -9658,8 +9658,8 @@ PWGmc Early I Apocope & \emph{*skúldrumz} \\
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*skúldrum} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*skúldrum} \\
 \end{tabular}
 \end{minipage}
 &
@@ -9668,7 +9668,7 @@ PGmc Final Z Deletion & \emph{*skúldrum} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 OE Sk Palatalization & \emph{*ʃúldrum} \\
 \end{tabular}
 \end{minipage}
@@ -9700,7 +9700,7 @@ The singular and plural evidence point to different parts of the paradigm. The r
 
 Proto-Germanic _\*skúldramiz_ can be interpreted as a dative/instrumental plural form. In this environment the post-tonic _a_ before _m_ is raised to _u_, giving a form of the _\*skúldrumiz_ type. Unstressed _u_ is regularly preserved before _m_, especially in the dative plural ending _-um_: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding _m_ from the environments in which medial _o_ became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
 
-Subsequent reduction of the ending removes the final _\*i_ and _\*z_, so that the inflectional ending appears in Old English as _-um_. The initial cluster is written here as _sċ-_, and the development is _\*skúldramiz > \*skúldrumiz > \*skúldrum > sċuldrum_.
+Subsequent reduction of the ending removes the final _\*i_ and _\*z_, so that the inflectional ending appears in Old English as _-um_. The initial cluster is written here as _sċ-_, and the development is _\*skúldramiz_ > _\*skúldrumiz_ > _\*skúldrum_ > _sċuldrum_.
 
 #### Paradigm comparison
 
@@ -9728,7 +9728,7 @@ Proto input: _\*skáub_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9749,7 +9749,7 @@ Proto input: _\*skáub_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Au Fronting & \emph{*skáeub} \\
 OE Diphthong Leveling & \emph{*skēab} \\
 PGmc B Allophony & \emph{*skēaβ} \\
@@ -9766,8 +9766,8 @@ Outcome: _sċēaf_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the strong verb as _\*skeuban- ~ \*skūban-_ and cites Old
-English present forms _scēofan, scūfan_ [@Kroonen2013]. Ringe and Taylor also
+Kroonen reconstructs the strong verb as _\*skeuban-_ ~ _\*skūban-_ and cites Old
+English present forms _scēofan_, _scūfan_ [@Kroonen2013]. Ringe and Taylor also
 show that the English present system belongs to a wider class-II split that is
 not identical with the preterite grade [@RingeTaylor2014]. The selected input
 _\*skáub_ is therefore not a spelling variant of the infinitive but the singular
@@ -9775,9 +9775,9 @@ preterite cell.
 
 #### Old English evidence
 
-The ordinary dictionary verb is _scūfan/scēofan_, but the preterite itself is
+The ordinary dictionary verb is _scūfan_/_scēofan_, but the preterite itself is
 well attested. Bright gives the principal parts _scufan, sceaf, scufon, scofen_
-and also quotes _he sceaf þa mid þam scylde_; Sweet gives the same paradigm
+and also quotes he sceaf _þa_ mid _þam_ scylde; Sweet gives the same paradigm
 [@BrightCassidyRingler1971; @Sweet1953]. The normalized form here is _sċēaf_,
 regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
 
@@ -9786,7 +9786,7 @@ regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
 From _\*skáub_, the documented trace is straightforward. _\*au_ fronts and levels
 to _ēa_, final _\*b_ becomes a fricative and is written _f_, and initial _\*sk-_
 undergoes the usual Old English palatalized spelling in this environment. The
-trace therefore gives _\*skáub > \*skáeub > \*skēab > \*skēaβ > sċēaf_.
+trace therefore gives _\*skáub_ > _\*skáeub_ > _\*skēab_ > _\*skēaβ_ > _sċēaf_.
 
 #### Paradigm comparison
 
@@ -9814,7 +9814,7 @@ Proto input: _\*spánnai_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9822,7 +9822,7 @@ Proto input: _\*spánnai_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*spánnē} \\
 \end{tabular}
 \vspace{0.6em}
@@ -9837,7 +9837,7 @@ PWGmc Ai Monophthongization & \emph{*spánnē} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*spánne} \\
 \end{tabular}
 \end{minipage}
@@ -9892,7 +9892,7 @@ Proto input: _\*θístilas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9913,7 +9913,7 @@ Proto input: _\*θístilas_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*θístilæs} \\
 OE L Adjacent Syncope & \emph{*θístlæs} \\
 OE Unstressed AE Merger & \emph{*θístles} \\
@@ -9975,7 +9975,7 @@ Proto input: _\*mákô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9996,7 +9996,7 @@ Proto input: _\*mákô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mækô} \\
 OE A Restoration & \emph{*makô} \\
 OE Unstressed Long Vowel Shortening & \emph{*maka} \\
@@ -10071,7 +10071,7 @@ Proto input: _\*mákōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10079,7 +10079,7 @@ Proto input: _\*mákōθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*mákōθ} \\
 \end{tabular}
 \vspace{0.6em}
@@ -10094,7 +10094,7 @@ PWGmc Early I Apocope & \emph{*mákōθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mækōθ} \\
 OE A Restoration & \emph{*makōθ} \\
 OE Late O Shortening & \emph{*makaθ} \\
@@ -10124,7 +10124,7 @@ Campbell's class-II paradigm makes the ordinary 3sg ending _-aþ_, while his dia
 
 After early loss of final _-i_, _\*mákōθi_ yields _\*mákōθ_. Anglo-Frisian brightening gives _\*mækōθ_, but Campbell lists _macian_ among the class-II verbs with restored _a_, so the stem returns to _mak-_ before the ending is reduced [@Campbell1959, §159].
 
-The ending then follows the ordinary class-II 3sg development. Campbell's _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the finite non-_j_ cells point to _\*makōθ > \*makaθ > macaþ_ [@Campbell1959, §355.4; @RingeTaylor2014].
+The ending then follows the ordinary class-II 3sg development. Campbell's lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the finite non-_j_ cells point to _\*makōθ_ > _\*makaθ_ > _macaþ_ [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Paradigm comparison
 
@@ -10149,7 +10149,7 @@ Proto input: _\*búrô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10162,8 +10162,8 @@ Proto input: _\*búrô_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*bórô} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*bórô} \\
 \end{tabular}
 \end{minipage}
 &
@@ -10172,7 +10172,7 @@ NWGmc U Lowering & \emph{*bórô} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*bóra} \\
 \end{tabular}
 \end{minipage}
@@ -10200,7 +10200,7 @@ The imperative is thus a paradigm form rather than a replacement for the diction
 
 Northwest Germanic lowering first gives _\*bórô_ from _\*búrô_, and late shortening of the unstressed long vowel then yields _\*bóra_, whence _bora_.
 
-Ringe and Taylor's class-II imperative singular _-a < \*-ō_ points to exactly this type of outcome [@RingeTaylor2014]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
+Ringe and Taylor's class-II imperative singular -a < _\*-ō_ points to exactly this type of outcome [@RingeTaylor2014]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
 
 #### Paradigm comparison
 
@@ -10225,7 +10225,7 @@ Proto input: _\*búrōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10233,15 +10233,15 @@ Proto input: _\*búrōθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*búrōθ} \\
 \end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*bórōθ} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*bórōθ} \\
 \end{tabular}
 \end{minipage}
 &
@@ -10250,7 +10250,7 @@ NWGmc U Lowering & \emph{*bórōθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 OE Late O Shortening & \emph{*bóraθ} \\
 \end{tabular}
 \end{minipage}
@@ -10266,7 +10266,7 @@ Outcome: _boraþ_
 
 Kroonen reconstructs the bore-family verb as _\*burojan-_ and cites Old English _borian_ among its reflexes [@Kroonen2013]. The selected form isolates the finite 3sg cell _\*búrōθi_ rather than the infinitive.
 
-Campbell's class-II pattern _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's account of stable _a_ in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's class-II pattern lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ and Ringe and Taylor's account of stable _a_ in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -10303,7 +10303,7 @@ Proto input: _\*líznô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10324,7 +10324,7 @@ Proto input: _\*líznô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Breaking & \emph{*líornô} \\
 OE Unstressed Long Vowel Shortening & \emph{*líorna} \\
 \end{tabular}
@@ -10351,7 +10351,7 @@ _Liorna_ can therefore be treated as an attested Northumbrian finite form, while
 
 #### Development to Old English
 
-The selected form develops regularly as _\*líznô > \*lírnô_ by rhotacism, then _\*líornô_ by breaking before _rn_, and finally _\*líorna_ by late shortening of the unstressed long vowel.
+The selected form develops regularly as _\*líznô_ > _\*lírnô_ by rhotacism, then _\*líornô_ by breaking before _rn_, and finally _\*líorna_ by late shortening of the unstressed long vowel.
 
 Campbell's Northumbrian _io_ evidence and Ringe and Taylor's explicit statement that no form of _liornian_ stood in an i-umlauting environment support this stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014]. The West-Saxon-looking _eo_ forms belong to a different dialectal presentation of the same family.
 
@@ -10378,7 +10378,7 @@ Proto input: _\*líznōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10386,7 +10386,7 @@ Proto input: _\*líznōθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*lírnōθ} \\
 \end{tabular}
 \vspace{0.6em}
@@ -10401,7 +10401,7 @@ PWGmc Early I Apocope & \emph{*lírnōθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Breaking & \emph{*líornōθ} \\
 OE Late O Shortening & \emph{*líornaθ} \\
 \end{tabular}
@@ -10418,7 +10418,7 @@ Outcome: _liornaþ_
 
 Ringe and Taylor give Old English _liornian ~ leornian_ from a learn-family base of the _\*lizn-_ type, and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@RingeTaylor2014; @Kroonen2013, 380]. The selected input _\*líznōθi_ is the finite 3sg cell of that family, not the citation form of the verb.
 
-For the ending, Campbell's _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the class-II 2sg and 3sg make the non-_j_ 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
+For the ending, Campbell's lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the class-II 2sg and 3sg make the non-_j_ 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -10428,7 +10428,7 @@ The relevant comparison form here is the normalized 3sg _liornaþ_. The directly
 
 #### Development to Old English
 
-The selected form develops as _\*líznōθi > \*lírnōθi_ by rhotacism, then _\*lírnōθ_ after early apocope of final _-i_, then _\*líornōθ_ by breaking before _rn_, and finally _\*líornaθ > liornaþ_ by late shortening of the unstressed long vowel.
+The selected form develops as _\*líznōθi_ > _\*lírnōθi_ by rhotacism, then _\*lírnōθ_ after early apocope of final _-i_, then _\*líornōθ_ by breaking before _rn_, and finally _\*líornaθ_ > _liornaþ_ by late shortening of the unstressed long vowel.
 
 Campbell's Northumbrian _io_ evidence and Ringe and Taylor's statement that no form of _liornian_ stood in an i-umlauting environment support the stem, while Campbell's class-II ending evidence supports the final _-aþ_ [@Campbell1959, §123 n. 2; @Campbell1959, §355.4; @RingeTaylor2014].
 
@@ -10455,7 +10455,7 @@ Proto input: _\*líkkô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10476,7 +10476,7 @@ Proto input: _\*líkkô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*líkka} \\
 \end{tabular}
 \end{minipage}
@@ -10490,7 +10490,7 @@ Outcome: _licca_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li/ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
 
 The form treated here is not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_. Campbell's weak class-II discussion and Ringe and Taylor's account of the paradigm both distinguish those finite singular cells from the ordinary _\*-ōja-_ citation formation [@Campbell1959; @RingeTaylor2014].
 
@@ -10527,7 +10527,7 @@ Proto input: _\*líkkōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10535,7 +10535,7 @@ Proto input: _\*líkkōθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*líkkōθ} \\
 \end{tabular}
 \vspace{0.6em}
@@ -10550,7 +10550,7 @@ PWGmc Early I Apocope & \emph{*líkkōθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Late O Shortening & \emph{*líkkaθ} \\
 \end{tabular}
 \end{minipage}
@@ -10564,9 +10564,9 @@ Outcome: _liccaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li/ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
 
-The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as _lufas, -aþ (< -ōsi, -ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014].
+The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -10601,7 +10601,7 @@ Proto input: _\*skáwô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10622,7 +10622,7 @@ Proto input: _\*skáwô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawô} \\
 OE Sk Palatalization & \emph{*ʃḗawô} \\
 OE Unstressed Long Vowel Shortening & \emph{*ʃḗawa} \\
@@ -10675,7 +10675,7 @@ Proto input: _\*skáwōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10683,7 +10683,7 @@ Proto input: _\*skáwōθi_
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*skáwōθ} \\
 \end{tabular}
 \vspace{0.6em}
@@ -10698,7 +10698,7 @@ PWGmc Early I Apocope & \emph{*skáwōθ} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawōθ} \\
 OE Sk Palatalization & \emph{*ʃḗawōθ} \\
 OE Late O Shortening & \emph{*ʃḗawaθ} \\
@@ -10716,11 +10716,11 @@ Outcome: _sċēawaþ_
 
 Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003]. The selected input in this entry is the present third singular _\*skáwōθi_, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
 
-Campbell states the class-II present endings as _lufas, -aþ (< -ōsi, -ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
+Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 #### Old English evidence
 
-Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971]. The evidence thus establishes the _scēaw- / -awað_ finite-cell pattern directly.
+Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971]. The evidence thus establishes the _scēaw-_ / _-awað_ finite-cell pattern directly.
 
 The form written here as _sċēawaþ_ is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a selected finite form aligned with the attested _scēaw-_ evidence and the directly cited _-sceawað_ ending pattern.
 
@@ -10759,7 +10759,7 @@ Proto input: _\*knúbbô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10772,8 +10772,8 @@ Proto input: _\*knúbbô_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*knóbbô} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*knóbbô} \\
 \end{tabular}
 \end{minipage}
 &
@@ -10782,7 +10782,7 @@ NWGmc U Lowering & \emph{*knóbbô} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*knóbba} \\
 \end{tabular}
 \end{minipage}
@@ -10838,7 +10838,7 @@ better-attested neighboring forms.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*knúbbô -> cnobba_ | reconstructed OE form; trace-supported | selected target |
+| _\*knúbbô_ -> cnobba | reconstructed OE form; trace-supported | selected target |
 | _cnopp / cnoppa_ | attested OE branch | important control form, but belongs to the voiceless branch |
 | _cnæp_ | attested OE form from another family | not part of the present lexeme line |
 
@@ -10859,7 +10859,7 @@ Proto input: _\*ráukaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.340\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10872,8 +10872,8 @@ Proto input: _\*ráukaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-PGmc Final Z Deletion & \emph{*ráuka} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{PGmc Final Z Deletion} & \emph{*ráuka} \\
 \end{tabular}
 \end{minipage}
 &
@@ -10882,7 +10882,7 @@ PGmc Final Z Deletion & \emph{*ráuka} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 OE Au Fronting & \emph{*ráeuka} \\
 OE Diphthong Leveling & \emph{*rēaka} \\
 PWGmc Final Bare A Loss & \emph{*rēak} \\
@@ -10940,7 +10940,7 @@ Proto input: _\*stráwjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -10961,7 +10961,7 @@ Proto input: _\*stráwjaną_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 OE Awj Glide Formation & \emph{*stráujaną} \\
 OE Au Fronting & \emph{*stráeujaną} \\
 OE Diphthong Leveling & \emph{*strēajaną} \\
@@ -10990,7 +10990,7 @@ remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
 The aw-series comparison is important here. Luick groups _\*strauwjan_ with the
 same set as _\*hauwja-_ and _\*kauwjan_, yielding Anglian _strēzan_ beside West
-Saxon forms of the _hīez, ciezan_ type [@Luick1914, §98]. Fulk likewise allows
+Saxon forms of the _hīez_, ciezan type [@Luick1914, §98]. Fulk likewise allows
 an early West Saxon _\*striegan_ directly from Proto-Germanic _\*straujana_
 [@Fulk2018, §4.10 n. 1].
 
@@ -11014,7 +11014,7 @@ _\*strīejan_, and retention or strengthening of the glide after the front
 diphthong, written here as _ġ_. The resulting form is _strīeġan_.
 
 This differs from Anglian _strēgan_, where smoothing removes the diphthongal
-sequence, and from West Saxon _strewian / streowian / strēawian_, where the
+sequence, and from West Saxon strewian / streowian / _strēawian_, where the
 verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 @Campbell1959, §753.7].
 
@@ -11027,7 +11027,7 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 | :--- | :--- | :--- |
 | _strēgan_ | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
 | _strīeġan_ | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
-| _strewian / streowian / strēawian_ | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
+| strewian / streowian / _strēawian_ | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
 \clearpage
 
@@ -11050,7 +11050,7 @@ Proto input: _\*fūri_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11071,9 +11071,9 @@ Proto input: _\*fūri_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
 OE I Umlaut & \emph{*fȳri} \\
-OE High Vowel Apocope & \emph{*fȳr} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳr} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -11088,7 +11088,7 @@ Selected target: _fȳre_
 
 #### Reconstruction and comparative evidence
 
-Kroonen places the lexeme in a heteroclitic family _\*fōr ~ \*fun-_ and explains
+Kroonen places the lexeme in a heteroclitic family _\*fōr_ ~ _\*fun-_ and explains
 the front-mutated West Germanic forms from an oblique form of the
 _\*fu(w)eri_ type [@Kroonen2013]. The selected input _\*fūri_ therefore does not
 function as an arbitrary substitute for the headword: it represents the
@@ -11129,7 +11129,7 @@ form and from the later analogical surface result.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level heteroclitic headword | _\*fōr ~ \*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
+| lexeme-level heteroclitic headword | _\*fōr_ ~ _\*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
 | inherited oblique cell | *fūri | compact-trace output: _fȳr_ | fȳr | regular inherited output from the selected input |
 | later analogical surface form | — | attested _fȳre_ with restored _-e_ | fȳre | genuine OE target, but not the direct phonological output |
 
@@ -11146,7 +11146,7 @@ Proto input: _\*táppô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11167,7 +11167,7 @@ Proto input: _\*táppô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.78\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.14\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*tæppô} \\
 OE A Restoration & \emph{*tappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*tappa} \\
@@ -11235,7 +11235,7 @@ Proto input: _\*búkkaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11248,9 +11248,9 @@ Proto input: _\*búkkaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*bókkaz} \\
-PGmc Final Z Deletion & \emph{*bókka} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*bókkaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*bókka} \\
 \end{tabular}
 \end{minipage}
 &
@@ -11259,7 +11259,7 @@ PGmc Final Z Deletion & \emph{*bókka} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*bókk} \\
 \end{tabular}
 \end{minipage}
@@ -11321,7 +11321,7 @@ Proto input: _\*fúglaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.440\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.440\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11334,9 +11334,9 @@ Proto input: _\*fúglaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*fóglaz} \\
-PGmc Final Z Deletion & \emph{*fógla} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*fóglaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*fógla} \\
 \end{tabular}
 \end{minipage}
 &
@@ -11345,7 +11345,7 @@ PGmc Final Z Deletion & \emph{*fógla} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fógl} \\
 OE Epenthetic Vowel & \emph{*fógol} \\
 \end{tabular}
@@ -11426,7 +11426,7 @@ Proto input: _\*rústō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11439,9 +11439,9 @@ Proto input: _\*rústō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*róstō} \\
-NWGmc Final Long O Raising & \emph{*róstu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*róstō} \\
+\mbox{NWGmc Final Long O Raising} & \emph{*róstu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -11450,8 +11450,8 @@ NWGmc Final Long O Raising & \emph{*róstu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*róst} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*róst} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -11467,7 +11467,7 @@ Selected target: _rust_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not support a single citation reconstruction
-uniformly. Orel cites _\*rustaz sb.m./f._ with Old English _rust_ and Old Saxon
+uniformly. Orel cites _\*rustaz_ sb.m./f. with Old English _rust_ and Old Saxon
 and Old High German _rost_ [@Orel2003]. The form _\*rústō_ therefore stands here
 as a competing citation reconstruction rather than as the best-supported
 inherited headword.
@@ -11478,8 +11478,8 @@ points toward _rost_, not toward the attested Old English noun.
 
 #### Old English evidence
 
-The Old English noun is attested, not reconstructed. Clark Hall gives _rūst m._
-[@ClarkHall1960], and Bosworth-Toller records _rúst (? and rust)_
+The Old English noun is attested, not reconstructed. Clark Hall gives _rūst_ m.
+[@ClarkHall1960], and Bosworth-Toller records _rúst_ (? and rust)
 [@BosworthToller1898, 677]. The form is normalized here as _rust_ from that attested
 record.
 
@@ -11506,10 +11506,10 @@ the attested Old English noun.
 
 | Form / interpretation | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*rústō -> rost_ | computed regular output from one competing citation reconstruction | shows that this citation reconstruction does not reach attested _rust_ |
-| _\*rustaz -> rost_ | expected regular output from the source-supported citation reconstruction | shows that correcting the stem class does not solve the vowel problem |
-| _\*rústu -> rust_ | regular high-vowel comparator | useful negative control, but not a defensible citation-form solution |
-| _rust_ | attested Old English noun, normalized from _rūst / rúst / rust_ | selected target; the citation-form development remains unexplained |
+| _\*rústō_ -> rost | computed regular output from one competing citation reconstruction | shows that this citation reconstruction does not reach attested _rust_ |
+| _\*rustaz_ -> rost | expected regular output from the source-supported citation reconstruction | shows that correcting the stem class does not solve the vowel problem |
+| _\*rústu_ -> rust | regular high-vowel comparator | useful negative control, but not a defensible citation-form solution |
+| _rust_ | attested Old English noun, normalized from _rūst_ / _rúst_ / rust | selected target; the citation-form development remains unexplained |
 
 ### wolf — OE wulf
 
@@ -11524,7 +11524,7 @@ Proto input: _\*wúlfaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11537,9 +11537,9 @@ Proto input: _\*wúlfaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
-NWGmc U Lowering & \emph{*wólfaz} \\
-PGmc Final Z Deletion & \emph{*wólfa} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*wólfaz} \\
+\mbox{PGmc Final Z Deletion} & \emph{*wólfa} \\
 \end{tabular}
 \end{minipage}
 &
@@ -11548,7 +11548,7 @@ PGmc Final Z Deletion & \emph{*wólfa} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.72\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.18\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wólf} \\
 \end{tabular}
 \end{minipage}
@@ -11592,7 +11592,7 @@ not remove the explanatory problem presented by the citation form.
 
 Under the regular lowering of stressed _u_, the citation-form input gives
 _wolf_, not _wulf_ [@Campbell1959; @RingeTaylor2014]. The compact trace shows
-exactly that path: _\*wúlfaz > \*wólfaz > \*wólfa > wolf_.
+exactly that path: _\*wúlfaz_ > _\*wólfaz_ > _\*wólfa_ > wolf.
 
 A high-vowel oblique input would behave differently. The following high vowel
 would block the lowering of _u_, but the same environment would trigger
@@ -11607,9 +11607,9 @@ the attested Old English noun.
 
 | Form / interpretation | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*wúlfaz -> wolf_ | computed regular output from the citation form | shows the regular development expected from the inherited a-stem |
+| _\*wúlfaz_ -> wolf | computed regular output from the citation form | shows the regular development expected from the inherited a-stem |
 | _OHG wolf_ | comparative regular cognate | confirms that the _o_-vocalism is the ordinary outcome |
-| _\*wúlfi / \*wúlfis -> wylf / wylfe_ | expected high-vowel control forms | shows why oblique high-vowel cells do not solve the noun's vowel history |
+| _\*wúlfi_ / _\*wúlfis_ -> wylf / wylfe | expected high-vowel control forms | shows why oblique high-vowel cells do not solve the noun's vowel history |
 | _wulf_ | attested Old English noun | selected target; the preservation of _u_ remains unexplained |
 
 ### wool — OE wull
@@ -11625,7 +11625,7 @@ Proto input: _\*wúllō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11638,9 +11638,9 @@ Proto input: _\*wúllō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-NWGmc U Lowering & \emph{*wóllō} \\
-NWGmc Final Long O Raising & \emph{*wóllu} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{NWGmc U Lowering} & \emph{*wóllō} \\
+\mbox{NWGmc Final Long O Raising} & \emph{*wóllu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -11649,8 +11649,8 @@ NWGmc Final Long O Raising & \emph{*wóllu} \\
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
-OE High Vowel Apocope & \emph{*wóll} \\
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.76\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.16\linewidth}@{}}
+\mbox{OE High Vowel Apocope} & \emph{*wóll} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -11705,7 +11705,7 @@ attested lexical exception.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*wúllō -> woll_ | regular trace output | shows what the deterministic sound laws produce |
+| _\*wúllō_ -> woll | regular trace output | shows what the deterministic sound laws produce |
 | _wull / wulle_ | attested OE exception | selected target and philological fact to be recorded |
 | high-vowel escape from another paradigm cell | unsupported for this noun | rejected because the feminine ō-stem paradigm supplies no suitable escape cell |
 
