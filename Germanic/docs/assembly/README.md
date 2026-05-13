@@ -1,14 +1,16 @@
 # Germanic assembly pilot and lexical-volume design
 
-This directory now contains two connected layers of work:
+This directory now contains three connected layers of work:
 
 1. the validated **pilot assembly** used to settle entry layout, trace display,
    and citation behavior; and
 2. the **book-architecture and class-manifest design** for a future full lexical
-   derivation volume.
+   derivation volume; and
+3. the first **full lexical assembly alpha** built from the seven-class manifest.
 
-The pilot is deliberately small. The book-design layer is where the full
-corpus-ordering logic now lives.
+The pilot remains deliberately small. The architecture layer defines the corpus
+ordering, and the full alpha exercises that design across all 147 current model
+entries.
 
 ## Pilot status
 
@@ -104,9 +106,9 @@ The current design layer for full lexical assembly includes:
 - `manifest_unexplained.tsv`
 - `manifest_all_by_class.tsv`
 - `manifest_summary.md`
+- `book_architecture_02_report.md`
 
-These files are design and scaffolding artifacts only. They do **not** generate
-the full 147-entry lexical PDF in this phase.
+These files define the ordering and section architecture used by the full alpha.
 
 The class architecture now follows all **seven** current TSV
 `DERIVATION_CLASS` values as first-class book sections:
@@ -119,21 +121,49 @@ The class architecture now follows all **seven** current TSV
 6. `known_unmodelled`
 7. `unexplained_unmodelled`
 
-## Next planned step
+## Full lexical alpha 01
 
-After review of the architecture and manifests, the next planned step is a
-**full lexical assembly alpha by class**. That later pass should:
+The current full-corpus alpha layer includes:
 
-1. use the class manifests as the ordering source;
-2. insert section-introduction scaffolding above each of the seven class parts;
-3. preserve the current per-entry summary + boxed-trace layout; and
-4. continue to keep the later sound-change volume or report separate.
+- `build_full_lexical_volume.py` — assembles the 147-entry lexical volume from
+  `manifest_all_by_class.tsv`
+- `build_full_lexical_volume.sh` — host wrapper for Markdown generation and
+  local `pandoc` / PDF builds where available
+- `build_full_lexical_volume_docker.sh` — Docker-backed render path for `.tex`
+  and `.pdf`
+- `full_volume_metadata.yaml` — Pandoc metadata for the full lexical volume
+- `lexical_volume_alpha_01.md`
+- `lexical_volume_alpha_01.tex`
+- `lexical_volume_alpha_01.pdf`
+- `full_lexical_assembly_alpha_01_report.md`
 
-## Known blockers before full assembly
+The full alpha uses all seven live TSV `DERIVATION_CLASS` values as first-class
+sections and keeps the pilot layout: derivation summary, boxed trace, and model
+prose.
 
-1. Install local `pandoc` to enable host-native Markdown-to-LaTeX conversion, or
-   use the Docker wrapper.
-2. Keep a Unicode-capable font path available for the PDF engine (`Noto Serif` /
-   `Noto Sans Mono` are used in the Docker-backed pilot).
-3. After any toolchain change, rerun the pilot and inspect trace boxes,
-   bibliography rendering, and citation links before scaling to the full corpus.
+## How to run the full alpha
+
+From the repository root:
+
+```bash
+bash Germanic/docs/assembly/build_full_lexical_volume.sh
+```
+
+If local `pandoc` / LaTeX tools are unavailable but Docker is available, use:
+
+```bash
+bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
+```
+
+That wrapper regenerates `lexical_volume_alpha_01.md` locally, then renders
+`.tex` and `.pdf` inside a `pandoc/latex` container with `xelatex` and Noto
+fonts.
+
+## Full-alpha outputs
+
+- `lexical_volume_alpha_01.md` — full assembled Markdown in seven-part order
+- `lexical_volume_alpha_01.tex` — Pandoc-generated LaTeX
+- `lexical_volume_alpha_01.pdf` — Docker-rendered PDF with live citation links
+
+See `full_lexical_assembly_alpha_01_report.md` for counts, output sizes, and
+inspection notes.

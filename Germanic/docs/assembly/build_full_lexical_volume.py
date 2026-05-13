@@ -1,0 +1,528 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import csv
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parents[2]
+MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
+INTRO_PATH = SCRIPT_DIR / "section_introductions_draft.md"
+TRACE_REPORT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
+OUTPUT_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
+
+SECTION_ORDER = [
+    ("regular", "Part I. Regular derivations", "Regular derivations"),
+    ("attested_variant", "Part II. Attested variants and selected comparison forms", "Attested variants and selected comparison forms"),
+    ("early_analogy", "Part III. Early analogy and pre-Old-English input selection", "Early analogy and pre-Old-English input selection"),
+    ("late_analogy", "Part IV. Late analogy and paradigm-cell selection", "Late analogy and paradigm-cell selection"),
+    ("reconstructed_oe", "Part V. Reconstructed Old English comparators", "Reconstructed Old English comparators"),
+    ("known_unmodelled", "Part VI. Known but unmodelled remodellings", "Known but unmodelled remodellings"),
+    ("unexplained_unmodelled", "Part VII. Unexplained or deliberately unmodelled exceptions", "Unexplained or deliberately unmodelled exceptions"),
+]
+
+FRONT_MATTER_HEADINGS = {
+    "Introduction": "Introduction",
+    "Data and sources": "Data and sources",
+    "Transducer and derivation method": "Transducer and derivation method",
+    "Derivation classes": "Derivation classes",
+}
+
+
+def parse_trace_entries(text: str) -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    chunks: list[list[str]] = []
+    current: list[str] = []
+
+    for line in text.splitlines():
+        if line.startswith("# "):
+            if current:
+                chunks.append(current)
+            current = [line]
+        elif current:
+            current.append(line)
+    if current:
+        chunks.append(current)
+
+    for chunk in chunks:
+        block = "\n".join(chunk).strip()
+        lines = block.splitlines()
+        table_lines: list[str] = []
+        in_table = False
+        for line in lines:
+            if line.startswith("| Earlier Germanic developments | Old English developments |"):
+                in_table = True
+            if in_table and line.startswith("|"):
+                table_lines.append(line)
+                continue
+            if in_table and not line.startswith("|"):
+                break
+
+        entries.append(
+            {
+                "title": lines[0][2:].strip(),
+                "proto": re.search(r"^PROTO:\s*(.*)$", block, re.M).group(1).strip(),
+                "expected": re.search(r"^EXPECTED:\s*(.*)$", block, re.M).group(1).strip(),
+                "outputs": re.search(r"^OUTPUTS:\s*(.*)$", block, re.M).group(1).strip(),
+                "proto_input": re.search(r"^Proto Input:\s*(.*)$", block, re.M).group(1).strip(),
+                "outcome": re.search(r"^Outcome:\s*(.*)$", block, re.M).group(1).strip(),
+                "table": "\n".join(table_lines).strip(),
+            }
+        )
+
+    return entries
+
+
+def italicize_form(text: str) -> str:
+    escaped = text.replace("\\", "\\\\").replace("*", r"\*").replace("|", r"\|")
+    return f"_{escaped}_"
+
+
+def keep_as_code(text: str) -> bool:
+    return bool(
+        re.search(r"(?:\.md\b|\.txt\b|\.pdf\b|\.py\b|\.sh\b|\.tsv\b|^@|^https?://|docs/|Germanic/|--\w)", text)
+    )
+
+
+def convert_inline_code(text: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        return match.group(0) if keep_as_code(inner) else italicize_form(inner)
+
+    return re.sub(r"`([^`]+)`", repl, text)
+
+
+def demote_bold_forms(text: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        if "\n" in inner:
+            return match.group(0)
+        if len(inner.split()) <= 3 and not re.search(r"[.!?;:]", inner):
+            return inner if "`" in inner else italicize_form(inner)
+        return inner
+
+    return re.sub(r"\*\*([^*]+)\*\*", repl, text)
+
+
+def tidy_prose(text: str) -> str:
+    return convert_inline_code(demote_bold_forms(text))
+
+
+def display_stage_name(stage: str) -> str:
+    if stage == "Proto-West Germanic":
+        return "West Germanic"
+    return stage
+
+
+def parse_trace_cell(cell: str) -> list[tuple[str, list[tuple[str, str]]]]:
+    pieces = [piece.strip() for piece in re.split(r"<br\s*/?>", cell) if piece.strip()]
+    if not pieces:
+        return []
+
+    stages: list[tuple[str, list[str]]] = []
+    current_stage = ""
+    current_items: list[str] = []
+
+    for piece in pieces:
+        stage_match = re.fullmatch(r"\*\*([^*]+)\*\*", piece)
+        if stage_match:
+            if current_stage or current_items:
+                stages.append((current_stage, current_items))
+            current_stage = stage_match.group(1).strip()
+            current_items = []
+            continue
+        current_items.append(piece)
+
+    if current_stage or current_items:
+        stages.append((current_stage, current_items))
+
+    parsed_stages: list[tuple[str, list[tuple[str, str]]]] = []
+    for stage, items in stages:
+        parsed_items: list[tuple[str, str]] = []
+        for item in items:
+            if item == "[no change]":
+                parsed_items.append((item, ""))
+                continue
+            if ":" in item:
+                change, form = item.split(":", 1)
+                change = change.strip()
+                form = form.strip()
+            else:
+                change = item.strip()
+                form = ""
+            parsed_items.append((change, form))
+        parsed_stages.append((display_stage_name(stage), parsed_items))
+
+    return parsed_stages
+
+
+def latex_escape(text: str) -> str:
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+        "{": r"\{",
+        "}": r"\}",
+        "~": r"\textasciitilde{}",
+        "^": r"\textasciicircum{}",
+    }
+    return "".join(replacements.get(char, char) for char in text)
+
+
+def latex_form(text: str) -> str:
+    return rf"\emph{{{latex_escape(text)}}}"
+
+
+def humanize_derivation_class(label: str) -> str:
+    mapping = {
+        "regular": "regular",
+        "attested_variant": "attested variant",
+        "early_analogy": "early analogy",
+        "late_analogy": "late analogy",
+        "reconstructed_oe": "reconstructed Old English comparator",
+        "known_unmodelled": "known but unmodelled remodelling",
+        "unexplained_unmodelled": "unexplained exception",
+    }
+    return mapping.get(label, label.replace("_", " "))
+
+
+def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
+    metadata = model["metadata"]
+    citation = metadata.get("PROTO", "")
+    selected = metadata.get("PROTOFORM", "")
+    target = metadata.get("COUNTERPART", "")
+    label = humanize_derivation_class(metadata.get("DERIVATION_CLASS", ""))
+    arrow = r"$\rightarrow$"
+
+    if trace_entry is None:
+        return (
+            f"Derivation: selected input {italicize_form(selected)} and target {italicize_form(target)}; "
+            "no compact trace was confidently matched in this assembly pass."
+        )
+
+    output = trace_entry["outcome"]
+    if citation == selected and output == target:
+        return f"Derivation: {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+    if citation != selected and output == target:
+        return (
+            f"Derivation: citation reconstruction {italicize_form(citation)}; "
+            f"selected input {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+        )
+    if citation == selected and output != target:
+        return (
+            f"Derivation: {italicize_form(selected)} yields regular {italicize_form(output)}; "
+            f"the selected target is {italicize_form(target)} ({label})."
+        )
+    return (
+        f"Derivation: citation reconstruction {italicize_form(citation)}; "
+        f"selected input {italicize_form(selected)} yields {italicize_form(output)}; "
+        f"the selected target is {italicize_form(target)} ({label})."
+    )
+
+
+def render_trace_panel(
+    stage_blocks: list[tuple[str, list[tuple[str, str]]]],
+    *,
+    suppress_old_english_stage: bool = False,
+) -> list[str]:
+    lines = [r"\raggedright"]
+
+    for index, (stage, items) in enumerate(stage_blocks):
+        show_stage_header = not (suppress_old_english_stage and stage == "Old English")
+        if index:
+            lines.append(r"\vspace{0.6em}")
+
+        if show_stage_header:
+            lines.extend(
+                [
+                    rf"\centering\textbf{{{latex_escape(stage)}}}\par",
+                    r"\raggedright",
+                    r"\vspace{0.2em}",
+                ]
+            )
+
+        if not items:
+            lines.append(r"\raggedright [no change]\par")
+            continue
+
+        if all(change == "[no change]" and not form for change, form in items):
+            lines.append(r"\raggedright [no change]\par")
+            continue
+
+        lines.append(
+            r"\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}"
+        )
+        for change, form in items:
+            if change == "[no change]" and not form:
+                lines.append(r"\multicolumn{2}{@{}l@{}}{[no change]} \\")
+            elif form:
+                lines.append(rf"{latex_escape(change)} & {latex_form(form)} \\")
+            else:
+                lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{latex_escape(change)}}} \\")
+        lines.append(r"\end{tabularx}")
+
+    return lines
+
+
+def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
+    table_lines = trace_entry["table"].splitlines()
+    if len(table_lines) < 3:
+        return [trace_entry["table"]]
+
+    row_parts = [part.strip() for part in table_lines[2].strip().strip("|").split("|")]
+    if len(row_parts) != 2:
+        return [trace_entry["table"]]
+
+    left_panel = render_trace_panel(parse_trace_cell(row_parts[0]))
+    right_panel = render_trace_panel(parse_trace_cell(row_parts[1]), suppress_old_english_stage=True)
+
+    return [
+        r"\begingroup",
+        r"\setlength{\fboxsep}{6pt}",
+        r"\noindent\fbox{%",
+        r"\begin{minipage}{0.97\linewidth}",
+        r"\small",
+        r"\begin{minipage}[t]{0.485\linewidth}",
+        r"\centering\textbf{Earlier Germanic changes}\par",
+        r"\vspace{0.35em}",
+        *left_panel,
+        r"\end{minipage}\hfill",
+        r"\begin{minipage}[t]{0.485\linewidth}",
+        r"\centering\textbf{Old English changes}\par",
+        r"\vspace{0.35em}",
+        *right_panel,
+        r"\end{minipage}",
+        r"\end{minipage}%",
+        r"}",
+        r"\endgroup",
+    ]
+
+
+def parse_model_entry(path: Path) -> dict[str, object]:
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines:
+        raise ValueError(f"empty model entry: {path}")
+
+    title_line = next((line.strip() for line in lines if line.strip()), "")
+    if not title_line.startswith("# "):
+        raise ValueError(f"missing heading in model entry: {path}")
+
+    metadata: dict[str, str] = {}
+    title_index = lines.index(title_line)
+    i = title_index + 1
+    while i < len(lines) and lines[i].strip() == "":
+        i += 1
+    while i < len(lines):
+        match = re.match(r"^([A-Z_]+):\s*(.*)$", lines[i].strip())
+        if not match:
+            break
+        metadata[match.group(1)] = match.group(2).strip()
+        i += 1
+
+    title = title_line[2:].strip()
+    sections: list[tuple[str, str]] = []
+    current_heading: str | None = None
+    current_lines: list[str] = []
+    for line in lines[i:]:
+        if line.startswith("### "):
+            if current_heading is not None:
+                sections.append((current_heading, "\n".join(current_lines).strip()))
+            current_heading = line.strip()
+            current_lines = []
+        else:
+            current_lines.append(line)
+    if current_heading is not None:
+        sections.append((current_heading, "\n".join(current_lines).strip()))
+
+    lexical_item = title.split(" — OE ", 1)[0].strip()
+    return {
+        "title": title,
+        "lexical_item": lexical_item,
+        "metadata": metadata,
+        "sections": sections,
+    }
+
+
+def match_trace_entry(model: dict[str, object], trace_entries: list[dict[str, str]]) -> tuple[dict[str, str] | None, str, bool]:
+    metadata = model["metadata"]
+    lexical_item = model["lexical_item"]
+    proto = metadata.get("PROTO", "")
+    protoform = metadata.get("PROTOFORM", "")
+    counterpart = metadata.get("COUNTERPART", "")
+
+    candidates = [entry for entry in trace_entries if entry["title"] == lexical_item]
+    scored: list[tuple[int, dict[str, str], list[str]]] = []
+    for entry in candidates:
+        score = 0
+        basis: list[str] = ["lexical item"]
+        if entry["proto"] == protoform:
+            score += 10
+            basis.append("PROTOFORM")
+        if entry["proto"] == proto and proto:
+            score += 4
+            basis.append("PROTO")
+        if entry["expected"] == counterpart and counterpart:
+            score += 6
+            basis.append("EXPECTED")
+        if entry["outputs"] == counterpart and counterpart:
+            score += 6
+            basis.append("OUTPUTS")
+        scored.append((score, entry, basis))
+
+    if not scored:
+        return None, "no lexical-item match", False
+
+    scored.sort(key=lambda item: item[0], reverse=True)
+    top_score, top_entry, basis = scored[0]
+    confident = top_score >= 16 and (len(scored) == 1 or top_score > scored[1][0])
+    return top_entry, " + ".join(basis), confident
+
+
+def demote_model_heading(heading: str) -> str:
+    return "#### " + heading.removeprefix("### ").strip()
+
+
+def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
+    out: list[str] = [f"### {model['title']}", "", derivation_summary(model, trace_entry)]
+
+    if trace_entry is not None:
+        out.extend(
+            [
+                "",
+                "#### Derivation trace",
+                "",
+                f"Proto input: {italicize_form(trace_entry['proto_input'])}",
+                "",
+                *render_trace_table(trace_entry),
+                "",
+            ]
+        )
+        if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
+            out.append(f"Outcome: {italicize_form(trace_entry['outcome'])}")
+        else:
+            out.append(f"Transducer outcome: {italicize_form(trace_entry['outcome'])}")
+            out.append("")
+            out.append(f"Selected target: {italicize_form(model['metadata'].get('COUNTERPART', ''))}")
+
+    for heading, body in model["sections"]:
+        if heading == "### Transducer input and output":
+            continue
+        cleaned_body = tidy_prose(body)
+        out.extend(["", demote_model_heading(heading), ""])
+        if cleaned_body:
+            out.append(cleaned_body)
+
+    return "\n".join(out).strip()
+
+
+def parse_section_introductions(path: Path) -> dict[str, str]:
+    text = path.read_text(encoding="utf-8")
+    sections: dict[str, str] = {}
+    current_heading: str | None = None
+    current_lines: list[str] = []
+
+    for line in text.splitlines():
+        if line.startswith("## "):
+            if current_heading is not None:
+                sections[current_heading] = "\n".join(current_lines).strip()
+            current_heading = line[3:].strip()
+            current_lines = []
+        elif current_heading is not None:
+            current_lines.append(line)
+
+    if current_heading is not None:
+        sections[current_heading] = "\n".join(current_lines).strip()
+    return sections
+
+
+def build_front_matter(counts: Counter[str], intro_sections: dict[str, str]) -> list[str]:
+    lines = [
+        "# Germanic Lexeme Reports: Lexical Derivation Volume",
+        "",
+        "_Alpha 01 assembly scaffold. This document assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._",
+        "",
+        "## Introduction",
+        "",
+        intro_sections["Introduction to the lexical catalogue"],
+        "",
+        intro_sections["Note on the later sound-change volume / report"],
+        "",
+        "## Data and sources",
+        "",
+        "This alpha assembles the current model-entry corpus against the live manifest, compact derivation-trace report, and project bibliography. The lexical data layer is the current aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain in the entry prose exactly as already cited there.",
+        "",
+        "Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass.",
+        "",
+        "## Transducer and derivation method",
+        "",
+        "Each lexical entry retains the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current model-entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data.",
+        "",
+        "## Derivation classes",
+        "",
+        "The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in the manifest. Counts in this alpha are taken directly from `manifest_all_by_class.tsv`:",
+        "",
+        f"- `regular`: **{counts['regular']}**",
+        f"- `attested_variant`: **{counts['attested_variant']}**",
+        f"- `early_analogy`: **{counts['early_analogy']}**",
+        f"- `late_analogy`: **{counts['late_analogy']}**",
+        f"- `reconstructed_oe`: **{counts['reconstructed_oe']}**",
+        f"- `known_unmodelled`: **{counts['known_unmodelled']}**",
+        f"- `unexplained_unmodelled`: **{counts['unexplained_unmodelled']}**",
+    ]
+    return lines
+
+
+def main() -> int:
+    trace_entries = parse_trace_entries(TRACE_REPORT_PATH.read_text(encoding="utf-8"))
+    intro_sections = parse_section_introductions(INTRO_PATH)
+
+    with MANIFEST_PATH.open(encoding="utf-8", newline="") as handle:
+        manifest_rows = list(csv.DictReader(handle, delimiter="\t"))
+
+    counts = Counter(row["class_bucket"] for row in manifest_rows)
+    parts: list[str] = build_front_matter(counts, intro_sections)
+
+    rows_by_bucket: dict[str, list[dict[str, str]]] = {}
+    for bucket, _, _ in SECTION_ORDER:
+        rows_by_bucket[bucket] = [row for row in manifest_rows if row["class_bucket"] == bucket]
+
+    heading_lookup = {
+        "regular": "Regular derivations",
+        "attested_variant": "Attested variants and selected comparison forms",
+        "early_analogy": "Early analogy and pre-Old-English input selection",
+        "late_analogy": "Late analogy and paradigm-cell selection",
+        "reconstructed_oe": "Reconstructed Old English comparators",
+        "known_unmodelled": "Known but unmodelled remodellings",
+        "unexplained_unmodelled": "Unexplained or deliberately unmodelled exceptions",
+    }
+
+    for bucket, part_heading, intro_heading in SECTION_ORDER:
+        parts.extend(["", f"## {part_heading}", "", intro_sections[intro_heading]])
+        for row in rows_by_bucket[bucket]:
+            entry_path = REPO_ROOT / row["model_entry_path"]
+            model = parse_model_entry(entry_path)
+            trace_entry, basis, confident = match_trace_entry(model, trace_entries)
+            if trace_entry is None or not confident:
+                print(f"WARNING: trace match unresolved for {entry_path.name} ({basis})", file=sys.stderr)
+                trace_entry = None
+            else:
+                print(
+                    f"Matched {entry_path.name} -> {trace_entry['title']} / {trace_entry['proto']} / {trace_entry['outputs']} ({basis})",
+                    file=sys.stderr,
+                )
+            parts.extend(["", rewrite_entry(model, trace_entry)])
+
+    OUTPUT_PATH.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
+    print(f"Generated {OUTPUT_PATH}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

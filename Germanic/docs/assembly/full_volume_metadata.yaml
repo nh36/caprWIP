@@ -1,0 +1,11 @@
+lang: en-GB
+documentclass: article
+papersize: a4
+geometry: margin=1in
+pdf-engine: xelatex
+mainfont: "Noto Serif"
+monofont: "Noto Sans Mono"
+link-citations: true
+header-includes:
+  - \usepackage{array}
+  - \usepackage{tabularx}
