@@ -257,7 +257,7 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
     selected = metadata.get("PROTOFORM", "")
     target = metadata.get("COUNTERPART", "")
     label = humanize_derivation_class(metadata.get("DERIVATION_CLASS", ""))
-    arrow = r"$\rightarrow$"
+    arrow = ">"
 
     if trace_entry is None:
         return (
@@ -285,10 +285,62 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
     )
 
 
+def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> dict[str, int]:
+    row_count = 0
+    total_change_length = 0
+    max_change_length = 0
+
+    for _, items in stage_blocks:
+        for change, _ in items:
+            if change == "[no change]":
+                continue
+            row_count += 1
+            change_length = len(change)
+            total_change_length += change_length
+            max_change_length = max(max_change_length, change_length)
+
+    return {
+        "rows": row_count,
+        "total_change_length": total_change_length,
+        "max_change_length": max_change_length,
+    }
+
+
+def choose_trace_widths(
+    left_blocks: list[tuple[str, list[tuple[str, str]]]],
+    right_blocks: list[tuple[str, list[tuple[str, str]]]],
+) -> tuple[float, float]:
+    left = panel_complexity(left_blocks)
+    right = panel_complexity(right_blocks)
+
+    if left["rows"] <= 1 and right["max_change_length"] >= 24:
+        return 0.37, 0.59
+    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 40:
+        return 0.39, 0.57
+    if right["rows"] <= 1 and left["max_change_length"] >= 24:
+        return 0.59, 0.37
+    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 40:
+        return 0.57, 0.39
+    return 0.485, 0.485
+
+
+def choose_form_column_width(panel_width: float, stats: dict[str, int]) -> float:
+    if stats["rows"] <= 1 and stats["max_change_length"] < 18:
+        return 0.29
+    if stats["max_change_length"] >= 28:
+        return 0.25
+    if panel_width >= 0.57:
+        return 0.27
+    if panel_width <= 0.39 and stats["max_change_length"] >= 20:
+        return 0.31
+    return 0.30
+
+
 def render_trace_panel(
     stage_blocks: list[tuple[str, list[tuple[str, str]]]],
     *,
     suppress_old_english_stage: bool = False,
+    form_column_width: float = 0.30,
 ) -> list[str]:
     lines = [r"\raggedright"]
 
@@ -315,7 +367,7 @@ def render_trace_panel(
             continue
 
         lines.append(
-            r"\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.34\linewidth}@{}}"
+            rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}X>{{\raggedleft\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{}}}}"
         )
         for change, form in items:
             if change == "[no change]" and not form:
@@ -338,8 +390,20 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     if len(row_parts) != 2:
         return [trace_entry["table"]]
 
-    left_panel = render_trace_panel(parse_trace_cell(row_parts[0]))
-    right_panel = render_trace_panel(parse_trace_cell(row_parts[1]), suppress_old_english_stage=True)
+    left_blocks = parse_trace_cell(row_parts[0])
+    right_blocks = parse_trace_cell(row_parts[1])
+    left_width, right_width = choose_trace_widths(left_blocks, right_blocks)
+    left_stats = panel_complexity(left_blocks)
+    right_stats = panel_complexity(right_blocks)
+    left_panel = render_trace_panel(
+        left_blocks,
+        form_column_width=choose_form_column_width(left_width, left_stats),
+    )
+    right_panel = render_trace_panel(
+        right_blocks,
+        suppress_old_english_stage=True,
+        form_column_width=choose_form_column_width(right_width, right_stats),
+    )
 
     return [
         r"\begingroup",
@@ -347,12 +411,12 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         r"\noindent\fbox{%",
         r"\begin{minipage}{0.97\linewidth}",
         r"\small",
-        r"\begin{minipage}[t]{0.485\linewidth}",
+        rf"\begin{{minipage}}[t]{{{left_width:.3f}\linewidth}}",
         r"\centering\textbf{Earlier Germanic changes}\par",
         r"\vspace{0.35em}",
         *left_panel,
         r"\end{minipage}\hfill",
-        r"\begin{minipage}[t]{0.485\linewidth}",
+        rf"\begin{{minipage}}[t]{{{right_width:.3f}\linewidth}}",
         r"\centering\textbf{Old English changes}\par",
         r"\vspace{0.35em}",
         *right_panel,
@@ -537,6 +601,10 @@ def build_front_matter(counts: Counter[str], intro_sections: dict[str, str]) -> 
     return lines
 
 
+def append_references_scaffold(parts: list[str]) -> None:
+    parts.extend(["", r"\clearpage", "", "## References", ""])
+
+
 def main() -> int:
     trace_entries = parse_trace_entries(TRACE_REPORT_PATH.read_text(encoding="utf-8"))
     intro_sections = parse_section_introductions(INTRO_PATH)
@@ -567,6 +635,7 @@ def main() -> int:
                 )
             parts.extend(["", rewrite_entry(model, trace_entry)])
 
+    append_references_scaffold(parts)
     OUTPUT_PATH.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
     print(f"Generated {OUTPUT_PATH}")
     return 0
