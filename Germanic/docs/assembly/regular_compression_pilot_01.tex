@@ -1,0 +1,2931 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  british,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Noto Serif}
+  \setmonofont[]{Noto Sans Mono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifPDFTeX
+\else
+\babelfont{rm}[]{Noto Serif}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdflang={en-GB},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Regular-entry compression pilot
+01}\label{regular-entry-compression-pilot-01}
+
+\emph{Assembly-only pilot comparing the current full regular-entry
+rendering with shorter book-like variants. Source model entries are
+unchanged.}
+
+\subsection{Sample}\label{sample}
+
+This pilot samples 12 regular entries chosen to cover very simple nouns,
+ordinary verbs, short note sections, dialect/source notes, and manual
+comparison cases.
+
+See \texttt{regular\_compression\_pilot\_manifest.tsv} for the selected
+rows and sample reasons.
+
+\subsection{Variant A: current style
+baseline}\label{variant-a-current-style-baseline}
+
+\subsubsection{bake --- OE bacan}\label{bake-oe-bacan}
+
+Derivation: \emph{*bákaną} \textgreater{} \emph{bacan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace}
+
+Proto input: \emph{*bákaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*bækaną} \\
+OE A Restoration & \emph{*bakaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
+OE Secondary Nasalization & \emph{*bakąn} \\
+OE Weak Tail Reduction & \emph{*bakan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{bacan}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence}
+
+Orel reconstructs the verb as \emph{*bakanan} and cites Old English
+\emph{bacan} beside Old High German \emph{backan, bahhan}
+(\citeproc{ref-Orel2003}{Orel 2003}). Campbell gives \emph{bacan} as one
+of the standard examples of Old English A-restoration before a single
+consonant, and Ringe and Taylor state the same development from
+\emph{*bakan} to Old English \emph{bacan}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Old English evidence}\label{old-english-evidence}
+
+Bosworth-Toller and Clark Hall both record \emph{bacan} as the ordinary
+Old English verb `to bake' (\citeproc{ref-BosworthToller1898}{Bosworth
+and Toller 1898, 72}; \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+The target in this entry is therefore the attested infinitive headword
+itself, not a selected oblique or finite paradigm cell.
+
+\paragraph{Development to Old English}\label{development-to-old-english}
+
+From \emph{*bákaną}, Anglo-Frisian brightening first gives
+\emph{*bækaną}. A-restoration then returns the stem vowel to \emph{a}
+before single \emph{k} plus the back-vocalic infinitive suffix, and
+later apocope and weak-tail reduction yield \emph{bacan}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The development
+is therefore straightforward: \emph{*bákaną} \textgreater{} bacan.
+
+\subsubsection{beech --- OE bōc}\label{beech-oe-bux14dc}
+
+Derivation: \emph{*bōkō} \textgreater{} \emph{bōc} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-1}
+
+Proto input: \emph{*bōkō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bōku} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bōk} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{bōc}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-1}
+
+Kroonen gives the beech noun as \emph{*bōk(j)ō-} and cites Old English
+boc, \emph{bēce} among its reflexes (\citeproc{ref-Kroonen2013}{Kroonen
+2013}). The selected input \emph{*bōkō} is the nominative-singular shape
+of that family, which is the relevant comparison form here.
+
+\paragraph{Old English evidence}\label{old-english-evidence-1}
+
+Kroonen's Old English evidence already separates the paradigm material:
+\emph{boc} as the nominative form and \emph{bēce} as an oblique form
+(\citeproc{ref-Kroonen2013}{Kroonen 2013}). The relevant comparator is
+therefore \emph{bōc}; \emph{bēċe} remains related paradigm evidence
+rather than the form chosen for this comparison.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-1}
+
+With nominative input \emph{*bōkō}, the development is compact.
+Northwest Germanic final long \emph{ō} raises to \emph{u}, and later
+high-vowel apocope leaves \emph{bōc}. The regular comparison is
+therefore \emph{*bōkō} \textgreater{} \emph{bōc}.
+
+\subsubsection{bier --- OE bǣr}\label{bier-oe-bux1e3r}
+
+Derivation: \emph{*bḗrō} \textgreater{} \emph{bǣr} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-2}
+
+Proto input: \emph{*bḗrō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bḗru} \\
+\mbox{NWGmc Long E Lowering} & \emph{*bǣru} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bǣr} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{bǣr}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-2}
+
+Kroonen reconstructs the noun as \emph{*bērō-} f.~`bier' and cites Old
+English bar, \emph{bær} among the reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}). The selected input
+\emph{*bḗrō} is the same lexeme in the accent notation used here.
+
+\paragraph{Old English evidence}\label{old-english-evidence-2}
+
+Clark Hall and Bosworth-Toller lemmatize the noun as \emph{bær}, and
+Kroonen also records \emph{bar} beside it
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}). The target \emph{bǣr} is
+therefore a normalized long-vowel spelling of the same noun.
+
+\paragraph{Source note}\label{source-note}
+
+Lexicographic spellings vary between \emph{bær} and \emph{bar}. The
+normalized target \emph{bǣr} simply marks the same long vowel explicitly
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}).
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-2}
+
+From \emph{*bḗrō}, Northwest Germanic final long \emph{ō} raises to
+\emph{u}, long \emph{ē} lowers to \emph{ǣ}, and high-vowel apocope
+yields \emph{bǣr}. The resulting noun matches the normalized Old English
+target.
+
+\subsubsection{both --- OE bū}\label{both-oe-bux16b}
+
+Derivation: \emph{*bō} \textgreater{} \emph{bū} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-3}
+
+Proto input: \emph{*bō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.540\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{bū}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-3}
+
+Kroonen treats the Germanic numeral under \emph{*ba-} and gives the
+inherited paradigm \emph{*bai}, \emph{*bans}, \emph{*bōz}/\emph{*bōns},
+\emph{*bō}, with Old English \emph{bēġen}, \emph{bā}, and neuter
+\emph{bū} (\citeproc{ref-Kroonen2013}{Kroonen 2013, 47}). For the
+present entry, the relevant inherited form is the unextended neuter dual
+\emph{*bō}.
+
+The older explanation of \emph{bēġen} derives it from \emph{*bō-jen-},
+and Orel still gives OE \emph{bezen} (\textless{} \emph{*bō-jenō)}
+beside ON \emph{báðir}, OFris \emph{bēthe}, \emph{OS be-thia}, and OHG
+\emph{bēde}, beide (\citeproc{ref-Orel2003}{Orel 2003, 65}). Fulk
+reports that explanation cautiously and notes Seebold's preference for a
+\emph{*bō-þ-} analysis instead (\citeproc{ref-Fulk2018}{Fulk 2018, sect.
+10.1}). That debate matters for \emph{bēġen} and for the extended forms
+behind Modern English \emph{both}, German \emph{beide}, and Dutch
+\emph{beide}; it does not displace the inherited neuter \emph{*bō}
+\textgreater{} \emph{bū} treated here.
+
+\paragraph{Old English evidence}\label{old-english-evidence-3}
+
+The Old English dual paradigm is well established. Brunner gives
+masculine \emph{bēġen}, feminine \emph{bā}, and neuter \emph{bū} beside
+\emph{bā}, with compounds such as \emph{bā} \emph{twā}, \emph{bū}
+\emph{tū}, and \emph{bām} \emph{twām}
+(\citeproc{ref-SieversBrunner1965}{Sievers 1965, sect. 324} Anm. 2).
+Campbell and Fulk present the same basic pattern: masculine
+\emph{bēġen}, feminine \emph{bā}, neuter \emph{bā}, \emph{bū}, genitive
+\emph{bēġra}, \emph{bēġ(e)a}, and dative \emph{bǣm}
+(\citeproc{ref-Campbell1959}{Campbell 1959, sect. 683};
+\citeproc{ref-Fulk2018}{Fulk 2018, sect. 10.1}).
+
+\emph{bū} is therefore an attested neuter dual form, not a
+reconstruction. It is the cleanest target for this entry because
+\emph{bēġen} belongs to the historically more contested \emph{*bō-jen-}
+/ analogical zone, while \emph{bā} remains a partner form within the
+dual paradigm rather than the most straightforward monosyllabic
+comparison.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-3}
+
+\emph{*bō} is a stressed monosyllabic form. Campbell cites \emph{cū},
+\emph{hū}, \emph{tū}, and \emph{bū} as examples of final accented
+\emph{ō} \textgreater{} \emph{ū} in the West Germanic stage leading to
+Old English (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 122}).
+Brunner states the same development more directly: Auslautendes \emph{ō}
+erscheint als û in \emph{bū} \ldots{} cu \ldots{} \emph{hū}, \emph{tū}
+(\citeproc{ref-SieversBrunner1965}{Sievers 1965, sect. 69}).
+
+The development is therefore straightforward: \emph{*bō} \textgreater{}
+\emph{bū}.
+
+\paragraph{Form comparison}\label{form-comparison}
+
+The comparison below is manual. It separates the inherited OE target
+from the other forms that belong to the same broader lexical history.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Form
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source / stage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relevance to this entry
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{*bō} \textgreater{} \emph{bū} & PGmc neuter dual \textgreater{} OE
+neuter dual & selected regular comparison & main line of the entry \\
+\emph{bēġen} & OE masculine dual & attested, but historically contested
+and at least partly analogical in Kroonen & real OE evidence, not the
+selected target \\
+\emph{bā} & OE feminine dual; also neuter variant & attested partner
+form & part of the OE paradigm, but not the chosen monosyllabic
+comparator \\
+\emph{báðir}, \emph{beide}, \emph{both} & Norse, continental West
+Germanic, Modern English extended forms & related but different
+formation & useful background, not the direct continuation of OE
+\emph{bū} \\
+\end{longtable}
+}
+
+\subsubsection{bow --- OE bīeġan}\label{bow-oe-bux12beux121an}
+
+Derivation: \emph{*báugijaną} \textgreater{} \emph{bīeġan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-4}
+
+Proto input: \emph{*báugijaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Au Fronting & \emph{*báeugijaną} \\
+OE Diphthong Leveling & \emph{*bēagijaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bēagijan} \\
+OE Secondary Nasalization & \emph{*bēagijąn} \\
+Sievers Law Syncope & \emph{*bēagjąn} \\
+OE Velar Palatalization & \emph{*bēaʤjąn} \\
+OE I Umlaut & \emph{*bīeʤjąn} \\
+OE Weak Tail Reduction & \emph{*bīeʤjan} \\
+OE J Loss After Heavy & \emph{*bīeʤan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{bīeġan}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-4}
+
+Kroonen reconstructs the weak verb as \emph{*baugjan-} `to (make) bend'
+and cites Old English \emph{biegan} among its reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013}). Ringe and Taylor give the
+northwest Germanic and West Saxon development more fully as PNWGmce
+\emph{*baugijana} \textgreater{} \emph{*béagjan} \textgreater{} WS OE
+\emph{biegan} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+The entry therefore concerns the weak causative member of the
+bend-family, alongside the related strong verb and noun.
+
+\paragraph{Old English evidence}\label{old-english-evidence-4}
+
+Clark Hall lemmatizes \emph{biegan}, and Bosworth-Toller records
+\emph{bigan} with examples such as Ic \emph{bēge} \emph{mīne}
+\emph{cneówa} and Se ord \emph{bīgde} upp \emph{tō} \emph{þām} hiltum
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 102}). The
+form \emph{bīeġan} used here is a normalized spelling of that attested
+Old English weak verb.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-4}
+
+From \emph{*báugijaną}, the stem reaches pre-Old-English
+\emph{*bēagjan}, after which palatalization of \emph{*gj} and i-umlaut
+yield West Saxon \emph{biegan}; Campbell lists \emph{biegan} among the
+regular \emph{ie} outcomes of \emph{*éa} under i-umlaut
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
+\citeproc{ref-Campbell1959}{Campbell 1959, 80}). The development is
+therefore straightforward: \emph{*báugijaną} \textgreater{}
+\emph{bīeġan}.
+
+\subsubsection{fare --- OE faran}\label{fare-oe-faran}
+
+Derivation: \emph{*fáraną} \textgreater{} \emph{faran} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-5}
+
+Proto input: \emph{*fáraną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*færaną} \\
+OE A Restoration & \emph{*faraną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
+OE Secondary Nasalization & \emph{*farąn} \\
+OE Weak Tail Reduction & \emph{*faran} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{faran}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-5}
+
+Kroonen gives the inherited strong verb as \emph{*faran-}, and Orel
+gives the same lexeme as \emph{*faranan}, both with Old English
+\emph{faran} among the reflexes (\citeproc{ref-Kroonen2013}{Kroonen
+2013}; \citeproc{ref-Orel2003}{Orel 2003, 132}). Campbell also uses
+\emph{faran} as a standard example of Old English A-restoration
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61}).
+
+\paragraph{Old English evidence}\label{old-english-evidence-5}
+
+Clark Hall lemmatizes the strong verb as \emph{faran} and separately
+records weak \emph{færan} `to frighten'; \emph{fære}, \emph{færst}, and
+\emph{færð} belong to present-tense forms of \emph{faran} rather than to
+the infinitive itself (\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+Bosworth-Toller preserves the same distinction
+(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 108}). The
+selected target is therefore the attested citation infinitive
+\emph{faran}.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-5}
+
+From \emph{*fáraną}, Anglo-Frisian brightening first gives
+\emph{*færaną}, but A-restoration before single \emph{r} returns
+\emph{*faraną}; later apocope and weak-tail reduction yield \emph{faran}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61}). Fulk's contrast with
+participial faren- \textless{} \emph{*faræn-} \textless{} \emph{*faran-}
+shows why fronting elsewhere in the paradigm does not alter the
+infinitive headword (\citeproc{ref-Fulk2018}{Fulk 2018}).
+
+\subsubsection{guest --- OE ġiest}\label{guest-oe-ux121iest}
+
+Derivation: \emph{*gástiz} \textgreater{} \emph{ġiest} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-6}
+
+Proto input: \emph{*gástiz}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{PGmc Final Z Deletion} & \emph{*gásti} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*gæsti} \\
+OE Velar Palatalization & \emph{*ʤæsti} \\
+OE I Umlaut & \emph{*ʤesti} \\
+OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
+\mbox{OE High Vowel Apocope} & \emph{*ʤiest} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{ġiest}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-6}
+
+Campbell and Ringe-Taylor treat the noun as an ordinary i-stem whose
+West Saxon development shows palatal diphthongization, while
+non-West-Saxon evidence preserves forms of the \emph{gest} type
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Old English evidence}\label{old-english-evidence-6}
+
+Bosworth-Toller and Clark Hall record the word under forms such as
+\emph{gist}, \emph{gest}, \emph{giest}, and \emph{gyst}
+(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960}). The selected target
+\emph{ġiest} is the normalized West Saxon form within that attested
+family.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-6}
+
+From \emph{*gástiz}, Anglo-Frisian brightening gives a \emph{gæst-}
+stage, and i-mutation affects the front vowel before the lost
+high-vocalic ending. In West Saxon the initial palatal environment then
+produces \emph{ie}, so the regular outcome is \emph{ġiest}
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Dialect note}\label{dialect-note}
+
+West Saxon \emph{ġiest} is the selected target here. Anglian \emph{gest}
+and related spellings remain real Old English comparators rather than
+corrections to that choice (\citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014}; \citeproc{ref-BosworthToller1898}{Bosworth and Toller
+1898}).
+
+\subsubsection{learn --- OE liornian}\label{learn-oe-liornian}
+
+Derivation: \emph{*líznōjaną} \textgreater{} \emph{liornian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-7}
+
+Proto input: \emph{*líznōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Breaking & \emph{*líornōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
+OE Secondary Nasalization & \emph{*líornōjąn} \\
+OE I Umlaut & \emph{*líornējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*líornejąn} \\
+OE Weak Tail Reduction & \emph{*líornejan} \\
+OE Intervocalic J Vocalization & \emph{*líorneian} \\
+OE Unstressed EI Contraction & \emph{*líornian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{liornian}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-7}
+
+Ringe and Taylor place the verb in a class-II weak family of the
+\emph{*liznō-} type (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014}), and Kroonen keeps the same comparative base for the Germanic
+lexeme (\citeproc{ref-Kroonen2013}{Kroonen 2013}). The selected input
+therefore requires no change of stem class or paradigm cell.
+
+The non-obvious issue is dialectal. Campbell records Northumbrian
+\emph{liornian} beside \emph{leornian}, and he states that the \emph{eo}
+of \emph{leornian} is secondary, while Northumbrian preserves forms with
+\emph{io}, where original \emph{eo} and \emph{io} remain distinct
+(\citeproc{ref-Campbell1959}{Campbell 1959, sect. 123} n.~2).
+
+\paragraph{Old English evidence}\label{old-english-evidence-7}
+
+The form modeled here is \emph{liornian}, the Northumbrian member of the
+Old English family. Dictionary practice more often privileges
+\emph{leornian} as the ordinary headword
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}), but Campbell's
+dialect evidence shows that \emph{liornian} is a genuine Old English
+form (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 123} n.~2).
+
+This entry therefore remains compact. The point is to state clearly that
+the selected target belongs to the Northumbrian side of the OE evidence
+rather than to the leveled \emph{leornian} headword tradition.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-7}
+
+From \emph{*líznōjaną}, the expected Old English developments include
+rhotacism of \emph{z}, followed by breaking before \emph{r} plus
+consonant, and the ordinary reduction of the weak verbal ending. The
+result is \emph{liornian}, preserving the \emph{io} spelling that
+Campbell associates with Northumbrian where original \emph{eo} and
+\emph{io} remain distinct (\citeproc{ref-Campbell1959}{Campbell 1959,
+sect. 123} n.~2).
+
+\emph{Leornian} reflects the later \emph{eo} development that Campbell
+treats as secondary {[}Campbell (\citeproc{ref-Campbell1959}{1959}),
+§123 n.~2; §296{]}. The selected Northumbrian target is therefore the
+regular comparison form for the \emph{i}-grade member of the family.
+
+\paragraph{Form comparison}\label{form-comparison-1}
+
+The comparison below is manual. It distinguishes the regular
+Northumbrian form modeled here from the better-known West Saxon
+headword.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Form
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relevance to this entry
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{*líznōjaną} -\textgreater{} liornian & computed regular output;
+attested Northumbrian comparison form & selected comparison \\
+\emph{leornian} & attested later \emph{eo} form and dictionary headword
+& useful control, but not the target of this entry \\
+\end{longtable}
+}
+
+\subsubsection{linden --- OE lind}\label{linden-oe-lind}
+
+Derivation: \emph{*líndō} \textgreater{} \emph{lind} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-8}
+
+Proto input: \emph{*líndō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*líndu} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*línd} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{lind}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-8}
+
+Kroonen cites \emph{*lindō-} `lime tree' and gives Old English
+\emph{lind} as the relevant reflex (\citeproc{ref-Kroonen2013}{Kroonen
+2013}).
+
+\paragraph{Old English evidence}\label{old-english-evidence-8}
+
+Clark Hall and Bosworth-Toller both record \emph{lind} as the noun
+`lime-tree, linden' (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 630}).
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-8}
+
+From \emph{*líndō}, Northwest Germanic final \emph{*ō} raising first
+gives a \emph{*líndu} stage, and later high-vowel apocope yields
+\emph{lind}. The development is therefore straightforward and regular.
+
+\paragraph{Form note}\label{form-note}
+
+The Old English noun represented here is \emph{lind}. Clark Hall also
+has a separate adjectival \emph{linden} `made of linden-wood', but that
+is not the noun counterpart for this entry
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+
+\subsubsection{mother --- OE mōder}\label{mother-oe-mux14dder}
+
+Derivation: \emph{*mōdēr} \textgreater{} \emph{mōder} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-9}
+
+Proto input: \emph{*mōdēr}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*mōdǣr} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Unstressed Long Vowel Shortening & \emph{*mōdær} \\
+OE Unstressed AE Merger & \emph{*mōder} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{mōder}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-9}
+
+Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as
+\emph{*mōder-} / \emph{*mōdēr} (\citeproc{ref-Kroonen2013}{Kroonen
+2013}; \citeproc{ref-Orel2003}{Orel 2003}).
+
+\paragraph{Old English evidence}\label{old-english-evidence-9}
+
+The transmitted Old English headword tradition is \emph{mōdor} / modor,
+with oblique \emph{mēder} in the paradigm. Clark Hall, Campbell, and
+Ringe and Taylor all preserve that contrast
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-9}
+
+From \emph{*mōdēr}, the regular suffixal development yields
+\emph{mōder}. That regular nominative reflex is the form represented
+here, while the more familiar citation form \emph{mōdor} reflects later
+levelling within the r-stem paradigm
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Form comparison}\label{form-comparison-2}
+
+The note therefore concerns inherited vocalism rather than a different
+lexeme: \emph{mōder} is the regularized nominative represented here, but
+dictionaries usually print \emph{mōdor} / modor, and the oblique
+evidence survives in \emph{mēder} (\citeproc{ref-ClarkHall1960}{Clark
+Hall 1960}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\subsubsection{show --- OE sċēawian}\label{show-oe-sux10bux113awian}
+
+Derivation: \emph{*skáwōjaną} \textgreater{} \emph{sċēawian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-10}
+
+Proto input: \emph{*skáwōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Aw Long Diphthong & \emph{*skḗawōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
+OE Secondary Nasalization & \emph{*skḗawōjąn} \\
+OE Sk Palatalization & \emph{*ʃḗawōjąn} \\
+OE I Umlaut & \emph{*ʃḗawējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
+OE Weak Tail Reduction & \emph{*ʃḗawejan} \\
+OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
+OE Unstressed EI Contraction & \emph{*ʃḗawian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{sċēawian}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-10}
+
+Orel and Kroonen cite a Class II verb of the type \emph{*skawōjan-},
+with OE \emph{scēawian} among the reflexes (\citeproc{ref-Orel2003}{Orel
+2003}; \citeproc{ref-Kroonen2013}{Kroonen 2013, 482}). Brunner likewise
+records the Old English family as \emph{scēawian}, \emph{scāwian}, which
+places this entry in the ordinary show-verb set rather than in a special
+finite-cell workaround (\citeproc{ref-SieversBrunner1965}{Sievers
+1965}).
+
+\paragraph{Old English evidence}\label{old-english-evidence-10}
+
+Bright lists \emph{scēawian} (W. II.) and also the related form
+\emph{scēawa} (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}).
+The source tradition therefore uses \emph{scēawian}, while the target
+represented here is the normalized project spelling \emph{sċēawian}.
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-10}
+
+From \emph{*skáwōjaną}, Old English \emph{aw} before a following vowel
+yields \emph{ēaw}, and the Class II suffix keeps \emph{*ō} between
+\emph{*w} and \emph{*j}. The development therefore runs regularly to
+\emph{sċēawian}, without the direct \emph{*aw+j} problem seen in other
+verb types (\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-Orel2003}{Orel 2003}).
+
+\paragraph{Form note}\label{form-note-1}
+
+The difference between \emph{scēawian} and \emph{sċēawian} is
+orthographic normalization of initial \emph{}, not a difference of
+lexeme or paradigm cell (\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-Hogg1992}{Hogg 1992}).
+
+\subsubsection{weapon --- OE wǣpn}\label{weapon-oe-wux1e3pn}
+
+Derivation: \emph{*wḗpną} \textgreater{} \emph{wǣpn} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-11}
+
+Proto input: \emph{*wḗpną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*wǣpną} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+Outcome: \emph{wǣpn}
+
+\paragraph{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-11}
+
+Kroonen reconstructs a double-stem noun \emph{*wēbna-} \textasciitilde{}
+\emph{*wēpna-} and cites OE \emph{wæpn} among its reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 617}). The selected input
+\emph{*wḗpną} represents the unbroken citation-form noun rather than the
+later broken simplex.
+
+\paragraph{Old English evidence}\label{old-english-evidence-11}
+
+Campbell's cluster-noun discussion preserves unbroken \emph{wépn} beside
+broken \emph{wépen}-type forms (\citeproc{ref-Campbell1959}{Campbell
+1959, 150}; \citeproc{ref-Campbell1959}{1959, 226--27}). Bright
+contrasts broken nominative \emph{wǣpen}/wapen with unbroken oblique
+\emph{wǣpnes}, while Clark Hall lemmatizes the noun under \emph{wapen}
+and also preserves unbroken forms in compounds and related spellings
+(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
+
+\paragraph{Development to Old
+English}\label{development-to-old-english-11}
+
+Northwest Germanic lowering gives \emph{wǣpn}, and loss of the final
+nasal vowel leaves the unbroken cluster word-finally. The selected
+target is the attested unbroken form \emph{wǣpn}.
+
+\paragraph{Form note}\label{form-note-2}
+
+The ordinary late West Saxon simplex headword is \emph{wǣpen}, but
+Campbell's noun-class discussion also preserves unbroken \emph{wépn}
+beside broken \emph{wépen}-type forms
+(\citeproc{ref-Campbell1959}{Campbell 1959, 150};
+\citeproc{ref-Campbell1959}{1959, 226--27}). \emph{wǣpnes} remains the
+regular unbroken oblique comparator
+(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
+
+\clearpage
+
+\subsection{Variant B: compact regular
+style}\label{variant-b-compact-regular-style}
+
+These entries keep the heading, derivation line, and boxed trace, but
+merge the three standard prose sections into one commentary block and
+retain only shorter note/comparison sections separately.
+
+\subsubsection{bake --- OE bacan}\label{bake-oe-bacan-1}
+
+Derivation: \emph{*bákaną} \textgreater{} \emph{bacan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-12}
+
+Proto input: \emph{*bákaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*bækaną} \\
+OE A Restoration & \emph{*bakaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
+OE Secondary Nasalization & \emph{*bakąn} \\
+OE Weak Tail Reduction & \emph{*bakan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary}
+
+Orel reconstructs the verb as \emph{*bakanan} and cites Old English
+\emph{bacan} beside Old High German \emph{backan, bahhan}
+(\citeproc{ref-Orel2003}{Orel 2003}). Campbell gives \emph{bacan} as one
+of the standard examples of Old English A-restoration before a single
+consonant, and Ringe and Taylor state the same development from
+\emph{*bakan} to Old English \emph{bacan}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+Bosworth-Toller and Clark Hall both record \emph{bacan} as the ordinary
+Old English verb `to bake' (\citeproc{ref-BosworthToller1898}{Bosworth
+and Toller 1898, 72}; \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+The target in this entry is therefore the attested infinitive headword
+itself, not a selected oblique or finite paradigm cell.
+
+From \emph{*bákaną}, Anglo-Frisian brightening first gives
+\emph{*bækaną}. A-restoration then returns the stem vowel to \emph{a}
+before single \emph{k} plus the back-vocalic infinitive suffix, and
+later apocope and weak-tail reduction yield \emph{bacan}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The development
+is therefore straightforward: \emph{*bákaną} \textgreater{} bacan.
+
+\subsubsection{beech --- OE bōc}\label{beech-oe-bux14dc-1}
+
+Derivation: \emph{*bōkō} \textgreater{} \emph{bōc} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-13}
+
+Proto input: \emph{*bōkō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bōku} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bōk} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-1}
+
+Kroonen gives the beech noun as \emph{*bōk(j)ō-} and cites Old English
+boc, \emph{bēce} among its reflexes (\citeproc{ref-Kroonen2013}{Kroonen
+2013}). The selected input \emph{*bōkō} is the nominative-singular shape
+of that family, which is the relevant comparison form here.
+
+Kroonen's Old English evidence already separates the paradigm material:
+\emph{boc} as the nominative form and \emph{bēce} as an oblique form
+(\citeproc{ref-Kroonen2013}{Kroonen 2013}). The relevant comparator is
+therefore \emph{bōc}; \emph{bēċe} remains related paradigm evidence
+rather than the form chosen for this comparison.
+
+With nominative input \emph{*bōkō}, the development is compact.
+Northwest Germanic final long \emph{ō} raises to \emph{u}, and later
+high-vowel apocope leaves \emph{bōc}. The regular comparison is
+therefore \emph{*bōkō} \textgreater{} \emph{bōc}.
+
+\subsubsection{bier --- OE bǣr}\label{bier-oe-bux1e3r-1}
+
+Derivation: \emph{*bḗrō} \textgreater{} \emph{bǣr} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-14}
+
+Proto input: \emph{*bḗrō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bḗru} \\
+\mbox{NWGmc Long E Lowering} & \emph{*bǣru} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bǣr} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-2}
+
+Kroonen reconstructs the noun as \emph{*bērō-} f.~`bier' and cites Old
+English bar, \emph{bær} among the reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}). The selected input
+\emph{*bḗrō} is the same lexeme in the accent notation used here.
+
+Clark Hall and Bosworth-Toller lemmatize the noun as \emph{bær}, and
+Kroonen also records \emph{bar} beside it
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}). The target \emph{bǣr} is
+therefore a normalized long-vowel spelling of the same noun.
+
+From \emph{*bḗrō}, Northwest Germanic final long \emph{ō} raises to
+\emph{u}, long \emph{ē} lowers to \emph{ǣ}, and high-vowel apocope
+yields \emph{bǣr}. The resulting noun matches the normalized Old English
+target.
+
+\paragraph{Source note}\label{source-note-1}
+
+Lexicographic spellings vary between \emph{bær} and \emph{bar}. The
+normalized target \emph{bǣr} simply marks the same long vowel explicitly
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}).
+
+\subsubsection{both --- OE bū}\label{both-oe-bux16b-1}
+
+Derivation: \emph{*bō} \textgreater{} \emph{bū} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-15}
+
+Proto input: \emph{*bō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.540\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-3}
+
+Kroonen treats the Germanic numeral under \emph{*ba-} and gives the
+inherited paradigm \emph{*bai}, \emph{*bans}, \emph{*bōz}/\emph{*bōns},
+\emph{*bō}, with Old English \emph{bēġen}, \emph{bā}, and neuter
+\emph{bū} (\citeproc{ref-Kroonen2013}{Kroonen 2013, 47}). For the
+present entry, the relevant inherited form is the unextended neuter dual
+\emph{*bō}.
+
+The older explanation of \emph{bēġen} derives it from \emph{*bō-jen-},
+and Orel still gives OE \emph{bezen} (\textless{} \emph{*bō-jenō)}
+beside ON \emph{báðir}, OFris \emph{bēthe}, \emph{OS be-thia}, and OHG
+\emph{bēde}, beide (\citeproc{ref-Orel2003}{Orel 2003, 65}). Fulk
+reports that explanation cautiously and notes Seebold's preference for a
+\emph{*bō-þ-} analysis instead (\citeproc{ref-Fulk2018}{Fulk 2018, sect.
+10.1}). That debate matters for \emph{bēġen} and for the extended forms
+behind Modern English \emph{both}, German \emph{beide}, and Dutch
+\emph{beide}; it does not displace the inherited neuter \emph{*bō}
+\textgreater{} \emph{bū} treated here.
+
+The Old English dual paradigm is well established. Brunner gives
+masculine \emph{bēġen}, feminine \emph{bā}, and neuter \emph{bū} beside
+\emph{bā}, with compounds such as \emph{bā} \emph{twā}, \emph{bū}
+\emph{tū}, and \emph{bām} \emph{twām}
+(\citeproc{ref-SieversBrunner1965}{Sievers 1965, sect. 324} Anm. 2).
+Campbell and Fulk present the same basic pattern: masculine
+\emph{bēġen}, feminine \emph{bā}, neuter \emph{bā}, \emph{bū}, genitive
+\emph{bēġra}, \emph{bēġ(e)a}, and dative \emph{bǣm}
+(\citeproc{ref-Campbell1959}{Campbell 1959, sect. 683};
+\citeproc{ref-Fulk2018}{Fulk 2018, sect. 10.1}).
+
+\emph{bū} is therefore an attested neuter dual form, not a
+reconstruction. It is the cleanest target for this entry because
+\emph{bēġen} belongs to the historically more contested \emph{*bō-jen-}
+/ analogical zone, while \emph{bā} remains a partner form within the
+dual paradigm rather than the most straightforward monosyllabic
+comparison.
+
+\emph{*bō} is a stressed monosyllabic form. Campbell cites \emph{cū},
+\emph{hū}, \emph{tū}, and \emph{bū} as examples of final accented
+\emph{ō} \textgreater{} \emph{ū} in the West Germanic stage leading to
+Old English (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 122}).
+Brunner states the same development more directly: Auslautendes \emph{ō}
+erscheint als û in \emph{bū} \ldots{} cu \ldots{} \emph{hū}, \emph{tū}
+(\citeproc{ref-SieversBrunner1965}{Sievers 1965, sect. 69}).
+
+The development is therefore straightforward: \emph{*bō} \textgreater{}
+\emph{bū}.
+
+\paragraph{Comparison}\label{comparison}
+
+The comparison below is manual. It separates the inherited OE target
+from the other forms that belong to the same broader lexical history.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Form
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source / stage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relevance to this entry
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{*bō} \textgreater{} \emph{bū} & PGmc neuter dual \textgreater{} OE
+neuter dual & selected regular comparison & main line of the entry \\
+\emph{bēġen} & OE masculine dual & attested, but historically contested
+and at least partly analogical in Kroonen & real OE evidence, not the
+selected target \\
+\emph{bā} & OE feminine dual; also neuter variant & attested partner
+form & part of the OE paradigm, but not the chosen monosyllabic
+comparator \\
+\emph{báðir}, \emph{beide}, \emph{both} & Norse, continental West
+Germanic, Modern English extended forms & related but different
+formation & useful background, not the direct continuation of OE
+\emph{bū} \\
+\end{longtable}
+}
+
+\subsubsection{bow --- OE bīeġan}\label{bow-oe-bux12beux121an-1}
+
+Derivation: \emph{*báugijaną} \textgreater{} \emph{bīeġan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-16}
+
+Proto input: \emph{*báugijaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Au Fronting & \emph{*báeugijaną} \\
+OE Diphthong Leveling & \emph{*bēagijaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bēagijan} \\
+OE Secondary Nasalization & \emph{*bēagijąn} \\
+Sievers Law Syncope & \emph{*bēagjąn} \\
+OE Velar Palatalization & \emph{*bēaʤjąn} \\
+OE I Umlaut & \emph{*bīeʤjąn} \\
+OE Weak Tail Reduction & \emph{*bīeʤjan} \\
+OE J Loss After Heavy & \emph{*bīeʤan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-4}
+
+Kroonen reconstructs the weak verb as \emph{*baugjan-} `to (make) bend'
+and cites Old English \emph{biegan} among its reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013}). Ringe and Taylor give the
+northwest Germanic and West Saxon development more fully as PNWGmce
+\emph{*baugijana} \textgreater{} \emph{*béagjan} \textgreater{} WS OE
+\emph{biegan} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+The entry therefore concerns the weak causative member of the
+bend-family, alongside the related strong verb and noun.
+
+Clark Hall lemmatizes \emph{biegan}, and Bosworth-Toller records
+\emph{bigan} with examples such as Ic \emph{bēge} \emph{mīne}
+\emph{cneówa} and Se ord \emph{bīgde} upp \emph{tō} \emph{þām} hiltum
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 102}). The
+form \emph{bīeġan} used here is a normalized spelling of that attested
+Old English weak verb.
+
+From \emph{*báugijaną}, the stem reaches pre-Old-English
+\emph{*bēagjan}, after which palatalization of \emph{*gj} and i-umlaut
+yield West Saxon \emph{biegan}; Campbell lists \emph{biegan} among the
+regular \emph{ie} outcomes of \emph{*éa} under i-umlaut
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
+\citeproc{ref-Campbell1959}{Campbell 1959, 80}). The development is
+therefore straightforward: \emph{*báugijaną} \textgreater{}
+\emph{bīeġan}.
+
+\subsubsection{fare --- OE faran}\label{fare-oe-faran-1}
+
+Derivation: \emph{*fáraną} \textgreater{} \emph{faran} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-17}
+
+Proto input: \emph{*fáraną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*færaną} \\
+OE A Restoration & \emph{*faraną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
+OE Secondary Nasalization & \emph{*farąn} \\
+OE Weak Tail Reduction & \emph{*faran} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-5}
+
+Kroonen gives the inherited strong verb as \emph{*faran-}, and Orel
+gives the same lexeme as \emph{*faranan}, both with Old English
+\emph{faran} among the reflexes (\citeproc{ref-Kroonen2013}{Kroonen
+2013}; \citeproc{ref-Orel2003}{Orel 2003, 132}). Campbell also uses
+\emph{faran} as a standard example of Old English A-restoration
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61}).
+
+Clark Hall lemmatizes the strong verb as \emph{faran} and separately
+records weak \emph{færan} `to frighten'; \emph{fære}, \emph{færst}, and
+\emph{færð} belong to present-tense forms of \emph{faran} rather than to
+the infinitive itself (\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+Bosworth-Toller preserves the same distinction
+(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 108}). The
+selected target is therefore the attested citation infinitive
+\emph{faran}.
+
+From \emph{*fáraną}, Anglo-Frisian brightening first gives
+\emph{*færaną}, but A-restoration before single \emph{r} returns
+\emph{*faraną}; later apocope and weak-tail reduction yield \emph{faran}
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61}). Fulk's contrast with
+participial faren- \textless{} \emph{*faræn-} \textless{} \emph{*faran-}
+shows why fronting elsewhere in the paradigm does not alter the
+infinitive headword (\citeproc{ref-Fulk2018}{Fulk 2018}).
+
+\subsubsection{guest --- OE ġiest}\label{guest-oe-ux121iest-1}
+
+Derivation: \emph{*gástiz} \textgreater{} \emph{ġiest} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-18}
+
+Proto input: \emph{*gástiz}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{PGmc Final Z Deletion} & \emph{*gásti} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*gæsti} \\
+OE Velar Palatalization & \emph{*ʤæsti} \\
+OE I Umlaut & \emph{*ʤesti} \\
+OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
+\mbox{OE High Vowel Apocope} & \emph{*ʤiest} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-6}
+
+Campbell and Ringe-Taylor treat the noun as an ordinary i-stem whose
+West Saxon development shows palatal diphthongization, while
+non-West-Saxon evidence preserves forms of the \emph{gest} type
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+Bosworth-Toller and Clark Hall record the word under forms such as
+\emph{gist}, \emph{gest}, \emph{giest}, and \emph{gyst}
+(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960}). The selected target
+\emph{ġiest} is the normalized West Saxon form within that attested
+family.
+
+From \emph{*gástiz}, Anglo-Frisian brightening gives a \emph{gæst-}
+stage, and i-mutation affects the front vowel before the lost
+high-vocalic ending. In West Saxon the initial palatal environment then
+produces \emph{ie}, so the regular outcome is \emph{ġiest}
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Dialect note}\label{dialect-note-1}
+
+West Saxon \emph{ġiest} is the selected target here. Anglian \emph{gest}
+and related spellings remain real Old English comparators rather than
+corrections to that choice (\citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014}; \citeproc{ref-BosworthToller1898}{Bosworth and Toller
+1898}).
+
+\subsubsection{learn --- OE liornian}\label{learn-oe-liornian-1}
+
+Derivation: \emph{*líznōjaną} \textgreater{} \emph{liornian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-19}
+
+Proto input: \emph{*líznōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Breaking & \emph{*líornōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
+OE Secondary Nasalization & \emph{*líornōjąn} \\
+OE I Umlaut & \emph{*líornējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*líornejąn} \\
+OE Weak Tail Reduction & \emph{*líornejan} \\
+OE Intervocalic J Vocalization & \emph{*líorneian} \\
+OE Unstressed EI Contraction & \emph{*líornian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-7}
+
+Ringe and Taylor place the verb in a class-II weak family of the
+\emph{*liznō-} type (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014}), and Kroonen keeps the same comparative base for the Germanic
+lexeme (\citeproc{ref-Kroonen2013}{Kroonen 2013}). The selected input
+therefore requires no change of stem class or paradigm cell.
+
+The non-obvious issue is dialectal. Campbell records Northumbrian
+\emph{liornian} beside \emph{leornian}, and he states that the \emph{eo}
+of \emph{leornian} is secondary, while Northumbrian preserves forms with
+\emph{io}, where original \emph{eo} and \emph{io} remain distinct
+(\citeproc{ref-Campbell1959}{Campbell 1959, sect. 123} n.~2).
+
+The form modeled here is \emph{liornian}, the Northumbrian member of the
+Old English family. Dictionary practice more often privileges
+\emph{leornian} as the ordinary headword
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}), but Campbell's
+dialect evidence shows that \emph{liornian} is a genuine Old English
+form (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 123} n.~2).
+
+This entry therefore remains compact. The point is to state clearly that
+the selected target belongs to the Northumbrian side of the OE evidence
+rather than to the leveled \emph{leornian} headword tradition.
+
+From \emph{*líznōjaną}, the expected Old English developments include
+rhotacism of \emph{z}, followed by breaking before \emph{r} plus
+consonant, and the ordinary reduction of the weak verbal ending. The
+result is \emph{liornian}, preserving the \emph{io} spelling that
+Campbell associates with Northumbrian where original \emph{eo} and
+\emph{io} remain distinct (\citeproc{ref-Campbell1959}{Campbell 1959,
+sect. 123} n.~2).
+
+\emph{Leornian} reflects the later \emph{eo} development that Campbell
+treats as secondary {[}Campbell (\citeproc{ref-Campbell1959}{1959}),
+§123 n.~2; §296{]}. The selected Northumbrian target is therefore the
+regular comparison form for the \emph{i}-grade member of the family.
+
+\paragraph{Comparison}\label{comparison-1}
+
+The comparison below is manual. It distinguishes the regular
+Northumbrian form modeled here from the better-known West Saxon
+headword.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Form
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relevance to this entry
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{*líznōjaną} -\textgreater{} liornian & computed regular output;
+attested Northumbrian comparison form & selected comparison \\
+\emph{leornian} & attested later \emph{eo} form and dictionary headword
+& useful control, but not the target of this entry \\
+\end{longtable}
+}
+
+\subsubsection{linden --- OE lind}\label{linden-oe-lind-1}
+
+Derivation: \emph{*líndō} \textgreater{} \emph{lind} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-20}
+
+Proto input: \emph{*líndō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*líndu} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*línd} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-8}
+
+Kroonen cites \emph{*lindō-} `lime tree' and gives Old English
+\emph{lind} as the relevant reflex (\citeproc{ref-Kroonen2013}{Kroonen
+2013}).
+
+Clark Hall and Bosworth-Toller both record \emph{lind} as the noun
+`lime-tree, linden' (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 630}).
+
+From \emph{*líndō}, Northwest Germanic final \emph{*ō} raising first
+gives a \emph{*líndu} stage, and later high-vowel apocope yields
+\emph{lind}. The development is therefore straightforward and regular.
+
+\paragraph{Form note}\label{form-note-3}
+
+The Old English noun represented here is \emph{lind}. Clark Hall also
+has a separate adjectival \emph{linden} `made of linden-wood', but that
+is not the noun counterpart for this entry
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+
+\subsubsection{mother --- OE mōder}\label{mother-oe-mux14dder-1}
+
+Derivation: \emph{*mōdēr} \textgreater{} \emph{mōder} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-21}
+
+Proto input: \emph{*mōdēr}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*mōdǣr} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Unstressed Long Vowel Shortening & \emph{*mōdær} \\
+OE Unstressed AE Merger & \emph{*mōder} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-9}
+
+Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as
+\emph{*mōder-} / \emph{*mōdēr} (\citeproc{ref-Kroonen2013}{Kroonen
+2013}; \citeproc{ref-Orel2003}{Orel 2003}).
+
+The transmitted Old English headword tradition is \emph{mōdor} / modor,
+with oblique \emph{mēder} in the paradigm. Clark Hall, Campbell, and
+Ringe and Taylor all preserve that contrast
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+From \emph{*mōdēr}, the regular suffixal development yields
+\emph{mōder}. That regular nominative reflex is the form represented
+here, while the more familiar citation form \emph{mōdor} reflects later
+levelling within the r-stem paradigm
+(\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\paragraph{Comparison}\label{comparison-2}
+
+The note therefore concerns inherited vocalism rather than a different
+lexeme: \emph{mōder} is the regularized nominative represented here, but
+dictionaries usually print \emph{mōdor} / modor, and the oblique
+evidence survives in \emph{mēder} (\citeproc{ref-ClarkHall1960}{Clark
+Hall 1960}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\subsubsection{show --- OE sċēawian}\label{show-oe-sux10bux113awian-1}
+
+Derivation: \emph{*skáwōjaną} \textgreater{} \emph{sċēawian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-22}
+
+Proto input: \emph{*skáwōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Aw Long Diphthong & \emph{*skḗawōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
+OE Secondary Nasalization & \emph{*skḗawōjąn} \\
+OE Sk Palatalization & \emph{*ʃḗawōjąn} \\
+OE I Umlaut & \emph{*ʃḗawējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
+OE Weak Tail Reduction & \emph{*ʃḗawejan} \\
+OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
+OE Unstressed EI Contraction & \emph{*ʃḗawian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-10}
+
+Orel and Kroonen cite a Class II verb of the type \emph{*skawōjan-},
+with OE \emph{scēawian} among the reflexes (\citeproc{ref-Orel2003}{Orel
+2003}; \citeproc{ref-Kroonen2013}{Kroonen 2013, 482}). Brunner likewise
+records the Old English family as \emph{scēawian}, \emph{scāwian}, which
+places this entry in the ordinary show-verb set rather than in a special
+finite-cell workaround (\citeproc{ref-SieversBrunner1965}{Sievers
+1965}).
+
+Bright lists \emph{scēawian} (W. II.) and also the related form
+\emph{scēawa} (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}).
+The source tradition therefore uses \emph{scēawian}, while the target
+represented here is the normalized project spelling \emph{sċēawian}.
+
+From \emph{*skáwōjaną}, Old English \emph{aw} before a following vowel
+yields \emph{ēaw}, and the Class II suffix keeps \emph{*ō} between
+\emph{*w} and \emph{*j}. The development therefore runs regularly to
+\emph{sċēawian}, without the direct \emph{*aw+j} problem seen in other
+verb types (\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-Orel2003}{Orel 2003}).
+
+\paragraph{Form note}\label{form-note-4}
+
+The difference between \emph{scēawian} and \emph{sċēawian} is
+orthographic normalization of initial \emph{}, not a difference of
+lexeme or paradigm cell (\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-Hogg1992}{Hogg 1992}).
+
+\subsubsection{weapon --- OE wǣpn}\label{weapon-oe-wux1e3pn-1}
+
+Derivation: \emph{*wḗpną} \textgreater{} \emph{wǣpn} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-23}
+
+Proto input: \emph{*wḗpną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*wǣpną} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Commentary}\label{commentary-11}
+
+Kroonen reconstructs a double-stem noun \emph{*wēbna-} \textasciitilde{}
+\emph{*wēpna-} and cites OE \emph{wæpn} among its reflexes
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 617}). The selected input
+\emph{*wḗpną} represents the unbroken citation-form noun rather than the
+later broken simplex.
+
+Campbell's cluster-noun discussion preserves unbroken \emph{wépn} beside
+broken \emph{wépen}-type forms (\citeproc{ref-Campbell1959}{Campbell
+1959, 150}; \citeproc{ref-Campbell1959}{1959, 226--27}). Bright
+contrasts broken nominative \emph{wǣpen}/wapen with unbroken oblique
+\emph{wǣpnes}, while Clark Hall lemmatizes the noun under \emph{wapen}
+and also preserves unbroken forms in compounds and related spellings
+(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
+
+Northwest Germanic lowering gives \emph{wǣpn}, and loss of the final
+nasal vowel leaves the unbroken cluster word-finally. The selected
+target is the attested unbroken form \emph{wǣpn}.
+
+\paragraph{Form note}\label{form-note-5}
+
+The ordinary late West Saxon simplex headword is \emph{wǣpen}, but
+Campbell's noun-class discussion also preserves unbroken \emph{wépn}
+beside broken \emph{wépen}-type forms
+(\citeproc{ref-Campbell1959}{Campbell 1959, 150};
+\citeproc{ref-Campbell1959}{1959, 226--27}). \emph{wǣpnes} remains the
+regular unbroken oblique comparator
+(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
+
+\clearpage
+
+\subsection{Variant C: minimal regular style
+(experimental)}\label{variant-c-minimal-regular-style-experimental}
+
+These entries keep the heading, derivation line, and boxed trace, then
+retain only explicit short note sections. Manual comparison tables are
+replaced by a mechanical editorial placeholder.
+
+\subsubsection{bake --- OE bacan}\label{bake-oe-bacan-2}
+
+Derivation: \emph{*bákaną} \textgreater{} \emph{bacan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-24}
+
+Proto input: \emph{*bákaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*bækaną} \\
+OE A Restoration & \emph{*bakaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
+OE Secondary Nasalization & \emph{*bakąn} \\
+OE Weak Tail Reduction & \emph{*bakan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\subsubsection{beech --- OE bōc}\label{beech-oe-bux14dc-2}
+
+Derivation: \emph{*bōkō} \textgreater{} \emph{bōc} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-25}
+
+Proto input: \emph{*bōkō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bōku} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bōk} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\subsubsection{bier --- OE bǣr}\label{bier-oe-bux1e3r-2}
+
+Derivation: \emph{*bḗrō} \textgreater{} \emph{bǣr} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-26}
+
+Proto input: \emph{*bḗrō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*bḗru} \\
+\mbox{NWGmc Long E Lowering} & \emph{*bǣru} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*bǣr} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Source note}\label{source-note-2}
+
+Lexicographic spellings vary between \emph{bær} and \emph{bar}. The
+normalized target \emph{bǣr} simply marks the same long vowel explicitly
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 717}).
+
+\subsubsection{both --- OE bū}\label{both-oe-bux16b-2}
+
+Derivation: \emph{*bō} \textgreater{} \emph{bū} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-27}
+
+Proto input: \emph{*bō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.540\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Comparison}\label{comparison-3}
+
+\emph{Manual comparison retained only in fuller variants.}
+
+\subsubsection{bow --- OE bīeġan}\label{bow-oe-bux12beux121an-2}
+
+Derivation: \emph{*báugijaną} \textgreater{} \emph{bīeġan} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-28}
+
+Proto input: \emph{*báugijaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Au Fronting & \emph{*báeugijaną} \\
+OE Diphthong Leveling & \emph{*bēagijaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*bēagijan} \\
+OE Secondary Nasalization & \emph{*bēagijąn} \\
+Sievers Law Syncope & \emph{*bēagjąn} \\
+OE Velar Palatalization & \emph{*bēaʤjąn} \\
+OE I Umlaut & \emph{*bīeʤjąn} \\
+OE Weak Tail Reduction & \emph{*bīeʤjan} \\
+OE J Loss After Heavy & \emph{*bīeʤan} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\subsubsection{fare --- OE faran}\label{fare-oe-faran-2}
+
+Derivation: \emph{*fáraną} \textgreater{} \emph{faran} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-29}
+
+Proto input: \emph{*fáraną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.540\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*færaną} \\
+OE A Restoration & \emph{*faraną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
+OE Secondary Nasalization & \emph{*farąn} \\
+OE Weak Tail Reduction & \emph{*faran} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\subsubsection{guest --- OE ġiest}\label{guest-oe-ux121iest-2}
+
+Derivation: \emph{*gástiz} \textgreater{} \emph{ġiest} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-30}
+
+Proto input: \emph{*gástiz}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{PGmc Final Z Deletion} & \emph{*gásti} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+Anglo Frisian Brightening & \emph{*gæsti} \\
+OE Velar Palatalization & \emph{*ʤæsti} \\
+OE I Umlaut & \emph{*ʤesti} \\
+OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
+\mbox{OE High Vowel Apocope} & \emph{*ʤiest} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Dialect note}\label{dialect-note-2}
+
+West Saxon \emph{ġiest} is the selected target here. Anglian \emph{gest}
+and related spellings remain real Old English comparators rather than
+corrections to that choice (\citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014}; \citeproc{ref-BosworthToller1898}{Bosworth and Toller
+1898}).
+
+\subsubsection{learn --- OE liornian}\label{learn-oe-liornian-2}
+
+Derivation: \emph{*líznōjaną} \textgreater{} \emph{liornian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-31}
+
+Proto input: \emph{*líznōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Breaking & \emph{*líornōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
+OE Secondary Nasalization & \emph{*líornōjąn} \\
+OE I Umlaut & \emph{*líornējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*líornejąn} \\
+OE Weak Tail Reduction & \emph{*líornejan} \\
+OE Intervocalic J Vocalization & \emph{*líorneian} \\
+OE Unstressed EI Contraction & \emph{*líornian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Comparison}\label{comparison-4}
+
+\emph{Manual comparison retained only in fuller variants.}
+
+\subsubsection{linden --- OE lind}\label{linden-oe-lind-2}
+
+Derivation: \emph{*líndō} \textgreater{} \emph{lind} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-32}
+
+Proto input: \emph{*líndō}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Final Long O Raising} & \emph{*líndu} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*línd} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Form note}\label{form-note-6}
+
+The Old English noun represented here is \emph{lind}. Clark Hall also
+has a separate adjectival \emph{linden} `made of linden-wood', but that
+is not the noun counterpart for this entry
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+
+\subsubsection{mother --- OE mōder}\label{mother-oe-mux14dder-2}
+
+Derivation: \emph{*mōdēr} \textgreater{} \emph{mōder} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-33}
+
+Proto input: \emph{*mōdēr}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*mōdǣr} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Unstressed Long Vowel Shortening & \emph{*mōdær} \\
+OE Unstressed AE Merger & \emph{*mōder} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Comparison}\label{comparison-5}
+
+The note therefore concerns inherited vocalism rather than a different
+lexeme: \emph{mōder} is the regularized nominative represented here, but
+dictionaries usually print \emph{mōdor} / modor, and the oblique
+evidence survives in \emph{mēder} (\citeproc{ref-ClarkHall1960}{Clark
+Hall 1960}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+
+\subsubsection{show --- OE sċēawian}\label{show-oe-sux10bux113awian-2}
+
+Derivation: \emph{*skáwōjaną} \textgreater{} \emph{sċēawian} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-34}
+
+Proto input: \emph{*skáwōjaną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.280\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.560\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.28\linewidth}@{\hspace{0.25em}}}
+OE Aw Long Diphthong & \emph{*skḗawōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
+OE Secondary Nasalization & \emph{*skḗawōjąn} \\
+OE Sk Palatalization & \emph{*ʃḗawōjąn} \\
+OE I Umlaut & \emph{*ʃḗawējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
+OE Weak Tail Reduction & \emph{*ʃḗawejan} \\
+OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
+OE Unstressed EI Contraction & \emph{*ʃḗawian} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Form note}\label{form-note-7}
+
+The difference between \emph{scēawian} and \emph{sċēawian} is
+orthographic normalization of initial \emph{}, not a difference of
+lexeme or paradigm cell (\citeproc{ref-Campbell1959}{Campbell 1959};
+\citeproc{ref-Hogg1992}{Hogg 1992}).
+
+\subsubsection{weapon --- OE wǣpn}\label{weapon-oe-wux1e3pn-2}
+
+Derivation: \emph{*wḗpną} \textgreater{} \emph{wǣpn} (regular).
+
+\paragraph{Derivation trace}\label{derivation-trace-35}
+
+Proto input: \emph{*wḗpną}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.460\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.460\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+\mbox{NWGmc Long E Lowering} & \emph{*wǣpną} \\
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
+\end{tabular}
+\end{minipage}
+\\
+\end{tabularx}
+\end{minipage}%
+} \endgroup
+
+\paragraph{Form note}\label{form-note-8}
+
+The ordinary late West Saxon simplex headword is \emph{wǣpen}, but
+Campbell's noun-class discussion also preserves unbroken \emph{wépn}
+beside broken \emph{wépen}-type forms
+(\citeproc{ref-Campbell1959}{Campbell 1959, 150};
+\citeproc{ref-Campbell1959}{1959, 226--27}). \emph{wǣpnes} remains the
+regular unbroken oblique comparator
+(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
+
+\clearpage
+
+\subsection*{References}\label{references}
+\addcontentsline{toc}{subsection}{References}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-BosworthToller1898}
+Bosworth, Joseph, and T. Northcote Toller. 1898. \emph{An {Anglo-Saxon}
+Dictionary}. Clarendon Press.
+
+\bibitem[\citeproctext]{ref-BrightCassidyRingler1971}
+Bright, James W. 1971. \emph{Bright's {Old English} Grammar and Reader}.
+3rd edn. Edited by Frederic G. Cassidy and Richard N. Ringler. Holt,
+Rinehart; Winston.
+
+\bibitem[\citeproctext]{ref-Campbell1959}
+Campbell, Alistair. 1959. \emph{Old {English} Grammar}. Clarendon Press.
+
+\bibitem[\citeproctext]{ref-ClarkHall1960}
+Clark Hall, J. R. 1960. \emph{A Concise {Anglo-Saxon} Dictionary}. 4th
+edn. University of Toronto Press.
+
+\bibitem[\citeproctext]{ref-Fulk2018}
+Fulk, R. D. 2018. \emph{A Comparative Grammar of the Early {Germanic}
+Languages}. Vol. 3. Studies in Germanic Linguistics. John Benjamins.
+
+\bibitem[\citeproctext]{ref-Hogg1992}
+Hogg, Richard M. 1992. \emph{A Grammar of Old English. Volume 1:
+Phonology}. Blackwell.
+
+\bibitem[\citeproctext]{ref-Kroonen2013}
+Kroonen, Guus. 2013. \emph{Etymological Dictionary of {Proto-Germanic}}.
+Vol. 11. Leiden Indo-European Etymological Dictionary Series. Brill.
+
+\bibitem[\citeproctext]{ref-Orel2003}
+Orel, Vladimir. 2003. \emph{A Handbook of {Germanic} Etymology}. Brill.
+
+\bibitem[\citeproctext]{ref-RingeTaylor2014}
+Ringe, Don, and Ann Taylor. 2014. \emph{The Development of {Old
+English}}. Vol. 2. A Linguistic History of English. Oxford University
+Press.
+
+\bibitem[\citeproctext]{ref-SieversBrunner1965}
+Sievers, Eduard. 1965. \emph{Altenglische Grammatik}. 3rd edn. Edited by
+Karl Brunner. Niemeyer.
+
+\end{CSLReferences}
+
+\end{document}
