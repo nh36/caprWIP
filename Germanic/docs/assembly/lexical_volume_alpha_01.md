@@ -61,7 +61,8 @@ Proto input: _\*nḗdrōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -73,20 +74,24 @@ Proto input: _\*nḗdrōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*nḗdrǭ} \\
 NWGmc Long E Lowering & \emph{*nǣdrǭ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*nǣdræ} \\
 OE Unstressed AE Merger & \emph{*nǣdre} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -129,7 +134,8 @@ Proto input: _\*bákaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -142,19 +148,23 @@ Proto input: _\*bákaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bækaną} \\
 OE A Restoration & \emph{*bakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
 OE Secondary Nasalization & \emph{*bakąn} \\
 OE Weak Tail Reduction & \emph{*bakan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -186,7 +196,8 @@ Proto input: _\*bōkō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -198,18 +209,22 @@ Proto input: _\*bōkō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*bōku} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*bōk} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -241,7 +256,8 @@ Proto input: _\*bigínnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -254,19 +270,23 @@ Proto input: _\*bigínnaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*bigínnan} \\
 OE Secondary Nasalization & \emph{*bigínnąn} \\
 OE Velar Palatalization & \emph{*biʤínnąn} \\
 OE Prefix I Reduction & \emph{*bĕʤínnąn} \\
 OE Weak Tail Reduction & \emph{*bĕʤínnan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -302,7 +322,8 @@ Proto input: _\*bḗrō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -314,19 +335,23 @@ Proto input: _\*bḗrō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*bḗru} \\
 NWGmc Long E Lowering & \emph{*bǣru} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*bǣr} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -362,7 +387,8 @@ Proto input: _\*búrdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -374,19 +400,23 @@ Proto input: _\*búrdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*búrdi} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE I Umlaut & \emph{*byrdi} \\
 OE High Vowel Apocope & \emph{*byrd} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -422,30 +452,35 @@ Proto input: _\*báiną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*bāną} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*bān} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -481,7 +516,8 @@ Proto input: _\*bō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -493,16 +529,20 @@ Proto input: _\*bō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
 \raggedright [no change]\par
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -574,7 +614,8 @@ Proto input: _\*báugijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -587,12 +628,14 @@ Proto input: _\*báugijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Au Fronting & \emph{*báeugijaną} \\
 OE Diphthong Leveling & \emph{*bēagijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*bēagijan} \\
@@ -602,8 +645,10 @@ OE Velar Palatalization & \emph{*bēaʤjąn} \\
 OE I Umlaut & \emph{*bīeʤjąn} \\
 OE Weak Tail Reduction & \emph{*bīeʤjan} \\
 OE J Loss After Heavy & \emph{*bīeʤan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -635,7 +680,8 @@ Proto input: _\*brōkiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -647,20 +693,24 @@ Proto input: _\*brōkiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*brōki} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Velar Palatalization & \emph{*brōʧi} \\
 OE I Umlaut & \emph{*brēʧi} \\
 OE High Vowel Apocope & \emph{*brēʧ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -692,7 +742,8 @@ Proto input: _\*kálbaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -704,22 +755,26 @@ Proto input: _\*kálbaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*kálba} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*kálb} \\
 Anglo Frisian Brightening & \emph{*kælb} \\
 OE Breaking & \emph{*kealb} \\
 PGmc B Allophony & \emph{*kealβ} \\
 OE Velar Palatalization & \emph{*ʧealβ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -751,7 +806,8 @@ Proto input: _\*kúrną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -763,18 +819,22 @@ Proto input: _\*kúrną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*kórną} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*kórn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -806,7 +866,8 @@ Proto input: _\*dḗdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -818,19 +879,23 @@ Proto input: _\*dḗdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*dḗdi} \\
 NWGmc Long E Lowering & \emph{*dǣdi} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*dǣd} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -862,7 +927,8 @@ Proto input: _\*dúrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -874,18 +940,22 @@ Proto input: _\*dúrą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*dórą} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*dór} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -917,7 +987,8 @@ Proto input: _\*fáraną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -930,19 +1001,23 @@ Proto input: _\*fáraną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*færaną} \\
 OE A Restoration & \emph{*faraną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
 OE Secondary Nasalization & \emph{*farąn} \\
 OE Weak Tail Reduction & \emph{*faran} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -974,7 +1049,8 @@ Proto input: _\*féllą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -987,15 +1063,19 @@ Proto input: _\*féllą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*féll} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1027,7 +1107,8 @@ Proto input: _\*fárnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1039,20 +1120,24 @@ Proto input: _\*fárnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*fárna} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fárn} \\
 Anglo Frisian Brightening & \emph{*færn} \\
 OE Breaking & \emph{*fearn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1084,32 +1169,37 @@ Proto input: _\*félθuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*félduz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*féldu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*féld} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1141,7 +1231,8 @@ Proto input: _\*fléuganą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1154,18 +1245,22 @@ Proto input: _\*fléuganą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Diphthong Leveling & \emph{*flēoganą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*flēogan} \\
 OE Secondary Nasalization & \emph{*flēogąn} \\
 OE Weak Tail Reduction & \emph{*flēogan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1201,7 +1296,8 @@ Proto input: _\*léusaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1214,18 +1310,22 @@ Proto input: _\*léusaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Diphthong Leveling & \emph{*lēosaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*lēosan} \\
 OE Secondary Nasalization & \emph{*lēosąn} \\
 OE Weak Tail Reduction & \emph{*lēosan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1261,7 +1361,8 @@ Proto input: _\*gángaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1273,18 +1374,22 @@ Proto input: _\*gángaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*gánga} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*gáng} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1320,7 +1425,8 @@ Proto input: _\*gébaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1333,20 +1439,24 @@ Proto input: _\*gébaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*géban} \\
 OE Secondary Nasalization & \emph{*gébąn} \\
 PGmc B Allophony & \emph{*géβąn} \\
 OE Velar Palatalization & \emph{*ʤéβąn} \\
 OE Ws Palatal Diphthongization & \emph{*ʤíeβąn} \\
 OE Weak Tail Reduction & \emph{*ʤíeβan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1382,32 +1492,37 @@ Proto input: _\*gúlθą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*gúldą} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*góldą} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*góld} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1443,7 +1558,8 @@ Proto input: _\*grábaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1456,20 +1572,24 @@ Proto input: _\*grábaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*græbaną} \\
 OE A Restoration & \emph{*grabaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*graban} \\
 OE Secondary Nasalization & \emph{*grabąn} \\
 PGmc B Allophony & \emph{*graβąn} \\
 OE Weak Tail Reduction & \emph{*graβan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1505,7 +1625,8 @@ Proto input: _\*gástiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1517,22 +1638,26 @@ Proto input: _\*gástiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*gásti} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gæsti} \\
 OE Velar Palatalization & \emph{*ʤæsti} \\
 OE I Umlaut & \emph{*ʤesti} \\
 OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
 OE High Vowel Apocope & \emph{*ʤiest} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1568,7 +1693,8 @@ Proto input: _\*xḗrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1580,19 +1706,23 @@ Proto input: _\*xḗrą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*xǣrą} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çǣrą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çǣr} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1628,7 +1758,8 @@ Proto input: _\*xárbistuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1640,15 +1771,17 @@ Proto input: _\*xárbistuz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*xárbistu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xærbistu} \\
 OE Breaking & \emph{*xearbistu} \\
 OE Velar Fricative Palatalization & \emph{*çearbistu} \\
@@ -1656,8 +1789,10 @@ PGmc B Allophony & \emph{*çearβistu} \\
 OE I Umlaut & \emph{*çierβistu} \\
 OE High Vowel Apocope & \emph{*çierβist} \\
 OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1693,37 +1828,42 @@ Proto input: _\*xágjaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.390\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc J Gemination & \emph{*xággjaz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*xággja} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.570\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xággj} \\
 Anglo Frisian Brightening & \emph{*xæggj} \\
 OE Velar Fricative Palatalization & \emph{*çæggj} \\
 OE Velar Palatalization & \emph{*çæʤʤj} \\
 OE I Umlaut & \emph{*çeʤʤj} \\
 OE J Loss After Heavy & \emph{*çeʤʤ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1759,7 +1899,8 @@ Proto input: _\*xélmaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1771,19 +1912,23 @@ Proto input: _\*xélmaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*xélma} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xélm} \\
 OE Velar Fricative Palatalization & \emph{*çélm} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1819,7 +1964,8 @@ Proto input: _\*xélpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1832,18 +1978,22 @@ Proto input: _\*xélpaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çélpaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çélpan} \\
 OE Secondary Nasalization & \emph{*çélpąn} \\
 OE Weak Tail Reduction & \emph{*çélpan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1879,7 +2029,8 @@ Proto input: _\*xéndjō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1891,21 +2042,25 @@ Proto input: _\*xéndjō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*xéndju} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Velar Fricative Palatalization & \emph{*çéndju} \\
 OE I Umlaut & \emph{*çindju} \\
 OE High Vowel Apocope & \emph{*çindj} \\
 OE J Loss After Heavy & \emph{*çind} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -1941,7 +2096,8 @@ Proto input: _\*xáldaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -1954,20 +2110,24 @@ Proto input: _\*xáldaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xældaną} \\
 OE Breaking & \emph{*xealdaną} \\
 OE Velar Fricative Palatalization & \emph{*çealdaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çealdan} \\
 OE Secondary Nasalization & \emph{*çealdąn} \\
 OE Weak Tail Reduction & \emph{*çealdan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2003,7 +2163,8 @@ Proto input: _\*xúrną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2015,18 +2176,22 @@ Proto input: _\*xúrną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*xórną} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xórn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2062,35 +2227,40 @@ Proto input: _\*láidijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*lādijaną} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*lādijan} \\
 OE Secondary Nasalization & \emph{*lādijąn} \\
 Sievers Law Syncope & \emph{*lādjąn} \\
 OE I Umlaut & \emph{*lǣdjąn} \\
 OE Weak Tail Reduction & \emph{*lǣdjan} \\
 OE J Loss After Heavy & \emph{*lǣdan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2122,7 +2292,8 @@ Proto input: _\*líznōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2135,12 +2306,14 @@ Proto input: _\*líznōjaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Breaking & \emph{*líornōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
 OE Secondary Nasalization & \emph{*líornōjąn} \\
@@ -2149,8 +2322,10 @@ OE Unstressed Long Vowel Shortening & \emph{*líornejąn} \\
 OE Weak Tail Reduction & \emph{*líornejan} \\
 OE Intervocalic J Vocalization & \emph{*líorneian} \\
 OE Unstressed EI Contraction & \emph{*líornian} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2216,7 +2391,8 @@ Proto input: _\*xlídą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2229,15 +2405,19 @@ Proto input: _\*xlídą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xlíd} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2273,7 +2453,8 @@ Proto input: _\*léuxtijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2286,12 +2467,14 @@ Proto input: _\*léuxtijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Diphthong Leveling & \emph{*lēoxtijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*lēoxtijan} \\
 OE Secondary Nasalization & \emph{*lēoxtijąn} \\
@@ -2299,8 +2482,10 @@ Sievers Law Syncope & \emph{*lēoxtjąn} \\
 OE I Umlaut & \emph{*līextjąn} \\
 OE Weak Tail Reduction & \emph{*līextjan} \\
 OE J Loss After Heavy & \emph{*līextan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2336,7 +2521,8 @@ Proto input: _\*líndō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2348,18 +2534,22 @@ Proto input: _\*líndō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*líndu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*línd} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2395,7 +2585,8 @@ Proto input: _\*mélukz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2407,19 +2598,23 @@ Proto input: _\*mélukz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*méluk} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*mélok} \\
 OE Back Mutation & \emph{*méolok} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2455,7 +2650,8 @@ Proto input: _\*mōdēr_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2467,19 +2663,23 @@ Proto input: _\*mōdēr_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*mōdǣr} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*mōdær} \\
 OE Unstressed AE Merger & \emph{*mōder} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2515,33 +2715,38 @@ Proto input: _\*nátją_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc J Gemination & \emph{*náttją} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*nættją} \\
 OE Heavy Syllable Nasal Apocope & \emph{*nættj} \\
 OE I Umlaut & \emph{*nettj} \\
 OE J Loss After Heavy & \emph{*nett} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2577,7 +2782,8 @@ Proto input: _\*márōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2589,21 +2795,25 @@ Proto input: _\*márōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*márǭ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mærǭ} \\
 OE A Restoration & \emph{*marǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
 OE Unstressed AE Merger & \emph{*mare} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2639,7 +2849,8 @@ Proto input: _\*rúkkaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2651,19 +2862,23 @@ Proto input: _\*rúkkaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*rókkaz} \\
 PGmc Final Z Deletion & \emph{*rókka} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*rókk} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2699,7 +2914,8 @@ Proto input: _\*skḗpą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2711,20 +2927,24 @@ Proto input: _\*skḗpą_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*skǣpą} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*skǣp} \\
 OE Sk Palatalization & \emph{*ʃǣp} \\
 OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2760,7 +2980,8 @@ Proto input: _\*skíllingaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2772,21 +2993,25 @@ Proto input: _\*skíllingaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*skíllinga} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*skílling} \\
 OE Sk Palatalization & \emph{*ʃílling} \\
 OE Med Unstressed I Lowering1 & \emph{*ʃílleng} \\
 OE Med Unstressed I Lowering & \emph{*ʃílling} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2822,7 +3047,8 @@ Proto input: _\*skáwōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2835,12 +3061,14 @@ Proto input: _\*skáwōjaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
 OE Secondary Nasalization & \emph{*skḗawōjąn} \\
@@ -2850,8 +3078,10 @@ OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
 OE Weak Tail Reduction & \emph{*ʃḗawejan} \\
 OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
 OE Unstressed EI Contraction & \emph{*ʃḗawian} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2887,7 +3117,8 @@ Proto input: _\*slḗpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2899,20 +3130,24 @@ Proto input: _\*slḗpaną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*slǣpaną} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*slǣpan} \\
 OE Secondary Nasalization & \emph{*slǣpąn} \\
 OE Weak Tail Reduction & \emph{*slǣpan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -2948,7 +3183,8 @@ Proto input: _\*smérwijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -2961,12 +3197,14 @@ Proto input: _\*smérwijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Breaking & \emph{*sméorwijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sméorwijan} \\
 OE Secondary Nasalization & \emph{*sméorwijąn} \\
@@ -2974,8 +3212,10 @@ Sievers Law Syncope & \emph{*sméorwjąn} \\
 OE I Umlaut & \emph{*smíerwjąn} \\
 OE Weak Tail Reduction & \emph{*smíerwjan} \\
 OE J Loss After Heavy & \emph{*smíerwan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3011,7 +3251,8 @@ Proto input: _\*spánnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3024,17 +3265,21 @@ Proto input: _\*spánnaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*spánnan} \\
 OE Secondary Nasalization & \emph{*spánnąn} \\
 OE Weak Tail Reduction & \emph{*spánnan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3070,7 +3315,8 @@ Proto input: _\*spárrô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3083,17 +3329,21 @@ Proto input: _\*spárrô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*spærrô} \\
 OE Breaking & \emph{*spearrô} \\
 OE Unstressed Long Vowel Shortening & \emph{*spearra} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3129,7 +3379,8 @@ Proto input: _\*stéllijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3142,20 +3393,24 @@ Proto input: _\*stéllijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*stéllijan} \\
 OE Secondary Nasalization & \emph{*stéllijąn} \\
 Sievers Law Syncope & \emph{*stélljąn} \\
 OE I Umlaut & \emph{*stilljąn} \\
 OE Weak Tail Reduction & \emph{*stilljan} \\
 OE J Loss After Heavy & \emph{*stillan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3191,7 +3446,8 @@ Proto input: _\*súmaraz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3203,20 +3459,24 @@ Proto input: _\*súmaraz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*súmara} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*súmar} \\
 Anglo Frisian Brightening & \emph{*súmær} \\
 OE Unstressed AE Merger & \emph{*súmer} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3252,7 +3512,8 @@ Proto input: _\*súndrōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3265,12 +3526,14 @@ Proto input: _\*súndrōjaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*súndrōjan} \\
 OE Secondary Nasalization & \emph{*súndrōjąn} \\
 OE I Umlaut & \emph{*súndrējąn} \\
@@ -3278,8 +3541,10 @@ OE Unstressed Long Vowel Shortening & \emph{*súndrejąn} \\
 OE Weak Tail Reduction & \emph{*súndrejan} \\
 OE Intervocalic J Vocalization & \emph{*súndreian} \\
 OE Unstressed EI Contraction & \emph{*súndrian} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3315,7 +3580,8 @@ Proto input: _\*swálwōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3327,21 +3593,25 @@ Proto input: _\*swálwōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*swálwǭ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*swælwǭ} \\
 OE Breaking & \emph{*swealwǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*swealwæ} \\
 OE Unstressed AE Merger & \emph{*swealwe} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3377,7 +3647,8 @@ Proto input: _\*swḯną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3390,15 +3661,19 @@ Proto input: _\*swḯną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*swḯn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3434,7 +3709,8 @@ Proto input: _\*θánkijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3447,12 +3723,14 @@ Proto input: _\*θánkijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*θánkijan} \\
 OE Secondary Nasalization & \emph{*θánkijąn} \\
 Sievers Law Syncope & \emph{*θánkjąn} \\
@@ -3460,8 +3738,10 @@ OE Velar Palatalization & \emph{*θánʧjąn} \\
 OE I Umlaut & \emph{*θenʧjąn} \\
 OE Weak Tail Reduction & \emph{*θenʧjan} \\
 OE J Loss After Heavy & \emph{*θenʧan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3497,7 +3777,8 @@ Proto input: _\*θúrnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3509,19 +3790,23 @@ Proto input: _\*θúrnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*θórnaz} \\
 PGmc Final Z Deletion & \emph{*θórna} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*θórn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3557,7 +3842,8 @@ Proto input: _\*tḯdiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3569,18 +3855,22 @@ Proto input: _\*tḯdiz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*tḯdi} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*tḯd} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3616,30 +3906,35 @@ Proto input: _\*táikną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*tākną} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tākn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3675,7 +3970,8 @@ Proto input: _\*tūną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3688,15 +3984,19 @@ Proto input: _\*tūną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tūn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3732,7 +4032,8 @@ Proto input: _\*wádaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3745,19 +4046,23 @@ Proto input: _\*wádaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wædaną} \\
 OE A Restoration & \emph{*wadaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wadan} \\
 OE Secondary Nasalization & \emph{*wadąn} \\
 OE Weak Tail Reduction & \emph{*wadan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3793,7 +4098,8 @@ Proto input: _\*wérpaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3806,18 +4112,22 @@ Proto input: _\*wérpaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Breaking & \emph{*wéorpaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wéorpan} \\
 OE Secondary Nasalization & \emph{*wéorpąn} \\
 OE Weak Tail Reduction & \emph{*wéorpan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3853,7 +4163,8 @@ Proto input: _\*wáskaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3866,19 +4177,23 @@ Proto input: _\*wáskaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wæskaną} \\
 OE A Restoration & \emph{*waskaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*waskan} \\
 OE Secondary Nasalization & \emph{*waskąn} \\
 OE Weak Tail Reduction & \emph{*waskan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3914,7 +4229,8 @@ Proto input: _\*wáxsaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3927,20 +4243,24 @@ Proto input: _\*wáxsaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wæxsaną} \\
 OE Breaking & \emph{*weaxsaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*weaxsan} \\
 OE Secondary Nasalization & \emph{*weaxsąn} \\
 OE Weak Tail Reduction & \emph{*weaxsan} \\
 OE Xs Merge & \emph{*weaXSan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -3976,7 +4296,8 @@ Proto input: _\*wégaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -3988,19 +4309,23 @@ Proto input: _\*wégaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*wéga} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wég} \\
 OE Velar Palatalization & \emph{*wéʤ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4036,7 +4361,8 @@ Proto input: _\*wḗpną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4048,18 +4374,22 @@ Proto input: _\*wḗpną_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*wǣpną} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*wǣpn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4104,32 +4434,37 @@ Proto input: _\*wéljô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc J Gemination & \emph{*wélljô} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE I Umlaut & \emph{*willjô} \\
 OE Unstressed Long Vowel Shortening & \emph{*willja} \\
 OE J Loss After Heavy & \emph{*willa} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4165,7 +4500,8 @@ Proto input: _\*wíndaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4178,17 +4514,21 @@ Proto input: _\*wíndaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*wíndan} \\
 OE Secondary Nasalization & \emph{*wíndąn} \\
 OE Weak Tail Reduction & \emph{*wíndan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4224,34 +4564,39 @@ Proto input: _\*wálθuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc L Th Voicing & \emph{*wálduz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*wáldu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wældu} \\
 OE Breaking & \emph{*wealdu} \\
 OE High Vowel Apocope & \emph{*weald} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4287,7 +4632,8 @@ Proto input: _\*gárną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4300,18 +4646,22 @@ Proto input: _\*gárną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gærną} \\
 OE Breaking & \emph{*gearną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*gearn} \\
 OE Velar Palatalization & \emph{*ʤearn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4356,30 +4706,35 @@ Proto input: _\*kwéðuz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.570\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.480\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*kwéduz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*kwédu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.390\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
 \raggedright [no change]\par
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4434,7 +4789,8 @@ Proto input: _\*téxun_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4447,18 +4803,22 @@ Proto input: _\*téxun_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*téxon} \\
 OE Breaking & \emph{*téoxon} \\
 OE H Loss & \emph{*téoon} \\
 OE Contraction & \emph{*tḗon} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4524,7 +4884,8 @@ Proto input: _\*θréjez_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4536,20 +4897,24 @@ Proto input: _\*θréjez_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*θréje} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE I Umlaut & \emph{*θrije} \\
 OE Intervocalic J Vocalization & \emph{*θriie} \\
 OE Contraction & \emph{*θrīe} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4612,7 +4977,8 @@ Proto input: _\*wábsaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4624,20 +4990,24 @@ Proto input: _\*wábsaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*wábsa} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wábs} \\
 Anglo Frisian Brightening & \emph{*wæbs} \\
 PGmc B Allophony & \emph{*wæβs} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4712,7 +5082,8 @@ Proto input: _\*búttmaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4724,20 +5095,24 @@ Proto input: _\*búttmaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*bóttmaz} \\
 PGmc Final Z Deletion & \emph{*bóttma} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*bóttm} \\
 OE Preconsonantal Degemination & \emph{*bótm} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4783,7 +5158,8 @@ Proto input: _\*brándas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4796,16 +5172,20 @@ Proto input: _\*brándas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*brándæs} \\
 OE Unstressed AE Merger & \emph{*brándes} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4872,7 +5252,8 @@ Proto input: _\*bréustą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4885,16 +5266,20 @@ Proto input: _\*bréustą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Diphthong Leveling & \emph{*brēostą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*brēost} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -4959,7 +5344,8 @@ Proto input: _\*kráftaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -4971,19 +5357,23 @@ Proto input: _\*kráftaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*kráfta} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*kráft} \\
 Anglo Frisian Brightening & \emph{*kræft} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5036,7 +5426,8 @@ Proto input: _\*déliz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5048,19 +5439,23 @@ Proto input: _\*déliz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*déli} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE I Umlaut & \emph{*dili} \\
 OE Med Unstressed I Lowering1 & \emph{*dile} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5126,7 +5521,8 @@ Proto input: _\*fástijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5139,12 +5535,14 @@ Proto input: _\*fástijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*fæstijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*fæstijan} \\
 OE Secondary Nasalization & \emph{*fæstijąn} \\
@@ -5152,8 +5550,10 @@ Sievers Law Syncope & \emph{*fæstjąn} \\
 OE I Umlaut & \emph{*festjąn} \\
 OE Weak Tail Reduction & \emph{*festjan} \\
 OE J Loss After Heavy & \emph{*festan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5223,7 +5623,8 @@ Proto input: _\*fláskōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5235,21 +5636,25 @@ Proto input: _\*fláskōn_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc N Stem N Loss & \emph{*fláskǭ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*flæskǭ} \\
 OE A Restoration & \emph{*flaskǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
 OE Unstressed AE Merger & \emph{*flaske} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5314,7 +5719,8 @@ Proto input: _\*fúlgijaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5327,12 +5733,14 @@ Proto input: _\*fúlgijaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*fúlgijan} \\
 OE Secondary Nasalization & \emph{*fúlgijąn} \\
 Sievers Law Syncope & \emph{*fúlgjąn} \\
@@ -5340,8 +5748,10 @@ OE Velar Palatalization & \emph{*fúlʤjąn} \\
 OE I Umlaut & \emph{*fylʤjąn} \\
 OE Weak Tail Reduction & \emph{*fylʤjan} \\
 OE J Loss After Heavy & \emph{*fylʤan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5418,7 +5828,8 @@ Proto input: _\*gállô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5431,18 +5842,22 @@ Proto input: _\*gállô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*gællô} \\
 OE Breaking & \emph{*geallô} \\
 OE Velar Palatalization & \emph{*ʤeallô} \\
 OE Unstressed Long Vowel Shortening & \emph{*ʤealla} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5510,7 +5925,8 @@ Proto input: _\*knéxtaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5522,20 +5938,24 @@ Proto input: _\*knéxtaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*knéxta} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*knéxt} \\
 OE Breaking & \emph{*knéoxt} \\
 OE Ws Palatal Umlaut & \emph{*knixt} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5595,34 +6015,39 @@ Proto input: _\*xláðaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*xládaną} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xlædaną} \\
 OE A Restoration & \emph{*xladaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*xladan} \\
 OE Secondary Nasalization & \emph{*xladąn} \\
 OE Weak Tail Reduction & \emph{*xladan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5680,7 +6105,8 @@ Proto input: _\*láppô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -5693,17 +6119,21 @@ Proto input: _\*láppô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*læppô} \\
 OE A Restoration & \emph{*lappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*lappa} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5766,27 +6196,30 @@ Proto input: _\*xláxjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc J Gemination & \emph{*xláxxjaną} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xlæxxjaną} \\
 OE Breaking & \emph{*xleaxxjaną} \\
 OE Velar Fricative Palatalization & \emph{*xleaxçjaną} \\
@@ -5795,8 +6228,10 @@ OE Secondary Nasalization & \emph{*xleaxçjąn} \\
 OE I Umlaut & \emph{*xliexçjąn} \\
 OE Weak Tail Reduction & \emph{*xliexçjan} \\
 OE J Loss After Heavy & \emph{*xliexçan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5856,30 +6291,35 @@ Proto input: _\*láimą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*lāmą} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*lām} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -5935,35 +6375,40 @@ Proto input: _\*lúnganjō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.390\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc J Gemination & \emph{*lúngannjō} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*lúngannju} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.570\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE I Umlaut & \emph{*lúngennju} \\
 OE High Vowel Apocope & \emph{*lúngennj} \\
 OE J Loss After Heavy & \emph{*lúngenn} \\
 OE Final Geminate Simplification & \emph{*lúngen} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6023,7 +6468,8 @@ Proto input: _\*nábulô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6036,19 +6482,23 @@ Proto input: _\*nábulô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*nábolô} \\
 Anglo Frisian Brightening & \emph{*næbolô} \\
 OE A Restoration & \emph{*nabolô} \\
 PGmc B Allophony & \emph{*naβolô} \\
 OE Unstressed Long Vowel Shortening & \emph{*naβola} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6112,7 +6562,8 @@ Proto input: _\*xnékkô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6125,15 +6576,19 @@ Proto input: _\*xnékkô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*xnékka} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6195,33 +6650,38 @@ Proto input: _\*nḗðlō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*nḗdlō} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*nḗdlu} \\
 NWGmc Long E Lowering & \emph{*nǣdlu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*nǣdl} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6281,7 +6741,8 @@ Proto input: _\*núsō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6293,17 +6754,21 @@ Proto input: _\*núsō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*nósō} \\
 NWGmc Final Long O Raising & \emph{*nósu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
 \raggedright [no change]\par
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6365,7 +6830,8 @@ Proto input: _\*sápą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6378,16 +6844,20 @@ Proto input: _\*sápą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*sæpą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sæp} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6450,34 +6920,39 @@ Proto input: _\*sáiwiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*sāwiz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*sāwi} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE W Loss Before I & \emph{*sāi} \\
 OE I Umlaut & \emph{*sǣi} \\
 OE High Vowel Apocope & \emph{*sǣ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6533,7 +7008,8 @@ Proto input: _\*síbi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6546,16 +7022,20 @@ Proto input: _\*síbi_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 PGmc B Allophony & \emph{*síβi} \\
 OE Med Unstressed I Lowering1 & \emph{*síβe} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6613,7 +7093,8 @@ Proto input: _\*spárōjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6626,12 +7107,14 @@ Proto input: _\*spárōjaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*spærōjaną} \\
 OE A Restoration & \emph{*sparōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sparōjan} \\
@@ -6641,8 +7124,10 @@ OE Unstressed Long Vowel Shortening & \emph{*sparejąn} \\
 OE Weak Tail Reduction & \emph{*sparejan} \\
 OE Intervocalic J Vocalization & \emph{*spareian} \\
 OE Unstressed EI Contraction & \emph{*sparian} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6703,7 +7188,8 @@ Proto input: _\*stábaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6715,20 +7201,24 @@ Proto input: _\*stábaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*stába} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*stáb} \\
 Anglo Frisian Brightening & \emph{*stæb} \\
 PGmc B Allophony & \emph{*stæβ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6784,7 +7274,8 @@ Proto input: _\*stébnō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6796,19 +7287,23 @@ Proto input: _\*stébnō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Final Long O Raising & \emph{*stébnu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc B Allophony & \emph{*stéβnu} \\
 OE High Vowel Apocope & \emph{*stéβn} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6873,7 +7368,8 @@ Proto input: _\*swánas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -6886,16 +7382,20 @@ Proto input: _\*swánas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*swánæs} \\
 OE Unstressed AE Merger & \emph{*swánes} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -6953,30 +7453,35 @@ Proto input: _\*θūsèndi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*θūsènd} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Strip Secondary Stress & \emph{*θūsend} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7044,7 +7549,8 @@ Proto input: _\*tímbrą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7057,16 +7563,20 @@ Proto input: _\*tímbrą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*tímbr} \\
 OE Epenthetic Vowel & \emph{*tímber} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7123,7 +7633,8 @@ Proto input: _\*wákaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7136,19 +7647,23 @@ Proto input: _\*wákaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wækaną} \\
 OE A Restoration & \emph{*wakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wakan} \\
 OE Secondary Nasalization & \emph{*wakąn} \\
 OE Weak Tail Reduction & \emph{*wakan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7206,31 +7721,36 @@ Proto input: _\*wátōr_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Or Lowering & \emph{*wátar} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wætær} \\
 OE Unstressed AE Merger & \emph{*wæter} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7290,7 +7810,8 @@ Proto input: _\*xwálaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7302,19 +7823,23 @@ Proto input: _\*xwálaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*xwála} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*xwál} \\
 Anglo Frisian Brightening & \emph{*xwæl} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7373,7 +7898,8 @@ Proto input: _\*xwḯnaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7386,17 +7912,21 @@ Proto input: _\*xwḯnaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Heavy Syllable Nasal Apocope & \emph{*xwḯnan} \\
 OE Secondary Nasalization & \emph{*xwḯnąn} \\
 OE Weak Tail Reduction & \emph{*xwḯnan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7465,7 +7995,8 @@ Proto input: _\*wḯθagą_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7478,19 +8009,23 @@ Proto input: _\*wḯθagą_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*wḯθægą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wḯθæg} \\
 OE Velar Palatalization & \emph{*wḯθæʤ} \\
 OE Unstressed AE Merger & \emph{*wḯθeʤ} \\
 OE Late Unstressed Ag Suffix & \emph{*wḯθiʤ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7561,7 +8096,8 @@ Proto input: _\*wíràldu_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7573,21 +8109,25 @@ Proto input: _\*wíràldu_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc I Lowering & \emph{*wéràldu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Inter Stress Raising & \emph{*wéruldu} \\
 OE Med Unstressed U Lowering & \emph{*wéroldu} \\
 OE Back Mutation & \emph{*wéoroldu} \\
 OE High Vowel Apocope & \emph{*wéorold} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7661,7 +8201,8 @@ Proto input: _\*júgunθ_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7673,21 +8214,25 @@ Proto input: _\*júgunθ_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.70\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}}
 OE Ws Palatal Glide & \emph{*jéugunθ} \\
 NWGmc Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
 NWGmc Nasal Spirant Loss & \emph{*jéugūθ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Diphthong Leveling & \emph{*jéogūθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*jéoguθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7768,7 +8313,8 @@ Proto input: _\*bánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7781,16 +8327,20 @@ Proto input: _\*bánnas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bánnæs} \\
 OE Unstressed AE Merger & \emph{*bánnes} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7847,7 +8397,8 @@ Proto input: _\*bázjas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7860,17 +8411,21 @@ Proto input: _\*bázjas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*bærjæs} \\
 OE I Umlaut & \emph{*berjæs} \\
 OE Unstressed AE Merger & \emph{*berjes} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -7925,7 +8480,8 @@ Proto input: _\*báug_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -7938,16 +8494,20 @@ Proto input: _\*báug_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Au Fronting & \emph{*báeug} \\
 OE Diphthong Leveling & \emph{*bēag} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8020,7 +8580,8 @@ Proto input: _\*kūi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8033,16 +8594,20 @@ Proto input: _\*kūi_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE I Umlaut & \emph{*kȳi} \\
 OE High Vowel Apocope & \emph{*kȳ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8116,32 +8681,37 @@ Proto input: _\*fúnðanǭ_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Dental Hardening & \emph{*fúndanǭ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Fronting Early & \emph{*fúndænǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fúndænæ} \\
 OE Unstressed AE Merger & \emph{*fúndene} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8211,7 +8781,8 @@ Proto input: _\*fúrxtīnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8223,22 +8794,26 @@ Proto input: _\*fúrxtīnaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*fúrxtīna} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fúrxtīn} \\
 OE I Umlaut & \emph{*fyrxtīn} \\
 NWGmc In Stem N Loss & \emph{*fyrxtī} \\
 OE Unstressed Long Vowel Shortening & \emph{*fyrxti} \\
 OE Med Unstressed I Lowering1 & \emph{*fyrxte} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8308,7 +8883,8 @@ Proto input: _\*xámaras_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8321,16 +8897,20 @@ Proto input: _\*xámaras_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xámæræs} \\
 OE Unstressed AE Merger & \emph{*xámeres} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8393,36 +8973,41 @@ Proto input: _\*xábēθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.390\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*xábēθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*xábǣθ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.570\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*xæbǣθ} \\
 OE Velar Fricative Palatalization & \emph{*çæbǣθ} \\
 PGmc B Allophony & \emph{*çæβǣθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*çæβæθ} \\
 OE Unstressed AE Merger & \emph{*çæβeθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8489,7 +9074,8 @@ Proto input: _\*xémonų_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.390\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8501,22 +9087,26 @@ Proto input: _\*xémonų_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Unstressed O Raising & \emph{*xémunų} \\
 NWGmc Mn Dissimilation & \emph{*xéβunų} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.570\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Med Unstressed U Lowering & \emph{*xéβonų} \\
 OE Velar Fricative Palatalization & \emph{*çéβonų} \\
 OE Back Mutation & \emph{*çéoβonų} \\
 OE High Vowel Apocope & \emph{*çéoβon} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8581,34 +9171,39 @@ Proto input: _\*líbēθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*líbēθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc Long E Lowering & \emph{*líbǣθ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc B Allophony & \emph{*líβǣθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*líβæθ} \\
 OE Unstressed AE Merger & \emph{*líβeθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8669,7 +9264,8 @@ Proto input: _\*mánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8682,16 +9278,20 @@ Proto input: _\*mánnas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mánnæs} \\
 OE Unstressed AE Merger & \emph{*mánnes} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8754,33 +9354,38 @@ Proto input: _\*mízdai_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*mírdē} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc I Lowering & \emph{*mérdē} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Breaking & \emph{*méordē} \\
 OE Unstressed Long Vowel Shortening & \emph{*méorde} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8848,7 +9453,8 @@ Proto input: _\*náxti_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8861,19 +9467,23 @@ Proto input: _\*náxti_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*næxti} \\
 OE Breaking & \emph{*neaxti} \\
 OE I Umlaut & \emph{*niexti} \\
 OE Ws Palatal Umlaut & \emph{*nixti} \\
 OE High Vowel Apocope & \emph{*nixt} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -8938,7 +9548,8 @@ Proto input: _\*rástōz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -8950,21 +9561,25 @@ Proto input: _\*rástōz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*rástō} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Surviving Bimoric O Unrounding & \emph{*rástā} \\
 Anglo Frisian Brightening & \emph{*ræstǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 OE Unstressed AE Merger & \emph{*ræste} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9027,33 +9642,38 @@ Proto input: _\*skúldramiz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.570\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.480\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.320\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc A To U Before M & \emph{*skúldrumiz} \\
 PWGmc Early I Apocope & \emph{*skúldrumz} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*skúldrum} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.390\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Sk Palatalization & \emph{*ʃúldrum} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9108,7 +9728,8 @@ Proto input: _\*skáub_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.390\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9121,18 +9742,22 @@ Proto input: _\*skáub_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.570\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Au Fronting & \emph{*skáeub} \\
 OE Diphthong Leveling & \emph{*skēab} \\
 PGmc B Allophony & \emph{*skēaβ} \\
 OE Sk Palatalization & \emph{*ʃēaβ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9189,30 +9814,35 @@ Proto input: _\*spánnai_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Ai Monophthongization & \emph{*spánnē} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*spánne} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9262,7 +9892,8 @@ Proto input: _\*θístilas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9275,17 +9906,21 @@ Proto input: _\*θístilas_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*θístilæs} \\
 OE L Adjacent Syncope & \emph{*θístlæs} \\
 OE Unstressed AE Merger & \emph{*θístles} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9340,7 +9975,8 @@ Proto input: _\*mákô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9353,17 +9989,21 @@ Proto input: _\*mákô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mækô} \\
 OE A Restoration & \emph{*makô} \\
 OE Unstressed Long Vowel Shortening & \emph{*maka} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9431,32 +10071,37 @@ Proto input: _\*mákōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*mákōθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*mækōθ} \\
 OE A Restoration & \emph{*makōθ} \\
 OE Late O Shortening & \emph{*makaθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9504,7 +10149,8 @@ Proto input: _\*búrô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9516,18 +10162,22 @@ Proto input: _\*búrô_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*bórô} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*bóra} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9575,32 +10225,37 @@ Proto input: _\*búrōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*búrōθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*bórōθ} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Late O Shortening & \emph{*bóraθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9648,7 +10303,8 @@ Proto input: _\*líznô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9661,16 +10317,20 @@ Proto input: _\*líznô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Breaking & \emph{*líornô} \\
 OE Unstressed Long Vowel Shortening & \emph{*líorna} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9718,31 +10378,36 @@ Proto input: _\*líznōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*lírnōθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Breaking & \emph{*líornōθ} \\
 OE Late O Shortening & \emph{*líornaθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9790,7 +10455,8 @@ Proto input: _\*líkkô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9803,15 +10469,19 @@ Proto input: _\*líkkô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*líkka} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9857,30 +10527,35 @@ Proto input: _\*líkkōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*líkkōθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Late O Shortening & \emph{*líkkaθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9926,7 +10601,8 @@ Proto input: _\*skáwô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -9939,17 +10615,21 @@ Proto input: _\*skáwô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawô} \\
 OE Sk Palatalization & \emph{*ʃḗawô} \\
 OE Unstressed Long Vowel Shortening & \emph{*ʃḗawa} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -9995,32 +10675,37 @@ Proto input: _\*skáwōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
 \centering\textbf{West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Early I Apocope & \emph{*skáwōθ} \\
-\end{tabularx}
+\end{tabular}
 \vspace{0.6em}
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 OE Aw Long Diphthong & \emph{*skḗawōθ} \\
 OE Sk Palatalization & \emph{*ʃḗawōθ} \\
 OE Late O Shortening & \emph{*ʃḗawaθ} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10074,7 +10759,8 @@ Proto input: _\*knúbbô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10086,18 +10772,22 @@ Proto input: _\*knúbbô_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.29\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*knóbbô} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Unstressed Long Vowel Shortening & \emph{*knóbba} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10169,7 +10859,8 @@ Proto input: _\*ráukaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.320\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.480\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10181,20 +10872,24 @@ Proto input: _\*ráukaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.58\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PGmc Final Z Deletion & \emph{*ráuka} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Au Fronting & \emph{*ráeuka} \\
 OE Diphthong Leveling & \emph{*rēaka} \\
 PWGmc Final Bare A Loss & \emph{*rēak} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10245,7 +10940,8 @@ Proto input: _\*stráwjaną_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10258,12 +10954,14 @@ Proto input: _\*stráwjaną_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE Awj Glide Formation & \emph{*stráujaną} \\
 OE Au Fronting & \emph{*stráeujaną} \\
 OE Diphthong Leveling & \emph{*strēajaną} \\
@@ -10272,8 +10970,10 @@ OE Secondary Nasalization & \emph{*strēająn} \\
 OE I Umlaut & \emph{*strīejąn} \\
 OE Weak Tail Reduction & \emph{*strīejan} \\
 OE J Strengthening After Front Diphthong & \emph{*strīeʒan} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10350,7 +11050,8 @@ Proto input: _\*fūri_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10363,16 +11064,20 @@ Proto input: _\*fūri_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE I Umlaut & \emph{*fȳri} \\
 OE High Vowel Apocope & \emph{*fȳr} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10441,7 +11146,8 @@ Proto input: _\*táppô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.370\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.300\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.500\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10454,17 +11160,21 @@ Proto input: _\*táppô_
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\end{minipage}\hfill
-\begin{minipage}[t]{0.590\linewidth}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 Anglo Frisian Brightening & \emph{*tæppô} \\
 OE A Restoration & \emph{*tappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*tappa} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10525,7 +11235,8 @@ Proto input: _\*búkkaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10537,19 +11248,23 @@ Proto input: _\*búkkaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*bókkaz} \\
 PGmc Final Z Deletion & \emph{*bókka} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*bókk} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10606,7 +11321,8 @@ Proto input: _\*fúglaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10618,20 +11334,24 @@ Proto input: _\*fúglaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*fóglaz} \\
 PGmc Final Z Deletion & \emph{*fógla} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*fógl} \\
 OE Epenthetic Vowel & \emph{*fógol} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10706,7 +11426,8 @@ Proto input: _\*rústō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10718,19 +11439,23 @@ Proto input: _\*rústō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*róstō} \\
 NWGmc Final Long O Raising & \emph{*róstu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*róst} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10799,7 +11524,8 @@ Proto input: _\*wúlfaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.485\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.410\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.410\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10811,19 +11537,23 @@ Proto input: _\*wúlfaz_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.62\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}}
 NWGmc U Lowering & \emph{*wólfaz} \\
 PGmc Final Z Deletion & \emph{*wólfa} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.485\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.30\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 PWGmc Final Bare A Loss & \emph{*wólf} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup
@@ -10895,7 +11625,8 @@ Proto input: _\*wúllō_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{minipage}[t]{0.590\linewidth}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.500\linewidth}>{\centering\arraybackslash}X>{\raggedright\arraybackslash}p{0.300\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
@@ -10907,19 +11638,23 @@ Proto input: _\*wúllō_
 \centering\textbf{Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 NWGmc U Lowering & \emph{*wóllō} \\
 NWGmc Final Long O Raising & \emph{*wóllu} \\
-\end{tabularx}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.370\linewidth}
+\end{tabular}
+\end{minipage}
+&
+&
+\begin{minipage}[t]{\linewidth}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.31\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.65em}}>{\raggedleft\arraybackslash}p{0.22\linewidth}@{}}
 OE High Vowel Apocope & \emph{*wóll} \\
-\end{tabularx}
+\end{tabular}
 \end{minipage}
+\\
+\end{tabularx}
 \end{minipage}%
 }
 \endgroup

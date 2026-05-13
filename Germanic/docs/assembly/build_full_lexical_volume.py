@@ -18,6 +18,14 @@ INLINE_CODE_RE = re.compile(r"`([^`]+)`")
 BOLD_SPAN_RE = re.compile(r"\*\*(.+?)\*\*")
 ITALIC_SPAN_RE = re.compile(r"_(?:\\.|[^_\n])+_")
 FORM_CONNECTOR_WORDS = {"and", "or", "written", "spelled", "vs", "with", "plus"}
+LONG_TRACE_LABELS = {
+    "OE High Vowel Apocope",
+    "OE Unstressed Long Vowel Shortening",
+    "OE Heavy Syllable Nasal Apocope",
+    "NWGmc Final Long O Raising",
+    "NWGmc Long E Lowering",
+    "NWGmc Stressed Monosyllable O Raising",
+}
 
 SECTION_ORDER = [
     ("regular", "Part I. Regular derivations", "Regular derivations"),
@@ -289,6 +297,7 @@ def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> d
     row_count = 0
     total_change_length = 0
     max_change_length = 0
+    long_label_count = 0
 
     for _, items in stage_blocks:
         for change, _ in items:
@@ -298,11 +307,14 @@ def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> d
             change_length = len(change)
             total_change_length += change_length
             max_change_length = max(max_change_length, change_length)
+            if change in LONG_TRACE_LABELS:
+                long_label_count += 1
 
     return {
         "rows": row_count,
         "total_change_length": total_change_length,
         "max_change_length": max_change_length,
+        "long_label_count": long_label_count,
     }
 
 
@@ -313,34 +325,37 @@ def choose_trace_widths(
     left = panel_complexity(left_blocks)
     right = panel_complexity(right_blocks)
 
-    if left["rows"] <= 1 and right["max_change_length"] >= 24:
-        return 0.37, 0.59
-    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 40:
-        return 0.39, 0.57
-    if right["rows"] <= 1 and left["max_change_length"] >= 24:
-        return 0.59, 0.37
-    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 40:
-        return 0.57, 0.39
-    return 0.485, 0.485
+    if left["rows"] <= 1 and (right["long_label_count"] > 0 or right["max_change_length"] >= 24):
+        return 0.30, 0.50
+    if left["rows"] <= 2 and right["total_change_length"] >= left["total_change_length"] + 36:
+        return 0.32, 0.48
+    if right["rows"] <= 1 and (left["long_label_count"] > 0 or left["max_change_length"] >= 24):
+        return 0.50, 0.30
+    if right["rows"] <= 2 and left["total_change_length"] >= right["total_change_length"] + 36:
+        return 0.48, 0.32
+    return 0.41, 0.41
 
 
-def choose_form_column_width(panel_width: float, stats: dict[str, int]) -> float:
-    if stats["rows"] <= 1 and stats["max_change_length"] < 18:
-        return 0.29
+def choose_panel_column_widths(panel_width: float, stats: dict[str, int]) -> tuple[float, float]:
+    if stats["rows"] == 0:
+        return 0.64, 0.22
+    if stats["long_label_count"] > 0:
+        return 0.68, 0.22
     if stats["max_change_length"] >= 28:
-        return 0.25
-    if panel_width >= 0.57:
-        return 0.27
-    if panel_width <= 0.39 and stats["max_change_length"] >= 20:
-        return 0.31
-    return 0.30
+        return 0.70, 0.20
+    if stats["max_change_length"] >= 22:
+        return 0.66, 0.22
+    if panel_width <= 0.32 and stats["rows"] <= 1:
+        return 0.58, 0.22
+    return 0.62, 0.24
 
 
 def render_trace_panel(
     stage_blocks: list[tuple[str, list[tuple[str, str]]]],
     *,
     suppress_old_english_stage: bool = False,
-    form_column_width: float = 0.30,
+    label_column_width: float = 0.62,
+    form_column_width: float = 0.24,
 ) -> list[str]:
     lines = [r"\raggedright"]
 
@@ -367,7 +382,7 @@ def render_trace_panel(
             continue
 
         lines.append(
-            rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}X>{{\raggedleft\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{}}}}"
+            rf"\begin{{tabular}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{label_column_width:.2f}\linewidth}}@{{\hspace{{0.65em}}}}>{{\raggedleft\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{}}}}"
         )
         for change, form in items:
             if change == "[no change]" and not form:
@@ -376,7 +391,7 @@ def render_trace_panel(
                 lines.append(rf"{latex_escape(change)} & {latex_form(form)} \\")
             else:
                 lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{latex_escape(change)}}} \\")
-        lines.append(r"\end{tabularx}")
+        lines.append(r"\end{tabular}")
 
     return lines
 
@@ -395,14 +410,18 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     left_width, right_width = choose_trace_widths(left_blocks, right_blocks)
     left_stats = panel_complexity(left_blocks)
     right_stats = panel_complexity(right_blocks)
+    left_label_width, left_form_width = choose_panel_column_widths(left_width, left_stats)
+    right_label_width, right_form_width = choose_panel_column_widths(right_width, right_stats)
     left_panel = render_trace_panel(
         left_blocks,
-        form_column_width=choose_form_column_width(left_width, left_stats),
+        label_column_width=left_label_width,
+        form_column_width=left_form_width,
     )
     right_panel = render_trace_panel(
         right_blocks,
         suppress_old_english_stage=True,
-        form_column_width=choose_form_column_width(right_width, right_stats),
+        label_column_width=right_label_width,
+        form_column_width=right_form_width,
     )
 
     return [
@@ -411,16 +430,21 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         r"\noindent\fbox{%",
         r"\begin{minipage}{0.97\linewidth}",
         r"\small",
-        rf"\begin{{minipage}}[t]{{{left_width:.3f}\linewidth}}",
+        rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{left_width:.3f}\linewidth}}>{{\centering\arraybackslash}}X>{{\raggedright\arraybackslash}}p{{{right_width:.3f}\linewidth}}@{{}}}}",
+        r"\begin{minipage}[t]{\linewidth}",
         r"\centering\textbf{Earlier Germanic changes}\par",
         r"\vspace{0.35em}",
         *left_panel,
-        r"\end{minipage}\hfill",
-        rf"\begin{{minipage}}[t]{{{right_width:.3f}\linewidth}}",
+        r"\end{minipage}",
+        r"&",
+        r"&",
+        r"\begin{minipage}[t]{\linewidth}",
         r"\centering\textbf{Old English changes}\par",
         r"\vspace{0.35em}",
         *right_panel,
         r"\end{minipage}",
+        r"\\",
+        r"\end{tabularx}",
         r"\end{minipage}%",
         r"}",
         r"\endgroup",
