@@ -14,6 +14,10 @@ MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 INTRO_PATH = SCRIPT_DIR / "section_introductions_draft.md"
 TRACE_REPORT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
 OUTPUT_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
+INLINE_CODE_RE = re.compile(r"`([^`]+)`")
+BOLD_SPAN_RE = re.compile(r"\*\*(.+?)\*\*")
+ITALIC_SPAN_RE = re.compile(r"_(?:\\.|[^_\n])+_")
+FORM_CONNECTOR_WORDS = {"and", "or", "written", "spelled", "vs", "with", "plus"}
 
 SECTION_ORDER = [
     ("regular", "Part I. Regular derivations", "Regular derivations"),
@@ -88,28 +92,82 @@ def keep_as_code(text: str) -> bool:
     )
 
 
+def normalize_inline_code_content(text: str) -> str:
+    return re.sub(r"\s*\n\s*", " ", text).strip()
+
+
 def convert_inline_code(text: str) -> str:
     def repl(match: re.Match[str]) -> str:
-        inner = match.group(1)
+        inner = normalize_inline_code_content(match.group(1))
         return match.group(0) if keep_as_code(inner) else italicize_form(inner)
 
-    return re.sub(r"`([^`]+)`", repl, text)
+    return INLINE_CODE_RE.sub(repl, text)
+
+
+def has_linguistic_inline_code(text: str) -> bool:
+    code_spans = [normalize_inline_code_content(span) for span in INLINE_CODE_RE.findall(text)]
+    return bool(code_spans) and any(not keep_as_code(span) for span in code_spans)
+
+
+def looks_like_linguistic_markup(text: str) -> bool:
+    if "\n" in text or not text.strip():
+        return False
+
+    has_form = False
+
+    def mark_code(match: re.Match[str]) -> str:
+        nonlocal has_form
+        inner = normalize_inline_code_content(match.group(1))
+        if keep_as_code(inner):
+            return match.group(0)
+        has_form = True
+        return " FORM "
+
+    def mark_italic(match: re.Match[str]) -> str:
+        nonlocal has_form
+        has_form = True
+        return " FORM "
+
+    working = INLINE_CODE_RE.sub(mark_code, text)
+    working = ITALIC_SPAN_RE.sub(mark_italic, working)
+    if not has_form:
+        return False
+
+    words = re.findall(r"[A-Za-z][A-Za-z/-]*", working)
+    if any(word.lower() not in FORM_CONNECTOR_WORDS | {"form"} for word in words):
+        return False
+
+    remainder = re.sub(r"\bFORM\b", " ", working)
+    remainder = re.sub(
+        rf"\b(?:{'|'.join(sorted(FORM_CONNECTOR_WORDS))})\b",
+        " ",
+        remainder,
+        flags=re.IGNORECASE,
+    )
+    remainder = re.sub(r"[\s,;/(){}\[\]<>~=:.\-]+", "", remainder)
+    return remainder == ""
 
 
 def demote_bold_forms(text: str) -> str:
     def repl(match: re.Match[str]) -> str:
         inner = match.group(1)
-        if "\n" in inner:
-            return match.group(0)
-        if len(inner.split()) <= 3 and not re.search(r"[.!?;:]", inner):
-            return inner if "`" in inner else italicize_form(inner)
-        return inner
+        if has_linguistic_inline_code(inner) or looks_like_linguistic_markup(inner):
+            return inner
+        return match.group(0)
 
-    return re.sub(r"\*\*([^*]+)\*\*", repl, text)
+    return BOLD_SPAN_RE.sub(repl, text)
+
+
+def unwrap_bolded_linguistic_markup(text: str) -> str:
+    def repl(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        return inner if looks_like_linguistic_markup(inner) else match.group(0)
+
+    return BOLD_SPAN_RE.sub(repl, text)
 
 
 def tidy_prose(text: str) -> str:
-    return convert_inline_code(demote_bold_forms(text))
+    return unwrap_bolded_linguistic_markup(convert_inline_code(demote_bold_forms(text)))
 
 
 def display_stage_name(stage: str) -> str:
@@ -493,18 +551,8 @@ def main() -> int:
     for bucket, _, _ in SECTION_ORDER:
         rows_by_bucket[bucket] = [row for row in manifest_rows if row["class_bucket"] == bucket]
 
-    heading_lookup = {
-        "regular": "Regular derivations",
-        "attested_variant": "Attested variants and selected comparison forms",
-        "early_analogy": "Early analogy and pre-Old-English input selection",
-        "late_analogy": "Late analogy and paradigm-cell selection",
-        "reconstructed_oe": "Reconstructed Old English comparators",
-        "known_unmodelled": "Known but unmodelled remodellings",
-        "unexplained_unmodelled": "Unexplained or deliberately unmodelled exceptions",
-    }
-
     for bucket, part_heading, intro_heading in SECTION_ORDER:
-        parts.extend(["", f"## {part_heading}", "", intro_sections[intro_heading]])
+        parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", intro_sections[intro_heading]])
         for row in rows_by_bucket[bucket]:
             entry_path = REPO_ROOT / row["model_entry_path"]
             model = parse_model_entry(entry_path)

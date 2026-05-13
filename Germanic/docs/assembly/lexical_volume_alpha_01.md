@@ -39,6 +39,8 @@ The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in 
 - `known_unmodelled`: **2**
 - `unexplained_unmodelled`: **5**
 
+\clearpage
+
 ## Part I. Regular derivations
 
 Regular derivations are entries where the selected transducer input and the Old
@@ -4332,6 +4334,8 @@ From _\*gárną_, brightening and breaking before _rn_ yield _gearn_; palataliza
 
 Dictionary _gearn_ and normalized _ġearn_ refer to the same noun. The comparative stem _\*garna-_ and oblique _\*garnăn_ do not replace the selected input _\*gárną_.
 
+\clearpage
+
 ## Part II. Attested variants and selected comparison forms
 
 These entries treat the selected Old English target as one member of an attested
@@ -4483,16 +4487,16 @@ _tēn, tēo, tēa_ in other dialects [@SieversBrunner1965, §325].
 Exact simplex _tēon_ is weaker as a directly cited headword than those
 spellings. The un-umlauted stem is, however, explicit in _tēoða_ and
 _-tēontig_ [@SieversBrunner1965, §129.2; @Fulk2018, §10.2]. The comparison
-form _tēon_ is therefore a _normalized spelling_ of that un-umlauted base.
+form _tēon_ is therefore a **normalized spelling** of that un-umlauted base.
 
 #### Development to Old English
 
-From **_\*téxun_, lowering of medial unstressed _u_ gives _\*téxon_**,
-breaking gives **_\*téoxon_, loss of intervocalic _h/x_ yields _\*téoon_**,
-and contraction produces **_\*tḗon__, written __tēon_**. This is the regular
+From _\*téxun_, lowering of medial unstressed _u_ gives _\*téxon_,
+breaking gives _\*téoxon_, loss of intervocalic _h/x_ yields _\*téoon_,
+and contraction produces _\*tḗon_, written _tēon_. This is the regular
 bare-cardinal path.
 
-The umlauted forms **_tien / tīen_** belong to a different branch, created when
+The umlauted forms _tien / tīen_ belong to a different branch, created when
 the numeral was levelled from inflected forms with a front-vocalic trigger
 [@Fulk2018, §10.2; @SieversBrunner1965, §129 Anm. 6].
 
@@ -4556,12 +4560,12 @@ Outcome: _þrīe_
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
 under one Old English-ready paradigm cell [@Kroonen2013]. The input
-**_\*θréjez_** is therefore best understood as the inherited masculine
+_\*θréjez_ is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
 That distinction matters because the Old English numeral does not have one
 uniform citation form across the paradigm. The masculine singular line must be
-kept apart from feminine-neuter **_þrēo_** and from later reduced spellings of
+kept apart from feminine-neuter _þrēo_ and from later reduced spellings of
 the masculine form.
 
 #### Old English evidence
@@ -4578,10 +4582,10 @@ the conservative masculine nominative-accusative form.
 
 #### Development to Old English
 
-From **_\*θréjez_, loss of final _-z_ leaves a form of the _\*θréje_**
-type. The following **_j_** fronts the stem vowel, then vocalizes between
-vowels, and contraction yields **_þrīe_**. The compact trace records the same
-sequence as **_\*θrije > \*θriie > þrīe_**.
+From _\*θréjez_, loss of final _-z_ leaves a form of the _\*θréje_
+type. The following _j_ fronts the stem vowel, then vocalizes between
+vowels, and contraction yields _þrīe_. The compact trace records the same
+sequence as _\*θrije > \*θriie > þrīe_.
 
 #### Variant comparison
 
@@ -4685,6 +4689,8 @@ form from the later metathesized doublets.
 | _wæfs_ | earliest attested OE form; regular trace output | selected target |
 | _wæps_ | later attested metathesized variant | genuine OE doublet, but secondary |
 | _wæsp / wasp_ | later West Saxon metathesized variant | genuine OE doublet, but not the selected form |
+
+\clearpage
 
 ## Part III. Early analogy and pre-Old-English input selection
 
@@ -5349,8 +5355,7 @@ adding that Old Norse _fylgja_ and Old English _fylg(e)an_ continue a formation
 _\*fulgjan-_ [@Kroonen2013]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
-Ringe and Taylor make the split explicit as _PNWGmc \*fulgija- ~ \*fulgai- > OE
-fylgan ~ folgian_ and describe it as a dual formation that probably reflects an
+Ringe and Taylor make the split explicit as _PNWGmc \*fulgija- ~ \*fulgai- > OE fylgan ~ folgian_ and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, pp. 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
 _\*fúlgijaną_ belongs to the class-I _\*fulgija- / \*fulgjan-_ branch; the citation
@@ -6053,8 +6058,7 @@ Outcome: _nafola_
 #### Reconstruction and comparative evidence
 
 Kroonen lemmatizes the word with a syncopated comparative headword _\*nablô_,
-while Ringe and Taylor give the derivational pathway _\*nabulō > \*næbula >
-nafola_ [@Kroonen2013; @RingeTaylor2014]. The difference is one of stage and
+while Ringe and Taylor give the derivational pathway _\*nabulō > \*næbula > nafola_ [@Kroonen2013; @RingeTaylor2014]. The difference is one of stage and
 notation rather than of lexeme identity: the selected input _\*nábulô_ is the
 pre-syncope form needed for the Old English development.
 
@@ -6315,8 +6319,7 @@ Old English, citing _nosu < \*nusō_ [@Campbell1959].
 
 The citation reconstruction _\*nasō_ is therefore best treated as the full-grade
 comparative headword, while the selected input _\*núsō_ represents the remodeled
-zero-grade line continued by the Old English form discussed here. Orel's _\*nasō
-... OE nasu_ preserves the competing full-grade notation and shows that the two
+zero-grade line continued by the Old English form discussed here. Orel's _\*nasō ... OE nasu_ preserves the competing full-grade notation and shows that the two
 lines should not be collapsed without comment [@Orel2003].
 
 #### Old English evidence
@@ -6648,8 +6651,7 @@ Outcome: _sparian_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel keep the inherited verb under class-III _\*sparēn- /
-\*sparēnan_ [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
+Kroonen and Orel keep the inherited verb under class-III _\*sparēn- / \*sparēnan_ [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
 _\*sparai- ~ \*sparja-_ for the English branch and derive the citation verb from a
 class-II line [@RingeTaylor2014, pp. 162, 191]. The selected input
 _\*spárōjaną_ therefore represents the refashioned class-II formation behind Old
@@ -6736,8 +6738,7 @@ Outcome: _stæf_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem _\*staba-_ [@Kroonen2013], Orel writes _\*stabiz ~
-\*stabaz_ [@Orel2003], and Kluge-Seebold explicitly marks _g. \*stabi-/a-_
+reconstructs an a-stem _\*staba-_ [@Kroonen2013], Orel writes _\*stabiz ~ \*stabaz_ [@Orel2003], and Kluge-Seebold explicitly marks _g. \*stabi-/a-_
 [@KlugeSeebold2011]. That disagreement matters because a direct i-stem input in
 _\*-iz_ would predict i-mutation in Old English, whereas the attested noun keeps
 _æ_.
@@ -6817,16 +6818,16 @@ Outcome: _stefn_
 #### Reconstruction and comparative evidence
 
 The source tradition behind _stefn_ is not the same as the comparative label
-**_\*stámnaz_. Ringe and Taylor cite _\*stebnō_** for the noun continued by
+_\*stámnaz_. Ringe and Taylor cite _\*stebnō_ for the noun continued by
 Gothic _stibna_ and Old English _stebn > stefn > stemn_ [@RingeTaylor2014, p.
-330]. Orel likewise gives **_\*stebnō ~ \*stemnō_**, whereas Kroonen prefers
-**_\*stimnō-_**, and Fulk describes the etymology of _stefn, stemn_ as insecure
+330]. Orel likewise gives _\*stebnō ~ \*stemnō_, whereas Kroonen prefers
+_\*stimnō-_, and Fulk describes the etymology of _stefn, stemn_ as insecure
 [@Orel2003, p. 374; @Kroonen2013, p. 480; @Fulk2018, §6.11 n. 6].
 
-These forms belong to the Old English noun **_stefn_** 'voice, sound'. The
-selected input **_\*stébnō_** is therefore best treated as the OE-facing
+These forms belong to the Old English noun _stefn_ 'voice, sound'. The
+selected input _\*stébnō_ is therefore best treated as the OE-facing
 transponent supported by that source tradition. It does not settle the deeper
-comparative reconstruction implied by the citation label **_\*stámnaz_**.
+comparative reconstruction implied by the citation label _\*stámnaz_.
 
 #### Old English evidence
 
@@ -6842,10 +6843,10 @@ later West Saxon doublet _stemn_.
 
 #### Development to Old English
 
-From **_\*stébnō_, raising of final long _ō_ gives a _\*stébnu_** stage.
-Regular fricativization of _b_ before _n_ then yields **_\*stéβnu_**, and loss
-of the final high vowel leaves **_\*stéβn__, written __stefn_** in Old English.
-The later form **_stemn_** belongs to a separate West Saxon assimilation after
+From _\*stébnō_, raising of final long _ō_ gives a _\*stébnu_ stage.
+Regular fricativization of _b_ before _n_ then yields _\*stéβnu_, and loss
+of the final high vowel leaves _\*stéβn_, written _stefn_ in Old English.
+The later form _stemn_ belongs to a separate West Saxon assimilation after
 this stage [@RingeTaylor2014, p. 330; @Bulbring1902, §445].
 
 #### Source comparison
@@ -6903,8 +6904,8 @@ Outcome: _swanes_
 
 #### Reconstruction and comparative evidence
 
-The Germanic noun is ordinarily cited as the masculine a-stem **_\*swanaz_**
-[@Orel2003, p. 367]. The selected input **_\*swánas_** is not a competing
+The Germanic noun is ordinarily cited as the masculine a-stem _\*swanaz_
+[@Orel2003, p. 367]. The selected input _\*swánas_ is not a competing
 lexeme reconstruction. It is the **genitive singular** of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
@@ -6918,14 +6919,14 @@ Old English dictionaries give the ordinary headword as _swan_
 form _swanes_, glossing _swan, m., swan: gs. swanes_ and citing the phrase
 _swanes feðre_ [@BrightCassidyRingler1971].
 
-The target is therefore an attested Old English genitive singular, not a
+The target is therefore an **attested Old English genitive singular**, not a
 reconstruction. It is also not the ordinary citation lemma. The entry must keep
 those two facts distinct.
 
 #### Development to Old English
 
-From **_\*swánas_, Anglo-Frisian brightening gives _\*swánæs_**, and
-subsequent merger of unstressed _æ_ with _e_ yields **_swanes_**. The
+From _\*swánas_, Anglo-Frisian brightening gives _\*swánæs_, and
+subsequent merger of unstressed _æ_ with _e_ yields _swanes_. The
 comparison is straightforward once the genitive singular is chosen as the
 relevant cell.
 
@@ -6984,14 +6985,14 @@ Outcome: _þūsend_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the Germanic numeral as **_\*þūsundī-_** and cites Old
-English **_þūsend_** among its continuations [@Kroonen2013, p. 554]. The
-selected input **_\*θūs-èndi_** is not the same claim. It is an OE-oriented
+Kroonen reconstructs the Germanic numeral as _\*þūsundī-_ and cites Old
+English _þūsend_ among its continuations [@Kroonen2013, p. 554]. The
+selected input _\*θūs-èndi_ is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to _e_ and the final
 high vowel already shortened for apocope.
 
 The important question is therefore chronological. Why does Old English show
-**_þūsend_**, while related languages such as Old Saxon and Old High German keep
+_þūsend_, while related languages such as Old Saxon and Old High German keep
 _u_ in the second syllable? [@Kroonen2013, p. 554].
 
 #### Old English evidence
@@ -7004,20 +7005,20 @@ in its lexical status.
 #### Development to Old English
 
 If the old final _-ī_ had remained long enough to trigger ordinary double
-umlaut, Campbell's rule would point toward a form of **_\*þȳsend_** type rather
-than attested **_þūsend_ [@Campbell1959, §203]. Preserved root _ū_**
+umlaut, Campbell's rule would point toward a form of _\*þȳsend_ type rather
+than attested _þūsend_ [@Campbell1959, §203]. Preserved root _ū_
 therefore argues that the umlaut-triggering vowel was lost or neutralized before
 the ordinary OE umlaut outcome could develop.
 
-That early loss, however, does not by itself explain the medial **_e_**. Luick
-compares the word with **_ærende_** and later groups _thousand_ with forms
+That early loss, however, does not by itself explain the medial _e_. Luick
+compares the word with _ærende_ and later groups _thousand_ with forms
 reshaped on that pattern [@Luick1914, §§198, 492]. Viredaz is more cautious,
 arguing that Old English _e_ in this weak position may simply write schwa and so
 need not prove a unique _ærende_-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
-The selected transponent **_\*θūs-èndi_** captures the OE-side state from which
-the documented trace reaches **_þūsend_**.
+The selected transponent _\*θūs-èndi_ captures the OE-side state from which
+the documented trace reaches _þūsend_.
 
 #### Stage comparison
 
@@ -7074,13 +7075,13 @@ Outcome: _timber_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as **_\*timbra-_** and cites Old English
-**_timber_** among its continuations [@Kroonen2013]. Ringe and Taylor instead
-state the history from **_PGmc \*timra__ through West Germanic __\*timbr_** to
-Old English **_timber_** [@RingeTaylor2014].
+Kroonen reconstructs the noun as _\*timbra-_ and cites Old English
+_timber_ among its continuations [@Kroonen2013]. Ringe and Taylor instead
+state the history from _PGmc \*timra_ through West Germanic _\*timbr_ to
+Old English _timber_ [@RingeTaylor2014].
 
 The difference is therefore not over the Old English noun itself. It concerns
-whether medial **_b_** belongs in the comparative citation form or appears in an
+whether medial _b_ belongs in the comparative citation form or appears in an
 early pre-Old-English stage of the cluster.
 
 #### Old English evidence
@@ -7092,9 +7093,9 @@ citation noun, not a selected oblique cell or a reconstructed convenience form.
 #### Development to Old English
 
 With the consonantal frame _timbr-_ in place, the rest of the development is
-straightforward. Loss of final _-ą_ leaves **_\*tímbr_**, and epenthetic
-**_e_ in the final cluster yields _timber_**. Ringe and Taylor's
-**_\*timra > \*timbr > OE timber_** and the handbook treatment of this epenthetic
+straightforward. Loss of final _-ą_ leaves _\*tímbr_, and epenthetic
+_e_ in the final cluster yields _timber_. Ringe and Taylor's
+_\*timra > \*timbr > OE timber_ and the handbook treatment of this epenthetic
 vowel point to the same Old English result [@RingeTaylor2014; @Campbell1959,
 §§463-464].
 
@@ -7156,12 +7157,12 @@ Outcome: _wacan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the strong verb as **_\*wakan-_** with Old English
-**_wacan_** [@Kroonen2013]. Ringe and Taylor separately derive Old English
-**_wacian__ from weak __\*wakai- ~ \*wakja-_** [@RingeTaylor2014, §3.3.2].
+Kroonen gives the strong verb as _\*wakan-_ with Old English
+_wacan_ [@Kroonen2013]. Ringe and Taylor separately derive Old English
+_wacian_ from weak _\*wakai- ~ \*wakja-_ [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
-**_wacan_ 'wake up, arise' and weak _wacian_** 'be awake, watch' belong to
+_wacan_ 'wake up, arise' and weak _wacian_ 'be awake, watch' belong to
 related but distinct histories.
 
 #### Old English evidence
@@ -7177,9 +7178,9 @@ still remains the correct Old English comparison form for the strong branch.
 
 #### Development to Old English
 
-With strong **_\*wákaną_**, Anglo-Frisian brightening first gives a form of the
-**_\*wækaną_ type. A-restoration then returns _a_**, and the ordinary tail
-reductions yield **_wacan_. The weak verb _wacian_** belongs to a different
+With strong _\*wákaną_, Anglo-Frisian brightening first gives a form of the
+_\*wækaną_ type. A-restoration then returns _a_, and the ordinary tail
+reductions yield _wacan_. The weak verb _wacian_ belongs to a different
 prehistory and is not the expected outcome of this input.
 
 #### Class comparison
@@ -7238,14 +7239,14 @@ Outcome: _wæter_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a heteroclitic noun **_\*watar-~\*watan-_** and states that
-the Proto-Germanic material points to **_\*watōr, \*watenaz_**
+Kroonen reconstructs a heteroclitic noun _\*watar-~\*watan-_ and states that
+the Proto-Germanic material points to _\*watōr, \*watenaz_
 [@Kroonen2013, p. 616]. Ringe and Taylor likewise start from singular
-**_\*wator_** before the Old English branch [@RingeTaylor2014, §3.1.4].
+_\*wator_ before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
-form that actually corresponds to Old English **_wæter_**. The relevant
-comparator is the inherited nominative-accusative singular **_\*wátōr_**.
+form that actually corresponds to Old English _wæter_. The relevant
+comparator is the inherited nominative-accusative singular _\*wátōr_.
 
 #### Old English evidence
 
@@ -7261,9 +7262,9 @@ Old English attestation.
 
 #### Development to Old English
 
-From **_\*wátōr__, pre-final __\*ō__ becomes __a__ before final __r_**,
-yielding **_\*watar_** [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then
-gives **_\*wætær_, and merger of unstressed _æ/e__ yields __wæter_**.
+From _\*wátōr_, pre-final _\*ō_ becomes _a_ before final _r_,
+yielding _\*watar_ [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then
+gives _\*wætær_, and merger of unstressed _æ/e_ yields _wæter_.
 
 #### Stage comparison
 
@@ -7322,11 +7323,11 @@ Outcome: _hwæl_
 
 #### Reconstruction and comparative evidence
 
-The comparative sources are not uniform. Orel gives **_\*xwalaz_** and notes some
-mixed **_\*xwaliz_** evidence [@Orel2003]. Kroonen instead cites
-**_\*hwali-_** [@Kroonen2013].
+The comparative sources are not uniform. Orel gives _\*xwalaz_ and notes some
+mixed _\*xwaliz_ evidence [@Orel2003]. Kroonen instead cites
+_\*hwali-_ [@Kroonen2013].
 
-Both notations agree on inherited initial **_hw-/xw-_**, but they differ in
+Both notations agree on inherited initial _hw-/xw-_, but they differ in
 stem label. The a-stem-like input followed here is closer to Orel's notation
 than to Kroonen's citation form.
 
@@ -7343,9 +7344,9 @@ closed monosyllable.
 
 #### Development to Old English
 
-From **_\*xwálaz__, final __-z_ disappears and bare final _-a_** is lost.
-Anglo-Frisian fronting then yields **_æ_** in the closed monosyllable, and Old
-English orthography writes **_hwæl_**.
+From _\*xwálaz_, final _-z_ disappears and bare final _-a_ is lost.
+Anglo-Frisian fronting then yields _æ_ in the closed monosyllable, and Old
+English orthography writes _hwæl_.
 
 #### Formation comparison
 
@@ -7744,6 +7745,8 @@ from the later stages relevant to the Old English noun.
 | later g-bearing comparative label | _\*júgunθiz_ | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
 | selected OE-facing input | _\*júgunθ_ | compact-trace output: _ġeoguþ_ | exact match for the chosen Old English form |
 | full _-i_ stage retained too long | _\*jugunþi_ | expected over-umlauted _y_-type result | negative control showing why early _-i_ loss must precede the OE umlaut stage |
+
+\clearpage
 
 ## Part IV. Late analogy and paradigm-cell selection
 
@@ -8880,8 +8883,7 @@ Outcome: _niht_
 #### Reconstruction and comparative evidence
 
 Ringe and Taylor distinguish the high-vowel oblique and plural side of the word
-from the nominative citation form: they cite _gen.sg. \*nahtiz_, _dat.sg.
-\*nahti_, and _nom.pl. \*nahtiz_, and derive West Saxon _niht_ from that side of
+from the nominative citation form: they cite _gen.sg. \*nahtiz_, _dat.sg. \*nahti_, and _nom.pl. \*nahtiz_, and derive West Saxon _niht_ from that side of
 the paradigm [@RingeTaylor2014]. The citation reconstruction _\*náxtz_ therefore
 belongs to the nominative-like headword, while the selected input _\*náxti_
 represents the dative-singular cell.
@@ -8911,8 +8913,7 @@ _ht_ yields _niht_, whereas plural forms with a following back vowel preserve th
 non-umlauted _neahtas_ type [@RingeTaylor2014; @Campbell1959;
 @SieversBrunner1965].
 
-The modeled path is therefore _\*náxti > \*næxti > \*neaxti > \*niexti > \*nixti >
-niht_.
+The modeled path is therefore _\*náxti > \*næxti > \*neaxti > \*niexti > \*nixti > niht_.
 
 #### Paradigm comparison
 
@@ -9061,11 +9062,11 @@ Outcome: _sċuldrum_
 
 #### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives **_\*skuldr(j)ō_, a feminine ō-/jō-stem, and explicitly notes that Old English _sculdor_ is masculine beside OFrisian _skulder_, Middle Low German _schulder_, and Old High German _scultra, scultirra_ [@Orel2003, p. 345]. Kroonen reconstructs _\*skuldra-_, a masculine a-stem, and derives the Old High German feminine forms from _\*skuldrjōn-_ [@Kroonen2013, p. 478]. Ringe and Taylor cite PWGmc _\*skuldru_** for the Old English branch [@RingeTaylor2014, p. 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_, a feminine ō-/jō-stem, and explicitly notes that Old English _sculdor_ is masculine beside OFrisian _skulder_, Middle Low German _schulder_, and Old High German _scultra, scultirra_ [@Orel2003, p. 345]. Kroonen reconstructs _\*skuldra-_, a masculine a-stem, and derives the Old High German feminine forms from _\*skuldrjōn-_ [@Kroonen2013, p. 478]. Ringe and Taylor cite PWGmc _\*skuldru_ for the Old English branch [@RingeTaylor2014, p. 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
-A dative/instrumental plural form **_\*skúldramiz_** aligns with the inherited plural ending that later yields Old English _-um_, and it corresponds directly to the attested dative plural discussed below.
+A dative/instrumental plural form _\*skúldramiz_ aligns with the inherited plural ending that later yields Old English _-um_, and it corresponds directly to the attested dative plural discussed below.
 
 #### Old English evidence
 
@@ -9077,7 +9078,7 @@ The singular and plural evidence point to different parts of the paradigm. The r
 
 #### Development to Old English
 
-Proto-Germanic **_\*skúldramiz_ can be interpreted as a dative/instrumental plural form. In this environment the post-tonic _a_ before _m_ is raised to _u_, giving a form of the _\*skúldrumiz_** type. Unstressed _u_ is regularly preserved before _m_, especially in the dative plural ending _-um_: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding _m_ from the environments in which medial _o_ became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
+Proto-Germanic _\*skúldramiz_ can be interpreted as a dative/instrumental plural form. In this environment the post-tonic _a_ before _m_ is raised to _u_, giving a form of the _\*skúldrumiz_ type. Unstressed _u_ is regularly preserved before _m_, especially in the dative plural ending _-um_: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding _m_ from the environments in which medial _o_ became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
 
 Subsequent reduction of the ending removes the final _\*i_ and _\*z_, so that the inflectional ending appears in Old English as _-um_. The initial cluster is written here as _sċ-_, and the development is _\*skúldramiz > \*skúldrumiz > \*skúldrum > sċuldrum_.
 
@@ -9464,9 +9465,9 @@ Outcome: _macaþ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from **_\*makōjan-_ on the make-family base _\*maka-_ [@Kroonen2013]. Ringe and Taylor likewise place the verb among the class-II weak verbs and note that the present 2sg, 3sg, and imperative singular preserve suffixal _\*ō_** rather than the remodelled infinitival formation [@RingeTaylor2014].
+Kroonen derives the Old English verb from _\*makōjan-_ on the make-family base _\*maka-_ [@Kroonen2013]. Ringe and Taylor likewise place the verb among the class-II weak verbs and note that the present 2sg, 3sg, and imperative singular preserve suffixal _\*ō_ rather than the remodelled infinitival formation [@RingeTaylor2014].
 
-The selected input **_\*mákōθi_** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
+The selected input _\*mákōθi_ is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 
 #### Old English evidence
 
@@ -9476,9 +9477,9 @@ Campbell's class-II paradigm makes the ordinary 3sg ending _-aþ_, while his dia
 
 #### Development to Old English
 
-After early loss of final _-i_, **_\*mákōθi__ yields __\*mákōθ_. Anglo-Frisian brightening gives _\*mækōθ_, but Campbell lists _macian_ among the class-II verbs with restored _a_, so the stem returns to _mak-_** before the ending is reduced [@Campbell1959, §159].
+After early loss of final _-i_, _\*mákōθi_ yields _\*mákōθ_. Anglo-Frisian brightening gives _\*mækōθ_, but Campbell lists _macian_ among the class-II verbs with restored _a_, so the stem returns to _mak-_ before the ending is reduced [@Campbell1959, §159].
 
-The ending then follows the ordinary class-II 3sg development. Campbell's **_lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the finite non-_j_ cells point to _\*makōθ > \*makaθ > macaþ_** [@Campbell1959, §355.4; @RingeTaylor2014].
+The ending then follows the ordinary class-II 3sg development. Campbell's _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the finite non-_j_ cells point to _\*makōθ > \*makaθ > macaþ_ [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Paradigm comparison
 
@@ -9535,21 +9536,21 @@ Outcome: _bora_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **_\*burojan-_ and cites Old English _borian_ among its continuants [@Kroonen2013]. In Ringe and Taylor's account of class-II weak verbs, the imperative singular belongs to the finite cells that preserve inherited suffixal _\*ō_**, unlike the remodelled infinitive [@RingeTaylor2014].
+Kroonen reconstructs the bore-family verb as _\*burojan-_ and cites Old English _borian_ among its continuants [@Kroonen2013]. In Ringe and Taylor's account of class-II weak verbs, the imperative singular belongs to the finite cells that preserve inherited suffixal _\*ō_, unlike the remodelled infinitive [@RingeTaylor2014].
 
-The selected input **_\*búrô_** is therefore an imperative cell of the same family, not the citation form of the verb.
+The selected input _\*búrô_ is therefore an imperative cell of the same family, not the citation form of the verb.
 
 #### Old English evidence
 
 Clark Hall lemmatizes the verb as _borian_ [@ClarkHall1960]. The comparison form here is the normalized imperative singular _bora_, used beside the headword and the related 3sg form _boraþ_.
 
-The imperative is thus a paradigm form rather than a replacement for the dictionary lemma. It is the most direct Old English comparator for the non-_j_ finite cell represented by **_\*búrô_**.
+The imperative is thus a paradigm form rather than a replacement for the dictionary lemma. It is the most direct Old English comparator for the non-_j_ finite cell represented by _\*búrô_.
 
 #### Development to Old English
 
-Northwest Germanic lowering first gives **_\*bórô__ from __\*búrô_, and late shortening of the unstressed long vowel then yields _\*bóra__, whence __bora_**.
+Northwest Germanic lowering first gives _\*bórô_ from _\*búrô_, and late shortening of the unstressed long vowel then yields _\*bóra_, whence _bora_.
 
-Ringe and Taylor's class-II imperative singular **_-a < \*-ō_** points to exactly this type of outcome [@RingeTaylor2014]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
+Ringe and Taylor's class-II imperative singular _-a < \*-ō_ points to exactly this type of outcome [@RingeTaylor2014]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
 
 #### Paradigm comparison
 
@@ -9608,9 +9609,9 @@ Outcome: _boraþ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **_\*burojan-_ and cites Old English _borian_ among its reflexes [@Kroonen2013]. The selected form isolates the finite 3sg cell _\*búrōθi_** rather than the infinitive.
+Kroonen reconstructs the bore-family verb as _\*burojan-_ and cites Old English _borian_ among its reflexes [@Kroonen2013]. The selected form isolates the finite 3sg cell _\*búrōθi_ rather than the infinitive.
 
-Campbell's class-II pattern **_lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's account of stable _a_** in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's class-II pattern _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's account of stable _a_ in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -9620,9 +9621,9 @@ Campbell's dialect survey allows secondary _-e-_ and _-o-_ spellings in 2sg and 
 
 #### Development to Old English
 
-Early loss of final _-i_ first gives **_\*búrōθ__ from __\*búrōθi_. Northwest Germanic lowering then produces _\*bórōθ_, and late shortening of unstressed _ō__ yields __\*bóraθ__, whence __boraþ_**.
+Early loss of final _-i_ first gives _\*búrōθ_ from _\*búrōθi_. Northwest Germanic lowering then produces _\*bórōθ_, and late shortening of unstressed _ō_ yields _\*bóraθ_, whence _boraþ_.
 
-Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable **_a_** in the finite non-_j_ cells support exactly this sequence [@Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable _a_ in the finite non-_j_ cells support exactly this sequence [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Paradigm comparison
 
@@ -9678,9 +9679,9 @@ Outcome: _liorna_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English _liornian ~ leornian_ from a learn-family base of the **_\*lizn-_ type, and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@RingeTaylor2014; @Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_** [@Fulk2018].
+Ringe and Taylor give Old English _liornian ~ leornian_ from a learn-family base of the _\*lizn-_ type, and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@RingeTaylor2014; @Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_ [@Fulk2018].
 
-The selected input **_\*líznô_** is a finite imperative cell of that family, not the citation form of the verb.
+The selected input _\*líznô_ is a finite imperative cell of that family, not the citation form of the verb.
 
 #### Old English evidence
 
@@ -9690,9 +9691,9 @@ _Liorna_ can therefore be treated as an attested Northumbrian finite form, while
 
 #### Development to Old English
 
-The selected form develops regularly as **_\*líznô > \*lírnô__ by rhotacism, then __\*líornô__ by breaking before __rn__, and finally __\*líorna_** by late shortening of the unstressed long vowel.
+The selected form develops regularly as _\*líznô > \*lírnô_ by rhotacism, then _\*líornô_ by breaking before _rn_, and finally _\*líorna_ by late shortening of the unstressed long vowel.
 
-Campbell's Northumbrian **_io_ evidence and Ringe and Taylor's explicit statement that no form of _liornian_ stood in an i-umlauting environment support this stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014]. The West-Saxon-looking _eo_** forms belong to a different dialectal presentation of the same family.
+Campbell's Northumbrian _io_ evidence and Ringe and Taylor's explicit statement that no form of _liornian_ stood in an i-umlauting environment support this stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014]. The West-Saxon-looking _eo_ forms belong to a different dialectal presentation of the same family.
 
 #### Paradigm comparison
 
@@ -9750,9 +9751,9 @@ Outcome: _liornaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English _liornian ~ leornian_ from a learn-family base of the **_\*lizn-_ type, and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@RingeTaylor2014; @Kroonen2013, 380]. The selected input _\*líznōθi_** is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English _liornian ~ leornian_ from a learn-family base of the _\*lizn-_ type, and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@RingeTaylor2014; @Kroonen2013, 380]. The selected input _\*líznōθi_ is the finite 3sg cell of that family, not the citation form of the verb.
 
-For the ending, Campbell's **_lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_** in the class-II 2sg and 3sg make the non-_j_ 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
+For the ending, Campbell's _lufas, -aþ (< -ōsi, -ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the class-II 2sg and 3sg make the non-_j_ 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -9762,9 +9763,9 @@ The relevant comparison form here is the normalized 3sg _liornaþ_. The directly
 
 #### Development to Old English
 
-The selected form develops as **_\*líznōθi > \*lírnōθi__ by rhotacism, then __\*lírnōθ_ after early apocope of final _-i__, then __\*líornōθ__ by breaking before __rn__, and finally __\*líornaθ > liornaþ_** by late shortening of the unstressed long vowel.
+The selected form develops as _\*líznōθi > \*lírnōθi_ by rhotacism, then _\*lírnōθ_ after early apocope of final _-i_, then _\*líornōθ_ by breaking before _rn_, and finally _\*líornaθ > liornaþ_ by late shortening of the unstressed long vowel.
 
-Campbell's Northumbrian **_io_ evidence and Ringe and Taylor's statement that no form of _liornian_ stood in an i-umlauting environment support the stem, while Campbell's class-II ending evidence supports the final _-aþ_** [@Campbell1959, §123 n. 2; @Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's Northumbrian _io_ evidence and Ringe and Taylor's statement that no form of _liornian_ stood in an i-umlauting environment support the stem, while Campbell's class-II ending evidence supports the final _-aþ_ [@Campbell1959, §123 n. 2; @Campbell1959, §355.4; @RingeTaylor2014].
 
 #### Paradigm comparison
 
@@ -10052,6 +10053,8 @@ The comparison below is manual.
 | imperative singular companion | _\*skáwô_ | manual probe output _sċēawa_ | scēawa | useful family control, but not the target of this entry |
 | selected present third singular | _\*skáwōθi_ | manual probe output _sċēawaþ_ | normalized sċēawaþ; source-side pattern _-sceawað_ | exact match for the selected cell |
 
+\clearpage
+
 ## Part V. Reconstructed Old English comparators
 
 These entries use an explicitly reconstructed Old English-stage comparator for
@@ -10112,7 +10115,7 @@ weak-noun branch treated here.
 That distinction matters because the Old English record is uneven. The better
 attested OE material belongs to the voiceless branch, but the present entry
 represents the reconstructed OE form that would continue the voiced branch
-behind later English _knob_.
+behind later English **knob**.
 
 #### Old English evidence
 
@@ -10279,16 +10282,16 @@ Outcome: _strīeġan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the inherited weak verb as **_\*straujan-_** and gives Old English
-**_streowian_** as its dictionary continuation [@Kroonen2013, p. 483]. Ringe and
+Kroonen cites the inherited weak verb as _\*straujan-_ and gives Old English
+_streowian_ as its dictionary continuation [@Kroonen2013, p. 483]. Ringe and
 Taylor make the split within Old English explicit: the inherited class-I verb is
-continued by Anglian **_strēgan_, while West Saxon _streowian_** is a
+continued by Anglian _strēgan_, while West Saxon _streowian_ is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
 The aw-series comparison is important here. Luick groups _\*strauwjan_ with the
 same set as _\*hauwja-_ and _\*kauwjan_, yielding Anglian _strēzan_ beside West
 Saxon forms of the _hīez, ciezan_ type [@Luick1914, §98]. Fulk likewise allows
-an early West Saxon **_\*striegan_** directly from Proto-Germanic _\*straujana_
+an early West Saxon _\*striegan_ directly from Proto-Germanic _\*straujana_
 [@Fulk2018, §4.10 n. 1].
 
 #### Old English evidence
@@ -10298,20 +10301,20 @@ attested West Saxon citation forms are _strewian_, _streowian_, and
 _strēawian_, which belong to the remodelled class-II branch
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
-The target _strīeġan_ is therefore a reconstructed Old English form, not
+The target _strīeġan_ is therefore a **reconstructed Old English form**, not
 an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
 inherited class-I verb, chosen to keep the inherited branch distinct from the
 better-attested remodelled West Saxon lemma.
 
 #### Development to Old English
 
-From **_\*stráwjaną_**, the inherited West Saxon development passes through
-_\*straujaną_, fronting and leveling to a **_\*strēajan-_** stage, i-umlaut to
-**_\*strīejan_**, and retention or strengthening of the glide after the front
-diphthong, written here as **_ġ_. The resulting form is _strīeġan_**.
+From _\*stráwjaną_, the inherited West Saxon development passes through
+_\*straujaną_, fronting and leveling to a _\*strēajan-_ stage, i-umlaut to
+_\*strīejan_, and retention or strengthening of the glide after the front
+diphthong, written here as _ġ_. The resulting form is _strīeġan_.
 
-This differs from Anglian **_strēgan_**, where smoothing removes the diphthongal
-sequence, and from West Saxon **_strewian / streowian / strēawian_**, where the
+This differs from Anglian _strēgan_, where smoothing removes the diphthongal
+sequence, and from West Saxon _strewian / streowian / strēawian_, where the
 verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 @Campbell1959, §753.7].
 
@@ -10325,6 +10328,8 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 | _strēgan_ | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
 | _strīeġan_ | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
 | _strewian / streowian / strēawian_ | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
+
+\clearpage
 
 ## Part VI. Known but unmodelled remodellings
 
@@ -10498,6 +10503,8 @@ target _tæppa_. The entry accordingly remains _known_unmodelled_.
 | regular inherited noun path | *táppô | compact-trace output: _tappa_ | regular output, but not the target |
 | attested OE target | — | _tæppa_ | genuine target form, but analogically remodelled in the present classification |
 | related j-verb background | *táppjaną | _teppan_ | related formation, but not the noun target |
+
+\clearpage
 
 ## Part VII. Unexplained or deliberately unmodelled exceptions
 
