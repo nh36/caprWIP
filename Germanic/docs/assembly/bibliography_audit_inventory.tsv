@@ -1,0 +1,27 @@
+citekey	entry_type	current_problem	action_taken	fields_added	source_used	still_incomplete
+Bammesberger1997	article	Containerless article entry; journal, issue, and DOI missing	Completed article container and identifier	journal;volume;number;doi	local PDF for title/pages + User input with full Anglia citation	no
+Lloyd1966	article	Containerless article entry and outdated title	Corrected title and completed journal metadata	title;journal;volume;number;pages;month;doi;url	local JSTOR PDF + Crossref confirmation	no
+GermanicSlavicBaltic2025	misc	Thin working-paper style record	Retyped to print unpublished-manuscript status and URL	entry_type;howpublished;url	local PDF title page + web search for Academia URL	no
+Kroonen2011	book	Monograph mis-entered as @incollection	Converted to @book and normalized publisher string	entry_type;removed_booktitle;publisher	existing self-identical title/booktitle record + local PDF file	no
+Kaluza1906	book	Publisher/edition still marked TODO	Left unchanged pending verification	none	existing local text file only	yes
+Erdmann1972	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local text file only	yes
+Pierce1999	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local text file only	yes
+Pierce2003	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local text file only	yes
+Pierce2006	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local text file only	yes
+Kroonen2006	article	Full bibliographic data still unverified	Flagged only this pass	none	existing local PDF only	yes
+HowellSalmons1988	article	Journal container still unverified	Flagged only this pass	none	existing local PDF only	yes
+Stiles2012	article	Full citation still unverified	Flagged only this pass	none	existing local PDF only	yes
+Polome1967	article	Container details still unverified	Flagged only this pass	none	existing local PDF only	yes
+Polome1994	article	Page range missing	Flagged only this pass	none	existing local PDF only	yes
+Kylstra1983	article	Page range missing	Flagged only this pass	none	existing local PDF only	yes
+Hamp1990	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local PDF only	yes
+vanHelten1905	article	Journal container still unverified	Flagged only this pass	none	existing local PDF only	yes
+Vine2019	article	Full citation still unverified	Flagged only this pass	none	existing local text file only	yes
+Mees2020	article	Page range missing	Flagged only this pass	none	existing local PDF only	yes
+Stiles2017	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local PDF only	yes
+NeriRingeReview	article	Full review citation still unverified	Flagged only this pass	none	existing local PDF only	yes
+Stiles1985	article	Page range and exact series wording still unverified	Flagged only this pass	none	existing local PDF only	yes
+Stiles1986a	article	Page range missing	Flagged only this pass	none	existing local PDF only	yes
+Stiles1986b	article	Page range missing	Flagged only this pass	none	existing local PDF only	yes
+Ringe1984	article	Missing journal, volume, and pages	Flagged only this pass	none	existing local PDF only	yes
+Rice1994	article	Volume and page range missing	Flagged only this pass	none	existing local PDF only	yes
