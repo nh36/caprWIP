@@ -506,7 +506,7 @@ OE I Umlaut & \emph{*brēʧi} \\
 }
 \endgroup
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014].
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971, 38; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014].
 
 ### calf — OE ċealf
 
@@ -554,7 +554,7 @@ OE Velar Palatalization & \emph{*ʧealβ} \\
 }
 \endgroup
 
-Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem _\*kalbaz_, pl. _\*kalbizō_, while Orel cites _\*kalbaz_ as the citation form and Ringe and Taylor derive West Saxon _Cealf_ from _\*kalbaz_, _\*kalbiz-_ [@Kroonen2013; @Orel2003, 248; @RingeTaylor2014, 220]. Clark Hall gives _cealf_, and Bosworth-Toller likewise records _Caelf / Cealf_ among the ordinary Old English spellings [@ClarkHall1960; @BosworthToller1898, 131]. After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives _\*kælb_, and breaking before _l_ plus consonant yields _\*kealb_.
+Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem _\*kalbaz_, pl. _\*kalbizō_, while Orel cites _\*kalbaz_ as the citation form and Ringe and Taylor derive West Saxon _Cealf_ from _\*kalbaz_, _\*kalbiz-_ [@Kroonen2013, 318; @Orel2003, 248; @RingeTaylor2014, 220]. Clark Hall gives _cealf_, and Bosworth-Toller likewise records _Caelf / Cealf_ among the ordinary Old English spellings [@ClarkHall1960, 73; @BosworthToller1898, 131]. After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives _\*kælb_, and breaking before _l_ plus consonant yields _\*kealb_.
 
 ### corn — OE corn
 
@@ -598,7 +598,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*kórn} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*kurna-_, and Orel gives the citation form _\*kurnan_, both with Old English _corn_ among the reflexes [@Kroonen2013; @Orel2003, 264]. The singular form _\*kúrną_ is the nominative-accusative singular appropriate to the citation noun. Clark Hall gives _corn n. 'corn,' grain_, Bright's glossary lists _corn, n._ with genitive singular _cornes_, and Bosworth-Toller treats _corn_ as an ordinary noun headword [@ClarkHall1960; @BrightCassidyRingler1971, 347; @BosworthToller1898, 144]. With northwest Germanic lowering, _\*kúrną_ becomes _\*kórną_, and later loss of final nasal after a heavy syllable yields _\*kórn_, whence _corn_.
+Kroonen cites the noun as _\*kurna-_, and Orel gives the citation form _\*kurnan_, both with Old English _corn_ among the reflexes [@Kroonen2013, 352; @Orel2003, 264]. The singular form _\*kúrną_ is the nominative-accusative singular appropriate to the citation noun. Clark Hall gives _corn n. 'corn,' grain_, Bright's glossary lists _corn, n._ with genitive singular _cornes_, and Bosworth-Toller treats _corn_ as an ordinary noun headword [@ClarkHall1960, 79; @BrightCassidyRingler1971, 347; @BosworthToller1898, 144]. With northwest Germanic lowering, _\*kúrną_ becomes _\*kórną_, and later loss of final nasal after a heavy syllable yields _\*kórn_, whence _corn_.
 
 ### deed — OE dǣd
 
@@ -687,7 +687,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*dór} \\
 }
 \endgroup
 
-Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English _dor_ among its reflexes. In the same entry he separates Old English _duru_, Old Frisian _dore_, and Old High German _tura_ as reflexes of _\*durō-_ instead [@Kroonen2013]. Clark Hall records _dor_ as a neuter noun and separately records feminine _duru_ with its own inflection [@ClarkHall1960]. From _\*dúrą_, Northwest Germanic u-lowering gives _\*dórą_, and heavy-syllable nasal apocope then yields _dor_.
+Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English _dor_ among its reflexes. In the same entry he separates Old English _duru_, Old Frisian _dore_, and Old High German _tura_ as reflexes of _\*durō-_ instead [@Kroonen2013, 150]. Clark Hall records _dor_ as a neuter noun and separately records feminine _duru_ with its own inflection [@ClarkHall1960, 92]. From _\*dúrą_, Northwest Germanic u-lowering gives _\*dórą_, and heavy-syllable nasal apocope then yields _dor_.
 
 ### fare — OE faran
 
@@ -821,7 +821,7 @@ OE Breaking & \emph{*fearn} \\
 }
 \endgroup
 
-Kroonen cites the noun as masculine _\*farna-_ and gives Old English _fearn, fern_, while Orel gives the same lexeme as neuter _\*farnan_ with Old English _fearn_ [@Kroonen2013; @Orel2003, 133]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style _\*fárnaz_. Clark Hall gives _fearn_ as an Old English noun, and Bosworth-Toller records _fearn_ with inflected forms such as _fearnes_, _fearna_, and _fearne_ [@ClarkHall1960; @BosworthToller1898, 219]. From _\*fárnaz_, loss of final _-z_ and final _-a_ gives _\*fárn_; Anglo-Frisian brightening then yields _\*færn_, and breaking before _r_ plus consonant gives _fearn_ [@Campbell1959; @RingeTaylor2014].
+Kroonen cites the noun as masculine _\*farna-_ and gives Old English _fearn, fern_, while Orel gives the same lexeme as neuter _\*farnan_ with Old English _fearn_ [@Kroonen2013, 169; @Orel2003, 133]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style _\*fárnaz_. Clark Hall gives _fearn_ as an Old English noun, and Bosworth-Toller records _fearn_ with inflected forms such as _fearnes_, _fearna_, and _fearne_ [@ClarkHall1960, 114; @BosworthToller1898, 219]. From _\*fárnaz_, loss of final _-z_ and final _-a_ gives _\*fárn_; Anglo-Frisian brightening then yields _\*færn_, and breaking before _r_ plus consonant gives _fearn_ [@Campbell1959; @RingeTaylor2014].
 
 ### field — OE feld
 
@@ -912,7 +912,7 @@ OE Weak Tail Reduction & \emph{*flēogan} \\
 }
 \endgroup
 
-Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014].
+Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014].
 
 Form note. Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014].
 
@@ -1054,7 +1054,7 @@ OE Weak Tail Reduction & \emph{*ʤíeβan} \\
 }
 \endgroup
 
-Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014]. Campbell gives _gefan (W-S giefan)_ among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959; @ClarkHall1960]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959; @RingeTaylor2014].
+Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013, 212]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014]. Campbell gives _gefan (W-S giefan)_ among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959; @ClarkHall1960]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959; @RingeTaylor2014].
 
 Dialect note. West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ or _for-geofan_ continue the same verb without the West Saxon vocalism [@RingeTaylor2014].
 
@@ -1149,9 +1149,9 @@ OE Weak Tail Reduction & \emph{*graβan} \\
 }
 \endgroup
 
-Campbell gives _grafan_ among the standard examples of Old English a-restoration before a single consonant and a following back vowel, and Ringe and Taylor describe the same development for Class VI infinitives [@Campbell1959, 61; @RingeTaylor2014]. Clark Hall records _grafan_ as the verb 'to dig, grave' and separately records noun _græf_ 'grave, trench' [@ClarkHall1960]. From _\*grábaną_, Anglo-Frisian brightening first gives a fronted stem vowel.
+Campbell gives _grafan_ among the standard examples of Old English a-restoration before a single consonant and a following back vowel, and Ringe and Taylor describe the same development for Class VI infinitives [@Campbell1959, 61; @RingeTaylor2014]. Clark Hall records _grafan_ as the verb 'to dig, grave' and separately records noun _græf_ 'grave, trench' [@ClarkHall1960, 153]. From _\*grábaną_, Anglo-Frisian brightening first gives a fronted stem vowel.
 
-Form note. Noun _græf_ and verbal forms such as _græfð_ or past participial _græfen_ belong to other lexical or paradigm positions and do not replace the infinitive _grafan_ as the target here [@ClarkHall1960].
+Form note. Noun _græf_ and verbal forms such as _græfð_ or past participial _græfen_ belong to other lexical or paradigm positions and do not replace the infinitive _grafan_ as the target here [@ClarkHall1960, 153].
 
 ### guest — OE ġiest
 
@@ -1589,7 +1589,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*xórn} \\
 }
 \endgroup
 
-Kroonen and Orel cite lemma-style Proto-Germanic headwords of the _\*hurna-_ / _\*xurnan_ type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input _\*xúrną_ is the nominative-style form used in the derivation here. Clark Hall, Bosworth-Toller, and Bright all record _horn_ as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898, 108; @BrightCassidyRingler1971]. From _\*xúrną_, Northwest Germanic u-lowering gives _\*xórną_, and later loss of the final nasal leaves _horn_.
+Kroonen and Orel cite lemma-style Proto-Germanic headwords of the _\*hurna-_ / _\*xurnan_ type for this noun [@Kroonen2013, 299; @Orel2003, 234]. The selected input _\*xúrną_ is the nominative-style form used in the derivation here. Clark Hall, Bosworth-Toller, and Bright all record _horn_ as the ordinary Old English noun [@ClarkHall1960, 179; @BosworthToller1898, 108; @BrightCassidyRingler1971, 400]. From _\*xúrną_, Northwest Germanic u-lowering gives _\*xórną_, and later loss of the final nasal leaves _horn_.
 
 Form note. The note's oblique _\*xurnăn_ belongs to comparative stem background only. It does not replace the selected input _\*xúrną_ as the derivational form used here [@Kroonen2013; @Orel2003, 234].
 
@@ -1640,7 +1640,7 @@ OE J Loss After Heavy & \emph{*lǣdan} \\
 }
 \endgroup
 
-Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960; @BosworthToller1898]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014].
+Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960, 194; @BosworthToller1898]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014].
 
 ### learn — OE liornian
 
@@ -1733,7 +1733,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*xlíd} \\
 }
 \endgroup
 
-Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003; @Lloyd1966]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
+Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003; @Lloyd1966]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960, 175; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
 
 Form note. An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
 
@@ -2066,9 +2066,9 @@ PWGmc Final Bare A Loss & \emph{*rókk} \\
 }
 \endgroup
 
-Orel cites a masculine _\*rukkaz_ for the garment word, while Kroonen gives _\*hrukka-_. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003; @Kroonen2013, 290]. Clark Hall and Bosworth-Toller record _rocc_ as an over-garment or tunic and preserve compounds such as _bisceoprocc_ and _breóstrocc_ [@ClarkHall1960; @BosworthToller1898]. With _\*rúkkaz_ as the selected input, Northwest Germanic u-lowering and later loss of final _-a_ yield _rocc_ as a regular outcome.
+Orel cites a masculine _\*rukkaz_ for the garment word, while Kroonen gives _\*hrukka-_. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003, 347; @Kroonen2013, 290]. Clark Hall and Bosworth-Toller record _rocc_ as an over-garment or tunic and preserve compounds such as _bisceoprocc_ and _breóstrocc_ [@ClarkHall1960, 259; @BosworthToller1898]. With _\*rúkkaz_ as the selected input, Northwest Germanic u-lowering and later loss of final _-a_ yield _rocc_ as a regular outcome.
 
-Source note. This entry concerns the garment noun only. The stone word seen in _stānrocc_ belongs to a different lexical history [@ClarkHall1960; @BosworthToller1898].
+Source note. This entry concerns the garment noun only. The stone word seen in _stānrocc_ belongs to a different lexical history [@ClarkHall1960, 259; @BosworthToller1898].
 
 ### sheep — OE sċēap
 
@@ -2114,7 +2114,7 @@ OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
 }
 \endgroup
 
-Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
+Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
 
 Dialect note. Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].
 
@@ -2263,9 +2263,9 @@ OE Weak Tail Reduction & \emph{*slǣpan} \\
 }
 \endgroup
 
-Kroonen preserves the comparative verb as _\*slēpan-_, and Fulk cites the same family under root _\*slēb-_ [@Kroonen2013; @Fulk2018, 120]. The selected input _\*slḗpaną_ is the infinitive-style form used here for that inherited sleep-verb. Clark Hall gives _slæpan_ with preterite _slēp_, _slēap_, and Bright likewise lists _slæpan_ _(slāpan)_, _slēp_ _slēpon_ _slēpen_ [@ClarkHall1960; @BrightCassidyRingler1971, 435]. From _\*slḗpaną_, Northwest Germanic lowering gives _\*slǣpaną_.
+Kroonen preserves the comparative verb as _\*slēpan-_, and Fulk cites the same family under root _\*slēb-_ [@Kroonen2013; @Fulk2018, 120]. The selected input _\*slḗpaną_ is the infinitive-style form used here for that inherited sleep-verb. Clark Hall gives _slæpan_ with preterite _slēp_, _slēap_, and Bright likewise lists _slæpan_ _(slāpan)_, _slēp_ _slēpon_ _slēpen_ [@ClarkHall1960, 281; @BrightCassidyRingler1971, 435]. From _\*slḗpaną_, Northwest Germanic lowering gives _\*slǣpaną_.
 
-Form note. The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_, whereas _slǣp_ belongs to noun or lookup background and _slēp_/_slēap_ are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
+Form note. The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_, whereas _slǣp_ belongs to noun or lookup background and _slēp_/_slēap_ are preterite forms [@ClarkHall1960, 281; @BrightCassidyRingler1971, 435].
 
 ### smear — OE smierwan
 
@@ -2315,7 +2315,7 @@ OE J Loss After Heavy & \emph{*smíerwan} \\
 
 Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage _\*smirwijana_, from which they derive West Saxon _smierwan_, Mercian _smirwan_, and Northumbrian _smiriga_ [@RingeTaylor2014]. The selected form is the West Saxon citation form _smierwan_. From _\*smérwijaną_, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_.
 
-Dialect note. The entry therefore represents the West Saxon member of a broader OE family: _smierwan_ in West Saxon, _smirwan_ in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014; @ClarkHall1960].
+Dialect note. The entry therefore represents the West Saxon member of a broader OE family: _smierwan_ in West Saxon, _smirwan_ in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014; @ClarkHall1960, 283].
 
 ### span — OE spannan
 
@@ -2359,9 +2359,9 @@ OE Weak Tail Reduction & \emph{*spánnan} \\
 }
 \endgroup
 
-Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960; @SieversBrunner1965]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
+Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013, 505]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960, 286; @SieversBrunner1965]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
 
-Form note. English _span_ can also reach noun _spann_ in local lookup material. The entry represented here is the verb _spannan_, with the noun treated elsewhere [@ClarkHall1960].
+Form note. English _span_ can also reach noun _spann_ in local lookup material. The entry represented here is the verb _spannan_, with the noun treated elsewhere [@ClarkHall1960, 286].
 
 ### spar — OE spearra
 
@@ -2405,9 +2405,9 @@ OE Unstressed Long Vowel Shortening & \emph{*spearra} \\
 }
 \endgroup
 
-Kroonen and Orel place this noun in the beam or rafter set _\*spar(r)an-_, with cognates such as Old Saxon and Old High German _sparro_ [@Kroonen2013; @Orel2003]. The selected input _\*spárrô_ is the OE-facing nominal form used here for that same lexeme. The noun represented here is _spearra_. From _\*spárrô_, Anglo-Frisian brightening gives _\*spærrô_, and OE breaking before geminate _rr_ yields _\*spearrô_, later _spearra_.
+Kroonen and Orel place this noun in the beam or rafter set _\*spar(r)an-_, with cognates such as Old Saxon and Old High German _sparro_ [@Kroonen2013, 506; @Orel2003]. The selected input _\*spárrô_ is the OE-facing nominal form used here for that same lexeme. The noun represented here is _spearra_. From _\*spárrô_, Anglo-Frisian brightening gives _\*spærrô_, and OE breaking before geminate _rr_ yields _\*spearrô_, later _spearra_.
 
-Form note. This entry concerns the noun _spearra_ only. It should be kept separate from verb _sperran_, even though the Modern English glosses overlap [@Kroonen2013; @Orel2003].
+Form note. This entry concerns the noun _spearra_ only. It should be kept separate from verb _sperran_, even though the Modern English glosses overlap [@Kroonen2013, 506; @Orel2003].
 
 ### still — OE stillan
 
@@ -2454,9 +2454,9 @@ OE J Loss After Heavy & \emph{*stillan} \\
 }
 \endgroup
 
-The wider West Germanic family includes adjective _still_ and verb _stillen_ [@KlugeSeebold2011]. The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
+The wider West Germanic family includes adjective _still_ and verb _stillen_ [@KlugeSeebold2011]. The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960, 292]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
 
-Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960; @KlugeSeebold2011].
+Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960, 292; @KlugeSeebold2011].
 
 ### summer — OE sumer
 
@@ -2601,9 +2601,9 @@ OE Unstressed AE Merger & \emph{*swealwe} \\
 }
 \endgroup
 
-Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage _\*swalwa_, from which West Saxon _swealwe_ and Mercian _swalwe_ develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_. Clark Hall records _swealwe (a, o)_ as the noun headword [@ClarkHall1960]. From _\*swálwōn_, brightening yields _\*swælw-_, and breaking before _lw_ gives _\*swealw-_.
+Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage _\*swalwa_, from which West Saxon _swealwe_ and Mercian _swalwe_ develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_. Clark Hall records _swealwe (a, o)_ as the noun headword [@ClarkHall1960, 299]. From _\*swálwōn_, brightening yields _\*swælw-_, and breaking before _lw_ gives _\*swealw-_.
 
-Form note. The final prose keeps the citation form _swealwe_ separate from two different kinds of background material: the unrelated verb _swelgan_, and later or oblique spellings such as _swaluwe_ or _swalewan_ [@ClarkHall1960; @Campbell1959].
+Form note. The final prose keeps the citation form _swealwe_ separate from two different kinds of background material: the unrelated verb _swelgan_, and later or oblique spellings such as _swaluwe_ or _swalewan_ [@ClarkHall1960, 299; @Campbell1959].
 
 ### swine — OE swīn
 
@@ -2645,7 +2645,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*swī́n} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*swina-_ 'pig' [@Kroonen2013]. The selected comparative form here is the bare neuter citation cell _\*swī́ną_, which matches the singular noun aimed at in Old English rather than an oblique stem form. Clark Hall records _swin (y)_ as the ordinary noun headword [@ClarkHall1960]. From selected input _\*swī́ną_, loss of the final nasal vowel yields _swīn_.
+Kroonen cites the noun as _\*swina-_ 'pig' [@Kroonen2013, 542]. The selected comparative form here is the bare neuter citation cell _\*swī́ną_, which matches the singular noun aimed at in Old English rather than an oblique stem form. Clark Hall records _swin (y)_ as the ordinary noun headword [@ClarkHall1960, 301]. From selected input _\*swī́ną_, loss of the final nasal vowel yields _swīn_.
 
 Source note. The selected input writes stressed long _ī_ as _\*ī́_, so comparative _\*swī́ną_ and derivational _\*swī́ną_ represent the same lexical form.
 
@@ -2740,7 +2740,7 @@ PWGmc Final Bare A Loss & \emph{*θórn} \\
 }
 \endgroup
 
-Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz_ ~ _\*þurnaz_ [@Kroonen2013; @Orel2003]. The selected input _\*θúrnaz_ belongs to that same comparative family. Bright lists _þorn_, m., and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960]. The inherited stem shows regular lowering of _u_ to _o_ before _r_, and final loss yields _þorn_.
+Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz_ ~ _\*þurnaz_ [@Kroonen2013, 33; @Orel2003]. The selected input _\*θúrnaz_ belongs to that same comparative family. Bright lists _þorn_, m., and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971, 450; @ClarkHall1960, 327]. The inherited stem shows regular lowering of _u_ to _o_ before _r_, and final loss yields _þorn_.
 
 Source note. The comparative sources preserve more than one stem formation, but the Old English target itself is simply the citation form _þorn_.
 
@@ -2786,7 +2786,7 @@ Derivation: citation reconstruction _\*tī́diz_; selected input _\*tī́diz_ > 
 }
 \endgroup
 
-Kroonen gives _\*tīdi-_ 'time', and Orel's _\*tīđiz_ points to the same feminine noun [@Kroonen2013; @Orel2003]. The related verb _tīdan_ is separate. Bright records _tīd_ with singular _tīde_ and plural _tīda_, and Clark Hall treats _tīd_ as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971; @ClarkHall1960, 309]. From _\*tī́diz_, final _z_ is lost and the high final vowel drops, leaving _tīd_. The note matters only because English *tide* can pull in the separate weak verb _tīdan_; the noun targeted here is _tīd_.
+Kroonen gives _\*tīdi-_ 'time', and Orel's _\*tīđiz_ points to the same feminine noun [@Kroonen2013, 556; @Orel2003, 446]. The related verb _tīdan_ is separate. Bright records _tīd_ with singular _tīde_ and plural _tīda_, and Clark Hall treats _tīd_ as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971, 444; @ClarkHall1960, 309]. From _\*tī́diz_, final _z_ is lost and the high final vowel drops, leaving _tīd_. The note matters only because English *tide* can pull in the separate weak verb _tīdan_; the noun targeted here is _tīd_.
 
 ### token — OE tācn
 
@@ -2922,7 +2922,7 @@ OE Weak Tail Reduction & \emph{*wadan} \\
 }
 \endgroup
 
-Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes _wadan_ among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914, 239]. Clark Hall gives _wadan_ as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960; @BrightCassidyRingler1971]. From _\*wádaną_, Anglo-Frisian brightening first gives _\*wædaną_. This infinitive belongs to the A-restoration class. The citation form is therefore _wadan_, not a fronted _wæden_-type output.
+Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes _wadan_ among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914, 239]. Clark Hall gives _wadan_ as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960, 353; @BrightCassidyRingler1971, 456]. From _\*wádaną_, Anglo-Frisian brightening first gives _\*wædaną_. This infinitive belongs to the A-restoration class. The citation form is therefore _wadan_, not a fronted _wæden_-type output.
 
 ### warp — OE weorpan
 
@@ -3062,7 +3062,7 @@ OE Xs Merge & \emph{*weaXSan} \\
 }
 \endgroup
 
-Kroonen cites the verb as _\*wahs(j)an-_, Orel as _\*waxsanan_, and Ringe and Taylor discuss the prehistory of Old English _weaxan_ within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014]. Clark Hall gives _weaxan_ as the verb headword and separately records bare _wax_ as a preterite form; Bright likewise treats _weaxan_ as the infinitive [@ClarkHall1960; @BrightCassidyRingler1971]. From _\*wáxsaną_, brightening and breaking yield _weax-_, and the infinitive develops regularly to _weaxan_. The selected form is the infinitive _weaxan_. Noun _weax_ and preterite wax/_wēox_ belong to different lexical or paradigm slots.
+Kroonen cites the verb as _\*wahs(j)an-_, Orel as _\*waxsanan_, and Ringe and Taylor discuss the prehistory of Old English _weaxan_ within the same verbal family [@Kroonen2013, 606; @Orel2003, 478; @RingeTaylor2014]. Clark Hall gives _weaxan_ as the verb headword and separately records bare _wax_ as a preterite form; Bright likewise treats _weaxan_ as the infinitive [@ClarkHall1960, 358; @BrightCassidyRingler1971, 458]. From _\*wáxsaną_, brightening and breaking yield _weax-_, and the infinitive develops regularly to _weaxan_. The selected form is the infinitive _weaxan_. Noun _weax_ and preterite wax/_wēox_ belong to different lexical or paradigm slots.
 
 ### way — OE weġ
 
@@ -3340,7 +3340,7 @@ OE Velar Palatalization & \emph{*ʤearn} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain _\*garna_ > _\*geern_ > _\*gearn_ > OE _gearn_ [@Kroonen2013; @RingeTaylor2014, 220]. Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses _gearn_ as _filatum_ [@ClarkHall1960; @BosworthToller1898]. From _\*gárną_, brightening and breaking before _rn_ yield _gearn_; palatalization of initial _g_ before the resulting front-vocalic sequence gives normalized _ġearn_.
+Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain _\*garna_ > _\*geern_ > _\*gearn_ > OE _gearn_ [@Kroonen2013, 209; @RingeTaylor2014, 220]. Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses _gearn_ as _filatum_ [@ClarkHall1960, 145; @BosworthToller1898]. From _\*gárną_, brightening and breaking before _rn_ yield _gearn_; palatalization of initial _g_ before the resulting front-vocalic sequence gives normalized _ġearn_.
 
 Form note. Dictionary _gearn_ and normalized _ġearn_ refer to the same noun. The comparative stem _\*garna-_ and oblique _\*garnăn_ do not replace the selected input _\*gárną_.
 
@@ -4438,9 +4438,9 @@ and cross-refers to _fylgan_, while also listing _fylgan_ with variant spellings
 _fylgian_ and _fyligan_ [@ClarkHall1960]. Bosworth-Toller likewise has separate
 entries for _folgian_ and _fylgean_ [@BosworthToller1898].
 
-Bright treats _fylg(e)an_ as a survival of the older conjugation and contrasts
-it with forms that have conformed to the Second Conjugation, _folgian, folgode_
-[@BrightCassidyRingler1971]. The relevant comparison form in this entry is
+Bright notes traces of the older conjugation in _fylg(e)an_
+[@BrightCassidyRingler1971, 77] and lists _folgian (fylgean)_ in the glossary
+[@BrightCassidyRingler1971, 364]. The relevant comparison form in this entry is
 therefore the class-I verb _fylgan_ / _fylgean_, here normalized as _fylġan_.
 The spelling with ġ represents the palatalized velar before a front-vocalic
 environment.
@@ -6077,7 +6077,7 @@ genitive singular _\*swánas_ > _swanes_.
 Old English dictionaries give the ordinary headword as _swan_
 [@ClarkHall1960]. Bright's glossary, however, also records the exact inflected
 form _swanes_; it glosses the noun as _swan, m._ with genitive singular _swanes_
-and cites the phrase _swanes feðre_ [@BrightCassidyRingler1971].
+and cites the phrase _swanes feðre_ [@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
 reconstruction. It is also not the ordinary citation lemma. The entry must keep
@@ -6432,7 +6432,7 @@ comparator is the inherited nominative-accusative singular _\*wátōr_.
 
 Bright gives the noun as _wæter_ with the regular paradigm
 _wæteres_, _wætere_, _wæter(u)_, _wætera_, _wæterum_
-[@BrightCassidyRingler1971]. Ringe and Taylor add the dialectal contrast
+[@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
 between West Saxon _weeter_ and Mercian _weter_
 [@RingeTaylor2014, §6.5.2].
 

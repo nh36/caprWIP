@@ -53,3 +53,5 @@
 2. Review should confirm that a paradigm-cell entry is desirable here, since the
    citation-form derivation `*swánaz -> swan` is also regular and well
    supported.
+
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.

@@ -52,3 +52,5 @@
    heteroclitic singular comparator **`*wátōr`**.
 2. Dialectal **`weter`** background should remain visible without displacing the
    selected West-Saxon-facing target **`wæter`**.
+
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.

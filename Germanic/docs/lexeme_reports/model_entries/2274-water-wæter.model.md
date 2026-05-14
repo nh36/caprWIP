@@ -31,7 +31,7 @@ comparator is the inherited nominative-accusative singular **`*wátōr`**.
 
 Bright gives the noun as **`wæter`** with the regular paradigm
 **`wæteres, wætere, wæter(u), wætera, wæterum`**
-[@BrightCassidyRingler1971]. Ringe and Taylor add the dialectal contrast
+[@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
 between West Saxon **`weeter`** and Mercian **`weter`**
 [@RingeTaylor2014, §6.5.2].
 

@@ -37,9 +37,9 @@ and cross-refers to `fylgan`, while also listing `fylgan` with variant spellings
 `fylgian` and `fyligan` [@ClarkHall1960]. Bosworth-Toller likewise has separate
 entries for `folgian` and `fylgean` [@BosworthToller1898].
 
-Bright treats `fylg(e)an` as a survival of the older conjugation and contrasts
-it with forms that have conformed to the Second Conjugation, `folgian, folgode`
-[@BrightCassidyRingler1971]. The relevant comparison form in this entry is
+Bright notes traces of the older conjugation in `fylg(e)an`
+[@BrightCassidyRingler1971, 77] and lists `folgian (fylgean)` in the glossary
+[@BrightCassidyRingler1971, 364]. The relevant comparison form in this entry is
 therefore the class-I verb `fylgan / fylgean`, here normalized as `fylġan`.
 The spelling with ġ represents the palatalized velar before a front-vocalic
 environment.

@@ -76,3 +76,5 @@
    claim.
 2. The normalized `<ġ>` in `fylġan` reflects project orthographic practice; the
    source forms themselves appear mainly as `fylgan` and `fylgean`.
+
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.

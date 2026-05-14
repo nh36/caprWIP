@@ -63,6 +63,8 @@ Checked against `docs/refs.bib`:
   precise than the heteroclitic stem notation and the selected singular input.
 - Dialectal `weter/weeter` remains useful background but not the selected target.
 
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

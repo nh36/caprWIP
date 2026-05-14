@@ -60,6 +60,8 @@ Checked against `docs/refs.bib`:
 - No row-specific automatic probe artifact exists beyond the current manual
   citation-form/genitive contrast.
 
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography

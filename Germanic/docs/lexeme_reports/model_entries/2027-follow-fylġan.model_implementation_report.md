@@ -70,6 +70,8 @@ Citation keys used in the follow model entry were checked against `docs/refs.bib
   mismatch `*fulgēną -> folgon` comes from the checked local analysis rather than
   from the compact trace itself.
 
+Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+
 ## Scope confirmation
 
 - No TSV files were changed.
