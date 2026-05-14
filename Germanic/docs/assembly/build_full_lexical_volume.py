@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import re
 import sys
 from collections import Counter
@@ -13,7 +14,6 @@ REPO_ROOT = SCRIPT_DIR.parents[2]
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 INTRO_PATH = SCRIPT_DIR / "section_introductions_draft.md"
 TRACE_REPORT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
-OUTPUT_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
 INLINE_CODE_RE = re.compile(r"`([^`]+)`")
 BOLD_SPAN_RE = re.compile(r"\*\*(.+?)\*\*")
 ITALIC_SPAN_RE = re.compile(r"_(?:\\.|[^_\n])+_")
@@ -66,6 +66,18 @@ FRONT_MATTER_HEADINGS = {
     "Transducer and derivation method": "Transducer and derivation method",
     "Derivation classes": "Derivation classes",
 }
+
+
+def env_path(name: str) -> Path | None:
+    raw = os.environ.get(name)
+    if not raw:
+        return None
+    path = Path(raw)
+    return path if path.is_absolute() else SCRIPT_DIR / path
+
+
+OUTPUT_PATH = env_path("LEXICAL_VOLUME_OUTPUT_MD") or (SCRIPT_DIR / "lexical_volume_alpha_01.md")
+REGULAR_BOOK_PROSE_DIR = env_path("LEXICAL_REGULAR_BOOK_PROSE_DIR")
 
 
 def parse_trace_entries(text: str) -> list[dict[str, str]]:
@@ -780,6 +792,35 @@ def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) 
     return "\n".join(out).strip()
 
 
+def book_prose_path(entry_path: Path, prose_dir: Path) -> Path:
+    return prose_dir / entry_path.name.replace(".model.md", ".book.md")
+
+
+def rewrite_book_prose_entry(model: dict[str, object], trace_entry: dict[str, str] | None, body: str) -> str:
+    out: list[str] = [f"### {model['title']}", "", derivation_summary(model, trace_entry)]
+    if trace_entry is not None:
+        out.extend(["", *render_trace_table(trace_entry)])
+    if body.strip():
+        out.extend(["", body.strip()])
+    return "\n".join(out).strip()
+
+
+def render_entry(
+    model: dict[str, object],
+    trace_entry: dict[str, str] | None,
+    *,
+    entry_path: Path,
+    regular_book_prose_dir: Path | None,
+) -> str:
+    if model["metadata"].get("DERIVATION_CLASS") == "regular" and regular_book_prose_dir is not None:
+        prose_path = book_prose_path(entry_path, regular_book_prose_dir)
+        if not prose_path.exists():
+            raise FileNotFoundError(f"missing regular book prose file: {prose_path}")
+        body = prose_path.read_text(encoding="utf-8")
+        return rewrite_book_prose_entry(model, trace_entry, body)
+    return rewrite_entry(model, trace_entry)
+
+
 def parse_section_introductions(path: Path) -> dict[str, str]:
     text = path.read_text(encoding="utf-8")
     sections: dict[str, str] = {}
@@ -800,11 +841,27 @@ def parse_section_introductions(path: Path) -> dict[str, str]:
     return sections
 
 
-def build_front_matter(counts: Counter[str], intro_sections: dict[str, str]) -> list[str]:
+def build_front_matter(
+    counts: Counter[str],
+    intro_sections: dict[str, str],
+    *,
+    regular_book_prose_dir: Path | None,
+) -> list[str]:
+    compact_regular_active = regular_book_prose_dir is not None
+    alpha_blurb = (
+        "_Alpha 01 compact-regular assembly scaffold. This document assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer requested for rollout; non-regular entries retain the current model-entry prose._"
+        if compact_regular_active
+        else "_Alpha 01 assembly scaffold. This document assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._"
+    )
+    method_paragraph = (
+        "Regular entries use the compact book-prose overlay for this assembly pass, while the remaining derivation classes still reproduce the current model-entry prose. All entries retain a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes."
+        if compact_regular_active
+        else "Each lexical entry retains the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current model-entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data."
+    )
     lines = [
         "# Germanic Lexeme Reports: Lexical Derivation Volume",
         "",
-        "_Alpha 01 assembly scaffold. This document assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._",
+        alpha_blurb,
         "",
         "## Introduction",
         "",
@@ -820,7 +877,7 @@ def build_front_matter(counts: Counter[str], intro_sections: dict[str, str]) -> 
         "",
         "## Transducer and derivation method",
         "",
-        "Each lexical entry retains the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current model-entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data.",
+        method_paragraph,
         "",
         "## Derivation classes",
         "",
@@ -849,11 +906,23 @@ def main() -> int:
         manifest_rows = list(csv.DictReader(handle, delimiter="\t"))
 
     counts = Counter(row["class_bucket"] for row in manifest_rows)
-    parts: list[str] = build_front_matter(counts, intro_sections)
+    parts: list[str] = build_front_matter(counts, intro_sections, regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR)
 
     rows_by_bucket: dict[str, list[dict[str, str]]] = {}
     for bucket, _, _ in SECTION_ORDER:
         rows_by_bucket[bucket] = [row for row in manifest_rows if row["class_bucket"] == bucket]
+
+    if REGULAR_BOOK_PROSE_DIR is not None:
+        if not REGULAR_BOOK_PROSE_DIR.exists():
+            raise FileNotFoundError(f"regular book prose directory not found: {REGULAR_BOOK_PROSE_DIR}")
+        missing_regular = [
+            str(book_prose_path(REPO_ROOT / row["model_entry_path"], REGULAR_BOOK_PROSE_DIR))
+            for row in rows_by_bucket["regular"]
+            if not book_prose_path(REPO_ROOT / row["model_entry_path"], REGULAR_BOOK_PROSE_DIR).exists()
+        ]
+        if missing_regular:
+            missing_list = "\n".join(missing_regular)
+            raise FileNotFoundError(f"missing regular book prose files:\n{missing_list}")
 
     for bucket, part_heading, intro_heading in SECTION_ORDER:
         parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", intro_sections[intro_heading]])
@@ -869,7 +938,17 @@ def main() -> int:
                     f"Matched {entry_path.name} -> {trace_entry['title']} / {trace_entry['proto']} / {trace_entry['outputs']} ({basis})",
                     file=sys.stderr,
                 )
-            parts.extend(["", rewrite_entry(model, trace_entry)])
+            parts.extend(
+                [
+                    "",
+                    render_entry(
+                        model,
+                        trace_entry,
+                        entry_path=entry_path,
+                        regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR,
+                    ),
+                ]
+            )
 
     append_references_scaffold(parts)
     OUTPUT_PATH.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")

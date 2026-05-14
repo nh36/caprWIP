@@ -1,0 +1,3 @@
+Kroonen cites _\*taikna-_ and Orel _\*taiknan_ for the noun 'sign, token' [@Kroonen2013; @Orel2003, 438]. The selected input _\*táikną_ is the simple citation-form noun used for the derivation. Campbell and Sievers-Brunner preserve both unbroken _tācn_ and broken _tācen_, with oblique _tācnes_ remaining unbroken [@Campbell1959; @SieversBrunner1965]. Monophthongization of _ai_ yields _ā_, and loss of the final nasal vowel leaves _tācn_.
+
+Form note. _tācn_ is the attested unbroken citation form selected here. Later West Saxon prose often prefers _tācen_, but that does not displace the older unbroken form [@Campbell1959; @SieversBrunner1965].

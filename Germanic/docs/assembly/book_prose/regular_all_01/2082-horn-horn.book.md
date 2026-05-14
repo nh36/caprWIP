@@ -1,0 +1,3 @@
+Kroonen and Orel cite lemma-style Proto-Germanic headwords of the _\*hurna-_ / _\*xurnan_ type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input _\*xúrną_ is the nominative-style form used in the derivation here. Clark Hall, Bosworth-Toller, and Bright all record _horn_ as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898, 108; @BrightCassidyRingler1971]. From _\*xúrną_, Northwest Germanic u-lowering gives _\*xórną_, and later loss of the final nasal leaves _horn_.
+
+Form note. The note's oblique _\*xurnăn_ belongs to comparative stem background only. It does not replace the selected input _\*xúrną_ as the derivational form used here [@Kroonen2013; @Orel2003, 234].

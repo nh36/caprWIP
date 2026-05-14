@@ -1,0 +1,3 @@
+Ringe and Taylor place the verb in a class-II weak family of the _\*liznō-_ type, and Kroonen keeps the same comparative base [@RingeTaylor2014, 318; @Kroonen2013, 328]. Campbell records Northumbrian _liornian_ and treats the _eo_ of _leornian_ as secondary [@Campbell1959, 123; @Campbell1959, 296]. The Northumbrian spelling preserves _io_ where original _eo_ and _io_ remain distinct. The selected target _liornian_ therefore represents the Northumbrian regular form.
+
+Dialect note. Clark Hall and Bright give _leornian_ as the usual headword [@ClarkHall1960, 193; @BrightCassidyRingler1971, 58]. From _\*líznōjaną_, the regular development yields _liornian_; _leornian_ reflects the later _eo_ development.
