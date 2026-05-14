@@ -1,0 +1,3 @@
+Kroonen reconstructs a double-stem noun _\*wēbna- ~ wēpna-_ and cites Old English _wæpn_ among the reflexes [@Kroonen2013, 617; @Campbell1959, 150; @Campbell1959, 226]. Campbell preserves unbroken _wépn_ beside broken _wépen_-type forms. Bright contrasts broken _wǣpen/wapen_ with unbroken _wǣpnes_, and Clark Hall lemmatizes the noun under _wapen_ while preserving unbroken forms elsewhere [@BrightCassidyRingler1971, 29; @ClarkHall1960, 355]. The selected form _wǣpn_ represents the unbroken line from _\*wḗpną_.
+
+Form note. _Wǣpen_ is the usual late West Saxon simplex headword, while _wǣpnes_ and related forms preserve the unbroken cluster [@Campbell1959, 150; @Campbell1959, 226; @BrightCassidyRingler1971, 29; @ClarkHall1960, 355].

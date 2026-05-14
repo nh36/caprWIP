@@ -1,0 +1,3 @@
+Campbell and Ringe and Taylor treat this as an ordinary i-stem whose West Saxon development yields _ġiest_, while non-West-Saxon evidence preserves forms of the _gest_ type [@Campbell1959, 91; @RingeTaylor2014, 296]. Bosworth-Toller and Clark Hall record spellings such as _gist_, _gest_, _giest_, and _gyst_ [@BosworthToller1898, 387; @ClarkHall1960, 149]. The derivation is regular: brightening and i-mutation reshape the stem, and West Saxon palatal diphthongization gives _ie_.
+
+Dialect note. Anglian _gest_ is genuine Old English evidence alongside West Saxon _ġiest_ [@RingeTaylor2014, 296; @BosworthToller1898, 387].
