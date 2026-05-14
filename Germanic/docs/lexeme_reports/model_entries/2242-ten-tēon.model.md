@@ -38,7 +38,7 @@ West Saxon **`tēn`**, and late Northumbrian **`tēo, tēa`**
 Exact simplex **`tēon`** is weaker as a directly cited headword than those
 spellings. The un-umlauted stem is, however, explicit in **`tēoða`** and
 **`-tēontig`** [@SieversBrunner1965, §129.2; @Fulk2018, §10.2]. The comparison
-form **`tēon`** is therefore a **normalized spelling** of that un-umlauted base.
+form `tēon` is therefore a normalized spelling of that un-umlauted base.
 
 ### Development to Old English
 

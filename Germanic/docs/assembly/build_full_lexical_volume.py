@@ -35,7 +35,7 @@ STAGE_LABELS = {
     "West Germanic",
     "Northwest Germanic",
 }
-INLINE_SEPARATOR_CHARS = ">,~/;:"
+INLINE_SEPARATOR_CHARS = "<>,~/;:"
 LONG_TRACE_FORM_LENGTH = 9
 VERY_LONG_TRACE_FORM_LENGTH = 10
 DENSE_TRACE_PANEL_ROWS = 6
@@ -184,10 +184,15 @@ def tokenize_linguistic_span(text: str) -> list[tuple[str, str]]:
     return tokens
 
 
-def next_meaningful_token(tokens: list[tuple[str, str]], start: int) -> tuple[str, str] | None:
-    for token in tokens[start:]:
-        if token[0] != "sep":
-            return token
+def next_non_whitespace_token(
+    tokens: list[tuple[str, str]], start: int, step: int
+) -> tuple[str, str] | None:
+    index = start
+    while 0 <= index < len(tokens):
+        kind, value = tokens[index]
+        if kind != "sep" or value.strip():
+            return tokens[index]
+        index += step
     return None
 
 
@@ -203,9 +208,9 @@ def is_form_token(token: str, previous: tuple[str, str] | None, following: tuple
     if re.fullmatch(r"[a-z]+(?:[-'][a-z]+)*", token):
         if previous is not None and previous[0] == "label":
             return True
-        if previous is not None and previous[1] in {">", "~", "/"}:
+        if previous is not None and previous[0] == "sep" and previous[1] in {"<", ">", "~", "/"}:
             return True
-        if following is not None and following[1] in {">", "~", "/"}:
+        if following is not None and following[0] == "sep" and following[1] in {"<", ">", "~", "/"}:
             return True
     return False
 
@@ -224,8 +229,8 @@ def format_linguistic_inline_code(text: str) -> str:
             rendered.append(value)
             continue
 
-        previous = next((tokens[j] for j in range(index - 1, -1, -1) if tokens[j][0] != "sep"), None)
-        following = next_meaningful_token(tokens, index + 1)
+        previous = next_non_whitespace_token(tokens, index - 1, -1)
+        following = next_non_whitespace_token(tokens, index + 1, 1)
         if is_form_token(value, previous, following):
             rendered.append(italicize_form(value))
             saw_form = True

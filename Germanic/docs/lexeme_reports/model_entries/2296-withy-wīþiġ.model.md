@@ -35,8 +35,8 @@ formation choice rather than a mere respelling of the comparative headword.
 ### Old English evidence
 
 Clark Hall records the noun as `wiðig`, with related inflected forms of the
-same lexical base [@ClarkHall1960]. The form used here, **`wīþiġ`**, is a
-normalized Old English spelling with macrons and palatal `<ġ>`.
+same lexical base [@ClarkHall1960]. The form used here, `wīþiġ`, is a
+normalized Old English spelling with macrons and palatal ġ marked explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
