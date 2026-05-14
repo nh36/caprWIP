@@ -318,7 +318,7 @@ OE I Umlaut & \emph{*byrdi} \\
 }
 \endgroup
 
-Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)byrd_ among the reflexes [@Kroonen2013]. The selected input _\*búrdiz_ is the nominative-style form that stands behind that stem label. Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. From _\*búrdiz_, loss of final _z_ gives _\*búrdi_.
+Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)byrd_ among the reflexes [@Kroonen2013, 122]. The selected input _\*búrdiz_ is the nominative-style form that stands behind that stem label. Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960, 70; @BosworthToller1898, 125]. From _\*búrdiz_, loss of final _z_ gives _\*búrdi_.
 
 Form note. The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992].
 
@@ -364,7 +364,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*bān} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_. Clark Hall and Bosworth-Toller record _bān_ as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_.
+Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013, 86; @Orel2003, 71]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_. Clark Hall and Bosworth-Toller record _bān_ as the ordinary Old English noun [@ClarkHall1960, 44; @BosworthToller1898]. West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_.
 
 Source note. The comparative headwords _\*baina-_ and _\*bainan_ provide lexeme background. The relevant comparison form here is the nominative-accusative singular _\*báiną_.
 
@@ -1298,9 +1298,9 @@ OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 }
 \endgroup
 
-Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997; @RingeTaylor2014]. Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
+Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997, 224; @RingeTaylor2014]. Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960, 158; @ClarkHall1960, 171]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
 
-Source note. The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
+Source note. The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997, 230; @RingeTaylor2014].
 
 ### hedge — OE heġġ
 
@@ -1398,9 +1398,9 @@ OE Velar Fricative Palatalization & \emph{*çélm} \\
 }
 \endgroup
 
-Kroonen cites the helmet noun as _\*helma-_ and separately distinguishes a different lexeme _\*helman-_ 'rudder' [@Kroonen2013]. The selected input _\*xélmaz_ is the nominative-style form used for the helmet noun itself. Clark Hall and Bosworth-Toller record _helm_ as the ordinary Old English noun for 'helmet', while _helma_ belongs to a separate rudder lexeme [@ClarkHall1960; @BosworthToller1898, 542]. From _\*xélmaz_, loss of final _z_ and later loss of the short final vowel yield _helm_.
+Kroonen cites the helmet noun as _\*helma-_ and separately distinguishes a different lexeme _\*helman-_ 'rudder' [@Kroonen2013, 259]. The selected input _\*xélmaz_ is the nominative-style form used for the helmet noun itself. Clark Hall and Bosworth-Toller record _helm_ as the ordinary Old English noun for 'helmet', while _helma_ belongs to a separate rudder lexeme [@ClarkHall1960, 168; @BosworthToller1898, 542]. From _\*xélmaz_, loss of final _z_ and later loss of the short final vowel yield _helm_.
 
-Form note. Comparative _\*helma-_ is headword notation for the helmet cognate set. It should not be confused with Old English _helma_, which is a different noun meaning 'helm, rudder' [@Kroonen2013; @ClarkHall1960].
+Form note. Comparative _\*helma-_ is headword notation for the helmet cognate set. It should not be confused with Old English _helma_, which is a different noun meaning 'helm, rudder' [@Kroonen2013, 259; @ClarkHall1960, 168].
 
 ### help — OE helpan
 
@@ -1445,9 +1445,9 @@ OE Weak Tail Reduction & \emph{*çélpan} \\
 }
 \endgroup
 
-The entry treats the strong verb itself rather than the separate noun _help_. Bright's principal parts _helpan, healp, hulpon, holpen_ show the ordinary Old English strong-verb family continued by this input [@BrightCassidyRingler1971]. Clark Hall and Bosworth-Toller record _helpan_ as the verbal headword 'to help' [@ClarkHall1960; @BosworthToller1898, 542]. From _\*xélpaną_, no special repair is needed beyond the ordinary reduction of the infinitive ending.
+The entry treats the strong verb itself rather than the separate noun _help_. Bright's principal parts _helpan, healp, hulpon, holpen_ show the ordinary Old English strong-verb family continued by this input [@BrightCassidyRingler1971, 57]. Clark Hall and Bosworth-Toller record _helpan_ as the verbal headword 'to help' [@ClarkHall1960, 168; @BosworthToller1898, 542]. From _\*xélpaną_, no special repair is needed beyond the ordinary reduction of the infinitive ending.
 
-Form note. Noun _help_ belongs to a separate lexical line and should not replace verbal _helpan_ as the target here [@ClarkHall1960; @BosworthToller1898, 542].
+Form note. Noun _help_ belongs to a separate lexical line and should not replace verbal _helpan_ as the target here [@ClarkHall1960, 168; @BosworthToller1898, 542].
 
 ### hind — OE hind
 
@@ -1494,9 +1494,9 @@ OE J Loss After Heavy & \emph{*çind} \\
 }
 \endgroup
 
-Kroonen cites the animal name as _\*hindō-_ f. 'hind' [@Kroonen2013]. The selected input _\*xéndjō_ represents that same noun in the present derivation. Clark Hall and Bosworth-Toller record _hind_ as the noun 'hind, female deer' [@ClarkHall1960; @BosworthToller1898, 554]. From _\*xéndjō_, i-mutation produces the front-vocalic Old English stem, and later apocope plus loss of final _j_ yield _hind_.
+Kroonen cites the animal name as _\*hindō-_ f. 'hind' [@Kroonen2013, 266]. The selected input _\*xéndjō_ represents that same noun in the present derivation. Clark Hall and Bosworth-Toller record _hind_ as the noun 'hind, female deer' [@ClarkHall1960, 173; @BosworthToller1898, 554]. From _\*xéndjō_, i-mutation produces the front-vocalic Old English stem, and later apocope plus loss of final _j_ yield _hind_.
 
-Form note. _hindan_ 'from behind, behind' is a different Old English lexeme and does not belong to the noun history of _hind_ [@ClarkHall1960; @BosworthToller1898, 554].
+Form note. _hindan_ 'from behind, behind' is a different Old English lexeme and does not belong to the noun history of _hind_ [@ClarkHall1960, 173; @BosworthToller1898, 554].
 
 ### hold — OE healdan
 
@@ -1543,7 +1543,7 @@ OE Weak Tail Reduction & \emph{*çealdan} \\
 }
 \endgroup
 
-Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959; @RingeTaylor2014]. Bright gives the ordinary strong-verb citation form and principal parts _healdan, heold, heoldon, healden_ [@BrightCassidyRingler1971]. From _\*xáldaną_, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces _ea_ before _ld_.
+Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959; @RingeTaylor2014]. Bright gives the ordinary strong-verb citation form and principal parts _healdan, heold, heoldon, healden_ [@BrightCassidyRingler1971, 62]. From _\*xáldaną_, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces _ea_ before _ld_.
 
 Dialect note. West Saxon _healdan_ is the selected target here. Anglian and Mercian _haldan_ are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
 
@@ -1783,9 +1783,9 @@ OE J Loss After Heavy & \emph{*līextan} \\
 }
 \endgroup
 
-Fulk gives Proto-Germanic _\*liuxtijanan_ with Old English _līehtan_ 'illuminate', and Ringe and Taylor likewise derive West Saxon _liehtan_ from the same weak-verb formation [@Fulk2018; @RingeTaylor2014]. Clark Hall and Bosworth-Toller preserve the verb family under spellings such as _liehtan_, _lihtan_, and _līhtan_, distinct from the related noun _lēoht_ and adjective _leoht/liht_ [@ClarkHall1960; @BosworthToller1898]. From _\*léuxtijaną_, the regular verbal line preserves _\*xt_, passes through a West Saxon _liehtan_ stage, and is represented here by normalized _līehtan_.
+Fulk gives Proto-Germanic _\*liuxtijanan_ with Old English _līehtan_ 'illuminate', and Ringe and Taylor likewise derive West Saxon _liehtan_ from the same weak-verb formation [@Fulk2018, 81; @RingeTaylor2014, 264]. Clark Hall and Bosworth-Toller preserve the verb family under spellings such as _liehtan_, _lihtan_, and _līhtan_, distinct from the related noun _lēoht_ and adjective _leoht/liht_ [@ClarkHall1960, 204; @BosworthToller1898]. From _\*léuxtijaną_, the regular verbal line preserves _\*xt_, passes through a West Saxon _liehtan_ stage, and is represented here by normalized _līehtan_.
 
-Dialect note. Ringe and Taylor and Campbell distinguish West Saxon _liehtan_ from Anglian _lihtan_, while later West Saxon also shows _lyhtan_ [@RingeTaylor2014; @Campbell1959].
+Dialect note. Ringe and Taylor and Campbell distinguish West Saxon _liehtan_ from Anglian _lihtan_, while later West Saxon also shows _lyhtan_ [@RingeTaylor2014, 264; @Campbell1959].
 
 ### linden — OE lind
 
@@ -1874,9 +1874,9 @@ OE Back Mutation & \emph{*méolok} \\
 }
 \endgroup
 
-Kroonen and Orel reconstruct the noun as _\*meluk-_ / _\*melukz_, and the nominative-style input used here is _\*mélukz_ [@Kroonen2013; @Orel2003, 306]. Old English preserves a mixed dossier for this noun. The unsyncopated line from _\*mélukz_ loses final _\*z_, lowers unstressed _u_ to _o_, and with back mutation yields _meoloc_.
+Kroonen and Orel reconstruct the noun as _\*meluk-_ / _\*melukz_, and the nominative-style input used here is _\*mélukz_ [@Kroonen2013, 404; @Orel2003, 306]. Old English preserves a mixed dossier for this noun. The unsyncopated line from _\*mélukz_ loses final _\*z_, lowers unstressed _u_ to _o_, and with back mutation yields _meoloc_.
 
-Comparison note. Syncopated _meolc_ and Anglian _milc_ belong to the competing leveled tradition associated with oblique forms, whereas _meoloc / meoluc_ preserves the fuller nominal shape [@Campbell1959; @RingeTaylor2014].
+Comparison note. Syncopated _meolc_ and Anglian _milc_ belong to the competing leveled tradition associated with oblique forms, whereas _meoloc / meoluc_ preserves the fuller nominal shape [@Campbell1959; @RingeTaylor2014, 268].
 
 ### mother — OE mōder
 
@@ -2163,7 +2163,7 @@ OE Med Unstressed I Lowering & \emph{*ʃílling} \\
 }
 \endgroup
 
-Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960; @Campbell1959]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
+Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003, 377]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960, 269; @Campbell1959]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
 
 Form note. Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here [@Kroonen2013].
 
