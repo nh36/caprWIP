@@ -506,7 +506,7 @@ OE I Umlaut & \emph{*brēʧi} \\
 }
 \endgroup
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmce _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _brēc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014].
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014].
 
 ### calf — OE ċealf
 
@@ -1273,7 +1273,7 @@ Derivation: _\*xárbistuz_ > _hierfest_ (regular).
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*xárbistu} \\
+PGmc Final Z Deletion & \emph{*xárbistu} \\
 \end{tabular}
 \end{minipage}
 &
@@ -1288,7 +1288,7 @@ OE Breaking & \emph{*xearbistu} \\
 OE Velar Fricative Palatalization & \emph{*çearbistu} \\
 PGmc B Allophony & \emph{*çearβistu} \\
 OE I Umlaut & \emph{*çierβistu} \\
-\mbox{OE High Vowel Apocope} & \emph{*çierβist} \\
+OE High Vowel Apocope & \emph{*çierβist} \\
 OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 \end{tabular}
 \end{minipage}
@@ -1351,7 +1351,7 @@ OE J Loss After Heavy & \emph{*çeʤʤ} \\
 }
 \endgroup
 
-The selected input models a palatal _\*-gj-\*_ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959]. Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ / _heċġ_ [@BosworthToller1898; @ClarkHall1960]. From _\*xágjaz_, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_.
+The selected input models a palatal _\*-gj-_ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959]. Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ / _heċġ_ [@BosworthToller1898; @ClarkHall1960]. From _\*xágjaz_, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_.
 
 Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
 
@@ -2141,7 +2141,7 @@ Derivation: _\*skíllingaz_ > _sċilling_ (regular).
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*skíllinga} \\
+PGmc Final Z Deletion & \emph{*skíllinga} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2607,7 +2607,7 @@ Form note. The final prose keeps the citation form _swealwe_ separate from two d
 
 ### swine — OE swīn
 
-Derivation: citation reconstruction _\*swī́ną_; selected input _\*swḯną_ > _swīn_ (regular).
+Derivation: citation reconstruction _\*swī́ną_; selected input _\*swī́ną_ > _swīn_ (regular).
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -2636,7 +2636,7 @@ Derivation: citation reconstruction _\*swī́ną_; selected input _\*swḯną_ >
 \vspace{0.35em}
 \raggedright
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
-OE Heavy Syllable Nasal Apocope & \emph{*swḯn} \\
+OE Heavy Syllable Nasal Apocope & \emph{*swī́n} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -2645,9 +2645,9 @@ OE Heavy Syllable Nasal Apocope & \emph{*swḯn} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*swina-_ 'pig' [@Kroonen2013]. The selected comparative form here is the bare neuter citation cell _\*swī́ną_, which matches the singular noun aimed at in Old English rather than an oblique stem form. Clark Hall records _swin (y)_ as the ordinary noun headword [@ClarkHall1960]. From selected input _\*swḯną_, loss of the final nasal vowel yields _swīn_.
+Kroonen cites the noun as _\*swina-_ 'pig' [@Kroonen2013]. The selected comparative form here is the bare neuter citation cell _\*swī́ną_, which matches the singular noun aimed at in Old English rather than an oblique stem form. Clark Hall records _swin (y)_ as the ordinary noun headword [@ClarkHall1960]. From selected input _\*swī́ną_, loss of the final nasal vowel yields _swīn_.
 
-Source note. The selected input writes stressed long _ī_ as _\*ḯ_, so comparative _\*swī́ną_ and derivational _\*swḯną_ represent the same lexical form.
+Source note. The selected input writes stressed long _ī_ as _\*ī́_, so comparative _\*swī́ną_ and derivational _\*swī́ną_ represent the same lexical form.
 
 ### think — OE þenċan
 
@@ -2746,7 +2746,7 @@ Source note. The comparative sources preserve more than one stem formation, but 
 
 ### tide — OE tīd
 
-Derivation: citation reconstruction _\*tī́diz_; selected input _\*tḯdiz_ > _tīd_ (regular).
+Derivation: citation reconstruction _\*tī́diz_; selected input _\*tī́diz_ > _tīd_ (regular).
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -2767,7 +2767,7 @@ Derivation: citation reconstruction _\*tī́diz_; selected input _\*tḯdiz_ > _
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*tḯdi} \\
+\mbox{PGmc Final Z Deletion} & \emph{*tī́di} \\
 \end{tabular}
 \end{minipage}
 &
@@ -2777,7 +2777,7 @@ Derivation: citation reconstruction _\*tī́diz_; selected input _\*tḯdiz_ > _
 \vspace{0.35em}
 \raggedright
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
-\mbox{OE High Vowel Apocope} & \emph{*tḯd} \\
+\mbox{OE High Vowel Apocope} & \emph{*tī́d} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -2786,7 +2786,7 @@ Derivation: citation reconstruction _\*tī́diz_; selected input _\*tḯdiz_ > _
 }
 \endgroup
 
-Kroonen gives _\*tīdi-_ 'time', and Orel's _\*tīđiz_ points to the same feminine noun [@Kroonen2013; @Orel2003]. The related verb _tīdan_ is separate. Bright records _tīd_ with singular _tīde_ and plural _tīda_, and Clark Hall treats _tīd_ as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971; @ClarkHall1960, 309]. From _\*tḯdiz_, final _z_ is lost and the high final vowel drops, leaving _tīd_. The note matters only because English *tide* can pull in the separate weak verb _tīdan_; the noun targeted here is _tīd_.
+Kroonen gives _\*tīdi-_ 'time', and Orel's _\*tīđiz_ points to the same feminine noun [@Kroonen2013; @Orel2003]. The related verb _tīdan_ is separate. Bright records _tīd_ with singular _tīde_ and plural _tīda_, and Clark Hall treats _tīd_ as the ordinary noun 'time, period, season' [@BrightCassidyRingler1971; @ClarkHall1960, 309]. From _\*tī́diz_, final _z_ is lost and the high final vowel drops, leaving _tīd_. The note matters only because English *tide* can pull in the separate weak verb _tīdan_; the noun targeted here is _tīd_.
 
 ### token — OE tācn
 
@@ -5051,7 +5051,7 @@ PWGmc J Gemination & \emph{*lúngannjō} \\
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.66\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*lúngannju} \\
+NWGmc Final Long O Raising & \emph{*lúngannju} \\
 \end{tabular}
 \end{minipage}
 &
@@ -5062,7 +5062,7 @@ PWGmc J Gemination & \emph{*lúngannjō} \\
 \raggedright
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
 OE I Umlaut & \emph{*lúngennju} \\
-\mbox{OE High Vowel Apocope} & \emph{*lúngennj} \\
+OE High Vowel Apocope & \emph{*lúngennj} \\
 OE J Loss After Heavy & \emph{*lúngenn} \\
 OE Final Geminate Simplification & \emph{*lúngen} \\
 \end{tabular}
@@ -6419,7 +6419,7 @@ Outcome: _wæter_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a heteroclitic noun _\*watar-_~_\*watan-_ and states that
+Kroonen reconstructs a heteroclitic noun _\*watar-_ ~ _\*watan-_ and states that
 the Proto-Germanic material points to _\*watōr_, _\*watenaz_
 [@Kroonen2013, p. 616]. Ringe and Taylor likewise start from singular
 _\*wator_ before the Old English branch [@RingeTaylor2014, §3.1.4].
@@ -6454,7 +6454,7 @@ the singular input that matches the Old English citation form.
 | Stage or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
 | generalized comparative label | _\*wátną_ | broader lexeme shorthand, not the singular that corresponds directly to _wæter_ | useful background only |
-| heteroclitic stem notation | _\*watar-_~_\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
+| heteroclitic stem notation | _\*watar-_ ~ _\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
 | inherited singular input | _\*wátōr_ | trace output: _wæter_ | selected OE-facing input |
 
 ### whale — OE hwæl
@@ -6547,11 +6547,11 @@ notations from the normalized Old English singular.
 
 ### whine — OE hwīnan
 
-Derivation: citation reconstruction _\*wainōjaną_; selected input _\*xwḯnaną_ > _hwīnan_ (early analogy).
+Derivation: citation reconstruction _\*wainōjaną_; selected input _\*xwī́naną_ > _hwīnan_ (early analogy).
 
 #### Derivation trace
 
-Proto input: _\*xwḯnaną_
+Proto input: _\*xwī́naną_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -6580,9 +6580,9 @@ Proto input: _\*xwḯnaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
-OE Heavy Syllable Nasal Apocope & \emph{*xwḯnan} \\
-OE Secondary Nasalization & \emph{*xwḯnąn} \\
-OE Weak Tail Reduction & \emph{*xwḯnan} \\
+OE Heavy Syllable Nasal Apocope & \emph{*xwī́nan} \\
+OE Secondary Nasalization & \emph{*xwī́nąn} \\
+OE Weak Tail Reduction & \emph{*xwī́nan} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -6605,7 +6605,7 @@ _hvina_ and Old English _hwinan_ to the same strong verb [@RingeTaylor2014].
 The difference affects both phonology and morphology. The lament family has
 initial _w-_, diphthongal _ai_, and weak-II morphology, whereas the verb behind
 Old English _hwīnan_ has initial _hw-/xw-_, long _ī_, and strong-verb
-inflection [@Kroonen2013; @Orel2003]. The selected input _\*xwḯnaną_ therefore
+inflection [@Kroonen2013; @Orel2003]. The selected input _\*xwī́naną_ therefore
 represents a competing comparative identification rather than a hidden cell of
 _\*wainōjaną_.
 
@@ -6622,7 +6622,7 @@ an unattested verb into a reconstructed one.
 
 #### Development to Old English
 
-Once the strong-verb input _\*xwḯnaną_ is selected, the path to Old English is
+Once the strong-verb input _\*xwī́naną_ is selected, the path to Old English is
 straightforward. The compact trace shows heavy-syllable nasal apocope,
 secondary nasalization, and weak-tail reduction, after which the form surfaces
 as _hwīnan_.
@@ -6639,16 +6639,16 @@ that stand behind the inherited Old English forms.
 | Verb family / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lament-family weak verb | _\*wainōjaną_ | comparative continuation in OE _wānian_ | wānian | competing citation reconstruction, but not the source of _hwīnan_ |
-| selected strong verb | _\*xwḯnaną_ | compact-trace output: _hwīnan_ | hwīnan | exact match between selected input and OE verb |
+| selected strong verb | _\*xwī́naną_ | compact-trace output: _hwīnan_ | hwīnan | exact match between selected input and OE verb |
 | comparative North Germanic cognate | Northwest Germanic strong verb behind ON _hvina_ / OE _hwinan_ | ON _hvina_ / OE _hwinan_ | hwīnan | supports the strong-verb identification |
 
 ### withy — OE wīþiġ
 
-Derivation: citation reconstruction _\*wáiθiz_; selected input _\*wḯθagą_ > _wīþiġ_ (early analogy).
+Derivation: citation reconstruction _\*wáiθiz_; selected input _\*wī́θagą_ > _wīþiġ_ (early analogy).
 
 #### Derivation trace
 
-Proto input: _\*wḯθagą_
+Proto input: _\*wī́θagą_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -6677,11 +6677,11 @@ Proto input: _\*wḯθagą_
 \vspace{0.35em}
 \raggedright
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.74\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{0.25em}}}
-Anglo Frisian Brightening & \emph{*wḯθægą} \\
-OE Heavy Syllable Nasal Apocope & \emph{*wḯθæg} \\
-OE Velar Palatalization & \emph{*wḯθæʤ} \\
-OE Unstressed AE Merger & \emph{*wḯθeʤ} \\
-OE Late Unstressed Ag Suffix & \emph{*wḯθiʤ} \\
+Anglo Frisian Brightening & \emph{*wī́θægą} \\
+OE Heavy Syllable Nasal Apocope & \emph{*wī́θæg} \\
+OE Velar Palatalization & \emph{*wī́θæʤ} \\
+OE Unstressed AE Merger & \emph{*wī́θeʤ} \\
+OE Late Unstressed Ag Suffix & \emph{*wī́θiʤ} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -6705,7 +6705,7 @@ _-iġ_ of _wīþiġ_ continues a derivational _\*-ag-_ sequence rather than a he
 ja-stem _\*-ij-_ [@Campbell1959, §§275, 376]. The earlier ja-stem pathway
 remains useful as a comparative possibility, but the Campbell-Adamczyk line on
 heavy ja-stems points instead toward _-e_ or zero type outcomes
-[@Campbell1959; @Adamczyk2001]. The selected input _\*wḯθagą_ is thus a
+[@Campbell1959; @Adamczyk2001]. The selected input _\*wī́θagą_ is thus a
 formation choice rather than a mere respelling of the comparative headword.
 
 #### Old English evidence
@@ -6716,12 +6716,12 @@ normalized Old English spelling with macrons and palatal ġ marked explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
-why the selected Proto-Germanic input is _\*wḯθagą_ rather than a comparative
-_\*wīþja-_-type headword.
+why the selected Proto-Germanic input is _\*wī́θagą_ rather than a comparative
+headword of the _\*wīþja-_ type.
 
 #### Development to Old English
 
-From _\*wḯθagą_, Anglo-Frisian brightening gives a fronted vowel in the suffixal
+From _\*wī́θagą_, Anglo-Frisian brightening gives a fronted vowel in the suffixal
 syllable, and, on the Campbell analysis adopted here, the later Old English
 development of _\*-ag-_ yields _-iġ_ [@Campbell1959, §§275, 376].
 Palatalization supplies the final _ġ_, and the full development reaches
@@ -6741,7 +6741,7 @@ the Old English-facing formation that actually yields the attested noun.
 | :--- | :--- | :--- | :--- | :--- |
 | comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of _wīþiġ_ |
 | heavy ja-stem analysis | _\*wīþja-_ type | Campbell/Adamczyk-style heavy ja-stem _-e_ / zero outcome | _wīþiġ_ | does not account cleanly for the OE suffix |
-| selected _\*-ag-_ derivative | *wḯθagą | compact-trace output: _wīþiġ_ | wīþiġ | exact match between formation and target |
+| selected _\*-ag-_ derivative | *wī́θagą | compact-trace output: _wīþiġ_ | wīþiġ | exact match between formation and target |
 
 ### world — OE weorold
 
@@ -6783,7 +6783,7 @@ NWGmc I Lowering & \emph{*wéràldu} \\
 OE Inter Stress Raising & \emph{*wéruldu} \\
 OE Med Unstressed U Lowering & \emph{*wéroldu} \\
 OE Back Mutation & \emph{*wéoroldu} \\
-\mbox{OE High Vowel Apocope} & \emph{*wéorold} \\
+OE High Vowel Apocope & \emph{*wéorold} \\
 \end{tabular}
 \end{minipage}
 \\
@@ -7455,7 +7455,7 @@ Proto input: _\*fúrxtīnaz_
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.68\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*fúrxtīna} \\
+PGmc Final Z Deletion & \emph{*fúrxtīna} \\
 \end{tabular}
 \end{minipage}
 &
@@ -7776,7 +7776,7 @@ Outcome: _heofon_
 #### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-_\*hemina-\*_ ~ _\*hemna-\*_ [@Kroonen2013]. The selected input _\*xémonų_ is an
+_\*hemina-_ ~ _\*hemna-_ [@Kroonen2013]. The selected input _\*xémonų_ is an
 oblique singular form within that paradigm rather than the lexeme-level
 citation form _\*xémenaz_.
 
@@ -8319,7 +8319,7 @@ PWGmc Early I Apocope & \emph{*skúldrumz} \\
 \raggedright
 \vspace{0.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.64\linewidth}@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*skúldrum} \\
+PGmc Final Z Deletion & \emph{*skúldrum} \\
 \end{tabular}
 \end{minipage}
 &

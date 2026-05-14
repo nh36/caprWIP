@@ -78,6 +78,14 @@ def env_path(name: str) -> Path | None:
 
 OUTPUT_PATH = env_path("LEXICAL_VOLUME_OUTPUT_MD") or (SCRIPT_DIR / "lexical_volume_alpha_01.md")
 REGULAR_BOOK_PROSE_DIR = env_path("LEXICAL_REGULAR_BOOK_PROSE_DIR")
+PRINT_LONG_I_ACUTE = "ī\u0301"
+PRINT_TILDE_EDGE_CHAR_CLASS = r"\w\u00C0-\u024F\u0300-\u036F*βʤʧþðæǣȳǭ\\_-"
+RECONSTRUCTED_STEM_TRAILING_STAR_RE = re.compile(
+    r"((?:\\)?\*[^\s`|<>]*?-)(?:\\)?\*(?=(?:\s|$|[`_.,;:!?)/\]\}>~]))"
+)
+FORM_TILDE_SPACING_RE = re.compile(
+    rf"(?<=[{PRINT_TILDE_EDGE_CHAR_CLASS}])\s*~\s*(?=[{PRINT_TILDE_EDGE_CHAR_CLASS}])"
+)
 
 
 def parse_trace_entries(text: str) -> list[dict[str, str]]:
@@ -124,7 +132,15 @@ def parse_trace_entries(text: str) -> list[dict[str, str]]:
     return entries
 
 
+def normalize_print_text(text: str) -> str:
+    normalized = text.replace("ḯ", PRINT_LONG_I_ACUTE)
+    normalized = RECONSTRUCTED_STEM_TRAILING_STAR_RE.sub(r"\1", normalized)
+    normalized = FORM_TILDE_SPACING_RE.sub(" ~ ", normalized)
+    return normalized
+
+
 def italicize_form(text: str) -> str:
+    text = normalize_print_text(text)
     escaped = text.replace("\\", "\\\\").replace("*", r"\*").replace("|", r"\|")
     return f"_{escaped}_"
 
@@ -136,7 +152,7 @@ def keep_as_code(text: str) -> bool:
 
 
 def normalize_inline_code_content(text: str) -> str:
-    return re.sub(r"\s*\n\s*", " ", text).strip()
+    return normalize_print_text(re.sub(r"\s*\n\s*", " ", text).strip())
 
 
 def is_token_boundary(text: str, index: int) -> bool:
@@ -313,7 +329,9 @@ def unwrap_bolded_linguistic_markup(text: str) -> str:
 
 
 def tidy_prose(text: str) -> str:
-    return unwrap_bolded_linguistic_markup(convert_inline_code(demote_bold_forms(text)))
+    return normalize_print_text(
+        unwrap_bolded_linguistic_markup(convert_inline_code(demote_bold_forms(normalize_print_text(text))))
+    )
 
 
 def display_stage_name(stage: str) -> str:
@@ -381,7 +399,7 @@ def latex_escape(text: str) -> str:
 
 
 def latex_form(text: str) -> str:
-    return rf"\emph{{{latex_escape(text)}}}"
+    return rf"\emph{{{latex_escape(normalize_print_text(text))}}}"
 
 
 def humanize_derivation_class(label: str) -> str:
@@ -571,9 +589,10 @@ def choose_trace_font_size(left_stats: dict[str, int], right_stats: dict[str, in
     return r"\small"
 
 
-def format_trace_change_label(change: str) -> str:
+def format_trace_change_label(change: str, *, label_column_width: float) -> str:
+    change = normalize_print_text(change)
     escaped = latex_escape(change)
-    if change in LONG_TRACE_LABELS and len(change) <= 28:
+    if change in LONG_TRACE_LABELS and len(change) <= 28 and label_column_width >= 0.70:
         return rf"\mbox{{{escaped}}}"
     return escaped
 
@@ -616,9 +635,13 @@ def render_trace_panel(
             if change == "[no change]" and not form:
                 lines.append(r"\multicolumn{2}{@{}l@{}}{[no change]} \\")
             elif form:
-                lines.append(rf"{format_trace_change_label(change)} & {latex_form(form)} \\")
+                lines.append(
+                    rf"{format_trace_change_label(change, label_column_width=label_column_width)} & {latex_form(form)} \\"
+                )
             else:
-                lines.append(rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{format_trace_change_label(change)}}} \\")
+                lines.append(
+                    rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{format_trace_change_label(change, label_column_width=label_column_width)}}} \\"
+                )
         lines.append(r"\end{tabular}")
 
     return lines
@@ -627,11 +650,11 @@ def render_trace_panel(
 def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     table_lines = trace_entry["table"].splitlines()
     if len(table_lines) < 3:
-        return [trace_entry["table"]]
+        return [normalize_print_text(trace_entry["table"])]
 
     row_parts = [part.strip() for part in table_lines[2].strip().strip("|").split("|")]
     if len(row_parts) != 2:
-        return [trace_entry["table"]]
+        return [normalize_print_text(trace_entry["table"])]
 
     left_blocks = parse_trace_cell(row_parts[0])
     right_blocks = parse_trace_cell(row_parts[1])
@@ -806,7 +829,7 @@ def rewrite_book_prose_entry(model: dict[str, object], trace_entry: dict[str, st
     if trace_entry is not None:
         out.extend(["", *render_trace_table(trace_entry)])
     if body.strip():
-        out.extend(["", body.strip()])
+        out.extend(["", tidy_prose(body).strip()])
     return "\n".join(out).strip()
 
 
@@ -866,27 +889,33 @@ def build_front_matter(
     lines = [
         "# Germanic Lexeme Reports: Lexical Derivation Volume",
         "",
-        alpha_blurb,
+        normalize_print_text(alpha_blurb),
         "",
         "## Introduction",
         "",
-        intro_sections["Introduction to the lexical catalogue"],
+        tidy_prose(intro_sections["Introduction to the lexical catalogue"]),
         "",
-        intro_sections["Note on the later sound-change volume / report"],
+        tidy_prose(intro_sections["Note on the later sound-change volume / report"]),
         "",
         "## Data and sources",
         "",
-        "This alpha assembles the current model-entry corpus against the live manifest, compact derivation-trace report, and project bibliography. The lexical data layer is the current aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain in the entry prose exactly as already cited there.",
+        normalize_print_text(
+            "This alpha assembles the current model-entry corpus against the live manifest, compact derivation-trace report, and project bibliography. The lexical data layer is the current aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain in the entry prose exactly as already cited there."
+        ),
         "",
-        "Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass.",
+        normalize_print_text(
+            "Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass."
+        ),
         "",
         "## Transducer and derivation method",
         "",
-        method_paragraph,
+        normalize_print_text(method_paragraph),
         "",
         "## Derivation classes",
         "",
-        "The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in the manifest. Counts in this alpha are taken directly from `manifest_all_by_class.tsv`:",
+        normalize_print_text(
+            "The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in the manifest. Counts in this alpha are taken directly from `manifest_all_by_class.tsv`:"
+        ),
         "",
         f"- `regular`: **{counts['regular']}**",
         f"- `attested_variant`: **{counts['attested_variant']}**",
@@ -901,6 +930,18 @@ def build_front_matter(
 
 def append_references_scaffold(parts: list[str]) -> None:
     parts.extend(["", r"\clearpage", "", "## References", ""])
+
+
+def assert_print_regressions(text: str) -> None:
+    if "ḯ" in text:
+        raise ValueError("reader-facing output still contains ḯ")
+    if "PNWGmce" in text:
+        raise ValueError("reader-facing output still contains PNWGmce")
+    if "_\\*wīþja-_-type" in text:
+        raise ValueError("reader-facing output still contains a malformed *wīþja--type phrase")
+    expected_breeches_phrase = "PNWGmc _\\*brokiz_ > _\\*breeci_ > OE _bréc_"
+    if "### breeches — OE brēċ" in text and expected_breeches_phrase not in text:
+        raise ValueError("reader-facing output is missing the normalized breeches stage phrase")
 
 
 def main() -> int:
@@ -930,7 +971,7 @@ def main() -> int:
             raise FileNotFoundError(f"missing regular book prose files:\n{missing_list}")
 
     for bucket, part_heading, intro_heading in SECTION_ORDER:
-        parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", intro_sections[intro_heading]])
+        parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", tidy_prose(intro_sections[intro_heading])])
         for row in rows_by_bucket[bucket]:
             entry_path = REPO_ROOT / row["model_entry_path"]
             model = parse_model_entry(entry_path)
@@ -956,7 +997,9 @@ def main() -> int:
             )
 
     append_references_scaffold(parts)
-    OUTPUT_PATH.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
+    assembled = normalize_print_text("\n".join(parts).rstrip())
+    assert_print_regressions(assembled)
+    OUTPUT_PATH.write_text(assembled + "\n", encoding="utf-8")
     print(f"Generated {OUTPUT_PATH}")
     return 0
 

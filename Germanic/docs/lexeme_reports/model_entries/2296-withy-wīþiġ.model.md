@@ -41,7 +41,7 @@ normalized Old English spelling with macrons and palatal ġ marked explicitly.
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
 why the selected Proto-Germanic input is `*wḯθagą` rather than a comparative
-`*wīþja-`-type headword.
+headword of the `*wīþja-` type.
 
 ### Development to Old English
 
