@@ -228,7 +228,7 @@ OE Weak Tail Reduction & \emph{*bĕʤínnan} \\
 }
 \endgroup
 
-The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174]. Bosworth-Toller and Clark Hall lemmatize the verb as _be-ginnan_ / _beginnan_ [@BosworthToller1898, 84; @ClarkHall1960]. From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Ringe and Taylor explicitly cite _bi- > be-_ as an Old English unstressed-prefix development [@RingeTaylor2014].
+The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014, p. 218], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174]. Bosworth-Toller and Clark Hall lemmatize the verb as _be-ginnan_ / _beginnan_ [@BosworthToller1898, 84; @ClarkHall1960]. From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Ringe and Taylor explicitly cite _bi- > be-_ as an Old English unstressed-prefix development [@RingeTaylor2014, p. 350].
 
 ### bier — OE bǣr
 
@@ -506,7 +506,7 @@ OE I Umlaut & \emph{*brēʧi} \\
 }
 \endgroup
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971, 38; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014].
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014, p. 223]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971, 38; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014, p. 223].
 
 ### calf — OE ċealf
 
@@ -643,7 +643,7 @@ Derivation: _\*dḗdiz_ > _dǣd_ (regular).
 }
 \endgroup
 
-Orel reconstructs the noun as _\*dēdiz_, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic _\*dédiz_ through northwest Germanic _\*dadiz_ [@Orel2003; @RingeTaylor2014]. The stress-marked form _\*dḗdiz_ represents that same inherited noun in a notation that keeps the stressed long vowel explicit. Campbell states that Primitive Germanic _ē_ appears as West Saxon _ǣ_ but in other Old English dialects mostly as _ē_, and Brunner gives the contrast explicitly as West Saxon _dǣd_ beside non-West-Saxon _dēd_ [@Campbell1959; @SieversBrunner1965]. From inherited _\*dēdiz_, loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_; Anglian _dēd_ preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965].
+Orel reconstructs the noun as _\*dēdiz_, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic _\*dédiz_ through northwest Germanic _\*dadiz_ [@Orel2003; @RingeTaylor2014, p. 27]. The stress-marked form _\*dḗdiz_ represents that same inherited noun in a notation that keeps the stressed long vowel explicit. Campbell states that Primitive Germanic _ē_ appears as West Saxon _ǣ_ but in other Old English dialects mostly as _ē_, and Brunner gives the contrast explicitly as West Saxon _dǣd_ beside non-West-Saxon _dēd_ [@Campbell1959; @SieversBrunner1965]. From inherited _\*dēdiz_, loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_; Anglian _dēd_ preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965].
 
 ### door — OE dor
 
@@ -912,9 +912,9 @@ OE Weak Tail Reduction & \emph{*flēogan} \\
 }
 \endgroup
 
-Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014].
+Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014, pp. 189, 324]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014, p. 189].
 
-Form note. Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014].
+Form note. Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014, p. 324].
 
 ### forlorn — OE lēosan
 
@@ -959,9 +959,9 @@ OE Weak Tail Reduction & \emph{*lēosan} \\
 }
 \endgroup
 
-Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014; @ClarkHall1960; @BosworthToller1898]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
+Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, p. 357; @ClarkHall1960; @BosworthToller1898]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
 
-Form note. As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014].
+Form note. As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014, p. 357].
 
 ### gang — OE gang
 
@@ -1054,9 +1054,9 @@ OE Weak Tail Reduction & \emph{*ʤíeβan} \\
 }
 \endgroup
 
-Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013, 212]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014]. Campbell gives _gefan (W-S giefan)_ among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959; @ClarkHall1960]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959; @RingeTaylor2014].
+Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013, 212]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014, p. 230]. Campbell gives _gefan (W-S giefan)_ among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959, §428; @ClarkHall1960]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959, §185; @RingeTaylor2014, p. 230].
 
-Dialect note. West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ or _for-geofan_ continue the same verb without the West Saxon vocalism [@RingeTaylor2014].
+Dialect note. West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ or _for-geofan_ continue the same verb without the West Saxon vocalism [@RingeTaylor2014, p. 230].
 
 ### gold — OE gold
 
@@ -1298,9 +1298,9 @@ OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 }
 \endgroup
 
-Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997, 224; @RingeTaylor2014]. Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960, 158; @ClarkHall1960, 171]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
+Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997, 224; @RingeTaylor2014, p. 141]. Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960, 158; @ClarkHall1960, 171]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
 
-Source note. The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997, 230; @RingeTaylor2014].
+Source note. The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997, 230; @RingeTaylor2014, p. 267].
 
 ### hedge — OE heġġ
 
@@ -1543,9 +1543,9 @@ OE Weak Tail Reduction & \emph{*çealdan} \\
 }
 \endgroup
 
-Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959; @RingeTaylor2014]. Bright gives the ordinary strong-verb citation form and principal parts _healdan, heold, heoldon, healden_ [@BrightCassidyRingler1971, 62]. From _\*xáldaną_, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces _ea_ before _ld_.
+Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959, §144; @RingeTaylor2014, p. 199]. Bright gives the ordinary strong-verb citation form and principal parts _healdan, heold, heoldon, healden_ [@BrightCassidyRingler1971, 62]. From _\*xáldaną_, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces _ea_ before _ld_.
 
-Dialect note. West Saxon _healdan_ is the selected target here. Anglian and Mercian _haldan_ are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
+Dialect note. West Saxon _healdan_ is the selected target here. Anglian and Mercian _haldan_ are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959, §144; @RingeTaylor2014, p. 199].
 
 ### horn — OE horn
 
@@ -1640,7 +1640,7 @@ OE J Loss After Heavy & \emph{*lǣdan} \\
 }
 \endgroup
 
-Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960, 194; @BosworthToller1898]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014].
+Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014, p. 249; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960, 194; @BosworthToller1898]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014, p. 249].
 
 ### learn — OE liornian
 
@@ -1785,7 +1785,7 @@ OE J Loss After Heavy & \emph{*līextan} \\
 
 Fulk gives Proto-Germanic _\*liuxtijanan_ with Old English _līehtan_ 'illuminate', and Ringe and Taylor likewise derive West Saxon _liehtan_ from the same weak-verb formation [@Fulk2018, 81; @RingeTaylor2014, 264]. Clark Hall and Bosworth-Toller preserve the verb family under spellings such as _liehtan_, _lihtan_, and _līhtan_, distinct from the related noun _lēoht_ and adjective _leoht/liht_ [@ClarkHall1960, 204; @BosworthToller1898]. From _\*léuxtijaną_, the regular verbal line preserves _\*xt_, passes through a West Saxon _liehtan_ stage, and is represented here by normalized _līehtan_.
 
-Dialect note. Ringe and Taylor and Campbell distinguish West Saxon _liehtan_ from Anglian _lihtan_, while later West Saxon also shows _lyhtan_ [@RingeTaylor2014, 264; @Campbell1959].
+Dialect note. Ringe and Taylor and Campbell distinguish West Saxon _liehtan_ from Anglian _lihtan_, while later West Saxon also shows _lyhtan_ [@RingeTaylor2014, 264; @Campbell1959, §39].
 
 ### linden — OE lind
 
@@ -1970,9 +1970,9 @@ OE J Loss After Heavy & \emph{*nett} \\
 }
 \endgroup
 
-Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003; @Fulk2018]. Clark Hall and Bosworth-Toller record _nett_ as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
+Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003; @Fulk2018, §6.15]. Clark Hall and Bosworth-Toller record _nett_ as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959, §66]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
 
-Form note. Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is _nett_ [@Campbell1959; @Orel2003].
+Form note. Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is _nett_ [@Campbell1959, §66; @Orel2003].
 
 ### nightmare — OE mare
 
@@ -2114,9 +2114,9 @@ OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
 }
 \endgroup
 
-Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
+Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014, p. 142; @Orel2003]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
 
-Dialect note. Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].
+Dialect note. Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014, p. 142; @Campbell1959, §186].
 
 ### shilling — OE sċilling
 
@@ -2163,7 +2163,7 @@ OE Med Unstressed I Lowering & \emph{*ʃílling} \\
 }
 \endgroup
 
-Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003, 377]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960, 269; @Campbell1959]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
+Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003, 377]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960, 269; @Campbell1959, §574.6]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
 
 Form note. Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here [@Kroonen2013].
 
@@ -2313,7 +2313,7 @@ OE J Loss After Heavy & \emph{*smíerwan} \\
 }
 \endgroup
 
-Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage _\*smirwijana_, from which they derive West Saxon _smierwan_, Mercian _smirwan_, and Northumbrian _smiriga_ [@RingeTaylor2014]. The selected form is the West Saxon citation form _smierwan_. From _\*smérwijaną_, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_.
+Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage _\*smirwijana_, from which they derive West Saxon _smierwan_, Mercian _smirwan_, and Northumbrian _smiriga_ [@RingeTaylor2014, pp. 198, 263]. The selected form is the West Saxon citation form _smierwan_. From _\*smérwijaną_, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_.
 
 Dialect note. The entry therefore represents the West Saxon member of a broader OE family: _smierwan_ in West Saxon, _smirwan_ in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014; @ClarkHall1960, 283].
 
@@ -2502,7 +2502,7 @@ OE Unstressed AE Merger & \emph{*súmer} \\
 }
 \endgroup
 
-Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013; @RingeTaylor2014; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_, and Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@ClarkHall1960; @BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
+Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013; @RingeTaylor2014, p. 46; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_, and Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@ClarkHall1960; @BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
 
 Form note. Old English also has _sumor_ as a common headword spelling. The selected form here is _sumer_, and _sumeres/sumere_ show that the _e_-vocalism was also real in Old English [@ClarkHall1960; @BrightCassidyRingler1971, 440].
 
@@ -2695,7 +2695,7 @@ OE J Loss After Heavy & \emph{*θenʧan} \\
 }
 \endgroup
 
-Kroonen gives the verb as _\*þankjan-_ 'to think', and Ringe and Taylor cite fully inflected _\*þankijaną_ beside OE _þenċan_ [@Kroonen2013; @RingeTaylor2014]. The noun _\*þankaz_ belongs only to the wider derivational background. Bosworth-Toller preserves the verb under _þencan_/_geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898]. From _\*θánkijaną_, palatalization before _\*j_ and i-umlaut produce _þenċan_. Campbell's assibilation discussion uses the same verb _þencan_; the class-III relic _hycgan_ is a different lexeme [@Campbell1959; @Hogg1992].
+Kroonen gives the verb as _\*þankjan-_ 'to think', and Ringe and Taylor cite fully inflected _\*þankijaną_ beside OE _þenċan_ [@Kroonen2013; @RingeTaylor2014]. The noun _\*þankaz_ belongs only to the wider derivational background. Bosworth-Toller preserves the verb under _þencan_/_geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898]. From _\*θánkijaną_, palatalization before _\*j_ and i-umlaut produce _þenċan_. Campbell's assibilation discussion uses the same verb _þencan_; the class-III relic _hycgan_ is a different lexeme [@Campbell1959, §438; @Hogg1992, §3.4.2.4].
 
 ### thorn — OE þorn
 
@@ -2967,7 +2967,7 @@ OE Weak Tail Reduction & \emph{*wéorpan} \\
 }
 \endgroup
 
-Ringe and Taylor distinguish preterite _\*warp_ from infinitive _\*werpana_, and the selected input here is the verbal form _\*wérpaną_ [@RingeTaylor2014]. Clark Hall records _weorpan_ as the strong verb headword and separately lists _wearp_ as both noun and preterite. Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959; @Hogg1992]. English *warp* also points to related _wearp_ material. The selected form here is the infinitive _weorpan_.
+Ringe and Taylor distinguish preterite _\*warp_ from infinitive _\*werpana_, and the selected input here is the verbal form _\*wérpaną_ [@RingeTaylor2014]. Clark Hall records _weorpan_ as the strong verb headword and separately lists _wearp_ as both noun and preterite. Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959, §146; @Hogg1992, §3.4.2.2]. English *warp* also points to related _wearp_ material. The selected form here is the infinitive _weorpan_.
 
 ### wash — OE wascan
 
@@ -3062,7 +3062,7 @@ OE Xs Merge & \emph{*weaXSan} \\
 }
 \endgroup
 
-Kroonen cites the verb as _\*wahs(j)an-_, Orel as _\*waxsanan_, and Ringe and Taylor discuss the prehistory of Old English _weaxan_ within the same verbal family [@Kroonen2013, 606; @Orel2003, 478; @RingeTaylor2014]. Clark Hall gives _weaxan_ as the verb headword and separately records bare _wax_ as a preterite form; Bright likewise treats _weaxan_ as the infinitive [@ClarkHall1960, 358; @BrightCassidyRingler1971, 458]. From _\*wáxsaną_, brightening and breaking yield _weax-_, and the infinitive develops regularly to _weaxan_. The selected form is the infinitive _weaxan_. Noun _weax_ and preterite wax/_wēox_ belong to different lexical or paradigm slots.
+Kroonen cites the verb as _\*wahs(j)an-_, Orel as _\*waxsanan_, and Ringe and Taylor discuss the prehistory of Old English _weaxan_ within the same verbal family [@Kroonen2013, 606; @Orel2003, 478; @RingeTaylor2014, p. 191]. Clark Hall gives _weaxan_ as the verb headword and separately records bare _wax_ as a preterite form; Bright likewise treats _weaxan_ as the infinitive [@ClarkHall1960, 358; @BrightCassidyRingler1971, 458]. From _\*wáxsaną_, brightening and breaking yield _weax-_, and the infinitive develops regularly to _weaxan_. The selected form is the infinitive _weaxan_. Noun _weax_ and preterite wax/_wēox_ belong to different lexical or paradigm slots.
 
 ### way — OE weġ
 
