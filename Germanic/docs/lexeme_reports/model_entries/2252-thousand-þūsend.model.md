@@ -19,14 +19,14 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the Germanic numeral as **`*þūsundī-`** and cites Old
-English **`þūsend`** among its continuations [@Kroonen2013, p. 554]. The
+English **`þūsend`** among its continuations [@Kroonen2013, 554]. The
 selected input **`*θūs-èndi`** is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to `e` and the final
 high vowel already shortened for apocope.
 
 The important question is therefore chronological. Why does Old English show
 **`þūsend`**, while related languages such as Old Saxon and Old High German keep
-`u` in the second syllable? [@Kroonen2013, p. 554].
+`u` in the second syllable? [@Kroonen2013, 554].
 
 ### Old English evidence
 

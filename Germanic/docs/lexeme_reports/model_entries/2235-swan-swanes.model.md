@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The Germanic noun is ordinarily cited as the masculine a-stem `*swanaz`
-[@Orel2003, p. 367]. The selected input `*swánas` is not a competing
+[@Orel2003, 367]. The selected input `*swánas` is not a competing
 lexeme reconstruction. It is the genitive singular of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.

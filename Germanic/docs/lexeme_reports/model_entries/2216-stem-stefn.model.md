@@ -20,10 +20,10 @@ DERIVATION_CLASS: early_analogy
 
 The source tradition behind **`stefn`** is not the same as the comparative label
 **`*stámnaz`**. Ringe and Taylor cite **`*stebnō`** for the noun continued by
-Gothic `stibna` and Old English `stebn > stefn > stemn` [@RingeTaylor2014, p.
+Gothic `stibna` and Old English `stebn > stefn > stemn` [@RingeTaylor2014,
 330]. Orel likewise gives **`*stebnō ~ *stemnō`**, whereas Kroonen prefers
 **`*stimnō-`**, and Fulk describes the etymology of `stefn, stemn` as insecure
-[@Orel2003, p. 374; @Kroonen2013, p. 480; @Fulk2018, §6.11 n. 6].
+[@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
 
 These forms belong to the Old English noun **`stefn`** 'voice, sound'. The
 selected input **`*stébnō`** is therefore best treated as the OE-facing
@@ -34,7 +34,7 @@ comparative reconstruction implied by the citation label **`*stámnaz`**.
 
 Clark Hall records **`stefn`** as the noun 'voice, sound' and cross-refers
 **`stemn`** to the same word [@ClarkHall1960]. Ringe and Taylor give the OE
-chronology directly as **`stebn > stefn > stemn`** [@RingeTaylor2014, p. 330].
+chronology directly as **`stebn > stefn > stemn`** [@RingeTaylor2014, 330].
 
 Bülbring and Luick treat **`stemn`** as a later West Saxon development from
 older **`stefn`**, produced by `fn > mn` only after the earlier period of nasal
@@ -48,7 +48,7 @@ From **`*stébnō`**, raising of final long `ō` gives a **`*stébnu`** stage.
 Regular fricativization of `b` before `n` then yields **`*stéβnu`**, and loss
 of the final high vowel leaves **`*stéβn`**, written **`stefn`** in Old English.
 The later form **`stemn`** belongs to a separate West Saxon assimilation after
-this stage [@RingeTaylor2014, p. 330; @Bulbring1902, §445].
+this stage [@RingeTaylor2014, 330; @Bulbring1902, §445].
 
 ### Source comparison
 

@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs a heteroclitic noun **`*watar-~*watan-`** and states that
 the Proto-Germanic material points to **`*watōr, *watenaz`**
-[@Kroonen2013, p. 616]. Ringe and Taylor likewise start from singular
+[@Kroonen2013, 616]. Ringe and Taylor likewise start from singular
 **`*wator`** before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular

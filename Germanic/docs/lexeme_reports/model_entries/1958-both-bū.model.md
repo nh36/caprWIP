@@ -20,12 +20,12 @@ DERIVATION_CLASS: regular
 
 Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
 paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English `bēġen`, `bā`, and
-neuter `bū` [@Kroonen2013, p. 47]. For the present entry, the relevant inherited
+neuter `bū` [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual `*bō`.
 
 The older explanation of `bēġen` derives it from `*bō-jen-`, and Orel still
 gives `OE bezen (< *bō-jenō)` beside `ON báðir`, `OFris bēthe`, `OS be-thia`,
-and `OHG bēde, beide` [@Orel2003, p. 65]. Fulk reports that explanation
+and `OHG bēde, beide` [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead
 [@Fulk2018, §10.1]. That debate matters for `bēġen` and for the extended forms
 behind Modern English `both`, German `beide`, and Dutch `beide`; it does not

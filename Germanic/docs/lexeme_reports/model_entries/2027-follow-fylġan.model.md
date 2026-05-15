@@ -25,7 +25,7 @@ are therefore related but not identical.
 
 Ringe and Taylor make the split explicit as `PNWGmc *fulgija- ~ *fulgai- > OE
 fylgan ~ folgian` and describe it as a dual formation that probably reflects an
-older alternation between j-present and e-stative [@RingeTaylor2014, pp. 293-294].
+older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
 `*fúlgijaną` belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
 form `*fulgēną` belongs to the parallel class-II history behind `folgian`.
@@ -48,7 +48,7 @@ environment.
 
 `*fúlgijaną` is a class-I weak-verb formation. In the class-I branch the `*j`
 blocks NWGmc lowering of `u` to `o`, since Ringe and Taylor formulate that
-lowering for environments in which no `*j` intervened [@RingeTaylor2014, p. 96].
+lowering for environments in which no `*j` intervened [@RingeTaylor2014, 96].
 The same front-vocalic environment then triggers i-umlaut, so `u` becomes `y`
 [@RingeTaylor2014, §6.6.2].
 

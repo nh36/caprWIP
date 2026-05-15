@@ -19,7 +19,7 @@ DERIVATION_CLASS: reconstructed_oe
 ### Reconstruction and comparative evidence
 
 Kroonen cites the inherited weak verb as **`*straujan-`** and gives Old English
-**`streowian`** as its dictionary continuation [@Kroonen2013, p. 483]. Ringe and
+**`streowian`** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
 Taylor make the split within Old English explicit: the inherited class-I verb is
 continued by Anglian **`strēgan`**, while West Saxon **`streowian`** is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].

@@ -28,7 +28,7 @@ reconstructs an a-stem `*staba-` [@Kroonen2013], Orel writes `*stabiz ~
 ### Old English evidence
 
 The Old English noun itself is the ordinary citation form `stæf`. Luick lists
-`stæf` among closed monosyllables with `æ` [@Luick1914, p. 176], and Ringe and
+`stæf` among closed monosyllables with `æ` [@Luick1914, 176], and Ringe and
 Taylor pair singular `stæf` with plural `stafas` [@RingeTaylor2014]. The
 normalized form here is therefore `stæf`; later English `staff` with `a`
 belongs to a later stage of the word's history.
