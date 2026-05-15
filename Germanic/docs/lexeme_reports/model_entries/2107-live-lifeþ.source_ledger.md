@@ -12,3 +12,7 @@ book-style entry was drafted.
 | Campbell | orthographic and OE evidence | unstressed `<d>` / `<þ>` spelling relation and class-III material | normalized target from attested form | `lifed`; `lifeþ` | Supports the normalization of attested `lifed` as `lifeþ`. | yes — `Campbell1959` | cited in packet/memo/slice | medium |
 | Bosworth-Toller / Clark Hall | OE dictionary evidence | `libban`, `lifian`, and related finite forms | OE verb paradigm | `libban`; `lifian` | Confirms the ordinary citation forms and the remodeled later tradition. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | archaic 3sg selected over infinitive and remodeled finite forms | paradigm-cell choice | `lifeþ`; `lifed` | The main issue is a regular archaic finite cell versus later lemma-level remodeling. | no | `Germanic/docs/lexeme_reports/research_memos/2107-live-lifeþ.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2107-live-lifeþ.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator master manifest 03
+
+- Tightened `Kroonen2013` from a broad citation to verified page locator `336` after direct inspection of the local Kroonen text.

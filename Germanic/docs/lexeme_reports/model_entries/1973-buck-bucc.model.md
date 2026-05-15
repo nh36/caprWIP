@@ -20,7 +20,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 Kroonen and Orel both reconstruct the word with a geminate stop, `*bukkaz`, and
 both also preserve parallel n-stem material behind Old English `bucca`
-[@Kroonen2013; @Orel2003]. The selected input therefore remains identical with
+[@Kroonen2013, 121; @Orel2003]. The selected input therefore remains identical with
 the lexeme label: no alternative inherited cell accounts for the form.
 
 ### Old English evidence

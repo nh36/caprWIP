@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited verb belongs to the class-III weak family cited by Kroonen under
-`*libēn-`, reflected in Old English `libban` [@Kroonen2013]. Ringe and Taylor
+`*libēn-`, reflected in Old English `libban` [@Kroonen2013, 336]. Ringe and Taylor
 show that the paradigm also contained a separate 3sg present stem, continued in
 late Northumbrian `lifed`, which they treat as an archaism
 [@RingeTaylor2014].

@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-`*hemina-* ~ *hemna-*` [@Kroonen2013]. The selected input `*xémonų` is an
+`*hemina-* ~ *hemna-*` [@Kroonen2013, 220]. The selected input `*xémonų` is an
 oblique singular form within that paradigm rather than the lexeme-level
 citation form `*xémenaz`.
 

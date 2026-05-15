@@ -138,7 +138,7 @@ OE Weak Tail Reduction & \emph{*bakan} \\
 }
 \endgroup
 
-Orel reconstructs _\*bakanan_, and Campbell cites _bacan_ as a standard example of A-restoration [@Orel2003; @Campbell1959, 61; @RingeTaylor2014, 270]. Bosworth-Toller and Clark Hall record _bacan_ as the Old English infinitive [@BosworthToller1898, 72; @ClarkHall1960, 19]. The selected input _\*bákaną_ represents the same weak verb in the accent notation used here. From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration before single _k_ returns the stem vowel to _a_, and later weak-tail reductions yield _bacan_.
+Orel reconstructs _\*bakanan_, and Campbell cites _bacan_ as a standard example of A-restoration [@Orel2003, 33; @Campbell1959, 61; @RingeTaylor2014, 270]. Bosworth-Toller and Clark Hall record _bacan_ as the Old English infinitive [@BosworthToller1898, 72; @ClarkHall1960, 19]. The selected input _\*bákaną_ represents the same weak verb in the accent notation used here. From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration before single _k_ returns the stem vowel to _a_, and later weak-tail reductions yield _bacan_.
 
 ### beech — OE bōc
 
@@ -959,7 +959,7 @@ OE Weak Tail Reduction & \emph{*lēosan} \\
 }
 \endgroup
 
-Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960; @BosworthToller1898]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
+Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960; @BosworthToller1898, 248]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
 
 Form note. As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014, 357].
 
@@ -1733,9 +1733,9 @@ OE Heavy Syllable Nasal Apocope & \emph{*xlíd} \\
 }
 \endgroup
 
-Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003; @Lloyd1966]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960, 175; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
+Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003, 216; @Lloyd1966]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960, 175; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
 
-Form note. An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+Form note. An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003, 216; @Lloyd1966].
 
 ### light — OE līehtan
 
@@ -1970,9 +1970,9 @@ OE J Loss After Heavy & \emph{*nett} \\
 }
 \endgroup
 
-Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003; @Fulk2018, §6.15]. Clark Hall and Bosworth-Toller record _nett_ as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959, §66]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
+Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003, 282; @Fulk2018, §6.15]. Clark Hall and Bosworth-Toller record _nett_ as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959, §66]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
 
-Form note. Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is _nett_ [@Campbell1959, §66; @Orel2003].
+Form note. Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is _nett_ [@Campbell1959, §66; @Orel2003, 282].
 
 ### nightmare — OE mare
 
@@ -2114,7 +2114,7 @@ OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
 }
 \endgroup
 
-Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014, 142; @Orel2003]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
+Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014, 142; @Orel2003, 340]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
 
 Dialect note. Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014, 142; @Campbell1959, §186].
 
@@ -2502,7 +2502,7 @@ OE Unstressed AE Merger & \emph{*súmer} \\
 }
 \endgroup
 
-Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013; @RingeTaylor2014, 46; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_, and Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@ClarkHall1960; @BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
+Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013, 492; @RingeTaylor2014, 46; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_, and Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@ClarkHall1960; @BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
 
 Form note. Old English also has _sumor_ as a common headword spelling. The selected form here is _sumer_, and _sumeres/sumere_ show that the _e_-vocalism was also real in Old English [@ClarkHall1960; @BrightCassidyRingler1971, 440].
 
@@ -2740,7 +2740,7 @@ PWGmc Final Bare A Loss & \emph{*θórn} \\
 }
 \endgroup
 
-Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz_ ~ _\*þurnaz_ [@Kroonen2013, 33; @Orel2003]. The selected input _\*θúrnaz_ belongs to that same comparative family. Bright lists _þorn_, m., and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971, 450; @ClarkHall1960, 327]. The inherited stem shows regular lowering of _u_ to _o_ before _r_, and final loss yields _þorn_.
+Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pair _\*þurnuz_ ~ _\*þurnaz_ [@Kroonen2013, 33; @Orel2003, 430]. The selected input _\*θúrnaz_ belongs to that same comparative family. Bright lists _þorn_, m., and Clark Hall likewise treats _þorn_ as the ordinary noun headword [@BrightCassidyRingler1971, 450; @ClarkHall1960, 327]. The inherited stem shows regular lowering of _u_ to _o_ before _r_, and final loss yields _þorn_.
 
 Source note. The comparative sources preserve more than one stem formation, but the Old English target itself is simply the citation form _þorn_.
 
@@ -7776,7 +7776,7 @@ Outcome: _heofon_
 #### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-_\*hemina-_ ~ _\*hemna-_ [@Kroonen2013]. The selected input _\*xémonų_ is an
+_\*hemina-_ ~ _\*hemna-_ [@Kroonen2013, 220]. The selected input _\*xémonų_ is an
 oblique singular form within that paradigm rather than the lexeme-level
 citation form _\*xémenaz_.
 
@@ -7873,7 +7873,7 @@ Outcome: _lifeþ_
 #### Reconstruction and comparative evidence
 
 The inherited verb belongs to the class-III weak family cited by Kroonen under
-_\*libēn-_, reflected in Old English _libban_ [@Kroonen2013]. Ringe and Taylor
+_\*libēn-_, reflected in Old English _libban_ [@Kroonen2013, 336]. Ringe and Taylor
 show that the paradigm also contained a separate 3sg present stem, continued in
 late Northumbrian _lifed_, which they treat as an archaism
 [@RingeTaylor2014].
@@ -7962,7 +7962,7 @@ Outcome: _mannes_
 
 The lexeme-level reconstruction is not uniform. Kroonen cites _\*mannan-_, Orel
 has _\*mannz_, and Ringe and Taylor summarize the inherited noun as _\*mann-_
-[@Kroonen2013; @Orel2003, 299; @RingeTaylor2014]. The selected input _\*mánnas_
+[@Kroonen2013, 354; @Orel2003, 299; @RingeTaylor2014]. The selected input _\*mánnas_
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
@@ -9937,7 +9937,7 @@ Selected target: _bucc_
 
 Kroonen and Orel both reconstruct the word with a geminate stop, _\*bukkaz_, and
 both also preserve parallel n-stem material behind Old English _bucca_
-[@Kroonen2013; @Orel2003]. The selected input therefore remains identical with
+[@Kroonen2013, 121; @Orel2003]. The selected input therefore remains identical with
 the lexeme label: no alternative inherited cell accounts for the form.
 
 #### Old English evidence

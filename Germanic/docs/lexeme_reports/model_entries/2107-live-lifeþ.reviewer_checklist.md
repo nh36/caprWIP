@@ -51,3 +51,7 @@
 1. This entry should not be scaled from mechanically without human review,
    because the normalized target `lifeþ` depends on distinguishing attested
    `lifed` from later lemma-level remodeling.
+
+## Citation-locator master manifest 03
+
+- Tightened `Kroonen2013` from a broad citation to verified page locator `336`.

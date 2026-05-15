@@ -21,3 +21,7 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 - Added page-specific locators for `BosworthToller1898, 122`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+
+## Citation-locator master manifest 03
+
+- Tightened `Kroonen2013` from a broad citation to verified page locator `121` after direct inspection of the local Kroonen text.
