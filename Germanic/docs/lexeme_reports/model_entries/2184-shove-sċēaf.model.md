@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
-English present forms `scēofan, scūfan` [@Kroonen2013]. Ringe and Taylor also
+English present forms `scēofan, scūfan` [@Kroonen2013, 444]. Ringe and Taylor also
 show that the English present system belongs to a wider class-II split that is
 not identical with the preterite grade [@RingeTaylor2014]. The selected input
 `*skáub` is therefore not a spelling variant of the infinitive but the singular

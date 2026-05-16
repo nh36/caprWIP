@@ -82,3 +82,7 @@ Citation locator tightened for BrightCassidyRingler1971 from broad citation to v
 ## Citation-locator claim-isolation 05
 
 Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 125 and BosworthToller1898 at 275.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

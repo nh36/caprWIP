@@ -57,3 +57,7 @@
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `Seebold1970, 89`.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

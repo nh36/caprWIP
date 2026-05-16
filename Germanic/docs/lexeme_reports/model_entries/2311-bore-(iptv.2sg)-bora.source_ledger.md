@@ -17,3 +17,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 48`.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

@@ -84,3 +84,7 @@ Citation locator tightened after claim-isolation pass; verified against ClarkHal
 - No packets, dev-note slices, research memos, bibliography files, derivation
   traces, existing pilot reports, the shoulder model, the cow model, or
   writing-skill files were changed.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

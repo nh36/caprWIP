@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its continuants [@Kroonen2013]. Ringe and Taylor give the class-II weak imperative singular as **`-a < *-ō`** [@RingeTaylor2014, 314].
+Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its continuants [@Kroonen2013, 85]. Ringe and Taylor give the class-II weak imperative singular as **`-a < *-ō`** [@RingeTaylor2014, 314].
 
 The selected input **`*búrô`** is therefore an imperative cell of the same family, not the citation form of the verb.
 

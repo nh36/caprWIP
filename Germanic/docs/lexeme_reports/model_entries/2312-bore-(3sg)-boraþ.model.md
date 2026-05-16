@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its reflexes [@Kroonen2013]. The selected form isolates the finite 3sg cell **`*búrōθi`** rather than the infinitive.
+Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its reflexes [@Kroonen2013, 85]. The selected form isolates the finite 3sg cell **`*búrōθi`** rather than the infinitive.
 
 Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's account of stable **`a`** in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 

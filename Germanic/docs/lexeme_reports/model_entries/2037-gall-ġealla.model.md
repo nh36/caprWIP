@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The wider cognate family can be presented under a form such as `*gállą`, but
 the Old English noun itself belongs with a weak noun `*gallōn-`, cited here as
-`*gállô` [@Kroonen2013]. The selected input therefore differs from the broader
+`*gállô` [@Kroonen2013, 165]. The selected input therefore differs from the broader
 comparative headword in stem class.
 
 That stem-class distinction matters directly for the Old English shape. The weak

@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem `*brándaz`, continued by Old English
-`brand` and its continental cognates [@Orel2003; @Kroonen2013]. The selected
+`brand` and its continental cognates [@Orel2003, 53]. The selected
 input `*brándas` is not a different lexeme but the genitive singular of that
 same a-stem noun.
 

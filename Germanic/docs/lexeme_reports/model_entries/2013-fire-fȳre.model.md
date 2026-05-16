@@ -20,7 +20,7 @@ DERIVATION_CLASS: known_unmodelled
 
 Kroonen places the lexeme in a heteroclitic family `*fōr ~ *fun-` and explains
 the front-mutated West Germanic forms from an oblique form of the
-`*fu(w)eri` type [@Kroonen2013]. The selected input `*fūri` therefore does not
+`*fu(w)eri` type [@Kroonen2013, 151]. The selected input `*fūri` therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 

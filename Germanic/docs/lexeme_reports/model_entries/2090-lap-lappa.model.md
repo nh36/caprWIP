@@ -19,9 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources point to a weak noun with `pp`: Orel gives `*lappōn`,
-Kroonen places the word in a weak `*lappan-` family, and Kluge-Seebold cites
-West Germanic `lappa` forms alongside Old English `læppa`
-[@Orel2003; @Kroonen2013; @KlugeSeebold2011]. The selected input `*láppô`
+and Kluge-Seebold cites West Germanic `lappa` forms alongside Old English
+`læppa` [@Orel2003, 236; @KlugeSeebold2011]. The selected input `*láppô`
 follows that evidence.
 
 A competing comparative label `*lábbaz` has also circulated for the word

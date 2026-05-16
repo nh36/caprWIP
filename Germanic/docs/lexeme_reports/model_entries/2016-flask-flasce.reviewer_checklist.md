@@ -74,3 +74,7 @@
 
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 192`.
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §158`.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

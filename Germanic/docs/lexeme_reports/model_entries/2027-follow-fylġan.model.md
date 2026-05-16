@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen keeps the verb under `*fulgen-` and gives Old English `fylgan, folgian`,
 adding that Old Norse `fylgja` and Old English `fylg(e)an` continue a formation
-`*fulgjan-` [@Kroonen2013]. The comparative headword and the class-I formation
+`*fulgjan-` [@Kroonen2013, 159]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
 Ringe and Taylor make the split explicit as `PNWGmc *fulgija- ~ *fulgai- > OE

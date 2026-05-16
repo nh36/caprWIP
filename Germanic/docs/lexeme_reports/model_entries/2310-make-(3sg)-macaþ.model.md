@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from **`*makōjan-`** on the make-family base **`*maka-`** [@Kroonen2013]. Ringe and Taylor likewise derive Old English **`macian`** from PWGmc **`*makon`** through **`*mekojan`** [@RingeTaylor2014, 191].
+Kroonen derives the Old English verb from **`*makōjan-`** on the make-family base **`*maka-`** [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English **`macian`** from PWGmc **`*makon`** through **`*mekojan`** [@RingeTaylor2014, 191].
 
 The selected input **`*mákōθi`** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 

@@ -63,3 +63,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator page-map repair 01
 
 - Citation locator tightened or source status reclassified after page-map repair; verified against `ClarkHall1960, 49`.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

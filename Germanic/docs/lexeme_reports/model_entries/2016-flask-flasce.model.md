@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The wider Germanic family is often cited under a form such as `*flaskō`, but
 the evidence relevant for Old English points instead to a weak feminine
-formation `*fláskōn` / `*flaskǭ` [@Orel2003; @Kroonen2013]. That distinction is
+formation `*fláskōn` / `*flaskǭ` [@Orel2003, 104]. That distinction is
 crucial for the suffixal history of the noun.
 
 The selected input therefore differs from the citation label in stem class. Old

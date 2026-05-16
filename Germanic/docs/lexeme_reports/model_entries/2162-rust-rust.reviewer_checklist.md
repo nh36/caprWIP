@@ -67,3 +67,7 @@
 ## Citation locator full-exhaustion 01
 
 - Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

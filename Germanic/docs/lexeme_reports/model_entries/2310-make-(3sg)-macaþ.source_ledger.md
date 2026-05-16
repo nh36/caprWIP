@@ -18,3 +18,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 193`.
+
+## Citation locator full-exhaustion 02
+
+- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.

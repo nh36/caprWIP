@@ -19,7 +19,7 @@ DERIVATION_CLASS: known_unmodelled
 ### Reconstruction and comparative evidence
 
 Orel gives the noun under `*tappòn` and already connects it with Old English
-`tæppa` [@Orel2003]. The selected input is therefore the inherited noun itself;
+`tæppa` [@Orel2003, 402]. The selected input is therefore the inherited noun itself;
 the entry does not depend on a different lexeme-level proto or a different
 inherited noun cell.
 
@@ -27,7 +27,7 @@ inherited noun cell.
 
 The Old English noun family is well attested. Orel gives `tæppa`, and Clark
 Hall records `tæppa` together with derivatives `tæppere` and `tæppestre`
-[@Orel2003; @ClarkHall1960, 305]. The target is therefore a real Old English noun
+[@Orel2003, 402; @ClarkHall1960, 305]. The target is therefore a real Old English noun
 form, not a reconstructed convenience spelling.
 
 ### Development to Old English

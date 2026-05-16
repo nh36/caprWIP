@@ -20,7 +20,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 The comparative dictionaries do not support a single citation reconstruction
 uniformly. Orel cites `*rustaz sb.m./f.` with Old English `rust` and Old Saxon
-and Old High German `rost` [@Orel2003]. The form `*rústō` therefore stands here
+and Old High German `rost` [@Orel2003, 308]. The form `*rústō` therefore stands here
 as a competing citation reconstruction rather than as the best-supported
 inherited headword.
 
