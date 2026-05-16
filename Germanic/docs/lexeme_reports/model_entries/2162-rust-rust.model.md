@@ -41,10 +41,10 @@ preserved in the header.
 
 ### Development to Old English
 
-Under the regular lowering of stressed `u` before a following non-high vowel,
-the citation-form input gives `rost`, not `rust` [@Campbell1959;
-@RingeTaylor2014]. The same regular result follows from the comparative
-citation-form reconstruction `*rustaz`.
+Under Campbell's regular lowering of stressed `u` before a following mid or low
+vowel, the citation-form input gives `rost`, not `rust` [@Campbell1959, §115].
+Ringe and Taylor likewise point to the same lowered-vowel outcome for the
+comparative citation-form reconstruction `*rustaz` [@RingeTaylor2014].
 
 A high-vowel comparator such as instrumental-type `*rústu` would yield `rust`
 regularly, but that does not explain the attested citation form of the noun. No

@@ -1351,7 +1351,7 @@ OE J Loss After Heavy & \emph{*çeʤʤ} \\
 }
 \endgroup
 
-The selected input models a palatal _\*-gj-_ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959]. Bosworth-Toller records the noun under the standard spelling _hecg_ [@BosworthToller1898, 495], while Clark Hall preserves related lexicographic material under _heċġ_ / _hecg_ [@ClarkHall1960]. From _\*xágjaz_, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_.
+The selected input models a palatal _\*-gj-_ noun. West Germanic j-gemination yields the geminate stop in this environment [@Campbell1959, §407]. Bosworth-Toller records the noun under the standard spelling _hecg_ [@BosworthToller1898, 495], while Clark Hall preserves related lexicographic material under _heċġ_ / _hecg_ [@ClarkHall1960]. From _\*xágjaz_, later Old English palatalization and loss of final _j_ produce the palatal-geminate outcome _heġġ_.
 
 Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898, 495; @ClarkHall1960].
 
@@ -2114,7 +2114,7 @@ OE Ws Palatal Diphthongization & \emph{*ʃēap} \\
 }
 \endgroup
 
-Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014, 142; @Orel2003, 340]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
+Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014, 142; @Orel2003, 340]. Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960, 266; @Campbell1959, §185]. From _\*skḗpą_, Northwest Germanic lowering gives _\*skǣpą_; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_.
 
 Dialect note. Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014, 142; @Campbell1959, §186].
 
@@ -4830,11 +4830,9 @@ help frame the noun's vowel history.
 
 #### Development to Old English
 
-From _\*láppô_, Anglo-Frisian brightening first yields _æ_, and later
-A-restoration returns the root vowel to _a_ before the back-vocalic ending,
-after which shortening of the final vowel gives _lappa_
-[@Campbell1959; @SieversBrunner1965]. With the weak masculine input chosen, the
-OE development is regular.
+Campbell explicitly lists _lappa_ among the forms with restored _a_
+[@Campbell1959, §158]. With the weak masculine input chosen, the selected
+_lappa_ outcome is regular [@SieversBrunner1965].
 
 #### Stem comparison
 
@@ -4927,10 +4925,10 @@ the attested lemma _hliehhan_ itself.
 
 #### Development to Old English
 
-From _\*xláxjaną_, regular j-gemination yields the doubled fricative, and the
-subsequent Old English vowel developments lead to _hliehhan_
-[@Fulk2018; @Campbell1959]. Ringe and Taylor discuss the broken vowel of the
-Old English form as part of this same history, with possible support from the
+From _\*xláxjaną_, West Germanic j-gemination yields the doubled consonant
+[@Campbell1959, §407]. The subsequent Old English vowel developments lead to
+_hliehhan_ [@Fulk2018]. Ringe and Taylor discuss the broken vowel of the Old
+English form as part of this same history, with possible support from the
 related noun _hleahtor_ [@RingeTaylor2014].
 
 #### Branch comparison
@@ -5719,8 +5717,8 @@ with short neuter i-stems such as _spere_ [@KlugeSeebold2011;
 @Campbell1959, §609]. The older morphological background is the s-stem
 _\*sib-iz_, but the selected input is the normalized i-stem form _\*síbi_.
 
-Kroonen's relevant nearby entry is not ‘sieve’ but _\*sebjō-_ ‘kinship’, the
-source of Old English _sibb_ [@Kroonen2013]. Orel's _\*sibaz_ ... OE _sife_
+Kroonen's nearby _\*sebjō-_ entry belongs to the separate kinship lexeme that
+yields Old English _sibb_, not to the sieve word. Orel's _\*sibaz_ ... OE _sife_
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
@@ -9471,10 +9469,9 @@ behind later English knob.
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall preserve Old English evidence of the
-_cnopp_ / _cnoppa_ type [@BosworthToller1898; @ClarkHall1960, 79]. Those forms are
-genuine Old English evidence, but they belong to the voiceless branch of the
-family.
+Clark Hall preserves Old English evidence of the _cnoppa_ type
+[@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
+belong to the voiceless branch of the family.
 
 The target _cnobba_ is different in status. It is a **reconstructed Old
 English form**, not a directly attested one. The point of using it here is to
@@ -10152,10 +10149,10 @@ preserved in the header.
 
 #### Development to Old English
 
-Under the regular lowering of stressed _u_ before a following non-high vowel,
-the citation-form input gives _rost_, not _rust_ [@Campbell1959;
-@RingeTaylor2014]. The same regular result follows from the comparative
-citation-form reconstruction _\*rustaz_.
+Under Campbell's regular lowering of stressed _u_ before a following mid or low
+vowel, the citation-form input gives _rost_, not _rust_ [@Campbell1959, §115].
+Ringe and Taylor likewise point to the same lowered-vowel outcome for the
+comparative citation-form reconstruction _\*rustaz_ [@RingeTaylor2014].
 
 A high-vowel comparator such as instrumental-type _\*rústu_ would yield _rust_
 regularly, but that does not explain the attested citation form of the noun. No

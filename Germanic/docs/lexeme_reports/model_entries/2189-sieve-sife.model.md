@@ -23,8 +23,8 @@ with short neuter i-stems such as `spere` [@KlugeSeebold2011;
 @Campbell1959, §609]. The older morphological background is the s-stem
 `*sib-iz`, but the selected input is the normalized i-stem form `*síbi`.
 
-Kroonen's relevant nearby entry is not ‘sieve’ but `*sebjō-` ‘kinship’, the
-source of Old English `sibb` [@Kroonen2013]. Orel's `*sibaz ... OE sife`
+Kroonen's nearby `*sebjō-` entry belongs to the separate kinship lexeme that
+yields Old English `sibb`, not to the sieve word. Orel's `*sibaz ... OE sife`
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 

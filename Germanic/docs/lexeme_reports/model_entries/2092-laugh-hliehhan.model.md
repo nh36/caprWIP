@@ -41,10 +41,10 @@ the attested lemma `hliehhan` itself.
 
 ### Development to Old English
 
-From `*xláxjaną`, regular j-gemination yields the doubled fricative, and the
-subsequent Old English vowel developments lead to `hliehhan`
-[@Fulk2018; @Campbell1959]. Ringe and Taylor discuss the broken vowel of the
-Old English form as part of this same history, with possible support from the
+From `*xláxjaną`, West Germanic j-gemination yields the doubled consonant
+[@Campbell1959, §407]. The subsequent Old English vowel developments lead to
+`hliehhan` [@Fulk2018]. Ringe and Taylor discuss the broken vowel of the Old
+English form as part of this same history, with possible support from the
 related noun `hleahtor` [@RingeTaylor2014].
 
 ### Branch comparison

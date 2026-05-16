@@ -42,11 +42,9 @@ help frame the noun's vowel history.
 
 ### Development to Old English
 
-From `*láppô`, Anglo-Frisian brightening first yields `æ`, and later
-A-restoration returns the root vowel to `a` before the back-vocalic ending,
-after which shortening of the final vowel gives `lappa`
-[@Campbell1959; @SieversBrunner1965]. With the weak masculine input chosen, the
-OE development is regular.
+Campbell explicitly lists `lappa` among the forms with restored `a`
+[@Campbell1959, §158]. With the weak masculine input chosen, the selected
+`lappa` outcome is regular [@SieversBrunner1965].
 
 ### Stem comparison
 

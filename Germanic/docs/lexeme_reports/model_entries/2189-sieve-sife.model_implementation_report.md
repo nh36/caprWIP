@@ -67,3 +67,7 @@ Citation locator tightened after claim-isolation pass; verified against ClarkHal
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `Orel2003, 328`.
+
+## Citation locator full-exhaustion 01
+
+- Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.

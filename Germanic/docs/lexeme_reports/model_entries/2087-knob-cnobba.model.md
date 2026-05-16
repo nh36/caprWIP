@@ -31,10 +31,9 @@ behind later English knob.
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall preserve Old English evidence of the
-`cnopp / cnoppa` type [@BosworthToller1898; @ClarkHall1960, 79]. Those forms are
-genuine Old English evidence, but they belong to the voiceless branch of the
-family.
+Clark Hall preserves Old English evidence of the `cnoppa` type
+[@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
+belong to the voiceless branch of the family.
 
 The target **`cnobba`** is different in status. It is a **reconstructed Old
 English form**, not a directly attested one. The point of using it here is to

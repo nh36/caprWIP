@@ -61,3 +61,7 @@
 ## PDF review 01
 
 - PDF review 01: corrected rendered prose/formatting issue.
+
+## Citation locator full-exhaustion 01
+
+- Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.

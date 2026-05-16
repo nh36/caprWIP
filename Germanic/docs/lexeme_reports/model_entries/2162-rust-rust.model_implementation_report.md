@@ -72,3 +72,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 245`.
+
+## Citation locator full-exhaustion 01
+
+- Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.

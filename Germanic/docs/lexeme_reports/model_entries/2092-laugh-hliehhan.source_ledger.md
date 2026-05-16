@@ -17,3 +17,7 @@ book-style entry was drafted.
 ## Citation-locator claim-isolation 05
 
 Citation locator tightened after claim-isolation pass; verified against BosworthToller1898 at 551, ClarkHall1960 at 160-161, and BrightCassidyRingler1971 at 315.
+
+## Citation locator full-exhaustion 01
+
+- Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.

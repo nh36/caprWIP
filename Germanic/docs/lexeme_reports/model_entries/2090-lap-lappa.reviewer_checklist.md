@@ -65,3 +65,7 @@
 ## Citation-locator claim-isolation 05
 
 Citation locator tightened after claim-isolation pass; verified against Campbell1959 at §158 and SieversBrunner1965 at §10.
+
+## Citation locator full-exhaustion 01
+
+- Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.
