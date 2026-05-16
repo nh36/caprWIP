@@ -65,3 +65,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator claim-isolation 06
 
 - Citation locator tightened after claim-isolation pass; verified against `Kroonen2013, 465`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Orel2003, 362`.

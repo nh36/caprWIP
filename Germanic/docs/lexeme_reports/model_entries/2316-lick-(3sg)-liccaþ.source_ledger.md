@@ -20,3 +20,7 @@ This ledger records the 3sg finite-cell evidence and lick-family support used be
 Citation locator claim-isolation 01 split the finite-cell sentence and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §398.1, §356.4`, `SieversBrunner1965, §45 Anm. 3`, and `RingeTaylor2014, 80`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `BosworthToller1898, 614`.

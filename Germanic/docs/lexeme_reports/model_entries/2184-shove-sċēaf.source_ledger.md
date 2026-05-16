@@ -16,3 +16,7 @@ before the book-style prose was drafted.
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `BrightCassidyRingler1971, 347`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Sweet1953, 29`.

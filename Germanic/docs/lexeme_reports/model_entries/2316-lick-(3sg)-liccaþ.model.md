@@ -25,7 +25,7 @@ The selected form in this entry is the non-`j` present third singular `*líkkō�
 
 ### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of `liccian` [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
+Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of `liccian` [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
 The form treated here is the present third singular `liccaþ`. It is a selected paradigm form beside the lemma `liccian` and the related imperative `licca`, not a separately lemmatized headword.
 

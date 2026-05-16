@@ -51,3 +51,7 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 48`.

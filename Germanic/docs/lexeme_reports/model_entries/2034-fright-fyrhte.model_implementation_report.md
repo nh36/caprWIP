@@ -56,3 +56,7 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, writing-skill file, or existing model entry was
   changed.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Orel2003, 120`.

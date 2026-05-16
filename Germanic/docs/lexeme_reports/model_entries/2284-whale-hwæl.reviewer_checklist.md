@@ -63,3 +63,7 @@
 
 - Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 197`.
 - Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 170`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Kroonen2013, 262`.

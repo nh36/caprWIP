@@ -37,7 +37,7 @@ competing comparative identification rather than a hidden cell of `*wainōjaną`
 Clark Hall records `hwinan` with the gloss 'to hiss, whizz, whistle'
 [@ClarkHall1960, 171]. Seebold keeps the verb among the strong verbs and notes that
 only a present-tense attestation is directly preserved, while Sievers-Brunner
-likewise lists `hwinan stv.` [@Seebold1970; @SieversBrunner1965].
+likewise lists `hwinan stv.` [@Seebold1970, 280; @SieversBrunner1965].
 
 The Old English form is normalized here as `hwīnan`. That normalization adds the
 usual vowel length marking to the dictionary spelling `hwinan`; it does not turn

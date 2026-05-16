@@ -32,10 +32,10 @@ cleaner comparator here [@Fulk2018].
 
 ### Old English evidence
 
-The ordinary Old English headword is `habban`, while the present paradigm also
-shows forms of the `hæf-` type [@BosworthToller1898; @ClarkHall1960, 157].
+The ordinary Old English headword is `habban` [@ClarkHall1960, 157].
 Campbell's Anglian paradigm includes unsyncopated 3sg forms of the `hæfed` type,
-supporting the normalized target **`hæfeþ`** [@Campbell1959, §762].
+and the present paradigm therefore shows forms of the `hæf-` type that support
+the normalized target **`hæfeþ`** [@Campbell1959, §762].
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more

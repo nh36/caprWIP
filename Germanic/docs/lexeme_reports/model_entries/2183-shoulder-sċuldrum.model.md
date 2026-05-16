@@ -26,9 +26,9 @@ A dative/instrumental plural form **`*skúldramiz`** aligns with the inherited p
 
 ### Old English evidence
 
-The ordinary Old English headword is **`sculdor`**. Bosworth-Toller and Clark Hall both lemmatize `sculdor` as the normal dictionary form, and the Bosworth-Toller material also preserves plural and oblique forms such as **`sculdru`**, **`sculdra`**, and **`sculdrum`** [@BosworthToller1898; @ClarkHall1960, 257]. The dative plural **`sculdrum`** is directly attested in the dictionary material [@BosworthToller1898].
+The ordinary Old English headword is **`sculdor`**. Clark Hall lemmatizes `sculdor` as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural **`sculdrum`** [@BosworthToller1898, 85].
 
-Bosworth-Toller's Supplement records a weak-feminine **`sculdra, an`**, so `sculdra` belongs to the Old English record beside the stronger masculine paradigm headed by `sculdor` [@BosworthToller1898]. Brunner and Luick also record later spellings such as **`sceoldor`** and the i-mutated dative plural **`scyldrum`**, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
+Bosworth-Toller's Supplement records a weak-feminine **`sculdra, an`** [@BosworthToller1898, 699], so `sculdra` belongs to the Old English record beside the stronger masculine paradigm headed by `sculdor`. Brunner and Luick also record later spellings such as **`sceoldor`** and the i-mutated dative plural **`scyldrum`**, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
 The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural **`sċuldrum`**. The spelling with `sċ-` is a normalized representation of the same Old English initial cluster.
 

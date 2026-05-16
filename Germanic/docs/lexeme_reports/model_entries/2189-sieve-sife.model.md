@@ -26,7 +26,7 @@ with short neuter i-stems such as `spere` [@KlugeSeebold2011;
 Kroonen's relevant nearby entry is not ‘sieve’ but `*sebjō-` ‘kinship’, the
 source of Old English `sibb` [@Kroonen2013]. Orel's `*sibaz ... OE sife`
 preserves a broader handbook notation, but that a-stem shape does not fit the
-Old English form treated here [@Orel2003].
+Old English form treated here [@Orel2003, 328].
 
 ### Old English evidence
 

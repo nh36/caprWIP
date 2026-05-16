@@ -31,8 +31,8 @@ themselves.
 
 ### Old English evidence
 
-Old English dictionaries record the noun as `brēost` / `breóst`
-[@BosworthToller1898; @ClarkHall1960, 65]. The form is an established Old English
+Clark Hall records the noun as `brēost` / `breóst`
+[@ClarkHall1960, 65]. The form is an established Old English
 lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation

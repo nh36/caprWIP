@@ -64,3 +64,7 @@ Citation locator claim-isolation 01 split the class-III stem and finite-form sen
 
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 364`.
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §762`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 157`.

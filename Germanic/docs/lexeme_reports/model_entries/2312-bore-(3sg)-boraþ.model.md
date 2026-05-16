@@ -24,7 +24,7 @@ Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Ta
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as **`borian`** [@ClarkHall1960]. The relevant comparison form here is the normalized present-third-singular **`boraþ`**, used beside the headword and the imperative singular **`bora`**.
+Clark Hall lemmatizes the verb as **`borian`** [@ClarkHall1960, 48]. The relevant comparison form here is the normalized present-third-singular **`boraþ`**, used beside the headword and the imperative singular **`bora`**.
 
 Campbell's dialect survey allows secondary **`-e-`** and **`-o-`** spellings in 2sg and 3sg class-II forms, but the basic ending remains **`-aþ`** [@Campbell1959, §757]. **`Boraþ`** is therefore the regular comparison form for this non-`j` 3sg cell.
 

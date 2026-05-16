@@ -29,3 +29,7 @@ Citation locator claim-isolation 01 split the family-identification sentence and
 ## Citation-locator claim-isolation 06
 
 - Citation wording tightened after claim-isolation pass; retained the localized `Kroonen2013, 267` and `Orel2003, 201` family-identification citations.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Seebold1970, 280`.

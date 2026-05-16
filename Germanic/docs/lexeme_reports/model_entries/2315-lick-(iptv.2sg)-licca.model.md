@@ -25,7 +25,7 @@ Campbell's weak class-II discussion gives present forms such as `lufas, -aþ (< 
 
 ### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898]. Campbell cites `liccian` among Old English forms with preserved geminate `cc` [@Campbell1959, §398.1]. Brunner likewise cites `liccian` [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
+Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898, 614]. Campbell cites `liccian` among Old English forms with preserved geminate `cc` [@Campbell1959, §398.1]. Brunner likewise cites `liccian` [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
 
 The selected target in this entry is the imperative singular `licca`. It is a paradigm form chosen beside the headword `liccian` and the related present `liccaþ`, not a separately lemmatized citation word.
 

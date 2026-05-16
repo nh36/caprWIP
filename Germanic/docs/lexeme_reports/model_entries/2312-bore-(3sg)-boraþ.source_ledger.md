@@ -14,3 +14,7 @@ This ledger records the finite-cell evidence and bore-family background used bef
 | Research memo synthesis | current local analysis | `boraþ` as 3sg present beside `borian` and `bora` | selected paradigm form | `boraþ` | The local evidence supports `boraþ` as a normalized 3sg comparison form rather than as an independently documented headword. | no | `Germanic/docs/lexeme_reports/research_memos/2312-bore-(3sg)-boraþ.md:55-64; 92-104` | high |
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 48`.

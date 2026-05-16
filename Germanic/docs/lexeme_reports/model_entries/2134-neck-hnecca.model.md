@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative `*hnekkō`, genitive `*hnukkaz`, and accusative plural
 `*hnakkuns`, and he places Old English `hnecca` among the e-grade descendants
-[@Kroonen2011]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
+[@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011].
 
 A competing comparative label `*xnákkaz` remains useful for the wider family, and

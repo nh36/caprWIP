@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The comparative sources are not uniform. Orel gives **`*xwalaz`** and notes some
 mixed **`*xwaliz`** evidence [@Orel2003, 197]. Kroonen instead cites
-**`*hwali-`** [@Kroonen2013].
+**`*hwali-`** [@Kroonen2013, 262].
 
 Both notations agree on inherited initial **`hw-/xw-`**, but they differ in
 stem label. The a-stem-like input followed here is closer to Orel's notation

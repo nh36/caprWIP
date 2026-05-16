@@ -85,3 +85,7 @@ The source ledger also records `Fulk2018` as locally available for the `*-o-m(i)
 ## Citation-locator master manifest 04
 
 - Tightened `ClarkHall1960` from a broad citation to verified page locator `257` after direct inspection of the local Clark Hall text.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `BosworthToller1898, 85 and 699`.

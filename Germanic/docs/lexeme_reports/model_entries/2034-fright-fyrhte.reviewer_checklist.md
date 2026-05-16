@@ -57,3 +57,7 @@
 1. Later editorial review should keep the noun `fyrhte` distinct from both the
    adjective `forht` and the remodeled nominative noun forms `fyrhtu` /
    `fyrhto`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Orel2003, 120`.

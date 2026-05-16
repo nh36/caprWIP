@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The noun belongs to the inherited in-stem abstract `*furxtīn`, the same family
-as Gothic `faurhtei` [@Orel2003]. The selected input `*fúrxtīnaz` is not a
+as Gothic `faurhtei` [@Orel2003, 120]. The selected input `*fúrxtīnaz` is not a
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as

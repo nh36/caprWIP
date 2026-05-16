@@ -52,3 +52,7 @@
 2. Later promotion should keep the distinction between the bore-family lemma row and the 3sg companion row explicit.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 48`.

@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen keeps the inherited verb under class-III `*sparēn-`
-[@Kroonen2013, 465]. Orel similarly preserves `*sparēnan` [@Orel2003]. Ringe
+[@Kroonen2013, 465]. Orel similarly preserves `*sparēnan` [@Orel2003, 362]. Ringe
 and Taylor, however, reconstruct `*sparai- ~ *sparja-` for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
 The selected input `*spárōjaną` therefore represents the refashioned class-II

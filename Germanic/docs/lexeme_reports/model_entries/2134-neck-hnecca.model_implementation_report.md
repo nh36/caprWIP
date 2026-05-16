@@ -70,3 +70,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 162`.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Kroonen2011, 167`.

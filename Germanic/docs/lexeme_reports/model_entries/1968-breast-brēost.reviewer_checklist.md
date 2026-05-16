@@ -63,3 +63,7 @@
 - Added page-specific locators for `ClarkHall1960, 65`; `Orel2003, 95`; `RingeTaylor2014, 43`.
 - This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
 - Existing citations to conditional or unresolved locator sources were left unchanged.
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 65`.

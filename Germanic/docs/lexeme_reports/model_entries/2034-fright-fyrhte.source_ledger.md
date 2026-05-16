@@ -13,3 +13,7 @@ book-style entry was drafted.
 | Bosworth-Toller | OE dictionary evidence | attested `fyrhte` with multiple textual citations; nominative `fyrhto` / `fyrhtu` forms | oblique and lemma evidence | `fyrhte`; `fyrhtu`; `fyrhto` | Supplies the crucial attested OE target and the remodeled nominative comparanda. | yes — `BosworthToller1898` | cited in packet/memo/slice | high |
 | Clark Hall | OE dictionary evidence | `fyrht` / `forht` distinction; fear noun entry | noun vs adjective distinction | `fyrhte`; `fyrhtu` | Helps keep the noun distinct from the adjective `forht`. | yes — `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | oblique in-stem cell preferred over lemma and bare stem | paradigm-cell choice | `fyrhte` | The decisive issue is lemma-level analogical remodeling, not a failure in the oblique derivation. | no | `Germanic/docs/lexeme_reports/research_memos/2034-fright-fyrhte.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2034-fright-fyrhte.md` | high; keep local-file narration out of final prose |
+
+## Citation locator source-preparation triage 01
+
+- Citation locator tightened or source status reclassified after source-preparation triage; verified against `Orel2003, 120`.

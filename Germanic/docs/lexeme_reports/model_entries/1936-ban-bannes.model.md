@@ -20,7 +20,7 @@ DERIVATION_CLASS: late_analogy
 
 Orel cites a bann-noun under `*bannan`, while Seebold distinguishes bann-stems
 of both masculine and neuter type and gives Old English `gebann` as the noun
-reflex [@Orel2003; @Seebold1970]. The citation reconstruction `*bánną`
+reflex [@Orel2003; @Seebold1970, 89]. The citation reconstruction `*bánną`
 therefore names the lexeme, but the selected input `*bánnas` is a specific
 genitive singular cell.
 

@@ -364,7 +364,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*bān} \\
 }
 \endgroup
 
-Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013, 86; @Orel2003, 71]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_. Clark Hall and Bosworth-Toller record _bān_ as the ordinary Old English noun [@ClarkHall1960, 44; @BosworthToller1898]. West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_.
+Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013, 86; @Orel2003, 71]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_. Clark Hall records _bān_ as the ordinary Old English noun [@ClarkHall1960, 44]. West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_.
 
 Source note. The comparative headwords _\*baina-_ and _\*bainan_ provide lexeme background. The relevant comparison form here is the nominative-accusative singular _\*báiną_.
 
@@ -1298,7 +1298,7 @@ OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 }
 \endgroup
 
-Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997, 224; @RingeTaylor2014, 141]. Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960, 158; @ClarkHall1960, 171]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
+Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and explain that the regular native West Saxon development would be of the _hierfest / hyrfest_ type [@Bammesberger1997, 224; @RingeTaylor2014, 141]. Clark Hall records _hærfest_, with _herfest_ as a variant in the lexical tradition [@ClarkHall1960, 158; @ClarkHall1960, 171]. From _\*xárbistuz_, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_.
 
 Source note. The selected target _hierfest_ represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / herfest, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997, 230; @RingeTaylor2014, 267].
 
@@ -1351,9 +1351,9 @@ OE J Loss After Heavy & \emph{*çeʤʤ} \\
 }
 \endgroup
 
-The selected input models a palatal _\*-gj-_ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959]. Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ / _heċġ_ [@BosworthToller1898; @ClarkHall1960]. From _\*xágjaz_, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_.
+The selected input models a palatal _\*-gj-_ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959]. Bosworth-Toller records the noun under the standard spelling _hecg_ [@BosworthToller1898, 495], while Clark Hall preserves related lexicographic material under _heċġ_ / _hecg_ [@ClarkHall1960]. From _\*xágjaz_, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_.
 
-Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
+Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898, 495; @ClarkHall1960].
 
 ### helm — OE helm
 
@@ -3961,8 +3961,8 @@ themselves.
 
 #### Old English evidence
 
-Old English dictionaries record the noun as _brēost_ / _breóst_
-[@BosworthToller1898; @ClarkHall1960, 65]. The form is an established Old English
+Clark Hall records the noun as _brēost_ / _breóst_
+[@ClarkHall1960, 65]. The form is an established Old English
 lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation
@@ -5267,7 +5267,7 @@ Outcome: _hnecca_
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative _\*hnekkō_, genitive _\*hnukkaz_, and accusative plural
 _\*hnakkuns_, and he places Old English _hnecca_ among the e-grade descendants
-[@Kroonen2011]. Kluge-Seebold likewise identifies _ae. hnecca_ as an ablaut
+[@Kroonen2011, 167]. Kluge-Seebold likewise identifies _ae. hnecca_ as an ablaut
 partner of the a-grade _Nacken_ family [@KlugeSeebold2011].
 
 A competing comparative label _\*xnákkaz_ remains useful for the wider family, and
@@ -5632,7 +5632,7 @@ Outcome: _sǣ_
 #### Reconstruction and comparative evidence
 
 Kroonen gives the noun in stem notation as _\*saiwi-_, an i-stem whose English
-reflex is cited as OE _sæ_ [@Kroonen2013]. Ringe and Taylor write the fuller
+reflex is cited as OE _sæ_ [@Kroonen2013, 423]. Ringe and Taylor write the fuller
 form _\*saiwiz_ and derive it through _\*sawi_ > _\*sei_ > OE _sǣ_
 [@RingeTaylor2014, §6.7.1]. The comparative headword is therefore shorter than
 the form required for the English history: _\*sái_ names the lexeme, but
@@ -5642,7 +5642,7 @@ later development.
 #### Old English evidence
 
 The Old English noun is the ordinary word for ‘sea’. Kroonen cites it as _sæ_;
-the normalized form here is _sǣ_ [@Kroonen2013]. Campbell likewise treats
+the normalized form here is _sǣ_ [@Kroonen2013, 423]. Campbell likewise treats
 _sea_ as continuing the same _\*saiui-_ > _\*sǣi_ history, with loss of _u_/_w_
 before _i_ [@Campbell1959, §406].
 
@@ -5722,7 +5722,7 @@ _\*sib-iz_, but the selected input is the normalized i-stem form _\*síbi_.
 Kroonen's relevant nearby entry is not ‘sieve’ but _\*sebjō-_ ‘kinship’, the
 source of Old English _sibb_ [@Kroonen2013]. Orel's _\*sibaz_ ... OE _sife_
 preserves a broader handbook notation, but that a-stem shape does not fit the
-Old English form treated here [@Orel2003].
+Old English form treated here [@Orel2003, 328].
 
 #### Old English evidence
 
@@ -5807,7 +5807,7 @@ Outcome: _sparian_
 #### Reconstruction and comparative evidence
 
 Kroonen keeps the inherited verb under class-III _\*sparēn-_
-[@Kroonen2013, 465]. Orel similarly preserves _\*sparēnan_ [@Orel2003]. Ringe
+[@Kroonen2013, 465]. Orel similarly preserves _\*sparēnan_ [@Orel2003, 362]. Ringe
 and Taylor, however, reconstruct _\*sparai-_ ~ _\*sparja-_ for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
 The selected input _\*spárōjaną_ therefore represents the refashioned class-II
@@ -6521,7 +6521,7 @@ Outcome: _hwæl_
 
 The comparative sources are not uniform. Orel gives _\*xwalaz_ and notes some
 mixed _\*xwaliz_ evidence [@Orel2003, 197]. Kroonen instead cites
-_\*hwali-_ [@Kroonen2013].
+_\*hwali-_ [@Kroonen2013, 262].
 
 Both notations agree on inherited initial _hw-/xw-_, but they differ in
 stem label. The a-stem-like input followed here is closer to Orel's notation
@@ -6625,7 +6625,7 @@ competing comparative identification rather than a hidden cell of _\*wainōjaną
 Clark Hall records _hwinan_ with the gloss 'to hiss, whizz, whistle'
 [@ClarkHall1960, 171]. Seebold keeps the verb among the strong verbs and notes that
 only a present-tense attestation is directly preserved, while Sievers-Brunner
-likewise lists _hwinan stv._ [@Seebold1970; @SieversBrunner1965].
+likewise lists _hwinan stv._ [@Seebold1970, 280; @SieversBrunner1965].
 
 The Old English form is normalized here as _hwīnan_. That normalization adds the
 usual vowel length marking to the dictionary spelling _hwinan_; it does not turn
@@ -7017,7 +7017,7 @@ Outcome: _bannes_
 
 Orel cites a bann-noun under _\*bannan_, while Seebold distinguishes bann-stems
 of both masculine and neuter type and gives Old English _gebann_ as the noun
-reflex [@Orel2003; @Seebold1970]. The citation reconstruction _\*bánną_
+reflex [@Orel2003; @Seebold1970, 89]. The citation reconstruction _\*bánną_
 therefore names the lexeme, but the selected input _\*bánnas_ is a specific
 genitive singular cell.
 
@@ -7489,7 +7489,7 @@ Outcome: _fyrhte_
 #### Reconstruction and comparative evidence
 
 The noun belongs to the inherited in-stem abstract _\*furxtīn_, the same family
-as Gothic _faurhtei_ [@Orel2003]. The selected input _\*fúrxtīnaz_ is not a
+as Gothic _faurhtei_ [@Orel2003, 120]. The selected input _\*fúrxtīnaz_ is not a
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with _-u_ or _-o_ as
@@ -7696,10 +7696,10 @@ cleaner comparator here [@Fulk2018].
 
 #### Old English evidence
 
-The ordinary Old English headword is _habban_, while the present paradigm also
-shows forms of the _hæf-_ type [@BosworthToller1898; @ClarkHall1960, 157].
+The ordinary Old English headword is _habban_ [@ClarkHall1960, 157].
 Campbell's Anglian paradigm includes unsyncopated 3sg forms of the _hæfed_ type,
-supporting the normalized target _hæfeþ_ [@Campbell1959, §762].
+and the present paradigm therefore shows forms of the _hæf-_ type that support
+the normalized target _hæfeþ_ [@Campbell1959, §762].
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more
@@ -8354,9 +8354,9 @@ A dative/instrumental plural form _\*skúldramiz_ aligns with the inherited plur
 
 #### Old English evidence
 
-The ordinary Old English headword is _sculdor_. Bosworth-Toller and Clark Hall both lemmatize _sculdor_ as the normal dictionary form, and the Bosworth-Toller material also preserves plural and oblique forms such as _sculdru_, _sculdra_, and _sculdrum_ [@BosworthToller1898; @ClarkHall1960, 257]. The dative plural _sculdrum_ is directly attested in the dictionary material [@BosworthToller1898].
+The ordinary Old English headword is _sculdor_. Clark Hall lemmatizes _sculdor_ as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural _sculdrum_ [@BosworthToller1898, 85].
 
-Bosworth-Toller's Supplement records a weak-feminine _sculdra, an_, so _sculdra_ belongs to the Old English record beside the stronger masculine paradigm headed by _sculdor_ [@BosworthToller1898]. Brunner and Luick also record later spellings such as _sceoldor_ and the i-mutated dative plural _scyldrum_, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
+Bosworth-Toller's Supplement records a weak-feminine _sculdra, an_ [@BosworthToller1898, 699], so _sculdra_ belongs to the Old English record beside the stronger masculine paradigm headed by _sculdor_. Brunner and Luick also record later spellings such as _sceoldor_ and the i-mutated dative plural _scyldrum_, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
 The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural _sċuldrum_. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
 
@@ -8441,7 +8441,7 @@ preterite cell.
 
 The ordinary dictionary verb is _scūfan_/_scēofan_, but the preterite itself is
 well attested. Bright gives the principal parts _scufan, sceaf, scufon, scofen_
-[@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953].
+[@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
 The normalized form here is _sċēaf_,
 regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
 
@@ -8932,7 +8932,7 @@ Campbell's class-II pattern lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ and Ringe and Ta
 
 #### Old English evidence
 
-Clark Hall lemmatizes the verb as _borian_ [@ClarkHall1960]. The relevant comparison form here is the normalized present-third-singular _boraþ_, used beside the headword and the imperative singular _bora_.
+Clark Hall lemmatizes the verb as _borian_ [@ClarkHall1960, 48]. The relevant comparison form here is the normalized present-third-singular _boraþ_, used beside the headword and the imperative singular _bora_.
 
 Campbell's dialect survey allows secondary _-e-_ and _-o-_ spellings in 2sg and 3sg class-II forms, but the basic ending remains _-aþ_ [@Campbell1959, §757]. _Boraþ_ is therefore the regular comparison form for this non-_j_ 3sg cell.
 
@@ -9158,7 +9158,7 @@ Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (<
 
 #### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898]. Campbell cites _liccian_ among Old English forms with preserved geminate _cc_ [@Campbell1959, §398.1]. Brunner likewise cites _liccian_ [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
+Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898, 614]. Campbell cites _liccian_ among Old English forms with preserved geminate _cc_ [@Campbell1959, §398.1]. Brunner likewise cites _liccian_ [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
 
 The selected target in this entry is the imperative singular _licca_. It is a paradigm form chosen beside the headword _liccian_ and the related present _liccaþ_, not a separately lemmatized citation word.
 
@@ -9232,7 +9232,7 @@ The selected form in this entry is the non-_j_ present third singular _\*líkkō
 
 #### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of _liccian_ [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
+Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of _liccian_ [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
 The form treated here is the present third singular _liccaþ_. It is a selected paradigm form beside the lemma _liccian_ and the related imperative _licca_, not a separately lemmatized headword.
 
