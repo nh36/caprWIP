@@ -52,3 +52,7 @@
 2. Later promotion should keep the distinction between shared make-family evidence and the row-specific 3sg comparison explicit.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 191, 80` and `Campbell1959, §356.4`.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 193`.

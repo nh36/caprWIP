@@ -31,7 +31,7 @@ northern WGmc `*hebun` > West Saxon and Northumbrian `heofon`, Mercian
 ### Old English evidence
 
 Old English dictionaries record the standard West Saxon noun as **`heofon`**,
-alongside Anglian or Mercian `hefen` material [@ClarkHall1960;
+alongside Anglian or Mercian `hefen` material [@ClarkHall1960, 188;
 @BosworthToller1898, 43]. Campbell also cites an earlier stage `hefzen` in the
 history of the word [@Campbell1959, §381].
 

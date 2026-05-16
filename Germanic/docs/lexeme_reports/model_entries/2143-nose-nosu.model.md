@@ -20,14 +20,14 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs a Germanic ablaut pair `*nasō- ~ *nusō-` and adds that the
 root `*nus-` is likely to have arisen as a secondary zero grade after a
-remodeling of the older paradigm [@Kroonen2013]. Campbell is more specific for
+remodeling of the older paradigm [@Kroonen2013, 423]. Campbell is more specific for
 Old English, citing `nosu < *nusō` [@Campbell1959, 44].
 
 The citation reconstruction `*nasō` is therefore best treated as the full-grade
 comparative headword, while the selected input `*núsō` represents the remodeled
 zero-grade line continued by the Old English form discussed here. Orel's `*nasō
 ... OE nasu` preserves the competing full-grade notation and shows that the two
-lines should not be collapsed without comment [@Orel2003].
+lines should not be collapsed without comment [@Orel2003, 320].
 
 ### Old English evidence
 

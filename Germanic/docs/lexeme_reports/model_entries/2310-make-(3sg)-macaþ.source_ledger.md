@@ -14,3 +14,7 @@ This ledger records the finite-cell evidence and make-family background used bef
 | Companion rows 2117 and 2309 | live TSV context | `*makōjaną -> macian`; `*mákô -> maca` | lemma row and imperative companion | `macian`; `maca` | Useful family controls for distinguishing the selected 3sg from the headword and the imperative. | no | `Germanic/data/germanic-aligned-final.tsv:725; 1470-1471` | high |
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 191, 80` and `Campbell1959, §356.4`.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 193`.

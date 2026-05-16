@@ -20,3 +20,7 @@ This ledger records the finite-cell evidence and learn-family background used be
 - Existing citations to conditional or unresolved locator sources were left unchanged.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 38, 247` and `SieversBrunner1965, §417 Anm. 10`.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 186`.

@@ -24,7 +24,7 @@ The selected input **`*mákōθi`** is therefore a finite 3sg cell of the same f
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as **`macian`** [@ClarkHall1960]. The relevant comparison form here is the normalized present-third-singular **`macaþ`**, set beside the dictionary headword and the related imperative singular **`maca`**.
+Clark Hall lemmatizes the verb as **`macian`** [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular **`macaþ`**, set beside the dictionary headword and the related imperative singular **`maca`**.
 
 Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ`**, while his dialect survey allows secondary **`-e-`** spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. **`Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
 

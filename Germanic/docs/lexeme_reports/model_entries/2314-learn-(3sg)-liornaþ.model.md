@@ -24,7 +24,7 @@ For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Tay
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960]. Brunner records Northumbrian finite forms in **`liorn-`**, including **`liorna`** and the 3sg **`liornes`**, beside the West-Saxon-looking **`leornian`** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io`** beside **`leornian`** [@Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in **`liorn-`**, including **`liorna`** and the 3sg **`liornes`**, beside the West-Saxon-looking **`leornian`** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io`** beside **`leornian`** [@Campbell1959, §123 n. 2].
 
 The relevant comparison form here is the normalized 3sg **`liornaþ`**. The directly cited Old English evidence supports the finite stem **`liorn-`**; the exact **`-aþ`** ending follows the regular class-II 3sg pattern.
 

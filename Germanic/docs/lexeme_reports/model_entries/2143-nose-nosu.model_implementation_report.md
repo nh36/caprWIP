@@ -68,3 +68,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator page-anchor repair 01
 
 - Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 810`.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `Kroonen2013, 423` and `Orel2003, 320`.

@@ -18,3 +18,7 @@ before the book-style prose was drafted.
 - Added page-specific locators for `BosworthToller1898, 121`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `Kroonen2013, 445`.

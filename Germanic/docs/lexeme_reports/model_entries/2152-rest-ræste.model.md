@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen treats the noun as a feminine ō-stem `*rastō-`, continued by Old English
-`ræst` [@Kroonen2013]. The selected input `*rástōz` therefore does not replace
+`ræst` [@Kroonen2013, 445]. The selected input `*rástōz` therefore does not replace
 the lexeme-level headword. It identifies one oblique singular cell on the side of
 the paradigm that yields `ræste`.
 
@@ -30,7 +30,7 @@ to a nominative singular that would remain `rast`.
 
 ### Old English evidence
 
-The ordinary Old English citation form is `ræst` [@Kroonen2013; @ClarkHall1960].
+The ordinary Old English citation form is `ræst` [@Kroonen2013, 445; @ClarkHall1960].
 Bosworth-Toller also preserves oblique uses of `ræste`, including prepositional
 examples such as `on ræste` and `tó ræste` [@BosworthToller1898, 121].
 

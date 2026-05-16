@@ -70,3 +70,7 @@
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §146`.
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §305`.
 - Citation locator tightened after claim-isolation pass; verified against `SieversBrunner1965, §122`.
+
+## Citation-locator headword audit 01
+
+- Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 63`.

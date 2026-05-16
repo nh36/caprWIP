@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen treats the basic noun as `*lungōn-` and also cites an OE-facing
 derivative `*lungunjō-`, continued by Old English `lungen` and close West
-Germanic cognates [@Kroonen2013]. The selected input `*lúnganjō` models that
+Germanic cognates [@Kroonen2013, 384]. The selected input `*lúnganjō` models that
 derived feminine formation rather than the base noun. The notation differs
 slightly from Kroonen's `*lungunjō-`, but both point to the same derived
 feminine line.

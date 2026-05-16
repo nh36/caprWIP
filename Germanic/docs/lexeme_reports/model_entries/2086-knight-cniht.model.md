@@ -30,7 +30,7 @@ English development discussed below is based on `*knéxtaz`.
 
 ### Old English evidence
 
-Old English dictionaries record the noun as `cniht` [@ClarkHall1960;
+Old English dictionaries record the noun as `cniht` [@ClarkHall1960, 63;
 @BosworthToller1898, 71]. Campbell cites plural `cneohtas` among the broken
 forms, showing the same vowel environment from another point in the paradigm
 [@Campbell1959, §146].

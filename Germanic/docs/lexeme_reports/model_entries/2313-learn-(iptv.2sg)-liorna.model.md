@@ -24,7 +24,7 @@ The selected input **`*líznô`** is a finite imperative cell of that family, no
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960]. Brunner, however, explicitly records **`leornian, nordh. auch liorna`**, and Campbell notes that beside **`leornian`** Northumbrian forms with **`io`** occur where original **`eo`** and **`io`** remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960, 186]. Brunner, however, explicitly records **`leornian, nordh. auch liorna`**, and Campbell notes that beside **`leornian`** Northumbrian forms with **`io`** occur where original **`eo`** and **`io`** remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
 
 **`Liorna`** can therefore be treated as an attested Northumbrian finite form, while **`leornian`** remains the better-known dictionary headword.
 
