@@ -1,6 +1,6 @@
 # Germanic Lexeme Reports: Lexical Derivation Volume
 
-_Alpha 01 compact-regular assembly scaffold. This document assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer requested for rollout; non-regular entries retain the current model-entry prose._
+_Alpha 01 compact lexical volume. This volume assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer; non-regular entries retain their current entry prose._
 
 ## Introduction
 
@@ -19,25 +19,25 @@ system-level exception handling.
 
 ## Data and sources
 
-This alpha assembles the current model-entry corpus against the live manifest, compact derivation-trace report, and project bibliography. The lexical data layer is the current aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain in the entry prose exactly as already cited there.
+This alpha assembles the current lexical corpus with the compact derivation-trace report and project bibliography. The lexical data layer follows the aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain cited in the entry prose.
 
 Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass.
 
 ## Transducer and derivation method
 
-Regular entries use the compact book-prose overlay for this assembly pass, while the remaining derivation classes still reproduce the current model-entry prose. All entries retain a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes.
+Regular entries use the compact book-prose overlay in this assembly pass, while the remaining derivation classes retain their current entry prose. All entries keep a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes.
 
 ## Derivation classes
 
-The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in the manifest. Counts in this alpha are taken directly from `manifest_all_by_class.tsv`:
+The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- `regular`: **70**
-- `attested_variant`: **4**
-- `early_analogy`: **35**
-- `late_analogy`: **28**
-- `reconstructed_oe`: **3**
-- `known_unmodelled`: **2**
-- `unexplained_unmodelled`: **5**
+- Regular derivations: **70**
+- Attested variants: **4**
+- Early analogy: **35**
+- Late analogy: **28**
+- Reconstructed Old English comparators: **3**
+- Known but unmodelled remodellings: **2**
+- Unexplained or deliberately unmodelled exceptions: **5**
 
 \clearpage
 
@@ -9467,7 +9467,7 @@ weak-noun branch treated here.
 That distinction matters because the Old English record is uneven. The better
 attested OE material belongs to the voiceless branch, but the present entry
 represents the reconstructed OE form that would continue the voiced branch
-behind later English **knob**.
+behind later English knob.
 
 #### Old English evidence
 
@@ -9504,9 +9504,9 @@ better-attested neighboring forms.
 | _cnopp_ / _cnoppa_ | attested OE branch | important control form, but belongs to the voiceless branch |
 | _cnæp_ | attested OE form from another family | not part of the present lexeme line |
 
-This remains the most review-sensitive item in the present pilot batch, because
-the choice between reconstructed _cnobba_ and attested _cnoppa_ is still a
-comparator-policy question rather than a settled point of OE attestation.
+This remains the most review-sensitive item here, because the choice between
+reconstructed _cnobba_ and attested _cnoppa_ is still a comparator-policy
+question rather than a settled point of OE attestation.
 
 ### reek — OE rēac
 

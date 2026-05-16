@@ -70,3 +70,7 @@ Checked against `docs/refs.bib`:
 
 - Citation locator tightened or status reclassified after claim-isolation 07;
   verified against `ClarkHall1960, 79`.
+
+## PDF review 01
+
+- PDF review 01: corrected rendered prose/formatting issue.

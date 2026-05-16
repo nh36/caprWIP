@@ -877,14 +877,14 @@ def build_front_matter(
 ) -> list[str]:
     compact_regular_active = regular_book_prose_dir is not None
     alpha_blurb = (
-        "_Alpha 01 compact-regular assembly scaffold. This document assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer requested for rollout; non-regular entries retain the current model-entry prose._"
+        "_Alpha 01 compact lexical volume. This volume assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer; non-regular entries retain their current entry prose._"
         if compact_regular_active
-        else "_Alpha 01 assembly scaffold. This document assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._"
+        else "_Alpha 01 lexical volume. This volume assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._"
     )
     method_paragraph = (
-        "Regular entries use the compact book-prose overlay for this assembly pass, while the remaining derivation classes still reproduce the current model-entry prose. All entries retain a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes."
+        "Regular entries use the compact book-prose overlay in this assembly pass, while the remaining derivation classes retain their current entry prose. All entries keep a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes."
         if compact_regular_active
-        else "Each lexical entry retains the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current model-entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data."
+        else "Each lexical entry keeps the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data."
     )
     lines = [
         "# Germanic Lexeme Reports: Lexical Derivation Volume",
@@ -900,7 +900,7 @@ def build_front_matter(
         "## Data and sources",
         "",
         normalize_print_text(
-            "This alpha assembles the current model-entry corpus against the live manifest, compact derivation-trace report, and project bibliography. The lexical data layer is the current aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain in the entry prose exactly as already cited there."
+            "This alpha assembles the current lexical corpus with the compact derivation-trace report and project bibliography. The lexical data layer follows the aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain cited in the entry prose."
         ),
         "",
         normalize_print_text(
@@ -914,16 +914,16 @@ def build_front_matter(
         "## Derivation classes",
         "",
         normalize_print_text(
-            "The lexical catalogue is ordered by the seven live `DERIVATION_CLASS` values in the manifest. Counts in this alpha are taken directly from `manifest_all_by_class.tsv`:"
+            "The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:"
         ),
         "",
-        f"- `regular`: **{counts['regular']}**",
-        f"- `attested_variant`: **{counts['attested_variant']}**",
-        f"- `early_analogy`: **{counts['early_analogy']}**",
-        f"- `late_analogy`: **{counts['late_analogy']}**",
-        f"- `reconstructed_oe`: **{counts['reconstructed_oe']}**",
-        f"- `known_unmodelled`: **{counts['known_unmodelled']}**",
-        f"- `unexplained_unmodelled`: **{counts['unexplained_unmodelled']}**",
+        f"- Regular derivations: **{counts['regular']}**",
+        f"- Attested variants: **{counts['attested_variant']}**",
+        f"- Early analogy: **{counts['early_analogy']}**",
+        f"- Late analogy: **{counts['late_analogy']}**",
+        f"- Reconstructed Old English comparators: **{counts['reconstructed_oe']}**",
+        f"- Known but unmodelled remodellings: **{counts['known_unmodelled']}**",
+        f"- Unexplained or deliberately unmodelled exceptions: **{counts['unexplained_unmodelled']}**",
     ]
     return lines
 

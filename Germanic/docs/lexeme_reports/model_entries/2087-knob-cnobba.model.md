@@ -27,7 +27,7 @@ weak-noun branch treated here.
 That distinction matters because the Old English record is uneven. The better
 attested OE material belongs to the voiceless branch, but the present entry
 represents the reconstructed OE form that would continue the voiced branch
-behind later English **knob**.
+behind later English knob.
 
 ### Old English evidence
 
@@ -64,6 +64,6 @@ better-attested neighboring forms.
 | `cnopp / cnoppa` | attested OE branch | important control form, but belongs to the voiceless branch |
 | `cnæp` | attested OE form from another family | not part of the present lexeme line |
 
-This remains the most review-sensitive item in the present pilot batch, because
-the choice between reconstructed `cnobba` and attested `cnoppa` is still a
-comparator-policy question rather than a settled point of OE attestation.
+This remains the most review-sensitive item here, because the choice between
+reconstructed `cnobba` and attested `cnoppa` is still a comparator-policy
+question rather than a settled point of OE attestation.
