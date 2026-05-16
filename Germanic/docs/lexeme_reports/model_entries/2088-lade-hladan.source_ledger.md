@@ -19,3 +19,8 @@ book-style entry was drafted.
 - Added page-specific locators for `BosworthToller1898, 559`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 248`.
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §744`.

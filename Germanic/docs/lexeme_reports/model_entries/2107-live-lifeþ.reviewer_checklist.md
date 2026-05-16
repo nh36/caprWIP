@@ -57,3 +57,8 @@
 - Tightened `Kroonen2013` from a broad citation to verified page locator `336`.
 
 Citation locator claim-isolation 01 split the archaism and finite-form sentences and added verified locators for `RingeTaylor2014, 364` and `Campbell1959, §762`.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §762`.
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 364`.

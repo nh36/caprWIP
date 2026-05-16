@@ -59,3 +59,8 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, existing model entry, writing-skill file, or existing
   batch report was changed.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, 44`.
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 385`.

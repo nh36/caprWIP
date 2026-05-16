@@ -65,3 +65,8 @@ Checked against `docs/refs.bib`:
 - Existing citations to conditional or unresolved locator sources were left unchanged.
 
 Citation locator claim-isolation 01 split the class-III stem and finite-form sentences and added verified locators for `RingeTaylor2014, 93` and `Campbell1959, §762`.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 364`.
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §762`.

@@ -43,8 +43,8 @@ the remodeled lemma tradition does.
 
 From `*líbēθi`, regular reduction of the final syllable and later weakening of
 the unstressed vowel yield `lifeþ`. The attested spelling `lifed` belongs to the
-same finite form in late Northumbrian orthography [@Campbell1959;
-@RingeTaylor2014].
+same finite form in late Northumbrian orthography [@Campbell1959, §762;
+@RingeTaylor2014, 364].
 
 ### Paradigm comparison
 

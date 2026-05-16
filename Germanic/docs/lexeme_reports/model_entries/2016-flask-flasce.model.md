@@ -25,7 +25,7 @@ crucial for the suffixal history of the noun.
 
 The selected input therefore differs from the citation label in stem class. Old
 English `flasce` belongs with the weak feminine line, and the plural or oblique
-forms `flascan` support that analysis [@RingeTaylor2014].
+forms `flascan` support that analysis [@RingeTaylor2014, 192].
 
 ### Old English evidence
 
@@ -41,8 +41,9 @@ and ending are preserved as they are in the singular.
 
 From `*fláskōn`, the weak feminine passes through the expected loss of `n` and
 the later Old English development of the unstressed ending, reaching `flasce`.
-Once the weak feminine formation is chosen, the noun follows a regular path to
-its Old English shape [@Campbell1959].
+Campbell cites restored `a` in exactly this environment, including `flasce`
+after inflected `flascan` [@Campbell1959, §158]. Once the weak feminine
+formation is chosen, the noun follows a regular path to its Old English shape.
 
 The decisive issue is morphological rather than phonological. A simple strong
 feminine citation form does not capture the OE weak noun as cleanly as the

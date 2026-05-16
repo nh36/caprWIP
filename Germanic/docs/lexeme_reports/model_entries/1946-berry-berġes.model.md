@@ -24,7 +24,7 @@ specific genitive singular cell drawn from that paradigm.
 
 The relevant point is that `*rj` did not geminate in Proto-West Germanic.
 Ringe and Taylor's `here, herges` comparison shows the same `rj` environment in
-an Old English paradigm without any hidden gemination repair [@RingeTaylor2014].
+an Old English paradigm without any hidden gemination repair [@RingeTaylor2014, 181].
 
 ### Old English evidence
 
@@ -38,8 +38,8 @@ dictionary headword.
 
 Citation `*bázją` gives `bere`, not the selected target. The genitive singular
 `*bázjas`, however, gives `berġes`, with medial `-rġ-` preserved in the same
-way that Ringe and Taylor cite `herges` beside `here` [@RingeTaylor2014]. This
-points to paradigm choice rather than to an extra phonological rule.
+way that Ringe and Taylor cite `herges` beside `here` [@RingeTaylor2014, 181].
+This points to paradigm choice rather than to an extra phonological rule.
 
 ### Paradigm comparison
 

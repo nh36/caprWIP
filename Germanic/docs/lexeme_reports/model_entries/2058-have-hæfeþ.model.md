@@ -43,10 +43,10 @@ directly than `habban` does.
 
 ### Development to Old English
 
-From `*xábēθi`, early apocope of final `-i`, subsequent vowel changes, and the
-regular fricative outcome of `b` in this environment yield `hæfeþ`
-[@RingeTaylor2014; @Campbell1959]. The derivation of the finite form itself is
-regular.
+From `*xábēθi`, the finite form yields `hæfeþ` regularly. Ringe and Taylor
+discuss this non-geminating present stem under `habban`
+[@RingeTaylor2014, 364]. Campbell's Anglian paradigms include unsyncopated 3sg
+forms of the `hæfeþ` / `hæfed` type [@Campbell1959, §762].
 
 The wider lexeme is less straightforward only because the infinitive `habban`
 shows later leveling. That difference in paradigm history is what makes the 3sg

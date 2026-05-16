@@ -11,3 +11,7 @@ This ledger records the source forms and working distinctions gathered before th
 | Clark Hall | OE dictionary | `timber`; `timbor timber` | ordinary dictionary headword plus variant spelling | `timber`; `timbor` | Confirms that the OE noun is an attested citation form and that `timbor` is a recorded variant. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:40480-40542` | high; Google Vision file preferred |
 | DEV_NOTES epenthesis note | shared phonological note | `*timbrą -> timber`; front-vowel epenthesis | pre-OE cluster development | `timber` | Supports the ordinary epenthetic vowel step once the consonantal frame `timbr-` is in place. | yes — `Campbell1959`; `RingeTaylor2014` | `Germanic/docs/DEV_NOTES.md:16671-16711` | high |
 | Local memo / slice synthesis | current project analysis | `*tímrą`; `*tímbrą`; `timber`; `timbor` | early input choice rather than paradigm selection | `timber`; `timbor` | The decisive issue is the pre-OE consonantal frame, not Old English attestation. | no | `Germanic/docs/lexeme_reports/research_memos/2258-timber-timber.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2258-timber-timber.md` | high |
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 327`.

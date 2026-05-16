@@ -53,3 +53,8 @@
 2. The entry depends on keeping the full-grade comparative headword distinct from
    the remodeled zero-grade input; that framing should be checked before any
    later scaling pass.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, 44`.
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 385`.

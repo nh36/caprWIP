@@ -643,7 +643,7 @@ Derivation: _\*dḗdiz_ > _dǣd_ (regular).
 }
 \endgroup
 
-Orel reconstructs the noun as _\*dēdiz_, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic _\*dédiz_ through northwest Germanic _\*dadiz_ [@Orel2003; @RingeTaylor2014, 27]. The stress-marked form _\*dḗdiz_ represents that same inherited noun in a notation that keeps the stressed long vowel explicit. Campbell treats the West Saxon lowering of inherited long _ē_ as part of the broader vowel history [@Campbell1959]. Brunner gives the contrast explicitly as West Saxon _dǣd_ beside non-West-Saxon _dēd_ [@SieversBrunner1965, §98]. From inherited _\*dēdiz_, loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_; Anglian _dēd_ preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965, §98].
+Orel reconstructs the noun as _\*dēdiz_, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic _\*dédiz_ through northwest Germanic _\*dadiz_ [@Orel2003; @RingeTaylor2014, 27]. The stress-marked form _\*dḗdiz_ represents that same inherited noun in a notation that keeps the stressed long vowel explicit. Campbell states that Primitive Germanic long _ē_ appears as West Saxon _ǣ_ but in other Old English dialects mostly as _ē_ [@Campbell1959, §128]. Brunner gives the contrast explicitly as West Saxon _dǣd_ beside non-West-Saxon _dēd_ [@SieversBrunner1965, §98]. From inherited _\*dēdiz_, loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_ [@Campbell1959, §128]; Anglian _dēd_ preserves the non-West-Saxon outcome [@SieversBrunner1965, §98].
 
 ### door — OE dor
 
@@ -4330,7 +4330,7 @@ crucial for the suffixal history of the noun.
 
 The selected input therefore differs from the citation label in stem class. Old
 English _flasce_ belongs with the weak feminine line, and the plural or oblique
-forms _flascan_ support that analysis [@RingeTaylor2014].
+forms _flascan_ support that analysis [@RingeTaylor2014, 192].
 
 #### Old English evidence
 
@@ -4346,8 +4346,9 @@ and ending are preserved as they are in the singular.
 
 From _\*fláskōn_, the weak feminine passes through the expected loss of _n_ and
 the later Old English development of the unstressed ending, reaching _flasce_.
-Once the weak feminine formation is chosen, the noun follows a regular path to
-its Old English shape [@Campbell1959].
+Campbell cites restored _a_ in exactly this environment, including _flasce_
+after inflected _flascan_ [@Campbell1959, §158]. Once the weak feminine
+formation is chosen, the noun follows a regular path to its Old English shape.
 
 The decisive issue is morphological rather than phonological. A simple strong
 feminine citation form does not capture the OE weak noun as cleanly as the
@@ -4624,11 +4625,11 @@ Outcome: _cniht_
 
 #### Reconstruction and comparative evidence
 
-The comparative sources align on an _e_-grade reconstruction for this noun:
-Ringe and Taylor cite _\*kneht_, Orel gives _\*knextaz_, and Kluge-Seebold
-likewise points to _\*knehta-_ [@RingeTaylor2014; @Orel2003, 256;
-@KlugeSeebold2011]. The selected input _\*knéxtaz_ follows that comparative
-evidence.
+The comparative sources align on an _e_-grade reconstruction for this noun.
+Ringe and Taylor cite _\*kneht_, and Orel gives _\*knextaz_
+[@RingeTaylor2014, 142; @Orel2003, 256]. Kluge-Seebold likewise points to
+_\*knehta-_ [@KlugeSeebold2011]. The selected input _\*knéxtaz_ follows that
+comparative evidence.
 
 A competing citation reconstruction _\*kníxtaz_ remains possible as a label for
 the word family, but it is not the reconstruction followed here. The Old
@@ -4637,9 +4638,9 @@ English development discussed below is based on _\*knéxtaz_.
 #### Old English evidence
 
 Old English dictionaries record the noun as _cniht_ [@ClarkHall1960;
-@BosworthToller1898, 71]. Campbell's discussion of related forms such as plural
-_cneohtas_ helps show the same vowel environment from another point in the
-paradigm [@Campbell1959].
+@BosworthToller1898, 71]. Campbell cites plural _cneohtas_ among the broken
+forms, showing the same vowel environment from another point in the paradigm
+[@Campbell1959, §146].
 
 The target is therefore an ordinary attested Old English noun. No reconstructed
 OE comparator is needed here.
@@ -4647,9 +4648,10 @@ OE comparator is needed here.
 #### Development to Old English
 
 From _\*knéxtaz_, the relevant Old English changes include breaking before the
-velar cluster and then the later reduction that yields _cniht_
-[@Campbell1959; @SieversBrunner1965]. With that corrected input, the derivation
-is straightforward.
+velar cluster and then the later reduction that yields _cniht_. Campbell later
+notes the early West-Saxon alternation _cniht_ beside plural _cneohtas_
+[@Campbell1959, §305]. Sievers-Brunner gives the same contrast as _cniht ... cneohtas_ [@SieversBrunner1965, §122]. With that corrected input, the
+derivation is straightforward.
 
 #### Stem comparison
 
@@ -4716,11 +4718,10 @@ Outcome: _hladan_
 
 #### Reconstruction and comparative evidence
 
-The wider Germanic family can be cited under a weak-verb label such as
-_\*laθōjaną_, but the Old English verb _hladan_ belongs to a strong-verb line
-with voiced consonantism in the selected input _\*xláðaną_
-[@RingeTaylor2014; @Kroonen2013]. The two forms are related as members of one
-word family, but they do not play the same role in the OE derivation.
+Ringe and Taylor cite the strong verb _hladan_ directly [@RingeTaylor2014, 248].
+Kroonen treats the wider Germanic family under a weak-verb label such as
+_\*laθōjaną_ [@Kroonen2013]. The two forms are related as members of one word
+family, but they do not play the same role in the OE derivation.
 
 The selected input therefore marks an early stem choice. The entry follows the
 strong Verner-grade form that reaches Old English _hladan_ directly.
@@ -4739,8 +4740,10 @@ family.
 
 From _\*xláðaną_, the verb passes through the expected early voiced stop stage,
 Anglo-Frisian brightening, and the later A-restoration that returns the root
-vowel to _a_ before the full infinitival ending [@Campbell1959;
-@RingeTaylor2014]. The resulting Old English infinitive is _hladan_.
+vowel to _a_ before the full infinitival ending. Campbell treats verbs such as
+_hladan_ as showing restored _a_ in the present system [@Campbell1959, §744].
+Ringe and Taylor likewise derive _hladan_ from the voiced strong-verb line
+[@RingeTaylor2014, 248]. The resulting Old English infinitive is _hladan_.
 
 #### Class comparison
 
@@ -5444,7 +5447,7 @@ Outcome: _nosu_
 Kroonen reconstructs a Germanic ablaut pair _\*nasō-_ ~ _\*nusō-_ and adds that the
 root _\*nus-_ is likely to have arisen as a secondary zero grade after a
 remodeling of the older paradigm [@Kroonen2013]. Campbell is more specific for
-Old English, citing _nosu_ < _\*nusō_ [@Campbell1959].
+Old English, citing _nosu_ < _\*nusō_ [@Campbell1959, 44].
 
 The citation reconstruction _\*nasō_ is therefore best treated as the full-grade
 comparative headword, while the selected input _\*núsō_ represents the remodeled
@@ -5454,7 +5457,7 @@ lines should not be collapsed without comment [@Orel2003].
 #### Old English evidence
 
 _Nosu_ is an attested Old English noun. Ringe and Taylor list it among the few
-surviving early Old English feminine u-stems [@RingeTaylor2014]. Clark Hall
+surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives _nosu f._, with genitive-dative singular _nosa_, and cross-refers
 _nasu_ to _nosu_ [@ClarkHall1960].
 
@@ -6252,7 +6255,7 @@ Outcome: _timber_
 Kroonen reconstructs the noun as _\*timbra-_ and cites Old English
 _timber_ among its continuations [@Kroonen2013]. Ringe and Taylor instead
 state the history from PGmc _\*timra_ through West Germanic _\*timbr_ to
-Old English _timber_ [@RingeTaylor2014].
+Old English _timber_ [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial _b_ belongs in the comparative citation form or appears in an
@@ -6270,7 +6273,7 @@ With the consonantal frame _timbr-_ in place, the rest of the development is
 straightforward. Loss of final _-ą_ leaves _\*tímbr_, and epenthetic
 _e_ in the final cluster yields _timber_. Ringe and Taylor's
 _\*timra_ > _\*timbr_ > OE _timber_ and the handbook treatment of this epenthetic
-vowel point to the same Old English result [@RingeTaylor2014; @Campbell1959,
+vowel point to the same Old English result [@RingeTaylor2014, 327; @Campbell1959,
 §§463-464].
 
 #### Formation comparison
@@ -7102,7 +7105,7 @@ specific genitive singular cell drawn from that paradigm.
 
 The relevant point is that _\*rj_ did not geminate in Proto-West Germanic.
 Ringe and Taylor's _here, herges_ comparison shows the same _rj_ environment in
-an Old English paradigm without any hidden gemination repair [@RingeTaylor2014].
+an Old English paradigm without any hidden gemination repair [@RingeTaylor2014, 181].
 
 #### Old English evidence
 
@@ -7116,8 +7119,8 @@ dictionary headword.
 
 Citation _\*bázją_ gives _bere_, not the selected target. The genitive singular
 _\*bázjas_, however, gives _berġes_, with medial _-rġ-_ preserved in the same
-way that Ringe and Taylor cite _herges_ beside _here_ [@RingeTaylor2014]. This
-points to paradigm choice rather than to an extra phonological rule.
+way that Ringe and Taylor cite _herges_ beside _here_ [@RingeTaylor2014, 181].
+This points to paradigm choice rather than to an extra phonological rule.
 
 #### Paradigm comparison
 
@@ -7703,10 +7706,10 @@ directly than _habban_ does.
 
 #### Development to Old English
 
-From _\*xábēθi_, early apocope of final _-i_, subsequent vowel changes, and the
-regular fricative outcome of _b_ in this environment yield _hæfeþ_
-[@RingeTaylor2014; @Campbell1959]. The derivation of the finite form itself is
-regular.
+From _\*xábēθi_, the finite form yields _hæfeþ_ regularly. Ringe and Taylor
+discuss this non-geminating present stem under _habban_
+[@RingeTaylor2014, 364]. Campbell's Anglian paradigms include unsyncopated 3sg
+forms of the _hæfeþ_ / _hæfed_ type [@Campbell1959, §762].
 
 The wider lexeme is less straightforward only because the infinitive _habban_
 shows later leveling. That difference in paradigm history is what makes the 3sg
@@ -7899,8 +7902,8 @@ the remodeled lemma tradition does.
 
 From _\*líbēθi_, regular reduction of the final syllable and later weakening of
 the unstressed vowel yield _lifeþ_. The attested spelling _lifed_ belongs to the
-same finite form in late Northumbrian orthography [@Campbell1959;
-@RingeTaylor2014].
+same finite form in late Northumbrian orthography [@Campbell1959, §762;
+@RingeTaylor2014, 364].
 
 #### Paradigm comparison
 

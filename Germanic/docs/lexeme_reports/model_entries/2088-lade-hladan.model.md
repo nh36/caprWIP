@@ -18,11 +18,10 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The wider Germanic family can be cited under a weak-verb label such as
-`*laθōjaną`, but the Old English verb `hladan` belongs to a strong-verb line
-with voiced consonantism in the selected input `*xláðaną`
-[@RingeTaylor2014; @Kroonen2013]. The two forms are related as members of one
-word family, but they do not play the same role in the OE derivation.
+Ringe and Taylor cite the strong verb `hladan` directly [@RingeTaylor2014, 248].
+Kroonen treats the wider Germanic family under a weak-verb label such as
+`*laθōjaną` [@Kroonen2013]. The two forms are related as members of one word
+family, but they do not play the same role in the OE derivation.
 
 The selected input therefore marks an early stem choice. The entry follows the
 strong Verner-grade form that reaches Old English `hladan` directly.
@@ -41,8 +40,10 @@ family.
 
 From `*xláðaną`, the verb passes through the expected early voiced stop stage,
 Anglo-Frisian brightening, and the later A-restoration that returns the root
-vowel to `a` before the full infinitival ending [@Campbell1959;
-@RingeTaylor2014]. The resulting Old English infinitive is `hladan`.
+vowel to `a` before the full infinitival ending. Campbell treats verbs such as
+`hladan` as showing restored `a` in the present system [@Campbell1959, §744].
+Ringe and Taylor likewise derive `hladan` from the voiced strong-verb line
+[@RingeTaylor2014, 248]. The resulting Old English infinitive is `hladan`.
 
 ### Class comparison
 

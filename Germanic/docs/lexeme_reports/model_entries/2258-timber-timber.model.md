@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 Kroonen reconstructs the noun as **`*timbra-`** and cites Old English
 **`timber`** among its continuations [@Kroonen2013]. Ringe and Taylor instead
 state the history from **`PGmc *timra`** through West Germanic **`*timbr`** to
-Old English **`timber`** [@RingeTaylor2014].
+Old English **`timber`** [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial **`b`** belongs in the comparative citation form or appears in an
@@ -39,7 +39,7 @@ With the consonantal frame **`timbr-`** in place, the rest of the development is
 straightforward. Loss of final **`-ą`** leaves **`*tímbr`**, and epenthetic
 **`e`** in the final cluster yields **`timber`**. Ringe and Taylor's
 **`*timra > *timbr > OE timber`** and the handbook treatment of this epenthetic
-vowel point to the same Old English result [@RingeTaylor2014; @Campbell1959,
+vowel point to the same Old English result [@RingeTaylor2014, 327; @Campbell1959,
 §§463-464].
 
 ### Formation comparison

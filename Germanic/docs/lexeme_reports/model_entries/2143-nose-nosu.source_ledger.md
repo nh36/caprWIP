@@ -12,3 +12,8 @@ before the book-style prose was drafted.
 | Clark Hall | 1960 dictionary | `nosu f. gds. nosa`; `nasu=nosu` | dictionary headword with genitive/dative singular and cross-reference | `nosu`; `nosa`; `nasu` | The dictionary tradition favors `nosu` as the headword while preserving `nasu` as a cross-referenced variant line. | yes — `ClarkHall1960` | `Germanic/docs/lexeme_reports/research_memos/2143-nose-nosu.md:48-52,76-84`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:29345,30045` | high |
 | Orel | 2003 handbook | `*nasō`; `OE nasu` | full-grade comparative citation form | `nasu` | Orel preserves the full-grade side of the tradition and is useful as a competing citation reconstruction rather than as the selected OE-facing input. | yes — `Orel2003` | `Germanic/docs/lexeme_reports/research_memos/2143-nose-nosu.md:48-52,59-63`; `docs/references/orel_handbook_germanic_etymology.vision.txt:31685-31689` | high |
 | Compact derivation trace | current local trace | `PROTO: *núsō`; `OUTPUTS: nosu` | selected early-stage input run through the implemented cascade | `nosu` | The current trace documents the regular modeled path `*núsō > *nósō > *nósu > nosu`. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2143-nose-nosu.md:17-40`; `Germanic/docs/lexeme_reports/research_memos/2143-nose-nosu.md:65-72` | high |
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, 44`.
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 385`.

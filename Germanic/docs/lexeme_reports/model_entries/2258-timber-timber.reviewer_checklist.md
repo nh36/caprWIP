@@ -50,3 +50,7 @@
 
 1. Comparative notation still differs between **`*timbra-`** and **`*timra >
    *timbr`**, so later editing should preserve that distinction.
+
+## Citation-locator claim-isolation 03
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 327`.

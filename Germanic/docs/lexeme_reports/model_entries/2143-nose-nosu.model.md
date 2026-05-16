@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 Kroonen reconstructs a Germanic ablaut pair `*nasō- ~ *nusō-` and adds that the
 root `*nus-` is likely to have arisen as a secondary zero grade after a
 remodeling of the older paradigm [@Kroonen2013]. Campbell is more specific for
-Old English, citing `nosu < *nusō` [@Campbell1959].
+Old English, citing `nosu < *nusō` [@Campbell1959, 44].
 
 The citation reconstruction `*nasō` is therefore best treated as the full-grade
 comparative headword, while the selected input `*núsō` represents the remodeled
@@ -32,7 +32,7 @@ lines should not be collapsed without comment [@Orel2003].
 ### Old English evidence
 
 `Nosu` is an attested Old English noun. Ringe and Taylor list it among the few
-surviving early Old English feminine u-stems [@RingeTaylor2014]. Clark Hall
+surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
 `nasu` to `nosu` [@ClarkHall1960].
 
