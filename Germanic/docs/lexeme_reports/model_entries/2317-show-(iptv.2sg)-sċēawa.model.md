@@ -25,7 +25,7 @@ That distinction matters because the imperative singular provides the direct com
 
 ### Old English evidence
 
-Bright lists `scēawian` and explicitly gives the imperative singular `scēawa` under that headword [@BrightCassidyRingler1971]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form.
+Bright lists `scēawian` and explicitly gives the imperative singular `scēawa` under that headword [@BrightCassidyRingler1971, 346]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form.
 
 The spelling used in this entry is normalized `sċēawa`, while Bright's glossary gives source spelling `scēawa`. The ordinary Old English headword remains `scēawian`; `sċēawa` is the imperative singular chosen beside it.
 

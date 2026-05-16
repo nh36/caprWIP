@@ -30,7 +30,7 @@ Ringe-Taylor alternant framework.
 
 ### Old English evidence
 
-Old English has the attested citation form **`nǣdl`** [@ClarkHall1960].
+Clark Hall records the attested citation form **`nǣdl`** [@ClarkHall1960, 210].
 Campbell lists `nédl` among the expected unbroken forms after `t` and `d`
 [@Campbell1959, §367]. Hogg also includes `nidi` / `nǣdl` in the same broader
 cluster history [@Hogg1992].

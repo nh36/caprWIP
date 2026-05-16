@@ -33,7 +33,7 @@ comparative reconstruction implied by the citation label **`*stámnaz`**.
 ### Old English evidence
 
 Clark Hall records **`stefn`** as the noun 'voice, sound' and cross-refers
-**`stemn`** to the same word [@ClarkHall1960]. Ringe and Taylor give the OE
+**`stemn`** to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
 chronology directly as **`stebn > stefn > stemn`** [@RingeTaylor2014, 330].
 
 Bülbring and Luick treat **`stemn`** as a later West Saxon development from

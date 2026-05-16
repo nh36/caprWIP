@@ -54,3 +54,7 @@
 2. Review should confirm that a production entry for `stem / stefn` is
    acceptable even though the strongest philological support concerns the noun
    `stefn` 'voice, sound'.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 276`.

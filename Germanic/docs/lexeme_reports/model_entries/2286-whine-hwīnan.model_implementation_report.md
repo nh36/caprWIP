@@ -67,3 +67,7 @@ Citation locator claim-isolation 01 split the family-identification sentence and
 ## Citation-locator page-anchor repair 01
 
 - Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 201`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 171`.

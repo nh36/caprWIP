@@ -24,3 +24,7 @@ book-style entry was drafted.
 
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 248`.
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §744`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 159`.

@@ -228,7 +228,7 @@ OE Weak Tail Reduction & \emph{*bĕʤínnan} \\
 }
 \endgroup
 
-The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014, 218], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174]. Bosworth-Toller and Clark Hall lemmatize the verb as _be-ginnan_ / _beginnan_ [@BosworthToller1898, 84; @ClarkHall1960]. From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Ringe and Taylor explicitly cite _bi- > be-_ as an Old English unstressed-prefix development [@RingeTaylor2014, 350].
+The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014, 218], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174]. Bosworth-Toller lemmatizes the verb as _be-ginnan_ [@BosworthToller1898, 84]. Clark Hall likewise gives _beginnan_ [@ClarkHall1960, 34]. From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Ringe and Taylor explicitly cite _bi- > be-_ as an Old English unstressed-prefix development [@RingeTaylor2014, 350].
 
 ### bier — OE bǣr
 
@@ -775,7 +775,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*féll} \\
 }
 \endgroup
 
-Kroonen reconstructs the noun as _\*fella-_ 'membrane, skin, hide' and cites Old English _fell_ beside Dutch _vel_ and German _Fell_ [@Kroonen2013]. The selected input _\*féllą_ is the derivable singular form of that same inherited noun. Clark Hall records _fell_ as the noun 'fell, skin, hide', and Bright's glossary likewise gives _fell_ with inflected forms such as accusative singular _fel_ and dative plural _fellum_ [@ClarkHall1960; @BrightCassidyRingler1971]. With _\*féllą_, no special earlier reshaping is needed: heavy-syllable nasal apocope yields _\*féll_, surfacing as _fell_.
+Kroonen reconstructs the noun as _\*fella-_ 'membrane, skin, hide' and cites Old English _fell_ beside Dutch _vel_ and German _Fell_ [@Kroonen2013]. The selected input _\*féllą_ is the derivable singular form of that same inherited noun. Clark Hall records _fell_ as the noun 'fell, skin, hide' [@ClarkHall1960, 115]. Bright's glossary likewise gives _fell, n._, with inflected forms such as accusative singular _fel_ and dative plural _fellum_ [@BrightCassidyRingler1971, 277]. With _\*féllą_, no special earlier reshaping is needed: heavy-syllable nasal apocope yields _\*féll_, surfacing as _fell_.
 
 ### fern — OE fearn
 
@@ -912,7 +912,7 @@ OE Weak Tail Reduction & \emph{*flēogan} \\
 }
 \endgroup
 
-Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014, 189, 324]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014, 189].
+Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014, 189, 324]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Bosworth-Toller records _flēogan_ as the ordinary Old English strong verb [@BosworthToller1898]. Clark Hall likewise records _flēogan_ [@ClarkHall1960, 106]. Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014, 189].
 
 Form note. Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014, 324].
 
@@ -1005,9 +1005,9 @@ PWGmc Final Bare A Loss & \emph{*gáng} \\
 }
 \endgroup
 
-Orel reconstructs the noun as _\*gangaz_ and cites Old English _gang_ beside Old Norse _gangr_, Old Frisian _gang / gong_, Old Saxon _gang_, and Old High German _gang_ [@Orel2003]. The selected input _\*gángaz_ is the same lexeme in the accent notation used here. Clark Hall and Bosworth-Toller both record _gang_ as the noun 'going, journey, way', and Bright's glossary gives _gong (gang), m., path, course_ [@ClarkHall1960; @BosworthToller1898, 159; @BrightCassidyRingler1971, 392]. From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_.
+Orel reconstructs the noun as _\*gangaz_ and cites Old English _gang_ beside Old Norse _gangr_, Old Frisian _gang / gong_, Old Saxon _gang_, and Old High German _gang_ [@Orel2003]. The selected input _\*gángaz_ is the same lexeme in the accent notation used here. Bosworth-Toller records _gang_ as the noun 'going, journey, way' [@BosworthToller1898, 159], and Bright's glossary gives _gong (gang), m., path, course_ [@BrightCassidyRingler1971, 392]. From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_.
 
-Form note. This entry concerns the noun _gang_, not the separate verb _gangan_ [@ClarkHall1960; @BosworthToller1898, 159].
+Form note. This entry concerns the noun _gang_, not the separate verb _gangan_.
 
 ### give — OE ġiefan
 
@@ -1970,7 +1970,7 @@ OE J Loss After Heavy & \emph{*nett} \\
 }
 \endgroup
 
-Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003, 282; @Fulk2018, §6.15]. Clark Hall and Bosworth-Toller record _nett_ as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959, §66]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
+Orel gives _\*natjan_ with Old English _nett_, and Fulk's account of West Germanic gemination before _j_ explains the geminate outcome after a short vowel [@Orel2003, 282; @Fulk2018, §6.15]. Bosworth-Toller records _nett_ as the noun [@BosworthToller1898, 29], and Campbell notes that final geminates are often graphically simplified in Old English spelling [@Campbell1959, §66]. From _\*nátją_, West Germanic j-gemination first gives _\*náttją_.
 
 Form note. Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is _nett_ [@Campbell1959, §66; @Orel2003, 282].
 
@@ -2502,9 +2502,9 @@ OE Unstressed AE Merger & \emph{*súmer} \\
 }
 \endgroup
 
-Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013, 492; @RingeTaylor2014, 46; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_, and Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@ClarkHall1960; @BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
+Kroonen gives the lexeme as _\*sumara-_, and Ringe and Taylor likewise use _\*sumaraz_, while Orel preserves an alternate _\*sumeraz_ [@Kroonen2013, 492; @RingeTaylor2014, 46; @Orel2003, 425]. The selected input _\*súmaraz_ follows the _\*a_ vocalism that underlies the regular development represented here. Clark Hall gives _sumor m., gs. sumeres, ds. sumera, sumere_ [@ClarkHall1960, 281]. Bright likewise lists _sumor (sumer)_ with genitive _sumeres_ [@BrightCassidyRingler1971, 440]. From _\*súmaraz_, loss of final _-az_ is followed by fronting and merger in the unstressed second syllable, yielding _sumer_.
 
-Form note. Old English also has _sumor_ as a common headword spelling. The selected form here is _sumer_, and _sumeres/sumere_ show that the _e_-vocalism was also real in Old English [@ClarkHall1960; @BrightCassidyRingler1971, 440].
+Form note. Old English also has _sumor_ as a common headword spelling. Clark Hall's _sumor ... sumeres ... sumere_ and Bright's _sumor (sumer)_ show that the _e_-vocalism was also real in Old English [@ClarkHall1960, 281; @BrightCassidyRingler1971, 440].
 
 ### sunder — OE sundrian
 
@@ -3013,7 +3013,7 @@ OE Weak Tail Reduction & \emph{*waskan} \\
 }
 \endgroup
 
-Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013, 575; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_, while Sievers-Brunner also notes the variant _wæscan_ [@ClarkHall1960; @SieversBrunner1965]. From _\*wáskaną_, brightening gives _\*wæskaną_.
+Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013, 575; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_ [@ClarkHall1960, 343], while Sievers-Brunner also notes the variant _wæscan_ [@SieversBrunner1965]. From _\*wáskaną_, brightening gives _\*wæskaną_.
 
 Form note. The conservative citation form _wascan_ is selected here. Spellings such as _wæscan_ or _wasċan_ belong to variant or normalized background rather than to the target of this entry.
 
@@ -4728,8 +4728,9 @@ strong Verner-grade form that reaches Old English _hladan_ directly.
 
 #### Old English evidence
 
-Old English dictionaries record the verb as _hladan_ and preserve the expected
-strong-verb paradigm material around it [@BosworthToller1898, 559; @ClarkHall1960].
+Bosworth-Toller records the verb as _hladan_ and preserves the expected
+strong-verb paradigm material around it [@BosworthToller1898, 559]. Clark Hall
+likewise records _hladan_ [@ClarkHall1960, 159].
 The target is an attested infinitive rather than a reconstructed paradigm cell.
 
 For this entry the relevant comparison form is the infinitive _hladan_ itself.
@@ -5273,8 +5274,8 @@ _\*xnékkô_, however, is the form that matches the Old English branch.
 
 #### Old English evidence
 
-Old English dictionaries record the weak masculine noun _hnecca_
-[@ClarkHall1960; @BosworthToller1898, 567]. The target is therefore an attested
+Clark Hall records the weak masculine noun _hnecca_ [@ClarkHall1960, 162].
+Bosworth-Toller likewise records _hnecca_ [@BosworthToller1898, 567]. The target is therefore an attested
 citation form, not an oblique cell or a reconstructed lemma.
 
 The phonological question is upstream of the Old English evidence. The attested
@@ -5366,7 +5367,7 @@ Ringe-Taylor alternant framework.
 
 #### Old English evidence
 
-Old English has the attested citation form _nǣdl_ [@ClarkHall1960].
+Clark Hall records the attested citation form _nǣdl_ [@ClarkHall1960, 210].
 Campbell lists _nédl_ among the expected unbroken forms after _t_ and _d_
 [@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ in the same broader
 cluster history [@Hogg1992].
@@ -5545,7 +5546,7 @@ here.
 
 #### Old English evidence
 
-Clark Hall records _sæp_ (e) n. [@ClarkHall1960], and Kluge-Seebold likewise
+Clark Hall records _sæp_ (e) n. [@ClarkHall1960, 247], and Kluge-Seebold likewise
 cites ae. _sæp_ n. [@KlugeSeebold2011]. The target is therefore an attested
 neuter Old English noun. Orel's plain _sap_ notation belongs to comparative
 normalization, not to the spelling adopted here for the Old English form
@@ -5994,7 +5995,7 @@ comparative reconstruction implied by the citation label _\*stámnaz_.
 #### Old English evidence
 
 Clark Hall records _stefn_ as the noun 'voice, sound' and cross-refers
-_stemn_ to the same word [@ClarkHall1960]. Ringe and Taylor give the OE
+_stemn_ to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
 chronology directly as _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014, 330].
 
 Bülbring and Luick treat _stemn_ as a later West Saxon development from
@@ -6620,7 +6621,7 @@ _\*wainōjaną_.
 #### Old English evidence
 
 Clark Hall records _hwinan_ with the gloss 'to hiss, whizz, whistle'
-[@ClarkHall1960]. Seebold keeps the verb among the strong verbs and notes that
+[@ClarkHall1960, 171]. Seebold keeps the verb among the strong verbs and notes that
 only a present-tense attestation is directly preserved, while Sievers-Brunner
 likewise lists _hwinan stv._ [@Seebold1970; @SieversBrunner1965].
 
@@ -7981,7 +7982,7 @@ Campbell gives the paradigm mann, _man_ / _mannes_ / _menn_ [@Campbell1959].
 Sievers-Brunner likewise cites _man mannes_ [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as _man_
 beside inflected _monnes_ [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under _mann_
-[@ClarkHall1960].
+[@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
 _mannes_, not the citation lemma _mann_.
@@ -8440,8 +8441,8 @@ preterite cell.
 
 The ordinary dictionary verb is _scūfan_/_scēofan_, but the preterite itself is
 well attested. Bright gives the principal parts _scufan, sceaf, scufon, scofen_
-and also quotes he sceaf _þa_ mid _þam_ scylde; Sweet gives the same paradigm
-[@BrightCassidyRingler1971; @Sweet1953]. The normalized form here is _sċēaf_,
+[@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953].
+The normalized form here is _sċēaf_,
 regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
 
 #### Development to Old English
@@ -8688,7 +8689,7 @@ English form treated here [@RingeTaylor2014, 314].
 
 #### Old English evidence
 
-The dictionary headword is _macian_ [@ClarkHall1960]. The selected form in this
+The dictionary headword is _macian_ [@ClarkHall1960, 193]. The selected form in this
 entry is therefore not the lemma but the imperative singular _maca_, chosen as a
 paradigm form beside the headword _macian_ and the related finite form _macaþ_.
 
@@ -8853,7 +8854,7 @@ The selected input _\*búrô_ is therefore an imperative cell of the same family
 
 #### Old English evidence
 
-Clark Hall lemmatizes the verb as _borian_ [@ClarkHall1960]. The comparison form here is the normalized imperative singular _bora_, used beside the headword and the related 3sg form _boraþ_.
+Clark Hall lemmatizes the verb as _borian_ [@ClarkHall1960, 48]. The comparison form here is the normalized imperative singular _bora_, used beside the headword and the related 3sg form _boraþ_.
 
 The imperative is thus a paradigm form rather than a replacement for the dictionary lemma. It is the most direct Old English comparator for the non-_j_ finite cell represented by _\*búrô_.
 
@@ -9305,7 +9306,7 @@ That distinction matters because the imperative singular provides the direct com
 
 #### Old English evidence
 
-Bright lists _scēawian_ and explicitly gives the imperative singular _scēawa_ under that headword [@BrightCassidyRingler1971]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form.
+Bright lists _scēawian_ and explicitly gives the imperative singular _scēawa_ under that headword [@BrightCassidyRingler1971, 346]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form.
 
 The spelling used in this entry is normalized _sċēawa_, while Bright's glossary gives source spelling _scēawa_. The ordinary Old English headword remains _scēawian_; _sċēawa_ is the imperative singular chosen beside it.
 
@@ -10140,7 +10141,7 @@ points toward _rost_, not toward the attested Old English noun.
 #### Old English evidence
 
 The Old English noun is attested, not reconstructed. Clark Hall gives _rūst_ m.
-[@ClarkHall1960], and Bosworth-Toller records _rúst_ (? and rust)
+[@ClarkHall1960, 245], and Bosworth-Toller records _rúst_ (? and rust)
 [@BosworthToller1898, 677]. The form is normalized here as _rust_ from that attested
 record.
 

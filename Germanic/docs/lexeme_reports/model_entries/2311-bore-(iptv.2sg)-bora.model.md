@@ -24,7 +24,7 @@ The selected input **`*búrô`** is therefore an imperative cell of the same fam
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as **`borian`** [@ClarkHall1960]. The comparison form here is the normalized imperative singular **`bora`**, used beside the headword and the related 3sg form **`boraþ`**.
+Clark Hall lemmatizes the verb as **`borian`** [@ClarkHall1960, 48]. The comparison form here is the normalized imperative singular **`bora`**, used beside the headword and the related 3sg form **`boraþ`**.
 
 The imperative is thus a paradigm form rather than a replacement for the dictionary lemma. It is the most direct Old English comparator for the non-`j` finite cell represented by **`*búrô`**.
 

@@ -30,8 +30,8 @@ Orel also gives an a-grade headword line [@Orel2003]. The selected input
 
 ### Old English evidence
 
-Old English dictionaries record the weak masculine noun `hnecca`
-[@ClarkHall1960; @BosworthToller1898, 567]. The target is therefore an attested
+Clark Hall records the weak masculine noun `hnecca` [@ClarkHall1960, 162].
+Bosworth-Toller likewise records `hnecca` [@BosworthToller1898, 567]. The target is therefore an attested
 citation form, not an oblique cell or a reconstructed lemma.
 
 The phonological question is upstream of the Old English evidence. The attested

@@ -30,7 +30,7 @@ here.
 
 ### Old English evidence
 
-Clark Hall records `sæp (e) n.` [@ClarkHall1960], and Kluge-Seebold likewise
+Clark Hall records `sæp (e) n.` [@ClarkHall1960, 247], and Kluge-Seebold likewise
 cites `ae. sæp n.` [@KlugeSeebold2011]. The target is therefore an attested
 neuter Old English noun. Orel's plain `sap` notation belongs to comparative
 normalization, not to the spelling adopted here for the Old English form

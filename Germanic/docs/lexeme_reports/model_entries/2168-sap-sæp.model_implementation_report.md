@@ -63,3 +63,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator page-anchor repair 01
 
 - Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 319`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 247`.

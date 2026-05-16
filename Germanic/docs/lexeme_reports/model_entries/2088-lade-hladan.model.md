@@ -28,8 +28,9 @@ strong Verner-grade form that reaches Old English `hladan` directly.
 
 ### Old English evidence
 
-Old English dictionaries record the verb as `hladan` and preserve the expected
-strong-verb paradigm material around it [@BosworthToller1898, 559; @ClarkHall1960].
+Bosworth-Toller records the verb as `hladan` and preserves the expected
+strong-verb paradigm material around it [@BosworthToller1898, 559]. Clark Hall
+likewise records `hladan` [@ClarkHall1960, 159].
 The target is an attested infinitive rather than a reconstructed paradigm cell.
 
 For this entry the relevant comparison form is the infinitive `hladan` itself.

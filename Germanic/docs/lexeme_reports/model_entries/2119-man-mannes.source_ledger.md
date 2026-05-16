@@ -26,3 +26,7 @@ book-style entry was drafted.
 ## Citation-locator master manifest 04
 
 - Tightened `SieversBrunner1965` from broad citations to verified section locators `§226` and `§231` after direct inspection of the local Brunner text.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 197`.

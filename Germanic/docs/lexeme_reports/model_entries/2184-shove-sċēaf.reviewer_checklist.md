@@ -53,3 +53,7 @@
    scaling pass.
 2. The paradigm comparison remains manual because there is still no dedicated
    checked-in probe specification for this lexeme.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `BrightCassidyRingler1971, 347`.

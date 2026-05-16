@@ -13,3 +13,7 @@ This ledger records the finite-cell evidence and bore-family background used bef
 | Companion rows 1956 and 2312 | live TSV context | `*búrōjaną -> borian`; `*búrōθi -> boraþ` | lemma row and 3sg companion | `borian`; `boraþ` | Useful family controls for distinguishing the imperative row from the headword and the 3sg cell. | no | `Germanic/data/germanic-aligned-final.tsv:96; 1472-1473` | high |
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 314`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 48`.

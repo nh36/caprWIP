@@ -63,3 +63,7 @@ Checked against `docs/refs.bib`:
   pilot report was changed.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 329` and `Campbell1959, §367`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 210`.

@@ -18,3 +18,7 @@ This ledger records the finite-cell evidence and show-family support used before
 - Tightened `Orel2003` from a broad citation to verified page locator `337` after direct inspection of the local Orel text.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 314` and `Campbell1959, §120`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `BrightCassidyRingler1971, 346`.

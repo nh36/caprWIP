@@ -29,8 +29,8 @@ preterite cell.
 
 The ordinary dictionary verb is `scūfan/scēofan`, but the preterite itself is
 well attested. Bright gives the principal parts `scufan, sceaf, scufon, scofen`
-and also quotes `he sceaf þa mid þam scylde`; Sweet gives the same paradigm
-[@BrightCassidyRingler1971; @Sweet1953]. The normalized form here is `sċēaf`,
+[@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953].
+The normalized form here is `sċēaf`,
 regularizing the attested spellings `sceaf` and prefixed `āsceaf`.
 
 ### Development to Old English

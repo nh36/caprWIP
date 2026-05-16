@@ -52,3 +52,7 @@
 2. Later promotion should keep the distinction between the bore-family lemma row and the imperative companion row explicit.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 314`.
+
+## Citation-locator claim-isolation 04
+
+- Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 48`.

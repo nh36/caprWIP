@@ -31,7 +31,7 @@ English form treated here [@RingeTaylor2014, 314].
 
 ### Old English evidence
 
-The dictionary headword is `macian` [@ClarkHall1960]. The selected form in this
+The dictionary headword is `macian` [@ClarkHall1960, 193]. The selected form in this
 entry is therefore not the lemma but the imperative singular `maca`, chosen as a
 paradigm form beside the headword `macian` and the related finite form `macaþ`.
 

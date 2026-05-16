@@ -34,7 +34,7 @@ Campbell gives the paradigm `mann, man / mannes / menn` [@Campbell1959].
 Sievers-Brunner likewise cites `man mannes` [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as `man`
 beside inflected `monnes` [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under `mann`
-[@ClarkHall1960].
+[@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
 **`mannes`**, not the citation lemma `mann`.
