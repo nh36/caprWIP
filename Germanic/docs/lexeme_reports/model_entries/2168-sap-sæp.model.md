@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The comparative sources do not give one uniform inherited stem. Kroonen derives
 the word family from material pointing to dialectal dissolution of a primary
 n-stem `*safō, gen. *sappaz` [@Kroonen2013]. Orel preserves the comparative
-notation `*sapōn ~ *sapan` [@Orel2003], while Kluge-Seebold instead gives West
+notation `*sapōn ~ *sapan` [@Orel2003, 319], while Kluge-Seebold instead gives West
 Germanic `*sapi-` and still cites Old English `sæp n.` [@KlugeSeebold2011].
 
 The selected input `*sápą` therefore does not replace those comparative labels.
@@ -34,7 +34,7 @@ Clark Hall records `sæp (e) n.` [@ClarkHall1960], and Kluge-Seebold likewise
 cites `ae. sæp n.` [@KlugeSeebold2011]. The target is therefore an attested
 neuter Old English noun. Orel's plain `sap` notation belongs to comparative
 normalization, not to the spelling adopted here for the Old English form
-[@Orel2003].
+[@Orel2003, 319].
 
 ### Development to Old English
 

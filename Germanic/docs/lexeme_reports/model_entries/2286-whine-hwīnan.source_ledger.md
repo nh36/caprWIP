@@ -17,3 +17,7 @@ book-style entry was drafted.
 | DEV_NOTES correction note | current local synthesis | `*hwīnăną`; `*wainōjăną`; `hwīnan`; `wānian` | explicit lexeme split | `hwīnan`; `wānian` | The decisive local note states that onset, vowel, and verb class show two different lexemes rather than two stages of one lexeme. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/2286-whine-hwīnan.md:28-34,47-60`; `Germanic/docs/DEV_NOTES.md:3660-3685` | high |
 
 Citation locator claim-isolation 01 split the family-identification sentence and added verified locators for `Kroonen2013, 267` and `RingeTaylor2014, 130`.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 201`.

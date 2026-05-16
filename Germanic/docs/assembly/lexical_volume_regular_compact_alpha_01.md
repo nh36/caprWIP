@@ -3013,7 +3013,7 @@ OE Weak Tail Reduction & \emph{*waskan} \\
 }
 \endgroup
 
-Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_, while Sievers-Brunner also notes the variant _wæscan_ [@ClarkHall1960; @SieversBrunner1965]. From _\*wáskaną_, brightening gives _\*wæskaną_.
+Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013, 575; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_, while Sievers-Brunner also notes the variant _wæscan_ [@ClarkHall1960; @SieversBrunner1965]. From _\*wáskaną_, brightening gives _\*wæskaną_.
 
 Form note. The conservative citation form _wascan_ is selected here. Spellings such as _wæscan_ or _wasċan_ belong to variant or normalized background rather than to the target of this entry.
 
@@ -3693,7 +3693,7 @@ The earliest directly cited Old English form is _wæfs_, written _waefs_ in
 the Épinal-Corpus material discussed by Bülbring and Brunner
 [@Bulbring1902, §484 Anm. 3; @SieversBrunner1965, §193]. Later Old English also
 shows _wæps_ and _wæsp_ / _wasp_, and dictionary practice often favors
-_wæps_ or later spellings as headwords [@ClarkHall1960].
+_wæps_ or later spellings as headwords [@ClarkHall1960, 341].
 
 This entry therefore distinguishes chronological priority from headword habit.
 _wæfs_ is not a convenient reconstruction: it is an attested Old English form
@@ -4821,7 +4821,7 @@ masculine input _\*láppô_.
 Campbell cites _lappa_ as a case of restored _a_, while Sievers-Brunner records
 _lappa_, variant _læppa_, and plural or oblique _leappan_
 [@Campbell1959; @SieversBrunner1965]. The dictionary tradition also preserves
-_læppa_ [@ClarkHall1960; @BosworthToller1898, 613].
+_læppa_ [@ClarkHall1960, 180; @BosworthToller1898, 613].
 
 The target of this entry is the restored singular _lappa_. The variant _læppa_
 and the oblique or plural _leappan_ remain part of the Old English record and
@@ -5459,7 +5459,7 @@ lines should not be collapsed without comment [@Orel2003].
 _Nosu_ is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives _nosu f._, with genitive-dative singular _nosa_, and cross-refers
-_nasu_ to _nosu_ [@ClarkHall1960].
+_nasu_ to _nosu_ [@ClarkHall1960, 810].
 
 The selected OE target is therefore an attested _nosu_, not a reconstructed
 placeholder. At the same time, the lexicographical record keeps _nasu_ visible as
@@ -5536,7 +5536,7 @@ Outcome: _sæp_
 The comparative sources do not give one uniform inherited stem. Kroonen derives
 the word family from material pointing to dialectal dissolution of a primary
 n-stem _\*safō_, gen. _\*sappaz_ [@Kroonen2013]. Orel preserves the comparative
-notation _\*sapōn_ ~ _\*sapan_ [@Orel2003], while Kluge-Seebold instead gives West
+notation _\*sapōn_ ~ _\*sapan_ [@Orel2003, 319], while Kluge-Seebold instead gives West
 Germanic _\*sapi-_ and still cites Old English _sæp_ n. [@KlugeSeebold2011].
 
 The selected input _\*sápą_ therefore does not replace those comparative labels.
@@ -5549,7 +5549,7 @@ Clark Hall records _sæp_ (e) n. [@ClarkHall1960], and Kluge-Seebold likewise
 cites ae. _sæp_ n. [@KlugeSeebold2011]. The target is therefore an attested
 neuter Old English noun. Orel's plain _sap_ notation belongs to comparative
 normalization, not to the spelling adopted here for the Old English form
-[@Orel2003].
+[@Orel2003, 319].
 
 #### Development to Old English
 
@@ -6516,7 +6516,7 @@ Outcome: _hwæl_
 #### Reconstruction and comparative evidence
 
 The comparative sources are not uniform. Orel gives _\*xwalaz_ and notes some
-mixed _\*xwaliz_ evidence [@Orel2003]. Kroonen instead cites
+mixed _\*xwaliz_ evidence [@Orel2003, 197]. Kroonen instead cites
 _\*hwali-_ [@Kroonen2013].
 
 Both notations agree on inherited initial _hw-/xw-_, but they differ in
@@ -6526,7 +6526,7 @@ than to Kroonen's citation form.
 #### Old English evidence
 
 Clark Hall lemmatizes the noun as _hwal_, and Bosworth-Toller preserves the
-plural _hwalas_ [@ClarkHall1960; @BosworthToller1898, 326]. The comparison form
+plural _hwalas_ [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
 is normalized here as _hwæl_ for the singular citation form with Anglo-
 Frisian fronting.
 
@@ -6605,7 +6605,7 @@ Outcome: _hwīnan_
 The citation reconstruction preserved in the header belongs to the lament-family
 verb seen in German _weinen_ and Old English _wānian_. Kroonen instead separates
 Old English _hwīnan_ under _\*hwinan-_ [@Kroonen2013, 267]. Orel likewise
-distinguishes strong _\*xwinanan_ from weak _\*wainōjanan_ [@Orel2003]. Ringe and
+distinguishes strong _\*xwinanan_ from weak _\*wainōjanan_ [@Orel2003, 201]. Ringe and
 Taylor make the same split at the Northwest Germanic level, linking Old Norse
 _hvina_ and Old English _hwinan_ to the same strong verb
 [@RingeTaylor2014, 130].
@@ -7099,7 +7099,7 @@ Outcome: _berġes_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the berry noun as _\*basja-_ ~ _\*bazja-_ [@Kroonen2013]. The
+Kroonen reconstructs the berry noun as _\*basja-_ ~ _\*bazja-_ [@Kroonen2013, 54]. The
 selected input _\*bázjas_ is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 
@@ -7585,7 +7585,7 @@ Outcome: _hameres_
 #### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem _\*xámaraz_, reflected in Old English
-citation forms such as _hamor_ and _hamer_ [@Kroonen2013; @Orel2003, 197;
+citation forms such as _hamor_ and _hamer_ [@Kroonen2013, 206; @Orel2003, 197;
 @ClarkHall1960, 160]. The selected input _\*xámaras_ is the genitive singular of that
 same noun rather than a different lexeme.
 
@@ -8073,7 +8073,7 @@ attested oblique line _meorde_.
 #### Old English evidence
 
 The directly attested forms are obliques: _meorde_ as a dative singular and
-_meorda_ as a genitive plural [@BrightCassidyRingler1971; @BosworthToller1898].
+_meorda_ as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898].
 Lexicographers reconstruct a bare nominative _meord_ from those obliques, while
 West Saxon prose more commonly shows the competing doublet _mēd_
 [@ClarkHall1960; @BosworthToller1898].

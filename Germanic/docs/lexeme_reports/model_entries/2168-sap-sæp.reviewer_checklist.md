@@ -52,3 +52,7 @@
    Kluge-Seebold, so this entry should not be scaled without human review.
 2. A human reader should confirm that the inferred i-stem comparator is kept at
    the right evidential level in the comparison table.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 319`.

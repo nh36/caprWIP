@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources are not uniform. Orel gives **`*xwalaz`** and notes some
-mixed **`*xwaliz`** evidence [@Orel2003]. Kroonen instead cites
+mixed **`*xwaliz`** evidence [@Orel2003, 197]. Kroonen instead cites
 **`*hwali-`** [@Kroonen2013].
 
 Both notations agree on inherited initial **`hw-/xw-`**, but they differ in
@@ -29,7 +29,7 @@ than to Kroonen's citation form.
 ### Old English evidence
 
 Clark Hall lemmatizes the noun as **`hwal`**, and Bosworth-Toller preserves the
-plural **`hwalas`** [@ClarkHall1960; @BosworthToller1898, 326]. The comparison form
+plural **`hwalas`** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
 is normalized here as **`hwæl`** for the singular citation form with Anglo-
 Frisian fronting.
 

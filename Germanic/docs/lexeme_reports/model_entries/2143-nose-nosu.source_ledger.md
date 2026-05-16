@@ -17,3 +17,7 @@ before the book-style prose was drafted.
 
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, 44`.
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 385`.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 810`.

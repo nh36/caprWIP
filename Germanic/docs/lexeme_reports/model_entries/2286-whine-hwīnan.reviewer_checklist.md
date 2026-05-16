@@ -59,3 +59,7 @@
    strong-verb versus weak-lament-family distinction remains unchanged.
 
 Citation locator claim-isolation 01 split the family-identification sentence and added verified locators for `Kroonen2013, 267` and `RingeTaylor2014, 130`.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 201`.

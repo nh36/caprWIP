@@ -12,3 +12,7 @@ before the book-style prose was drafted.
 | Clark Hall | 1960 dictionary | `sæp (e) n.` | attested neuter noun | `sæp`; `sæpe`-type spelling note | The Old English target is attested as neuter `sæp`, not reconstructed. | yes — `ClarkHall1960` | `Germanic/docs/lexeme_reports/research_memos/2168-sap-sæp.md:54-56,70-79`; `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt:34158-34159` | high |
 | DEV_NOTES comparator set | current local synthesis | `*sapōn -> sape`; `*sapiz -> sepe`; `*sapą -> sæp` | n-stem, inferred i-stem comparator, and a-stem comparator | `sape`; `sepe`; `sæp` | The selected a-stem input is the only modeled comparator that reaches `sæp`; the n-stem and i-stem lines do not. | no — local synthesis only | `Germanic/docs/lexeme_reports/dev_notes_slices/2168-sap-sæp.md:27-34,49-59`; `Germanic/docs/lexeme_reports/research_memos/2168-sap-sæp.md:51-66,82-88` | high |
 | Compact derivation trace | current local trace | `PROTO: *sápą`; `OUTPUTS: sæp` | selected strong-neuter input run through the implemented cascade | `sæp` | The current trace documents the regular modeled path from `*sápą` to `sæp`. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2168-sap-sæp.md:17-42`; `Germanic/docs/lexeme_reports/research_memos/2168-sap-sæp.md:17-21,62-66` | high |
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Orel2003, 319`.

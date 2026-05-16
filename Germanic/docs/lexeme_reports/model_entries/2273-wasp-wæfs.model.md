@@ -35,7 +35,7 @@ The earliest directly cited Old English form is **`wæfs`**, written `waefs` in
 the Épinal-Corpus material discussed by Bülbring and Brunner
 [@Bulbring1902, §484 Anm. 3; @SieversBrunner1965, §193]. Later Old English also
 shows **`wæps`** and **`wæsp / wasp`**, and dictionary practice often favors
-`wæps` or later spellings as headwords [@ClarkHall1960].
+`wæps` or later spellings as headwords [@ClarkHall1960, 341].
 
 This entry therefore distinguishes chronological priority from headword habit.
 `wæfs` is not a convenient reconstruction: it is an attested Old English form

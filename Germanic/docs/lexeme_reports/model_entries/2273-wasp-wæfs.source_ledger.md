@@ -12,3 +12,7 @@ drafted.
 | Brunner | OE grammar | `Ep.Corp. waefs`; later `fs > ps`; later `ps > sp` in restricted area | restricted metathesis chronology | `waefs`, `wæps`, `wæsp/wasp` | Establishes that the later forms are restricted secondary developments, not the primary target. | yes — `SieversBrunner1965` | cited in packet/memo/slice | high |
 | Clark Hall | OE dictionary | `wæps` headword practice | lexicographic default | `wæps` | Useful control showing that dictionary headword choice does not necessarily track chronological priority. | yes — `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | `wæfs` selected over later doublets | attested-variant decision | `wæfs` | The decisive issue is target selection within the attested OE variants, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2273-wasp-wæfs.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2273-wasp-wæfs.md` | high |
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 341`.

@@ -23,3 +23,7 @@ book-style entry was drafted.
 ## Citation-locator master manifest 04
 
 - Tightened `SieversBrunner1965` from a broad citation to verified section locator `§245` after direct inspection of the local Brunner text.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Kroonen2013, 206`.

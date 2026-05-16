@@ -51,3 +51,7 @@
 1. Headword practice in dictionaries still tends to favor later forms such as
    `wæps`; the entry should continue to distinguish that habit from the earlier
    attested `wæfs`.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 341`.

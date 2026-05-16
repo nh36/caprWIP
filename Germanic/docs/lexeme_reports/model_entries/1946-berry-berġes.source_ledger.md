@@ -25,3 +25,7 @@ This ledger records the evidence used for the P3 pilot upgrade.
 ## Citation-locator claim-isolation 03
 
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 181`.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `Kroonen2013, 54`.

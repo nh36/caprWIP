@@ -32,7 +32,7 @@ attested oblique line `meorde`.
 ### Old English evidence
 
 The directly attested forms are obliques: `meorde` as a dative singular and
-`meorda` as a genitive plural [@BrightCassidyRingler1971; @BosworthToller1898].
+`meorda` as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898].
 Lexicographers reconstruct a bare nominative `meord` from those obliques, while
 West Saxon prose more commonly shows the competing doublet `mēd`
 [@ClarkHall1960; @BosworthToller1898].

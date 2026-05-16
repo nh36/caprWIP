@@ -13,3 +13,7 @@ book-style entry was drafted.
 | Orel / Hirt | comparative alternative | `*mizdō`; doublet-style analysis | PGmc-level doublet account | `mēd`; `meord` | Preserves the older doublet analysis as a real alternative. | yes — `Orel2003`; `Hirt1931` | cited in packet/memo/slice | medium |
 | Kilday | draft reinterpretation | `meord` regular; `mēd` loan | Saxono-Frisian loan account for the WS doublet | `meorde`; `mēd` | Keeps the newer loan explanation visible without treating it as settled. | yes — `Kilday2024` | cited in packet/memo/slice | medium; draft-only |
 | Local memo / slice synthesis | current project analysis | direct obliques `meorde`, `meorda`; reconstructed `meord` | manual paradigm-cell targeting within a doublet problem | `meorde`; `meorda`; `meord`; `mēd` | The entry should stay narrower than the whole lexeme-level debate over `mēd`. | no | `Germanic/docs/lexeme_reports/research_memos/2124-meed-meorde.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2124-meadow-mǣd.md` | high; gen.pl. probe still not formalized |
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `BrightCassidyRingler1971, 328`.

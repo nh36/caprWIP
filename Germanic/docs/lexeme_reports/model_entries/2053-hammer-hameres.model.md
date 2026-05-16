@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem `*xámaraz`, reflected in Old English
-citation forms such as `hamor` and `hamer` [@Kroonen2013; @Orel2003, 197;
+citation forms such as `hamor` and `hamer` [@Kroonen2013, 206; @Orel2003, 197;
 @ClarkHall1960, 160]. The selected input `*xámaras` is the genitive singular of that
 same noun rather than a different lexeme.
 

@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the berry noun as `*basja- ~ *bazja-` [@Kroonen2013]. The
+Kroonen reconstructs the berry noun as `*basja- ~ *bazja-` [@Kroonen2013, 54]. The
 selected input `*bázjas` is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 

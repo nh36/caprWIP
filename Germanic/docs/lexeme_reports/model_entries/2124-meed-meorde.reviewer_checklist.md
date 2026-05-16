@@ -52,3 +52,7 @@
    account is still a draft rather than a settled handbook position.
 2. The paradigm-cell solution is narrower than the full lexeme history and should
    not be mistaken for a final solution to the `meord` / `mēd` problem.
+
+## Citation-locator page-anchor repair 01
+
+- Citation locator tightened after page-anchor repair pass; verified against `BrightCassidyRingler1971, 328`.

@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The citation reconstruction preserved in the header belongs to the lament-family
 verb seen in German `weinen` and Old English `wānian`. Kroonen instead separates
 Old English `hwīnan` under `*hwinan-` [@Kroonen2013, 267]. Orel likewise
-distinguishes strong `*xwinanan` from weak `*wainōjanan` [@Orel2003]. Ringe and
+distinguishes strong `*xwinanan` from weak `*wainōjanan` [@Orel2003, 201]. Ringe and
 Taylor make the same split at the Northwest Germanic level, linking Old Norse
 `hvina` and Old English `hwinan` to the same strong verb
 [@RingeTaylor2014, 130].
