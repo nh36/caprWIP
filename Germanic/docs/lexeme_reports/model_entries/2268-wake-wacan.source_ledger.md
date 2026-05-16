@@ -17,3 +17,7 @@ This ledger records the source forms and class distinctions gathered before the 
 - Added page-specific locators for `BosworthToller1898, 226`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 338.

@@ -50,3 +50,7 @@
 
 1. Review should keep the variant set subordinate to the selected West Saxon
    form so the entry does not drift into a variant-history essay.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against BosworthToller1898 at 551, ClarkHall1960 at 160-161, and BrightCassidyRingler1971 at 315.

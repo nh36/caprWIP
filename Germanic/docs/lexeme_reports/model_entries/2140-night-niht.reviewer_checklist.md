@@ -56,3 +56,7 @@
    for promotion.
 
 Citation locator claim-isolation 02 tightened the remaining broad handbook claims and added verified locators for `RingeTaylor2014, 240, 380`, `Campbell1959, §628.3`, and `SieversBrunner1965, §284`.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 215.

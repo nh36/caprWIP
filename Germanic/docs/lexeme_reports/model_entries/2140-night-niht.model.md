@@ -30,12 +30,11 @@ with `dat. sg. niht < *nahti` [@RingeTaylor2014, 380].
 
 ### Old English evidence
 
-Clark Hall lemmatizes `niht` and records the spelling range `æ, e, ea, ie, y`,
-while cross-referencing forms such as `neaht`, `neht`, and `nieht`
-[@ClarkHall1960]. Campbell likewise preserves the fluctuation between `neaht`
-and `niht`, giving genitive `nihte, nihtes`, dative `niht, nihte`, nominative
-plural `niht`, and the contrasting plural-side forms represented by `neahtas`
-[@Campbell1959, §628.3].
+Clark Hall lemmatizes `niht` and cross-references forms such as `neaht`,
+`neht`, and `nieht` [@ClarkHall1960, 215]. Campbell likewise preserves the
+fluctuation between `neaht` and `niht`, giving genitive `nihte, nihtes`,
+dative `niht, nihte`, nominative plural `niht`, and the contrasting
+plural-side forms represented by `neahtas` [@Campbell1959, §628.3].
 
 The comparison form used here is therefore an attested Old English `niht`, not a
 reconstructed substitute. The broader lexical record still preserves the

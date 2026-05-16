@@ -14,3 +14,7 @@ before the book-style prose was drafted.
 | Compact derivation trace | current local trace | `PROTO: *náxti`; `OUTPUTS: niht` | selected dative-singular input run through the implemented cascade | `niht` | The current trace documents the regular modeled path from the selected oblique input to the OE target. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2140-night-niht.md:17-43`; `Germanic/docs/lexeme_reports/dev_notes_slices/2140-night-niht.md:25-26` | high |
 
 Citation locator claim-isolation 02 tightened the remaining broad handbook claims and added verified locators for `RingeTaylor2014, 240, 380`, `Campbell1959, §628.3`, and `SieversBrunner1965, §284`.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 215.

@@ -32,10 +32,10 @@ form `*fulgēną` belongs to the parallel class-II history behind `folgian`.
 
 ### Old English evidence
 
-The Old English evidence preserves both formations. Clark Hall gives `folgian`
-and cross-refers to `fylgan`, while also listing `fylgan` with variant spellings
-`fylgian` and `fyligan` [@ClarkHall1960]. Bosworth-Toller likewise has separate
-entries for `folgian` and `fylgean` [@BosworthToller1898].
+The Old English evidence preserves both formations. Clark Hall lists `fylgan`
+with variant spellings `fylgian` and `fyligan` [@ClarkHall1960, 125].
+Bosworth-Toller likewise has a separate `fylgean` entry
+[@BosworthToller1898, 275].
 
 Bright notes traces of the older conjugation in `fylg(e)an`
 [@BrightCassidyRingler1971, 77] and lists `folgian (fylgean)` in the glossary

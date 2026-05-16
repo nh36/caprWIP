@@ -17,3 +17,7 @@ before the book-style prose was drafted.
 | Compact derivation trace | current local trace | `PROTO: *fúlgijaną`; `EXPECTED: fylġan`; `OUTPUTS: fylġan`; `OE Velar Palatalization`; `OE I Umlaut`; `OE Weak Tail Reduction`; `OE J Loss After Heavy` | class-I infinitive input with regular OE developments | `fylġan` | The implemented derivation supports the regular path from the Class I input to the normalized OE outcome. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2027-follow-fylġan.md:17-43`; `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:7392-7395` | high |
 
 Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 125 and BosworthToller1898 at 275.

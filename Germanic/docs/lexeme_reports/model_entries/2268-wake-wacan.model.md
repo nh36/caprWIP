@@ -29,7 +29,7 @@ related but distinct histories.
 ### Old English evidence
 
 Clark Hall keeps **`wacan`** and **`wacian`** as separate headwords
-[@ClarkHall1960]. Bosworth-Toller adds an important caution under
+[@ClarkHall1960, 338]. Bosworth-Toller adds an important caution under
 **`wacan`**: the simplex infinitive itself does not occur, its place seeming to
 be taken by **`wæcnan`** [@BosworthToller1898, 226].
 

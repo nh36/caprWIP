@@ -13,3 +13,7 @@ book-style entry was drafted.
 | Campbell | OE phonology | treatment of the geminate fricative and related vowel history | OE development | `hliehhan` | Supports the OE phonological path. | yes — `Campbell1959` | cited in packet/memo/slice | medium |
 | Bosworth-Toller / Clark Hall / Bright | OE dictionary and reader evidence | `hliehhan` and variant forms such as `hlæhhan`, `hlehhan` | OE attested forms | `hliehhan`; `hlæhhan`; `hlehhan` | Confirms the target and the relevant variant set. | yes — `BosworthToller1898`; `ClarkHall1960`; `BrightCassidyRingler1971` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | j-present branch accepted; gemination issue resolved in the live derivation | branch selection | `hliehhan` | The main issue is early branch choice, while gemination itself is regular. | no | `Germanic/docs/lexeme_reports/research_memos/2092-laugh-hliehhan.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2092-laugh-hliehhan.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against BosworthToller1898 at 551, ClarkHall1960 at 160-161, and BrightCassidyRingler1971 at 315.

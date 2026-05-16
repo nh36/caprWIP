@@ -31,10 +31,10 @@ Old English form treated here [@Orel2003].
 ### Old English evidence
 
 Clark Hall gives `sibi (GL) ... = sife` and also `sife n. ‘sieve’`
-[@ClarkHall1960]. Campbell likewise cites Corpus Glossary `sibi` and treats
-`sife` as a short neuter i-stem [@Campbell1959, §§444, 609]. The normalized
-Old English target is therefore `sife`, while `sibi` is an attested earlier
-spelling rather than a separate lexeme.
+[@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary `sibi` and
+treats `sife` as a short neuter i-stem [@Campbell1959, §§444, 609]. The
+normalized Old English target is therefore `sife`, while `sibi` is an attested
+earlier spelling rather than a separate lexeme.
 
 ### Development to Old English
 

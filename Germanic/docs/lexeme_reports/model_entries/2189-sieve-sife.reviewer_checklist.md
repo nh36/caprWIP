@@ -53,3 +53,7 @@
    before promotion.
 2. The distinction between `sife` and the separate kinship noun `sibb` must
    remain sharp in any later editorial pass.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 263.

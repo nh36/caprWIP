@@ -4434,10 +4434,10 @@ form _\*fulgēną_ belongs to the parallel class-II history behind _folgian_.
 
 #### Old English evidence
 
-The Old English evidence preserves both formations. Clark Hall gives _folgian_
-and cross-refers to _fylgan_, while also listing _fylgan_ with variant spellings
-_fylgian_ and _fyligan_ [@ClarkHall1960]. Bosworth-Toller likewise has separate
-entries for _folgian_ and _fylgean_ [@BosworthToller1898].
+The Old English evidence preserves both formations. Clark Hall lists _fylgan_
+with variant spellings _fylgian_ and _fyligan_ [@ClarkHall1960, 125].
+Bosworth-Toller likewise has a separate _fylgean_ entry
+[@BosworthToller1898, 275].
 
 Bright notes traces of the older conjugation in _fylg(e)an_
 [@BrightCassidyRingler1971, 77] and lists _folgian (fylgean)_ in the glossary
@@ -4819,10 +4819,10 @@ masculine input _\*láppô_.
 
 #### Old English evidence
 
-Campbell cites _lappa_ as a case of restored _a_, while Sievers-Brunner records
-_lappa_, variant _læppa_, and plural or oblique _leappan_
-[@Campbell1959; @SieversBrunner1965]. The dictionary tradition also preserves
-_læppa_ [@ClarkHall1960, 180; @BosworthToller1898, 613].
+Campbell cites _lappa_ as a case of restored _a_
+[@Campbell1959, §158]. Sievers-Brunner records _lappa_ beside variant _læppa_
+[@SieversBrunner1965, §10]. The dictionary tradition also preserves _læppa_
+[@ClarkHall1960, 180; @BosworthToller1898, 613].
 
 The target of this entry is the restored singular _lappa_. The variant _læppa_
 and the oblique or plural _leappan_ remain part of the Old English record and
@@ -4915,10 +4915,12 @@ family label and the OE-facing input are therefore related but not identical.
 
 #### Old English evidence
 
-Old English dictionaries and readers record the verb as _hliehhan_, while also
-preserving variants such as _hlæhhan_ and _hlehhan_
-[@BosworthToller1898; @ClarkHall1960; @BrightCassidyRingler1971]. The target of
-this entry is the West Saxon _hliehhan_.
+Bosworth-Toller records _hlihhan_ as the verb 'to laugh'
+[@BosworthToller1898, 551]. Clark Hall cross-references _hlæhan_,
+_hlehhan_, and _hlihhan_ to _hliehhan_ [@ClarkHall1960, 160-161]. Bright's
+glossary likewise gives _hlihhan (hliehhan, hlyhhan)_
+[@BrightCassidyRingler1971, 315]. The target of this entry is the West Saxon
+_hliehhan_.
 
 The variant set matters as background, but the argument of the entry rests on
 the attested lemma _hliehhan_ itself.
@@ -5725,10 +5727,10 @@ Old English form treated here [@Orel2003].
 #### Old English evidence
 
 Clark Hall gives _sibi (GL) ... = sife_ and also _sife n. ‘sieve’_
-[@ClarkHall1960]. Campbell likewise cites Corpus Glossary _sibi_ and treats
-_sife_ as a short neuter i-stem [@Campbell1959, §§444, 609]. The normalized
-Old English target is therefore _sife_, while _sibi_ is an attested earlier
-spelling rather than a separate lexeme.
+[@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary _sibi_ and
+treats _sife_ as a short neuter i-stem [@Campbell1959, §§444, 609]. The
+normalized Old English target is therefore _sife_, while _sibi_ is an attested
+earlier spelling rather than a separate lexeme.
 
 #### Development to Old English
 
@@ -6351,7 +6353,7 @@ related but distinct histories.
 #### Old English evidence
 
 Clark Hall keeps _wacan_ and _wacian_ as separate headwords
-[@ClarkHall1960]. Bosworth-Toller adds an important caution under
+[@ClarkHall1960, 338]. Bosworth-Toller adds an important caution under
 _wacan_: the simplex infinitive itself does not occur, its place seeming to
 be taken by _wæcnan_ [@BosworthToller1898, 226].
 
@@ -7295,8 +7297,8 @@ following _\*i_.
 #### Old English evidence
 
 Clark Hall lemmatizes the noun under _cū_ and records gen.sg. _cū(e)_, _cȳ_, _cūs_,
-dat.sg. _cȳ_, nom.-acc.pl. _cȳ_, and dat.pl. _cūm_ [@ClarkHall1960]. Ringe and
-Taylor likewise state that the root-noun _cū_ exhibits dat.sg., nom.-acc.pl.
+dat.sg. _cȳ_, nom.-acc.pl. _cȳ_, and dat.pl. _cūm_ [@ClarkHall1960, 67]. Ringe
+and Taylor likewise state that the root-noun _cū_ exhibits dat.sg., nom.-acc.pl.
 _cȳ_ < _\*cūi_, dat.pl. _cūm_ < _\*cūm_, and apparently gen.sg. _cā_ < _\*cūiz_
 [@RingeTaylor2014, §6.6.1].
 
@@ -7978,7 +7980,8 @@ before the ending.
 
 #### Old English evidence
 
-Campbell gives the paradigm mann, _man_ / _mannes_ / _menn_ [@Campbell1959].
+Campbell gives the paradigm mann, _man_ / _mannes_ / _menn_
+[@Campbell1959, §621].
 Sievers-Brunner likewise cites _man mannes_ [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as _man_
 beside inflected _monnes_ [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under _mann_
@@ -8169,12 +8172,11 @@ with dat. sg. _niht_ < _\*nahti_ [@RingeTaylor2014, 380].
 
 #### Old English evidence
 
-Clark Hall lemmatizes _niht_ and records the spelling range _æ_, e, ea, ie, y,
-while cross-referencing forms such as _neaht_, _neht_, and _nieht_
-[@ClarkHall1960]. Campbell likewise preserves the fluctuation between _neaht_
-and _niht_, giving genitive _nihte, nihtes_, dative _niht, nihte_, nominative
-plural _niht_, and the contrasting plural-side forms represented by _neahtas_
-[@Campbell1959, §628.3].
+Clark Hall lemmatizes _niht_ and cross-references forms such as _neaht_,
+_neht_, and _nieht_ [@ClarkHall1960, 215]. Campbell likewise preserves the
+fluctuation between _neaht_ and _niht_, giving genitive _nihte, nihtes_,
+dative _niht, nihte_, nominative plural _niht_, and the contrasting
+plural-side forms represented by _neahtas_ [@Campbell1959, §628.3].
 
 The comparison form used here is therefore an attested Old English _niht_, not a
 reconstructed substitute. The broader lexical record still preserves the
@@ -10230,21 +10232,20 @@ The inherited noun is an a-stem: Kroonen gives _\*wulfa-_, and the regular Old
 English development of that citation form is the same one reflected by Old High
 German _wolf_ [@Kroonen2013; @RingeTaylor2014]. Campbell accordingly names Old
 English _wulf_ as an exception to the regular lowering of stressed _u_ before a
-following non-high vowel [@Campbell1959].
+following non-high vowel [@Campbell1959, §115].
 
 The older literature often notices that the exceptional words cluster near
 labials. Bülbring lists _full_, _wulle_, and _wulf_ together, but he also says
 that the ordinary rule still gives _o_ in comparable forms such as _folc_ and
-_bolt_ [@Bulbring1902]. Luick rejects a categorical labial blocker on the same
-grounds and prefers a lexical or analogical account instead [@Luick1914, 148].
+_bolt_ [@Bulbring1902, §116]. Luick rejects a categorical labial blocker on the
+same grounds and prefers a lexical or analogical account instead
+[@Luick1914, 148].
 
 #### Old English evidence
 
-Old English _wulf_ is an attested noun, and the handbook tradition treats it as
-the ordinary lexical form while simultaneously recognizing its exceptional vowel
-[@Campbell1959; @SieversBrunner1965]. The oblique form _wulfe_ also belongs to
-the record, but Sievers-Brunner warns that this type continues _wulfi_ only with
-i-umlaut later abandoned across the paradigm [@SieversBrunner1965].
+Campbell treats _wulf_ as part of the exceptional _u_ set
+[@Campbell1959, §115]. Sievers-Brunner notes that oblique _wulfe_ continues
+_wulfi_ or older _wulfai_ [@SieversBrunner1965, §160].
 
 That warning matters because the surviving oblique forms do not supply a clean
 regular route back to bare _wulf_. They belong to the same lexeme, but they do

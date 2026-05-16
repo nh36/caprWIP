@@ -22,21 +22,20 @@ The inherited noun is an a-stem: Kroonen gives `*wulfa-`, and the regular Old
 English development of that citation form is the same one reflected by Old High
 German `wolf` [@Kroonen2013; @RingeTaylor2014]. Campbell accordingly names Old
 English `wulf` as an exception to the regular lowering of stressed `u` before a
-following non-high vowel [@Campbell1959].
+following non-high vowel [@Campbell1959, §115].
 
 The older literature often notices that the exceptional words cluster near
 labials. Bülbring lists `full`, `wulle`, and `wulf` together, but he also says
 that the ordinary rule still gives `o` in comparable forms such as `folc` and
-`bolt` [@Bulbring1902]. Luick rejects a categorical labial blocker on the same
-grounds and prefers a lexical or analogical account instead [@Luick1914, 148].
+`bolt` [@Bulbring1902, §116]. Luick rejects a categorical labial blocker on the
+same grounds and prefers a lexical or analogical account instead
+[@Luick1914, 148].
 
 ### Old English evidence
 
-Old English `wulf` is an attested noun, and the handbook tradition treats it as
-the ordinary lexical form while simultaneously recognizing its exceptional vowel
-[@Campbell1959; @SieversBrunner1965]. The oblique form `wulfe` also belongs to
-the record, but Sievers-Brunner warns that this type continues `wulfi` only with
-i-umlaut later abandoned across the paradigm [@SieversBrunner1965].
+Campbell treats `wulf` as part of the exceptional `u` set
+[@Campbell1959, §115]. Sievers-Brunner notes that oblique `wulfe` continues
+`wulfi` or older `wulfai` [@SieversBrunner1965, §160].
 
 That warning matters because the surviving oblique forms do not supply a clean
 regular route back to bare `wulf`. They belong to the same lexeme, but they do

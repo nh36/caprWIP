@@ -29,10 +29,12 @@ family label and the OE-facing input are therefore related but not identical.
 
 ### Old English evidence
 
-Old English dictionaries and readers record the verb as `hliehhan`, while also
-preserving variants such as `hlæhhan` and `hlehhan`
-[@BosworthToller1898; @ClarkHall1960; @BrightCassidyRingler1971]. The target of
-this entry is the West Saxon `hliehhan`.
+Bosworth-Toller records `hlihhan` as the verb 'to laugh'
+[@BosworthToller1898, 551]. Clark Hall cross-references `hlæhan`,
+`hlehhan`, and `hlihhan` to `hliehhan` [@ClarkHall1960, 160-161]. Bright's
+glossary likewise gives `hlihhan (hliehhan, hlyhhan)`
+[@BrightCassidyRingler1971, 315]. The target of this entry is the West Saxon
+`hliehhan`.
 
 The variant set matters as background, but the argument of the entry rests on
 the attested lemma `hliehhan` itself.

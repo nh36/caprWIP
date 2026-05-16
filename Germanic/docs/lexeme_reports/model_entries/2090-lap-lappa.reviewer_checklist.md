@@ -61,3 +61,7 @@
 ## Citation-locator page-anchor repair 01
 
 - Citation locator tightened after page-anchor repair pass; verified against `ClarkHall1960, 180`.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against Campbell1959 at §158 and SieversBrunner1965 at §10.

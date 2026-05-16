@@ -30,7 +30,8 @@ before the ending.
 
 ### Old English evidence
 
-Campbell gives the paradigm `mann, man / mannes / menn` [@Campbell1959].
+Campbell gives the paradigm `mann, man / mannes / menn`
+[@Campbell1959, §621].
 Sievers-Brunner likewise cites `man mannes` [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as `man`
 beside inflected `monnes` [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under `mann`

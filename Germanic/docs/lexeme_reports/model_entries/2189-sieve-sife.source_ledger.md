@@ -13,3 +13,7 @@ before the book-style prose was drafted.
 | Kroonen | 2013 etymological dictionary | `*sebjō-` | separate kinship lexeme, not the sieve word | `OE sib` | Kroonen's relevant nearby entry is the kinship noun that yields `sibb`, which helps exclude a ja-stem analysis for `sife`. | yes — `Kroonen2013` | `Germanic/docs/lexeme_reports/research_memos/2189-sieve-sife.md:40-41,57-61`; `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt:22262-22265,22271-22273` | high |
 | Orel | 2003 handbook | `*sibaz sb.n.` | broad handbook a-stem cover notation | `OE sife` | Orel preserves a competing cover notation that is useful comparative background but does not fit the selected Old English-facing morphology. | yes — `Orel2003` | `Germanic/docs/lexeme_reports/research_memos/2189-sieve-sife.md:40-41,79-87`; `docs/references/orel_handbook_germanic_etymology.vision.txt:36662-36668` | high |
 | Compact derivation trace | current local trace | `PROTO: *síbi`; `OUTPUTS: sife` | implemented derivation from the selected i-stem input | `sife` | The current trace documents the regular path `*síbi > *síβi > *síβe > sife`. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2189-sieve-sife.md:17-40`; `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:7738-7757` | high |
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 263.

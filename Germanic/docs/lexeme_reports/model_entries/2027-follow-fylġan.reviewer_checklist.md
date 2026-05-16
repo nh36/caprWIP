@@ -78,3 +78,7 @@
    source forms themselves appear mainly as `fylgan` and `fylgean`.
 
 Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+
+## Citation-locator claim-isolation 05
+
+Citation locator tightened after claim-isolation pass; verified against ClarkHall1960 at 125 and BosworthToller1898 at 275.
