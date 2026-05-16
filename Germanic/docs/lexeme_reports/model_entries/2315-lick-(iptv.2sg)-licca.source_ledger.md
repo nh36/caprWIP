@@ -17,3 +17,5 @@ This ledger records the finite-cell evidence and lick-family background used bef
 ## Citation-locator master manifest 04
 
 - Tightened `Orel2003` from a broad citation to verified page locator `285` after direct inspection of the local Orel text.
+
+Citation locator claim-isolation 01 split the finite-cell sentence and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.

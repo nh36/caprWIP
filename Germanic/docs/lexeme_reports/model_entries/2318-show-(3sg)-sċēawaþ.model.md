@@ -21,7 +21,7 @@ DERIVATION_CLASS: late_analogy
 
 Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is the present third singular `*skáwōθi`, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
 
-Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)`, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable `-a-` [@Campbell1959; @RingeTaylor2014]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
+Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. `-as(t)` and 3sg. `-aþ` have stable `a` [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 ### Old English evidence
 

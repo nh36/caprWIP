@@ -19,10 +19,10 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The make-family belongs to the Old English class-II weak verbs. Campbell cites
-`macian` beside `lapian` and similar verbs with restored `a`, and Ringe and
+`lapian, macian` among verbs with restored `a` [@Campbell1959, §159]. Ringe and
 Taylor place the Germanic verb in the same class, comparing West Germanic
 continuants such as Old Frisian `makia`, Old Saxon `makon`, and Old High German
-`mahhon` [@Campbell1959; @RingeTaylor2014].
+`mahhon` [@RingeTaylor2014, 191].
 
 The selected input `*mákô` is not the citation form of the lexeme but a finite
 paradigm cell. Ringe and Taylor's account of the class-II weak paradigm is the

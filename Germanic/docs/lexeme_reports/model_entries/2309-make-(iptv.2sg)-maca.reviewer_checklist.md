@@ -52,3 +52,5 @@
    form, while the ordinary dictionary headword is `macian`.
 2. Later promotion should keep the distinction between the shared make-family
    evidence and the row-specific imperative-cell comparison explicit.
+
+Citation locator claim-isolation 01 split the class-II background sentence and added verified locators for `Campbell1959, §159` and `RingeTaylor2014, 191`.

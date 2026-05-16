@@ -19,11 +19,11 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-`*xabēną` and Old English `habban` [@Kroonen2013; @RingeTaylor2014]. Within that
-paradigm, however, the infinitive and the singular present indicative do not
-continue the same stem. Ringe and Taylor distinguish a `-ja-` stem in the
+`*xabēną` and Old English `habban` [@Kroonen2013; @RingeTaylor2014, 93]. Within
+that paradigm, however, the infinitive and the singular present indicative do
+not continue the same stem. Ringe and Taylor distinguish a `-ja-` stem in the
 infinitive from a non-geminating `-ai- / -ē-` stem in the 2sg and 3sg present
-forms [@RingeTaylor2014].
+forms [@RingeTaylor2014, 93].
 
 The selected input `*xábēθi` is therefore the 3sg present cell rather than a
 rephrasing of the infinitive. Fulk's discussion of `habban` treats the ordinary
@@ -33,9 +33,9 @@ cleaner comparator here [@Fulk2018].
 ### Old English evidence
 
 The ordinary Old English headword is `habban`, while the present paradigm also
-shows forms of the `hæf-` type [@BosworthToller1898; @ClarkHall1960, 157]. Campbell
-notes occasional unsyncopated forms that support the normalized target
-**`hæfeþ`** [@Campbell1959].
+shows forms of the `hæf-` type [@BosworthToller1898; @ClarkHall1960, 157].
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the `hæfed` type,
+supporting the normalized target **`hæfeþ`** [@Campbell1959, §762].
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more

@@ -17,3 +17,5 @@ This ledger records the 3sg finite-cell evidence and show-family support used be
 ## Citation-locator master manifest 04
 
 - Tightened `Orel2003` from a broad citation to verified page locator `337` after direct inspection of the local Orel text.
+
+Citation locator claim-isolation 01 split the class-II ending sentence and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.

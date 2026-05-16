@@ -61,3 +61,5 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, writing-skill file, or existing model entry was
   changed.
+
+Citation locator claim-isolation 01 split the family-identification sentence and added verified locators for `Kroonen2013, 267` and `RingeTaylor2014, 130`.

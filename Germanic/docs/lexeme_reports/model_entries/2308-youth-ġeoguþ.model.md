@@ -25,8 +25,8 @@ input `*júgunθ` is later again: it represents the form after final `-i` has be
 lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
-`*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014]. Campbell makes the
-same point with the parallel `duguþ < *dugunþ-`, adding `geoguþ` to the same
+`*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. Campbell makes
+the same point with the parallel `duguþ < *dugunþ-`, adding `geoguþ` to the same
 history [@Campbell1959]. The selected input therefore differs from the broader
 comparative headword because the Old English development must begin after early
 loss of final `-i`.

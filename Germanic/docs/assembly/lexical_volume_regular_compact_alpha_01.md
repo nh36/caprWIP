@@ -6597,10 +6597,11 @@ Outcome: _hwīnan_
 
 The citation reconstruction preserved in the header belongs to the lament-family
 verb seen in German _weinen_ and Old English _wānian_. Kroonen instead separates
-Old English _hwīnan_ under _\*hwinan-_, and Orel likewise distinguishes strong
-_\*xwinanan_ from weak _\*wainōjanan_ [@Kroonen2013; @Orel2003]. Ringe and
+Old English _hwīnan_ under _\*hwinan-_ [@Kroonen2013, 267]. Orel likewise
+distinguishes strong _\*xwinanan_ from weak _\*wainōjanan_ [@Orel2003]. Ringe and
 Taylor make the same split at the Northwest Germanic level, linking Old Norse
-_hvina_ and Old English _hwinan_ to the same strong verb [@RingeTaylor2014].
+_hvina_ and Old English _hwinan_ to the same strong verb
+[@RingeTaylor2014, 130].
 
 The difference affects both phonology and morphology. The lament family has
 initial _w-_, diphthongal _ai_, and weak-II morphology, whereas the verb behind
@@ -6908,8 +6909,8 @@ input _\*júgunθ_ is later again: it represents the form after final _-i_ has b
 lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
-_\*jugunþi_ > _\*juguþ_ > OE _geoguþ_ ~ _iuguþ_ [@RingeTaylor2014]. Campbell makes the
-same point with the parallel _duguþ_ < _\*dugunþ-_, adding _geoguþ_ to the same
+_\*jugunþi_ > _\*juguþ_ > OE _geoguþ_ ~ _iuguþ_ [@RingeTaylor2014, 141]. Campbell makes
+the same point with the parallel _duguþ_ < _\*dugunþ-_, adding _geoguþ_ to the same
 history [@Campbell1959]. The selected input therefore differs from the broader
 comparative headword because the Old English development must begin after early
 loss of final _-i_.
@@ -7677,11 +7678,11 @@ Outcome: _hæfeþ_
 #### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-_\*xabēną_ and Old English _habban_ [@Kroonen2013; @RingeTaylor2014]. Within that
-paradigm, however, the infinitive and the singular present indicative do not
-continue the same stem. Ringe and Taylor distinguish a _-ja-_ stem in the
+_\*xabēną_ and Old English _habban_ [@Kroonen2013; @RingeTaylor2014, 93]. Within
+that paradigm, however, the infinitive and the singular present indicative do
+not continue the same stem. Ringe and Taylor distinguish a _-ja-_ stem in the
 infinitive from a non-geminating -ai- / _-ē-_ stem in the 2sg and 3sg present
-forms [@RingeTaylor2014].
+forms [@RingeTaylor2014, 93].
 
 The selected input _\*xábēθi_ is therefore the 3sg present cell rather than a
 rephrasing of the infinitive. Fulk's discussion of _habban_ treats the ordinary
@@ -7691,9 +7692,9 @@ cleaner comparator here [@Fulk2018].
 #### Old English evidence
 
 The ordinary Old English headword is _habban_, while the present paradigm also
-shows forms of the _hæf-_ type [@BosworthToller1898; @ClarkHall1960, 157]. Campbell
-notes occasional unsyncopated forms that support the normalized target
-_hæfeþ_ [@Campbell1959].
+shows forms of the _hæf-_ type [@BosworthToller1898; @ClarkHall1960, 157].
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the _hæfed_ type,
+supporting the normalized target _hæfeþ_ [@Campbell1959, §762].
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more
@@ -7873,10 +7874,10 @@ Outcome: _lifeþ_
 #### Reconstruction and comparative evidence
 
 The inherited verb belongs to the class-III weak family cited by Kroonen under
-_\*libēn-_, reflected in Old English _libban_ [@Kroonen2013, 336]. Ringe and Taylor
-show that the paradigm also contained a separate 3sg present stem, continued in
-late Northumbrian _lifed_, which they treat as an archaism
-[@RingeTaylor2014].
+_\*libēn-_, reflected in Old English _libban_ [@Kroonen2013, 336]. Ringe and
+Taylor show that the paradigm also contained a separate 3sg present stem,
+continued in late Northumbrian _lifed_, which they treat as an archaism
+[@RingeTaylor2014, 364].
 
 The selected input _\*líbēθi_ therefore represents a finite present cell rather
 than the citation infinitive. That distinction matters because the ordinary
@@ -7887,7 +7888,7 @@ later lemma tradition also includes remodeled forms such as _lifian_.
 The ordinary dictionary headwords are _libban_ and, in later remodeling,
 _lifian_ [@BosworthToller1898; @ClarkHall1960]. For this entry, however, the
 relevant comparison form is the archaic 3sg present attested as _lifed_, here
-normalized as _lifeþ_ [@RingeTaylor2014; @Campbell1959].
+normalized as _lifeþ_ [@RingeTaylor2014, 364; @Campbell1959, §762].
 
 The target is thus a normalized finite form, not the ordinary dictionary lemma.
 Its value lies in preserving the older present-stem history more clearly than
@@ -8673,10 +8674,10 @@ Outcome: _maca_
 #### Reconstruction and comparative evidence
 
 The make-family belongs to the Old English class-II weak verbs. Campbell cites
-_macian_ beside _lapian_ and similar verbs with restored _a_, and Ringe and
+_lapian, macian_ among verbs with restored _a_ [@Campbell1959, §159]. Ringe and
 Taylor place the Germanic verb in the same class, comparing West Germanic
 continuants such as Old Frisian _makia_, Old Saxon _makon_, and Old High German
-_mahhon_ [@Campbell1959; @RingeTaylor2014].
+_mahhon_ [@RingeTaylor2014, 191].
 
 The selected input _\*mákô_ is not the citation form of the lexeme but a finite
 paradigm cell. Ringe and Taylor's account of the class-II weak paradigm is the
@@ -9152,7 +9153,7 @@ Outcome: _licca_
 
 Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
-The form treated here is not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_. Campbell's weak class-II discussion and Ringe and Taylor's account of the paradigm both distinguish those finite singular cells from the ordinary _\*-ōja-_ citation formation [@Campbell1959; @RingeTaylor2014].
+Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The form treated here is therefore not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_.
 
 #### Old English evidence
 
@@ -9226,7 +9227,7 @@ Outcome: _liccaþ_
 
 Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
-The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014].
+The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80].
 
 #### Old English evidence
 
@@ -9376,7 +9377,7 @@ Outcome: _sċēawaþ_
 
 Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003, 337]. The selected input in this entry is the present third singular _\*skáwōθi_, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
 
-Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
+Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 #### Old English evidence
 

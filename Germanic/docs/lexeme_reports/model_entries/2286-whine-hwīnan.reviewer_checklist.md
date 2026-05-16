@@ -57,3 +57,5 @@
 3. The suspicious Ringe-Taylor reconstruction string was checked against the
    cleanest available local source trail and removed from final prose; the
    strong-verb versus weak-lament-family distinction remains unchanged.
+
+Citation locator claim-isolation 01 split the family-identification sentence and added verified locators for `Kroonen2013, 267` and `RingeTaylor2014, 130`.
