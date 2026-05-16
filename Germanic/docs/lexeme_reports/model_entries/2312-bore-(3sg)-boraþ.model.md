@@ -20,7 +20,7 @@ DERIVATION_CLASS: late_analogy
 
 Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its reflexes [@Kroonen2013]. The selected form isolates the finite 3sg cell **`*búrōθi`** rather than the infinitive.
 
-Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's account of stable **`a`** in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's account of stable **`a`** in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
@@ -32,7 +32,7 @@ Campbell's dialect survey allows secondary **`-e-`** and **`-o-`** spellings in 
 
 Early loss of final **`-i`** first gives **`*búrōθ`** from **`*búrōθi`**. Northwest Germanic lowering then produces **`*bórōθ`**, and late shortening of unstressed **`ō`** yields **`*bóraθ`**, whence **`boraþ`**.
 
-Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells support exactly this sequence [@Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells support exactly this sequence [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Paradigm comparison
 

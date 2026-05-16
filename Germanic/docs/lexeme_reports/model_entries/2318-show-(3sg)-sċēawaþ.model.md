@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is the present third singular `*skáwōθi`, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
+Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is the present third singular `*skáwōθi`, a finite class-II cell with stable `a` in the 3sg ending [@RingeTaylor2014, 80].
 
 Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. `-as(t)` and 3sg. `-aþ` have stable `a` [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
@@ -31,7 +31,7 @@ The form written here as `sċēawaþ` is the normalized simplex comparison form 
 
 ### Development to Old English
 
-`*skáwōθi` first loses final `-i`, giving `*skáwōθ`. Old English `*aw` before vocalic material yields `*skḗawōθ`, initial `sk` palatalizes, and late shortening of unstressed `*ō` gives `*ʃḗawaθ`, written `sċēawaþ` [@Campbell1959]. Campbell's chronology matters here: late-shortened `ō` yields `a` too late for Anglo-Frisian fronting, and the class-II 3sg ending therefore gives `-aþ` rather than `-eþ` [@Campbell1959; @RingeTaylor2014]. Because the ending never contains `-j-`, no i-umlaut applies.
+Campbell lists `scéawian` under the same West Germanic `*auw` development [@Campbell1959, §120]. `*skáwōθi` therefore belongs to the `scēaw-` family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-`a` discussion show that the class-II 3sg ending gives `-aþ`, not `-eþ` [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains `-j-`, no i-umlaut applies.
 
 ### Paradigm comparison
 

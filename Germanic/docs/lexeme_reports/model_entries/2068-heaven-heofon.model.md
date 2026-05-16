@@ -23,17 +23,17 @@ The inherited noun belongs to the mn-stem family cited by Kroonen as
 oblique singular form within that paradigm rather than the lexeme-level
 citation form `*xémenaz`.
 
-That difference matters for the West Saxon target. The back-vocalic oblique stem
-provides the environment for the diphthong seen in `heofon`, whereas a
-front-vocalic stem yields Anglian or Mercian `hefen` / `heofen`
-[@Campbell1959; @RingeTaylor2014].
+That difference matters for the West Saxon target. Ringe and Taylor give
+northern WGmc `*hebun` > West Saxon and Northumbrian `heofon`, Mercian
+`heofen` [@RingeTaylor2014, 324]. Campbell likewise gives `heofon` beside
+`hefen` in the same West-Saxon `u`-umlaut environment [@Campbell1959, §210.1].
 
 ### Old English evidence
 
 Old English dictionaries record the standard West Saxon noun as **`heofon`**,
 alongside Anglian or Mercian `hefen` material [@ClarkHall1960;
 @BosworthToller1898, 43]. Campbell also cites an earlier stage `hefzen` in the
-history of the word [@Campbell1959].
+history of the word [@Campbell1959, §381].
 
 The target of this entry is the West Saxon citation form `heofon`. Its vowel
 history points toward the oblique stem rather than the front-vocalic nominative

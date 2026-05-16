@@ -25,11 +25,9 @@ continuants such as Old Frisian `makia`, Old Saxon `makon`, and Old High German
 `mahhon` [@RingeTaylor2014, 191].
 
 The selected input `*mákô` is not the citation form of the lexeme but a finite
-paradigm cell. Ringe and Taylor's account of the class-II weak paradigm is the
-reason for choosing it: the imperative singular belongs to the small set of
-finite cells that preserve the trimoric `*ō` directly, whereas the ordinary
-infinitive continues the remodelled `*-ōja-` formation behind `macian`
-[@RingeTaylor2014].
+paradigm cell. Ringe and Taylor give the class-II weak imperative singular as
+`-a < *-ō`, which makes this cell the relevant comparison point for the Old
+English form treated here [@RingeTaylor2014, 314].
 
 ### Old English evidence
 
@@ -43,10 +41,10 @@ of trimoric `*ō` more cleanly than the citation form does.
 
 ### Development to Old English
 
-From `*mákô`, Anglo-Frisian brightening first gives `*mækô`. In this class-II
-environment A-restoration returns the stem vowel to `a`, and unstressed long
-vowel shortening then gives `*maka`, whence `maca` [@Campbell1959;
-@RingeTaylor2014].
+From `*mákô`, Anglo-Frisian brightening first gives `*mækô`. Campbell cites
+`macian` among the class-II verbs with restored `a` [@Campbell1959, §159].
+Ringe and Taylor's class-II weak imperative singular `-a < *-ō` then supports
+the later finite ending [@RingeTaylor2014, 314].
 
 The same development explains why earlier fronted forms of the `mæċa` type do
 not control the entry. Once trimoric `*ô` is treated as a back-vocalic trigger

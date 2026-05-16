@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its continuants [@Kroonen2013]. In Ringe and Taylor's account of class-II weak verbs, the imperative singular belongs to the finite cells that preserve inherited suffixal **`*ō`**, unlike the remodelled infinitive [@RingeTaylor2014].
+Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian`** among its continuants [@Kroonen2013]. Ringe and Taylor give the class-II weak imperative singular as **`-a < *-ō`** [@RingeTaylor2014, 314].
 
 The selected input **`*búrô`** is therefore an imperative cell of the same family, not the citation form of the verb.
 
@@ -32,7 +32,7 @@ The imperative is thus a paradigm form rather than a replacement for the diction
 
 Northwest Germanic lowering first gives **`*bórô`** from **`*búrô`**, and late shortening of the unstressed long vowel then yields **`*bóra`**, whence **`bora`**.
 
-Ringe and Taylor's class-II imperative singular **`-a < *-ō`** points to exactly this type of outcome [@RingeTaylor2014]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
+Ringe and Taylor's class-II imperative singular **`-a < *-ō`** points to exactly this type of outcome [@RingeTaylor2014, 314]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
 
 ### Paradigm comparison
 

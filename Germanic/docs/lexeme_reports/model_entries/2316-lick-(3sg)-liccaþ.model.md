@@ -25,13 +25,13 @@ The selected form in this entry is the non-`j` present third singular `*líkkō�
 
 ### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as `liccian`, and the same consonantal frame appears in Campbell and Brunner's grammatical citations of `liccian` [@BosworthToller1898; @Campbell1959; @SieversBrunner1965]. The Old English headword is therefore clear even though the entry here is not about the citation form.
+Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of `liccian` [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
 The form treated here is the present third singular `liccaþ`. It is a selected paradigm form beside the lemma `liccian` and the related imperative `licca`, not a separately lemmatized headword.
 
 ### Development to Old English
 
-`*líkkōθi` first loses final `-i`, giving `*líkkōθ`. Late shortening of unstressed `*ō` then yields `*líkkaθ`, written `liccaþ` [@Campbell1959; @RingeTaylor2014]. Because this ending never contains `-j-`, the form does not pass through an i-umlauted `-eþ` stage; the regular class-II outcome is `-aþ`.
+`*líkkōθi` first loses final `-i`, giving `*líkkōθ`. Campbell's class-II present endings `lufas, -aþ (< -ōsi, -ōþi)` support the regular 3sg outcome `-aþ` [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable `a` in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. Because this ending never contains `-j-`, the form does not pass through an i-umlauted `-eþ` stage.
 
 ### Paradigm comparison
 

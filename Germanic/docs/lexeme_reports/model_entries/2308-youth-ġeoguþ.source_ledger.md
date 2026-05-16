@@ -23,3 +23,5 @@ book-style entry was drafted.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
 
 Citation locator claim-isolation 01 split the staging sentence and added a verified locator for `RingeTaylor2014, 141`.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 141`, `Campbell1959, §374`, and `SieversBrunner1965, §150.3`.

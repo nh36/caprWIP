@@ -53,3 +53,5 @@
    repair.
 2. The older source split over the origin of medial `u` remains real even though
    it does not disturb the selected OE derivation.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 270, 336` and `Campbell1959, §159`.

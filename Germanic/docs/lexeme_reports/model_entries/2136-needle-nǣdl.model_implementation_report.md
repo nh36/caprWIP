@@ -61,3 +61,5 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, existing model entry, writing-skill file, or existing
   pilot report was changed.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 329` and `Campbell1959, §367`.

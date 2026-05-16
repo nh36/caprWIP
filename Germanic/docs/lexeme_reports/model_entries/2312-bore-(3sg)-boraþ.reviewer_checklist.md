@@ -50,3 +50,5 @@
 
 1. The row remains review-sensitive because `boraþ` is a normalized 3sg paradigm form, while the ordinary headword is `borian`.
 2. Later promotion should keep the distinction between the bore-family lemma row and the 3sg companion row explicit.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.

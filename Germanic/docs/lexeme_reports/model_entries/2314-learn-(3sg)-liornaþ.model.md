@@ -18,13 +18,13 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type, and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@RingeTaylor2014; @Kroonen2013, 380]. The selected input **`*líznōθi`** is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. The selected input **`*líznōθi`** is the finite 3sg cell of that family, not the citation form of the verb.
 
-For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the class-II 2sg and 3sg make the non-`j` 3sg cell the relevant comparison point [@Campbell1959, §355.4; @RingeTaylor2014].
+For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the class-II 2sg and 3sg make the non-`j` 3sg cell the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960]. Brunner records Northumbrian finite forms in **`liorn-`**, including **`liorna`** and the 3sg **`liornes`**, beside the West-Saxon-looking **`leornian`** tradition [@SieversBrunner1965]. Campbell likewise notes Northumbrian forms with **`io`** beside **`leornian`** [@Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960]. Brunner records Northumbrian finite forms in **`liorn-`**, including **`liorna`** and the 3sg **`liornes`**, beside the West-Saxon-looking **`leornian`** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io`** beside **`leornian`** [@Campbell1959, §123 n. 2].
 
 The relevant comparison form here is the normalized 3sg **`liornaþ`**. The directly cited Old English evidence supports the finite stem **`liorn-`**; the exact **`-aþ`** ending follows the regular class-II 3sg pattern.
 
@@ -32,7 +32,7 @@ The relevant comparison form here is the normalized 3sg **`liornaþ`**. The dire
 
 The selected form develops as **`*líznōθi > *lírnōθi`** by rhotacism, then **`*lírnōθ`** after early apocope of final **`-i`**, then **`*líornōθ`** by breaking before **`rn`**, and finally **`*líornaθ > liornaþ`** by late shortening of the unstressed long vowel.
 
-Campbell's Northumbrian **`io`** evidence and Ringe and Taylor's statement that no form of **`liornian`** stood in an i-umlauting environment support the stem, while Campbell's class-II ending evidence supports the final **`-aþ`** [@Campbell1959, §123 n. 2; @Campbell1959, §355.4; @RingeTaylor2014].
+Campbell's Northumbrian **`io`** evidence and Ringe and Taylor's statement that no form of **`liornian`** stood in an i-umlauting environment support the stem, while Campbell's class-II ending evidence supports the final **`-aþ`** [@Campbell1959, §123 n. 2; @Campbell1959, §356.4; @RingeTaylor2014, 247].
 
 ### Paradigm comparison
 

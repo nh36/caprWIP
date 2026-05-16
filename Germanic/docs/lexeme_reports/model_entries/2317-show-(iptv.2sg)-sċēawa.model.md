@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is not that infinitive but the imperative singular `*skáwô`, a finite class-II cell that preserves bare `*-ō` rather than the remodeled `*-ōja-` formation [@RingeTaylor2014].
+Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is not that infinitive but the imperative singular `*skáwô`, a finite class-II cell with imperative `-a < *-ō` [@RingeTaylor2014, 314].
 
 That distinction matters because the imperative singular provides the direct comparison for the Old English form treated here. The lexical history still belongs to the `sceáwian` verb, but the selected cell isolates the finite `-a` outcome more clearly than the citation form does.
 
@@ -31,7 +31,7 @@ The spelling used in this entry is normalized `sċēawa`, while Bright's glossar
 
 ### Development to Old English
 
-From `*skáwô`, Old English `*aw` before vocalic material yields `*skḗawô`, initial `sk` palatalizes, and late shortening of trimoric `*-ô` gives `*ʃḗawa`, written `sċēawa` [@Campbell1959]. The result is therefore the expected finite singular form of the `scēawian` family rather than an analogical replacement of the headword.
+Campbell lists `scéawian` under the West Germanic `*auw` developments [@Campbell1959, §120]. Ringe and Taylor's class-II weak imperative singular `-a < *-ō` supports the late finite ending that yields `sċēawa` [@RingeTaylor2014, 314]. The result is therefore the expected finite singular form of the `scēawian` family rather than an analogical replacement of the headword.
 
 ### Paradigm comparison
 

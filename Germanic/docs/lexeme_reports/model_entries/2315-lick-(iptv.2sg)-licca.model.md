@@ -25,13 +25,13 @@ Campbell's weak class-II discussion gives present forms such as `lufas, -aþ (< 
 
 ### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as `liccian`, and Campbell and Brunner likewise cite `liccian` with preserved geminate `cc` [@BosworthToller1898; @Campbell1959; @SieversBrunner1965]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
+Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898]. Campbell cites `liccian` among Old English forms with preserved geminate `cc` [@Campbell1959, §398.1]. Brunner likewise cites `liccian` [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
 
 The selected target in this entry is the imperative singular `licca`. It is a paradigm form chosen beside the headword `liccian` and the related present `liccaþ`, not a separately lemmatized citation word.
 
 ### Development to Old English
 
-With the stem `licc-` established, the remaining development is brief. Trimoric `*-ô` shortens late to `-a` in this finite class-II cell, so `*líkkô` yields `*líkka` and then `licca` [@Campbell1959; @RingeTaylor2014]. The same stem consonantism that appears in `liccian` is preserved here, giving `cc` throughout the finite form.
+With the stem `licc-` established, the remaining development is brief. Campbell's class-II present endings `lufas, -aþ (< -ōsi, -ōþi)` support late `-a` in this finite cell [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable `a` in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. The same stem consonantism that appears in `liccian` is preserved here, giving `cc` throughout the finite form.
 
 ### Paradigm comparison
 

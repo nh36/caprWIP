@@ -58,3 +58,5 @@ Checked against `docs/refs.bib`:
 - Added page-specific locators for `Kroonen2013, 380`.
 - This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
 - Existing citations to conditional or unresolved locator sources were left unchanged.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 38, 80, 247`, `Campbell1959, §123 n. 2, §356.4`, and `SieversBrunner1965, §417 Anm. 10`.

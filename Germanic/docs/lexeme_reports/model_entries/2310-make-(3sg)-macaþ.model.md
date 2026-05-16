@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from **`*makōjan-`** on the make-family base **`*maka-`** [@Kroonen2013]. Ringe and Taylor likewise place the verb among the class-II weak verbs and note that the present 2sg, 3sg, and imperative singular preserve suffixal **`*ō`** rather than the remodelled infinitival formation [@RingeTaylor2014].
+Kroonen derives the Old English verb from **`*makōjan-`** on the make-family base **`*maka-`** [@Kroonen2013]. Ringe and Taylor likewise derive Old English **`macian`** from PWGmc **`*makon`** through **`*mekojan`** [@RingeTaylor2014, 191].
 
 The selected input **`*mákōθi`** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 
@@ -26,13 +26,13 @@ The selected input **`*mákōθi`** is therefore a finite 3sg cell of the same f
 
 Clark Hall lemmatizes the verb as **`macian`** [@ClarkHall1960]. The relevant comparison form here is the normalized present-third-singular **`macaþ`**, set beside the dictionary headword and the related imperative singular **`maca`**.
 
-Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ`**, while his dialect survey allows secondary **`-e-`** spellings in some traditions [@Campbell1959, §355.4; @Campbell1959, §757]. **`Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
+Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ`**, while his dialect survey allows secondary **`-e-`** spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. **`Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
 
 ### Development to Old English
 
 After early loss of final **`-i`**, **`*mákōθi`** yields **`*mákōθ`**. Anglo-Frisian brightening gives **`*mækōθ`**, but Campbell lists **`macian`** among the class-II verbs with restored **`a`**, so the stem returns to **`mak-`** before the ending is reduced [@Campbell1959, §159].
 
-The ending then follows the ordinary class-II 3sg development. Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells point to **`*makōθ > *makaθ > macaþ`** [@Campbell1959, §355.4; @RingeTaylor2014].
+The ending then follows the ordinary class-II 3sg development. Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells point to **`*makōθ > *makaθ > macaþ`** [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Paradigm comparison
 

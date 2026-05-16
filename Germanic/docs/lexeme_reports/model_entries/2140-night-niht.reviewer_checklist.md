@@ -54,3 +54,5 @@
 2. A human reader should confirm that the present balance between attested
    `niht` and the broader `neaht`-type variation is the right level of detail
    for promotion.
+
+Citation locator claim-isolation 02 tightened the remaining broad handbook claims and added verified locators for `RingeTaylor2014, 240, 380`, `Campbell1959, §628.3`, and `SieversBrunner1965, §284`.

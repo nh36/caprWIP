@@ -18,16 +18,15 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor distinguish the high-vowel oblique and plural side of the word
-from the nominative citation form: they cite `gen.sg. *nahtiz`, `dat.sg.
-*nahti`, and `nom.pl. *nahtiz`, and derive West Saxon `niht` from that side of
-the paradigm [@RingeTaylor2014]. The citation reconstruction `*náxtz` therefore
-belongs to the nominative-like headword, while the selected input `*náxti`
-represents the dative-singular cell.
+Ringe and Taylor cite `gen.sg. *nahtiz`, `dat.sg. *nahti`, and `nom.pl.
+*nahtiz` for the high-vowel side of the paradigm, and derive West Saxon `niht`
+from that side [@RingeTaylor2014, 240]. The citation reconstruction `*náxtz`
+therefore belongs to the nominative-like headword, while the selected input
+`*náxti` represents the dative-singular cell.
 
 That distinction matters because the word later became the model for endingless
-datives. Ringe and Taylor explicitly explain forms such as `dæg` by analogy with
-`dat. sg. niht < *nahti` [@RingeTaylor2014].
+datives. Ringe and Taylor explicitly explain forms such as `dæg` by analogy
+with `dat. sg. niht < *nahti` [@RingeTaylor2014, 380].
 
 ### Old English evidence
 
@@ -36,7 +35,7 @@ while cross-referencing forms such as `neaht`, `neht`, and `nieht`
 [@ClarkHall1960]. Campbell likewise preserves the fluctuation between `neaht`
 and `niht`, giving genitive `nihte, nihtes`, dative `niht, nihte`, nominative
 plural `niht`, and the contrasting plural-side forms represented by `neahtas`
-[@Campbell1959].
+[@Campbell1959, §628.3].
 
 The comparison form used here is therefore an attested Old English `niht`, not a
 reconstructed substitute. The broader lexical record still preserves the
@@ -44,11 +43,10 @@ non-umlauted side of the paradigm in `neaht`-type forms.
 
 ### Development to Old English
 
-From `*náxti`, Anglo-Frisian brightening first fronts the root vowel, and the
-following high vowel then triggers i-umlaut. In West Saxon, the sequence before
-`ht` yields `niht`, whereas plural forms with a following back vowel preserve the
-non-umlauted `neahtas` type [@RingeTaylor2014; @Campbell1959;
-@SieversBrunner1965].
+Ringe and Taylor derive West Saxon `niht` from `*nahti` via `*nehti` and
+`*neahti` [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
+contrasting non-umlauted `neaht`-type forms elsewhere in the paradigm
+[@Campbell1959, §628.3; @SieversBrunner1965, §284].
 
 The modeled path is therefore `*náxti > *næxti > *neaxti > *niexti > *nixti >
 niht`.

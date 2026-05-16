@@ -50,3 +50,5 @@
 
 1. The row remains review-sensitive because `macaþ` is a normalized finite paradigm form, while the ordinary dictionary headword is `macian`.
 2. Later promotion should keep the distinction between shared make-family evidence and the row-specific 3sg comparison explicit.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 191, 80` and `Campbell1959, §356.4`.

@@ -49,3 +49,5 @@ Checked against `docs/refs.bib`:
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography file, derivation trace, writing-skill file, or existing model entry was changed.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.

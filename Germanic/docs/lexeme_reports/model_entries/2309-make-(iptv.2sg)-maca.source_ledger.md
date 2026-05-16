@@ -16,3 +16,5 @@ used before the lexical entry was drafted.
 | Companion rows 2117 and 2310 | live TSV context | `*mákōjaną -> macian`; `*mákōθi -> macaþ` | lemma row and 3sg companion row | `macian`; `macaþ` | Useful family controls for distinguishing the citation form from the imperative row. | no | `Germanic/docs/lexeme_reports/research_memos/2309-make-(iptv.2sg)-maca.md:12-18,38-41`; `Germanic/data/germanic-aligned-final.tsv:725,1470-1471` | high |
 
 Citation locator claim-isolation 01 split the class-II background sentence and added verified locators for `Campbell1959, §159` and `RingeTaylor2014, 191`.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 314` and `Campbell1959, §159`.

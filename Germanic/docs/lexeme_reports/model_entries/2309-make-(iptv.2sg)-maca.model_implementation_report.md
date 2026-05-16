@@ -57,3 +57,5 @@ Checked against `docs/refs.bib`:
   changed.
 
 Citation locator claim-isolation 01 split the class-II background sentence and added verified locators for `Campbell1959, §159` and `RingeTaylor2014, 191`.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 314` and `Campbell1959, §159`.

@@ -25,18 +25,15 @@ input `*júgunθ` is later again: it represents the form after final `-i` has be
 lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
-`*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. Campbell makes
-the same point with the parallel `duguþ < *dugunþ-`, adding `geoguþ` to the same
-history [@Campbell1959]. The selected input therefore differs from the broader
-comparative headword because the Old English development must begin after early
-loss of final `-i`.
+`*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. The selected
+input therefore differs from the broader comparative headword because the Old
+English development must begin after early loss of final `-i`.
 
 ### Old English evidence
 
-The Old English noun is attested with varying spellings. Campbell records forms
-of the `iuguþ / gioguð / geoguð` type, and Ringe and Taylor likewise cite
-`geoguþ ~ iuguþ` [@Campbell1959; @RingeTaylor2014]. The form is normalized here
-as `ġeoguþ`: the initial palatal is written with `ġ`, and the attested spelling
+The Old English noun is attested with varying spellings. Ringe and Taylor cite
+`geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. The form is normalized here as
+`ġeoguþ`: the initial palatal is written with `ġ`, and the attested spelling
 variation is treated as orthographic rather than lexical.
 
 Nothing in the source stack suggests that a different paradigm cell should be
@@ -46,15 +43,15 @@ chosen. The relevant Old English comparison form is the noun `ġeoguþ` itself.
 
 The decisive early step is the loss of final `-i` before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
-`y`-type vowel instead of the attested form [@RingeTaylor2014].
+`y`-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
 From the selected input `*júgunθ`, the later development is regular: palatal
 fronting yields `*jéugunθ`; nasal-spirant lengthening and loss give
 `*jéogūθ`; unstressed long-vowel shortening then produces `*jéoguθ`, which
-surfaces as `ġeoguþ`. Medial `u` remains preserved because the handbooks treat
-this environment as one of stem-`u` harmony after stressed `u`, citing forms
-such as `munuc`, `duguþ`, and `iuguþ` [@Campbell1959; @SieversBrunner1965;
-@Luick1914, 397].
+surfaces as `ġeoguþ`. Campbell preserves `u` after accented `u` in forms such
+as `duguþ` and `munuc` [@Campbell1959, §374]. Brunner likewise cites `iuzuð`
+`Jugend` and `munuc` `Mönch` in the same environment
+[@SieversBrunner1965, §150.3].
 
 ### Stage comparison
 

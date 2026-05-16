@@ -61,3 +61,5 @@
 ## Citation-locator master manifest 03
 
 - Tightened `Kroonen2013` from a broad citation to verified page locator `220`.
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 324` and `Campbell1959, §210.1, §381`.

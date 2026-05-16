@@ -20,9 +20,9 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen lemmatizes the word with a syncopated comparative headword `*nablô`,
 while Ringe and Taylor give the derivational pathway `*nabulō > *næbula >
-nafola` [@Kroonen2013; @RingeTaylor2014]. The difference is one of stage and
-notation rather than of lexeme identity: the selected input `*nábulô` is the
-pre-syncope form needed for the Old English development.
+nafola` [@Kroonen2013; @RingeTaylor2014, 270]. The difference is one of stage
+and notation rather than of lexeme identity: the selected input `*nábulô` is
+the pre-syncope form needed for the Old English development.
 
 The literature also differs on the older history of the medial `u`, whether it
 is inherited or secondary [@Streitberg1896; @Ringe2006; @Mayrhofer1992;
@@ -31,8 +31,9 @@ a medial vowel in the pre-OE form.
 
 ### Old English evidence
 
-The Old English record includes `nafola`, `nafela`, and Corpus `nabula`
-[@RingeTaylor2014; @Campbell1959]. The target of this entry is the nominative
+Ringe and Taylor note the early West Saxon shift `nafola > nafela`
+[@RingeTaylor2014, 336]. Campbell likewise records `nafela` beside Corpus
+`nabula` [@Campbell1959, §159]. The target of this entry is the nominative
 singular **`nafola`**, the form that matches the selected derivational pathway
 most directly.
 
@@ -42,10 +43,10 @@ this entry is centered on `nafola`.
 
 ### Development to Old English
 
-From `*nábulô`, the trace gives `*nábolô` by lowering of unstressed `u`, then
-`*næbolô` by Anglo-Frisian brightening, followed by A-restoration to `*nabolô`
-[@RingeTaylor2014]. Intervocalic `b` then surfaces as `f`, and final weak-tail
-shortening gives `nafola`.
+Ringe and Taylor give the pre-OE line `*nabulō > *næbula > OE nafola`
+[@RingeTaylor2014, 270]. The trace represents that same development with
+stress-marked notation and explicit intermediate weakening. Intervocalic `b`
+then surfaces as `f`, and final weak-tail shortening gives `nafola`.
 
 The medial vowel is still present when A-restoration applies. That is why the
 selected pre-syncope input differs from the syncopated comparative headword.

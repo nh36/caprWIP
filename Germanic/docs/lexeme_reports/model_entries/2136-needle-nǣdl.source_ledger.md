@@ -12,3 +12,5 @@ book-style entry was drafted.
 | Clark Hall | OE dictionary headword | `nædl` | attested citation form | `nædl` | Confirms the OE headword directly. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt` | high |
 | Kroonen / Orel | background comparative headwords | `*nēplō-`; `*nèþlò` | broader etymological background | OE `næþl`, `nædl` line | Useful background, but not the controlling framework for the row. | yes — `Kroonen2013`; `Orel2003` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | voiceless headword vs voiced `PROTOFORM`; rejected oblique retargeting | early alternant selection rather than paradigm-cell choice | `nǣdl` | The remaining issue is documentary precision, not derivational uncertainty. | no | `Germanic/docs/lexeme_reports/research_memos/2136-needle-nǣdl.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2136-needle-nǣdl.md` | high |
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 329` and `Campbell1959, §367`.

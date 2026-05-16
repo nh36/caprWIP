@@ -45,3 +45,5 @@
 | No conclusion section | yes | The entry ends on the comparison table. |
 | Avoids project-facing language after metadata | yes | The prose remains lexical and source-facing. |
 | Implementation report records checks and scope | yes | Covered in the paired implementation report. |
+
+Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 329` and `Campbell1959, §367`.
