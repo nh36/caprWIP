@@ -12,3 +12,8 @@ before the entry was drafted.
 | Clark Hall | OE dictionary | `cnoppa`-type weak-noun evidence | attested OE branch | `cnoppa` | Supports the attested control form in the OE record. | yes — `ClarkHall1960` | cited in packet/memo/slice | medium |
 | Knob email note | local expert note | `*cnobba` behind ME `knob` and Frisian `knobbe` | local reconstruction support | reconstructed `cnobba` | Supports the specific reconstructed target selected for the row. | yes — `KnobEmail2026` | cited in packet/memo/slice | medium; local expert note, best kept out of final prose if not needed |
 | Local memo / slice synthesis | current project analysis | conflict between reconstructed `cnobba` and attested `cnoppa` as best OE counterpart | reconstructed_oe framing | `cnobba`, `cnoppa` | The entry must state openly that the target is reconstructed and that attested OE evidence clusters around `cnoppa`. | no | `Germanic/docs/lexeme_reports/research_memos/2087-knob-cnobba.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2087-knob-cnobba.md` | high |
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `ClarkHall1960, 79`.

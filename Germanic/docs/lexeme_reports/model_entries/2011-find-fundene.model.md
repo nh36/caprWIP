@@ -35,7 +35,7 @@ most transparent.
 Bosworth-Toller records **`fundene`** under `findan` as an Old English
 participial form [@BosworthToller1898]. Clark Hall likewise preserves the
 participial stem in forms such as `funden` and `tō-fundennes`
-[@ClarkHall1960].
+[@ClarkHall1960, 124].
 
 The ordinary dictionary headword for the participle is `funden`, but the
 relevant comparison form for this entry is the attested oblique **`fundene`**.

@@ -65,3 +65,8 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, writing-skill file, or existing model entry was
   changed.
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `ClarkHall1960, 79`.

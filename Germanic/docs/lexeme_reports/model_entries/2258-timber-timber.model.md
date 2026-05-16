@@ -19,9 +19,9 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the noun as **`*timbra-`** and cites Old English
-**`timber`** among its continuations [@Kroonen2013]. Ringe and Taylor instead
-state the history from **`PGmc *timra`** through West Germanic **`*timbr`** to
-Old English **`timber`** [@RingeTaylor2014, 327].
+**`timber`** among its continuations [@Kroonen2013, 517]. Ringe and Taylor
+instead state the history from **`PGmc *timra`** through West Germanic
+**`*timbr`** to Old English **`timber`** [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial **`b`** belongs in the comparative citation form or appears in an
@@ -30,7 +30,7 @@ early pre-Old-English stage of the cluster.
 ### Old English evidence
 
 Clark Hall lemmatizes the noun as **`timber`** and also records **`timbor`** as
-a variant spelling [@ClarkHall1960]. The Old English form is thus an ordinary
+a variant spelling [@ClarkHall1960, 294]. The Old English form is thus an ordinary
 citation noun, not a selected oblique cell or a reconstructed convenience form.
 
 ### Development to Old English

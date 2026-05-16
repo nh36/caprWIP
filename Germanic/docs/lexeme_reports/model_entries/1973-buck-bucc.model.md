@@ -18,18 +18,19 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, `*bukkaz`, and
-both also preserve parallel n-stem material behind Old English `bucca`
-[@Kroonen2013, 121; @Orel2003]. The selected input therefore remains identical with
-the lexeme label: no alternative inherited cell accounts for the form.
+Kroonen and Orel both reconstruct the word with a geminate stop, `*bukkaz`
+[@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
+material behind Old English `bucca` [@Orel2003, 62]. The selected input
+therefore remains identical with the lexeme label: no alternative inherited
+cell accounts for the form.
 
 ### Old English evidence
 
 Old English preserves a mixed lexical picture. Campbell cites `bucca` in the
-exception set for this phonological environment, while Clark Hall and
-Bosworth-Toller show that Old English has both `bucca` and `bucc`
-[@Campbell1959; @ClarkHall1960; @BosworthToller1898, 122]. The a-stem citation form
-`bucc` is the target treated here, with `bucca` kept as genuine philological
+exception set for this phonological environment [@Campbell1959, §115]. Clark
+Hall and Bosworth-Toller show that Old English has both `bucca` and `bucc`
+[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form `bucc`
+is the target treated here, with `bucca` kept as genuine philological
 background from the same lexical family.
 
 ### Development to Old English

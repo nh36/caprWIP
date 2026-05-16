@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen gives the strong verb as **`*wakan-`** with Old English
-**`wacan`** [@Kroonen2013]. Ringe and Taylor separately derive Old English
+**`wacan`** [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
 **`wacian`** from weak **`*wakai- ~ *wakja-`** [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong

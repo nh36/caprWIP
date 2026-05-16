@@ -60,3 +60,9 @@ Checked against `docs/refs.bib`:
 ## Citation-locator master manifest 03
 
 - Tightened `Kroonen2013` from a broad citation to verified page locator `121` after direct inspection of the local Kroonen text.
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `Orel2003, 61-62`, `Campbell1959, §115`, and
+  `ClarkHall1960, 53`.

@@ -32,7 +32,7 @@ behind later English **knob**.
 ### Old English evidence
 
 Bosworth-Toller and Clark Hall preserve Old English evidence of the
-`cnopp / cnoppa` type [@BosworthToller1898; @ClarkHall1960]. Those forms are
+`cnopp / cnoppa` type [@BosworthToller1898; @ClarkHall1960, 79]. Those forms are
 genuine Old English evidence, but they belong to the voiceless branch of the
 family.
 

@@ -19,8 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem `*staba-` [@Kroonen2013], Orel writes `*stabiz ~
-*stabaz` [@Orel2003], and Kluge-Seebold explicitly marks `g. *stabi-/a-`
+reconstructs an a-stem `*staba-` [@Kroonen2013, 471]. Orel writes `*stabiz ~
+*stabaz` [@Orel2003, 368], and Kluge-Seebold explicitly marks `g. *stabi-/a-`
 [@KlugeSeebold2011]. That disagreement matters because a direct i-stem input in
 `*-iz` would predict i-mutation in Old English, whereas the attested noun keeps
 `æ`.

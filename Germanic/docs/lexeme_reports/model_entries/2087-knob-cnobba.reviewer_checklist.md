@@ -52,3 +52,8 @@
    must decide whether reconstructed `cnobba` should remain the comparator for
    the voiced branch or whether attested `cnoppa` is the preferable OE
    comparator.
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `ClarkHall1960, 79`.

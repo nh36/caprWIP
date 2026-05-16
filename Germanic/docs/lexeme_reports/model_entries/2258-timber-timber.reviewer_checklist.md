@@ -54,3 +54,8 @@
 ## Citation-locator claim-isolation 03
 
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 327`.
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `Kroonen2013, 517` and `ClarkHall1960, 294`.

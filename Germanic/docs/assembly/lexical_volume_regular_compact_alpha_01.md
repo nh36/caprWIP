@@ -959,7 +959,7 @@ OE Weak Tail Reduction & \emph{*lēosan} \\
 }
 \endgroup
 
-Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013, 374; @Orel2003, 282]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960; @BosworthToller1898, 248]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
+Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013, 374; @Orel2003, 282]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960, 113; @BosworthToller1898, 248]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
 
 Form note. As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014, 357].
 
@@ -2359,7 +2359,7 @@ OE Weak Tail Reduction & \emph{*spánnan} \\
 }
 \endgroup
 
-Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013, 505]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960, 286; @SieversBrunner1965]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
+Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013, 505]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960, 286; @SieversBrunner1965, §392; §396]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
 
 Form note. English _span_ can also reach noun _spann_ in local lookup material. The entry represented here is the verb _spannan_, with the noun treated elsewhere [@ClarkHall1960, 286].
 
@@ -2830,9 +2830,9 @@ OE Heavy Syllable Nasal Apocope & \emph{*tākn} \\
 }
 \endgroup
 
-Kroonen cites _\*taikna-_ and Orel _\*taiknan_ for the noun 'sign, token' [@Kroonen2013; @Orel2003, 438]. The selected input _\*táikną_ is the simple citation-form noun used for the derivation. Campbell preserves unbroken _tācn_ and oblique _tācnes_ [@Campbell1959, §574], and also records the later broken form _tācen_ [@Campbell1959, §365]. Sievers-Brunner likewise preserves both unbroken and broken shapes [@SieversBrunner1965]. Monophthongization of _ai_ yields _ā_, and loss of the final nasal vowel leaves _tācn_.
+Kroonen cites _\*taikna-_ and Orel _\*taiknan_ for the noun 'sign, token' [@Kroonen2013; @Orel2003, 438]. The selected input _\*táikną_ is the simple citation-form noun used for the derivation. Campbell preserves unbroken _tācn_ and oblique _tācnes_ [@Campbell1959, §574], and also records the later broken form _tācen_ [@Campbell1959, §365]. Sievers-Brunner likewise preserves both unbroken and broken shapes [@SieversBrunner1965, §155]. Monophthongization of _ai_ yields _ā_, and loss of the final nasal vowel leaves _tācn_.
 
-Form note. _tācn_ is the attested unbroken citation form selected here. Later West Saxon prose often prefers _tācen_, but that does not displace the older unbroken form [@SieversBrunner1965].
+Form note. _tācn_ is the attested unbroken citation form selected here. Later West Saxon prose often prefers _tācen_, but that does not displace the older unbroken form [@SieversBrunner1965, §155].
 
 ### town — OE tūn
 
@@ -3013,7 +3013,7 @@ OE Weak Tail Reduction & \emph{*waskan} \\
 }
 \endgroup
 
-Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013, 575; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_ [@ClarkHall1960, 343], while Sievers-Brunner also notes the variant _wæscan_ [@SieversBrunner1965]. From _\*wáskaną_, brightening gives _\*wæskaną_.
+Kroonen cites _\*waskan-_, Orel _\*waskanan_, and Ringe and Taylor likewise derive Old English _wascan_ from the same verb family [@Kroonen2013, 575; @Orel2003, 489; @RingeTaylor2014, 142]. Clark Hall heads the verb as _wascan_ [@ClarkHall1960, 343], while Sievers-Brunner also notes the variant _wæscan_ [@SieversBrunner1965, §392]. From _\*wáskaną_, brightening gives _\*wæskaną_.
 
 Form note. The conservative citation form _wascan_ is selected here. Spellings such as _wæscan_ or _wasċan_ belong to variant or normalized background rather than to the target of this entry.
 
@@ -5899,7 +5899,7 @@ Outcome: _stæf_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem _\*staba-_ [@Kroonen2013], Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003], and Kluge-Seebold explicitly marks g. _\*stabi-_/a-
+reconstructs an a-stem _\*staba-_ [@Kroonen2013, 471]. Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003, 368], and Kluge-Seebold explicitly marks g. _\*stabi-_/a-
 [@KlugeSeebold2011]. That disagreement matters because a direct i-stem input in
 _\*-iz_ would predict i-mutation in Old English, whereas the attested noun keeps
 _æ_.
@@ -6257,9 +6257,9 @@ Outcome: _timber_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the noun as _\*timbra-_ and cites Old English
-_timber_ among its continuations [@Kroonen2013]. Ringe and Taylor instead
-state the history from PGmc _\*timra_ through West Germanic _\*timbr_ to
-Old English _timber_ [@RingeTaylor2014, 327].
+_timber_ among its continuations [@Kroonen2013, 517]. Ringe and Taylor
+instead state the history from PGmc _\*timra_ through West Germanic
+_\*timbr_ to Old English _timber_ [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial _b_ belongs in the comparative citation form or appears in an
@@ -6268,7 +6268,7 @@ early pre-Old-English stage of the cluster.
 #### Old English evidence
 
 Clark Hall lemmatizes the noun as _timber_ and also records _timbor_ as
-a variant spelling [@ClarkHall1960]. The Old English form is thus an ordinary
+a variant spelling [@ClarkHall1960, 294]. The Old English form is thus an ordinary
 citation noun, not a selected oblique cell or a reconstructed convenience form.
 
 #### Development to Old English
@@ -6344,7 +6344,7 @@ Outcome: _wacan_
 #### Reconstruction and comparative evidence
 
 Kroonen gives the strong verb as _\*wakan-_ with Old English
-_wacan_ [@Kroonen2013]. Ringe and Taylor separately derive Old English
+_wacan_ [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
 _wacian_ from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
@@ -7403,7 +7403,7 @@ most transparent.
 Bosworth-Toller records _fundene_ under _findan_ as an Old English
 participial form [@BosworthToller1898]. Clark Hall likewise preserves the
 participial stem in forms such as _funden_ and _tō-fundennes_
-[@ClarkHall1960].
+[@ClarkHall1960, 124].
 
 The ordinary dictionary headword for the participle is _funden_, but the
 relevant comparison form for this entry is the attested oblique _fundene_.
@@ -8264,8 +8264,8 @@ to a nominative singular that would remain _rast_.
 
 #### Old English evidence
 
-The ordinary Old English citation form is _ræst_ [@Kroonen2013, 445; @ClarkHall1960].
-Bosworth-Toller also preserves oblique uses of _ræste_, including prepositional
+The ordinary Old English citation form is _ræst_ [@Kroonen2013, 445]. Clark
+Hall likewise gives _ræst_ [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of _ræste_, including prepositional
 examples such as on _ræste_ and _tó_ _ræste_ [@BosworthToller1898, 121].
 
 The comparison form used here is therefore an attested oblique _ræste_, not a
@@ -9472,7 +9472,7 @@ behind later English **knob**.
 #### Old English evidence
 
 Bosworth-Toller and Clark Hall preserve Old English evidence of the
-_cnopp_ / _cnoppa_ type [@BosworthToller1898; @ClarkHall1960]. Those forms are
+_cnopp_ / _cnoppa_ type [@BosworthToller1898; @ClarkHall1960, 79]. Those forms are
 genuine Old English evidence, but they belong to the voiceless branch of the
 family.
 
@@ -9937,18 +9937,19 @@ Selected target: _bucc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, _\*bukkaz_, and
-both also preserve parallel n-stem material behind Old English _bucca_
-[@Kroonen2013, 121; @Orel2003]. The selected input therefore remains identical with
-the lexeme label: no alternative inherited cell accounts for the form.
+Kroonen and Orel both reconstruct the word with a geminate stop, _\*bukkaz_
+[@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
+material behind Old English _bucca_ [@Orel2003, 62]. The selected input
+therefore remains identical with the lexeme label: no alternative inherited
+cell accounts for the form.
 
 #### Old English evidence
 
 Old English preserves a mixed lexical picture. Campbell cites _bucca_ in the
-exception set for this phonological environment, while Clark Hall and
-Bosworth-Toller show that Old English has both _bucca_ and _bucc_
-[@Campbell1959; @ClarkHall1960; @BosworthToller1898, 122]. The a-stem citation form
-_bucc_ is the target treated here, with _bucca_ kept as genuine philological
+exception set for this phonological environment [@Campbell1959, §115]. Clark
+Hall and Bosworth-Toller show that Old English has both _bucca_ and _bucc_
+[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form _bucc_
+is the target treated here, with _bucca_ kept as genuine philological
 background from the same lexical family.
 
 #### Development to Old English

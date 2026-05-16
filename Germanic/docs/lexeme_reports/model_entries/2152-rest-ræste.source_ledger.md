@@ -22,3 +22,8 @@ before the book-style prose was drafted.
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `Kroonen2013, 445`.
+
+## Citation-locator claim-isolation 07
+
+- Citation locator tightened or status reclassified after claim-isolation 07;
+  verified against `ClarkHall1960, 239`.
