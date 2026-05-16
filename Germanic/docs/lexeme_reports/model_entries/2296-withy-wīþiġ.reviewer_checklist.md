@@ -61,3 +61,7 @@
 ## Citation-locator claim-isolation 06
 
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §§275, 376`.
+
+## Citation-locator page-map repair 01
+
+- Citation locator tightened or source status reclassified after page-map repair; verified against `ClarkHall1960, 358`.

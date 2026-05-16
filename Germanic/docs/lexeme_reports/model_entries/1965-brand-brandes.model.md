@@ -30,7 +30,7 @@ making the oblique ending explicit.
 
 ### Old English evidence
 
-Old English dictionaries lemmatize the noun as `brand` [@ClarkHall1960;
+Old English dictionaries lemmatize the noun as `brand` [@ClarkHall1960, 49;
 @BosworthToller1898, 116]. Bosworth-Toller also records inflectional forms such as
 `brandas`, `branda`, and `brandum` under the same entry [@BosworthToller1898, 116].
 

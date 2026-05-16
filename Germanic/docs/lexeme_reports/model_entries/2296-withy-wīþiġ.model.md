@@ -32,7 +32,7 @@ headword.
 
 ### Old English evidence
 
-Clark Hall records the noun as `wiðig` [@ClarkHall1960]. The form used here,
+Clark Hall records the noun as `wiðig` [@ClarkHall1960, 358]. The form used here,
 `wīþiġ`, is a normalized Old English spelling with macrons and palatal ġ marked
 explicitly.
 

@@ -18,3 +18,7 @@ book-style entry was drafted.
 - Added page-specific locators for `BosworthToller1898, 116`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+
+## Citation-locator page-map repair 01
+
+- Citation locator tightened or source status reclassified after page-map repair; verified against `ClarkHall1960, 49`.

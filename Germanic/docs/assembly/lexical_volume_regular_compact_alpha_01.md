@@ -3245,7 +3245,7 @@ OE Weak Tail Reduction & \emph{*wíndan} \\
 }
 \endgroup
 
-Kroonen distinguishes noun _\*winda-_ from verb _\*windan-_, and the present row belongs to the verb [@Kroonen2013]. Later handbook discussion keeps the dental original from PIE _\*wendh-_, not a Verner alternant [@Fulk2018; @RingeTaylor2014]. Clark Hall and Bosworth-Toller record _windan_ as the verb headword [@ClarkHall1960; @BosworthToller1898, 101]. The selected input _\*wíndaną_ yields the regular infinitive _windan_ by ordinary heavy-syllable apocope and weak-tail reduction. English *wind* also names the noun. This row targets the class-III verb, not the noun [@Kroonen2013; @ClarkHall1960].
+Kroonen distinguishes noun _\*winda-_ from verb _\*windan-_, and the present row belongs to the verb [@Kroonen2013]. Later handbook discussion keeps the dental original from PIE _\*wendh-_, not a Verner alternant [@Fulk2018; @RingeTaylor2014]. Clark Hall and Bosworth-Toller record _windan_ as the verb headword [@ClarkHall1960, 335; @BosworthToller1898, 101]. The selected input _\*wíndaną_ yields the regular infinitive _windan_ by ordinary heavy-syllable apocope and weak-tail reduction. English *wind* also names the noun. This row targets the class-III verb, not the noun [@Kroonen2013; @ClarkHall1960, 335].
 
 ### wold — OE weald
 
@@ -3293,9 +3293,9 @@ OE Breaking & \emph{*wealdu} \\
 }
 \endgroup
 
-Kroonen reconstructs the noun as _\*walþu-_ and gives OE _weald_ beside other West Germanic _wald_ forms [@Kroonen2013, 611]. The selected input _\*wálθuz_ is the nominative singular used for the derivation. Clark Hall makes _weald_ the main noun headword and cross-refers _wald_ and _wold_ to it [@ClarkHall1960]. _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking before the cluster gives _weald-_; apocope then yields _weald_.
+Kroonen reconstructs the noun as _\*walþu-_ and gives OE _weald_ beside other West Germanic _wald_ forms [@Kroonen2013, 611]. The selected input _\*wálθuz_ is the nominative singular used for the derivation. Clark Hall makes _weald_ the main noun headword and cross-refers _wald_ and _wold_ to it [@ClarkHall1960, 343]. _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking before the cluster gives _weald-_; apocope then yields _weald_.
 
-Dialect note. _wald_ survives as an Anglian-type variant in the same family. The selected target is normalized _weald_, not the variant form [@ClarkHall1960; @RingeTaylor2014].
+Dialect note. _wald_ survives as an Anglian-type variant in the same family. The selected target is normalized _weald_, not the variant form [@ClarkHall1960, 343; @RingeTaylor2014].
 
 ### yarn — OE ġearn
 
@@ -3866,7 +3866,7 @@ making the oblique ending explicit.
 
 #### Old English evidence
 
-Old English dictionaries lemmatize the noun as _brand_ [@ClarkHall1960;
+Old English dictionaries lemmatize the noun as _brand_ [@ClarkHall1960, 49;
 @BosworthToller1898, 116]. Bosworth-Toller also records inflectional forms such as
 _brandas_, _branda_, and _brandum_ under the same entry [@BosworthToller1898, 116].
 
@@ -5099,7 +5099,7 @@ _\*lungō_; it belongs to an expanded feminine formation.
 Old English dictionaries record the noun as _lungen_, with inflected forms such
 as _lungenne_ and _lungena_ [@BosworthToller1898, 634]. Clark Hall also preserves a
 small family of compounds such as _lungenādl_, _lungensealf_, and _lungenwyrt_
-[@ClarkHall1960].
+[@ClarkHall1960, 191].
 
 The target is an attested Old English lexeme with its own paradigm, not a
 rescued inflectional cell.
@@ -6719,7 +6719,7 @@ headword.
 
 #### Old English evidence
 
-Clark Hall records the noun as _wiðig_ [@ClarkHall1960]. The form used here,
+Clark Hall records the noun as _wiðig_ [@ClarkHall1960, 358]. The form used here,
 _wīþiġ_, is a normalized Old English spelling with macrons and palatal ġ marked
 explicitly.
 

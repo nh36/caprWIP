@@ -72,3 +72,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `Kroonen2013, 384`.
+
+## Citation-locator page-map repair 01
+
+- Citation locator tightened or source status reclassified after page-map repair; verified against `ClarkHall1960, 191`.
