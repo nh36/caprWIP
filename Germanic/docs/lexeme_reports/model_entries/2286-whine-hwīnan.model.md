@@ -26,12 +26,11 @@ Taylor make the same split at the Northwest Germanic level, linking Old Norse
 `hvina` and Old English `hwinan` to the same strong verb
 [@RingeTaylor2014, 130].
 
-The difference affects both phonology and morphology. The lament family has
-initial `w-`, diphthongal `ai`, and weak-II morphology, whereas the verb behind
-Old English `hwīnan` has initial `hw-/xw-`, long `ī`, and strong-verb
-inflection [@Kroonen2013; @Orel2003]. The selected input `*xwḯnaną` therefore
-represents a competing comparative identification rather than a hidden cell of
-`*wainōjaną`.
+The two families also differ phonologically and morphologically. The lament
+family has initial `w-`, diphthongal `ai`, and weak-II morphology, whereas the
+verb behind Old English `hwīnan` has initial `hw-/xw-`, long `ī`, and
+strong-verb inflection. The selected input `*xwḯnaną` therefore represents a
+competing comparative identification rather than a hidden cell of `*wainōjaną`.
 
 ### Old English evidence
 

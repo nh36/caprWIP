@@ -2019,9 +2019,9 @@ OE Unstressed AE Merger & \emph{*mare} \\
 }
 \endgroup
 
-Ringe and Taylor treat the lexeme as Proto-Germanic / Proto-Northwest-Germanic _\*marōn-_, with Old English _mare, maran_, and variant _mere_; Orel preserves the same comparative lemma though with a different Old English headword tradition [@RingeTaylor2014; @Orel2003, 262]. Clark Hall records _mare_ 'nightmare, monster' and also preserves related variant forms _mera / mere_ [@ClarkHall1960, 213]. The selected simplex input _\*márōn_ regularly gives _mare_ after brightening, A-restoration before the n-stem ending, and later reduction of the final vowel.
+Ringe and Taylor treat the lexeme as Proto-Germanic / Proto-Northwest-Germanic _\*marōn-_, with Old English _mare, maran_, and variant _mere_ [@RingeTaylor2014, 192]. Orel preserves the same comparative lemma though with a different Old English headword tradition [@Orel2003, 262]. Clark Hall records _mare_ 'nightmare, monster' and also preserves related variant forms _mera / mere_ [@ClarkHall1960, 213]. The selected simplex input _\*márōn_ regularly gives _mare_ after brightening, A-restoration before the n-stem ending, and later reduction of the final vowel.
 
-Form note. The concept corresponds to an unattested compound _\*nihtmare_, but the Old English lexical evidence is for simplex _mare_, with oblique _maran_ and variant _mere / mera_ [@RingeTaylor2014; @ClarkHall1960, 213].
+Form note. The concept corresponds to an unattested compound _\*nihtmare_, but the Old English lexical evidence is for simplex _mare_, with oblique _maran_ and variant _mere / mera_ [@RingeTaylor2014, 192; @ClarkHall1960, 213].
 
 ### coat — OE rocc
 
@@ -5536,11 +5536,11 @@ Outcome: _sæp_
 
 #### Reconstruction and comparative evidence
 
-The comparative sources do not give one uniform inherited stem. Kroonen derives
-the word family from material pointing to dialectal dissolution of a primary
-n-stem _\*safō_, gen. _\*sappaz_ [@Kroonen2013]. Orel preserves the comparative
-notation _\*sapōn_ ~ _\*sapan_ [@Orel2003, 319], while Kluge-Seebold instead gives West
-Germanic _\*sapi-_ and still cites Old English _sæp_ n. [@KlugeSeebold2011].
+The comparative sources do not give one uniform inherited stem. Kroonen
+preserves the word family as _\*saf_/ppan-, with Old English _sæp_ m.
+[@Kroonen2013, 420]. Orel preserves the comparative notation _\*sapōn_ ~ _\*sapan_
+[@Orel2003, 319], while Kluge-Seebold instead gives West Germanic _\*sapi-_ and
+still cites Old English _sæp_ n. [@KlugeSeebold2011].
 
 The selected input _\*sápą_ therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated
@@ -5806,12 +5806,13 @@ Outcome: _sparian_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel keep the inherited verb under class-III _\*sparēn-_ / _\*sparēnan_ [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
-_\*sparai-_ ~ _\*sparja-_ for the English branch and derive the citation verb from a
-class-II line [@RingeTaylor2014, 162, 191]. The selected input
-_\*spárōjaną_ therefore represents the refashioned class-II formation behind Old
-English _sparian_, while the citation reconstruction _\*sparēną_ remains the
-inherited comparative headword.
+Kroonen keeps the inherited verb under class-III _\*sparēn-_
+[@Kroonen2013, 465]. Orel similarly preserves _\*sparēnan_ [@Orel2003]. Ringe
+and Taylor, however, reconstruct _\*sparai-_ ~ _\*sparja-_ for the English branch
+and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
+The selected input _\*spárōjaną_ therefore represents the refashioned class-II
+formation behind Old English _sparian_, while the citation reconstruction
+_\*sparēną_ remains the inherited comparative headword.
 
 #### Old English evidence
 
@@ -5906,8 +5907,8 @@ _æ_.
 #### Old English evidence
 
 The Old English noun itself is the ordinary citation form _stæf_. Luick lists
-_stæf_ among closed monosyllables with _æ_ [@Luick1914, 176], and Ringe and
-Taylor pair singular _stæf_ with plural _stafas_ [@RingeTaylor2014]. The
+_stæf_ among closed monosyllables with _æ_ [@Luick1914, 176]. Ringe and Taylor
+pair singular _stæf_ with plural _stafas_ [@RingeTaylor2014, 193]. The
 normalized form here is therefore _stæf_; later English _staff_ with _a_
 belongs to a later stage of the word's history.
 
@@ -6613,12 +6614,11 @@ Taylor make the same split at the Northwest Germanic level, linking Old Norse
 _hvina_ and Old English _hwinan_ to the same strong verb
 [@RingeTaylor2014, 130].
 
-The difference affects both phonology and morphology. The lament family has
-initial _w-_, diphthongal _ai_, and weak-II morphology, whereas the verb behind
-Old English _hwīnan_ has initial _hw-/xw-_, long _ī_, and strong-verb
-inflection [@Kroonen2013; @Orel2003]. The selected input _\*xwī́naną_ therefore
-represents a competing comparative identification rather than a hidden cell of
-_\*wainōjaną_.
+The two families also differ phonologically and morphologically. The lament
+family has initial _w-_, diphthongal _ai_, and weak-II morphology, whereas the
+verb behind Old English _hwīnan_ has initial _hw-/xw-_, long _ī_, and
+strong-verb inflection. The selected input _\*xwī́naną_ therefore represents a
+competing comparative identification rather than a hidden cell of _\*wainōjaną_.
 
 #### Old English evidence
 
@@ -6713,17 +6713,15 @@ suffix of _wīþiġ_.
 For Old English, the relevant point is the suffix history. Campbell's account
 of OE _-ig_, including forms such as _hunig_, supports an analysis in which the
 _-iġ_ of _wīþiġ_ continues a derivational _\*-ag-_ sequence rather than a heavy
-ja-stem _\*-ij-_ [@Campbell1959, §§275, 376]. The earlier ja-stem pathway
-remains useful as a comparative possibility, but the Campbell-Adamczyk line on
-heavy ja-stems points instead toward _-e_ or zero type outcomes
-[@Campbell1959; @Adamczyk2001]. The selected input _\*wī́θagą_ is thus a
-formation choice rather than a mere respelling of the comparative headword.
+ja-stem _\*-ij-_ [@Campbell1959, §§275, 376]. The selected input _\*wī́θagą_ is
+thus a formation choice rather than a mere respelling of the comparative
+headword.
 
 #### Old English evidence
 
-Clark Hall records the noun as _wiðig_, with related inflected forms of the
-same lexical base [@ClarkHall1960]. The form used here, _wīþiġ_, is a
-normalized Old English spelling with macrons and palatal ġ marked explicitly.
+Clark Hall records the noun as _wiðig_ [@ClarkHall1960]. The form used here,
+_wīþiġ_, is a normalized Old English spelling with macrons and palatal ġ marked
+explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
@@ -7389,9 +7387,9 @@ Outcome: _fundene_
 #### Reconstruction and comparative evidence
 
 The inherited verb is the strong verb _\*fínθaną_, continued by Old English
-_findan_ [@RingeTaylor2014]. The selected input _\*fúnðanǭ_, however, belongs to
-the past-participial paradigm rather than to the infinitive. It represents an
-oblique singular form of the participle.
+_findan_ [@RingeTaylor2014, 344]. The selected input _\*fúnðanǭ_, however,
+belongs to the past-participial paradigm rather than to the infinitive. It
+represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form _funden_ is not
 the cleanest inherited comparison. Campbell, Luick, and Brunner treat the

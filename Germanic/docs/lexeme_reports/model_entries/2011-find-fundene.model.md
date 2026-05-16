@@ -19,9 +19,9 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited verb is the strong verb `*fínθaną`, continued by Old English
-`findan` [@RingeTaylor2014]. The selected input `*fúnðanǭ`, however, belongs to
-the past-participial paradigm rather than to the infinitive. It represents an
-oblique singular form of the participle.
+`findan` [@RingeTaylor2014, 344]. The selected input `*fúnðanǭ`, however,
+belongs to the past-participial paradigm rather than to the infinitive. It
+represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form `funden` is not
 the cleanest inherited comparison. Campbell, Luick, and Brunner treat the

@@ -53,3 +53,7 @@
    should be checked before promotion.
 2. Later editing should preserve the distinction between Old English singular
    `stæf` and plural `stafas`, so the singular vowel argument is not blurred.
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 193`.

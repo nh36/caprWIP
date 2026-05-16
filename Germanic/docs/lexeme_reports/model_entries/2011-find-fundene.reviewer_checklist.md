@@ -57,3 +57,7 @@
 1. The entry should keep the participial `fundene` clearly distinguished from
    the ordinary infinitive `findan` and the later nominative participle
    `funden` in any later editorial pass.
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 344`.

@@ -20,3 +20,7 @@ before the book-style prose was drafted.
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 247`.
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `Kroonen2013, 420`.

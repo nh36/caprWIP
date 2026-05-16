@@ -26,17 +26,15 @@ suffix of `wīþiġ`.
 For Old English, the relevant point is the suffix history. Campbell's account
 of OE `-ig`, including forms such as `hunig`, supports an analysis in which the
 `-iġ` of `wīþiġ` continues a derivational `*-ag-` sequence rather than a heavy
-ja-stem `*-ij-` [@Campbell1959, §§275, 376]. The earlier ja-stem pathway
-remains useful as a comparative possibility, but the Campbell-Adamczyk line on
-heavy ja-stems points instead toward `-e` or zero type outcomes
-[@Campbell1959; @Adamczyk2001]. The selected input `*wḯθagą` is thus a
-formation choice rather than a mere respelling of the comparative headword.
+ja-stem `*-ij-` [@Campbell1959, §§275, 376]. The selected input `*wḯθagą` is
+thus a formation choice rather than a mere respelling of the comparative
+headword.
 
 ### Old English evidence
 
-Clark Hall records the noun as `wiðig`, with related inflected forms of the
-same lexical base [@ClarkHall1960]. The form used here, `wīþiġ`, is a
-normalized Old English spelling with macrons and palatal ġ marked explicitly.
+Clark Hall records the noun as `wiðig` [@ClarkHall1960]. The form used here,
+`wīþiġ`, is a normalized Old English spelling with macrons and palatal ġ marked
+explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is

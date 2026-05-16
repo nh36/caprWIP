@@ -67,3 +67,7 @@ Citation locator claim-isolation 01 split the family-identification sentence and
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 171`.
+
+## Citation-locator claim-isolation 06
+
+- Citation wording tightened after claim-isolation pass; retained the localized `Kroonen2013, 267` and `Orel2003, 201` family-identification citations.

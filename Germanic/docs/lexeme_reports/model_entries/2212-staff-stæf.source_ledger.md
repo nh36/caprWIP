@@ -13,3 +13,7 @@ before the book-style prose was drafted.
 | Luick | 1914 historical grammar | `stæf 'Stab'` among closed monosyllables with `æ` | Old English vowel evidence | `stæf` | The Old English singular keeps `æ`, which is the central phonological argument against a direct i-stem `*-iz` input. | yes — `Luick1914` | `Germanic/docs/lexeme_reports/dev_notes_slices/2212-staff-stæf.md:35-37,53-63`; `docs/references/luick_historische_grammatik.txt:7358-7362` | high |
 | Ringe & Taylor | 2014 OE development | `*stabaz ... > OE stæf, stafas` | singular/plural development from an a-stem line | `stæf`; `stafas` | Ringe and Taylor support the a-stem singular and show the contrasting plural `stafas`. | yes — `RingeTaylor2014` | `Germanic/docs/lexeme_reports/research_memos/2212-staff-stæf.md:60-65`; `docs/references/ringe_taylor_linguistic_history_vol2.txt:11233-11235` | high |
 | Compact derivation trace | current local trace | `PROTO: *stábaz`; `OUTPUTS: stæf` | implemented derivation from the selected a-stem input | `stæf` | The current trace documents the regular path from the selected input to the Old English target. | no — local trace only | `Germanic/docs/lexeme_reports/packets/2212-staff-stæf.md:17-42`; `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:7786-7807` | high |
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 193`.

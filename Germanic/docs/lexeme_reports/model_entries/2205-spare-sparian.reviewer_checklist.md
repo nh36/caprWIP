@@ -53,3 +53,7 @@
    before promotion.
 2. The treatment of `spæria`, `spær`, `spærede`, and `spearad` as mixed relics
    rather than alternate headwords should remain review-sensitive.
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `Kroonen2013, 465`.

@@ -14,3 +14,7 @@ book-style entry was drafted.
 | Orel | comparative family | `*wiþiz`, `*wiþjōn` type related forms | comparative lexeme family | OE family context | Helps place the word within the wider Germanic family. | yes — `Orel2003` | cited in packet/memo/slice | medium |
 | Clark Hall | OE dictionary evidence | `wiðig`, `wiði(g)e` | OE masculine noun entry | `wiðig` | Confirms that `wīþiġ` is an established OE lexeme, here normalized with macrons and palatal `<ġ>`. | yes — `ClarkHall1960` | cited in packet/memo/slice | high |
 | Local memo / slice synthesis | current project analysis | rejected `*wīþja-`-type input; accepted `*wḯθagą` | suffix-etymology decision | `wīþiġ` | The decisive issue is suffix history, not a missing sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2296-withy-wīþiġ.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2296-withy-wīþiġ.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §§275, 376`.

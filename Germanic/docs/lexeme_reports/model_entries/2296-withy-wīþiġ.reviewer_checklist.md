@@ -57,3 +57,7 @@
 1. The comparative-family presentation in Kluge-Seebold and Orel is broader than
    the specific OE-facing `*-ag-` formation; that distinction should remain
    explicit in review.
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §§275, 376`.

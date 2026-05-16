@@ -18,11 +18,11 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The comparative sources do not give one uniform inherited stem. Kroonen derives
-the word family from material pointing to dialectal dissolution of a primary
-n-stem `*safō, gen. *sappaz` [@Kroonen2013]. Orel preserves the comparative
-notation `*sapōn ~ *sapan` [@Orel2003, 319], while Kluge-Seebold instead gives West
-Germanic `*sapi-` and still cites Old English `sæp n.` [@KlugeSeebold2011].
+The comparative sources do not give one uniform inherited stem. Kroonen
+preserves the word family as `*saf/ppan-`, with Old English `sæp m.`
+[@Kroonen2013, 420]. Orel preserves the comparative notation `*sapōn ~ *sapan`
+[@Orel2003, 319], while Kluge-Seebold instead gives West Germanic `*sapi-` and
+still cites Old English `sæp n.` [@KlugeSeebold2011].
 
 The selected input `*sápą` therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated

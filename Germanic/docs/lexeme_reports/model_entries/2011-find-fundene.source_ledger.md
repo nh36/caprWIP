@@ -14,3 +14,7 @@ book-style entry was drafted.
 | Sievers-Brunner | analogical extension in participles | generalized development in inflected cases | participial leveling | `funden`-type forms | Supplies additional handbook support for the oblique-cell analysis. | yes — `SieversBrunner1965` | cited in packet/memo/slice | medium |
 | Ringe-Taylor | Verner background | infinitival `findan` shows leveled `d` | infinitive vs participial behavior | `findan` | Helps distinguish the selected participial cell from the analogically leveled infinitive. | yes — `RingeTaylor2014` | cited in packet/memo/slice | medium |
 | Local memo / slice synthesis | current project analysis | oblique participial cell preferred over infinitive and nominative participle | paradigm-cell choice | `fundene` | The decisive issue is paradigm-cell matching within an analogically leveled participial paradigm. | no | `Germanic/docs/lexeme_reports/research_memos/2011-find-fundene.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2011-find-fundene.md` | high; keep local-file narration out of final prose |
+
+## Citation-locator claim-isolation 06
+
+- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 344`.

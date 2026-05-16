@@ -18,13 +18,13 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel keep the inherited verb under class-III `*sparēn- /
-*sparēnan` [@Kroonen2013; @Orel2003]. Ringe and Taylor, however, reconstruct
-`*sparai- ~ *sparja-` for the English branch and derive the citation verb from a
-class-II line [@RingeTaylor2014, 162, 191]. The selected input
-`*spárōjaną` therefore represents the refashioned class-II formation behind Old
-English `sparian`, while the citation reconstruction `*sparēną` remains the
-inherited comparative headword.
+Kroonen keeps the inherited verb under class-III `*sparēn-`
+[@Kroonen2013, 465]. Orel similarly preserves `*sparēnan` [@Orel2003]. Ringe
+and Taylor, however, reconstruct `*sparai- ~ *sparja-` for the English branch
+and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
+The selected input `*spárōjaną` therefore represents the refashioned class-II
+formation behind Old English `sparian`, while the citation reconstruction
+`*sparēną` remains the inherited comparative headword.
 
 ### Old English evidence
 
