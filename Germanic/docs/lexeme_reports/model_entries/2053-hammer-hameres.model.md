@@ -35,7 +35,7 @@ preserve the simplex headword as `hamor` or `hamer`
 [@BosworthToller1898; @ClarkHall1960, 160].
 
 Sievers-Brunner gives a paradigm line `hamor — hamores`, which shows that the
-oblique tradition itself was not entirely uniform [@SieversBrunner1965]. The
+oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
 relevant comparison form here is the attested genitive singular `hameres`.
 
 ### Development to Old English

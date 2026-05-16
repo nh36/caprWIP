@@ -13,3 +13,7 @@ This ledger records the finite-cell evidence and lick-family background used bef
 | Bosworth-Toller | OE lexicographic evidence | `liccian`; finite examples `liccode`, `liccedan` | dictionary headword and attested forms of the verb | `liccian` | Establishes the lemma-level Old English verb, not an imperative headword. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:98987-98990` | high |
 | Campbell / Brunner | OE grammar | `liccian` with preserved geminate `cc` | OE consonantism and stem shape | `liccian` | Supports the stable `licc-` consonantal frame inherited by the imperative row. | yes — `Campbell1959`; `SieversBrunner1965` | `docs/references/campbell_old_english_grammar.txt:10649-10650`; `docs/references/brunner_1965_altenglische_grammatik.txt:1934-1935` | high |
 | Batch 13 summary | rollout summary | `liccian`; `licca`; `liccaþ` | required paradigm-probe family | `licca` | Confirms that the row class still needs a reusable built-in probe even though the manual contrast is already clear. | no | `Germanic/docs/lexeme_reports/research_memos/batch_13_summary.md:15-20` | high |
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `285` after direct inspection of the local Orel text.

@@ -17,3 +17,7 @@ the book-style prose was rewritten.
 | Kroonen | 2013 etymological dictionary | `*skuldra-` | masculine a-stem; OHG forms from `*skuldrjōn-` | OE `sculdor` m., OFri `skolder, skulder`, Du `schouder`, OHG `scultirra, scultera` | Prefers a masculine a-stem reconstruction and derives the OHG feminine forms from a secondary jōn-stem; this differs directly from Orel's feminine reconstruction. | yes — `Kroonen2013` | `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt:23289-23294`; summarized in `Germanic/docs/dossier-shoulder-2026.md:137-152` |
 | Ringe & Taylor | 2014 development of Old English | `*skuldru` | PWGmc branch form relevant to OE | OE `sculdor`, OHG `scultra` | Cites a shortened branch form with final `-u`; this is a later chronological stage than both `*skuldrō` and `*skúldramiz`, and it bears directly on the plural/singular comparison problem. | yes — `RingeTaylor2014` | `docs/references/ringe_taylor_linguistic_history_vol2.txt:7566`; discussed in `Germanic/docs/dossier-shoulder-2026.md:170-195` |
 | Fulk | 2018 comparative grammar | `*-o-m(i)z` > Germanic dat./inst.pl. `-um` | nominal datative/instrumental plural morphology | OE `-um` | Supports reading `*skúldramiz` as a defensible PGmc dat./inst.pl. input underlying OE `-um`. | yes — `Fulk2018` | Quoted in `Germanic/docs/DEV_NOTES.md:39533-39536` |
+
+## Citation-locator master manifest 04
+
+- Tightened `ClarkHall1960` from a broad citation to verified page locator `257` after direct inspection of the local Clark Hall text.

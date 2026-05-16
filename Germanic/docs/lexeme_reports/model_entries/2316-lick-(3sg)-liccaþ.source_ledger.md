@@ -12,3 +12,7 @@ This ledger records the 3sg finite-cell evidence and lick-family support used be
 | Bosworth-Toller | OE lexicographic evidence | `liccian`; finite examples `liccode`, `liccedan` | dictionary headword and attested forms of the verb | `liccian` | Establishes the Old English headword; the 3sg form treated here is a selected paradigm cell rather than a separate lemma. | yes — `BosworthToller1898` | `docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt:98987-98990` | high |
 | Research memo | current local synthesis | `*líkkōjaną`; `*líkkōθi`; `liccian`; `liccaþ` | lexeme-level infinitive vs selected 3sg cell | `liccian`; `liccaþ` | Distinguishes headword evidence from the selected finite target and warns against stronger attestation claims than the local evidence supports. | no | `Germanic/docs/lexeme_reports/research_memos/2316-lick-(3sg)-liccaþ.md:61-84,102-122` | high |
 | Batch 13 summary | rollout summary | `liccian`; `licca`; `liccaþ` | required lick-family probe set | `liccaþ` | Confirms that the row family still needs a reusable built-in probe even though the manual contrast is already stable. | no | `Germanic/docs/lexeme_reports/research_memos/batch_13_summary.md:15-20` | high |
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `285` after direct inspection of the local Orel text.

@@ -31,9 +31,9 @@ before the ending.
 ### Old English evidence
 
 Campbell gives the paradigm `mann, man / mannes / menn` [@Campbell1959].
-Sievers-Brunner likewise cites `man mannes` and explains that word-final
-simplification underlies forms such as `man` beside inflected `monnes`
-[@SieversBrunner1965]. Clark Hall keeps the dictionary headword under `mann`
+Sievers-Brunner likewise cites `man mannes` [@SieversBrunner1965, §226]. He
+also explains that word-final simplification underlies forms such as `man`
+beside inflected `monnes` [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under `mann`
 [@ClarkHall1960].
 
 The relevant comparison form is therefore the attested genitive singular
@@ -45,7 +45,7 @@ From `*mánnas`, Anglo-Frisian brightening yields `*mánnæs`, and the later
 unstressed merger gives `*mánnes`, hence `mannes` [@Campbell1959]. In this
 cell the geminate remains medial before `-es`. The citation form behaves
 differently because word-final gemination was simplified in Old English
-[@SieversBrunner1965].
+[@SieversBrunner1965, §231].
 
 ### Paradigm comparison
 

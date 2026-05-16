@@ -51,3 +51,7 @@
 1. The strongest 3sg citation in the local evidence is prefixed `-sceawað`, so the normalized simplex comparator `sċēawaþ` must stay carefully labeled.
 2. The final prose must keep source spelling `scēaw- / -sceawað` distinct from normalized `sċēaw- / sċēawaþ`.
 3. The manual comparison is decisive, but the show-family finite cells still lack a reusable built-in probe specification.
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `337`.

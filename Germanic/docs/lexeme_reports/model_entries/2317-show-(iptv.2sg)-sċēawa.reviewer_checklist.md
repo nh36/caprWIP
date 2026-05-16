@@ -51,3 +51,7 @@
 1. The final prose must keep source spelling `scēawa` distinct from normalized `sċēawa`.
 2. `sċēawa` remains a selected imperative paradigm form beside the headword `scēawian`, not the ordinary citation form.
 3. The manual comparison is decisive, but the show-family finite cells still lack a reusable built-in probe specification.
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `337`.

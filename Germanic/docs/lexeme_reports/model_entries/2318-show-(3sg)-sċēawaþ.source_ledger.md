@@ -13,3 +13,7 @@ This ledger records the 3sg finite-cell evidence and show-family support used be
 | Orel | comparative etymology | `*skawōjanan`; OE `sceáwian`; OFris `skawia`; OS `skawōn`; OHG `scouwōn` | weak verb | `sceáwian` | Supplies the lexeme-level comparative reconstruction behind the ordinary OE headword. | yes — `Orel2003` | `docs/references/legacy/orel_handbook_germanic_etymology.txt:33205-33208` | high |
 | Research memo | current local synthesis | `scēawian`; `-sceawað`; normalized `sċēawaþ` | pattern-level 3sg support rather than separate simplex headword citation | `sċēawaþ` | Warns that the final prose should not overclaim direct simplex dictionary attestation for the exact normalized 3sg form. | no | `Germanic/docs/lexeme_reports/research_memos/2318-show-(3sg)-sċēawaþ.md:55-76,98-109` | high |
 | Batch 14 summary | rollout summary | `sċēawian`; `sċēawa`; `sċēawaþ` | required show-family probe set | `sċēawaþ` | Confirms that the row family still needs a reusable built-in probe even though the manual contrast is already stable. | no | `Germanic/docs/lexeme_reports/research_memos/batch_14_summary.md:15-18,43-45` | high |
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `337` after direct inspection of the local Orel text.

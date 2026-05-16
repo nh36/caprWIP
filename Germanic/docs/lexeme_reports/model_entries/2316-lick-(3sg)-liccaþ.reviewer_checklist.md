@@ -51,3 +51,7 @@
 1. `liccaþ` remains a selected 3sg paradigm form beside the headword `liccian`, not a separately lemmatized citation form.
 2. The row metadata still keeps `PROTO *likkōną` beside lexeme-level `*líkkōjaną`, so that distinction must remain explicit in review.
 3. The manual comparison is decisive, but the lick-family finite cells still lack a reusable built-in probe specification.
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `285`.

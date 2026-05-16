@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc `*li/ekkōn` continuing as Old English `liccian`, Old Saxon `likkon`, and Old High German `lecchon` [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction `*likkōjanan` with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc `*li/ekkōn` continuing as Old English `liccian`, Old Saxon `likkon`, and Old High German `lecchon` [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction `*likkōjanan` with the same Old English continuation [@Orel2003, 285].
 
 The form treated here is not that remodeled infinitive but a finite cell in bare trimoric `*-ō`. Campbell's weak class-II discussion and Ringe and Taylor's account of the paradigm both distinguish those finite singular cells from the ordinary `*-ōja-` citation formation [@Campbell1959; @RingeTaylor2014].
 

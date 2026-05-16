@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc `*li/ekkōn` continuing as Old English `liccian`, Old Saxon `likkon`, and Old High German `lecchon` [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction `*likkōjanan` with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc `*li/ekkōn` continuing as Old English `liccian`, Old Saxon `likkon`, and Old High German `lecchon` [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction `*likkōjanan` with the same Old English continuation [@Orel2003, 285].
 
 The selected form in this entry is the non-`j` present third singular `*líkkōθi`, not the remodeled infinitive. Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)`, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable `-a-` [@Campbell1959; @RingeTaylor2014].
 

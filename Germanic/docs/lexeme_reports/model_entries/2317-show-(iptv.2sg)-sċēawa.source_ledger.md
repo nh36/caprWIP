@@ -12,3 +12,7 @@ This ledger records the finite-cell evidence and show-family support used before
 | DEV_NOTES slice | current local synthesis | `*skáwōjaną`; `*skáwô`; `sċēawian`; `sċēawa` | lemma row vs imperative companion row; normalization note | `sċēawian`; `sċēawa` | Distinguishes lexeme-level citation form, selected imperative input, and normalized OE target. | no | `Germanic/docs/lexeme_reports/dev_notes_slices/2317-show-(iptv.2sg)-sċēawa.md:22-42,65-81,119-131` | high |
 | Research memo | current local synthesis | source spelling `scēawa`; normalized `sċēawa` | attested finite cell with normalized presentation | `scēawa`; `sċēawa` | Warns that the final prose must distinguish source spelling from normalized representation. | no | `Germanic/docs/lexeme_reports/research_memos/2317-show-(iptv.2sg)-sċēawa.md:58-72,85-103` | high |
 | Batch 13 summary | rollout summary | `sċēawian`; `sċēawa`; `sċēawaþ` | required show-family probe set | `sċēawa` | Confirms that the row family still needs a reusable built-in probe even though the manual contrast is already clear. | no | `Germanic/docs/lexeme_reports/research_memos/batch_13_summary.md:15-20` | high |
+
+## Citation-locator master manifest 04
+
+- Tightened `Orel2003` from a broad citation to verified page locator `337` after direct inspection of the local Orel text.

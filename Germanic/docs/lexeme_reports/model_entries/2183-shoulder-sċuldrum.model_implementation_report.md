@@ -81,3 +81,7 @@ The source ledger also records `Fulk2018` as locally available for the `*-o-m(i)
 - No manifest files were changed.
 - No packet, dev-note slice, research memo, bibliography file, derivation trace, or existing pilot report was changed.
 - The current style-and-claims pass changed only the model entry and this implementation report.
+
+## Citation-locator master manifest 04
+
+- Tightened `ClarkHall1960` from a broad citation to verified page locator `257` after direct inspection of the local Clark Hall text.

@@ -44,3 +44,7 @@
    comparison form `sċuldrum`.
 3. Keep the manual paradigm-comparison status explicit in any later editorial or
    assembly pass.
+
+## Citation-locator master manifest 04
+
+- Tightened `ClarkHall1960` from a broad citation to verified page locator `257`.

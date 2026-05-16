@@ -73,3 +73,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator master manifest 03
 
 - Tightened `Kroonen2013` from a broad citation to verified page locator `354` after direct inspection of the local Kroonen text.
+
+## Citation-locator master manifest 04
+
+- Tightened `SieversBrunner1965` from broad citations to verified section locators `§226` and `§231` after direct inspection of the local Brunner text.

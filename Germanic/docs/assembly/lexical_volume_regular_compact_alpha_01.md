@@ -1733,9 +1733,9 @@ OE Heavy Syllable Nasal Apocope & \emph{*xlíd} \\
 }
 \endgroup
 
-Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003, 216; @Lloyd1966]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960, 175; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
+Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003, 216; @Lloyd1966, 738]. Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate' [@ClarkHall1960, 175; @BosworthToller1898, 563]. The selected input already represents the later Germanic _hliđ-_ stage used for the derivation here.
 
-Form note. An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003, 216; @Lloyd1966].
+Form note. An earlier etymological stage _\*liþuz_ belongs to comparative background only. The form represented here is the later _\*xlídą_ > hlid line that matches the attested Old English noun [@Orel2003, 216; @Lloyd1966, 738].
 
 ### light — OE līehtan
 
@@ -7596,7 +7596,7 @@ preserve the simplex headword as _hamor_ or _hamer_
 [@BosworthToller1898; @ClarkHall1960, 160].
 
 Sievers-Brunner gives a paradigm line _hamor — hamores_, which shows that the
-oblique tradition itself was not entirely uniform [@SieversBrunner1965]. The
+oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
 relevant comparison form here is the attested genitive singular _hameres_.
 
 #### Development to Old English
@@ -7973,9 +7973,9 @@ before the ending.
 #### Old English evidence
 
 Campbell gives the paradigm mann, _man_ / _mannes_ / _menn_ [@Campbell1959].
-Sievers-Brunner likewise cites _man mannes_ and explains that word-final
-simplification underlies forms such as _man_ beside inflected _monnes_
-[@SieversBrunner1965]. Clark Hall keeps the dictionary headword under _mann_
+Sievers-Brunner likewise cites _man mannes_ [@SieversBrunner1965, §226]. He
+also explains that word-final simplification underlies forms such as _man_
+beside inflected _monnes_ [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under _mann_
 [@ClarkHall1960].
 
 The relevant comparison form is therefore the attested genitive singular
@@ -7987,7 +7987,7 @@ From _\*mánnas_, Anglo-Frisian brightening yields _\*mánnæs_, and the later
 unstressed merger gives _\*mánnes_, hence _mannes_ [@Campbell1959]. In this
 cell the geminate remains medial before _-es_. The citation form behaves
 differently because word-final gemination was simplified in Old English
-[@SieversBrunner1965].
+[@SieversBrunner1965, §231].
 
 #### Paradigm comparison
 
@@ -8350,7 +8350,7 @@ A dative/instrumental plural form _\*skúldramiz_ aligns with the inherited plur
 
 #### Old English evidence
 
-The ordinary Old English headword is _sculdor_. Bosworth-Toller and Clark Hall both lemmatize _sculdor_ as the normal dictionary form, and the Bosworth-Toller material also preserves plural and oblique forms such as _sculdru_, _sculdra_, and _sculdrum_ [@BosworthToller1898; @ClarkHall1960]. The dative plural _sculdrum_ is directly attested in the dictionary material [@BosworthToller1898].
+The ordinary Old English headword is _sculdor_. Bosworth-Toller and Clark Hall both lemmatize _sculdor_ as the normal dictionary form, and the Bosworth-Toller material also preserves plural and oblique forms such as _sculdru_, _sculdra_, and _sculdrum_ [@BosworthToller1898; @ClarkHall1960, 257]. The dative plural _sculdrum_ is directly attested in the dictionary material [@BosworthToller1898].
 
 Bosworth-Toller's Supplement records a weak-feminine _sculdra, an_, so _sculdra_ belongs to the Old English record beside the stronger masculine paradigm headed by _sculdor_ [@BosworthToller1898]. Brunner and Luick also record later spellings such as _sceoldor_ and the i-mutated dative plural _scyldrum_, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
@@ -9150,7 +9150,7 @@ Outcome: _licca_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
 The form treated here is not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_. Campbell's weak class-II discussion and Ringe and Taylor's account of the paradigm both distinguish those finite singular cells from the ordinary _\*-ōja-_ citation formation [@Campbell1959; @RingeTaylor2014].
 
@@ -9224,7 +9224,7 @@ Outcome: _liccaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003].
+Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
 The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014].
 
@@ -9298,7 +9298,7 @@ Outcome: _sċēawa_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003]. The selected input in this entry is not that infinitive but the imperative singular _\*skáwô_, a finite class-II cell that preserves bare _\*-ō_ rather than the remodeled _\*-ōja-_ formation [@RingeTaylor2014].
+Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003, 337]. The selected input in this entry is not that infinitive but the imperative singular _\*skáwô_, a finite class-II cell that preserves bare _\*-ō_ rather than the remodeled _\*-ōja-_ formation [@RingeTaylor2014].
 
 That distinction matters because the imperative singular provides the direct comparison for the Old English form treated here. The lexical history still belongs to the _sceáwian_ verb, but the selected cell isolates the finite _-a_ outcome more clearly than the citation form does.
 
@@ -9374,7 +9374,7 @@ Outcome: _sċēawaþ_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003]. The selected input in this entry is the present third singular _\*skáwōθi_, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
+Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003, 337]. The selected input in this entry is the present third singular _\*skáwōθi_, a finite class-II cell rather than the remodeled infinitive [@RingeTaylor2014].
 
 Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_, and Ringe and Taylor likewise treat the class-II 2sg and 3sg as forms with stable _-a-_ [@Campbell1959; @RingeTaylor2014]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
