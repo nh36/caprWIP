@@ -821,7 +821,7 @@ OE Breaking & \emph{*fearn} \\
 }
 \endgroup
 
-Kroonen cites the noun as masculine _\*farna-_ and gives Old English _fearn, fern_, while Orel gives the same lexeme as neuter _\*farnan_ with Old English _fearn_ [@Kroonen2013, 169; @Orel2003, 133]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style _\*fárnaz_. Clark Hall gives _fearn_ as an Old English noun, and Bosworth-Toller records _fearn_ with inflected forms such as _fearnes_, _fearna_, and _fearne_ [@ClarkHall1960, 114; @BosworthToller1898, 219]. From _\*fárnaz_, loss of final _-z_ and final _-a_ gives _\*fárn_; Anglo-Frisian brightening then yields _\*færn_, and breaking before _r_ plus consonant gives _fearn_ [@RingeTaylor2014].
+Kroonen cites the noun as masculine _\*farna-_ and gives Old English _fearn, fern_, while Orel gives the same lexeme as neuter _\*farnan_ with Old English _fearn_ [@Kroonen2013, 169; @Orel2003, 133]. Those are comparative headword conventions rather than competing Old English outcomes; the modeled input here is the nominative-style _\*fárnaz_. Clark Hall gives _fearn_ as an Old English noun, and Bosworth-Toller records _fearn_ with inflected forms such as _fearnes_, _fearna_, and _fearne_ [@ClarkHall1960, 114; @BosworthToller1898, 219]. From _\*fárnaz_, loss of final _-z_ and final _-a_ gives _\*fárn_; Anglo-Frisian brightening then yields _\*færn_ [@Fulk2018, §4.12], and breaking before _r_ plus consonant gives _fearn_ [@Campbell1959, §144].
 
 ### field — OE feld
 
@@ -4923,10 +4923,10 @@ the attested lemma _hliehhan_ itself.
 #### Development to Old English
 
 From _\*xláxjaną_, West Germanic j-gemination yields the doubled consonant
-[@Campbell1959, §407]. The subsequent Old English vowel developments lead to
-_hliehhan_. Ringe and Taylor discuss the broken vowel of the Old
-English form as part of this same history, with possible support from the
-related noun _hleahtor_ [@RingeTaylor2014].
+[@Campbell1959, §407]. Ringe and Taylor derive Old English _hliehhan_ from the
+j-present branch via breaking before the palatalized geminate
+[@RingeTaylor2014, 240]. They separately compare the related noun _hleahtor_
+as the outcome of _\*hlahtraz_ [@RingeTaylor2014, 328].
 
 #### Branch comparison
 
@@ -7382,11 +7382,11 @@ belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form _funden_ is not
-the cleanest inherited comparison. Luick and Brunner treat the better-known
-nominative participial forms as analogically leveled from inflected cases of
-the paradigm [@Luick1914; @SieversBrunner1965]. The
-selected input therefore targets the cell in which the regular development is
-most transparent.
+the cleanest inherited comparison. The selected input instead models an
+attested participial cell directly, rather than treating the infinitive or the
+ordinary dictionary headword as the privileged target. It therefore targets the
+comparison form _fundene_ in the cell where the regular development is most
+transparent.
 
 #### Old English evidence
 
@@ -7406,8 +7406,8 @@ weakening of the final ending, yielding _fundene_. In that cell both the
 consonantism and the medial vowel history remain regular.
 
 The broader participial paradigm then matters for interpretation. The more
-familiar nominative _funden_ represents a later analogical leveling, whereas the
-selected oblique form preserves the inherited pathway more directly.
+familiar nominative _funden_ is the ordinary dictionary form, whereas the
+selected oblique form _fundene_ is the attested comparison cell used here.
 
 #### Paradigm comparison
 
@@ -7417,12 +7417,12 @@ participle from the more familiar but analogically leveled participial forms.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | *fínθaną | inherited verb _findan_ | findan | establishes the lexeme, but not the selected target |
-| nominative participial line | *fúnðanaz | later leveled _funden_ type | funden | important paradigm background, but not the cleanest regular cell |
+| nominative participial line | *fúnðanaz | ordinary dictionary _funden_ type | funden | important paradigm background, but not the selected comparison cell |
 | selected oblique participle | *fúnðanǭ | compact-trace output: _fundene_ | fundene | exact match between input, output, and attested cell |
 
-The oblique participle is the relevant comparison form. It preserves the inherited
-development most directly, while the nominative participial headword belongs to
-a later analogical leveling within the paradigm.
+The oblique participle is the relevant comparison form. It matches the selected
+input and target directly, while the nominative participial headword remains a
+different presentation cell within the same paradigm.
 
 ### fright — OE fyrhte
 
@@ -7794,10 +7794,11 @@ line.
 
 #### Development to Old English
 
-From _\*xémonų_, the relevant pathway includes early _o_-raising before _u_,
-dissimilation in the m/n cluster, and later lowering of unstressed _u_
-[@Campbell1959]. Back mutation then yields _heo-_ before the labial
-plus back-vowel sequence, and loss of the final high vowel gives _heofon_.
+From _\*xémonų_, the West Saxon line passes through the oblique-stem type
+reflected in northern WGmc _\*hebun_ [@RingeTaylor2014, 324]. Campbell's
+_heofon_ beside _hefen_ and earlier _hefzen_ show the later West-Saxon
+back-mutation and suffix reshaping behind _heofon_
+[@Campbell1959, §210.1; @Campbell1959, §381].
 
 The front-vocalic nominative line remains important as background because it
 explains the dialectal _hefen_ type. West Saxon _heofon_ reflects the oblique

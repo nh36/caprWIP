@@ -70,3 +70,7 @@
 ## Citation locator full-exhaustion 04
 
 - Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator full-exhaustion 05
+
+- Citation locator full-exhaustion 05: final five-row citation localization / removal / retained-broad justification.

@@ -24,11 +24,11 @@ belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form `funden` is not
-the cleanest inherited comparison. Luick and Brunner treat the better-known
-nominative participial forms as analogically leveled from inflected cases of
-the paradigm [@Luick1914; @SieversBrunner1965]. The
-selected input therefore targets the cell in which the regular development is
-most transparent.
+the cleanest inherited comparison. The selected input instead models an
+attested participial cell directly, rather than treating the infinitive or the
+ordinary dictionary headword as the privileged target. It therefore targets the
+comparison form `fundene` in the cell where the regular development is most
+transparent.
 
 ### Old English evidence
 
@@ -48,8 +48,8 @@ weakening of the final ending, yielding `fundene`. In that cell both the
 consonantism and the medial vowel history remain regular.
 
 The broader participial paradigm then matters for interpretation. The more
-familiar nominative `funden` represents a later analogical leveling, whereas the
-selected oblique form preserves the inherited pathway more directly.
+familiar nominative `funden` is the ordinary dictionary form, whereas the
+selected oblique form `fundene` is the attested comparison cell used here.
 
 ### Paradigm comparison
 
@@ -59,9 +59,9 @@ participle from the more familiar but analogically leveled participial forms.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | *fínθaną | inherited verb `findan` | findan | establishes the lexeme, but not the selected target |
-| nominative participial line | *fúnðanaz | later leveled `funden` type | funden | important paradigm background, but not the cleanest regular cell |
+| nominative participial line | *fúnðanaz | ordinary dictionary `funden` type | funden | important paradigm background, but not the selected comparison cell |
 | selected oblique participle | *fúnðanǭ | compact-trace output: `fundene` | fundene | exact match between input, output, and attested cell |
 
-The oblique participle is the relevant comparison form. It preserves the inherited
-development most directly, while the nominative participial headword belongs to
-a later analogical leveling within the paradigm.
+The oblique participle is the relevant comparison form. It matches the selected
+input and target directly, while the nominative participial headword remains a
+different presentation cell within the same paradigm.

@@ -41,10 +41,11 @@ line.
 
 ### Development to Old English
 
-From `*xémonų`, the relevant pathway includes early `o`-raising before `u`,
-dissimilation in the m/n cluster, and later lowering of unstressed `u`
-[@Campbell1959]. Back mutation then yields `heo-` before the labial
-plus back-vowel sequence, and loss of the final high vowel gives `heofon`.
+From `*xémonų`, the West Saxon line passes through the oblique-stem type
+reflected in northern WGmc `*hebun` [@RingeTaylor2014, 324]. Campbell's
+`heofon` beside `hefen` and earlier `hefzen` show the later West-Saxon
+back-mutation and suffix reshaping behind `heofon`
+[@Campbell1959, §210.1; @Campbell1959, §381].
 
 The front-vocalic nominative line remains important as background because it
 explains the dialectal `hefen` type. West Saxon `heofon` reflects the oblique

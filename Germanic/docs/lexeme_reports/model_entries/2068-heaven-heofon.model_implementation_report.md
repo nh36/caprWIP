@@ -84,3 +84,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation locator full-exhaustion 04
 
 - Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator full-exhaustion 05
+
+- Citation locator full-exhaustion 05: final five-row citation localization / removal / retained-broad justification.

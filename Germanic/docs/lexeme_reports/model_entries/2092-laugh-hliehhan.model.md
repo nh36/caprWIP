@@ -41,10 +41,10 @@ the attested lemma `hliehhan` itself.
 ### Development to Old English
 
 From `*xláxjaną`, West Germanic j-gemination yields the doubled consonant
-[@Campbell1959, §407]. The subsequent Old English vowel developments lead to
-`hliehhan`. Ringe and Taylor discuss the broken vowel of the Old
-English form as part of this same history, with possible support from the
-related noun `hleahtor` [@RingeTaylor2014].
+[@Campbell1959, §407]. Ringe and Taylor derive Old English `hliehhan` from the
+j-present branch via breaking before the palatalized geminate
+[@RingeTaylor2014, 240]. They separately compare the related noun `hleahtor`
+as the outcome of `*hlahtraz` [@RingeTaylor2014, 328].
 
 ### Branch comparison
 
