@@ -22,3 +22,7 @@ before the book-style prose was drafted.
 
 - Citation locator tightened or status reclassified after claim-isolation 07;
   verified against `Kroonen2013, 471` and `Orel2003, 368`.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

@@ -74,3 +74,7 @@ Citation locator claim-isolation 01 split the class-III stem and finite-form sen
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 157`.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

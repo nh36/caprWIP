@@ -26,9 +26,8 @@ infinitive from a non-geminating `-ai- / -ē-` stem in the 2sg and 3sg present
 forms [@RingeTaylor2014, 93].
 
 The selected input `*xábēθi` is therefore the 3sg present cell rather than a
-rephrasing of the infinitive. Fulk's discussion of `habban` treats the ordinary
-citation form as analogically leveled, which is why the finite cell is the
-cleaner comparator here [@Fulk2018].
+rephrasing of the infinitive. For the present analysis, that finite cell is the
+cleaner comparator for the inherited non-geminating stem.
 
 ### Old English evidence
 

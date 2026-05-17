@@ -45,7 +45,7 @@ reconstructed lemma `meord` and not the better-known West Saxon citation form
 From `*mízdai`, rhotacism gives `*mírdai`. Proto-West-Germanic monophthongization
 then yields `*mírdē`, Northwest-Germanic lowering gives `*mérdē`, Old English
 breaking yields `*méordē`, and unstressed shortening gives `*méorde`, hence
-`meorde` [@RingeTaylor2014].
+`meorde` [@RingeTaylor2014, 285].
 
 This is the regular oblique-cell path modeled by the current trace. The entry
 therefore depends on the attested oblique line rather than on a full decision

@@ -21,8 +21,7 @@ DERIVATION_CLASS: early_analogy
 The comparative sources do not give one uniform inherited stem. Kroonen
 preserves the word family as `*saf/ppan-`, with Old English `sæp m.`
 [@Kroonen2013, 420]. Orel preserves the comparative notation `*sapōn ~ *sapan`
-[@Orel2003, 319], while Kluge-Seebold instead gives West Germanic `*sapi-` and
-still cites Old English `sæp n.` [@KlugeSeebold2011].
+[@Orel2003, 319].
 
 The selected input `*sápą` therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated
@@ -30,11 +29,10 @@ here.
 
 ### Old English evidence
 
-Clark Hall records `sæp (e) n.` [@ClarkHall1960, 247], and Kluge-Seebold likewise
-cites `ae. sæp n.` [@KlugeSeebold2011]. The target is therefore an attested
-neuter Old English noun. Orel's plain `sap` notation belongs to comparative
-normalization, not to the spelling adopted here for the Old English form
-[@Orel2003, 319].
+Clark Hall records `sæp (e) n.` [@ClarkHall1960, 247]. The target is therefore
+an attested neuter Old English noun. Orel's plain `sap` notation belongs to
+comparative normalization, not to the spelling adopted here for the Old English
+form [@Orel2003, 319].
 
 ### Development to Old English
 

@@ -68,3 +68,7 @@ Checked against `docs/refs.bib`:
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `ClarkHall1960, 65`.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

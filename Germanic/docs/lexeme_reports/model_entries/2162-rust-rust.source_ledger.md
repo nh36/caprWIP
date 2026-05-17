@@ -32,3 +32,7 @@ before the book-style prose was drafted.
 ## Citation locator full-exhaustion 02
 
 - Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

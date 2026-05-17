@@ -64,3 +64,7 @@
 ## Citation-locator claim-isolation 06
 
 - Citation locator tightened after claim-isolation pass; verified against `Kroonen2013, 420`.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

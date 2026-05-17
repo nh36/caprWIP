@@ -35,14 +35,14 @@ dative `geallan`, confirming a weak-noun paradigm [@BosworthToller1898, 297;
 a normalized spelling with macrons omitted and palatal ġ made explicit.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-`gealla` with Anglian `galla` [@Campbell1959]. The target of this entry is the
+`gealla` with Anglian `galla` [@Campbell1959, §486]. The target of this entry is the
 West Saxon type `ġealla`.
 
 ### Development to Old English
 
 From `*gállô`, the weak noun develops through the expected Old English history
 of the suffix and the regular breaking environment before `ll`, yielding
-`ġealla` [@Campbell1959]. Once the weak masculine input is chosen, the noun
+`ġealla` [@Campbell1959, §486]. Once the weak masculine input is chosen, the noun
 follows a regular path to its attested Old English form.
 
 The decisive issue is therefore morphological. Old English reflects the weak

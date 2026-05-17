@@ -959,7 +959,7 @@ OE Weak Tail Reduction & \emph{*lēosan} \\
 }
 \endgroup
 
-Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013, 374; @Orel2003, 282]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960, 113; @BosworthToller1898, 248]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014].
+Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013, 374; @Orel2003, 282]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix. The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014, 357; @ClarkHall1960, 113; @BosworthToller1898, 248]. From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014, 357].
 
 Form note. As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / forloren [@RingeTaylor2014, 357].
 
@@ -2315,7 +2315,7 @@ OE J Loss After Heavy & \emph{*smíerwan} \\
 
 Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013, 458]. Ringe and Taylor instead cite a later-stage _\*smirwijana_, from which they derive West Saxon _smierwan_, Mercian _smirwan_, and Northumbrian _smiriga_ [@RingeTaylor2014, 198, 263]. The selected form is the West Saxon citation form _smierwan_. From _\*smérwijaną_, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_.
 
-Dialect note. The entry therefore represents the West Saxon member of a broader OE family: _smierwan_ in West Saxon, _smirwan_ in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014; @ClarkHall1960, 283].
+Dialect note. The entry therefore represents the West Saxon member of a broader OE family: _smierwan_ in West Saxon, _smirwan_ in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014, 263; @ClarkHall1960, 283].
 
 ### span — OE spannan
 
@@ -2874,7 +2874,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*tūn} \\
 }
 \endgroup
 
-Kroonen cites _\*tūna-_ 'fenced area', while Orel gives _\*tūnan_ ~ _\*tūnaz_ [@Kroonen2013, 566; @Orel2003, 452]. The selected input _\*tūną_ is the simple citation-form noun used in the derivation. Clark Hall records _tūn_ as the ordinary headword 'enclosure, yard, village, town' [@ClarkHall1960, 356]. The inherited long _ū_ is preserved, and loss of the final nasal vowel yields _tūn_ regularly [@SieversBrunner1965].
+Kroonen cites _\*tūna-_ 'fenced area', while Orel gives _\*tūnan_ ~ _\*tūnaz_ [@Kroonen2013, 566; @Orel2003, 452]. The selected input _\*tūną_ is the simple citation-form noun used in the derivation. Clark Hall records _tūn_ as the ordinary headword 'enclosure, yard, village, town' [@ClarkHall1960, 356]. The inherited long _ū_ is preserved, and loss of the final nasal vowel yields _tūn_ regularly [@SieversBrunner1965, §71].
 
 Source note. The comparative headwords vary, but the Old English target here is the direct citation form _tūn_, not an oblique _\*tūnăn_.
 
@@ -3951,7 +3951,7 @@ Outcome: _brēost_
 The word family shows two related but distinct Proto-Germanic formations. The
 root noun _\*brust-_ lies behind forms such as Gothic _brusts_, whereas Old
 English _brēost_ belongs to a thematic formation _\*breusta-_, alongside Old
-Norse _brjóst_ and Old Saxon _briost_ [@Kroonen2013; @Orel2003, 95;
+Norse _brjóst_ and Old Saxon _briost_ [@Kroonen2013, 114; @Orel2003, 95;
 @RingeTaylor2014, 43].
 
 The selected input _\*bréustą_ therefore differs from the citation label
@@ -3972,7 +3972,7 @@ comparison form is therefore the thematic Old English noun _brēost_.
 #### Development to Old English
 
 From _\*bréustą_, the regular Old English development gives _brēost_, with the
-expected _eu_ > _ēo_ vowel history [@Campbell1959]. No special repair is needed
+expected _eu_ > _ēo_ vowel history [@Campbell1959, §115]. No special repair is needed
 once the correct thematic formation is chosen.
 
 The earlier mismatch arose only if the word was forced into the root-noun line.
@@ -4124,17 +4124,17 @@ Outcome: _dile_
 
 #### Reconstruction and comparative evidence
 
-Kroonen treats the word as preserving evidence for both an i-stem and a ja-stem
-formation, with Old English _dile_ on one side and continental forms such as Old
-Saxon _dilli_ and Old High German _tilli_ on the other [@Kroonen2013]. The
-selected input _\*déliz_ therefore represents the i-stem side of the paradigm,
+Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
+English _dile_ on one side and continental forms such as Old Saxon _dilli_ and
+Old High German _tilli_ on the other [@Fulk2018, 170]. The selected input
+_\*déliz_ therefore represents the i-stem side of the paradigm,
 whereas the citation label _\*déljaz_ is a broader comparative headword.
 
 That stem-class distinction matters for the Old English consonant shape. A
 ja-stem with _\*-lj-_ would be expected to produce gemination, but the Old
 English noun shows a single _l_. Fulk's discussion of ja-stems transferred to
 the i-stems provides the relevant morphological background for the OE side
-[@Fulk2018].
+[@Fulk2018, 170].
 
 #### Old English evidence
 
@@ -4543,14 +4543,14 @@ dative _geallan_, confirming a weak-noun paradigm [@BosworthToller1898, 297;
 a normalized spelling with macrons omitted and palatal ġ made explicit.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-_gealla_ with Anglian _galla_ [@Campbell1959]. The target of this entry is the
+_gealla_ with Anglian _galla_ [@Campbell1959, §486]. The target of this entry is the
 West Saxon type _ġealla_.
 
 #### Development to Old English
 
 From _\*gállô_, the weak noun develops through the expected Old English history
 of the suffix and the regular breaking environment before _ll_, yielding
-_ġealla_ [@Campbell1959]. Once the weak masculine input is chosen, the noun
+_ġealla_ [@Campbell1959, §486]. Once the weak masculine input is chosen, the noun
 follows a regular path to its attested Old English form.
 
 The decisive issue is therefore morphological. Old English reflects the weak
@@ -4718,9 +4718,8 @@ Outcome: _hladan_
 #### Reconstruction and comparative evidence
 
 Ringe and Taylor cite the strong verb _hladan_ directly [@RingeTaylor2014, 248].
-Kroonen treats the wider Germanic family under a weak-verb label such as
-_\*laθōjaną_ [@Kroonen2013]. The two forms are related as members of one word
-family, but they do not play the same role in the OE derivation.
+The citation label _\*laθōjaną_ is used here only as a broader family heading,
+not as the direct source of the OE derivation.
 
 The selected input therefore marks an early stem choice. The entry follows the
 strong Verner-grade form that reaches Old English _hladan_ directly.
@@ -5168,10 +5167,12 @@ Outcome: _nafola_
 
 #### Reconstruction and comparative evidence
 
-Kroonen lemmatizes the word with a syncopated comparative headword _\*nablô_,
-while Ringe and Taylor give the derivational pathway _\*nabulō_ > _\*næbula_ > _nafola_ [@Kroonen2013; @RingeTaylor2014, 270]. The difference is one of stage
-and notation rather than of lexeme identity: the selected input _\*nábulô_ is
-the pre-syncope form needed for the Old English development.
+Kroonen instead gives a nasal-suffix navel formation with Old English _nafela_
+among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
+derivational pathway _\*nabulō_ > _\*næbula_ > _nafola_ [@RingeTaylor2014, 270]. The
+difference is one of stage and notation rather than of lexeme identity: the
+selected input _\*nábulô_ is the pre-syncope form needed for the Old English
+development.
 
 For the Old English comparison, the crucial point is simply that the pre-OE form
 still contains a medial vowel.
@@ -5530,8 +5531,7 @@ Outcome: _sæp_
 The comparative sources do not give one uniform inherited stem. Kroonen
 preserves the word family as _\*saf_/ppan-, with Old English _sæp_ m.
 [@Kroonen2013, 420]. Orel preserves the comparative notation _\*sapōn_ ~ _\*sapan_
-[@Orel2003, 319], while Kluge-Seebold instead gives West Germanic _\*sapi-_ and
-still cites Old English _sæp_ n. [@KlugeSeebold2011].
+[@Orel2003, 319].
 
 The selected input _\*sápą_ therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated
@@ -5539,11 +5539,10 @@ here.
 
 #### Old English evidence
 
-Clark Hall records _sæp_ (e) n. [@ClarkHall1960, 247], and Kluge-Seebold likewise
-cites ae. _sæp_ n. [@KlugeSeebold2011]. The target is therefore an attested
-neuter Old English noun. Orel's plain _sap_ notation belongs to comparative
-normalization, not to the spelling adopted here for the Old English form
-[@Orel2003, 319].
+Clark Hall records _sæp_ (e) n. [@ClarkHall1960, 247]. The target is therefore
+an attested neuter Old English noun. Orel's plain _sap_ notation belongs to
+comparative normalization, not to the spelling adopted here for the Old English
+form [@Orel2003, 319].
 
 #### Development to Old English
 
@@ -5890,8 +5889,7 @@ Outcome: _stæf_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem _\*staba-_ [@Kroonen2013, 471]. Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003, 368], and Kluge-Seebold explicitly marks g. _\*stabi-_/a-
-[@KlugeSeebold2011]. That disagreement matters because a direct i-stem input in
+reconstructs an a-stem _\*staba-_ [@Kroonen2013, 471]. Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003, 368]. That disagreement matters because a direct i-stem input in
 _\*-iz_ would predict i-mutation in Old English, whereas the attested noun keeps
 _æ_.
 
@@ -7681,9 +7679,8 @@ infinitive from a non-geminating -ai- / _-ē-_ stem in the 2sg and 3sg present
 forms [@RingeTaylor2014, 93].
 
 The selected input _\*xábēθi_ is therefore the 3sg present cell rather than a
-rephrasing of the infinitive. Fulk's discussion of _habban_ treats the ordinary
-citation form as analogically leveled, which is why the finite cell is the
-cleaner comparator here [@Fulk2018].
+rephrasing of the infinitive. For the present analysis, that finite cell is the
+cleaner comparator for the inherited non-geminating stem.
 
 #### Old English evidence
 
@@ -8079,7 +8076,7 @@ _mēd_.
 From _\*mízdai_, rhotacism gives _\*mírdai_. Proto-West-Germanic monophthongization
 then yields _\*mírdē_, Northwest-Germanic lowering gives _\*mérdē_, Old English
 breaking yields _\*méordē_, and unstressed shortening gives _\*méorde_, hence
-_meorde_ [@RingeTaylor2014].
+_meorde_ [@RingeTaylor2014, 285].
 
 This is the regular oblique-cell path modeled by the current trace. The entry
 therefore depends on the attested oblique line rather than on a full decision
@@ -10142,8 +10139,8 @@ preserved in the header.
 
 Under Campbell's regular lowering of stressed _u_ before a following mid or low
 vowel, the citation-form input gives _rost_, not _rust_ [@Campbell1959, §115].
-Ringe and Taylor likewise point to the same lowered-vowel outcome for the
-comparative citation-form reconstruction _\*rustaz_ [@RingeTaylor2014].
+The same lowering would also affect comparative citation-form reconstructions
+such as _\*rustaz_.
 
 A high-vowel comparator such as instrumental-type _\*rústu_ would yield _rust_
 regularly, but that does not explain the attested citation form of the noun. No

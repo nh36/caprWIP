@@ -32,3 +32,7 @@ book-style entry was drafted.
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

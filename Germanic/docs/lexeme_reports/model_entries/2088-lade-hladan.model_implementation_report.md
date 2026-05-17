@@ -72,3 +72,7 @@ Checked against `docs/refs.bib`:
 ## Citation-locator claim-isolation 04
 
 - Citation locator tightened after claim-isolation pass; verified against `ClarkHall1960, 159`.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

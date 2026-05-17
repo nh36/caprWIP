@@ -18,3 +18,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation locator full-exhaustion 04
 
 - Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
+
+## Post-exhaustion audit 03
+
+- Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

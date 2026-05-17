@@ -19,9 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Ringe and Taylor cite the strong verb `hladan` directly [@RingeTaylor2014, 248].
-Kroonen treats the wider Germanic family under a weak-verb label such as
-`*laθōjaną` [@Kroonen2013]. The two forms are related as members of one word
-family, but they do not play the same role in the OE derivation.
+The citation label `*laθōjaną` is used here only as a broader family heading,
+not as the direct source of the OE derivation.
 
 The selected input therefore marks an early stem choice. The entry follows the
 strong Verner-grade form that reaches Old English `hladan` directly.

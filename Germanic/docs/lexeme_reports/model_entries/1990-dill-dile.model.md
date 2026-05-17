@@ -18,17 +18,17 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen treats the word as preserving evidence for both an i-stem and a ja-stem
-formation, with Old English `dile` on one side and continental forms such as Old
-Saxon `dilli` and Old High German `tilli` on the other [@Kroonen2013]. The
-selected input `*déliz` therefore represents the i-stem side of the paradigm,
+Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
+English `dile` on one side and continental forms such as Old Saxon `dilli` and
+Old High German `tilli` on the other [@Fulk2018, 170]. The selected input
+`*déliz` therefore represents the i-stem side of the paradigm,
 whereas the citation label `*déljaz` is a broader comparative headword.
 
 That stem-class distinction matters for the Old English consonant shape. A
 ja-stem with `*-lj-` would be expected to produce gemination, but the Old
 English noun shows a single `l`. Fulk's discussion of ja-stems transferred to
 the i-stems provides the relevant morphological background for the OE side
-[@Fulk2018].
+[@Fulk2018, 170].
 
 ### Old English evidence
 
