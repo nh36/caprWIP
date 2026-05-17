@@ -71,3 +71,7 @@
 ## Citation locator full-exhaustion 05
 
 - Post-exhaustion audit 05: localized reopened broad citation / retained broad with source-specific reason / source witness needed / revised under-cited prose.
+
+## Citation locator source-preparation audit 06
+
+- Source-preparation audit 06: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

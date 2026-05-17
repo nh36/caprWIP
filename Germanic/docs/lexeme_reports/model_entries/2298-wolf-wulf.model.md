@@ -20,7 +20,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 The inherited noun is an a-stem: Kroonen gives `*wulfa-`, and Ringe and Taylor
 list PGmc `*wulfaz` among the inherited words that preserve `u` in Old English
-beside Old High German `wolf` [@Kroonen2013; @RingeTaylor2014, 47]. Campbell
+beside Old High German `wolf` [@Kroonen2013, 638; @RingeTaylor2014, 47]. Campbell
 accordingly names Old English `wulf` as an exception to the regular lowering of
 stressed `u` before a following non-high vowel [@Campbell1959, §115].
 

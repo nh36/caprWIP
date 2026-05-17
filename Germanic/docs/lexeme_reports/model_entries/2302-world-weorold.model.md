@@ -22,7 +22,7 @@ The word is the old compound 'age of men'. Comparative sources preserve two
 slightly different views of its first element. Orel and the `*wira-` tradition
 keep the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
 `*weraldiz` and its pre-Old-English chain `*weraldu > *weruld`
-[@Orel2003; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
+[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
 giving compound `*wira-aldō` beside simplex `*wera-` [@KlugeSeebold2011].
 
 The selected input `*wír-àldu` therefore differs from the citation label in two

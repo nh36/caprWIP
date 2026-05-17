@@ -2695,7 +2695,7 @@ OE J Loss After Heavy & \emph{*θenʧan} \\
 }
 \endgroup
 
-Kroonen gives the verb as _\*þankjan-_ 'to think' [@Kroonen2013, 533]. The noun _\*þankaz_ belongs only to the wider derivational background. Bosworth-Toller preserves the verb under _þencan_/_geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898]. From _\*θánkijaną_, palatalization before _\*j_ and i-umlaut produce _þenċan_. Campbell's assibilation discussion uses the same verb _þencan_; the class-III relic _hycgan_ is a different lexeme [@Campbell1959, §438; @Hogg1992, §3.4.2.4].
+Kroonen gives the verb as _\*þankjan-_ 'to think' [@Kroonen2013, 533]. The noun _\*þankaz_ belongs only to the wider derivational background. Bosworth-Toller preserves the verb under _þencan_/_geþencan_, and the citation form here is the ordinary infinitive _þenċan_ [@BosworthToller1898, 442]. From _\*θánkijaną_, palatalization before _\*j_ and i-umlaut produce _þenċan_. Campbell's assibilation discussion uses the same verb _þencan_; the class-III relic _hycgan_ is a different lexeme [@Campbell1959, §438; @Hogg1992, §3.4.2.4].
 
 ### thorn — OE þorn
 
@@ -4222,9 +4222,9 @@ Outcome: _festan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen places the verb under a comparative headword _\*fastēną_, the wider
-Germanic family behind meanings such as 'make firm' and, in Old English, 'fast'
-[@Kroonen2013]. Ringe and Taylor, however, distinguish the Old English verb
+Kroonen places the verb within the wider _\*fastu-_ adjective family and its
+derived _\*fasten-_ verbal line, the comparative background behind Old English
+'to fast' [@Kroonen2013, 171]. Ringe and Taylor, however, distinguish the Old English verb
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
 later acquired the stative meaning through lexical association with that wider
 family [@RingeTaylor2014].
@@ -4992,7 +4992,7 @@ Outcome: _lām_
 
 The inherited comparative noun is given as _\*laimōn_ or _\*laiman-_, and both
 Orel and Kroonen identify Old English _lām_ as a neuter reflex of that family
-[@Orel2003; @Kroonen2013, 363]. The selected input _\*láimą_ differs from the
+[@Orel2003, 272; @Kroonen2013, 363]. The selected input _\*láimą_ differs from the
 comparative headword because it represents the stem class that matches the Old
 English noun most directly.
 
@@ -5267,7 +5267,7 @@ _\*hnakkuns_, and he places Old English _hnecca_ among the e-grade descendants
 partner of the a-grade _Nacken_ family [@KlugeSeebold2011].
 
 A competing comparative label _\*xnákkaz_ remains useful for the wider family, and
-Orel also gives an a-grade headword line [@Orel2003]. The selected input
+Orel also gives an a-grade headword line [@Orel2003, 218]. The selected input
 _\*xnékkô_, however, is the form that matches the Old English branch.
 
 #### Old English evidence
@@ -6798,7 +6798,7 @@ The word is the old compound 'age of men'. Comparative sources preserve two
 slightly different views of its first element. Orel and the _\*wira-_ tradition
 keep the older _i_-vocalism, while Ringe and Taylor discuss the lowered form
 _\*weraldiz_ and its pre-Old-English chain _\*weraldu_ > _\*weruld_
-[@Orel2003; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
+[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
 giving compound _\*wira-aldō_ beside simplex _\*wera-_ [@KlugeSeebold2011].
 
 The selected input _\*wír-àldu_ therefore differs from the citation label in two
@@ -10217,7 +10217,7 @@ Selected target: _wulf_
 
 The inherited noun is an a-stem: Kroonen gives _\*wulfa-_, and Ringe and Taylor
 list PGmc _\*wulfaz_ among the inherited words that preserve _u_ in Old English
-beside Old High German _wolf_ [@Kroonen2013; @RingeTaylor2014, 47]. Campbell
+beside Old High German _wolf_ [@Kroonen2013, 638; @RingeTaylor2014, 47]. Campbell
 accordingly names Old English _wulf_ as an exception to the regular lowering of
 stressed _u_ before a following non-high vowel [@Campbell1959, §115].
 

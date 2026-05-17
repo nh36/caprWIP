@@ -26,3 +26,7 @@ book-style entry was drafted.
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `Kroonen2011, 167`.
+
+## Citation locator source-preparation audit 06
+
+- Source-preparation audit 06: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

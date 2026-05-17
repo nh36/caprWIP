@@ -25,7 +25,7 @@ with nominative `*hnekkō`, genitive `*hnukkaz`, and accusative plural
 partner of the a-grade `Nacken` family [@KlugeSeebold2011].
 
 A competing comparative label `*xnákkaz` remains useful for the wider family, and
-Orel also gives an a-grade headword line [@Orel2003]. The selected input
+Orel also gives an a-grade headword line [@Orel2003, 218]. The selected input
 `*xnékkô`, however, is the form that matches the Old English branch.
 
 ### Old English evidence

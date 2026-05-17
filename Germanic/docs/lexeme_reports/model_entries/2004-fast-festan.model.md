@@ -18,9 +18,9 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen places the verb under a comparative headword `*fastēną`, the wider
-Germanic family behind meanings such as 'make firm' and, in Old English, 'fast'
-[@Kroonen2013]. Ringe and Taylor, however, distinguish the Old English verb
+Kroonen places the verb within the wider `*fastu-` adjective family and its
+derived `*fasten-` verbal line, the comparative background behind Old English
+'to fast' [@Kroonen2013, 171]. Ringe and Taylor, however, distinguish the Old English verb
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
 later acquired the stative meaning through lexical association with that wider
 family [@RingeTaylor2014].
