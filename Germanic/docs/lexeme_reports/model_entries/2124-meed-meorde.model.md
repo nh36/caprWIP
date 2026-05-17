@@ -22,9 +22,9 @@ The lexeme-level reconstruction is `*mizdō`, but the selected input `*mízdai`
 is a dative-singular cell rather than the citation form. That distinction is
 important because the Old English evidence for the `meord` side is oblique.
 
-The wider history of competing `mēd` remains disputed. Crist, Kroonen, Ringe and
-Taylor, and Fulk explain it through some form of `z`-loss and compensatory
-lengthening [@Crist2002; @Kroonen2013, 410; @RingeTaylor2014; @Fulk2018], Orel keeps
+The wider history of competing `mēd` remains disputed. Crist, Kroonen, and Fulk
+explain it through some form of `z`-loss and compensatory lengthening
+[@Crist2002; @Kroonen2013, 410; @Fulk2018, 69], Orel keeps
 a doublet analysis [@Orel2003, 311], and Kilday instead argues that West Saxon `mēd`
 is a Saxono-Frisian loan [@Kilday2024]. The comparison here concerns the
 attested oblique line `meorde`.
@@ -32,10 +32,10 @@ attested oblique line `meorde`.
 ### Old English evidence
 
 The directly attested forms are obliques: `meorde` as a dative singular and
-`meorda` as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898].
+`meorda` as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
 Lexicographers reconstruct a bare nominative `meord` from those obliques, while
 West Saxon prose more commonly shows the competing doublet `mēd`
-[@ClarkHall1960; @BosworthToller1898].
+[@ClarkHall1960; @BosworthToller1898, 647].
 
 The target of this entry is therefore the attested oblique **`meorde`**, not the
 reconstructed lemma `meord` and not the better-known West Saxon citation form

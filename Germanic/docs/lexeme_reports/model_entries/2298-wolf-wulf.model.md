@@ -18,11 +18,11 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 ### Reconstruction and comparative evidence
 
-The inherited noun is an a-stem: Kroonen gives `*wulfa-`, and the regular Old
-English development of that citation form is the same one reflected by Old High
-German `wolf` [@Kroonen2013; @RingeTaylor2014]. Campbell accordingly names Old
-English `wulf` as an exception to the regular lowering of stressed `u` before a
-following non-high vowel [@Campbell1959, §115].
+The inherited noun is an a-stem: Kroonen gives `*wulfa-`, and Ringe and Taylor
+list PGmc `*wulfaz` among the inherited words that preserve `u` in Old English
+beside Old High German `wolf` [@Kroonen2013; @RingeTaylor2014, 47]. Campbell
+accordingly names Old English `wulf` as an exception to the regular lowering of
+stressed `u` before a following non-high vowel [@Campbell1959, §115].
 
 The older literature often notices that the exceptional words cluster near
 labials. Bülbring lists `full`, `wulle`, and `wulf` together, but he also says
@@ -43,9 +43,10 @@ not remove the explanatory problem presented by the citation form.
 
 ### Development to Old English
 
-Under the regular lowering of stressed `u`, the citation-form input gives
-`wolf`, not `wulf` [@Campbell1959; @RingeTaylor2014]. The compact trace shows
-exactly that path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
+Under the ordinary Northwest Germanic lowering of stressed `u` before a
+following non-high vowel, the citation-form input would point toward
+`o`-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
+path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
 
 A high-vowel oblique input would behave differently. The following high vowel
 would block the lowering of `u`, but the same environment would trigger

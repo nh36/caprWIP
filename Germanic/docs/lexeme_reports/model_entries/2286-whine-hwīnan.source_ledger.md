@@ -33,3 +33,7 @@ Citation locator claim-isolation 01 split the family-identification sentence and
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `Seebold1970, 280`.
+
+## Citation locator full-exhaustion 03
+
+- Citation locator full-exhaustion 03: citation localized / removed / retained broad after primary-source review.

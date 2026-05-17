@@ -1149,7 +1149,7 @@ OE Weak Tail Reduction & \emph{*graβan} \\
 }
 \endgroup
 
-Campbell gives _grafan_ among the standard examples of Old English a-restoration before a single consonant and a following back vowel, and Ringe and Taylor describe the same development for Class VI infinitives [@Campbell1959, 61; @RingeTaylor2014]. Clark Hall records _grafan_ as the verb 'to dig, grave' and separately records noun _græf_ 'grave, trench' [@ClarkHall1960, 153]. From _\*grábaną_, Anglo-Frisian brightening first gives a fronted stem vowel.
+Campbell gives _grafan_ among the standard examples of Old English a-restoration before a single consonant and a following back vowel [@Campbell1959, 61]. Clark Hall records _grafan_ as the verb 'to dig, grave' and separately records noun _græf_ 'grave, trench' [@ClarkHall1960, 153]. From _\*grábaną_, Anglo-Frisian brightening first gives a fronted stem vowel.
 
 Form note. Noun _græf_ and verbal forms such as _græfð_ or past participial _græfen_ belong to other lexical or paradigm positions and do not replace the infinitive _grafan_ as the target here [@ClarkHall1960, 153].
 
@@ -1640,7 +1640,7 @@ OE J Loss After Heavy & \emph{*lǣdan} \\
 }
 \endgroup
 
-Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014, 249; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960, 194; @BosworthToller1898]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014, 249].
+Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic _\*laidijaną_, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014, 249; @Kroonen2013, 363]. Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960, 194; @BosworthToller1898, 612]. The selected form is the ordinary infinitive citation form. From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage, and later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ [@RingeTaylor2014, 249].
 
 ### learn — OE liornian
 
@@ -2922,7 +2922,7 @@ OE Weak Tail Reduction & \emph{*wadan} \\
 }
 \endgroup
 
-Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes _wadan_ among the standard open-syllable examples [@Campbell1959, §744; @RingeTaylor2014; @Luick1914, 239]. Clark Hall gives _wadan_ as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960, 353; @BrightCassidyRingler1971, 456]. From _\*wádaną_, Anglo-Frisian brightening first gives _\*wædaną_. This infinitive belongs to the A-restoration class. The citation form is therefore _wadan_, not a fronted _wæden_-type output.
+Campbell describes A-restoration before a following back vowel, and Luick explicitly includes _wadan_ among the standard open-syllable examples [@Campbell1959, §744; @Luick1914, 239]. Clark Hall gives _wadan_ as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960, 353; @BrightCassidyRingler1971, 456]. From _\*wádaną_, Anglo-Frisian brightening first gives _\*wædaną_. This infinitive belongs to the A-restoration class. The citation form is therefore _wadan_, not a fronted _wæden_-type output.
 
 ### warp — OE weorpan
 
@@ -3295,7 +3295,7 @@ OE Breaking & \emph{*wealdu} \\
 
 Kroonen reconstructs the noun as _\*walþu-_ and gives OE _weald_ beside other West Germanic _wald_ forms [@Kroonen2013, 611]. The selected input _\*wálθuz_ is the nominative singular used for the derivation. Clark Hall makes _weald_ the main noun headword and cross-refers _wald_ and _wold_ to it [@ClarkHall1960, 343]. _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking before the cluster gives _weald-_; apocope then yields _weald_.
 
-Dialect note. _wald_ survives as an Anglian-type variant in the same family. The selected target is normalized _weald_, not the variant form [@ClarkHall1960, 343; @RingeTaylor2014].
+Dialect note. _wald_ survives as an Anglian-type variant in the same family. The selected target is normalized _weald_, not the variant form [@ClarkHall1960, 343].
 
 ### yarn — OE ġearn
 
@@ -4139,7 +4139,7 @@ the i-stems provides the relevant morphological background for the OE side
 #### Old English evidence
 
 Old English dictionaries record the plant name as _dile_, alongside the variant
-_dili_ [@BosworthToller1898, 164; @ClarkHall1960]. The form discussed here is
+_dili_ [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
 therefore an attested Old English noun with single _l_.
 
 The Old English evidence is the relevant point. Whatever broader comparative
@@ -6621,8 +6621,7 @@ competing comparative identification rather than a hidden cell of _\*wainōjaną
 
 Clark Hall records _hwinan_ with the gloss 'to hiss, whizz, whistle'
 [@ClarkHall1960, 171]. Seebold keeps the verb among the strong verbs and notes that
-only a present-tense attestation is directly preserved, while Sievers-Brunner
-likewise lists _hwinan stv._ [@Seebold1970, 280; @SieversBrunner1965].
+only a present-tense attestation is directly preserved [@Seebold1970, 280].
 
 The Old English form is normalized here as _hwīnan_. That normalization adds the
 usual vowel length marking to the dictionary spelling _hwinan_; it does not turn
@@ -6703,7 +6702,7 @@ Outcome: _wīþiġ_
 #### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-_\*wīþja_/_ō-_ or _\*wiþ-_ type [@KlugeSeebold2011; @Orel2003]. That material is
+_\*wīþja_/_ō-_ or _\*wiþ-_ type [@KlugeSeebold2011; @Orel2003, 503]. That material is
 useful for the cognate set, but it does not by itself explain the Old English
 suffix of _wīþiġ_.
 
@@ -6908,7 +6907,7 @@ Outcome: _ġeoguþ_
 #### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-_\*ju(w)unþi-_ [@Kroonen2013; @Fulk2018]. The selected comparative label
+_\*ju(w)unþi-_ [@Kroonen2013]. The selected comparative label
 _\*júgunθiz_ already stands at a later Germanic stage with _g_, and the chosen
 input _\*júgunθ_ is later again: it represents the form after final _-i_ has been
 lost.
@@ -6936,8 +6935,8 @@ _y_-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
 From the selected input _\*júgunθ_, the later development is regular: palatal
 fronting yields _\*jéugunθ_; nasal-spirant lengthening and loss give
-_\*jéogūθ_; unstressed long-vowel shortening then produces _\*jéoguθ_, which
-surfaces as _ġeoguþ_. Campbell preserves _u_ after accented _u_ in forms such
+_\*jéogūθ_ [@Fulk2018, 109]; unstressed long-vowel shortening then produces
+_\*jéoguθ_, which surfaces as _ġeoguþ_. Campbell preserves _u_ after accented _u_ in forms such
 as _duguþ_ and _munuc_ [@Campbell1959, §374]. Brunner likewise cites _iuzuð_
 _Jugend_ and _munuc_ _Mönch_ in the same environment
 [@SieversBrunner1965, §150.3].
@@ -8062,9 +8061,9 @@ The lexeme-level reconstruction is _\*mizdō_, but the selected input _\*mízdai
 is a dative-singular cell rather than the citation form. That distinction is
 important because the Old English evidence for the _meord_ side is oblique.
 
-The wider history of competing _mēd_ remains disputed. Crist, Kroonen, Ringe and
-Taylor, and Fulk explain it through some form of _z_-loss and compensatory
-lengthening [@Crist2002; @Kroonen2013, 410; @RingeTaylor2014; @Fulk2018], Orel keeps
+The wider history of competing _mēd_ remains disputed. Crist, Kroonen, and Fulk
+explain it through some form of _z_-loss and compensatory lengthening
+[@Crist2002; @Kroonen2013, 410; @Fulk2018, 69], Orel keeps
 a doublet analysis [@Orel2003, 311], and Kilday instead argues that West Saxon _mēd_
 is a Saxono-Frisian loan [@Kilday2024]. The comparison here concerns the
 attested oblique line _meorde_.
@@ -8072,10 +8071,10 @@ attested oblique line _meorde_.
 #### Old English evidence
 
 The directly attested forms are obliques: _meorde_ as a dative singular and
-_meorda_ as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898].
+_meorda_ as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
 Lexicographers reconstruct a bare nominative _meord_ from those obliques, while
 West Saxon prose more commonly shows the competing doublet _mēd_
-[@ClarkHall1960; @BosworthToller1898].
+[@ClarkHall1960; @BosworthToller1898, 647].
 
 The target of this entry is therefore the attested oblique _meorde_, not the
 reconstructed lemma _meord_ and not the better-known West Saxon citation form
@@ -9769,9 +9768,9 @@ morphological remodeling.
 
 #### Development to Old English
 
-From _\*fūri_, i-umlaut changes _ū_ to _ȳ_, and subsequent loss of the final high
-vowel after a heavy syllable yields _fȳr_ [@RingeTaylor2014; @Hogg1992;
-@Campbell1959]. The inherited phonology is complete at that point.
+From _\*fūri_, i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields _fȳr_
+[@Campbell1959, §345]. The inherited phonology is complete at that point.
 
 _fȳre_ is later than that inherited output. Its final _-e_ belongs to
 analogical restoration in the Old English paradigm rather than to the original
@@ -10223,11 +10222,11 @@ Selected target: _wulf_
 
 #### Reconstruction and comparative evidence
 
-The inherited noun is an a-stem: Kroonen gives _\*wulfa-_, and the regular Old
-English development of that citation form is the same one reflected by Old High
-German _wolf_ [@Kroonen2013; @RingeTaylor2014]. Campbell accordingly names Old
-English _wulf_ as an exception to the regular lowering of stressed _u_ before a
-following non-high vowel [@Campbell1959, §115].
+The inherited noun is an a-stem: Kroonen gives _\*wulfa-_, and Ringe and Taylor
+list PGmc _\*wulfaz_ among the inherited words that preserve _u_ in Old English
+beside Old High German _wolf_ [@Kroonen2013; @RingeTaylor2014, 47]. Campbell
+accordingly names Old English _wulf_ as an exception to the regular lowering of
+stressed _u_ before a following non-high vowel [@Campbell1959, §115].
 
 The older literature often notices that the exceptional words cluster near
 labials. Bülbring lists _full_, _wulle_, and _wulf_ together, but he also says
@@ -10248,9 +10247,10 @@ not remove the explanatory problem presented by the citation form.
 
 #### Development to Old English
 
-Under the regular lowering of stressed _u_, the citation-form input gives
-_wolf_, not _wulf_ [@Campbell1959; @RingeTaylor2014]. The compact trace shows
-exactly that path: _\*wúlfaz_ > _\*wólfaz_ > _\*wólfa_ > _wolf_.
+Under the ordinary Northwest Germanic lowering of stressed _u_ before a
+following non-high vowel, the citation-form input would point toward
+_o_-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
+path: _\*wúlfaz_ > _\*wólfaz_ > _\*wólfa_ > _wolf_.
 
 A high-vowel oblique input would behave differently. The following high vowel
 would block the lowering of _u_, but the same environment would trigger

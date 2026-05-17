@@ -41,9 +41,9 @@ morphological remodeling.
 
 ### Development to Old English
 
-From `*fūri`, i-umlaut changes `ū` to `ȳ`, and subsequent loss of the final high
-vowel after a heavy syllable yields **`fȳr`** [@RingeTaylor2014; @Hogg1992;
-@Campbell1959]. The inherited phonology is complete at that point.
+From `*fūri`, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields **`fȳr`**
+[@Campbell1959, §345]. The inherited phonology is complete at that point.
 
 `fȳre` is later than that inherited output. Its final `-e` belongs to
 analogical restoration in the Old English paradigm rather than to the original

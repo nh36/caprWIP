@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-`*ju(w)unþi-` [@Kroonen2013; @Fulk2018]. The selected comparative label
+`*ju(w)unþi-` [@Kroonen2013]. The selected comparative label
 `*júgunθiz` already stands at a later Germanic stage with `g`, and the chosen
 input `*júgunθ` is later again: it represents the form after final `-i` has been
 lost.
@@ -47,8 +47,8 @@ stage. If that high vowel remained, the word would develop an over-umlauted
 
 From the selected input `*júgunθ`, the later development is regular: palatal
 fronting yields `*jéugunθ`; nasal-spirant lengthening and loss give
-`*jéogūθ`; unstressed long-vowel shortening then produces `*jéoguθ`, which
-surfaces as `ġeoguþ`. Campbell preserves `u` after accented `u` in forms such
+`*jéogūθ` [@Fulk2018, 109]; unstressed long-vowel shortening then produces
+`*jéoguθ`, which surfaces as `ġeoguþ`. Campbell preserves `u` after accented `u` in forms such
 as `duguþ` and `munuc` [@Campbell1959, §374]. Brunner likewise cites `iuzuð`
 `Jugend` and `munuc` `Mönch` in the same environment
 [@SieversBrunner1965, §150.3].

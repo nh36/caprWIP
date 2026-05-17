@@ -21,3 +21,7 @@ book-style entry was drafted.
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `Kroonen2013, 410` and `Orel2003, 311`.
+
+## Citation locator full-exhaustion 03
+
+- Citation locator full-exhaustion 03: citation localized / removed / retained broad after primary-source review.
