@@ -76,3 +76,7 @@ Checked against `docs/refs.bib`:
 ## Citation locator full-exhaustion 05
 
 - Citation locator full-exhaustion 05: final five-row citation localization / removal / retained-broad justification.
+
+## Post-exhaustion audit 01
+
+- Post-exhaustion audit 01: corrected false-zero broad citation / restored support / added locator / revised under-cited prose.

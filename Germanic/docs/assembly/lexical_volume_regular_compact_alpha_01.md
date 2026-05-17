@@ -2454,9 +2454,9 @@ OE J Loss After Heavy & \emph{*stillan} \\
 }
 \endgroup
 
-The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960, 292]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
+The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Kluge and Seebold keep the wider West Germanic family of adjective _still_ and verb _stillen_ in view [@KlugeSeebold2011]. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960, 292]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
 
-Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960, 292].
+Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960, 292; @KlugeSeebold2011].
 
 ### summer — OE sumer
 
@@ -7390,8 +7390,8 @@ transparent.
 
 #### Old English evidence
 
-Bosworth-Toller records _fundene_ under _findan_ as an Old English
-participial form [@BosworthToller1898]. Clark Hall likewise preserves the
+Bosworth-Toller records _fundene_ under _findan_, citing the form in
+_Beón_ _þá_ herigeata swa fundene [@BosworthToller1898, 219]. Clark Hall likewise preserves the
 participial stem in forms such as _funden_ and _tō-fundennes_
 [@ClarkHall1960, 124].
 
@@ -7412,7 +7412,9 @@ selected oblique form _fundene_ is the attested comparison cell used here.
 #### Paradigm comparison
 
 The comparison below is manual. It distinguishes the attested oblique
-participle from the more familiar but analogically leveled participial forms.
+participle from the more familiar nominative participial forms. It is the
+project's cell-based comparison based on the cited Old English forms and the
+documented trace output.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
