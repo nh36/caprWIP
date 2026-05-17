@@ -27,3 +27,6 @@ book-style entry was drafted.
 ## Citation-locator page-anchor repair 01
 
 - Citation locator tightened after page-anchor repair pass; verified against `Kroonen2013, 206`.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

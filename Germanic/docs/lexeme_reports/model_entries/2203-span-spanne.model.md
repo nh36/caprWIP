@@ -18,17 +18,17 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the noun as `*spannō`, and Seebold likewise gives Old English
-`spann` under the same noun family [@Orel2003; @Seebold1970, 450]. The selected input
-`*spánnai` is therefore not a rival headword, but a specific dative singular
-cell of the feminine ō-stem paradigm [@SieversBrunner1965].
+Seebold gives Old English `spann` under this noun family [@Seebold1970, 450].
+The selected input `*spánnai` is therefore not a rival headword, but a
+specific dative singular cell of the feminine ō-stem paradigm
+[@SieversBrunner1965].
 
 ### Old English evidence
 
 The reviewed lexicographic evidence more directly supports the citation noun
-`spann` than the exact form `spanne`. Clark Hall gives `spann`, and `spanne` is
-accordingly treated as the selected regular dative singular comparison form
-rather than as a dictionary headword [@ClarkHall1960].
+`spann` than the exact form `spanne`. Clark Hall gives `spann`
+[@ClarkHall1960, 286], and `spanne` is accordingly treated as the selected
+regular dative singular comparison form rather than as a dictionary headword.
 
 ### Development to Old English
 

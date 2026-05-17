@@ -24,11 +24,11 @@ belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form `funden` is not
-the cleanest inherited comparison. The selected input instead models an
-attested participial cell directly, rather than treating the infinitive or the
-ordinary dictionary headword as the privileged target. It therefore targets the
-comparison form `fundene` in the cell where the regular development is most
-transparent.
+the selected comparison form for this entry. The selected input instead models
+an attested participial cell directly, rather than treating the infinitive or
+the ordinary dictionary headword as the privileged target. It therefore targets
+the comparison form `fundene` in the cell where the trace and the attested form
+match directly.
 
 ### Old English evidence
 

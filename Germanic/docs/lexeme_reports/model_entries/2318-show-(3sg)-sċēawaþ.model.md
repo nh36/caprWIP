@@ -25,7 +25,7 @@ Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` 
 
 ### Old English evidence
 
-Bright lists the simplex headword `scēawian` and the imperative `scēawa`, and under `geond-scēawian` also records a third singular `-sceawað` [@BrightCassidyRingler1971]. The evidence thus establishes the `scēaw- / -awað` finite-cell pattern directly.
+Bright lists the simplex headword `scēawian` and the imperative `scēawa`, and under `geond-scēawian` also records a third singular `-sceawað` [@BrightCassidyRingler1971, 383]. The evidence thus establishes the `scēaw- / -awað` finite-cell pattern directly.
 
 The form written here as `sċēawaþ` is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a selected finite form aligned with the attested `scēaw-` evidence and the directly cited `-sceawað` ending pattern.
 

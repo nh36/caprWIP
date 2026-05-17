@@ -34,7 +34,7 @@ The directly attested forms are obliques: `meorde` as a dative singular and
 `meorda` as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
 Lexicographers reconstruct a bare nominative `meord` from those obliques, while
 West Saxon prose more commonly shows the competing doublet `mēd`
-[@ClarkHall1960; @BosworthToller1898, 647].
+[@ClarkHall1960, 214; @BosworthToller1898, 647].
 
 The target of this entry is therefore the attested oblique **`meorde`**, not the
 reconstructed lemma `meord` and not the better-known West Saxon citation form

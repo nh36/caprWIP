@@ -68,3 +68,6 @@
 ## Citation locator full-exhaustion 04
 
 - Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

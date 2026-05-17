@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-`*wīþja/ō-` or `*wiþ-` type [@KlugeSeebold2011; @Orel2003, 503]. That material is
+`*wīþja/ō-` or `*wiþ-` type [@Orel2003, 503]. That material is
 useful for the cognate set, but it does not by itself explain the Old English
 suffix of `wīþiġ`.
 

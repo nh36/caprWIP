@@ -20,7 +20,7 @@ DERIVATION_CLASS: reconstructed_oe
 
 The wider knob-family is not uniform. Kroonen's discussion of the Germanic
 n-stems points to related voiced and voiceless branches within this group
-[@Kroonen2011]. The citation reconstruction `*knúppaz` represents the broader
+[@Kroonen2011, 297]. The citation reconstruction `*knúppaz` represents the broader
 cognate-set headword, while the selected input `*knúbbô` represents the voiced
 weak-noun branch treated here.
 

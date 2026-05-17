@@ -78,3 +78,7 @@
 ## Post-exhaustion audit 01
 
 - Post-exhaustion audit 01: corrected false-zero broad citation / restored support / added locator / revised under-cited prose.
+
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

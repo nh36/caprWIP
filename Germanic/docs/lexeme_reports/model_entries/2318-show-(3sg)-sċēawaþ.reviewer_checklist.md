@@ -59,3 +59,6 @@
 Citation locator claim-isolation 01 split the class-II ending sentence and added verified locators for `Campbell1959, §356.4` and `RingeTaylor2014, 80`.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 80` and `Campbell1959, §120`.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

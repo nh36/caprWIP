@@ -912,7 +912,7 @@ OE Weak Tail Reduction & \emph{*flēogan} \\
 }
 \endgroup
 
-Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014, 189, 324]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Bosworth-Toller records _flēogan_ as the ordinary Old English strong verb [@BosworthToller1898]. Clark Hall likewise records _flēogan_ [@ClarkHall1960, 106]. Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014, 189].
+Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014, 189, 324]. The selected input _\*fléuganą_ represents that inherited strong verb in the notation used here. Clark Hall likewise records _flēogan_ [@ClarkHall1960, 106]. Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@BrightCassidyRingler1971, 363]. From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014, 189].
 
 Form note. Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014, 324].
 
@@ -1005,7 +1005,7 @@ PWGmc Final Bare A Loss & \emph{*gáng} \\
 }
 \endgroup
 
-Orel reconstructs the noun as _\*gangaz_ and cites Old English _gang_ beside Old Norse _gangr_, Old Frisian _gang / gong_, Old Saxon _gang_, and Old High German _gang_ [@Orel2003]. The selected input _\*gángaz_ is the same lexeme in the accent notation used here. Bosworth-Toller records _gang_ as the noun 'going, journey, way' [@BosworthToller1898, 159], and Bright's glossary gives _gong (gang), m., path, course_ [@BrightCassidyRingler1971, 392]. From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_.
+Orel reconstructs the noun as _\*gangaz_ and cites Old English _gang_ beside Old Norse _gangr_, Old Frisian _gang / gong_, Old Saxon _gang_, and Old High German _gang_ [@Orel2003, 164]. The selected input _\*gángaz_ is the same lexeme in the accent notation used here. Bosworth-Toller records _gang_ as the noun 'going, journey, way' [@BosworthToller1898, 159], and Bright's glossary gives _gong (gang), m., path, course_ [@BrightCassidyRingler1971, 392]. From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final bare _-a_ yields _gang_.
 
 Form note. This entry concerns the noun _gang_, not the separate verb _gangan_.
 
@@ -2163,9 +2163,9 @@ OE Med Unstressed I Lowering & \emph{*ʃílling} \\
 }
 \endgroup
 
-Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connects it with _\*skeld-linga-_, while Orel likewise gives the coin word with OE _scilling_ among the reflexes [@Kroonen2013; @Orel2003, 377]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960, 269; @Campbell1959, §574.6]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
+Kroonen explains the coin word as continuing _\*skeld-linga-_ [@Kroonen2013, 482], while Orel likewise gives OE _scilling_ among the reflexes [@Orel2003, 377]. The selected input _\*skíllingaz_ is the nominative-style form used here to represent that inherited _\*-ing-_ derivative. Clark Hall records _scilling_, and Campbell cites _scilling_ among nouns whose derivational _-ing_ keeps _i_ in unstressed syllables [@ClarkHall1960, 269; @Campbell1959, §574.6]. From _\*skíllingaz_, loss of final _-az_ yields _\*skílling_.
 
-Form note. Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here [@Kroonen2013].
+Form note. Kroonen's _\*skeld-linga-_ analysis belongs to the etymological background of the cognate set [@Kroonen2013, 482]. The selected input _\*skíllingaz_ is the specific form used for the derivation represented here.
 
 ### show — OE sċēawian
 
@@ -6076,10 +6076,9 @@ genitive singular _\*swánas_ > _swanes_.
 
 #### Old English evidence
 
-Old English dictionaries give the ordinary headword as _swan_
-[@ClarkHall1960]. Bright's glossary, however, also records the exact inflected
-form _swanes_; it glosses the noun as _swan, m._ with genitive singular _swanes_
-and cites the phrase _swanes feðre_ [@BrightCassidyRingler1971, 441].
+Bright's glossary records the ordinary noun as _swan, m._ and also gives the
+exact inflected form _swanes_, citing the phrase _swanes feðre_
+[@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
 reconstruction. It is also not the ordinary citation lemma. The entry must keep
@@ -6696,7 +6695,7 @@ Outcome: _wīþiġ_
 #### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-_\*wīþja_/_ō-_ or _\*wiþ-_ type [@KlugeSeebold2011; @Orel2003, 503]. That material is
+_\*wīþja_/_ō-_ or _\*wiþ-_ type [@Orel2003, 503]. That material is
 useful for the cognate set, but it does not by itself explain the Old English
 suffix of _wīþiġ_.
 
@@ -6901,7 +6900,7 @@ Outcome: _ġeoguþ_
 #### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-_\*ju(w)unþi-_ [@Kroonen2013]. The selected comparative label
+_\*ju(w)unþi-_ [@Kroonen2013, 316]. The selected comparative label
 _\*júgunθiz_ already stands at a later Germanic stage with _g_, and the chosen
 input _\*júgunθ_ is later again: it represents the form after final _-i_ has been
 lost.
@@ -7016,12 +7015,12 @@ gemination.
 
 #### Old English evidence
 
-Old English lexicographic evidence securely supports the noun itself. Clark Hall
-gives _+bann_, and Bosworth-Toller records _ge-bann_ with oblique usage such as
-_gebanne_ [@ClarkHall1960; @BosworthToller1898, 303]. The exact unprefixed genitive
-_bannes_ is less directly cited in the reviewed material, so it is best treated
-here as the selected regular genitive comparison form rather than as a
-dictionary headword.
+Old English lexicographic evidence securely supports the noun itself.
+Bosworth-Toller records _ge-bann_ with oblique usage such as _gebanne_
+[@BosworthToller1898, 303]. The exact unprefixed genitive _bannes_ is less
+directly cited in the reviewed material, so it is best treated here as the
+selected regular genitive comparison form rather than as a dictionary
+headword.
 
 #### Development to Old English
 
@@ -7382,11 +7381,11 @@ belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form _funden_ is not
-the cleanest inherited comparison. The selected input instead models an
-attested participial cell directly, rather than treating the infinitive or the
-ordinary dictionary headword as the privileged target. It therefore targets the
-comparison form _fundene_ in the cell where the regular development is most
-transparent.
+the selected comparison form for this entry. The selected input instead models
+an attested participial cell directly, rather than treating the infinitive or
+the ordinary dictionary headword as the privileged target. It therefore targets
+the comparison form _fundene_ in the cell where the trace and the attested form
+match directly.
 
 #### Old English evidence
 
@@ -7492,14 +7491,15 @@ more clearly than the better-known lemma forms do.
 
 #### Old English evidence
 
-Bosworth-Toller records _fyrhte_ with multiple textual attestations, and it
-also records nominative forms such as _fyrhtu_ and _fyrhto_
-[@BosworthToller1898]. The noun must be kept distinct from the adjective
-_forht_, a distinction also reflected in Clark Hall [@ClarkHall1960].
+Bosworth-Toller records _fyrhte_ with textual attestation, and it also
+records nominative forms such as _fyrhtu_ and _fyrhto_
+[@BosworthToller1898, 160]. Clark Hall separately preserves adjective and verb
+material under _fyrht_ / _fyrhtan_, which helps keep the noun distinct from the
+adjectival family [@ClarkHall1960, 141].
 
 The relevant comparison form is therefore the attested oblique _fyrhte_.
-The nominative lemma forms remain part of the Old English evidence, but they are
-not the cleanest inherited comparison for this entry.
+The nominative lemma forms remain part of the Old English evidence, but the
+selected target of this entry is the oblique cell.
 
 #### Development to Old English
 
@@ -7589,9 +7589,8 @@ This is a cell choice within one paradigm, not a change of stem class.
 #### Old English evidence
 
 Bosworth-Toller directly records _hameres_ in an Old English genitival
-phrase [@BosworthToller1898]. The same dictionary tradition and Clark Hall also
-preserve the simplex headword as _hamor_ or _hamer_
-[@BosworthToller1898; @ClarkHall1960, 160].
+phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
+_hamer_ / _hamor_ [@ClarkHall1960, 160].
 
 Sievers-Brunner gives a paradigm line _hamor — hamores_, which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
@@ -8069,7 +8068,7 @@ The directly attested forms are obliques: _meorde_ as a dative singular and
 _meorda_ as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
 Lexicographers reconstruct a bare nominative _meord_ from those obliques, while
 West Saxon prose more commonly shows the competing doublet _mēd_
-[@ClarkHall1960; @BosworthToller1898, 647].
+[@ClarkHall1960, 214; @BosworthToller1898, 647].
 
 The target of this entry is therefore the attested oblique _meorde_, not the
 reconstructed lemma _meord_ and not the better-known West Saxon citation form
@@ -8506,17 +8505,17 @@ Outcome: _spanne_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the noun as _\*spannō_, and Seebold likewise gives Old English
-_spann_ under the same noun family [@Orel2003; @Seebold1970, 450]. The selected input
-_\*spánnai_ is therefore not a rival headword, but a specific dative singular
-cell of the feminine ō-stem paradigm [@SieversBrunner1965].
+Seebold gives Old English _spann_ under this noun family [@Seebold1970, 450].
+The selected input _\*spánnai_ is therefore not a rival headword, but a
+specific dative singular cell of the feminine ō-stem paradigm
+[@SieversBrunner1965].
 
 #### Old English evidence
 
 The reviewed lexicographic evidence more directly supports the citation noun
-_spann_ than the exact form _spanne_. Clark Hall gives _spann_, and _spanne_ is
-accordingly treated as the selected regular dative singular comparison form
-rather than as a dictionary headword [@ClarkHall1960].
+_spann_ than the exact form _spanne_. Clark Hall gives _spann_
+[@ClarkHall1960, 286], and _spanne_ is accordingly treated as the selected
+regular dative singular comparison form rather than as a dictionary headword.
 
 #### Development to Old English
 
@@ -9372,7 +9371,7 @@ Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþ
 
 #### Old English evidence
 
-Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971]. The evidence thus establishes the _scēaw-_ / _-awað_ finite-cell pattern directly.
+Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _-awað_ finite-cell pattern directly.
 
 The form written here as _sċēawaþ_ is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a selected finite form aligned with the attested _scēaw-_ evidence and the directly cited _-sceawað_ ending pattern.
 
@@ -9450,7 +9449,7 @@ Outcome: _cnobba_
 
 The wider knob-family is not uniform. Kroonen's discussion of the Germanic
 n-stems points to related voiced and voiceless branches within this group
-[@Kroonen2011]. The citation reconstruction _\*knúppaz_ represents the broader
+[@Kroonen2011, 297]. The citation reconstruction _\*knúppaz_ represents the broader
 cognate-set headword, while the selected input _\*knúbbô_ represents the voiced
 weak-noun branch treated here.
 

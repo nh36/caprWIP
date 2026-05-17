@@ -28,10 +28,9 @@ genitive singular `*swánas > swanes`.
 
 ### Old English evidence
 
-Old English dictionaries give the ordinary headword as `swan`
-[@ClarkHall1960]. Bright's glossary, however, also records the exact inflected
-form `swanes`; it glosses the noun as `swan, m.` with genitive singular `swanes`
-and cites the phrase _swanes feðre_ [@BrightCassidyRingler1971, 441].
+Bright's glossary records the ordinary noun as `swan, m.` and also gives the
+exact inflected form `swanes`, citing the phrase _swanes feðre_
+[@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
 reconstruction. It is also not the ordinary citation lemma. The entry must keep

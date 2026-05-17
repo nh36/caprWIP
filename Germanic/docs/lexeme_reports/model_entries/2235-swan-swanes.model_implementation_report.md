@@ -67,3 +67,6 @@ Citation locator tightened for BrightCassidyRingler1971 from broad citation to v
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, existing model entry, writing-skill file, or existing
   batch report was changed.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

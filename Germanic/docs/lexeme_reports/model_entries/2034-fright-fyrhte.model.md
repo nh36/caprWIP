@@ -30,14 +30,15 @@ more clearly than the better-known lemma forms do.
 
 ### Old English evidence
 
-Bosworth-Toller records **`fyrhte`** with multiple textual attestations, and it
-also records nominative forms such as `fyrhtu` and `fyrhto`
-[@BosworthToller1898]. The noun must be kept distinct from the adjective
-`forht`, a distinction also reflected in Clark Hall [@ClarkHall1960].
+Bosworth-Toller records **`fyrhte`** with textual attestation, and it also
+records nominative forms such as `fyrhtu` and `fyrhto`
+[@BosworthToller1898, 160]. Clark Hall separately preserves adjective and verb
+material under `fyrht` / `fyrhtan`, which helps keep the noun distinct from the
+adjectival family [@ClarkHall1960, 141].
 
 The relevant comparison form is therefore the attested oblique **`fyrhte`**.
-The nominative lemma forms remain part of the Old English evidence, but they are
-not the cleanest inherited comparison for this entry.
+The nominative lemma forms remain part of the Old English evidence, but the
+selected target of this entry is the oblique cell.
 
 ### Development to Old English
 

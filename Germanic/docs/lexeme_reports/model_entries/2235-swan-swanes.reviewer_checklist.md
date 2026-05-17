@@ -55,3 +55,6 @@
    supported.
 
 Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

@@ -13,3 +13,6 @@ book-style entry was drafted.
 | Local memo / slice synthesis | current project analysis | `*swánaz -> swan`; `*swánas -> swanes` | citation form vs selected gen.sg. comparator | `swan`; `swanes` | The source stack treats `swanes` as a real OE gen.sg. while noting that `swan` remains the ordinary headword. | no | `Germanic/docs/lexeme_reports/research_memos/2235-swan-swanes.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2235-swan-swanes.md`; `Germanic/docs/lexeme_reports/research_memos/batch_30_summary.md`; `Germanic/docs/lexeme_reports/packets/2235-swan-swanes.md` | high; citation-form normalization remains a human-review issue |
 
 Citation locator tightened for BrightCassidyRingler1971 from broad citation to verified page locator.
+## Post-exhaustion audit 02
+
+- Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.

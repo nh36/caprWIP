@@ -30,9 +30,8 @@ This is a cell choice within one paradigm, not a change of stem class.
 ### Old English evidence
 
 Bosworth-Toller directly records **`hameres`** in an Old English genitival
-phrase [@BosworthToller1898]. The same dictionary tradition and Clark Hall also
-preserve the simplex headword as `hamor` or `hamer`
-[@BosworthToller1898; @ClarkHall1960, 160].
+phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
+`hamer` / `hamor` [@ClarkHall1960, 160].
 
 Sievers-Brunner gives a paradigm line `hamor — hamores`, which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
