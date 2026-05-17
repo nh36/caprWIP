@@ -3584,7 +3584,7 @@ Outcome: _þrīe_
 #### Reconstruction and comparative evidence
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
-under one Old English-ready paradigm cell [@Kroonen2013]. The input
+under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
 _\*θréjez_ is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
@@ -7672,7 +7672,7 @@ Outcome: _hæfeþ_
 #### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-_\*xabēną_ and Old English _habban_ [@Kroonen2013; @RingeTaylor2014, 93]. Within
+_\*xabēną_ and Old English _habban_ [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
 that paradigm, however, the infinitive and the singular present indicative do
 not continue the same stem. Ringe and Taylor distinguish a _-ja-_ stem in the
 infinitive from a non-geminating -ai- / _-ē-_ stem in the 2sg and 3sg present
@@ -8073,13 +8073,13 @@ _mēd_.
 
 #### Development to Old English
 
-From _\*mízdai_, rhotacism gives _\*mírdai_. Proto-West-Germanic monophthongization
-then yields _\*mírdē_, Northwest-Germanic lowering gives _\*mérdē_, Old English
-breaking yields _\*méordē_, and unstressed shortening gives _\*méorde_, hence
-_meorde_ [@RingeTaylor2014, 285].
+Ringe and Taylor give the broader noun history as PGmc _\*mizdo_ > PWGmce _\*mizdu_ > OE _meord_ ~ _méd_ [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
+here spells out the intermediate rhotacism, monophthongization, lowering,
+breaking, and unstressed-shortening steps needed for the selected dative-singular
+comparison.
 
-This is the regular oblique-cell path modeled by the current trace. The entry
-therefore depends on the attested oblique line rather than on a full decision
+This is therefore project framing built on a source-backed broader development.
+The entry depends on the attested oblique line rather than on a full decision
 about the history of the competing _mēd_ tradition.
 
 #### Paradigm comparison

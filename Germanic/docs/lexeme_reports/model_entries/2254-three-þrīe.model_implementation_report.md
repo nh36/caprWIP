@@ -73,3 +73,7 @@ Checked against `docs/refs.bib`:
 - No TSV, FST, manifest, packet, dev-note slice, research memo, bibliography
   file, derivation trace, existing model entry, writing-skill file, or existing
   batch report was changed.
+
+## Post-exhaustion audit 04
+
+- Post-exhaustion audit 04: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

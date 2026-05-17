@@ -42,13 +42,14 @@ reconstructed lemma `meord` and not the better-known West Saxon citation form
 
 ### Development to Old English
 
-From `*mízdai`, rhotacism gives `*mírdai`. Proto-West-Germanic monophthongization
-then yields `*mírdē`, Northwest-Germanic lowering gives `*mérdē`, Old English
-breaking yields `*méordē`, and unstressed shortening gives `*méorde`, hence
-`meorde` [@RingeTaylor2014, 285].
+Ringe and Taylor give the broader noun history as `PGmc *mizdo > PWGmce *mizdu
+> OE meord ~ méd` [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
+here spells out the intermediate rhotacism, monophthongization, lowering,
+breaking, and unstressed-shortening steps needed for the selected dative-singular
+comparison.
 
-This is the regular oblique-cell path modeled by the current trace. The entry
-therefore depends on the attested oblique line rather than on a full decision
+This is therefore project framing built on a source-backed broader development.
+The entry depends on the attested oblique line rather than on a full decision
 about the history of the competing `mēd` tradition.
 
 ### Paradigm comparison

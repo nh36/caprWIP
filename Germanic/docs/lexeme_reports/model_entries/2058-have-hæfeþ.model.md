@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-`*xabēną` and Old English `habban` [@Kroonen2013; @RingeTaylor2014, 93]. Within
+`*xabēną` and Old English `habban` [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
 that paradigm, however, the infinitive and the singular present indicative do
 not continue the same stem. Ringe and Taylor distinguish a `-ja-` stem in the
 infinitive from a non-geminating `-ai- / -ē-` stem in the 2sg and 3sg present

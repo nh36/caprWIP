@@ -53,3 +53,7 @@
    **`þrīe`**.
 2. The entry depends on Campbell's paradigm distinction remaining the preferred
    control for this numeral.
+
+## Post-exhaustion audit 04
+
+- Post-exhaustion audit 04: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

@@ -89,3 +89,7 @@ Checked against `docs/refs.bib`:
 ## Post-exhaustion audit 03
 
 - Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.
+
+## Post-exhaustion audit 04
+
+- Post-exhaustion audit 04: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.

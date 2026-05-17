@@ -19,7 +19,7 @@ DERIVATION_CLASS: attested_variant
 ### Reconstruction and comparative evidence
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
-under one Old English-ready paradigm cell [@Kroonen2013]. The input
+under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
 **`*θréjez`** is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
