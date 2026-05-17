@@ -41,11 +41,12 @@ The relevant comparison form is therefore the attested genitive singular
 
 ### Development to Old English
 
-From `*mánnas`, Anglo-Frisian brightening yields `*mánnæs`, and the later
-unstressed merger gives `*mánnes`, hence `mannes` [@Campbell1959]. In this
-cell the geminate remains medial before `-es`. The citation form behaves
-differently because word-final gemination was simplified in Old English
-[@SieversBrunner1965, §231].
+Campbell's paradigm `mann, man / mannes / menn` confirms the selected genitive
+singular `mannes` [@Campbell1959, §621]. In the present analysis, `*mánnas`
+develops through Anglo-Frisian brightening and later unstressed merger to
+`mannes`. In this cell the geminate remains medial before `-es`. The citation
+form behaves differently because word-final gemination was simplified in Old
+English [@SieversBrunner1965, §231].
 
 ### Paradigm comparison
 

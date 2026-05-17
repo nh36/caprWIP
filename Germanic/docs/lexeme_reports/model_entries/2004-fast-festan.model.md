@@ -35,10 +35,10 @@ Old English dictionaries record forms such as `festan`, alongside related
 `fæstan` / `fǣstan` spellings and meanings [@BosworthToller1898, 213]. The form selected here is **`festan`**, which fits the regular
 class-I phonological development.
 
-The `æ`-forms remain relevant, but they do not control the entry. As Ringe and
-Taylor argue, their vowel belongs to later analogical leveling under the
-adjective `fæst`, whereas `festan` reflects the regular inherited class-I verb
-[@RingeTaylor2014].
+The `æ`-forms remain relevant, but they do not control the entry. In the
+present analysis they belong to a later analogical reshaping under the
+adjective `fæst`, whereas `festan` is the regular inherited class-I comparison
+form.
 
 ### Development to Old English
 

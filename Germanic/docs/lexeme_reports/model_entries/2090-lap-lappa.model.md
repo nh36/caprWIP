@@ -42,8 +42,10 @@ help frame the noun's vowel history.
 ### Development to Old English
 
 Campbell explicitly lists `lappa` among the forms with restored `a`
-[@Campbell1959, §158]. With the weak masculine input chosen, the selected
-`lappa` outcome is regular [@SieversBrunner1965].
+[@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa`
+at the same Old English stage [@SieversBrunner1965, §10]. With the weak
+masculine input chosen, the selected `lappa` outcome is therefore the regular
+project comparison.
 
 ### Stem comparison
 

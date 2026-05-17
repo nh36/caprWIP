@@ -48,11 +48,11 @@ following non-high vowel, the citation-form input would point toward
 `o`-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
 path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
 
-A high-vowel oblique input would behave differently. The following high vowel
-would block the lowering of `u`, but the same environment would trigger
-i-umlaut, so the regular result would be `wylf` or `wylfe`, not bare `wulf`
-[@SieversBrunner1965]. The attested noun therefore remains unexplained at the
-citation-form level.
+A high-vowel oblique input would behave differently. In project terms, the
+following high vowel would block the lowering of `u`, but the same environment
+would also trigger i-umlaut, so the regular control result would be `wylf` or
+`wylfe`, not bare `wulf`. The attested noun therefore remains unexplained at
+the citation-form level.
 
 ### Expected and attested forms
 

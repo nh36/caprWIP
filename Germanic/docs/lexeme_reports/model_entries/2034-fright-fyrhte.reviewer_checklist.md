@@ -64,3 +64,7 @@
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Citation locator full-exhaustion 05
+
+- Post-exhaustion audit 05: localized reopened broad citation / retained broad with source-specific reason / source witness needed / revised under-cited prose.

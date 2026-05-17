@@ -4239,10 +4239,10 @@ Old English dictionaries record forms such as _festan_, alongside related
 _fæstan_ / _fǣstan_ spellings and meanings [@BosworthToller1898, 213]. The form selected here is _festan_, which fits the regular
 class-I phonological development.
 
-The _æ_-forms remain relevant, but they do not control the entry. As Ringe and
-Taylor argue, their vowel belongs to later analogical leveling under the
-adjective _fæst_, whereas _festan_ reflects the regular inherited class-I verb
-[@RingeTaylor2014].
+The _æ_-forms remain relevant, but they do not control the entry. In the
+present analysis they belong to a later analogical reshaping under the
+adjective _fæst_, whereas _festan_ is the regular inherited class-I comparison
+form.
 
 #### Development to Old English
 
@@ -4828,8 +4828,10 @@ help frame the noun's vowel history.
 #### Development to Old English
 
 Campbell explicitly lists _lappa_ among the forms with restored _a_
-[@Campbell1959, §158]. With the weak masculine input chosen, the selected
-_lappa_ outcome is regular [@SieversBrunner1965].
+[@Campbell1959, §158]. Sievers-Brunner records _lappa_ beside variant _læppa_
+at the same Old English stage [@SieversBrunner1965, §10]. With the weak
+masculine input chosen, the selected _lappa_ outcome is therefore the regular
+project comparison.
 
 #### Stem comparison
 
@@ -7502,9 +7504,9 @@ selected target of this entry is the oblique cell.
 #### Development to Old English
 
 From _\*fúrxtīnaz_, the oblique in-stem develops through the loss and weakening
-of the final ending and the regular OE history summarized by Campbell as
-_-e < -i < -in_ in this class of abstracts [@Campbell1959]. That yields
-_fyrhte_.
+of the final ending, yielding _fyrhte_. In project terms, the selected form
+follows the ordinary Old English reduction of the abstract ending in this
+paradigm.
 
 The later nominative forms with _-u_ or _-o_ belong to a subsequent analogical
 reshaping of the paradigm. The selected target is earlier in that sense: it is
@@ -7978,11 +7980,12 @@ _mannes_, not the citation lemma _mann_.
 
 #### Development to Old English
 
-From _\*mánnas_, Anglo-Frisian brightening yields _\*mánnæs_, and the later
-unstressed merger gives _\*mánnes_, hence _mannes_ [@Campbell1959]. In this
-cell the geminate remains medial before _-es_. The citation form behaves
-differently because word-final gemination was simplified in Old English
-[@SieversBrunner1965, §231].
+Campbell's paradigm mann, _man_ / _mannes_ / _menn_ confirms the selected genitive
+singular _mannes_ [@Campbell1959, §621]. In the present analysis, _\*mánnas_
+develops through Anglo-Frisian brightening and later unstressed merger to
+_mannes_. In this cell the geminate remains medial before _-es_. The citation
+form behaves differently because word-final gemination was simplified in Old
+English [@SieversBrunner1965, §231].
 
 #### Paradigm comparison
 
@@ -10242,11 +10245,11 @@ following non-high vowel, the citation-form input would point toward
 _o_-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
 path: _\*wúlfaz_ > _\*wólfaz_ > _\*wólfa_ > _wolf_.
 
-A high-vowel oblique input would behave differently. The following high vowel
-would block the lowering of _u_, but the same environment would trigger
-i-umlaut, so the regular result would be _wylf_ or _wylfe_, not bare _wulf_
-[@SieversBrunner1965]. The attested noun therefore remains unexplained at the
-citation-form level.
+A high-vowel oblique input would behave differently. In project terms, the
+following high vowel would block the lowering of _u_, but the same environment
+would also trigger i-umlaut, so the regular control result would be _wylf_ or
+_wylfe_, not bare _wulf_. The attested noun therefore remains unexplained at
+the citation-form level.
 
 #### Expected and attested forms
 

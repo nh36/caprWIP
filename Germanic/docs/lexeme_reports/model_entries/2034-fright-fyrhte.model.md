@@ -43,9 +43,9 @@ selected target of this entry is the oblique cell.
 ### Development to Old English
 
 From `*fúrxtīnaz`, the oblique in-stem develops through the loss and weakening
-of the final ending and the regular OE history summarized by Campbell as
-`-e < -i < -in` in this class of abstracts [@Campbell1959]. That yields
-`fyrhte`.
+of the final ending, yielding `fyrhte`. In project terms, the selected form
+follows the ordinary Old English reduction of the abstract ending in this
+paradigm.
 
 The later nominative forms with `-u` or `-o` belong to a subsequent analogical
 reshaping of the paradigm. The selected target is earlier in that sense: it is
