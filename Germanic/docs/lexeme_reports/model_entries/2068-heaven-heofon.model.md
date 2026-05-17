@@ -43,7 +43,7 @@ line.
 
 From `*xémonų`, the relevant pathway includes early `o`-raising before `u`,
 dissimilation in the m/n cluster, and later lowering of unstressed `u`
-[@Fulk2018; @Campbell1959]. Back mutation then yields `heo-` before the labial
+[@Campbell1959]. Back mutation then yields `heo-` before the labial
 plus back-vowel sequence, and loss of the final high vowel gives `heofon`.
 
 The front-vocalic nominative line remains important as background because it

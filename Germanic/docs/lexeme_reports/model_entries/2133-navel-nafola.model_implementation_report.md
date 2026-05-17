@@ -69,3 +69,7 @@ Checked against `docs/refs.bib`:
   pilot report was changed.
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 270, 336` and `Campbell1959, §159`.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

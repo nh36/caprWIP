@@ -24,9 +24,7 @@ selected input `*nḗðlō` is the voiced Verner-grade form used for the Old
 English comparison, while the citation form `*nḗθlō` remains the broader
 lexeme label.
 
-Kroonen and Orel preserve different comparative headwords for the family
-[@Kroonen2013; @Orel2003]. The development discussed here follows the
-Ringe-Taylor alternant framework.
+The development discussed here follows the Ringe-Taylor alternant framework.
 
 ### Old English evidence
 

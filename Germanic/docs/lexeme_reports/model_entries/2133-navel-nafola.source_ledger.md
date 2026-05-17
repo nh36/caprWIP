@@ -14,3 +14,7 @@ book-style entry was drafted.
 | Local memo / slice synthesis | current project analysis | `nafola`; `nafela`; `nabula`; rejected oblique alternatives | stage choice rather than paradigm-cell switch | `nafola`; `nafela`; `nabula` | The main issue is stage selection and explanatory wording, not a missing derivation. | no | `Germanic/docs/lexeme_reports/research_memos/2133-navel-nafola.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2133-navel-nafola.md` | high; classification remains review-sensitive |
 
 Citation locator claim-isolation 02 tightened the remaining broad claims and added verified locators for `RingeTaylor2014, 270, 336` and `Campbell1959, §159`.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

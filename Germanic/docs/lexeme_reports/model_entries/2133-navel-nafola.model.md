@@ -24,10 +24,8 @@ nafola` [@Kroonen2013; @RingeTaylor2014, 270]. The difference is one of stage
 and notation rather than of lexeme identity: the selected input `*nábulô` is
 the pre-syncope form needed for the Old English development.
 
-The literature also differs on the older history of the medial `u`, whether it
-is inherited or secondary [@Streitberg1896; @Ringe2006; @Mayrhofer1992;
-@SieversBrunner1965]. For the Old English comparison, however, both lines place
-a medial vowel in the pre-OE form.
+For the Old English comparison, the crucial point is simply that the pre-OE form
+still contains a medial vowel.
 
 ### Old English evidence
 

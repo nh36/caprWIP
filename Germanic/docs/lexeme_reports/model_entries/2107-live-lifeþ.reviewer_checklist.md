@@ -62,3 +62,7 @@ Citation locator claim-isolation 01 split the archaism and finite-form sentences
 
 - Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §762`.
 - Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 364`.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

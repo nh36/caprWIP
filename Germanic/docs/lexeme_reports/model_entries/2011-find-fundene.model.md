@@ -24,9 +24,9 @@ belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form `funden` is not
-the cleanest inherited comparison. Campbell, Luick, and Brunner treat the
-better-known nominative participial forms as analogically leveled from inflected
-cases of the paradigm [@Campbell1959; @Luick1914; @SieversBrunner1965]. The
+the cleanest inherited comparison. Luick and Brunner treat the better-known
+nominative participial forms as analogically leveled from inflected cases of
+the paradigm [@Luick1914; @SieversBrunner1965]. The
 selected input therefore targets the cell in which the regular development is
 most transparent.
 

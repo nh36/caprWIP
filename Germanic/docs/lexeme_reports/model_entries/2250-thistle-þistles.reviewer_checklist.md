@@ -56,3 +56,7 @@
 1. Keep simplex `þistel` distinct from the selected genitive singular `þistles`.
 2. Keep the comparative `*e/*i` disagreement distinct from the selected oblique-cell input.
 3. Do not generalize the thistle solution mechanically across other cluster nouns without separate review.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

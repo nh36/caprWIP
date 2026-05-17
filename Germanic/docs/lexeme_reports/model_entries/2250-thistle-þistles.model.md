@@ -18,8 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The comparative tradition is divided. Orel prints `*þe(x)stilaz`, while
-Kluge-Seebold gives `*þistila-` [@Orel2003, 458; @KlugeSeebold2011]. The comparative
+Orel prints `*þe(x)stilaz` for the lexeme [@Orel2003, 458]. The comparative
 label `*θéstilaz` therefore remains in view as the lexeme-level headword, while
 the selected input `*θístilas` is a specific genitive singular cell.
 

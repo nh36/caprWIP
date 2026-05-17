@@ -19,9 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The wider Germanic family includes a non-j branch represented here by the
-citation label `*lákaną`, but Kroonen and Ringe-Taylor both distinguish a
-j-present formation behind Old English `hliehhan` [@Kroonen2013;
-@RingeTaylor2014]. The selected input `*xláxjaną` reflects that j-present line.
+citation label `*lákaną`, while the selected input `*xláxjaną` reflects the
+j-present line behind Old English `hliehhan`.
 
 This branch choice matters because it brings with it the geminate fricative and
 the vowel development characteristic of the Old English verb. The comparative
@@ -43,7 +42,7 @@ the attested lemma `hliehhan` itself.
 
 From `*xláxjaną`, West Germanic j-gemination yields the doubled consonant
 [@Campbell1959, §407]. The subsequent Old English vowel developments lead to
-`hliehhan` [@Fulk2018]. Ringe and Taylor discuss the broken vowel of the Old
+`hliehhan`. Ringe and Taylor discuss the broken vowel of the Old
 English form as part of this same history, with possible support from the
 related noun `hleahtor` [@RingeTaylor2014].
 

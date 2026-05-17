@@ -35,3 +35,7 @@ Citation locator tightened after claim-isolation pass; verified against Campbell
 ## Citation locator full-exhaustion 02
 
 - Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

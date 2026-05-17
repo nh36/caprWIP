@@ -30,9 +30,9 @@ later lemma tradition also includes remodeled forms such as `lifian`.
 
 ### Old English evidence
 
-The ordinary dictionary headwords are `libban` and, in later remodeling,
-`lifian` [@BosworthToller1898; @ClarkHall1960]. For this entry, however, the
-relevant comparison form is the archaic 3sg present attested as `lifed`, here
+The ordinary lemma tradition centers on `libban` and, in later remodeling,
+`lifian`. For this entry, however, the relevant comparison form is the archaic
+3sg present attested as `lifed`, here
 normalized as **`lifeþ`** [@RingeTaylor2014, 364; @Campbell1959, §762].
 
 The target is thus a normalized finite form, not the ordinary dictionary lemma.

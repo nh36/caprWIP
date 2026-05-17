@@ -34,3 +34,7 @@ This ledger records the evidence used for the P3 rewrite from pilot material.
 - The local reference files checked here support simplex `þistel/ðistel` more directly than the exact gen.sg. `þistles`; the exact inflected target is better documented in the row-local memo, packet, and DEV_NOTES material than in the compact dictionaries.
 - No Campbell Google Vision-backed file was available locally; the correction from `tdcn` to `tacn` rests on the clearer internal Campbell occurrence `tacn token` and the file's own cross-reference to `tdcn`.
 - No unresolved OCR or encoding artifact was reproduced in final prose.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

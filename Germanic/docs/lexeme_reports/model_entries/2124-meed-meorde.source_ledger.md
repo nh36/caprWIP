@@ -25,3 +25,7 @@ book-style entry was drafted.
 ## Citation locator full-exhaustion 03
 
 - Citation locator full-exhaustion 03: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

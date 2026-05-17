@@ -60,3 +60,7 @@ Checked against `docs/refs.bib`:
 ## Scope confirmation
 
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.

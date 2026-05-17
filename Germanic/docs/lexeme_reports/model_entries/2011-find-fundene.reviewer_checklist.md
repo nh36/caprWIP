@@ -66,3 +66,7 @@
 
 - Citation locator tightened or status reclassified after claim-isolation 07;
   verified against `ClarkHall1960, 124`.
+
+## Citation locator full-exhaustion 04
+
+- Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
