@@ -25,3 +25,7 @@ Citation locator tightened after claim-isolation pass; verified against ClarkHal
 ## Citation locator full-exhaustion 01
 
 - Citation locator full-exhaustion 01: citation localized / removed / retained broad after primary-source review.
+
+## Citation locator external/page-map audit 07
+
+- External/page-map audit 07: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

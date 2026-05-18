@@ -74,3 +74,7 @@
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 63`.
+
+## Citation locator external/page-map audit 07
+
+- External/page-map audit 07: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

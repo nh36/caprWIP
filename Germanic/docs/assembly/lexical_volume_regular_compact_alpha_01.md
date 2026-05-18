@@ -2454,9 +2454,9 @@ OE J Loss After Heavy & \emph{*stillan} \\
 }
 \endgroup
 
-The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Kluge and Seebold keep the wider West Germanic family of adjective _still_ and verb _stillen_ in view [@KlugeSeebold2011]. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960, 292]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
+The selected input _\*stéllijaną_ represents the verbal j-formation used for the OE row. Kluge and Seebold keep the wider West Germanic family of adjective _still_ and verb _stillen_ in view [@KlugeSeebold2011, 885]. Clark Hall gives _stillan_ as the verb and separately _stille_ as the adjective [@ClarkHall1960, 292]. As a heavy-stem Class I weak verb, _\*stéllijaną_ undergoes the expected syncope and i-umlaut, and later loss of _j_ after a heavy stem yields _stillan_.
 
-Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960, 292; @KlugeSeebold2011].
+Form note. The note concerns lexical framing rather than sound law: _stillan_ is the verb represented here, while _stille_ belongs to the related adjectival branch of the family [@ClarkHall1960, 292; @KlugeSeebold2011, 886].
 
 ### summer — OE sumer
 
@@ -4627,7 +4627,7 @@ Outcome: _cniht_
 The comparative sources align on an _e_-grade reconstruction for this noun.
 Ringe and Taylor cite _\*kneht_, and Orel gives _\*knextaz_
 [@RingeTaylor2014, 142; @Orel2003, 256]. Kluge-Seebold likewise points to
-_\*knehta-_ [@KlugeSeebold2011]. The selected input _\*knéxtaz_ follows that
+_\*knehta-_ [@KlugeSeebold2011, 506]. The selected input _\*knéxtaz_ follows that
 comparative evidence.
 
 A competing citation reconstruction _\*kníxtaz_ remains possible as a label for
@@ -5002,7 +5002,7 @@ than a dispute about the OE target itself.
 #### Old English evidence
 
 Old English dictionaries record the noun as _lām_, a neuter word for 'loam,
-clay, mud' [@BosworthToller1898; @ClarkHall1960, 196]. The target is an attested
+clay, mud' [@BosworthToller1898, 604; @ClarkHall1960, 196]. The target is an attested
 citation form rather than a reconstructed comparator.
 
 The relevant question is not whether _lām_ is Old English, but which inherited
@@ -5264,7 +5264,7 @@ The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative _\*hnekkō_, genitive _\*hnukkaz_, and accusative plural
 _\*hnakkuns_, and he places Old English _hnecca_ among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies _ae. hnecca_ as an ablaut
-partner of the a-grade _Nacken_ family [@KlugeSeebold2011].
+partner of the a-grade _Nacken_ family [@KlugeSeebold2011, 347].
 
 A competing comparative label _\*xnákkaz_ remains useful for the wider family, and
 Orel also gives an a-grade headword line [@Orel2003, 218]. The selected input
@@ -5707,7 +5707,7 @@ Outcome: _sife_
 #### Reconstruction and comparative evidence
 
 Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. sife, and Campbell groups _sife_
-with short neuter i-stems such as _spere_ [@KlugeSeebold2011;
+with short neuter i-stems such as _spere_ [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
 _\*sib-iz_, but the selected input is the normalized i-stem form _\*síbi_.
 
@@ -6798,8 +6798,9 @@ The word is the old compound 'age of men'. Comparative sources preserve two
 slightly different views of its first element. Orel and the _\*wira-_ tradition
 keep the older _i_-vocalism, while Ringe and Taylor discuss the lowered form
 _\*weraldiz_ and its pre-Old-English chain _\*weraldu_ > _\*weruld_
-[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold preserves both tendencies by
-giving compound _\*wira-aldō_ beside simplex _\*wera-_ [@KlugeSeebold2011].
+[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
+compound _\*wira-aldō_ and explicitly includes Old English _weorold_
+[@KlugeSeebold2011, 981].
 
 The selected input _\*wír-àldu_ therefore differs from the citation label in two
 ways. It keeps the older _\*wir-_ vowel of the comparative headword, but it also

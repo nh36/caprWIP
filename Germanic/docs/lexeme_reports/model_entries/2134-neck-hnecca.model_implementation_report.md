@@ -78,3 +78,7 @@ Checked against `docs/refs.bib`:
 ## Citation locator source-preparation audit 06
 
 - Source-preparation audit 06: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.
+
+## Citation locator external/page-map audit 07
+
+- External/page-map audit 07: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

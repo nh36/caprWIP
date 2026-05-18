@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kluge-Seebold gives `wg. *sibi- n. ... ae. sife`, and Campbell groups `sife`
-with short neuter i-stems such as `spere` [@KlugeSeebold2011;
+with short neuter i-stems such as `spere` [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
 `*sib-iz`, but the selected input is the normalized i-stem form `*síbi`.
 

@@ -30,7 +30,7 @@ than a dispute about the OE target itself.
 ### Old English evidence
 
 Old English dictionaries record the noun as `lām`, a neuter word for 'loam,
-clay, mud' [@BosworthToller1898; @ClarkHall1960, 196]. The target is an attested
+clay, mud' [@BosworthToller1898, 604; @ClarkHall1960, 196]. The target is an attested
 citation form rather than a reconstructed comparator.
 
 The relevant question is not whether `lām` is Old English, but which inherited

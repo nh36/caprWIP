@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The comparative sources align on an `e`-grade reconstruction for this noun.
 Ringe and Taylor cite `*kneht`, and Orel gives `*knextaz`
 [@RingeTaylor2014, 142; @Orel2003, 256]. Kluge-Seebold likewise points to
-`*knehta-` [@KlugeSeebold2011]. The selected input `*knéxtaz` follows that
+`*knehta-` [@KlugeSeebold2011, 506]. The selected input `*knéxtaz` follows that
 comparative evidence.
 
 A competing citation reconstruction `*kníxtaz` remains possible as a label for
