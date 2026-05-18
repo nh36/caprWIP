@@ -29,3 +29,7 @@ book-style entry was drafted.
 ## Citation locator external/page-map audit 07
 
 - External/page-map audit 07: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.
+
+## Citation locator claim-isolation audit 08
+
+- Claim-isolation audit 08: localized generated broad citation to `SieversBrunner1965, §113`.

@@ -39,7 +39,7 @@ Old English does not preserve a single isolated form. Ringe and Taylor give West
 Saxon `weorold ~ worold`, Mercian `weoruld`, Northumbrian `woruld`, and Kentish
 `wiarald` [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated `world` and later rounded `wurold`
-[@SieversBrunner1965; @BrightCassidyRingler1971, 465].
+[@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
 The selected target here is the West Saxon form `weorold`. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme

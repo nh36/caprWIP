@@ -24,3 +24,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation-locator headword audit 01
 
 - Citation locator tightened or reclassified after headword audit; verified against `ClarkHall1960, 186`.
+
+## Citation locator claim-isolation audit 08
+
+- Claim-isolation audit 08: localized generated broad citation to `Fulk2018, 127`.

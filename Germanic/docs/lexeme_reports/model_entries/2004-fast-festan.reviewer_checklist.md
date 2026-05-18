@@ -75,3 +75,7 @@
 ## Citation locator source-preparation audit 06
 
 - Source-preparation audit 06: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.
+
+## Citation locator claim-isolation audit 08
+
+- Claim-isolation audit 08: localized generated broad citation to `RingeTaylor2014, 110`.

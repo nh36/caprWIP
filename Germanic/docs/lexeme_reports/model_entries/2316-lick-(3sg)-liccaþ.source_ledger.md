@@ -24,3 +24,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation locator source-preparation triage 01
 
 - Citation locator tightened or source status reclassified after source-preparation triage; verified against `BosworthToller1898, 614`.
+
+## Citation locator claim-isolation audit 08
+
+- Claim-isolation audit 08: localized generated broad citation to `RingeTaylor2014, 50`.

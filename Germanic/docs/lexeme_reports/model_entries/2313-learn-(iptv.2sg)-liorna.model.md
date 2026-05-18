@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. Fulk cites the same Old English family from **`*liznō-`** [@Fulk2018].
+Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. Fulk cites the same Old English family from **`*liznō-`** [@Fulk2018, 127].
 
 The selected input **`*líznô`** is a finite imperative cell of that family, not the citation form of the verb.
 

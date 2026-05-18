@@ -22,8 +22,7 @@ Kroonen places the verb within the wider `*fastu-` adjective family and its
 derived `*fasten-` verbal line, the comparative background behind Old English
 'to fast' [@Kroonen2013, 171]. Ringe and Taylor, however, distinguish the Old English verb
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
-later acquired the stative meaning through lexical association with that wider
-family [@RingeTaylor2014].
+later acquired the stative meaning through lexical confusion [@RingeTaylor2014, 110].
 
 The selected input `*fástijaną` therefore represents the inherited class-I
 formation reflected in Old English, whereas the citation label `*fastēną`

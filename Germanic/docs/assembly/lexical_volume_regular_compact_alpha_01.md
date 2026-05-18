@@ -2967,7 +2967,7 @@ OE Weak Tail Reduction & \emph{*wéorpan} \\
 }
 \endgroup
 
-Ringe and Taylor distinguish preterite _\*warp_ from infinitive _\*werpana_, and the selected input here is the verbal form _\*wérpaną_ [@RingeTaylor2014]. Clark Hall records _weorpan_ as the strong verb headword and separately lists _wearp_ as both noun and preterite. Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959, §146; @Hogg1992, §3.4.2.2]. English *warp* also points to related _wearp_ material. The selected form here is the infinitive _weorpan_.
+Ringe and Taylor give preterite _\*warp_ [@RingeTaylor2014, 195] and infinitive _\*werpana_ [@RingeTaylor2014, 197]. The selected input here is the verbal form _\*wérpaną_. Clark Hall records _weorpan_ as the strong verb headword and separately lists _wearp_ as both noun and preterite. Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959, §146; @Hogg1992, §3.4.2.2]. English *warp* also points to related _wearp_ material. The selected form here is the infinitive _weorpan_.
 
 ### wash — OE wascan
 
@@ -4226,8 +4226,7 @@ Kroonen places the verb within the wider _\*fastu-_ adjective family and its
 derived _\*fasten-_ verbal line, the comparative background behind Old English
 'to fast' [@Kroonen2013, 171]. Ringe and Taylor, however, distinguish the Old English verb
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
-later acquired the stative meaning through lexical association with that wider
-family [@RingeTaylor2014].
+later acquired the stative meaning through lexical confusion [@RingeTaylor2014, 110].
 
 The selected input _\*fástijaną_ therefore represents the inherited class-I
 formation reflected in Old English, whereas the citation label _\*fastēną_
@@ -6815,7 +6814,7 @@ Old English does not preserve a single isolated form. Ringe and Taylor give West
 Saxon _weorold_ ~ _worold_, Mercian _weoruld_, Northumbrian _woruld_, and Kentish
 _wiarald_ [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated _world_ and later rounded _wurold_
-[@SieversBrunner1965; @BrightCassidyRingler1971, 465].
+[@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
 The selected target here is the West Saxon form _weorold_. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
@@ -8991,7 +8990,7 @@ Outcome: _liorna_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English _liornian_ ~ _leornian_ from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_ [@Fulk2018].
+Ringe and Taylor give Old English _liornian_ ~ _leornian_ from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_ [@Fulk2018, 127].
 
 The selected input _\*líznô_ is a finite imperative cell of that family, not the citation form of the verb.
 
@@ -9142,7 +9141,7 @@ Outcome: _licca_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
 Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The form treated here is therefore not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_.
 
@@ -9216,7 +9215,7 @@ Outcome: _liccaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor place the verb among the West Germanic class-II weak verbs, with PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
 
 The selected form in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80].
 
