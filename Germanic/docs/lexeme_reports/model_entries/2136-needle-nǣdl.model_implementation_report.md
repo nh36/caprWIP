@@ -71,3 +71,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Citation locator full-exhaustion 04
 
 - Citation locator full-exhaustion 04: citation localized / removed / retained broad after primary-source review.
+
+## Generated-final audit 09
+
+- Generated-final audit 09: localized final broad citation to `Hogg1992, 95`.

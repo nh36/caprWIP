@@ -68,3 +68,7 @@
 ## Citation locator full-exhaustion 05
 
 - Post-exhaustion audit 05: localized reopened broad citation / retained broad with source-specific reason / source witness needed / revised under-cited prose.
+
+## Generated-final audit 09
+
+- Generated-final audit 09: localized final broad citation to `RingeTaylor2014, 395-396` and revised project framing around the oblique comparison.

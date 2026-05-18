@@ -20,8 +20,8 @@ DERIVATION_CLASS: late_analogy
 
 Seebold gives Old English `spann` under this noun family [@Seebold1970, 450].
 The selected input `*spánnai` is therefore not a rival headword, but a
-specific dative singular cell of the feminine ō-stem paradigm
-[@SieversBrunner1965].
+specific dative singular cell chosen on the model of the feminine ō-stem
+paradigm [@SieversBrunner1965, §252; @SieversBrunner1965, §255.2].
 
 ### Old English evidence
 

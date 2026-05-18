@@ -320,7 +320,7 @@ OE I Umlaut & \emph{*byrdi} \\
 
 Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)byrd_ among the reflexes [@Kroonen2013, 122]. The selected input _\*búrdiz_ is the nominative-style form that stands behind that stem label. Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960, 70; @BosworthToller1898, 125]. From _\*búrdiz_, loss of final _z_ gives _\*búrdi_.
 
-Form note. The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992].
+Form note. The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992, 357].
 
 ### bone — OE bān
 
@@ -5365,7 +5365,7 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 Clark Hall records the attested citation form _nǣdl_ [@ClarkHall1960, 210].
 Campbell lists _nédl_ among the expected unbroken forms after _t_ and _d_
 [@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ in the same broader
-cluster history [@Hogg1992].
+cluster history [@Hogg1992, 95].
 
 The target is therefore an attested citation form. No oblique-cell substitution
 is involved in this entry.
@@ -7484,10 +7484,10 @@ as Gothic _faurhtei_ [@Orel2003, 120]. The selected input _\*fúrxtīnaz_ is not
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with _-u_ or _-o_ as
-analogically remodeled, whereas the oblique in-stem forms continue the older
-history more directly [@RingeTaylor2014]. The selected input therefore differs
-from the citation form because the oblique cell preserves the inherited pathway
-more clearly than the better-known lemma forms do.
+analogically remodeled [@RingeTaylor2014, 395-396]. In project terms, the
+oblique in-stem forms therefore preserve the older history more directly. The
+selected input thus differs from the citation form because the oblique cell
+keeps the inherited pathway more clearly than the better-known lemma forms do.
 
 #### Old English evidence
 
@@ -8507,8 +8507,8 @@ Outcome: _spanne_
 
 Seebold gives Old English _spann_ under this noun family [@Seebold1970, 450].
 The selected input _\*spánnai_ is therefore not a rival headword, but a
-specific dative singular cell of the feminine ō-stem paradigm
-[@SieversBrunner1965].
+specific dative singular cell chosen on the model of the feminine ō-stem
+paradigm [@SieversBrunner1965, §252; @SieversBrunner1965, §255.2].
 
 #### Old English evidence
 

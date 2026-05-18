@@ -31,7 +31,7 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 Clark Hall records the attested citation form **`nǣdl`** [@ClarkHall1960, 210].
 Campbell lists `nédl` among the expected unbroken forms after `t` and `d`
 [@Campbell1959, §367]. Hogg also includes `nidi` / `nǣdl` in the same broader
-cluster history [@Hogg1992].
+cluster history [@Hogg1992, 95].
 
 The target is therefore an attested citation form. No oblique-cell substitution
 is involved in this entry.
