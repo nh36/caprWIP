@@ -6,26 +6,26 @@ _Alpha 01 compact lexical volume. This volume assembles the current lexeme-repor
 
 The lexical catalogue is organized by derivation class rather than as a single
 undifferentiated list. This makes the interpretive burden of each entry
-explicit. Regular derivations establish the baseline relation between selected
-input and Old English target under the current cascade. The variant, analogy,
-reconstructed-comparator, and exception classes then show where that baseline is
-not sufficient on its own.
+explicit. Regular derivations establish the baseline relation between earlier
+Germanic forms and Old English reflexes under the current cascade. The variant,
+analogy, reconstructed-comparator, and exception classes then show where that
+baseline does not by itself explain the attested form.
 
-This lexical catalogue is a word-centered volume. It shows how individual
-selected inputs develop to individual Old English targets and how each entry is
-classified. A later sound-change volume or report should remain separate and
-rule-centered, covering chronology, interactions among rules, and broader
-system-level exception handling.
+This lexical catalogue is a word-centered volume. It traces individual earlier
+Germanic forms to Old English reflexes and groups them by the kind of
+comparison each entry requires. A separate sound-change study would remain
+rule-centered, treating chronology, rule interaction, and broader exception
+patterns.
 
 ## Data and sources
 
-This alpha assembles the current lexical corpus with the compact derivation-trace report and project bibliography. The lexical data layer follows the aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain cited in the entry prose.
+This volume assembles the lexical corpus from the aligned Germanic dataset and the compact derivation traces that accompany each entry. Comparative dictionaries, Old English dictionaries, and historical grammars are cited in the prose where they bear on particular lexical arguments.
 
-Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass.
+The result is a lexical catalogue rather than a separate report on citation method or trace machinery.
 
 ## Transducer and derivation method
 
-Regular entries use the compact book-prose overlay in this assembly pass, while the remaining derivation classes retain their current entry prose. All entries keep a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes.
+Regular entries use the compact book-prose layer, while the remaining derivation classes retain their fuller entry prose. Each entry keeps a derivational summary and a boxed trace divided between Earlier Germanic and Old English developments.
 
 ## Derivation classes
 
@@ -43,8 +43,8 @@ The lexical catalogue is ordered by seven derivation classes in the current mani
 
 ## Part I. Regular derivations
 
-Regular derivations are entries where the selected transducer input and the Old
-English target stand in a straightforward relation under the current cascade.
+Regular derivations are entries where the earlier Germanic form and the Old
+English reflex stand in a straightforward relation under the current cascade.
 These entries form the baseline against which the analogy and exception classes
 are interpreted.
 
@@ -506,7 +506,7 @@ OE I Umlaut & \emph{*brēʧi} \\
 }
 \endgroup
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013, 78]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014, 223]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971, 38; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014, 223].
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013, 78]. Ringe and Taylor give the plural development directly as northwest Germanic _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014, 223]. Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _bréc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971, 38; @ClarkHall1960, 64]. After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014, 223].
 
 ### calf — OE ċealf
 
@@ -2359,7 +2359,7 @@ OE Weak Tail Reduction & \emph{*spánnan} \\
 }
 \endgroup
 
-Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013, 505]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960, 286; @SieversBrunner1965, §392; §396]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
+Kroonen cites the inherited verb as _\*spannan-_, with OE _spannan_ among the reflexes [@Kroonen2013, 505]. The selected input _\*spánnaną_ is the infinitive-style form used here for that same verbal lexeme. Clark Hall keeps noun _spann_ and verb _spannan_ separate, and Brunner likewise records _sponnan, spannan stv._ [@ClarkHall1960, 286; @SieversBrunner1965, §§392, 396]. From _\*spánnaną_, the final nasal ending is lost and the regular OE weak-tail steps surface _spannan_.
 
 Form note. English _span_ can also reach noun _spann_ in local lookup material. The entry represented here is the verb _spannan_, with the noun treated elsewhere [@ClarkHall1960, 286].
 
@@ -3348,10 +3348,9 @@ Form note. Dictionary _gearn_ and normalized _ġearn_ refer to the same noun. Th
 
 ## Part II. Attested variants and selected comparison forms
 
-These entries treat the selected Old English target as one member of an attested
-or historically documented variant set. The target is therefore anchored in the
-record, but the lexical comparison must account for variation rather than for a
-single unproblematic citation form.
+These entries treat the attested Old English form as one member of an attested
+or historically documented variant set. The lexical comparison must therefore
+account for variation rather than for a single unproblematic citation form.
 
 ### cud — OE cwedu
 
@@ -3725,9 +3724,10 @@ form from the later metathesized doublets.
 ## Part III. Early analogy and pre-Old-English input selection
 
 These entries involve a distinction between the lexeme-level citation
-reconstruction and the form selected as input to the Old English derivation.
-The issue is upstream of Old English: the selected input represents the
-pre-Old-English form that gives the attested target under the current cascade.
+reconstruction and the earlier form carried through the Old English derivation.
+The issue is upstream of Old English: the form compared here is the
+pre-Old-English shape that yields the attested target under the current
+cascade.
 
 ### bottom — OE botm
 
@@ -6951,9 +6951,9 @@ from the later stages relevant to the Old English noun.
 ## Part IV. Late analogy and paradigm-cell selection
 
 These entries involve a later paradigm-cell or analogical comparison. The
-citation reconstruction remains relevant to the lexeme, but the selected target
-is best explained through a particular inflectional or analogical form rather
-than through the citation form alone.
+citation reconstruction remains relevant to the lexeme, but the attested Old
+English form is best explained through a particular inflectional or analogical
+form rather than through the citation form alone.
 
 ### ban — OE bannes
 
@@ -7007,8 +7007,8 @@ Outcome: _bannes_
 Orel cites a bann-noun under _\*bannan_, while Seebold distinguishes bann-stems
 of both masculine and neuter type and gives Old English _gebann_ as the noun
 reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction _\*bánną_
-therefore names the lexeme, but the selected input _\*bánnas_ is a specific
-genitive singular cell.
+names the lexeme, but the comparison here turns on the genitive singular
+_\*bánnas_.
 
 That distinction matters because the analysis depends on medial, not final,
 gemination.
@@ -7018,17 +7018,16 @@ gemination.
 Old English lexicographic evidence securely supports the noun itself.
 Bosworth-Toller records the noun under nominative _ge-bann_, with oblique
 usage such as _gebanne_ [@BosworthToller1898, 303]. The exact unprefixed
-genitive _bannes_ is less directly cited in the reviewed material, so it is
-best treated here as the selected regular genitive comparison form rather than
-as a dictionary headword.
+genitive _bannes_ is less directly cited in the dictionaries, so it is best
+treated here as the regular genitive form used for comparison rather than as a
+dictionary headword.
 
 #### Development to Old English
 
 From _\*bánnas_, the geminate remains medial before the case ending and the
 unstressed vowel develops regularly to give _bannes_. The paradigm comparison
-therefore sets the selected genitive against nominative comparator _ban_, the
-citation-form comparison cell of the same noun, rather than against a
-separately cited genitive headword.
+therefore sets the genitive against nominative _ban_, the ordinary nominative
+form of the same noun, rather than against a directly cited genitive headword.
 
 #### Paradigm comparison
 
@@ -7038,7 +7037,7 @@ conservative cell used for the entry.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *bánną | compact-trace output: _ban_ | ban | regular nominative outcome, but not the selected target |
-| selected genitive singular | *bánnas | compact-trace output: _bannes_ | bannes | exact match for the chosen conservative cell |
+| selected genitive singular | *bánnas | compact-trace output: _bannes_ | bannes | direct match for the conservative genitive |
 
 ### berry — OE berġes
 
@@ -7412,9 +7411,8 @@ selected oblique form _fundene_ is the attested comparison cell used here.
 #### Paradigm comparison
 
 The comparison below is manual. It distinguishes the attested oblique
-participle from the more familiar nominative participial forms. It is the
-project's cell-based comparison based on the cited Old English forms and the
-documented trace output.
+participle from the more familiar nominative participial forms and keeps the
+cited Old English evidence alongside the regular derivational path.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7485,10 +7483,10 @@ as Gothic _faurhtei_ [@Orel2003, 120]. The selected input _\*fúrxtīnaz_ is not
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with _-u_ or _-o_ as
-analogically remodeled [@RingeTaylor2014, 395-396]. In project terms, the
-oblique in-stem forms therefore preserve the older history more directly. The
-selected input thus differs from the citation form because the oblique cell
-keeps the inherited pathway more clearly than the better-known lemma forms do.
+analogically remodeled [@RingeTaylor2014, 395-396]. The oblique in-stem forms
+therefore preserve the older history more directly. The comparison here uses
+that oblique line because it keeps the inherited pathway clearer than the
+better-known lemma forms do.
 
 #### Old English evidence
 
@@ -7505,7 +7503,7 @@ selected target of this entry is the oblique cell.
 #### Development to Old English
 
 From _\*fúrxtīnaz_, the oblique in-stem develops through the loss and weakening
-of the final ending, yielding _fyrhte_. In project terms, the selected form
+of the final ending, yielding _fyrhte_. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
 paradigm.
 
@@ -8082,9 +8080,9 @@ here spells out the intermediate rhotacism, monophthongization, lowering,
 breaking, and unstressed-shortening steps needed for the selected dative-singular
 comparison.
 
-This is therefore project framing built on a source-backed broader development.
-The entry depends on the attested oblique line rather than on a full decision
-about the history of the competing _mēd_ tradition.
+This entry therefore follows the attested oblique line within the broader
+development. It does not depend on a full decision about the history of the
+competing _mēd_ tradition.
 
 #### Paradigm comparison
 
@@ -8423,9 +8421,8 @@ Outcome: _sċēaf_
 
 Kroonen reconstructs the strong verb as _\*skeuban-_ ~ _\*skūban-_ and cites Old
 English present forms _scēofan_, _scūfan_ [@Kroonen2013, 444]. Those
-present-system forms belong to the same verb family, but the selected input
-_\*skáub_ is not a spelling variant of the infinitive: it is the separate
-singular-preterite cell chosen here for comparison with _sċēaf_.
+present-system forms belong to the same verb family, but the comparison here
+uses the singular preterite _\*skáub_, not the infinitive.
 
 #### Old English evidence
 
@@ -8437,23 +8434,23 @@ regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
 
 #### Development to Old English
 
-From _\*skáub_, the documented trace is straightforward. _\*au_ fronts and levels
-to _ēa_, final _\*b_ becomes a fricative and is written _f_, and initial _\*sk-_
+From _\*skáub_, the development is straightforward. _\*au_ fronts and levels to
+_ēa_, final _\*b_ becomes a fricative and is written _f_, and initial _\*sk-_
 undergoes the usual Old English palatalized spelling in this environment. The
-trace therefore gives _\*skáub_ > _\*skáeub_ > _\*skēab_ > _\*skēaβ_ > _sċēaf_.
+derivation therefore gives _\*skáub_ > _\*skáeub_ > _\*skēab_ > _\*skēaβ_ > _sċēaf_.
 
 #### Paradigm comparison
 
-A paradigm comparison is required here because the ordinary citation verb and
-the selected Old English target belong to different cells of the same strong
-paradigm. The comparison below is manual.
+A paradigm comparison is needed here because the ordinary citation verb and
+_sċēaf_ belong to different cells of the same strong paradigm. The comparison
+below is manual.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | *skéubaną | inherited infinitive line _sċēofan_; present system also leveled _scūfan_ | scēofan / scūfan | necessary background, but not the selected comparison for _sċēaf_ |
-| 1/3 sg. preterite | *skáub | documented trace output: _sċēaf_ | sċēaf | exact match between selected input and Old English target |
+| 1/3 sg. preterite | *skáub | documented trace output: _sċēaf_ | sċēaf | direct match for the singular preterite |
 | preterite plural | *skúbun | later leveled plural _scufon_ beside expected _sċufun_ under the corrected cascade | scufon | poorer comparison for the singular-preterite target |
-| past participle | *skúbanaz | attested participial line _scofen_ | scofen | valid clean cell, but not the chosen one |
+| past participle | *skúbanaz | attested participial line _scofen_ | scofen | valid alternative cell, but not the form compared here |
 
 ### span — OE spanne
 
@@ -9869,7 +9866,7 @@ target _tæppa_. The entry accordingly remains _known_unmodelled_.
 ## Part VII. Unexplained or deliberately unmodelled exceptions
 
 These entries preserve a mismatch between the regular transducer output and the
-selected Old English target. They are retained as documented lexical exceptions
+attested Old English form. They are retained as documented lexical exceptions
 rather than treated as evidence for further sound-change repair.
 
 ### buck — OE bucc

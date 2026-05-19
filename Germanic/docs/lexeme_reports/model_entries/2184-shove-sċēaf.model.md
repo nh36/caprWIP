@@ -20,9 +20,8 @@ DERIVATION_CLASS: late_analogy
 
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
 English present forms `scēofan, scūfan` [@Kroonen2013, 444]. Those
-present-system forms belong to the same verb family, but the selected input
-`*skáub` is not a spelling variant of the infinitive: it is the separate
-singular-preterite cell chosen here for comparison with `sċēaf`.
+present-system forms belong to the same verb family, but the comparison here
+uses the singular preterite `*skáub`, not the infinitive.
 
 ### Old English evidence
 
@@ -34,20 +33,20 @@ regularizing the attested spellings `sceaf` and prefixed `āsceaf`.
 
 ### Development to Old English
 
-From `*skáub`, the documented trace is straightforward. `*au` fronts and levels
-to `ēa`, final `*b` becomes a fricative and is written `f`, and initial `*sk-`
+From `*skáub`, the development is straightforward. `*au` fronts and levels to
+`ēa`, final `*b` becomes a fricative and is written `f`, and initial `*sk-`
 undergoes the usual Old English palatalized spelling in this environment. The
-trace therefore gives `*skáub > *skáeub > *skēab > *skēaβ > sċēaf`.
+derivation therefore gives `*skáub > *skáeub > *skēab > *skēaβ > sċēaf`.
 
 ### Paradigm comparison
 
-A paradigm comparison is required here because the ordinary citation verb and
-the selected Old English target belong to different cells of the same strong
-paradigm. The comparison below is manual.
+A paradigm comparison is needed here because the ordinary citation verb and
+`sċēaf` belong to different cells of the same strong paradigm. The comparison
+below is manual.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | *skéubaną | inherited infinitive line `sċēofan`; present system also leveled `scūfan` | scēofan / scūfan | necessary background, but not the selected comparison for `sċēaf` |
-| 1/3 sg. preterite | *skáub | documented trace output: `sċēaf` | sċēaf | exact match between selected input and Old English target |
+| 1/3 sg. preterite | *skáub | documented trace output: `sċēaf` | sċēaf | direct match for the singular preterite |
 | preterite plural | *skúbun | later leveled plural `scufon` beside expected `sċufun` under the corrected cascade | scufon | poorer comparison for the singular-preterite target |
-| past participle | *skúbanaz | attested participial line `scofen` | scofen | valid clean cell, but not the chosen one |
+| past participle | *skúbanaz | attested participial line `scofen` | scofen | valid alternative cell, but not the form compared here |

@@ -54,9 +54,8 @@ selected oblique form `fundene` is the attested comparison cell used here.
 ### Paradigm comparison
 
 The comparison below is manual. It distinguishes the attested oblique
-participle from the more familiar nominative participial forms. It is the
-project's cell-based comparison based on the cited Old English forms and the
-documented trace output.
+participle from the more familiar nominative participial forms and keeps the
+cited Old English evidence alongside the regular derivational path.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |

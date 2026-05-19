@@ -70,3 +70,7 @@
 
 - Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
 - The broad `RingeTaylor2014` citation was removed after the class-history sentence was limited to localized source claims plus explicit project framing for the selected preterite cell.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

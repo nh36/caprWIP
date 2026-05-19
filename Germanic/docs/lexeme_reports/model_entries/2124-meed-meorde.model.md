@@ -48,9 +48,9 @@ here spells out the intermediate rhotacism, monophthongization, lowering,
 breaking, and unstressed-shortening steps needed for the selected dative-singular
 comparison.
 
-This is therefore project framing built on a source-backed broader development.
-The entry depends on the attested oblique line rather than on a full decision
-about the history of the competing `mēd` tradition.
+This entry therefore follows the attested oblique line within the broader
+development. It does not depend on a full decision about the history of the
+competing `mēd` tradition.
 
 ### Paradigm comparison
 

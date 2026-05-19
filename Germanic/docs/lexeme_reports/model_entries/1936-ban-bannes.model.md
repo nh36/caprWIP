@@ -21,8 +21,8 @@ DERIVATION_CLASS: late_analogy
 Orel cites a bann-noun under `*bannan`, while Seebold distinguishes bann-stems
 of both masculine and neuter type and gives Old English `gebann` as the noun
 reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction `*bánną`
-therefore names the lexeme, but the selected input `*bánnas` is a specific
-genitive singular cell.
+names the lexeme, but the comparison here turns on the genitive singular
+`*bánnas`.
 
 That distinction matters because the analysis depends on medial, not final,
 gemination.
@@ -32,17 +32,16 @@ gemination.
 Old English lexicographic evidence securely supports the noun itself.
 Bosworth-Toller records the noun under nominative `ge-bann`, with oblique
 usage such as `gebanne` [@BosworthToller1898, 303]. The exact unprefixed
-genitive `bannes` is less directly cited in the reviewed material, so it is
-best treated here as the selected regular genitive comparison form rather than
-as a dictionary headword.
+genitive `bannes` is less directly cited in the dictionaries, so it is best
+treated here as the regular genitive form used for comparison rather than as a
+dictionary headword.
 
 ### Development to Old English
 
 From `*bánnas`, the geminate remains medial before the case ending and the
 unstressed vowel develops regularly to give `bannes`. The paradigm comparison
-therefore sets the selected genitive against nominative comparator `ban`, the
-citation-form comparison cell of the same noun, rather than against a
-separately cited genitive headword.
+therefore sets the genitive against nominative `ban`, the ordinary nominative
+form of the same noun, rather than against a directly cited genitive headword.
 
 ### Paradigm comparison
 
@@ -52,4 +51,4 @@ conservative cell used for the entry.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *bánną | compact-trace output: `ban` | ban | regular nominative outcome, but not the selected target |
-| selected genitive singular | *bánnas | compact-trace output: `bannes` | bannes | exact match for the chosen conservative cell |
+| selected genitive singular | *bánnas | compact-trace output: `bannes` | bannes | direct match for the conservative genitive |

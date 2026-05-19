@@ -18,38 +18,38 @@ Current manifest counts from the live `.model.md` corpus:
 
 The lexical catalogue is organized by derivation class rather than as a single
 undifferentiated list. This makes the interpretive burden of each entry
-explicit. Regular derivations establish the baseline relation between selected
-input and Old English target under the current cascade. The variant, analogy,
-reconstructed-comparator, and exception classes then show where that baseline is
-not sufficient on its own.
+explicit. Regular derivations establish the baseline relation between earlier
+Germanic forms and Old English reflexes under the current cascade. The variant,
+analogy, reconstructed-comparator, and exception classes then show where that
+baseline does not by itself explain the attested form.
 
 ## Regular derivations
 
-Regular derivations are entries where the selected transducer input and the Old
-English target stand in a straightforward relation under the current cascade.
+Regular derivations are entries where the earlier Germanic form and the Old
+English reflex stand in a straightforward relation under the current cascade.
 These entries form the baseline against which the analogy and exception classes
 are interpreted.
 
 ## Attested variants and selected comparison forms
 
-These entries treat the selected Old English target as one member of an attested
-or historically documented variant set. The target is therefore anchored in the
-record, but the lexical comparison must account for variation rather than for a
-single unproblematic citation form.
+These entries treat the attested Old English form as one member of an attested
+or historically documented variant set. The lexical comparison must therefore
+account for variation rather than for a single unproblematic citation form.
 
 ## Early analogy and pre-Old-English input selection
 
 These entries involve a distinction between the lexeme-level citation
-reconstruction and the form selected as input to the Old English derivation.
-The issue is upstream of Old English: the selected input represents the
-pre-Old-English form that gives the attested target under the current cascade.
+reconstruction and the earlier form carried through the Old English derivation.
+The issue is upstream of Old English: the form compared here is the
+pre-Old-English shape that yields the attested target under the current
+cascade.
 
 ## Late analogy and paradigm-cell selection
 
 These entries involve a later paradigm-cell or analogical comparison. The
-citation reconstruction remains relevant to the lexeme, but the selected target
-is best explained through a particular inflectional or analogical form rather
-than through the citation form alone.
+citation reconstruction remains relevant to the lexeme, but the attested Old
+English form is best explained through a particular inflectional or analogical
+form rather than through the citation form alone.
 
 ## Reconstructed Old English comparators
 
@@ -66,13 +66,13 @@ reshaping directly.
 ## Unexplained or deliberately unmodelled exceptions
 
 These entries preserve a mismatch between the regular transducer output and the
-selected Old English target. They are retained as documented lexical exceptions
+attested Old English form. They are retained as documented lexical exceptions
 rather than treated as evidence for further sound-change repair.
 
 ## Note on the later sound-change volume / report
 
-This lexical catalogue is a word-centered volume. It shows how individual
-selected inputs develop to individual Old English targets and how each entry is
-classified. A later sound-change volume or report should remain separate and
-rule-centered, covering chronology, interactions among rules, and broader
-system-level exception handling.
+This lexical catalogue is a word-centered volume. It traces individual earlier
+Germanic forms to Old English reflexes and groups them by the kind of
+comparison each entry requires. A separate sound-change study would remain
+rule-centered, treating chronology, rule interaction, and broader exception
+patterns.

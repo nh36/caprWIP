@@ -37,3 +37,7 @@ This ledger records the evidence used for the P3 pilot upgrade.
 
 - Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
 - The broad `Campbell1959` citation was removed after rewriting the nominative clause around existing localized `BosworthToller1898, 303` headword evidence and explicit project framing for comparator `ban`.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

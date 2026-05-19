@@ -72,3 +72,7 @@
 ## Generated-final audit 09
 
 - Generated-final audit 09: localized final broad citation to `RingeTaylor2014, 395-396` and revised project framing around the oblique comparison.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

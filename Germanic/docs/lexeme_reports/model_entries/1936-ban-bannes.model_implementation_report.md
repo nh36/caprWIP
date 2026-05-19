@@ -70,3 +70,7 @@ Checked against `docs/refs.bib`:
 
 - Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
 - The broad `Campbell1959` citation was removed after the entry was rewritten to cite nominative noun authority through existing `BosworthToller1898, 303` evidence and to leave `ban` as explicit comparison framing.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

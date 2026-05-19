@@ -23,10 +23,10 @@ as Gothic `faurhtei` [@Orel2003, 120]. The selected input `*fúrxtīnaz` is not 
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as
-analogically remodeled [@RingeTaylor2014, 395-396]. In project terms, the
-oblique in-stem forms therefore preserve the older history more directly. The
-selected input thus differs from the citation form because the oblique cell
-keeps the inherited pathway more clearly than the better-known lemma forms do.
+analogically remodeled [@RingeTaylor2014, 395-396]. The oblique in-stem forms
+therefore preserve the older history more directly. The comparison here uses
+that oblique line because it keeps the inherited pathway clearer than the
+better-known lemma forms do.
 
 ### Old English evidence
 
@@ -43,7 +43,7 @@ selected target of this entry is the oblique cell.
 ### Development to Old English
 
 From `*fúrxtīnaz`, the oblique in-stem develops through the loss and weakening
-of the final ending, yielding `fyrhte`. In project terms, the selected form
+of the final ending, yielding `fyrhte`. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
 paradigm.
 

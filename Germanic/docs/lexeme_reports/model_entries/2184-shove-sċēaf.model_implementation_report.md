@@ -76,3 +76,7 @@ Checked against `docs/refs.bib`:
 
 - Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
 - The broad `RingeTaylor2014` citation was removed after a source-specific rewrite that keeps localized Kroonen/Bright/Sweet support and marks the present-versus-preterite contrast as project framing.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

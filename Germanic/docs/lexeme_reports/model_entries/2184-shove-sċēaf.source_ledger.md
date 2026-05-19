@@ -29,3 +29,7 @@ before the book-style prose was drafted.
 
 - Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
 - The broad `RingeTaylor2014` citation was removed after rewriting the present-versus-preterite contrast as project framing while retaining localized external support from `Kroonen2013, 444`, `BrightCassidyRingler1971, 347`, and `Sweet1953, 29`.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

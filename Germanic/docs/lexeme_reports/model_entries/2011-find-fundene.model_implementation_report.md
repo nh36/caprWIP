@@ -84,3 +84,7 @@ Checked against `docs/refs.bib`:
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

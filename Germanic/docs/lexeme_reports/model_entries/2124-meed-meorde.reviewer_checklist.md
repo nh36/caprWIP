@@ -79,3 +79,7 @@
 ## Post-exhaustion audit 04
 
 - Post-exhaustion audit 04: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.
+
+## Prose-regression audit 01
+
+- Prose-regression audit 01: corrected post-citation prose/style regression.

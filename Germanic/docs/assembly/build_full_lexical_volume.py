@@ -882,7 +882,7 @@ def build_front_matter(
         else "_Alpha 01 lexical volume. This volume assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._"
     )
     method_paragraph = (
-        "Regular entries use the compact book-prose overlay in this assembly pass, while the remaining derivation classes retain their current entry prose. All entries keep a generated derivation summary and a boxed derivation trace split into Earlier Germanic changes and Old English changes."
+        "Regular entries use the compact book-prose layer, while the remaining derivation classes retain their fuller entry prose. Each entry keeps a derivational summary and a boxed trace divided between Earlier Germanic and Old English developments."
         if compact_regular_active
         else "Each lexical entry keeps the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data."
     )
@@ -900,11 +900,11 @@ def build_front_matter(
         "## Data and sources",
         "",
         normalize_print_text(
-            "This alpha assembles the current lexical corpus with the compact derivation-trace report and project bibliography. The lexical data layer follows the aligned Germanic dataset as represented by the model-entry metadata and the current compact trace source; comparative dictionaries, Old English dictionaries, and historical grammars remain cited in the entry prose."
+            "This volume assembles the lexical corpus from the aligned Germanic dataset and the compact derivation traces that accompany each entry. Comparative dictionaries, Old English dictionaries, and historical grammars are cited in the prose where they bear on particular lexical arguments."
         ),
         "",
         normalize_print_text(
-            "Broad citations are carried forward honestly where the citation-layer audit already judged them mechanically acceptable for assembly. This alpha therefore tests book structure and technical integration rather than attempting a final source-polish pass."
+            "The result is a lexical catalogue rather than a separate report on citation method or trace machinery."
         ),
         "",
         "## Transducer and derivation method",
@@ -939,8 +939,13 @@ def assert_print_regressions(text: str) -> None:
         raise ValueError("reader-facing output still contains PNWGmce")
     if "_\\*wīþja-_-type" in text:
         raise ValueError("reader-facing output still contains a malformed *wīþja--type phrase")
-    expected_breeches_phrase = "PNWGmc _\\*brokiz_ > _\\*breeci_ > OE _bréc_"
-    if "### breeches — OE brēċ" in text and expected_breeches_phrase not in text:
+    expected_breeches_phrases = (
+        "PNWGmc _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
+        "northwest Germanic _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
+    )
+    if "### breeches — OE brēċ" in text and not any(
+        phrase in text for phrase in expected_breeches_phrases
+    ):
         raise ValueError("reader-facing output is missing the normalized breeches stage phrase")
 
 
