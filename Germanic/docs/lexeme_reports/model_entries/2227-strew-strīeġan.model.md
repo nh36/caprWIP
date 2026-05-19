@@ -1,4 +1,4 @@
-# strew — OE strīeġan
+# strew — OE *strīeġan
 
 PROTO: *stráwjaną
 PROTOFORM: *stráwjaną
@@ -12,9 +12,9 @@ DERIVATION_CLASS: reconstructed_oe
 | lexical item | strew |
 | citation reconstruction / lexeme label | *stráwjaną |
 | selected input form | *stráwjaną |
-| Old English target | strīeġan (reconstructed) |
+| Old English target | *strīeġan (reconstructed) |
 | classification | reconstructed_oe |
-| documented output | *stráwjaną -> strīeġan |
+| documented output | *stráwjaną -> *strīeġan |
 
 ### Reconstruction and comparative evidence
 
@@ -37,7 +37,7 @@ attested West Saxon citation forms are **`strewian`**, **`streowian`**, and
 **`strēawian`**, which belong to the remodelled class-II branch
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
-The target **`strīeġan`** is therefore a **reconstructed Old English form**, not
+The target **`*strīeġan`** is therefore a **reconstructed Old English form**, not
 an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
 inherited class-I verb, chosen to keep the inherited branch distinct from the
 better-attested remodelled West Saxon lemma.
@@ -47,7 +47,7 @@ better-attested remodelled West Saxon lemma.
 From **`*stráwjaną`**, the inherited West Saxon development passes through
 `*straujaną`, fronting and leveling to a **`*strēajan-`** stage, i-umlaut to
 **`*strīejan`**, and retention or strengthening of the glide after the front
-diphthong, written here as **`ġ`**. The resulting form is **`strīeġan`**.
+diphthong, written here as **`ġ`**. The resulting form is **`*strīeġan`**.
 
 This differs from Anglian **`strēgan`**, where smoothing removes the diphthongal
 sequence, and from West Saxon **`strewian / streowian / strēawian`**, where the
@@ -62,5 +62,5 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
 | `strēgan` | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| `strīeġan` | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
+| `*strīeġan` | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
 | `strewian / streowian / strēawian` | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |

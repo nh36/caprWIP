@@ -22,7 +22,7 @@ Kroonen reconstructs the strong verb as `*geban-` and cites Old English `giefan`
 
 ### Old English evidence
 
-Campbell gives `gefan (W-S giefan)` among examples of initial palatalization, and Clark Hall records the verb under plain `giefan` with forms such as `geaf` and `giefen` [@Campbell1959; @ClarkHall1960]. The spelling `ġiefan` used here makes the palatal initial explicit.
+Campbell gives `gefan` (W-S `giefan`) among examples of initial palatalization, and Clark Hall records the verb under plain `giefan` with forms such as `geaf` and `giefen` [@Campbell1959; @ClarkHall1960]. The spelling `ġiefan` used here makes the palatal initial explicit.
 
 ### Dialect note
 

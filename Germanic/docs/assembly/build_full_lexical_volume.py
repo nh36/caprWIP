@@ -448,11 +448,24 @@ def humanize_derivation_class(label: str) -> str:
     return mapping.get(label, label.replace("_", " "))
 
 
+def display_entry_form(metadata: dict[str, str], form: str) -> str:
+    counterpart = metadata.get("COUNTERPART", "")
+    if (
+        metadata.get("DERIVATION_CLASS") == "reconstructed_oe"
+        and form
+        and form == counterpart
+        and not form.startswith("*")
+    ):
+        return f"*{form}"
+    return form
+
+
 def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
     metadata = model["metadata"]
     citation = metadata.get("PROTO", "")
     selected = metadata.get("PROTOFORM", "")
     target = metadata.get("COUNTERPART", "")
+    display_target = display_entry_form(metadata, target)
     label = humanize_derivation_class(metadata.get("DERIVATION_CLASS", ""))
     arrow = ">"
 
@@ -463,22 +476,23 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
         )
 
     output = trace_entry["outcome"]
+    display_output = display_entry_form(metadata, output)
     if citation == selected and output == target:
-        return f"Derivation: {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+        return f"Derivation: {italicize_form(selected)} {arrow} {italicize_form(display_target)} ({label})."
     if citation != selected and output == target:
         return (
             f"Derivation: citation reconstruction {italicize_form(citation)}; "
-            f"form followed here {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+            f"form followed here {italicize_form(selected)} {arrow} {italicize_form(display_target)} ({label})."
         )
     if citation == selected and output != target:
         return (
-            f"Derivation: {italicize_form(selected)} yields regular {italicize_form(output)}; "
-            f"the Old English form here is {italicize_form(target)} ({label})."
+            f"Derivation: {italicize_form(selected)} yields regular {italicize_form(display_output)}; "
+            f"the Old English form here is {italicize_form(display_target)} ({label})."
         )
     return (
         f"Derivation: citation reconstruction {italicize_form(citation)}; "
-        f"form followed here {italicize_form(selected)} yields {italicize_form(output)}; "
-        f"the Old English form here is {italicize_form(target)} ({label})."
+        f"form followed here {italicize_form(selected)} yields {italicize_form(display_output)}; "
+        f"the Old English form here is {italicize_form(display_target)} ({label})."
     )
 
 
@@ -836,11 +850,13 @@ def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) 
             ]
         )
         if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
-            out.append(f"Old English form: {italicize_form(trace_entry['outcome'])}")
+            out.append(f"Old English form: {italicize_form(display_entry_form(model['metadata'], trace_entry['outcome']))}")
         else:
-            out.append(f"Regular outcome: {italicize_form(trace_entry['outcome'])}")
+            out.append(f"Regular outcome: {italicize_form(display_entry_form(model['metadata'], trace_entry['outcome']))}")
             out.append("")
-            out.append(f"Old English form: {italicize_form(model['metadata'].get('COUNTERPART', ''))}")
+            out.append(
+                f"Old English form: {italicize_form(display_entry_form(model['metadata'], model['metadata'].get('COUNTERPART', '')))}"
+            )
 
     for heading, body in model["sections"]:
         if heading == "### Transducer input and output":

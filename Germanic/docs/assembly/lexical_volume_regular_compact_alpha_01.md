@@ -1054,7 +1054,7 @@ OE Weak Tail Reduction & \emph{*ʤíeβan} \\
 }
 \endgroup
 
-Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013, 212]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014, 230]. Campbell gives _gefan (W-S giefan)_ among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959, §428; @ClarkHall1960, 134]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959, §185; @RingeTaylor2014, 230].
+Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013, 212]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014, 230]. Campbell gives _gefan_ (W-S _giefan_) among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959, §428; @ClarkHall1960, 134]. From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphthongization then yields _ie_, and later tail reduction gives _giefan_ [@Campbell1959, §185; @RingeTaylor2014, 230].
 
 Dialect note. West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ or _for-geofan_ continue the same verb without the West Saxon vocalism [@RingeTaylor2014, 230].
 
@@ -9394,9 +9394,9 @@ These entries use an explicitly reconstructed Old English-stage comparator for
 the branch being modelled. The relevant comparison is therefore later than the
 Proto-Germanic citation form but still belongs to the lexical derivation layer.
 
-### knob — OE cnobba
+### knob — OE *cnobba
 
-Derivation: citation reconstruction _\*knúppaz_; form followed here _\*knúbbô_ > _cnobba_ (reconstructed Old English comparator).
+Derivation: citation reconstruction _\*knúppaz_; form followed here _\*knúbbô_ > _\*cnobba_ (reconstructed Old English comparator).
 
 #### Derivation trace
 
@@ -9440,7 +9440,7 @@ OE Unstressed Long Vowel Shortening & \emph{*knóbba} \\
 }
 \endgroup
 
-Old English form: _cnobba_
+Old English form: _\*cnobba_
 
 #### Reconstruction and comparative evidence
 
@@ -9461,22 +9461,22 @@ Clark Hall preserves Old English evidence of the _cnoppa_ type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
-The target _cnobba_ is different in status. It is a **reconstructed Old
+The target _\*cnobba_ is different in status. It is a **reconstructed Old
 English form**, not a directly attested one. The point of using it here is to
 give the voiced branch an explicit OE-stage representation instead of allowing
 the attested _cnoppa_ branch to stand in for a different prehistory. The choice
-of _cnobba_ is therefore a modeling and comparative decision rather than a
+of _\*cnobba_ is therefore a modeling and comparative decision rather than a
 settled point of Old English philology.
 
 #### Development to Old English
 
 From the weak-noun form followed here, _\*knúbbô_, the regular Old English outcome is
-_cnobba_, with Proto-Germanic _kn-_ represented in Old English as _cn-_ and
+_\*cnobba_, with Proto-Germanic _kn-_ represented in Old English as _cn-_ and
 with the expected weak-noun ending.
 
-The entry therefore does not claim that _cnobba_ is attested. Its claim is
+The entry therefore does not claim that _\*cnobba_ is attested. Its claim is
 different: if the voiced weak-noun branch is the one to be represented, then
-_cnobba_ is the regular Old English form corresponding to that branch.
+_\*cnobba_ is the regular Old English form corresponding to that branch.
 
 #### Reconstruction status
 
@@ -9485,17 +9485,17 @@ better-attested neighboring forms.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*knúbbô_ > _cnobba_ | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| _\*knúbbô_ > _\*cnobba_ | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
 | _cnopp_ / _cnoppa_ | attested OE branch | important control form, but belongs to the voiceless branch |
 | _cnæp_ | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
-reconstructed _cnobba_ and attested _cnoppa_ is still a comparator-policy
+reconstructed _\*cnobba_ and attested _cnoppa_ is still a comparator-policy
 question rather than a settled point of OE attestation.
 
-### reek — OE rēac
+### reek — OE *rēac
 
-Derivation: citation reconstruction _\*ráukiz_; form followed here _\*ráukaz_ > _rēac_ (reconstructed Old English comparator).
+Derivation: citation reconstruction _\*ráukiz_; form followed here _\*ráukaz_ > _\*rēac_ (reconstructed Old English comparator).
 
 #### Derivation trace
 
@@ -9541,7 +9541,7 @@ PWGmc Final Bare A Loss & \emph{*rēak} \\
 }
 \endgroup
 
-Old English form: _rēac_
+Old English form: _\*rēac_
 
 #### Reconstruction and comparative evidence
 
@@ -9552,31 +9552,31 @@ lexeme-level headword, but the form used here for the Old English derivation.
 
 #### Old English evidence
 
-The attested noun is _rēc_, not _rēac_. Clark Hall records _rēc_ as the noun
+The attested noun is _rēc_, not _\*rēac_. Clark Hall records _rēc_ as the noun
 and also preserves related forms such as _rēcels_; Kroonen likewise gives OE
 _rēc_ under the noun family [@ClarkHall1960, 255; @Kroonen2013, 446]. Clark
 Hall and Seebold also record verbal _rēac_ as the preterite of _rēocan_, but
 that verbal form is separate from the noun treated here [@ClarkHall1960, 254;
 @Seebold1970, 380].
 
-The Old English form here, _rēac_, is therefore a reconstructed West Saxon noun form,
+The Old English form here, _\*rēac_, is therefore a reconstructed West Saxon noun form,
 not a directly attested manuscript headword.
 
 #### Development to Old English
 
-From _\*ráukaz_, the regular West Saxon development gives _rēac_. The attested
+From _\*ráukaz_, the regular West Saxon development gives _\*rēac_. The attested
 noun _rēc_ belongs to the same lexical family, but reflects a later smoothed
 surface form rather than the regular noun target represented here.
 
 #### Form note
 
 The distinction here is between an attested noun headword _rēc_ and a
-reconstructed regular West Saxon target _rēac_. The latter is treated as the
+reconstructed regular West Saxon target _\*rēac_. The latter is treated as the
 modelling target, while the former remains philological background.
 
-### strew — OE strīeġan
+### strew — OE *strīeġan
 
-Derivation: _\*stráwjaną_ > _strīeġan_ (reconstructed Old English comparator).
+Derivation: _\*stráwjaną_ > _\*strīeġan_ (reconstructed Old English comparator).
 
 #### Derivation trace
 
@@ -9625,7 +9625,7 @@ OE J Strengthening After Front Diphthong & \emph{*strīeʒan} \\
 }
 \endgroup
 
-Old English form: _strīeġan_
+Old English form: _\*strīeġan_
 
 #### Reconstruction and comparative evidence
 
@@ -9648,7 +9648,7 @@ attested West Saxon citation forms are _strewian_, _streowian_, and
 _strēawian_, which belong to the remodelled class-II branch
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
-The target _strīeġan_ is therefore a **reconstructed Old English form**, not
+The target _\*strīeġan_ is therefore a **reconstructed Old English form**, not
 an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
 inherited class-I verb, chosen to keep the inherited branch distinct from the
 better-attested remodelled West Saxon lemma.
@@ -9658,7 +9658,7 @@ better-attested remodelled West Saxon lemma.
 From _\*stráwjaną_, the inherited West Saxon development passes through
 _\*straujaną_, fronting and leveling to a _\*strēajan-_ stage, i-umlaut to
 _\*strīejan_, and retention or strengthening of the glide after the front
-diphthong, written here as _ġ_. The resulting form is _strīeġan_.
+diphthong, written here as _ġ_. The resulting form is _\*strīeġan_.
 
 This differs from Anglian _strēgan_, where smoothing removes the diphthongal
 sequence, and from West Saxon _strewian_ / _streowian_ / _strēawian_, where the
@@ -9673,7 +9673,7 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
 | _strēgan_ | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| _strīeġan_ | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
+| _\*strīeġan_ | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
 | _strewian_ / _streowian_ / _strēawian_ | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
 \clearpage

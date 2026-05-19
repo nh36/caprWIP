@@ -1,4 +1,4 @@
-# knob — OE cnobba
+# knob — OE *cnobba
 
 PROTO: *knúppaz
 PROTOFORM: *knúbbô
@@ -12,9 +12,9 @@ DERIVATION_CLASS: reconstructed_oe
 | lexical item | knob |
 | citation reconstruction / lexeme label | *knúppaz |
 | selected input form | *knúbbô |
-| Old English target | cnobba |
+| Old English target | *cnobba |
 | classification | reconstructed_oe |
-| documented output | *knúbbô -> cnobba |
+| documented output | *knúbbô -> *cnobba |
 
 ### Reconstruction and comparative evidence
 
@@ -35,22 +35,22 @@ Clark Hall preserves Old English evidence of the `cnoppa` type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
-The target **`cnobba`** is different in status. It is a **reconstructed Old
+The target **`*cnobba`** is different in status. It is a **reconstructed Old
 English form**, not a directly attested one. The point of using it here is to
 give the voiced branch an explicit OE-stage representation instead of allowing
 the attested `cnoppa` branch to stand in for a different prehistory. The choice
-of `cnobba` is therefore a modeling and comparative decision rather than a
+of `*cnobba` is therefore a modeling and comparative decision rather than a
 settled point of Old English philology.
 
 ### Development to Old English
 
 From the weak-noun form followed here, `*knúbbô`, the regular Old English outcome is
-`cnobba`, with Proto-Germanic `kn-` represented in Old English as `cn-` and
+`*cnobba`, with Proto-Germanic `kn-` represented in Old English as `cn-` and
 with the expected weak-noun ending.
 
-The entry therefore does not claim that `cnobba` is attested. Its claim is
+The entry therefore does not claim that `*cnobba` is attested. Its claim is
 different: if the voiced weak-noun branch is the one to be represented, then
-`cnobba` is the regular Old English form corresponding to that branch.
+`*cnobba` is the regular Old English form corresponding to that branch.
 
 ### Reconstruction status
 
@@ -59,10 +59,10 @@ better-attested neighboring forms.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `*knúbbô > cnobba` | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| `*knúbbô > *cnobba` | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
 | `cnopp / cnoppa` | attested OE branch | important control form, but belongs to the voiceless branch |
 | `cnæp` | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
-reconstructed `cnobba` and attested `cnoppa` is still a comparator-policy
+reconstructed `*cnobba` and attested `cnoppa` is still a comparator-policy
 question rather than a settled point of OE attestation.
