@@ -71,3 +71,8 @@ Checked against `docs/refs.bib`:
 ## Citation locator full-exhaustion 02
 
 - Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.
+
+## Generated-final audit 10
+
+- Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
+- The broad `RingeTaylor2014` citation was removed after a source-specific rewrite that keeps localized Kroonen/Bright/Sweet support and marks the present-versus-preterite contrast as project framing.

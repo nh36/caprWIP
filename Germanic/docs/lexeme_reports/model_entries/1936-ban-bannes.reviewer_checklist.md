@@ -64,3 +64,8 @@
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Generated-final audit 10
+
+- Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
+- The broad `Campbell1959` citation was removed after the nominative sentence was recast around localized noun-headword evidence plus explicit project framing.

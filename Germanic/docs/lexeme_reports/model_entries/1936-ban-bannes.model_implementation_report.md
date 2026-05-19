@@ -65,3 +65,8 @@ Checked against `docs/refs.bib`:
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Generated-final audit 10
+
+- Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
+- The broad `Campbell1959` citation was removed after the entry was rewritten to cite nominative noun authority through existing `BosworthToller1898, 303` evidence and to leave `ban` as explicit comparison framing.

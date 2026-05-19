@@ -19,11 +19,10 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
-English present forms `scēofan, scūfan` [@Kroonen2013, 444]. Ringe and Taylor also
-show that the English present system belongs to a wider class-II split that is
-not identical with the preterite grade [@RingeTaylor2014]. The selected input
-`*skáub` is therefore not a spelling variant of the infinitive but the singular
-preterite cell.
+English present forms `scēofan, scūfan` [@Kroonen2013, 444]. Those
+present-system forms belong to the same verb family, but the selected input
+`*skáub` is not a spelling variant of the infinitive: it is the separate
+singular-preterite cell chosen here for comparison with `sċēaf`.
 
 ### Old English evidence
 

@@ -30,18 +30,19 @@ gemination.
 ### Old English evidence
 
 Old English lexicographic evidence securely supports the noun itself.
-Bosworth-Toller records `ge-bann` with oblique usage such as `gebanne`
-[@BosworthToller1898, 303]. The exact unprefixed genitive `bannes` is less
-directly cited in the reviewed material, so it is best treated here as the
-selected regular genitive comparison form rather than as a dictionary
-headword.
+Bosworth-Toller records the noun under nominative `ge-bann`, with oblique
+usage such as `gebanne` [@BosworthToller1898, 303]. The exact unprefixed
+genitive `bannes` is less directly cited in the reviewed material, so it is
+best treated here as the selected regular genitive comparison form rather than
+as a dictionary headword.
 
 ### Development to Old English
 
 From `*bánnas`, the geminate remains medial before the case ending and the
-unstressed vowel develops regularly to give `bannes`. By contrast, citation
-`*bánną` loses its final vowel and simplifies the word-final geminate, so the
-regular nominative outcome is `ban` [@Campbell1959].
+unstressed vowel develops regularly to give `bannes`. The paradigm comparison
+therefore sets the selected genitive against nominative comparator `ban`, the
+citation-form comparison cell of the same noun, rather than against a
+separately cited genitive headword.
 
 ### Paradigm comparison
 

@@ -7016,18 +7016,19 @@ gemination.
 #### Old English evidence
 
 Old English lexicographic evidence securely supports the noun itself.
-Bosworth-Toller records _ge-bann_ with oblique usage such as _gebanne_
-[@BosworthToller1898, 303]. The exact unprefixed genitive _bannes_ is less
-directly cited in the reviewed material, so it is best treated here as the
-selected regular genitive comparison form rather than as a dictionary
-headword.
+Bosworth-Toller records the noun under nominative _ge-bann_, with oblique
+usage such as _gebanne_ [@BosworthToller1898, 303]. The exact unprefixed
+genitive _bannes_ is less directly cited in the reviewed material, so it is
+best treated here as the selected regular genitive comparison form rather than
+as a dictionary headword.
 
 #### Development to Old English
 
 From _\*bánnas_, the geminate remains medial before the case ending and the
-unstressed vowel develops regularly to give _bannes_. By contrast, citation
-_\*bánną_ loses its final vowel and simplifies the word-final geminate, so the
-regular nominative outcome is _ban_ [@Campbell1959].
+unstressed vowel develops regularly to give _bannes_. The paradigm comparison
+therefore sets the selected genitive against nominative comparator _ban_, the
+citation-form comparison cell of the same noun, rather than against a
+separately cited genitive headword.
 
 #### Paradigm comparison
 
@@ -8421,11 +8422,10 @@ Outcome: _sċēaf_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as _\*skeuban-_ ~ _\*skūban-_ and cites Old
-English present forms _scēofan_, _scūfan_ [@Kroonen2013, 444]. Ringe and Taylor also
-show that the English present system belongs to a wider class-II split that is
-not identical with the preterite grade [@RingeTaylor2014]. The selected input
-_\*skáub_ is therefore not a spelling variant of the infinitive but the singular
-preterite cell.
+English present forms _scēofan_, _scūfan_ [@Kroonen2013, 444]. Those
+present-system forms belong to the same verb family, but the selected input
+_\*skáub_ is not a spelling variant of the infinitive: it is the separate
+singular-preterite cell chosen here for comparison with _sċēaf_.
 
 #### Old English evidence
 

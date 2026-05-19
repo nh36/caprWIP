@@ -65,3 +65,8 @@
 ## Citation locator full-exhaustion 02
 
 - Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.
+
+## Generated-final audit 10
+
+- Generated-final audit 10: resolved or froze final broad citation with final source-specific justification.
+- The broad `RingeTaylor2014` citation was removed after the class-history sentence was limited to localized source claims plus explicit project framing for the selected preterite cell.
