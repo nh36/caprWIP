@@ -14,7 +14,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 | selected input form | *rústō |
 | Old English target | rust |
 | classification | unexplained_unmodelled |
-| computed regular output | *rústō -> rost |
+| computed regular output | *rústō > rost |
 
 ### Reconstruction and comparative evidence
 
@@ -53,12 +53,11 @@ established.
 
 ### Expected and attested forms
 
-The comparison below is manual. It separates the regular inherited outcomes from
-the attested Old English noun.
+The comparison below sets the regular inherited outcomes beside the attested Old English noun.
 
 | Form / interpretation | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `*rústō -> rost` | computed regular output from one competing citation reconstruction | shows that this citation reconstruction does not reach attested `rust` |
-| `*rustaz -> rost` | expected regular output from the source-supported citation reconstruction | shows that correcting the stem class does not solve the vowel problem |
-| `*rústu -> rust` | regular high-vowel comparator | useful negative control, but not a defensible citation-form solution |
-| `rust` | attested Old English noun, normalized from `rūst / rúst / rust` | selected target; the citation-form development remains unexplained |
+| `*rústō > rost` | computed regular output from one competing citation reconstruction | shows that this citation reconstruction does not reach attested `rust` |
+| `*rustaz > rost` | expected regular output from the source-supported citation reconstruction | shows that correcting the stem class does not solve the vowel problem |
+| `*rústu > rust` | regular high-vowel comparator | useful negative control, but not a defensible citation-form solution |
+| `rust` | attested Old English noun, normalized from `rūst / rúst / rust` | attested Old English form; the citation-form development remains unexplained |

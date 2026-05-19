@@ -28,3 +28,7 @@ This ledger records the evidence used for the P3 pilot upgrade.
 ## Generated-final audit 09
 
 - Generated-final audit 09: localized final broad citation to `SieversBrunner1965, §252; §255.2` and revised project framing around the dative-singular analysis.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

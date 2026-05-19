@@ -65,3 +65,7 @@
 ## Citation locator external/page-map audit 07
 
 - External/page-map audit 07: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

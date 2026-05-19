@@ -334,6 +334,39 @@ def tidy_prose(text: str) -> str:
     )
 
 
+def clean_reader_facing_prose(text: str) -> str:
+    cleaned = text
+    cleaned = cleaned.replace("compact-trace output", "regular output")
+    cleaned = cleaned.replace("regular trace output", "regular output")
+    cleaned = cleaned.replace("trace output", "regular output")
+    cleaned = cleaned.replace("documented output", "derivational result")
+    cleaned = cleaned.replace("documented trace", "regular derivation")
+    cleaned = cleaned.replace("manual comparison", "paradigm comparison")
+    cleaned = cleaned.replace("current cascade", "sound history followed here")
+    cleaned = cleaned.replace(
+        "The comparison below is manual.",
+        "The comparison below sets the relevant forms side by side.",
+    )
+    cleaned = re.sub(r"\bThe selected input (_(?:\\.|[^_\n])+_) ", r"The form followed here, \1, ", cleaned)
+    cleaned = re.sub(r"\bFrom selected input (_(?:\\.|[^_\n])+_),", r"From \1,", cleaned)
+    cleaned = re.sub(
+        r"\bWith (_(?:\\.|[^_\n])+_) as the selected input\b",
+        r"With \1 as the derivational input",
+        cleaned,
+    )
+    cleaned = re.sub(r"\bThe selected target is\b", "The Old English form here is", cleaned)
+    cleaned = re.sub(r"\bThe selected target (_(?:\\.|[^_\n])+_) ", r"The Old English form here, \1, ", cleaned)
+    cleaned = re.sub(r"\bThe selected form here is\b", "The form compared here is", cleaned)
+    cleaned = re.sub(r"\bThe selected form is\b", "The form compared here is", cleaned)
+    cleaned = cleaned.replace("selected input form", "form followed here")
+    cleaned = cleaned.replace("selected input", "derivational input")
+    cleaned = cleaned.replace("selected target", "Old English form here")
+    cleaned = cleaned.replace("selected form", "form compared here")
+    cleaned = cleaned.replace("selected cell", "cell compared here")
+    cleaned = cleaned.replace(" -> ", " > ")
+    return cleaned
+
+
 def display_stage_name(stage: str) -> str:
     if stage == "Proto-West Germanic":
         return "West Germanic"
@@ -425,8 +458,8 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
 
     if trace_entry is None:
         return (
-            f"Derivation: selected input {italicize_form(selected)} and target {italicize_form(target)}; "
-            "no compact trace was confidently matched in this assembly pass."
+            f"Derivation: form followed here {italicize_form(selected)}; Old English form {italicize_form(target)}; "
+            "no regular trace was confidently matched for this entry."
         )
 
     output = trace_entry["outcome"]
@@ -435,17 +468,17 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
     if citation != selected and output == target:
         return (
             f"Derivation: citation reconstruction {italicize_form(citation)}; "
-            f"selected input {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
+            f"form followed here {italicize_form(selected)} {arrow} {italicize_form(target)} ({label})."
         )
     if citation == selected and output != target:
         return (
             f"Derivation: {italicize_form(selected)} yields regular {italicize_form(output)}; "
-            f"the selected target is {italicize_form(target)} ({label})."
+            f"the Old English form here is {italicize_form(target)} ({label})."
         )
     return (
         f"Derivation: citation reconstruction {italicize_form(citation)}; "
-        f"selected input {italicize_form(selected)} yields {italicize_form(output)}; "
-        f"the selected target is {italicize_form(target)} ({label})."
+        f"form followed here {italicize_form(selected)} yields {italicize_form(output)}; "
+        f"the Old English form here is {italicize_form(target)} ({label})."
     )
 
 
@@ -803,16 +836,16 @@ def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) 
             ]
         )
         if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
-            out.append(f"Outcome: {italicize_form(trace_entry['outcome'])}")
+            out.append(f"Old English form: {italicize_form(trace_entry['outcome'])}")
         else:
-            out.append(f"Transducer outcome: {italicize_form(trace_entry['outcome'])}")
+            out.append(f"Regular outcome: {italicize_form(trace_entry['outcome'])}")
             out.append("")
-            out.append(f"Selected target: {italicize_form(model['metadata'].get('COUNTERPART', ''))}")
+            out.append(f"Old English form: {italicize_form(model['metadata'].get('COUNTERPART', ''))}")
 
     for heading, body in model["sections"]:
         if heading == "### Transducer input and output":
             continue
-        cleaned_body = tidy_prose(body)
+        cleaned_body = clean_reader_facing_prose(tidy_prose(body))
         out.extend(["", demote_model_heading(heading), ""])
         if cleaned_body:
             out.append(cleaned_body)
@@ -829,7 +862,7 @@ def rewrite_book_prose_entry(model: dict[str, object], trace_entry: dict[str, st
     if trace_entry is not None:
         out.extend(["", *render_trace_table(trace_entry)])
     if body.strip():
-        out.extend(["", tidy_prose(body).strip()])
+        out.extend(["", clean_reader_facing_prose(tidy_prose(body)).strip()])
     return "\n".join(out).strip()
 
 

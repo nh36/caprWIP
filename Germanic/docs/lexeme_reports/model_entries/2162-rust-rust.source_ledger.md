@@ -36,3 +36,7 @@ before the book-style prose was drafted.
 ## Post-exhaustion audit 03
 
 - Post-exhaustion audit 03: localized reopened broad citation / removed redundant support / retained broad with source-specific reason / revised under-cited prose.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

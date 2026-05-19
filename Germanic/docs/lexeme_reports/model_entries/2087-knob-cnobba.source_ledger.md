@@ -28,3 +28,7 @@ before the entry was drafted.
 ## Post-exhaustion audit 02
 
 - Post-exhaustion audit 02: localized reopened broad citation / restored support / revised under-cited prose / confirmed project framing.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

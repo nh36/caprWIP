@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The inherited comparative noun is given as `*laimōn` or `*laiman-`, and both
 Orel and Kroonen identify Old English `lām` as a neuter reflex of that family
-[@Orel2003, 272; @Kroonen2013, 363]. The selected input `*láimą` differs from the
+[@Orel2003, 272; @Kroonen2013, 363]. The form followed here, `*láimą`, differs from the
 comparative headword because it represents the stem class that matches the Old
 English noun most directly.
 
@@ -44,10 +44,10 @@ development is straightforward.
 
 ### Class comparison
 
-The comparison below is manual. It separates the inherited comparative n-stem
-label from the OE-facing stem class used to derive the attested noun.
+The comparison below sets the inherited comparative n-stem label beside the
+OE-facing stem class used to derive the attested noun.
 
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | inherited comparative noun | *laimōn | comparative family background | wider family context | useful headword, but not the direct OE-facing input |
-| selected OE-facing stem class | *láimą | compact-trace output: `lām` | lām | exact match between input and attested OE noun |
+| OE-facing stem class followed here | *láimą | regular output: `lām` | lām | exact match between the form followed here and the attested OE noun |

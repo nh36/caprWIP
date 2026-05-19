@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 `PGmc *nēþlō, *nēdlō- 'needle' ... > OE nédl` [@RingeTaylor2014, 329]. The
-selected input `*nḗðlō` is the voiced Verner-grade form used for the Old
+form followed here, `*nḗðlō`, is the voiced Verner-grade form used for the Old
 English comparison, while the citation form `*nḗθlō` remains the broader
 lexeme label.
 
@@ -41,10 +41,11 @@ is involved in this entry.
 Ringe and Taylor give the historical line `*nēþlō, *nēdlō- ... > OE nédl`
 [@RingeTaylor2014, 329]. Campbell likewise lists `nédl` among the expected
 unbroken forms after `t` and `d` [@Campbell1959, §367]. The trace expresses the
-same pathway with the voiced alternant selected for the Old English comparison.
+same pathway with the voiced alternant followed here for the Old English comparison.
 
-The essential choice lies in the PGmc alternant selected for the derivation.
-Once the voiced form is chosen, the rest of the pathway is regular.
+The essential choice lies in which Proto-Germanic alternant is taken as the
+starting point. Once the voiced form is chosen, the rest of the pathway is
+regular.
 
 ### Alternant comparison
 
@@ -53,6 +54,6 @@ the voiced alternant used for Old English.
 
 | Formation / stage | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative voiceless headword | *nḗθlō | broader word-family label rather than the OE-facing alternant | `*nēþlō` line | useful citation form, but not the selected input for the Old English derivation |
-| selected voiced Verner alternant | *nḗðlō | compact-trace output: `nǣdl` | nǣdl | exact match between selected input and attested OE noun |
-| later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | nǣdl | genuine stage in the pathway, but not the selected PGmc input |
+| comparative voiceless headword | *nḗθlō | broader word-family label rather than the OE-facing alternant | `*nēþlō` line | useful citation form, but not the derivational input for the Old English comparison |
+| voiced Verner alternant followed here | *nḗðlō | regular output: `nǣdl` | nǣdl | exact match between the form followed here and the attested OE noun |
+| later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | nǣdl | genuine stage in the pathway, but not the Proto-Germanic form followed here |

@@ -14,7 +14,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 | selected input form | *wúlfaz |
 | Old English target | wulf |
 | classification | unexplained_unmodelled |
-| computed regular output | *wúlfaz -> wolf |
+| computed regular output | *wúlfaz > wolf |
 
 ### Reconstruction and comparative evidence
 
@@ -48,20 +48,19 @@ following non-high vowel, the citation-form input would point toward
 `o`-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
 path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
 
-A high-vowel oblique input would behave differently. In project terms, the
-following high vowel would block the lowering of `u`, but the same environment
+A high-vowel oblique input would behave differently. There the following high
+vowel would block the lowering of `u`, but the same environment
 would also trigger i-umlaut, so the regular control result would be `wylf` or
 `wylfe`, not bare `wulf`. The attested noun therefore remains unexplained at
 the citation-form level.
 
 ### Expected and attested forms
 
-The comparison below is manual. It separates the regular inherited outcomes from
-the attested Old English noun.
+The comparison below sets the regular inherited outcomes beside the attested Old English noun.
 
 | Form / interpretation | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `*wúlfaz -> wolf` | computed regular output from the citation form | shows the regular development expected from the inherited a-stem |
+| `*wúlfaz > wolf` | computed regular output from the citation form | shows the regular development expected from the inherited a-stem |
 | `OHG wolf` | comparative regular cognate | confirms that the `o`-vocalism is the ordinary outcome |
-| `*wúlfi / *wúlfis -> wylf / wylfe` | expected high-vowel control forms | shows why oblique high-vowel cells do not solve the noun's vowel history |
-| `wulf` | attested Old English noun | selected target; the preservation of `u` remains unexplained |
+| `*wúlfi / *wúlfis > wylf / wylfe` | expected high-vowel control forms | shows why oblique high-vowel cells do not solve the noun's vowel history |
+| `wulf` | attested Old English noun | attested Old English form; the preservation of `u` remains unexplained |

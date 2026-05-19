@@ -75,3 +75,7 @@ Citation locator claim-isolation 02 tightened the remaining broad claims and add
 ## Generated-final audit 09
 
 - Generated-final audit 09: localized final broad citation to `Hogg1992, 95`.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

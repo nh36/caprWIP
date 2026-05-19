@@ -19,16 +19,15 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited verb is the strong verb `*fínθaną`, continued by Old English
-`findan` [@RingeTaylor2014, 344]. The selected input `*fúnðanǭ`, however,
+`findan` [@RingeTaylor2014, 344]. The form followed here, `*fúnðanǭ`,
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
 That distinction matters because the familiar dictionary form `funden` is not
-the selected comparison form for this entry. The selected input instead models
-an attested participial cell directly, rather than treating the infinitive or
-the ordinary dictionary headword as the privileged target. It therefore targets
-the comparison form `fundene` in the cell where the trace and the attested form
-match directly.
+the form compared here. The derivational input instead models an attested
+participial form directly, rather than treating the infinitive or the ordinary
+dictionary headword as primary. It therefore reaches `fundene` in the form
+where the trace and the attested evidence match directly.
 
 ### Old English evidence
 
@@ -49,7 +48,7 @@ consonantism and the medial vowel history remain regular.
 
 The broader participial paradigm then matters for interpretation. The more
 familiar nominative `funden` is the ordinary dictionary form, whereas the
-selected oblique form `fundene` is the attested comparison cell used here.
+oblique form `fundene` is the attested form compared here.
 
 ### Paradigm comparison
 
@@ -59,10 +58,10 @@ cited Old English evidence alongside the regular derivational path.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *fínθaną | inherited verb `findan` | findan | establishes the lexeme, but not the selected target |
-| nominative participial line | *fúnðanaz | ordinary dictionary `funden` type | funden | important paradigm background, but not the selected comparison cell |
-| selected oblique participle | *fúnðanǭ | compact-trace output: `fundene` | fundene | exact match between input, output, and attested cell |
+| citation infinitive | *fínθaną | inherited verb `findan` | findan | establishes the lexeme, but not the form compared here |
+| nominative participial line | *fúnðanaz | ordinary dictionary `funden` type | funden | important paradigm background, but not the form compared here |
+| oblique participle compared here | *fúnðanǭ | regular output: `fundene` | fundene | exact match between input, output, and attested cell |
 
-The oblique participle is the relevant comparison form. It matches the selected
-input and target directly, while the nominative participial headword remains a
+The oblique participle is the relevant comparison form. It matches the
+derivational input and Old English form directly, while the nominative participial headword remains a
 different presentation cell within the same paradigm.

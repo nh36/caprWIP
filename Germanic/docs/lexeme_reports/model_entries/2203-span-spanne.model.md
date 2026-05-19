@@ -19,16 +19,16 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Seebold gives Old English `spann` under this noun family [@Seebold1970, 450].
-The selected input `*spánnai` is therefore not a rival headword, but a
-specific dative singular cell chosen on the model of the feminine ō-stem
+The form followed here, `*spánnai`, is therefore not a rival headword, but the
+specific dative singular form compared on the model of the feminine ō-stem
 paradigm [@SieversBrunner1965, §252; @SieversBrunner1965, §255.2].
 
 ### Old English evidence
 
 The reviewed lexicographic evidence more directly supports the citation noun
 `spann` than the exact form `spanne`. Clark Hall gives `spann`
-[@ClarkHall1960, 286], and `spanne` is accordingly treated as the selected
-regular dative singular comparison form rather than as a dictionary headword.
+[@ClarkHall1960, 286], and `spanne` is accordingly treated as the regular
+dative singular form compared here rather than as a dictionary headword.
 
 ### Development to Old English
 
@@ -38,10 +38,10 @@ yields `spanne`, while citation `*spannō` gives the nominative background form.
 
 ### Paradigm comparison
 
-The comparison below is manual. It shows the contrast between the citation form
-and the selected dative singular cell.
+The comparison below sets the citation form beside the dative singular form
+compared here.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *spannō | compact-trace output: `span` | spann | useful citation-form background, but not the selected target |
-| selected dative singular | *spánnai | compact-trace output: `spanne` | spanne | exact match for the chosen conservative cell |
+| citation nominative singular | *spannō | regular output: `span` | spann | useful citation-form background, but not the form compared here |
+| dative singular compared here | *spánnai | regular output: `spanne` | spanne | exact match for that conservative form |

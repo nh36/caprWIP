@@ -21,7 +21,7 @@ DERIVATION_CLASS: reconstructed_oe
 The wider knob-family is not uniform. Kroonen's discussion of the Germanic
 n-stems points to related voiced and voiceless branches within this group
 [@Kroonen2011, 297]. The citation reconstruction `*knúppaz` represents the broader
-cognate-set headword, while the selected input `*knúbbô` represents the voiced
+cognate-set headword, while the form followed here, `*knúbbô`, represents the voiced
 weak-noun branch treated here.
 
 That distinction matters because the Old English record is uneven. The better
@@ -44,7 +44,7 @@ settled point of Old English philology.
 
 ### Development to Old English
 
-From the selected weak-noun input `*knúbbô`, the regular Old English outcome is
+From the weak-noun form followed here, `*knúbbô`, the regular Old English outcome is
 `cnobba`, with Proto-Germanic `kn-` represented in Old English as `cn-` and
 with the expected weak-noun ending.
 
@@ -54,12 +54,12 @@ different: if the voiced weak-noun branch is the one to be represented, then
 
 ### Reconstruction status
 
-The comparison below is manual. It keeps apart the reconstructed target and the
+The comparison below keeps apart the reconstructed target and the
 better-attested neighboring forms.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `*knúbbô -> cnobba` | reconstructed OE form; trace-supported | selected target |
+| `*knúbbô > cnobba` | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
 | `cnopp / cnoppa` | attested OE branch | important control form, but belongs to the voiceless branch |
 | `cnæp` | attested OE form from another family | not part of the present lexeme line |
 

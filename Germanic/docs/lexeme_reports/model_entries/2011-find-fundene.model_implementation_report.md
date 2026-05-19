@@ -88,3 +88,7 @@ Checked against `docs/refs.bib`:
 ## Prose-regression audit 01
 
 - Prose-regression audit 01: corrected post-citation prose/style regression.
+
+## Prose-regression audit 02
+
+- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.

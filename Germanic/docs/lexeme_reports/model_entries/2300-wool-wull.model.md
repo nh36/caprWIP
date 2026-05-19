@@ -14,7 +14,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 | selected input form | *wúllō |
 | Old English target | wull |
 | classification | unexplained_unmodelled |
-| documented output | *wúllō -> woll (regular trace output), but target `wull` |
+| derivational result | *wúllō > woll (regular output), but target `wull` |
 
 ### Reconstruction and comparative evidence
 
@@ -53,11 +53,10 @@ to lower in forms of this sort [@Luick1914, 148; @RingeTaylor2014, §2.3.1].
 
 ### What remains unexplained
 
-The comparison below is manual. It separates the regular trace result from the
-attested lexical exception.
+The comparison below sets the regular result beside the attested lexical exception.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `*wúllō -> woll` | regular trace output | shows what the deterministic sound laws produce |
-| `wull / wulle` | attested OE exception | selected target and philological fact to be recorded |
+| `*wúllō > woll` | regular output | shows what the deterministic sound laws produce |
+| `wull / wulle` | attested OE exception | attested Old English form to be recorded |
 | high-vowel escape from another paradigm cell | unsupported for this noun | rejected because the feminine ō-stem paradigm supplies no suitable escape cell |
