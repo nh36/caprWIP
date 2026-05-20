@@ -1,0 +1,3 @@
+change_id	display_name	current_order	earliest_safe_order	latest_safe_order	breaks_if_one_step_earlier	breaks_if_one_step_later	too_early_failure_count	too_late_failure_count	too_early_example_lexemes	too_late_example_lexemes	current_pass_count	current_fail_count	status	notes
+SC043	Anglo Frisian Brightening	43											not_run	runner not implemented in scaffold 01
+SC063	OE High Vowel Apocope	63											not_run	runner not implemented in scaffold 01
