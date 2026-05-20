@@ -102,8 +102,6 @@ define SOEEwLongDiphthong SOEDiphthongLeveling
     .o. OEEwLongDiphthong;
 define SOEAwLongDiphthong SOEEwLongDiphthong
     .o. OEAwLongDiphthong;
-# Cascade calls OEPrefixAReduction twice (once early, once late). The early
-# invocation's snapshot is named "Early" to distinguish it from the late one.
 define SOEPrefixAReductionEarly SOEAwLongDiphthong
     .o. OEPrefixAReduction;
 define SOEInterStressRaising SOEPrefixAReductionEarly
@@ -188,9 +186,7 @@ define SOEMedUnstressedILowering SOEMedUnstressedILowering1
     .o. OEMedUnstressedILowering;
 define SOEPrefixIReduction SOEMedUnstressedILowering
     .o. OEPrefixIReduction;
-define SOEPrefixAReductionLate SOEPrefixIReduction
-    .o. OEPrefixAReduction;
-define SOEWeakTailReduction SOEPrefixAReductionLate
+define SOEWeakTailReduction SOEPrefixIReduction
     .o. OEWeakTailReduction;
 define SOEJLossAfterHeavy SOEWeakTailReduction
     .o. OEJLossAfterHeavy;
@@ -551,10 +547,6 @@ save stack old_english_sandbox_after_oe_med_unstressed_i_lowering.bin
 clear stack
 regex SOEPrefixIReduction;
 save stack old_english_sandbox_after_oe_prefix_i_reduction.bin
-
-clear stack
-regex SOEPrefixAReductionLate;
-save stack old_english_sandbox_after_oe_prefix_a_reduction_late.bin
 
 clear stack
 regex SOEWeakTailReduction;

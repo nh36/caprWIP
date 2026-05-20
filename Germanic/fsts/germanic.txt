@@ -3254,7 +3254,6 @@ define EnglishProtoToOE (
     .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
-    .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEFinalGeminateSimplification
@@ -3371,7 +3370,6 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
     .o. OEPrefixIReduction
-    .o. OEPrefixAReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
     .o. OEFinalGeminateSimplification

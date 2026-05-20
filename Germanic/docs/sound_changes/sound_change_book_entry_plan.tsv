@@ -32,7 +32,7 @@ BE030	SC031	OE WW Simplification	Old English	31	yes	historical_sound_change	4	ch
 BE031	SC032	OE Diphthong Leveling	Old English	32	yes	historical_sound_change	29	believe, bow, bread, deer, dream	medium		medium
 BE032	SC033	OE Ew Long Diphthong	Old English	33	yes	historical_sound_change	3	chew, four, knee	low		low
 BE033	SC034	OE Aw Long Diphthong	Old English	34	yes	historical_sound_change	6	dew, hew, show, straw, show (3sg)	low		low
-BE034	SC035	OE Prefix A Reduction	Old English	35	yes	historical_sound_change	1	believe	low	Canonical inventory row for the duplicated OEPrefixAReduction rule, which also recurs at order 77.	low
+BE034	SC035	OE Prefix A Reduction	Old English	35	yes	historical_sound_change	1	believe	low	Duplicate audit 01 confirmed the former late computational reapplication was redundant and removed.	low
 BE035	SC036	OE Inter Stress Raising	Old English	36	yes	historical_sound_change	2	soul, world	low		low
 BE036	SC037	OE Compound Linking Syncope	Old English	37	yes	historical_sound_change	1	rainbow	low		low
 BE037	SC038	OE Strip Secondary Stress	Technical	38	appendix	technical_marker	2	rainbow, thousand	low	Marker-stripping cleanup for secondary-stress graves; keep only as methodological appendix material.	low

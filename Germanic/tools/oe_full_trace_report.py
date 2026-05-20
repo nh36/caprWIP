@@ -121,7 +121,6 @@ STAGES: List[Tuple[str, str]] = [
     ("OEMedUnstressedILowering1", "old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin"),
     ("OEMedUnstressedILowering", "old_english_sandbox_after_oe_med_unstressed_i_lowering.bin"),
     ("OEPrefixIReduction", "old_english_sandbox_after_oe_prefix_i_reduction.bin"),
-    ("OEPrefixAReductionLate", "old_english_sandbox_after_oe_prefix_a_reduction_late.bin"),
     ("OEWeakTailReduction", "old_english_sandbox_after_oe_weak_tail_reduction.bin"),
     ("OEJLossAfterHeavy", "old_english_sandbox_after_oe_j_loss_after_heavy.bin"),
     ("OEFinalGeminateSimplification", "old_english_sandbox_after_oe_final_geminate_simplification.bin"),

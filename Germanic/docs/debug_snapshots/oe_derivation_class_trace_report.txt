@@ -93,7 +93,6 @@ OEUnstressedAEMerger: *n*ǣ*d*r*e
 OEMedUnstressedILowering1 [no-change]: *n*ǣ*d*r*e
 OEMedUnstressedILowering [no-change]: *n*ǣ*d*r*e
 OEPrefixIReduction [no-change]: *n*ǣ*d*r*e
-OEPrefixAReductionLate [no-change]: *n*ǣ*d*r*e
 OEWeakTailReduction [no-change]: *n*ǣ*d*r*e
 OEJLossAfterHeavy [no-change]: *n*ǣ*d*r*e
 OEFinalGeminateSimplification [no-change]: *n*ǣ*d*r*e
@@ -210,7 +209,6 @@ OEUnstressedAEMerger [no-change]: *b*a*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*a*k*ą*n
 OEMedUnstressedILowering [no-change]: *b*a*k*ą*n
 OEPrefixIReduction [no-change]: *b*a*k*ą*n
-OEPrefixAReductionLate [no-change]: *b*a*k*ą*n
 OEWeakTailReduction: *b*a*k*a*n
 OEJLossAfterHeavy [no-change]: *b*a*k*a*n
 OEFinalGeminateSimplification [no-change]: *b*a*k*a*n
@@ -326,7 +324,6 @@ OEUnstressedAEMerger [no-change]: *b*éo*r*g
 OEMedUnstressedILowering1 [no-change]: *b*éo*r*g
 OEMedUnstressedILowering [no-change]: *b*éo*r*g
 OEPrefixIReduction [no-change]: *b*éo*r*g
-OEPrefixAReductionLate [no-change]: *b*éo*r*g
 OEWeakTailReduction [no-change]: *b*éo*r*g
 OEJLossAfterHeavy [no-change]: *b*éo*r*g
 OEFinalGeminateSimplification [no-change]: *b*éo*r*g
@@ -442,7 +439,6 @@ OEUnstressedAEMerger [no-change]: *b*æ*s*t
 OEMedUnstressedILowering1 [no-change]: *b*æ*s*t
 OEMedUnstressedILowering [no-change]: *b*æ*s*t
 OEPrefixIReduction [no-change]: *b*æ*s*t
-OEPrefixAReductionLate [no-change]: *b*æ*s*t
 OEWeakTailReduction [no-change]: *b*æ*s*t
 OEJLossAfterHeavy [no-change]: *b*æ*s*t
 OEFinalGeminateSimplification [no-change]: *b*æ*s*t
@@ -558,7 +554,6 @@ OEUnstressedAEMerger [no-change]: *b*æ*θ
 OEMedUnstressedILowering1 [no-change]: *b*æ*θ
 OEMedUnstressedILowering [no-change]: *b*æ*θ
 OEPrefixIReduction [no-change]: *b*æ*θ
-OEPrefixAReductionLate [no-change]: *b*æ*θ
 OEWeakTailReduction [no-change]: *b*æ*θ
 OEJLossAfterHeavy [no-change]: *b*æ*θ
 OEFinalGeminateSimplification [no-change]: *b*æ*θ
@@ -674,7 +669,6 @@ OEUnstressedAEMerger [no-change]: *b*ea*r*d
 OEMedUnstressedILowering1 [no-change]: *b*ea*r*d
 OEMedUnstressedILowering [no-change]: *b*ea*r*d
 OEPrefixIReduction [no-change]: *b*ea*r*d
-OEPrefixAReductionLate [no-change]: *b*ea*r*d
 OEWeakTailReduction [no-change]: *b*ea*r*d
 OEJLossAfterHeavy [no-change]: *b*ea*r*d
 OEFinalGeminateSimplification [no-change]: *b*ea*r*d
@@ -790,7 +784,6 @@ OEUnstressedAEMerger [no-change]: *b*é*β*r
 OEMedUnstressedILowering1 [no-change]: *b*é*β*r
 OEMedUnstressedILowering [no-change]: *b*é*β*r
 OEPrefixIReduction [no-change]: *b*é*β*r
-OEPrefixAReductionLate [no-change]: *b*é*β*r
 OEWeakTailReduction [no-change]: *b*é*β*r
 OEJLossAfterHeavy [no-change]: *b*é*β*r
 OEFinalGeminateSimplification [no-change]: *b*é*β*r
@@ -907,7 +900,6 @@ OEUnstressedAEMerger [no-change]: *b*ō*k
 OEMedUnstressedILowering1 [no-change]: *b*ō*k
 OEMedUnstressedILowering [no-change]: *b*ō*k
 OEPrefixIReduction [no-change]: *b*ō*k
-OEPrefixAReductionLate [no-change]: *b*ō*k
 OEWeakTailReduction [no-change]: *b*ō*k
 OEJLossAfterHeavy [no-change]: *b*ō*k
 OEFinalGeminateSimplification [no-change]: *b*ō*k
@@ -1024,7 +1016,6 @@ OEUnstressedAEMerger [no-change]: *b*i*ʤ*í*n*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*i*ʤ*í*n*n*ą*n
 OEMedUnstressedILowering [no-change]: *b*i*ʤ*í*n*n*ą*n
 OEPrefixIReduction: *b*ĕ*ʤ*í*n*n*ą*n
-OEPrefixAReductionLate [no-change]: *b*ĕ*ʤ*í*n*n*ą*n
 OEWeakTailReduction: *b*ĕ*ʤ*í*n*n*a*n
 OEJLossAfterHeavy [no-change]: *b*ĕ*ʤ*í*n*n*a*n
 OEFinalGeminateSimplification [no-change]: *b*ĕ*ʤ*í*n*n*a*n
@@ -1140,7 +1131,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*ĕ*l*īe*β*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʤ*ĕ*l*īe*β*j*ą*n
 OEMedUnstressedILowering [no-change]: *ʤ*ĕ*l*īe*β*j*ą*n
 OEPrefixIReduction [no-change]: *ʤ*ĕ*l*īe*β*j*ą*n
-OEPrefixAReductionLate [no-change]: *ʤ*ĕ*l*īe*β*j*ą*n
 OEWeakTailReduction: *ʤ*ĕ*l*īe*β*j*a*n
 OEJLossAfterHeavy: *ʤ*ĕ*l*īe*β*a*n
 OEFinalGeminateSimplification [no-change]: *ʤ*ĕ*l*īe*β*a*n
@@ -1256,7 +1246,6 @@ OEUnstressedAEMerger [no-change]: *b*ie*l*ʤ
 OEMedUnstressedILowering1 [no-change]: *b*ie*l*ʤ
 OEMedUnstressedILowering [no-change]: *b*ie*l*ʤ
 OEPrefixIReduction [no-change]: *b*ie*l*ʤ
-OEPrefixAReductionLate [no-change]: *b*ie*l*ʤ
 OEWeakTailReduction [no-change]: *b*ie*l*ʤ
 OEJLossAfterHeavy [no-change]: *b*ie*l*ʤ
 OEFinalGeminateSimplification [no-change]: *b*ie*l*ʤ
@@ -1373,7 +1362,6 @@ OEUnstressedAEMerger [no-change]: *b*ǣ*r
 OEMedUnstressedILowering1 [no-change]: *b*ǣ*r
 OEMedUnstressedILowering [no-change]: *b*ǣ*r
 OEPrefixIReduction [no-change]: *b*ǣ*r
-OEPrefixAReductionLate [no-change]: *b*ǣ*r
 OEWeakTailReduction [no-change]: *b*ǣ*r
 OEJLossAfterHeavy [no-change]: *b*ǣ*r
 OEFinalGeminateSimplification [no-change]: *b*ǣ*r
@@ -1489,7 +1477,6 @@ OEUnstressedAEMerger [no-change]: *b*í*n*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*í*n*d*ą*n
 OEMedUnstressedILowering [no-change]: *b*í*n*d*ą*n
 OEPrefixIReduction [no-change]: *b*í*n*d*ą*n
-OEPrefixAReductionLate [no-change]: *b*í*n*d*ą*n
 OEWeakTailReduction: *b*í*n*d*a*n
 OEJLossAfterHeavy [no-change]: *b*í*n*d*a*n
 OEFinalGeminateSimplification [no-change]: *b*í*n*d*a*n
@@ -1606,7 +1593,6 @@ OEUnstressedAEMerger [no-change]: *b*y*r*d
 OEMedUnstressedILowering1 [no-change]: *b*y*r*d
 OEMedUnstressedILowering [no-change]: *b*y*r*d
 OEPrefixIReduction [no-change]: *b*y*r*d
-OEPrefixAReductionLate [no-change]: *b*y*r*d
 OEWeakTailReduction [no-change]: *b*y*r*d
 OEJLossAfterHeavy [no-change]: *b*y*r*d
 OEFinalGeminateSimplification [no-change]: *b*y*r*d
@@ -1722,7 +1708,6 @@ OEUnstressedAEMerger [no-change]: *b*l*ō*d
 OEMedUnstressedILowering1 [no-change]: *b*l*ō*d
 OEMedUnstressedILowering [no-change]: *b*l*ō*d
 OEPrefixIReduction [no-change]: *b*l*ō*d
-OEPrefixAReductionLate [no-change]: *b*l*ō*d
 OEWeakTailReduction [no-change]: *b*l*ō*d
 OEJLossAfterHeavy [no-change]: *b*l*ō*d
 OEFinalGeminateSimplification [no-change]: *b*l*ō*d
@@ -1838,7 +1823,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*r*d
 OEMedUnstressedILowering1 [no-change]: *b*ó*r*d
 OEMedUnstressedILowering [no-change]: *b*ó*r*d
 OEPrefixIReduction [no-change]: *b*ó*r*d
-OEPrefixAReductionLate [no-change]: *b*ó*r*d
 OEWeakTailReduction [no-change]: *b*ó*r*d
 OEJLossAfterHeavy [no-change]: *b*ó*r*d
 OEFinalGeminateSimplification [no-change]: *b*ó*r*d
@@ -1955,7 +1939,6 @@ OEUnstressedAEMerger [no-change]: *b*ā*n
 OEMedUnstressedILowering1 [no-change]: *b*ā*n
 OEMedUnstressedILowering [no-change]: *b*ā*n
 OEPrefixIReduction [no-change]: *b*ā*n
-OEPrefixAReductionLate [no-change]: *b*ā*n
 OEWeakTailReduction [no-change]: *b*ā*n
 OEJLossAfterHeavy [no-change]: *b*ā*n
 OEFinalGeminateSimplification [no-change]: *b*ā*n
@@ -2071,7 +2054,6 @@ OEUnstressedAEMerger [no-change]: *b*ō*k
 OEMedUnstressedILowering1 [no-change]: *b*ō*k
 OEMedUnstressedILowering [no-change]: *b*ō*k
 OEPrefixIReduction [no-change]: *b*ō*k
-OEPrefixAReductionLate [no-change]: *b*ō*k
 OEWeakTailReduction [no-change]: *b*ō*k
 OEJLossAfterHeavy [no-change]: *b*ō*k
 OEFinalGeminateSimplification [no-change]: *b*ō*k
@@ -2187,7 +2169,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*r*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*ó*r*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *b*ó*r*e*j*ą*n
 OEPrefixIReduction [no-change]: *b*ó*r*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *b*ó*r*e*j*ą*n
 OEWeakTailReduction: *b*ó*r*e*j*a*n
 OEJLossAfterHeavy [no-change]: *b*ó*r*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *b*ó*r*e*j*a*n
@@ -2303,7 +2284,6 @@ OEUnstressedAEMerger [no-change]: *b*ō*s*m
 OEMedUnstressedILowering1 [no-change]: *b*ō*s*m
 OEMedUnstressedILowering [no-change]: *b*ō*s*m
 OEPrefixIReduction [no-change]: *b*ō*s*m
-OEPrefixAReductionLate [no-change]: *b*ō*s*m
 OEWeakTailReduction [no-change]: *b*ō*s*m
 OEJLossAfterHeavy [no-change]: *b*ō*s*m
 OEFinalGeminateSimplification [no-change]: *b*ō*s*m
@@ -2420,7 +2400,6 @@ OEUnstressedAEMerger [no-change]: *b*ū
 OEMedUnstressedILowering1 [no-change]: *b*ū
 OEMedUnstressedILowering [no-change]: *b*ū
 OEPrefixIReduction [no-change]: *b*ū
-OEPrefixAReductionLate [no-change]: *b*ū
 OEWeakTailReduction [no-change]: *b*ū
 OEJLossAfterHeavy [no-change]: *b*ū
 OEFinalGeminateSimplification [no-change]: *b*ū
@@ -2536,7 +2515,6 @@ OEUnstressedAEMerger [no-change]: *b*ō*g
 OEMedUnstressedILowering1 [no-change]: *b*ō*g
 OEMedUnstressedILowering [no-change]: *b*ō*g
 OEPrefixIReduction [no-change]: *b*ō*g
-OEPrefixAReductionLate [no-change]: *b*ō*g
 OEWeakTailReduction [no-change]: *b*ō*g
 OEJLossAfterHeavy [no-change]: *b*ō*g
 OEFinalGeminateSimplification [no-change]: *b*ō*g
@@ -2653,7 +2631,6 @@ OEUnstressedAEMerger [no-change]: *b*īe*ʤ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*īe*ʤ*j*ą*n
 OEMedUnstressedILowering [no-change]: *b*īe*ʤ*j*ą*n
 OEPrefixIReduction [no-change]: *b*īe*ʤ*j*ą*n
-OEPrefixAReductionLate [no-change]: *b*īe*ʤ*j*ą*n
 OEWeakTailReduction: *b*īe*ʤ*j*a*n
 OEJLossAfterHeavy: *b*īe*ʤ*a*n
 OEFinalGeminateSimplification [no-change]: *b*īe*ʤ*a*n
@@ -2769,7 +2746,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*g*a
 OEMedUnstressedILowering1 [no-change]: *b*ó*g*a
 OEMedUnstressedILowering [no-change]: *b*ó*g*a
 OEPrefixIReduction [no-change]: *b*ó*g*a
-OEPrefixAReductionLate [no-change]: *b*ó*g*a
 OEWeakTailReduction [no-change]: *b*ó*g*a
 OEJLossAfterHeavy [no-change]: *b*ó*g*a
 OEFinalGeminateSimplification [no-change]: *b*ó*g*a
@@ -2885,7 +2861,6 @@ OEUnstressedAEMerger [no-change]: *b*ū*r
 OEMedUnstressedILowering1 [no-change]: *b*ū*r
 OEMedUnstressedILowering [no-change]: *b*ū*r
 OEPrefixIReduction [no-change]: *b*ū*r
-OEPrefixAReductionLate [no-change]: *b*ū*r
 OEWeakTailReduction [no-change]: *b*ū*r
 OEJLossAfterHeavy [no-change]: *b*ū*r
 OEFinalGeminateSimplification [no-change]: *b*ū*r
@@ -3001,7 +2976,6 @@ OEUnstressedAEMerger [no-change]: *b*r*ēa*d
 OEMedUnstressedILowering1 [no-change]: *b*r*ēa*d
 OEMedUnstressedILowering [no-change]: *b*r*ēa*d
 OEPrefixIReduction [no-change]: *b*r*ēa*d
-OEPrefixAReductionLate [no-change]: *b*r*ēa*d
 OEWeakTailReduction [no-change]: *b*r*ēa*d
 OEJLossAfterHeavy [no-change]: *b*r*ēa*d
 OEFinalGeminateSimplification [no-change]: *b*r*ēa*d
@@ -3117,7 +3091,6 @@ OEUnstressedAEMerger [no-change]: *b*r*é*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*r*é*k*ą*n
 OEMedUnstressedILowering [no-change]: *b*r*é*k*ą*n
 OEPrefixIReduction [no-change]: *b*r*é*k*ą*n
-OEPrefixAReductionLate [no-change]: *b*r*é*k*ą*n
 OEWeakTailReduction: *b*r*é*k*a*n
 OEJLossAfterHeavy [no-change]: *b*r*é*k*a*n
 OEFinalGeminateSimplification [no-change]: *b*r*é*k*a*n
@@ -3234,7 +3207,6 @@ OEUnstressedAEMerger [no-change]: *b*r*ē*ʧ
 OEMedUnstressedILowering1 [no-change]: *b*r*ē*ʧ
 OEMedUnstressedILowering [no-change]: *b*r*ē*ʧ
 OEPrefixIReduction [no-change]: *b*r*ē*ʧ
-OEPrefixAReductionLate [no-change]: *b*r*ē*ʧ
 OEWeakTailReduction [no-change]: *b*r*ē*ʧ
 OEJLossAfterHeavy [no-change]: *b*r*ē*ʧ
 OEFinalGeminateSimplification [no-change]: *b*r*ē*ʧ
@@ -3350,7 +3322,6 @@ OEUnstressedAEMerger [no-change]: *b*r*ȳ*d
 OEMedUnstressedILowering1 [no-change]: *b*r*ȳ*d
 OEMedUnstressedILowering [no-change]: *b*r*ȳ*d
 OEPrefixIReduction [no-change]: *b*r*ȳ*d
-OEPrefixAReductionLate [no-change]: *b*r*ȳ*d
 OEWeakTailReduction [no-change]: *b*r*ȳ*d
 OEJLossAfterHeavy [no-change]: *b*r*ȳ*d
 OEFinalGeminateSimplification [no-change]: *b*r*ȳ*d
@@ -3466,7 +3437,6 @@ OEUnstressedAEMerger [no-change]: *b*r*í*n*g*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*r*í*n*g*ą*n
 OEMedUnstressedILowering [no-change]: *b*r*í*n*g*ą*n
 OEPrefixIReduction [no-change]: *b*r*í*n*g*ą*n
-OEPrefixAReductionLate [no-change]: *b*r*í*n*g*ą*n
 OEWeakTailReduction: *b*r*í*n*g*a*n
 OEJLossAfterHeavy [no-change]: *b*r*í*n*g*a*n
 OEFinalGeminateSimplification [no-change]: *b*r*í*n*g*a*n
@@ -3582,7 +3552,6 @@ OEUnstressedAEMerger [no-change]: *b*r*ū*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*r*ū*k*ą*n
 OEMedUnstressedILowering [no-change]: *b*r*ū*k*ą*n
 OEPrefixIReduction [no-change]: *b*r*ū*k*ą*n
-OEPrefixAReductionLate [no-change]: *b*r*ū*k*ą*n
 OEWeakTailReduction: *b*r*ū*k*a*n
 OEJLossAfterHeavy [no-change]: *b*r*ū*k*a*n
 OEFinalGeminateSimplification [no-change]: *b*r*ū*k*a*n
@@ -3698,7 +3667,6 @@ OEUnstressedAEMerger [no-change]: *b*r*é*s*t*ą*n
 OEMedUnstressedILowering1 [no-change]: *b*r*é*s*t*ą*n
 OEMedUnstressedILowering [no-change]: *b*r*é*s*t*ą*n
 OEPrefixIReduction [no-change]: *b*r*é*s*t*ą*n
-OEPrefixAReductionLate [no-change]: *b*r*é*s*t*ą*n
 OEWeakTailReduction: *b*r*é*s*t*a*n
 OEJLossAfterHeavy [no-change]: *b*r*é*s*t*a*n
 OEFinalGeminateSimplification [no-change]: *b*r*é*s*t*a*n
@@ -3815,7 +3783,6 @@ OEUnstressedAEMerger [no-change]: *ʧ*ea*l*β
 OEMedUnstressedILowering1 [no-change]: *ʧ*ea*l*β
 OEMedUnstressedILowering [no-change]: *ʧ*ea*l*β
 OEPrefixIReduction [no-change]: *ʧ*ea*l*β
-OEPrefixAReductionLate [no-change]: *ʧ*ea*l*β
 OEWeakTailReduction [no-change]: *ʧ*ea*l*β
 OEJLossAfterHeavy [no-change]: *ʧ*ea*l*β
 OEFinalGeminateSimplification [no-change]: *ʧ*ea*l*β
@@ -3931,7 +3898,6 @@ OEUnstressedAEMerger [no-change]: *ʧ*ēo*w*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʧ*ēo*w*ą*n
 OEMedUnstressedILowering [no-change]: *ʧ*ēo*w*ą*n
 OEPrefixIReduction [no-change]: *ʧ*ēo*w*ą*n
-OEPrefixAReductionLate [no-change]: *ʧ*ēo*w*ą*n
 OEWeakTailReduction: *ʧ*ēo*w*a*n
 OEJLossAfterHeavy [no-change]: *ʧ*ēo*w*a*n
 OEFinalGeminateSimplification [no-change]: *ʧ*ēo*w*a*n
@@ -4047,7 +4013,6 @@ OEUnstressedAEMerger [no-change]: *k*l*í*m*b*ą*n
 OEMedUnstressedILowering1 [no-change]: *k*l*í*m*b*ą*n
 OEMedUnstressedILowering [no-change]: *k*l*í*m*b*ą*n
 OEPrefixIReduction [no-change]: *k*l*í*m*b*ą*n
-OEPrefixAReductionLate [no-change]: *k*l*í*m*b*ą*n
 OEWeakTailReduction: *k*l*í*m*b*a*n
 OEJLossAfterHeavy [no-change]: *k*l*í*m*b*a*n
 OEFinalGeminateSimplification [no-change]: *k*l*í*m*b*a*n
@@ -4164,7 +4129,6 @@ OEUnstressedAEMerger [no-change]: *r*ó*k*k
 OEMedUnstressedILowering1 [no-change]: *r*ó*k*k
 OEMedUnstressedILowering [no-change]: *r*ó*k*k
 OEPrefixIReduction [no-change]: *r*ó*k*k
-OEPrefixAReductionLate [no-change]: *r*ó*k*k
 OEWeakTailReduction [no-change]: *r*ó*k*k
 OEJLossAfterHeavy [no-change]: *r*ó*k*k
 OEFinalGeminateSimplification [no-change]: *r*ó*k*k
@@ -4280,7 +4244,6 @@ OEUnstressedAEMerger [no-change]: *k*á*m*b
 OEMedUnstressedILowering1 [no-change]: *k*á*m*b
 OEMedUnstressedILowering [no-change]: *k*á*m*b
 OEPrefixIReduction [no-change]: *k*á*m*b
-OEPrefixAReductionLate [no-change]: *k*á*m*b
 OEWeakTailReduction [no-change]: *k*á*m*b
 OEJLossAfterHeavy [no-change]: *k*á*m*b
 OEFinalGeminateSimplification [no-change]: *k*á*m*b
@@ -4397,7 +4360,6 @@ OEUnstressedAEMerger [no-change]: *k*ó*r*n
 OEMedUnstressedILowering1 [no-change]: *k*ó*r*n
 OEMedUnstressedILowering [no-change]: *k*ó*r*n
 OEPrefixIReduction [no-change]: *k*ó*r*n
-OEPrefixAReductionLate [no-change]: *k*ó*r*n
 OEWeakTailReduction [no-change]: *k*ó*r*n
 OEJLossAfterHeavy [no-change]: *k*ó*r*n
 OEFinalGeminateSimplification [no-change]: *k*ó*r*n
@@ -4513,7 +4475,6 @@ OEUnstressedAEMerger [no-change]: *k*r*ó*p*p
 OEMedUnstressedILowering1 [no-change]: *k*r*ó*p*p
 OEMedUnstressedILowering [no-change]: *k*r*ó*p*p
 OEPrefixIReduction [no-change]: *k*r*ó*p*p
-OEPrefixAReductionLate [no-change]: *k*r*ó*p*p
 OEWeakTailReduction [no-change]: *k*r*ó*p*p
 OEJLossAfterHeavy [no-change]: *k*r*ó*p*p
 OEFinalGeminateSimplification [no-change]: *k*r*ó*p*p
@@ -4629,7 +4590,6 @@ OEUnstressedAEMerger [no-change]: *d*æ*l
 OEMedUnstressedILowering1 [no-change]: *d*æ*l
 OEMedUnstressedILowering [no-change]: *d*æ*l
 OEPrefixIReduction [no-change]: *d*æ*l
-OEPrefixAReductionLate [no-change]: *d*æ*l
 OEWeakTailReduction [no-change]: *d*æ*l
 OEJLossAfterHeavy [no-change]: *d*æ*l
 OEFinalGeminateSimplification [no-change]: *d*æ*l
@@ -4745,7 +4705,6 @@ OEUnstressedAEMerger [no-change]: *d*æ*ʤ
 OEMedUnstressedILowering1 [no-change]: *d*æ*ʤ
 OEMedUnstressedILowering [no-change]: *d*æ*ʤ
 OEPrefixIReduction [no-change]: *d*æ*ʤ
-OEPrefixAReductionLate [no-change]: *d*æ*ʤ
 OEWeakTailReduction [no-change]: *d*æ*ʤ
 OEJLossAfterHeavy [no-change]: *d*æ*ʤ
 OEFinalGeminateSimplification [no-change]: *d*æ*ʤ
@@ -4861,7 +4820,6 @@ OEUnstressedAEMerger [no-change]: *d*ǣ*l
 OEMedUnstressedILowering1 [no-change]: *d*ǣ*l
 OEMedUnstressedILowering [no-change]: *d*ǣ*l
 OEPrefixIReduction [no-change]: *d*ǣ*l
-OEPrefixAReductionLate [no-change]: *d*ǣ*l
 OEWeakTailReduction [no-change]: *d*ǣ*l
 OEJLossAfterHeavy [no-change]: *d*ǣ*l
 OEFinalGeminateSimplification [no-change]: *d*ǣ*l
@@ -4978,7 +4936,6 @@ OEUnstressedAEMerger [no-change]: *d*ǣ*d
 OEMedUnstressedILowering1 [no-change]: *d*ǣ*d
 OEMedUnstressedILowering [no-change]: *d*ǣ*d
 OEPrefixIReduction [no-change]: *d*ǣ*d
-OEPrefixAReductionLate [no-change]: *d*ǣ*d
 OEWeakTailReduction [no-change]: *d*ǣ*d
 OEJLossAfterHeavy [no-change]: *d*ǣ*d
 OEFinalGeminateSimplification [no-change]: *d*ǣ*d
@@ -5094,7 +5051,6 @@ OEUnstressedAEMerger [no-change]: *d*ēo*r
 OEMedUnstressedILowering1 [no-change]: *d*ēo*r
 OEMedUnstressedILowering [no-change]: *d*ēo*r
 OEPrefixIReduction [no-change]: *d*ēo*r
-OEPrefixAReductionLate [no-change]: *d*ēo*r
 OEWeakTailReduction [no-change]: *d*ēo*r
 OEJLossAfterHeavy [no-change]: *d*ēo*r
 OEFinalGeminateSimplification [no-change]: *d*ēo*r
@@ -5210,7 +5166,6 @@ OEUnstressedAEMerger [no-change]: *d*ḗa*w
 OEMedUnstressedILowering1 [no-change]: *d*ḗa*w
 OEMedUnstressedILowering [no-change]: *d*ḗa*w
 OEPrefixIReduction [no-change]: *d*ḗa*w
-OEPrefixAReductionLate [no-change]: *d*ḗa*w
 OEWeakTailReduction [no-change]: *d*ḗa*w
 OEJLossAfterHeavy [no-change]: *d*ḗa*w
 OEFinalGeminateSimplification [no-change]: *d*ḗa*w
@@ -5326,7 +5281,6 @@ OEUnstressedAEMerger [no-change]: *d*ō*n
 OEMedUnstressedILowering1 [no-change]: *d*ō*n
 OEMedUnstressedILowering [no-change]: *d*ō*n
 OEPrefixIReduction [no-change]: *d*ō*n
-OEPrefixAReductionLate [no-change]: *d*ō*n
 OEWeakTailReduction [no-change]: *d*ō*n
 OEJLossAfterHeavy [no-change]: *d*ō*n
 OEFinalGeminateSimplification [no-change]: *d*ō*n
@@ -5443,7 +5397,6 @@ OEUnstressedAEMerger [no-change]: *d*ó*r
 OEMedUnstressedILowering1 [no-change]: *d*ó*r
 OEMedUnstressedILowering [no-change]: *d*ó*r
 OEPrefixIReduction [no-change]: *d*ó*r
-OEPrefixAReductionLate [no-change]: *d*ó*r
 OEWeakTailReduction [no-change]: *d*ó*r
 OEJLossAfterHeavy [no-change]: *d*ó*r
 OEFinalGeminateSimplification [no-change]: *d*ó*r
@@ -5559,7 +5512,6 @@ OEUnstressedAEMerger [no-change]: *d*ā*g
 OEMedUnstressedILowering1 [no-change]: *d*ā*g
 OEMedUnstressedILowering [no-change]: *d*ā*g
 OEPrefixIReduction [no-change]: *d*ā*g
-OEPrefixAReductionLate [no-change]: *d*ā*g
 OEWeakTailReduction [no-change]: *d*ā*g
 OEJLossAfterHeavy [no-change]: *d*ā*g
 OEFinalGeminateSimplification [no-change]: *d*ā*g
@@ -5675,7 +5627,6 @@ OEUnstressedAEMerger [no-change]: *d*r*ēa*m
 OEMedUnstressedILowering1 [no-change]: *d*r*ēa*m
 OEMedUnstressedILowering [no-change]: *d*r*ēa*m
 OEPrefixIReduction [no-change]: *d*r*ēa*m
-OEPrefixAReductionLate [no-change]: *d*r*ēa*m
 OEWeakTailReduction [no-change]: *d*r*ēa*m
 OEJLossAfterHeavy [no-change]: *d*r*ēa*m
 OEFinalGeminateSimplification [no-change]: *d*r*ēa*m
@@ -5791,7 +5742,6 @@ OEUnstressedAEMerger [no-change]: *d*r*e*n*ʧ
 OEMedUnstressedILowering1 [no-change]: *d*r*e*n*ʧ
 OEMedUnstressedILowering [no-change]: *d*r*e*n*ʧ
 OEPrefixIReduction [no-change]: *d*r*e*n*ʧ
-OEPrefixAReductionLate [no-change]: *d*r*e*n*ʧ
 OEWeakTailReduction [no-change]: *d*r*e*n*ʧ
 OEJLossAfterHeavy [no-change]: *d*r*e*n*ʧ
 OEFinalGeminateSimplification [no-change]: *d*r*e*n*ʧ
@@ -5907,7 +5857,6 @@ OEUnstressedAEMerger [no-change]: *d*r*í*n*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *d*r*í*n*k*ą*n
 OEMedUnstressedILowering [no-change]: *d*r*í*n*k*ą*n
 OEPrefixIReduction [no-change]: *d*r*í*n*k*ą*n
-OEPrefixAReductionLate [no-change]: *d*r*í*n*k*ą*n
 OEWeakTailReduction: *d*r*í*n*k*a*n
 OEJLossAfterHeavy [no-change]: *d*r*í*n*k*a*n
 OEFinalGeminateSimplification [no-change]: *d*r*í*n*k*a*n
@@ -6023,7 +5972,6 @@ OEUnstressedAEMerger [no-change]: *d*r*ḯ*β*ą*n
 OEMedUnstressedILowering1 [no-change]: *d*r*ḯ*β*ą*n
 OEMedUnstressedILowering [no-change]: *d*r*ḯ*β*ą*n
 OEPrefixIReduction [no-change]: *d*r*ḯ*β*ą*n
-OEPrefixAReductionLate [no-change]: *d*r*ḯ*β*ą*n
 OEWeakTailReduction: *d*r*ḯ*β*a*n
 OEJLossAfterHeavy [no-change]: *d*r*ḯ*β*a*n
 OEFinalGeminateSimplification [no-change]: *d*r*ḯ*β*a*n
@@ -6139,7 +6087,6 @@ OEUnstressedAEMerger: *éo*r*θ*e
 OEMedUnstressedILowering1 [no-change]: *éo*r*θ*e
 OEMedUnstressedILowering [no-change]: *éo*r*θ*e
 OEPrefixIReduction [no-change]: *éo*r*θ*e
-OEPrefixAReductionLate [no-change]: *éo*r*θ*e
 OEWeakTailReduction [no-change]: *éo*r*θ*e
 OEJLossAfterHeavy [no-change]: *éo*r*θ*e
 OEFinalGeminateSimplification [no-change]: *éo*r*θ*e
@@ -6255,7 +6202,6 @@ OEUnstressedAEMerger [no-change]: *é*t*ą*n
 OEMedUnstressedILowering1 [no-change]: *é*t*ą*n
 OEMedUnstressedILowering [no-change]: *é*t*ą*n
 OEPrefixIReduction [no-change]: *é*t*ą*n
-OEPrefixAReductionLate [no-change]: *é*t*ą*n
 OEWeakTailReduction: *é*t*a*n
 OEJLossAfterHeavy [no-change]: *é*t*a*n
 OEFinalGeminateSimplification [no-change]: *é*t*a*n
@@ -6371,7 +6317,6 @@ OEUnstressedAEMerger [no-change]: *ǣ*l
 OEMedUnstressedILowering1 [no-change]: *ǣ*l
 OEMedUnstressedILowering [no-change]: *ǣ*l
 OEPrefixIReduction [no-change]: *ǣ*l
-OEPrefixAReductionLate [no-change]: *ǣ*l
 OEWeakTailReduction [no-change]: *ǣ*l
 OEJLossAfterHeavy [no-change]: *ǣ*l
 OEFinalGeminateSimplification [no-change]: *ǣ*l
@@ -6487,7 +6432,6 @@ OEUnstressedAEMerger [no-change]: *f*ea*l*l*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*ea*l*l*ą*n
 OEMedUnstressedILowering [no-change]: *f*ea*l*l*ą*n
 OEPrefixIReduction [no-change]: *f*ea*l*l*ą*n
-OEPrefixAReductionLate [no-change]: *f*ea*l*l*ą*n
 OEWeakTailReduction: *f*ea*l*l*a*n
 OEJLossAfterHeavy [no-change]: *f*ea*l*l*a*n
 OEFinalGeminateSimplification [no-change]: *f*ea*l*l*a*n
@@ -6604,7 +6548,6 @@ OEUnstressedAEMerger [no-change]: *f*a*r*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*a*r*ą*n
 OEMedUnstressedILowering [no-change]: *f*a*r*ą*n
 OEPrefixIReduction [no-change]: *f*a*r*ą*n
-OEPrefixAReductionLate [no-change]: *f*a*r*ą*n
 OEWeakTailReduction: *f*a*r*a*n
 OEJLossAfterHeavy [no-change]: *f*a*r*a*n
 OEFinalGeminateSimplification [no-change]: *f*a*r*a*n
@@ -6720,7 +6663,6 @@ OEUnstressedAEMerger: *f*æ*d*e*r
 OEMedUnstressedILowering1 [no-change]: *f*æ*d*e*r
 OEMedUnstressedILowering [no-change]: *f*æ*d*e*r
 OEPrefixIReduction [no-change]: *f*æ*d*e*r
-OEPrefixAReductionLate [no-change]: *f*æ*d*e*r
 OEWeakTailReduction [no-change]: *f*æ*d*e*r
 OEJLossAfterHeavy [no-change]: *f*æ*d*e*r
 OEFinalGeminateSimplification [no-change]: *f*æ*d*e*r
@@ -6836,7 +6778,6 @@ OEUnstressedAEMerger [no-change]: *f*éo*x
 OEMedUnstressedILowering1 [no-change]: *f*éo*x
 OEMedUnstressedILowering [no-change]: *f*éo*x
 OEPrefixIReduction [no-change]: *f*éo*x
-OEPrefixAReductionLate [no-change]: *f*éo*x
 OEWeakTailReduction [no-change]: *f*éo*x
 OEJLossAfterHeavy [no-change]: *f*éo*x
 OEFinalGeminateSimplification [no-change]: *f*éo*x
@@ -6953,7 +6894,6 @@ OEUnstressedAEMerger [no-change]: *f*é*l*l
 OEMedUnstressedILowering1 [no-change]: *f*é*l*l
 OEMedUnstressedILowering [no-change]: *f*é*l*l
 OEPrefixIReduction [no-change]: *f*é*l*l
-OEPrefixAReductionLate [no-change]: *f*é*l*l
 OEWeakTailReduction [no-change]: *f*é*l*l
 OEJLossAfterHeavy [no-change]: *f*é*l*l
 OEFinalGeminateSimplification [no-change]: *f*é*l*l
@@ -7070,7 +7010,6 @@ OEUnstressedAEMerger [no-change]: *f*ea*r*n
 OEMedUnstressedILowering1 [no-change]: *f*ea*r*n
 OEMedUnstressedILowering [no-change]: *f*ea*r*n
 OEPrefixIReduction [no-change]: *f*ea*r*n
-OEPrefixAReductionLate [no-change]: *f*ea*r*n
 OEWeakTailReduction [no-change]: *f*ea*r*n
 OEJLossAfterHeavy [no-change]: *f*ea*r*n
 OEFinalGeminateSimplification [no-change]: *f*ea*r*n
@@ -7187,7 +7126,6 @@ OEUnstressedAEMerger [no-change]: *f*é*l*d
 OEMedUnstressedILowering1 [no-change]: *f*é*l*d
 OEMedUnstressedILowering [no-change]: *f*é*l*d
 OEPrefixIReduction [no-change]: *f*é*l*d
-OEPrefixAReductionLate [no-change]: *f*é*l*d
 OEWeakTailReduction [no-change]: *f*é*l*d
 OEJLossAfterHeavy [no-change]: *f*é*l*d
 OEFinalGeminateSimplification [no-change]: *f*é*l*d
@@ -7303,7 +7241,6 @@ OEUnstressedAEMerger [no-change]: *f*éo*x*t*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*éo*x*t*ą*n
 OEMedUnstressedILowering [no-change]: *f*éo*x*t*ą*n
 OEPrefixIReduction [no-change]: *f*éo*x*t*ą*n
-OEPrefixAReductionLate [no-change]: *f*éo*x*t*ą*n
 OEWeakTailReduction: *f*éo*x*t*a*n
 OEJLossAfterHeavy [no-change]: *f*éo*x*t*a*n
 OEFinalGeminateSimplification [no-change]: *f*éo*x*t*a*n
@@ -7419,7 +7356,6 @@ OEUnstressedAEMerger [no-change]: *f*í*n*g*r
 OEMedUnstressedILowering1 [no-change]: *f*í*n*g*r
 OEMedUnstressedILowering [no-change]: *f*í*n*g*r
 OEPrefixIReduction [no-change]: *f*í*n*g*r
-OEPrefixAReductionLate [no-change]: *f*í*n*g*r
 OEWeakTailReduction [no-change]: *f*í*n*g*r
 OEJLossAfterHeavy [no-change]: *f*í*n*g*r
 OEFinalGeminateSimplification [no-change]: *f*í*n*g*r
@@ -7535,7 +7471,6 @@ OEUnstressedAEMerger [no-change]: *f*í*ʃ
 OEMedUnstressedILowering1 [no-change]: *f*í*ʃ
 OEMedUnstressedILowering [no-change]: *f*í*ʃ
 OEPrefixIReduction [no-change]: *f*í*ʃ
-OEPrefixAReductionLate [no-change]: *f*í*ʃ
 OEWeakTailReduction [no-change]: *f*í*ʃ
 OEJLossAfterHeavy [no-change]: *f*í*ʃ
 OEFinalGeminateSimplification [no-change]: *f*í*ʃ
@@ -7651,7 +7586,6 @@ OEUnstressedAEMerger [no-change]: *f*ȳ*s*t
 OEMedUnstressedILowering1 [no-change]: *f*ȳ*s*t
 OEMedUnstressedILowering [no-change]: *f*ȳ*s*t
 OEPrefixIReduction [no-change]: *f*ȳ*s*t
-OEPrefixAReductionLate [no-change]: *f*ȳ*s*t
 OEWeakTailReduction [no-change]: *f*ȳ*s*t
 OEJLossAfterHeavy [no-change]: *f*ȳ*s*t
 OEFinalGeminateSimplification [no-change]: *f*ȳ*s*t
@@ -7767,7 +7701,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ea*x*s
 OEMedUnstressedILowering1 [no-change]: *f*l*ea*x*s
 OEMedUnstressedILowering [no-change]: *f*l*ea*x*s
 OEPrefixIReduction [no-change]: *f*l*ea*x*s
-OEPrefixAReductionLate [no-change]: *f*l*ea*x*s
 OEWeakTailReduction [no-change]: *f*l*ea*x*s
 OEJLossAfterHeavy [no-change]: *f*l*ea*x*s
 OEFinalGeminateSimplification [no-change]: *f*l*ea*x*s
@@ -7883,7 +7816,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ēa*x
 OEMedUnstressedILowering1 [no-change]: *f*l*ēa*x
 OEMedUnstressedILowering [no-change]: *f*l*ēa*x
 OEPrefixIReduction [no-change]: *f*l*ēa*x
-OEPrefixAReductionLate [no-change]: *f*l*ēa*x
 OEWeakTailReduction [no-change]: *f*l*ēa*x
 OEJLossAfterHeavy [no-change]: *f*l*ēa*x
 OEFinalGeminateSimplification [no-change]: *f*l*ēa*x
@@ -7999,7 +7931,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ēo*x*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*l*ēo*x*ą*n
 OEMedUnstressedILowering [no-change]: *f*l*ēo*x*ą*n
 OEPrefixIReduction [no-change]: *f*l*ēo*x*ą*n
-OEPrefixAReductionLate [no-change]: *f*l*ēo*x*ą*n
 OEWeakTailReduction: *f*l*ēo*x*a*n
 OEJLossAfterHeavy [no-change]: *f*l*ēo*x*a*n
 OEFinalGeminateSimplification [no-change]: *f*l*ēo*x*a*n
@@ -8115,7 +8046,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ǣ*ʃ
 OEMedUnstressedILowering1 [no-change]: *f*l*ǣ*ʃ
 OEMedUnstressedILowering [no-change]: *f*l*ǣ*ʃ
 OEPrefixIReduction [no-change]: *f*l*ǣ*ʃ
-OEPrefixAReductionLate [no-change]: *f*l*ǣ*ʃ
 OEWeakTailReduction [no-change]: *f*l*ǣ*ʃ
 OEJLossAfterHeavy [no-change]: *f*l*ǣ*ʃ
 OEFinalGeminateSimplification [no-change]: *f*l*ǣ*ʃ
@@ -8231,7 +8161,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ō*d
 OEMedUnstressedILowering1 [no-change]: *f*l*ō*d
 OEMedUnstressedILowering [no-change]: *f*l*ō*d
 OEPrefixIReduction [no-change]: *f*l*ō*d
-OEPrefixAReductionLate [no-change]: *f*l*ō*d
 OEWeakTailReduction [no-change]: *f*l*ō*d
 OEJLossAfterHeavy [no-change]: *f*l*ō*d
 OEFinalGeminateSimplification [no-change]: *f*l*ō*d
@@ -8348,7 +8277,6 @@ OEUnstressedAEMerger [no-change]: *f*l*ēo*g*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*l*ēo*g*ą*n
 OEMedUnstressedILowering [no-change]: *f*l*ēo*g*ą*n
 OEPrefixIReduction [no-change]: *f*l*ēo*g*ą*n
-OEPrefixAReductionLate [no-change]: *f*l*ēo*g*ą*n
 OEWeakTailReduction: *f*l*ēo*g*a*n
 OEJLossAfterHeavy [no-change]: *f*l*ēo*g*a*n
 OEFinalGeminateSimplification [no-change]: *f*l*ēo*g*a*n
@@ -8464,7 +8392,6 @@ OEUnstressedAEMerger [no-change]: *f*ó*l*a
 OEMedUnstressedILowering1 [no-change]: *f*ó*l*a
 OEMedUnstressedILowering [no-change]: *f*ó*l*a
 OEPrefixIReduction [no-change]: *f*ó*l*a
-OEPrefixAReductionLate [no-change]: *f*ó*l*a
 OEWeakTailReduction [no-change]: *f*ó*l*a
 OEJLossAfterHeavy [no-change]: *f*ó*l*a
 OEFinalGeminateSimplification [no-change]: *f*ó*l*a
@@ -8580,7 +8507,6 @@ OEUnstressedAEMerger [no-change]: *f*ō*d*r
 OEMedUnstressedILowering1 [no-change]: *f*ō*d*r
 OEMedUnstressedILowering [no-change]: *f*ō*d*r
 OEPrefixIReduction [no-change]: *f*ō*d*r
-OEPrefixAReductionLate [no-change]: *f*ō*d*r
 OEWeakTailReduction [no-change]: *f*ō*d*r
 OEJLossAfterHeavy [no-change]: *f*ō*d*r
 OEFinalGeminateSimplification [no-change]: *f*ō*d*r
@@ -8696,7 +8622,6 @@ OEUnstressedAEMerger [no-change]: *f*ea*l*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*ea*l*d*ą*n
 OEMedUnstressedILowering [no-change]: *f*ea*l*d*ą*n
 OEPrefixIReduction [no-change]: *f*ea*l*d*ą*n
-OEPrefixAReductionLate [no-change]: *f*ea*l*d*ą*n
 OEWeakTailReduction: *f*ea*l*d*a*n
 OEJLossAfterHeavy [no-change]: *f*ea*l*d*a*n
 OEFinalGeminateSimplification [no-change]: *f*ea*l*d*a*n
@@ -8812,7 +8737,6 @@ OEUnstressedAEMerger [no-change]: *f*ó*l*k
 OEMedUnstressedILowering1 [no-change]: *f*ó*l*k
 OEMedUnstressedILowering [no-change]: *f*ó*l*k
 OEPrefixIReduction [no-change]: *f*ó*l*k
-OEPrefixAReductionLate [no-change]: *f*ó*l*k
 OEWeakTailReduction [no-change]: *f*ó*l*k
 OEJLossAfterHeavy [no-change]: *f*ó*l*k
 OEFinalGeminateSimplification [no-change]: *f*ó*l*k
@@ -8929,7 +8853,6 @@ OEUnstressedAEMerger [no-change]: *l*ēo*s*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*ēo*s*ą*n
 OEMedUnstressedILowering [no-change]: *l*ēo*s*ą*n
 OEPrefixIReduction [no-change]: *l*ēo*s*ą*n
-OEPrefixAReductionLate [no-change]: *l*ēo*s*ą*n
 OEWeakTailReduction: *l*ēo*s*a*n
 OEJLossAfterHeavy [no-change]: *l*ēo*s*a*n
 OEFinalGeminateSimplification [no-change]: *l*ēo*s*a*n
@@ -9045,7 +8968,6 @@ OEUnstressedAEMerger: *f*ēo*w*e*r
 OEMedUnstressedILowering1 [no-change]: *f*ēo*w*e*r
 OEMedUnstressedILowering [no-change]: *f*ēo*w*e*r
 OEPrefixIReduction [no-change]: *f*ēo*w*e*r
-OEPrefixAReductionLate [no-change]: *f*ēo*w*e*r
 OEWeakTailReduction [no-change]: *f*ēo*w*e*r
 OEJLossAfterHeavy [no-change]: *f*ēo*w*e*r
 OEFinalGeminateSimplification [no-change]: *f*ēo*w*e*r
@@ -9161,7 +9083,6 @@ OEUnstressedAEMerger [no-change]: *f*ó*x*s
 OEMedUnstressedILowering1 [no-change]: *f*ó*x*s
 OEMedUnstressedILowering [no-change]: *f*ó*x*s
 OEPrefixIReduction [no-change]: *f*ó*x*s
-OEPrefixAReductionLate [no-change]: *f*ó*x*s
 OEWeakTailReduction [no-change]: *f*ó*x*s
 OEJLossAfterHeavy [no-change]: *f*ó*x*s
 OEFinalGeminateSimplification [no-change]: *f*ó*x*s
@@ -9277,7 +9198,6 @@ OEUnstressedAEMerger [no-change]: *f*r*ēo*s*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*r*ēo*s*ą*n
 OEMedUnstressedILowering [no-change]: *f*r*ēo*s*ą*n
 OEPrefixIReduction [no-change]: *f*r*ēo*s*ą*n
-OEPrefixAReductionLate [no-change]: *f*r*ēo*s*ą*n
 OEWeakTailReduction: *f*r*ēo*s*a*n
 OEJLossAfterHeavy [no-change]: *f*r*ēo*s*a*n
 OEFinalGeminateSimplification [no-change]: *f*r*ēo*s*a*n
@@ -9393,7 +9313,6 @@ OEUnstressedAEMerger [no-change]: *f*r*ēo*n*d
 OEMedUnstressedILowering1 [no-change]: *f*r*ēo*n*d
 OEMedUnstressedILowering [no-change]: *f*r*ēo*n*d
 OEPrefixIReduction [no-change]: *f*r*ēo*n*d
-OEPrefixAReductionLate [no-change]: *f*r*ēo*n*d
 OEWeakTailReduction [no-change]: *f*r*ēo*n*d
 OEJLossAfterHeavy [no-change]: *f*r*ēo*n*d
 OEFinalGeminateSimplification [no-change]: *f*r*ēo*n*d
@@ -9509,7 +9428,6 @@ OEUnstressedAEMerger [no-change]: *f*r*ó*s*t
 OEMedUnstressedILowering1 [no-change]: *f*r*ó*s*t
 OEMedUnstressedILowering [no-change]: *f*r*ó*s*t
 OEPrefixIReduction [no-change]: *f*r*ó*s*t
-OEPrefixAReductionLate [no-change]: *f*r*ó*s*t
 OEWeakTailReduction [no-change]: *f*r*ó*s*t
 OEJLossAfterHeavy [no-change]: *f*r*ó*s*t
 OEFinalGeminateSimplification [no-change]: *f*r*ó*s*t
@@ -9625,7 +9543,6 @@ OEUnstressedAEMerger [no-change]: *f*ú*r*x
 OEMedUnstressedILowering1 [no-change]: *f*ú*r*x
 OEMedUnstressedILowering [no-change]: *f*ú*r*x
 OEPrefixIReduction [no-change]: *f*ú*r*x
-OEPrefixAReductionLate [no-change]: *f*ú*r*x
 OEWeakTailReduction [no-change]: *f*ú*r*x
 OEJLossAfterHeavy [no-change]: *f*ú*r*x
 OEFinalGeminateSimplification [no-change]: *f*ú*r*x
@@ -9742,7 +9659,6 @@ OEUnstressedAEMerger [no-change]: *g*á*n*g
 OEMedUnstressedILowering1 [no-change]: *g*á*n*g
 OEMedUnstressedILowering [no-change]: *g*á*n*g
 OEPrefixIReduction [no-change]: *g*á*n*g
-OEPrefixAReductionLate [no-change]: *g*á*n*g
 OEWeakTailReduction [no-change]: *g*á*n*g
 OEJLossAfterHeavy [no-change]: *g*á*n*g
 OEFinalGeminateSimplification [no-change]: *g*á*n*g
@@ -9858,7 +9774,6 @@ OEUnstressedAEMerger [no-change]: *g*ā*s*t
 OEMedUnstressedILowering1 [no-change]: *g*ā*s*t
 OEMedUnstressedILowering [no-change]: *g*ā*s*t
 OEPrefixIReduction [no-change]: *g*ā*s*t
-OEPrefixAReductionLate [no-change]: *g*ā*s*t
 OEWeakTailReduction [no-change]: *g*ā*s*t
 OEJLossAfterHeavy [no-change]: *g*ā*s*t
 OEFinalGeminateSimplification [no-change]: *g*ā*s*t
@@ -9974,7 +9889,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*i*f*t
 OEMedUnstressedILowering1 [no-change]: *ʤ*i*f*t
 OEMedUnstressedILowering [no-change]: *ʤ*i*f*t
 OEPrefixIReduction [no-change]: *ʤ*i*f*t
-OEPrefixAReductionLate [no-change]: *ʤ*i*f*t
 OEWeakTailReduction [no-change]: *ʤ*i*f*t
 OEJLossAfterHeavy [no-change]: *ʤ*i*f*t
 OEFinalGeminateSimplification [no-change]: *ʤ*i*f*t
@@ -10091,7 +10005,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*íe*β*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʤ*íe*β*ą*n
 OEMedUnstressedILowering [no-change]: *ʤ*íe*β*ą*n
 OEPrefixIReduction [no-change]: *ʤ*íe*β*ą*n
-OEPrefixAReductionLate [no-change]: *ʤ*íe*β*ą*n
 OEWeakTailReduction: *ʤ*íe*β*a*n
 OEJLossAfterHeavy [no-change]: *ʤ*íe*β*a*n
 OEFinalGeminateSimplification [no-change]: *ʤ*íe*β*a*n
@@ -10207,7 +10120,6 @@ OEUnstressedAEMerger [no-change]: *g*ó*d
 OEMedUnstressedILowering1 [no-change]: *g*ó*d
 OEMedUnstressedILowering [no-change]: *g*ó*d
 OEPrefixIReduction [no-change]: *g*ó*d
-OEPrefixAReductionLate [no-change]: *g*ó*d
 OEWeakTailReduction [no-change]: *g*ó*d
 OEJLossAfterHeavy [no-change]: *g*ó*d
 OEFinalGeminateSimplification [no-change]: *g*ó*d
@@ -10324,7 +10236,6 @@ OEUnstressedAEMerger [no-change]: *g*ó*l*d
 OEMedUnstressedILowering1 [no-change]: *g*ó*l*d
 OEMedUnstressedILowering [no-change]: *g*ó*l*d
 OEPrefixIReduction [no-change]: *g*ó*l*d
-OEPrefixAReductionLate [no-change]: *g*ó*l*d
 OEWeakTailReduction [no-change]: *g*ó*l*d
 OEJLossAfterHeavy [no-change]: *g*ó*l*d
 OEFinalGeminateSimplification [no-change]: *g*ó*l*d
@@ -10440,7 +10351,6 @@ OEUnstressedAEMerger [no-change]: *g*ō*s
 OEMedUnstressedILowering1 [no-change]: *g*ō*s
 OEMedUnstressedILowering [no-change]: *g*ō*s
 OEPrefixIReduction [no-change]: *g*ō*s
-OEPrefixAReductionLate [no-change]: *g*ō*s
 OEWeakTailReduction [no-change]: *g*ō*s
 OEJLossAfterHeavy [no-change]: *g*ō*s
 OEFinalGeminateSimplification [no-change]: *g*ō*s
@@ -10556,7 +10466,6 @@ OEUnstressedAEMerger [no-change]: *g*r*æ*s
 OEMedUnstressedILowering1 [no-change]: *g*r*æ*s
 OEMedUnstressedILowering [no-change]: *g*r*æ*s
 OEPrefixIReduction [no-change]: *g*r*æ*s
-OEPrefixAReductionLate [no-change]: *g*r*æ*s
 OEWeakTailReduction [no-change]: *g*r*æ*s
 OEJLossAfterHeavy [no-change]: *g*r*æ*s
 OEFinalGeminateSimplification [no-change]: *g*r*æ*s
@@ -10673,7 +10582,6 @@ OEUnstressedAEMerger [no-change]: *g*r*a*β*ą*n
 OEMedUnstressedILowering1 [no-change]: *g*r*a*β*ą*n
 OEMedUnstressedILowering [no-change]: *g*r*a*β*ą*n
 OEPrefixIReduction [no-change]: *g*r*a*β*ą*n
-OEPrefixAReductionLate [no-change]: *g*r*a*β*ą*n
 OEWeakTailReduction: *g*r*a*β*a*n
 OEJLossAfterHeavy [no-change]: *g*r*a*β*a*n
 OEFinalGeminateSimplification [no-change]: *g*r*a*β*a*n
@@ -10789,7 +10697,6 @@ OEUnstressedAEMerger [no-change]: *g*r*ḯ*p*ą*n
 OEMedUnstressedILowering1 [no-change]: *g*r*ḯ*p*ą*n
 OEMedUnstressedILowering [no-change]: *g*r*ḯ*p*ą*n
 OEPrefixIReduction [no-change]: *g*r*ḯ*p*ą*n
-OEPrefixAReductionLate [no-change]: *g*r*ḯ*p*ą*n
 OEWeakTailReduction: *g*r*ḯ*p*a*n
 OEJLossAfterHeavy [no-change]: *g*r*ḯ*p*a*n
 OEFinalGeminateSimplification [no-change]: *g*r*ḯ*p*a*n
@@ -10905,7 +10812,6 @@ OEUnstressedAEMerger [no-change]: *g*r*ú*n*d
 OEMedUnstressedILowering1 [no-change]: *g*r*ú*n*d
 OEMedUnstressedILowering [no-change]: *g*r*ú*n*d
 OEPrefixIReduction [no-change]: *g*r*ú*n*d
-OEPrefixAReductionLate [no-change]: *g*r*ú*n*d
 OEWeakTailReduction [no-change]: *g*r*ú*n*d
 OEJLossAfterHeavy [no-change]: *g*r*ú*n*d
 OEFinalGeminateSimplification [no-change]: *g*r*ú*n*d
@@ -11022,7 +10928,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*ie*s*t
 OEMedUnstressedILowering1 [no-change]: *ʤ*ie*s*t
 OEMedUnstressedILowering [no-change]: *ʤ*ie*s*t
 OEPrefixIReduction [no-change]: *ʤ*ie*s*t
-OEPrefixAReductionLate [no-change]: *ʤ*ie*s*t
 OEWeakTailReduction [no-change]: *ʤ*ie*s*t
 OEJLossAfterHeavy [no-change]: *ʤ*ie*s*t
 OEFinalGeminateSimplification [no-change]: *ʤ*ie*s*t
@@ -11138,7 +11043,6 @@ OEUnstressedAEMerger [no-change]: *ç*æ*ʤ*l
 OEMedUnstressedILowering1 [no-change]: *ç*æ*ʤ*l
 OEMedUnstressedILowering [no-change]: *ç*æ*ʤ*l
 OEPrefixIReduction [no-change]: *ç*æ*ʤ*l
-OEPrefixAReductionLate [no-change]: *ç*æ*ʤ*l
 OEWeakTailReduction [no-change]: *ç*æ*ʤ*l
 OEJLossAfterHeavy [no-change]: *ç*æ*ʤ*l
 OEFinalGeminateSimplification [no-change]: *ç*æ*ʤ*l
@@ -11255,7 +11159,6 @@ OEUnstressedAEMerger [no-change]: *ç*ǣ*r
 OEMedUnstressedILowering1 [no-change]: *ç*ǣ*r
 OEMedUnstressedILowering [no-change]: *ç*ǣ*r
 OEPrefixIReduction [no-change]: *ç*ǣ*r
-OEPrefixAReductionLate [no-change]: *ç*ǣ*r
 OEWeakTailReduction [no-change]: *ç*ǣ*r
 OEJLossAfterHeavy [no-change]: *ç*ǣ*r
 OEFinalGeminateSimplification [no-change]: *ç*ǣ*r
@@ -11371,7 +11274,6 @@ OEUnstressedAEMerger [no-change]: *ç*ea*l*l
 OEMedUnstressedILowering1 [no-change]: *ç*ea*l*l
 OEMedUnstressedILowering [no-change]: *ç*ea*l*l
 OEPrefixIReduction [no-change]: *ç*ea*l*l
-OEPrefixAReductionLate [no-change]: *ç*ea*l*l
 OEWeakTailReduction [no-change]: *ç*ea*l*l
 OEJLossAfterHeavy [no-change]: *ç*ea*l*l
 OEFinalGeminateSimplification [no-change]: *ç*ea*l*l
@@ -11487,7 +11389,6 @@ OEUnstressedAEMerger [no-change]: *x*á*n*d
 OEMedUnstressedILowering1 [no-change]: *x*á*n*d
 OEMedUnstressedILowering [no-change]: *x*á*n*d
 OEPrefixIReduction [no-change]: *x*á*n*d
-OEPrefixAReductionLate [no-change]: *x*á*n*d
 OEWeakTailReduction [no-change]: *x*á*n*d
 OEJLossAfterHeavy [no-change]: *x*á*n*d
 OEFinalGeminateSimplification [no-change]: *x*á*n*d
@@ -11604,7 +11505,6 @@ OEUnstressedAEMerger [no-change]: *x*á*n*d*l*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *x*á*n*d*l*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *x*á*n*d*l*e*j*ą*n
 OEPrefixIReduction [no-change]: *x*á*n*d*l*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *x*á*n*d*l*e*j*ą*n
 OEWeakTailReduction: *x*á*n*d*l*e*j*a*n
 OEJLossAfterHeavy [no-change]: *x*á*n*d*l*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *x*á*n*d*l*e*j*a*n
@@ -11720,7 +11620,6 @@ OEUnstressedAEMerger [no-change]: *ç*ea*r*m
 OEMedUnstressedILowering1 [no-change]: *ç*ea*r*m
 OEMedUnstressedILowering [no-change]: *ç*ea*r*m
 OEPrefixIReduction [no-change]: *ç*ea*r*m
-OEPrefixAReductionLate [no-change]: *ç*ea*r*m
 OEWeakTailReduction [no-change]: *ç*ea*r*m
 OEJLossAfterHeavy [no-change]: *ç*ea*r*m
 OEFinalGeminateSimplification [no-change]: *ç*ea*r*m
@@ -11837,7 +11736,6 @@ OEUnstressedAEMerger [no-change]: *ç*ie*r*β*i*s*t
 OEMedUnstressedILowering1: *ç*ie*r*β*e*s*t
 OEMedUnstressedILowering [no-change]: *ç*ie*r*β*e*s*t
 OEPrefixIReduction [no-change]: *ç*ie*r*β*e*s*t
-OEPrefixAReductionLate [no-change]: *ç*ie*r*β*e*s*t
 OEWeakTailReduction [no-change]: *ç*ie*r*β*e*s*t
 OEJLossAfterHeavy [no-change]: *ç*ie*r*β*e*s*t
 OEFinalGeminateSimplification [no-change]: *ç*ie*r*β*e*s*t
@@ -11953,7 +11851,6 @@ OEUnstressedAEMerger [no-change]: *ç*a*g*a
 OEMedUnstressedILowering1 [no-change]: *ç*a*g*a
 OEMedUnstressedILowering [no-change]: *ç*a*g*a
 OEPrefixIReduction [no-change]: *ç*a*g*a
-OEPrefixAReductionLate [no-change]: *ç*a*g*a
 OEWeakTailReduction [no-change]: *ç*a*g*a
 OEJLossAfterHeavy [no-change]: *ç*a*g*a
 OEFinalGeminateSimplification [no-change]: *ç*a*g*a
@@ -12069,7 +11966,6 @@ OEUnstressedAEMerger [no-change]: *ç*a*β*o*k
 OEMedUnstressedILowering1 [no-change]: *ç*a*β*o*k
 OEMedUnstressedILowering [no-change]: *ç*a*β*o*k
 OEPrefixIReduction [no-change]: *ç*a*β*o*k
-OEPrefixAReductionLate [no-change]: *ç*a*β*o*k
 OEWeakTailReduction [no-change]: *ç*a*β*o*k
 OEJLossAfterHeavy [no-change]: *ç*a*β*o*k
 OEFinalGeminateSimplification [no-change]: *ç*a*β*o*k
@@ -12185,7 +12081,6 @@ OEUnstressedAEMerger [no-change]: *ç*īe*j
 OEMedUnstressedILowering1 [no-change]: *ç*īe*j
 OEMedUnstressedILowering [no-change]: *ç*īe*j
 OEPrefixIReduction [no-change]: *ç*īe*j
-OEPrefixAReductionLate [no-change]: *ç*īe*j
 OEWeakTailReduction [no-change]: *ç*īe*j
 OEJLossAfterHeavy [no-change]: *ç*īe*j
 OEFinalGeminateSimplification [no-change]: *ç*īe*j
@@ -12301,7 +12196,6 @@ OEUnstressedAEMerger [no-change]: *ç*æ*s*l
 OEMedUnstressedILowering1 [no-change]: *ç*æ*s*l
 OEMedUnstressedILowering [no-change]: *ç*æ*s*l
 OEPrefixIReduction [no-change]: *ç*æ*s*l
-OEPrefixAReductionLate [no-change]: *ç*æ*s*l
 OEWeakTailReduction [no-change]: *ç*æ*s*l
 OEJLossAfterHeavy [no-change]: *ç*æ*s*l
 OEFinalGeminateSimplification [no-change]: *ç*æ*s*l
@@ -12417,7 +12311,6 @@ OEUnstressedAEMerger [no-change]: *ç*ēa*β*o*d
 OEMedUnstressedILowering1 [no-change]: *ç*ēa*β*o*d
 OEMedUnstressedILowering [no-change]: *ç*ēa*β*o*d
 OEPrefixIReduction [no-change]: *ç*ēa*β*o*d
-OEPrefixAReductionLate [no-change]: *ç*ēa*β*o*d
 OEWeakTailReduction [no-change]: *ç*ēa*β*o*d
 OEJLossAfterHeavy [no-change]: *ç*ēa*β*o*d
 OEFinalGeminateSimplification [no-change]: *ç*ēa*β*o*d
@@ -12533,7 +12426,6 @@ OEUnstressedAEMerger [no-change]: *x*ǣ*l*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *x*ǣ*l*j*ą*n
 OEMedUnstressedILowering [no-change]: *x*ǣ*l*j*ą*n
 OEPrefixIReduction [no-change]: *x*ǣ*l*j*ą*n
-OEPrefixAReductionLate [no-change]: *x*ǣ*l*j*ą*n
 OEWeakTailReduction: *x*ǣ*l*j*a*n
 OEJLossAfterHeavy: *x*ǣ*l*a*n
 OEFinalGeminateSimplification [no-change]: *x*ǣ*l*a*n
@@ -12649,7 +12541,6 @@ OEUnstressedAEMerger: *ç*éo*r*t*e
 OEMedUnstressedILowering1 [no-change]: *ç*éo*r*t*e
 OEMedUnstressedILowering [no-change]: *ç*éo*r*t*e
 OEPrefixIReduction [no-change]: *ç*éo*r*t*e
-OEPrefixAReductionLate [no-change]: *ç*éo*r*t*e
 OEWeakTailReduction [no-change]: *ç*éo*r*t*e
 OEJLossAfterHeavy [no-change]: *ç*éo*r*t*e
 OEFinalGeminateSimplification [no-change]: *ç*éo*r*t*e
@@ -12765,7 +12656,6 @@ OEUnstressedAEMerger [no-change]: *ç*éo*r*θ
 OEMedUnstressedILowering1 [no-change]: *ç*éo*r*θ
 OEMedUnstressedILowering [no-change]: *ç*éo*r*θ
 OEPrefixIReduction [no-change]: *ç*éo*r*θ
-OEPrefixAReductionLate [no-change]: *ç*éo*r*θ
 OEWeakTailReduction [no-change]: *ç*éo*r*θ
 OEJLossAfterHeavy [no-change]: *ç*éo*r*θ
 OEFinalGeminateSimplification [no-change]: *ç*éo*r*θ
@@ -12881,7 +12771,6 @@ OEUnstressedAEMerger [no-change]: *x*ǣ*θ
 OEMedUnstressedILowering1 [no-change]: *x*ǣ*θ
 OEMedUnstressedILowering [no-change]: *x*ǣ*θ
 OEPrefixIReduction [no-change]: *x*ǣ*θ
-OEPrefixAReductionLate [no-change]: *x*ǣ*θ
 OEWeakTailReduction [no-change]: *x*ǣ*θ
 OEJLossAfterHeavy [no-change]: *x*ǣ*θ
 OEFinalGeminateSimplification [no-change]: *x*ǣ*θ
@@ -12998,7 +12887,6 @@ OEUnstressedAEMerger [no-change]: *ç*e*ʤ*ʤ*j
 OEMedUnstressedILowering1 [no-change]: *ç*e*ʤ*ʤ*j
 OEMedUnstressedILowering [no-change]: *ç*e*ʤ*ʤ*j
 OEPrefixIReduction [no-change]: *ç*e*ʤ*ʤ*j
-OEPrefixAReductionLate [no-change]: *ç*e*ʤ*ʤ*j
 OEWeakTailReduction [no-change]: *ç*e*ʤ*ʤ*j
 OEJLossAfterHeavy: *ç*e*ʤ*ʤ
 OEFinalGeminateSimplification [no-change]: *ç*e*ʤ*ʤ
@@ -13115,7 +13003,6 @@ OEUnstressedAEMerger [no-change]: *ç*é*l*m
 OEMedUnstressedILowering1 [no-change]: *ç*é*l*m
 OEMedUnstressedILowering [no-change]: *ç*é*l*m
 OEPrefixIReduction [no-change]: *ç*é*l*m
-OEPrefixAReductionLate [no-change]: *ç*é*l*m
 OEWeakTailReduction [no-change]: *ç*é*l*m
 OEJLossAfterHeavy [no-change]: *ç*é*l*m
 OEFinalGeminateSimplification [no-change]: *ç*é*l*m
@@ -13232,7 +13119,6 @@ OEUnstressedAEMerger [no-change]: *ç*é*l*p*ą*n
 OEMedUnstressedILowering1 [no-change]: *ç*é*l*p*ą*n
 OEMedUnstressedILowering [no-change]: *ç*é*l*p*ą*n
 OEPrefixIReduction [no-change]: *ç*é*l*p*ą*n
-OEPrefixAReductionLate [no-change]: *ç*é*l*p*ą*n
 OEWeakTailReduction: *ç*é*l*p*a*n
 OEJLossAfterHeavy [no-change]: *ç*é*l*p*a*n
 OEFinalGeminateSimplification [no-change]: *ç*é*l*p*a*n
@@ -13348,7 +13234,6 @@ OEUnstressedAEMerger [no-change]: *ç*é*l*p
 OEMedUnstressedILowering1 [no-change]: *ç*é*l*p
 OEMedUnstressedILowering [no-change]: *ç*é*l*p
 OEPrefixIReduction [no-change]: *ç*é*l*p
-OEPrefixAReductionLate [no-change]: *ç*é*l*p
 OEWeakTailReduction [no-change]: *ç*é*l*p
 OEJLossAfterHeavy [no-change]: *ç*é*l*p
 OEFinalGeminateSimplification [no-change]: *ç*é*l*p
@@ -13464,7 +13349,6 @@ OEUnstressedAEMerger [no-change]: *ç*éo*r*d
 OEMedUnstressedILowering1 [no-change]: *ç*éo*r*d
 OEMedUnstressedILowering [no-change]: *ç*éo*r*d
 OEPrefixIReduction [no-change]: *ç*éo*r*d
-OEPrefixAReductionLate [no-change]: *ç*éo*r*d
 OEWeakTailReduction [no-change]: *ç*éo*r*d
 OEJLossAfterHeavy [no-change]: *ç*éo*r*d
 OEFinalGeminateSimplification [no-change]: *ç*éo*r*d
@@ -13580,7 +13464,6 @@ OEUnstressedAEMerger [no-change]: *ç*ḗa*w*ą*n
 OEMedUnstressedILowering1 [no-change]: *ç*ḗa*w*ą*n
 OEMedUnstressedILowering [no-change]: *ç*ḗa*w*ą*n
 OEPrefixIReduction [no-change]: *ç*ḗa*w*ą*n
-OEPrefixAReductionLate [no-change]: *ç*ḗa*w*ą*n
 OEWeakTailReduction: *ç*ḗa*w*a*n
 OEJLossAfterHeavy [no-change]: *ç*ḗa*w*a*n
 OEFinalGeminateSimplification [no-change]: *ç*ḗa*w*a*n
@@ -13697,7 +13580,6 @@ OEUnstressedAEMerger [no-change]: *ç*i*n*d*j
 OEMedUnstressedILowering1 [no-change]: *ç*i*n*d*j
 OEMedUnstressedILowering [no-change]: *ç*i*n*d*j
 OEPrefixIReduction [no-change]: *ç*i*n*d*j
-OEPrefixAReductionLate [no-change]: *ç*i*n*d*j
 OEWeakTailReduction [no-change]: *ç*i*n*d*j
 OEJLossAfterHeavy: *ç*i*n*d
 OEFinalGeminateSimplification [no-change]: *ç*i*n*d
@@ -13813,7 +13695,6 @@ OEUnstressedAEMerger [no-change]: *x*ó*r*d
 OEMedUnstressedILowering1 [no-change]: *x*ó*r*d
 OEMedUnstressedILowering [no-change]: *x*ó*r*d
 OEPrefixIReduction [no-change]: *x*ó*r*d
-OEPrefixAReductionLate [no-change]: *x*ó*r*d
 OEWeakTailReduction [no-change]: *x*ó*r*d
 OEJLossAfterHeavy [no-change]: *x*ó*r*d
 OEFinalGeminateSimplification [no-change]: *x*ó*r*d
@@ -13930,7 +13811,6 @@ OEUnstressedAEMerger [no-change]: *ç*ea*l*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *ç*ea*l*d*ą*n
 OEMedUnstressedILowering [no-change]: *ç*ea*l*d*ą*n
 OEPrefixIReduction [no-change]: *ç*ea*l*d*ą*n
-OEPrefixAReductionLate [no-change]: *ç*ea*l*d*ą*n
 OEWeakTailReduction: *ç*ea*l*d*a*n
 OEJLossAfterHeavy [no-change]: *ç*ea*l*d*a*n
 OEFinalGeminateSimplification [no-change]: *ç*ea*l*d*a*n
@@ -14046,7 +13926,6 @@ OEUnstressedAEMerger [no-change]: *x*ā*m
 OEMedUnstressedILowering1 [no-change]: *x*ā*m
 OEMedUnstressedILowering [no-change]: *x*ā*m
 OEPrefixIReduction [no-change]: *x*ā*m
-OEPrefixAReductionLate [no-change]: *x*ā*m
 OEWeakTailReduction [no-change]: *x*ā*m
 OEJLossAfterHeavy [no-change]: *x*ā*m
 OEFinalGeminateSimplification [no-change]: *x*ā*m
@@ -14162,7 +14041,6 @@ OEUnstressedAEMerger: *x*ú*n*e*ʤ
 OEMedUnstressedILowering1 [no-change]: *x*ú*n*e*ʤ
 OEMedUnstressedILowering [no-change]: *x*ú*n*e*ʤ
 OEPrefixIReduction [no-change]: *x*ú*n*e*ʤ
-OEPrefixAReductionLate [no-change]: *x*ú*n*e*ʤ
 OEWeakTailReduction [no-change]: *x*ú*n*e*ʤ
 OEJLossAfterHeavy [no-change]: *x*ú*n*e*ʤ
 OEFinalGeminateSimplification [no-change]: *x*ú*n*e*ʤ
@@ -14278,7 +14156,6 @@ OEUnstressedAEMerger [no-change]: *x*ō*d
 OEMedUnstressedILowering1 [no-change]: *x*ō*d
 OEMedUnstressedILowering [no-change]: *x*ō*d
 OEPrefixIReduction [no-change]: *x*ō*d
-OEPrefixAReductionLate [no-change]: *x*ō*d
 OEWeakTailReduction [no-change]: *x*ō*d
 OEJLossAfterHeavy [no-change]: *x*ō*d
 OEFinalGeminateSimplification [no-change]: *x*ō*d
@@ -14394,7 +14271,6 @@ OEUnstressedAEMerger [no-change]: *x*ō*f
 OEMedUnstressedILowering1 [no-change]: *x*ō*f
 OEMedUnstressedILowering [no-change]: *x*ō*f
 OEPrefixIReduction [no-change]: *x*ō*f
-OEPrefixAReductionLate [no-change]: *x*ō*f
 OEWeakTailReduction [no-change]: *x*ō*f
 OEJLossAfterHeavy [no-change]: *x*ō*f
 OEFinalGeminateSimplification [no-change]: *x*ō*f
@@ -14511,7 +14387,6 @@ OEUnstressedAEMerger [no-change]: *x*ó*r*n
 OEMedUnstressedILowering1 [no-change]: *x*ó*r*n
 OEMedUnstressedILowering [no-change]: *x*ó*r*n
 OEPrefixIReduction [no-change]: *x*ó*r*n
-OEPrefixAReductionLate [no-change]: *x*ó*r*n
 OEWeakTailReduction [no-change]: *x*ó*r*n
 OEJLossAfterHeavy [no-change]: *x*ó*r*n
 OEFinalGeminateSimplification [no-change]: *x*ó*r*n
@@ -14627,7 +14502,6 @@ OEUnstressedAEMerger [no-change]: *x*ú*n*d
 OEMedUnstressedILowering1 [no-change]: *x*ú*n*d
 OEMedUnstressedILowering [no-change]: *x*ú*n*d
 OEPrefixIReduction [no-change]: *x*ú*n*d
-OEPrefixAReductionLate [no-change]: *x*ú*n*d
 OEWeakTailReduction [no-change]: *x*ú*n*d
 OEJLossAfterHeavy [no-change]: *x*ú*n*d
 OEFinalGeminateSimplification [no-change]: *x*ú*n*d
@@ -14743,7 +14617,6 @@ OEUnstressedAEMerger [no-change]: *k*n*é*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *k*n*é*d*ą*n
 OEMedUnstressedILowering [no-change]: *k*n*é*d*ą*n
 OEPrefixIReduction [no-change]: *k*n*é*d*ą*n
-OEPrefixAReductionLate [no-change]: *k*n*é*d*ą*n
 OEWeakTailReduction: *k*n*é*d*a*n
 OEJLossAfterHeavy [no-change]: *k*n*é*d*a*n
 OEFinalGeminateSimplification [no-change]: *k*n*é*d*a*n
@@ -14859,7 +14732,6 @@ OEUnstressedAEMerger [no-change]: *k*n*ēo*w
 OEMedUnstressedILowering1 [no-change]: *k*n*ēo*w
 OEMedUnstressedILowering [no-change]: *k*n*ēo*w
 OEPrefixIReduction [no-change]: *k*n*ēo*w
-OEPrefixAReductionLate [no-change]: *k*n*ēo*w
 OEWeakTailReduction [no-change]: *k*n*ēo*w
 OEJLossAfterHeavy [no-change]: *k*n*ēo*w
 OEFinalGeminateSimplification [no-change]: *k*n*ēo*w
@@ -14975,7 +14847,6 @@ OEUnstressedAEMerger [no-change]: *l*á*n*d
 OEMedUnstressedILowering1 [no-change]: *l*á*n*d
 OEMedUnstressedILowering [no-change]: *l*á*n*d
 OEPrefixIReduction [no-change]: *l*á*n*d
-OEPrefixAReductionLate [no-change]: *l*á*n*d
 OEWeakTailReduction [no-change]: *l*á*n*d
 OEJLossAfterHeavy [no-change]: *l*á*n*d
 OEFinalGeminateSimplification [no-change]: *l*á*n*d
@@ -15091,7 +14962,6 @@ OEUnstressedAEMerger [no-change]: *l*ǣ*s*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*ǣ*s*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *l*ǣ*s*t*j*ą*n
 OEPrefixIReduction [no-change]: *l*ǣ*s*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *l*ǣ*s*t*j*ą*n
 OEWeakTailReduction: *l*ǣ*s*t*j*a*n
 OEJLossAfterHeavy: *l*ǣ*s*t*a*n
 OEFinalGeminateSimplification [no-change]: *l*ǣ*s*t*a*n
@@ -15208,7 +15078,6 @@ OEUnstressedAEMerger [no-change]: *l*ǣ*d*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*ǣ*d*j*ą*n
 OEMedUnstressedILowering [no-change]: *l*ǣ*d*j*ą*n
 OEPrefixIReduction [no-change]: *l*ǣ*d*j*ą*n
-OEPrefixAReductionLate [no-change]: *l*ǣ*d*j*ą*n
 OEWeakTailReduction: *l*ǣ*d*j*a*n
 OEJLossAfterHeavy: *l*ǣ*d*a*n
 OEFinalGeminateSimplification [no-change]: *l*ǣ*d*a*n
@@ -15324,7 +15193,6 @@ OEUnstressedAEMerger [no-change]: *l*ēa*β
 OEMedUnstressedILowering1 [no-change]: *l*ēa*β
 OEMedUnstressedILowering [no-change]: *l*ēa*β
 OEPrefixIReduction [no-change]: *l*ēa*β
-OEPrefixAReductionLate [no-change]: *l*ēa*β
 OEWeakTailReduction [no-change]: *l*ēa*β
 OEJLossAfterHeavy [no-change]: *l*ēa*β
 OEFinalGeminateSimplification [no-change]: *l*ēa*β
@@ -15441,7 +15309,6 @@ OEUnstressedAEMerger [no-change]: *l*ío*r*n*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*ío*r*n*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *l*ío*r*n*e*j*ą*n
 OEPrefixIReduction [no-change]: *l*ío*r*n*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *l*ío*r*n*e*j*ą*n
 OEWeakTailReduction: *l*ío*r*n*e*j*a*n
 OEJLossAfterHeavy [no-change]: *l*ío*r*n*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *l*ío*r*n*e*j*a*n
@@ -15557,7 +15424,6 @@ OEUnstressedAEMerger [no-change]: *l*é*θ*r
 OEMedUnstressedILowering1 [no-change]: *l*é*θ*r
 OEMedUnstressedILowering [no-change]: *l*é*θ*r
 OEPrefixIReduction [no-change]: *l*é*θ*r
-OEPrefixAReductionLate [no-change]: *l*é*θ*r
 OEWeakTailReduction [no-change]: *l*é*θ*r
 OEJLossAfterHeavy [no-change]: *l*é*θ*r
 OEFinalGeminateSimplification [no-change]: *l*é*θ*r
@@ -15673,7 +15539,6 @@ OEUnstressedAEMerger [no-change]: *l*ēa*k
 OEMedUnstressedILowering1 [no-change]: *l*ēa*k
 OEMedUnstressedILowering [no-change]: *l*ēa*k
 OEPrefixIReduction [no-change]: *l*ēa*k
-OEPrefixAReductionLate [no-change]: *l*ēa*k
 OEWeakTailReduction [no-change]: *l*ēa*k
 OEJLossAfterHeavy [no-change]: *l*ēa*k
 OEFinalGeminateSimplification [no-change]: *l*ēa*k
@@ -15789,7 +15654,6 @@ OEUnstressedAEMerger [no-change]: *l*ǣ*t*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*ǣ*t*ą*n
 OEMedUnstressedILowering [no-change]: *l*ǣ*t*ą*n
 OEPrefixIReduction [no-change]: *l*ǣ*t*ą*n
-OEPrefixAReductionLate [no-change]: *l*ǣ*t*ą*n
 OEWeakTailReduction: *l*ǣ*t*a*n
 OEJLossAfterHeavy [no-change]: *l*ǣ*t*a*n
 OEFinalGeminateSimplification [no-change]: *l*ǣ*t*a*n
@@ -15905,7 +15769,6 @@ OEUnstressedAEMerger [no-change]: *l*í*k*k*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*í*k*k*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *l*í*k*k*e*j*ą*n
 OEPrefixIReduction [no-change]: *l*í*k*k*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *l*í*k*k*e*j*ą*n
 OEWeakTailReduction: *l*í*k*k*e*j*a*n
 OEJLossAfterHeavy [no-change]: *l*í*k*k*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *l*í*k*k*e*j*a*n
@@ -16022,7 +15885,6 @@ OEUnstressedAEMerger [no-change]: *x*l*í*d
 OEMedUnstressedILowering1 [no-change]: *x*l*í*d
 OEMedUnstressedILowering [no-change]: *x*l*í*d
 OEPrefixIReduction [no-change]: *x*l*í*d
-OEPrefixAReductionLate [no-change]: *x*l*í*d
 OEWeakTailReduction [no-change]: *x*l*í*d
 OEJLossAfterHeavy [no-change]: *x*l*í*d
 OEFinalGeminateSimplification [no-change]: *x*l*í*d
@@ -16138,7 +16000,6 @@ OEUnstressedAEMerger [no-change]: *l*ḯ*β
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*β
 OEMedUnstressedILowering [no-change]: *l*ḯ*β
 OEPrefixIReduction [no-change]: *l*ḯ*β
-OEPrefixAReductionLate [no-change]: *l*ḯ*β
 OEWeakTailReduction [no-change]: *l*ḯ*β
 OEJLossAfterHeavy [no-change]: *l*ḯ*β
 OEFinalGeminateSimplification [no-change]: *l*ḯ*β
@@ -16255,7 +16116,6 @@ OEUnstressedAEMerger [no-change]: *l*īe*x*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *l*īe*x*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *l*īe*x*t*j*ą*n
 OEPrefixIReduction [no-change]: *l*īe*x*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *l*īe*x*t*j*ą*n
 OEWeakTailReduction: *l*īe*x*t*j*a*n
 OEJLossAfterHeavy: *l*īe*x*t*a*n
 OEFinalGeminateSimplification [no-change]: *l*īe*x*t*a*n
@@ -16371,7 +16231,6 @@ OEUnstressedAEMerger [no-change]: *l*ḯ*m
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*m
 OEMedUnstressedILowering [no-change]: *l*ḯ*m
 OEPrefixIReduction [no-change]: *l*ḯ*m
-OEPrefixAReductionLate [no-change]: *l*ḯ*m
 OEWeakTailReduction [no-change]: *l*ḯ*m
 OEJLossAfterHeavy [no-change]: *l*ḯ*m
 OEFinalGeminateSimplification [no-change]: *l*ḯ*m
@@ -16488,7 +16347,6 @@ OEUnstressedAEMerger [no-change]: *l*í*n*d
 OEMedUnstressedILowering1 [no-change]: *l*í*n*d
 OEMedUnstressedILowering [no-change]: *l*í*n*d
 OEPrefixIReduction [no-change]: *l*í*n*d
-OEPrefixAReductionLate [no-change]: *l*í*n*d
 OEWeakTailReduction [no-change]: *l*í*n*d
 OEJLossAfterHeavy [no-change]: *l*í*n*d
 OEFinalGeminateSimplification [no-change]: *l*í*n*d
@@ -16604,7 +16462,6 @@ OEUnstressedAEMerger: *l*ḯ*n*e
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*n*e
 OEMedUnstressedILowering [no-change]: *l*ḯ*n*e
 OEPrefixIReduction [no-change]: *l*ḯ*n*e
-OEPrefixAReductionLate [no-change]: *l*ḯ*n*e
 OEWeakTailReduction [no-change]: *l*ḯ*n*e
 OEJLossAfterHeavy [no-change]: *l*ḯ*n*e
 OEFinalGeminateSimplification [no-change]: *l*ḯ*n*e
@@ -16720,7 +16577,6 @@ OEUnstressedAEMerger: *l*ḯ*s*t*e
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*s*t*e
 OEMedUnstressedILowering [no-change]: *l*ḯ*s*t*e
 OEPrefixIReduction [no-change]: *l*ḯ*s*t*e
-OEPrefixAReductionLate [no-change]: *l*ḯ*s*t*e
 OEWeakTailReduction [no-change]: *l*ḯ*s*t*e
 OEJLossAfterHeavy [no-change]: *l*ḯ*s*t*e
 OEFinalGeminateSimplification [no-change]: *l*ḯ*s*t*e
@@ -16836,7 +16692,6 @@ OEUnstressedAEMerger [no-change]: *l*í*β*r
 OEMedUnstressedILowering1 [no-change]: *l*í*β*r
 OEMedUnstressedILowering [no-change]: *l*í*β*r
 OEPrefixIReduction [no-change]: *l*í*β*r
-OEPrefixAReductionLate [no-change]: *l*í*β*r
 OEWeakTailReduction [no-change]: *l*í*β*r
 OEJLossAfterHeavy [no-change]: *l*í*β*r
 OEFinalGeminateSimplification [no-change]: *l*í*β*r
@@ -16952,7 +16807,6 @@ OEUnstressedAEMerger [no-change]: *l*ā*θ
 OEMedUnstressedILowering1 [no-change]: *l*ā*θ
 OEMedUnstressedILowering [no-change]: *l*ā*θ
 OEPrefixIReduction [no-change]: *l*ā*θ
-OEPrefixAReductionLate [no-change]: *l*ā*θ
 OEWeakTailReduction [no-change]: *l*ā*θ
 OEJLossAfterHeavy [no-change]: *l*ā*θ
 OEFinalGeminateSimplification [no-change]: *l*ā*θ
@@ -17068,7 +16922,6 @@ OEUnstressedAEMerger [no-change]: *l*ó*k
 OEMedUnstressedILowering1 [no-change]: *l*ó*k
 OEMedUnstressedILowering [no-change]: *l*ó*k
 OEPrefixIReduction [no-change]: *l*ó*k
-OEPrefixAReductionLate [no-change]: *l*ó*k
 OEWeakTailReduction [no-change]: *l*ó*k
 OEJLossAfterHeavy [no-change]: *l*ó*k
 OEFinalGeminateSimplification [no-change]: *l*ó*k
@@ -17184,7 +17037,6 @@ OEUnstressedAEMerger [no-change]: *l*ó*k*k
 OEMedUnstressedILowering1 [no-change]: *l*ó*k*k
 OEMedUnstressedILowering [no-change]: *l*ó*k*k
 OEPrefixIReduction [no-change]: *l*ó*k*k
-OEPrefixAReductionLate [no-change]: *l*ó*k*k
 OEWeakTailReduction [no-change]: *l*ó*k*k
 OEJLossAfterHeavy [no-change]: *l*ó*k*k
 OEFinalGeminateSimplification [no-change]: *l*ó*k*k
@@ -17300,7 +17152,6 @@ OEUnstressedAEMerger [no-change]: *l*ū*s
 OEMedUnstressedILowering1 [no-change]: *l*ū*s
 OEMedUnstressedILowering [no-change]: *l*ū*s
 OEPrefixIReduction [no-change]: *l*ū*s
-OEPrefixAReductionLate [no-change]: *l*ū*s
 OEWeakTailReduction [no-change]: *l*ū*s
 OEJLossAfterHeavy [no-change]: *l*ū*s
 OEFinalGeminateSimplification [no-change]: *l*ū*s
@@ -17416,7 +17267,6 @@ OEUnstressedAEMerger [no-change]: *l*ú*s*t
 OEMedUnstressedILowering1 [no-change]: *l*ú*s*t
 OEMedUnstressedILowering [no-change]: *l*ú*s*t
 OEPrefixIReduction [no-change]: *l*ú*s*t
-OEPrefixAReductionLate [no-change]: *l*ú*s*t
 OEWeakTailReduction [no-change]: *l*ú*s*t
 OEJLossAfterHeavy [no-change]: *l*ú*s*t
 OEFinalGeminateSimplification [no-change]: *l*ú*s*t
@@ -17532,7 +17382,6 @@ OEUnstressedAEMerger [no-change]: *l*ēa*g
 OEMedUnstressedILowering1 [no-change]: *l*ēa*g
 OEMedUnstressedILowering [no-change]: *l*ēa*g
 OEPrefixIReduction [no-change]: *l*ēa*g
-OEPrefixAReductionLate [no-change]: *l*ēa*g
 OEWeakTailReduction [no-change]: *l*ēa*g
 OEJLossAfterHeavy [no-change]: *l*ēa*g
 OEFinalGeminateSimplification [no-change]: *l*ēa*g
@@ -17648,7 +17497,6 @@ OEUnstressedAEMerger [no-change]: *m*a*k*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *m*a*k*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *m*a*k*e*j*ą*n
 OEPrefixIReduction [no-change]: *m*a*k*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *m*a*k*e*j*ą*n
 OEWeakTailReduction: *m*a*k*e*j*a*n
 OEJLossAfterHeavy [no-change]: *m*a*k*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *m*a*k*e*j*a*n
@@ -17764,7 +17612,6 @@ OEUnstressedAEMerger [no-change]: *m*ea*l*t
 OEMedUnstressedILowering1 [no-change]: *m*ea*l*t
 OEMedUnstressedILowering [no-change]: *m*ea*l*t
 OEPrefixIReduction [no-change]: *m*ea*l*t
-OEPrefixAReductionLate [no-change]: *m*ea*l*t
 OEWeakTailReduction [no-change]: *m*ea*l*t
 OEJLossAfterHeavy [no-change]: *m*ea*l*t
 OEFinalGeminateSimplification [no-change]: *m*ea*l*t
@@ -17881,7 +17728,6 @@ OEUnstressedAEMerger [no-change]: *m*ea*r*k
 OEMedUnstressedILowering1 [no-change]: *m*ea*r*k
 OEMedUnstressedILowering [no-change]: *m*ea*r*k
 OEPrefixIReduction [no-change]: *m*ea*r*k
-OEPrefixAReductionLate [no-change]: *m*ea*r*k
 OEWeakTailReduction [no-change]: *m*ea*r*k
 OEJLossAfterHeavy [no-change]: *m*ea*r*k
 OEFinalGeminateSimplification [no-change]: *m*ea*r*k
@@ -17997,7 +17843,6 @@ OEUnstressedAEMerger [no-change]: *m*æ*s*t
 OEMedUnstressedILowering1 [no-change]: *m*æ*s*t
 OEMedUnstressedILowering [no-change]: *m*æ*s*t
 OEPrefixIReduction [no-change]: *m*æ*s*t
-OEPrefixAReductionLate [no-change]: *m*æ*s*t
 OEWeakTailReduction [no-change]: *m*æ*s*t
 OEJLossAfterHeavy [no-change]: *m*æ*s*t
 OEFinalGeminateSimplification [no-change]: *m*æ*s*t
@@ -18113,7 +17958,6 @@ OEUnstressedAEMerger [no-change]: *m*ǣ*l
 OEMedUnstressedILowering1 [no-change]: *m*ǣ*l
 OEMedUnstressedILowering [no-change]: *m*ǣ*l
 OEPrefixIReduction [no-change]: *m*ǣ*l
-OEPrefixAReductionLate [no-change]: *m*ǣ*l
 OEWeakTailReduction [no-change]: *m*ǣ*l
 OEJLossAfterHeavy [no-change]: *m*ǣ*l
 OEFinalGeminateSimplification [no-change]: *m*ǣ*l
@@ -18229,7 +18073,6 @@ OEUnstressedAEMerger [no-change]: *m*ǣ*n*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *m*ǣ*n*j*ą*n
 OEMedUnstressedILowering [no-change]: *m*ǣ*n*j*ą*n
 OEPrefixIReduction [no-change]: *m*ǣ*n*j*ą*n
-OEPrefixAReductionLate [no-change]: *m*ǣ*n*j*ą*n
 OEWeakTailReduction: *m*ǣ*n*j*a*n
 OEJLossAfterHeavy: *m*ǣ*n*a*n
 OEFinalGeminateSimplification [no-change]: *m*ǣ*n*a*n
@@ -18345,7 +18188,6 @@ OEUnstressedAEMerger [no-change]: *m*i*x*t
 OEMedUnstressedILowering1 [no-change]: *m*i*x*t
 OEMedUnstressedILowering [no-change]: *m*i*x*t
 OEPrefixIReduction [no-change]: *m*i*x*t
-OEPrefixAReductionLate [no-change]: *m*i*x*t
 OEWeakTailReduction [no-change]: *m*i*x*t
 OEJLossAfterHeavy [no-change]: *m*i*x*t
 OEFinalGeminateSimplification [no-change]: *m*i*x*t
@@ -18462,7 +18304,6 @@ OEUnstressedAEMerger [no-change]: *m*éo*l*o*k
 OEMedUnstressedILowering1 [no-change]: *m*éo*l*o*k
 OEMedUnstressedILowering [no-change]: *m*éo*l*o*k
 OEPrefixIReduction [no-change]: *m*éo*l*o*k
-OEPrefixAReductionLate [no-change]: *m*éo*l*o*k
 OEWeakTailReduction [no-change]: *m*éo*l*o*k
 OEJLossAfterHeavy [no-change]: *m*éo*l*o*k
 OEFinalGeminateSimplification [no-change]: *m*éo*l*o*k
@@ -18578,7 +18419,6 @@ OEUnstressedAEMerger [no-change]: *m*ō*n*a*θ
 OEMedUnstressedILowering1 [no-change]: *m*ō*n*a*θ
 OEMedUnstressedILowering [no-change]: *m*ō*n*a*θ
 OEPrefixIReduction [no-change]: *m*ō*n*a*θ
-OEPrefixAReductionLate [no-change]: *m*ō*n*a*θ
 OEWeakTailReduction [no-change]: *m*ō*n*a*θ
 OEJLossAfterHeavy [no-change]: *m*ō*n*a*θ
 OEFinalGeminateSimplification [no-change]: *m*ō*n*a*θ
@@ -18694,7 +18534,6 @@ OEUnstressedAEMerger [no-change]: *m*ō*d
 OEMedUnstressedILowering1 [no-change]: *m*ō*d
 OEMedUnstressedILowering [no-change]: *m*ō*d
 OEPrefixIReduction [no-change]: *m*ō*d
-OEPrefixAReductionLate [no-change]: *m*ō*d
 OEWeakTailReduction [no-change]: *m*ō*d
 OEJLossAfterHeavy [no-change]: *m*ō*d
 OEFinalGeminateSimplification [no-change]: *m*ō*d
@@ -18811,7 +18650,6 @@ OEUnstressedAEMerger: *m*ō*d*e*r
 OEMedUnstressedILowering1 [no-change]: *m*ō*d*e*r
 OEMedUnstressedILowering [no-change]: *m*ō*d*e*r
 OEPrefixIReduction [no-change]: *m*ō*d*e*r
-OEPrefixAReductionLate [no-change]: *m*ō*d*e*r
 OEWeakTailReduction [no-change]: *m*ō*d*e*r
 OEJLossAfterHeavy [no-change]: *m*ō*d*e*r
 OEFinalGeminateSimplification [no-change]: *m*ō*d*e*r
@@ -18927,7 +18765,6 @@ OEUnstressedAEMerger [no-change]: *n*æ*ʤ*l
 OEMedUnstressedILowering1 [no-change]: *n*æ*ʤ*l
 OEMedUnstressedILowering [no-change]: *n*æ*ʤ*l
 OEPrefixIReduction [no-change]: *n*æ*ʤ*l
-OEPrefixAReductionLate [no-change]: *n*æ*ʤ*l
 OEWeakTailReduction [no-change]: *n*æ*ʤ*l
 OEJLossAfterHeavy [no-change]: *n*æ*ʤ*l
 OEFinalGeminateSimplification [no-change]: *n*æ*ʤ*l
@@ -19043,7 +18880,6 @@ OEUnstressedAEMerger [no-change]: *n*á*m*a
 OEMedUnstressedILowering1 [no-change]: *n*á*m*a
 OEMedUnstressedILowering [no-change]: *n*á*m*a
 OEPrefixIReduction [no-change]: *n*á*m*a
-OEPrefixAReductionLate [no-change]: *n*á*m*a
 OEWeakTailReduction [no-change]: *n*á*m*a
 OEJLossAfterHeavy [no-change]: *n*á*m*a
 OEFinalGeminateSimplification [no-change]: *n*á*m*a
@@ -19159,7 +18995,6 @@ OEUnstressedAEMerger [no-change]: *n*a*β*u
 OEMedUnstressedILowering1 [no-change]: *n*a*β*u
 OEMedUnstressedILowering [no-change]: *n*a*β*u
 OEPrefixIReduction [no-change]: *n*a*β*u
-OEPrefixAReductionLate [no-change]: *n*a*β*u
 OEWeakTailReduction [no-change]: *n*a*β*u
 OEJLossAfterHeavy [no-change]: *n*a*β*u
 OEFinalGeminateSimplification [no-change]: *n*a*β*u
@@ -19275,7 +19110,6 @@ OEUnstressedAEMerger [no-change]: *n*īe*d
 OEMedUnstressedILowering1 [no-change]: *n*īe*d
 OEMedUnstressedILowering [no-change]: *n*īe*d
 OEPrefixIReduction [no-change]: *n*īe*d
-OEPrefixAReductionLate [no-change]: *n*īe*d
 OEWeakTailReduction [no-change]: *n*īe*d
 OEJLossAfterHeavy [no-change]: *n*īe*d
 OEFinalGeminateSimplification [no-change]: *n*īe*d
@@ -19391,7 +19225,6 @@ OEUnstressedAEMerger [no-change]: *n*é*s*t
 OEMedUnstressedILowering1 [no-change]: *n*é*s*t
 OEMedUnstressedILowering [no-change]: *n*é*s*t
 OEPrefixIReduction [no-change]: *n*é*s*t
-OEPrefixAReductionLate [no-change]: *n*é*s*t
 OEWeakTailReduction [no-change]: *n*é*s*t
 OEJLossAfterHeavy [no-change]: *n*é*s*t
 OEFinalGeminateSimplification [no-change]: *n*é*s*t
@@ -19508,7 +19341,6 @@ OEUnstressedAEMerger [no-change]: *n*e*t*t*j
 OEMedUnstressedILowering1 [no-change]: *n*e*t*t*j
 OEMedUnstressedILowering [no-change]: *n*e*t*t*j
 OEPrefixIReduction [no-change]: *n*e*t*t*j
-OEPrefixAReductionLate [no-change]: *n*e*t*t*j
 OEWeakTailReduction [no-change]: *n*e*t*t*j
 OEJLossAfterHeavy: *n*e*t*t
 OEFinalGeminateSimplification [no-change]: *n*e*t*t
@@ -19624,7 +19456,6 @@ OEUnstressedAEMerger: *n*e*t*l*e
 OEMedUnstressedILowering1 [no-change]: *n*e*t*l*e
 OEMedUnstressedILowering [no-change]: *n*e*t*l*e
 OEPrefixIReduction [no-change]: *n*e*t*l*e
-OEPrefixAReductionLate [no-change]: *n*e*t*l*e
 OEWeakTailReduction [no-change]: *n*e*t*l*e
 OEJLossAfterHeavy [no-change]: *n*e*t*l*e
 OEFinalGeminateSimplification [no-change]: *n*e*t*l*e
@@ -19741,7 +19572,6 @@ OEUnstressedAEMerger: *m*a*r*e
 OEMedUnstressedILowering1 [no-change]: *m*a*r*e
 OEMedUnstressedILowering [no-change]: *m*a*r*e
 OEPrefixIReduction [no-change]: *m*a*r*e
-OEPrefixAReductionLate [no-change]: *m*a*r*e
 OEWeakTailReduction [no-change]: *m*a*r*e
 OEJLossAfterHeavy [no-change]: *m*a*r*e
 OEFinalGeminateSimplification [no-change]: *m*a*r*e
@@ -19857,7 +19687,6 @@ OEUnstressedAEMerger [no-change]: *n*í*g*o*n
 OEMedUnstressedILowering1 [no-change]: *n*í*g*o*n
 OEMedUnstressedILowering [no-change]: *n*í*g*o*n
 OEPrefixIReduction [no-change]: *n*í*g*o*n
-OEPrefixAReductionLate [no-change]: *n*í*g*o*n
 OEWeakTailReduction [no-change]: *n*í*g*o*n
 OEJLossAfterHeavy [no-change]: *n*í*g*o*n
 OEFinalGeminateSimplification [no-change]: *n*í*g*o*n
@@ -19973,7 +19802,6 @@ OEUnstressedAEMerger [no-change]: *ā*n
 OEMedUnstressedILowering1 [no-change]: *ā*n
 OEMedUnstressedILowering [no-change]: *ā*n
 OEPrefixIReduction [no-change]: *ā*n
-OEPrefixAReductionLate [no-change]: *ā*n
 OEWeakTailReduction [no-change]: *ā*n
 OEJLossAfterHeavy [no-change]: *ā*n
 OEFinalGeminateSimplification [no-change]: *ā*n
@@ -20089,7 +19917,6 @@ OEUnstressedAEMerger [no-change]: *ó*f*n
 OEMedUnstressedILowering1 [no-change]: *ó*f*n
 OEMedUnstressedILowering [no-change]: *ó*f*n
 OEPrefixIReduction [no-change]: *ó*f*n
-OEPrefixAReductionLate [no-change]: *ó*f*n
 OEWeakTailReduction [no-change]: *ó*f*n
 OEJLossAfterHeavy [no-change]: *ó*f*n
 OEFinalGeminateSimplification [no-change]: *ó*f*n
@@ -20205,7 +20032,6 @@ OEUnstressedAEMerger [no-change]: *ó*x*s*a
 OEMedUnstressedILowering1 [no-change]: *ó*x*s*a
 OEMedUnstressedILowering [no-change]: *ó*x*s*a
 OEPrefixIReduction [no-change]: *ó*x*s*a
-OEPrefixAReductionLate [no-change]: *ó*x*s*a
 OEWeakTailReduction [no-change]: *ó*x*s*a
 OEJLossAfterHeavy [no-change]: *ó*x*s*a
 OEFinalGeminateSimplification [no-change]: *ó*x*s*a
@@ -20321,7 +20147,6 @@ OEUnstressedAEMerger [no-change]: *r*é*ʤ*n
 OEMedUnstressedILowering1 [no-change]: *r*é*ʤ*n
 OEMedUnstressedILowering [no-change]: *r*é*ʤ*n
 OEPrefixIReduction [no-change]: *r*é*ʤ*n
-OEPrefixAReductionLate [no-change]: *r*é*ʤ*n
 OEWeakTailReduction [no-change]: *r*é*ʤ*n
 OEJLossAfterHeavy [no-change]: *r*é*ʤ*n
 OEFinalGeminateSimplification [no-change]: *r*é*ʤ*n
@@ -20437,7 +20262,6 @@ OEUnstressedAEMerger [no-change]: *r*é*ʤ*n*b*o*g*a
 OEMedUnstressedILowering1 [no-change]: *r*é*ʤ*n*b*o*g*a
 OEMedUnstressedILowering [no-change]: *r*é*ʤ*n*b*o*g*a
 OEPrefixIReduction [no-change]: *r*é*ʤ*n*b*o*g*a
-OEPrefixAReductionLate [no-change]: *r*é*ʤ*n*b*o*g*a
 OEWeakTailReduction [no-change]: *r*é*ʤ*n*b*o*g*a
 OEJLossAfterHeavy [no-change]: *r*é*ʤ*n*b*o*g*a
 OEFinalGeminateSimplification [no-change]: *r*é*ʤ*n*b*o*g*a
@@ -20553,7 +20377,6 @@ OEUnstressedAEMerger [no-change]: *x*r*æ*β*n
 OEMedUnstressedILowering1 [no-change]: *x*r*æ*β*n
 OEMedUnstressedILowering [no-change]: *x*r*æ*β*n
 OEPrefixIReduction [no-change]: *x*r*æ*β*n
-OEPrefixAReductionLate [no-change]: *x*r*æ*β*n
 OEWeakTailReduction [no-change]: *x*r*æ*β*n
 OEJLossAfterHeavy [no-change]: *x*r*æ*β*n
 OEFinalGeminateSimplification [no-change]: *x*r*æ*β*n
@@ -20669,7 +20492,6 @@ OEUnstressedAEMerger [no-change]: *r*ǣ*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *r*ǣ*d*ą*n
 OEMedUnstressedILowering [no-change]: *r*ǣ*d*ą*n
 OEPrefixIReduction [no-change]: *r*ǣ*d*ą*n
-OEPrefixAReductionLate [no-change]: *r*ǣ*d*ą*n
 OEWeakTailReduction: *r*ǣ*d*a*n
 OEJLossAfterHeavy [no-change]: *r*ǣ*d*a*n
 OEFinalGeminateSimplification [no-change]: *r*ǣ*d*a*n
@@ -20785,7 +20607,6 @@ OEUnstressedAEMerger [no-change]: *r*ḯ*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *r*ḯ*d*ą*n
 OEMedUnstressedILowering [no-change]: *r*ḯ*d*ą*n
 OEPrefixIReduction [no-change]: *r*ḯ*d*ą*n
-OEPrefixAReductionLate [no-change]: *r*ḯ*d*ą*n
 OEWeakTailReduction: *r*ḯ*d*a*n
 OEJLossAfterHeavy [no-change]: *r*ḯ*d*a*n
 OEFinalGeminateSimplification [no-change]: *r*ḯ*d*a*n
@@ -20901,7 +20722,6 @@ OEUnstressedAEMerger [no-change]: *r*í*n*d
 OEMedUnstressedILowering1 [no-change]: *r*í*n*d
 OEMedUnstressedILowering [no-change]: *r*í*n*d
 OEPrefixIReduction [no-change]: *r*í*n*d
-OEPrefixAReductionLate [no-change]: *r*í*n*d
 OEWeakTailReduction [no-change]: *r*í*n*d
 OEJLossAfterHeavy [no-change]: *r*í*n*d
 OEFinalGeminateSimplification [no-change]: *r*í*n*d
@@ -21017,7 +20837,6 @@ OEUnstressedAEMerger [no-change]: *r*ō*d
 OEMedUnstressedILowering1 [no-change]: *r*ō*d
 OEMedUnstressedILowering [no-change]: *r*ō*d
 OEPrefixIReduction [no-change]: *r*ō*d
-OEPrefixAReductionLate [no-change]: *r*ō*d
 OEWeakTailReduction [no-change]: *r*ō*d
 OEJLossAfterHeavy [no-change]: *r*ō*d
 OEFinalGeminateSimplification [no-change]: *r*ō*d
@@ -21133,7 +20952,6 @@ OEUnstressedAEMerger [no-change]: *r*ū*m
 OEMedUnstressedILowering1 [no-change]: *r*ū*m
 OEMedUnstressedILowering [no-change]: *r*ū*m
 OEPrefixIReduction [no-change]: *r*ū*m
-OEPrefixAReductionLate [no-change]: *r*ū*m
 OEWeakTailReduction [no-change]: *r*ū*m
 OEJLossAfterHeavy [no-change]: *r*ū*m
 OEFinalGeminateSimplification [no-change]: *r*ū*m
@@ -21249,7 +21067,6 @@ OEUnstressedAEMerger [no-change]: *r*ā*p
 OEMedUnstressedILowering1 [no-change]: *r*ā*p
 OEMedUnstressedILowering [no-change]: *r*ā*p
 OEPrefixIReduction [no-change]: *r*ā*p
-OEPrefixAReductionLate [no-change]: *r*ā*p
 OEWeakTailReduction [no-change]: *r*ā*p
 OEJLossAfterHeavy [no-change]: *r*ā*p
 OEFinalGeminateSimplification [no-change]: *r*ā*p
@@ -21365,7 +21182,6 @@ OEUnstressedAEMerger [no-change]: *r*ō*θ*r
 OEMedUnstressedILowering1 [no-change]: *r*ō*θ*r
 OEMedUnstressedILowering [no-change]: *r*ō*θ*r
 OEPrefixIReduction [no-change]: *r*ō*θ*r
-OEPrefixAReductionLate [no-change]: *r*ō*θ*r
 OEWeakTailReduction [no-change]: *r*ō*θ*r
 OEJLossAfterHeavy [no-change]: *r*ō*θ*r
 OEFinalGeminateSimplification [no-change]: *r*ō*θ*r
@@ -21481,7 +21297,6 @@ OEUnstressedAEMerger [no-change]: *r*í*n*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *r*í*n*n*ą*n
 OEMedUnstressedILowering [no-change]: *r*í*n*n*ą*n
 OEPrefixIReduction [no-change]: *r*í*n*n*ą*n
-OEPrefixAReductionLate [no-change]: *r*í*n*n*ą*n
 OEWeakTailReduction: *r*í*n*n*a*n
 OEJLossAfterHeavy [no-change]: *r*í*n*n*a*n
 OEFinalGeminateSimplification [no-change]: *r*í*n*n*a*n
@@ -21597,7 +21412,6 @@ OEUnstressedAEMerger [no-change]: *r*y*ʤ*i
 OEMedUnstressedILowering1: *r*y*ʤ*e
 OEMedUnstressedILowering [no-change]: *r*y*ʤ*e
 OEPrefixIReduction [no-change]: *r*y*ʤ*e
-OEPrefixAReductionLate [no-change]: *r*y*ʤ*e
 OEWeakTailReduction [no-change]: *r*y*ʤ*e
 OEJLossAfterHeavy [no-change]: *r*y*ʤ*e
 OEFinalGeminateSimplification [no-change]: *r*y*ʤ*e
@@ -21713,7 +21527,6 @@ OEUnstressedAEMerger [no-change]: *s*é*ʤ*l
 OEMedUnstressedILowering1 [no-change]: *s*é*ʤ*l
 OEMedUnstressedILowering [no-change]: *s*é*ʤ*l
 OEPrefixIReduction [no-change]: *s*é*ʤ*l
-OEPrefixAReductionLate [no-change]: *s*é*ʤ*l
 OEWeakTailReduction [no-change]: *s*é*ʤ*l
 OEJLossAfterHeavy [no-change]: *s*é*ʤ*l
 OEFinalGeminateSimplification [no-change]: *s*é*ʤ*l
@@ -21829,7 +21642,6 @@ OEUnstressedAEMerger [no-change]: *s*a*k*u
 OEMedUnstressedILowering1 [no-change]: *s*a*k*u
 OEMedUnstressedILowering [no-change]: *s*a*k*u
 OEPrefixIReduction [no-change]: *s*a*k*u
-OEPrefixAReductionLate [no-change]: *s*a*k*u
 OEWeakTailReduction [no-change]: *s*a*k*u
 OEJLossAfterHeavy [no-change]: *s*a*k*u
 OEFinalGeminateSimplification [no-change]: *s*a*k*u
@@ -21945,7 +21757,6 @@ OEUnstressedAEMerger [no-change]: *s*ea*l*t
 OEMedUnstressedILowering1 [no-change]: *s*ea*l*t
 OEMedUnstressedILowering [no-change]: *s*ea*l*t
 OEPrefixIReduction [no-change]: *s*ea*l*t
-OEPrefixAReductionLate [no-change]: *s*ea*l*t
 OEWeakTailReduction [no-change]: *s*ea*l*t
 OEJLossAfterHeavy [no-change]: *s*ea*l*t
 OEFinalGeminateSimplification [no-change]: *s*ea*l*t
@@ -22061,7 +21872,6 @@ OEUnstressedAEMerger [no-change]: *s*ea*l*β
 OEMedUnstressedILowering1 [no-change]: *s*ea*l*β
 OEMedUnstressedILowering [no-change]: *s*ea*l*β
 OEPrefixIReduction [no-change]: *s*ea*l*β
-OEPrefixAReductionLate [no-change]: *s*ea*l*β
 OEWeakTailReduction [no-change]: *s*ea*l*β
 OEJLossAfterHeavy [no-change]: *s*ea*l*β
 OEFinalGeminateSimplification [no-change]: *s*ea*l*β
@@ -22177,7 +21987,6 @@ OEUnstressedAEMerger [no-change]: *s*ēa*m
 OEMedUnstressedILowering1 [no-change]: *s*ēa*m
 OEMedUnstressedILowering [no-change]: *s*ēa*m
 OEPrefixIReduction [no-change]: *s*ēa*m
-OEPrefixAReductionLate [no-change]: *s*ēa*m
 OEWeakTailReduction [no-change]: *s*ēa*m
 OEJLossAfterHeavy [no-change]: *s*ēa*m
 OEFinalGeminateSimplification [no-change]: *s*ēa*m
@@ -22293,7 +22102,6 @@ OEUnstressedAEMerger [no-change]: *s*ē*ʧ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*ē*ʧ*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*ē*ʧ*j*ą*n
 OEPrefixIReduction [no-change]: *s*ē*ʧ*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*ē*ʧ*j*ą*n
 OEWeakTailReduction: *s*ē*ʧ*j*a*n
 OEJLossAfterHeavy: *s*ē*ʧ*a*n
 OEFinalGeminateSimplification [no-change]: *s*ē*ʧ*a*n
@@ -22409,7 +22217,6 @@ OEUnstressedAEMerger [no-change]: *s*e*n*d*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*e*n*d*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*e*n*d*j*ą*n
 OEPrefixIReduction [no-change]: *s*e*n*d*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*e*n*d*j*ą*n
 OEWeakTailReduction: *s*e*n*d*j*a*n
 OEJLossAfterHeavy: *s*e*n*d*a*n
 OEFinalGeminateSimplification [no-change]: *s*e*n*d*a*n
@@ -22525,7 +22332,6 @@ OEUnstressedAEMerger [no-change]: *s*e*t*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*e*t*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*e*t*t*j*ą*n
 OEPrefixIReduction [no-change]: *s*e*t*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*e*t*t*j*ą*n
 OEWeakTailReduction: *s*e*t*t*j*a*n
 OEJLossAfterHeavy: *s*e*t*t*a*n
 OEFinalGeminateSimplification [no-change]: *s*e*t*t*a*n
@@ -22641,7 +22447,6 @@ OEUnstressedAEMerger [no-change]: *s*éo*β*o*n
 OEMedUnstressedILowering1 [no-change]: *s*éo*β*o*n
 OEMedUnstressedILowering [no-change]: *s*éo*β*o*n
 OEPrefixIReduction [no-change]: *s*éo*β*o*n
-OEPrefixAReductionLate [no-change]: *s*éo*β*o*n
 OEWeakTailReduction [no-change]: *s*éo*β*o*n
 OEJLossAfterHeavy [no-change]: *s*éo*β*o*n
 OEFinalGeminateSimplification [no-change]: *s*éo*β*o*n
@@ -22757,7 +22562,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ea*f*t
 OEMedUnstressedILowering1 [no-change]: *ʃ*ea*f*t
 OEMedUnstressedILowering [no-change]: *ʃ*ea*f*t
 OEPrefixIReduction [no-change]: *ʃ*ea*f*t
-OEPrefixAReductionLate [no-change]: *ʃ*ea*f*t
 OEWeakTailReduction [no-change]: *ʃ*ea*f*t
 OEJLossAfterHeavy [no-change]: *ʃ*ea*f*t
 OEFinalGeminateSimplification [no-change]: *ʃ*ea*f*t
@@ -22873,7 +22677,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*á*m*u
 OEMedUnstressedILowering1 [no-change]: *ʃ*á*m*u
 OEMedUnstressedILowering [no-change]: *ʃ*á*m*u
 OEPrefixIReduction [no-change]: *ʃ*á*m*u
-OEPrefixAReductionLate [no-change]: *ʃ*á*m*u
 OEWeakTailReduction [no-change]: *ʃ*á*m*u
 OEJLossAfterHeavy [no-change]: *ʃ*á*m*u
 OEFinalGeminateSimplification [no-change]: *ʃ*á*m*u
@@ -22989,7 +22792,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*íe*r*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʃ*íe*r*ą*n
 OEMedUnstressedILowering [no-change]: *ʃ*íe*r*ą*n
 OEPrefixIReduction [no-change]: *ʃ*íe*r*ą*n
-OEPrefixAReductionLate [no-change]: *ʃ*íe*r*ą*n
 OEWeakTailReduction: *ʃ*íe*r*a*n
 OEJLossAfterHeavy [no-change]: *ʃ*íe*r*a*n
 OEFinalGeminateSimplification [no-change]: *ʃ*íe*r*a*n
@@ -23105,7 +22907,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ēa*θ
 OEMedUnstressedILowering1 [no-change]: *ʃ*ēa*θ
 OEMedUnstressedILowering [no-change]: *ʃ*ēa*θ
 OEPrefixIReduction [no-change]: *ʃ*ēa*θ
-OEPrefixAReductionLate [no-change]: *ʃ*ēa*θ
 OEWeakTailReduction [no-change]: *ʃ*ēa*θ
 OEJLossAfterHeavy [no-change]: *ʃ*ēa*θ
 OEFinalGeminateSimplification [no-change]: *ʃ*ēa*θ
@@ -23222,7 +23023,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ēa*p
 OEMedUnstressedILowering1 [no-change]: *ʃ*ēa*p
 OEMedUnstressedILowering [no-change]: *ʃ*ēa*p
 OEPrefixIReduction [no-change]: *ʃ*ēa*p
-OEPrefixAReductionLate [no-change]: *ʃ*ēa*p
 OEWeakTailReduction [no-change]: *ʃ*ēa*p
 OEJLossAfterHeavy [no-change]: *ʃ*ēa*p
 OEFinalGeminateSimplification [no-change]: *ʃ*ēa*p
@@ -23338,7 +23138,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*íe*l*d
 OEMedUnstressedILowering1 [no-change]: *ʃ*íe*l*d
 OEMedUnstressedILowering [no-change]: *ʃ*íe*l*d
 OEPrefixIReduction [no-change]: *ʃ*íe*l*d
-OEPrefixAReductionLate [no-change]: *ʃ*íe*l*d
 OEWeakTailReduction [no-change]: *ʃ*íe*l*d
 OEJLossAfterHeavy [no-change]: *ʃ*íe*l*d
 OEFinalGeminateSimplification [no-change]: *ʃ*íe*l*d
@@ -23455,7 +23254,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*í*l*l*i*n*g
 OEMedUnstressedILowering1: *ʃ*í*l*l*e*n*g
 OEMedUnstressedILowering: *ʃ*í*l*l*i*n*g
 OEPrefixIReduction [no-change]: *ʃ*í*l*l*i*n*g
-OEPrefixAReductionLate [no-change]: *ʃ*í*l*l*i*n*g
 OEWeakTailReduction [no-change]: *ʃ*í*l*l*i*n*g
 OEJLossAfterHeavy [no-change]: *ʃ*í*l*l*i*n*g
 OEFinalGeminateSimplification [no-change]: *ʃ*í*l*l*i*n*g
@@ -23571,7 +23369,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ḯ*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʃ*ḯ*n*ą*n
 OEMedUnstressedILowering [no-change]: *ʃ*ḯ*n*ą*n
 OEPrefixIReduction [no-change]: *ʃ*ḯ*n*ą*n
-OEPrefixAReductionLate [no-change]: *ʃ*ḯ*n*ą*n
 OEWeakTailReduction: *ʃ*ḯ*n*a*n
 OEJLossAfterHeavy [no-change]: *ʃ*ḯ*n*a*n
 OEFinalGeminateSimplification [no-change]: *ʃ*ḯ*n*a*n
@@ -23687,7 +23484,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ó*f*l
 OEMedUnstressedILowering1 [no-change]: *ʃ*ó*f*l
 OEMedUnstressedILowering [no-change]: *ʃ*ó*f*l
 OEPrefixIReduction [no-change]: *ʃ*ó*f*l
-OEPrefixAReductionLate [no-change]: *ʃ*ó*f*l
 OEWeakTailReduction [no-change]: *ʃ*ó*f*l
 OEJLossAfterHeavy [no-change]: *ʃ*ó*f*l
 OEFinalGeminateSimplification [no-change]: *ʃ*ó*f*l
@@ -23804,7 +23600,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ḗa*w*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *ʃ*ḗa*w*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *ʃ*ḗa*w*e*j*ą*n
 OEPrefixIReduction [no-change]: *ʃ*ḗa*w*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *ʃ*ḗa*w*e*j*ą*n
 OEWeakTailReduction: *ʃ*ḗa*w*e*j*a*n
 OEJLossAfterHeavy [no-change]: *ʃ*ḗa*w*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *ʃ*ḗa*w*e*j*a*n
@@ -23920,7 +23715,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ū*r
 OEMedUnstressedILowering1 [no-change]: *ʃ*ū*r
 OEMedUnstressedILowering [no-change]: *ʃ*ū*r
 OEPrefixIReduction [no-change]: *ʃ*ū*r
-OEPrefixAReductionLate [no-change]: *ʃ*ū*r
 OEWeakTailReduction [no-change]: *ʃ*ū*r
 OEJLossAfterHeavy [no-change]: *ʃ*ū*r
 OEFinalGeminateSimplification [no-change]: *ʃ*ū*r
@@ -24036,7 +23830,6 @@ OEUnstressedAEMerger: *s*ḯ*d*e
 OEMedUnstressedILowering1 [no-change]: *s*ḯ*d*e
 OEMedUnstressedILowering [no-change]: *s*ḯ*d*e
 OEPrefixIReduction [no-change]: *s*ḯ*d*e
-OEPrefixAReductionLate [no-change]: *s*ḯ*d*e
 OEWeakTailReduction [no-change]: *s*ḯ*d*e
 OEJLossAfterHeavy [no-change]: *s*ḯ*d*e
 OEFinalGeminateSimplification [no-change]: *s*ḯ*d*e
@@ -24152,7 +23945,6 @@ OEUnstressedAEMerger [no-change]: *s*í*n*g*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*í*n*g*ą*n
 OEMedUnstressedILowering [no-change]: *s*í*n*g*ą*n
 OEPrefixIReduction [no-change]: *s*í*n*g*ą*n
-OEPrefixAReductionLate [no-change]: *s*í*n*g*ą*n
 OEWeakTailReduction: *s*í*n*g*a*n
 OEJLossAfterHeavy [no-change]: *s*í*n*g*a*n
 OEFinalGeminateSimplification [no-change]: *s*í*n*g*a*n
@@ -24268,7 +24060,6 @@ OEUnstressedAEMerger [no-change]: *s*e*n*ʤ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*e*n*ʤ*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*e*n*ʤ*j*ą*n
 OEPrefixIReduction [no-change]: *s*e*n*ʤ*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*e*n*ʤ*j*ą*n
 OEWeakTailReduction: *s*e*n*ʤ*j*a*n
 OEJLossAfterHeavy: *s*e*n*ʤ*a*n
 OEFinalGeminateSimplification [no-change]: *s*e*n*ʤ*a*n
@@ -24384,7 +24175,6 @@ OEUnstressedAEMerger: *s*w*é*s*t*e*r
 OEMedUnstressedILowering1 [no-change]: *s*w*é*s*t*e*r
 OEMedUnstressedILowering [no-change]: *s*w*é*s*t*e*r
 OEPrefixIReduction [no-change]: *s*w*é*s*t*e*r
-OEPrefixAReductionLate [no-change]: *s*w*é*s*t*e*r
 OEWeakTailReduction [no-change]: *s*w*é*s*t*e*r
 OEJLossAfterHeavy [no-change]: *s*w*é*s*t*e*r
 OEFinalGeminateSimplification [no-change]: *s*w*é*s*t*e*r
@@ -24500,7 +24290,6 @@ OEUnstressedAEMerger [no-change]: *s*i*t*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*i*t*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*i*t*t*j*ą*n
 OEPrefixIReduction [no-change]: *s*i*t*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*i*t*t*j*ą*n
 OEWeakTailReduction: *s*i*t*t*j*a*n
 OEJLossAfterHeavy: *s*i*t*t*a*n
 OEFinalGeminateSimplification [no-change]: *s*i*t*t*a*n
@@ -24616,7 +24405,6 @@ OEUnstressedAEMerger [no-change]: *s*i*x*s
 OEMedUnstressedILowering1 [no-change]: *s*i*x*s
 OEMedUnstressedILowering [no-change]: *s*i*x*s
 OEPrefixIReduction [no-change]: *s*i*x*s
-OEPrefixAReductionLate [no-change]: *s*i*x*s
 OEWeakTailReduction [no-change]: *s*i*x*s
 OEJLossAfterHeavy [no-change]: *s*i*x*s
 OEFinalGeminateSimplification [no-change]: *s*i*x*s
@@ -24732,7 +24520,6 @@ OEUnstressedAEMerger [no-change]: *s*l*ea*x*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*l*ea*x*ą*n
 OEMedUnstressedILowering [no-change]: *s*l*ea*x*ą*n
 OEPrefixIReduction [no-change]: *s*l*ea*x*ą*n
-OEPrefixAReductionLate [no-change]: *s*l*ea*x*ą*n
 OEWeakTailReduction: *s*l*ea*x*a*n
 OEJLossAfterHeavy [no-change]: *s*l*ea*x*a*n
 OEFinalGeminateSimplification [no-change]: *s*l*ea*x*a*n
@@ -24849,7 +24636,6 @@ OEUnstressedAEMerger [no-change]: *s*l*ǣ*p*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*l*ǣ*p*ą*n
 OEMedUnstressedILowering [no-change]: *s*l*ǣ*p*ą*n
 OEPrefixIReduction [no-change]: *s*l*ǣ*p*ą*n
-OEPrefixAReductionLate [no-change]: *s*l*ǣ*p*ą*n
 OEWeakTailReduction: *s*l*ǣ*p*a*n
 OEJLossAfterHeavy [no-change]: *s*l*ǣ*p*a*n
 OEFinalGeminateSimplification [no-change]: *s*l*ǣ*p*a*n
@@ -24965,7 +24751,6 @@ OEUnstressedAEMerger [no-change]: *s*l*ḯ*m
 OEMedUnstressedILowering1 [no-change]: *s*l*ḯ*m
 OEMedUnstressedILowering [no-change]: *s*l*ḯ*m
 OEPrefixIReduction [no-change]: *s*l*ḯ*m
-OEPrefixAReductionLate [no-change]: *s*l*ḯ*m
 OEWeakTailReduction [no-change]: *s*l*ḯ*m
 OEJLossAfterHeavy [no-change]: *s*l*ḯ*m
 OEFinalGeminateSimplification [no-change]: *s*l*ḯ*m
@@ -25082,7 +24867,6 @@ OEUnstressedAEMerger [no-change]: *s*m*íe*r*w*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*m*íe*r*w*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*m*íe*r*w*j*ą*n
 OEPrefixIReduction [no-change]: *s*m*íe*r*w*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*m*íe*r*w*j*ą*n
 OEWeakTailReduction: *s*m*íe*r*w*j*a*n
 OEJLossAfterHeavy: *s*m*íe*r*w*a*n
 OEFinalGeminateSimplification [no-change]: *s*m*íe*r*w*a*n
@@ -25198,7 +24982,6 @@ OEUnstressedAEMerger [no-change]: *s*n*ā*w
 OEMedUnstressedILowering1 [no-change]: *s*n*ā*w
 OEMedUnstressedILowering [no-change]: *s*n*ā*w
 OEPrefixIReduction [no-change]: *s*n*ā*w
-OEPrefixAReductionLate [no-change]: *s*n*ā*w
 OEWeakTailReduction [no-change]: *s*n*ā*w
 OEJLossAfterHeavy [no-change]: *s*n*ā*w
 OEFinalGeminateSimplification [no-change]: *s*n*ā*w
@@ -25314,7 +25097,6 @@ OEUnstressedAEMerger [no-change]: *s*ó*r*g
 OEMedUnstressedILowering1 [no-change]: *s*ó*r*g
 OEMedUnstressedILowering [no-change]: *s*ó*r*g
 OEPrefixIReduction [no-change]: *s*ó*r*g
-OEPrefixAReductionLate [no-change]: *s*ó*r*g
 OEWeakTailReduction [no-change]: *s*ó*r*g
 OEJLossAfterHeavy [no-change]: *s*ó*r*g
 OEFinalGeminateSimplification [no-change]: *s*ó*r*g
@@ -25430,7 +25212,6 @@ OEUnstressedAEMerger [no-change]: *s*ā*w*o*l
 OEMedUnstressedILowering1 [no-change]: *s*ā*w*o*l
 OEMedUnstressedILowering [no-change]: *s*ā*w*o*l
 OEPrefixIReduction [no-change]: *s*ā*w*o*l
-OEPrefixAReductionLate [no-change]: *s*ā*w*o*l
 OEWeakTailReduction [no-change]: *s*ā*w*o*l
 OEJLossAfterHeavy [no-change]: *s*ā*w*o*l
 OEFinalGeminateSimplification [no-change]: *s*ā*w*o*l
@@ -25547,7 +25328,6 @@ OEUnstressedAEMerger [no-change]: *s*p*á*n*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*p*á*n*n*ą*n
 OEMedUnstressedILowering [no-change]: *s*p*á*n*n*ą*n
 OEPrefixIReduction [no-change]: *s*p*á*n*n*ą*n
-OEPrefixAReductionLate [no-change]: *s*p*á*n*n*ą*n
 OEWeakTailReduction: *s*p*á*n*n*a*n
 OEJLossAfterHeavy [no-change]: *s*p*á*n*n*a*n
 OEFinalGeminateSimplification [no-change]: *s*p*á*n*n*a*n
@@ -25664,7 +25444,6 @@ OEUnstressedAEMerger [no-change]: *s*p*ea*r*r*a
 OEMedUnstressedILowering1 [no-change]: *s*p*ea*r*r*a
 OEMedUnstressedILowering [no-change]: *s*p*ea*r*r*a
 OEPrefixIReduction [no-change]: *s*p*ea*r*r*a
-OEPrefixAReductionLate [no-change]: *s*p*ea*r*r*a
 OEWeakTailReduction [no-change]: *s*p*ea*r*r*a
 OEJLossAfterHeavy [no-change]: *s*p*ea*r*r*a
 OEFinalGeminateSimplification [no-change]: *s*p*ea*r*r*a
@@ -25780,7 +25559,6 @@ OEUnstressedAEMerger [no-change]: *s*p*éo*r*u
 OEMedUnstressedILowering1 [no-change]: *s*p*éo*r*u
 OEMedUnstressedILowering [no-change]: *s*p*éo*r*u
 OEPrefixIReduction [no-change]: *s*p*éo*r*u
-OEPrefixAReductionLate [no-change]: *s*p*éo*r*u
 OEWeakTailReduction [no-change]: *s*p*éo*r*u
 OEJLossAfterHeavy [no-change]: *s*p*éo*r*u
 OEFinalGeminateSimplification [no-change]: *s*p*éo*r*u
@@ -25896,7 +25674,6 @@ OEUnstressedAEMerger [no-change]: *s*p*í*n*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*p*í*n*n*ą*n
 OEMedUnstressedILowering [no-change]: *s*p*í*n*n*ą*n
 OEPrefixIReduction [no-change]: *s*p*í*n*n*ą*n
-OEPrefixAReductionLate [no-change]: *s*p*í*n*n*ą*n
 OEWeakTailReduction: *s*p*í*n*n*a*n
 OEJLossAfterHeavy [no-change]: *s*p*í*n*n*a*n
 OEFinalGeminateSimplification [no-change]: *s*p*í*n*n*a*n
@@ -26012,7 +25789,6 @@ OEUnstressedAEMerger [no-change]: *s*p*i*n*l
 OEMedUnstressedILowering1 [no-change]: *s*p*i*n*l
 OEMedUnstressedILowering [no-change]: *s*p*i*n*l
 OEPrefixIReduction [no-change]: *s*p*i*n*l
-OEPrefixAReductionLate [no-change]: *s*p*i*n*l
 OEWeakTailReduction [no-change]: *s*p*i*n*l
 OEJLossAfterHeavy [no-change]: *s*p*i*n*l
 OEFinalGeminateSimplification [no-change]: *s*p*i*n*l
@@ -26128,7 +25904,6 @@ OEUnstressedAEMerger [no-change]: *s*p*ō*n
 OEMedUnstressedILowering1 [no-change]: *s*p*ō*n
 OEMedUnstressedILowering [no-change]: *s*p*ō*n
 OEPrefixIReduction [no-change]: *s*p*ō*n
-OEPrefixAReductionLate [no-change]: *s*p*ō*n
 OEWeakTailReduction [no-change]: *s*p*ō*n
 OEJLossAfterHeavy [no-change]: *s*p*ō*n
 OEFinalGeminateSimplification [no-change]: *s*p*ō*n
@@ -26244,7 +26019,6 @@ OEUnstressedAEMerger [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEPrefixIReduction [no-change]: *s*p*r*ǣ*d*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEWeakTailReduction: *s*p*r*ǣ*d*j*a*n
 OEJLossAfterHeavy: *s*p*r*ǣ*d*a*n
 OEFinalGeminateSimplification [no-change]: *s*p*r*ǣ*d*a*n
@@ -26360,7 +26134,6 @@ OEUnstressedAEMerger [no-change]: *s*p*ó*r*a
 OEMedUnstressedILowering1 [no-change]: *s*p*ó*r*a
 OEMedUnstressedILowering [no-change]: *s*p*ó*r*a
 OEPrefixIReduction [no-change]: *s*p*ó*r*a
-OEPrefixAReductionLate [no-change]: *s*p*ó*r*a
 OEWeakTailReduction [no-change]: *s*p*ó*r*a
 OEJLossAfterHeavy [no-change]: *s*p*ó*r*a
 OEFinalGeminateSimplification [no-change]: *s*p*ó*r*a
@@ -26476,7 +26249,6 @@ OEUnstressedAEMerger [no-change]: *s*t*y*r*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*y*r*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*y*r*t*j*ą*n
 OEPrefixIReduction [no-change]: *s*t*y*r*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*y*r*t*j*ą*n
 OEWeakTailReduction: *s*t*y*r*t*j*a*n
 OEJLossAfterHeavy: *s*t*y*r*t*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*y*r*t*a*n
@@ -26592,7 +26364,6 @@ OEUnstressedAEMerger [no-change]: *s*t*éo*r*β*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*éo*r*β*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*éo*r*β*ą*n
 OEPrefixIReduction [no-change]: *s*t*éo*r*β*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*éo*r*β*ą*n
 OEWeakTailReduction: *s*t*éo*r*β*a*n
 OEJLossAfterHeavy [no-change]: *s*t*éo*r*β*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*éo*r*β*a*n
@@ -26708,7 +26479,6 @@ OEUnstressedAEMerger [no-change]: *s*t*é*l*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*é*l*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*é*l*ą*n
 OEPrefixIReduction [no-change]: *s*t*é*l*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*é*l*ą*n
 OEWeakTailReduction: *s*t*é*l*a*n
 OEJLossAfterHeavy [no-change]: *s*t*é*l*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*é*l*a*n
@@ -26825,7 +26595,6 @@ OEUnstressedAEMerger [no-change]: *s*t*i*l*l*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*i*l*l*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*i*l*l*j*ą*n
 OEPrefixIReduction [no-change]: *s*t*i*l*l*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*i*l*l*j*ą*n
 OEWeakTailReduction: *s*t*i*l*l*j*a*n
 OEJLossAfterHeavy: *s*t*i*l*l*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*i*l*l*a*n
@@ -26941,7 +26710,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ó*k*k
 OEMedUnstressedILowering1 [no-change]: *s*t*ó*k*k
 OEMedUnstressedILowering [no-change]: *s*t*ó*k*k
 OEPrefixIReduction [no-change]: *s*t*ó*k*k
-OEPrefixAReductionLate [no-change]: *s*t*ó*k*k
 OEWeakTailReduction [no-change]: *s*t*ó*k*k
 OEJLossAfterHeavy [no-change]: *s*t*ó*k*k
 OEFinalGeminateSimplification [no-change]: *s*t*ó*k*k
@@ -27057,7 +26825,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ā*n
 OEMedUnstressedILowering1 [no-change]: *s*t*ā*n
 OEMedUnstressedILowering [no-change]: *s*t*ā*n
 OEPrefixIReduction [no-change]: *s*t*ā*n
-OEPrefixAReductionLate [no-change]: *s*t*ā*n
 OEWeakTailReduction [no-change]: *s*t*ā*n
 OEJLossAfterHeavy [no-change]: *s*t*ā*n
 OEFinalGeminateSimplification [no-change]: *s*t*ā*n
@@ -27173,7 +26940,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ō*l
 OEMedUnstressedILowering1 [no-change]: *s*t*ō*l
 OEMedUnstressedILowering [no-change]: *s*t*ō*l
 OEPrefixIReduction [no-change]: *s*t*ō*l
-OEPrefixAReductionLate [no-change]: *s*t*ō*l
 OEWeakTailReduction [no-change]: *s*t*ō*l
 OEJLossAfterHeavy [no-change]: *s*t*ō*l
 OEFinalGeminateSimplification [no-change]: *s*t*ō*l
@@ -27289,7 +27055,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ó*r*k
 OEMedUnstressedILowering1 [no-change]: *s*t*ó*r*k
 OEMedUnstressedILowering [no-change]: *s*t*ó*r*k
 OEPrefixIReduction [no-change]: *s*t*ó*r*k
-OEPrefixAReductionLate [no-change]: *s*t*ó*r*k
 OEWeakTailReduction [no-change]: *s*t*ó*r*k
 OEJLossAfterHeavy [no-change]: *s*t*ó*r*k
 OEFinalGeminateSimplification [no-change]: *s*t*ó*r*k
@@ -27405,7 +27170,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ó*r*m
 OEMedUnstressedILowering1 [no-change]: *s*t*ó*r*m
 OEMedUnstressedILowering [no-change]: *s*t*ó*r*m
 OEPrefixIReduction [no-change]: *s*t*ó*r*m
-OEPrefixAReductionLate [no-change]: *s*t*ó*r*m
 OEWeakTailReduction [no-change]: *s*t*ó*r*m
 OEJLossAfterHeavy [no-change]: *s*t*ó*r*m
 OEFinalGeminateSimplification [no-change]: *s*t*ó*r*m
@@ -27521,7 +27285,6 @@ OEUnstressedAEMerger [no-change]: *s*t*r*ḗa*w
 OEMedUnstressedILowering1 [no-change]: *s*t*r*ḗa*w
 OEMedUnstressedILowering [no-change]: *s*t*r*ḗa*w
 OEPrefixIReduction [no-change]: *s*t*r*ḗa*w
-OEPrefixAReductionLate [no-change]: *s*t*r*ḗa*w
 OEWeakTailReduction [no-change]: *s*t*r*ḗa*w
 OEJLossAfterHeavy [no-change]: *s*t*r*ḗa*w
 OEFinalGeminateSimplification [no-change]: *s*t*r*ḗa*w
@@ -27637,7 +27400,6 @@ OEUnstressedAEMerger [no-change]: *s*t*r*ēa*m
 OEMedUnstressedILowering1 [no-change]: *s*t*r*ēa*m
 OEMedUnstressedILowering [no-change]: *s*t*r*ēa*m
 OEPrefixIReduction [no-change]: *s*t*r*ēa*m
-OEPrefixAReductionLate [no-change]: *s*t*r*ēa*m
 OEWeakTailReduction [no-change]: *s*t*r*ēa*m
 OEJLossAfterHeavy [no-change]: *s*t*r*ēa*m
 OEFinalGeminateSimplification [no-change]: *s*t*r*ēa*m
@@ -27753,7 +27515,6 @@ OEUnstressedAEMerger [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEPrefixIReduction [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEWeakTailReduction: *s*t*r*e*ʧ*ʧ*j*a*n
 OEJLossAfterHeavy: *s*t*r*e*ʧ*ʧ*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*r*e*ʧ*ʧ*a*n
@@ -27869,7 +27630,6 @@ OEUnstressedAEMerger [no-change]: *s*t*r*e*n*ʤ
 OEMedUnstressedILowering1 [no-change]: *s*t*r*e*n*ʤ
 OEMedUnstressedILowering [no-change]: *s*t*r*e*n*ʤ
 OEPrefixIReduction [no-change]: *s*t*r*e*n*ʤ
-OEPrefixAReductionLate [no-change]: *s*t*r*e*n*ʤ
 OEWeakTailReduction [no-change]: *s*t*r*e*n*ʤ
 OEJLossAfterHeavy [no-change]: *s*t*r*e*n*ʤ
 OEFinalGeminateSimplification [no-change]: *s*t*r*e*n*ʤ
@@ -27985,7 +27745,6 @@ OEUnstressedAEMerger [no-change]: *s*t*ō*d
 OEMedUnstressedILowering1 [no-change]: *s*t*ō*d
 OEMedUnstressedILowering [no-change]: *s*t*ō*d
 OEPrefixIReduction [no-change]: *s*t*ō*d
-OEPrefixAReductionLate [no-change]: *s*t*ō*d
 OEWeakTailReduction [no-change]: *s*t*ō*d
 OEJLossAfterHeavy [no-change]: *s*t*ō*d
 OEFinalGeminateSimplification [no-change]: *s*t*ō*d
@@ -28102,7 +27861,6 @@ OEUnstressedAEMerger: *s*ú*m*e*r
 OEMedUnstressedILowering1 [no-change]: *s*ú*m*e*r
 OEMedUnstressedILowering [no-change]: *s*ú*m*e*r
 OEPrefixIReduction [no-change]: *s*ú*m*e*r
-OEPrefixAReductionLate [no-change]: *s*ú*m*e*r
 OEWeakTailReduction [no-change]: *s*ú*m*e*r
 OEJLossAfterHeavy [no-change]: *s*ú*m*e*r
 OEFinalGeminateSimplification [no-change]: *s*ú*m*e*r
@@ -28218,7 +27976,6 @@ OEUnstressedAEMerger: *s*ú*n*n*e
 OEMedUnstressedILowering1 [no-change]: *s*ú*n*n*e
 OEMedUnstressedILowering [no-change]: *s*ú*n*n*e
 OEPrefixIReduction [no-change]: *s*ú*n*n*e
-OEPrefixAReductionLate [no-change]: *s*ú*n*n*e
 OEWeakTailReduction [no-change]: *s*ú*n*n*e
 OEJLossAfterHeavy [no-change]: *s*ú*n*n*e
 OEFinalGeminateSimplification [no-change]: *s*ú*n*n*e
@@ -28335,7 +28092,6 @@ OEUnstressedAEMerger [no-change]: *s*ú*n*d*r*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*ú*n*d*r*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*ú*n*d*r*e*j*ą*n
 OEPrefixIReduction [no-change]: *s*ú*n*d*r*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*ú*n*d*r*e*j*ą*n
 OEWeakTailReduction: *s*ú*n*d*r*e*j*a*n
 OEJLossAfterHeavy [no-change]: *s*ú*n*d*r*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *s*ú*n*d*r*e*j*a*n
@@ -28451,7 +28207,6 @@ OEUnstressedAEMerger [no-change]: *s*ū*p*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*ū*p*ą*n
 OEMedUnstressedILowering [no-change]: *s*ū*p*ą*n
 OEPrefixIReduction [no-change]: *s*ū*p*ą*n
-OEPrefixAReductionLate [no-change]: *s*ū*p*ą*n
 OEWeakTailReduction: *s*ū*p*a*n
 OEJLossAfterHeavy [no-change]: *s*ū*p*a*n
 OEFinalGeminateSimplification [no-change]: *s*ū*p*a*n
@@ -28568,7 +28323,6 @@ OEUnstressedAEMerger: *s*w*ea*l*w*e
 OEMedUnstressedILowering1 [no-change]: *s*w*ea*l*w*e
 OEMedUnstressedILowering [no-change]: *s*w*ea*l*w*e
 OEPrefixIReduction [no-change]: *s*w*ea*l*w*e
-OEPrefixAReductionLate [no-change]: *s*w*ea*l*w*e
 OEWeakTailReduction [no-change]: *s*w*ea*l*w*e
 OEJLossAfterHeavy [no-change]: *s*w*ea*l*w*e
 OEFinalGeminateSimplification [no-change]: *s*w*ea*l*w*e
@@ -28684,7 +28438,6 @@ OEUnstressedAEMerger [no-change]: *s*w*é*l*l*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*w*é*l*l*ą*n
 OEMedUnstressedILowering [no-change]: *s*w*é*l*l*ą*n
 OEPrefixIReduction [no-change]: *s*w*é*l*l*ą*n
-OEPrefixAReductionLate [no-change]: *s*w*é*l*l*ą*n
 OEWeakTailReduction: *s*w*é*l*l*a*n
 OEJLossAfterHeavy [no-change]: *s*w*é*l*l*a*n
 OEFinalGeminateSimplification [no-change]: *s*w*é*l*l*a*n
@@ -28800,7 +28553,6 @@ OEUnstressedAEMerger [no-change]: *s*w*í*m*m*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*w*í*m*m*ą*n
 OEMedUnstressedILowering [no-change]: *s*w*í*m*m*ą*n
 OEPrefixIReduction [no-change]: *s*w*í*m*m*ą*n
-OEPrefixAReductionLate [no-change]: *s*w*í*m*m*ą*n
 OEWeakTailReduction: *s*w*í*m*m*a*n
 OEJLossAfterHeavy [no-change]: *s*w*í*m*m*a*n
 OEFinalGeminateSimplification [no-change]: *s*w*í*m*m*a*n
@@ -28917,7 +28669,6 @@ OEUnstressedAEMerger [no-change]: *s*w*ḯ*n
 OEMedUnstressedILowering1 [no-change]: *s*w*ḯ*n
 OEMedUnstressedILowering [no-change]: *s*w*ḯ*n
 OEPrefixIReduction [no-change]: *s*w*ḯ*n
-OEPrefixAReductionLate [no-change]: *s*w*ḯ*n
 OEWeakTailReduction [no-change]: *s*w*ḯ*n
 OEJLossAfterHeavy [no-change]: *s*w*ḯ*n
 OEFinalGeminateSimplification [no-change]: *s*w*ḯ*n
@@ -29033,7 +28784,6 @@ OEUnstressedAEMerger [no-change]: *s*w*éo*r*d
 OEMedUnstressedILowering1 [no-change]: *s*w*éo*r*d
 OEMedUnstressedILowering [no-change]: *s*w*éo*r*d
 OEPrefixIReduction [no-change]: *s*w*éo*r*d
-OEPrefixAReductionLate [no-change]: *s*w*éo*r*d
 OEWeakTailReduction [no-change]: *s*w*éo*r*d
 OEJLossAfterHeavy [no-change]: *s*w*éo*r*d
 OEFinalGeminateSimplification [no-change]: *s*w*éo*r*d
@@ -29149,7 +28899,6 @@ OEUnstressedAEMerger [no-change]: *t*ēa*m
 OEMedUnstressedILowering1 [no-change]: *t*ēa*m
 OEMedUnstressedILowering [no-change]: *t*ēa*m
 OEPrefixIReduction [no-change]: *t*ēa*m
-OEPrefixAReductionLate [no-change]: *t*ēa*m
 OEWeakTailReduction [no-change]: *t*ēa*m
 OEJLossAfterHeavy [no-change]: *t*ēa*m
 OEFinalGeminateSimplification [no-change]: *t*ēa*m
@@ -29265,7 +29014,6 @@ OEUnstressedAEMerger [no-change]: *θ*é*ʤ*n
 OEMedUnstressedILowering1 [no-change]: *θ*é*ʤ*n
 OEMedUnstressedILowering [no-change]: *θ*é*ʤ*n
 OEPrefixIReduction [no-change]: *θ*é*ʤ*n
-OEPrefixAReductionLate [no-change]: *θ*é*ʤ*n
 OEWeakTailReduction [no-change]: *θ*é*ʤ*n
 OEJLossAfterHeavy [no-change]: *θ*é*ʤ*n
 OEFinalGeminateSimplification [no-change]: *θ*é*ʤ*n
@@ -29381,7 +29129,6 @@ OEUnstressedAEMerger [no-change]: *θ*á*n*k
 OEMedUnstressedILowering1 [no-change]: *θ*á*n*k
 OEMedUnstressedILowering [no-change]: *θ*á*n*k
 OEPrefixIReduction [no-change]: *θ*á*n*k
-OEPrefixAReductionLate [no-change]: *θ*á*n*k
 OEWeakTailReduction [no-change]: *θ*á*n*k
 OEJLossAfterHeavy [no-change]: *θ*á*n*k
 OEFinalGeminateSimplification [no-change]: *θ*á*n*k
@@ -29497,7 +29244,6 @@ OEUnstressedAEMerger [no-change]: *θ*æ*k
 OEMedUnstressedILowering1 [no-change]: *θ*æ*k
 OEMedUnstressedILowering [no-change]: *θ*æ*k
 OEPrefixIReduction [no-change]: *θ*æ*k
-OEPrefixAReductionLate [no-change]: *θ*æ*k
 OEWeakTailReduction [no-change]: *θ*æ*k
 OEJLossAfterHeavy [no-change]: *θ*æ*k
 OEFinalGeminateSimplification [no-change]: *θ*æ*k
@@ -29613,7 +29359,6 @@ OEUnstressedAEMerger [no-change]: *θ*ēo*β
 OEMedUnstressedILowering1 [no-change]: *θ*ēo*β
 OEMedUnstressedILowering [no-change]: *θ*ēo*β
 OEPrefixIReduction [no-change]: *θ*ēo*β
-OEPrefixAReductionLate [no-change]: *θ*ēo*β
 OEWeakTailReduction [no-change]: *θ*ēo*β
 OEJLossAfterHeavy [no-change]: *θ*ēo*β
 OEFinalGeminateSimplification [no-change]: *θ*ēo*β
@@ -29729,7 +29474,6 @@ OEUnstressedAEMerger [no-change]: *θ*í*n*g
 OEMedUnstressedILowering1 [no-change]: *θ*í*n*g
 OEMedUnstressedILowering [no-change]: *θ*í*n*g
 OEPrefixIReduction [no-change]: *θ*í*n*g
-OEPrefixAReductionLate [no-change]: *θ*í*n*g
 OEWeakTailReduction [no-change]: *θ*í*n*g
 OEJLossAfterHeavy [no-change]: *θ*í*n*g
 OEFinalGeminateSimplification [no-change]: *θ*í*n*g
@@ -29846,7 +29590,6 @@ OEUnstressedAEMerger [no-change]: *θ*e*n*ʧ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *θ*e*n*ʧ*j*ą*n
 OEMedUnstressedILowering [no-change]: *θ*e*n*ʧ*j*ą*n
 OEPrefixIReduction [no-change]: *θ*e*n*ʧ*j*ą*n
-OEPrefixAReductionLate [no-change]: *θ*e*n*ʧ*j*ą*n
 OEWeakTailReduction: *θ*e*n*ʧ*j*a*n
 OEJLossAfterHeavy: *θ*e*n*ʧ*a*n
 OEFinalGeminateSimplification [no-change]: *θ*e*n*ʧ*a*n
@@ -29962,7 +29705,6 @@ OEUnstressedAEMerger [no-change]: *θ*ú*r*s*t
 OEMedUnstressedILowering1 [no-change]: *θ*ú*r*s*t
 OEMedUnstressedILowering [no-change]: *θ*ú*r*s*t
 OEPrefixIReduction [no-change]: *θ*ú*r*s*t
-OEPrefixAReductionLate [no-change]: *θ*ú*r*s*t
 OEWeakTailReduction [no-change]: *θ*ú*r*s*t
 OEJLossAfterHeavy [no-change]: *θ*ú*r*s*t
 OEFinalGeminateSimplification [no-change]: *θ*ú*r*s*t
@@ -30079,7 +29821,6 @@ OEUnstressedAEMerger [no-change]: *θ*ó*r*n
 OEMedUnstressedILowering1 [no-change]: *θ*ó*r*n
 OEMedUnstressedILowering [no-change]: *θ*ó*r*n
 OEPrefixIReduction [no-change]: *θ*ó*r*n
-OEPrefixAReductionLate [no-change]: *θ*ó*r*n
 OEWeakTailReduction [no-change]: *θ*ó*r*n
 OEJLossAfterHeavy [no-change]: *θ*ó*r*n
 OEFinalGeminateSimplification [no-change]: *θ*ó*r*n
@@ -30195,7 +29936,6 @@ OEUnstressedAEMerger [no-change]: *θ*r*é*ʃ*ą*n
 OEMedUnstressedILowering1 [no-change]: *θ*r*é*ʃ*ą*n
 OEMedUnstressedILowering [no-change]: *θ*r*é*ʃ*ą*n
 OEPrefixIReduction [no-change]: *θ*r*é*ʃ*ą*n
-OEPrefixAReductionLate [no-change]: *θ*r*é*ʃ*ą*n
 OEWeakTailReduction: *θ*r*é*ʃ*a*n
 OEJLossAfterHeavy [no-change]: *θ*r*é*ʃ*a*n
 OEFinalGeminateSimplification [no-change]: *θ*r*é*ʃ*a*n
@@ -30311,7 +30051,6 @@ OEUnstressedAEMerger [no-change]: *θ*ú*n*r
 OEMedUnstressedILowering1 [no-change]: *θ*ú*n*r
 OEMedUnstressedILowering [no-change]: *θ*ú*n*r
 OEPrefixIReduction [no-change]: *θ*ú*n*r
-OEPrefixAReductionLate [no-change]: *θ*ú*n*r
 OEWeakTailReduction [no-change]: *θ*ú*n*r
 OEJLossAfterHeavy [no-change]: *θ*ú*n*r
 OEFinalGeminateSimplification [no-change]: *θ*ú*n*r
@@ -30427,7 +30166,6 @@ OEUnstressedAEMerger [no-change]: *t*í*k*k*a
 OEMedUnstressedILowering1 [no-change]: *t*í*k*k*a
 OEMedUnstressedILowering [no-change]: *t*í*k*k*a
 OEPrefixIReduction [no-change]: *t*í*k*k*a
-OEPrefixAReductionLate [no-change]: *t*í*k*k*a
 OEWeakTailReduction [no-change]: *t*í*k*k*a
 OEJLossAfterHeavy [no-change]: *t*í*k*k*a
 OEFinalGeminateSimplification [no-change]: *t*í*k*k*a
@@ -30544,7 +30282,6 @@ OEUnstressedAEMerger [no-change]: *t*ḯ*d
 OEMedUnstressedILowering1 [no-change]: *t*ḯ*d
 OEMedUnstressedILowering [no-change]: *t*ḯ*d
 OEPrefixIReduction [no-change]: *t*ḯ*d
-OEPrefixAReductionLate [no-change]: *t*ḯ*d
 OEWeakTailReduction [no-change]: *t*ḯ*d
 OEJLossAfterHeavy [no-change]: *t*ḯ*d
 OEFinalGeminateSimplification [no-change]: *t*ḯ*d
@@ -30660,7 +30397,6 @@ OEUnstressedAEMerger: *t*ā*x*e
 OEMedUnstressedILowering1 [no-change]: *t*ā*x*e
 OEMedUnstressedILowering [no-change]: *t*ā*x*e
 OEPrefixIReduction [no-change]: *t*ā*x*e
-OEPrefixAReductionLate [no-change]: *t*ā*x*e
 OEWeakTailReduction [no-change]: *t*ā*x*e
 OEJLossAfterHeavy [no-change]: *t*ā*x*e
 OEFinalGeminateSimplification [no-change]: *t*ā*x*e
@@ -30777,7 +30513,6 @@ OEUnstressedAEMerger [no-change]: *t*ā*k*n
 OEMedUnstressedILowering1 [no-change]: *t*ā*k*n
 OEMedUnstressedILowering [no-change]: *t*ā*k*n
 OEPrefixIReduction [no-change]: *t*ā*k*n
-OEPrefixAReductionLate [no-change]: *t*ā*k*n
 OEWeakTailReduction [no-change]: *t*ā*k*n
 OEJLossAfterHeavy [no-change]: *t*ā*k*n
 OEFinalGeminateSimplification [no-change]: *t*ā*k*n
@@ -30893,7 +30628,6 @@ OEUnstressedAEMerger [no-change]: *t*á*n*g
 OEMedUnstressedILowering1 [no-change]: *t*á*n*g
 OEMedUnstressedILowering [no-change]: *t*á*n*g
 OEPrefixIReduction [no-change]: *t*á*n*g
-OEPrefixAReductionLate [no-change]: *t*á*n*g
 OEWeakTailReduction [no-change]: *t*á*n*g
 OEJLossAfterHeavy [no-change]: *t*á*n*g
 OEFinalGeminateSimplification [no-change]: *t*á*n*g
@@ -31009,7 +30743,6 @@ OEUnstressedAEMerger: *t*ú*n*g*e
 OEMedUnstressedILowering1 [no-change]: *t*ú*n*g*e
 OEMedUnstressedILowering [no-change]: *t*ú*n*g*e
 OEPrefixIReduction [no-change]: *t*ú*n*g*e
-OEPrefixAReductionLate [no-change]: *t*ú*n*g*e
 OEWeakTailReduction [no-change]: *t*ú*n*g*e
 OEJLossAfterHeavy [no-change]: *t*ú*n*g*e
 OEFinalGeminateSimplification [no-change]: *t*ú*n*g*e
@@ -31126,7 +30859,6 @@ OEUnstressedAEMerger [no-change]: *t*ū*n
 OEMedUnstressedILowering1 [no-change]: *t*ū*n
 OEMedUnstressedILowering [no-change]: *t*ū*n
 OEPrefixIReduction [no-change]: *t*ū*n
-OEPrefixAReductionLate [no-change]: *t*ū*n
 OEWeakTailReduction [no-change]: *t*ū*n
 OEJLossAfterHeavy [no-change]: *t*ū*n
 OEFinalGeminateSimplification [no-change]: *t*ū*n
@@ -31242,7 +30974,6 @@ OEUnstressedAEMerger [no-change]: *t*r*é*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *t*r*é*d*ą*n
 OEMedUnstressedILowering [no-change]: *t*r*é*d*ą*n
 OEPrefixIReduction [no-change]: *t*r*é*d*ą*n
-OEPrefixAReductionLate [no-change]: *t*r*é*d*ą*n
 OEWeakTailReduction: *t*r*é*d*a*n
 OEJLossAfterHeavy [no-change]: *t*r*é*d*a*n
 OEFinalGeminateSimplification [no-change]: *t*r*é*d*a*n
@@ -31358,7 +31089,6 @@ OEUnstressedAEMerger [no-change]: *t*r*ó*g
 OEMedUnstressedILowering1 [no-change]: *t*r*ó*g
 OEMedUnstressedILowering [no-change]: *t*r*ó*g
 OEPrefixIReduction [no-change]: *t*r*ó*g
-OEPrefixAReductionLate [no-change]: *t*r*ó*g
 OEWeakTailReduction [no-change]: *t*r*ó*g
 OEJLossAfterHeavy [no-change]: *t*r*ó*g
 OEFinalGeminateSimplification [no-change]: *t*r*ó*g
@@ -31475,7 +31205,6 @@ OEUnstressedAEMerger [no-change]: *w*a*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*a*d*ą*n
 OEMedUnstressedILowering [no-change]: *w*a*d*ą*n
 OEPrefixIReduction [no-change]: *w*a*d*ą*n
-OEPrefixAReductionLate [no-change]: *w*a*d*ą*n
 OEWeakTailReduction: *w*a*d*a*n
 OEJLossAfterHeavy [no-change]: *w*a*d*a*n
 OEFinalGeminateSimplification [no-change]: *w*a*d*a*n
@@ -31591,7 +31320,6 @@ OEUnstressedAEMerger [no-change]: *w*æ*ʤ*n
 OEMedUnstressedILowering1 [no-change]: *w*æ*ʤ*n
 OEMedUnstressedILowering [no-change]: *w*æ*ʤ*n
 OEPrefixIReduction [no-change]: *w*æ*ʤ*n
-OEPrefixAReductionLate [no-change]: *w*æ*ʤ*n
 OEWeakTailReduction [no-change]: *w*æ*ʤ*n
 OEJLossAfterHeavy [no-change]: *w*æ*ʤ*n
 OEFinalGeminateSimplification [no-change]: *w*æ*ʤ*n
@@ -31707,7 +31435,6 @@ OEUnstressedAEMerger [no-change]: *w*ea*r*p
 OEMedUnstressedILowering1 [no-change]: *w*ea*r*p
 OEMedUnstressedILowering [no-change]: *w*ea*r*p
 OEPrefixIReduction [no-change]: *w*ea*r*p
-OEPrefixAReductionLate [no-change]: *w*ea*r*p
 OEWeakTailReduction [no-change]: *w*ea*r*p
 OEJLossAfterHeavy [no-change]: *w*ea*r*p
 OEFinalGeminateSimplification [no-change]: *w*ea*r*p
@@ -31824,7 +31551,6 @@ OEUnstressedAEMerger [no-change]: *w*éo*r*p*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*éo*r*p*ą*n
 OEMedUnstressedILowering [no-change]: *w*éo*r*p*ą*n
 OEPrefixIReduction [no-change]: *w*éo*r*p*ą*n
-OEPrefixAReductionLate [no-change]: *w*éo*r*p*ą*n
 OEWeakTailReduction: *w*éo*r*p*a*n
 OEJLossAfterHeavy [no-change]: *w*éo*r*p*a*n
 OEFinalGeminateSimplification [no-change]: *w*éo*r*p*a*n
@@ -31940,7 +31666,6 @@ OEUnstressedAEMerger: *w*ea*r*t*e
 OEMedUnstressedILowering1 [no-change]: *w*ea*r*t*e
 OEMedUnstressedILowering [no-change]: *w*ea*r*t*e
 OEPrefixIReduction [no-change]: *w*ea*r*t*e
-OEPrefixAReductionLate [no-change]: *w*ea*r*t*e
 OEWeakTailReduction [no-change]: *w*ea*r*t*e
 OEJLossAfterHeavy [no-change]: *w*ea*r*t*e
 OEFinalGeminateSimplification [no-change]: *w*ea*r*t*e
@@ -32057,7 +31782,6 @@ OEUnstressedAEMerger [no-change]: *w*a*s*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*a*s*k*ą*n
 OEMedUnstressedILowering [no-change]: *w*a*s*k*ą*n
 OEPrefixIReduction [no-change]: *w*a*s*k*ą*n
-OEPrefixAReductionLate [no-change]: *w*a*s*k*ą*n
 OEWeakTailReduction: *w*a*s*k*a*n
 OEJLossAfterHeavy [no-change]: *w*a*s*k*a*n
 OEFinalGeminateSimplification [no-change]: *w*a*s*k*a*n
@@ -32173,7 +31897,6 @@ OEUnstressedAEMerger [no-change]: *w*ea*x*s
 OEMedUnstressedILowering1 [no-change]: *w*ea*x*s
 OEMedUnstressedILowering [no-change]: *w*ea*x*s
 OEPrefixIReduction [no-change]: *w*ea*x*s
-OEPrefixAReductionLate [no-change]: *w*ea*x*s
 OEWeakTailReduction [no-change]: *w*ea*x*s
 OEJLossAfterHeavy [no-change]: *w*ea*x*s
 OEFinalGeminateSimplification [no-change]: *w*ea*x*s
@@ -32290,7 +32013,6 @@ OEUnstressedAEMerger [no-change]: *w*ea*x*s*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*ea*x*s*ą*n
 OEMedUnstressedILowering [no-change]: *w*ea*x*s*ą*n
 OEPrefixIReduction [no-change]: *w*ea*x*s*ą*n
-OEPrefixAReductionLate [no-change]: *w*ea*x*s*ą*n
 OEWeakTailReduction: *w*ea*x*s*a*n
 OEJLossAfterHeavy [no-change]: *w*ea*x*s*a*n
 OEFinalGeminateSimplification [no-change]: *w*ea*x*s*a*n
@@ -32407,7 +32129,6 @@ OEUnstressedAEMerger [no-change]: *w*é*ʤ
 OEMedUnstressedILowering1 [no-change]: *w*é*ʤ
 OEMedUnstressedILowering [no-change]: *w*é*ʤ
 OEPrefixIReduction [no-change]: *w*é*ʤ
-OEPrefixAReductionLate [no-change]: *w*é*ʤ
 OEWeakTailReduction [no-change]: *w*é*ʤ
 OEJLossAfterHeavy [no-change]: *w*é*ʤ
 OEFinalGeminateSimplification [no-change]: *w*é*ʤ
@@ -32524,7 +32245,6 @@ OEUnstressedAEMerger [no-change]: *w*ǣ*p*n
 OEMedUnstressedILowering1 [no-change]: *w*ǣ*p*n
 OEMedUnstressedILowering [no-change]: *w*ǣ*p*n
 OEPrefixIReduction [no-change]: *w*ǣ*p*n
-OEPrefixAReductionLate [no-change]: *w*ǣ*p*n
 OEWeakTailReduction [no-change]: *w*ǣ*p*n
 OEJLossAfterHeavy [no-change]: *w*ǣ*p*n
 OEFinalGeminateSimplification [no-change]: *w*ǣ*p*n
@@ -32640,7 +32360,6 @@ OEUnstressedAEMerger: *w*é*s*l*e
 OEMedUnstressedILowering1 [no-change]: *w*é*s*l*e
 OEMedUnstressedILowering [no-change]: *w*é*s*l*e
 OEPrefixIReduction [no-change]: *w*é*s*l*e
-OEPrefixAReductionLate [no-change]: *w*é*s*l*e
 OEWeakTailReduction [no-change]: *w*é*s*l*e
 OEJLossAfterHeavy [no-change]: *w*é*s*l*e
 OEFinalGeminateSimplification [no-change]: *w*é*s*l*e
@@ -32756,7 +32475,6 @@ OEUnstressedAEMerger [no-change]: *w*é*d*r
 OEMedUnstressedILowering1 [no-change]: *w*é*d*r
 OEMedUnstressedILowering [no-change]: *w*é*d*r
 OEPrefixIReduction [no-change]: *w*é*d*r
-OEPrefixAReductionLate [no-change]: *w*é*d*r
 OEWeakTailReduction [no-change]: *w*é*d*r
 OEJLossAfterHeavy [no-change]: *w*é*d*r
 OEFinalGeminateSimplification [no-change]: *w*é*d*r
@@ -32872,7 +32590,6 @@ OEUnstressedAEMerger [no-change]: *w*é*β*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*é*β*ą*n
 OEMedUnstressedILowering [no-change]: *w*é*β*ą*n
 OEPrefixIReduction [no-change]: *w*é*β*ą*n
-OEPrefixAReductionLate [no-change]: *w*é*β*ą*n
 OEWeakTailReduction: *w*é*β*a*n
 OEJLossAfterHeavy [no-change]: *w*é*β*a*n
 OEFinalGeminateSimplification [no-change]: *w*é*β*a*n
@@ -32988,7 +32705,6 @@ OEUnstressedAEMerger: *w*é*s*t*e*n*e
 OEMedUnstressedILowering1 [no-change]: *w*é*s*t*e*n*e
 OEMedUnstressedILowering [no-change]: *w*é*s*t*e*n*e
 OEPrefixIReduction [no-change]: *w*é*s*t*e*n*e
-OEPrefixAReductionLate [no-change]: *w*é*s*t*e*n*e
 OEWeakTailReduction [no-change]: *w*é*s*t*e*n*e
 OEJLossAfterHeavy [no-change]: *w*é*s*t*e*n*e
 OEFinalGeminateSimplification [no-change]: *w*é*s*t*e*n*e
@@ -33104,7 +32820,6 @@ OEUnstressedAEMerger [no-change]: *w*é*θ*r
 OEMedUnstressedILowering1 [no-change]: *w*é*θ*r
 OEMedUnstressedILowering [no-change]: *w*é*θ*r
 OEPrefixIReduction [no-change]: *w*é*θ*r
-OEPrefixAReductionLate [no-change]: *w*é*θ*r
 OEWeakTailReduction [no-change]: *w*é*θ*r
 OEJLossAfterHeavy [no-change]: *w*é*θ*r
 OEFinalGeminateSimplification [no-change]: *w*é*θ*r
@@ -33220,7 +32935,6 @@ OEUnstressedAEMerger [no-change]: *x*w*ḯ*l
 OEMedUnstressedILowering1 [no-change]: *x*w*ḯ*l
 OEMedUnstressedILowering [no-change]: *x*w*ḯ*l
 OEPrefixIReduction [no-change]: *x*w*ḯ*l
-OEPrefixAReductionLate [no-change]: *x*w*ḯ*l
 OEWeakTailReduction [no-change]: *x*w*ḯ*l
 OEJLossAfterHeavy [no-change]: *x*w*ḯ*l
 OEFinalGeminateSimplification [no-change]: *x*w*ḯ*l
@@ -33336,7 +33050,6 @@ OEUnstressedAEMerger: *x*ō*r*e
 OEMedUnstressedILowering1 [no-change]: *x*ō*r*e
 OEMedUnstressedILowering [no-change]: *x*ō*r*e
 OEPrefixIReduction [no-change]: *x*ō*r*e
-OEPrefixAReductionLate [no-change]: *x*ō*r*e
 OEWeakTailReduction [no-change]: *x*ō*r*e
 OEJLossAfterHeavy [no-change]: *x*ō*r*e
 OEFinalGeminateSimplification [no-change]: *x*ō*r*e
@@ -33452,7 +33165,6 @@ OEUnstressedAEMerger: *w*ú*d*u*w*e
 OEMedUnstressedILowering1 [no-change]: *w*ú*d*u*w*e
 OEMedUnstressedILowering [no-change]: *w*ú*d*u*w*e
 OEPrefixIReduction [no-change]: *w*ú*d*u*w*e
-OEPrefixAReductionLate [no-change]: *w*ú*d*u*w*e
 OEWeakTailReduction [no-change]: *w*ú*d*u*w*e
 OEJLossAfterHeavy [no-change]: *w*ú*d*u*w*e
 OEFinalGeminateSimplification [no-change]: *w*ú*d*u*w*e
@@ -33568,7 +33280,6 @@ OEUnstressedAEMerger [no-change]: *w*ea*l*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*ea*l*d*ą*n
 OEMedUnstressedILowering [no-change]: *w*ea*l*d*ą*n
 OEPrefixIReduction [no-change]: *w*ea*l*d*ą*n
-OEPrefixAReductionLate [no-change]: *w*ea*l*d*ą*n
 OEWeakTailReduction: *w*ea*l*d*a*n
 OEJLossAfterHeavy [no-change]: *w*ea*l*d*a*n
 OEFinalGeminateSimplification [no-change]: *w*ea*l*d*a*n
@@ -33684,7 +33395,6 @@ OEUnstressedAEMerger [no-change]: *w*ḯ*β
 OEMedUnstressedILowering1 [no-change]: *w*ḯ*β
 OEMedUnstressedILowering [no-change]: *w*ḯ*β
 OEPrefixIReduction [no-change]: *w*ḯ*β
-OEPrefixAReductionLate [no-change]: *w*ḯ*β
 OEWeakTailReduction [no-change]: *w*ḯ*β
 OEJLossAfterHeavy [no-change]: *w*ḯ*β
 OEFinalGeminateSimplification [no-change]: *w*ḯ*β
@@ -33800,7 +33510,6 @@ OEUnstressedAEMerger [no-change]: *w*i*x*t
 OEMedUnstressedILowering1 [no-change]: *w*i*x*t
 OEMedUnstressedILowering [no-change]: *w*i*x*t
 OEPrefixIReduction [no-change]: *w*i*x*t
-OEPrefixAReductionLate [no-change]: *w*i*x*t
 OEWeakTailReduction [no-change]: *w*i*x*t
 OEJLossAfterHeavy [no-change]: *w*i*x*t
 OEFinalGeminateSimplification [no-change]: *w*i*x*t
@@ -33916,7 +33625,6 @@ OEUnstressedAEMerger [no-change]: *w*i*l*l*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*i*l*l*j*ą*n
 OEMedUnstressedILowering [no-change]: *w*i*l*l*j*ą*n
 OEPrefixIReduction [no-change]: *w*i*l*l*j*ą*n
-OEPrefixAReductionLate [no-change]: *w*i*l*l*j*ą*n
 OEWeakTailReduction: *w*i*l*l*j*a*n
 OEJLossAfterHeavy: *w*i*l*l*a*n
 OEFinalGeminateSimplification [no-change]: *w*i*l*l*a*n
@@ -34033,7 +33741,6 @@ OEUnstressedAEMerger [no-change]: *w*i*l*l*j*a
 OEMedUnstressedILowering1 [no-change]: *w*i*l*l*j*a
 OEMedUnstressedILowering [no-change]: *w*i*l*l*j*a
 OEPrefixIReduction [no-change]: *w*i*l*l*j*a
-OEPrefixAReductionLate [no-change]: *w*i*l*l*j*a
 OEWeakTailReduction [no-change]: *w*i*l*l*j*a
 OEJLossAfterHeavy: *w*i*l*l*a
 OEFinalGeminateSimplification [no-change]: *w*i*l*l*a
@@ -34150,7 +33857,6 @@ OEUnstressedAEMerger [no-change]: *w*í*n*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*í*n*d*ą*n
 OEMedUnstressedILowering [no-change]: *w*í*n*d*ą*n
 OEPrefixIReduction [no-change]: *w*í*n*d*ą*n
-OEPrefixAReductionLate [no-change]: *w*í*n*d*ą*n
 OEWeakTailReduction: *w*í*n*d*a*n
 OEJLossAfterHeavy [no-change]: *w*í*n*d*a*n
 OEFinalGeminateSimplification [no-change]: *w*í*n*d*a*n
@@ -34266,7 +33972,6 @@ OEUnstressedAEMerger [no-change]: *w*í*n*t*r
 OEMedUnstressedILowering1 [no-change]: *w*í*n*t*r
 OEMedUnstressedILowering [no-change]: *w*í*n*t*r
 OEPrefixIReduction [no-change]: *w*í*n*t*r
-OEPrefixAReductionLate [no-change]: *w*í*n*t*r
 OEWeakTailReduction [no-change]: *w*í*n*t*r
 OEJLossAfterHeavy [no-change]: *w*í*n*t*r
 OEFinalGeminateSimplification [no-change]: *w*í*n*t*r
@@ -34383,7 +34088,6 @@ OEUnstressedAEMerger [no-change]: *w*ea*l*d
 OEMedUnstressedILowering1 [no-change]: *w*ea*l*d
 OEMedUnstressedILowering [no-change]: *w*ea*l*d
 OEPrefixIReduction [no-change]: *w*ea*l*d
-OEPrefixAReductionLate [no-change]: *w*ea*l*d
 OEWeakTailReduction [no-change]: *w*ea*l*d
 OEJLossAfterHeavy [no-change]: *w*ea*l*d
 OEFinalGeminateSimplification [no-change]: *w*ea*l*d
@@ -34499,7 +34203,6 @@ OEUnstressedAEMerger [no-change]: *w*ú*n*d*r
 OEMedUnstressedILowering1 [no-change]: *w*ú*n*d*r
 OEMedUnstressedILowering [no-change]: *w*ú*n*d*r
 OEPrefixIReduction [no-change]: *w*ú*n*d*r
-OEPrefixAReductionLate [no-change]: *w*ú*n*d*r
 OEWeakTailReduction [no-change]: *w*ú*n*d*r
 OEJLossAfterHeavy [no-change]: *w*ú*n*d*r
 OEFinalGeminateSimplification [no-change]: *w*ú*n*d*r
@@ -34615,7 +34318,6 @@ OEUnstressedAEMerger [no-change]: *w*ó*r*d
 OEMedUnstressedILowering1 [no-change]: *w*ó*r*d
 OEMedUnstressedILowering [no-change]: *w*ó*r*d
 OEPrefixIReduction [no-change]: *w*ó*r*d
-OEPrefixAReductionLate [no-change]: *w*ó*r*d
 OEWeakTailReduction [no-change]: *w*ó*r*d
 OEJLossAfterHeavy [no-change]: *w*ó*r*d
 OEFinalGeminateSimplification [no-change]: *w*ó*r*d
@@ -34731,7 +34433,6 @@ OEUnstressedAEMerger [no-change]: *w*y*r*m
 OEMedUnstressedILowering1 [no-change]: *w*y*r*m
 OEMedUnstressedILowering [no-change]: *w*y*r*m
 OEPrefixIReduction [no-change]: *w*y*r*m
-OEPrefixAReductionLate [no-change]: *w*y*r*m
 OEWeakTailReduction [no-change]: *w*y*r*m
 OEJLossAfterHeavy [no-change]: *w*y*r*m
 OEFinalGeminateSimplification [no-change]: *w*y*r*m
@@ -34847,7 +34548,6 @@ OEUnstressedAEMerger [no-change]: *w*r*í*n*g*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*r*í*n*g*ą*n
 OEMedUnstressedILowering [no-change]: *w*r*í*n*g*ą*n
 OEPrefixIReduction [no-change]: *w*r*í*n*g*ą*n
-OEPrefixAReductionLate [no-change]: *w*r*í*n*g*ą*n
 OEWeakTailReduction: *w*r*í*n*g*a*n
 OEJLossAfterHeavy [no-change]: *w*r*í*n*g*a*n
 OEFinalGeminateSimplification [no-change]: *w*r*í*n*g*a*n
@@ -34964,7 +34664,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*ea*r*n
 OEMedUnstressedILowering1 [no-change]: *ʤ*ea*r*n
 OEMedUnstressedILowering [no-change]: *ʤ*ea*r*n
 OEPrefixIReduction [no-change]: *ʤ*ea*r*n
-OEPrefixAReductionLate [no-change]: *ʤ*ea*r*n
 OEWeakTailReduction [no-change]: *ʤ*ea*r*n
 OEJLossAfterHeavy [no-change]: *ʤ*ea*r*n
 OEFinalGeminateSimplification [no-change]: *ʤ*ea*r*n
@@ -35080,7 +34779,6 @@ OEUnstressedAEMerger [no-change]: *j*ēa*r
 OEMedUnstressedILowering1 [no-change]: *j*ēa*r
 OEMedUnstressedILowering [no-change]: *j*ēa*r
 OEPrefixIReduction [no-change]: *j*ēa*r
-OEPrefixAReductionLate [no-change]: *j*ēa*r
 OEWeakTailReduction [no-change]: *j*ēa*r
 OEJLossAfterHeavy [no-change]: *j*ēa*r
 OEFinalGeminateSimplification [no-change]: *j*ēa*r
@@ -35196,7 +34894,6 @@ OEUnstressedAEMerger [no-change]: *j*éo*k
 OEMedUnstressedILowering1 [no-change]: *j*éo*k
 OEMedUnstressedILowering [no-change]: *j*éo*k
 OEPrefixIReduction [no-change]: *j*éo*k
-OEPrefixAReductionLate [no-change]: *j*éo*k
 OEWeakTailReduction [no-change]: *j*éo*k
 OEJLossAfterHeavy [no-change]: *j*éo*k
 OEFinalGeminateSimplification [no-change]: *j*éo*k
@@ -35316,7 +35013,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*t*m
 OEMedUnstressedILowering1 [no-change]: *b*ó*t*m
 OEMedUnstressedILowering [no-change]: *b*ó*t*m
 OEPrefixIReduction [no-change]: *b*ó*t*m
-OEPrefixAReductionLate [no-change]: *b*ó*t*m
 OEWeakTailReduction [no-change]: *b*ó*t*m
 OEJLossAfterHeavy [no-change]: *b*ó*t*m
 OEFinalGeminateSimplification [no-change]: *b*ó*t*m
@@ -35432,7 +35128,6 @@ OEUnstressedAEMerger: *b*r*á*n*d*e*s
 OEMedUnstressedILowering1 [no-change]: *b*r*á*n*d*e*s
 OEMedUnstressedILowering [no-change]: *b*r*á*n*d*e*s
 OEPrefixIReduction [no-change]: *b*r*á*n*d*e*s
-OEPrefixAReductionLate [no-change]: *b*r*á*n*d*e*s
 OEWeakTailReduction [no-change]: *b*r*á*n*d*e*s
 OEJLossAfterHeavy [no-change]: *b*r*á*n*d*e*s
 OEFinalGeminateSimplification [no-change]: *b*r*á*n*d*e*s
@@ -35548,7 +35243,6 @@ OEUnstressedAEMerger [no-change]: *b*r*ēo*s*t
 OEMedUnstressedILowering1 [no-change]: *b*r*ēo*s*t
 OEMedUnstressedILowering [no-change]: *b*r*ēo*s*t
 OEPrefixIReduction [no-change]: *b*r*ēo*s*t
-OEPrefixAReductionLate [no-change]: *b*r*ēo*s*t
 OEWeakTailReduction [no-change]: *b*r*ēo*s*t
 OEJLossAfterHeavy [no-change]: *b*r*ēo*s*t
 OEFinalGeminateSimplification [no-change]: *b*r*ēo*s*t
@@ -35665,7 +35359,6 @@ OEUnstressedAEMerger [no-change]: *k*r*æ*f*t
 OEMedUnstressedILowering1 [no-change]: *k*r*æ*f*t
 OEMedUnstressedILowering [no-change]: *k*r*æ*f*t
 OEPrefixIReduction [no-change]: *k*r*æ*f*t
-OEPrefixAReductionLate [no-change]: *k*r*æ*f*t
 OEWeakTailReduction [no-change]: *k*r*æ*f*t
 OEJLossAfterHeavy [no-change]: *k*r*æ*f*t
 OEFinalGeminateSimplification [no-change]: *k*r*æ*f*t
@@ -35782,7 +35475,6 @@ OEUnstressedAEMerger [no-change]: *d*i*l*i
 OEMedUnstressedILowering1: *d*i*l*e
 OEMedUnstressedILowering [no-change]: *d*i*l*e
 OEPrefixIReduction [no-change]: *d*i*l*e
-OEPrefixAReductionLate [no-change]: *d*i*l*e
 OEWeakTailReduction [no-change]: *d*i*l*e
 OEJLossAfterHeavy [no-change]: *d*i*l*e
 OEFinalGeminateSimplification [no-change]: *d*i*l*e
@@ -35899,7 +35591,6 @@ OEUnstressedAEMerger [no-change]: *f*e*s*t*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*e*s*t*j*ą*n
 OEMedUnstressedILowering [no-change]: *f*e*s*t*j*ą*n
 OEPrefixIReduction [no-change]: *f*e*s*t*j*ą*n
-OEPrefixAReductionLate [no-change]: *f*e*s*t*j*ą*n
 OEWeakTailReduction: *f*e*s*t*j*a*n
 OEJLossAfterHeavy: *f*e*s*t*a*n
 OEFinalGeminateSimplification [no-change]: *f*e*s*t*a*n
@@ -36015,7 +35706,6 @@ OEUnstressedAEMerger: *f*l*a*s*k*e
 OEMedUnstressedILowering1 [no-change]: *f*l*a*s*k*e
 OEMedUnstressedILowering [no-change]: *f*l*a*s*k*e
 OEPrefixIReduction [no-change]: *f*l*a*s*k*e
-OEPrefixAReductionLate [no-change]: *f*l*a*s*k*e
 OEWeakTailReduction [no-change]: *f*l*a*s*k*e
 OEJLossAfterHeavy [no-change]: *f*l*a*s*k*e
 OEFinalGeminateSimplification [no-change]: *f*l*a*s*k*e
@@ -36132,7 +35822,6 @@ OEUnstressedAEMerger [no-change]: *f*y*l*ʤ*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *f*y*l*ʤ*j*ą*n
 OEMedUnstressedILowering [no-change]: *f*y*l*ʤ*j*ą*n
 OEPrefixIReduction [no-change]: *f*y*l*ʤ*j*ą*n
-OEPrefixAReductionLate [no-change]: *f*y*l*ʤ*j*ą*n
 OEWeakTailReduction: *f*y*l*ʤ*j*a*n
 OEJLossAfterHeavy: *f*y*l*ʤ*a*n
 OEFinalGeminateSimplification [no-change]: *f*y*l*ʤ*a*n
@@ -36248,7 +35937,6 @@ OEUnstressedAEMerger [no-change]: *ʤ*ea*l*l*a
 OEMedUnstressedILowering1 [no-change]: *ʤ*ea*l*l*a
 OEMedUnstressedILowering [no-change]: *ʤ*ea*l*l*a
 OEPrefixIReduction [no-change]: *ʤ*ea*l*l*a
-OEPrefixAReductionLate [no-change]: *ʤ*ea*l*l*a
 OEWeakTailReduction [no-change]: *ʤ*ea*l*l*a
 OEJLossAfterHeavy [no-change]: *ʤ*ea*l*l*a
 OEFinalGeminateSimplification [no-change]: *ʤ*ea*l*l*a
@@ -36365,7 +36053,6 @@ OEUnstressedAEMerger [no-change]: *k*n*i*x*t
 OEMedUnstressedILowering1 [no-change]: *k*n*i*x*t
 OEMedUnstressedILowering [no-change]: *k*n*i*x*t
 OEPrefixIReduction [no-change]: *k*n*i*x*t
-OEPrefixAReductionLate [no-change]: *k*n*i*x*t
 OEWeakTailReduction [no-change]: *k*n*i*x*t
 OEJLossAfterHeavy [no-change]: *k*n*i*x*t
 OEFinalGeminateSimplification [no-change]: *k*n*i*x*t
@@ -36482,7 +36169,6 @@ OEUnstressedAEMerger [no-change]: *x*l*a*d*ą*n
 OEMedUnstressedILowering1 [no-change]: *x*l*a*d*ą*n
 OEMedUnstressedILowering [no-change]: *x*l*a*d*ą*n
 OEPrefixIReduction [no-change]: *x*l*a*d*ą*n
-OEPrefixAReductionLate [no-change]: *x*l*a*d*ą*n
 OEWeakTailReduction: *x*l*a*d*a*n
 OEJLossAfterHeavy [no-change]: *x*l*a*d*a*n
 OEFinalGeminateSimplification [no-change]: *x*l*a*d*a*n
@@ -36598,7 +36284,6 @@ OEUnstressedAEMerger [no-change]: *l*a*p*p*a
 OEMedUnstressedILowering1 [no-change]: *l*a*p*p*a
 OEMedUnstressedILowering [no-change]: *l*a*p*p*a
 OEPrefixIReduction [no-change]: *l*a*p*p*a
-OEPrefixAReductionLate [no-change]: *l*a*p*p*a
 OEWeakTailReduction [no-change]: *l*a*p*p*a
 OEJLossAfterHeavy [no-change]: *l*a*p*p*a
 OEFinalGeminateSimplification [no-change]: *l*a*p*p*a
@@ -36715,7 +36400,6 @@ OEUnstressedAEMerger [no-change]: *x*l*ie*x*ç*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *x*l*ie*x*ç*j*ą*n
 OEMedUnstressedILowering [no-change]: *x*l*ie*x*ç*j*ą*n
 OEPrefixIReduction [no-change]: *x*l*ie*x*ç*j*ą*n
-OEPrefixAReductionLate [no-change]: *x*l*ie*x*ç*j*ą*n
 OEWeakTailReduction: *x*l*ie*x*ç*j*a*n
 OEJLossAfterHeavy: *x*l*ie*x*ç*a*n
 OEFinalGeminateSimplification [no-change]: *x*l*ie*x*ç*a*n
@@ -36831,7 +36515,6 @@ OEUnstressedAEMerger [no-change]: *l*ā*m
 OEMedUnstressedILowering1 [no-change]: *l*ā*m
 OEMedUnstressedILowering [no-change]: *l*ā*m
 OEPrefixIReduction [no-change]: *l*ā*m
-OEPrefixAReductionLate [no-change]: *l*ā*m
 OEWeakTailReduction [no-change]: *l*ā*m
 OEJLossAfterHeavy [no-change]: *l*ā*m
 OEFinalGeminateSimplification [no-change]: *l*ā*m
@@ -36948,7 +36631,6 @@ OEUnstressedAEMerger [no-change]: *l*ú*n*g*e*n*n*j
 OEMedUnstressedILowering1 [no-change]: *l*ú*n*g*e*n*n*j
 OEMedUnstressedILowering [no-change]: *l*ú*n*g*e*n*n*j
 OEPrefixIReduction [no-change]: *l*ú*n*g*e*n*n*j
-OEPrefixAReductionLate [no-change]: *l*ú*n*g*e*n*n*j
 OEWeakTailReduction [no-change]: *l*ú*n*g*e*n*n*j
 OEJLossAfterHeavy: *l*ú*n*g*e*n*n
 OEFinalGeminateSimplification: *l*ú*n*g*e*n
@@ -37065,7 +36747,6 @@ OEUnstressedAEMerger [no-change]: *n*a*β*o*l*a
 OEMedUnstressedILowering1 [no-change]: *n*a*β*o*l*a
 OEMedUnstressedILowering [no-change]: *n*a*β*o*l*a
 OEPrefixIReduction [no-change]: *n*a*β*o*l*a
-OEPrefixAReductionLate [no-change]: *n*a*β*o*l*a
 OEWeakTailReduction [no-change]: *n*a*β*o*l*a
 OEJLossAfterHeavy [no-change]: *n*a*β*o*l*a
 OEFinalGeminateSimplification [no-change]: *n*a*β*o*l*a
@@ -37181,7 +36862,6 @@ OEUnstressedAEMerger [no-change]: *x*n*é*k*k*a
 OEMedUnstressedILowering1 [no-change]: *x*n*é*k*k*a
 OEMedUnstressedILowering [no-change]: *x*n*é*k*k*a
 OEPrefixIReduction [no-change]: *x*n*é*k*k*a
-OEPrefixAReductionLate [no-change]: *x*n*é*k*k*a
 OEWeakTailReduction [no-change]: *x*n*é*k*k*a
 OEJLossAfterHeavy [no-change]: *x*n*é*k*k*a
 OEFinalGeminateSimplification [no-change]: *x*n*é*k*k*a
@@ -37298,7 +36978,6 @@ OEUnstressedAEMerger [no-change]: *n*ǣ*d*l
 OEMedUnstressedILowering1 [no-change]: *n*ǣ*d*l
 OEMedUnstressedILowering [no-change]: *n*ǣ*d*l
 OEPrefixIReduction [no-change]: *n*ǣ*d*l
-OEPrefixAReductionLate [no-change]: *n*ǣ*d*l
 OEWeakTailReduction [no-change]: *n*ǣ*d*l
 OEJLossAfterHeavy [no-change]: *n*ǣ*d*l
 OEFinalGeminateSimplification [no-change]: *n*ǣ*d*l
@@ -37414,7 +37093,6 @@ OEUnstressedAEMerger [no-change]: *n*ó*s*u
 OEMedUnstressedILowering1 [no-change]: *n*ó*s*u
 OEMedUnstressedILowering [no-change]: *n*ó*s*u
 OEPrefixIReduction [no-change]: *n*ó*s*u
-OEPrefixAReductionLate [no-change]: *n*ó*s*u
 OEWeakTailReduction [no-change]: *n*ó*s*u
 OEJLossAfterHeavy [no-change]: *n*ó*s*u
 OEFinalGeminateSimplification [no-change]: *n*ó*s*u
@@ -37531,7 +37209,6 @@ OEUnstressedAEMerger [no-change]: *s*æ*p
 OEMedUnstressedILowering1 [no-change]: *s*æ*p
 OEMedUnstressedILowering [no-change]: *s*æ*p
 OEPrefixIReduction [no-change]: *s*æ*p
-OEPrefixAReductionLate [no-change]: *s*æ*p
 OEWeakTailReduction [no-change]: *s*æ*p
 OEJLossAfterHeavy [no-change]: *s*æ*p
 OEFinalGeminateSimplification [no-change]: *s*æ*p
@@ -37648,7 +37325,6 @@ OEUnstressedAEMerger [no-change]: *s*ǣ
 OEMedUnstressedILowering1 [no-change]: *s*ǣ
 OEMedUnstressedILowering [no-change]: *s*ǣ
 OEPrefixIReduction [no-change]: *s*ǣ
-OEPrefixAReductionLate [no-change]: *s*ǣ
 OEWeakTailReduction [no-change]: *s*ǣ
 OEJLossAfterHeavy [no-change]: *s*ǣ
 OEFinalGeminateSimplification [no-change]: *s*ǣ
@@ -37764,7 +37440,6 @@ OEUnstressedAEMerger [no-change]: *s*í*β*i
 OEMedUnstressedILowering1: *s*í*β*e
 OEMedUnstressedILowering [no-change]: *s*í*β*e
 OEPrefixIReduction [no-change]: *s*í*β*e
-OEPrefixAReductionLate [no-change]: *s*í*β*e
 OEWeakTailReduction [no-change]: *s*í*β*e
 OEJLossAfterHeavy [no-change]: *s*í*β*e
 OEFinalGeminateSimplification [no-change]: *s*í*β*e
@@ -37881,7 +37556,6 @@ OEUnstressedAEMerger [no-change]: *s*p*a*r*e*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*p*a*r*e*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*p*a*r*e*j*ą*n
 OEPrefixIReduction [no-change]: *s*p*a*r*e*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*p*a*r*e*j*ą*n
 OEWeakTailReduction: *s*p*a*r*e*j*a*n
 OEJLossAfterHeavy [no-change]: *s*p*a*r*e*j*a*n
 OEFinalGeminateSimplification [no-change]: *s*p*a*r*e*j*a*n
@@ -37998,7 +37672,6 @@ OEUnstressedAEMerger [no-change]: *s*t*æ*β
 OEMedUnstressedILowering1 [no-change]: *s*t*æ*β
 OEMedUnstressedILowering [no-change]: *s*t*æ*β
 OEPrefixIReduction [no-change]: *s*t*æ*β
-OEPrefixAReductionLate [no-change]: *s*t*æ*β
 OEWeakTailReduction [no-change]: *s*t*æ*β
 OEJLossAfterHeavy [no-change]: *s*t*æ*β
 OEFinalGeminateSimplification [no-change]: *s*t*æ*β
@@ -38115,7 +37788,6 @@ OEUnstressedAEMerger [no-change]: *s*t*é*β*n
 OEMedUnstressedILowering1 [no-change]: *s*t*é*β*n
 OEMedUnstressedILowering [no-change]: *s*t*é*β*n
 OEPrefixIReduction [no-change]: *s*t*é*β*n
-OEPrefixAReductionLate [no-change]: *s*t*é*β*n
 OEWeakTailReduction [no-change]: *s*t*é*β*n
 OEJLossAfterHeavy [no-change]: *s*t*é*β*n
 OEFinalGeminateSimplification [no-change]: *s*t*é*β*n
@@ -38231,7 +37903,6 @@ OEUnstressedAEMerger: *s*w*á*n*e*s
 OEMedUnstressedILowering1 [no-change]: *s*w*á*n*e*s
 OEMedUnstressedILowering [no-change]: *s*w*á*n*e*s
 OEPrefixIReduction [no-change]: *s*w*á*n*e*s
-OEPrefixAReductionLate [no-change]: *s*w*á*n*e*s
 OEWeakTailReduction [no-change]: *s*w*á*n*e*s
 OEJLossAfterHeavy [no-change]: *s*w*á*n*e*s
 OEFinalGeminateSimplification [no-change]: *s*w*á*n*e*s
@@ -38348,7 +38019,6 @@ OEUnstressedAEMerger [no-change]: *θ*ū*s*e*n*d
 OEMedUnstressedILowering1 [no-change]: *θ*ū*s*e*n*d
 OEMedUnstressedILowering [no-change]: *θ*ū*s*e*n*d
 OEPrefixIReduction [no-change]: *θ*ū*s*e*n*d
-OEPrefixAReductionLate [no-change]: *θ*ū*s*e*n*d
 OEWeakTailReduction [no-change]: *θ*ū*s*e*n*d
 OEJLossAfterHeavy [no-change]: *θ*ū*s*e*n*d
 OEFinalGeminateSimplification [no-change]: *θ*ū*s*e*n*d
@@ -38465,7 +38135,6 @@ OEUnstressedAEMerger [no-change]: *t*í*m*b*r
 OEMedUnstressedILowering1 [no-change]: *t*í*m*b*r
 OEMedUnstressedILowering [no-change]: *t*í*m*b*r
 OEPrefixIReduction [no-change]: *t*í*m*b*r
-OEPrefixAReductionLate [no-change]: *t*í*m*b*r
 OEWeakTailReduction [no-change]: *t*í*m*b*r
 OEJLossAfterHeavy [no-change]: *t*í*m*b*r
 OEFinalGeminateSimplification [no-change]: *t*í*m*b*r
@@ -38582,7 +38251,6 @@ OEUnstressedAEMerger [no-change]: *w*a*k*ą*n
 OEMedUnstressedILowering1 [no-change]: *w*a*k*ą*n
 OEMedUnstressedILowering [no-change]: *w*a*k*ą*n
 OEPrefixIReduction [no-change]: *w*a*k*ą*n
-OEPrefixAReductionLate [no-change]: *w*a*k*ą*n
 OEWeakTailReduction: *w*a*k*a*n
 OEJLossAfterHeavy [no-change]: *w*a*k*a*n
 OEFinalGeminateSimplification [no-change]: *w*a*k*a*n
@@ -38699,7 +38367,6 @@ OEUnstressedAEMerger: *w*æ*t*e*r
 OEMedUnstressedILowering1 [no-change]: *w*æ*t*e*r
 OEMedUnstressedILowering [no-change]: *w*æ*t*e*r
 OEPrefixIReduction [no-change]: *w*æ*t*e*r
-OEPrefixAReductionLate [no-change]: *w*æ*t*e*r
 OEWeakTailReduction [no-change]: *w*æ*t*e*r
 OEJLossAfterHeavy [no-change]: *w*æ*t*e*r
 OEFinalGeminateSimplification [no-change]: *w*æ*t*e*r
@@ -38816,7 +38483,6 @@ OEUnstressedAEMerger [no-change]: *x*w*æ*l
 OEMedUnstressedILowering1 [no-change]: *x*w*æ*l
 OEMedUnstressedILowering [no-change]: *x*w*æ*l
 OEPrefixIReduction [no-change]: *x*w*æ*l
-OEPrefixAReductionLate [no-change]: *x*w*æ*l
 OEWeakTailReduction [no-change]: *x*w*æ*l
 OEJLossAfterHeavy [no-change]: *x*w*æ*l
 OEFinalGeminateSimplification [no-change]: *x*w*æ*l
@@ -38932,7 +38598,6 @@ OEUnstressedAEMerger [no-change]: *x*w*ḯ*n*ą*n
 OEMedUnstressedILowering1 [no-change]: *x*w*ḯ*n*ą*n
 OEMedUnstressedILowering [no-change]: *x*w*ḯ*n*ą*n
 OEPrefixIReduction [no-change]: *x*w*ḯ*n*ą*n
-OEPrefixAReductionLate [no-change]: *x*w*ḯ*n*ą*n
 OEWeakTailReduction: *x*w*ḯ*n*a*n
 OEJLossAfterHeavy [no-change]: *x*w*ḯ*n*a*n
 OEFinalGeminateSimplification [no-change]: *x*w*ḯ*n*a*n
@@ -39049,7 +38714,6 @@ OEUnstressedAEMerger: *w*ḯ*θ*e*ʤ
 OEMedUnstressedILowering1 [no-change]: *w*ḯ*θ*e*ʤ
 OEMedUnstressedILowering [no-change]: *w*ḯ*θ*e*ʤ
 OEPrefixIReduction [no-change]: *w*ḯ*θ*e*ʤ
-OEPrefixAReductionLate [no-change]: *w*ḯ*θ*e*ʤ
 OEWeakTailReduction [no-change]: *w*ḯ*θ*e*ʤ
 OEJLossAfterHeavy [no-change]: *w*ḯ*θ*e*ʤ
 OEFinalGeminateSimplification [no-change]: *w*ḯ*θ*e*ʤ
@@ -39166,7 +38830,6 @@ OEUnstressedAEMerger [no-change]: *w*éo*r*o*l*d
 OEMedUnstressedILowering1 [no-change]: *w*éo*r*o*l*d
 OEMedUnstressedILowering [no-change]: *w*éo*r*o*l*d
 OEPrefixIReduction [no-change]: *w*éo*r*o*l*d
-OEPrefixAReductionLate [no-change]: *w*éo*r*o*l*d
 OEWeakTailReduction [no-change]: *w*éo*r*o*l*d
 OEJLossAfterHeavy [no-change]: *w*éo*r*o*l*d
 OEFinalGeminateSimplification [no-change]: *w*éo*r*o*l*d
@@ -39283,7 +38946,6 @@ OEUnstressedAEMerger [no-change]: *j*éo*g*u*θ
 OEMedUnstressedILowering1 [no-change]: *j*éo*g*u*θ
 OEMedUnstressedILowering [no-change]: *j*éo*g*u*θ
 OEPrefixIReduction [no-change]: *j*éo*g*u*θ
-OEPrefixAReductionLate [no-change]: *j*éo*g*u*θ
 OEWeakTailReduction [no-change]: *j*éo*g*u*θ
 OEJLossAfterHeavy [no-change]: *j*éo*g*u*θ
 OEFinalGeminateSimplification [no-change]: *j*éo*g*u*θ
@@ -39403,7 +39065,6 @@ OEUnstressedAEMerger: *b*á*n*n*e*s
 OEMedUnstressedILowering1 [no-change]: *b*á*n*n*e*s
 OEMedUnstressedILowering [no-change]: *b*á*n*n*e*s
 OEPrefixIReduction [no-change]: *b*á*n*n*e*s
-OEPrefixAReductionLate [no-change]: *b*á*n*n*e*s
 OEWeakTailReduction [no-change]: *b*á*n*n*e*s
 OEJLossAfterHeavy [no-change]: *b*á*n*n*e*s
 OEFinalGeminateSimplification [no-change]: *b*á*n*n*e*s
@@ -39520,7 +39181,6 @@ OEUnstressedAEMerger: *b*e*r*j*e*s
 OEMedUnstressedILowering1 [no-change]: *b*e*r*j*e*s
 OEMedUnstressedILowering [no-change]: *b*e*r*j*e*s
 OEPrefixIReduction [no-change]: *b*e*r*j*e*s
-OEPrefixAReductionLate [no-change]: *b*e*r*j*e*s
 OEWeakTailReduction [no-change]: *b*e*r*j*e*s
 OEJLossAfterHeavy [no-change]: *b*e*r*j*e*s
 OEFinalGeminateSimplification [no-change]: *b*e*r*j*e*s
@@ -39637,7 +39297,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*r*a*θ
 OEMedUnstressedILowering1 [no-change]: *b*ó*r*a*θ
 OEMedUnstressedILowering [no-change]: *b*ó*r*a*θ
 OEPrefixIReduction [no-change]: *b*ó*r*a*θ
-OEPrefixAReductionLate [no-change]: *b*ó*r*a*θ
 OEWeakTailReduction [no-change]: *b*ó*r*a*θ
 OEJLossAfterHeavy [no-change]: *b*ó*r*a*θ
 OEFinalGeminateSimplification [no-change]: *b*ó*r*a*θ
@@ -39754,7 +39413,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*r*a
 OEMedUnstressedILowering1 [no-change]: *b*ó*r*a
 OEMedUnstressedILowering [no-change]: *b*ó*r*a
 OEPrefixIReduction [no-change]: *b*ó*r*a
-OEPrefixAReductionLate [no-change]: *b*ó*r*a
 OEWeakTailReduction [no-change]: *b*ó*r*a
 OEJLossAfterHeavy [no-change]: *b*ó*r*a
 OEFinalGeminateSimplification [no-change]: *b*ó*r*a
@@ -39871,7 +39529,6 @@ OEUnstressedAEMerger [no-change]: *b*ēa*g
 OEMedUnstressedILowering1 [no-change]: *b*ēa*g
 OEMedUnstressedILowering [no-change]: *b*ēa*g
 OEPrefixIReduction [no-change]: *b*ēa*g
-OEPrefixAReductionLate [no-change]: *b*ēa*g
 OEWeakTailReduction [no-change]: *b*ēa*g
 OEJLossAfterHeavy [no-change]: *b*ēa*g
 OEFinalGeminateSimplification [no-change]: *b*ēa*g
@@ -39988,7 +39645,6 @@ OEUnstressedAEMerger [no-change]: *k*ȳ
 OEMedUnstressedILowering1 [no-change]: *k*ȳ
 OEMedUnstressedILowering [no-change]: *k*ȳ
 OEPrefixIReduction [no-change]: *k*ȳ
-OEPrefixAReductionLate [no-change]: *k*ȳ
 OEWeakTailReduction [no-change]: *k*ȳ
 OEJLossAfterHeavy [no-change]: *k*ȳ
 OEFinalGeminateSimplification [no-change]: *k*ȳ
@@ -40105,7 +39761,6 @@ OEUnstressedAEMerger: *f*ú*n*d*e*n*e
 OEMedUnstressedILowering1 [no-change]: *f*ú*n*d*e*n*e
 OEMedUnstressedILowering [no-change]: *f*ú*n*d*e*n*e
 OEPrefixIReduction [no-change]: *f*ú*n*d*e*n*e
-OEPrefixAReductionLate [no-change]: *f*ú*n*d*e*n*e
 OEWeakTailReduction [no-change]: *f*ú*n*d*e*n*e
 OEJLossAfterHeavy [no-change]: *f*ú*n*d*e*n*e
 OEFinalGeminateSimplification [no-change]: *f*ú*n*d*e*n*e
@@ -40222,7 +39877,6 @@ OEUnstressedAEMerger [no-change]: *f*y*r*x*t*i
 OEMedUnstressedILowering1: *f*y*r*x*t*e
 OEMedUnstressedILowering [no-change]: *f*y*r*x*t*e
 OEPrefixIReduction [no-change]: *f*y*r*x*t*e
-OEPrefixAReductionLate [no-change]: *f*y*r*x*t*e
 OEWeakTailReduction [no-change]: *f*y*r*x*t*e
 OEJLossAfterHeavy [no-change]: *f*y*r*x*t*e
 OEFinalGeminateSimplification [no-change]: *f*y*r*x*t*e
@@ -40339,7 +39993,6 @@ OEUnstressedAEMerger: *x*á*m*e*r*e*s
 OEMedUnstressedILowering1 [no-change]: *x*á*m*e*r*e*s
 OEMedUnstressedILowering [no-change]: *x*á*m*e*r*e*s
 OEPrefixIReduction [no-change]: *x*á*m*e*r*e*s
-OEPrefixAReductionLate [no-change]: *x*á*m*e*r*e*s
 OEWeakTailReduction [no-change]: *x*á*m*e*r*e*s
 OEJLossAfterHeavy [no-change]: *x*á*m*e*r*e*s
 OEFinalGeminateSimplification [no-change]: *x*á*m*e*r*e*s
@@ -40456,7 +40109,6 @@ OEUnstressedAEMerger: *ç*æ*β*e*θ
 OEMedUnstressedILowering1 [no-change]: *ç*æ*β*e*θ
 OEMedUnstressedILowering [no-change]: *ç*æ*β*e*θ
 OEPrefixIReduction [no-change]: *ç*æ*β*e*θ
-OEPrefixAReductionLate [no-change]: *ç*æ*β*e*θ
 OEWeakTailReduction [no-change]: *ç*æ*β*e*θ
 OEJLossAfterHeavy [no-change]: *ç*æ*β*e*θ
 OEFinalGeminateSimplification [no-change]: *ç*æ*β*e*θ
@@ -40573,7 +40225,6 @@ OEUnstressedAEMerger [no-change]: *ç*éo*β*o*n
 OEMedUnstressedILowering1 [no-change]: *ç*éo*β*o*n
 OEMedUnstressedILowering [no-change]: *ç*éo*β*o*n
 OEPrefixIReduction [no-change]: *ç*éo*β*o*n
-OEPrefixAReductionLate [no-change]: *ç*éo*β*o*n
 OEWeakTailReduction [no-change]: *ç*éo*β*o*n
 OEJLossAfterHeavy [no-change]: *ç*éo*β*o*n
 OEFinalGeminateSimplification [no-change]: *ç*éo*β*o*n
@@ -40690,7 +40341,6 @@ OEUnstressedAEMerger [no-change]: *l*ío*r*n*a*θ
 OEMedUnstressedILowering1 [no-change]: *l*ío*r*n*a*θ
 OEMedUnstressedILowering [no-change]: *l*ío*r*n*a*θ
 OEPrefixIReduction [no-change]: *l*ío*r*n*a*θ
-OEPrefixAReductionLate [no-change]: *l*ío*r*n*a*θ
 OEWeakTailReduction [no-change]: *l*ío*r*n*a*θ
 OEJLossAfterHeavy [no-change]: *l*ío*r*n*a*θ
 OEFinalGeminateSimplification [no-change]: *l*ío*r*n*a*θ
@@ -40807,7 +40457,6 @@ OEUnstressedAEMerger [no-change]: *l*ío*r*n*a
 OEMedUnstressedILowering1 [no-change]: *l*ío*r*n*a
 OEMedUnstressedILowering [no-change]: *l*ío*r*n*a
 OEPrefixIReduction [no-change]: *l*ío*r*n*a
-OEPrefixAReductionLate [no-change]: *l*ío*r*n*a
 OEWeakTailReduction [no-change]: *l*ío*r*n*a
 OEJLossAfterHeavy [no-change]: *l*ío*r*n*a
 OEFinalGeminateSimplification [no-change]: *l*ío*r*n*a
@@ -40924,7 +40573,6 @@ OEUnstressedAEMerger [no-change]: *l*í*k*k*a*θ
 OEMedUnstressedILowering1 [no-change]: *l*í*k*k*a*θ
 OEMedUnstressedILowering [no-change]: *l*í*k*k*a*θ
 OEPrefixIReduction [no-change]: *l*í*k*k*a*θ
-OEPrefixAReductionLate [no-change]: *l*í*k*k*a*θ
 OEWeakTailReduction [no-change]: *l*í*k*k*a*θ
 OEJLossAfterHeavy [no-change]: *l*í*k*k*a*θ
 OEFinalGeminateSimplification [no-change]: *l*í*k*k*a*θ
@@ -41041,7 +40689,6 @@ OEUnstressedAEMerger [no-change]: *l*í*k*k*a
 OEMedUnstressedILowering1 [no-change]: *l*í*k*k*a
 OEMedUnstressedILowering [no-change]: *l*í*k*k*a
 OEPrefixIReduction [no-change]: *l*í*k*k*a
-OEPrefixAReductionLate [no-change]: *l*í*k*k*a
 OEWeakTailReduction [no-change]: *l*í*k*k*a
 OEJLossAfterHeavy [no-change]: *l*í*k*k*a
 OEFinalGeminateSimplification [no-change]: *l*í*k*k*a
@@ -41158,7 +40805,6 @@ OEUnstressedAEMerger: *l*í*β*e*θ
 OEMedUnstressedILowering1 [no-change]: *l*í*β*e*θ
 OEMedUnstressedILowering [no-change]: *l*í*β*e*θ
 OEPrefixIReduction [no-change]: *l*í*β*e*θ
-OEPrefixAReductionLate [no-change]: *l*í*β*e*θ
 OEWeakTailReduction [no-change]: *l*í*β*e*θ
 OEJLossAfterHeavy [no-change]: *l*í*β*e*θ
 OEFinalGeminateSimplification [no-change]: *l*í*β*e*θ
@@ -41275,7 +40921,6 @@ OEUnstressedAEMerger [no-change]: *m*a*k*a*θ
 OEMedUnstressedILowering1 [no-change]: *m*a*k*a*θ
 OEMedUnstressedILowering [no-change]: *m*a*k*a*θ
 OEPrefixIReduction [no-change]: *m*a*k*a*θ
-OEPrefixAReductionLate [no-change]: *m*a*k*a*θ
 OEWeakTailReduction [no-change]: *m*a*k*a*θ
 OEJLossAfterHeavy [no-change]: *m*a*k*a*θ
 OEFinalGeminateSimplification [no-change]: *m*a*k*a*θ
@@ -41392,7 +41037,6 @@ OEUnstressedAEMerger [no-change]: *m*a*k*a
 OEMedUnstressedILowering1 [no-change]: *m*a*k*a
 OEMedUnstressedILowering [no-change]: *m*a*k*a
 OEPrefixIReduction [no-change]: *m*a*k*a
-OEPrefixAReductionLate [no-change]: *m*a*k*a
 OEWeakTailReduction [no-change]: *m*a*k*a
 OEJLossAfterHeavy [no-change]: *m*a*k*a
 OEFinalGeminateSimplification [no-change]: *m*a*k*a
@@ -41509,7 +41153,6 @@ OEUnstressedAEMerger: *m*á*n*n*e*s
 OEMedUnstressedILowering1 [no-change]: *m*á*n*n*e*s
 OEMedUnstressedILowering [no-change]: *m*á*n*n*e*s
 OEPrefixIReduction [no-change]: *m*á*n*n*e*s
-OEPrefixAReductionLate [no-change]: *m*á*n*n*e*s
 OEWeakTailReduction [no-change]: *m*á*n*n*e*s
 OEJLossAfterHeavy [no-change]: *m*á*n*n*e*s
 OEFinalGeminateSimplification [no-change]: *m*á*n*n*e*s
@@ -41626,7 +41269,6 @@ OEUnstressedAEMerger [no-change]: *m*éo*r*d*e
 OEMedUnstressedILowering1 [no-change]: *m*éo*r*d*e
 OEMedUnstressedILowering [no-change]: *m*éo*r*d*e
 OEPrefixIReduction [no-change]: *m*éo*r*d*e
-OEPrefixAReductionLate [no-change]: *m*éo*r*d*e
 OEWeakTailReduction [no-change]: *m*éo*r*d*e
 OEJLossAfterHeavy [no-change]: *m*éo*r*d*e
 OEFinalGeminateSimplification [no-change]: *m*éo*r*d*e
@@ -41743,7 +41385,6 @@ OEUnstressedAEMerger [no-change]: *n*i*x*t
 OEMedUnstressedILowering1 [no-change]: *n*i*x*t
 OEMedUnstressedILowering [no-change]: *n*i*x*t
 OEPrefixIReduction [no-change]: *n*i*x*t
-OEPrefixAReductionLate [no-change]: *n*i*x*t
 OEWeakTailReduction [no-change]: *n*i*x*t
 OEJLossAfterHeavy [no-change]: *n*i*x*t
 OEFinalGeminateSimplification [no-change]: *n*i*x*t
@@ -41860,7 +41501,6 @@ OEUnstressedAEMerger: *r*æ*s*t*e
 OEMedUnstressedILowering1 [no-change]: *r*æ*s*t*e
 OEMedUnstressedILowering [no-change]: *r*æ*s*t*e
 OEPrefixIReduction [no-change]: *r*æ*s*t*e
-OEPrefixAReductionLate [no-change]: *r*æ*s*t*e
 OEWeakTailReduction [no-change]: *r*æ*s*t*e
 OEJLossAfterHeavy [no-change]: *r*æ*s*t*e
 OEFinalGeminateSimplification [no-change]: *r*æ*s*t*e
@@ -41977,7 +41617,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ú*l*d*r*u*m
 OEMedUnstressedILowering1 [no-change]: *ʃ*ú*l*d*r*u*m
 OEMedUnstressedILowering [no-change]: *ʃ*ú*l*d*r*u*m
 OEPrefixIReduction [no-change]: *ʃ*ú*l*d*r*u*m
-OEPrefixAReductionLate [no-change]: *ʃ*ú*l*d*r*u*m
 OEWeakTailReduction [no-change]: *ʃ*ú*l*d*r*u*m
 OEJLossAfterHeavy [no-change]: *ʃ*ú*l*d*r*u*m
 OEFinalGeminateSimplification [no-change]: *ʃ*ú*l*d*r*u*m
@@ -42094,7 +41733,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ēa*β
 OEMedUnstressedILowering1 [no-change]: *ʃ*ēa*β
 OEMedUnstressedILowering [no-change]: *ʃ*ēa*β
 OEPrefixIReduction [no-change]: *ʃ*ēa*β
-OEPrefixAReductionLate [no-change]: *ʃ*ēa*β
 OEWeakTailReduction [no-change]: *ʃ*ēa*β
 OEJLossAfterHeavy [no-change]: *ʃ*ēa*β
 OEFinalGeminateSimplification [no-change]: *ʃ*ēa*β
@@ -42211,7 +41849,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ḗa*w*a*θ
 OEMedUnstressedILowering1 [no-change]: *ʃ*ḗa*w*a*θ
 OEMedUnstressedILowering [no-change]: *ʃ*ḗa*w*a*θ
 OEPrefixIReduction [no-change]: *ʃ*ḗa*w*a*θ
-OEPrefixAReductionLate [no-change]: *ʃ*ḗa*w*a*θ
 OEWeakTailReduction [no-change]: *ʃ*ḗa*w*a*θ
 OEJLossAfterHeavy [no-change]: *ʃ*ḗa*w*a*θ
 OEFinalGeminateSimplification [no-change]: *ʃ*ḗa*w*a*θ
@@ -42328,7 +41965,6 @@ OEUnstressedAEMerger [no-change]: *ʃ*ḗa*w*a
 OEMedUnstressedILowering1 [no-change]: *ʃ*ḗa*w*a
 OEMedUnstressedILowering [no-change]: *ʃ*ḗa*w*a
 OEPrefixIReduction [no-change]: *ʃ*ḗa*w*a
-OEPrefixAReductionLate [no-change]: *ʃ*ḗa*w*a
 OEWeakTailReduction [no-change]: *ʃ*ḗa*w*a
 OEJLossAfterHeavy [no-change]: *ʃ*ḗa*w*a
 OEFinalGeminateSimplification [no-change]: *ʃ*ḗa*w*a
@@ -42445,7 +42081,6 @@ OEUnstressedAEMerger [no-change]: *s*p*á*n*n*e
 OEMedUnstressedILowering1 [no-change]: *s*p*á*n*n*e
 OEMedUnstressedILowering [no-change]: *s*p*á*n*n*e
 OEPrefixIReduction [no-change]: *s*p*á*n*n*e
-OEPrefixAReductionLate [no-change]: *s*p*á*n*n*e
 OEWeakTailReduction [no-change]: *s*p*á*n*n*e
 OEJLossAfterHeavy [no-change]: *s*p*á*n*n*e
 OEFinalGeminateSimplification [no-change]: *s*p*á*n*n*e
@@ -42562,7 +42197,6 @@ OEUnstressedAEMerger: *θ*í*s*t*l*e*s
 OEMedUnstressedILowering1 [no-change]: *θ*í*s*t*l*e*s
 OEMedUnstressedILowering [no-change]: *θ*í*s*t*l*e*s
 OEPrefixIReduction [no-change]: *θ*í*s*t*l*e*s
-OEPrefixAReductionLate [no-change]: *θ*í*s*t*l*e*s
 OEWeakTailReduction [no-change]: *θ*í*s*t*l*e*s
 OEJLossAfterHeavy [no-change]: *θ*í*s*t*l*e*s
 OEFinalGeminateSimplification [no-change]: *θ*í*s*t*l*e*s
@@ -42682,7 +42316,6 @@ OEUnstressedAEMerger [no-change]: *k*w*é*d*u
 OEMedUnstressedILowering1 [no-change]: *k*w*é*d*u
 OEMedUnstressedILowering [no-change]: *k*w*é*d*u
 OEPrefixIReduction [no-change]: *k*w*é*d*u
-OEPrefixAReductionLate [no-change]: *k*w*é*d*u
 OEWeakTailReduction [no-change]: *k*w*é*d*u
 OEJLossAfterHeavy [no-change]: *k*w*é*d*u
 OEFinalGeminateSimplification [no-change]: *k*w*é*d*u
@@ -42799,7 +42432,6 @@ OEUnstressedAEMerger [no-change]: *t*éo*x*o*n
 OEMedUnstressedILowering1 [no-change]: *t*éo*x*o*n
 OEMedUnstressedILowering [no-change]: *t*éo*x*o*n
 OEPrefixIReduction [no-change]: *t*éo*x*o*n
-OEPrefixAReductionLate [no-change]: *t*éo*x*o*n
 OEWeakTailReduction [no-change]: *t*éo*x*o*n
 OEJLossAfterHeavy [no-change]: *t*éo*x*o*n
 OEFinalGeminateSimplification [no-change]: *t*éo*x*o*n
@@ -42916,7 +42548,6 @@ OEUnstressedAEMerger [no-change]: *θ*r*i*j*e
 OEMedUnstressedILowering1 [no-change]: *θ*r*i*j*e
 OEMedUnstressedILowering [no-change]: *θ*r*i*j*e
 OEPrefixIReduction [no-change]: *θ*r*i*j*e
-OEPrefixAReductionLate [no-change]: *θ*r*i*j*e
 OEWeakTailReduction [no-change]: *θ*r*i*j*e
 OEJLossAfterHeavy [no-change]: *θ*r*i*j*e
 OEFinalGeminateSimplification [no-change]: *θ*r*i*j*e
@@ -43033,7 +42664,6 @@ OEUnstressedAEMerger [no-change]: *w*æ*β*s
 OEMedUnstressedILowering1 [no-change]: *w*æ*β*s
 OEMedUnstressedILowering [no-change]: *w*æ*β*s
 OEPrefixIReduction [no-change]: *w*æ*β*s
-OEPrefixAReductionLate [no-change]: *w*æ*β*s
 OEWeakTailReduction [no-change]: *w*æ*β*s
 OEJLossAfterHeavy [no-change]: *w*æ*β*s
 OEFinalGeminateSimplification [no-change]: *w*æ*β*s
@@ -43153,7 +42783,6 @@ OEUnstressedAEMerger [no-change]: *k*n*ó*b*b*a
 OEMedUnstressedILowering1 [no-change]: *k*n*ó*b*b*a
 OEMedUnstressedILowering [no-change]: *k*n*ó*b*b*a
 OEPrefixIReduction [no-change]: *k*n*ó*b*b*a
-OEPrefixAReductionLate [no-change]: *k*n*ó*b*b*a
 OEWeakTailReduction [no-change]: *k*n*ó*b*b*a
 OEJLossAfterHeavy [no-change]: *k*n*ó*b*b*a
 OEFinalGeminateSimplification [no-change]: *k*n*ó*b*b*a
@@ -43270,7 +42899,6 @@ OEUnstressedAEMerger [no-change]: *r*ēa*k
 OEMedUnstressedILowering1 [no-change]: *r*ēa*k
 OEMedUnstressedILowering [no-change]: *r*ēa*k
 OEPrefixIReduction [no-change]: *r*ēa*k
-OEPrefixAReductionLate [no-change]: *r*ēa*k
 OEWeakTailReduction [no-change]: *r*ēa*k
 OEJLossAfterHeavy [no-change]: *r*ēa*k
 OEFinalGeminateSimplification [no-change]: *r*ēa*k
@@ -43387,7 +43015,6 @@ OEUnstressedAEMerger [no-change]: *s*t*r*īe*j*ą*n
 OEMedUnstressedILowering1 [no-change]: *s*t*r*īe*j*ą*n
 OEMedUnstressedILowering [no-change]: *s*t*r*īe*j*ą*n
 OEPrefixIReduction [no-change]: *s*t*r*īe*j*ą*n
-OEPrefixAReductionLate [no-change]: *s*t*r*īe*j*ą*n
 OEWeakTailReduction: *s*t*r*īe*j*a*n
 OEJLossAfterHeavy [no-change]: *s*t*r*īe*j*a*n
 OEFinalGeminateSimplification [no-change]: *s*t*r*īe*j*a*n
@@ -43507,7 +43134,6 @@ OEUnstressedAEMerger [no-change]: *f*ȳ*r
 OEMedUnstressedILowering1 [no-change]: *f*ȳ*r
 OEMedUnstressedILowering [no-change]: *f*ȳ*r
 OEPrefixIReduction [no-change]: *f*ȳ*r
-OEPrefixAReductionLate [no-change]: *f*ȳ*r
 OEWeakTailReduction [no-change]: *f*ȳ*r
 OEJLossAfterHeavy [no-change]: *f*ȳ*r
 OEFinalGeminateSimplification [no-change]: *f*ȳ*r
@@ -43624,7 +43250,6 @@ OEUnstressedAEMerger [no-change]: *t*a*p*p*a
 OEMedUnstressedILowering1 [no-change]: *t*a*p*p*a
 OEMedUnstressedILowering [no-change]: *t*a*p*p*a
 OEPrefixIReduction [no-change]: *t*a*p*p*a
-OEPrefixAReductionLate [no-change]: *t*a*p*p*a
 OEWeakTailReduction [no-change]: *t*a*p*p*a
 OEJLossAfterHeavy [no-change]: *t*a*p*p*a
 OEFinalGeminateSimplification [no-change]: *t*a*p*p*a
@@ -43744,7 +43369,6 @@ OEUnstressedAEMerger [no-change]: *b*ó*k*k
 OEMedUnstressedILowering1 [no-change]: *b*ó*k*k
 OEMedUnstressedILowering [no-change]: *b*ó*k*k
 OEPrefixIReduction [no-change]: *b*ó*k*k
-OEPrefixAReductionLate [no-change]: *b*ó*k*k
 OEWeakTailReduction [no-change]: *b*ó*k*k
 OEJLossAfterHeavy [no-change]: *b*ó*k*k
 OEFinalGeminateSimplification [no-change]: *b*ó*k*k
@@ -43861,7 +43485,6 @@ OEUnstressedAEMerger [no-change]: *f*ó*g*l
 OEMedUnstressedILowering1 [no-change]: *f*ó*g*l
 OEMedUnstressedILowering [no-change]: *f*ó*g*l
 OEPrefixIReduction [no-change]: *f*ó*g*l
-OEPrefixAReductionLate [no-change]: *f*ó*g*l
 OEWeakTailReduction [no-change]: *f*ó*g*l
 OEJLossAfterHeavy [no-change]: *f*ó*g*l
 OEFinalGeminateSimplification [no-change]: *f*ó*g*l
@@ -43978,7 +43601,6 @@ OEUnstressedAEMerger [no-change]: *r*ó*s*t
 OEMedUnstressedILowering1 [no-change]: *r*ó*s*t
 OEMedUnstressedILowering [no-change]: *r*ó*s*t
 OEPrefixIReduction [no-change]: *r*ó*s*t
-OEPrefixAReductionLate [no-change]: *r*ó*s*t
 OEWeakTailReduction [no-change]: *r*ó*s*t
 OEJLossAfterHeavy [no-change]: *r*ó*s*t
 OEFinalGeminateSimplification [no-change]: *r*ó*s*t
@@ -44095,7 +43717,6 @@ OEUnstressedAEMerger [no-change]: *w*ó*l*f
 OEMedUnstressedILowering1 [no-change]: *w*ó*l*f
 OEMedUnstressedILowering [no-change]: *w*ó*l*f
 OEPrefixIReduction [no-change]: *w*ó*l*f
-OEPrefixAReductionLate [no-change]: *w*ó*l*f
 OEWeakTailReduction [no-change]: *w*ó*l*f
 OEJLossAfterHeavy [no-change]: *w*ó*l*f
 OEFinalGeminateSimplification [no-change]: *w*ó*l*f
@@ -44212,7 +43833,6 @@ OEUnstressedAEMerger [no-change]: *w*ó*l*l
 OEMedUnstressedILowering1 [no-change]: *w*ó*l*l
 OEMedUnstressedILowering [no-change]: *w*ó*l*l
 OEPrefixIReduction [no-change]: *w*ó*l*l
-OEPrefixAReductionLate [no-change]: *w*ó*l*l
 OEWeakTailReduction [no-change]: *w*ó*l*l
 OEJLossAfterHeavy [no-change]: *w*ó*l*l
 OEFinalGeminateSimplification [no-change]: *w*ó*l*l
