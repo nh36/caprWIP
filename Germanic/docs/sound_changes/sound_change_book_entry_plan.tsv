@@ -1,0 +1,93 @@
+book_entry_id	canonical_change_id	display_name	historical_stage	current_order_or_orders	include_in_volume	entry_type	trace_occurrence_count	example_lexemes	literature_priority	notes	order_sensitivity_priority
+BE001	SC002	Gm Simplification	Proto-Germanic	2	yes	historical_sound_change	2	dream, team	low		low
+BE002	SC003	Rhotacism	Proto-Germanic	3	yes	historical_sound_change	7	deer, hoard, learn, berry, learn (3sg)	low		low
+BE003	SC004	PWGmc Ai Monophthongization	Proto-West Germanic	4	yes	historical_sound_change	25	bone, deal, dough, flesh, ghost	medium		medium
+BE004	SC005	NWGmc A To U Before M	Northwest Germanic	5	yes	historical_sound_change	1	shoulder	low	NWGmc-labeled rule remains inside the PWGmcChanges pipeline bundle; preserve bundle order but flag the historical label split.	high
+BE005	SC006	PWGmc Early I Apocope	Proto-West Germanic	6	yes	historical_sound_change	9	thousand, bore (3sg), have, learn (3sg), lick (3sg)	low		low
+BE006	SC007	PWGmc Final Or Lowering	Proto-West Germanic	7	yes	historical_sound_change	2	four, water	low		low
+BE007	SC008	PWGmc Coronal W Assimilation	Proto-West Germanic	8	yes	historical_sound_change	1	four	low		low
+BE008	SC009	PWGmc Ij Contraction	Proto-West Germanic	9	yes	historical_sound_change	1	friend	low		low
+BE009	SC010	PWGmc J Gemination	Proto-West Germanic	10	yes	historical_sound_change	8	hedge, net, set, sit, will	high		low
+BE010	SC011	PWGmc Syllabic J	Proto-West Germanic	11	yes	historical_sound_change	0		low		low
+BE011	SC012	PWGmc L Th Voicing	Proto-West Germanic	12	yes	historical_sound_change	4	field, fold, gold, wold	low		low
+BE012	SC013	PWGmc Dental Hardening	Proto-West Germanic	13	yes	historical_sound_change	4	lade, needle, find, cud	low		low
+BE013	SC014	NWGmc Unstressed Ai Monophthongization	Northwest Germanic	14	yes	historical_sound_change	0		low		low
+BE014	SC015	NWGmc I Lowering	Northwest Germanic	15	yes	historical_sound_change	4	nest, wether, world, meed	low		low
+BE015	SC016	OE Ws Palatal Glide	Old English	16	yes	historical_sound_change	2	yoke, youth	low	The rule is labeled OE/West Saxon but is checkpointed before the main Old English section break in the sandbox.	high
+BE016	SC017	NWGmc U Lowering	Northwest Germanic	17	yes	historical_sound_change	38	board, bore, bow, coat, corn	medium		medium
+BE017	SC018	NWGmc Stressed Monosyllable O Raising	Northwest Germanic	18	yes	historical_sound_change	1	both	low		low
+BE018	SC019	NWGmc Final Long O Raising	Northwest Germanic	19	yes	historical_sound_change	30	beech, bier, dew, hall, help	medium		medium
+BE019	SC020	PGmc Final Z Deletion	Proto-Germanic	20	yes	historical_sound_change	113	beard, beaver, belly, birth, book	high	The cascade applies this PGmc-labeled rule in the NWGmc section; keep pipeline order but flag the earlier historical label.	high
+BE020	SC021	NWGmc Unstressed O Raising	Northwest Germanic	21	yes	historical_sound_change	1	heaven	low		low
+BE021	SC022	NWGmc Mn Dissimilation	Northwest Germanic	22	yes	historical_sound_change	1	heaven	low		low
+BE022	SC023	NWGmc N Stem N Loss	Northwest Germanic	23	yes	historical_sound_change	17	adder, earth, heart, line, list	medium		medium
+BE023	SC024	NWGmc Long E Lowering	Northwest Germanic	24	yes	historical_sound_change	18	adder, bier, deed, eel, father	medium		medium
+BE024	SC025	NWGmc Long E Nasal Rounding	Northwest Germanic	25	yes	historical_sound_change	2	month, spoon	low		low
+BE025	SC026	NWGmc Nasal Spirant Lengthening	Northwest Germanic	26	yes	historical_sound_change	3	fist, goose, youth	high		low
+BE026	SC027	NWGmc Nasal Spirant Loss	Northwest Germanic	27	yes	historical_sound_change	3	fist, goose, youth	high		low
+BE027	SC028	NWGmc Preconsonantal X Loss	Northwest Germanic	28	yes	historical_sound_change	1	fist	low		low
+BE028	SC029	OE Awj Glide Formation	Old English	29	yes	historical_sound_change	2	hay, strew	low		low
+BE029	SC030	OE Au Fronting	Old English	30	yes	historical_sound_change	18	believe, bow, bread, dream, flea	medium		medium
+BE030	SC031	OE WW Simplification	Old English	31	yes	historical_sound_change	4	chew, dew, four, hew	low		low
+BE031	SC032	OE Diphthong Leveling	Old English	32	yes	historical_sound_change	29	believe, bow, bread, deer, dream	medium		medium
+BE032	SC033	OE Ew Long Diphthong	Old English	33	yes	historical_sound_change	3	chew, four, knee	low		low
+BE033	SC034	OE Aw Long Diphthong	Old English	34	yes	historical_sound_change	6	dew, hew, show, straw, show (3sg)	low		low
+BE034	SC035	OE Prefix A Reduction	Old English	35	yes	historical_sound_change	1	believe	low	Canonical inventory row for the duplicated OEPrefixAReduction rule, which also recurs at order 77.	low
+BE035	SC036	OE Inter Stress Raising	Old English	36	yes	historical_sound_change	2	soul, world	low		low
+BE036	SC037	OE Compound Linking Syncope	Old English	37	yes	historical_sound_change	1	rainbow	low		low
+BE037	SC038	OE Strip Secondary Stress	Technical	38	appendix	technical_marker	2	rainbow, thousand	low	Marker-stripping cleanup for secondary-stress graves; keep only as methodological appendix material.	low
+BE038	SC039	OE WI Combinative U Umlaut	Old English	39	yes	historical_sound_change	1	widow	low		low
+BE039	SC040	OE Med Unstressed U Lowering	Old English	40	yes	historical_sound_change	11	hawk, head, milk, nine, rainbow	medium		medium
+BE040	SC041	PWGmc Final Bare A Loss	Proto-West Germanic	41	yes	historical_sound_change	67	beard, bosom, calf, coat, comb	high	PWGmc-labeled loss is implemented late in the OE pipeline; dossier work should explain the historical vs computational placement.	high
+BE041	SC042	PWGmc Surviving Bimoric O Unrounding	Proto-West Germanic	42	yes	historical_sound_change	1	rest	low	PWGmc-labeled unrounding is implemented late in the OE pipeline; keep the sandbox order but flag the chronology mismatch.	high
+BE042	SC043	Anglo Frisian Brightening	Old English	43	yes	historical_sound_change	89	bake, bast, bath, beard, belly	high	The current taxonomy has no separate Anglo-Frisian bucket, so this rule is provisionally filed under Old English for book planning.	high
+BE043	SC044	OE Breaking	Old English	44	yes	historical_sound_change	48	barrow, beard, belly, calf, earth	high		high
+BE044	SC045	OE Velar Fricative Palatalization	Old English	45	yes	historical_sound_change	23	hail, hair, hall, harm, harvest	medium		medium
+BE045	SC046	OE A Restoration	Old English	46	yes	historical_sound_change	20	bake, fare, grave, haw, hawk	medium		medium
+BE046	SC047	OE Heavy Syllable Nasal Apocope	Old English	47	yes	historical_sound_change	158	bake, barrow, bast, bath, begin	high		high
+BE047	SC048	OE Secondary Nasalization	Old English	48	yes	historical_sound_change	87	bake, begin, believe, bind, bore	high		high
+BE048	SC049	PGmc B Allophony	Proto-Germanic	49	yes	historical_sound_change	28	beaver, believe, calf, drive, give	medium	PGmc B Allophony is intentionally delayed in the live cascade, so the historical label and pipeline placement diverge.	high
+BE049	SC050	Sievers Law Syncope	Proto-West Germanic	50	yes	historical_sound_change	18	believe, bow, heal, last, lead	high	Sievers Law Syncope is provisionally grouped with Proto-West Germanic developments even though the sandbox checkpoints it in the Old English section.	high
+BE050	SC051	OE Sk Palatalization	Old English	51	yes	historical_sound_change	18	fish, flesh, shaft, shame, shear	medium		medium
+BE051	SC052	OE Velar Palatalization	Old English	52	yes	historical_sound_change	32	begin, believe, belly, bow, breeches	medium		medium
+BE052	SC053	OE Post Velar W Loss	Old English	53	yes	historical_sound_change	1	sing	low		low
+BE053	SC054	OE W Loss Before I	Old English	54	yes	historical_sound_change	1	sea	low		low
+BE054	SC055	OE I Umlaut	Old English	55	yes	historical_sound_change	66	believe, belly, birth, bore, bow	high		high
+BE055	SC056	OE Ws Palatal Diphthongization	Old English	56	yes	historical_sound_change	8	give, guest, shaft, shear, sheath	low		low
+BE056	SC057	OE J Cluster Coalescence	Old English	57	yes	historical_sound_change	0		low		low
+BE057	SC058	OE Nasal Dissimilation	Old English	58	yes	historical_sound_change	0		low		low
+BE058	SC059	OE Back Mutation	Old English	59	yes	historical_sound_change	5	milk, seven, spear, world, heaven	high		low
+BE059	SC060	OE Ws Palatal Umlaut	Old English	60	yes	historical_sound_change	5	might, six, wight, knight, night	low		low
+BE060	SC061	OE Weak Tail Nasal Loss	Old English	61	yes	historical_sound_change	0		low		low
+BE061	SC062	OE Weight Markers	Technical	62	appendix	technical_marker	0		low	Identity marker stage used for weight-sensitive conditioning before apocope; appendix only.	low
+BE062	SC063	OE High Vowel Apocope	Old English	63	yes	historical_sound_change	65	beaver, beech, belly, bier, birth	high		high
+BE063	SC064	NWGmc In Stem N Loss	Northwest Germanic	64	yes	historical_sound_change	1	fright	low	NWGmc In Stem N Loss is applied after OEHighVowelApocope in the current cascade, so the historical label needs an explanatory note.	high
+BE064	SC065	OE Medial Syncope	Old English	65	yes	historical_sound_change	0		low		low
+BE065	SC066	OE L Adjacent Syncope	Old English	66	yes	historical_sound_change	3	nettle, spindle, thistle	low		low
+BE066	SC067	OE Dental Assimilation	Old English	67	yes	historical_sound_change	0		low		low
+BE067	SC068	OE Preconsonantal Degemination	Old English	68	yes	historical_sound_change	2	spindle, bottom	low		low
+BE068	SC069	OE Early O Shortening	Old English	69	yes	historical_sound_change	0		low		low
+BE069	SC070	OE Unstressed Fronting Early	Old English	70	yes	historical_sound_change	2	west, find	low		low
+BE070	SC071	OE Late O Shortening	Old English	71	yes	historical_sound_change	6	month, bore (3sg), learn (3sg), lick (3sg), make (3sg)	low		low
+BE071	SC072	OE Unstressed Long Vowel Shortening	Old English	72	yes	historical_sound_change	58	adder, bore, bow, earth, father	high		high
+BE072	SC073	OE Unstressed AE Merger	Old English	73	yes	historical_sound_change	37	adder, earth, father, four, heart	medium		medium
+BE073	SC074	OE Med Unstressed I Lowering1	Old English	74	yes	historical_sound_change	6	harvest, rye, shilling, dill, sieve	low		low
+BE074	SC075	OE Med Unstressed I Lowering	Old English	75	yes	historical_sound_change	1	shilling	low		low
+BE075	SC076	OE Prefix I Reduction	Old English	76	yes	historical_sound_change	1	begin	low		low
+BE076	SC078	OE Weak Tail Reduction	Old English	78	yes	historical_sound_change	87	bake, begin, believe, bind, bore	high		high
+BE077	SC079	OE J Loss After Heavy	Old English	79	yes	historical_sound_change	27	believe, bow, heal, hedge, hind	medium		medium
+BE078	SC080	OE Final Geminate Simplification	Old English	80	yes	historical_sound_change	1	lung	low		low
+BE079	SC081	OE J Strengthening After Front Diphthong	Old English	81	yes	historical_sound_change	1	strew	low		low
+BE080	SC082	OE Intervocalic J Vocalization	Old English	82	yes	historical_sound_change	9	bore, handle, learn, lick, make	low		low
+BE081	SC083	OE Unstressed EI Contraction	Old English	83	yes	historical_sound_change	8	bore, handle, learn, lick, make	low		low
+BE082	SC084	OE Weight Cleanup	Technical	84	appendix	technical_marker	0		low	Identity cleanup checkpoint after weight-sensitive rules; methodological appendix only.	low
+BE083	SC085	OE H Loss	Old English	85	yes	historical_sound_change	4	flee, slay, toe, ten	low		low
+BE084	SC086	OE Contraction	Old English	86	yes	historical_sound_change	5	flee, slay, toe, ten, three	low		low
+BE085	SC087	OE R Metathesis	Old English	87	yes	historical_sound_change	2	burst, frost	low		low
+BE086	SC088	OE Epenthetic Vowel	Old English	88	yes	historical_sound_change	13	beaver, finger, fodder, leather, liver	medium		medium
+BE087	SC089	OE Late Unstressed Ag Suffix	Old English	89	yes	historical_sound_change	2	honey, withy	low		low
+BE088	SC090	OE Cj Cleanup	Orthography & surface	90	appendix	orthography_surface	0		low	Post-cascade palatal-cluster cleanup before orthography; treat as appendix machinery, not a main sound change.	low
+BE089	SC091	OE Xs Merge	Orthography & surface	91	appendix	orthography_surface	6	flax, fox, ox, six, wax	low	Post-cascade surface merge feeding orthographic x; keep as appendix material rather than a reader-facing historical entry.	low
+BE090	SC092	Old English Orthography	Orthography & surface	92	appendix	orthography_surface	0		low	Orthography conversion from starred symbols to displayed Old English graphemes.	low
+BE091	SC093	OE Glide U To EO	Orthography & surface	93	appendix	orthography_surface	0		low	Orthographic eo spelling after palatal glide plus u; appendix treatment only.	low
+BE092	SC094	Old English Remove Stars	Orthography & surface	94	appendix	orthography_surface	0		low	Prosodic/star stripping boundary between internal symbols and displayed forms.	low

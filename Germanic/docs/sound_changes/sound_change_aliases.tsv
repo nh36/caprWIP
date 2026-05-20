@@ -1,282 +1,496 @@
-change_id	display_name	alias	alias_type	source	notes
-SC001	Proto Input	Proto Input	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC001	Proto Input	ProtoInput	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC001	Proto Input	EnglishProtoInput	foma_rule_name	Germanic/fsts/germanic.txt	same FOMA rule used under a distinct sandbox stage label
-SC002	Gm Simplification	Gm Simplification	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC002	Gm Simplification	GmSimplification	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC002	Gm Simplification	PGmcGmSimplification	foma_rule_name	Germanic/fsts/germanic.txt	same FOMA rule used under a distinct sandbox stage label
-SC003	Rhotacism	Rhotacism	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC003	Rhotacism	PGmcRhotacism	foma_rule_name	Germanic/fsts/germanic.txt	same FOMA rule used under a distinct sandbox stage label
-SC004	PWGmc Ai Monophthongization	PWGmc Ai Monophthongization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC004	PWGmc Ai Monophthongization	PWGmcAiMonophthongization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC004	PWGmc Ai Monophthongization	Proto-West Germanic Ai Monophthongization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC005	NWGmc A To U Before M	NWGmc A To U Before M	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC005	NWGmc A To U Before M	NWGmcAToUBeforeM	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC005	NWGmc A To U Before M	Northwest Germanic A To U Before M	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC006	PWGmc Early I Apocope	PWGmc Early I Apocope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC006	PWGmc Early I Apocope	PWGmcEarlyIApocope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC006	PWGmc Early I Apocope	Proto-West Germanic Early I Apocope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC007	PWGmc Final Or Lowering	PWGmc Final Or Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC007	PWGmc Final Or Lowering	PWGmcFinalOrLowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC007	PWGmc Final Or Lowering	Proto-West Germanic Final Or Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC008	PWGmc Coronal W Assimilation	PWGmc Coronal W Assimilation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC008	PWGmc Coronal W Assimilation	PWGmcCoronalWAssimilation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC008	PWGmc Coronal W Assimilation	Proto-West Germanic Coronal W Assimilation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC009	PWGmc Ij Contraction	PWGmc Ij Contraction	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC009	PWGmc Ij Contraction	PWGmcIjContraction	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC009	PWGmc Ij Contraction	Proto-West Germanic Ij Contraction	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC010	PWGmc J Gemination	PWGmc J Gemination	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC010	PWGmc J Gemination	PWGmcJGemination	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC010	PWGmc J Gemination	Proto-West Germanic J Gemination	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC011	PWGmc Syllabic J	PWGmc Syllabic J	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC011	PWGmc Syllabic J	PWGmcSyllabicJ	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC011	PWGmc Syllabic J	Proto-West Germanic Syllabic J	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC012	PWGmc L Th Voicing	PWGmc L Th Voicing	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC012	PWGmc L Th Voicing	PWGmcLThVoicing	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC012	PWGmc L Th Voicing	Proto-West Germanic L Th Voicing	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC013	PWGmc Dental Hardening	PWGmc Dental Hardening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC013	PWGmc Dental Hardening	PWGmcDentalHardening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC013	PWGmc Dental Hardening	Proto-West Germanic Dental Hardening	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC014	NWGmc Unstressed Ai Monophthongization	Northwest Germanic Unstressed Ai Monophthongization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC015	NWGmc I Lowering	NWGmc I Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC015	NWGmc I Lowering	NWGmcILowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC015	NWGmc I Lowering	Northwest Germanic I Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC016	OE Ws Palatal Glide	OE Ws Palatal Glide	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC016	OE Ws Palatal Glide	OEWsPalatalGlide	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC016	OE Ws Palatal Glide	Old English Ws Palatal Glide	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC017	NWGmc U Lowering	NWGmc U Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC017	NWGmc U Lowering	NWGmcULowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC017	NWGmc U Lowering	Northwest Germanic U Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC018	NWGmc Stressed Monosyllable O Raising	NWGmc Stressed Monosyllable O Raising	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC018	NWGmc Stressed Monosyllable O Raising	NWGmcStressedMonosyllableORaising	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC018	NWGmc Stressed Monosyllable O Raising	Northwest Germanic Stressed Monosyllable O Raising	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC019	NWGmc Final Long O Raising	NWGmc Final Long O Raising	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC019	NWGmc Final Long O Raising	Northwest Germanic Final Long O Raising	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC020	PGmc Final Z Deletion	Proto-Germanic Final Z Deletion	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC021	NWGmc Unstressed O Raising	NWGmc Unstressed O Raising	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC021	NWGmc Unstressed O Raising	NWGmcUnstressedORaising	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC021	NWGmc Unstressed O Raising	Northwest Germanic Unstressed O Raising	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC022	NWGmc Mn Dissimilation	NWGmc Mn Dissimilation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC022	NWGmc Mn Dissimilation	NWGmcMnDissimilation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC022	NWGmc Mn Dissimilation	Northwest Germanic Mn Dissimilation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC023	NWGmc N Stem N Loss	NWGmc N Stem N Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC023	NWGmc N Stem N Loss	NWGmcNStemNLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC023	NWGmc N Stem N Loss	Northwest Germanic N Stem N Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC024	NWGmc Long E Lowering	NWGmc Long E Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC024	NWGmc Long E Lowering	NWGmcLongELowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC024	NWGmc Long E Lowering	Northwest Germanic Long E Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC025	NWGmc Long E Nasal Rounding	NWGmc Long E Nasal Rounding	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC025	NWGmc Long E Nasal Rounding	NWGmcLongENasalRounding	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC025	NWGmc Long E Nasal Rounding	Northwest Germanic Long E Nasal Rounding	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC026	NWGmc Nasal Spirant Lengthening	NWGmc Nasal Spirant Lengthening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC026	NWGmc Nasal Spirant Lengthening	Northwest Germanic Nasal Spirant Lengthening	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC027	NWGmc Nasal Spirant Loss	NWGmc Nasal Spirant Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC027	NWGmc Nasal Spirant Loss	NWGmcNasalSpirantLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC027	NWGmc Nasal Spirant Loss	Northwest Germanic Nasal Spirant Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC028	NWGmc Preconsonantal X Loss	NWGmc Preconsonantal X Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC028	NWGmc Preconsonantal X Loss	NWGmcPreconsonantalXLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC028	NWGmc Preconsonantal X Loss	Northwest Germanic Preconsonantal X Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC029	OE Awj Glide Formation	OE Awj Glide Formation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC029	OE Awj Glide Formation	OEAwjGlideFormation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC029	OE Awj Glide Formation	Old English Awj Glide Formation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC030	OE Au Fronting	OE Au Fronting	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC030	OE Au Fronting	OEAuFronting	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC030	OE Au Fronting	Old English Au Fronting	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC031	OE WW Simplification	OE WW Simplification	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC031	OE WW Simplification	OEWWSimplification	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC031	OE WW Simplification	Old English WW Simplification	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC032	OE Diphthong Leveling	OE Diphthong Leveling	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC032	OE Diphthong Leveling	OEDiphthongLeveling	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC032	OE Diphthong Leveling	Old English Diphthong Leveling	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC033	OE Ew Long Diphthong	OE Ew Long Diphthong	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC033	OE Ew Long Diphthong	OEEwLongDiphthong	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC033	OE Ew Long Diphthong	Old English Ew Long Diphthong	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC034	OE Aw Long Diphthong	OE Aw Long Diphthong	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC034	OE Aw Long Diphthong	OEAwLongDiphthong	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC034	OE Aw Long Diphthong	Old English Aw Long Diphthong	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC035	OE Prefix A Reduction Early	OE Prefix A Reduction Early	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC035	OE Prefix A Reduction Early	OEPrefixAReductionEarly	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC035	OE Prefix A Reduction Early	OEPrefixAReduction	foma_rule_name	Germanic/fsts/germanic.txt	same FOMA rule used under a distinct sandbox stage label
-SC035	OE Prefix A Reduction Early	Old English Prefix A Reduction Early	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC036	OE Inter Stress Raising	OE Inter Stress Raising	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC036	OE Inter Stress Raising	OEInterStressRaising	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC036	OE Inter Stress Raising	Old English Inter Stress Raising	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC037	OE Compound Linking Syncope	OE Compound Linking Syncope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC037	OE Compound Linking Syncope	OECompoundLinkingSyncope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC037	OE Compound Linking Syncope	Old English Compound Linking Syncope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC038	OE Strip Secondary Stress	OE Strip Secondary Stress	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC038	OE Strip Secondary Stress	OEStripSecondaryStress	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC038	OE Strip Secondary Stress	Old English Strip Secondary Stress	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC039	OE WI Combinative U Umlaut	OE WI Combinative U Umlaut	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC039	OE WI Combinative U Umlaut	OEWICombinativeUUmlaut	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC039	OE WI Combinative U Umlaut	Old English WI Combinative U Umlaut	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC040	OE Med Unstressed U Lowering	OE Med Unstressed U Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC040	OE Med Unstressed U Lowering	OEMedUnstressedULowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC040	OE Med Unstressed U Lowering	Old English Med Unstressed U Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC041	PWGmc Final Bare A Loss	PWGmc Final Bare A Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC041	PWGmc Final Bare A Loss	PWGmcFinalBareALoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC041	PWGmc Final Bare A Loss	Proto-West Germanic Final Bare A Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC042	PWGmc Surviving Bimoric O Unrounding	PWGmc Surviving Bimoric O Unrounding	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC042	PWGmc Surviving Bimoric O Unrounding	Proto-West Germanic Surviving Bimoric O Unrounding	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC043	Anglo Frisian Brightening	Anglo Frisian Brightening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC043	Anglo Frisian Brightening	AngloFrisianBrightening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC044	OE Breaking	OE Breaking	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC044	OE Breaking	OEBreaking	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC044	OE Breaking	Old English Breaking	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC045	OE Velar Fricative Palatalization	OE Velar Fricative Palatalization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC045	OE Velar Fricative Palatalization	OEVelarFricativePalatalization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC045	OE Velar Fricative Palatalization	Old English Velar Fricative Palatalization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC046	OE A Restoration	OE A Restoration	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC046	OE A Restoration	OEARestoration	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC046	OE A Restoration	Old English A Restoration	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC047	OE Heavy Syllable Nasal Apocope	OE Heavy Syllable Nasal Apocope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC047	OE Heavy Syllable Nasal Apocope	OEHeavySyllableNasalApocope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC047	OE Heavy Syllable Nasal Apocope	Old English Heavy Syllable Nasal Apocope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC048	OE Secondary Nasalization	OE Secondary Nasalization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC048	OE Secondary Nasalization	OESecondaryNasalization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC048	OE Secondary Nasalization	Old English Secondary Nasalization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC049	PGmc B Allophony	PGmc B Allophony	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC049	PGmc B Allophony	PGmcBAllophony	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC049	PGmc B Allophony	Proto-Germanic B Allophony	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC050	Sievers Law Syncope	Sievers Law Syncope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC050	Sievers Law Syncope	SieversLawSyncope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC051	OE Sk Palatalization	OE Sk Palatalization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC051	OE Sk Palatalization	OESkPalatalization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC051	OE Sk Palatalization	Old English Sk Palatalization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC052	OE Velar Palatalization	OE Velar Palatalization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC052	OE Velar Palatalization	OEVelarPalatalization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC052	OE Velar Palatalization	Old English Velar Palatalization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC053	OE Post Velar W Loss	OE Post Velar W Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC053	OE Post Velar W Loss	OEPostVelarWLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC053	OE Post Velar W Loss	Old English Post Velar W Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC054	OE W Loss Before I	OE W Loss Before I	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC054	OE W Loss Before I	OEWLossBeforeI	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC054	OE W Loss Before I	Old English W Loss Before I	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC055	OE I Umlaut	OE I Umlaut	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC055	OE I Umlaut	OEIUmlaut	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC055	OE I Umlaut	Old English I Umlaut	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC056	OE Ws Palatal Diphthongization	OE Ws Palatal Diphthongization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC056	OE Ws Palatal Diphthongization	OEWsPalatalDiphthongization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC056	OE Ws Palatal Diphthongization	Old English Ws Palatal Diphthongization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC057	OE J Cluster Coalescence	OE J Cluster Coalescence	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC057	OE J Cluster Coalescence	OEJClusterCoalescence	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC057	OE J Cluster Coalescence	Old English J Cluster Coalescence	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC058	OE Nasal Dissimilation	OE Nasal Dissimilation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC058	OE Nasal Dissimilation	OENasalDissimilation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC058	OE Nasal Dissimilation	Old English Nasal Dissimilation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC059	OE Back Mutation	OE Back Mutation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC059	OE Back Mutation	OEBackMutation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC059	OE Back Mutation	Old English Back Mutation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC060	OE Ws Palatal Umlaut	OE Ws Palatal Umlaut	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC060	OE Ws Palatal Umlaut	OEWsPalatalUmlaut	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC060	OE Ws Palatal Umlaut	Old English Ws Palatal Umlaut	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC061	OE Weak Tail Nasal Loss	OE Weak Tail Nasal Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC061	OE Weak Tail Nasal Loss	OEWeakTailNasalLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC061	OE Weak Tail Nasal Loss	Old English Weak Tail Nasal Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC062	OE Weight Markers	OE Weight Markers	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC062	OE Weight Markers	OEWeightMarkers	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC062	OE Weight Markers	Old English Weight Markers	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC063	OE High Vowel Apocope	OE High Vowel Apocope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC063	OE High Vowel Apocope	OEHighVowelApocope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC063	OE High Vowel Apocope	Old English High Vowel Apocope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC064	NWGmc In Stem N Loss	NWGmc In Stem N Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC064	NWGmc In Stem N Loss	NWGmcInStemNLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC064	NWGmc In Stem N Loss	Northwest Germanic In Stem N Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC065	OE Medial Syncope	OE Medial Syncope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC065	OE Medial Syncope	OEMedialSyncope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC065	OE Medial Syncope	Old English Medial Syncope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC066	OE L Adjacent Syncope	OE L Adjacent Syncope	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC066	OE L Adjacent Syncope	OELAdjacentSyncope	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC066	OE L Adjacent Syncope	Old English L Adjacent Syncope	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC067	OE Dental Assimilation	OE Dental Assimilation	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC067	OE Dental Assimilation	OEDentalAssimilation	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC067	OE Dental Assimilation	Old English Dental Assimilation	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC068	OE Preconsonantal Degemination	OE Preconsonantal Degemination	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC068	OE Preconsonantal Degemination	OEPreconsonantalDegemination	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC068	OE Preconsonantal Degemination	Old English Preconsonantal Degemination	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC069	OE Early O Shortening	OE Early O Shortening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC069	OE Early O Shortening	OEEarlyOShortening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC069	OE Early O Shortening	Old English Early O Shortening	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC070	OE Unstressed Fronting Early	OE Unstressed Fronting Early	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC070	OE Unstressed Fronting Early	OEUnstressedFrontingEarly	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC070	OE Unstressed Fronting Early	Old English Unstressed Fronting Early	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC071	OE Late O Shortening	OE Late O Shortening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC071	OE Late O Shortening	OELateOShortening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC071	OE Late O Shortening	Old English Late O Shortening	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC072	OE Unstressed Long Vowel Shortening	OE Unstressed Long Vowel Shortening	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC072	OE Unstressed Long Vowel Shortening	Old English Unstressed Long Vowel Shortening	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC073	OE Unstressed AE Merger	OE Unstressed AE Merger	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC073	OE Unstressed AE Merger	OEUnstressedAEMerger	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC073	OE Unstressed AE Merger	Old English Unstressed AE Merger	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC074	OE Med Unstressed I Lowering1	OE Med Unstressed I Lowering1	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC074	OE Med Unstressed I Lowering1	OEMedUnstressedILowering1	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC074	OE Med Unstressed I Lowering1	Old English Med Unstressed I Lowering1	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC075	OE Med Unstressed I Lowering	OE Med Unstressed I Lowering	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC075	OE Med Unstressed I Lowering	OEMedUnstressedILowering	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC075	OE Med Unstressed I Lowering	Old English Med Unstressed I Lowering	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC076	OE Prefix I Reduction	OE Prefix I Reduction	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC076	OE Prefix I Reduction	OEPrefixIReduction	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC076	OE Prefix I Reduction	Old English Prefix I Reduction	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC077	OE Prefix A Reduction Late	OE Prefix A Reduction Late	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC077	OE Prefix A Reduction Late	OEPrefixAReductionLate	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC077	OE Prefix A Reduction Late	OEPrefixAReduction	foma_rule_name	Germanic/fsts/germanic.txt	same FOMA rule used under a distinct sandbox stage label
-SC077	OE Prefix A Reduction Late	Old English Prefix A Reduction Late	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC078	OE Weak Tail Reduction	OE Weak Tail Reduction	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC078	OE Weak Tail Reduction	OEWeakTailReduction	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC078	OE Weak Tail Reduction	Old English Weak Tail Reduction	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC079	OE J Loss After Heavy	OE J Loss After Heavy	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC079	OE J Loss After Heavy	OEJLossAfterHeavy	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC079	OE J Loss After Heavy	Old English J Loss After Heavy	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC080	OE Final Geminate Simplification	OE Final Geminate Simplification	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC080	OE Final Geminate Simplification	OEFinalGeminateSimplification	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC080	OE Final Geminate Simplification	Old English Final Geminate Simplification	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC081	OE J Strengthening After Front Diphthong	OE J Strengthening After Front Diphthong	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC081	OE J Strengthening After Front Diphthong	OEJStrengtheningAfterFrontDiphthong	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC081	OE J Strengthening After Front Diphthong	Old English J Strengthening After Front Diphthong	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC082	OE Intervocalic J Vocalization	OE Intervocalic J Vocalization	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC082	OE Intervocalic J Vocalization	OEIntervocalicJVocalization	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC082	OE Intervocalic J Vocalization	Old English Intervocalic J Vocalization	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC083	OE Unstressed EI Contraction	OE Unstressed EI Contraction	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC083	OE Unstressed EI Contraction	OEUnstressedEIContraction	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC083	OE Unstressed EI Contraction	Old English Unstressed EI Contraction	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC084	OE Weight Cleanup	OE Weight Cleanup	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC084	OE Weight Cleanup	OEWeightCleanup	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC084	OE Weight Cleanup	Old English Weight Cleanup	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC085	OE H Loss	OE H Loss	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC085	OE H Loss	OEHLoss	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC085	OE H Loss	Old English H Loss	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC086	OE Contraction	OE Contraction	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC086	OE Contraction	OEContraction	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC086	OE Contraction	Old English Contraction	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC087	OE R Metathesis	OE R Metathesis	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC087	OE R Metathesis	OERMetathesis	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC087	OE R Metathesis	Old English R Metathesis	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC088	OE Epenthetic Vowel	OE Epenthetic Vowel	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC088	OE Epenthetic Vowel	OEEpentheticVowel	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC088	OE Epenthetic Vowel	Old English Epenthetic Vowel	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC089	OE Late Unstressed Ag Suffix	OE Late Unstressed Ag Suffix	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC089	OE Late Unstressed Ag Suffix	OELateUnstressedAgSuffix	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC089	OE Late Unstressed Ag Suffix	Old English Late Unstressed Ag Suffix	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC090	OE Cj Cleanup	OE Cj Cleanup	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC090	OE Cj Cleanup	OECjCleanup	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC090	OE Cj Cleanup	Old English Cj Cleanup	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC091	OE Xs Merge	OE Xs Merge	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC091	OE Xs Merge	OEXsMerge	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC091	OE Xs Merge	Old English Xs Merge	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC092	Old English Orthography	Old English Orthography	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC092	Old English Orthography	OldEnglishOrthography	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC093	OE Glide U To EO	OE Glide U To EO	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC093	OE Glide U To EO	OEGlideUToEO	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC093	OE Glide U To EO	Old English Glide U To EO	normalized_stage_name	scaffold_01 normalization	abbreviation expanded for dossier matching
-SC094	Old English Remove Stars	Old English Remove Stars	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC094	Old English Remove Stars	OldEnglishRemoveStars	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
-SC095	Old English Surface	Old English Surface	trace_label	Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md	
-SC095	Old English Surface	OldEnglishSurface	internal_stage_name	Germanic/tools/oe_full_trace_report.py	
+change_id	display_name	alias	alias_type	notes	source
+SC001	Proto Input	Proto Input	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC001	Proto Input	ProtoInput	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC001	Proto Input	EnglishProtoInput	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC001	Proto Input	Proto Input	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC002	Gm Simplification	Gm Simplification	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC002	Gm Simplification	GmSimplification	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC002	Gm Simplification	PGmcGmSimplification	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC002	Gm Simplification	Gm Simplification	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC003	Rhotacism	Rhotacism	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC003	Rhotacism	Rhotacism	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC003	Rhotacism	PGmcRhotacism	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC003	Rhotacism	Rhotacism	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC003	Rhotacism	z-rhotacism	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC004	PWGmc Ai Monophthongization	PWGmc Ai Monophthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC004	PWGmc Ai Monophthongization	PWGmcAiMonophthongization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC004	PWGmc Ai Monophthongization	PWGmcAiMonophthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC004	PWGmc Ai Monophthongization	Proto-West Germanic Ai Monophthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC004	PWGmc Ai Monophthongization	PWGmc Ai Monophthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC005	NWGmc A To U Before M	NWGmc A To U Before M	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC005	NWGmc A To U Before M	NWGmcAToUBeforeM	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC005	NWGmc A To U Before M	NWGmcAToUBeforeM	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC005	NWGmc A To U Before M	Northwest Germanic A To U Before M	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC005	NWGmc A To U Before M	NWGmc A To U Before M	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC006	PWGmc Early I Apocope	PWGmc Early I Apocope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC006	PWGmc Early I Apocope	PWGmcEarlyIApocope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC006	PWGmc Early I Apocope	PWGmcEarlyIApocope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC006	PWGmc Early I Apocope	Proto-West Germanic Early I Apocope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC006	PWGmc Early I Apocope	PWGmc Early I Apocope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC007	PWGmc Final Or Lowering	PWGmc Final Or Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC007	PWGmc Final Or Lowering	PWGmcFinalOrLowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC007	PWGmc Final Or Lowering	PWGmcFinalOrLowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC007	PWGmc Final Or Lowering	Proto-West Germanic Final Or Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC007	PWGmc Final Or Lowering	PWGmc Final Or Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC008	PWGmc Coronal W Assimilation	PWGmc Coronal W Assimilation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC008	PWGmc Coronal W Assimilation	PWGmcCoronalWAssimilation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC008	PWGmc Coronal W Assimilation	PWGmcCoronalWAssimilation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC008	PWGmc Coronal W Assimilation	Proto-West Germanic Coronal W Assimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC008	PWGmc Coronal W Assimilation	PWGmc Coronal W Assimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC009	PWGmc Ij Contraction	PWGmc Ij Contraction	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC009	PWGmc Ij Contraction	PWGmcIjContraction	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC009	PWGmc Ij Contraction	PWGmcIjContraction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC009	PWGmc Ij Contraction	Proto-West Germanic Ij Contraction	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC009	PWGmc Ij Contraction	PWGmc Ij Contraction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC010	PWGmc J Gemination	PWGmc J Gemination	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC010	PWGmc J Gemination	PWGmcJGemination	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC010	PWGmc J Gemination	PWGmcJGemination	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC010	PWGmc J Gemination	Proto-West Germanic J Gemination	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC010	PWGmc J Gemination	PWGmc J Gemination	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC010	PWGmc J Gemination	West Germanic gemination	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC010	PWGmc J Gemination	j-gemination	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC011	PWGmc Syllabic J	PWGmc Syllabic J	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC011	PWGmc Syllabic J	PWGmcSyllabicJ	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC011	PWGmc Syllabic J	PWGmcSyllabicJ	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC011	PWGmc Syllabic J	Proto-West Germanic Syllabic J	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC011	PWGmc Syllabic J	PWGmc Syllabic J	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC012	PWGmc L Th Voicing	PWGmc L Th Voicing	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC012	PWGmc L Th Voicing	PWGmcLThVoicing	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC012	PWGmc L Th Voicing	PWGmcLThVoicing	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC012	PWGmc L Th Voicing	Proto-West Germanic L Th Voicing	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC012	PWGmc L Th Voicing	PWGmc L Th Voicing	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC013	PWGmc Dental Hardening	PWGmc Dental Hardening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC013	PWGmc Dental Hardening	PWGmcDentalHardening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC013	PWGmc Dental Hardening	PWGmcDentalHardening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC013	PWGmc Dental Hardening	Proto-West Germanic Dental Hardening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC013	PWGmc Dental Hardening	PWGmc Dental Hardening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC014	NWGmc Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC014	NWGmc Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC014	NWGmc Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC014	NWGmc Unstressed Ai Monophthongization	Northwest Germanic Unstressed Ai Monophthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC014	NWGmc Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC015	NWGmc I Lowering	NWGmc I Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC015	NWGmc I Lowering	NWGmcILowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC015	NWGmc I Lowering	NWGmcILowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC015	NWGmc I Lowering	Northwest Germanic I Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC015	NWGmc I Lowering	NWGmc I Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC016	OE Ws Palatal Glide	OE Ws Palatal Glide	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC016	OE Ws Palatal Glide	OEWsPalatalGlide	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC016	OE Ws Palatal Glide	OEWsPalatalGlide	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC016	OE Ws Palatal Glide	Old English West Saxon Palatal Glide	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC016	OE Ws Palatal Glide	OE Ws Palatal Glide	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC017	NWGmc U Lowering	NWGmc U Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC017	NWGmc U Lowering	NWGmcULowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC017	NWGmc U Lowering	NWGmcULowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC017	NWGmc U Lowering	Northwest Germanic U Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC017	NWGmc U Lowering	NWGmc U Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC018	NWGmc Stressed Monosyllable O Raising	NWGmc Stressed Monosyllable O Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC018	NWGmc Stressed Monosyllable O Raising	NWGmcStressedMonosyllableORaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC018	NWGmc Stressed Monosyllable O Raising	NWGmcStressedMonosyllableORaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC018	NWGmc Stressed Monosyllable O Raising	Northwest Germanic Stressed Monosyllable O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC018	NWGmc Stressed Monosyllable O Raising	NWGmc Stressed Monosyllable O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC019	NWGmc Final Long O Raising	NWGmc Final Long O Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC019	NWGmc Final Long O Raising	Northwest Germanic Final Long O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC019	NWGmc Final Long O Raising	NWGmc Final Long O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC020	PGmc Final Z Deletion	Proto-Germanic Final Z Deletion	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC020	PGmc Final Z Deletion	final *z deletion	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC020	PGmc Final Z Deletion	loss of word-final *z	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC021	NWGmc Unstressed O Raising	NWGmc Unstressed O Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC021	NWGmc Unstressed O Raising	NWGmcUnstressedORaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC021	NWGmc Unstressed O Raising	NWGmcUnstressedORaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC021	NWGmc Unstressed O Raising	Northwest Germanic Unstressed O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC021	NWGmc Unstressed O Raising	NWGmc Unstressed O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC022	NWGmc Mn Dissimilation	NWGmc Mn Dissimilation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC022	NWGmc Mn Dissimilation	NWGmcMnDissimilation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC022	NWGmc Mn Dissimilation	NWGmcMnDissimilation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC022	NWGmc Mn Dissimilation	Northwest Germanic Mn Dissimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC022	NWGmc Mn Dissimilation	NWGmc Mn Dissimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC023	NWGmc N Stem N Loss	NWGmc N Stem N Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC023	NWGmc N Stem N Loss	NWGmcNStemNLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC023	NWGmc N Stem N Loss	NWGmcNStemNLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC023	NWGmc N Stem N Loss	Northwest Germanic N Stem N Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC023	NWGmc N Stem N Loss	NWGmc N Stem N Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC024	NWGmc Long E Lowering	NWGmc Long E Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC024	NWGmc Long E Lowering	NWGmcLongELowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC024	NWGmc Long E Lowering	NWGmcLongELowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC024	NWGmc Long E Lowering	Northwest Germanic Long E Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC024	NWGmc Long E Lowering	NWGmc Long E Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC025	NWGmc Long E Nasal Rounding	NWGmc Long E Nasal Rounding	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC025	NWGmc Long E Nasal Rounding	NWGmcLongENasalRounding	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC025	NWGmc Long E Nasal Rounding	NWGmcLongENasalRounding	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC025	NWGmc Long E Nasal Rounding	Northwest Germanic Long E Nasal Rounding	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC025	NWGmc Long E Nasal Rounding	NWGmc Long E Nasal Rounding	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC026	NWGmc Nasal Spirant Lengthening	NWGmc Nasal Spirant Lengthening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC026	NWGmc Nasal Spirant Lengthening	Northwest Germanic Nasal Spirant Lengthening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC026	NWGmc Nasal Spirant Lengthening	NWGmc Nasal Spirant Lengthening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC026	NWGmc Nasal Spirant Lengthening	nasal spirant law	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC026	NWGmc Nasal Spirant Lengthening	nasal spirant lengthening	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC027	NWGmc Nasal Spirant Loss	NWGmc Nasal Spirant Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC027	NWGmc Nasal Spirant Loss	NWGmcNasalSpirantLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC027	NWGmc Nasal Spirant Loss	NWGmcNasalSpirantLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC027	NWGmc Nasal Spirant Loss	Northwest Germanic Nasal Spirant Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC027	NWGmc Nasal Spirant Loss	NWGmc Nasal Spirant Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC027	NWGmc Nasal Spirant Loss	loss of nasal before fricative	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC027	NWGmc Nasal Spirant Loss	nasal spirant law	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC028	NWGmc Preconsonantal X Loss	NWGmc Preconsonantal X Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC028	NWGmc Preconsonantal X Loss	NWGmcPreconsonantalXLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC028	NWGmc Preconsonantal X Loss	NWGmcPreconsonantalXLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC028	NWGmc Preconsonantal X Loss	Northwest Germanic Preconsonantal X Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC028	NWGmc Preconsonantal X Loss	NWGmc Preconsonantal X Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC029	OE Awj Glide Formation	OE Awj Glide Formation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC029	OE Awj Glide Formation	OEAwjGlideFormation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC029	OE Awj Glide Formation	OEAwjGlideFormation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC029	OE Awj Glide Formation	Old English Awj Glide Formation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC029	OE Awj Glide Formation	OE Awj Glide Formation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC030	OE Au Fronting	OE Au Fronting	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC030	OE Au Fronting	OEAuFronting	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC030	OE Au Fronting	OEAuFronting	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC030	OE Au Fronting	Old English Au Fronting	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC030	OE Au Fronting	OE Au Fronting	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC031	OE WW Simplification	OE WW Simplification	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC031	OE WW Simplification	OEWWSimplification	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC031	OE WW Simplification	OEWWSimplification	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC031	OE WW Simplification	Old English WW Simplification	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC031	OE WW Simplification	OE WW Simplification	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC032	OE Diphthong Leveling	OE Diphthong Leveling	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC032	OE Diphthong Leveling	OEDiphthongLeveling	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC032	OE Diphthong Leveling	OEDiphthongLeveling	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC032	OE Diphthong Leveling	Old English Diphthong Leveling	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC032	OE Diphthong Leveling	OE Diphthong Leveling	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC033	OE Ew Long Diphthong	OE Ew Long Diphthong	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC033	OE Ew Long Diphthong	OEEwLongDiphthong	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC033	OE Ew Long Diphthong	OEEwLongDiphthong	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC033	OE Ew Long Diphthong	Old English Ew Long Diphthong	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC033	OE Ew Long Diphthong	OE Ew Long Diphthong	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC034	OE Aw Long Diphthong	OE Aw Long Diphthong	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC034	OE Aw Long Diphthong	OEAwLongDiphthong	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC034	OE Aw Long Diphthong	OEAwLongDiphthong	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC034	OE Aw Long Diphthong	Old English Aw Long Diphthong	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC034	OE Aw Long Diphthong	OE Aw Long Diphthong	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC035	OE Prefix A Reduction Early	OE Prefix A Reduction Early	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC035	OE Prefix A Reduction Early	OEPrefixAReductionEarly	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC035	OE Prefix A Reduction Early	OEPrefixAReduction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC035	OE Prefix A Reduction Early	Old English Prefix A Reduction Early	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC035	OE Prefix A Reduction Early	OE Prefix A Reduction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC036	OE Inter Stress Raising	OE Inter Stress Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC036	OE Inter Stress Raising	OEInterStressRaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC036	OE Inter Stress Raising	OEInterStressRaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC036	OE Inter Stress Raising	Old English Inter Stress Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC036	OE Inter Stress Raising	OE Inter Stress Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC037	OE Compound Linking Syncope	OE Compound Linking Syncope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC037	OE Compound Linking Syncope	OECompoundLinkingSyncope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC037	OE Compound Linking Syncope	OECompoundLinkingSyncope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC037	OE Compound Linking Syncope	Old English Compound Linking Syncope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC037	OE Compound Linking Syncope	OE Compound Linking Syncope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC038	OE Strip Secondary Stress	OE Strip Secondary Stress	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC038	OE Strip Secondary Stress	OEStripSecondaryStress	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC038	OE Strip Secondary Stress	OEStripSecondaryStress	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC038	OE Strip Secondary Stress	Old English Strip Secondary Stress	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC038	OE Strip Secondary Stress	OE Strip Secondary Stress	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC039	OE WI Combinative U Umlaut	OE WI Combinative U Umlaut	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC039	OE WI Combinative U Umlaut	OEWICombinativeUUmlaut	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC039	OE WI Combinative U Umlaut	OEWICombinativeUUmlaut	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC039	OE WI Combinative U Umlaut	Old English WI Combinative U Umlaut	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC039	OE WI Combinative U Umlaut	OE WI Combinative U Umlaut	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC040	OE Med Unstressed U Lowering	OE Med Unstressed U Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC040	OE Med Unstressed U Lowering	OEMedUnstressedULowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC040	OE Med Unstressed U Lowering	OEMedUnstressedULowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC040	OE Med Unstressed U Lowering	Old English Med Unstressed U Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC040	OE Med Unstressed U Lowering	OE Med Unstressed U Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC041	PWGmc Final Bare A Loss	PWGmc Final Bare A Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC041	PWGmc Final Bare A Loss	PWGmcFinalBareALoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC041	PWGmc Final Bare A Loss	PWGmcFinalBareALoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC041	PWGmc Final Bare A Loss	Proto-West Germanic Final Bare A Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC041	PWGmc Final Bare A Loss	PWGmc Final Bare A Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC042	PWGmc Surviving Bimoric O Unrounding	PWGmc Surviving Bimoric O Unrounding	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC042	PWGmc Surviving Bimoric O Unrounding	Proto-West Germanic Surviving Bimoric O Unrounding	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC042	PWGmc Surviving Bimoric O Unrounding	PWGmc Surviving Bimoric O Unrounding	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC043	Anglo Frisian Brightening	Anglo Frisian Brightening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC043	Anglo Frisian Brightening	AngloFrisianBrightening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC043	Anglo Frisian Brightening	AngloFrisianBrightening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC043	Anglo Frisian Brightening	Anglo Frisian Brightening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC043	Anglo Frisian Brightening	Anglo-Frisian brightening	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC043	Anglo Frisian Brightening	first fronting	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC044	OE Breaking	OE Breaking	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC044	OE Breaking	OEBreaking	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC044	OE Breaking	OEBreaking	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC044	OE Breaking	Old English Breaking	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC044	OE Breaking	OE Breaking	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC044	OE Breaking	Old English breaking	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC044	OE Breaking	breaking	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC045	OE Velar Fricative Palatalization	OE Velar Fricative Palatalization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC045	OE Velar Fricative Palatalization	OEVelarFricativePalatalization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC045	OE Velar Fricative Palatalization	OEVelarFricativePalatalization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC045	OE Velar Fricative Palatalization	Old English Velar Fricative Palatalization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC045	OE Velar Fricative Palatalization	OE Velar Fricative Palatalization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC046	OE A Restoration	OE A Restoration	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC046	OE A Restoration	OEARestoration	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC046	OE A Restoration	OEARestoration	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC046	OE A Restoration	Old English A Restoration	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC046	OE A Restoration	OE A Restoration	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC047	OE Heavy Syllable Nasal Apocope	OE Heavy Syllable Nasal Apocope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC047	OE Heavy Syllable Nasal Apocope	OEHeavySyllableNasalApocope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC047	OE Heavy Syllable Nasal Apocope	OEHeavySyllableNasalApocope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC047	OE Heavy Syllable Nasal Apocope	Old English Heavy Syllable Nasal Apocope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC047	OE Heavy Syllable Nasal Apocope	OE Heavy Syllable Nasal Apocope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC047	OE Heavy Syllable Nasal Apocope	nasal apocope	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC048	OE Secondary Nasalization	OE Secondary Nasalization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC048	OE Secondary Nasalization	OESecondaryNasalization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC048	OE Secondary Nasalization	OESecondaryNasalization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC048	OE Secondary Nasalization	Old English Secondary Nasalization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC048	OE Secondary Nasalization	OE Secondary Nasalization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC049	PGmc B Allophony	PGmc B Allophony	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC049	PGmc B Allophony	PGmcBAllophony	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC049	PGmc B Allophony	PGmcBAllophony	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC049	PGmc B Allophony	Proto-Germanic B Allophony	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC049	PGmc B Allophony	PGmc B Allophony	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC050	Sievers Law Syncope	Sievers Law Syncope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC050	Sievers Law Syncope	SieversLawSyncope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC050	Sievers Law Syncope	SieversLawSyncope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC050	Sievers Law Syncope	Sievers Law Syncope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC050	Sievers Law Syncope	Sievers law	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC050	Sievers Law Syncope	Sievers' law	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC051	OE Sk Palatalization	OE Sk Palatalization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC051	OE Sk Palatalization	OESkPalatalization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC051	OE Sk Palatalization	OESkPalatalization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC051	OE Sk Palatalization	Old English Sk Palatalization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC051	OE Sk Palatalization	OE Sk Palatalization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC051	OE Sk Palatalization	sk-palatalization	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC052	OE Velar Palatalization	OE Velar Palatalization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC052	OE Velar Palatalization	OEVelarPalatalization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC052	OE Velar Palatalization	OEVelarPalatalization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC052	OE Velar Palatalization	Old English Velar Palatalization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC052	OE Velar Palatalization	OE Velar Palatalization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC052	OE Velar Palatalization	palatalization	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC053	OE Post Velar W Loss	OE Post Velar W Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC053	OE Post Velar W Loss	OEPostVelarWLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC053	OE Post Velar W Loss	OEPostVelarWLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC053	OE Post Velar W Loss	Old English Post Velar W Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC053	OE Post Velar W Loss	OE Post Velar W Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC054	OE W Loss Before I	OE W Loss Before I	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC054	OE W Loss Before I	OEWLossBeforeI	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC054	OE W Loss Before I	OEWLossBeforeI	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC054	OE W Loss Before I	Old English W Loss Before I	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC054	OE W Loss Before I	OE W Loss Before I	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC055	OE I Umlaut	OE I Umlaut	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC055	OE I Umlaut	OEIUmlaut	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC055	OE I Umlaut	OEIUmlaut	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC055	OE I Umlaut	Old English I Umlaut	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC055	OE I Umlaut	OE I Umlaut	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC055	OE I Umlaut	i mutation	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC055	OE I Umlaut	i-mutation	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC055	OE I Umlaut	i-umlaut	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC056	OE Ws Palatal Diphthongization	OE Ws Palatal Diphthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC056	OE Ws Palatal Diphthongization	OEWsPalatalDiphthongization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC056	OE Ws Palatal Diphthongization	OEWsPalatalDiphthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC056	OE Ws Palatal Diphthongization	Old English West Saxon Palatal Diphthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC056	OE Ws Palatal Diphthongization	OE Ws Palatal Diphthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC057	OE J Cluster Coalescence	OE J Cluster Coalescence	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC057	OE J Cluster Coalescence	OEJClusterCoalescence	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC057	OE J Cluster Coalescence	OEJClusterCoalescence	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC057	OE J Cluster Coalescence	Old English J Cluster Coalescence	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC057	OE J Cluster Coalescence	OE J Cluster Coalescence	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC058	OE Nasal Dissimilation	OE Nasal Dissimilation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC058	OE Nasal Dissimilation	OENasalDissimilation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC058	OE Nasal Dissimilation	OENasalDissimilation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC058	OE Nasal Dissimilation	Old English Nasal Dissimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC058	OE Nasal Dissimilation	OE Nasal Dissimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC059	OE Back Mutation	OE Back Mutation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC059	OE Back Mutation	OEBackMutation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC059	OE Back Mutation	OEBackMutation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC059	OE Back Mutation	Old English Back Mutation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC059	OE Back Mutation	OE Back Mutation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC059	OE Back Mutation	back mutation	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC059	OE Back Mutation	back umlaut	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC060	OE Ws Palatal Umlaut	OE Ws Palatal Umlaut	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC060	OE Ws Palatal Umlaut	OEWsPalatalUmlaut	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC060	OE Ws Palatal Umlaut	OEWsPalatalUmlaut	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC060	OE Ws Palatal Umlaut	Old English West Saxon Palatal Umlaut	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC060	OE Ws Palatal Umlaut	OE Ws Palatal Umlaut	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC061	OE Weak Tail Nasal Loss	OE Weak Tail Nasal Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC061	OE Weak Tail Nasal Loss	OEWeakTailNasalLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC061	OE Weak Tail Nasal Loss	OEWeakTailNasalLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC061	OE Weak Tail Nasal Loss	Old English Weak Tail Nasal Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC061	OE Weak Tail Nasal Loss	OE Weak Tail Nasal Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC062	OE Weight Markers	OE Weight Markers	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC062	OE Weight Markers	OEWeightMarkers	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC062	OE Weight Markers	OEWeightMarkers	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC062	OE Weight Markers	Old English Weight Markers	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC062	OE Weight Markers	OE Weight Markers	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC063	OE High Vowel Apocope	OE High Vowel Apocope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC063	OE High Vowel Apocope	OEHighVowelApocope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC063	OE High Vowel Apocope	OEHighVowelApocope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC063	OE High Vowel Apocope	Old English High Vowel Apocope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC063	OE High Vowel Apocope	OE High Vowel Apocope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC063	OE High Vowel Apocope	final high-vowel apocope	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC063	OE High Vowel Apocope	high-vowel apocope	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC064	NWGmc In Stem N Loss	NWGmc In Stem N Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC064	NWGmc In Stem N Loss	NWGmcInStemNLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC064	NWGmc In Stem N Loss	NWGmcInStemNLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC064	NWGmc In Stem N Loss	Northwest Germanic In Stem N Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC064	NWGmc In Stem N Loss	NWGmc In Stem N Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC065	OE Medial Syncope	OE Medial Syncope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC065	OE Medial Syncope	OEMedialSyncope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC065	OE Medial Syncope	OEMedialSyncope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC065	OE Medial Syncope	Old English Medial Syncope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC065	OE Medial Syncope	OE Medial Syncope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC065	OE Medial Syncope	medial syncope	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC066	OE L Adjacent Syncope	OE L Adjacent Syncope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC066	OE L Adjacent Syncope	OELAdjacentSyncope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC066	OE L Adjacent Syncope	OELAdjacentSyncope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC066	OE L Adjacent Syncope	Old English L Adjacent Syncope	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC066	OE L Adjacent Syncope	OE L Adjacent Syncope	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC067	OE Dental Assimilation	OE Dental Assimilation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC067	OE Dental Assimilation	OEDentalAssimilation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC067	OE Dental Assimilation	OEDentalAssimilation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC067	OE Dental Assimilation	Old English Dental Assimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC067	OE Dental Assimilation	OE Dental Assimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC068	OE Preconsonantal Degemination	OE Preconsonantal Degemination	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC068	OE Preconsonantal Degemination	OEPreconsonantalDegemination	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC068	OE Preconsonantal Degemination	OEPreconsonantalDegemination	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC068	OE Preconsonantal Degemination	Old English Preconsonantal Degemination	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC068	OE Preconsonantal Degemination	OE Preconsonantal Degemination	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC069	OE Early O Shortening	OE Early O Shortening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC069	OE Early O Shortening	OEEarlyOShortening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC069	OE Early O Shortening	OEEarlyOShortening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC069	OE Early O Shortening	Old English Early O Shortening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC069	OE Early O Shortening	OE Early O Shortening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC070	OE Unstressed Fronting Early	OE Unstressed Fronting Early	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC070	OE Unstressed Fronting Early	OEUnstressedFrontingEarly	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC070	OE Unstressed Fronting Early	OEUnstressedFrontingEarly	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC070	OE Unstressed Fronting Early	Old English Unstressed Fronting Early	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC070	OE Unstressed Fronting Early	OE Unstressed Fronting Early	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC071	OE Late O Shortening	OE Late O Shortening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC071	OE Late O Shortening	OELateOShortening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC071	OE Late O Shortening	OELateOShortening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC071	OE Late O Shortening	Old English Late O Shortening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC071	OE Late O Shortening	OE Late O Shortening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC072	OE Unstressed Long Vowel Shortening	OE Unstressed Long Vowel Shortening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC072	OE Unstressed Long Vowel Shortening	Old English Unstressed Long Vowel Shortening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC072	OE Unstressed Long Vowel Shortening	OE Unstressed Long Vowel Shortening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC073	OE Unstressed AE Merger	OE Unstressed AE Merger	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC073	OE Unstressed AE Merger	OEUnstressedAEMerger	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC073	OE Unstressed AE Merger	OEUnstressedAEMerger	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC073	OE Unstressed AE Merger	Old English Unstressed AE Merger	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC073	OE Unstressed AE Merger	OE Unstressed AE Merger	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC074	OE Med Unstressed I Lowering1	OE Med Unstressed I Lowering1	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC074	OE Med Unstressed I Lowering1	OEMedUnstressedILowering1	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC074	OE Med Unstressed I Lowering1	OEMedUnstressedILowering1	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC074	OE Med Unstressed I Lowering1	Old English Med Unstressed I Lowering1	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC074	OE Med Unstressed I Lowering1	OE Med Unstressed I Lowering1	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC075	OE Med Unstressed I Lowering	OE Med Unstressed I Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC075	OE Med Unstressed I Lowering	OEMedUnstressedILowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC075	OE Med Unstressed I Lowering	OEMedUnstressedILowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC075	OE Med Unstressed I Lowering	Old English Med Unstressed I Lowering	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC075	OE Med Unstressed I Lowering	OE Med Unstressed I Lowering	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC076	OE Prefix I Reduction	OE Prefix I Reduction	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC076	OE Prefix I Reduction	OEPrefixIReduction	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC076	OE Prefix I Reduction	OEPrefixIReduction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC076	OE Prefix I Reduction	Old English Prefix I Reduction	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC076	OE Prefix I Reduction	OE Prefix I Reduction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC077	OE Prefix A Reduction Late	OE Prefix A Reduction Late	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC077	OE Prefix A Reduction Late	OEPrefixAReductionLate	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC077	OE Prefix A Reduction Late	OEPrefixAReduction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC077	OE Prefix A Reduction Late	Old English Prefix A Reduction Late	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC077	OE Prefix A Reduction Late	OE Prefix A Reduction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC078	OE Weak Tail Reduction	OE Weak Tail Reduction	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC078	OE Weak Tail Reduction	OEWeakTailReduction	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC078	OE Weak Tail Reduction	OEWeakTailReduction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC078	OE Weak Tail Reduction	Old English Weak Tail Reduction	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC078	OE Weak Tail Reduction	OE Weak Tail Reduction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC079	OE J Loss After Heavy	OE J Loss After Heavy	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC079	OE J Loss After Heavy	OEJLossAfterHeavy	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC079	OE J Loss After Heavy	OEJLossAfterHeavy	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC079	OE J Loss After Heavy	Old English J Loss After Heavy	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC079	OE J Loss After Heavy	OE J Loss After Heavy	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC080	OE Final Geminate Simplification	OE Final Geminate Simplification	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC080	OE Final Geminate Simplification	OEFinalGeminateSimplification	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC080	OE Final Geminate Simplification	OEFinalGeminateSimplification	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC080	OE Final Geminate Simplification	Old English Final Geminate Simplification	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC080	OE Final Geminate Simplification	OE Final Geminate Simplification	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC081	OE J Strengthening After Front Diphthong	OE J Strengthening After Front Diphthong	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC081	OE J Strengthening After Front Diphthong	OEJStrengtheningAfterFrontDiphthong	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC081	OE J Strengthening After Front Diphthong	OEJStrengtheningAfterFrontDiphthong	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC081	OE J Strengthening After Front Diphthong	Old English J Strengthening After Front Diphthong	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC081	OE J Strengthening After Front Diphthong	OE J Strengthening After Front Diphthong	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC082	OE Intervocalic J Vocalization	OE Intervocalic J Vocalization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC082	OE Intervocalic J Vocalization	OEIntervocalicJVocalization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC082	OE Intervocalic J Vocalization	OEIntervocalicJVocalization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC082	OE Intervocalic J Vocalization	Old English Intervocalic J Vocalization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC082	OE Intervocalic J Vocalization	OE Intervocalic J Vocalization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC083	OE Unstressed EI Contraction	OE Unstressed EI Contraction	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC083	OE Unstressed EI Contraction	OEUnstressedEIContraction	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC083	OE Unstressed EI Contraction	OEUnstressedEIContraction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC083	OE Unstressed EI Contraction	Old English Unstressed EI Contraction	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC083	OE Unstressed EI Contraction	OE Unstressed EI Contraction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC084	OE Weight Cleanup	OE Weight Cleanup	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC084	OE Weight Cleanup	OEWeightCleanup	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC084	OE Weight Cleanup	OEWeightCleanup	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC084	OE Weight Cleanup	Old English Weight Cleanup	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC084	OE Weight Cleanup	OE Weight Cleanup	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC085	OE H Loss	OE H Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC085	OE H Loss	OEHLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC085	OE H Loss	OEHLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC085	OE H Loss	Old English H Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC085	OE H Loss	OE H Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC086	OE Contraction	OE Contraction	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC086	OE Contraction	OEContraction	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC086	OE Contraction	OEContraction	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC086	OE Contraction	Old English Contraction	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC086	OE Contraction	OE Contraction	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC087	OE R Metathesis	OE R Metathesis	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC087	OE R Metathesis	OERMetathesis	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC087	OE R Metathesis	OERMetathesis	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC087	OE R Metathesis	Old English R Metathesis	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC087	OE R Metathesis	OE R Metathesis	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC088	OE Epenthetic Vowel	OE Epenthetic Vowel	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC088	OE Epenthetic Vowel	OEEpentheticVowel	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC088	OE Epenthetic Vowel	OEEpentheticVowel	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC088	OE Epenthetic Vowel	Old English Epenthetic Vowel	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC088	OE Epenthetic Vowel	OE Epenthetic Vowel	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC088	OE Epenthetic Vowel	epenthesis	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC088	OE Epenthetic Vowel	epenthetic vowel	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
+SC089	OE Late Unstressed Ag Suffix	OE Late Unstressed Ag Suffix	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC089	OE Late Unstressed Ag Suffix	OELateUnstressedAgSuffix	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC089	OE Late Unstressed Ag Suffix	OELateUnstressedAgSuffix	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC089	OE Late Unstressed Ag Suffix	Old English Late Unstressed Ag Suffix	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC089	OE Late Unstressed Ag Suffix	OE Late Unstressed Ag Suffix	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC090	OE Cj Cleanup	OE Cj Cleanup	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC090	OE Cj Cleanup	OECjCleanup	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC090	OE Cj Cleanup	OECjCleanup	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC090	OE Cj Cleanup	Old English Cj Cleanup	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC090	OE Cj Cleanup	OE Cj Cleanup	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC091	OE Xs Merge	OE Xs Merge	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC091	OE Xs Merge	OEXsMerge	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC091	OE Xs Merge	OEXsMerge	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC091	OE Xs Merge	Old English Xs Merge	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC091	OE Xs Merge	OE Xs Merge	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC092	Old English Orthography	Old English Orthography	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC092	Old English Orthography	OldEnglishOrthography	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC092	Old English Orthography	OldEnglishOrthography	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC092	Old English Orthography	Old English Orthography	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC093	OE Glide U To EO	OE Glide U To EO	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC093	OE Glide U To EO	OEGlideUToEO	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC093	OE Glide U To EO	OEGlideUToEO	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC093	OE Glide U To EO	Old English Glide U To EO	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC093	OE Glide U To EO	OE Glide U To EO	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC094	Old English Remove Stars	Old English Remove Stars	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC094	Old English Remove Stars	OldEnglishRemoveStars	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC094	Old English Remove Stars	OldEnglishRemoveStars	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC094	Old English Remove Stars	Old English Remove Stars	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC095	Old English Surface	Old English Surface	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC095	Old English Surface	OldEnglishSurface	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC095	Old English Surface	OldEnglishSurface	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC095	Old English Surface	Old English Surface	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
