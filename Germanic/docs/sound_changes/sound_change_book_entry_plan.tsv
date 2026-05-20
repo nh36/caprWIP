@@ -74,20 +74,20 @@ BE072	SC073	OE Unstressed AE Merger	Old English	73	yes	historical_sound_change	3
 BE073	SC074	OE Med Unstressed I Lowering1	Old English	74	yes	historical_sound_change	6	harvest, rye, shilling, dill, sieve	low		low
 BE074	SC075	OE Med Unstressed I Lowering	Old English	75	yes	historical_sound_change	1	shilling	low		low
 BE075	SC076	OE Prefix I Reduction	Old English	76	yes	historical_sound_change	1	begin	low		low
-BE076	SC078	OE Weak Tail Reduction	Old English	78	yes	historical_sound_change	87	bake, begin, believe, bind, bore	high		high
-BE077	SC079	OE J Loss After Heavy	Old English	79	yes	historical_sound_change	27	believe, bow, heal, hedge, hind	medium		medium
-BE078	SC080	OE Final Geminate Simplification	Old English	80	yes	historical_sound_change	1	lung	low		low
-BE079	SC081	OE J Strengthening After Front Diphthong	Old English	81	yes	historical_sound_change	1	strew	low		low
-BE080	SC082	OE Intervocalic J Vocalization	Old English	82	yes	historical_sound_change	9	bore, handle, learn, lick, make	low		low
-BE081	SC083	OE Unstressed EI Contraction	Old English	83	yes	historical_sound_change	8	bore, handle, learn, lick, make	low		low
-BE082	SC084	OE Weight Cleanup	Technical	84	appendix	technical_marker	0		low	Identity cleanup checkpoint after weight-sensitive rules; methodological appendix only.	low
-BE083	SC085	OE H Loss	Old English	85	yes	historical_sound_change	4	flee, slay, toe, ten	low		low
-BE084	SC086	OE Contraction	Old English	86	yes	historical_sound_change	5	flee, slay, toe, ten, three	low		low
-BE085	SC087	OE R Metathesis	Old English	87	yes	historical_sound_change	2	burst, frost	low		low
-BE086	SC088	OE Epenthetic Vowel	Old English	88	yes	historical_sound_change	13	beaver, finger, fodder, leather, liver	medium		medium
-BE087	SC089	OE Late Unstressed Ag Suffix	Old English	89	yes	historical_sound_change	2	honey, withy	low		low
-BE088	SC090	OE Cj Cleanup	Orthography & surface	90	appendix	orthography_surface	0		low	Post-cascade palatal-cluster cleanup before orthography; treat as appendix machinery, not a main sound change.	low
-BE089	SC091	OE Xs Merge	Orthography & surface	91	appendix	orthography_surface	6	flax, fox, ox, six, wax	low	Post-cascade surface merge feeding orthographic x; keep as appendix material rather than a reader-facing historical entry.	low
-BE090	SC092	Old English Orthography	Orthography & surface	92	appendix	orthography_surface	0		low	Orthography conversion from starred symbols to displayed Old English graphemes.	low
-BE091	SC093	OE Glide U To EO	Orthography & surface	93	appendix	orthography_surface	0		low	Orthographic eo spelling after palatal glide plus u; appendix treatment only.	low
-BE092	SC094	Old English Remove Stars	Orthography & surface	94	appendix	orthography_surface	0		low	Prosodic/star stripping boundary between internal symbols and displayed forms.	low
+BE076	SC078	OE Weak Tail Reduction	Old English	77	yes	historical_sound_change	87	bake, begin, believe, bind, bore	high		high
+BE077	SC079	OE J Loss After Heavy	Old English	78	yes	historical_sound_change	27	believe, bow, heal, hedge, hind	medium		medium
+BE078	SC080	OE Final Geminate Simplification	Old English	79	yes	historical_sound_change	1	lung	low		low
+BE079	SC081	OE J Strengthening After Front Diphthong	Old English	80	yes	historical_sound_change	1	strew	low		low
+BE080	SC082	OE Intervocalic J Vocalization	Old English	81	yes	historical_sound_change	9	bore, handle, learn, lick, make	low		low
+BE081	SC083	OE Unstressed EI Contraction	Old English	82	yes	historical_sound_change	8	bore, handle, learn, lick, make	low		low
+BE082	SC084	OE Weight Cleanup	Technical	83	appendix	technical_marker	0		low	Identity cleanup checkpoint after weight-sensitive rules; methodological appendix only.	low
+BE083	SC085	OE H Loss	Old English	84	yes	historical_sound_change	4	flee, slay, toe, ten	low		low
+BE084	SC086	OE Contraction	Old English	85	yes	historical_sound_change	5	flee, slay, toe, ten, three	low		low
+BE085	SC087	OE R Metathesis	Old English	86	yes	historical_sound_change	2	burst, frost	low		low
+BE086	SC088	OE Epenthetic Vowel	Old English	87	yes	historical_sound_change	13	beaver, finger, fodder, leather, liver	medium		medium
+BE087	SC089	OE Late Unstressed Ag Suffix	Old English	88	yes	historical_sound_change	2	honey, withy	low		low
+BE088	SC090	OE Cj Cleanup	Orthography & surface	89	appendix	orthography_surface	0		low	Post-cascade palatal-cluster cleanup before orthography; treat as appendix machinery, not a main sound change.	low
+BE089	SC091	OE Xs Merge	Orthography & surface	90	appendix	orthography_surface	6	flax, fox, ox, six, wax	low	Post-cascade surface merge feeding orthographic x; keep as appendix material rather than a reader-facing historical entry.	low
+BE090	SC092	Old English Orthography	Orthography & surface	91	appendix	orthography_surface	0		low	Orthography conversion from starred symbols to displayed Old English graphemes.	low
+BE091	SC093	OE Glide U To EO	Orthography & surface	92	appendix	orthography_surface	0		low	Orthographic eo spelling after palatal glide plus u; appendix treatment only.	low
+BE092	SC094	Old English Remove Stars	Orthography & surface	93	appendix	orthography_surface	0		low	Prosodic/star stripping boundary between internal symbols and displayed forms.	low
