@@ -53,5 +53,5 @@ feminine formation reflected in Old English.
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | base noun | *lungō | base-noun outcome without the OE derivative suffix | broader family context | useful headword, but not the direct source of `lungen` |
-| derived OE-facing formation | *lúnganjō | compact-trace output: `lungen` | lungen | exact match between selected formation and attested OE noun |
+| derived OE-facing formation | *lúnganjō | compact-trace output: `lungen` | lungen | exact match between the derived formation and the attested OE noun |
 | Kroonen's cited derivative | `*lungunjō-` | comparative support for the same OE-facing formation | lungen and cognate set | supports the derived feminine formation, with notation differing from the normalized input form used here |

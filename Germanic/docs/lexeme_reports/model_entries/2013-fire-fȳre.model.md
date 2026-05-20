@@ -47,13 +47,13 @@ loss of the final high vowel after a heavy syllable yields **`fȳr`**
 
 `fȳre` is later than that inherited output. Its final `-e` belongs to
 analogical restoration in the Old English paradigm rather than to the original
-Proto-Germanic ending. The form therefore remains `known_unmodelled`: the
-deterministic phonology is regular, but the attested surface form includes
-later morphological rebuilding.
+Proto-Germanic ending. The form therefore remains a known but unmodelled
+remodelling: the deterministic phonology is regular, but the attested surface
+form includes later morphological rebuilding.
 
 ### Paradigm comparison
 
-The comparison below is manual. It distinguishes the lexeme-level etymological
+The comparison below sets the relevant forms side by side. It distinguishes the lexeme-level etymological
 background from the inherited cell that actually produces the front-mutated
 form and from the later analogical surface result.
 

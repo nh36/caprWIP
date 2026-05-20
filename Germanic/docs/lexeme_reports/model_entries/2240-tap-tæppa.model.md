@@ -37,7 +37,7 @@ target `tæppa` therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
 inherited input. A related j-verb pathway would give `teppan`, not the noun
-target `tæppa`. The entry accordingly remains `known_unmodelled`.
+target `tæppa`. The entry accordingly remains a known but unmodelled case.
 
 ### Form comparison
 

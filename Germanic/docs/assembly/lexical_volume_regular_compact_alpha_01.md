@@ -1353,7 +1353,7 @@ OE J Loss After Heavy & \emph{*çeʤʤ} \\
 
 The derivational input models a palatal _\*-gj-_ noun. West Germanic j-gemination yields the geminate stop in this environment [@Campbell1959, §407]. Bosworth-Toller records the noun under the standard spelling _hecg_ [@BosworthToller1898, 495], while Clark Hall preserves the related lexicographic material under _hege_ and adjacent hedge-family forms [@ClarkHall1960, 152]. From _\*xágjaz_, later Old English palatalization and loss of final _j_ produce the palatal-geminate outcome _heġġ_.
 
-Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the Old English form here here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898, 495; @ClarkHall1960, 152].
+Form note. Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the form used here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898, 495; @ClarkHall1960, 152].
 
 ### helm — OE helm
 
@@ -1545,7 +1545,7 @@ OE Weak Tail Reduction & \emph{*çealdan} \\
 
 Campbell and Ringe-Taylor treat the verb as a regular _\*a_ + lC breaking case, with West Saxon _healdan_ opposed to Anglian and Mercian _haldan_ [@Campbell1959, §144; @RingeTaylor2014, 199]. Bright gives the ordinary strong-verb citation form and principal parts _healdan, heold, heoldon, healden_ [@BrightCassidyRingler1971, 62]. From _\*xáldaną_, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces _ea_ before _ld_.
 
-Dialect note. West Saxon _healdan_ is the Old English form here here. Anglian and Mercian _haldan_ are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959, §144; @RingeTaylor2014, 199].
+Dialect note. West Saxon _healdan_ is the form used here. Anglian and Mercian _haldan_ are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959, §144; @RingeTaylor2014, 199].
 
 ### horn — OE horn
 
@@ -3346,7 +3346,7 @@ Form note. Dictionary _gearn_ and normalized _ġearn_ refer to the same noun. Th
 
 \clearpage
 
-## Part II. Attested variants and selected comparison forms
+## Part II. Attested variants and comparison forms
 
 These entries treat the attested Old English form as one member of an attested
 or historically documented variant set. The lexical comparison must therefore
@@ -3493,7 +3493,7 @@ broadly: _tēon_ develops from _\*tëhun_, while West Saxon tien, _tȳn_ belong 
 a different, umlauted branch of the numeral history [@SieversBrunner1965,
 §§129.2, 129 Anm. 6, 234].
 
-The selected comparison form _tēon_ therefore represents the bare cardinal's
+The comparison form _tēon_ therefore represents the bare cardinal's
 un-umlauted line, not the later umlauted simplex tradition.
 
 #### Old English evidence
@@ -3528,7 +3528,7 @@ from the attested simplex variants.
 | :--- | :--- | :--- |
 | _tēon_ | normalized un-umlauted comparison form; trace-supported | Old English form here |
 | _tien_ / _tīen_ | attested West Saxon umlauted simplex forms | genuine OE variants, but not the bare-cardinal line modeled here |
-| _tēn_ / _tēo_ / _tēa_ | attested un-umlauted simplex variants in other dialects | support the same branch as the selected comparison form |
+| _tēn_ / _tēo_ / _tēa_ | attested un-umlauted simplex variants in other dialects | support the same branch as the comparison form |
 
 ### three — OE þrīe
 
@@ -3893,7 +3893,7 @@ selected oblique singular.
 | Form / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *brándaz | expected OE lemma _brand_ | brand | regular headword-level outcome |
-| selected genitive singular | *brándas | regular output: _brandes_ | brandes | exact match for the chosen oblique cell |
+| genitive singular | *brándas | regular output: _brandes_ | brandes | exact match for the oblique cell |
 
 The noun itself is straightforwardly inherited. The main point of the entry is
 that _brandes_ belongs to the same regular a-stem paradigm as _brand_, even
@@ -4565,7 +4565,7 @@ from the weak noun formation actually reflected in Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | broader family label | *gállą | broader cognate-set headword | wider family context | useful lexeme label, but not the direct source of _ġealla_ |
 | selected weak noun | *gállô | regular output: _ġealla_ | ġealla | exact match between formation and attested OE noun |
-| dialectal Anglian continuation | weak noun branch | Anglian _galla_ type | galla | genuine OE variant, but not the selected West Saxon target |
+| dialectal Anglian continuation | weak noun branch | Anglian _galla_ type | galla | genuine OE variant, but not the West Saxon form used here |
 
 The weak-noun stem class is the relevant point. It gives a direct route to
 attested _ġealla_, while the broader comparative label serves only as a family
@@ -5113,7 +5113,7 @@ feminine formation reflected in Old English.
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | base noun | *lungō | base-noun outcome without the OE derivative suffix | broader family context | useful headword, but not the direct source of _lungen_ |
-| derived OE-facing formation | *lúnganjō | regular output: _lungen_ | lungen | exact match between form compared hereation and attested OE noun |
+| derived OE-facing formation | *lúnganjō | regular output: _lungen_ | lungen | exact match between the derived formation and the attested OE noun |
 | Kroonen's cited derivative | _\*lungunjō-_ | comparative support for the same OE-facing formation | lungen and cognate set | supports the derived feminine formation, with notation differing from the normalized input form used here |
 
 ### navel — OE nafola
@@ -5478,7 +5478,7 @@ from the remodeled zero-grade input that yields the Old English form.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| full-grade comparative line | *nasō | expected full-grade continuation _nasu_ | nasu | useful comparative background, but not the selected OE-facing input |
+| full-grade comparative line | *nasō | expected full-grade continuation _nasu_ | nasu | useful comparative background, but not the Old English-facing input |
 | remodeled zero-grade line | *núsō | regular output: _nosu_ | nosu | exact match between derivational input and attested OE noun |
 
 ### sap — OE sæp
@@ -5561,7 +5561,7 @@ selection.
 #### Stem comparison
 
 The comparison below sets the relevant forms side by side. It separates the competing comparative stem lines
-from the selected OE-facing input.
+from the Old English-facing input.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5654,7 +5654,7 @@ headword from the fuller i-stem input that yields the Old English form.
 
 | Formation / label | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| abbreviated comparative headword | *sái | too short to preserve the _\*w_ ... _\*i_ environment needed for the documented chronology | sǣ | useful comparative label, but not the selected OE-facing input |
+| abbreviated comparative headword | *sái | too short to preserve the _\*w_ ... _\*i_ environment needed for the documented chronology | sǣ | useful comparative label, but not the Old English-facing input |
 | selected i-stem input | *sáiwiz | documented regular output: _sǣ_ | sǣ | exact match between derivational input and Old English target |
 
 ### sieve — OE sife
@@ -6014,7 +6014,7 @@ the OE-facing transponent, and the later West Saxon variant history.
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
 | _\*stámnaz_ | comparative citation label for the broader stem/trunk family | does not itself control the _stefn_ derivation discussed here | broader lexical label only |
-| _\*stébnō_ | voice-noun transponent | regular output: _stefn_ | selected OE-facing input |
+| _\*stébnō_ | voice-noun transponent | regular output: _stefn_ | Old English-facing input |
 | _stemn_ | later attested West Saxon doublet | secondary form from _stefn_ by _fn_ > _mn_ | real OE variant, but not the selected comparator |
 
 ### swan — OE swanes
@@ -6071,7 +6071,7 @@ The Germanic noun is ordinarily cited as the masculine a-stem _\*swanaz_
 lexeme reconstruction. It is the genitive singular of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains _\*swanaz_ > _swan_; the selected comparison form is the
+The citation form remains _\*swanaz_ > _swan_; the comparison form is the
 genitive singular _\*swánas_ > _swanes_.
 
 #### Old English evidence
@@ -6099,7 +6099,7 @@ selected inflected cell.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *swánaz | OE headword _swan_ | swan | ordinary lexeme line |
-| selected genitive singular | *swánas | regular output: _swanes_ | swanes | selected attested cell |
+| genitive singular | *swánas | regular output: _swanes_ | swanes | attested cell |
 
 ### thousand — OE þūsend
 
@@ -6279,7 +6279,7 @@ OE-facing consonantal input.
 | :--- | :--- | :--- | :--- |
 | Kroonen's comparative citation | _\*timbra-_ | already matches the consonantal frame of OE _timber_ | closest comparative support for the derivational input |
 | Ringe-Taylor citation line | _\*timra_ > _\*timbr_ | reaches the same OE noun through early cluster expansion | compatible comparative background |
-| modeled input | _\*tímbrą_ | regular output: _timber_ | selected OE-facing input |
+| modeled input | _\*tímbrą_ | regular output: _timber_ | Old English-facing input |
 
 ### wake — OE wacan
 
@@ -6366,7 +6366,7 @@ The comparison below sets the relevant forms side by side. It separates the stro
 | Formation / class | Candidate input | OE outcome or comparison | Result |
 | :--- | :--- | :--- | :--- |
 | weak class-III / class-II branch | _\*wakēną_, _\*wakai-_ ~ _\*wakja-_ | OE _wacian_ and related weak forms | related lexeme, but not the target of this entry |
-| strong class-VI branch | _\*wákaną_ | regular output: _wacan_ | selected OE-facing input |
+| strong class-VI branch | _\*wákaną_ | regular output: _wacan_ | Old English-facing input |
 | strong normalized headword | _wacan_ | dictionary comparison form beside attested strong-family forms | correct Old English comparator, though not a directly quoted simplex infinitive |
 
 ### water — OE wæter
@@ -6456,7 +6456,7 @@ the singular input that matches the Old English citation form.
 | :--- | :--- | :--- | :--- |
 | generalized comparative label | _\*wátną_ | broader lexeme shorthand, not the singular that corresponds directly to _wæter_ | useful background only |
 | heteroclitic stem notation | _\*watar-_ ~ _\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
-| inherited singular input | _\*wátōr_ | regular output: _wæter_ | selected OE-facing input |
+| inherited singular input | _\*wátōr_ | regular output: _wæter_ | Old English-facing input |
 
 ### whale — OE hwæl
 
@@ -6543,7 +6543,7 @@ notations from the normalized Old English singular.
 | :--- | :--- | :--- | :--- |
 | Orel's citation | _\*xwalaz_ | same stem notation as the modeled singular line | closest comparative support for the derivational input |
 | Kroonen's citation | _\*hwali-_ | same initial cluster, different stem label | important comparative rival, but not the notation followed here |
-| modeled input | _\*xwálaz_ | regular output: _hwæl_ | selected OE-facing input |
+| modeled input | _\*xwálaz_ | regular output: _hwæl_ | Old English-facing input |
 | plural control | _hwalas_ | attested open-syllable plural beside singular _hwæl_ | confirms that the lexeme also preserves an _a_-vocalism branch |
 
 ### whine — OE hwīnan
@@ -6725,21 +6725,21 @@ development of _\*-ag-_ yields _-iġ_ [@Campbell1959, §§275, 376].
 Palatalization supplies the final _ġ_, and the full development reaches
 _wīþiġ_.
 
-This derivation is regular for the form compared hereation. The central claim of the
+This derivation is regular for the form compared here. The central claim of the
 entry is therefore morphological: Old English _wīþiġ_ belongs with an
 _\*-ag-_ derivative, whereas the comparative _\*wīþja-_ label belongs to a
 different way of presenting the cognate family.
 
 #### Formation comparison
 
-The comparison below sets the relevant forms side by side. It distinguishes the comparative headword from
+The comparison below sets the relevant formations side by side. It distinguishes the comparative headword from
 the Old English-facing formation that actually yields the attested noun.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of _wīþiġ_ |
 | heavy ja-stem analysis | _\*wīþja-_ type | Campbell/Adamczyk-style heavy ja-stem _-e_ / zero outcome | _wīþiġ_ | does not account cleanly for the OE suffix |
-| selected _\*-ag-_ derivative | *wī́θagą | regular output: _wīþiġ_ | wīþiġ | exact match between formation and target |
+| _\*-ag-_ derivative followed here | *wī́θagą | regular output: _wīþiġ_ | wīþiġ | exact match between formation and target |
 
 ### world — OE weorold
 
@@ -6817,13 +6817,13 @@ _wiarald_ [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same w
 set, including the syncopated _world_ and later rounded _wurold_
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
-The Old English form here here is the West Saxon form _weorold_. It is an attested Old
+The Old English form used here is the West Saxon form _weorold_. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
 ever shows.
 
 #### Development to Old English
 
-From the derivational input _\*wír-àldu_, Northwest Germanic _i_-lowering gives
+From _\*wír-àldu_, Northwest Germanic _i_-lowering gives
 _\*wér-àldu_. Inter-stress raising then changes the medial _a_ to _u_, producing
 _\*wér-uldu_. In the Old English branch that unstressed _u_ lowers to _o_, and
 back mutation yields _\*wéor-oldu_; final high-vowel apocope then gives
@@ -6831,7 +6831,7 @@ _weorold_.
 
 This sequence matches the comparative background in Ringe and Taylor's
 _\*weraldiz_ > _\*weraldu_ > _\*weruld_ chain while preserving the _\*wir-_ notation of
-the selected comparative label [@RingeTaylor2014, 341]. The modeled Old English form
+the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 
@@ -6844,8 +6844,8 @@ OE-facing stage chosen for the derivation.
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | _\*wíra-àldiz_ | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
 | literature-stage lowered compound after early stem-class shift | _\*weraldiz_ > _\*weraldu_ > _\*weruld_ | Ringe-Taylor background chain to OE _weorold_ ~ _worold_ | explains the older comparative literature cited for the word |
-| selected OE-facing input | _\*wír-àldu_ | regular output: _weorold_ | exact match for the selected West Saxon target |
-| broader OE variant cluster | — | _worold_, _weoruld_, _woruld_, _wiarald_, _world_ | real attested comparanda that remain outside the Old English form here line |
+| Old English-facing input | _\*wír-àldu_ | regular output: _weorold_ | exact match for the West Saxon form used here |
+| broader OE variant cluster | — | _worold_, _weoruld_, _woruld_, _wiarald_, _world_ | real attested comparanda that remain outside that West Saxon line |
 
 ### youth — OE ġeoguþ
 
@@ -6901,15 +6901,15 @@ Old English form: _ġeoguþ_
 #### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-_\*ju(w)unþi-_ [@Kroonen2013, 316]. The selected comparative label
-_\*júgunθiz_ already stands at a later Germanic stage with _g_, and the chosen
-input _\*júgunθ_ is later again: it represents the form after final _-i_ has been
-lost.
+_\*ju(w)unþi-_ [@Kroonen2013, 316]. The comparative label
+_\*júgunθiz_ already stands at a later Germanic stage with _g_, and the
+derivational input _\*júgunθ_ is later again: it represents the form after final
+_-i_ has been lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
-_\*jugunþi_ > _\*juguþ_ > OE _geoguþ_ ~ _iuguþ_ [@RingeTaylor2014, 141]. The selected
-input therefore differs from the broader comparative headword because the Old
-English development must begin after early loss of final _-i_.
+_\*jugunþi_ > _\*juguþ_ > OE _geoguþ_ ~ _iuguþ_ [@RingeTaylor2014, 141]. The
+derivational input therefore differs from the broader comparative headword
+because the Old English development must begin after early loss of final _-i_.
 
 #### Old English evidence
 
@@ -6927,7 +6927,7 @@ The decisive early step is the loss of final _-i_ before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 _y_-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the derivational input _\*júgunθ_, the later development is regular: palatal
+From _\*júgunθ_, the later development is regular: palatal
 fronting yields _\*jéugunθ_; nasal-spirant lengthening and loss give
 _\*jéogūθ_ [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 _\*jéoguθ_, which surfaces as _ġeoguþ_. Campbell preserves _u_ after accented _u_ in forms such
@@ -6944,7 +6944,7 @@ from the later stages relevant to the Old English noun.
 | :--- | :--- | :--- | :--- |
 | earlier etymological headword | _\*ju(w)unþi-_ | comparative family background | older comparative reconstruction of the lexeme |
 | later g-bearing comparative label | _\*júgunθiz_ | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
-| selected OE-facing input | _\*júgunθ_ | regular output: _ġeoguþ_ | exact match for the chosen Old English form |
+| Old English-facing input | _\*júgunθ_ | regular output: _ġeoguþ_ | exact match for the Old English form used here |
 | full _-i_ stage retained too long | _\*jugunþi_ | expected over-umlauted _y_-type result | negative control showing why early _-i_ loss must precede the OE umlaut stage |
 
 \clearpage
@@ -7038,7 +7038,7 @@ conservative cell used for the entry.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *bánną | regular output: _ban_ | ban | regular nominative outcome, but not the Old English form here |
-| selected genitive singular | *bánnas | regular output: _bannes_ | bannes | direct match for the conservative genitive |
+| genitive singular | *bánnas | regular output: _bannes_ | bannes | direct match for the conservative genitive |
 
 ### berry — OE berġes
 
@@ -7103,7 +7103,7 @@ an Old English paradigm without any hidden gemination repair [@RingeTaylor2014, 
 Campbell cites feminine _berige_ 'berry' and notes that _-j-_ is retained after
 _r_ in this type [@Campbell1959, 250]. The reviewed evidence therefore supports the
 citation form more directly than the exact genitive _berġes_, which is best read
-here as the selected regular genitive comparison form rather than as a
+here as the regular genitive comparison form rather than as a
 dictionary headword.
 
 #### Development to Old English
@@ -7116,12 +7116,12 @@ This points to paradigm choice rather than to an extra phonological rule.
 #### Paradigm comparison
 
 The comparison below sets the relevant forms side by side. It shows the contrast between the citation form
-and the selected genitive singular cell.
+and the genitive singular cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *bázją | regular output: _bere_ | berige / berġe | useful citation-form background, but not the Old English form here |
-| selected genitive singular | *bázjas | regular output: _berġes_ | berġes | exact match for the chosen conservative cell |
+| genitive singular | *bázjas | regular output: _berġes_ | berġes | exact match for the conservative cell |
 
 ### bow — OE bēag
 
@@ -7292,7 +7292,7 @@ _cȳ_ < _\*cūi_, dat.pl. _cūm_ < _\*cūm_, and apparently gen.sg. _cā_ < _\*c
 
 The dictionary headword is therefore _cū_, but _cȳ_ is an established Old
 English paradigm form rather than a convenient reconstruction. It serves as
-datative singular and also as nominative-accusative plural. The genitive
+dative singular and also as nominative-accusative plural. The genitive
 singular is less stable, with _cā_, _cȳ_, _cū(e)_, and _cūs_ all appearing in
 the local source record.
 
@@ -7311,7 +7311,7 @@ _cū_.
 
 A paradigm comparison identifies the Proto-Germanic inflectional cell that
 corresponds to an established Old English paradigm form. The comparison below
-is manual; no full automatic paradigm-generation run is presented here.
+sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7613,7 +7613,7 @@ from the less stable citation tradition.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *xámaraz | regular citation form _hamer_ / _hamor_ | hamor / hamer | good lexical background, but not the Old English form here |
-| selected genitive singular | *xámaras | regular output: _hameres_ | hameres | exact match between input, output, and attested cell |
+| genitive singular | *xámaras | regular output: _hameres_ | hameres | exact match between input, output, and attested cell |
 | later oblique tradition | oblique a-stem forms | _hamores_ type evidence | hamores | attested background variant, but not the chosen comparison form |
 
 ### have — OE hæfeþ
@@ -7713,7 +7713,7 @@ form from the regular 3sg present line.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | _-ja-_ stem of _\*xabēną_ | citation form _habban_ | habban | important headword, but shaped by later leveling |
-| selected 3sg present | *xábēθi | regular output: _hæfeþ_ | hæfeþ | exact match between input, output, and selected finite cell |
+| 3sg present | *xábēθi | regular output: _hæfeþ_ | hæfeþ | exact match between input, output, and finite form compared here |
 | syncopated finite tradition | same present stem | _hæfþ_ type evidence | hæfþ | genuine later OE finite form, but not the normalized target used here |
 
 ### heaven — OE heofon
@@ -7810,7 +7810,7 @@ line from the oblique stem selected for West Saxon _heofon_.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *xémenaz | front-vocalic _hefen_ type outcome | hefen / heofen | useful control, but not the selected West Saxon target |
+| citation nominative singular | *xémenaz | front-vocalic _hefen_ type outcome | hefen / heofen | useful control, but not the West Saxon form used here |
 | selected oblique singular | *xémonų | regular output: _heofon_ | heofon | exact match between input, output, and target |
 | older pre-OE stage | inherited oblique line | earlier _hefzen_ stage | hefzen | historical background for the same West Saxon development |
 
@@ -7904,7 +7904,7 @@ ordinary infinitival and later remodeled lemma lines.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive line | *libēną | OE _libban_ headword tradition | libban | establishes the lexeme, but not the Old English form here |
-| selected 3sg present | *líbēθi | regular output: _lifeþ_; attested _lifed_ | lifed, normalized here as lifeþ | selected archaic finite cell |
+| 3sg present | *líbēθi | regular output: _lifeþ_; attested _lifed_ | lifed, normalized here as lifeþ | selected archaic finite cell |
 | later remodeled present tradition | later class-II-type forms | _lifian_ and related finite remodeling | lifian | genuine OE development, but secondary to the cell compared here |
 
 ### man — OE mannes
@@ -7989,14 +7989,14 @@ English [@SieversBrunner1965, §231].
 #### Paradigm comparison
 
 The comparison below sets the relevant forms side by side. It separates the citation-form line from the
-selected genitive singular.
+genitive singular.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *mannăz | expected citation-form outcome _man_ | mann / monn | establishes the lexeme, but not the Old English form here |
 | accusative singular | *manną | expected _man_ | man | same word-final simplification as the nominative |
 | dative singular | *mannăi | expected _manne_ | manne | preserves medial _nn_, but not the chosen cell |
-| selected genitive singular | *mánnas | regular output: _mannes_ | mannes | exact match between input, output, and attested comparator |
+| genitive singular | *mánnas | regular output: _mannes_ | mannes | exact match between input, output, and attested comparator |
 
 ### meed — OE meorde
 
@@ -8185,7 +8185,7 @@ attested Old English form.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *náxtz | expected non-umlauted outcome _neaht_ | neaht | useful background, but not the selected comparison for _niht_ |
+| citation nominative singular | *náxtz | expected non-umlauted outcome _neaht_ | neaht | useful background, but not the comparison used for _niht_ |
 | selected dative singular | *náxti | regular output: _niht_ | niht | exact match between input, output, and paradigm cell |
 
 ### rest — OE ræste
@@ -8357,7 +8357,7 @@ Subsequent reduction of the ending removes the final _\*i_ and _\*z_, so that th
 
 #### Paradigm comparison
 
-A paradigm comparison identifies the Proto-Germanic inflectional cell that corresponds to an established Old English paradigm form. The comparison below is manual; no full automatic paradigm-generation run is presented here.
+A paradigm comparison identifies the Proto-Germanic inflectional cell that corresponds to an established Old English paradigm form. The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8447,7 +8447,7 @@ below is manual.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *skéubaną | inherited infinitive line _sċēofan_; present system also leveled _scūfan_ | scēofan / scūfan | necessary background, but not the selected comparison for _sċēaf_ |
+| citation infinitive | *skéubaną | inherited infinitive line _sċēofan_; present system also leveled _scūfan_ | scēofan / scūfan | necessary background, but not the comparison used for _sċēaf_ |
 | 1/3 sg. preterite | *skáub | documented regular output: _sċēaf_ | sċēaf | direct match for the singular preterite |
 | preterite plural | *skúbun | later leveled plural _scufon_ beside expected _sċufun_ under the corrected cascade | scufon | poorer comparison for the singular-preterite target |
 | past participle | *skúbanaz | attested participial line _scofen_ | scofen | valid alternative cell, but not the form compared here |
@@ -8597,7 +8597,7 @@ Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
 while comparable medial clusters remain unbroken; his examples include _hrefn_,
 _tacn_, _wépn_, and _botm_ beside forms with parasitic vowels elsewhere in the
-same lexical class [@Campbell1959, 151]. The selected genitive singular _\*θístilas_
+same lexical class [@Campbell1959, 151]. The genitive singular _\*θístilas_
 therefore supplies the conservative comparison form: the cluster is medial and
 the regular development yields _þistles_, while the simplex nominative belongs
 to the broken headword tradition _þistel_.
@@ -8605,12 +8605,12 @@ to the broken headword tradition _þistel_.
 #### Paradigm comparison
 
 The comparison below sets the relevant forms side by side. It shows the contrast between the citation form
-and the selected genitive singular cell.
+and the genitive singular cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | *θéstilaz | computed output: _þistl_ | þistel | useful citation-form background, but not the Old English form here |
-| selected genitive singular | *θístilas | computed output: _þistles_ | þistles | exact match for the chosen conservative cell |
+| genitive singular | *θístilas | computed output: _þistles_ | þistles | exact match for the conservative cell |
 
 ### make (iptv.2sg) — OE maca
 
@@ -8702,8 +8702,8 @@ the Old English form chosen here. The comparison below sets the relevant forms s
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*mákōjaną_ | comparative continuation _macian_ | macian | ordinary headword of the verb, but not the selected finite cell |
-| selected imperative singular | _\*mákô_ | regular output: _maca_ | maca | exact match between input, output, and selected paradigm form |
+| lexeme-level infinitive | _\*mákōjaną_ | comparative continuation _macian_ | macian | ordinary headword of the verb, but not the finite form compared here |
+| imperative singular | _\*mákô_ | regular output: _maca_ | maca | exact match between input, output, and selected paradigm form |
 | present third singular companion | _\*mákōθi_ | comparative companion _macaþ_ | macaþ | useful family control, but not the target of this entry |
 
 ### make (3sg) — OE macaþ
@@ -8781,7 +8781,7 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | _\*makōjaną_ | dictionary headword _macian_ | macian | family background, but not the cell compared here |
-| selected 3sg present | _\*mákōθi_ | regular output _macaþ_ | macaþ | exact match |
+| 3sg present | _\*mákōθi_ | regular output _macaþ_ | macaþ | exact match |
 | imperative singular companion | _\*mákô_ | related finite form _maca_ | maca | useful control, but not the target |
 
 ### bore (iptv.2sg) — OE bora
@@ -8857,7 +8857,7 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | _\*burōjaną_ | dictionary headword _borian_ | borian | family background, but not the cell compared here |
-| selected imperative singular | _\*búrô_ | regular output _bora_ | bora | exact match |
+| imperative singular | _\*búrô_ | regular output _bora_ | bora | exact match |
 | 3sg present companion | _\*búrōθi_ | related finite form _boraþ_ | boraþ | useful control, but not the target |
 
 ### bore (3sg) — OE boraþ
@@ -8935,7 +8935,7 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | _\*burōjaną_ | dictionary headword _borian_ | borian | family background, but not the cell compared here |
-| selected 3sg present | _\*búrōθi_ | regular output _boraþ_ | boraþ | exact match |
+| 3sg present | _\*búrōθi_ | regular output _boraþ_ | boraþ | exact match |
 | imperative singular companion | _\*búrô_ | related finite form _bora_ | bora | useful control, but not the target |
 
 ### learn (iptv.2sg) — OE liorna
@@ -9010,7 +9010,7 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | _\*liznōjaną_ | Northumbrian _liornian_; dictionary headword often _leornian_ | liornian / leornian | family background, but not the cell compared here |
-| selected imperative singular | _\*líznô_ | regular output and Brunner's Northumbrian _liorna_ | liorna | exact match |
+| imperative singular | _\*líznô_ | regular output and Brunner's Northumbrian _liorna_ | liorna | exact match |
 | 3sg present companion | _\*líznōθi_ | related finite form _liornaþ_ | liornaþ | useful control, but not the target |
 
 ### learn (3sg) — OE liornaþ
@@ -9087,7 +9087,7 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | _\*liznōjaną_ | Northumbrian _liornian_; dictionary headword often _leornian_ | liornian / leornian | family background, but not the cell compared here |
-| selected 3sg present | _\*líznōθi_ | regular output _liornaþ_ | liornaþ | exact match |
+| 3sg present | _\*líznōθi_ | regular output _liornaþ_ | liornaþ | exact match |
 | imperative singular companion | _\*líznô_ | regular output and Brunner's Northumbrian _liorna_ | liorna | useful control, but not the target |
 
 ### lick (iptv.2sg) — OE licca
@@ -9158,9 +9158,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*líkkōjaną_ | manual probe output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| selected imperative singular | _\*líkkô_ | manual probe output _licca_ | licca | exact match between the chosen input and the Old English form here |
-| present third singular companion | _\*líkkōθi_ | manual probe output _liccaþ_ | liccaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | _\*líkkōjaną_ | regular output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | _\*líkkô_ | regular output _licca_ | licca | exact match between the derivational input and the Old English form here |
+| present third singular companion | _\*líkkōθi_ | regular output _liccaþ_ | liccaþ | useful family control, but not the target of this entry |
 
 ### lick (3sg) — OE liccaþ
 
@@ -9232,9 +9232,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*líkkōjaną_ | manual probe output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| imperative singular companion | _\*líkkô_ | manual probe output _licca_ | licca | useful family control, but not the target of this entry |
-| selected present third singular | _\*líkkōθi_ | manual probe output _liccaþ_ | liccaþ | exact match between the chosen input and the Old English form here |
+| lexeme-level infinitive | _\*líkkōjaną_ | regular output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | _\*líkkô_ | regular output _licca_ | licca | useful family control, but not the target of this entry |
+| present third singular | _\*líkkōθi_ | regular output _liccaþ_ | liccaþ | exact match between the derivational input and the Old English form here |
 
 ### show (iptv.2sg) — OE sċēawa
 
@@ -9306,9 +9306,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*skáwōjaną_ | manual probe output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| selected imperative singular | _\*skáwô_ | manual probe output _sċēawa_ | scēawa / normalized sċēawa | exact match between the chosen input and the Old English form here |
-| present third singular companion | _\*skáwōθi_ | manual probe output _sċēawaþ_ | sċēawaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | _\*skáwōjaną_ | regular output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | _\*skáwô_ | regular output _sċēawa_ | scēawa / normalized sċēawa | exact match between the derivational input and the Old English form here |
+| present third singular companion | _\*skáwōθi_ | regular output _sċēawaþ_ | sċēawaþ | useful family control, but not the target of this entry |
 
 ### show (3sg) — OE sċēawaþ
 
@@ -9370,7 +9370,7 @@ Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþ
 
 Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _-awað_ finite-cell pattern directly.
 
-The form written here as _sċēawaþ_ is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a selected finite form aligned with the attested _scēaw-_ evidence and the directly cited _-sceawað_ ending pattern.
+The form written here as _sċēawaþ_ is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested _scēaw-_ evidence and the directly cited _-sceawað_ ending pattern.
 
 #### Development to Old English
 
@@ -9382,9 +9382,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*skáwōjaną_ | manual probe output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| imperative singular companion | _\*skáwô_ | manual probe output _sċēawa_ | scēawa | useful family control, but not the target of this entry |
-| selected present third singular | _\*skáwōθi_ | manual probe output _sċēawaþ_ | normalized sċēawaþ; source-side pattern _-sceawað_ | exact match for the cell compared here |
+| lexeme-level infinitive | _\*skáwōjaną_ | regular output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | _\*skáwô_ | regular output _sċēawa_ | scēawa | useful family control, but not the target of this entry |
+| present third singular | _\*skáwōθi_ | regular output _sċēawaþ_ | normalized sċēawaþ; source-side pattern _-sceawað_ | exact match for the finite form compared here |
 
 \clearpage
 
@@ -9764,9 +9764,9 @@ loss of the final high vowel after a heavy syllable yields _fȳr_
 
 _fȳre_ is later than that inherited output. Its final _-e_ belongs to
 analogical restoration in the Old English paradigm rather than to the original
-Proto-Germanic ending. The form therefore remains _known_unmodelled_: the
-deterministic phonology is regular, but the attested surface form includes
-later morphological rebuilding.
+Proto-Germanic ending. The form therefore remains a known but unmodelled
+remodelling: the deterministic phonology is regular, but the attested surface
+form includes later morphological rebuilding.
 
 #### Paradigm comparison
 
@@ -9851,7 +9851,7 @@ target _tæppa_ therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
 inherited input. A related j-verb pathway would give _teppan_, not the noun
-target _tæppa_. The entry accordingly remains _known_unmodelled_.
+target _tæppa_. The entry accordingly remains a known but unmodelled case.
 
 #### Form comparison
 

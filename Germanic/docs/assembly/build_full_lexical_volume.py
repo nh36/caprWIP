@@ -52,7 +52,7 @@ LONG_TRACE_LABELS = {
 
 SECTION_ORDER = [
     ("regular", "Part I. Regular derivations", "Regular derivations"),
-    ("attested_variant", "Part II. Attested variants and selected comparison forms", "Attested variants and selected comparison forms"),
+    ("attested_variant", "Part II. Attested variants and comparison forms", "Attested variants and selected comparison forms"),
     ("early_analogy", "Part III. Early analogy and pre-Old-English input selection", "Early analogy and pre-Old-English input selection"),
     ("late_analogy", "Part IV. Late analogy and paradigm-cell selection", "Late analogy and paradigm-cell selection"),
     ("reconstructed_oe", "Part V. Reconstructed Old English comparators", "Reconstructed Old English comparators"),
@@ -342,27 +342,61 @@ def clean_reader_facing_prose(text: str) -> str:
     cleaned = cleaned.replace("documented output", "derivational result")
     cleaned = cleaned.replace("documented trace", "regular derivation")
     cleaned = cleaned.replace("manual comparison", "paradigm comparison")
+    cleaned = cleaned.replace("manual probe output", "regular output")
     cleaned = cleaned.replace("current cascade", "sound history followed here")
+    cleaned = re.sub(
+        r"The comparison below is manual; no full automatic paradigm-generation run is presented here\.",
+        "The comparison below sets the relevant forms side by side.",
+        cleaned,
+    )
     cleaned = cleaned.replace(
         "The comparison below is manual.",
         "The comparison below sets the relevant forms side by side.",
     )
     cleaned = re.sub(r"\bThe selected input (_(?:\\.|[^_\n])+_) ", r"The form followed here, \1, ", cleaned)
-    cleaned = re.sub(r"\bFrom selected input (_(?:\\.|[^_\n])+_),", r"From \1,", cleaned)
+    cleaned = re.sub(r"\bFrom (?:the )?selected input (_(?:\\.|[^_\n])+_),", r"From \1,", cleaned)
     cleaned = re.sub(
         r"\bWith (_(?:\\.|[^_\n])+_) as the selected input\b",
         r"With \1 as the derivational input",
         cleaned,
     )
+    cleaned = re.sub(r"\bThe selected target here is\b", "The Old English form here is", cleaned)
     cleaned = re.sub(r"\bThe selected target is\b", "The Old English form here is", cleaned)
     cleaned = re.sub(r"\bThe selected target (_(?:\\.|[^_\n])+_) ", r"The Old English form here, \1, ", cleaned)
     cleaned = re.sub(r"\bThe selected form here is\b", "The form compared here is", cleaned)
     cleaned = re.sub(r"\bThe selected form is\b", "The form compared here is", cleaned)
-    cleaned = cleaned.replace("selected input form", "form followed here")
-    cleaned = cleaned.replace("selected input", "derivational input")
-    cleaned = cleaned.replace("selected target", "Old English form here")
-    cleaned = cleaned.replace("selected form", "form compared here")
-    cleaned = cleaned.replace("selected cell", "cell compared here")
+    specific_replacements = [
+        ("selected comparative label", "comparative label"),
+        ("selected comparison form", "comparison form"),
+        ("selected OE-facing input", "Old English-facing input"),
+        ("selected present third singular", "present third singular"),
+        ("selected 3sg present", "3sg present"),
+        ("selected imperative singular", "imperative singular"),
+        ("selected finite form", "finite form compared here"),
+        ("selected finite cell", "finite form compared here"),
+        ("selected regular genitive", "regular genitive"),
+        ("selected genitive singular", "genitive singular"),
+        ("selected attested cell", "attested cell"),
+        ("selected target line", "form used here"),
+        ("selected West Saxon target", "West Saxon form used here"),
+        ("chosen Old English form", "Old English form used here"),
+        ("chosen conservative cell", "conservative cell"),
+        ("chosen input", "derivational input"),
+        ("exact match for the chosen", "exact match for the"),
+        ("not the selected finite cell", "not the finite form compared here"),
+        ("selected comparison for", "comparison used for"),
+    ]
+    for old, new in specific_replacements:
+        cleaned = cleaned.replace(old, new)
+    cleaned = re.sub(r"\bselected input form\b", "form followed here", cleaned)
+    cleaned = re.sub(r"\bselected input\b", "derivational input", cleaned)
+    cleaned = re.sub(r"\bselected target\b", "Old English form here", cleaned)
+    cleaned = re.sub(r"\bselected form\b", "form compared here", cleaned)
+    cleaned = re.sub(r"\bselected cell\b", "cell compared here", cleaned)
+    cleaned = re.sub(r"\bknown_unmodelled\b", "known but unmodelled remodelling", cleaned)
+    cleaned = re.sub(r"\bunexplained_exception\b", "unexplained exception", cleaned)
+    cleaned = cleaned.replace("Old English form here here", "Old English form here")
+    cleaned = cleaned.replace("form compared hereation", "form compared here")
     cleaned = cleaned.replace(" -> ", " > ")
     return cleaned
 

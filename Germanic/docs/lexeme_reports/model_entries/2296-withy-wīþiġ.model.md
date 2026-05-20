@@ -49,18 +49,18 @@ development of `*-ag-` yields `-iġ` [@Campbell1959, §§275, 376].
 Palatalization supplies the final `ġ`, and the full development reaches
 `wīþiġ`.
 
-This derivation is regular for the selected formation. The central claim of the
+This derivation is regular for the form compared here. The central claim of the
 entry is therefore morphological: Old English `wīþiġ` belongs with an
 `*-ag-` derivative, whereas the comparative `*wīþja-` label belongs to a
 different way of presenting the cognate family.
 
 ### Formation comparison
 
-The comparison below is manual. It distinguishes the comparative headword from
+The comparison below sets the relevant formations side by side. It distinguishes the comparative headword from
 the Old English-facing formation that actually yields the attested noun.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of `wīþiġ` |
 | heavy ja-stem analysis | `*wīþja-` type | Campbell/Adamczyk-style heavy ja-stem `-e` / zero outcome | `wīþiġ` | does not account cleanly for the OE suffix |
-| selected `*-ag-` derivative | *wḯθagą | compact-trace output: `wīþiġ` | wīþiġ | exact match between formation and target |
+| `*-ag-` derivative followed here | *wḯθagą | compact-trace output: `wīþiġ` | wīþiġ | exact match between formation and target |

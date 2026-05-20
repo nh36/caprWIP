@@ -41,7 +41,7 @@ Saxon `weorold ~ worold`, Mercian `weoruld`, Northumbrian `woruld`, and Kentish
 set, including the syncopated `world` and later rounded `wurold`
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
-The selected target here is the West Saxon form `weorold`. It is an attested Old
+The Old English form used here is the West Saxon form `weorold`. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
 ever shows.
 
@@ -55,18 +55,18 @@ back mutation yields `*wéor-oldu`; final high-vowel apocope then gives
 
 This sequence matches the comparative background in Ringe and Taylor's
 `*weraldiz > *weraldu > *weruld` chain while preserving the `*wir-` notation of
-the selected comparative label [@RingeTaylor2014, 341]. The modeled Old English form
+the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 
 ### Stage comparison
 
-The comparison below is manual. It separates the comparative headword from the
+The comparison below sets the relevant forms side by side. It separates the comparative headword from the
 OE-facing stage chosen for the derivation.
 
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | `*wíra-àldiz` | citation reconstruction / lexeme label | preserves the older `*wir-` tradition of the compound |
 | literature-stage lowered compound after early stem-class shift | `*weraldiz > *weraldu > *weruld` | Ringe-Taylor background chain to OE `weorold ~ worold` | explains the older comparative literature cited for the word |
-| selected OE-facing input | `*wír-àldu` | compact-trace output: `weorold` | exact match for the selected West Saxon target |
-| broader OE variant cluster | — | `worold`, `weoruld`, `woruld`, `wiarald`, `world` | real attested comparanda that remain outside the selected target line |
+| Old English-facing input | `*wír-àldu` | compact-trace output: `weorold` | exact match for the West Saxon form used here |
+| broader OE variant cluster | — | `worold`, `weoruld`, `woruld`, `wiarald`, `world` | real attested comparanda that remain outside that West Saxon line |
