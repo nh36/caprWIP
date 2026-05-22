@@ -22,8 +22,10 @@ ENGLISH_PROTO_TO_OE_RE = re.compile(
     re.DOTALL,
 )
 
-POST_CASCADE_RULES = [
-    "OEEpentheticVowel",
+POST_EPENTHESIS_RULES = [
+    # OEEpentheticVowel is applied in VariantOldEnglishAfterEpenthesis, so this
+    # list mirrors only the rules that follow OldEnglishAfterEpenthesis in the
+    # live OldEnglishRules definition.
     "OELateUnstressedAgSuffix",
     "OECjCleanup",
     "OEXsMerge",
@@ -75,6 +77,7 @@ def repo_paths() -> Dict[str, Path]:
         "aligned_tsv": germanic_dir / "data" / "germanic-aligned-final.tsv",
         "live_bin": live_bin,
         "baseline_tsv": summaries_dir / "order_sensitivity_baseline_01.tsv",
+        "identity_tsv": summaries_dir / "order_sensitivity_identity_variant_02.tsv",
         "adjacent_tsv": summaries_dir / "order_sensitivity_adjacent_pilot_01.tsv",
         "adjacent_changes_tsv": summaries_dir / "order_sensitivity_adjacent_pilot_01_changes.tsv",
     }
@@ -83,7 +86,7 @@ def repo_paths() -> Dict[str, Path]:
 def parse_args() -> argparse.Namespace:
     defaults = repo_paths()
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", required=True, choices=("baseline", "adjacent-pilot"))
+    parser.add_argument("--mode", required=True, choices=("baseline", "identity-variant", "adjacent-pilot"))
     parser.add_argument("--change", help="Target change_id for adjacent-pilot mode (e.g. SC043)")
     parser.add_argument("--inventory", default=str(defaults["inventory"]))
     parser.add_argument("--germanic", default=str(defaults["germanic_txt"]))
@@ -91,6 +94,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--tsv", default=str(defaults["aligned_tsv"]))
     parser.add_argument("--bin", default=str(defaults["live_bin"]))
     parser.add_argument("--baseline-output", default=str(defaults["baseline_tsv"]))
+    parser.add_argument("--identity-output", default=str(defaults["identity_tsv"]))
     parser.add_argument("--summary-output", default=str(defaults["adjacent_tsv"]))
     parser.add_argument("--changes-output", default=str(defaults["adjacent_changes_tsv"]))
     args = parser.parse_args()
@@ -226,7 +230,7 @@ def write_baseline_tsv(results: Sequence[Dict[str, object]], output_path: Path) 
         "notes",
     ]
     with output_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t")
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         for row in results:
             writer.writerow(
@@ -239,6 +243,14 @@ def write_baseline_tsv(results: Sequence[Dict[str, object]], output_path: Path) 
                     "notes": row["notes"],
                 }
             )
+
+
+def write_tsv(fieldnames: Sequence[str], rows: Sequence[Dict[str, str]], output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def build_variant_appendix(order: Sequence[str]) -> str:
@@ -264,7 +276,7 @@ def build_variant_appendix(order: Sequence[str]) -> str:
             "define VariantOldEnglishRules VariantOldEnglishAfterEpenthesis",
         ]
     )
-    for rule in POST_CASCADE_RULES:
+    for rule in POST_EPENTHESIS_RULES:
         lines.append(f"    .o. {rule}")
     lines.extend(
         [
@@ -351,7 +363,8 @@ def unique_preview(rows: Iterable[Dict[str, object]], field: str, limit: int = 5
 def upsert_tsv(
     output_path: Path,
     fieldnames: Sequence[str],
-    key_fields: Sequence[str],
+    scope_fields: Sequence[str],
+    scope_values: Sequence[Tuple[str, ...]],
     new_rows: Sequence[Dict[str, str]],
 ) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -360,14 +373,11 @@ def upsert_tsv(
         with output_path.open(encoding="utf-8", newline="") as handle:
             reader = csv.DictReader(handle, delimiter="\t")
             existing.extend(reader)
-    new_keys = {tuple(row[field] for field in key_fields) for row in new_rows}
-    merged = [row for row in existing if tuple(row[field] for field in key_fields) not in new_keys]
+    scope_set = set(scope_values)
+    merged = [row for row in existing if tuple(row[field] for field in scope_fields) not in scope_set]
     merged.extend(new_rows)
-    merged.sort(key=lambda row: tuple(row[field] for field in key_fields))
-    with output_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t")
-        writer.writeheader()
-        writer.writerows(merged)
+    merged.sort(key=lambda row: tuple(row.get(field, "") for field in fieldnames))
+    write_tsv(fieldnames, merged, output_path)
 
 
 def status_change_label(baseline_match: bool, variant_match: bool, baseline_output: str, variant_output: str) -> str:
@@ -492,7 +502,7 @@ def run_adjacent_pilot(
                 "no_output_count": str(variant_stats["no_output_rows"]),
                 "representative_changed_lexemes": unique_preview(changed_rows, "lexical_item"),
                 "representative_new_failures": unique_preview(newly_failing, "lexical_item"),
-                "notes": "; ".join(notes),
+                "notes": "; ".join(notes) if notes else "-",
             }
         )
         detail_rows.extend(
@@ -538,9 +548,87 @@ def run_adjacent_pilot(
         "status_change",
         "likely_break_stage_or_note",
     ]
-    upsert_tsv(summary_output, summary_fieldnames, ("variant_id",), summary_rows)
-    upsert_tsv(changes_output, detail_fieldnames, ("variant_id", "lexical_item", "protoform"), detail_rows)
+    variant_scopes = [(row["variant_id"],) for row in summary_rows]
+    upsert_tsv(summary_output, summary_fieldnames, ("variant_id",), variant_scopes, summary_rows)
+    upsert_tsv(changes_output, detail_fieldnames, ("variant_id",), variant_scopes, detail_rows)
     return summary_rows
+
+
+def identity_status_note(live_row: Dict[str, object], variant_row: Dict[str, object]) -> str:
+    if live_row["outputs_text"] == variant_row["outputs_text"]:
+        return "identical"
+    if live_row["matches_expected"] == variant_row["matches_expected"]:
+        return "output_diff_same_match_state"
+    return "output_diff_changes_match_state"
+
+
+def run_identity_variant(
+    live_order: Sequence[str],
+    rows: Sequence[Dict[str, str]],
+    baseline_results: Sequence[Dict[str, object]],
+    output_path: Path,
+    germanic_path: Path,
+    sandbox_path: Path,
+) -> Dict[str, int | str]:
+    compilation_status, variant_bin, compile_note = compile_variant(
+        germanic_path=germanic_path,
+        sandbox_path=sandbox_path,
+        variant_id="identity_variant_02",
+        order=live_order,
+    )
+    if compilation_status != "compiled" or variant_bin is None:
+        raise RuntimeError(compile_note or "identity variant did not compile")
+    try:
+        variant_results = evaluate_rows(rows, variant_bin)
+    finally:
+        cleanup_retained_bins(variant_bin)
+    baseline_map = {result_key(row): row for row in baseline_results}
+    identity_rows: List[Dict[str, str]] = []
+    identical_rows = 0
+    differing_rows = 0
+    identity_matches = 0
+    for variant_row in variant_results:
+        baseline_row = baseline_map[result_key(variant_row)]
+        identical = baseline_row["outputs_text"] == variant_row["outputs_text"]
+        if identical:
+            identical_rows += 1
+        else:
+            differing_rows += 1
+        if variant_row["matches_expected"]:
+            identity_matches += 1
+        identity_rows.append(
+            {
+                "lexical_item": str(variant_row["lexical_item"]),
+                "protoform": str(variant_row["protoform"]),
+                "expected_counterpart": str(variant_row["expected_counterpart"]),
+                "live_output": str(baseline_row["outputs_text"]),
+                "identity_variant_output": str(variant_row["outputs_text"]),
+                "live_matches_expected": "yes" if baseline_row["matches_expected"] else "no",
+                "identity_variant_matches_expected": "yes" if variant_row["matches_expected"] else "no",
+                "output_identical": "yes" if identical else "no",
+                "status_note": identity_status_note(baseline_row, variant_row),
+            }
+        )
+    fieldnames = [
+        "lexical_item",
+        "protoform",
+        "expected_counterpart",
+        "live_output",
+        "identity_variant_output",
+        "live_matches_expected",
+        "identity_variant_matches_expected",
+        "output_identical",
+        "status_note",
+    ]
+    write_tsv(fieldnames, identity_rows, output_path)
+    return {
+        "total_rows_tested": len(identity_rows),
+        "output_identical_rows": identical_rows,
+        "differing_rows": differing_rows,
+        "live_matches": sum(1 for row in baseline_results if row["matches_expected"]),
+        "identity_matches": identity_matches,
+        "output_path": str(output_path),
+    }
 
 
 def main() -> None:
@@ -551,6 +639,7 @@ def main() -> None:
     tsv_path = Path(args.tsv).expanduser().resolve()
     bin_path = Path(args.bin).expanduser().resolve()
     baseline_output = Path(args.baseline_output).expanduser().resolve()
+    identity_output = Path(args.identity_output).expanduser().resolve()
     summary_output = Path(args.summary_output).expanduser().resolve()
     changes_output = Path(args.changes_output).expanduser().resolve()
 
@@ -572,6 +661,28 @@ def main() -> None:
             f"multi_output={baseline_stats['multi_output_rows']} "
             f"output={baseline_output}"
         )
+        return
+
+    if args.mode == "identity-variant":
+        identity_stats = run_identity_variant(
+            live_order=live_order,
+            rows=rows,
+            baseline_results=baseline_results,
+            output_path=identity_output,
+            germanic_path=germanic_path,
+            sandbox_path=sandbox_path,
+        )
+        print(
+            "identity_variant "
+            f"rows={identity_stats['total_rows_tested']} "
+            f"identical={identity_stats['output_identical_rows']} "
+            f"differing={identity_stats['differing_rows']} "
+            f"live_matches={identity_stats['live_matches']} "
+            f"identity_matches={identity_stats['identity_matches']} "
+            f"output={identity_stats['output_path']}"
+        )
+        if identity_stats["differing_rows"]:
+            raise SystemExit(1)
         return
 
     change = inventory_by_id[args.change]

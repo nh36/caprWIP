@@ -2,7 +2,7 @@ variant_id	change_id	movement	swapped_with_change_id	swapped_with_display_name	s
 SC043_earlier_adjacent	SC043	earlier	SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	rest	*rástōz	ræste	ræste	rasta	yes	no	newly_failing	Adjacent swap with PWGmcSurvivingBimoricOUnrounding changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	beard	*bárdaz	beard	beard	beard | bēard	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	belly	*bálgiz	bielġ	bielġ	bielġ | bēalġ	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
-SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	calf	*kálbaz	ċealf	ċealf	ċēalf | ċealf	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	calf	*kálbaz	ċealf	ċealf	ċealf | ċēalf	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	fall	*fállaną	feallan	feallan	feallan | fēallan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	fern	*fárnaz	fearn	fearn	fearn | fēarn	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	flax	*fláxsą	fleax	fleax	fleax | flēax	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
@@ -13,8 +13,8 @@ SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	harm	*xármaz	hear
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	harvest	*xárbistuz	hierfest	hierfest	hierfest | hēarfest	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	hold	*xáldaną	healdan	healdan	healdan | hēaldan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	laugh	*xláxjaną	hliehhan	hliehhan	hliehhan | hlēahhan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
-SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	malt	*máltaz	mealt	mealt	mēalt | mealt	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
-SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	march	*márkō	mearc	mearc	mēarc | mearc	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	malt	*máltaz	mealt	mealt	mealt | mēalt	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	march	*márkō	mearc	mearc	mearc | mēarc	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	might	*máxtiz	miht	miht	miht | mēaht	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	night	*náxti	niht	niht	niht | nēaht	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
 SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	salt	*sáltą	sealt	sealt	sealt | sēalt	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.

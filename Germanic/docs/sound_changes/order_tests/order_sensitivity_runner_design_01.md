@@ -66,6 +66,29 @@ The variant compile flow is:
 
 The live FST sources are never edited.
 
+## Validation and pipeline mirroring
+
+Validation 02 adds an identity-variant check before trusting any reordered variant.
+
+The identity-variant flow:
+
+1. parse the live `EnglishProtoToOE` order with no swaps
+2. build a temporary variant transducer from that unchanged order
+3. compile the variant
+4. run the same 380-row Old English corpus through both the live baseline and the temporary identity variant
+5. compare outputs row by row in `order_sensitivity_identity_variant_02.tsv`
+
+This test exists because the variant pipeline must mirror the live `OldEnglishReflexes` stack exactly before any adjacent-swap results can be trusted.
+
+The live stack being mirrored is:
+
+- `OldEnglishCore = EnglishProtoInput .o. PGmcConsonantRules .o. EnglishProtoToOE`
+- `OldEnglishAfterEpenthesis = OldEnglishCore .o. OEEpentheticVowel`
+- `OldEnglishRules = OldEnglishAfterEpenthesis .o. OELateUnstressedAgSuffix .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEGlideUToEO .o. OldEnglishRemoveStars`
+- `OldEnglishReflexes = OldEnglishRules .o. OldEnglishSurface`
+
+`OEEpentheticVowel` is therefore handled separately and applied exactly once in the variant builder. The post-epenthesis rule list contains only the rules that follow `OldEnglishAfterEpenthesis` in the live cascade.
+
 ## Compiled-bin handling
 
 Variant bins are compiled in a temporary directory and briefly copied to `.tmp_order_sensitivity/` only so the runner can evaluate them after the compile step returns. The runner deletes those retained bins during cleanup. The intended committed outputs are the TSV summaries and prose notes only.
@@ -93,10 +116,22 @@ Implemented outputs:
 These cover:
 
 - the baseline live transducer
+- the identity variant with unchanged live order
 - one-step earlier swap
 - one-step later swap
 
 for `SC043` and `SC063`.
+
+## Reordering limits in scaffold 01 / validation 02
+
+The current runner only parses and reorders the explicit `EnglishProtoToOE` composition chain.
+
+That is suitable for `SC043` and `SC063`, because both appear as individually named stages inside that chain. It does **not** yet support moving rules inside bundled stages such as:
+
+- `PGmcConsonantRules`
+- `PWGmcChanges`
+
+unless those bundles are explicitly expanded in the variant-generation method.
 
 ## What remains for the full runner
 
@@ -104,6 +139,7 @@ Still out of scope for scaffold 01:
 
 - progressive earliest/latest window testing for each target change
 - all-rule batch execution across the full active inventory
+- reordering inside bundled stages such as `PGmcConsonantRules` or `PWGmcChanges`
 - stronger classification of failures into historical-order evidence vs implementation dependency
 - automatic prose generation from the TSV outputs
 - wider safeguards around technical-marker stages and non-historical neighbors

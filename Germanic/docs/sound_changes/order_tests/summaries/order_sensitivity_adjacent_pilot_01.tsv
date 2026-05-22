@@ -1,5 +1,5 @@
 variant_id	change_id	display_name	movement	swapped_with_change_id	swapped_with_display_name	compilation_status	total_rows_tested	baseline_matches	variant_matches	changed_output_count	newly_failing_count	newly_passing_count	no_output_count	representative_changed_lexemes	representative_new_failures	notes
-SC043_earlier_adjacent	SC043	Anglo Frisian Brightening	earlier	SC042	PWGmc Surviving Bimoric O Unrounding	compiled	380	373	372	1	1	0	0	rest	rest	
-SC043_later_adjacent	SC043	Anglo Frisian Brightening	later	SC044	OE Breaking	compiled	380	373	372	29	1	0	0	beard; belly; calf; fall; fern	slay	
+SC043_earlier_adjacent	SC043	Anglo Frisian Brightening	earlier	SC042	PWGmc Surviving Bimoric O Unrounding	compiled	380	373	372	1	1	0	0	rest	rest	-
+SC043_later_adjacent	SC043	Anglo Frisian Brightening	later	SC044	OE Breaking	compiled	380	373	372	29	1	0	0	beard; belly; calf; fall; fern	slay	-
 SC063_earlier_adjacent	SC063	OE High Vowel Apocope	earlier	SC062	OE Weight Markers	compiled	380	373	373	0	0	0	0			swapped across non-historical neighbor SC062
-SC063_later_adjacent	SC063	OE High Vowel Apocope	later	SC064	NWGmc In Stem N Loss	compiled	380	373	373	0	0	0	0			
+SC063_later_adjacent	SC063	OE High Vowel Apocope	later	SC064	NWGmc In Stem N Loss	compiled	380	373	373	0	0	0	0			-
