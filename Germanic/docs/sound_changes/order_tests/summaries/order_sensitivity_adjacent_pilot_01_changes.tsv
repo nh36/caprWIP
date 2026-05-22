@@ -1,0 +1,31 @@
+variant_id	change_id	movement	swapped_with_change_id	swapped_with_display_name	swapped_with_rule_name	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	baseline_matches_expected	variant_matches_expected	status_change	likely_break_stage_or_note
+SC043_earlier_adjacent	SC043	earlier	SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	rest	*rástōz	ræste	ræste	rasta	yes	no	newly_failing	Adjacent swap with PWGmcSurvivingBimoricOUnrounding changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	beard	*bárdaz	beard	beard	beard | bēard	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	belly	*bálgiz	bielġ	bielġ	bielġ | bēalġ	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	calf	*kálbaz	ċealf	ċealf	ċēalf | ċealf	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	fall	*fállaną	feallan	feallan	feallan | fēallan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	fern	*fárnaz	fearn	fearn	fearn | fēarn	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	flax	*fláxsą	fleax	fleax	fleax | flēax	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	fold	*fálθaną	fealdan	fealdan	fealdan | fēaldan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	gall	*gállô	ġealla	ġealla	ġealla | ġēalla	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	hall	*xállō	heall	heall	heall | hēall	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	harm	*xármaz	hearm	hearm	hearm | hēarm	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	harvest	*xárbistuz	hierfest	hierfest	hierfest | hēarfest	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	hold	*xáldaną	healdan	healdan	healdan | hēaldan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	laugh	*xláxjaną	hliehhan	hliehhan	hliehhan | hlēahhan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	malt	*máltaz	mealt	mealt	mēalt | mealt	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	march	*márkō	mearc	mearc	mēarc | mearc	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	might	*máxtiz	miht	miht	miht | mēaht	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	night	*náxti	niht	niht	niht | nēaht	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	salt	*sáltą	sealt	sealt	sealt | sēalt	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	salve	*sálbō	sealf	sealf	sealf | sēalf	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	slay	*sláxaną	slēan	slēan	sleaan | slēaan	yes	no	newly_failing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	spar	*spárrô	spearra	spearra	spearra | spēarra	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	swallow	*swálwōn	swealwe	swealwe	swealwe | swēalwe	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	warp	*wárpą	wearp	wearp	wearp | wēarp	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	wart	*wártōn	wearte	wearte	wearte | wēarte	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	wax	*wáxsaną	weaxan	weaxan	weaxan | wēaxan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	wax	*wáxsą	weax	weax	weax | wēax	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	wield	*wáldaną	wealdan	wealdan	wealdan | wēaldan	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	wold	*wálθuz	weald	weald	weald | wēald	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
+SC043_later_adjacent	SC043	later	SC044	OE Breaking	OEBreaking	yarn	*gárną	ġearn	ġearn	ġearn | ġēarn	yes	yes	changed_still_passing	Adjacent swap with OEBreaking changed the output.
