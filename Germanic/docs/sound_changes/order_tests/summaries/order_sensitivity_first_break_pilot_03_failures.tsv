@@ -1,0 +1,23 @@
+variant_id	change_id	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	failure_type	note
+SC043_earlier_order_42	SC043	earlier	42	SC042	PWGmc Surviving Bimoric O Unrounding	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	rest	*rástōz	ræste	ræste	rasta	newly_failing	Crossing PWGmcSurvivingBimoricOUnrounding changed the output.
+SC043_later_order_44	SC043	later	44	SC044	OE Breaking	OEBreaking	historical_sound_change	slay	*sláxaną	slēan	slēan	sleaan | slēaan	newly_failing	Crossing OEBreaking changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	belly	*bálgiz	bielġ	bielġ	bealġ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	birth	*búrdiz	byrd	byrd	burd	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	breeches	*brōkiz	brēċ	brēċ	brōċ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	bride	*brūdiz	brȳd	brȳd	brūd	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	cow	*kūi	cȳ	cȳ	cū	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	deal	*dáiliz	dǣl	dǣl	dāl	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	drench	*dránkiz	drenċ	drenċ	dranċ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	fist	*fúnxstiz	fȳst	fȳst	fūst	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	flesh	*fláiskiz	flǣsċ	flǣsċ	flāsċ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	gift	*géftiz	ġift	ġift	ġieft	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	guest	*gástiz	ġiest	ġiest	ġeast	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	heath	*xáiθiz	hǣþ	hǣþ	hāþ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	might	*máxtiz	miht	miht	meaht	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	need	*náudiz	nīed	nīed	nēad	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	night	*náxti	niht	niht	neaht	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	sea	*sáiwiz	sǣ	sǣ	sā	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	sheath	*skáiθiz	sċēaþ	sċēaþ	sċāþ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	string	*strángiz	strenġ	strenġ	stranġ	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_earlier_order_55	SC063	earlier	55	SC055	OE I Umlaut	OEIUmlaut	historical_sound_change	worm	*wúrmiz	wyrm	wyrm	wurm	newly_failing	Crossing OEIUmlaut changed the output.
+SC063_later_order_72	SC063	later	72	SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	historical_sound_change	fright	*fúrxtīnaz	fyrhte	fyrhte	fyrht	newly_failing	Crossing OEUnstressedLongVowelShortening changed the output.

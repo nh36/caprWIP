@@ -15,7 +15,7 @@ Validation 02 remains the prerequisite state for this refactor:
 - adjacent pilots remained stable
 - `SC043` still breaks immediately one step earlier (`rest`) and one step later (`slay`)
 
-During this refactor, a pre-refactor Copilot run also left local WIP first-break TSVs, including completed-looking `SC063` rows. Those files were preserved rather than discarded, but the intended post-refactor workflow is to rerun the longer `SC063` directions from a normal terminal before treating those outputs as commit-ready.
+During this refactor, a pre-refactor Copilot run also left local WIP first-break TSVs, including completed-looking `SC063` rows. Those files were preserved rather than discarded, and the refactored terminal reruns were then completed outside Copilot before the pilot-03 outputs were treated as commit-ready.
 
 ## Refactor
 
@@ -93,7 +93,6 @@ Any future dynamic or memoized engine must still pass identity validation agains
 
 ## Recommended next action
 
-1. Run `validate-batch` once from the backend container.
-2. Run `SC043` first-break as a quick sanity check if desired.
-3. Run `SC063` earlier and later from a normal terminal with `--resume`.
-4. Commit the pilot-03 TSV outputs only after the terminal run completes cleanly under the refactored runner.
+1. Commit the completed pilot-03 TSV outputs and the updated chronology summary files.
+2. Use the refactored terminal workflow for the next batch of non-bundled reader-facing rules.
+3. Keep identity validation and batch validation as prerequisites for any future execution-engine optimization.
