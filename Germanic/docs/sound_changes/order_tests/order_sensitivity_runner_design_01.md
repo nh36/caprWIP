@@ -143,3 +143,65 @@ Still out of scope for scaffold 01:
 - stronger classification of failures into historical-order evidence vs implementation dependency
 - automatic prose generation from the TSV outputs
 - wider safeguards around technical-marker stages and non-historical neighbors
+
+## Execution refactor 03
+
+The runner now has a cheaper execution path for repeated variant testing.
+
+### Batch evaluation
+
+The baseline and variant evaluators now support batched `flookup` execution: the runner sends the whole Old English corpus through one `flookup` subprocess per compiled transducer instead of spawning a fresh subprocess for every lexical row.
+
+The batch path preserves the existing semantics:
+
+- deduplicated outputs stay deduplicated
+- multi-output rows remain multi-output rows
+- no-output rows still serialize as `+?`
+- expected-match status is still a simple inclusion test against the deduplicated output set
+
+Validation command:
+
+```bash
+docker compose exec -T backend sh -lc 'cd /usr/app && python3 tools/sound_change_order_sensitivity.py --mode validate-batch'
+```
+
+This must pass before batched evaluation is trusted for longer first-break runs.
+
+### Resumable first-break mode
+
+First-break mode is now directional and resumable:
+
+```bash
+docker compose exec -T backend sh -lc 'cd /usr/app && python3 tools/sound_change_order_sensitivity.py --mode first-break --change SC043 --direction both --resume'
+docker compose exec -T backend sh -lc 'cd /usr/app && python3 tools/sound_change_order_sensitivity.py --mode first-break --change SC063 --direction earlier --resume'
+docker compose exec -T backend sh -lc 'cd /usr/app && python3 tools/sound_change_order_sensitivity.py --mode first-break --change SC063 --direction later --resume'
+```
+
+The runner:
+
+1. tests one adjacent move at a time in the requested direction
+2. writes per-variant changed rows and failure rows immediately after each tested variant
+3. updates the summary TSV with an `in_progress` resume marker after every safe step
+4. stops as soon as it finds the first real break, a compile failure, or a hard boundary
+
+`--resume` reads the existing summary row for that `change_id` and direction, reconstructs the already-safe position, and skips directions already marked complete.
+
+### First-break semantics
+
+The stopping condition is still a **real break**, not merely any changed output:
+
+- baseline row matches expected = `yes`
+- variant row matches expected = `no`
+
+Changed outputs that still include the expected form are still recorded in the changes TSV, but they do not stop the crawl.
+
+### External-terminal usage
+
+Longer crawls should be run from an ordinary terminal, not through a live Copilot session, because the shell command can finish successfully even when the agent-side output retrieval times out.
+
+The intended operator pattern is:
+
+1. validate batch mode once
+2. run a quick SC043 sanity check if desired
+3. run SC063 earlier and later separately with `--resume`
+4. inspect the TSV outputs after the terminal run finishes cleanly

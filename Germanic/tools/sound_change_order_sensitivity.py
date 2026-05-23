@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Baseline and adjacent-swap order-sensitivity pilot for Old English."""
+"""Order-sensitivity runner for Old English baseline, validation, and pilot modes."""
 
 from __future__ import annotations
 
@@ -21,6 +21,16 @@ ENGLISH_PROTO_TO_OE_RE = re.compile(
     r"define EnglishProtoToOE \((.*?)\);\s*define EnglishProtoInput",
     re.DOTALL,
 )
+RESUME_STEPS_RE = re.compile(r"resume_steps=(\d+)")
+LAST_SAFE_ORDER_RE = re.compile(r"last_safe_order=(\d+)")
+
+FIRST_BREAK_DONE_RESULTS = {
+    "first_break_found",
+    "no_break_before_boundary",
+    "compile_failure",
+    "blocked_by_runner_limitation",
+    "ambiguous_needs_review",
+}
 
 POST_EPENTHESIS_RULES = [
     # OEEpentheticVowel is applied in VariantOldEnglishAfterEpenthesis, so this
@@ -80,14 +90,23 @@ def repo_paths() -> Dict[str, Path]:
         "identity_tsv": summaries_dir / "order_sensitivity_identity_variant_02.tsv",
         "adjacent_tsv": summaries_dir / "order_sensitivity_adjacent_pilot_01.tsv",
         "adjacent_changes_tsv": summaries_dir / "order_sensitivity_adjacent_pilot_01_changes.tsv",
+        "first_break_tsv": summaries_dir / "order_sensitivity_first_break_pilot_03.tsv",
+        "first_break_changes_tsv": summaries_dir / "order_sensitivity_first_break_pilot_03_changes.tsv",
+        "first_break_failures_tsv": summaries_dir / "order_sensitivity_first_break_pilot_03_failures.tsv",
     }
 
 
 def parse_args() -> argparse.Namespace:
     defaults = repo_paths()
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", required=True, choices=("baseline", "identity-variant", "adjacent-pilot"))
-    parser.add_argument("--change", help="Target change_id for adjacent-pilot mode (e.g. SC043)")
+    parser.add_argument(
+        "--mode",
+        required=True,
+        choices=("baseline", "identity-variant", "adjacent-pilot", "first-break", "validate-batch"),
+    )
+    parser.add_argument("--change", help="Target change_id for adjacent-pilot or first-break mode (e.g. SC043)")
+    parser.add_argument("--direction", choices=("earlier", "later", "both"), default="both")
+    parser.add_argument("--resume", action="store_true")
     parser.add_argument("--inventory", default=str(defaults["inventory"]))
     parser.add_argument("--germanic", default=str(defaults["germanic_txt"]))
     parser.add_argument("--sandbox", default=str(defaults["sandbox_txt"]))
@@ -97,9 +116,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--identity-output", default=str(defaults["identity_tsv"]))
     parser.add_argument("--summary-output", default=str(defaults["adjacent_tsv"]))
     parser.add_argument("--changes-output", default=str(defaults["adjacent_changes_tsv"]))
+    parser.add_argument("--first-break-output", default=str(defaults["first_break_tsv"]))
+    parser.add_argument("--first-break-changes-output", default=str(defaults["first_break_changes_tsv"]))
+    parser.add_argument("--first-break-failures-output", default=str(defaults["first_break_failures_tsv"]))
     args = parser.parse_args()
-    if args.mode == "adjacent-pilot" and not args.change:
-        parser.error("--change is required for --mode adjacent-pilot")
+    if args.mode in {"adjacent-pilot", "first-break"} and not args.change:
+        parser.error("--change is required for --mode adjacent-pilot and --mode first-break")
     return args
 
 
@@ -132,6 +154,23 @@ def load_inventory(path: Path) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]
             ordered.append(info)
     ordered.sort(key=lambda item: item.current_order)
     return by_id, ordered
+
+
+def inventory_rule_lookup(ordered: Sequence[ChangeInfo]) -> Dict[str, NeighborInfo]:
+    return {
+        item.rule_name: NeighborInfo(
+            item.change_id,
+            item.display_name,
+            item.current_order,
+            item.rule_name,
+            item.entry_type,
+        )
+        for item in ordered
+    }
+
+
+def placeholder_neighbor(rule_name: str, fallback_order: int) -> NeighborInfo:
+    return NeighborInfo("", rule_name, fallback_order, rule_name, "blocked_by_runner_limitation")
 
 
 def neighbors_for_change(change_id: str, ordered: Sequence[ChangeInfo]) -> Tuple[NeighborInfo | None, NeighborInfo | None]:
@@ -189,24 +228,52 @@ def baseline_note(outputs: Sequence[str], expected: str) -> str:
     return "single_output_mismatch"
 
 
+def evaluate_rows_rowwise(rows: Sequence[Dict[str, str]], bin_path: Path) -> List[Dict[str, object]]:
+    return [
+        build_evaluated_row(row, apply_down(bin_path, row["proto_norm"]))
+        for row in rows
+    ]
+
+
+def evaluate_rows_batch(rows: Sequence[Dict[str, str]], bin_path: Path) -> List[Dict[str, object]]:
+    outputs_by_row = batch_apply_down(bin_path, [row["proto_norm"] for row in rows])
+    return [
+        build_evaluated_row(row, outputs)
+        for row, outputs in zip(rows, outputs_by_row)
+    ]
+
+
 def evaluate_rows(rows: Sequence[Dict[str, str]], bin_path: Path) -> List[Dict[str, object]]:
-    evaluated: List[Dict[str, object]] = []
-    for row in rows:
-        outputs = apply_down(bin_path, row["proto_norm"])
-        expected = row["counterpart"]
-        evaluated.append(
+    return evaluate_rows_batch(rows, bin_path)
+
+
+def validate_batch_outputs(rows: Sequence[Dict[str, str]], bin_path: Path) -> Dict[str, object]:
+    rowwise_results = evaluate_rows_rowwise(rows, bin_path)
+    batch_results = evaluate_rows_batch(rows, bin_path)
+    mismatches: List[Dict[str, str]] = []
+    for rowwise_row, batch_row in zip(rowwise_results, batch_results):
+        if (
+            rowwise_row["outputs_text"] == batch_row["outputs_text"]
+            and rowwise_row["matches_expected"] == batch_row["matches_expected"]
+            and rowwise_row["notes"] == batch_row["notes"]
+        ):
+            continue
+        mismatches.append(
             {
-                "lexical_item": row["concept"],
-                "protoform": row["proto"],
-                "proto_norm": row["proto_norm"],
-                "expected_counterpart": expected,
-                "outputs": outputs,
-                "outputs_text": format_outputs(outputs),
-                "matches_expected": outputs_match_expected(outputs, expected),
-                "notes": baseline_note(outputs, expected),
+                "lexical_item": str(rowwise_row["lexical_item"]),
+                "protoform": str(rowwise_row["protoform"]),
+                "rowwise_output": str(rowwise_row["outputs_text"]),
+                "batch_output": str(batch_row["outputs_text"]),
+                "rowwise_matches_expected": "yes" if rowwise_row["matches_expected"] else "no",
+                "batch_matches_expected": "yes" if batch_row["matches_expected"] else "no",
             }
         )
-    return evaluated
+    return {
+        "rows": len(rows),
+        "matching_rows": len(rows) - len(mismatches),
+        "differing_rows": len(mismatches),
+        "mismatches": mismatches,
+    }
 
 
 def summarize_evaluation(results: Sequence[Dict[str, object]]) -> Dict[str, int]:
@@ -250,7 +317,88 @@ def write_tsv(fieldnames: Sequence[str], rows: Sequence[Dict[str, str]], output_
     with output_path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(
+            {
+                field: str(row.get(field, ""))
+                for field in fieldnames
+            }
+            for row in rows
+        )
+
+
+def read_tsv_rows(path: Path) -> List[Dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def dedupe_preserving_order(items: Iterable[str]) -> List[str]:
+    seen = set()
+    deduped: List[str] = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        deduped.append(item)
+    return deduped
+
+
+def batch_apply_down(bin_path: Path, forms: Sequence[str]) -> List[List[str]]:
+    markers = [f"__ORDER_SENS_BOUNDARY_{index:04d}__" for index in range(len(forms))]
+    if any(form in markers for form in forms):
+        raise RuntimeError("Input forms unexpectedly collide with batch boundary markers")
+    batched_input: List[str] = []
+    for form, marker in zip(forms, markers):
+        batched_input.append(form)
+        batched_input.append(marker)
+    proc = subprocess.run(
+        ["flookup", "-i", str(bin_path)],
+        input=("\n".join(batched_input) + "\n").encode("utf-8"),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=True,
+    )
+    grouped_outputs: List[List[str]] = []
+    current_outputs: List[str] = []
+    marker_index = 0
+    for raw_line in proc.stdout.decode("utf-8").splitlines():
+        raw_line = raw_line.strip()
+        if not raw_line:
+            continue
+        input_form, output = (raw_line.split("\t", 1) + [""])[:2]
+        if marker_index >= len(markers):
+            raise RuntimeError("Batch flookup produced more boundary markers than expected")
+        if input_form == markers[marker_index]:
+            grouped_outputs.append(dedupe_preserving_order(current_outputs))
+            current_outputs = []
+            marker_index += 1
+            continue
+        if output and output != "+?":
+            current_outputs.append(output)
+    if marker_index != len(markers):
+        raise RuntimeError(
+            f"Batch flookup boundary mismatch: saw {marker_index} markers for {len(markers)} input forms"
+        )
+    if len(grouped_outputs) != len(forms):
+        raise RuntimeError(
+            f"Batch flookup output mismatch: expected {len(forms)} rows, got {len(grouped_outputs)}"
+        )
+    return grouped_outputs
+
+
+def build_evaluated_row(row: Dict[str, str], outputs: Sequence[str]) -> Dict[str, object]:
+    expected = row["counterpart"]
+    return {
+        "lexical_item": row["concept"],
+        "protoform": row["proto"],
+        "proto_norm": row["proto_norm"],
+        "expected_counterpart": expected,
+        "outputs": list(outputs),
+        "outputs_text": format_outputs(outputs),
+        "matches_expected": outputs_match_expected(outputs, expected),
+        "notes": baseline_note(outputs, expected),
+    }
 
 
 def build_variant_appendix(order: Sequence[str]) -> str:
@@ -360,6 +508,14 @@ def unique_preview(rows: Iterable[Dict[str, object]], field: str, limit: int = 5
     return "; ".join(values[:limit])
 
 
+def variant_target_order(base_order: int, direction: str, steps: int) -> int:
+    return base_order - steps if direction == "earlier" else base_order + steps
+
+
+def historically_interpretable(entry_type: str) -> str:
+    return "yes" if entry_type in {"historical_sound_change", "uncertain"} else "no"
+
+
 def upsert_tsv(
     output_path: Path,
     fieldnames: Sequence[str],
@@ -380,6 +536,136 @@ def upsert_tsv(
     write_tsv(fieldnames, merged, output_path)
 
 
+def first_break_summary_fieldnames() -> List[str]:
+    return [
+        "change_id",
+        "display_name",
+        "rule_name",
+        "baseline_order",
+        "direction",
+        "result",
+        "first_break_variant_id",
+        "first_break_order",
+        "crossed_change_id",
+        "crossed_display_name",
+        "crossed_rule_name",
+        "crossed_entry_type",
+        "variants_tested_before_break",
+        "compilation_status",
+        "total_rows_tested",
+        "baseline_matches",
+        "variant_matches_at_break",
+        "changed_output_count_at_break",
+        "newly_failing_count_at_break",
+        "representative_changed_lexemes",
+        "representative_new_failures",
+        "historically_interpretable",
+        "notes",
+    ]
+
+
+def first_break_changes_fieldnames() -> List[str]:
+    return [
+        "variant_id",
+        "change_id",
+        "display_name",
+        "direction",
+        "variant_order",
+        "crossed_change_id",
+        "crossed_display_name",
+        "crossed_rule_name",
+        "crossed_entry_type",
+        "lexical_item",
+        "protoform",
+        "expected_counterpart",
+        "baseline_output",
+        "variant_output",
+        "baseline_matches_expected",
+        "variant_matches_expected",
+        "status_change",
+        "likely_break_stage_or_note",
+    ]
+
+
+def first_break_failures_fieldnames() -> List[str]:
+    return [
+        "variant_id",
+        "change_id",
+        "direction",
+        "variant_order",
+        "crossed_change_id",
+        "crossed_display_name",
+        "crossed_rule_name",
+        "crossed_entry_type",
+        "lexical_item",
+        "protoform",
+        "expected_counterpart",
+        "baseline_output",
+        "variant_output",
+        "failure_type",
+        "note",
+    ]
+
+
+def find_first_break_summary_row(summary_output: Path, change_id: str, direction: str) -> Dict[str, str] | None:
+    for row in read_tsv_rows(summary_output):
+        if row.get("change_id") == change_id and row.get("direction") == direction:
+            return row
+    return None
+
+
+def parse_resume_steps(notes: str) -> int:
+    match = RESUME_STEPS_RE.search(notes or "")
+    return int(match.group(1)) if match else 0
+
+
+def parse_last_safe_order(notes: str, fallback: int) -> int:
+    match = LAST_SAFE_ORDER_RE.search(notes or "")
+    return int(match.group(1)) if match else fallback
+
+
+def move_rule_steps(order: Sequence[str], target_rule: str, direction: str, steps: int) -> List[str]:
+    moved = list(order)
+    for _ in range(steps):
+        moved, _ = swap_adjacent(moved, target_rule, direction)
+    return moved
+
+
+def clear_first_break_direction_outputs(
+    change_id: str,
+    direction: str,
+    summary_output: Path,
+    changes_output: Path,
+    failures_output: Path,
+) -> None:
+    scope = [(change_id, direction)]
+    upsert_tsv(summary_output, first_break_summary_fieldnames(), ("change_id", "direction"), scope, [])
+    upsert_tsv(changes_output, first_break_changes_fieldnames(), ("change_id", "direction"), scope, [])
+    upsert_tsv(failures_output, first_break_failures_fieldnames(), ("change_id", "direction"), scope, [])
+
+
+def write_first_break_variant_outputs(
+    evaluation: Dict[str, object],
+    changes_output: Path,
+    failures_output: Path,
+) -> None:
+    variant_scope = [(str(evaluation["variant_id"]),)]
+    upsert_tsv(
+        changes_output,
+        first_break_changes_fieldnames(),
+        ("variant_id",),
+        variant_scope,
+        evaluation["changed_rows"],
+    )
+    upsert_tsv(
+        failures_output,
+        first_break_failures_fieldnames(),
+        ("variant_id",),
+        variant_scope,
+        evaluation["failure_rows"],
+    )
+
+
 def status_change_label(baseline_match: bool, variant_match: bool, baseline_output: str, variant_output: str) -> str:
     if baseline_match and not variant_match:
         return "newly_failing"
@@ -394,6 +680,121 @@ def status_change_label(baseline_match: bool, variant_match: bool, baseline_outp
     return "changed_still_failing"
 
 
+def evaluate_variant_against_baseline(
+    *,
+    variant_id: str,
+    change: ChangeInfo,
+    display_name: str,
+    direction: str,
+    variant_order: int,
+    crossed: NeighborInfo,
+    variant_order_chain: Sequence[str],
+    rows: Sequence[Dict[str, str]],
+    baseline_results: Sequence[Dict[str, object]],
+    germanic_path: Path,
+    sandbox_path: Path,
+) -> Dict[str, object]:
+    baseline_map = {result_key(row): row for row in baseline_results}
+    baseline_stats = summarize_evaluation(baseline_results)
+    compilation_status = "compiled"
+    compile_note = ""
+    variant_bin: Path | None = None
+    try:
+        compilation_status, variant_bin, compile_note = compile_variant(
+            germanic_path=germanic_path,
+            sandbox_path=sandbox_path,
+            variant_id=variant_id,
+            order=variant_order_chain,
+        )
+        if compilation_status == "compiled" and variant_bin is not None:
+            variant_results = evaluate_rows(rows, variant_bin)
+        else:
+            variant_results = []
+    finally:
+        if variant_bin is not None:
+            cleanup_retained_bins(variant_bin)
+    variant_stats = summarize_evaluation(variant_results) if variant_results else {
+        "total_rows_tested": len(rows),
+        "matches_expected": 0,
+        "fails_expected": len(rows),
+        "no_output_rows": len(rows),
+        "multi_output_rows": 0,
+    }
+    changed_rows: List[Dict[str, str]] = []
+    failure_rows: List[Dict[str, str]] = []
+    if variant_results:
+        for variant_row in variant_results:
+            baseline_row = baseline_map[result_key(variant_row)]
+            if baseline_row["outputs_text"] == variant_row["outputs_text"]:
+                continue
+            status_change = status_change_label(
+                bool(baseline_row["matches_expected"]),
+                bool(variant_row["matches_expected"]),
+                str(baseline_row["outputs_text"]),
+                str(variant_row["outputs_text"]),
+            )
+            likely_note = (
+                f"Crossing {crossed.rule_name} produced no output."
+                if variant_row["outputs_text"] == "+?"
+                else f"Crossing {crossed.rule_name} changed the output."
+            )
+            changed_rows.append(
+                {
+                    "variant_id": variant_id,
+                    "change_id": change.change_id,
+                    "display_name": display_name,
+                    "direction": direction,
+                    "variant_order": str(variant_order),
+                    "crossed_change_id": crossed.change_id,
+                    "crossed_display_name": crossed.display_name,
+                    "crossed_rule_name": crossed.rule_name,
+                    "crossed_entry_type": crossed.entry_type,
+                    "lexical_item": str(variant_row["lexical_item"]),
+                    "protoform": str(variant_row["protoform"]),
+                    "expected_counterpart": str(variant_row["expected_counterpart"]),
+                    "baseline_output": str(baseline_row["outputs_text"]),
+                    "variant_output": str(variant_row["outputs_text"]),
+                    "baseline_matches_expected": "yes" if baseline_row["matches_expected"] else "no",
+                    "variant_matches_expected": "yes" if variant_row["matches_expected"] else "no",
+                    "status_change": status_change,
+                    "likely_break_stage_or_note": likely_note,
+                }
+            )
+            if baseline_row["matches_expected"] and not variant_row["matches_expected"]:
+                failure_rows.append(
+                    {
+                        "variant_id": variant_id,
+                        "change_id": change.change_id,
+                        "direction": direction,
+                        "variant_order": str(variant_order),
+                        "crossed_change_id": crossed.change_id,
+                        "crossed_display_name": crossed.display_name,
+                        "crossed_rule_name": crossed.rule_name,
+                        "crossed_entry_type": crossed.entry_type,
+                        "lexical_item": str(variant_row["lexical_item"]),
+                        "protoform": str(variant_row["protoform"]),
+                        "expected_counterpart": str(variant_row["expected_counterpart"]),
+                        "baseline_output": str(baseline_row["outputs_text"]),
+                        "variant_output": str(variant_row["outputs_text"]),
+                        "failure_type": "newly_failing",
+                        "note": likely_note,
+                    }
+                )
+    return {
+        "variant_id": variant_id,
+        "direction": direction,
+        "variant_order": variant_order,
+        "crossed": crossed,
+        "compilation_status": compilation_status,
+        "compile_note": compile_note,
+        "variant_stats": variant_stats,
+        "baseline_stats": baseline_stats,
+        "changed_rows": changed_rows,
+        "failure_rows": failure_rows,
+        "real_break_found": bool(failure_rows),
+    }
+
+
 def run_adjacent_pilot(
     change: ChangeInfo,
     inventory_earlier: NeighborInfo | None,
@@ -406,74 +807,31 @@ def run_adjacent_pilot(
     germanic_path: Path,
     sandbox_path: Path,
 ) -> List[Dict[str, str]]:
-    stage_labels = {label for label, _ in STAGES}
-    baseline_map = {result_key(row): row for row in baseline_results}
-    baseline_stats = summarize_evaluation(baseline_results)
     summary_rows: List[Dict[str, str]] = []
     detail_rows: List[Dict[str, str]] = []
+    stage_labels = {label for label, _ in STAGES}
     for movement, inventory_neighbor in (("earlier", inventory_earlier), ("later", inventory_later)):
         variant_id = f"{change.change_id}_{movement}_adjacent"
         variant_order, chain_neighbor_rule = swap_adjacent(live_order, change.rule_name, movement)
-        compilation_status = "compiled"
-        compile_note = ""
-        variant_bin: Path | None = None
-        try:
-            compilation_status, variant_bin, compile_note = compile_variant(
-                germanic_path=germanic_path,
-                sandbox_path=sandbox_path,
-                variant_id=variant_id,
-                order=variant_order,
-            )
-            if compilation_status == "compiled" and variant_bin is not None:
-                variant_results = evaluate_rows(rows, variant_bin)
-            else:
-                variant_results = []
-        finally:
-            if variant_bin is not None:
-                cleanup_retained_bins(variant_bin)
-        variant_stats = summarize_evaluation(variant_results) if variant_results else {
-            "total_rows_tested": len(rows),
-            "matches_expected": 0,
-            "fails_expected": len(rows),
-            "no_output_rows": len(rows),
-            "multi_output_rows": 0,
-        }
-        changed_rows: List[Dict[str, object]] = []
-        if variant_results:
-            for variant_row in variant_results:
-                baseline_row = baseline_map[result_key(variant_row)]
-                if baseline_row["outputs_text"] == variant_row["outputs_text"]:
-                    continue
-                status_change = status_change_label(
-                    bool(baseline_row["matches_expected"]),
-                    bool(variant_row["matches_expected"]),
-                    str(baseline_row["outputs_text"]),
-                    str(variant_row["outputs_text"]),
-                )
-                changed_rows.append(
-                    {
-                        "variant_id": variant_id,
-                        "change_id": change.change_id,
-                        "movement": movement,
-                        "swapped_with_change_id": inventory_neighbor.change_id if inventory_neighbor else "",
-                        "swapped_with_display_name": inventory_neighbor.display_name if inventory_neighbor else chain_neighbor_rule,
-                        "swapped_with_rule_name": chain_neighbor_rule,
-                        "lexical_item": variant_row["lexical_item"],
-                        "protoform": variant_row["protoform"],
-                        "expected_counterpart": variant_row["expected_counterpart"],
-                        "baseline_output": baseline_row["outputs_text"],
-                        "variant_output": variant_row["outputs_text"],
-                        "baseline_matches_expected": "yes" if baseline_row["matches_expected"] else "no",
-                        "variant_matches_expected": "yes" if variant_row["matches_expected"] else "no",
-                        "status_change": status_change,
-                        "likely_break_stage_or_note": (
-                            f"Adjacent swap with {chain_neighbor_rule}; variant produced no output."
-                            if variant_row["outputs_text"] == "+?"
-                            else f"Adjacent swap with {chain_neighbor_rule} changed the output."
-                        ),
-                    }
-                )
-        newly_failing = [row for row in changed_rows if row["status_change"] == "newly_failing"]
+        crossed = inventory_neighbor or placeholder_neighbor(chain_neighbor_rule, variant_target_order(change.current_order, movement, 1))
+        evaluation = evaluate_variant_against_baseline(
+            variant_id=variant_id,
+            change=change,
+            display_name=change.display_name,
+            direction=movement,
+            variant_order=variant_target_order(change.current_order, movement, 1),
+            crossed=crossed,
+            variant_order_chain=variant_order,
+            rows=rows,
+            baseline_results=baseline_results,
+            germanic_path=germanic_path,
+            sandbox_path=sandbox_path,
+        )
+        compilation_status = str(evaluation["compilation_status"])
+        compile_note = str(evaluation["compile_note"])
+        variant_stats = evaluation["variant_stats"]
+        changed_rows = evaluation["changed_rows"]
+        newly_failing = evaluation["failure_rows"]
         chain_vs_inventory_note = ""
         if inventory_neighbor and inventory_neighbor.rule_name != chain_neighbor_rule:
             chain_vs_inventory_note = (
@@ -494,7 +852,7 @@ def run_adjacent_pilot(
                 "swapped_with_display_name": inventory_neighbor.display_name if inventory_neighbor else chain_neighbor_rule,
                 "compilation_status": compilation_status,
                 "total_rows_tested": str(variant_stats["total_rows_tested"]),
-                "baseline_matches": str(baseline_stats["matches_expected"]),
+                "baseline_matches": str(evaluation["baseline_stats"]["matches_expected"]),
                 "variant_matches": str(variant_stats["matches_expected"]),
                 "changed_output_count": str(len(changed_rows)),
                 "newly_failing_count": str(len(newly_failing)),
@@ -551,6 +909,248 @@ def run_adjacent_pilot(
     variant_scopes = [(row["variant_id"],) for row in summary_rows]
     upsert_tsv(summary_output, summary_fieldnames, ("variant_id",), variant_scopes, summary_rows)
     upsert_tsv(changes_output, detail_fieldnames, ("variant_id",), variant_scopes, detail_rows)
+    return summary_rows
+
+
+def run_first_break(
+    change: ChangeInfo,
+    live_order: Sequence[str],
+    rows: Sequence[Dict[str, str]],
+    baseline_results: Sequence[Dict[str, object]],
+    ordered_inventory: Sequence[ChangeInfo],
+    summary_output: Path,
+    changes_output: Path,
+    failures_output: Path,
+    germanic_path: Path,
+    sandbox_path: Path,
+    direction_mode: str,
+    resume: bool,
+) -> List[Dict[str, str]]:
+    if change.rule_name not in live_order:
+        raise RuntimeError(f"{change.rule_name} is not in the live EnglishProtoToOE chain")
+    inventory_by_rule = inventory_rule_lookup(ordered_inventory)
+    summary_rows: List[Dict[str, str]] = []
+    baseline_stats = summarize_evaluation(baseline_results)
+    directions = ("earlier", "later") if direction_mode == "both" else (direction_mode,)
+
+    for direction in directions:
+        existing_summary = find_first_break_summary_row(summary_output, change.change_id, direction)
+        if resume and existing_summary and existing_summary.get("result") in FIRST_BREAK_DONE_RESULTS:
+            summary_rows.append(existing_summary)
+            print(
+                f"{change.change_id} {direction} already_complete "
+                f"result={existing_summary.get('result','-')} "
+                f"first_break_variant={existing_summary.get('first_break_variant_id','-')}"
+            )
+            continue
+        if not resume:
+            clear_first_break_direction_outputs(change.change_id, direction, summary_output, changes_output, failures_output)
+            existing_summary = None
+        steps_completed = parse_resume_steps(existing_summary.get("notes", "")) if resume and existing_summary else 0
+        safe_order = parse_last_safe_order(existing_summary.get("notes", ""), change.current_order) if resume and existing_summary else change.current_order
+        current_chain = move_rule_steps(live_order, change.rule_name, direction, steps_completed) if steps_completed else list(live_order)
+        latest_evaluation: Dict[str, object] | None = None
+
+        while True:
+            try:
+                next_chain, crossed_rule_name = swap_adjacent(current_chain, change.rule_name, direction)
+            except ValueError:
+                latest_crossed = (
+                    latest_evaluation["crossed"]
+                    if latest_evaluation is not None
+                    else placeholder_neighbor("-", safe_order)
+                )
+                final_row = {
+                    "change_id": change.change_id,
+                    "display_name": change.display_name,
+                    "rule_name": change.rule_name,
+                    "baseline_order": str(change.current_order),
+                    "direction": direction,
+                    "result": "no_break_before_boundary",
+                    "first_break_variant_id": "-",
+                    "first_break_order": "-",
+                    "crossed_change_id": latest_crossed.change_id,
+                    "crossed_display_name": latest_crossed.display_name,
+                    "crossed_rule_name": latest_crossed.rule_name,
+                    "crossed_entry_type": latest_crossed.entry_type,
+                    "variants_tested_before_break": str(steps_completed),
+                    "compilation_status": "compiled" if steps_completed else "-",
+                    "total_rows_tested": str(
+                        latest_evaluation["variant_stats"]["total_rows_tested"] if latest_evaluation is not None else len(rows)
+                    ),
+                    "baseline_matches": str(baseline_stats["matches_expected"]),
+                    "variant_matches_at_break": str(
+                        latest_evaluation["variant_stats"]["matches_expected"]
+                        if latest_evaluation is not None
+                        else baseline_stats["matches_expected"]
+                    ),
+                    "changed_output_count_at_break": str(len(latest_evaluation["changed_rows"]) if latest_evaluation is not None else 0),
+                    "newly_failing_count_at_break": str(len(latest_evaluation["failure_rows"]) if latest_evaluation is not None else 0),
+                    "representative_changed_lexemes": unique_preview(latest_evaluation["changed_rows"], "lexical_item") if latest_evaluation is not None else "",
+                    "representative_new_failures": unique_preview(latest_evaluation["failure_rows"], "lexical_item") if latest_evaluation is not None else "",
+                    "historically_interpretable": "no",
+                    "notes": f"reached {direction} boundary with no real break; last_safe_order={safe_order}",
+                }
+                upsert_tsv(
+                    summary_output,
+                    first_break_summary_fieldnames(),
+                    ("change_id", "direction"),
+                    [(change.change_id, direction)],
+                    [final_row],
+                )
+                summary_rows.append(final_row)
+                print(
+                    f"{change.change_id} {direction} result=no_break_before_boundary "
+                    f"variants_tested={steps_completed} last_safe_order={safe_order}"
+                )
+                break
+
+            current_steps = steps_completed + 1
+            current_variant_order = variant_target_order(change.current_order, direction, current_steps)
+            crossed = inventory_by_rule.get(crossed_rule_name) or placeholder_neighbor(crossed_rule_name, current_variant_order)
+            evaluation = evaluate_variant_against_baseline(
+                variant_id=f"{change.change_id}_{direction}_order_{current_variant_order}",
+                change=change,
+                display_name=change.display_name,
+                direction=direction,
+                variant_order=current_variant_order,
+                crossed=crossed,
+                variant_order_chain=next_chain,
+                rows=rows,
+                baseline_results=baseline_results,
+                germanic_path=germanic_path,
+                sandbox_path=sandbox_path,
+            )
+            write_first_break_variant_outputs(evaluation, changes_output, failures_output)
+            latest_evaluation = evaluation
+            if evaluation["compilation_status"] != "compiled":
+                final_row = {
+                    "change_id": change.change_id,
+                    "display_name": change.display_name,
+                    "rule_name": change.rule_name,
+                    "baseline_order": str(change.current_order),
+                    "direction": direction,
+                    "result": "compile_failure",
+                    "first_break_variant_id": str(evaluation["variant_id"]),
+                    "first_break_order": str(evaluation["variant_order"]),
+                    "crossed_change_id": crossed.change_id,
+                    "crossed_display_name": crossed.display_name,
+                    "crossed_rule_name": crossed.rule_name,
+                    "crossed_entry_type": crossed.entry_type,
+                    "variants_tested_before_break": str(current_steps),
+                    "compilation_status": str(evaluation["compilation_status"]),
+                    "total_rows_tested": str(evaluation["variant_stats"]["total_rows_tested"]),
+                    "baseline_matches": str(baseline_stats["matches_expected"]),
+                    "variant_matches_at_break": str(evaluation["variant_stats"]["matches_expected"]),
+                    "changed_output_count_at_break": str(len(evaluation["changed_rows"])),
+                    "newly_failing_count_at_break": str(len(evaluation["failure_rows"])),
+                    "representative_changed_lexemes": unique_preview(evaluation["changed_rows"], "lexical_item"),
+                    "representative_new_failures": unique_preview(evaluation["failure_rows"], "lexical_item"),
+                    "historically_interpretable": "no",
+                    "notes": str(evaluation["compile_note"]) or "compile failure before first real break",
+                }
+                upsert_tsv(
+                    summary_output,
+                    first_break_summary_fieldnames(),
+                    ("change_id", "direction"),
+                    [(change.change_id, direction)],
+                    [final_row],
+                )
+                summary_rows.append(final_row)
+                print(
+                    f"{change.change_id} {direction} variant={evaluation['variant_id']} "
+                    f"status={evaluation['compilation_status']}"
+                )
+                break
+            if evaluation["real_break_found"]:
+                final_row = {
+                    "change_id": change.change_id,
+                    "display_name": change.display_name,
+                    "rule_name": change.rule_name,
+                    "baseline_order": str(change.current_order),
+                    "direction": direction,
+                    "result": "first_break_found",
+                    "first_break_variant_id": str(evaluation["variant_id"]),
+                    "first_break_order": str(evaluation["variant_order"]),
+                    "crossed_change_id": crossed.change_id,
+                    "crossed_display_name": crossed.display_name,
+                    "crossed_rule_name": crossed.rule_name,
+                    "crossed_entry_type": crossed.entry_type,
+                    "variants_tested_before_break": str(current_steps),
+                    "compilation_status": str(evaluation["compilation_status"]),
+                    "total_rows_tested": str(evaluation["variant_stats"]["total_rows_tested"]),
+                    "baseline_matches": str(baseline_stats["matches_expected"]),
+                    "variant_matches_at_break": str(evaluation["variant_stats"]["matches_expected"]),
+                    "changed_output_count_at_break": str(len(evaluation["changed_rows"])),
+                    "newly_failing_count_at_break": str(len(evaluation["failure_rows"])),
+                    "representative_changed_lexemes": unique_preview(evaluation["changed_rows"], "lexical_item"),
+                    "representative_new_failures": unique_preview(evaluation["failure_rows"], "lexical_item"),
+                    "historically_interpretable": historically_interpretable(crossed.entry_type),
+                    "notes": (
+                        "first real break found"
+                        if historically_interpretable(crossed.entry_type) == "yes"
+                        else f"first real break crosses non-historical stage {crossed.change_id or crossed.rule_name}"
+                    ),
+                }
+                upsert_tsv(
+                    summary_output,
+                    first_break_summary_fieldnames(),
+                    ("change_id", "direction"),
+                    [(change.change_id, direction)],
+                    [final_row],
+                )
+                summary_rows.append(final_row)
+                print(
+                    f"{change.change_id} {direction} variant={evaluation['variant_id']} "
+                    f"status=compiled changed={len(evaluation['changed_rows'])} "
+                    f"new_failures={len(evaluation['failure_rows'])} result=first_break_found"
+                )
+                break
+
+            safe_order = current_variant_order
+            steps_completed = current_steps
+            current_chain = next_chain
+            progress_row = {
+                "change_id": change.change_id,
+                "display_name": change.display_name,
+                "rule_name": change.rule_name,
+                "baseline_order": str(change.current_order),
+                "direction": direction,
+                "result": "in_progress",
+                "first_break_variant_id": "-",
+                "first_break_order": "-",
+                "crossed_change_id": crossed.change_id,
+                "crossed_display_name": crossed.display_name,
+                "crossed_rule_name": crossed.rule_name,
+                "crossed_entry_type": crossed.entry_type,
+                "variants_tested_before_break": str(steps_completed),
+                "compilation_status": str(evaluation["compilation_status"]),
+                "total_rows_tested": str(evaluation["variant_stats"]["total_rows_tested"]),
+                "baseline_matches": str(baseline_stats["matches_expected"]),
+                "variant_matches_at_break": str(evaluation["variant_stats"]["matches_expected"]),
+                "changed_output_count_at_break": str(len(evaluation["changed_rows"])),
+                "newly_failing_count_at_break": str(len(evaluation["failure_rows"])),
+                "representative_changed_lexemes": unique_preview(evaluation["changed_rows"], "lexical_item"),
+                "representative_new_failures": unique_preview(evaluation["failure_rows"], "lexical_item"),
+                "historically_interpretable": historically_interpretable(crossed.entry_type),
+                "notes": (
+                    f"in_progress resume_steps={steps_completed} last_safe_order={safe_order} "
+                    f"last_tested_variant={evaluation['variant_id']}"
+                ),
+            }
+            upsert_tsv(
+                summary_output,
+                first_break_summary_fieldnames(),
+                ("change_id", "direction"),
+                [(change.change_id, direction)],
+                [progress_row],
+            )
+            summary_rows.append(progress_row)
+            print(
+                f"{change.change_id} {direction} variant={evaluation['variant_id']} "
+                f"status=compiled changed={len(evaluation['changed_rows'])} "
+                f"new_failures={len(evaluation['failure_rows'])}"
+            )
     return summary_rows
 
 
@@ -642,10 +1242,33 @@ def main() -> None:
     identity_output = Path(args.identity_output).expanduser().resolve()
     summary_output = Path(args.summary_output).expanduser().resolve()
     changes_output = Path(args.changes_output).expanduser().resolve()
+    first_break_output = Path(args.first_break_output).expanduser().resolve()
+    first_break_changes_output = Path(args.first_break_changes_output).expanduser().resolve()
+    first_break_failures_output = Path(args.first_break_failures_output).expanduser().resolve()
 
     inventory_by_id, ordered_inventory = load_inventory(inventory_path)
     live_order = parse_english_proto_to_oe_order(germanic_path)
     rows = load_rows(tsv_path)
+
+    if args.mode == "validate-batch":
+        batch_validation = validate_batch_outputs(rows, bin_path)
+        print(
+            "validate_batch "
+            f"rows={batch_validation['rows']} "
+            f"matching_rows={batch_validation['matching_rows']} "
+            f"differing_rows={batch_validation['differing_rows']}"
+        )
+        for mismatch in batch_validation["mismatches"][:5]:
+            print(
+                "mismatch "
+                f"lexical_item={mismatch['lexical_item']} "
+                f"protoform={mismatch['protoform']} "
+                f"rowwise={mismatch['rowwise_output']} "
+                f"batch={mismatch['batch_output']}"
+            )
+        if batch_validation["differing_rows"]:
+            raise SystemExit(1)
+        return
 
     baseline_results = evaluate_rows(rows, bin_path)
     baseline_stats = summarize_evaluation(baseline_results)
@@ -686,6 +1309,23 @@ def main() -> None:
         return
 
     change = inventory_by_id[args.change]
+    if args.mode == "first-break":
+        run_first_break(
+            change=change,
+            live_order=live_order,
+            rows=rows,
+            baseline_results=baseline_results,
+            ordered_inventory=ordered_inventory,
+            summary_output=first_break_output,
+            changes_output=first_break_changes_output,
+            failures_output=first_break_failures_output,
+            germanic_path=germanic_path,
+            sandbox_path=sandbox_path,
+            direction_mode=args.direction,
+            resume=args.resume,
+        )
+        return
+
     earlier, later = neighbors_for_change(change.change_id, ordered_inventory)
     summary_rows = run_adjacent_pilot(
         change=change,
