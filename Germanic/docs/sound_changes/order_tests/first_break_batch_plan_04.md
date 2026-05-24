@@ -73,18 +73,28 @@ The first manual terminal batch is now complete for:
 
 Those results have been folded into the first-break summary TSVs, the repo-facing order-sensitivity table, and dedicated chronology cards.
 
+## Completed second batch
+
+The next manual terminal batch is now complete for:
+
+1. `SC046` OE A Restoration
+2. `SC050` Sievers Law Syncope
+3. `SC055` OE I Umlaut
+
+Those results extend the chronology-card set into the SC043 / SC044 / SC048 restoration zone and into the SC052 / SC056 corridor around SC055. They also show that SC050 currently has an earlier runner-boundary result rather than a detected earlier historical break.
+
 ## Next proposed batch
 
-Recommended next small batch (`6` rules):
+Recommended next terminal batch options:
 
-1. `SC046` OE A Restoration — direct downstream restoration stage for the SC043 dossier
-2. `SC050` Sievers Law Syncope — high-value syncope stage for weak-tail chronology
-3. `SC055` OE I Umlaut — already exposed as SC063’s earlier boundary and central to many OE derivations
-4. `SC059` OE Back Mutation — nearby high-value mutation stage in the same OE corridor
-5. `SC072` OE Unstressed Long Vowel Shortening — already exposed as SC063’s later boundary
-6. `SC078` OE Weak Tail Reduction — late weak-tail collapse stage with likely book-level interpretive value
+1. Conservative (`3` rules): `SC059` OE Back Mutation, `SC072` OE Unstressed Long Vowel Shortening, `SC078` OE Weak Tail Reduction
+2. Scaled (`6-10` rules): keep those three high-priority pending rules, then extend the run with nearby queued explicit-chain rules such as `SC045`, `SC047`, `SC048`, `SC051`, `SC052`, and `SC056`
 
-Before running that next batch, review the SC041 earlier boundary carefully. The result is probably useful chronology evidence, but because the first break is far away at `SC020` and produces many `-a`-final failures at once, it should be narrated as a broad computational boundary rather than as a narrow local adjacency claim.
+Before running the next batch, keep two narrative cautions in view. First, the SC041 earlier boundary is still best treated as a broad computational limit rather than a narrow adjacency claim. Second, the SC050 earlier side currently ends at a runner boundary inside `PWGmcChanges`, so it should not yet be narrated as if a historical earlier first-break boundary had been found.
+
+## Scaling note
+
+The driver has now survived several manual terminal batches cleanly. Future terminal runs no longer need to stay at three rules per batch: a 6-10 rule batch is now a reasonable target when the selected rules are all eligible explicit-chain members and the user wants a longer run.
 
 As before, heavy runs should be done manually from a normal terminal rather than inside Copilot.
 
