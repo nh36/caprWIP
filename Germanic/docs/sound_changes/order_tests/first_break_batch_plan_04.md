@@ -63,21 +63,30 @@ For manifest classification:
 
 Those stages can still matter interpretively, but they should not yet be treated as ordinary first-break targets.
 
+## Completed first small batch
+
+The first manual terminal batch is now complete for:
+
+1. `SC041` PWGmc Final Bare A Loss
+2. `SC042` PWGmc Surviving Bimoric O Unrounding
+3. `SC044` OE Breaking
+
+Those results have been folded into the first-break summary TSVs, the repo-facing order-sensitivity table, and dedicated chronology cards.
+
 ## Next proposed batch
 
-Recommended next small batch (`9` rules):
+Recommended next small batch (`6` rules):
 
-1. `SC041` PWGmc Final Bare A Loss — late final-vowel loss immediately before the SC043 corridor
-2. `SC042` PWGmc Surviving Bimoric O Unrounding — already exposed as SC043’s earlier boundary
-3. `SC044` OE Breaking — already exposed as SC043’s later boundary
-4. `SC046` OE A Restoration — direct downstream restoration stage for the SC043 dossier
-5. `SC050` Sievers Law Syncope — high-value syncope stage for weak-tail chronology
-6. `SC055` OE I Umlaut — already exposed as SC063’s earlier boundary and central to many OE derivations
-7. `SC059` OE Back Mutation — nearby high-value mutation stage in the same OE corridor
-8. `SC072` OE Unstressed Long Vowel Shortening — already exposed as SC063’s later boundary
-9. `SC078` OE Weak Tail Reduction — late weak-tail collapse stage with likely book-level interpretive value
+1. `SC046` OE A Restoration — direct downstream restoration stage for the SC043 dossier
+2. `SC050` Sievers Law Syncope — high-value syncope stage for weak-tail chronology
+3. `SC055` OE I Umlaut — already exposed as SC063’s earlier boundary and central to many OE derivations
+4. `SC059` OE Back Mutation — nearby high-value mutation stage in the same OE corridor
+5. `SC072` OE Unstressed Long Vowel Shortening — already exposed as SC063’s later boundary
+6. `SC078` OE Weak Tail Reduction — late weak-tail collapse stage with likely book-level interpretive value
 
-These rules were chosen because they are reader-facing historical sound changes, explicit chain members, and especially likely to produce chronology evidence that can be reused in the sound-change volume.
+Before running that next batch, review the SC041 earlier boundary carefully. The result is probably useful chronology evidence, but because the first break is far away at `SC020` and produces many `-a`-final failures at once, it should be narrated as a broad computational boundary rather than as a narrow local adjacency claim.
+
+As before, heavy runs should be done manually from a normal terminal rather than inside Copilot.
 
 ## After a batch completes
 
