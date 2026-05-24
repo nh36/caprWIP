@@ -25,7 +25,7 @@
 - interpretation: SC047 cannot move later across SC048. Delaying heavy-syllable nasal apocope until after OE Secondary Nasalization produces a very broad set of spurious `-en` outputs across the lexicon.
 
 ## Chronology statement
-SC047 must follow `SC034` OE Aw Long Diphthong. If OE Heavy Syllable Nasal Apocope is moved before that stage, PGmc `*stráwą` yields `stræw` rather than expected OE `strēaw`, because the live diphthongal development has been short-circuited. SC047 must also precede `SC048` OE Secondary Nasalization: if it is moved later than that stage, PGmc `*bákaną` yields `bacen` instead of `bacan`, and PGmc `*bíndaną` yields `binden` instead of `bindan`, showing that the live chronology avoids a broad class of spurious `-en` outcomes.
+First-break evidence places SC047 after `SC034` OE Aw Long Diphthong and before a broad later computational boundary at `SC048` OE Secondary Nasalization. On the earlier side, if OE Heavy Syllable Nasal Apocope is moved before `SC034`, PGmc `*stráwą` yields `stræw` rather than expected OE `strēaw`, because the live diphthongal development has been short-circuited. On the later side, the evidence is much broader: if SC047 is moved later than `SC048`, PGmc `*bákaną` yields `bacen` instead of `bacan`, and PGmc `*bíndaną` yields `binden` instead of `bindan`, representing a large reciprocal `-en` failure set rather than a single-example adjacency effect.
 
 ## Caveats
 Both observed boundaries are historically interpretable rather than technical. The later boundary is especially broad, with 87 newly failing rows, so it should be narrated as a large computational limit rather than as a single-example adjacency claim.

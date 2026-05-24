@@ -99,6 +99,17 @@ The scaled manual terminal batch is now complete for:
 
 These results greatly expand the chronology-card network and add several reciprocal or near-reciprocal constraints, especially SC044 / SC045, SC047 / SC048, SC052 / SC055, and SC055 / SC056.
 
+## Consolidation / index pass
+
+The scaled batch has now also been interpreted and folded into a consolidation pass for the chronology-card layer. This pass adds:
+
+1. `order_tests/chronology_cards/README.md`
+2. `order_tests/chronology_cards/chronology_card_index.tsv`
+3. `order_tests/chronology_cards/chronology_card_consolidation_report.md`
+4. `order_tests/next_batch_candidates.tsv`
+
+The new index makes it easier to distinguish historical first-break boundaries, broad computational boundaries, and runner-bounded no-break results before these cards are reused in later chapter prose.
+
 ## Remaining eligible queued / pending rules
 
 Remaining eligible explicit-chain rules now still in `queued` / `pending` status are:
@@ -109,9 +120,9 @@ Remaining eligible explicit-chain rules now still in `queued` / `pending` status
 
 ## Recommended next step
 
-Recommended next step: pause for a consolidation pass over the chronology cards and summary table before launching another large terminal batch. The TSV outputs remain clean, but the interpretation layer is now large enough that it is worth normalizing prose, checking reciprocal links, and separating broad computational boundaries from narrow local ones.
+Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. The consolidation pass now provides a stable inventory of remaining eligible explicit-chain rules plus a recommended nine-rule gap-filling batch.
 
-If the user prefers to keep running the driver instead, another 8-10 rule batch is now operationally reasonable.
+If the user prefers to defer the larger gap-filling set, the same candidate file can also support a smaller conservative subset without re-reading the full manifest.
 
 ## Narrative synthesis cautions
 
