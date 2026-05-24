@@ -83,14 +83,43 @@ The next manual terminal batch is now complete for:
 
 Those results extend the chronology-card set into the SC043 / SC044 / SC048 restoration zone and into the SC052 / SC056 corridor around SC055. They also show that SC050 currently has an earlier runner-boundary result rather than a detected earlier historical break.
 
-## Next proposed batch
+## Completed scaled batch
 
-Recommended next terminal batch options:
+The scaled manual terminal batch is now complete for:
 
-1. Conservative (`3` rules): `SC059` OE Back Mutation, `SC072` OE Unstressed Long Vowel Shortening, `SC078` OE Weak Tail Reduction
-2. Scaled (`6-10` rules): keep those three high-priority pending rules, then extend the run with nearby queued explicit-chain rules such as `SC045`, `SC047`, `SC048`, `SC051`, `SC052`, and `SC056`
+1. `SC045` OE Velar Fricative Palatalization
+2. `SC047` OE Heavy Syllable Nasal Apocope
+3. `SC048` OE Secondary Nasalization
+4. `SC051` OE Sk Palatalization
+5. `SC052` OE Velar Palatalization
+6. `SC056` OE Ws Palatal Diphthongization
+7. `SC059` OE Back Mutation
+8. `SC072` OE Unstressed Long Vowel Shortening
+9. `SC078` OE Weak Tail Reduction
 
-Before running the next batch, keep two narrative cautions in view. First, the SC041 earlier boundary is still best treated as a broad computational limit rather than a narrow adjacency claim. Second, the SC050 earlier side currently ends at a runner boundary inside `PWGmcChanges`, so it should not yet be narrated as if a historical earlier first-break boundary had been found.
+These results greatly expand the chronology-card network and add several reciprocal or near-reciprocal constraints, especially SC044 / SC045, SC047 / SC048, SC052 / SC055, and SC055 / SC056.
+
+## Remaining eligible queued / pending rules
+
+Remaining eligible explicit-chain rules now still in `queued` / `pending` status are:
+
+1. Early corridor: `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`
+2. Mid corridor: `SC049`, `SC053`, `SC054`, `SC057`, `SC058`, `SC060`, `SC061`
+3. Late corridor: `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC073`, `SC074`, `SC075`, `SC076`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
+
+## Recommended next step
+
+Recommended next step: pause for a consolidation pass over the chronology cards and summary table before launching another large terminal batch. The TSV outputs remain clean, but the interpretation layer is now large enough that it is worth normalizing prose, checking reciprocal links, and separating broad computational boundaries from narrow local ones.
+
+If the user prefers to keep running the driver instead, another 8-10 rule batch is now operationally reasonable.
+
+## Narrative synthesis cautions
+
+Keep three synthesis cautions in view:
+
+1. The SC041 earlier boundary remains a broad computational limit rather than a narrow adjacency claim.
+2. The SC050 earlier side ends at a runner boundary inside `PWGmcChanges`, so it should not be narrated as if a historical earlier first-break boundary had been found.
+3. The SC056 later side found no real break before the runner boundary, so it must not be rewritten as a claim that SC056 must precede `SC087`.
 
 ## Scaling note
 
