@@ -126,28 +126,46 @@ The gap-filling manual terminal batch is now complete for:
 
 These results fill most of the previously recommended mid / late gap set. They add several one-sided cards, two negative boundary cards (`SC053`, `SC058`), and two especially important reciprocal confirmations: `SC064` / `SC072` and `SC072` / `SC073`.
 
+## Completed late-corridor batch
+
+The late-corridor manual terminal batch is now complete for:
+
+1. `SC065` OE Medial Syncope
+2. `SC066` OE L Adjacent Syncope
+3. `SC067` OE Dental Assimilation
+4. `SC068` OE Preconsonantal Degemination
+5. `SC069` OE Early O Shortening
+6. `SC070` OE Unstressed Fronting Early
+7. `SC071` OE Late O Shortening
+8. `SC074` OE Med Unstressed I Lowering1
+9. `SC075` OE Med Unstressed I Lowering
+10. `SC076` OE Prefix I Reduction
+
+These results fill the previously recommended late-corridor gap. They add three new reciprocal or near-reciprocal pairs (`SC066` / `SC068`, `SC070` / `SC071`, `SC074` / `SC075`), three fully negative boundary cards (`SC065`, `SC067`, `SC076`), and one broad/far earlier boundary (`SC069` across `SC023`) that must not be flattened into a local adjacency claim.
+
 ## Remaining eligible queued / pending rules
 
 Remaining eligible explicit-chain rules now still in `queued` / `pending` status are:
 
 1. Early corridor: `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`
-2. Late corridor: `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC074`, `SC075`, `SC076`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
+2. Late corridor: `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
 ## Recommended next step
 
-Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. After the gap-filling batch, the most natural follow-up is a contiguous ten-rule late-corridor batch running from `SC065` through `SC076` with the already completed anchor points `SC064`, `SC072`, and `SC073` on either side.
+Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. After the late-corridor interpretation pass, the most natural follow-up is the remaining contiguous far-late explicit stretch: `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, and `SC087`.
 
-If the user prefers to defer the larger gap-filling set, the same candidate file can also support a smaller conservative subset without re-reading the full manifest.
+That eight-rule set finishes the explicit searchable tail of the current chain without mixing in the much earlier queued corridor. `SC084` remains excluded because it is a technical marker rather than a normal historical sound-change target.
 
 ## Narrative synthesis cautions
 
 Keep these synthesis cautions in view:
 
 1. The SC041 earlier boundary remains a broad computational limit rather than a narrow adjacency claim.
-2. The SC050 / SC053 / SC058 earlier sides end at a runner boundary inside `PWGmcChanges`, so they should not be narrated as if historical earlier first-break boundaries had been found.
-3. The SC049 / SC053 / SC056 / SC057 / SC058 / SC060 / SC061 later sides found no real break before the current SC087 search boundary, so they must not be rewritten as claims that those rules historically must precede `SC087`.
-4. The SC061 earlier row records loss of output (`+?`) rather than an ordinary surface variant and should be narrated carefully.
-5. The SC073 later boundary should be keyed to `SC085` OE H Loss exactly as recorded in the TSV.
+2. The SC050 / SC053 / SC058 / SC065 / SC067 / SC076 earlier sides end at a runner boundary inside `PWGmcChanges`, so they should not be narrated as if historical earlier first-break boundaries had been found.
+3. The SC049 / SC053 / SC056 / SC057 / SC058 / SC060 / SC061 / SC065 / SC067 / SC068 / SC069 / SC071 / SC075 / SC076 later sides found no real break before the current SC087 search boundary, so they must not be rewritten as claims that those rules historically must precede `SC087`.
+4. The SC069 earlier boundary at `SC023` is broad and far away, so it should be narrated as a computational boundary rather than as a tight local adjacency claim.
+5. The SC061 earlier row records loss of output (`+?`) rather than an ordinary surface variant and should be narrated carefully.
+6. The SC073 later boundary should be keyed to `SC085` OE H Loss exactly as recorded in the TSV.
 
 ## Scaling note
 
