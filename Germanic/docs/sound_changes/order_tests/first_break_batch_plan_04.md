@@ -110,27 +110,44 @@ The scaled batch has now also been interpreted and folded into a consolidation p
 
 The new index makes it easier to distinguish historical first-break boundaries, broad computational boundaries, and runner-bounded no-break results before these cards are reused in later chapter prose.
 
+## Completed gap-filling batch
+
+The gap-filling manual terminal batch is now complete for:
+
+1. `SC049` PGmc B Allophony
+2. `SC053` OE Post Velar W Loss
+3. `SC054` OE W Loss Before I
+4. `SC057` OE J Cluster Coalescence
+5. `SC058` OE Nasal Dissimilation
+6. `SC060` OE Ws Palatal Umlaut
+7. `SC061` OE Weak Tail Nasal Loss
+8. `SC064` NWGmc In Stem N Loss
+9. `SC073` OE Unstressed AE Merger
+
+These results fill most of the previously recommended mid / late gap set. They add several one-sided cards, two negative boundary cards (`SC053`, `SC058`), and two especially important reciprocal confirmations: `SC064` / `SC072` and `SC072` / `SC073`.
+
 ## Remaining eligible queued / pending rules
 
 Remaining eligible explicit-chain rules now still in `queued` / `pending` status are:
 
 1. Early corridor: `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`
-2. Mid corridor: `SC049`, `SC053`, `SC054`, `SC057`, `SC058`, `SC060`, `SC061`
-3. Late corridor: `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC073`, `SC074`, `SC075`, `SC076`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
+2. Late corridor: `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC074`, `SC075`, `SC076`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
 ## Recommended next step
 
-Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. The consolidation pass now provides a stable inventory of remaining eligible explicit-chain rules plus a recommended nine-rule gap-filling batch.
+Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. After the gap-filling batch, the most natural follow-up is a contiguous ten-rule late-corridor batch running from `SC065` through `SC076` with the already completed anchor points `SC064`, `SC072`, and `SC073` on either side.
 
 If the user prefers to defer the larger gap-filling set, the same candidate file can also support a smaller conservative subset without re-reading the full manifest.
 
 ## Narrative synthesis cautions
 
-Keep three synthesis cautions in view:
+Keep these synthesis cautions in view:
 
 1. The SC041 earlier boundary remains a broad computational limit rather than a narrow adjacency claim.
-2. The SC050 earlier side ends at a runner boundary inside `PWGmcChanges`, so it should not be narrated as if a historical earlier first-break boundary had been found.
-3. The SC056 later side found no real break before the runner boundary, so it must not be rewritten as a claim that SC056 must precede `SC087`.
+2. The SC050 / SC053 / SC058 earlier sides end at a runner boundary inside `PWGmcChanges`, so they should not be narrated as if historical earlier first-break boundaries had been found.
+3. The SC049 / SC053 / SC056 / SC057 / SC058 / SC060 / SC061 later sides found no real break before the current SC087 search boundary, so they must not be rewritten as claims that those rules historically must precede `SC087`.
+4. The SC061 earlier row records loss of output (`+?`) rather than an ordinary surface variant and should be narrated carefully.
+5. The SC073 later boundary should be keyed to `SC085` OE H Loss exactly as recorded in the TSV.
 
 ## Scaling note
 
