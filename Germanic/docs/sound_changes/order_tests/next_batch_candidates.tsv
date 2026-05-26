@@ -1,20 +1,20 @@
 change_id	display_name	current_order	rule_name	current_manifest_status	suggested_priority	reason	recommended_for_next_batch
-SC014	NWGmc Unstressed Ai Monophthongization	14	NWGmcUnstressedAiMonophthongization	queued	low	Eligible explicit-chain rule, but the lower-early corridor immediately below the newly completed SC030-SC040 band is the cleaner next batch after the upper-early interpretation pass.	no
-SC015	NWGmc I Lowering	15	NWGmcILowering	queued	low	Eligible explicit-chain rule, but the lower-early corridor immediately below the newly completed SC030-SC040 band is the cleaner next batch after the upper-early interpretation pass.	no
-SC016	OE Ws Palatal Glide	16	OEWsPalatalGlide	queued	low	Eligible explicit-chain rule, but the lower-early corridor immediately below the newly completed SC030-SC040 band is the cleaner next batch after the upper-early interpretation pass.	no
-SC017	NWGmc U Lowering	17	NWGmcULowering	queued	low	Eligible explicit-chain rule, but the lower-early corridor immediately below the newly completed SC030-SC040 band is the cleaner next batch after the upper-early interpretation pass.	no
-SC018	NWGmc Stressed Monosyllable O Raising	18	NWGmcStressedMonosyllableORaising	queued	low	Eligible explicit-chain rule, but the lower-early corridor immediately below the newly completed SC030-SC040 band is the cleaner next batch after the upper-early interpretation pass.	no
-SC019	NWGmc Final Long O Raising	19	NWGmcFinalLongORaising	queued	medium	Eligible explicit-chain rule and already implicated by the SC036 earlier boundary, but keeping the next batch to ten rules makes SC020-SC029 the cleaner contiguous follow-up set.	no
-SC020	PGmc Final Z Deletion	20	PGmcFinalZDeletion	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band and is already implicated by the SC041 earlier boundary.	yes
-SC021	NWGmc Unstressed O Raising	21	NWGmcUnstressedORaising	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC022	NWGmc Mn Dissimilation	22	NWGmcMnDissimilation	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC023	NWGmc N Stem N Loss	23	NWGmcNStemNLoss	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band and is already implicated by the SC061 and SC069 earlier boundaries.	yes
-SC024	NWGmc Long E Lowering	24	NWGmcLongELowering	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC025	NWGmc Long E Nasal Rounding	25	NWGmcLongENasalRounding	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC026	NWGmc Nasal Spirant Lengthening	26	NWGmcNasalSpirantLengthening	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC027	NWGmc Nasal Spirant Loss	27	NWGmcNasalSpirantLoss	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC028	NWGmc Preconsonantal X Loss	28	NWGmcPreconsonantalXLoss	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band.	yes
-SC029	OE Awj Glide Formation	29	OEAwjGlideFormation	queued	high	Forms the remaining lower-early corridor immediately below the completed SC030-SC040 band and is directly implicated by the SC030 earlier boundary.	yes
+SC014	NWGmc Unstressed Ai Monophthongization	14	NWGmcUnstressedAiMonophthongization	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
+SC015	NWGmc I Lowering	15	NWGmcILowering	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
+SC016	OE Ws Palatal Glide	16	OEWsPalatalGlide	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
+SC017	NWGmc U Lowering	17	NWGmcULowering	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
+SC018	NWGmc Stressed Monosyllable O Raising	18	NWGmcStressedMonosyllableORaising	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
+SC019	NWGmc Final Long O Raising	19	NWGmcFinalLongORaising	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band and is already implicated by the SC020 and SC036 earlier boundaries.	yes
+SC020	PGmc Final Z Deletion	20	PGmcFinalZDeletion	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC021	NWGmc Unstressed O Raising	21	NWGmcUnstressedORaising	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC022	NWGmc Mn Dissimilation	22	NWGmcMnDissimilation	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC023	NWGmc N Stem N Loss	23	NWGmcNStemNLoss	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC024	NWGmc Long E Lowering	24	NWGmcLongELowering	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC025	NWGmc Long E Nasal Rounding	25	NWGmcLongENasalRounding	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC026	NWGmc Nasal Spirant Lengthening	26	NWGmcNasalSpirantLengthening	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC027	NWGmc Nasal Spirant Loss	27	NWGmcNasalSpirantLoss	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC028	NWGmc Preconsonantal X Loss	28	NWGmcPreconsonantalXLoss	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC029	OE Awj Glide Formation	29	OEAwjGlideFormation	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
 SC030	OE Au Fronting	30	OEAuFronting	done	completed	Already interpreted in the upper-early batch; retain for coverage and reference, not for re-queueing.	no
 SC031	OE WW Simplification	31	OEWWSimplification	done	completed	Already interpreted in the upper-early batch; retain for coverage and reference, not for re-queueing.	no
 SC032	OE Diphthong Leveling	32	OEDiphthongLeveling	done	completed	Already interpreted in the upper-early batch; retain for coverage and reference, not for re-queueing.	no
