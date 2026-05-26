@@ -158,30 +158,50 @@ The far-late manual terminal batch is now complete for:
 
 These results close the remaining explicit far-late corridor. They add four especially important reciprocal or near-reciprocal relations (`SC079` / `SC080`, `SC081` / `SC082`, `SC082` / `SC083`, `SC085` / `SC086`), and they also introduce three new broad/far earlier boundaries (`SC079` across `SC055`, `SC081` across `SC055`, `SC087` across `SC044`) plus four later search-limited outcomes (`SC080`, `SC083`, `SC086`, `SC087`) that must not be rewritten as historical adjacency claims.
 
+## Completed upper-early batch
+
+The upper-early manual terminal batch is now complete for:
+
+1. `SC030` OE Au Fronting
+2. `SC031` OE WW Simplification
+3. `SC032` OE Diphthong Leveling
+4. `SC033` OE Ew Long Diphthong
+5. `SC034` OE Aw Long Diphthong
+6. `SC035` OE Prefix A Reduction Early
+7. `SC036` OE Inter Stress Raising
+8. `SC037` OE Compound Linking Syncope
+9. `SC039` OE WI Combinative U Umlaut
+10. `SC040` OE Med Unstressed U Lowering
+
+These results close the upper-early corridor immediately below the already interpreted `SC041` region. They add three especially important reciprocal or near-reciprocal relations (`SC030` / `SC032`, `SC031` / `SC034`, `SC039` / `SC040`), three new broad/far historical constraints (`SC033` later across `SC044`, `SC036` earlier across `SC019`, `SC040` later across `SC072`), and several non-historical / runner-limited outcomes (`SC031` earlier, `SC033` earlier, `SC035` earlier, `SC037` earlier, `SC037` later, `SC039` earlier) that must not be rewritten as ordinary historical adjacency claims.
+
 ## Remaining eligible queued / pending rules
 
 Remaining eligible explicit-chain rules now still in `queued` / `pending` status are:
 
-1. Early corridor: `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`
-2. Late corridor: none remaining in the explicit searchable tail
+1. Early corridor: `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`
+2. Upper-early corridor: none remaining in the explicit searchable band
+3. Late corridor: none remaining in the explicit searchable tail
 
 ## Recommended next step
 
-Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. After the far-late interpretation pass, the most natural follow-up is the remaining upper-early explicit corridor closest to the completed network: `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, and `SC040`.
+Recommended next step: choose the next terminal batch from `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`. After the upper-early interpretation pass, the most natural follow-up is the remaining lower-early explicit corridor directly below that completed band: `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, and `SC029`.
 
-That ten-rule set fills the upper-early gap immediately below the already interpreted `SC041` region and around already implicated stages such as `SC034` and `SC037`. `SC038` remains absent from the explicit-chain candidate set.
+That ten-rule set fills the lower-early gap immediately below the newly interpreted `SC030`-`SC040` region and around already implicated stages such as `SC020` and `SC029`. `SC019` remains an immediate follow-up singleton already implicated by `SC036` earlier, but keeping the next batch to ten rules makes `SC020`-`SC029` the cleaner contiguous set.
 
 ## Narrative synthesis cautions
 
 Keep these synthesis cautions in view:
 
 1. The SC041 earlier boundary remains a broad computational limit rather than a narrow adjacency claim.
-2. The SC050 / SC053 / SC058 / SC065 / SC067 / SC076 earlier sides end at a runner boundary inside `PWGmcChanges`, so they should not be narrated as if historical earlier first-break boundaries had been found.
+2. The SC035 / SC037 / SC039 / SC050 / SC053 / SC058 / SC065 / SC067 / SC076 earlier sides end at a runner boundary inside `PWGmcChanges`, so they should not be narrated as if historical earlier first-break boundaries had been found.
 3. The SC049 / SC053 / SC056 / SC057 / SC058 / SC060 / SC061 / SC065 / SC067 / SC068 / SC069 / SC071 / SC075 / SC076 / SC080 / SC083 / SC086 later sides found no real break before the current SC087 search boundary, so they must not be rewritten as claims that those rules historically must precede `SC087`.
 4. The SC087 later side is bounded by the current runner limit beyond order `86`, not by a discovered historical stage.
-5. The SC069 earlier boundary at `SC023`, the SC079 earlier boundary at `SC055`, the SC081 earlier boundary at `SC055`, and the SC087 earlier boundary at `SC044` are broad or far enough that they should be narrated as computational boundaries rather than as tight local adjacency claims.
-6. The SC061 earlier row records loss of output (`+?`) rather than an ordinary surface variant and should be narrated carefully.
-7. The SC073 later boundary should be keyed to `SC085` OE H Loss exactly as recorded in the TSV.
+5. The SC031 earlier and SC033 earlier breaks cross bundled `PWGmcChanges`, and the SC037 later break crosses technical-marker `SC038`; these are real computational breaks but not ordinary historical chronology constraints.
+6. The SC033 later boundary at `SC044`, the SC036 earlier boundary at `SC019`, the SC040 later boundary at `SC072`, the SC069 earlier boundary at `SC023`, the SC079 earlier boundary at `SC055`, the SC081 earlier boundary at `SC055`, and the SC087 earlier boundary at `SC044` are broad or far enough that they should be narrated as computational boundaries rather than as tight local adjacency claims.
+7. The SC030 later and SC032 earlier `+?` rows are no-output / failed derivations, not ordinary surface variants, and should be narrated carefully.
+8. The SC061 earlier row also records loss of output (`+?`) rather than an ordinary surface variant and should be narrated carefully.
+9. The SC073 later boundary should be keyed to `SC085` OE H Loss exactly as recorded in the TSV.
 
 ## Scaling note
 
