@@ -1,10 +1,10 @@
 change_id	display_name	current_order	rule_name	current_manifest_status	suggested_priority	reason	recommended_for_next_batch
-SC014	NWGmc Unstressed Ai Monophthongization	14	NWGmcUnstressedAiMonophthongization	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
-SC015	NWGmc I Lowering	15	NWGmcILowering	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
-SC016	OE Ws Palatal Glide	16	OEWsPalatalGlide	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
-SC017	NWGmc U Lowering	17	NWGmcULowering	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
-SC018	NWGmc Stressed Monosyllable O Raising	18	NWGmcStressedMonosyllableORaising	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band.	yes
-SC019	NWGmc Final Long O Raising	19	NWGmcFinalLongORaising	queued	high	Forms the remaining early explicit corridor immediately below the newly completed SC020-SC040 band and is already implicated by the SC020 and SC036 earlier boundaries.	yes
+SC014	NWGmc Unstressed Ai Monophthongization	14	NWGmcUnstressedAiMonophthongization	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
+SC015	NWGmc I Lowering	15	NWGmcILowering	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
+SC016	OE Ws Palatal Glide	16	OEWsPalatalGlide	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
+SC017	NWGmc U Lowering	17	NWGmcULowering	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
+SC018	NWGmc Stressed Monosyllable O Raising	18	NWGmcStressedMonosyllableORaising	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
+SC019	NWGmc Final Long O Raising	19	NWGmcFinalLongORaising	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
 SC020	PGmc Final Z Deletion	20	PGmcFinalZDeletion	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
 SC021	NWGmc Unstressed O Raising	21	NWGmcUnstressedORaising	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
 SC022	NWGmc Mn Dissimilation	22	NWGmcMnDissimilation	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
