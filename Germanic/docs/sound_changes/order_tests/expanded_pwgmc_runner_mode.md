@@ -61,8 +61,46 @@ This prints the live order profile with inventory IDs and marks the target rule,
 3. `SC004` through `SC013` appear explicitly in the expanded order
 4. `SC014` is still present and movable
 
+Dry-run order inspection is intentionally allowed with the default output paths, because it does not write any result TSVs.
+
 ## Safety and output-policy note
 
 This is safe as an optional mode because it only changes the in-memory order list used by first-break variant generation when the expanded profile is requested. It does **not** rewrite `EnglishProtoToOE`, modify the default live runner path, or touch existing first-break TSV outputs.
 
 The current 70-card corpus and its existing summary/graph layers remain based on the **default bundled profile**. Any future expanded-PWGmc testing must write to **separate output files** and must not overwrite the current default-profile corpus.
+
+The runner now enforces that policy: a real `--mode first-break --order-profile expanded-pwgmc` run is refused unless all three first-break output paths are explicitly set away from the default bundled-profile files.
+
+Suggested expanded-profile output filenames:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01_failures.tsv`
+
+## Safe command patterns
+
+### Safe dry-run inspection
+
+```bash
+python3 Germanic/tools/sound_change_order_sensitivity.py \
+  --mode first-break \
+  --change SC014 \
+  --direction earlier \
+  --order-profile expanded-pwgmc \
+  --dry-run-order
+```
+
+### Intended separate-output run pattern
+
+```bash
+python3 Germanic/tools/sound_change_order_sensitivity.py \
+  --mode first-break \
+  --change SC014 \
+  --direction earlier \
+  --order-profile expanded-pwgmc \
+  --first-break-output Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01.tsv \
+  --first-break-changes-output Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01_changes.tsv \
+  --first-break-failures-output Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_01_failures.tsv
+```
+
+If the expanded profile is invoked without separate output paths, the runner exits immediately with a refusal message rather than risking writes into the default bundled-profile corpus.

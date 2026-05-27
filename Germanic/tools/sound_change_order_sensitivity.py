@@ -305,6 +305,35 @@ def resolve_first_break_order_profile(
     raise ValueError(f"Unknown order profile: {order_profile}")
 
 
+def ensure_expanded_pwgmc_outputs_are_separate(
+    *,
+    order_profile: str,
+    dry_run_order: bool,
+    first_break_output: Path,
+    first_break_changes_output: Path,
+    first_break_failures_output: Path,
+) -> None:
+    if order_profile != EXPANDED_PWGMC_ORDER_PROFILE or dry_run_order:
+        return
+    defaults = repo_paths()
+    default_outputs = {
+        defaults["first_break_tsv"].resolve(),
+        defaults["first_break_changes_tsv"].resolve(),
+        defaults["first_break_failures_tsv"].resolve(),
+    }
+    current_outputs = [
+        first_break_output.resolve(),
+        first_break_changes_output.resolve(),
+        first_break_failures_output.resolve(),
+    ]
+    if any(path in default_outputs for path in current_outputs):
+        raise SystemExit(
+            "expanded-pwgmc order profile requires separate --first-break-output, "
+            "--first-break-changes-output, and --first-break-failures-output paths; "
+            "refusing to write expanded-profile results into the default first-break corpus."
+        )
+
+
 def print_order_profile(
     order: Sequence[str],
     order_profile: str,
@@ -1367,6 +1396,13 @@ def main() -> None:
     first_break_output = Path(args.first_break_output).expanduser().resolve()
     first_break_changes_output = Path(args.first_break_changes_output).expanduser().resolve()
     first_break_failures_output = Path(args.first_break_failures_output).expanduser().resolve()
+    ensure_expanded_pwgmc_outputs_are_separate(
+        order_profile=args.order_profile,
+        dry_run_order=args.dry_run_order,
+        first_break_output=first_break_output,
+        first_break_changes_output=first_break_changes_output,
+        first_break_failures_output=first_break_failures_output,
+    )
 
     inventory_by_id, ordered_inventory = load_inventory(inventory_path)
     live_order = parse_english_proto_to_oe_order(germanic_path)
