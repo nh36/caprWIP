@@ -1,4 +1,14 @@
 variant_id	change_id	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	failure_type	note
+SC015_later_order_36	SC015	later	36	SC036	OE Inter Stress Raising	OEInterStressRaising	historical_sound_change	world	*wír-àldu	weorold	weorold	wuruld	newly_failing	Crossing OEInterStressRaising changed the output.
+SC016_later_order_17	SC016	later	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	yoke	*júką	ġeoc	ġeoc	ġoc	newly_failing	Crossing NWGmcULowering changed the output.
+SC017_earlier_order_16	SC017	earlier	16	SC016	OE Ws Palatal Glide	OEWsPalatalGlide	historical_sound_change	yoke	*júką	ġeoc	ġeoc	ġoc	newly_failing	Crossing OEWsPalatalGlide changed the output.
+SC017_later_order_19	SC017	later	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	nose	*núsō	nosu	nosu	nusu	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
+SC017_later_order_19	SC017	later	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	shovel	*skúflō	sċofl	sċofl	sċufl	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
+SC017_later_order_19	SC017	later	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	sorrow	*súrgō	sorg	sorg	surg	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	nose	*núsō	nosu	nosu	nusu	newly_failing	Crossing NWGmcULowering changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	shovel	*skúflō	sċofl	sċofl	sċufl	newly_failing	Crossing NWGmcULowering changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	sorrow	*súrgō	sorg	sorg	surg	newly_failing	Crossing NWGmcULowering changed the output.
+SC019_later_order_20	SC019	later	20	SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	historical_sound_change	rest	*rástōz	ræste	ræste	rast	newly_failing	Crossing PGmcFinalZDeletion changed the output.
 SC020_earlier_order_19	SC020	earlier	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	rest	*rástōz	ræste	ræste	rast	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
 SC020_later_order_40	SC020	later	40	SC040	OE Med Unstressed U Lowering	OEMedUnstressedULowering	historical_sound_change	beaver	*bébruz	befer	befer	befro	newly_failing	Crossing OEMedUnstressedULowering changed the output.
 SC020_later_order_40	SC020	later	40	SC040	OE Med Unstressed U Lowering	OEMedUnstressedULowering	historical_sound_change	bough	*bōguz	bōg	bōg	bōgo	newly_failing	Crossing OEMedUnstressedULowering changed the output.
