@@ -27,18 +27,22 @@ Some reordered variants change an output while still matching the expected Old E
 
 Some genuine first-break rows do not yield an alternate surface form at all. When the TSV writes the variant output as `+?`, the reordered derivation produced no output / failed derivation. Those rows still define real boundaries when the baseline matched and the variant stopped matching, but the prose should describe them as failed derivations rather than as competing Old English forms.
 
-## Boundary-limited and non-historical cases
+## Boundary-limited and technical / scaffolding cases
 
-Not every tested side reaches an ordinary historical first-break boundary. The current card set now includes five non-ordinary patterns:
+Not every tested side reaches an ordinary sound-change chronology first-break boundary. The current card set now includes five non-ordinary patterns:
 
 - earlier searches blocked by bundled `PWGmcChanges` with no real break (`SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, `SC076`);
 - real computational earlier breaks that only appear when the move crosses bundled `PWGmcChanges` (`SC031` earlier, `SC033` earlier);
-- real computational later breaks that cross technical markers rather than ordinary historical sound changes (`SC037` later over `SC038`);
+- real computational later breaks that cross technical markers rather than ordinary sound-change rules (`SC037` later over `SC038`);
 - later searches that find no real break before the current `SC087` search boundary (`SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, `SC086`);
 - the terminal later search for `SC087`, which reaches the current runner limit beyond order `86` with no detected break.
 
-Those sides are boundary-limited or non-historical. They should not be rewritten as claims that the rule must precede or follow a specific ordinary historical stage. They only show that no real break was detected before the current runner boundary, or that the first computational break crosses a bundled / technical stage that the current runner does not yet treat as an ordinary chronology target.
+Those sides are boundary-limited or technical/scaffolding evidence. They should not be rewritten as claims that the rule must precede or follow a specific ordinary sound-change stage. They only show that no real break was detected before the current runner boundary, or that the first computational break crosses a bundled / technical stage that the current runner does not yet treat as an ordinary chronology target.
+
+## Terminology note
+
+In this documentation, **ordinary chronology** means a first-break relation between modeled sound-change rules. Technical markers, bundled runner stages such as `PWGmcChanges`, and no-break search boundaries are still useful computational evidence, but they are not ordinary sound-change chronology constraints.
 
 ## How the cards support later prose
 
-The cards are intended as reusable building blocks for the later sound-change write-up. Each card keeps the same section order, records concrete PGmc > expected OE vs variant OE contrasts, and notes whether a boundary is tight and local, broad and computational, reciprocal with another card, one-sided in current testing, non-historical because it crosses a bundled or technical stage, or runner-bounded. The index and consolidation report in this directory provide the cross-card view needed before those constraints are turned into chapter prose, including newer early-corridor, lower-early, upper-early, late-corridor, and far-late reciprocal pairs such as `SC016` / `SC017`, `SC017` / `SC019`, `SC019` / `SC020`, `SC026` / `SC027`, `SC029` / `SC030`, `SC030` / `SC032`, `SC031` / `SC034`, `SC039` / `SC040`, `SC066` / `SC068`, `SC070` / `SC071`, `SC074` / `SC075`, `SC079` / `SC080`, `SC081` / `SC082`, `SC082` / `SC083`, and `SC085` / `SC086`. For the full corpus-wide synthesis, use `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.
+The cards are intended as reusable building blocks for the later sound-change write-up. Each card keeps the same section order, records concrete PGmc > expected OE vs variant OE contrasts, and notes whether a boundary is tight and local, broad and computational, reciprocal with another card, one-sided in current testing, technical/scaffolding because it crosses a bundled or technical stage, or runner-bounded. The index and consolidation report in this directory provide the cross-card view needed before those constraints are turned into chapter prose, including newer early-corridor, lower-early, upper-early, late-corridor, and far-late reciprocal pairs such as `SC016` / `SC017`, `SC017` / `SC019`, `SC019` / `SC020`, `SC026` / `SC027`, `SC029` / `SC030`, `SC030` / `SC032`, `SC031` / `SC034`, `SC039` / `SC040`, `SC066` / `SC068`, `SC070` / `SC071`, `SC074` / `SC075`, `SC079` / `SC080`, `SC081` / `SC082`, `SC082` / `SC083`, and `SC085` / `SC086`. For the full corpus-wide synthesis, use `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.

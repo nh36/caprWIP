@@ -115,6 +115,30 @@ def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text.strip())
 
 
+def normalize_graph_text(text: str) -> str:
+    replacements = [
+        ("No historical first break was found", "No ordinary chronology first break was found"),
+        ("no historical first break", "no ordinary chronology first break"),
+        ("No earlier historical break was found", "No earlier ordinary chronology break was found"),
+        ("no historical break before bundled PWGmcChanges", "no ordinary chronology break before bundled PWGmcChanges"),
+        ("historically interpretable constraint", "ordinary chronology constraint"),
+        ("one-sided historical boundary", "one-sided chronology boundary"),
+        ("historical first break", "ordinary chronology first break"),
+        ("historical boundary", "ordinary chronology boundary"),
+        ("historical relation", "ordinary chronology relation"),
+        ("historically real", "an ordinary chronology relation"),
+        ("is historical and local", "is an ordinary chronology boundary and local"),
+        ("is also historical but broad/far", "is also an ordinary chronology boundary but broad/far"),
+        ("is historical but broad/far", "is an ordinary chronology boundary but broad/far"),
+        ("is non-historical", "is technical/scaffolding"),
+        (" non-historical ", " technical/scaffolding "),
+    ]
+    normalized = text
+    for old, new in replacements:
+        normalized = normalized.replace(old, new)
+    return normalized
+
+
 def extract_section(text: str, heading: str, next_heading: str) -> str:
     pattern = rf"## {re.escape(heading)}(.*?)## {re.escape(next_heading)}"
     match = re.search(pattern, text, re.S)
@@ -174,12 +198,12 @@ def node_category(index_row: dict[str, str]) -> str:
     if broad:
         return "broad_far"
     if historical_count == 1:
-        return "one_sided_historical"
+        return "one_sided_chronology"
     if has_nonhistorical or earlier_type in {"blocked_by_runner_limitation", "technical_marker"} or later_type in {
         "blocked_by_runner_limitation",
         "technical_marker",
     }:
-        return "runner_limited_or_non_historical"
+        return "runner_limited_or_technical"
     return "mixed"
 
 
@@ -205,14 +229,14 @@ def classify_historical_edge(
     side_is_broad = broad_side in {side, "both"}
 
     if pair_group and (pair_group in BROAD_RECIPROCAL_GROUPS or side_is_broad):
-        return "broad_far_historical", "broad_reciprocal", pair_group
+        return "broad_far_chronology", "broad_reciprocal", pair_group
     if pair_group and pair_group in NEAR_RECIPROCAL_GROUPS:
-        return "near_reciprocal_historical", "nonlocal_reciprocal", pair_group
+        return "near_reciprocal_chronology", "nonlocal_reciprocal", pair_group
     if pair_group:
-        return "reciprocal_historical", "tight_local", pair_group
+        return "reciprocal_chronology", "tight_local", pair_group
     if side_is_broad:
-        return "broad_far_historical", "broad_far", ""
-    return "one_sided_historical", "one_sided", ""
+        return "broad_far_chronology", "broad_far", ""
+    return "one_sided_chronology", "one_sided", ""
 
 
 def diagnostic_target(index_row: dict[str, str], side: str) -> str:
@@ -237,7 +261,7 @@ def build_nodes(index_rows: list[dict[str, str]], card_meta_by_id: dict[str, dic
                 "card_path": str(card_meta_by_id[change_id]["card_path"]),
                 "card_type": node_category(row),
                 "has_reciprocal_boundary": row["has_reciprocal_boundary"],
-                "short_summary": row["notes"],
+                "short_summary": normalize_graph_text(row["notes"]),
             }
         )
     return nodes
@@ -256,7 +280,7 @@ def build_edges(
             target_id = diagnostic_target(row, side)
             lexemes = representative_lexemes(row, side)
             forms = representative_forms(card_meta, side)
-            notes = row["notes"]
+            notes = normalize_graph_text(row["notes"])
             if boundary_type == "historical_first_break":
                 relation_type, strength, reciprocal_group_id = classify_historical_edge(
                     row, target_id, side
@@ -264,29 +288,29 @@ def build_edges(
                 interpretation_category = (
                     "reciprocal_or_near_reciprocal"
                     if reciprocal_group_id
-                    else ("broad_far" if relation_type == "broad_far_historical" else "one_sided_historical")
+                    else ("broad_far" if relation_type == "broad_far_chronology" else "one_sided_chronology")
                 )
             elif boundary_type == "blocked_by_runner_limitation":
                 failure_count = int(row[f"{side}_failure_count"] or "0")
                 reciprocal_group_id = ""
                 if failure_count > 0:
-                    relation_type = "non_historical_computational"
+                    relation_type = "technical_computational"
                     strength = "bundled_stage"
-                    interpretation_category = "non_historical_computational"
+                    interpretation_category = "technical_computational"
                 else:
                     relation_type = "runner_limited_boundary"
-                    strength = "search_limit"
-                    interpretation_category = "runner_limited_boundary"
+                    strength = "runner_boundary"
+                    interpretation_category = "runner_boundary"
             elif boundary_type == "technical_marker":
-                relation_type = "non_historical_computational"
+                relation_type = "technical_computational"
                 strength = "technical_marker"
                 reciprocal_group_id = ""
-                interpretation_category = "non_historical_computational"
+                interpretation_category = "technical_computational"
             elif boundary_type == "no_break_before_runner_boundary":
                 relation_type = "no_break_search_boundary"
-                strength = "search_limit"
+                strength = "search_boundary"
                 reciprocal_group_id = ""
-                interpretation_category = "no_break_search_boundary"
+                interpretation_category = "search_boundary"
             else:
                 raise ValueError(f"Unexpected boundary type {boundary_type!r} for {change_id} {side}")
 
@@ -320,10 +344,10 @@ def edge_sort_key(edge: dict[str, str], order_by_id: dict[str, int]) -> tuple[in
 def dot_node_style(card_type: str) -> tuple[str, str]:
     styles = {
         "reciprocal_or_near_reciprocal": ("ellipse", "#2f855a"),
-        "one_sided_historical": ("box", "#4a5568"),
+        "one_sided_chronology": ("box", "#4a5568"),
         "broad_far": ("box", "#2b6cb0"),
         "negative_boundary": ("octagon", "#c53030"),
-        "runner_limited_or_non_historical": ("diamond", "#b7791f"),
+        "runner_limited_or_technical": ("diamond", "#b7791f"),
         "mixed": ("hexagon", "#6b46c1"),
     }
     return styles[card_type]
@@ -331,11 +355,11 @@ def dot_node_style(card_type: str) -> tuple[str, str]:
 
 def dot_edge_style(relation_type: str) -> tuple[str, str, str]:
     styles = {
-        "reciprocal_historical": ("#2f855a", "solid", "2.2"),
-        "near_reciprocal_historical": ("#2f855a", "dashed", "2.0"),
-        "one_sided_historical": ("#4a5568", "solid", "1.5"),
-        "broad_far_historical": ("#2b6cb0", "dashed", "1.8"),
-        "non_historical_computational": ("#b7791f", "dotted", "1.6"),
+        "reciprocal_chronology": ("#2f855a", "solid", "2.2"),
+        "near_reciprocal_chronology": ("#2f855a", "dashed", "2.0"),
+        "one_sided_chronology": ("#4a5568", "solid", "1.5"),
+        "broad_far_chronology": ("#2b6cb0", "dashed", "1.8"),
+        "technical_computational": ("#b7791f", "dotted", "1.6"),
         "no_break_search_boundary": ("#c53030", "dotted", "1.5"),
         "runner_limited_boundary": ("#c05621", "dashed", "1.5"),
     }
@@ -416,17 +440,17 @@ def build_summary(
 
     edge_counts = Counter(edge["relation_type"] for edge in edges)
     node_counts = Counter(node["card_type"] for node in nodes)
-    broad_edges = [edge for edge in edges if edge["relation_type"] == "broad_far_historical"]
+    broad_edges = [edge for edge in edges if edge["relation_type"] == "broad_far_chronology"]
     negative_nodes = [node["change_id"] for node in nodes if node["card_type"] == "negative_boundary"]
     runner_limited_sources = sorted(
         edge["source_change_id"]
         for edge in edges
         if edge["relation_type"] == "runner_limited_boundary" and edge["target_change_id"] == "PWGmcChanges"
     )
-    non_historical_edges = [
+    technical_edges = [
         edge
         for edge in edges
-        if edge["relation_type"] == "non_historical_computational"
+        if edge["relation_type"] == "technical_computational"
     ]
     search_boundary_sources = sorted(
         edge["source_change_id"]
@@ -440,6 +464,8 @@ def build_summary(
         "## Scope",
         "",
         "This graph export was generated from the audited first-break chronology corpus. It reuses the current chronology-card, index, and summary-table layer only; no new first-break computations were run.",
+        "",
+        "In this documentation, **ordinary chronology** means a first-break relation between modeled sound-change rules. Technical markers, bundled runner stages such as `PWGmcChanges`, and no-break search boundaries are still useful computational evidence, but they are not ordinary sound-change chronology constraints.",
         "",
         "## Totals",
         "",
@@ -472,7 +498,7 @@ def build_summary(
             "",
             "## Strongest reciprocal / near-reciprocal clusters",
             "",
-            "The list below includes both tight reciprocal relations and broader reciprocal-like corridors. Entries marked `broad_far_historical` or `near_reciprocal_historical` should not be read as immediate local adjacency claims.",
+            "The list below includes both tight reciprocal relations and broader reciprocal-like corridors. Entries marked `broad_far_chronology` or `near_reciprocal_chronology` should not be read as immediate local adjacency claims.",
             "",
         ]
     )
@@ -504,7 +530,7 @@ def build_summary(
     lines.extend(
         [
             "",
-            "## Broad / far constraints",
+            "## Broad / far chronology constraints",
             "",
         ]
     )
@@ -520,15 +546,15 @@ def build_summary(
             "",
             ", ".join(f"`{node}`" for node in negative_nodes),
             "",
-            "## Runner-limited or non-historical cases",
+            "## Runner-limited and technical / boundary cases",
             "",
             f"- earlier runner-limited boundaries to `PWGmcChanges`: {', '.join(f'`{cid}`' for cid in runner_limited_sources)}",
             f"- later no-break search-boundary cases before `SC087`: {', '.join(f'`{cid}`' for cid in search_boundary_sources)}",
-            "- these runner-limited and no-break edges are diagnostic search-boundary observations, not historical constraints tying the source rule to `PWGmcChanges` or `SC087`",
-            "- non-historical computational edges:",
+            "- these runner-limited and no-break edges are diagnostic search-boundary observations, not ordinary sound-change chronology constraints tying the source rule to `PWGmcChanges` or `SC087`",
+            "- technical / scaffolding edges:",
         ]
     )
-    for edge in sorted(non_historical_edges, key=lambda item: item["source_change_id"]):
+    for edge in sorted(technical_edges, key=lambda item: item["source_change_id"]):
         lines.append(
             f"  - `{edge['source_change_id']} -> {edge['target_change_id']}` ({edge['direction_basis']}) — {edge['notes']}"
         )

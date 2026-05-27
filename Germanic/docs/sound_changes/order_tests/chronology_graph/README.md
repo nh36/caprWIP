@@ -6,10 +6,15 @@ This directory contains a lightweight graph/data export of the completed searcha
 
 1. `build_first_break_graph.py` — standard-library exporter that regenerates the graph files in this directory.
 2. `first_break_nodes.tsv` — one row per chronology-card node in the current searchable corpus.
-3. `first_break_edges.tsv` — historically meaningful and diagnostically useful relations extracted from the card/index layer.
+3. `first_break_edges.tsv` — ordinary sound-change chronology relations and diagnostically useful boundary relations extracted from the card/index layer.
 4. `first_break_edges.dot` — Graphviz DOT export for dependency-free downstream rendering.
 5. `first_break_edges.json` — JSON export of the node/edge payload.
 6. `first_break_graph_summary.md` — corpus-level summary of node/edge counts and major relation classes.
+7. `first_break_graph_terminology_note.md` — terminology rationale and old-to-new label mapping for this export layer.
+
+## Terminology note
+
+In this documentation, **ordinary chronology** means a first-break relation between modeled sound-change rules. Technical markers, bundled runner stages such as `PWGmcChanges`, and no-break search boundaries are still useful computational evidence, but they are not ordinary sound-change chronology constraints.
 
 ## Node schema
 
@@ -27,15 +32,15 @@ This directory contains a lightweight graph/data export of the completed searcha
 `card_type` uses a controlled vocabulary:
 
 1. `reciprocal_or_near_reciprocal`
-2. `one_sided_historical`
+2. `one_sided_chronology`
 3. `broad_far`
 4. `negative_boundary`
-5. `runner_limited_or_non_historical`
+5. `runner_limited_or_technical`
 6. `mixed`
 
 ## Edge schema
 
-`first_break_edges.tsv` exports both ordinary historical constraints and diagnostically useful non-ordinary boundary observations. Main fields:
+`first_break_edges.tsv` exports both ordinary sound-change chronology constraints and diagnostically useful boundary observations. Main fields:
 
 1. `source_change_id`
 2. `target_change_id`
@@ -50,11 +55,11 @@ This directory contains a lightweight graph/data export of the completed searcha
 
 `relation_type` uses a controlled vocabulary:
 
-1. `reciprocal_historical`
-2. `near_reciprocal_historical`
-3. `one_sided_historical`
-4. `broad_far_historical`
-5. `non_historical_computational`
+1. `reciprocal_chronology`
+2. `near_reciprocal_chronology`
+3. `one_sided_chronology`
+4. `broad_far_chronology`
+5. `technical_computational`
 6. `no_break_search_boundary`
 7. `runner_limited_boundary`
 

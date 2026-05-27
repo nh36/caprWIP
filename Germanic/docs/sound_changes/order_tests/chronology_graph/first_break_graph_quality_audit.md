@@ -55,19 +55,19 @@ No count mismatch was found.
 The node `card_type` values are all within the allowed controlled vocabulary:
 
 1. `reciprocal_or_near_reciprocal`
-2. `one_sided_historical`
+2. `one_sided_chronology`
 3. `broad_far`
 4. `negative_boundary`
-5. `runner_limited_or_non_historical`
+5. `runner_limited_or_technical`
 6. `mixed`
 
 The edge `relation_type` values are all within the allowed controlled vocabulary:
 
-1. `reciprocal_historical`
-2. `near_reciprocal_historical`
-3. `one_sided_historical`
-4. `broad_far_historical`
-5. `non_historical_computational`
+1. `reciprocal_chronology`
+2. `near_reciprocal_chronology`
+3. `one_sided_chronology`
+4. `broad_far_chronology`
+5. `technical_computational`
 6. `no_break_search_boundary`
 7. `runner_limited_boundary`
 
@@ -87,12 +87,12 @@ Additional checks:
 
 1. No unexpected diagnostic target ids were introduced.
 2. `SC087` appears only as an ordinary node target for `no_break_search_boundary` edges, not as a separate diagnostic-target class.
-3. `PWGmcChanges` is used only for `runner_limited_boundary` or `non_historical_computational` edges.
-4. `SC037 -> SC038` is exported only as `non_historical_computational`.
+3. `PWGmcChanges` is used only for `runner_limited_boundary` or `technical_computational` edges.
+4. `SC037 -> SC038` is exported only as `technical_computational`.
 
 ## Reciprocal group result
 
-Every `reciprocal_historical` or `near_reciprocal_historical` edge has a non-empty `reciprocal_group_id`, and every reciprocal group has the expected reversed partner edge.
+Every `reciprocal_chronology` or `near_reciprocal_chronology` edge has a non-empty `reciprocal_group_id`, and every reciprocal group has the expected reversed partner edge.
 
 No malformed reciprocal groups were found.
 
@@ -102,27 +102,27 @@ Two graph-layer interpretation fixes were made:
 
 1. `SC031 -> PWGmcChanges` and `SC033 -> PWGmcChanges` had initially been exported as plain `runner_limited_boundary` edges.
    - This was too weak: the cards explicitly describe both sides as real computational breaks that cross bundled `PWGmcChanges`.
-   - They now export as `non_historical_computational`.
+   - They now export as `technical_computational`.
 
-2. `SC064 / SC072` had initially been exported as `reciprocal_historical`.
+2. `SC064 / SC072` had initially been exported as `reciprocal_chronology`.
    - The cards do support reciprocity, but the evidence is narrow, concentrated in the same `fright` derivation, and spans a non-local corridor.
-   - The pair now exports as `near_reciprocal_historical`, and the summary explicitly warns that `near_reciprocal_historical` and `broad_far_historical` entries are not immediate local adjacency claims.
+   - The pair now exports as `near_reciprocal_chronology`, and the summary explicitly warns that `near_reciprocal_chronology` and `broad_far_chronology` entries are not immediate local adjacency claims.
 
 ### Special pair check
 
 The three audit-focus pairs now behave correctly:
 
-1. `SC047 / SC048` — exported as `broad_far_historical`, not tight local reciprocity.
-2. `SC064 / SC072` — exported as `near_reciprocal_historical`, not tight local reciprocity.
-3. `SC072 / SC073` — exported as `broad_far_historical`, not tight local reciprocity.
+1. `SC047 / SC048` — exported as `broad_far_chronology`, not tight local reciprocity.
+2. `SC064 / SC072` — exported as `near_reciprocal_chronology`, not tight local reciprocity.
+3. `SC072 / SC073` — exported as `broad_far_chronology`, not tight local reciprocity.
 
 ## Boundary-edge result
 
-The graph export now keeps the diagnostic boundary classes separate from ordinary historical chronology edges:
+The graph export now keeps the diagnostic boundary classes separate from ordinary sound-change chronology edges:
 
-1. `no_break_search_boundary` edges remain search-boundary observations only and are not described as historical must-precede constraints.
-2. `runner_limited_boundary` edges to `PWGmcChanges` remain search-limit observations rather than historical first breaks.
-3. `SC031 -> PWGmcChanges` and `SC033 -> PWGmcChanges` are explicitly marked as non-historical computational breaks rather than ordinary runner-limited non-events.
+1. `no_break_search_boundary` edges remain search-boundary observations only and are not described as ordinary chronology must-precede constraints.
+2. `runner_limited_boundary` edges to `PWGmcChanges` remain search-limit observations rather than ordinary chronology first breaks.
+3. `SC031 -> PWGmcChanges` and `SC033 -> PWGmcChanges` are explicitly marked as `technical_computational` breaks rather than ordinary runner-limited non-events.
 4. `SC037 -> SC038` remains a technical-marker edge and is not exported as ordinary chronology evidence.
 
 ## Summary prose result
@@ -130,9 +130,9 @@ The graph export now keeps the diagnostic boundary classes separate from ordinar
 `first_break_graph_summary.md` now stays within the audited interpretive limits:
 
 1. broad/far constraints are separated from tighter reciprocal relations;
-2. `broad_far_historical` and `near_reciprocal_historical` clusters are explicitly warned against adjacency-style reading;
-3. runner-limited and no-break edges are explicitly described as diagnostic search-boundary observations rather than historical constraints tied to `PWGmcChanges` or `SC087`;
-4. technical-marker and bundled-stage cases are explicitly isolated in the non-historical section.
+2. `broad_far_chronology` and `near_reciprocal_chronology` clusters are explicitly warned against adjacency-style reading;
+3. runner-limited and no-break edges are explicitly described as diagnostic search-boundary observations rather than ordinary chronology constraints tied to `PWGmcChanges` or `SC087`;
+4. technical-marker and bundled-stage cases are explicitly isolated in the technical/scaffolding section.
 
 No remaining wording was found that materially overstates the graph evidence.
 
@@ -142,7 +142,7 @@ The export is usable, but a few interpretation caveats remain inherent to the co
 
 1. some reciprocal or near-reciprocal groups are constructionally strong but still narrow in lexical coverage;
 2. broad/far relations remain computationally real without implying local adjacency;
-3. the largest current blind spot is still the bundled earlier corridor inside `PWGmcChanges`, which the graph can label but not yet unpack historically.
+3. the largest current blind spot is still the bundled earlier corridor inside `PWGmcChanges`, which the graph can label but not yet unpack into finer ordinary chronology targets.
 
 ## Recommendation for the next phase
 

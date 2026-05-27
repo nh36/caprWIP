@@ -8,7 +8,7 @@ The current chronology-card set now covers seventy tested rules:
 2. `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`
 3. `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
-This means the early-corridor batch, the lower-early batch, the upper-early batch, the pilot rules, batch 04, batch 05, the scaled batch, the gap-filling batch, the late-corridor batch, and the far-late batch are all now represented in a single indexed card set. The refreshed `chronology_card_index.tsv` records the current order, safe window, boundary type, failure counts, reciprocal status, broad-boundary flags, and runner-bounded or non-historical cautions for each completed card. For the final corpus-wide synthesis, use `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.
+This means the early-corridor batch, the lower-early batch, the upper-early batch, the pilot rules, batch 04, batch 05, the scaled batch, the gap-filling batch, the late-corridor batch, and the far-late batch are all now represented in a single indexed card set. The refreshed `chronology_card_index.tsv` records the current order, safe window, boundary type, failure counts, reciprocal status, broad-boundary flags, and runner-bounded or technical/scaffolding cautions for each completed card. For the final corpus-wide synthesis, use `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.
 
 ## Strong reciprocal boundaries found so far
 
@@ -26,7 +26,7 @@ The strongest reciprocal or near-reciprocal relations visible in the current car
 10. `SC043` / `SC044`: `SC043` later breaks across `SC044`, and `SC044` earlier breaks across `SC043`.
 11. `SC044` / `SC045`: `SC044` later breaks across `SC045`, and `SC045` earlier breaks across `SC044`.
 12. `SC047` / `SC048`: `SC047` later and `SC048` earlier share the same 87-row broad `-en` failure set.
-13. `SC050` / `SC052`: `SC050` later and `SC052` earlier form a concrete local relation around `stretch`; `SC050` earlier is still runner-bounded and is not part of a reciprocal historical pair.
+13. `SC050` / `SC052`: `SC050` later and `SC052` earlier form a concrete local relation around `stretch`; `SC050` earlier is still runner-bounded and is not part of a reciprocal chronology pair.
 14. `SC052` / `SC055`: `SC052` later and `SC055` earlier form a tight reciprocal relation around `cow` and `lung`.
 15. `SC055` / `SC056`: `SC055` later and `SC056` earlier form a reciprocal boundary around `gift` and `sheath`.
 16. `SC064` / `SC072`: `SC064` later and `SC072` earlier form a reciprocal `fright`-based boundary.
@@ -64,15 +64,15 @@ Several boundaries need explicit broad-boundary handling rather than narrow adja
 
 These cards support later chronology prose, but the prose must not flatten them into single-lexeme adjacency claims. The index marks these sides in `broad_boundary_side` so they can be filtered during later chapter drafting.
 
-## Non-historical computational breaks
+## Technical / scaffolding computational breaks
 
-Three tested sides currently produce real computational first breaks that should still be kept out of ordinary historical chronology prose:
+Three tested sides currently produce real computational first breaks that should still be kept out of ordinary sound-change chronology prose:
 
 1. `SC031` earlier crosses bundled `PWGmcChanges` at order `13`.
 2. `SC033` earlier also crosses bundled `PWGmcChanges` at order `13`.
-3. `SC037` later crosses `SC038` OE Strip Secondary Stress, a technical marker rather than an ordinary historical sound change.
+3. `SC037` later crosses `SC038` OE Strip Secondary Stress, a technical marker rather than an ordinary sound-change chronology target.
 
-These sides matter as computational evidence, but they should be narrated as non-historical / runner-limited / technical-marker cases rather than as normal chronology constraints.
+These sides matter as computational evidence, but they should be narrated as technical / runner-limited / technical-marker cases rather than as ordinary sound-change chronology constraints.
 
 ## Runner-bounded / no-break sides
 
@@ -82,7 +82,7 @@ The runner-bounded set now falls into three groups:
 2. Later searches that found no real break through last safe order `86` before the current `SC087` search boundary: `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, `SC086`
 3. The terminal later search for `SC087`, which found no real break beyond current order `86` before the current runner limit
 
-These sides are computational boundary observations, not positive historical claims about `SC087` or about specific earlier bundled stages.
+These sides are computational boundary observations, not positive ordinary chronology claims about `SC087` or about specific earlier bundled stages.
 
 ## Cards normalized in this pass
 
@@ -107,16 +107,16 @@ This pass extended the normalized card set by:
 
 The current card set is usable, but several issues still need care before these constraints are turned into chapter prose:
 
-1. `SC031` earlier and `SC033` earlier cross bundled `PWGmcChanges`, so they are non-historical computational breaks rather than ordinary chronology constraints.
-2. `SC037` later crosses technical-marker `SC038`, so it is a real computational break but not an ordinary historical boundary.
+1. `SC031` earlier and `SC033` earlier cross bundled `PWGmcChanges`, so they are technical/scaffolding computational breaks rather than ordinary chronology constraints.
+2. `SC037` later crosses technical-marker `SC038`, so it is a real computational break but not an ordinary sound-change chronology boundary.
 3. `SC015` later, `SC020` later, `SC021` later, `SC023` later, and `SC024` later are all broad/far boundaries, so the wording should stay broad and computational rather than local and adjacency-like.
 4. `SC023` later records `+?`, so the `do` failure must be narrated as a no-output / failed derivation, not as a surface OE form.
 5. `SC033` later, `SC036` earlier, `SC040` later, `SC041` earlier, `SC069` earlier, `SC079` earlier, `SC081` earlier, and `SC087` earlier remain broad/far boundaries that should not be flattened into tight neighboring-stage claims.
 6. The 87-row broad failure sets (`SC047` later, `SC048` earlier, `SC078` earlier) still need careful narrative treatment.
-7. `SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, and `SC076` earlier are runner-boundary results inside bundled `PWGmcChanges`, not historical boundaries.
-8. `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, and `SC086` later are no-break-before-boundary results, not historical boundaries tied to `SC087`.
-9. `SC087` later is bounded by the current runner limit beyond order `86`, not by a discovered historical stage.
-10. Any wording that implies a runner-bounded or non-historical side "must precede" or "must follow" another stage is too strong and should be softened before chapter reuse.
+7. `SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, and `SC076` earlier are runner-boundary results inside bundled `PWGmcChanges`, not ordinary chronology boundaries.
+8. `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, and `SC086` later are no-break-before-boundary results, not ordinary chronology boundaries tied to `SC087`.
+9. `SC087` later is bounded by the current runner limit beyond order `86`, not by a discovered ordinary chronology stage.
+10. Any wording that implies a runner-bounded or technical/scaffolding side "must precede" or "must follow" another stage is too strong and should be softened before chapter reuse.
 11. `SC073` later should still be keyed to `SC085` OE H Loss exactly as the TSV says, even though the variant id is `later_order_84`.
 
 ## Recommended next terminal batch

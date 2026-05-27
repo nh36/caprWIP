@@ -16,6 +16,10 @@ This is the complete currently searchable explicit-chain coverage represented in
 2. runner improvements that expose bundled or non-explicit stages such as `PWGmcChanges`
 3. targeted ad hoc tests for especially valuable broad/far or negative cases
 
+## Terminology note
+
+In this documentation, **ordinary chronology** means a first-break relation between modeled sound-change rules. Technical markers, bundled runner stages such as `PWGmcChanges`, and no-break search boundaries are still useful computational evidence, but they are not ordinary sound-change chronology constraints.
+
 ## Strong reciprocal / near-reciprocal constraints
 
 The clearest reciprocal or near-reciprocal relations currently documented are:
@@ -48,7 +52,7 @@ These are the strongest currently reusable chronology anchors because both sides
 
 ## Broad / far constraints
 
-Several first breaks are historically real but far enough from the current rule position that they should be narrated as **broad/far computational constraints**, not as tight local adjacency claims:
+Several first breaks are ordinary sound-change chronology relations but far enough from the current rule position that they should be narrated as **broad/far computational constraints**, not as tight local adjacency claims:
 
 1. `SC015` later across `SC036`: PGmc `*wír-àldu` > expected OE `weorold`, variant `wuruld`.
 2. `SC020` later across `SC040`: the later side is historically real but broad, with eleven newly failing rows rather than a local adjacency.
@@ -71,7 +75,7 @@ The important interpretive rule is the same across all of these: a real first br
 
 ## Negative / boundary cards
 
-The current index marks the following rules as **negative / boundary cards**, meaning no historical first break was found on either side within the searchable corridor:
+The current index marks the following rules as **negative / boundary cards**, meaning no ordinary chronology first break was found on either side within the searchable corridor:
 
 1. `SC014`
 2. `SC018`
@@ -86,7 +90,7 @@ The current index marks the following rules as **negative / boundary cards**, me
 
 For each of these, the earlier search is runner-limited by bundled `PWGmcChanges`, the later search reaches the current `SC087` boundary with no real break, or both.
 
-## Runner-limited / technical-marker / non-historical cases
+## Runner-limited / technical-marker / scaffolding cases
 
 ### Earlier searches that stop at bundled `PWGmcChanges`
 
@@ -94,9 +98,9 @@ The current earlier runner-limited set is:
 
 `SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, `SC076`
 
-These are search-boundary observations, not ordinary historical earlier boundaries.
+These are search-boundary observations, not ordinary sound-change chronology earlier boundaries.
 
-### Real computational breaks that are not ordinary historical boundaries
+### Real computational breaks that are not ordinary sound-change chronology constraints
 
 The current corpus includes three such cases:
 
@@ -104,7 +108,7 @@ The current corpus includes three such cases:
 2. `SC033` earlier across bundled `PWGmcChanges`: e.g. `*fédwōr` > `fēower` / `feower`.
 3. `SC037` later across technical-marker `SC038`: PGmc `*régna-bùgô` > `reġnboga` / `reġnefoga`.
 
-These are real computational first breaks, but they should be kept separate from ordinary historical chronology claims because they cross bundled or technical stages.
+These are real computational first breaks, but they should be kept separate from ordinary sound-change chronology claims because they cross bundled or technical stages.
 
 ## Later no-break-before-`SC087` cases
 
@@ -114,7 +118,7 @@ The current later no-break-before-boundary set is:
 
 These are **search-boundary observations only**. They show that the runner found no real later break before the current `SC087` limit; they do **not** show that the rule historically had to precede `SC087`.
 
-`SC087` itself is a special terminal case: its later search reaches the current runner limit beyond order `86`, so even that result is a limit-of-search observation rather than a discovered later historical boundary.
+`SC087` itself is a special terminal case: its later search reaches the current runner limit beyond order `86`, so even that result is a limit-of-search observation rather than a discovered later ordinary chronology boundary.
 
 ## Remaining work / next options
 

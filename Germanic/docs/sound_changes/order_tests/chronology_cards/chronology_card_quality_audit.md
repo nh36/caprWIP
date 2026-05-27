@@ -85,20 +85,20 @@ The consolidated overview's negative-card list is accurate and consistent across
 
 For all ten rules:
 
-1. the card describes the result as no historical first break / boundary-only evidence;
+1. the card describes the result as no ordinary chronology first break / boundary-only evidence;
 2. `chronology_card_index.tsv` records `blocked_by_runner_limitation` earlier and `no_break_before_runner_boundary` later;
 3. `sound_change_order_sensitivity.tsv` describes the result as a negative / boundary card rather than a positive chronology constraint;
 4. the consolidated overview lists the same ten rules.
 
-## Runner-limited and non-historical cases
+## Runner-limited and technical/scaffolding cases
 
-The runner-limited and non-historical categories are consistent across the overview, README, consolidation report, plan, index, and individual cards:
+The runner-limited and technical/scaffolding categories are consistent across the overview, README, consolidation report, plan, index, and individual cards:
 
-1. earlier searches stopping at bundled `PWGmcChanges` are consistently treated as runner-bounded search limits rather than ordinary historical boundaries;
-2. `SC031` earlier and `SC033` earlier are consistently described as real computational breaks that cross bundled `PWGmcChanges` and are therefore non-historical;
-3. `SC037` later is consistently described as crossing technical-marker `SC038` rather than an ordinary historical sound change.
+1. earlier searches stopping at bundled `PWGmcChanges` are consistently treated as runner-bounded search limits rather than ordinary chronology boundaries;
+2. `SC031` earlier and `SC033` earlier are consistently described as real computational breaks that cross bundled `PWGmcChanges` and are therefore technical/scaffolding evidence;
+3. `SC037` later is consistently described as crossing technical-marker `SC038` rather than an ordinary sound-change chronology relation.
 
-No place checked rewrites these cases into ordinary historical chronology constraints.
+No place checked rewrites these cases into ordinary sound-change chronology constraints.
 
 ## Later no-break-before-`SC087` cases
 
@@ -106,7 +106,7 @@ The consolidated overview's later no-break list matches the index/cards:
 
 `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, `SC086`
 
-Across the checked documentation layers, these are consistently framed as search-boundary observations only, not as historical claims that the rule must precede `SC087`.
+Across the checked documentation layers, these are consistently framed as search-boundary observations only, not as ordinary chronology claims that the rule must precede `SC087`.
 
 ## Broad / far labels
 
