@@ -21,6 +21,7 @@ ENGLISH_PROTO_TO_OE_RE = re.compile(
     r"define EnglishProtoToOE \((.*?)\);\s*define EnglishProtoInput",
     re.DOTALL,
 )
+PWGMC_CHANGES_RE = re.compile(r"define PWGmcChanges \[(.*?)\];", re.DOTALL)
 RESUME_STEPS_RE = re.compile(r"resume_steps=(\d+)")
 LAST_SAFE_ORDER_RE = re.compile(r"last_safe_order=(\d+)")
 
@@ -42,6 +43,21 @@ POST_EPENTHESIS_RULES = [
     "OldEnglishOrthography",
     "OEGlideUToEO",
     "OldEnglishRemoveStars",
+]
+
+DEFAULT_ORDER_PROFILE = "default"
+EXPANDED_PWGMC_ORDER_PROFILE = "expanded-pwgmc"
+PWGMC_COMPONENT_RULES = [
+    "PWGmcAiMonophthongization",
+    "NWGmcAToUBeforeM",
+    "PWGmcEarlyIApocope",
+    "PWGmcFinalOrLowering",
+    "PWGmcCoronalWAssimilation",
+    "PWGmcIjContraction",
+    "PWGmcJGemination",
+    "PWGmcSyllabicJ",
+    "PWGmcLThVoicing",
+    "PWGmcDentalHardening",
 ]
 
 
@@ -107,6 +123,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--change", help="Target change_id for adjacent-pilot or first-break mode (e.g. SC043)")
     parser.add_argument("--direction", choices=("earlier", "later", "both"), default="both")
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument(
+        "--order-profile",
+        choices=(DEFAULT_ORDER_PROFILE, EXPANDED_PWGMC_ORDER_PROFILE),
+        default=DEFAULT_ORDER_PROFILE,
+        help="Order profile for --mode first-break; default keeps bundled PWGmcChanges.",
+    )
+    parser.add_argument(
+        "--dry-run-order",
+        action="store_true",
+        help="Print the resolved first-break order profile and exit without compiling a variant.",
+    )
     parser.add_argument("--inventory", default=str(defaults["inventory"]))
     parser.add_argument("--germanic", default=str(defaults["germanic_txt"]))
     parser.add_argument("--sandbox", default=str(defaults["sandbox_txt"]))
@@ -122,6 +149,10 @@ def parse_args() -> argparse.Namespace:
     args = parser.parse_args()
     if args.mode in {"adjacent-pilot", "first-break"} and not args.change:
         parser.error("--change is required for --mode adjacent-pilot and --mode first-break")
+    if args.order_profile != DEFAULT_ORDER_PROFILE and args.mode != "first-break":
+        parser.error("--order-profile is currently supported only with --mode first-break")
+    if args.dry_run_order and args.mode != "first-break":
+        parser.error("--dry-run-order requires --mode first-break")
     return args
 
 
@@ -202,6 +233,97 @@ def parse_english_proto_to_oe_order(germanic_path: Path) -> List[str]:
     if not order:
         raise RuntimeError(f"EnglishProtoToOE block in {germanic_path} parsed to an empty rule list")
     return order
+
+
+def parse_pwgmc_changes_components(germanic_path: Path) -> List[str]:
+    text = germanic_path.read_text(encoding="utf-8")
+    match = PWGMC_CHANGES_RE.search(text)
+    if not match:
+        raise RuntimeError(f"Could not locate PWGmcChanges definition in {germanic_path}")
+    block = match.group(1)
+    stripped_lines = []
+    for raw_line in block.splitlines():
+        line = raw_line.split("#", 1)[0].strip()
+        if line:
+            stripped_lines.append(line)
+    cleaned = " ".join(stripped_lines)
+    order = [part.strip() for part in cleaned.split(".o.") if part.strip()]
+    if not order:
+        raise RuntimeError(f"PWGmcChanges definition in {germanic_path} parsed to an empty rule list")
+    return order
+
+
+def pwgmc_stage_components() -> List[str]:
+    stage_names = [stage_name for stage_name, _ in STAGES]
+    try:
+        start = stage_names.index(PWGMC_COMPONENT_RULES[0])
+        end = stage_names.index(PWGMC_COMPONENT_RULES[-1]) + 1
+    except ValueError as exc:
+        raise RuntimeError(f"PWGmc component stage missing from oe_full_trace_report.STAGES: {exc}") from exc
+    return stage_names[start:end]
+
+
+def validate_expanded_pwgmc_components(germanic_path: Path) -> None:
+    parsed_components = parse_pwgmc_changes_components(germanic_path)
+    if parsed_components != PWGMC_COMPONENT_RULES:
+        raise RuntimeError(
+            "PWGmcChanges definition no longer matches the expanded order-profile components: "
+            f"{parsed_components!r}"
+        )
+    stage_components = pwgmc_stage_components()
+    if stage_components != PWGMC_COMPONENT_RULES:
+        raise RuntimeError(
+            "oe_full_trace_report.STAGES no longer matches the expanded PWGmc component sequence: "
+            f"{stage_components!r}"
+        )
+
+
+def expand_pwgmc_changes(order: Sequence[str], germanic_path: Path) -> List[str]:
+    validate_expanded_pwgmc_components(germanic_path)
+    expanded: List[str] = []
+    replaced = 0
+    for rule in order:
+        if rule == "PWGmcChanges":
+            expanded.extend(PWGMC_COMPONENT_RULES)
+            replaced += 1
+            continue
+        expanded.append(rule)
+    if replaced != 1:
+        raise RuntimeError(f"Expected exactly one PWGmcChanges entry in EnglishProtoToOE, found {replaced}")
+    return expanded
+
+
+def resolve_first_break_order_profile(
+    live_order: Sequence[str],
+    order_profile: str,
+    germanic_path: Path,
+) -> List[str]:
+    if order_profile == DEFAULT_ORDER_PROFILE:
+        return list(live_order)
+    if order_profile == EXPANDED_PWGMC_ORDER_PROFILE:
+        return expand_pwgmc_changes(live_order, germanic_path)
+    raise ValueError(f"Unknown order profile: {order_profile}")
+
+
+def print_order_profile(
+    order: Sequence[str],
+    order_profile: str,
+    change: ChangeInfo,
+    ordered_inventory: Sequence[ChangeInfo],
+) -> None:
+    inventory_by_rule = inventory_rule_lookup(ordered_inventory)
+    if change.rule_name not in order:
+        raise RuntimeError(f"{change.rule_name} is not in the resolved {order_profile} order profile")
+    print(
+        f"order_profile={order_profile} total_rules={len(order)} "
+        f"target_change={change.change_id} target_rule={change.rule_name}"
+    )
+    for index, rule_name in enumerate(order, start=1):
+        info = inventory_by_rule.get(rule_name)
+        change_id = info.change_id if info else "-"
+        display_name = info.display_name if info else rule_name
+        marker = " target" if rule_name == change.rule_name else ""
+        print(f"{index:03d}\t{change_id}\t{rule_name}\t{display_name}{marker}")
 
 
 def format_outputs(outputs: Sequence[str]) -> str:
@@ -1248,9 +1370,15 @@ def main() -> None:
 
     inventory_by_id, ordered_inventory = load_inventory(inventory_path)
     live_order = parse_english_proto_to_oe_order(germanic_path)
-    rows = load_rows(tsv_path)
+    first_break_order = resolve_first_break_order_profile(live_order, args.order_profile, germanic_path)
+
+    if args.mode == "first-break" and args.dry_run_order:
+        change = inventory_by_id[args.change]
+        print_order_profile(first_break_order, args.order_profile, change, ordered_inventory)
+        return
 
     if args.mode == "validate-batch":
+        rows = load_rows(tsv_path)
         batch_validation = validate_batch_outputs(rows, bin_path)
         print(
             "validate_batch "
@@ -1270,6 +1398,7 @@ def main() -> None:
             raise SystemExit(1)
         return
 
+    rows = load_rows(tsv_path)
     baseline_results = evaluate_rows(rows, bin_path)
     baseline_stats = summarize_evaluation(baseline_results)
 
@@ -1312,7 +1441,7 @@ def main() -> None:
     if args.mode == "first-break":
         run_first_break(
             change=change,
-            live_order=live_order,
+            live_order=first_break_order,
             rows=rows,
             baseline_results=baseline_results,
             ordered_inventory=ordered_inventory,
