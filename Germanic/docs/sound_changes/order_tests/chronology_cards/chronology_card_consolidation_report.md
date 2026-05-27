@@ -8,7 +8,7 @@ The current chronology-card set now covers seventy tested rules:
 2. `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`
 3. `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
-This means the early-corridor batch, the lower-early batch, the upper-early batch, the pilot rules, batch 04, batch 05, the scaled batch, the gap-filling batch, the late-corridor batch, and the far-late batch are all now represented in a single indexed card set. The refreshed `chronology_card_index.tsv` records the current order, safe window, boundary type, failure counts, reciprocal status, broad-boundary flags, and runner-bounded or non-historical cautions for each completed card.
+This means the early-corridor batch, the lower-early batch, the upper-early batch, the pilot rules, batch 04, batch 05, the scaled batch, the gap-filling batch, the late-corridor batch, and the far-late batch are all now represented in a single indexed card set. The refreshed `chronology_card_index.tsv` records the current order, safe window, boundary type, failure counts, reciprocal status, broad-boundary flags, and runner-bounded or non-historical cautions for each completed card. For the final corpus-wide synthesis, use `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.
 
 ## Strong reciprocal boundaries found so far
 

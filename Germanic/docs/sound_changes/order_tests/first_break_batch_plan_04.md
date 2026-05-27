@@ -217,7 +217,7 @@ Remaining eligible explicit-chain rules now still in `queued` / `pending` status
 
 Recommended next step: there is no longer another ordinary contiguous explicit-chain batch left in `Germanic/docs/sound_changes/order_tests/next_batch_candidates.tsv`.
 
-If additional first-break coverage is wanted, the next step is either to consolidate and reuse the current chronology-card corpus or to extend the runner so it can probe bundled / non-explicit positions such as `PWGmcChanges`.
+If additional first-break coverage is wanted, the next step is either to consolidate and reuse the current chronology-card corpus or to extend the runner so it can probe bundled / non-explicit positions such as `PWGmcChanges`. The corpus-wide documentation checkpoint for the completed searchable explicit chain now lives at `Germanic/docs/sound_changes/order_sensitivity_first_break_consolidated_overview.md`.
 
 ## Narrative synthesis cautions
 
