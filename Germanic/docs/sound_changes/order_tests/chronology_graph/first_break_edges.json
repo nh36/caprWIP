@@ -1875,11 +1875,11 @@
     {
       "source_change_id": "SC064",
       "target_change_id": "SC072",
-      "relation_type": "reciprocal_historical",
+      "relation_type": "near_reciprocal_historical",
       "direction_basis": "later_boundary",
       "representative_lexemes": "fright",
       "representative_forms": "PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`",
-      "strength": "tight_local",
+      "strength": "nonlocal_reciprocal",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG15_SC064_SC072",
       "notes": "Later boundary is reciprocal with SC072 earlier and strengthens the fright-based weak-tail chronology relation."
@@ -2055,11 +2055,11 @@
     {
       "source_change_id": "SC072",
       "target_change_id": "SC064",
-      "relation_type": "reciprocal_historical",
+      "relation_type": "near_reciprocal_historical",
       "direction_basis": "earlier_boundary",
       "representative_lexemes": "fright",
       "representative_forms": "PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`",
-      "strength": "tight_local",
+      "strength": "nonlocal_reciprocal",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG15_SC064_SC072",
       "notes": "Now reciprocal on both sides: SC072 earlier crosses SC064 and SC072 later crosses SC073."

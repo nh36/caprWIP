@@ -175,7 +175,7 @@ digraph first_break_chronology {
   "SC063" -> "SC055" [label="one_sided_historical", color="#4a5568", fontcolor="#4a5568", style=solid, penwidth=1.5];
   "SC063" -> "SC072" [label="one_sided_historical", color="#4a5568", fontcolor="#4a5568", style=solid, penwidth=1.5];
   "SC064" -> "SC041" [label="one_sided_historical", color="#4a5568", fontcolor="#4a5568", style=solid, penwidth=1.5];
-  "SC064" -> "SC072" [label="reciprocal_historical\nRG15_SC064_SC072", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
+  "SC064" -> "SC072" [label="near_reciprocal_historical\nRG15_SC064_SC072", color="#2f855a", fontcolor="#2f855a", style=dashed, penwidth=2.0];
   "SC065" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed, penwidth=1.5];
   "SC065" -> "SC087" [label="no_break_search_boundary", color="#c53030", fontcolor="#c53030", style=dotted, penwidth=1.5];
   "SC066" -> "SC055" [label="one_sided_historical", color="#4a5568", fontcolor="#4a5568", style=solid, penwidth=1.5];
@@ -190,7 +190,7 @@ digraph first_break_chronology {
   "SC070" -> "SC071" [label="reciprocal_historical\nRG17_SC070_SC071", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
   "SC071" -> "SC070" [label="reciprocal_historical\nRG17_SC070_SC071", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
   "SC071" -> "SC087" [label="no_break_search_boundary", color="#c53030", fontcolor="#c53030", style=dotted, penwidth=1.5];
-  "SC072" -> "SC064" [label="reciprocal_historical\nRG15_SC064_SC072", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
+  "SC072" -> "SC064" [label="near_reciprocal_historical\nRG15_SC064_SC072", color="#2f855a", fontcolor="#2f855a", style=dashed, penwidth=2.0];
   "SC072" -> "SC073" [label="broad_far_historical\nRG18_SC072_SC073", color="#2b6cb0", fontcolor="#2b6cb0", style=dashed, penwidth=1.8];
   "SC073" -> "SC072" [label="broad_far_historical\nRG18_SC072_SC073", color="#2b6cb0", fontcolor="#2b6cb0", style=dashed, penwidth=1.8];
   "SC073" -> "SC085" [label="one_sided_historical", color="#4a5568", fontcolor="#4a5568", style=solid, penwidth=1.5];

@@ -25,13 +25,16 @@ This graph export was generated from the audited first-break chronology corpus. 
 | relation_type | count |
 | --- | ---: |
 | `broad_far_historical` | 18 |
+| `near_reciprocal_historical` | 2 |
 | `no_break_search_boundary` | 23 |
 | `non_historical_computational` | 3 |
 | `one_sided_historical` | 32 |
-| `reciprocal_historical` | 42 |
+| `reciprocal_historical` | 40 |
 | `runner_limited_boundary` | 22 |
 
 ## Strongest reciprocal / near-reciprocal clusters
+
+The list below includes both tight reciprocal relations and broader reciprocal-like corridors. Entries marked `broad_far_historical` or `near_reciprocal_historical` should not be read as immediate local adjacency claims.
 
 1. `SC016 / SC017` — `reciprocal_historical`; representative lexemes: `yoke`; forms: PGmc `*júką` yields expected OE `ġeoc`, but the later-shifted variant yields `ġoc`
 1. `SC017 / SC019` — `reciprocal_historical`; representative lexemes: `nose; shovel; sorrow`; forms: PGmc `*núsō` yields expected OE `nosu`, but the later-shifted variant yields `nusu`; PGmc `*skúflō` likewise yields `sċufl` instead of expected `sċofl`; PGmc `*súrgō` yields `surg` instead of expected `sorg`
@@ -47,7 +50,7 @@ This graph export was generated from the audited first-break chronology corpus. 
 1. `SC047 / SC048` — `broad_far_historical`; representative lexemes: `bake; begin; believe; bind; bore`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`
 1. `SC052 / SC055` — `reciprocal_historical`; representative lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the later-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
 1. `SC055 / SC056` — `reciprocal_historical`; representative lexemes: `gift; sheath`; forms: PGmc `*géftiz` yields expected OE `ġift`, but the later-shifted variant yields `ġieft`; PGmc `*skáiθiz` likewise yields `sċǣþ` instead of expected `sċēaþ`
-1. `SC064 / SC072` — `reciprocal_historical`; representative lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`
+1. `SC064 / SC072` — `near_reciprocal_historical`; representative lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`
 1. `SC066 / SC068` — `reciprocal_historical`; representative lexemes: `spindle`; forms: PGmc `*spénnilō` yields expected OE `spinl`, but the later-shifted variant yields `spinnl`
 1. `SC070 / SC071` — `reciprocal_historical`; representative lexemes: `bore (3sg); learn (3sg); lick (3sg); make (3sg); month`; forms: PGmc `*búrōθi` yields expected OE `boraþ`, but the later-shifted variant yields `boreþ`; PGmc `*mḗnōθz` likewise yields `mōneþ` instead of expected `mōnaþ`
 1. `SC072 / SC073` — `broad_far_historical`; representative lexemes: `adder; earth; father; find; flask`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the later-shifted variant yields `nǣdræ`; PGmc `*fádēr` likewise yields `fædær` instead of expected `fæder`
@@ -86,6 +89,7 @@ This graph export was generated from the audited first-break chronology corpus. 
 
 - earlier runner-limited boundaries to `PWGmcChanges`: `SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, `SC076`
 - later no-break search-boundary cases before `SC087`: `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, `SC086`
+- these runner-limited and no-break edges are diagnostic search-boundary observations, not historical constraints tying the source rule to `PWGmcChanges` or `SC087`
 - non-historical computational edges:
   - `SC031 -> PWGmcChanges` (earlier_boundary) — Earlier computational break crosses bundled PWGmcChanges and is non-historical; later boundary reciprocates SC034 earlier around dew and hew.
   - `SC033 -> PWGmcChanges` (earlier_boundary) — Earlier computational break crosses bundled PWGmcChanges and is non-historical; later boundary is historical but broad/far across SC044.

@@ -64,6 +64,10 @@ BROAD_RECIPROCAL_GROUPS = {
     "RG18_SC072_SC073",
 }
 
+NEAR_RECIPROCAL_GROUPS = {
+    "RG15_SC064_SC072",
+}
+
 
 NODE_FIELDS = [
     "change_id",
@@ -97,7 +101,12 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 def write_tsv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> None:
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t")
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=fieldnames,
+            delimiter="\t",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -197,6 +206,8 @@ def classify_historical_edge(
 
     if pair_group and (pair_group in BROAD_RECIPROCAL_GROUPS or side_is_broad):
         return "broad_far_historical", "broad_reciprocal", pair_group
+    if pair_group and pair_group in NEAR_RECIPROCAL_GROUPS:
+        return "near_reciprocal_historical", "nonlocal_reciprocal", pair_group
     if pair_group:
         return "reciprocal_historical", "tight_local", pair_group
     if side_is_broad:
@@ -461,6 +472,8 @@ def build_summary(
             "",
             "## Strongest reciprocal / near-reciprocal clusters",
             "",
+            "The list below includes both tight reciprocal relations and broader reciprocal-like corridors. Entries marked `broad_far_historical` or `near_reciprocal_historical` should not be read as immediate local adjacency claims.",
+            "",
         ]
     )
 
@@ -511,6 +524,7 @@ def build_summary(
             "",
             f"- earlier runner-limited boundaries to `PWGmcChanges`: {', '.join(f'`{cid}`' for cid in runner_limited_sources)}",
             f"- later no-break search-boundary cases before `SC087`: {', '.join(f'`{cid}`' for cid in search_boundary_sources)}",
+            "- these runner-limited and no-break edges are diagnostic search-boundary observations, not historical constraints tying the source rule to `PWGmcChanges` or `SC087`",
             "- non-historical computational edges:",
         ]
     )
