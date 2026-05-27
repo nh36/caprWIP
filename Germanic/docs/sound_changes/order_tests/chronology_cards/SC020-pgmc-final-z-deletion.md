@@ -25,7 +25,7 @@
 - interpretation: SC020 can move later safely through order `39`, but it cannot move later across SC040. Delaying PGmc Final Z Deletion that far forward leaves a broad set of unwanted final `-o` outcomes in formerly baseline-matching derivations.
 
 ## Chronology statement
-Current first-break evidence places SC020 after `SC019` NWGmc Final Long O Raising and before `SC040` OE Med Unstressed U Lowering. If PGmc Final Z Deletion is moved before `SC019`, PGmc `*rástōz` yields `rast` rather than expected OE `ræste`. If it is moved later than `SC040`, PGmc `*bébruz` yields `befro` rather than `befer`, PGmc `*kwéðuz` yields `cwedo` rather than `cwedu`, and PGmc `*félθuz` yields `feldo` rather than `feld`, alongside eight other newly failing rows. The earlier side is historical and local; the later side is historical but broad/far across `SC040`.
+Current first-break evidence places SC020 after `SC019` NWGmc Final Long O Raising and before `SC040` OE Med Unstressed U Lowering. If PGmc Final Z Deletion is moved before `SC019`, PGmc `*rástōz` yields `rast` rather than expected OE `ræste`. If it is moved later than `SC040`, PGmc `*bébruz` yields `befro` rather than `befer`, PGmc `*kwéðuz` yields `cwedo` rather than `cwedu`, and PGmc `*félθuz` yields `feldo` rather than `feld`, alongside eight other newly failing rows. The earlier side is historical and local and reciprocates `SC019` later around `rest`; the later side is historical but broad/far across `SC040`.
 
 ## Caveats
 Both observed boundaries are historically interpretable. The later side is much broader than the earlier side and should not be narrated as a tight local adjacency claim.
