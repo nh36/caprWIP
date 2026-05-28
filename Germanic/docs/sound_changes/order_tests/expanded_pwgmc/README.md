@@ -17,7 +17,7 @@ Those expanded-profile results should **not** automatically overwrite default ch
 
 ## Current scope
 
-The current index includes exactly six earlier-side results:
+The current index includes sixteen earlier-side results:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -25,5 +25,20 @@ The current index includes exactly six earlier-side results:
 4. `SC017` earlier
 5. `SC018` earlier
 6. `SC019` earlier
+7. `SC020` earlier
+8. `SC021` earlier
+9. `SC022` earlier
+10. `SC023` earlier
+11. `SC024` earlier
+12. `SC025` earlier
+13. `SC026` earlier
+14. `SC027` earlier
+15. `SC028` earlier
+16. `SC029` earlier
 
 These entries come from the committed expanded-profile summary/change/failure TSVs and are documented separately from the default chronology-card system.
+
+The current batch-level interpretation notes are:
+
+1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC020_SC029_minibatch_03.md`
+2. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`
