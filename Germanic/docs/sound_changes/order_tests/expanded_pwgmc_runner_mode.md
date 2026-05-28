@@ -104,3 +104,7 @@ python3 Germanic/tools/sound_change_order_sensitivity.py \
 ```
 
 If the expanded profile is invoked without separate output paths, the runner exits immediately with a refusal message rather than risking writes into the default bundled-profile corpus.
+
+## Smoke pilot reference
+
+The first manually run real expanded-profile smoke result is documented in `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_smoke_pilot_01.md`. That note records the `SC014` earlier outcome as an expanded-profile result only; it does not revise the default-profile 70-card corpus.
