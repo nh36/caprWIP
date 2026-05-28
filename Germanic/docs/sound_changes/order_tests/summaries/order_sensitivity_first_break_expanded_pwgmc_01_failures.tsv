@@ -3,3 +3,7 @@ SC017_earlier_order_16	SC017	earlier	16	SC016	OE Ws Palatal Glide	OEWsPalatalGli
 SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	nose	*núsō	nosu	nosu	nusu	newly_failing	Crossing NWGmcULowering changed the output.
 SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	shovel	*skúflō	sċofl	sċofl	sċufl	newly_failing	Crossing NWGmcULowering changed the output.
 SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	sorrow	*súrgō	sorg	sorg	surg	newly_failing	Crossing NWGmcULowering changed the output.
+SC020_earlier_order_19	SC020	earlier	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	rest	*rástōz	ræste	ræste	rast	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
+SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	fist	*fúnxstiz	fȳst	fȳst	fyst	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
+SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	goose	*gánsz	gōs	gōs	ġeas	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
+SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	youth	*júgunθ	ġeoguþ	ġeoguþ	ġeogoþ	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
