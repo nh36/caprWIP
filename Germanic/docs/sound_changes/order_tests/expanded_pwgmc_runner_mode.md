@@ -108,3 +108,5 @@ If the expanded profile is invoked without separate output paths, the runner exi
 ## Smoke pilot reference
 
 The first manually run real expanded-profile smoke result is documented in `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_smoke_pilot_01.md`. That note records the `SC014` earlier outcome as an expanded-profile result only; it does not revise the default-profile 70-card corpus.
+
+The next manual follow-up, covering the early earlier-side mini-batch through `SC019`, is documented separately in `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`. That note likewise remains expanded-profile-only documentation rather than a default-profile card/index update.

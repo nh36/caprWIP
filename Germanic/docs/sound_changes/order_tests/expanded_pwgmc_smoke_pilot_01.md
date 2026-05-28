@@ -52,6 +52,6 @@ For this smoke pilot, moving `SC014` earlier across that full expanded corridor 
 
 This result belongs to the **expanded-PWGmc profile**. It should not overwrite, silently revise, or be folded directly into the current 70-card default-profile corpus. Any future reuse must continue to label it as expanded-profile evidence until the repository explicitly decides how expanded-profile results should interact with default-profile chronology documentation.
 
-## Recommendation for the next step
+## Follow-up
 
-Do **not** run a large expanded batch yet. The next safe computational step is a **small manually run early earlier-side batch**, probably `SC015` through `SC019` earlier only, using the same separate expanded-profile output files (with resume support if needed). For this task, the result is only documented; no chronology card or corpus-wide reinterpretation is made yet.
+That next small early earlier-side batch has now been documented separately in `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`. The smoke result here should still be read as the first single-rule expanded-profile check, with the larger mini-batch interpretation kept in its own note.
