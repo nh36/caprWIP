@@ -1,1 +1,5 @@
 variant_id	change_id	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	failure_type	note
+SC017_earlier_order_16	SC017	earlier	16	SC016	OE Ws Palatal Glide	OEWsPalatalGlide	historical_sound_change	yoke	*júką	ġeoc	ġeoc	ġoc	newly_failing	Crossing OEWsPalatalGlide changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	nose	*núsō	nosu	nosu	nusu	newly_failing	Crossing NWGmcULowering changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	shovel	*skúflō	sċofl	sċofl	sċufl	newly_failing	Crossing NWGmcULowering changed the output.
+SC019_earlier_order_17	SC019	earlier	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	sorrow	*súrgō	sorg	sorg	surg	newly_failing	Crossing NWGmcULowering changed the output.
