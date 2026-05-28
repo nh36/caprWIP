@@ -77,3 +77,5 @@ No default-profile first-break TSVs, chronology cards, or graph outputs are chan
 Pause briefly and add an explicit **expanded-profile results index** before running larger expanded batches. That index should remain separate from the default 70-card chronology-card system.
 
 If computation resumes after that design step, the next reasonable expanded-profile run is still a small manual earlier-side batch for `SC020` through `SC029` only, since many of those earlier searches also previously stopped at bundled `PWGmcChanges`.
+
+That separate review layer now exists at `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_result_index.tsv`, where these six earlier-side rows can accumulate without being folded into the default chronology-card system.
