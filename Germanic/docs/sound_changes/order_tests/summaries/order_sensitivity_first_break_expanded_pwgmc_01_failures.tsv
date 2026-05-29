@@ -7,3 +7,29 @@ SC020_earlier_order_19	SC020	earlier	19	SC019	NWGmc Final Long O Raising	NWGmcFi
 SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	fist	*fúnxstiz	fȳst	fȳst	fyst	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
 SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	goose	*gánsz	gōs	gōs	ġeas	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
 SC027_earlier_order_26	SC027	earlier	26	SC026	NWGmc Nasal Spirant Lengthening	NWGmcNasalSpirantLengthening	historical_sound_change	youth	*júgunθ	ġeoguþ	ġeoguþ	ġeogoþ	newly_failing	Crossing NWGmcNasalSpirantLengthening changed the output.
+SC030_earlier_order_29	SC030	earlier	29	SC029	OE Awj Glide Formation	OEAwjGlideFormation	historical_sound_change	hay	*xáwwją	hīeġ	hīeġ	hauġ	newly_failing	Crossing OEAwjGlideFormation changed the output.
+SC030_earlier_order_29	SC030	earlier	29	SC029	OE Awj Glide Formation	OEAwjGlideFormation	historical_sound_change	strew	*stráwjaną	strīeġan	strīeġan	strauian	newly_failing	Crossing OEAwjGlideFormation changed the output.
+SC031_earlier_order_11	SC031	earlier	11	SC011	PWGmc Syllabic J	PWGmcSyllabicJ	historical_sound_change	hay	*xáwwją	hīeġ	hīeġ	hēai	newly_failing	Crossing PWGmcSyllabicJ changed the output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	believe	*galáubijaną	ġelīefan	ġelīefan	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	bow	*báug	bēag	bēag	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	bow	*báugijaną	bīeġan	bīeġan	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	bread	*bráudą	brēad	brēad	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	dream	*dráugmaz	drēam	drēam	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	flea	*fláuxz	flēah	flēah	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	hay	*xáwwją	hīeġ	hīeġ	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	head	*xáubudą	hēafod	hēafod	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	leaf	*láubą	lēaf	lēaf	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	leek	*láukaz	lēac	lēac	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	lye	*láugō	lēag	lēag	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	need	*náudiz	nīed	nīed	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	reek	*ráukaz	rēac	rēac	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	seam	*sáumaz	sēam	sēam	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	shove	*skáub	sċēaf	sċēaf	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	stream	*stráumaz	strēam	strēam	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	strew	*stráwjaną	strīeġan	strīeġan	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC032_earlier_order_30	SC032	earlier	30	SC030	OE Au Fronting	OEAuFronting	historical_sound_change	team	*táugmaz	tēam	tēam	+?	newly_failing	Crossing OEAuFronting produced no output.
+SC033_earlier_order_8	SC033	earlier	8	SC008	PWGmc Coronal W Assimilation	PWGmcCoronalWAssimilation	historical_sound_change	four	*fédwōr	fēower	fēower	feower	newly_failing	Crossing PWGmcCoronalWAssimilation changed the output.
+SC034_earlier_order_31	SC034	earlier	31	SC031	OE WW Simplification	OEWWSimplification	historical_sound_change	dew	*dáwwō	dēaw	dēaw	dawu	newly_failing	Crossing OEWWSimplification changed the output.
+SC034_earlier_order_31	SC034	earlier	31	SC031	OE WW Simplification	OEWWSimplification	historical_sound_change	hew	*xáwwaną	hēawan	hēawan	hawan	newly_failing	Crossing OEWWSimplification changed the output.
+SC036_earlier_order_19	SC036	earlier	19	SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	historical_sound_change	soul	*sáiwalō	sāwol	sāwol	sāwel	newly_failing	Crossing NWGmcFinalLongORaising changed the output.
+SC040_earlier_order_39	SC040	earlier	39	SC039	OE WI Combinative U Umlaut	OEWICombinativeUUmlaut	historical_sound_change	widow	*wíduwōn	wuduwe	wuduwe	wudowe	newly_failing	Crossing OEWICombinativeUUmlaut changed the output.
