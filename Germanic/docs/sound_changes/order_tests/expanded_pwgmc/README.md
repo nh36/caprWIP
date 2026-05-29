@@ -21,6 +21,7 @@ Current review-layer guidance remains **earlier-side only** for expanded-profile
 5. `remaining_pwgmc_boundary_targets.md` - screened list of true earlier-side bundled-PWGmc boundary targets
 6. `expanded_pwgmc_final_boundary_targets_07.md` - note for the final four true bundled-PWGmc boundary-target results
 7. `expanded_pwgmc_boundary_target_closure.md` - closure note for the narrow earlier-side bundled-PWGmc boundary-target task
+8. `expanded_pwgmc_phase_synthesis.md` - high-level synthesis of what the expanded-PWGmc boundary-target phase answered and what policy work should come next
 
 ## Current scope
 
