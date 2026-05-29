@@ -8,7 +8,7 @@ That means this layer does **not** itself revise the default 70-card chronology-
 
 ## Current entries
 
-The index currently contains thirty-four entries:
+The index currently contains thirty-nine entries:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -44,6 +44,11 @@ The index currently contains thirty-four entries:
 32. `SC046` earlier
 33. `SC047` earlier
 34. `SC048` earlier
+35. `SC049` earlier
+36. `SC053` earlier
+37. `SC054` earlier
+38. `SC057` earlier
+39. `SC058` earlier
 
 ## Interpretation classes
 
@@ -70,8 +75,10 @@ That is the current interpretation for:
 13. `SC035` earlier
 14. `SC037` earlier
 15. `SC039` earlier
+16. `SC053` earlier
+17. `SC058` earlier
 
-These fifteen probes now traverse the exposed PWGmc corridor down to `SC004` `PWGmc Ai Monophthongization` without changed outputs or newly failing rows.
+These seventeen probes now traverse the exposed PWGmc corridor down to `SC004` `PWGmc Ai Monophthongization` without changed outputs or newly failing rows.
 
 ### `confirms_default_local_break`
 
@@ -105,6 +112,9 @@ That is the current interpretation for:
 3. `SC042` earlier, which still breaks across `SC020` `PGmc Final Z Deletion`
 4. `SC046` earlier, which still breaks across `SC043` `Anglo Frisian Brightening`
 5. `SC047` earlier, which still breaks across `SC034` `OE Aw Long Diphthong`
+6. `SC049` earlier, which still breaks across `SC037` `OE Compound Linking Syncope`
+7. `SC054` earlier, which still breaks across `SC020` `PGmc Final Z Deletion`
+8. `SC057` earlier, which still breaks across `SC052` `OE Velar Palatalization`
 
 These should be read as broader or non-local chronology confirmations, not as tight local-adjacency evidence.
 
@@ -164,9 +174,23 @@ Within that all-positive batch, the rows split into two familiar confirmation cl
 
 These results still remain separate from the default 70-card corpus pending an explicit integration policy.
 
+## SC049-SC058 mini-batch update
+
+The eligible `SC049` through `SC058` earlier-side mini-batch again splits into two result classes:
+
+1. `SC049`, `SC054`, and `SC057` confirm default-profile broad/far or non-local breaks:
+   - `SC049` earlier still breaks across `SC037`, with `rainbow`
+   - `SC054` earlier still breaks across `SC020`, with `sea`
+   - `SC057` earlier still breaks across `SC052`, with `bow`, `follow`, `hedge`, `seek`, and `singe`
+2. `SC053` and `SC058` strengthen negative expanded-profile evidence by traversing the exposed PWGmc corridor down to `SC004` with no changed outputs and no newly failing rows.
+
+This batch does **not** add any new `expanded_internal_pwgmc_break` case. It therefore strengthens the separate review layer without changing the current picture that only `SC031` and `SC033` provide clearly useful internal-PWGmc positive boundaries.
+
+These results still remain separate from the default 70-card corpus pending an explicit integration policy.
+
 ## Integration status
 
-All thirty-four rows currently carry `integration_status = expanded_only_pending_policy`.
+All thirty-nine rows currently carry `integration_status = expanded_only_pending_policy`.
 
 That means:
 
@@ -176,9 +200,8 @@ That means:
 
 ## Recommended next step
 
-With this index in place, the next manual computational step is either:
+With this index in place, the next recommended step is a light index audit before the next larger manual run, because the separate review layer now covers thirty-nine rows.
 
-1. a smaller next manual mini-batch for `SC049` through `SC058` earlier only; or
-2. another light audit of the expanded-profile index first, if the separate review layer is starting to feel unwieldy.
+If that audit passes, the next manual expanded-profile run can move on to `SC060` through `SC076` earlier only, split into smaller chunks if desired.
 
-Do not move to later-direction expanded-profile testing yet, do not jump immediately to a much larger batch, and keep using this separate expanded-profile index as the review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.
+Do not move to later-direction expanded-profile testing yet, and keep using this separate expanded-profile index as the review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.
