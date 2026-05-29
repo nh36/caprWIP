@@ -17,6 +17,7 @@ Current review-layer guidance remains **earlier-side only** for expanded-profile
 1. `expanded_pwgmc_result_index.tsv` - one row per expanded-profile tested direction
 2. `expanded_pwgmc_result_index_notes.md` - narrative summary of the current indexed entries and recommended next step
 3. `expanded_pwgmc_result_index_audit_01.md` - short audit of index coverage, TSV consistency, controlled vocabulary, and prose policy
+4. `expanded_pwgmc_result_index_audit_02.md` - light follow-up audit after coverage expanded to thirty-nine earlier-side rows
 
 ## Current scope
 

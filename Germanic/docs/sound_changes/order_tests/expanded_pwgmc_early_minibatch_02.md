@@ -58,7 +58,7 @@ These results therefore confirm the same local first-break structure already vis
 
 ## Profile warning
 
-These are **expanded-profile** results. They should not overwrite, silently revise, or automatically fold into the current default-profile chronology cards, index, or graph export.
+These are **expanded-profile** results. They should not overwrite, silently revise, or automatically fold into the default chronology-card corpus, default first-break TSV corpus, or default graph files.
 
 The expanded evidence is compatible with the default-profile card layer: it strengthens the negative interpretation of the earlier no-break cases while leaving the local `SC017` / `SC016` and `SC019` / `SC017` first-break relations intact. But the repository should decide explicitly later how expanded-profile evidence should be represented in the chronology-card/index system, rather than mixing it into the default 70-card corpus ad hoc.
 
@@ -70,7 +70,7 @@ The committed expanded-profile outputs remain structurally valid:
 2. changes TSV: `6` data rows total (`1` for `SC017`, `5` for `SC019`)
 3. failures TSV: `4` data rows total (`1` for `SC017`, `3` for `SC019`)
 
-No default-profile first-break TSVs, chronology cards, or graph outputs are changed by this documentation pass.
+No default chronology cards, default first-break TSVs, or default graph files are changed by this documentation pass.
 
 ## Recommendation
 
