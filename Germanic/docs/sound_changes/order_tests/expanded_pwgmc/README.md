@@ -18,10 +18,13 @@ Current review-layer guidance remains **earlier-side only** for expanded-profile
 2. `expanded_pwgmc_result_index_notes.md` - narrative summary of the current indexed entries and recommended next step
 3. `expanded_pwgmc_result_index_audit_01.md` - short audit of index coverage, TSV consistency, controlled vocabulary, and prose policy
 4. `expanded_pwgmc_result_index_audit_02.md` - light follow-up audit after coverage expanded to thirty-nine earlier-side rows
+5. `remaining_pwgmc_boundary_targets.md` - screened list of true earlier-side bundled-PWGmc boundary targets
+6. `expanded_pwgmc_final_boundary_targets_07.md` - note for the final four true bundled-PWGmc boundary-target results
+7. `expanded_pwgmc_boundary_target_closure.md` - closure note for the narrow earlier-side bundled-PWGmc boundary-target task
 
 ## Current scope
 
-The current index includes thirty-nine earlier-side results:
+The current index includes forty-three earlier-side results:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -62,13 +65,18 @@ The current index includes thirty-nine earlier-side results:
 37. `SC054` earlier
 38. `SC057` earlier
 39. `SC058` earlier
+40. `SC050` earlier
+41. `SC065` earlier
+42. `SC067` earlier
+43. `SC076` earlier
 
 These entries come from the committed expanded-profile summary/change/failure TSVs and are documented separately from the default chronology-card system.
 
 The current batch-level interpretation notes are:
 
-1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC049_SC058_minibatch_06.md`
-2. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC041_SC048_minibatch_05.md`
-3. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC030_SC040_minibatch_04.md`
-4. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC020_SC029_minibatch_03.md`
-5. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`
+1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_final_boundary_targets_07.md`
+2. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC049_SC058_minibatch_06.md`
+3. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC041_SC048_minibatch_05.md`
+4. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC030_SC040_minibatch_04.md`
+5. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC020_SC029_minibatch_03.md`
+6. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`

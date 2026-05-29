@@ -8,7 +8,7 @@ So the right expanded-PWGmc question is **not** “what has not yet been rerun u
 
 1. which default-profile earlier rows stopped at the opaque `PWGmcChanges` boundary;
 2. which of those have already been rerun under `expanded-pwgmc`;
-3. which of those still remain unresolved.
+3. which of those were still unresolved before the final closure batch.
 
 That is the only target class this note tracks.
 
@@ -36,10 +36,9 @@ Rows that already break against an ordinary historical stage before the bundle a
 
 The current default earlier-side corpus has **23** true bundled-`PWGmcChanges` target rows.
 
-Of those:
+All **23** now have expanded-PWGmc results and are now resolved in the separate index.
 
-1. **19** already have expanded-PWGmc results and are now resolved in the separate index.
-2. **4** remain genuinely untested under expanded-PWGmc.
+Zero true bundled-PWGmc boundary targets remain unresolved.
 
 The resolved rows are:
 
@@ -50,12 +49,14 @@ The resolved rows are:
 5. `SC035`, `SC037`, `SC039`
 6. `SC053`, `SC058`
 
-The unresolved rows are:
+The final four rows that remained unresolved before the closure batch were:
 
 1. `SC050`
 2. `SC065`
 3. `SC067`
 4. `SC076`
+
+All four now resolve as strengthened no-break evidence down to `SC004`.
 
 ## Why future expanded runs should stop following contiguous mini-batches
 
@@ -72,21 +73,21 @@ This narrower policy keeps the expanded layer tied to its actual purpose: replac
 1. a specific internal PWGmc first break, as in `SC031` and `SC033`; or
 2. stronger no-break evidence all the way down to `SC004`, as in the many strengthened-negative rows already indexed.
 
-## Exact next manual run list
+## Closure status
 
-Based only on the remaining true bundled-PWGmc boundary targets, the exact remaining earlier-side manual expanded-PWGmc run list is:
+The narrow earlier-side bundled-PWGmc boundary-target task is now closed.
 
-1. `SC050` earlier
-2. `SC065` earlier
-3. `SC067` earlier
-4. `SC076` earlier
+That closure rests on the full resolved set:
 
-If those four are completed, then the current ordinary default-profile corpus will have no remaining earlier-side `PWGmcChanges` boundary targets left unresolved under `expanded-pwgmc`.
+1. `SC031` and `SC033`, which yielded specific internal PWGmc positive breaks; and
+2. the remaining true bundled-boundary targets, which now all resolve as stronger no-break-to-`SC004` evidence, including the final four `SC050`, `SC065`, `SC067`, and `SC076`.
+
+So the current ordinary default-profile corpus now has no remaining earlier-side `PWGmcChanges` boundary targets left unresolved under `expanded-pwgmc`.
 
 ## Scope warning
 
 This means rows such as `SC051`, `SC052`, `SC055`, `SC056`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC066`, `SC068`-`SC075`, `SC078`-`SC083`, `SC085`, `SC086`, and `SC087` should **not** be treated as automatic expanded-PWGmc targets just because they have not yet appeared in the expanded index. In the default earlier profile, they already break against ordinary historical stages before the bundled PWGmc boundary.
 
-The companion TSV in this directory records the screened bundled-boundary target set itself:
+The companion TSV in this directory records the screened bundled-boundary target set and now shows zero `run_expanded_earlier` rows:
 
 1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/remaining_pwgmc_boundary_targets.tsv`

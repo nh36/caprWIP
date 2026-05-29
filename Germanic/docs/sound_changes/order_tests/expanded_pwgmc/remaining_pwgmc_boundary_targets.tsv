@@ -16,9 +16,9 @@ SC033	OE Ew Long Diphthong	OEEwLongDiphthong	33	first_break_found	PWGmcChanges	y
 SC035	OE Prefix A Reduction Early	OEPrefixAReduction	35	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
 SC037	OE Compound Linking Syncope	OECompoundLinkingSyncope	37	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
 SC039	OE WI Combinative U Umlaut	OEWICombinativeUUmlaut	39	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
-SC050	Sievers Law Syncope	SieversLawSyncope	50	no_break_before_boundary	PWGmcChanges	no			run_expanded_earlier
+SC050	Sievers Law Syncope	SieversLawSyncope	50	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
 SC053	OE Post Velar W Loss	OEPostVelarWLoss	53	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
 SC058	OE Nasal Dissimilation	OENasalDissimilation	58	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
-SC065	OE Medial Syncope	OEMedialSyncope	65	no_break_before_boundary	PWGmcChanges	no			run_expanded_earlier
-SC067	OE Dental Assimilation	OEDentalAssimilation	67	no_break_before_boundary	PWGmcChanges	no			run_expanded_earlier
-SC076	OE Prefix I Reduction	OEPrefixIReduction	76	no_break_before_boundary	PWGmcChanges	no			run_expanded_earlier
+SC065	OE Medial Syncope	OEMedialSyncope	65	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
+SC067	OE Dental Assimilation	OEDentalAssimilation	67	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved
+SC076	OE Prefix I Reduction	OEPrefixIReduction	76	no_break_before_boundary	PWGmcChanges	yes	no_break_before_boundary	SC004	already_resolved

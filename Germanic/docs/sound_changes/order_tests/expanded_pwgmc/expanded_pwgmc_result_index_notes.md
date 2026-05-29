@@ -8,7 +8,7 @@ That means this layer does **not** itself revise the default 70-card chronology-
 
 ## Current entries
 
-The index currently contains thirty-nine entries:
+The index currently contains forty-three entries:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -49,6 +49,10 @@ The index currently contains thirty-nine entries:
 37. `SC054` earlier
 38. `SC057` earlier
 39. `SC058` earlier
+40. `SC050` earlier
+41. `SC065` earlier
+42. `SC067` earlier
+43. `SC076` earlier
 
 ## Interpretation classes
 
@@ -77,8 +81,12 @@ That is the current interpretation for:
 15. `SC039` earlier
 16. `SC053` earlier
 17. `SC058` earlier
+18. `SC050` earlier
+19. `SC065` earlier
+20. `SC067` earlier
+21. `SC076` earlier
 
-These seventeen probes now traverse the exposed PWGmc corridor down to `SC004` `PWGmc Ai Monophthongization` without changed outputs or newly failing rows.
+These twenty-one probes now traverse the exposed PWGmc corridor down to `SC004` `PWGmc Ai Monophthongization` without changed outputs or newly failing rows.
 
 ### `confirms_default_local_break`
 
@@ -188,9 +196,36 @@ This batch does **not** add any new `expanded_internal_pwgmc_break` case. It the
 
 These results still remain separate from the default 70-card corpus pending an explicit integration policy.
 
+## Final bundled-PWGmc boundary-target update
+
+The final four true remaining earlier-side bundled-`PWGmcChanges` targets are now also resolved under the expanded profile:
+
+1. `SC050` earlier
+2. `SC065` earlier
+3. `SC067` earlier
+4. `SC076` earlier
+
+All four behave the same way:
+
+1. `result = no_break_before_boundary`
+2. `crossed_change_id = SC004`
+3. `changed_output_count_at_break = 0`
+4. `newly_failing_count_at_break = 0`
+
+So the narrow earlier-side bundled-PWGmc boundary-target problem is now closed.
+
+The key finding from the full boundary-target layer is now stable:
+
+1. opening bundled `PWGmcChanges` produced two specific internal positive breaks:
+   - `SC031` earlier across `SC011`
+   - `SC033` earlier across `SC008`
+2. the remaining bundled-boundary cases resolved as stronger no-break-to-`SC004` evidence.
+
+This closure does **not** mean that the entire chronology is finished. It means only that the earlier-side bundled-PWGmc boundary-target problem has been answered inside the current expanded review layer.
+
 ## Integration status
 
-All thirty-nine rows currently carry `integration_status = expanded_only_pending_policy`.
+All forty-three rows currently carry `integration_status = expanded_only_pending_policy`.
 
 That means:
 
@@ -200,8 +235,6 @@ That means:
 
 ## Recommended next step
 
-With this index in place, the next recommended step is a light index audit before the next larger manual run, because the separate review layer now covers thirty-nine rows.
+The narrow earlier-side bundled-PWGmc boundary-target task is now closed.
 
-If that audit passes, the next manual expanded-profile run can move on to `SC060` through `SC076` earlier only, split into smaller chunks if desired.
-
-Do not move to later-direction expanded-profile testing yet, and keep using this separate expanded-profile index as the review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.
+Do not move to later-direction expanded-profile testing automatically. Keep that direction out of scope unless a separate question is explicitly posed, and keep using this separate expanded-profile index as a review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.
