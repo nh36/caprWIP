@@ -27,6 +27,9 @@
 ## Chronology statement
 Current first-break evidence identifies a later historical boundary for SC031 but not an earlier ordinary historical one. If OE WW Simplification is moved later than `SC034` OE Aw Long Diphthong, PGmc `*dáwwō` yields `dawu` rather than expected OE `dēaw`, and PGmc `*xáwwaną` yields `hawan` rather than `hēawan`. The earlier direction does produce a real computational break at order `13`, but that break crosses bundled `PWGmcChanges`, so it should be recorded as non-historical / runner-limited rather than as a normal chronology constraint. The later side reciprocates `SC034` earlier.
 
+## Expanded-PWGmc supplementary note
+Under the separate expanded-PWGmc profile, the earlier-side test for `SC031` no longer stops at the bundled `PWGmcChanges` boundary. Its first internal positive break appears when crossing `SC011` `PWGmc Syllabic J`, with `hay` as the representative failure (`*xáwwją` > expected OE `hīeġ`, variant `hēai`). This supplements, but does not replace, the default bundled-profile card evidence. See also the [integration policy draft](../expanded_pwgmc/expanded_pwgmc_integration_policy_draft.md), [boundary-target closure](../expanded_pwgmc/expanded_pwgmc_boundary_target_closure.md), and [phase synthesis](../expanded_pwgmc/expanded_pwgmc_phase_synthesis.md).
+
 ## Caveats
 The earlier side must not be used as an ordinary must-follow claim about a specific historical stage. It records a real computational break, but only at the bundled `PWGmcChanges` boundary.
 

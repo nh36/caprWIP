@@ -27,6 +27,9 @@
 ## Chronology statement
 Current first-break evidence identifies a later historical boundary for SC033 but not an earlier ordinary historical one. If OE Ew Long Diphthong is moved later than `SC044` OE Breaking, PGmc `*kéwwaną` yields `ċeowan` rather than expected OE `ċēowan`, PGmc `*fédwōr` yields `feower` rather than `fēower`, and PGmc `*knéwą` yields `cneow` rather than `cnēow`. The earlier direction does produce a computational break at order `13`, but that break crosses bundled `PWGmcChanges`, so it should be recorded as non-historical rather than as a normal chronology constraint.
 
+## Expanded-PWGmc supplementary note
+Under the separate expanded-PWGmc profile, the earlier-side test for `SC033` no longer stops at the bundled `PWGmcChanges` boundary. Its first internal positive break appears when crossing `SC008` `PWGmc Coronal W Assimilation`, with `four` as the representative failure (`*fédwōr` > expected OE `fēower`, variant `feower`). This supplements, but does not replace, the default bundled-profile card evidence. See also the [integration policy draft](../expanded_pwgmc/expanded_pwgmc_integration_policy_draft.md), [boundary-target closure](../expanded_pwgmc/expanded_pwgmc_boundary_target_closure.md), and [phase synthesis](../expanded_pwgmc/expanded_pwgmc_phase_synthesis.md).
+
 ## Caveats
 The later side is historically real, but it is broad and far across `SC044` rather than a tight local adjacency claim. The earlier side is non-historical because it only appears when the runner enters bundled `PWGmcChanges`.
 
