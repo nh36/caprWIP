@@ -8,7 +8,7 @@ That means this layer does **not** itself revise the default 70-card chronology-
 
 ## Current entries
 
-The index currently contains twenty-six entries:
+The index currently contains thirty-four entries:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -36,6 +36,14 @@ The index currently contains twenty-six entries:
 24. `SC037` earlier
 25. `SC039` earlier
 26. `SC040` earlier
+27. `SC041` earlier
+28. `SC042` earlier
+29. `SC043` earlier
+30. `SC044` earlier
+31. `SC045` earlier
+32. `SC046` earlier
+33. `SC047` earlier
+34. `SC048` earlier
 
 ## Interpretation classes
 
@@ -79,8 +87,12 @@ That is the current interpretation for:
 6. `SC032` earlier, which still breaks across `SC030` `OE Au Fronting`
 7. `SC034` earlier, which still breaks across `SC031` `OE WW Simplification`
 8. `SC040` earlier, which still breaks across `SC039` `OE WI Combinative U Umlaut`
+9. `SC043` earlier, which still breaks across `SC042` `PWGmc Surviving Bimoric O Unrounding`
+10. `SC044` earlier, which still breaks across `SC043` `Anglo Frisian Brightening`
+11. `SC045` earlier, which still breaks across `SC044` `OE Breaking`
+12. `SC048` earlier, which still breaks across `SC047` `OE Heavy Syllable Nasal Apocope`
 
-So the expanded profile is not creating a new deeper PWGmc-corridor story for those eight rules; it is confirming the same local chronology relations already visible in the default-profile card layer.
+So the expanded profile is not creating a new deeper PWGmc-corridor story for those twelve rules; it is confirming the same local chronology relations already visible in the default-profile card layer.
 
 ### `confirms_default_broad_far_break`
 
@@ -89,8 +101,12 @@ This label is used when the expanded profile confirms a broader default-profile 
 That is the current interpretation for:
 
 1. `SC036` earlier, which still breaks across `SC019` `NWGmc Final Long O Raising`
+2. `SC041` earlier, which still breaks across `SC020` `PGmc Final Z Deletion`
+3. `SC042` earlier, which still breaks across `SC020` `PGmc Final Z Deletion`
+4. `SC046` earlier, which still breaks across `SC043` `Anglo Frisian Brightening`
+5. `SC047` earlier, which still breaks across `SC034` `OE Aw Long Diphthong`
 
-So far this is the only expanded-profile row that clearly lands in the broad/far confirmation class rather than the tighter local-break class.
+These should be read as broader or non-local chronology confirmations, not as tight local-adjacency evidence.
 
 ### `expanded_internal_pwgmc_break`
 
@@ -126,9 +142,31 @@ The `SC030` through `SC040` earlier-side mini-batch split into three result clas
 
 Even so, these results still remain separate from the default 70-card corpus pending an explicit integration policy.
 
+## SC041-SC048 mini-batch update
+
+The `SC041` through `SC048` earlier-side mini-batch has a different profile from the earlier expanded-PWGmc batches:
+
+1. all eight rows are positive `first_break_found` rows;
+2. no new `strengthened_negative_evidence` cases appear in this batch;
+3. no new `expanded_internal_pwgmc_break` cases appear in this batch.
+
+Within that all-positive batch, the rows split into two familiar confirmation classes:
+
+1. `SC043`, `SC044`, `SC045`, and `SC048` confirm default-profile local breaks.
+2. `SC041`, `SC042`, `SC046`, and `SC047` confirm default-profile broad/far or otherwise non-local constraints and should not be described as local adjacency evidence.
+
+`SC041` and `SC048` are the large-effect rows in this batch:
+
+1. `SC041` earlier crosses `SC020` with `67` changed outputs and `64` new failures, so it is a large broad/far break rather than a local claim.
+2. `SC048` earlier crosses `SC047` with `87` changed outputs and `87` new failures, but it still belongs to the local-break class because the first break is still immediately at `SC047`.
+
+`SC044` also deserves a narrower note: crossing `SC043` changes many outputs, but only `slay` appears as a newly failing row in the committed failures TSV.
+
+These results still remain separate from the default 70-card corpus pending an explicit integration policy.
+
 ## Integration status
 
-All twenty-six rows currently carry `integration_status = expanded_only_pending_policy`.
+All thirty-four rows currently carry `integration_status = expanded_only_pending_policy`.
 
 That means:
 
@@ -140,7 +178,7 @@ That means:
 
 With this index in place, the next manual computational step is either:
 
-1. a short audit of the expanded-profile index, now that the separate review layer is becoming more substantial; or
-2. the next manual mini-batch for `SC041` through `SC048` earlier only, reusing the same expanded-PWGmc TSV outputs with `--resume`.
+1. a smaller next manual mini-batch for `SC049` through `SC058` earlier only; or
+2. another light audit of the expanded-profile index first, if the separate review layer is starting to feel unwieldy.
 
-Do not move to later-direction expanded-profile testing yet, and keep using this separate expanded-profile index as the review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.
+Do not move to later-direction expanded-profile testing yet, do not jump immediately to a much larger batch, and keep using this separate expanded-profile index as the review layer rather than mixing expanded evidence directly into the default 70-card chronology-card corpus.

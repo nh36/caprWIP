@@ -20,7 +20,7 @@ Current review-layer guidance remains **earlier-side only** for expanded-profile
 
 ## Current scope
 
-The current index includes twenty-six earlier-side results:
+The current index includes thirty-four earlier-side results:
 
 1. `SC014` earlier
 2. `SC015` earlier
@@ -48,11 +48,20 @@ The current index includes twenty-six earlier-side results:
 24. `SC037` earlier
 25. `SC039` earlier
 26. `SC040` earlier
+27. `SC041` earlier
+28. `SC042` earlier
+29. `SC043` earlier
+30. `SC044` earlier
+31. `SC045` earlier
+32. `SC046` earlier
+33. `SC047` earlier
+34. `SC048` earlier
 
 These entries come from the committed expanded-profile summary/change/failure TSVs and are documented separately from the default chronology-card system.
 
 The current batch-level interpretation notes are:
 
-1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC030_SC040_minibatch_04.md`
-2. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC020_SC029_minibatch_03.md`
-3. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`
+1. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC041_SC048_minibatch_05.md`
+2. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC030_SC040_minibatch_04.md`
+3. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc/expanded_pwgmc_SC020_SC029_minibatch_03.md`
+4. `Germanic/docs/sound_changes/order_tests/expanded_pwgmc_early_minibatch_02.md`
