@@ -2,18 +2,21 @@
 
 This directory tracks **expanded-PWGmc-profile** first-break results separately from the default bundled-profile chronology-card corpus.
 
-The default 70-card chronology-card/index/graph layer remains based on the bundled `PWGmcChanges` profile. Expanded-profile results may:
+The default 70-card chronology-card layer, the default first-break summary/change/failure TSV corpus, and the default graph export all remain based on the bundled `PWGmcChanges` profile. Expanded-profile results may:
 
 1. refine a formerly bundled `PWGmcChanges` boundary by exposing the internal PWGmc corridor;
 2. confirm a local first-break relation already visible in the default profile; or
 3. later reveal profile-specific evidence that needs separate interpretation.
 
-Those expanded-profile results should **not** automatically overwrite default chronology cards. Integration policy is intentionally pending.
+Those expanded-profile results should **not** automatically overwrite default chronology cards, default first-break TSVs, or default graph files. Integration policy is intentionally pending.
+
+Current review-layer guidance remains **earlier-side only** for expanded-profile testing. Later-direction expanded-profile runs are not yet recommended.
 
 ## Files
 
 1. `expanded_pwgmc_result_index.tsv` - one row per expanded-profile tested direction
 2. `expanded_pwgmc_result_index_notes.md` - narrative summary of the current indexed entries and recommended next step
+3. `expanded_pwgmc_result_index_audit_01.md` - short audit of index coverage, TSV consistency, controlled vocabulary, and prose policy
 
 ## Current scope
 

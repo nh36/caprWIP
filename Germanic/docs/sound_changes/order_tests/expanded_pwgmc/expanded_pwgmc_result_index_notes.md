@@ -4,6 +4,8 @@
 
 The expanded-PWGmc runner profile now produces results that are useful for chronology interpretation, but those results should not be folded ad hoc into the default bundled-profile chronology-card system. This index exists to accumulate expanded-profile tested directions in a separate review layer until the repository decides on a formal integration policy.
 
+That means this layer does **not** itself revise the default 70-card chronology-card corpus, the default first-break summary/change/failure TSV corpus, or the default graph export.
+
 ## Current entries
 
 The index currently contains twenty-six entries:
@@ -35,9 +37,9 @@ The index currently contains twenty-six entries:
 25. `SC039` earlier
 26. `SC040` earlier
 
-## Two interpretation classes
+## Interpretation classes
 
-The current rows fall into two intentionally different categories.
+The current rows now fall into four intentionally different categories.
 
 ### `strengthened_negative_evidence`
 
@@ -80,7 +82,7 @@ That is the current interpretation for:
 
 So the expanded profile is not creating a new deeper PWGmc-corridor story for those eight rules; it is confirming the same local chronology relations already visible in the default-profile card layer.
 
-## `confirms_default_broad_far_break`
+### `confirms_default_broad_far_break`
 
 This label is used when the expanded profile confirms a broader default-profile chronology relation before the search reaches the exposed PWGmc corridor.
 
@@ -89,6 +91,17 @@ That is the current interpretation for:
 1. `SC036` earlier, which still breaks across `SC019` `NWGmc Final Long O Raising`
 
 So far this is the only expanded-profile row that clearly lands in the broad/far confirmation class rather than the tighter local-break class.
+
+### `expanded_internal_pwgmc_break`
+
+This label is used when the expanded profile finds a more specific positive boundary **inside** the corridor that was previously bundled inside `PWGmcChanges`.
+
+That is the current interpretation for:
+
+1. `SC031` earlier, which now breaks across `SC011` `PWGmc Syllabic J`
+2. `SC033` earlier, which now breaks across `SC008` `PWGmc Coronal W Assimilation`
+
+These are the first currently indexed cases where opening `PWGmcChanges` gives a more informative positive internal PWGmc boundary than the default bundled profile could expose.
 
 ## SC020-SC029 mini-batch update
 
@@ -121,7 +134,7 @@ That means:
 
 1. the results are committed and reviewable;
 2. the results may refine or confirm default-profile interpretations;
-3. the repository has **not** yet decided how expanded-profile evidence should enter the default chronology-card/index system.
+3. the repository has **not** yet decided how expanded-profile evidence should enter the default chronology-card/index system or whether any of it should revise the default first-break TSV corpus or graph export.
 
 ## Recommended next step
 

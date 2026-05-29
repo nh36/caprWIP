@@ -100,7 +100,7 @@ All positive-break examples below are taken directly from the committed expanded
 
 ## Profile warning
 
-These rows remain **expanded-profile** results. They should not overwrite, silently revise, or be folded directly into the default chronology-card corpus, default first-break index, or default graph export.
+These rows remain **expanded-profile** results. They should not overwrite, silently revise, or be folded directly into the default chronology-card corpus, default first-break TSV corpus, or default graph export.
 
 That warning matters especially for `SC031` and `SC033`: the expanded profile now provides more specific internal-PWGmc positive boundaries for those rules, but the repository still needs an explicit policy decision before such evidence is integrated into the ordinary chronology-card system.
 

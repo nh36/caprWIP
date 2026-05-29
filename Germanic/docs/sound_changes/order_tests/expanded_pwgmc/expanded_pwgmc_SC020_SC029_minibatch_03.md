@@ -67,7 +67,7 @@ These positive breaks therefore confirm default-profile local constraints rather
 
 ## Profile warning
 
-These rows remain **expanded-profile** results. They should not overwrite, silently revise, or be folded directly into the default chronology-card corpus, default first-break index, or default graph export.
+These rows remain **expanded-profile** results. They should not overwrite, silently revise, or be folded directly into the default chronology-card corpus, default first-break TSV corpus, or default graph export.
 
 The expanded evidence is compatible with the default-profile card layer: it strengthens the negative interpretation of the boundary-limited cases while preserving the existing local break relations for `SC020` / `SC019` and `SC027` / `SC026`. But the repository should continue to treat that compatibility as a separate review-layer fact, not as automatic integration into ordinary cards.
 
