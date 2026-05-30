@@ -1,15 +1,15 @@
 change_id	current_order	rule_name	card_file	in_core_edges	in_contextual_edges	has_excluded_relations	has_supplementary_expanded_profile_note	notes
 SC014	14	NWGmc Unstressed Ai Monophthongization	SC014-nwgmc-unstressed-ai-monophthongization.md	no	no	yes	no	currently represented only through excluded relations
-SC015	15	NWGmc I Lowering	SC015-nwgmc-i-lowering.md	no	yes	yes	no	currently represented only in contextual edges
+SC015	15	NWGmc I Lowering	SC015-nwgmc-i-lowering.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC016	16	OE Ws Palatal Glide	SC016-oe-ws-palatal-glide.md	yes	no	yes	no	-
 SC017	17	NWGmc U Lowering	SC017-nwgmc-u-lowering.md	yes	no	no	no	-
 SC018	18	NWGmc Stressed Monosyllable O Raising	SC018-nwgmc-stressed-monosyllable-o-raising.md	no	no	yes	no	currently represented only through excluded relations
 SC019	19	NWGmc Final Long O Raising	SC019-nwgmc-final-long-o-raising.md	yes	yes	no	no	-
 SC020	20	PGmc Final Z Deletion	SC020-pgmc-final-z-deletion.md	yes	yes	no	no	-
-SC021	21	NWGmc Unstressed O Raising	SC021-nwgmc-unstressed-o-raising.md	no	yes	yes	no	currently represented only in contextual edges
+SC021	21	NWGmc Unstressed O Raising	SC021-nwgmc-unstressed-o-raising.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC022	22	NWGmc Mn Dissimilation	SC022-nwgmc-mn-dissimilation.md	no	no	yes	no	currently represented only through excluded relations
-SC023	23	NWGmc N Stem N Loss	SC023-nwgmc-n-stem-n-loss.md	no	yes	yes	no	currently represented only in contextual edges
-SC024	24	NWGmc Long E Lowering	SC024-nwgmc-long-e-lowering.md	no	yes	yes	no	currently represented only in contextual edges
+SC023	23	NWGmc N Stem N Loss	SC023-nwgmc-n-stem-n-loss.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
+SC024	24	NWGmc Long E Lowering	SC024-nwgmc-long-e-lowering.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC025	25	NWGmc Long E Nasal Rounding	SC025-nwgmc-long-e-nasal-rounding.md	no	no	yes	no	currently represented only through excluded relations
 SC026	26	NWGmc Nasal Spirant Lengthening	SC026-nwgmc-nasal-spirant-lengthening.md	yes	no	yes	no	-
 SC027	27	NWGmc Nasal Spirant Loss	SC027-nwgmc-nasal-spirant-loss.md	yes	no	yes	no	-
@@ -18,11 +18,11 @@ SC029	29	OE Awj Glide Formation	SC029-oe-awj-glide-formation.md	yes	no	yes	no	-
 SC030	30	OE Au Fronting	SC030-oe-au-fronting.md	yes	no	no	no	-
 SC031	31	OE WW Simplification	SC031-oe-ww-simplification.md	yes	no	yes	yes	card carries supplementary expanded-PWGmc note
 SC032	32	OE Diphthong Leveling	SC032-oe-diphthong-leveling.md	yes	no	no	no	-
-SC033	33	OE Ew Long Diphthong	SC033-oe-ew-long-diphthong.md	no	yes	yes	yes	currently represented only in contextual edges; card carries supplementary expanded-PWGmc note
+SC033	33	OE Ew Long Diphthong	SC033-oe-ew-long-diphthong.md	no	yes	yes	yes	no core edges; represented in contextual edges and excluded relation rows; card carries supplementary expanded-PWGmc note
 SC034	34	OE Aw Long Diphthong	SC034-oe-aw-long-diphthong.md	yes	no	no	no	-
-SC035	35	OE Prefix A Reduction Early	SC035-oe-prefix-a-reduction-early.md	no	yes	yes	no	currently represented only in contextual edges
+SC035	35	OE Prefix A Reduction Early	SC035-oe-prefix-a-reduction-early.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC036	36	OE Inter Stress Raising	SC036-oe-inter-stress-raising.md	yes	yes	no	no	-
-SC037	37	OE Compound Linking Syncope	SC037-oe-compound-linking-syncope.md	no	yes	yes	no	currently represented only in contextual edges
+SC037	37	OE Compound Linking Syncope	SC037-oe-compound-linking-syncope.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC039	39	OE WI Combinative U Umlaut	SC039-oe-wi-combinative-u-umlaut.md	yes	no	yes	no	-
 SC040	40	OE Med Unstressed U Lowering	SC040-oe-med-unstressed-u-lowering.md	yes	yes	no	no	-
 SC041	41	PWGmc Final Bare A Loss	SC041-pwgmc-final-bare-a-loss.md	yes	yes	no	no	-
@@ -33,7 +33,7 @@ SC045	45	OE Velar Fricative Palatalization	SC045-oe-velar-fricative-palatalizati
 SC046	46	OE A Restoration	SC046-oe-a-restoration.md	yes	no	no	no	-
 SC047	47	OE Heavy Syllable Nasal Apocope	SC047-oe-heavy-syllable-nasal-apocope.md	yes	yes	no	no	-
 SC048	48	OE Secondary Nasalization	SC048-oe-secondary-nasalization.md	yes	yes	no	no	-
-SC049	49	PGmc B Allophony	SC049-pgmc-b-allophony.md	no	yes	yes	no	currently represented only in contextual edges
+SC049	49	PGmc B Allophony	SC049-pgmc-b-allophony.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC050	50	Sievers Law Syncope	SC050-sievers-law-syncope.md	yes	no	yes	no	-
 SC051	51	OE Sk Palatalization	SC051-oe-sk-palatalization.md	yes	no	no	no	-
 SC052	52	OE Velar Palatalization	SC052-oe-velar-palatalization.md	yes	yes	no	no	-
@@ -41,18 +41,18 @@ SC053	53	OE Post Velar W Loss	SC053-oe-post-velar-w-loss.md	no	no	yes	no	current
 SC054	54	OE W Loss Before I	SC054-oe-w-loss-before-i.md	yes	no	no	no	-
 SC055	55	OE I Umlaut	SC055-oe-i-umlaut.md	yes	yes	no	no	-
 SC056	56	OE Ws Palatal Diphthongization	SC056-oe-ws-palatal-diphthongization.md	yes	yes	yes	no	-
-SC057	57	OE J Cluster Coalescence	SC057-oe-j-cluster-coalescence.md	no	yes	yes	no	currently represented only in contextual edges
+SC057	57	OE J Cluster Coalescence	SC057-oe-j-cluster-coalescence.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC058	58	OE Nasal Dissimilation	SC058-oe-nasal-dissimilation.md	no	no	yes	no	currently represented only through excluded relations
 SC059	59	OE Back Mutation	SC059-oe-back-mutation.md	yes	no	no	no	-
 SC060	60	OE Ws Palatal Umlaut	SC060-oe-ws-palatal-umlaut.md	yes	yes	yes	no	-
-SC061	61	OE Weak Tail Nasal Loss	SC061-oe-weak-tail-nasal-loss.md	no	yes	yes	no	currently represented only in contextual edges
+SC061	61	OE Weak Tail Nasal Loss	SC061-oe-weak-tail-nasal-loss.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC063	63	OE High Vowel Apocope	SC063-oe-high-vowel-apocope.md	yes	no	no	no	-
 SC064	64	NWGmc In Stem N Loss	SC064-nwgmc-in-stem-n-loss.md	yes	no	no	no	-
 SC065	65	OE Medial Syncope	SC065-oe-medial-syncope.md	no	no	yes	no	currently represented only through excluded relations
 SC066	66	OE L Adjacent Syncope	SC066-oe-l-adjacent-syncope.md	yes	no	no	no	-
 SC067	67	OE Dental Assimilation	SC067-oe-dental-assimilation.md	no	no	yes	no	currently represented only through excluded relations
 SC068	68	OE Preconsonantal Degemination	SC068-oe-preconsonantal-degemination.md	yes	no	yes	no	-
-SC069	69	OE Early O Shortening	SC069-oe-early-o-shortening.md	no	yes	yes	no	currently represented only in contextual edges
+SC069	69	OE Early O Shortening	SC069-oe-early-o-shortening.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
 SC070	70	OE Unstressed Fronting Early	SC070-oe-unstressed-fronting-early.md	yes	yes	no	no	-
 SC071	71	OE Late O Shortening	SC071-oe-late-o-shortening.md	yes	no	yes	no	-
 SC072	72	OE Unstressed Long Vowel Shortening	SC072-oe-unstressed-long-vowel-shortening.md	yes	yes	no	no	-
@@ -68,4 +68,4 @@ SC082	81	OE Intervocalic J Vocalization	SC082-oe-intervocalic-j-vocalization.md	
 SC083	82	OE Unstressed EI Contraction	SC083-oe-unstressed-ei-contraction.md	yes	no	yes	no	-
 SC085	84	OE H Loss	SC085-oe-h-loss.md	yes	no	no	no	-
 SC086	85	OE Contraction	SC086-oe-contraction.md	yes	no	yes	no	-
-SC087	86	OE R Metathesis	SC087-oe-r-metathesis.md	no	yes	yes	no	currently represented only in contextual edges
+SC087	86	OE R Metathesis	SC087-oe-r-metathesis.md	no	yes	yes	no	no core edges; represented in contextual edges and excluded relation rows
