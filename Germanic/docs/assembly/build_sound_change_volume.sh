@@ -10,6 +10,11 @@ assembled_pdf="${script_dir}/sound_change_volume_alpha_01.pdf"
 metadata="${script_dir}/full_volume_metadata.yaml"
 refs_bib="${repo_root}/docs/refs.bib"
 
+# MacTeX commonly installs TeX engines here without updating non-login PATHs.
+if [[ -d /Library/TeX/texbin ]] && [[ ":${PATH}:" != *":/Library/TeX/texbin:"* ]]; then
+  export PATH="/Library/TeX/texbin:${PATH}"
+fi
+
 cd "${repo_root}"
 
 python3 "${script_dir}/build_sound_change_volume.py"
