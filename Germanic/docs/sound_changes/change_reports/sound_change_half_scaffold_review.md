@@ -4,12 +4,12 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 19
-assembled units: one pilot production report (`016-020`), one full production
-report (`043`), and 17 remaining scaffold placeholders. `043` now serves as the
-first promoted singleton full report, while `063` remains the clearest
-remaining singleton scaffold promotion candidate. Most other units are still
-intentionally grouped placeholders whose main job is to keep the whole half
-visible without claiming that chapter boundaries are already settled.
+assembled units: one pilot production report (`016-020`), two full singleton
+production reports (`043` and `063`), and 16 remaining scaffold placeholders.
+The two singleton promotions now provide a clearer production baseline, while
+most other units are still intentionally grouped placeholders whose main job is
+to keep the whole half visible without claiming that chapter boundaries are
+already settled.
 
 ## Structural review of current units
 
@@ -29,7 +29,7 @@ visible without claiming that chapter boundaries are already settled.
 | 049-052 | Onset allophony and palatalization cluster | SC049; SC050; SC051; SC052 | scaffold | yes | likely | low | Important material, but the internal chapter shape still looks unsettled and source support is uneven. |
 | 053-058 | Umlaut transition and negative boundaries | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | maybe | likely | medium | Important transition zone, but the current cluster probably needs internal splitting before promotion. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
-| 063 | High-vowel apocope | SC063 | scaffold | no | no | high | Existing literature and book dossiers make this the other clear standalone next-promotion candidate. |
+| 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | scaffold | yes | maybe | low | Reasonable paired tail scaffold, but not yet more source-ready than `SC063` itself. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | scaffold | yes | maybe | medium | Plausible later corridor with visible local structure, but not yet as immediately ready as `SC043` or `SC063`. |
 | 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
@@ -37,10 +37,10 @@ visible without claiming that chapter boundaries are already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC063 High-vowel apocope** — now the clearest remaining singleton scaffold promotion candidate because it already has substantial literature and book-dossier support.
-2. **SC026-SC027 Nasal spirant corridor** — attractive paired corridor with clean local structure, but it still needs literature work first.
-3. **SC066-SC068 Syncope and degemination corridor** — plausible later corridor once a human decides that the current grouping is the right size.
-4. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
+1. **SC026-SC027 Nasal spirant corridor** — now the clearest next corridor candidate, but it still needs literature work before promotion.
+2. **SC066-SC068 Syncope and degemination corridor** — plausible later corridor once a human decides that the current grouping is the right size.
+3. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
+4. **SC049-SC052 Onset allophony and palatalization cluster** — a possible later candidate if human review decides a palatalization-focused unit can be separated cleanly from the present grouped scaffold.
 
 ## Recommended immediate next step
 
