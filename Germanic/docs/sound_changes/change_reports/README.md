@@ -38,3 +38,7 @@ The sound-change build currently assembles manifest-backed production reports to
 `Germanic/docs/assembly/sound_change_volume_alpha_01.md` and, where local
 `pandoc` support is available, renders
 `Germanic/docs/assembly/sound_change_volume_alpha_01.tex` and an uncommitted PDF.
+Source reports may use inline code spans for linguistic forms during authoring,
+but the assembly step converts those spans to reader-facing linguistic
+formatting while preserving genuine code, paths, and commands, following the
+lexical-volume convention.
