@@ -1,0 +1,46 @@
+edge_id	source_change_id	target_change_id	graph_layer	relation_kind	support_count	supporting_rows	supporting_cards	representative_failures	broad_far	reciprocal	runner_limited	supplementary	notes
+core_SC016_SC017	SC016	SC017	core	reciprocal_historical	2	relation_row_006; relation_row_007	SC016-oe-ws-palatal-glide.md; SC017-nwgmc-u-lowering.md	yoke	no	yes	no	no	deduplicated reciprocal support rows
+core_SC017_SC019	SC017	SC019	core	reciprocal_historical	2	relation_row_008; relation_row_011	SC017-nwgmc-u-lowering.md; SC019-nwgmc-final-long-o-raising.md	nose; shovel; sorrow	no	yes	no	no	deduplicated reciprocal support rows
+core_SC019_SC020	SC019	SC020	core	reciprocal_historical	2	relation_row_012; relation_row_013	SC019-nwgmc-final-long-o-raising.md; SC020-pgmc-final-z-deletion.md	rest	no	yes	no	no	deduplicated reciprocal support rows
+core_SC020_SC042	SC020	SC042	core	local_historical	1	relation_row_055	SC042-pwgmc-surviving-bimoric-o-unrounding.md	rest	no	no	no	no	-
+core_SC020_SC054	SC020	SC054	core	local_historical	1	relation_row_079	SC054-oe-w-loss-before-i.md	sea	no	no	no	no	-
+core_SC026_SC027	SC026	SC027	core	reciprocal_historical	2	relation_row_026; relation_row_027	SC026-nwgmc-nasal-spirant-lengthening.md; SC027-nwgmc-nasal-spirant-loss.md	fist; goose; youth	no	yes	no	no	deduplicated reciprocal support rows
+core_SC029_SC030	SC029	SC030	core	reciprocal_historical	2	relation_row_032; relation_row_033	SC029-oe-awj-glide-formation.md; SC030-oe-au-fronting.md	hay; strew	no	yes	no	no	deduplicated reciprocal support rows
+core_SC030_SC032	SC030	SC032	core	reciprocal_historical	2	relation_row_034; relation_row_037	SC030-oe-au-fronting.md; SC032-oe-diphthong-leveling.md	believe; bow; bread; dream; flea	no	yes	no	no	deduplicated reciprocal support rows
+core_SC031_SC034	SC031	SC034	core	reciprocal_historical	2	relation_row_036; relation_row_041	SC031-oe-ww-simplification.md; SC034-oe-aw-long-diphthong.md	dew; hew	no	yes	no	no	deduplicated reciprocal support rows; support card may carry supplementary expanded-PWGmc note, but this edge uses only default-profile relation rows
+core_SC032_SC040	SC032	SC040	core	local_historical	1	relation_row_038	SC032-oe-diphthong-leveling.md	head	no	no	no	no	-
+core_SC034_SC043	SC034	SC043	core	local_historical	1	relation_row_042	SC034-oe-aw-long-diphthong.md	dew; hew; show; show (3sg); show (iptv.2sg)	no	no	no	no	-
+core_SC034_SC047	SC034	SC047	core	local_historical	1	relation_row_065	SC047-oe-heavy-syllable-nasal-apocope.md	straw	no	no	no	no	-
+core_SC036_SC040	SC036	SC040	core	local_historical	1	relation_row_046	SC036-oe-inter-stress-raising.md	soul; world	no	no	no	no	-
+core_SC039_SC040	SC039	SC040	core	reciprocal_historical	2	relation_row_050; relation_row_051	SC039-oe-wi-combinative-u-umlaut.md; SC040-oe-med-unstressed-u-lowering.md	widow	no	yes	no	no	deduplicated reciprocal support rows
+core_SC041_SC046	SC041	SC046	core	local_historical	1	relation_row_054	SC041-pwgmc-final-bare-a-loss.md	craft; dale; day; hazel; mast	no	no	no	no	-
+core_SC041_SC064	SC041	SC064	core	local_historical	1	relation_row_097	SC064-nwgmc-in-stem-n-loss.md	fright	no	no	no	no	-
+core_SC042_SC043	SC042	SC043	core	reciprocal_historical	2	relation_row_056; relation_row_057	SC042-pwgmc-surviving-bimoric-o-unrounding.md; SC043-anglo-frisian-brightening.md	rest	no	yes	no	no	deduplicated reciprocal support rows
+core_SC043_SC044	SC043	SC044	core	reciprocal_historical	2	relation_row_058; relation_row_059	SC043-anglo-frisian-brightening.md; SC044-oe-breaking.md	slay	no	yes	no	no	deduplicated reciprocal support rows
+core_SC043_SC046	SC043	SC046	core	local_historical	1	relation_row_063	SC046-oe-a-restoration.md	bake; fare; flask; grave; haw	no	no	no	no	-
+core_SC044_SC045	SC044	SC045	core	reciprocal_historical	2	relation_row_060; relation_row_061	SC044-oe-breaking.md; SC045-oe-velar-fricative-palatalization.md	fee; fight; flax; knight; laugh	no	yes	no	no	deduplicated reciprocal support rows
+core_SC045_SC060	SC045	SC060	core	local_historical	1	relation_row_062	SC045-oe-velar-fricative-palatalization.md	six	no	no	no	no	-
+core_SC046_SC048	SC046	SC048	core	local_historical	1	relation_row_064	SC046-oe-a-restoration.md	bake; fare; grave; lade; wade	no	no	no	no	-
+core_SC046_SC051	SC046	SC051	core	local_historical	1	relation_row_073	SC051-oe-sk-palatalization.md	flask; wash	no	no	no	no	-
+core_SC048_SC059	SC048	SC059	core	reciprocal_historical	2	relation_row_068; relation_row_089	SC048-oe-secondary-nasalization.md; SC059-oe-back-mutation.md	steal; weave; give; shear	no	yes	no	no	deduplicated reciprocal support rows
+core_SC050_SC052	SC050	SC052	core	reciprocal_historical	2	relation_row_072; relation_row_075	SC050-sievers-law-syncope.md; SC052-oe-velar-palatalization.md	stretch	no	yes	no	no	deduplicated reciprocal support rows
+core_SC051_SC056	SC051	SC056	core	local_historical	1	relation_row_074	SC051-oe-sk-palatalization.md	shaft; shear; sheath; sheep; shield	no	no	no	no	-
+core_SC052_SC055	SC052	SC055	core	reciprocal_historical	2	relation_row_076; relation_row_081	SC052-oe-velar-palatalization.md; SC055-oe-i-umlaut.md	cow; lung	no	yes	no	no	deduplicated reciprocal support rows
+core_SC052_SC070	SC052	SC070	core	local_historical	1	relation_row_109	SC070-oe-unstressed-fronting-early.md	lung	no	no	no	no	-
+core_SC054_SC063	SC054	SC063	core	local_historical	1	relation_row_080	SC054-oe-w-loss-before-i.md	sea	no	no	no	no	-
+core_SC055_SC056	SC055	SC056	core	reciprocal_historical	2	relation_row_082; relation_row_083	SC055-oe-i-umlaut.md; SC056-oe-ws-palatal-diphthongization.md	gift; sheath	no	yes	no	no	deduplicated reciprocal support rows
+core_SC055_SC063	SC055	SC063	core	local_historical	1	relation_row_095	SC063-oe-high-vowel-apocope.md	belly; birth; breeches; bride; cow	no	no	no	no	-
+core_SC055_SC066	SC055	SC066	core	local_historical	1	relation_row_101	SC066-oe-l-adjacent-syncope.md	nettle; spindle	no	no	no	no	-
+core_SC059_SC078	SC059	SC078	core	local_historical	1	relation_row_090	SC059-oe-back-mutation.md	steal; weave	no	no	no	no	-
+core_SC063_SC072	SC063	SC072	core	local_historical	1	relation_row_096	SC063-oe-high-vowel-apocope.md	fright	no	no	no	no	-
+core_SC064_SC072	SC064	SC072	core	reciprocal_historical	2	relation_row_098; relation_row_113	SC064-nwgmc-in-stem-n-loss.md; SC072-oe-unstressed-long-vowel-shortening.md	fright	no	yes	no	no	deduplicated reciprocal support rows
+core_SC066_SC068	SC066	SC068	core	reciprocal_historical	2	relation_row_102; relation_row_105	SC066-oe-l-adjacent-syncope.md; SC068-oe-preconsonantal-degemination.md	spindle	no	yes	no	no	deduplicated reciprocal support rows
+core_SC070_SC071	SC070	SC071	core	reciprocal_historical	2	relation_row_110; relation_row_111	SC070-oe-unstressed-fronting-early.md; SC071-oe-late-o-shortening.md	bore (3sg); learn (3sg); lick (3sg); make (3sg); month	no	yes	no	no	deduplicated reciprocal support rows
+core_SC072_SC074	SC072	SC074	core	local_historical	1	relation_row_117	SC074-oe-med-unstressed-i-lowering1.md	fright	no	no	no	no	-
+core_SC073_SC085	SC073	SC085	core	reciprocal_historical	2	relation_row_116; relation_row_135	SC073-oe-unstressed-ae-merger.md; SC085-oe-h-loss.md	toe	no	yes	no	no	deduplicated reciprocal support rows
+core_SC074_SC075	SC074	SC075	core	reciprocal_historical	2	relation_row_118; relation_row_119	SC074-oe-med-unstressed-i-lowering1.md; SC075-oe-med-unstressed-i-lowering.md	shilling	no	yes	no	no	deduplicated reciprocal support rows
+core_SC078_SC086	SC078	SC086	core	local_historical	1	relation_row_124	SC078-oe-weak-tail-reduction.md	flee; slay	no	no	no	no	-
+core_SC079_SC080	SC079	SC080	core	reciprocal_historical	2	relation_row_126; relation_row_127	SC079-oe-j-loss-after-heavy.md; SC080-oe-final-geminate-simplification.md	lung	no	yes	no	no	deduplicated reciprocal support rows
+core_SC081_SC082	SC081	SC082	core	reciprocal_historical	2	relation_row_130; relation_row_131	SC081-oe-j-strengthening-after-front-diphthong.md; SC082-oe-intervocalic-j-vocalization.md	strew	no	yes	no	no	deduplicated reciprocal support rows
+core_SC082_SC083	SC082	SC083	core	reciprocal_historical	2	relation_row_132; relation_row_133	SC082-oe-intervocalic-j-vocalization.md; SC083-oe-unstressed-ei-contraction.md	bore; handle; learn; lick; make	no	yes	no	no	deduplicated reciprocal support rows
+core_SC085_SC086	SC085	SC086	core	reciprocal_historical	2	relation_row_136; relation_row_137	SC085-oe-h-loss.md; SC086-oe-contraction.md	flee; slay; ten; toe	no	yes	no	no	deduplicated reciprocal support rows
