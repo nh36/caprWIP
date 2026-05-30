@@ -38,7 +38,14 @@ bash Germanic/docs/assembly/build_sound_change_volume.sh
 The current build assembles the full half to
 `Germanic/docs/assembly/sound_change_volume_alpha_01.md` and, where local
 `pandoc` support is available, renders
-`Germanic/docs/assembly/sound_change_volume_alpha_01.tex` and an uncommitted
+`Germanic/docs/assembly/sound_change_volume_alpha_01.tex`. PDF generation is
+now opt-in for local inspection only:
+
+```bash
+SOUND_CHANGE_BUILD_PDF=1 bash Germanic/docs/assembly/build_sound_change_volume.sh
+```
+
+Repository tasks should normally stop at Markdown/TeX and should not commit the
 PDF. Source reports may use inline code spans for linguistic forms during
 authoring, but the assembly step converts those spans to reader-facing
 linguistic formatting while preserving genuine code, paths, and commands,

@@ -101,12 +101,21 @@ Practical rule:
 
 ## Build relation
 
-These entries are intended to enter the same Pandoc/LaTeX/PDF pipeline already
+These entries are intended to enter the same Pandoc/LaTeX pipeline already
 documented for the lexical half. Use:
 
 ```bash
 bash Germanic/docs/assembly/build_sound_change_volume.sh
 ```
+
+This should normally regenerate Markdown and, where `pandoc` is available, TeX.
+PDF generation is opt-in for local inspection only:
+
+```bash
+SOUND_CHANGE_BUILD_PDF=1 bash Germanic/docs/assembly/build_sound_change_volume.sh
+```
+
+Do not commit the PDF as part of the repository build workflow.
 
 Source Markdown may use inline code spans for linguistic forms during authoring,
 but the assembly step converts those spans to reader-facing linguistic

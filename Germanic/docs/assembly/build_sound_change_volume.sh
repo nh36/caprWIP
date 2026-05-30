@@ -35,6 +35,11 @@ pandoc "${assembled_md}" \
 
 echo "Generated ${assembled_tex}"
 
+if [[ "${SOUND_CHANGE_BUILD_PDF:-0}" != "1" ]]; then
+  echo "Skipping PDF generation by default. Set SOUND_CHANGE_BUILD_PDF=1 to build the PDF locally."
+  exit 0
+fi
+
 pdf_engine=""
 if command -v xelatex >/dev/null 2>&1; then
   pdf_engine="xelatex"
