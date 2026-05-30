@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 4.
-3. Number covered by scaffold placeholders: 66.
+2. Number covered by pilot/full production reports: 5.
+3. Number covered by scaffold placeholders: 65.
 4. Number grouped into multi-change units: 68.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 66.
+6. Number needing human judgement: 65.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -26,7 +26,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
-| 043 | SC043 | scaffold | strong local standalone candidate | substantial source material exists | singleton scaffold ready for human review |
+| 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
 | 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | no dedicated dossier yet | grouped onset cluster scaffold |
 | 053-058 | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | mixed local links and negative boundaries | no dedicated dossier yet | grouped transition scaffold |

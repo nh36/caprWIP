@@ -4,11 +4,12 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 19
-assembled units: one pilot production report (`016-020`) plus 18 scaffold
-placeholders. `043` and `063` are singleton scaffold entries with substantial
-existing source material, while most other units are intentionally grouped
-placeholders whose main job is to keep the whole half visible without claiming
-that chapter boundaries are already settled.
+assembled units: one pilot production report (`016-020`), one full production
+report (`043`), and 17 remaining scaffold placeholders. `043` now serves as the
+first promoted singleton full report, while `063` remains the clearest
+remaining singleton scaffold promotion candidate. Most other units are still
+intentionally grouped placeholders whose main job is to keep the whole half
+visible without claiming that chapter boundaries are already settled.
 
 ## Structural review of current units
 
@@ -23,7 +24,7 @@ that chapter boundaries are already settled.
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Best kept as a derivational bridge for now because the unit is more functional than chapter-ready. |
 | 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | maybe | low | Transitional bridge that is helpful in the assembled half but not yet an obvious promotion candidate. |
 | 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
-| 043 | Anglo-Frisian brightening | SC043 | scaffold | no | no | high | Existing literature and book dossiers make this the clearest standalone next-promotion candidate. |
+| 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
 | 049-052 | Onset allophony and palatalization cluster | SC049; SC050; SC051; SC052 | scaffold | yes | likely | low | Important material, but the internal chapter shape still looks unsettled and source support is uneven. |
 | 053-058 | Umlaut transition and negative boundaries | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | maybe | likely | medium | Important transition zone, but the current cluster probably needs internal splitting before promotion. |
@@ -36,11 +37,10 @@ that chapter boundaries are already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC043 Anglo-Frisian brightening** — strongest near-term singleton because it already has substantial literature and book-dossier support.
-2. **SC063 High-vowel apocope** — similarly strong singleton with substantial existing source material and a clear chapter identity.
-3. **SC026-SC027 Nasal spirant corridor** — attractive paired corridor with clean local structure, but it still needs literature work first.
-4. **SC066-SC068 Syncope and degemination corridor** — plausible later corridor once a human decides that the current grouping is the right size.
-5. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
+1. **SC063 High-vowel apocope** — now the clearest remaining singleton scaffold promotion candidate because it already has substantial literature and book-dossier support.
+2. **SC026-SC027 Nasal spirant corridor** — attractive paired corridor with clean local structure, but it still needs literature work first.
+3. **SC066-SC068 Syncope and degemination corridor** — plausible later corridor once a human decides that the current grouping is the right size.
+4. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
 
 ## Recommended immediate next step
 

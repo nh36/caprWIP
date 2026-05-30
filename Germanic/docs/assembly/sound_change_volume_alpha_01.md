@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 4.
-- Covered by scaffold placeholders: 66.
+- Covered by pilot/full production reports: 5.
+- Covered by scaffold placeholders: 65.
 - Grouped into multi-change units: 68 changes across 17 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 66.
+- Still needing human judgement or promotion decisions: 65.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -26,7 +26,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
-| 043 | SC043 | scaffold | strong local standalone candidate | substantial source material exists | singleton scaffold ready for human review |
+| 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
 | 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | no dedicated dossier yet | grouped onset cluster scaffold |
 | 053-058 | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | mixed local links and negative boundaries | no dedicated dossier yet | grouped transition scaffold |
@@ -492,37 +492,79 @@ as a grouped context section or split the members more narrowly around `SC043`.
 
 #### Historical formulation
 
-This singleton scaffold keeps `SC043` visible as Anglo-Frisian brightening,
-already one of the clearer candidates for promotion from scaffold to finished
-production prose. It remains scaffolded here only because the production layer
-is being broadened before another polished chapter is drafted.
+SC043 is the early fronting usually called **Anglo-Frisian Brightening** or
+**First Fronting**: Germanic low *a* develops to æ-type outputs outside nasal
+environments. The core rule is stable in the handbook tradition even if the
+wider English-Frisian shared-innovation framing has to be handled more
+cautiously than the label itself may suggest [@Campbell1959, §131;
+@Hogg1992, p. 101; @RingeTaylor2014, pp. 157--158; @Fulk2018, §4.12].
 
-#### Current evidence
+#### Source tradition
 
-`SC043` already has a chronology card, a FOMA implementation, a literature
-dossier, and a book dossier. That makes the current entry materially better
-supported than most of the scaffold corpus, even though it is not yet promoted
-to a finished manifest-backed production report.
+Campbell gives the classical formulation of early *a* > æ outside nasal
+environments and then treats later breaking and restoration as changes that
+presuppose that fronted stage. Hogg makes the modern label pair explicit and is
+also the most useful direct support for extending the fronting into unstressed
+vowels. Ringe and Taylor sharpen the chronology further by arguing that
+fronting must precede breaking and that later retraction must follow both.
+Fulk gives the most compact bridge from the basic brightening rule to the later
+Old English developments that partly conceal it
+[@Campbell1959, §§131, 139, 157--158; @Hogg1992, pp. 101, 119, 445;
+@RingeTaylor2014, pp. 157--158, 168--169, 189--190; @Fulk2018, §§4.12--4.13].
+
+#### CAPR implementation
+
+CAPR formalizes SC043 with three coordinated clauses: an unstressed *a* > æ
+rule outside nasal environments, a stressed á > æ rule with the same core
+conditioning, and a long-final ā > ǣ clause. The first two are close to the
+handbook rule in explicit transducer form. The long-final clause is more
+model-specific: it is best read as an implementation choice tied to the
+surviving-bimoric ō > ā pathway inherited from SC042, not as a direct
+quotation from a single handbook statement.
 
 #### Place in the cascade
 
-`SC043` sits between `SC042` and `SC044` in the current order and anchors the
-center of the brightening/breaking region. The assembled scaffold therefore
-keeps it as a singleton rather than burying it inside a larger miscellaneous
-placeholder.
+SC043 sits in a tight local neighborhood: `SC042` PWGmc Surviving Bimoric O
+Unrounding, `SC043` Anglo-Frisian Brightening, `SC044` OE Breaking, `SC045` OE
+Velar Fricative Palatalization, and `SC046` OE A Restoration. That position
+matters because brightening is both fed and later partly masked inside the same
+cluster. It receives left-hand input from SC042, creates the front-vowel stage
+needed by SC044, and is later partly reversed by SC046 in back-vowel
+environments.
 
 #### Order evidence
 
-The chronology card already behaves like a genuine local production candidate
-rather than a merely negative or runner-limited note. That is why this scaffold
-is a standalone entry instead of only a row inside a grouped underdetermination
-section.
+The chronology card fixes SC043 in a narrow local window. `SC042 < SC043` is
+supported by rest: if brightening moves earlier across SC042, the derivation
+loses the fronted/restored route and yields rasta rather than ræste.
+`SC043 < SC044` is supported by slay: if brightening moves later than
+breaking, the derivation yields sleaan | slēaan rather than slēan. The
+wider local neighborhood also supports `SC043 < SC046`, while earlier links
+such as `SC034 < SC043` and contextual `SC035 < SC043` are best treated as
+orientation rather than as reasons to turn this report into a graph chapter.
 
-#### Status
+#### Interpretation
 
-This is a scaffold placeholder, not finished book prose. The next step is human
-review and a promotion decision, not another round of local polishing inside the
-current scaffold pass.
+For book purposes, SC043 is a pivot change. The literature establishes the
+basic fronting rule and its relation to later breaking and restoration. CAPR
+then makes that relation explicit in rule form, and the chronology card shows
+that the current local ordering is not arbitrary inside the model. The report
+should therefore present brightening as an enabling stage: it creates front-
+vowel input for later Old English developments and is subsequently partly
+obscured by restoration, so its historical importance often becomes clearest
+through the later changes that still presuppose it.
+
+#### Remaining cautions
+
+The broader English-Frisian shared-innovation story should be handled
+carefully: the existence of the fronting rule is well supported, but the
+subgrouping narrative is less straightforward [@Campbell1959, §131;
+@RingeTaylor2014, pp. 157--158]. The unstressed clause in CAPR is defensible
+from the handbook tradition, yet it remains a modeling choice that should not
+be mistaken for the whole historical claim [@Hogg1992, pp. 101, 445].
+Likewise, the long-final clause belongs to CAPR's representation of the
+SC042-to-SC043 pathway and should be presented as a model-specific approximation
+rather than as a simple handbook quotation.
 
 ## Restoration and nasal-tail corridor
 
