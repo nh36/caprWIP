@@ -79,6 +79,17 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 % definitions for citeproc citations
 \NewDocumentCommand\citeproctext{}{}
 \NewDocumentCommand\citeproc{mm}{%
@@ -142,13 +153,114 @@
 
 \begin{document}
 
-\section{Sound-change reports, alpha
-01}\label{sound-change-reports-alpha-01}
+\section{Sound-change half, alpha 01}\label{sound-change-half-alpha-01}
 
 \emph{Generated from
-\texttt{Germanic/docs/sound\_changes/change\_reports/report\_manifest.tsv}.
-This assembly includes only manifest-backed \texttt{pilot} and
-\texttt{full} production reports.}
+\texttt{Germanic/docs/sound\_changes/change\_reports/report\_manifest.tsv}
+and
+\texttt{Germanic/docs/sound\_changes/change\_reports/sound\_change\_half\_scaffold.tsv}.
+Pilot/full rows preserve finished production prose where it exists;
+scaffold rows keep the rest of the 70-change half visible and buildable
+without pretending that the prose is complete.}
+
+\subsection{Coverage summary}\label{coverage-summary}
+
+\begin{itemize}
+\tightlist
+\item
+  Ordinary chronology-card sound changes represented: 70/70.
+\item
+  Covered by pilot/full production reports: 4.
+\item
+  Covered by scaffold placeholders: 66.
+\item
+  Grouped into multi-change units: 68 changes across 17 units.
+\item
+  Still needing literature dossiers: 64.
+\item
+  Still needing human judgement or promotion decisions: 66.
+\item
+  Negative/boundary-only chronology cards: 10.
+\item
+  Broad/far/contextual chronology cards: 31.
+\end{itemize}
+
+\subsection{Unit register}\label{unit-register}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Unit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Change IDs
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Chronology status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Literature status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Recommended treatment
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+016-020 & SC016; SC017; SC019; SC020 & pilot & strong local corridor
+with forward links & substantial pilot source material & keep as pilot
+multi-change production report \\
+014-015 & SC014; SC015 & scaffold & mixed negative and broad/far & no
+dedicated dossier yet & grouped scaffold prelude \\
+018-025 & SC018; SC021; SC022; SC023; SC024; SC025 & scaffold & mixed
+contextual and boundary-limited & no dedicated dossier yet & grouped
+underdetermination scaffold \\
+026-027 & SC026; SC027 & scaffold & strong local reciprocal pair & no
+dedicated dossier yet & paired corridor scaffold \\
+028-030 & SC028; SC029; SC030 & scaffold & mixed local with one boundary
+preface & no dedicated dossier yet & grouped corridor scaffold \\
+031-034 & SC031; SC032; SC033; SC034 & scaffold & strong local chain
+with one broader outlier & no dedicated dossier yet & grouped corridor
+scaffold \\
+035-037 & SC035; SC036; SC037 & scaffold & contextual and mixed & no
+dedicated dossier yet & grouped derivational bridge \\
+039-041 & SC039; SC040; SC041 & scaffold & mixed local and broad bridge
+& no dedicated dossier yet & grouped bridge scaffold \\
+042-044-045 & SC042; SC044; SC045 & scaffold & mixed local context
+around SC043 & no dedicated dossier yet & grouped context scaffold \\
+043 & SC043 & scaffold & strong local standalone candidate & substantial
+source material exists & singleton scaffold ready for human review \\
+046-048 & SC046; SC047; SC048 & scaffold & mixed broad and local & no
+dedicated dossier yet & grouped short corridor scaffold \\
+049-052 & SC049; SC050; SC051; SC052 & scaffold & mixed contextual and
+local & no dedicated dossier yet & grouped onset cluster scaffold \\
+053-058 & SC053; SC054; SC055; SC056; SC057; SC058 & scaffold & mixed
+local links and negative boundaries & no dedicated dossier yet & grouped
+transition scaffold \\
+059-061 & SC059; SC060; SC061 & scaffold & mixed local and contextual
+bridge & no dedicated dossier yet & grouped late-vowel bridge
+scaffold \\
+063 & SC063 & scaffold & strong local standalone candidate & substantial
+source material exists & singleton scaffold ready for human review \\
+064-065 & SC064; SC065 & scaffold & mixed local and boundary-limited
+tail & no dedicated dossier yet & paired tail scaffold \\
+066-068 & SC066; SC067; SC068 & scaffold & strong local corridor with
+one weaker edge & no dedicated dossier yet & grouped corridor
+scaffold \\
+069-078 & SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078
+& scaffold & mixed broad, local, and negative late-tail evidence & no
+dedicated dossier yet & large grouped late-tail scaffold \\
+079-087 & SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 &
+scaffold & mixed broad and local closing cluster & no dedicated dossier
+yet & grouped closing scaffold \\
+\end{longtable}
+}
 
 \subsection{Early vocalic/final
 corridor}\label{early-vocalicfinal-corridor}
@@ -357,6 +469,705 @@ of Kroonen's nasō- \textasciitilde{} nusō- reconstruction
 (\citeproc{ref-Kroonen2013}{Kroonen 2013}). Finally, the later SC020
 links to SC041, SC042, and SC054 should remain background orientation
 only; they should not expand this entry into a graph-driven chapter.
+
+\subsection{Opening vowel prelude}\label{opening-vowel-prelude}
+
+\subsubsection{Sound-change report}\label{sound-change-report-1}
+
+\paragraph{Historical formulation}\label{historical-formulation-1}
+
+This scaffold unit groups \texttt{SC014} and \texttt{SC015} as the
+opening ordinary Northwest Germanic vowel prelude before the
+better-documented \texttt{SC016-SC020} corridor. It is a buildable
+placeholder rather than finished chapter prose.
+
+\paragraph{Current evidence}\label{current-evidence}
+
+Chronology cards and FOMA implementations already exist for both member
+changes. No dedicated literature dossier is yet attached to this unit in
+the production layer, so the scaffold keeps the opening pair visible
+without overstating the present prose maturity.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-1}
+
+The unit spans current cascade orders 14-15, from
+\emph{NWGmcUnstressedAiMonophthongization} to \emph{NWGmcILowering}. In
+the assembled half it functions as a short prelude to the existing
+\emph{016-020} pilot corridor.
+
+\paragraph{Order evidence}\label{order-evidence-1}
+
+\texttt{SC014} remains largely negative and boundary-limited, while
+\texttt{SC015} has the clearer broad/far profile. The scaffold therefore
+records an opening zone, not yet a settled local chapter corridor.
+
+\paragraph{Status}\label{status}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature dossier work and human review of whether \texttt{SC015}
+eventually remains grouped with \texttt{SC014} or splits forward into a
+larger early-vowel chapter.
+
+\subsection{Early Northwest Germanic unstressed and boundary-limited
+zone}\label{early-northwest-germanic-unstressed-and-boundary-limited-zone}
+
+\subsubsection{Sound-change report}\label{sound-change-report-2}
+
+\paragraph{Historical formulation}\label{historical-formulation-2}
+
+This scaffold unit gathers \texttt{SC018}, \texttt{SC021},
+\texttt{SC022}, \texttt{SC023}, \texttt{SC024}, and \texttt{SC025} as
+the early post-corridor Northwest Germanic unstressed and
+boundary-limited zone. The grouping is deliberate: several of these
+cards do not yet justify separate finished chapters.
+
+\paragraph{Current evidence}\label{current-evidence-1}
+
+Chronology cards and FOMA implementations exist for all six member
+changes. Dedicated literature dossiers have not yet been promoted for
+this zone, so the current assembly keeps the section visible in grouped
+scaffold form.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-2}
+
+The unit spans current cascade orders 18-25, from
+\emph{NWGmcStressedMonosyllableORaising} through
+\emph{NWGmcLongENasalRounding}. It sits immediately after the
+\emph{016-020} pilot and before the clearer \emph{026-027} nasal spirant
+corridor.
+
+\paragraph{Order evidence}\label{order-evidence-2}
+
+The cards mix runner-limited negatives with broad or contextual
+constraints, rather than forming one clean reciprocal chain. This is
+therefore best treated as an underdetermined scaffold band until the
+literature and prose framing are stronger.
+
+\paragraph{Status}\label{status-1}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature dossiers for most members and human review of which changes
+should eventually remain grouped versus split into narrower prose units.
+
+\subsection{Nasal spirant corridor}\label{nasal-spirant-corridor}
+
+\subsubsection{Sound-change report}\label{sound-change-report-3}
+
+\paragraph{Historical formulation}\label{historical-formulation-3}
+
+This scaffold unit keeps \texttt{SC026} and \texttt{SC027} together as
+the nasal spirant corridor. Even at scaffold level, the pair already
+behaves more like a genuine local chapter candidate than like a
+miscellaneous grab-bag.
+
+\paragraph{Current evidence}\label{current-evidence-2}
+
+Both member changes already have chronology cards and FOMA
+implementations. The production layer does not yet have a dedicated
+literature dossier for the pair, so the section remains a short
+placeholder rather than promoted prose.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-3}
+
+The unit spans current cascade orders 26-27, from
+\emph{NWGmcNasalSpirantLengthening} to \emph{NWGmcNasalSpirantLoss}. It
+follows the early unstressed zone and leads into the early
+glide/fronting material.
+
+\paragraph{Order evidence}\label{order-evidence-3}
+
+The chronology cards form a strong local reciprocal pair: each rule
+matters to the other. That makes the corridor highly visible in the
+scaffold even before the literature chapter has been written.
+
+\paragraph{Status}\label{status-2}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature framing and a human decision on whether the eventual chapter
+remains a paired corridor or widens to include adjacent fronting
+material.
+
+\subsection{Glide and fronting entry}\label{glide-and-fronting-entry}
+
+\subsubsection{Sound-change report}\label{sound-change-report-4}
+
+\paragraph{Historical formulation}\label{historical-formulation-4}
+
+This scaffold unit groups \texttt{SC028}, \texttt{SC029}, and
+\texttt{SC030} as the entry into the early Old English glide and
+fronting zone. It is meant to show the bridge into that region, not to
+settle the final chapter boundaries already.
+
+\paragraph{Current evidence}\label{current-evidence-3}
+
+All three member changes have chronology cards and FOMA implementations.
+No dedicated literature dossier has yet been promoted for the grouped
+unit, so the assembly preserves it as a concise placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-4}
+
+The unit spans current cascade orders 28-30, from
+\emph{NWGmcPreconsonantalXLoss} through \emph{OEAuFronting}. It sits
+between the nasal spirant corridor and the later West Saxon diphthong
+chain.
+
+\paragraph{Order evidence}\label{order-evidence-4}
+
+\texttt{SC028} still behaves like a weaker boundary preface, while
+\texttt{SC029} and \texttt{SC030} already participate in local
+glide/fronting interactions. The placeholder therefore records an entry
+corridor with one unsettled leading edge.
+
+\paragraph{Status}\label{status-3}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and human review of whether \texttt{SC028} ultimately
+remains attached to this section or is better treated as a boundary note
+beside it.
+
+\subsection{West Saxon diphthong
+chain}\label{west-saxon-diphthong-chain}
+
+\subsubsection{Sound-change report}\label{sound-change-report-5}
+
+\paragraph{Historical formulation}\label{historical-formulation-5}
+
+This scaffold unit groups \texttt{SC031}, \texttt{SC032},
+\texttt{SC033}, and \texttt{SC034} as the West Saxon diphthong chain.
+The aim is to keep the local corridor visible now without pretending
+that the final prose architecture is settled.
+
+\paragraph{Current evidence}\label{current-evidence-4}
+
+Chronology cards and FOMA implementations exist for all four member
+changes. Dedicated literature dossiers have not yet been promoted for
+the grouped chain, so the current entry remains a scaffold placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-5}
+
+The unit spans current cascade orders 31-34, from
+\emph{OEWwSimplification} through \emph{OEAwLongDiphthong}. It follows
+the glide/fronting entry and leads into the prefix and compound
+adjustments.
+
+\paragraph{Order evidence}\label{order-evidence-5}
+
+\texttt{SC031} and \texttt{SC034} already behave like a local reciprocal
+pair, while \texttt{SC032} and \texttt{SC033} keep the chain from
+collapsing into a single two-change note. The result is stronger than a
+miscellaneous cluster but still short of finished chapter prose.
+
+\paragraph{Status}\label{status-4}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature dossiers and human judgement about whether the eventual book
+keeps the full four-change chain together or promotes one narrower
+subsection first.
+
+\subsection{Prefix and compound
+adjustments}\label{prefix-and-compound-adjustments}
+
+\subsubsection{Sound-change report}\label{sound-change-report-6}
+
+\paragraph{Historical formulation}\label{historical-formulation-6}
+
+This scaffold unit groups \texttt{SC035}, \texttt{SC036}, and
+\texttt{SC037} as the prefix, interstress, and compound adjustment
+bridge. The grouping is mainly derivational: it keeps a real slice of
+the cascade visible without overpromising three separate polished
+chapters.
+
+\paragraph{Current evidence}\label{current-evidence-5}
+
+Each member change already has a chronology card and a FOMA
+implementation. The production layer still lacks dedicated literature
+dossiers for the grouped unit, so it remains a scaffold placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-6}
+
+The unit spans current cascade orders 35-37, from
+\emph{OEPrefixAReductionEarly} to \emph{OECompoundLinkingSyncope}. It
+bridges the diphthong material and the later medial-lowering/final-loss
+zone.
+
+\paragraph{Order evidence}\label{order-evidence-6}
+
+These cards are more contextual than tightly reciprocal. They show real
+derivational dependence, but not yet one clean local corridor that would
+force final chapter boundaries.
+
+\paragraph{Status}\label{status-5}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and human review of whether any member should split out
+into a standalone section rather than remain part of a grouped bridge.
+
+\subsection{Medial lowering and final-loss
+bridge}\label{medial-lowering-and-final-loss-bridge}
+
+\subsubsection{Sound-change report}\label{sound-change-report-7}
+
+\paragraph{Historical formulation}\label{historical-formulation-7}
+
+This scaffold unit groups \texttt{SC039}, \texttt{SC040}, and
+\texttt{SC041} as a bridge from medial unstressed lowering toward later
+final-syllable loss. It is meant to show the turn in the cascade, not to
+claim that the prose shape is final.
+
+\paragraph{Current evidence}\label{current-evidence-6}
+
+All three member changes have chronology cards and FOMA implementations.
+No dedicated literature dossier has yet been promoted for the grouped
+bridge, so the entry remains scaffold material.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-7}
+
+The unit spans current cascade orders 39-41, from
+\emph{OEWiCombinativeUUmlaut} through \emph{PWGmcFinalBareALoss}. In the
+current scaffold it precedes the brightening/breaking region.
+
+\paragraph{Order evidence}\label{order-evidence-7}
+
+\texttt{SC039} and \texttt{SC040} create local pressure around medial
+lowering, while \texttt{SC041} opens forward into later final-syllable
+developments. The cards therefore make best sense here as a bridge
+rather than as a closed mini-chapter.
+
+\paragraph{Status}\label{status-6}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature dossiers and a human decision on whether the eventual chapter
+should remain a bridge or be redistributed across neighbouring sections.
+
+\subsection{Brightening context and breaking
+corridor}\label{brightening-context-and-breaking-corridor}
+
+\subsubsection{Sound-change report}\label{sound-change-report-8}
+
+\paragraph{Historical formulation}\label{historical-formulation-8}
+
+This scaffold unit groups \texttt{SC042}, \texttt{SC044}, and
+\texttt{SC045} as the context band around Anglo-Frisian brightening and
+early breaking. It exists so that the assembled half shows the
+surrounding corridor without duplicating \texttt{SC043} as both
+singleton and cluster member.
+
+\paragraph{Current evidence}\label{current-evidence-7}
+
+Chronology cards and FOMA implementations exist for all three member
+changes. No dedicated literature dossier has yet been promoted for the
+grouped context band, so this entry remains a short scaffold
+placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-8}
+
+The unit spans current cascade orders 42-45, omitting the separately
+scaffolded \texttt{SC043} singleton while keeping the surrounding
+neighborhood visible. It leads into the post-brightening restoration and
+nasal-tail material.
+
+\paragraph{Order evidence}\label{order-evidence-8}
+
+The cards here are meaningful together, but the strongest
+near-production candidate in the zone remains \texttt{SC043} itself.
+This placeholder therefore keeps the context visible without pretending
+that the surrounding members already have settled chapter treatment.
+
+\paragraph{Status}\label{status-7}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and human review of whether the eventual book should
+keep this as a grouped context section or split the members more
+narrowly around \texttt{SC043}.
+
+\subsection{Anglo-Frisian brightening}\label{anglo-frisian-brightening}
+
+\subsubsection{Sound-change report}\label{sound-change-report-9}
+
+\paragraph{Historical formulation}\label{historical-formulation-9}
+
+This singleton scaffold keeps \texttt{SC043} visible as Anglo-Frisian
+brightening, already one of the clearer candidates for promotion from
+scaffold to finished production prose. It remains scaffolded here only
+because the production layer is being broadened before another polished
+chapter is drafted.
+
+\paragraph{Current evidence}\label{current-evidence-8}
+
+\texttt{SC043} already has a chronology card, a FOMA implementation, a
+literature dossier, and a book dossier. That makes the current entry
+materially better supported than most of the scaffold corpus, even
+though it is not yet promoted to a finished manifest-backed production
+report.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-9}
+
+\texttt{SC043} sits between \texttt{SC042} and \texttt{SC044} in the
+current order and anchors the center of the brightening/breaking region.
+The assembled scaffold therefore keeps it as a singleton rather than
+burying it inside a larger miscellaneous placeholder.
+
+\paragraph{Order evidence}\label{order-evidence-9}
+
+The chronology card already behaves like a genuine local production
+candidate rather than a merely negative or runner-limited note. That is
+why this scaffold is a standalone entry instead of only a row inside a
+grouped underdetermination section.
+
+\paragraph{Status}\label{status-8}
+
+This is a scaffold placeholder, not finished book prose. The next step
+is human review and a promotion decision, not another round of local
+polishing inside the current scaffold pass.
+
+\subsection{Restoration and nasal-tail
+corridor}\label{restoration-and-nasal-tail-corridor}
+
+\subsubsection{Sound-change report}\label{sound-change-report-10}
+
+\paragraph{Historical formulation}\label{historical-formulation-10}
+
+This scaffold unit groups \texttt{SC046}, \texttt{SC047}, and
+\texttt{SC048} as a short post-brightening corridor. It keeps the local
+bridge visible without forcing three separate finished sections before
+the larger architecture is reviewed.
+
+\paragraph{Current evidence}\label{current-evidence-9}
+
+All three member changes already have chronology cards and FOMA
+implementations. No dedicated literature dossier has yet been promoted
+for the grouped unit, so the entry remains scaffold material.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-10}
+
+The unit spans current cascade orders 46-48, from \emph{OEARestoration}
+through \emph{OESecondaryNasalization}. In the assembled scaffold it
+follows the brightening/breaking region and leads into onset allophony
+and palatalization.
+
+\paragraph{Order evidence}\label{order-evidence-10}
+
+The cards mix broad and local behavior rather than forming one rigid
+reciprocal pair. That is enough to justify a visible corridor
+placeholder, but not yet a fully segmented prose treatment.
+
+\paragraph{Status}\label{status-9}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature framing and human review of whether \texttt{SC046} eventually
+stands on its own or remains part of a grouped post-brightening chapter.
+
+\subsection{Onset allophony and palatalization
+cluster}\label{onset-allophony-and-palatalization-cluster}
+
+\subsubsection{Sound-change report}\label{sound-change-report-11}
+
+\paragraph{Historical formulation}\label{historical-formulation-11}
+
+This scaffold unit groups \texttt{SC049}, \texttt{SC050},
+\texttt{SC051}, and \texttt{SC052} as the onset allophony and
+palatalization cluster. The grouping keeps a coherent chapter region
+visible while the final internal chapter boundaries remain unsettled.
+
+\paragraph{Current evidence}\label{current-evidence-10}
+
+Each member change already has a chronology card and a FOMA
+implementation. Dedicated literature dossiers have not yet been promoted
+for the grouped unit, so the current entry remains a concise
+placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-11}
+
+The unit spans current cascade orders 49-52, from \emph{PGmcBAllophony}
+through \emph{OEVelarPalatalization}. It sits after the
+restoration/nasal-tail corridor and before the later umlaut-transition
+zone.
+
+\paragraph{Order evidence}\label{order-evidence-11}
+
+The cards mix contextual allophony with local palatalization boundaries.
+The unit is therefore useful as a visible onset cluster now, even though
+a later human review may decide to promote \texttt{SC051} or another
+member separately.
+
+\paragraph{Status}\label{status-10}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and human review of whether the eventual book keeps this
+grouped onset chapter or splits one of its members into a standalone
+section.
+
+\subsection{Umlaut transition and negative
+boundaries}\label{umlaut-transition-and-negative-boundaries}
+
+\subsubsection{Sound-change report}\label{sound-change-report-12}
+
+\paragraph{Historical formulation}\label{historical-formulation-12}
+
+This scaffold unit groups \texttt{SC053}, \texttt{SC054},
+\texttt{SC055}, \texttt{SC056}, \texttt{SC057}, and \texttt{SC058} as
+the post-velar and umlaut-transition section. The point is to show the
+whole region in the assembled half while admitting that its final prose
+segmentation is not ready.
+
+\paragraph{Current evidence}\label{current-evidence-11}
+
+Chronology cards and FOMA implementations exist for all six member
+changes. No dedicated literature dossiers have yet been promoted for the
+grouped unit, so the current entry stays in scaffold form.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-12}
+
+The unit spans current cascade orders 53-58, from
+\emph{OEPostVelarWLoss} through \emph{OENasalDissimilation}. It links
+onset/palatalization material to the later back-mutation and weak-tail
+bridge.
+
+\paragraph{Order evidence}\label{order-evidence-12}
+
+The cards mix productive local links, especially around the center of
+the unit, with negative or boundary-limited members at the edges. The
+scaffold therefore treats this as a transition section rather than as a
+set of already-final standalone chapters.
+
+\paragraph{Status}\label{status-11}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature dossiers, human review of the internal grouping, and a later
+decision about whether one member such as \texttt{SC054} should be
+promoted first.
+
+\subsection{Back mutation and weak-tail
+bridge}\label{back-mutation-and-weak-tail-bridge}
+
+\subsubsection{Sound-change report}\label{sound-change-report-13}
+
+\paragraph{Historical formulation}\label{historical-formulation-13}
+
+This scaffold unit groups \texttt{SC059}, \texttt{SC060}, and
+\texttt{SC061} as a compact later Old English vowel and weak-tail
+bridge. It keeps the late corridor visible without claiming that the
+chapter-level prose has already been settled.
+
+\paragraph{Current evidence}\label{current-evidence-12}
+
+All three member changes already have chronology cards and FOMA
+implementations. Dedicated literature dossiers have not yet been
+promoted for the grouped bridge, so the entry remains a short scaffold
+placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-13}
+
+The unit spans current cascade orders 59-61, from \emph{OEBackMutation}
+through \emph{OEWeakTailNasalLoss}. It follows the umlaut-transition
+zone and precedes the high-vowel apocope region.
+
+\paragraph{Order evidence}\label{order-evidence-13}
+
+The cards behave like a compact bridge rather than a loose miscellany,
+but they still mix local and contextual evidence. That is enough for
+scaffold assembly, not yet for finished prose.
+
+\paragraph{Status}\label{status-12}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and a human decision on whether the eventual chapter
+should stay grouped or split mutation material away from the weak-tail
+side.
+
+\subsection{High-vowel apocope}\label{high-vowel-apocope}
+
+\subsubsection{Sound-change report}\label{sound-change-report-14}
+
+\paragraph{Historical formulation}\label{historical-formulation-14}
+
+This singleton scaffold keeps \texttt{SC063} visible as high-vowel
+apocope, already a clear candidate for later promotion from scaffold to
+finished production prose. It remains scaffolded here because the
+present task is to expose the whole sound-change half, not to polish one
+more chapter.
+
+\paragraph{Current evidence}\label{current-evidence-13}
+
+\texttt{SC063} already has a chronology card, a FOMA implementation, a
+literature dossier, and a book dossier. As with \texttt{SC043}, the
+source base here is stronger than in most of the remaining scaffold
+corpus.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-14}
+
+\texttt{SC063} sits between \texttt{SC061} and \texttt{SC064} in the
+current order and anchors the high-vowel apocope region. The assembled
+scaffold therefore keeps it as a singleton rather than folding it into a
+broader miscellaneous cluster.
+
+\paragraph{Order evidence}\label{order-evidence-14}
+
+The chronology card already behaves like a genuine local production
+candidate. That makes this entry visibly near-promotion even though it
+is still marked as scaffold for the present whole-half pass.
+
+\paragraph{Status}\label{status-13}
+
+This is a scaffold placeholder, not finished book prose. The next step
+is human review and a promotion decision, not another round of local
+polishing inside this scaffold build.
+
+\subsection{Post-apocope tail}\label{post-apocope-tail}
+
+\subsubsection{Sound-change report}\label{sound-change-report-15}
+
+\paragraph{Historical formulation}\label{historical-formulation-15}
+
+This scaffold unit groups \texttt{SC064} and \texttt{SC065} as the
+immediate post-apocope tail. The grouping keeps the local aftermath of
+\texttt{SC063} visible without forcing two isolated finished chapters
+too early.
+
+\paragraph{Current evidence}\label{current-evidence-14}
+
+Both member changes already have chronology cards and FOMA
+implementations. The production layer does not yet have a dedicated
+literature dossier for the pair, so the section remains scaffold
+material.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-15}
+
+The unit spans current cascade orders 64-65, from
+\emph{NWGmcInStemNLoss} through \emph{OEMedialSyncope}. It follows the
+\texttt{SC063} singleton and leads into the later syncope and
+degemination corridor.
+
+\paragraph{Order evidence}\label{order-evidence-15}
+
+The pair is adjacent and meaningful together, but the later member still
+has boundary-limited features that argue against treating each change as
+already ready for polished standalone prose.
+
+\paragraph{Status}\label{status-14}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and a human decision on whether the eventual book keeps
+this as a paired tail section or redistributes one member into a
+neighbouring chapter.
+
+\subsection{Syncope and degemination
+corridor}\label{syncope-and-degemination-corridor}
+
+\subsubsection{Sound-change report}\label{sound-change-report-16}
+
+\paragraph{Historical formulation}\label{historical-formulation-16}
+
+This scaffold unit groups \texttt{SC066}, \texttt{SC067}, and
+\texttt{SC068} as a late syncope and degemination corridor. Even at
+scaffold level, the trio already behaves more like a real local section
+than like a loose residual batch.
+
+\paragraph{Current evidence}\label{current-evidence-15}
+
+All three member changes have chronology cards and FOMA implementations.
+No dedicated literature dossier has yet been promoted for the grouped
+corridor, so the entry remains a concise placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-16}
+
+The unit spans current cascade orders 66-68, from
+\emph{OELAdjacentSyncope} through \emph{OEPreconsonantalDegemination}.
+It sits between the post-apocope tail and the larger late
+unstressed-tail cluster.
+
+\paragraph{Order evidence}\label{order-evidence-16}
+
+The cards form one of the cleaner later local corridors, even though the
+final member still needs fuller source framing. That makes the grouped
+placeholder useful now and a plausible future promotion candidate later.
+
+\paragraph{Status}\label{status-15}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature framing and human review of whether the eventual promoted
+chapter should keep all three changes together.
+
+\subsection{Late unstressed-tail
+cluster}\label{late-unstressed-tail-cluster}
+
+\subsubsection{Sound-change report}\label{sound-change-report-17}
+
+\paragraph{Historical formulation}\label{historical-formulation-17}
+
+This scaffold unit groups \texttt{SC069}, \texttt{SC070},
+\texttt{SC071}, \texttt{SC072}, \texttt{SC073}, \texttt{SC074},
+\texttt{SC075}, \texttt{SC076}, and \texttt{SC078} as the late
+unstressed-tail cluster. The section is intentionally broad: its job is
+to make this large later region visible in the assembled half before its
+internal chaptering is stable.
+
+\paragraph{Current evidence}\label{current-evidence-16}
+
+Chronology cards and FOMA implementations exist for all nine member
+changes. No dedicated literature dossiers have yet been promoted for the
+grouped unit, so the current assembly keeps it as one large scaffold
+placeholder.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-17}
+
+The unit spans current cascade orders 69-78, from
+\emph{OEEarlyOShortening} through \emph{OEWeakTailReduction}. It follows
+the cleaner \emph{066-068} corridor and leads into the final-j,
+contraction, and metathesis region.
+
+\paragraph{Order evidence}\label{order-evidence-17}
+
+This band mixes broad/far links, local breaks, and negative cards. The
+scaffold therefore favors visibility over premature subdivision and
+leaves the finer internal chaptering for later human review.
+
+\paragraph{Status}\label{status-16}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+both literature work and a major human judgement pass on where this
+late-tail region should split into narrower production chapters.
+
+\subsection{Final-j, contraction, and metathesis
+cluster}\label{final-j-contraction-and-metathesis-cluster}
+
+\subsubsection{Sound-change report}\label{sound-change-report-18}
+
+\paragraph{Historical formulation}\label{historical-formulation-18}
+
+This scaffold unit groups \texttt{SC079}, \texttt{SC080},
+\texttt{SC081}, \texttt{SC082}, \texttt{SC083}, \texttt{SC085},
+\texttt{SC086}, and \texttt{SC087} as the closing final-j, contraction,
+and metathesis cluster. It gives the assembled sound-change half a
+visible terminal section without pretending that every closing card
+already has its own mature chapter.
+
+\paragraph{Current evidence}\label{current-evidence-17}
+
+All eight member changes already have chronology cards and FOMA
+implementations. Dedicated literature dossiers have not yet been
+promoted for the grouped closing cluster, so the present entry remains
+scaffold material.
+
+\paragraph{Place in the cascade}\label{place-in-the-cascade-18}
+
+The unit spans current cascade orders 79-87, from
+\emph{OEJLossAfterHeavy} through \emph{OERMetathesis}. It closes the
+current sound-change-half scaffold.
+
+\paragraph{Order evidence}\label{order-evidence-18}
+
+The cards mix broad and local closing behavior rather than forming a
+neat sequence of equally mature standalone sections. That is why the
+current assembled half keeps them together as one terminal scaffold
+cluster.
+
+\paragraph{Status}\label{status-17}
+
+This is a scaffold placeholder, not finished book prose. It still needs
+literature work and a human judgement pass on whether the closing region
+should remain grouped or be broken into contraction, \emph{j}-loss, and
+metathesis subchapters.
 
 \protect\phantomsection\label{refs}
 \begin{CSLReferences}{1}{1}

@@ -5,6 +5,7 @@ import csv
 import os
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 
@@ -12,6 +13,11 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
 REPORTS_DIR = REPO_ROOT / "Germanic/docs/sound_changes/change_reports"
 MANIFEST_PATH = REPORTS_DIR / "report_manifest.tsv"
+SCAFFOLD_PATH = REPORTS_DIR / "sound_change_half_scaffold.tsv"
+INVENTORY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/book_dossiers/sound_change_book_dossier_inventory.tsv"
+CHRONOLOGY_INDEX_PATH = (
+    REPO_ROOT / "Germanic/docs/sound_changes/order_tests/chronology_cards/chronology_card_index.tsv"
+)
 
 
 def env_path(name: str) -> Path | None:
@@ -23,7 +29,11 @@ def env_path(name: str) -> Path | None:
 
 
 OUTPUT_PATH = env_path("SOUND_CHANGE_VOLUME_OUTPUT_MD") or (SCRIPT_DIR / "sound_change_volume_alpha_01.md")
-ALLOWED_STATUSES = {"pilot", "full"}
+COVERAGE_REPORT_PATH = env_path("SOUND_CHANGE_COVERAGE_REPORT_MD") or (
+    REPORTS_DIR / "sound_change_half_coverage_report.md"
+)
+ASSEMBLED_STATUSES = {"pilot", "full", "scaffold"}
+DOCUMENTED_STATUSES = ASSEMBLED_STATUSES | {"needs_literature", "needs_human_review", "grouped_elsewhere"}
 INLINE_CODE_RE = re.compile(r"`([^`\n]+)`")
 BOLD_SPAN_RE = re.compile(r"(?<!\*)\*\*([^*\n]+)\*\*(?!\*)")
 ITALIC_SPAN_RE = re.compile(r"(?<!\*)\*([^*\n]+)\*(?!\*)")
@@ -251,13 +261,186 @@ def tidy_markdown_prose(text: str) -> str:
     return "".join(cleaned_parts)
 
 
+def split_semicolon_field(value: str) -> list[str]:
+    return [part.strip() for part in value.split(";") if part.strip() and part.strip().lower() != "none"]
+
+
+def read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
 def load_manifest_rows() -> list[dict[str, str]]:
-    with MANIFEST_PATH.open(newline="", encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        rows = [row for row in reader if (row.get("STATUS") or "").strip() in ALLOWED_STATUSES]
+    rows = read_tsv(MANIFEST_PATH)
     if not rows:
-        raise ValueError(f"No pilot/full rows found in {MANIFEST_PATH}")
-    return rows
+        raise ValueError(f"No rows found in {MANIFEST_PATH}")
+    normalized: list[dict[str, str]] = []
+    seen_ids: set[str] = set()
+    for row in rows:
+        row_id = (row.get("ID") or "").strip()
+        status = (row.get("STATUS") or "").strip()
+        row["change_ids"] = split_semicolon_field(row.get("CHANGE_IDS") or "")
+        if not row_id:
+            raise ValueError(f"Manifest row is missing ID: {row}")
+        if row_id in seen_ids:
+            raise ValueError(f"Duplicate manifest ID: {row_id}")
+        if status not in DOCUMENTED_STATUSES:
+            raise ValueError(f"Unsupported manifest STATUS {status!r} in {MANIFEST_PATH}")
+        seen_ids.add(row_id)
+        normalized.append(row)
+    assembled = [row for row in normalized if (row.get("STATUS") or "").strip() in ASSEMBLED_STATUSES]
+    if not assembled:
+        raise ValueError(f"No assembled rows found in {MANIFEST_PATH}")
+    return normalized
+
+
+def load_scaffold_rows() -> list[dict[str, str]]:
+    rows = read_tsv(SCAFFOLD_PATH)
+    if not rows:
+        raise ValueError(f"No rows found in {SCAFFOLD_PATH}")
+    normalized: list[dict[str, str]] = []
+    seen_ids: set[str] = set()
+    for row in rows:
+        unit_id = (row.get("UNIT_ID") or "").strip()
+        if not unit_id:
+            raise ValueError(f"Scaffold row is missing UNIT_ID: {row}")
+        if unit_id in seen_ids:
+            raise ValueError(f"Duplicate scaffold UNIT_ID: {unit_id}")
+        row["change_ids"] = split_semicolon_field(row.get("CHANGE_IDS") or "")
+        if not row["change_ids"]:
+            raise ValueError(f"Scaffold row {unit_id} is missing CHANGE_IDS")
+        seen_ids.add(unit_id)
+        normalized.append(row)
+    return normalized
+
+
+def load_inventory_rows() -> dict[str, dict[str, str]]:
+    rows = read_tsv(INVENTORY_PATH)
+    if not rows:
+        raise ValueError(f"No rows found in {INVENTORY_PATH}")
+    return {(row.get("change_id") or "").strip(): row for row in rows}
+
+
+def load_chronology_ids() -> list[str]:
+    rows = read_tsv(CHRONOLOGY_INDEX_PATH)
+    chronology_ids = [(row.get("change_id") or "").strip() for row in rows if (row.get("change_id") or "").strip()]
+    if not chronology_ids:
+        raise ValueError(f"No chronology rows found in {CHRONOLOGY_INDEX_PATH}")
+    return chronology_ids
+
+
+def validate_scaffold_coverage(
+    scaffold_rows: list[dict[str, str]],
+    chronology_ids: list[str],
+    inventory_rows: dict[str, dict[str, str]],
+) -> None:
+    chronology_set = set(chronology_ids)
+    represented: list[str] = []
+    duplicates: set[str] = set()
+    for row in scaffold_rows:
+        for change_id in row["change_ids"]:
+            if change_id not in chronology_set:
+                raise ValueError(f"Unknown chronology change ID {change_id} in scaffold row {row['UNIT_ID']}")
+            if change_id not in inventory_rows:
+                raise ValueError(f"Unknown inventory change ID {change_id} in scaffold row {row['UNIT_ID']}")
+            if change_id in represented:
+                duplicates.add(change_id)
+            represented.append(change_id)
+    if duplicates:
+        raise ValueError(f"Duplicate scaffold coverage for {', '.join(sorted(duplicates))}")
+    missing = sorted(chronology_set - set(represented))
+    if missing:
+        raise ValueError(f"Missing scaffold coverage for {', '.join(missing)}")
+
+
+def validate_manifest_alignment(manifest_rows: list[dict[str, str]], scaffold_rows: list[dict[str, str]]) -> None:
+    assembled_manifest_rows = [row for row in manifest_rows if (row.get("STATUS") or "").strip() in ASSEMBLED_STATUSES]
+    manifest_ids = {(row.get("ID") or "").strip() for row in assembled_manifest_rows}
+    scaffold_ids = {(row.get("UNIT_ID") or "").strip() for row in scaffold_rows}
+    if manifest_ids != scaffold_ids:
+        missing_from_manifest = sorted(scaffold_ids - manifest_ids)
+        missing_from_scaffold = sorted(manifest_ids - scaffold_ids)
+        raise ValueError(
+            "Manifest/scaffold mismatch: "
+            f"missing from manifest={missing_from_manifest}, missing from scaffold={missing_from_scaffold}"
+        )
+    for row in assembled_manifest_rows:
+        report_path = (row.get("REPORT_PATH") or "").strip()
+        if not report_path:
+            raise ValueError(f"Manifest row is missing REPORT_PATH: {row}")
+        source_path = REPORTS_DIR / report_path
+        if not source_path.exists():
+            raise FileNotFoundError(f"Report file not found: {source_path}")
+
+
+def compute_coverage_stats(
+    scaffold_rows: list[dict[str, str]],
+    inventory_rows: dict[str, dict[str, str]],
+    chronology_ids: list[str],
+) -> dict[str, object]:
+    pilot_full_changes = {
+        change_id
+        for row in scaffold_rows
+        if (row.get("STATUS") or "").strip() in {"pilot", "full"}
+        for change_id in row["change_ids"]
+    }
+    scaffold_changes = {
+        change_id
+        for row in scaffold_rows
+        if (row.get("STATUS") or "").strip() == "scaffold"
+        for change_id in row["change_ids"]
+    }
+    grouped_changes = {change_id for row in scaffold_rows if len(row["change_ids"]) > 1 for change_id in row["change_ids"]}
+    needs_literature = {
+        change_id for change_id, row in inventory_rows.items() if (row.get("literature_status") or "").strip() == "not_found"
+    }
+    negative_boundary_only = {
+        change_id
+        for change_id, row in inventory_rows.items()
+        if (row.get("chronology_evidence_status") or "").strip() == "negative_boundary_only"
+    }
+    broad_far_contextual = {
+        change_id
+        for change_id, row in inventory_rows.items()
+        if (row.get("chronology_evidence_status") or "").strip()
+        in {"broad_far_constraint", "contextual_or_one_sided", "mixed"}
+    }
+    return {
+        "total_changes": len(chronology_ids),
+        "pilot_full_changes": len(pilot_full_changes),
+        "scaffold_changes": len(scaffold_changes),
+        "grouped_changes": len(grouped_changes),
+        "multi_change_units": sum(1 for row in scaffold_rows if len(row["change_ids"]) > 1),
+        "singleton_units": sum(1 for row in scaffold_rows if len(row["change_ids"]) == 1),
+        "needs_literature": len(needs_literature),
+        "needs_human_review": len(scaffold_changes),
+        "negative_boundary_only": len(negative_boundary_only),
+        "broad_far_contextual": len(broad_far_contextual),
+        "all_represented": True,
+    }
+
+
+def build_unit_register(rows: list[dict[str, str]], id_key: str) -> str:
+    header = [
+        "| Unit | Change IDs | Status | Chronology status | Literature status | Recommended treatment |",
+        "| --- | --- | --- | --- | --- | --- |",
+    ]
+    body = [
+        "| "
+        + " | ".join(
+            [
+                (row.get(id_key) or "").strip(),
+                "; ".join(row["change_ids"]),
+                (row.get("STATUS") or "").strip(),
+                (row.get("CHRONOLOGY_STATUS") or "").strip(),
+                (row.get("LITERATURE_STATUS") or "").strip(),
+                (row.get("RECOMMENDED_TREATMENT") or "").strip(),
+            ]
+        )
+        + " |"
+        for row in rows
+    ]
+    return "\n".join(header + body)
 
 
 def normalize_entry_markdown(title: str, text: str) -> str:
@@ -269,16 +452,38 @@ def normalize_entry_markdown(title: str, text: str) -> str:
     return f"## {title}\n\n{stripped}".rstrip()
 
 
-def build_volume_text(rows: list[dict[str, str]]) -> str:
+def build_volume_text(
+    manifest_rows: list[dict[str, str]],
+    scaffold_rows: list[dict[str, str]],
+    stats: dict[str, object],
+) -> str:
     parts: list[str] = [
-        "# Sound-change reports, alpha 01",
+        "# Sound-change half, alpha 01",
         "",
-        "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`. "
-        "This assembly includes only manifest-backed `pilot` and `full` production reports._",
+        "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and "
+        "`Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. "
+        "Pilot/full rows preserve finished production prose where it exists; scaffold rows keep the rest of the "
+        "70-change half visible and buildable without pretending that the prose is complete._",
+        "",
+        "## Coverage summary",
+        "",
+        f"- Ordinary chronology-card sound changes represented: {stats['total_changes']}/{stats['total_changes']}.",
+        f"- Covered by pilot/full production reports: {stats['pilot_full_changes']}.",
+        f"- Covered by scaffold placeholders: {stats['scaffold_changes']}.",
+        f"- Grouped into multi-change units: {stats['grouped_changes']} changes across {stats['multi_change_units']} units.",
+        f"- Still needing literature dossiers: {stats['needs_literature']}.",
+        f"- Still needing human judgement or promotion decisions: {stats['needs_human_review']}.",
+        f"- Negative/boundary-only chronology cards: {stats['negative_boundary_only']}.",
+        f"- Broad/far/contextual chronology cards: {stats['broad_far_contextual']}.",
+        "",
+        "## Unit register",
+        "",
+        build_unit_register(scaffold_rows, "UNIT_ID"),
         "",
     ]
 
-    for row in rows:
+    assembled_manifest_rows = [row for row in manifest_rows if (row.get("STATUS") or "").strip() in ASSEMBLED_STATUSES]
+    for row in assembled_manifest_rows:
         title = (row.get("TITLE") or "").strip()
         report_path = (row.get("REPORT_PATH") or "").strip()
         if not title:
@@ -297,11 +502,49 @@ def build_volume_text(rows: list[dict[str, str]]) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
+def build_coverage_report_text(scaffold_rows: list[dict[str, str]], stats: dict[str, object]) -> str:
+    parts = [
+        "# Sound-change half coverage report",
+        "",
+        "_Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._",
+        "",
+        f"1. Total ordinary sound changes covered: {stats['total_changes']}.",
+        f"2. Number covered by pilot/full production reports: {stats['pilot_full_changes']}.",
+        f"3. Number covered by scaffold placeholders: {stats['scaffold_changes']}.",
+        f"4. Number grouped into multi-change units: {stats['grouped_changes']}.",
+        f"5. Number needing literature dossiers: {stats['needs_literature']}.",
+        f"6. Number needing human judgement: {stats['needs_human_review']}.",
+        f"7. Number negative/boundary-only: {stats['negative_boundary_only']}.",
+        f"8. Number broad/far/contextual: {stats['broad_far_contextual']}.",
+        "9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.",
+        "10. Recommended next work: human review of the full scaffold structure, then choose the next cluster to "
+        "promote from scaffold to production prose.",
+        "",
+        "## Unit register",
+        "",
+        build_unit_register(scaffold_rows, "UNIT_ID"),
+        "",
+    ]
+    return "\n".join(parts).rstrip() + "\n"
+
+
 def main() -> int:
-    rows = load_manifest_rows()
-    output_text = build_volume_text(rows)
+    manifest_rows = load_manifest_rows()
+    scaffold_rows = load_scaffold_rows()
+    inventory_rows = load_inventory_rows()
+    chronology_ids = load_chronology_ids()
+    validate_scaffold_coverage(scaffold_rows, chronology_ids, inventory_rows)
+    validate_manifest_alignment(manifest_rows, scaffold_rows)
+    stats = compute_coverage_stats(scaffold_rows, inventory_rows, chronology_ids)
+    output_text = build_volume_text(manifest_rows, scaffold_rows, stats)
+    coverage_text = build_coverage_report_text(scaffold_rows, stats)
     OUTPUT_PATH.write_text(output_text, encoding="utf-8")
-    print(f"Wrote {OUTPUT_PATH} with {len(rows)} assembled sound-change report(s).")
+    COVERAGE_REPORT_PATH.write_text(coverage_text, encoding="utf-8")
+    assembled_count = sum(1 for row in manifest_rows if (row.get("STATUS") or "").strip() in ASSEMBLED_STATUSES)
+    print(
+        f"Wrote {OUTPUT_PATH} with {assembled_count} assembled sound-change unit(s), "
+        f"and {COVERAGE_REPORT_PATH}."
+    )
     return 0
 
 

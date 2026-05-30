@@ -2,27 +2,34 @@
 
 ## Purpose
 
-This schema defines the **production sound-change report** for the book-facing
-sound-change layer.
+This schema defines the **assembled sound-change layer** for the book. Source
+dossiers are not final prose. Literature dossiers, book dossiers, chronology
+cards, audit packets, and related working files remain source material unless
+they are explicitly promoted into the manifest-backed assembly layer.
 
-Source dossiers are not final prose. Literature dossiers, book dossiers,
-chronology cards, audit packets, and related working files remain source
-material unless they are explicitly promoted into the manifest.
+## Entry types
 
-## Production reports vs source material
-
-- A **production sound-change report** is a Markdown file listed in
+- A **pilot/full production report** is book-facing Markdown listed in
   `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` with status
   `pilot` or `full`.
-- Working dossiers, packets, memos, architecture reports, and audit views are
-  source material for drafting, not production prose.
-- Production entries live under `change_reports/pilot/` or later
-  `change_reports/full/`.
+- A **scaffold placeholder** is short assembly-ready Markdown listed in the
+  same manifest with status `scaffold`. Its job is to make the full sound-change
+  half visible and buildable without pretending that the prose is complete.
+- Working dossiers, packets, memos, architecture reports, chronology cards, and
+  audit views remain source material for drafting, not production prose.
 
-## Entry structure
+Production entries live under `change_reports/pilot/` or later
+`change_reports/full/`. Scaffold placeholders live under
+`change_reports/scaffold/`.
 
-Each production entry should be concise, book-facing Markdown suitable for later
-Pandoc / LaTeX integration. The standard section order is:
+Documented manifest status values are `full`, `pilot`, `scaffold`,
+`needs_literature`, `needs_human_review`, and `grouped_elsewhere`. The current
+assembly includes only `full`, `pilot`, and `scaffold`.
+
+## Finished production reports
+
+Each finished pilot/full report should be concise, book-facing Markdown
+suitable for later Pandoc / LaTeX integration. The standard section order is:
 
 ```md
 ### Sound-change report
@@ -44,6 +51,27 @@ Pandoc / LaTeX integration. The standard section order is:
 
 Keep the style aligned with the lexical reports: concise prose, selective
 quotation, and no dossier-sized audit machinery.
+
+## Scaffold placeholders
+
+Scaffold placeholders are deliberately shorter. A typical scaffold entry uses:
+
+```md
+### Sound-change report
+
+#### Historical formulation
+
+#### Current evidence
+
+#### Place in the cascade
+
+#### Order evidence
+
+#### Status
+```
+
+The placeholder should say plainly that it is scaffold material rather than
+finished prose.
 
 ## Citation convention
 
@@ -74,6 +102,13 @@ Practical rule:
 ## Build relation
 
 These entries are intended to enter the same Pandoc/LaTeX/PDF pipeline already
-documented for the lexical half. The exact sound-change assembly command has not
-yet been identified in this pass; the directory mirrors the lexeme-report
-production structure so it can be integrated into the existing build.
+documented for the lexical half. Use:
+
+```bash
+bash Germanic/docs/assembly/build_sound_change_volume.sh
+```
+
+Source Markdown may use inline code spans for linguistic forms during authoring,
+but the assembly step converts those spans to reader-facing linguistic
+formatting while preserving genuine code, file paths, and commands, following
+the lexical-volume convention.
