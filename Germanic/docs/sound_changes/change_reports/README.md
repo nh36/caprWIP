@@ -20,13 +20,21 @@ assembly.
 These files are intended to enter the same Pandoc/LaTeX/PDF pipeline already
 documented for the lexical half.
 
-Documented existing assembly commands are:
+Documented sound-change assembly command:
+
+```bash
+bash Germanic/docs/assembly/build_sound_change_volume.sh
+```
+
+These files are also designed to remain parallel to the lexical assembly
+pipeline:
 
 ```bash
 bash Germanic/docs/assembly/build_full_lexical_volume.sh
 bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 ```
 
-The exact **sound-change** assembly/Pandoc build command has not yet been
-identified in this pass; this directory mirrors the lexeme-report production
-structure so that it can be integrated into the existing book build.
+The sound-change build currently assembles manifest-backed production reports to
+`Germanic/docs/assembly/sound_change_volume_alpha_01.md` and, where local
+`pandoc` support is available, renders
+`Germanic/docs/assembly/sound_change_volume_alpha_01.tex` and an uncommitted PDF.
