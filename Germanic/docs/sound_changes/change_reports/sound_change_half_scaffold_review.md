@@ -35,26 +35,27 @@ that every remaining chapter boundary is already settled.
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
-| 064-065 | Post-apocope tail | SC064; SC065 | scaffold | maybe | likely | medium | A structural review now exists. `SC064` has real but narrow `fright`-based positive evidence across `SC041` and `SC072`, while `SC065` remains boundary-limited and negative on current card evidence. |
+| 064-065 | Post-apocope tail | SC064; SC065 | scaffold | maybe | likely | medium | Structural review plus literature/book dossiers now exist. `SC064` has real but narrow `fright`-based positive evidence across `SC041` and `SC072`, while `SC065` remains boundary-limited and negative, so the next decision is cautious paired note vs. narrower `SC064` bridge vs. residual `SC065` context. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
 | 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
 | 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
 
 ## Recommended next promotion candidates
 
-1. **SC064-SC065 Post-apocope tail dossier preparation** — the new structural review says not to promote the pair yet; the next step should be a dossier for the pair with an explicit warning that `SC065` is still card-negative and may later split off as residual context.
+1. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
 2. **SC052 or a later SC050-SC052 unit** — the palatalization region is now narrower and clearer after the SC051 extraction, but the right long-term chapter shape still needs further structural review.
 3. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
 4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and palatalization-side work remains more mature.
 
 ## Recommended immediate next step
 
-With `SC031-SC034` now promoted, the next sensible step is dossier preparation
-for `SC064-SC065` using the new structural review as the framing document. That
-source work should test whether the pair really forms one post-apocope tail or
-whether `SC064` should later narrow to a bridge note while `SC065` remains
-residual context. After that, the palatalization/fronting region still needs
-further structural review to decide whether `SC052` should stand alone or be
-paired more tightly with `SC050`. `SC053-SC054` remains a later bridge-note
+With `SC064-SC065` now dossier-prepared, the next sensible step is a human
+chapter-shape review rather than immediate promotion. The key question is
+whether the unit should later become a cautious paired post-apocope note,
+whether `SC064` should narrow to a bridge note of its own, or whether `SC065`
+should remain residual context leading into the promoted `SC066-SC068`
+corridor. After that, the palatalization/fronting region still needs further
+structural review to decide whether `SC052` should stand alone or be paired
+more tightly with `SC050`. `SC053-SC054` remains a later bridge-note
 candidate, and the post-brightening `SC046-SC048` / `SC042`-`SC045` region
 should wait for additional source review rather than immediate promotion.
