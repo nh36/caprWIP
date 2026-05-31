@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 6.
-- Covered by scaffold placeholders: 64.
+- Covered by pilot/full production reports: 8.
+- Covered by scaffold placeholders: 62.
 - Grouped into multi-change units: 68 changes across 17 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 64.
+- Still needing human judgement or promotion decisions: 62.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -20,7 +20,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 014-015 | SC014; SC015 | scaffold | mixed negative and broad/far | no dedicated dossier yet | grouped scaffold prelude |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
-| 026-027 | SC026; SC027 | scaffold | strong local reciprocal pair | literature and book dossiers drafted | paired corridor scaffold pending human review |
+| 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | scaffold | strong local chain with one broader outlier | no dedicated dossier yet | grouped corridor scaffold |
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
@@ -284,33 +284,94 @@ eventually remain grouped versus split into narrower prose units.
 
 #### Historical formulation
 
-This scaffold unit keeps `SC026` and `SC027` together as the nasal spirant
-corridor. Even at scaffold level, the pair already behaves more like a genuine
-local chapter candidate than like a miscellaneous grab-bag.
+SC026 and SC027 together represent the bundled North Sea Germanic /
+Ingvaeonic development in which nasals are lost before voiceless fricatives,
+with compensatory lengthening and often an intermediate nasalized stage in the
+preceding vowel. That bundled process is the historical core supported by the
+handbook tradition. CAPR's labels NWGmc Nasal Spirant Lengthening and
+NWGmc Nasal Spirant Loss should therefore be read as an analytic split of
+one broader development, not as two independently standard named laws
+[@Campbell1959, §121; @Fulk2018, §4.11; @Luick1914, §301.1;
+@SieversBrunner1965, §186.1].
 
-#### Current evidence
+#### Source tradition
 
-Both member changes already have chronology cards and FOMA implementations. The
-production layer does not yet have a dedicated literature dossier for the pair,
-so the section remains a short placeholder rather than promoted prose.
+Campbell, Fulk, and Sievers-Brunner give the clearest traditional formulation
+of the bundled process: before voiceless fricatives, the nasal disappears and
+the preceding vowel is lengthened, often with nasalization in the historical
+description [@Campbell1959, §121; @Fulk2018, §4.11;
+@SieversBrunner1965, §186.1]. Hogg is especially useful for the compact
+ansuz > ōs type, where rounding, nasal loss, and compensatory lengthening
+are kept together as one connected development [@Hogg1992]. Ringe and Taylor
+help most with stage assignment: they treat forms such as goose and youth
+as outcomes of a broader northern West Germanic development rather than as a
+late isolated Old English innovation [@RingeTaylor2014, pp. 140--141]. Luick
+adds the most useful internal phonological refinement by describing a long
+nasalized-vowel stage that later loses its nasal quality and by distinguishing
+the special *a*-branch without turning the process into separately named laws
+[@Luick1914, §§299, 301.1].
+
+#### CAPR implementation
+
+CAPR makes the historical bundle explicit as two adjacent rules. `SC026`
+adjusts vowel quality and quantity while the nasal + voiceless-fricative
+conditioning environment is still present; `SC027` then deletes the nasal
+before the spirant. That split is stricter than ordinary handbook prose, but it
+is defensible as a model articulation of the same historical development: the
+transducer needs the conditioning string to remain visible long enough for the
+vowel effects to apply before the nasal is removed. The report should therefore
+present the split as a formal clarification inside CAPR, not as direct proof
+that the traditional literature recognized two separately named sound laws
+[@Fulk2018, §4.11; @Luick1914, §301.1].
 
 #### Place in the cascade
 
-The unit spans current cascade orders 26-27, from *NWGmcNasalSpirantLengthening*
-to *NWGmcNasalSpirantLoss*. It follows the early unstressed zone and leads into
-the early glide/fronting material.
+SC026-SC027 sits after the early unstressed and boundary-limited Northwest
+Germanic zone and before the early *x*-loss and glide/fronting entry zone. The
+pair follows nearby left-side context such as `SC025`, but its strongest local
+identity is internal: `SC026` and `SC027` form a tight reciprocal center. On
+the right, `SC028` provides useful context, especially for forms such as
+fist, because later *x*-loss and fronting material still help shape the final
+Old English outcome. But that neighboring context should remain contextual
+rather than being folded into this promoted unit.
 
 #### Order evidence
 
-The chronology cards form a strong local reciprocal pair: each rule matters to
-the other. That makes the corridor highly visible in the scaffold even before
-the literature chapter has been written.
+The chronology cards give the pair an unusually clear local result. `SC026`
+cannot move later across `SC027`, and `SC027` cannot move earlier across
+`SC026`. The shared failure set is fist, goose, and youth: if the nasal
+is deleted too early or the vowel adjustment delayed too long, the model loses
+the conditioning environment and restores the wrong vocalism. The positive
+local claim is therefore straightforward: in the present system the corridor
+requires `SC026 < SC027`.
 
-#### Status
+#### Interpretation
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature framing and a human decision on whether the eventual chapter remains
-a paired corridor or widens to include adjacent fronting material.
+For book purposes, this is the first strong paired production report after the
+singleton promotions because it shows how CAPR can sharpen a historically
+bundled process into a formally ordered corridor without pretending that the
+handbooks already drew the same line. The historical claim remains the bundled
+North Sea Germanic / Ingvaeonic nasal-loss development. CAPR then makes the
+internal sequencing explicit, and the chronology evidence shows that once this
+modeling choice is made only one local order works. The chapter should
+therefore present the pair as a disciplined bridge between handbook tradition
+and formal implementation.
+
+#### Remaining cautions
+
+The cautions are as important as the positive result. The earlier side of
+`SC026` remains runner-limited at bundled *PWGmcChanges*, so the current
+evidence does not identify an earlier historical boundary for the pair. The
+later side of `SC027` is a no-break-before-boundary result through order *86*,
+so the current evidence does not justify a claim that the corridor must
+precede `SC087`. More broadly, CAPR's two-rule split is best treated as a
+defensible model articulation rather than as proof of two separately named
+historical laws. The stage label also needs care: CAPR files the pair as
+NWGmc, whereas much of the literature frames it more broadly as North Sea
+Germanic or Ingvaeonic [@RingeTaylor2014, pp. 140--141; @Fulk2018, §4.11].
+Finally, fist is a valuable chronology example, but it is a multi-stage
+derivation and should not be used as if this corridor alone explained the whole
+Old English output.
 
 ## Glide and fronting entry
 

@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 6.
-3. Number covered by scaffold placeholders: 64.
+2. Number covered by pilot/full production reports: 8.
+3. Number covered by scaffold placeholders: 62.
 4. Number grouped into multi-change units: 68.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 64.
+6. Number needing human judgement: 62.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -20,7 +20,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 014-015 | SC014; SC015 | scaffold | mixed negative and broad/far | no dedicated dossier yet | grouped scaffold prelude |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
-| 026-027 | SC026; SC027 | scaffold | strong local reciprocal pair | literature and book dossiers drafted | paired corridor scaffold pending human review |
+| 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | scaffold | strong local chain with one broader outlier | no dedicated dossier yet | grouped corridor scaffold |
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
