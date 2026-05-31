@@ -21,7 +21,7 @@ already settled.
 | 018-025 | Early Northwest Germanic unstressed and boundary-limited zone | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | yes | likely | defer | Intentionally broad underdetermination zone with many negative or boundary-limited cards. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
-| 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | scaffold | maybe | likely | medium | A dedicated split review now exists: `SC031`/`SC034` form the strongest local reciprocal pair, but the whole four-change unit should stay scaffolded until literature/book dossier work decides whether the region is one chapter or should later split more narrowly. |
+| 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | scaffold | maybe | likely | medium | Split review plus literature/book dossiers now exist. The whole unit remains scaffolded, and the next decision is whether to promote the full four-change corridor or split later around the strong `SC031`/`SC034` reciprocal pair. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Best kept as a derivational bridge for now because the unit is more functional than chapter-ready. |
 | 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | maybe | low | Transitional bridge that is helpful in the assembled half but not yet an obvious promotion candidate. |
 | 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
@@ -42,19 +42,19 @@ already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC031-SC034 West Saxon diphthong chain literature/book dossier** — the structural split review now exists, and the next preparation step should be dossier work for the whole region before deciding whether to keep the four-change chapter or split later around the `SC031`/`SC034` reciprocal pair.
+1. **SC031-SC034 West Saxon diphthong chain** — now dossier-prepared after the structural split review, but still pending human review on chapter shape: either keep the four-change corridor or split later around the `SC031`/`SC034` reciprocal pair.
 2. **SC064-SC065 Post-apocope tail** — still a possible short paired post-apocope unit, but only after human review confirms that it should stand apart from the already promoted SC066-SC068 corridor.
 3. **SC052 or a later SC050-SC052 unit** — the palatalization region is now narrower and clearer after the SC051 extraction, but the right long-term chapter shape still needs further structural review.
 4. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
 
 ## Recommended immediate next step
 
-The next sensible step is literature and book dossier preparation for
-`SC031-SC034`, using the new structural split review as the framing document.
-That should decide whether the region really wants one West Saxon diphthong
-chapter or a later split around the `SC031`/`SC034` pair. `SC064-SC065`
-remains a short human-review candidate, while the palatalization/fronting
-region has now narrowed to the unresolved question of whether `SC052` should
-eventually stand alone or be paired more tightly with `SC050` or later
-reconsidered alongside `SC057`. `SC053-SC054` remains a later bridge-note
-candidate rather than the next main target.
+The next sensible step is human review of the now dossier-prepared
+`SC031-SC034` region, using the structural split review and the new literature
+and book dossiers to decide whether the region really wants one West Saxon
+diphthong chapter or a later split around the `SC031`/`SC034` pair.
+`SC064-SC065` remains a short human-review candidate, while the
+palatalization/fronting region has now narrowed to the unresolved question of
+whether `SC052` should eventually stand alone or be paired more tightly with
+`SC050` or later reconsidered alongside `SC057`. `SC053-SC054` remains a
+later bridge-note candidate rather than the next main target.
