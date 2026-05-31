@@ -28,7 +28,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
-| 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | no dedicated dossier yet | grouped onset cluster scaffold |
+| 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | partial dossiers drafted for SC051 | grouped onset cluster scaffold |
 | 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | no dedicated dossier yet | grouped bridge scaffold |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
