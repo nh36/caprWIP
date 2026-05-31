@@ -29,7 +29,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
 | 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | no dedicated dossier yet | grouped onset cluster scaffold |
-| 053-058 | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | mixed local links and negative boundaries | no dedicated dossier yet | grouped transition scaffold |
+| 053-058 | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | mixed local links and negative boundaries | partial dossiers drafted for SC055-SC056 | grouped transition scaffold |
 | 059-061 | SC059; SC060; SC061 | scaffold | mixed local and contextual bridge | no dedicated dossier yet | grouped late-vowel bridge scaffold |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | scaffold | mixed local and boundary-limited tail | no dedicated dossier yet | paired tail scaffold |
