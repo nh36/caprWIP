@@ -4,13 +4,13 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 23
-assembled units: one pilot production report (`016-020`), six full production
-reports (`026-027`, `043`, `051`, `055-056`, `063`, and `066-068`), and 16
-remaining scaffold placeholders. The new SC051 promotion adds a narrow
-palatalization singleton to the earlier paired and singleton promotions, while
-most other units remain intentionally grouped placeholders whose main job is to
-keep the whole half visible without claiming that chapter boundaries are
-already settled.
+assembled units: one pilot production report (`016-020`), seven full
+production reports (`026-027`, `031-034`, `043`, `051`, `055-056`, `063`, and
+`066-068`), and 15 remaining scaffold placeholders. The new `SC031-SC034`
+promotion adds a cautious four-change corridor chapter with a strong local core
+and weaker flanks, while most other units remain intentionally grouped
+placeholders whose main job is to keep the whole half visible without claiming
+that every remaining chapter boundary is already settled.
 
 ## Structural review of current units
 
@@ -21,7 +21,7 @@ already settled.
 | 018-025 | Early Northwest Germanic unstressed and boundary-limited zone | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | yes | likely | defer | Intentionally broad underdetermination zone with many negative or boundary-limited cards. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
-| 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | scaffold | maybe | likely | medium | Split review plus literature/book dossiers now exist. The whole unit remains scaffolded, and the next decision is whether to promote the full four-change corridor or split later around the strong `SC031`/`SC034` reciprocal pair. |
+| 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | full | no | maybe | defer | Now promoted as a cautious four-change corridor report: `SC031`/`SC034` are the local reciprocal core, while `SC032`/`SC033` remain subordinate flank material. Future book architecture could still narrow the chapter later if needed. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Best kept as a derivational bridge for now because the unit is more functional than chapter-ready. |
 | 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | maybe | low | Transitional bridge that is helpful in the assembled half but not yet an obvious promotion candidate. |
 | 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
@@ -42,19 +42,17 @@ already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC031-SC034 West Saxon diphthong chain** — now dossier-prepared after the structural split review, but still pending human review on chapter shape: either keep the four-change corridor or split later around the `SC031`/`SC034` reciprocal pair.
-2. **SC064-SC065 Post-apocope tail** — still a possible short paired post-apocope unit, but only after human review confirms that it should stand apart from the already promoted SC066-SC068 corridor.
-3. **SC052 or a later SC050-SC052 unit** — the palatalization region is now narrower and clearer after the SC051 extraction, but the right long-term chapter shape still needs further structural review.
-4. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
+1. **SC064-SC065 Post-apocope tail** — still the clearest possible short paired post-apocope unit, but only after human review confirms that it should stand apart from the already promoted SC066-SC068 corridor.
+2. **SC052 or a later SC050-SC052 unit** — the palatalization region is now narrower and clearer after the SC051 extraction, but the right long-term chapter shape still needs further structural review.
+3. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
+4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and palatalization-side work remains more mature.
 
 ## Recommended immediate next step
 
-The next sensible step is human review of the now dossier-prepared
-`SC031-SC034` region, using the structural split review and the new literature
-and book dossiers to decide whether the region really wants one West Saxon
-diphthong chapter or a later split around the `SC031`/`SC034` pair.
-`SC064-SC065` remains a short human-review candidate, while the
-palatalization/fronting region has now narrowed to the unresolved question of
-whether `SC052` should eventually stand alone or be paired more tightly with
-`SC050` or later reconsidered alongside `SC057`. `SC053-SC054` remains a
-later bridge-note candidate rather than the next main target.
+With `SC031-SC034` now promoted, the next sensible step is human review of the
+short `SC064-SC065` post-apocope tail as the clearest remaining small corridor
+candidate. After that, the palatalization/fronting region still needs further
+structural review to decide whether `SC052` should stand alone or be paired more
+tightly with `SC050`. `SC053-SC054` remains a later bridge-note candidate, and
+the post-brightening `SC046-SC048` / `SC042`-`SC045` region should wait for
+additional source review rather than immediate promotion.

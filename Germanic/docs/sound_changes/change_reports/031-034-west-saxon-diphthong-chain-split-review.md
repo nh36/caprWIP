@@ -98,3 +98,12 @@ should be handled explicitly as failed derivations rather than as ordinary
 alternate reflexes, and `SC033`'s expanded-PWGmc note plus its broad/far
 boundary across `SC044` should be treated cautiously rather than overread as a
 tight default chronology claim.
+
+## Implementation note
+
+That later human decision has now been implemented. The unit has been promoted
+as a cautious four-change production report with `SC031`/`SC034` treated as the
+local core and `SC032`/`SC033` retained as subordinate or flank material. A
+future book-architecture revision could still split the chapter more narrowly if
+that later proves preferable, but the current production layer now treats the
+whole corridor as the best working chapter shape.
