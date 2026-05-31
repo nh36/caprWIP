@@ -60,9 +60,9 @@ chapter.
 
 SC051 follows SC046 **OE A Restoration**, sits inside the broader SC049-SC052
 palatalization/fronting region, and precedes SC056 **OE Ws Palatal
-Diphthongization**. In the new assembly layout it now stands between the
-residual `049-050` bridge scaffold on the left and the SC052 hinge scaffold on
-the right, rather than remaining buried inside the old four-change placeholder.
+Diphthongization**. In the new assembly layout it now stands between the `049-050` bridge report on
+the left and the SC052 hinge report on the right, rather than remaining buried
+inside the old four-change placeholder.
 
 That placement matters for book structure as well as for local order. On its
 right, SC051 belongs near the already promoted SC055-SC056 umlaut-core report,

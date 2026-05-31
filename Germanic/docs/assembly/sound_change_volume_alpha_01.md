@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 21.
-- Covered by scaffold placeholders: 49.
+- Covered by pilot/full production reports: 23.
+- Covered by scaffold placeholders: 47.
 - Grouped into multi-change units: 66 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 49.
+- Still needing human judgement or promotion decisions: 47.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -28,7 +28,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
-| 049-050 | SC049; SC050 | scaffold | one-sided allophony plus local later-edge bridge | literature and book dossiers drafted | grouped bridge scaffold |
+| 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
 | 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | no dedicated dossier yet | grouped bridge scaffold |
@@ -761,44 +761,121 @@ own or remains part of a grouped post-brightening chapter.
 
 #### Historical formulation
 
-This scaffold unit keeps SC049 PGmc B Allophony and SC050 **Sievers Law
-Syncope** visible as bridge material on the left edge of the palatalization
-region. The pairing is structural rather than chapter-finished: SC049 is narrow
-and compound-specific, while SC050 has a real local later boundary but not yet
-an earlier historical boundary.
+This is a short adjacent chronological bridge report, not a major textbook
+chapter. It keeps two neighboring ordinary FST changes visible between the
+SC046-SC048 **Restoration and nasal-tail corridor** and the promoted SC051 and
+SC052 palatalization reports without pretending that SC049 and SC050 are one
+historical process.
 
-#### Current evidence
+SC049 PGmc B Allophony is the narrower and more implementation-heavy member.
+It maps onto the familiar handbook distribution in which *b* surfaces as a stop
+initially or after nasals and as a voiced bilabial fricative elsewhere
+[@Hogg1992, pp. 101--102; @RingeTaylor2014, p. 121; @Luick1914, p. 107]. SC050
+**Sievers Law Syncope** has stronger traditional backing because the literature
+treats Sievers-law reflexes, heavy/light stem structure, weak verbs, and
+gemination as real historical material [@Adamczyk2001; @Fulk2018, p. 28,
+sec. 6.15]. The pair therefore stays together for practical chronological
+reasons, not because the sources present a standard SC049-SC050 chapter.
 
-Chronology cards and live implementations exist for both rules. SC049 has a
-one-sided earlier boundary across SC037 OE Compound Linking Syncope, carried
-by *rainbow, while its later side remains runner-bounded. SC050 has no tested
-earlier historical break before the bundled runner limit, but it does have a
-real later boundary across SC052 OE Velar Palatalization, carried by
-*stretch.
+#### Source tradition
+
+The source tradition for SC049 is thin but real. Hogg gives the clearest Old
+English formulation: `/b/` is a stop initially, after nasals, and in
+gemination, but elsewhere it is realized as a bilabial fricative
+[@Hogg1992, pp. 101--102]. Ringe and Taylor support the broader comparative
+picture by treating Proto-West-Germanic *b* as having stop and fricative
+allophones by position [@RingeTaylor2014, p. 121], while Luick adds
+orthographic corroboration for the voiced labial fricative in Old English
+[@Luick1914, p. 107]. That is enough to support SC049 as a legitimate
+distributional rule, but not enough to turn it into a large historical chapter
+of its own.
+
+SC050 is historically more legible. Adamczyk treats Old English reflexes of
+Sievers' Law as visible in weak-verb and related paradigms, and Fulk gives the
+compact comparative-grammar cross-check through the familiar biddan,
+fremman, sellan, and nerian patterning
+[@Adamczyk2001; @Fulk2018, p. 28, sec. 6.15]. That gives the rule a broader
+source base than SC049 has. Even so, the local role of SC050 in this part of
+the book is still modest: it matters here chiefly as the feeder that must stand
+before SC052 rather than as the core of a separate palatalization chapter.
+
+#### CAPR implementation
+
+CAPR keeps both rules narrower than the handbook categories.
+
+SC049 *PGmcBAllophony* turns *b* into beta after vowels and liquids, then
+restores stop *b* before geminate *bb*. That is a late, distributional
+surface-management rule in the model, which is why SC049 reads as
+implementation-heavy rather than chapter-centered.
+
+SC050 *SieversLawSyncope* deletes *i* before *j* after a consonant or
+palatal consonant. In the model that makes it a small but important feeder into
+the following palatalization region. CAPR therefore isolates SC050 cleanly
+before SC051 OE Sk Palatalization and SC052 OE Velar Palatalization
+without implying that all three rules should be merged into one unit.
 
 #### Place in the cascade
 
-The unit occupies current orders 49-50, after the SC046-SC048 restoration and
-nasal-tail bridge and immediately before the promoted SC051 singleton report. It
-keeps the left edge of the onset/palatalization zone visible without pretending
-that these two rules already form a finished production chapter.
+This unit belongs immediately after the SC046-SC048 corridor and immediately
+before the promoted SC051 report. It also stands directly to the left of the
+promoted SC052 hinge report. That placement is the main reason to promote the
+pair together: both changes are adjacent, both are ordinary FST changes, and
+both need explicit prose in the assembled half.
+
+SC050's forward relation to SC052 should be handled by cross-reference rather
+than by a non-contiguous SC050-SC052 chapter. SC052 remains the later promoted
+hinge report where plain velar palatalization is discussed in its own right;
+this bridge report only explains why Sievers Law Syncope belongs immediately to
+its left.
 
 #### Order evidence
 
-SC049 currently supports only an earlier boundary: if it is moved before SC037,
-*rainbow loses the live voiced compound outcome. Its later side is a no-break
-result bounded by the current search space and should not be rewritten as a
-positive claim. SC050 is the opposite shape: its earlier side remains
-runner-limited, but its later side shows that moving it after SC052 breaks the
-*stretch derivation. Together they mark the left approach to the promoted SC051
-report without yet defining a single strong chapter center of their own.
+The order evidence is outward-facing rather than internally reciprocal. SC049
+has one real positive boundary on the left: it must follow SC037 **OE Compound
+Linking Syncope**, because moving it earlier breaks the voiced compound outcome
+in rainbow, yielding reġnfoga instead of expected reġnboga. Its later
+side found no real break before the runner boundary at SC087. That later result
+must remain a bounded no-break outcome, not a positive claim that SC049 must
+precede some specific later historical stage.
 
-#### Status
+SC050 shows the opposite profile. Its earlier side found no real break before
+the bundled *PWGmcChanges* runner boundary, so it does not support a
+positive claim that Sievers Law Syncope must follow any specific earlier
+historical stage. Its later side is real: SC050 must precede SC052, because
+delaying it past OE Velar Palatalization breaks the stretch derivation and
+yields strecċan instead of expected streċċan.
 
-This is a scaffold placeholder, not finished book prose. SC049 remains residual
-allophonic bridge material, and SC050 may later prove most useful as the left
-member of a narrower pair with SC052 rather than as part of a finished *049-050*
-chapter.
+Taken together, the cards support `SC037 < SC049` and `SC050 < SC052`, but
+they do not support an internal reciprocal chronology claim for SC049-SC050 as
+a pair.
+
+#### Interpretation
+
+This report is useful precisely because it stays modest. SC049 is present
+because every ordinary FST change needs explicit prose somewhere in the book,
+and because its narrow allophonic role still has one live chronology witness in
+rainbow. SC050 is present because it has stronger source backing and because
+its local function as a feeder into SC052 is real and testable.
+
+That makes the pairing practical and chronological rather than doctrinal. The
+book does not need to pretend that SC049 and SC050 form a traditional joint
+chapter. It only needs to keep them visible, in order, and in proportion to the
+evidence they actually have.
+
+#### Remaining cautions
+
+SC049 should not be overstated. The handbooks support the stop/fricative
+distribution of *b*, but the current chronology evidence is still one-sided and
+compound-specific. SC050 should not be allowed to duplicate the already
+promoted SC052 report. Its role here is to mark the Sievers-law bridge and the
+stretch dependency, not to absorb the later plain-velar palatalization
+discussion into an out-of-order unit.
+
+More broadly, neither runner-bounded side should be rewritten as positive
+chronology evidence. SC049's later no-break result and SC050's earlier no-break
+result are both important cautions, not hidden boundaries. The report should
+remain what it is: a short adjacent bridge that keeps both ordinary changes
+visible without inflating weak or one-sided evidence into a major chapter.
 
 ## OE Sk Palatalization
 
@@ -862,9 +939,9 @@ chapter.
 
 SC051 follows SC046 OE A Restoration, sits inside the broader SC049-SC052
 palatalization/fronting region, and precedes SC056 **OE Ws Palatal
-Diphthongization**. In the new assembly layout it now stands between the
-residual *049-050* bridge scaffold on the left and the SC052 hinge scaffold on
-the right, rather than remaining buried inside the old four-change placeholder.
+Diphthongization**. In the new assembly layout it now stands between the *049-050* bridge report on
+the left and the SC052 hinge report on the right, rather than remaining buried
+inside the old four-change placeholder.
 
 That placement matters for book structure as well as for local order. On its
 right, SC051 belongs near the already promoted SC055-SC056 umlaut-core report,
@@ -1032,7 +1109,8 @@ palatalization region has been fully resolved.
 
 The report also shows how the sound-change half can mature while preserving
 strict chronological order. SC050 remains visible as feeder/context in the
-earlier *049-050* scaffold, SC051 remains a separate promoted cluster chapter,
+earlier *049-050* bridge report, SC051 remains a separate promoted cluster
+chapter,
 SC052 now receives its own prose immediately after SC051, and SC055-SC056
 remains the promoted umlaut-core chapter to the right. The neighboring reports
 should be cross-referenced, not duplicated.

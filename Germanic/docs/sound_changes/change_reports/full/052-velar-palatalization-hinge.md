@@ -106,7 +106,8 @@ palatalization region has been fully resolved.
 
 The report also shows how the sound-change half can mature while preserving
 strict chronological order. SC050 remains visible as feeder/context in the
-earlier `049-050` scaffold, SC051 remains a separate promoted cluster chapter,
+earlier `049-050` bridge report, SC051 remains a separate promoted cluster
+chapter,
 SC052 now receives its own prose immediately after SC051, and SC055-SC056
 remains the promoted umlaut-core chapter to the right. The neighboring reports
 should be cross-referenced, not duplicated.
