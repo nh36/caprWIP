@@ -31,22 +31,23 @@ that chapter boundaries are already settled.
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | scaffold | yes | maybe | low | Reasonable paired tail scaffold, but not yet more source-ready than `SC063` itself. |
-| 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | scaffold | yes | maybe | high | The clearest remaining corridor-scale candidate now that `SC026-SC027` has been promoted, though it still needs source-preparation work. |
+| 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | scaffold | yes | maybe | high | Now dossier-prepared and still the clearest remaining corridor-scale candidate, but the next decision is whether to promote it after human review of the chapter shape. |
 | 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
 | 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
 
 ## Recommended next promotion candidates
 
-1. **SC066-SC068 Syncope and degemination corridor** — now the clearest remaining corridor-scale candidate after the SC026-SC027 promotion.
+1. **SC066-SC068 Syncope and degemination corridor** — now dossier-prepared and still the clearest remaining corridor-scale candidate after the SC026-SC027 promotion, pending human review.
 2. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
 3. **SC049-SC052 Onset allophony and palatalization cluster** — a plausible later candidate if a palatalization-focused unit can be separated cleanly from the present grouped scaffold.
 4. **SC031-SC034 West Saxon diphthong chain** — potentially promotable only after dedicated literature work clarifies whether the present four-change grouping is the right chapter shape.
 
 ## Recommended immediate next step
 
-The next sensible step is to choose which remaining corridor or cluster should
-receive the next round of source preparation: `SC066-SC068` first, `SC053-SC058`
-after internal splitting, `SC049-SC052` if a cleaner palatalization-focused
-unit emerges, or `SC031-SC034` only after literature work. Further polishing of
-`016-020` is not the immediate next task unless a blocking assembly problem
-appears.
+The next sensible step is to review whether the now dossier-prepared
+`SC066-SC068` corridor is ready for promotion as a narrow late weak-tail
+chapter. If that corridor is deferred, the next likely candidates remain
+`SC053-SC058` after internal splitting, `SC049-SC052` if a cleaner
+palatalization-focused unit emerges, or `SC031-SC034` only after further
+literature work. Further polishing of `016-020` is not the immediate next task
+unless a blocking assembly problem appears.
