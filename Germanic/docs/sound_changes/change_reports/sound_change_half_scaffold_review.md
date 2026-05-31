@@ -35,7 +35,7 @@ production unit.
 | 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
-| 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | scaffold | yes | maybe | low | The old four-change scaffold has now been split: SC049 remains residual bridge material, while SC050 has a real later edge across SC052 but still lacks a tested earlier historical boundary and should remain in chronological place rather than being pulled into a non-adjacent paired report. |
+| 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | scaffold | yes | maybe | low | Literature and book dossiers now exist. The next decision is shape rather than discovery: either promote this as a short adjacent bridge report or split it into two very short notes, while keeping the unit chronological and modest. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
 | 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
 | 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Small bridge scaffold now left behind by the SC055-SC056 promotion: `SC053` remains boundary-limited, while `SC054` keeps the narrow `sea`-based evidence visible without becoming the next main target. |
@@ -50,17 +50,16 @@ production unit.
 
 ## Recommended next promotion candidates
 
-1. **SC049-SC050 Onset allophony and Sievers-law bridge** — a possible small chronological bridge target, but SC050 should remain in chronological order rather than being pulled out as a non-adjacent partner for SC052.
-2. **SC053-SC054 Pre-umlaut bridge and W-loss** — another possible small chronological bridge target once the immediate post-apocope work is no longer pending.
-3. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — later source-review targets rather than immediate promotion candidates.
+1. **SC049-SC050 Onset allophony and Sievers-law bridge** — still first, now dossier-prepared and waiting on human review of the final shape: short adjacent bridge report versus two very short notes.
+2. **SC053-SC054 Pre-umlaut bridge and W-loss** — the next small chronological bridge target after `SC049-SC050`.
+3. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — later source-review targets once the smaller bridge decisions are settled.
 4. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
 
 ## Recommended immediate next step
 
 With `SC064-SC065` now promoted as a cautious bridge report, the next most
-sensible work is to prepare other small chronological bridge units without
-breaking the strict assembly rule. `SC049-SC050` and `SC053-SC054` are the most
-plausible near-term targets. The post-brightening `SC046-SC048` /
-`SC042`-`SC045` region should still wait for additional source review, and the
-larger late-tail and closing clusters remain later subdivision work rather than
-immediate promotion candidates.
+sensible work is to review dossier-prepared `SC049-SC050`, then move to
+`SC053-SC054`, without breaking the strict assembly rule. The
+post-brightening `SC046-SC048` / `SC042`-`SC045` region should still wait for
+additional source review, and the larger late-tail and closing clusters remain
+later subdivision work rather than immediate promotion candidates.
