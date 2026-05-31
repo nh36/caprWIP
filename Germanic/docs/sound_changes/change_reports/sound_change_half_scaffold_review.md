@@ -18,7 +18,7 @@ already settled.
 | 016-020 | Early vocalic/final corridor | SC016; SC017; SC019; SC020 | pilot | yes | maybe | defer | Already the only pilot production report; keep as the baseline corridor while other units catch up. |
 | 014-015 | Opening vowel prelude | SC014; SC015 | scaffold | yes | maybe | low | Useful prelude scaffold, but still thinly sourced and not an obvious next promotion target. |
 | 018-025 | Early Northwest Germanic unstressed and boundary-limited zone | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | yes | likely | defer | Intentionally broad underdetermination zone with many negative or boundary-limited cards. |
-| 026-027 | Nasal spirant corridor | SC026; SC027 | scaffold | yes | no | medium | Clean reciprocal pair and attractive later corridor, but still needs literature work before promotion. |
+| 026-027 | Nasal spirant corridor | SC026; SC027 | scaffold | yes | no | high | Clean reciprocal pair with strong local evidence; literature and book dossiers now exist, so the next decision is whether to promote the pair after human review. |
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
 | 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | scaffold | yes | likely | low | Real local structure exists, but the current four-change grouping still looks provisional rather than final. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Best kept as a derivational bridge for now because the unit is more functional than chapter-ready. |
@@ -37,15 +37,15 @@ already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC026-SC027 Nasal spirant corridor** — now the clearest next corridor candidate, but it still needs literature work before promotion.
+1. **SC026-SC027 Nasal spirant corridor** — now dossier-prepared and still the clearest next corridor candidate, pending human review on whether to promote the pair.
 2. **SC066-SC068 Syncope and degemination corridor** — plausible later corridor once a human decides that the current grouping is the right size.
 3. **SC053-SC058 Umlaut transition zone** — historically important, but probably needs internal splitting before promotion, especially around `SC054` and `SC055`.
 4. **SC049-SC052 Onset allophony and palatalization cluster** — a possible later candidate if human review decides a palatalization-focused unit can be separated cleanly from the present grouped scaffold.
 
 ## Recommended immediate next step
 
-First, Nathan should review the current scaffold structure as a whole. Then he
-should choose one cluster to promote. Only after that should the agent create or
-expand literature dossiers for the chosen cluster and draft production prose.
-Further polishing of `016-020` is not the immediate next task unless a blocking
-assembly problem appears.
+First, Nathan should decide whether the now dossier-prepared `SC026-SC027`
+corridor should be promoted as the next paired production report or whether a
+different scaffold cluster should be prioritized instead. Further polishing of
+`016-020` is not the immediate next task unless a blocking assembly problem
+appears.

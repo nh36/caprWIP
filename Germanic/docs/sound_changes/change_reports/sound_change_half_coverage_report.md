@@ -20,7 +20,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 014-015 | SC014; SC015 | scaffold | mixed negative and broad/far | no dedicated dossier yet | grouped scaffold prelude |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
-| 026-027 | SC026; SC027 | scaffold | strong local reciprocal pair | no dedicated dossier yet | paired corridor scaffold |
+| 026-027 | SC026; SC027 | scaffold | strong local reciprocal pair | literature and book dossiers drafted | paired corridor scaffold pending human review |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | scaffold | strong local chain with one broader outlier | no dedicated dossier yet | grouped corridor scaffold |
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
