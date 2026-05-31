@@ -95,3 +95,11 @@ That dossier phase should ask three concrete questions:
 Until that source work exists, the current row should stay scaffolded. The most
 likely future outcomes are still open: a cautious paired note, a narrower
 `SC064`-centered note, or residual treatment for `SC065`.
+
+## Implementation note
+
+That chapter-shape decision has now been implemented as a **short adjacent
+chronological bridge report**. The promoted unit keeps `SC064` as the narrow
+positive-evidence member and treats `SC065` explicitly as card-negative
+contextual syncope material. The report exists because every ordinary FST change
+needs explicit prose in the book, not because both changes are equally strong.

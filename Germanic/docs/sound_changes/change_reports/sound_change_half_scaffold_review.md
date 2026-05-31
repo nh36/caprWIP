@@ -4,11 +4,11 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 23
-assembled units: one pilot production report (`016-020`), eight full
-production reports (`026-027`, `031-034`, `043`, `051`, `052`, `055-056`,
-`063`, and `066-068`), and 14 remaining scaffold placeholders. The new `SC052`
-promotion adds a standalone chronological hinge report between the existing
-`SC051` and `SC055-SC056` chapters, while most other units remain intentionally
+assembled units: one pilot production report (`016-020`), nine full production
+reports (`026-027`, `031-034`, `043`, `051`, `052`, `055-056`, `063`,
+`064-065`, and `066-068`), and 13 remaining scaffold placeholders. The new
+`SC064-SC065` promotion adds a short cautious post-apocope bridge report
+between `SC063` and `SC066-SC068`, while most other units remain intentionally
 grouped placeholders whose main job is to keep the whole half visible without
 claiming that every remaining chapter boundary is already settled.
 
@@ -43,25 +43,24 @@ production unit.
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
-| 064-065 | Post-apocope tail | SC064; SC065 | scaffold | maybe | likely | medium | Structural review plus literature/book dossiers now exist. `SC064` has real but narrow `fright`-based positive evidence across `SC041` and `SC072`, while `SC065` remains boundary-limited and negative, so the next decision is cautious paired note vs. narrower `SC064` bridge vs. residual `SC065` context. |
+| 064-065 | Post-apocope tail | SC064; SC065 | full | no | maybe | defer | Now promoted as a short cautious bridge report. `SC064` is the narrow positive-evidence member, while `SC065` is treated explicitly as card-negative contextual syncope material rather than as a coequal chronology anchor. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
 | 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
 | 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
 
 ## Recommended next promotion candidates
 
-1. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
-2. **SC049-SC050 Onset allophony and Sievers-law bridge** — a possible later scaffold-to-prose target, but SC050 should remain in chronological order rather than being pulled out as a non-adjacent partner for SC052.
-3. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
-4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and bridge work remains more mature.
+1. **SC049-SC050 Onset allophony and Sievers-law bridge** — a possible small chronological bridge target, but SC050 should remain in chronological order rather than being pulled out as a non-adjacent partner for SC052.
+2. **SC053-SC054 Pre-umlaut bridge and W-loss** — another possible small chronological bridge target once the immediate post-apocope work is no longer pending.
+3. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — later source-review targets rather than immediate promotion candidates.
+4. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
 
 ## Recommended immediate next step
 
-With `SC052` now promoted as a standalone chronological hinge report, the next
-sensible step is `SC064-SC065` human chapter-shape review rather than another
-automatic promotion. That unit still needs the paired-note versus `SC064`-only
-versus residual-`SC065` decision. After that, `SC049-SC050` and `SC053-SC054`
-remain the most plausible small bridge targets, but any future promotion should
-preserve strict chronology rather than forming non-adjacent composite units.
-The post-brightening `SC046-SC048` / `SC042`-`SC045` region should still wait
-for additional source review rather than immediate promotion.
+With `SC064-SC065` now promoted as a cautious bridge report, the next most
+sensible work is to prepare other small chronological bridge units without
+breaking the strict assembly rule. `SC049-SC050` and `SC053-SC054` are the most
+plausible near-term targets. The post-brightening `SC046-SC048` /
+`SC042`-`SC045` region should still wait for additional source review, and the
+larger late-tail and closing clusters remain later subdivision work rather than
+immediate promotion candidates.
