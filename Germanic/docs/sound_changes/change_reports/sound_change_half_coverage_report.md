@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 13.
-3. Number covered by scaffold placeholders: 57.
-4. Number grouped into multi-change units: 68.
+2. Number covered by pilot/full production reports: 14.
+3. Number covered by scaffold placeholders: 56.
+4. Number grouped into multi-change units: 66.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 57.
+6. Number needing human judgement: 56.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -28,7 +28,9 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
-| 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | partial dossiers drafted for SC051 | grouped onset cluster scaffold |
+| 049-050 | SC049; SC050 | scaffold | one-sided allophony plus local later-edge bridge | no dedicated dossier yet | grouped bridge scaffold |
+| 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
+| 052 | SC052 | scaffold | strong local hinge under structural review | no dedicated dossier yet | keep scaffolded as hinge pending later chapter decision |
 | 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | no dedicated dossier yet | grouped bridge scaffold |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |

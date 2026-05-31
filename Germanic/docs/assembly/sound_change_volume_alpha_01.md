@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 13.
-- Covered by scaffold placeholders: 57.
-- Grouped into multi-change units: 68 changes across 19 units.
+- Covered by pilot/full production reports: 14.
+- Covered by scaffold placeholders: 56.
+- Grouped into multi-change units: 66 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 57.
+- Still needing human judgement or promotion decisions: 56.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -28,7 +28,9 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
-| 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | partial dossiers drafted for SC051 | grouped onset cluster scaffold |
+| 049-050 | SC049; SC050 | scaffold | one-sided allophony plus local later-edge bridge | no dedicated dossier yet | grouped bridge scaffold |
+| 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
+| 052 | SC052 | scaffold | strong local hinge under structural review | no dedicated dossier yet | keep scaffolded as hinge pending later chapter decision |
 | 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | no dedicated dossier yet | grouped bridge scaffold |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
@@ -663,39 +665,215 @@ This is a scaffold placeholder, not finished book prose. It still needs
 literature framing and human review of whether `SC046` eventually stands on its
 own or remains part of a grouped post-brightening chapter.
 
-## Onset allophony and palatalization cluster
+## Onset allophony and Sievers-law bridge
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit groups `SC049`, `SC050`, `SC051`, and `SC052` as the onset
-allophony and palatalization cluster. The grouping keeps a coherent chapter
-region visible while the final internal chapter boundaries remain unsettled.
+This scaffold unit keeps SC049 PGmc B Allophony and SC050 **Sievers Law
+Syncope** visible as bridge material on the left edge of the palatalization
+region. The pairing is structural rather than chapter-finished: SC049 is narrow
+and compound-specific, while SC050 has a real local later boundary but not yet
+an earlier historical boundary.
 
 #### Current evidence
 
-Each member change already has a chronology card and a FOMA implementation.
-Dedicated literature dossiers have not yet been promoted for the grouped unit,
-so the current entry remains a concise placeholder.
+Chronology cards and live implementations exist for both rules. SC049 has a
+one-sided earlier boundary across SC037 OE Compound Linking Syncope, carried
+by *rainbow, while its later side remains runner-bounded. SC050 has no tested
+earlier historical break before the bundled runner limit, but it does have a
+real later boundary across SC052 OE Velar Palatalization, carried by
+*stretch.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 49-52, from *PGmcBAllophony* through
-*OEVelarPalatalization*. It sits after the restoration/nasal-tail corridor and
-before the later umlaut-transition zone.
+The unit occupies current orders 49-50, after the SC046-SC048 restoration and
+nasal-tail bridge and immediately before the promoted SC051 singleton report. It
+keeps the left edge of the onset/palatalization zone visible without pretending
+that these two rules already form a finished production chapter.
 
 #### Order evidence
 
-The cards mix contextual allophony with local palatalization boundaries. The
-unit is therefore useful as a visible onset cluster now, even though a later
-human review may decide to promote `SC051` or another member separately.
+SC049 currently supports only an earlier boundary: if it is moved before SC037,
+*rainbow loses the live voiced compound outcome. Its later side is a no-break
+result bounded by the current search space and should not be rewritten as a
+positive claim. SC050 is the opposite shape: its earlier side remains
+runner-limited, but its later side shows that moving it after SC052 breaks the
+*stretch derivation. Together they mark the left approach to the promoted SC051
+report without yet defining a single strong chapter center of their own.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature work and human review of whether the eventual book keeps this grouped
-onset chapter or splits one of its members into a standalone section.
+This is a scaffold placeholder, not finished book prose. SC049 remains residual
+allophonic bridge material, and SC050 may later prove most useful as the left
+member of a narrower pair with SC052 rather than as part of a finished *049-050*
+chapter.
+
+## OE Sk Palatalization
+
+### Sound-change report
+
+#### Historical formulation
+
+SC051 isolates the Old English palatalization and assibilation of *sk to
+palatal *sc. That is a real and recognizable historical development in the
+handbook tradition, even though it is usually presented as part of the broader
+Old English palatalization complex rather than as a wholly independent headline
+chapter [@Campbell1959, §170; @Campbell1959, §§440--441;
+@Hogg1992, pp. 106--107; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
+@Fulk2018, p. 28; @SieversBrunner1965, §91.a].
+
+This report is therefore deliberately narrow. It promotes SC051 alone, not the
+whole mixed SC049-SC052 onset-and-palatalization region. The historical claim
+is that OE sk > sc deserves its own concise chapter shape inside that larger
+zone, while the neighboring rules remain structurally unresolved.
+
+#### Source tradition
+
+The source tradition supports both the rule and the need for restraint in how
+it is framed. Campbell treats *sk as especially prone to palatalization and
+assibilation, distinguishing the broad initial development from medial and final
+environments that still resist palatalization after back vowels
+[@Campbell1959, §170; @Campbell1959, §§440--441]. Hogg is especially clear that the cluster
+sk undergoes a parallel change to palatal sc and that this should be kept
+separate from later palatal diphthongization [@Hogg1992, pp. 106--107,
+111--112]. Ringe and Taylor are the sharpest guide to the chapter boundary:
+they distinguish *sk palatalization from later West Saxon diphthongization
+after initial palatals, which is exactly the distinction this report needs
+[@RingeTaylor2014, §§6.4.1, 6.5.1].
+
+Luick is most useful for the broader historical framing, since he treats the
+whole area as an early movement in a palatal direction and places the
+diphthongal West Saxon effects later [@Luick1914, §168; @Luick1914, §§171--174]. Fulk gives
+the most compact prose version of the core conditioning: OE *sc is palatal
+except internally before or finally after a back vowel [@Fulk2018, p. 28].
+Sievers-Brunner offers older corroboration for the same layered picture: broad
+initial palatalization of *sc, but preserved back-vowel contrasts and later
+vocalic effects after palatals [@SieversBrunner1965, §91.a; §50; §105 Anm. 2].
+
+#### CAPR implementation
+
+CAPR makes this handbook material more explicit by isolating
+*OESkPalatalization* as its own rule. That is a modeling choice, but it is a
+disciplined one. The rule captures the *sk palatalization itself, while the
+adjacent SC052 OE Velar Palatalization and SC056 **OE Ws Palatal
+Diphthongization** handle neighboring parts of the broader palatalization
+complex.
+
+That separation is analytically useful because the handbooks often discuss the
+whole region together, whereas CAPR needs narrower rule boundaries to test local
+ordering claims. The report should therefore present SC051 as a legitimate
+historical rule isolated by the model, not as proof that the traditional
+literature itself always treated *sk palatalization as a wholly self-standing
+chapter.
+
+#### Place in the cascade
+
+SC051 follows SC046 OE A Restoration, sits inside the broader SC049-SC052
+palatalization/fronting region, and precedes SC056 **OE Ws Palatal
+Diphthongization**. In the new assembly layout it now stands between the
+residual *049-050* bridge scaffold on the left and the SC052 hinge scaffold on
+the right, rather than remaining buried inside the old four-change placeholder.
+
+That placement matters for book structure as well as for local order. On its
+right, SC051 belongs near the already promoted SC055-SC056 umlaut-core report,
+but it must only cross-reference that chapter rather than duplicate it. The
+point of this report is to clarify one narrow palatalization rule before the
+book returns to the neighboring velar-palatalization and umlaut material.
+
+#### Order evidence
+
+The chronology card gives SC051 the strongest local standalone evidence in the
+old mixed cluster. It must follow SC046: the key earlier-side witnesses are
+flask and wash, where moving SC051 earlier than restoration yields fronted
+outputs such as flæsce and wæscan instead of the live back-vowel forms
+flasce and wascan. It must also precede SC056: the key later-side witnesses
+are shaft, shear, sheath, sheep, and *shield, where delaying SC051
+beyond West Saxon palatal diphthongization removes the live *sċea- / *sċie-
+outcomes [@Campbell1959, §170; @Campbell1959, §§440--441;
+@Hogg1992, pp. 106--107; @Hogg1992, pp. 111--112;
+@RingeTaylor2014, §6.4.1; @RingeTaylor2014, §6.5.1; @Fulk2018, p. 28;
+@Fulk2018, §4.13].
+
+Both boundaries are historically interpretable and fairly local. That is the
+main reason SC051 is promotable as a narrow report: it has stronger local
+two-sided evidence than the parent SC049-SC052 cluster, and it does not depend
+on overreading a runner-bounded side as a positive historical boundary.
+
+#### Interpretation
+
+This promotion extracts one clean palatalization chapter from a mixed scaffold.
+Its value is architectural as much as historical. The surrounding region is now
+clearer because SC051 no longer has to share a placeholder with rules that play
+different structural roles. SC049 remains residual and compound-specific, SC050
+remains a bridge rule with a real later boundary but no tested earlier
+historical edge, SC052 remains a central hinge between SC050 and the promoted
+umlaut core, and SC057 remains a later palatalization-side question rather than
+part of this chapter.
+
+That makes SC051 a good example of how the production layer should mature. The
+book does not need to solve the whole palatalization/fronting region at once.
+It can promote the rule that is already historically legible, dossier-backed,
+and locally well bounded, while leaving the rest of the structure visible for
+later review.
+
+#### Remaining cautions
+
+This report should stay narrow. It does not exhaust Old English palatalization,
+and it should not absorb SC052 or SC056 into a larger chapter by implication.
+The handbooks support SC051 as a real process, but they often discuss it inside
+the wider palatalization complex rather than as a fully isolated law
+[@Campbell1959, §170; @Campbell1959, §§440--441; @Hogg1992, pp. 106--107;
+@RingeTaylor2014, §6.4.1; @Luick1914, §168].
+
+The chapter must also avoid duplicating the already promoted SC055-SC056
+umlaut-core report. SC056 belongs here only as SC051's right-hand local
+boundary, not as coequal chapter content. Future work may still decide that
+SC052 deserves its own promotion or that SC052 and SC057 should later be
+reconsidered together as a palatalization-side unit. This report settles only
+the narrow case for SC051.
+
+## Velar palatalization hinge
+
+### Sound-change report
+
+#### Historical formulation
+
+This scaffold unit keeps SC052 OE Velar Palatalization visible as the hinge
+rule between the left-edge Sievers-law material and the promoted umlaut core.
+Its role is historically important, but its final chapter shape is still under
+review rather than being absorbed automatically into the new SC051 singleton
+report.
+
+#### Current evidence
+
+SC052 has one of the clearest local network profiles in the region. Its card
+shows an earlier boundary across SC050 **Sievers Law Syncope**, carried by
+*stretch, and a later boundary across SC055 *OE I Umlaut, carried by cow
+and *lung. That makes it stronger than residual scaffold material, but still
+structurally open because its best long-term chapter partner remains unsettled.
+
+#### Place in the cascade
+
+SC052 sits at current order 52, immediately after the promoted SC051 report and
+immediately before the SC053-SC054 pre-umlaut bridge and the promoted SC055-SC056
+umlaut-core report. It therefore marks the point where the onset/palatalization
+region turns into the central umlaut neighborhood.
+
+#### Order evidence
+
+The card fixes SC052 between SC050 and SC055. Moving it earlier than SC050
+breaks *stretch; moving it later than SC055 yields over-palatalized outcomes in
+cow and lung. Those are real local boundaries, but they do not yet decide
+whether SC052 should later stand alone, pair with SC050, or be reconsidered
+with the later SC057 palatalization-side material.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. SC052 remains
+structurally central and historically meaningful, but it stays under review
+rather than being folded into the promoted SC051 chapter.
 
 ## Pre-umlaut bridge and W-loss
 

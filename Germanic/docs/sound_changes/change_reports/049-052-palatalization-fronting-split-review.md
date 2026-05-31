@@ -85,3 +85,12 @@ pair or in a broader palatalization-side unit. `SC057` should remain scaffolded
 for now, but it should stay explicitly marked for later reconsideration with
 the palatalization/fronting region. `SC058` should remain untouched as residual
 boundary-limited material.
+
+## Implementation note
+
+That recommended extraction has now been implemented in the assembly layer.
+`049-050` remains scaffolded as onset/allophony and Sievers-law bridge
+material, `051` is now promoted as a narrow full sk-palatalization report, and
+`052` remains scaffolded as a velar-palatalization hinge. `SC057` also remains
+scaffolded in `057-058`, but it stays explicitly flagged for later
+reconsideration with this palatalization/fronting region.
