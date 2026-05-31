@@ -3,13 +3,14 @@
 ## Current state
 
 The sound-change half is now fully visible and buildable as an assembled book
-half rather than as a single pilot chapter. The current scaffold has 19
-assembled units: one pilot production report (`016-020`), four full production
-reports (`026-027`, `043`, `063`, and `066-068`), and 14 remaining scaffold
-placeholders. The paired SC026-SC027 promotion and the later narrow SC066-SC068
-promotion now complement the earlier singleton promotions, while most other
-units remain intentionally grouped placeholders whose main job is to keep the
-whole half visible without claiming that chapter boundaries are already settled.
+half rather than as a single pilot chapter. The current scaffold has 21
+assembled units: one pilot production report (`016-020`), five full production
+reports (`026-027`, `043`, `055-056`, `063`, and `066-068`), and 15 remaining
+scaffold placeholders. The narrow SC055-SC056 promotion now adds the first
+central Old English vowel report to the earlier paired and singleton
+promotions, while most other units remain intentionally grouped placeholders
+whose main job is to keep the whole half visible without claiming that chapter
+boundaries are already settled.
 
 ## Structural review of current units
 
@@ -27,7 +28,9 @@ whole half visible without claiming that chapter boundaries are already settled.
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
 | 049-052 | Onset allophony and palatalization cluster | SC049; SC050; SC051; SC052 | scaffold | yes | likely | medium | Now one of the clearer later candidates if a palatalization-focused unit can be separated cleanly from the current grouped scaffold. |
-| 053-058 | Umlaut transition and negative boundaries | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | no | likely | medium | Split review plus new dossiers now identify `SC055-SC056` as dossier-prepared and the likely first promotion target, while `SC053` and `SC058` remain residual scaffold material, `SC054` remains a possible bridge note, and `SC057` should still be reconsidered with the palatalization cluster. |
+| 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Small bridge scaffold now left behind by the SC055-SC056 promotion: `SC053` remains boundary-limited, while `SC054` keeps the narrow `sea`-based evidence visible without becoming the next main target. |
+| 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
+| 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: `SC057` still points structurally toward `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | scaffold | yes | maybe | low | Reasonable paired tail scaffold, but not yet more source-ready than `SC063` itself. |
@@ -37,17 +40,16 @@ whole half visible without claiming that chapter boundaries are already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC055-SC056 Umlaut core and right-edge follower** — now dossier-prepared and the clearest immediate promotion candidate inside the old `SC053-SC058` scaffold, pending human review of whether the paired unit should be promoted as a narrow umlaut-core chapter.
-2. **SC049-SC052 Onset allophony and palatalization cluster** — remains a plausible next target, especially because `SC057` may eventually need to be reconsidered alongside that region.
-3. **SC031-SC034 West Saxon diphthong chain** — potentially promotable only after dedicated literature work clarifies whether the present four-change grouping is the right chapter shape.
-4. **SC064-SC065 Post-apocope tail** — possibly promotable as a short paired post-apocope unit, but only after human review confirms that it should stand apart from the newly promoted SC066-SC068 corridor.
+1. **SC049-SC052 Onset allophony and palatalization cluster** — now the clearest next structural candidate, especially because `SC057` may need to be reconsidered alongside that region.
+2. **SC031-SC034 West Saxon diphthong chain** — still a plausible later promotion, but only after dedicated literature work clarifies whether the present four-change grouping is the right chapter shape.
+3. **SC064-SC065 Post-apocope tail** — still a possible short paired post-apocope unit, but only after human review confirms that it should stand apart from the already promoted SC066-SC068 corridor.
+4. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
 
 ## Recommended immediate next step
 
-The next sensible step is human review of whether the now dossier-prepared
-`SC055-SC056` pair should be promoted as a narrow umlaut-core chapter. The
-remaining nearby members should stay scaffolded for now: `SC053` and `SC058` as
-residual boundary-limited notes, `SC054` as a possible later bridge note, and
-`SC057` for reconsideration when `SC049-SC052` receives its own structural
-review. Further polishing of `016-020` is not the immediate next task unless a
-blocking assembly problem appears.
+The next sensible step is targeted literature and structural preparation for
+`SC049-SC052`, with particular attention to whether `SC057` should eventually be
+reconsidered alongside that palatalization/fronting region rather than left in
+the residual post-umlaut scaffold. `SC031-SC034`, `SC064-SC065`, and the new
+`SC053-SC054` bridge scaffold remain later candidates rather than the immediate
+next promotion target.

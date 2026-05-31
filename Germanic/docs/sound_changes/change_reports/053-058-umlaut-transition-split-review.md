@@ -73,3 +73,10 @@ and `SC058` should remain scaffolded for now. Within that residual set, `SC054`
 can be kept in view as a possible short bridge note later, while `SC057` should
 be reconsidered when `SC049-SC052` is reviewed as a palatalization/fronting
 cluster. No promotion is recommended in this split-review task.
+
+## Implementation note
+
+That recommended split has now been implemented in the assembly layer: `053-054`
+remains scaffolded as pre-umlaut bridge material, `055-056` has been promoted
+as the full umlaut-core report, and `057-058` remains scaffolded, with `SC057`
+still reserved for later reconsideration alongside `SC049-SC052`.

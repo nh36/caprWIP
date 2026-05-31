@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 11.
-- Covered by scaffold placeholders: 59.
-- Grouped into multi-change units: 68 changes across 17 units.
+- Covered by pilot/full production reports: 13.
+- Covered by scaffold placeholders: 57.
+- Grouped into multi-change units: 68 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 59.
+- Still needing human judgement or promotion decisions: 57.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -29,7 +29,9 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
 | 049-052 | SC049; SC050; SC051; SC052 | scaffold | mixed contextual and local | no dedicated dossier yet | grouped onset cluster scaffold |
-| 053-058 | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | mixed local links and negative boundaries | partial dossiers drafted for SC055-SC056 | grouped transition scaffold |
+| 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | no dedicated dossier yet | grouped bridge scaffold |
+| 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
+| 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
 | 059-061 | SC059; SC060; SC061 | scaffold | mixed local and contextual bridge | no dedicated dossier yet | grouped late-vowel bridge scaffold |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | scaffold | mixed local and boundary-limited tail | no dedicated dossier yet | paired tail scaffold |
@@ -695,41 +697,177 @@ This is a scaffold placeholder, not finished book prose. It still needs
 literature work and human review of whether the eventual book keeps this grouped
 onset chapter or splits one of its members into a standalone section.
 
-## Umlaut transition and negative boundaries
+## Pre-umlaut bridge and W-loss
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit groups `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, and
-`SC058` as the post-velar and umlaut-transition section. The point is to show
-the whole region in the assembled half while admitting that its final prose
-segmentation is not ready.
+This scaffold unit keeps SC053 OE Post Velar W Loss and SC054 **OE W Loss
+Before I** visible as the bridge into the promoted umlaut core. The pairing is
+structural rather than chapter-finished: SC053 is still boundary-limited,
+whereas SC054 has real but narrow local evidence centered on the *sea
+derivation.
 
 #### Current evidence
 
-Chronology cards and FOMA implementations exist for all six member changes. No
-dedicated literature dossiers have yet been promoted for the grouped unit, so
-the current entry stays in scaffold form.
+Chronology cards and live implementations exist for both rules. SC053 still has
+no positive first-break boundary in either tested direction, while SC054 has a
+two-sided result that remains narrow because both sides are defined by the same
+*sea witness.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 53-58, from *OEPostVelarWLoss* through
-*OENasalDissimilation*. It links onset/palatalization material to the later
-back-mutation and weak-tail bridge.
+The unit occupies current orders 53-54, after SC052 OE Velar Palatalization
+and immediately before the promoted SC055-SC056 umlaut-core report. It marks
+the last bridge material before the central umlaut chapter.
 
 #### Order evidence
 
-The cards mix productive local links, especially around the center of the unit,
-with negative or boundary-limited members at the edges. The scaffold therefore
-treats this as a transition section rather than as a set of already-final
-standalone chapters.
+SC053 currently yields a negative, boundary-limited result on both sides rather
+than a positive chronology constraint. SC054 is more informative: the card
+places it after SC020 PGmc Final Z Deletion and before SC063 **OE High
+Vowel Apocope**, but both boundaries are carried by the same *sea derivation.
+That makes SC054 useful bridge evidence without yet making it a chapter center.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature dossiers, human review of the internal grouping, and a later
-decision about whether one member such as `SC054` should be promoted first.
+This is a scaffold placeholder, not finished book prose. SC053 remains residual
+boundary-limited material, and SC054 may later become a short bridge note, but
+this pair is not the next main promotion target.
+
+## Umlaut core and palatal-diphthongization follower
+
+### Sound-change report
+
+#### Historical formulation
+
+SC055 OE I Umlaut is one of the major handbook sound changes of Old
+English: a following i or j fronts back vowels and raises parts of the
+front-vowel system, leaving a large morphological and lexical footprint
+[@Campbell1959, §§190--197; @Hogg1992, pp. 111--114; @Luick1914, §§181--183;
+@RingeTaylor2014, §§6.6.1--6.6.4; @Fulk2018, §4.7]. SC056 **OE Ws Palatal
+Diphthongization** is real as well, but it is narrower: a West Saxon
+palatal-triggered diphthongization zone on the right edge of the umlaut
+neighborhood rather than a second coequal handbook headline
+[@Campbell1959, §39; @Hogg1992, pp. 104--105; @RingeTaylor2014, §6.5.1;
+@Fulk2018, §4.13].
+
+#### Source tradition
+
+The source tradition is clear about the chapter's center. Campbell, Hogg,
+Luick, Ringe and Taylor, and Fulk all treat i-umlaut as a large and central Old
+English development [@Campbell1959, §§190--197; @Hogg1992, pp. 111--114;
+@Luick1914, §§181--183; @RingeTaylor2014, §§6.6.1--6.6.4; @Fulk2018, §4.7].
+The same sources also recognize West Saxon palatal diphthongization, but they
+do not present it in the same way. Campbell and Hogg treat it in separate
+palatal-vowel discussions rather than folding it into the main i-mutation
+chapter [@Campbell1959, §39; @Hogg1992, pp. 104--105]. Ringe and Taylor and
+Fulk are the most important cautions here: both place palatal-triggered
+diphthongization differently in the broader textbook chronology, so SC056 should
+not be narrated as if the handbook tradition simply states "after i-umlaut comes
+palatal diphthongization" [@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
+@Fulk2018, §§4.7, 4.13].
+
+#### CAPR implementation
+
+CAPR makes that distinction explicit by keeping two adjacent rules. *OEIUmlaut*
+handles the broad fronting and raising effects conditioned by following *i/j.
+*OEWsPalatalDiphthongization* then handles a narrower West Saxon
+palatal-triggered diphthongization zone. This is useful book material because
+it lets the model isolate the local right edge of the umlaut core. But the
+local CAPR relation `SC055 < SC056` should still be presented as a model-facing
+ordering result, not as a verbatim restatement of the broad handbook
+chronology.
+
+#### Place in the cascade
+
+This report belongs immediately after SC052 OE Velar Palatalization and,
+in the present assembly, after the residual SC053-SC054 pre-umlaut bridge. On
+its right, it precedes later promoted material, especially SC063 **OE High
+Vowel Apocope** and the SC066-SC068 syncope corridor, both of which depend on
+the earlier umlaut setting already being in place. That position gives the
+chapter a useful book role: it is the early Old English vowel core that stands
+between palatalization and the later weak-tail reductions.
+
+#### Order evidence
+
+The chronology cards give this report a tight local spine. SC055 must follow
+SC052: the key witnesses are cow and lung, where moving umlaut earlier than
+velar palatalization yields over-palatalized outcomes. SC055 must also precede
+SC056, and SC056 must follow SC055: on both sides, the key witnesses are *gift
+and *sheath, whose derivations collapse into the wrong diphthongal forms if
+the order is reversed. That reciprocal local evidence is the main reason the
+pair is promotable as a chapter. The important limit is on SC056's later side:
+the card finds no real later break before the current runner boundary at SC087,
+and that negative result must not be rewritten as a positive claim that SC056
+must precede SC087.
+
+#### Interpretation
+
+This is the first central Old English vowel-change report in the production
+layer. Its value is not merely that i-umlaut is famous, but that CAPR can now
+anchor that major handbook rule with a small but real local chronology network.
+The chapter should therefore keep the asymmetry visible: SC055 is the
+historical center, while SC056 is a narrower West Saxon right-edge follower.
+That is exactly the kind of case where the book can show how CAPR's local
+evidence sharpens a standard historical chapter without reducing the whole
+chapter to a handful of witness forms.
+
+#### Remaining cautions
+
+SC056 is still narrower and more dialect-specific than SC055, so the prose
+should not grant it equal historical weight. More broadly, the broad textbook
+chronology and CAPR's local chronology do not coincide perfectly, especially in
+sources such as Ringe and Taylor and Fulk that place palatal-triggered
+diphthongization differently in the wider sequence
+[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC054
+should remain outside the promoted core for now as possible later bridge
+material, and SC057 should remain reserved for later reconsideration with the
+SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+narrow: it is a report on the umlaut core and its West Saxon right edge, not a
+general handbook article on every aspect of Old English i-mutation.
+
+## Post-umlaut residual and palatalization-side note
+
+### Sound-change report
+
+#### Historical formulation
+
+This scaffold unit keeps SC057 OE J Cluster Coalescence and SC058 **OE
+Nasal Dissimilation** visible after the promoted umlaut core. The pairing is
+deliberately provisional: SC057 has one-sided evidence that points back toward
+the palatalization/fronting region, while SC058 is still boundary-limited
+residual material.
+
+#### Current evidence
+
+Chronology cards and live implementations exist for both rules. SC057 has a
+positive earlier boundary across SC052 OE Velar Palatalization, but its
+later side is runner-bounded. SC058 has no positive first-break boundary in
+either tested direction.
+
+#### Place in the cascade
+
+The unit occupies current orders 57-58, immediately after the promoted
+SC055-SC056 report and before the later back-mutation and weak-tail bridge.
+That keeps the post-umlaut residual zone visible without forcing it into the
+same promoted chapter as the umlaut core.
+
+#### Order evidence
+
+SC057 must currently follow SC052, with witnesses such as bow, follow,
+hedge, seek, and *singe showing that it belongs to the broader
+palatalization/fronting neighborhood. Its later side remains a no-break result
+bounded by the current search space. SC058, by contrast, is negative and
+boundary-limited on both sides, so it does not yet define a positive historical
+adjacency of its own.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. SC057 should be
+reconsidered when SC049-SC052 receives a dedicated structural review, and SC058
+remains residual scaffold material unless stronger evidence emerges.
 
 ## Back mutation and weak-tail bridge
 
