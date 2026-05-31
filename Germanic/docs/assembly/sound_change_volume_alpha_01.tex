@@ -170,15 +170,15 @@ without pretending that the prose is complete.}
 \item
   Ordinary chronology-card sound changes represented: 70/70.
 \item
-  Covered by pilot/full production reports: 18.
+  Covered by pilot/full production reports: 19.
 \item
-  Covered by scaffold placeholders: 52.
+  Covered by scaffold placeholders: 51.
 \item
   Grouped into multi-change units: 66 changes across 19 units.
 \item
   Still needing literature dossiers: 64.
 \item
-  Still needing human judgement or promotion decisions: 52.
+  Still needing human judgement or promotion decisions: 51.
 \item
   Negative/boundary-only chronology cards: 10.
 \item
@@ -245,9 +245,9 @@ scaffold \\
 051 & SC051 & full & strong local standalone report & literature and
 book dossiers drafted & keep as narrow singleton full production
 report \\
-052 & SC052 & scaffold & strong local hinge with two-sided card evidence
-& literature and book dossiers drafted & keep scaffolded pending
-standalone-vs-paired human decision \\
+052 & SC052 & full & strong local hinge with two-sided card evidence &
+literature and book dossiers drafted & keep as standalone chronological
+full production report \\
 053-054 & SC053; SC054 & scaffold & negative edge plus narrow bridge
 evidence & no dedicated dossier yet & grouped bridge scaffold \\
 055-056 & SC055; SC056 & full & strong local pair with right-edge
@@ -1309,43 +1309,155 @@ hinge}\label{velar-palatalization-hinge}
 
 \paragraph{Historical formulation}\label{historical-formulation-13}
 
-This scaffold unit keeps SC052 OE Velar Palatalization visible as the
-hinge rule between the left-edge Sievers-law material and the promoted
-umlaut core. Its role is historically important, but its final chapter
-shape is still under review rather than being absorbed automatically
-into the new SC051 singleton report.
+SC052 isolates the Old English palatalization of plain velars \emph{k}
+and \emph{g} in front-vocalic and \emph{j}-adjacent environments. That
+is a real Old English process in the handbook tradition, even though the
+same sources usually discuss plain velars and \emph{sk} inside a broader
+palatalization complex rather than as wholly independent headline
+chapters (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 170};
+\citeproc{ref-Hogg1992}{Hogg 1992, 106--7};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sect. 6.4.1};
+\citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects 168--176};
+\citeproc{ref-Fulk2018}{Fulk 2018, 28}).
 
-\paragraph{Current evidence}\label{current-evidence-8}
+This report therefore promotes SC052 as a standalone chronological
+hinge, not as part of a non-contiguous \texttt{SC050-SC052} pair. On its
+left stands the already promoted SC051 OE Sk Palatalization report; on
+its right stands the promoted SC055-SC056 umlaut-core report. The
+historical claim is narrow but important: plain velar palatalization
+deserves its own concise report between those neighboring chapters.
 
-SC052 has one of the clearest local network profiles in the region. Its
-card shows an earlier boundary across SC050 \textbf{Sievers Law
-Syncope}, carried by \emph{stretch, and a later boundary across SC055
-}OE I Umlaut, carried by cow and *lung. That makes it stronger than
-residual scaffold material, but still structurally open because its best
-long-term chapter partner remains unsettled.
+\paragraph{Source tradition}\label{source-tradition-5}
+
+The source tradition supports that framing. Campbell, Hogg, Ringe and
+Taylor, Luick, and Fulk all treat plain velar palatalization as a real
+Old English development, and all place it in the same broad historical
+neighborhood as \emph{sk}-palatalization and later front-mutation
+material (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 170};
+\citeproc{ref-Hogg1992}{Hogg 1992, 106--7, 111--14};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.4.1,
+6.6.1--6.6.4}; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects
+168--176, 181--183}; \citeproc{ref-Fulk2018}{Fulk 2018, sects 4.7,
+4.13}). The handbooks usually describe SC051 and SC052 inside that wider
+palatalization complex, but the book can still treat them as adjacent
+chronological reports so long as it does not pretend they are
+historically unrelated.
+
+The strongest source support for SC052's right edge comes from Ringe and
+Taylor and from the broader handbook sequence in Campbell, Hogg, Luick,
+and Fulk: palatalization belongs to an earlier consonantal zone, while
+i-umlaut or front mutation is later enough to create contrasts with
+non-palatalized velars (\citeproc{ref-Campbell1959}{Campbell 1959, sects
+190--197}; \citeproc{ref-Hogg1992}{Hogg 1992, 111--14};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.4.1,
+6.6.1--6.6.4}; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects
+181--183}; \citeproc{ref-Fulk2018}{Fulk 2018, sect. 4.7}). The left edge
+is narrower. Adamczyk is useful precisely because she supports treating
+SC050 as a real Sievers-law and prosodic feeder issue without turning it
+into a natural coequal member of a velar-palatalization chapter
+(\citeproc{ref-Adamczyk2001}{Adamczyk 2001}).
+
+\paragraph{CAPR implementation}\label{capr-implementation-5}
+
+CAPR isolates \emph{OEVelarPalatalization} more sharply than many
+handbook presentations do. In the model, plain \emph{k} is palatalized
+before front vowels, before \emph{j}, and in a few front-vowel-adjacent
+positions that preserve the local contrast system. Plain \emph{g} is
+likewise palatalized before front vowels, after front vowels in certain
+edge positions, and before \emph{j}. That narrower rule boundary is
+analytically useful because it lets CAPR distinguish four adjacent
+functions that the handbook tradition often discusses together:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  SC050 \textbf{Sievers Law Syncope} as a left-edge feeder;
+\item
+  SC051 OE Sk Palatalization as the cluster rule;
+\item
+  SC052 OE Velar Palatalization as the plain-velar hinge;
+\item
+  SC055 OE I Umlaut as the next major vowel chapter.
+\end{enumerate}
+
+That segmentation is a modeling choice, but it is a disciplined one. The
+sources support the larger historical zone, while CAPR makes the
+internal order testable without treating every neighboring process as
+one mixed chapter (\citeproc{ref-Campbell1959}{Campbell 1959, sect.
+170}; \citeproc{ref-Hogg1992}{Hogg 1992, 106--7, 111--14};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.4.1,
+6.6.1--6.6.4}; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects
+168--176, 181--183}; \citeproc{ref-Fulk2018}{Fulk 2018, sects 4.7,
+4.13}).
 
 \paragraph{Place in the cascade}\label{place-in-the-cascade-13}
 
-SC052 sits at current order 52, immediately after the promoted SC051
-report and immediately before the SC053-SC054 pre-umlaut bridge and the
-promoted SC055-SC056 umlaut-core report. It therefore marks the point
-where the onset/palatalization region turns into the central umlaut
-neighborhood.
+SC052 sits at current order 52. SC050 remains its feeder/context on the
+left: the stretch relation matters because Sievers Law Syncope creates
+the shape that the palatalization rule then acts on, not because SC050
+and SC052 should be merged into one out-of-order chapter. In the
+assembled book, SC051 is the immediately preceding promoted report, and
+SC052 is the immediately following standalone hinge report.
+
+To the right, SC052 precedes the residual SC053-SC054 pre-umlaut bridge
+and the promoted SC055-SC056 umlaut-core report. Farther right, SC057
+remains a later unresolved palatalization-side question. That placement
+is the main architectural gain of this promotion: the book can now
+discuss the plain-velar hinge explicitly while keeping the assembled
+order strictly chronological.
 
 \paragraph{Order evidence}\label{order-evidence-13}
 
-The card fixes SC052 between SC050 and SC055. Moving it earlier than
-SC050 breaks *stretch; moving it later than SC055 yields
-over-palatalized outcomes in cow and lung. Those are real local
-boundaries, but they do not yet decide whether SC052 should later stand
-alone, pair with SC050, or be reconsidered with the later SC057
-palatalization-side material.
+The chronology cards give SC052 a small but real local network. It must
+follow SC050: if SC052 is moved earlier than Sievers Law Syncope,
+stretch yields the wrong palatal and geminate outcome. It must also
+precede SC055: if SC052 is moved later than OE I Umlaut, cow and lung
+become over-palatalized. Those results show
+\texttt{SC050\ \textless{}\ SC052\ \textless{}\ SC055}.
 
-\paragraph{Status}\label{status-8}
+The left edge still requires restraint. SC050's earlier side is
+runner-limited, not a positive historical boundary, so the stretch
+relation must not be inflated into a whole \texttt{SC050-SC052}
+production chapter. The right edge is narrow as well, but it is
+historically interpretable because the source tradition broadly places
+palatalization before i-umlaut or front mutation
+(\citeproc{ref-Campbell1959}{Campbell 1959, sects 190--197};
+\citeproc{ref-Hogg1992}{Hogg 1992, 111--14};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.4.1,
+6.6.1--6.6.4}; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects
+181--183}; \citeproc{ref-Fulk2018}{Fulk 2018, sect. 4.7}).
 
-This is a scaffold placeholder, not finished book prose. SC052 remains
-structurally central and historically meaningful, but it stays under
-review rather than being folded into the promoted SC051 chapter.
+\paragraph{Interpretation}\label{interpretation-5}
+
+SC052 is stronger than residual scaffold material. Its value is not just
+that it has one witness on the left and two on the right, but that those
+witnesses make historical sense inside the broader source tradition.
+This is therefore the kind of central hinge rule that can be promoted
+without pretending the whole palatalization region has been fully
+resolved.
+
+The report also shows how the sound-change half can mature while
+preserving strict chronological order. SC050 remains visible as
+feeder/context in the earlier \emph{049-050} scaffold, SC051 remains a
+separate promoted cluster chapter, SC052 now receives its own prose
+immediately after SC051, and SC055-SC056 remains the promoted
+umlaut-core chapter to the right. The neighboring reports should be
+cross-referenced, not duplicated.
+
+\paragraph{Remaining cautions}\label{remaining-cautions-5}
+
+This report should stay narrow. It does not exhaust Old English
+palatalization, and it should not be read as if SC051 and SC052 were
+historically unrelated just because the book now treats them as adjacent
+reports. It must not duplicate the already promoted SC051 OE Sk
+Palatalization report or the promoted SC055-SC056 umlaut-core report.
+
+The chapter must also keep the left edge in proportion. stretch is
+enough to show that SC050 matters as feeder/context, but not enough to
+justify a non-contiguous \texttt{SC050-SC052} production unit. SC057
+should remain unresolved for later review rather than being absorbed
+here by implication.
 
 \subsection{Pre-umlaut bridge and
 W-loss}\label{pre-umlaut-bridge-and-w-loss}
@@ -1360,7 +1472,7 @@ The pairing is structural rather than chapter-finished: SC053 is still
 boundary-limited, whereas SC054 has real but narrow local evidence
 centered on the *sea derivation.
 
-\paragraph{Current evidence}\label{current-evidence-9}
+\paragraph{Current evidence}\label{current-evidence-8}
 
 Chronology cards and live implementations exist for both rules. SC053
 still has no positive first-break boundary in either tested direction,
@@ -1383,7 +1495,7 @@ the card places it after SC020 PGmc Final Z Deletion and before SC063
 same *sea derivation. That makes SC054 useful bridge evidence without
 yet making it a chapter center.
 
-\paragraph{Status}\label{status-9}
+\paragraph{Status}\label{status-8}
 
 This is a scaffold placeholder, not finished book prose. SC053 remains
 residual boundary-limited material, and SC054 may later become a short
@@ -1412,7 +1524,7 @@ handbook headline (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 39};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sect. 6.5.1};
 \citeproc{ref-Fulk2018}{Fulk 2018, sect. 4.13}).
 
-\paragraph{Source tradition}\label{source-tradition-5}
+\paragraph{Source tradition}\label{source-tradition-6}
 
 The source tradition is clear about the chapter's center. Campbell,
 Hogg, Luick, Ringe and Taylor, and Fulk all treat i-umlaut as a large
@@ -1434,7 +1546,7 @@ SC056 should not be narrated as if the handbook tradition simply states
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.5.1,
 6.6.1--6.6.4}; \citeproc{ref-Fulk2018}{Fulk 2018, sects 4.7, 4.13}).
 
-\paragraph{CAPR implementation}\label{capr-implementation-5}
+\paragraph{CAPR implementation}\label{capr-implementation-6}
 
 CAPR makes that distinction explicit by keeping two adjacent rules.
 \emph{OEIUmlaut} handles the broad fronting and raising effects
@@ -1471,7 +1583,7 @@ real later break before the current runner boundary at SC087, and that
 negative result must not be rewritten as a positive claim that SC056
 must precede SC087.
 
-\paragraph{Interpretation}\label{interpretation-5}
+\paragraph{Interpretation}\label{interpretation-6}
 
 This is the first central Old English vowel-change report in the
 production layer. Its value is not merely that i-umlaut is famous, but
@@ -1483,7 +1595,7 @@ case where the book can show how CAPR's local evidence sharpens a
 standard historical chapter without reducing the whole chapter to a
 handful of witness forms.
 
-\paragraph{Remaining cautions}\label{remaining-cautions-5}
+\paragraph{Remaining cautions}\label{remaining-cautions-6}
 
 SC056 is still narrower and more dialect-specific than SC055, so the
 prose should not grant it equal historical weight. More broadly, the
@@ -1512,7 +1624,7 @@ The pairing is deliberately provisional: SC057 has one-sided evidence
 that points back toward the palatalization/fronting region, while SC058
 is still boundary-limited residual material.
 
-\paragraph{Current evidence}\label{current-evidence-10}
+\paragraph{Current evidence}\label{current-evidence-9}
 
 Chronology cards and live implementations exist for both rules. SC057
 has a positive earlier boundary across SC052 OE Velar Palatalization,
@@ -1535,7 +1647,7 @@ result bounded by the current search space. SC058, by contrast, is
 negative and boundary-limited on both sides, so it does not yet define a
 positive historical adjacency of its own.
 
-\paragraph{Status}\label{status-10}
+\paragraph{Status}\label{status-9}
 
 This is a scaffold placeholder, not finished book prose. SC057 should be
 reconsidered when SC049-SC052 receives a dedicated structural review,
@@ -1554,7 +1666,7 @@ This scaffold unit groups \texttt{SC059}, \texttt{SC060}, and
 bridge. It keeps the late corridor visible without claiming that the
 chapter-level prose has already been settled.
 
-\paragraph{Current evidence}\label{current-evidence-11}
+\paragraph{Current evidence}\label{current-evidence-10}
 
 All three member changes already have chronology cards and FOMA
 implementations. Dedicated literature dossiers have not yet been
@@ -1573,7 +1685,7 @@ The cards behave like a compact bridge rather than a loose miscellany,
 but they still mix local and contextual evidence. That is enough for
 scaffold assembly, not yet for finished prose.
 
-\paragraph{Status}\label{status-11}
+\paragraph{Status}\label{status-10}
 
 This is a scaffold placeholder, not finished book prose. It still needs
 literature work and a human decision on whether the eventual chapter
@@ -1598,7 +1710,7 @@ named law (\citeproc{ref-Luick1914}{Luick 1914-\/-1940, sects 304--308};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.8.1,
 6.8.4}; \citeproc{ref-Fulk2018}{Fulk 2018, sect. 5.6}).
 
-\paragraph{Source tradition}\label{source-tradition-6}
+\paragraph{Source tradition}\label{source-tradition-7}
 
 Luick gives the clearest older formulation: final \texttt{i/u} disappear
 after heavy syllables and in the relevant trisyllabic environments, but
@@ -1615,7 +1727,7 @@ Fulk adds a useful caution about inflectional exceptions such as Mercian
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sects 6.8.1,
 6.8.4}; \citeproc{ref-Fulk2018}{Fulk 2018, sect. 5.6}).
 
-\paragraph{CAPR implementation}\label{capr-implementation-6}
+\paragraph{CAPR implementation}\label{capr-implementation-7}
 
 CAPR makes the rule far more explicit than a handbook formulation. The
 live implementation separates heavy disyllabic branches, long- and
@@ -1653,7 +1765,7 @@ shortening moves ahead of apocope, the derivation yields fyrht instead.
 Taken together, the evidence shows that SC063 is late, but not final,
 inside the weak-tail sequence.
 
-\paragraph{Interpretation}\label{interpretation-6}
+\paragraph{Interpretation}\label{interpretation-7}
 
 For book purposes, SC063 should be presented as a decisive but not
 terminal late weak-tail reduction. The literature strongly supports the
@@ -1666,7 +1778,7 @@ therefore keep the core claim central and treat the detailed formal
 branches as model-level elaboration rather than as separate historical
 laws.
 
-\paragraph{Remaining cautions}\label{remaining-cautions-6}
+\paragraph{Remaining cautions}\label{remaining-cautions-7}
 
 The line between apocope and medial syncope still needs careful handling
 in the prose, because the neighboring processes are related but not
@@ -1694,7 +1806,7 @@ immediate post-apocope tail. The grouping keeps the local aftermath of
 \texttt{SC063} visible without forcing two isolated finished chapters
 too early.
 
-\paragraph{Current evidence}\label{current-evidence-12}
+\paragraph{Current evidence}\label{current-evidence-11}
 
 Both member changes already have chronology cards and FOMA
 implementations. The production layer does not yet have a dedicated
@@ -1714,7 +1826,7 @@ The pair is adjacent and meaningful together, but the later member still
 has boundary-limited features that argue against treating each change as
 already ready for polished standalone prose.
 
-\paragraph{Status}\label{status-12}
+\paragraph{Status}\label{status-11}
 
 This is a scaffold placeholder, not finished book prose. It still needs
 literature work and a human decision on whether the eventual book keeps
@@ -1742,7 +1854,7 @@ unevenly (\citeproc{ref-Campbell1959}{Campbell 1959, sects 345--349,
 1914-\/-1940, sects 304--307}; \citeproc{ref-SieversBrunner1965}{Sievers
 1965, sects 157--159}).
 
-\paragraph{Source tradition}\label{source-tradition-7}
+\paragraph{Source tradition}\label{source-tradition-8}
 
 Campbell gives the most compact Old English statement of the main
 historical core: medial unaccented vowels are lost after short
@@ -1769,7 +1881,7 @@ i-umlaut, but it is better used as background for timing than as the
 main descriptive source for the corridor itself
 (\citeproc{ref-Fulk2018}{Fulk 2018, sect. 5.6}).
 
-\paragraph{CAPR implementation}\label{capr-implementation-7}
+\paragraph{CAPR implementation}\label{capr-implementation-8}
 
 CAPR sharpens this broader historical sequence into three adjacent
 rules. SC066 deletes medial \emph{i} before \emph{l} after a stressed
@@ -1807,7 +1919,7 @@ in its own right. The clearest positive local claim is therefore
 \texttt{SC066\ \textless{}\ SC068}, not a perfect three-link reciprocal
 chain.
 
-\paragraph{Interpretation}\label{interpretation-7}
+\paragraph{Interpretation}\label{interpretation-8}
 
 For book purposes, this report shows that late weak-tail reduction is
 not only a story of vowel loss. Once syncope removes medial material,
@@ -1820,7 +1932,7 @@ segmented internal articulation so the local ordering can be tested. The
 chapter should make that distinction explicit rather than blurring
 literature-backed phonology and model-specific segmentation.
 
-\paragraph{Remaining cautions}\label{remaining-cautions-7}
+\paragraph{Remaining cautions}\label{remaining-cautions-8}
 
 The narrative should not give all three rules equal weight. SC067 may
 remain no more than a bridge note inside the corridor, and SC068 is
@@ -1847,7 +1959,7 @@ unstressed-tail cluster. The section is intentionally broad: its job is
 to make this large later region visible in the assembled half before its
 internal chaptering is stable.
 
-\paragraph{Current evidence}\label{current-evidence-13}
+\paragraph{Current evidence}\label{current-evidence-12}
 
 Chronology cards and FOMA implementations exist for all nine member
 changes. No dedicated literature dossiers have yet been promoted for the
@@ -1867,7 +1979,7 @@ This band mixes broad/far links, local breaks, and negative cards. The
 scaffold therefore favors visibility over premature subdivision and
 leaves the finer internal chaptering for later human review.
 
-\paragraph{Status}\label{status-13}
+\paragraph{Status}\label{status-12}
 
 This is a scaffold placeholder, not finished book prose. It still needs
 both literature work and a major human judgement pass on where this
@@ -1887,7 +1999,7 @@ and metathesis cluster. It gives the assembled sound-change half a
 visible terminal section without pretending that every closing card
 already has its own mature chapter.
 
-\paragraph{Current evidence}\label{current-evidence-14}
+\paragraph{Current evidence}\label{current-evidence-13}
 
 All eight member changes already have chronology cards and FOMA
 implementations. Dedicated literature dossiers have not yet been
@@ -1907,7 +2019,7 @@ neat sequence of equally mature standalone sections. That is why the
 current assembled half keeps them together as one terminal scaffold
 cluster.
 
-\paragraph{Status}\label{status-14}
+\paragraph{Status}\label{status-13}
 
 This is a scaffold placeholder, not finished book prose. It still needs
 literature work and a human judgement pass on whether the closing region
@@ -1916,6 +2028,11 @@ metathesis subchapters.
 
 \protect\phantomsection\label{refs}
 \begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-Adamczyk2001}
+Adamczyk, Elżbieta. 2001. {`Old {English} Reflexes of {Sievers'} Law'}.
+\emph{Studia Anglica Posnaniensia: An International Review of English
+Studies} 36: 61--72. \url{http://hdl.handle.net/10593/18335}.
+
 \bibitem[\citeproctext]{ref-Bulbring1902}
 Bülbring, Karl D. 1902. \emph{Altenglisches Elementarbuch}. Winter.
 

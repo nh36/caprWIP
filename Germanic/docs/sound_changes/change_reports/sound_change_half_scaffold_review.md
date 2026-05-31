@@ -4,13 +4,21 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 23
-assembled units: one pilot production report (`016-020`), seven full
-production reports (`026-027`, `031-034`, `043`, `051`, `055-056`, `063`, and
-`066-068`), and 15 remaining scaffold placeholders. The new `SC031-SC034`
-promotion adds a cautious four-change corridor chapter with a strong local core
-and weaker flanks, while most other units remain intentionally grouped
-placeholders whose main job is to keep the whole half visible without claiming
-that every remaining chapter boundary is already settled.
+assembled units: one pilot production report (`016-020`), eight full
+production reports (`026-027`, `031-034`, `043`, `051`, `052`, `055-056`,
+`063`, and `066-068`), and 14 remaining scaffold placeholders. The new `SC052`
+promotion adds a standalone chronological hinge report between the existing
+`SC051` and `SC055-SC056` chapters, while most other units remain intentionally
+grouped placeholders whose main job is to keep the whole half visible without
+claiming that every remaining chapter boundary is already settled.
+
+## Book architecture note
+
+The final sound-change half should discuss every ordinary FST sound change
+explicitly, but the assembled order should remain strictly chronological.
+Grouped production reports may cover adjacent changes only. Non-adjacent
+changes should be handled by cross-reference, not by a single out-of-order
+production unit.
 
 ## Structural review of current units
 
@@ -27,9 +35,9 @@ that every remaining chapter boundary is already settled.
 | 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
-| 049-050 | Onset allophony and Sievers-law bridge | SC049; SC050 | scaffold | yes | maybe | low | The old four-change scaffold has now been split: SC049 remains residual bridge material, while SC050 has a real later edge across SC052 but still lacks a tested earlier historical boundary. |
+| 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | scaffold | yes | maybe | low | The old four-change scaffold has now been split: SC049 remains residual bridge material, while SC050 has a real later edge across SC052 but still lacks a tested earlier historical boundary and should remain in chronological place rather than being pulled into a non-adjacent paired report. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
-| 052 | Velar palatalization hinge | SC052 | scaffold | maybe | likely | medium | Literature and book dossiers now exist. SC052 has real local evidence on both sides and now awaits human decision on standalone hinge report versus narrower `SC050-SC052` paired shape. |
+| 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
 | 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Small bridge scaffold now left behind by the SC055-SC056 promotion: `SC053` remains boundary-limited, while `SC054` keeps the narrow `sea`-based evidence visible without becoming the next main target. |
 | 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
@@ -42,19 +50,18 @@ that every remaining chapter boundary is already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC052 or a later SC050-SC052 unit** — literature and book dossiers now exist, so the next step is human review on chapter shape: standalone velar-palatalization hinge or narrower feeder-plus-hinge pair.
-2. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
+1. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
+2. **SC049-SC050 Onset allophony and Sievers-law bridge** — a possible later scaffold-to-prose target, but SC050 should remain in chronological order rather than being pulled out as a non-adjacent partner for SC052.
 3. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
-4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and palatalization-side work remains more mature.
+4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and bridge work remains more mature.
 
 ## Recommended immediate next step
 
-With `SC052` now dossier-prepared, the next sensible step is a human chapter-
-shape review rather than immediate promotion. The key question is whether it
-should later stand as a standalone velar-palatalization hinge or pair more
-tightly with `SC050` as a feeder-plus-hinge unit. `SC064-SC065` remains the
-other active human chapter-shape decision, but it should still wait on the
-paired-note versus `SC064`-only versus residual-`SC065` choice. `SC053-SC054`
-remains a later bridge-note candidate, and the post-brightening `SC046-SC048`
-/ `SC042`-`SC045` region should wait for additional source review rather than
-immediate promotion.
+With `SC052` now promoted as a standalone chronological hinge report, the next
+sensible step is `SC064-SC065` human chapter-shape review rather than another
+automatic promotion. That unit still needs the paired-note versus `SC064`-only
+versus residual-`SC065` decision. After that, `SC049-SC050` and `SC053-SC054`
+remain the most plausible small bridge targets, but any future promotion should
+preserve strict chronology rather than forming non-adjacent composite units.
+The post-brightening `SC046-SC048` / `SC042`-`SC045` region should still wait
+for additional source review rather than immediate promotion.

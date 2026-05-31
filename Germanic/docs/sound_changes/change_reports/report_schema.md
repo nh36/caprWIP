@@ -26,6 +26,13 @@ Documented manifest status values are `full`, `pilot`, `scaffold`,
 `needs_literature`, `needs_human_review`, and `grouped_elsewhere`. The current
 assembly includes only `full`, `pilot`, and `scaffold`.
 
+## Chronological assembly rule
+
+The assembled sound-change half should remain strictly chronological. Grouped
+production reports may cover adjacent changes only. If non-adjacent changes
+need to be related in prose, handle that relation by cross-reference rather
+than by a single out-of-order production unit.
+
 ## Finished production reports
 
 Each finished pilot/full report should be concise, book-facing Markdown
