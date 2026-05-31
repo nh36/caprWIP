@@ -29,7 +29,7 @@ that every remaining chapter boundary is already settled.
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
 | 049-050 | Onset allophony and Sievers-law bridge | SC049; SC050 | scaffold | yes | maybe | low | The old four-change scaffold has now been split: SC049 remains residual bridge material, while SC050 has a real later edge across SC052 but still lacks a tested earlier historical boundary. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
-| 052 | Velar palatalization hinge | SC052 | scaffold | maybe | likely | medium | SC052 is now isolated as its own hinge scaffold between SC050 and the promoted umlaut core; it remains a real later candidate, but its best long-term chapter shape is still unresolved. |
+| 052 | Velar palatalization hinge | SC052 | scaffold | maybe | likely | medium | Literature and book dossiers now exist. SC052 has real local evidence on both sides and now awaits human decision on standalone hinge report versus narrower `SC050-SC052` paired shape. |
 | 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Small bridge scaffold now left behind by the SC055-SC056 promotion: `SC053` remains boundary-limited, while `SC054` keeps the narrow `sea`-based evidence visible without becoming the next main target. |
 | 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
@@ -42,20 +42,19 @@ that every remaining chapter boundary is already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
-2. **SC052 or a later SC050-SC052 unit** — the palatalization region is now narrower and clearer after the SC051 extraction, but the right long-term chapter shape still needs further structural review.
+1. **SC052 or a later SC050-SC052 unit** — literature and book dossiers now exist, so the next step is human review on chapter shape: standalone velar-palatalization hinge or narrower feeder-plus-hinge pair.
+2. **SC064-SC065 Post-apocope tail human chapter-shape review** — literature and book dossiers now exist, but the pair still needs human review before any promotion decision: cautious paired note, narrower `SC064` bridge, or residual `SC065` context.
 3. **SC053-SC054 Pre-umlaut bridge and W-loss** — possibly promotable later as a small bridge note, but not as the next main target.
 4. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — possible later source-review targets, but not immediate promotion candidates while the post-apocope and palatalization-side work remains more mature.
 
 ## Recommended immediate next step
 
-With `SC064-SC065` now dossier-prepared, the next sensible step is a human
-chapter-shape review rather than immediate promotion. The key question is
-whether the unit should later become a cautious paired post-apocope note,
-whether `SC064` should narrow to a bridge note of its own, or whether `SC065`
-should remain residual context leading into the promoted `SC066-SC068`
-corridor. After that, the palatalization/fronting region still needs further
-structural review to decide whether `SC052` should stand alone or be paired
-more tightly with `SC050`. `SC053-SC054` remains a later bridge-note
-candidate, and the post-brightening `SC046-SC048` / `SC042`-`SC045` region
-should wait for additional source review rather than immediate promotion.
+With `SC052` now dossier-prepared, the next sensible step is a human chapter-
+shape review rather than immediate promotion. The key question is whether it
+should later stand as a standalone velar-palatalization hinge or pair more
+tightly with `SC050` as a feeder-plus-hinge unit. `SC064-SC065` remains the
+other active human chapter-shape decision, but it should still wait on the
+paired-note versus `SC064`-only versus residual-`SC065` choice. `SC053-SC054`
+remains a later bridge-note candidate, and the post-brightening `SC046-SC048`
+/ `SC042`-`SC045` region should wait for additional source review rather than
+immediate promotion.
