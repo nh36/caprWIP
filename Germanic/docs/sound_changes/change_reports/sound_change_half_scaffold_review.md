@@ -27,7 +27,7 @@ whole half visible without claiming that chapter boundaries are already settled.
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
 | 049-052 | Onset allophony and palatalization cluster | SC049; SC050; SC051; SC052 | scaffold | yes | likely | medium | Now one of the clearer later candidates if a palatalization-focused unit can be separated cleanly from the current grouped scaffold. |
-| 053-058 | Umlaut transition and negative boundaries | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | maybe | likely | medium | Important transition zone, but the current cluster probably needs internal splitting before promotion. |
+| 053-058 | Umlaut transition and negative boundaries | SC053; SC054; SC055; SC056; SC057; SC058 | scaffold | no | likely | medium | Split review now recommends preparing `SC055-SC056` first, leaving `SC053` and `SC058` as residual scaffold material, treating `SC054` as a possible bridge note, and reconsidering `SC057` with the palatalization cluster. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | scaffold | yes | maybe | low | Reasonable paired tail scaffold, but not yet more source-ready than `SC063` itself. |
@@ -37,17 +37,17 @@ whole half visible without claiming that chapter boundaries are already settled.
 
 ## Recommended next promotion candidates
 
-1. **SC053-SC058 Umlaut transition zone** — still the strongest remaining larger candidate, but only after internal splitting clarifies which part should actually become a chapter.
-2. **SC049-SC052 Onset allophony and palatalization cluster** — a plausible next target if a palatalization-focused unit can be separated cleanly from the present grouped scaffold.
+1. **SC055-SC056 Umlaut core and right-edge follower** — now the clearest preparation candidate inside the old `SC053-SC058` scaffold, but it still needs literature and book dossiers before any promotion decision.
+2. **SC049-SC052 Onset allophony and palatalization cluster** — remains a plausible next target, especially because `SC057` may eventually need to be reconsidered alongside that region.
 3. **SC031-SC034 West Saxon diphthong chain** — potentially promotable only after dedicated literature work clarifies whether the present four-change grouping is the right chapter shape.
 4. **SC064-SC065 Post-apocope tail** — possibly promotable as a short paired post-apocope unit, but only after human review confirms that it should stand apart from the newly promoted SC066-SC068 corridor.
 
 ## Recommended immediate next step
 
-The next sensible step is to choose the next dossier-preparation or promotion
-target among the remaining scaffold units. The strongest current candidates are
-`SC053-SC058` after internal splitting, `SC049-SC052` if a cleaner
-palatalization-focused unit emerges, `SC031-SC034` after dedicated literature
-work, or possibly `SC064-SC065` as a short paired post-apocope unit after human
-review. Further polishing of `016-020` is not the immediate next task unless a
-blocking assembly problem appears.
+The next sensible step is to prepare literature and book dossiers for
+`SC055-SC056` as the strongest immediate promotion candidate exposed by the new
+split review. The remaining nearby members should stay scaffolded for now:
+`SC053` and `SC058` as residual boundary-limited notes, `SC054` as a possible
+later bridge note, and `SC057` for reconsideration when `SC049-SC052` receives
+its own structural review. Further polishing of `016-020` is not the immediate
+next task unless a blocking assembly problem appears.
