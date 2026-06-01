@@ -7,11 +7,10 @@ half rather than as a single pilot chapter. The current scaffold has 23
 assembled units: one pilot production report (`016-020`), eleven full
 production reports (`026-027`, `031-034`, `043`, `049-050`, `051`, `052`,
 `053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 11 remaining
-scaffold placeholders. The new `SC053-SC054` promotion adds a short adjacent
-bridge report between the promoted SC052 hinge and the promoted umlaut core,
-while most other units remain intentionally grouped placeholders whose main job
-is to keep the whole half visible without claiming that every remaining chapter
-boundary is already settled.
+scaffold placeholders. The new post-brightening regional review does not change
+those counts; it records that the `SC042-SC048` region is now dossier-prepared
+for a human chapter-shape decision, with likely future adjacent production
+units narrower than the current scaffold bands.
 
 ## Book architecture note
 
@@ -33,9 +32,9 @@ production unit.
 | 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | full | no | maybe | defer | Now promoted as a cautious four-change corridor report: `SC031`/`SC034` are the local reciprocal core, while `SC032`/`SC033` remain subordinate flank material. Future book architecture could still narrow the chapter later if needed. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Best kept as a derivational bridge for now because the unit is more functional than chapter-ready. |
 | 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | maybe | low | Transitional bridge that is helpful in the assembled half but not yet an obvious promotion candidate. |
-| 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | maybe | low | Context group is valuable around `SC043`, but should stay grouped until the brightening-centered material is reviewed first. |
+| 042-044-045 | Brightening context and breaking corridor | SC042; SC044; SC045 | scaffold | yes | likely | low | Regional review now treats this as scaffold-only context around promoted `SC043`: `SC042` looks like a narrow `rest` note, while `SC044-SC045` is the real adjacent promotion candidate. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
-| 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Short post-brightening bridge is visible enough for now, but not as source-ready as the singleton candidates. |
+| 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Regional review now marks this corridor dossier-prepared. `SC046` is the source-backed restoration hinge, while `SC047-SC048` is the tighter reciprocal nasal-tail core, so human review still has to decide corridor versus later split. |
 | 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | full | no | maybe | defer | Now promoted as a short adjacent chronological bridge report. SC049 is kept explicit as the narrow allophonic and compound-specific member, while SC050 is treated as the historically stronger feeder into SC052 without creating a non-contiguous paired chapter. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
 | 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
@@ -51,15 +50,17 @@ production unit.
 
 ## Recommended next promotion candidates
 
-1. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — the clearest next source-review preparation targets now that `SC053-SC054` is promoted.
-2. **SC014-SC015 or SC035-SC037** — possible future compact bridge work, but still less source-ready than the post-brightening targets above.
-3. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
+1. **SC044-SC045 adjacent breaking/fricative pair** — strongest near-term promotion candidate after the new regional review; keep `SC042` as a separate context note and treat `SC060` only as a cross-reference.
+2. **SC046-SC048 cautious corridor or later SC047-SC048 nasal-tail pair** — next chapter-shape decision from the same review, with `SC046` source-backed but `SC047-SC048` the tighter reciprocal core.
+3. **SC014-SC015 or SC035-SC037** — possible future compact bridge work, but still less source-ready than the post-brightening targets above.
+4. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
 
 ## Recommended immediate next step
 
-With `SC053-SC054` now promoted as a short adjacent bridge report, the next
-most sensible work is source-review preparation for the post-brightening
-`SC046-SC048` / `SC042`-`SC045` region rather than immediate further
-promotion, without breaking the strict assembly rule. The larger late-tail and
-closing clusters remain later subdivision work rather than immediate promotion
-candidates.
+With the post-brightening regional review now drafted, the next sensible work
+is a human chapter-shape decision inside `SC042-SC048` rather than immediate
+broad promotion. The most likely next substantive production target is
+`SC044-SC045`; after that, the main unresolved choice is whether `SC046-SC048`
+stays a cautious corridor or later splits around a tighter `SC047-SC048`
+nasal-tail pair. The larger late-tail and closing clusters remain later
+subdivision work rather than immediate promotion candidates.

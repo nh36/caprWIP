@@ -25,9 +25,9 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
-| 042-044-045 | SC042; SC044; SC045 | scaffold | mixed local context around SC043 | no dedicated dossier yet | grouped context scaffold |
+| 042-044-045 | SC042; SC044; SC045 | scaffold | regional review: SC042 is a narrow `rest`-based context note while SC044-SC045 is the strong adjacent local pair around promoted SC043 | regional review and book dossiers drafted | keep scaffold only; do not promote unchanged; later review SC042 singleton/context note versus SC044-SC045 adjacent report |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
-| 046-048 | SC046; SC047; SC048 | scaffold | mixed broad and local | no dedicated dossier yet | grouped short corridor scaffold |
+| 046-048 | SC046; SC047; SC048 | scaffold | regional review: SC046 is the source-backed restoration hinge, while SC047-SC048 forms the broad reciprocal nasal-tail core | regional review and book dossiers drafted | keep scaffold corridor pending human review of cautious SC046-SC048 corridor versus later SC046 plus SC047-SC048 split |
 | 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
