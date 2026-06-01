@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 33.
-3. Number covered by scaffold placeholders: 37.
+2. Number covered by pilot/full production reports: 35.
+3. Number covered by scaffold placeholders: 35.
 4. Number grouped into multi-change units: 65.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 37.
+6. Number needing human judgement: 35.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -17,8 +17,8 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 
 | Unit | Change IDs | Status | Chronology status | Literature status | Recommended treatment |
 | --- | --- | --- | --- | --- | --- |
+| 014-015 | SC014; SC015 | full | short asymmetric opening bridge: SC014 remains negative and boundary-limited; SC015 is the stronger member with broad/far `SC015 < SC036` via `world`; both earlier sides are runner-bounded at `PWGmcChanges` | literature and book dossiers drafted | keep as a short cautious full opening prelude; SC014 stays brief, SC015 carries the prose, and the SC016-SC020 / SC036 links remain cross-references only |
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
-| 014-015 | SC014; SC015 | scaffold | opening prelude with negative SC014 and broad/far SC015 (`SC015 < SC036` via `world`); both earlier sides runner-bounded at `PWGmcChanges` | literature and book dossiers drafted; pending chapter-shape review | keep scaffolded for now; likely either a short cautious opening bridge or a more asymmetrical SC014-note / SC015-led treatment |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |

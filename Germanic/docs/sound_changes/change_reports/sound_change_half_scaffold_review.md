@@ -4,13 +4,15 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 24
-assembled units: one pilot production report (`016-020`), fourteen full
+assembled units: one pilot production report (`016-020`), fifteen full
 production reports (`026-027`, `031-034`, `035-037`, `043`, `044-045`,
 `046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`,
-and `066-068`), and 9 remaining scaffold placeholders. The earlier mid-half
-sequence is now more stable as well: the promoted `SC031-SC034` diphthong chain
-now feeds directly into the promoted `SC035-SC037` derivational bridge before
-the remaining `SC039-SC041` scaffold.
+and `066-068`, plus the newly promoted `014-015` opening prelude), and 8
+remaining scaffold placeholders. The opening of the half is now more stable as
+well: the promoted `SC014-SC015` prelude now feeds directly into the pilot
+`SC016-SC020` corridor, while the promoted `SC031-SC034` diphthong chain still
+feeds directly into the promoted `SC035-SC037` derivational bridge before the
+remaining `SC039-SC041` scaffold.
 
 ## Book architecture note
 
@@ -24,8 +26,8 @@ production unit.
 
 | UNIT_ID | TITLE | CHANGE_IDS | CURRENT_STATUS | KEEP_AS_GROUP_FOR_NOW | SPLIT_LATER? | PROMOTION_PRIORITY | REASON |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 014-015 | Opening vowel prelude | SC014; SC015 | full | no | maybe | defer | Now promoted as a short cautious opening bridge. SC014 remains the brief boundary-limited opening note, while SC015 is the stronger `world`-anchored member and carries most of the prose. |
 | 016-020 | Early vocalic/final corridor | SC016; SC017; SC019; SC020 | pilot | yes | maybe | defer | Already the only pilot production report; keep as the baseline corridor while other units catch up. |
-| 014-015 | Opening vowel prelude | SC014; SC015 | scaffold | yes | maybe | medium | Now dossier-prepared. SC014 remains the boundary-limited opening note, while SC015 is the stronger `world`-anchored member; the next decision is chapter shape rather than basic source collection. |
 | 018-025 | Early Northwest Germanic unstressed and boundary-limited zone | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | yes | likely | defer | Intentionally broad underdetermination zone with many negative or boundary-limited cards. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
@@ -49,17 +51,17 @@ production unit.
 | 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
 | 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
 
-## Recommended next promotion candidates
+## Recommended next dossier-preparation targets
 
-1. **SC014-SC015** — now dossier-prepared and still the clearest compact earlier scaffold, but it needs human chapter-shape review before any promotion.
-2. **SC039-SC041** — now the nearest unresolved bridge to the right of the newly promoted `SC035-SC037` report, but still less source-ready than `SC014-SC015`.
-3. **Larger late-tail and closing clusters, plus secondary bridges such as `028-030`** — still later work once the smaller source-ready units are settled.
+1. **SC039-SC041** — now the clearest next dossier-preparation target. It has live local bridge pressure (`SC039 < SC040`) and sits immediately to the right of the newly stabilized `SC031-SC037` region.
+2. **SC028-SC030** — still plausible, but weaker as the immediate next source pass because `SC028` remains a more obviously negative/boundary-limited opening flank than `SC039`.
+3. **Larger late-tail and closing clusters** — still later work once the smaller bridge-sized units are better sourced and chaptered.
 
 ## Recommended immediate next step
 
-With `SC014-SC015` now dossier-prepared, the next immediate decision is human
-chapter-shape review: keep it as a short cautious opening bridge, or treat it
-more asymmetrically with SC014 as a very brief note and SC015 carrying the
-prose. If that review does not lead directly to promotion, `SC039-SC041`
-remains the next likely source-preparation target. The late-tail and closing
-clusters still need later subdivision rather than immediate promotion.
+With `SC014-SC015` now promoted as a short opening prelude, the next likely work
+is not another immediate promotion. The better next move is dossier preparation
+for `SC039-SC041`, with `SC028-SC030` as the secondary comparison target if a
+new source pass unexpectedly makes the earlier fronting entry look more chapter-
+ready than the medial-lowering bridge. The late-tail and closing clusters still
+need later subdivision rather than immediate promotion.
