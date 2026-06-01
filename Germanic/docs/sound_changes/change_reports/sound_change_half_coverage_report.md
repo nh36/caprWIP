@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 37.
-3. Number covered by scaffold placeholders: 33.
-4. Number grouped into multi-change units: 64.
+2. Number covered by pilot/full production reports: 39.
+3. Number covered by scaffold placeholders: 31.
+4. Number grouped into multi-change units: 63.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 33.
+6. Number needing human judgement: 31.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -21,7 +21,8 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
-| 028-030 | SC028; SC029; SC030 | scaffold | boundary-limited SC028 preface plus reciprocal `SC029 < SC030` `hay` / `strew` core, with SC030 handing forward to SC032 | literature and book dossiers drafted | keep scaffolded for now; next human choice is cautious grouped entry bridge versus later split into SC028 note plus SC029-SC030 core |
+| 028 | SC028 | scaffold | historically legible preconsonantal `x`-loss note with no positive first-break boundary on either side; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break | literature and book dossiers drafted | keep as a singleton scaffold note immediately before the promoted SC029-SC030 core; do not merge it backward into SC026-SC027 or forward into SC029-SC030 |
+| 029-030 | SC029; SC030 | full | tight local glide/fronting core: reciprocal `SC029 < SC030` via `hay` / `strew`, with SC029's earlier side runner-bounded at `PWGmcChanges` and SC030 handing forward to SC032 through a broader no-output failure set | literature and book dossiers drafted | promote as a narrow adjacent full report; keep SC028 as a separate left note and treat SC032 as a rightward cross-reference rather than chapter architecture |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |

@@ -52,7 +52,7 @@ In the current assembled half, SC026-SC027 sits between the early unstressed / b
 
 1. On the left, `SC025` is nearby but does not currently form part of the same chapter logic.
 2. In the middle, `SC026` and `SC027` form an unusually tight local pair.
-3. On the right, `SC028-SC030` begins the next bridge toward preconsonantal `x` loss and early OE fronting material.
+3. On the right, scaffold `SC028` and the promoted `SC029-SC030` core now open the next seam toward preconsonantal `x` loss and early OE fronting material.
 
 That right-hand neighborhood matters especially for `fist`: the reciprocal failure set is not just about the nasal-loss corridor in the abstract, but about preserving the right input for later developments as the word moves farther down the cascade.
 

@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 37.
-- Covered by scaffold placeholders: 33.
-- Grouped into multi-change units: 64 changes across 19 units.
+- Covered by pilot/full production reports: 39.
+- Covered by scaffold placeholders: 31.
+- Grouped into multi-change units: 63 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 33.
+- Still needing human judgement or promotion decisions: 31.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -21,7 +21,8 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
-| 028-030 | SC028; SC029; SC030 | scaffold | boundary-limited SC028 preface plus reciprocal `SC029 < SC030` `hay` / `strew` core, with SC030 handing forward to SC032 | literature and book dossiers drafted | keep scaffolded for now; next human choice is cautious grouped entry bridge versus later split into SC028 note plus SC029-SC030 core |
+| 028 | SC028 | scaffold | historically legible preconsonantal `x`-loss note with no positive first-break boundary on either side; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break | literature and book dossiers drafted | keep as a singleton scaffold note immediately before the promoted SC029-SC030 core; do not merge it backward into SC026-SC027 or forward into SC029-SC030 |
+| 029-030 | SC029; SC030 | full | tight local glide/fronting core: reciprocal `SC029 < SC030` via `hay` / `strew`, with SC029's earlier side runner-bounded at `PWGmcChanges` and SC030 handing forward to SC032 through a broader no-output failure set | literature and book dossiers drafted | promote as a narrow adjacent full report; keep SC028 as a separate left note and treat SC032 as a rightward cross-reference rather than chapter architecture |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
@@ -475,39 +476,167 @@ Finally, fist is a valuable chronology example, but it is a multi-stage
 derivation and should not be used as if this corridor alone explained the whole
 Old English output.
 
-## Glide and fronting entry
+## Preconsonantal x-loss note
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit groups `SC028`, `SC029`, and `SC030` as the entry into the
-early Old English glide and fronting zone. It is meant to show the bridge into
-that region, not to settle the final chapter boundaries already.
+SC028 *NWGmcPreconsonantalXLoss* remains visible here as a short scaffold note
+rather than as part of the promoted `SC029-SC030` glide/fronting core. That
+split is deliberate. SC028 is historically legible as preconsonantal *x*-loss,
+and the dossier work shows enough background in Campbell and Ringe and Taylor to
+keep it explicit in the book, but its chronology card is currently negative on
+both sides.
 
 #### Current evidence
 
-All three member changes have chronology cards and FOMA implementations. No
-dedicated literature dossier has yet been promoted for the grouped unit, so the
-assembly preserves it as a concise placeholder.
+The rule is source-backed as a historical type, yet current order testing does
+not identify any positive historical first-break boundary for it. On the
+earlier side, the search stops at bundled *PWGmcChanges*; that is a runner
+limitation rather than a positive historical boundary. On the later side, the
+search reaches the current SC087 boundary without a real break; that is also a
+no-break-before-boundary result rather than a positive chronology claim.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 28-30, from *NWGmcPreconsonantalXLoss*
-through *OEAuFronting*. It sits between the nasal spirant corridor and the
-later West Saxon diphthong chain.
+SC028 now stands as a singleton scaffold note immediately after the promoted
+`SC026-SC027` nasal spirant corridor and immediately before the promoted
+`SC029-SC030` glide/fronting core. It should remain a boundary/context note in
+that position rather than being merged backward into `SC026-SC027` or forward
+into `SC029-SC030`.
 
 #### Order evidence
 
-`SC028` still behaves like a weaker boundary preface, while `SC029` and `SC030`
-already participate in local glide/fronting interactions. The placeholder
-therefore records an entry corridor with one unsettled leading edge.
+Current first-break evidence does not yet place SC028 against any positive
+historical boundary. The earlier search can move the rule back only to the
+runner limit at bundled *PWGmcChanges*, and the later search can move it forward
+through the current searchable corridor without finding a real break before the
+SC087 boundary. The note therefore records a historically intelligible rule with
+boundary-limited chronology, not a promotable local chapter center.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature work and human review of whether `SC028` ultimately remains attached
-to this section or is better treated as a boundary note beside it.
+This is a scaffold placeholder, not finished book prose. The existing
+literature and book dossiers now make SC028's role clear enough to keep it
+visible as its own preconsonantal *x*-loss note while leaving any future
+promotion to a later decision about whether this boundary-limited context ever
+needs more than short standalone prose.
+
+## Awj glide and au-fronting core
+
+### Sound-change report
+
+#### Historical formulation
+
+`SC029-SC030` is promoted here as a **compact adjacent glide/fronting core
+report**, not as a claim that the handbooks present one named two-change chapter
+with exactly these CAPR labels. The promotion is justified because the local
+source support and the ordinary chronology align most strongly on this pair.
+SC029 OE Awj Glide Formation is the left member: it belongs to the early
+awj / auj developments behind hay and strew, but its earlier side
+remains runner-bounded. SC030 OE Au Fronting is the local center and right
+member: it reciprocates the hay / strew evidence on its left and then hands
+the derivations forward into the later diphthongal region on its right.
+
+#### Source tradition
+
+The source tradition is unusually cooperative for this narrow pair. Campbell
+treats the auj material directly and gives forms such as `hég / hig`, ieg,
+and strégan, which are exactly the historical region that the CAPR pair is
+trying to keep explicit [@Campbell1959, §120]. Ringe and Taylor sharpen the same
+region comparatively: they argue that the Old English outcomes reflect restored
+auj sequences rather than simple persistence of older aw'w, and their
+examples include hawja > hieg and strawjaną > *Angl.* OE strégan
+[@RingeTaylor2014, §3.1.3; @RingeTaylor2014, §6.1.2]. Luick reinforces that
+this material belongs to the normal Old English diphthongal history rather than
+to a narrow lexical accident [@Luick1914, §116].
+
+That combination is enough to justify finished prose for SC029-SC030 without
+pulling SC028 in as a coequal member. The handbooks support the historical
+region well; CAPR then isolates the tight local seam inside it.
+
+#### CAPR implementation
+
+CAPR makes the local sequence explicit by keeping two adjacent rules.
+
+SC029 *OEAwjGlideFormation* handles the intermediate glide structure that turns
+the inherited awj / auj material into the form that later fronting reads.
+On its own it is still somewhat one-sided because the earlier search remains
+runner-bounded at bundled *PWGmcChanges*, but it is the indispensable left-hand
+feeder of the pair.
+
+SC030 *OEAuFronting* then fronts the relevant *au* material and delivers the
+hay / strew derivations into the broader West Saxon diphthongal region. That
+is why the pair is more than a convenient adjacency: SC029 feeds SC030, and
+SC030 is the rule that makes the local fronted outputs historically recognizable
+in book prose.
+
+#### Place in the cascade
+
+This report belongs immediately after the scaffold `SC028`
+**Preconsonantal x-loss note** and immediately before the promoted
+`SC031-SC034` **West Saxon diphthong chain**. On the left, the promoted
+`SC026-SC027` nasal spirant corridor remains a separate earlier chapter. On the
+right, SC030's later relation to `SC032` provides a genuine handoff into the
+already promoted diphthongal region, but that relation should remain a
+cross-reference rather than a reason to merge the two reports.
+
+That position matters for book architecture. The pair gives the assembled half a
+real local seam between the nasal spirant corridor and the broader diphthong
+chain while leaving SC028 visible as a separate left-edge context note.
+
+#### Order evidence
+
+The order evidence is the clearest reason to promote this pair.
+
+SC029 has one live positive historical boundary, and it is rightward. If OE Awj
+Glide Formation is delayed past SC030, PGmc xáwwją yields hauġ instead of
+expected OE hīeġ, and stráwjaną yields strauian instead of expected
+strīeġan. That makes `SC029 < SC030` a real local chronology claim. The
+earlier side is not comparable: the current runner can move SC029 safely back to
+order *13*, but the search then stops at bundled *PWGmcChanges*, so the present
+result does not identify any positive earlier historical boundary for SC029.
+
+SC030 reciprocates that local evidence on its left and adds one broader
+rightward boundary of its own. Moving SC030 earlier than SC029 again produces
+hauġ and strauian instead of hīeġ and strīeġan, so the pair forms a
+genuine reciprocal local core. Moving SC030 later than SC032 causes a broader
+set of derivations to fail outright rather than to produce competing surface
+forms: believe, bow, bread, dream, and flea all collapse to no output
+when OE Au Fronting is delayed too far. That later relation is real, but it is
+best read as a rightward handoff into the next promoted region rather than as a
+second local reciprocal pair.
+
+Taken together, the cards support one sharp adjacent claim and one broader
+forward orientation: `SC029 < SC030 < SC032`, with only the `SC029 < SC030`
+side functioning as a tight local reciprocal corridor.
+
+#### Interpretation
+
+This promotion works because it is narrower and more honest than the old
+three-change scaffold. SC028 remains visible as the historically legible but
+chronology-negative *x*-loss preface. SC029 and SC030 carry the actual report
+because the same hay / strew material that the handbook tradition discusses
+also defines the local reciprocal boundary. And SC030's later SC032 relation
+keeps the handoff into the West Saxon diphthong chain explicit without making
+the two reports collapse into one chapter.
+
+The result is a short full report that fits the book's architecture better than
+the old grouped entry bridge. It keeps the strongest local seam explicit,
+preserves strict chronology, and leaves both the boundary-limited left note and
+the larger right-hand diphthong chain in their own chapters.
+
+#### Remaining cautions
+
+The cautions are structural as much as evidential. SC029's runner-bounded
+earlier side must not be turned into a hidden positive boundary against bundled
+*PWGmcChanges*. SC028 should remain visible to the left as a separate context
+note rather than being treated as a coequal member of this promoted report.
+SC030's later relation to SC032 is real, but its failure set must be described
+as no-output / derivational collapse rather than as a cluster of competing Old
+English surface forms. And this report should not be expanded backward into
+`SC026-SC027` or forward into `SC031-SC034`.
 
 ## West Saxon diphthong chain
 
