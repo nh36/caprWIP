@@ -72,7 +72,7 @@ level as SC036.
 
 This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
 diphthong chain** and immediately before the promoted `SC039-SC040`
-**Medial unstressed vowel core**, followed by the separate scaffold `SC041`
+**Medial unstressed vowel core**, followed by the separate promoted `SC041`
 final-loss note. That position is the main reason to promote the grouped row
 unchanged for now: it keeps a real seam in the middle of the half explicit
 without forcing three tiny chapters or a non-contiguous chapter architecture.

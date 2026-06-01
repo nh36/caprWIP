@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 39.
-- Covered by scaffold placeholders: 31.
+- Covered by pilot/full production reports: 40.
+- Covered by scaffold placeholders: 30.
 - Grouped into multi-change units: 63 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 31.
+- Still needing human judgement or promotion decisions: 30.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -26,7 +26,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
-| 041 | SC041 | scaffold | historically interpretable final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology rather than a tight adjacent local pair | literature and book dossiers drafted | keep as a singleton scaffold note for now; later prose should stay local and should not merge non-contiguously with SC020 or SC046 |
+| 041 | SC041 | full | historically real final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology and outward cross-references rather than a tight adjacent reciprocal pair | literature and book dossiers drafted | promote as a short singleton note; keep the SC020 and SC046 links as leftward/rightward cross-references and do not merge it into SC039-SC040, the pilot corridor, or SC046-SC048 |
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
@@ -838,7 +838,7 @@ level as SC036.
 
 This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
 diphthong chain** and immediately before the promoted `SC039-SC040`
-**Medial unstressed vowel core**, followed by the separate scaffold `SC041`
+**Medial unstressed vowel core**, followed by the separate promoted `SC041`
 final-loss note. That position is the main reason to promote the grouped row
 unchanged for now: it keeps a real seam in the middle of the half explicit
 without forcing three tiny chapters or a non-contiguous chapter architecture.
@@ -983,7 +983,7 @@ of this promoted unit.
 #### Place in the cascade
 
 This report belongs immediately after the promoted `SC035-SC037` **Prefix and
-compound adjustments** bridge and immediately before the scaffold `SC041`
+compound adjustments** bridge and immediately before the promoted `SC041`
 **Final bare-a loss note**. The immediate rightward neighborhood then continues
 through scaffold `SC042` into the promoted SC043 brightening pivot.
 
@@ -1049,46 +1049,110 @@ earlier `SC035-SC037` bridge.
 
 #### Historical formulation
 
-SC041 *PWGmcFinalBareALoss* remains visible here as a short scaffold note rather
-than as part of the promoted `SC039-SC040` medial-vowel core. That split is
-deliberate. SC041 is historically intelligible as an early final-vowel-loss
-stage, but its own chronology is broader than the local reciprocal widow
-evidence that now carries the promoted pair to its left.
+SC041 *PWGmcFinalBareALoss* is promoted here as a **short singleton final-loss
+note**, not as a claim that the handbooks present one isolated textbook chapter
+with exactly this CAPR label. The historical type is nevertheless real. The
+broader tradition supports early loss or erosion of final short low vowels, and
+that support is enough to justify explicit production prose for the rule even
+though its chronology is broader than the tight local widow pair that now
+carries promoted `SC039-SC040` to the left [@Campbell1959, §341;
+@RingeTaylor2014, pp. 60--61].
 
-#### Current evidence
+#### Source tradition
 
-The chronology card gives SC041 real two-sided ordinary boundaries:
-`SC020 < SC041 < SC046`. But the earlier side is broad/far rather than local,
-with a large failure set including beard, bosom, bottom, calf, and
-coat, while the later side reaches forward into the promoted SC046
-restoration corridor with forms such as craft, dale, day, hazel, and
-mast. The source-backed historical type is therefore clear, but the best book
-shape is still a modest note rather than full local chapter prose.
+The source tradition is broader than the CAPR label but still clear enough for a
+short note. Campbell treats the loss of the relevant unaccented final vowel as
+part of early Germanic and prehistoric Old English final-syllable erosion
+[@Campbell1959, §341]. Ringe and Taylor sharpen the same background
+comparatively by arguing that the loss of word-final short low vowels was
+already a Proto-West-Germanic change [@RingeTaylor2014, pp. 60--61].
+
+That source support does not make SC041 part of the promoted `SC039-SC040`
+medial-vowel core. It instead makes SC041 historically legible as the first
+explicit final-loss hinge after that core: close enough to belong here in strict
+chronological order, but broad enough that it works better as a short singleton
+report than as a coequal member of the medial-vowel chapter on its left or the
+restoration corridor on its right.
+
+#### CAPR implementation
+
+CAPR makes this broad historical background explicit through one narrow rule:
+SC041 *PWGmcFinalBareALoss* deletes a surviving bare final low vowel in word-
+final position. That implementation is intentionally sharper than the handbook
+phrasing. The grammars describe a broader region of final-vowel erosion and
+leveling; CAPR isolates one specific stage so that later interactions with
+brightening, restoration, and weak-tail developments can be tested directly.
+
+That explicitness is the main reason the rule deserves its own production note.
+It lets the book state plainly where the model turns from medial unstressed
+vowels toward final-syllable loss without pretending that every later final-vowel
+effect belongs to this one rule.
 
 #### Place in the cascade
 
-SC041 now stands as a singleton scaffold note immediately after the promoted
-`SC039-SC040` medial unstressed-vowel core and immediately before the narrow
-SC042 context note. It should not be merged non-contiguously backward into the
-`SC016-SC020` pilot corridor or forward into the promoted `SC046-SC048`
-restoration-and-nasal-tail report.
+This note belongs immediately after the promoted `SC039-SC040`
+**Medial unstressed vowel core** and immediately before the scaffold `SC042`
+**Surviving bimoric O unrounding context**. Its broader cross-references point
+outward rather than architecturally inward: leftward to the pilot
+`SC016-SC020` **Early vocalic/final corridor** through SC020, and rightward to
+the promoted `SC046-SC048` **Restoration and nasal-tail corridor** through
+SC046.
+
+That position is what makes SC041 useful as a singleton note. It closes the
+medial-lowering/final-loss seam without reopening the earlier pilot corridor or
+collapsing into the later restoration chapter.
 
 #### Order evidence
 
-SC041 must follow SC020 and precede SC046. If it moves too early, PGmc
-bárdaz yields bearda instead of expected OE beard, and a broad class of
-spurious *-a*-final outputs survives too long in the derivation. If it moves
-too late, PGmc kráftaz yields craft instead of expected cræft, and
-dágaz yields dag instead of dæġ. Both boundaries are historically
-interpretable, but neither creates the kind of tight local adjacent pair that
-now justifies promotion for SC039-SC040.
+The chronology card places SC041 in a real but broad window: `SC020 < SC041 <
+SC046`.
 
-#### Status
+On the earlier side, SC041 must follow SC020. If final bare-*a* loss is moved
+too early across PGmc Final Z Deletion, a broad class of spurious final *-a*
+outputs survives. Representative failures include beard, bosom, bottom,
+calf, and coat; concretely, PGmc bárdaz yields bearda rather than
+expected OE beard, and kámbaz yields camba rather than camb. That
+earlier boundary is historically real, but it is broad/far and should be read as
+a leftward cross-reference to the pilot corridor rather than as local chapter
+architecture.
 
-This is a scaffold placeholder, not finished book prose. The existing regional
-literature and book dossiers now make SC041's role clear enough to keep it
-visible as its own final-loss note, while leaving any future promotion to a
-later decision about how much standalone prose this broader hinge really needs.
+On the later side, SC041 must precede SC046. If final bare-*a* loss is delayed
+too long, the later restoration environment changes and fronted outcomes are
+lost. Representative failures include craft, dale, day, hazel, and
+mast; concretely, PGmc kráftaz yields craft rather than expected OE
+cræft, and dágaz yields dag rather than expected dæġ. This later
+boundary is also historically real, but it should remain a rightward
+cross-reference to the promoted restoration corridor rather than a reason to
+merge the two units.
+
+Taken together, the cards support a real hinge but not a tight local reciprocal
+pair: `SC020 < SC041 < SC046`, with both edges pointing outward to neighboring
+production units.
+
+#### Interpretation
+
+This promotion works because it is deliberately modest. SC041 is not the center
+of a larger new corridor, and it is not a hidden third member of the promoted
+`SC039-SC040` report. Its job is architectural: to keep a real final-loss stage
+explicit between the medial-vowel core and the brightening/restoration region.
+
+The literature supports that move. Campbell and Ringe and Taylor both confirm
+that final short low-vowel loss belongs to the historical background of the
+period. CAPR then sharpens that background into one testable rule, and the
+chronology card shows that the rule sits in a broad but genuine window between
+the earlier pilot corridor and the later restoration hinge.
+
+#### Remaining cautions
+
+The cautions are mostly structural. SC041 should not be merged back into
+`SC039-SC040`, because its broad `SC020 < SC041 < SC046` chronology is not the
+same kind of local reciprocal core that justifies that pair. It should not be
+merged backward into the pilot `SC016-SC020` corridor or forward into the
+promoted `SC046-SC048` restoration report, because those links are outward
+cross-references rather than chapter architecture. And its later failures should
+be described as environment-changing derivational consequences that block
+restored/fronted outputs, not as a cluster of competing local surface variants
+inside one narrow chapter.
 
 ## Surviving bimoric O unrounding context
 
