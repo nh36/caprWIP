@@ -18,7 +18,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | Unit | Change IDs | Status | Chronology status | Literature status | Recommended treatment |
 | --- | --- | --- | --- | --- | --- |
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
-| 014-015 | SC014; SC015 | scaffold | mixed negative and broad/far | no dedicated dossier yet | grouped scaffold prelude |
+| 014-015 | SC014; SC015 | scaffold | opening prelude with negative SC014 and broad/far SC015 (`SC015 < SC036` via `world`); both earlier sides runner-bounded at `PWGmcChanges` | literature and book dossiers drafted; pending chapter-shape review | keep scaffolded for now; likely either a short cautious opening bridge or a more asymmetrical SC014-note / SC015-led treatment |
 | 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed contextual and boundary-limited | no dedicated dossier yet | grouped underdetermination scaffold |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
