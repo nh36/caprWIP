@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 27.
-3. Number covered by scaffold placeholders: 43.
+2. Number covered by pilot/full production reports: 30.
+3. Number covered by scaffold placeholders: 40.
 4. Number grouped into multi-change units: 65.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 43.
+6. Number needing human judgement: 40.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -28,7 +28,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
-| 046-048 | SC046; SC047; SC048 | scaffold | regional review: SC046 is the source-backed restoration hinge, while SC047-SC048 forms the broad reciprocal nasal-tail core | regional review and book dossiers drafted | keep scaffold corridor pending human review of cautious SC046-SC048 corridor versus later SC046 plus SC047-SC048 split |
+| 046-048 | SC046; SC047; SC048 | full | cautious adjacent corridor: SC043 < SC046 < SC048 and SC034 < SC047 < SC048 < SC059, with a broad reciprocal SC047-SC048 core | regional review and book dossiers drafted | keep as cautious full corridor report; later narrowing remains optional but no split is needed now |
 | 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |

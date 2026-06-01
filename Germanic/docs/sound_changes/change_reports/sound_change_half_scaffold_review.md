@@ -4,13 +4,13 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 24
-assembled units: one pilot production report (`016-020`), twelve full
-production reports (`026-027`, `031-034`, `043`, `044-045`, `049-050`, `051`,
-`052`, `053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 11
-remaining scaffold placeholders. The old `042-044-045` context band has now
-been split: `SC042` remains a singleton scaffold note, while `SC044-SC045` has
-been promoted as the strongest adjacent post-brightening pair immediately to
-the right of the SC043 pivot.
+assembled units: one pilot production report (`016-020`), thirteen full
+production reports (`026-027`, `031-034`, `043`, `044-045`, `046-048`,
+`049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`, and
+`066-068`), and 10 remaining scaffold placeholders. The immediate
+post-brightening region is now in a stable sequence: `SC042` remains a singleton
+scaffold note, while `SC043`, `SC044-SC045`, `SC046-SC048`, and `SC049-SC050`
+are all promoted as adjacent or singleton production chapters in strict order.
 
 ## Book architecture note
 
@@ -35,7 +35,7 @@ production unit.
 | 042 | Surviving bimoric O unrounding context | SC042 | scaffold | no | maybe | low | Now split out as its own short scaffold note. The `rest`-based `SC020 < SC042 < SC043` window is real, but too narrow to justify finished production prose or a non-contiguous chapter with `SC044-SC045`. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 044-045 | Breaking and velar-fricative palatalization | SC044; SC045 | full | no | no | defer | Now promoted as the strongest adjacent post-brightening pair. `SC044` is the standard handbook center, `SC045` is the narrower local velar/fricative partner, and the later SC060 relation remains a cross-reference rather than chapter architecture. |
-| 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | scaffold | yes | maybe | low | Regional review now marks this corridor dossier-prepared. `SC046` is the source-backed restoration hinge, while `SC047-SC048` is the tighter reciprocal nasal-tail core, so human review still has to decide corridor versus later split. |
+| 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | full | no | maybe | defer | Now promoted as a cautious adjacent corridor. `SC046` is the source-backed restoration hinge, while `SC047-SC048` remains the tighter reciprocal nasal-tail core; the later SC059 relation stays a cross-reference rather than chapter architecture. |
 | 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | full | no | maybe | defer | Now promoted as a short adjacent chronological bridge report. SC049 is kept explicit as the narrow allophonic and compound-specific member, while SC050 is treated as the historically stronger feeder into SC052 without creating a non-contiguous paired chapter. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
 | 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
@@ -51,15 +51,14 @@ production unit.
 
 ## Recommended next promotion candidates
 
-1. **SC046-SC048 cautious corridor or later SC046 plus SC047-SC048 split** — now the main unresolved post-brightening decision after `SC044-SC045` promotion, with `SC046` source-backed but `SC047-SC048` the tighter reciprocal core.
-2. **SC014-SC015 or SC035-SC037** — possible future compact bridge work, but still less source-ready than the remaining post-brightening target above.
-3. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
+1. **SC014-SC015 or SC035-SC037** — likely next compact scaffold targets now that the immediate post-brightening region has stabilized.
+2. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
+3. **Other remaining bridge placeholders such as `028-030` or `039-041`** — still secondary to the smaller source-ready scaffolds above, but more plausible than reopening the now-stabilized SC042-SC050 region.
 
 ## Recommended immediate next step
 
-With `SC044-SC045` now promoted and `SC042` left as a separate scaffold note,
-the next sensible work is the remaining chapter-shape decision inside
-`SC046-SC048`: either keep the cautious adjacent corridor or later split it
-into SC046 plus a tighter `SC047-SC048` nasal-tail pair. The larger late-tail
-and closing clusters remain later subdivision work rather than immediate
-promotion candidates.
+With the immediate SC042-SC050 post-brightening region now stabilized, the next
+sensible work is elsewhere in the half: either a compact earlier scaffold such
+as `SC014-SC015` or `SC035-SC037`, or a review of how to subdivide the larger
+late-tail and closing clusters. Further work inside SC042-SC050 is no longer an
+immediate structural priority.

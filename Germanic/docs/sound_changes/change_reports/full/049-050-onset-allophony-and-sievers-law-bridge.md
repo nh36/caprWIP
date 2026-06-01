@@ -6,9 +6,9 @@
 
 This is a **short adjacent chronological bridge report**, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-SC046-SC048 **Restoration and nasal-tail corridor** and the promoted SC051 and
-SC052 palatalization reports without pretending that SC049 and SC050 are one
-historical process.
+promoted SC046-SC048 **Restoration and nasal-tail corridor** and the promoted
+SC051 and SC052 palatalization reports without pretending that SC049 and SC050
+are one historical process.
 
 SC049 **PGmc B Allophony** is the narrower and more implementation-heavy member.
 It maps onto the familiar handbook distribution in which `b` surfaces as a stop
@@ -59,11 +59,11 @@ without implying that all three rules should be merged into one unit.
 
 #### Place in the cascade
 
-This unit belongs immediately after the SC046-SC048 corridor and immediately
-before the promoted SC051 report. It also stands directly to the left of the
-promoted SC052 hinge report. That placement is the main reason to promote the
-pair together: both changes are adjacent, both are ordinary FST changes, and
-both need explicit prose in the assembled half.
+This unit belongs immediately after the promoted SC046-SC048 corridor and
+immediately before the promoted SC051 report. It also stands directly to the
+left of the promoted SC052 hinge report. That placement is the main reason to
+promote the pair together: both changes are adjacent, both are ordinary FST
+changes, and both need explicit prose in the assembled half.
 
 SC050's forward relation to SC052 should be handled by cross-reference rather
 than by a non-contiguous SC050-SC052 chapter. SC052 remains the later promoted

@@ -44,7 +44,7 @@ palatalization article.
 
 This report belongs immediately after the promoted SC043 brightening pivot. On
 its left, SC042 remains a separate scaffold context note rather than part of
-this production unit. On its right, the report leads into the still-scaffolded
+this production unit. On its right, the report leads into the promoted
 SC046-SC048 post-brightening corridor, while SC060 **OE Ws Palatal Umlaut**
 remains only a later rightward cross-reference rather than part of this
 chapter's architecture.
@@ -79,5 +79,5 @@ non-contiguously. SC045 should not be narrated as a general chapter on all Old
 English palatalization; here it is the local velar/fricative follow-on to
 breaking. And although `SC045 < SC060` is a real later relation, it is narrow
 and should remain a rightward cross-reference rather than chapter architecture.
-SC046-SC048 likewise remains a separate post-brightening decision rather than
-material to absorb into this promoted pair.
+The promoted SC046-SC048 corridor likewise remains a separate neighboring
+chapter rather than material to absorb into this pair.

@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 27.
-- Covered by scaffold placeholders: 43.
+- Covered by pilot/full production reports: 30.
+- Covered by scaffold placeholders: 40.
 - Grouped into multi-change units: 65 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 43.
+- Still needing human judgement or promotion decisions: 40.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -28,7 +28,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
-| 046-048 | SC046; SC047; SC048 | scaffold | regional review: SC046 is the source-backed restoration hinge, while SC047-SC048 forms the broad reciprocal nasal-tail core | regional review and book dossiers drafted | keep scaffold corridor pending human review of cautious SC046-SC048 corridor versus later SC046 plus SC047-SC048 split |
+| 046-048 | SC046; SC047; SC048 | full | cautious adjacent corridor: SC043 < SC046 < SC048 and SC034 < SC047 < SC048 < SC059, with a broad reciprocal SC047-SC048 core | regional review and book dossiers drafted | keep as cautious full corridor report; later narrowing remains optional but no split is needed now |
 | 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
@@ -769,7 +769,7 @@ palatalization article.
 
 This report belongs immediately after the promoted SC043 brightening pivot. On
 its left, SC042 remains a separate scaffold context note rather than part of
-this production unit. On its right, the report leads into the still-scaffolded
+this production unit. On its right, the report leads into the promoted
 SC046-SC048 post-brightening corridor, while SC060 OE Ws Palatal Umlaut
 remains only a later rightward cross-reference rather than part of this
 chapter's architecture.
@@ -804,8 +804,8 @@ non-contiguously. SC045 should not be narrated as a general chapter on all Old
 English palatalization; here it is the local velar/fricative follow-on to
 breaking. And although `SC045 < SC060` is a real later relation, it is narrow
 and should remain a rightward cross-reference rather than chapter architecture.
-SC046-SC048 likewise remains a separate post-brightening decision rather than
-material to absorb into this promoted pair.
+The promoted SC046-SC048 corridor likewise remains a separate neighboring
+chapter rather than material to absorb into this pair.
 
 ## Restoration and nasal-tail corridor
 
@@ -813,33 +813,124 @@ material to absorb into this promoted pair.
 
 #### Historical formulation
 
-This scaffold unit groups `SC046`, `SC047`, and `SC048` as a short
-post-brightening corridor. It keeps the local bridge visible without forcing
-three separate finished sections before the larger architecture is reviewed.
+`SC046-SC048` is promoted here as a **cautious adjacent post-brightening
+corridor report**, not as a claim that the handbooks present one neat
+three-change Old English chapter in exactly this form. The internal structure is
+uneven by design. SC046 OE A Restoration is the source-backed
+restoration/retraction hinge: it restores fronted low-vowel outcomes to back
+*a* before following back vowels after the brightening stage has already been
+created [@Campbell1959, §§157--159; @RingeTaylor2014, §6.3.1; @Fulk2018, §4.13].
+SC047 OE Heavy Syllable Nasal Apocope and SC048 **OE Secondary
+Nasalization** form the tighter reciprocal nasal-tail core inside CAPR, but
+they are less textbook-like as a named pair than SC046 is as a historical
+restoration step.
 
-#### Current evidence
+#### Source tradition
 
-All three member changes already have chronology cards and FOMA implementations.
-No dedicated literature dossier has yet been promoted for the grouped unit, so
-the entry remains scaffold material.
+The source tradition is clearest on SC046. Campbell's restoration of *a* before
+following back vowels, Ringe and Taylor's general retraction of fronted low
+vowels, and Fulk's compact overview all describe the same historical corridor
+that CAPR isolates here [@Campbell1959, §§157--159; @RingeTaylor2014, §6.3.1;
+@Fulk2018, §4.13]. That makes SC046 easy to narrate as a real stage downstream
+of Anglo-Frisian Brightening.
+
+The nasal-tail side is more mixed. Campbell's sections on loss of nasals and
+back mutation, together with Ringe and Taylor's discussion of later back umlaut,
+support the broader historical environment in which SC047 and SC048 operate, but
+they do not yield one tidy handbook chapter named exactly the way CAPR segments
+it [@Campbell1959, §403, §§205--206; @RingeTaylor2014, §6.9.4]. The result is a
+real historical neighborhood with uneven source support: SC046 is the clearest
+source-backed hinge, while SC047-SC048 is a stronger computational core than a
+classical textbook pair.
+
+#### CAPR implementation
+
+CAPR makes that mixed corridor explicit by keeping three adjacent rules. SC046
+*OEARestoration* changes æ back to *a* before the specific class of
+following back-vowel environments that still trigger restoration. SC047
+*OEHeavySyllableNasalApocope* then deletes the final nasalized vowel in heavy
+syllables. SC048 *OESecondaryNasalization* marks *a* before final *n*, helping
+separate live -an outcomes from the spurious -en forms that appear if the
+nasal-tail rules are misordered.
+
+That sequencing is why the report works as one cautious corridor. SC046 is the
+restoration hinge that still reads cleanly in source terms. SC047 and SC048 are
+the tighter internal cleanup pair whose broad reciprocal -en failures matter
+most inside the model. The prose should therefore present one adjacent corridor
+with a clear internal center of gravity, not three symmetrical coequal laws.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 46-48, from *OEARestoration* through
-*OESecondaryNasalization*. In the assembled scaffold it follows the
-brightening/breaking region and leads into onset allophony and palatalization.
+This report belongs immediately after the promoted SC044-SC045
+**Breaking and velar-fricative palatalization** report and immediately before
+the promoted SC049-SC050 **Onset allophony and Sievers-law bridge**. On its
+left it still depends on the earlier SC043 **Anglo-Frisian Brightening** pivot,
+because SC046 is one of the stages that partly reverses the fronted outcomes
+created there. On its right SC048 points forward to SC059 OE Back Mutation,
+but that later relation should remain a cross-reference only rather than a
+reason to expand this chapter past its adjacent corridor.
 
 #### Order evidence
 
-The cards mix broad and local behavior rather than forming one rigid reciprocal
-pair. That is enough to justify a visible corridor placeholder, but not yet a
-fully segmented prose treatment.
+The chronology cards justify promotion precisely because they show one strong
+hinge plus one stronger internal core.
 
-#### Status
+SC046 must follow SC043 and precede SC048. If it is moved earlier than SC043,
+bake, fare, flask, grave, and haw keep fronted outcomes such as
+bæcan and færan instead of the expected restored bacan and faran. If it
+is delayed beyond SC048, the restored back-vowel outcomes are again lost, with
+bake, fare, grave, lade, and wade surfacing as fronted forms such as
+bæcan and wædan. SC046 is therefore not just a local flourish after
+brightening; it is a real restoration hinge with positive card boundaries on
+both sides.
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature framing and human review of whether `SC046` eventually stands on its
-own or remains part of a grouped post-brightening chapter.
+SC047 is narrower and less textbook-like. Its earlier positive boundary is only
+at SC034 OE Aw Long Diphthong, carried by straw, where moving heavy-
+syllable nasal apocope too far left produces stræw instead of expected
+strēaw. Its later boundary is much broader and more important inside CAPR:
+delaying SC047 beyond SC048 creates an 87-row reciprocal -en failure set, so
+forms such as bake, begin, believe, bind, and bore surface with
+spurious -en tails.
+
+SC048 is the partner to SC047 inside that nasal-tail core. It must follow SC047,
+with the same broad reciprocal -en failure set, and it must precede SC059,
+where steal and weave begin to show back-mutated forms such as steolan
+and weofan instead of the expected stelan and wefan. That `SC048 < SC059`
+relation is real, but it should stay a rightward cross-reference only, not a
+reason to stretch the chapter into a non-local back-mutation report.
+
+Taken together, the cards support `SC043 < SC046 < SC048`, `SC034 < SC047 <
+SC048, and SC047 < SC048 < SC059`. The strongest internal claim is the broad
+reciprocal SC047-SC048 core; SC046 is the clearer historical hinge that makes
+the corridor legible on the left.
+
+#### Interpretation
+
+This report is useful because it keeps three adjacent ordinary FST changes
+explicit without pretending they are equal members of a classical handbook law.
+SC046 is the historically clearest member and should carry the source
+explanation. SC047-SC048 is where the strongest internal reciprocity lies, and
+the book should say so plainly. The result is a corridor with one source-backed
+hinge feeding a more model-internal nasal-tail cleanup zone.
+
+That is enough to justify promotion as full production prose. The chapter is no
+longer just a placeholder, but it remains deliberately cautious about the gap
+between the handbooks' broader historical region and CAPR's sharper three-rule
+segmentation. If later book architecture ever narrows the corridor into SC046
+plus a separate SC047-SC048 pair, that would be a chapter-shape revision rather
+than proof that the present corridor was unreal.
+
+#### Remaining cautions
+
+The caution is structural as much as descriptive. This report should not absorb
+the already promoted SC043 or SC044-SC045 material on its left, and it should
+not absorb the promoted SC049-SC050 bridge on its right. SC047 and SC048 should
+not be overstated as if the handbooks routinely present them as a named joint
+chapter; their strongest support here is the broad reciprocal -en failure core
+inside the model. And although `SC048 < SC059` is a real later relation, it is
+narrow and should remain a rightward cross-reference rather than chapter
+architecture. The corridor should stay exactly what it is: an adjacent,
+chronological, but unevenly source-backed post-brightening report.
 
 ## Onset allophony and Sievers-law bridge
 
@@ -849,9 +940,9 @@ own or remains part of a grouped post-brightening chapter.
 
 This is a short adjacent chronological bridge report, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-SC046-SC048 **Restoration and nasal-tail corridor** and the promoted SC051 and
-SC052 palatalization reports without pretending that SC049 and SC050 are one
-historical process.
+promoted SC046-SC048 **Restoration and nasal-tail corridor** and the promoted
+SC051 and SC052 palatalization reports without pretending that SC049 and SC050
+are one historical process.
 
 SC049 PGmc B Allophony is the narrower and more implementation-heavy member.
 It maps onto the familiar handbook distribution in which *b* surfaces as a stop
@@ -902,11 +993,11 @@ without implying that all three rules should be merged into one unit.
 
 #### Place in the cascade
 
-This unit belongs immediately after the SC046-SC048 corridor and immediately
-before the promoted SC051 report. It also stands directly to the left of the
-promoted SC052 hinge report. That placement is the main reason to promote the
-pair together: both changes are adjacent, both are ordinary FST changes, and
-both need explicit prose in the assembled half.
+This unit belongs immediately after the promoted SC046-SC048 corridor and
+immediately before the promoted SC051 report. It also stands directly to the
+left of the promoted SC052 hinge report. That placement is the main reason to
+promote the pair together: both changes are adjacent, both are ordinary FST
+changes, and both need explicit prose in the assembled half.
 
 SC050's forward relation to SC052 should be handled by cross-reference rather
 than by a non-contiguous SC050-SC052 chapter. SC052 remains the later promoted
