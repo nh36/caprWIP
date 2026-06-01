@@ -73,11 +73,11 @@ be merged into one out-of-order chapter. In the assembled book, SC051 is the
 immediately preceding promoted report, and SC052 is the immediately following
 standalone hinge report.
 
-To the right, SC052 precedes the residual SC053-SC054 pre-umlaut bridge and the
-promoted SC055-SC056 umlaut-core report. Farther right, SC057 remains a later
-unresolved palatalization-side question. That placement is the main architectural
-gain of this promotion: the book can now discuss the plain-velar hinge
-explicitly while keeping the assembled order strictly chronological.
+To the right, SC052 now precedes the promoted SC053-SC054 pre-umlaut bridge
+report and the promoted SC055-SC056 umlaut-core report. Farther right, SC057
+remains a later unresolved palatalization-side question. That placement is the
+main architectural gain of this promotion: the book can now discuss the plain-velar
+hinge explicitly while keeping the assembled order strictly chronological.
 
 #### Order evidence
 

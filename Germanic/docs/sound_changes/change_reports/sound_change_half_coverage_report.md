@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 23.
-3. Number covered by scaffold placeholders: 47.
+2. Number covered by pilot/full production reports: 25.
+3. Number covered by scaffold placeholders: 45.
 4. Number grouped into multi-change units: 66.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 47.
+6. Number needing human judgement: 45.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -31,7 +31,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
-| 053-054 | SC053; SC054 | scaffold | negative edge plus narrow bridge evidence | literature and book dossiers drafted | dossier-prepared bridge pending shape review |
+| 053-054 | SC053; SC054 | full | negative edge plus narrow bridge evidence | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
 | 059-061 | SC059; SC060; SC061 | scaffold | mixed local and contextual bridge | no dedicated dossier yet | grouped late-vowel bridge scaffold |

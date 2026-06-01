@@ -45,7 +45,8 @@ chronology.
 #### Place in the cascade
 
 This report belongs immediately after SC052 **OE Velar Palatalization** and,
-in the present assembly, after the residual SC053-SC054 pre-umlaut bridge. On
+in the present assembly, after the promoted SC053-SC054 pre-umlaut bridge
+report. On
 its right, it precedes later promoted material, especially SC063 **OE High
 Vowel Apocope** and the SC066-SC068 syncope corridor, both of which depend on
 the earlier umlaut setting already being in place. That position gives the
@@ -83,9 +84,9 @@ should not grant it equal historical weight. More broadly, the broad textbook
 chronology and CAPR's local chronology do not coincide perfectly, especially in
 sources such as Ringe and Taylor and Fulk that place palatal-triggered
 diphthongization differently in the wider sequence
-[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC054
-should remain outside the promoted core for now as possible later bridge
-material, and SC057 should remain reserved for later reconsideration with the
-SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC053-SC054
+should remain a separate promoted bridge report rather than being absorbed into
+the umlaut core, and SC057 should remain reserved for later reconsideration
+with the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
 narrow: it is a report on the umlaut core and its West Saxon right edge, not a
 general handbook article on every aspect of Old English i-mutation.
