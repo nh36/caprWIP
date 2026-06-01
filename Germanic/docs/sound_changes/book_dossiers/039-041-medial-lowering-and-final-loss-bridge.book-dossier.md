@@ -108,7 +108,7 @@ how much asymmetry the final prose should expose.
 ## 8. Relation to neighbouring changes
 
 - **Left neighbour:** promoted `SC035-SC037` prefix/interstress/compound bridge
-- **Immediate right context:** scaffold `SC042` and promoted `SC043` brightening
+- **Immediate right context:** promoted `SC042` and promoted `SC043` brightening
 - **Later rightward cross-reference from SC040:** `SC072` via `youth`
 - **Broader leftward cross-reference from SC041:** pilot `SC020` via the final-loss background
 - **Later rightward cross-reference from SC041:** promoted `SC046` inside `SC046-SC048`

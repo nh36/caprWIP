@@ -4,10 +4,10 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 26
-assembled units: one pilot production report (`016-020`), eighteen full
+assembled units: one pilot production report (`016-020`), nineteen full
 production reports (`014-015`, `026-027`, `029-030`, `031-034`, `035-037`,
-`039-040`, `041`, `043`, `044-045`, `046-048`, `049-050`, `051`, `052`,
-`053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 7 remaining
+`039-040`, `041`, `042`, `043`, `044-045`, `046-048`, `049-050`, `051`, `052`,
+`053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 6 remaining
 scaffold placeholders. The opening of the half is now more stable as well: the
 promoted `SC014-SC015` prelude now feeds directly into the pilot `SC016-SC020`
 corridor, while the early fronting seam is sharper because the promoted
@@ -37,7 +37,7 @@ production unit.
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | full | no | maybe | defer | Now promoted as a cautious adjacent derivational bridge. SC036 is the clear source-backed center of gravity, while SC035 remains the one-sided prefix flank and SC037 remains the technical/compound flank; any later narrowing around SC036 is optional rather than urgent. |
 | 039-040 | Medial unstressed vowel core | SC039; SC040 | full | no | maybe | defer | Now promoted as the strongest local medial-vowel report in the seam. SC039 remains the one-sided `widow` flank, SC040 is the source-backed `world`/`youth` center, and the broad/far SC072 relation stays a rightward cross-reference rather than chapter architecture. |
 | 041 | Final bare-a loss note | SC041 | full | no | no | defer | Now promoted as a short singleton final-loss hinge. Its `SC020 < SC041 < SC046` chronology remains broad, so the report stays architectural and explicit rather than being merged into SC039-SC040, the pilot corridor, or SC046-SC048. |
-| 042 | Surviving bimoric O unrounding context | SC042 | scaffold | no | maybe | low | Now split out as its own short scaffold note. The `rest`-based `SC020 < SC042 < SC043` window is real, but too narrow to justify finished production prose or a non-contiguous chapter with `SC044-SC045`. |
+| 042 | Surviving bimoric O unrounding context | SC042 | full | no | no | defer | Now promoted as a short singleton context note. Its `rest`-based `SC020 < SC042 < SC043` window is real but witness-limited, so the prose stays modest and treats SC020 as a leftward cross-reference while feeding directly into promoted SC043. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 044-045 | Breaking and velar-fricative palatalization | SC044; SC045 | full | no | no | defer | Now promoted as the strongest adjacent post-brightening pair. `SC044` is the standard handbook center, `SC045` is the narrower local velar/fricative partner, and the later SC060 relation remains a cross-reference rather than chapter architecture. |
 | 046-048 | Restoration and nasal-tail corridor | SC046; SC047; SC048 | full | no | maybe | defer | Now promoted as a cautious adjacent corridor. `SC046` is the source-backed restoration hinge, while `SC047-SC048` remains the tighter reciprocal nasal-tail core; the later SC059 relation stays a cross-reference rather than chapter architecture. |
@@ -56,14 +56,14 @@ production unit.
 
 ## Recommended next targets
 
-1. **SC042** — now the clearest remaining narrow singleton context note. Its `rest`-based `SC020 < SC042 < SC043` window is still thin, but it is the most obvious next modest promotion if the project wants to keep closing local seams.
-2. **SC018-SC025** — the larger early underdetermination zone is now the clearest broader review target if the project prefers structural reassessment over another singleton note.
-3. **Late-tail and closing clusters** — still later work once the remaining small singleton/context decisions are clearer; they remain too broad for immediate promotion unchanged.
+1. **SC018-SC025** — now the clearest broader review target. With the local SC041-SC043 seam promoted, the biggest remaining structural question is the early underdetermination zone.
+2. **Residual scaffold notes and bridges** — `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible but are still lower-priority than the broader early-zone review.
+3. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
 
 ## Recommended immediate next step
 
-With `SC041` now promoted as its own short final-loss note, the next decision
-can be either a modest singleton promotion for `SC042` or a broader
-source/chapter-shape review of the remaining `SC018-SC025` early
-underdetermination zone. The late-tail and closing clusters still need later
-subdivision rather than immediate promotion.
+With `SC042` now promoted as its own short singleton context note, the next
+best move is a broader source/chapter-shape review of the remaining
+`SC018-SC025` early underdetermination zone. The smaller residual scaffold
+notes can wait behind that review, and the late-tail and closing clusters still
+need later subdivision rather than immediate promotion.

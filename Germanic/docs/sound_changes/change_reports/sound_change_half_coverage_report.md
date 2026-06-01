@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 40.
-3. Number covered by scaffold placeholders: 30.
+2. Number covered by pilot/full production reports: 41.
+3. Number covered by scaffold placeholders: 29.
 4. Number grouped into multi-change units: 63.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 30.
+6. Number needing human judgement: 29.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -27,7 +27,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
 | 041 | SC041 | full | historically real final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology and outward cross-references rather than a tight adjacent reciprocal pair | literature and book dossiers drafted | promote as a short singleton note; keep the SC020 and SC046 links as leftward/rightward cross-references and do not merge it into SC039-SC040, the pilot corridor, or SC046-SC048 |
-| 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
+| 042 | SC042 | full | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | promote as a short singleton full context note between SC041 and SC043; keep SC020 as a leftward cross-reference and do not bundle SC042 non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
 | 046-048 | SC046; SC047; SC048 | full | cautious adjacent corridor: SC043 < SC046 < SC048 and SC034 < SC047 < SC048 < SC059, with a broad reciprocal SC047-SC048 core | regional review and book dossiers drafted | keep as cautious full corridor report; later narrowing remains optional but no split is needed now |

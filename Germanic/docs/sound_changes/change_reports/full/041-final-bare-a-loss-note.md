@@ -46,7 +46,7 @@ effect belongs to this one rule.
 #### Place in the cascade
 
 This note belongs immediately after the promoted `SC039-SC040`
-**Medial unstressed vowel core** and immediately before the scaffold `SC042`
+**Medial unstressed vowel core** and immediately before the promoted `SC042`
 **Surviving bimoric O unrounding context**. Its broader cross-references point
 outward rather than architecturally inward: leftward to the pilot
 `SC016-SC020` **Early vocalic/final corridor** through SC020, and rightward to

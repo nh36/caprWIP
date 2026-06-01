@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 40.
-- Covered by scaffold placeholders: 30.
+- Covered by pilot/full production reports: 41.
+- Covered by scaffold placeholders: 29.
 - Grouped into multi-change units: 63 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 30.
+- Still needing human judgement or promotion decisions: 29.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -27,7 +27,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
 | 041 | SC041 | full | historically real final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology and outward cross-references rather than a tight adjacent reciprocal pair | literature and book dossiers drafted | promote as a short singleton note; keep the SC020 and SC046 links as leftward/rightward cross-references and do not merge it into SC039-SC040, the pilot corridor, or SC046-SC048 |
-| 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
+| 042 | SC042 | full | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | promote as a short singleton full context note between SC041 and SC043; keep SC020 as a leftward cross-reference and do not bundle SC042 non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
 | 046-048 | SC046; SC047; SC048 | full | cautious adjacent corridor: SC043 < SC046 < SC048 and SC034 < SC047 < SC048 < SC059, with a broad reciprocal SC047-SC048 core | regional review and book dossiers drafted | keep as cautious full corridor report; later narrowing remains optional but no split is needed now |
@@ -985,7 +985,7 @@ of this promoted unit.
 This report belongs immediately after the promoted `SC035-SC037` **Prefix and
 compound adjustments** bridge and immediately before the promoted `SC041`
 **Final bare-a loss note**. The immediate rightward neighborhood then continues
-through scaffold `SC042` into the promoted SC043 brightening pivot.
+through promoted `SC042` into the promoted SC043 brightening pivot.
 
 The outward chronology links should remain cross-references only. SC036 points
 forward to SC040, but that later relation should not pull this report leftward
@@ -1091,7 +1091,7 @@ effect belongs to this one rule.
 #### Place in the cascade
 
 This note belongs immediately after the promoted `SC039-SC040`
-**Medial unstressed vowel core** and immediately before the scaffold `SC042`
+**Medial unstressed vowel core** and immediately before the promoted `SC042`
 **Surviving bimoric O unrounding context**. Its broader cross-references point
 outward rather than architecturally inward: leftward to the pilot
 `SC016-SC020` **Early vocalic/final corridor** through SC020, and rightward to
@@ -1160,37 +1160,88 @@ inside one narrow chapter.
 
 #### Historical formulation
 
-SC042 *PWGmcSurvivingBimoricOUnrounding* is a narrow, witness-limited context
-rule. In the current book architecture it matters mainly because it helps
-explain the rest pathway that feeds the promoted SC043 Anglo-Frisian
-Brightening report, not because it is already a finished chapter in its own
-right.
+SC042 *PWGmcSurvivingBimoricOUnrounding* is promoted here as a **short
+singleton context note**. It is not a claim that the handbooks isolate one
+large independent chapter under exactly this label. The historical point is
+smaller: CAPR needs an explicit surviving-bimoric ō pathway behind rest,
+and that pathway belongs immediately on the left edge of the promoted SC043
+brightening pivot rather than hidden inside a larger non-contiguous chapter
+[@Campbell1959, §§131, 157--158; @Hogg1992, pp. 101, 119;
+@RingeTaylor2014, pp. 157--158, 189--190].
 
-#### Current evidence
+#### Source tradition
 
-The chronology card gives SC042 a real but very narrow local window:
-`SC020 < SC042 < SC043`, with both sides carried by rest. That is enough to
-justify a visible singleton context note, but not finished production prose.
+The source tradition supports the surrounding fronting and restoration corridor
+more readily than it isolates SC042 as a textbook chapter in its own right.
+Campbell treats the early fronting and later restoration developments as part
+of one intelligible historical region [@Campbell1959, §§131, 157--158]. Hogg
+is especially useful on the early fronting side and on the broader vocalic
+environment that later Old English rules continue to read
+[@Hogg1992, pp. 101, 119]. Ringe and Taylor likewise place fronting and later
+retraction/restoration in a sequence that makes CAPR's narrow rest pathway
+historically legible even if the precise SC042 label is model-shaped
+[@RingeTaylor2014, pp. 157--158, 189--190].
+
+That is enough support for a modest promotion. The report should present SC042
+as a narrow feeder/context rule inside the post-final-loss seam, not as a
+coequal chapter center beside SC043, SC044-SC045, or SC046-SC048.
+
+#### CAPR implementation
+
+CAPR sharpens that broad historical background into one explicit step:
+SC042 *PWGmcSurvivingBimoricOUnrounding* maps a surviving bimoric ō to the
+low-vocalic stage that later feeds the fronted/restored rest outcome. This
+is more specific than the handbook phrasing, but that specificity is exactly
+why the note is useful. It lets the book show where the model creates the
+input that SC043 then brightens, instead of leaving the rest pathway
+implicit.
 
 #### Place in the cascade
 
-SC042 now stands as a short scaffold singleton between the separate *041*
-final-loss note and the promoted SC043 brightening pivot. It should not be
-bundled non-contiguously with the promoted adjacent `SC044-SC045` report to its
-right.
+This note belongs immediately after the promoted `SC041` **Final bare-a loss
+note** and immediately before the promoted `SC043` **Anglo-Frisian
+brightening** report. On its right, the already promoted `SC044-SC045`
+**Breaking and velar-fricative palatalization** report remains a separate
+neighboring unit rather than part of the same chapter.
+
+That placement is the whole reason to promote SC042 now. It closes the small
+architectural seam between final-loss and brightening without pretending that
+the note itself is a major post-brightening chapter.
 
 #### Order evidence
 
-SC042 must follow SC020 and precede SC043. If it moves earlier or later, PGmc
-rástōz yields rasta rather than expected OE ræste. The change is
-therefore book-relevant as left-edge context for SC043, even though the live
-positive chronology is limited to that single witness.
+The chronology card gives SC042 a real but very narrow two-sided window:
+`SC020 < SC042 < SC043`, and both boundaries are carried by rest.
 
-#### Status
+On the earlier side, SC042 must follow SC020. If the unrounding stage is moved
+earlier across PGmc Final Z Deletion, PGmc rástōz yields rasta rather than
+expected OE ræste. That earlier edge is historically interpretable, but it
+should remain a leftward cross-reference to the pilot `SC016-SC020` corridor
+rather than chapter architecture.
 
-This is a scaffold placeholder, not finished book prose. It remains a short
-context note that keeps SC042 visible without overstating its independence or
-absorbing it into the separate SC044-SC045 production unit.
+On the later side, SC042 must precede SC043. If the same unrounding stage is
+delayed across Anglo-Frisian Brightening, PGmc rástōz again yields rasta
+rather than ræste. This later edge is tighter and more local: it is the
+direct handoff that makes SC042 worth keeping explicit immediately before the
+promoted brightening report.
+
+#### Interpretation
+
+SC042 is promoted because the modest reading is now the best one. The rest
+evidence is thin, but it is genuine on both sides, and the book is clearer when
+the surviving-bimoric feeder to SC043 is stated explicitly. That gives the
+assembled half a cleaner local sequence: `SC041 -> SC042 -> SC043`, followed by
+the already separate SC044-SC045 and SC046-SC048 reports.
+
+#### Remaining cautions
+
+The cautions are mostly structural. SC042 should still be narrated as a short
+context note rather than a major standalone chapter. Its evidence remains
+witness-limited, so the prose should not overstate independence. It should not
+be merged non-contiguously with SC044-SC045 just because that pair belongs to
+the same broader post-brightening region. And its leftward relation to SC020
+should stay a cross-reference rather than a reason to reopen the earlier pilot
+corridor here.
 
 ## Anglo-Frisian brightening
 
@@ -1317,7 +1368,7 @@ palatalization article.
 #### Place in the cascade
 
 This report belongs immediately after the promoted SC043 brightening pivot. On
-its left, SC042 remains a separate scaffold context note rather than part of
+its left, promoted SC042 remains a separate short context note rather than part of
 this production unit. On its right, the report leads into the promoted
 SC046-SC048 post-brightening corridor, while SC060 OE Ws Palatal Umlaut
 remains only a later rightward cross-reference rather than part of this
@@ -1348,7 +1399,7 @@ everything through SC060.
 #### Remaining cautions
 
 The cautions matter as much as the positive result. SC042 should remain visible
-as a separate scaffold context note rather than being pulled into this report
+as a separate promoted context note rather than being pulled into this report
 non-contiguously. SC045 should not be narrated as a general chapter on all Old
 English palatalization; here it is the local velar/fricative follow-on to
 breaking. And although `SC045 < SC060` is a real later relation, it is narrow

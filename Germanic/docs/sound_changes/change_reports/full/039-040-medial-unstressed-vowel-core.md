@@ -65,7 +65,7 @@ of this promoted unit.
 This report belongs immediately after the promoted `SC035-SC037` **Prefix and
 compound adjustments** bridge and immediately before the promoted `SC041`
 **Final bare-a loss note**. The immediate rightward neighborhood then continues
-through scaffold `SC042` into the promoted SC043 brightening pivot.
+through promoted `SC042` into the promoted SC043 brightening pivot.
 
 The outward chronology links should remain cross-references only. SC036 points
 forward to SC040, but that later relation should not pull this report leftward
