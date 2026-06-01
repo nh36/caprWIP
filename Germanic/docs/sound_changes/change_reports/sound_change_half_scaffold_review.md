@@ -3,17 +3,17 @@
 ## Current state
 
 The sound-change half is now fully visible and buildable as an assembled book
-half rather than as a single pilot chapter. The current scaffold has 26
+half rather than as a single pilot chapter. The current scaffold has 31
 assembled units: one pilot production report (`016-020`), nineteen full
 production reports (`014-015`, `026-027`, `029-030`, `031-034`, `035-037`,
 `039-040`, `041`, `042`, `043`, `044-045`, `046-048`, `049-050`, `051`, `052`,
-`053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 6 remaining
-scaffold placeholders. The opening of the half is now more stable as well: the
-promoted `SC014-SC015` prelude now feeds directly into the pilot `SC016-SC020`
-corridor, while the early fronting seam is sharper because the promoted
-`SC026-SC027` corridor now feeds into the separate scaffold `SC028` note, then
-the promoted `SC029-SC030` glide/fronting core, then the promoted
-`SC031-SC034` diphthong chain.
+`053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 11 remaining
+scaffold placeholders. The opening of the half is now more explicit as well:
+the promoted `SC014-SC015` prelude feeds into the pilot `SC016-SC020`
+corridor, then into the six singleton scaffold notes `SC018`, `SC021`, `SC022`,
+`SC023`, `SC024`, and `SC025`, before the promoted `SC026-SC027` corridor,
+separate scaffold `SC028` note, promoted `SC029-SC030` glide/fronting core,
+and promoted `SC031-SC034` diphthong chain.
 
 ## Book architecture note
 
@@ -29,7 +29,12 @@ production unit.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 014-015 | Opening vowel prelude | SC014; SC015 | full | no | maybe | defer | Now promoted as a short cautious opening bridge. SC014 remains the brief boundary-limited opening note, while SC015 is the stronger `world`-anchored member and carries most of the prose. |
 | 016-020 | Early vocalic/final corridor | SC016; SC017; SC019; SC020 | pilot | yes | maybe | defer | Already the only pilot production report; keep as the baseline corridor while other units catch up. |
-| 018-025 | Early Northwest Germanic unstressed and boundary-limited zone | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | yes | likely | defer | Now dossier-prepared and still scaffolded. Do not promote the whole row unchanged: the likeliest later split is boundary/context notes for SC018, SC022, and SC025 plus narrower singleton candidates for SC021, SC023, and SC024, with SC040/SC047/SC056 treated only as cross-references. |
+| 018 | Stressed monosyllable o-raising note | SC018 | scaffold | no | no | low | Now split out as its own singleton scaffold note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary must remain methodological limits rather than chapter architecture. |
+| 021 | Unstressed o-raising note | SC021 | scaffold | no | no | medium | Now split out as the clearest near-term singleton candidate in the early zone. Its real but broad/far `SC021 < SC040` relation via `heaven` should remain a cross-reference to promoted SC039-SC040 rather than a reason to merge chapters. |
+| 022 | Mn dissimilation note | SC022 | scaffold | no | no | low | Now split out as its own singleton scaffold note. The rule is historically legible enough to keep visible, but its current card is still boundary-limited on both sides. |
+| 023 | N-stem n-loss note | SC023 | scaffold | no | no | medium | Now split out as a later singleton candidate. Its real but broad/far `SC023 < SC047` relation via `do` should remain a cross-reference to promoted SC046-SC048 rather than a reason to merge chapters. |
+| 024 | Long e-lowering note | SC024 | scaffold | no | no | medium | Now split out as a source-backed later singleton candidate. Its real but broad/far `SC024 < SC056` relation via `sheep` and `year` should remain a cross-reference to promoted SC055-SC056 rather than a reason to merge chapters. |
+| 025 | Long e nasal-rounding note | SC025 | scaffold | no | no | low | Now split out as its own singleton scaffold note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary must remain methodological limits rather than chapter architecture. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028 | Preconsonantal x-loss note | SC028 | scaffold | no | maybe | low | Now split out as its own short scaffold note. It remains historically legible through `x`-loss material, but its chronology card is boundary-limited on both sides and still does not justify finished standalone promotion. |
 | 029-030 | Awj glide and au-fronting core | SC029; SC030 | full | no | no | defer | Now promoted as the compact local `hay` / `strew` core. SC029 remains the one-sided `awj` feeder with a runner-bounded earlier side, while SC030 is the source-backed fronting center and keeps SC032 only as a rightward handoff. |
@@ -56,16 +61,17 @@ production unit.
 
 ## Recommended next targets
 
-1. **SC018-SC025 human chapter-shape decision** — the row is now dossier-prepared. The next choice is whether to keep one broad scaffolded underdetermination zone or later split it into boundary-limited notes plus source-backed singleton notes; do not promote the whole row unchanged.
-2. **Residual scaffold notes and bridges** — `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible, but they are still lower-priority than resolving the now dossier-prepared early zone.
-3. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
+1. **SC021 short singleton promotion review** — with the early NWGmc zone now split structurally, SC021 is the clearest next promotion candidate: it has one real broad/far rightward boundary at SC040 and a clean cross-reference into the already promoted medial-vowel core.
+2. **SC023 and SC024 follow-on singleton reviews** — both now stand as explicit scaffold notes with real outward links to promoted later reports, making them the next most plausible singleton promotions after SC021.
+3. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible, but they are still lower-priority than the one-sided singleton candidates.
+4. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
 
 ## Recommended immediate next step
 
-`SC018-SC025` is now dossier-prepared, so the next move is a human
-chapter-shape decision rather than an automatic promotion. The likeliest later
-singletons are `SC021`, `SC023`, and `SC024`; `SC018`, `SC022`, and `SC025`
-remain boundary-limited/context-note material unless further source work
-changes that. The smaller residual scaffold notes can wait behind that
-decision, and the late-tail and closing clusters still need later subdivision
-rather than immediate promotion.
+With the former `SC018-SC025` zone now split into six singleton scaffold notes,
+the next substantive promotion decision should probably be `SC021` first, then
+`SC023` or `SC024`. `SC018`, `SC022`, and `SC025` remain
+boundary-limited/context-note material unless further source work changes that.
+The smaller residual scaffold notes and bridges can wait behind those
+one-sided singleton decisions, and the late-tail and closing clusters still
+need later subdivision rather than immediate promotion.

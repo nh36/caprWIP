@@ -7,7 +7,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 - Ordinary chronology-card sound changes represented: 70/70.
 - Covered by pilot/full production reports: 41.
 - Covered by scaffold placeholders: 29.
-- Grouped into multi-change units: 63 changes across 19 units.
+- Grouped into multi-change units: 57 changes across 18 units.
 - Still needing literature dossiers: 64.
 - Still needing human judgement or promotion decisions: 29.
 - Negative/boundary-only chronology cards: 10.
@@ -19,7 +19,12 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | --- | --- | --- | --- | --- | --- |
 | 014-015 | SC014; SC015 | full | short asymmetric opening bridge: SC014 remains negative and boundary-limited; SC015 is the stronger member with broad/far `SC015 < SC036` via `world`; both earlier sides are runner-bounded at `PWGmcChanges` | literature and book dossiers drafted | keep as a short cautious full opening prelude; SC014 stays brief, SC015 carries the prose, and the SC016-SC020 / SC036 links remain cross-references only |
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
-| 018-025 | SC018; SC021; SC022; SC023; SC024; SC025 | scaffold | mixed early zone: SC018/SC022/SC025 remain boundary-limited; SC021 < SC040, SC023 < SC047, and SC024 < SC056 are real but broad/far outward links; bundled `PWGmcChanges` is a runner limitation, not a historical boundary | review and book dossiers drafted | keep scaffolded and dossier-prepared pending human chapter-shape decision; do not promote as one full production report; likeliest later split is boundary/context notes (SC018/SC022/SC025) plus singleton candidates (SC021/SC023/SC024), with SC040/SC047/SC056 kept as cross-references only |
+| 018 | SC018 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
+| 021 | SC021 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC021 < SC040` via `heaven` (`heofun` vs. `heofon`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC039-SC040 as a rightward cross-reference only and do not promote SC021 in this commit |
+| 022 | SC022 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; source support is descriptive but sufficient to keep the rule visible | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
+| 023 | SC023 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC023 < SC047` via `do`, where delaying the rule collapses the derivation to no output | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC046-SC048 as a rightward cross-reference only and do not promote SC023 in this commit |
+| 024 | SC024 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC024 < SC056` via `sheep` and `year` (`sċīep` / `ġīer` vs. `sċēap` / `ġēar`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC055-SC056 as a rightward cross-reference only and do not promote SC024 in this commit |
+| 025 | SC025 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; keep the long-`ē`-before-nasal background visible without turning either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028 | SC028 | scaffold | historically legible preconsonantal `x`-loss note with no positive first-break boundary on either side; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break | literature and book dossiers drafted | keep as a singleton scaffold note immediately before the promoted SC029-SC030 core; do not merge it backward into SC026-SC027 or forward into SC029-SC030 |
 | 029-030 | SC029; SC030 | full | tight local glide/fronting core: reciprocal `SC029 < SC030` via `hay` / `strew`, with SC029's earlier side runner-bounded at `PWGmcChanges` and SC030 handing forward to SC032 through a broader no-output failure set | literature and book dossiers drafted | promote as a narrow adjacent full report; keep SC028 as a separate left note and treat SC032 as a rightward cross-reference rather than chapter architecture |
@@ -345,41 +350,281 @@ nasō- ~ nusō- reconstruction [@Kroonen2013]. Finally, the later SC020 links
 to SC041, SC042, and SC054 should remain background orientation only; they
 should not expand this entry into a graph-driven chapter.
 
-## Early Northwest Germanic unstressed and boundary-limited zone
+## Stressed monosyllable o-raising note
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit gathers `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, and
-`SC025` as the early post-corridor Northwest Germanic unstressed and
-boundary-limited zone. The grouping is deliberate: several of these cards do
-not yet justify separate finished chapters.
+SC018 *NWGmcStressedMonosyllableORaising* remains visible here as a short
+singleton scaffold note rather than as part of any grouped early Northwest
+Germanic production chapter. The dossier work shows enough handbook background
+for stressed monosyllabic *o*-raising to keep the rule explicit in the book,
+but the current chronology card is boundary-limited on both sides.
 
 #### Current evidence
 
-Chronology cards and FOMA implementations exist for all six member changes.
-Dedicated literature dossiers have not yet been promoted for this zone, so the
-current assembly keeps the section visible in grouped scaffold form.
+The rule is historically legible, yet current order testing does not
+identify any positive historical first-break boundary for it. On the earlier
+side, the search stops at bundled *PWGmcChanges*; that is a runner limitation
+rather than a positive historical boundary. On the later side, the search
+reaches the current SC087 boundary without a real break; that is likewise a
+no-break-before-boundary result rather than a positive chronology claim.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 18-25, from *NWGmcStressedMonosyllableORaising*
-through *NWGmcLongENasalRounding*. It sits immediately after the *016-020*
-pilot and before the clearer *026-027* nasal spirant corridor.
+SC018 now stands as its own singleton scaffold note immediately after the pilot
+`SC016-SC020` corridor and immediately before the scaffold `SC021`
+unstressed-*o* note. It should remain a short boundary/context note in that
+position rather than being promoted or folded into a broader early-zone chapter
+at this stage.
 
 #### Order evidence
 
-The cards mix runner-limited negatives with broad or contextual constraints,
-rather than forming one clean reciprocal chain. This is therefore best treated
-as an underdetermined scaffold band until the literature and prose framing are
-stronger.
+Current first-break evidence does not yet place SC018 against any positive
+historical boundary. The earlier search can move the rule back only to the
+runner limit at bundled *PWGmcChanges*, and the later search can move it
+forward through the current searchable corridor without finding a real break
+before the SC087 boundary. The note therefore records a historically
+intelligible rule with boundary-limited chronology, not a promotable local
+chapter center.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature dossiers for most members and human review of which changes should
-eventually remain grouped versus split into narrower prose units.
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now make SC018's role clear enough to keep it visible as its own
+stressed-monosyllable raising note while leaving any future promotion to a
+later decision about whether this boundary-limited context ever needs more than
+short standalone prose.
+
+## Unstressed o-raising note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC021 *NWGmcUnstressedORaising* remains scaffolded here as a short singleton
+note rather than being promoted immediately. The dossiers show that this is one
+of the clearest later-facing members of the former SC018-SC025 zone: the rule
+is historically legible through the heaven / heofon material, but its live
+positive edge points outward to a later promoted report rather than inward to a
+local adjacent core.
+
+#### Current evidence
+
+The earlier side is still runner-bounded at bundled *PWGmcChanges*, so it must
+not be rewritten as a positive historical boundary. The later side is real but
+broad/far: `SC021 < SC040`, carried by heaven. Moving SC021 later than the
+promoted `SC039-SC040` medial-vowel report yields heofun rather than expected
+heofon.
+
+#### Place in the cascade
+
+SC021 now stands as its own singleton scaffold note immediately after the
+boundary-limited SC018 note and immediately before the scaffold SC022
+*mn*-dissimilation note. It should remain in that local position while treating
+promoted `SC039-SC040` as a rightward cross-reference rather than as a reason
+to merge non-contiguous chapters.
+
+#### Order evidence
+
+Current first-break evidence identifies one historically interpretable boundary
+for SC021. The earlier search stops at bundled *PWGmcChanges*, so the left edge
+remains runner-limited rather than historically fixed. The later search does
+find a real broad/far boundary at SC040: if NWGmc unstressed *o*-raising is
+delayed past that stage, PGmc xémonų yields heofun instead of expected OE
+heofon. That is enough to keep SC021 visible as a likely later singleton
+candidate, but not enough to promote it in this structural cleanup commit.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now support SC021 as a plausible next singleton promotion, but the
+present commit only splits the early zone structurally and keeps the SC040
+relation as a cross-reference rather than chapter architecture.
+
+## Mn dissimilation note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC022 *NWGmcMnDissimilation* remains visible here as a short singleton scaffold
+note rather than as part of any promoted early Northwest Germanic chapter. The
+source background is thinner and more descriptive than for the stronger
+later-facing members of this region, but it is still enough to keep the rule
+explicit in the book.
+
+#### Current evidence
+
+Current order testing does not identify any positive historical first-break
+boundary for SC022. The earlier search stops at bundled *PWGmcChanges*, which
+is a runner limitation rather than a positive historical boundary. The later
+search reaches the current SC087 boundary with no real break, which is again a
+no-break-before-boundary result rather than a positive chronology claim.
+
+#### Place in the cascade
+
+SC022 now stands as its own singleton scaffold note immediately after the
+scaffold SC021 unstressed-*o* note and immediately before the scaffold SC023
+n-stem note. It should remain a boundary/context note in that position rather
+than being promoted or merged into any broader adjacent chapter.
+
+#### Order evidence
+
+Current first-break evidence does not yet place SC022 against any positive
+historical boundary. The earlier search reaches only the runner limit at
+bundled *PWGmcChanges*, and the later search runs through the current
+searchable corridor without finding a real break before the SC087 boundary. The
+note therefore records historically legible but chronology-light material, not
+a promotable local chronology center.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now make SC022's role clear enough to keep it visible as a separate
+*mn*-dissimilation note while leaving any future promotion to a later decision
+about whether this boundary-limited context ever needs more than short
+standalone prose.
+
+## N-stem n-loss note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC023 *NWGmcNStemNLoss* remains scaffolded here as a short singleton note
+rather than being promoted immediately. The dossiers show that this is a
+one-sided later-facing member of the old SC018-SC025 zone: the historical
+background is morphologically real, but the live positive edge points outward
+to a later promoted report rather than inward to an adjacent local core.
+
+#### Current evidence
+
+The earlier side is still runner-bounded at bundled *PWGmcChanges*, so that
+left edge must not be treated as a positive historical boundary. The later side
+is real but broad/far: `SC023 < SC047`, carried by *do*. Moving SC023 later
+than the promoted `SC046-SC048` corridor collapses the *do* derivation to no
+output rather than producing a competing surface form.
+
+#### Place in the cascade
+
+SC023 now stands as its own singleton scaffold note immediately after the
+boundary-limited SC022 note and immediately before the scaffold SC024 long-*e*
+lowering note. It should remain in that local position while treating promoted
+`SC046-SC048` as a rightward cross-reference rather than as a reason to merge
+non-contiguous chapters.
+
+#### Order evidence
+
+Current first-break evidence identifies one historically interpretable boundary
+for SC023. The earlier search stops at bundled *PWGmcChanges*, so the left edge
+remains runner-limited rather than historically fixed. The later search does
+find a real broad/far boundary at SC047: if NWGmc n-stem *n*-loss is delayed
+past that stage, PGmc dōną no longer yields expected OE dōn, and the
+variant derivation records no output at all. That is enough to keep SC023
+visible as a likely later singleton candidate, but not enough to promote it in
+this structural cleanup commit.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now support SC023 as a plausible later singleton promotion, but the
+present commit only splits the early zone structurally and keeps the SC047
+relation as a cross-reference rather than chapter architecture.
+
+## Long e-lowering note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC024 *NWGmcLongELowering* remains scaffolded here as a short singleton note
+rather than being promoted immediately. The dossiers show that it is one of the
+strongest source-backed later-facing members of the former SC018-SC025 zone,
+but its live positive edge still points outward to a later promoted report
+rather than to an internal adjacent partner.
+
+#### Current evidence
+
+The earlier side is still runner-bounded at bundled *PWGmcChanges*, so that
+left edge must not be rewritten as a positive historical boundary. The later
+side is real but broad/far: `SC024 < SC056`, carried by sheep and year.
+Moving SC024 later than the promoted `SC055-SC056` umlaut report yields
+sċīep / ġīer rather than expected sċēap / ġēar.
+
+#### Place in the cascade
+
+SC024 now stands as its own singleton scaffold note immediately after the
+scaffold SC023 n-stem note and immediately before the scaffold SC025 long-*e*
+nasal-rounding note. It should remain in that local position while treating
+promoted `SC055-SC056` as a rightward cross-reference rather than as a reason
+to merge non-contiguous chapters.
+
+#### Order evidence
+
+Current first-break evidence identifies one historically interpretable boundary
+for SC024. The earlier search stops at bundled *PWGmcChanges*, so the left edge
+remains runner-limited rather than historically fixed. The later search does
+find a real broad/far boundary at SC056: if NWGmc long-ē lowering is delayed
+past that stage, PGmc skḗpą yields sċīep instead of expected OE sċēap,
+and PGmc jḗrą yields ġīer instead of expected ġēar. That is enough to
+keep SC024 visible as a likely later singleton candidate, but not enough to
+promote it in this structural cleanup commit.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now support SC024 as a plausible later singleton promotion, but the
+present commit only splits the early zone structurally and keeps the SC056
+relation as a cross-reference rather than chapter architecture.
+
+## Long e nasal-rounding note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC025 *NWGmcLongENasalRounding* remains visible here as a short singleton
+scaffold note rather than as part of any grouped early Northwest Germanic
+production chapter. The dossier work shows enough historical background in the
+long-ē-before-nasal region to keep the rule explicit in the book, but the
+current chronology card is boundary-limited on both sides.
+
+#### Current evidence
+
+Current order testing does not identify any positive historical first-break
+boundary for SC025. On the earlier side, the search stops at bundled
+*PWGmcChanges*; that is a runner limitation rather than a positive historical
+boundary. On the later side, the search reaches the current SC087 boundary
+without a real break; that is likewise a no-break-before-boundary result rather
+than a positive chronology claim.
+
+#### Place in the cascade
+
+SC025 now stands as its own singleton scaffold note immediately after the
+scaffold SC024 long-*e*-lowering note and immediately before the promoted
+`SC026-SC027` nasal spirant corridor. It should remain a short boundary/context
+note in that position rather than being promoted or folded into a broader early
+zone chapter at this stage.
+
+#### Order evidence
+
+Current first-break evidence does not yet place SC025 against any positive
+historical boundary. The earlier search can move the rule back only to the
+runner limit at bundled *PWGmcChanges*, and the later search can move it
+forward through the current searchable corridor without finding a real break
+before the SC087 boundary. The note therefore records a historically
+intelligible rule with boundary-limited chronology, not a promotable local
+chapter center.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. The review and book
+dossiers now make SC025's role clear enough to keep it visible as its own
+long-ē nasal-rounding note while leaving any future promotion to a later
+decision about whether this boundary-limited context ever needs more than short
+standalone prose.
 
 ## Nasal spirant corridor
 
