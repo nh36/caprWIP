@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 25.
-3. Number covered by scaffold placeholders: 45.
-4. Number grouped into multi-change units: 66.
+2. Number covered by pilot/full production reports: 27.
+3. Number covered by scaffold placeholders: 43.
+4. Number grouped into multi-change units: 65.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 45.
+6. Number needing human judgement: 43.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -25,8 +25,9 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | scaffold | contextual and mixed | no dedicated dossier yet | grouped derivational bridge |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
-| 042-044-045 | SC042; SC044; SC045 | scaffold | regional review: SC042 is a narrow `rest`-based context note while SC044-SC045 is the strong adjacent local pair around promoted SC043 | regional review and book dossiers drafted | keep scaffold only; do not promote unchanged; later review SC042 singleton/context note versus SC044-SC045 adjacent report |
+| 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
+| 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
 | 046-048 | SC046; SC047; SC048 | scaffold | regional review: SC046 is the source-backed restoration hinge, while SC047-SC048 forms the broad reciprocal nasal-tail core | regional review and book dossiers drafted | keep scaffold corridor pending human review of cautious SC046-SC048 corridor versus later SC046 plus SC047-SC048 split |
 | 049-050 | SC049; SC050 | full | narrow allophonic SC049 with right-facing SC050 bridge | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 051 | SC051 | full | strong local standalone report | literature and book dossiers drafted | keep as narrow singleton full production report |
