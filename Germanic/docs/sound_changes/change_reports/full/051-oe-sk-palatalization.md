@@ -12,10 +12,12 @@ chapter [@Campbell1959, §170; @Campbell1959, §§440--441;
 @Hogg1992, pp. 106--107; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
 @Fulk2018, p. 28; @SieversBrunner1965, §91.a].
 
-This report is therefore deliberately narrow. It promotes SC051 alone, not the
-whole mixed SC049-SC052 onset-and-palatalization region. The historical claim
-is that OE *sk > sc* deserves its own concise chapter shape inside that larger
-zone, while the neighboring rules remain structurally unresolved.
+This report is therefore deliberately narrow. It promotes SC051 as its own
+concise singleton chapter between the promoted SC049-SC050 bridge report on the
+left and the promoted SC052 standalone hinge report on the right. The
+historical claim is that OE *sk > sc* deserves its own chapter shape inside the
+broader palatalization region without collapsing those neighboring reports into
+one larger unit.
 
 #### Source tradition
 
@@ -91,14 +93,12 @@ on overreading a runner-bounded side as a positive historical boundary.
 
 #### Interpretation
 
-This promotion extracts one clean palatalization chapter from a mixed scaffold.
-Its value is architectural as much as historical. The surrounding region is now
-clearer because SC051 no longer has to share a placeholder with rules that play
-different structural roles. SC049 remains residual and compound-specific, SC050
-remains a bridge rule with a real later boundary but no tested earlier
-historical edge, SC052 remains a central hinge between SC050 and the promoted
-umlaut core, and SC057 remains a later palatalization-side question rather than
-part of this chapter.
+This promotion extracts one clean palatalization chapter from the broader
+region. Its value is architectural as much as historical. The neighboring
+reports are now clearer because they no longer have to share one placeholder:
+SC049-SC050 forms the promoted left-hand bridge report, SC052 stands as the
+promoted standalone hinge into the umlaut region, and SC057 remains a later
+palatalization-side question rather than part of this chapter.
 
 That makes SC051 a good example of how the production layer should mature. The
 book does not need to solve the whole palatalization/fronting region at once.
@@ -115,9 +115,9 @@ the wider palatalization complex rather than as a fully isolated law
 [@Campbell1959, §170; @Campbell1959, §§440--441; @Hogg1992, pp. 106--107;
 @RingeTaylor2014, §6.4.1; @Luick1914, §168].
 
-The chapter must also avoid duplicating the already promoted SC055-SC056
-umlaut-core report. SC056 belongs here only as SC051's right-hand local
-boundary, not as coequal chapter content. Future work may still decide that
-SC052 deserves its own promotion or that SC052 and SC057 should later be
-reconsidered together as a palatalization-side unit. This report settles only
-the narrow case for SC051.
+The chapter must also avoid duplicating the already promoted SC052 hinge report
+or the promoted SC055-SC056 umlaut-core report. SC056 belongs here only as
+SC051's right-hand local boundary, not as coequal chapter content. SC052 should
+be cross-referenced as the neighboring hinge chapter, and SC057 remains the
+later unresolved palatalization-side material. This report settles only the
+narrow case for SC051.

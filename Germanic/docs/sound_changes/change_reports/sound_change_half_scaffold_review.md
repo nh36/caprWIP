@@ -38,7 +38,7 @@ production unit.
 | 049-050 | Onset allophony and Sievers-law bridge | SC049;SC050 | full | no | maybe | defer | Now promoted as a short adjacent chronological bridge report. SC049 is kept explicit as the narrow allophonic and compound-specific member, while SC050 is treated as the historically stronger feeder into SC052 without creating a non-contiguous paired chapter. |
 | 051 | OE Sk Palatalization | SC051 | full | no | no | defer | Now promoted as a narrow singleton full report after dossier preparation and the SC049-SC052 split review; use it as the palatalization singleton model rather than as a remaining candidate. |
 | 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
-| 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Small bridge scaffold now left behind by the SC055-SC056 promotion: `SC053` remains boundary-limited, while `SC054` keeps the narrow `sea`-based evidence visible without becoming the next main target. |
+| 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | scaffold | yes | maybe | low | Literature and book dossiers now exist. `SC053` remains boundary-limited residual material, while `SC054` keeps the narrow `sea`-based evidence visible. The next human decision is whether to promote this as a short adjacent bridge report or reduce it to an SC054-centered note that still keeps SC053 explicit. |
 | 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
 | 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
@@ -50,15 +50,16 @@ production unit.
 
 ## Recommended next promotion candidates
 
-1. **SC053-SC054 Pre-umlaut bridge and W-loss** — now the clearest remaining small chronological bridge target after the `SC049-SC050` promotion.
+1. **SC053-SC054 Pre-umlaut bridge and W-loss** — now dossier-prepared and still the clearest remaining small chronological bridge target, pending human review on whether the final shape should be a short adjacent bridge report or an SC054-centered note.
 2. **SC046-SC048 or parts of the SC042/SC044/SC045 context region** — later source-review targets once `SC053-SC054` is settled.
 3. **SC014-SC015 or SC035-SC037** — possible future compact bridge work, but less source-ready than the targets above.
 4. **Larger late-tail and closing clusters** — later subdivision work remains necessary for `069-078` and `079-087` before they can become stable prose units.
 
 ## Recommended immediate next step
 
-With `SC049-SC050` now promoted as a short adjacent bridge report, the next
-most sensible work is to review `SC053-SC054`, then return to the
-post-brightening `SC046-SC048` / `SC042`-`SC045` region, without breaking the
-strict assembly rule. The larger late-tail and closing clusters remain later
-subdivision work rather than immediate promotion candidates.
+With `SC053-SC054` now dossier-prepared, the next most sensible work is a human
+chapter-shape decision on whether to promote it as a short adjacent bridge
+report or an SC054-centered note, then a return to the post-brightening
+`SC046-SC048` / `SC042`-`SC045` region, without breaking the strict assembly
+rule. The larger late-tail and closing clusters remain later subdivision work
+rather than immediate promotion candidates.

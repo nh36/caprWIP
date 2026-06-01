@@ -34,5 +34,7 @@ That makes SC054 useful bridge evidence without yet making it a chapter center.
 #### Status
 
 This is a scaffold placeholder, not finished book prose. SC053 remains residual
-boundary-limited material, and SC054 may later become a short bridge note, but
-this pair is not the next main promotion target.
+boundary-limited material, and SC054 is the narrower positive member. Literature
+and book dossiers now exist, so the next human decision is whether this should
+be promoted as a short adjacent bridge report or reduced to an SC054-centered
+note that still keeps SC053 explicit.
