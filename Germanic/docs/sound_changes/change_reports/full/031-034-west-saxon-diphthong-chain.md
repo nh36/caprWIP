@@ -55,7 +55,8 @@ source tradition is more overlapped and asymmetrical than the transducer layer.
 #### Place in the cascade
 
 This report belongs immediately after `SC030` **OE Au Fronting** and before the
-`SC035-SC037` prefix and compound adjustments. On its right, it reaches toward
+promoted `SC035-SC037` **Prefix and compound adjustments** bridge. On its
+right, it reaches toward
 three later contexts without collapsing into them: `SC032` points forward to
 `SC040` **OE Med Unstressed U Lowering**, `SC034` points forward to `SC043`
 **Anglo-Frisian Brightening**, and `SC033` points forward to `SC044`

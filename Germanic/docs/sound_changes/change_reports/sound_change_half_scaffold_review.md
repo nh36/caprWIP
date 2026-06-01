@@ -4,13 +4,13 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 24
-assembled units: one pilot production report (`016-020`), thirteen full
-production reports (`026-027`, `031-034`, `043`, `044-045`, `046-048`,
-`049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`, and
-`066-068`), and 10 remaining scaffold placeholders. The immediate
-post-brightening region is now in a stable sequence: `SC042` remains a singleton
-scaffold note, while `SC043`, `SC044-SC045`, `SC046-SC048`, and `SC049-SC050`
-are all promoted as adjacent or singleton production chapters in strict order.
+assembled units: one pilot production report (`016-020`), fourteen full
+production reports (`026-027`, `031-034`, `035-037`, `043`, `044-045`,
+`046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`,
+and `066-068`), and 9 remaining scaffold placeholders. The earlier mid-half
+sequence is now more stable as well: the promoted `SC031-SC034` diphthong chain
+now feeds directly into the promoted `SC035-SC037` derivational bridge before
+the remaining `SC039-SC041` scaffold.
 
 ## Book architecture note
 
@@ -30,7 +30,7 @@ production unit.
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
 | 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | full | no | maybe | defer | Now promoted as a cautious four-change corridor report: `SC031`/`SC034` are the local reciprocal core, while `SC032`/`SC033` remain subordinate flank material. Future book architecture could still narrow the chapter later if needed. |
-| 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | scaffold | yes | maybe | low | Now dossier-prepared for chapter-shape review. SC036 is the strongest source-backed center, while SC035 is a one-sided prefix flank and SC037 is probably best treated as a technical/compound note unless the row later splits around SC036. |
+| 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | full | no | maybe | defer | Now promoted as a cautious adjacent derivational bridge. SC036 is the clear source-backed center of gravity, while SC035 remains the one-sided prefix flank and SC037 remains the technical/compound flank; any later narrowing around SC036 is optional rather than urgent. |
 | 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | maybe | low | Transitional bridge that is helpful in the assembled half but not yet an obvious promotion candidate. |
 | 042 | Surviving bimoric O unrounding context | SC042 | scaffold | no | maybe | low | Now split out as its own short scaffold note. The `rest`-based `SC020 < SC042 < SC043` window is real, but too narrow to justify finished production prose or a non-contiguous chapter with `SC044-SC045`. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
@@ -51,16 +51,14 @@ production unit.
 
 ## Recommended next promotion candidates
 
-1. **SC035-SC037** — now dossier-prepared; the next human decision is whether to keep a cautious derivational bridge or split later around SC036 with SC035/SC037 as short flanks.
-2. **SC014-SC015** — the other obvious compact earlier scaffold once the SC035-SC037 chapter shape is decided.
-3. **Larger late-tail and closing clusters, plus secondary bridges such as `028-030` or `039-041`** — still later work once the smaller source-ready units are settled.
+1. **SC014-SC015** — now the clearest remaining compact earlier scaffold once `SC035-SC037` has been promoted.
+2. **SC039-SC041** — now the nearest unresolved bridge to the right of the newly promoted `SC035-SC037` report, but still less source-ready than `SC014-SC015`.
+3. **Larger late-tail and closing clusters, plus secondary bridges such as `028-030`** — still later work once the smaller source-ready units are settled.
 
 ## Recommended immediate next step
 
-With the immediate SC042-SC050 post-brightening region now stabilized,
-`SC035-SC037` is the next dossier-prepared compact unit awaiting a human
-chapter-shape decision. The main question is no longer whether it needs source
-work, but whether to keep one cautious derivational bridge or later split
-around SC036. After that, `SC014-SC015` remains the other obvious compact
-earlier target, while the late-tail and closing clusters still need later
-subdivision rather than immediate promotion.
+With `SC035-SC037` now promoted as a cautious derivational bridge, the next
+most plausible compact target is `SC014-SC015`, unless subsequent source review
+unexpectedly makes `SC039-SC041` look more chapter-ready than it currently
+does. The late-tail and closing clusters still need later subdivision rather
+than immediate promotion.

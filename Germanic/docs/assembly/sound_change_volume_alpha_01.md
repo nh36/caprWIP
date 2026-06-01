@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 30.
-- Covered by scaffold placeholders: 40.
+- Covered by pilot/full production reports: 33.
+- Covered by scaffold placeholders: 37.
 - Grouped into multi-change units: 65 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 40.
+- Still needing human judgement or promotion decisions: 37.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -23,7 +23,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
-| 035-037 | SC035; SC036; SC037 | scaffold | SC035 has only a rightward SC043 boundary via `believe`; SC036 is the strongest two-sided member (`SC019 < SC036 < SC040`); SC037 is compound-juncture material with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review: cautious derivational bridge versus later SC036-centered split with SC035 and SC037 as shorter flanks |
+| 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
@@ -469,7 +469,8 @@ source tradition is more overlapped and asymmetrical than the transducer layer.
 #### Place in the cascade
 
 This report belongs immediately after `SC030` OE Au Fronting and before the
-`SC035-SC037` prefix and compound adjustments. On its right, it reaches toward
+promoted `SC035-SC037` **Prefix and compound adjustments** bridge. On its
+right, it reaches toward
 three later contexts without collapsing into them: `SC032` points forward to
 `SC040` OE Med Unstressed U Lowering, `SC034` points forward to `SC043`
 **Anglo-Frisian Brightening**, and `SC033` points forward to `SC044`
@@ -543,34 +544,153 @@ the present corridor was unreal.
 
 #### Historical formulation
 
-This scaffold unit groups `SC035`, `SC036`, and `SC037` as the prefix,
-interstress, and compound adjustment bridge. The grouping is mainly
-derivational: it keeps a real slice of the cascade visible without overpromising
-three separate polished chapters.
+`SC035-SC037` is promoted here as a **cautious adjacent derivational bridge
+report**, not as a claim that the traditional grammars present one classic
+three-change chapter called "prefix and compound adjustments." The grouping is
+useful because all three rules are adjacent ordinary FST changes that need
+explicit prose somewhere in the assembled half, but the internal hierarchy is
+uneven and should stay explicit. SC035 OE Prefix A Reduction is a narrow
+prefix-vowel flank. SC036 OE Inter Stress Raising is the clear center of
+gravity, with the strongest source support and the strongest ordinary chronology
+in the row. SC037 OE Compound Linking Syncope is the technical/compound-
+juncture flank: historically intelligible, computationally important, but much
+less chapter-centered than SC036.
 
-#### Current evidence
+#### Source tradition
 
-Each member change already has a chronology card and a FOMA implementation. The
-production layer still lacks dedicated literature dossiers for the grouped unit,
-so it remains a scaffold placeholder.
+The source tradition supports a real stress-sensitive and compounding region,
+but not one tidy handbook unit. Campbell is the clearest single anchor for the
+whole bridge because he touches all three relevant domains: reduction in
+pretonic prefixes, unstable low-stress medial vowels such as weorold /
+weoruld, and reduced-force compound members with variable linking vowels
+[@Campbell1959, §354; @Campbell1959, §§338--339; @Campbell1959, §§356--357,
+367, 386--387]. Hogg sharpens the same general picture by stressing the
+reduction of unstressed-vowel contrasts and the permanently unstressed status of
+ge-, which makes both prefix reduction and medial unstressed adjustment
+historically legible rather than purely model-driven [@Hogg1992, §3.3.1.3;
+@Hogg1992, p. 99].
+
+The weight of that evidence is not equal across the three members. SC035 is
+source-legible through reduced pretonic prefixes and stress-weak prefix
+vocalism, and Ringe and Taylor's derivation of galaubijaną > geliefan gives
+the believe path a useful comparative anchor [@RingeTaylor2014, pp. 245,
+267]. SC036 is stronger still: Campbell's weorold / weoruld material and
+Ringe and Taylor's weraldu > weruld > weorold ~ worold derivation place it
+directly in the historical space of low-stress or interstress vocalism
+[@Campbell1959, §§338--339; @RingeTaylor2014, §6.3.3]. SC037 is different in
+kind. Campbell and Sievers-Brunner both support compound-juncture vowel
+behavior, reduced-force second elements, and linking-vowel instability, but
+they support SC037 best as a compound/technical note rather than as a major
+ordinary chapter [@Campbell1959, §§356--357, 367, 386--387;
+@SieversBrunner1965, §§167--168].
+
+#### CAPR implementation
+
+CAPR therefore sharpens one historically real but uneven corridor into three
+adjacent rules with different rhetorical weight.
+
+SC035 *OEPrefixAReduction* reduces an early prefix vowel in weakly stressed
+prefixed forms. That gives the row a legitimate left flank, but only a narrow
+one. The rule is real enough to deserve prose, yet it does not carry a large
+independent chapter by itself.
+
+SC036 *OEInterStressRaising* is the center of the report. It adjusts medial
+unstressed vocalism between stronger stress peaks, which is why it lands most
+naturally in the historical space described by Campbell, Hogg, and Ringe and
+Taylor. If this grouped report works as finished production prose, it works
+primarily because SC036 gives it a real historical middle.
+
+SC037 *OECompoundLinkingSyncope* then handles the right-hand compound and
+linking-vowel cleanup. Here CAPR is more explicit than the handbooks: it keeps
+a distinct rule where the historical literature more often speaks in broader
+terms about compounding, weakened second elements, or unstable composition
+junctures. That is acceptable so long as the prose states clearly that SC037 is
+book-relevant without pretending it is a canonical textbook law on the same
+level as SC036.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 35-37, from *OEPrefixAReductionEarly* to
-*OECompoundLinkingSyncope*. It bridges the diphthong material and the later
-medial-lowering/final-loss zone.
+This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
+diphthong chain** and immediately before the scaffold `SC039-SC041`
+**Medial lowering and final-loss bridge**. That position is the main reason to
+promote the grouped row unchanged for now: it keeps a real seam in the middle of
+the half explicit without forcing three tiny chapters or a non-contiguous
+chapter architecture.
+
+The outward chronology links should remain cross-references only. SC035 points
+rightward to promoted SC043 through believe, but that does not justify
+pulling this report out of place toward the brightening chapter. SC036 points
+forward to SC040, but that later relation should remain a forward cross-
+reference rather than a reason to merge this report into the still-scaffolded
+`SC039-SC041` bridge. SC037 points rightward again through the rainbow
+evidence that later appears at the left edge of promoted `SC049-SC050`, but
+that relation should likewise remain cross-reference only.
 
 #### Order evidence
 
-These cards are more contextual than tightly reciprocal. They show real
-derivational dependence, but not yet one clean local corridor that would force
-final chapter boundaries.
+The order evidence justifies promotion only if the asymmetry stays visible.
 
-#### Status
+SC035 has one real positive historical boundary, and it is rightward. The card
+shows that SC035 must precede SC043: if OE Prefix A Reduction is delayed beyond
+Anglo-Frisian Brightening, PGmc galáubijaną yields ġealīefan instead of
+expected OE ġelīefan. That is a real chronology claim. The earlier side is
+not. The runner can move SC035 safely back to order 13, but it then stops at
+bundled *PWGmcChanges*, so the current result does not identify any earlier
+historical boundary and must not be rewritten as one.
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature work and human review of whether any member should split out into a
-standalone section rather than remain part of a grouped bridge.
+SC036 is the strongest member of the report. It must follow SC019: moving it
+earlier causes soul to surface as sāwel instead of expected sāwol. It
+must also precede SC040: delaying it yields sāwul and weoruld instead of
+sāwol and weorold in soul and world. Those are fully historical card
+boundaries, and they make SC036 the real center of gravity here. At the same
+time, the earlier side reaches back to SC019 rather than to a tight local
+neighbor, so the prose should not overstate it as a crisp local adjacency
+inside this immediate corridor.
+
+SC037 is weaker in ordinary chronology but still important. Its card currently
+finds no ordinary historical positive boundary in either direction. The earlier
+search stops at bundled *PWGmcChanges* with no real break. The later search does
+find a real computational break across SC038 OE Strip Secondary Stress:
+moving SC037 later produces reġnefoga instead of expected reġnboga in
+rainbow. But SC038 is a technical marker, so that result must remain exactly
+what the card says it is: non-historical / technical-marker evidence, not a
+normal chronology claim. The later rainbow relation to promoted SC049 is real
+and book-useful, but it should remain a rightward cross-reference only.
+
+Taken together, the cards support a grouped chapter with one strong center and
+two modest flanks: `SC035 < SC043`, `SC019 < SC036 < SC040`, and a
+technical-marker SC037/SC038 computational seam that should not be promoted
+into ordinary chronology.
+
+#### Interpretation
+
+This report is valuable because it keeps three adjacent ordinary changes visible
+without pretending that they have equal source weight or equal chronology
+strength. SC035 is included because the book still needs explicit prose for the
+prefix-reduction flank, not because it anchors a large historical chapter.
+SC036 carries the report: it has the clearest handbook support and the clearest
+ordinary chronology in the row. SC037 remains visible because the compound-
+linking cleanup is historically intelligible and computationally important, even
+though its own card evidence is technical rather than ordinary-historical.
+
+That makes the unit a derivational bridge in the strongest useful sense. It is
+adjacent, chronological, and coherent enough to promote as finished prose, but
+the finished prose should be explicit about hierarchy rather than flattening all
+three members into coequal textbook laws. If later architecture ever narrows the
+region around SC036, that would be a chapter-shape refinement rather than proof
+that the present bridge was mistaken.
+
+#### Remaining cautions
+
+The cautions are structural as much as evidential. SC035's runner-bounded
+earlier side must not be converted into a hidden positive boundary. SC036's
+earlier relation to SC019 is historically real, but broad enough that it should
+not be narrated as a tight local adjacency claim. SC037's break across SC038
+must not be rewritten as an ordinary historical ordering statement, because
+SC038 is only a technical marker. And none of the outward links to SC043, SC040,
+SC049, or SC038 should be allowed to expand this report into a non-contiguous
+chapter. The report should remain exactly what it is: a cautious adjacent
+derivational bridge with SC036 as its clear center of gravity.
 
 ## Medial lowering and final-loss bridge
 

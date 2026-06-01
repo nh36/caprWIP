@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 30.
-3. Number covered by scaffold placeholders: 40.
+2. Number covered by pilot/full production reports: 33.
+3. Number covered by scaffold placeholders: 37.
 4. Number grouped into multi-change units: 65.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 40.
+6. Number needing human judgement: 37.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -23,7 +23,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
-| 035-037 | SC035; SC036; SC037 | scaffold | SC035 has only a rightward SC043 boundary via `believe`; SC036 is the strongest two-sided member (`SC019 < SC036 < SC040`); SC037 is compound-juncture material with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review: cautious derivational bridge versus later SC036-centered split with SC035 and SC037 as shorter flanks |
+| 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
 | 039-041 | SC039; SC040; SC041 | scaffold | mixed local and broad bridge | no dedicated dossier yet | grouped bridge scaffold |
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
