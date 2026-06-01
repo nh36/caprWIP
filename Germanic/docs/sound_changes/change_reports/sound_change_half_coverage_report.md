@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 35.
-3. Number covered by scaffold placeholders: 35.
-4. Number grouped into multi-change units: 65.
+2. Number covered by pilot/full production reports: 37.
+3. Number covered by scaffold placeholders: 33.
+4. Number grouped into multi-change units: 64.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 35.
+6. Number needing human judgement: 33.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -24,7 +24,8 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
-| 039-041 | SC039; SC040; SC041 | scaffold | strong SC039-SC040 local core via reciprocal `widow`, plus broader SC041 final-loss hinge between SC020 and SC046 | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review; either promote later as a cautious grouped bridge with SC039-SC040 as the explicit center, or split into SC039-SC040 plus an SC041 note |
+| 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
+| 041 | SC041 | scaffold | historically interpretable final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology rather than a tight adjacent local pair | literature and book dossiers drafted | keep as a singleton scaffold note for now; later prose should stay local and should not merge non-contiguously with SC020 or SC046 |
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |

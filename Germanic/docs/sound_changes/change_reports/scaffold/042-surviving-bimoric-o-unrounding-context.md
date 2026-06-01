@@ -18,9 +18,10 @@ justify a visible singleton context note, but not finished production prose.
 
 #### Place in the cascade
 
-SC042 now stands as a short scaffold singleton between the `039-041` bridge and
-the promoted SC043 brightening pivot. It should not be bundled non-contiguously
-with the promoted adjacent `SC044-SC045` report to its right.
+SC042 now stands as a short scaffold singleton between the separate `041`
+final-loss note and the promoted SC043 brightening pivot. It should not be
+bundled non-contiguously with the promoted adjacent `SC044-SC045` report to its
+right.
 
 #### Order evidence
 

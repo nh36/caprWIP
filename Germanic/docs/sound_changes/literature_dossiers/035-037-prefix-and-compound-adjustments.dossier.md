@@ -5,7 +5,7 @@
 - **change_ids:** SC035; SC036; SC037
 - **display_names:** OE Prefix A Reduction Early; OE Inter Stress Raising; OE Compound Linking Syncope
 - **FOMA rule names:** `OEPrefixAReduction`; `OEInterStressRaising`; `OECompoundLinkingSyncope`
-- **current_orders:** SC035 immediately precedes SC036, which immediately precedes SC037 between the promoted `SC031-SC034` diphthong-chain report and the scaffold `SC039-SC041` medial-lowering bridge
+- **current_orders:** SC035 immediately precedes SC036, which immediately precedes SC037 between the promoted `SC031-SC034` diphthong-chain report and the promoted `SC039-SC040` medial-vowel core, followed by the separate scaffold `SC041` note
 - **chronology card paths:**
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC035-oe-prefix-a-reduction-early.md`
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC036-oe-inter-stress-raising.md`
@@ -27,8 +27,9 @@
 
 `SC035-SC037` sits in an awkward but book-important stretch of the cascade. On
 its left is the promoted `SC031-SC034` West Saxon diphthong corridor. On its
-right is the still-scaffolded `SC039-SC041` medial-lowering and final-loss
-bridge. The assembled book therefore needs an eventual way to talk about three
+right is the promoted `SC039-SC040` medial-vowel core, followed by the
+separate scaffold `SC041` final-loss note. The assembled book therefore needs
+an eventual way to talk about three
 ordinary FST changes here without pretending that the traditional grammars
 offer one tidy chapter called "prefix and compound adjustments."
 
@@ -167,7 +168,7 @@ This is likely the best reading of SC037 even if the grouped row stays intact.
 ## Cross-region links that should stay as cross-references only
 
 1. **SC043** is SC035's rightward positive boundary, but it is too far right and already promoted to justify a non-contiguous chapter.
-2. **SC040** is SC036's rightward positive boundary and should remain a forward cross-reference rather than a reason to merge `SC035-SC037` into `SC039-SC041`.
+2. **SC040** is SC036's rightward positive boundary and should remain a forward cross-reference rather than a reason to merge `SC035-SC037` into the promoted `SC039-SC040` core.
 3. **SC049** looks back to SC037 through `rainbow`, but that relation should remain a rightward cross-reference only.
 4. **SC038** is a technical marker and must not be promoted into an ordinary chronology claim just because it is SC037's first later break.
 

@@ -71,18 +71,18 @@ level as SC036.
 #### Place in the cascade
 
 This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
-diphthong chain** and immediately before the scaffold `SC039-SC041`
-**Medial lowering and final-loss bridge**. That position is the main reason to
-promote the grouped row unchanged for now: it keeps a real seam in the middle of
-the half explicit without forcing three tiny chapters or a non-contiguous
-chapter architecture.
+diphthong chain** and immediately before the promoted `SC039-SC040`
+**Medial unstressed vowel core**, followed by the separate scaffold `SC041`
+final-loss note. That position is the main reason to promote the grouped row
+unchanged for now: it keeps a real seam in the middle of the half explicit
+without forcing three tiny chapters or a non-contiguous chapter architecture.
 
 The outward chronology links should remain cross-references only. SC035 points
 rightward to promoted SC043 through `believe`, but that does not justify
 pulling this report out of place toward the brightening chapter. SC036 points
 forward to SC040, but that later relation should remain a forward cross-
-reference rather than a reason to merge this report into the still-scaffolded
-`SC039-SC041` bridge. SC037 points rightward again through the `rainbow`
+reference rather than a reason to absorb this report into the promoted
+`SC039-SC040` core. SC037 points rightward again through the `rainbow`
 evidence that later appears at the left edge of promoted `SC049-SC050`, but
 that relation should likewise remain cross-reference only.
 

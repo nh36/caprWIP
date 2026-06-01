@@ -3,9 +3,10 @@
 ## 1. Role in the book
 
 This row is a compact derivational seam between the promoted `SC031-SC034`
-West Saxon diphthong chain and the scaffold `SC039-SC041` medial-lowering /
-final-loss bridge. Its editorial problem is not lack of material, but mismatch
-between source weight and chapter shape.
+West Saxon diphthong chain and the promoted `SC039-SC040` medial-vowel core,
+followed by the separate scaffold `SC041` final-loss note. Its editorial
+problem is not lack of material, but mismatch between source weight and chapter
+shape.
 
 SC035 and SC037 are both real enough to deserve explicit prose somewhere in the
 assembled half, yet neither looks like the center of a classical handbook
@@ -63,9 +64,10 @@ right implementation notes that happen to belong in the same local stretch.
 ## 5. Place in the cascade
 
 `SC035-SC037` belongs immediately after the promoted `SC031-SC034` diphthong
-corridor and immediately before the scaffold `SC039-SC041` medial-lowering
-bridge. It is therefore locally coherent as a row even though its member rules
-do not form one equally strong traditional chapter.
+corridor and immediately before the promoted `SC039-SC040` medial-vowel core,
+followed by the separate scaffold `SC041` note. It is therefore locally
+coherent as a row even though its member rules do not form one equally strong
+traditional chapter.
 
 The outward links matter, but they should remain cross-references only:
 
@@ -104,7 +106,7 @@ decision is chapter shape.
 ## 8. Relation to neighbouring changes
 
 - **Left neighbour:** promoted `SC031-SC034` West Saxon diphthong chain
-- **Immediate right neighbour:** scaffold `SC039-SC041` medial-lowering and final-loss bridge
+- **Immediate right neighbour:** promoted `SC039-SC040` medial-vowel core, followed by scaffold `SC041` final-loss note
 - **SC035 rightward cross-reference:** promoted `SC043` Anglo-Frisian Brightening
 - **SC036 rightward cross-reference:** `SC040` OE Med Unstressed U Lowering
 - **SC037 rightward cross-reference:** promoted `SC049` PGmc B Allophony, via `rainbow`

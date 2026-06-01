@@ -3,16 +3,16 @@
 ## Current state
 
 The sound-change half is now fully visible and buildable as an assembled book
-half rather than as a single pilot chapter. The current scaffold has 24
-assembled units: one pilot production report (`016-020`), fifteen full
-production reports (`026-027`, `031-034`, `035-037`, `043`, `044-045`,
-`046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`,
-and `066-068`, plus the newly promoted `014-015` opening prelude), and 8
-remaining scaffold placeholders. The opening of the half is now more stable as
-well: the promoted `SC014-SC015` prelude now feeds directly into the pilot
-`SC016-SC020` corridor, while the promoted `SC031-SC034` diphthong chain still
-feeds directly into the promoted `SC035-SC037` derivational bridge before the
-remaining `SC039-SC041` scaffold.
+half rather than as a single pilot chapter. The current scaffold has 25
+assembled units: one pilot production report (`016-020`), sixteen full
+production reports (`014-015`, `026-027`, `031-034`, `035-037`, `039-040`,
+`043`, `044-045`, `046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`,
+`063`, `064-065`, and `066-068`), and 8 remaining scaffold placeholders. The
+opening of the half is now more stable as well: the promoted `SC014-SC015`
+prelude now feeds directly into the pilot `SC016-SC020` corridor, while the
+mid-half seam is sharper because the promoted `SC031-SC034` diphthong chain now
+feeds into the promoted `SC035-SC037` derivational bridge, then the promoted
+`SC039-SC040` medial-vowel core, then the separate scaffold `SC041` note.
 
 ## Book architecture note
 
@@ -33,7 +33,8 @@ production unit.
 | 028-030 | Glide and fronting entry | SC028; SC029; SC030 | scaffold | yes | maybe | low | Coherent bridge into the OE fronting zone, but not yet clearly source-ready as a production unit. |
 | 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | full | no | maybe | defer | Now promoted as a cautious four-change corridor report: `SC031`/`SC034` are the local reciprocal core, while `SC032`/`SC033` remain subordinate flank material. Future book architecture could still narrow the chapter later if needed. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | full | no | maybe | defer | Now promoted as a cautious adjacent derivational bridge. SC036 is the clear source-backed center of gravity, while SC035 remains the one-sided prefix flank and SC037 remains the technical/compound flank; any later narrowing around SC036 is optional rather than urgent. |
-| 039-041 | Medial lowering and final-loss bridge | SC039; SC040; SC041 | scaffold | yes | yes | low | Now dossier-prepared and pending human chapter-shape review. SC039-SC040 is the strongest local core through reciprocal `widow` evidence, while SC041 is a broader final-loss hinge between SC020 and SC046; the live question is cautious grouped bridge versus later split, not missing source work. |
+| 039-040 | Medial unstressed vowel core | SC039; SC040 | full | no | maybe | defer | Now promoted as the strongest local medial-vowel report in the seam. SC039 remains the one-sided `widow` flank, SC040 is the source-backed `world`/`youth` center, and the broad/far SC072 relation stays a rightward cross-reference rather than chapter architecture. |
+| 041 | Final bare-a loss note | SC041 | scaffold | no | maybe | low | Now split out as its own scaffold note. Its `SC020 < SC041 < SC046` chronology is historically real but broader than the promoted SC039-SC040 core, so it remains visible without being forced into the same full production unit. |
 | 042 | Surviving bimoric O unrounding context | SC042 | scaffold | no | maybe | low | Now split out as its own short scaffold note. The `rest`-based `SC020 < SC042 < SC043` window is real, but too narrow to justify finished production prose or a non-contiguous chapter with `SC044-SC045`. |
 | 043 | Anglo-Frisian brightening | SC043 | full | no | no | defer | Already promoted from scaffold; now serves as the singleton full-report model for later promotions. |
 | 044-045 | Breaking and velar-fricative palatalization | SC044; SC045 | full | no | no | defer | Now promoted as the strongest adjacent post-brightening pair. `SC044` is the standard handbook center, `SC045` is the narrower local velar/fricative partner, and the later SC060 relation remains a cross-reference rather than chapter architecture. |
@@ -53,15 +54,15 @@ production unit.
 
 ## Recommended next dossier-preparation targets
 
-1. **SC028-SC030** — now the clearest remaining dossier-preparation target. It is still scaffold-only, compact, and the best comparison candidate once SC039-SC041 is no longer source-blocked.
-2. **SC039-SC041 chapter-shape review** — dossiers are now drafted, and the next decision is grouped bridge versus later split (`SC039-SC040` plus SC041), not another mandatory source pass.
+1. **SC028-SC030** — now the clearest remaining dossier-preparation target. It is still scaffold-only, compact, and now stands out more clearly once the SC039-SC040 core has been promoted.
+2. **SC041** — now the clearest remaining local note in the medial-lowering/final-loss seam. It is source-backed and chapter-shaped enough for a later short-note promotion if the project wants to close this seam fully, but it is not urgent enough to force immediate prose.
 3. **Larger late-tail and closing clusters** — still later work once the smaller bridge-sized units are better sourced and chaptered.
 
 ## Recommended immediate next step
 
-With `SC039-SC041` now dossier-prepared, the next likely work is still not an
-immediate promotion. The better next move is either human chapter-shape review
-for `SC039-SC041` or dossier preparation for `SC028-SC030`, depending on
-whether the project wants to settle the medial-lowering/final-loss seam before
-opening a new compact scaffold region. The late-tail and closing clusters still
-need later subdivision rather than immediate promotion.
+With `SC039-SC040` now promoted and `SC041` split out as its own scaffold note,
+the next likely work is still not an immediate promotion. The better next move
+is dossier preparation for `SC028-SC030`, unless the project prefers to finish
+the local seam while it is fresh by drafting a short standalone SC041 note. The
+late-tail and closing clusters still need later subdivision rather than
+immediate promotion.

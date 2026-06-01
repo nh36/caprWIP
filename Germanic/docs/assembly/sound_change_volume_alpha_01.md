@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 35.
-- Covered by scaffold placeholders: 35.
-- Grouped into multi-change units: 65 changes across 19 units.
+- Covered by pilot/full production reports: 37.
+- Covered by scaffold placeholders: 33.
+- Grouped into multi-change units: 64 changes across 19 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 35.
+- Still needing human judgement or promotion decisions: 33.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -24,7 +24,8 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 028-030 | SC028; SC029; SC030 | scaffold | mixed local with one boundary preface | no dedicated dossier yet | grouped corridor scaffold |
 | 031-034 | SC031; SC032; SC033; SC034 | full | strong local core with weaker flanks | literature and book dossiers drafted | keep as cautious four-change full production report |
 | 035-037 | SC035; SC036; SC037 | full | cautious adjacent bridge with explicit hierarchy: SC035 prefix flank, SC036 source-backed center (`SC019 < SC036 < SC040`), SC037 compound/technical flank with only technical-marker SC038 on its own card | literature and book dossiers drafted | keep as grouped full bridge report for now; future narrowing around SC036 remains optional but is not needed now |
-| 039-041 | SC039; SC040; SC041 | scaffold | strong SC039-SC040 local core via reciprocal `widow`, plus broader SC041 final-loss hinge between SC020 and SC046 | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review; either promote later as a cautious grouped bridge with SC039-SC040 as the explicit center, or split into SC039-SC040 plus an SC041 note |
+| 039-040 | SC039; SC040 | full | tight local medial-vowel core: reciprocal `SC039 < SC040` via `widow`, with SC040 carrying the broader `world`/`youth` context and a rightward SC072 cross-reference | literature and book dossiers drafted | promote as a narrow adjacent full report; keep bundled `PWGmcChanges` and SC072 as cross-references rather than chapter architecture |
+| 041 | SC041 | scaffold | historically interpretable final-loss hinge with broad/far `SC020 < SC041 < SC046` chronology rather than a tight adjacent local pair | literature and book dossiers drafted | keep as a singleton scaffold note for now; later prose should stay local and should not merge non-contiguously with SC020 or SC046 |
 | 042 | SC042 | scaffold | narrow two-sided `rest` window: SC020 < SC042 < SC043 | regional review and book dossiers drafted | keep as singleton scaffold context note beside promoted SC043; do not bundle non-contiguously with SC044-SC045 |
 | 043 | SC043 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 044-045 | SC044; SC045 | full | strong adjacent pair: SC043 < SC044 < SC045, with later SC060 relation kept as cross-reference | regional review and book dossiers drafted | keep as paired full production report immediately right of SC043 |
@@ -707,18 +708,18 @@ level as SC036.
 #### Place in the cascade
 
 This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
-diphthong chain** and immediately before the scaffold `SC039-SC041`
-**Medial lowering and final-loss bridge**. That position is the main reason to
-promote the grouped row unchanged for now: it keeps a real seam in the middle of
-the half explicit without forcing three tiny chapters or a non-contiguous
-chapter architecture.
+diphthong chain** and immediately before the promoted `SC039-SC040`
+**Medial unstressed vowel core**, followed by the separate scaffold `SC041`
+final-loss note. That position is the main reason to promote the grouped row
+unchanged for now: it keeps a real seam in the middle of the half explicit
+without forcing three tiny chapters or a non-contiguous chapter architecture.
 
 The outward chronology links should remain cross-references only. SC035 points
 rightward to promoted SC043 through believe, but that does not justify
 pulling this report out of place toward the brightening chapter. SC036 points
 forward to SC040, but that later relation should remain a forward cross-
-reference rather than a reason to merge this report into the still-scaffolded
-`SC039-SC041` bridge. SC037 points rightward again through the rainbow
+reference rather than a reason to absorb this report into the promoted
+`SC039-SC040` core. SC037 points rightward again through the rainbow
 evidence that later appears at the left edge of promoted `SC049-SC050`, but
 that relation should likewise remain cross-reference only.
 
@@ -788,39 +789,177 @@ SC049, or SC038 should be allowed to expand this report into a non-contiguous
 chapter. The report should remain exactly what it is: a cautious adjacent
 derivational bridge with SC036 as its clear center of gravity.
 
-## Medial lowering and final-loss bridge
+## Medial unstressed vowel core
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit groups `SC039`, `SC040`, and `SC041` as a bridge from medial
-unstressed lowering toward later final-syllable loss. It is meant to show the
-turn in the cascade, not to claim that the prose shape is final.
+`SC039-SC040` is promoted here as a **narrow adjacent medial-vowel core
+report**, not as a claim that the handbooks present one named two-change chapter
+with exactly these CAPR labels. The promotion is justified because the source
+tradition and the ordinary chronology line up most strongly on this pair. SC039
+OE WI Combinative U Umlaut is the narrow widow-based left flank: a
+historically legible *w*-conditioned low-stress *u* adjustment whose earlier
+side is still runner-bounded. SC040 OE Med Unstressed U Lowering is the
+stronger member and the clear center of gravity: it belongs to the historical
+space of low-stress medial vocalism and carries both the reciprocal widow
+relation on its left and the broader youth cross-reference on its right.
 
-#### Current evidence
+#### Source tradition
 
-All three member changes have chronology cards and FOMA implementations. No
-dedicated literature dossier has yet been promoted for the grouped bridge, so
-the entry remains scaffold material.
+The source tradition is unusually cooperative for this adjacent pair. Campbell
+discusses the *w*-conditioned or combinative *u* material directly, with
+wuduwe / widuwe-type forms that make SC039 historically intelligible rather
+than merely model-internal [@Campbell1959, §218]. He then treats low-stress
+vocalism in forms such as weorold and weoruld, which is the clearest single
+handbook anchor for SC040 [@Campbell1959, §§338--339]. Campbell's geogup
+material also keeps SC040's later youth relation inside the same broader
+unstressed-vowel zone, even though that right-hand boundary is far rather than
+local [@Campbell1959, §332].
+
+Ringe and Taylor sharpen the same picture comparatively. Their derivation
+widuwon- > wuduwe ~ widuwe supports the widow evidence behind both SC039
+and SC040, while weraldu > weruld > weorold ~ worold places SC040 squarely
+in the historical space of low-stress medial-vowel adjustment
+[@RingeTaylor2014, p. 322; @RingeTaylor2014, §6.3.3]. Their treatment of
+jugunpi > geogup ~ iugup likewise supports the later youth witness without
+turning SC072 into part of this chapter's architecture [@RingeTaylor2014,
+p. 267].
+
+That combination is enough to justify finished prose for the pair. The
+handbooks do not force one classical "SC039-SC040 chapter," but they do support
+exactly the kind of narrow adjacent medial-vowel core that the chronology cards
+now isolate.
+
+#### CAPR implementation
+
+CAPR makes the local sequence explicit by keeping two adjacent rules.
+
+SC039 *OEWICombinativeUUmlaut* handles a narrow *w*-conditioned low-stress *u*
+adjustment in widow-type material. On its own it is a modest flank, not a
+large independent chapter. But it matters because it sets up the local vocalic
+shape that SC040 then reads.
+
+SC040 *OEMedUnstressedULowering* is the broader and more chapter-carrying
+member. It regularizes medial unstressed *u* behavior across the low-stress
+system and is the rule that makes the world / weorold material historically
+recognizable in book prose.
+
+That is why the split works. The pair is not just adjacent in the cascade; it
+is a real local core in both source support and order evidence. SC041 remains
+visible to the right as a separate final-loss note rather than a coequal member
+of this promoted unit.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 39-41, from *OEWiCombinativeUUmlaut*
-through *PWGmcFinalBareALoss*. In the current scaffold it precedes the
-brightening/breaking region.
+This report belongs immediately after the promoted `SC035-SC037` **Prefix and
+compound adjustments** bridge and immediately before the scaffold `SC041`
+**Final bare-a loss note**. The immediate rightward neighborhood then continues
+through scaffold `SC042` into the promoted SC043 brightening pivot.
+
+The outward chronology links should remain cross-references only. SC036 points
+forward to SC040, but that later relation should not pull this report leftward
+into the earlier derivational bridge. SC040 points rightward to SC072 through
+youth, but that relation is broad/far and should remain orientation rather
+than chapter architecture. SC041 now remains explicitly separate on the right so
+that the local medial-vowel core can be promoted without flattening the broader
+final-loss hinge into the same chapter.
 
 #### Order evidence
 
-`SC039` and `SC040` create local pressure around medial lowering, while `SC041`
-opens forward into later final-syllable developments. The cards therefore make
-best sense here as a bridge rather than as a closed mini-chapter.
+The order evidence is the clearest reason to promote this pair.
+
+SC039 has one live positive historical boundary, and it is rightward. If OE WI
+Combinative U Umlaut is delayed past SC040, PGmc wíduwōn yields wudowe
+instead of expected OE wuduwe. That makes `SC039 < SC040` a real local
+chronology claim. The earlier side is not comparable: the current runner can
+move SC039 safely back to order *13*, but the search then stops at bundled
+*PWGmcChanges*, so the present result does not identify any positive earlier
+historical boundary for SC039.
+
+SC040 reciprocates that local evidence on its left and adds one broader
+rightward boundary of its own. Moving SC040 earlier than SC039 again produces
+wudowe instead of wuduwe, so the pair forms a genuine reciprocal local core.
+Moving SC040 later than SC072 yields ġeogoþ instead of expected ġeoguþ in
+youth, which gives SC040 a real later boundary as well. But that later
+relation is broad/far rather than locally chapter-defining.
+
+Taken together, the cards support one sharp adjacent claim and one broader
+rightward orientation: `SC039 < SC040 < SC072`, with only the `SC039 < SC040`
+side functioning as a tight local reciprocal corridor.
+
+#### Interpretation
+
+This promotion works because it is narrower and more honest than the old grouped
+bridge. SC039 remains visible as the one-sided widow flank. SC040 carries the
+report as the stronger source-backed historical center, with world and
+youth keeping the broader low-stress context in view. And SC041 is no longer
+forced into the same production unit when its own chronology points outward to
+SC020 and SC046 rather than forming an equally tight local pair here.
+
+The result is a short full report that fits the book's architecture better than
+the previous three-change scaffold. It keeps the strongest local seam explicit,
+preserves strict chronology, and leaves the broader final-loss material visible
+without pretending it is part of the same immediate core.
+
+#### Remaining cautions
+
+The cautions are structural as much as evidential. SC039's runner-bounded
+earlier side must not be turned into a hidden positive boundary against bundled
+*PWGmcChanges*. SC040's later relation to SC072 is real, but it should remain a
+rightward cross-reference rather than a reason to expand this report into a
+non-local late-vowel chapter. And the separate SC041 note should stay separate:
+the split solves a real asymmetry in source weight and chronology, so the book
+should not casually recombine the pair with SC041 or absorb this report into the
+earlier `SC035-SC037` bridge.
+
+## Final bare-a loss note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC041 *PWGmcFinalBareALoss* remains visible here as a short scaffold note rather
+than as part of the promoted `SC039-SC040` medial-vowel core. That split is
+deliberate. SC041 is historically intelligible as an early final-vowel-loss
+stage, but its own chronology is broader than the local reciprocal widow
+evidence that now carries the promoted pair to its left.
+
+#### Current evidence
+
+The chronology card gives SC041 real two-sided ordinary boundaries:
+`SC020 < SC041 < SC046`. But the earlier side is broad/far rather than local,
+with a large failure set including beard, bosom, bottom, calf, and
+coat, while the later side reaches forward into the promoted SC046
+restoration corridor with forms such as craft, dale, day, hazel, and
+mast. The source-backed historical type is therefore clear, but the best book
+shape is still a modest note rather than full local chapter prose.
+
+#### Place in the cascade
+
+SC041 now stands as a singleton scaffold note immediately after the promoted
+`SC039-SC040` medial unstressed-vowel core and immediately before the narrow
+SC042 context note. It should not be merged non-contiguously backward into the
+`SC016-SC020` pilot corridor or forward into the promoted `SC046-SC048`
+restoration-and-nasal-tail report.
+
+#### Order evidence
+
+SC041 must follow SC020 and precede SC046. If it moves too early, PGmc
+bárdaz yields bearda instead of expected OE beard, and a broad class of
+spurious *-a*-final outputs survives too long in the derivation. If it moves
+too late, PGmc kráftaz yields craft instead of expected cræft, and
+dágaz yields dag instead of dæġ. Both boundaries are historically
+interpretable, but neither creates the kind of tight local adjacent pair that
+now justifies promotion for SC039-SC040.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature dossiers and a human decision on whether the eventual chapter should
-remain a bridge or be redistributed across neighbouring sections.
+This is a scaffold placeholder, not finished book prose. The existing regional
+literature and book dossiers now make SC041's role clear enough to keep it
+visible as its own final-loss note, while leaving any future promotion to a
+later decision about how much standalone prose this broader hinge really needs.
 
 ## Surviving bimoric O unrounding context
 
@@ -842,9 +981,10 @@ justify a visible singleton context note, but not finished production prose.
 
 #### Place in the cascade
 
-SC042 now stands as a short scaffold singleton between the *039-041* bridge and
-the promoted SC043 brightening pivot. It should not be bundled non-contiguously
-with the promoted adjacent `SC044-SC045` report to its right.
+SC042 now stands as a short scaffold singleton between the separate *041*
+final-loss note and the promoted SC043 brightening pivot. It should not be
+bundled non-contiguously with the promoted adjacent `SC044-SC045` report to its
+right.
 
 #### Order evidence
 
