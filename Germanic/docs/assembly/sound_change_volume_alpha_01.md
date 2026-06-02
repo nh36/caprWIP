@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 41.
-- Covered by scaffold placeholders: 29.
+- Covered by pilot/full production reports: 42.
+- Covered by scaffold placeholders: 28.
 - Grouped into multi-change units: 57 changes across 18 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 29.
+- Still needing human judgement or promotion decisions: 28.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -20,7 +20,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 014-015 | SC014; SC015 | full | short asymmetric opening bridge: SC014 remains negative and boundary-limited; SC015 is the stronger member with broad/far `SC015 < SC036` via `world`; both earlier sides are runner-bounded at `PWGmcChanges` | literature and book dossiers drafted | keep as a short cautious full opening prelude; SC014 stays brief, SC015 carries the prose, and the SC016-SC020 / SC036 links remain cross-references only |
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 018 | SC018 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
-| 021 | SC021 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC021 < SC040` via `heaven` (`heofun` vs. `heofon`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC039-SC040 as a rightward cross-reference only and do not promote SC021 in this commit |
+| 021 | SC021 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC021 < SC040` via `heaven` (`heofun` vs. `heofon`); bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC039-SC040 as a rightward cross-reference only and do not build a non-contiguous chapter |
 | 022 | SC022 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; source support is descriptive but sufficient to keep the rule visible | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 023 | SC023 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC023 < SC047` via `do`, where delaying the rule collapses the derivation to no output | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC046-SC048 as a rightward cross-reference only and do not promote SC023 in this commit |
 | 024 | SC024 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC024 < SC056` via `sheep` and `year` (`sċīep` / `ġīer` vs. `sċēap` / `ġēar`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC055-SC056 as a rightward cross-reference only and do not promote SC024 in this commit |
@@ -403,45 +403,85 @@ short standalone prose.
 
 #### Historical formulation
 
-SC021 *NWGmcUnstressedORaising* remains scaffolded here as a short singleton
-note rather than being promoted immediately. The dossiers show that this is one
-of the clearest later-facing members of the former SC018-SC025 zone: the rule
-is historically legible through the heaven / heofon material, but its live
-positive edge points outward to a later promoted report rather than inward to a
-local adjacent core.
+SC021 *NWGmcUnstressedORaising* is promoted here as a **short singleton
+unstressed-vowel note**. It is not a claim that the handbooks isolate one large
+independent chapter under exactly this CAPR label, and it is not a reason to
+build a non-contiguous chapter with the later promoted `SC039-SC040`
+medial-vowel core. The historical point is narrower: the heaven / heofon
+material keeps this change legible, and the split early Northwest Germanic zone
+is clearer if its strongest one-sided member is made explicit in strict
+chronological position.
 
-#### Current evidence
+#### Source tradition
 
-The earlier side is still runner-bounded at bundled *PWGmcChanges*, so it must
-not be rewritten as a positive historical boundary. The later side is real but
-broad/far: `SC021 < SC040`, carried by heaven. Moving SC021 later than the
-promoted `SC039-SC040` medial-vowel report yields heofun rather than expected
-heofon.
+The source tradition is modest but real. Campbell explicitly derives heofon
+from an older hefun, with the later visible -o- belonging to the broader
+history of unstressed vowels [@Campbell1959, §373]. Hogg likewise treats the
+heofon / heofun region inside later unstressed-vowel development, and Ringe
+and Taylor also keep heaven historically legible inside the wider West
+Germanic and Old English vocalic record [@Hogg1992; @RingeTaylor2014].
+
+That is enough support for a short promotion. The prose should keep SC021
+focused on the narrow unstressed-vowel hinge behind heofon, not inflate it
+into a corridor report or a hidden left member of the later SC039-SC040 unit.
+
+#### CAPR implementation
+
+CAPR sharpens that broad unstressed-vowel background into one explicit step:
+SC021 *NWGmcUnstressedORaising* isolates the unstressed-vowel adjustment that
+lets the heaven derivation reach heofon rather than heofun. This is more
+specific than the handbook phrasing, but that specificity is exactly why the
+note is useful. It lets the book mark the first promoted singleton in the split
+early Northwest Germanic zone without pretending that the whole zone forms one
+adjacent production chapter.
 
 #### Place in the cascade
 
-SC021 now stands as its own singleton scaffold note immediately after the
-boundary-limited SC018 note and immediately before the scaffold SC022
-*mn*-dissimilation note. It should remain in that local position while treating
-promoted `SC039-SC040` as a rightward cross-reference rather than as a reason
-to merge non-contiguous chapters.
+This note belongs immediately after the scaffold `SC018` **Stressed
+monosyllable o-raising note** and immediately before the scaffold `SC022` **Mn
+dissimilation note**. Its meaningful positive chronology link points outward on
+the right to the already promoted `SC039-SC040` **Medial unstressed vowel
+core**, but that relation should remain a cross-reference rather than a reason
+to pull SC021 out of strict chronological order.
+
+That placement is the point of the promotion. SC021 is the first full singleton
+to emerge from the split early Northwest Germanic zone, and it establishes the
+model for possible later singleton promotions of SC023 and SC024 without
+flattening the whole region into one non-local chapter.
 
 #### Order evidence
 
-Current first-break evidence identifies one historically interpretable boundary
-for SC021. The earlier search stops at bundled *PWGmcChanges*, so the left edge
-remains runner-limited rather than historically fixed. The later search does
-find a real broad/far boundary at SC040: if NWGmc unstressed *o*-raising is
-delayed past that stage, PGmc xémonų yields heofun instead of expected OE
-heofon. That is enough to keep SC021 visible as a likely later singleton
-candidate, but not enough to promote it in this structural cleanup commit.
+The chronology card gives SC021 a real but one-sided window: its earlier side
+is runner-bounded at bundled *PWGmcChanges*, while its later side yields the
+broad/far boundary `SC021 < SC040`.
 
-#### Status
+On the earlier side, the current runner can move SC021 back only to the bundled
+*PWGmcChanges* boundary. That is a methodological runner limitation, not a
+positive historical boundary, so the note must not rewrite it as one.
 
-This is a scaffold placeholder, not finished book prose. The review and book
-dossiers now support SC021 as a plausible next singleton promotion, but the
-present commit only splits the early zone structurally and keeps the SC040
-relation as a cross-reference rather than chapter architecture.
+On the later side, SC021 must precede SC040. If NWGmc unstressed *o*-raising is
+delayed across the promoted medial-vowel core, PGmc xémonų yields heofun
+rather than expected OE heofon. That later edge is historically real, but it
+is broad/far and belongs as a rightward cross-reference to SC039-SC040 rather
+than as chapter architecture inside one shared report.
+
+#### Interpretation
+
+SC021 is promoted because the modest reading is now the best one. The heaven
+evidence is narrow, but it is genuine, and the assembled half is clearer when
+the earliest promoted singleton in this split zone is stated explicitly. The
+result is a cleaner sequence: scaffold SC018, promoted SC021, scaffold SC022,
+then the remaining early Northwest Germanic singleton notes before the promoted
+SC026-SC027 corridor.
+
+#### Remaining cautions
+
+The cautions are mostly structural. SC021 should not be merged with the
+promoted `SC039-SC040` report just because its one positive edge points there.
+Its earlier boundary against bundled *PWGmcChanges* must remain a runner
+limitation rather than a historical claim. And the note should stay modest: it
+is a short architectural singleton, not a new corridor report and not a reason
+to promote SC023 or SC024 in the same commit.
 
 ## Mn dissimilation note
 
