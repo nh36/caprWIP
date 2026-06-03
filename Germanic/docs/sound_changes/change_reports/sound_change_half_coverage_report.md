@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 42.
-3. Number covered by scaffold placeholders: 28.
+2. Number covered by pilot/full production reports: 43.
+3. Number covered by scaffold placeholders: 27.
 4. Number grouped into multi-change units: 57.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 28.
+6. Number needing human judgement: 27.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -22,7 +22,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 018 | SC018 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 021 | SC021 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC021 < SC040` via `heaven` (`heofun` vs. `heofon`); bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC039-SC040 as a rightward cross-reference only and do not build a non-contiguous chapter |
 | 022 | SC022 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; source support is descriptive but sufficient to keep the rule visible | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
-| 023 | SC023 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC023 < SC047` via `do`, where delaying the rule collapses the derivation to no output | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC046-SC048 as a rightward cross-reference only and do not promote SC023 in this commit |
+| 023 | SC023 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC023 < SC047` via `do`, where delaying the rule collapses the derivation to no output; bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC046-SC048 as a rightward cross-reference only and do not build a non-contiguous chapter |
 | 024 | SC024 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC024 < SC056` via `sheep` and `year` (`sċīep` / `ġīer` vs. `sċēap` / `ġēar`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC055-SC056 as a rightward cross-reference only and do not promote SC024 in this commit |
 | 025 | SC025 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; keep the long-`ē`-before-nasal background visible without turning either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
