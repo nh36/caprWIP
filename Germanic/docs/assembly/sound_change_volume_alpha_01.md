@@ -42,7 +42,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 053-054 | SC053; SC054 | full | negative edge plus narrow bridge evidence | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
-| 059-061 | SC059; SC060; SC061 | scaffold | mixed local and contextual bridge | no dedicated dossier yet | grouped late-vowel bridge scaffold |
+| 059-061 | SC059; SC060; SC061 | scaffold | SC059 is the source-backed center with real `SC048 < SC059 < SC078`; SC060 is one-sided with `SC055 < SC060` and no later real break before the current runner boundary; SC061 is one-sided with `SC023 < SC061` and no later real break before the current runner boundary | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review: either a cautious grouped bridge with SC059 carrying the prose, or a later split around singleton SC059; keep SC048, SC055, SC023, and SC078 as cross-references only |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |
@@ -2558,8 +2558,9 @@ claiming that the chapter-level prose has already been settled.
 #### Current evidence
 
 All three member changes already have chronology cards and FOMA implementations.
-Dedicated literature dossiers have not yet been promoted for the grouped bridge,
-so the entry remains a short scaffold placeholder.
+Dedicated literature and book dossiers now exist for the grouped bridge, but the
+entry remains a short scaffold placeholder pending human chapter-shape review
+rather than automatic promotion.
 
 #### Place in the cascade
 
@@ -2575,9 +2576,10 @@ not yet for finished prose.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature work and a human decision on whether the eventual chapter should stay
-grouped or split mutation material away from the weak-tail side.
+This is a scaffold placeholder, not finished book prose. The source work is now
+good enough for chapter-shape review, but the unit still needs a human decision
+on whether the eventual chapter should stay grouped or split SC059 away from the
+weaker SC060/SC061 side.
 
 ## High-vowel apocope
 

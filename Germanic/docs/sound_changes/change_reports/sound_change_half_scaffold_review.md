@@ -53,7 +53,7 @@ production unit.
 | 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | full | no | maybe | defer | Now promoted as a short adjacent chronological bridge report. `SC053` remains the residual `*ngw > *ng` member with no positive card boundary, while `SC054` is treated as the narrower source-backed `sea` bridge between SC020 and SC063 without creating a non-contiguous chapter. |
 | 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
 | 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
-| 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Coherent late-vowel bridge, yet still better treated as placeholder structure than as the next prose target. |
+| 059-061 | Back mutation and weak-tail bridge | SC059; SC060; SC061 | scaffold | yes | maybe | low | Now dossier-prepared and awaiting human chapter-shape review. SC059 is the real back-mutation center with `SC048 < SC059 < SC078`, while SC060 and SC061 are one-sided flanks tied leftward to SC055 and SC023; keep the outward links as cross-references only. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | full | no | maybe | defer | Now promoted as a short cautious bridge report. `SC064` is the narrow positive-evidence member, while `SC065` is treated explicitly as card-negative contextual syncope material rather than as a coequal chronology anchor. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
@@ -62,14 +62,15 @@ production unit.
 
 ## Recommended next targets
 
-1. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible, but they are all lower-confidence than the singleton promotions already completed in the split early NWGmc zone.
-2. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
+1. **SC059-SC061 chapter-shape review** — the row is now dossier-prepared, and the live question is architectural rather than evidential: keep one cautious bridge with SC059 carrying the prose, or split around a later singleton SC059 while SC060 and SC061 remain scaffolded.
+2. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, and `SC057-SC058` remain visible, but they are lower-confidence and do not need automatic promotion.
+3. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
 
 ## Recommended immediate next step
 
-With SC024 now promoted as the third singleton full report from the split early
-NWGmc zone, `SC018`, `SC022`, and `SC025` remain the boundary-limited/context
-notes in that early region unless further source work changes that. The smaller
-residual scaffold notes and bridges can remain scaffolded for now, and the
-late-tail and closing clusters still need later subdivision rather than
-immediate promotion.
+With `SC059-SC061` now dossier-prepared, the clearest next substantive move is a
+human chapter-shape decision on that compact bridge rather than automatic
+promotion: either keep one cautious late-vowel / weak-tail bridge with SC059 as
+the center, or split the seam around a later singleton SC059. The early
+boundary/context notes, the other residual scaffolds, and the broad late-tail
+and closing clusters can remain scaffolded meanwhile.
