@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 44.
-3. Number covered by scaffold placeholders: 26.
-4. Number grouped into multi-change units: 57.
+2. Number covered by pilot/full production reports: 45.
+3. Number covered by scaffold placeholders: 25.
+4. Number grouped into multi-change units: 54.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 26.
+6. Number needing human judgement: 25.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -42,7 +42,9 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 053-054 | SC053; SC054 | full | negative edge plus narrow bridge evidence | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
 | 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | grouped residual scaffold |
-| 059-061 | SC059; SC060; SC061 | scaffold | SC059 is the source-backed center with real `SC048 < SC059 < SC078`; SC060 is one-sided with `SC055 < SC060` and no later real break before the current runner boundary; SC061 is one-sided with `SC023 < SC061` and no later real break before the current runner boundary | literature and book dossiers drafted | keep scaffolded pending human chapter-shape review: either a cautious grouped bridge with SC059 carrying the prose, or a later split around singleton SC059; keep SC048, SC055, SC023, and SC078 as cross-references only |
+| 059 | SC059 | full | source-backed singleton with real two-sided chronology `SC048 < SC059 < SC078`; the later `SC059 < SC078` edge is broad/far and remains a rightward cross-reference only | literature and book dossiers drafted | promote as a short singleton full note; keep SC046-SC048 and SC069-SC078 as leftward/rightward cross-references only and do not recreate the old grouped bridge |
+| 060 | SC060 | scaffold | one-sided singleton with real `SC055 < SC060` via `might` and `night`, but no later real break before the current runner boundary | literature and book dossiers drafted | keep as a singleton scaffold note; keep promoted SC055-SC056 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 061 | SC061 | scaffold | one-sided singleton with real `SC023 < SC061` via `do`, but no later real break before the current runner boundary | literature and book dossiers drafted | keep as a singleton scaffold note; keep promoted SC023 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |
