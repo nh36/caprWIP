@@ -48,7 +48,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |
-| 069-078 | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | mixed broad, local, and negative late-tail evidence | no dedicated dossier yet | large grouped late-tail scaffold |
+| 069-078 | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | mixed late-tail profile: SC070 < SC071, SC072 < SC073, and SC074 < SC075 provide local seams; SC069 and SC071 are one-sided; SC076 remains boundary-limited on both sides; SC078 is the right-edge hinge toward SC086 | literature and book dossiers drafted; pending human chapter-shape review | keep grouped scaffold in this commit, but plan a later structural split before any promotion; the strongest future targets are SC072-SC073 or SC078 after seam review |
 | 079-087 | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | mixed broad and local closing cluster | no dedicated dossier yet | grouped closing scaffold |
 
 ## Opening vowel prelude
@@ -3064,9 +3064,12 @@ the assembled half before its internal chaptering is stable.
 
 #### Current evidence
 
-Chronology cards and FOMA implementations exist for all nine member changes. No
-dedicated literature dossiers have yet been promoted for the grouped unit, so
-the current assembly keeps it as one large scaffold placeholder.
+Chronology cards and FOMA implementations exist for all nine member changes, and
+the unit now has dedicated literature and book dossiers. Those dossiers show
+that the row is not a promotable nine-change core: `SC070-SC071`,
+`SC072-SC073`, and `SC074-SC075` are the clearest internal seams, while SC069
+is a broad/far opener, SC076 is boundary-limited on both sides, and SC078 is a
+right-edge weak-tail hinge.
 
 #### Place in the cascade
 
@@ -3076,15 +3079,18 @@ the final-j, contraction, and metathesis region.
 
 #### Order evidence
 
-This band mixes broad/far links, local breaks, and negative cards. The scaffold
-therefore favors visibility over premature subdivision and leaves the finer
-internal chaptering for later human review.
+This band mixes several different evidence types. `SC070-SC071`, `SC072-SC073`,
+and `SC074-SC075` each provide local internal structure, but SC069 is broad/far,
+SC076 is negative in both directions, and SC078 points forward to the closing
+cluster through `SC086`. The scaffold therefore remains a visibility placeholder
+rather than pretending that one shared chapter shape has already been decided.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs both
-literature work and a major human judgement pass on where this late-tail region
-should split into narrower production chapters.
+This is still a scaffold placeholder, not finished book prose. The row is now
+dossier-prepared and pending human chapter-shape review, but it should not be
+promoted unchanged. The likely next substantive move is a later structural split
+into smaller scaffold rows before any production promotion in this region.
 
 ## Final-j, contraction, and metathesis cluster
 

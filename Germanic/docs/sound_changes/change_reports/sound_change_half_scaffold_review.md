@@ -62,19 +62,20 @@ production unit.
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | full | no | maybe | defer | Now promoted as a short cautious bridge report. `SC064` is the narrow positive-evidence member, while `SC065` is treated explicitly as card-negative contextual syncope material rather than as a coequal chronology anchor. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
-| 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Deliberately broad late placeholder that clearly needs later subdivision before promotion. |
+| 069-078 | Late unstressed-tail cluster | SC069; SC070; SC071; SC072; SC073; SC074; SC075; SC076; SC078 | scaffold | yes | likely | defer | Now dossier-prepared as a visibility placeholder, but the source pass argues against grouped promotion unchanged. The clearest later split points are `SC070-SC071`, `SC072-SC073`, `SC074-SC075`, plus singleton notes for SC069, SC076, and likely SC078. |
 | 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
 
 ## Recommended next targets
 
-1. **SC069-SC078 dossier preparation** — with SC059 now promoted and SC060/SC061 deliberately left scaffolded, the next substantive move should likely be a dossier-preparation pass for the broad late-tail cluster rather than automatic promotion of the remaining one-sided notes.
-2. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, `SC060`, and `SC061` remain visible, but they are lower-confidence and do not need automatic promotion.
-3. **Closing cluster** — `SC079-087` still remains too broad for immediate promotion unchanged.
+1. **SC069-SC078 structural split** — the new dossiers now make clear that the grouped late-tail row should not be promoted unchanged. The likeliest next substantive move is a structural split into smaller scaffold rows, with `SC072-SC073` and SC078 emerging as the strongest later prose candidates.
+2. **Closing cluster dossier preparation** — `SC079-087` still remains too broad for promotion unchanged, and a dossier pass there would sharpen whether SC078 should later stand as a singleton right-edge bridge.
+3. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, `SC060`, and `SC061` remain visible, but they are lower-confidence and do not need automatic promotion.
 
 ## Recommended immediate next step
 
-With SC059 now promoted as the singleton back-mutation center, the clearest next
-substantive move is likely a dossier-preparation pass for the broad
-`SC069-SC078` late-tail cluster rather than automatic promotion of SC060 or
-SC061. The early boundary/context notes, the other residual scaffolds, and the
-closing `SC079-087` cluster can remain scaffolded meanwhile.
+With `SC069-SC078` now dossier-prepared, the clearest next substantive move is
+likely a structural split of that late-tail row into smaller scaffold units
+rather than any grouped promotion. `SC072-SC073` is the strongest internal
+subcluster, SC078 is the strongest singleton/right-edge candidate, and a later
+`SC079-087` dossier pass would help decide how much SC078 should orient forward
+toward the closing contraction/metathesis region.
